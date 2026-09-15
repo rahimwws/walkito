@@ -1,0 +1,845 @@
+Да. Я бы вообще **не делал классический onboarding “имя → пол → возраст → вес → 10 вопросов → paywall”**. Для Tread первые 60–90 секунд должны ощущаться как **персональная спортивная диагностика + первый маленький результат**, а не анкета.
+
+Главный принцип:
+
+> **Каждый экран должен либо давать пользователю новое понимание о себе, либо объяснять, что Tread будет делать лично для него.**
+
+И только потом — оплата.
+
+Ниже полноценный UI-TZ на **15 экранов**. Я предполагаю, что визуальный язык у тебя уже готов: чистый premium UI, крупная типографика, карточки, Tread mascot, progress bar сверху.
+
+---
+
+# TREAD — ONBOARDING UI/UX TZ
+
+## Общая логика onboarding
+
+```text
+INTRO
+↓
+IDENTITY
+↓
+GOAL
+↓
+PROBLEM
+↓
+CONTEXT
+↓
+SELF-ASSESSMENT
+↓
+PERSONAL RESULT
+↓
+PLAN
+↓
+PAYWALL
+↓
+HOME
+```
+
+### Общие правила
+
+**Progress bar:** тонкая линия сверху, но не показывать “Step 1 of 15” — это создаёт ощущение длинной формы.
+
+**CTA:** один primary button внизу.
+
+**Back:** маленькая стрелка сверху слева.
+
+**Tread:** появляется примерно на каждом 2–3 экране, но не занимает весь UI.
+
+**Animation:** каждый экран появляется с очень лёгким motion; никаких сложных переходов.
+
+---
+
+# SCREEN 01 — INTRO
+
+### Задача
+
+Сразу объяснить, что Tread — не workout library.
+
+### UI
+
+Большой Tread в центре.
+
+Он стоит/слегка двигается.
+
+```text
+RUN WITHOUT
+SECOND-GUESSING
+```
+
+Подзаголовок:
+
+```text
+A smarter daily plan for runners
+who want to stay strong, recover well,
+and keep moving.
+```
+
+CTA:
+
+**Get started →**
+
+Внизу маленькое:
+
+```text
+~2 min setup
+```
+
+### Почему
+
+Пользователь должен сразу понимать **outcome**, а не технологию.
+
+Не:
+
+> AI running app
+
+А:
+
+> Run without second-guessing.
+
+---
+
+# SCREEN 02 — NAME
+
+Можно оставить.
+
+### UI
+
+```text
+What should Tread
+call you?
+```
+
+Input:
+
+**Your name**
+
+Placeholder:
+
+`e.g. Alex`
+
+Tread сбоку:
+
+👋
+
+```text
+Nice to meet you.
+```
+
+CTA:
+
+**Continue**
+
+### Важно
+
+Имя — эмоциональная персонализация.
+
+Но если пользователь ничего не вводит — можно разрешить Continue.
+
+---
+
+# SCREEN 03 — RUNNER IDENTITY
+
+Здесь вместо сухого Gender/Age сразу задаём **кто человек**.
+
+```text
+What kind of runner
+are you?
+```
+
+Карточки:
+
+**Just getting started**
+
+**Casual runner**
+
+**Regular runner**
+
+**Training for a race**
+
+**Serious runner**
+
+Можно выбрать один.
+
+Внизу:
+
+```text
+This helps us tailor your plan.
+```
+
+### Почему
+
+Пользователь уже начинает думать:
+
+> "Какой я runner?"
+
+Это психологически приятнее, чем анкета.
+
+---
+
+# SCREEN 04 — AGE
+
+Здесь возраст уже можно запросить.
+
+```text
+How old are you?
+```
+
+Большой number picker.
+
+Например:
+
+**24**
+
+Внизу:
+
+```text
+We'll use this only to personalize
+your training recommendations.
+```
+
+CTA:
+
+**Continue**
+
+### UI recommendation
+
+Не показывать пол сразу.
+
+---
+
+# SCREEN 05 — BODY PROFILE
+
+Здесь **вес**.
+
+```text
+A little more about you
+```
+
+### Weight
+
+`72 kg`
+
+Toggle:
+
+**kg / lb**
+
+Ниже маленький optional:
+
+### Height
+
+`178 cm`
+
+### Body stats should not feel like a fitness-diet app.
+
+Поэтому никаких:
+
+> Calculate your BMI.
+
+или:
+
+> Ideal weight.
+
+Это не наш продукт.
+
+---
+
+# SCREEN 06 — YOUR GOAL
+
+Это один из **самых важных экранов**.
+
+```text
+What are you working toward?
+```
+
+Большие selectable cards:
+
+### 🏃 Run pain-free
+
+### 🥇 Train for a race
+
+### 📈 Run more consistently
+
+### 💪 Build stronger legs
+
+### 🛡 Stay injury-free
+
+Можно выбрать один primary goal.
+
+CTA:
+
+**Build my plan →**
+
+### Почему
+
+Теперь пользователь сформулировал **будущее состояние**, ради которого он будет платить.
+
+---
+
+# SCREEN 07 — WHERE DO YOU FEEL IT?
+
+Теперь вводим pain/problem.
+
+```text
+What's getting in the way?
+```
+
+Можно выбрать несколько.
+
+Body silhouette в центре.
+
+Hotspots:
+
+**Foot**
+
+**Heel**
+
+**Achilles**
+
+**Shin**
+
+**Knee**
+
+**Hip**
+
+**Nothing right now**
+
+### Очень важно
+
+Последний вариант обязателен.
+
+Потому что наш продукт уже позиционируется не только как rehab.
+
+Если человек здоров:
+
+> он всё равно может использовать Tread для prevention/performance.
+
+---
+
+# SCREEN 08 — WHEN DOES IT HAPPEN?
+
+После выбора проблемы.
+
+```text
+When do you notice it most?
+```
+
+Карточки:
+
+**During a run**
+
+**Right after**
+
+**Later that day**
+
+**The next morning**
+
+**Even at rest**
+
+**It comes and goes**
+
+### UI
+
+Каждая карточка имеет небольшой icon/time-of-day visual.
+
+### Почему
+
+Пользователь уже получает ощущение:
+
+> Tread действительно пытается понять мою ситуацию.
+
+---
+
+# SCREEN 09 — RUNNING LOAD
+
+Это важнее многих дополнительных демографических вопросов.
+
+```text
+How much are you running right now?
+```
+
+Большие cards:
+
+**0–5 km / week**
+
+**5–15 km**
+
+**15–30 km**
+
+**30–50 km**
+
+**50+ km**
+
+или
+
+`Custom`
+
+Ниже:
+
+```text
+Average runs per week
+```
+
+`1  2  3  4  5+`
+
+### Почему
+
+Это сразу делает приложение **runner-specific**, а не generic fitness app.
+
+---
+
+# SCREEN 10 — YOUR BIGGEST CHALLENGE
+
+```text
+What's hardest for you right now?
+```
+
+Cards:
+
+### 🦶 Staying pain-free
+
+### 🏃 Getting back to running
+
+### 📈 Increasing distance
+
+### ⚡ Recovering faster
+
+### 💪 Getting stronger
+
+### 🛡 Avoiding another injury
+
+Можно выбрать максимум 2.
+
+---
+
+# SCREEN 11 — MICRO ASSESSMENT
+
+Вот здесь onboarding наконец начинает давать **настоящую value**.
+
+Заголовок:
+
+```text
+Let's check your
+running readiness.
+```
+
+Подзаголовок:
+
+```text
+Just 20 seconds.
+No equipment needed.
+```
+
+Tread показывает пример.
+
+### Test
+
+Например UI:
+
+```text
+SINGLE-LEG CALF RAISES
+
+Stand on one leg.
+Raise your heel slowly.
+
+10 reps
+```
+
+Большая кнопка:
+
+**Start test**
+
+---
+
+После теста:
+
+```text
+LEFT
+8 reps
+
+RIGHT
+6 reps
+```
+
+И subtle animation.
+
+---
+
+# SCREEN 12 — SECOND MICRO TEST
+
+Чтобы результат не выглядел случайным.
+
+```text
+One more.
+This checks your balance & control.
+```
+
+Например:
+
+**Single-leg balance**
+
+`20 sec`
+
+После завершения:
+
+```text
+BALANCE
+18.4 sec
+```
+
+CTA:
+
+**See my results**
+
+---
+
+# SCREEN 13 — PERSONAL RESULT
+
+Это **главный экран onboarding**.
+
+И здесь пользователь впервые понимает:
+
+> "Окей, приложение реально что-то сделало для меня."
+
+### UI
+
+Большой круг:
+
+# 64
+
+**RUN READINESS**
+
+Под ним:
+
+```text
+Your strongest area
+Cardio
+
+Needs attention
+Lower-leg strength
+```
+
+Ещё:
+
+```text
+Balance          82
+Strength         61
+Recovery         58
+Consistency      74
+```
+
+И короткое объяснение:
+
+> **Your current profile suggests that your lower-leg strength may be the biggest opportunity to work on.**
+
+Важно: это **не диагноз**.
+
+CTA:
+
+**See my plan →**
+
+---
+
+# SCREEN 14 — YOUR PERSONAL PLAN
+
+Теперь Tread превращает результат в конкретное решение.
+
+```text
+Your Tread plan
+```
+
+### WEEK 01
+
+**Build a stronger base**
+
+`4 sessions · ~7 min/day`
+
+---
+
+### MON
+
+🦶 Foot strength
+7 min
+
+### TUE
+
+🧘 Mobility
+5 min
+
+### WED
+
+🏃 Easy run
+25 min
+
+### THU
+
+🦵 Lower-leg strength
+8 min
+
+---
+
+И внизу:
+
+```text
+Your plan adapts as you improve.
+```
+
+Tread рядом:
+
+> **I've got you.**
+
+CTA:
+
+**Unlock my plan →**
+
+---
+
+# SCREEN 15 — PAYWALL
+
+Вот здесь уже можно делать hard paywall.
+
+Но я бы не делал стандартное:
+
+> Subscribe to Tread
+
+Вместо этого:
+
+# YOUR PLAN IS READY.
+
+Большая карточка:
+
+```text
+RUN READINESS
+
+64 → 82
+
+30 DAY GOAL
+
+Stronger
+More consistent
+Ready to run
+```
+
+---
+
+### Offer
+
+# Annual
+
+**$79.99 / year**
+
+`$6.67 / month`
+
+**7-day free trial**
+
+---
+
+### Alternative
+
+**Monthly**
+
+`$12.99 / month`
+
+---
+
+Primary:
+
+# Start my 7-day trial
+
+Под ним:
+
+```text
+Cancel anytime
+```
+
+И маленькие trust labels:
+
+```text
+Personalized daily plan
+Adaptive workouts
+Progress tracking
+```
+
+---
+
+# Но здесь есть очень важный UX-трюк
+
+После paywall **не отправляем человека просто на Home**.
+
+После успешной покупки:
+
+### SCREEN 16 — FIRST WIN
+
+```text
+WELCOME TO TREAD
+```
+
+Tread радостный.
+
+```text
+Your first mission
+is ready.
+```
+
+### 6 MINUTES
+
+**Lower-leg reset**
+
+3 exercises
+
+**Start →**
+
+То есть человек **сразу начинает продукт**.
+
+Это критично для activation.
+
+---
+
+# Что делать с Gender?
+
+Я бы **не делал отдельный экран Gender**, если на данный момент нет конкретной функциональной причины использовать его.
+
+То же самое с Weight.
+
+Их можно оставить, но они должны иметь смысл для персонализации. Иначе человек чувствует:
+
+> "Почему этому приложению вообще нужен мой вес?"
+
+И у нас появляется ненужное трение.
+
+Поэтому мой порядок:
+
+**Name → Runner type → Age → Body profile → Goal → Problem → Symptoms timing → Running load → Challenge → Tests → Result → Plan → Paywall**
+
+---
+
+# Самая важная часть: где пользователь получает value
+
+Onboarding должен ощущаться примерно так:
+
+### 0–15 сек
+
+> Я понял, что это приложение.
+
+### 15–30 сек
+
+> Оно понимает, какой я runner.
+
+### 30–50 сек
+
+> Оно понимает мою проблему.
+
+### 50–70 сек
+
+> Оно реально меня протестировало.
+
+### 70–85 сек
+
+> Оно нашло мою слабую сторону.
+
+### 85–100 сек
+
+> Оно уже создало мой персональный план.
+
+### 100+ сек
+
+> Хочу его открыть → Paywall.
+
+Вот это совсем другая психология, чем:
+
+```text
+Name
+Age
+Gender
+Weight
+Height
+Goal
+...
+...
+...
+Subscribe
+```
+
+---
+
+# Как должен ощущаться Tread
+
+На каждом этапе пользователь должен постепенно думать:
+
+> **"Tread understands me."**
+
+а после результата:
+
+> **"Tread knows what I should do next."**
+
+И после покупки:
+
+> **"Let's see what happens."**
+
+Вот это и есть нужный эмоциональный переход.
+
+---
+
+# И ещё одна очень важная вещь
+
+Я бы сделал сверху onboarding **тонкий динамический progress indicator**, но не:
+
+`8 / 15`
+
+а что-то вроде:
+
+```text
+●━━━━━━━
+```
+
+Потому что 15 экранов психологически много.
+
+При этом onboarding должен визуально разделяться на 4 мини-акта:
+
+**ABOUT YOU**
+
+→
+
+**YOUR RUNNING**
+
+→
+
+**YOUR CHECK**
+
+→
+
+**YOUR PLAN**
+
+Пользователь тогда не чувствует, что заполняет анкету.
+
+---
+
+## Итого
+
+Я бы зафиксировал основной onboarding Tread именно так:
+
+**1. Intro**
+**2. Name**
+**3. Runner type**
+**4. Age**
+**5. Body profile**
+**6. Goal**
+**7. Pain / issue**
+**8. When**
+**9. Running load**
+**10. Biggest challenge**
+**11. Test #1**
+**12. Test #2**
+**13. Personal result**
+**14. Personal plan**
+**15. Hard paywall**
+
+А самое главное — **не продавать AI**. Продавать нужно результат:
+
+> **Your plan is ready.**
+
+Это намного сильнее, чем:
+
+> "Get access to our AI running coach."
+
+Пользователь должен почувствовать, что Tread **уже поработал для него до оплаты**. Только тогда hard paywall будет восприниматься как логичное продолжение onboarding, а не как внезапная попытка взять деньги.

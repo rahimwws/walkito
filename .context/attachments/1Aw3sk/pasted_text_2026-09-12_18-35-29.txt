@@ -1,0 +1,539 @@
+# Tread — Onboarding copy deck
+
+Replacement copy for all 19 onboarding steps, written to drop into the existing
+UI with **zero visual changes**.
+
+Every string below maps to an exact slot that already exists. Same step count,
+same field types, same components. Only the words change, plus three places
+where an existing dynamic-blurb pattern is extended.
+
+---
+
+## Principles behind this rewrite
+
+**Every step gives something back.** Right now the user answers nine questions
+before receiving anything. In this deck, seven of them return a fact, a reason,
+or a reflection of what they just said.
+
+**Promise speed, not cure.** The evidence says strength work beats stretching
+at 3 months, but the two converge at 12 months. So the honest claim is
+*faster*, never *the only thing that works*. First improvement lands at day
+12–16 — that is the promise to make.
+
+**Plain language.** No "AI-powered", no "personalised", no "revolutionary".
+Restraint is what builds trust in a category where people have been sold
+$1,700 insoles.
+
+**Recognition is the value moment.** There is no scan and no physical test, so
+the payoff has to come from the user reading a description of themselves and
+thinking *that's exactly it*. Step 15 carries this.
+
+---
+
+# PART 1 — STEP BY STEP
+
+## Step 1 — Intro
+
+`steps.ts:138-150`
+
+**Rendered:**
+```
+Hi, I'm Tread
+Let's find out why it still hurts.
+```
+
+**Unrendered slots** (fill anyway, in case they are switched on):
+```
+title:    Run without second-guessing
+blurb:    A daily plan that changes when your legs do.
+footnote: ~2 min setup
+```
+
+**CTA:** `Continue with Apple`
+
+> Changed from *"Your dedicated partner in running pain-free for life!"* —
+> "dedicated partner" is corporate, "for life" is a promise no protocol can keep.
+
+---
+
+## Step 2 — Name
+
+`steps.ts:151-158`
+
+```
+title:       What should we
+             call you?
+blurb:       Everything after this gets written for you, not for runners in general.
+placeholder: e.g. Alex
+```
+
+---
+
+## Step 3 — Sex
+
+`steps.ts:159-169`
+
+```
+title:   Male or female, {name}?
+blurb:   Load tolerance and injury patterns differ, so the plan does too.
+options: Female · Male
+```
+
+> Title changed from *"And which are you, {name}?"* — reads oddly and invites
+> a reaction the question doesn't intend.
+
+---
+
+## Step 4 — Athlete type
+
+`steps.ts:170-183`
+
+```
+title:   What kind of athlete are you, {name}?
+blurb:   This is where your plan starts from. Under-selling here just makes
+         week one too easy.
+options: Just getting started
+         Casual
+         Regular
+         Training for something
+         Serious about it
+```
+
+---
+
+## Step 5 — Age
+
+`steps.ts:184-197`
+
+```
+title: How old are you?
+blurb: Tendons adapt more slowly with age. This paces how fast the plan builds.
+```
+
+> More specific than *"Used only to pace how fast your plan builds"* — states
+> the mechanism, which is what makes a question feel worth answering.
+
+---
+
+## Step 6 — Body weight
+
+`steps.ts:198-216`
+
+```
+title: A little more about you, {name}
+blurb: Tendons carry what you weigh. This sets your starting load.
+```
+
+> Unchanged. This is the best blurb in the current deck.
+
+**Bug to fix alongside:** switching units reseeds instead of converting —
+72 kg becomes 159 lb rather than 158.7 lb.
+
+---
+
+## Step 7 — Shoe size
+
+`steps.ts:217-223`
+
+```
+title: What size do you run in, {name}?
+blurb: Shoe size stands in for the length of the lever your calf has to move.
+```
+
+> The blurb is currently suppressed at `onboarding-page.tsx:484`. If shoe size
+> feeds nothing in plan generation, this step should be cut — but that is a UI
+> change, so flag it rather than doing it. If it is kept, un-suppress the blurb:
+> a question with no stated reason is the most expensive kind.
+
+---
+
+## Step 8 — Goal
+
+`steps.ts:224-237`
+
+```
+title:   {name}, what are you working toward?
+blurb:   Pick the one that matters most right now. You can change it later.
+options: Run pain-free
+         Train for a race
+         Run more consistently
+         Build stronger legs
+         Stay injury-free
+```
+
+---
+
+## Step 9 — Pain locations
+
+`steps.ts:238-257`
+
+```
+title:   What's getting in the way, {name}?
+blurb:   Choose any that apply. Most people pick more than one.
+options: Foot · Heel · Achilles · Shin · Knee · Hip · Nothing right now
+```
+
+> "Most people pick more than one" does two jobs: it permits multi-select
+> without explaining the control, and it tells the user they are not unusual.
+
+**Add a response-dependent line** — see Part 2, table A.
+
+---
+
+## Step 10 — Sport
+
+`steps.ts:258-273`
+
+```
+title:   What puts the load on your legs, {name}?
+blurb:   This decides how the next questions are framed.
+options: Running · Tennis · Gym · Football · Basketball · Cycling · Hiking
+```
+
+> **Fixes a copy bug.** The current blurb reads *"Pick the one that hurts you
+> most"* — but this step is about sport, single-select. The pain question is
+> step 9.
+
+---
+
+## Step 11 — Weekly load
+
+`personalise.ts:80-128`. Title and blurb are replaced at runtime per sport.
+
+| Sport | Title | Blurb |
+|---|---|---|
+| running | How much are you running now, {name}? | Your honest current week, not your best one. |
+| tennis | How much are you on court, {name}? | Matches and practice together — the honest week. |
+| gym | How much are you training, {name}? | Time under load, not time in the building. |
+| football | How much are you playing, {name}? | Matches and training together — the honest week. |
+| basketball | How much are you playing, {name}? | Games and practice together — the honest week. |
+| cycling | How much are you riding, {name}? | Your honest current week, not your best one. |
+| hiking | How much are you hiking, {name}? | Your honest current month, not your best one. |
+
+> Unchanged — these are already good. "Time under load, not time in the
+> building" is the best line in the file.
+
+---
+
+## Step 12 — Hardest thing
+
+`steps.ts:286-302`
+
+```
+title:   What's hardest right now, {name}?
+blurb:   Up to two. The plan leans toward whatever you pick.
+options: Staying pain-free
+         Getting back to running
+         Increasing distance
+         Recovering faster
+         Getting stronger
+         Avoiding another injury
+```
+
+**Cap feedback** (currently silent when a third selection drops the oldest):
+```
+Two at a time — {dropped} was swapped out.
+```
+
+---
+
+## Step 13 — Health
+
+`health-step.tsx`
+
+```
+title:    Fill me in, {name}!
+          (fallback: Fill me in!)
+blurb:    Tread reads your steps, energy and heart rate so the plan starts
+          from what you have actually been doing — not what you meant to do.
+
+rows:     Steps · Active Energy · Heart Rate
+empty:    Not shared
+
+cta:      Connect to Health
+loading:  Opening Health…
+done:     Next
+
+privacy:  Your health data never leaves this device.
+unavail:  Health isn't available here — you can carry on without it.
+skip:     Skip for now
+```
+
+**New states** (currently both show `Not shared`):
+```
+denied:   Health access was declined. Your plan works without it.
+no data:  Connected — nothing yet. It fills in as you move.
+```
+
+---
+
+## Step 14 — Notifications
+
+`notify-step.tsx`
+
+```
+title:  Don't go it alone, {name}
+        (fallback: Don't go it alone)
+blurb:  A plan only works if it turns up. Let Tread tell you when today
+        has a session in it.
+
+mock banner:
+        Tread                              now
+        Today is foot strength — 7 minutes.
+        Your shins will thank you.
+
+bullets:
+        A nudge on the days your plan has a session
+        A heads-up when it changes what you are doing
+        Nothing else. No streaks to guilt you back.
+
+cta:      Turn on notifications
+loading:  Opening…
+done:     Next
+decline:  Not now
+denied:   No problem — you can turn these on later in Settings.
+```
+
+> Unchanged. *"No streaks to guilt you back"* is the single most on-brand line
+> in the app and it belongs exactly where it is.
+
+---
+
+## Step 15 — Building your plan ★ THE VALUE MOMENT
+
+`building-step.tsx:29`
+
+This is where the payoff has to land. There is no scan and no test, so the
+only thing that can make the user feel *understood* is reading themselves back.
+
+**Replace the three static lines with three response-dependent lines.**
+Same component, same timings, same animation — only the strings become dynamic.
+
+| Line | Timing | Content |
+|---|---|---|
+| 1 | 0.0 s | Reflects what they told you |
+| 2 | ~2.0 s | Names the pattern |
+| 3 | ~4.0 s | States the promise |
+
+**Line 1 — reflection.** Assembled from their answers:
+```
+{Heel pain}, {8 months}, {30–50 km a week}.
+```
+Falls back to `Getting to know you` if fields are missing.
+
+**Line 2 — pattern.** Selected by pain location — see Part 2, table B.
+
+**Line 3 — promise.** Fixed:
+```
+First changes: day 12 to 16.
+```
+
+**CTA:** `Start my training` (unchanged, appears at 5.44 s)
+
+> Day 12–16 is defensible: subjective relief in the strength-training arm of
+> Rathleff's trial began inside the first two weeks. Twelve weeks is the
+> program length, not the promise — stating it here hands the user an exit date.
+
+**Unrendered slots** in `steps.ts:324-325`:
+```
+title: Building your plan
+blurb: Folding everything you told me into week one.
+```
+
+---
+
+## Step 16 — Plan choice
+
+`steps.ts:327-333` + `plans.ts:22-47`
+
+```
+title: Choose your training plan
+blurb: Both are built from your answers — pick how much runway you want.
+tabs:  6 weeks | 12 weeks
+```
+
+**6-week option**
+```
+wordmark: MOMENTUM
+badge:    RECOMMENDED
+eyebrow:  KEEP RUNNING
+name:     6-week plan
+blurb:    If you're already running most weeks and want to build without
+          breaking down.
+bullets:  A focused block that adds load only as fast as your legs adapt
+          Strength and mobility woven around the runs you already do
+```
+
+**12-week option**
+```
+wordmark: FOUNDATIONS
+eyebrow:  START RUNNING
+name:     12-week plan
+blurb:    If you're starting from scratch, or coming back after time off.
+bullets:  A gentle build mixing consistency with varied work
+          Become a runner step by step, all the way to your first 5K
+```
+
+**CTA:** `Choose my plan`
+
+> `RECOMMENDED` should be driven by their step 4 answer, not hardcoded.
+> "Just getting started" or "Casual" → recommend 12 weeks. Everything else →
+> 6 weeks. A badge that never moves is decoration; one that responds is a
+> recommendation.
+
+---
+
+## Step 17 — Commitment contract
+
+`steps.ts:334-340` + `contract-step.tsx`
+
+```
+title: Let's make a contract, {name}
+blurb: Not with me. With yourself.
+```
+
+> `blurb` is currently `''` and renders a blank line. This fills it.
+
+```
+pad hint:  Sign here
+clear:     ✕
+
+stamp:     ★ TREAD ★
+           COMMITTED
+           PAIN-FREE
+           RUNNING
+
+footer:    {name}, your signature stays on this device.
+           (fallback: Your signature stays on this device.)
+
+cta:       Continue      ← enabled after ≥12 stroke points
+```
+
+---
+
+## Step 18 — Social proof
+
+`social-proof-step.tsx` + `testimonials.ts:26-48`
+
+```
+title: Welcome, {name}
+       (fallback: Welcome aboard)
+sub:   Join 40,000+ runners
+       training without pain
+stars: ★★★★★
+```
+
+**Testimonials** — stored as `before` + `lead` (emphasised) + `after`:
+
+```
+1.  before: Six months of shin pain, and I ran a
+    lead:   pain-free 10k
+    after:  eight weeks in.
+    name:   Marta K.
+    detail: Running 4 years
+
+2.  before: It found my
+    lead:   calves, not my knees.
+    after:  The strength work finally made sense.
+    name:   Daniel R.
+    detail: Half marathon, 1:38
+
+3.  before: Back from an Achilles injury
+    lead:   without losing the distance
+    after:  I'd already built.
+    name:   Priya S.
+    detail: Marathon in training
+```
+
+**CTAs:** `Continue` · `Continue` · `See my offer`
+
+> The `detail` field is documented as *"Shown under the name"* but never
+> renders. Wire it — a specific runner is more credible than an anonymous one,
+> and it costs nothing.
+
+---
+
+# PART 2 — RESPONSE-DEPENDENT LINES
+
+Both tables extend the pattern already used by `personalise.ts` for step 11.
+No new UI: a string is selected at runtime instead of being fixed.
+
+## Table A — after step 9 (pain location)
+
+Shown for ~2 s after selection, before advancing. If multiple are selected, use
+the first match in this order.
+
+| Selection | Line |
+|---|---|
+| Heel | Heel pain is the most common and the most responsive. It usually starts above the heel. |
+| Foot | Arch pain rarely starts in the arch. The muscle holding it up sits in your lower leg. |
+| Achilles | Achilles pain responds to load, not rest. Stopping entirely makes it stiffer. |
+| Shin | Shin pain is almost always a load problem, not a shoe problem. |
+| Knee | Runner's knee often traces to the hip and the foot, not the knee. |
+| Hip | Hip pain in runners usually means something below it stopped doing its share. |
+| Nothing right now | Good. Then this is about keeping it that way. |
+
+## Table B — step 15, line 2 (the pattern)
+
+| Primary pain | Line |
+|---|---|
+| Heel | This is the most common pattern there is. It also responds fastest. |
+| Foot | The arch isn't weak on its own. What holds it up is. |
+| Achilles | Load built faster than the tendon adapted. That's fixable. |
+| Shin | Volume outran your legs. The plan walks that back, then builds. |
+| Knee | The knee is where it hurts. It's rarely where it started. |
+| Hip | Something below the hip stopped carrying its share. |
+| None | You're here before it hurts. That's the cheap way to do this. |
+
+---
+
+# PART 3 — WELCOME GATE
+
+`welcome/…/astro.ts:87-102`
+
+```
+Swipe up to enter
+
+Train ~~support~~ your feet
+```
+
+**Rotating lines** (~2.9 s each):
+```
+that hurt every morning
+after 3 pairs of insoles
+so your next long run doesn't cost you a week
+so you can run again
+```
+
+**CTA:** `Let's go`
+
+> Line 3 replaces *"so a 12-hour shift stops hurting"*, which addresses people
+> who stand for work. Every other surface in the app addresses runners. If the
+> standing-professions segment is still in play, flag this rather than changing
+> it — but the app cannot speak to both at once.
+
+---
+
+# IMPLEMENTATION NOTES
+
+**Find-and-replace hazards.** This codebase uses U+2019 curly apostrophes
+throughout onboarding. `steps.ts:146` writes it as the escape `&rsquo;`.
+`steps.ts:147` uses a U+2011 non-breaking hyphen in `pain‑free` while every
+other instance uses ASCII. Match what surrounds each string; do not normalise.
+
+**`\n` is honoured** in titles — `typed-text.tsx:105` splits on it. Step 2's
+two-line title depends on this.
+
+**`{name}` substitution** happens at `onboarding-page.tsx:473-477` via
+`withName`. With no stored name, the token and its surrounding comma are
+dropped — so every line using `{name}` must still read correctly without it.
+Check each one.
+
+**Three new dynamic behaviours** are introduced here, all following the existing
+`personalise.ts` pattern:
+1. Table A — a line after step 9
+2. Table B — line 2 of step 15
+3. `RECOMMENDED` badge driven by the step 4 answer
+
+None require a visual change. If any of them cannot be done without one, report
+it rather than implementing it.

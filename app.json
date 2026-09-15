@@ -1,0 +1,120 @@
+{
+  "expo": {
+    "name": "Tread",
+    "slug": "tread",
+    "scheme": "tread",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.tread.app",
+      "appleTeamId": "HWGBXV8W4Z"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.tread.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/SF-Pro-Rounded-Regular.otf",
+            "./assets/fonts/SF-Pro-Rounded-Medium.otf",
+            "./assets/fonts/SF-Pro-Rounded-Semibold.otf",
+            "./assets/fonts/SF-Pro-Rounded-Bold.otf",
+            "./assets/fonts/SF-Pro-Rounded-Heavy.otf"
+          ]
+        }
+      ],
+      "expo-asset",
+      "expo-video",
+      "expo-widgets",
+      [
+        "@kingstinct/react-native-healthkit",
+        {
+          "background": true,
+          "NSHealthShareUsageDescription": "Tread reads your steps, walking pattern and sleep so your plan starts from what you have actually been doing.",
+          "NSHealthUpdateUsageDescription": "Tread saves your sessions to Health so they count toward your activity."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#8B5CF6",
+          "defaultChannel": "default"
+        }
+      ],
+      [
+        "expo-quick-actions",
+        {
+          "iosIcons": {
+            "talk": {
+              "1x": "./assets/quick-actions/talk.png",
+              "2x": "./assets/quick-actions/talk@2x.png",
+              "3x": "./assets/quick-actions/talk@3x.png"
+            },
+            "wait": {
+              "1x": "./assets/quick-actions/wait.png",
+              "2x": "./assets/quick-actions/wait@2x.png",
+              "3x": "./assets/quick-actions/wait@3x.png"
+            }
+          },
+          "iosActions": [
+            {
+              "id": "talk",
+              "title": "SOMETHING OFF?",
+              "subtitle": "Tell us. A person replies.",
+              "icon": "asset:talk"
+            }
+          ]
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "root": "app"
+      },
+      "eas": {
+        "build": {
+          "experimental": {
+            "ios": {
+              "appExtensions": [
+                {
+                  "targetName": "ExpoWidgetsTarget",
+                  "bundleIdentifier": "com.tread.app.dev.ExpoWidgetsTarget",
+                  "entitlements": {
+                    "com.apple.security.application-groups": [
+                      "group.com.tread.app.dev"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "projectId": "dc9fafaa-387c-4981-a1f5-aa5b1d2764f7"
+      }
+    },
+    "owner": "rahimwws77"
+  }
+}

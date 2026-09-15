@@ -1,0 +1,594 @@
+# Tread — Program Engine Spec
+
+Build the complete training program: data, scheduling, progression, adaptation,
+retests, and the maintenance phase.
+
+**Do not change the UI.** Every screen, card, style, and layout stays exactly as
+it is. You are filling existing components with real data and real logic.
+
+---
+
+## HARD CONSTRAINT
+
+Forbidden:
+- Any style, colour, spacing, size, font, radius, shadow, or layout change
+- Adding, removing, moving, or reordering any visual component
+- New screens, sheets, or modals
+
+Allowed:
+- Data files, models, engines, storage, handlers, conditionals
+- Replacing hardcoded literals with computed values
+- Wiring existing components to routes
+- Adding string literals into slots that already render
+
+If a task needs a visual change, stop and list it under
+`NEEDS_DESIGN_DECISION`. Do not implement it.
+
+---
+
+## What exists today
+
+- `program.ts` has a small hardcoded day list. Days 15–28 only.
+- `program-page.tsx:144` prints `Block 2 of 4 · 14 days` — the `4` is a literal.
+- `day-page.tsx` has four branches but no route pushes it.
+- Retest data exists for day 14 only.
+- No progression, no adaptation, no maintenance.
+- Home brief has 1 of 11 states.
+
+## What you are building
+
+A deterministic engine that, given the user's profile and their logged history,
+returns exactly what to show for any day.
+
+---
+
+# PART 1 — DATA MODEL
+
+## 1.1 Exercise catalogue
+
+Create `src/entities/program/model/exercises.ts`.
+
+```ts
+type Exercise = {
+  id: string
+  title: string            // shown in UI
+  category: 'Fitness' | 'Mobility' | 'Habit' | 'Recovery'
+  track: 'A' | 'B'         // internal only, never shown
+  position: 'standing' | 'seated' | 'wall'
+  loadsFascia: boolean     // if true, removed on high-pain days
+  tempo?: { up: number; hold: number; down: number }   // seconds
+  defaultSets?: number
+  defaultReps?: number
+  defaultHoldSec?: number
+  perSide: boolean
+  rationale: string        // one line, shown on arrival in the player
+  cue: string              // the single most-missed technique point
+}
+```
+
+**The catalogue.** These are the only exercises in the program. Do not invent
+others.
+
+| id | title | cat | track | pos | fascia | notes |
+|---|---|---|---|---|---|---|
+| `fascia_stretch` | Plantar stretch | Mobility | A | seated | no | 10×10s, 3×/day |
+| `calf_stretch_straight` | Calf stretch | Mobility | A | wall | no | 3×30s, knee straight |
+| `calf_stretch_bent` | Soleus stretch | Mobility | A | wall | no | 3×30s, knee bent |
+| `heel_raise_towel` | Heel raises | Fitness | A | standing | **yes** | tempo 3-2-3, towel under toes |
+| `heel_raise_plain` | Single-leg raises | Fitness | A | standing | **yes** | 3×15, no towel |
+| `short_foot_seated` | Short foot | Fitness | B | seated | no | 3×10 holds, 5s |
+| `short_foot_double` | Short foot, standing | Fitness | B | standing | no | 3×10 holds, 5s |
+| `short_foot_single` | Short foot, one leg | Fitness | B | standing | no | 3×10 holds, 5s |
+| `toe_spread` | Toe spread | Fitness | B | seated | no | 3×10 holds, 5s |
+| `band_inversion` | Band turn-in | Fitness | B | seated | no | 3×15 per side |
+| `hip_abduction` | Hip abduction | Fitness | B | standing | no | 3×15 per side |
+| `single_leg_hold` | Single-leg hold | Fitness | B | standing | no | 3×30s |
+| `eyes_closed_stand` | Eyes-closed stand | Fitness | B | standing | no | 3×20s |
+| `heel_toe_walk` | Heel-to-toe walk | Fitness | B | standing | no | 3×10 steps |
+| `ankle_rocks` | Ankle rocks | Mobility | B | standing | no | 2×15 per side |
+| `foot_roll` | Foot roll | Recovery | A | seated | no | 2 min |
+| `barefoot_home` | Barefoot at home | Habit | B | — | no | checkbox, minutes |
+| `breathing_reset` | Breathing reset | Recovery | A | seated | no | 1 min |
+
+**Rationale and cue for each.** These render in the player; write them in the
+app's existing plain voice. Examples:
+
+```
+heel_raise_towel
+  rationale: "This is the one that moves pain fastest."
+  cue:       "Towel under the toes. Without it you're just training calves."
+
+short_foot_seated
+  rationale: "The muscle that holds your arch sits inside your foot."
+  cue:       "Don't curl the toes. Pull the ball of the foot toward the heel."
+
+fascia_stretch
+  rationale: "Do the first one before your foot touches the floor."
+  cue:       "Pull the toes back until you feel the arch, not the calf."
+```
+
+`loadsFascia: true` on the two heel-raise variants is load-bearing logic —
+it is what gets removed on a high-pain day.
+
+## 1.2 Blocks
+
+Create `src/entities/program/model/blocks.ts`.
+
+```ts
+type Block = {
+  index: number
+  name: string
+  startDay: number
+  endDay: number
+  retestDay: number
+}
+```
+
+**12-week plan — six blocks:**
+
+| # | Name | Days | Retest |
+|---|---|---|---|
+| 1 | Settle | 1–14 | 14 |
+| 2 | Strengthen | 15–28 | 28 |
+| 3 | Load | 29–42 | 42 |
+| 4 | Build | 43–56 | 56 |
+| 5 | Control | 57–70 | 70 |
+| 6 | Sustain | 71–84 | 84 |
+
+**6-week plan — three blocks:** Settle 1–14, Strengthen 15–28, Load 29–42.
+Retests on 14, 28, 42.
+
+**`program-page.tsx:144` must read `Block {n} of {blocks.length} · 14 days`.**
+Remove the literal `4`.
+
+## 1.3 Day templates
+
+Create `src/entities/program/model/day-templates.ts`.
+
+Day-of-week is derived from `dayNumber % 7`, where day 1 = Monday of week 1.
+
+| Slot | Kind | Minutes |
+|---|---|---|
+| 1 Mon | Strength | 7 |
+| 2 Tue | Mobility | 5 |
+| 3 Wed | Strength | 7 |
+| 4 Thu | Balance | 5 |
+| 5 Fri | Strength | 7 |
+| 6 Sat | Mobility | 5 |
+| 7 Sun | Recovery | 3 |
+
+Three Strength days a week is the "every second day" of the source protocol.
+Do not add a fourth.
+
+A retest day replaces whatever slot it lands on.
+
+## 1.4 Block × kind → exercises
+
+This table is the program. Each cell is an ordered exercise id list.
+
+**Block 1 · Settle** — no loaded work yet
+```
+Strength:  fascia_stretch, calf_stretch_straight, toe_spread
+Mobility:  calf_stretch_straight, calf_stretch_bent, ankle_rocks
+Balance:   eyes_closed_stand, ankle_rocks
+Recovery:  foot_roll, breathing_reset
+```
+
+**Block 2 · Strengthen** — Rathleff and short foot begin
+```
+Strength:  heel_raise_towel, short_foot_seated
+Mobility:  calf_stretch_straight, short_foot_seated
+Balance:   short_foot_seated, single_leg_hold
+Recovery:  foot_roll, toe_spread
+```
+
+**Block 3 · Load**
+```
+Strength:  heel_raise_towel, short_foot_double
+Mobility:  calf_stretch_bent, short_foot_double
+Balance:   short_foot_double, single_leg_hold
+Recovery:  foot_roll, toe_spread
+```
+
+**Block 4 · Build**
+```
+Strength:  heel_raise_towel, band_inversion
+Mobility:  calf_stretch_straight, short_foot_single
+Balance:   short_foot_single, heel_toe_walk
+Recovery:  foot_roll, ankle_rocks
+```
+
+**Block 5 · Control**
+```
+Strength:  heel_raise_towel, hip_abduction
+Mobility:  calf_stretch_bent, ankle_rocks
+Balance:   eyes_closed_stand, heel_toe_walk
+Recovery:  foot_roll, breathing_reset
+```
+
+**Block 6 · Sustain**
+```
+Strength:  heel_raise_plain, band_inversion, hip_abduction
+Mobility:  calf_stretch_straight, barefoot_home
+Balance:   single_leg_hold, barefoot_home
+Recovery:  foot_roll, barefoot_home
+```
+
+`fascia_stretch` appears in the Block 1 Strength day only. From Block 2 onward
+it moves **out of the session** and attaches to the morning check-in — see
+Part 4.
+
+---
+
+# PART 2 — PROGRESSION
+
+## 2.1 Heel raises (the pain engine)
+
+Prescription changes by block. This is the mechanism that produces the effect;
+without it the exercise is just calf work.
+
+| Block | Sets × reps | Load | Tempo |
+|---|---|---|---|
+| 1 | — | — | not in program |
+| 2 | 3 × 12 | bodyweight | 3-2-3 |
+| 3 | 4 × 10 | backpack | 3-2-3 |
+| 4 | 5 × 8 | backpack, heavier | 3-2-3 |
+| 5 | 5 × 8 | backpack, heavier | 3-2-3 |
+| 6 | 3 × 15 | bodyweight, no towel | 3-2-3 |
+
+**Must be visible in the UI.** Today's Tasks currently shows
+`Heel raises · Fitness · 7 min`. It must show the prescription — use the
+existing subtitle slot, no new element:
+
+```
+Heel raises        3 × 12       7 min
+```
+
+On the first Strength day of a block where load changes, the session player
+shows the block's load note in the existing rationale slot:
+
+```
+Block 3:  "Add a backpack. Heavy enough that the last rep is the last rep."
+Block 4:  "Add more. Eight reps should be all you have."
+Block 6:  "Towel off. Bodyweight. This is the version you keep doing."
+```
+
+## 2.2 Short foot
+
+| Block | Variant | Volume |
+|---|---|---|
+| 2 | seated | 3 × 10 × 5s |
+| 3 | standing, two legs | 3 × 10 × 5s |
+| 4–5 | standing, one leg | 3 × 10 × 5s |
+| 6 | one leg | 3 × 10 × 5s |
+
+Order is not optional. Intrinsic work must precede `band_inversion`, which is
+why it does not appear before Block 4.
+
+## 2.3 Tempo timer
+
+`heel_raise_towel` and `heel_raise_plain` carry `tempo: {up:3, hold:2, down:3}`.
+
+The session player currently shows a single countdown. It must drive the
+per-rep phases instead — **using the existing timer display**, changing only
+the number and the label it shows:
+
+```
+Up      3 … 2 … 1
+Hold    2 … 1
+Down    3 … 2 … 1
+Rep 4 of 12
+```
+
+If the existing timer component cannot show a phase label without a visual
+change, drive only the numbers and report it under `NEEDS_DESIGN_DECISION`.
+
+---
+
+# PART 3 — ADAPTATION ENGINE
+
+Create `src/entities/program/model/adapt.ts`.
+
+```ts
+function resolveDay(input: {
+  dayNumber: number
+  block: Block
+  kind: DayKind
+  painToday: number | null
+  pain7dAvg: number | null
+  hoursOnFeetYesterday: number | null
+  hoursBaseline: number | null
+  daysSinceLastSession: number
+  progressionOffset: number      // 0 = on plan, -1 = one step back
+}): ResolvedDay
+```
+
+Pure function. Same input, same output. No randomness, no LLM.
+
+## 3.1 Rules, first match wins
+
+| # | Condition | Result |
+|---|---|---|
+| 1 | `painToday >= 7` | **Offload.** Drop every `loadsFascia` exercise. Keep track-B only. Cap at 3 min. |
+| 2 | `painToday - pain7dAvg >= 3` | **Offload**, and set `progressionOffset = -1` |
+| 3 | `dayNumber === block.retestDay` | **Retest day.** No training. |
+| 4 | `hoursOnFeetYesterday > hoursBaseline * 1.4` | If kind is Strength, swap to Recovery. |
+| 5 | `daysSinceLastSession >= 5` | `progressionOffset = -1`, session is the block's Mobility day |
+| 6 | otherwise | Normal day from the template |
+
+**Rule 1 is the most important one in the app.** On a high-pain day, the
+session is not cancelled — it becomes short-foot work, which does not load the
+fascia. The user still has a session, still completes it, still keeps the
+streak. This is what stops the uninstall on the worst day.
+
+## 3.2 Progression offset
+
+- Applied to heel-raise prescription only. `-1` means use the previous block's
+  sets × reps.
+- Clears after **two consecutive days** with `painToday <= pain7dAvg`.
+- Never goes below Block 2's prescription.
+- Never positive. The plan does not accelerate.
+
+## 3.3 In-session pain
+
+`pain-check.tsx` already has a mid-session pain prompt path.
+
+| Reported | Action |
+|---|---|
+| 0–4 | Continue. Acceptable discomfort. |
+| 5+ | End the session. Mark complete. Set `progressionOffset = -1`. |
+
+Copy when ended: `Stopping here. Tomorrow starts one step back.`
+
+## 3.4 Missed days — the rule that must not be broken
+
+The program runs on **dates, not completions**. Day 17 is day 17 whether or not
+day 16 happened.
+
+- Never queue a missed session
+- Never show "you missed N days"
+- Never break the streak for a system-assigned rest or offload day
+- Day 84 arrives 84 days after start, regardless of attendance
+
+The existing copy at `day-page.tsx:184-186` already states this. Make the engine
+match it.
+
+---
+
+# PART 4 — THE MORNING STRETCH
+
+From Block 2 onward, `fascia_stretch` leaves the session and attaches to the
+check-in.
+
+The first repetition must happen **before the foot touches the floor** — that
+is what removes first-step pain, and it is the single highest-value instruction
+in the whole program.
+
+Implementation, using existing components only:
+- The morning check-in sheet gains one row above the scale
+- Copy: `Before you stand up: pull your toes back, 10 seconds, 10 times.`
+- A checkbox row, logged as `morning_stretch_done`
+- The morning notification fires at the user's wake time and carries the same
+  line
+
+If the check-in sheet cannot take a row without a layout change, report it
+rather than forcing it.
+
+---
+
+# PART 5 — RETESTS
+
+## 5.1 The tests
+
+Three, same three every time, ~4 minutes.
+
+| id | Test | Measure | Per side |
+|---|---|---|---|
+| `calf` | Single-leg heel raises to failure | reps | yes |
+| `balance` | Single-leg stand, eyes closed | seconds | yes |
+| `arch` | Short-foot hold to failure | seconds | yes |
+
+Symmetry is derived: `abs(L - R) / max(L, R) * 100`, rounded.
+
+## 5.2 Levels
+
+| Level | Calf reps | Balance sec | Arch sec | Symmetry |
+|---|---|---|---|---|
+| 1 | < 8 | < 5 | < 10 | > 30% |
+| 2 | 8–14 | 5–10 | 10–20 | 20–30% |
+| 3 | 15–21 | 11–20 | 21–35 | 12–20% |
+| 4 | 22–28 | 21–30 | 36–50 | 6–12% |
+| 5 | 29+ | 31+ | 51+ | < 6% |
+
+**Levels move only on retest days.** Never on session completion, never on
+streak, never on elapsed time. This is the app's only claim that cannot be
+gamed, and it is worth nothing if it drifts.
+
+Store thresholds in a config file, not inline.
+
+## 5.3 Storage
+
+```ts
+type RetestResult = {
+  blockIndex: number
+  dayNumber: number
+  date: string
+  calf: { left: number; right: number }
+  balance: { left: number; right: number }
+  arch: { left: number; right: number }
+  symmetryPct: number
+  levels: { calf: number; balance: number; arch: number; symmetry: number }
+}
+```
+
+Day 1 of the program runs the same three tests as the **baseline**. Store it as
+`blockIndex: 0`. Without a baseline the first retest has nothing to compare to.
+
+## 5.4 Wiring the Day sheet
+
+`day-page.tsx` is unreachable. Fix:
+
+- `program-page.tsx` day row tap → `/day?day={n}`
+- Branch A: `dayNumber` is a past retest **with** a stored result
+- Branch B: `dayNumber === block.retestDay` and it is today
+- Branch C: `dayNumber` is a future retest
+- Branch D: any ordinary day
+- Past retest with **no** result → new state:
+  `This retest wasn't completed. Levels held from the last one.`
+- Bad `?day=` → `That day isn't part of your plan.` (currently returns `null`,
+  producing a blank sheet)
+
+`Start retest` at `day-page.tsx:144` currently calls `router.back()`. It must
+run the three tests, store the result, recompute levels, and return to Branch A
+showing the new numbers.
+
+---
+
+# PART 6 — MAINTENANCE, DAY 85+
+
+The program does not end. Its goal changes.
+
+Trigger: the final retest is completed, or `dayNumber > lastBlock.endDay`.
+
+**Weekly schedule:**
+
+| Day | Kind | Exercises | Min |
+|---|---|---|---|
+| Mon | Strength | `heel_raise_plain`, `short_foot_single` | 8 |
+| Wed | — | rest | — |
+| Thu | Strength | `heel_raise_plain`, `band_inversion`, `hip_abduction` | 8 |
+| Daily | — | morning stretch | 1 |
+
+Retest every 28 days instead of 14.
+
+**Copy for the transition**, in the existing brief slot:
+
+```
+{name}, you're through. Your calf went ↗ from 11 to 24.
+
+About half of people lose this again within five years.
+Two sessions a week is how you stay in the other half.
+```
+
+That framing is the entire reason someone pays after the pain is gone. Do not
+replace it with a congratulation.
+
+**Regression watch.** If a maintenance retest drops a level, or logged pain
+rises above the maintenance baseline for 7 consecutive days, offer a return to
+Block 4. Copy: `Your numbers slipped. Want to run Build again?`
+
+---
+
+# PART 7 — DERIVED VALUES
+
+Replace every hardcoded number with a computed one.
+
+| Where | Currently | Must become |
+|---|---|---|
+| `program-page.tsx:144` | `Block 2 of 4` | `blocks.length` |
+| `home-page.tsx` streak | `🔥 7` | real streak |
+| `progress-page.tsx:139` | `🔥 3` | same source as home |
+| `progress-page.tsx:77-81` | `progress is ↗ 44%` | measured pain delta, 90-day window |
+| `progress-page.tsx:163` | `88 Score` | computed — see below |
+| `performance-card.tsx:97` | `↑ 43%` | delta between last two retests |
+| Day list | hardcoded 15–28 | generated for the whole plan |
+
+**Score formula** — must be explainable, because an unexplained number loses
+trust within two weeks:
+
+```
+score = levelsAvg   × 50      // normalised 0–1 from the four levels
+      + painTrend   × 30      // 90-day improvement, normalised
+      + consistency × 20      // check-ins in last 14 days / 14
+```
+
+Recompute on retest, on pain-trend change, and on check-in — not on every
+render.
+
+**Streak counts a check-in, not a session.** A day is green if:
+`painEntry exists` OR `session completed` OR `the day was system-assigned rest`.
+
+One automatic freeze per week, accumulating to two. Restore within 48 hours of
+a break, one tap. Never surface a lost streak as a failure.
+
+---
+
+# PART 8 — STORAGE
+
+```ts
+ProgramState {
+  planLength: 42 | 84
+  startDate: string
+  currentDay: number          // derived from dates, never incremented manually
+  progressionOffset: number
+  phase: 'program' | 'maintenance'
+}
+
+DayLog {
+  dayNumber, date,
+  painMorning: number | null,
+  morningStretchDone: boolean,
+  sessionCompleted: boolean,
+  sessionEndedEarly: boolean,
+  hoursOnFeet: number | null,
+  exercisesDone: string[]
+}
+
+RetestResult[]    // as above, including baseline blockIndex 0
+```
+
+`currentDay` is always `daysBetween(startDate, today) + 1`. Never a counter.
+A counter drifts across time-zone changes and app reinstalls.
+
+Everything works offline. Sync is optional.
+
+---
+
+# PART 9 — TESTS TO WRITE
+
+Verify each with a unit test:
+
+1. Day 1 of a 12-week plan is a Strength day in Block 1
+2. Day 14 is a retest, and so are 28, 42, 56, 70, 84
+3. A 6-week plan ends at day 42 with three blocks
+4. Day 20 with `painToday = 8` returns a track-B-only session, 3 min, no
+   heel raises
+5. Day 20 with pain 3 and 7-day average 3 returns the normal Block 2 session
+6. Pain jumping 3 → 7 sets `progressionOffset = -1`
+7. Offset clears after two days at or below the 7-day average
+8. Missing days 10–16 does not shift day 17
+9. Levels do not move between retest days
+10. `calf = 19` maps to Level 3
+11. Day 85 enters maintenance with a two-session week
+12. A retest day with no stored result shows the not-completed state, not the
+    future copy
+13. Streak counts a check-in-only day as green
+14. Streak counts a system-assigned rest day as green
+
+---
+
+# REPORTING
+
+After each part:
+
+1. **DONE** — every change, file and line
+2. **NEEDS_DESIGN_DECISION** — anything requiring a visual change, described
+   but not implemented
+3. **NEEDS_PRODUCT_DECISION** — where two valid options exist
+4. **UNTOUCHED** — what you skipped and why
+
+---
+
+# RULES THAT OVERRIDE EVERYTHING
+
+1. **Never cheerful when logged pain is 5 or higher.** If the user reports pain
+   and the app responds with celebration, it has called them a liar about their
+   own body. This is how these apps get uninstalled.
+2. **Never punish a miss.** No make-up sessions, no guilt copy, no broken streak
+   for a rest day the app itself assigned.
+3. **Levels move only on retests.** Nothing else touches them.
+4. **Never invent a metric.** Only show what was measured: pain logged, reps
+   counted, seconds held, days elapsed.
+5. **Never promise a cure.** *Screening*, *program*, *exercises*. Never
+   *diagnosis*, *treatment*, *cure*, *fix your flat feet*.
+6. **A high-pain day still has a session.** Shorter, unloaded, but present.
