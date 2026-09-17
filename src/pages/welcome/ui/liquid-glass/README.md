@@ -9,7 +9,7 @@ files, copied verbatim and unmodified.
 
 The upstream code is **GPL-3.0-only**, which is a strong copyleft licence.
 Shipping a derivative work of it obliges you to license the whole app under
-GPL-3.0 and publish its source. That is very likely not what Tread wants, and
+GPL-3.0 and publish its source. That is very likely not what Walkito wants, and
 the obligation does not go away by editing the files.
 
 Upstream's own `NOTICE.md` adds, in its words:

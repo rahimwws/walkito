@@ -4,16 +4,6 @@ import type { VideoSource } from 'expo-video';
  * watch has nothing to connect. */
 export type WatchBrand = 'garmin' | 'whoop';
 
-/**
- * Placeholder footage, and knowingly so.
- *
- * The exercise clip stands in until the real screen recordings exist. It is the
- * one asset already bundled, and a card that plays the wrong loop is a visibly
- * wrong thing somebody will replace — where a blank square reads as a bug and
- * gets shipped.
- */
-const PLACEHOLDER: VideoSource = require('@assets/exercises/calf-raise.mp4');
-
 export type SyncGuide = {
   label: string;
   /** Three lines, because a fourth is a manual. */
@@ -21,7 +11,16 @@ export type SyncGuide = {
   /** Deep link into the app that owns the switch, falling back to its store
    * page when it is not installed — which the OS does for us. */
   url: string;
-  clip: VideoSource;
+  /**
+   * Null until a real recording of this app's settings screen exists.
+   *
+   * This used to point at the calf-raise exercise clip as a stand-in, which was
+   * wrong on its own terms: a foot stretch playing under the words "turn on
+   * Health sync" teaches nothing and reads as a bug. The three written steps
+   * carry the screen on their own, and an absent card is honest where a
+   * borrowed one is not.
+   */
+  clip: VideoSource | null;
 };
 
 export const SYNC_GUIDES: Readonly<Record<WatchBrand, SyncGuide>> = {
@@ -33,7 +32,7 @@ export const SYNC_GUIDES: Readonly<Record<WatchBrand, SyncGuide>> = {
       'Turn on the categories you want shared.',
     ],
     url: 'https://apps.apple.com/app/garmin-connect/id583446403',
-    clip: PLACEHOLDER,
+    clip: null,
   },
   whoop: {
     label: 'Whoop',
@@ -43,7 +42,7 @@ export const SYNC_GUIDES: Readonly<Record<WatchBrand, SyncGuide>> = {
       'Turn on Apple Health.',
     ],
     url: 'https://apps.apple.com/app/whoop/id1180012238',
-    clip: PLACEHOLDER,
+    clip: null,
   },
 };
 

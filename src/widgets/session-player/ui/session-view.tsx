@@ -32,19 +32,20 @@ import {
   movesFor,
   prescriptionFor,
   useProgramState,
+  useStreak,
   type Exercise,
   type ProgramDay,
   type Tempo,
 } from '@/entities/program';
-import { fonts, meterColors, palette } from '@/shared/config';
+import { fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { plural } from '@/shared/lib/format';
 import { useColorScheme } from '@/shared/lib/theme';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../config/exercise-clips';
+import { SessionDoneSheet } from './session-done-sheet';
 import { doseSeconds, phaseAt, type Phase, type PhaseReading } from '../model/tempo';
-import { ExerciseScrubber } from './exercise-scrubber';
 import { SessionTimerActivity, type SessionActivityProps } from './session-activity';
 
 /**
@@ -57,11 +58,6 @@ import { SessionTimerActivity, type SessionActivityProps } from './session-activ
  */
 const SECONDS_PER_MOVE = 60;
 
-/** Past this many seconds of a move, the back button restarts it instead of
- * stepping back — the convention every transport uses. In seconds rather than
- * as a fraction of the move, now that two moves are rarely the same length; the
- * playhead is a fraction, so it is converted where it is compared. */
-const RESTART_AFTER = 2;
 
 /** The demonstration is the screen. It takes as much width as the margins
  * allow, then gives way on short displays so the readout and the transport
@@ -73,7 +69,7 @@ const CARD_RADIUS = 32;
 /** Big enough to read from where the phone actually is during a session:
  * propped against a wall, several feet away, by someone balancing on one foot
  * who cannot lean in. That is the whole brief for this block of the screen. */
-const CLOCK_SIZE = 64;
+const CLOCK_SIZE = 84;
 /** SwiftUI hosts do not self-size reliably inside flex, so the digits get a
  * fixed box to sit in — the same ratio `HeroStat` settled on. */
 const CLOCK_BOX = CLOCK_SIZE * 1.14;
@@ -81,12 +77,9 @@ const CLOCK_BOX = CLOCK_SIZE * 1.14;
  * would still be moving when the number it is animating to is already stale. */
 const CLOCK_ROLL_SECONDS = 0.3;
 
-/**
- * The expanded state's two edges: the row Exit sits in, and the block Continue
- * gets. Everything between them is demonstration.
- */
-const EXIT_ROW = 44;
+/** The lane the Continue button keeps for itself under the expanded card. */
 const CONTINUE_BLOCK = 92;
+
 /** Corner radius the card relaxes to once it is nearly the whole screen — the
  * same curve at 350pt reads far rounder than it does at 150. */
 const CARD_RADIUS_OPEN = 40;
@@ -298,9 +291,6 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
    * thread; pushing it through state would re-render the video card on every
    * frame of a drag. */
   const progress = useSharedValue(0);
-  /** 1 while the bar is under a finger. The clock stops rather than fighting
-   * the drag for the same number. */
-  const scrubbing = useSharedValue(0);
 
   /** 0 collapsed, 1 full-screen. Drives the card's frame and both sets of
    * chrome off one number, so nothing can arrive out of step with the corner
@@ -316,6 +306,9 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
 
   const move = moves[step];
   const moveCount = moves.length;
+  /** The press that ends the session, which both the label and the colour of
+   * the button answer to. */
+  const last = step === moves.length - 1;
   const current: MovePlan | null = plan[step] ?? null;
   /** How long the move playing now runs for. */
   const moveSeconds = current?.seconds ?? SECONDS_PER_MOVE;
@@ -340,10 +333,22 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
    * broken when the session behind it is perfectly runnable. Reset per move,
    * because the next clip is a different file.
    */
+  /** Whether the end-of-session sheet is up. Separate from `finished`, which
+   * is about the transport: the clock can be at zero while the sheet has been
+   * dismissed, and re-showing it every render would trap the user behind it. */
+  const [celebrating, setCelebrating] = useState(false);
+  const streak = useStreak();
+
   const [clipFailed, setClipFailed] = useState(false);
   useEffect(() => setClipFailed(false), [move]);
 
-  const player = useVideoPlayer(clipFor(move), (instance) => {
+  /** By catalogue id, never by title: a title is copy and will be reworded,
+   * and a renamed exercise quietly losing its demonstration is a bug that looks
+   * like nothing at all. Null for the six moves that have no clip yet, which
+   * the card below states rather than showing another exercise's video. */
+  const clip = clipFor(current?.exercise?.id ?? '');
+
+  const player = useVideoPlayer(clip, (instance) => {
     instance.loop = true;
     // Silent by design: the clip is a diagram that moves. Sound would take the
     // audio session from whatever the user is actually listening to.
@@ -399,12 +404,6 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
    */
   const tick = useFrameCallback(() => {
     'worklet';
-    // The finger owns the playhead while it is down, and the deadline it will
-    // imply is not knowable until it lifts.
-    if (scrubbing.value === 1) {
-      deadline.value = 0;
-      return;
-    }
     // Nothing to count against. A move of length zero would divide the playhead
     // by nothing; holding still is the one safe thing to do with it.
     if (moveMs.value <= 0) return;
@@ -435,10 +434,27 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
     return () => subscription.remove();
   }, [player]);
 
+  /**
+   * The transport, re-asserted on every clip rather than only on the first.
+   *
+   * `useVideoPlayer`'s setup callback runs once, when the player is created.
+   * The session then replaces the source in place as it moves from one exercise
+   * to the next, and a replaced item does not carry the state that callback set
+   * — so the loop held for the first demonstration and every one after it
+   * played through once and froze on its last frame.
+   *
+   * Cheap to repeat and safe to repeat: all three are idempotent, and keying
+   * the effect on the clip is what makes them run at the only moment they
+   * matter.
+   */
   useEffect(() => {
+    player.loop = true;
+    // Silent by design: the clip is a diagram that moves. Sound would take the
+    // audio session from whatever the user is actually listening to.
+    player.muted = true;
     if (playing) player.play();
     else player.pause();
-  }, [player, playing]);
+  }, [player, playing, clip]);
 
   /**
    * Whole seconds only. The playhead moves every frame; the readout must not,
@@ -582,6 +598,11 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
     // leaving by the back arrow writes nothing — a workout logged for a session
     // somebody walked away from is a lie in the one app they did not choose to
     // be lied to in.
+    // The celebration rides the same branch as the Health write and for the
+    // same reason: this is the only place that means the last move actually ran
+    // out. Leaving by the arrow gets no confetti, which is correct — nothing
+    // was finished.
+    setCelebrating(true);
     void saveSessionToHealth({
       dayNumber: day.day,
       moves,
@@ -589,18 +610,11 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
       startedAt: startedAt.current,
       endedAt: new Date(),
     });
-    onFinish?.();
-  }, [goTo, step, progress, deadline, endActivity, activitySnapshot, onFinish, day, moves]);
-
-  const previous = useCallback(() => {
-    // Two seconds, expressed as the fraction of *this* move they come to. A
-    // fixed fraction would mean half a second on a short move and a quarter of
-    // a minute on a long one, and the convention is a wall-clock one.
-    const restart = RESTART_AFTER / Math.max(moveSeconds, 1);
-    const target = progress.value > restart ? step : step - 1;
-    if (!goTo(target)) goTo(0);
-    setPlaying(true);
-  }, [goTo, step, progress, moveSeconds]);
+    // Deliberately NOT calling `onFinish` here. Home unmounts this player when
+    // it fires, and doing that at the instant the clock hits zero would take
+    // the celebration off screen before it was drawn. The sheet calls it on the
+    // way out instead.
+  }, [goTo, step, progress, deadline, endActivity, activitySnapshot, day, moves]);
 
   /**
    * The move running out, from either direction.
@@ -611,7 +625,7 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
    * out from under a gesture that is still going.
    */
   useAnimatedReaction(
-    () => progress.value >= 1 && scrubbing.value === 0 && open.value < 0.5,
+    () => progress.value >= 1 && open.value < 0.5,
     (done, was) => {
       if (done && !was) runOnJS(advance)();
     },
@@ -702,14 +716,21 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
   const cardSize = Math.min(boxWidth - CARD_MARGIN * 2, boxHeight * CARD_MAX_HEIGHT_FRACTION);
   const floor = Math.max(insets.bottom, CARD_MARGIN);
 
-  /** The full-screen rect: everything between the two controls, and nothing
-   * behind either of them. */
-  const openTop = EXIT_ROW + 8;
+  /**
+   * The full-screen rect: from the very top down to the Continue button.
+   *
+   * It used to stop short at the top as well, to leave a lane for a collapse
+   * chip that sat above it. The chip is on the video now, so that lane was an
+   * empty band of background — and a "full screen" that begins an inch down
+   * reads as a card that failed to finish opening. The bottom still stops
+   * short, because the button below it is a real object in the layout rather
+   * than an overlay.
+   */
   const full: Frame = {
     x: CARD_MARGIN,
-    y: openTop,
+    y: 0,
     width: boxWidth - CARD_MARGIN * 2,
-    height: Math.max(boxHeight - openTop - floor - CONTINUE_BLOCK, cardSize),
+    height: Math.max(boxHeight - floor - CONTINUE_BLOCK, cardSize),
   };
 
   /** The resting rect, centred in whatever the flex layout left the stage. */
@@ -813,6 +834,40 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
     // separator being wedged between them all.
     .map((line) => (line.endsWith('.') ? line : `${line}.`))
     .join(' ');
+
+  /**
+   * The one control at the bottom of this screen, in both states.
+   *
+   * Defined once rather than written twice. Collapsed it sits in the column;
+   * expanded it sits on the video — but it is the same button doing the same
+   * job, and two copies of it is how the collapsed state ended up still showing
+   * the old three-icon transport long after the button had replaced it
+   * everywhere else.
+   */
+  const ctaButton = (
+    <PrimaryButton
+      // Green only on the last one. The single colour change in the whole
+      // screen, spent on the press that ends the session — a button that looks
+      // the same for move one and move five gives no sense of arriving
+      // anywhere.
+      tint={last ? { fill: meter.positive, label: primaryButton.dark.label } : undefined}
+      // The clock lives in the button rather than somewhere else on the screen.
+      // Reading the time off the thing you are waiting to press is the plainest
+      // way to say why it cannot be pressed yet — which is why it counts the
+      // move down and not the phase. A number that restarts at three every
+      // three seconds says nothing about when the button opens.
+      //
+      // "Finish" on the last one: pressing Continue for the final time and
+      // having the session simply stop is the moment this screen most needs to
+      // not feel like a bug.
+      label={ready ? (last ? 'Finish' : 'Continue') : clock(moveLeft)}
+      disabled={!ready}
+      onPress={() => {
+        setPlaying(true);
+        advance();
+      }}
+    />
+  );
 
   /** The readings, which the expanded state exists to get rid of. */
   const chromeStyle = useAnimatedStyle(() => ({ opacity: 1 - open.value }));
@@ -930,19 +985,11 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
           </View>
         )}
 
-        <View style={styles.transport}>
-          <ExerciseScrubber
-            progress={progress}
-            scrubbing={scrubbing}
-            playing={playing}
-            onTogglePlay={() => setPlaying((on) => !on)}
-            onPrevious={previous}
-            onNext={() => {
-              setPlaying(true);
-              advance();
-            }}
-          />
-        </View>
+        {/* Where the three-icon transport used to be. A scrubber offers four
+            answers — back, pause, forward, drag — to a screen that only ever
+            has one thing to do next, and the icon that meant "next" was doing
+            the work of a Continue button while looking like a skip. */}
+        <View style={styles.transport}>{ctaButton}</View>
       </Animated.View>
 
       {/* Absolute, so one interpolation carries it from the stage to the whole
@@ -989,50 +1036,52 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
             />
           </Pressable>
         </Animated.View>
+
+        {/* The upsize control's pair, in the same chip, the same weight and —
+            deliberately — the same seat. One takes the demonstration
+            full-screen and this one gives it back, so they are the same button
+            reversed; moving the return trip to a different corner made it read
+            as a way out of the session rather than out of the size. They
+            crossfade in place. */}
+        <Animated.View
+          style={[styles.expand, fullStyle]}
+          pointerEvents={expanded ? 'auto' : 'none'}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Collapse demonstration"
+            onPress={() => setOpen(false)}
+            hitSlop={10}
+            style={({ pressed }) => [styles.chip, pressed && { opacity: 0.7 }]}>
+            <HugeiconsIcon
+              icon={ArrowShrink01Icon}
+              size={19}
+              color="#111114"
+              strokeWidth={2.2}
+            />
+          </Pressable>
+        </Animated.View>
       </Animated.View>
 
-      {/* One way out and one way on. Nothing else: the point of the expanded
-          state is that the demonstration is the only thing being read. */}
-      {/* The upsize control's pair, in the same chip and the same weight: one
-          takes the demonstration full-screen, this one gives it back. A text
-          label here read as a different kind of control entirely — and as a way
-          out of the session rather than out of the size. */}
-      <Animated.View
-        style={[styles.exitRow, { height: EXIT_ROW }, fullStyle]}
-        pointerEvents={expanded ? 'auto' : 'none'}>
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel="Collapse demonstration"
-          onPress={() => setOpen(false)}
-          hitSlop={10}
-          style={({ pressed }) => [styles.chip, pressed && { opacity: 0.7 }]}>
-          <HugeiconsIcon
-            icon={ArrowShrink01Icon}
-            size={19}
-            color="#111114"
-            strokeWidth={2.2}
-          />
-        </Pressable>
-      </Animated.View>
-
+      {/* Under the card, in the same seat it holds collapsed, at the same size.
+          Laid over the video instead it became part of the demonstration —
+          something to look at rather than the one thing to press — and it
+          covered the feet, which on half of these exercises is the part being
+          demonstrated. */}
       <Animated.View
         style={[styles.continueRow, { bottom: floor }, fullStyle]}
         pointerEvents={expanded ? 'auto' : 'none'}>
-        {/* The clock moves into the button rather than sitting somewhere else
-            on a screen whose whole point is that only the demonstration is on
-            it. Reading the time off the thing you are waiting to press is also
-            the plainest way to say why it cannot be pressed yet — which is why
-            it counts the move down and not the phase. A number that restarts at
-            three every three seconds says nothing about when the button opens. */}
-        <PrimaryButton
-          label={ready ? 'Continue' : clock(moveLeft)}
-          disabled={!ready}
-          onPress={() => {
-            setPlaying(true);
-            advance();
-          }}
-        />
+        {ctaButton}
       </Animated.View>
+
+      <SessionDoneSheet
+        visible={celebrating}
+        streak={streak.current}
+        moves={moveCount}
+        onClose={() => {
+          setCelebrating(false);
+          onFinish?.();
+        }}
+      />
     </View>
   );
 }
@@ -1148,13 +1197,6 @@ const styles = StyleSheet.create({
   },
   transport: {
     paddingHorizontal: CARD_MARGIN,
-  },
-  exitRow: {
-    position: 'absolute',
-    top: 0,
-    left: CARD_MARGIN,
-    right: CARD_MARGIN,
-    justifyContent: 'center',
   },
   continueRow: {
     position: 'absolute',

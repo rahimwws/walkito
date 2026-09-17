@@ -17,9 +17,9 @@ import Animated, {
 
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
+import { TypedText } from '@/shared/ui/typed-text';
 
 import { MASCOT, MASCOT_HEIGHT } from '../config/mascot';
-import { TypedText } from './typed-text';
 
 /** Beat after the greeting lands, before it steps back. */
 const SETTLE_MS = 300;

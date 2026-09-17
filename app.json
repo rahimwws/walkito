@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Tread",
+    "name": "Walkito",
     "slug": "tread",
-    "scheme": "tread",
+    "scheme": "walkito",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,7 +12,7 @@
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       },
-      "bundleIdentifier": "com.tread.app",
+      "bundleIdentifier": "com.walkito.app",
       "appleTeamId": "HWGBXV8W4Z"
     },
     "android": {
@@ -23,7 +23,7 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.tread.app"
+      "package": "com.walkito.app"
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -50,8 +50,8 @@
         "@kingstinct/react-native-healthkit",
         {
           "background": true,
-          "NSHealthShareUsageDescription": "Tread reads your steps, walking pattern and sleep so your plan starts from what you have actually been doing.",
-          "NSHealthUpdateUsageDescription": "Tread saves your sessions to Health so they count toward your activity."
+          "NSHealthShareUsageDescription": "walkito reads your steps, walking pattern and sleep so your plan starts from what you have actually been doing.",
+          "NSHealthUpdateUsageDescription": "walkito saves your sessions to Health so they count toward your activity."
         }
       ],
       [
@@ -101,10 +101,10 @@
               "appExtensions": [
                 {
                   "targetName": "ExpoWidgetsTarget",
-                  "bundleIdentifier": "com.tread.app.dev.ExpoWidgetsTarget",
+                  "bundleIdentifier": "com.walkito.app.dev.ExpoWidgetsTarget",
                   "entitlements": {
                     "com.apple.security.application-groups": [
-                      "group.com.tread.app.dev"
+                      "group.com.walkito.app.dev"
                     ]
                   }
                 }
@@ -112,9 +112,9 @@
             }
           }
         },
-        "projectId": "dc9fafaa-387c-4981-a1f5-aa5b1d2764f7"
+        "projectId": "ada5351e-5344-43d9-a088-b23f1695cbb1"
       }
     },
-    "owner": "rahimwws77"
+    "owner": "nazarly-digital"
   }
 }

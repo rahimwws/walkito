@@ -10,6 +10,9 @@ import {
   useOfferNotifications,
   usePendingOfferPresenter,
   useHealthPipeline,
+  useNotificationScheduler,
+  usePurchases,
+  useReferralSync,
   useQuickActions,
 } from '@/app/providers';
 import { useOnboarded } from '@/entities/session';
@@ -56,6 +59,19 @@ export function RootLayout() {
   // Fills the local health cache in the background. Never awaited and never
   // rendered — every screen reads the cache, which always has an answer.
   useHealthPipeline();
+  // Starts the store and tracks whether the subscription is live. On a
+  // simulator this resolves to "entitled" without contacting anything — see the
+  // note in `entities/purchase/model/store.ts`.
+  usePurchases();
+  // Reads the invite status on launch and listens for the push that says
+  // someone used your code. At the root because that push can be what launches
+  // the app — see the note inside.
+  useReferralSync();
+  // Keeps the seven-day notification window current and records that the user
+  // was here. At the root because the second half matters on every launch: the
+  // backoff that silences the app is cleared by any open, not only by a tap on
+  // a notification.
+  useNotificationScheduler();
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>

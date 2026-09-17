@@ -10,7 +10,7 @@ import { kv } from '@/shared/lib/storage';
 import { healthAvailable } from './health';
 
 /**
- * The two things Tread puts back into Health.
+ * The two things Walkito puts back into Health.
  *
  * Deliberately short, and deliberately not the interesting data. Pain scores
  * and retest results are *not* written: HealthKit has no type that means "how
@@ -116,8 +116,8 @@ export async function saveSessionToHealth(session: SessionRecord): Promise<boole
         session.startedAt,
         session.endedAt,
         undefined,
-        // What makes it show up as Tread rather than as an anonymous "Other".
-        { HKWorkoutBrandName: 'Tread' },
+        // What makes it show up as Walkito rather than as an anonymous "Other".
+        { HKWorkoutBrandName: 'Walkito' },
       );
     }
     // Only after the save resolves. Recorded first, a failed write would be

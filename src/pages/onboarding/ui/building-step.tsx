@@ -14,11 +14,11 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { fonts } from '@/shared/config';
+import { TypedText } from '@/shared/ui/typed-text';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { PLAN_PHOTOS } from '../config/plan-photos';
 import { DEFAULT_BUILDING_LINES, type BuildingLines } from '../model/reflection';
-import { TypedText } from './typed-text';
 
 /**
  * What the screen says while it works, in order.

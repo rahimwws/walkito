@@ -22,8 +22,16 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
+import { QUESTION_LINE_MS, TypedText } from '@/shared/ui/typed-text';
 import { type HealthSummary } from '@/entities/health';
 import { armOffer } from '@/entities/offer';
+import {
+  REFERRAL_CODE_LENGTH,
+  REFERRAL_DISCOUNT_PERCENT,
+  normalise,
+  redeem,
+  type RedeemResult,
+} from '@/entities/referral';
 import { setBilateral } from '@/entities/health';
 import { firstName, setProfileName } from '@/entities/profile';
 import { completeOnboarding, signInWithApple } from '@/entities/session';
@@ -41,6 +49,7 @@ import { ChoiceStep } from './choice-step';
 import { ContractStep } from './contract-step';
 import { PlanChoiceStep } from './plan-choice-step';
 import { SexStep } from './sex-step';
+import { ReferralStep } from './referral-step';
 import { SocialProofStep } from './social-proof-step';
 import { SizeStep, type SizeUnit } from './size-step';
 import { HealthStep } from './health-step';
@@ -50,7 +59,6 @@ import { NameStep } from './name-step';
 import { NotifyStep } from './notify-step';
 import { WelcomePage } from '@/pages/welcome';
 import { StepProgress } from './step-progress';
-import { QUESTION_LINE_MS, TypedText } from './typed-text';
 
 const SIDE_PAD = 24;
 /** Square, matching the primary button's height so the pair reads as one bar. */
@@ -142,6 +150,13 @@ export function OnboardingPage() {
    * cannot offer it. The intro screen says so and the flow holds, because
    * advancing silently would look exactly like a sign-in that worked. */
   const [signInFailed, setSignInFailed] = useState(false);
+  /** The invite code as typed, and what came of trying it. Held here rather
+   * than in the step so a failed attempt survives the step's own re-renders. */
+  const [referralCode, setReferralCode] = useState('');
+  const [referralNote, setReferralNote] = useState<string | null>(null);
+  const [referralGood, setReferralGood] = useState(false);
+  const [redeeming, setRedeeming] = useState(false);
+
   /** Whether the contract has been signed, and how far its stamp has come down. */
   const [signed, setSigned] = useState(false);
   const [drawing, setDrawing] = useState(false);
@@ -240,6 +255,48 @@ export function OnboardingPage() {
    * read inside an effect and must never itself cause a render. */
   const enterFrom = useRef(1);
   const mounted = useRef(false);
+
+  /**
+   * The last screen's answer, and the end of the flow.
+   *
+   * An empty field is a skip and finishes immediately. A filled one is checked
+   * first, and a code that does not work keeps the user on the screen with the
+   * reason under the field — leaving for Home on a failed code would be the app
+   * quietly deciding the question did not matter after asking it.
+   *
+   * On success the confirmation is held on screen for a beat before the flow
+   * moves, so the one thing the user came to this screen for is actually seen.
+   */
+  const finishWithReferral = useCallback(async () => {
+    const finish = () => {
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      Keyboard.dismiss();
+      armOffer({ weeks: String(plan.weeks), name });
+      completeOnboarding();
+    };
+
+    const code = normalise(referralCode);
+    if (code.length !== REFERRAL_CODE_LENGTH) {
+      finish();
+      return;
+    }
+    if (redeeming) return;
+
+    setRedeeming(true);
+    const result = await redeem(code);
+    setRedeeming(false);
+
+    if (result !== 'ok') {
+      setReferralGood(false);
+      setReferralNote(REDEEM_MESSAGE[result]);
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+      return;
+    }
+
+    setReferralGood(true);
+    setReferralNote(`${REFERRAL_DISCOUNT_PERCENT}% off applied.`);
+    setTimeout(finish, CONFIRM_MS);
+  }, [referralCode, redeeming, plan.weeks, name]);
 
   /**
    * Exit, then swap, then enter — in that order.
@@ -356,11 +413,17 @@ export function OnboardingPage() {
     // which put the paywall on top of a stack that was being torn down the
     // moment it closed — the source of both "GO_BACK was not handled" and the
     // frozen sheet with a dead button. Over Home there is nothing to unwind.
+    // The reviews now hand over to the invite question rather than to Home.
+    // It is asked last on purpose: a code is worth most to someone who has just
+    // decided they want the thing.
     if (step.kind === 'social') {
-      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-      Keyboard.dismiss();
-      armOffer({ weeks: String(plan.weeks), name });
-      completeOnboarding();
+      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+      step1(true);
+      return;
+    }
+
+    if (step.kind === 'referral') {
+      void finishWithReferral();
       return;
     }
     if (isLast) {
@@ -370,9 +433,30 @@ export function OnboardingPage() {
       return;
     }
     step1(true);
-  }, [canAdvance, isLast, go, index, router, step.kind, plan.weeks, name, review]);
+    // `finishWithReferral` closes over the typed code, so it has to be a
+    // dependency: without it this callback keeps the version made on the first
+    // render, which closes over an empty field and would skip every code.
+  }, [canAdvance, isLast, go, index, router, step.kind, plan.weeks, name, review, finishWithReferral]);
 
-  /** The header's close is Skip: it leaves the whole flow, not one step, and
+  /**
+ * What to say about a code that did not work.
+ *
+ * Every one of these is an ordinary thing a person can do, so none of them is
+ * phrased as an error the user caused — the screen says what happened and
+ * leaves the field alone so they can try again.
+ */
+const REDEEM_MESSAGE: Readonly<Record<Exclude<RedeemResult, 'ok'>, string>> = {
+  unknown: 'We don’t know that code. Check it and try again.',
+  own: 'That one is yours. Send it to someone else.',
+  already: 'You have already used a code.',
+  unavailable: 'Invites are not available in this build.',
+  failed: 'Could not reach the server. Try again in a moment.',
+};
+
+/** Long enough for the confirmation to be read before the screen leaves. */
+const CONFIRM_MS = 900;
+
+/** The header's close is Skip: it leaves the whole flow, not one step, and
    * it counts as finishing. Onboarding is the app's front door — a close that
    * dumped the user back into an app they had not set up would strand them. */
   const onExit = useCallback(() => {
@@ -428,6 +512,12 @@ export function OnboardingPage() {
         return review < TESTIMONIAL_COUNT - 1 ? 'Continue' : 'See my offer';
       case 'contract':
         return 'Continue';
+      // The one screen whose button changes meaning with the field: nothing
+      // typed is a skip, and saying so is what makes it obvious the question is
+      // optional without a second control to explain it.
+      case 'referral':
+        if (redeeming) return 'Checking…';
+        return referralCode.length === REFERRAL_CODE_LENGTH ? 'Apply code' : 'Skip';
       default:
         return 'Next';
     }
@@ -650,6 +740,20 @@ export function OnboardingPage() {
 
             {step.kind === 'social' && (
               <SocialProofStep name={name} index={review} onChange={setReview} />
+            )}
+
+            {step.kind === 'referral' && (
+              <ReferralStep
+                value={referralCode}
+                onChange={(next) => {
+                  setReferralCode(next);
+                  // A note describes the last attempt. Typing starts a new one.
+                  setReferralNote(null);
+                }}
+                onSubmit={onNext}
+                note={referralNote}
+                noteGood={referralGood}
+              />
             )}
 
             {step.kind === 'plan' && (

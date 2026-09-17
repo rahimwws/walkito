@@ -1,4 +1,4 @@
-# Tread
+# Walkito
 
 An Expo app foundation: the design system, motion, and architecture wired up,
 with no product on top of it yet.
@@ -108,7 +108,7 @@ assets/   Fonts, icons, Lottie
   `assets/lottie/splash/*.json` carry the previous app's logo. Replace them.
 - **No EAS project.** The old `projectId`, `owner`, and updates URL were
   removed. Run `eas init` to link your own.
-- **Bundle ID** is a placeholder: `com.tread.app`, in `app.json` and
+- **Bundle ID** is a placeholder: `com.walkito.app`, in `app.json` and
   `app.config.ts`.
 
 ## License

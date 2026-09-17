@@ -81,7 +81,7 @@ export function NotifyStep({ name, granted, onAnswered, onNext, onSkip }: Notify
         {name.trim().length > 0 ? `Don’t go it alone, ${name.trim()}` : 'Don’t go it alone'}
       </Text>
       <Text style={[styles.blurb, { color: meter.caption }]}>
-        A plan only works if it turns up. Let Tread tell you when today has a session in it.
+        A plan only works if it turns up. Let Walkito tell you when today has a session in it.
       </Text>
 
       <Banner />
@@ -176,7 +176,7 @@ function Banner() {
       <Image source={APP_ICON} style={styles.appIcon} />
       <View style={styles.bannerCopy}>
         <View style={styles.bannerTop}>
-          <Text style={[styles.bannerTitle, { color: colors.foreground }]}>Tread</Text>
+          <Text style={[styles.bannerTitle, { color: colors.foreground }]}>Walkito</Text>
           <Text style={[styles.bannerTime, { color: meter.unit }]}>now</Text>
         </View>
         <Text style={[styles.bannerBody, { color: meter.caption }]} numberOfLines={2}>

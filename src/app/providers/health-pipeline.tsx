@@ -39,7 +39,7 @@ export function useHealthPipeline(): void {
   useEffect(() => {
     // The documented fallback for background delivery failing to register,
     // which it does silently and which no app can detect. Someone who opens
-    // Tread every morning gets current data either way.
+    // Walkito every morning gets current data either way.
     const sub = AppState.addEventListener('change', (state) => {
       if (state === 'active') void refreshHealth(new Date(), { painNextMorning });
     });

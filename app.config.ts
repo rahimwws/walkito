@@ -4,7 +4,7 @@ import { ConfigContext, ExpoConfig } from 'expo/config';
 // variant, so `development`, `preview`, and `production` builds install side by
 // side. The variant comes from APP_VARIANT, stored in the EAS environments and
 // pulled locally into .env.local by `eas env:pull`.
-const BUNDLE_ID = 'com.tread.app';
+const BUNDLE_ID = 'com.walkito.app';
 
 function getBundleId() {
   switch (process.env.APP_VARIANT) {
@@ -17,7 +17,7 @@ function getBundleId() {
   }
 }
 
-// Every variant is called "Tread" on the home screen. They still install side
+// Every variant is called "Walkito" on the home screen. They still install side
 // by side — that is the bundle id's job, not the label's — but the label no
 // longer tells you which one you are looking at. Suffix a variant here again
 // if that stops being worth it.
@@ -52,15 +52,25 @@ function getIosIcon() {
 
 export default ({ config }: ConfigContext): ExpoConfig => {
   const iosIcon = getIosIcon();
-  const baseScheme = typeof config.scheme === 'string' ? config.scheme : 'tread';
+  const baseScheme = typeof config.scheme === 'string' ? config.scheme : 'walkito';
 
   return {
     ...config,
-    slug: config.slug ?? 'tread',
-    name: getName(config.name ?? 'Tread'),
+    slug: config.slug ?? 'walkito',
+    name: getName(config.name ?? 'Walkito'),
     scheme: getScheme(baseScheme),
     runtimeVersion: {
       policy: 'appVersion',
+    },
+    extra: {
+      ...config.extra,
+      // The variant, carried into the bundle. `APP_VARIANT` itself is a build
+      // -time Node variable and does not survive into the app, but the store
+      // needs to know the difference between a TestFlight build and the App
+      // Store one — a Test Store key is fine in the first and must never reach
+      // the second, and `__DEV__` cannot tell them apart because both are
+      // release builds. See `entities/purchase/model/store.ts`.
+      variant: process.env.APP_VARIANT ?? 'development',
     },
     ios: {
       ...config.ios,

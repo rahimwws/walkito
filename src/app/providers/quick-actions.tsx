@@ -6,7 +6,7 @@ import { Linking } from 'react-native';
 import { firstName, useProfileName } from '@/entities/profile';
 
 /** Where the mail goes. One address, read by a person. */
-const SUPPORT = 'hello@tread.app';
+const SUPPORT = 'hello@walkito.app';
 
 /**
  * The two things a long press can say: one static, one named.
@@ -37,10 +37,10 @@ function mailto(subject: string, body: string): string {
 
 const MAIL = {
   [LEAVING]: mailto(
-    'Before I delete Tread',
+    'Before I delete Walkito',
     "I'm about to delete the app.\n\nWhat pushed me out:\n\n",
   ),
-  [TALK]: mailto('Something is off in Tread', "Hey —\n\nWhat's going on:\n\n"),
+  [TALK]: mailto('Something is off in Walkito', "Hey —\n\nWhat's going on:\n\n"),
 } as const;
 
 /**

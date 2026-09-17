@@ -32,6 +32,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { Linking } from 'react-native';
 
 import { PRODUCTS, purchases } from '@/entities/purchase';
+import { REFERRAL_DISCOUNT_PERCENT, useReferral } from '@/entities/referral';
 import { formatPrice } from '@/shared/lib/money';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
@@ -61,6 +62,14 @@ const FULL_YEAR = MONTHLY * 12;
 const TIERS = {
   standard: { yearly: 80.99 },
   boosted: { yearly: 46.99 },
+  /**
+   * The invite price: the full year less the referral discount.
+   *
+   * Computed from `FULL_YEAR` rather than typed, so the figure on this sheet
+   * and the promise on the invite screen come from the same number. Rounded to
+   * the cent the way a store would.
+   */
+  invited: { yearly: Math.round(FULL_YEAR * (1 - REFERRAL_DISCOUNT_PERCENT / 100) * 100) / 100 },
 } as const;
 
 const saving = (yearly: number) => Math.round((1 - yearly / FULL_YEAR) * 100);
@@ -158,7 +167,19 @@ export function OfferPage() {
    * mounted when it happens, so this arrives as a change to a live screen
    * rather than as a different screen being opened. */
   const boosted = useBoost();
-  const yearly = boosted ? TIERS.boosted.yearly : TIERS.standard.yearly;
+  /**
+   * Whether an invite applies, decided by the server and cached locally.
+   *
+   * It wins over the win-back price because it is the larger discount, and
+   * offering someone the worse of two prices they have both earned is the sort
+   * of thing that gets noticed exactly once.
+   */
+  const { discounted } = useReferral();
+  const yearly = discounted
+    ? TIERS.invited.yearly
+    : boosted
+      ? TIERS.boosted.yearly
+      : TIERS.standard.yearly;
 
   /** Springs in from slightly small. A number this size fading in reads as a
    * page loading; one that arrives with weight reads as a figure being put on

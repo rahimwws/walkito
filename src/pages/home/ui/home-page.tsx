@@ -21,7 +21,7 @@ import { briefTokens } from '../model/brief';
 import { GiftSheet } from '@/shared/ui/gift-sheet';
 import { StreakSheet } from '@/shared/ui/streak-sheet';
 import { StreakWeek } from '@/shared/ui/streak-week';
-import { Confetti } from './confetti';
+import { Confetti } from '@/shared/ui/confetti';
 import { DailyStack } from './daily-stack';
 import { PainCheck } from './pain-check';
 import { TodayTasks } from './today-tasks';

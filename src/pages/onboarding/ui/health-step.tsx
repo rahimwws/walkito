@@ -122,7 +122,7 @@ export function HealthStep({ name, summary, onConnected, onNext, onSkip }: Healt
         {name.trim().length > 0 ? `Fill me in, ${name.trim()}!` : 'Fill me in!'}
       </Text>
       <Text style={[styles.blurb, { color: meter.caption }]}>
-        Tread reads your steps, energy and heart rate so the plan starts from what you
+        Walkito reads your steps, energy and heart rate so the plan starts from what you
         have actually been doing — not what you meant to do.
       </Text>
 

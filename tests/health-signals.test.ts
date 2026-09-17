@@ -33,6 +33,7 @@ const BLANK: Omit<DailyMetric, 'date'> = {
   asymmetryPct: null,
   walkingSpeed: null,
   sleepMin: null,
+  wakeMin: null,
   restingHR: null,
   flights: null,
   longestRunKm: null,

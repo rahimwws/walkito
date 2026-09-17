@@ -22,11 +22,14 @@
 
 import { useMemo } from 'react';
 
+import { kv } from '@/shared/lib/storage';
+
 import { PROGRAM, isSystemRest } from './program';
 import {
   currentDay,
   dateKeyForDay,
   dayNumberFor,
+  daysBetween,
   logFor,
   programState,
   toDateKey,
@@ -267,6 +270,56 @@ export function freezesEarned(daysElapsed: number): number {
 /** Whether a break is still close enough behind to be put back. */
 export function canRestore(hoursSinceBreak: number): boolean {
   return hoursSinceBreak >= 0 && hoursSinceBreak <= RESTORE_WINDOW_HOURS;
+}
+
+const SPENT_KEY = 'program/freezes';
+/** Nothing here looks back further than a fortnight. */
+const SPENT_KEEP = 21;
+
+/**
+ * The days a freeze was actually spent.
+ *
+ * `freezesEarned` was arithmetic with nothing underneath it — how many a user
+ * has banked is knowable from the calendar, but how many are *left* needs a
+ * record of what has been used, and there was none. Without it nothing could
+ * answer "has this week already been covered", which is one of the conditions
+ * the streak notification is not allowed to fire without.
+ */
+function spentDays(): string[] {
+  const raw = kv.getString(SPENT_KEY);
+  if (raw == null) return [];
+  try {
+    const parsed = JSON.parse(raw) as unknown;
+    return Array.isArray(parsed) ? parsed.filter((d): d is string => typeof d === 'string') : [];
+  } catch {
+    // A corrupt record costs the user a freeze, not the app.
+    return [];
+  }
+}
+
+/** Records a freeze against a date. Idempotent within a day. */
+export function spendFreeze(dateKey: string): void {
+  const days = spentDays();
+  if (days.includes(dateKey)) return;
+  kv.set(SPENT_KEY, JSON.stringify([...days, dateKey].slice(-SPENT_KEEP)));
+}
+
+/** Whether a freeze has already covered the seven days ending at `dateKey`. */
+export function freezeUsedThisWeek(dateKey: string): boolean {
+  return spentDays().some((day) => {
+    const gap = daysBetween(day, dateKey);
+    return gap >= 0 && gap < 7;
+  });
+}
+
+/** Banked minus spent, never below zero. */
+export function freezesLeft(daysElapsed: number): number {
+  return Math.max(0, freezesEarned(daysElapsed) - spentDays().length);
+}
+
+/** For a full reset. */
+export function resetFreezes(): void {
+  kv.remove(SPENT_KEY);
 }
 
 /** The date a program day falls on. Re-exported so screens reading attendance

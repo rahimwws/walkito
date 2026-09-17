@@ -23,6 +23,8 @@ import { healthAvailable } from '@/entities/health';
 
 import type { AccentName } from '@/shared/config';
 
+import { REFERRAL_DISCOUNT_PERCENT } from '@/entities/referral';
+
 export type OnboardingOption = {
   /** Stable key, and what the answer is recorded as. */
   value: string;
@@ -124,6 +126,7 @@ export type OnboardingStep = StepBase &
     | { kind: 'plan' }
     /** Three reviews, handed over one per press, ahead of the offer. */
     | { kind: 'social' }
+    | { kind: 'referral' }
   );
 
 /**
@@ -188,7 +191,7 @@ const WATCH_OPTIONS: readonly OnboardingOption[] = [
 
 export const STEPS: readonly OnboardingStep[] = [
   {
-    // Ahead of the intro: this is the front door, and the intro is Tread
+    // Ahead of the intro: this is the front door, and the intro is Walkito
     // introducing itself once the door is open.
     kind: 'welcome',
     key: 'welcome',
@@ -204,7 +207,7 @@ export const STEPS: readonly OnboardingStep[] = [
     // renders the two lines below instead, in sequence.
     title: 'Run without second-guessing',
     blurb: 'A daily plan that changes when your legs do.',
-    greeting: 'Hi, I\u2019m Tread',
+    greeting: 'Hi, I\u2019m Walkito',
     headline: 'Let\u2019s find out why it still hurts.',
     cta: 'Continue with Apple',
     footnote: '~2 min setup',
@@ -452,6 +455,22 @@ export const STEPS: readonly OnboardingStep[] = [
     act: 3,
     title: '',
     blurb: '',
+  },
+  {
+    /**
+     * The last thing asked, and the only optional one.
+     *
+     * After the reviews rather than before them: a code is worth more to
+     * someone who has just decided they want the thing. And last rather than
+     * anywhere else because it is the one question whose answer is usually
+     * "no" — a screen most people skip belongs at the end, where skipping it
+     * costs them nothing they were in the middle of.
+     */
+    kind: 'referral',
+    key: 'referral',
+    act: 3,
+    title: 'Have a referral code?',
+    blurb: `Enter it and you both get ${REFERRAL_DISCOUNT_PERCENT}% off your plan.`,
   },
 ];
 

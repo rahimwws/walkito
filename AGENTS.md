@@ -14,9 +14,11 @@ Read [`src/README.md`](src/README.md) before adding files. The rules that bite m
 
 Put new code in the page that uses it. Move it down a layer only when a second page needs it.
 
-# Typography: Inter
+# Typography: SF Pro Rounded
 
-All text uses Inter, bundled in `assets/fonts/` and loaded at runtime in `src/app/layouts/root-layout.tsx` (Expo Go can't embed fonts at build time; the expo-font config plugin in `app.json` covers dev builds). The faces are copied out of `@expo-google-fonts/inter` rather than imported from it, so the runtime map and the build-time plugin can both point at one path.
+All text uses SF Pro Rounded, bundled in `assets/fonts/` and loaded at runtime in `src/app/layouts/root-layout.tsx` (Expo Go can't embed fonts at build time; the expo-font config plugin in `app.json` covers dev builds). Rounded rather than neutral because the product is a coach — see the note at the top of `src/shared/config/fonts.ts`.
+
+This said Inter until the app switched faces; the five `Inter-*.ttf` files sat unreferenced in `assets/fonts/` for as long as the doc kept claiming they were in use, and have now been deleted.
 
 Set weights via `fontFamily` with the constants from `src/shared/config/fonts.ts` (`fonts.regular` … `fonts.heavy`) — never via `fontWeight`, which makes iOS synthesize or fall back to the system font:
 

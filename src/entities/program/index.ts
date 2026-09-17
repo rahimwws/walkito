@@ -140,6 +140,10 @@ export {
 
 export {
   attended,
+  freezeUsedThisWeek,
+  freezesLeft,
+  resetFreezes,
+  spendFreeze,
   streakThrough,
   useStreak,
   weekAttendance,

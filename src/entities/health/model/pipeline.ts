@@ -25,7 +25,17 @@ import type { DailyMetric } from './metrics';
  * and has to be averaged, because summing it would produce a number in the
  * hundreds that looks like a catastrophic reading.
  */
-type Fold = 'sum' | 'mean' | 'last';
+type Fold = 'sum' | 'mean' | 'last' | 'max';
+
+/**
+ * The window a sleep sample has to end in to count as waking up.
+ *
+ * Generous on both sides — shift workers and bad nights are real — but bounded,
+ * because everything outside it is a nap, and a nap read as a wake time moves
+ * tomorrow's notification by hours.
+ */
+const WAKE_EARLIEST = 3 * 60;
+const WAKE_LATEST = 12 * 60;
 
 type Source = {
   type: string;
@@ -103,6 +113,7 @@ const BLANK_DAY = {
   asymmetryPct: null,
   walkingSpeed: null,
   sleepMin: null,
+  wakeMin: null,
   restingHR: null,
   flights: null,
   longestRunKm: null,
@@ -122,7 +133,11 @@ function foldInto(
         ? values.reduce((a, b) => a + b, 0)
         : fold === 'mean'
           ? values.reduce((a, b) => a + b, 0) / values.length
-          : values[values.length - 1];
+          : fold === 'max'
+            ? // Order is not guaranteed by the anchored query, so the latest
+              // instant has to be taken rather than the last one that arrived.
+              values.reduce((a, b) => (b > a ? b : a), values[0])
+            : values[values.length - 1];
     out.push({ ...BLANK_DAY, date, [field]: value });
   }
   return out;
@@ -180,19 +195,36 @@ async function pullSleep(from: Date): Promise<void> {
     } as never);
 
     const buckets = new Map<string, number[]>();
+    /** End instants, for the wake time. The same samples, a different question:
+     * how long you slept is a total, when you got up is a moment. */
+    const wake = new Map<string, number[]>();
     for (const sample of response.samples) {
       // 0 is "in bed"; every asleep stage is 3 or above.
       if (Number(sample.value) < 3) continue;
       const start = new Date(sample.startDate);
-      const minutes = (new Date(sample.endDate).getTime() - start.getTime()) / 60_000;
+      const end = new Date(sample.endDate);
+      const minutes = (end.getTime() - start.getTime()) / 60_000;
       // Filed under the morning it ended, not the evening it began: "you slept
       // 5h 20m" is a statement about last night, said today.
-      const key = dayKey(new Date(sample.endDate));
+      const key = dayKey(end);
       const list = buckets.get(key) ?? [];
       list.push(minutes);
       buckets.set(key, list);
+
+      // Only ends that land in a plausible morning count as getting up. An
+      // afternoon nap is a real asleep sample and a nonsense wake time, and
+      // letting one in is how the morning nudge drifts towards lunchtime.
+      const endMinutes = end.getHours() * 60 + end.getMinutes();
+      if (endMinutes >= WAKE_EARLIEST && endMinutes <= WAKE_LATEST) {
+        const ends = wake.get(key) ?? [];
+        ends.push(endMinutes);
+        wake.set(key, ends);
+      }
     }
     mergeDays(foldInto(buckets, 'sleepMin', 'sum'));
+    // The latest end of the night, not the first: someone who surfaces, dozes,
+    // and gets up an hour later got up an hour later.
+    mergeDays(foldInto(wake, 'wakeMin', 'max'));
     if (response.newAnchor != null) rememberAnchor(type, response.newAnchor);
   } catch {
     forgetAnchor(type);

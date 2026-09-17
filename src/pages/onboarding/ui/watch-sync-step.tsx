@@ -1,4 +1,5 @@
 import { useVideoPlayer, VideoView } from 'expo-video';
+import { useEffect } from 'react';
 import { Linking, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 
 import { fonts, meterColors, palette } from '@/shared/config';
@@ -39,6 +40,9 @@ export function WatchSyncStep({ brand }: WatchSyncStepProps) {
 
   const guide = SYNC_GUIDES[brand];
 
+  // `useVideoPlayer` is a hook and cannot be skipped, so it is always created;
+  // a null source simply gives it nothing to play. The card below is what is
+  // conditional, not the player.
   const player = useVideoPlayer(guide.clip, (instance) => {
     instance.loop = true;
     // Silent, like every other demonstration in the app: this plays while
@@ -47,6 +51,17 @@ export function WatchSyncStep({ brand }: WatchSyncStepProps) {
     instance.muted = true;
     instance.play();
   });
+
+  /**
+   * Re-asserted whenever the guide changes, for the reason the session player
+   * does the same: the setup callback above runs once, and switching watch
+   * brands replaces the source in place without carrying its settings over.
+   */
+  useEffect(() => {
+    player.loop = true;
+    player.muted = true;
+    player.play();
+  }, [player, guide.clip]);
 
   const cardSize = Math.min(width - CARD_MARGIN * 2, height * CARD_MAX_HEIGHT_FRACTION);
 
@@ -63,17 +78,22 @@ export function WatchSyncStep({ brand }: WatchSyncStepProps) {
         ))}
       </View>
 
-      <View style={[styles.card, { width: cardSize, height: cardSize }]}>
-        <VideoView
-          player={player}
-          style={StyleSheet.absoluteFill}
-          contentFit="cover"
-          nativeControls={false}
-          // A demonstration, not media. Neither belongs on a screen that is one
-          // step of a form.
-          allowsPictureInPicture={false}
-        />
-      </View>
+      {/* Only when there is something to show. An empty rounded rectangle on a
+          screen that is otherwise three clear instructions reads as a failed
+          download, which is worse than the instructions standing alone. */}
+      {guide.clip != null && (
+        <View style={[styles.card, { width: cardSize, height: cardSize }]}>
+          <VideoView
+            player={player}
+            style={StyleSheet.absoluteFill}
+            contentFit="cover"
+            nativeControls={false}
+            // A demonstration, not media. Neither belongs on a screen that is
+            // one step of a form.
+            allowsPictureInPicture={false}
+          />
+        </View>
+      )}
 
       {/* The way out to the app that actually owns the switch. Not a primary:
           the flow's own button is the primary here, and two loud controls on a

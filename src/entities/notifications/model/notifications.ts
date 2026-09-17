@@ -1,4 +1,7 @@
+import Constants from 'expo-constants';
 import * as Notifications from 'expo-notifications';
+
+import { currentUserId, supabase } from '@/shared/lib/supabase';
 
 /**
  * Local notifications: the permission ask, and the one message we send.
@@ -17,6 +20,52 @@ import * as Notifications from 'expo-notifications';
  * refactor away from silently missing one of them.
  */
 export const WINBACK_KIND = 'offer-winback';
+
+/** Marks the push the server sends when someone uses your invite code. */
+export const REFERRAL_KIND = 'referral-redeemed';
+
+/**
+ * Hands this device's push address to the backend.
+ *
+ * Only ever *uses* permission, never asks for it. The ask belongs to the
+ * onboarding screen that explains why it is wanted; doing it here would put a
+ * system dialog in front of whatever the user was actually doing.
+ *
+ * Called on every launch rather than once. Push tokens rotate without warning —
+ * a reinstall, a restore from backup — and the cheapest way to hold a working
+ * one is to overwrite it whenever the app happens to know it. The server-side
+ * upsert makes repeating it free.
+ *
+ * Returns false for every ordinary reason it might not happen: no backend, no
+ * permission, a simulator with no push service. None of those is an error worth
+ * telling anyone about.
+ */
+export async function registerPushToken(): Promise<boolean> {
+  const client = supabase;
+  if (client == null) return false;
+  if (!(await notificationsAllowed())) return false;
+  if ((await currentUserId()) == null) return false;
+
+  // Required by Expo's push service on a bare or dev build; without it the
+  // call throws rather than returning an empty token.
+  const projectId = Constants.expoConfig?.extra?.eas?.projectId as string | undefined;
+  if (projectId == null) return false;
+
+  try {
+    const { data: token } = await Notifications.getExpoPushTokenAsync({ projectId });
+    const { error } = await client.rpc('save_push_token', { p_token: token });
+    if (error != null) {
+      console.warn('[notifications] could not store the push token', error.message);
+      return false;
+    }
+    return true;
+  } catch (error) {
+    // Simulators have no push service at all, which is the common case here
+    // rather than a failure worth surfacing.
+    console.warn('[notifications] no push token on this device', error);
+    return false;
+  }
+}
 
 /** The two halves, in the order they land. */
 const WINBACK_IDS = ['offer-winback-plea', 'offer-winback-offer'] as const;

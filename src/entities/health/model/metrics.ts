@@ -18,6 +18,15 @@ export type DailyMetric = {
   asymmetryPct: number | null;
   walkingSpeed: number | null;
   sleepMin: number | null;
+  /**
+   * Minutes past midnight the night's last asleep sample ended — the wake time.
+   *
+   * Kept separately from `sleepMin` because they answer different questions and
+   * only one of them survives summing: how long you slept is a total, when you
+   * got up is an instant. Null on days with no sample ending in a plausible
+   * morning, which is what keeps an afternoon nap from being read as a lie-in.
+   */
+  wakeMin: number | null;
   restingHR: number | null;
   /** Floors climbed. Foot-specific in a way steps are not: stairs load the
    * plantar fascia in tension through a raised heel. iPhone alone supplies it. */
@@ -52,6 +61,7 @@ export const MIN_DAYS = {
   steps: 7,
   walkingSpeed: 14,
   sleepMin: 7,
+  wakeMin: 14,
   flights: 14,
   hoursOnFeet: 14,
   restingHR: 7,
@@ -163,6 +173,18 @@ export type HealthSignals = {
   sleepLastNightMin: number | null;
   sleepMeanMin: number | null;
   sleepShort: boolean;
+  /**
+   * The usual wake time, minutes past midnight, over the last 28 days.
+   *
+   * A median rather than a mean, which is a deliberate reading of "28-day
+   * average". One 4am airport start would drag a mean by twenty minutes and
+   * move every morning notification for a month; the middle value shrugs it
+   * off. `hoursBaseline` in the program engine makes the same choice for the
+   * same reason.
+   *
+   * Null until there are enough nights to be a habit rather than a sample.
+   */
+  wakeMinutes: number | null;
 
   restingHRDelta: number | null;
   restingHRElevated: boolean;
@@ -203,6 +225,7 @@ export const NO_SIGNALS: HealthSignals = {
   sleepLastNightMin: null,
   sleepMeanMin: null,
   sleepShort: false,
+  wakeMinutes: null,
   restingHRDelta: null,
   restingHRElevated: false,
   hoursOnFeetToday: null,
@@ -256,6 +279,14 @@ function settledRun(days: readonly DailyMetric[], baseline: number, n: number): 
   const recent = values(days.slice(-n), 'asymmetryPct');
   if (recent.length < n) return false;
   return recent.every((v) => Math.abs(v - baseline) <= NORMALISED_PP);
+}
+
+/** The middle value. Robust to the one outlier a mean cannot survive. */
+function medianOf(xs: readonly number[]): number | null {
+  if (xs.length === 0) return null;
+  const sorted = [...xs].sort((a, b) => a - b);
+  const middle = Math.floor(sorted.length / 2);
+  return sorted.length % 2 === 0 ? (sorted[middle - 1] + sorted[middle]) / 2 : sorted[middle];
 }
 
 function meanOf(xs: readonly number[]): number | null {
@@ -389,6 +420,12 @@ export function signalsFrom(
   // --- recovery -----------------------------------------------------------
   const recentSleep = values(days.slice(-7), 'sleepMin');
   const sleepMeanMin = recentSleep.length >= SLEEP_MIN_NIGHTS ? meanOf(recentSleep) : null;
+
+  // Recomputed on every run, but read weekly at most by the thing that uses it
+  // — a wake time that drifts daily makes the notification feel random, which
+  // is worse than one that is a quarter of an hour out.
+  const wakeSamples = values(days.slice(-BASELINE_DAYS), 'wakeMin');
+  const wakeMinutes = wakeSamples.length >= MIN_DAYS.wakeMin ? medianOf(wakeSamples) : null;
   const restingHRDelta =
     hr != null && today?.restingHR != null ? today.restingHR - hr.mean : null;
 
@@ -441,6 +478,7 @@ export function signalsFrom(
     sleepLastNightMin: today?.sleepMin ?? null,
     sleepMeanMin,
     sleepShort: sleepMeanMin != null && sleepMeanMin < SLEEP_MEAN_MIN,
+    wakeMinutes,
 
     restingHRDelta,
     restingHRElevated: restingHRDelta != null && restingHRDelta >= RHR_ELEVATED_BPM,

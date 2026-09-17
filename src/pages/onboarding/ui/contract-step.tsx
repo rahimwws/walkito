@@ -259,7 +259,7 @@ export function ContractStep({
         <Animated.View pointerEvents="none" style={[styles.stampWrap, stampStyle]}>
           <Animated.View style={[styles.stamp, { borderColor: PRIMARY }, stampInk]}>
             <View style={[styles.stampRing, { borderColor: PRIMARY }]}>
-              <Text style={[styles.stampTop, { color: PRIMARY }]}>★ TREAD ★</Text>
+              <Text style={[styles.stampTop, { color: PRIMARY }]}>★ WALKITO ★</Text>
               <Text style={[styles.stampText, { color: PRIMARY }]}>COMMITTED</Text>
               <View style={[styles.stampRule, { backgroundColor: PRIMARY }]} />
               <Text style={[styles.stampBottom, { color: PRIMARY }]}>PAIN-FREE</Text>
