@@ -1,0 +1,29 @@
+name: Preview build
+
+# Manual. A device build is the expensive job in this repository — it queues on
+# a real builder — so it is asked for rather than triggered, and it runs the
+# checks first so a build is never spent proving something `tsc` already knew.
+#
+#   eas workflow:run preview-build.yml
+on:
+  workflow_dispatch: {}
+
+jobs:
+  verify:
+    name: Checks
+    steps:
+      - uses: eas/checkout
+      - uses: eas/install_node_modules
+      - run: bun run verify
+
+  build:
+    name: iOS preview build
+    needs: [verify]
+    type: build
+    params:
+      platform: ios
+      # The preview variant, not production. It is the one that may carry a
+      # RevenueCat Test Store key: purchases and entitlements work end to end on
+      # a real device with no App Store Connect products, and the store refuses
+      # a `test_` key in production so it cannot follow the build to the store.
+      profile: preview

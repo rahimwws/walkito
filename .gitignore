@@ -43,3 +43,7 @@ yarn-error.*
 /android
 
 .env.eas-simulator
+
+# Scratch space for attachments, audits and research notes. 77MB of
+# screenshots and working files; none of it is the project.
+.context/

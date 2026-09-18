@@ -56,7 +56,7 @@
     "@types/react": "~19.2.2",
     "typescript": "~6.0.3"
   },
-  "//overrides": "@expo/ui is a native module, so exactly one copy may exist in the tree. expo-widgets asks for `~57.0.7`, and the tilde lets the resolver hoist a *second*, newer copy under expo-widgets/node_modules while the app keeps 57.0.7 — JS would import one and the linker would bind the other. This project has already been killed twice at launch by that class of mismatch (see the note in app.config.ts), so the version is nailed down rather than ranged. Move it and expo-widgets together, never one alone.",
+  "//overrides": "@expo/ui is a native module, so exactly one copy may exist in the tree. expo-widgets asks for `~57.0.7`, and the tilde lets the resolver hoist a *second*, newer copy under expo-widgets/node_modules while the app keeps 57.0.7 \u2014 JS would import one and the linker would bind the other. This project has already been killed twice at launch by that class of mismatch (see the note in app.config.ts), so the version is nailed down rather than ranged. Move it and expo-widgets together, never one alone.",
   "overrides": {
     "@expo/ui": "57.0.7"
   },
@@ -66,8 +66,18 @@
     "ios": "expo run:ios",
     "web": "expo start --web",
     "prebuild:ios": "expo prebuild && bun run ios",
-    "test": "bun test"
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "verify:assets": "node scripts/verify-assets.mjs",
+    "verify:config": "node scripts/verify-config.mjs",
+    "verify": "bun run typecheck && bun test && bun run verify:assets && bun run verify:config && bun run verify:native",
+    "verify:native": "node scripts/verify-native-deps.mjs",
+    "can-update": "node scripts/can-update.mjs",
+    "ship": "node scripts/ship.mjs"
   },
   "private": true,
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "packageManager": "bun@1.2.22",
+  "trustedDependencies": [
+    "@shopify/react-native-skia"
+  ]
 }

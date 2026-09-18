@@ -50,6 +50,37 @@ function getIosIcon() {
   return undefined;
 }
 
+/**
+ * The widget extension's identifiers, rebuilt from the host's.
+ *
+ * app.json declares the extension once, and it has to declare *something* — so
+ * it declares the development identifiers. That made every non-development
+ * build wrong: `preview` shipped a host of `com.walkito.app.preview` with an
+ * extension of `com.walkito.app.dev.ExpoWidgetsTarget`, which iOS rejects
+ * because an extension's identifier must be prefixed by its host's. Production
+ * was worse — `com.walkito.app.dev.…` *is* prefixed by `com.walkito.app.`, so
+ * it would have built, with the App Store app claiming the development app's
+ * extension and its app group.
+ *
+ * Deriving both from the host means there is one source for the identifier and
+ * the variant suffix can only be applied in one place. `scripts/verify-config`
+ * asserts it for every variant.
+ */
+function extensionsFor(hostBundleId: string, config: ConfigContext['config']) {
+  const declared = config.extra?.eas?.build?.experimental?.ios?.appExtensions ?? [];
+  return declared.map((extension: { targetName: string; [key: string]: unknown }) => ({
+    ...extension,
+    bundleIdentifier: `${hostBundleId}.${extension.targetName}`,
+    entitlements: {
+      ...(extension.entitlements as Record<string, unknown> | undefined),
+      // Shared container, so the widget and the app read the same storage. It
+      // is keyed to the host, which is what keeps the three variants from
+      // reading each other's data.
+      'com.apple.security.application-groups': [`group.${hostBundleId}`],
+    },
+  }));
+}
+
 export default ({ config }: ConfigContext): ExpoConfig => {
   const iosIcon = getIosIcon();
   const baseScheme = typeof config.scheme === 'string' ? config.scheme : 'walkito';
@@ -59,8 +90,26 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     slug: config.slug ?? 'walkito',
     name: getName(config.name ?? 'Walkito'),
     scheme: getScheme(baseScheme),
+    /**
+     * Fingerprint, not `appVersion`.
+     *
+     * The runtime version is what decides whether an over-the-air update may
+     * land on a given build. Under `appVersion` it is the version string, which
+     * says nothing about the native layer: change a native dependency without
+     * bumping the version and the update ships to a build that cannot run it,
+     * and the app crashes on a native module that is not there. Bump the
+     * version for a copy change and the opposite happens — a JavaScript-only fix
+     * is withheld from every device already installed.
+     *
+     * `fingerprint` hashes the things that actually determine the native
+     * runtime: dependencies, config plugins, native project files. Two commits
+     * with the same fingerprint are the same runtime, so an update between them
+     * is safe by construction, and a differing fingerprint is precisely the
+     * signal that a build is required. `scripts/can-update.mjs` reads that
+     * comparison, and the release workflow branches on it.
+     */
     runtimeVersion: {
-      policy: 'appVersion',
+      policy: 'fingerprint',
     },
     extra: {
       ...config.extra,
@@ -71,6 +120,19 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       // the second, and `__DEV__` cannot tell them apart because both are
       // release builds. See `entities/purchase/model/store.ts`.
       variant: process.env.APP_VARIANT ?? 'development',
+      eas: {
+        ...config.extra?.eas,
+        build: {
+          ...config.extra?.eas?.build,
+          experimental: {
+            ...config.extra?.eas?.build?.experimental,
+            ios: {
+              ...config.extra?.eas?.build?.experimental?.ios,
+              appExtensions: extensionsFor(getBundleId(), config),
+            },
+          },
+        },
+      },
     },
     ios: {
       ...config.ios,

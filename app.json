@@ -115,6 +115,9 @@
         "projectId": "ada5351e-5344-43d9-a088-b23f1695cbb1"
       }
     },
-    "owner": "nazarly-digital"
+    "owner": "nazarly-digital",
+    "updates": {
+      "url": "https://u.expo.dev/ada5351e-5344-43d9-a088-b23f1695cbb1"
+    }
   }
 }

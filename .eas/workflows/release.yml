@@ -1,0 +1,78 @@
+name: Release
+
+# Every push to main, and on demand.
+#
+# Pushing is enough for the common case. A JavaScript or asset change goes out
+# over the air by itself — that is safe to automate because the checks gate it,
+# the runtime fingerprint proves the binary can run it, and a bad one is undone
+# with `eas update:rollback`.
+#
+# A native change is a different thing entirely: it costs a builder, and on
+# production it costs an App Store review that cannot be taken back. So the
+# workflow stops and asks.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  verify:
+    name: Checks
+    steps:
+      - uses: eas/checkout
+      - uses: eas/install_node_modules
+      - run: bun run verify
+
+  decide:
+    name: Update or build?
+    needs: [verify]
+    outputs:
+      verdict: ${{ steps.decide.outputs.verdict }}
+    steps:
+      - uses: eas/checkout
+      - uses: eas/install_node_modules
+      - name: Compare this commit's native fingerprint with the live build
+        id: decide
+        # An update replaces JavaScript and assets inside a binary that already
+        # exists. It cannot add a native module or change an entitlement, so the
+        # only question that matters is whether the native layer moved — which
+        # under the fingerprint runtime policy is a hash comparison rather than
+        # a judgement call.
+        run: |
+          RESULT=$(node scripts/can-update.mjs --channel production --platform ios --json)
+          echo "$RESULT"
+          VERDICT=$(echo "$RESULT" | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>console.log(JSON.parse(s).verdict))")
+          set-output verdict "$VERDICT"
+
+  update:
+    name: Publish update
+    needs: [decide]
+    if: ${{ needs.decide.outputs.verdict == 'update' }}
+    type: update
+    environment: production
+    params:
+      branch: main
+      platform: ios
+
+  approve_build:
+    name: Approve a production build
+    needs: [decide]
+    if: ${{ needs.decide.outputs.verdict == 'build' }}
+    type: require-approval
+
+  build:
+    name: Production build
+    needs: [approve_build]
+    type: build
+    environment: production
+    params:
+      platform: ios
+      profile: production
+
+  submit:
+    name: Submit to App Store
+    needs: [build]
+    type: submit
+    params:
+      build_id: ${{ needs.build.outputs.build_id }}
+      profile: production

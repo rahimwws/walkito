@@ -1,0 +1,59 @@
+name: Checks
+
+# Pull requests only. Pushes to main are covered by `release.yml`, which runs
+# the same suite as the gate on its own first job — running both would double
+# every check on main and make it ambiguous which one blocked a release.
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    name: Typecheck, tests, assets, config, native deps
+    steps:
+      - uses: eas/checkout
+      # Detects the package manager from the lockfile — bun, here. That matters
+      # more than it looks: bun refuses to run a dependency's lifecycle scripts
+      # unless the package is in `trustedDependencies`, which is the failure the
+      # `verify:native` step below exists to catch.
+      - uses: eas/install_node_modules
+
+      - name: Typecheck
+        run: bun run typecheck
+
+      - name: Tests
+        run: bun test
+
+      # Each of the three below guards a failure that has actually happened on
+      # this project, and that none of the checks above can see.
+      - name: Asset references resolve
+        # A `require('@assets/…')` is resolved by Metro at bundle time, so a
+        # path to a deleted file typechecks and builds, then red-screens on
+        # launch. This repository shipped exactly that.
+        run: bun run verify:assets
+
+      - name: Config is consistent across variants
+        # An app extension's bundle identifier must be prefixed by its host's.
+        # A half-finished rename left preview and production pointing at the
+        # development extension — invisible until twenty minutes into an EAS
+        # build queue.
+        run: bun run verify:config
+
+      - name: Native dependencies have their binaries
+        # react-native-skia downloads its prebuilt frameworks in a postinstall.
+        # Without `trustedDependencies` bun skips it, the install succeeds, and
+        # `pod install` dies on the builder with "Skia prebuilt binaries not
+        # found".
+        run: bun run verify:native
+
+      - name: No secret keys in the bundle
+        # An EXPO_PUBLIC_ variable is compiled into the shipped JavaScript. A
+        # RevenueCat secret key (`sk_…`) there is published to every device, and
+        # it can grant entitlements and delete subscribers. The app refuses such
+        # a key at runtime; this refuses it at merge.
+        run: |
+          if git grep -nE "EXPO_PUBLIC_[A-Z_]*=\s*sk_" -- ':!*.example' ; then
+            echo "A secret key is committed in an EXPO_PUBLIC_ variable."
+            exit 1
+          fi
+          echo "No secret keys committed."
