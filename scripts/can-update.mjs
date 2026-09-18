@@ -60,9 +60,28 @@ function latestBuild() {
 }
 
 function currentFingerprint() {
-  // `fingerprint:generate` prints progress on stdout ahead of the JSON, so the
-  // object is found rather than assumed to start at byte zero.
-  const raw = eas(['fingerprint:generate', '-p', platform, '--json', '--non-interactive']);
+  /**
+   * Generated in the same environment the build used.
+   *
+   * Without this the fingerprint is computed against whatever `APP_VARIANT`
+   * happens to be in the local `.env` — development — and compared against a
+   * production build. The bundle identifier, the app group, the URL scheme and
+   * `extra.variant` all differ between variants, so the hashes could never
+   * match and the answer was always "build", for the wrong reason. It looked
+   * like a native change; it was the script asking the wrong question.
+   *
+   * The channel and the EAS environment share names by construction: see the
+   * profiles in eas.json, where each names the environment of the same name.
+   */
+  const raw = eas([
+    'fingerprint:generate',
+    '-p', platform,
+    '--environment', channel,
+    '--json',
+    '--non-interactive',
+  ]);
+  // Progress lines precede the JSON on stdout, so the object is found rather
+  // than assumed to start at byte zero.
   const start = raw.indexOf('{');
   if (start === -1) throw new Error(`no JSON in fingerprint output: ${raw.slice(0, 200)}`);
   return JSON.parse(raw.slice(start)).hash;
