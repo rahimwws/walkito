@@ -1,0 +1,393 @@
+# Tread — Local Notifications Spec
+
+Local notifications only. No server, no push tokens, no backend.
+Everything schedules on-device from data the app already has.
+
+---
+
+## The rule that governs everything
+
+The onboarding permission screen promises, verbatim:
+
+> A nudge on the days your plan has a session
+> A heads-up when it changes what you are doing
+> **Nothing else. No streaks to guilt you back.**
+
+That is a contract. Every notification below either delivers a session, or
+explains a change the app made. Nothing else ships.
+
+This category punishes guilt harder than most. Users here have been dismissed
+by doctors, sold $1,700 insoles, and told to "just rest it". A notification
+that nags is not a minor annoyance — it is one more thing treating them badly.
+
+---
+
+# HARD LIMITS
+
+| Rule | Value |
+|---|---|
+| Maximum per day | **1** |
+| Maximum per week | **5** |
+| Quiet hours | 21:30 – wake time |
+| Consecutive unopened before backoff | 3 |
+| Backoff | drop to 2 per week for 14 days |
+| Consecutive unopened before pause | 7 |
+| Pause duration | 30 days, then one re-entry notification only |
+
+**Never send two in one day.** If two fire on the same date, the higher
+priority wins and the other is dropped, not queued.
+
+---
+
+# PRIORITY LADDER
+
+One notification per day, selected by first match.
+
+```
+1.  Flare support          pain >= 7 logged yesterday
+2.  Load warning           steps yesterday > baseline × 1.4
+3.  Gait change            asymmetry elevated 3+ days
+4.  Retest due             today is a checkpoint
+5.  Block change           today opens a new block
+6.  Plan changed           engine altered today's session
+7.  Session ready          normal training day
+8.  Evening check-in       no pain logged by 20:00
+9.  Streak protection      streak ≥ 5 and nothing logged by 21:00
+10. Win-back               away 3, 10, 30 days
+```
+
+Rows 1–3 are the ones nobody else can send. They are the reason the permission
+is worth asking for.
+
+---
+
+# 1. MORNING SESSION — the default
+
+**When:** wake time + 15 min. Derived from HealthKit sleep if available,
+otherwise 07:30.
+
+**Only on days with a session.** Rest days get nothing.
+
+Rotate so it never reads like a cron job. Pick by day-of-week hash so the same
+user does not see the same line twice in a fortnight.
+
+```
+Foot strength today. 7 minutes.
+
+Day 17. Balance work. 5 minutes.
+
+Short session today — 5 minutes, sitting down.
+
+Heel raises today. The one that actually moves things.
+
+7 minutes. Your calves are the appointment.
+
+Mobility today. Nothing heavy.
+```
+
+**Never** include the streak number here. This is an invitation, not a debt.
+
+---
+
+# 2. FLARE SUPPORT — highest value
+
+**Trigger:** pain ≥ 7 logged yesterday.
+**When:** wake time + 15 min, replacing the normal morning nudge.
+
+```
+Rough one yesterday. Today is 3 minutes, sitting down.
+
+Pain was 8. Today the plan gets out of your way — 3 minutes.
+
+Bad day yesterday. Today asks nothing heavy.
+```
+
+This is the most important notification in the app. The morning after a flare
+is when people delete rehab apps. Arriving with *less* work instead of the
+usual demand is what stops it.
+
+**Never** cheerful. No emoji. No encouragement. Just the smaller ask.
+
+---
+
+# 3. LOAD WARNING
+
+**Trigger:** steps yesterday > 28-day baseline × 1.4.
+**When:** wake time + 15 min.
+
+```
+14,200 steps yesterday — 40% over your usual. Today is recovery.
+
+That was a big day on your feet. The plan adjusted.
+
+Long one yesterday. Today the plan backs off.
+```
+
+Only send when the engine **actually changed** something. A warning with no
+consequence is noise.
+
+---
+
+# 4. GAIT CHANGE
+
+**Trigger:** walking asymmetry ≥ 3pp above baseline for 3+ consecutive days.
+**When:** 18:00, not morning — this is information, not an instruction.
+
+**Maximum once per 14 days.** This is the single easiest notification to
+destroy trust with.
+
+```
+Your steps have been uneven for three days now.
+
+Something changed in how you walk this week.
+```
+
+**Forbidden wording:** "you're limping", "you're compensating", "this will
+injure you", any population norm. Walking asymmetry does not predict injury —
+a secondary analysis of an RCT with 800+ runners found it did not raise risk.
+The only defensible claim is change against the person's own baseline.
+
+**Gate it.** Do not send unless the user also logged pain ≥ 3 in the last 3
+days, or steps are elevated. Asymmetry alone is too noisy — one day carrying a
+bag on one shoulder should never fire this.
+
+---
+
+# 5. RETEST DAY
+
+**Trigger:** today is a checkpoint (day 14, 28, 42, 56, 70, 84).
+**When:** wake time + 15 min.
+
+```
+Two weeks. Time to see what moved. 3 tests, 4 minutes.
+
+Checkpoint today. No training — just three measurements.
+
+Day 28. Let's find out if it's working.
+```
+
+The last line is the strongest. It names the exact question the user has been
+carrying silently, and offers to answer it.
+
+**Follow-up, +6 hours, only if the retest was not started:**
+```
+The tests are still open. Four minutes.
+```
+One reminder only. Never a second.
+
+---
+
+# 6. BLOCK CHANGE
+
+**Trigger:** today is day 15, 29, 43, 57, or 71.
+**When:** wake time + 15 min.
+
+```
+New block today: Strengthen. Heel raises start now.
+
+Block 3. The load goes up from here.
+
+Block 4 opens today. Time to add the band.
+
+Last block. This is where it becomes maintenance.
+```
+
+Genuine news, and it lands roughly every two weeks — frequent enough to matter,
+rare enough to feel like an event.
+
+---
+
+# 7. PLAN CHANGED
+
+**Trigger:** the adaptation engine altered today's session from the template.
+**When:** wake time + 15 min.
+
+```
+Pain went up this week, so today steps back one level.
+
+You're not sore anymore — today the load goes back up.
+
+Five days off. Today picks up one step easier.
+```
+
+This is the half of the permission promise everyone forgets. Explaining a
+change is what makes the app feel like it is paying attention rather than
+running a calendar.
+
+---
+
+# 8. EVENING CHECK-IN
+
+**Trigger:** no pain logged, 20:00 local, **and** no notification already sent
+today.
+
+**Maximum 3 per week.** This is the easiest notification to overuse.
+
+```
+How was the foot today?
+
+One tap before bed — how did it feel?
+
+Log today and the plan knows what to do tomorrow.
+```
+
+The third line earns the ask by stating what it buys. Use it every second time.
+
+**Not sent** on days the user already opened the app.
+
+---
+
+# 9. STREAK PROTECTION
+
+**Trigger:** streak ≥ 5 **and** nothing logged by 21:00.
+**When:** 21:00. Never later.
+
+```
+One tap keeps 12 days going.
+
+12 days. One tap.
+```
+
+**Conditions, all required:**
+- Streak is at least 5 — below that there is nothing worth protecting
+- The user has never used a freeze this week
+- Maximum twice per week
+
+**Never** send "you lost your streak". A broken streak is handled silently in
+the app with one-tap restore. A notification about a loss is pure guilt and
+breaks the onboarding promise directly.
+
+---
+
+# 10. WIN-BACK
+
+Three notifications, then silence. Ever.
+
+**Day 3 away**
+```
+Day 17 is still there when you want it.
+```
+
+**Day 10 away**
+```
+Your calf raises were 11 → 19. That doesn't disappear.
+
+The plan runs on dates, not attendance. Day 24 is today.
+```
+
+The second line restates the app's own rule and quietly removes the shame of
+returning. That is the point.
+
+**Day 30 away**
+```
+Still here if the foot starts talking again.
+```
+
+After day 30: **nothing, permanently**, unless the user opens the app.
+
+---
+
+# 11. MAINTENANCE PHASE — day 85+
+
+Frequency drops to twice a week. The tone changes from building to holding.
+
+```
+Maintenance day. 8 minutes.
+
+Monthly checkpoint. Let's make sure nothing slipped.
+
+Four weeks even. That's the whole point.
+```
+
+**Regression alert** — if a maintenance retest drops a level, or pain rises
+above baseline for 7 straight days:
+```
+Your numbers slipped a little. Want to run Build again?
+```
+
+This is the one that funds year two. Roughly half of people lose their result
+within five years and 52.9% report at least one recurrence — the maintenance
+phase is the product they are actually paying for once the pain is gone.
+
+---
+
+# SCHEDULING
+
+## Rolling window
+
+iOS caps pending local notifications at **64**. Never schedule the full 84-day
+program.
+
+Schedule **7 days ahead**, refresh on every app open and on background wake.
+Cancel and reschedule the whole window rather than patching individual ones —
+patching is where duplicate notifications come from.
+
+## Wake time
+
+From HealthKit sleep analysis, 28-day average wake time. Fall back to 07:30.
+Recompute weekly. Never more often — a wake time that drifts daily makes the
+notification feel random.
+
+## Time zones
+
+Schedule against the local calendar, not UTC. On timezone change, cancel and
+reschedule the entire window. Rehab users travel; a 3am nudge loses the
+permission permanently.
+
+## Delivery caps in code
+
+```
+sentToday          → block everything else today
+sentThisWeek >= 5  → only priority 1–4 may send
+unopenedStreak >= 3 → cap at 2 per week for 14 days
+unopenedStreak >= 7 → pause 30 days
+```
+
+Reset `unopenedStreak` on any app open, not only on notification tap.
+
+---
+
+# MEASUREMENT
+
+Log per notification: type, sent time, opened, time to open, action taken after.
+
+The metric that matters is **not** open rate. It is **opt-out rate and
+7-day retention among people who received it**.
+
+A notification with a 40% open rate that drives 3% of people to disable
+notifications is worse than one with 15% open and zero opt-outs. Kill any
+type whose opt-out contribution exceeds 1%.
+
+---
+
+# NEVER SEND
+
+| Never | Why |
+|---|---|
+| "You missed 3 days" | Breaks the onboarding promise directly |
+| "You lost your streak" | Guilt; handled silently in-app instead |
+| Anything cheerful after logged pain ≥ 5 | Calls the user a liar about their own body |
+| "You're limping" | Not supported by evidence; diagnostic-adjacent |
+| Congratulations for step counts | Celebrates the load that hurt them |
+| Anything between 21:30 and wake | Full stop |
+| Two in one day | Full stop |
+| A second reminder for the same event | One ask, then let it go |
+| Discount or offer pushes | Not what permission was granted for |
+| Any word implying diagnosis or cure | Screening, program, exercises — never treatment |
+
+---
+
+# WHAT THIS BUYS
+
+Three notification types here cannot be sent by any competitor, because no
+competitor has the data:
+
+**Flare support** — needs the pain log
+**Load warning** — needs step baselines
+**Gait change** — needs iPhone mobility metrics
+
+Everything else is a reminder, and reminders are commodity. Those three are why
+someone keeps notifications on for a year.
+
+Build them in that order. Flare support first: it fires on the exact day the
+app usually gets deleted.

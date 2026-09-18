@@ -1,0 +1,732 @@
+F3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1]
+is (null)
+[Tread.debug.dylib] [I] <MemoryFile.cpp:103::open> open fd[29], flag 0x7,
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1.crc
+[Tread.debug.dylib] [I] <MemoryFile.cpp:250::mmapOrCleanup> mmap to address
+[0x104e18000], oldPtr [0x0],
+[/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1.crc]
+[Tread.debug.dylib] [I] <MemoryFile.cpp:109::close> closing fd[29],
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1.crc
+[Tread.debug.dylib] [I] <MemoryFile_OSX.cpp:35::tryResetFileProtection>
+protection on
+[/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1.crc]
+is (null)
+[Tread.debug.dylib] [I] <MemoryFile.cpp:103::open> open fd[29], flag 0x7,
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1.crc
+[Tread.debug.dylib] [I] <MemoryFile.cpp:109::close> closing fd[29],
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1.crc
+[Tread.debug.dylib] [I] <MemoryFile.cpp:103::open> open fd[29], flag 0x7,
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1
+[Tread.debug.dylib] [I] <MemoryFile.cpp:109::close> closing fd[29],
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1
+[Tread.debug.dylib] [I] <MMKV_IO.cpp:287::loadMetaInfoAndCheck> meta file
+[tread.v1] has flag [0]
+[Tread.debug.dylib] [I] <MMKV_IO.cpp:94::loadFromFile> loading [tread.v1] with
+75 actual size, file size 16384, InterProcess 0, meta info version:4
+[Tread.debug.dylib] [I] <MMKV_IO.cpp:99::loadFromFile> loading [tread.v1] with
+crc 949136743 sequence 1 version 4
+[Tread.debug.dylib] [I] <MMKV_IO.cpp:145::loadFromFile> loaded [tread.v1] with
+3 key-values
+[UIKitCore] UIKeyboardLayoutStar implements focusItemsInRect: - caching for
+linear focus movement is limited as long as this view is on screen.
+Unable to resolve "@assets/liquid-glass/astro/wordmark.png" from "src/pages/welcome/ui/liquid-glass/cookbooks/astro.ts"
+  41 |   require('@assets/liquid-glass/astro/stars.png'),
+  42 |   require('@assets/liquid-glass/astro/glow.png'),
+> 43 |   require('@assets/liquid-glass/astro/wordmark.png'),
+     |            ^
+  44 |   ...Object.values(stickers),
+  45 | ] as const;
+  46 |
+
+Import stack:
+
+ src/pages/welcome/ui/liquid-glass/cookbooks/astro.ts
+ | import "@assets/liquid-glass/astro/wordmark.png"
+
+ src/pages/welcome/ui/liquid-glass/index.ts
+ | import "./cookbooks/astro"
+
+ src/pages/welcome/ui/welcome-page.tsx
+ | import "./liquid-glass"
+
+ src/pages/welcome/index.ts
+ | import "./ui/welcome-page"
+
+ src/pages/onboarding/ui/onboarding-page.tsx
+ | import "@/pages/welcome"
+
+ src/pages/onboarding/index.ts
+ | import "./ui/onboarding-page"
+
+ app/onboarding.tsx
+ | import "@/pages/onboarding"
+
+ app (require.context)
+
+[UIKitCore] RCTScrollViewComponentView implements focusItemsInRect: - caching
+for linear focus movement is limited as long as this view is on screen.
+[UIKitCore] RCTScrollViewComponentView implements focusItemsInRect: - caching
+for linear focus movement is limited as long as this view is on screen.
+iOS Bundled 148ms node_modules/expo-router/entry.js (1 module)
+[Tread.debug.dylib] [I] <MMKV.cpp:175::initialize> version v2.4.0, page size
+16384, arch arm64-v8a
+[Tread.debug.dylib] [I] <MMKV.cpp:222::initializeMMKV> Apple Device: 0,
+version: 64
+[Tread.debug.dylib] [I] <MMKV.cpp:232::initializeMMKV> root dir:
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv
+[Tread.debug.dylib] [I] <MMKV.cpp:263::getMMKVWithID> prepare to load tread.v1
+(id ba256a5bae66888c4f44eaa8e5860dc0) from rootPath
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv
+[Tread.debug.dylib] [I] <MemoryFile.cpp:103::open> open fd[29], flag 0x7,
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1
+[Tread.debug.dylib] [I] <MemoryFile.cpp:250::mmapOrCleanup> mmap to address
+[0x1059f8000], oldPtr [0x0],
+[/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1]
+[Tread.debug.dylib] [I] <MemoryFile.cpp:109::close> closing fd[29],
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1
+[Tread.debug.dylib] [I] <MemoryFile_OSX.cpp:35::tryResetFileProtection>
+protection on
+[/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1]
+is (null)
+[Tread.debug.dylib] [I] <MemoryFile.cpp:103::open> open fd[29], flag 0x7,
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1.crc
+[Tread.debug.dylib] [I] <MemoryFile.cpp:250::mmapOrCleanup> mmap to address
+[0x1075a4000], oldPtr [0x0],
+[/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1.crc]
+[Tread.debug.dylib] [I] <MemoryFile.cpp:109::close> closing fd[29],
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1.crc
+[Tread.debug.dylib] [I] <MemoryFile_OSX.cpp:35::tryResetFileProtection>
+protection on
+[/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1.crc]
+is (null)
+[Tread.debug.dylib] [I] <MemoryFile.cpp:103::open> open fd[29], flag 0x7,
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1.crc
+[Tread.debug.dylib] [I] <MemoryFile.cpp:109::close> closing fd[29],
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1.crc
+[Tread.debug.dylib] [I] <MemoryFile.cpp:103::open> open fd[29], flag 0x7,
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1
+[Tread.debug.dylib] [I] <MemoryFile.cpp:109::close> closing fd[29],
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/9354AFDE-DC99-411A-B3B0-EFD2E00A7F20/Documents/mmkv/tread.v1
+[Tread.debug.dylib] [I] <MMKV_IO.cpp:287::loadMetaInfoAndCheck> meta file
+[tread.v1] has flag [0]
+[Tread.debug.dylib] [I] <MMKV_IO.cpp:94::loadFromFile> loading [tread.v1] with
+75 actual size, file size 16384, InterProcess 0, meta info version:4
+[Tread.debug.dylib] [I] <MMKV_IO.cpp:99::loadFromFile> loading [tread.v1] with
+crc 949136743 sequence 1 version 4
+[Tread.debug.dylib] [I] <MMKV_IO.cpp:145::loadFromFile> loaded [tread.v1] with
+3 key-values
+[UIKitCore] UIKeyboardLayoutStar implements focusItemsInRect: - caching for
+linear focus movement is limited as long as this view is on screen.
+^C⠋ Stopping server^C
+rahim@MacBook-Pro-rahim fsd-refactor-ui-foundation % сbun i 
+сbun i 
+zsh: command not found: сbun
+rahim@MacBook-Pro-rahim fsd-refactor-ui-foundation % bun i
+bun install v1.2.22-canary.158 (d9551dda)
+
+Checked 646 installs across 623 packages (no changes) [145.00ms]
+rahim@MacBook-Pro-rahim fsd-refactor-ui-foundation % bun i expo-notifications
+bun add v1.2.22-canary.158 (d9551dda)
+
+installed expo-notifications@57.0.17
+
+[161.00ms] done
+rahim@MacBook-Pro-rahim fsd-refactor-ui-foundation % bun i expo-updates
+bun add v1.2.22-canary.158 (d9551dda)
+
+installed expo-updates@57.0.21 with binaries:
+ - expo-updates
+
+2 packages installed [2.08s]
+rahim@MacBook-Pro-rahim fsd-refactor-ui-foundation % bun ios                
+$ expo run:ios
+✔ Installed CocoaPods
+› Planning build
+› Executing react-native Pods/hermes-engine » [CP-User] [Hermes] Replace Hermes for the right configuration, if needed
+› Executing react-native Pods/ReactNativeDependencies » [CP-User] [RNDeps] Replace React Native Dependencies for the right configuration, if needed
+› Preparing Pods/lottie-ios-LottiePrivacyInfo » ResourceBundle-LottiePrivacyInfo-lottie-ios-Info.plist
+› Preparing Pods/lottie-react-native-Lottie_React_Native_Privacy » ResourceBundle-Lottie_React_Native_Privacy-lottie-react-native-Info.plist
+› Preparing Pods/RiveRuntime-runtime_ios_privacy » ResourceBundle-runtime_ios_privacy-RiveRuntime-Info.plist
+› Preparing Pods/React-timing-React-timing_privacy » ResourceBundle-React-timing_privacy-React-timing-Info.plist
+› Preparing Pods/React-cxxreact-React-cxxreact_privacy » ResourceBundle-React-cxxreact_privacy-React-cxxreact-Info.plist
+› Preparing Pods/React-Core-React-Core_privacy » ResourceBundle-React-Core_privacy-React-Core-Info.plist
+› Preparing expo-updates Pods/ReachabilitySwift-ReachabilitySwift » ResourceBundle-ReachabilitySwift-ReachabilitySwift-Info.plist
+› Preparing Pods/RNSVG-RNSVGFilters » ResourceBundle-RNSVGFilters-RNSVG-Info.plist
+› Preparing Pods/ExpoSystemUI-ExpoSystemUI_privacy » ResourceBundle-ExpoSystemUI_privacy-ExpoSystemUI-Info.plist
+› Preparing Pods/ExpoNotifications-ExpoNotifications_privacy » ResourceBundle-ExpoNotifications_privacy-ExpoNotifications-Info.plist
+› Preparing Pods/EXConstants-ExpoConstants_privacy » ResourceBundle-ExpoConstants_privacy-EXConstants-Info.plist
+› Preparing Pods/EXApplication-ExpoApplication_privacy » ResourceBundle-ExpoApplication_privacy-EXApplication-Info.plist
+› Preparing Pods/ExpoFileSystem-ExpoFileSystem_privacy » ResourceBundle-ExpoFileSystem_privacy-ExpoFileSystem-Info.plist
+› Preparing expo-updates Pods/EXUpdates-EXUpdates » ResourceBundle-EXUpdates-EXUpdates-Info.plist
+› Preparing expo-constants Pods/EXConstants-EXConstants » ResourceBundle-EXConstants-EXConstants-Info.plist
+› Executing lottie-react-native Pods/lottie-ios » Copy generated compatibility header
+› Executing expo-dev-menu-interface Pods/expo-dev-menu-interface » Copy generated compatibility header
+› Executing rive-react-native Pods/RiveRuntime » [CP] Copy XCFrameworks
+› Executing expo-updates Pods/ReachabilitySwift » Copy generated compatibility header
+› Executing react-native Pods/hermes-engine » [CP] Copy XCFrameworks
+› Executing react-native Pods/ReactNativeDependencies » [CP] Copy XCFrameworks
+› Preparing Pods/expo-dev-menu-EXDevMenu » ResourceBundle-EXDevMenu-expo-dev-menu-Info.plist
+› Preparing Pods/expo-dev-launcher-EXDevLauncher » ResourceBundle-EXDevLauncher-expo-dev-launcher-Info.plist
+› Executing react-native Pods/React-Core-prebuilt » [CP-User] [RNCore] Replace React Native Core for the right configuration, if needed
+› Executing react-native Pods/React-Core-prebuilt » [CP] Copy XCFrameworks
+› Executing react-native Pods/React-RCTFBReactNativeSpec » [CP-User] [RN]Check FBReactNativeSpec
+› Executing rive-react-native Pods/rive-react-native » Copy generated compatibility header
+› Executing expo-modules-jsi Pods/ExpoModulesJSI » [CP-User] Build ExpoModulesJSI xcframework
+› Executing @expo/log-box Pods/ExpoLogBox » Copy generated compatibility header
+› Executing tread Pods/ReactCodegen » [CP-User] Generate Specs
+› Executing tread Pods/ReactCodegen » [Expo] Remove duplicate codegen output
+› Compiling tread Pods/ReactCodegen » ComponentDescriptors.cpp
+› Compiling tread Pods/ReactCodegen » ComponentDescriptors.cpp
+› Compiling tread Pods/ReactCodegen » ComponentDescriptors.cpp
+› Compiling tread Pods/ReactCodegen » ComponentDescriptors.cpp
+› Compiling tread Pods/ReactCodegen » ComponentDescriptors.cpp
+› Compiling tread Pods/ReactCodegen » ComponentDescriptors.cpp
+› Compiling tread Pods/ReactCodegen » ShadowNodes.cpp
+› Compiling tread Pods/ReactCodegen » safeareacontext-generated.mm
+› Compiling tread Pods/ReactCodegen » rnworklets-generated.mm
+› Compiling tread Pods/ReactCodegen » rnsvg-generated.mm
+› Compiling tread Pods/ReactCodegen » rnskia-generated.mm
+› Executing expo-modules-jsi Pods/ExpoModulesJSI » [CP] Copy XCFrameworks
+› Compiling tread Pods/ReactCodegen » rnscreens-generated.mm
+› Compiling tread Pods/ReactCodegen » rnreanimated-generated.mm
+› Compiling tread Pods/ReactCodegen » rngesturehandler_codegen-generated.mm
+› Compiling tread Pods/ReactCodegen » States.cpp
+› Compiling tread Pods/ReactCodegen » States.cpp
+› Compiling tread Pods/ReactCodegen » States.cpp
+› Compiling tread Pods/ReactCodegen » States.cpp
+› Compiling tread Pods/ReactCodegen » States.cpp
+› Compiling tread Pods/ReactCodegen » States.cpp
+› Compiling tread Pods/ReactCodegen » States.cpp
+› Compiling tread Pods/ReactCodegen » States.cpp
+› Compiling tread Pods/ReactCodegen » ShadowNodes.cpp
+› Compiling tread Pods/ReactCodegen » ShadowNodes.cpp
+› Compiling tread Pods/ReactCodegen » ShadowNodes.cpp
+› Compiling tread Pods/ReactCodegen » ShadowNodes.cpp
+› Compiling tread Pods/ReactCodegen » ShadowNodes.cpp
+› Compiling tread Pods/ReactCodegen » ShadowNodes.cpp
+› Compiling tread Pods/ReactCodegen » ShadowNodes.cpp
+› Compiling tread Pods/ReactCodegen » RNKC-generated.mm
+› Compiling tread Pods/ReactCodegen » RCTUnstableModulesRequiringMainQueueSetupProvider.mm
+› Compiling tread Pods/ReactCodegen » RCTThirdPartyComponentsProvider.mm
+› Compiling tread Pods/ReactCodegen » RCTModulesConformingToProtocolsProvider.mm
+› Compiling tread Pods/ReactCodegen » RCTModuleProviders.mm
+› Compiling tread Pods/ReactCodegen » Props.cpp
+› Compiling tread Pods/ReactCodegen » Props.cpp
+› Compiling tread Pods/ReactCodegen » Props.cpp
+› Compiling tread Pods/ReactCodegen » Props.cpp
+› Compiling tread Pods/ReactCodegen » Props.cpp
+› Compiling tread Pods/ReactCodegen » Props.cpp
+› Compiling tread Pods/ReactCodegen » Props.cpp
+› Compiling tread Pods/ReactCodegen » Props.cpp
+› Compiling tread Pods/ReactCodegen » NitroModulesSpec-generated.mm
+› Compiling tread Pods/ReactCodegen » EventEmitters.cpp
+› Compiling tread Pods/ReactCodegen » EventEmitters.cpp
+› Compiling tread Pods/ReactCodegen » EventEmitters.cpp
+› Compiling tread Pods/ReactCodegen » EventEmitters.cpp
+› Compiling tread Pods/ReactCodegen » EventEmitters.cpp
+› Compiling tread Pods/ReactCodegen » EventEmitters.cpp
+› Compiling tread Pods/ReactCodegen » EventEmitters.cpp
+› Compiling tread Pods/ReactCodegen » EventEmitters.cpp
+› Compiling tread Pods/ReactCodegen » ComponentDescriptors.cpp
+› Compiling tread Pods/ReactCodegen » ComponentDescriptors.cpp
+› Compiling react-native-safe-area-context Pods/react-native-safe-area-context » RNCSafeAreaContext.mm
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » RNKCOverKeyboardViewShadowNode.cpp
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » RNKCKeyboardToolbarGroupViewShadowNode.cpp
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » RNKCKeyboardGestureAreaShadowNode.cpp
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » RNKCKeyboardExtenderShadowNode.cpp
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » RNKCKeyboardControllerViewShadowNode.cpp
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » RNKCKeyboardBackgroundViewShadowNode.cpp
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » RNKCClippingScrollViewDecoratorViewShadowNode.cpp
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » OverKeyboardViewManager.mm
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » KeyboardToolbarGroupViewManager.mm
+› Compiling react-native-safe-area-context Pods/react-native-safe-area-context » RNCSafeAreaViewState.cpp
+› Compiling react-native-safe-area-context Pods/react-native-safe-area-context » RNCSafeAreaViewShadowNode.cpp
+› Packaging tread Pods/ReactCodegen » libReactCodegen.a
+› Compiling react-native-safe-area-context Pods/react-native-safe-area-context » RNCSafeAreaViewComponentView.mm
+› Compiling react-native-safe-area-context Pods/react-native-safe-area-context » RNCSafeAreaProviderComponentView.mm
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » KeyboardGestureAreaManager.mm
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » KeyboardExtenderManager.mm
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » KeyboardControllerView.mm
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » KeyboardControllerModule.mm
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » KeyboardBackgroundViewManager.mm
+› Compiling react-native-keyboard-controller Pods/react-native-keyboard-controller » ClippingScrollViewDecoratorViewManager.mm
+› Compiling tread Pods/ReactAppDependencyProvider » RCTAppDependencyProvider.mm
+› Compiling react-native-worklets Pods/RNWorklets » WorkletsModule.mm
+› Compiling react-native-screens Pods/RNScreens » UIViewController+RNScreens.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabsScreenViewController.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabsScreenEventEmitter.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabsScreenComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabsNavigationStateObserverRegistry.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabsHostShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSTabsHostEventEmitter.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabsHostComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabsHostComponentView+RNSImageLoader.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabsBottomAccessoryShadowStateProxy.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabsBottomAccessoryShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSTabsBottomAccessoryHelper.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabsBottomAccessoryEventEmitter.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabsBottomAccessoryContentComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabsBottomAccessoryComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabBarController.mm
+› Compiling react-native-screens Pods/RNScreens » RNSTabBarAppearanceCoordinator.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackScreenShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSStackScreenHeaderCoordinator.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackScreenController.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackScreenComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackScreenComponentEventEmitter.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackOperationCoordinator.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackOperation.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackNavigationController.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackHostComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackHeaderSubviewShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSStackHeaderItemSpacerComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackHeaderItemShadowStateProxy.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackHeaderItemShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSStackHeaderItemEventEmitter.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackHeaderItemComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackHeaderConfigShadowStateProxy.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackHeaderConfigShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSStackHeaderConfigEventEmitter.mm
+› Compiling react-native-screens Pods/RNScreens » RNSStackHeaderConfigComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSSplitScreenShadowStateProxy.mm
+› Compiling react-native-screens Pods/RNScreens » RNSSplitScreenShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSSplitScreenComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSSplitScreenComponentEventEmitter.mm
+› Compiling react-native-screens Pods/RNScreens » RNSSplitHostComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSSplitHostComponentEventEmitter.mm
+› Compiling react-native-screens Pods/RNScreens » RNSSearchBar.mm
+› Compiling react-native-screens Pods/RNScreens » RNSScrollViewMarkerComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSScreenStackHeaderSubviewShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSScreenStackHeaderSubview.mm
+› Compiling react-native-screens Pods/RNScreens » RNSScreenStackHeaderConfigShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSScreenStackHeaderConfig.mm
+› Compiling react-native-screens Pods/RNScreens » RNSScreenStack.mm
+› Compiling react-native-screens Pods/RNScreens » RNSScreenShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSScreenNavigationContainer.mm
+› Compiling react-native-screens Pods/RNScreens » RNSScreenFooter.mm
+› Compiling react-native-screens Pods/RNScreens » RNSScreenContentWrapper.mm
+› Compiling react-native-screens Pods/RNScreens » RNSScreenContainer.mm
+› Compiling react-native-screens Pods/RNScreens » RNSScreen.mm
+› Compiling react-native-screens Pods/RNScreens » RNSSafeAreaViewState.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSSafeAreaViewShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSSafeAreaViewComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSModule.mm
+› Compiling react-native-screens Pods/RNScreens » RNSModalScreenShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSModalScreen.mm
+› Compiling react-native-screens Pods/RNScreens » RNSFullWindowOverlayShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSFullWindowOverlay.mm
+› Compiling react-native-screens Pods/RNScreens » RNSFormSheetHostShadowStateProxy.mm
+› Compiling react-native-screens Pods/RNScreens » RNSFormSheetHostShadowNode.cpp
+› Compiling react-native-screens Pods/RNScreens » RNSFormSheetHostEventEmitter.mm
+› Compiling react-native-screens Pods/RNScreens » RNSFormSheetHostComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSFormSheetContentWrapperComponentView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSConvert.mm
+› Compiling react-native-screens Pods/RNScreens » RNSConversions.mm
+› Compiling react-native-screens Pods/RNScreens » RNSConversions-Tabs.mm
+› Compiling react-native-screens Pods/RNScreens » RNSConversions-Stack.mm
+› Compiling react-native-screens Pods/RNScreens » RNSConversions-SplitView.mm
+› Compiling react-native-screens Pods/RNScreens » RNSConversions-ScrollViewMarker.mm
+› Compiling react-native-screens Pods/RNScreens » RNSConversions-Fabric.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGUse.mm
+› Compiling react-native-reanimated Pods/RNReanimated » SharedTransitions.cpp
+› Compiling react-native-gesture-handler Pods/RNGestureHandler » RNGestureHandlerModule.mm
+› Compiling react-native-nitro-modules Pods/NitroModules » NativeNitroModules+OldArch.mm
+› Compiling react-native-nitro-modules Pods/NitroModules » NativeNitroModules+NewArch.mm
+› Compiling lottie-react-native Pods/lottie-react-native » LottieAnimationViewComponentView.mm
+› Compiling lottie-react-native Pods/lottie-react-native » lottie-react-native-dummy.m
+› Compiling lottie-react-native Pods/lottie-react-native » RCTConvert+Lottie.m
+› Compiling lottie-react-native Pods/lottie-react-native » LRNAnimationViewManagerObjC.m
+› Packaging react-native-safe-area-context Pods/react-native-safe-area-context » libreact-native-safe-area-context.a
+› Packaging tread Pods/ReactAppDependencyProvider » libReactAppDependencyProvider.a
+› Packaging react-native-worklets Pods/RNWorklets » libRNWorklets.a
+› Compiling react-native-svg Pods/RNSVG » RNSVGCircle.mm
+› Compiling react-native-gesture-handler Pods/RNGestureHandler » RNGestureHandlerButtonComponentView.mm
+› Executing @shopify/react-native-skia Pods/react-native-skia » [CP] Copy XCFrameworks
+› Packaging react-native-keyboard-controller Pods/react-native-keyboard-controller » libreact-native-keyboard-controller.a
+› Executing expo-modules-core Pods/ExpoModulesCore » [CP-User] [Expo] Resolve ExpoModulesCore dSYM source maps
+› Packaging react-native-screens Pods/RNScreens » libRNScreens.a
+› Executing react-native-keyboard-controller Pods/react-native-keyboard-controller » Copy generated compatibility header
+› Compiling react-native-reanimated Pods/RNReanimated » LayoutAnimationsProxy_Experimental.cpp
+› Packaging react-native-nitro-modules Pods/NitroModules » libNitroModules.a
+› Executing react-native-nitro-modules Pods/NitroModules » Copy generated compatibility header
+› Executing react-native-screens Pods/RNScreens » Copy generated compatibility header
+› Executing expo-modules-core Pods/ExpoModulesCore » [CP-User] [Expo] Switch ExpoModulesCore XCFramework for build configuration
+› Compiling @shopify/react-native-skia Pods/react-native-skia » SkiaUIView.mm
+› Compiling @shopify/react-native-skia Pods/react-native-skia » SkiaWebGPUView.mm
+› Compiling @shopify/react-native-skia Pods/react-native-skia » SkiaPictureViewManager.mm
+› Compiling @shopify/react-native-skia Pods/react-native-skia » SkiaPictureView.mm
+› Compiling @shopify/react-native-skia Pods/react-native-skia » RNSkiaModule.mm
+› Compiling react-native-reanimated Pods/RNReanimated » ReanimatedModuleProxy.cpp
+› Compiling react-native-reanimated Pods/RNReanimated » ReanimatedModule.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGTextPath.mm
+› Packaging react-native-gesture-handler Pods/RNGestureHandler » libRNGestureHandler.a
+› Compiling react-native-svg Pods/RNSVG » RNSVGText.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGTSpan.mm
+› Packaging lottie-react-native Pods/lottie-react-native » liblottie-react-native.a
+› Compiling react-native-svg Pods/RNSVG » RNSVGSymbol.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGSvgViewModule.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGSvgView.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGShadowNodes.cpp
+› Compiling react-native-svg Pods/RNSVG » RNSVGRenderableModule.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGRect.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGRadialGradient.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGPattern.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGPath.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGNode.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGMask.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGMarker.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGLinearGradient.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGLine.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGImageShadowNode.cpp
+› Compiling react-native-svg Pods/RNSVG » RNSVGImage.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGGroup.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGForeignObject.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGFilterPrimitive.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGFilter.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGFeOffset.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGFeMerge.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGFeGaussianBlur.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGFeFlood.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGFeComposite.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGFeColorMatrix.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGFeBlend.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGEllipse.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGDefs.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGConvert.mm
+› Compiling react-native-svg Pods/RNSVG » RNSVGClipPath.mm
+› Compiling react-native-reanimated Pods/RNReanimated » REASharedTransitionBoundaryView.mm
+› Compiling react-native-reanimated Pods/RNReanimated » REASharedTransitionBoundaryShadowNode.cpp
+› Compiling react-native-reanimated Pods/RNReanimated » PropsDiffer.cpp
+› Compiling react-native-reanimated Pods/RNReanimated » NativeProxy.mm
+› Compiling react-native-reanimated Pods/RNReanimated » LayoutAnimationsUtils.cpp
+› Compiling react-native-reanimated Pods/RNReanimated » LayoutAnimationsProxy_Legacy.cpp
+› Packaging @shopify/react-native-skia Pods/react-native-skia » libreact-native-skia.a
+› Executing lottie-react-native Pods/lottie-react-native » Copy generated compatibility header
+› Executing expo-modules-core Pods/ExpoModulesCore » [CP] Copy XCFrameworks
+› Executing @kingstinct/react-native-healthkit Pods/ReactNativeHealthkit » [CP-User] [ReactNativeHealthkit] Fix Swift 6.2 CxxConvertibleToBool
+› Executing expo-modules-core Pods/ExpoModulesWorklets » [CP-User] [Expo] Resolve ExpoModulesWorklets dSYM source maps
+› Packaging react-native-svg Pods/RNSVG » libRNSVG.a
+› Packaging react-native-reanimated Pods/RNReanimated » libRNReanimated.a
+› Executing expo-font Pods/ExpoFont » [CP-User] [Expo] Resolve ExpoFont dSYM source maps
+› Executing expo-symbols Pods/ExpoSymbols » Copy generated compatibility header
+› Executing expo-system-ui Pods/ExpoSystemUI » Copy generated compatibility header
+› Executing expo-glass-effect Pods/ExpoGlassEffect » Copy generated compatibility header
+› Executing expo-file-system Pods/ExpoFileSystem » [CP-User] [Expo] Resolve ExpoFileSystem dSYM source maps
+› Executing expo-blur Pods/ExpoBlur » Copy generated compatibility header
+› Executing expo Pods/Expo » Copy generated compatibility header
+› Executing expo-constants Pods/EXConstants » [CP-User] Generate app.config for prebuilt Constants.manifest
+› Executing expo-modules-core Pods/ExpoModulesWorklets » [CP-User] [Expo] Switch ExpoModulesWorklets XCFramework for build configuration
+› Executing expo-font Pods/ExpoFont » [CP-User] [Expo] Switch ExpoFont XCFramework for build configuration
+› Compiling @kingstinct/react-native-healthkit Pods/ReactNativeHealthkit » ReactNativeHealthkit-dummy.m
+› Compiling react-native-mmkv Pods/NitroMmkv » NitroMmkv-dummy.m
+› Compiling expo-router Pods/ExpoRouter » ExpoRouter-dummy.m
+› Executing expo-modules-core Pods/ExpoModulesWorklets » [CP] Copy XCFrameworks
+› Executing expo-font Pods/ExpoFont » [CP] Copy XCFrameworks
+› Packaging react-native-mmkv Pods/NitroMmkv » libNitroMmkv.a
+› Executing expo-file-system Pods/ExpoFileSystem » [CP-User] [Expo] Switch ExpoFileSystem XCFramework for build configuration
+› Packaging expo-router Pods/ExpoRouter » libExpoRouter.a
+› Executing react-native-mmkv Pods/NitroMmkv » Copy generated compatibility header
+› Executing expo-router Pods/ExpoRouter » Copy generated compatibility header
+› Executing expo-linking Pods/ExpoLinking » Copy generated compatibility header
+› Executing expo-keep-awake Pods/ExpoKeepAwake » Copy generated compatibility header
+› Executing expo-haptics Pods/ExpoHaptics » Copy generated compatibility header
+› Executing expo-file-system Pods/ExpoFileSystem » [CP] Copy XCFrameworks
+› Executing @expo/dom-webview Pods/ExpoDomWebView » Copy generated compatibility header
+› Executing expo-asset Pods/ExpoAsset » Copy generated compatibility header
+› Packaging expo-eas-client Pods/EASClient » libEASClient.a
+› Executing @expo/ui Pods/ExpoUI » Copy generated compatibility header
+› Executing expo-updates-interface Pods/EXUpdatesInterface » Copy generated compatibility header
+› Executing expo-manifests Pods/EXManifests » Copy generated compatibility header
+› Executing expo-eas-client Pods/EASClient » Copy generated compatibility header
+› Executing expo-updates Pods/EXUpdates » [CP-User] Generate updates resources for expo-updates
+› Compiling expo-dev-menu Pods/expo-dev-menu » expo-dev-menu-dummy.m
+› Compiling expo-dev-menu Pods/expo-dev-menu » RCTKeyCommands.m
+› Compiling expo-dev-menu Pods/expo-dev-menu » EXDevMenuAppInfo.m
+› Executing expo-constants Pods/EXConstants » Copy generated compatibility header
+› Packaging expo-dev-menu Pods/expo-dev-menu » libexpo-dev-menu.a
+› Compiling expo-application Pods/EXApplication » EXApplication-dummy.m
+› Compiling expo-application Pods/EXApplication » EXProvisioningProfile.m
+› Compiling expo-notifications Pods/ExpoNotifications » ExpoNotifications-dummy.m
+› Executing expo-dev-menu Pods/expo-dev-menu » Copy generated compatibility header
+› Packaging expo-notifications Pods/ExpoNotifications » libExpoNotifications.a
+› Executing expo-notifications Pods/ExpoNotifications » Copy generated compatibility header
+› Packaging expo-application Pods/EXApplication » libEXApplication.a
+› Executing expo-application Pods/EXApplication » Copy generated compatibility header
+› Packaging @kingstinct/react-native-healthkit Pods/ReactNativeHealthkit » libReactNativeHealthkit.a
+› Compiling expo-dev-launcher Pods/expo-dev-launcher » expo-dev-launcher-dummy.m
+› Compiling expo-dev-launcher Pods/expo-dev-launcher » EXDevLauncherUpdatesHelper.m
+› Compiling expo-dev-launcher Pods/expo-dev-launcher » EXDevLauncherRCTDevSettings.m
+› Compiling expo-dev-launcher Pods/expo-dev-launcher » EXDevLauncherEarlySetup.m
+› Compiling expo-dev-launcher Pods/expo-dev-launcher » EXDevLauncherManifestParser.m
+› Compiling expo-dev-launcher Pods/expo-dev-launcher » EXDevLauncherRedBox.m
+› Compiling expo-dev-launcher Pods/expo-dev-launcher » EXDevLauncherController.m
+› Compiling expo-dev-launcher Pods/expo-dev-launcher » EXDevLauncher.m
+› Executing @kingstinct/react-native-healthkit Pods/ReactNativeHealthkit » Copy generated compatibility header
+› Packaging expo-dev-launcher Pods/expo-dev-launcher » libexpo-dev-launcher.a
+› Executing expo-dev-launcher Pods/expo-dev-launcher » Copy generated compatibility header
+› Compiling expo-updates Pods/EXUpdates » EXUpdates-dummy.m
+› Compiling expo-updates Pods/EXUpdates » bspatch.c
+› Compiling expo-updates Pods/EXUpdates » EXUpdatesBSPatch.m
+› Compiling expo-updates Pods/EXUpdates » EXDeferredRCTRootView.m
+› Packaging expo-updates Pods/EXUpdates » libEXUpdates.a
+› Executing expo-updates Pods/EXUpdates » Copy generated compatibility header
+› Compiling Pods/Pods-Tread » Pods-Tread-dummy.m
+› Packaging Pods/Pods-Tread » libPods-Tread.a
+⚠️  Script has ambiguous dependencies causing it to run on every build.
+   To fix, go to: Xcode » Tread/Tread » Build Phases » '[Expo Dev Launcher] Strip Local Network Keys for Release'
+   Either: Uncheck "Based on dependency analysis", or select output files to trigger the script
+
+› Executing Tread » [CP] Check Pods Manifest.lock
+› Executing Tread » [Expo] Configure project
+› Linking   Tread » __preview.dylib
+› Copying   ./PrivacyInfo.xcprivacy ➜ ios/Tread/PrivacyInfo.xcprivacy
+› Preparing Tread » Info.plist
+› Compiling Tread » Tread_vers.c
+› Linking   Tread » Tread.debug.dylib
+
+⚠️  (ios/Tread.xcodeproj:)
+
+
+ignoring duplicate libraries: '-lc++'
+(warning truncated)
+› Linking   Tread » Tread
+› Generating debug Tread » Tread.app.dSYM
+› Executing Tread » Bundle React Native code and images
+› Executing Tread » [CP] Copy Pods Resources
+› Executing Tread » [Expo Dev Launcher] Strip Local Network Keys for Release
+› Executing Tread » [CP] Embed Pods Frameworks
+› Signing   Tread » Tread.debug.dylib
+› Signing   Tread » __preview.dylib
+› Signing   Tread » Tread.app
+› Build Succeeded
+
+› 0 error(s), and 2 warning(s)
+
+Starting Metro Bundler
+
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █▀█ █▄   ▀▄▀▄█  ▄▀▄▀▀▄█ ▄▄▄▄▄ █
+█ █   █ █▀▀▀█ ▄▀ █▀ ▄ ▄▀▀ ▀  ▀█ █   █ █
+█ █▄▄▄█ █▀ █▀▀██▄▄ ▄▄▀  ▄██▀▀ █ █▄▄▄█ █
+█▄▄▄▄▄▄▄█▄▀ ▀▄█ █ █ █▄▀▄█▄█ █ █▄▄▄▄▄▄▄█
+█▄▄ ▄ █▄▄  ▀▄▀▀▀▀▄▄▄▀▄▀  ▀ ▄█▀▄█▄█ █ ██
+██▀▄█▀▄▄ ▄▄ █▀ ▄ ▄█▄▀▀ ██▄▄▄ ▀ ██ ▄▄▄ █
+█ █ ▄ █▄█▀  █▄█▄ ▀▄▄ █▀█ ▄▄ █▀█▄▄▄▄▄ ▄█
+█▄ ▄ ▀▀▄▄▄▄▀ ▄█▀█▀█ ▀█  ▀ █▄   █▀▄██▄▄█
+███ ▀ ▄▄▀▄ █▄▀▀▀▀█▄▄▀▄▀▀▀█ █▄▀▄▄ ▄ ▄▄██
+█ ▄▄ ▀ ▄▄██▀█▀ ▄ ▄█ █▄▀▀███ ▄▀   ███▀ █
+█ ▄ ▄▄▄▄ ▀▀▄█▄█▄▄▄   ▄ ▄▀█▄▄▄  ▄▀▄▄▄▄██
+█ ▄ ██▀▄▀▀▄▀ ▄█▀ █▄▀█▄ ▀▀█▄▀  █▀▀█ █ ▄█
+█ ▄▀  ▀▄▀▀▄▀▄▀▀▀█▄▄▄▀▄▀█ ▀ ▄▄▀ ▄▀▄▄ ▄██
+█ █ █▄▄▄█ ▀ █▀ ▄ █▄ ▀▀  ▀██▄ ▀█ ▀ ▄▄ ▄█
+█▄█▄▄█▄▄▄▀▀▀█▄█▄▄▄▄ █▀▀▀   ▄  ▄▄▄  ▄█▄█
+█ ▄▄▄▄▄ █▄██ ▄█▀ ███▀█▀██▄█▀█ █▄█ ██▄▄█
+█ █   █ █ ▀█▄▀▀▀█▄▄▄▀▄ ▄▀█▄▄▄▄  ▄ ▀▄▀ █
+█ █▄▄▄█ █ ▀██▀ ▄ ▄▄▄█ ▀▄▀▄█ ▀ ▀███▄█▄ █
+█▄▄▄▄▄▄▄█▄▄▄█▄█▄▄███████▄▄▄▄▄█▄████▄▄▄█
+
+› Scan the QR code above to open in a development build. (Learn more)
+› Metro:
+com.tread.app.dev://expo-development-client/?url=http%3A%2F%2F192.168.100.2%3A8081
+› Web: http://localhost:8081
+
+› Using development build (Press s to switch to Expo Go)
+› Press ? │ show all commands
+
+› Installing /Users/rahim/Library/Developer/Xcode/DerivedData/Tread-dugkvokmfbtjdpdaiaoeqwgulkap/Build/Products/Debug-iphonesimulator/Tread.app
+› Installing on iPhone 17 Pro
+› Opening on iPhone 17 Pro (com.tread.app.dev)
+› Opening com.tread.app.dev://expo-development-client/?url=http%3A%2F%2F192.168.100.2%3A8081 on iPhone 17 Pro
+
+› Logs for your project will appear below. Press Ctrl+C to exit.
+iOS Bundled 5220ms node_modules/expo-router/entry.js (5634 modules)
+iOS Bundled 1026ms node_modules/expo-router/entry.js (1 module)
+[Tread.debug.dylib] [I] <MMKV.cpp:175::initialize> version v2.4.0, page size
+16384, arch arm64-v8a
+[Tread.debug.dylib] [I] <MMKV.cpp:222::initializeMMKV> Apple Device: 0,
+version: 64
+[Tread.debug.dylib] [I] <MMKV.cpp:232::initializeMMKV> root dir:
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv
+[Tread.debug.dylib] [I] <MMKV.cpp:263::getMMKVWithID> prepare to load tread.v1
+(id 6a855ac5acd1ae2ebb7e42d1fab71642) from rootPath
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv
+[Tread.debug.dylib] [I] <MemoryFile.cpp:103::open> open fd[15], flag 0x7,
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv/tread.v1
+[Tread.debug.dylib] [I] <MemoryFile.cpp:250::mmapOrCleanup> mmap to address
+[0x1033dc000], oldPtr [0x0],
+[/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv/tread.v1]
+[Tread.debug.dylib] [I] <MemoryFile.cpp:109::close> closing fd[15],
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv/tread.v1
+[Tread.debug.dylib] [I] <MemoryFile_OSX.cpp:35::tryResetFileProtection>
+protection on
+[/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv/tread.v1]
+is (null)
+[Tread.debug.dylib] [I] <MemoryFile.cpp:103::open> open fd[15], flag 0x7,
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv/tread.v1.crc
+[Tread.debug.dylib] [I] <MemoryFile.cpp:250::mmapOrCleanup> mmap to address
+[0x104600000], oldPtr [0x0],
+[/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv/tread.v1.crc]
+[Tread.debug.dylib] [I] <MemoryFile.cpp:109::close> closing fd[15],
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv/tread.v1.crc
+[Tread.debug.dylib] [I] <MemoryFile_OSX.cpp:35::tryResetFileProtection>
+protection on
+[/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv/tread.v1.crc]
+is (null)
+[Tread.debug.dylib] [I] <MemoryFile.cpp:103::open> open fd[15], flag 0x7,
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv/tread.v1.crc
+[Tread.debug.dylib] [I] <MemoryFile.cpp:109::close> closing fd[15],
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv/tread.v1.crc
+[Tread.debug.dylib] [I] <MemoryFile.cpp:103::open> open fd[15], flag 0x7,
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv/tread.v1
+[Tread.debug.dylib] [I] <MemoryFile.cpp:109::close> closing fd[15],
+/Users/rahim/Library/Developer/CoreSimulator/Devices/A6B5B9AA-BF8A-4531-BC45-DF3EC36A73BB/data/Containers/Data/Application/5C161D96-E126-49E0-975E-2143D2898E0C/Documents/mmkv/tread.v1
+[Tread.debug.dylib] [I] <MMKV_IO.cpp:287::loadMetaInfoAndCheck> meta file
+[tread.v1] has flag [0]
+[Tread.debug.dylib] [I] <MMKV_IO.cpp:94::loadFromFile> loading [tread.v1] with
+75 actual size, file size 16384, InterProcess 0, meta info version:4
+[Tread.debug.dylib] [I] <MMKV_IO.cpp:99::loadFromFile> loading [tread.v1] with
+crc 949136743 sequence 1 version 4
+[Tread.debug.dylib] [I] <MMKV_IO.cpp:145::loadFromFile> loaded [tread.v1] with
+3 key-values
+[UIKitCore] UIKeyboardLayoutStar implements focusItemsInRect: - caching for
+linear focus movement is limited as long as this view is on screen.
+[RemoteTextInput] -[RTIInputSystemClient
+remoteTextInputSessionWithID:performInputOperation:]  perform input operation
+requires a valid sessionID. inputModality = Keyboard, inputOperation =
+dismissAutoFillPanel, customInfoType = UIUserInteractionRemoteInputOperations
+[UIKitCore] Snapshotting a view (0x120c23400, UIKeyboardImpl) that is not in a
+visible window requires afterScreenUpdates:YES.
+error: script "ios" was terminated by signal SIGKILL (Forced quit)
+zsh: killed     bun ios
+rahim@MacBook-Pro-rahim fsd-refactor-ui-foundation % bun dev
+error: Script not found "dev"
+rahim@MacBook-Pro-rahim fsd-refactor-ui-foundation % bun start
+$ expo start
+Starting project at /Users/rahim/conductor/workspaces/cadence/ngerulmud
+Starting Metro Bundler
+
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █▀ █▀▀▀ ▀▀██▄▄  ▄▀█ ▄▄▄▄▄ █
+█ █   █ █▀ ▄ ▀▀█ ▀▀▄█ ▄█ ▀█ █   █ █
+█ █▄▄▄█ █▀█ █▄▄▄▀██▀▄▄▀▀▄██ █▄▄▄█ █
+█▄▄▄▄▄▄▄█▄█▄█ █▄█ █ █▄▀ █▄█▄▄▄▄▄▄▄█
+█▄▄▄▄▄▀▄▄▄ ▄▀▀ ███▄  ▀▀▄▀▄▄▀▄█ ▀▄▀█
+█▀▀▀▄ ▄▄█▄ ▀█ ▄▄▄████ ▀▀██   ██  ██
+█▄ ▀██ ▄▄▄ ▀ ▀▄▀▄▄▄▄ ▄█▄ ▄█▀█▄▀██▀█
+█▀█▄█▄▄▄ ▀▀ █ █▀ ▄▄▄█▀ ▄█  ▄ ▀▀▀ ██
+██▀▄   ▄█ ▄ ▀▀▄▀█▄█▀ ▀█▄▀█▄▀█▄▀▀▄▀█
+█▀▀▀ ▀▄▄▀▄█ █ ██ ▄█▄▀█ ▀▀█▄███▀ ▄▀█
+█ ▄█▄▄ ▄  ▄  ▀▄▀▄▄▄ ▀ ▀▄ ▄▄▀▄▄▀▀▀▀█
+█ █▄▄▀▄▄ █▄▄█▀██▄▀███   █▄ ██   ▄██
+█▄██▄▄█▄▄ ▄ █▄ █ ▀▄▄▀ █▄▄ ▄▄▄  ▀ ▀█
+█ ▄▄▄▄▄ █▄  ▀▀▄▄▄█▄ ▀ ▀▄  █▄█ █▀▄▀█
+█ █   █ █ █▀▀▀▄▀▄▄█▀ ▄▀ ▀  ▄  ▄██▄█
+█ █▄▄▄█ █ ▄▄██▄█  ▄▀▀  ▄▄▄ ▄▄▀█▀▄██
+█▄▄▄▄▄▄▄█▄███▄▄█▄█▄▄▄███▄▄█▄█▄██▄██
+
+› Scan the QR code above to open in a development build. (Learn more)
+› Metro:
+tread.dev://expo-development-client/?url=http%3A%2F%2F192.168.100.2%3A8081
+› Web: http://localhost:8081
+
+› Using development build (Press s to switch to Expo Go)
+› Press ? │ show all commands
+
+Logs for your project will appear below. Press Ctrl+C to exit.
+iOS Bundled 2843ms node_modules/expo-router/entry.js (5634 modules)
+ WARN  bundle scheme is file - unable to connect to sharedPackageConnection from EXDevLauncherController.
+iOS Bundled 240ms node_modules/expo-router/entry.js (1 module)
+iOS Bundled 160ms node_modules/expo-router/entry.js (1 module)
+iOS Bundled 168ms node_modules/expo-router/entry.js (1 module)
+iOS Bundled 330ms node_modules/expo-router/entry.js (1 module)
+iOS Bundled 203ms node_modules/expo-router/entry.js (1 module)
+iOS Bundled 265ms node_modules/expo-router/entry.js (1 module)
+iOS Bundled 173ms node_modules/expo-router/entry.js (1 module)
+ ERROR  The action 'GO_BACK' was not handled by any navigator.
+
+Is there any screen to go back to?
+
+This is a development-only warning and won't be shown in production. 
+
+Code: metroServerLogs.native.ts
+  103 | }
+  104 |
+> 105 | class NamelessError extends Error {
+      | ^
+  106 |   name = '';
+  107 | }
+  108 | function captureCurrentStack() {
+Call Stack
+  apply (<native>)
+  NamelessError (node_modules/@expo/metro-runtime/src/metroServerLogs.native.ts:105)
+  captureCurrentStack (node_modules/@expo/metro-runtime/src/metroServerLogs.native.ts:110:27)
+  HMRClient.log (node_modules/@expo/metro-runtime/src/metroServerLogs.native.ts:42:79)
+  console.level (node_modules/react-native/Libraries/Core/setUpDeveloperTools.js:41:24)
+  onUnhandledAction (node_modules/expo-router/build/ExpoRoot.js:183:22)
+  <anonymous> (node_modules/expo-router/build/react-navigation/core/useNavigationBuilder.js:611:32)
+  apply (<native>)
+  latestCallback (node_modules/expo-router/build/utils/useLatestCallback.js:52:33)
+  dispatch (node_modules/expo-router/build/react-navigation/core/useNavigationHelpers.js:57:34)
+  listeners.focus._$argument_0 (node_modules/expo-router/build/react-navigation/core/BaseNavigationContainer.js:120:67)
+  listener (node_modules/expo-router/build/react-navigation/core/useFocusedListenersChildrenAdapter.js:54:53)
+  listener (node_modules/expo-router/build/react-navigation/core/useFocusedListenersChildrenAdapter.js:49:53)
+  <anonymous> (node_modules/expo-router/build/react-navigation/core/BaseNavigationContainer.js:120:31)
+  apply (<native>)
+  latestCallback (node_modules/expo-router/build/utils/useLatestCallback.js:52:33)
+  exports.routingQueue.run (node_modules/expo-router/build/global-state/routingQueue.js:40:41)
+  <anonymous> (node_modules/expo-router/build/imperative-api.js:12:35)
+  callCreate.react_stack_bottom_frame (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:17215:26)
+  run (<native>)
+  runWithFiberInDEV (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:697:33)
+  commitHookEffectListMount (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:10563:46)
+  commitHookPassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:10650:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12049:42)
+  recursivelyTraversePassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12004:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12293:49)
+  recursivelyTraversePassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12004:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12041:49)
+  recursivelyTraversePassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12004:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12041:49)
+  recursivelyTraversePassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12004:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12041:49)
+  recursivelyTraversePassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12004:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12041:49)
+  recursivelyTraversePassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12004:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12293:49)
+  recursivelyTraversePassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12004:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12041:49)
+  recursivelyTraversePassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12004:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12293:49)
+  recursivelyTraversePassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12004:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12041:49)
+  recursivelyTraversePassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12004:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12293:49)
+  recursivelyTraversePassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12004:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12041:49)
+  recursivelyTraversePassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12004:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12041:49)
+  recursivelyTraversePassiveMountEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12004:36)
+  commitPassiveMountOnFiber (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:12084:49)
+  flushPassiveEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:14844:34)
+  flushPendingEffects (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:14751:33)
+  flushSpawnedWork (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:14716:30)
+  commitRoot (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:14447:25)
+  commitRootWhenReady (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:13352:17)
+  performWorkOnRoot (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:13299:34)
+  performSyncWorkOnRoot (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:3688:24)
+  flushSyncWorkAcrossRoots_impl (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:3538:42)
+  processRootScheduleInMicrotask (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:3570:38)
+  scheduleMicrotask$argument_0 (node_modules/react-native/Libraries/Renderer/implementations/ReactFabric-dev.js:3708:47) 
+
+Code: ExpoRoot.js
+  83 |                     initialMetrics: INITIAL_METRICS, children: children }) }) }));
+  84 |     }, [ParentWrapper]);
+> 85 |     return (0, jsx_runtime_1.jsx)(ContextNavigator, { ...props, wrapper: wrapper });
+     |                                 ^
+  86 | }
+  87 | const initialUrl = react_native_1.Platform.OS === 'web' && typeof window !== 'undefined'
+  88 |     ? new URL(window.location.href)
+Call Stack
+  ExpoRoot (node_modules/expo-router/build/ExpoRoot.js:85:33)
+  App (node_modules/expo-router/build/qualified-entry.js:20:91)
+  WithDevTools (node_modules/expo/src/launch/withDevTools.ios.tsx:38:12)
