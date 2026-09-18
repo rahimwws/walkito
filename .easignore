@@ -1,0 +1,74 @@
+# What NOT to upload to the build servers.
+#
+# This file REPLACES .gitignore for EAS uploads — it does not add to it. So
+# everything .gitignore excludes has to be repeated here, or it gets uploaded.
+# That matters most for the secrets near the bottom: .env holds the RevenueCat
+# key, and *.p8 / *.p12 / *.mobileprovision are signing credentials. Dropping
+# those lines would ship them to a build server.
+#
+# It also reaches further than .gitignore can. .gitignore has no effect on files
+# already committed, and .context/ is committed — 74 MB of screenshots and
+# working notes that were being uploaded on every single build. This file is
+# what actually stops that.
+
+# ── Everything .gitignore excludes ──────────────────────────────────────────
+
+# dependencies — reinstalled on the builder from the lockfile
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files — the builder gets its variables from the EAS environment,
+# never from an uploaded file
+.env
+.env*.local
+.env.eas-simulator
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders — EAS runs prebuild, so these are regenerated. The
+# project has no ios/ or android/ checked in, which is why that is safe.
+/ios
+/android
+
+# ── Not in .gitignore, and the reason this file exists ──────────────────────
+
+# Scratch space: screenshots, audit notes, research. Committed, so .gitignore
+# cannot touch it, and 74 MB of the 143 MB archive.
+.context/
+
+# GitHub Actions run on GitHub, not on the builder.
+.github/
+
+# Editor state.
+.vscode/
+.idea/
+
+# Test output, if it is ever generated locally.
+/coverage
