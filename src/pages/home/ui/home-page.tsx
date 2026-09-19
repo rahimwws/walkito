@@ -133,7 +133,7 @@ export function HomePage() {
             onGift={() => setGiftOpen(true)}
             swapProgress={program?.progress}
             centre={todayLines()}
-            onSettings={() => router.push('/settings')}
+            onProfile={() => router.push('/profile')}
           />
         </IntroReveal>
 

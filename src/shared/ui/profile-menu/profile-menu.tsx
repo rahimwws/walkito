@@ -3,27 +3,34 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import { GlassView } from 'expo-glass-effect';
 import { Pressable, StyleSheet } from 'react-native';
 
-import { palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 
 export type ProfileMenuProps = {
-  onReferFriend: () => void;
-  onSettings: () => void;
+  onPress: () => void;
 };
 
 /**
- * Android/web fallback for the iOS SwiftUI menu.
+ * The avatar. One tap, one destination.
  *
- * There is no native dropdown to fall back on here, so the avatar goes
- * straight to settings — the destination behind the menu's main entry —
- * rather than half-simulating a menu with a JS popover that would look
- * out of place on both platforms.
+ * This was a native SwiftUI `Menu` with two entries, "Refer a friend" and
+ * "Settings". Both now live on the profile screen along with the account
+ * controls, so the dropdown was a menu whose every item was also one scroll
+ * further on — an extra decision in front of a screen that answers it.
+ *
+ * `Pressable` wraps the glass rather than sitting inside it. An interactive
+ * `GlassView` installs its own native press recogniser, and a `Pressable`
+ * mounted into its content view is a descendant of that recogniser: it loses
+ * the first tap. Three controls in this app had that bug.
  */
-export function ProfileMenu({ onSettings }: ProfileMenuProps) {
+export function ProfileMenu({ onPress }: ProfileMenuProps) {
   const scheme = useColorScheme();
 
   return (
-    <Pressable onPress={onSettings} style={({ pressed }) => pressed && { opacity: 0.7 }}>
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel="Profile"
+      onPress={onPress}
+      style={({ pressed }) => pressed && { opacity: 0.7 }}>
       <GlassView isInteractive style={styles.capsule}>
         <HugeiconsIcon
           icon={User03Icon}

@@ -9,4 +9,4 @@ export {
   type Accent,
   type AccentName,
 } from './theme';
-export { LEGAL } from './legal';
+export { LEGAL, SUPPORT_EMAIL } from './legal';

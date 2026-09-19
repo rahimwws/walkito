@@ -17,3 +17,12 @@ export const LEGAL = {
   terms: '',
   privacy: '',
 } as const;
+
+/**
+ * Where "a person replies" actually goes.
+ *
+ * Here rather than in the quick-action provider that first needed it: the
+ * profile screen needs the same address, and two copies of a support address is
+ * how one of them ends up pointing at a mailbox nobody reads.
+ */
+export const SUPPORT_EMAIL = 'hello@walkito.app';

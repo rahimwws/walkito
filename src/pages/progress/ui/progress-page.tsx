@@ -271,7 +271,7 @@ export function ProgressPage() {
             gift
             onGift={() => setGiftOpen(true)}
             swapProgress={program?.progress}
-            onSettings={() => router.push('/settings')}
+            onProfile={() => router.push('/profile')}
           />
         </IntroReveal>
 

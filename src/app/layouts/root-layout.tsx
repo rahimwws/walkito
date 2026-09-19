@@ -114,9 +114,22 @@ export function RootLayout() {
                   <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
                 </Stack.Protected>
 
-                {/* Native form sheet sized to its content, so the apprearance
-                    picker rises only as far as it needs and the app stays
-                    visible behind it. */}
+                {/* The account, as a pushed screen rather than a sheet.
+                    Everything else reached from the header is an aside you
+                    dismiss back out of; this is somewhere you go, and it holds
+                    the exits Apple expects to be findable rather than
+                    dismissed past. */}
+                <Stack.Screen
+                  name="profile"
+                  options={{
+                    headerShown: false,
+                    presentation: 'card',
+                  }}
+                />
+
+                {/* Native form sheet sized to its content, so the list rises
+                    only as far as it needs and the app stays visible behind
+                    it. */}
                 <Stack.Screen
                   name="settings"
                   options={{

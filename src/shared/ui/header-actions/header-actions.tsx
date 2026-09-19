@@ -45,7 +45,8 @@ export type HeaderActionsProps = {
   gift?: boolean;
   onGift?: () => void;
   onReferFriend?: () => void;
-  onSettings?: () => void;
+  /** Opens the profile screen, which is where settings and invites now live. */
+  onProfile?: () => void;
   /** 0–1: how far the program sheet is open. Drives the swap below. */
   swapProgress?: SharedValue<number>;
   /** Rises in the middle of the header while the sheet is up: the weekday over
@@ -102,7 +103,7 @@ export function HeaderActions({
   gift = false,
   onGift = () => {},
   onReferFriend = () => {},
-  onSettings = () => {},
+  onProfile = () => {},
   swapProgress,
   centre,
 }: HeaderActionsProps) {
@@ -178,7 +179,7 @@ export function HeaderActions({
             </Shift>
           )}
           <SlideOut progress={swapProgress}>
-            <ProfileMenu onReferFriend={onReferFriend} onSettings={onSettings} />
+            <ProfileMenu onPress={onProfile} />
           </SlideOut>
         </View>
       </GlassContainer>

@@ -1,142 +1,103 @@
-import Moon02Icon from '@hugeicons/core-free-icons/Moon02Icon';
-import SmartPhone01Icon from '@hugeicons/core-free-icons/SmartPhone01Icon';
-import Sun03Icon from '@hugeicons/core-free-icons/Sun03Icon';
-import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
-import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
+import ArrowUpRight01Icon from '@hugeicons/core-free-icons/ArrowUpRight01Icon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { fonts, meterColors, palette } from '@/shared/config';
-import {
-  setThemePreference,
-  useColorScheme,
-  useThemePreference,
-  type ThemePreference,
-} from '@/shared/lib/theme';
-
-const OPTIONS: { value: ThemePreference; label: string; hint: string; icon: IconSvgElement }[] = [
-  { value: 'system', label: 'System', hint: 'Match device settings', icon: SmartPhone01Icon },
-  { value: 'light', label: 'Light', hint: 'Always light', icon: Sun03Icon },
-  { value: 'dark', label: 'Dark', hint: 'Always dark', icon: Moon02Icon },
-];
+import { LEGAL, fonts, meterColors, palette } from '@/shared/config';
+import { useColorScheme } from '@/shared/lib/theme';
 
 /**
- * Appearance sheet, presented as a native form sheet from the avatar.
+ * The documents, and nothing else.
  *
- * Rows with a trailing check rather than a segmented control: this is a
- * settings list, and the pattern scales as more preferences land here.
+ * It used to be the appearance picker. That went when the app became dark-only:
+ * a settings screen whose single control is a choice between one option is
+ * worse than no screen at all, because the user reads three rows before
+ * discovering there is nothing to decide.
+ *
+ * What is left is what Apple requires to be reachable from a subscribing app.
+ * More settings will land here; the list shape is already the one that scales.
  */
+const LINKS: { label: string; hint: string; url: string }[] = [
+  { label: 'Terms of Use', hint: 'The subscription agreement', url: LEGAL.terms },
+  { label: 'Privacy Policy', hint: 'What we store, and where', url: LEGAL.privacy },
+];
+
 export function SettingsPage() {
-  const scheme = useColorScheme() === 'dark' ? 'dark' : 'light';
+  const scheme = useColorScheme();
   const colors = palette[scheme];
-  const theme = meterColors[scheme];
+  const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
-  const preference = useThemePreference();
+
+  /** Rows with no URL yet are shown greyed rather than hidden. A settings
+   * screen that silently omits the privacy policy looks finished; one that
+   * shows it unavailable is a reminder that it is not. */
+  const open = (url: string) => {
+    if (url.length === 0) return;
+    Haptics.selectionAsync();
+    Linking.openURL(url).catch(() => {});
+  };
 
   return (
     <View style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, 20) + 8 }]}>
-      <Text style={[styles.title, { color: colors.foreground }]}>Appearance</Text>
+      <Text style={[styles.title, { color: colors.foreground }]}>Settings</Text>
 
-      <View style={styles.list}>
-        {OPTIONS.map((option, index) => {
-          const selected = option.value === preference;
+      <View style={[styles.list, { backgroundColor: meter.track }]}>
+        {LINKS.map((link, index) => {
+          const ready = link.url.length > 0;
           return (
             <Pressable
-              key={option.value}
-              onPress={() => {
-                if (selected) return;
-                Haptics.selectionAsync();
-                setThemePreference(option.value);
-              }}
+              key={link.label}
+              accessibilityRole="link"
+              accessibilityLabel={link.label}
+              accessibilityState={{ disabled: !ready }}
+              disabled={!ready}
+              onPress={() => open(link.url)}
               style={({ pressed }) => [
                 styles.row,
-                { backgroundColor: theme.iconTile },
-                index === 0 && styles.firstRow,
-                index === OPTIONS.length - 1 && styles.lastRow,
-                pressed && { opacity: 0.7 },
+                index > 0 && { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: meter.track },
+                pressed && { opacity: 0.6 },
               ]}>
-              <HugeiconsIcon
-                icon={option.icon}
-                size={22}
-                color={colors.foreground}
-                strokeWidth={1.8}
-              />
               <View style={styles.rowText}>
-                <Text style={[styles.rowLabel, { color: colors.foreground }]}>{option.label}</Text>
-                <Text style={[styles.rowHint, { color: theme.caption }]}>{option.hint}</Text>
+                <Text
+                  style={[
+                    styles.rowLabel,
+                    { color: ready ? colors.foreground : meter.unit },
+                  ]}>
+                  {link.label}
+                </Text>
+                <Text style={[styles.rowHint, { color: meter.caption }]}>
+                  {ready ? link.hint : 'Not published yet'}
+                </Text>
               </View>
-              {/* Slot is always present so rows don't reflow as the check moves. */}
-              <View style={styles.checkSlot}>
-                {selected && (
-                  <HugeiconsIcon
-                    icon={Tick02Icon}
-                    size={22}
-                    color={colors.foreground}
-                    strokeWidth={2.4}
-                  />
-                )}
-              </View>
+              {ready && (
+                <HugeiconsIcon
+                  icon={ArrowUpRight01Icon}
+                  size={18}
+                  color={meter.unit}
+                  strokeWidth={2}
+                />
+              )}
             </Pressable>
           );
         })}
       </View>
-
-      <Text style={[styles.note, { color: theme.caption }]}>
-        The choice is remembered on this device.
-      </Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  sheet: {
-    paddingTop: 22,
-    paddingHorizontal: 20,
-    gap: 18,
-  },
-  title: {
-    fontSize: 24,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.4,
-  },
-  list: {
-    gap: 2,
-  },
+  sheet: { paddingHorizontal: 20, paddingTop: 20 },
+  title: { fontSize: 24, fontFamily: fonts.heavy, letterSpacing: -0.6, marginBottom: 16 },
+  list: { borderRadius: 22, borderCurve: 'continuous', overflow: 'hidden' },
   row: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 14,
+    gap: 12,
     paddingVertical: 14,
     paddingHorizontal: 16,
-    borderCurve: 'continuous',
   },
-  firstRow: {
-    borderTopLeftRadius: 18,
-    borderTopRightRadius: 18,
-  },
-  lastRow: {
-    borderBottomLeftRadius: 18,
-    borderBottomRightRadius: 18,
-  },
-  rowText: {
-    flex: 1,
-    gap: 1,
-  },
-  rowLabel: {
-    fontSize: 17,
-    fontFamily: fonts.semibold,
-  },
-  rowHint: {
-    fontSize: 13,
-    fontFamily: fonts.regular,
-  },
-  checkSlot: {
-    width: 22,
-    alignItems: 'center',
-  },
-  note: {
-    fontSize: 13,
-    fontFamily: fonts.regular,
-  },
+  rowText: { flex: 1 },
+  rowLabel: { fontSize: 16, fontFamily: fonts.semibold, letterSpacing: -0.2 },
+  rowHint: { fontSize: 13, fontFamily: fonts.medium, marginTop: 1 },
 });

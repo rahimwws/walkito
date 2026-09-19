@@ -4,9 +4,8 @@ import { useEffect } from 'react';
 import { Linking } from 'react-native';
 
 import { firstName, useProfileName } from '@/entities/profile';
+import { SUPPORT_EMAIL } from '@/shared/config';
 
-/** Where the mail goes. One address, read by a person. */
-const SUPPORT = 'hello@walkito.app';
 
 /**
  * The two things a long press can say: one static, one named.
@@ -32,7 +31,7 @@ const TALK = 'talk';
  * job into finishing a sentence.
  */
 function mailto(subject: string, body: string): string {
-  return `mailto:${SUPPORT}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  return `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
 const MAIL = {
