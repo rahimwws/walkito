@@ -9,10 +9,13 @@ const KEY = 'session/onboarded';
  *
  * With this on, the stored flag is ignored at startup: completing still swaps
  * to Home for the rest of the session, but the next reload starts back at the
- * first onboarding screen. Flip to `false` to restore the real behaviour, where
- * a finished user goes straight to Home and never sees the flow again.
+ * first onboarding screen.
+ *
+ * **Must be `false` in anything that ships.** On, it makes the questionnaire
+ * inescapable — a released user would answer it again on every cold start,
+ * because the answer is never read back.
  */
-const ALWAYS_ONBOARD = true;
+const ALWAYS_ONBOARD = false;
 
 /**
  * Whether the questionnaire is behind the user.

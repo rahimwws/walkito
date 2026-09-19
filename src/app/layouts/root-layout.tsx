@@ -93,15 +93,24 @@ export function RootLayout() {
                     Both halves must be guarded, and on opposite conditions:
                     `Stack.Protected` gates *availability*, it does not
                     navigate, so if (tabs) stayed reachable the initial "/"
-                    would resolve to it and onboarding would never show. */}
-                <Stack.Protected guard={onboarded}>
+                    would resolve to it and onboarding would never show.
+
+                    `guard` means *available*, not *blocked*. Both were the
+                    wrong way round from the first commit: onboarding was gated
+                    on having finished onboarding, so a new user — for whom the
+                    flag is false — found the flow unavailable and landed on
+                    Home, and had the guard ever flipped they would have been
+                    thrown back into the flow with the tabs unreachable. The
+                    comment above described the intended behaviour the whole
+                    time, which is why it read as correct. */}
+                <Stack.Protected guard={!onboarded}>
                   <Stack.Screen
                     name="onboarding"
                     options={{ headerShown: false, animation: 'fade', gestureEnabled: false }}
                   />
                 </Stack.Protected>
 
-                <Stack.Protected guard={!onboarded}>
+                <Stack.Protected guard={onboarded}>
                   <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
                 </Stack.Protected>
 
