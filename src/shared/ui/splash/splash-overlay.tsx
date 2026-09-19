@@ -13,10 +13,20 @@ import { useColorScheme } from '@/shared/lib/theme';
 const LIGHT = require('@assets/lottie/splash/light.json');
 const DARK = require('@assets/lottie/splash/dark.json');
 
-/** The splash artwork inverts the scheme on purpose: light mode plays white
- * shapes on a black backdrop and vice versa. The backdrop color fills any
- * aspect-ratio gaps behind the covered composition. */
-const BACKDROP = { light: '#000000', dark: '#FFFFFF' } as const;
+/**
+ * The splash artwork inverts the scheme on purpose: the file named `light`
+ * plays white shapes on a black backdrop, and `dark` the other way round. The
+ * backdrop colour fills any aspect-ratio gaps behind the covered composition.
+ *
+ * That inversion was a contrast against the app's own appearance, and it stops
+ * making sense now the app is dark-only: `dark` would open every launch with a
+ * full-screen white flash before a black app. So both schemes take the
+ * black-backdrop pair. The mapping is kept rather than collapsed, so restoring
+ * the light theme means restoring one line here too.
+ */
+const BACKDROP = { light: '#000000', dark: '#000000' } as const;
+/** Which file each scheme plays. `light` is the white-on-black one — see above. */
+const ARTWORK = { light: LIGHT, dark: LIGHT } as const;
 
 /** The animation is 102.6 frames @60fps (~1.7s). The fallback fires if
  * onAnimationFinish never does, so the splash can't wedge the app shut. */
@@ -80,7 +90,7 @@ export function SplashOverlay({ onReveal, onDone }: SplashOverlayProps) {
       <LottieView
         ref={viewRef}
         key={scheme}
-        source={scheme === 'dark' ? DARK : LIGHT}
+        source={ARTWORK[scheme]}
         autoPlay
         loop={false}
         resizeMode="cover"

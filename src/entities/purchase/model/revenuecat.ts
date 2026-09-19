@@ -1,8 +1,15 @@
-import Purchases, { LOG_LEVEL, type CustomerInfo, type PurchasesError } from 'react-native-purchases';
+import Purchases, {
+  LOG_LEVEL,
+  type CustomerInfo,
+  type PurchasesError,
+  type PurchasesOffering,
+  type PurchasesPackage,
+} from 'react-native-purchases';
 
 import {
   ENTITLEMENT,
-  PRODUCTS,
+  type Offering,
+  type Plan,
   type Product,
   type Purchases as Store,
   type PurchaseResult,
@@ -10,7 +17,7 @@ import {
 } from './purchase';
 
 /**
- * The real store, behind the contract the paywall already talks to.
+ * The real store, behind the contract the paywall talks to.
  *
  * Only this file imports `react-native-purchases`. That is the point of the
  * seam: the paywall, the gate and the tests all speak `Purchases`, so swapping
@@ -28,6 +35,15 @@ import {
  */
 let active = false;
 const listeners = new Set<() => void>();
+
+/**
+ * The packages behind the tokens handed out by `offering()`.
+ *
+ * A `Plan` carries a string rather than the SDK's package object, so that the
+ * contract stays free of RevenueCat's types and the paywall cannot reach into
+ * one. This is where the string is exchanged back.
+ */
+const packages = new Map<string, PurchasesPackage>();
 
 function announce(next: boolean) {
   if (next === active) return;
@@ -58,6 +74,30 @@ function messageFrom(error: unknown): string {
     : 'That didn’t go through. No charge was made.';
 }
 
+/** A package as the app sees it: a price to print and a token to buy with. */
+function toPlan(offeringId: string, pkg: PurchasesPackage | null): Plan | null {
+  if (pkg == null) return null;
+  const token = `${offeringId}:${pkg.identifier}`;
+  packages.set(token, pkg);
+  const product: Product = {
+    id: pkg.product.identifier,
+    price: pkg.product.price,
+    currencyCode: pkg.product.currencyCode,
+    // The store's own string. Formatting `price` by hand gets the symbol on the
+    // wrong side in half of Europe and the separator wrong in the other half.
+    display: pkg.product.priceString,
+  };
+  return { token, product };
+}
+
+function toOffering(found: PurchasesOffering): Offering {
+  return {
+    identifier: found.identifier,
+    yearly: toPlan(found.identifier, found.annual),
+    monthly: toPlan(found.identifier, found.monthly),
+  };
+}
+
 /**
  * Start the SDK and begin tracking entitlement.
  *
@@ -66,7 +106,7 @@ function messageFrom(error: unknown): string {
  * `refresh`.
  */
 export async function startRevenueCat(apiKey: string, verbose: boolean): Promise<void> {
-  // Verbose only in development. The SDK logs every request at this level,
+  // Verbose only outside production. The SDK logs every request at this level,
   // including the store's replies, which is what you want while wiring a
   // paywall and noise in a shipped build.
   Purchases.setLogLevel(verbose ? LOG_LEVEL.VERBOSE : LOG_LEVEL.WARN);
@@ -92,34 +132,31 @@ async function refreshEntitlement(): Promise<void> {
 export const revenueCatStore: Store = {
   configured: true,
 
-  async products() {
+  async offering(identifier: string): Promise<Offering | null> {
     try {
-      // Asked for by name. An empty array asks for nothing and returns
-      // nothing, which reads as "the store has no prices" rather than as the
-      // mistake it is.
-      const found = await Purchases.getProducts([PRODUCTS.yearly, PRODUCTS.monthly]);
-      return found.map(
-        (product): Product => ({
-          id: product.identifier,
-          price: product.price,
-          currencyCode: product.currencyCode,
-        }),
-      );
+      const all = await Purchases.getOfferings();
+      // By name first, then whatever the dashboard marks current. The fallback
+      // matters for `default`, which RevenueCat exposes as `current` rather
+      // than under that key in some dashboard configurations.
+      const found = all.all[identifier] ?? (identifier === 'default' ? all.current : null);
+      return found == null ? null : toOffering(found);
     } catch {
-      // The paywall falls back to its own printed figures when this is empty,
-      // which is better than a screen that cannot render because a price is
-      // missing.
-      return [];
+      // Null, not an empty offering. The paywall distinguishes "no store" from
+      // "a store with nothing in it", and only the first is allowed to fall
+      // back to printed figures.
+      return null;
     }
   },
 
-  async buy(productId: string): Promise<PurchaseResult> {
+  async buy(plan: Plan): Promise<PurchaseResult> {
+    const pkg = packages.get(plan.token);
+    if (pkg == null) {
+      // The token came from an offering fetched in this process, so a miss
+      // means the app is trying to buy something it never displayed.
+      return { status: 'failed', message: 'That plan isn’t available right now.' };
+    }
     try {
-      const [product] = await Purchases.getProducts([productId]);
-      if (product == null) {
-        return { status: 'failed', message: 'That plan isn’t available right now.' };
-      }
-      const { customerInfo } = await Purchases.purchaseStoreProduct(product);
+      const { customerInfo } = await Purchases.purchasePackage(pkg);
       announce(entitledIn(customerInfo));
       // Reported against the entitlement rather than against the call
       // returning. A purchase that completes without granting the entitlement
@@ -127,7 +164,10 @@ export const revenueCatStore: Store = {
       // the user paid-up and still looking at the paywall.
       return entitledIn(customerInfo)
         ? { status: 'purchased' }
-        : { status: 'failed', message: 'The purchase went through but didn’t unlock. Try Restore.' };
+        : {
+            status: 'failed',
+            message: 'The purchase went through but didn’t unlock. Try Restore.',
+          };
     } catch (error) {
       if (wasCancelled(error)) return { status: 'cancelled' };
       return { status: 'failed', message: messageFrom(error) };

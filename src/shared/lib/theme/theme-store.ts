@@ -5,6 +5,23 @@ import { kv } from '@/shared/lib/storage';
 
 const STORAGE_KEY = 'theme/preference';
 
+/**
+ * The app renders dark, and only dark.
+ *
+ * Not a preference and not a default — a decision. The light palette exists in
+ * `shared/config` and is *mostly* right, but "mostly" is the problem: it was
+ * never designed against, so it produced a white app on a light device with
+ * contrast faults nobody had looked at. Two appearances is two surfaces to keep
+ * correct, and the second one was not being kept.
+ *
+ * Kept as one flag rather than ripped out. Every `useColorScheme()` call site
+ * still asks the same question and still receives an answer it can branch on;
+ * the palettes, the accents and the meters all keep both halves. Finishing the
+ * light theme means flipping this and reviewing the screens, not restoring
+ * deleted code.
+ */
+const DARK_ONLY = true;
+
 export type ThemePreference = 'system' | 'light' | 'dark';
 
 export const THEME_PREFERENCES: readonly ThemePreference[] = ['system', 'light', 'dark'];
@@ -41,6 +58,13 @@ const listeners = new Set<() => void>();
  */
 function applyNative(next: ThemePreference) {
   if (typeof Appearance.setColorScheme !== 'function') return;
+  // Pinned while `DARK_ONLY` holds. This is the half that keeps liquid glass and
+  // the SwiftUI number host in step: they read the trait collection, so leaving
+  // this on 'unspecified' would render them light inside a dark app.
+  if (DARK_ONLY) {
+    Appearance.setColorScheme('dark');
+    return;
+  }
   Appearance.setColorScheme(next === 'system' ? 'unspecified' : next);
 }
 
@@ -95,9 +119,13 @@ export function useThemePreference(): ThemePreference {
  * 'unspecified'.
  */
 export function useColorScheme(): 'light' | 'dark' {
+  // Both are subscribed to unconditionally: a hook behind a branch is a crash
+  // the first time `DARK_ONLY` flips at runtime, and the whole point of keeping
+  // the flag is that flipping it should be safe.
   const preference = useThemePreference();
   const system = useSystemColorScheme();
 
+  if (DARK_ONLY) return 'dark';
   if (preference !== 'system') return preference;
   return system === 'dark' ? 'dark' : 'light';
 }

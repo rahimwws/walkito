@@ -31,7 +31,7 @@ import { LEGAL, PRIMARY, accents, fonts, meterColors, palette, type AccentName }
 import { useColorScheme } from '@/shared/lib/theme';
 import { Linking } from 'react-native';
 
-import { PRODUCTS, purchases } from '@/entities/purchase';
+import { OFFERINGS, purchases, type Offering } from '@/entities/purchase';
 import { REFERRAL_DISCOUNT_PERCENT, useReferral } from '@/entities/referral';
 import { formatPrice } from '@/shared/lib/money';
 import { PrimaryButton } from '@/shared/ui/primary-button';
@@ -46,6 +46,15 @@ function openLegal(url: string) {
   Linking.openURL(url).catch(() => {});
 }
 
+/**
+ * What the sheet prints when there is no store to ask.
+ *
+ * A fallback, not the price. Every figure below is read from the store when one
+ * is configured — these exist so the layout is not empty on a simulator or in a
+ * build whose RevenueCat key is missing, and so the sheet never renders a blank
+ * where a number should be. If one of these ever reaches a paying user it is a
+ * bug, not a price: see `storeDiagnosis()`.
+ */
 const MONTHLY = 12.99;
 /** Twelve months at the monthly rate — what every saving here is measured
  * against, and the only number that makes the percentages honest. */
@@ -143,43 +152,95 @@ export function OfferPage() {
   const [notice, setNotice] = useState<string | null>(null);
 
   /**
-   * What the store charges, once there is a store.
+   * Which price this person has earned, as an offering name.
    *
-   * Until then the sheet formats its own constants in the placeholder
-   * currency — the figures are hard-coded either way, and formatting them
-   * properly at least means the symbol follows the device rather than being
-   * the letter `$` typed into four template strings.
-   */
-  const [currency, setCurrency] = useState<string | undefined>(undefined);
-  useEffect(() => {
-    if (!purchases.configured) return;
-    let live = true;
-    purchases.products().then((list) => {
-      if (live) setCurrency(list.find((p) => p.id === PRODUCTS.yearly)?.currencyCode);
-    });
-    return () => {
-      live = false;
-    };
-  }, []);
-  const money = (amount: number) => formatPrice(amount, currency);
-
-  /** Flipped by tapping the win-back notification. The sheet is usually still
-   * mounted when it happens, so this arrives as a change to a live screen
-   * rather than as a different screen being opened. */
-  const boosted = useBoost();
-  /**
-   * Whether an invite applies, decided by the server and cached locally.
-   *
-   * It wins over the win-back price because it is the larger discount, and
-   * offering someone the worse of two prices they have both earned is the sort
-   * of thing that gets noticed exactly once.
+   * Apple has no notion of "the same product, cheaper" — a discount is a
+   * different product. So each price is a separate offering in the RevenueCat
+   * dashboard, and the app asks for one by name instead of doing arithmetic on
+   * a constant and hoping App Store Connect agrees.
    */
   const { discounted } = useReferral();
-  const yearly = discounted
+  const boosted = useBoost();
+  const offeringId = discounted
+    ? OFFERINGS.invited
+    : boosted
+      ? OFFERINGS.boosted
+      : OFFERINGS.standard;
+  /** The printed figure for this tier, used only when there is no store. */
+  const printedYearly = discounted
     ? TIERS.invited.yearly
     : boosted
       ? TIERS.boosted.yearly
       : TIERS.standard.yearly;
+
+  /**
+   * The offering being sold, and the standard one to strike through against.
+   *
+   * Both are fetched: the saving percentage and the crossed-out figure have to
+   * compare a real price with another real price. Comparing a store price
+   * against a printed constant is how a sheet ends up claiming a 42% saving off
+   * a number nobody charges.
+   */
+  const [offering, setOffering] = useState<Offering | null>(null);
+  const [standard, setStandard] = useState<Offering | null>(null);
+  useEffect(() => {
+    if (!purchases.configured) return;
+    let live = true;
+    void Promise.all([
+      purchases.offering(offeringId),
+      offeringId === OFFERINGS.standard ? null : purchases.offering(OFFERINGS.standard),
+    ]).then(([earned, full]) => {
+      if (!live) return;
+      // Falls back to the standard offering rather than to the printed
+      // constants: a dashboard missing the `boosted` offering should sell at
+      // the ordinary price, not advertise a discount the store will refuse.
+      setOffering(earned ?? full);
+      setStandard(full ?? earned);
+    });
+    return () => {
+      live = false;
+    };
+  }, [offeringId]);
+
+  const yearlyPlan = offering?.yearly ?? null;
+  const monthlyPlan = offering?.monthly ?? null;
+  const currency = yearlyPlan?.product.currencyCode;
+
+  const money = (amount: number) => formatPrice(amount, currency);
+
+  /**
+   * The year's price, from the store when there is one.
+   *
+   * `display` is the store's own string — it knows where the symbol goes and
+   * which separator the locale uses, which hand-formatting gets wrong in half
+   * of Europe. The per-month figure has to be computed, so that one is
+   * formatted from the numeric price.
+   */
+  const yearlyAmount = yearlyPlan?.product.price ?? printedYearly;
+  const yearlyText = yearlyPlan?.product.display ?? money(printedYearly);
+  const monthlyAmount = monthlyPlan?.product.price ?? MONTHLY;
+  const monthlyText = monthlyPlan?.product.display ?? money(MONTHLY);
+  /** What the same year costs without the discount — the struck-through figure
+   * and the basis of every percentage on this sheet. */
+  const fullYearAmount = standard?.yearly?.product.price ?? TIERS.standard.yearly;
+
+  /**
+   * The headline percentage, from the store's own two prices.
+   *
+   * A year measured against twelve months at the monthly rate — which is what
+   * "save 48%" means on this sheet, and the only comparison that is true by
+   * construction. Computed from whatever the store reports, so raising the
+   * monthly price in App Store Connect moves the headline here rather than
+   * leaving it advertising a saving nobody gets.
+   *
+   * The shared value starts at the printed figure and is replaced the moment
+   * the fetch lands, so the climb the win-back animates always ends on a number
+   * the store will honour.
+   */
+  const savingOf = (yearPrice: number, monthPrice: number) =>
+    monthPrice > 0 ? Math.round((1 - yearPrice / (monthPrice * 12)) * 100) : 0;
+  const earnedSaving = savingOf(yearlyAmount, monthlyAmount);
+
 
   /** Springs in from slightly small. A number this size fading in reads as a
    * page loading; one that arrives with weight reads as a figure being put on
@@ -204,10 +265,24 @@ export function OfferPage() {
     },
   );
 
+  /**
+   * Adopt the store's figures when they arrive.
+   *
+   * Set rather than animated, and skipped once the win-back has run: prices
+   * landing a beat after mount is a fetch completing, not an offer improving,
+   * and animating it would spend the one climb this sheet has on a loading
+   * state. Guarded on `boosted` so it cannot overwrite the climb mid-flight.
+   */
+  useEffect(() => {
+    if (boosted) return;
+    savingValue.value = earnedSaving;
+    setShownSaving(earnedSaving);
+  }, [boosted, earnedSaving, savingValue]);
+
   useEffect(() => {
     if (!boosted) return;
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-    savingValue.value = withTiming(BOOSTED_SAVING, {
+    savingValue.value = withTiming(earnedSaving, {
       duration: BOOST_MS,
       // Fast out of the gate and easing into the new figure, so the climb has
       // somewhere to arrive rather than stopping dead on the last digit.
@@ -279,9 +354,19 @@ export function OfferPage() {
     if (busy) return;
     setNotice(null);
     setBusy(true);
-    const result = await purchases.buy(
-      tier === 'yearly' ? PRODUCTS.yearly : PRODUCTS.monthly,
-    );
+    // The plan object, not a product identifier. It came out of the same fetch
+    // that produced the price on screen, so the two cannot be for different
+    // things — which is the failure this replaced.
+    const plan = tier === 'yearly' ? yearlyPlan : monthlyPlan;
+    if (plan == null) {
+      setBusy(false);
+      // No plan means no store reached this sheet. Saying a charge failed would
+      // describe a transaction never attempted.
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+      setNotice('The App Store isn’t reachable right now. Try again in a moment.');
+      return;
+    }
+    const result = await purchases.buy(plan);
     setBusy(false);
 
     if (result.status === 'purchased') {
@@ -294,11 +379,23 @@ export function OfferPage() {
     if (result.status === 'cancelled') return;
     if (result.status === 'failed') {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
-      setNotice('That didn’t go through. No charge was made.');
+      setNotice(result.message);
       return;
     }
-    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-    close();
+    /**
+     * `unavailable`: no store was reached at all.
+     *
+     * This used to fire a *success* haptic and close the sheet — the app
+     * congratulating someone on a purchase that never happened, and unlocking
+     * on the way out. It only showed up where a store is genuinely absent, so
+     * it read as correct on a simulator, and would have shipped the moment a
+     * production build lost its RevenueCat key.
+     *
+     * The sheet now stays open and says so. Not an error, because nothing
+     * failed and nobody was charged; not a success either.
+     */
+    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+    setNotice('The App Store isn’t reachable right now. Try again in a moment.');
   };
 
   const restore = async () => {
@@ -397,9 +494,14 @@ export function OfferPage() {
         style={styles.tiers}>
         <TierRow
           title="Yearly"
-          note={`Billed yearly at ${money(yearly)}`}
-          price={`${money(yearly / 12)}/mo`}
-          was={boosted ? money(TIERS.standard.yearly / 12) : undefined}
+          note={`Billed yearly at ${yearlyText}`}
+          price={`${money(yearlyAmount / 12)}/mo`}
+          was={
+            // Only when there is something to strike through: a discount is a
+            // discount against the standard year, and if the two are the same
+            // number a crossed-out price is theatre.
+            yearlyAmount < fullYearAmount ? money(fullYearAmount / 12) : undefined
+          }
           selected={tier === 'yearly'}
           onPress={() => {
             Haptics.selectionAsync();
@@ -408,7 +510,7 @@ export function OfferPage() {
         />
         <TierRow
           title="Monthly"
-          price={`${money(MONTHLY)}/mo`}
+          price={`${monthlyText}/mo`}
           selected={tier === 'monthly'}
           onPress={() => {
             Haptics.selectionAsync();
@@ -440,7 +542,7 @@ export function OfferPage() {
           <Text style={[styles.terms, { color: meter.caption }]}>{notice}</Text>
         )}
         <Text style={[styles.terms, { color: meter.caption }]}>
-          {`Auto-renews at ${money(yearly)}/year until cancelled. Cancel at least 24 hours before the period ends in your App Store account settings.`}
+          {`Auto-renews at ${yearlyText}/year until cancelled. Cancel at least 24 hours before the period ends in your App Store account settings.`}
         </Text>
         <View style={styles.legalRow}>
           <Text

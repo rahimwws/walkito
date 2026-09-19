@@ -1,6 +1,9 @@
 export {
   ENTITLEMENT,
+  OFFERINGS,
   PRODUCTS,
+  type Offering,
+  type Plan,
   type Product,
   type Purchases,
   type PurchaseResult,
