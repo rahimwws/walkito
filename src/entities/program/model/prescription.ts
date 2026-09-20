@@ -17,7 +17,17 @@ export type Prescription = {
   holdSec?: number;
   tempo?: Tempo;
   /**
-   * What the row shows next to the title: "3 × 12", "3 × 30s".
+   * Worked one foot at a time, the dose covering both between them.
+   *
+   * Carried on the prescription rather than looked up from the catalogue at
+   * each call site, because every surface that prints a dose has to say the
+   * same thing about it. Without this the list printed "10 × 10s" for a
+   * one-foot stretch and for a two-foot one identically, and the reader had no
+   * way to tell which they were looking at.
+   */
+  perSide: boolean;
+  /**
+   * What the row shows next to the title: "3 × 12", "3 × 30s each foot".
    *
    * Built here rather than at the call site so every surface that prints a dose
    * prints the same string — Today's Tasks and the player cannot drift.
@@ -81,8 +91,22 @@ export function effectiveBlock(blockIndex: number, progressionOffset: number): n
   return Math.max(FIRST_LOADED_BLOCK, Math.min(blockIndex + offset, LAST_BLOCK));
 }
 
-/** "3 × 12", "3 × 30s", or "2 min" for a single held block. */
-function doseLabel(sets: number, reps?: number, holdSec?: number): string {
+/**
+ * The dose as a row prints it, and whether it covers one foot or two.
+ *
+ * `perSide` appends rather than dividing. The prescribed figures cover both
+ * feet together, and halving them to read "per foot" only works when they
+ * divide: ten ten-second holds split cleanly into five each, but three sets of
+ * thirty seconds do not, and "1.5 × 30s" is not a dose anybody can follow. So
+ * the numbers stay as prescribed and the line says what they span; the player
+ * is what turns that into a clock for each foot.
+ */
+function doseLabel(sets: number, reps?: number, holdSec?: number, perSide = false): string {
+  const both = perSide ? ' · both feet' : '';
+  return core(sets, reps, holdSec) + both;
+}
+
+function core(sets: number, reps?: number, holdSec?: number): string {
   if (reps != null) return `${sets} × ${reps}`;
   if (holdSec != null) {
     // One set of a hold is a duration and reads as one: a two-minute foot roll
@@ -108,11 +132,16 @@ export function heelRaisePrescription(
   if (blockIndex < FIRST_LOADED_BLOCK) return null;
   const step = HEEL_RAISES[effectiveBlock(blockIndex, progressionOffset)];
   if (step == null) return null;
+  // Both heel-raise variants are per-side in the catalogue, and this table is
+  // the one path that does not reach the catalogue to find out — so it is
+  // stated here rather than left to default to false and quietly print a
+  // two-foot dose for a one-foot exercise.
   return {
     sets: step.sets,
     reps: step.reps,
     tempo: HEEL_RAISE_TEMPO,
-    label: doseLabel(step.sets, step.reps),
+    perSide: true,
+    label: doseLabel(step.sets, step.reps, undefined, true),
   };
 }
 
@@ -150,6 +179,7 @@ export function prescriptionFor(
     defaultReps?: number;
     defaultHoldSec?: number;
     tempo?: Tempo;
+    perSide?: boolean;
   },
   blockIndex: number,
   progressionOffset = 0,
@@ -164,13 +194,15 @@ export function prescriptionFor(
   // flat minute for both.
   if (defaultSets == null && defaultHoldSec == null) return null;
   const sets = defaultSets ?? 1;
+  const perSide = exercise.perSide === true;
   return {
     sets,
     reps: defaultReps,
     holdSec: defaultHoldSec,
     tempo,
+    perSide,
     // A short-foot row is ten five-second holds, and "3 × 10" is what the user
     // counts. The hold length is technique, and it lives in the cue.
-    label: doseLabel(sets, defaultReps, defaultReps == null ? defaultHoldSec : undefined),
+    label: doseLabel(sets, defaultReps, defaultReps == null ? defaultHoldSec : undefined, perSide),
   };
 }
