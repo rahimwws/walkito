@@ -154,3 +154,73 @@ export function phaseAt(
   }
   return { phase: 'down', secondsLeft: Math.ceil(perRep - into), rep, set, done: false };
 }
+
+/** Which foot a per-side move is on. Neutral names: the app knows whether the
+ * pain is in one foot or both, never which foot, so it cannot say "the sore
+ * one". Both sides are worked regardless — training only the painful side is
+ * how the other one starts compensating. */
+export type Side = 'right' | 'left';
+
+export type SideReading = {
+  side: Side;
+  /** Whole seconds left on this side. */
+  secondsLeft: number;
+  /** True for the second half, so the caller can say "one more side" rather
+   * than leaving the user to guess whether the switch has happened. */
+  last: boolean;
+};
+
+/**
+ * When a per-side move hands over from the right foot to the left.
+ *
+ * Half the move, then snapped to a whole rep where there are reps to snap to.
+ * Eleven of the eighteen exercises are per-side — the stretches, the heel
+ * raises, the single-leg holds — and their prescribed dose covers both feet
+ * together. Running the whole of it without saying so left the user doing one
+ * foot for twice as long as intended, or splitting it by eye, which is the same
+ * as not prescribing it.
+ *
+ * Snapped because a tempo move cut at the midpoint hands over halfway through a
+ * rep: the calf is loaded, the clock says swap, and the honest thing to do with
+ * that instruction is ignore it. A rep boundary is a moment where changing feet
+ * is a real option.
+ */
+export function sideSwitchAt(totalSeconds: number, tempo?: Tempo | null): number {
+  const half = totalSeconds / 2;
+  if (tempo == null) return half;
+
+  const perRep = repSeconds(tempo);
+  if (perRep <= 0) return half;
+
+  // Nearest rep boundary, but never zero and never the whole move — either
+  // would leave one foot with no time at all.
+  const reps = Math.max(1, Math.round(half / perRep));
+  const snapped = reps * perRep;
+  return snapped >= totalSeconds ? half : snapped;
+}
+
+/**
+ * Which foot to be on, `elapsedSec` into a per-side move.
+ *
+ * Callers that are not per-side must not ask: there is no "both" reading here,
+ * because a move done on both feet at once has no side to report and a null
+ * would put the question in every render path rather than at the one place that
+ * knows.
+ */
+export function sideAt(
+  elapsedSec: number,
+  totalSeconds: number,
+  tempo?: Tempo | null,
+): SideReading {
+  const switchAt = sideSwitchAt(totalSeconds, tempo);
+  const elapsed = Math.max(0, elapsedSec);
+
+  if (elapsed < switchAt) {
+    return { side: 'right', secondsLeft: Math.ceil(switchAt - elapsed), last: false };
+  }
+  return {
+    side: 'left',
+    secondsLeft: Math.max(0, Math.ceil(totalSeconds - elapsed)),
+    last: true,
+  };
+}

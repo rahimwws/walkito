@@ -45,7 +45,15 @@ import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../config/exercise-clips';
 import { SessionDoneSheet } from './session-done-sheet';
-import { doseSeconds, phaseAt, type Phase, type PhaseReading } from '../model/tempo';
+import {
+  doseSeconds,
+  phaseAt,
+  sideAt,
+  type Phase,
+  type PhaseReading,
+  type Side,
+  type SideReading,
+} from '../model/tempo';
 import { SessionTimerActivity, type SessionActivityProps } from './session-activity';
 
 /**
@@ -134,6 +142,12 @@ const PHASE_LABEL: Readonly<Record<Phase, string>> = {
   down: 'Down',
 };
 
+/** Which foot, said the way you would say it out loud while balancing. */
+const SIDE_LABEL: Readonly<Record<Side, string>> = {
+  right: 'Right foot',
+  left: 'Left foot',
+};
+
 /** The tempo a move runs at, with the reps and sets it runs for. The three
  * travel together because none of them times anything on its own. */
 type Cadence = { tempo: Tempo; reps: number; sets: number };
@@ -146,6 +160,16 @@ type MovePlan = {
   /** Set only for a move the program gives a per-rep tempo — in this catalogue,
    * the two heel-raise variants and nothing else. */
   cadence: Cadence | null;
+  /**
+   * Worked one foot at a time — eleven of the eighteen.
+   *
+   * The prescribed dose covers both feet together, so the move runs half on one
+   * and half on the other. Read from the catalogue, which has carried this flag
+   * since the start and had nothing reading it: the player ran the full dose
+   * with no mention of feet, which left the user either doing one foot for
+   * twice as long as prescribed or splitting it by eye.
+   */
+  perSide: boolean;
 };
 
 /**
@@ -175,6 +199,7 @@ function planMove(title: string, blockIndex: number, progressionOffset: number):
     // Whole seconds, because the readout is formatted as two pairs of digits.
     seconds: Math.max(1, Math.round(seconds ?? SECONDS_PER_MOVE)),
     cadence,
+    perSide: exercise?.perSide === true,
   };
 }
 
@@ -483,10 +508,49 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
       ? phaseAt(elapsed, current.cadence.tempo, current.cadence.reps, current.cadence.sets)
       : null;
 
+  /**
+   * Which foot, and how long is left on it.
+   *
+   * Null for a move done on both feet at once, which is the honest absence: a
+   * third "both" reading would put the question into every render path instead
+   * of at the one place that knows.
+   */
+  const side: SideReading | null =
+    current?.perSide === true
+      ? sideAt(elapsed, moveSeconds, current.cadence?.tempo ?? null)
+      : null;
+
   /** What is left of the move itself, whatever the big number happens to be
    * counting. This is what "the move is over" means, and the only thing that
    * gates Continue. */
   const moveLeft = Math.max(0, moveSeconds - elapsed);
+
+  /**
+   * The handover, announced.
+   *
+   * A label that quietly changes from "Right foot" to "Left foot" is a label
+   * nobody reads: the user is balancing with the phone against a wall, looking
+   * at the demonstration rather than at the caption. The haptic is what makes
+   * the switch an event, and it is the same success notification the end of a
+   * session uses, because it means the same thing — that part is finished.
+   *
+   * Keyed on the side rather than fired from the clock, so it happens exactly
+   * once per change however many frames land on the boundary. `undefined` on
+   * the first run means a move that starts on the right does not buzz for
+   * starting where it was always going to start.
+   */
+  const announcedSide = useRef<Side | undefined>(undefined);
+  useEffect(() => {
+    const now = side?.side;
+    if (now == null) {
+      announcedSide.current = undefined;
+      return;
+    }
+    if (announcedSide.current != null && announcedSide.current !== now) {
+      void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+    }
+    announcedSide.current = now;
+  }, [side?.side]);
 
   /**
    * The big number.
@@ -792,11 +856,32 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
     ? { text: 'Done.', spoken: 'Done' }
     : phase != null && current?.cadence != null
       ? {
-          text: `${PHASE_LABEL[phase.phase]} · Rep ${phase.rep} of ${current.cadence.reps}`,
+          // The foot leads. It is an instruction — something to act on — where
+          // the rep counter is only context, and on a per-side move getting the
+          // foot wrong wastes the whole set.
+          text: [
+            side == null ? null : SIDE_LABEL[side.side],
+            `${PHASE_LABEL[phase.phase]} · Rep ${phase.rep} of ${current.cadence.reps}`,
+          ]
+            .filter(Boolean)
+            .join(' · '),
           // Spoken as a sentence rather than as the line: a middot is read out
           // as nothing at all, which leaves "up rep four of twelve".
-          spoken: `${PHASE_LABEL[phase.phase]}, rep ${phase.rep} of ${current.cadence.reps}`,
+          spoken: [
+            side == null ? null : SIDE_LABEL[side.side],
+            `${PHASE_LABEL[phase.phase]}, rep ${phase.rep} of ${current.cadence.reps}`,
+          ]
+            .filter(Boolean)
+            .join('. '),
         }
+      : side != null
+        ? {
+            // A per-side move with no tempo — a stretch, a hold. The foot is
+            // the only thing this line has to say, and it is the thing the
+            // screen exists to say.
+            text: SIDE_LABEL[side.side],
+            spoken: SIDE_LABEL[side.side],
+          }
       : moveCount > 1
         ? {
             text: `Exercise ${step + 1}/${moveCount}`,
