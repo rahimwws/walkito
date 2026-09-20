@@ -12,13 +12,13 @@ export type SyncGuide = {
    * page when it is not installed — which the OS does for us. */
   url: string;
   /**
-   * Null until a real recording of this app's settings screen exists.
+   * A real recording of that app's own settings, or null.
    *
-   * This used to point at the calf-raise exercise clip as a stand-in, which was
-   * wrong on its own terms: a foot stretch playing under the words "turn on
-   * Health sync" teaches nothing and reads as a bug. The three written steps
-   * carry the screen on their own, and an absent card is honest where a
-   * borrowed one is not.
+   * Null rather than a stand-in. This used to point at the calf-raise exercise
+   * clip, which was wrong on its own terms: a foot stretch playing under the
+   * words "turn on Health sync" teaches nothing and reads as a bug. The written
+   * steps carry the screen alone, and an absent card is honest where a borrowed
+   * one is not.
    */
   clip: VideoSource | null;
 };
@@ -36,13 +36,17 @@ export const SYNC_GUIDES: Readonly<Record<WatchBrand, SyncGuide>> = {
   },
   whoop: {
     label: 'Whoop',
+    // Read off the recording rather than from memory. The first step said "go
+    // to your profile", and the path in the clip is the More tab — a written
+    // step that disagrees with the video playing beside it is worse than no
+    // video, because the user trusts the words and then cannot find the screen.
     steps: [
-      'Open Whoop and go to your profile.',
-      'Tap App Settings, then Integrations.',
-      'Turn on Apple Health.',
+      'Open Whoop and tap More.',
+      'Open App Settings, then Integrations.',
+      'Tap Apple Health and turn it on.',
     ],
     url: 'https://apps.apple.com/app/whoop/id1180012238',
-    clip: null,
+    clip: require('@assets/guides/whoop-apple-health.mp4'),
   },
 };
 

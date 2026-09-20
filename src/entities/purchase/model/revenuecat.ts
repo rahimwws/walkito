@@ -56,6 +56,33 @@ function entitledIn(info: CustomerInfo): boolean {
 }
 
 /**
+ * Says why a completed purchase did not unlock anything.
+ *
+ * The check above is strict on purpose — no entitlement, no access — but a
+ * strict check with no diagnosis is a dead end: the store reports success, the
+ * app says no, and nothing on either side names the entitlement they disagree
+ * about. That is a dashboard hunt, and it is the first thing that happens to
+ * anyone wiring RevenueCat up for the first time.
+ *
+ * Development only. It prints what the store actually returned against what the
+ * app asked for, which is almost always enough to see the mismatch at a glance.
+ */
+function explainMissingEntitlement(info: CustomerInfo): void {
+  if (!__DEV__) return;
+  const active = Object.keys(info.entitlements.active);
+  const known = Object.keys(info.entitlements.all);
+  console.error(
+    `[purchases] The purchase completed but granted no "${ENTITLEMENT}" entitlement.\n` +
+      `  bought        : ${info.activeSubscriptions.join(', ') || '(nothing active)'}\n` +
+      `  entitlements  : active [${active.join(', ') || 'none'}], known [${known.join(', ') || 'none'}]\n` +
+      `  expected      : "${ENTITLEMENT}"\n` +
+      'Attach the products to an entitlement with that identifier in the RevenueCat ' +
+      'dashboard (Product catalog → Entitlements), or change ENTITLEMENT in ' +
+      'entities/purchase/model/purchase.ts to match the one you created.',
+  );
+}
+
+/**
  * Whether a thrown purchase error was the user closing Apple's sheet.
  *
  * RevenueCat rejects on cancellation rather than resolving, so a `try` that
@@ -162,12 +189,14 @@ export const revenueCatStore: Store = {
       // returning. A purchase that completes without granting the entitlement
       // is a misconfigured dashboard, and saying "purchased" there would leave
       // the user paid-up and still looking at the paywall.
-      return entitledIn(customerInfo)
-        ? { status: 'purchased' }
-        : {
-            status: 'failed',
-            message: 'The purchase went through but didn’t unlock. Try Restore.',
-          };
+      if (entitledIn(customerInfo)) return { status: 'purchased' };
+      // Bought, but nothing was granted. Almost always a dashboard that has no
+      // entitlement by this name, or products not attached to it.
+      explainMissingEntitlement(customerInfo);
+      return {
+        status: 'failed',
+        message: 'The purchase went through but didn’t unlock. Try Restore.',
+      };
     } catch (error) {
       if (wasCancelled(error)) return { status: 'cancelled' };
       return { status: 'failed', message: messageFrom(error) };

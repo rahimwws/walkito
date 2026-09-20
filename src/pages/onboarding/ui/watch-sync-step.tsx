@@ -7,12 +7,26 @@ import { useColorScheme } from '@/shared/lib/theme';
 
 import { SYNC_GUIDES, type WatchBrand } from '../config/watch-guides';
 
-/** Same proportions the session player uses for its demonstration card. The
- * two screens are doing the same job — one loop of video showing where to put
- * your hands — so they are the same object. */
+/**
+ * The session player's demonstration card, in the one respect that differs.
+ *
+ * Same margin, same radius, same silent autoplaying loop — the two screens are
+ * doing the same job, so they are the same object. What cannot carry over is
+ * the square: the player's card crops a body shot to a square with `cover`,
+ * which is harmless because the subject sits in the middle of frame. This clip
+ * is a recording of a phone screen, and squaring it would throw away the top
+ * and bottom of the very UI the step is pointing at.
+ *
+ * So the card takes the clip's own shape. Driven by height rather than width,
+ * because height is the scarce dimension on a step that also carries three
+ * lines of instruction and a button.
+ */
 const CARD_MARGIN = 20;
 const CARD_MAX_HEIGHT_FRACTION = 0.46;
 const CARD_RADIUS = 32;
+/** 600 × 1304 — the encoded clip. Kept as one ratio so the card cannot drift
+ * out of step with the footage and start letterboxing. */
+const CLIP_ASPECT = 600 / 1304;
 
 export type WatchSyncStepProps = {
   brand: WatchBrand;
@@ -63,7 +77,12 @@ export function WatchSyncStep({ brand }: WatchSyncStepProps) {
     player.play();
   }, [player, guide.clip]);
 
-  const cardSize = Math.min(width - CARD_MARGIN * 2, height * CARD_MAX_HEIGHT_FRACTION);
+  const cardHeight = Math.min(
+    height * CARD_MAX_HEIGHT_FRACTION,
+    // Never wider than the margins allow, however tall the display is.
+    (width - CARD_MARGIN * 2) / CLIP_ASPECT,
+  );
+  const cardWidth = cardHeight * CLIP_ASPECT;
 
   return (
     <View style={styles.root}>
@@ -82,11 +101,14 @@ export function WatchSyncStep({ brand }: WatchSyncStepProps) {
           screen that is otherwise three clear instructions reads as a failed
           download, which is worse than the instructions standing alone. */}
       {guide.clip != null && (
-        <View style={[styles.card, { width: cardSize, height: cardSize }]}>
+        <View style={[styles.card, { width: cardWidth, height: cardHeight }]}>
           <VideoView
             player={player}
             style={StyleSheet.absoluteFill}
-            contentFit="cover"
+            // Contain, not cover. The card already matches the clip's aspect
+            // ratio, so the two agree — and if a future recording does not,
+            // letterboxing is a visible mistake where a crop is a silent one.
+            contentFit="contain"
             nativeControls={false}
             // A demonstration, not media. Neither belongs on a screen that is
             // one step of a form.
