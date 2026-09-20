@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy — Walkito</title>
+    <meta name="description" content="What Walkito stores, and where." />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="wash" aria-hidden="true"></div>
+
+    <header class="shell masthead">
+      <a class="brand" href="index.html">
+        <img src="assets/icon.png" alt="" />
+        Walkito
+      </a>
+      <nav class="nav">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <a class="download" href="index.html#get">
+        Download App
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10.25" stroke="currentColor" stroke-width="1.5" />
+          <path
+            d="M12 7.25v9.5m0 0 3.25-3.25M12 16.75 8.75 13.5"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+    </header>
+
+    <main class="shell prose">
+      <h1>Privacy</h1>
+
+      <!--
+        Written from what the code actually does, not from a template: the
+        HealthKit scopes are the ones in `READ_TYPES`, the local store is MMKV,
+        and the three things that leave the device are the three services the
+        app genuinely talks to. It is still a legal document and has not been
+        reviewed by anyone qualified to sign it off — hence the notice below,
+        which should be deleted only by whoever does.
+      -->
+      <p class="draft">
+        <b>Draft — needs legal review before launch.</b> The technical claims
+        here were taken from the source and are accurate as written. The
+        framing, the retention periods and the statutory language are not a
+        lawyer's work and should not ship as they are.
+      </p>
+
+      <p class="updated">Last updated: 17 September 2026</p>
+
+      <h2>The short version</h2>
+      <p>
+        Your plan, your pain log and your history live on your phone. They are
+        not uploaded, and there is no account to hold them. Three things leave
+        the device, all of them optional, and none of them is your health data.
+      </p>
+
+      <h2>What stays on the phone</h2>
+      <p>
+        Everything the plan is built from: the morning pain you log, the
+        sessions you finish, the exercises you did, your name, your answers from
+        onboarding, and the health figures summarised below. These are kept in
+        the app's own storage on the device and are removed when you delete the
+        app.
+      </p>
+
+      <h2>Apple Health</h2>
+      <p>
+        With your permission Walkito reads walking asymmetry, walking speed,
+        step count, resting heart rate and sleep analysis, and writes completed
+        sessions back as workouts and mindful minutes.
+      </p>
+      <p>
+        These are read on the device and summarised there. <b>Health data is
+        never uploaded and never leaves your phone.</b> You can withdraw any of
+        these permissions at any time in iOS Settings → Health → Data Access →
+        Walkito; the app keeps working, and the signals that relied on the
+        withdrawn type stop appearing.
+      </p>
+
+      <h2>What leaves the device</h2>
+      <ul>
+        <li>
+          <b>Purchases.</b> Handled by the App Store through RevenueCat, which
+          receives an anonymous identifier and your subscription status. No
+          health data is sent.
+        </li>
+        <li>
+          <b>Notification address.</b> If you turn on notifications, the device's
+          push token is stored so an invite you sent can tell you when it is
+          used. The reminders themselves are scheduled on the phone and need no
+          server.
+        </li>
+        <li>
+          <b>Sign in with Apple and invite codes.</b> Only if you use them. Apple
+          supplies an identifier; you choose whether to share an email address
+          with it.
+        </li>
+      </ul>
+
+      <h2>What we do not do</h2>
+      <p>
+        No advertising, no advertising identifiers, no third-party analytics on
+        your health, and nothing about your body is sold or shared. There is no
+        profile of you anywhere but on your own phone.
+      </p>
+
+      <h2>Deleting everything</h2>
+      <p>
+        Deleting the app removes the plan, the pain log and every stored answer
+        with it — none of it is held anywhere else. To remove a purchase record
+        or a push token, write to
+        <a href="mailto:hello@walkito.app">hello@walkito.app</a> and we will
+        delete them.
+      </p>
+
+      <h2>Not medical advice</h2>
+      <p>
+        Walkito is a screening and exercise program. It does not diagnose, it
+        does not treat, and it is not a substitute for a clinician.
+      </p>
+
+      <h2>Contact</h2>
+      <p><a href="mailto:hello@walkito.app">hello@walkito.app</a></p>
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        <p>© 2026 Walkito</p>
+        <nav>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

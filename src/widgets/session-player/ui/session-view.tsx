@@ -5,7 +5,7 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import * as Haptics from 'expo-haptics';
 import { useVideoPlayer, VideoView } from 'expo-video';
-import type { LiveActivity } from 'expo-widgets';
+import { after, type LiveActivity } from 'expo-widgets';
 import { ClockIcon } from 'phosphor-react-native';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
@@ -87,6 +87,11 @@ const CLOCK_ROLL_SECONDS = 0.3;
 
 /** The lane the Continue button keeps for itself under the expanded card. */
 const CONTINUE_BLOCK = 92;
+
+/** How long the finished session stays on the Lock Screen. Half a minute reads
+ * as the end of something; the four hours the default policy gives reads as a
+ * bug, which is what it looked like. */
+const FINISHED_LINGER_MS = 30_000;
 
 /** Corner radius the card relaxes to once it is nearly the whole screen — the
  * same curve at 350pt reads far rounder than it does at 150. */
@@ -607,8 +612,20 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
     [move, moveCount, step, moveSeconds, progress],
   );
 
-  const endActivity = useCallback((final?: SessionActivityProps) => {
-    activity.current?.end(final ? 'default' : 'immediate', final);
+  /**
+   * Take the session off the Lock Screen.
+   *
+   * With no final state, immediately — walking out of a session is the one case
+   * where a countdown left up would be counting toward something abandoned.
+   * With one, after `lingerMs`, so the last frame is readable without the pill
+   * outliving the interest in it.
+   */
+  const endActivity = useCallback((final?: SessionActivityProps, lingerMs?: number) => {
+    if (final != null && lingerMs != null) {
+      activity.current?.end(after(new Date(Date.now() + lingerMs)), final);
+    } else {
+      activity.current?.end('immediate', final);
+    }
     activity.current = null;
     setOnLockScreen(false);
   }, []);
@@ -653,10 +670,16 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
     setFinished(true);
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
     // A countdown that reaches zero does not take itself off the Lock Screen —
-    // ActivityKit has no idea the session is over. It is left showing a frozen
-    // 00:00 for the default window, which is the one state where lingering is
-    // the useful thing to do.
-    endActivity(activitySnapshot(true));
+    // ActivityKit has no idea the session is over.
+    //
+    // It used to end on the `'default'` policy, which is a four-hour window: a
+    // pill frozen at 0:00 sat in the Dynamic Island all afternoon, and the only
+    // thing it could tell anyone was that the app had failed to tidy up. A
+    // short window instead — long enough that somebody who finished with the
+    // phone face-down still sees it, short enough that it is gone before it
+    // becomes furniture. The in-app celebration is the acknowledgement now;
+    // this is only the echo of it.
+    endActivity(activitySnapshot(true), FINISHED_LINGER_MS);
     // Filed in Health here and nowhere else: this is the only branch that means
     // the last move actually ran out. Opening the player writes nothing, and
     // leaving by the back arrow writes nothing — a workout logged for a session

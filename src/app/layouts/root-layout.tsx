@@ -11,6 +11,7 @@ import {
   usePendingOfferPresenter,
   useHealthPipeline,
   useNotificationScheduler,
+  useLiveActivityCleanup,
   usePurchases,
   useReferralSync,
   useQuickActions,
@@ -63,6 +64,10 @@ export function RootLayout() {
   // simulator this resolves to "entitled" without contacting anything — see the
   // note in `entities/purchase/model/store.ts`.
   usePurchases();
+  // Clears a Live Activity left pinned to the Dynamic Island by a crash. At the
+  // root because the earliest moment is the point — the player swept these too,
+  // but only when a new session began.
+  useLiveActivityCleanup();
   // Reads the invite status on launch and listens for the push that says
   // someone used your code. At the root because that push can be what launches
   // the app — see the note inside.
