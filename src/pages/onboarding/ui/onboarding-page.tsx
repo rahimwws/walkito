@@ -32,7 +32,6 @@ import {
   redeem,
   type RedeemResult,
 } from '@/entities/referral';
-import { setBilateral } from '@/entities/health';
 import { firstName, setProfileName } from '@/entities/profile';
 import { completeOnboarding, signInWithApple } from '@/entities/session';
 import { Glow } from '@/shared/ui/glow';
@@ -487,13 +486,6 @@ const CONFIRM_MS = 900;
 
   const setAnswer = (value: Answer) => {
     setAnswers((prev) => ({ ...prev, [step.key]: value }));
-    // Recorded as it is given, not gathered at the end. The health pipeline
-    // recomputes in the background with no React tree to ask, so the answer has
-    // to already be in storage by the time it runs — and this one decides
-    // whether an entire family of signals is allowed to speak at all.
-    if (step.key === 'heels' && Array.isArray(value)) {
-      setBilateral(value.includes('both'));
-    }
   };
 
   const ctaLabel = (() => {

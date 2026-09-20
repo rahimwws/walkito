@@ -8,6 +8,8 @@ import ChartIncreaseIcon from '@hugeicons/core-free-icons/ChartIncreaseIcon';
 import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
 import FlashIcon from '@hugeicons/core-free-icons/FlashIcon';
 import FootprintsIcon from '@hugeicons/core-free-icons/FootprintsIcon';
+
+import { chose } from './answers';
 import Moon02Icon from '@hugeicons/core-free-icons/Moon02Icon';
 import Route02Icon from '@hugeicons/core-free-icons/Route02Icon';
 import ShieldEnergyIcon from '@hugeicons/core-free-icons/ShieldEnergyIcon';
@@ -76,6 +78,7 @@ type StepBase = {
    */
   skipWhen?: (answers: Readonly<Record<string, unknown>>) => boolean;
 };
+
 
 /**
  * The shapes a screen can take.
@@ -366,21 +369,6 @@ export const STEPS: readonly OnboardingStep[] = [
     ],
   },
   {
-    kind: 'choice',
-    key: 'heels',
-    act: 2,
-    title: 'One foot or both?',
-    // Not a detail. Roughly a third of plantar heel pain is bilateral, and the
-    // gait signal the app leans on is asymmetry — which a symmetric problem
-    // cannot produce. Without this answer that feature would silently never
-    // fire for those users and they would have no way to know why.
-    blurb: 'It changes which signals mean anything for you.',
-    options: [
-      { value: 'one', label: 'One foot', icon: FootprintsIcon, accent: 'teal' },
-      { value: 'both', label: 'Both feet', icon: FootprintsIcon, accent: 'violet' },
-    ],
-  },
-  {
     kind: 'health',
     key: 'health',
     act: 2,
@@ -415,7 +403,7 @@ export const STEPS: readonly OnboardingStep[] = [
     // wired, and someone with no watch has nothing to set up — showing either
     // of them a how-to for an app they do not have is a screen that reads as
     // the flow not having listened.
-    skipWhen: (answers) => answers.watch !== 'garmin' && answers.watch !== 'whoop',
+    skipWhen: (answers) => !chose(answers, 'watch', 'garmin', 'whoop'),
   },
   {
     kind: 'notify',

@@ -194,6 +194,20 @@ export function recomputeSignals(
 /** Records the onboarding answer. Suppresses every asymmetry signal when both
  * heels hurt: a symmetric problem cannot produce an asymmetric gait, so the
  * rung would silently never fire and the user would have no way to know why. */
+/**
+ * Whether the pain is in both heels, which silences every asymmetry signal.
+ *
+ * Nothing calls this any more. The onboarding question that fed it — "One foot
+ * or both?" — was removed, so the flag sits at its default of false and the
+ * asymmetry signals stay switched on for everyone.
+ *
+ * That default is the permissive one, and it is the wrong one for roughly a
+ * third of people with plantar heel pain: a symmetric problem cannot produce
+ * asymmetry, so those users get a family of signals that can only ever report
+ * nothing. Kept rather than deleted because the fix is to ask again somewhere
+ * quieter — a settings row, or inferred from the data — not to lose the
+ * mechanism.
+ */
 export function setBilateral(bilateral: boolean): void {
   if (cache.bilateral === bilateral) return;
   commit({ ...cache, bilateral });

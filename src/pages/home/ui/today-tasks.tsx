@@ -23,6 +23,7 @@ import {
   hoursBaseline,
   hoursOnFeetOn,
   kindFor,
+  logFor,
   painAverage,
   painOn,
   programState,
@@ -30,12 +31,14 @@ import {
   useLogsVersion,
   writeLog,
   useProgramState,
+  type Prescription,
   type ExerciseCategory,
   type ProgramDay,
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { PROGRAM_MS } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
+import { doseSeconds } from '@/widgets/session-player';
 import { SessionView } from '@/widgets/session-player';
 
 /** The mascot, mid-stride. It belongs to this block rather than to the screen:
@@ -149,10 +152,36 @@ function tasksForToday(): { tasks: readonly Task[]; retest: boolean } {
       id: exercise.id,
       title: exercise.title,
       category: CATEGORY_KEYS[exercise.category],
-      chip: prescription != null ? `${resolved.minutes} min` : undefined,
+      // This exercise's length, not the session's. It used to print
+      // `resolved.minutes`, which is how long the whole list takes — so a
+      // hundred-second stretch, a ninety-second one and a set of ten all
+      // claimed seven minutes each, and the three of them together claimed
+      // twenty-one.
+      chip: chipFor(prescription),
       dose: prescription?.label,
     })),
   };
+}
+
+/**
+ * How long one exercise takes, as the chip prints it.
+ *
+ * Its own length, and only its own. The chip used to carry the whole session's
+ * minutes on every row, so three exercises adding up to seven minutes each
+ * claimed seven — twenty-one between them, against a session the same screen
+ * called seven.
+ *
+ * `doseSeconds` is the arithmetic the player already uses for the same
+ * question, so the chip and the countdown cannot disagree. A dose it cannot
+ * measure — counted work with neither a tempo nor a hold, fifteen ankle rocks —
+ * gets no chip rather than a guess, which is the same thing the player does
+ * with it.
+ */
+function chipFor(prescription: Prescription | null | undefined): string | undefined {
+  const seconds = doseSeconds(prescription ?? null);
+  if (seconds == null || seconds <= 0) return undefined;
+  if (seconds < 60) return `${Math.round(seconds)}s`;
+  return `${Math.round(seconds / 60)} min`;
 }
 
 /**
@@ -167,7 +196,6 @@ export function TodayTasks() {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
-  const [done, setDone] = useState<readonly string[]>([]);
   /** Which task's player is up. The task itself is the state — there is nothing
    * to know about the sheet the task does not already say. */
   const [open, setOpen] = useState<Task | null>(null);
@@ -187,6 +215,26 @@ export function TodayTasks() {
    */
   const logsVersion = useLogsVersion();
   const state = useProgramState();
+
+  /**
+   * Which tasks are ticked, read from the day log rather than held here alone.
+   *
+   * It used to be `useState([])`, which made the writes one-way: `record` wrote
+   * every tick through to the log, and nothing ever read it back. Leaving Home
+   * and returning — or finishing a session in the player — emptied the ticks on
+   * screen while the streak, the path and the score all counted the day as
+   * done. The list disagreed with every other surface about what had happened
+   * today, and it was the only one anybody was looking at.
+   *
+   * Derived, so there is one answer. `useLogsVersion` below is what re-runs it.
+   */
+  const done = useMemo<readonly string[]>(
+    () => logFor(currentDay())?.exercisesDone ?? [],
+    // The log map is mutated in place, so the version is the only thing that
+    // can say it moved.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [logsVersion],
+  );
   const { tasks, retest } = useMemo(() => {
     return tasksForToday();
     // Both are versions rather than inputs — the resolver reads the log and the
@@ -221,7 +269,6 @@ export function TodayTasks() {
    * completed by opening it.
    */
   const record = (next: readonly string[]) => {
-    setDone(next);
     writeLog(currentDay(), {
       exercisesDone: [...next],
       sessionCompleted: tasks.length > 0 && next.length >= tasks.length,
@@ -230,6 +277,17 @@ export function TodayTasks() {
 
   const finish = (id: string) =>
     record(done.includes(id) ? done : [...done, id]);
+
+  /**
+   * Everything on today's list is ticked.
+   *
+   * Worth a line of its own. Without one the finished list is a column of
+   * struck-through text that looks the same as a list nobody has started —
+   * every row greyed, nothing saying which of the two it is. It is also the
+   * only place the app can answer "am I done?", which is the question somebody
+   * opens it to ask on the evening of a day they already trained.
+   */
+  const allDone = tasks.length > 0 && done.length >= tasks.length;
 
   return (
     <View style={styles.root}>
@@ -246,6 +304,21 @@ export function TodayTasks() {
           resizeMode="contain"
         />
       </View>
+
+      {/* Above the list, not instead of it. The rows stay readable — somebody
+          checking what they did today should be able to see it, and hiding the
+          work behind a tick would make the screen forget the session the
+          moment it ended. */}
+      {allDone && (
+        <View style={[styles.allDone, { backgroundColor: meter.track }]}>
+          <Text style={[styles.allDoneTitle, { color: meter.positive }]}>
+            Done for today.
+          </Text>
+          <Text style={[styles.allDoneBlurb, { color: meter.caption }]}>
+            Tomorrow&apos;s session unlocks in the morning. Nothing else is needed today.
+          </Text>
+        </View>
+      )}
 
       <View style={styles.list}>
         {/* A day with nothing on it is a real answer, not a failure to load.
@@ -451,6 +524,15 @@ const styles = StyleSheet.create({
     fontFamily: fonts.heavy,
     letterSpacing: -0.6,
   },
+  allDone: {
+    borderRadius: 20,
+    borderCurve: 'continuous',
+    paddingVertical: 14,
+    paddingHorizontal: 16,
+    marginBottom: 14,
+  },
+  allDoneTitle: { fontSize: 17, fontFamily: fonts.bold, letterSpacing: -0.3 },
+  allDoneBlurb: { fontSize: 14, lineHeight: 19, fontFamily: fonts.regular, marginTop: 3 },
   list: {
     marginTop: 10,
   },
