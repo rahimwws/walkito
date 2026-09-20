@@ -876,18 +876,27 @@ export function SessionView({ day, onBack, moves: override, onFinish }: SessionV
         }
       : side != null
         ? {
-            // A per-side move with no tempo — a stretch, a hold. The foot is
-            // the only thing this line has to say, and it is the thing the
-            // screen exists to say.
-            text: SIDE_LABEL[side.side],
-            spoken: SIDE_LABEL[side.side],
+            // A per-side move with no tempo — a stretch, a hold. The foot
+            // leads, and the position in the session follows it where there is
+            // one. Showing the foot *instead* of the counter dropped it from
+            // eleven of the eighteen exercises, which is most of a session
+            // spent unable to tell how much of it is left.
+            text: [SIDE_LABEL[side.side], moveCount > 1 ? `Exercise ${step + 1}/${moveCount}` : null]
+              .filter(Boolean)
+              .join(' · '),
+            spoken: [
+              SIDE_LABEL[side.side],
+              moveCount > 1 ? `exercise ${step + 1} of ${moveCount}` : null,
+            ]
+              .filter(Boolean)
+              .join('. '),
           }
-      : moveCount > 1
-        ? {
-            text: `Exercise ${step + 1}/${moveCount}`,
-            spoken: `Exercise ${step + 1} of ${moveCount}`,
-          }
-        : null;
+        : moveCount > 1
+          ? {
+              text: `Exercise ${step + 1}/${moveCount}`,
+              spoken: `Exercise ${step + 1} of ${moveCount}`,
+            }
+          : null;
 
   /**
    * Whether this is the day the program announces a change of load.
