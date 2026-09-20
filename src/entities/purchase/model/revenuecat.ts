@@ -51,8 +51,41 @@ function announce(next: boolean) {
   listeners.forEach((fire) => fire());
 }
 
+/**
+ * Whether this customer has access.
+ *
+ * The named entitlement first, then *any* active entitlement.
+ *
+ * The fallback is not laxity. This app sells one level of access — see the note
+ * on `ENTITLEMENT` — so an active entitlement under any name means the same
+ * thing: somebody paid, and RevenueCat says the purchase is live. There is no
+ * second tier to be confused with, and no way to hold an active entitlement
+ * without a transaction behind it.
+ *
+ * What it buys is that a dashboard rename cannot lock a paying customer out of
+ * the app they are paying for. That is not hypothetical here: the dashboard
+ * holds `waltkito_pro` and `premium`, and the app was asking for `pro` — every
+ * purchase completed and nothing unlocked. A constant in the bundle and a
+ * string typed into a web form will drift, and when they do the failure should
+ * be a warning in a log rather than a refund request.
+ *
+ * Development still complains, loudly, so the drift gets fixed rather than
+ * absorbed forever.
+ */
 function entitledIn(info: CustomerInfo): boolean {
-  return info.entitlements.active[ENTITLEMENT] != null;
+  if (info.entitlements.active[ENTITLEMENT] != null) return true;
+
+  const other = Object.keys(info.entitlements.active);
+  if (other.length === 0) return false;
+
+  if (__DEV__) {
+    console.warn(
+      `[purchases] Unlocked on "${other.join('", "')}" — but ENTITLEMENT is "${ENTITLEMENT}", ` +
+        'which the store did not return. Set ENTITLEMENT in ' +
+        'entities/purchase/model/purchase.ts to the identifier the dashboard actually uses.',
+    );
+  }
+  return true;
 }
 
 /**

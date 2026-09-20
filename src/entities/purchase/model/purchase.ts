@@ -158,6 +158,17 @@ export const PRODUCTS = {
   monthly: 'walkito.monthly',
 } as const;
 
-/** The identifier configured in the RevenueCat dashboard. One entitlement for
- * the whole app: there are no tiers of access here, only tiers of billing. */
-export const ENTITLEMENT = 'pro';
+/**
+ * The identifier configured in the RevenueCat dashboard.
+ *
+ * One entitlement for the whole app: there are no tiers of access here, only
+ * tiers of billing. That is also why the adapter treats *any* active
+ * entitlement as access — with a single tier there is nothing to confuse it
+ * with, and a name that drifts out of step with the dashboard should not lock
+ * out someone who has paid. This constant is what the app asks for first, and
+ * what the development warning names when the store answers with something
+ * else.
+ *
+ * Must match the dashboard. Product catalog → Entitlements.
+ */
+export const ENTITLEMENT = 'premium';
