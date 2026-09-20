@@ -85,8 +85,18 @@ describe('the score is total and honest', () => {
 
 describe('the plan steps back, never forward', () => {
   test('an offset walks the heel raise to the previous block', () => {
-    expect(heelRaisePrescription(3, 0)?.label).toBe('4 × 10');
-    expect(heelRaisePrescription(3, -1)?.label).toBe('3 × 12');
+    // Asserted on the dose, not on the printed label. This used to compare the
+    // string, so appending "· both feet" to it broke a test about progression —
+    // the numbers are what walking back a block changes, and the wording beside
+    // them is presentation.
+    expect(heelRaisePrescription(3, 0)).toMatchObject({ sets: 4, reps: 10 });
+    expect(heelRaisePrescription(3, -1)).toMatchObject({ sets: 3, reps: 12 });
+  });
+
+  test('the heel raise is prescribed across both feet, and says so', () => {
+    const dose = heelRaisePrescription(3, 0);
+    expect(dose?.perSide).toBe(true);
+    expect(dose?.label).toBe('4 × 10 · both feet');
   });
 
   test('it never falls below the first loaded block', () => {
