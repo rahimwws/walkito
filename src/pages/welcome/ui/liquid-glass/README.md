@@ -37,10 +37,17 @@ Only the "astro" night-sky cookbook. Upstream's "sky" variant and its ~6MB
 video are not here, and `assets.ts`, `registry.ts` and `types.ts` were trimmed
 accordingly — those three are therefore *modified* GPL files.
 
-Artwork lives at `assets/liquid-glass/astro/` (~1.5MB): a starfield, a glow
-plate, a chrome wordmark, and 24 stickers. All of it is upstream's generated
-artwork and all of it is placeholder — the wordmark says ASTRA, and the
-stickers are about vibe-coding, not running.
+Artwork lives at `assets/liquid-glass/astro/`: a starfield, a glow plate, a
+chrome wordmark, and 24 stickers.
+
+**The wordmark is ours now** — it reads WALKITO and was commissioned for this
+app, so it is the one piece here that carries no upstream claim. Everything else
+is still upstream's generated artwork: the stickers are about vibe-coding rather
+than running, and the starfield and glow plate came with them.
+
+This screen is **not** inert. It is the first step of onboarding — `STEPS[0]`,
+`kind: 'welcome'` — so every one of those placeholders is on the first thing a
+new user sees.
 
 ## Requires a native rebuild
 
