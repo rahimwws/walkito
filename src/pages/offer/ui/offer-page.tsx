@@ -34,6 +34,7 @@ import { Linking } from 'react-native';
 import { OFFERINGS, purchases, type Offering } from '@/entities/purchase';
 import { REFERRAL_DISCOUNT_PERCENT, useReferral } from '@/entities/referral';
 import { formatPrice } from '@/shared/lib/money';
+import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 /** Opens a legal document, or does nothing if none has been configured. See
@@ -150,6 +151,17 @@ export function OfferPage() {
    * message rows would mean two places to look for the same kind of news.
    */
   const [notice, setNotice] = useState<string | null>(null);
+
+  /**
+   * Raised once the store confirms, and the reason the sheet does not close on
+   * the spot.
+   *
+   * Dismissing straight into the app made the one moment worth marking the one
+   * moment that looked like nothing happening: the paywall vanished and Home
+   * appeared, identical to backing out. The celebration owns the dismissal
+   * instead — `close()` runs when it is waved away.
+   */
+  const [celebrating, setCelebrating] = useState<'purchased' | 'restored' | null>(null);
 
   /**
    * Which price this person has earned, as an offering name.
@@ -370,8 +382,9 @@ export function OfferPage() {
     setBusy(false);
 
     if (result.status === 'purchased') {
-      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-      close();
+      // No haptic here: the sheet fires its own as it lands, and two success
+      // buzzes a frame apart read as a stutter rather than as emphasis.
+      setCelebrating('purchased');
       return;
     }
     // The user backed out of Apple's own sheet. They know what they did; a
@@ -406,8 +419,11 @@ export function OfferPage() {
     setBusy(false);
 
     if (result.status === 'restored') {
-      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-      setNotice('Your subscription is back.');
+      // The same sheet, different words. Getting a subscription back is not a
+      // purchase and should not be congratulated as one — but it is the same
+      // good news, and sending it to the one-line notice slot while a purchase
+      // gets a badge would rank the two wrongly.
+      setCelebrating('restored');
       return;
     }
     if (result.status === 'nothing-found') {
@@ -575,6 +591,26 @@ export function OfferPage() {
           .reduceMotion(ReduceMotion.System)}>
         <PrimaryButton label={busy ? 'Processing…' : 'Continue'} disabled={busy} onPress={start} />
       </Animated.View>
+
+      {/* Owns the dismissal. The paywall vanishing into Home is what backing out
+          looks like too, so the one moment worth marking was the one that read
+          as nothing having happened. */}
+      <CelebrationSheet
+        visible={celebrating != null}
+        title={celebrating === 'restored' ? 'Welcome back.' : 'You’re in.'}
+        headline={celebrating === 'restored' ? undefined : 'Walkito Premium'}
+        headlineColor={PRIMARY}
+        blurb={
+          celebrating === 'restored'
+            ? 'Your subscription is active again. Everything is where you left it.'
+            : 'Your plan is unlocked, and it starts adapting from your next session.'
+        }
+        ctaLabel="Start"
+        onClose={() => {
+          setCelebrating(null);
+          close();
+        }}
+      />
     </View>
   );
 }
