@@ -1,4 +1,12 @@
-import { PROGRAM, PROGRAM_LENGTH, blockName, movesFor, painFor } from '@/entities/program';
+import {
+  PROGRAM,
+  PROGRAM_LENGTH,
+  blockName,
+  movesFor,
+  painFor,
+  type SessionKind,
+} from '@/entities/program';
+import { plural } from '@/shared/lib/format';
 import { NO_SIGNALS } from '@/entities/health/model/metrics';
 import { frame, metric, value, type BriefToken } from '@/shared/ui/daily-brief';
 
@@ -62,6 +70,25 @@ export function briefTokens(input: BriefInput): readonly BriefToken[] {
   const { name, cursor, todayPain, streak, health = NO_SIGNALS } = input;
   const state = briefState(input);
   const day = PROGRAM[cursor];
+
+  /**
+   * What today's session actually is — the kind of work, not only its length.
+   *
+   * "Today is 7 minutes" says nothing: seven minutes of what? The plan knows
+   * the answer, and the difference between a strength day and a recovery day is
+   * the single most useful thing this line can carry, because it is what
+   * decides whether the seven minutes are hard.
+   */
+  const KIND_WORK: Readonly<Record<SessionKind, string>> = {
+    strength: 'foot and calf strength',
+    mobility: 'stretching',
+    balance: 'balance work',
+    recovery: 'easy recovery',
+  };
+  /** Sentence case, for the branches that open on the work rather than the day. */
+  const capitalise = (text: string) => text.charAt(0).toUpperCase() + text.slice(1);
+  const work = KIND_WORK[day?.kind ?? 'mobility'];
+  const moveCount = day != null ? movesFor(day).length : 0;
   const pain = todayPain ?? painFor(cursor);
 
   // The name opens the line when there is one. With no name the sentence simply
@@ -146,9 +173,17 @@ export function briefTokens(input: BriefInput): readonly BriefToken[] {
 
     case 'first-week':
       return v([
-        line(frame(open('day')), metric('streak', `${cursor + 1} of ${PROGRAM_LENGTH}`, { tail: '.' }), frame(`Today is ${day?.minutes ?? 4} minutes.`)),
-        line(frame(open('early days —')), metric('streak', `day ${cursor + 1}`, { tail: '.' }), frame('Short and often beats long and rare.')),
-        line(frame(open('day')), metric('streak', String(cursor + 1), { tail: '.' }), frame('The first week is about showing up, not effort.')),
+        line(
+          frame(open('day')),
+          metric('streak', `${cursor + 1} of ${PROGRAM_LENGTH}`, { tail: '.' }),
+          // The length alone was the whole sentence, and seven minutes of
+          // nothing in particular is not a reason to start. What the minutes
+          // are for is.
+          frame(`Today is ${moveCount} ${plural(moveCount, 'move')} of ${work} —`),
+          metric('rest', `${day?.minutes ?? 4} minutes`, { tail: '.' }),
+        ),
+        line(frame(open('early days —')), metric('streak', `day ${cursor + 1}`, { tail: '.' }), frame(`${capitalise(work)}, ${day?.minutes ?? 4} minutes. Short and often beats long and rare.`)),
+        line(frame(open('day')), metric('streak', String(cursor + 1), { tail: '.' }), frame(`${capitalise(work)} today. The first week is about showing up, not effort.`)),
       ]);
 
     // --- load --------------------------------------------------------------

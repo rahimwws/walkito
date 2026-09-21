@@ -22,7 +22,19 @@ export const dynamic = 'force-static';
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      { userAgent: '*', allow: '/', disallow: ['/api/', '/_next/'] },
+      /*
+       * Nothing is disallowed, and `/_next/` in particular must not be.
+       *
+       * The brief's example blocked it. Every stylesheet, every script and the
+       * self-hosted font live under `/_next/static/`, and Google renders with a
+       * real browser — blocked CSS means it judges the layout and the mobile
+       * experience from unstyled HTML. Google's own guidance is explicit about
+       * not blocking these.
+       *
+       * There is no `/api/` on a statically exported site either, so the rule
+       * protected nothing and cost the render.
+       */
+      { userAgent: '*', allow: '/' },
 
       // Retrieval — these are the ones that produce citations.
       { userAgent: 'OAI-SearchBot', allow: '/' },

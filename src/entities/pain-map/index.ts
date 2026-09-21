@@ -1,0 +1,16 @@
+export {
+  OUT_OF_SCOPE_NOTE,
+  ZONE_LABEL,
+  coversAnswer,
+  isOutOfScope,
+  latestPainMap,
+  painMaps,
+  patternFor,
+  patternKeyFor,
+  primaryZone,
+  recordPainMap,
+  type FootSide,
+  type FootZone,
+  type PainMap,
+  type PatternKey,
+} from './model/pain-map';

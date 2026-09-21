@@ -39,6 +39,8 @@ import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button
 
 import { TESTIMONIALS } from '../config/testimonials';
 import { activityFor, loadQuestionFor, withName, type SportKey } from '../model/personalise';
+import { recordPainMap, type FootSide, type FootZone } from '@/entities/pain-map';
+
 import { planSummary } from '../model/plan-summary';
 import { PLANS, recommendedIndex } from '../model/plans';
 import { STEPS, STEP_COUNT, stepAfter, type OnboardingStep } from '../model/steps';
@@ -47,6 +49,7 @@ import { BuildingStep } from './building-step';
 import { WatchSyncStep } from './watch-sync-step';
 import { ChoiceStep } from './choice-step';
 import { ContractStep } from './contract-step';
+import { PainMapStep } from './pain-map-step';
 import { PlanStep } from './plan-step';
 import { SexStep } from './sex-step';
 import { ReferralStep } from './referral-step';
@@ -59,6 +62,9 @@ import { NameStep } from './name-step';
 import { NotifyStep } from './notify-step';
 import { WelcomePage } from '@/pages/welcome';
 import { StepProgress } from './step-progress';
+
+/** Where the foot map sits, so the progress bar can leave it out of the count. */
+const PAIN_MAP_INDEX = STEPS.findIndex((step) => step.kind === 'pain-map');
 
 const SIDE_PAD = 24;
 /** Square, matching the primary button's height so the pair reads as one bar. */
@@ -140,6 +146,13 @@ export function OnboardingPage() {
   /** Which review the social screen is showing. Lives here rather than inside
    * that step because the shared button bar is what pages it. */
   const [review, setReview] = useState(0);
+  /**
+   * The foot map. Right by default — most people never change it, and an
+   * unselected control reads as one more thing being asked of them.
+   */
+  const [side, setSide] = useState<FootSide>('right');
+  const [zones, setZones] = useState<readonly FootZone[]>([]);
+  const [zoneError, setZoneError] = useState<string | null>(null);
   /** Peaks each time the welcome character lands on the button. Owned here
    * because the button is the page's; the intro step only drives it. */
   const ctaSquash = useSharedValue(0);
@@ -429,6 +442,20 @@ export function OnboardingPage() {
       return;
     }
 
+    // Not disabled, answered. A greyed-out button explains nothing; this says
+    // what is missing and leaves the way out visible.
+    if (step.kind === 'pain-map') {
+      if (zones.length === 0) {
+        setZoneError('Tap where it hurts — or go back and choose “Nothing right now”.');
+        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+        return;
+      }
+      // First entry of the history the retests will append to.
+      recordPainMap({ side, zones: [...zones], source: 'onboarding' });
+      step1(true);
+      return;
+    }
+
     if (step.kind === 'referral') {
       void finishWithReferral();
       return;
@@ -563,7 +590,13 @@ const CONFIRM_MS = 900;
               strokeWidth={2}
             />
           </Pressable>
-          <StepProgress index={index} count={STEP_COUNT} />
+          {/* The foot map is part of the question before it, not a step of its
+              own: it is conditional, and a bar that jumped forward for some
+              users and not others would be measuring the wrong thing. */}
+          <StepProgress
+            index={index > PAIN_MAP_INDEX ? index - 1 : Math.min(index, PAIN_MAP_INDEX - 1)}
+            count={STEP_COUNT - 1}
+          />
           <Pressable
             accessibilityRole="button"
             accessibilityLabel="Close"
@@ -753,6 +786,23 @@ const CONFIRM_MS = 900;
                 onSubmit={onNext}
                 note={referralNote}
                 noteGood={referralGood}
+              />
+            )}
+
+            {step.kind === 'pain-map' && (
+              <PainMapStep
+                side={side}
+                onSide={setSide}
+                zones={zones}
+                onToggle={(zone) => {
+                  setZoneError(null);
+                  setZones((current) =>
+                    current.includes(zone)
+                      ? current.filter((z) => z !== zone)
+                      : [...current, zone],
+                  );
+                }}
+                error={zoneError}
               />
             )}
 

@@ -14,7 +14,10 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito"; repeating it here produced
   // "Support — Walkito | Walkito" in the tab and in every search result.
   title: 'Support',
-  description: 'Get help with Walkito. A person replies.',
+  // Long enough that Google uses it rather than picking arbitrary text off the
+  // page. Forty characters is an invitation for it to write your ad copy.
+  description:
+    'Get help with Walkito: notifications, Apple Health permissions, subscriptions and refunds, and how to delete your data. Write to us and a person replies.',
   alternates: { canonical: '/support' },
 };
 

@@ -96,6 +96,23 @@ const ORGANISATION = {
     'A 12-week exercise program for heel and foot pain in runners, built from published rehabilitation protocols.',
 };
 
+/**
+ * `WebSite`, alongside `Organization`.
+ *
+ * The pair is what lets an engine treat "Walkito" as one named thing with a
+ * home rather than as a word that appears on some pages. No `SearchAction`:
+ * the sitelinks search box it used to drive is gone, and declaring a search
+ * endpoint a static site does not have would be a claim with nothing behind it.
+ */
+const WEBSITE = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE_NAME,
+  url: SITE_URL,
+  inLanguage: 'en',
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+};
+
 export const viewport = {
   themeColor: '#8b5cf6',
 };
@@ -105,6 +122,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={anton.variable}>
       <body>
         <JsonLd data={ORGANISATION} />
+        <JsonLd data={WEBSITE} />
         {/* The wash behind the hero. Two soft violet pools rather than a
             gradient bar, so the colour reads as light in the room instead of a
             banner stuck to the top of the page. */}

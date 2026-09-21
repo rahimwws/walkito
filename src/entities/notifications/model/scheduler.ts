@@ -13,7 +13,7 @@
 
 import * as Notifications from 'expo-notifications';
 
-import { currentDay, toDateKey } from '@/entities/program';
+import { currentDay, nextSessionAt, toDateKey } from '@/entities/program';
 import { kv } from '@/shared/lib/storage';
 
 import { messageFor } from './copy';
@@ -245,8 +245,29 @@ export async function refresh(now: number = Date.now()): Promise<PlannedItem[]> 
   const planned = planWindow(now);
   const laid: string[] = [];
 
+  /**
+   * The earliest the next session can be started.
+   *
+   * The plan keeps twelve hours between sessions, so somebody who trained late
+   * has a session that does not open until late morning. The daily nudge is
+   * scheduled off their wake time and knew nothing about that — it would say
+   * "day 2, stretching, five minutes" to a screen still showing a padlock.
+   *
+   * Null when today is not finished, which is the ordinary case: the thing to
+   * do is today's session and there is nothing to wait for.
+   */
+  const opensAt = nextSessionAt(currentDay(), now);
+
   for (const item of planned) {
-    const when = fireAt(item.dateKey, item.at);
+    let when = fireAt(item.dateKey, item.at);
+
+    // Pushed rather than dropped. A session nudge that would land before the
+    // rest is over is still the right message — it is only early — and moving
+    // it to the moment the session opens is what the user would want it to say.
+    if (opensAt != null && item.kind === 'session' && when.getTime() < opensAt) {
+      when = new Date(opensAt);
+    }
+
     // A slot that has already passed today is not moved to tomorrow — it was
     // about today, and a morning nudge delivered at four in the afternoon is a
     // reminder about the wrong day.

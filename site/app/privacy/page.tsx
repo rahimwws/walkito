@@ -21,7 +21,8 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito"; repeating it here produced
   // "Privacy — Walkito | Walkito" in the tab and in every search result.
   title: 'Privacy',
-  description: 'What Walkito stores, and where.',
+  description:
+    'What Walkito stores and where. Your plan, pain log and history stay on the device; Apple Health data is never uploaded. What leaves, what does not, and how to delete it.',
   alternates: { canonical: '/privacy' },
 };
 

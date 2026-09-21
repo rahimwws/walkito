@@ -154,7 +154,7 @@ function group(value: number): string {
 export function messageFor(kind: NotificationKind, signals: DaySignals): Message | null {
   const body = bodyFor(kind, signals);
   if (body == null) return null;
-  return { title: 'Tread', body };
+  return { title: 'Walkito', body };
 }
 
 function bodyFor(kind: NotificationKind, signals: DaySignals): string | null {
