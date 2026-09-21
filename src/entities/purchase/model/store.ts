@@ -130,6 +130,26 @@ const simulator: Store = {
   entitled: () => true,
 };
 
+/**
+ * The real store, with the lock taken off.
+ *
+ * Prices, offerings and purchases all still go to RevenueCat — a Test Store key
+ * makes the whole flow work on a simulator, and stubbing past it would mean the
+ * purchase path is never exercised until it reaches a device.
+ *
+ * Only `entitled` is overridden, and that is the whole point. Once the paywall
+ * became a guarded stack state rather than a dismissible sheet, an unentitled
+ * simulator stopped being "a paywall you can close" and became a locked door in
+ * front of the entire app. The bypass that existed for exactly this was being
+ * skipped the moment a key was configured, which is every working setup.
+ *
+ * Cannot reach a user: `Device.isDevice` is false only on a simulator or an
+ * emulator, and neither is something you can ship.
+ */
+function unlocked(store: Store): Store {
+  return { ...store, entitled: () => true };
+}
+
 function pick(): Store {
   // The real store first, even on the simulator. With a Test Store key the
   // whole flow works there — sheet, purchase, entitlement — and exercising the
@@ -145,7 +165,8 @@ function pick(): Store {
     // paywall and a broken app.
     try {
       const { revenueCatStore } = require('./revenuecat') as typeof import('./revenuecat');
-      return revenueCatStore;
+      // Real store either way; the simulator simply never counts as locked.
+      return onSimulator ? unlocked(revenueCatStore) : revenueCatStore;
     } catch {
       return onSimulator ? simulator : unconfigured;
     }

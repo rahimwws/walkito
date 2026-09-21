@@ -128,9 +128,15 @@ const STAGGER_MS = 90;
  * decoration, it is what stops a large flat number reading as a headline in a
  * document.
  *
- * Presented as a native form sheet, so the page behind stays visible and the
- * grabber and swipe-down are the system's. Nothing here traps the user: this
- * is the last screen of onboarding, and it can be dismissed.
+ * A full screen, and the only way past it is to buy or to restore. It used to
+ * be a form sheet over Home — but a sheet has something behind it, iOS knows
+ * that, and every version finds one more way back to what it can see. It is a
+ * guarded state of the root stack now, so there is nothing behind it to reach.
+ *
+ * That change is why the top padding comes from the safe-area inset rather than
+ * a constant: 52pt was clearance for a sheet's grabber, and on a full screen it
+ * started at the top of the display and ran the headline under the Dynamic
+ * Island.
  */
 export function OfferPage() {
   const router = useRouter();
@@ -441,7 +447,16 @@ export function OfferPage() {
     <View
       style={[
         styles.sheet,
-        { backgroundColor: colors.background, paddingBottom: Math.max(insets.bottom, 20) + 8 },
+        {
+          backgroundColor: colors.background,
+          // The top inset, measured rather than assumed. This was a fixed 52pt,
+          // which was right when the screen was a form sheet — the sheet's own
+          // top edge sat below the status bar and 52 was clearance for the
+          // grabber. As the gate it is a full screen, so 52pt starts at the top
+          // of the display and the headline ran under the Dynamic Island.
+          paddingTop: insets.top + 16,
+          paddingBottom: Math.max(insets.bottom, 20) + 8,
+        },
       ]}>
       <Animated.View style={[styles.numberWrap, numberStyle]}>
         {/* The bloom is its own view rather than a shadow on the glyphs. A
@@ -693,10 +708,8 @@ function TierRow({
 const styles = StyleSheet.create({
   sheet: {
     flex: 1,
-    // Room for the big number to clear the grabber and the Dynamic Island: a
-    // tall sheet puts its own top close under the status bar, and the number's
-    // upward optical padding would otherwise tuck it behind the island.
-    paddingTop: 52,
+    // `paddingTop` comes from the safe-area inset at the call site — see the
+    // note there.
     paddingHorizontal: 22,
     gap: 16,
   },
