@@ -1,6 +1,7 @@
 import { useSyncExternalStore } from 'react';
 
 import { kv } from '@/shared/lib/storage';
+import { currentUserId, supabase } from '@/shared/lib/supabase';
 
 const NAME_KEY = 'profile/name';
 const EMAIL_KEY = 'profile/email';
@@ -85,6 +86,40 @@ export function setProfileEmail(next: string): void {
   email = trimmed;
   kv.set(EMAIL_KEY, trimmed);
   for (const listener of subscribers) listener();
+  // Server copy, alongside the local one. Never awaited: the address is stored
+  // on the device either way, and a screen should not wait on a round trip to
+  // finish a sign-in that has already succeeded.
+  void syncEmail(trimmed);
+}
+
+/**
+ * Puts the address beside the anonymous id the server already has.
+ *
+ * Not an account — there is no password and no session to sign into. It is one
+ * row keyed to the identity this device already owns, so support has somewhere
+ * to answer when somebody writes in. Built exactly as the push token is: a
+ * `security definer` function, idempotent, blank input ignored.
+ *
+ * Silent on failure, like the push token. The local copy is the one the app
+ * reads, and an offline launch should not put an error in front of somebody
+ * who has just signed in successfully.
+ */
+export async function syncStoredEmail(): Promise<void> {
+  // Nothing to send, and nothing to retry.
+  if (email === '') return;
+  await syncEmail(email);
+}
+
+async function syncEmail(address: string): Promise<void> {
+  const client = supabase;
+  if (client == null) return;
+  try {
+    if ((await currentUserId()) == null) return;
+    const { error } = await client.rpc('save_contact_email', { p_email: address });
+    if (error != null) console.warn('[profile] could not store the email', error.message);
+  } catch (error) {
+    console.warn('[profile] could not store the email', error);
+  }
 }
 
 export function profileEmail(): string {

@@ -31,6 +31,7 @@ begin
   --   referral_redemptions.redeemer_id  -> cascade
   --   referral_redemptions.owner_id     -> cascade
   --   push_tokens.user_id               -> cascade
+  --   contact_emails.user_id            -> cascade  (0004)
   --
   -- Deleting each by hand first would duplicate that rule in a second place,
   -- and the copy is what goes stale when a table is added. If a future table

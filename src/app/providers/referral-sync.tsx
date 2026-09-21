@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 
 import { Notifications, REFERRAL_KIND, registerPushToken } from '@/entities/notifications';
+import { syncStoredEmail } from '@/entities/profile';
 import { refresh } from '@/entities/referral';
 
 /**
@@ -15,6 +16,11 @@ import { refresh } from '@/entities/referral';
  *    only way it ever learns is by asking.
  * 2. Hands over this device's push address, so the server has somewhere to send
  *    the news. Uses permission if it has been given and never asks for it.
+ * 2b. And the email, if Apple ever gave one. Here rather than in a provider of
+ *    its own because it is the same job at the same moment: pushing what the
+ *    device already knows to the server, silently, once. The write at capture
+ *    time can miss — offline, or before the anonymous identity exists — and
+ *    nothing else would ever retry it.
  * 3. Listens for that push and re-reads again, so an owner who taps the
  *    notification finds the discount already applied rather than a screen that
  *    has not caught up.
@@ -26,6 +32,7 @@ export function useReferralSync(): void {
   useEffect(() => {
     void refresh();
     void registerPushToken();
+    void syncStoredEmail();
   }, []);
 
   useEffect(() => {

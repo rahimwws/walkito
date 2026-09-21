@@ -4,6 +4,7 @@ export {
   resetProfile,
   setProfileEmail,
   setProfileName,
+  syncStoredEmail,
   useProfileEmail,
   useProfileName,
 } from './model/profile';
