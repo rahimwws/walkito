@@ -55,7 +55,9 @@ export function useOfferNotifications(): void {
       // Only navigate if we are not already looking at it. Pushing `/offer`
       // over an open `/offer` would stack a second sheet, and dismissing it
       // would reveal the first one still sitting there.
-      if (pathnameRef.current !== '/offer') router.push('/offer');
+      // The wall is already up for anyone without a subscription — see the
+      // guard in the root layout. Tapping the notification only needs to make
+      // sure the better price is applied, which `armOffer` above has done.
     };
 
     // A tap that launched the app from cold. Consulted once per run.

@@ -16,6 +16,7 @@ import {
   useReferralSync,
   useQuickActions,
 } from '@/app/providers';
+import { useEntitled } from '@/entities/purchase';
 import { useOnboarded } from '@/entities/session';
 import { fontAssets } from '@/shared/config';
 // Imported for its module-scope side effect as much as anything: reading the
@@ -47,6 +48,14 @@ export function RootLayout() {
   // Read synchronously from MMKV, so the very first paint mounts the right
   // stack rather than flashing Home and swapping.
   const onboarded = useOnboarded();
+  /**
+   * Whether the subscription is live. The tabs are behind it.
+   *
+   * Synchronous and correct on the first frame — the store keeps a cached
+   * answer — so there is no flash of the app before the wall, and no flash of
+   * the wall in front of somebody who has paid.
+   */
+  const entitled = useEntitled();
   // Listens for the win-back notification being tapped, at the root rather
   // than on the sheet: the tap can be what launches the app, in which case no
   // screen has mounted yet to hear it.
@@ -115,7 +124,34 @@ export function RootLayout() {
                   />
                 </Stack.Protected>
 
-                <Stack.Protected guard={onboarded}>
+                {/* The wall, as a third state of the same door rather than a
+                    sheet somebody has to fail to dismiss.
+
+                    A form sheet with the grabber off and the gesture disabled
+                    is still a sheet: there is a screen behind it, the OS knows
+                    it, and every version of iOS finds one more way to get back
+                    to what it can see. Guarding the tabs instead means there is
+                    nothing behind the paywall to reach — the same mechanism
+                    that makes onboarding a one-way door.
+
+                    `entitled` is true on the simulator without contacting any
+                    store, so development is unaffected. See the note in
+                    `entities/purchase/model/store.ts`. */}
+                <Stack.Protected guard={onboarded && !entitled}>
+                  <Stack.Screen
+                    name="offer"
+                    options={{
+                      headerShown: false,
+                      // A screen, not a sheet, when it is the gate: a sheet
+                      // implies something to go back to.
+                      presentation: 'card',
+                      gestureEnabled: false,
+                      animation: 'fade',
+                    }}
+                  />
+                </Stack.Protected>
+
+                <Stack.Protected guard={onboarded && entitled}>
                   <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
                 </Stack.Protected>
 
@@ -143,36 +179,6 @@ export function RootLayout() {
                     sheetAllowedDetents: 'fitToContents',
                     sheetGrabberVisible: true,
                     sheetCornerRadius: 28,
-                  }}
-                />
-                {/* The offer, over the finished plan. Same treatment as the
-                    other sheets so the page behind stays visible — the plan
-                    the user just chose is the reason the ask makes sense, and
-                    covering it would throw that away. */}
-                <Stack.Screen
-                  name="offer"
-                  options={{
-                    presentation: 'formSheet',
-                    headerShown: false,
-                    // A fixed tall detent rather than fitToContents. Sized to
-                    // its contents the sheet stopped short of the bottom edge
-                    // and the screen behind showed through under it as a lit
-                    // strip; at this height the sheet owns the bottom of the
-                    // display and the page behind is only ever above it.
-                    sheetAllowedDetents: [0.985],
-                    // No grabber and no swipe-down: this is the purchase step,
-                    // and a sheet that can be flicked away is one the user
-                    // dismisses by accident on the way to reading it. The
-                    // button inside is the only way out — which is also what
-                    // makes closing it trivial, because there is no stack to
-                    // unwind, only Home already sitting underneath.
-                    sheetGrabberVisible: false,
-                    gestureEnabled: false,
-                    // Rounder than the app's other sheets — this one is a
-                    // piece of artwork with an offer on it, not a list of
-                    // settings — but not so round the corner starts eating the
-                    // content beside it.
-                    sheetCornerRadius: 60,
                   }}
                 />
                 {/* One day off the path, same treatment: a missed day is two

@@ -4,6 +4,19 @@ import { useEffect } from 'react';
 import { disarmOffer, usePendingOffer } from '@/entities/offer';
 
 /**
+ * NOTE: the paywall is a guarded stack state now, not a pushed route.
+ *
+ * `Stack.Protected` in the root layout shows `/offer` whenever the user is
+ * onboarded and not entitled, so it is already on screen for exactly the people
+ * this would have pushed it at. Pushing it as well either no-ops against the
+ * guard or stacks a second copy of the wall on the first.
+ *
+ * What remains here is the part that still matters: the win-back flag, which
+ * changes the *price* the wall shows rather than whether it is shown.
+ */
+
+
+/**
  * How long Home is left alone before the offer arrives.
  *
  * Long enough that the user sees what they have been given — their own Home,
@@ -31,7 +44,8 @@ export function usePendingOfferPresenter(): void {
       // Disarm first: the store is what guarantees this runs once, and clearing
       // it before navigating means a re-render mid-push cannot queue a second.
       disarmOffer();
-      router.push({ pathname: '/offer', params: { ...pending } });
+      // Was `router.push('/offer')`. See the note at the top of this file.
+      disarmOffer();
     }, REVEAL_DELAY_MS);
     return () => clearTimeout(timer);
   }, [pending, router]);

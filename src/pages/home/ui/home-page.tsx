@@ -89,7 +89,15 @@ export function HomePage() {
   const streak = useStreak();
   /** Whether today's answer is in. Once it is, the check-in gives up the top of
    * the screen to the list of work it was asked about. */
-  const [checkedIn, setCheckedIn] = useState(false);
+  /**
+   * Whether today's answer is in, read from the log rather than remembered.
+   *
+   * It was `useState(false)`, so leaving Home and coming back put the question
+   * in front of somebody who had already answered it — and the sentence above,
+   * which reads `painOn(currentDay())` two lines down, disagreed with the cards
+   * underneath it on the same screen.
+   */
+  const checkedIn = painOn(currentDay()) != null;
   /** A counter, not a flag: remounting on a new value is what re-runs every
    * piece's flight, and a boolean could only ever fire the burst once. */
   const [burst, setBurst] = useState(0);
@@ -189,7 +197,6 @@ export function HomePage() {
             first={
               <PainCheck
                 onLogged={(painless) => {
-                  setCheckedIn(true);
                   // Only for a day with no pain in it. Confetti for logging a
                   // seven would be the app celebrating at someone who just told
                   // it they are hurting.

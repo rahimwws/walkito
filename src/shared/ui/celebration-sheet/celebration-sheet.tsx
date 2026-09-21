@@ -1,7 +1,7 @@
 import { BlurView } from 'expo-blur';
 import * as Haptics from 'expo-haptics';
 import { useEffect, useState } from 'react';
-import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -60,6 +60,14 @@ export type CelebrationSheetProps = {
  * reason the celebration makes sense — the session just finished, the plan just
  * bought — and covering it would replace the thing being celebrated with a
  * picture of celebrating.
+ *
+ * An absolutely-positioned overlay, **not** a `Modal`. Both hosts are already
+ * inside one: the session player runs in a `pageSheet` and the paywall is a
+ * form sheet. A `Modal` nested in a presented sheet does not reliably present
+ * on iOS, and when it failed here it took the only way out with it — the
+ * player's `onFinish` fires from this sheet's dismissal, so a sheet that never
+ * appeared left the session stuck open with nothing to press. The host is
+ * full-screen either way, so nothing is lost by staying inside it.
  *
  * Driven by one shared value, never by `entering`/`exiting` builders. An
  * entering builder that fails to run leaves its subject stranded at opacity 0,
@@ -137,7 +145,7 @@ export function CelebrationSheet({
   if (!mounted) return null;
 
   return (
-    <Modal transparent animationType="none" visible statusBarTranslucent onRequestClose={onClose}>
+    <View style={styles.host} pointerEvents="box-none">
       <Animated.View style={[styles.fill, backdrop]}>
         <BlurView intensity={28} tint={scheme === 'dark' ? 'dark' : 'light'} style={styles.fill} />
         <View style={[styles.fill, styles.wash]} />
@@ -182,11 +190,15 @@ export function CelebrationSheet({
           <PrimaryButton label={ctaLabel} onPress={onClose} style={styles.cta} />
         </View>
       </Animated.View>
-    </Modal>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
+  /** Covers the host and sits above everything in it. `box-none` so the
+   * untouched parts of the screen behind stay inert rather than swallowing
+   * taps meant for the scrim below. */
+  host: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 100 },
   fill: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
   /** A trace of ink over the blur. Blur alone leaves a bright page bright, and
    * the card needs something to sit against on the light scheme. */

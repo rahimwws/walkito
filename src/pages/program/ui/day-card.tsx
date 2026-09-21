@@ -103,6 +103,8 @@ export type DayCardProps = {
    * something other than what the button under your thumb says.
    */
   onOpen?: () => void;
+  /** "Unlocks in 12h", for the next day up. Null on every other card. */
+  unlocksIn?: string | null;
 };
 
 /**
@@ -114,12 +116,24 @@ export type DayCardProps = {
  * list be read down the left edge as a column of day numbers rather than as a
  * stack of unrelated cards.
  */
-export function DayCard({ day, status, onOpen }: DayCardProps) {
+export function DayCard({ day, status, onOpen, unlocksIn }: DayCardProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
 
-  const open = status === 'today';
+  /**
+   * Whether the card shows what the session is made of.
+   *
+   * Today and the day just finished, and nothing else. A finished day keeps its
+   * list because the first question after a session is what was in it — and
+   * once the status turns over, hiding the chips would make the card go blank
+   * at the exact moment the user looks back at it.
+   *
+   * An upcoming day stays shut on purpose: the programme adapts to what the
+   * check-in says, so its exercises are a guess until the morning it arrives.
+   * Printing them would be a promise the plan has not made.
+   */
+  const open = status === 'today' || status === 'done';
   const art = day.checkpoint ? null : artFor(day.kind);
 
   const sticker = day.checkpoint
@@ -189,6 +203,15 @@ export function DayCard({ day, status, onOpen }: DayCardProps) {
 
         <Mark status={status} tint={colors.foreground} dim={meter.unit} />
       </View>
+
+      {/* Why the lock is there, and for how long. Without it a finished user
+          sees the next day shut with no explanation and reads it as broken —
+          which is exactly what happened. The programme runs on dates, not on
+          completions, and that is a rule worth saying out loud once rather
+          than leaving to be inferred from a padlock. */}
+      {unlocksIn != null && (
+        <Text style={[styles.unlock, { color: meter.unit }]}>{unlocksIn}</Text>
+      )}
 
       {open && (
         <>
@@ -348,5 +371,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: fonts.bold,
     letterSpacing: -0.1,
+  },
+  unlock: {
+    fontSize: 13,
+    fontFamily: fonts.medium,
+    marginTop: 10,
   },
 });

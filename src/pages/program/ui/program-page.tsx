@@ -18,10 +18,13 @@ import {
   PROGRAM_LENGTH,
   TODAY_INDEX,
   clearRetestRequest,
+  currentDay,
   exerciseById,
   firstNewExercise,
+  logFor,
   planFor,
   statusFor,
+  useLogsVersion,
   useRetestRequest,
   writeLog,
   type DayStatus,
@@ -115,6 +118,38 @@ export function ProgramPage() {
   const [reading, setReading] = useState<{ day: ProgramDay; status: DayStatus } | null>(null);
 
   const today = PROGRAM[TODAY_INDEX];
+  /**
+   * Whether today's session is behind the user.
+   *
+   * `statusFor` takes this and nothing here was passing it, so a day finished
+   * an hour ago still rendered as "today": highlighted, unlocked, and offering
+   * to be started again. The list said the day was open while Home said it was
+   * done, and the log — which both read — already knew.
+   *
+   * Recomputed whenever the log moves; `useLogsVersion` below is what moves it.
+   */
+  useLogsVersion();
+  const doneToday = logFor(currentDay())?.sessionCompleted === true;
+
+  /**
+   * How long until the next day opens, said once on the card it is about.
+   *
+   * The programme runs on dates rather than on completions — finishing today
+   * does not bring tomorrow forward, because the point of a rehab plan is the
+   * rest between the sessions. Nothing said so, and a padlock on the next day
+   * after a finished one reads as a bug rather than as a rule.
+   *
+   * Rounded up to the hour, and only below a day. "Unlocks in 13h" is
+   * actionable; "in 13h 47m" is a countdown to stare at, and the plan is not
+   * something to be raced.
+   */
+  const untilTomorrow = (() => {
+    const now = new Date();
+    const midnight = new Date(now);
+    midnight.setHours(24, 0, 0, 0);
+    const hours = Math.ceil((midnight.getTime() - now.getTime()) / 3_600_000);
+    return hours <= 1 ? 'Unlocks within the hour' : `Unlocks in ${hours}h`;
+  })();
   const lines = todayLines();
   const days = PROGRAM.filter((day) => day.block === today.block);
 
@@ -128,7 +163,7 @@ export function ProgramPage() {
    */
   const block = PLAN_BLOCKS[today.block - 1];
   const doneInBlock = days.filter((day) => {
-    const status = statusFor(day, TODAY_INDEX);
+    const status = statusFor(day, TODAY_INDEX, doneToday);
     return status === 'done' || status === 'rest';
   }).length;
   const nextBlock = PLAN_BLOCKS[today.block] ?? null;
@@ -206,7 +241,7 @@ export function ProgramPage() {
    * screen nobody had asked for yet.
    */
   const openToday = useCallback(() => {
-    setReading({ day: today, status: statusFor(today, TODAY_INDEX) });
+    setReading({ day: today, status: statusFor(today, TODAY_INDEX, doneToday) });
   }, [today]);
 
   useAnimatedReaction(
@@ -286,7 +321,11 @@ export function ProgramPage() {
             { paddingTop: 10, paddingBottom: insets.bottom + 120 },
           ]}>
           {days.map((day, i) => {
-            const status = statusFor(day, TODAY_INDEX);
+            const status = statusFor(day, TODAY_INDEX, doneToday);
+            // Only the very next one. Every locked day after it opens on its
+            // own date too, and a column of countdowns would read as a queue
+            // rather than as a plan.
+            const unlocksIn = day.index === TODAY_INDEX + 1 ? untilTomorrow : null;
             const last = i === days.length - 1;
             // Every third day the run pauses on a marker. Counted off the day
             // number rather than off the loop index, so it lands on days 3, 6
@@ -298,6 +337,7 @@ export function ProgramPage() {
                 <DayCard
                   day={day}
                   status={status}
+                  unlocksIn={unlocksIn}
                   // The status travels with the tap rather than being worked
                   // out again inside the sheet: the list has already decided
                   // what it is showing, and a sheet that re-derived it could

@@ -23,28 +23,39 @@ describe('onboarding is reachable', () => {
     expect(source).toContain('const ALWAYS_ONBOARD = false;');
   });
 
-  test('the root layout offers onboarding to users who have not onboarded', () => {
+  test('the three states of the door are guarded on the right conditions', () => {
     const layout = readFileSync(
       new URL('../../../app/layouts/root-layout.tsx', import.meta.url),
       'utf8',
     );
-    // `guard` means available, not blocked: expo-router's own example gates the
-    // login screen on `!isLoggedIn`.
-    const onboardingGuard = /guard=\{(!?)onboarded\}\s*>\s*<Stack\.Screen\s+name="onboarding"/s;
-    const match = layout.match(onboardingGuard);
-    expect(match).not.toBeNull();
-    expect(match?.[1]).toBe('!');
+
+    // `guard` means *available*, not *blocked* — expo-router's own example
+    // gates the login screen on `!isLoggedIn`. All three were asserted as
+    // string shapes rather than behaviour because the alternative is mounting
+    // expo-router under bun, and the bug these catch is a polarity typo.
+    const onboarding = /guard=\{!onboarded\}\s*>\s*<Stack\.Screen\s+name="onboarding"/s;
+    expect(layout).toMatch(onboarding);
+
+    // The paywall: onboarded, but not paid.
+    const paywall = /guard=\{onboarded && !entitled\}\s*>\s*<Stack\.Screen\s+name="offer"/s;
+    expect(layout).toMatch(paywall);
+
+    // The app itself: both.
+    const tabs = /guard=\{onboarded && entitled\}\s*>\s*<Stack\.Screen name="\(tabs\)"/s;
+    expect(layout).toMatch(tabs);
   });
 
-  test('the tabs are offered only to users who have onboarded', () => {
+  test('the paywall is a screen, not a dismissible sheet', () => {
     const layout = readFileSync(
       new URL('../../../app/layouts/root-layout.tsx', import.meta.url),
       'utf8',
     );
-    const tabsGuard = /guard=\{(!?)onboarded\}\s*>\s*<Stack\.Screen name="\(tabs\)"/s;
-    const match = layout.match(tabsGuard);
-    expect(match).not.toBeNull();
-    expect(match?.[1]).toBe('');
+    // A form sheet has something behind it, and every iOS version finds one
+    // more way back to what it can see. The wall must not be one.
+    const offerBlock = layout.slice(layout.indexOf('name="offer"'));
+    const options = offerBlock.slice(0, offerBlock.indexOf('/>'));
+    expect(options).not.toContain('formSheet');
+    expect(options).toContain('gestureEnabled: false');
   });
 });
 
