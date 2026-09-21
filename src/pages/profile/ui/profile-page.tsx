@@ -4,8 +4,6 @@ import Delete02Icon from '@hugeicons/core-free-icons/Delete02Icon';
 import GiftIcon from '@hugeicons/core-free-icons/GiftIcon';
 import Mail01Icon from '@hugeicons/core-free-icons/Mail01Icon';
 import Settings02Icon from '@hugeicons/core-free-icons/Settings02Icon';
-import UserCircleIcon from '@hugeicons/core-free-icons/UserCircleIcon';
-import Logout01Icon from '@hugeicons/core-free-icons/Logout01Icon';
 import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
@@ -14,9 +12,8 @@ import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-na
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useStreak } from '@/entities/program';
-import { firstName, useProfileName } from '@/entities/profile';
+import { firstName, useProfileEmail, useProfileName } from '@/entities/profile';
 import { referralsAvailable, useReferral } from '@/entities/referral';
-import { signOut, useAuth } from '@/entities/session';
 import { SUPPORT_EMAIL, accents, fonts, meterColors, palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 import { GiftSheet } from '@/shared/ui/gift-sheet';
@@ -42,7 +39,7 @@ export function ProfilePage() {
   const name = useProfileName();
   const streak = useStreak();
   const referral = useReferral();
-  const auth = useAuth();
+  const email = useProfileEmail();
 
   const [giftOpen, setGiftOpen] = useState(false);
   const [deleteOpen, setDeleteOpen] = useState(false);
@@ -125,32 +122,17 @@ export function ProfilePage() {
           />
         </Section>
 
-        {/* Signing in buys one thing — your plan on a new phone — and the row
-            says which state you are in rather than offering an action whose
-            effect depends on something off screen. */}
-        {auth.status !== 'unavailable' && (
-          <Section title="Account">
-            {auth.status === 'signed-in' ? (
-              <Row
-                icon={Logout01Icon}
-                label="Sign out"
-                value={auth.email ?? undefined}
-                onPress={() => {
-                  Haptics.selectionAsync();
-                  void signOut();
-                }}
-              />
-            ) : (
-              <Row
-                icon={UserCircleIcon}
-                label="Sign in"
-                value="Keep your progress"
-                onPress={() => {
-                  Haptics.selectionAsync();
-                  router.push('/auth');
-                }}
-              />
-            )}
+        {/* The address, not a session. Apple returns an email only on the
+            very first authorisation, so this is the one copy of it — shown so
+            the user can see what support would reach them on, and so a blank
+            here is visible rather than discovered later. There is no account
+            behind it and nothing to sign out of. */}
+        {email.length > 0 && (
+          <Section title="Email">
+            <View style={styles.row}>
+              <HugeiconsIcon icon={Mail01Icon} size={20} color={meter.caption} strokeWidth={1.8} />
+              <Text style={[styles.rowLabel, { color: colors.foreground }]}>{email}</Text>
+            </View>
           </Section>
         )}
 

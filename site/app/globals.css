@@ -72,7 +72,17 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 22px 0;
+  /*
+   * `padding-block`, never the shorthand.
+   *
+   * This element carries `.shell` too, and `.shell` is what supplies the side
+   * gutter. A `padding: 22px 0` here sets all four sides and silently wipes
+   * that gutter out — which is invisible above 1120px, where `max-width` and
+   * `margin: auto` happen to produce space anyway, and is why the header ran
+   * flush to both screen edges on every phone. The hero and the proof section
+   * had the same bug for the same reason.
+   */
+  padding-block: 22px;
 }
 
 .brand {
@@ -143,7 +153,9 @@ body {
 
 .hero {
   text-align: center;
-  padding: 68px 0 0;
+  /* Block-only, so `.shell`'s side gutter survives. See the note on
+     `.masthead`. */
+  padding-block: 68px 0;
 }
 
 /*
@@ -255,7 +267,8 @@ body {
 /* ---------------------------------------------------------------- proof --- */
 
 .proof {
-  padding: 84px 0 96px;
+  /* Block-only. See the note on `.masthead`. */
+  padding-block: 84px 96px;
 }
 
 .proof h2 {
@@ -500,7 +513,7 @@ figure figcaption b {
   .masthead {
     flex-wrap: wrap;
     gap: 10px 18px;
-    padding: 12px 0 8px;
+    padding-block: 12px 8px;
   }
 
   /* The wordmark is a link too, and the icon alone was setting its height. */
@@ -511,7 +524,11 @@ figure figcaption b {
   .nav {
     order: 3;
     width: 100%;
-    gap: 22px;
+    /* Five links where there were two. Wrapping is what keeps every one of them
+       reachable — squeezing the gap until they fit puts two tap targets a
+       thumb-width apart. */
+    flex-wrap: wrap;
+    gap: 0 20px;
     /* Comfortably past the 44px target without looking like a button row. */
     padding: 2px 0 4px;
   }
@@ -537,7 +554,7 @@ figure figcaption b {
   }
 
   .hero {
-    padding-top: 22px;
+    padding-block: 22px 0;
   }
 
   .hero p {
@@ -559,7 +576,7 @@ figure figcaption b {
   /* 96px of air under the fold is a desktop figure. On a phone it reads as the
      page having ended. */
   .proof {
-    padding: 52px 0 60px;
+    padding-block: 52px 60px;
   }
 
   .proof h2 {

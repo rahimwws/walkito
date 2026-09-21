@@ -32,7 +32,7 @@ import {
   redeem,
   type RedeemResult,
 } from '@/entities/referral';
-import { firstName, setProfileName } from '@/entities/profile';
+import { firstName, setProfileEmail, setProfileName } from '@/entities/profile';
 import { completeOnboarding, signInWithApple } from '@/entities/session';
 import { Glow } from '@/shared/ui/glow';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
@@ -386,10 +386,17 @@ export function OnboardingPage() {
             setSignInFailed(true);
             return;
           }
-          // Apple returns a name only on the very first authorisation for this
-          // Apple ID; every later sign-in is nulls. If it came, keep it now.
-          if (result.status === 'signed-in' && result.fullName != null) {
-            setProfileName(firstName(result.fullName));
+          // Apple returns the name and the email only on the **very first**
+          // authorisation for this Apple ID; every later sign-in is nulls. So
+          // both are written down here or lost for good.
+          //
+          // That is the whole of what this button does. There is no session
+          // behind it and no account on any server — the app needs a way to
+          // greet somebody and an address for support to answer on, and this is
+          // where it gets them.
+          if (result.status === 'signed-in') {
+            if (result.fullName != null) setProfileName(firstName(result.fullName));
+            if (result.email != null) setProfileEmail(result.email);
           }
           Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
           step1(true);

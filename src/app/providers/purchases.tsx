@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { AppState } from 'react-native';
 
 import { purchases, startPurchases } from '@/entities/purchase';
-import { startAuth } from '@/entities/session';
 
 /**
  * Starts the store once, and re-checks the subscription on the way back in.
@@ -13,16 +12,6 @@ import { startAuth } from '@/entities/session';
  * answer that is correct from the first frame, and this only keeps it fresh.
  */
 export function usePurchases(): void {
-  /**
-   * The Supabase session, watched for the life of the app.
-   *
-   * Here rather than in its own provider because it is the same shape of thing
-   * and the same lifetime: one subscription, started once, torn down never.
-   * `onAuthStateChange` fires for the restore on launch as well, so there is no
-   * separate initial read that could disagree with it.
-   */
-  useEffect(() => startAuth(), []);
-
   useEffect(() => {
     // Deliberately unawaited and deliberately uncaught-by-the-caller. A store
     // that fails to start leaves the app not-entitled, which is the same state

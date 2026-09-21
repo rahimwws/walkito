@@ -1,1 +1,9 @@
-export { firstName, resetProfile, setProfileName, useProfileName } from './model/profile';
+export {
+  firstName,
+  profileEmail,
+  resetProfile,
+  setProfileEmail,
+  setProfileName,
+  useProfileEmail,
+  useProfileName,
+} from './model/profile';

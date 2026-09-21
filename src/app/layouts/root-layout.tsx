@@ -132,12 +132,6 @@ export function RootLayout() {
                   }}
                 />
 
-                {/* Signing in, which nothing in the app requires. Pushed from
-                    the profile rather than put in the way of the flow: an
-                    account moves your plan to a new phone and does nothing
-                    else, so it is an errand, not a gate. */}
-                <Stack.Screen name="auth" options={{ headerShown: false, presentation: 'card' }} />
-
                 {/* Native form sheet sized to its content, so the list rises
                     only as far as it needs and the app stays visible behind
                     it. */}
