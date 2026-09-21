@@ -25,6 +25,8 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
+import { RestButton } from './rest-button';
+
 import { artFor } from '../config/kind-art';
 
 /**
@@ -62,6 +64,11 @@ export type DaySheetProps = {
   onClose: () => void;
   /** Only offered on the day it can actually be started. */
   onStart: () => void;
+  /**
+   * When this day opens, for the one that is next up. Null for every other day,
+   * including today's — there is nothing to wait for on a day already open.
+   */
+  unlockAt?: number | null;
 };
 
 /**
@@ -76,7 +83,7 @@ export type DaySheetProps = {
  * day has no figure and the sheet closes up around the gap — see `kind-art.ts`
  * for why recovery is deliberately unillustrated.
  */
-export function DaySheet({ day, status, onClose, onStart }: DaySheetProps) {
+export function DaySheet({ day, status, onClose, onStart, unlockAt }: DaySheetProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -190,6 +197,13 @@ export function DaySheet({ day, status, onClose, onStart }: DaySheetProps) {
             </View>
 
             {startable && <PrimaryButton label="Get Started" onPress={onStart} />}
+            {/* The same button the card carries, in the same state. A sheet
+                that opened on a locked day and offered nothing would be a
+                dead end — and one that offered "Get Started" on a day that is
+                not open yet would be worse. */}
+            {!startable && unlockAt != null && (
+              <RestButton unlockAt={unlockAt} onStart={onStart} />
+            )}
           </View>
         </Animated.View>
       </View>

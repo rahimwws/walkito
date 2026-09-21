@@ -22,6 +22,7 @@ import {
   exerciseById,
   firstNewExercise,
   logFor,
+  nextSessionAt,
   planFor,
   statusFor,
   useLogsVersion,
@@ -132,24 +133,13 @@ export function ProgramPage() {
   const doneToday = logFor(currentDay())?.sessionCompleted === true;
 
   /**
-   * How long until the next day opens, said once on the card it is about.
+   * When the next session opens, or null while today's is still to do.
    *
-   * The programme runs on dates rather than on completions — finishing today
-   * does not bring tomorrow forward, because the point of a rehab plan is the
-   * rest between the sessions. Nothing said so, and a padlock on the next day
-   * after a finished one reads as a bug rather than as a rule.
-   *
-   * Rounded up to the hour, and only below a day. "Unlocks in 13h" is
-   * actionable; "in 13h 47m" is a countdown to stare at, and the plan is not
-   * something to be raced.
+   * The instant, not a formatted string and not a tick. `RestButton` owns the
+   * second hand — counting here would re-render every card in the block once a
+   * second to move one digit.
    */
-  const untilTomorrow = (() => {
-    const now = new Date();
-    const midnight = new Date(now);
-    midnight.setHours(24, 0, 0, 0);
-    const hours = Math.ceil((midnight.getTime() - now.getTime()) / 3_600_000);
-    return hours <= 1 ? 'Unlocks within the hour' : `Unlocks in ${hours}h`;
-  })();
+  const unlockAt = nextSessionAt(currentDay());
   const lines = todayLines();
   const days = PROGRAM.filter((day) => day.block === today.block);
 
@@ -325,7 +315,7 @@ export function ProgramPage() {
             // Only the very next one. Every locked day after it opens on its
             // own date too, and a column of countdowns would read as a queue
             // rather than as a plan.
-            const unlocksIn = day.index === TODAY_INDEX + 1 ? untilTomorrow : null;
+            const nextUp = day.index === TODAY_INDEX + 1 ? unlockAt : null;
             const last = i === days.length - 1;
             // Every third day the run pauses on a marker. Counted off the day
             // number rather than off the loop index, so it lands on days 3, 6
@@ -337,7 +327,8 @@ export function ProgramPage() {
                 <DayCard
                   day={day}
                   status={status}
-                  unlocksIn={unlocksIn}
+                  unlockAt={nextUp}
+                  onStart={() => start(day)}
                   // The status travels with the tap rather than being worked
                   // out again inside the sheet: the list has already decided
                   // what it is showing, and a sheet that re-derived it could
@@ -395,6 +386,8 @@ export function ProgramPage() {
       <DaySheet
         day={reading?.day ?? null}
         status={reading?.status ?? 'upcoming'}
+        // Only when the sheet is open on the day that is next up.
+        unlockAt={reading?.day?.index === TODAY_INDEX + 1 ? unlockAt : null}
         onClose={() => setReading(null)}
         onStart={() => {
           const opened = reading?.day;
@@ -426,6 +419,10 @@ export function ProgramPage() {
                     writeLog(session.day, {
                       sessionCompleted: true,
                       exercisesDone: [...planFor(session.block, session.kind)],
+                      // Stamped here rather than derived from the date, so the
+                      // rest before the next session is measured from when the
+                      // work actually ended.
+                      completedAt: Date.now(),
                     })
             }
           />

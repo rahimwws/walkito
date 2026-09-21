@@ -627,3 +627,45 @@ export function painFor(index: number): number {
   }
   return 0;
 }
+
+/**
+ * The shortest gap the plan will put between two sessions.
+ *
+ * Twelve hours, and it is the rest that does the work: loaded tendon tissue
+ * needs the interval as much as the load. Without it somebody who trained at
+ * eight in the evening would be offered the next session four hours later, at
+ * midnight, which is the calendar talking rather than the programme.
+ */
+export const REST_HOURS = 12;
+
+/**
+ * When the next session becomes available, in epoch milliseconds.
+ *
+ * The later of two things, because both are real constraints:
+ *
+ * - **Tomorrow.** The plan is a calendar of days and a day is a day; finishing
+ *   early does not buy an extra one.
+ * - **Twelve hours after the last session ended.** Finishing at eleven at night
+ *   must not open the next one an hour later.
+ *
+ * Null when today has not been finished — there is nothing to wait for, because
+ * the thing to do is today's session.
+ *
+ * The countdown this feeds used to be "hours until midnight", which after an
+ * evening session read "unlocks in 5h" and then let the day through at
+ * midnight anyway. Both halves were wrong: the number was not the rest the body
+ * needs, and it was not what the app was going to do either.
+ */
+export function nextSessionAt(dayNumber: number, now = Date.now()): number | null {
+  const log = logFor(dayNumber);
+  if (log?.sessionCompleted !== true) return null;
+
+  const tomorrow = new Date(now);
+  tomorrow.setHours(24, 0, 0, 0);
+
+  // Missing on entries written before the stamp existed. Falling back to
+  // midnight keeps those days behaving as they did rather than pinning them
+  // twelve hours past a time nobody recorded.
+  const rested = log.completedAt == null ? 0 : log.completedAt + REST_HOURS * 3_600_000;
+  return Math.max(tomorrow.getTime(), rested);
+}

@@ -46,6 +46,15 @@ export type DayLog = {
   hoursOnFeet: number | null;
   /** Exercise ids actually done. */
   exercisesDone: string[];
+  /**
+   * When the session was finished, as epoch milliseconds.
+   *
+   * The date on the entry says which day it belongs to; this says when inside
+   * it. The programme needs both — a plan that runs on dates alone would offer
+   * tomorrow's session at one minute past midnight to somebody who trained at
+   * eleven, and the rest between sessions is the part that does the work.
+   */
+  completedAt?: number;
 };
 
 const DAY_MS = 86_400_000;

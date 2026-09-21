@@ -22,9 +22,11 @@ import {
   type SessionKind,
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
+import { PrimaryButton } from '@/shared/ui/primary-button';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import { artFor } from '../config/kind-art';
+import { RestButton } from './rest-button';
 
 const RADIUS = 26;
 
@@ -103,8 +105,13 @@ export type DayCardProps = {
    * something other than what the button under your thumb says.
    */
   onOpen?: () => void;
-  /** "Unlocks in 12h", for the next day up. Null on every other card. */
-  unlocksIn?: string | null;
+  /**
+   * When this day opens, in epoch milliseconds — for the next day up only. Null
+   * on every other card: a column of countdowns is a queue, not a plan.
+   */
+  unlockAt?: number | null;
+  /** Starts the session, once the wait is over. */
+  onStart?: () => void;
 };
 
 /**
@@ -116,7 +123,7 @@ export type DayCardProps = {
  * list be read down the left edge as a column of day numbers rather than as a
  * stack of unrelated cards.
  */
-export function DayCard({ day, status, onOpen, unlocksIn }: DayCardProps) {
+export function DayCard({ day, status, onOpen, unlockAt, onStart }: DayCardProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -133,7 +140,14 @@ export function DayCard({ day, status, onOpen, unlocksIn }: DayCardProps) {
    * check-in says, so its exercises are a guess until the morning it arrives.
    * Printing them would be a promise the plan has not made.
    */
-  const open = status === 'today' || status === 'done';
+  /**
+   * Whether the card shows what the session is made of.
+   *
+   * Today, and the next one up. A finished day drops its list: the question
+   * after a session is what comes next, not what was just done — and the answer
+   * to that is on the card below it, where the list now is.
+   */
+  const open = status === 'today' || unlockAt != null;
   const art = day.checkpoint ? null : artFor(day.kind);
 
   const sticker = day.checkpoint
@@ -209,9 +223,7 @@ export function DayCard({ day, status, onOpen, unlocksIn }: DayCardProps) {
           which is exactly what happened. The programme runs on dates, not on
           completions, and that is a rule worth saying out loud once rather
           than leaving to be inferred from a padlock. */}
-      {unlocksIn != null && (
-        <Text style={[styles.unlock, { color: meter.unit }]}>{unlocksIn}</Text>
-      )}
+
 
       {open && (
         <>
@@ -252,6 +264,12 @@ export function DayCard({ day, status, onOpen, unlocksIn }: DayCardProps) {
 
         </>
       )}
+
+      {/* Last, under what the session is, because it is what to do about it.
+          The countdown lives inside the button rather than beside it: a clock
+          on a line of its own is information, and the same clock on the control
+          it will become is the control saying when it works. */}
+      {unlockAt != null && <RestButton unlockAt={unlockAt} onStart={onStart ?? (() => {})} />}
     </Pressable>
   );
 }
@@ -372,9 +390,5 @@ const styles = StyleSheet.create({
     fontFamily: fonts.bold,
     letterSpacing: -0.1,
   },
-  unlock: {
-    fontSize: 13,
-    fontFamily: fonts.medium,
-    marginTop: 10,
-  },
+
 });

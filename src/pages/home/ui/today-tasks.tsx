@@ -269,9 +269,17 @@ export function TodayTasks() {
    * completed by opening it.
    */
   const record = (next: readonly string[]) => {
+    const complete = tasks.length > 0 && next.length >= tasks.length;
     writeLog(currentDay(), {
       exercisesDone: [...next],
-      sessionCompleted: tasks.length > 0 && next.length >= tasks.length,
+      sessionCompleted: complete,
+      // Only on the tick that finishes the day, and only once: the rest period
+      // runs from when the work ended, and restamping it on a later edit would
+      // push the next session further away for changing one's mind about a
+      // checkbox.
+      ...(complete && logFor(currentDay())?.completedAt == null
+        ? { completedAt: Date.now() }
+        : {}),
     });
   };
 
@@ -311,12 +319,15 @@ export function TodayTasks() {
           moment it ended. */}
       {allDone && (
         <View style={[styles.allDone, { backgroundColor: meter.track }]}>
-          <Text style={[styles.allDoneTitle, { color: meter.positive }]}>
-            Done for today.
-          </Text>
-          <Text style={[styles.allDoneBlurb, { color: meter.caption }]}>
-            Tomorrow&apos;s session unlocks in the morning. Nothing else is needed today.
-          </Text>
+          <View style={[styles.allDoneDot, { backgroundColor: meter.positive }]} />
+          <View style={styles.allDoneText}>
+            <Text style={[styles.allDoneTitle, { color: colors.foreground }]}>
+              Done for today
+            </Text>
+            <Text style={[styles.allDoneBlurb, { color: meter.caption }]}>
+              Nothing else is needed. The next session unlocks after twelve hours&apos; rest.
+            </Text>
+          </View>
         </View>
       )}
 
@@ -525,16 +536,29 @@ const styles = StyleSheet.create({
     letterSpacing: -0.6,
   },
   allDone: {
-    borderRadius: 20,
+    borderRadius: 22,
     borderCurve: 'continuous',
-    paddingVertical: 14,
-    paddingHorizontal: 16,
-    marginBottom: 14,
+    paddingVertical: 16,
+    paddingHorizontal: 18,
+    // Clear of the heading above and of the first row below. It was pinned
+    // straight under the title with 14 beneath it, which read as a subtitle
+    // belonging to "Today's Tasks" rather than as a card of its own — and the
+    // heading row is absolute-positioned artwork, so it contributes no margin
+    // of its own for this to sit against.
+    marginTop: 14,
+    marginBottom: 6,
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: 10,
   },
+  /** A filled dot rather than a tick glyph: the rows below already carry ticks,
+   * and a second tick here would read as a fourth task. */
+  allDoneDot: { width: 8, height: 8, borderRadius: 4, marginTop: 7 },
+  allDoneText: { flex: 1 },
   allDoneTitle: { fontSize: 17, fontFamily: fonts.bold, letterSpacing: -0.3 },
-  allDoneBlurb: { fontSize: 14, lineHeight: 19, fontFamily: fonts.regular, marginTop: 3 },
+  allDoneBlurb: { fontSize: 14, lineHeight: 19, fontFamily: fonts.regular, marginTop: 2 },
   list: {
-    marginTop: 10,
+    marginTop: 14,
   },
   row: {
     flexDirection: 'row',
