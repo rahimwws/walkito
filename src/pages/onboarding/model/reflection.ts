@@ -41,7 +41,7 @@ type PainKey = (typeof PRIMARY_ORDER)[number];
 
 /** How each complaint is named in the reflection line. `none` has no noun —
  * there is no pain to name — so it drops out of line one entirely. */
-const PAIN_NOUN: Record<PainKey, string | null> = {
+export const PAIN_NOUN: Record<PainKey, string | null> = {
   heel: 'Heel pain',
   foot: 'Foot pain',
   achilles: 'Achilles pain',
@@ -80,17 +80,17 @@ const PROMISE = 'First changes: day 12 to 16.';
 
 /** Hiking is asked by the month; everything else by the week. Taken from the
  * load question's own blurb, which is the wording the user just read. */
-function cadence(sport: SportKey | null): string {
+export function cadence(sport: SportKey | null): string {
   return sport === 'hiking' ? 'a month' : 'a week';
 }
 
-function primaryPain(pain: readonly string[]): PainKey | null {
+export function primaryPain(pain: readonly string[]): PainKey | null {
   return PRIMARY_ORDER.find((key) => pain.includes(key)) ?? null;
 }
 
 /** The load band as the user saw it — "30–50 km", "3–5 hours" — looked up by
  * value so the reflection quotes the label rather than re-deriving it. */
-function loadLabel(sport: SportKey | null, load: readonly string[]): string | null {
+export function loadLabel(sport: SportKey | null, load: readonly string[]): string | null {
   const value = load[0];
   if (value == null) return null;
   return loadQuestionFor(sport).options.find((option) => option.value === value)?.label ?? null;

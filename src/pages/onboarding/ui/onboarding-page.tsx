@@ -39,6 +39,7 @@ import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button
 
 import { TESTIMONIALS } from '../config/testimonials';
 import { activityFor, loadQuestionFor, withName, type SportKey } from '../model/personalise';
+import { planSummary } from '../model/plan-summary';
 import { PLANS, recommendedIndex } from '../model/plans';
 import { STEPS, STEP_COUNT, stepAfter, type OnboardingStep } from '../model/steps';
 import { buildingLines } from '../model/reflection';
@@ -46,7 +47,7 @@ import { BuildingStep } from './building-step';
 import { WatchSyncStep } from './watch-sync-step';
 import { ChoiceStep } from './choice-step';
 import { ContractStep } from './contract-step';
-import { PlanChoiceStep } from './plan-choice-step';
+import { PlanStep } from './plan-step';
 import { SexStep } from './sex-step';
 import { ReferralStep } from './referral-step';
 import { SocialProofStep } from './social-proof-step';
@@ -136,7 +137,6 @@ export function OnboardingPage() {
   /** Which of the two plan lengths is showing. Null until the screen is
    * reached, so it can open on whatever the answers recommend by then rather
    * than on a choice made before the questions were asked. */
-  const [planIndex, setPlanIndex] = useState<number | null>(null);
   /** Which review the social screen is showing. Lives here rather than inside
    * that step because the shared button bar is what pages it. */
   const [review, setReview] = useState(0);
@@ -179,8 +179,9 @@ export function OnboardingPage() {
   const loadAnswer = Array.isArray(answers.load) ? answers.load : [];
 
   const runner = Array.isArray(answers.runner) ? (answers.runner[0] ?? null) : null;
-  const recommended = recommendedIndex(runner);
-  const plan = PLANS[planIndex ?? recommended];
+  // Decided from what they said about themselves, not offered. See
+  // `plan-summary.ts` for why the choice went away.
+  const plan = PLANS[recommendedIndex(runner)];
 
 
   /** Screens that own their whole canvas, with no header over them. The plan
@@ -497,7 +498,7 @@ const CONFIRM_MS = 900;
       case 'watch-sync':
         return 'Done';
       case 'plan':
-        return 'Choose my plan';
+        return 'Start my plan';
       // The label is the tell that there is more behind the button: it asks
       // for the next review until there are none left, then asks for the offer.
       case 'social':
@@ -753,12 +754,15 @@ const CONFIRM_MS = 900;
                 style={styles.scroll}
                 contentContainerStyle={styles.scrollContent}
                 showsVerticalScrollIndicator={false}>
-                <PlanChoiceStep
-                  plans={PLANS}
-                  index={planIndex ?? recommended}
-                  recommended={recommended}
-                  sex={sex}
-                  onChange={setPlanIndex}
+                <PlanStep
+                  summary={planSummary({
+                    runner,
+                    // `load` in this scope is the *question*; the answer is
+                    // `loadAnswer`, which is what the reflection line reads too.
+                    sport: sport as SportKey | null,
+                    pain,
+                    load: loadAnswer,
+                  })}
                 />
               </ScrollView>
             )}

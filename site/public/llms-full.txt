@@ -1,0 +1,165 @@
+# Walkito — full text
+
+> A 12-week exercise program for heel and foot pain in runners. The plan adapts
+> daily to logged pain and walking load, and measures progress with physical
+> retests every two weeks rather than by asking how you feel.
+
+Source: https://walkito.site
+Walkito provides exercise programming. It does not diagnose or treat any
+condition.
+
+## The 12-week program
+
+12 weeks, 6 blocks of 14 days, and a session of 3 to 8 minutes on the days that
+have one. Every 14 days the plan stops and measures you with 3 physical tests
+rather than asking how you feel.
+
+Three strength days carry the load. Mobility and balance days sit between them,
+and one day in seven is rest the plan assigns rather than rest you take — a
+prescribed rest day counts as showing up, and never breaks a streak.
+
+The morning pain you log decides the session. Report a bad morning and the plan
+steps back a level and gets shorter — three minutes, sitting down — instead of
+asking for the same work. The plan never accelerates on a good day; it only
+walks back and then returns.
+
+After the twelve weeks the program moves into maintenance: two sessions a week
+with a checkpoint every four weeks.
+
+## The evidence
+
+High-load strength training scored 29 points lower on the Foot Function Index
+than plantar-specific stretching at 3 months (randomised trial, n=48, 95% CI
+6-52, p=0.016). At 12 months the two groups had converged with no significant
+difference, so the effect is faster improvement rather than a larger one.
+Source: Rathleff MS, et al. Scand J Med Sci Sports. 2015;25(3):e292-e300.
+
+A six-week program improved navicular drop by 0.4 cm and arch angle by 16
+degrees more than control in people with *flexible* flat feet (randomised
+trial, n=52, PEDro 8/10). Rigid flat feet are structural and exercise will not
+change them.
+Source: Brijwasi T, Borkar P. J Physiother. 2023;69(1):42-46.
+
+Only short-foot programs longer than six weeks improved navicular drop;
+shorter ones showed no measurable effect.
+Source: Cheng J, et al. J Back Musculoskelet Rehabil. 2024;37(4):839-851.
+
+The 2023 clinical practice guideline grades plantar fascia and calf stretching
+A, taping A, night splints A, resistance training B, orthotics-alone B (do not
+use in isolation), and therapeutic ultrasound A - do not use. It advises
+against complete rest.
+Source: Koc TA Jr, et al. J Orthop Sports Phys Ther. 2023;53(12):CPG1-CPG39.
+
+Gait asymmetry did not predict injury in a secondary analysis of a trial with
+more than 800 runners. Walkito compares asymmetry only against the user's own
+baseline, never a population norm.
+
+## Questions
+
+### How long is the Walkito program?
+
+Twelve weeks — 84 days, run as six blocks of fourteen. There is also a six-week version of the same structure at three blocks. After the twelve weeks the plan moves into maintenance rather than ending.
+
+### How long is a daily session?
+
+Between three and eight minutes. Strength days are the longest at seven minutes, mobility and balance days are five, and a prescribed recovery day is three. Retest days are four minutes and contain no training at all.
+
+### How many days a week do I train?
+
+Three strength days a week carry the load, with mobility and balance days between them. One day in seven is rest the plan assigns rather than rest you take.
+
+### What happens if I miss a few days?
+
+Nothing is owed and nothing is queued. The plan runs on dates rather than attendance, so day 24 is day 24 whether or not you were there for day 23. There is no make-up work and no catch-up screen.
+
+### Does the program change if my pain gets worse?
+
+Yes. Logging a morning pain of seven or higher makes the same day step back one level and shrink to three minutes of unloaded work. A day on your feet far above your own baseline does the same. The plan only ever walks back and then returns; it never accelerates because you had a good day.
+
+### What do the retests measure?
+
+Three things, every fourteen days, in about four minutes: calf raises to failure, an arch hold, and single-leg balance timed on both sides. The gap between your two sides is the figure worth watching. Nothing else moves your level — not a streak, and not how the sessions felt.
+
+### Do I need an Apple Watch?
+
+No. The signals Walkito relies on — step count, walking speed and walking asymmetry — come from the iPhone itself. A watch adds sleep and resting heart rate, and without one the features that need those simply stay quiet.
+
+### Does Walkito work offline?
+
+Yes. The plan, the pain log and the whole history live on the device, and there is no account to sign into. Nothing in the daily flow needs a network connection.
+
+### Is my health data uploaded anywhere?
+
+No. Apple Health data is read on the device and summarised there, and it never leaves the phone. The only things that leave are a subscription status, and a notification token if you turn notifications on.
+
+### Which Apple Health permissions does Walkito ask for?
+
+Walking asymmetry, walking speed, step count, resting heart rate and sleep analysis to read, and workouts and mindful minutes to write. Every one is optional and can be withdrawn in iOS Settings; the plan keeps working without them.
+
+### How many notifications will I get?
+
+One a day at most and five a week at most, with nothing after 21:30. If several are ever due on the same day, the more important one is sent and the other is dropped rather than queued.
+
+### Will Walkito nag me if I stop using it?
+
+No. If three notifications go unopened in a row the app drops to two a week, and after seven it stops for a month and then sends one message. After that it stays quiet unless you come back on your own.
+
+### How does the streak work?
+
+The streak counts attention, not completion. A day is green if you logged your morning pain, or finished a session, or the plan itself prescribed rest that day. A rest day the program assigned can never break a streak.
+
+### What happens to my streak if I have a bad week?
+
+You earn one freeze a week and can hold two at a time, and a broken streak can be restored within 48 hours. A lost streak is never shown as a failure — the app offers to put it back, and if you decline the number simply starts again.
+
+### Is Walkito available on Android?
+
+No. It is iOS only, because it reads Apple Health for steps, sleep and walking asymmetry, and runs a Live Activity on the Lock Screen while a session is going.
+
+### What happens after the twelve weeks?
+
+Maintenance: two sessions a week of about eight minutes, with a checkpoint every four weeks. The plan changes job rather than ending, because the thing that undoes the work is stopping once it stops hurting.
+
+### Can Walkito tell me what is wrong with my foot?
+
+No. Walkito is a screening and exercise program. It does not diagnose and it does not treat, and it cannot identify a condition. Pain that is sharp, getting worse, or stopping you sleeping should be seen by a clinician.
+
+### How long before I notice a difference?
+
+The trial Walkito’s strength protocol follows measured its groups at three months, not weekly, so an honest answer is that it reports a difference by three months rather than by a particular day. At three months the high-load strength group scored 29 points lower on the Foot Function Index than the stretching group. At twelve months the two groups had converged, which means the strength work brought improvement forward rather than making it larger.
+
+### Is strength training better than stretching?
+
+Faster, not better. In a randomised trial of 48 people with plantar fasciitis confirmed by ultrasound, high-load strength training scored 29 points lower on the Foot Function Index at three months than plantar-specific stretching (95% CI 6–52, p = 0.016). By twelve months the two groups had converged with no significant difference. Walkito does both: the guideline grades stretching A and it runs daily from day one.
+
+### Can exercise change flat feet?
+
+For flexible flat feet, where the arch reappears when the foot is lifted off the ground, a randomised trial of 52 people found a six-week program improved navicular drop by 0.4 cm and arch angle by 16 degrees more than the control group. Rigid flat feet are a structural issue and exercise will not change them.
+
+### Should I choose the six-week plan or the twelve-week one?
+
+Twelve, if the arch is what you are after. A 2024 meta-analysis of short-foot training found that only programs longer than six weeks produced significant improvement in navicular drop; shorter ones showed no measurable effect. The six-week plan sits exactly at that boundary — long enough to train, not long enough for that finding to apply.
+
+### Should I rest completely when my heel hurts?
+
+The 2023 clinical practice guideline advises against complete rest, which increases stiffness. Walkito modifies load rather than stopping it — on a high-pain day the session becomes three minutes of unloaded work, but it still happens.
+
+### Do insoles and orthotics work?
+
+The 2023 guideline grades orthotics B, with the qualifier that they should not be used in isolation. Walkito does not recommend them as a standalone fix and does not sell any. The same guideline grades therapeutic ultrasound A — do not use.
+
+### Will the pain come back?
+
+Recurrence is common enough that Walkito does not stop at week twelve. After the program a maintenance phase keeps two sessions a week and retests every 28 days, to catch regression before it becomes pain again.
+
+### Does uneven walking mean I am injured?
+
+No. Walkito compares walking asymmetry only against your own baseline, never against a population norm, because none exists — a secondary analysis of a trial with more than 800 runners found gait asymmetry did not predict injury. The app will tell you your walking pattern has changed. It will never tell you what that means.
+
+### Do I need to log pain every day for the plan to work?
+
+No, but the plan is only as responsive as what it knows. A logged morning is what lets it step back on a bad day; with nothing logged it runs the day the template prescribes.
+
+## Not published
+There is no aggregate-user-outcome data on this site. It does not exist rather
+than being withheld.

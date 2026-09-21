@@ -426,8 +426,8 @@ export const STEPS: readonly OnboardingStep[] = [
     kind: 'plan',
     key: 'plan',
     act: 3,
-    title: 'Choose your training plan',
-    blurb: 'Both are built from your answers — pick how much runway you want.',
+    title: 'Your plan',
+    blurb: 'Built from your answers.',
   },
   {
     kind: 'contract',

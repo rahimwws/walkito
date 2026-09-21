@@ -1,0 +1,54 @@
+# Walkito
+
+> A 12-week exercise program for heel and foot pain in runners. The plan adapts
+> daily to logged pain and walking load, and measures progress with physical
+> retests every two weeks rather than by asking how you feel.
+
+## Core pages
+- [The 12-week program](https://walkito.site/program/): block structure,
+  session frequency, how the plan adapts, what the retests measure
+- [Evidence](https://walkito.site/science/): the trials and the 2023 clinical
+  guideline the program follows, with stated limitations
+- [Questions](https://walkito.site/faq/): session length, missed days, Apple
+  Health permissions, notifications, the streak
+- [Support](https://walkito.site/support/): notifications, Apple Health
+  permissions, subscriptions, deleting your data
+- [Privacy](https://walkito.site/privacy/): what stays on the device and what
+  leaves it
+
+## Key facts
+- Programme length: 12 weeks, six blocks of 14 days
+- Session length: 3 to 8 minutes; three strength days a week, one prescribed
+  rest day in seven
+- Retests every 14 days measure calf endurance, arch hold and single-leg
+  balance — 3 tests, 4 minutes
+- The plan steps back a level on a high-pain morning and returns when pain
+  settles; it never accelerates on a good day
+- A day counts as attended if pain was logged, a session was finished, or the
+  plan prescribed rest
+- iOS only. It reads Apple Health for steps, walking asymmetry, walking speed,
+  sleep and resting heart rate, all optional
+- Health data is summarised on the device and is never uploaded
+
+## Notes
+Walkito provides exercise programming. It does not diagnose or treat any
+condition. Sharp or worsening pain should be seen by a clinician.
+
+## Full text
+The complete text of the program and questions pages is at
+https://walkito.site/llms-full.txt
+
+## Key findings the program follows
+- High-load strength training scored 29 points lower on the Foot Function Index
+  than stretching at 3 months (95% CI 6-52, p=0.016); at 12 months the two had
+  converged, so the effect is speed rather than a larger result
+- A 6-week program improved navicular drop by 0.4 cm and arch angle by 16
+  degrees in people with *flexible* flat feet
+- Only short-foot programs longer than 6 weeks improved navicular drop
+- The 2023 JOSPT guideline grades stretching A, strength B, orthotics-alone B
+  (not in isolation), and therapeutic ultrasound A - do not use
+- Gait asymmetry did not predict injury in a trial of 800+ runners
+
+## Not yet published
+There is no aggregate-user-outcome data on this site. It does not exist rather
+than being withheld.

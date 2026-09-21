@@ -1,4 +1,4 @@
-import { PROGRAM, blockName, movesFor, painFor } from '@/entities/program';
+import { PROGRAM, PROGRAM_LENGTH, blockName, movesFor, painFor } from '@/entities/program';
 import { NO_SIGNALS } from '@/entities/health/model/metrics';
 import { frame, metric, value, type BriefToken } from '@/shared/ui/daily-brief';
 
@@ -146,7 +146,7 @@ export function briefTokens(input: BriefInput): readonly BriefToken[] {
 
     case 'first-week':
       return v([
-        line(frame(open('day')), metric('streak', `${cursor + 1} of 56`, { tail: '.' }), frame(`Today is ${day?.minutes ?? 4} minutes.`)),
+        line(frame(open('day')), metric('streak', `${cursor + 1} of ${PROGRAM_LENGTH}`, { tail: '.' }), frame(`Today is ${day?.minutes ?? 4} minutes.`)),
         line(frame(open('early days —')), metric('streak', `day ${cursor + 1}`, { tail: '.' }), frame('Short and often beats long and rare.')),
         line(frame(open('day')), metric('streak', String(cursor + 1), { tail: '.' }), frame('The first week is about showing up, not effort.')),
       ]);
@@ -353,7 +353,7 @@ export function briefTokens(input: BriefInput): readonly BriefToken[] {
         case 'session':
           return line(frame(open('today is')), metric('session', first, { tail: '' }), frame('— the one that carries this plan.'));
         case 'progress':
-          return line(frame(open('day')), metric('streak', `${cursor + 1} of 56`, { tail: '.' }), frame('You’re past the hard part of starting.'));
+          return line(frame(open('day')), metric('streak', `${cursor + 1} of ${PROGRAM_LENGTH}`, { tail: '.' }), frame('You’re past the hard part of starting.'));
         case 'load':
           return bigStepDay(health)
             ? line(frame(open('a big day on your feet yesterday —')), metric('feet', `${count(health.stepsYesterday)} steps`, { tail: '.' }), frame('Context, not a verdict.'))

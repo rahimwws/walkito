@@ -46,6 +46,12 @@ jobs:
         # found".
         run: bun run verify:native
 
+      - name: No debug shortcuts left in
+        # A `useState` seeded to jump past onboarding, a skipped test, a FIXME.
+        # Invisible to the type checker and to the suite — the app compiles,
+        # runs, and starts on the wrong screen.
+        run: bun run verify:debug
+
       - name: No secret keys in the bundle
         # An EXPO_PUBLIC_ variable is compiled into the shipped JavaScript. A
         # RevenueCat secret key (`sk_…`) there is published to every device, and
