@@ -1,3 +1,5 @@
+import { readFileSync } from 'node:fs';
+
 import { describe, expect, test } from 'bun:test';
 
 import {
@@ -168,5 +170,39 @@ describe('the saving against paying monthly', () => {
 
   test('is zero when the two cost the same over three months', () => {
     expect(saving(74.97, 24.99)).toBe(0);
+  });
+});
+
+/**
+ * The win-back discount is on the one-time purchase only.
+ *
+ * So the subscription comes off the sheet while it runs. These assert the
+ * screen's shape rather than its arithmetic — the alternative is mounting
+ * expo-router under bun, and what breaks here is a row left visible, not a
+ * number.
+ */
+describe('the discounted sheet', () => {
+  const page = readFileSync(
+    new URL('../src/pages/offer/ui/offer-page.tsx', import.meta.url),
+    'utf8',
+  );
+
+  test('hides the monthly row', () => {
+    // Full price beside a discounted programme asks the user to work out which
+    // the saving applies to, and the monthly figure is the better-looking of
+    // the two — the opposite of what a win-back is for.
+    expect(page).toContain('const monthlyOffered = !boosted;');
+    expect(page).toMatch(/\{monthlyOffered && \(\s*<TierRow\s+title="Monthly"/);
+  });
+
+  test('stops disclosing renewal terms for a plan it no longer offers', () => {
+    // Apple wants the terms for what the screen sells. Describing a charge the
+    // user cannot make from here is not a disclosure.
+    expect(page).toMatch(/\{monthlyOffered && \(\s*<Text[^>]*>\s*\{`Monthly:/);
+  });
+
+  test('moves the selection onto the only row left', () => {
+    // Continue would otherwise be armed against a plan with no row.
+    expect(page).toMatch(/if \(boosted\) setTier\('program'\);/);
   });
 });

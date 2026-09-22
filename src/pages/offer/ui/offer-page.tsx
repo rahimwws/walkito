@@ -270,6 +270,23 @@ export function OfferPage() {
   const saves = savingPct > 0;
 
   /**
+   * The figure at the top, and which comparison it is making.
+   *
+   * Discounted: the discount itself, against the programme's own full price.
+   * That is the whole reason the sheet looks different, and with the monthly
+   * row gone there is nothing else on screen for a saving to be measured
+   * against.
+   *
+   * Otherwise: the programme against three months of the subscription, which is
+   * the comparison the two rows underneath are making.
+   *
+   * Null when neither holds, and the number is not drawn at all — a hero figure
+   * is a claim, and the version of this that always rendered something is how
+   * the screen came to open on "0%".
+   */
+  const heroPct = discounted ? offerPct : saves ? savingPct : null;
+
+  /**
    * The number across the top, and what it means in each of the two states.
    *
    * Standard: how much cheaper the programme is per week than paying monthly.
@@ -298,6 +315,26 @@ export function OfferPage() {
     // would fail against a null plan.
     if (ownsProgram) setTier('monthly');
   }, [ownsProgram]);
+
+  /**
+   * The discount is on the one-time purchase, and only on it.
+   *
+   * So the subscription comes off the sheet entirely while it is running.
+   * Leaving it up would put a full-price monthly row beside a discounted
+   * programme and ask somebody to work out that the saving applies to one of
+   * them — and the row underneath would quietly be the better-looking monthly
+   * figure, which is the opposite of what a win-back offer is for.
+   *
+   * Never both hidden: `ownsProgram` takes the programme row away and this
+   * takes the monthly one, and the two cannot hold at once — somebody with an
+   * active pass is entitled, and an entitled user never reaches this screen.
+   */
+  const monthlyOffered = !boosted;
+
+  useEffect(() => {
+    // The only row left is the programme, so that is what Continue must buy.
+    if (boosted) setTier('program');
+  }, [boosted]);
 
   // The haptic that used to accompany the number surging brighter. The number
   // is gone — see the note on the hero below — but arriving on the better offer
@@ -474,9 +511,9 @@ export function OfferPage() {
           to zero the moment the store returned real prices, leaving the screen
           opening on "0%". This one is the same three months bought two ways, so
           it is a figure the user could check on the two rows below. */}
-      {saves && (
+      {heroPct != null && (
         <View style={styles.numberRow}>
-          <Text style={styles.number}>{savingPct}</Text>
+          <Text style={styles.number}>{heroPct}</Text>
           <Text style={styles.percent}>%</Text>
         </View>
       )}
@@ -573,16 +610,18 @@ export function OfferPage() {
             setTier('program');
           }}
         />
-        <TierRow
-          title="Monthly"
-          price={`${monthlyText}/month`}
-          note={`${money(monthlyPerWeek)}/week · Cancel anytime`}
-          selected={tier === 'monthly'}
-          onPress={() => {
-            Haptics.selectionAsync();
-            setTier('monthly');
-          }}
-        />
+        {monthlyOffered && (
+          <TierRow
+            title="Monthly"
+            price={`${monthlyText}/month`}
+            note={`${money(monthlyPerWeek)}/week · Cancel anytime`}
+            selected={tier === 'monthly'}
+            onPress={() => {
+              Haptics.selectionAsync();
+              setTier('monthly');
+            }}
+          />
+        )}
       </Animated.View>
 
       {/* The renewal terms Apple requires on an auto-renewable subscription.
@@ -611,9 +650,14 @@ export function OfferPage() {
         <Text style={[styles.terms, { color: meter.caption }]}>
           {`12-Week Program: one-time payment of ${programText} for 12 weeks of access. Does not renew and will not charge you again.`}
         </Text>
-        <Text style={[styles.terms, { color: meter.caption }]}>
-          {`Monthly: ${monthlyText} per month. Renews automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel in your App Store account settings.`}
-        </Text>
+        {/* Only while it is on sale. Apple wants the renewal terms for what the
+            screen is offering; disclosing a subscription that is not on it
+            would describe a charge the user cannot make from here. */}
+        {monthlyOffered && (
+          <Text style={[styles.terms, { color: meter.caption }]}>
+            {`Monthly: ${monthlyText} per month. Renews automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel in your App Store account settings.`}
+          </Text>
+        )}
         <View style={styles.legalRow}>
           <Text
             accessibilityRole="link"
