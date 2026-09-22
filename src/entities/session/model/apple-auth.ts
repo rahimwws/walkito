@@ -35,7 +35,12 @@ export type AppleSignIn =
   | { status: 'failed'; error: unknown };
 
 export async function signInWithApple(): Promise<AppleSignIn> {
-  // Android and the simulator without a signed-in Apple ID both land here.
+  // Android lands here. A simulator does **not**, which is worth saying because
+  // the opposite was written here and is wrong: `isAvailableAsync` reports true
+  // on any iOS 13+ simulator whether or not an Apple ID is attached, so a
+  // simulator with none goes on to `signInAsync` and fails there. That failure
+  // is not "unavailable" and must not be treated as one — it is why the intro
+  // screen needs a second way in rather than a fall-through.
   if (Platform.OS !== 'ios' || !(await AppleAuthentication.isAvailableAsync())) {
     return { status: 'unavailable' };
   }

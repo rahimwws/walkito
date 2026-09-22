@@ -98,3 +98,17 @@ export function currentUserId(): Promise<string | null> {
 
   return signingIn;
 }
+
+/**
+ * Drop the cached identity, so the next `currentUserId()` asks the client again.
+ *
+ * The promise above is cached for the life of the process, which is right while
+ * there is one identity and wrong the moment there can be two. Signing in with
+ * a password replaces the anonymous session with a real account — a different
+ * user id — and anything holding the cached promise would go on addressing the
+ * anonymous one, so an invite code would be read for a user who is no longer
+ * signed in.
+ */
+export function forgetIdentity(): void {
+  signingIn = null;
+}

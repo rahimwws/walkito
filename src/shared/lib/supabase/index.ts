@@ -1,1 +1,1 @@
-export { currentUserId, hasBackend, supabase } from './supabase';
+export { currentUserId, forgetIdentity, hasBackend, supabase } from './supabase';

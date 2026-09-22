@@ -4,7 +4,7 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Keyboard, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Keyboard, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { KeyboardAvoidingView } from 'react-native-keyboard-controller';
 import Animated, {
   Easing,
@@ -53,6 +53,7 @@ import { ReferralStep } from './referral-step';
 import { SocialProofStep } from './social-proof-step';
 import { SizeStep, type SizeUnit } from './size-step';
 import { HealthStep } from './health-step';
+import { EmailSignInSheet } from './email-sign-in-sheet';
 import { IntroStep } from './intro-step';
 import { MeasureStep } from './measure-step';
 import { NameStep } from './name-step';
@@ -149,6 +150,9 @@ export function OnboardingPage() {
    * cannot offer it. The intro screen says so and the flow holds, because
    * advancing silently would look exactly like a sign-in that worked. */
   const [signInFailed, setSignInFailed] = useState(false);
+  /** The email-and-password door, which App Store review needs — see the sheet
+   * itself for why one sign-in method is not enough. */
+  const [emailSignIn, setEmailSignIn] = useState(false);
   /** The invite code as typed, and what came of trying it. Held here rather
    * than in the step so a failed attempt survives the step's own re-renders. */
   const [referralCode, setReferralCode] = useState('');
@@ -872,17 +876,52 @@ const CONFIRM_MS = 900;
                     : undefined
                 }>
                 <PrimaryButton label={ctaLabel} onPress={onNext} disabled={!canAdvance} />
+                {/* The other way in. Under the Apple button rather than beside
+                    it, because Apple sign-in is the one this screen leads with
+                    and two equal-weight buttons would make the choice look
+                    like it matters. It is not decoration: without it a failed
+                    Apple authorisation is the end of the flow, and there would
+                    be no credentials to hand App Store review. */}
+                {step.kind === 'intro' && (
+                  <Pressable
+                    accessibilityRole="button"
+                    onPress={() => {
+                      Haptics.selectionAsync();
+                      setEmailSignIn(true);
+                    }}
+                    disabled={authing}
+                    style={({ pressed }) => [styles.altAuth, pressed && { opacity: 0.6 }]}>
+                    <Text style={[styles.altAuthLabel, { color: meter.caption }]}>
+                      Sign in with email
+                    </Text>
+                  </Pressable>
+                )}
               </Animated.View>
             )}
           </Animated.View>
         </View>
       )}
 
+      <EmailSignInSheet
+        visible={emailSignIn}
+        onClose={() => setEmailSignIn(false)}
+        onSignedIn={(address) => {
+          setEmailSignIn(false);
+          setProfileEmail(address);
+          // Clears any earlier Apple failure: they are in, and leaving the
+          // message up would have the screen reporting a problem they have
+          // just solved another way.
+          setSignInFailed(false);
+          step1(true);
+        }}
+      />
     </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
+  altAuth: { alignItems: 'center', paddingTop: 12 },
+  altAuthLabel: { fontSize: 15, fontFamily: fonts.medium, letterSpacing: -0.2 },
   root: {
     flex: 1,
     paddingHorizontal: SIDE_PAD,
