@@ -5,7 +5,7 @@ import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
-import { AppState, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Alert, AppState, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   FadeIn,
@@ -28,7 +28,10 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { cancelWinback, notificationsAllowed, scheduleWinback } from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
 import { LEGAL, PRIMARY, accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
+import { resetOnboarding } from '@/entities/session';
+import { kv } from '@/shared/lib/storage';
 import { useColorScheme } from '@/shared/lib/theme';
+import { clearClips } from '@/widgets/session-player';
 import { Linking } from 'react-native';
 
 import {
@@ -454,9 +457,19 @@ export function OfferPage() {
           // grabber. As the gate it is a full screen, so 52pt starts at the top
           // of the display and the headline ran under the Dynamic Island.
           paddingTop: insets.top + 16,
-          paddingBottom: Math.max(insets.bottom, 20) + 8,
         },
       ]}>
+      {/* The body scrolls and the button does not.
+          This was one flex column with `marginTop: 'auto'` on the terms block,
+          which puts the button on the bottom edge only while everything fits.
+          On a shorter phone — or with the larger text sizes the billing rows
+          now use — the column overflowed and Continue was pushed off the
+          screen entirely. On a gate with no way back that is not a layout
+          nitpick: there was no way to buy and no way out. */}
+      <ScrollView
+        style={styles.body}
+        contentContainerStyle={styles.bodyContent}
+        showsVerticalScrollIndicator={false}>
       <Animated.View style={[styles.numberWrap, numberStyle]}>
         {/* The bloom is its own view rather than a shadow on the glyphs. A
             text shadow wide enough to read as light gets clipped to the text's
@@ -484,7 +497,9 @@ export function OfferPage() {
       <Animated.Text
         entering={FadeIn.delay(STAGGER_MS).duration(320).reduceMotion(ReduceMotion.System)}
         style={[styles.headline, { color: colors.foreground }]}>
-        {boosted ? 'Your comeback price on the full year' : 'Get 12 months for the price of 6'}
+        {boosted
+          ? 'Your comeback price on the 12-week program'
+          : `The 12-week program costs ${headlinePct}% less per week`}
       </Animated.Text>
       <Animated.Text
         entering={FadeIn.delay(STAGGER_MS * 2).duration(320).reduceMotion(ReduceMotion.System)}
@@ -622,14 +637,14 @@ export function OfferPage() {
           </Text>
         </View>
       </Animated.View>
+      </ScrollView>
 
-      <Animated.View
-        style={styles.cta}
-        entering={FadeInDown.delay(STAGGER_MS * 7)
-          .duration(360)
-          .reduceMotion(ReduceMotion.System)}>
+      {/* Outside the scroll, so the one action this screen exists for is always
+          on screen. */}
+      <View style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 20) + 8 }]}>
         <PrimaryButton label={busy ? 'Processing…' : 'Continue'} disabled={busy} onPress={start} />
-      </Animated.View>
+        <DevEscape />
+      </View>
 
       {/* Owns the dismissal. The paywall vanishing into Home is what backing out
           looks like too, so the one moment worth marking was the one that read
@@ -754,6 +769,57 @@ function TierRow({
   );
 }
 
+
+/**
+ * The way back to the first screen, from the one screen that has no way back.
+ *
+ * Development builds only. The paywall is a hard gate — no tabs behind it, no
+ * dismissal — which is correct for a user and a dead end for anyone testing:
+ * the reset control lives in the profile, the profile is inside the tabs, and
+ * the tabs are what the gate is holding shut. So the only escape was to delete
+ * the app, which also deletes the clips and the account.
+ *
+ * `__DEV__` is false in every release build, so this does not exist in one.
+ * That matters here more than it does in the profile: a "wipe everything"
+ * control on the paywall would be a way past the paywall.
+ */
+function DevEscape() {
+  const scheme = useColorScheme();
+  const meter = meterColors[scheme];
+
+  if (!__DEV__) return null;
+
+  const confirm = () => {
+    Haptics.selectionAsync();
+    Alert.alert(
+      'Start from the first screen?',
+      'Clears onboarding, the programme, the pain log and the cached clips on ' +
+        'this device. Your account and invite code stay. Development only.',
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Reset',
+          style: 'destructive',
+          onPress: () => {
+            // Storage first, then the flag: `resetOnboarding` flips the guard in
+            // the root layout, and doing that before the wipe would mount the
+            // questionnaire over data that is about to vanish.
+            kv.clearAll();
+            clearClips();
+            resetOnboarding();
+          },
+        },
+      ],
+    );
+  };
+
+  return (
+    <Pressable accessibilityRole="button" onPress={confirm} style={styles.devEscape}>
+      <Text style={[styles.terms, { color: meter.unit }]}>Reset to first screen (dev)</Text>
+    </Pressable>
+  );
+}
+
 const styles = StyleSheet.create({
   sheet: {
     flex: 1,
@@ -762,16 +828,21 @@ const styles = StyleSheet.create({
     paddingHorizontal: 22,
     gap: 16,
   },
-  /** Takes up the slack in a sheet that is now taller than its contents, so
-   * the button rides the bottom edge instead of floating mid-screen. */
+  /** The scrolling half. `flex: 1` so it yields to the pinned button below
+   * rather than pushing it off the screen, which is what the old single-column
+   * layout did on any device the content did not happen to fit. */
+  body: { flex: 1 },
+  bodyContent: { gap: 16, paddingBottom: 16 },
+  /** Pinned. Padding rather than margin so the safe-area inset is part of the
+   * tappable block's own box. */
   cta: {
-    marginTop: 0,
+    paddingTop: 4,
   },
+  devEscape: { alignItems: 'center', paddingTop: 10 },
   /** Same size and weight as `tierNote`, which is the billing line it follows.
    * Pushed to the bottom with the button so it reads as part of the commit,
    * not as another feature row. */
   termsBlock: {
-    marginTop: 'auto',
     paddingTop: 18,
     gap: 6,
   },
