@@ -30,6 +30,7 @@ import { Linking } from 'react-native';
 import {
   OFFERINGS,
   PRINTED_PRICES as PRINTED,
+  PROGRAM_MONTHS,
   purchases,
   type Offering,
 } from '@/entities/purchase';
@@ -246,6 +247,29 @@ export function OfferPage() {
   const discounted = offerPct > 0;
 
   /**
+   * How much the programme saves against paying monthly for the same time.
+   *
+   * Twelve weeks is three months, so the honest comparison is one payment of
+   * the programme price against three of the monthly one — the same access,
+   * bought two ways. That is a real saving on a real span of time, unlike the
+   * per-week gap this replaced, which compared a rate to a rate and produced a
+   * figure nobody is ever charged.
+   *
+   * Computed, never asserted. If the monthly price moves in App Store Connect
+   * the badge moves with it, and if the programme ever stops being the cheaper
+   * of the two this goes to zero and the claim disappears rather than turning
+   * into a lie. That matters more than it sounds: the store is currently
+   * returning a monthly price that makes this negative.
+   */
+  const monthsOfMonthly = monthlyAmount * PROGRAM_MONTHS;
+  const savingPct =
+    monthsOfMonthly > 0
+      ? Math.round((1 - programAmount / monthsOfMonthly) * 100)
+      : 0;
+  /** Only claim a saving when there is one. */
+  const saves = savingPct > 0;
+
+  /**
    * The number across the top, and what it means in each of the two states.
    *
    * Standard: how much cheaper the programme is per week than paying monthly.
@@ -444,10 +468,27 @@ export function OfferPage() {
         </Animated.View>
       )}
 
+      {/* The saving, at display size.
+          Shown only when the prices support it — see `savingPct`. A hero number
+          is a claim, and the last one was computed from a per-week gap that went
+          to zero the moment the store returned real prices, leaving the screen
+          opening on "0%". This one is the same three months bought two ways, so
+          it is a figure the user could check on the two rows below. */}
+      {saves && (
+        <View style={styles.numberRow}>
+          <Text style={styles.number}>{savingPct}</Text>
+          <Text style={styles.percent}>%</Text>
+        </View>
+      )}
+
       <Animated.Text
         entering={FadeIn.delay(STAGGER_MS).duration(320).reduceMotion(ReduceMotion.System)}
         style={[styles.headline, { color: colors.foreground }]}>
-        {boosted ? 'Your comeback price on the 12-week program' : 'Keep running while it heals'}
+        {boosted
+          ? 'Your comeback price on the 12-week program'
+          : saves
+            ? `Pay once for ${PROGRAM_MONTHS} months and save ${savingPct}%`
+            : `Pay once for ${PROGRAM_MONTHS} months, or month to month`}
       </Animated.Text>
       <Animated.Text
         entering={FadeIn.delay(STAGGER_MS * 2).duration(320).reduceMotion(ReduceMotion.System)}
@@ -497,7 +538,18 @@ export function OfferPage() {
             not. */}
         <TierRow
           title="12-Week Program"
-          badge={ownsProgram ? undefined : discounted ? `${offerPct}% OFF` : 'BEST VALUE'}
+          badge={
+            ownsProgram
+              ? undefined
+              : discounted
+                ? `${offerPct}% OFF`
+                : // Only when the arithmetic supports it. "BEST VALUE" is a
+                  // claim too, so it also waits for the programme to actually
+                  // be the cheaper of the two.
+                  saves
+                  ? `SAVE ${savingPct}%`
+                  : undefined
+          }
           // What they already have, rather than what it would cost. A price on
           // a product somebody owns is an invitation to buy it twice.
           price={ownsProgram ? 'Active' : `${programText} one-time`}
@@ -507,7 +559,7 @@ export function OfferPage() {
                   day: 'numeric',
                   month: 'long',
                 })}`
-              : `${money(programPerWeek)}/week · No subscription`
+              : `${PROGRAM_MONTHS} months of access · ${money(programPerWeek)}/week · No subscription`
           }
           disabled={ownsProgram}
           was={
@@ -729,6 +781,29 @@ const styles = StyleSheet.create({
    * rather than pushing it off the screen, which is what the old single-column
    * layout did on any device the content did not happen to fit. */
   body: { flex: 1 },
+  /** The saving, at display size. No glow and no arrival animation this time:
+   * the previous version carried a bloom built from two gradient layers and a
+   * spring, all of it in service of a number that turned out to be wrong. The
+   * figure is the point. */
+  numberRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+  },
+  number: {
+    fontSize: 108,
+    lineHeight: 112,
+    fontFamily: fonts.heavy,
+    letterSpacing: -4,
+    color: PRIMARY,
+  },
+  percent: {
+    marginTop: 14,
+    fontSize: 48,
+    fontFamily: fonts.heavy,
+    letterSpacing: -1,
+    color: PRIMARY,
+  },
   bodyContent: { gap: 16, paddingBottom: 16 },
   /** Pinned. Padding rather than margin so the safe-area inset is part of the
    * tappable block's own box. */

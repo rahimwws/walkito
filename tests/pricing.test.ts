@@ -6,6 +6,7 @@ import {
   PRINTED_PRICES,
   PROGRAM_ACCESS_DAYS,
   PROGRAM_IDS,
+  PROGRAM_MONTHS,
   PROGRAM_PACKAGE,
   PRODUCTS,
 } from '../src/entities/purchase/model/purchase';
@@ -130,5 +131,42 @@ describe('the store contract', () => {
     expect(PRINTED_PRICES.monthly).toBe(24.99);
     expect(PRINTED_PRICES.program).toBe(49.99);
     expect(PRINTED_PRICES.programOffer).toBe(14.99);
+  });
+});
+
+/**
+ * The saving on the paywall.
+ *
+ * Twelve weeks is three months, so the comparison is one payment of the
+ * programme price against three of the monthly one — the same access, bought
+ * two ways. The figure this replaced compared per-week rates, which is a
+ * comparison of two numbers nobody is ever charged, and it collapsed to zero
+ * the moment the store returned a real monthly price.
+ */
+describe('the saving against paying monthly', () => {
+  const saving = (program: number, monthly: number) =>
+    monthly > 0 ? Math.round((1 - program / (monthly * PROGRAM_MONTHS)) * 100) : 0;
+
+  test('is 33% at the configured prices', () => {
+    // $49.99 once against 3 × $24.99 = $74.97.
+    expect(saving(PROGRAM, MONTHLY)).toBe(33);
+  });
+
+  test('twelve weeks is three months', () => {
+    // The badge, the headline and the row's note all say three. If the plan
+    // ever becomes sixteen weeks, this is what forces the arithmetic to follow.
+    expect(PROGRAM_MONTHS).toBe(3);
+  });
+
+  test('goes negative when the programme is the dearer option', () => {
+    // Not hypothetical: the store was returning $9.99/month while the paywall
+    // was configured for $24.99, which makes three months $29.97 against a
+    // $49.99 programme. The paywall must show no badge here rather than a
+    // saving that does not exist.
+    expect(saving(PROGRAM, 9.99)).toBeLessThan(0);
+  });
+
+  test('is zero when the two cost the same over three months', () => {
+    expect(saving(74.97, 24.99)).toBe(0);
   });
 });

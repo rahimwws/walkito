@@ -106,6 +106,15 @@ export const OFFERINGS = {
 export const PROGRAM_PACKAGE = 'program';
 
 /**
+ * The programme's length in months, for comparing it with the subscription.
+ *
+ * Twelve weeks is three months. Written down because the paywall's saving
+ * figure depends on it, and "3" appearing loose in that arithmetic is how a
+ * plan that becomes sixteen weeks leaves a badge quoting the old maths.
+ */
+export const PROGRAM_MONTHS = 3;
+
+/**
  * How long a programme purchase grants access for.
  *
  * Ninety days, not the eighty-four the plan actually runs. Somebody who buys on
