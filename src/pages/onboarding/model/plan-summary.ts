@@ -1,8 +1,10 @@
 import { BLOCK_LENGTH, WEEK, blocksFor, type PlanLength } from '@/entities/program';
+import type { Translate } from '@/shared/lib/i18n';
 
 import type { SportKey } from './personalise';
 import { PLANS, recommendedIndex } from './plans';
-import { PAIN_NOUN, cadence, loadLabel, primaryPain } from './reflection';
+import { PAIN_NOUN, primaryPain, volumeLine } from './reflection';
+import type { Phrase } from './steps';
 
 /** One stretch of the plan, as a row. */
 export type PlanPhase = {
@@ -30,6 +32,7 @@ export type PlanSummary = {
 };
 
 export type PlanSummaryInput = {
+  t: Translate;
   runner: string | null;
   sport: SportKey | null;
   pain: readonly string[];
@@ -38,19 +41,22 @@ export type PlanSummaryInput = {
 
 /** What each stretch of the plan is for. Three, because the programme has three
  * shapes to it however many blocks that takes: calm it, build it, load it. */
-const PHASE_LABELS = [
-  'settle the irritation',
-  'build the arch',
-  'back to full load',
-] as const;
+const PHASE_LABELS: readonly Phrase[] = [
+  (t) => t('onboarding.plan.phaseSettle'),
+  (t) => t('onboarding.plan.phaseBuild'),
+  (t) => t('onboarding.plan.phaseLoad'),
+];
 
 const WEEKS_PER_BLOCK = BLOCK_LENGTH / 7;
 
-/** "Weeks 1–2", or "Week 3" where a stretch is a single week. */
-function weekRange(fromBlock: number, toBlock: number): string {
+/** "Weeks 1–2", or "Week 3" where a stretch is a single week. Two templates
+ * because the plural noun is not the singular with an s in every language. */
+function weekRange(t: Translate, fromBlock: number, toBlock: number): string {
   const first = (fromBlock - 1) * WEEKS_PER_BLOCK + 1;
   const last = toBlock * WEEKS_PER_BLOCK;
-  return first === last ? `Week ${first}` : `Weeks ${first}–${last}`;
+  return first === last
+    ? t('onboarding.plan.week', { n: first })
+    : t('onboarding.plan.weeks', { from: first, to: last });
 }
 
 /**
@@ -61,7 +67,7 @@ function weekRange(fromBlock: number, toBlock: number): string {
  * and on the six-week one as 1–2, 3–4 and 5–6. Derived rather than written down
  * so the rows cannot describe a shape the programme no longer has.
  */
-function phasesFor(planLength: PlanLength): readonly PlanPhase[] {
+function phasesFor(t: Translate, planLength: PlanLength): readonly PlanPhase[] {
   const blocks = blocksFor(planLength);
   const total = blocks.length;
   const tailSize = total > 3 ? 2 : 1;
@@ -76,7 +82,7 @@ function phasesFor(planLength: PlanLength): readonly PlanPhase[] {
     // A plan short enough that the middle stretch is empty drops it rather than
     // printing a range that runs backwards.
     .filter(([from, to]) => from <= to)
-    .map(([from, to], i) => ({ weeks: weekRange(from, to), label: PHASE_LABELS[i] }));
+    .map(([from, to], i) => ({ weeks: weekRange(t, from, to), label: PHASE_LABELS[i](t) }));
 }
 
 /**
@@ -91,26 +97,30 @@ function phasesFor(planLength: PlanLength): readonly PlanPhase[] {
  * The closing clause is not copy either. Block one prescribes no loaded work at
  * all — see `FIRST_LOADED_BLOCK` — so "before any loading" is a description of
  * the table rather than a promise about it.
+ *
+ * Three whole sentences rather than one assembled from an opening, a settling
+ * clause and a spelled-out number. The number is spelled inside each template
+ * because a digit in the middle of a sentence reads as data and this clause is
+ * prose; `WEEKS_PER_BLOCK` has been two for as long as the programme has had
+ * blocks, and moving it means rewriting these three lines in all three
+ * languages rather than changing a constant.
  */
 function reflectionFor(
+  t: Translate,
   sport: SportKey | null,
   pain: readonly string[],
   load: readonly string[],
 ): string | null {
   const key = primaryPain(pain);
   const noun = key != null ? PAIN_NOUN[key] : null;
-  const band = loadLabel(sport, load);
-  const volume = band != null ? `${band} ${cadence(sport)}` : null;
+  const volume = volumeLine(t, sport, load);
 
-  const facts = [noun, volume].filter((part): part is string => part != null);
-  if (facts.length === 0) return null;
-
-  const opening = facts.join(', and ');
-  const settling = noun != null ? 'calm things down' : 'build a base';
-  // Spelled, not figured. A digit in the middle of a sentence reads as data,
-  // and this clause is prose — the numbers on this screen belong in the rows.
-  const spelled = WEEKS_PER_BLOCK === 2 ? 'two' : String(WEEKS_PER_BLOCK);
-  return `${opening}. The first ${spelled} weeks ${settling} before any loading.`;
+  if (noun != null && volume != null) {
+    return t('onboarding.plan.reflectionBoth', { pain: noun(t), volume });
+  }
+  if (noun != null) return t('onboarding.plan.reflectionPain', { pain: noun(t) });
+  if (volume != null) return t('onboarding.plan.reflectionVolume', { volume });
+  return null;
 }
 
 /**
@@ -122,7 +132,7 @@ function reflectionFor(
  * to suspect the question is really about price. The length is still decided by
  * what they said about themselves; it is simply decided rather than offered.
  */
-export function planSummary({ runner, sport, pain, load }: PlanSummaryInput): PlanSummary {
+export function planSummary({ t, runner, sport, pain, load }: PlanSummaryInput): PlanSummary {
   const plan = PLANS[recommendedIndex(runner)];
   const planLength: PlanLength = plan.weeks >= 12 ? 84 : 42;
 
@@ -130,7 +140,7 @@ export function planSummary({ runner, sport, pain, load }: PlanSummaryInput): Pl
     wordmark: plan.wordmark,
     weeks: plan.weeks,
     strengthDays: WEEK.filter((day) => day.kind === 'strength').length,
-    reflection: reflectionFor(sport, pain, load),
-    phases: phasesFor(planLength),
+    reflection: reflectionFor(t, sport, pain, load),
+    phases: phasesFor(t, planLength),
   };
 }

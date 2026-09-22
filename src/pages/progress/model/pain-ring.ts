@@ -27,9 +27,11 @@ export function painRing(pain: number, scheme: 'light' | 'dark'): string {
   return tone.red.fill;
 }
 
-/** The three stops the legend shows, once. */
+/** The three stops the legend shows, once. The label is a catalogue key rather
+ * than a word — this file is pure, and the legend resolves it where it has a
+ * translator. */
 export const PAIN_LEGEND = [
-  { pain: 1, label: 'Easy' },
-  { pain: 5, label: 'Sore' },
-  { pain: 8, label: 'Sharp' },
+  { pain: 1, label: 'progress.painEasy' },
+  { pain: 5, label: 'progress.painSore' },
+  { pain: 8, label: 'progress.painSharp' },
 ] as const;

@@ -13,7 +13,7 @@ import Animated, {
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 
-import type { OnboardingOption } from '../model/steps';
+import type { ResolvedOption } from '../model/steps';
 
 const HEIGHT = 88;
 const RADIUS = 18;
@@ -27,7 +27,7 @@ const SELECT_MS = 220;
 const PRESS_MS = 90;
 
 export type OptionCardProps = {
-  option: OnboardingOption;
+  option: ResolvedOption;
   selected: boolean;
   onSelect: () => void;
 };

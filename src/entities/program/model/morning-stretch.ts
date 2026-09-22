@@ -15,6 +15,8 @@
  * is no loaded work yet for it to protect.
  */
 
+import { getLanguage, translatorFor } from '@/shared/lib/i18n';
+
 import { blockFor, type PlanLength } from './blocks';
 import { exerciseById, type Exercise } from './exercises';
 import { prescriptionFor, type Prescription } from './prescription';
@@ -32,10 +34,29 @@ export const MORNING_STRETCH_MINUTES = 1;
 /**
  * The line, wherever it appears.
  *
- * One constant because it has to be identical in the check-in and in the
+ * One key because it has to be identical in the check-in and in the
  * notification that fires at wake time — a user who reads two different
  * versions of the same instruction has to work out which one is right, and the
  * whole value of this is that it is done without thinking.
+ *
+ * A function rather than a constant, for the reason the catalogue keys exist at
+ * all: this module is evaluated once and the language can change afterwards, so
+ * a `const` here would be the wake-time notification speaking whatever language
+ * the app happened to launch in.
+ */
+export const MORNING_STRETCH_COPY_KEY = 'exercises.morningStretch.copy' as const;
+
+export function morningStretchCopy(): string {
+  return translatorFor(getLanguage())(MORNING_STRETCH_COPY_KEY);
+}
+
+/**
+ * The English line, frozen.
+ *
+ * @deprecated Call `morningStretchCopy()` instead, or `t('exercises.morningStretch.copy')`
+ * inside a component. Kept only because `entities/notifications` re-exports
+ * this name and that module is being migrated separately; a notification body
+ * built from this will be English whatever the user picked.
  */
 export const MORNING_STRETCH_COPY =
   'Before you stand up: pull your toes back, 10 seconds, 10 times.';
@@ -71,7 +92,7 @@ export function morningStretchFor(
   return {
     exercise,
     prescription: prescriptionFor(exercise, block.index),
-    copy: MORNING_STRETCH_COPY,
+    copy: morningStretchCopy(),
     done: morningStretchDone(dayNumber),
   };
 }

@@ -11,6 +11,7 @@ export { COOKBOOK_METADATA } from './registry';
 export { COOKBOOK_IDS } from './types';
 export type {
   CookbookBackground,
+  CookbookCopy,
   CookbookId,
   CookbookMetadata,
   CookbookTheme,

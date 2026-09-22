@@ -15,10 +15,12 @@ import { useStreak } from '@/entities/program';
 import { firstName, useProfileEmail, useProfileName } from '@/entities/profile';
 import { referralsAvailable, useReferral } from '@/entities/referral';
 import { SUPPORT_EMAIL, accents, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { GiftSheet } from '@/shared/ui/gift-sheet';
 
 import { DeleteAccountSheet } from './delete-account-sheet';
+import { NotePreviewRow } from './note-preview-row';
 import { ResetRow } from './reset-row';
 
 /**
@@ -36,6 +38,7 @@ export function ProfilePage() {
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
+  const t = useT();
 
   const name = useProfileName();
   const streak = useStreak();
@@ -61,7 +64,7 @@ export function ProfilePage() {
             player's — one gesture learned once. */}
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="Back"
+          accessibilityLabel={t('common.back')}
           onPress={() => router.back()}
           hitSlop={12}
           style={({ pressed }) => [styles.back, pressed && { opacity: 0.5 }]}>
@@ -74,26 +77,34 @@ export function ProfilePage() {
         </Pressable>
 
         <Text style={[styles.name, { color: colors.foreground }]}>
-          {greeting.length > 0 ? greeting : 'You'}
+          {greeting.length > 0 ? greeting : t('profile.you')}
         </Text>
 
         {/* Two numbers, because two is what this screen has honestly got. A
             grid of six padded out with derived variations of the same figure is
             the shape a profile screen takes when it has nothing to say. */}
         <View style={styles.stats}>
-          <Stat label="Day streak" value={String(streak.current)} tint={accents[scheme].orange.fill} />
-          <Stat label="Sessions done" value={String(streak.total)} tint={meter.ink} />
+          <Stat
+            label={t('profile.dayStreak')}
+            value={String(streak.current)}
+            tint={accents[scheme].orange.fill}
+          />
+          <Stat label={t('profile.sessionsDone')} value={String(streak.total)} tint={meter.ink} />
         </View>
 
         {referralsAvailable && (
-          <Section title="Invite">
+          <Section title={t('profile.sectionInvite')}>
             <Row
               icon={GiftIcon}
-              label="Refer a friend"
+              label={t('profile.referFriend')}
               // The count is the reason to tap, so it is on the row rather than
               // behind it. Zero is left blank: "0 invited" is a scoreboard of
               // failure on a screen asking for a favour.
-              value={referral.invites > 0 ? `${referral.invites} joined` : undefined}
+              value={
+                referral.invites > 0
+                  ? t('profile.invitesJoined', { count: referral.invites })
+                  : undefined
+              }
               onPress={() => {
                 Haptics.selectionAsync();
                 setGiftOpen(true);
@@ -102,18 +113,21 @@ export function ProfilePage() {
           </Section>
         )}
 
-        <Section title="App">
+        <Section title={t('profile.sectionApp')}>
           <Row
             icon={Settings02Icon}
-            label="Settings"
+            // The screen it opens owns this word, so it is read from there
+            // rather than written twice.
+            label={t('settings.title')}
             onPress={() => {
               Haptics.selectionAsync();
               router.push('/settings');
             }}
           />
+          <NotePreviewRow />
           <Row
             icon={Mail01Icon}
-            label="Contact support"
+            label={t('profile.contactSupport')}
             onPress={() => {
               Haptics.selectionAsync();
               void Linking.openURL(
@@ -129,7 +143,7 @@ export function ProfilePage() {
             here is visible rather than discovered later. There is no account
             behind it and nothing to sign out of. */}
         {email.length > 0 && (
-          <Section title="Email">
+          <Section title={t('profile.sectionEmail')}>
             <View style={styles.row}>
               <HugeiconsIcon icon={Mail01Icon} size={20} color={meter.caption} strokeWidth={1.8} />
               <Text style={[styles.rowLabel, { color: colors.foreground }]}>{email}</Text>
@@ -140,12 +154,12 @@ export function ProfilePage() {
         {/* Last, and the only destructive thing on the screen. Apple requires an
             in-app way to delete an account for any app that creates one, and
             this app creates an anonymous identity on first launch. */}
-        <Section title="Danger">
+        <Section title={t('profile.sectionDanger')}>
           {/* Above the irreversible one, and only in a development build. */}
           <ResetRow />
           <Row
             icon={Delete02Icon}
-            label="Delete account"
+            label={t('profile.deleteAccount')}
             tint={accents[scheme].red.fill}
             onPress={() => {
               Haptics.selectionAsync();

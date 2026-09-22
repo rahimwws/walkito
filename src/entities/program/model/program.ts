@@ -21,6 +21,7 @@
  *   `pain-check.tsx` from inheriting a strength day's prescription.
  */
 
+import { getLanguage, translatorFor, type Key, type Translate } from '@/shared/lib/i18n';
 import { useSyncExternalStore } from 'react';
 
 import { kv } from '@/shared/lib/storage';
@@ -115,17 +116,56 @@ function buildProgram(): ProgramDay[] {
 
 export const PROGRAM = buildProgram();
 
-export function blockName(block: number): string {
-  return BLOCKS[(block - 1) % BLOCKS.length];
+/**
+ * Which catalogue line names each block.
+ *
+ * `Block.name` stays the English word because it is also an identifier — it is
+ * what `BLOCKS` is built from and what the plan data is keyed by. This maps it
+ * to copy, so the two jobs stop being the same string.
+ */
+const BLOCK_KEYS: Readonly<Record<string, Key>> = {
+  Settle: 'block.settle',
+  Strengthen: 'block.strengthen',
+  Load: 'block.load',
+  Build: 'block.build',
+  Control: 'block.control',
+  Sustain: 'block.sustain',
+};
+
+/**
+ * The block's name, in the reader's language.
+ *
+ * This was returning English to every reader, and it leaked further than
+ * anything else in the migration: three separate screens and the notification
+ * bodies print it beside a translated sentence, so a Russian user was seeing
+ * "День 17 · Блок 2 · Strengthen".
+ *
+ * Takes an optional translator so callers already holding one can pass it;
+ * without one it resolves against the stored language, which is what the
+ * non-React callers need.
+ */
+export function blockName(block: number, t: Translate = translatorFor(getLanguage())): string {
+  const english = BLOCKS[(block - 1) % BLOCKS.length];
+  const key = BLOCK_KEYS[english];
+  // An unmapped name would be a block added without copy. Falling back to the
+  // English is better than rendering a raw key at someone.
+  return key == null ? english : t(key);
 }
 
 /**
- * The exercise titles a day runs.
+ * The exercise titles a day runs, in the current language.
  *
  * Block-aware, which is why it is a function and no longer a lookup by kind: a
  * Strength day in Settle and a Strength day in Sustain share a name and share
  * nothing else. Titles rather than ids, because every surface that consumes
  * this renders them directly.
+ *
+ * Resolved on every call rather than cached, which is what a translated
+ * catalogue requires: `title` is a getter over a catalogue key, so the answer
+ * is whatever language is current at the moment of asking. A caller that wants
+ * the list to *repaint* on a language change still has to be subscribed — hold
+ * a `useT()` — and a caller that hangs on to the result across a change should
+ * get back to the entry with `exerciseByTitle`, which reads every language.
  */
 export function movesFor(day: ProgramDay): readonly string[] {
   return planFor(day.block, day.kind).map((id) => exerciseById(id).title);

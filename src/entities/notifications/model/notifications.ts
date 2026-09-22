@@ -1,6 +1,7 @@
 import Constants from 'expo-constants';
 import * as Notifications from 'expo-notifications';
 
+import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { currentUserId, supabase } from '@/shared/lib/supabase';
 
 /**
@@ -9,6 +10,12 @@ import { currentUserId, supabase } from '@/shared/lib/supabase';
  * Everything here is written to degrade rather than throw. Notifications are a
  * nice-to-have on top of the flow, and a permission call that red-screens on a
  * simulator or an older runtime would take the whole onboarding down with it.
+ *
+ * Wording comes from `translatorFor(getLanguage())` rather than `useT()`: both
+ * schedulers below run outside the React tree — one as the app leaves the
+ * foreground, one from a purchase listener — and neither has a component to
+ * hold a hook. Like the plan window, the text is baked in when the request is
+ * made, so a language change is picked up the next time these run.
  */
 
 /**
@@ -145,6 +152,7 @@ export async function requestNotificationAccess(): Promise<boolean> {
  * look identical from the outside.
  */
 export async function scheduleWinback(percent: number, name?: string): Promise<boolean> {
+  const t = translatorFor(getLanguage());
   const who = name != null && name.trim().length > 0 ? name.trim() : null;
   let failed = false;
 
@@ -152,8 +160,11 @@ export async function scheduleWinback(percent: number, name?: string): Promise<b
     await Notifications.scheduleNotificationAsync({
       identifier: WINBACK_IDS[0],
       content: {
-        title: who != null ? `${who}, stoppp` : 'Stoppp',
-        body: 'Pleeease.',
+        title:
+          who != null
+            ? t('notifications.offerPleaNamed', { name: who })
+            : t('notifications.offerPlea'),
+        body: t('notifications.offerPleaBody'),
         sound: true,
         data: { kind: WINBACK_KIND },
       },
@@ -175,8 +186,8 @@ export async function scheduleWinback(percent: number, name?: string): Promise<b
       content: {
         // Names the product. "Take 70% off" alone does not say off what,
         // and the discount exists on one of the two plans.
-        title: `Take ${percent}% off the 12-week program`,
-        body: 'Tap to grab it.',
+        title: t('notifications.offerDiscountTitle', { percent }),
+        body: t('notifications.offerDiscountBody'),
         sound: true,
         data: { kind: WINBACK_KIND },
       },
@@ -268,12 +279,13 @@ export async function syncExpiryNotice(endsAt: Date | null): Promise<void> {
   // which would greet them with a warning the instant they launched.
   if (at.getTime() <= Date.now()) return;
 
+  const t = translatorFor(getLanguage());
   try {
     await Notifications.scheduleNotificationAsync({
       identifier: EXPIRY_ID,
       content: {
-        title: 'Your program access ends in a week',
-        body: 'Your progress stays either way.',
+        title: t('notifications.expiryTitle'),
+        body: t('notifications.expiryBody'),
         sound: true,
         data: { kind: EXPIRY_KIND },
       },

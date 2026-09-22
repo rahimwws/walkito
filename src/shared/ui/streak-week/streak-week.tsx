@@ -10,22 +10,31 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { useLanguage, type Language } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
-/** Sunday-first, matching `Date.getDay()`. */
-const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] as const;
+/**
+ * Weekday names, from the platform rather than from a catalogue.
+ *
+ * These are the one family of strings that must *not* be hand-translated.
+ * `Intl` already knows them for every locale, and it knows the conventions a
+ * translator gets wrong: Russian and Spanish lowercase their weekday names
+ * where English capitalises, and each language abbreviates to its own length.
+ * Writing them out by hand would be inventing an answer the platform already
+ * has, and would need revisiting for every language added.
+ *
+ * Sunday-first, matching `Date.getDay()`. The reference date below is a known
+ * Sunday (4 January 1970), so adding the index walks the week in that order
+ * regardless of where the locale thinks a week begins.
+ */
+const SUNDAY = Date.UTC(1970, 0, 4);
 
-/** The same seven days, unabbreviated, for the label a screen reader gets.
- * "Wed" is a heading on a strip you can see; read aloud it is a syllable. */
-const FULL_DAYS = [
-  'Sunday',
-  'Monday',
-  'Tuesday',
-  'Wednesday',
-  'Thursday',
-  'Friday',
-  'Saturday',
-] as const;
+function weekdayNames(language: Language, style: 'short' | 'long'): string[] {
+  const format = new Intl.DateTimeFormat(language, { weekday: style, timeZone: 'UTC' });
+  return Array.from({ length: 7 }, (_, index) =>
+    format.format(new Date(SUNDAY + index * 86_400_000)),
+  );
+}
 
 /** Each cell lands just after the one before it, left to right, so the week
  * reads as filling in rather than appearing. */
@@ -57,14 +66,22 @@ export type StreakWeekProps = {
  *   as two kinds of thing sitting next to each other.
  */
 export function StreakWeek({ done, today = new Date().getDay() }: StreakWeekProps) {
+  const language = useLanguage();
+  const short = weekdayNames(language, 'short');
+  // Unabbreviated, for the label a screen reader gets. "Wed" is a heading on a
+  // strip you can see; read aloud it is a syllable.
+  const full = weekdayNames(language, 'long');
+
   return (
     <View style={styles.row}>
-      {DAYS.map((day, i) => (
+      {short.map((day, i) => (
+        // Keyed by index, not by name: abbreviated weekdays are not unique in
+        // every language, and two cells sharing a key drops one of them.
         <Cell
-          key={day}
+          key={i}
           index={i}
           label={day}
-          name={FULL_DAYS[i]}
+          name={full[i]}
           earned={done[i] === true}
           isToday={i === today}
           ahead={i > today && done[i] !== true}

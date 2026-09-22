@@ -1,4 +1,5 @@
 import type { DayStatus, ProgramDay } from '@/entities/program';
+import type { Translate } from '@/shared/lib/i18n';
 
 /** How far below a node its caption reaches. The leg leaving that node starts
  * past this, so the trail never runs through the words. */
@@ -10,12 +11,18 @@ export const CAPTION_CLEARANCE = 22;
  * Only two nodes ever speak: the one you can act on, and the ones that close a
  * block. The path needs air more than it needs labels — 14 captioned days
  * would be a list, not a path.
+ *
+ * The translator is passed in rather than pulled from a hook, so this stays a
+ * pure function of its arguments and the callers that only need to know
+ * *whether* a node speaks can keep asking it.
  */
-export function captionFor(day: ProgramDay, status: DayStatus): string | null {
+export function captionFor(day: ProgramDay, status: DayStatus, t: Translate): string | null {
   if (status === 'today') {
-    return day.checkpoint ? 'Retest today' : `Today · ${day.minutes} min`;
+    return day.checkpoint
+      ? t('progress.retestToday')
+      : t('progress.todayMinutes', { minutes: day.minutes });
   }
-  if (day.checkpoint) return 'Retest';
+  if (day.checkpoint) return t('progress.retest');
   return null;
 }
 

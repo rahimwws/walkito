@@ -1,9 +1,10 @@
 import { describe, expect, test } from 'bun:test';
 
+import { LANGUAGES, translatorFor } from '../src/shared/lib/i18n';
 import {
   MAX_ZONES,
   PAIN_ZONES,
-  ZONE_LABELS,
+  ZONE_LABEL_KEYS,
   toggleZone,
   zoneAt,
   type LegZone,
@@ -71,9 +72,29 @@ describe('hit testing', () => {
 
 describe('the zone list', () => {
   test('everything tappable has a label', () => {
-    const missing = PAIN_ZONES.filter((zone) => ZONE_LABELS[zone] == null);
+    const missing = PAIN_ZONES.filter((zone) => ZONE_LABEL_KEYS[zone] == null);
     expect(missing).toEqual([]);
   });
+
+  /**
+   * And every label names a different place, in every language.
+   *
+   * The caption joins up to three of these with a middle dot. Two zones sharing
+   * a name would print "Ankle · Ankle" and leave the user unable to tell which
+   * of the two they had marked — a failure the type system cannot see, because
+   * both sides are perfectly valid catalogue keys.
+   *
+   * Russian is where the pressure is: «лодыжка» and «голеностоп» are two words
+   * a translator could reasonably reach for, and the inner ankle and the ankle
+   * would then collide.
+   */
+  for (const language of LANGUAGES) {
+    test(`${language} names every zone differently`, () => {
+      const t = translatorFor(language);
+      const names = PAIN_ZONES.map((zone) => t(ZONE_LABEL_KEYS[zone]));
+      expect(new Set(names).size).toBe(names.length);
+    });
+  }
 
   test('every tappable zone can actually be reached', () => {
     // A zone in the list with no centre is unreachable: `zoneAt` skips it, so

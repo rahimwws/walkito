@@ -24,6 +24,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { cancelWinback, notificationsAllowed, scheduleWinback } from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
 import { LEGAL, PRIMARY, accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
+import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Linking } from 'react-native';
 
@@ -62,31 +63,38 @@ export const OFFER_PERCENT = Math.round(
   (1 - PRINTED.programOffer / PRINTED.program) * 100,
 );
 
-const FEATURES: {
+/**
+ * The three arguments the screen opens on, as catalogue keys rather than copy.
+ *
+ * `as const satisfies` rather than a plain annotation: the keys have to survive
+ * as literal types for `t()` to accept them, and widening them to `Key` would
+ * make every call here demand the union of every placeholder in the app.
+ */
+const FEATURES = [
+  {
+    icon: Route02Icon,
+    accent: 'violet',
+    title: 'offer.featurePlanTitle',
+    blurb: 'offer.featurePlanBlurb',
+  },
+  {
+    icon: FlashIcon,
+    accent: 'orange',
+    title: 'offer.featureAdaptiveTitle',
+    blurb: 'offer.featureAdaptiveBlurb',
+  },
+  {
+    icon: ChartIncreaseIcon,
+    accent: 'teal',
+    title: 'offer.featureProgressTitle',
+    blurb: 'offer.featureProgressBlurb',
+  },
+] as const satisfies readonly {
   icon: IconSvgElement;
   accent: AccentName;
-  title: string;
-  blurb: string;
-}[] = [
-    {
-      icon: Route02Icon,
-      accent: 'violet',
-      title: 'Your plan, not a template',
-      blurb: 'Built from the answers you just gave, and rebuilt as they change.',
-    },
-    {
-      icon: FlashIcon,
-      accent: 'orange',
-      title: 'Adaptive sessions',
-      blurb: 'Every workout adjusts to how the last one actually went.',
-    },
-    {
-      icon: ChartIncreaseIcon,
-      accent: 'teal',
-      title: 'Progress you can see',
-      blurb: 'Watch your readiness climb week by week.',
-    },
-  ];
+  title: Key;
+  blurb: Key;
+}[];
 
 /** Long enough that the number lands before the rest arrives under it. */
 const STAGGER_MS = 90;
@@ -121,8 +129,18 @@ export function OfferPage() {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
+  const t = useT();
+  /** For the one date on this screen. `toLocaleDateString(undefined)` follows
+   * the *device*, which is how a Russian sheet ends up saying "До 22 September"
+   * on an English phone. */
+  const language = useLanguage();
 
   const { weeks, name } = useLocalSearchParams<{ weeks?: string; name?: string }>();
+  /** The plan length from the route, as a number the plural rules can read. A
+   * malformed param drops the whole clause rather than rendering "Your
+   * NaN-week plan". */
+  const weekCount = weeks == null ? Number.NaN : Number(weeks);
+  const hasWeeks = Number.isFinite(weekCount) && weekCount > 0;
   /**
    * Which plan is selected. The programme, by default.
    *
@@ -461,11 +479,7 @@ export function OfferPage() {
       // never answered is unreachable; a store that answered without this
       // package is misconfigured, and telling somebody to try again in a moment
       // sends them to retry something that will never succeed.
-      setNotice(
-        loaded
-          ? 'That plan isn’t available right now. Try the other one.'
-          : 'The App Store isn’t reachable right now. Try again in a moment.',
-      );
+      setNotice(t(loaded ? 'offer.planUnavailable' : 'offer.storeUnreachable'));
       return;
     }
     const result = await purchases.buy(plan);
@@ -498,7 +512,7 @@ export function OfferPage() {
      * failed and nobody was charged; not a success either.
      */
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
-    setNotice('The App Store isn’t reachable right now. Try again in a moment.');
+    setNotice(t('offer.storeUnreachable'));
   };
 
   const restore = async () => {
@@ -517,12 +531,12 @@ export function OfferPage() {
       return;
     }
     if (result.status === 'nothing-found') {
-      setNotice('No previous purchase found on this Apple ID.');
+      setNotice(t('offer.nothingRestored'));
       return;
     }
     if (result.status === 'failed') {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
-      setNotice('That didn’t go through. No charge was made.');
+      setNotice(t('offer.restoreFailed'));
     }
     // `unavailable` says nothing: there was no store to ask.
   };
@@ -558,7 +572,7 @@ export function OfferPage() {
         <Animated.View
           entering={FadeIn.duration(420).reduceMotion(ReduceMotion.System)}
           style={styles.limited}>
-          <Text style={styles.limitedText}>LIMITED — ONE TIME ONLY</Text>
+          <Text style={styles.limitedText}>{t('offer.limited')}</Text>
         </Animated.View>
       )}
 
@@ -579,15 +593,15 @@ export function OfferPage() {
         entering={FadeIn.delay(STAGGER_MS).duration(320).reduceMotion(ReduceMotion.System)}
         style={[styles.headline, { color: colors.foreground }]}>
         {boosted
-          ? 'Your comeback price on the 12-week program'
+          ? t('offer.headlineComeback')
           : saves
-            ? `Pay once for ${PROGRAM_MONTHS} months and save ${savingPct}%`
-            : `Pay once for ${PROGRAM_MONTHS} months, or month to month`}
+            ? t('offer.headlineSave', { count: PROGRAM_MONTHS, percent: savingPct })
+            : t('offer.headlinePlain', { count: PROGRAM_MONTHS })}
       </Animated.Text>
       <Animated.Text
         entering={FadeIn.delay(STAGGER_MS * 2).duration(320).reduceMotion(ReduceMotion.System)}
         style={[styles.sub, { color: meter.caption }]}>
-        {weeks != null ? `Your ${weeks}-week plan, and everything around it.` : 'Your plan, and everything around it.'}
+        {hasWeeks ? t('offer.subWeeks', { count: weekCount }) : t('offer.sub')}
       </Animated.Text>
 
       <View style={styles.features}>
@@ -606,9 +620,11 @@ export function OfferPage() {
               </View>
               <View style={styles.featureCopy}>
                 <Text style={[styles.featureTitle, { color: colors.foreground }]}>
-                  {feature.title}
+                  {t(feature.title)}
                 </Text>
-                <Text style={[styles.featureBlurb, { color: meter.caption }]}>{feature.blurb}</Text>
+                <Text style={[styles.featureBlurb, { color: meter.caption }]}>
+                  {t(feature.blurb)}
+                </Text>
               </View>
             </Animated.View>
           );
@@ -631,29 +647,35 @@ export function OfferPage() {
             outside the app the marketing may lead with per week, here it may
             not. */}
         <TierRow
-          title="12-Week Program"
+          title={t('offer.programTitle')}
           badge={
             ownsProgram
               ? undefined
               : discounted
-                ? `${offerPct}% OFF`
+                ? t('offer.badgeOff', { percent: offerPct })
                 : // Only when the arithmetic supports it. "BEST VALUE" is a
                   // claim too, so it also waits for the programme to actually
                   // be the cheaper of the two.
                   saves
-                  ? `SAVE ${savingPct}%`
+                  ? t('offer.badgeSave', { percent: savingPct })
                   : undefined
           }
           // What they already have, rather than what it would cost. A price on
           // a product somebody owns is an invitation to buy it twice.
-          price={ownsProgram ? 'Active' : `${programText} one-time`}
+          price={ownsProgram ? t('offer.programActive') : t('offer.programPrice', { price: programText })}
           note={
             ownsProgram
-              ? `Until ${ownedUntil.toLocaleDateString(undefined, {
-                  day: 'numeric',
-                  month: 'long',
-                })}`
-              : `${PROGRAM_MONTHS} months of access · ${money(programPerWeek)}/week · No subscription`
+              ? t('offer.programActiveUntil', {
+                  // The app's language, not the device's — see `language`.
+                  date: ownedUntil.toLocaleDateString(language, {
+                    day: 'numeric',
+                    month: 'long',
+                  }),
+                })
+              : t('offer.programNote', {
+                  count: PROGRAM_MONTHS,
+                  perWeek: money(programPerWeek),
+                })
           }
           disabled={ownsProgram}
           was={
@@ -669,9 +691,9 @@ export function OfferPage() {
         />
         {monthlyOffered && (
           <TierRow
-            title="Monthly"
-            price={`${monthlyText}/month`}
-            note={`${money(monthlyPerWeek)}/week · Cancel anytime`}
+            title={t('offer.monthlyTitle')}
+            price={t('offer.monthlyPrice', { price: monthlyText })}
+            note={t('offer.monthlyNote', { perWeek: money(monthlyPerWeek) })}
             selected={tier === 'monthly'}
             onPress={() => {
               Haptics.selectionAsync();
@@ -705,14 +727,14 @@ export function OfferPage() {
             No trial line on either: Apple does not allow one on a non-renewing
             product, and nothing here configures one on the subscription. */}
         <Text style={[styles.terms, { color: meter.caption }]}>
-          {`12-Week Program: one-time payment of ${programText} for 12 weeks of access. Does not renew and will not charge you again.`}
+          {t('offer.termsProgram', { price: programText })}
         </Text>
         {/* Only while it is on sale. Apple wants the renewal terms for what the
             screen is offering; disclosing a subscription that is not on it
             would describe a charge the user cannot make from here. */}
         {monthlyOffered && (
           <Text style={[styles.terms, { color: meter.caption }]}>
-            {`Monthly: ${monthlyText} per month. Renews automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel in your App Store account settings.`}
+            {t('offer.termsMonthly', { price: monthlyText })}
           </Text>
         )}
         <View style={styles.legalRow}>
@@ -720,21 +742,21 @@ export function OfferPage() {
             accessibilityRole="link"
             onPress={() => openLegal(LEGAL.terms)}
             style={[styles.terms, { color: meter.caption }]}>
-            Terms
+            {t('offer.linkTerms')}
           </Text>
           <Text style={[styles.terms, { color: meter.unit }]}>{'  ·  '}</Text>
           <Text
             accessibilityRole="link"
             onPress={() => openLegal(LEGAL.privacy)}
             style={[styles.terms, { color: meter.caption }]}>
-            Privacy
+            {t('offer.linkPrivacy')}
           </Text>
           <Text style={[styles.terms, { color: meter.unit }]}>{'  ·  '}</Text>
           <Text
             accessibilityRole="button"
             onPress={restore}
             style={[styles.terms, { color: meter.caption }]}>
-            Restore Purchases
+            {t('offer.restore')}
           </Text>
         </View>
       </Animated.View>
@@ -743,7 +765,11 @@ export function OfferPage() {
       {/* Outside the scroll, so the one action this screen exists for is always
           on screen. */}
       <View style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 20) + 8 }]}>
-        <PrimaryButton label={busy ? 'Processing…' : 'Continue'} disabled={busy} onPress={start} />
+        <PrimaryButton
+          label={busy ? t('offer.processing') : t('offer.continue')}
+          disabled={busy}
+          onPress={start}
+        />
       </View>
 
       {/* Owns the dismissal. The paywall vanishing into Home is what backing out
@@ -751,15 +777,13 @@ export function OfferPage() {
           as nothing having happened. */}
       <CelebrationSheet
         visible={celebrating != null}
-        title={celebrating === 'restored' ? 'Welcome back.' : 'You’re in.'}
-        headline={celebrating === 'restored' ? undefined : 'Walkito Premium'}
+        title={t(celebrating === 'restored' ? 'offer.restoredTitle' : 'offer.purchasedTitle')}
+        headline={celebrating === 'restored' ? undefined : t('offer.premium')}
         headlineColor={PRIMARY}
-        blurb={
-          celebrating === 'restored'
-            ? 'Your subscription is active again. Everything is where you left it.'
-            : 'Your plan is unlocked, and it starts adapting from your next session.'
-        }
-        ctaLabel="Start"
+        blurb={t(
+          celebrating === 'restored' ? 'offer.restoredBlurb' : 'offer.purchasedBlurb',
+        )}
+        ctaLabel={t('offer.start')}
         onClose={() => {
           setCelebrating(null);
           close();

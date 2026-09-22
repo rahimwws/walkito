@@ -14,7 +14,22 @@
  * - `track` splits loaded work (A) from work that can be done in a flare (B).
  *   Internal only — it is never shown, because "track B" means nothing to
  *   someone whose foot hurts.
+ *
+ * **The copy is not here.** Titles, rationales and cues live in the i18n
+ * catalogue and this table holds their keys. What a row carries is therefore a
+ * *name for* a sentence rather than the sentence, and the difference matters:
+ * this module is evaluated once, at import, while the language can change at
+ * any point afterwards. Baking `t()` into the literals below would freeze the
+ * whole catalogue in whatever language the app launched in, and the switcher in
+ * Settings would appear to do nothing to any screen that lists an exercise.
+ *
+ * `title`, `rationale` and `cue` survive as **getters** over those keys, so
+ * every reader — including the ones that are plain functions with no hook to
+ * call — resolves at the moment it reads rather than at the moment this file
+ * loaded. See `exerciseText` below.
  */
+
+import { LANGUAGES, getLanguage, translatorFor, type Key } from '@/shared/lib/i18n';
 
 /** How the catalogue is grouped where the UI shows a category. */
 export type ExerciseCategory = 'Fitness' | 'Mobility' | 'Habit' | 'Recovery';
@@ -32,6 +47,10 @@ export type ExerciseTrack = 'A' | 'B';
  *
  * `none` is the habit: being barefoot at home is not done in a position, and
  * the table it comes from writes it as a dash rather than a place.
+ *
+ * Never rendered either — no surface prints it, which is why there are no
+ * position labels in the catalogue. A screen that starts showing one needs to
+ * add `exercises.position.*` keys before it can.
  */
 export type ExercisePosition = 'standing' | 'seated' | 'wall' | 'none';
 
@@ -42,10 +61,39 @@ export type Tempo = {
   down: number;
 };
 
+/**
+ * The three copy keys an exercise carries, narrowed off the catalogue itself.
+ *
+ * Derived rather than declared, so a key written here that the catalogue does
+ * not define is a compile error at the row that writes it — the same guarantee
+ * `CatalogueFor<L>` gives the translations, pointed the other way.
+ */
+export type ExerciseTitleKey = Extract<Key, `exercises.${string}.title`>;
+export type ExerciseRationaleKey = Extract<Key, `exercises.${string}.rationale`>;
+export type ExerciseCueKey = Extract<Key, `exercises.${string}.cue`>;
+
+type ExerciseCopyKey = ExerciseTitleKey | ExerciseRationaleKey | ExerciseCueKey;
+
+/**
+ * One line of exercise copy, in the language that is current *now*.
+ *
+ * Deliberately not a hook. Most of the readers below are plain functions —
+ * `movesFor`, the offload filter, the clip prefetcher — and a hook is not
+ * available to any of them. A component that wants its titles to repaint the
+ * instant the language changes should hold a `useT()` of its own; this is what
+ * makes the text correct rather than what makes it reactive.
+ */
+export function exerciseText(key: ExerciseCopyKey): string {
+  return translatorFor(getLanguage())(key);
+}
+
 export type Exercise = {
   id: string;
-  /** Shown in the UI. */
-  title: string;
+  titleKey: ExerciseTitleKey;
+  rationaleKey: ExerciseRationaleKey;
+  cueKey: ExerciseCueKey;
+  /** Shown in the UI. Resolved on read — see the note at the top of the file. */
+  readonly title: string;
   category: ExerciseCategory;
   /** Internal only, never shown. */
   track: ExerciseTrack;
@@ -57,11 +105,36 @@ export type Exercise = {
   defaultReps?: number;
   defaultHoldSec?: number;
   perSide: boolean;
-  /** One line, shown on arrival in the player. */
-  rationale: string;
-  /** The single most-missed technique point. */
-  cue: string;
+  /** One line, shown on arrival in the player. Resolved on read. */
+  readonly rationale: string;
+  /** The single most-missed technique point. Resolved on read. */
+  readonly cue: string;
 };
+
+/** A row as the table below writes it: everything but the three resolved lines. */
+type ExerciseSpec = Omit<Exercise, 'title' | 'rationale' | 'cue'>;
+
+/**
+ * A row, with its copy attached as getters rather than as strings.
+ *
+ * One helper so the eighteen entries stay readable as data. The getters close
+ * over `spec` rather than over `this`, so a row survives being destructured or
+ * spread into the `{ exercise, prescription }` shapes `adapt.ts` builds.
+ */
+function withCopy(spec: ExerciseSpec): Exercise {
+  return {
+    ...spec,
+    get title() {
+      return exerciseText(spec.titleKey);
+    },
+    get rationale() {
+      return exerciseText(spec.rationaleKey);
+    },
+    get cue() {
+      return exerciseText(spec.cueKey);
+    },
+  };
+}
 
 /** The tempo both heel-raise variants run at: three up, two held, three down. */
 export const HEEL_RAISE_TEMPO: Tempo = { up: 3, hold: 2, down: 3 };
@@ -73,9 +146,11 @@ export const HEEL_RAISE_TEMPO: Tempo = { up: 3, hold: 2, down: 3 };
  * intrinsic and balance work, then the two things that close a session.
  */
 export const EXERCISE_LIST: readonly Exercise[] = [
-  {
+  withCopy({
     id: 'fascia_stretch',
-    title: 'Plantar stretch',
+    titleKey: 'exercises.fasciaStretch.title',
+    rationaleKey: 'exercises.fasciaStretch.rationale',
+    cueKey: 'exercises.fasciaStretch.cue',
     category: 'Mobility',
     track: 'A',
     position: 'seated',
@@ -83,12 +158,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultSets: 10,
     defaultHoldSec: 10,
     perSide: true,
-    rationale: 'Do the first one before your foot touches the floor.',
-    cue: 'Pull the toes back until you feel the arch, not the calf.',
-  },
-  {
+  }),
+  withCopy({
     id: 'calf_stretch_straight',
-    title: 'Calf stretch',
+    titleKey: 'exercises.calfStretchStraight.title',
+    rationaleKey: 'exercises.calfStretchStraight.rationale',
+    cueKey: 'exercises.calfStretchStraight.cue',
     category: 'Mobility',
     track: 'A',
     position: 'wall',
@@ -96,12 +171,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultSets: 3,
     defaultHoldSec: 30,
     perSide: true,
-    rationale: 'A tight calf pulls on the heel all day.',
-    cue: 'Back leg straight, heel down, hips forward.',
-  },
-  {
+  }),
+  withCopy({
     id: 'calf_stretch_bent',
-    title: 'Soleus stretch',
+    titleKey: 'exercises.calfStretchBent.title',
+    rationaleKey: 'exercises.calfStretchBent.rationale',
+    cueKey: 'exercises.calfStretchBent.cue',
     category: 'Mobility',
     track: 'A',
     position: 'wall',
@@ -109,12 +184,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultSets: 3,
     defaultHoldSec: 30,
     perSide: true,
-    rationale: 'The deeper calf muscle only lets go with the knee bent.',
-    cue: 'Bend the back knee until you feel it lower, near the heel.',
-  },
-  {
+  }),
+  withCopy({
     id: 'heel_raise_towel',
-    title: 'Heel raises',
+    titleKey: 'exercises.heelRaiseTowel.title',
+    rationaleKey: 'exercises.heelRaiseTowel.rationale',
+    cueKey: 'exercises.heelRaiseTowel.cue',
     category: 'Fitness',
     track: 'A',
     position: 'standing',
@@ -123,12 +198,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultSets: 3,
     defaultReps: 12,
     perSide: true,
-    rationale: 'This is the one that moves pain fastest.',
-    cue: 'Towel under the toes. Without it you’re just training calves.',
-  },
-  {
+  }),
+  withCopy({
     id: 'heel_raise_plain',
-    title: 'Single-leg raises',
+    titleKey: 'exercises.heelRaisePlain.title',
+    rationaleKey: 'exercises.heelRaisePlain.rationale',
+    cueKey: 'exercises.heelRaisePlain.cue',
     category: 'Fitness',
     track: 'A',
     position: 'standing',
@@ -137,12 +212,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultSets: 3,
     defaultReps: 15,
     perSide: true,
-    rationale: 'The version you keep after the program ends.',
-    cue: 'Three seconds up, three down. Speed is what makes it useless.',
-  },
-  {
+  }),
+  withCopy({
     id: 'short_foot_seated',
-    title: 'Short foot',
+    titleKey: 'exercises.shortFootSeated.title',
+    rationaleKey: 'exercises.shortFootSeated.rationale',
+    cueKey: 'exercises.shortFootSeated.cue',
     category: 'Fitness',
     track: 'B',
     position: 'seated',
@@ -151,12 +226,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultReps: 10,
     defaultHoldSec: 5,
     perSide: true,
-    rationale: 'The muscle that holds your arch sits inside your foot.',
-    cue: 'Don’t curl the toes. Pull the ball of the foot toward the heel.',
-  },
-  {
+  }),
+  withCopy({
     id: 'short_foot_double',
-    title: 'Short foot, standing',
+    titleKey: 'exercises.shortFootDouble.title',
+    rationaleKey: 'exercises.shortFootDouble.rationale',
+    cueKey: 'exercises.shortFootDouble.cue',
     category: 'Fitness',
     track: 'B',
     position: 'standing',
@@ -165,12 +240,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultReps: 10,
     defaultHoldSec: 5,
     perSide: false,
-    rationale: 'Same muscle, now holding your weight.',
-    cue: 'Toes stay flat and long. Only the arch lifts.',
-  },
-  {
+  }),
+  withCopy({
     id: 'short_foot_single',
-    title: 'Short foot, one leg',
+    titleKey: 'exercises.shortFootSingle.title',
+    rationaleKey: 'exercises.shortFootSingle.rationale',
+    cueKey: 'exercises.shortFootSingle.cue',
     category: 'Fitness',
     track: 'B',
     position: 'standing',
@@ -179,12 +254,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultReps: 10,
     defaultHoldSec: 5,
     perSide: true,
-    rationale: 'One foot at a time is where the weak side shows.',
-    cue: 'Keep the big toe down. If it lifts, the arch is cheating.',
-  },
-  {
+  }),
+  withCopy({
     id: 'toe_spread',
-    title: 'Toe spread',
+    titleKey: 'exercises.toeSpread.title',
+    rationaleKey: 'exercises.toeSpread.rationale',
+    cueKey: 'exercises.toeSpread.cue',
     category: 'Fitness',
     track: 'B',
     position: 'seated',
@@ -193,12 +268,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultReps: 10,
     defaultHoldSec: 5,
     perSide: false,
-    rationale: 'Toes that can spread share the load with the arch.',
-    cue: 'Spread wide, then hold. The lift is not the point.',
-  },
-  {
+  }),
+  withCopy({
     id: 'band_inversion',
-    title: 'Band turn-in',
+    titleKey: 'exercises.bandInversion.title',
+    rationaleKey: 'exercises.bandInversion.rationale',
+    cueKey: 'exercises.bandInversion.cue',
     category: 'Fitness',
     track: 'B',
     position: 'seated',
@@ -206,12 +281,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultSets: 3,
     defaultReps: 15,
     perSide: true,
-    rationale: 'Turning the foot in trains the muscle that runs under the arch.',
-    cue: 'Move the foot, not the leg. The knee stays still.',
-  },
-  {
+  }),
+  withCopy({
     id: 'hip_abduction',
-    title: 'Hip abduction',
+    titleKey: 'exercises.hipAbduction.title',
+    rationaleKey: 'exercises.hipAbduction.rationale',
+    cueKey: 'exercises.hipAbduction.cue',
     category: 'Fitness',
     track: 'B',
     position: 'standing',
@@ -219,12 +294,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultSets: 3,
     defaultReps: 15,
     perSide: true,
-    rationale: 'A hip that gives way lands the load on the arch.',
-    cue: 'Push through the heel, not the toes.',
-  },
-  {
+  }),
+  withCopy({
     id: 'single_leg_hold',
-    title: 'Single-leg hold',
+    titleKey: 'exercises.singleLegHold.title',
+    rationaleKey: 'exercises.singleLegHold.rationale',
+    cueKey: 'exercises.singleLegHold.cue',
     category: 'Fitness',
     track: 'B',
     position: 'standing',
@@ -232,12 +307,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultSets: 3,
     defaultHoldSec: 30,
     perSide: true,
-    rationale: 'Standing on one leg is the test your foot fails first.',
-    cue: 'Look at one spot. Let the foot wobble — it’s meant to.',
-  },
-  {
+  }),
+  withCopy({
     id: 'eyes_closed_stand',
-    title: 'Eyes-closed stand',
+    titleKey: 'exercises.eyesClosedStand.title',
+    rationaleKey: 'exercises.eyesClosedStand.rationale',
+    cueKey: 'exercises.eyesClosedStand.cue',
     category: 'Fitness',
     track: 'B',
     position: 'standing',
@@ -245,12 +320,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultSets: 3,
     defaultHoldSec: 20,
     perSide: false,
-    rationale: 'With the eyes shut, the foot has to do the balancing.',
-    cue: 'Stand near a wall. Reaching for it is fine.',
-  },
-  {
+  }),
+  withCopy({
     id: 'heel_toe_walk',
-    title: 'Heel-to-toe walk',
+    titleKey: 'exercises.heelToeWalk.title',
+    rationaleKey: 'exercises.heelToeWalk.rationale',
+    cueKey: 'exercises.heelToeWalk.cue',
     category: 'Fitness',
     track: 'B',
     position: 'standing',
@@ -258,12 +333,12 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultSets: 3,
     defaultReps: 10,
     perSide: false,
-    rationale: 'Walking heel to toe is the arch loading and unloading in order.',
-    cue: 'Heel lands first, then roll. Slow enough to stop mid-step.',
-  },
-  {
+  }),
+  withCopy({
     id: 'ankle_rocks',
-    title: 'Ankle rocks',
+    titleKey: 'exercises.ankleRocks.title',
+    rationaleKey: 'exercises.ankleRocks.rationale',
+    cueKey: 'exercises.ankleRocks.cue',
     category: 'Mobility',
     track: 'B',
     position: 'standing',
@@ -271,44 +346,42 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     defaultSets: 2,
     defaultReps: 15,
     perSide: true,
-    rationale: 'An ankle that bends lets the heel stay down.',
-    cue: 'Knee travels over the toes, heel stays on the floor.',
-  },
-  {
+  }),
+  withCopy({
     id: 'foot_roll',
-    title: 'Foot roll',
+    titleKey: 'exercises.footRoll.title',
+    rationaleKey: 'exercises.footRoll.rationale',
+    cueKey: 'exercises.footRoll.cue',
     category: 'Recovery',
     track: 'A',
     position: 'seated',
     loadsFascia: false,
     defaultHoldSec: 120,
     perSide: false,
-    rationale: 'Rolling settles the tissue after it has worked.',
-    cue: 'Slow and firm. If you’re wincing, ease off.',
-  },
-  {
+  }),
+  withCopy({
     id: 'barefoot_home',
-    title: 'Barefoot at home',
+    titleKey: 'exercises.barefootHome.title',
+    rationaleKey: 'exercises.barefootHome.rationale',
+    cueKey: 'exercises.barefootHome.cue',
     category: 'Habit',
     track: 'B',
     position: 'none',
     loadsFascia: false,
     perSide: false,
-    rationale: 'Hours barefoot are hours the foot spends working.',
-    cue: 'Indoors only, on flat floors, and build it up slowly.',
-  },
-  {
+  }),
+  withCopy({
     id: 'breathing_reset',
-    title: 'Breathing reset',
+    titleKey: 'exercises.breathingReset.title',
+    rationaleKey: 'exercises.breathingReset.rationale',
+    cueKey: 'exercises.breathingReset.cue',
     category: 'Recovery',
     track: 'A',
     position: 'seated',
     loadsFascia: false,
     defaultHoldSec: 60,
     perSide: false,
-    rationale: 'A minute of slow breathing ends the session properly.',
-    cue: 'Out for longer than in. That’s the whole thing.',
-  },
+  }),
 ];
 
 /** The catalogue by id, built once. */
@@ -332,7 +405,65 @@ export function exerciseById(id: string): Exercise {
   return exercise;
 }
 
+/**
+ * The catalogue keyed by title, in every language at once.
+ *
+ * The player and the clip prefetcher are handed *titles* rather than ids — see
+ * `movesFor` — and have to get back to the entry behind one to read its dose,
+ * its cue and its demonstration. That reverse lookup used to be a map built at
+ * module scope from `exercise.title`, which the moment titles became
+ * translatable meant a map of English titles being searched with a Russian one.
+ *
+ * Indexing all three languages rather than the current one is what makes it
+ * total. A title can arrive from a `useMemo` that was computed before the user
+ * switched language, or from a component that has not re-rendered yet, and
+ * neither of those should cost the user their video and their dose. Fifty-four
+ * entries, built once, and no way for it to go stale.
+ */
+let titlesToExercises: Map<string, Exercise> | null = null;
+
+function titleIndex(): Map<string, Exercise> {
+  if (titlesToExercises != null) return titlesToExercises;
+  const index = new Map<string, Exercise>();
+  for (const language of LANGUAGES) {
+    const t = translatorFor(language);
+    for (const exercise of EXERCISE_LIST) index.set(t(exercise.titleKey), exercise);
+  }
+  titlesToExercises = index;
+  return index;
+}
+
+/**
+ * The exercise a title names, in any language the app ships.
+ *
+ * Null rather than a throw: the three retest measurements travel through the
+ * player as titles too, and they are tests rather than exercises. A miss is a
+ * normal answer here, and every reader is written to survive it.
+ */
+export function exerciseByTitle(title: string): Exercise | null {
+  return titleIndex().get(title) ?? null;
+}
+
 /** The two heel-raise variants, which are the only exercises a flare removes. */
 export function loadsFascia(id: string): boolean {
   return EXERCISES_BY_ID[id]?.loadsFascia === true;
+}
+
+/** The catalogue's four categories, in this list's own key. */
+const CATEGORY_KEYS = {
+  Fitness: 'exercises.category.fitness',
+  Mobility: 'exercises.category.mobility',
+  Recovery: 'exercises.category.recovery',
+  Habit: 'exercises.category.habit',
+} as const satisfies Record<ExerciseCategory, Key>;
+
+/**
+ * What kind of effort a row asks for, as a word.
+ *
+ * The `ExerciseCategory` union is written in English because it is data — the
+ * tables above are keyed by it and the two screens that colour a row switch on
+ * it. This is the only thing that turns one into something to read.
+ */
+export function exerciseCategoryLabel(category: ExerciseCategory): string {
+  return translatorFor(getLanguage())(CATEGORY_KEYS[category]);
 }

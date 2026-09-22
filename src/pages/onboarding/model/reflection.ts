@@ -1,4 +1,7 @@
+import type { Translate } from '@/shared/lib/i18n';
+
 import { loadQuestionFor, type SportKey } from './personalise';
+import type { Phrase } from './steps';
 
 /**
  * The three lines the building screen says while it waits.
@@ -20,11 +23,13 @@ export type BuildingLines = readonly [string, string, string];
  * something — the screen holds for 5.44 seconds either way, and two of them
  * blank would read as a failure rather than as a pause.
  */
-export const DEFAULT_BUILDING_LINES: BuildingLines = [
-  'Getting to know you',
-  'Building your plan',
-  'Your plan is ready',
-];
+export function defaultBuildingLines(t: Translate): BuildingLines {
+  return [
+    t('onboarding.building.line1'),
+    t('onboarding.building.title'),
+    t('onboarding.building.line3'),
+  ];
+}
 
 /**
  * Which complaint speaks for the set.
@@ -41,13 +46,13 @@ type PainKey = (typeof PRIMARY_ORDER)[number];
 
 /** How each complaint is named in the reflection line. `none` has no noun —
  * there is no pain to name — so it drops out of line one entirely. */
-export const PAIN_NOUN: Record<PainKey, string | null> = {
-  heel: 'Heel pain',
-  foot: 'Foot pain',
-  achilles: 'Achilles pain',
-  shin: 'Shin pain',
-  knee: 'Knee pain',
-  hip: 'Hip pain',
+export const PAIN_NOUN: Record<PainKey, Phrase | null> = {
+  heel: (t) => t('onboarding.reflection.painHeel'),
+  foot: (t) => t('onboarding.reflection.painFoot'),
+  achilles: (t) => t('onboarding.reflection.painAchilles'),
+  shin: (t) => t('onboarding.reflection.painShin'),
+  knee: (t) => t('onboarding.reflection.painKnee'),
+  hip: (t) => t('onboarding.reflection.painHip'),
   none: null,
 };
 
@@ -58,14 +63,14 @@ export const PAIN_NOUN: Record<PainKey, string | null> = {
  * is the part the user has not heard before — and being told something true
  * they did not already know is the whole reason this screen exists.
  */
-const PATTERN: Record<PainKey, string> = {
-  heel: 'This is the most common pattern there is. It also responds fastest.',
-  foot: 'The arch isn’t weak on its own. What holds it up is.',
-  achilles: 'Load built faster than the tendon adapted. That’s fixable.',
-  shin: 'Volume outran your legs. The plan walks that back, then builds.',
-  knee: 'The knee is where it hurts. It’s rarely where it started.',
-  hip: 'Something below the hip stopped carrying its share.',
-  none: 'You’re here before it hurts. That’s the cheap way to do this.',
+const PATTERN: Record<PainKey, Phrase> = {
+  heel: (t) => t('onboarding.pattern.heel'),
+  foot: (t) => t('onboarding.pattern.foot'),
+  achilles: (t) => t('onboarding.pattern.achilles'),
+  shin: (t) => t('onboarding.pattern.shin'),
+  knee: (t) => t('onboarding.pattern.knee'),
+  hip: (t) => t('onboarding.pattern.hip'),
+  none: (t) => t('onboarding.pattern.none'),
 };
 
 /**
@@ -76,12 +81,27 @@ const PATTERN: Record<PainKey, string> = {
  * the programme runs, and quoting it here would hand the user an exit date
  * instead of a reason to start.
  */
-const PROMISE = 'First changes: day 12 to 16.';
+const PROMISE: Phrase = (t) => t('onboarding.building.promise');
 
-/** Hiking is asked by the month; everything else by the week. Taken from the
- * load question's own blurb, which is the wording the user just read. */
-export function cadence(sport: SportKey | null): string {
-  return sport === 'hiking' ? 'a month' : 'a week';
+/**
+ * The load band with the cadence it was asked in — "30–50 km a week".
+ *
+ * One whole template per cadence rather than a band with " a week" stuck on
+ * the end. The join was English-only: Russian wants «в неделю» after the
+ * figure, Spanish «por semana», and hiking's month is a different word again
+ * in all three. Taken from the load question's own blurb, which is the wording
+ * the user just read.
+ */
+export function volumeLine(
+  t: Translate,
+  sport: SportKey | null,
+  load: readonly string[],
+): string | null {
+  const band = loadLabel(t, sport, load);
+  if (band == null) return null;
+  return sport === 'hiking'
+    ? t('onboarding.reflection.volumeMonthly', { band })
+    : t('onboarding.reflection.volumeWeekly', { band });
 }
 
 export function primaryPain(pain: readonly string[]): PainKey | null {
@@ -90,10 +110,15 @@ export function primaryPain(pain: readonly string[]): PainKey | null {
 
 /** The load band as the user saw it — "30–50 km", "3–5 hours" — looked up by
  * value so the reflection quotes the label rather than re-deriving it. */
-export function loadLabel(sport: SportKey | null, load: readonly string[]): string | null {
+export function loadLabel(
+  t: Translate,
+  sport: SportKey | null,
+  load: readonly string[],
+): string | null {
   const value = load[0];
   if (value == null) return null;
-  return loadQuestionFor(sport).options.find((option) => option.value === value)?.label ?? null;
+  const option = loadQuestionFor(sport).options.find((o) => o.value === value);
+  return option != null ? option.label(t) : null;
 }
 
 /**
@@ -103,17 +128,31 @@ export function loadLabel(sport: SportKey | null, load: readonly string[]): stri
  * long it has been going on — is deliberately absent, because no step asks for
  * it, and inventing a duration on the one screen whose job is to prove the app
  * was listening would undo exactly what the screen is for.
+ *
+ * Three templates rather than a join and a full stop: the separator between the
+ * two facts and the punctuation that closes them are a language's business, and
+ * `parts.join(', ')` was quietly deciding both for every language at once.
  */
-function reflection(sport: SportKey | null, pain: readonly string[], load: readonly string[]): string | null {
-  const parts = [
-    primaryPain(pain) != null ? PAIN_NOUN[primaryPain(pain) as PainKey] : null,
-    loadLabel(sport, load) != null ? `${loadLabel(sport, load)} ${cadence(sport)}` : null,
-  ].filter((part): part is string => part != null);
+function reflection(
+  t: Translate,
+  sport: SportKey | null,
+  pain: readonly string[],
+  load: readonly string[],
+): string | null {
+  const key = primaryPain(pain);
+  const noun = key != null ? PAIN_NOUN[key] : null;
+  const volume = volumeLine(t, sport, load);
 
-  return parts.length > 0 ? `${parts.join(', ')}.` : null;
+  if (noun != null && volume != null) {
+    return t('onboarding.building.reflectionBoth', { pain: noun(t), volume });
+  }
+  if (noun != null) return t('onboarding.building.reflectionPain', { pain: noun(t) });
+  if (volume != null) return t('onboarding.building.reflectionVolume', { volume });
+  return null;
 }
 
 export type ReflectionInput = {
+  t: Translate;
   sport: SportKey | null;
   /** Values from the pain step, e.g. `['heel', 'shin']`. */
   pain: readonly string[];
@@ -128,11 +167,12 @@ export type ReflectionInput = {
  * but skipped the load one should still be told what their pattern is, and
  * the promise is true regardless of what anyone answered.
  */
-export function buildingLines({ sport, pain, load }: ReflectionInput): BuildingLines {
+export function buildingLines({ t, sport, pain, load }: ReflectionInput): BuildingLines {
   const primary = primaryPain(pain);
+  const fallback = defaultBuildingLines(t);
   return [
-    reflection(sport, pain, load) ?? DEFAULT_BUILDING_LINES[0],
-    primary != null ? PATTERN[primary] : DEFAULT_BUILDING_LINES[1],
-    PROMISE,
+    reflection(t, sport, pain, load) ?? fallback[0],
+    primary != null ? PATTERN[primary](t) : fallback[1],
+    PROMISE(t),
   ];
 }

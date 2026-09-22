@@ -8,6 +8,7 @@ export function Footer() {
         <nav>
           <Link href="/support/">Support</Link>
           <Link href="/privacy/">Privacy</Link>
+          <Link href="/terms/">Terms</Link>
         </nav>
       </div>
     </footer>

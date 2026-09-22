@@ -275,7 +275,9 @@ describe('the ladder', () => {
 
   test('a user with data and nothing to report lands on the rotation', () => {
     const fine = { ...NO_SIGNALS, availability: 'ready' as const, walkingSpeedTrend: 'stable' as const };
-    expect(briefState({ ...base, todayPain: 1, health: fine })).toBe('quiet');
+    // The rotation is a set of states rather than one `quiet` the copy layer
+    // then re-dispatches on, so what this asserts is membership of it.
+    expect(briefState({ ...base, todayPain: 1, health: fine })).toStartWith('quiet-');
   });
 });
 

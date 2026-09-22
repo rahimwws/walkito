@@ -11,6 +11,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
 
@@ -60,6 +61,7 @@ export function MeasureStep({
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const caretColor = accents[scheme].orange.fill;
+  const t = useT();
 
   const active = units.find((u) => u.value === unit) ?? units[0];
   const refs = useRef<Record<string, TextInput | null>>({});
@@ -120,7 +122,7 @@ export function MeasureStep({
                   style={styles.capture}
                 />
               </Pressable>
-              <Text style={[styles.suffix, { color: meter.label }]}>{field.suffix}</Text>
+              <Text style={[styles.suffix, { color: meter.label }]}>{field.suffix(t)}</Text>
             </View>
           );
         })}
@@ -165,6 +167,7 @@ function UnitToggle({
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
+  const t = useT();
 
   const index = Math.max(
     units.findIndex((u) => u.value === unit),
@@ -195,7 +198,7 @@ function UnitToggle({
               styles.toggleLabel,
               { color: u.value === unit ? colors.foreground : meter.unit },
             ]}>
-            {u.label}
+            {u.label(t)}
           </Text>
         </Pressable>
       ))}

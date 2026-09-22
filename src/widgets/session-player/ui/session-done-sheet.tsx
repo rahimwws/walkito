@@ -1,4 +1,5 @@
 import { accents } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 
@@ -25,14 +26,19 @@ export type SessionDoneSheetProps = {
  */
 export function SessionDoneSheet({ visible, streak, moves, onClose }: SessionDoneSheetProps) {
   const scheme = useColorScheme();
+  const t = useT();
 
   return (
     <CelebrationSheet
       visible={visible}
-      title="Nice work."
-      headline={`${streak} ${streak === 1 ? 'day' : 'days'} in a row`}
+      title={t('widgets.sessionDoneTitle')}
+      // Both lines were assembled here from an English singular and an English
+      // plural. They are plural entries in the catalogue now, which is what
+      // gets "2 дня" and "5 дней" right — the form Russian needs at 2, 3 and 4
+      // has no English counterpart to have been built from.
+      headline={t('widgets.sessionDoneStreak', { count: streak })}
       headlineColor={accents[scheme].orange.fill}
-      blurb={`${moves === 1 ? 'One move' : `All ${moves} moves`} done. Small and often is what moves this.`}
+      blurb={t('widgets.sessionDoneBlurb', { count: moves })}
       onClose={onClose}
     />
   );

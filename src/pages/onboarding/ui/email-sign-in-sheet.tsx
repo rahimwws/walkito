@@ -15,6 +15,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { signInWithEmail } from '@/entities/session';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
@@ -56,6 +57,7 @@ export function EmailSignInSheet({ visible, onClose, onSignedIn }: Props) {
   const meter = meterColors[scheme];
   const accent = accents[scheme];
   const insets = useSafeAreaInsets();
+  const t = useT();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -64,8 +66,11 @@ export function EmailSignInSheet({ visible, onClose, onSignedIn }: Props) {
 
   const [mounted, setMounted] = useState(false);
   /** 0 away, 1 arrived. One number drives the blur and the card, so they cannot
-   * arrive or leave at different times. */
-  const t = useSharedValue(0);
+   * arrive or leave at different times.
+   *
+   * Named `progress` rather than `t`, which is the translator in every file
+   * that renders text — see `StreakSheet`, where the same rename happened. */
+  const progress = useSharedValue(0);
 
   useEffect(() => {
     if (visible) {
@@ -73,7 +78,7 @@ export function EmailSignInSheet({ visible, onClose, onSignedIn }: Props) {
       // A frame late: the modal has to exist before the transition starts, or
       // the first frames play against nothing.
       const frame = requestAnimationFrame(() => {
-        t.value = withTiming(1, {
+        progress.value = withTiming(1, {
           duration: IN_MS,
           easing: Easing.out(Easing.cubic),
           reduceMotion: ReduceMotion.System,
@@ -82,7 +87,7 @@ export function EmailSignInSheet({ visible, onClose, onSignedIn }: Props) {
       return () => cancelAnimationFrame(frame);
     }
 
-    t.value = withTiming(
+    progress.value = withTiming(
       0,
       { duration: OUT_MS, easing: Easing.in(Easing.cubic), reduceMotion: ReduceMotion.System },
       (finished) => {
@@ -90,7 +95,7 @@ export function EmailSignInSheet({ visible, onClose, onSignedIn }: Props) {
       },
     );
     return undefined;
-  }, [visible, t]);
+  }, [visible, progress]);
 
   /**
    * How far the keyboard has pushed in, as a shared value.
@@ -106,10 +111,10 @@ export function EmailSignInSheet({ visible, onClose, onSignedIn }: Props) {
    */
   const keyboard = useReanimatedKeyboardAnimation();
 
-  const backdrop = useAnimatedStyle(() => ({ opacity: t.value }));
+  const backdrop = useAnimatedStyle(() => ({ opacity: progress.value }));
   const dock = useAnimatedStyle(() => ({
-    opacity: t.value,
-    transform: [{ translateY: (1 - t.value) * RISE + keyboard.height.value }],
+    opacity: progress.value,
+    transform: [{ translateY: (1 - progress.value) * RISE + keyboard.height.value }],
   }));
 
   const ready = email.trim().length > 0 && password.length > 0 && !busy;
@@ -160,7 +165,7 @@ export function EmailSignInSheet({ visible, onClose, onSignedIn }: Props) {
             most people come in — so trapping anyone here would be wrong. */}
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="Close"
+          accessibilityLabel={t('common.close')}
           style={styles.fill}
           onPress={dismiss}
         />
@@ -170,25 +175,29 @@ export function EmailSignInSheet({ visible, onClose, onSignedIn }: Props) {
           pointerEvents="box-none">
             <View style={[styles.card, { backgroundColor: colors.card }]}>
               <View style={styles.head}>
-                <Text style={[styles.title, { color: colors.foreground }]}>Sign in</Text>
+                <Text style={[styles.title, { color: colors.foreground }]}>
+                  {t('onboarding.email.title')}
+                </Text>
                 <Pressable
                   accessibilityRole="button"
-                  accessibilityLabel="Close"
+                  accessibilityLabel={t('common.close')}
                   onPress={dismiss}
                   hitSlop={12}>
-                  <Text style={[styles.close, { color: meter.caption }]}>Close</Text>
+                  <Text style={[styles.close, { color: meter.caption }]}>
+                    {t('common.close')}
+                  </Text>
                 </Pressable>
               </View>
 
               <Text style={[styles.blurb, { color: meter.caption }]}>
-                Use the email and password for your account.
+                {t('onboarding.email.blurb')}
               </Text>
 
               <TextInput
                 style={[styles.field, { backgroundColor: colors.background, color: meter.ink }]}
                 value={email}
                 onChangeText={setEmail}
-                placeholder="Email"
+                placeholder={t('onboarding.email.address')}
                 placeholderTextColor={meter.unit}
                 // `username` rather than `emailAddress`, so a password manager
                 // offers the pair and not just the address.
@@ -204,7 +213,7 @@ export function EmailSignInSheet({ visible, onClose, onSignedIn }: Props) {
                 style={[styles.field, { backgroundColor: colors.background, color: meter.ink }]}
                 value={password}
                 onChangeText={setPassword}
-                placeholder="Password"
+                placeholder={t('onboarding.email.password')}
                 placeholderTextColor={meter.unit}
                 textContentType="password"
                 autoComplete="current-password"
@@ -222,7 +231,7 @@ export function EmailSignInSheet({ visible, onClose, onSignedIn }: Props) {
 
               <View style={styles.cta}>
                 <PrimaryButton
-                  label={busy ? 'Signing in…' : 'Sign in'}
+                  label={busy ? t('onboarding.email.submitting') : t('onboarding.email.submit')}
                   onPress={() => void submit()}
                   disabled={!ready}
                 />

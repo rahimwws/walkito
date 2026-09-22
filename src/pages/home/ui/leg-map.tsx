@@ -9,6 +9,7 @@ import Animated, {
 import Svg, { Circle, Path } from 'react-native-svg';
 
 import { accents } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 
 import {
   PAIN_ZONES,
@@ -186,6 +187,7 @@ type Props = {
 
 export function LegMap({ selected, onToggle }: Props) {
   const scheme = useColorScheme();
+  const t = useT();
 
   /**
    * Red, and this is the one place in the app allowed to use it.
@@ -218,7 +220,7 @@ export function LegMap({ selected, onToggle }: Props) {
       style={styles.box}
       onLayout={measure}
       accessibilityRole="button"
-      accessibilityLabel="Where it hurts"
+      accessibilityLabel={t('home.whereItHurts')}
       onPress={(event) => {
         const zone = zoneAt(event.nativeEvent.locationX, event.nativeEvent.locationY, size);
         if (zone != null) onToggle(zone);

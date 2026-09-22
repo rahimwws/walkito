@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Easing, useSharedValue, withTiming } from 'react-native-reanimated';
 
+import { useT } from '@/shared/lib/i18n';
 import { fonts, palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
@@ -63,13 +64,14 @@ export type DailyGoalCardProps = {
 
 export function DailyGoalCard({
   percent,
-  caption = 'Daily Goal',
-  actionLabel = 'Get Started',
+  caption,
+  actionLabel,
   actionIcon,
   onAction,
 }: DailyGoalCardProps) {
   const scheme = useColorScheme() === 'dark' ? 'dark' : 'light';
   const theme = THEME[scheme];
+  const t = useT();
   const colors = palette[scheme];
   const hasGlass = isLiquidGlassAvailable();
 
@@ -92,7 +94,7 @@ export function DailyGoalCard({
       {actionIcon ? (
         <HugeiconsIcon icon={actionIcon} size={22} color={theme.buttonLabel} />
       ) : null}
-      <Text style={[styles.buttonLabel, { color: theme.buttonLabel }]}>{actionLabel}</Text>
+      <Text style={[styles.buttonLabel, { color: theme.buttonLabel }]}>{actionLabel ?? t('card.getStarted')}</Text>
     </>
   );
 
@@ -130,7 +132,7 @@ export function DailyGoalCard({
           style={{ position: 'absolute', top: CENTER_Y - GAUGE_CENTER, alignSelf: 'center' }}
         />
         <View style={styles.gaugeCenter} pointerEvents="none">
-          <Text style={[styles.caption, { color: theme.secondary }]}>{caption}</Text>
+          <Text style={[styles.caption, { color: theme.secondary }]}>{caption ?? t('card.dailyGoal')}</Text>
           <AnimatedNumber
             text={`${clamped}%`}
             value={clamped}

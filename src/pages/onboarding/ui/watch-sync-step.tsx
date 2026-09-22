@@ -3,9 +3,10 @@ import { useEffect, useState } from 'react';
 import { Linking, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 
 import { fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
-import { SYNC_GUIDES, type WatchBrand } from '../config/watch-guides';
+import { syncGuides, type WatchBrand } from '../config/watch-guides';
 
 /**
  * The session player's demonstration card, in the one respect that differs.
@@ -50,8 +51,9 @@ export function WatchSyncStep({ brand }: WatchSyncStepProps) {
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const { width } = useWindowDimensions();
+  const t = useT();
 
-  const guide = SYNC_GUIDES[brand];
+  const guide = syncGuides(t)[brand];
 
   // `useVideoPlayer` is a hook and cannot be skipped, so it is always created;
   // a null source simply gives it nothing to play. The card below is what is
@@ -143,13 +145,15 @@ export function WatchSyncStep({ brand }: WatchSyncStepProps) {
           one pressed. */}
       <Pressable
         accessibilityRole="link"
-        accessibilityLabel={`Open ${guide.label}`}
+        accessibilityLabel={t('onboarding.watchSync.open', { app: guide.label })}
         onPress={() => {
           void Linking.openURL(guide.url).catch(() => {});
         }}
         hitSlop={10}
         style={({ pressed }) => [styles.open, pressed && { opacity: 0.5 }]}>
-        <Text style={[styles.openText, { color: meter.caption }]}>Open {guide.label}</Text>
+        <Text style={[styles.openText, { color: meter.caption }]}>
+          {t('onboarding.watchSync.open', { app: guide.label })}
+        </Text>
       </Pressable>
     </View>
   );

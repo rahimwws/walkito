@@ -5,6 +5,7 @@ import { Linking } from 'react-native';
 
 import { firstName, useProfileName } from '@/entities/profile';
 import { SUPPORT_EMAIL } from '@/shared/config';
+import { useT, type Translate } from '@/shared/lib/i18n';
 
 
 /**
@@ -34,13 +35,19 @@ function mailto(subject: string, body: string): string {
   return `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
-const MAIL = {
-  [LEAVING]: mailto(
-    'Before I delete Walkito',
-    "I'm about to delete the app.\n\nWhat pushed me out:\n\n",
-  ),
-  [TALK]: mailto('Something is off in Walkito', "Hey —\n\nWhat's going on:\n\n"),
-} as const;
+/**
+ * Built per call rather than held at module scope.
+ *
+ * A `const` here would resolve its copy once, at import, and keep whatever
+ * language the app first launched in — and these strings end up in a mail
+ * composer the user reads, so the staleness would be visible.
+ */
+function mailFor(t: Translate) {
+  return {
+    [LEAVING]: mailto(t('quick.deleteSubject'), t('quick.deleteBody')),
+    [TALK]: mailto(t('quick.talkSubject'), t('quick.talkBody')),
+  } as const;
+}
 
 /**
  * What the long press offers, on top of what is already there.
@@ -61,7 +68,7 @@ const MAIL = {
  *
  * Empty until there is a name. An unnamed plea is just the support link again.
  */
-function itemsFor(name: string): QuickActions.Action[] {
+function itemsFor(name: string, t: Translate): QuickActions.Action[] {
   if (name.length === 0) return [];
   return [
     {
@@ -70,10 +77,10 @@ function itemsFor(name: string): QuickActions.Action[] {
       // are careful never to raise our voice at someone — but this line is read
       // with a thumb already moving toward Remove App, and it has about half a
       // second to be noticed at all.
-      title: `${name.toUpperCase()}, WAIT.`,
+      title: t('quick.deleteTitle', { name: name.toUpperCase() }),
       // Sentence case underneath. Both lines in caps is a wall, and the second
       // line is the one that has to actually be read.
-      subtitle: 'Deleting? Tell us what broke.',
+      subtitle: t('quick.deleteSubtitle'),
       // Our own mascot rather than a system symbol. iOS keeps only the alpha of
       // a template image, so the artwork arrives as a silhouette — which is
       // exactly what makes it fill the fixed box corner to corner where an SF
@@ -98,6 +105,7 @@ function itemsFor(name: string): QuickActions.Action[] {
  */
 export function useQuickActions(): void {
   const name = firstName(useProfileName());
+  const t = useT();
 
   useEffect(() => {
     let cancelled = false;
@@ -108,7 +116,7 @@ export function useQuickActions(): void {
       try {
         if (!(await QuickActions.isSupported())) return;
         if (cancelled) return;
-        await QuickActions.setItems(itemsFor(name));
+        await QuickActions.setItems(itemsFor(name, t));
       } catch {
         // Deliberately silent. There is no recovery and nothing to tell the
         // user: they simply do not get a shortcut menu.
@@ -117,10 +125,11 @@ export function useQuickActions(): void {
     return () => {
       cancelled = true;
     };
-  }, [name]);
+  }, [name, t]);
 
   useQuickActionCallback((action) => {
-    const url = action.id === LEAVING ? MAIL[LEAVING] : MAIL[TALK];
+    const mail = mailFor(t);
+    const url = action.id === LEAVING ? mail[LEAVING] : mail[TALK];
     // Not awaited, and failures are swallowed: a phone with no mail account
     // configured rejects the URL, and there is nothing useful to say about that
     // in a handler the user reached by long-pressing an icon.

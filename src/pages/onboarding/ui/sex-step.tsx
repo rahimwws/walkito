@@ -16,7 +16,7 @@ import { PRIMARY, fonts, meterColors } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import { SEX_PHOTOS } from '../config/sex-photos';
-import type { OnboardingOption } from '../model/steps';
+import type { ResolvedOption } from '../model/steps';
 
 const RADIUS = 24;
 const CHECK = 26;
@@ -26,7 +26,7 @@ const PRESS_MS = 90;
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
 export type SexStepProps = {
-  options: readonly OnboardingOption[];
+  options: readonly ResolvedOption[];
   selected: string | null;
   onChange: (next: string) => void;
 };
@@ -69,7 +69,7 @@ function SexCard({
   dimmed,
   onPress,
 }: {
-  option: OnboardingOption;
+  option: ResolvedOption;
   selected: boolean;
   dimmed: boolean;
   onPress: () => void;

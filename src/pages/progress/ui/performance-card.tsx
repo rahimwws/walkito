@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, type StyleProp, type ViewStyle } from 'react-na
 import Animated, { useAnimatedStyle, type SharedValue } from 'react-native-reanimated';
 
 import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { DeltaLabel } from '@/shared/ui/meter';
 
@@ -34,6 +35,8 @@ const BUBBLE_GAP = 6;
 const SWELL = 0.3;
 
 export type PerformanceCardProps = {
+  /** Names the card. Defaults to the translated "Performance" — a default
+   * parameter cannot, because the value comes from a hook. */
   label?: string;
   /** Where the marker stands. */
   value: number;
@@ -61,7 +64,7 @@ export type PerformanceCardProps = {
  * the marker alone would drag it out from under its own hill.
  */
 export function PerformanceCard({
-  label = 'Performance',
+  label,
   value,
   max,
   delta,
@@ -73,6 +76,9 @@ export function PerformanceCard({
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const accent = accents[scheme].teal;
+  const t = useT();
+
+  const title = label ?? t('progress.performance');
 
   /** Ruler width, measured — the marker has to land on a tick centre, and tick
    * centres are only knowable once `space-between` has done its work. */
@@ -104,13 +110,18 @@ export function PerformanceCard({
       : null;
 
   /** The reading, said the way the card is laid out: the figure, the top of
-   * the scale, and the word the marker is standing under. */
-  const spoken = `${value.toFixed(precision)} of ${max}`;
+   * the scale, and the word the marker is standing under. Two whole sentences
+   * rather than one with the band appended, so a language that puts the word
+   * in front of the figures can write it that way. */
+  const spoken =
+    band != null
+      ? t('progress.performanceA11yBand', { value: value.toFixed(precision), max, band })
+      : t('progress.performanceA11y', { value: value.toFixed(precision), max });
 
   return (
     <View style={[styles.card, { backgroundColor: colors.card }, style]}>
       <View style={styles.header}>
-        <Text style={[styles.label, { color: colors.foreground }]}>{label}</Text>
+        <Text style={[styles.label, { color: colors.foreground }]}>{title}</Text>
         {delta != null && <DeltaLabel delta={shownDelta} suffix="%" fontSize={14} />}
       </View>
 
@@ -120,12 +131,12 @@ export function PerformanceCard({
       <View
         accessible
         accessibilityRole="progressbar"
-        accessibilityLabel={label}
+        accessibilityLabel={title}
         accessibilityValue={{
           min: 0,
           max,
           now: value,
-          text: band != null ? `${spoken}, ${band}` : spoken,
+          text: spoken,
         }}
         style={styles.gauge}>
         {/* A fixed-width slot centred on the marker, so the bubble centres

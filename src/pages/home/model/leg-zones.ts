@@ -6,7 +6,12 @@
  * this is the part with arithmetic in it. Hit testing is exactly the kind of
  * thing that fails quietly — the first version simply did nothing when a tap
  * missed a thin outline, which read as the map being broken.
+ *
+ * The import below is type-only and erased, so nothing here loads at runtime
+ * that this file's whole point is to avoid.
  */
+
+import type { Key } from '@/shared/lib/i18n';
 
 export type LegZone =
   | 'calf'
@@ -45,22 +50,33 @@ export const PAIN_ZONES: readonly LegZone[] = [
   'toes',
 ];
 
-/** Human wording, for the line under the drawing. Plain names rather than
- * anatomical ones — the point is that the user recognises the place they just
- * touched. */
-export const ZONE_LABELS: Readonly<Record<LegZone, string>> = {
-  calf: 'Calf',
-  soleus: 'Soleus',
-  tibia: 'Shin',
-  tib_ant: 'Front shin',
-  ankle: 'Ankle',
-  achilles: 'Achilles',
-  heel: 'Heel',
-  dorsum: 'Top of foot',
-  arch: 'Arch',
-  ball: 'Ball of foot',
-  toes: 'Toes',
-  inner_ankle: 'Inner ankle',
+/**
+ * Where each zone's name is written, for the line under the drawing.
+ *
+ * Keys rather than words, so this module stays pure — the wording is a
+ * translation and lives with the other translations, and the zone ids are data
+ * this file owns. The caller resolves them, which is also what makes the
+ * caption repaint when the language changes rather than on next launch.
+ *
+ * The names themselves are plain rather than anatomical: the point is that the
+ * user recognises the place they just touched, not that a chart would agree.
+ * Each language keeps its own register — Russian says «голеностоп» and not
+ * «лодыжка», because the second names a bone and the first names the joint
+ * that hurts.
+ */
+export const ZONE_LABEL_KEYS: Readonly<Record<LegZone, Key>> = {
+  calf: 'home.zone.calf',
+  soleus: 'home.zone.soleus',
+  tibia: 'home.zone.tibia',
+  tib_ant: 'home.zone.tibAnt',
+  ankle: 'home.zone.ankle',
+  achilles: 'home.zone.achilles',
+  heel: 'home.zone.heel',
+  dorsum: 'home.zone.dorsum',
+  arch: 'home.zone.arch',
+  ball: 'home.zone.ball',
+  toes: 'home.zone.toes',
+  inner_ankle: 'home.zone.innerAnkle',
 };
 
 /**

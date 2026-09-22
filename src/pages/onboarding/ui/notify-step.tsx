@@ -15,6 +15,7 @@ import Animated, {
 
 import { requestNotificationAccess } from '@/entities/notifications';
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
@@ -24,9 +25,9 @@ const APP_ICON = require('@assets/icon.png');
 
 /** What each line of the ask promises, in the order it is delivered. */
 const PROMISES = [
-  'A nudge on the days your plan has a session',
-  'A heads-up when it changes what you are doing',
-  'Nothing else. No streaks to guilt you back.',
+  'onboarding.notify.promise1',
+  'onboarding.notify.promise2',
+  'onboarding.notify.promise3',
 ] as const;
 
 export type NotifyStepProps = {
@@ -57,6 +58,7 @@ export function NotifyStep({ name, granted, onAnswered, onNext, onSkip }: Notify
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
+  const t = useT();
 
   const [busy, setBusy] = useState(false);
   const answered = granted != null;
@@ -78,10 +80,12 @@ export function NotifyStep({ name, granted, onAnswered, onNext, onSkip }: Notify
   return (
     <View style={styles.wrap}>
       <Text style={[styles.title, { color: colors.foreground }]}>
-        {name.trim().length > 0 ? `Don’t go it alone, ${name.trim()}` : 'Don’t go it alone'}
+        {name.trim().length > 0
+          ? t('onboarding.notify.askNamed', { name: name.trim() })
+          : t('onboarding.notify.ask')}
       </Text>
       <Text style={[styles.blurb, { color: meter.caption }]}>
-        A plan only works if it turns up. Let Walkito tell you when today has a session in it.
+        {t('onboarding.notify.askBlurb')}
       </Text>
 
       <Banner />
@@ -95,7 +99,7 @@ export function NotifyStep({ name, granted, onAnswered, onNext, onSkip }: Notify
               .reduceMotion(ReduceMotion.System)}
             style={styles.promise}>
             <View style={[styles.dot, { backgroundColor: PRIMARY }]} />
-            <Text style={[styles.promiseText, { color: meter.caption }]}>{promise}</Text>
+            <Text style={[styles.promiseText, { color: meter.caption }]}>{t(promise)}</Text>
           </Animated.View>
         ))}
       </View>
@@ -104,10 +108,10 @@ export function NotifyStep({ name, granted, onAnswered, onNext, onSkip }: Notify
         <PrimaryButton
           label={
             answered
-              ? 'Next'
+              ? t('onboarding.cta.next')
               : busy
-                ? 'Opening…'
-                : 'Turn on notifications'
+                ? t('onboarding.notify.opening')
+                : t('onboarding.notify.turnOn')
           }
           onPress={answered ? onNext : ask}
           disabled={busy}
@@ -118,12 +122,14 @@ export function NotifyStep({ name, granted, onAnswered, onNext, onSkip }: Notify
             onPress={onSkip}
             hitSlop={10}
             style={({ pressed }) => [styles.skip, pressed && { opacity: 0.5 }]}>
-            <Text style={[styles.skipText, { color: meter.caption }]}>Not now</Text>
+            <Text style={[styles.skipText, { color: meter.caption }]}>
+              {t('onboarding.notify.notNow')}
+            </Text>
           </Pressable>
         )}
         {granted === false && (
           <Text style={[styles.skipText, { color: meter.unit, textAlign: 'center' }]}>
-            No problem — you can turn these on later in Settings.
+            {t('onboarding.notify.declined')}
           </Text>
         )}
       </View>
@@ -142,6 +148,7 @@ function Banner() {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
+  const t = useT();
 
   const drop = useSharedValue(0);
   const pulse = useSharedValue(0);
@@ -176,11 +183,15 @@ function Banner() {
       <Image source={APP_ICON} style={styles.appIcon} />
       <View style={styles.bannerCopy}>
         <View style={styles.bannerTop}>
-          <Text style={[styles.bannerTitle, { color: colors.foreground }]}>Walkito</Text>
-          <Text style={[styles.bannerTime, { color: meter.unit }]}>now</Text>
+          <Text style={[styles.bannerTitle, { color: colors.foreground }]}>
+            {t('onboarding.notify.bannerApp')}
+          </Text>
+          <Text style={[styles.bannerTime, { color: meter.unit }]}>
+            {t('onboarding.notify.bannerTime')}
+          </Text>
         </View>
         <Text style={[styles.bannerBody, { color: meter.caption }]} numberOfLines={2}>
-          Today is foot strength — 7 minutes. Your shins will thank you.
+          {t('onboarding.notify.bannerBody')}
         </Text>
       </View>
     </Animated.View>

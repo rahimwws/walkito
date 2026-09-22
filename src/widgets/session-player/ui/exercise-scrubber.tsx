@@ -13,6 +13,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PRIMARY_BUTTON_HEIGHT } from '@/shared/ui/primary-button';
 
@@ -60,6 +61,7 @@ export function ExerciseScrubber({
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
+  const t = useT();
 
   const width = useSharedValue(0);
   /** Where the playhead stood when the finger landed. */
@@ -119,20 +121,20 @@ export function ExerciseScrubber({
 
         <View style={styles.row}>
           <Control
-            label="Previous exercise"
+            label={t('widgets.scrubberPrevious')}
             icon={PreviousIcon}
             color={colors.foreground}
             onPress={onPrevious}
           />
           <Control
-            label={playing ? 'Pause' : 'Play'}
+            label={t(playing ? 'widgets.scrubberPause' : 'widgets.scrubberPlay')}
             icon={playing ? PauseIcon : PlayIcon}
             color={colors.foreground}
             size={28}
             onPress={onTogglePlay}
           />
           <Control
-            label="Next exercise"
+            label={t('widgets.scrubberNext')}
             icon={NextIcon}
             color={colors.foreground}
             onPress={onNext}

@@ -1,3 +1,5 @@
+import type { Translate } from '@/shared/lib/i18n';
+
 /**
  * The three reviews on the social-proof screen.
  *
@@ -10,6 +12,16 @@
  * `lead` is the emphasised clause. Splitting the quote here rather than
  * marking it up in the component keeps the copy in one place and means the
  * card never has to parse anything.
+ *
+ * **The split is per language, and has to be.** English bolds "pain-free 10k"
+ * in the middle of the first quote; Russian's natural word order puts the same
+ * claim at the end of the sentence, so its `after` is a full stop and nothing
+ * else. Each catalogue therefore holds its own three parts, with two rules: the
+ * `lead` must be a contiguous run of that language's sentence, and the
+ * whitespace convention below must hold.
+ *
+ * Whitespace: the card writes a space between `before` and `lead`, and the
+ * space in front of `after` is baked into the catalogue string.
  */
 export type Testimonial = {
   /** Opens the quote, in normal weight. */
@@ -19,30 +31,32 @@ export type Testimonial = {
   /** Closes the quote, in normal weight. */
   after: string;
   name: string;
-  /** Shown under the name — who they are, not a job title. */
-  detail: string;
 };
 
-export const TESTIMONIALS: readonly Testimonial[] = [
-  {
-    before: 'Six months of shin pain, and I ran a',
-    lead: 'pain-free 10k',
-    after: ' eight weeks in.',
-    name: 'Marta K.',
-    detail: 'Running 4 years',
-  },
-  {
-    before: 'It found my',
-    lead: 'calves, not my knees.',
-    after: ' The strength work finally made sense.',
-    name: 'Daniel R.',
-    detail: 'Half marathon, 1:38',
-  },
-  {
-    before: 'Back from an Achilles injury',
-    lead: 'without losing the distance',
-    after: ' I’d already built.',
-    name: 'Priya S.',
-    detail: 'Marathon in training',
-  },
-];
+/** How many cards the social screen pages through. A constant rather than
+ * `testimonials(t).length`, because the page needs the count before it has a
+ * translator to build the list with. */
+export const TESTIMONIAL_COUNT = 3;
+
+export function testimonials(t: Translate): readonly Testimonial[] {
+  return [
+    {
+      before: t('onboarding.testimonial1.before'),
+      lead: t('onboarding.testimonial1.lead'),
+      after: t('onboarding.testimonial1.after'),
+      name: t('onboarding.testimonial1.name'),
+    },
+    {
+      before: t('onboarding.testimonial2.before'),
+      lead: t('onboarding.testimonial2.lead'),
+      after: t('onboarding.testimonial2.after'),
+      name: t('onboarding.testimonial2.name'),
+    },
+    {
+      before: t('onboarding.testimonial3.before'),
+      lead: t('onboarding.testimonial3.lead'),
+      after: t('onboarding.testimonial3.after'),
+      name: t('onboarding.testimonial3.name'),
+    },
+  ];
+}

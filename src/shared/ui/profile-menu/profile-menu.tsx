@@ -3,6 +3,7 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import { GlassView } from 'expo-glass-effect';
 import { Pressable, StyleSheet } from 'react-native';
 
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 export type ProfileMenuProps = {
@@ -24,11 +25,12 @@ export type ProfileMenuProps = {
  */
 export function ProfileMenu({ onPress }: ProfileMenuProps) {
   const scheme = useColorScheme();
+  const t = useT();
 
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel="Profile"
+      accessibilityLabel={t('common.profile')}
       onPress={onPress}
       style={({ pressed }) => pressed && { opacity: 0.7 }}>
       <GlassView isInteractive style={styles.capsule}>

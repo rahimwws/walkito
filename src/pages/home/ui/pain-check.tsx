@@ -33,6 +33,7 @@ import {
   exerciseById,
 } from '@/entities/program';
 import { fonts, meterColors, palette, primaryButton } from '@/shared/config';
+import { useT, type Key } from '@/shared/lib/i18n';
 import { PROGRAM_EASING, PROGRAM_MS } from '@/shared/lib/program';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
 import { PrimaryButton } from '@/shared/ui/primary-button';
@@ -40,7 +41,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 
 import { SessionView } from '@/widgets/session-player';
 
-import { MAX_ZONES, ZONE_LABELS, toggleZone, type LegZone } from '../model/leg-zones';
+import { MAX_ZONES, ZONE_LABEL_KEYS, toggleZone, type LegZone } from '../model/leg-zones';
 import { reliefIdsFor } from '../model/zone-relief';
 import { LegMap } from './leg-map';
 
@@ -58,21 +59,23 @@ const TILT = 5;
 /** Tall enough for a card; the stage adds the offset between the two. */
 const CARD_HEIGHT = 182;
 
+/** The title is a key, resolved where the card is drawn — so the pair repaints
+ * with the language rather than at next launch. */
 const CARDS = [
   {
     key: 'pain',
-    title: 'It hurts today',
+    title: 'home.itHurts',
     art: require('@assets/home/mascot-pain.png'),
     /** Leading card: sits high and left, tipped anticlockwise. */
     side: 'left',
   },
   {
     key: 'nopain',
-    title: 'No pain today',
+    title: 'home.noPain',
     art: require('@assets/home/mascot-nopain.png'),
     side: 'right',
   },
-] as const;
+] as const satisfies readonly { key: string; title: Key; art: unknown; side: 'left' | 'right' }[];
 
 type CardKey = (typeof CARDS)[number]['key'];
 
@@ -104,6 +107,7 @@ export type PainCheckProps = {
 export function PainCheck({ onLogged }: PainCheckProps) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
+  const t = useT();
   const [selected, setSelected] = useState<CardKey | null>(null);
   const [open, setOpen] = useState(false);
   /**
@@ -149,7 +153,7 @@ export function PainCheck({ onLogged }: PainCheckProps) {
    * motion is paid off the height can grow freely.
    */
   const acknowledge = (score: number) => {
-    ackTimer.current = setTimeout(() => setAck(acknowledgement(score)), PROGRAM_MS);
+    ackTimer.current = setTimeout(() => setAck(t(acknowledgement(score))), PROGRAM_MS);
   };
 
   /**
@@ -197,7 +201,7 @@ export function PainCheck({ onLogged }: PainCheckProps) {
         </View>
 
         <PrimaryButton
-          label={logged ? 'Check in again' : 'Log today’s check-in'}
+          label={logged ? t('home.checkInAgain') : t('home.logCheckIn')}
           disabled={selected == null}
           onPress={() => {
             Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
@@ -299,10 +303,10 @@ const PUSH_PARALLAX = 0.3;
  * because it is a claim about the day's session and it has to be true: at six
  * and below nothing about today changes, so nothing about today is promised.
  */
-function acknowledgement(score: number): string {
-  if (score <= 2) return 'Good.';
-  if (score <= RELIEF_ABOVE) return 'Logged.';
-  return 'Logged. Today’s session is shorter because of it.';
+function acknowledgement(score: number): Key {
+  if (score <= 2) return 'home.ackGood';
+  if (score <= RELIEF_ABOVE) return 'home.ackLogged';
+  return 'home.ackLoggedShorter';
 }
 
 /**
@@ -341,6 +345,7 @@ function Sheet({
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
   const { width } = useWindowDimensions();
+  const t = useT();
 
   /**
    * Where it hurts, if they said. Optional on purpose — the number is the
@@ -370,10 +375,14 @@ function Sheet({
    * Titles rather than ids because that is what the player takes — see the note
    * on `moves` in `SessionView`. Recomputed as the map changes, so the session
    * waiting behind the button is always the one for what is currently marked.
+   *
+   * `t` is in the dependencies because `exercise.title` resolves against the
+   * active language on read. Without it a language change would leave this memo
+   * holding titles in the language the sheet was opened in.
    */
   const reliefMoves = useMemo(
     () => reliefIdsFor(zones).map((id) => exerciseById(id).title),
-    [zones],
+    [zones, t],
   );
 
   const usual = useMemo(usualRange, []);
@@ -445,8 +454,10 @@ function Sheet({
         ]}>
       <View style={[styles.grabber, { backgroundColor: meter.track }]} />
 
-      <Text style={[styles.sheetTitle, { color: colors.foreground }]}>Today&apos;s check-in</Text>
-      <Text style={[styles.sheetSub, { color: meter.caption }]}>How does the foot feel?</Text>
+      <Text style={[styles.sheetTitle, { color: colors.foreground }]}>
+        {t('home.checkInTitle')}
+      </Text>
+      <Text style={[styles.sheetSub, { color: meter.caption }]}>{t('home.checkInSub')}</Text>
 
       <View style={styles.readout}>
         <AnimatedNumber
@@ -460,7 +471,7 @@ function Sheet({
         />
       </View>
 
-      <Text style={[styles.bandLabel, { color: colors.foreground }]}>{band.label}</Text>
+      <Text style={[styles.bandLabel, { color: colors.foreground }]}>{t(band.label)}</Text>
 
       {/* Where first, then how much.
           The place is the part the user has to look at the drawing to answer,
@@ -473,10 +484,13 @@ function Sheet({
       </View>
       <Text style={[styles.zoneLine, { color: meter.caption }]}>
         {zonesFull
-          ? `Three at a time — tap one to swap it`
+          ? t('home.zonesFull', { count: MAX_ZONES })
           : zones.length === 0
-            ? `Tap where it hurts — up to ${MAX_ZONES}`
-            : `${zones.map((zone) => ZONE_LABELS[zone]).join(' · ')} — ${reliefMoves[0]} next`}
+            ? t('home.zonesEmpty', { count: MAX_ZONES })
+            : t('home.zonesPicked', {
+                zones: zones.map((zone) => t(ZONE_LABEL_KEYS[zone])).join(t('home.zoneJoin')),
+                move: reliefMoves[0],
+              })}
       </Text>
 
       <View style={styles.scale}>
@@ -485,7 +499,7 @@ function Sheet({
 
 
       <PrimaryButton
-        label={logged ? 'Saved' : 'Save'}
+        label={logged ? t('home.saved') : t('home.save')}
         // The button is the colour of the answer it is about to commit. It is
         // the last thing under the thumb before the number is written down, and
         // carrying the same colour as the wedge is what makes it read as "save
@@ -531,6 +545,8 @@ function PainCard({
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const hasGlass = isLiquidGlassAvailable();
+  const t = useT();
+  const title = t(card.title);
 
   const left = card.side === 'left';
   const pressed = useSharedValue(0);
@@ -604,7 +620,7 @@ function PainCard({
       <Pressable
         accessibilityRole="radio"
         accessibilityState={{ selected, disabled: locked }}
-        accessibilityLabel={card.title}
+        accessibilityLabel={title}
         disabled={locked}
         onPress={onPress}
         onPressIn={() => {
@@ -631,7 +647,7 @@ function PainCard({
 
         <View style={styles.body}>
           <Image source={card.art} style={styles.art} resizeMode="contain" />
-          <Text style={[styles.title, { color: colors.foreground }]}>{card.title}</Text>
+          <Text style={[styles.title, { color: colors.foreground }]}>{title}</Text>
         </View>
 
         {/* Last child, so it veils the artwork and the label as well as the

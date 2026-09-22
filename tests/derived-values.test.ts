@@ -8,13 +8,16 @@
  * rather than the happy path.
  */
 
+import { LANGUAGES, translatorFor } from '@/shared/lib/i18n';
 import { describe, expect, test } from 'bun:test';
 
 import {
   maintenanceTransitionLines,
   regressionDetected,
-  REGRESSION_COPY,
+  regressionCopy,
+  REGRESSION_TARGET_BLOCK,
 } from '@/entities/program/model/maintenance';
+import { blockName } from '@/entities/program/model/program';
 import {
   computeScore,
   consistencyNormalised,
@@ -203,7 +206,14 @@ describe('regression watch', () => {
     ).toBe(false);
   });
 
+  // Asserts the property the name claims, in every language — the old version
+  // compared against the English sentence, which proved nothing about whether
+  // Russian or Spanish had kept the offer an offer.
   test('the offer is phrased as a question, not a verdict', () => {
-    expect(REGRESSION_COPY).toBe('Your numbers slipped. Want to run Build again?');
+    for (const language of LANGUAGES) {
+      const copy = regressionCopy(translatorFor(language));
+      expect(copy.trim().endsWith('?'), `${language}: "${copy}"`).toBe(true);
+      expect(copy).toContain(blockName(REGRESSION_TARGET_BLOCK));
+    }
   });
 });

@@ -322,23 +322,14 @@ export const ONBOARDING_ES = {
   'onboarding.referral.unavailable': 'Las invitaciones no están disponibles en esta versión.',
   'onboarding.referral.failed': 'No se pudo contactar con el servidor. Inténtalo en un momento.',
 
-  // ── The note at the end of onboarding ────────────────────────────────────
-  // Borrador — véase el comentario en en/onboarding.ts.
-  'onboarding.note.body1':
-    'Hola, soy Rahim. Hice Walkito porque mis propios pies fueron el problema sobre el que nunca conseguí una respuesta clara.',
-  'onboarding.note.body2':
-    'Investigación había de sobra. Lo que no había era algo que la convirtiera en una rutina lo bastante pequeña como para hacerla un martes cualquiera.',
-  'onboarding.note.body3':
-    'Pues esto es justo eso: unos minutos al día, en el orden que respalda la evidencia. Gracias por darle una oportunidad.',
 
   // ── The note at the end of onboarding ────────────────────────────────────
   // Черновик — см. комментарий в en/onboarding.ts.
   'onboarding.note.title': 'Unas palabras de nosotros',
   'onboarding.note.body1':
-    'Hola, somos Rahim y Rahman. Hicimos Walkito porque nuestros propios pies fueron el problema sobre el que nadie nos dio una respuesta clara.',
+    'Hola, soy Rahim. Mi amigo y yo hacemos Walkito entre los dos. A mucha gente le duele el talón: plantillas, unas terceras zapatillas - y por las mañanas siguen cojeando. Los ejercicios que ayudan se conocen de sobra. Nadie te dice cuáles ni cuántos. Eso es lo que hicimos.',
   'onboarding.note.body2':
-    'Investigación había de sobra, pero no había nada lo bastante pequeño como para hacerlo un martes cualquiera. Pues esto es justo eso: unos minutos al día, en el orden que respalda la evidencia.',
+    'Estaría genial que nos dejaras una reseña. Nos importa de verdad. Gracias por estar aquí.',
   'onboarding.note.signature': 'Rahim y Rahman',
   'onboarding.note.cta': 'Valorar Walkito',
-  'onboarding.note.later': 'Quizá más tarde',
 };

@@ -15,6 +15,8 @@
   permissions, subscriptions, deleting your data
 - [Privacy](https://walkito.site/privacy/): what stays on the device and what
   leaves it
+- [Terms of use](https://walkito.site/terms/): the licence, App Store billing
+  and cancellation, health and safety, and what the app does not promise
 
 ## Key facts
 - Programme length: 12 weeks, six blocks of 14 days

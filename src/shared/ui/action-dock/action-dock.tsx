@@ -4,6 +4,7 @@ import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-na
 import Animated, { interpolate, useAnimatedStyle } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { useT } from '@/shared/lib/i18n';
 import { accents, fonts } from '@/shared/config';
 import { useProgram } from '@/shared/lib/program';
 
@@ -79,8 +80,13 @@ export type ActionDockProps = {
  * no strip left for a header to park in. Leaving downward keeps the movement
  * honest: the button is where it always was, the screen simply came up over it.
  */
-export function ActionDock({ label = 'Start Workout' }: ActionDockProps) {
+export function ActionDock({ label }: ActionDockProps) {
+  // Defaulted in the body, not in the parameter list: a default argument is
+  // evaluated before `t` exists, so an English literal there could never
+  // translate.
   const insets = useSafeAreaInsets();
+  const t = useT();
+  const text = label ?? t('dock.startWorkout');
   const program = useProgram();
   const dockHeight = BODY_HEIGHT + insets.bottom;
 
@@ -118,7 +124,7 @@ export function ActionDock({ label = 'Start Workout' }: ActionDockProps) {
       ]}>
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel={label}
+        accessibilityLabel={text}
         onPress={() => {
           Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
           program?.toggle();
@@ -129,7 +135,7 @@ export function ActionDock({ label = 'Start Workout' }: ActionDockProps) {
             as a smudge, and the fill is what lets the warm colour register at
             all. */}
         <PersonSimpleRunIcon size={20} color={GLYPH} weight="fill" />
-        <Text style={styles.label}>{label}</Text>
+        <Text style={styles.label}>{text}</Text>
       </Pressable>
     </Animated.View>
   );

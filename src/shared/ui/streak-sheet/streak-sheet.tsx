@@ -12,7 +12,7 @@ import Animated, {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { fonts, meterColors, palette } from '@/shared/config';
-import { plural } from '@/shared/lib/format';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { StreakWeek } from '@/shared/ui/streak-week';
@@ -72,6 +72,7 @@ export function StreakSheet({ visible, onClose, current, total, week }: StreakSh
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
+  const t = useT();
 
   /**
    * Mounted separately from `visible`, which is the whole trick.
@@ -84,8 +85,11 @@ export function StreakSheet({ visible, onClose, current, total, week }: StreakSh
    */
   const [mounted, setMounted] = useState(false);
   /** 0 away, 1 arrived. One number drives the blur, the wash and the card, so
-   * they cannot arrive or leave at different times. */
-  const t = useSharedValue(0);
+   * they cannot arrive or leave at different times.
+   *
+   * Named `progress` rather than `t`, which is now the translator in every file
+   * that renders a string. */
+  const progress = useSharedValue(0);
 
   useEffect(() => {
     if (visible) {
@@ -94,7 +98,7 @@ export function StreakSheet({ visible, onClose, current, total, week }: StreakSh
       // starts, or the first frames play against nothing and the card appears
       // already half-way up.
       const frame = requestAnimationFrame(() => {
-        t.value = withTiming(1, {
+        progress.value = withTiming(1, {
           duration: IN_MS,
           easing: Easing.out(Easing.cubic),
           reduceMotion: ReduceMotion.System,
@@ -103,7 +107,7 @@ export function StreakSheet({ visible, onClose, current, total, week }: StreakSh
       return () => cancelAnimationFrame(frame);
     }
 
-    t.value = withTiming(
+    progress.value = withTiming(
       0,
       { duration: OUT_MS, easing: Easing.in(Easing.cubic), reduceMotion: ReduceMotion.System },
       (finished) => {
@@ -114,17 +118,17 @@ export function StreakSheet({ visible, onClose, current, total, week }: StreakSh
       },
     );
     return undefined;
-  }, [visible, t]);
+  }, [visible, progress]);
 
   /** The page behind, fading rather than dimming in steps. Opacity and not
    * `intensity`: expo-blur still tints its backdrop at zero, so a blur animated
    * down to nothing leaves a visible wash behind — the note in
    * `liquid-glass/copy.tsx` is about exactly this. */
-  const backdrop = useAnimatedStyle(() => ({ opacity: t.value }));
+  const backdrop = useAnimatedStyle(() => ({ opacity: progress.value }));
 
   const dock = useAnimatedStyle(() => ({
-    opacity: t.value,
-    transform: [{ translateY: (1 - t.value) * RISE }],
+    opacity: progress.value,
+    transform: [{ translateY: (1 - progress.value) * RISE }],
   }));
 
   if (!mounted) return null;
@@ -169,7 +173,7 @@ export function StreakSheet({ visible, onClose, current, total, week }: StreakSh
             that explains something should never trap the person reading it. */}
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="Close"
+          accessibilityLabel={t('common.close')}
           style={styles.fill}
           onPress={onClose}
         />
@@ -189,16 +193,19 @@ export function StreakSheet({ visible, onClose, current, total, week }: StreakSh
           />
 
           <View style={[styles.card, { backgroundColor: colors.card }]}>
+            {/* One key, not "{count} Days" plus " Streak". English leads with
+                the number and ends with the noun, Russian closes with "подряд"
+                after both, and Spanish needs "de" between them — no ordering of
+                two English fragments reaches either. */}
             <Text style={[styles.title, { color: colors.foreground }]}>
-              {plural(current, 'Day')} Streak
+              {t('streak.title', { count: current })}
             </Text>
 
             <Text style={[styles.blurb, { color: meter.caption }]}>
               {/* The rule, stated plainly. It is the thing the number cannot say
                   on its own, and "a check-in or a session or a rest day" is a
                   far kinder rule than the one a user assumes. */}
-              A day counts when you check in, train, or the plan gives you a rest
-              day. {plural(total, 'day')} so far.
+              {t('streak.rule')} {t('streak.total', { count: total })}
             </Text>
 
             <View style={styles.week}>
@@ -208,7 +215,7 @@ export function StreakSheet({ visible, onClose, current, total, week }: StreakSh
             {/* "Got it", not "Claim". The reference hands over a reward; this
                 hands over an explanation, and a button promising something to
                 collect would be writing a cheque the app cannot cash. */}
-            <PrimaryButton label="Got it" onPress={onClose} />
+            <PrimaryButton label={t('streak.dismiss')} onPress={onClose} />
           </View>
         </Animated.View>
       </View>

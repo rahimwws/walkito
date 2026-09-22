@@ -16,6 +16,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { ProfileMenu } from '@/shared/ui/profile-menu';
 
@@ -197,6 +198,7 @@ export function HeaderActions({
  */
 function GiftCapsule({ onPress, tint }: { onPress: () => void; tint: string }) {
   const shake = useSharedValue(0);
+  const t = useT();
 
   const wobble = useAnimatedStyle(() => ({
     transform: [{ rotate: `${shake.value * SHAKE_DEG}deg` }, { scale: 1 + Math.abs(shake.value) * 0.06 }],
@@ -219,14 +221,14 @@ function GiftCapsule({ onPress, tint }: { onPress: () => void; tint: string }) {
     // Outside the glass, for the reason spelled out on the streak capsule: a
     // touchable inside an interactive `GlassView` loses its first tap to the
     // material's own press recogniser.
-    <Pressable accessibilityRole="button" accessibilityLabel="Get your gift" onPress={rattle}>
+    <Pressable accessibilityRole="button" accessibilityLabel={t('gift.openA11y')} onPress={rattle}>
       <GlassView isInteractive style={styles.gift}>
         <Animated.Image
           source={GIFT_ART}
           style={[styles.giftArt, wobble]}
           resizeMode="contain"
         />
-        <Text style={[styles.giftLabel, { color: tint }]}>Gift</Text>
+        <Text style={[styles.giftLabel, { color: tint }]}>{t('gift.capsule')}</Text>
       </GlassView>
     </Pressable>
   );

@@ -1,3 +1,4 @@
+import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { forgetIdentity, supabase } from '@/shared/lib/supabase';
 
 /**
@@ -38,24 +39,29 @@ export type EmailSignIn =
  * would tell anybody trying addresses which ones have accounts.
  */
 function explain(code: string | undefined, message: string): string {
+  // Resolved per call, not at module scope: these strings are produced outside
+  // React where no hook can run, and a translator captured at import time would
+  // pin the language to whatever it was on first launch.
+  const t = translatorFor(getLanguage());
+
   switch (code) {
     case 'invalid_credentials':
-      return 'That email and password don’t match.';
+      return t('auth.invalidCredentials');
     case 'email_not_confirmed':
       // The likeliest failure for an account made by hand in the Supabase
       // dashboard: "Auto Confirm User" is off by default, and an unconfirmed
       // account cannot sign in at all.
-      return 'That account hasn’t been confirmed yet. Confirm the email address, then try again.';
+      return t('auth.notConfirmed');
     case 'user_banned':
-      return 'That account is disabled.';
+      return t('auth.banned');
     case 'email_provider_disabled':
     case 'provider_disabled':
-      return 'Email sign-in is switched off for this app. Use Continue with Apple.';
+      return t('auth.providerDisabled');
     case 'over_request_rate_limit':
-      return 'Too many attempts. Wait a minute and try again.';
+      return t('auth.rateLimited');
     case 'validation_failed':
     case 'email_address_invalid':
-      return 'That doesn’t look like an email address.';
+      return t('auth.badEmail');
     default:
       // The server's own words. Better than a generic line for the cases not
       // listed above, which are rare enough that guessing at them would be
@@ -67,12 +73,12 @@ function explain(code: string | undefined, message: string): string {
 export async function signInWithEmail(email: string, password: string): Promise<EmailSignIn> {
   const client = supabase;
   if (client == null) {
-    return { status: 'failed', message: 'This build has no account server. Use Continue with Apple.' };
+    return { status: 'failed', message: translatorFor(getLanguage())('auth.noServer') };
   }
 
   const address = email.trim();
   if (address.length === 0 || password.length === 0) {
-    return { status: 'failed', message: 'Enter both an email and a password.' };
+    return { status: 'failed', message: translatorFor(getLanguage())('auth.missingFields') };
   }
 
   try {
@@ -95,7 +101,9 @@ export async function signInWithEmail(email: string, password: string): Promise<
     }
 
     const user = data.user;
-    if (user == null) return { status: 'failed', message: 'No account came back.' };
+    if (user == null) {
+      return { status: 'failed', message: translatorFor(getLanguage())('auth.noAccount') };
+    }
 
     // The anonymous identity this app signs in with on first launch has just
     // been replaced by a real one. Anything still holding the cached promise
@@ -106,7 +114,8 @@ export async function signInWithEmail(email: string, password: string): Promise<
   } catch (error) {
     return {
       status: 'failed',
-      message: error instanceof Error ? error.message : 'That didn’t go through.',
+      message:
+        error instanceof Error ? error.message : translatorFor(getLanguage())('auth.generic'),
     };
   }
 }

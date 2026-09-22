@@ -16,6 +16,7 @@ import Animated, {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { CORNERS, Confetti } from '@/shared/ui/confetti';
 import { PrimaryButton } from '@/shared/ui/primary-button';
@@ -79,16 +80,19 @@ export function CelebrationSheet({
   headline,
   headlineColor,
   blurb,
-  ctaLabel = 'Done',
+  ctaLabel,
   onClose,
 }: CelebrationSheetProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
+  const t = useT();
 
   const [mounted, setMounted] = useState(false);
-  const t = useSharedValue(0);
+  /** Named `progress` rather than `t`, which is now the translator in every
+   * file that renders a string. */
+  const progress = useSharedValue(0);
   /** The badge lands rather than fades: an emblem that appears at full size has
    * already happened, where one arriving with weight behind it reads as having
    * just been earned. */
@@ -101,7 +105,7 @@ export function CelebrationSheet({
       // A frame late: the modal has to exist before the transition starts, or
       // the first frames play against nothing.
       const frame = requestAnimationFrame(() => {
-        t.value = withTiming(1, {
+        progress.value = withTiming(1, {
           duration: IN_MS,
           easing: Easing.out(Easing.cubic),
           reduceMotion: ReduceMotion.System,
@@ -122,7 +126,7 @@ export function CelebrationSheet({
     }
 
     pop.value = 0;
-    t.value = withTiming(
+    progress.value = withTiming(
       0,
       { duration: OUT_MS, easing: Easing.in(Easing.cubic), reduceMotion: ReduceMotion.System },
       (finished) => {
@@ -133,12 +137,12 @@ export function CelebrationSheet({
       },
     );
     return undefined;
-  }, [visible, t, pop]);
+  }, [visible, progress, pop]);
 
-  const backdrop = useAnimatedStyle(() => ({ opacity: t.value }));
+  const backdrop = useAnimatedStyle(() => ({ opacity: progress.value }));
   const dock = useAnimatedStyle(() => ({
-    opacity: t.value,
-    transform: [{ translateY: (1 - t.value) * RISE }],
+    opacity: progress.value,
+    transform: [{ translateY: (1 - progress.value) * RISE }],
   }));
   const badge = useAnimatedStyle(() => ({ transform: [{ scale: pop.value }] }));
 
@@ -161,7 +165,7 @@ export function CelebrationSheet({
           sheet with a scrim that swallows taps feels stuck. */}
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel="Close"
+        accessibilityLabel={t('common.close')}
         style={styles.fill}
         onPress={onClose}
       />
@@ -187,7 +191,10 @@ export function CelebrationSheet({
 
           <Text style={[styles.blurb, { color: meter.caption }]}>{blurb}</Text>
 
-          <PrimaryButton label={ctaLabel} onPress={onClose} style={styles.cta} />
+          {/* Defaulted here rather than in the parameter list: a default
+              argument is evaluated before `t` exists, so an English literal
+              there would never translate. */}
+          <PrimaryButton label={ctaLabel ?? t('common.done')} onPress={onClose} style={styles.cta} />
         </View>
       </Animated.View>
     </View>

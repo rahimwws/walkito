@@ -1,6 +1,7 @@
 import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import { StyleSheet, Text, View } from 'react-native';
 
+import { useT, type Key } from '@/shared/lib/i18n';
 import { fonts } from '@/shared/config';
 import { meterColors, type MeterColors } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -15,15 +16,15 @@ const TICK_COUNT = 35;
  * label feels earned rather than incremental. Override via the `bands` prop
  * when a screen needs its own wording.
  */
-export const DEFAULT_BANDS: readonly { min: number; label: string }[] = [
-  { min: 90, label: 'Excellent' },
-  { min: 75, label: 'Strong' },
-  { min: 60, label: 'Steady' },
-  { min: 0, label: 'Building' },
+export const DEFAULT_BANDS: readonly { min: number; label: Key }[] = [
+  { min: 90, label: 'band.excellent' },
+  { min: 75, label: 'band.strong' },
+  { min: 60, label: 'band.steady' },
+  { min: 0, label: 'band.building' },
 ] as const;
 
-function bandFor(score: number, bands: readonly { min: number; label: string }[]) {
-  return bands.find((b) => score >= b.min)?.label ?? '';
+function bandFor(score: number, bands: readonly { min: number; label: Key }[]): Key | null {
+  return bands.find((b) => score >= b.min)?.label ?? null;
 }
 
 const THEME = {
@@ -57,7 +58,7 @@ export type ProgressCardProps = {
   caption?: string;
   /** Totals rendered in the divided row beneath the hero. */
   stats?: readonly ProgressStat[];
-  bands?: readonly { min: number; label: string }[];
+  bands?: readonly { min: number; label: Key }[];
 };
 
 /** One stat: big value plus a muted label beneath. */
@@ -85,12 +86,15 @@ export function ProgressCard({
   score,
   scoreDelta,
   eyebrow = 'SCORE',
-  caption = 'Last 7 days',
+  caption,
   stats = [],
   bands = DEFAULT_BANDS,
 }: ProgressCardProps) {
   const scheme = useColorScheme() === 'dark' ? 'dark' : 'light';
   const theme = meterColors[scheme];
+  const t = useT();
+  // Resolved here, not inside the JSX, so the band is looked up once.
+  const band = score == null ? null : bandFor(score, bands);
   const chrome = THEME[scheme];
   const hasGlass = isLiquidGlassAvailable();
 
@@ -102,14 +106,14 @@ export function ProgressCard({
         {score != null && (
           <View style={[styles.badge, { backgroundColor: chrome.badgeBg }]}>
             <Text style={[styles.badgeLabel, { color: chrome.badgeText }]}>
-              {bandFor(score, bands).toUpperCase()}
+              {band == null ? '' : t(band)}
             </Text>
           </View>
         )}
       </View>
       <TickBar fill={score != null ? score / 100 : 0} tickCount={TICK_COUNT} height={20} />
       <View style={styles.metaRow}>
-        <Text style={[styles.metaLabel, { color: theme.label }]}>{caption}</Text>
+        <Text style={[styles.metaLabel, { color: theme.label }]}>{caption ?? t('card.last7Days')}</Text>
         {scoreDelta != null && scoreDelta !== 0 && (
           <DeltaLabel delta={scoreDelta} suffix="this week" />
         )}
@@ -174,6 +178,9 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: fonts.bold,
     letterSpacing: 0.5,
+    // Cased in the style rather than with `toUpperCase()`, so the catalogue
+    // keeps the form a translator wrote and casing stays a display decision.
+    textTransform: 'uppercase',
   },
   metaRow: {
     flexDirection: 'row',

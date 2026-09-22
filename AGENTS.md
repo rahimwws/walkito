@@ -79,3 +79,52 @@ ls node_modules/@hugeicons/core-free-icons/dist/types | grep -i <keyword>
 ```
 
 Example: `... | grep -i micro` → `Microphone01Icon.d.ts`, `Microphone02Icon.d.ts`, etc. Strip the `.d.ts` to get both the import name and the subpath. For visual browsing, search at https://hugeicons.com/icons — but confirm the name exists in the free package before using it, since the site also lists pro-only icons.
+
+# Language: never a bare string
+
+The app ships in English, Russian and Spanish. **No user-facing text may be written as a literal in a component.** Take it from the catalogue:
+
+```tsx
+import { useT } from '@/shared/lib/i18n';
+
+const t = useT();
+<Text>{t('streak.title', { count: 3 })}</Text>
+```
+
+Outside React — a background task, a notification scheduler — there is no hook, so ask for a translator by language instead: `translatorFor(getLanguage())`.
+
+The catalogue is hand-written rather than i18next, and `src/shared/lib/i18n/index.ts` explains why at length. The short version is that two properties are wanted and a library makes both harder: a missing translation must fail `tsc`, and Russian's `few` form must be impossible to forget.
+
+## Whole sentences, never fragments
+
+This is the rule that gets broken first and costs the most. A key holds a complete clause with `{placeholders}` inside it — never a piece that a call site joins to another piece.
+
+```tsx
+`${plural(n, 'Day')} Streak`          // ❌ "3 Days" + " Streak"
+t('streak.title', { count: n })        // ✅ one key per language
+```
+
+English leads with the count and ends with the noun; Russian closes with «подряд» after both; Spanish needs «de» between them. No ordering of the two English fragments reaches either, which is why composition lives in the catalogue, once per language.
+
+The same rule applies to the daily brief, where the renderer lays tokens out as sibling `<Text>` nodes — so **array order is word order**. Sentences there are stored as an ordered `BriefSegment[]` per language and built with `buildBrief` from `@/shared/ui/daily-brief`; a language may use a different number of segments than English.
+
+## Plurals
+
+`Intl.PluralRules` is not used — Hermes ships a subset that varies by build, and a degraded lookup does not throw, it just returns `other` forever and renders "5 день" to every Russian speaker. The CLDR rules are ours, in `src/shared/lib/i18n/plural.ts`, and tested.
+
+What a translator has to supply per language is enforced by the catalogue *type*:
+
+| | required | note |
+|---|---|---|
+| `en` | `one`, `other` | |
+| `ru` | `one`, `few`, `many` | `few` is 2–4, 22–24. **11–14 are `many`** despite their last digit |
+| `es` | `one`, `other` | never `many` — that is the whole-millions form |
+
+## Adding a string
+
+1. Add the key to `src/shared/lib/i18n/catalogue/en/<domain>.ts`. English is the source of truth; every other catalogue is typed *from* it.
+2. `tsc` now fails for Russian and Spanish until they have it. That is the design.
+3. Prefix the key with its domain (`home.`, `onboarding.`, `offer.`…) so domains cannot collide — the per-language `index.ts` merges them with a spread that preserves literal types. **Do not annotate a domain file's type**, or the placeholder inference widens to `string` and silently stops checking parameters.
+4. `bun test src/shared/lib/i18n/` asserts placeholder parity, completeness, and that no plural entry was flattened to a single string.
+
+Language names in the picker are endonyms — «Русский», not «Russian» — and are deliberately the one set of strings never translated: the control is read by someone who cannot yet read the language the app is in.

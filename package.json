@@ -25,6 +25,7 @@
     "expo-glass-effect": "~57.0.3",
     "expo-haptics": "~57.0.3",
     "expo-linking": "~57.0.10",
+    "expo-localization": "~57.0.2",
     "expo-notifications": "~57.0.20",
     "expo-quick-actions": "^6.0.2",
     "expo-router": "~57.0.22",
@@ -71,11 +72,12 @@
     "typecheck": "tsc --noEmit",
     "verify:assets": "node scripts/verify-assets.mjs",
     "verify:config": "node scripts/verify-config.mjs",
-    "verify": "bun run typecheck && bun test && bun run verify:assets && bun run verify:config && bun run verify:native && bun run verify:debug",
+    "verify": "bun run typecheck && bun test && bun run verify:assets && bun run verify:config && bun run verify:native && bun run verify:debug && bun run verify:i18n",
     "verify:native": "node scripts/verify-native-deps.mjs",
     "can-update": "node scripts/can-update.mjs",
     "ship": "node scripts/ship.mjs",
-    "verify:debug": "node scripts/verify-no-debug.mjs"
+    "verify:debug": "node scripts/verify-no-debug.mjs",
+    "verify:i18n": "node scripts/verify-i18n.mjs"
   },
   "private": true,
   "packageManager": "bun@1.2.22",

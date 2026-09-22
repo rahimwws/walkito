@@ -15,6 +15,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { deleteAccount, resetOnboarding } from '@/entities/session';
 import { clearClips } from '@/widgets/session-player';
 import { accents, fonts, meterColors, palette, primaryButton } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
@@ -46,18 +47,21 @@ export function DeleteAccountSheet({ visible, onClose }: DeleteAccountSheetProps
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
+  const t = useT();
 
   const [mounted, setMounted] = useState(false);
   const [busy, setBusy] = useState(false);
   const [problem, setProblem] = useState<string | null>(null);
-  const t = useSharedValue(0);
+  /** How far open the sheet is, 0–1. Named `progress` rather than `t`, which
+   * now belongs to the translator — same rename as `streak-sheet`. */
+  const progress = useSharedValue(0);
 
   useEffect(() => {
     if (visible) {
       setMounted(true);
       setProblem(null);
       const frame = requestAnimationFrame(() => {
-        t.value = withTiming(1, {
+        progress.value = withTiming(1, {
           duration: IN_MS,
           easing: Easing.out(Easing.cubic),
           reduceMotion: ReduceMotion.System,
@@ -65,7 +69,7 @@ export function DeleteAccountSheet({ visible, onClose }: DeleteAccountSheetProps
       });
       return () => cancelAnimationFrame(frame);
     }
-    t.value = withTiming(
+    progress.value = withTiming(
       0,
       { duration: OUT_MS, easing: Easing.in(Easing.cubic), reduceMotion: ReduceMotion.System },
       (finished) => {
@@ -73,12 +77,12 @@ export function DeleteAccountSheet({ visible, onClose }: DeleteAccountSheetProps
       },
     );
     return undefined;
-  }, [visible, t]);
+  }, [visible, progress]);
 
-  const backdrop = useAnimatedStyle(() => ({ opacity: t.value }));
+  const backdrop = useAnimatedStyle(() => ({ opacity: progress.value }));
   const dock = useAnimatedStyle(() => ({
-    opacity: t.value,
-    transform: [{ translateY: (1 - t.value) * RISE }],
+    opacity: progress.value,
+    transform: [{ translateY: (1 - progress.value) * RISE }],
   }));
 
   if (!mounted) return null;
@@ -99,10 +103,7 @@ export function DeleteAccountSheet({ visible, onClose }: DeleteAccountSheetProps
       // Local storage is already cleared at this point, so the sheet cannot
       // pretend nothing happened. It says which half failed, and the user is
       // left signed out with an empty app rather than half-deleted in silence.
-      setProblem(
-        'Your data was removed from this device, but the server could not be reached. ' +
-          'Reopen the app while online to finish, or email support.',
-      );
+      setProblem(t('profile.deleteLocalOnly'));
       return;
     }
 
@@ -123,7 +124,7 @@ export function DeleteAccountSheet({ visible, onClose }: DeleteAccountSheetProps
 
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel="Close"
+        accessibilityLabel={t('common.close')}
         style={styles.fill}
         onPress={busy ? undefined : onClose}
       />
@@ -132,19 +133,18 @@ export function DeleteAccountSheet({ visible, onClose }: DeleteAccountSheetProps
         style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }, dock]}
         pointerEvents="box-none">
         <View style={[styles.card, { backgroundColor: colors.card }]}>
-          <Text style={[styles.title, { color: colors.foreground }]}>Delete account?</Text>
-
-          <Text style={[styles.blurb, { color: meter.caption }]}>
-            This removes your programme, your pain log, your streak and your invite code, from
-            this device and from our servers. It cannot be undone.
+          <Text style={[styles.title, { color: colors.foreground }]}>
+            {t('profile.deleteTitle')}
           </Text>
+
+          <Text style={[styles.blurb, { color: meter.caption }]}>{t('profile.deleteBlurb')}</Text>
 
           {problem != null && (
             <Text style={[styles.problem, { color: accents[scheme].red.fill }]}>{problem}</Text>
           )}
 
           <PrimaryButton
-            label={busy ? 'Deleting…' : 'Delete everything'}
+            label={busy ? t('profile.deleting') : t('profile.deleteConfirm')}
             disabled={busy}
             // The only red button in the app. Destructive actions are the one
             // place colour is allowed to carry meaning here — everywhere else
@@ -159,7 +159,9 @@ export function DeleteAccountSheet({ visible, onClose }: DeleteAccountSheetProps
             onPress={busy ? undefined : onClose}
             hitSlop={8}
             style={({ pressed }) => [styles.keep, pressed && { opacity: 0.6 }]}>
-            <Text style={[styles.keepText, { color: colors.foreground }]}>Keep my account</Text>
+            <Text style={[styles.keepText, { color: colors.foreground }]}>
+              {t('profile.keepAccount')}
+            </Text>
           </Pressable>
         </View>
       </Animated.View>

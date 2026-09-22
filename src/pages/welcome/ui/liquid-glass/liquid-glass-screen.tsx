@@ -67,11 +67,11 @@ const IN_MS = 560;
 
 type Props = LiquidGlassScreenProps & { theme: CookbookTheme };
 
-export function LiquidGlassScreen({ theme, initialState = 'gate', onActionPress, onPrimaryPress }: Props) {
+export function LiquidGlassScreen({ theme, copy, initialState = 'gate', onActionPress, onPrimaryPress }: Props) {
   const { width, height } = useWindowDimensions();
   const sx = width / 402, sy = height / 874;
   const reduceMotion = useReducedMotion();
-  const { colors, copy } = theme;
+  const { colors } = theme;
 
   // ── the sphere, measured off the reference ────────────────────────────────
   // Its size is a straight function of where it is: it shrinks as it climbs,
@@ -379,7 +379,7 @@ export function LiquidGlassScreen({ theme, initialState = 'gate', onActionPress,
   return (
     <GestureDetector gesture={pan}>
       <View
-        accessibilityHint="Swipe up to open the screen, swipe down to close it"
+        accessibilityHint={copy.a11yHint}
         accessibilityLabel={copy.hint}
         style={{ flex: 1, backgroundColor: colors.page }}
       >

@@ -16,6 +16,7 @@ import Animated, {
 import Svg, { Path } from 'react-native-svg';
 
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 const PAD_HEIGHT = 168;
@@ -84,6 +85,7 @@ export function ContractStep({
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const hasGlass = isLiquidGlassAvailable();
+  const t = useT();
 
   const sealed = useRef(onSealed);
   sealed.current = onSealed;
@@ -231,7 +233,9 @@ export function ContractStep({
           />
         )}
         {!hasInk && (
-          <Text style={[styles.hint, { color: meter.unit }]}>Sign here</Text>
+          <Text style={[styles.hint, { color: meter.unit }]}>
+            {t('onboarding.contract.hint')}
+          </Text>
         )}
         <Svg width={size.width} height={size.height} style={StyleSheet.absoluteFill}>
           {[...paths, current].filter(Boolean).map((d, i) => (
@@ -259,18 +263,33 @@ export function ContractStep({
         <Animated.View pointerEvents="none" style={[styles.stampWrap, stampStyle]}>
           <Animated.View style={[styles.stamp, { borderColor: PRIMARY }, stampInk]}>
             <View style={[styles.stampRing, { borderColor: PRIMARY }]}>
-              <Text style={[styles.stampTop, { color: PRIMARY }]}>★ WALKITO ★</Text>
-              <Text style={[styles.stampText, { color: PRIMARY }]}>COMMITTED</Text>
+              <Text style={[styles.stampTop, { color: PRIMARY }]}>
+                {t('onboarding.contract.stampTop')}
+              </Text>
+              <Text style={[styles.stampText, { color: PRIMARY }]}>
+                {t('onboarding.contract.stampText')}
+              </Text>
               <View style={[styles.stampRule, { backgroundColor: PRIMARY }]} />
-              <Text style={[styles.stampBottom, { color: PRIMARY }]}>PAIN-FREE</Text>
-              <Text style={[styles.stampBottom, { color: PRIMARY }]}>RUNNING</Text>
+              {/* Two rows, and which half of the phrase each holds is the
+                  language's decision — English leads with the qualifier,
+                  Russian and Spanish with the noun. */}
+              <Text style={[styles.stampBottom, { color: PRIMARY }]}>
+                {t('onboarding.contract.stampLine1')}
+              </Text>
+              <Text style={[styles.stampBottom, { color: PRIMARY }]}>
+                {t('onboarding.contract.stampLine2')}
+              </Text>
             </View>
           </Animated.View>
         </Animated.View>
       </View>
 
+      {/* Two whole sentences rather than a prefix glued onto a shared tail:
+          "{name}, your " only works in front of an English possessive. */}
       <Text style={[styles.note, { color: meter.unit }]}>
-        {name.length > 0 ? `${name}, your ` : 'Your '}signature stays on this device.
+        {name.length > 0
+          ? t('onboarding.contract.noteNamed', { name })
+          : t('onboarding.contract.note')}
       </Text>
     </View>
   );

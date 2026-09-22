@@ -1,4 +1,4 @@
-import type { OnboardingOption } from './steps';
+import { NAME_SLOT, type OnboardingOption, type Phrase } from './steps';
 
 /**
  * Copy that changes with the answers already given.
@@ -13,27 +13,58 @@ import type { OnboardingOption } from './steps';
  *
  * Falls back to a name-less phrasing rather than printing "Hi, !" — a
  * greeting with an empty slot is worse than no greeting, and the name step is
- * skippable. Each string carries its own fallback because "…, {name}?" and
- * "{name}, how…" cannot be repaired by the same rule.
+ * skippable. The catalogue puts the slot wherever the language wants it, which
+ * is why the removal has to handle both sides: English and Spanish open the
+ * goal question with the name and close the pain question with it, and Russian
+ * does something else again.
+ *
+ * The three passes are ordered and each is anchored, which the first version
+ * was not: a single `,?\s*\{name\}` matched the *leading* slot too, took the
+ * comma that followed it as ordinary text, and left ", what are you working
+ * toward?" on screen for anyone who skipped the name step.
  */
-export function withName(text: string, name: string, sport?: string | null): string {
+export function withName(text: string, name: string): string {
   const trimmed = name.trim();
-  // `{activity}` is filled first and unconditionally — it always has a value,
-  // and it must resolve even in the name-less branch below.
-  if (text.includes('{activity}')) {
-    text = text.replace(/\{activity\}/g, activityFor(sport ?? null));
-  }
   if (!text.includes('{name}')) return text;
   if (trimmed.length === 0) {
     // Drop the slot and any punctuation left stranded around it.
-    return text
-      .replace(/,?\s*\{name\}/g, '')
-      .replace(/\{name\},?\s*/g, '')
-      .replace(/\s+/g, ' ')
-      .replace(/\s+([?!.])/g, '$1')
-      .trim();
+    return capitalise(
+      text
+        .replace(/\s*,\s*\{name\}/g, '')
+        .replace(/\{name\}\s*,\s*/g, '')
+        .replace(/\{name\}/g, '')
+        .replace(/\s+/g, ' ')
+        .replace(/\s+([?!.])/g, '$1')
+        .trim(),
+    );
   }
   return text.replace(/\{name\}/g, trimmed);
+}
+
+/**
+ * Puts a capital back on the front of a sentence that just lost its opening
+ * word.
+ *
+ * "{name}, what are you working toward?" with no name is "what are you working
+ * toward?", and every language whose catalogue leads with the slot has the same
+ * problem. Not always character zero either — Spanish opens a question with
+ * "¿", so the first *letter* has to be found rather than assumed.
+ *
+ * Written with case comparison rather than `\p{Ll}`, because Unicode property
+ * escapes depend on how Hermes was compiled and this has to work in Cyrillic.
+ */
+function capitalise(text: string): string {
+  for (let i = 0; i < text.length; i += 1) {
+    const character = text[i];
+    const upper = character.toUpperCase();
+    // Already a capital: the sentence never lost its opening word.
+    if (upper === character) {
+      if (upper !== character.toLowerCase()) return text;
+      continue; // Punctuation or a space — keep looking.
+    }
+    return text.slice(0, i) + upper + text.slice(i + 1);
+  }
+  return text;
 }
 
 export type SportKey =
@@ -46,29 +77,33 @@ export type SportKey =
   | 'hiking';
 
 type LoadQuestion = {
-  title: string;
-  blurb: string;
+  title: Phrase;
+  blurb: Phrase;
   options: readonly OnboardingOption[];
   /** Label above the follow-up chips. */
-  extraLabel: string;
+  extraLabel: Phrase;
 };
+
+const PER_WEEK: Phrase = (t) => t('onboarding.load.perWeek');
 
 /** Distance-based sports are asked in kilometres; the rest in hours, because
  * nobody knows how many kilometres they covered on a tennis court. */
-const KM = (unit: string): readonly OnboardingOption[] => [
-  { value: '0-5', label: `0–5 ${unit}`, caption: 'per week' },
-  { value: '5-15', label: `5–15 ${unit}`, caption: 'per week' },
-  { value: '15-30', label: `15–30 ${unit}`, caption: 'per week' },
-  { value: '30-50', label: `30–50 ${unit}`, caption: 'per week' },
-  { value: '50+', label: `50+ ${unit}`, caption: 'per week' },
+const KM = (unit: Phrase): readonly OnboardingOption[] => [
+  { value: '0-5', label: (t) => t('onboarding.load.km0', { unit: unit(t) }), caption: PER_WEEK },
+  { value: '5-15', label: (t) => t('onboarding.load.km1', { unit: unit(t) }), caption: PER_WEEK },
+  { value: '15-30', label: (t) => t('onboarding.load.km2', { unit: unit(t) }), caption: PER_WEEK },
+  { value: '30-50', label: (t) => t('onboarding.load.km3', { unit: unit(t) }), caption: PER_WEEK },
+  { value: '50+', label: (t) => t('onboarding.load.km4', { unit: unit(t) }), caption: PER_WEEK },
 ];
 
+const UNIT_KM: Phrase = (t) => t('onboarding.load.unitKm');
+
 const HOURS: readonly OnboardingOption[] = [
-  { value: '0-5', label: 'Under 1 hour', caption: 'per week' },
-  { value: '5-15', label: '1–3 hours', caption: 'per week' },
-  { value: '15-30', label: '3–5 hours', caption: 'per week' },
-  { value: '30-50', label: '5–8 hours', caption: 'per week' },
-  { value: '50+', label: '8+ hours', caption: 'per week' },
+  { value: '0-5', label: (t) => t('onboarding.load.hours0'), caption: PER_WEEK },
+  { value: '5-15', label: (t) => t('onboarding.load.hours1'), caption: PER_WEEK },
+  { value: '15-30', label: (t) => t('onboarding.load.hours2'), caption: PER_WEEK },
+  { value: '30-50', label: (t) => t('onboarding.load.hours3'), caption: PER_WEEK },
+  { value: '50+', label: (t) => t('onboarding.load.hours4'), caption: PER_WEEK },
 ];
 
 /**
@@ -80,64 +115,49 @@ const HOURS: readonly OnboardingOption[] = [
  */
 const LOAD: Record<SportKey, LoadQuestion> = {
   running: {
-    title: 'How much are you running now, {name}?',
-    blurb: 'Your honest current week, not your best one.',
-    options: KM('km'),
-    extraLabel: 'Runs per week',
+    title: (t) => t('onboarding.load.titleRunning', NAME_SLOT),
+    blurb: (t) => t('onboarding.load.blurb'),
+    options: KM(UNIT_KM),
+    extraLabel: (t) => t('onboarding.load.runsPerWeek'),
   },
   tennis: {
-    title: 'How much are you on court, {name}?',
-    blurb: 'Matches and practice together — the honest week.',
+    title: (t) => t('onboarding.load.titleTennis', NAME_SLOT),
+    blurb: (t) => t('onboarding.load.blurbTennis'),
     options: HOURS,
-    extraLabel: 'Sessions per week',
+    extraLabel: (t) => t('onboarding.load.sessionsPerWeek'),
   },
   gym: {
-    title: 'How much are you training, {name}?',
-    blurb: 'Time under load, not time in the building.',
+    title: (t) => t('onboarding.load.titleGym', NAME_SLOT),
+    blurb: (t) => t('onboarding.load.blurbGym'),
     options: HOURS,
-    extraLabel: 'Sessions per week',
+    extraLabel: (t) => t('onboarding.load.sessionsPerWeek'),
   },
   football: {
-    title: 'How much are you playing, {name}?',
-    blurb: 'Matches and training together — the honest week.',
+    title: (t) => t('onboarding.load.titleFootball', NAME_SLOT),
+    blurb: (t) => t('onboarding.load.blurbFootball'),
     options: HOURS,
-    extraLabel: 'Sessions per week',
+    extraLabel: (t) => t('onboarding.load.sessionsPerWeek'),
   },
   basketball: {
-    title: 'How much are you playing, {name}?',
-    blurb: 'Games and practice together — the honest week.',
+    title: (t) => t('onboarding.load.titleBasketball', NAME_SLOT),
+    blurb: (t) => t('onboarding.load.blurbBasketball'),
     options: HOURS,
-    extraLabel: 'Sessions per week',
+    extraLabel: (t) => t('onboarding.load.sessionsPerWeek'),
   },
   cycling: {
-    title: 'How much are you riding, {name}?',
-    blurb: 'Your honest current week, not your best one.',
-    options: KM('km'),
-    extraLabel: 'Rides per week',
+    title: (t) => t('onboarding.load.titleCycling', NAME_SLOT),
+    blurb: (t) => t('onboarding.load.blurb'),
+    options: KM(UNIT_KM),
+    extraLabel: (t) => t('onboarding.load.ridesPerWeek'),
   },
   hiking: {
-    title: 'How much are you hiking, {name}?',
-    blurb: 'Your honest current month, not your best one.',
+    title: (t) => t('onboarding.load.titleHiking', NAME_SLOT),
+    blurb: (t) => t('onboarding.load.blurbMonth'),
     options: HOURS,
-    extraLabel: 'Hikes per month',
+    extraLabel: (t) => t('onboarding.load.hikesPerMonth'),
   },
 };
 
 export function loadQuestionFor(sport: string | null): LoadQuestion {
   return LOAD[(sport ?? 'running') as SportKey] ?? LOAD.running;
-}
-
-/** How the sport is referred to mid-sentence, e.g. "during a run". */
-const ACTIVITY: Record<SportKey, string> = {
-  running: 'a run',
-  tennis: 'a match',
-  gym: 'a session',
-  football: 'a match',
-  basketball: 'a game',
-  cycling: 'a ride',
-  hiking: 'a hike',
-};
-
-export function activityFor(sport: string | null): string {
-  return ACTIVITY[(sport ?? 'running') as SportKey] ?? ACTIVITY.running;
 }

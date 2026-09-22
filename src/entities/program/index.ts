@@ -65,10 +65,16 @@ export {
   EXERCISE_LIST,
   HEEL_RAISE_TEMPO,
   exerciseById,
+  exerciseByTitle,
+  exerciseCategoryLabel,
+  exerciseText,
   loadsFascia,
   type Exercise,
   type ExerciseCategory,
+  type ExerciseCueKey,
   type ExercisePosition,
+  type ExerciseRationaleKey,
+  type ExerciseTitleKey,
   type Tempo,
 } from './model/exercises';
 
@@ -163,9 +169,11 @@ export {
 export {
   FIRST_MORNING_STRETCH_BLOCK,
   MORNING_STRETCH_COPY,
+  MORNING_STRETCH_COPY_KEY,
   MORNING_STRETCH_ID,
   MORNING_STRETCH_MINUTES,
   hasMorningStretch,
+  morningStretchCopy,
   morningStretchDone,
   morningStretchFor,
   setMorningStretchDone,
@@ -175,7 +183,7 @@ export {
 export {
   MAINTENANCE_MINUTES,
   MAINTENANCE_RETEST_INTERVAL,
-  REGRESSION_COPY,
+  regressionCopy,
   REGRESSION_PAIN_DAYS,
   REGRESSION_TARGET_BLOCK,
   isMaintenance,

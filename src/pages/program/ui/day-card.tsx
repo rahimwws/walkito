@@ -22,7 +22,7 @@ import {
   type SessionKind,
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
-import { PrimaryButton } from '@/shared/ui/primary-button';
+import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import { artFor } from '../config/kind-art';
@@ -86,12 +86,22 @@ const CATEGORY_TONE: Record<ExerciseCategory, { icon: Icon; accent: AccentName }
   Habit: { icon: ArrowsClockwiseIcon, accent: 'blue' },
 };
 
-const KIND_LABEL: Record<SessionKind, string> = {
-  strength: 'Strength',
-  mobility: 'Mobility',
-  balance: 'Balance',
-  recovery: 'Recovery',
-};
+/** What a day's work is called. The day sheet reads these same keys — a card
+ * that says "Strength" and a sheet that says something else would be describing
+ * two different sessions. */
+const KIND_KEY = {
+  strength: 'pages.program.kindStrength',
+  mobility: 'pages.program.kindMobility',
+  balance: 'pages.program.kindBalance',
+  recovery: 'pages.program.kindRecovery',
+} as const satisfies Record<SessionKind, Key>;
+
+/** The three chips a checkpoint card carries, in the order they are tested. */
+const RETEST_ZONE_KEYS = [
+  'pages.program.zoneCalf',
+  'pages.program.zoneArch',
+  'pages.program.zoneBalance',
+] as const satisfies readonly Key[];
 
 export type DayCardProps = {
   day: ProgramDay;
@@ -127,6 +137,10 @@ export function DayCard({ day, status, onOpen, unlockAt, onStart }: DayCardProps
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
+  // Subscribed rather than read once: `movePlanFor` resolves its titles and
+  // doses through the catalogue at call time, so the chips only repaint on a
+  // language change if this component is listening for one.
+  const t = useT();
 
   /**
    * Whether the card shows what the session is made of.
@@ -156,10 +170,10 @@ export function DayCard({ day, status, onOpen, unlockAt, onStart }: DayCardProps
   const tone = accents[scheme][sticker.accent];
   const Sticker = sticker.icon;
 
-  const label = day.checkpoint ? 'Retest' : KIND_LABEL[day.kind];
+  const label = day.checkpoint ? t('pages.program.retest') : t(KIND_KEY[day.kind]);
   const items = day.checkpoint
-    ? `${RETEST_TESTS} tests`
-    : movesFor(day).length + ' moves';
+    ? t('pages.program.testCount', { count: RETEST_TESTS })
+    : t('session.moveCount', { count: movesFor(day).length });
 
   return (
     // The card itself is the target, rather than a control added beside the
@@ -173,7 +187,13 @@ export function DayCard({ day, status, onOpen, unlockAt, onStart }: DayCardProps
       // `Pressable` to swallow.
       accessible
       accessibilityRole="button"
-      accessibilityLabel={`Day ${day.day}, ${label}, ${day.minutes} minutes`}
+      accessibilityLabel={t('pages.program.dayCardA11y', {
+        day: day.day,
+        kind: label,
+        // Spelled out, unlike the "7 min" on the face of the card: read aloud,
+        // an abbreviation is a syllable.
+        minutes: t('pages.program.minuteCount', { count: day.minutes }),
+      })}
       onPress={onOpen}
       style={[
         styles.card,
@@ -203,7 +223,9 @@ export function DayCard({ day, status, onOpen, unlockAt, onStart }: DayCardProps
         <View style={styles.facts}>
           {/* The day number, back where the list can be read down its own left
               edge without a second column to carry it. */}
-          <Text style={[styles.dayLabel, { color: meter.label }]}>Day {day.day}</Text>
+          <Text style={[styles.dayLabel, { color: meter.label }]}>
+            {t('session.day', { day: day.day })}
+          </Text>
 
           <View style={styles.fact}>
             <Sticker size={19} weight="fill" color={tone.fill} />
@@ -211,7 +233,9 @@ export function DayCard({ day, status, onOpen, unlockAt, onStart }: DayCardProps
           </View>
           <View style={styles.fact}>
             <ClockIcon size={19} weight="fill" color={meter.unit} />
-            <Text style={[styles.factText, { color: meter.caption }]}>{day.minutes} min</Text>
+            <Text style={[styles.factText, { color: meter.caption }]}>
+              {t('session.minutes', { count: day.minutes })}
+            </Text>
           </View>
         </View>
 
@@ -235,8 +259,8 @@ export function DayCard({ day, status, onOpen, unlockAt, onStart }: DayCardProps
               ? // The three tests wear the checkpoint's own amber rather than a
                 // category tone. They are not exercises and have no category —
                 // colouring them as though they did would invent one.
-                ['Calf', 'Arch', 'Balance'].map((zone) => (
-                  <Chip key={zone} label={zone} icon={TargetIcon} tone={tone} />
+                RETEST_ZONE_KEYS.map((zone) => (
+                  <Chip key={zone} label={t(zone)} icon={TargetIcon} tone={tone} />
                 ))
               : // The dose rides in the chip it belongs to. "Heel raises" is a
                 // movement and "Heel raises · 3 × 12" is the prescription, and
@@ -248,7 +272,14 @@ export function DayCard({ day, status, onOpen, unlockAt, onStart }: DayCardProps
                   return (
                     <Chip
                       key={move.id}
-                      label={move.dose == null ? move.title : `${move.title} · ${move.dose}`}
+                      label={
+                        move.dose == null
+                          ? move.title
+                          : t('pages.program.moveWithDose', {
+                              title: move.title,
+                              dose: move.dose,
+                            })
+                      }
                       icon={category.icon}
                       tone={accents[scheme][category.accent]}
                     />

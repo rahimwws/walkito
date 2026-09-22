@@ -3,6 +3,7 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { fonts, meterColors } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Relief } from '@/shared/ui/relief';
@@ -37,6 +38,7 @@ export type PainLegendProps = {
 export function PainLegend({ onDismiss }: PainLegendProps) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
+  const t = useT();
 
   // Raised and opaque, matching the card below it: it floats over the ribbon,
   // and a translucent fill let a node show straight through the words.
@@ -51,19 +53,19 @@ export function PainLegend({ onDismiss }: PainLegendProps) {
             key={stop.label}
             accessible
             accessibilityRole="text"
-            accessibilityLabel={stop.label}
+            accessibilityLabel={t(stop.label)}
             style={[styles.dot, { borderColor: painRing(stop.pain, scheme) }]}
           />
         ))}
       </View>
 
       <Text style={[styles.copy, { color: meter.caption }]} numberOfLines={2}>
-        The ring around a day shows the pain you logged that day.
+        {t('progress.painLegend')}
       </Text>
 
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel="Dismiss"
+        accessibilityLabel={t('progress.painLegendDismiss')}
         onPress={() => {
           markPainLegendSeen();
           onDismiss();

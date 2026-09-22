@@ -20,7 +20,9 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { LanguageBadge } from '@/features/language-switch';
 import { fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { QUESTION_LINE_MS, TypedText } from '@/shared/ui/typed-text';
 import { type HealthSummary } from '@/entities/health';
@@ -34,15 +36,24 @@ import {
 } from '@/entities/referral';
 import { firstName, setProfileEmail, setProfileName } from '@/entities/profile';
 import { completeOnboarding, signInWithApple } from '@/entities/session';
+import { NoteSheet } from '@/shared/ui/note-sheet';
 import { Glow } from '@/shared/ui/glow';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
 
-import { TESTIMONIALS } from '../config/testimonials';
+import { TESTIMONIAL_COUNT } from '../config/testimonials';
 import { chose } from '../model/answers';
-import { activityFor, loadQuestionFor, withName, type SportKey } from '../model/personalise';
+import { loadQuestionFor, withName, type SportKey } from '../model/personalise';
 import { planSummary } from '../model/plan-summary';
 import { PLANS, recommendedIndex } from '../model/plans';
-import { STEPS, STEP_COUNT, stepAfter, type OnboardingStep } from '../model/steps';
+import {
+  STEPS,
+  STEP_COUNT,
+  stepAfter,
+  type OnboardingOption,
+  type OnboardingStep,
+  type Phrase,
+  type ResolvedOption,
+} from '../model/steps';
 import { buildingLines } from '../model/reflection';
 import { BuildingStep } from './building-step';
 import { WatchSyncStep } from './watch-sync-step';
@@ -76,8 +87,6 @@ const SLIDE = 28;
  * has somewhere to go once the heading has typed. Short of the full typing
  * sweep on purpose — waiting for the whole question would stall the screen. */
 const BLURB_DELAY_MS = 220;
-/** How many presses the social screen costs before it hands over to the offer. */
-const TESTIMONIAL_COUNT = TESTIMONIALS.length;
 
 type MeasureAnswer = { unit: string; fields: Record<string, string> };
 type Answer = string | string[] | MeasureAnswer;
@@ -120,8 +129,11 @@ export function OnboardingPage() {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
+  const t = useT();
 
   const [index, setIndex] = useState(0);
+  /** The founder's note, shown between the last answer and Home. */
+  const [note, setNote] = useState(false);
   const [answers, setAnswers] = useState<Answers>(initialAnswers);
   /** Seeded at the middle of the EU range — the ruler has to start somewhere,
    * and an unset ruler would have nothing under the needle. */
@@ -187,6 +199,23 @@ export function OnboardingPage() {
   // Decided from what they said about themselves, not offered. See
   // `plan-summary.ts` for why the choice went away.
   const plan = PLANS[recommendedIndex(runner)];
+
+  /** A phrase from the step table, resolved and then addressed to this user.
+   * The lookup leaves `{name}` in place on purpose — see `NAME_SLOT`. */
+  const say = (phrase: Phrase) => withName(phrase(t), name);
+
+  /** A step's options with their text resolved for this render. The cards take
+   * strings; only the table holds lookups. Labels carry `{name}` too, which is
+   * why they go the same way round as the headings. */
+  const resolve = (options: readonly OnboardingOption[]): ResolvedOption[] =>
+    options.map((option) => ({
+      value: option.value,
+      label: say(option.label),
+      caption: option.caption?.(t),
+      icon: option.icon,
+      accent: option.accent,
+      photo: option.photo,
+    }));
 
 
   /** Screens that own their whole canvas, with no header over them. The plan
@@ -276,8 +305,7 @@ export function OnboardingPage() {
     const finish = () => {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
       Keyboard.dismiss();
-      armOffer({ weeks: String(plan.weeks), name });
-      completeOnboarding();
+      setNote(true);
     };
 
     const code = normalise(referralCode);
@@ -293,15 +321,15 @@ export function OnboardingPage() {
 
     if (result !== 'ok') {
       setReferralGood(false);
-      setReferralNote(REDEEM_MESSAGE[result]);
+      setReferralNote(REDEEM_MESSAGE[result](t));
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
       return;
     }
 
     setReferralGood(true);
-    setReferralNote(`${REFERRAL_DISCOUNT_PERCENT}% off applied.`);
+    setReferralNote(t('onboarding.referral.applied', { percent: REFERRAL_DISCOUNT_PERCENT }));
     setTimeout(finish, CONFIRM_MS);
-  }, [referralCode, redeeming, plan.weeks, name]);
+  }, [referralCode, redeeming, plan.weeks, name, t]);
 
   /**
    * Exit, then swap, then enter — in that order.
@@ -441,7 +469,7 @@ export function OnboardingPage() {
     if (isLast) {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
       Keyboard.dismiss();
-      completeOnboarding();
+      setNote(true);
       return;
     }
     step1(true);
@@ -457,12 +485,12 @@ export function OnboardingPage() {
  * phrased as an error the user caused — the screen says what happened and
  * leaves the field alone so they can try again.
  */
-const REDEEM_MESSAGE: Readonly<Record<Exclude<RedeemResult, 'ok'>, string>> = {
-  unknown: 'We don’t know that code. Check it and try again.',
-  own: 'That one is yours. Send it to someone else.',
-  already: 'You have already used a code.',
-  unavailable: 'Invites are not available in this build.',
-  failed: 'Could not reach the server. Try again in a moment.',
+const REDEEM_MESSAGE: Readonly<Record<Exclude<RedeemResult, 'ok'>, Phrase>> = {
+  unknown: (t) => t('onboarding.referral.unknown'),
+  own: (t) => t('onboarding.referral.own'),
+  already: (t) => t('onboarding.referral.already'),
+  unavailable: (t) => t('onboarding.referral.unavailable'),
+  failed: (t) => t('onboarding.referral.failed'),
 };
 
 /** Long enough for the confirmation to be read before the screen leaves. */
@@ -474,8 +502,25 @@ const CONFIRM_MS = 900;
   const onExit = useCallback(() => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
     Keyboard.dismiss();
+    // Straight out, with no note. Someone who skipped the whole flow has said
+    // what they want, and a personal letter asking them for a rating on the way
+    // past is the exact pattern Apple's guidelines single out.
     completeOnboarding();
   }, []);
+
+  /**
+   * Leaving the note, however the user left it.
+   *
+   * `armOffer` happens here rather than where the last answer was given, so the
+   * offer's clock starts when Home actually appears. Armed earlier it would run
+   * down while the note was still typing, and the paywall would be waiting the
+   * moment the user arrived — or worse, while they were still reading.
+   */
+  const leaveNote = useCallback(() => {
+    setNote(false);
+    armOffer({ weeks: String(plan.weeks), name });
+    completeOnboarding();
+  }, [plan.weeks, name]);
 
   /**
    * Move one step, over anything that does not apply to this user.
@@ -504,27 +549,31 @@ const CONFIRM_MS = 900;
   const ctaLabel = (() => {
     switch (step.kind) {
       case 'intro':
-        return step.cta;
+        return step.cta(t);
       case 'health':
-        return health != null ? 'Next' : 'Skip for now';
+        return health != null ? t('onboarding.cta.next') : t('onboarding.cta.skipForNow');
       case 'watch-sync':
-        return 'Done';
+        return t('onboarding.cta.done');
       case 'plan':
-        return 'Start my plan';
+        return t('onboarding.cta.startPlan');
       // The label is the tell that there is more behind the button: it asks
       // for the next review until there are none left, then asks for the offer.
       case 'social':
-        return review < TESTIMONIAL_COUNT - 1 ? 'Continue' : 'See my offer';
+        return review < TESTIMONIAL_COUNT - 1
+          ? t('onboarding.cta.continue')
+          : t('onboarding.cta.seeOffer');
       case 'contract':
-        return 'Continue';
+        return t('onboarding.cta.continue');
       // The one screen whose button changes meaning with the field: nothing
       // typed is a skip, and saying so is what makes it obvious the question is
       // optional without a second control to explain it.
       case 'referral':
-        if (redeeming) return 'Checking…';
-        return referralCode.length === REFERRAL_CODE_LENGTH ? 'Apply code' : 'Skip';
+        if (redeeming) return t('onboarding.cta.checking');
+        return referralCode.length === REFERRAL_CODE_LENGTH
+          ? t('onboarding.cta.applyCode')
+          : t('onboarding.cta.skip');
       default:
-        return 'Next';
+        return t('onboarding.cta.next');
     }
   })();
 
@@ -549,15 +598,23 @@ const CONFIRM_MS = 900;
       {/* Sits behind everything and never moves between steps — it is the
           surface the flow happens on, not part of any one screen. */}
       <Glow />
-      {/* Back, progress, close on one row — the running apps all put the
-          retreat controls in the header and leave the bottom bar to the single
-          forward action. A square Back button beside the CTA competes with it
-          for the thumb and makes going back look as important as going on. */}
+      {/* Back, progress, language, close on one row — the running apps all put
+          the retreat controls in the header and leave the bottom bar to the
+          single forward action. A square Back button beside the CTA competes
+          with it for the thumb and makes going back look as important as going
+          on.
+
+          The language badge sits after the bar rather than before it so the
+          back arrow keeps the top-left corner every iOS user reaches for
+          without looking. It costs the progress bar about forty points, which
+          is why it is two letters and not a labelled control — see
+          `LanguageBadge`. The gap is tightened from 20 to 16 to pay some of
+          that back. */}
       {!bare && (
         <View style={styles.header}>
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel="Back"
+            accessibilityLabel={t('common.back')}
             onPress={onBack}
             hitSlop={12}
             style={({ pressed }) => pressed && { opacity: 0.5 }}>
@@ -569,9 +626,10 @@ const CONFIRM_MS = 900;
             />
           </Pressable>
           <StepProgress index={index} count={STEP_COUNT} />
+          <LanguageBadge />
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel="Close"
+            accessibilityLabel={t('common.close')}
             onPress={onExit}
             hitSlop={12}
             style={({ pressed }) => pressed && { opacity: 0.5 }}>
@@ -591,8 +649,8 @@ const CONFIRM_MS = 900;
         {step.kind === 'intro' ? (
           <IntroStep
             squash={ctaSquash}
-            greeting={step.greeting}
-            headline={step.headline}
+            greeting={step.greeting(t)}
+            headline={step.headline(t)}
             signInFailed={signInFailed}
             onReady={() => setIntroReady(true)}
           />
@@ -614,10 +672,8 @@ const CONFIRM_MS = 900;
                     wording only differs by the sport it was rewritten for. */}
                 <TypedText
                   key={step.key}
-                  text={withName(
+                  text={say(
                     step.kind === 'choice' && step.key === 'load' ? load.title : step.title,
-                    name,
-                    sport,
                   )}
                   style={[styles.title, { color: colors.foreground }]}
                   maxDuration={QUESTION_LINE_MS}
@@ -637,10 +693,8 @@ const CONFIRM_MS = 900;
                       .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
                       .reduceMotion(ReduceMotion.System)}
                     style={[styles.blurb, { color: meter.caption }]}>
-                    {withName(
+                    {say(
                       step.kind === 'choice' && step.key === 'load' ? load.blurb : step.blurb,
-                      name,
-                      sport,
                     )}
                   </Animated.Text>
                 )}
@@ -650,7 +704,7 @@ const CONFIRM_MS = 900;
             {step.kind === 'name' && (
               <NameStep
                 value={typeof answer === 'string' ? answer : ''}
-                placeholder={step.placeholder}
+                placeholder={step.placeholder(t)}
                 onChange={(next) => {
                   setAnswer(next);
                   // Written as it is typed rather than on leaving the screen:
@@ -701,16 +755,7 @@ const CONFIRM_MS = 900;
                 showsVerticalScrollIndicator={false}>
                 <ChoiceStep
                   art={step.key === 'sport' ? 'sport' : 'option'}
-                  options={
-                    step.key === 'load'
-                      ? load.options
-                      : // Option labels carry tokens too — "During {activity}"
-                        // becomes "During a match" for a tennis player.
-                        step.options.map((o) => ({
-                          ...o,
-                          label: withName(o.label, name, sport),
-                        }))
-                  }
+                  options={resolve(step.key === 'load' ? load.options : step.options)}
                   selected={Array.isArray(answer) ? answer : []}
                   multi={step.multi ?? false}
                   max={step.max}
@@ -721,7 +766,7 @@ const CONFIRM_MS = 900;
 
             {step.kind === 'sex' && (
               <SexStep
-                options={step.options}
+                options={resolve(step.options)}
                 selected={Array.isArray(answer) ? (answer[0] ?? null) : null}
                 onChange={(next) => setAnswer([next])}
               />
@@ -768,6 +813,7 @@ const CONFIRM_MS = 900;
                 showsVerticalScrollIndicator={false}>
                 <PlanStep
                   summary={planSummary({
+                    t,
                     runner,
                     // `load` in this scope is the *question*; the answer is
                     // `loadAnswer`, which is what the reflection line reads too.
@@ -790,7 +836,7 @@ const CONFIRM_MS = 900;
                     visual step for no gain. */}
                 <ChoiceStep
                   art="option"
-                  options={step.options}
+                  options={resolve(step.options)}
                   selected={Array.isArray(answer) ? answer : []}
                   multi={false}
                   onChange={setAnswer}
@@ -851,7 +897,7 @@ const CONFIRM_MS = 900;
       {step.kind === 'building' && (
         <BuildingStep
           sex={sex}
-          lines={buildingLines({ sport: sport as SportKey | null, pain, load: loadAnswer })}
+          lines={buildingLines({ t, sport: sport as SportKey | null, pain, load: loadAnswer })}
           onDone={onNext}
           insets={insets}
         />
@@ -906,7 +952,7 @@ const CONFIRM_MS = 900;
               disabled={authing}
               style={({ pressed }) => [styles.altAuth, pressed && { opacity: 0.6 }]}>
               <Text style={[styles.altAuthLabel, { color: meter.caption }]}>
-                Sign in with email
+                {t('onboarding.intro.emailCta')}
               </Text>
             </Pressable>
           )}
@@ -926,6 +972,13 @@ const CONFIRM_MS = 900;
           step1(true);
         }}
       />
+
+      {/* The last thing the flow does. It sits here, inside onboarding, rather
+          than over Home, because `completeOnboarding()` swaps the whole tree —
+          there is no onboarding left to show it from once that has run, and
+          over Home it would land on top of the offer sheet. `leaveNote` is what
+          finally flips the flag. */}
+      <NoteSheet visible={note} onDone={leaveNote} />
     </KeyboardAvoidingView>
   );
 }
@@ -940,7 +993,10 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 20,
+    // 16 rather than 20 since the language badge joined the row: four children
+    // at the old gap took enough width off the progress bar that it stopped
+    // reading as a bar on a small phone.
+    gap: 16,
     // Room for the bar to breathe between the two controls, which is what
     // keeps it reading as a progress hint rather than as a divider.
     paddingHorizontal: 2,

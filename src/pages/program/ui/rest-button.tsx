@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { StyleSheet } from 'react-native';
 
+import { useT } from '@/shared/lib/i18n';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 export type RestButtonProps = {
@@ -41,6 +42,7 @@ function clock(msLeft: number): string {
  */
 export function RestButton({ unlockAt, onStart }: RestButtonProps) {
   const [now, setNow] = useState(() => Date.now());
+  const t = useT();
 
   useEffect(() => {
     // Stops of its own accord at zero: a timer still firing after the wait is
@@ -56,7 +58,10 @@ export function RestButton({ unlockAt, onStart }: RestButtonProps) {
 
   return (
     <PrimaryButton
-      label={ready ? 'Start now' : clock(left)}
+      // The clock itself is notation rather than words — digits and colons read
+      // the same in every language the app ships — so only the label it turns
+      // into comes from the catalogue.
+      label={ready ? t('pages.program.startNow') : clock(left)}
       disabled={!ready}
       onPress={onStart}
       style={styles.button}

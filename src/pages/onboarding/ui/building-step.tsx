@@ -14,11 +14,12 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { fonts } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { TypedText } from '@/shared/ui/typed-text';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { PLAN_PHOTOS } from '../config/plan-photos';
-import { DEFAULT_BUILDING_LINES, type BuildingLines } from '../model/reflection';
+import { defaultBuildingLines, type BuildingLines } from '../model/reflection';
 
 /**
  * What the screen says while it works, in order.
@@ -28,10 +29,12 @@ import { DEFAULT_BUILDING_LINES, type BuildingLines } from '../model/reflection'
  * would turn a pause into a performance.
  *
  * The words are handed in by the page, assembled from the user's own answers —
- * see `model/reflection`. These three are the fallback for a run with nothing
- * to reflect, and they set the count the timings below are built on.
+ * see `model/reflection`, which also holds the fallback for a run with nothing
+ * to reflect. The count is fixed by `BuildingLines` itself and is what the
+ * timings below are built on, so it is a constant here rather than a `.length`
+ * read off a list that now needs a translator to exist.
  */
-const PHASES = DEFAULT_BUILDING_LINES;
+const PHASE_COUNT = 3;
 
 /** How long each line holds the screen, its typing included. */
 const PHASE_MS = 1900;
@@ -41,7 +44,7 @@ const CROSSFADE_MS = 260;
 /** Ceiling on a line's typing, comfortably inside its phase. */
 const LINE_MS = 700;
 
-const RUN_MS = PHASES.length * PHASE_MS - CROSSFADE_MS;
+const RUN_MS = PHASE_COUNT * PHASE_MS - CROSSFADE_MS;
 
 export type BuildingStepProps = {
   /** Picks whose photograph fills the screen. */
@@ -73,7 +76,9 @@ export type BuildingStepProps = {
  * rises from the bottom rather than fading in on the spot — the screen resolves
  * into an action instead of revealing that one had been sitting there.
  */
-export function BuildingStep({ sex, lines = PHASES, onDone, insets }: BuildingStepProps) {
+export function BuildingStep({ sex, lines, onDone, insets }: BuildingStepProps) {
+  const t = useT();
+  const phrases = lines ?? defaultBuildingLines(t);
   const [phase, setPhase] = useState(0);
   /** The button exists only once the rule has reached the end. */
   const [ready, setReady] = useState(false);
@@ -91,15 +96,14 @@ export function BuildingStep({ sex, lines = PHASES, onDone, insets }: BuildingSt
       reduceMotion: ReduceMotion.System,
     });
 
-    PHASES.forEach((_, i) => {
-      if (i === 0) return;
+    for (let i = 1; i < PHASE_COUNT; i += 1) {
       timers.push(
         setTimeout(() => {
           setPhase(i);
           Haptics.selectionAsync();
         }, i * PHASE_MS - CROSSFADE_MS),
       );
-    });
+    }
 
     timers.push(
       setTimeout(() => {
@@ -158,11 +162,11 @@ export function BuildingStep({ sex, lines = PHASES, onDone, insets }: BuildingSt
               sentences of different lengths never shift the rule below. */}
           <View style={styles.phraseBox}>
             <Animated.View
-              key={`${phase}-${lines[phase]}`}
+              key={`${phase}-${phrases[phase]}`}
               entering={FadeIn.duration(CROSSFADE_MS).reduceMotion(ReduceMotion.System)}
               exiting={FadeOut.duration(CROSSFADE_MS).reduceMotion(ReduceMotion.System)}
               style={styles.phrasePos}>
-              <TypedText text={lines[phase]} style={styles.phrase} maxDuration={LINE_MS} />
+              <TypedText text={phrases[phase]} style={styles.phrase} maxDuration={LINE_MS} />
             </Animated.View>
           </View>
 
@@ -176,7 +180,7 @@ export function BuildingStep({ sex, lines = PHASES, onDone, insets }: BuildingSt
             entering={SlideInDown.duration(460)
               .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
               .reduceMotion(ReduceMotion.System)}>
-            <PrimaryButton label="Start my training" onPress={onDone} />
+            <PrimaryButton label={t('onboarding.building.cta')} onPress={onDone} />
           </Animated.View>
         )}
       </View>

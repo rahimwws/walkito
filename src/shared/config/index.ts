@@ -1,4 +1,4 @@
-export { fonts, fontAssets } from './fonts';
+export { fonts, fontAssets, noteFonts } from './fonts';
 export {
   PRIMARY,
   palette,
@@ -9,4 +9,4 @@ export {
   type Accent,
   type AccentName,
 } from './theme';
-export { LEGAL, SUPPORT_EMAIL } from './legal';
+export { APP_STORE_REVIEW_URL, LEGAL, SUPPORT_EMAIL } from './legal';

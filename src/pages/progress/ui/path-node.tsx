@@ -22,6 +22,7 @@ import {
   type ProgramDay,
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import { captionFor } from '../model/day-caption';
@@ -96,6 +97,7 @@ export const PathNode = memo(function PathNode({
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const accent = accents[scheme].orange;
+  const t = useT();
 
   const active = status === 'today';
 
@@ -154,7 +156,7 @@ export const PathNode = memo(function PathNode({
   }));
 
   const face = faceFor({ status, day, colors, meter, accent });
-  const label = captionFor(day, status);
+  const label = captionFor(day, status, t);
 
   return (
     <View

@@ -192,13 +192,20 @@ describe('the discounted sheet', () => {
     // the saving applies to, and the monthly figure is the better-looking of
     // the two — the opposite of what a win-back is for.
     expect(page).toContain('const monthlyOffered = !boosted;');
-    expect(page).toMatch(/\{monthlyOffered && \(\s*<TierRow\s+title="Monthly"/);
+    // Matches the catalogue lookup rather than the old English literal. The
+    // assertion is about the guard, not the wording: the row must stay behind
+    // `monthlyOffered`, whatever language it renders in.
+    expect(page).toMatch(
+      /\{monthlyOffered && \(\s*<TierRow\s+title=\{t\('offer\.monthlyTitle'\)\}/,
+    );
   });
 
   test('stops disclosing renewal terms for a plan it no longer offers', () => {
     // Apple wants the terms for what the screen sells. Describing a charge the
     // user cannot make from here is not a disclosure.
-    expect(page).toMatch(/\{monthlyOffered && \(\s*<Text[^>]*>\s*\{`Monthly:/);
+    expect(page).toMatch(
+      /\{monthlyOffered && \(\s*<Text[\s\S]*?>\s*\{t\('offer\.termsMonthly'/,
+    );
   });
 
   test('moves the selection onto the only row left', () => {

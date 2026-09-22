@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { AppState } from 'react-native';
 
 import { Notifications, PLAN_KIND, markDelivered, onAppOpen } from '@/entities/notifications';
+import { subscribeToLanguage } from '@/shared/lib/i18n';
 
 /**
  * Keeps the notification window current, and records that the user was here.
@@ -24,6 +25,25 @@ export function useNotificationScheduler(): void {
     });
 
     /**
+     * Re-plan when the language changes.
+     *
+     * Notification copy is resolved at *schedule* time — `planWindow` bakes
+     * finished text into each item and hands it to iOS, which holds it until
+     * the fire date. There is no delivery-time hook to translate in, so a
+     * week's queue keeps the language it was laid down in.
+     *
+     * The foreground listener above already rebuilds the window and would
+     * eventually catch it, but "eventually" is the problem: anything due
+     * between the switch and the next foreground arrives in the old language.
+     * Subscribing to the store covers every place the language can change —
+     * the onboarding header badge as well as the settings sheet — instead of
+     * asking each of those to remember to call this.
+     */
+    const language = subscribeToLanguage(() => {
+      void onAppOpen();
+    });
+
+    /**
      * What the system actually presented.
      *
      * The scheduler plans; only this says a message was really delivered. A
@@ -43,6 +63,8 @@ export function useNotificationScheduler(): void {
     return () => {
       app.remove();
       delivered.remove();
+      // Returns its own unsubscribe rather than an emitter subscription.
+      language();
     };
   }, []);
 }

@@ -12,7 +12,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import {
+import { blockName,
   PLAN_BLOCKS,
   PROGRAM,
   PROGRAM_LENGTH,
@@ -32,6 +32,7 @@ import {
   type ProgramDay,
 } from '@/entities/program';
 import { fonts, meterColors, palette } from '@/shared/config';
+import { useLanguage, useT, type Language } from '@/shared/lib/i18n';
 import { useProgram } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
 
@@ -48,12 +49,18 @@ import { DaySheet } from './day-sheet';
  * A function rather than a constant: read once at module scope it would be
  * fixed at the moment the bundle loaded, and a screen left open overnight would
  * insist it was still yesterday. The same note sits over Home's copy of this.
+ *
+ * Formatted for the app's language rather than pinned to `en-US`. The subtitle
+ * is one `Intl` call rather than a month looked up and a date appended to it:
+ * Russian needs "22 сентября" — the month in the genitive, after the day — and
+ * asking for a month on its own gets "сентябрь", the nominative, which no
+ * arrangement of the two pieces repairs.
  */
-function todayLines(): { title: string; subtitle: string } {
+function todayLines(language: Language): { title: string; subtitle: string } {
   const now = new Date();
   return {
-    title: now.toLocaleDateString('en-US', { weekday: 'long' }),
-    subtitle: `${now.toLocaleDateString('en-US', { month: 'long' })}, ${now.getDate()}`,
+    title: new Intl.DateTimeFormat(language, { weekday: 'long' }).format(now),
+    subtitle: new Intl.DateTimeFormat(language, { month: 'long', day: 'numeric' }).format(now),
   };
 }
 
@@ -97,6 +104,10 @@ export function ProgramPage() {
   const program = useProgram();
   const insets = useSafeAreaInsets();
   const { width } = useWindowDimensions();
+  // Subscribed: `begins` below is an exercise title resolved through the
+  // catalogue, and the header's date is formatted for the active language.
+  const t = useT();
+  const language = useLanguage();
 
   /**
    * The day whose session is open.
@@ -140,7 +151,7 @@ export function ProgramPage() {
    * second to move one digit.
    */
   const unlockAt = nextSessionAt(currentDay());
-  const lines = todayLines();
+  const lines = todayLines(language);
   const days = PROGRAM.filter((day) => day.block === today.block);
 
   /**
@@ -272,7 +283,7 @@ export function ProgramPage() {
         <View style={[styles.header, { paddingTop: insets.top + 4 }]}>
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel="Close the program"
+            accessibilityLabel={t('pages.program.closeA11y')}
             onPress={() => program?.close()}
             hitSlop={12}
             style={({ pressed }) => [styles.back, pressed && { opacity: 0.5 }]}>
@@ -291,7 +302,11 @@ export function ProgramPage() {
           <View>
             <Text style={[styles.section, { color: colors.foreground }]}>{lines.title}</Text>
             <Text style={[styles.blurb, { color: meter.caption }]}>
-              {lines.subtitle} · Block {today.block} of {PLAN_BLOCKS.length}
+              {t('pages.program.headerMeta', {
+                date: lines.subtitle,
+                block: today.block,
+                total: PLAN_BLOCKS.length,
+              })}
             </Text>
           </View>
         </View>
@@ -358,7 +373,7 @@ export function ProgramPage() {
             <DayLink />
             <BlockFooter
               index={block.index}
-              name={block.name}
+              name={blockName(block.index, t)}
               done={doneInBlock}
               length={days.length}
             />
@@ -371,7 +386,7 @@ export function ProgramPage() {
                     the one place a greeting belongs. */}
                 <BlockOpening />
                 <DayLink ahead />
-                <BlockAhead index={nextBlock.index} name={nextBlock.name} begins={begins} />
+                <BlockAhead index={nextBlock.index} name={blockName(nextBlock.index, t)} begins={begins} />
               </>
             ) : (
               <>

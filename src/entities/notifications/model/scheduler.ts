@@ -14,9 +14,10 @@
 import * as Notifications from 'expo-notifications';
 
 import { currentDay, nextSessionAt, toDateKey } from '@/entities/program';
+import { getLanguage } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 
-import { messageFor } from './copy';
+import { messageFor, retestFollowUpBody } from './copy';
 import {
   FOLLOW_UP_HOURS,
   PRIORITY,
@@ -159,9 +160,23 @@ export type PlannedItem = {
  * or from a debug screen — without scheduling anything. The delivery state is
  * advanced *hypothetically* as the week is walked, so the caps apply across the
  * window rather than only against what has already been sent.
+ *
+ * **Copy is resolved here, at plan time, not at delivery.** iOS is handed
+ * finished text and has no way to ask us for it again, so a week already on the
+ * calendar keeps the language it was laid down in. What makes that safe rather
+ * than a bug is that the whole window is cancelled and rebuilt on every
+ * foreground — see `refresh` and `onAppOpen` — so a language change is picked
+ * up the next time the app comes forward. The gap is the messages that fire
+ * between the switch and that next open; closing it properly means refreshing
+ * on the language change itself, which the settings sheet would have to ask
+ * for.
+ *
+ * The language is read once for the window rather than per message, so a
+ * preference that changes mid-loop cannot produce a half-translated week.
  */
 export function planWindow(now: number = Date.now()): PlannedItem[] {
   const today = currentDay(now);
+  const language = getLanguage();
   // A projection, not the real record: these have not been delivered yet, and
   // writing them back would silence the week they are meant to fill.
   let projected = readDelivery();
@@ -172,7 +187,7 @@ export function planWindow(now: number = Date.now()): PlannedItem[] {
     const decision = decide(signals, projected);
     if (!decision.send) continue;
 
-    const message = messageFor(decision.candidate.kind, signals);
+    const message = messageFor(decision.candidate.kind, signals, language);
     if (message == null) continue;
 
     planned.push({
@@ -201,7 +216,7 @@ export function planWindow(now: number = Date.now()): PlannedItem[] {
         dateKey: signals.dateKey,
         at: decision.candidate.at + FOLLOW_UP_HOURS * 60,
         title: message.title,
-        body: 'The tests are still open. Four minutes.',
+        body: retestFollowUpBody(language),
         followUp: true,
       });
     }

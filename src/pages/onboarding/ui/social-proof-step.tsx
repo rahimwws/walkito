@@ -22,9 +22,10 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
-import { TESTIMONIALS } from '../config/testimonials';
+import { testimonials, type Testimonial } from '../config/testimonials';
 
 /** Generous on purpose. The squircle only reads as one at a radius this side
  * of a quarter of the card's width — at 22 it looked like a plain rounded
@@ -72,7 +73,9 @@ export function SocialProofStep({ name, index, onChange }: SocialProofStepProps)
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const { width } = useWindowDimensions();
+  const t = useT();
 
+  const reviews = testimonials(t);
   const cardWidth = width - SIDE_PAD * 2 - PEEK;
   const stride = cardWidth + GAP;
 
@@ -83,14 +86,16 @@ export function SocialProofStep({ name, index, onChange }: SocialProofStepProps)
 
   const onSettle = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
     const page = Math.round(e.nativeEvent.contentOffset.x / stride);
-    const clamped = Math.min(Math.max(page, 0), TESTIMONIALS.length - 1);
+    const clamped = Math.min(Math.max(page, 0), reviews.length - 1);
     if (clamped !== index) onChange(clamped);
   };
 
   return (
     <View style={styles.wrap}>
       <Text style={[styles.welcome, { color: colors.foreground }]}>
-        {name.length > 0 ? `Welcome, ${name}` : 'Welcome aboard'}
+        {name.length > 0
+          ? t('onboarding.social.welcomeNamed', { name })
+          : t('onboarding.social.welcome')}
       </Text>
 
       {/* The wreaths are the reference's, and they are doing real work: they
@@ -104,7 +109,7 @@ export function SocialProofStep({ name, index, onChange }: SocialProofStepProps)
           strokeWidth={1.5}
         />
         <Text style={[styles.crestLabel, { color: colors.foreground }]}>
-          Join 40,000+ runners{'\n'}training without pain
+          {t('onboarding.social.crest')}
         </Text>
         <HugeiconsIcon
           icon={LaurelWreathRight02Icon}
@@ -126,7 +131,7 @@ export function SocialProofStep({ name, index, onChange }: SocialProofStepProps)
           // Stretch, so every card takes the height of the tallest and the
           // rail does not change height as it pages.
           contentContainerStyle={styles.railContent}>
-          {TESTIMONIALS.map((review) => (
+          {reviews.map((review) => (
             <ReviewCard
               key={review.name}
               review={review}
@@ -141,7 +146,7 @@ export function SocialProofStep({ name, index, onChange }: SocialProofStepProps)
       </View>
 
       <View style={styles.dots}>
-        {TESTIMONIALS.map((review, i) => (
+        {reviews.map((review, i) => (
           <Dot key={review.name} active={i === index} track={meter.track} />
         ))}
       </View>
@@ -178,7 +183,7 @@ function ReviewCard({
   caption,
   track,
 }: {
-  review: (typeof TESTIMONIALS)[number];
+  review: Testimonial;
   width: number;
   card: string;
   ink: string;

@@ -24,15 +24,38 @@ import type { ImageSourcePropType } from 'react-native';
 import { healthAvailable } from '@/entities/health';
 
 import type { AccentName } from '@/shared/config';
+import type { Translate } from '@/shared/lib/i18n';
 
 import { REFERRAL_DISCOUNT_PERCENT } from '@/entities/referral';
+
+/**
+ * One line of copy, resolved against whatever language is current.
+ *
+ * A closure rather than a bare catalogue key, because `t()` reads a key's
+ * placeholders off its own template: handed a field typed as the union of every
+ * step's title, it would demand the union of every step's placeholders at every
+ * call site. Closing over the key keeps each lookup exact, and keeps this table
+ * a table — `STEPS` is still a module-level array, so `STEP_COUNT`,
+ * `stepAfter` and the page's seeding all work unchanged.
+ */
+export type Phrase = (t: Translate) => string;
+
+/**
+ * The name, held back from `t()` on purpose.
+ *
+ * Passing the real name here would substitute the empty string for anyone who
+ * skipped the name step and leave "Male or female, ?" on screen. `withName`
+ * needs the slot intact so it can remove the slot *and* the punctuation
+ * stranded around it, which is a decision only it has the name to make.
+ */
+export const NAME_SLOT = { name: '{name}' } as const;
 
 export type OnboardingOption = {
   /** Stable key, and what the answer is recorded as. */
   value: string;
-  label: string;
+  label: Phrase;
   /** Second line, for options that need a qualifier. */
-  caption?: string;
+  caption?: Phrase;
   /** Cards lead with a glyph on a tinted tile… */
   icon?: IconSvgElement;
   accent?: AccentName;
@@ -41,11 +64,18 @@ export type OnboardingOption = {
   photo?: ImageSourcePropType;
 };
 
+/** The same option once the page has resolved its text for this render. The
+ * cards take this; only the step table holds lookups. */
+export type ResolvedOption = Omit<OnboardingOption, 'label' | 'caption'> & {
+  label: string;
+  caption?: string;
+};
+
 /** One number the user types, with the unit that trails it. */
 export type MeasureField = {
   key: string;
   /** Small label riding the number's baseline, e.g. "ft". */
-  suffix: string;
+  suffix: Phrase;
   /** Digits the field accepts. */
   maxDigits: number;
   /** Prefilled so the screen never opens on an empty line — the reference
@@ -56,15 +86,15 @@ export type MeasureField = {
 
 export type MeasureUnit = {
   value: string;
-  label: string;
+  label: Phrase;
   fields: readonly MeasureField[];
 };
 
 /** One rep-or-seconds micro test. */
 type StepBase = {
   key: string;
-  title: string;
-  blurb: string;
+  title: Phrase;
+  blurb: Phrase;
   /** Which of the four acts this belongs to. Drives the progress indicator. */
   act: number;
   /**
@@ -79,6 +109,10 @@ type StepBase = {
   skipWhen?: (answers: Readonly<Record<string, unknown>>) => boolean;
 };
 
+/** The two screens that write their own heading and never read these. An empty
+ * string rather than a catalogue key: a blank entry is the one thing the
+ * catalogue's own tests refuse to hold. */
+const UNUSED: Phrase = () => '';
 
 /**
  * The shapes a screen can take.
@@ -90,8 +124,8 @@ type StepBase = {
  */
 export type OnboardingStep = StepBase &
   (
-    | { kind: 'intro'; cta: string; footnote: string; greeting: string; headline: string }
-    | { kind: 'name'; placeholder: string }
+    | { kind: 'intro'; cta: Phrase; footnote: Phrase; greeting: Phrase; headline: Phrase }
+    | { kind: 'name'; placeholder: Phrase }
     | {
         kind: 'choice';
         options: readonly OnboardingOption[];
@@ -99,7 +133,7 @@ export type OnboardingStep = StepBase &
         multi?: boolean;
         max?: number;
         /** A follow-up row of small chips under the cards. */
-        extra?: { key: string; label: string; options: readonly string[] };
+        extra?: { key: string; label: Phrase; options: readonly string[] };
       }
     | { kind: 'measure'; units: readonly MeasureUnit[] }
     /** Two full-bleed photo cards. Asked early because the shoe-size screen
@@ -140,7 +174,12 @@ export type OnboardingStep = StepBase &
  * way through something with a shape", and the current act fills continuously
  * as its questions are answered.
  */
-export const ACTS = ['About you', 'Your sport', 'Your health', 'Your plan'] as const;
+export const ACTS: readonly Phrase[] = [
+  (t) => t('onboarding.act.about'),
+  (t) => t('onboarding.act.sport'),
+  (t) => t('onboarding.act.health'),
+  (t) => t('onboarding.act.plan'),
+];
 
 /**
  * Every screen, in order.
@@ -164,29 +203,29 @@ export const ACTS = ['About you', 'Your sport', 'Your health', 'Your plan'] as c
 const WATCH_OPTIONS: readonly OnboardingOption[] = [
   {
     value: 'apple',
-    label: 'Apple Watch',
-    caption: 'Everything works already',
+    label: (t) => t('onboarding.watch.apple'),
+    caption: (t) => t('onboarding.watch.appleCaption'),
     icon: SmartWatch01Icon,
     accent: 'blue',
   },
   {
     value: 'garmin',
-    label: 'Garmin',
-    caption: 'One switch to flip',
+    label: (t) => t('onboarding.watch.garmin'),
+    caption: (t) => t('onboarding.watch.switchCaption'),
     icon: SmartWatch04Icon,
     accent: 'teal',
   },
   {
     value: 'whoop',
-    label: 'Whoop',
-    caption: 'One switch to flip',
+    label: (t) => t('onboarding.watch.whoop'),
+    caption: (t) => t('onboarding.watch.switchCaption'),
     icon: Activity03Icon,
     accent: 'violet',
   },
   {
     value: 'none',
-    label: 'No watch',
-    caption: 'Your phone in your pocket is enough',
+    label: (t) => t('onboarding.watch.none'),
+    caption: (t) => t('onboarding.watch.noneCaption'),
     icon: FootprintsIcon,
     accent: 'amber',
   },
@@ -199,8 +238,8 @@ export const STEPS: readonly OnboardingStep[] = [
     kind: 'welcome',
     key: 'welcome',
     act: 0,
-    title: '',
-    blurb: '',
+    title: UNUSED,
+    blurb: UNUSED,
   },
   {
     kind: 'intro',
@@ -208,58 +247,59 @@ export const STEPS: readonly OnboardingStep[] = [
     act: 0,
     // `title`/`blurb` stay for the step's own bookkeeping; the welcome screen
     // renders the two lines below instead, in sequence.
-    title: 'Run without second-guessing',
-    blurb: 'A daily plan that changes when your legs do.',
-    greeting: 'Hi, I\u2019m Walkito',
-    headline: 'Let\u2019s find out why it still hurts.',
-    cta: 'Continue with Apple',
-    footnote: '~2 min setup',
+    title: (t) => t('onboarding.intro.title'),
+    blurb: (t) => t('onboarding.intro.blurb'),
+    greeting: (t) => t('onboarding.intro.greeting'),
+    headline: (t) => t('onboarding.intro.headline'),
+    cta: (t) => t('onboarding.intro.cta'),
+    footnote: (t) => t('onboarding.intro.footnote'),
   },
   {
     kind: 'name',
     key: 'name',
     act: 0,
-    title: 'What should we\ncall you?',
-    blurb: 'Everything after this gets written for you, not for runners in general.',
-    placeholder: 'e.g. Alex',
+    title: (t) => t('onboarding.name.title'),
+    blurb: (t) => t('onboarding.name.blurb'),
+    placeholder: (t) => t('onboarding.name.placeholder'),
   },
   {
     kind: 'sex',
     key: 'sex',
     act: 0,
-    title: 'Male or female, {name}?',
-    blurb: 'Load tolerance and injury patterns differ, so the plan does too.',
+    title: (t) => t('onboarding.sex.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.sex.blurb'),
     options: [
-      { value: 'female', label: 'Female' },
-      { value: 'male', label: 'Male' },
+      { value: 'female', label: (t) => t('onboarding.sex.female') },
+      { value: 'male', label: (t) => t('onboarding.sex.male') },
     ],
   },
   {
     kind: 'choice',
     key: 'runner',
     act: 0,
-    title: 'What kind of athlete are you, {name}?',
-    blurb:
-      'This is where your plan starts from. Under-selling here just makes week one too easy.',
+    title: (t) => t('onboarding.runner.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.runner.blurb'),
     options: [
-      { value: 'new', label: 'Just getting started', icon: SunriseIcon, accent: 'amber' },
-      { value: 'casual', label: 'Casual', icon: FootprintsIcon, accent: 'teal' },
-      { value: 'regular', label: 'Regular', icon: WorkoutRunIcon, accent: 'blue' },
-      { value: 'racing', label: 'Training for something', icon: Award01Icon, accent: 'violet' },
-      { value: 'serious', label: 'Serious about it', icon: FlashIcon, accent: 'orange' },
+      { value: 'new', label: (t) => t('onboarding.runner.new'), icon: SunriseIcon, accent: 'amber' },
+      { value: 'casual', label: (t) => t('onboarding.runner.casual'), icon: FootprintsIcon, accent: 'teal' },
+      { value: 'regular', label: (t) => t('onboarding.runner.regular'), icon: WorkoutRunIcon, accent: 'blue' },
+      { value: 'racing', label: (t) => t('onboarding.runner.racing'), icon: Award01Icon, accent: 'violet' },
+      { value: 'serious', label: (t) => t('onboarding.runner.serious'), icon: FlashIcon, accent: 'orange' },
     ],
   },
   {
     kind: 'measure',
     key: 'age',
     act: 0,
-    title: 'How old are you?',
-    blurb: 'Tendons adapt more slowly with age. This paces how fast the plan builds.',
+    title: (t) => t('onboarding.age.title'),
+    blurb: (t) => t('onboarding.age.blurb'),
     units: [
       {
         value: 'years',
-        label: 'years',
-        fields: [{ key: 'years', suffix: 'years', maxDigits: 2, initial: '28' }],
+        label: (t) => t('onboarding.age.years'),
+        fields: [
+          { key: 'years', suffix: (t) => t('onboarding.age.years'), maxDigits: 2, initial: '28' },
+        ],
       },
     ],
   },
@@ -267,18 +307,18 @@ export const STEPS: readonly OnboardingStep[] = [
     kind: 'measure',
     key: 'body',
     act: 0,
-    title: 'A little more about you, {name}',
-    blurb: 'Tendons carry what you weigh. This sets your starting load.',
+    title: (t) => t('onboarding.body.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.body.blurb'),
     units: [
       {
         value: 'kg',
-        label: 'kg',
-        fields: [{ key: 'kg', suffix: 'kg', maxDigits: 3, initial: '72' }],
+        label: (t) => t('onboarding.body.kg'),
+        fields: [{ key: 'kg', suffix: (t) => t('onboarding.body.kg'), maxDigits: 3, initial: '72' }],
       },
       {
         value: 'lb',
-        label: 'lb',
-        fields: [{ key: 'lb', suffix: 'lb', maxDigits: 3, initial: '159' }],
+        label: (t) => t('onboarding.body.lb'),
+        fields: [{ key: 'lb', suffix: (t) => t('onboarding.body.lb'), maxDigits: 3, initial: '159' }],
       },
     ],
   },
@@ -286,57 +326,57 @@ export const STEPS: readonly OnboardingStep[] = [
     kind: 'size',
     key: 'size',
     act: 0,
-    title: 'What size do you run in, {name}?',
-    blurb: 'Shoe size stands in for the length of the lever your calf has to move.',
+    title: (t) => t('onboarding.size.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.size.blurb'),
   },
   {
     kind: 'choice',
     key: 'goal',
     act: 1,
-    title: '{name}, what are you working toward?',
-    blurb: 'Pick the one that matters most right now. You can change it later.',
+    title: (t) => t('onboarding.goal.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.goal.blurb'),
     options: [
-      { value: 'painfree', label: 'Run pain-free', icon: ShieldEnergyIcon, accent: 'teal' },
-      { value: 'race', label: 'Train for a race', icon: Award01Icon, accent: 'violet' },
-      { value: 'consistent', label: 'Run more consistently', icon: ChartIncreaseIcon, accent: 'blue' },
-      { value: 'stronger', label: 'Build stronger legs', icon: Dumbbell01Icon, accent: 'orange' },
-      { value: 'injuryfree', label: 'Stay injury-free', icon: Target01Icon, accent: 'amber' },
+      { value: 'painfree', label: (t) => t('onboarding.goal.painfree'), icon: ShieldEnergyIcon, accent: 'teal' },
+      { value: 'race', label: (t) => t('onboarding.goal.race'), icon: Award01Icon, accent: 'violet' },
+      { value: 'consistent', label: (t) => t('onboarding.goal.consistent'), icon: ChartIncreaseIcon, accent: 'blue' },
+      { value: 'stronger', label: (t) => t('onboarding.goal.stronger'), icon: Dumbbell01Icon, accent: 'orange' },
+      { value: 'injuryfree', label: (t) => t('onboarding.goal.injuryfree'), icon: Target01Icon, accent: 'amber' },
     ],
   },
   {
     kind: 'choice',
     key: 'pain',
     act: 1,
-    title: 'What’s getting in the way, {name}?',
-    blurb: 'Choose any that apply. Most people pick more than one.',
+    title: (t) => t('onboarding.pain.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.pain.blurb'),
     multi: true,
     options: [
-      { value: 'foot', label: 'Foot', icon: FootprintsIcon, accent: 'violet' },
-      { value: 'heel', label: 'Heel', icon: BodyPartLegIcon, accent: 'orange' },
-      { value: 'achilles', label: 'Achilles', icon: Activity03Icon, accent: 'amber' },
-      { value: 'shin', label: 'Shin', icon: BodyPartLegIcon, accent: 'blue' },
-      { value: 'knee', label: 'Knee', icon: BalanceScaleIcon, accent: 'teal' },
-      { value: 'hip', label: 'Hip', icon: Yoga01Icon, accent: 'violet' },
+      { value: 'foot', label: (t) => t('onboarding.pain.foot'), icon: FootprintsIcon, accent: 'violet' },
+      { value: 'heel', label: (t) => t('onboarding.pain.heel'), icon: BodyPartLegIcon, accent: 'orange' },
+      { value: 'achilles', label: (t) => t('onboarding.pain.achilles'), icon: Activity03Icon, accent: 'amber' },
+      { value: 'shin', label: (t) => t('onboarding.pain.shin'), icon: BodyPartLegIcon, accent: 'blue' },
+      { value: 'knee', label: (t) => t('onboarding.pain.knee'), icon: BalanceScaleIcon, accent: 'teal' },
+      { value: 'hip', label: (t) => t('onboarding.pain.hip'), icon: Yoga01Icon, accent: 'violet' },
       // Load-bearing: the product is prevention and performance as much as
       // rehab, and a flow that assumes an injury tells healthy runners they
       // are in the wrong app.
-      { value: 'none', label: 'Nothing right now', icon: Tick02Icon, accent: 'teal' },
+      { value: 'none', label: (t) => t('onboarding.pain.none'), icon: Tick02Icon, accent: 'teal' },
     ],
   },
   {
     kind: 'choice',
     key: 'sport',
     act: 1,
-    title: 'What puts the load on your legs, {name}?',
-    blurb: 'This decides how the next questions are framed.',
+    title: (t) => t('onboarding.sport.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.sport.blurb'),
     options: [
-      { value: 'running', label: 'Running' },
-      { value: 'tennis', label: 'Tennis' },
-      { value: 'gym', label: 'Gym' },
-      { value: 'football', label: 'Football' },
-      { value: 'basketball', label: 'Basketball' },
-      { value: 'cycling', label: 'Cycling' },
-      { value: 'hiking', label: 'Hiking' },
+      { value: 'running', label: (t) => t('onboarding.sport.running') },
+      { value: 'tennis', label: (t) => t('onboarding.sport.tennis') },
+      { value: 'gym', label: (t) => t('onboarding.sport.gym') },
+      { value: 'football', label: (t) => t('onboarding.sport.football') },
+      { value: 'basketball', label: (t) => t('onboarding.sport.basketball') },
+      { value: 'cycling', label: (t) => t('onboarding.sport.cycling') },
+      { value: 'hiking', label: (t) => t('onboarding.sport.hiking') },
     ],
   },
   {
@@ -346,34 +386,38 @@ export const STEPS: readonly OnboardingStep[] = [
     // Placeholder copy. `loadQuestionFor` swaps in the wording and the ranges
     // for whichever sport was chosen — a runner is asked about kilometres, a
     // tennis player about hours on court.
-    title: 'How much are you doing right now?',
-    blurb: 'Your honest current week, not your best one.',
+    title: (t) => t('onboarding.load.title'),
+    blurb: (t) => t('onboarding.load.blurb'),
     options: [],
-    extra: { key: 'sessionsPerWeek', label: 'Sessions per week', options: ['1', '2', '3', '4', '5+'] },
+    extra: {
+      key: 'sessionsPerWeek',
+      label: (t) => t('onboarding.load.sessionsPerWeek'),
+      options: ['1', '2', '3', '4', '5+'],
+    },
   },
   {
     kind: 'choice',
     key: 'challenge',
     act: 1,
-    title: 'What’s hardest right now, {name}?',
-    blurb: 'Up to two. The plan leans toward whatever you pick.',
+    title: (t) => t('onboarding.challenge.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.challenge.blurb'),
     multi: true,
     max: 2,
     options: [
-      { value: 'painfree', label: 'Staying pain-free', icon: ShieldEnergyIcon, accent: 'teal' },
-      { value: 'back', label: 'Getting back to running', icon: WorkoutRunIcon, accent: 'blue' },
-      { value: 'distance', label: 'Increasing distance', icon: ChartIncreaseIcon, accent: 'violet' },
-      { value: 'recovery', label: 'Recovering faster', icon: Moon02Icon, accent: 'amber' },
-      { value: 'strength', label: 'Getting stronger', icon: Dumbbell01Icon, accent: 'orange' },
-      { value: 'injury', label: 'Avoiding another injury', icon: Target01Icon, accent: 'teal' },
+      { value: 'painfree', label: (t) => t('onboarding.challenge.painfree'), icon: ShieldEnergyIcon, accent: 'teal' },
+      { value: 'back', label: (t) => t('onboarding.challenge.back'), icon: WorkoutRunIcon, accent: 'blue' },
+      { value: 'distance', label: (t) => t('onboarding.challenge.distance'), icon: ChartIncreaseIcon, accent: 'violet' },
+      { value: 'recovery', label: (t) => t('onboarding.challenge.recovery'), icon: Moon02Icon, accent: 'amber' },
+      { value: 'strength', label: (t) => t('onboarding.challenge.strength'), icon: Dumbbell01Icon, accent: 'orange' },
+      { value: 'injury', label: (t) => t('onboarding.challenge.injury'), icon: Target01Icon, accent: 'teal' },
     ],
   },
   {
     kind: 'health',
     key: 'health',
     act: 2,
-    title: 'Connect your Health data',
-    blurb: 'So your plan starts from what you have actually been doing.',
+    title: (t) => t('onboarding.health.title'),
+    blurb: (t) => t('onboarding.health.blurb'),
     // Gone entirely on a device with no HealthKit — iPad, and the older
     // simulator runtimes. The screen used to appear and explain that it could
     // not work, which is a step the user has to read and dismiss to learn
@@ -385,11 +429,11 @@ export const STEPS: readonly OnboardingStep[] = [
     kind: 'watch',
     key: 'watch',
     act: 2,
-    title: 'Do you wear a watch?',
+    title: (t) => t('onboarding.watch.title'),
     // Deliberately not a promise. Mobility comes from the phone, so this
     // answer buys the user nothing they would otherwise miss — it only decides
     // whether we owe them a set-up instruction.
-    blurb: 'Only so we know whether anything needs connecting.',
+    blurb: (t) => t('onboarding.watch.blurb'),
     options: WATCH_OPTIONS,
     skipWhen: () => !healthAvailable(),
   },
@@ -397,8 +441,8 @@ export const STEPS: readonly OnboardingStep[] = [
     kind: 'watch-sync',
     key: 'watch-sync',
     act: 2,
-    title: 'Turn on Health sync',
-    blurb: 'One switch inside the app you already use.',
+    title: (t) => t('onboarding.watchSync.title'),
+    blurb: (t) => t('onboarding.watchSync.blurb'),
     // The only two answers with a switch to find. Apple Watch is already
     // wired, and someone with no watch has nothing to set up — showing either
     // of them a how-to for an app they do not have is a screen that reads as
@@ -409,8 +453,8 @@ export const STEPS: readonly OnboardingStep[] = [
     kind: 'notify',
     key: 'notify',
     act: 2,
-    title: 'Turn on notifications',
-    blurb: 'So your plan can tell you when it needs you.',
+    title: (t) => t('onboarding.notify.title'),
+    blurb: (t) => t('onboarding.notify.blurb'),
   },
   {
     kind: 'building',
@@ -419,30 +463,30 @@ export const STEPS: readonly OnboardingStep[] = [
     // Both are bookkeeping only: the screen is a photograph with its own three
     // lines on it, and it goes through neither the shared heading block nor
     // the shared button bar.
-    title: 'Building your plan',
-    blurb: 'Folding everything you told me into week one.',
+    title: (t) => t('onboarding.building.title'),
+    blurb: (t) => t('onboarding.building.blurb'),
   },
   {
     kind: 'plan',
     key: 'plan',
     act: 3,
-    title: 'Your plan',
-    blurb: 'Built from your answers.',
+    title: (t) => t('onboarding.plan.title'),
+    blurb: (t) => t('onboarding.plan.blurb'),
   },
   {
     kind: 'contract',
     key: 'contract',
     act: 3,
-    title: 'Let’s make a contract, {name}',
-    blurb: 'Not with me. With yourself.',
+    title: (t) => t('onboarding.contract.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.contract.blurb'),
   },
   {
     // Writes its own heading, so the shared title and blurb are unused here.
     kind: 'social',
     key: 'social',
     act: 3,
-    title: '',
-    blurb: '',
+    title: UNUSED,
+    blurb: UNUSED,
   },
   {
     /**
@@ -457,8 +501,8 @@ export const STEPS: readonly OnboardingStep[] = [
     kind: 'referral',
     key: 'referral',
     act: 3,
-    title: 'Have a referral code?',
-    blurb: `Enter it and you both get ${REFERRAL_DISCOUNT_PERCENT}% off your plan.`,
+    title: (t) => t('onboarding.referral.title'),
+    blurb: (t) => t('onboarding.referral.blurb', { percent: REFERRAL_DISCOUNT_PERCENT }),
   },
 ];
 

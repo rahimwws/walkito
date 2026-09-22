@@ -16,6 +16,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { TypedText } from '@/shared/ui/typed-text';
 
@@ -75,6 +76,7 @@ export function IntroStep({ greeting, headline, signInFailed, onReady, squash }:
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
+  const t = useT();
 
   /** 0 greeting typing · 1 greeting demotes · 2 headline typing · 3 done */
   const [phase, setPhase] = useState(0);
@@ -189,7 +191,7 @@ export function IntroStep({ greeting, headline, signInFailed, onReady, squash }:
           <Text
             accessibilityLiveRegion="polite"
             style={[styles.greeting, { color: meter.caption }]}>
-            Sign-in didn’t complete. Try again.
+            {t('onboarding.intro.signInFailed')}
           </Text>
         )}
       </View>

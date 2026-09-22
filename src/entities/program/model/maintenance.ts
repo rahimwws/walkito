@@ -10,6 +10,8 @@
  * comes out. Nothing here reads the clock or storage.
  */
 
+import { getLanguage, translatorFor, type Translate } from '@/shared/lib/i18n';
+import { blockName } from './program';
 import type { ResolvedDay, ResolvedExercise } from './adapt';
 import { BLOCK_LENGTH, lastDayOf, type PlanLength } from './blocks';
 import { slotFor } from './day-templates';
@@ -229,27 +231,31 @@ export type TransitionInput = {
  * two is a gap in the layout, not an empty string in this array — a renderer
  * that gets one of those has to decide what an empty paragraph is worth.
  */
-export function maintenanceTransitionLines(input: TransitionInput): readonly string[] {
+export function maintenanceTransitionLines(
+  input: TransitionInput,
+  t: Translate = translatorFor(getLanguage()),
+): readonly string[] {
   const { name, calfBefore, calfAfter } = input;
   const called = name.trim();
   // With no name the sentence simply starts, the same way the morning brief
   // handles it. "You’re through." reads as written; a lower-case opening with
   // the name lopped off does not.
-  const opening = called.length > 0 ? `${called}, you’re through.` : 'You’re through.';
+  const opening =
+    called.length > 0 ? t('maintenance.throughNamed', { name: called }) : t('maintenance.through');
 
   // The arrow sentence is dropped rather than reworded when the number did not
   // actually go up. "↗ from 24 to 24" would be the app inventing a result, and
   // the user it lies to is precisely the one who already knows.
   const first =
     calfBefore != null && calfAfter != null && calfAfter > calfBefore
-      ? `${opening} Your calf went ↗ from ${Math.round(calfBefore)} to ${Math.round(calfAfter)}.`
+      ? t('maintenance.calfGain', {
+          opening,
+          before: Math.round(calfBefore),
+          after: Math.round(calfAfter),
+        })
       : opening;
 
-  return [
-    first,
-    'About half of people lose this again within five years.',
-    'Two sessions a week is how you stay in the other half.',
-  ];
+  return [first, t('maintenance.relapse'), t('maintenance.staying')];
 }
 
 /** Consecutive days above the maintenance pain baseline that count as a slip. */
@@ -264,7 +270,9 @@ export const REGRESSION_PAIN_DAYS = 7;
  * their numbers slipping means anything, and nothing here restarts a plan on
  * their behalf.
  */
-export const REGRESSION_COPY = 'Your numbers slipped. Want to run Build again?';
+export function regressionCopy(t: Translate = translatorFor(getLanguage())): string {
+  return t('maintenance.regression', { block: blockName(REGRESSION_TARGET_BLOCK) });
+}
 export const REGRESSION_TARGET_BLOCK = 4;
 
 export type RegressionInput = {

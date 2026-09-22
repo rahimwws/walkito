@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Animated, { FadeInDown, ReduceMotion } from 'react-native-reanimated';
 
 import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import type { PlanSummary } from '../model/plan-summary';
@@ -32,6 +33,7 @@ export function PlanStep({ summary }: PlanStepProps) {
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const accent = accents[scheme].violet;
+  const t = useT();
 
   return (
     <View style={styles.wrap}>
@@ -46,7 +48,10 @@ export function PlanStep({ summary }: PlanStepProps) {
           .duration(380)
           .reduceMotion(ReduceMotion.System)}
         style={[styles.meta, { color: colors.foreground }]}>
-        {summary.weeks} weeks · {summary.strengthDays} sessions a week
+        {t('onboarding.plan.meta', {
+          count: summary.weeks,
+          sessions: summary.strengthDays,
+        })}
       </Animated.Text>
 
       {summary.reflection != null && (

@@ -1,4 +1,5 @@
 import { BLOCK_LENGTH, PROGRAM_LENGTH, blockName, type ProgramDay } from '@/entities/program';
+import type { Translate } from '@/shared/lib/i18n';
 
 import {
   CAPTION_GAP,
@@ -39,9 +40,13 @@ const WEEK = 7;
  * undifferentiated run, and the user has no way to feel how far a scroll
  * actually went.
  */
-function dividerLabel(day: ProgramDay): string {
-  if (day.day % BLOCK_LENGTH === 1) return `Block ${day.block} · ${blockName(day.block)}`;
-  return `Week ${Math.ceil(day.day / WEEK)}`;
+function dividerLabel(day: ProgramDay, t: Translate): string {
+  // `{name}` stays English whatever the language — `blockName()` belongs to
+  // `entities/program` and has no catalogue behind it yet.
+  if (day.day % BLOCK_LENGTH === 1) {
+    return t('progress.blockDivider', { block: day.block, name: blockName(day.block) });
+  }
+  return t('progress.weekDivider', { week: Math.ceil(day.day / WEEK) });
 }
 
 export type PathLayout = {
@@ -73,7 +78,7 @@ function sizeFor(day: ProgramDay, base: number): number {
  */
 export function layoutPath(
   days: readonly ProgramDay[],
-  { width, cursor }: { width: number; cursor: number },
+  { width, cursor, t }: { width: number; cursor: number; t: Translate },
 ): PathLayout {
   const centerX = width / 2;
   const widest = NODE_SIZE * FINISH_SCALE;
@@ -89,7 +94,7 @@ export function layoutPath(
       if (day.day % WEEK === 1) {
         dividers.push({
           day: day.day,
-          label: dividerLabel(day),
+          label: dividerLabel(day, t),
           y: y + (NODE_STEP + air + DIVIDER_GAP) / 2,
         });
         y += NODE_STEP + air + DIVIDER_GAP;

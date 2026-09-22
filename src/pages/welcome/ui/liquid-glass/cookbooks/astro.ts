@@ -84,20 +84,7 @@ export const ASTRO_THEME: CookbookTheme = {
   },
   blurTint: 'dark',
   statusBar: 'light',
-  copy: {
-    hint: 'Swipe up to enter',
-    // "Train ~~support~~ your feet" — the struck word is the promise the
-    // category makes and this one does not. The line under it rotates, so the
-    // same claim is aimed at a different reason to care each time round.
-    headline: 'Train',
-    struck: 'support',
-    kept: 'your feet',
-    phrases: [
-      'that hurt every morning',
-      'after 3 pairs of insoles',
-      'so your next long run doesn’t cost you a week',
-      'so you can run again',
-    ],
-    cta: 'Let’s go',
-  },
+  // No `copy` here. The words are a prop now — `pages.welcome.*` in the
+  // catalogue, assembled in `ui/welcome-page.tsx` — because this screen is the
+  // first thing a new user sees and it has to be in their language.
 };

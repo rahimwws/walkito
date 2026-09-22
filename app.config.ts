@@ -171,6 +171,12 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       // каждом prebuild, так что руками после регенерации ios/ ничего делать
       // не надо.
       ['expo-build-properties', { ios: { usePrecompiledModules: false } }],
+      // Локали устройства — по ним выбирается язык по умолчанию. Сам плагин
+      // ничего не конфигурирует; он нужен, чтобы нативный модуль попал в сборку
+      // при prebuild. JS тянет его через require в try/catch
+      // (`shared/lib/i18n/store.ts`), поэтому бинарник, собранный до установки
+      // пакета, откатится на английский, а не упадёт на старте.
+      'expo-localization',
     ],
   };
 };

@@ -20,6 +20,7 @@ import {
   blockFor,
   currentDay,
   daysSinceLastSession,
+  exerciseCategoryLabel,
   hoursBaseline,
   hoursOnFeetOn,
   kindFor,
@@ -36,6 +37,7 @@ import {
   type ProgramDay,
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
+import { useT, type Translate } from '@/shared/lib/i18n';
 import { PROGRAM_MS } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
 import { doseSeconds } from '@/widgets/session-player';
@@ -53,19 +55,24 @@ const HEADING_LINE = 28;
 const MASCOT_SIZE = 64;
 
 /**
- * The four things a day here is made of.
+ * How each of the four kinds of day presents itself here.
  *
  * A category is not a folder, it is a promise about effort: Fitness asks
  * something of you, Mobility asks less, Recovery asks nothing and Habit asks
  * only that you remember. The colour is what lets that be read down the column
  * without reading a word — and it names the kind, never rates it.
+ *
+ * Colour and glyph only. The *word* comes from `exerciseCategoryLabel`, which
+ * is the catalogue's own translation of the same four categories — a second
+ * copy of them under `home.` would be two places to change and one place to
+ * forget.
  */
 const CATEGORIES = {
-  fitness: { label: 'Fitness', accent: 'violet' as AccentName, icon: BarbellIcon },
-  mobility: { label: 'Mobility', accent: 'teal' as AccentName, icon: WavesIcon },
-  recovery: { label: 'Recovery', accent: 'amber' as AccentName, icon: MoonIcon },
-  habit: { label: 'Habit', accent: 'blue' as AccentName, icon: ArrowsClockwiseIcon },
-} satisfies Record<string, { label: string; accent: AccentName; icon: Icon }>;
+  fitness: { accent: 'violet' as AccentName, icon: BarbellIcon },
+  mobility: { accent: 'teal' as AccentName, icon: WavesIcon },
+  recovery: { accent: 'amber' as AccentName, icon: MoonIcon },
+  habit: { accent: 'blue' as AccentName, icon: ArrowsClockwiseIcon },
+} satisfies Record<string, { accent: AccentName; icon: Icon }>;
 
 type CategoryKey = keyof typeof CATEGORIES;
 
@@ -87,7 +94,14 @@ const CATEGORY_KEYS: Readonly<Record<ExerciseCategory, CategoryKey>> = {
 export type Task = {
   id: string;
   title: string;
-  category: CategoryKey;
+  /**
+   * The catalogue's own category, not this list's key for it.
+   *
+   * Kept in the entity's vocabulary so the word on the row can be asked of the
+   * entity that owns it, at render time and therefore in the current language.
+   * `CATEGORY_KEYS` turns it into the colour and the glyph.
+   */
+  category: ExerciseCategory;
   /**
    * A duration or a time, shown as a chip.
    *
@@ -122,7 +136,7 @@ export type Task = {
  * would be inventing a second source of truth next to the one the session
  * header already prints.
  */
-function tasksForToday(): { tasks: readonly Task[]; retest: boolean } {
+function tasksForToday(t: Translate): { tasks: readonly Task[]; retest: boolean } {
   const dayNumber = currentDay();
   const state = programState();
   const block = blockFor(dayNumber, state.planLength);
@@ -151,13 +165,13 @@ function tasksForToday(): { tasks: readonly Task[]; retest: boolean } {
     tasks: resolved.exercises.map(({ exercise, prescription }): Task => ({
       id: exercise.id,
       title: exercise.title,
-      category: CATEGORY_KEYS[exercise.category],
+      category: exercise.category,
       // This exercise's length, not the session's. It used to print
       // `resolved.minutes`, which is how long the whole list takes — so a
       // hundred-second stretch, a ninety-second one and a set of ten all
       // claimed seven minutes each, and the three of them together claimed
       // twenty-one.
-      chip: chipFor(prescription),
+      chip: chipFor(prescription, t),
       dose: prescription?.label,
     })),
   };
@@ -177,11 +191,14 @@ function tasksForToday(): { tasks: readonly Task[]; retest: boolean } {
  * gets no chip rather than a guess, which is the same thing the player does
  * with it.
  */
-function chipFor(prescription: Prescription | null | undefined): string | undefined {
+function chipFor(
+  prescription: Prescription | null | undefined,
+  t: Translate,
+): string | undefined {
   const seconds = doseSeconds(prescription ?? null);
   if (seconds == null || seconds <= 0) return undefined;
-  if (seconds < 60) return `${Math.round(seconds)}s`;
-  return `${Math.round(seconds / 60)} min`;
+  if (seconds < 60) return t('home.chipSeconds', { count: Math.round(seconds) });
+  return t('home.chipMinutes', { count: Math.round(seconds / 60) });
 }
 
 /**
@@ -196,6 +213,7 @@ export function TodayTasks() {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
+  const t = useT();
   /** Which task's player is up. The task itself is the state — there is nothing
    * to know about the sheet the task does not already say. */
   const [open, setOpen] = useState<Task | null>(null);
@@ -236,12 +254,13 @@ export function TodayTasks() {
     [logsVersion],
   );
   const { tasks, retest } = useMemo(() => {
-    return tasksForToday();
-    // Both are versions rather than inputs — the resolver reads the log and the
-    // state itself, and the log map is mutated in place, so these two are the
-    // only things that can tell React the answer has moved.
+    return tasksForToday(t);
+    // The first two are versions rather than inputs — the resolver reads the
+    // log and the state itself, and the log map is mutated in place, so they
+    // are the only things that can tell React the answer has moved. `t` is a
+    // real input: the titles and the chips are both written in its language.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [logsVersion, state]);
+  }, [logsVersion, state, t]);
 
   /**
    * Unfinished first, in their original order; finished sink to the bottom.
@@ -300,7 +319,10 @@ export function TodayTasks() {
   return (
     <View style={styles.root}>
       <View style={styles.headingRow}>
-        <Text style={[styles.heading, { color: colors.foreground }]}>Today&apos;s Tasks</Text>
+        {/* A real apostrophe, from the catalogue. This read `Today&apos;s
+            Tasks`: React Native does not decode HTML entities, so the heading
+            was literally printing "Today&apos;s Tasks" on the screen. */}
+        <Text style={[styles.heading, { color: colors.foreground }]}>{t('home.tasksTitle')}</Text>
         {/* Decoration, and only decoration — it says nothing the list does not
             already say, so it is hidden from anyone listening rather than read
             out as an unnamed image between a heading and its rows. */}
@@ -322,10 +344,10 @@ export function TodayTasks() {
           <View style={[styles.allDoneDot, { backgroundColor: meter.positive }]} />
           <View style={styles.allDoneText}>
             <Text style={[styles.allDoneTitle, { color: colors.foreground }]}>
-              Done for today
+              {t('home.allDoneTitle')}
             </Text>
             <Text style={[styles.allDoneBlurb, { color: meter.caption }]}>
-              Nothing else is needed. The next session unlocks after twelve hours&apos; rest.
+              {t('home.allDoneBlurb')}
             </Text>
           </View>
         </View>
@@ -339,8 +361,11 @@ export function TodayTasks() {
         {ordered.length === 0 && (
           <Text style={[styles.title, { color: meter.caption }]}>
             {retest
-              ? `Retest day. ${RETEST_TESTS} tests, about ${RETEST_MINUTES} minutes.`
-              : 'Nothing scheduled today. Rest counts.'}
+              ? t('home.retestDay', {
+                  tests: t('home.tests', { count: RETEST_TESTS }),
+                  minutes: t('home.minutes', { count: RETEST_MINUTES }),
+                })
+              : t('home.nothingScheduled')}
           </Text>
         )}
         {ordered.map((task) => (
@@ -419,7 +444,8 @@ function TaskRow({
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
-  const category = CATEGORIES[task.category];
+  const t = useT();
+  const category = CATEGORIES[CATEGORY_KEYS[task.category]];
   const tone = accents[scheme][category.accent];
   const Glyph = category.icon;
 
@@ -432,7 +458,9 @@ function TaskRow({
    * but a third line would turn a two-line row into a three-line one and cost
    * the list its rhythm. The separator is what lets one line hold both.
    */
-  const subtitle = task.dose != null ? `${category.label} · ${task.dose}` : category.label;
+  const label = exerciseCategoryLabel(task.category);
+  const subtitle =
+    task.dose != null ? t('home.taskSubtitle', { category: label, dose: task.dose }) : label;
 
   return (
     <Pressable
@@ -441,7 +469,7 @@ function TaskRow({
       // The dose is read out with the rest of the line. Stopping at the
       // category would leave a screen reader user the only person on this row
       // who cannot hear how many.
-      accessibilityLabel={`${task.title}. ${subtitle}`}
+      accessibilityLabel={t('home.taskA11y', { title: task.title, subtitle })}
       onPress={onOpen}
       style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}>
       <View style={styles.copy}>
@@ -475,7 +503,7 @@ function TaskRow({
         <Pressable
           accessibilityRole="checkbox"
           accessibilityState={{ checked: done }}
-          accessibilityLabel={done ? 'Mark not done' : 'Mark done'}
+          accessibilityLabel={done ? t('home.markNotDone') : t('home.markDone')}
           onPress={onToggle}
           hitSlop={8}
           style={({ pressed }) => [

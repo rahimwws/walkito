@@ -37,6 +37,12 @@ Only the "astro" night-sky cookbook. Upstream's "sky" variant and its ~6MB
 video are not here, and `assets.ts`, `registry.ts` and `types.ts` were trimmed
 accordingly — those three are therefore *modified* GPL files.
 
+`types.ts`, `cookbooks/astro.ts` and `liquid-glass-screen.tsx` are modified
+again for translation: the screen's words are a `CookbookCopy` prop rather than
+a field on the theme, so they can come out of `pages.welcome.*` in the i18n
+catalogue. `ui/welcome-page.tsx` — ours, outside this folder — is what builds
+them.
+
 Artwork lives at `assets/liquid-glass/astro/`: a starfield, a glow plate, a
 chrome wordmark, and 24 stickers.
 

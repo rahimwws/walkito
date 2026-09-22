@@ -25,35 +25,50 @@ import {
  * score (which every user has), walking speed (which every iPhone has), and
  * only then the watch-only signals.
  */
-export type BriefState =
+export const BRIEF_STATES = [
   // Pain, the user's own report. Always outranks any sensor.
-  | 'flare'
-  | 'pain-spike'
+  'flare',
+  'pain-spike',
   // Structure of the programme.
-  | 'retest'
-  | 'checkpoint-recap'
-  | 'first-week'
+  'retest',
+  'checkpoint-recap',
+  'first-week',
   // Load, from what actually happened.
-  | 'big-run'
-  | 'stairs'
-  | 'on-feet'
+  'big-run',
+  'stairs',
+  'on-feet',
   // Recovery, watch-only.
-  | 'poor-sleep'
-  | 'resting-hr'
+  'poor-sleep',
+  'resting-hr',
   // Gait, demoted.
-  | 'slower-walk'
-  | 'gait-change'
+  'slower-walk',
+  'gait-change',
   // Good news, gated behind a quiet pain day.
-  | 'done'
-  | 'returning'
-  | 'pain-down'
-  | 'walk-back'
-  | 'gait-recovered'
+  'done',
+  'returning',
+  'pain-down',
+  'walk-back',
+  'gait-recovered',
   // Honest emptiness.
-  | 'no-data'
-  | 'learning'
-  // Everything else, which is most days. Rotates by topic.
-  | 'quiet';
+  'no-data',
+  'learning',
+  // Everything else, which is most days.
+  //
+  // One state per topic rather than a single `quiet` that the copy layer then
+  // re-dispatched on. The rotation and the one live condition inside it — was
+  // yesterday a big day on foot? — are decisions about *which* sentence, and
+  // this file is where those are made; downstream there is a flat lookup and
+  // no branching left.
+  'quiet-session',
+  'quiet-progress',
+  'quiet-load-big',
+  'quiet-load-light',
+  'quiet-shoes',
+  'quiet-cadence',
+  'quiet-horizon',
+] as const;
+
+export type BriefState = (typeof BRIEF_STATES)[number];
 
 /** Pain at or above this is a flare: today becomes three minutes, sitting. */
 const FLARE = 7;
@@ -136,6 +151,30 @@ export function meanPain(from: number, to: number, cursor: number): number | nul
 }
 
 /**
+ * Today's state, and the two figures the sentences about it quote.
+ *
+ * The figures live here because this is where they are already computed. The
+ * copy layer used to call `meanPain` a second time to derive them, which is one
+ * comparison window defined in two files — so a change to `HALF_MIN` or to
+ * `MONTH` could move the state without moving the number the state's own
+ * sentence prints.
+ */
+export type BriefReading = {
+  state: BriefState;
+  /**
+   * Points today's pain sits above the last seven days' mean, rounded.
+   *
+   * Only meaningful under `pain-spike`; `PAIN_MID` when there is no honest
+   * week to compare against, which is the smallest jump the app will call a
+   * jump at all.
+   */
+  jump: number;
+  /** Points the last fortnight sits below the fortnight before it, rounded.
+   * Only meaningful under `pain-down`, and defaulted the same way. */
+  drop: number;
+};
+
+/**
  * Which state today is in. First match wins.
  *
  * The ordering encodes one rule above all others: the person outranks the
@@ -143,7 +182,7 @@ export function meanPain(from: number, to: number, cursor: number): number | nul
  * itself labels *estimated* may never speak over someone's own report of their
  * own body.
  */
-export function briefState({
+export function readBrief({
   cursor,
   todayPain,
   doneToday,
@@ -152,46 +191,57 @@ export function briefState({
   daysAway = 0,
   hoursOnFeet = null,
   onFeetThreshold = null,
-}: BriefInput): BriefState {
+}: BriefInput): BriefReading {
   const day: ProgramDay | undefined = PROGRAM[cursor];
   const pain = todayPain ?? painFor(cursor);
   const week = meanPain(cursor - 7, cursor, cursor);
+  // Both halves of the month, computed once whether or not today's state ends
+  // up quoting them. Thirty iterations of an array read is cheaper than the
+  // class of bug that comes from computing a window twice.
+  const month = meanPain(cursor - MONTH, cursor - MONTH / 2, cursor);
+  const recent = meanPain(cursor - MONTH / 2, cursor, cursor);
+
+  const jump = week != null ? Math.round(pain - week) : PAIN_MID;
+  const drop = month != null && recent != null ? Math.round(month - recent) : PAIN_MID;
+  const reading = (state: BriefState): BriefReading => ({ state, jump, drop });
 
   // --- 1-2. The user's own report ----------------------------------------
-  if (pain >= FLARE) return 'flare';
-  if (week != null && pain - week >= PAIN_MID) return 'pain-spike';
+  if (pain >= FLARE) return reading('flare');
+  if (week != null && pain - week >= PAIN_MID) return reading('pain-spike');
 
   // --- 3-4. The programme's own structure --------------------------------
   // Week 4 and week 8 are the evidence-based reassessment points for a
   // programme this length, not arbitrary ones, so they get to interrupt.
-  if (day?.checkpoint === true) return 'retest';
+  if (day?.checkpoint === true) return reading('retest');
 
   // --- 5-7. Load, from what actually happened ----------------------------
   // A single run longer than anything in the past month. Per-session, because
   // daily step count is not running load and no study here treats it as one.
-  if (health.bigRunYesterday) return 'big-run';
-  if (health.flightsRatio != null && health.flightsRatio > FLIGHTS_SPIKE_RATIO) return 'stairs';
+  if (health.bigRunYesterday) return reading('big-run');
+  if (health.flightsRatio != null && health.flightsRatio > FLIGHTS_SPIKE_RATIO) {
+    return reading('stairs');
+  }
   // The predictive line: still inside today, before it has gone wrong.
   if (hoursOnFeet != null && onFeetThreshold != null && hoursOnFeet >= onFeetThreshold - 1) {
-    return 'on-feet';
+    return reading('on-feet');
   }
 
   // --- 8-9. Recovery, watch only -----------------------------------------
-  if (health.sleepShort) return 'poor-sleep';
-  if (health.restingHRElevated) return 'resting-hr';
+  if (health.sleepShort) return reading('poor-sleep');
+  if (health.restingHRElevated) return reading('resting-hr');
 
   // --- 10-11. Gait, demoted ----------------------------------------------
   // Walking speed first: it is the best-measured mobility metric Apple ships,
   // the one an iPhone-only user is most likely to have, and it works for a
   // bilateral user, which asymmetry cannot.
-  if (health.walkingSpeedTrend === 'slower') return 'slower-walk';
+  if (health.walkingSpeedTrend === 'slower') return reading('slower-walk');
   if (health.asymmetryElevatedDays >= ELEVATED_DAYS && health.asymmetryDeltaPP != null) {
-    return 'gait-change';
+    return reading('gait-change');
   }
 
   // --- 12-13. Done, and coming back --------------------------------------
-  if (doneToday) return 'done';
-  if (daysAway >= AWAY_DAYS) return 'returning';
+  if (doneToday) return reading('done');
+  if (daysAway >= AWAY_DAYS) return reading('returning');
 
   // --- Everything below is upbeat and gated on a quiet morning. ----------
   // Ordering alone would not be enough: a pain of 6 clears the flare check,
@@ -200,32 +250,35 @@ export function briefState({
   const quiet = pain < NO_CHEER_AT;
 
   if (quiet) {
-    const month = meanPain(cursor - MONTH, cursor - MONTH / 2, cursor);
-    const recent = meanPain(cursor - MONTH / 2, cursor, cursor);
-    if (month != null && recent != null && month - recent >= PAIN_MID) return 'pain-down';
-    if (health.walkingSpeedJustRecovered) return 'walk-back';
-    if (health.asymmetryJustNormalised) return 'gait-recovered';
+    if (month != null && recent != null && month - recent >= PAIN_MID) return reading('pain-down');
+    if (health.walkingSpeedJustRecovered) return reading('walk-back');
+    if (health.asymmetryJustNormalised) return reading('gait-recovered');
   }
 
-  if (cursor < EARLY_DAYS) return 'first-week';
+  if (cursor < EARLY_DAYS) return reading('first-week');
   // A block boundary is a real change of character in the plan. Asked of the
   // blocks themselves rather than of the day number modulo a length, because
   // that arithmetic only agrees while every block is the same size.
   if (quiet && day != null && PLAN_BLOCKS.some((block) => block.startDay === day.day)) {
-    return 'checkpoint-recap';
+    return reading('checkpoint-recap');
   }
 
   // --- Honest emptiness, held back a week --------------------------------
   // Telling someone on day two that we cannot read their walk is true and
   // useless: we have not had time to try.
   if (daysInstalled >= EARLY_DAYS) {
-    if (health.availability === 'none') return 'no-data';
-    if (health.availability === 'learning') return 'learning';
+    if (health.availability === 'none') return reading('no-data');
+    if (health.availability === 'learning') return reading('learning');
   }
 
-  // Most days land here, which is why `quiet` is not one sentence but a
-  // rotation of six topics — see `QUIET_TOPICS` in the copy.
-  return 'quiet';
+  // Most days land here, which is why this is a rotation of six topics rather
+  // than one sentence.
+  return reading(quietState(cursor, health));
+}
+
+/** Today's state alone, for the callers that do not quote a figure. */
+export function briefState(input: BriefInput): BriefState {
+  return readBrief(input).state;
 }
 
 /** A neutral observation, not a warning: yesterday was a big day on foot. Used
@@ -265,4 +318,31 @@ export type QuietTopic = (typeof QUIET_TOPICS)[number];
 
 export function quietTopic(cursor: number): QuietTopic {
   return pick(QUIET_TOPICS, cursor);
+}
+
+/**
+ * The quiet topic today, resolved to a state.
+ *
+ * Six topics, seven states: `load` is the one that still has a question to
+ * answer once it has been chosen — was yesterday heavy on foot or light? That
+ * used to be asked in the copy file, which meant a sentence was selected by a
+ * `switch` in one module and a live health reading in another. It is one
+ * decision and it belongs to one file.
+ */
+function quietState(cursor: number, health: HealthSignals): BriefState {
+  switch (quietTopic(cursor)) {
+    case 'session':
+      return 'quiet-session';
+    case 'progress':
+      return 'quiet-progress';
+    case 'load':
+      return bigStepDay(health) ? 'quiet-load-big' : 'quiet-load-light';
+    case 'shoes':
+      return 'quiet-shoes';
+    case 'cadence':
+      return 'quiet-cadence';
+    case 'horizon':
+    default:
+      return 'quiet-horizon';
+  }
 }

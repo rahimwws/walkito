@@ -24,14 +24,15 @@ import {
   type HealthSummary,
 } from '@/entities/health';
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
+import { useT, type Translate } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 /** The three figures we ask for, in the order Apple's own sheet lists them. */
 const ROWS = [
-  { key: 'steps', label: 'Steps', icon: FootprintsIcon, color: '#38BDF8' },
-  { key: 'calories', label: 'Active Energy', icon: FireIcon, color: '#FB7185' },
-  { key: 'heartRate', label: 'Heart Rate', icon: HeartIcon, color: '#F472B6' },
+  { key: 'steps', label: 'onboarding.health.steps', icon: FootprintsIcon, color: '#38BDF8' },
+  { key: 'calories', label: 'onboarding.health.calories', icon: FireIcon, color: '#FB7185' },
+  { key: 'heartRate', label: 'onboarding.health.heartRate', icon: HeartIcon, color: '#F472B6' },
 ] as const;
 
 export type HealthStepProps = {
@@ -68,6 +69,7 @@ export function HealthStep({ name, summary, onConnected, onNext, onSkip }: Healt
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
+  const t = useT();
 
   const [busy, setBusy] = useState(false);
   /** How the last attempt went, so the status line can say which of the four
@@ -87,11 +89,11 @@ export function HealthStep({ name, summary, onConnected, onNext, onSkip }: Healt
    */
   const status =
     !available
-      ? 'Health isn’t available here — you can carry on without it.'
+      ? t('onboarding.health.unavailable')
       : outcome === 'declined'
-        ? 'Health access was declined. Your plan will work without it.'
+        ? t('onboarding.health.declined')
         : outcome === 'empty'
-          ? 'Connected — no data yet. It will fill in as you move.'
+          ? t('onboarding.health.empty')
           : null;
 
   const connect = async () => {
@@ -119,11 +121,12 @@ export function HealthStep({ name, summary, onConnected, onNext, onSkip }: Healt
   return (
     <View style={styles.wrap}>
       <Text style={[styles.title, { color: colors.foreground }]}>
-        {name.trim().length > 0 ? `Fill me in, ${name.trim()}!` : 'Fill me in!'}
+        {name.trim().length > 0
+          ? t('onboarding.health.askNamed', { name: name.trim() })
+          : t('onboarding.health.ask')}
       </Text>
       <Text style={[styles.blurb, { color: meter.caption }]}>
-        Walkito reads your steps, energy and heart rate so the plan starts from what you
-        have actually been doing — not what you meant to do.
+        {t('onboarding.health.askBlurb')}
       </Text>
 
       <View style={[styles.card, { backgroundColor: colors.card }]}>
@@ -138,14 +141,16 @@ export function HealthStep({ name, summary, onConnected, onNext, onSkip }: Healt
                 i > 0 && { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: meter.track },
               ]}>
               <Glyph size={22} color={row.color} weight="fill" />
-              <Text style={[styles.rowLabel, { color: colors.foreground }]}>{row.label}</Text>
+              <Text style={[styles.rowLabel, { color: colors.foreground }]}>{t(row.label)}</Text>
               {/* Before connecting this column is empty rather than showing a
                   zero — a zero is a reading, and we have not taken one. */}
               {connected && (
                 <Animated.Text
                   entering={FadeIn.duration(260).reduceMotion(ReduceMotion.System)}
                   style={[styles.rowValue, { color: value == null ? meter.unit : colors.foreground }]}>
-                  {value == null ? 'Not shared' : formatValue(row.key, value)}
+                  {value == null
+                    ? t('onboarding.health.notShared')
+                    : formatValue(t, row.key, value)}
                 </Animated.Text>
               )}
               <Switch index={i} track={meter.track} />
@@ -160,14 +165,20 @@ export function HealthStep({ name, summary, onConnected, onNext, onSkip }: Healt
             a permanently disabled "Connected" sitting under a screen with no
             other control was a dead end with a tick on it. */}
         <PrimaryButton
-          label={connected ? 'Next' : busy ? 'Opening Health…' : 'Connect to Health'}
+          label={
+            connected
+              ? t('onboarding.cta.next')
+              : busy
+                ? t('onboarding.health.opening')
+                : t('onboarding.health.connect')
+          }
           onPress={connected ? onNext : connect}
           disabled={busy || (!available && !connected)}
         />
         <View style={styles.promise}>
           <LockSimpleIcon size={14} color={meter.caption} weight="fill" />
           <Text style={[styles.promiseText, { color: meter.caption }]}>
-            Your health data never leaves this device.
+            {t('onboarding.health.promise')}
           </Text>
         </View>
         {status != null && (
@@ -184,7 +195,9 @@ export function HealthStep({ name, summary, onConnected, onNext, onSkip }: Healt
             onPress={onSkip}
             hitSlop={10}
             style={({ pressed }) => [styles.skip, pressed && { opacity: 0.5 }]}>
-            <Text style={[styles.skipText, { color: meter.caption }]}>Skip for now</Text>
+            <Text style={[styles.skipText, { color: meter.caption }]}>
+              {t('onboarding.cta.skipForNow')}
+            </Text>
           </Pressable>
         )}
       </View>
@@ -192,10 +205,18 @@ export function HealthStep({ name, summary, onConnected, onNext, onSkip }: Healt
   );
 }
 
-function formatValue(key: (typeof ROWS)[number]['key'], value: number): string {
-  if (key === 'steps') return value >= 1000 ? `${(value / 1000).toFixed(1)}k` : String(value);
-  if (key === 'calories') return `${value} kcal`;
-  return `${value} bpm`;
+function formatValue(
+  t: Translate,
+  key: (typeof ROWS)[number]['key'],
+  value: number,
+): string {
+  if (key === 'steps') {
+    return value >= 1000
+      ? t('onboarding.health.thousands', { value: (value / 1000).toFixed(1) })
+      : String(value);
+  }
+  if (key === 'calories') return t('onboarding.health.kcal', { value });
+  return t('onboarding.health.bpm', { value });
 }
 
 /** Staggered so the three read as one gesture settling rather than three

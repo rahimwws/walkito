@@ -21,11 +21,11 @@ import {
   type RetestRow,
 } from '@/entities/program';
 import { accents } from '@/shared/config';
-import { plural } from '@/shared/lib/format';
+import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useProgram } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
 import { useDockHeight } from '@/shared/ui/action-dock';
-import { DailyBrief, frame, metric, type BriefToken } from '@/shared/ui/daily-brief';
+import { DailyBrief, buildBrief } from '@/shared/ui/daily-brief';
 import { GiftSheet } from '@/shared/ui/gift-sheet';
 import { StreakSheet } from '@/shared/ui/streak-sheet';
 import { useMinimizeOnScroll } from '@/shared/ui/glass-tabs';
@@ -33,7 +33,7 @@ import { HeaderActions } from '@/shared/ui/header-actions';
 import { SegmentedControl } from '@/shared/ui/segmented-control';
 import { IntroReveal } from '@/shared/ui/splash';
 
-import { useCountUp } from '../model/use-count-up';
+import { progressBrief } from '../model/brief-copy';
 import { PerformanceCard } from './performance-card';
 import { ScoreCard } from './score-card';
 import { StreakTile } from './streak-tile';
@@ -46,7 +46,12 @@ const SIDE_PAD = 20;
 // place, and it reads the same logs the rest of this screen does.
 
 /** The ruler's vocabulary, lowest first. Four words for four levels. */
-const BANDS = ['Very Low', 'Low', 'Medium', 'High'] as const;
+const BANDS = [
+  'progress.bandVeryLow',
+  'progress.bandLow',
+  'progress.bandMedium',
+  'progress.bandHigh',
+] as const;
 
 /**
  * The three windows.
@@ -56,11 +61,17 @@ const BANDS = ['Very Low', 'Low', 'Medium', 'High'] as const;
  * the score from the published formula, and the ability from the last two
  * retests. A number on this screen is either something the user did or
  * something derived from it, and nothing in between.
+ *
+ * `label` and `window` are two keys for what English writes as the same words,
+ * because Russian does not: the segment reads "7 дней", and the same span
+ * inside the trend sentence reads "последние 7 дней" — and "последний месяц",
+ * where the qualifier changes with the noun. The agreement belongs to the
+ * catalogue, so each language holds the finished phrase for both jobs.
  */
 const RANGES = [
-  { label: '7 days', window: '7 days', days: 7 },
-  { label: '1 month', window: 'month', days: 30 },
-  { label: '3 months', window: '3 months', days: 90 },
+  { label: 'progress.range7Days', window: 'progress.window7Days', days: 7 },
+  { label: 'progress.rangeMonth', window: 'progress.windowMonth', days: 30 },
+  { label: 'progress.range3Months', window: 'progress.window3Months', days: 90 },
 ] as const;
 
 /**
@@ -77,52 +88,6 @@ const DEFAULT_RANGE = 2;
 /** Both halves of a window need enough days to average, or the comparison is
  * one noisy reading against another. */
 const MIN_WINDOW_DAYS = 14;
-
-const RANGE_LABELS = RANGES.map((range) => range.label);
-
-/**
- * The headline sentence, in Home's voice.
- *
- * Grey carries the grammar and the emphasis carries the fact, so the line can
- * be skimmed for the coloured words alone and still be read correctly — which
- * is the whole reason this block is shared between the two screens rather than
- * restyled per page.
- */
-function trendTokens(window: string, from: number, to: number): readonly BriefToken[] {
-  // Falling pain is the good direction, so the arrow and the colour both come
-  // off the same comparison. Getting this backwards would paint an improving
-  // month red — or worse, a worsening one green.
-  const better = to <= from;
-  return [
-    frame('Over the last'),
-    metric('window', window),
-    frame('your morning pain went'),
-    metric(better ? 'down' : 'up', `from ${from} to ${to}`, {
-      tail: '.',
-      tone: better ? 'good' : 'warn',
-    }),
-  ];
-}
-
-/**
- * The 7-day tab counts; it never trends.
- *
- * A week is too short to say anything about direction, but it is exactly the
- * right length to say how much of it the user turned up for — which is a fact
- * rather than an inference, and the one number on this screen they control
- * directly.
- */
-function weekTokens(logged: number): readonly BriefToken[] {
-  return [metric('window', `${logged} of 7 days`), frame('logged this week.')];
-}
-
-/** Not enough history to compare two halves of the window honestly. */
-function tooEarlyTokens(elapsed: number): readonly BriefToken[] {
-  return [
-    metric('window', `${plural(elapsed, 'day')} in`, { tail: '.' }),
-    frame('Too early to call a trend.'),
-  ];
-}
 
 /**
  * Mean logged pain across a span of program days, or null if it is empty.
@@ -165,6 +130,8 @@ export function ProgressPage() {
   const scheme = useColorScheme();
   const program = useProgram();
   const today = PROGRAM[TODAY_INDEX];
+  const t = useT();
+  const copy = progressBrief(useLanguage());
 
   /** The reward sheet, opened from the capsule in the header. */
   const [giftOpen, setGiftOpen] = useState(false);
@@ -216,25 +183,54 @@ export function ProgressPage() {
   });
 
   /**
-   * What the sentence says for this window.
+   * The headline sentence, in Home's voice: grey carries the grammar and the
+   * emphasis carries the fact, so the line can be skimmed for the coloured
+   * words alone and still be read correctly.
    *
    * Three shapes, and which one appears is decided by the data rather than by
    * the tab: a week counts, a long enough window compares its two halves, and
    * a window the programme has not lived through yet says so instead of
    * manufacturing a trend out of one reading.
+   *
+   * All three used to be built here as inline token arrays, which welded the
+   * English word order into the sequence — `DailyBrief` renders tokens as
+   * sibling `<Text>` nodes and has no reordering layer, so the array *is* the
+   * sentence. They are now one `BriefSegment[]` per language in the catalogue
+   * (see `../model/brief-copy`), and the orders genuinely differ: Russian
+   * states the week first and puts the figures last, and Spanish spends three
+   * segments where English spends two. Neither is reachable by substituting
+   * into the English array.
    */
   const brief = (() => {
     if (range.days === 7) {
       const logged = completedThrough(TODAY_INDEX) - completedThrough(Math.max(TODAY_INDEX - 7, 0));
-      return weekTokens(logged);
+      return buildBrief(copy.week, { logged: String(logged) }, { capitalise: true });
     }
     const half = Math.floor(range.days / 2);
     const recent = meanPain(TODAY_INDEX - half, TODAY_INDEX);
     const earlier = meanPain(TODAY_INDEX - range.days, TODAY_INDEX - half);
     if (recent == null || earlier == null || TODAY_INDEX < MIN_WINDOW_DAYS) {
-      return tooEarlyTokens(TODAY_INDEX);
+      // The span arrives as a finished phrase — "16 days", "16 дней" — from
+      // the same core entry the streak tiles use, so the two can never write a
+      // day count differently.
+      return buildBrief(
+        copy.tooEarly,
+        { days: t('streak.dayCount', { count: TODAY_INDEX }) },
+        { capitalise: true },
+      );
     }
-    return trendTokens(range.window, Math.round(earlier), Math.round(recent));
+    const from = Math.round(earlier);
+    const to = Math.round(recent);
+    // Falling pain is the good direction, so the arrow and the colour both
+    // come off the same comparison — they are baked into the two segment
+    // arrays. Getting this backwards would paint an improving month red, or
+    // worse, a worsening one green.
+    const better = to <= from;
+    return buildBrief(
+      better ? copy.trendBetter : copy.trendWorse,
+      { window: t(range.window), from: String(from), to: String(to) },
+      { capitalise: true },
+    );
   })();
 
   return (
@@ -277,7 +273,7 @@ export function ProgressPage() {
 
         <IntroReveal order={1} style={styles.control}>
           <SegmentedControl
-            segments={RANGE_LABELS}
+            segments={RANGES.map((option) => t(option.label))}
             selectedIndex={rangeIndex}
             onChange={setRangeIndex}
           />
@@ -290,9 +286,12 @@ export function ProgressPage() {
         <IntroReveal order={3}>
           <ScoreCard
             score={score}
-            title="You’re doing great!"
-            headline={`${streak.current} day streak!`}
-            note={`Keep it up to finish the ${blockName(today.block)} block.`}
+            title={t('progress.scoreTitle')}
+            headline={t('progress.scoreStreak', { count: streak.current })}
+            // The block's name is still English whatever the language: it
+            // comes from `blockName()` in `entities/program`, which is not
+            // this migration's to change.
+            note={t('progress.scoreNote', { block: blockName(today.block) })}
           />
         </IntroReveal>
 
@@ -301,7 +300,7 @@ export function ProgressPage() {
             value={ability}
             max={MAX_LEVEL}
             delta={abilityDelta}
-            bands={BANDS}
+            bands={BANDS.map((band) => t(band))}
           />
         </IntroReveal>
 
@@ -314,13 +313,13 @@ export function ProgressPage() {
             icon={FireIcon}
             tint={accents[scheme].orange.fill}
             days={streak.current}
-            label="Current Streak"
+            label={t('progress.currentStreak')}
           />
           <StreakTile
             icon={DiamondIcon}
             tint={accents[scheme].amber.fill}
             days={streak.longest}
-            label="Longest Streak"
+            label={t('progress.longestStreak')}
           />
         </IntroReveal>
 

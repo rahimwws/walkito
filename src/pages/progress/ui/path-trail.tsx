@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import { painFor, statusFor, type DayStatus, type ProgramDay } from '@/entities/program';
 import { fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import { CAPTION_CLEARANCE, captionFor } from '../model/day-caption';
@@ -39,12 +40,13 @@ export function PathTrail({
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   const colors = palette[scheme];
+  const t = useT();
 
   return (
     <View style={{ height: layout.height }}>
       {layout.items.slice(0, -1).map((item, i) => {
         const status = statusFor(item.day, cursor, doneToday);
-        const captioned = captionFor(item.day, status) != null;
+        const captioned = captionFor(item.day, status, t) != null;
         return (
           <PathConnector
             key={`leg-${item.day.index}`}

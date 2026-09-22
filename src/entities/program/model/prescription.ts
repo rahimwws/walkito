@@ -7,6 +7,8 @@
  * progression offset is the one thing allowed to walk it backwards.
  */
 
+import { getLanguage, translatorFor, type Key } from '@/shared/lib/i18n';
+
 import { HEEL_RAISE_TEMPO, type Tempo } from './exercises';
 
 export type Prescription = {
@@ -71,11 +73,17 @@ const HEEL_RAISES: Readonly<Record<number, HeelRaiseStep>> = {
  *
  * Only the blocks that actually change carry a line. Block 5 repeats Block 4's
  * dose, so it says nothing rather than announcing a change that did not happen.
+ *
+ * Keys rather than sentences, and named for what they ask rather than for the
+ * block that asks it — renumbering the plan must not be able to leave a block
+ * pointing at the wrong instruction. Resolved by `loadNoteFor`.
  */
-export const LOAD_NOTES: Readonly<Record<number, string>> = {
-  3: 'Add a backpack. Heavy enough that the last rep is the last rep.',
-  4: 'Add more. Eight reps should be all you have.',
-  6: 'Towel off. Bodyweight. This is the version you keep doing.',
+type LoadNoteKey = Extract<Key, `exercises.loadNote.${string}`>;
+
+export const LOAD_NOTES: Readonly<Record<number, LoadNoteKey>> = {
+  3: 'exercises.loadNote.backpack',
+  4: 'exercises.loadNote.heavier',
+  6: 'exercises.loadNote.towelOff',
 };
 
 /**
@@ -94,7 +102,7 @@ export function effectiveBlock(blockIndex: number, progressionOffset: number): n
 /**
  * The dose as a row prints it, and whether it covers one foot or two.
  *
- * `perSide` appends rather than dividing. The prescribed figures cover both
+ * `perSide` qualifies rather than divides. The prescribed figures cover both
  * feet together, and halving them to read "per foot" only works when they
  * divide: ten ten-second holds split cleanly into five each, but three sets of
  * thirty seconds do not, and "1.5 × 30s" is not a dose anybody can follow. So
@@ -102,20 +110,30 @@ export function effectiveBlock(blockIndex: number, progressionOffset: number): n
  * is what turns that into a clock for each foot.
  */
 function doseLabel(sets: number, reps?: number, holdSec?: number, perSide = false): string {
-  const both = perSide ? ' · both feet' : '';
-  return core(sets, reps, holdSec) + both;
+  const dose = core(sets, reps, holdSec);
+  // The qualifier takes the dose as a placeholder rather than being appended to
+  // it. English puts "both feet" last; a language that leads with it has
+  // nowhere to put it if all it is handed is a suffix.
+  return perSide
+    ? translatorFor(getLanguage())('exercises.dose.bothFeet', { dose })
+    : dose;
 }
 
 function core(sets: number, reps?: number, holdSec?: number): string {
-  if (reps != null) return `${sets} × ${reps}`;
+  const t = translatorFor(getLanguage());
+  if (reps != null) return t('exercises.dose.setsReps', { sets, reps });
   if (holdSec != null) {
     // One set of a hold is a duration and reads as one: a two-minute foot roll
     // is "2 min", not "1 × 120s", which describes the same thing as if it were
     // a training set the user has to count through.
-    if (sets === 1) return holdSec >= 60 ? `${Math.round(holdSec / 60)} min` : `${holdSec}s`;
-    return `${sets} × ${holdSec}s`;
+    if (sets === 1) {
+      return holdSec >= 60
+        ? t('exercises.dose.holdMinutes', { minutes: Math.round(holdSec / 60) })
+        : t('exercises.dose.hold', { seconds: holdSec });
+    }
+    return t('exercises.dose.setsHold', { sets, seconds: holdSec });
   }
-  return `${sets} sets`;
+  return t('exercises.dose.sets', { count: sets });
 }
 
 /**
@@ -147,7 +165,8 @@ export function heelRaisePrescription(
 
 /** The load note for a block, if its load changed from the one before it. */
 export function loadNoteFor(blockIndex: number): string | null {
-  return LOAD_NOTES[blockIndex] ?? null;
+  const key = LOAD_NOTES[blockIndex];
+  return key == null ? null : translatorFor(getLanguage())(key);
 }
 
 /**

@@ -5,6 +5,7 @@ import { Alert, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { resetOnboarding } from '@/entities/session';
 import { accents, fonts, meterColors } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 import { useColorScheme } from '@/shared/lib/theme';
 import { clearClips } from '@/widgets/session-player';
@@ -31,19 +32,19 @@ import { clearClips } from '@/widgets/session-player';
 export function ResetRow() {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
+  const t = useT();
 
   if (!__DEV__) return null;
 
   const confirm = () => {
     Haptics.selectionAsync();
     Alert.alert(
-      'Start from the first screen?',
-      'Clears onboarding, the programme, the pain log and the cached clips on ' +
-        'this device. Your account and invite code stay. Development only.',
+      t('profile.resetAlertTitle'),
+      t('profile.resetAlertBody'),
       [
-        { text: 'Cancel', style: 'cancel' },
+        { text: t('profile.resetCancel'), style: 'cancel' },
         {
-          text: 'Reset',
+          text: t('profile.resetConfirm'),
           style: 'destructive',
           onPress: () => {
             // Storage first, then the flag. `resetOnboarding` notifies the
@@ -62,7 +63,7 @@ export function ResetRow() {
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel="Reset to the first screen"
+      accessibilityLabel={t('profile.resetA11y')}
       onPress={confirm}
       style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}>
       <HugeiconsIcon
@@ -73,11 +74,9 @@ export function ResetRow() {
       />
       <View style={styles.text}>
         <Text style={[styles.label, { color: accents[scheme].amber.fill }]}>
-          Reset to first screen
+          {t('profile.resetLabel')}
         </Text>
-        <Text style={[styles.hint, { color: meter.caption }]}>
-          Development build only
-        </Text>
+        <Text style={[styles.hint, { color: meter.caption }]}>{t('profile.resetHint')}</Text>
       </View>
     </Pressable>
   );

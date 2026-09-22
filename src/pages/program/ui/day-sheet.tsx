@@ -14,14 +14,15 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import {
   RETEST_MINUTES,
   RETEST_TESTS,
-  SESSION_META,
   blockName,
   dateFor,
   movePlanFor,
   type DayStatus,
   type ProgramDay,
+  type SessionKind,
 } from '@/entities/program';
 import { fonts, meterColors, palette } from '@/shared/config';
+import { useLanguage, useT, type Key, type Language } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
@@ -46,16 +47,31 @@ const IN_MS = 340;
 const OUT_MS = 220;
 const RISE = 44;
 
-const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] as const;
-const MONTHS = [
-  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
-] as const;
-
-function shortDate(at: number): string {
-  const date = new Date(at);
-  return `${DAYS[date.getDay()]} ${date.getDate()} ${MONTHS[date.getMonth()]}`;
+/**
+ * The day, placed but not spelled out.
+ *
+ * From `Intl` rather than from two tables of English abbreviations: it knows
+ * every locale's weekday and month names, and it knows their order — Russian
+ * and Spanish put the day first and lowercase both words. Same options as the
+ * day sheet at `pages/day`, so the two screens that show one day now write its
+ * date identically; before this they disagreed ("Tue 12 Aug" against
+ * "Tue, Aug 12") purely because each had hand-rolled its own table.
+ */
+function shortDate(at: number, language: Language): string {
+  return new Intl.DateTimeFormat(language, {
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric',
+  }).format(new Date(at));
 }
+
+/** What a day's work is called. The same keys the cards in the list read. */
+const KIND_KEY = {
+  strength: 'pages.program.kindStrength',
+  mobility: 'pages.program.kindMobility',
+  balance: 'pages.program.kindBalance',
+  recovery: 'pages.program.kindRecovery',
+} as const satisfies Record<SessionKind, Key>;
 
 export type DaySheetProps = {
   /** The day being read, or null when nothing is open. */
@@ -88,6 +104,10 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt }: DaySheetPr
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
+  // Subscribed: `movePlanFor` is counted below and its titles resolve through
+  // the catalogue, so the sheet has to hear a language change to repaint.
+  const t = useT();
+  const language = useLanguage();
 
   /**
    * Mounted separately from the day, which is the whole trick.
@@ -100,7 +120,9 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt }: DaySheetPr
   const [mounted, setMounted] = useState(false);
   /** Held past the close, so the card does not blank out mid-exit. */
   const [shown, setShown] = useState<{ day: ProgramDay; status: DayStatus } | null>(null);
-  const t = useSharedValue(0);
+  /** 0 away, 1 up. Named rather than `t`, which is the translator everywhere
+   * else in this codebase. */
+  const phase = useSharedValue(0);
 
   useEffect(() => {
     if (day != null) {
@@ -109,7 +131,7 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt }: DaySheetPr
       // A frame late on purpose: the modal has to exist before the transition
       // starts, or the first frames play against nothing.
       const frame = requestAnimationFrame(() => {
-        t.value = withTiming(1, {
+        phase.value = withTiming(1, {
           duration: IN_MS,
           easing: Easing.out(Easing.cubic),
           reduceMotion: ReduceMotion.System,
@@ -118,7 +140,7 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt }: DaySheetPr
       return () => cancelAnimationFrame(frame);
     }
 
-    t.value = withTiming(
+    phase.value = withTiming(
       0,
       { duration: OUT_MS, easing: Easing.in(Easing.cubic), reduceMotion: ReduceMotion.System },
       (finished) => {
@@ -126,18 +148,17 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt }: DaySheetPr
       },
     );
     return undefined;
-  }, [day, status, t]);
+  }, [day, status, phase]);
 
-  const backdrop = useAnimatedStyle(() => ({ opacity: t.value }));
+  const backdrop = useAnimatedStyle(() => ({ opacity: phase.value }));
   const dock = useAnimatedStyle(() => ({
-    opacity: t.value,
-    transform: [{ translateY: (1 - t.value) * RISE }],
+    opacity: phase.value,
+    transform: [{ translateY: (1 - phase.value) * RISE }],
   }));
 
   if (!mounted || shown == null) return null;
 
   const art = artFor(shown.day.kind);
-  const kind = SESSION_META[shown.day.kind];
   const retest = shown.day.checkpoint;
   const moves = retest ? RETEST_TESTS : movePlanFor(shown.day).length;
   const minutes = retest ? RETEST_MINUTES : shown.day.minutes;
@@ -158,7 +179,7 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt }: DaySheetPr
 
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="Close"
+          accessibilityLabel={t('common.close')}
           style={styles.fill}
           onPress={onClose}
         />
@@ -179,11 +200,11 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt }: DaySheetPr
               art == null && styles.cardBare,
             ]}>
             <Text style={[styles.date, { color: meter.caption }]}>
-              {shortDate(dateFor(shown.day.index, Date.now()))}
+              {shortDate(dateFor(shown.day.index, Date.now()), language)}
             </Text>
 
             <Text style={[styles.title, { color: colors.foreground }]}>
-              {retest ? 'Retest' : kind.label}
+              {retest ? t('pages.program.retest') : t(KIND_KEY[shown.day.kind])}
             </Text>
 
             {/* Three figures, the way the reference reads: the number first and
@@ -191,12 +212,25 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt }: DaySheetPr
                 anything the user has not done — they are the day's own
                 prescription. */}
             <View style={styles.stats}>
-              <Stat value={`${minutes} min`} label="Session" />
-              <Stat value={String(moves)} label={retest ? 'Tests' : 'Exercises'} />
-              <Stat value={`Day ${shown.day.day}`} label={blockName(shown.day.block)} />
+              <Stat
+                value={t('session.minutes', { count: minutes })}
+                label={t('pages.program.statSession')}
+              />
+              <Stat
+                value={String(moves)}
+                label={t(retest ? 'pages.program.statTests' : 'pages.program.statExercises')}
+              />
+              {/* The block's name is still English — `blockName()` in
+                  `entities/program` reads a plain table, not the catalogue. */}
+              <Stat
+                value={t('session.day', { day: shown.day.day })}
+                label={blockName(shown.day.block)}
+              />
             </View>
 
-            {startable && <PrimaryButton label="Get Started" onPress={onStart} />}
+            {startable && (
+              <PrimaryButton label={t('pages.program.getStarted')} onPress={onStart} />
+            )}
             {/* The same button the card carries, in the same state. A sheet
                 that opened on a locked day and offered nothing would be a
                 dead end — and one that offered "Get Started" on a day that is

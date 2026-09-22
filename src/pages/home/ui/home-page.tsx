@@ -9,6 +9,7 @@ import { TODAY_INDEX, currentDay, painOn, useStreak, weekAttendance } from '@/en
 import { useHealthSignals } from '@/entities/health';
 import { firstName, useProfileName } from '@/entities/profile';
 import { accents } from '@/shared/config';
+import { useLanguage } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { useProgram } from '@/shared/lib/program';
 import { useDockHeight } from '@/shared/ui/action-dock';
@@ -103,6 +104,9 @@ export function HomePage() {
   const [burst, setBurst] = useState(0);
   const name = useProfileName();
   const signals = useHealthSignals();
+  /** Subscribed to, not read once: the sentence is rebuilt in the same commit
+   * as the switch is flipped, rather than on next launch. */
+  const language = useLanguage();
 
   return (
     <View style={styles.screen}>
@@ -155,35 +159,39 @@ export function HomePage() {
             going. */}
         <IntroReveal order={2} style={styles.brief}>
           <DailyBrief
-            tokens={briefTokens({
-              name: firstName(name),
-              cursor: TODAY_INDEX,
-              // Null until they have actually answered, and never zero. The
-              // ladder reads null as "not asked yet" and falls through to the
-              // day's own state; a zero would be the app deciding on their
-              // behalf that nothing hurts this morning. Read on every render
-              // rather than held — the check-in writes the log, and this
-              // component is already re-rendered by `useStreak` when it does.
-              todayPain: painOn(currentDay()),
-              doneToday: checkedIn,
-              // The same figure the header shows. Two hand-written sevens is
-              // what this replaces: a streak that disagreed with itself between
-              // the capsule and the sentence directly under it.
-              streak: streak.current,
-              // Read from the local cache, never from HealthKit. The pipeline
-              // fills that cache in the background; a morning line that awaited
-              // a Health query would leave the screen blank on every cold
-              // start, and would be blank forever for the users who granted
-              // nothing.
-              health: signals,
-              // Both learned from the person's own history rather than set:
-              // the hours are derived from when their steps actually happened,
-              // and the limit is the hour past which their own next mornings
-              // got worse. Null until there is enough history to say, which is
-              // the honest answer and the one that keeps the line silent.
-              hoursOnFeet: signals.hoursOnFeetToday,
-              onFeetThreshold: signals.onFeetThreshold,
-            })}
+            tokens={briefTokens(
+              {
+                name: firstName(name),
+                cursor: TODAY_INDEX,
+                // Null until they have actually answered, and never zero. The
+                // ladder reads null as "not asked yet" and falls through to the
+                // day's own state; a zero would be the app deciding on their
+                // behalf that nothing hurts this morning. Read on every render
+                // rather than held — the check-in writes the log, and this
+                // component is already re-rendered by `useStreak` when it does.
+                todayPain: painOn(currentDay()),
+                doneToday: checkedIn,
+                // The same figure the header shows. Two hand-written sevens is
+                // what this replaces: a streak that disagreed with itself
+                // between the capsule and the sentence directly under it.
+                streak: streak.current,
+                // Read from the local cache, never from HealthKit. The pipeline
+                // fills that cache in the background; a morning line that
+                // awaited a Health query would leave the screen blank on every
+                // cold start, and would be blank forever for the users who
+                // granted nothing.
+                health: signals,
+                // Both learned from the person's own history rather than set:
+                // the hours are derived from when their steps actually
+                // happened, and the limit is the hour past which their own next
+                // mornings got worse. Null until there is enough history to
+                // say, which is the honest answer and the one that keeps the
+                // line silent.
+                hoursOnFeet: signals.hoursOnFeetToday,
+                onFeetThreshold: signals.onFeetThreshold,
+              },
+              language,
+            )}
           />
         </IntroReveal>
 

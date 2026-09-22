@@ -16,6 +16,7 @@ import {
   useReferral,
 } from '@/entities/referral';
 import { fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
@@ -47,6 +48,7 @@ export function GiftSheet({ visible, onClose }: GiftSheetProps) {
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
+  const t = useT();
 
   const referral = useReferral();
   /** Shown in place of the code for the moment it takes to arrive. */
@@ -68,7 +70,12 @@ export function GiftSheet({ visible, onClose }: GiftSheetProps) {
   }, [copied]);
 
   const code = referral.code;
-  const message = `Use my code ${code} in Walkito and we both get ${REFERRAL_DISCOUNT_PERCENT}% off.`;
+  // The share body leaves the app entirely, so it is one catalogue sentence
+  // rather than parts — there is no layout to reorder here, only grammar.
+  const message = t('gift.shareMessage', {
+    code: code ?? '',
+    percent: REFERRAL_DISCOUNT_PERCENT,
+  });
 
   return (
     <Modal
@@ -109,7 +116,7 @@ export function GiftSheet({ visible, onClose }: GiftSheetProps) {
               .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
               .reduceMotion(ReduceMotion.System)}
             style={[styles.title, { color: colors.foreground }]}>
-            Invite a friend
+            {t('gift.title')}
           </Animated.Text>
 
           <Animated.Text
@@ -119,8 +126,8 @@ export function GiftSheet({ visible, onClose }: GiftSheetProps) {
               .reduceMotion(ReduceMotion.System)}
             style={[styles.blurb, { color: meter.caption }]}>
             {referralsAvailable
-              ? `They get ${REFERRAL_DISCOUNT_PERCENT}% off. So do you.`
-              : 'Invites are not available in this build.'}
+              ? t('gift.blurb', { percent: REFERRAL_DISCOUNT_PERCENT })
+              : t('gift.unavailable')}
           </Animated.Text>
 
           {referralsAvailable && (
@@ -145,7 +152,7 @@ export function GiftSheet({ visible, onClose }: GiftSheetProps) {
             .reduceMotion(ReduceMotion.System)}
           style={styles.actions}>
           <PrimaryButton
-            label={copied ? 'Copied' : 'Share code'}
+            label={copied ? t('gift.shared') : t('gift.share')}
             onPress={() => {
               if (code == null) return;
               Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
@@ -155,7 +162,7 @@ export function GiftSheet({ visible, onClose }: GiftSheetProps) {
           {code != null && (
             <Pressable
               accessibilityRole="button"
-              accessibilityLabel={`Copy code ${code}`}
+              accessibilityLabel={t('gift.copyA11y', { code })}
               onPress={() => {
                 void Clipboard.setStringAsync(code);
                 Haptics.selectionAsync();
@@ -164,7 +171,7 @@ export function GiftSheet({ visible, onClose }: GiftSheetProps) {
               hitSlop={10}
               style={({ pressed }) => [styles.later, pressed && { opacity: 0.5 }]}>
               <Text style={[styles.laterText, { color: meter.caption }]}>
-                {copied ? 'Copied to clipboard' : 'Copy instead'}
+                {copied ? t('gift.copied') : t('gift.copy')}
               </Text>
             </Pressable>
           )}
@@ -173,7 +180,7 @@ export function GiftSheet({ visible, onClose }: GiftSheetProps) {
             onPress={onClose}
             hitSlop={10}
             style={({ pressed }) => [styles.later, pressed && { opacity: 0.5 }]}>
-            <Text style={[styles.laterText, { color: meter.caption }]}>Maybe later</Text>
+            <Text style={[styles.laterText, { color: meter.caption }]}>{t('gift.dismiss')}</Text>
           </Pressable>
         </Animated.View>
       </View>

@@ -13,6 +13,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { accents, fonts, meterColors } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 /** Three dots and a head. Few enough to read as a hint of a path rather than as
@@ -106,12 +107,17 @@ export type StreakMilestoneProps = {
 export const StreakMilestone = memo(function StreakMilestone({ days }: StreakMilestoneProps) {
   const scheme = useColorScheme();
   const accent = accents[scheme].orange;
+  const t = useT();
 
   return (
     <View style={styles.milestone}>
       <View style={[styles.chip, { backgroundColor: accent.track }]}>
         <FireIcon size={15} weight="fill" color={accent.fill} />
-        <Text style={[styles.chipText, { color: accent.fill }]}>{days} days</Text>
+        {/* The streak's own day count, so the marker and the capsule on Home
+            can never write a day two different ways. */}
+        <Text style={[styles.chipText, { color: accent.fill }]}>
+          {t('streak.dayCount', { count: days })}
+        </Text>
       </View>
     </View>
   );

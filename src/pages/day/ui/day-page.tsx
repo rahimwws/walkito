@@ -12,7 +12,6 @@ import {
   RETEST_MINUTES,
   RETEST_TESTS,
   SESSION_META,
-  ZONE_META,
   blockName,
   dateFor,
   levelLabel,
@@ -23,22 +22,50 @@ import {
   type DayStatus,
   type ProgramDay,
   type Retest,
+  type SessionKind,
+  type ZoneKey,
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { useLanguage, useT, type Key, type Language } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { ActionButton } from '@/shared/ui/action-button';
 
-const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] as const;
-const MONTHS = [
-  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
-] as const;
-
-/** "Tue, Aug 12" — enough to place a day without spelling out a year. */
-function shortDate(ms: number): string {
-  const d = new Date(ms);
-  return `${DAYS[d.getDay()]}, ${MONTHS[d.getMonth()]} ${d.getDate()}`;
+/**
+ * "Tue, Aug 12" — enough to place a day without spelling out a year.
+ *
+ * From `Intl` rather than from two arrays of English abbreviations. It already
+ * knows every locale's weekday and month names, and it knows the conventions a
+ * hand-written table gets wrong: Russian and Spanish lowercase theirs, and they
+ * put the day before the month. See the same note in `shared/ui/streak-week`.
+ */
+function shortDate(ms: number, language: Language): string {
+  return new Intl.DateTimeFormat(language, {
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric',
+  }).format(new Date(ms));
 }
+
+/** The 0–10 scale a logged pain reading is out of. */
+const PAIN_MAX = 10;
+
+/** Named by the catalogue rather than by `SESSION_META.label`, which is still
+ * English — the program list names a day's work with these same keys, and the
+ * two screens must not call one session two things. */
+const KIND_KEY = {
+  strength: 'pages.program.kindStrength',
+  mobility: 'pages.program.kindMobility',
+  balance: 'pages.program.kindBalance',
+  recovery: 'pages.program.kindRecovery',
+} as const satisfies Record<SessionKind, Key>;
+
+/** Likewise for the measured zones, in place of `ZONE_META.label`. */
+const ZONE_KEY = {
+  calf: 'pages.program.zoneCalf',
+  arch: 'pages.program.zoneArch',
+  balance: 'pages.program.zoneBalance',
+  symmetry: 'pages.program.zoneSymmetry',
+} as const satisfies Record<ZoneKey, Key>;
 
 /**
  * What one day on the path holds, presented as a native form sheet.
@@ -50,6 +77,7 @@ function shortDate(ms: number): string {
 export function DayPage() {
   const params = useLocalSearchParams<{ day: string; status: DayStatus }>();
   const insets = useSafeAreaInsets();
+  const t = useT();
 
   const number = Number(params.day);
   const day = PROGRAM[number - 1];
@@ -67,7 +95,7 @@ export function DayPage() {
   if (day == null) {
     return (
       <View style={sheet}>
-        <Note>That day isn’t part of your plan.</Note>
+        <Note>{t('pages.day.notInPlan')}</Note>
       </View>
     );
   }
@@ -98,6 +126,14 @@ function CheckpointBody({
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const accent = accents[scheme].orange;
+  const t = useT();
+  const language = useLanguage();
+
+  /** "3 tests · 4 minutes", each half already agreed with its own count. */
+  const meta = t('pages.day.retestMeta', {
+    tests: t('pages.program.testCount', { count: RETEST_TESTS }),
+    minutes: t('pages.program.minuteCount', { count: RETEST_MINUTES }),
+  });
 
   /**
    * Which of the four things this sheet says.
@@ -114,9 +150,9 @@ function CheckpointBody({
     return (
       <>
         <Header
-          eyebrow={`Retest · Day ${day.day}`}
-          title={`Block ${day.block} · ${blockName(day.block)}`}
-          subtitle="Where you stood at the end of the block"
+          eyebrow={t('pages.day.retestEyebrow', { day: day.day })}
+          title={t('pages.day.blockTitle', { block: day.block, name: blockName(day.block) })}
+          subtitle={t('pages.day.retestResultSubtitle')}
         />
         <View>
           {retest.rows.map((row, index) => (
@@ -127,7 +163,7 @@ function CheckpointBody({
                 index > 0 && { borderTopWidth: 1, borderTopColor: meter.track },
               ]}>
               <Text style={[styles.rowLabel, { color: colors.foreground }]}>
-                {ZONE_META[row.zone].label}
+                {t(ZONE_KEY[row.zone])}
               </Text>
               <View style={styles.rowValues}>
                 <Text style={[styles.rowMeasure, { color: meter.unit }]}>{row.from}</Text>
@@ -139,14 +175,18 @@ function CheckpointBody({
           ))}
         </View>
         <ActionButton
-          label="Share"
+          label={t('pages.day.share')}
           icon={Share08Icon}
           onPress={() => {
             Share.share({
               message: retest.rows
-                .map(
-                  (r) =>
-                    `${ZONE_META[r.zone].label}: ${r.from} → ${r.to} (${levelLabel(r)})`,
+                .map((r) =>
+                  t('pages.day.shareRow', {
+                    zone: t(ZONE_KEY[r.zone]),
+                    from: r.from,
+                    to: r.to,
+                    level: levelLabel(r),
+                  }),
                 )
                 .join('\n'),
             });
@@ -160,16 +200,13 @@ function CheckpointBody({
     return (
       <>
         <Header
-          eyebrow={`Day ${day.day}`}
-          title="Time to check your progress"
-          subtitle={`${RETEST_TESTS} tests · ${RETEST_MINUTES} minutes`}
+          eyebrow={t('session.day', { day: day.day })}
+          title={t('pages.day.retestTodayTitle')}
+          subtitle={meta}
         />
-        <Note>
-          Nothing to train today. The tests measure where the block left you, and they are the
-          only thing that moves a level.
-        </Note>
+        <Note>{t('pages.day.retestTodayNote')}</Note>
         <ActionButton
-          label="Start retest"
+          label={t('pages.day.startRetest')}
           onPress={() => {
             // The tests run in the player, which is a screen — this sheet is
             // sized to its own contents and cannot hold one. So the ask is left
@@ -190,13 +227,13 @@ function CheckpointBody({
     return (
       <>
         <Header
-          eyebrow={`Retest · Day ${day.day}`}
-          title={`Block ${day.block} · ${blockName(day.block)}`}
+          eyebrow={t('pages.day.retestEyebrow', { day: day.day })}
+          title={t('pages.day.blockTitle', { block: day.block, name: blockName(day.block) })}
         />
         <View style={styles.iconNote}>
           <HugeiconsIcon icon={CHECKPOINT_ICON} size={22} color={accent.fill} strokeWidth={1.9} />
           <Text style={[styles.noteText, { color: meter.caption }]}>
-            This retest wasn’t completed. Levels held from the last one.
+            {t('pages.day.retestMissed')}
           </Text>
         </View>
       </>
@@ -206,14 +243,16 @@ function CheckpointBody({
   return (
     <>
       <Header
-        eyebrow={`Day ${day.day}`}
-        title={`Retest · closes Block ${day.block}`}
-        subtitle={`${RETEST_TESTS} tests · ${RETEST_MINUTES} minutes`}
+        eyebrow={t('session.day', { day: day.day })}
+        title={t('pages.day.retestClosesBlock', { block: day.block })}
+        subtitle={meta}
       />
       <View style={styles.iconNote}>
         <HugeiconsIcon icon={CHECKPOINT_ICON} size={22} color={accent.fill} strokeWidth={1.9} />
         <Text style={[styles.noteText, { color: meter.caption }]}>
-          Opens on {shortDate(dateFor(day.index, Date.now()))}. Levels hold still until then.
+          {t('pages.day.retestOpensOn', {
+            date: shortDate(dateFor(day.index, Date.now()), language),
+          })}
         </Text>
       </View>
     </>
@@ -228,20 +267,30 @@ function SessionBody({ day, status }: { day: ProgramDay; status: DayStatus }) {
   const kind = SESSION_META[day.kind];
   const accent = accents[scheme][kind.accent];
   const behind = status === 'done' || status === 'rest';
+  // Subscribed to the language, not merely reading it: `movesFor` resolves the
+  // exercise titles through whatever language is current at the moment it is
+  // called, so without a `useT()` here the list would keep the words it was
+  // first rendered with after a switch.
+  const t = useT();
+  const language = useLanguage();
 
   return (
     <>
       <Header
-        eyebrow={shortDate(dateFor(day.index, Date.now()))}
-        title={`${kind.label} · ${day.minutes} min`}
-        subtitle={`Day ${day.day} · Block ${day.block} · ${blockName(day.block)}`}
+        eyebrow={shortDate(dateFor(day.index, Date.now()), language)}
+        title={t('pages.day.sessionTitle', {
+          kind: t(KIND_KEY[day.kind]),
+          minutes: t('session.minutes', { count: day.minutes }),
+        })}
+        subtitle={t('pages.day.sessionSubtitle', {
+          day: day.day,
+          block: day.block,
+          name: blockName(day.block),
+        })}
       />
 
       {status === 'missed' ? (
-        <Note>
-          No session logged. Nothing to make up — the program runs on dates, so the next day is
-          the next day.
-        </Note>
+        <Note>{t('pages.day.missedNote')}</Note>
       ) : (
         <View style={styles.list}>
           {movesFor(day).map((exercise) => (
@@ -255,10 +304,15 @@ function SessionBody({ day, status }: { day: ProgramDay; status: DayStatus }) {
 
       {behind && (
         <View style={[styles.painRow, { borderTopColor: meter.track }]}>
-          <Text style={[styles.painLabel, { color: meter.label }]}>Pain that day</Text>
+          <Text style={[styles.painLabel, { color: meter.label }]}>
+            {t('pages.day.painLabel')}
+          </Text>
           <Text style={[styles.painValue, { color: colors.foreground }]}>
             {painFor(day.index)}
-            <Text style={[styles.painMax, { color: meter.unit }]}> / 10</Text>
+            <Text style={[styles.painMax, { color: meter.unit }]}>
+              {' '}
+              {t('pages.day.painOutOf', { max: PAIN_MAX })}
+            </Text>
           </Text>
         </View>
       )}
@@ -266,7 +320,9 @@ function SessionBody({ day, status }: { day: ProgramDay; status: DayStatus }) {
       {status === 'upcoming' && (
         // No way to start early, and no lock icon either — the day simply has
         // a date, and that date is not today.
-        <Note>Comes up on {shortDate(dateFor(day.index, Date.now()))}.</Note>
+        <Note>
+          {t('pages.day.comesUpOn', { date: shortDate(dateFor(day.index, Date.now()), language) })}
+        </Note>
       )}
     </>
   );

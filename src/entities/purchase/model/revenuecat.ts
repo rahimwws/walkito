@@ -1,3 +1,5 @@
+import { getLanguage, translatorFor } from '@/shared/lib/i18n';
+import { kv } from '@/shared/lib/storage';
 import Purchases, {
   LOG_LEVEL,
   type CustomerInfo,
@@ -27,6 +29,9 @@ import {
  * one binding rather than every screen that sells something.
  */
 
+/** The last verdict, on this device. */
+const ENTITLED_KEY = 'purchase/entitled';
+
 /**
  * Whether the subscription is live, cached from the last thing the store said.
  *
@@ -34,8 +39,28 @@ import {
  * and `getCustomerInfo` is not. RevenueCat keeps its own cache and pushes
  * updates through the listener below, so this is a mirror of that cache rather
  * than a second source of truth.
+ *
+ * **Seeded from storage, and that is not an optimisation.** `configure()` and
+ * the first `getCustomerInfo()` are both asynchronous, so on a cold start this
+ * used to begin at `false` and stay there for as long as the round trip took.
+ * The gate in `root-layout.tsx` reads it on the first frame and its guard is
+ * `onboarded && !entitled` — so every paying customer was shown the paywall
+ * until RevenueCat answered, then had it yanked away. The layout's own comment
+ * promised that could not happen ("synchronous and correct on the first frame
+ * — the store keeps a cached answer"); the cached answer it described was
+ * RevenueCat's, which is only reachable through the very call being waited on.
+ *
+ * MMKV is memory-mapped, so this read is synchronous and the first paint gets
+ * the right stack — the same trick `useOnboarded` uses for the questionnaire
+ * flag, and for the same reason.
+ *
+ * It is deliberately a *mirror*, never the authority: the value is overwritten
+ * by the first real answer, so a lapsed subscription costs one frame of the
+ * tabs rather than permanent free access. A user who paid on another device
+ * still sees the wall until a restore, which is correct — this device has no
+ * evidence yet.
  */
-let active = false;
+let active = kv.getBoolean(ENTITLED_KEY) ?? false;
 /** Mirrors `programEnd` from the last customer info, so the contract's
  * synchronous getter has an answer without a round trip. */
 let lastEnd: Date | null = null;
@@ -53,6 +78,10 @@ const packages = new Map<string, PurchasesPackage>();
 function announce(info: CustomerInfo) {
   lastEnd = programEnd(info);
   const next = entitledIn(info);
+  // Written on every answer, including one that agrees with the cache: the
+  // early return below skips the notify, not the persistence, and a verdict
+  // that never changed still has to survive the next cold start.
+  kv.set(ENTITLED_KEY, next);
   if (next === active) return;
   active = next;
   listeners.forEach((fire) => fire());
@@ -221,7 +250,12 @@ export const revenueCatStore: Store = {
     if (pkg == null) {
       // The token came from an offering fetched in this process, so a miss
       // means the app is trying to buy something it never displayed.
-      return { status: 'failed', message: 'That plan isn’t available right now.' };
+      return {
+        status: 'failed',
+        // Non-React: resolved per call rather than at module scope, so a
+        // language switched after launch is reflected.
+        message: translatorFor(getLanguage())('purchase.unavailable'),
+      };
     }
     try {
       const { customerInfo } = await Purchases.purchasePackage(pkg);

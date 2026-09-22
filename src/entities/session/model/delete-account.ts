@@ -1,4 +1,5 @@
 import { kv } from '@/shared/lib/storage';
+import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { hasBackend, supabase } from '@/shared/lib/supabase';
 
 /** What a deletion attempt can come back as. */
@@ -34,7 +35,10 @@ export async function deleteAccount(): Promise<DeleteResult> {
         // at, and a stale token is how the next launch ends up half-signed-in.
         await client.auth.signOut().catch(() => {});
       } catch (error) {
-        serverMessage = error instanceof Error ? error.message : 'The server could not be reached.';
+        serverMessage =
+          error instanceof Error
+            ? error.message
+            : translatorFor(getLanguage())('auth.unreachable');
       }
     }
   }

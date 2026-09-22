@@ -14,6 +14,7 @@ import {
   type Plan,
 } from '@/entities/purchase';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { formatPrice } from '@/shared/lib/money';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
@@ -51,6 +52,7 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
   const meter = meterColors[scheme];
   const accent = accents[scheme];
   const insets = useSafeAreaInsets();
+  const t = useT();
 
   // Read once, on mount. These are finished measurements from a finished
   // programme — nothing can change them while this screen is open, and
@@ -93,7 +95,7 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
     // describe a transaction that was never attempted.
     if (plan == null) {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
-      setNotice('The App Store isn’t reachable right now. Try again in a moment.');
+      setNotice(t('pages.expired.storeUnreachable'));
       return;
     }
 
@@ -118,7 +120,7 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
       return;
     }
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
-    setNotice('The App Store isn’t reachable right now. Try again in a moment.');
+    setNotice(t('pages.expired.storeUnreachable'));
   };
 
   const dismiss = () => {
@@ -135,17 +137,17 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
           { paddingTop: insets.top + 32, paddingBottom: 24 },
         ]}
         showsVerticalScrollIndicator={false}>
-        <Text style={[styles.title, { color: meter.ink }]}>Your 12 weeks are done</Text>
+        <Text style={[styles.title, { color: meter.ink }]}>{t('pages.expired.title')}</Text>
         <Text style={[styles.lede, { color: meter.caption }]}>
           {summary.sessions > 0
-            ? `${summary.sessions} sessions. Here’s what changed.`
-            : 'Here’s where you finished.'}
+            ? t('pages.expired.lede', { count: summary.sessions })
+            : t('pages.expired.ledeNoSessions')}
         </Text>
 
         <View style={[styles.card, { backgroundColor: colors.card }]}>
           {summary.calf != null ? (
             <Change
-              label="Calf raises"
+              label={t('pages.expired.calfRaises')}
               from={String(summary.calf.from)}
               to={String(summary.calf.to)}
               tint={meter.positive}
@@ -154,7 +156,7 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
           ) : null}
           {summary.pain != null ? (
             <Change
-              label="Morning pain"
+              label={t('pages.expired.morningPain')}
               from={String(summary.pain.from)}
               to={String(summary.pain.to)}
               tint={meter.positive}
@@ -163,14 +165,12 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
           ) : null}
           {summary.calf == null && summary.pain == null ? (
             <Text style={[styles.empty, { color: meter.caption }]}>
-              Your logs and retests are all still here.
+              {t('pages.expired.nothingMeasured')}
             </Text>
           ) : null}
         </View>
 
-        <Text style={[styles.keeps, { color: meter.caption }]}>
-          Your history stays either way.
-        </Text>
+        <Text style={[styles.keeps, { color: meter.caption }]}>{t('pages.expired.keeps')}</Text>
       </ScrollView>
 
       <View style={[styles.foot, { paddingBottom: insets.bottom + 12 }]}>
@@ -180,7 +180,9 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
 
         <PrimaryButton
           label={
-            busy === 'monthly' ? 'One moment…' : `Continue monthly · ${monthlyText}`
+            busy === 'monthly'
+              ? t('pages.expired.busy')
+              : t('pages.expired.monthly', { price: monthlyText })
           }
           onPress={() => void buy('monthly', monthlyPlan)}
           disabled={busy != null}
@@ -192,7 +194,7 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
           disabled={busy != null}
           style={({ pressed }) => [styles.secondary, pressed && { opacity: 0.6 }]}>
           <Text style={[styles.secondaryLabel, { color: meter.ink }]}>
-            Another 12 weeks · {programText}
+            {t('pages.expired.program', { price: programText })}
           </Text>
         </Pressable>
 
@@ -201,7 +203,9 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
           onPress={dismiss}
           disabled={busy != null}
           style={({ pressed }) => [styles.tertiary, pressed && { opacity: 0.6 }]}>
-          <Text style={[styles.tertiaryLabel, { color: meter.caption }]}>Not now</Text>
+          <Text style={[styles.tertiaryLabel, { color: meter.caption }]}>
+            {t('pages.expired.notNow')}
+          </Text>
         </Pressable>
       </View>
     </View>

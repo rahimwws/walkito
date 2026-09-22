@@ -19,6 +19,26 @@ export type CookbookBackground =
   /** A still in two layers: the base, and a glow added as light that dissipates through the glass as the sphere rises. */
   | { kind: 'layers'; base: number; glow: number };
 
+/**
+ * The words on the screen.
+ *
+ * Handed in as a prop rather than held on the theme, which is the one change
+ * this fork makes to upstream's shape. The app ships in three languages and
+ * every string here has to come out of the catalogue; leaving a copy on the
+ * theme as well would be two sources for one sentence, and the one nobody
+ * edits is the one that ends up on screen.
+ */
+export type CookbookCopy = {
+  hint: string;
+  /** What the gesture is, for a screen reader — the swipe cannot be seen. */
+  a11yHint: string;
+  headline: string;
+  struck: string;
+  kept: string;
+  phrases: readonly string[];
+  cta: string;
+};
+
 export type CookbookTheme = {
   id: CookbookId;
   background: CookbookBackground;
@@ -44,17 +64,11 @@ export type CookbookTheme = {
   };
   blurTint: 'light' | 'dark';
   statusBar: 'light' | 'dark';
-  copy: {
-    hint: string;
-    headline: string;
-    struck: string;
-    kept: string;
-    phrases: readonly string[];
-    cta: string;
-  };
 };
 
 export type LiquidGlassScreenProps = {
+  /** The screen's words, in the language the app is currently in. */
+  copy: CookbookCopy;
   /** `'gate'` (default) starts closed, with the dome on the bottom edge; `'open'` starts with the sphere already up and the plume out. */
   initialState?: 'gate' | 'open';
   onActionPress?: LiquidGlassActionPressHandler;

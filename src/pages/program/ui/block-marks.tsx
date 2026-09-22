@@ -4,6 +4,7 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 import Animated, { FadeIn, ReduceMotion } from 'react-native-reanimated';
 
 import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 /**
@@ -106,11 +107,18 @@ export const BlockFooter = memo(function BlockFooter({
   done,
   length,
 }: BlockFooterProps) {
+  const t = useT();
   const complete = done >= length;
   return (
     <Seam
-      label={`BLOCK ${index} · ${name.toUpperCase()}`}
-      caption={complete ? `${length} days done` : `${done} of ${length} done`}
+      // `blockName()` in `entities/program` still answers in English, so the
+      // name arrives untranslated; the frame around it does not.
+      label={t('pages.program.blockSeam', { index, name: name.toUpperCase() })}
+      caption={
+        complete
+          ? t('pages.program.blockAllDone', { count: length })
+          : t('pages.program.blockProgress', { done, length })
+      }
       muted={false}
     />
   );
@@ -132,13 +140,20 @@ export type BlockAheadProps = {
  * program does not actually make.
  */
 export const BlockAhead = memo(function BlockAhead({ index, name, begins }: BlockAheadProps) {
+  // Subscribed, because `begins` is an exercise title the caller resolved
+  // through the catalogue — it has to repaint when the language moves.
+  const t = useT();
   return (
     <Seam
-      label={`BLOCK ${index} · ${name.toUpperCase()}`}
+      label={t('pages.program.blockSeam', { index, name: name.toUpperCase() })}
       // "Heel raises begin here" reads well and "Short foot, standing begin
       // here" does not, and both titles come out of the same table. A label
       // rather than a sentence sidesteps the agreement entirely.
-      caption={begins != null ? `New: ${begins}` : 'The work changes here'}
+      caption={
+        begins != null
+          ? t('pages.program.blockNew', { exercise: begins })
+          : t('pages.program.blockChanges')
+      }
       muted
     />
   );
@@ -161,14 +176,19 @@ export const ProgramFinish = memo(function ProgramFinish({ day }: ProgramFinishP
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const accent = accents[scheme].amber;
+  const t = useT();
 
   return (
     <Animated.View
       entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)}
       style={styles.finish}>
       <FlagCheckeredIcon size={26} weight="fill" color={accent.fill} />
-      <Text style={[styles.finishDay, { color: colors.foreground }]}>DAY {day}</Text>
-      <Text style={[styles.caption, { color: meter.caption }]}>Program complete</Text>
+      <Text style={[styles.finishDay, { color: colors.foreground }]}>
+        {t('pages.program.finishDay', { day })}
+      </Text>
+      <Text style={[styles.caption, { color: meter.caption }]}>
+        {t('pages.program.finishCaption')}
+      </Text>
     </Animated.View>
   );
 });

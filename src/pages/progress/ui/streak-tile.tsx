@@ -2,7 +2,7 @@ import type { Icon } from 'phosphor-react-native';
 import { StyleSheet, Text, View } from 'react-native';
 
 import { fonts, meterColors, palette } from '@/shared/config';
-import { plural } from '@/shared/lib/format';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 /** The radius `PerformanceCard` uses. These sit directly under it, and two
@@ -32,6 +32,9 @@ export function StreakTile({ icon: Glyph, tint, days, label }: StreakTileProps) 
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
+  const t = useT();
+
+  const count = t('streak.dayCount', { count: days });
 
   return (
     // One tile, one fact. Left to itself the count and the caption are read as
@@ -41,11 +44,11 @@ export function StreakTile({ icon: Glyph, tint, days, label }: StreakTileProps) 
     <View
       accessible
       accessibilityRole="text"
-      accessibilityLabel={`${label}, ${plural(days, 'day')}`}
+      accessibilityLabel={t('streak.tileA11y', { label, days: count })}
       style={[styles.card, { backgroundColor: colors.card }]}>
       <Glyph size={ICON_SIZE} weight="fill" color={tint} />
       <View style={styles.text}>
-        <Text style={[styles.value, { color: colors.foreground }]}>{plural(days, 'day')}</Text>
+        <Text style={[styles.value, { color: colors.foreground }]}>{count}</Text>
         <Text style={[styles.label, { color: meter.caption }]} numberOfLines={1}>
           {label}
         </Text>

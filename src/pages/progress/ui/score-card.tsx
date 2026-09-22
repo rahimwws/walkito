@@ -3,6 +3,7 @@ import Animated, { useAnimatedProps } from 'react-native-reanimated';
 import Svg, { Circle } from 'react-native-svg';
 
 import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import { useCountUp } from '../model/use-count-up';
@@ -43,7 +44,8 @@ const WASH = {
 export type ScoreCardProps = {
   /** 0–100. Drives the number and how far the ring closes. */
   score: number;
-  /** Word under the number. */
+  /** Word under the number. Defaults to the translated "Score" — a default
+   * parameter cannot, because the value comes from a hook. */
   scoreLabel?: string;
   title: string;
   /** The line that states the streak. */
@@ -60,11 +62,14 @@ export type ScoreCardProps = {
  * number is — and it is why this card cannot congratulate you in green and
  * scold you in red. The number itself is ink for the same reason.
  */
-export function ScoreCard({ score, scoreLabel = 'Score', title, headline, note }: ScoreCardProps) {
+export function ScoreCard({ score, scoreLabel, title, headline, note }: ScoreCardProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const accent = accents[scheme].violet;
+  const t = useT();
+
+  const label = scoreLabel ?? t('progress.score');
 
   const r = (RING - RING_WIDTH) / 2;
   const circumference = 2 * Math.PI * r;
@@ -99,12 +104,12 @@ export function ScoreCard({ score, scoreLabel = 'Score', title, headline, note }
         <View
           accessible
           accessibilityRole="progressbar"
-          accessibilityLabel={scoreLabel}
+          accessibilityLabel={label}
           accessibilityValue={{
             min: 0,
             max: 100,
             now: Math.round(settled),
-            text: `${Math.round(settled)} out of 100`,
+            text: t('progress.scoreA11y', { score: Math.round(settled) }),
           }}
           style={{ width: RING, height: RING }}>
           <Svg width={RING} height={RING}>
@@ -136,7 +141,7 @@ export function ScoreCard({ score, scoreLabel = 'Score', title, headline, note }
 
           <View style={styles.hollow} pointerEvents="none">
             <Text style={[styles.score, { color: meter.ink }]}>{display}</Text>
-            <Text style={[styles.scoreLabel, { color: meter.label }]}>{scoreLabel}</Text>
+            <Text style={[styles.scoreLabel, { color: meter.label }]}>{label}</Text>
           </View>
         </View>
 

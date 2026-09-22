@@ -13,10 +13,11 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import { OPTION_ICONS, SPORT_ICONS } from '../config/option-icons';
-import type { OnboardingOption } from '../model/steps';
+import type { ResolvedOption } from '../model/steps';
 
 /** Small on purpose — the reference rows are barely taller than their label,
  * which is what lets five of them sit above the fold without scrolling. */
@@ -48,7 +49,7 @@ const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const IDLE_CHECK = { light: '#D3D3D8', dark: '#3A3A3E' } as const;
 
 export type ChoiceStepProps = {
-  options: readonly OnboardingOption[];
+  options: readonly ResolvedOption[];
   selected: readonly string[];
   multi: boolean;
   max?: number;
@@ -70,6 +71,7 @@ export type ChoiceStepProps = {
 export function ChoiceStep({ options, selected, multi, max, art = 'option', onChange }: ChoiceStepProps) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
+  const t = useT();
 
   /**
    * The option the cap just pushed off the list, if any.
@@ -78,8 +80,12 @@ export function ChoiceStep({ options, selected, multi, max, art = 'option', onCh
    * the user made two taps ago disappears from a list they are not looking at,
    * and the only evidence is a disc that quietly went grey somewhere above.
    * Saying which one left turns a glitch into a rule.
+   *
+   * The cap travels with the label rather than being read off `max` at render
+   * time: the sentence needs both, and this is the only place where the two are
+   * known to agree.
    */
-  const [swapped, setSwapped] = useState<string | null>(null);
+  const [swapped, setSwapped] = useState<{ label: string; cap: number } | null>(null);
 
   // The page reuses one `ChoiceStep` for every choice screen, so stepping
   // between two of them keeps this state. Keyed on the options themselves —
@@ -115,9 +121,9 @@ export function ChoiceStep({ options, selected, multi, max, art = 'option', onCh
     const kept = over ? next.slice(next.length - max) : next;
     onChange(kept);
     const dropped = over ? next.find((v) => !kept.includes(v)) : undefined;
-    setSwapped(
-      dropped == null ? null : (options.find((o) => o.value === dropped)?.label ?? null),
-    );
+    const label =
+      dropped == null ? null : (options.find((o) => o.value === dropped)?.label ?? null);
+    setSwapped(label == null || max == null ? null : { label, cap: max });
   };
 
   // The sport question is the one with eight short, single-word answers.
@@ -155,7 +161,7 @@ export function ChoiceStep({ options, selected, multi, max, art = 'option', onCh
           does not tell anyone off. */}
       {swapped != null && (
         <Text accessibilityLiveRegion="polite" style={[styles.chipLabel, { color: meter.caption }]}>
-          {`Two at a time — ${swapped} was swapped out.`}
+          {t('onboarding.challenge.swapped', { count: swapped.cap, label: swapped.label })}
         </Text>
       )}
     </View>
@@ -175,7 +181,7 @@ function ChoiceChip({
   selected,
   onPress,
 }: {
-  option: OnboardingOption;
+  option: ResolvedOption;
   selected: boolean;
   onPress: () => void;
 }) {
@@ -249,7 +255,7 @@ function ChoiceRow({
   art: artKind,
   onPress,
 }: {
-  option: OnboardingOption;
+  option: ResolvedOption;
   selected: boolean;
   art: 'option' | 'sport';
   onPress: () => void;

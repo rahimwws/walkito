@@ -19,6 +19,7 @@ import Svg, {
 } from 'react-native-svg';
 
 import { accents, fonts, meterColors, palette, primaryButton } from '@/shared/config';
+import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 export const PAIN_MIN = 0;
@@ -115,16 +116,22 @@ export function painColor(score: number, scheme: Scheme): string {
  * is a word from a clinical form and everyone reads it differently; "you are
  * working around it" is a test a person can actually apply to their morning,
  * which is what makes two people's 5 mean roughly the same thing.
+ *
+ * Keys rather than words. The band a score falls in is arithmetic and belongs
+ * here; what that band is called is a translation and belongs in the
+ * catalogue, where the constraint that these describe rather than grade can be
+ * stated once for all three languages.
  */
 const BANDS = [
-  { upTo: 0, label: 'Nothing', blurb: 'No pain to report today.' },
-  { upTo: 2, label: 'Barely there', blurb: 'You would forget it if nobody asked.' },
-  { upTo: 4, label: 'Noticeable', blurb: 'You feel it, but it changes nothing you do.' },
-  { upTo: 6, label: 'Sore', blurb: 'You are working around it without thinking.' },
-  { upTo: 8, label: 'Hurts', blurb: 'It is deciding things for you now.' },
-  { upTo: 10, label: 'Severe', blurb: 'Standing on it is the problem, not running.' },
-] as const;
+  { upTo: 0, label: 'home.bandNothing', blurb: 'home.bandNothingBlurb' },
+  { upTo: 2, label: 'home.bandBarely', blurb: 'home.bandBarelyBlurb' },
+  { upTo: 4, label: 'home.bandNoticeable', blurb: 'home.bandNoticeableBlurb' },
+  { upTo: 6, label: 'home.bandSore', blurb: 'home.bandSoreBlurb' },
+  { upTo: 8, label: 'home.bandHurts', blurb: 'home.bandHurtsBlurb' },
+  { upTo: 10, label: 'home.bandSevere', blurb: 'home.bandSevereBlurb' },
+] as const satisfies readonly { upTo: number; label: Key; blurb: Key }[];
 
+/** Which band a score falls in, as the two keys that name it. */
 export function painBand(score: number) {
   return BANDS.find((band) => score <= band.upTo) ?? BANDS[BANDS.length - 1];
 }
@@ -150,6 +157,7 @@ export function PainScale({ score, onChange, usual }: PainScaleProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
+  const t = useT();
 
   const [width, setWidth] = useState(0);
   const span = Math.max(width - PAD * 2, 1);
@@ -277,10 +285,10 @@ export function PainScale({ score, onChange, usual }: PainScaleProps) {
               // eye; read out, caps are what makes a screen reader spell.
               accessibilityLabel={
                 above
-                  ? 'Above your usual range'
+                  ? t('home.rangeAbove')
                   : below
-                    ? 'Below your usual range'
-                    : 'Within your usual range'
+                    ? t('home.rangeBelow')
+                    : t('home.rangeWithin')
               }
               style={[
                 styles.badgeText,
@@ -290,7 +298,11 @@ export function PainScale({ score, onChange, usual }: PainScaleProps) {
                 // clears 6:1 the whole way across.
                 { color: above || below ? primaryButton.dark.label : meter.caption },
               ]}>
-              {above ? 'ABOVE USUAL RANGE' : below ? 'BELOW USUAL RANGE' : 'WITHIN USUAL RANGE'}
+              {above
+                ? t('home.rangeAboveChip')
+                : below
+                  ? t('home.rangeBelowChip')
+                  : t('home.rangeWithinChip')}
             </Text>
           </View>
         </Animated.View>
@@ -304,7 +316,7 @@ export function PainScale({ score, onChange, usual }: PainScaleProps) {
           // increment/decrement swipe, and the actions below are what it calls.
           accessible
           accessibilityRole="adjustable"
-          accessibilityLabel="Pain today"
+          accessibilityLabel={t('home.painToday')}
           // `now`/`min`/`max` for the range itself; `text` because iOS speaks
           // the three of them as a percentage, and "50%" is not what a 5 on a
           // pain scale means.
@@ -312,11 +324,17 @@ export function PainScale({ score, onChange, usual }: PainScaleProps) {
             min: PAIN_MIN,
             max: PAIN_MAX,
             now: score,
-            text: `${score} out of ${PAIN_MAX}, ${painBand(score).label.toLowerCase()}`,
+            // Lower-cased with the locale's own rules: the band is a sentence
+            // opener in the catalogue and lands mid-phrase here.
+            text: t('home.painValueA11y', {
+              score,
+              max: PAIN_MAX,
+              band: t(painBand(score).label).toLocaleLowerCase(),
+            }),
           }}
           accessibilityActions={[
-            { name: 'increment', label: 'More pain' },
-            { name: 'decrement', label: 'Less pain' },
+            { name: 'increment', label: t('home.morePain') },
+            { name: 'decrement', label: t('home.lessPain') },
           ]}
           onAccessibilityAction={(event) => {
             if (event.nativeEvent.actionName === 'increment') nudge(1);
@@ -466,9 +484,9 @@ export function PainScale({ score, onChange, usual }: PainScaleProps) {
           { marginLeft: Math.min(usualFrom, Math.max(width - 152, 0)) },
         ]}>
         <Text
-          accessibilityLabel={`Usual range, ${usual.low} to ${usual.high}`}
+          accessibilityLabel={t('home.usualRangeA11y', { low: usual.low, high: usual.high })}
           style={[styles.legendText, { color: meter.label }]}>
-          USUAL RANGE {usual.low}–{usual.high}
+          {t('home.usualRangeLegend', { low: usual.low, high: usual.high })}
         </Text>
       </View>
     </View>
