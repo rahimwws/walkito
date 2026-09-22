@@ -56,10 +56,10 @@ import { ProtocolSheet } from './protocol-sheet';
  * for artwork nobody would see at full size.
  */
 const ART: Partial<Record<ProtocolId, ImageSourcePropType>> = {
-  pre_run: require('@assets/quick/pre-run.jpg'),
-  post_run: require('@assets/quick/post-run.jpg'),
-  at_work: require('@assets/quick/at-work.jpg'),
-  morning: require('@assets/quick/morning.jpg'),
+  pre_run: require('@assets/quick/warmup.jpg'),
+  post_run: require('@assets/quick/cooldown.jpg'),
+  at_work: require('@assets/quick/desk.jpg'),
+  morning: require('@assets/quick/bedside.jpg'),
 };
 
 /** One glyph per protocol, from the set already in the app. */
@@ -197,13 +197,40 @@ const styles = StyleSheet.create({
    * what it did. Overrides `FeatureCard`'s own near-square ratio, which is
    * sized for two cards abreast.
    */
-  featured: { marginTop: 20, alignSelf: 'stretch', width: '100%', aspectRatio: 2.05 },
+  featured: {
+    marginTop: 20,
+    alignSelf: 'stretch',
+    width: '100%',
+    aspectRatio: 2.05,
+    // Same reason as `tile`: `FeatureCard` carries `flex: 1`, and leaving its
+    // grow and shrink in place lets a parent decide this card's height instead
+    // of the aspect ratio.
+    flexGrow: 0,
+    flexShrink: 0,
+  },
   grid: {
     marginTop: 20,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: 12,
+    justifyContent: 'space-between',
+    rowGap: 12,
   },
-  /** Two to a row, with the gap taken out of the width. */
-  tile: { flexGrow: 1, flexBasis: '47%' },
+  /**
+   * Half a row, and never more.
+   *
+   * All three flex properties are stated, and that is the whole point.
+   * `FeatureCard` sets `flex: 1` on its own root, which is
+   * `grow 1 / shrink 1 / basis 0` — so in a row a plain `width` does nothing:
+   * the basis of zero wins and every card in the row divides it equally. Five
+   * cards came out as five slivers.
+   *
+   * Before that it was `flexGrow: 1` with a basis, which is right for four
+   * cards and wrong for five: the odd one out had the row to itself, grew to
+   * full width, and the aspect ratio turned that into a panel most of a screen
+   * tall.
+   *
+   * Fixed on all three, the fifth card is the same size as the other four and
+   * the empty half is simply empty.
+   */
+  tile: { flexGrow: 0, flexShrink: 0, flexBasis: '48.5%' },
 });
