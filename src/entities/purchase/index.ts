@@ -4,6 +4,7 @@ export {
   PRODUCTS,
   PRINTED_PRICES,
   PROGRAM_MONTHS,
+  PROGRAM_PACKAGE,
   type Offering,
   type Plan,
   type Product,

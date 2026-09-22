@@ -31,6 +31,7 @@ import {
   OFFERINGS,
   PRINTED_PRICES as PRINTED,
   PROGRAM_MONTHS,
+  PROGRAM_PACKAGE,
   purchases,
   type Offering,
 } from '@/entities/purchase';
@@ -173,6 +174,14 @@ export function OfferPage() {
    */
   const [offering, setOffering] = useState<Offering | null>(null);
   const [standard, setStandard] = useState<Offering | null>(null);
+  /**
+   * Whether the store has answered yet.
+   *
+   * Needed to tell "still loading" from "the dashboard has no such package".
+   * Both look like a null plan, and only one of them is a row the user must not
+   * be allowed to tap.
+   */
+  const [loaded, setLoaded] = useState(false);
   useEffect(() => {
     if (!purchases.configured) return;
     let live = true;
@@ -197,6 +206,48 @@ export function OfferPage() {
   const currency = programPlan?.product.currencyCode ?? monthlyPlan?.product.currencyCode;
 
   const money = (amount: number) => formatPrice(amount, currency);
+
+  /**
+   * A row the store answered about and had nothing for.
+   *
+   * This is not hypothetical and not the user's problem: the offering came back
+   * with `$rc_monthly` wired up and no `program` package at all, so the
+   * programme row printed its fallback price, looked ordinary, and failed only
+   * once somebody selected it and pressed Continue — reporting that the App
+   * Store was unreachable, which it plainly was not since the monthly price on
+   * the same screen had just come from it.
+   *
+   * Guarded on `loaded` so a row is never disabled merely because the fetch has
+   * not landed.
+   */
+  const programMissing = loaded && programPlan == null;
+  const monthlyMissing = loaded && monthlyPlan == null;
+
+  useEffect(() => {
+    if (!loaded) return;
+    // Never leave the selection on a row that cannot be bought.
+    if (programMissing && tier === 'program') setTier('monthly');
+    else if (monthlyMissing && tier === 'monthly') setTier('program');
+  }, [loaded, programMissing, monthlyMissing, tier]);
+
+  useEffect(() => {
+    if (!__DEV__ || !loaded) return;
+    // The diagnosis, at the moment it is knowable. Without it this
+    // misconfiguration surfaces as a wrong error message after a tap.
+    if (programMissing) {
+      console.error(
+        `[paywall] Offering "${offering?.identifier ?? offeringId}" has no "${PROGRAM_PACKAGE}" ` +
+          'package, so the 12-week programme cannot be sold. Add it in the RevenueCat ' +
+          'dashboard (Offerings → Packages) and attach the programme product to it.',
+      );
+    }
+    if (monthlyMissing) {
+      console.error(
+        `[paywall] Offering "${offering?.identifier ?? offeringId}" has no $rc_monthly package, ` +
+          'so the subscription cannot be sold.',
+      );
+    }
+  }, [loaded, programMissing, monthlyMissing, offering, offeringId]);
 
   /**
    * What each plan costs, from the store, with the printed figures as a
@@ -405,10 +456,16 @@ export function OfferPage() {
     const plan = tier === 'program' ? programPlan : monthlyPlan;
     if (plan == null) {
       setBusy(false);
-      // No plan means no store reached this sheet. Saying a charge failed would
-      // describe a transaction never attempted.
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
-      setNotice('The App Store isn’t reachable right now. Try again in a moment.');
+      // Two different faults, and they were sharing one sentence. A store that
+      // never answered is unreachable; a store that answered without this
+      // package is misconfigured, and telling somebody to try again in a moment
+      // sends them to retry something that will never succeed.
+      setNotice(
+        loaded
+          ? 'That plan isn’t available right now. Try the other one.'
+          : 'The App Store isn’t reachable right now. Try again in a moment.',
+      );
       return;
     }
     const result = await purchases.buy(plan);
