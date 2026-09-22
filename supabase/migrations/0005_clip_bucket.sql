@@ -26,6 +26,12 @@ on conflict (id) do update
       allowed_mime_types = excluded.allowed_mime_types;
 
 -- Read for everyone, including the anonymous identity the app signs in as.
+--
+-- Worth being honest about what this does and does not do: the bucket is
+-- `public = true`, and the public object endpoint the app uses does not consult
+-- row level security at all. So this policy is not what serves the clips. It
+-- covers the authenticated storage path, and it is what would still hold if the
+-- bucket were ever flipped to private — which is the only reason to keep it.
 drop policy if exists "clips are public" on storage.objects;
 create policy "clips are public" on storage.objects
   for select using (bucket_id = 'exercise-clips');
