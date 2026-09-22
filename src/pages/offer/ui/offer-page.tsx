@@ -5,7 +5,7 @@ import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
-import { Alert, AppState, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { AppState, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   FadeIn,
@@ -24,10 +24,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { cancelWinback, notificationsAllowed, scheduleWinback } from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
 import { LEGAL, PRIMARY, accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
-import { resetOnboarding } from '@/entities/session';
-import { kv } from '@/shared/lib/storage';
 import { useColorScheme } from '@/shared/lib/theme';
-import { clearClips } from '@/widgets/session-player';
 import { Linking } from 'react-native';
 
 import {
@@ -594,7 +591,6 @@ export function OfferPage() {
           on screen. */}
       <View style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 20) + 8 }]}>
         <PrimaryButton label={busy ? 'Processing…' : 'Continue'} disabled={busy} onPress={start} />
-        <DevEscape />
       </View>
 
       {/* Owns the dismissal. The paywall vanishing into Home is what backing out
@@ -721,56 +717,6 @@ function TierRow({
 }
 
 
-/**
- * The way back to the first screen, from the one screen that has no way back.
- *
- * Development builds only. The paywall is a hard gate — no tabs behind it, no
- * dismissal — which is correct for a user and a dead end for anyone testing:
- * the reset control lives in the profile, the profile is inside the tabs, and
- * the tabs are what the gate is holding shut. So the only escape was to delete
- * the app, which also deletes the clips and the account.
- *
- * `__DEV__` is false in every release build, so this does not exist in one.
- * That matters here more than it does in the profile: a "wipe everything"
- * control on the paywall would be a way past the paywall.
- */
-function DevEscape() {
-  const scheme = useColorScheme();
-  const meter = meterColors[scheme];
-
-  if (!__DEV__) return null;
-
-  const confirm = () => {
-    Haptics.selectionAsync();
-    Alert.alert(
-      'Start from the first screen?',
-      'Clears onboarding, the programme, the pain log and the cached clips on ' +
-        'this device. Your account and invite code stay. Development only.',
-      [
-        { text: 'Cancel', style: 'cancel' },
-        {
-          text: 'Reset',
-          style: 'destructive',
-          onPress: () => {
-            // Storage first, then the flag: `resetOnboarding` flips the guard in
-            // the root layout, and doing that before the wipe would mount the
-            // questionnaire over data that is about to vanish.
-            kv.clearAll();
-            clearClips();
-            resetOnboarding();
-          },
-        },
-      ],
-    );
-  };
-
-  return (
-    <Pressable accessibilityRole="button" onPress={confirm} style={styles.devEscape}>
-      <Text style={[styles.terms, { color: meter.unit }]}>Reset to first screen (dev)</Text>
-    </Pressable>
-  );
-}
-
 const styles = StyleSheet.create({
   sheet: {
     flex: 1,
@@ -789,7 +735,6 @@ const styles = StyleSheet.create({
   cta: {
     paddingTop: 4,
   },
-  devEscape: { alignItems: 'center', paddingTop: 10 },
   /** Same size and weight as `tierNote`, which is the billing line it follows.
    * Pushed to the bottom with the button so it reads as part of the commit,
    * not as another feature row. */
