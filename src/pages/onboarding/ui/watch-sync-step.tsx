@@ -1,5 +1,5 @@
 import { useVideoPlayer, VideoView } from 'expo-video';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Linking, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 
 import { fonts, meterColors, palette } from '@/shared/config';
@@ -22,7 +22,6 @@ import { SYNC_GUIDES, type WatchBrand } from '../config/watch-guides';
  * lines of instruction and a button.
  */
 const CARD_MARGIN = 20;
-const CARD_MAX_HEIGHT_FRACTION = 0.46;
 const CARD_RADIUS = 32;
 /** 600 × 1304 — the encoded clip. Kept as one ratio so the card cannot drift
  * out of step with the footage and start letterboxing. */
@@ -50,7 +49,7 @@ export function WatchSyncStep({ brand }: WatchSyncStepProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
-  const { width, height } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   const guide = SYNC_GUIDES[brand];
 
@@ -77,8 +76,22 @@ export function WatchSyncStep({ brand }: WatchSyncStepProps) {
     player.play();
   }, [player, guide.clip]);
 
+  /**
+   * The height left over for the clip, measured rather than guessed.
+   *
+   * This was `height * 0.46` — nearly half the *display*, on a step that also
+   * carries a title, a sub-line, three instructions, a link and the flow's
+   * button. The total came to more than the body, and because the root centres
+   * its children the excess spilled equally in both directions: the clipped
+   * edge was the screen's own title, above a step that had no idea it was
+   * overflowing.
+   *
+   * Measuring the stage means the card can only ever be as tall as the space
+   * genuinely left after everything else has been laid out, on any device.
+   */
+  const [stage, setStage] = useState(0);
   const cardHeight = Math.min(
-    height * CARD_MAX_HEIGHT_FRACTION,
+    stage,
     // Never wider than the margins allow, however tall the display is.
     (width - CARD_MARGIN * 2) / CLIP_ASPECT,
   );
@@ -99,8 +112,14 @@ export function WatchSyncStep({ brand }: WatchSyncStepProps) {
 
       {/* Only when there is something to show. An empty rounded rectangle on a
           screen that is otherwise three clear instructions reads as a failed
-          download, which is worse than the instructions standing alone. */}
+          download, which is worse than the instructions standing alone.
+
+          The stage claims the leftover height and the card is sized from it,
+          so the clip shrinks to fit rather than pushing the screen apart. */}
       {guide.clip != null && (
+        <View
+          style={styles.stage}
+          onLayout={(event) => setStage(event.nativeEvent.layout.height)}>
         <View style={[styles.card, { width: cardWidth, height: cardHeight }]}>
           <VideoView
             player={player}
@@ -114,6 +133,7 @@ export function WatchSyncStep({ brand }: WatchSyncStepProps) {
             // one step of a form.
             allowsPictureInPicture={false}
           />
+        </View>
         </View>
       )}
 
@@ -139,8 +159,18 @@ const styles = StyleSheet.create({
   root: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    // Not centred. Centring a column that overflows pushes half the excess off
+    // the top, which is how this step came to clip the title above it.
+    justifyContent: 'flex-start',
     gap: 20,
+  },
+  /** Takes whatever height is left once the instructions and the link have
+   * had theirs, and hands it to the card. */
+  stage: {
+    flex: 1,
+    alignSelf: 'stretch',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   steps: {
     alignSelf: 'stretch',
