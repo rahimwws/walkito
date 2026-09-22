@@ -175,40 +175,20 @@ const styles = StyleSheet.create({
    * what it did. Overrides `FeatureCard`'s own near-square ratio, which is
    * sized for two cards abreast.
    */
-  featured: {
-    marginTop: 20,
-    alignSelf: 'stretch',
-    width: '100%',
-    aspectRatio: 2.05,
-    // Same reason as `tile`: `FeatureCard` carries `flex: 1`, and leaving its
-    // grow and shrink in place lets a parent decide this card's height instead
-    // of the aspect ratio.
-    flexGrow: 0,
-    flexShrink: 0,
-  },
+  featured: { marginTop: 20, alignSelf: 'stretch', width: '100%', aspectRatio: 2.05 },
   grid: {
     marginTop: 20,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    rowGap: 12,
+    gap: 12,
   },
   /**
-   * Half a row, and never more.
+   * Two to a row, with the gap taken out of the width — and the fifth card
+   * alone on the last row, where `flexGrow` takes it to the full width.
    *
-   * All three flex properties are stated, and that is the whole point.
-   * `FeatureCard` sets `flex: 1` on its own root, which is
-   * `grow 1 / shrink 1 / basis 0` — so in a row a plain `width` does nothing:
-   * the basis of zero wins and every card in the row divides it equally. Five
-   * cards came out as five slivers.
-   *
-   * Before that it was `flexGrow: 1` with a basis, which is right for four
-   * cards and wrong for five: the odd one out had the row to itself, grew to
-   * full width, and the aspect ratio turned that into a panel most of a screen
-   * tall.
-   *
-   * Fixed on all three, the fifth card is the same size as the other four and
-   * the empty half is simply empty.
+   * That is the layout the spec drew: the morning protocol is the odd one out
+   * and runs full width under the grid. I briefly pinned all three flex
+   * properties to stop it, having read it as a bug; it was the design.
    */
-  tile: { flexGrow: 0, flexShrink: 0, flexBasis: '48.5%' },
+  tile: { flexGrow: 1, flexBasis: '47%' },
 });
