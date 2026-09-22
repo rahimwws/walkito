@@ -40,7 +40,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 
 import { SessionView } from '@/widgets/session-player';
 
-import { ZONE_LABELS, type LegZone } from '../model/leg-zones';
+import { MAX_ZONES, ZONE_LABELS, toggleZone, type LegZone } from '../model/leg-zones';
 import { reliefIdsFor } from '../model/zone-relief';
 import { LegMap } from './leg-map';
 
@@ -338,11 +338,19 @@ function Sheet({
    * takes a moment.
    */
   const [zones, setZones] = useState<readonly LegZone[]>([]);
-  const toggleZone = (zone: LegZone) => {
+  /** Set when a fourth zone is refused, cleared by the next accepted tap. The
+   * map has to answer every tap — see `toggleZone`. */
+  const [zonesFull, setZonesFull] = useState(false);
+  const onZoneTap = (zone: LegZone) => {
+    const next = toggleZone(zones, zone);
+    if (next == null) {
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+      setZonesFull(true);
+      return;
+    }
     Haptics.selectionAsync();
-    setZones((current) =>
-      current.includes(zone) ? current.filter((z) => z !== zone) : [...current, zone],
-    );
+    setZonesFull(false);
+    setZones(next);
   };
 
   /**
@@ -450,12 +458,14 @@ function Sheet({
           before the hand starts the other. It also takes the leftover height,
           so the scale and the button keep theirs on a short screen. */}
       <View style={styles.legStage}>
-        <LegMap selected={zones} onToggle={toggleZone} />
+        <LegMap selected={zones} onToggle={onZoneTap} />
       </View>
       <Text style={[styles.zoneLine, { color: meter.caption }]}>
-        {zones.length === 0
-          ? 'Tap where it hurts'
-          : `${zones.map((zone) => ZONE_LABELS[zone]).join(' · ')} — ${reliefMoves[0]} next`}
+        {zonesFull
+          ? `Three at a time — tap one to swap it`
+          : zones.length === 0
+            ? `Tap where it hurts — up to ${MAX_ZONES}`
+            : `${zones.map((zone) => ZONE_LABELS[zone]).join(' · ')} — ${reliefMoves[0]} next`}
       </Text>
 
       <View style={styles.scale}>

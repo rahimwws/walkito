@@ -1,11 +1,14 @@
 import { describe, expect, test } from 'bun:test';
 
 import {
+  MAX_ZONES,
   PAIN_ZONES,
   ZONE_LABELS,
+  toggleZone,
   zoneAt,
   type LegZone,
 } from '../src/pages/home/model/leg-zones';
+import { RELIEF_LIMIT } from '../src/pages/home/model/zone-relief';
 
 /**
  * Which zone a tap on the leg means.
@@ -84,5 +87,44 @@ describe('the zone list', () => {
       return true;
     });
     expect(unreachable).toEqual([]);
+  });
+});
+
+/**
+ * Three at a time.
+ *
+ * The relief session runs to four exercises, so a fourth zone could only be
+ * honoured by giving some zone nothing.
+ */
+describe('the selection cap', () => {
+  test('lets three in', () => {
+    let zones: readonly LegZone[] = [];
+    for (const zone of ['heel', 'calf', 'arch'] as LegZone[]) {
+      const next = toggleZone(zones, zone);
+      expect(next).not.toBeNull();
+      zones = next ?? zones;
+    }
+    expect(zones).toEqual(['heel', 'calf', 'arch']);
+  });
+
+  test('refuses the fourth, and says so rather than returning the list', () => {
+    // Null, not the unchanged array. The caller has to be able to tell "nothing
+    // changed" from "nothing happened" — a map that silently ignores a tap is
+    // the failure the hit testing was rewritten to remove.
+    expect(toggleZone(['heel', 'calf', 'arch'], 'toes')).toBeNull();
+  });
+
+  test('never refuses a deselect, even at the cap', () => {
+    // Otherwise the cap is a trap: full, and no way to change your mind.
+    expect(toggleZone(['heel', 'calf', 'arch'], 'calf')).toEqual(['heel', 'arch']);
+  });
+
+  test('frees a slot when one is removed', () => {
+    const freed = toggleZone(['heel', 'calf', 'arch'], 'calf') ?? [];
+    expect(toggleZone(freed, 'toes')).toEqual(['heel', 'arch', 'toes']);
+  });
+
+  test('the cap is never more than the relief session can carry', () => {
+    expect(MAX_ZONES).toBeLessThanOrEqual(RELIEF_LIMIT);
   });
 });

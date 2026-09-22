@@ -126,3 +126,34 @@ export function zoneAt(px: number, py: number, size: { width: number; height: nu
   }
   return bestDistance <= HIT_RADIUS ? best : null;
 }
+
+/**
+ * How many places can be marked at once.
+ *
+ * Three. The relief session runs to four exercises, so a fourth zone could only
+ * be honoured by giving some zone nothing — and a list of five aches is not a
+ * report the app can act on, it is a description of a bad week. Three is enough
+ * to say "heel, and the calf and achilles with it", which is the common picture
+ * for this condition.
+ */
+export const MAX_ZONES = 3;
+
+/**
+ * The new selection after tapping `zone`, or null when the tap is refused.
+ *
+ * Null rather than the unchanged list, so the caller can tell "nothing changed"
+ * from "nothing happened" and say so. Silently ignoring the tap is the exact
+ * failure the hit testing was just rewritten to remove — a map that does not
+ * respond reads as broken, whatever the reason.
+ *
+ * Deselecting is never refused. Being at the cap is what stops a fourth going
+ * in, and the way out of that has to stay open.
+ */
+export function toggleZone(
+  current: readonly LegZone[],
+  zone: LegZone,
+): readonly LegZone[] | null {
+  if (current.includes(zone)) return current.filter((z) => z !== zone);
+  if (current.length >= MAX_ZONES) return null;
+  return [...current, zone];
+}
