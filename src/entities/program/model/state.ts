@@ -47,6 +47,15 @@ export type DayLog = {
   /** Exercise ids actually done. */
   exercisesDone: string[];
   /**
+   * Where it hurt, as zone ids from the check-in's leg map.
+   *
+   * Optional, because every entry written before the map existed has none and a
+   * required field would make those unreadable. Empty and absent mean the same
+   * thing — nobody pointed at anything — which is why nothing distinguishes
+   * them.
+   */
+  painZones?: string[];
+  /**
    * When the session was finished, as epoch milliseconds.
    *
    * The date on the entry says which day it belongs to; this says when inside

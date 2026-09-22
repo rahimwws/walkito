@@ -39,6 +39,8 @@ import { useColorScheme } from '@/shared/lib/theme';
 
 import { SessionView } from '@/widgets/session-player';
 
+import { LegMap, ZONE_LABELS, type LegZone } from './leg-map';
+
 import { PAIN_MAX, PAIN_MIN, PainScale, painBand, painColor } from './pain-scale';
 
 const RADIUS = 36;
@@ -154,8 +156,8 @@ export function PainCheck({ onLogged }: PainCheckProps) {
    * acknowledgement is a timeout — an answer that only reached storage after
    * `PROGRAM_MS` would be lost by anyone who logged and immediately left.
    */
-  const record = (score: number) => {
-    writeLog(currentDay(), { painMorning: score });
+  const record = (score: number, zones: readonly LegZone[]) => {
+    writeLog(currentDay(), { painMorning: score, painZones: [...zones] });
     acknowledge(score);
   };
 
@@ -195,7 +197,8 @@ export function PainCheck({ onLogged }: PainCheckProps) {
               // "they have not been asked yet" and would go on adapting today
               // off yesterday's number; "no pain today" is an answer and has to
               // be stored as one.
-              record(0);
+              // No zones: nothing hurts, so there is nowhere to point at.
+              record(0, []);
               return;
             }
             setOpen(true);
@@ -218,10 +221,10 @@ export function PainCheck({ onLogged }: PainCheckProps) {
         onRequestClose={() => setOpen(false)}>
         <Sheet
           onClose={() => setOpen(false)}
-          onSaved={(score) => {
+          onSaved={(score, zones) => {
             setLogged(true);
             onLogged?.(false);
-            record(score);
+            record(score, zones);
           }}
         />
       </Modal>
@@ -315,14 +318,29 @@ function Sheet({
 }: {
   onClose: () => void;
   /** Carries the number up with it: the block above owns what gets said back,
-   * and it cannot say the right thing without knowing what was logged. */
-  onSaved: (score: number) => void;
+   * and it cannot say the right thing without knowing what was logged. The
+   * zones travel the same way, so the write stays in one place. */
+  onSaved: (score: number, zones: readonly LegZone[]) => void;
 }) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
   const { width } = useWindowDimensions();
+
+  /**
+   * Where it hurts, if they said. Optional on purpose — the number is the
+   * question this sheet exists to ask, and making the map compulsory would put
+   * a second obligation in front of a check-in whose whole value is that it
+   * takes a moment.
+   */
+  const [zones, setZones] = useState<readonly LegZone[]>([]);
+  const toggleZone = (zone: LegZone) => {
+    Haptics.selectionAsync();
+    setZones((current) =>
+      current.includes(zone) ? current.filter((z) => z !== zone) : [...current, zone],
+    );
+  };
 
   const usual = useMemo(usualRange, []);
   /** Held steady across renders: a fresh object every frame would hand the
@@ -356,7 +374,7 @@ function Sheet({
   const save = () => {
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
     setLogged(true);
-    onSaved(score);
+    onSaved(score, zones);
     // Under the line, the answer is filed and the sheet's job is done.
     if (score <= RELIEF_ABOVE) {
       onClose();
@@ -406,6 +424,20 @@ function Sheet({
         <PainScale score={score} onChange={setScore} usual={usual} />
       </View>
 
+      {/* Where, under how much. The number is the question; this is the detail
+          that makes it actionable, so it sits below rather than competing with
+          the readout. Takes the leftover height and no more — the drawing is
+          half again as tall as it is wide, and at full width it would push the
+          save button off a short screen. */}
+      <View style={styles.legStage}>
+        <LegMap selected={zones} onToggle={toggleZone} />
+      </View>
+      <Text style={[styles.zoneLine, { color: meter.caption }]}>
+        {zones.length === 0
+          ? 'Tap where it hurts'
+          : zones.map((zone) => ZONE_LABELS[zone]).join(' · ')}
+      </Text>
+
       <PrimaryButton
         label={logged ? 'Saved' : 'Save'}
         // The button is the colour of the answer it is about to commit. It is
@@ -422,13 +454,6 @@ function Sheet({
         onPress={save}
       />
 
-        <Pressable
-          accessibilityRole="button"
-          onPress={onClose}
-          hitSlop={10}
-          style={({ pressed }) => [styles.clear, pressed && { opacity: 0.5 }]}>
-          <Text style={[styles.sheetClose, { color: meter.label }]}>Clear entry</Text>
-        </Pressable>
       </Animated.View>
 
       {/* The offload, arriving from the right. It paints the page colour itself
@@ -656,8 +681,16 @@ const styles = StyleSheet.create({
   },
   /** Takes the slack, so the wedge sits against the button on a tall phone and
    * gives way before anything else on a short one. */
-  scale: { alignSelf: 'stretch', flex: 1, justifyContent: 'center', marginTop: 12 },
+  scale: { alignSelf: 'stretch', justifyContent: 'center', marginTop: 12 },
+  /** Claims what is left after the readout and the scale, and hands it to the
+   * drawing — the same measure-don't-guess the watch-sync step needed. */
+  legStage: { flex: 1, alignSelf: 'stretch', alignItems: 'center', marginTop: 10 },
+  zoneLine: {
+    fontSize: 13,
+    fontFamily: fonts.medium,
+    letterSpacing: -0.1,
+    textAlign: 'center',
+    marginBottom: 12,
+  },
   save: { alignSelf: 'stretch' },
-  clear: { paddingVertical: 4 },
-  sheetClose: { marginTop: 14, fontSize: 16, fontFamily: fonts.semibold },
 });
