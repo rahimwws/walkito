@@ -8,7 +8,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import Svg, { Circle, Path } from 'react-native-svg';
 
-import { accents, meterColors, palette } from '@/shared/config';
+import { accents } from '@/shared/config';
 
 import {
   PAIN_ZONES,
@@ -102,6 +102,37 @@ const SHAPES: readonly { zone: LegZone; d: string; tone: 'muscle' | 'bone' | 'te
   },
 ];
 
+/**
+ * The drawing's own tones, and why they are not theme tokens.
+ *
+ * They were. `muscle` came from `meterColors.iconTile` and `bone` from
+ * `divider`, and on the dark scheme those are the same value —
+ * `rgba(255,255,255,0.08)` both — with `track` a barely different 0.14. Over a
+ * near-black silhouette that made every muscle, the shin and the tendon render
+ * as one flat slab: nothing separated, so nothing looked like it was changing
+ * when a zone was marked. Only the single red shape read at all.
+ *
+ * An anatomical figure needs material tones — light falling on different
+ * tissue — which is a different job from the semantic tokens, and no amount of
+ * picking among those produces a legible five-step ramp. Opaque rather than
+ * translucent white so the steps hold their spacing whatever is behind them,
+ * and so the crossfade to red does not pass through a muddy alpha blend.
+ */
+const TONES = {
+  dark: {
+    silhouette: '#2A2A31',
+    muscle: '#42434D',
+    bone: '#52535E',
+    tendon: '#62636F',
+  },
+  light: {
+    silhouette: '#DEDEE5',
+    muscle: '#BEBEC9',
+    bone: '#A4A4B2',
+    tendon: '#8A8A9B',
+  },
+} as const;
+
 const AnimatedPath = Animated.createAnimatedComponent(Path);
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 
@@ -155,8 +186,6 @@ type Props = {
 
 export function LegMap({ selected, onToggle }: Props) {
   const scheme = useColorScheme();
-  const colors = palette[scheme];
-  const meter = meterColors[scheme];
 
   /**
    * Red, and this is the one place in the app allowed to use it.
@@ -169,12 +198,8 @@ export function LegMap({ selected, onToggle }: Props) {
    */
   const marked = accents[scheme].red.fill;
 
-  // The silhouette and the gaps between muscles. Built from the theme so the
-  // drawing sits on the sheet rather than on a slab of its own near-black.
-  const silhouette = colors.card;
-  const muscle = meter.iconTile;
-  const bone = meter.divider;
-  const tendon = meter.track;
+  const tones = TONES[scheme];
+  const { silhouette, muscle, bone, tendon } = tones;
 
   const toneOf = (tone: 'muscle' | 'bone' | 'tendon') =>
     tone === 'bone' ? bone : tone === 'tendon' ? tendon : muscle;
