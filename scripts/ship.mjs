@@ -21,6 +21,8 @@
 import { execFileSync, spawnSync } from 'node:child_process';
 import { parseArgs } from 'node:util';
 
+import { easArgs } from './eas-bin.mjs';
+
 const { values } = parseArgs({
   options: {
     channel: { type: 'string', default: 'production' },
@@ -105,7 +107,8 @@ const subject = message ?? capture('git', ['log', '-1', '--pretty=%s']);
 
 if (decision.verdict === 'update') {
   console.log(bold('\nPublishing update'));
-  run('eas', ['update', '--channel', channel, '--platform', platform, '--message', subject, '--non-interactive']);
+  const update = easArgs(['update', '--channel', channel, '--platform', platform, '--message', subject, '--non-interactive']);
+  run(update.file, update.argv);
   console.log(
     `\n${bold('Published.')} Devices on "${channel}" pick it up on their next launch.` +
       `\n${dim('Roll back with: eas update:rollback')}\n`,
@@ -116,7 +119,8 @@ if (decision.verdict === 'update') {
     dim('  A build is required, so this goes through the store rather than over the air.\n'),
   );
   const profile = channel === 'production' ? 'production' : channel;
-  run('eas', ['build', '--platform', platform, '--profile', profile, '--non-interactive']);
+  const build = easArgs(['build', '--platform', platform, '--profile', profile, '--non-interactive']);
+  run(build.file, build.argv);
   console.log(
     `\n${bold('Built.')} Submit with: eas submit --platform ${platform} --profile ${profile}\n`,
   );

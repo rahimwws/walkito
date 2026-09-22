@@ -26,6 +26,8 @@
 import { execFileSync } from 'node:child_process';
 import { parseArgs } from 'node:util';
 
+import { easArgs } from './eas-bin.mjs';
+
 const { values } = parseArgs({
   options: {
     channel: { type: 'string', default: 'production' },
@@ -37,7 +39,10 @@ const { values } = parseArgs({
 const { channel, platform } = values;
 
 function eas(args) {
-  return execFileSync('eas', args, {
+  // Resolved rather than named: the CLI is global on a developer machine and
+  // absent inside an EAS Workflow runner. See `eas-bin.mjs`.
+  const { file, argv } = easArgs(args);
+  return execFileSync(file, argv, {
     encoding: 'utf8',
     stdio: ['ignore', 'pipe', 'pipe'],
     maxBuffer: 64 * 1024 * 1024,
