@@ -5,7 +5,6 @@ import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import SunriseIcon from '@hugeicons/core-free-icons/Sun03Icon';
 import WorkoutStretchingIcon from '@hugeicons/core-free-icons/WorkoutStretchingIcon';
 import type { IconSvgElement } from '@hugeicons/react-native';
-import type { ImageSourcePropType } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
@@ -42,25 +41,6 @@ import { ProtocolSheet } from './protocol-sheet';
  * colour is the accent already used for the day type that means the same
  * thing. Nothing here is a new component.
  */
-
-/**
- * The photograph behind each card.
- *
- * Four of the five. `flare` has none and falls through to `FeatureCard`'s own
- * tinted wash — which is the right absence rather than a gap: a photograph of
- * somebody running is the wrong thing to show the person whose foot hurts too
- * much to, and the red wash already says what that card is.
- *
- * Re-encoded from the supplied PNGs to JPEG at 1200px, which is three times the
- * widest a card is ever drawn. As PNGs the four came to 4.3 MB of app download
- * for artwork nobody would see at full size.
- */
-const ART: Partial<Record<ProtocolId, ImageSourcePropType>> = {
-  pre_run: require('@assets/quick/warmup.jpg'),
-  post_run: require('@assets/quick/cooldown.jpg'),
-  at_work: require('@assets/quick/desk.jpg'),
-  morning: require('@assets/quick/bedside.jpg'),
-};
 
 /** One glyph per protocol, from the set already in the app. */
 const ICONS: Readonly<Record<ProtocolId, IconSvgElement>> = {
@@ -151,7 +131,6 @@ export function QuickPage() {
             becomes a panel taller than the phone, and everything under it falls
             off the screen. */}
         <FeatureCard
-          image={ART[featured.id]}
           title={t(featured.titleKey)}
           icon={ICONS[featured.id]}
           accent={featured.accent}
@@ -162,7 +141,6 @@ export function QuickPage() {
           {PROTOCOLS.map((protocol) => (
             <FeatureCard
               key={protocol.id}
-              image={ART[protocol.id]}
               title={t(protocol.titleKey)}
               icon={locked(protocol) ? SquareLock02Icon : ICONS[protocol.id]}
               accent={protocol.accent}
