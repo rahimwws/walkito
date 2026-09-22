@@ -173,7 +173,9 @@ export async function scheduleWinback(percent: number, name?: string): Promise<b
     await Notifications.scheduleNotificationAsync({
       identifier: WINBACK_IDS[1],
       content: {
-        title: `Take ${percent}% off`,
+        // Names the product. "Take 70% off" alone does not say off what,
+        // and the discount exists on one of the two plans.
+        title: `Take ${percent}% off the 12-week program`,
         body: 'Tap to grab it.',
         sound: true,
         data: { kind: WINBACK_KIND },

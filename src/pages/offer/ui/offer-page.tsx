@@ -32,7 +32,6 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { Linking } from 'react-native';
 
 import { OFFERINGS, purchases, type Offering } from '@/entities/purchase';
-import { REFERRAL_DISCOUNT_PERCENT, useReferral } from '@/entities/referral';
 import { formatPrice } from '@/shared/lib/money';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 import { PrimaryButton } from '@/shared/ui/primary-button';
@@ -50,45 +49,32 @@ function openLegal(url: string) {
 /**
  * What the sheet prints when there is no store to ask.
  *
- * A fallback, not the price. Every figure below is read from the store when one
- * is configured — these exist so the layout is not empty on a simulator or in a
+ * Fallbacks, not prices. Every figure below is read from the store when one is
+ * configured — these exist so the layout is not empty on a simulator or in a
  * build whose RevenueCat key is missing, and so the sheet never renders a blank
  * where a number should be. If one of these ever reaches a paying user it is a
  * bug, not a price: see `storeDiagnosis()`.
  */
-const MONTHLY = 12.99;
-/** Twelve months at the monthly rate — what every saving here is measured
- * against, and the only number that makes the percentages honest. */
-const FULL_YEAR = MONTHLY * 12;
-
-/**
- * The two prices this sheet can show.
- *
- * The boosted one is not a different product, it is the same year at the price
- * the win-back notification promised. Both percentages are computed from the
- * prices rather than typed in, so the headline can never drift from what the
- * rows underneath it charge.
- */
-const TIERS = {
-  standard: { yearly: 80.99 },
-  boosted: { yearly: 46.99 },
-  /**
-   * The invite price: the full year less the referral discount.
-   *
-   * Computed from `FULL_YEAR` rather than typed, so the figure on this sheet
-   * and the promise on the invite screen come from the same number. Rounded to
-   * the cent the way a store would.
-   */
-  invited: { yearly: Math.round(FULL_YEAR * (1 - REFERRAL_DISCOUNT_PERCENT / 100) * 100) / 100 },
+const PRINTED = {
+  /** Auto-renewing, billed monthly. */
+  monthly: 24.99,
+  /** Twelve weeks, paid once, no renewal. */
+  program: 49.99,
+  /** The same twelve weeks at the returning-visitor price. */
+  programOffer: 14.99,
 } as const;
 
-const saving = (yearly: number) => Math.round((1 - yearly / FULL_YEAR) * 100);
-export const STANDARD_SAVING = saving(TIERS.standard.yearly);
-export const BOOSTED_SAVING = saving(TIERS.boosted.yearly);
-
-/** How long the headline takes to climb to the better number. Slow enough to
- * be watched, short enough that it is not a loading bar. */
-const BOOST_MS = 1100;
+/**
+ * What the win-back notification promises, as a percentage.
+ *
+ * Scheduled while the app is going to the background, long before the `offer`
+ * offering has been fetched, so it cannot read a live price — it is the one
+ * figure on this screen that has to be derived from the printed fallbacks.
+ * Kept in step by being computed from them rather than typed.
+ */
+export const OFFER_PERCENT = Math.round(
+  (1 - PRINTED.programOffer / PRINTED.program) * 100,
+);
 
 const FEATURES: {
   icon: IconSvgElement;
@@ -146,7 +132,14 @@ export function OfferPage() {
   const meter = meterColors[scheme];
 
   const { weeks, name } = useLocalSearchParams<{ weeks?: string; name?: string }>();
-  const [tier, setTier] = useState<'yearly' | 'monthly'>('yearly');
+  /**
+   * Which plan is selected. The programme, by default.
+   *
+   * It is the product that matches what the app is: a twelve-week plan sold as
+   * twelve weeks. Defaulting to the subscription would put the recurring charge
+   * in front of somebody who came here for a course with an end.
+   */
+  const [tier, setTier] = useState<'program' | 'monthly'>('program');
   /** True from the tap until the store answers. Locks the button rather than
    * letting a second tap open a second transaction. */
   const [busy, setBusy] = useState(false);
@@ -170,34 +163,23 @@ export function OfferPage() {
   const [celebrating, setCelebrating] = useState<'purchased' | 'restored' | null>(null);
 
   /**
-   * Which price this person has earned, as an offering name.
+   * Which offering to sell, by name.
    *
    * Apple has no notion of "the same product, cheaper" — a discount is a
-   * different product. So each price is a separate offering in the RevenueCat
-   * dashboard, and the app asks for one by name instead of doing arithmetic on
-   * a constant and hoping App Store Connect agrees.
+   * different product — so the cheaper programme is its own offering in the
+   * RevenueCat dashboard rather than arithmetic on a price. `offer` is shown
+   * only to somebody who dismissed the paywall and came back, or who arrived
+   * from the win-back notification. Never on a first view.
    */
-  const { discounted } = useReferral();
   const boosted = useBoost();
-  const offeringId = discounted
-    ? OFFERINGS.invited
-    : boosted
-      ? OFFERINGS.boosted
-      : OFFERINGS.standard;
-  /** The printed figure for this tier, used only when there is no store. */
-  const printedYearly = discounted
-    ? TIERS.invited.yearly
-    : boosted
-      ? TIERS.boosted.yearly
-      : TIERS.standard.yearly;
+  const offeringId = boosted ? OFFERINGS.offer : OFFERINGS.standard;
 
   /**
    * The offering being sold, and the standard one to strike through against.
    *
-   * Both are fetched: the saving percentage and the crossed-out figure have to
-   * compare a real price with another real price. Comparing a store price
-   * against a printed constant is how a sheet ends up claiming a 42% saving off
-   * a number nobody charges.
+   * Both are fetched, because a discount has to be measured against a real
+   * price rather than a printed one: comparing a store figure to a constant is
+   * how a sheet ends up claiming a saving off a number nobody charges.
    */
   const [offering, setOffering] = useState<Offering | null>(null);
   const [standard, setStandard] = useState<Offering | null>(null);
@@ -209,9 +191,9 @@ export function OfferPage() {
       offeringId === OFFERINGS.standard ? null : purchases.offering(OFFERINGS.standard),
     ]).then(([earned, full]) => {
       if (!live) return;
-      // Falls back to the standard offering rather than to the printed
-      // constants: a dashboard missing the `boosted` offering should sell at
-      // the ordinary price, not advertise a discount the store will refuse.
+      // Falls back to the standard offering rather than to printed constants: a
+      // dashboard missing `offer` should sell at the ordinary price, not
+      // advertise a discount the store will refuse.
       setOffering(earned ?? full);
       setStandard(full ?? earned);
     });
@@ -220,44 +202,78 @@ export function OfferPage() {
     };
   }, [offeringId]);
 
-  const yearlyPlan = offering?.yearly ?? null;
+  const programPlan = offering?.program ?? null;
   const monthlyPlan = offering?.monthly ?? null;
-  const currency = yearlyPlan?.product.currencyCode;
+  const currency = programPlan?.product.currencyCode ?? monthlyPlan?.product.currencyCode;
 
   const money = (amount: number) => formatPrice(amount, currency);
 
   /**
-   * The year's price, from the store when there is one.
+   * What each plan costs, from the store, with the printed figures as a
+   * fallback for a build that has no store to ask.
    *
-   * `display` is the store's own string — it knows where the symbol goes and
-   * which separator the locale uses, which hand-formatting gets wrong in half
-   * of Europe. The per-month figure has to be computed, so that one is
-   * formatted from the numeric price.
+   * `display` is the store's own string wherever one exists — it knows where
+   * the symbol goes and which separator the locale uses, both of which
+   * hand-formatting gets wrong across half of Europe. The per-week figures have
+   * to be computed, so those are formatted from the numeric price.
    */
-  const yearlyAmount = yearlyPlan?.product.price ?? printedYearly;
-  const yearlyText = yearlyPlan?.product.display ?? money(printedYearly);
-  const monthlyAmount = monthlyPlan?.product.price ?? MONTHLY;
-  const monthlyText = monthlyPlan?.product.display ?? money(MONTHLY);
-  /** What the same year costs without the discount — the struck-through figure
-   * and the basis of every percentage on this sheet. */
-  const fullYearAmount = standard?.yearly?.product.price ?? TIERS.standard.yearly;
+  const programAmount = programPlan?.product.price ?? PRINTED.program;
+  const programText = programPlan?.product.display ?? money(PRINTED.program);
+  const monthlyAmount = monthlyPlan?.product.price ?? PRINTED.monthly;
+  const monthlyText = monthlyPlan?.product.display ?? money(PRINTED.monthly);
 
   /**
-   * The headline percentage, from the store's own two prices.
+   * The per-week figures, and the reason they are display-only.
    *
-   * A year measured against twelve months at the monthly rate — which is what
-   * "save 48%" means on this sheet, and the only comparison that is true by
-   * construction. Computed from whatever the store reports, so raising the
-   * monthly price in App Store Connect moves the headline here rather than
-   * leaving it advertising a saving nobody gets.
+   * There is no weekly product. These exist so two plans billed over different
+   * periods can be compared at all, and they are computed from the live price
+   * every time — a hardcoded "$4.17" survives exactly until somebody changes a
+   * price in App Store Connect.
    *
-   * The shared value starts at the printed figure and is replaced the moment
-   * the fetch lands, so the climb the win-back animates always ends on a number
-   * the store will honour.
+   * Apple's rule, and it is a common rejection: the **billed** amount must be
+   * the most prominent price on each row. The per-week figure is secondary, in
+   * a smaller face, underneath. Marketing outside the app may lead with per
+   * week; the paywall may not.
    */
-  const savingOf = (yearPrice: number, monthPrice: number) =>
-    monthPrice > 0 ? Math.round((1 - yearPrice / (monthPrice * 12)) * 100) : 0;
-  const earnedSaving = savingOf(yearlyAmount, monthlyAmount);
+  const programPerWeek = programAmount / 12;
+  const monthlyPerWeek = (monthlyAmount * 12) / 52;
+
+  /**
+   * What the programme normally costs, for the struck-through figure and the
+   * badge — from the standard offering, never from a constant.
+   */
+  const fullProgramAmount = standard?.program?.product.price ?? PRINTED.program;
+  /**
+   * The discount, computed rather than asserted.
+   *
+   * Against the live standard price, so changing either figure in App Store
+   * Connect moves the badge instead of leaving it advertising a percentage
+   * nobody is getting.
+   */
+  const offerPct =
+    fullProgramAmount > 0
+      ? Math.round((1 - programAmount / fullProgramAmount) * 100)
+      : 0;
+  const discounted = offerPct > 0;
+
+  /**
+   * The number across the top, and what it means in each of the two states.
+   *
+   * Standard: how much cheaper the programme is per week than paying monthly.
+   * That is the comparison the two rows underneath are making, so the headline
+   * is the same claim at display size rather than a second, unrelated figure.
+   *
+   * Discounted: the discount itself, which is the larger and more immediate
+   * number and the reason the sheet looks different at all.
+   *
+   * Both computed from live prices. Neither survives a price change in App
+   * Store Connect as a stale constant, which is the failure this replaced.
+   */
+  const headlinePct = discounted
+    ? offerPct
+    : monthlyPerWeek > 0
+      ? Math.max(0, Math.round((1 - programPerWeek / monthlyPerWeek) * 100))
+      : 0;
 
 
   /** Springs in from slightly small. A number this size fading in reads as a
@@ -267,51 +283,26 @@ export function OfferPage() {
     withDelay(60, withSpring(1, { damping: 14, stiffness: 140, mass: 0.8 })),
   );
 
-  /** The headline number itself, so it can climb rather than cut. Counting 48
-   * up to 70 is the entire point of the win-back: the user watches the offer
-   * improve instead of being told it did. */
-  const savingValue = useSharedValue(STANDARD_SAVING);
-  /** A second, brighter bloom that swells as the number climbs and settles
-   * back — the visual equivalent of the number landing harder than it left. */
-  const surge = useSharedValue(0);
-  const [shownSaving, setShownSaving] = useState(STANDARD_SAVING);
-
-  useAnimatedReaction(
-    () => Math.round(savingValue.value),
-    (next, previous) => {
-      if (next !== previous) runOnJS(setShownSaving)(next);
-    },
-  );
-
   /**
-   * Adopt the store's figures when they arrive.
+   * A second, brighter bloom on the discounted view.
    *
-   * Set rather than animated, and skipped once the win-back has run: prices
-   * landing a beat after mount is a fetch completing, not an offer improving,
-   * and animating it would spend the one climb this sheet has on a loading
-   * state. Guarded on `boosted` so it cannot overwrite the climb mid-flight.
+   * What this replaced was a number climbing from 48 to 70 as the win-back
+   * landed — an animation built around the old annual discount, whose
+   * arithmetic no longer exists. The offer is a different product now, not a
+   * percentage off the same one, so there is nothing to count up from: the
+   * cheaper price is simply the price. The extra light stays, because arriving
+   * on a better offer should still look like arriving on one.
    */
-  useEffect(() => {
-    if (boosted) return;
-    savingValue.value = earnedSaving;
-    setShownSaving(earnedSaving);
-  }, [boosted, earnedSaving, savingValue]);
+  const surge = useSharedValue(0);
 
   useEffect(() => {
-    if (!boosted) return;
+    if (!discounted) return;
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-    savingValue.value = withTiming(earnedSaving, {
-      duration: BOOST_MS,
-      // Fast out of the gate and easing into the new figure, so the climb has
-      // somewhere to arrive rather than stopping dead on the last digit.
-      easing: Easing.out(Easing.cubic),
-      reduceMotion: ReduceMotion.System,
-    });
     surge.value = withSequence(
-      withTiming(1, { duration: BOOST_MS * 0.7, easing: Easing.out(Easing.quad), reduceMotion: ReduceMotion.System }),
+      withTiming(1, { duration: 760, easing: Easing.out(Easing.quad), reduceMotion: ReduceMotion.System }),
       withTiming(0.35, { duration: 520, easing: Easing.inOut(Easing.quad), reduceMotion: ReduceMotion.System }),
     );
-  }, [boosted, savingValue, surge]);
+  }, [discounted, surge]);
 
   const numberStyle = useAnimatedStyle(() => ({
     opacity: Math.min(bloom.value * 1.6, 1),
@@ -338,7 +329,10 @@ export function OfferPage() {
         if (sent.current || boosted) return;
         sent.current = true;
         void notificationsAllowed().then((allowed) => {
-          if (allowed) void scheduleWinback(BOOSTED_SAVING, name);
+          // The figure the notification promises is the one the offer
+          // actually gives. It used to be a module constant derived from the
+          // annual discount that no longer exists.
+          if (allowed) void scheduleWinback(OFFER_PERCENT, name);
         });
       } else if (next === 'active') {
         void cancelWinback();
@@ -375,7 +369,7 @@ export function OfferPage() {
     // The plan object, not a product identifier. It came out of the same fetch
     // that produced the price on screen, so the two cannot be for different
     // things — which is the failure this replaced.
-    const plan = tier === 'yearly' ? yearlyPlan : monthlyPlan;
+    const plan = tier === 'program' ? programPlan : monthlyPlan;
     if (plan == null) {
       setBusy(false);
       // No plan means no store reached this sheet. Saying a charge failed would
@@ -467,7 +461,7 @@ export function OfferPage() {
         <View style={styles.bloom} />
         <Animated.View style={[styles.bloom, styles.surge, surgeStyle]} />
         <View style={styles.numberRow}>
-          <Text style={styles.number}>{shownSaving}</Text>
+          <Text style={styles.number}>{headlinePct}</Text>
           <Text style={styles.percent}>%</Text>
         </View>
       </Animated.View>
@@ -523,25 +517,36 @@ export function OfferPage() {
           .duration(360)
           .reduceMotion(ReduceMotion.System)}
         style={styles.tiers}>
+        {/* The programme first, and selected. It is the product that matches
+            what the app is — a twelve-week plan sold as twelve weeks — and
+            putting the recurring charge first would offer a subscription to
+            somebody who came for a course with an end.
+
+            `price` is the billed amount and `note` the per-week figure, in
+            that order of prominence. Apple rejects paywalls where a computed
+            per-week price is shown larger than the amount actually charged;
+            outside the app the marketing may lead with per week, here it may
+            not. */}
         <TierRow
-          title="Yearly"
-          note={`Billed yearly at ${yearlyText}`}
-          price={`${money(yearlyAmount / 12)}/mo`}
+          title="12-Week Program"
+          badge={discounted ? `${offerPct}% OFF` : 'BEST VALUE'}
+          price={`${programText} one-time`}
+          note={`${money(programPerWeek)}/week · No subscription`}
           was={
-            // Only when there is something to strike through: a discount is a
-            // discount against the standard year, and if the two are the same
-            // number a crossed-out price is theatre.
-            yearlyAmount < fullYearAmount ? money(fullYearAmount / 12) : undefined
+            // Only when there is something to strike through. A crossed-out
+            // price identical to the one beside it is theatre.
+            discounted ? money(fullProgramAmount) : undefined
           }
-          selected={tier === 'yearly'}
+          selected={tier === 'program'}
           onPress={() => {
             Haptics.selectionAsync();
-            setTier('yearly');
+            setTier('program');
           }}
         />
         <TierRow
           title="Monthly"
-          price={`${monthlyText}/mo`}
+          price={`${monthlyText}/month`}
+          note={`${money(monthlyPerWeek)}/week · Cancel anytime`}
           selected={tier === 'monthly'}
           onPress={() => {
             Haptics.selectionAsync();
@@ -551,17 +556,7 @@ export function OfferPage() {
       </Animated.View>
 
       {/* The renewal terms Apple requires on an auto-renewable subscription.
-          The price is read from the same `yearly` the rows above charge, so a
-          boosted sheet discloses the boosted figure and the two can never drift
-          apart — a disclosure quoting a price the user is not being offered is
-          worse than none.
-
-          No trial line: nothing in this app configures one, and stating a free
-          week that does not exist is the specific thing the review guidelines
-          are looking for.
-
-          Set in `tierNote`, the size already used for the billing line
-          directly above it. */}
+          See the block itself for why both products are disclosed. */}
       <Animated.View
         entering={FadeInDown.delay(STAGGER_MS * 7)
           .duration(360)
@@ -572,8 +567,22 @@ export function OfferPage() {
         {notice != null && (
           <Text style={[styles.terms, { color: meter.caption }]}>{notice}</Text>
         )}
+        {/* Both products, because both are on the screen and they bill in
+            opposite ways. The programme line has to say it will not charge
+            again — that is the whole distinction a user is being asked to
+            understand — and the monthly line carries the renewal disclosure
+            Apple requires. Prices read from the packages above, so a
+            discounted sheet discloses the discounted figure and the two cannot
+            drift; a disclosure quoting a price the user is not being offered
+            is worse than none.
+
+            No trial line on either: Apple does not allow one on a non-renewing
+            product, and nothing here configures one on the subscription. */}
         <Text style={[styles.terms, { color: meter.caption }]}>
-          {`Auto-renews at ${yearlyText}/year until cancelled. Cancel at least 24 hours before the period ends in your App Store account settings.`}
+          {`12-Week Program: one-time payment of ${programText} for 12 weeks of access. Does not renew and will not charge you again.`}
+        </Text>
+        <Text style={[styles.terms, { color: meter.caption }]}>
+          {`Monthly: ${monthlyText} per month. Renews automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel in your App Store account settings.`}
         </Text>
         <View style={styles.legalRow}>
           <Text
@@ -632,6 +641,7 @@ export function OfferPage() {
 
 function TierRow({
   title,
+  badge,
   note,
   price,
   was,
@@ -639,10 +649,21 @@ function TierRow({
   onPress,
 }: {
   title: string;
+  /** "BEST VALUE", or the discount on a returning visit. */
+  badge?: string;
+  /**
+   * The per-week figure, and deliberately the *secondary* line.
+   *
+   * Apple rejects paywalls where a computed per-week price is more prominent
+   * than the amount actually charged — it is one of the commoner rejections for
+   * per-week marketing. `price` leads, this follows, and the sizes below are
+   * what enforce it.
+   */
   note?: string;
+  /** The billed amount. The most prominent price on the row, always. */
   price: string;
   /** The price this one replaced, struck through beside it. Present only on a
-   * boosted row: a permanent "was" next to a permanent price is the oldest
+   * discounted row: a permanent "was" next to a permanent price is the oldest
    * trick in the shop window, and it is a lie the rest of this flow has not
    * earned. */
   was?: string;
@@ -676,13 +697,25 @@ function TierRow({
         accessibilityState={{ selected }}
         onPress={onPress}
         style={styles.tierPress}>
-        <View style={styles.tierCopy}>
+        <View style={styles.tierHead}>
           <Text style={[styles.tierTitle, { color: colors.foreground }]}>{title}</Text>
-          {note != null && (
-            <Text style={[styles.tierNote, { color: meter.caption }]}>{note}</Text>
+          {badge != null && (
+            <View style={[styles.tierBadge, { backgroundColor: meter.track }]}>
+              <Text style={[styles.tierBadgeText, { color: PRIMARY }]}>{badge}</Text>
+            </View>
           )}
         </View>
-        <View style={styles.tierPrices}>
+
+        {/* The billed amount, and the struck-through one beside it. Keyed on
+            the figure so a changing price crossfades in place rather than
+            silently swapping while the eye is elsewhere. */}
+        <View style={styles.tierPriceRow}>
+          <Animated.Text
+            key={price}
+            entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)}
+            style={[styles.tierPrice, { color: colors.foreground }]}>
+            {price}
+          </Animated.Text>
           {was != null && (
             <Animated.Text
               entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)}
@@ -691,15 +724,11 @@ function TierRow({
               {was}
             </Animated.Text>
           )}
-          {/* Keyed on the figure, so a changing price crossfades in place
-              instead of silently swapping while the eye is elsewhere. */}
-          <Animated.Text
-            key={price}
-            entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)}
-            style={[styles.tierPrice, { color: colors.foreground }]}>
-            {price}
-          </Animated.Text>
         </View>
+
+        {note != null && (
+          <Text style={[styles.tierNote, { color: meter.caption }]}>{note}</Text>
+        )}
       </Pressable>
     </Animated.View>
   );
@@ -862,38 +891,62 @@ const styles = StyleSheet.create({
     borderCurve: 'continuous',
   },
   tierPress: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    // A column now, not a row. The billed price has to sit under the title at
+    // display size, and a price pinned to the right edge cannot be larger than
+    // the title without unbalancing the row.
     paddingHorizontal: 16,
     paddingVertical: 14,
-    gap: 12,
+    gap: 2,
   },
-  tierCopy: {
-    flex: 1,
-  },
-  tierTitle: {
-    fontSize: 18,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
-  },
-  tierNote: {
-    marginTop: 2,
-    fontSize: 13,
-    fontFamily: fonts.regular,
-  },
-  tierPrices: {
+  tierHead: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
+  },
+  tierTitle: {
+    flex: 1,
+    fontSize: 17,
+    fontFamily: fonts.bold,
+    letterSpacing: -0.3,
+  },
+  tierBadge: {
+    borderRadius: 8,
+    borderCurve: 'continuous',
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+  },
+  tierBadgeText: {
+    fontSize: 11,
+    fontFamily: fonts.heavy,
+    letterSpacing: 0.4,
+  },
+  tierPriceRow: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    gap: 8,
+    marginTop: 4,
+  },
+  /**
+   * The billed amount, and the largest price on the row by a clear margin.
+   *
+   * 22 against the per-week line's 13. Apple rejects paywalls where a computed
+   * per-week figure is more prominent than the amount actually charged, and the
+   * gap between these two numbers is the only thing enforcing that — so it is
+   * deliberately wide rather than a point or two.
+   */
+  tierPrice: {
+    fontSize: 22,
+    fontFamily: fonts.heavy,
+    letterSpacing: -0.6,
   },
   tierWas: {
     fontSize: 15,
     fontFamily: fonts.medium,
     textDecorationLine: 'line-through',
   },
-  tierPrice: {
-    fontSize: 18,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
+  /** The per-week figure. Secondary, and sized to stay that way. */
+  tierNote: {
+    fontSize: 13,
+    fontFamily: fonts.medium,
   },
 });

@@ -8,6 +8,10 @@ import Purchases, {
 
 import {
   ENTITLEMENT,
+  PRODUCTS,
+  PROGRAM_ACCESS_DAYS,
+  PROGRAM_IDS,
+  PROGRAM_PACKAGE,
   type Offering,
   type Plan,
   type Product,
@@ -34,6 +38,9 @@ import {
  * than a second source of truth.
  */
 let active = false;
+/** Mirrors `programEnd` from the last customer info, so the contract's
+ * synchronous getter has an answer without a round trip. */
+let lastEnd: Date | null = null;
 const listeners = new Set<() => void>();
 
 /**
@@ -45,36 +52,67 @@ const listeners = new Set<() => void>();
  */
 const packages = new Map<string, PurchasesPackage>();
 
-function announce(next: boolean) {
+function announce(info: CustomerInfo) {
+  lastEnd = programEnd(info);
+  const next = entitledIn(info);
   if (next === active) return;
   active = next;
   listeners.forEach((fire) => fire());
 }
 
 /**
- * Whether this customer has access.
+ * When the twelve-week programme runs out, from the latest purchase of one.
  *
- * The named entitlement first, then *any* active entitlement.
+ * RevenueCat cannot expire a non-renewing product: the entitlement it grants
+ * stays active for good. So the end is computed here, ninety days from the most
+ * recent programme transaction — latest, not first, because buying a second
+ * twelve weeks has to extend the access rather than be ignored.
+ */
+function programEnd(info: CustomerInfo): Date | null {
+  const latest = info.nonSubscriptionTransactions
+    .filter((t) => PROGRAM_IDS.includes(t.productIdentifier))
+    .map((t) => new Date(t.purchaseDate).getTime())
+    .filter((ms) => Number.isFinite(ms))
+    .sort((a, b) => b - a)[0];
+  if (latest == null) return null;
+  return new Date(latest + PROGRAM_ACCESS_DAYS * 86_400_000);
+}
+
+/** The monthly subscription, which RevenueCat does expire on its own. */
+function monthlyActive(info: CustomerInfo): boolean {
+  return info.activeSubscriptions.includes(PRODUCTS.monthly);
+}
+
+/**
+ * Whether this customer has access, in the order the three answers can be
+ * trusted.
  *
- * The fallback is not laxity. This app sells one level of access — see the note
- * on `ENTITLEMENT` — so an active entitlement under any name means the same
- * thing: somebody paid, and RevenueCat says the purchase is live. There is no
- * second tier to be confused with, and no way to hold an active entitlement
- * without a transaction behind it.
+ * The monthly subscription first, because RevenueCat expires it on its own. The
+ * programme second, against the clock — the entitlement a non-renewing purchase
+ * grants never lapses, so trusting it would sell twelve weeks and hand over the
+ * app for ever. Any other active entitlement last.
  *
- * What it buys is that a dashboard rename cannot lock a paying customer out of
- * the app they are paying for. That is not hypothetical here: the dashboard
- * holds `waltkito_pro` and `premium`, and the app was asking for `pro` — every
- * purchase completed and nothing unlocked. A constant in the bundle and a
- * string typed into a web form will drift, and when they do the failure should
- * be a warning in a log rather than a refund request.
- *
- * Development still complains, loudly, so the drift gets fixed rather than
- * absorbed forever.
+ * That last fallback is not laxity: this app sells one level of access, so an
+ * active entitlement under any name means somebody paid. It exists because a
+ * constant in the bundle and a string typed into a dashboard will drift, and
+ * when they do the failure should be a line in a log rather than a locked-out
+ * paying customer. It sits *below* the programme check so an expired pass
+ * cannot be resurrected by the entitlement it created.
  */
 function entitledIn(info: CustomerInfo): boolean {
-  if (info.entitlements.active[ENTITLEMENT] != null) return true;
+  // The subscription first: RevenueCat expires it, so an active one is the end
+  // of the question.
+  if (monthlyActive(info)) return true;
 
+  // Then the programme, against the clock rather than against the entitlement.
+  // The entitlement a non-renewing purchase grants never lapses, so trusting it
+  // would sell somebody twelve weeks and give them the app for ever.
+  const ends = programEnd(info);
+  if (ends != null) return Date.now() < ends.getTime();
+
+  // Anything else RevenueCat is prepared to call active. Below the two checks
+  // above rather than in front of them, so the programme's own expiry cannot be
+  // short-circuited by the entitlement it created.
   const other = Object.keys(info.entitlements.active);
   if (other.length === 0) return false;
 
@@ -151,10 +189,15 @@ function toPlan(offeringId: string, pkg: PurchasesPackage | null): Plan | null {
 }
 
 function toOffering(found: PurchasesOffering): Offering {
+  // The programme is a custom package, so it is looked up by identifier rather
+  // than read off one of RevenueCat's named slots — `annual`, `monthly` and the
+  // rest only cover its own package types, and a non-renewing pass is not one.
+  const program =
+    found.availablePackages.find((pkg) => pkg.identifier === PROGRAM_PACKAGE) ?? null;
   return {
     identifier: found.identifier,
-    yearly: toPlan(found.identifier, found.annual),
     monthly: toPlan(found.identifier, found.monthly),
+    program: toPlan(found.identifier, program),
   };
 }
 
@@ -174,14 +217,14 @@ export async function startRevenueCat(apiKey: string, verbose: boolean): Promise
 
   // Registered before the first fetch, so a renewal that lands between
   // configure and the fetch is not missed.
-  Purchases.addCustomerInfoUpdateListener((info) => announce(entitledIn(info)));
+  Purchases.addCustomerInfoUpdateListener((info) => announce(info));
 
   await refreshEntitlement();
 }
 
 async function refreshEntitlement(): Promise<void> {
   try {
-    announce(entitledIn(await Purchases.getCustomerInfo()));
+    announce(await Purchases.getCustomerInfo());
   } catch {
     // Left at whatever it was. A network blip is not evidence that somebody
     // stopped paying, and revoking access on a failed read would lock a paying
@@ -217,7 +260,7 @@ export const revenueCatStore: Store = {
     }
     try {
       const { customerInfo } = await Purchases.purchasePackage(pkg);
-      announce(entitledIn(customerInfo));
+      announce(customerInfo);
       // Reported against the entitlement rather than against the call
       // returning. A purchase that completes without granting the entitlement
       // is a misconfigured dashboard, and saying "purchased" there would leave
@@ -239,7 +282,7 @@ export const revenueCatStore: Store = {
   async restore(): Promise<RestoreResult> {
     try {
       const info = await Purchases.restorePurchases();
-      announce(entitledIn(info));
+      announce(info);
       return entitledIn(info) ? { status: 'restored' } : { status: 'nothing-found' };
     } catch (error) {
       return { status: 'failed', message: messageFrom(error) };
@@ -254,4 +297,6 @@ export const revenueCatStore: Store = {
   },
 
   refresh: refreshEntitlement,
+
+  programEndsAt: () => lastEnd,
 };

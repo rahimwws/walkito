@@ -78,8 +78,17 @@ export type Plan = {
  */
 export type Offering = {
   readonly identifier: string;
-  readonly yearly: Plan | null;
+  /** Auto-renewing, billed monthly. */
   readonly monthly: Plan | null;
+  /**
+   * The twelve-week programme: paid once, does not renew.
+   *
+   * A non-renewing purchase rather than a subscription, because that is what it
+   * is — the plan is twelve weeks long and then it is over. Apple cannot put a
+   * free trial on one, which is why there is no trial on either product: a
+   * trial on the monthly alone would push people onto the weaker fit.
+   */
+  readonly program: Plan | null;
 };
 
 /** The offerings this app asks for. Each must exist in the RevenueCat
@@ -87,11 +96,23 @@ export type Offering = {
  * standard price rather than inventing a discount. */
 export const OFFERINGS = {
   standard: 'default',
-  /** The price the win-back notification promised. */
-  boosted: 'boosted',
-  /** The price an accepted invite earns. */
-  invited: 'invited',
+  /** The cheaper programme, shown to somebody who left and came back. Never on
+   * a first view — see the paywall. */
+  offer: 'offer',
 } as const;
+
+/** The package identifier the programme sits under in every offering. Monthly
+ * uses RevenueCat's own `$rc_monthly`. */
+export const PROGRAM_PACKAGE = 'program';
+
+/**
+ * How long a programme purchase grants access for.
+ *
+ * Ninety days, not the eighty-four the plan actually runs. Somebody who buys on
+ * a Friday and starts on Monday should not lose the days in between, and the
+ * spare week costs nothing but removes the support ticket.
+ */
+export const PROGRAM_ACCESS_DAYS = 90;
 
 export type Purchases = {
   /** Whether a real store is wired up. Everything below is a no-op when false. */
@@ -123,6 +144,19 @@ export type Purchases = {
   subscribe(listener: () => void): () => void;
   /** Re-ask the store. Resolves once `entitled()` is current. */
   refresh(): Promise<void>;
+
+  /**
+   * When programme access runs out, or null if none was bought.
+   *
+   * Computed from the purchase date rather than read from an entitlement,
+   * because RevenueCat cannot expire a non-renewing purchase on its own: the
+   * entitlement it grants stays active indefinitely. Ninety days from the
+   * latest programme transaction is the real end.
+   *
+   * Depends on the device clock, which a determined user can move. Accepted:
+   * the alternative is a server, and this is not worth one.
+   */
+  programEndsAt(): Date | null;
 };
 
 /**
@@ -143,6 +177,7 @@ export const unconfigured: Purchases = {
   entitled: () => false,
   subscribe: () => () => {},
   refresh: async () => {},
+  programEndsAt: () => null,
 };
 
 /**
@@ -154,9 +189,16 @@ export const unconfigured: Purchases = {
  * what a diagnostic can check the dashboard against.
  */
 export const PRODUCTS = {
-  yearly: 'walkito.yearly',
-  monthly: 'walkito.monthly',
+  monthly: 'sub_monthly_2499',
+  program: 'pass_12wk_4999',
+  /** The same programme at the returning-visitor price. Same display name in
+   * App Store Connect, because it is the same thing. */
+  programOffer: 'pass_12wk_1499',
 } as const;
+
+/** Both programme products, for the expiry check — a purchase of either grants
+ * the same access for the same length of time. */
+export const PROGRAM_IDS: readonly string[] = [PRODUCTS.program, PRODUCTS.programOffer];
 
 /**
  * The identifier configured in the RevenueCat dashboard.
