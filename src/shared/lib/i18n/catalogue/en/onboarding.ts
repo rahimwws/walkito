@@ -405,14 +405,33 @@ export const ONBOARDING_EN = {
   // Transliteration is the one case where a personal name genuinely does
   // change: a Russian reader writes "Рахим", and a Latin name dropped into
   // the middle of a Cyrillic sentence reads as a mistake.
-  'onboarding.note.signature': 'Rahim Endrahman',
-  'onboarding.note.title': 'A note from Rahim',
   'onboarding.note.body1':
     'Hi — I’m Rahim. I built Walkito because my own feet were the problem I could not get a straight answer about.',
   'onboarding.note.body2':
     'There was plenty of research. There was nothing that turned it into something small enough to actually do on a Tuesday.',
   'onboarding.note.body3':
     'So that is what this is: a few minutes a day, in the order the evidence supports. Thank you for giving it a go.',
+
+  // ── The note at the end of onboarding ────────────────────────────────────
+  //
+  // DRAFT. Two founders speaking in the first person about their own
+  // reason for building the app, written from what the app is rather than
+  // from anything either of them said. Replace it with the real reason
+  // before shipping — a note like this is only worth showing if it is true.
+  //
+  // It names no condition, injury or timeline and makes no health claim,
+  // which keeps it clear of the rule the rest of the copy follows: this
+  // app screens and trains, it does not diagnose or treat.
+  //
+  // The names are written into the sentences rather than interpolated.
+  // They transliterate across scripts, and Russian inflects them — the
+  // title and the body would need different forms of the same word.
+  'onboarding.note.title': 'A note from us',
+  'onboarding.note.body1':
+    'Hi — we’re Rahim and Rahman. We built Walkito because our own feet were the problem nobody gave us a straight answer about.',
+  'onboarding.note.body2':
+    'There was plenty of research and nothing small enough to actually do on a Tuesday. So this is that: a few minutes a day, in the order the evidence supports.',
+  'onboarding.note.signature': 'Rahim and Rahman',
   'onboarding.note.cta': 'Rate Walkito',
   'onboarding.note.later': 'Maybe later',
 } as const satisfies Record<string, SourceEntry>;

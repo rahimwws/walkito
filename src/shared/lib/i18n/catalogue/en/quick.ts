@@ -40,6 +40,9 @@ export const QUICK_EN = {
   'quick.seconds': { one: '{count} s', other: '{count} s' },
 
   // ── Running one ───────────────────────────────────────────────────────────
+  'quick.stepsLabel': 'Moves',
+  'quick.positionLabel': 'Position',
+
   'quick.start': 'Start',
   'quick.switch': 'Switch legs',
   'quick.done.title': 'Done.',

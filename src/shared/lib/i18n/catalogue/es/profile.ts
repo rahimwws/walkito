@@ -37,4 +37,6 @@ export const PROFILE_ES = {
     'Borra el onboarding, el programa, el registro de dolor y los clips guardados en este dispositivo. Tu cuenta y tu código de invitación se mantienen. Solo para desarrollo.',
   'profile.resetCancel': 'Cancelar',
   'profile.resetConfirm': 'Restablecer',
+  'profile.notePreviewLabel': 'Ver la nota',
+  'profile.notePreviewHint': 'La que aparece al final del onboarding',
 };

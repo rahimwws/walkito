@@ -52,4 +52,10 @@ export const PROFILE_EN = {
     'Clears onboarding, the programme, the pain log and the cached clips on this device. Your account and invite code stay. Development only.',
   'profile.resetCancel': 'Cancel',
   'profile.resetConfirm': 'Reset',
+  // The dev-only row that reopens the founder's note. Translated like any
+  // other label rather than left in English: it sits in the same list as
+  // the shipped rows, and one English line among them is how a reviewer
+  // discovers the row was never meant to be there.
+  'profile.notePreviewLabel': 'Preview the note',
+  'profile.notePreviewHint': 'The one shown at the end of onboarding',
 } as const satisfies Record<string, SourceEntry>;

@@ -27,6 +27,9 @@ export const QUICK_RU = {
   'quick.minutes': { one: '{count} минута', few: '{count} минуты', many: '{count} минут' },
   'quick.seconds': { one: '{count} секунда', few: '{count} секунды', many: '{count} секунд' },
 
+  'quick.stepsLabel': 'Движения',
+  'quick.positionLabel': 'Положение',
+
   'quick.start': 'Начать',
   'quick.switch': 'Смени ногу',
   'quick.done.title': 'Готово.',

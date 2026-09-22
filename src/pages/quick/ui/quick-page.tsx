@@ -51,22 +51,6 @@ const ICONS: Readonly<Record<ProtocolId, IconSvgElement>> = {
   morning: MoonIcon,
 };
 
-/** The catalogue key for each position word. */
-const POSITION_KEYS = {
-  seated: 'quick.seated',
-  standing: 'quick.standing',
-  in_bed: 'quick.inBed',
-} as const;
-
-/** One fact, in a rounded slab. The app's pill shape at a smaller size. */
-function Chip({ label, tone, background }: { label: string; tone: string; background: string }) {
-  return (
-    <View style={[styles.chip, { backgroundColor: background }]}>
-      <Text style={[styles.chipLabel, { color: tone }]}>{label}</Text>
-    </View>
-  );
-}
-
 export function QuickPage() {
   const scheme = useColorScheme();
   const colors = palette[scheme];
@@ -128,11 +112,17 @@ export function QuickPage() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{
           paddingTop: insets.top + 24,
-          paddingHorizontal: SIDE_PAD,
           paddingBottom: insets.bottom + 140,
         }}>
-        <Text style={[styles.title, { color: colors.foreground }]}>{t('quick.title')}</Text>
-        <Text style={[styles.subtitle, { color: meter.caption }]}>{t('quick.subtitle')}</Text>
+        {/* The gutter is per-block rather than on the scroll, so the featured
+            card can run edge to edge while the heading and the grid keep the
+            margin the other two tabs use. */}
+        <Text style={[styles.title, styles.gutter, { color: colors.foreground }]}>
+          {t('quick.title')}
+        </Text>
+        <Text style={[styles.subtitle, styles.gutter, { color: meter.caption }]}>
+          {t('quick.subtitle')}
+        </Text>
 
         {/* The one that suits right now. It stays in the grid below as well —
             people look for a protocol where it usually is, and moving it when
@@ -149,24 +139,7 @@ export function QuickPage() {
           onPress={() => openProtocol(featured)}
           style={styles.featured}
         />
-        {/* Chips, not a sentence. Three facts — why it is here, how long, where
-            you will be — read faster as separate objects than as prose joined
-            by dots. */}
-        <View style={styles.chips}>
-          <Chip label={t('quick.featured')} tone={meter.ink} background={meter.track} />
-          <Chip
-            label={t('quick.minutes', { count: featured.minutes })}
-            tone={meter.caption}
-            background={meter.track}
-          />
-          <Chip
-            label={t(POSITION_KEYS[featured.position])}
-            tone={meter.caption}
-            background={meter.track}
-          />
-        </View>
-
-        <View style={styles.grid}>
+        <View style={[styles.grid, styles.gutter]}>
           {PROTOCOLS.map((protocol) => (
             <FeatureCard
               key={protocol.id}
@@ -195,17 +168,12 @@ const styles = StyleSheet.create({
   screen: { flex: 1 },
   title: { fontSize: 32, fontFamily: fonts.heavy, letterSpacing: -0.8 },
   subtitle: { marginTop: 4, fontSize: 16, fontFamily: fonts.medium, letterSpacing: -0.2 },
-  /** Full width and banner-shaped. Overrides `FeatureCard`'s own near-square
-   * ratio, which is sized for two cards abreast. */
+  /** Edge to edge, and banner-shaped. Overrides `FeatureCard`'s own near-square
+   * ratio, which is sized for two cards abreast and becomes a panel taller than
+   * the display once it has the full width. */
   featured: { marginTop: 20, aspectRatio: 2.05 },
-  chips: { marginTop: 10, flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  chip: {
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 50,
-    borderCurve: 'continuous',
-  },
-  chipLabel: { fontSize: 13, fontFamily: fonts.semibold, letterSpacing: -0.1 },
+  /** The margin every other tab uses. Applied per block, not to the scroll. */
+  gutter: { marginHorizontal: SIDE_PAD },
   grid: {
     marginTop: 20,
     flexDirection: 'row',

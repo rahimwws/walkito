@@ -324,14 +324,21 @@ export const ONBOARDING_ES = {
 
   // ── The note at the end of onboarding ────────────────────────────────────
   // Borrador — véase el comentario en en/onboarding.ts.
-  'onboarding.note.signature': 'Rahim Endrahman',
-  'onboarding.note.title': 'Unas palabras de Rahim',
   'onboarding.note.body1':
     'Hola, soy Rahim. Hice Walkito porque mis propios pies fueron el problema sobre el que nunca conseguí una respuesta clara.',
   'onboarding.note.body2':
     'Investigación había de sobra. Lo que no había era algo que la convirtiera en una rutina lo bastante pequeña como para hacerla un martes cualquiera.',
   'onboarding.note.body3':
     'Pues esto es justo eso: unos minutos al día, en el orden que respalda la evidencia. Gracias por darle una oportunidad.',
+
+  // ── The note at the end of onboarding ────────────────────────────────────
+  // Черновик — см. комментарий в en/onboarding.ts.
+  'onboarding.note.title': 'Unas palabras de nosotros',
+  'onboarding.note.body1':
+    'Hola, somos Rahim y Rahman. Hicimos Walkito porque nuestros propios pies fueron el problema sobre el que nadie nos dio una respuesta clara.',
+  'onboarding.note.body2':
+    'Investigación había de sobra, pero no había nada lo bastante pequeño como para hacerlo un martes cualquiera. Pues esto es justo eso: unos minutos al día, en el orden que respalda la evidencia.',
+  'onboarding.note.signature': 'Rahim y Rahman',
   'onboarding.note.cta': 'Valorar Walkito',
   'onboarding.note.later': 'Quizá más tarde',
 };

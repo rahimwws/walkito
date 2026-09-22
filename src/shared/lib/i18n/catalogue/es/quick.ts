@@ -26,6 +26,9 @@ export const QUICK_ES = {
   'quick.minutes': { one: '{count} min', other: '{count} min' },
   'quick.seconds': { one: '{count} s', other: '{count} s' },
 
+  'quick.stepsLabel': 'Ejercicios',
+  'quick.positionLabel': 'Posición',
+
   'quick.start': 'Empezar',
   'quick.switch': 'Cambia de pierna',
   'quick.done.title': 'Listo.',
