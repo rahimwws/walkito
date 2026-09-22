@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { useEffect, useState } from 'react';
+import { Pressable, StyleSheet, type LayoutChangeEvent } from 'react-native';
 import Animated, {
   interpolateColor,
   useAnimatedProps,
@@ -9,6 +9,12 @@ import Animated, {
 import Svg, { Circle, Path } from 'react-native-svg';
 
 import { accents, meterColors, palette } from '@/shared/config';
+
+import {
+  PAIN_ZONES,
+  zoneAt,
+  type LegZone,
+} from '../model/leg-zones';
 import { useColorScheme } from '@/shared/lib/theme';
 
 /**
@@ -29,48 +35,6 @@ import { useColorScheme } from '@/shared/lib/theme';
  * theme paint behind it — see the note in AGENTS.md — and a panel carrying its
  * own near-black would show its edges against the sheet it sits on.
  */
-
-export type LegZone =
-  | 'calf'
-  | 'soleus'
-  | 'tibia'
-  | 'tib_ant'
-  | 'ankle'
-  | 'achilles'
-  | 'heel'
-  | 'dorsum'
-  | 'arch'
-  | 'ball'
-  | 'toes'
-  | 'inner_ankle';
-
-/** The zones a user can report pain in. The rest of the drawing is context. */
-export const PAIN_ZONES: readonly LegZone[] = [
-  'heel',
-  'achilles',
-  'inner_ankle',
-  'arch',
-  'ball',
-  'toes',
-];
-
-/** Human wording, for the line under the drawing. Plain names rather than
- * anatomical ones — the point is that the user recognises the place they just
- * touched. */
-export const ZONE_LABELS: Readonly<Record<LegZone, string>> = {
-  calf: 'Calf',
-  soleus: 'Soleus',
-  tibia: 'Shin',
-  tib_ant: 'Front shin',
-  ankle: 'Ankle',
-  achilles: 'Achilles',
-  heel: 'Heel',
-  dorsum: 'Top of foot',
-  arch: 'Arch',
-  ball: 'Ball of foot',
-  toes: 'Toes',
-  inner_ankle: 'Inner ankle',
-};
 
 const OUTLINE =
   'M120 0C90 34 68 92 70 154C72 214 104 286 132 350C140 372 142 396 134 420' +
@@ -165,14 +129,12 @@ function Zone({
   marked,
   on,
   gap,
-  onPress,
 }: {
   d: string;
   base: string;
   marked: string;
   on: boolean;
   gap: string;
-  onPress?: () => void;
 }) {
   const animatedProps = useFill(on, base, marked);
   return (
@@ -182,7 +144,6 @@ function Zone({
       stroke={gap}
       strokeWidth={5}
       strokeLinejoin="round"
-      onPress={onPress}
     />
   );
 }
@@ -218,13 +179,26 @@ export function LegMap({ selected, onToggle }: Props) {
   const toneOf = (tone: 'muscle' | 'bone' | 'tendon') =>
     tone === 'bone' ? bone : tone === 'tendon' ? tendon : muscle;
 
-  const tappable = (zone: LegZone) => PAIN_ZONES.includes(zone);
-  const press = (zone: LegZone) => (tappable(zone) ? () => onToggle(zone) : undefined);
   const innerAnkle = useFill(selected.includes('inner_ankle'), tendon, marked);
 
+  /** Measured so a tap in view coordinates can be put back into viewBox ones. */
+  const [size, setSize] = useState({ width: 0, height: 0 });
+  const measure = (event: LayoutChangeEvent) => {
+    const { width, height } = event.nativeEvent.layout;
+    setSize({ width, height });
+  };
+
   return (
-    <View style={styles.box}>
-      <Svg viewBox="44 -2 356 532" width="100%" height="100%">
+    <Pressable
+      style={styles.box}
+      onLayout={measure}
+      accessibilityRole="button"
+      accessibilityLabel="Where it hurts"
+      onPress={(event) => {
+        const zone = zoneAt(event.nativeEvent.locationX, event.nativeEvent.locationY, size);
+        if (zone != null) onToggle(zone);
+      }}>
+      <Svg viewBox="44 -2 356 532" width="100%" height="100%" pointerEvents="none">
         <Path d={OUTLINE} fill={silhouette} />
 
         {SHAPES.map((shape) => (
@@ -235,7 +209,6 @@ export function LegMap({ selected, onToggle }: Props) {
             marked={marked}
             gap={silhouette}
             on={selected.includes(shape.zone)}
-            onPress={press(shape.zone)}
           />
         ))}
 
@@ -246,31 +219,10 @@ export function LegMap({ selected, onToggle }: Props) {
           animatedProps={innerAnkle}
           stroke={silhouette}
           strokeWidth={4}
-          onPress={press('inner_ankle')}
         />
 
-        {/* Bigger targets for the zones drawn too small to hit reliably. Laid
-            over the top and all but invisible — `fillOpacity` a hair above zero
-            rather than at it, because a fully transparent shape does not
-            receive touches. */}
-        <Path
-          d="M124 350h38v92h-38z"
-          fill="#000"
-          fillOpacity={0.001}
-          onPress={press('achilles')}
-        />
-        <Circle
-          cx={190}
-          cy={412}
-          r={26}
-          fill="#000"
-          fillOpacity={0.001}
-          onPress={press('inner_ankle')}
-        />
-        <Circle cx={324} cy={510} r={24} fill="#000" fillOpacity={0.001} onPress={press('ball')} />
-        <Circle cx={368} cy={503} r={24} fill="#000" fillOpacity={0.001} onPress={press('toes')} />
       </Svg>
-    </View>
+    </Pressable>
   );
 }
 

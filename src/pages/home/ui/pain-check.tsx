@@ -39,7 +39,8 @@ import { useColorScheme } from '@/shared/lib/theme';
 
 import { SessionView } from '@/widgets/session-player';
 
-import { LegMap, ZONE_LABELS, type LegZone } from './leg-map';
+import { ZONE_LABELS, type LegZone } from '../model/leg-zones';
+import { LegMap } from './leg-map';
 
 import { PAIN_MAX, PAIN_MIN, PainScale, painBand, painColor } from './pain-scale';
 
@@ -418,17 +419,13 @@ function Sheet({
       </View>
 
       <Text style={[styles.bandLabel, { color: colors.foreground }]}>{band.label}</Text>
-      <Text style={[styles.bandBlurb, { color: meter.caption }]}>{band.blurb}</Text>
 
-      <View style={styles.scale}>
-        <PainScale score={score} onChange={setScore} usual={usual} />
-      </View>
-
-      {/* Where, under how much. The number is the question; this is the detail
-          that makes it actionable, so it sits below rather than competing with
-          the readout. Takes the leftover height and no more — the drawing is
-          half again as tall as it is wide, and at full width it would push the
-          save button off a short screen. */}
+      {/* Where first, then how much.
+          The place is the part the user has to look at the drawing to answer,
+          and the scale is the part their thumb already knows — putting the
+          drawing directly under the readout means the eye finishes one question
+          before the hand starts the other. It also takes the leftover height,
+          so the scale and the button keep theirs on a short screen. */}
       <View style={styles.legStage}>
         <LegMap selected={zones} onToggle={toggleZone} />
       </View>
@@ -437,6 +434,11 @@ function Sheet({
           ? 'Tap where it hurts'
           : zones.map((zone) => ZONE_LABELS[zone]).join(' · ')}
       </Text>
+
+      <View style={styles.scale}>
+        <PainScale score={score} onChange={setScore} usual={usual} />
+      </View>
+
 
       <PrimaryButton
         label={logged ? 'Saved' : 'Save'}
@@ -681,11 +683,12 @@ const styles = StyleSheet.create({
   },
   /** Takes the slack, so the wedge sits against the button on a tall phone and
    * gives way before anything else on a short one. */
-  scale: { alignSelf: 'stretch', justifyContent: 'center', marginTop: 12 },
+  scale: { alignSelf: 'stretch', justifyContent: 'center', marginTop: 4, marginBottom: 12 },
   /** Claims what is left after the readout and the scale, and hands it to the
    * drawing — the same measure-don't-guess the watch-sync step needed. */
-  legStage: { flex: 1, alignSelf: 'stretch', alignItems: 'center', marginTop: 10 },
+  legStage: { flex: 1, alignSelf: 'stretch', alignItems: 'center', marginTop: 6 },
   zoneLine: {
+    marginTop: 6,
     fontSize: 13,
     fontFamily: fonts.medium,
     letterSpacing: -0.1,
