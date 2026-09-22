@@ -182,13 +182,6 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     gap: 12,
   },
-  /**
-   * Two to a row, with the gap taken out of the width — and the fifth card
-   * alone on the last row, where `flexGrow` takes it to the full width.
-   *
-   * That is the layout the spec drew: the morning protocol is the odd one out
-   * and runs full width under the grid. I briefly pinned all three flex
-   * properties to stop it, having read it as a bug; it was the design.
-   */
+  /** Two to a row, with the gap taken out of the width. */
   tile: { flexGrow: 1, flexBasis: '47%' },
 });
