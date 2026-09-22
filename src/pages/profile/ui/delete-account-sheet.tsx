@@ -13,6 +13,7 @@ import Animated, {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { deleteAccount, resetOnboarding } from '@/entities/session';
+import { clearClips } from '@/widgets/session-player';
 import { accents, fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
@@ -87,6 +88,11 @@ export function DeleteAccountSheet({ visible, onClose }: DeleteAccountSheetProps
     setBusy(true);
     setProblem(null);
     const result = await deleteAccount();
+    // The cached clips are files, not storage keys, so the entity's `clearAll`
+    // cannot reach them — and an entity may not import the widget that owns
+    // them. Fourteen megabytes surviving is not a privacy problem, they are the
+    // same clips everybody gets, but "delete everything" has to mean it.
+    clearClips();
     setBusy(false);
 
     if (result.status === 'local-only') {

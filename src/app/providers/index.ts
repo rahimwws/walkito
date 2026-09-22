@@ -5,5 +5,6 @@ export { useQuickActions } from './quick-actions';
 export { useHealthPipeline } from './health-pipeline';
 export { usePurchases } from './purchases';
 export { useLiveActivityCleanup } from './live-activities';
+export { useClipPrefetch } from './clip-prefetch';
 export { useReferralSync } from './referral-sync';
 export { useNotificationScheduler } from './notification-scheduler';

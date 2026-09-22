@@ -12,3 +12,17 @@ export { doseSeconds, type Dose } from './model/tempo';
  * rather than waiting for the next session to start — which is precisely the
  * window in which a stale countdown is on screen being looked at. */
 export { SessionTimerActivity } from './ui/session-activity';
+/** The clip cache: what is on disk, and pulling down what is not.
+ *
+ * Exported so the app layer can start the prefetch at launch — the clips are no
+ * longer bundled, and having them local before a session opens is the whole
+ * point of fetching them early. */
+export {
+  CLIPS_TOTAL_BYTES,
+  clearClips,
+  clipCacheState,
+  prefetchClips,
+  surveyClips,
+  useClipCache,
+  type ClipCacheState,
+} from './model/clip-cache';

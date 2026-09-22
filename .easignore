@@ -66,6 +66,14 @@ yarn-error.*
 # GitHub Actions run on GitHub, not on the builder.
 .github/
 
+# The exercise clips. They are served from Supabase Storage and cached on the
+# device on first launch — nothing in the app requires them, so Metro would not
+# bundle them anyway, but there is no reason to upload 14 MB to a builder that
+# will not use it. They stay in the repo because `scripts/upload-clips.mjs`
+# reads them from here, and because the manifest's hashes are checked against
+# them before a release.
+assets/exercises/
+
 # Editor state.
 .vscode/
 .idea/

@@ -69,10 +69,21 @@ if (missing.length > 0) {
 // Config-referenced assets never appear in a `require`. Listing them as unused
 // would train the reader to ignore this section, which is the whole value of it.
 const CONFIG_OWNED = readFileSync(join(ROOT, 'app.json'), 'utf8');
-const unused = walk(ASSETS).filter(
-  (file) =>
-    !referenced.has(file) && !CONFIG_OWNED.includes(relative(ROOT, file).replace(/\\/g, '/')),
-);
+/**
+ * Deliberately unreferenced, and not worth reporting.
+ *
+ * The exercise clips are served from Supabase Storage and cached on the device;
+ * they stay in the repo as the upload source and as what the manifest's hashes
+ * are checked against. Listing twelve of them under "nothing references this"
+ * every run is how a warning section stops being read.
+ */
+const SERVED_REMOTELY = 'assets/exercises/';
+
+const unused = walk(ASSETS).filter((file) => {
+  const rel = relative(ROOT, file).replace(/\\/g, '/');
+  if (rel.startsWith(SERVED_REMOTELY)) return false;
+  return !referenced.has(file) && !CONFIG_OWNED.includes(rel);
+});
 
 console.log(`${referenced.size} asset reference(s) checked, all resolve.`);
 if (unused.length > 0) {

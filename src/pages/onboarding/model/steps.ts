@@ -25,7 +25,6 @@ import { healthAvailable } from '@/entities/health';
 
 import type { AccentName } from '@/shared/config';
 
-import { coversAnswer } from '@/entities/pain-map';
 import { REFERRAL_DISCOUNT_PERCENT } from '@/entities/referral';
 
 export type OnboardingOption = {
@@ -109,7 +108,6 @@ export type OnboardingStep = StepBase &
     /** Shoe size on a draggable ruler, in EU or US. */
     | { kind: 'size' }
     | { kind: 'health' }
-    | { kind: 'pain-map' }
     /** Which watch, if any. Only asked to decide whether the next screen has
      * anything to teach — the gait metrics come from the iPhone, so the answer
      * changes nothing about the plan itself. */
@@ -324,22 +322,6 @@ export const STEPS: readonly OnboardingStep[] = [
       // are in the wrong app.
       { value: 'none', label: 'Nothing right now', icon: Tick02Icon, accent: 'teal' },
     ],
-  },
-  {
-    /**
-     * Where on the foot, asked only of people it applies to.
-     *
-     * The step before it is the broad question — foot, knee, hip — and this one
-     * is the map, which covers the foot and nothing else. Showing it to someone
-     * with knee pain would be asking a question that does not apply to them, so
-     * it is skipped unless they named somewhere the map can actually show.
-     */
-    kind: 'pain-map',
-    key: 'pain-map',
-    act: 1,
-    title: 'Where exactly, {name}?',
-    blurb: 'Tap every spot that hurts. Tap again to clear.',
-    skipWhen: (answers) => !coversAnswer(answers.pain),
   },
   {
     kind: 'choice',

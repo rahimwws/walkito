@@ -11,6 +11,7 @@ import {
   usePendingOfferPresenter,
   useHealthPipeline,
   useNotificationScheduler,
+  useClipPrefetch,
   useLiveActivityCleanup,
   usePurchases,
   useReferralSync,
@@ -77,6 +78,9 @@ export function RootLayout() {
   // root because the earliest moment is the point — the player swept these too,
   // but only when a new session began.
   useLiveActivityCleanup();
+  // Pulls the demonstration clips down before anybody reaches a session. They
+  // are not in the bundle any more — see `widgets/session-player/model/clip-cache`.
+  useClipPrefetch();
   // Reads the invite status on launch and listens for the push that says
   // someone used your code. At the root because that push can be what launches
   // the app — see the note inside.

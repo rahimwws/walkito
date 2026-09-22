@@ -46,6 +46,10 @@ export async function deleteAccount(): Promise<DeleteResult> {
   // one that would survive a deletion.
   kv.clearAll();
 
+  // The cached exercise clips are files rather than keys, so `clearAll` does
+  // not touch them — and this module may not reach into the widget that owns
+  // them. The sheet that calls this clears them; see `delete-account-sheet`.
+
   return serverMessage == null
     ? { status: 'deleted' }
     : { status: 'local-only', message: serverMessage };
