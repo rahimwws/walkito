@@ -5,7 +5,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { PROGRAM, TODAY_INDEX, exerciseById } from '@/entities/program';
 import { protocolSeconds, type Protocol } from '@/entities/protocols';
-import { fonts, meterColors, palette } from '@/shared/config';
+import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
@@ -118,9 +118,13 @@ export function ProtocolSheet({ protocol, onClose }: Props) {
               ))}
             </View>
 
+            {/* Docked at the bottom, in the same purple as "Start Workout".
+                Starting a protocol is the same kind of act as starting a
+                session, so it should not look like a different one. */}
             <View style={styles.cta}>
               <PrimaryButton
                 label={t('quick.start')}
+                tint={{ fill: PRIMARY, label: '#FFFFFF' }}
                 onPress={() => {
                   Haptics.selectionAsync();
                   setRunning(true);
