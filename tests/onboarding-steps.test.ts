@@ -1,3 +1,5 @@
+import { readFileSync } from 'node:fs';
+
 import { describe, expect, test } from 'bun:test';
 
 import { chose } from '../src/pages/onboarding/model/answers';
@@ -38,4 +40,45 @@ describe('chose', () => {
     expect(chose({ watch: [] }, 'watch', 'whoop')).toBe(false);
     expect(chose({ watch: null }, 'watch', 'whoop')).toBe(false);
   });
+});
+
+/**
+ * Choice answers are arrays, and comparing one to a string is always false.
+ *
+ * This mistake has now been made twice in the same flow, silently both times.
+ * First in the watch step's `skipWhen` — `answers.watch !== 'whoop'` — which
+ * held for every possible answer and skipped the sync guide for everybody.
+ * Then, after `chose()` was written to prevent exactly that, again one file
+ * over: `answers.watch === 'whoop' ? 'whoop' : 'garmin'` picked the brand for
+ * the guide, was false for everybody, and handed every user the Garmin page —
+ * whose clip is null. The symptom was "the Whoop video doesn't open", which
+ * points at the asset rather than at the comparison.
+ *
+ * Neither threw and neither logged. A grep is a blunt instrument, but it is the
+ * one thing that would have caught both.
+ */
+describe('answers are never compared to a string', () => {
+  const sources = [
+    'src/pages/onboarding/model/steps.ts',
+    'src/pages/onboarding/ui/onboarding-page.tsx',
+  ];
+
+  for (const file of sources) {
+    test(`${file} uses chose() rather than ===`, () => {
+      const text = readFileSync(new URL(`../${file}`, import.meta.url), 'utf8');
+      const offenders = text
+        .split('\n')
+        .map((line, i) => ({ line, n: i + 1 }))
+        // Prose, not code. The comment explaining this very bug quotes the
+        // broken comparison, and a guard that cannot tell the two apart fails
+        // on its own documentation.
+        .filter(({ line }) => !/^\s*(\/\/|\*|\/\*)/.test(line))
+        // `typeof answers.x === 'string'` is a type guard, not an answer
+        // comparison, and is the one legitimate shape.
+        .filter(({ line }) => /(?<!typeof\s)answers\.\w+\s*[!=]==\s*['"]/.test(line))
+        .map(({ line, n }) => `${n}: ${line.trim()}`);
+
+      expect(offenders).toEqual([]);
+    });
+  }
 });

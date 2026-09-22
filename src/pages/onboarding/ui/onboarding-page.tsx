@@ -38,6 +38,7 @@ import { Glow } from '@/shared/ui/glow';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
 
 import { TESTIMONIALS } from '../config/testimonials';
+import { chose } from '../model/answers';
 import { activityFor, loadQuestionFor, withName, type SportKey } from '../model/personalise';
 import { planSummary } from '../model/plan-summary';
 import { PLANS, recommendedIndex } from '../model/plans';
@@ -798,7 +799,12 @@ const CONFIRM_MS = 900;
             )}
 
             {step.kind === 'watch-sync' && (
-              <WatchSyncStep brand={answers.watch === 'whoop' ? 'whoop' : 'garmin'} />
+              // Through `chose`, not `answers.watch === 'whoop'`. Choice
+              // answers are arrays, so that comparison was false for everybody
+              // and every user — Whoop included — was handed the Garmin guide,
+              // whose clip is null. That is why the video "never opened": the
+              // step was showing, with the wrong brand's content in it.
+              <WatchSyncStep brand={chose(answers, 'watch', 'whoop') ? 'whoop' : 'garmin'} />
             )}
 
             {step.kind === 'notify' && (
