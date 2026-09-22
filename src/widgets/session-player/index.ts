@@ -1,4 +1,4 @@
-export { SessionView, type SessionViewProps } from './ui/session-view';
+export { SessionView, type PlaylistStep, type SessionViewProps } from './ui/session-view';
 /** The arithmetic that turns a prescription into seconds.
  *
  * Exported because Today's Tasks prints the same figure the player counts down,

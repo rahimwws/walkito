@@ -7,7 +7,7 @@ import * as Haptics from 'expo-haptics';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { after, type LiveActivity } from 'expo-widgets';
 import { ClockIcon } from 'phosphor-react-native';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, {
   Easing,
@@ -24,9 +24,10 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { saveSessionToHealth } from '@/entities/health';
 import {
-  EXERCISE_LIST,
   HEEL_RAISE_IDS,
   PLAN_BLOCKS,
+  exerciseById,
+  exerciseByTitle,
   kindFor,
   loadNoteFor,
   movesFor,
@@ -39,7 +40,7 @@ import {
 } from '@/entities/program';
 import { clearBrowsingLapsed, useSessionsLocked } from '@/entities/purchase';
 import { fonts, meterColors, palette, primaryButton } from '@/shared/config';
-import { plural } from '@/shared/lib/format';
+import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
 import { PrimaryButton } from '@/shared/ui/primary-button';
@@ -115,7 +116,8 @@ function clock(seconds: number): string {
 }
 
 /**
- * The catalogue, by the name this screen holds.
+ * Getting from the name this screen holds back to the catalogue entry behind
+ * it is `exerciseByTitle`, in the program entity.
  *
  * Everything reaching the player is a title: `movesFor` returns titles, Home
  * hands over its own task titles, and the clip is keyed by title too. Going
@@ -123,36 +125,50 @@ function clock(seconds: number): string {
  * the cue off the exercise instead of keeping local copies that go stale — the
  * map this replaced still described a "Towel stretch" the program dropped.
  *
- * Titles are unique in the catalogue, so this is a lookup rather than a guess.
+ * It used to be a map built here, at module scope, from `exercise.title`. That
+ * was correct exactly as long as there was one language: titles are catalogue
+ * keys now, resolved when they are read, so a map built at import held English
+ * and was being searched with whatever the user had chosen. The entity indexes
+ * all three languages instead, which also survives a title that was computed
+ * before a language change and handed over afterwards.
+ *
  * A title with no entry — the three retest measurements, which are tests and
- * not exercises — simply resolves to nothing, and every read below is written
+ * not exercises — still resolves to nothing, and every read below is written
  * to survive that.
  */
-const EXERCISES_BY_TITLE: Readonly<Record<string, Exercise>> = Object.fromEntries(
-  EXERCISE_LIST.map((exercise) => [exercise.title, exercise]),
-);
 
-/** The three retest measurements, held still so the list a checkpoint day plays
- * keeps its identity across renders like every other list here. */
-const RETEST_MOVES: readonly string[] = [
-  'Calf raises to failure',
-  'Arch hold',
-  'Single-leg balance',
-];
+/**
+ * The three retest measurements, as catalogue keys.
+ *
+ * They are tests rather than exercises, so the program's own catalogue has no
+ * entry for them and `exerciseByTitle` resolves them to nothing — which every
+ * read below is already written to survive. The names still have to be read by
+ * a person, so they are translated here, the same as any other label this
+ * player draws.
+ *
+ * Held at module scope so the list a checkpoint day plays keeps its identity
+ * across renders, like every other list here; resolving it is a `useMemo` on
+ * the translator rather than work done on every frame of the countdown.
+ */
+const RETEST_MOVE_KEYS = [
+  'widgets.retestCalfRaises',
+  'widgets.retestArchHold',
+  'widgets.retestBalance',
+] as const satisfies readonly Key[];
 
 /** What the counter line calls each part of a rep. One word each: it is read at
  * two metres by someone already moving, and it changes every three seconds. */
-const PHASE_LABEL: Readonly<Record<Phase, string>> = {
-  up: 'Up',
-  hold: 'Hold',
-  down: 'Down',
-};
+const PHASE_KEY = {
+  up: 'widgets.phaseUp',
+  hold: 'widgets.phaseHold',
+  down: 'widgets.phaseDown',
+} as const satisfies Record<Phase, Key>;
 
 /** Which foot, said the way you would say it out loud while balancing. */
-const SIDE_LABEL: Readonly<Record<Side, string>> = {
-  right: 'Right foot',
-  left: 'Left foot',
-};
+const SIDE_KEY = {
+  right: 'widgets.sideRight',
+  left: 'widgets.sideLeft',
+} as const satisfies Record<Side, Key>;
 
 /** The tempo a move runs at, with the reps and sets it runs for. The three
  * travel together because none of them times anything on its own. */
@@ -188,7 +204,7 @@ type MovePlan = {
  * always had, because a made-up length would be worse than an honest default.
  */
 function planMove(title: string, blockIndex: number, progressionOffset: number): MovePlan {
-  const exercise = EXERCISES_BY_TITLE[title] ?? null;
+  const exercise = exerciseByTitle(title);
   const dose = exercise == null ? null : prescriptionFor(exercise, blockIndex, progressionOffset);
   const seconds = doseSeconds(dose);
   // Gated on the length as well as on the tempo, so the two can never disagree:
@@ -228,9 +244,34 @@ function firstStrengthDay(blockIndex: number): number | null {
 
 type Frame = { x: number; y: number; width: number; height: number };
 
+/**
+ * One step of a playlist: an exercise and how long to hold it.
+ *
+ * The seam protocols run through. A protocol is not a prescription — it sets
+ * its own dose, so a single-leg hold is forty-five seconds there and whatever
+ * the block says in the plan — which is why the length comes in rather than
+ * being looked up, and why `perSide` is stated rather than read from the
+ * catalogue.
+ */
+export type PlaylistStep = {
+  exerciseId: string;
+  seconds: number;
+  perSide?: boolean;
+};
+
 export type SessionViewProps = {
   day: ProgramDay;
   onBack: () => void;
+  /**
+   * Run this exact list instead of deriving one from the day.
+   *
+   * Takes precedence over `moves`. Everything downstream — the countdown, the
+   * clip, the foot-switch, the transitions — is the same code the programme
+   * uses; only where the list comes from differs.
+   */
+  playlist?: readonly PlaylistStep[];
+  /** One line under the title, set by whatever assembled the playlist. */
+  cue?: string;
   /**
    * The moves to run, when they are not the day's own.
    *
@@ -294,6 +335,7 @@ function SessionLocked({ onBack }: { onBack: () => void }) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
+  const t = useT();
 
   const reopen = () => {
     Haptics.selectionAsync();
@@ -304,20 +346,25 @@ function SessionLocked({ onBack }: { onBack: () => void }) {
 
   return (
     <View style={[lockedStyles.host, { paddingTop: insets.top + 24, paddingBottom: insets.bottom + 24 }]}>
-      <Pressable accessibilityRole="button" accessibilityLabel="Back" onPress={onBack} hitSlop={12}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={t('common.back')}
+        onPress={onBack}
+        hitSlop={12}>
         <HugeiconsIcon icon={ArrowLeft02Icon} size={24} color={meter.ink} strokeWidth={1.8} />
       </Pressable>
 
       <View style={lockedStyles.middle}>
         <HugeiconsIcon icon={SquareLock02Icon} size={40} color={meter.caption} strokeWidth={1.6} />
-        <Text style={[lockedStyles.title, { color: meter.ink }]}>Your program has ended</Text>
+        <Text style={[lockedStyles.title, { color: meter.ink }]}>
+          {t('widgets.sessionLockedTitle')}
+        </Text>
         <Text style={[lockedStyles.body, { color: meter.caption }]}>
-          Everything you logged is still here to read. To run sessions again, pick up where
-          you left off.
+          {t('widgets.sessionLockedBody')}
         </Text>
       </View>
 
-      <PrimaryButton label="See your options" onPress={reopen} />
+      <PrimaryButton label={t('widgets.sessionLockedCta')} onPress={reopen} />
     </View>
   );
 }
@@ -335,19 +382,25 @@ const lockedStyles = StyleSheet.create({
   },
 });
 
-function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps) {
+function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: SessionViewProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
   const { width, height } = useWindowDimensions();
+  const t = useT();
 
   /** The offset a flare walked the plan back by. Read through the store rather
    * than once, so a session opened straight off a pain check gets the dose that
    * check just decided on. */
   const { progressionOffset } = useProgramState();
 
-  const moves = override ?? (day.checkpoint ? RETEST_MOVES : movesFor(day));
+  /** Memoised on the translator, which is itself memoised on the language — so
+   * the checkpoint list keeps one identity for the life of a session, which is
+   * what `advance` and the reaction keyed on it depend on. */
+  const retestMoves = useMemo(() => RETEST_MOVE_KEYS.map((key) => t(key)), [t]);
+
+  const moves = override ?? (day.checkpoint ? retestMoves : movesFor(day));
 
   /**
    * The whole session, timed.
@@ -357,9 +410,18 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
    * current one ends — see `goTo`. Cheap enough to do on any render that
    * changes the list: it is a lookup and some multiplication per move.
    */
-  const plan: readonly MovePlan[] = moves.map((title) =>
-    planMove(title, day.block, progressionOffset),
-  );
+  const plan: readonly MovePlan[] = playlist != null
+    ? playlist.map((step) => ({
+        exercise: exerciseById(step.exerciseId) ?? null,
+        // The playlist's own length, clamped for the same reason `planMove`
+        // clamps its own: the frame callback divides by this.
+        seconds: Math.max(1, Math.round(step.seconds)),
+        // No tempo. A protocol is held time, not counted reps, and a readout
+        // counting reps over a stretch would be inventing a dose.
+        cadence: null,
+        perSide: step.perSide === true,
+      }))
+    : moves.map((title) => planMove(title, day.block, progressionOffset));
 
   /** When this player mounted, which is when the session began. A ref rather
    * than state: nothing renders from it, and it must survive every re-render
@@ -666,7 +728,12 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
       const left = Math.min(Math.max(1 - progress.value, 0), 1) * span;
       return {
         move,
-        position: `Exercise ${step + 1} of ${moveCount}`,
+        // Resolved here, on the JS side. The widget body is compiled to a
+        // serialized string and reaches iOS with no scope of its own — it
+        // cannot import, cannot close over `t`, and could not translate this
+        // even if it had the catalogue. Every string it draws has to arrive as
+        // a prop, already in the user's language.
+        position: t('widgets.sessionPositionLong', { index: step + 1, total: moveCount }),
         // Anchored a whole move behind the end, never after it: SwiftUI traps
         // on an inverted range, and it would do it inside a process we cannot
         // attach a debugger to.
@@ -680,7 +747,7 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
     // hands over a fresh array literal on every render, and depending on its
     // identity had this callback — and the effect that pushes it to the Lock
     // Screen — turning over on every frame of the countdown.
-    [move, moveCount, step, moveSeconds, progress],
+    [move, moveCount, step, moveSeconds, progress, t],
   );
 
   /**
@@ -904,14 +971,17 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
 
   const cardStyle = useAnimatedStyle(() => {
     if (rest == null) return { opacity: 0 };
-    const t = open.value;
+    // Named `openness` rather than `t`, which is the translator in every file
+    // now. `progress` — the name the same rename took elsewhere — is already
+    // the playhead in this component, so the two would have shadowed.
+    const openness = open.value;
     return {
       opacity: 1,
-      left: interpolate(t, [0, 1], [rest.x, full.x]),
-      top: interpolate(t, [0, 1], [rest.y, full.y]),
-      width: interpolate(t, [0, 1], [rest.width, full.width]),
-      height: interpolate(t, [0, 1], [rest.height, full.height]),
-      borderRadius: interpolate(t, [0, 1], [CARD_RADIUS, CARD_RADIUS_OPEN]),
+      left: interpolate(openness, [0, 1], [rest.x, full.x]),
+      top: interpolate(openness, [0, 1], [rest.y, full.y]),
+      width: interpolate(openness, [0, 1], [rest.width, full.width]),
+      height: interpolate(openness, [0, 1], [rest.height, full.height]),
+      borderRadius: interpolate(openness, [0, 1], [CARD_RADIUS, CARD_RADIUS_OPEN]),
     };
   });
 
@@ -946,49 +1016,73 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
    * device accepted it, so it is behaviour this column is built for rather
    * than a new way for the layout to move.
    */
+  /**
+   * The foot, translated once, because every shape of the line below either
+   * leads with it or leaves it out.
+   *
+   * The line used to be assembled from pieces here and joined with middots. It
+   * is whole templates in the catalogue now: the foot leads in English, and
+   * nothing about that order is a fact other languages have to inherit.
+   */
+  const sideText = side == null ? null : t(SIDE_KEY[side.side]);
+  const index = step + 1;
+
   const position: { text: string; spoken: string } | null = finished
-    ? { text: 'Done.', spoken: 'Done' }
+    ? { text: t('widgets.sessionDone'), spoken: t('widgets.sessionDoneSpoken') }
     : phase != null && current?.cadence != null
       ? {
           // The foot leads. It is an instruction — something to act on — where
           // the rep counter is only context, and on a per-side move getting the
           // foot wrong wastes the whole set.
-          text: [
-            side == null ? null : SIDE_LABEL[side.side],
-            `${PHASE_LABEL[phase.phase]} · Rep ${phase.rep} of ${current.cadence.reps}`,
-          ]
-            .filter(Boolean)
-            .join(' · '),
+          text:
+            sideText == null
+              ? t('widgets.sessionRepLine', {
+                  phase: t(PHASE_KEY[phase.phase]),
+                  rep: phase.rep,
+                  reps: current.cadence.reps,
+                })
+              : t('widgets.sessionRepLineSided', {
+                  side: sideText,
+                  phase: t(PHASE_KEY[phase.phase]),
+                  rep: phase.rep,
+                  reps: current.cadence.reps,
+                }),
           // Spoken as a sentence rather than as the line: a middot is read out
           // as nothing at all, which leaves "up rep four of twelve".
-          spoken: [
-            side == null ? null : SIDE_LABEL[side.side],
-            `${PHASE_LABEL[phase.phase]}, rep ${phase.rep} of ${current.cadence.reps}`,
-          ]
-            .filter(Boolean)
-            .join('. '),
+          spoken:
+            sideText == null
+              ? t('widgets.sessionRepSpoken', {
+                  phase: t(PHASE_KEY[phase.phase]),
+                  rep: phase.rep,
+                  reps: current.cadence.reps,
+                })
+              : t('widgets.sessionRepSpokenSided', {
+                  side: sideText,
+                  phase: t(PHASE_KEY[phase.phase]),
+                  rep: phase.rep,
+                  reps: current.cadence.reps,
+                }),
         }
-      : side != null
+      : sideText != null
         ? {
             // A per-side move with no tempo — a stretch, a hold. The foot
             // leads, and the position in the session follows it where there is
             // one. Showing the foot *instead* of the counter dropped it from
             // eleven of the eighteen exercises, which is most of a session
             // spent unable to tell how much of it is left.
-            text: [SIDE_LABEL[side.side], moveCount > 1 ? `Exercise ${step + 1}/${moveCount}` : null]
-              .filter(Boolean)
-              .join(' · '),
-            spoken: [
-              SIDE_LABEL[side.side],
-              moveCount > 1 ? `exercise ${step + 1} of ${moveCount}` : null,
-            ]
-              .filter(Boolean)
-              .join('. '),
+            text:
+              moveCount > 1
+                ? t('widgets.sessionPositionShortSided', { side: sideText, index, total: moveCount })
+                : sideText,
+            spoken:
+              moveCount > 1
+                ? t('widgets.sessionPositionLongSided', { side: sideText, index, total: moveCount })
+                : sideText,
           }
         : moveCount > 1
           ? {
-              text: `Exercise ${step + 1}/${moveCount}`,
-              spoken: `Exercise ${step + 1} of ${moveCount}`,
+              text: t('widgets.sessionPositionShort', { index, total: moveCount }),
+              spoken: t('widgets.sessionPositionLong', { index, total: moveCount }),
             }
           : null;
 
@@ -1015,7 +1109,10 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
    * how this screen ended up describing exercises the program had already
    * dropped. Spoken only: see the note where it is attached.
    */
-  const spokenMove = [move, current?.exercise?.rationale, current?.exercise?.cue, loadNote]
+  // `cue` first when a playlist set one: it is the intent for the whole run —
+  // "this is relief, not training" — and belongs in front of the reason for
+  // the individual move rather than trailing it.
+  const spokenMove = [cue, move, current?.exercise?.rationale, current?.exercise?.cue, loadNote]
     .filter((line): line is string => line != null && line.length > 0)
     // The catalogue writes its lines as finished sentences and the title is not
     // one, so each piece is given the full stop it is missing rather than a
@@ -1048,7 +1145,13 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
       // "Finish" on the last one: pressing Continue for the final time and
       // having the session simply stop is the moment this screen most needs to
       // not feel like a bug.
-      label={ready ? (last ? 'Finish' : 'Continue') : clock(moveLeft)}
+      label={
+        ready
+          ? last
+            ? t('widgets.sessionFinish')
+            : t('widgets.sessionContinue')
+          : clock(moveLeft)
+      }
       disabled={!ready}
       onPress={() => {
         setPlaying(true);
@@ -1073,7 +1176,7 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
         <View style={styles.header}>
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel="Back"
+            accessibilityLabel={t('common.back')}
             onPress={leave}
             hitSlop={12}
             style={({ pressed }) => pressed && { opacity: 0.5 }}>
@@ -1088,12 +1191,18 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
           {/* Centred on the screen rather than in what the arrow leaves over, so
               it lands where a navigation title lands. Inert: it is a label. */}
           <View pointerEvents="none" style={styles.headerTitle}>
-            <Text style={[styles.meta, { color: meter.caption }]}>Day {day.day}</Text>
+            <Text style={[styles.meta, { color: meter.caption }]}>
+              {t('session.day', { day: day.day })}
+            </Text>
             <View style={[styles.dot, { backgroundColor: meter.unit }]} />
             <ClockIcon size={16} weight="fill" color={meter.unit} />
-            <Text style={[styles.meta, { color: meter.caption }]}>{day.minutes} min</Text>
+            <Text style={[styles.meta, { color: meter.caption }]}>
+              {t('session.minutes', { count: day.minutes })}
+            </Text>
             <View style={[styles.dot, { backgroundColor: meter.unit }]} />
-            <Text style={[styles.meta, { color: meter.caption }]}>{plural(moves.length, 'move')}</Text>
+            <Text style={[styles.meta, { color: meter.caption }]}>
+              {t('session.moveCount', { count: moves.length })}
+            </Text>
           </View>
         </View>
 
@@ -1117,7 +1226,7 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
           <View
             accessible
             accessibilityRole="timer"
-            accessibilityLabel={`${plural(remaining, 'second')} left`}
+            accessibilityLabel={t('session.secondsLeftA11y', { count: remaining })}
             style={styles.clockBox}>
             <AnimatedNumber
               text={clock(remaining)}
@@ -1168,7 +1277,7 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
               strokeWidth={2}
             />
             <Text style={[styles.hintText, { color: meter.unit }]}>
-              Lock your phone — the timer keeps going
+              {t('widgets.lockScreenHint')}
             </Text>
           </View>
         )}
@@ -1200,7 +1309,7 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
         {clipFailed && (
           <View style={styles.clipFallback} pointerEvents="none">
             <Text style={[styles.clipFallbackText, { color: meter.caption }]}>
-              Video didn’t load. The instructions still apply.
+              {t('widgets.clipFailed')}
             </Text>
           </View>
         )}
@@ -1212,7 +1321,7 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
         <Animated.View style={[styles.expand, expandStyle]} pointerEvents={expanded ? 'none' : 'auto'}>
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel="Expand demonstration"
+            accessibilityLabel={t('widgets.expandDemo')}
             onPress={() => setOpen(true)}
             hitSlop={10}
             style={({ pressed }) => [styles.chip, pressed && { opacity: 0.7 }]}>
@@ -1236,7 +1345,7 @@ function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps
           pointerEvents={expanded ? 'auto' : 'none'}>
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel="Collapse demonstration"
+            accessibilityLabel={t('widgets.collapseDemo')}
             onPress={() => setOpen(false)}
             hitSlop={10}
             style={({ pressed }) => [styles.chip, pressed && { opacity: 0.7 }]}>

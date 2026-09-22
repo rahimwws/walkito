@@ -1,4 +1,5 @@
 import ChartLineData01Icon from '@hugeicons/core-free-icons/ChartLineData01Icon';
+import FlashIcon from '@hugeicons/core-free-icons/FlashIcon';
 import Home07Icon from '@hugeicons/core-free-icons/Home07Icon';
 import { useRouter } from 'expo-router';
 import { Tabs, TabList, TabSlot, TabTrigger } from 'expo-router/ui';
@@ -16,14 +17,24 @@ import {
   renderFadingTabScreen,
   type GlassTabItem,
 } from '@/shared/ui/glass-tabs';
+import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { useIntroRevealStyle } from '@/shared/ui/splash';
 
-/** Add a tab by adding an entry here and a matching route file under
- * `app/(tabs)/`. `name` must equal the route file's name. */
-const ITEMS: (GlassTabItem & { href: string })[] = [
-  { name: 'index', href: '/', label: 'Home', icon: Home07Icon },
-  { name: 'progress', href: '/progress', label: 'Progress', icon: ChartLineData01Icon },
+/**
+ * Add a tab by adding an entry here and a matching route file under
+ * `app/(tabs)/`. `name` must equal the route file's name.
+ *
+ * `label` holds a catalogue key rather than text: this array is module scope,
+ * so a resolved string here would be fixed at import and the tab bar would keep
+ * whatever language the app first launched in.
+ */
+const ITEMS: (Omit<GlassTabItem, 'label'> & { href: string; label: Key })[] = [
+  { name: 'index', href: '/', label: 'tabs.home', icon: Home07Icon },
+  // The middle, deliberately. It is what somebody reaches for between
+  // sessions, and the middle is where the thumb lands without looking.
+  { name: 'quick', href: '/quick', label: 'quick.tab', icon: FlashIcon },
+  { name: 'progress', href: '/progress', label: 'tabs.progress', icon: ChartLineData01Icon },
 ];
 
 /** Progressive blur over the status bar: strongest at the device's top edge,
@@ -55,6 +66,7 @@ export function TabsLayout() {
 function TabsChrome() {
   const router = useRouter();
   const program = useProgram();
+  const t = useT();
   // The bar rises by the dock's height less the overlap, so it covers the top
   // of the slab rather than floating in the middle of it.
   const dockHeight = useDockHeight();
@@ -81,9 +93,11 @@ function TabsChrome() {
             lift={dockHeight - DOCK_OVERLAP}
             hideProgress={program?.progress}
             onIndexSelected={(i) => router.navigate(ITEMS[i].href as never)}>
-            {ITEMS.map(({ href, ...item }, index) => (
+            {ITEMS.map(({ href, label, ...item }, index) => (
               <TabTrigger key={item.name} name={item.name} href={href as never} asChild>
-                <GlassTabButton item={item} index={index} />
+                {/* Resolved at render, not in `ITEMS`, so switching language
+                    repaints the bar instead of waiting for a relaunch. */}
+                <GlassTabButton item={{ ...item, label: t(label) }} index={index} />
               </TabTrigger>
             ))}
           </GlassTabBar>
