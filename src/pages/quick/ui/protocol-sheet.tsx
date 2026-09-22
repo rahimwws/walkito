@@ -136,7 +136,24 @@ export function ProtocolSheet({ protocol, onClose }: Props) {
   // video the size of a business card.
   if (running) {
     return (
-      <Modal visible animationType="slide" presentationStyle="pageSheet" onRequestClose={close}>
+      /**
+       * A distinct `key` from the sheet's modal below, and that is the fix
+       * rather than a tidy-up.
+       *
+       * Returning a different `<Modal>` from the same position let React
+       * reconcile it as the *same* modal with new props — but iOS reads
+       * `presentationStyle` when it presents and never again, so the player
+       * stayed inside the transparent full-screen modal the sheet had already
+       * put up. No page-sheet inset, no safe area, and the header ended up
+       * under the status bar. Different keys force an unmount and a fresh
+       * presentation.
+       */
+      <Modal
+        key="protocol-player"
+        visible
+        animationType="slide"
+        presentationStyle="pageSheet"
+        onRequestClose={close}>
         <View style={[styles.player, { backgroundColor: colors.background }]}>
           <SessionView
             day={day}
@@ -151,7 +168,13 @@ export function ProtocolSheet({ protocol, onClose }: Props) {
   }
 
   return (
-    <Modal transparent animationType="none" visible statusBarTranslucent onRequestClose={close}>
+    <Modal
+      key="protocol-sheet"
+      transparent
+      animationType="none"
+      visible
+      statusBarTranslucent
+      onRequestClose={close}>
       {/* Driven by hand rather than by entering/exiting builders: one that
           fails to run strands its subject at opacity 0, and an exiting builder
           cannot run inside a modal whose visibility is what removed it. */}
