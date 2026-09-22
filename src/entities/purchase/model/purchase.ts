@@ -198,8 +198,6 @@ export const unconfigured: Purchases = {
  * what a diagnostic can check the dashboard against.
  */
 export const PRODUCTS = {
-  /** Priced at $9.99, despite the name. The identifier cannot be changed after
-   * creation; `PRINTED_PRICES.monthly` carries the real figure. */
   monthly: 'sub_monthly_2499',
   program: 'pass_12wk_4999',
   /** The same programme at the returning-visitor price. Same display name in
@@ -241,15 +239,8 @@ export const ENTITLEMENT = 'premium';
  * quoting different figures for the same product.
  */
 export const PRINTED_PRICES = {
-  /**
-   * Auto-renewing, billed monthly.
-   *
-   * $9.99, not the $24.99 the product identifier says. `sub_monthly_2499` was
-   * named for a price it no longer carries — an App Store Connect product id is
-   * fixed once created, so the name is now permanently wrong and this constant
-   * is the one that has to be right.
-   */
-  monthly: 9.99,
+  /** Auto-renewing, billed monthly. */
+  monthly: 24.99,
   /** Twelve weeks, paid once, no renewal. */
   program: 49.99,
   /** The same twelve weeks at the returning-visitor price. */

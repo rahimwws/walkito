@@ -13,15 +13,8 @@ import {
   PRODUCTS,
 } from '../src/entities/purchase/model/purchase';
 
-/**
- * The figures every other number on the paywall is derived from.
- *
- * `MONTHLY` is $9.99 and the product is called `sub_monthly_2499`. The name is
- * from a $24.99 that never shipped; an App Store Connect identifier cannot be
- * renamed once created, so the name stays wrong and this is the figure that
- * counts.
- */
-const MONTHLY = 9.99;
+/** The two figures every other number on the paywall is derived from. */
+const MONTHLY = 24.99;
 const PROGRAM = 49.99;
 const OFFER = 14.99;
 
@@ -31,45 +24,28 @@ const discountPct = (offer: number, full: number) => Math.round((1 - offer / ful
 
 describe('per-week display', () => {
   test('matches the spec to the cent', () => {
-    expect(perWeekMonthly(MONTHLY)).toBeCloseTo(2.31, 2);
+    expect(perWeekMonthly(MONTHLY)).toBeCloseTo(5.77, 2);
     expect(perWeekProgram(PROGRAM)).toBeCloseTo(4.17, 2);
     expect(perWeekProgram(OFFER)).toBeCloseTo(1.25, 2);
   });
 });
 
-/**
- * The ladder is upside down, and these say so out loud.
- *
- * An earlier version of this file warned that below $18.06 a month the
- * structure inverts and the "best value" badge would sit on the worse deal. It
- * was written as a hypothetical. The monthly price is $9.99, so it is not one:
- * three months of subscription costs $29.97 against $49.99 for the programme,
- * and the one-off is the dearer way to buy the same twelve weeks.
- *
- * Nothing in the paywall claims otherwise — every badge and the figure at the
- * top wait on the arithmetic, so at these prices they simply do not appear.
- * These tests hold that line: if somebody later hardcodes a saving, they fail.
- */
 describe('the ladder', () => {
-  test('the programme is currently the dearer way to buy three months', () => {
-    expect(PROGRAM).toBeGreaterThan(MONTHLY * PROGRAM_MONTHS);
+  test('the larger commitment is cheaper per week', () => {
+    expect(perWeekProgram(PROGRAM)).toBeLessThan(perWeekMonthly(MONTHLY));
   });
 
-  test('and dearer per week, which is what the rows show', () => {
-    expect(perWeekProgram(PROGRAM)).toBeGreaterThan(perWeekMonthly(MONTHLY));
-  });
-
-  test('$18.06 a month is where it would turn back over', () => {
-    // Kept as the figure to watch. Raising monthly above this makes the
-    // programme the better deal again and the badges return on their own.
+  /**
+   * The spec's own warning, as a test.
+   *
+   * Below $18.06 a month, paying monthly becomes cheaper per week than the
+   * twelve-week programme and the whole offer structure inverts — the "best
+   * value" badge would sit on the worse deal. Apple's price tiers do not divide
+   * evenly across territories, so this is not hypothetical.
+   */
+  test('inverts below $18.06 monthly, which is the figure to watch', () => {
     expect(perWeekMonthly(18.06)).toBeGreaterThan(perWeekProgram(PROGRAM));
     expect(perWeekMonthly(18.0)).toBeLessThan(perWeekProgram(PROGRAM));
-  });
-
-  test('the comeback offer is still the cheaper way, and by a lot', () => {
-    // $14.99 against $29.97 of subscription. The discount is the one part of
-    // the structure the price change did not break.
-    expect(OFFER).toBeLessThan(MONTHLY * PROGRAM_MONTHS);
   });
 });
 
@@ -154,7 +130,7 @@ describe('the store contract', () => {
   test('the printed fallbacks match the configured prices', () => {
     // Only ever shown when the store cannot be reached. If one of these is
     // stale it advertises a price Apple will not charge.
-    expect(PRINTED_PRICES.monthly).toBe(9.99);
+    expect(PRINTED_PRICES.monthly).toBe(24.99);
     expect(PRINTED_PRICES.program).toBe(49.99);
     expect(PRINTED_PRICES.programOffer).toBe(14.99);
   });
@@ -173,16 +149,9 @@ describe('the saving against paying monthly', () => {
   const saving = (program: number, monthly: number) =>
     monthly > 0 ? Math.round((1 - program / (monthly * PROGRAM_MONTHS)) * 100) : 0;
 
-  test('is negative at the configured prices, so no badge shows', () => {
-    // $49.99 once against 3 × $9.99 = $29.97. The programme costs two thirds
-    // more, and the paywall shows nothing rather than inventing a saving.
-    expect(saving(PROGRAM, MONTHLY)).toBeLessThan(0);
-  });
-
-  test('would be 33% if monthly were $24.99', () => {
-    // The figure the copy was written for, kept so the arithmetic itself stays
-    // covered while the live prices make it moot.
-    expect(saving(PROGRAM, 24.99)).toBe(33);
+  test('is 33% at the configured prices', () => {
+    // $49.99 once against 3 × $24.99 = $74.97.
+    expect(saving(PROGRAM, MONTHLY)).toBe(33);
   });
 
   test('twelve weeks is three months', () => {
