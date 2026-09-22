@@ -876,29 +876,34 @@ const CONFIRM_MS = 900;
                     : undefined
                 }>
                 <PrimaryButton label={ctaLabel} onPress={onNext} disabled={!canAdvance} />
-                {/* The other way in. Under the Apple button rather than beside
-                    it, because Apple sign-in is the one this screen leads with
-                    and two equal-weight buttons would make the choice look
-                    like it matters. It is not decoration: without it a failed
-                    Apple authorisation is the end of the flow, and there would
-                    be no credentials to hand App Store review. */}
-                {step.kind === 'intro' && (
-                  <Pressable
-                    accessibilityRole="button"
-                    onPress={() => {
-                      Haptics.selectionAsync();
-                      setEmailSignIn(true);
-                    }}
-                    disabled={authing}
-                    style={({ pressed }) => [styles.altAuth, pressed && { opacity: 0.6 }]}>
-                    <Text style={[styles.altAuthLabel, { color: meter.caption }]}>
-                      Sign in with email
-                    </Text>
-                  </Pressable>
-                )}
               </Animated.View>
             )}
           </Animated.View>
+
+          {/* The other way in. Below the Apple button rather than beside it,
+              because Apple sign-in is the one this screen leads with and two
+              equal-weight buttons would make the choice look like it matters.
+              Not decoration: without it a failed Apple authorisation ends the
+              flow, and there are no credentials to hand App Store review.
+
+              A sibling of `ctaSlot`, not a child. That slot is pinned to the
+              button's exact height so the body never resizes when the welcome
+              CTA arrives — anything extra inside it overflows straight into the
+              safe-area padding, which put this on top of the home indicator. */}
+          {step.kind === 'intro' && (!bare || introReady) && (
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => {
+                Haptics.selectionAsync();
+                setEmailSignIn(true);
+              }}
+              disabled={authing}
+              style={({ pressed }) => [styles.altAuth, pressed && { opacity: 0.6 }]}>
+              <Text style={[styles.altAuthLabel, { color: meter.caption }]}>
+                Sign in with email
+              </Text>
+            </Pressable>
+          )}
         </View>
       )}
 
@@ -920,7 +925,7 @@ const CONFIRM_MS = 900;
 }
 
 const styles = StyleSheet.create({
-  altAuth: { alignItems: 'center', paddingTop: 12 },
+  altAuth: { alignItems: 'center', paddingTop: 16, paddingBottom: 4 },
   altAuthLabel: { fontSize: 15, fontFamily: fonts.medium, letterSpacing: -0.2 },
   root: {
     flex: 1,
