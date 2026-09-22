@@ -17,10 +17,6 @@ import Animated, {
   useAnimatedReaction,
   useAnimatedStyle,
   useDerivedValue,
-  useSharedValue,
-  withDelay,
-  withSequence,
-  withSpring,
   withTiming,
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -99,11 +95,16 @@ const STAGGER_MS = 90;
 /**
  * The offer, as a sheet over the finished plan.
  *
- * It opens on the saving rather than on the price. The number is the one thing
- * on this sheet that has to be read from across the room, so it is set at
- * display size with the brand colour bloomed behind it — the glow is not
- * decoration, it is what stops a large flat number reading as a headline in a
- * document.
+ * It opens on what the app is for, not on a percentage.
+ *
+ * There used to be a single figure at display size above the headline, set in
+ * the brand colour with a glow behind it. It was computed — the per-week gap
+ * between the programme and the monthly plan — which meant it was only ever a
+ * headline by accident: the moment the store returned prices that did not
+ * happen to favour the programme it clamped to zero, and the screen opened on a
+ * hundred-point "0%" over the words "costs 0% less per week". A number that
+ * large is a claim, and a claim derived from two prices that can both move is
+ * not one this screen can keep making.
  *
  * A full screen, and the only way past it is to buy or to restore. It used to
  * be a form sheet over Home — but a sheet has something behind it, iOS knows
@@ -277,48 +278,14 @@ export function OfferPage() {
     if (ownsProgram) setTier('monthly');
   }, [ownsProgram]);
 
-  const headlinePct = discounted
-    ? offerPct
-    : monthlyPerWeek > 0
-      ? Math.max(0, Math.round((1 - programPerWeek / monthlyPerWeek) * 100))
-      : 0;
-
-
-  /** Springs in from slightly small. A number this size fading in reads as a
-   * page loading; one that arrives with weight reads as a figure being put on
-   * the table. */
-  const bloom = useDerivedValue(() =>
-    withDelay(60, withSpring(1, { damping: 14, stiffness: 140, mass: 0.8 })),
-  );
-
-  /**
-   * A second, brighter bloom on the discounted view.
-   *
-   * What this replaced was a number climbing from 48 to 70 as the win-back
-   * landed — an animation built around the old annual discount, whose
-   * arithmetic no longer exists. The offer is a different product now, not a
-   * percentage off the same one, so there is nothing to count up from: the
-   * cheaper price is simply the price. The extra light stays, because arriving
-   * on a better offer should still look like arriving on one.
-   */
-  const surge = useSharedValue(0);
-
+  // The haptic that used to accompany the number surging brighter. The number
+  // is gone — see the note on the hero below — but arriving on the better offer
+  // is still worth marking, and a tap is the part that survived losing the
+  // visual it was scored to.
   useEffect(() => {
     if (!discounted) return;
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-    surge.value = withSequence(
-      withTiming(1, { duration: 760, easing: Easing.out(Easing.quad), reduceMotion: ReduceMotion.System }),
-      withTiming(0.35, { duration: 520, easing: Easing.inOut(Easing.quad), reduceMotion: ReduceMotion.System }),
-    );
-  }, [discounted, surge]);
-
-  const numberStyle = useAnimatedStyle(() => ({
-    opacity: Math.min(bloom.value * 1.6, 1),
-    transform: [{ scale: 0.72 + bloom.value * 0.28 + surge.value * 0.06 }],
-  }));
-  /** The extra light behind a boosted number, layered over the resting bloom
-   * rather than replacing it, so the two add up at the peak. */
-  const surgeStyle = useAnimatedStyle(() => ({ opacity: surge.value }));
+  }, [discounted]);
 
   /**
    * The win-back.
@@ -470,20 +437,6 @@ export function OfferPage() {
         style={styles.body}
         contentContainerStyle={styles.bodyContent}
         showsVerticalScrollIndicator={false}>
-      <Animated.View style={[styles.numberWrap, numberStyle]}>
-        {/* The bloom is its own view rather than a shadow on the glyphs. A
-            text shadow wide enough to read as light gets clipped to the text's
-            own frame on iOS, which drew a hard-edged rectangle around the
-            number — the one thing a glow must never have. The glyphs keep a
-            small shadow, tight enough to stay inside that frame. */}
-        <View style={styles.bloom} />
-        <Animated.View style={[styles.bloom, styles.surge, surgeStyle]} />
-        <View style={styles.numberRow}>
-          <Text style={styles.number}>{headlinePct}</Text>
-          <Text style={styles.percent}>%</Text>
-        </View>
-      </Animated.View>
-
       {/* Only once the better price is in. A badge that was always there would
           make the standard price look like the discounted one. */}
       {boosted && (
@@ -497,9 +450,7 @@ export function OfferPage() {
       <Animated.Text
         entering={FadeIn.delay(STAGGER_MS).duration(320).reduceMotion(ReduceMotion.System)}
         style={[styles.headline, { color: colors.foreground }]}>
-        {boosted
-          ? 'Your comeback price on the 12-week program'
-          : `The 12-week program costs ${headlinePct}% less per week`}
+        {boosted ? 'Your comeback price on the 12-week program' : 'Keep running while it heals'}
       </Animated.Text>
       <Animated.Text
         entering={FadeIn.delay(STAGGER_MS * 2).duration(320).reduceMotion(ReduceMotion.System)}
@@ -856,24 +807,6 @@ const styles = StyleSheet.create({
     fontFamily: fonts.regular,
     textAlign: 'center',
   },
-  numberWrap: {
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  // Both numbers here matter. The box is far larger than the light it holds,
-  // and the gradient reaches full transparency at 70% of a radius that is
-  // itself half the box, so the fade finishes well inside the edges. Sized any
-  // tighter, the gradient is still faintly lit where the view stops and the
-  // glow shows its own rectangle — the one thing a glow must not do.
-  bloom: {
-
-  },
-  // Layered over the resting bloom rather than replacing it, so at the peak of
-  // the climb the two add up and the number visibly gains light.
-  surge: {
-    experimental_backgroundImage:
-      'radial-gradient(50% 50% at 50% 50%, rgba(139,92,246,0.55) 0%, rgba(139,92,246,0.20) 40%, rgba(139,92,246,0) 70%)',
-  },
   limited: {
     alignSelf: 'center',
     marginTop: -4,
@@ -889,47 +822,11 @@ const styles = StyleSheet.create({
     letterSpacing: 0.9,
     color: '#FFFFFF',
   },
-  numberRow: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    justifyContent: 'center',
-  },
   // The padding/negative-margin pair is not decoration: iOS clips a text
   // shadow to the text's own frame, so a radius wide enough to read as light
   // gets sliced off square at the glyph box. The padding gives the shadow room
   // to fade out inside the frame; the matching negative margin takes that room
   // back out of the layout, so the number sits exactly where it would have.
-  number: {
-    fontSize: 132,
-    lineHeight: 124,
-    fontFamily: fonts.heavy,
-    letterSpacing: -5,
-    color: PRIMARY,
-    paddingHorizontal: 34,
-    paddingVertical: 30,
-    marginHorizontal: -34,
-    marginVertical: -30,
-    textShadowColor: 'rgba(139,92,246,0.62)',
-    textShadowOffset: { width: 0, height: 0 },
-    textShadowRadius: 22,
-  },
-  percent: {
-    // The optical offset, less the padding that already sits above the glyph —
-    // otherwise the shadow's breathing room doubles as a margin and the sign
-    // slides down past the middle of the number.
-    marginTop: 10,
-    fontSize: 60,
-    fontFamily: fonts.heavy,
-    letterSpacing: -1.2,
-    color: PRIMARY,
-    paddingHorizontal: 24,
-    paddingVertical: 24,
-    marginHorizontal: -24,
-    marginBottom: -24,
-    textShadowColor: 'rgba(139,92,246,0.55)',
-    textShadowOffset: { width: 0, height: 0 },
-    textShadowRadius: 18,
-  },
   headline: {
     fontSize: 22,
     lineHeight: 28,
