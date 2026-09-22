@@ -6,11 +6,9 @@ import Purchases, {
   type PurchasesPackage,
 } from 'react-native-purchases';
 
+import { decideAccess, programEnd as programEndOf } from './access';
 import {
   ENTITLEMENT,
-  PRODUCTS,
-  PROGRAM_ACCESS_DAYS,
-  PROGRAM_IDS,
   PROGRAM_PACKAGE,
   type Offering,
   type Plan,
@@ -61,69 +59,36 @@ function announce(info: CustomerInfo) {
 }
 
 /**
- * When the twelve-week programme runs out, from the latest purchase of one.
+ * The access calculation, in `access.ts`.
  *
- * RevenueCat cannot expire a non-renewing product: the entitlement it grants
- * stays active for good. So the end is computed here, ninety days from the most
- * recent programme transaction — latest, not first, because buying a second
- * twelve weeks has to extend the access rather than be ignored.
+ * Pure and SDK-free so it can be tested: this file imports the native module
+ * and cannot load under bun, which is what left the one piece of arithmetic
+ * deciding whether somebody paid untested. `CustomerInfo` structurally
+ * satisfies `CustomerFacts`, so it passes straight through.
  */
 function programEnd(info: CustomerInfo): Date | null {
-  const latest = info.nonSubscriptionTransactions
-    .filter((t) => PROGRAM_IDS.includes(t.productIdentifier))
-    .map((t) => new Date(t.purchaseDate).getTime())
-    .filter((ms) => Number.isFinite(ms))
-    .sort((a, b) => b - a)[0];
-  if (latest == null) return null;
-  return new Date(latest + PROGRAM_ACCESS_DAYS * 86_400_000);
+  return programEndOf(info);
 }
 
-/** The monthly subscription, which RevenueCat does expire on its own. */
-function monthlyActive(info: CustomerInfo): boolean {
-  return info.activeSubscriptions.includes(PRODUCTS.monthly);
-}
-
-/**
- * Whether this customer has access, in the order the three answers can be
- * trusted.
- *
- * The monthly subscription first, because RevenueCat expires it on its own. The
- * programme second, against the clock — the entitlement a non-renewing purchase
- * grants never lapses, so trusting it would sell twelve weeks and hand over the
- * app for ever. Any other active entitlement last.
- *
- * That last fallback is not laxity: this app sells one level of access, so an
- * active entitlement under any name means somebody paid. It exists because a
- * constant in the bundle and a string typed into a dashboard will drift, and
- * when they do the failure should be a line in a log rather than a locked-out
- * paying customer. It sits *below* the programme check so an expired pass
- * cannot be resurrected by the entitlement it created.
- */
 function entitledIn(info: CustomerInfo): boolean {
-  // The subscription first: RevenueCat expires it, so an active one is the end
-  // of the question.
-  if (monthlyActive(info)) return true;
+  const verdict = decideAccess(info, Date.now());
 
-  // Then the programme, against the clock rather than against the entitlement.
-  // The entitlement a non-renewing purchase grants never lapses, so trusting it
-  // would sell somebody twelve weeks and give them the app for ever.
-  const ends = programEnd(info);
-  if (ends != null) return Date.now() < ends.getTime();
-
-  // Anything else RevenueCat is prepared to call active. Below the two checks
-  // above rather than in front of them, so the programme's own expiry cannot be
-  // short-circuited by the entitlement it created.
-  const other = Object.keys(info.entitlements.active);
-  if (other.length === 0) return false;
-
-  if (__DEV__) {
+  if (__DEV__ && verdict.reason === 'other-entitlement') {
     console.warn(
-      `[purchases] Unlocked on "${other.join('", "')}" — but ENTITLEMENT is "${ENTITLEMENT}", ` +
-        'which the store did not return. Set ENTITLEMENT in ' +
+      `[purchases] Unlocked on "${Object.keys(info.entitlements.active).join('", "')}" — but ` +
+        `ENTITLEMENT is "${ENTITLEMENT}", which the store did not return. Set ENTITLEMENT in ` +
         'entities/purchase/model/purchase.ts to the identifier the dashboard actually uses.',
     );
   }
-  return true;
+  if (__DEV__ && verdict.reason === 'program-undated') {
+    console.warn(
+      '[purchases] A programme product granted an entitlement but no purchase date came ' +
+        'back, so access cannot be dated and is being refused. Check ' +
+        'nonSubscriptionTransactions in the customer info.',
+    );
+  }
+
+  return verdict.entitled;
 }
 
 /**

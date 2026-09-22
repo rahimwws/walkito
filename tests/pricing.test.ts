@@ -1,6 +1,14 @@
 import { describe, expect, test } from 'bun:test';
 
-import { PROGRAM_ACCESS_DAYS, PROGRAM_IDS, PRODUCTS } from '../src/entities/purchase/model/purchase';
+import {
+  ENTITLEMENT,
+  OFFERINGS,
+  PRINTED_PRICES,
+  PROGRAM_ACCESS_DAYS,
+  PROGRAM_IDS,
+  PROGRAM_PACKAGE,
+  PRODUCTS,
+} from '../src/entities/purchase/model/purchase';
 
 /** The two figures every other number on the paywall is derived from. */
 const MONTHLY = 24.99;
@@ -66,5 +74,61 @@ describe('programme access', () => {
     // The subscription is not one of them — RevenueCat expires that itself, and
     // treating it as a 90-day pass would cut off a paying subscriber.
     expect(PROGRAM_IDS).not.toContain(PRODUCTS.monthly);
+  });
+});
+
+/**
+ * The contract with App Store Connect and RevenueCat, written down.
+ *
+ * Every string here was typed into two places: a dashboard and this repo. There
+ * is no mechanism that keeps them in step, and the failure mode is silent — a
+ * mistyped product identifier does not throw, it just returns no offering, and
+ * the paywall falls back to printed prices and sells nothing. These assertions
+ * are the closest thing to a compiler for that.
+ *
+ * Apple IDs are recorded in the comments rather than asserted: the app never
+ * sends them, so they are here to make the row identifiable in App Store
+ * Connect when one of these needs checking.
+ */
+describe('the store contract', () => {
+  test('product identifiers match what is configured', () => {
+    // Auto-Renewable, 1 month, $24.99, group "Walkito Premium". Apple ID 6814688029.
+    expect(PRODUCTS.monthly).toBe('sub_monthly_2499');
+    // Non-Renewing, $49.99. Apple ID 6814689374.
+    expect(PRODUCTS.program).toBe('pass_12wk_4999');
+    // Non-Renewing, $14.99 — the same twelve weeks at the comeback price.
+    // Apple ID 6814690309.
+    expect(PRODUCTS.programOffer).toBe('pass_12wk_1499');
+  });
+
+  test('both programme products are treated as the programme', () => {
+    // Access is dated off these two. A product missing from the list would be
+    // sold and then never unlock anything.
+    expect([...PROGRAM_IDS].sort()).toEqual(
+      [PRODUCTS.program, PRODUCTS.programOffer].sort(),
+    );
+  });
+
+  test('offerings and packages match the dashboard', () => {
+    // `default` is the current offering; `offer` carries the discounted pass.
+    expect(OFFERINGS.standard).toBe('default');
+    expect(OFFERINGS.offer).toBe('offer');
+    // The monthly plan sits in RevenueCat's own `$rc_monthly` slot, which the
+    // adapter reads through `found.monthly`. The pass has no built-in slot —
+    // a non-renewing product is not one of RevenueCat's package types — so it
+    // is a custom package looked up by this identifier.
+    expect(PROGRAM_PACKAGE).toBe('program');
+  });
+
+  test('the entitlement is the one both passes are attached to', () => {
+    expect(ENTITLEMENT).toBe('premium');
+  });
+
+  test('the printed fallbacks match the configured prices', () => {
+    // Only ever shown when the store cannot be reached. If one of these is
+    // stale it advertises a price Apple will not charge.
+    expect(PRINTED_PRICES.monthly).toBe(24.99);
+    expect(PRINTED_PRICES.program).toBe(49.99);
+    expect(PRINTED_PRICES.programOffer).toBe(14.99);
   });
 });
