@@ -128,6 +128,9 @@ export {
   hoursOnFeetOn,
   logFor,
   painAverage,
+  logPain,
+  painEntriesOn,
+  painLatestOn,
   painOn,
   pastPlanEnd,
   phaseFor,
@@ -138,6 +141,7 @@ export {
   useProgramState,
   writeLog,
   type DayLog,
+  type PainEntry,
   type ProgramPhase,
   type ProgramState,
 } from './model/state';

@@ -28,7 +28,7 @@ import {
   TODAY_INDEX,
   currentDay,
   painOn,
-  writeLog,
+  logPain,
   type ProgramDay,
   exerciseById,
 } from '@/entities/program';
@@ -107,12 +107,18 @@ export function PainCheck({ onLogged }: PainCheckProps) {
   const [selected, setSelected] = useState<CardKey | null>(null);
   const [open, setOpen] = useState(false);
   /**
-   * Whether today's answer is committed.
+   * Whether a check-in has been made since this screen was opened.
    *
-   * The block does not go away once it is — it slides under the task list and
-   * stays on screen — so something has to close the question, or scrolling back
-   * down to it offers a second commit: another burst of confetti, or the pain
-   * sheet re-presented over a day that is already logged.
+   * It softens the question rather than closing it. The button used to read
+   * "Logged for today" and stay disabled, which made a day one answer: somebody
+   * whose foot hurt at seven, settled by noon and hurt again after a walk had
+   * nowhere to say so. A day is not one answer, and the log now holds as many
+   * as are given.
+   *
+   * What it still does is stop a second commit landing by accident — the block
+   * does not go away once answered, it slides under the task list and stays on
+   * screen, so without this, scrolling back to it would re-fire the confetti.
+   * Picking a card again clears it.
    */
   const [logged, setLogged] = useState(false);
   /**
@@ -160,7 +166,7 @@ export function PainCheck({ onLogged }: PainCheckProps) {
    * `PROGRAM_MS` would be lost by anyone who logged and immediately left.
    */
   const record = (score: number, zones: readonly LegZone[]) => {
-    writeLog(currentDay(), { painMorning: score, painZones: [...zones] });
+    logPain(currentDay(), score, zones);
     acknowledge(score);
   };
 
@@ -176,18 +182,23 @@ export function PainCheck({ onLogged }: PainCheckProps) {
               // Nothing is chosen when the screen arrives, so both sit at full
               // strength: dimming everything would read as disabled.
               dimmed={selected != null && selected !== card.key}
-              locked={logged}
+              // Not locked once answered. The cards stay live so a second
+              // check-in can be started from the same place as the first.
+              locked={false}
               onPress={() => {
                 Haptics.selectionAsync();
                 setSelected(card.key);
+                // Re-opens the question. Without this the button would still
+                // read "Check in again" after a fresh choice had been made.
+                setLogged(false);
               }}
             />
           ))}
         </View>
 
         <PrimaryButton
-          label={logged ? 'Logged for today' : 'Log today’s check-in'}
-          disabled={logged || selected == null}
+          label={logged ? 'Check in again' : 'Log today’s check-in'}
+          disabled={selected == null}
           onPress={() => {
             Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
             // "No pain today" is already the whole answer. Opening a slider to

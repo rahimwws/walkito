@@ -33,11 +33,31 @@ export type ProgramState = {
   phase: ProgramPhase;
 };
 
+/** One check-in: what they said, when, and where it hurt. */
+export type PainEntry = {
+  /** 0–10. */
+  score: number;
+  /** Epoch milliseconds — the day says which day, this says when inside it. */
+  at: number;
+  /** Zone ids from the leg map. Absent when nobody pointed at anything. */
+  zones?: string[];
+};
+
 export type DayLog = {
   dayNumber: number;
   /** `YYYY-MM-DD`, the day the entry belongs to. */
   date: string;
-  /** Morning check-in, 0–10, or null if they have not logged one. */
+  /**
+   * The day's *first* reading, 0–10, or null if nobody logged one.
+   *
+   * The morning one, as the name says. It used to be whatever was written last,
+   * which quietly made the name a lie the moment a second check-in was allowed:
+   * somebody who woke at seven and felt fine by evening would have had their
+   * seven overwritten by a two, and the engine would have adapted tomorrow off
+   * a reading taken twelve hours after the moment it cares about.
+   *
+   * Every reading, including this one, is also in `painEntries`.
+   */
   painMorning: number | null;
   morningStretchDone: boolean;
   sessionCompleted: boolean;
@@ -47,7 +67,7 @@ export type DayLog = {
   /** Exercise ids actually done. */
   exercisesDone: string[];
   /**
-   * Where it hurt, as zone ids from the check-in's leg map.
+   * Where it hurt at the most recent check-in, as zone ids from the leg map.
    *
    * Optional, because every entry written before the map existed has none and a
    * required field would make those unreadable. Empty and absent mean the same
@@ -55,6 +75,19 @@ export type DayLog = {
    * them.
    */
   painZones?: string[];
+  /**
+   * Every check-in made on this day, oldest first.
+   *
+   * A day is not one answer. A foot can hurt in the morning, settle by midday
+   * and hurt again after a walk, and a model with one slot per day makes the
+   * user choose which of those was true — or silently keeps the last one, which
+   * is the same thing with the choice hidden. Asking twice is normal; this is
+   * where both answers go.
+   *
+   * Optional for the same reason as `painZones`: entries written before it
+   * existed have none, and `painMorning` still carries their single reading.
+   */
+  painEntries?: PainEntry[];
   /**
    * When the session was finished, as epoch milliseconds.
    *
@@ -357,6 +390,42 @@ export function dateKeyForDay(dayNumber: number, from: ProgramState = state): st
 }
 
 // ---------------------------------------------------------------------------
+/**
+ * Record a check-in, without discarding the last one.
+ *
+ * Appends rather than overwrites, which is the whole point: a foot that hurt at
+ * seven, settled by noon and hurt again after a walk has given three true
+ * answers, and a model with one slot per day makes the user pick which of them
+ * counts. It also keeps `painMorning` honest — that field is the day's *first*
+ * reading, so it is written once and then left alone however many times
+ * somebody checks in after it.
+ *
+ * `painZones` tracks the newest entry, because it answers "where does it hurt"
+ * in the present tense and the session offered next is built from it.
+ */
+export function logPain(
+  dayNumber: number,
+  score: number,
+  zones: readonly string[] = [],
+  now: number = Date.now(),
+): DayLog {
+  const existing = logs[dayNumber];
+  const entry: PainEntry = { score, at: now, ...(zones.length > 0 ? { zones: [...zones] } : {}) };
+  const entries = [...(existing?.painEntries ?? []), entry];
+
+  return writeLog(
+    dayNumber,
+    {
+      painEntries: entries,
+      // First wins. An entry already on file means the morning reading has been
+      // taken, whatever the clock says now.
+      painMorning: existing?.painMorning ?? score,
+      painZones: [...zones],
+    },
+    now,
+  );
+}
+
 // Derived history
 // ---------------------------------------------------------------------------
 
@@ -369,6 +438,32 @@ export function dateKeyForDay(dayNumber: number, from: ProgramState = state): st
  */
 export function painOn(dayNumber: number): number | null {
   return logs[dayNumber]?.painMorning ?? null;
+}
+
+/**
+ * The most recent reading for a day, or null.
+ *
+ * Distinct from `painOn`, which is the morning. This is the one to show when
+ * saying how the foot is *now* — after an evening check-in the morning figure
+ * is history, and quoting it back would tell somebody their foot hurts when
+ * they have just said it stopped.
+ */
+export function painLatestOn(dayNumber: number): number | null {
+  const entries = logs[dayNumber]?.painEntries;
+  if (entries != null && entries.length > 0) return entries[entries.length - 1].score;
+  // Written before check-ins were a list. Its single reading is both the first
+  // and the last one there is.
+  return logs[dayNumber]?.painMorning ?? null;
+}
+
+/** Every check-in made on a day, oldest first. */
+export function painEntriesOn(dayNumber: number): readonly PainEntry[] {
+  const log = logs[dayNumber];
+  if (log?.painEntries != null) return log.painEntries;
+  // Back-fill the shape for an entry written before the list existed, so
+  // callers never need to know which era a log came from.
+  if (log?.painMorning != null) return [{ score: log.painMorning, at: 0 }];
+  return [];
 }
 
 /**
