@@ -30,6 +30,7 @@ import {
   painOn,
   writeLog,
   type ProgramDay,
+  exerciseById,
 } from '@/entities/program';
 import { fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { PROGRAM_EASING, PROGRAM_MS } from '@/shared/lib/program';
@@ -40,6 +41,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { SessionView } from '@/widgets/session-player';
 
 import { ZONE_LABELS, type LegZone } from '../model/leg-zones';
+import { reliefIdsFor } from '../model/zone-relief';
 import { LegMap } from './leg-map';
 
 import { PAIN_MAX, PAIN_MIN, PainScale, painBand, painColor } from './pain-scale';
@@ -343,6 +345,18 @@ function Sheet({
     );
   };
 
+  /**
+   * The exercises that match where it hurts, as titles.
+   *
+   * Titles rather than ids because that is what the player takes — see the note
+   * on `moves` in `SessionView`. Recomputed as the map changes, so the session
+   * waiting behind the button is always the one for what is currently marked.
+   */
+  const reliefMoves = useMemo(
+    () => reliefIdsFor(zones).map((id) => exerciseById(id).title),
+    [zones],
+  );
+
   const usual = useMemo(usualRange, []);
   /** Held steady across renders: a fresh object every frame would hand the
    * player a new `day` on each one. */
@@ -376,8 +390,17 @@ function Sheet({
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
     setLogged(true);
     onSaved(score, zones);
-    // Under the line, the answer is filed and the sheet's job is done.
-    if (score <= RELIEF_ABOVE) {
+    /**
+     * Under the line and with nothing marked, the answer is filed and the
+     * sheet's job is done.
+     *
+     * Marking a zone overrides the number. Someone who took the trouble to
+     * point at their achilles has asked a question, and closing on them would
+     * make the map a survey — it would collect the answer and do nothing with
+     * it. The score still decides whether the *programme* changes; this only
+     * decides whether we show them the thing that helps.
+     */
+    if (score <= RELIEF_ABOVE && zones.length === 0) {
       onClose();
       return;
     }
@@ -432,7 +455,7 @@ function Sheet({
       <Text style={[styles.zoneLine, { color: meter.caption }]}>
         {zones.length === 0
           ? 'Tap where it hurts'
-          : zones.map((zone) => ZONE_LABELS[zone]).join(' · ')}
+          : `${zones.map((zone) => ZONE_LABELS[zone]).join(' · ')} — ${reliefMoves[0]} next`}
       </Text>
 
       <View style={styles.scale}>
@@ -463,7 +486,7 @@ function Sheet({
           the same colour the sheet is already painting, so there is no seam. */}
       <Animated.View
         style={[styles.pane, { backgroundColor: colors.background }, reliefPane]}>
-        {relieving && <SessionView day={relief} onBack={onClose} />}
+        {relieving && <SessionView day={relief} moves={reliefMoves} onBack={onClose} />}
       </Animated.View>
     </View>
   );
