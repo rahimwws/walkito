@@ -35,7 +35,7 @@ const ITEMS: (Omit<GlassTabItem, 'label'> & { href: string; label: Key })[] = [
   // The middle, deliberately. It is what somebody reaches for between
   // sessions, and the middle is where the thumb lands without looking.
   // The one tab with a colour of its own — see `tint` on `GlassTabItem`.
-  { name: 'quick', href: '/quick', label: 'quick.tab', icon: FlashIcon, tint: PRIMARY, strokeWidth: 2.4 },
+  { name: 'quick', href: '/quick', label: 'quick.tab', icon: FlashIcon, tint: PRIMARY, strokeWidth: 2.8 },
   { name: 'progress', href: '/progress', label: 'tabs.progress', icon: ChartLineData01Icon },
 ];
 

@@ -42,7 +42,11 @@ const ITEM_WIDTH_MINIMIZED = 58;
 /** Inner inset between the capsule wall and the tab items. */
 const ROW_PAD_H = 4;
 const LABEL_HEIGHT = 13;
-const ICON_SIZE = 21;
+const ICON_SIZE = 23;
+/** The word under each glyph. Was 9.5, which read as a caption rather than as
+ * a name — the bar is the app's main control and its labels were the smallest
+ * text on the screen. */
+const LABEL_SIZE = 11;
 /** Space between icon and label — folded into the label's animated height so
  * it fully disappears when minimized (keeps the icon perfectly centered). */
 const ITEM_GAP = 2;
@@ -471,17 +475,28 @@ export function GlassTabButton({
     opacity: slideIndex ? 1 - Math.min(Math.abs(slideIndex.value - index), 1) : isFocused ? 1 : 0,
   }));
 
+  /**
+   * The word under the glyph.
+   *
+   * An item carrying its own tint keeps it in both states rather than fading
+   * between the bar's active and inactive neutrals — the colour is the point of
+   * the override, and a label that drops to grey the moment you leave the tab
+   * would undo half of it.
+   */
+  const ownTint = item.tint;
   const labelStyle = useAnimatedStyle(() => ({
     opacity: interpolate(progress.value, [0, 0.4], [1, 0], Extrapolation.CLAMP),
-    color: slideIndex
-      ? interpolateColor(
-          Math.min(Math.abs(slideIndex.value - index), 1),
-          [0, 1],
-          [theme.activeTint, theme.inactiveTint],
-        )
-      : isFocused
-        ? theme.activeTint
-        : theme.inactiveTint,
+    color: ownTint
+      ? ownTint
+      : slideIndex
+        ? interpolateColor(
+            Math.min(Math.abs(slideIndex.value - index), 1),
+            [0, 1],
+            [theme.activeTint, theme.inactiveTint],
+          )
+        : isFocused
+          ? theme.activeTint
+          : theme.inactiveTint,
   }));
 
   // Height is animated EXPLICITLY (not derived from children) so the icon
@@ -527,7 +542,7 @@ export function GlassTabButton({
         {/* Fades out and is clipped by the shrinking box — no layout anim. */}
         <Animated.Text
           numberOfLines={1}
-          style={[{ fontSize: 9.5, fontFamily: fonts.semibold, marginTop: ITEM_GAP }, labelStyle]}>
+          style={[{ fontSize: LABEL_SIZE, fontFamily: fonts.semibold, marginTop: ITEM_GAP }, labelStyle]}>
           {item.label}
         </Animated.Text>
       </Animated.View>
