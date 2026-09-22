@@ -20,19 +20,60 @@ import { forgetIdentity, supabase } from '@/shared/lib/supabase';
  */
 export type EmailSignIn =
   | { status: 'signed-in'; userId: string; email: string }
-  /** Wrong address or wrong password. Deliberately not distinguished — saying
-   * which of the two was right tells an attacker which addresses have accounts. */
-  | { status: 'invalid' }
-  /** No backend in this build. */
-  | { status: 'unavailable' }
+  /** Anything that went wrong, already phrased for the user. One shape rather
+   * than a union of causes: the sheet shows the message and has no branch that
+   * behaves differently, and the distinctions that matter are in the wording. */
   | { status: 'failed'; message: string };
+
+/**
+ * What to tell the user, per Supabase auth error code.
+ *
+ * This started as "any 400 means the credentials are wrong", which was wrong
+ * and actively unhelpful: an account that exists but has never been confirmed
+ * also fails with a 400, and telling that person their password does not match
+ * sends them to reset a password that was fine. The codes below are the ones
+ * that are actually reachable from a sign-in.
+ *
+ * `invalid_credentials` deliberately does not say which half was wrong — that
+ * would tell anybody trying addresses which ones have accounts.
+ */
+function explain(code: string | undefined, message: string): string {
+  switch (code) {
+    case 'invalid_credentials':
+      return 'That email and password don’t match.';
+    case 'email_not_confirmed':
+      // The likeliest failure for an account made by hand in the Supabase
+      // dashboard: "Auto Confirm User" is off by default, and an unconfirmed
+      // account cannot sign in at all.
+      return 'That account hasn’t been confirmed yet. Confirm the email address, then try again.';
+    case 'user_banned':
+      return 'That account is disabled.';
+    case 'email_provider_disabled':
+    case 'provider_disabled':
+      return 'Email sign-in is switched off for this app. Use Continue with Apple.';
+    case 'over_request_rate_limit':
+      return 'Too many attempts. Wait a minute and try again.';
+    case 'validation_failed':
+    case 'email_address_invalid':
+      return 'That doesn’t look like an email address.';
+    default:
+      // The server's own words. Better than a generic line for the cases not
+      // listed above, which are rare enough that guessing at them would be
+      // inventing explanations.
+      return message;
+  }
+}
 
 export async function signInWithEmail(email: string, password: string): Promise<EmailSignIn> {
   const client = supabase;
-  if (client == null) return { status: 'unavailable' };
+  if (client == null) {
+    return { status: 'failed', message: 'This build has no account server. Use Continue with Apple.' };
+  }
 
   const address = email.trim();
-  if (address.length === 0 || password.length === 0) return { status: 'invalid' };
+  if (address.length === 0 || password.length === 0) {
+    return { status: 'failed', message: 'Enter both an email and a password.' };
+  }
 
   try {
     const { data, error } = await client.auth.signInWithPassword({
@@ -41,12 +82,16 @@ export async function signInWithEmail(email: string, password: string): Promise<
     });
 
     if (error != null) {
-      // Supabase reports bad credentials as a 400. Anything else — a project
-      // that is down, a network that is not there — is not the user getting it
-      // wrong, and telling them their password is bad would send them to reset
-      // a password that works.
-      if (error.status === 400) return { status: 'invalid' };
-      return { status: 'failed', message: error.message };
+      // The real code, in development only. The user-facing message is
+      // deliberately vague for some of these, and debugging a sign-in against a
+      // vague message is what made this hard to diagnose the first time.
+      if (__DEV__) {
+        console.warn(
+          `[auth] sign-in failed: code=${error.code ?? 'none'} status=${error.status ?? 'none'} ` +
+            `message=${error.message}`,
+        );
+      }
+      return { status: 'failed', message: explain(error.code, error.message) };
     }
 
     const user = data.user;
