@@ -112,17 +112,15 @@ export function QuickPage() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{
           paddingTop: insets.top + 24,
+          // One gutter for the whole screen, as the other two tabs have. The
+          // card fills what is left of the width; an earlier version moved this
+          // onto each block so the card could run edge to edge, which left it
+          // pinned to x=0 with a gap down the right.
+          paddingHorizontal: SIDE_PAD,
           paddingBottom: insets.bottom + 140,
         }}>
-        {/* The gutter is per-block rather than on the scroll, so the featured
-            card can run edge to edge while the heading and the grid keep the
-            margin the other two tabs use. */}
-        <Text style={[styles.title, styles.gutter, { color: colors.foreground }]}>
-          {t('quick.title')}
-        </Text>
-        <Text style={[styles.subtitle, styles.gutter, { color: meter.caption }]}>
-          {t('quick.subtitle')}
-        </Text>
+        <Text style={[styles.title, { color: colors.foreground }]}>{t('quick.title')}</Text>
+        <Text style={[styles.subtitle, { color: meter.caption }]}>{t('quick.subtitle')}</Text>
 
         {/* The one that suits right now. It stays in the grid below as well —
             people look for a protocol where it usually is, and moving it when
@@ -139,7 +137,7 @@ export function QuickPage() {
           onPress={() => openProtocol(featured)}
           style={styles.featured}
         />
-        <View style={[styles.grid, styles.gutter]}>
+        <View style={styles.grid}>
           {PROTOCOLS.map((protocol) => (
             <FeatureCard
               key={protocol.id}
@@ -168,12 +166,16 @@ const styles = StyleSheet.create({
   screen: { flex: 1 },
   title: { fontSize: 32, fontFamily: fonts.heavy, letterSpacing: -0.8 },
   subtitle: { marginTop: 4, fontSize: 16, fontFamily: fonts.medium, letterSpacing: -0.2 },
-  /** Edge to edge, and banner-shaped. Overrides `FeatureCard`'s own near-square
-   * ratio, which is sized for two cards abreast and becomes a panel taller than
-   * the display once it has the full width. */
-  featured: { marginTop: 20, aspectRatio: 2.05 },
-  /** The margin every other tab uses. Applied per block, not to the scroll. */
-  gutter: { marginHorizontal: SIDE_PAD },
+  /**
+   * The full width inside the gutter, and banner-shaped.
+   *
+   * `alignSelf: 'stretch'` is stated rather than left to the default: with an
+   * `aspectRatio` set and no width, a stray `alignItems` anywhere above would
+   * let the card size to its content and sit against one edge, which is exactly
+   * what it did. Overrides `FeatureCard`'s own near-square ratio, which is
+   * sized for two cards abreast.
+   */
+  featured: { marginTop: 20, alignSelf: 'stretch', width: '100%', aspectRatio: 2.05 },
   grid: {
     marginTop: 20,
     flexDirection: 'row',

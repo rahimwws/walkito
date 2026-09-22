@@ -2,6 +2,7 @@ import ChartLineData01Icon from '@hugeicons/core-free-icons/ChartLineData01Icon'
 import FlashIcon from '@hugeicons/core-free-icons/FlashIcon';
 import Home07Icon from '@hugeicons/core-free-icons/Home07Icon';
 import { useRouter } from 'expo-router';
+import { PRIMARY } from '@/shared/config';
 import { Tabs, TabList, TabSlot, TabTrigger } from 'expo-router/ui';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -33,7 +34,8 @@ const ITEMS: (Omit<GlassTabItem, 'label'> & { href: string; label: Key })[] = [
   { name: 'index', href: '/', label: 'tabs.home', icon: Home07Icon },
   // The middle, deliberately. It is what somebody reaches for between
   // sessions, and the middle is where the thumb lands without looking.
-  { name: 'quick', href: '/quick', label: 'quick.tab', icon: FlashIcon },
+  // The one tab with a colour of its own — see `tint` on `GlassTabItem`.
+  { name: 'quick', href: '/quick', label: 'quick.tab', icon: FlashIcon, tint: PRIMARY, strokeWidth: 2.4 },
   { name: 'progress', href: '/progress', label: 'tabs.progress', icon: ChartLineData01Icon },
 ];
 

@@ -91,6 +91,18 @@ export type GlassTabItem = {
   /** Hugeicons glyph — the same one is used for both tint layers, so the
    * active state comes from the tint, not from swapping in a filled variant. */
   icon: IconSvgElement;
+  /**
+   * Overrides the bar's own tint for this glyph, in both states.
+   *
+   * One tab carries a colour of its own: Quick is the only entry that is not a
+   * place in the app but a thing to do right now, and a bar where every glyph
+   * is the same neutral gives the eye nothing to find it by. Left undefined by
+   * every other item, which keeps the bar's default the rule rather than the
+   * exception.
+   */
+  tint?: string;
+  /** Heavier stroke for a glyph that has to read at a glance. */
+  strokeWidth?: number;
 };
 
 type BarContextValue = {
@@ -418,7 +430,14 @@ export function GlassTabBar({
 function TabGlyph({ item, tint }: { item: GlassTabItem; tint: string }) {
   return (
     <View style={{ height: ICON_SIZE, justifyContent: 'center' }}>
-      <HugeiconsIcon icon={item.icon} size={ICON_SIZE} color={tint} />
+      <HugeiconsIcon
+        icon={item.icon}
+        size={ICON_SIZE}
+        // The item's own colour where it has one, so the crossfade between the
+        // two tint layers keeps it rather than fading it to the bar's neutral.
+        color={item.tint ?? tint}
+        strokeWidth={item.strokeWidth ?? 1.5}
+      />
     </View>
   );
 }
