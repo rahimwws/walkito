@@ -669,3 +669,67 @@ export function nextSessionAt(dayNumber: number, now = Date.now()): number | nul
   const rested = log.completedAt == null ? 0 : log.completedAt + REST_HOURS * 3_600_000;
   return Math.max(tomorrow.getTime(), rested);
 }
+
+/**
+ * What the twelve weeks actually changed, in the user's own numbers.
+ *
+ * Shown when programme access runs out, and the reason it is worth showing at
+ * all: somebody who has just been asked to pay again should be looking at what
+ * the last twelve weeks bought, not at a marketing claim. Every figure is
+ * measured — the first retest against the latest, and the first logged morning
+ * pain against the most recent. Nothing here is a placeholder; a field with no
+ * real pair of readings behind it resolves to null and is not rendered.
+ */
+export type ProgramSummary = {
+  /** Single-leg calf raises to failure, first measurement against latest.
+   * The stronger side, because that is the one the user counts. */
+  calf: { from: number; to: number } | null;
+  /** Morning first-step pain, 0–10. */
+  pain: { from: number; to: number } | null;
+  /** Sessions actually completed across the whole plan. */
+  sessions: number;
+};
+
+
+export function programSummary(cursor: number = TODAY_INDEX): ProgramSummary {
+  // The raw measurements, not `RETESTS`. A `RetestRow` carries `from`/`to` as
+  // display strings against the *previous* checkpoint, which is the wrong span
+  // for this screen — twelve weeks means the first reading against the last.
+  const results = [...retestResults()].sort((a, b) => a.dayNumber - b.dayNumber);
+  const first = results[0];
+  const last = results[results.length - 1];
+
+  // Both ends, and they must be different checkpoints. One retest is a starting
+  // point, not a change, and comparing a reading with itself would print
+  // "11 → 11" — which reads as the plan having done nothing rather than as
+  // there being nothing yet to compare.
+  const calf =
+    first != null && last != null && first !== last
+      ? {
+          from: Math.max(first.calf.left, first.calf.right),
+          to: Math.max(last.calf.left, last.calf.right),
+        }
+      : null;
+
+  // The first morning they logged, against the most recent. Scanned rather than
+  // stored: the log is sparse — people miss days — so the first and last real
+  // readings are the only honest pair.
+  let painFrom: number | null = null;
+  let painTo: number | null = null;
+  for (let day = 1; day <= cursor + 1; day += 1) {
+    const value = painOn(day);
+    if (value == null) continue;
+    if (painFrom == null) painFrom = value;
+    painTo = value;
+  }
+  const pain = painFrom != null && painTo != null && painFrom !== painTo
+    ? { from: painFrom, to: painTo }
+    : null;
+
+  let sessions = 0;
+  for (let day = 1; day <= cursor + 1; day += 1) {
+    if (logFor(day)?.sessionCompleted === true) sessions += 1;
+  }
+
+  return { calf, pain, sessions };
+}

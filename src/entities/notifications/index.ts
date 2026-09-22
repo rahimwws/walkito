@@ -2,6 +2,8 @@ export {
   Notifications,
   REFERRAL_KIND,
   WINBACK_KIND,
+  EXPIRY_KIND,
+  syncExpiryNotice,
   cancelWinback,
   notificationsAllowed,
   registerPushToken,

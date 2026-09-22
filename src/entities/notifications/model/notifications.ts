@@ -220,3 +220,66 @@ export async function cancelWinback(): Promise<void> {
 }
 
 export { Notifications };
+
+/** The kind tag on the programme-expiry warning, so the plan scheduler and the
+ * delivery listener can tell it apart from a daily message. */
+export const EXPIRY_KIND = 'program-expiry';
+
+/** One fixed identifier, not a fresh one per call. iOS replaces a pending
+ * request that shares an identifier, which is what makes `sync` below
+ * idempotent — it runs on every foreground and must not stack up seven copies
+ * of the same warning. */
+const EXPIRY_ID = 'program-expiry-notice';
+
+/** How long before access ends the warning lands. A week is long enough to
+ * decide and short enough to still be about something happening. */
+const EXPIRY_NOTICE_DAYS = 7;
+
+/**
+ * Warn, once, a week before twelve-week access runs out.
+ *
+ * Scheduled locally rather than pushed, because the date is known on the device
+ * the moment the programme is bought and a local trigger needs no server and no
+ * push token. `endsAt` comes from the purchase, so re-buying moves the warning
+ * rather than adding a second one.
+ *
+ * Passing null cancels — which is the monthly-subscriber case, and the case
+ * where the pass has already lapsed. Both would otherwise leave a warning
+ * pending about an end date that no longer means anything.
+ *
+ * The body is the part that matters. Somebody who reads "your access ends" and
+ * nothing else has to assume the twelve weeks of logs go with it, and they do
+ * not — so the reassurance travels in the same breath as the warning rather
+ * than waiting to be discovered on a paywall.
+ */
+export async function syncExpiryNotice(endsAt: Date | null): Promise<void> {
+  try {
+    await Notifications.cancelScheduledNotificationAsync(EXPIRY_ID);
+  } catch {
+    // Nothing pending under that identifier, which is the normal case on a
+    // first run. Not an error and not worth a line in the log.
+  }
+
+  if (endsAt == null) return;
+
+  const at = new Date(endsAt.getTime() - EXPIRY_NOTICE_DAYS * 86_400_000);
+  // Already past — somebody who buys with less than a week left, or opens the
+  // app inside the final week. A trigger in the past fires immediately on iOS,
+  // which would greet them with a warning the instant they launched.
+  if (at.getTime() <= Date.now()) return;
+
+  try {
+    await Notifications.scheduleNotificationAsync({
+      identifier: EXPIRY_ID,
+      content: {
+        title: 'Your program access ends in a week',
+        body: 'Your progress stays either way.',
+        sound: true,
+        data: { kind: EXPIRY_KIND },
+      },
+      trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: at },
+    });
+  } catch (error) {
+    console.warn('[notifications] expiry notice did not schedule:', error);
+  }
+}

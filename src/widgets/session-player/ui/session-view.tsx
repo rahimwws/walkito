@@ -37,6 +37,7 @@ import {
   type ProgramDay,
   type Tempo,
 } from '@/entities/program';
+import { clearBrowsingLapsed, useSessionsLocked } from '@/entities/purchase';
 import { fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { plural } from '@/shared/lib/format';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -264,7 +265,77 @@ export type SessionViewProps = {
  * you have not done before — the one where you need to see the shape of it, not
  * how many seconds are left.
  */
-export function SessionView({ day, onBack, moves: override, onFinish }: SessionViewProps) {
+
+/**
+ * The one gate on starting a session.
+ *
+ * Here rather than at the three screens that open a session, because there is
+ * no fourth entry point to forget and no way for two of them to disagree. It
+ * only ever closes for one person: somebody whose twelve weeks ran out and who
+ * answered the expiry screen with "Not now". They keep every screen that reads
+ * their history; this is the single thing that costs something to provide.
+ *
+ * A wrapper rather than an early return inside the player. The player is a few
+ * dozen hooks deep, and returning before them on some renders and after them on
+ * others is a hook-order violation — two components is the boring fix.
+ *
+ * `clearBrowsingLapsed` is the way back. It drops the read-only flag, which
+ * flips the guard in the root layout, which mounts the expiry screen with both
+ * prices on it — so this panel does not have to duplicate the paywall to lead
+ * somewhere.
+ */
+export function SessionView(props: SessionViewProps) {
+  const locked = useSessionsLocked();
+  if (!locked) return <SessionRun {...props} />;
+  return <SessionLocked onBack={props.onBack} />;
+}
+
+function SessionLocked({ onBack }: { onBack: () => void }) {
+  const scheme = useColorScheme();
+  const meter = meterColors[scheme];
+  const insets = useSafeAreaInsets();
+
+  const reopen = () => {
+    Haptics.selectionAsync();
+    // Not a navigation call. Clearing the flag is what makes the expiry screen
+    // available again, and the router follows the guard.
+    clearBrowsingLapsed();
+  };
+
+  return (
+    <View style={[lockedStyles.host, { paddingTop: insets.top + 24, paddingBottom: insets.bottom + 24 }]}>
+      <Pressable accessibilityRole="button" accessibilityLabel="Back" onPress={onBack} hitSlop={12}>
+        <HugeiconsIcon icon={ArrowLeft02Icon} size={24} color={meter.ink} strokeWidth={1.8} />
+      </Pressable>
+
+      <View style={lockedStyles.middle}>
+        <HugeiconsIcon icon={SquareLock02Icon} size={40} color={meter.caption} strokeWidth={1.6} />
+        <Text style={[lockedStyles.title, { color: meter.ink }]}>Your program has ended</Text>
+        <Text style={[lockedStyles.body, { color: meter.caption }]}>
+          Everything you logged is still here to read. To run sessions again, pick up where
+          you left off.
+        </Text>
+      </View>
+
+      <PrimaryButton label="See your options" onPress={reopen} />
+    </View>
+  );
+}
+
+const lockedStyles = StyleSheet.create({
+  host: { flex: 1, paddingHorizontal: 24, gap: 24 },
+  middle: { flex: 1, justifyContent: 'center', alignItems: 'center', gap: 12 },
+  title: { fontSize: 24, fontFamily: fonts.heavy, letterSpacing: -0.6, textAlign: 'center' },
+  body: {
+    fontSize: 15,
+    fontFamily: fonts.medium,
+    letterSpacing: -0.2,
+    textAlign: 'center',
+    lineHeight: 21,
+  },
+});
+
+function SessionRun({ day, onBack, moves: override, onFinish }: SessionViewProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];

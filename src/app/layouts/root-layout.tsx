@@ -17,7 +17,7 @@ import {
   useReferralSync,
   useQuickActions,
 } from '@/app/providers';
-import { useEntitled } from '@/entities/purchase';
+import { useBrowsingLapsed, useEntitled, useProgramLapsed } from '@/entities/purchase';
 import { useOnboarded } from '@/entities/session';
 import { fontAssets } from '@/shared/config';
 // Imported for its module-scope side effect as much as anything: reading the
@@ -57,6 +57,19 @@ export function RootLayout() {
    * the wall in front of somebody who has paid.
    */
   const entitled = useEntitled();
+  /**
+   * The fourth state, between paid and never-paid: twelve weeks bought and
+   * finished. It gets its own door — the expiry screen — because a pitch is the
+   * wrong thing to show somebody who already paid once and has twelve weeks of
+   * their own measurements in the app.
+   *
+   * `browsing` is their answer to it. Having chosen "Not now" they get the tabs
+   * read-only: history visible, new sessions locked in the session player. That
+   * is the one hole in an otherwise fully paid app, and it is deliberate —
+   * withholding data the user generated is not a pricing mechanism.
+   */
+  const lapsed = useProgramLapsed();
+  const browsing = useBrowsingLapsed();
   // Listens for the win-back notification being tapped, at the root rather
   // than on the sheet: the tap can be what launches the app, in which case no
   // screen has mounted yet to hear it.
@@ -70,9 +83,10 @@ export function RootLayout() {
   // Fills the local health cache in the background. Never awaited and never
   // rendered — every screen reads the cache, which always has an answer.
   useHealthPipeline();
-  // Starts the store and tracks whether the subscription is live. On a
-  // simulator this resolves to "entitled" without contacting anything — see the
-  // note in `entities/purchase/model/store.ts`.
+  // Starts the store and tracks whether the subscription is live. The simulator
+  // talks to the real store too — with a Test Store key the whole purchase works
+  // there — so the paywall is reachable in development rather than bypassed. See
+  // the note in `entities/purchase/model/store.ts`.
   usePurchases();
   // Clears a Live Activity left pinned to the Dynamic Island by a crash. At the
   // root because the earliest moment is the point — the player swept these too,
@@ -138,10 +152,10 @@ export function RootLayout() {
                     nothing behind the paywall to reach — the same mechanism
                     that makes onboarding a one-way door.
 
-                    `entitled` is true on the simulator without contacting any
-                    store, so development is unaffected. See the note in
-                    `entities/purchase/model/store.ts`. */}
-                <Stack.Protected guard={onboarded && !entitled}>
+                    Not shown to somebody whose twelve weeks have simply run
+                    out: they get `expired` below instead. This door is for a
+                    first purchase. */}
+                <Stack.Protected guard={onboarded && !entitled && !lapsed}>
                   <Stack.Screen
                     name="offer"
                     options={{
@@ -155,7 +169,26 @@ export function RootLayout() {
                   />
                 </Stack.Protected>
 
-                <Stack.Protected guard={onboarded && entitled}>
+                {/* The end of the programme, which is not the same door as the
+                    paywall — see the note on `lapsed` above. Guarded on
+                    `!browsing` so answering it with "Not now" is answering it
+                    once, rather than meeting it again every cold launch. */}
+                <Stack.Protected guard={onboarded && !entitled && lapsed && !browsing}>
+                  <Stack.Screen
+                    name="expired"
+                    options={{
+                      headerShown: false,
+                      presentation: 'card',
+                      gestureEnabled: false,
+                      animation: 'fade',
+                    }}
+                  />
+                </Stack.Protected>
+
+                {/* Paid, or browsing their own history after the programme ran
+                    out. The second case is read-only: the session player refuses
+                    to start anything while `sessionsLocked()` holds. */}
+                <Stack.Protected guard={onboarded && (entitled || (lapsed && browsing))}>
                   <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
                 </Stack.Protected>
 

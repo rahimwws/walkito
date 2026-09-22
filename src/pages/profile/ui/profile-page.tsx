@@ -19,6 +19,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { GiftSheet } from '@/shared/ui/gift-sheet';
 
 import { DeleteAccountSheet } from './delete-account-sheet';
+import { ResetRow } from './reset-row';
 
 /**
  * The person, and the three things they can do about their account.
@@ -140,6 +141,8 @@ export function ProfilePage() {
             in-app way to delete an account for any app that creates one, and
             this app creates an anonymous identity on first launch. */}
         <Section title="Danger">
+          {/* Above the irreversible one, and only in a development build. */}
+          <ResetRow />
           <Row
             icon={Delete02Icon}
             label="Delete account"

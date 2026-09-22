@@ -31,7 +31,12 @@ import { LEGAL, PRIMARY, accents, fonts, meterColors, palette, type AccentName }
 import { useColorScheme } from '@/shared/lib/theme';
 import { Linking } from 'react-native';
 
-import { OFFERINGS, purchases, type Offering } from '@/entities/purchase';
+import {
+  OFFERINGS,
+  PRINTED_PRICES as PRINTED,
+  purchases,
+  type Offering,
+} from '@/entities/purchase';
 import { formatPrice } from '@/shared/lib/money';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
 import { PrimaryButton } from '@/shared/ui/primary-button';
@@ -46,23 +51,6 @@ function openLegal(url: string) {
   Linking.openURL(url).catch(() => {});
 }
 
-/**
- * What the sheet prints when there is no store to ask.
- *
- * Fallbacks, not prices. Every figure below is read from the store when one is
- * configured — these exist so the layout is not empty on a simulator or in a
- * build whose RevenueCat key is missing, and so the sheet never renders a blank
- * where a number should be. If one of these ever reaches a paying user it is a
- * bug, not a price: see `storeDiagnosis()`.
- */
-const PRINTED = {
-  /** Auto-renewing, billed monthly. */
-  monthly: 24.99,
-  /** Twelve weeks, paid once, no renewal. */
-  program: 49.99,
-  /** The same twelve weeks at the returning-visitor price. */
-  programOffer: 14.99,
-} as const;
 
 /**
  * What the win-back notification promises, as a percentage.
@@ -269,6 +257,23 @@ export function OfferPage() {
    * Both computed from live prices. Neither survives a price change in App
    * Store Connect as a stale constant, which is the failure this replaced.
    */
+  /**
+   * When the programme they already hold runs out, or null if they hold none.
+   *
+   * Somebody with an active pass must not be offered it again — a buy button on
+   * a product you already own is how a person pays twice for twelve weeks. The
+   * row shows what they have instead.
+   */
+  const ownedUntil = purchases.programEndsAt();
+  const ownsProgram = ownedUntil != null && ownedUntil.getTime() > Date.now();
+
+  useEffect(() => {
+    // The selection cannot rest on a plan that is not for sale. Without this,
+    // Continue would be armed against a row the user already owns and the buy
+    // would fail against a null plan.
+    if (ownsProgram) setTier('monthly');
+  }, [ownsProgram]);
+
   const headlinePct = discounted
     ? offerPct
     : monthlyPerWeek > 0
@@ -529,15 +534,25 @@ export function OfferPage() {
             not. */}
         <TierRow
           title="12-Week Program"
-          badge={discounted ? `${offerPct}% OFF` : 'BEST VALUE'}
-          price={`${programText} one-time`}
-          note={`${money(programPerWeek)}/week · No subscription`}
+          badge={ownsProgram ? undefined : discounted ? `${offerPct}% OFF` : 'BEST VALUE'}
+          // What they already have, rather than what it would cost. A price on
+          // a product somebody owns is an invitation to buy it twice.
+          price={ownsProgram ? 'Active' : `${programText} one-time`}
+          note={
+            ownsProgram
+              ? `Until ${ownedUntil.toLocaleDateString(undefined, {
+                  day: 'numeric',
+                  month: 'long',
+                })}`
+              : `${money(programPerWeek)}/week · No subscription`
+          }
+          disabled={ownsProgram}
           was={
             // Only when there is something to strike through. A crossed-out
             // price identical to the one beside it is theatre.
-            discounted ? money(fullProgramAmount) : undefined
+            discounted && !ownsProgram ? money(fullProgramAmount) : undefined
           }
-          selected={tier === 'program'}
+          selected={tier === 'program' && !ownsProgram}
           onPress={() => {
             Haptics.selectionAsync();
             setTier('program');
@@ -645,6 +660,7 @@ function TierRow({
   note,
   price,
   was,
+  disabled = false,
   selected,
   onPress,
 }: {
@@ -667,6 +683,9 @@ function TierRow({
    * trick in the shop window, and it is a lie the rest of this flow has not
    * earned. */
   was?: string;
+  /** Already owned. The row still shows what they have, but cannot be picked —
+   * selecting it would arm a Continue button with nothing to buy. */
+  disabled?: boolean;
   selected: boolean;
   onPress: () => void;
 }) {
@@ -694,7 +713,8 @@ function TierRow({
     <Animated.View style={[styles.tier, rowStyle]}>
       <Pressable
         accessibilityRole="radio"
-        accessibilityState={{ selected }}
+        accessibilityState={{ selected, disabled }}
+        disabled={disabled}
         onPress={onPress}
         style={styles.tierPress}>
         <View style={styles.tierHead}>

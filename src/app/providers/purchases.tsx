@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { AppState } from 'react-native';
 
+import { syncExpiryNotice } from '@/entities/notifications';
 import { purchases, startPurchases } from '@/entities/purchase';
 
 /**
@@ -33,5 +34,24 @@ export function usePurchases(): void {
       if (state === 'active') void purchases.refresh();
     });
     return () => sub.remove();
+  }, []);
+
+  useEffect(() => {
+    /**
+     * Keep the week-before warning pointed at the real end date.
+     *
+     * Driven off the store rather than scheduled once at the moment of purchase,
+     * because the end date can move after that: buying a second twelve weeks
+     * extends it, a restore on a new device establishes it for the first time,
+     * and a refund removes it. Each of those arrives as an entitlement change
+     * and nothing else, so this is the only place that sees all three.
+     *
+     * Idempotent — `syncExpiryNotice` cancels the pending request before
+     * scheduling, and the request has a fixed identifier — so running it again
+     * on every change costs nothing and cannot stack up duplicates.
+     */
+    const sync = () => void syncExpiryNotice(purchases.programEndsAt());
+    sync();
+    return purchases.subscribe(sync);
   }, []);
 }

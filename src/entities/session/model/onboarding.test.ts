@@ -23,26 +23,53 @@ describe('onboarding is reachable', () => {
     expect(source).toContain('const ALWAYS_ONBOARD = false;');
   });
 
-  test('the three states of the door are guarded on the right conditions', () => {
+  test('the four states of the door are guarded on the right conditions', () => {
     const layout = readFileSync(
       new URL('../../../app/layouts/root-layout.tsx', import.meta.url),
       'utf8',
     );
 
     // `guard` means *available*, not *blocked* — expo-router's own example
-    // gates the login screen on `!isLoggedIn`. All three were asserted as
-    // string shapes rather than behaviour because the alternative is mounting
+    // gates the login screen on `!isLoggedIn`. All four are asserted as string
+    // shapes rather than behaviour because the alternative is mounting
     // expo-router under bun, and the bug these catch is a polarity typo.
     const onboarding = /guard=\{!onboarded\}\s*>\s*<Stack\.Screen\s+name="onboarding"/s;
     expect(layout).toMatch(onboarding);
 
-    // The paywall: onboarded, but not paid.
-    const paywall = /guard=\{onboarded && !entitled\}\s*>\s*<Stack\.Screen\s+name="offer"/s;
+    // The paywall: onboarded, not paid, and never having finished a programme —
+    // that last case has its own screen below.
+    const paywall =
+      /guard=\{onboarded && !entitled && !lapsed\}\s*>\s*<Stack\.Screen\s+name="offer"/s;
     expect(layout).toMatch(paywall);
 
-    // The app itself: both.
-    const tabs = /guard=\{onboarded && entitled\}\s*>\s*<Stack\.Screen name="\(tabs\)"/s;
+    // The end of the twelve weeks, until they answer it.
+    const expired =
+      /guard=\{onboarded && !entitled && lapsed && !browsing\}\s*>\s*<Stack\.Screen\s+name="expired"/s;
+    expect(layout).toMatch(expired);
+
+    // The app itself: paid, or reading their own history after a lapse.
+    const tabs =
+      /guard=\{onboarded && \(entitled \|\| \(lapsed && browsing\)\)\}\s*>\s*<Stack\.Screen name="\(tabs\)"/s;
     expect(layout).toMatch(tabs);
+  });
+
+  /**
+   * The read-only concession must stay narrow.
+   *
+   * "Not now" lets somebody whose programme ended back into the tabs, which is
+   * the only path into this app that does not go through a purchase. It is
+   * deliberate — their logs are theirs — but it is exactly the kind of hole that
+   * widens by accident, so the gate that keeps it to *reading* is asserted here.
+   */
+  test('a lapsed browser cannot start a session', () => {
+    const player = readFileSync(
+      new URL('../../../widgets/session-player/ui/session-view.tsx', import.meta.url),
+      'utf8',
+    );
+    // One gate, inside the player, so none of the screens that open a session
+    // can forget it.
+    expect(player).toContain('useSessionsLocked()');
+    expect(player).toMatch(/if \(!locked\) return <SessionRun/);
   });
 
   test('the paywall is a screen, not a dismissible sheet', () => {

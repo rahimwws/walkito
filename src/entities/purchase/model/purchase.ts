@@ -214,3 +214,26 @@ export const PROGRAM_IDS: readonly string[] = [PRODUCTS.program, PRODUCTS.progra
  * Must match the dashboard. Product catalog → Entitlements.
  */
 export const ENTITLEMENT = 'premium';
+
+/**
+ * What a screen prints when there is no store to ask.
+ *
+ * Fallbacks, not prices. Every figure is read from the store when one is
+ * configured; these exist so a layout is not empty on a simulator or in a build
+ * whose RevenueCat key is missing, and so no screen renders a blank where a
+ * number should be. If one reaches a paying user that is a bug, not a price —
+ * see `storeDiagnosis()`.
+ *
+ * Here rather than in the paywall because two screens now sell these plans: the
+ * paywall and the programme-expiry screen. A second copy of the list is a second
+ * thing to forget when a price changes, and the failure would be two screens
+ * quoting different figures for the same product.
+ */
+export const PRINTED_PRICES = {
+  /** Auto-renewing, billed monthly. */
+  monthly: 24.99,
+  /** Twelve weeks, paid once, no renewal. */
+  program: 49.99,
+  /** The same twelve weeks at the returning-visitor price. */
+  programOffer: 14.99,
+} as const;

@@ -130,26 +130,6 @@ const simulator: Store = {
   entitled: () => true,
 };
 
-/**
- * The real store, with the lock taken off.
- *
- * Prices, offerings and purchases all still go to RevenueCat — a Test Store key
- * makes the whole flow work on a simulator, and stubbing past it would mean the
- * purchase path is never exercised until it reaches a device.
- *
- * Only `entitled` is overridden, and that is the whole point. Once the paywall
- * became a guarded stack state rather than a dismissible sheet, an unentitled
- * simulator stopped being "a paywall you can close" and became a locked door in
- * front of the entire app. The bypass that existed for exactly this was being
- * skipped the moment a key was configured, which is every working setup.
- *
- * Cannot reach a user: `Device.isDevice` is false only on a simulator or an
- * emulator, and neither is something you can ship.
- */
-function unlocked(store: Store): Store {
-  return { ...store, entitled: () => true };
-}
-
 function pick(): Store {
   // The real store first, even on the simulator. With a Test Store key the
   // whole flow works there — sheet, purchase, entitlement — and exercising the
@@ -165,8 +145,16 @@ function pick(): Store {
     // paywall and a broken app.
     try {
       const { revenueCatStore } = require('./revenuecat') as typeof import('./revenuecat');
-      // Real store either way; the simulator simply never counts as locked.
-      return onSimulator ? unlocked(revenueCatStore) : revenueCatStore;
+      // The real store, on a simulator too.
+      //
+      // This used to hand the simulator an unlocked copy, so the paywall could
+      // not wall off development once it became a hard gate. That made the
+      // paywall untestable: it never appeared. With a Test Store key the whole
+      // purchase works on a simulator — sheet, transaction, entitlement — so
+      // the way past the wall is to buy, exactly as it is on a device. The
+      // stand-in below still covers the case that actually locks you out, which
+      // is having no usable store at all.
+      return revenueCatStore;
     } catch {
       return onSimulator ? simulator : unconfigured;
     }
