@@ -10,14 +10,25 @@ const KEY = 'health.cache';
  * noticed. */
 const KEEP_DAYS = 90;
 
+/**
+ * Bumped whenever what a stored day *means* changes.
+ *
+ * Version 1 was written by the sample-folding pipeline, whose days are wrong in
+ * ways no migration can repair — a step total replaced by the last hour's
+ * increment, a night of sleep cut to its final stage. Dropping them costs one
+ * ninety-day backfill on the next refresh; keeping them would feed wrong
+ * baselines into every signal for a month.
+ */
+const VERSION = 2;
+
 export type HealthCache = {
-  /** Anchor per sample type, so each background wake reads only what is new. */
-  anchors: Record<string, string>;
+  version: number;
   days: DailyMetric[];
   signals: HealthSignals;
-  /** Yesterday's answers to "is this running elevated / slow", kept because
-   * "just recovered" is a statement about a transition and cannot be read from
-   * today alone. */
+  /** How the *previous* day ended: running elevated / slow. Kept because "just
+   * recovered" is a statement about a transition and cannot be read from today
+   * alone — and rolled forward only when the day changes, since signals are now
+   * recomputed on every refresh. */
   wasElevated: boolean;
   wasSlow: boolean;
   /**
@@ -28,21 +39,18 @@ export type HealthCache = {
    * verdict the screen would.
    */
   bilateral: boolean;
-  /** ISO day the signals were last recomputed. Baselines move once a day, not
-   * once a read. */
+  /** ISO day the signals were last computed. */
   computedOn: string | null;
-  lastRun: string | null;
 };
 
 const EMPTY: HealthCache = {
-  anchors: {},
+  version: VERSION,
   days: [],
   signals: NO_SIGNALS,
   wasElevated: false,
   wasSlow: false,
   bilateral: false,
   computedOn: null,
-  lastRun: null,
 };
 
 /**
@@ -60,6 +68,9 @@ function load(): HealthCache {
   if (raw == null) return EMPTY;
   try {
     const parsed = JSON.parse(raw) as Partial<HealthCache>;
+    // An older build's days are not trusted — see `VERSION`. The one answer the
+    // user gave is kept.
+    if (parsed.version !== VERSION) return { ...EMPTY, bilateral: parsed.bilateral === true };
     return {
       ...EMPTY,
       ...parsed,
@@ -68,7 +79,6 @@ function load(): HealthCache {
       // field there is a crash in a branch nobody tests.
       signals: { ...NO_SIGNALS, ...(parsed.signals ?? {}) },
       days: Array.isArray(parsed.days) ? parsed.days : [],
-      anchors: parsed.anchors ?? {},
     };
   } catch {
     return EMPTY;
@@ -103,29 +113,19 @@ export function useHealthSignals(): HealthSignals {
   );
 }
 
-export function anchorFor(type: string): string | undefined {
-  return cache.anchors[type];
-}
-
-export function rememberAnchor(type: string, anchor: string): void {
-  commit({ ...cache, anchors: { ...cache.anchors, [type]: anchor } });
-}
-
-/** Drops one type's anchor, for the recovery path after a query throws: the
- * next read re-backfills that type instead of resuming from an anchor the
- * store has rejected. */
-export function forgetAnchor(type: string): void {
-  const anchors = { ...cache.anchors };
-  delete anchors[type];
-  commit({ ...cache, anchors });
+/** Whether anything has been stored yet — the pipeline backfills ninety days
+ * when not, and re-reads a fortnight when so. */
+export function hasDays(): boolean {
+  return cache.days.length > 0;
 }
 
 /**
  * Folds a day's readings in, replacing whatever was there for that date.
  *
- * Merged per field rather than overwritten wholesale: the types arrive on
- * different schedules — steps hourly, gait daily — so a step update must not
- * blank the asymmetry that landed this morning.
+ * Merged per field rather than overwritten wholesale: each query answers for
+ * one field, so a step update must not blank the asymmetry that landed this
+ * morning. Within a field, replacing is right because every incoming value is a
+ * whole day's total — the pipeline never hands this a partial batch.
  */
 export function mergeDays(incoming: readonly DailyMetric[]): void {
   if (incoming.length === 0) return;
@@ -156,38 +156,92 @@ function strip(day: DailyMetric): Partial<DailyMetric> {
 }
 
 /**
- * Recomputes the signals, at most once a day unless forced.
+ * The stored days as an unbroken run ending today.
  *
- * The baselines are a 28-day fold and the thresholds are runs of consecutive
- * days; neither answer can change between two reads an hour apart, so doing
- * this on every background wake would be the same arithmetic for the same
- * result twenty times over.
+ * `signalsFrom` reads "today" as the last entry and "yesterday" as the one
+ * before it. A gap — no steps yet this morning, a day the phone stayed in a
+ * drawer — silently shifted both: the day before yesterday was reported as
+ * yesterday. Blank days in the gaps keep every position a real calendar day.
+ */
+export function contiguous(days: readonly DailyMetric[], today: string): DailyMetric[] {
+  // A clock moved backwards past the stored history is not a reason to lose it.
+  if (days.length === 0 || days[0].date > today) return [...days];
+  const byDate = new Map(days.map((day) => [day.date, day]));
+  const out: DailyMetric[] = [];
+  const cursor = fromKey(days[0].date);
+  const end = fromKey(today);
+  while (cursor.getTime() <= end.getTime()) {
+    const key = keyOf(cursor);
+    out.push(byDate.get(key) ?? blank(key));
+    cursor.setDate(cursor.getDate() + 1);
+  }
+  return out.slice(-KEEP_DAYS);
+}
+
+function fromKey(key: string): Date {
+  const [y, m, d] = key.split('-').map(Number);
+  return new Date(y, (m ?? 1) - 1, d ?? 1);
+}
+
+function keyOf(date: Date): string {
+  const month = `${date.getMonth() + 1}`.padStart(2, '0');
+  const day = `${date.getDate()}`.padStart(2, '0');
+  return `${date.getFullYear()}-${month}-${day}`;
+}
+
+function blank(date: string): DailyMetric {
+  return {
+    date,
+    steps: null,
+    asymmetryPct: null,
+    walkingSpeed: null,
+    sleepMin: null,
+    wakeMin: null,
+    restingHR: null,
+    flights: null,
+    longestRunKm: null,
+    hoursOnFeet: null,
+  };
+}
+
+/**
+ * Recomputes the signals from the stored days.
+ *
+ * On every refresh, not once a day. The old once-a-day rule ran at the first
+ * wake after midnight and then froze: today's steps and hours on foot stayed at
+ * their 00:05 values all day, and last night's sleep — which lands in the
+ * morning — was never in it. Ninety days of arithmetic is nothing next to a
+ * HealthKit read.
+ *
+ * What does have to happen once a day is the "was" pair: "just recovered" is
+ * decided against how *yesterday* ended, so it rolls forward only when the day
+ * changes.
  */
 export function recomputeSignals(
   today: string,
-  force = false,
-  /** Next-morning pain by day index, for learning the on-feet threshold. The
-   * caller supplies it rather than this module importing the programme: the
-   * cache has no business knowing how pain is stored, and a test needs to hand
-   * it a known history. */
-  painNextMorning?: (index: number) => number | null,
+  /** Next-morning pain for a stored date, for learning the on-feet threshold.
+   * The caller supplies it rather than this module importing the programme:
+   * the cache has no business knowing how pain is stored, and a test needs to
+   * hand it a known history. */
+  painNextMorning?: (date: string) => number | null,
 ): HealthSignals {
-  if (!force && cache.computedOn === today) return cache.signals;
-  const signals = signalsFrom(cache.days, {
+  const newDay = cache.computedOn !== today;
+  const wasElevated = newDay
+    ? cache.computedOn != null && cache.signals.asymmetryElevatedDays > 0
+    : cache.wasElevated;
+  const wasSlow = newDay
+    ? cache.computedOn != null && cache.signals.walkingSpeedTrend === 'slower'
+    : cache.wasSlow;
+
+  const days = contiguous(cache.days, today);
+  const signals = signalsFrom(days, {
     bilateral: cache.bilateral,
-    wasElevated: cache.wasElevated,
-    wasSlow: cache.wasSlow,
-    painNextMorning,
+    wasElevated,
+    wasSlow,
+    painNextMorning:
+      painNextMorning == null ? undefined : (index) => painNextMorning(days[index].date),
   });
-  commit({
-    ...cache,
-    signals,
-    // Tomorrow's "just recovered" is decided against today's run.
-    wasElevated: signals.asymmetryElevatedDays > 0,
-    wasSlow: signals.walkingSpeedTrend === 'slower',
-    computedOn: today,
-    lastRun: today,
-  });
+  commit({ ...cache, days, signals, wasElevated, wasSlow, computedOn: today });
   return signals;
 }
 

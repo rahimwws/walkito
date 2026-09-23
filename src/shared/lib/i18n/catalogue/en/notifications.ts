@@ -93,6 +93,16 @@ export const NOTIFICATIONS_EN = {
   'notifications.loadBigDay': 'That was a big day on your feet. The plan adjusted.',
   'notifications.loadBackOff': 'Long one yesterday. Today the plan backs off.',
 
+  // ── The step check-in ────────────────────────────────────────────────────
+  // Sent the moment a day crosses the step mark, at most once a day. A
+  // question about the foot, never a congratulation: time on foot is the load
+  // this condition is sensitive to, and praising it would be the app cheering
+  // the thing that makes tomorrow morning hurt.
+  'notifications.stepsCheck': {
+    one: '{steps} step today — a long day on your feet. How’s the heel?',
+    other: '{steps} steps today — a long day on your feet. How’s the heel?',
+  },
+
   // ── Something changed in how they walk ───────────────────────────────────
   // Change against the person's own baseline, and nothing more. Forbidden here
   // in every language: "you're limping", "you're compensating", any claim about

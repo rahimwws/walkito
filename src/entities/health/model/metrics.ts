@@ -107,6 +107,17 @@ export const STEP_SPIKE_RATIO = 1.4;
 export const FLIGHTS_SPIKE_RATIO = 1.5;
 
 /**
+ * Steps today past which the app asks how the heel is taking it.
+ *
+ * A question, not a milestone. Nothing in this app congratulates a step count —
+ * time on foot is the load this condition is sensitive to — so crossing this
+ * line earns a check-in on Home and at most one push, both asking how the foot
+ * feels, never "well done". One constant for both, so the screen and the lock
+ * screen cannot disagree about when a day became a long one.
+ */
+export const STEP_CHECK_MARK = 10_000;
+
+/**
  * Sleep, chronic rather than one bad night.
  *
  * The association with soft-tissue injury is real but modest, observational,
@@ -142,6 +153,14 @@ export type WalkingTrend = 'slower' | 'stable' | 'faster';
 export type DataAvailability = 'none' | 'learning' | 'ready';
 
 export type HealthSignals = {
+  /**
+   * The date "today" meant when these were computed.
+   *
+   * The cache outlives midnight: opened at 7am before the first refresh of
+   * the day, it still holds last night's figures, and "today" in them is
+   * yesterday. Anything that quotes a today-figure checks this first.
+   */
+  asOf: string | null;
   asymmetryToday: number | null;
   /** Percentage points above baseline, not a percentage of it. Gait is already
    * measured in percent, and "40% above your 2%" is a sentence nobody parses. */
@@ -158,6 +177,9 @@ export type HealthSignals = {
   walkingSpeedTrend: WalkingTrend | null;
   walkingSpeedJustRecovered: boolean;
 
+  /** Steps so far today, deduplicated across phone and watch. What the
+   * step check-in on Home and the step push are measured against. */
+  stepsToday: number | null;
   stepsYesterday: number | null;
   stepsBaseline: number | null;
   stepsRatio: number | null;
@@ -204,6 +226,7 @@ export type HealthSignals = {
 };
 
 export const NO_SIGNALS: HealthSignals = {
+  asOf: null,
   asymmetryToday: null,
   asymmetryDeltaPP: null,
   asymmetryElevatedDays: 0,
@@ -213,6 +236,7 @@ export const NO_SIGNALS: HealthSignals = {
   walkingSpeedBaseline: null,
   walkingSpeedTrend: null,
   walkingSpeedJustRecovered: false,
+  stepsToday: null,
   stepsYesterday: null,
   stepsBaseline: null,
   stepsRatio: null,
@@ -444,6 +468,7 @@ export function signalsFrom(
     recentSpeed.length === 0 ? 'none' : speed == null ? 'learning' : 'ready';
 
   return {
+    asOf: today?.date ?? null,
     asymmetryToday,
     asymmetryDeltaPP,
     asymmetryElevatedDays: elevated,
@@ -463,6 +488,7 @@ export function signalsFrom(
     walkingSpeedTrend,
     walkingSpeedJustRecovered: wasSlow && walkingSpeedTrend === 'stable',
 
+    stepsToday: today?.steps ?? null,
     stepsYesterday,
     stepsBaseline: steps?.mean ?? null,
     stepsRatio,

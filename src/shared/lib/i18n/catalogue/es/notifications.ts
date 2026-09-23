@@ -75,6 +75,12 @@ export const NOTIFICATIONS_ES = {
   'notifications.loadBigDay': 'Ayer fue un día largo de pie. El plan se ajustó.',
   'notifications.loadBackOff': 'Ayer fue largo. Hoy el plan baja el ritmo.',
 
+  // ── El aviso por pasos ───────────────────────────────────────────────────
+  'notifications.stepsCheck': {
+    one: 'Hoy ya llevas {steps} paso: un día largo de pie. ¿Qué tal el talón?',
+    other: 'Hoy ya llevas {steps} pasos: un día largo de pie. ¿Qué tal el talón?',
+  },
+
   // ── Something changed in how they walk ───────────────────────────────────
   // Solo el cambio respecto a la propia base del usuario. Nada de cojera, nada
   // de compensaciones, ningún riesgo de lesión y ninguna comparación con nadie.

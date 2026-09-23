@@ -126,6 +126,7 @@ export {
   allLogs,
   currentDay,
   dateKeyForDay,
+  dayNumberFor,
   daysBetween,
   daysSinceLastSession,
   emptyLog,

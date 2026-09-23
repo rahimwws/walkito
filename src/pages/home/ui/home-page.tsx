@@ -5,7 +5,14 @@ import { StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { TODAY_INDEX, currentDay, painOn, useStreak, weekAttendance } from '@/entities/program';
+import {
+  TODAY_INDEX,
+  currentDay,
+  painOn,
+  toDateKey,
+  useStreak,
+  weekAttendance,
+} from '@/entities/program';
 import { useHealthSignals } from '@/entities/health';
 import { firstName, useProfileName } from '@/entities/profile';
 import { accents } from '@/shared/config';
@@ -104,6 +111,10 @@ export function HomePage() {
   const [burst, setBurst] = useState(0);
   const name = useProfileName();
   const signals = useHealthSignals();
+  /** The cache outlives midnight. Until the first refresh of the day lands,
+   * its "today" figures are yesterday's, and quoting them as today's would be
+   * wrong by a whole day of walking. */
+  const signalsAreToday = signals.asOf === toDateKey(new Date());
   /** Subscribed to, not read once: the sentence is rebuilt in the same commit
    * as the switch is flipped, rather than on next launch. */
   const language = useLanguage();
@@ -187,7 +198,10 @@ export function HomePage() {
                 // mornings got worse. Null until there is enough history to
                 // say, which is the honest answer and the one that keeps the
                 // line silent.
-                hoursOnFeet: signals.hoursOnFeetToday,
+                hoursOnFeet: signalsAreToday ? signals.hoursOnFeetToday : null,
+                // Only past the mark does this say anything, and then it asks
+                // how the heel is — the check-in card sits right below.
+                stepsToday: signalsAreToday ? signals.stepsToday : null,
                 onFeetThreshold: signals.onFeetThreshold,
               },
               language,

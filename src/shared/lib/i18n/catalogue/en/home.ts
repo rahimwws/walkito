@@ -377,6 +377,20 @@ export const BRIEF_EN = {
     ],
   ],
 
+  // A question, never a milestone — see `STEP_CHECK_MARK`.
+  'steps-today': [
+    [
+      { k: 'frame', text: 'already' },
+      { k: 'metric', icon: 'feet', text: '{stepsToday}' },
+      { k: 'frame', text: 'today — a long day on your feet. How’s the heel?' },
+    ],
+    [
+      { k: 'frame', text: 'that’s' },
+      { k: 'metric', icon: 'feet', text: '{stepsToday}' },
+      { k: 'frame', text: 'today. If the heel is talking, sitting down helps more than pushing on.' },
+    ],
+  ],
+
   // ── Recovery, watch only ─────────────────────────────────────────────────
   'poor-sleep': [
     [

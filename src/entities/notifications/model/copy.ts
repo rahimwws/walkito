@@ -238,6 +238,23 @@ export function messageFor(
   return { title: APP_NAME, body };
 }
 
+/**
+ * The step check-in, sent from a background wake rather than planned.
+ *
+ * Outside `messageFor` because it is not a rung of the ladder: nothing decides
+ * it a week ahead, it happens when the day crosses the line.
+ */
+export function stepsCheckMessage(steps: number, language: Language = getLanguage()): Message {
+  const t = translatorFor(language);
+  return {
+    title: APP_NAME,
+    body: t('notifications.stepsCheck', {
+      count: Math.round(steps),
+      steps: group(Math.round(steps), language),
+    }),
+  };
+}
+
 /** The retest tail, six hours after the morning nudge. Lives here rather than
  * in the scheduler because it is copy, and the scheduler should own no words. */
 export function retestFollowUpBody(language: Language = getLanguage()): string {

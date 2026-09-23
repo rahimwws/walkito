@@ -2,6 +2,7 @@ import { PLAN_BLOCKS, PROGRAM, painFor, type ProgramDay } from '@/entities/progr
 import {
   ELEVATED_DAYS,
   NO_SIGNALS,
+  STEP_CHECK_MARK,
   STEP_SPIKE_RATIO,
   FLIGHTS_SPIKE_RATIO,
   type HealthSignals,
@@ -37,6 +38,7 @@ export const BRIEF_STATES = [
   'big-run',
   'stairs',
   'on-feet',
+  'steps-today',
   // Recovery, watch-only.
   'poor-sleep',
   'resting-hr',
@@ -130,6 +132,8 @@ export type BriefInput = {
   daysAway?: number;
   /** Hours on foot so far today, when the day is far enough along to say. */
   hoursOnFeet?: number | null;
+  /** Steps so far today, or null when the cache has nothing for today yet. */
+  stepsToday?: number | null;
   /** The hour at which this person's own history turns sour. */
   onFeetThreshold?: number | null;
 };
@@ -190,6 +194,7 @@ export function readBrief({
   daysInstalled = cursor,
   daysAway = 0,
   hoursOnFeet = null,
+  stepsToday = null,
   onFeetThreshold = null,
 }: BriefInput): BriefReading {
   const day: ProgramDay | undefined = PROGRAM[cursor];
@@ -225,6 +230,10 @@ export function readBrief({
   if (hoursOnFeet != null && onFeetThreshold != null && hoursOnFeet >= onFeetThreshold - 1) {
     return reading('on-feet');
   }
+  // A long day, said as a question about the foot rather than as an
+  // achievement. Below the learned limit because that one is personal and
+  // predictive; this is the fallback everyone has from day one.
+  if (stepsToday != null && stepsToday >= STEP_CHECK_MARK) return reading('steps-today');
 
   // --- 8-9. Recovery, watch only -----------------------------------------
   if (health.sleepShort) return reading('poor-sleep');
