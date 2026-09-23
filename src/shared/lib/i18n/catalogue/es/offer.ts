@@ -23,6 +23,8 @@ export const OFFER_ES = {
 
   // ── Paywall: headline ────────────────────────────────────────────────────
   'offer.limited': 'LIMITADO — SOLO UNA VEZ',
+  'offer.inviteBadge': 'TU PRECIO POR INVITACIÓN',
+  'offer.headlineInvite': 'Tu precio por invitación en el programa de 12 semanas',
   'offer.headlineComeback': 'Tu precio de vuelta al programa de 12 semanas',
   'offer.headlineSave': {
     one: 'Paga una vez por {count} mes y ahorra un {percent}%',

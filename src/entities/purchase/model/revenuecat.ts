@@ -31,6 +31,9 @@ import {
 
 /** The last verdict, on this device. */
 const ENTITLED_KEY = 'purchase/entitled';
+/** The last invite bonus handed in, so a cold start dates access correctly
+ * before the invite server has been asked again. */
+const BONUS_KEY = 'purchase/bonus-days';
 
 /**
  * Whether the subscription is live, cached from the last thing the store said.
@@ -64,6 +67,11 @@ let active = kv.getBoolean(ENTITLED_KEY) ?? false;
 /** Mirrors `programEnd` from the last customer info, so the contract's
  * synchronous getter has an answer without a round trip. */
 let lastEnd: Date | null = null;
+/** Free days from invites — see `setBonusDays` on the contract. */
+let bonusDays = kv.getNumber(BONUS_KEY) ?? 0;
+/** The last customer info, so a change in the bonus can be re-judged without
+ * a round trip to the store. */
+let lastInfo: CustomerInfo | null = null;
 const listeners = new Set<() => void>();
 
 /**
@@ -76,13 +84,19 @@ const listeners = new Set<() => void>();
 const packages = new Map<string, PurchasesPackage>();
 
 function announce(info: CustomerInfo) {
-  lastEnd = programEnd(info);
+  lastInfo = info;
+  const end = programEnd(info);
+  // A moved end date is news even when access did not flip: the expiry
+  // reminder is scheduled from it, and a friend's free weeks have to push that
+  // reminder back rather than leave it firing on the old date.
+  const endMoved = end?.getTime() !== lastEnd?.getTime();
+  lastEnd = end;
   const next = entitledIn(info);
   // Written on every answer, including one that agrees with the cache: the
   // early return below skips the notify, not the persistence, and a verdict
   // that never changed still has to survive the next cold start.
   kv.set(ENTITLED_KEY, next);
-  if (next === active) return;
+  if (next === active && !endMoved) return;
   active = next;
   listeners.forEach((fire) => fire());
 }
@@ -96,11 +110,11 @@ function announce(info: CustomerInfo) {
  * satisfies `CustomerFacts`, so it passes straight through.
  */
 function programEnd(info: CustomerInfo): Date | null {
-  return programEndOf(info);
+  return programEndOf(info, bonusDays);
 }
 
 function entitledIn(info: CustomerInfo): boolean {
-  const verdict = decideAccess(info, Date.now());
+  const verdict = decideAccess(info, Date.now(), bonusDays);
 
   if (__DEV__ && verdict.reason === 'other-entitlement') {
     console.warn(
@@ -298,4 +312,16 @@ export const revenueCatStore: Store = {
   refresh: refreshEntitlement,
 
   programEndsAt: () => lastEnd,
+
+  setBonusDays(days) {
+    const next = Math.max(0, Math.floor(days));
+    if (!Number.isFinite(next) || next === bonusDays) return;
+    bonusDays = next;
+    kv.set(BONUS_KEY, next);
+    // Re-judged on the spot against what the store last said: a friend joining
+    // can bring back access that had just run out, and waiting for the next
+    // store round trip to notice would leave the user staring at the renewal
+    // screen with free weeks already in hand.
+    if (lastInfo != null) announce(lastInfo);
+  },
 };

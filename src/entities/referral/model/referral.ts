@@ -7,10 +7,16 @@ import { currentUserId, hasBackend, supabase } from '@/shared/lib/supabase';
  * What an invite is worth, on both sides of it.
  *
  * One number, here, because it appears in three places — the code sheet, the
- * onboarding step and the paywall — and three copies of "90" is three chances
- * for the offer to say one thing and the charge to be another.
+ * onboarding step and the invite message — and three copies of it are three
+ * chances for the offer to say one thing and the charge to be another.
+ *
+ * It is the programme at its `offer` price against its standard one: $14.99
+ * against $49.99. That offering is what an invite actually unlocks — see
+ * `discounted` below — so this is the figure the user is charged, not a
+ * separate promise. It said 90 while nothing applied a discount at all; if the
+ * two prices move in App Store Connect, this moves with them.
  */
-export const REFERRAL_DISCOUNT_PERCENT = 90;
+export const REFERRAL_DISCOUNT_PERCENT = 70;
 
 /** How long a code is, for the input to size and validate itself. */
 export const REFERRAL_CODE_LENGTH = 4;
@@ -30,7 +36,14 @@ export type ReferralStatus = {
   redeemedCode: string | null;
   /** How many people have used their code. */
   invites: number;
-  /** Whether the discount applies. Decided by the server, never here. */
+  /**
+   * Whether the invite price applies. Decided by the server, never here.
+   *
+   * True on both sides: for whoever redeemed a code, and for whoever owns a
+   * code somebody redeemed. It unlocks the programme at its `offer` price —
+   * on the paywall for anyone who has not bought yet, and on the renewal at the
+   * end of the twelve weeks for anyone who has.
+   */
   discounted: boolean;
 };
 

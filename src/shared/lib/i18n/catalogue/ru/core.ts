@@ -69,9 +69,14 @@ export const CORE_RU = {
 
   // ── Referral / gift sheet ────────────────────────────────────────────────
   'gift.title': 'Пригласить друга',
-  'gift.blurb': 'Другу — {percent}% скидки. Вам тоже.',
+  'gift.blurb': {
+    one: 'Другу — {percent}% скидки. Вам — {count} бесплатная неделя за каждого друга.',
+    few: 'Другу — {percent}% скидки. Вам — {count} бесплатные недели за каждого друга.',
+    many: 'Другу — {percent}% скидки. Вам — {count} бесплатных недель за каждого друга.',
+  },
+  'gift.cap': { one: 'До {count} друга.', few: 'До {count} друзей.', many: 'До {count} друзей.' },
   'gift.unavailable': 'В этой сборке приглашения недоступны.',
-  'gift.shareMessage': 'Введите мой код {code} в Walkito — и мы оба получим {percent}% скидки.',
+  'gift.shareMessage': 'Введите мой код {code} в Walkito — и получите скидку {percent}% на 12-недельную программу.',
   'gift.share': 'Поделиться кодом',
   'gift.shared': 'Скопировано',
   'gift.copy': 'Просто скопировать',

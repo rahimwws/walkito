@@ -55,7 +55,7 @@ export type CustomerFacts = {
  * permanently-granted entitlement as undated access. That is the precise shape
  * of "an expired pass unlocks the app for ever".
  */
-export function programEnd(info: CustomerFacts): Date | null {
+export function programEnd(info: CustomerFacts, bonusDays = 0): Date | null {
   const stamps: number[] = [];
 
   for (const t of info.nonSubscriptionTransactions) {
@@ -72,7 +72,10 @@ export function programEnd(info: CustomerFacts): Date | null {
   }
 
   if (stamps.length === 0) return null;
-  return new Date(Math.max(...stamps) + PROGRAM_ACCESS_DAYS * 86_400_000);
+  // Bonus days — free weeks from invites — extend the latest programme and
+  // never create one: with no purchase above, this has already returned null.
+  const days = PROGRAM_ACCESS_DAYS + Math.max(0, bonusDays);
+  return new Date(Math.max(...stamps) + days * 86_400_000);
 }
 
 /** The monthly subscription, which RevenueCat does expire on its own. */
@@ -122,10 +125,10 @@ export type AccessVerdict = {
  * be resurrected by the entitlement it created, and it is skipped entirely when
  * a programme product is what granted the entitlement.
  */
-export function decideAccess(info: CustomerFacts, now: number): AccessVerdict {
+export function decideAccess(info: CustomerFacts, now: number, bonusDays = 0): AccessVerdict {
   if (monthlyActive(info)) return { entitled: true, reason: 'monthly' };
 
-  const ends = programEnd(info);
+  const ends = programEnd(info, bonusDays);
   if (ends != null) {
     return now < ends.getTime()
       ? { entitled: true, reason: 'program-active' }

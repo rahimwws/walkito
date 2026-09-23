@@ -2,7 +2,8 @@ import { useEffect } from 'react';
 
 import { Notifications, REFERRAL_KIND, registerPushToken } from '@/entities/notifications';
 import { syncStoredEmail } from '@/entities/profile';
-import { refresh } from '@/entities/referral';
+import { purchases } from '@/entities/purchase';
+import { refresh, referralBonusDays, useReferral } from '@/entities/referral';
 
 /**
  * Keeps the invite state in step with the server, and makes the push land.
@@ -25,10 +26,20 @@ import { refresh } from '@/entities/referral';
  *    notification finds the discount already applied rather than a screen that
  *    has not caught up.
  *
+ * 4. Hands the free weeks earned by invites to the store, which dates access.
+ *    Here because this is the one layer allowed to know about both: the
+ *    invite entity cannot import the purchase one, and should not — the store
+ *    only needs a number of days, not where they came from.
+ *
  * Every step is silent on failure. None of this is worth an error in front of
  * someone who did not ask for any of it.
  */
 export function useReferralSync(): void {
+  const { invites } = useReferral();
+  useEffect(() => {
+    purchases.setBonusDays(referralBonusDays(invites));
+  }, [invites]);
+
   useEffect(() => {
     void refresh();
     void registerPushToken();

@@ -23,6 +23,19 @@ export const PROFILE_EN = {
   /** On the row rather than behind it, because the count is the reason to tap.
    * Zero never reaches here — the screen leaves the slot blank instead. */
   'profile.invitesJoined': { one: '{count} joined', other: '{count} joined' },
+  /** Under "Invite a friend". `{count}` is weeks of free programme access. */
+  'profile.weeksPerFriend': {
+    one: '{count} free week for each friend',
+    other: '{count} free weeks for each friend',
+  },
+  'profile.weeksEarned': {
+    one: '+{count} free week earned',
+    other: '+{count} free weeks earned',
+  },
+  'profile.weeksEarnedMax': {
+    one: '+{count} free week earned, the most there is',
+    other: '+{count} free weeks earned, the most there is',
+  },
   'profile.contactSupport': 'Contact support',
   'profile.deleteAccount': 'Delete account',
 

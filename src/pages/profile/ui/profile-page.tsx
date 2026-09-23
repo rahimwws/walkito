@@ -13,7 +13,13 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useStreak } from '@/entities/program';
 import { firstName, useProfileEmail, useProfileName } from '@/entities/profile';
-import { referralsAvailable, useReferral } from '@/entities/referral';
+import {
+  REFERRAL_BONUS_MAX_INVITES,
+  REFERRAL_BONUS_WEEKS,
+  referralBonusDays,
+  referralsAvailable,
+  useReferral,
+} from '@/entities/referral';
 import { SUPPORT_EMAIL, accents, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -104,6 +110,19 @@ export function ProfilePage() {
                 referral.invites > 0
                   ? t('profile.invitesJoined', { count: referral.invites })
                   : undefined
+              }
+              // What an invite is worth to them, under the label. Before the
+              // first friend it is the offer; after, the weeks already added
+              // to their programme — the one figure that says sharing did
+              // something.
+              hint={
+                referral.invites === 0
+                  ? t('profile.weeksPerFriend', { count: REFERRAL_BONUS_WEEKS })
+                  : referral.invites >= REFERRAL_BONUS_MAX_INVITES
+                    ? t('profile.weeksEarnedMax', {
+                        count: referralBonusDays(referral.invites) / 7,
+                      })
+                    : t('profile.weeksEarned', { count: referralBonusDays(referral.invites) / 7 })
               }
               onPress={() => {
                 Haptics.selectionAsync();
@@ -201,12 +220,15 @@ function Row({
   icon,
   label,
   value,
+  hint,
   tint,
   onPress,
 }: {
   icon: IconSvgElement;
   label: string;
   value?: string;
+  /** A second line under the label, for what the row is worth. */
+  hint?: string;
   tint?: string;
   onPress: () => void;
 }) {
@@ -221,7 +243,10 @@ function Row({
       onPress={onPress}
       style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}>
       <HugeiconsIcon icon={icon} size={20} color={colour} strokeWidth={1.8} />
-      <Text style={[styles.rowLabel, { color: colour }]}>{label}</Text>
+      <View style={styles.rowText}>
+        <Text style={[styles.rowLabel, { color: colour }]}>{label}</Text>
+        {hint != null && <Text style={[styles.rowHint, { color: meter.caption }]}>{hint}</Text>}
+      </View>
       {value != null && <Text style={[styles.rowValue, { color: meter.caption }]}>{value}</Text>}
       <HugeiconsIcon icon={ArrowRight01Icon} size={18} color={meter.unit} strokeWidth={1.8} />
     </Pressable>
@@ -252,6 +277,8 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     paddingHorizontal: 16,
   },
-  rowLabel: { flex: 1, fontSize: 16, fontFamily: fonts.semibold, letterSpacing: -0.2 },
+  rowText: { flex: 1 },
+  rowLabel: { fontSize: 16, fontFamily: fonts.semibold, letterSpacing: -0.2 },
+  rowHint: { fontSize: 13, fontFamily: fonts.medium, marginTop: 1 },
   rowValue: { fontSize: 14, fontFamily: fonts.medium },
 });

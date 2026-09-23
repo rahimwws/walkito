@@ -20,6 +20,8 @@ export const OFFER_RU = {
 
   // ── Paywall: headline ────────────────────────────────────────────────────
   'offer.limited': 'ТОЛЬКО СЕЙЧАС — ОДИН РАЗ',
+  'offer.inviteBadge': 'ЦЕНА ПО ПРИГЛАШЕНИЮ',
+  'offer.headlineInvite': 'Ваша цена по приглашению: 12-недельная программа',
   'offer.headlineComeback': 'Ваша цена за возвращение: 12-недельная программа',
   'offer.headlineSave': {
     one: 'Заплатите один раз за {count} месяц и сэкономьте {percent}%',

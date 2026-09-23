@@ -21,6 +21,21 @@ export const PROFILE_RU = {
     few: '{count} присоединились',
     many: '{count} присоединились',
   },
+  'profile.weeksPerFriend': {
+    one: '{count} бесплатная неделя за каждого друга',
+    few: '{count} бесплатные недели за каждого друга',
+    many: '{count} бесплатных недель за каждого друга',
+  },
+  'profile.weeksEarned': {
+    one: 'Заработано: +{count} бесплатная неделя',
+    few: 'Заработано: +{count} бесплатные недели',
+    many: 'Заработано: +{count} бесплатных недель',
+  },
+  'profile.weeksEarnedMax': {
+    one: 'Заработано: +{count} бесплатная неделя — это максимум',
+    few: 'Заработано: +{count} бесплатные недели — это максимум',
+    many: 'Заработано: +{count} бесплатных недель — это максимум',
+  },
   'profile.contactSupport': 'Написать в поддержку',
   'profile.deleteAccount': 'Удалить аккаунт',
 

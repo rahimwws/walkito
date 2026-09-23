@@ -70,11 +70,17 @@ export const CORE_EN = {
 
   // ── Referral / gift sheet ────────────────────────────────────────────────
   'gift.title': 'Invite a friend',
-  'gift.blurb': 'They get {percent}% off. So do you.',
+  /** `{count}` is the free weeks per friend; `{percent}` is what the friend
+   * gets off. The cap follows as its own sentence, `gift.cap`. */
+  'gift.blurb': {
+    one: 'They get {percent}% off. You get {count} free week for each friend who joins.',
+    other: 'They get {percent}% off. You get {count} free weeks for each friend who joins.',
+  },
+  'gift.cap': { one: 'Up to {count} friend.', other: 'Up to {count} friends.' },
   'gift.unavailable': 'Invites are not available in this build.',
   // The share body leaves the app, so it is one sentence rather than parts —
   // there is no layout here to reorder, only grammar.
-  'gift.shareMessage': 'Use my code {code} in Walkito and we both get {percent}% off.',
+  'gift.shareMessage': 'Use my code {code} in Walkito for {percent}% off the 12-week program.',
   'gift.share': 'Share code',
   'gift.shared': 'Copied',
   'gift.copy': 'Copy instead',

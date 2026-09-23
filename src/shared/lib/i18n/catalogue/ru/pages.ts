@@ -133,5 +133,6 @@ export const PAGES_RU = {
   'pages.expired.busy': 'Секунду…',
   'pages.expired.monthly': 'Продлить помесячно · {price}',
   'pages.expired.program': 'Ещё 12 недель · {price}',
+  'pages.expired.programInvite': 'Ещё 12 недель по цене приглашения · {price}',
   'pages.expired.notNow': 'Не сейчас',
 };

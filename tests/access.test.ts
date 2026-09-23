@@ -170,3 +170,27 @@ describe('programEnd', () => {
     expect(programEnd(info)).toBeNull();
   });
 });
+
+describe('free weeks from invites', () => {
+  test('carry a pass past its ninety days', () => {
+    const info = customer({ nonSubscriptionTransactions: [pass(PROGRAM_ACCESS_DAYS + 10)] });
+    expect(decideAccess(info, NOW).entitled).toBe(false);
+    expect(decideAccess(info, NOW, 28)).toEqual({ entitled: true, reason: 'program-active' });
+  });
+
+  test('move the end date by exactly the days earned', () => {
+    const info = customer({ nonSubscriptionTransactions: [pass(0)] });
+    const plain = programEnd(info)!.getTime();
+    expect(programEnd(info, 28)!.getTime() - plain).toBe(28 * DAY);
+  });
+
+  test('never create access where nothing was bought', () => {
+    expect(decideAccess(customer(), NOW, 84)).toEqual({ entitled: false, reason: 'nothing' });
+    expect(programEnd(customer(), 84)).toBeNull();
+  });
+
+  test('cannot take time away', () => {
+    const info = customer({ nonSubscriptionTransactions: [pass(10)] });
+    expect(programEnd(info, -500)!.getTime()).toBe(programEnd(info)!.getTime());
+  });
+});

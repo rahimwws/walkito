@@ -12,3 +12,8 @@ export {
   type ReferralStatus,
   type RedeemResult,
 } from './model/referral';
+export {
+  REFERRAL_BONUS_MAX_INVITES,
+  REFERRAL_BONUS_WEEKS,
+  referralBonusDays,
+} from './model/bonus';

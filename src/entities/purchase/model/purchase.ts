@@ -166,6 +166,20 @@ export type Purchases = {
    * the alternative is a server, and this is not worth one.
    */
   programEndsAt(): Date | null;
+
+  /**
+   * Extra days of programme access, earned outside the store.
+   *
+   * Invites: each friend who joins with the user's code adds free time to the
+   * programme they hold. The store knows nothing about that — it is decided by
+   * the invite server — so it is handed in rather than looked up, and this
+   * module never has to know where it came from. Moves `programEndsAt()` and,
+   * if that crosses now, `entitled()` with it.
+   *
+   * Only lengthens a programme that was bought. With none, there is nothing
+   * for the days to be added to, and they wait until there is.
+   */
+  setBonusDays(days: number): void;
 };
 
 /**
@@ -187,6 +201,7 @@ export const unconfigured: Purchases = {
   subscribe: () => () => {},
   refresh: async () => {},
   programEndsAt: () => null,
+  setBonusDays: () => {},
 };
 
 /**

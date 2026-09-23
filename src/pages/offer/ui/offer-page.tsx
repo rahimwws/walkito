@@ -23,6 +23,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { cancelWinback, notificationsAllowed, scheduleWinback } from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
+import { useReferral } from '@/entities/referral';
 import { LEGAL, PRIMARY, accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -180,7 +181,15 @@ export function OfferPage() {
    * only to somebody who dismissed the paywall and came back, or who arrived
    * from the win-back notification. Never on a first view.
    */
-  const boosted = useBoost();
+  const winback = useBoost();
+  /**
+   * The invite price. Earned rather than offered — by redeeming a friend's
+   * code, or by having one's own code redeemed — so unlike the win-back it
+   * holds on every visit, and it is badged as what it is rather than as a
+   * one-time offer.
+   */
+  const invited = useReferral().discounted;
+  const boosted = winback || invited;
   const offeringId = boosted ? OFFERINGS.offer : OFFERINGS.standard;
 
   /**
@@ -572,7 +581,9 @@ export function OfferPage() {
         <Animated.View
           entering={FadeIn.duration(420).reduceMotion(ReduceMotion.System)}
           style={styles.limited}>
-          <Text style={styles.limitedText}>{t('offer.limited')}</Text>
+          <Text style={styles.limitedText}>
+            {invited ? t('offer.inviteBadge') : t('offer.limited')}
+          </Text>
         </Animated.View>
       )}
 
@@ -592,7 +603,9 @@ export function OfferPage() {
       <Animated.Text
         entering={FadeIn.delay(STAGGER_MS).duration(320).reduceMotion(ReduceMotion.System)}
         style={[styles.headline, { color: colors.foreground }]}>
-        {boosted
+        {invited
+          ? t('offer.headlineInvite')
+          : boosted
           ? t('offer.headlineComeback')
           : saves
             ? t('offer.headlineSave', { count: PROGRAM_MONTHS, percent: savingPct })

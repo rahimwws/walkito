@@ -4,6 +4,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { programSummary, type ProgramSummary } from '@/entities/program';
+import { useReferral } from '@/entities/referral';
 import {
   OFFERINGS,
   PRINTED_PRICES as PRINTED,
@@ -58,22 +59,25 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
   // programme — nothing can change them while this screen is open, and
   // re-deriving them on every render would re-scan the whole log for nothing.
   const [summary] = useState<ProgramSummary>(() => programSummary());
+  const invited = useReferral().discounted;
 
   const [offering, setOffering] = useState<Offering | null>(null);
   useEffect(() => {
     if (!purchases.configured) return;
     let live = true;
-    // The standard offering, deliberately. The win-back discount belongs to
-    // somebody who walked away from a first purchase; quoting it to a customer
-    // who has already paid once and finished the plan would teach them that
-    // waiting is cheaper than renewing.
-    void purchases.offering(OFFERINGS.standard).then((found) => {
+    // Never the win-back offering: that belongs to somebody who walked away
+    // from a first purchase, and quoting it to a customer who has paid once
+    // and finished the plan would teach them that waiting is cheaper than
+    // renewing. The invite price is different — it was earned, by sharing a
+    // code somebody used or by joining with one — and the renewal is where a
+    // customer who has already paid finally gets to spend it.
+    void purchases.offering(invited ? OFFERINGS.offer : OFFERINGS.standard).then((found) => {
       if (live) setOffering(found);
     });
     return () => {
       live = false;
     };
-  }, []);
+  }, [invited]);
 
   const monthlyPlan = offering?.monthly ?? null;
   const programPlan = offering?.program ?? null;
@@ -194,7 +198,9 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
           disabled={busy != null}
           style={({ pressed }) => [styles.secondary, pressed && { opacity: 0.6 }]}>
           <Text style={[styles.secondaryLabel, { color: meter.ink }]}>
-            {t('pages.expired.program', { price: programText })}
+            {invited
+              ? t('pages.expired.programInvite', { price: programText })
+              : t('pages.expired.program', { price: programText })}
           </Text>
         </Pressable>
 

@@ -117,5 +117,6 @@ export const PAGES_ES = {
   'pages.expired.busy': 'Un momento…',
   'pages.expired.monthly': 'Seguir mes a mes · {price}',
   'pages.expired.program': 'Otras 12 semanas · {price}',
+  'pages.expired.programInvite': 'Otras 12 semanas a tu precio por invitación · {price}',
   'pages.expired.notNow': 'Ahora no',
 };

@@ -167,5 +167,6 @@ export const PAGES_EN = {
   'pages.expired.busy': 'One moment…',
   'pages.expired.monthly': 'Continue monthly · {price}',
   'pages.expired.program': 'Another 12 weeks · {price}',
+  'pages.expired.programInvite': 'Another 12 weeks at your invite price · {price}',
   'pages.expired.notNow': 'Not now',
 } as const satisfies Record<string, SourceEntry>;

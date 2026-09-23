@@ -15,6 +15,18 @@ export const PROFILE_ES = {
   // ── Rows ─────────────────────────────────────────────────────────────────
   'profile.referFriend': 'Invita a un amigo',
   'profile.invitesJoined': { one: '{count} se unió', other: '{count} se unieron' },
+  'profile.weeksPerFriend': {
+    one: '{count} semana gratis por cada amigo',
+    other: '{count} semanas gratis por cada amigo',
+  },
+  'profile.weeksEarned': {
+    one: '+{count} semana gratis ganada',
+    other: '+{count} semanas gratis ganadas',
+  },
+  'profile.weeksEarnedMax': {
+    one: '+{count} semana gratis ganada, el máximo',
+    other: '+{count} semanas gratis ganadas, el máximo',
+  },
   'profile.contactSupport': 'Contactar con soporte',
   'profile.deleteAccount': 'Eliminar cuenta',
 

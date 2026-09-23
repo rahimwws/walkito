@@ -33,6 +33,10 @@ export const OFFER_EN = {
 
   // ── Paywall: headline ────────────────────────────────────────────────────
   'offer.limited': 'LIMITED — ONE TIME ONLY',
+  /** Instead of the one-time badge, for the price an invite earned. It holds
+   * on every visit, so it must not claim to be limited. */
+  'offer.inviteBadge': 'YOUR INVITE PRICE',
+  'offer.headlineInvite': 'Your invite price on the 12-week program',
   'offer.headlineComeback': 'Your comeback price on the 12-week program',
   /** Plural on the months rather than a bare `{months}`: Russian inflects the
    * noun at 1, at 2–4 and at 5+, and the programme's length is a constant only

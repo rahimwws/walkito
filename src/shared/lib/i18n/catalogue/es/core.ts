@@ -46,10 +46,14 @@ export const CORE_ES = {
 
   // ── Referral / gift sheet ────────────────────────────────────────────────
   'gift.title': 'Invita a un amigo',
-  'gift.blurb': 'Tu amigo recibe un {percent}% de descuento. Tú también.',
+  'gift.blurb': {
+    one: 'Tu amigo recibe un {percent}% de descuento. Tú, {count} semana gratis por cada amigo que se una.',
+    other: 'Tu amigo recibe un {percent}% de descuento. Tú, {count} semanas gratis por cada amigo que se una.',
+  },
+  'gift.cap': { one: 'Hasta {count} amigo.', other: 'Hasta {count} amigos.' },
   'gift.unavailable': 'Las invitaciones no están disponibles en esta versión.',
   'gift.shareMessage':
-    'Usa mi código {code} en Walkito y los dos conseguimos un {percent}% de descuento.',
+    'Usa mi código {code} en Walkito y consigue un {percent}% de descuento en el programa de 12 semanas.',
   'gift.share': 'Compartir código',
   'gift.shared': 'Copiado',
   'gift.copy': 'Copiar en su lugar',
