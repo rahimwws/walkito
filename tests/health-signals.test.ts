@@ -257,6 +257,26 @@ describe('the ladder', () => {
     expect(state).toBe('on-feet');
   });
 
+  test('a long day on foot asks about the heel', () => {
+    expect(briefState({ ...base, todayPain: 1, stepsToday: 10_400 })).toBe('steps-today');
+    expect(briefState({ ...base, todayPain: 1, stepsToday: 9_999 })).not.toBe('steps-today');
+  });
+
+  test('the learned on-feet limit speaks before the generic step line', () => {
+    const state = briefState({
+      ...base,
+      todayPain: 1,
+      stepsToday: 12_000,
+      hoursOnFeet: 6,
+      onFeetThreshold: 7,
+    });
+    expect(state).toBe('on-feet');
+  });
+
+  test('pain still outranks a long day', () => {
+    expect(briefState({ ...base, todayPain: 8, stepsToday: 15_000 })).toBe('flare');
+  });
+
   test('four days away is a return, not an ordinary morning', () => {
     expect(briefState({ ...base, todayPain: 1, daysAway: 5 })).toBe('returning');
   });

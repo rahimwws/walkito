@@ -13,11 +13,13 @@ export {
 
 export {
   PLAN_KIND,
+  STEP_CHECK_KIND,
   WINDOW_DAYS,
   clearAll,
   deliveryState,
   explainToday,
   markDelivered,
+  maybeSendStepCheck,
   onAppOpen,
   planWindow,
   refresh,
@@ -36,7 +38,15 @@ export {
   type NotificationKind,
 } from './model/ladder';
 
-export { messageFor, type Message } from './model/copy';
+export { messageFor, stepsCheckMessage, type Message } from './model/copy';
+export {
+  STEP_CHECK,
+  STEP_CHECK_EARLIEST,
+  STEP_CHECK_RECENT_HOURS,
+  stepCheckBlocked,
+  type StepCheckBlocked,
+  type StepCheckInput,
+} from './model/steps-check';
 export {
   EMPTY_DELIVERY,
   blockedReason,

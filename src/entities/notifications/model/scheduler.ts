@@ -13,11 +13,12 @@
 
 import * as Notifications from 'expo-notifications';
 
-import { currentDay, nextSessionAt, toDateKey } from '@/entities/program';
+import { STEP_CHECK_MARK, healthSignals } from '@/entities/health';
+import { currentDay, nextSessionAt, painEntriesOn, toDateKey } from '@/entities/program';
 import { getLanguage } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 
-import { messageFor, retestFollowUpBody } from './copy';
+import { messageFor, retestFollowUpBody, stepsCheckMessage } from './copy';
 import {
   FOLLOW_UP_HOURS,
   PRIORITY,
@@ -36,6 +37,11 @@ import {
 import { notificationsAllowed } from './notifications';
 import { recordOpen } from './opens';
 import { signalsFor, windowDays } from './signals';
+import { STEP_CHECK, stepCheckBlocked, type StepCheckBlocked } from './steps-check';
+
+/** Marks the step check-in, which is not a plan item: no rebuild cancels it
+ * and the delivery listener does not count it a second time. */
+export const STEP_CHECK_KIND = 'steps-check';
 
 /** Marks every notification this scheduler owns, so a tap can be routed and so
  * the window can be cancelled without touching the offer's own messages. */
@@ -376,4 +382,90 @@ export function explainToday(now: number = Date.now()) {
   const today = currentDay(now);
   const signals = signalsFor(today, now, today);
   return { signals, decision: decide(signals, readDelivery()), priority: PRIORITY };
+}
+
+/**
+ * Cancels whatever of today's plan has not fired yet.
+ *
+ * For the step check-in: once it has gone out, the evening check-in or streak
+ * line still waiting for today would be the day's third message. Removed from
+ * both records, so the next open does not count it as delivered.
+ */
+async function standDownToday(now: number): Promise<void> {
+  const today = toDateKey(new Date(now));
+  const later = laidItems().filter(
+    (item) => item.dateKey === today && fireAt(item.dateKey, item.at).getTime() > now,
+  );
+  if (later.length === 0) return;
+  const gone = new Set(later.map((item) => item.id));
+  for (const id of gone) {
+    try {
+      await Notifications.cancelScheduledNotificationAsync(id);
+    } catch {
+      // Already gone.
+    }
+  }
+  kv.set(LAID_KEY, JSON.stringify(laidItems().filter((item) => !gone.has(item.id))));
+  kv.set(SCHEDULED_KEY, JSON.stringify(scheduledIds().filter((id) => !gone.has(id))));
+}
+
+/**
+ * Sends the step check-in if today has earned it.
+ *
+ * Called after every health refresh, including from a background wake with no
+ * screen up. Reads only what is already cached — the health signals and the
+ * pain log — so it costs nothing when the answer is no, which is almost always.
+ * See `steps-check.ts` for the rules and why this one message may join the
+ * morning's.
+ */
+export async function maybeSendStepCheck(
+  now: number = Date.now(),
+): Promise<StepCheckBlocked | 'sent' | 'not-allowed' | 'failed'> {
+  const date = new Date(now);
+  const dateKey = toDateKey(date);
+  const signals = healthSignals();
+  // Only today's figure. A cache last computed yesterday would otherwise send
+  // yesterday's total the moment the new day's first wake arrives.
+  const stepsToday = signals.asOf === dateKey ? signals.stepsToday : null;
+  const entries = painEntriesOn(currentDay(now));
+  // Settled first, as an open does: the morning line has usually fired by now
+  // without the app being opened, and it has to be on the record before this
+  // one joins it — otherwise the day is counted once and the unopened streak
+  // runs one short.
+  const delivery = reconcile(now, readDelivery());
+  writeDelivery(delivery);
+
+  const blocked = stepCheckBlocked({
+    stepsToday,
+    mark: STEP_CHECK_MARK,
+    dateKey,
+    minuteOfDay: date.getHours() * 60 + date.getMinutes(),
+    now,
+    delivery,
+    lastCheckInAt: entries.length > 0 ? entries[entries.length - 1].at : null,
+  });
+  if (blocked != null) return blocked;
+  if (!(await notificationsAllowed())) return 'not-allowed';
+
+  // Recorded before the await, so two wakes landing together cannot both send.
+  writeDelivery(recordSent(delivery, STEP_CHECK, dateKey));
+  const message = stepsCheckMessage(stepsToday ?? 0, getLanguage());
+  try {
+    await Notifications.scheduleNotificationAsync({
+      identifier: `steps-${dateKey}`,
+      content: {
+        title: message.title,
+        body: message.body,
+        data: { kind: STEP_CHECK_KIND, date: dateKey },
+      },
+      trigger: null,
+    });
+  } catch (error) {
+    // Give the day back, so a later wake can try again.
+    writeDelivery(delivery);
+    console.warn('[notify] step check-in failed', error);
+    return 'failed';
+  }
+  await standDownToday(now);
+  return 'sent';
 }

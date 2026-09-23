@@ -305,6 +305,19 @@ export const BRIEF_ES = {
     ],
   ],
 
+  'steps-today': [
+    [
+      { k: 'frame', text: 'hoy ya llevas' },
+      { k: 'metric', icon: 'feet', text: '{stepsToday}' },
+      { k: 'frame', text: '— un día largo de pie. ¿Qué tal el talón?' },
+    ],
+    [
+      { k: 'frame', text: 'ya son' },
+      { k: 'metric', icon: 'feet', text: '{stepsToday}' },
+      { k: 'frame', text: 'hoy. Si el talón se queja, sentarte un rato ayuda más que seguir.' },
+    ],
+  ],
+
   // ── Recuperación ─────────────────────────────────────────────────────────
   'poor-sleep': [
     [

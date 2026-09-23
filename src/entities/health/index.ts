@@ -2,9 +2,12 @@ export {
   EMPTY_SUMMARY,
   READ_TYPES,
   connectHealth,
+  healthAccess,
   healthAvailable,
+  onHealthAsked,
   readTodaySummary,
   requestHealthAccess,
+  type HealthAccess,
   type HealthConnection,
   type HealthOutcome,
   type HealthSummary,
@@ -22,6 +25,7 @@ export {
   MIN_DAYS,
   NORMALISED_PP,
   NO_SIGNALS,
+  STEP_CHECK_MARK,
   STEP_SPIKE_RATIO,
   FLIGHTS_SPIKE_RATIO,
   BIG_RUN_RATIO,
@@ -38,16 +42,19 @@ export {
   type SignalOptions,
 } from './model/metrics';
 export {
-  anchorFor,
-  forgetAnchor,
+  contiguous,
   healthCache,
   healthSignals,
   mergeDays,
   recomputeSignals,
-  rememberAnchor,
   resetHealthCache,
   setBilateral,
   useHealthSignals,
   type HealthCache,
 } from './model/cache';
-export { refreshHealth, startHealthPipeline, type RefreshOptions } from './model/pipeline';
+export {
+  OBSERVED_TYPES,
+  refreshHealth,
+  startHealthPipeline,
+  type RefreshOptions,
+} from './model/pipeline';

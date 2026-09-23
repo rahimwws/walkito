@@ -322,6 +322,19 @@ export const BRIEF_RU = {
     ],
   ],
 
+  'steps-today': [
+    [
+      { k: 'frame', text: 'сегодня уже' },
+      { k: 'metric', icon: 'feet', text: '{stepsToday}' },
+      { k: 'frame', text: '— долгий день на ногах. Как пятка?' },
+    ],
+    [
+      { k: 'frame', text: 'за сегодня уже' },
+      { k: 'metric', icon: 'feet', text: '{stepsToday}', tail: '.' },
+      { k: 'frame', text: 'Если пятка даёт о себе знать, лучше присесть, чем дохаживать.' },
+    ],
+  ],
+
   // ── Восстановление ───────────────────────────────────────────────────────
   'poor-sleep': [
     [

@@ -229,6 +229,13 @@ export function briefParams(
             count: Math.round(health.stepsYesterday),
             steps: grouped(health.stepsYesterday, language),
           }),
+    stepsToday:
+      input.stepsToday == null
+        ? DASH
+        : t('home.steps', {
+            count: Math.round(input.stepsToday),
+            steps: grouped(input.stepsToday, language),
+          }),
     distance:
       health.longestRunYesterdayKm == null
         ? DASH

@@ -18,7 +18,13 @@ import { subscribeToLanguage } from '@/shared/lib/i18n';
  */
 export function useNotificationScheduler(): void {
   useEffect(() => {
-    void onAppOpen();
+    // Only when someone is actually looking. HealthKit now relaunches the app
+    // in the background on its hourly wakes, and this root mounts for those
+    // too — counted as opens, they would clear the unopened streak every hour
+    // and mark every day "opened", which silences the evening check-in and
+    // disarms the backoff entirely. `!== 'background'` rather than `=== 'active'`
+    // because a cold launch can still read `unknown` or `inactive` here.
+    if (AppState.currentState !== 'background') void onAppOpen();
 
     const app = AppState.addEventListener('change', (next) => {
       if (next === 'active') void onAppOpen();

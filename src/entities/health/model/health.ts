@@ -1,4 +1,6 @@
 import {
+  AuthorizationRequestStatus,
+  getRequestStatusForAuthorization,
   isHealthDataAvailable,
   queryStatisticsForQuantity,
   requestAuthorization,
@@ -28,6 +30,10 @@ export const READ_TYPES = [
   'HKQuantityTypeIdentifierWalkingSpeed',
   // Load.
   'HKQuantityTypeIdentifierStepCount',
+  // Stairs. The pipeline read this from the start, but it was never asked for —
+  // and a type that is queried and not asked for returns nothing, silently, so
+  // the stairs line on Home could never fire.
+  'HKQuantityTypeIdentifierFlightsClimbed',
   // Recovery. A watch supplies these; without one they stay null and every
   // signal that needs them independently declines to speak.
   'HKQuantityTypeIdentifierRestingHeartRate',
@@ -40,6 +46,18 @@ export const READ_TYPES = [
   'HKQuantityTypeIdentifierActiveEnergyBurned',
   'HKQuantityTypeIdentifierHeartRate',
 ] as const;
+
+/**
+ * The read list as it shipped before flights were added.
+ *
+ * Kept only to answer "has this person been asked before?" for people who
+ * connected on an older build: Apple reports `shouldRequest` for the whole set
+ * the moment one new type joins it, and the new list alone would make everyone
+ * who already answered look like someone who never has.
+ */
+const LEGACY_READ_TYPES = READ_TYPES.filter(
+  (type) => type !== 'HKQuantityTypeIdentifierFlightsClimbed',
+);
 
 export type HealthSummary = {
   /** Steps today. */
@@ -111,10 +129,63 @@ export async function requestHealthAccess(): Promise<boolean> {
     // user has already decided how they feel about this app reading their
     // health data — converts far worse than one more row on a sheet they are
     // already reading.
-    return await requestAuthorization({ toRead: READ_TYPES, toShare: WRITE_TYPES });
+    const asked = await requestAuthorization({ toRead: READ_TYPES, toShare: WRITE_TYPES });
+    if (asked) {
+      for (const listener of askedListeners) listener();
+    }
+    return asked;
   } catch {
     return false;
   }
+}
+
+/**
+ * Where the permission question stands.
+ *
+ * - `never`: Apple's sheet has not been shown. Nothing may be read, and a
+ *   background observer registered now would be registered against types the
+ *   app has no access to.
+ * - `current`: asked, with the list as it is today.
+ * - `outdated`: asked on an older build, and the list has grown since. What
+ *   was granted then still reads; the new rows need the sheet once more.
+ *
+ * Says nothing about what was *granted* — Apple will not tell anyone that.
+ */
+export type HealthAccess = 'never' | 'current' | 'outdated';
+
+export async function healthAccess(): Promise<HealthAccess> {
+  if (!healthAvailable()) return 'never';
+  try {
+    const now = await getRequestStatusForAuthorization({
+      toRead: READ_TYPES,
+      toShare: WRITE_TYPES,
+    });
+    if (now === AuthorizationRequestStatus.unnecessary) return 'current';
+    const before = await getRequestStatusForAuthorization({
+      toRead: LEGACY_READ_TYPES,
+      toShare: WRITE_TYPES,
+    });
+    return before === AuthorizationRequestStatus.unnecessary ? 'outdated' : 'never';
+  } catch {
+    return 'never';
+  }
+}
+
+const askedListeners = new Set<() => void>();
+
+/**
+ * Called after Apple's sheet has been answered, from wherever it was raised.
+ *
+ * The pipeline is mounted at the root, long before onboarding reaches the
+ * Health step, so on a fresh install it starts with nothing to observe. This is
+ * how it learns the question has been answered without the onboarding screen
+ * having to know the pipeline exists.
+ */
+export function onHealthAsked(listener: () => void): () => void {
+  askedListeners.add(listener);
+  return () => {
+    askedListeners.delete(listener);
+  };
 }
 
 /**
@@ -154,7 +225,10 @@ function startOfToday(now: number): Date {
 export async function readTodaySummary(now = Date.now()): Promise<HealthSummary> {
   if (!healthAvailable()) return EMPTY_SUMMARY;
 
-  const filter = { startDate: startOfToday(now), endDate: new Date(now) };
+  // `{ date: { … } }`, not `{ startDate, endDate }`. The flat shape was hidden
+  // behind an `as never` and the library silently ignored it, so "today" was
+  // every step the phone had ever recorded.
+  const filter = { date: { startDate: startOfToday(now), endDate: new Date(now) } };
 
   const [steps, calories, heartRate] = await Promise.all([
     stat('HKQuantityTypeIdentifierStepCount', 'sum', filter),
@@ -168,15 +242,18 @@ export async function readTodaySummary(now = Date.now()): Promise<HealthSummary>
 }
 
 async function stat(
-  identifier: (typeof READ_TYPES)[number],
+  identifier:
+    | 'HKQuantityTypeIdentifierStepCount'
+    | 'HKQuantityTypeIdentifierActiveEnergyBurned'
+    | 'HKQuantityTypeIdentifierHeartRate',
   option: 'sum' | 'average',
-  filter: { startDate: Date; endDate: Date },
+  filter: { date: { startDate: Date; endDate: Date } },
 ): Promise<number | null> {
   try {
     const result = await queryStatisticsForQuantity(
-      identifier as never,
-      [option] as never,
-      filter as never,
+      identifier,
+      [option === 'sum' ? 'cumulativeSum' : 'discreteAverage'],
+      { filter },
     );
     const quantity =
       option === 'sum' ? result.sumQuantity?.quantity : result.averageQuantity?.quantity;
