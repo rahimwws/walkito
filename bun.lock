@@ -5,7 +5,7 @@
       "name": "cadence",
       "dependencies": {
         "@expo-google-fonts/inter": "^0.4.2",
-        "@expo/ui": "~57.0.19",
+        "@expo/ui": "57.0.7",
         "@hugeicons/core-free-icons": "^4.2.3",
         "@hugeicons/react-native": "^1.0.15",
         "@kingstinct/react-native-healthkit": "^14.1.0",
