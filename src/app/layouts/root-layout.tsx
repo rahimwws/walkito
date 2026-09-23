@@ -48,7 +48,9 @@ export function RootLayout() {
   const [fontsReady, fontError] = useFonts(fontAssets);
   // Read synchronously from MMKV, so the very first paint mounts the right
   // stack rather than flashing Home and swapping.
-  const onboarded = useOnboarded();
+  // Development builds skip onboarding entirely: its intro gates on Sign in
+  // with Apple, which a simulator cannot complete.
+  const onboarded = useOnboarded() || __DEV__;
   /**
    * Whether the subscription is live. The tabs are behind it.
    *

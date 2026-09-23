@@ -1,4 +1,5 @@
 import * as AppleAuthentication from 'expo-apple-authentication';
+import * as Device from 'expo-device';
 import { Platform } from 'react-native';
 
 /**
@@ -42,6 +43,15 @@ export async function signInWithApple(): Promise<AppleSignIn> {
   // is not "unavailable" and must not be treated as one — it is why the intro
   // screen needs a second way in rather than a fall-through.
   if (Platform.OS !== 'ios' || !(await AppleAuthentication.isAvailableAsync())) {
+    return { status: 'unavailable' };
+  }
+
+  // A dev build on a simulator skips the sheet entirely. Signing in there
+  // needs an Apple ID attached to the simulator and still fails often enough to
+  // block every run through onboarding. "Unavailable" is the verdict the intro
+  // screen already lets through, so the flow advances without a name or email.
+  // Release builds and real devices are unaffected.
+  if (__DEV__ && !Device.isDevice) {
     return { status: 'unavailable' };
   }
 
