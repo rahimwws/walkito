@@ -66,8 +66,19 @@ export const PAGES_ES = {
   'pages.program.blockSeam': 'BLOQUE {index} · {name}',
   'pages.program.blockAllDone': { one: '{count} día hecho', other: '{count} días hechos' },
   'pages.program.blockProgress': '{done} de {length} hechos',
-  'pages.program.blockNew': 'Nuevo: {exercise}',
-  'pages.program.blockChanges': 'Aquí cambia el trabajo',
+  'pages.program.blockDays': 'Días {start}–{end}',
+  'pages.program.blockAbout1':
+    'Calmar el pie. Estiramientos y movimiento suave, todavía sin carga.',
+  'pages.program.blockAbout2':
+    'Empieza el trabajo de fuerza. Las elevaciones de talón con toalla son las que mueven el dolor; el pie corto sentado es lo que cambia el arco. Hacia el día 20 suele llegar el primer alivio claro.',
+  'pages.program.blockAbout3':
+    'La carga sube: elevaciones 4 × 10 con mochila, y el pie corto se hace de pie — ahora el arco trabaja con el peso del cuerpo. Los primeros cambios en el arco suelen verse a partir de la sexta semana.',
+  'pages.program.blockAbout4':
+    'Las elevaciones llegan a 5 × 8, la carga máxima del programa. El pie corto pasa a una pierna y entra la banda elástica — solo ahora, cuando los músculos internos del pie ya sostienen.',
+  'pages.program.blockAbout5':
+    'Entra la cadera. Un glúteo débil deja caer el arco, así que el control sube por la cadena mientras la carga del pie se mantiene como en el bloque 4.',
+  'pages.program.blockAbout6':
+    'Esto ya no es tratamiento, es mantenimiento. Se quita la toalla, las elevaciones se aligeran a 3 × 15 y se suma tiempo descalzo en casa. Esta es la rutina que te quedas.',
   'pages.program.finishDay': 'DÍA {day}',
   'pages.program.finishCaption': 'Programa completado',
 

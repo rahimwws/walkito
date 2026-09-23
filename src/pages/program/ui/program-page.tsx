@@ -19,8 +19,6 @@ import { blockName,
   TODAY_INDEX,
   clearRetestRequest,
   currentDay,
-  exerciseById,
-  firstNewExercise,
   logFor,
   nextSessionAt,
   planFor,
@@ -39,7 +37,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { SessionView } from '@/widgets/session-player';
 
 import { DayCard } from './day-card';
-import { BlockAhead, BlockFooter, BlockOpening, ProgramFinish } from './block-marks';
+import { BlockFooter, BlockIntro, BlockOpening, ProgramFinish } from './block-marks';
 import { DayLink, StreakMilestone } from './day-link';
 import { DaySheet } from './day-sheet';
 
@@ -89,13 +87,16 @@ const PARALLAX = 0.3;
 export const PROGRAM_HEADER_HEIGHT = 58;
 
 /**
- * The program: the block the user is in, day by day.
+ * The program: from the block the user is in to the end of the plan, day by day.
  *
  * A screen rather than a sheet, so it owns its own safe area and its own way
- * out. One block rather than the whole plan. A list that scrolls for four
- * minutes is not a plan, it is a calendar — and the next block cannot be
- * started early, so showing it would only offer something the screen has to
- * refuse.
+ * out. It used to stop at the end of the current block, and a fortnight of
+ * cards followed by nothing read as a program that ran out at day 14. Every
+ * block ahead is shown now, each opened by what it is for — but its days stay
+ * locked, because the next block still cannot be started early.
+ *
+ * Blocks already behind the user are left off. Today's card has to be near the
+ * top of the list, and a finished fortnight is on Progress, not here.
  */
 export function ProgramPage() {
   const scheme = useColorScheme();
@@ -152,27 +153,27 @@ export function ProgramPage() {
    */
   const unlockAt = nextSessionAt(currentDay());
   const lines = todayLines(language);
-  const days = PROGRAM.filter((day) => day.block === today.block);
+  /**
+   * The blocks on screen, each with its own days: the current one and every
+   * one after it.
+   */
+  const sections = PLAN_BLOCKS.filter((b) => b.index >= today.block).map((b) => ({
+    block: b,
+    days: PROGRAM.filter((day) => day.block === b.index),
+  }));
 
   /**
-   * How the block closes, and what is on the other side of it.
+   * How far into the current block the user is.
    *
    * `done` counts the days actually behind the user rather than the block's
    * length, so the seam cannot congratulate anyone for a fortnight they have
-   * not lived. The next block is read out of the plan, and what it introduces
-   * off its own exercise table — see `firstNewExercise`.
+   * not lived.
    */
-  const block = PLAN_BLOCKS[today.block - 1];
-  const doneInBlock = days.filter((day) => {
+  const current = sections[0];
+  const doneInBlock = current.days.filter((day) => {
     const status = statusFor(day, TODAY_INDEX, doneToday);
     return status === 'done' || status === 'rest';
   }).length;
-  const nextBlock = PLAN_BLOCKS[today.block] ?? null;
-  const beginsId = nextBlock == null ? null : firstNewExercise(nextBlock.index);
-  // The title, never the id. `firstNewExercise` answers in ids because that is
-  // what the tables are keyed by, and handing one straight to a caption put
-  // "heel_raise_towel begin here" on screen.
-  const begins = beginsId == null ? null : exerciseById(beginsId).title;
 
   /** Opening a day's session: the card's own button, and the retest the day
    * sheet hands over below, are the same act and go through one path. */
@@ -325,75 +326,100 @@ export function ProgramPage() {
             styles.list,
             { paddingTop: 10, paddingBottom: insets.bottom + 120 },
           ]}>
-          {days.map((day, i) => {
-            const status = statusFor(day, TODAY_INDEX, doneToday);
-            // Only the very next one. Every locked day after it opens on its
-            // own date too, and a column of countdowns would read as a queue
-            // rather than as a plan.
-            const nextUp = day.index === TODAY_INDEX + 1 ? unlockAt : null;
-            const last = i === days.length - 1;
-            // Every third day the run pauses on a marker. Counted off the day
-            // number rather than off the loop index, so it lands on days 3, 6
-            // and 9 whatever slice of the plan is on screen.
-            const milestone = !last && day.day % MILESTONE_EVERY === 0;
-
+          {sections.map(({ block, days }, section) => {
+            const isCurrent = section === 0;
             return (
-              <View key={day.index}>
-                <DayCard
-                  day={day}
-                  status={status}
-                  unlockAt={nextUp}
-                  onStart={() => start(day)}
-                  // The status travels with the tap rather than being worked
-                  // out again inside the sheet: the list has already decided
-                  // what it is showing, and a sheet that re-derived it could
-                  // disagree with the card the user just pressed.
-                  onOpen={() => setReading({ day, status })}
-                />
-
-                {!last && (
-                  <View style={styles.gap}>
-                    <DayLink ahead={status === 'upcoming'} />
-                    {milestone && (
+              <View key={block.index}>
+                {/* The run from the block before into this one. The first
+                    hinge carries the greeting; after that the intros alone
+                    mark the seams, or the list becomes a row of mascots. */}
+                {!isCurrent && (
+                  <View style={styles.tail}>
+                    <DayLink ahead />
+                    {section === 1 && (
                       <>
-                        <StreakMilestone days={day.day} />
-                        <DayLink ahead={status === 'upcoming'} />
+                        <BlockOpening />
+                        <DayLink ahead />
                       </>
                     )}
+                  </View>
+                )}
+
+                <View style={isCurrent ? styles.head : styles.tail}>
+                  <BlockIntro
+                    index={block.index}
+                    name={blockName(block.index, t)}
+                    startDay={block.startDay}
+                    endDay={block.endDay}
+                    ahead={!isCurrent}
+                  />
+                  <DayLink ahead={!isCurrent} />
+                </View>
+
+                {days.map((day, i) => {
+                  const status = statusFor(day, TODAY_INDEX, doneToday);
+                  // Only the very next one. Every locked day after it opens on
+                  // its own date too, and a column of countdowns would read as a
+                  // queue rather than as a plan.
+                  const nextUp = day.index === TODAY_INDEX + 1 ? unlockAt : null;
+                  const last = i === days.length - 1;
+                  // Every third day the run pauses on a marker. Counted off the
+                  // day number rather than off the loop index, so it lands on
+                  // days 3, 6 and 9 whatever slice of the plan is on screen.
+                  const milestone = !last && day.day % MILESTONE_EVERY === 0;
+
+                  return (
+                    <View key={day.index}>
+                      <DayCard
+                        day={day}
+                        status={status}
+                        unlockAt={nextUp}
+                        onStart={() => start(day)}
+                        // The status travels with the tap rather than being
+                        // worked out again inside the sheet: the list has already
+                        // decided what it is showing, and a sheet that re-derived
+                        // it could disagree with the card the user just pressed.
+                        onOpen={() => setReading({ day, status })}
+                      />
+
+                      {!last && (
+                        <View style={styles.gap}>
+                          <DayLink ahead={status === 'upcoming'} />
+                          {milestone && (
+                            <>
+                              <StreakMilestone days={day.day} />
+                              <DayLink ahead={status === 'upcoming'} />
+                            </>
+                          )}
+                        </View>
+                      )}
+                    </View>
+                  );
+                })}
+
+                {/* The current block closes on a count of what is behind the
+                    user. Blocks ahead need no footer — their retest card is
+                    already the last thing in them. */}
+                {isCurrent && (
+                  <View style={styles.tail}>
+                    <DayLink />
+                    <BlockFooter
+                      index={block.index}
+                      name={blockName(block.index, t)}
+                      done={doneInBlock}
+                      length={days.length}
+                    />
                   </View>
                 )}
               </View>
             );
           })}
 
-          {/* What is past the retest. The seam closes the block, and either the
-              next one is named or — on the final block — the plan's own finish
-              line is, which is the only place it can honestly be drawn. */}
+          {/* The plan's own finish line, under its last block — the only place
+              it can honestly be drawn. */}
           <View style={styles.tail}>
-            <DayLink />
-            <BlockFooter
-              index={block.index}
-              name={blockName(block.index, t)}
-              done={doneInBlock}
-              length={days.length}
-            />
-
-            {nextBlock != null ? (
-              <>
-                <DayLink ahead />
-                {/* Between the two markers: the block that closed above it and
-                    the one named below. It is the hinge of the run, which is
-                    the one place a greeting belongs. */}
-                <BlockOpening />
-                <DayLink ahead />
-                <BlockAhead index={nextBlock.index} name={blockName(nextBlock.index, t)} begins={begins} />
-              </>
-            ) : (
-              <>
-                <DayLink ahead />
-                <ProgramFinish day={PROGRAM_LENGTH} />
-              </>
-            )}
+            <DayLink ahead />
+            <ProgramFinish day={PROGRAM_LENGTH} />
           </View>
         </Animated.ScrollView>
       </Animated.View>
@@ -489,7 +515,12 @@ const styles = StyleSheet.create({
    * the end of something, and an end that is spaced like a row does not read as
    * one. */
   tail: {
-    paddingTop: 5,
+    paddingVertical: 5,
+    gap: 12,
+  },
+  /** The current block's intro, at the top of the list. */
+  head: {
+    paddingBottom: 5,
     gap: 12,
   },
   list: {

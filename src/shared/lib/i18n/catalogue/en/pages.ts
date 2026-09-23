@@ -103,11 +103,23 @@ export const PAGES_EN = {
   'pages.program.blockSeam': 'BLOCK {index} · {name}',
   'pages.program.blockAllDone': { one: '{count} day done', other: '{count} days done' },
   'pages.program.blockProgress': '{done} of {length} done',
-  /** The exercise the next block introduces. A label rather than a sentence:
-   * "Heel raises begin here" reads well and "Short foot, standing begin here"
-   * does not, and both titles come out of the same table. */
-  'pages.program.blockNew': 'New: {exercise}',
-  'pages.program.blockChanges': 'The work changes here',
+  /** Under a block's seam: which fortnight of the plan it covers. */
+  'pages.program.blockDays': 'Days {start}–{end}',
+  /** What a block is for, in a few sentences, shown where the block opens.
+   * Written per block rather than assembled from its exercise table: the table
+   * says what changes, and only these say why. */
+  'pages.program.blockAbout1':
+    'Calming the foot down. Stretches and gentle movement — nothing is loaded yet.',
+  'pages.program.blockAbout2':
+    'Strength work starts. Towel heel raises are what move the pain; seated short foot is what reshapes the arch. Most people feel the first real relief around day 20.',
+  'pages.program.blockAbout3':
+    'The load goes up: heel raises 4 × 10 with a backpack, and short foot comes off the chair — the arch now works under your bodyweight. The first changes in the arch usually show from week six.',
+  'pages.program.blockAbout4':
+    'Heel raises reach 5 × 8, the heaviest in the program. Short foot moves to one leg, and the band joins — only now, once the small muscles inside the foot can hold.',
+  'pages.program.blockAbout5':
+    'The hip joins in. A weak glute lets the arch drop, so control moves up the chain while the load on the foot stays where Block 4 left it.',
+  'pages.program.blockAbout6':
+    'This is no longer treatment — it is upkeep. The towel comes off, heel raises get lighter at 3 × 15, and time barefoot at home goes in. This is the routine you keep.',
   'pages.program.finishDay': 'DAY {day}',
   'pages.program.finishCaption': 'Program complete',
 

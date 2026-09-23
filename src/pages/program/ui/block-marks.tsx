@@ -4,7 +4,7 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 import Animated, { FadeIn, ReduceMotion } from 'react-native-reanimated';
 
 import { accents, fonts, meterColors, palette } from '@/shared/config';
-import { useT } from '@/shared/lib/i18n';
+import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 /**
@@ -124,38 +124,61 @@ export const BlockFooter = memo(function BlockFooter({
   );
 });
 
-export type BlockAheadProps = {
+/** What each block is for, by index. A table rather than a template key built
+ * from the number, so a block without copy is a compile error here rather than
+ * a raw key on screen. */
+const ABOUT_KEYS = {
+  1: 'pages.program.blockAbout1',
+  2: 'pages.program.blockAbout2',
+  3: 'pages.program.blockAbout3',
+  4: 'pages.program.blockAbout4',
+  5: 'pages.program.blockAbout5',
+  6: 'pages.program.blockAbout6',
+} as const satisfies Record<number, Key>;
+
+export type BlockIntroProps = {
   index: number;
   name: string;
-  /** The exercise this block introduces, if it introduces one. */
-  begins: string | null;
+  startDay: number;
+  endDay: number;
+  /** A block still ahead: stated, not offered. */
+  ahead: boolean;
 };
 
 /**
- * The block after this one, shown but not offered.
+ * Where a block opens: its name, its fortnight, and what it is for.
  *
- * This is the one place in the app where the future can be shown without
- * promising anything: it is a table, not a forecast. What it says begins here
- * is read off the block's own exercise list, so it cannot claim a change the
- * program does not actually make.
+ * The sentence is the part the day cards cannot say. Fourteen locked cards tell
+ * the user a fortnight is coming; only this tells them why it is different
+ * from the one before — and a plan whose later weeks read as more of the same
+ * is a plan people stop at week two.
  */
-export const BlockAhead = memo(function BlockAhead({ index, name, begins }: BlockAheadProps) {
-  // Subscribed, because `begins` is an exercise title the caller resolved
-  // through the catalogue — it has to repaint when the language moves.
+export const BlockIntro = memo(function BlockIntro({
+  index,
+  name,
+  startDay,
+  endDay,
+  ahead,
+}: BlockIntroProps) {
+  const scheme = useColorScheme();
+  const colors = palette[scheme];
+  const meter = meterColors[scheme];
   const t = useT();
+  const about = ABOUT_KEYS[index as keyof typeof ABOUT_KEYS];
+
   return (
-    <Seam
-      label={t('pages.program.blockSeam', { index, name: name.toUpperCase() })}
-      // "Heel raises begin here" reads well and "Short foot, standing begin
-      // here" does not, and both titles come out of the same table. A label
-      // rather than a sentence sidesteps the agreement entirely.
-      caption={
-        begins != null
-          ? t('pages.program.blockNew', { exercise: begins })
-          : t('pages.program.blockChanges')
-      }
-      muted
-    />
+    <View style={styles.intro}>
+      <Seam
+        label={t('pages.program.blockSeam', { index, name: name.toUpperCase() })}
+        caption={t('pages.program.blockDays', { start: startDay, end: endDay })}
+        muted={ahead}
+      />
+      {about != null && (
+        <Text style={[styles.about, { color: ahead ? meter.caption : colors.foreground }]}>
+          {t(about)}
+        </Text>
+      )}
+    </View>
   );
 });
 
@@ -230,6 +253,16 @@ const styles = StyleSheet.create({
   caption: {
     fontSize: 13,
     fontFamily: fonts.semibold,
+  },
+  intro: {
+    gap: 10,
+  },
+  about: {
+    fontSize: 15,
+    lineHeight: 21,
+    fontFamily: fonts.medium,
+    textAlign: 'center',
+    paddingHorizontal: 8,
   },
   finish: {
     alignItems: 'center',
