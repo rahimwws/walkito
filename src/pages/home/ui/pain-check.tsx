@@ -41,9 +41,15 @@ import { useColorScheme } from '@/shared/lib/theme';
 
 import { SessionView } from '@/widgets/session-player';
 
-import { MAX_ZONES, ZONE_LABEL_KEYS, toggleZone, type LegZone } from '../model/leg-zones';
+import {
+  LegMap,
+  MAX_ZONES,
+  ZONE_LABEL_KEYS,
+  toggleZone,
+  type LegZone,
+} from '@/entities/leg-zone';
+
 import { reliefIdsFor } from '../model/zone-relief';
-import { LegMap } from './leg-map';
 
 import { PAIN_MAX, PAIN_MIN, PainScale, painBand, painColor } from './pain-scale';
 

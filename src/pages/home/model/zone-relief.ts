@@ -1,4 +1,4 @@
-import type { LegZone } from './leg-zones';
+import type { LegZone } from '@/entities/leg-zone';
 
 /**
  * What to show someone who has just pointed at the place that hurts.

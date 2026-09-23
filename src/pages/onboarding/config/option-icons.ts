@@ -6,14 +6,12 @@ import {
   BarbellIcon as Barbell,
   BasketballIcon as Basketball,
   BedIcon as Bed,
-  BoneIcon as Bone,
   CalendarCheckIcon as CalendarCheck,
   ClockIcon as Clock,
   DropIcon as Drop,
   FireIcon as Fire,
   FirstAidIcon as FirstAid,
   FootprintsIcon as Footprints,
-  HeartbeatIcon as Heartbeat,
   LightningIcon as Lightning,
   MapPinIcon as MapPin,
   MoonIcon as Moon,
@@ -30,7 +28,6 @@ import {
   TennisBallIcon as TennisBall,
   TimerIcon as Timer,
   TrophyIcon as Trophy,
-  WavesIcon as Waves,
   type Icon,
 } from 'phosphor-react-native';
 
@@ -81,13 +78,7 @@ export const OPTION_ICONS: Record<string, OptionArt> = {
   '30-50': { icon: Path, color: HUE.pink },
   '50+': { icon: Mountains, color: HUE.amber },
 
-  // Sore spots
-  foot: { icon: Footprints, color: HUE.pink },
-  heel: { icon: Bone, color: HUE.amber },
-  achilles: { icon: Waves, color: HUE.violet },
-  shin: { icon: Bone, color: HUE.sky },
-  knee: { icon: FirstAid, color: HUE.rose },
-  hip: { icon: Heartbeat, color: HUE.teal },
+  // "Nothing" on the watch question.
   none: { icon: ShieldCheck, color: HUE.green },
 
   // When it hurts

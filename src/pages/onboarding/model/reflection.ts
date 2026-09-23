@@ -35,12 +35,12 @@ export function defaultBuildingLines(t: Translate): BuildingLines {
  * Which complaint speaks for the set.
  *
  * Ordered by how much the programme can say about each, not by the order they
- * appear in the question: heel is the most common and the most responsive, so
- * a user who ticked heel *and* hip is told about the heel. `none` sorts last
- * because it is the absence of the others, and only speaks when nothing else
- * was picked.
+ * were touched on the map: heel is the most common and the most responsive,
+ * so a user who marked the heel *and* the shin is told about the heel. `none`
+ * sorts last because it is the absence of the others, and only speaks when
+ * nothing else was picked.
  */
-const PRIMARY_ORDER = ['heel', 'foot', 'achilles', 'shin', 'knee', 'hip', 'none'] as const;
+const PRIMARY_ORDER = ['heel', 'foot', 'achilles', 'calf', 'shin', 'none'] as const;
 
 type PainKey = (typeof PRIMARY_ORDER)[number];
 
@@ -50,9 +50,8 @@ export const PAIN_NOUN: Record<PainKey, Phrase | null> = {
   heel: (t) => t('onboarding.reflection.painHeel'),
   foot: (t) => t('onboarding.reflection.painFoot'),
   achilles: (t) => t('onboarding.reflection.painAchilles'),
+  calf: (t) => t('onboarding.reflection.painCalf'),
   shin: (t) => t('onboarding.reflection.painShin'),
-  knee: (t) => t('onboarding.reflection.painKnee'),
-  hip: (t) => t('onboarding.reflection.painHip'),
   none: null,
 };
 
@@ -67,9 +66,8 @@ const PATTERN: Record<PainKey, Phrase> = {
   heel: (t) => t('onboarding.pattern.heel'),
   foot: (t) => t('onboarding.pattern.foot'),
   achilles: (t) => t('onboarding.pattern.achilles'),
+  calf: (t) => t('onboarding.pattern.calf'),
   shin: (t) => t('onboarding.pattern.shin'),
-  knee: (t) => t('onboarding.pattern.knee'),
-  hip: (t) => t('onboarding.pattern.hip'),
   none: (t) => t('onboarding.pattern.none'),
 };
 
@@ -154,7 +152,8 @@ function reflection(
 export type ReflectionInput = {
   t: Translate;
   sport: SportKey | null;
-  /** Values from the pain step, e.g. `['heel', 'shin']`. */
+  /** The pain step's zones grouped into complaints, e.g. `['heel', 'shin']` —
+   * see `painAreasFor`. */
   pain: readonly string[];
   /** Values from the load step, e.g. `['30-50']`. */
   load: readonly string[];

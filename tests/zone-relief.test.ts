@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'bun:test';
 
 import { EXERCISES_BY_ID } from '../src/entities/program/model/exercises';
-import { PAIN_ZONES, type LegZone } from '../src/pages/home/model/leg-zones';
+import { PAIN_ZONES, type LegZone } from '../src/entities/leg-zone/model/leg-zones';
 import { CLIPS } from '../src/widgets/session-player/config/clip-manifest';
 import {
   RELIEF_DEFAULT,

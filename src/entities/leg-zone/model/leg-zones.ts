@@ -93,22 +93,24 @@ export const ZONE_LABEL_KEYS: Readonly<Record<LegZone, Key>> = {
  * question becomes "which did they mean" rather than "did they hit it" — which
  * is the honest reading of a finger on a drawing this size.
  */
-const ZONE_CENTRES: Readonly<Record<string, { x: number; y: number }>> = {
-  calf: { x: 112, y: 120 },
-  soleus: { x: 140, y: 260 },
+export const ZONE_CENTRES: Readonly<Partial<Record<LegZone, { x: number; y: number }>>> = {
+  calf: { x: 90, y: 140 },
+  // The strip of soleus in front of the calf's lower half — the part of it
+  // that shows. Its band under the calf is closer to the achilles centre.
+  soleus: { x: 138, y: 232 },
   tibia: { x: 190, y: 200 },
-  tib_ant: { x: 227, y: 175 },
-  achilles: { x: 140, y: 395 },
+  tib_ant: { x: 223, y: 180 },
+  achilles: { x: 116, y: 372 },
   // No separate centre for `ankle`: its mass sits almost exactly on top of
   // `inner_ankle`, and two centres that close make the nearest-centre test a
   // coin flip. A tap on the ankle resolves to the inner one, which is the
   // reading that matters for this condition.
-  inner_ankle: { x: 190, y: 415 },
+  inner_ankle: { x: 186, y: 400 },
   heel: { x: 138, y: 482 },
-  arch: { x: 235, y: 492 },
-  dorsum: { x: 298, y: 470 },
-  ball: { x: 325, y: 510 },
-  toes: { x: 368, y: 503 },
+  arch: { x: 238, y: 494 },
+  dorsum: { x: 296, y: 468 },
+  ball: { x: 324, y: 503 },
+  toes: { x: 356, y: 496 },
 };
 
 /**
@@ -121,8 +123,10 @@ const ZONE_CENTRES: Readonly<Record<string, { x: number; y: number }>> = {
  */
 const HIT_RADIUS = 120;
 
-/** The viewBox, which the tap has to be converted into. */
-const VIEW = { x: 44, y: -2, width: 356, height: 532 };
+/** The drawing's viewBox, which a tap has to be converted into — and which
+ * anything laid over the map (the outlook's callouts) positions itself by. */
+export const LEG_VIEW = { x: 0, y: -4, width: 368, height: 548 } as const;
+const VIEW = LEG_VIEW;
 
 export function zoneAt(px: number, py: number, size: { width: number; height: number }): LegZone | null {
   if (size.width === 0 || size.height === 0) return null;

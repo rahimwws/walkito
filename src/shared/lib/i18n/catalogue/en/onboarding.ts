@@ -48,7 +48,6 @@ export const ONBOARDING_EN = {
   'onboarding.cta.checking': 'Checking…',
   'onboarding.cta.applyCode': 'Apply code',
   'onboarding.cta.startPlan': 'Start my plan',
-  'onboarding.cta.seeOffer': 'See my offer',
 
   // ── Intro ────────────────────────────────────────────────────────────────
   'onboarding.intro.title': 'Run without second-guessing',
@@ -121,15 +120,11 @@ export const ONBOARDING_EN = {
   'onboarding.goal.injuryfree': 'Stay injury-free',
 
   // ── Pain ─────────────────────────────────────────────────────────────────
-  'onboarding.pain.title': 'What’s getting in the way, {name}?',
-  'onboarding.pain.blurb': 'Choose any that apply. Most people pick more than one.',
-  'onboarding.pain.foot': 'Foot',
-  'onboarding.pain.heel': 'Heel',
-  'onboarding.pain.achilles': 'Achilles',
-  'onboarding.pain.shin': 'Shin',
-  'onboarding.pain.knee': 'Knee',
-  'onboarding.pain.hip': 'Hip',
-  'onboarding.pain.none': 'Nothing right now',
+  'onboarding.pain.title': 'Where does it usually hurt, {name}?',
+  /** `{count}` is the most the map takes at once — three. */
+  'onboarding.pain.blurb': 'Tap the spots on the leg, up to {count}.',
+  'onboarding.pain.full': 'Up to {count} at a time. Tap one to swap it.',
+  'onboarding.pain.none': 'Nothing hurts right now',
 
   // ── Sport ────────────────────────────────────────────────────────────────
   'onboarding.sport.title': 'What puts the load on your legs, {name}?',
@@ -284,8 +279,7 @@ export const ONBOARDING_EN = {
   'onboarding.pattern.foot': 'The arch isn’t weak on its own. What holds it up is.',
   'onboarding.pattern.achilles': 'Load built faster than the tendon adapted. That’s fixable.',
   'onboarding.pattern.shin': 'Volume outran your legs. The plan walks that back, then builds.',
-  'onboarding.pattern.knee': 'The knee is where it hurts. It’s rarely where it started.',
-  'onboarding.pattern.hip': 'Something below the hip stopped carrying its share.',
+  'onboarding.pattern.calf': 'The calf pulls on everything below it. Loosen it and the rest follows.',
   'onboarding.pattern.none': 'You’re here before it hurts. That’s the cheap way to do this.',
   /** Day 12–16 is the subjective-relief window from the strength arm of
    * Rathleff's trial, not the programme's length. */
@@ -298,8 +292,7 @@ export const ONBOARDING_EN = {
   'onboarding.reflection.painFoot': 'Foot pain',
   'onboarding.reflection.painAchilles': 'Achilles pain',
   'onboarding.reflection.painShin': 'Shin pain',
-  'onboarding.reflection.painKnee': 'Knee pain',
-  'onboarding.reflection.painHip': 'Hip pain',
+  'onboarding.reflection.painCalf': 'Calf pain',
   'onboarding.reflection.volumeWeekly': '{band} a week',
   'onboarding.reflection.volumeMonthly': '{band} a month',
 
@@ -379,9 +372,22 @@ export const ONBOARDING_EN = {
   'onboarding.testimonial3.after': ' I’d already built.',
   'onboarding.testimonial3.name': 'Priya S.',
 
+  // ── Outlook ──────────────────────────────────────────────────────────────
+  // Three months, told as what changes on the leg they marked: today, then the
+  // end of each month, with a figure pinned to each zone.
+  'onboarding.outlook.title': 'Here’s where this goes, {name}',
+  'onboarding.outlook.blurb': 'What hurts today, and what the plan does about it.',
+  'onboarding.outlook.blurbNone': 'Your legs today, and where the plan takes them.',
+  'onboarding.outlook.today': 'Today',
+  'onboarding.outlook.month': 'Month {n}',
+  /** Callout captions, under a figure set large on its own line. */
+  'onboarding.outlook.lessPain': 'less pain',
+  'onboarding.outlook.stronger': 'stronger',
+  'onboarding.outlook.footnote': 'Typical progress when the plan is followed. Yours may differ.',
+
   // ── Referral ─────────────────────────────────────────────────────────────
   'onboarding.referral.title': 'Have a referral code?',
-  'onboarding.referral.blurb': 'Enter it and you both get {percent}% off your plan.',
+  'onboarding.referral.blurb': 'Enter it for {percent}% off your plan.',
   'onboarding.referral.applied': '{percent}% off applied.',
   /** Every one of these is an ordinary thing a person can do, so none is
    * phrased as an error the user caused. */

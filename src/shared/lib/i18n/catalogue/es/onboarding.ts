@@ -36,7 +36,6 @@ export const ONBOARDING_ES = {
   'onboarding.cta.checking': 'Comprobando…',
   'onboarding.cta.applyCode': 'Aplicar código',
   'onboarding.cta.startPlan': 'Empezar mi plan',
-  'onboarding.cta.seeOffer': 'Ver mi oferta',
 
   // ── Intro ────────────────────────────────────────────────────────────────
   'onboarding.intro.title': 'Corre sin dudar de cada paso',
@@ -106,15 +105,10 @@ export const ONBOARDING_ES = {
   'onboarding.goal.injuryfree': 'Evitar lesiones',
 
   // ── Pain ─────────────────────────────────────────────────────────────────
-  'onboarding.pain.title': '¿Qué te está frenando, {name}?',
-  'onboarding.pain.blurb': 'Marca todo lo que aplique. La mayoría elige más de una.',
-  'onboarding.pain.foot': 'Pie',
-  'onboarding.pain.heel': 'Talón',
-  'onboarding.pain.achilles': 'Aquiles',
-  'onboarding.pain.shin': 'Espinilla',
-  'onboarding.pain.knee': 'Rodilla',
-  'onboarding.pain.hip': 'Cadera',
-  'onboarding.pain.none': 'Nada ahora mismo',
+  'onboarding.pain.title': '¿Dónde te suele doler, {name}?',
+  'onboarding.pain.blurb': 'Toca los puntos de la pierna, hasta {count}.',
+  'onboarding.pain.full': 'Hasta {count} a la vez. Toca uno para cambiarlo.',
+  'onboarding.pain.none': 'Ahora no me duele nada',
 
   // ── Sport ────────────────────────────────────────────────────────────────
   'onboarding.sport.title': '¿Qué carga tus piernas, {name}?',
@@ -249,8 +243,7 @@ export const ONBOARDING_ES = {
     'La carga subió más rápido de lo que el tendón se adaptó. Eso tiene arreglo.',
   'onboarding.pattern.shin':
     'El volumen adelantó a tus piernas. El plan da un paso atrás y luego construye.',
-  'onboarding.pattern.knee': 'La rodilla es donde duele. Rara vez es donde empezó.',
-  'onboarding.pattern.hip': 'Algo por debajo de la cadera dejó de llevar su parte.',
+  'onboarding.pattern.calf': 'La pantorrilla tira de todo lo que hay debajo. Suéltala y lo demás la sigue.',
   'onboarding.pattern.none': 'Estás aquí antes de que duela. Esta es la forma barata de hacerlo.',
   'onboarding.building.promise': 'Primeros cambios: del día 12 al 16.',
 
@@ -259,8 +252,7 @@ export const ONBOARDING_ES = {
   'onboarding.reflection.painFoot': 'Dolor de pie',
   'onboarding.reflection.painAchilles': 'Dolor de Aquiles',
   'onboarding.reflection.painShin': 'Dolor de espinilla',
-  'onboarding.reflection.painKnee': 'Dolor de rodilla',
-  'onboarding.reflection.painHip': 'Dolor de cadera',
+  'onboarding.reflection.painCalf': 'Dolor de pantorrilla',
   'onboarding.reflection.volumeWeekly': '{band} por semana',
   'onboarding.reflection.volumeMonthly': '{band} al mes',
 
@@ -311,10 +303,19 @@ export const ONBOARDING_ES = {
   'onboarding.testimonial3.after': ' que ya tenía.',
   'onboarding.testimonial3.name': 'Priya S.',
 
+  // ── Outlook ──────────────────────────────────────────────────────────────
+  'onboarding.outlook.title': '{name}, esto es lo que viene',
+  'onboarding.outlook.blurb': 'Lo que te duele hoy y lo que el plan hace al respecto.',
+  'onboarding.outlook.blurbNone': 'Tus piernas hoy y adónde las lleva el plan.',
+  'onboarding.outlook.today': 'Hoy',
+  'onboarding.outlook.month': 'Mes {n}',
+  'onboarding.outlook.lessPain': 'menos dolor',
+  'onboarding.outlook.stronger': 'más fuerte',
+  'onboarding.outlook.footnote': 'Progreso típico siguiendo el plan. El tuyo puede variar.',
+
   // ── Referral ─────────────────────────────────────────────────────────────
   'onboarding.referral.title': '¿Tienes un código de invitación?',
-  'onboarding.referral.blurb':
-    'Introdúcelo y los dos se llevan un {percent}% de descuento en el plan.',
+  'onboarding.referral.blurb': 'Introdúcelo y consigue un {percent}% de descuento en tu plan.',
   'onboarding.referral.applied': '{percent}% de descuento aplicado.',
   'onboarding.referral.unknown': 'No conocemos ese código. Revísalo e inténtalo otra vez.',
   'onboarding.referral.own': 'Ese es el tuyo. Mándaselo a otra persona.',

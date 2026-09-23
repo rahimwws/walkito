@@ -79,10 +79,17 @@ function phasesFor(t: Translate, planLength: PlanLength): readonly PlanPhase[] {
   ];
 
   return bounds
+    .map(([from, to], i) => ({
+      weeks: weekRange(t, from, to),
+      label: PHASE_LABELS[i](t),
+      empty: from > to,
+    }))
     // A plan short enough that the middle stretch is empty drops it rather than
-    // printing a range that runs backwards.
-    .filter(([from, to]) => from <= to)
-    .map(([from, to], i) => ({ weeks: weekRange(t, from, to), label: PHASE_LABELS[i](t) }));
+    // printing a range that runs backwards. Filtered after the labels are
+    // attached, so a dropped middle cannot shift "back to full load" onto the
+    // row before it.
+    .filter((phase) => !phase.empty)
+    .map(({ empty: _empty, ...phase }) => phase);
 }
 
 /**

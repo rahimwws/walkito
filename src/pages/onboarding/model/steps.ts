@@ -2,8 +2,6 @@ import Activity03Icon from '@hugeicons/core-free-icons/Activity03Icon';
 import SmartWatch01Icon from '@hugeicons/core-free-icons/SmartWatch01Icon';
 import SmartWatch04Icon from '@hugeicons/core-free-icons/SmartWatch04Icon';
 import Award01Icon from '@hugeicons/core-free-icons/Award01Icon';
-import BalanceScaleIcon from '@hugeicons/core-free-icons/BalanceScaleIcon';
-import BodyPartLegIcon from '@hugeicons/core-free-icons/BodyPartLegIcon';
 import ChartIncreaseIcon from '@hugeicons/core-free-icons/ChartIncreaseIcon';
 import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
 import FlashIcon from '@hugeicons/core-free-icons/FlashIcon';
@@ -15,13 +13,12 @@ import Route02Icon from '@hugeicons/core-free-icons/Route02Icon';
 import ShieldEnergyIcon from '@hugeicons/core-free-icons/ShieldEnergyIcon';
 import SunriseIcon from '@hugeicons/core-free-icons/SunriseIcon';
 import Target01Icon from '@hugeicons/core-free-icons/Target01Icon';
-import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import WorkoutRunIcon from '@hugeicons/core-free-icons/WorkoutRunIcon';
-import Yoga01Icon from '@hugeicons/core-free-icons/Yoga01Icon';
 import type { IconSvgElement } from '@hugeicons/react-native';
 import type { ImageSourcePropType } from 'react-native';
 
 import { healthAvailable } from '@/entities/health';
+import { MAX_ZONES } from '@/entities/leg-zone';
 
 import type { AccentName } from '@/shared/config';
 import type { Translate } from '@/shared/lib/i18n';
@@ -163,6 +160,10 @@ export type OnboardingStep = StepBase &
     | { kind: 'plan' }
     /** Three reviews, handed over one per press, ahead of the offer. */
     | { kind: 'social' }
+    /** Where it hurts, on the leg. Up to `MAX_ZONES` zones, or "nothing". */
+    | { kind: 'pain-map' }
+    /** The marked zones again, beside what the plan changes and when. */
+    | { kind: 'outlook' }
     | { kind: 'referral' }
   );
 
@@ -344,24 +345,14 @@ export const STEPS: readonly OnboardingStep[] = [
     ],
   },
   {
-    kind: 'choice',
+    // Asked on the same leg the daily check-in uses, so the first time the
+    // user meets the map is the day they tell us what is wrong — and the
+    // outlook near the end can show those very zones recovering.
+    kind: 'pain-map',
     key: 'pain',
     act: 1,
     title: (t) => t('onboarding.pain.title', NAME_SLOT),
-    blurb: (t) => t('onboarding.pain.blurb'),
-    multi: true,
-    options: [
-      { value: 'foot', label: (t) => t('onboarding.pain.foot'), icon: FootprintsIcon, accent: 'violet' },
-      { value: 'heel', label: (t) => t('onboarding.pain.heel'), icon: BodyPartLegIcon, accent: 'orange' },
-      { value: 'achilles', label: (t) => t('onboarding.pain.achilles'), icon: Activity03Icon, accent: 'amber' },
-      { value: 'shin', label: (t) => t('onboarding.pain.shin'), icon: BodyPartLegIcon, accent: 'blue' },
-      { value: 'knee', label: (t) => t('onboarding.pain.knee'), icon: BalanceScaleIcon, accent: 'teal' },
-      { value: 'hip', label: (t) => t('onboarding.pain.hip'), icon: Yoga01Icon, accent: 'violet' },
-      // Load-bearing: the product is prevention and performance as much as
-      // rehab, and a flow that assumes an injury tells healthy runners they
-      // are in the wrong app.
-      { value: 'none', label: (t) => t('onboarding.pain.none'), icon: Tick02Icon, accent: 'teal' },
-    ],
+    blurb: (t) => t('onboarding.pain.blurb', { count: MAX_ZONES }),
   },
   {
     kind: 'choice',
@@ -487,6 +478,20 @@ export const STEPS: readonly OnboardingStep[] = [
     act: 3,
     title: UNUSED,
     blurb: UNUSED,
+  },
+  {
+    /**
+     * What the plan does for the places they marked, after the reviews.
+     *
+     * Straight after other people's results, so the question "would this work
+     * for me?" is answered with their own leg rather than left hanging. The
+     * blurb is swapped by the page for someone who said nothing hurts.
+     */
+    kind: 'outlook',
+    key: 'outlook',
+    act: 3,
+    title: (t) => t('onboarding.outlook.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.outlook.blurb'),
   },
   {
     /**

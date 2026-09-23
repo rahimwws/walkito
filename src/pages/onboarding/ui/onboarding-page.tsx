@@ -1,5 +1,4 @@
 import ArrowLeft02Icon from '@hugeicons/core-free-icons/ArrowLeft02Icon';
-import Cancel01Icon from '@hugeicons/core-free-icons/Cancel01Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
@@ -55,6 +54,8 @@ import {
   type ResolvedOption,
 } from '../model/steps';
 import { buildingLines } from '../model/reflection';
+import { outlookMonths } from '../model/outlook';
+import { painAreasFor, zonesIn } from '../model/pain-areas';
 import { BuildingStep } from './building-step';
 import { WatchSyncStep } from './watch-sync-step';
 import { ChoiceStep } from './choice-step';
@@ -70,6 +71,8 @@ import { IntroStep } from './intro-step';
 import { MeasureStep } from './measure-step';
 import { NameStep } from './name-step';
 import { NotifyStep } from './notify-step';
+import { OutlookStep } from './outlook-step';
+import { PainMapStep } from './pain-map-step';
 import { WelcomePage } from '@/pages/welcome';
 import { StepProgress } from './step-progress';
 
@@ -192,7 +195,11 @@ export function OnboardingPage() {
   const load = loadQuestionFor(sport);
   const isLast = index === STEP_COUNT - 1;
 
-  const pain = Array.isArray(answers.pain) ? answers.pain : [];
+  /** The pain step stores zones; the lines that talk back about it read them
+   * as complaints. See `pain-areas.ts`. */
+  const painZones = zonesIn(answers.pain);
+  const pain = painAreasFor(answers.pain);
+  const painless = painZones.length === 0;
   const loadAnswer = Array.isArray(answers.load) ? answers.load : [];
 
   const runner = Array.isArray(answers.runner) ? (answers.runner[0] ?? null) : null;
@@ -240,6 +247,8 @@ export function OnboardingPage() {
       case 'choice':
       case 'sex':
       case 'watch':
+      // A zone, or "nothing hurts" — either is an answer, silence is not.
+      case 'pain-map':
         return Array.isArray(answer) && answer.length > 0;
       // Seeded with a plausible size, so it is always advanceable.
       case 'size':
@@ -262,6 +271,7 @@ export function OnboardingPage() {
       case 'notify':
       case 'building':
       case 'welcome':
+      case 'outlook':
       // Opens on the recommendation, so there is always an answer.
       case 'plan':
         return true;
@@ -280,8 +290,18 @@ export function OnboardingPage() {
     ],
   }));
 
+  /**
+   * Screens built on liquid glass slide without fading.
+   *
+   * Glass under an ancestor whose alpha is animated renders empty, and does not
+   * come back when the alpha settles at 1 (expo/expo#41024) — the program
+   * overlay and the intro reveal both work around the same thing. The body is
+   * that ancestor for every step, so a glass step keeps it opaque and arrives
+   * on the slide alone.
+   */
+  const glassStep = step.kind === 'outlook';
   const questionStyle = useAnimatedStyle(() => ({
-    opacity: settled.value,
+    opacity: glassStep ? 1 : settled.value,
     transform: [{ translateX: (1 - settled.value) * SLIDE * direction.value }],
   }));
 
@@ -453,9 +473,10 @@ export function OnboardingPage() {
     // which put the paywall on top of a stack that was being torn down the
     // moment it closed — the source of both "GO_BACK was not handled" and the
     // frozen sheet with a dead button. Over Home there is nothing to unwind.
-    // The reviews now hand over to the invite question rather than to Home.
-    // It is asked last on purpose: a code is worth most to someone who has just
-    // decided they want the thing.
+    // The reviews hand over to the outlook — their own leg, and what the plan
+    // does to it — and from there to the invite question, asked last on
+    // purpose: a code is worth most to someone who has just decided they want
+    // the thing.
     if (step.kind === 'social') {
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
       step1(true);
@@ -495,18 +516,6 @@ const REDEEM_MESSAGE: Readonly<Record<Exclude<RedeemResult, 'ok'>, Phrase>> = {
 
 /** Long enough for the confirmation to be read before the screen leaves. */
 const CONFIRM_MS = 900;
-
-/** The header's close is Skip: it leaves the whole flow, not one step, and
-   * it counts as finishing. Onboarding is the app's front door — a close that
-   * dumped the user back into an app they had not set up would strand them. */
-  const onExit = useCallback(() => {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    Keyboard.dismiss();
-    // Straight out, with no note. Someone who skipped the whole flow has said
-    // what they want, and a personal letter asking them for a rating on the way
-    // past is the exact pattern Apple's guidelines single out.
-    completeOnboarding();
-  }, []);
 
   /**
    * Leaving the note, however the user left it.
@@ -556,12 +565,10 @@ const CONFIRM_MS = 900;
         return t('onboarding.cta.done');
       case 'plan':
         return t('onboarding.cta.startPlan');
-      // The label is the tell that there is more behind the button: it asks
-      // for the next review until there are none left, then asks for the offer.
+      // Same label throughout: the reviews now hand over to the outlook rather
+      // than to the offer, so "see my offer" would promise the wrong screen.
       case 'social':
-        return review < TESTIMONIAL_COUNT - 1
-          ? t('onboarding.cta.continue')
-          : t('onboarding.cta.seeOffer');
+      case 'outlook':
       case 'contract':
         return t('onboarding.cta.continue');
       // The one screen whose button changes meaning with the field: nothing
@@ -598,9 +605,14 @@ const CONFIRM_MS = 900;
       {/* Sits behind everything and never moves between steps — it is the
           surface the flow happens on, not part of any one screen. */}
       <Glow />
-      {/* Back, progress, language, close on one row — the running apps all put
+      {/* Back, progress and language on one row — the running apps all put
           the retreat controls in the header and leave the bottom bar to the
-          single forward action. A square Back button beside the CTA competes
+          single forward action.
+
+          No close. There used to be one, and it was Skip: it finished the flow
+          on the spot. But the plan, the reminders and the offer are all built
+          from these answers, so an app entered without them has nothing to
+          show — onboarding is the way in, not a detour from it. A square Back button beside the CTA competes
           with it for the thumb and makes going back look as important as going
           on.
 
@@ -627,19 +639,6 @@ const CONFIRM_MS = 900;
           </Pressable>
           <StepProgress index={index} count={STEP_COUNT} />
           <LanguageBadge />
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel={t('common.close')}
-            onPress={onExit}
-            hitSlop={12}
-            style={({ pressed }) => pressed && { opacity: 0.5 }}>
-            <HugeiconsIcon
-              icon={Cancel01Icon}
-              size={24}
-              color={meter.unit}
-              strokeWidth={2}
-            />
-          </Pressable>
         </View>
       )}
 
@@ -693,9 +692,11 @@ const CONFIRM_MS = 900;
                       .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
                       .reduceMotion(ReduceMotion.System)}
                     style={[styles.blurb, { color: meter.caption }]}>
-                    {say(
-                      step.kind === 'choice' && step.key === 'load' ? load.blurb : step.blurb,
-                    )}
+                    {step.kind === 'outlook' && painless
+                      ? t('onboarding.outlook.blurbNone')
+                      : say(
+                          step.kind === 'choice' && step.key === 'load' ? load.blurb : step.blurb,
+                        )}
                   </Animated.Text>
                 )}
               </>
@@ -790,6 +791,17 @@ const CONFIRM_MS = 900;
 
             {step.kind === 'social' && (
               <SocialProofStep name={name} index={review} onChange={setReview} />
+            )}
+
+            {step.kind === 'pain-map' && (
+              <PainMapStep
+                value={Array.isArray(answer) ? answer : []}
+                onChange={setAnswer}
+              />
+            )}
+
+            {step.kind === 'outlook' && (
+              <OutlookStep zones={painZones} months={outlookMonths(t)} />
             )}
 
             {step.kind === 'referral' && (

@@ -37,7 +37,6 @@ export const ONBOARDING_RU = {
   'onboarding.cta.checking': 'Проверяем…',
   'onboarding.cta.applyCode': 'Применить код',
   'onboarding.cta.startPlan': 'Начать план',
-  'onboarding.cta.seeOffer': 'Показать предложение',
 
   // ── Intro ────────────────────────────────────────────────────────────────
   'onboarding.intro.title': 'Бегайте без сомнений',
@@ -106,15 +105,10 @@ export const ONBOARDING_RU = {
   'onboarding.goal.injuryfree': 'Обойтись без травм',
 
   // ── Pain ─────────────────────────────────────────────────────────────────
-  'onboarding.pain.title': 'Что вам мешает, {name}?',
-  'onboarding.pain.blurb': 'Отметьте всё, что подходит. Обычно выбирают не одно.',
-  'onboarding.pain.foot': 'Стопа',
-  'onboarding.pain.heel': 'Пятка',
-  'onboarding.pain.achilles': 'Ахилл',
-  'onboarding.pain.shin': 'Голень',
-  'onboarding.pain.knee': 'Колено',
-  'onboarding.pain.hip': 'Бедро',
-  'onboarding.pain.none': 'Сейчас ничего',
+  'onboarding.pain.title': 'Где обычно болит, {name}?',
+  'onboarding.pain.blurb': 'Отметьте места на ноге, до {count}.',
+  'onboarding.pain.full': 'Не больше {count} сразу. Нажмите на отмеченное, чтобы заменить.',
+  'onboarding.pain.none': 'Сейчас ничего не болит',
 
   // ── Sport ────────────────────────────────────────────────────────────────
   'onboarding.sport.title': 'Что нагружает ваши ноги, {name}?',
@@ -248,8 +242,7 @@ export const ONBOARDING_RU = {
   'onboarding.pattern.achilles':
     'Нагрузка росла быстрее, чем успевало адаптироваться сухожилие. Это поправимо.',
   'onboarding.pattern.shin': 'Объём обогнал ваши ноги. План отматывает назад, а потом наращивает.',
-  'onboarding.pattern.knee': 'Колено — там, где болит. Редко там, где началось.',
-  'onboarding.pattern.hip': 'Что-то ниже бедра перестало нести свою часть.',
+  'onboarding.pattern.calf': 'Икра тянет за собой всё, что ниже. Отпустите её — и остальное пойдёт следом.',
   'onboarding.pattern.none': 'Вы здесь до того, как заболело. Это самый дешёвый путь.',
   'onboarding.building.promise': 'Первые изменения: с 12-го по 16-й день.',
 
@@ -258,8 +251,7 @@ export const ONBOARDING_RU = {
   'onboarding.reflection.painFoot': 'Боль в стопе',
   'onboarding.reflection.painAchilles': 'Боль в ахилле',
   'onboarding.reflection.painShin': 'Боль в голени',
-  'onboarding.reflection.painKnee': 'Боль в колене',
-  'onboarding.reflection.painHip': 'Боль в бедре',
+  'onboarding.reflection.painCalf': 'Боль в икре',
   'onboarding.reflection.volumeWeekly': '{band} в неделю',
   'onboarding.reflection.volumeMonthly': '{band} в месяц',
 
@@ -311,9 +303,19 @@ export const ONBOARDING_RU = {
   'onboarding.testimonial3.after': ' которую уже набрал.',
   'onboarding.testimonial3.name': 'Прия С.',
 
+  // ── Outlook ──────────────────────────────────────────────────────────────
+  'onboarding.outlook.title': '{name}, вот что вас ждёт',
+  'onboarding.outlook.blurb': 'Что болит сегодня и что с этим сделает план.',
+  'onboarding.outlook.blurbNone': 'Ваши ноги сегодня и куда их приведёт план.',
+  'onboarding.outlook.today': 'Сегодня',
+  'onboarding.outlook.month': 'Месяц {n}',
+  'onboarding.outlook.lessPain': 'меньше боли',
+  'onboarding.outlook.stronger': 'сильнее',
+  'onboarding.outlook.footnote': 'Типичный прогресс, если следовать плану. У вас может быть иначе.',
+
   // ── Referral ─────────────────────────────────────────────────────────────
   'onboarding.referral.title': 'Есть код приглашения?',
-  'onboarding.referral.blurb': 'Введите его — и вы оба получите скидку {percent}% на план.',
+  'onboarding.referral.blurb': 'Введите его — и получите скидку {percent}% на план.',
   'onboarding.referral.applied': 'Скидка {percent}% применена.',
   'onboarding.referral.unknown': 'Мы не знаем такой код. Проверьте и попробуйте ещё раз.',
   'onboarding.referral.own': 'Это ваш собственный код. Отправьте его кому-нибудь другому.',
