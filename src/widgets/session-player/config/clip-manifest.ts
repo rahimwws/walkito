@@ -38,11 +38,14 @@ export const CLIPS: Readonly<Record<string, ClipEntry>> = {
   single_leg_hold: { file: '11_single_leg_hold.mp4', bytes: 1122401, hash: '508357915ea4f126' },
   short_foot_double: { file: '12_short_foot_standing.mp4', bytes: 1495364, hash: '75ec9f70be35e749' },
   band_inversion: { file: '14_band_inversion.mp4', bytes: 1199592, hash: 'b9c2c7255df74174' },
+  // Not a catalogue exercise: the single-leg calf raise the retest measures,
+  // facing the viewer so the lifted leg and the heel rise both read.
+  retest_calf_raise: { file: 'retest.mp4', bytes: 2019794, hash: 'cdf781b4ad0a2133' },
 };
 
 /** What a full prefetch will cost, in bytes. Printed before it starts, because
  * "downloading…" with no figure is the kind of progress nobody trusts. */
-export const CLIPS_TOTAL_BYTES = 14896365;
+export const CLIPS_TOTAL_BYTES = 16916159;
 
 /**
  * Six of the eighteen exercises have no clip: `heel_raise_plain`,
