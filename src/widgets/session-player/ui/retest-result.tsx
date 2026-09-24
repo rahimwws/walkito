@@ -20,7 +20,7 @@ const UNIT_KEY: Record<ZoneKey, Key> = {
   calf: 'widgets.retestUnitReps',
   arch: 'widgets.retestUnitSeconds',
   balance: 'widgets.retestUnitSeconds',
-  symmetry: 'widgets.retestUnitGap',
+  symmetry: 'widgets.retestUnitPercent',
 };
 
 function figure(text: string): number {
@@ -88,6 +88,11 @@ export function RetestResult({ retest, goalLine }: RetestResultProps) {
                 <Text style={[styles.value, { color: meter.ink }]}>{Math.round(figure(row.to))}</Text>
                 <Text style={[styles.unit, { color: meter.unit }]}>{t(UNIT_KEY[row.zone])}</Text>
               </View>
+              {row.zone === 'symmetry' && (
+                <Text style={[styles.note, { color: meter.unit }]} numberOfLines={1}>
+                  {t('widgets.retestGapNote')}
+                </Text>
+              )}
               <TickBar fill={row.level / MAX_LEVEL} tickCount={16} height={14} tickWidth={3} />
               <View style={styles.metaRow}>
                 <View style={[styles.badge, { backgroundColor: meter.track }]}>
@@ -192,6 +197,11 @@ const styles = StyleSheet.create({
     fontFamily: fonts.bold,
     letterSpacing: 0.5,
     textTransform: 'uppercase',
+  },
+  note: {
+    fontSize: 12,
+    fontFamily: fonts.medium,
+    marginTop: -8,
   },
   caption: {
     fontSize: 14,

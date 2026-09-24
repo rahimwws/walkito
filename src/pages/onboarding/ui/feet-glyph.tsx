@@ -16,13 +16,14 @@ export type FeetGlyphProps = {
 /** A right foot seen from above, big toe on the inside. The left foot is the
  * same drawing mirrored, so the pair can never disagree about its shape. */
 const SOLE =
-  'M14 42C9 42 7 38.5 7.5 34C8 30 9.5 28 9 24C8.5 20 6 18 6 13.5C6 9.5 9 7.5 13 7.5C18 7.5 21 10.5 21 15C21 19.5 18.5 22 18.5 26C18.5 29.5 20.5 32 20.5 35.5C20.5 39.5 18 42 14 42Z';
+  'M14 42C18 42 20 39.5 20 35.5C20 30 19.5 26 20.5 20C21.3 15 21.5 11 19 8.8C16.5 6.8 11 6.6 8.3 8.4C5.8 10.2 5.6 14.5 7.6 18.5C9.4 22 10.8 25 10 30C9.2 34 8 36 8.2 38.2C8.6 40.8 11 42 14 42Z';
+/** Big toe on the inside, the rest stepping down and out along the ball. */
 const TOES: readonly [number, number, number][] = [
-  [8.6, 4.2, 2.6],
-  [12.9, 2.8, 1.9],
-  [16.4, 3.2, 1.65],
-  [19.3, 4.8, 1.45],
-  [21.5, 7.2, 1.25],
+  [8.9, 4.3, 2.7],
+  [13.1, 3.0, 1.9],
+  [16.4, 3.5, 1.65],
+  [19.0, 4.9, 1.45],
+  [20.9, 7.0, 1.2],
 ];
 
 function Foot({ fill, mirrored }: { fill: string; mirrored: boolean }) {

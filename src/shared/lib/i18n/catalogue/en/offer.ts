@@ -140,7 +140,8 @@ export const OFFER_EN = {
   'widgets.retestDone': 'Done',
   'widgets.retestUnitReps': 'reps',
   'widgets.retestUnitSeconds': 'sec',
-  'widgets.retestUnitGap': '% gap between legs',
+  'widgets.retestUnitPercent': '%',
+  'widgets.retestGapNote': 'between legs',
   'widgets.retestYourGoal': 'Your goal',
   'widgets.retestFirstCaption': 'This is your starting point. In two weeks you’ll see what changed.',
   /** The goal they picked in onboarding, said back on the result screen. */

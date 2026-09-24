@@ -196,7 +196,7 @@ export function CelebrationSheet({
           />
         )}
 
-        <View style={[styles.card, { backgroundColor: colors.card }]}>
+        <View style={[styles.card, { backgroundColor: colors.card }, !emblem && { paddingTop: 24 }]}>
           <TypedText text={title} style={[styles.title, { color: colors.foreground }]} />
 
           {headline != null && (

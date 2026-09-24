@@ -141,9 +141,11 @@ export function RetestEntrySheet({ visible, dayNumber, onDone }: RetestEntryShee
         <Text style={[styles.title, { color: colors.foreground }]}>
           {result == null ? t('widgets.retestEntryTitle') : t('widgets.retestResultTitle')}
         </Text>
-        <Text style={[styles.blurb, { color: meter.caption }]}>
-          {result == null ? t('widgets.retestEntryBlurb') : t('widgets.retestResultBlurb')}
-        </Text>
+        {/* The result's own caption sits under the tiles; saying it here too
+            printed the same sentence twice on one screen. */}
+        {result == null && (
+          <Text style={[styles.blurb, { color: meter.caption }]}>{t('widgets.retestEntryBlurb')}</Text>
+        )}
 
         {result == null
           ? rows.map((row) => (
