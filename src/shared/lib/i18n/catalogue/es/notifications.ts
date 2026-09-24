@@ -40,6 +40,10 @@ export const NOTIFICATIONS_ES = {
   },
   'notifications.sessionHeelRaises':
     'Hoy elevaciones de talón. El ejercicio que de verdad cambia las cosas.',
+  'notifications.sessionBackTo': {
+    one: 'Hoy {count} minuto. Un paso más para volver {backTo}.',
+    other: 'Hoy {count} minutos. Un paso más para volver {backTo}.',
+  },
   'notifications.sessionCalves': {
     one: '{count} minuto. Hoy la cita es con tus pantorrillas.',
     other: '{count} minutos. Hoy la cita es con tus pantorrillas.',

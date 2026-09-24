@@ -17,6 +17,7 @@ import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import { OPTION_ICONS, SPORT_ICONS } from '../config/option-icons';
+import { FeetGlyph, type FeetSide } from './feet-glyph';
 import type { ResolvedOption } from '../model/steps';
 
 /** Small on purpose — the reference rows are barely taller than their label,
@@ -55,7 +56,7 @@ export type ChoiceStepProps = {
   max?: number;
   /** Which artwork map to read. The sport question uses its own so the glyph
    * that follows the answer through the flow is the sport's, not an answer's. */
-  art?: 'option' | 'sport';
+  art?: 'option' | 'sport' | 'side';
   onChange: (next: string[]) => void;
 };
 
@@ -257,7 +258,7 @@ function ChoiceRow({
 }: {
   option: ResolvedOption;
   selected: boolean;
-  art: 'option' | 'sport';
+  art: 'option' | 'sport' | 'side';
   onPress: () => void;
 }) {
   const scheme = useColorScheme();
@@ -266,6 +267,7 @@ function ChoiceRow({
 
   const map = artKind === 'sport' ? SPORT_ICONS : OPTION_ICONS;
   const art = map[option.value] ?? map.default;
+  const side = artKind === 'side' ? (option.value as FeetSide) : null;
   const Glyph = art.icon;
 
   const pressed = useSharedValue(0);
@@ -312,7 +314,11 @@ function ChoiceRow({
         style={[styles.row, { backgroundColor: colors.card }]}>
         {/* Weight "fill" and the option's own hue: small, solid, colourful —
             an outline at this size disappears against the row. */}
-        <Glyph size={ICON} color={art.color} weight="fill" />
+        {side != null ? (
+          <FeetGlyph side={side} size={ICON + 4} active={PRIMARY} idle={IDLE_CHECK[scheme]} />
+        ) : (
+          <Glyph size={ICON} color={art.color} weight="fill" />
+        )}
 
         <Text style={[styles.label, { color: colors.foreground }]} numberOfLines={1}>
           {option.label}

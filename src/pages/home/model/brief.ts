@@ -11,7 +11,7 @@ import {
   type SessionKind,
 } from '@/entities/program';
 import { NO_SIGNALS } from '@/entities/health/model/metrics';
-import { translatorFor, type Language, type Translate } from '@/shared/lib/i18n';
+import { translatorFor, type Key, type Language, type Translate } from '@/shared/lib/i18n';
 import { BRIEF_EN } from '@/shared/lib/i18n/catalogue/en/home';
 import { BRIEF_ES } from '@/shared/lib/i18n/catalogue/es/home';
 import { BRIEF_RU } from '@/shared/lib/i18n/catalogue/ru/home';
@@ -26,6 +26,7 @@ import { buildBrief, pickVariant } from '@/shared/ui/daily-brief/template';
 import type { BriefToken, BriefVariants } from '@/shared/ui/daily-brief';
 
 import {
+  SPORTS,
   readBrief,
   type BriefInput,
   type BriefReading,
@@ -61,6 +62,25 @@ export {
  * "high", never "limping", never "compensating". That constraint travels with
  * the copy: see the note at the top of each `catalogue/*\/home.ts`.
  */
+
+type Sport = (typeof SPORTS)[number];
+
+/**
+ * "…back to running", as a whole phrase per sport and language.
+ *
+ * The preposition is inside the phrase on purpose: Russian needs the dative
+ * after «к» («к бегу», «к теннису»), Spanish needs "a" or "al" and sometimes a
+ * verb («a correr»), and neither can be assembled from a bare sport name.
+ */
+const BACK_TO: Readonly<Record<Sport, Key>> = {
+  running: 'home.backTo.running',
+  tennis: 'home.backTo.tennis',
+  gym: 'home.backTo.gym',
+  football: 'home.backTo.football',
+  basketball: 'home.backTo.basketball',
+  cycling: 'home.backTo.cycling',
+  hiking: 'home.backTo.hiking',
+};
 
 /** Stands in for a figure the phone never supplied. An em dash, in every
  * language — it is punctuation rather than a word. */
@@ -229,6 +249,7 @@ export function briefParams(
             count: Math.round(health.stepsYesterday),
             steps: grouped(health.stepsYesterday, language),
           }),
+    backTo: t(BACK_TO[input.sport as Sport] ?? 'home.backTo.running'),
     stepsToday:
       input.stepsToday == null
         ? DASH
@@ -248,6 +269,19 @@ export function briefParams(
 }
 
 /**
+ * Which greeting an hour gets.
+ *
+ * Morning until noon, afternoon until six, evening after that — and evening
+ * through the small hours too, because "good night" is a goodbye in all three
+ * languages and nobody opening an app at 1am wants to be told to go to sleep.
+ */
+export function greetingKey(hour: number): Key {
+  if (hour >= 5 && hour < 12) return 'home.greeting.morning';
+  if (hour >= 12 && hour < 18) return 'home.greeting.afternoon';
+  return 'home.greeting.evening';
+}
+
+/**
  * Today's sentence, in `language`.
  *
  * The language is passed rather than read, so a caller that re-renders on a
@@ -258,16 +292,18 @@ export function briefTokens(input: BriefInput, language: Language): readonly Bri
   const t = translatorFor(language);
   const reading = readBrief(input);
 
-  // The name opens the line when there is one. With no name the sentence simply
-  // starts, and `buildBrief` restores the capital the templates are authored
-  // without — which is why no template capitalises its own first word.
-  const addressed = input.name.length > 0;
+  // A greeting opens the line — good morning, good afternoon, good evening —
+  // rather than the name. A name on every line read as a form letter; the time
+  // of day is the one thing that changes it from one open to the next, and it
+  // is how people actually start talking to each other.
+  const greeting = input.hour == null ? null : t(greetingKey(input.hour));
+  const addressed = greeting != null;
 
   // Built as a literal rather than through the `value` helper, for the same
   // reason `buildBrief` does: the helpers live in the UI module and importing
   // them would pull React Native into this file's module graph.
   const lead: readonly BriefToken[] = addressed
-    ? [{ kind: 'value', text: input.name, tail: ',' }]
+    ? [{ kind: 'value', text: greeting, tail: ',' }]
     : [];
 
   const segments = pickVariant(BRIEFS[language][reading.state], input.cursor);

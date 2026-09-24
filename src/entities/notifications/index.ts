@@ -62,3 +62,4 @@ export {
   setWakeMinutes,
   wakeMinutes,
 } from './model/wake';
+export { setAudience, type Audience } from './model/audience';

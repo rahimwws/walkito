@@ -29,6 +29,7 @@ import {
   currentDay,
   painOn,
   logPain,
+  settleOffset,
   type ProgramDay,
   exerciseById,
 } from '@/entities/program';
@@ -177,6 +178,8 @@ export function PainCheck({ onLogged }: PainCheckProps) {
    */
   const record = (score: number, zones: readonly LegZone[]) => {
     logPain(currentDay(), score, zones);
+    // The morning's answer is what moves the plan a step back or lets it return.
+    settleOffset(currentDay());
     acknowledge(score);
   };
 

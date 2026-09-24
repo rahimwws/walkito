@@ -92,6 +92,33 @@ export const OFFER_ES = {
   'widgets.retestArchHold': 'Mantener el arco',
   'widgets.retestBalance': 'Equilibrio a una pierna',
 
+  'widgets.retestEntryTitle': 'Tus resultados',
+  'widgets.retestEntryBlurb': 'Cuenta lo que acabas de hacer. Con números honestos, la próxima prueba tiene sentido.',
+  'widgets.retestLeft': 'Pierna izquierda',
+  'widgets.retestRight': 'Pierna derecha',
+  'widgets.retestLeftSore': 'Pierna izquierda, la que duele',
+  'widgets.retestRightSore': 'Pierna derecha, la que duele',
+  'widgets.retestSeconds': 'Segundos',
+  'widgets.retestLess': 'Menos',
+  'widgets.retestMore': 'Más',
+  'widgets.retestSave': 'Guardar resultados',
+  'widgets.retestResultTitle': 'Dónde estás ahora',
+  'widgets.retestResultBlurb': 'Comparado con tu prueba anterior, nunca con nadie más.',
+  'widgets.retestChange': '{from} → {to}',
+  'widgets.retestLevel': 'Nv {level}',
+  'widgets.retestDone': 'Listo',
+  'widgets.retestUnitReps': 'rep.',
+  'widgets.retestUnitSeconds': 's',
+  'widgets.retestUnitPercent': '%',
+  'widgets.retestGapNote': 'de diferencia entre piernas',
+  'widgets.retestYourGoal': 'Tu meta',
+  'widgets.retestFirstCaption': 'Este es tu punto de partida. En dos semanas verás qué cambió.',
+  'widgets.retestGoal.painfree': 'Viniste por mañanas sin dolor de talón. Estos números son el pie acercándose a eso.',
+  'widgets.retestGoal.race': 'Te preparas para una carrera. Unas pantorrillas más fuertes y un pie más estable son lo que te lleva a la salida.',
+  'widgets.retestGoal.consistent': 'Dijiste que la meta era la constancia. Esto es lo que suma.',
+  'widgets.retestGoal.stronger': 'Querías ser más fuerte. Aquí es donde se nota primero.',
+  'widgets.retestGoal.injuryfree': 'Querías evitar lesiones. Un pie que se mide más fuerte es más difícil de lesionar.',
+
   // ── Session player: the counter line ─────────────────────────────────────
   // Una palabra por fase: se lee a dos metros y cambia cada tres segundos.
   'widgets.phaseUp': 'Sube',
@@ -125,6 +152,14 @@ export const OFFER_ES = {
 
   // ── Session player: the end of a session ─────────────────────────────────
   'widgets.sessionDoneTitle': 'Buen trabajo.',
+  'widgets.sessionStoppedTitle': 'Paramos aquí.',
+  'widgets.sessionStoppedBlurb': 'La sesión de hoy cuenta igual. Mañana empezamos un paso más suave.',
+
+  'widgets.painButton': 'Duele',
+  'widgets.painTitle': '¿Cuánto, ahora mismo?',
+  'widgets.painBlurb': 'Por debajo de 5 puedes seguir. Desde 5, paramos y mañana será más suave.',
+  'widgets.painCarryOn': 'Sigue con cuidado. Para si aumenta.',
+  'widgets.painClose': 'Cerrar',
   'widgets.sessionDoneStreak': {
     one: '{count} día seguido',
     other: '{count} días seguidos',

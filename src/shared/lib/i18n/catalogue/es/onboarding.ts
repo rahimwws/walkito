@@ -110,6 +110,12 @@ export const ONBOARDING_ES = {
   'onboarding.pain.full': 'Hasta {count} a la vez. Toca uno para cambiarlo.',
   'onboarding.pain.none': 'Ahora no me duele nada',
 
+  'onboarding.side.title': '¿De qué lado, {name}?',
+  'onboarding.side.blurb': 'Las pruebas comparan una pierna con la otra, así que necesitamos saber con cuál trabajamos.',
+  'onboarding.side.left': 'Izquierdo',
+  'onboarding.side.right': 'Derecho',
+  'onboarding.side.both': 'Ambos',
+
   // ── Sport ────────────────────────────────────────────────────────────────
   'onboarding.sport.title': '¿Qué carga tus piernas, {name}?',
   'onboarding.sport.blurb': 'Esto decide cómo se plantean las siguientes preguntas.',
@@ -322,7 +328,6 @@ export const ONBOARDING_ES = {
   'onboarding.referral.already': 'Ya has usado un código.',
   'onboarding.referral.unavailable': 'Las invitaciones no están disponibles en esta versión.',
   'onboarding.referral.failed': 'No se pudo contactar con el servidor. Inténtalo en un momento.',
-
 
   // ── The note at the end of onboarding ────────────────────────────────────
   // Черновик — см. комментарий в en/onboarding.ts.

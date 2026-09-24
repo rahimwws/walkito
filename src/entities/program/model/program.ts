@@ -26,7 +26,7 @@ import { useSyncExternalStore } from 'react';
 
 import { kv } from '@/shared/lib/storage';
 
-import { blocksFor, lastDayOf, BLOCK_LENGTH } from './blocks';
+import { BASELINE_DAY, blocksFor, lastDayOf, BLOCK_LENGTH } from './blocks';
 import { planFor } from './catalogue';
 import { kindFor, templateFor, RETEST_MINUTES, RETEST_TESTS, type DayKind } from './day-templates';
 import { exerciseById, type ExerciseCategory } from './exercises';
@@ -44,6 +44,7 @@ import {
   logFor,
   painOn,
   programState,
+  subscribeState,
   toDateKey,
 } from './state';
 
@@ -76,29 +77,48 @@ export type ProgramDay = {
   block: number;
 };
 
+/*
+ * The plan's shape, as live bindings.
+ *
+ * These were `const`s computed once when the module loaded, which froze them at
+ * whatever the stored state said at launch. Onboarding chooses the plan length
+ * *after* launch, so the six-week plan the user was shown stayed an 84-day one
+ * until the next cold start — and `TODAY_INDEX` stayed on yesterday for anyone
+ * who left the app open past midnight. `export let` keeps every importer's
+ * `import { PROGRAM }` working while letting `rebuildProgram` replace the
+ * value underneath it.
+ */
+
 /** The blocks of the plan the user is actually on. */
-export const PLAN_BLOCKS = blocksFor(programState().planLength);
+export let PLAN_BLOCKS = blocksFor(programState().planLength);
 
 /** Block names, in order. Six on the twelve-week plan, three on the six-week. */
-export const BLOCKS = PLAN_BLOCKS.map((block) => block.name);
+export let BLOCKS = PLAN_BLOCKS.map((block) => block.name);
 
-export const PROGRAM_LENGTH = lastDayOf(programState().planLength);
+export let PROGRAM_LENGTH = lastDayOf(programState().planLength);
 
 /**
  * Where the user stands, 0-based.
  *
  * Derived from the start date rather than counted, so it survives time-zone
- * changes and reinstalls — see `state.ts`. Read once at module scope, like the
- * retest record below, so the first paint already has the right day instead of
- * rendering day one and correcting itself.
+ * changes and reinstalls — see `state.ts`. Recomputed by `rebuildProgram`, which
+ * runs whenever the state changes and whenever the app comes back to the
+ * foreground.
  */
-export const TODAY_INDEX = Math.max(0, Math.min(currentDay() - 1, PROGRAM_LENGTH - 1));
+export let TODAY_INDEX = todayIndex();
+
+function todayIndex(): number {
+  return Math.max(0, Math.min(currentDay() - 1, PROGRAM_LENGTH - 1));
+}
 
 function buildProgram(): ProgramDay[] {
   return Array.from({ length: PROGRAM_LENGTH }, (_, index): ProgramDay => {
     const day = index + 1;
     const block = PLAN_BLOCKS.find((b) => day >= b.startDay && day <= b.endDay);
-    const checkpoint = block?.retestDay === day;
+    // Day 1 is the baseline: three tests before any training, so the first
+    // block's retest has something real to be measured against rather than
+    // quietly becoming the starting point itself.
+    const checkpoint = block?.retestDay === day || day === BASELINE_DAY;
     const template = templateFor(day);
     return {
       index,
@@ -114,7 +134,24 @@ function buildProgram(): ProgramDay[] {
   });
 }
 
-export const PROGRAM = buildProgram();
+export let PROGRAM = buildProgram();
+
+/**
+ * Recomputes everything above from the current state and clock.
+ *
+ * Cheap — an array of at most 84 small records — and idempotent, so it is run
+ * on every state change rather than on the changes that happen to matter.
+ */
+export function rebuildProgram(): void {
+  const { planLength } = programState();
+  PLAN_BLOCKS = blocksFor(planLength);
+  BLOCKS = PLAN_BLOCKS.map((block) => block.name);
+  PROGRAM_LENGTH = lastDayOf(planLength);
+  TODAY_INDEX = todayIndex();
+  PROGRAM = buildProgram();
+}
+
+subscribeState(rebuildProgram);
 
 /**
  * Which catalogue line names each block.

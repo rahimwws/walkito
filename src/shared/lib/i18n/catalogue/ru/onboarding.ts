@@ -110,6 +110,12 @@ export const ONBOARDING_RU = {
   'onboarding.pain.full': 'Не больше {count} сразу. Нажмите на отмеченное, чтобы заменить.',
   'onboarding.pain.none': 'Сейчас ничего не болит',
 
+  'onboarding.side.title': 'С какой стороны, {name}?',
+  'onboarding.side.blurb': 'Тесты сравнивают одну ногу с другой, поэтому важно знать, с какой мы работаем.',
+  'onboarding.side.left': 'Слева',
+  'onboarding.side.right': 'Справа',
+  'onboarding.side.both': 'С обеих',
+
   // ── Sport ────────────────────────────────────────────────────────────────
   'onboarding.sport.title': 'Что нагружает ваши ноги, {name}?',
   'onboarding.sport.blurb': 'От этого зависит, как будут заданы следующие вопросы.',
@@ -322,7 +328,6 @@ export const ONBOARDING_RU = {
   'onboarding.referral.already': 'Вы уже использовали код.',
   'onboarding.referral.unavailable': 'В этой сборке приглашения недоступны.',
   'onboarding.referral.failed': 'Не удалось связаться с сервером. Попробуйте через минуту.',
-
 
   // ── The note at the end of onboarding ────────────────────────────────────
   // Черновик — см. комментарий в en/onboarding.ts.

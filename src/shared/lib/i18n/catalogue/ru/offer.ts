@@ -93,6 +93,33 @@ export const OFFER_RU = {
   'widgets.retestArchHold': 'Удержание свода стопы',
   'widgets.retestBalance': 'Баланс на одной ноге',
 
+  'widgets.retestEntryTitle': 'Ваши результаты',
+  'widgets.retestEntryBlurb': 'Запишите, сколько получилось. Чем честнее цифры, тем полезнее сравнение.',
+  'widgets.retestLeft': 'Левая нога',
+  'widgets.retestRight': 'Правая нога',
+  'widgets.retestLeftSore': 'Левая нога — та, что болит',
+  'widgets.retestRightSore': 'Правая нога — та, что болит',
+  'widgets.retestSeconds': 'Секунды',
+  'widgets.retestLess': 'Меньше',
+  'widgets.retestMore': 'Больше',
+  'widgets.retestSave': 'Сохранить',
+  'widgets.retestResultTitle': 'Ваш результат',
+  'widgets.retestResultBlurb': 'Сравниваем только с вами прошлыми.',
+  'widgets.retestChange': '{from} → {to}',
+  'widgets.retestLevel': 'Ур. {level}',
+  'widgets.retestDone': 'Готово',
+  'widgets.retestUnitReps': 'раз',
+  'widgets.retestUnitSeconds': 'сек',
+  'widgets.retestUnitPercent': '%',
+  'widgets.retestGapNote': 'разница между ногами',
+  'widgets.retestYourGoal': 'Ваша цель',
+  'widgets.retestFirstCaption': 'Это ваша точка отсчёта. Через две недели увидите, что изменилось.',
+  'widgets.retestGoal.painfree': 'Вы хотели утро без боли в пятке. Эти цифры — шаг к нему.',
+  'widgets.retestGoal.race': 'Вы готовитесь к забегу. Сильные икры и крепкая стопа — это то, что вам нужно.',
+  'widgets.retestGoal.consistent': 'Вы хотели заниматься регулярно. Вот что это даёт.',
+  'widgets.retestGoal.stronger': 'Вы хотели стать сильнее. Здесь это видно первым делом.',
+  'widgets.retestGoal.injuryfree': 'Вы хотели без травм. Крепкую стопу травмировать труднее.',
+
   // ── Session player: the counter line ─────────────────────────────────────
   // Одно слово на каждую фазу: это читают с двух метров, стоя на одной ноге.
   'widgets.phaseUp': 'Вверх',
@@ -127,6 +154,14 @@ export const OFFER_RU = {
 
   // ── Session player: the end of a session ─────────────────────────────────
   'widgets.sessionDoneTitle': 'Хорошая работа.',
+  'widgets.sessionStoppedTitle': 'Остановимся здесь.',
+  'widgets.sessionStoppedBlurb': 'Сегодняшняя сессия всё равно засчитана. Завтра начнём на ступень легче.',
+
+  'widgets.painButton': 'Болит',
+  'widgets.painTitle': 'Насколько сильно сейчас?',
+  'widgets.painBlurb': 'До 5 можно продолжать. От 5 и выше остановимся, а завтра будет легче.',
+  'widgets.painCarryOn': 'Продолжайте аккуратно. Остановитесь, если станет сильнее.',
+  'widgets.painClose': 'Закрыть',
   'widgets.sessionDoneStreak': {
     one: '{count} день подряд',
     few: '{count} дня подряд',

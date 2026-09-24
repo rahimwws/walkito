@@ -24,7 +24,7 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { QUESTION_LINE_MS, TypedText } from '@/shared/ui/typed-text';
-import { type HealthSummary } from '@/entities/health';
+import { setBilateral, type HealthSummary } from '@/entities/health';
 import { armOffer } from '@/entities/offer';
 import {
   REFERRAL_CODE_LENGTH,
@@ -33,7 +33,8 @@ import {
   redeem,
   type RedeemResult,
 } from '@/entities/referral';
-import { firstName, setProfileEmail, setProfileName } from '@/entities/profile';
+import { firstName, saveIntake, setProfileEmail, setProfileName } from '@/entities/profile';
+import { startProgram } from '@/entities/program';
 import { completeOnboarding, signInWithApple } from '@/entities/session';
 import { NoteSheet } from '@/shared/ui/note-sheet';
 import { Glow } from '@/shared/ui/glow';
@@ -41,6 +42,7 @@ import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button
 
 import { TESTIMONIAL_COUNT } from '../config/testimonials';
 import { chose } from '../model/answers';
+import { intakeFrom, startingPlan } from '../model/intake';
 import { loadQuestionFor, withName, type SportKey } from '../model/personalise';
 import { planSummary } from '../model/plan-summary';
 import { PLANS, recommendedIndex } from '../model/plans';
@@ -518,6 +520,23 @@ const REDEEM_MESSAGE: Readonly<Record<Exclude<RedeemResult, 'ok'>, Phrase>> = {
 const CONFIRM_MS = 900;
 
   /**
+   * Keeps what the user told us, and starts the plan they were shown.
+   *
+   * Every answer used to die with this screen: only the name survived, the plan
+   * summary promised six weeks while the engine ran twelve, and the start date
+   * was never written at all. The flow has one way out now — the note at the
+   * end — so this runs there.
+   */
+  const commit = useCallback(() => {
+    const intake = intakeFrom(answers, { size, unit: sizeUnit });
+    saveIntake(intake);
+    startProgram(startingPlan(intake));
+    // Both heels: the asymmetry signals can only ever report nothing, so they
+    // are switched off rather than left silently dead.
+    setBilateral(intake.side === 'both');
+  }, [answers, size, sizeUnit]);
+
+  /**
    * Leaving the note, however the user left it.
    *
    * `armOffer` happens here rather than where the last answer was given, so the
@@ -528,8 +547,9 @@ const CONFIRM_MS = 900;
   const leaveNote = useCallback(() => {
     setNote(false);
     armOffer({ weeks: String(plan.weeks), name });
+    commit();
     completeOnboarding();
-  }, [plan.weeks, name]);
+  }, [plan.weeks, name, commit]);
 
   /**
    * Move one step, over anything that does not apply to this user.
@@ -755,7 +775,7 @@ const CONFIRM_MS = 900;
                 contentContainerStyle={styles.scrollContent}
                 showsVerticalScrollIndicator={false}>
                 <ChoiceStep
-                  art={step.key === 'sport' ? 'sport' : 'option'}
+                  art={step.key === 'sport' ? 'sport' : step.key === 'side' ? 'side' : 'option'}
                   options={resolve(step.key === 'load' ? load.options : step.options)}
                   selected={Array.isArray(answer) ? answer : []}
                   multi={step.multi ?? false}

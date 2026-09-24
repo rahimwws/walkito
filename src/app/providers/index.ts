@@ -8,3 +8,4 @@ export { useLiveActivityCleanup } from './live-activities';
 export { useClipPrefetch } from './clip-prefetch';
 export { useReferralSync } from './referral-sync';
 export { useNotificationScheduler } from './notification-scheduler';
+export { useProgramClock } from './program-clock';

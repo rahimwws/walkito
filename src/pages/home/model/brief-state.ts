@@ -31,6 +31,7 @@ export const BRIEF_STATES = [
   'flare',
   'pain-spike',
   // Structure of the programme.
+  'baseline',
   'retest',
   'checkpoint-recap',
   'first-week',
@@ -51,6 +52,11 @@ export const BRIEF_STATES = [
   'pain-down',
   'walk-back',
   'gait-recovered',
+  // Their own goal, in their own sport.
+  'goal-back',
+  'goal-consistent',
+  'goal-stronger',
+  'goal-injuryfree',
   // Honest emptiness.
   'no-data',
   'learning',
@@ -108,6 +114,13 @@ const AWAY_DAYS = 4;
 
 export type BriefInput = {
   name: string;
+  /**
+   * The hour, 0–23, for the greeting that opens the line.
+   *
+   * Passed in rather than read, like everything here, so a test can ask for
+   * an evening. Absent means no greeting — the sentence simply starts.
+   */
+  hour?: number;
   /** Where the user stands in the programme, 0-based. */
   cursor: number;
   /** Today's logged pain, 0–10, or null if they have not checked in yet. */
@@ -136,7 +149,45 @@ export type BriefInput = {
   stepsToday?: number | null;
   /** The hour at which this person's own history turns sour. */
   onFeetThreshold?: number | null;
+  /** What they said they are working towards, from onboarding. */
+  goal?: string | null;
+  /** The sport that loads their legs, from onboarding. */
+  sport?: string | null;
 };
+
+/** A personal line lands on every third quiet day — often enough to be
+ * noticed as theirs, rarely enough not to become the new "same line forever". */
+export const PERSONAL_EVERY = 3;
+
+/** The sports the "way back to…" line knows how to name. */
+export const SPORTS = [
+  'running',
+  'tennis',
+  'gym',
+  'football',
+  'basketball',
+  'cycling',
+  'hiking',
+] as const;
+
+/**
+ * The line that speaks to their goal, if they gave one we can speak to.
+ *
+ * Pain-free and a race both become the way back to their sport — which needs
+ * a sport we can name.
+ */
+export function personalState(
+  goal: string | null | undefined,
+  sport: string | null | undefined,
+): BriefState | null {
+  if (goal === 'consistent') return 'goal-consistent';
+  if (goal === 'stronger') return 'goal-stronger';
+  if (goal === 'injuryfree') return 'goal-injuryfree';
+  if ((goal === 'painfree' || goal === 'race') && (SPORTS as readonly string[]).includes(sport ?? '')) {
+    return 'goal-back';
+  }
+  return null;
+}
 
 /**
  * Mean logged pain over a span of elapsed days.
@@ -196,6 +247,8 @@ export function readBrief({
   hoursOnFeet = null,
   stepsToday = null,
   onFeetThreshold = null,
+  goal = null,
+  sport = null,
 }: BriefInput): BriefReading {
   const day: ProgramDay | undefined = PROGRAM[cursor];
   const pain = todayPain ?? painFor(cursor);
@@ -217,7 +270,13 @@ export function readBrief({
   // --- 3-4. The programme's own structure --------------------------------
   // Week 4 and week 8 are the evidence-based reassessment points for a
   // programme this length, not arbitrary ones, so they get to interrupt.
-  if (day?.checkpoint === true) return reading('retest');
+  // Day one is the baseline: the same three tests, but nothing has elapsed to
+  // look back on, so it has its own line. Once taken, the day is simply done.
+  if (day?.checkpoint === true && cursor === 0) {
+    if (!doneToday) return reading('baseline');
+  } else if (day?.checkpoint === true) {
+    return reading('retest');
+  }
 
   // --- 5-7. Load, from what actually happened ----------------------------
   // A single run longer than anything in the past month. Per-session, because
@@ -271,6 +330,13 @@ export function readBrief({
   if (quiet && day != null && PLAN_BLOCKS.some((block) => block.startDay === day.day)) {
     return reading('checkpoint-recap');
   }
+
+  // --- Their goal -----------------------------------------------------------
+  // After the plan's own structure and before the rotation. Never on a sore
+  // morning: "the way back to running" over a bad day reads as the app
+  // pressing on regardless.
+  const personal = quiet ? personalState(goal, sport) : null;
+  if (personal != null && cursor % PERSONAL_EVERY === 0) return reading(personal);
 
   // --- Honest emptiness, held back a week --------------------------------
   // Telling someone on day two that we cannot read their walk is true and

@@ -5,6 +5,7 @@ export {
   PLAN_BLOCKS,
   PROGRAM,
   PROGRAM_LENGTH,
+  rebuildProgram,
   RETESTS,
   RETEST_MINUTES,
   RETEST_TESTS,
@@ -54,6 +55,7 @@ export {
   blockFor,
   blocksFor,
   isRetestDay,
+  BASELINE_DAY,
   lastDayOf,
   retestDays,
   type Block,
@@ -133,6 +135,7 @@ export {
   fromDateKey,
   hoursBaseline,
   hoursOnFeetOn,
+  usualSessionMinute,
   logFor,
   painAverage,
   logPain,
@@ -143,12 +146,14 @@ export {
   phaseFor,
   programState,
   setProgramState,
+  startProgram,
   toDateKey,
   useLogsVersion,
   useProgramState,
   writeLog,
   type DayLog,
   type PainEntry,
+  type ProgramFocus,
   type ProgramPhase,
   type ProgramState,
 } from './model/state';
@@ -208,3 +213,4 @@ export {
 
 export { CHECKPOINT_ICON, SESSION_META } from './ui/session-meta';
 export { ZONE_META } from './ui/zone-meta';
+export { settleOffset, stepBackAfterSession } from './model/offset';

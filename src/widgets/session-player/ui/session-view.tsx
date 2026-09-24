@@ -1,6 +1,7 @@
 import ArrowExpandDiagonal01Icon from '@hugeicons/core-free-icons/ArrowExpandDiagonal01Icon';
 import ArrowShrink01Icon from '@hugeicons/core-free-icons/ArrowShrink01Icon';
 import ArrowLeft02Icon from '@hugeicons/core-free-icons/ArrowLeft02Icon';
+import BandageIcon from '@hugeicons/core-free-icons/BandageIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import * as Haptics from 'expo-haptics';
@@ -26,6 +27,9 @@ import { saveSessionToHealth } from '@/entities/health';
 import {
   HEEL_RAISE_IDS,
   PLAN_BLOCKS,
+  inSessionPain,
+  stepBackAfterSession,
+  writeLog,
   exerciseById,
   exerciseByTitle,
   kindFor,
@@ -47,6 +51,8 @@ import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../config/exercise-clips';
 import { SessionDoneSheet } from './session-done-sheet';
+import { RetestEntrySheet } from './retest-entry-sheet';
+import { SessionPainSheet } from './session-pain-sheet';
 import {
   doseSeconds,
   phaseAt,
@@ -193,6 +199,18 @@ type MovePlan = {
    */
   perSide: boolean;
 };
+
+/**
+ * The demonstration for each retest measurement, in `RETEST_MOVE_KEYS` order.
+ *
+ * The tests had no footage, so the three moves that decide a person's levels
+ * were the only ones in the app played over an empty card — exactly where a
+ * misread instruction costs the most, because it corrupts the measurement. The
+ * arch hold and the balance test are the same movements as two catalogue
+ * exercises, and use their clips. The calf test is single-leg to failure, which
+ * no catalogue clip shows, so it has footage of its own.
+ */
+const RETEST_CLIPS: readonly string[] = ['retest_calf_raise', 'short_foot_double', 'single_leg_hold'];
 
 /**
  * How long one move runs, and whether it runs in phases.
@@ -401,6 +419,9 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
   const retestMoves = useMemo(() => RETEST_MOVE_KEYS.map((key) => t(key)), [t]);
 
   const moves = override ?? (day.checkpoint ? retestMoves : movesFor(day));
+  /** Running the day's own retest, rather than one task or a protocol. */
+  const measuring = day.checkpoint && override == null && playlist == null;
+  const [enteringRetest, setEnteringRetest] = useState(false);
 
   /**
    * The whole session, timed.
@@ -509,7 +530,7 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
    * and a renamed exercise quietly losing its demonstration is a bug that looks
    * like nothing at all. Null for the six moves that have no clip yet, which
    * the card below states rather than showing another exercise's video. */
-  const clip = clipFor(current?.exercise?.id ?? '');
+  const clip = clipFor(current?.exercise?.id ?? (measuring ? (RETEST_CLIPS[step] ?? '') : ''));
 
   const player = useVideoPlayer(clip, (instance) => {
     instance.loop = true;
@@ -795,11 +816,16 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
     [player, progress, deadline, moveMs],
   );
 
-  const advance = useCallback(() => {
-    if (goTo(step + 1)) {
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
-      return;
-    }
+  /**
+   * The session is over — because the last move ran out, or because it hurt.
+   *
+   * One path for both, so a session stopped on pain is finished in every sense
+   * the app counts: the Live Activity comes down, Health gets its workout, the
+   * day is marked done by whoever opened the player. Stopping early is not
+   * failing; the only difference is what the closing sheet says.
+   */
+  const complete = useCallback((early: boolean) => {
+    setEndedEarly(early);
     // Nothing after the last move. The clock holds at zero instead of wrapping:
     // a session that quietly restarts is a session you can never finish.
     progress.value = 1;
@@ -827,7 +853,11 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
     // same reason: this is the only place that means the last move actually ran
     // out. Leaving by the arrow gets no confetti, which is correct — nothing
     // was finished.
-    setCelebrating(true);
+    // A retest run to the end goes to the numbers first — the tests were the
+    // point, and a celebration over nothing recorded is how the results used
+    // to vanish. A playlist or a single task is never a retest.
+    if (!early && measuring) setEnteringRetest(true);
+    else setCelebrating(true);
     void saveSessionToHealth({
       dayNumber: day.day,
       moves,
@@ -839,7 +869,42 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
     // it fires, and doing that at the instant the clock hits zero would take
     // the celebration off screen before it was drawn. The sheet calls it on the
     // way out instead.
-  }, [goTo, step, progress, deadline, endActivity, activitySnapshot, day, moves]);
+  }, [progress, deadline, endActivity, activitySnapshot, day, moves, measuring]);
+
+  const advance = useCallback(() => {
+    if (goTo(step + 1)) {
+      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+      return;
+    }
+    complete(false);
+  }, [goTo, step, complete]);
+
+  /** The mid-session "it hurts". Paused while the question is open — nobody
+   * should be counting reps while deciding how much something hurts. */
+  const [askingPain, setAskingPain] = useState(false);
+  const [endedEarly, setEndedEarly] = useState(false);
+  /** Shown for a moment under the header after a report below the stop line. */
+  const [carryOn, setCarryOn] = useState(false);
+  const wasPlaying = useRef(false);
+
+  const reportPain = useCallback(
+    (score: number) => {
+      setAskingPain(false);
+      const outcome = inSessionPain(score, progressionOffset);
+      if (!outcome.stop) {
+        // Discomfort is allowed to be part of this. Back to where they were.
+        setCarryOn(true);
+        if (wasPlaying.current) setPlaying(true);
+        return;
+      }
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+      // Tomorrow really is a step back: the offset is stored, not just said.
+      stepBackAfterSession();
+      writeLog(day.day, { sessionEndedEarly: true });
+      complete(true);
+    },
+    [progressionOffset, day.day, complete],
+  );
 
   /**
    * The move running out, from either direction.
@@ -1188,6 +1253,26 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
             />
           </Pressable>
 
+          {/* The way to say it hurts, opposite the way out. Always there rather
+              than behind a menu: the moment it is needed is the moment nobody
+              goes looking for it. Not on a finished session. */}
+          {!finished && (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={t('widgets.painButton')}
+              onPress={() => {
+                Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+                wasPlaying.current = playing;
+                setPlaying(false);
+                setCarryOn(false);
+                setAskingPain(true);
+              }}
+              hitSlop={12}
+              style={({ pressed }) => [styles.painButton, pressed && { opacity: 0.5 }]}>
+              <HugeiconsIcon icon={BandageIcon} size={24} color={colors.foreground} strokeWidth={1.8} />
+            </Pressable>
+          )}
+
           {/* Centred on the screen rather than in what the arrow leaves over, so
               it lands where a navigation title lands. Inert: it is a label. */}
           <View pointerEvents="none" style={styles.headerTitle}>
@@ -1205,6 +1290,10 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
             </Text>
           </View>
         </View>
+
+        {carryOn && (
+          <Text style={[styles.carryOn, { color: meter.caption }]}>{t('widgets.painCarryOn')}</Text>
+        )}
 
         {/* The card is drawn over this, not in it — it has to travel to a rect
             this column does not contain. What stays here is the space it
@@ -1370,8 +1459,27 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
         {ctaButton}
       </Animated.View>
 
+      <RetestEntrySheet
+        visible={enteringRetest}
+        dayNumber={day.day}
+        onDone={() => {
+          setEnteringRetest(false);
+          setCelebrating(true);
+        }}
+      />
+
+      <SessionPainSheet
+        visible={askingPain}
+        onPick={reportPain}
+        onCancel={() => {
+          setAskingPain(false);
+          if (wasPlaying.current) setPlaying(true);
+        }}
+      />
+
       <SessionDoneSheet
         visible={celebrating}
+        early={endedEarly}
         streak={streak.current}
         moves={moveCount}
         onClose={() => {
@@ -1393,6 +1501,17 @@ const styles = StyleSheet.create({
   header: {
     height: 44,
     justifyContent: 'center',
+    paddingHorizontal: CARD_MARGIN,
+  },
+  painButton: {
+    position: 'absolute',
+    right: CARD_MARGIN,
+    zIndex: 1,
+  },
+  carryOn: {
+    fontSize: 14,
+    fontFamily: fonts.regular,
+    textAlign: 'center',
     paddingHorizontal: CARD_MARGIN,
   },
   headerTitle: {

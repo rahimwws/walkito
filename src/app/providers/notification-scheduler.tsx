@@ -1,7 +1,14 @@
 import { useEffect } from 'react';
 import { AppState } from 'react-native';
 
-import { Notifications, PLAN_KIND, markDelivered, onAppOpen } from '@/entities/notifications';
+import {
+  Notifications,
+  PLAN_KIND,
+  markDelivered,
+  onAppOpen,
+  setAudience,
+} from '@/entities/notifications';
+import { useIntake } from '@/entities/profile';
 import { subscribeToLanguage } from '@/shared/lib/i18n';
 
 /**
@@ -17,6 +24,20 @@ import { subscribeToLanguage } from '@/shared/lib/i18n';
  * changed overnight from firing yesterday's message.
  */
 export function useNotificationScheduler(): void {
+  /**
+   * The onboarding fact the copy speaks to — their sport.
+   *
+   * Introduced here because notifications may not import the profile. Set
+   * during render rather than in an effect, so it is in place before the effect
+   * below plans the first window; and re-planned when it changes, which is the
+   * moment onboarding finishes.
+   */
+  const intake = useIntake();
+  setAudience({ sport: intake?.sport ?? null });
+  useEffect(() => {
+    if (intake != null && AppState.currentState !== 'background') void onAppOpen();
+  }, [intake]);
+
   useEffect(() => {
     // Only when someone is actually looking. HealthKit now relaunches the app
     // in the background on its hourly wakes, and this root mounts for those

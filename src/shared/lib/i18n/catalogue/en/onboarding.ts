@@ -126,6 +126,12 @@ export const ONBOARDING_EN = {
   'onboarding.pain.full': 'Up to {count} at a time. Tap one to swap it.',
   'onboarding.pain.none': 'Nothing hurts right now',
 
+  'onboarding.side.title': 'Which side, {name}?',
+  'onboarding.side.blurb': 'The tests compare one leg with the other, so we need to know which one we’re working on.',
+  'onboarding.side.left': 'Left',
+  'onboarding.side.right': 'Right',
+  'onboarding.side.both': 'Both',
+
   // ── Sport ────────────────────────────────────────────────────────────────
   'onboarding.sport.title': 'What puts the load on your legs, {name}?',
   'onboarding.sport.blurb': 'This decides how the next questions are framed.',
@@ -396,7 +402,6 @@ export const ONBOARDING_EN = {
   'onboarding.referral.already': 'You have already used a code.',
   'onboarding.referral.unavailable': 'Invites are not available in this build.',
   'onboarding.referral.failed': 'Could not reach the server. Try again in a moment.',
-
 
   // ── The note at the end of onboarding ────────────────────────────────────
   //

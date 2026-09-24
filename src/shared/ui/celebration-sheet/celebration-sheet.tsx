@@ -45,6 +45,13 @@ export type CelebrationSheetProps = {
   /** The sentence under it. */
   blurb: string;
   ctaLabel?: string;
+  /** Off for an ending that is not a win — a session stopped on pain still
+   * counts, but confetti over "it hurt" is the app cheering at the wrong
+   * thing. */
+  confetti?: boolean;
+  /** Off with the confetti, for the same reason: a trophy over "we stopped
+   * because it hurt" reads as a prize for pain. */
+  emblem?: boolean;
   onClose: () => void;
 };
 
@@ -81,6 +88,8 @@ export function CelebrationSheet({
   headlineColor,
   blurb,
   ctaLabel,
+  confetti = true,
+  emblem = true,
   onClose,
 }: CelebrationSheetProps) {
   const scheme = useColorScheme();
@@ -159,7 +168,7 @@ export function CelebrationSheet({
           rather than behind the whole sheet. Three launch points: one central
           plume leaves the corners empty, which is exactly where the eye goes
           when something has just been finished. */}
-      {visible && <Confetti origins={CORNERS} size={1.6} />}
+      {visible && confetti && <Confetti origins={CORNERS} size={1.6} />}
 
       {/* Tapping away closes it. The button is the advertised way out, but a
           sheet with a scrim that swallows taps feels stuck. */}
@@ -171,16 +180,23 @@ export function CelebrationSheet({
       />
 
       <Animated.View
-        style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }, dock]}
+        style={[
+          styles.dock,
+          { paddingBottom: Math.max(insets.bottom, 16) },
+          !emblem && { paddingTop: 0 },
+          dock,
+        ]}
         pointerEvents="box-none">
-        <Animated.Image
-          source={BADGE_ART}
-          resizeMode="contain"
-          accessible={false}
-          style={[styles.badge, badge]}
-        />
+        {emblem && (
+          <Animated.Image
+            source={BADGE_ART}
+            resizeMode="contain"
+            accessible={false}
+            style={[styles.badge, badge]}
+          />
+        )}
 
-        <View style={[styles.card, { backgroundColor: colors.card }]}>
+        <View style={[styles.card, { backgroundColor: colors.card }, !emblem && { paddingTop: 24 }]}>
           <TypedText text={title} style={[styles.title, { color: colors.foreground }]} />
 
           {headline != null && (

@@ -126,6 +126,35 @@ export const OFFER_EN = {
   'widgets.retestArchHold': 'Arch hold',
   'widgets.retestBalance': 'Single-leg balance',
 
+  // ── Retest: entering the numbers ─────────────────────────────────────────
+  'widgets.retestEntryTitle': 'Your numbers',
+  'widgets.retestEntryBlurb': 'Count what you just did. Honest numbers make the next retest mean something.',
+  'widgets.retestLeft': 'Left leg',
+  'widgets.retestRight': 'Right leg',
+  'widgets.retestLeftSore': 'Left leg — the sore one',
+  'widgets.retestRightSore': 'Right leg — the sore one',
+  'widgets.retestSeconds': 'Seconds',
+  'widgets.retestLess': 'Less',
+  'widgets.retestMore': 'More',
+  'widgets.retestSave': 'Save results',
+  'widgets.retestResultTitle': 'Where you are now',
+  'widgets.retestResultBlurb': 'Measured against your last retest, never against anyone else.',
+  'widgets.retestChange': '{from} → {to}',
+  'widgets.retestLevel': 'Lv {level}',
+  'widgets.retestDone': 'Done',
+  'widgets.retestUnitReps': 'reps',
+  'widgets.retestUnitSeconds': 'sec',
+  'widgets.retestUnitPercent': '%',
+  'widgets.retestGapNote': 'between legs',
+  'widgets.retestYourGoal': 'Your goal',
+  'widgets.retestFirstCaption': 'This is your starting point. In two weeks you’ll see what changed.',
+  /** The goal they picked in onboarding, said back on the result screen. */
+  'widgets.retestGoal.painfree': 'You came here for mornings that don’t start with heel pain. These numbers are the foot getting there.',
+  'widgets.retestGoal.race': 'You’re working towards a race. A stronger calf and a steadier foot are what carry you to the start line.',
+  'widgets.retestGoal.consistent': 'You said consistency was the goal. This is what showing up adds up to.',
+  'widgets.retestGoal.stronger': 'You wanted to get stronger. This is where it shows first.',
+  'widgets.retestGoal.injuryfree': 'You wanted to stay injury-free. A foot that tests stronger is harder to hurt.',
+
   // ── Session player: the counter line ─────────────────────────────────────
   // One word each, because this is read at two metres by somebody already
   // moving and it changes every three seconds.
@@ -173,6 +202,16 @@ export const OFFER_EN = {
 
   // ── Session player: the end of a session ─────────────────────────────────
   'widgets.sessionDoneTitle': 'Nice work.',
+  /** Stopped on a pain report at or above five. It counts, and it says so. */
+  'widgets.sessionStoppedTitle': 'Stopping here.',
+  'widgets.sessionStoppedBlurb': 'It still counts as today’s session. Tomorrow starts one step back.',
+
+  // ── Session player: "it hurts" ───────────────────────────────────────────
+  'widgets.painButton': 'It hurts',
+  'widgets.painTitle': 'How much, right now?',
+  'widgets.painBlurb': 'Under 5 is fine to work through. From 5 up, we stop and ease tomorrow.',
+  'widgets.painCarryOn': 'Carry on gently. Stop if it climbs.',
+  'widgets.painClose': 'Close',
   'widgets.sessionDoneStreak': { one: '{count} day in a row', other: '{count} days in a row' },
   /** `{count}` is in both forms deliberately. The singular reads better as "One
    * move done", but every form of every language has to carry every placeholder

@@ -47,6 +47,11 @@ export const NOTIFICATIONS_RU = {
   },
   'notifications.sessionHeelRaises':
     'Сегодня подъёмы на носки. То самое, что действительно сдвигает дело.',
+  'notifications.sessionBackTo': {
+    one: 'Сегодня {count} минута — ещё шаг {backTo}.',
+    few: 'Сегодня {count} минуты — ещё шаг {backTo}.',
+    many: 'Сегодня {count} минут — ещё шаг {backTo}.',
+  },
   'notifications.sessionCalves': {
     one: '{count} минута. Сегодня всё про икры.',
     few: '{count} минуты. Сегодня всё про икры.',

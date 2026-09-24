@@ -11,6 +11,7 @@ import {
   usePendingOfferPresenter,
   useHealthPipeline,
   useNotificationScheduler,
+  useProgramClock,
   useClipPrefetch,
   useLiveActivityCleanup,
   usePurchases,
@@ -82,6 +83,8 @@ export function RootLayout() {
   // answers them. Also at the root: a shortcut tap can be the thing that
   // launched the app.
   useQuickActions();
+  // Moves the plan's "today" on when the app is brought back after midnight.
+  useProgramClock();
   // Fills the local health cache in the background. Never awaited and never
   // rendered — every screen reads the cache, which always has an answer.
   useHealthPipeline();
