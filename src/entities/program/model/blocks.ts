@@ -23,6 +23,15 @@ export type Block = {
   retestDay: number;
 };
 
+/**
+ * The day-one baseline: the three tests, before any training.
+ *
+ * Without it the first block's retest had nothing to be read against, so the
+ * first "before and after" the user ever saw arrived on day 28. With it, the
+ * day-14 result is already a change.
+ */
+export const BASELINE_DAY = 1;
+
 /** Every block is this long. The retest lands on its last day. */
 export const BLOCK_LENGTH = 14;
 
@@ -76,6 +85,7 @@ export function blockFor(dayNumber: number, planLength: PlanLength): Block | nul
 
 /** Whether a day is one of the plan's retest days. */
 export function isRetestDay(dayNumber: number, planLength: PlanLength): boolean {
+  if (dayNumber === BASELINE_DAY) return true;
   return blocksFor(planLength).some((block) => block.retestDay === dayNumber);
 }
 

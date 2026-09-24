@@ -13,7 +13,7 @@
  * quit.
  */
 
-import { type Block } from './blocks';
+import { BASELINE_DAY, type Block } from './blocks';
 import { planFor } from './catalogue';
 import { MINUTES_BY_KIND, firstDayOfKind, type DayKind } from './day-templates';
 import { EXERCISES_BY_ID, type Exercise } from './exercises';
@@ -193,8 +193,8 @@ export function resolveDay(input: ResolveInput): ResolvedDay {
     };
   }
 
-  // Rule 3 — the block closes. Three tests, no training.
-  if (dayNumber === block.retestDay) {
+  // Rule 3 — the block closes, or the plan opens. Three tests, no training.
+  if (dayNumber === block.retestDay || dayNumber === BASELINE_DAY) {
     return {
       dayNumber,
       blockIndex,

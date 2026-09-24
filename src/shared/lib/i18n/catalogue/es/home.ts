@@ -184,6 +184,14 @@ export const BRIEF_ES = {
   ],
 
   // ── La estructura del programa ───────────────────────────────────────────
+  baseline: [
+    [
+      { k: 'frame', text: 'el primer día son' },
+      { k: 'metric', icon: 'retest', text: '{tests}', tail: ',' },
+      { k: 'frame', text: 'no un entrenamiento: todo cambio a partir de aquí se mide contra ti.' },
+    ],
+  ],
+
   retest: [
     [
       { k: 'frame', text: 'han pasado' },

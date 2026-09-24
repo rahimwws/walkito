@@ -31,6 +31,7 @@ export const BRIEF_STATES = [
   'flare',
   'pain-spike',
   // Structure of the programme.
+  'baseline',
   'retest',
   'checkpoint-recap',
   'first-week',
@@ -217,7 +218,13 @@ export function readBrief({
   // --- 3-4. The programme's own structure --------------------------------
   // Week 4 and week 8 are the evidence-based reassessment points for a
   // programme this length, not arbitrary ones, so they get to interrupt.
-  if (day?.checkpoint === true) return reading('retest');
+  // Day one is the baseline: the same three tests, but nothing has elapsed to
+  // look back on, so it has its own line. Once taken, the day is simply done.
+  if (day?.checkpoint === true && cursor === 0) {
+    if (!doneToday) return reading('baseline');
+  } else if (day?.checkpoint === true) {
+    return reading('retest');
+  }
 
   // --- 5-7. Load, from what actually happened ----------------------------
   // A single run longer than anything in the past month. Per-session, because

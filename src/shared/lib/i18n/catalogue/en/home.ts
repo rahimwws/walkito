@@ -259,6 +259,14 @@ export const BRIEF_EN = {
   ],
 
   // ── The programme's own structure ────────────────────────────────────────
+  baseline: [
+    [
+      { k: 'frame', text: 'day one is' },
+      { k: 'metric', icon: 'retest', text: '{tests}', tail: ',' },
+      { k: 'frame', text: 'not training — so every change from here is measured against you.' },
+    ],
+  ],
+
   retest: [
     [
       { k: 'frame', text: 'it’s been' },

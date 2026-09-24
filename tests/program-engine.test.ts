@@ -168,6 +168,7 @@ describe('8 — the program runs on dates, not completions', () => {
       startDate: '2026-01-01',
       progressionOffset: 0,
       phase: 'program',
+      focus: 'foot',
     };
 
     // Nothing is logged for days 10–16 at all. The day number is arithmetic on

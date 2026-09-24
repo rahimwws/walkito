@@ -20,6 +20,17 @@ import { lastDayOf, type PlanLength } from './blocks';
 /** The program's own phase. Maintenance is not the end; it is the second half. */
 export type ProgramPhase = 'program' | 'maintenance';
 
+/**
+ * Where the plan leans, from what the user said hurts.
+ *
+ * - `foot`: heel, arch, plantar fascia — the plan as written.
+ * - `calf`: achilles and shin. The same plan with the calf and soleus given
+ *   more room, because that is where those complaints are loaded from.
+ * - `hip`: knee and hip. The foot-and-calf plan is still the base — it is what
+ *   this app is — with the hip work brought forward from Control.
+ */
+export type ProgramFocus = 'foot' | 'calf' | 'hip';
+
 export type ProgramState = {
   planLength: PlanLength;
   /** Calendar date the plan began, as `YYYY-MM-DD` in the user's local time. */
@@ -31,6 +42,7 @@ export type ProgramState = {
    */
   progressionOffset: number;
   phase: ProgramPhase;
+  focus: ProgramFocus;
 };
 
 /** One check-in: what they said, when, and where it hurt. */
@@ -191,7 +203,24 @@ function defaultState(now: number): ProgramState {
     startDate: backdated(SEED_DAYS_ELAPSED, now),
     progressionOffset: 0,
     phase: 'program',
+    focus: 'foot',
   };
+}
+
+/**
+ * A default that is written down.
+ *
+ * `readState` used to hand back a fresh default whenever nothing was stored,
+ * and nothing ever stored one — `setProgramState` had no callers. So every
+ * launch began a new plan dated today, and every user was on day 1 every day:
+ * the path never moved, no block ever closed, and no retest ever came round.
+ * Persisting the first default is what makes "the day you installed" a fact
+ * rather than something recomputed each morning.
+ */
+function seeded(now: number): ProgramState {
+  const fresh = defaultState(now);
+  kv.set(STATE_KEY, JSON.stringify(fresh));
+  return fresh;
 }
 
 /**
@@ -207,15 +236,15 @@ function readState(now: number): ProgramState {
     kv.remove(STATE_KEY);
     kv.remove(LOGS_KEY);
     markSchemaCurrent();
-    return defaultState(now);
+    return seeded(now);
   }
   const raw = kv.getString(STATE_KEY);
-  if (raw == null) return defaultState(now);
+  if (raw == null) return seeded(now);
   try {
     const parsed = JSON.parse(raw) as Partial<ProgramState>;
     const planLength: PlanLength = parsed.planLength === 42 ? 42 : 84;
     if (typeof parsed.startDate !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(parsed.startDate)) {
-      return defaultState(now);
+      return seeded(now);
     }
     return {
       planLength,
@@ -224,10 +253,11 @@ function readState(now: number): ProgramState {
       // older build would otherwise accelerate the plan.
       progressionOffset: Math.min(Number(parsed.progressionOffset) || 0, 0),
       phase: parsed.phase === 'maintenance' ? 'maintenance' : 'program',
+      focus: parsed.focus === 'calf' || parsed.focus === 'hip' ? parsed.focus : 'foot',
     };
   } catch (error) {
     console.warn('[program] stored state unreadable, starting fresh', error);
-    return defaultState(now);
+    return seeded(now);
   }
 }
 
@@ -239,7 +269,7 @@ function emitState(): void {
   for (const listener of stateSubscribers) listener();
 }
 
-function subscribeState(listener: () => void): () => void {
+export function subscribeState(listener: () => void): () => void {
   stateSubscribers.add(listener);
   return () => {
     stateSubscribers.delete(listener);
@@ -265,6 +295,25 @@ export function setProgramState(patch: Partial<ProgramState>): ProgramState {
   kv.set(STATE_KEY, JSON.stringify(next));
   emitState();
   return next;
+}
+
+/**
+ * Begins the plan the user just chose, today.
+ *
+ * Called once, when onboarding finishes. The start date is today rather than
+ * the install date: the plan the user was shown began when they agreed to it,
+ * and a fortnight spent browsing before signing up must not arrive as two weeks
+ * of missed days.
+ */
+export function startProgram(
+  plan: Pick<ProgramState, 'planLength' | 'progressionOffset' | 'focus'>,
+  now: number = Date.now(),
+): ProgramState {
+  return setProgramState({
+    ...plan,
+    startDate: toDateKey(new Date(now)),
+    phase: 'program',
+  });
 }
 
 export function useProgramState(): ProgramState {
