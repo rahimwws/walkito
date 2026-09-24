@@ -116,6 +116,12 @@ export const ONBOARDING_ES = {
   'onboarding.pain.hip': 'Cadera',
   'onboarding.pain.none': 'Nada ahora mismo',
 
+  'onboarding.side.title': '¿De qué lado, {name}?',
+  'onboarding.side.blurb': 'Las pruebas comparan una pierna con la otra, así que necesitamos saber con cuál trabajamos.',
+  'onboarding.side.left': 'Izquierdo',
+  'onboarding.side.right': 'Derecho',
+  'onboarding.side.both': 'Ambos',
+
   // ── Sport ────────────────────────────────────────────────────────────────
   'onboarding.sport.title': '¿Qué carga tus piernas, {name}?',
   'onboarding.sport.blurb': 'Esto decide cómo se plantean las siguientes preguntas.',

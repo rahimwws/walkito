@@ -3,6 +3,7 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { Alert, Pressable, StyleSheet, Text, View } from 'react-native';
 
+import { resetIntake } from '@/entities/profile';
 import { resetOnboarding } from '@/entities/session';
 import { accents, fonts, meterColors } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
@@ -52,6 +53,8 @@ export function ResetRow() {
             // the wipe would re-render the onboarding flow against data that is
             // about to vanish underneath it.
             kv.clearAll();
+            // The answers are also held in memory, which `clearAll` cannot reach.
+            resetIntake();
             clearClips();
             resetOnboarding();
           },

@@ -155,6 +155,7 @@ function tasksForToday(t: Translate): { tasks: readonly Task[]; retest: boolean 
     hoursBaseline: hoursBaseline(dayNumber),
     daysSinceLastSession: daysSinceLastSession(dayNumber),
     progressionOffset: state.progressionOffset,
+    focus: state.focus,
   });
 
   return {

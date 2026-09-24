@@ -78,6 +78,40 @@ export function planFor(blockIndex: number, kind: DayKind): readonly string[] {
   return plan[kind];
 }
 
+/** Where the plan leans. Mirrors `ProgramFocus` in `state.ts`, restated here so
+ * the table does not import the store. */
+export type Focus = 'foot' | 'calf' | 'hip';
+
+/**
+ * A day's list, leaning towards where it hurts.
+ *
+ * Additions only, and one exercise at most: the plan as written is the plan,
+ * and the focus nudges it rather than replacing it. Nothing added loads the
+ * fascia, so a focus can never make a flare day heavier.
+ *
+ * - `calf` (Achilles, shin): the bent-knee stretch reaches the soleus, the
+ *   muscle an Achilles complaint is loaded through, and it goes onto the days
+ *   that do not already train the calf.
+ * - `hip` (knee, hip): hip abduction is in the plan from Control; for a knee or
+ *   hip complaint it starts in Strengthen on the balance day, because a hip
+ *   that gives way lands the load on the knee as well as the arch.
+ */
+export function withFocus(
+  ids: readonly string[],
+  blockIndex: number,
+  kind: DayKind,
+  focus: Focus,
+): readonly string[] {
+  const add = (id: string) => (ids.includes(id) ? ids : [...ids, id]);
+  if (focus === 'calf' && (kind === 'mobility' || kind === 'recovery')) {
+    return add('calf_stretch_bent');
+  }
+  if (focus === 'hip' && kind === 'balance' && blockIndex >= 2) {
+    return add('hip_abduction');
+  }
+  return ids;
+}
+
 /** Every exercise a block runs, across all four of its days. */
 function idsIn(blockIndex: number): readonly string[] {
   const plan = BLOCK_PLANS[blockIndex];

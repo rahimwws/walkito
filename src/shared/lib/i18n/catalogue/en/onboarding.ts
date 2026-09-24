@@ -131,6 +131,12 @@ export const ONBOARDING_EN = {
   'onboarding.pain.hip': 'Hip',
   'onboarding.pain.none': 'Nothing right now',
 
+  'onboarding.side.title': 'Which side, {name}?',
+  'onboarding.side.blurb': 'The tests compare one leg with the other, so we need to know which one we’re working on.',
+  'onboarding.side.left': 'Left',
+  'onboarding.side.right': 'Right',
+  'onboarding.side.both': 'Both',
+
   // ── Sport ────────────────────────────────────────────────────────────────
   'onboarding.sport.title': 'What puts the load on your legs, {name}?',
   'onboarding.sport.blurb': 'This decides how the next questions are framed.',

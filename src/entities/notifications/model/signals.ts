@@ -61,6 +61,7 @@ function resolve(dayNumber: number): ResolvedDay | null {
     hoursBaseline: hoursBaseline(dayNumber),
     daysSinceLastSession: daysSinceLastSession(dayNumber),
     progressionOffset: state.progressionOffset,
+    focus: state.focus,
   });
 }
 

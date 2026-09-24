@@ -14,7 +14,7 @@
  */
 
 import { BASELINE_DAY, type Block } from './blocks';
-import { planFor } from './catalogue';
+import { planFor, withFocus, type Focus } from './catalogue';
 import { MINUTES_BY_KIND, firstDayOfKind, type DayKind } from './day-templates';
 import { EXERCISES_BY_ID, type Exercise } from './exercises';
 import { prescriptionFor, type Prescription } from './prescription';
@@ -77,6 +77,8 @@ export type ResolveInput = {
   daysSinceLastSession: number;
   /** 0 = on plan, -1 = one step back. */
   progressionOffset: number;
+  /** Where the plan leans. Absent means the plan as written. */
+  focus?: Focus;
 };
 
 /**
@@ -144,7 +146,11 @@ export function resolveDay(input: ResolveInput): ResolvedDay {
     hoursBaseline,
     daysSinceLastSession,
     progressionOffset,
+    focus = 'foot',
   } = input;
+  /** The ordinary list for a kind of day, with the focus applied. Not used on
+   * offload days, which are the unloaded minimum by design. */
+  const planned = (of: DayKind) => withFocus(planFor(block.index, of), block.index, of, focus);
 
   const blockIndex = block.index;
   const spike = isSpike(painToday, pain7dAvg);
@@ -220,7 +226,7 @@ export function resolveDay(input: ResolveInput): ResolvedDay {
       minutes: MINUTES_BY_KIND.recovery,
       retest: false,
       offload: false,
-      exercises: resolve(planFor(blockIndex, 'recovery'), blockIndex, progressionOffset),
+      exercises: resolve(planned('recovery'), blockIndex, progressionOffset),
       progressionOffset,
       reason: 'heavy-day',
     };
@@ -237,7 +243,7 @@ export function resolveDay(input: ResolveInput): ResolvedDay {
       minutes: MINUTES_BY_KIND.mobility,
       retest: false,
       offload: false,
-      exercises: resolve(planFor(blockIndex, 'mobility'), blockIndex, offset),
+      exercises: resolve(planned('mobility'), blockIndex, offset),
       progressionOffset: offset,
       reason: 'return',
     };
@@ -251,7 +257,7 @@ export function resolveDay(input: ResolveInput): ResolvedDay {
     minutes: MINUTES_BY_KIND[kind],
     retest: false,
     offload: false,
-    exercises: resolve(planFor(blockIndex, kind), blockIndex, progressionOffset),
+    exercises: resolve(planned(kind), blockIndex, progressionOffset),
     progressionOffset,
     reason: 'plan',
   };

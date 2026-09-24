@@ -364,6 +364,25 @@ export const STEPS: readonly OnboardingStep[] = [
     ],
   },
   {
+    // Which side, because two things downstream depend on it and neither can
+    // guess: the retest counts calf raises on the side being rehabilitated
+    // against the other one, and a symmetric problem cannot produce an
+    // asymmetric gait — so "both" switches the asymmetry signals off rather
+    // than leaving them to never fire.
+    kind: 'choice',
+    key: 'side',
+    act: 1,
+    title: (t) => t('onboarding.side.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.side.blurb'),
+    options: [
+      { value: 'left', label: (t) => t('onboarding.side.left') },
+      { value: 'right', label: (t) => t('onboarding.side.right') },
+      { value: 'both', label: (t) => t('onboarding.side.both') },
+    ],
+    // Nothing hurts, nothing to ask about.
+    skipWhen: (answers) => !hurts(answers),
+  },
+  {
     kind: 'choice',
     key: 'sport',
     act: 1,
@@ -526,6 +545,12 @@ export function actBounds(act: number): { start: number; end: number } {
  * Returns null when there is nothing left in that direction, which is the
  * caller's signal that the flow is over rather than an index to move to.
  */
+/** Whether anything at all was picked on the pain step besides "nothing". */
+function hurts(answers: Readonly<Record<string, unknown>>): boolean {
+  const pain = answers.pain;
+  return Array.isArray(pain) && pain.some((value) => value !== 'none');
+}
+
 export function stepAfter(
   from: number,
   forward: boolean,

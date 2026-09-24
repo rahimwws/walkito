@@ -25,7 +25,7 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { QUESTION_LINE_MS, TypedText } from '@/shared/ui/typed-text';
-import { type HealthSummary } from '@/entities/health';
+import { setBilateral, type HealthSummary } from '@/entities/health';
 import { armOffer } from '@/entities/offer';
 import {
   REFERRAL_CODE_LENGTH,
@@ -34,7 +34,8 @@ import {
   redeem,
   type RedeemResult,
 } from '@/entities/referral';
-import { firstName, setProfileEmail, setProfileName } from '@/entities/profile';
+import { firstName, saveIntake, setProfileEmail, setProfileName } from '@/entities/profile';
+import { startProgram } from '@/entities/program';
 import { completeOnboarding, signInWithApple } from '@/entities/session';
 import { NoteSheet } from '@/shared/ui/note-sheet';
 import { Glow } from '@/shared/ui/glow';
@@ -42,6 +43,7 @@ import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button
 
 import { TESTIMONIAL_COUNT } from '../config/testimonials';
 import { chose } from '../model/answers';
+import { intakeFrom, startingPlan } from '../model/intake';
 import { loadQuestionFor, withName, type SportKey } from '../model/personalise';
 import { planSummary } from '../model/plan-summary';
 import { PLANS, recommendedIndex } from '../model/plans';
@@ -499,14 +501,32 @@ const CONFIRM_MS = 900;
 /** The header's close is Skip: it leaves the whole flow, not one step, and
    * it counts as finishing. Onboarding is the app's front door — a close that
    * dumped the user back into an app they had not set up would strand them. */
+  /**
+   * Keeps what the user told us, and starts the plan they were shown.
+   *
+   * Every answer used to die with this screen: only the name survived, the plan
+   * summary promised six weeks while the engine ran twelve, and the start date
+   * was never written at all. Run on both ways out — finishing and skipping —
+   * because a skip still leaves answers worth keeping and still needs a plan.
+   */
+  const commit = useCallback(() => {
+    const intake = intakeFrom(answers, { size, unit: sizeUnit });
+    saveIntake(intake);
+    startProgram(startingPlan(intake));
+    // Both heels: the asymmetry signals can only ever report nothing, so they
+    // are switched off rather than left silently dead.
+    setBilateral(intake.side === 'both');
+  }, [answers, size, sizeUnit]);
+
   const onExit = useCallback(() => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
     Keyboard.dismiss();
+    commit();
     // Straight out, with no note. Someone who skipped the whole flow has said
     // what they want, and a personal letter asking them for a rating on the way
     // past is the exact pattern Apple's guidelines single out.
     completeOnboarding();
-  }, []);
+  }, [commit]);
 
   /**
    * Leaving the note, however the user left it.
@@ -519,8 +539,9 @@ const CONFIRM_MS = 900;
   const leaveNote = useCallback(() => {
     setNote(false);
     armOffer({ weeks: String(plan.weeks), name });
+    commit();
     completeOnboarding();
-  }, [plan.weeks, name]);
+  }, [plan.weeks, name, commit]);
 
   /**
    * Move one step, over anything that does not apply to this user.
