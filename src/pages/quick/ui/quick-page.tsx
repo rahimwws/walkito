@@ -25,6 +25,7 @@ import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { FeatureCard } from '@/shared/ui/feature-card';
 
+import { PROTOCOL_ART } from '../config/art';
 import { ProtocolSheet } from './protocol-sheet';
 
 /**
@@ -132,20 +133,29 @@ export function QuickPage() {
             off the screen. */}
         <FeatureCard
           title={t(featured.titleKey)}
+          image={PROTOCOL_ART[featured.id]}
           icon={ICONS[featured.id]}
           accent={featured.accent}
           onPress={() => openProtocol(featured)}
           style={styles.featured}
         />
         <View style={styles.grid}>
-          {PROTOCOLS.map((protocol) => (
+          {PROTOCOLS.map((protocol, i) => (
             <FeatureCard
               key={protocol.id}
               title={t(protocol.titleKey)}
+              image={PROTOCOL_ART[protocol.id]}
               icon={locked(protocol) ? SquareLock02Icon : ICONS[protocol.id]}
               accent={protocol.accent}
               onPress={() => openProtocol(protocol)}
-              style={styles.tile}
+              // An odd one out is alone on its row and stretches to the full
+              // width, where the tile's near-square shape made it the tallest
+              // thing on the screen. It takes the banner shape instead.
+              style={
+                i === PROTOCOLS.length - 1 && PROTOCOLS.length % 2 === 1
+                  ? styles.wide
+                  : styles.tile
+              }
             />
           ))}
         </View>
@@ -184,4 +194,6 @@ const styles = StyleSheet.create({
   },
   /** Two to a row, with the gap taken out of the width. */
   tile: { flexGrow: 1, flexBasis: '47%' },
+  /** The last tile when it has no partner: full width, banner-shaped. */
+  wide: { flexBasis: '100%', aspectRatio: 2.05 },
 });

@@ -70,7 +70,14 @@ export function FeatureCard({
       onPress={onPress}
       style={({ pressed }) => [styles.card, style, pressed && { opacity: 0.88 }]}>
       {image != null ? (
-        <Image source={image} style={StyleSheet.absoluteFill} resizeMode="cover" />
+        // In a pinned frame, stretched to fill it. A bundled image takes the
+        // file's own pixel size as its default width and height, so pinned by
+        // its insets alone it laid out as a 1600pt photo and `cover` showed its
+        // top-left corner blown up across the card. The frame has no intrinsic
+        // size to leak, and `flex: 1` with the defaults cleared fills it.
+        <View style={StyleSheet.absoluteFill}>
+          <Image source={image} style={styles.art} resizeMode="cover" />
+        </View>
       ) : (
         // Stand-in artwork: an off-centre wash that reads as a blurred photo
         // behind the caption without shipping an asset.
@@ -125,6 +132,7 @@ export function FeatureCard({
 }
 
 const styles = StyleSheet.create({
+  art: { flex: 1, width: undefined, height: undefined },
   card: {
     flex: 1,
     aspectRatio: ASPECT,
