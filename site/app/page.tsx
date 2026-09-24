@@ -29,35 +29,35 @@ const APP = {
 };
 
 /**
- * The app's own three, verbatim.
+ * What the page shows in place of reviews.
  *
- * `lead` is the clause the quote turns on, and it carries the same emphasis
- * treatment the onboarding gives it: the ink is on the fact and the rest
- * carries the grammar. Copied from `src/pages/onboarding/config/testimonials.ts`
- * rather than rewritten — a landing page that puts stronger words in a user's
- * mouth than the app does is the first thing to break trust in both.
+ * There were three quotes here, copied from the onboarding. They were written
+ * by us — `testimonials.ts` says so — and there is no listing yet, so there are
+ * no users to have said them. On a health product a made-up review is an FTC
+ * problem as well as a trust one, and the page already refuses a rating block
+ * for the same reason. Real reviews go back in once the store has some.
+ *
+ * Until then the page shows what can be checked: three mechanisms, each with
+ * the page that proves it. Every number comes from `PROGRAM`.
  */
-const QUOTES = [
+const HOW = [
   {
-    before: 'Six months of shin pain, and I ran a ',
-    lead: 'pain-free 10k',
-    after: ' eight weeks in.',
-    name: 'Marta K.',
-    detail: 'Running 4 years',
+    title: 'It steps back on bad mornings',
+    text: 'Log this morning’s heel pain in one tap. A high number shortens the session and drops a level; a long day on your feet takes the loaded work out. It never speeds up on a good day.',
+    href: '/program/',
+    link: 'How the plan adapts',
   },
   {
-    before: 'It found my ',
-    lead: 'calves, not my knees.',
-    after: ' The strength work finally made sense.',
-    name: 'Daniel R.',
-    detail: 'Half marathon, 1:38',
+    title: `A retest every ${PROGRAM.blockDays} days`,
+    text: `${PROGRAM.retestTests} physical tests in ${PROGRAM.retestMinutes} minutes — calf raises to failure, an arch hold, single-leg balance on both sides. Progress is measured, not guessed from how the week felt.`,
+    href: '/program/',
+    link: 'What the retests measure',
   },
   {
-    before: 'Back from an Achilles injury ',
-    lead: 'without losing the distance',
-    after: ' I’d already built.',
-    name: 'Priya S.',
-    detail: 'Marathon in training',
+    title: 'Built from the trials',
+    text: 'High-load calf strength and plantar-specific stretching, at the doses the published trials used and in the order the 2023 clinical guideline for heel pain recommends.',
+    href: '/science/',
+    link: 'Read the evidence',
   },
 ] as const;
 
@@ -76,18 +76,26 @@ export default function Home() {
             exercises, never treatment" — and a page promising what the app
             refuses to promise is where a user's trust in it starts to go.
           */}
+          {/*
+            The headline names the problem the way people search for it. The
+            old one — "Run without second-guessing" — was the best line on the
+            page and matched no query anyone types, so the page ranked for
+            nothing. The paragraph under it answers the query in its first
+            sentence, which is the passage a search snippet or an AI answer
+            lifts.
+          */}
           <h1>
-            Run without
-            <span>second-guessing</span>
+            Heel pain
+            <span>from running?</span>
           </h1>
-
           <p>
-            A daily plan that changes when your legs do. Five to seven minutes,
-            written for you rather than for runners in general — and it steps
-            back on the mornings you need it to.
+            Walkito is a {PROGRAM.weeks}-week exercise program for heel and foot
+            pain in runners: {PROGRAM.sessionMinutesMin} to{' '}
+            {PROGRAM.sessionMinutesMax} minutes a day of calf strength,
+            stretching and balance work, a retest every {PROGRAM.blockDays} days,
+            and a plan that steps back on the mornings your heel says it should.
           </p>
-
-          <AppStoreBadge />
+          <AppStoreBadge campaign="home-hero" anchor />
 
           <div className="shot">
             <Image
@@ -101,23 +109,22 @@ export default function Home() {
         </section>
 
         <section className="shell proof">
-          <h2>What it changed</h2>
-
+          <h2>How it works</h2>
           <div className="quotes">
-            {QUOTES.map((quote) => (
-              <figure key={quote.name}>
-                <blockquote>
-                  {quote.before}
-                  <b>{quote.lead}</b>
-                  {quote.after}
-                </blockquote>
-                <figcaption>
-                  <b>{quote.name}</b>
-                  {quote.detail}
-                </figcaption>
+            {HOW.map((item) => (
+              <figure key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+                <a href={item.href}>{item.link} →</a>
               </figure>
             ))}
           </div>
+          <p className="notice">
+            Walkito is an exercise program. It does not diagnose and does not
+            treat. If pain is sharp, getting worse, or stopping you sleeping,
+            see a clinician.
+          </p>
+          <AppStoreBadge campaign="home-bottom" />
         </section>
       </main>
 

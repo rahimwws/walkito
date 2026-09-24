@@ -38,12 +38,14 @@ const anton = Anton({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Walkito — Run without second-guessing',
+    // The home page's title is this default, so it carries the query the
+    // page is built for rather than the tagline.
+    default: 'Heel Pain Exercises for Runners — a 12-Week Program | Walkito',
     // Every page supplies its own unique half; this appends the brand.
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    'A daily plan that changes when your legs do. Five to seven minutes, written for you rather than for runners in general.',
+    'A 12-week exercise program for heel and foot pain in runners: 3 to 8 minutes a day, a retest every two weeks, and a plan that steps back on bad mornings.',
   alternates: { canonical: '/' },
   robots: {
     index: true,
@@ -63,8 +65,8 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'Walkito — Run without second-guessing',
-    description: 'A daily plan that changes when your legs do.',
+    title: 'Heel pain from running? A 12-week program | Walkito',
+    description: 'Calf strength, stretching and balance work, 3 to 8 minutes a day, that steps back on bad mornings.',
     url: '/',
     siteName: SITE_NAME,
     // No `images` here on purpose: `app/opengraph-image.tsx` supplies the card
@@ -75,8 +77,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Walkito — Run without second-guessing',
-    description: 'A daily plan that changes when your legs do.',
+    title: 'Heel pain from running? A 12-week program | Walkito',
+    description: 'Calf strength, stretching and balance work, 3 to 8 minutes a day, that steps back on bad mornings.',
   },
   // iOS shows a native install strip when this is present. Omitted until there
   // is a listing: a banner pointing at a guessed id is a dead strip on every

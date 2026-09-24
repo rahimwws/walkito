@@ -21,12 +21,14 @@ import { SITE_NAME, SITE_URL } from '@/lib/site';
  * where they would have gone.
  */
 export const metadata: Metadata = {
-  title: 'The Evidence Behind the Program',
+  // The supporting page for the home page's query: it answers the question
+  // people ask on the way to choosing a program — does exercise help, and which.
+  title: 'Exercises for Heel Pain: What the Research Says',
   description:
     'Walkito is built from published rehabilitation research — progressive loading, intrinsic foot strengthening, and the stretching protocols clinical guidelines recommend.',
   alternates: { canonical: '/science' },
   openGraph: {
-    title: `The Evidence Behind the Program | ${SITE_NAME}`,
+    title: `Exercises for Heel Pain: What the Research Says | ${SITE_NAME}`,
     description:
       'The trials the program follows, what they found, and where their evidence stops.',
     url: '/science',
@@ -52,7 +54,7 @@ const CITATIONS = [
 const ARTICLE = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'The Evidence Behind the Program',
+  headline: 'Exercises for Heel Pain: What the Research Says',
   description:
     'The published trials and clinical guidelines the Walkito program follows, what they found, and where their evidence stops.',
   publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
@@ -77,7 +79,7 @@ export default function Science() {
       <Masthead />
 
       <main className="shell prose">
-        <h1>The evidence behind the program</h1>
+        <h1>Exercises for heel pain: what the research says</h1>
 
         <p className="lede">
           Walkito is not a set of exercises we invented. It follows published
@@ -261,7 +263,7 @@ export default function Science() {
           night, or if one arch has flattened suddenly as an adult.
         </p>
 
-        <AppStoreBadge />
+        <AppStoreBadge campaign="science" />
       </main>
 
       <Footer />

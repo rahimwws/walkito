@@ -14,6 +14,16 @@ bun run dev       # http://localhost:3000
 bun run build     # static files in ./out
 ```
 
+Deploy is an upload of `out/` to `/var/www/walkito` on the droplet nginx
+serves it from (`rsync -az --delete out/ root@161.35.52.54:/var/www/walkito/`),
+then `node scripts/indexnow.mjs` so Bing re-crawls straight away.
+
+`public/google2e55515ad29a0837.html` and `public/BingSiteAuth.xml` prove
+ownership to Search Console and Bing Webmaster Tools (account
+rahimwws.me@gmail.com). They live in `public/` because `--delete` would wipe
+anything kept only on the server, and a property that loses its file loses
+verification.
+
 `output: 'export'` means the build is plain HTML, CSS and images — point any
 static host at `out/` (Vercel, Netlify, Cloudflare Pages, GitHub Pages, an S3
 bucket) and it works. `trailingSlash` is on so `/privacy` resolves on hosts that
@@ -35,8 +45,13 @@ element of the page. Body copy is the system rounded stack, matching the app.
 
 ## Before it goes live
 
-- **The button links to `#`.** There is no App Store listing yet, so there is no
-  URL. Set `href` once on `<AppStoreBadge />` in `app/page.tsx`.
+- **The buttons say "Coming soon" until there is a listing.** On launch, set
+  `APP_STORE_URL` in `lib/site.ts` (`https://apps.apple.com/app/id6813076846`)
+  and every button on the site becomes a link. Also set
+  `APP_STORE_PROVIDER_TOKEN` from App Store Connect → App Analytics →
+  Campaigns: each button already names its `ct` (`home-hero`, `home-bottom`,
+  `masthead`, `program`, `science`, `faq`), so App Analytics then reports which
+  page sent each download — the site's only conversion signal, with no tracker.
 - **The button is ours, not Apple's.** The official "Download on the App Store"
   lockup is a licensed asset with its own clear-space rules; an imitation of it
   is a trademark problem rather than a shortcut. This is plainly our own pill,
@@ -48,12 +63,13 @@ element of the page. Body copy is the system rounded stack, matching the app.
 
 ## Where the copy came from
 
-Nothing was written for marketing. The headline, the subtitle and all three
-quotes are the app's own strings, chosen under the product's own rule: no word
+Nothing was written for marketing, with one exception: the home headline names
+the query the page is built for (heel pain from running) rather than the app's
+tagline, which matched nothing anyone searches. The rest are the app's own strings, chosen under the product's own rule: no word
 implying diagnosis or cure — "screening, program, exercises, never treatment".
 
 - Headline and subtitle — `src/pages/onboarding/model/steps.ts`
-- Quotes — `src/pages/onboarding/config/testimonials.ts`
+- Quotes — none. The onboarding ones were written by us, so they stay off the site until the store has real reviews
 - Support tone — the Home Screen quick action in `app.json`
 - Colours — `src/shared/config/theme.ts`
 

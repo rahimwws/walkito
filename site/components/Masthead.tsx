@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { storeHref } from '@/lib/site';
+
 /** The arrow inside the header button. Inline rather than an icon package: one
  * glyph is not worth a dependency, and an SVG in the markup cannot arrive late. */
 function DownloadGlyph() {
@@ -19,14 +21,16 @@ function DownloadGlyph() {
 }
 
 /**
- * The header, identical on all three pages.
+ * The header, identical on every page.
  *
- * `href` on the button points at the badge further down rather than straight at
- * the App Store. Until there is a listing there is no URL, and a button that
- * silently does nothing is worse than one that moves you to the thing you came
- * for — see the note on the badge itself.
+ * Once there is a listing the button goes straight to it, tagged `masthead` so
+ * App Analytics can tell it apart from the badges in the page body. Until then
+ * it moves you to the badge further down, which says plainly that the app is
+ * not out yet — see the note on the badge itself.
  */
 export function Masthead() {
+  const href = storeHref('masthead');
+
   return (
     <header className="shell masthead">
       <Link className="brand" href="/">
@@ -42,10 +46,17 @@ export function Masthead() {
         <Link href="/privacy/">Privacy</Link>
       </nav>
 
-      <Link className="download" href="/#get">
-        Download App
-        <DownloadGlyph />
-      </Link>
+      {href ? (
+        <a className="download" href={href}>
+          Download App
+          <DownloadGlyph />
+        </a>
+      ) : (
+        <Link className="download" href="/#get">
+          Coming soon
+          <DownloadGlyph />
+        </Link>
+      )}
     </header>
   );
 }

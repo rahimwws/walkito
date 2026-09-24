@@ -38,8 +38,41 @@ export const PROGRAM = {
 } as const;
 
 /** Where the App Store listing will live. Null until it exists — a button
- * pointing at a guessed URL is worse than one that scrolls. */
+ * pointing at a guessed URL is worse than one that scrolls.
+ *
+ * The app's Apple ID is 6813076846 (`ascAppId` in `eas.json`), so once the
+ * listing is public this becomes `https://apps.apple.com/app/id6813076846`.
+ * `apps.apple.com` 404s on it until then. */
 export const APP_STORE_URL: string | null = null;
+
+/**
+ * The provider token from App Store Connect → App Analytics → Campaigns.
+ *
+ * This is how the site counts conversions without a tracker. A link carrying
+ * `pt` and `ct` shows up in App Analytics as a campaign, with impressions,
+ * downloads and proceeds per `ct` — so each button on the site names itself and
+ * the store reports which page sent the install. No cookie, no SDK, and the
+ * privacy page stays true as written.
+ */
+export const APP_STORE_PROVIDER_TOKEN: string | null = null;
+
+/**
+ * Where a download button points, named by the place it sits.
+ *
+ * Null before launch: there is nothing to download, and a pill that reads "Get
+ * the app" and scrolls to itself is the page promising what it cannot do. Every
+ * button still carries its campaign name, so launch is one constant here rather
+ * than a hunt through the pages.
+ */
+export function storeHref(campaign: string): string | null {
+  if (!APP_STORE_URL) return null;
+  if (!APP_STORE_PROVIDER_TOKEN) return APP_STORE_URL;
+  const url = new URL(APP_STORE_URL);
+  url.searchParams.set('pt', APP_STORE_PROVIDER_TOKEN);
+  url.searchParams.set('ct', campaign);
+  url.searchParams.set('mt', '8');
+  return url.toString();
+}
 
 /** The numeric id for the iOS Smart App Banner, once there is a listing. */
 export const APPLE_APP_ID: string | null = null;
@@ -57,4 +90,4 @@ export const SUPPORT_EMAIL = 'hello@walkito.app';
  * being reachable at the site root, so it is checked in deliberately: a key
  * held only in someone's shell history is a key nobody can re-submit with.
  */
-export const INDEXNOW_KEY = '';
+export const INDEXNOW_KEY = 'b12b80b67ebf6ee0111493fef69eb7de';
