@@ -13,9 +13,11 @@
 
 import { useSyncExternalStore } from 'react';
 
+import { track } from '@/shared/lib/analytics';
 import { kv } from '@/shared/lib/storage';
 
-import { lastDayOf, type PlanLength } from './blocks';
+import { blockFor, lastDayOf, type PlanLength } from './blocks';
+import { kindFor } from './day-templates';
 
 /** The program's own phase. Maintenance is not the end; it is the second half. */
 export type ProgramPhase = 'program' | 'maintenance';
@@ -421,6 +423,21 @@ export function writeLog(
 ): DayLog {
   const existing = logs[dayNumber] ?? emptyLog(dayNumber, toDateKey(new Date(now)));
   const next: DayLog = { ...existing, ...patch };
+  // On the transition only. Both the player and Today's ticks write the day
+  // repeatedly, and a completion counted once per write would inflate every
+  // retention chart built on it.
+  if (next.sessionCompleted && !existing.sessionCompleted) {
+    const block = blockFor(dayNumber, state.planLength);
+    track('session_completed', {
+      day: dayNumber,
+      block: block?.index ?? 0,
+      kind: kindFor(dayNumber),
+      checkpoint: block?.retestDay === dayNumber,
+    });
+  }
+  if (next.morningStretchDone && !existing.morningStretchDone) {
+    track('morning_stretch_done', { day: dayNumber });
+  }
   logs[dayNumber] = next;
   logsVersion += 1;
   kv.set(LOGS_KEY, JSON.stringify(logs));
@@ -461,6 +478,9 @@ export function logPain(
   const existing = logs[dayNumber];
   const entry: PainEntry = { score, at: now, ...(zones.length > 0 ? { zones: [...zones] } : {}) };
   const entries = [...(existing?.painEntries ?? []), entry];
+  // That a check-in happened, and how many there have been today. Never the
+  // score or the zones — see the note at the top of `shared/lib/analytics`.
+  track('checkin_logged', { day: dayNumber, entries_today: entries.length });
 
   return writeLog(
     dayNumber,

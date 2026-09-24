@@ -168,6 +168,16 @@ export const ONBOARDING_ES = {
   'onboarding.challenge.recovery': 'Recuperarme más rápido',
   'onboarding.challenge.strength': 'Ponerme más fuerte',
   'onboarding.challenge.injury': 'Evitar otra lesión',
+
+  'onboarding.source.title': '¿Cómo conociste Walkito?',
+  'onboarding.source.blurb': 'Un toque. Nos ayuda a llegar a gente como tú.',
+  'onboarding.source.tiktok': 'TikTok',
+  'onboarding.source.instagram': 'Instagram',
+  'onboarding.source.youtube': 'YouTube',
+  'onboarding.source.friend': 'Me lo recomendó alguien',
+  'onboarding.source.appStore': 'Buscando en la App Store',
+  'onboarding.source.google': 'Búsqueda en Google',
+  'onboarding.source.other': 'En otro sitio',
   'onboarding.challenge.swapped': 'Solo {count} a la vez: se quitó «{label}».',
 
   // ── Health ───────────────────────────────────────────────────────────────

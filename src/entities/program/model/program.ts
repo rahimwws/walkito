@@ -21,6 +21,7 @@
  *   `pain-check.tsx` from inheriting a strength day's prescription.
  */
 
+import { track } from '@/shared/lib/analytics';
 import { getLanguage, translatorFor, type Key, type Translate } from '@/shared/lib/i18n';
 import { useSyncExternalStore } from 'react';
 
@@ -478,6 +479,7 @@ export function recordRetest(day: number, measured: RetestMeasurements): Retest 
   recordRetestResult(day, measured, retest);
   persistRetests();
   for (const listener of retestSubscribers) listener();
+  track('retest_completed', { day, block: blockIndexForRetest(day) });
   return retest;
 }
 
