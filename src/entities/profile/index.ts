@@ -8,4 +8,11 @@ export {
   useProfileEmail,
   useProfileName,
 } from './model/profile';
-export { getIntake, resetIntake, saveIntake, useIntake, type Intake } from './model/intake';
+export {
+  getIntake,
+  raceDaysLeft,
+  resetIntake,
+  saveIntake,
+  useIntake,
+  type Intake,
+} from './model/intake';

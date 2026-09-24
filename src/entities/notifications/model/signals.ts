@@ -30,10 +30,12 @@ import {
   resolveMaintenanceDay,
   streakThrough,
   toDateKey,
+  usualSessionMinute,
   type ResolvedDay,
 } from '@/entities/program';
 
-import { GAIT_PAIN_GATE, type DaySignals } from './ladder';
+import { currentAudience, daysUntil } from './audience';
+import { GAIT_PAIN_GATE, sessionAtFor, type DaySignals } from './ladder';
 import { lastOpenedOn, openedOn } from './opens';
 import { observeWake, wakeMinutes } from './wake';
 
@@ -94,6 +96,8 @@ export function signalsFor(dayNumber: number, now: number, today: number): DaySi
   const block = blockFor(dayNumber, state.planLength);
   const isToday = dayNumber === today;
   const streak = streakThrough(today);
+  const wakeAt = wakeMinutes() + AFTER_WAKE_MINUTES;
+  const audience = currentAudience();
 
   // Only the day being scheduled *now* may use live health readings. Beyond
   // that they are stale by construction.
@@ -102,7 +106,10 @@ export function signalsFor(dayNumber: number, now: number, today: number): DaySi
   return {
     dateKey,
     dayNumber,
-    wakeAt: wakeMinutes() + AFTER_WAKE_MINUTES,
+    wakeAt,
+    sessionAt: sessionAtFor(wakeAt, usualSessionMinute(today)),
+    raceDaysLeft: audience.raceDate == null ? null : daysUntil(dateKey, audience.raceDate),
+    sport: audience.sport,
 
     painYesterday: painOn(dayNumber - 1),
     painRecently: painRecently(dayNumber),

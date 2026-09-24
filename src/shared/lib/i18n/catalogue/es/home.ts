@@ -45,6 +45,16 @@ export const HOME_ES = {
   'home.dayOfPlan': 'día {day} de {total}',
   'home.steps': { one: '{steps} paso', other: '{steps} pasos' },
 
+  'home.daysToRace': { one: '{count} día para la carrera', other: '{count} días para la carrera' },
+  // Con preposición, y a veces con verbo: «a correr», «al tenis».
+  'home.backTo.running': 'a correr',
+  'home.backTo.tennis': 'al tenis',
+  'home.backTo.gym': 'al gimnasio',
+  'home.backTo.football': 'al fútbol',
+  'home.backTo.basketball': 'al baloncesto',
+  'home.backTo.cycling': 'a la bici',
+  'home.backTo.hiking': 'a la montaña',
+
   // ── Units ────────────────────────────────────────────────────────────────
   'home.km': '{value} km',
   'home.percent': '{value}%',
@@ -514,6 +524,55 @@ export const BRIEF_ES = {
       { k: 'frame', text: 'todavía hay poca historia tuya.' },
       { k: 'metric', icon: 'window', text: 'Unos días más' },
       { k: 'frame', text: 'y podré comparar.' },
+    ],
+  ],
+
+  'goal-race': [
+    [
+      { k: 'metric', icon: 'window', text: '{raceDays}', tail: '.' },
+      { k: 'frame', text: 'La sesión de hoy es parte de llegar con un pie que aguante.' },
+    ],
+    [
+      { k: 'frame', text: 'cuenta atrás:' },
+      { k: 'metric', icon: 'window', text: '{raceDays}', tail: '.' },
+      { k: 'frame', text: 'Dosis pequeñas ahora valen más que una gran semana después.' },
+    ],
+  ],
+
+  'goal-back': [
+    [
+      { k: 'frame', text: 'cada sesión es un paso para volver' },
+      { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
+      { k: 'frame', text: 'Hoy son' },
+      { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'el camino para volver' },
+      { k: 'metric', icon: 'session', text: '{backTo}' },
+      { k: 'frame', text: 'se hace con días como este:' },
+      { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+  ],
+
+  'goal-consistent': [
+    [
+      { k: 'frame', text: 'dijiste que la meta es la constancia:' },
+      { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
+      { k: 'frame', text: 'Hoy la mantiene.' },
+    ],
+  ],
+
+  'goal-stronger': [
+    [
+      { k: 'frame', text: 'la fuerza llega con la repetición, no con la intensidad. Hoy:' },
+      { k: 'metric', icon: 'level', text: '{work}', tail: '.' },
+    ],
+  ],
+
+  'goal-injuryfree': [
+    [
+      { k: 'frame', text: 'evitar lesiones es dosis pequeñas y frecuentes. Hoy son' },
+      { k: 'value', text: '{minutes}', tail: '.' },
     ],
   ],
 

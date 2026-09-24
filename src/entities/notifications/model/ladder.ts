@@ -13,6 +13,7 @@
  */
 
 import {
+  QUIET_FROM_MINUTES,
   BACKOFF_AFTER,
   ESSENTIAL_THROUGH,
   blockedReason,
@@ -92,6 +93,24 @@ export const WINBACK_DAYS = [3, 10, 30] as const;
 export const RETEST_FOLLOW_UP = true;
 export const FOLLOW_UP_HOURS = 6;
 
+/** The reminder lands this long before they usually finish — roughly when they
+ * usually start, since the sessions are five to ten minutes long. */
+export const SESSION_LEAD_MINUTES = 20;
+/** And never later than this: an hour's margin before the evening boundary. */
+const LATEST_SESSION_AT = QUIET_FROM_MINUTES - 60;
+
+/**
+ * When the session reminder should land.
+ *
+ * Their habit, when there is one, clamped so it never lands before they are
+ * awake or inside the evening quiet. Read once from the days before today, so
+ * the whole planned week uses the same time.
+ */
+export function sessionAtFor(wakeAt: number, habit: number | null): number {
+  if (habit == null) return wakeAt;
+  return Math.min(Math.max(habit - SESSION_LEAD_MINUTES, wakeAt), LATEST_SESSION_AT);
+}
+
 /** Minutes past midnight, for the rows that do not ride the wake time. */
 export const GAIT_AT = 18 * 60;
 export const CHECKIN_AT = 20 * 60;
@@ -137,6 +156,15 @@ export type DaySignals = {
 
   /** There is training today. Rest days get nothing. */
   hasSession: boolean;
+  /**
+   * Minutes past midnight the session reminder should land, when this person
+   * has a habit of training at a particular time. Absent means the wake time.
+   */
+  sessionAt?: number;
+  /** Days to their race on this date, when they gave one. */
+  raceDaysLeft?: number | null;
+  /** Their sport, for the one session line that names it. */
+  sport?: string | null;
   minutes: number;
   kind: string | null;
   maintenance: boolean;
@@ -204,7 +232,10 @@ export function candidates(signals: DaySignals, state: DeliveryState): Candidate
   if (signals.planChanged) add('plan', signals.wakeAt);
 
   // 7. The default, and only on days with work. Rest days get nothing at all.
-  if (signals.hasSession) add('session', signals.wakeAt);
+  // At the time they usually train, once there is a habit to read; until then,
+  // just after waking. The reminder is about doing the session, and a nudge at
+  // 7:15 for somebody who always trains at lunch is a nudge they swipe away.
+  if (signals.hasSession) add('session', signals.sessionAt ?? signals.wakeAt);
 
   // 8. Never on a day the user already came in — they have answered the
   //    question the check-in exists to ask.

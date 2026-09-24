@@ -87,6 +87,20 @@ export const HOME_EN = {
    */
   'home.steps': { one: '{steps} step', other: '{steps} steps' },
 
+  /** Days to the race the user named in onboarding. */
+  'home.daysToRace': { one: '{count} day to race day', other: '{count} days to race day' },
+  /**
+   * "Back to" a sport, preposition included — see `BACK_TO` in `brief.ts`.
+   * Russian needs the dative after «к», Spanish sometimes a verb.
+   */
+  'home.backTo.running': 'to running',
+  'home.backTo.tennis': 'to tennis',
+  'home.backTo.gym': 'to the gym',
+  'home.backTo.football': 'to football',
+  'home.backTo.basketball': 'to basketball',
+  'home.backTo.cycling': 'to the bike',
+  'home.backTo.hiking': 'to the trails',
+
   // ── Units ────────────────────────────────────────────────────────────────
   // Separate from the phrases above because they are typography rather than
   // grammar: where the unit sits, and whether a space precedes it.
@@ -590,6 +604,58 @@ export const BRIEF_EN = {
       { k: 'frame', text: 'not enough of your own history yet.' },
       { k: 'metric', icon: 'window', text: 'A few more days' },
       { k: 'frame', text: 'and I can compare.' },
+    ],
+  ],
+
+  // ── Their goal ───────────────────────────────────────────────────────────
+  // Never a promise about the outcome. A countdown is a date, "the way back"
+  // is a direction, and neither says the heel will be fine by then.
+  'goal-race': [
+    [
+      { k: 'metric', icon: 'window', text: '{raceDays}', tail: '.' },
+      { k: 'frame', text: 'Today’s {work} is part of getting there on a foot that holds up.' },
+    ],
+    [
+      { k: 'frame', text: 'race countdown:' },
+      { k: 'metric', icon: 'window', text: '{raceDays}', tail: '.' },
+      { k: 'frame', text: 'Small doses now beat a big week later.' },
+    ],
+  ],
+
+  'goal-back': [
+    [
+      { k: 'frame', text: 'every session is a step back' },
+      { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
+      { k: 'frame', text: 'Today it’s' },
+      { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'the way back' },
+      { k: 'metric', icon: 'session', text: '{backTo}' },
+      { k: 'frame', text: 'is built from days like this one —' },
+      { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+  ],
+
+  'goal-consistent': [
+    [
+      { k: 'frame', text: 'you said consistency is the goal —' },
+      { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
+      { k: 'frame', text: 'Today keeps it going.' },
+    ],
+  ],
+
+  'goal-stronger': [
+    [
+      { k: 'frame', text: 'stronger is the goal, and it comes from repetition, not intensity. Today:' },
+      { k: 'metric', icon: 'level', text: '{work}', tail: '.' },
+    ],
+  ],
+
+  'goal-injuryfree': [
+    [
+      { k: 'frame', text: 'staying injury-free is small doses, often. Today’s is' },
+      { k: 'value', text: '{minutes}', tail: '.' },
     ],
   ],
 

@@ -105,6 +105,11 @@ export const OFFER_ES = {
   'widgets.retestChange': '{from} → {to}',
   'widgets.retestLevel': 'Nv {level}',
   'widgets.retestDone': 'Listo',
+  'widgets.retestGoal.painfree': 'Viniste por mañanas sin dolor de talón. Estos números son el pie acercándose a eso.',
+  'widgets.retestGoal.race': 'Te preparas para una carrera. Unas pantorrillas más fuertes y un pie más estable son lo que te lleva a la salida.',
+  'widgets.retestGoal.consistent': 'Dijiste que la meta era la constancia. Esto es lo que suma.',
+  'widgets.retestGoal.stronger': 'Querías ser más fuerte. Aquí es donde se nota primero.',
+  'widgets.retestGoal.injuryfree': 'Querías evitar lesiones. Un pie que se mide más fuerte es más difícil de lesionar.',
 
   // ── Session player: the counter line ─────────────────────────────────────
   // Una palabra por fase: se lee a dos metros y cambia cada tres segundos.

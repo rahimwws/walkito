@@ -106,6 +106,11 @@ export const OFFER_RU = {
   'widgets.retestChange': '{from} → {to}',
   'widgets.retestLevel': 'Ур. {level}',
   'widgets.retestDone': 'Готово',
+  'widgets.retestGoal.painfree': 'Вы пришли за утрами без боли в пятке. Эти цифры — стопа на пути к этому.',
+  'widgets.retestGoal.race': 'Вы готовитесь к старту. Сильные икры и устойчивая стопа — то, что донесёт вас до стартовой линии.',
+  'widgets.retestGoal.consistent': 'Вы выбрали регулярность. Вот во что она складывается.',
+  'widgets.retestGoal.stronger': 'Вы хотели стать сильнее. Здесь это видно раньше всего.',
+  'widgets.retestGoal.injuryfree': 'Вы хотели обойтись без травм. Сильную стопу травмировать труднее.',
 
   // ── Session player: the counter line ─────────────────────────────────────
   // Одно слово на каждую фазу: это читают с двух метров, стоя на одной ноге.

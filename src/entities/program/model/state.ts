@@ -568,3 +568,29 @@ export function hoursBaseline(dayNumber: number, window = 28, minimum = 5): numb
   const middle = Math.floor(values.length / 2);
   return values.length % 2 === 0 ? (values[middle - 1] + values[middle]) / 2 : values[middle];
 }
+
+/**
+ * When this person usually finishes a session, minutes past midnight.
+ *
+ * A median over the completion stamps of the last three weeks, so one late
+ * night does not move it. Null until there are enough to be a habit — five
+ * sessions is the floor, below which "usually" would be a guess.
+ *
+ * What it is for: the session reminder used to land a quarter of an hour
+ * after waking for everyone, including the people who always train at lunch.
+ */
+export function usualSessionMinute(dayNumber: number, window = 21, minimum = 5): number | null {
+  const minutes: number[] = [];
+  for (let day = Math.max(1, dayNumber - window); day < dayNumber; day += 1) {
+    const at = logs[day]?.completedAt;
+    if (at == null) continue;
+    const d = new Date(at);
+    minutes.push(d.getHours() * 60 + d.getMinutes());
+  }
+  if (minutes.length < minimum) return null;
+  minutes.sort((a, b) => a - b);
+  const middle = Math.floor(minutes.length / 2);
+  return minutes.length % 2 === 0
+    ? Math.round((minutes[middle - 1] + minutes[middle]) / 2)
+    : minutes[middle];
+}

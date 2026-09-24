@@ -32,6 +32,13 @@ export type Intake = {
   weightKg: number | null;
   shoe: { size: number; unit: 'eu' | 'us' } | null;
   watch: string | null;
+  /**
+   * The race, as a local `YYYY-MM-DD`, estimated from "in about two months".
+   *
+   * Optional in the stored shape because answers kept before the question
+   * existed have no such field.
+   */
+  raceDate?: string | null;
   /** When the flow finished, epoch ms. */
   completedAt: number;
 };
@@ -79,4 +86,25 @@ export function resetIntake(): void {
   intake = null;
   kv.remove(KEY);
   for (const listener of subscribers) listener();
+}
+
+const DAY_MS = 86_400_000;
+
+function midnight(ms: number): number {
+  const d = new Date(ms);
+  d.setHours(0, 0, 0, 0);
+  return d.getTime();
+}
+
+/**
+ * Whole days until the race, or null without one.
+ *
+ * Negative once it has passed — callers decide what a finished countdown
+ * says, and most say nothing.
+ */
+export function raceDaysLeft(from: Intake | null, now: number = Date.now()): number | null {
+  const date = from?.raceDate;
+  if (date == null || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return null;
+  const [y, m, d] = date.split('-').map(Number);
+  return Math.round((new Date(y, m - 1, d).getTime() - midnight(now)) / DAY_MS);
 }

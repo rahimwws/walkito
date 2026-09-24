@@ -135,6 +135,7 @@ export {
   fromDateKey,
   hoursBaseline,
   hoursOnFeetOn,
+  usualSessionMinute,
   logFor,
   painAverage,
   logPain,

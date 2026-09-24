@@ -35,6 +35,21 @@ const FIRST_GUESS: Record<Field, number> = { calf: 10, otherCalf: 12, arch: 20, 
  * times a hold by eye. */
 const STEP: Record<Field, number> = { calf: 1, otherCalf: 1, arch: 5, balance: 5 };
 
+/**
+ * What they came for, said back to them on the result screen.
+ *
+ * The one moment the numbers mean most, and the moment to connect them to the
+ * reason the person started — in their words from onboarding, not ours. A
+ * reminder of the goal, never a verdict on whether they are on track for it.
+ */
+const GOAL_KEY: Readonly<Record<string, Key>> = {
+  painfree: 'widgets.retestGoal.painfree',
+  race: 'widgets.retestGoal.race',
+  consistent: 'widgets.retestGoal.consistent',
+  stronger: 'widgets.retestGoal.stronger',
+  injuryfree: 'widgets.retestGoal.injuryfree',
+};
+
 const ZONE_KEY: Record<ZoneKey, Key> = {
   calf: 'pages.program.zoneCalf',
   arch: 'pages.program.zoneArch',
@@ -134,6 +149,9 @@ export function RetestEntrySheet({ visible, dayNumber, onDone }: RetestEntryShee
         <Text style={[styles.blurb, { color: meter.caption }]}>
           {result == null ? t('widgets.retestEntryBlurb') : t('widgets.retestResultBlurb')}
         </Text>
+        {result != null && intake?.goal != null && GOAL_KEY[intake.goal] != null && (
+          <Text style={[styles.goal, { color: colors.foreground }]}>{t(GOAL_KEY[intake.goal])}</Text>
+        )}
 
         {result == null
           ? rows.map((row) => (
@@ -238,6 +256,11 @@ const styles = StyleSheet.create({
   blurb: {
     fontSize: 15,
     fontFamily: fonts.regular,
+    marginBottom: 8,
+  },
+  goal: {
+    fontSize: 16,
+    fontFamily: fonts.medium,
     marginBottom: 8,
   },
   row: {

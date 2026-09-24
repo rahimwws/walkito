@@ -60,6 +60,20 @@ export const HOME_RU = {
   'home.dayOfPlan': 'день {day} из {total}',
   'home.steps': { one: '{steps} шаг', few: '{steps} шага', many: '{steps} шагов' },
 
+  'home.daysToRace': {
+    one: '{count} день до старта',
+    few: '{count} дня до старта',
+    many: '{count} дней до старта',
+  },
+  // С предлогом и в дательном падеже — «к бегу», «к теннису».
+  'home.backTo.running': 'к бегу',
+  'home.backTo.tennis': 'к теннису',
+  'home.backTo.gym': 'к тренировкам в зале',
+  'home.backTo.football': 'к футболу',
+  'home.backTo.basketball': 'к баскетболу',
+  'home.backTo.cycling': 'к велосипеду',
+  'home.backTo.hiking': 'к походам',
+
   // ── Units ────────────────────────────────────────────────────────────────
   'home.km': '{value} км',
   'home.percent': '{value}%',
@@ -533,6 +547,55 @@ export const BRIEF_RU = {
       { k: 'frame', text: 'вашей истории пока маловато.' },
       { k: 'metric', icon: 'window', text: 'Ещё несколько дней' },
       { k: 'frame', text: '— и я смогу сравнивать.' },
+    ],
+  ],
+
+  'goal-race': [
+    [
+      { k: 'metric', icon: 'window', text: '{raceDays}', tail: '.' },
+      { k: 'frame', text: 'Сегодняшняя сессия — часть того, чтобы стопа выдержала старт.' },
+    ],
+    [
+      { k: 'frame', text: 'обратный отсчёт:' },
+      { k: 'metric', icon: 'window', text: '{raceDays}', tail: '.' },
+      { k: 'frame', text: 'Маленькие дозы сейчас лучше большой недели потом.' },
+    ],
+  ],
+
+  'goal-back': [
+    [
+      { k: 'frame', text: 'каждая сессия — шаг обратно' },
+      { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
+      { k: 'frame', text: 'Сегодня это' },
+      { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'дорога обратно' },
+      { k: 'metric', icon: 'session', text: '{backTo}' },
+      { k: 'frame', text: 'складывается из таких дней, как этот —' },
+      { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+  ],
+
+  'goal-consistent': [
+    [
+      { k: 'frame', text: 'вы выбрали регулярность —' },
+      { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
+      { k: 'frame', text: 'Сегодняшний день её продолжает.' },
+    ],
+  ],
+
+  'goal-stronger': [
+    [
+      { k: 'frame', text: 'сила приходит от повторения, а не от интенсивности. Сегодня:' },
+      { k: 'metric', icon: 'level', text: '{work}', tail: '.' },
+    ],
+  ],
+
+  'goal-injuryfree': [
+    [
+      { k: 'frame', text: 'без травм — это маленькие дозы, но часто. Сегодня это' },
+      { k: 'value', text: '{minutes}', tail: '.' },
     ],
   ],
 

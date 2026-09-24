@@ -105,6 +105,14 @@ export const ONBOARDING_ES = {
   'onboarding.goal.stronger': 'Fortalecer las piernas',
   'onboarding.goal.injuryfree': 'Evitar lesiones',
 
+  'onboarding.raceWhen.title': '¿Cuándo es la carrera, {name}?',
+  'onboarding.raceWhen.blurb': 'Aproximado está bien. Marca la cuenta atrás del plan.',
+  'onboarding.raceWhen.month': 'En más o menos un mes',
+  'onboarding.raceWhen.twoMonths': 'En unos dos meses',
+  'onboarding.raceWhen.threeMonths': 'En unos tres meses',
+  'onboarding.raceWhen.later': 'En cuatro meses o más',
+  'onboarding.raceWhen.none': 'Aún sin fecha',
+
   // ── Pain ─────────────────────────────────────────────────────────────────
   'onboarding.pain.title': '¿Qué te está frenando, {name}?',
   'onboarding.pain.blurb': 'Marca todo lo que aplique. La mayoría elige más de una.',

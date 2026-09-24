@@ -344,6 +344,24 @@ export const STEPS: readonly OnboardingStep[] = [
     ],
   },
   {
+    // Only for a race. A rough answer rather than a date picker: people know
+    // "about two months" long before they know the date, and a countdown
+    // that is right to the week is all the plan needs.
+    kind: 'choice',
+    key: 'raceWhen',
+    act: 1,
+    title: (t) => t('onboarding.raceWhen.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.raceWhen.blurb'),
+    options: [
+      { value: '4', label: (t) => t('onboarding.raceWhen.month') },
+      { value: '8', label: (t) => t('onboarding.raceWhen.twoMonths') },
+      { value: '12', label: (t) => t('onboarding.raceWhen.threeMonths') },
+      { value: '16', label: (t) => t('onboarding.raceWhen.later') },
+      { value: 'none', label: (t) => t('onboarding.raceWhen.none') },
+    ],
+    skipWhen: (answers) => !chose(answers, 'goal', 'race'),
+  },
+  {
     kind: 'choice',
     key: 'pain',
     act: 1,

@@ -11,7 +11,7 @@ import {
   type SessionKind,
 } from '@/entities/program';
 import { NO_SIGNALS } from '@/entities/health/model/metrics';
-import { translatorFor, type Language, type Translate } from '@/shared/lib/i18n';
+import { translatorFor, type Key, type Language, type Translate } from '@/shared/lib/i18n';
 import { BRIEF_EN } from '@/shared/lib/i18n/catalogue/en/home';
 import { BRIEF_ES } from '@/shared/lib/i18n/catalogue/es/home';
 import { BRIEF_RU } from '@/shared/lib/i18n/catalogue/ru/home';
@@ -26,6 +26,7 @@ import { buildBrief, pickVariant } from '@/shared/ui/daily-brief/template';
 import type { BriefToken, BriefVariants } from '@/shared/ui/daily-brief';
 
 import {
+  SPORTS,
   readBrief,
   type BriefInput,
   type BriefReading,
@@ -61,6 +62,25 @@ export {
  * "high", never "limping", never "compensating". That constraint travels with
  * the copy: see the note at the top of each `catalogue/*\/home.ts`.
  */
+
+type Sport = (typeof SPORTS)[number];
+
+/**
+ * "…back to running", as a whole phrase per sport and language.
+ *
+ * The preposition is inside the phrase on purpose: Russian needs the dative
+ * after «к» («к бегу», «к теннису»), Spanish needs "a" or "al" and sometimes a
+ * verb («a correr»), and neither can be assembled from a bare sport name.
+ */
+const BACK_TO: Readonly<Record<Sport, Key>> = {
+  running: 'home.backTo.running',
+  tennis: 'home.backTo.tennis',
+  gym: 'home.backTo.gym',
+  football: 'home.backTo.football',
+  basketball: 'home.backTo.basketball',
+  cycling: 'home.backTo.cycling',
+  hiking: 'home.backTo.hiking',
+};
 
 /** Stands in for a figure the phone never supplied. An em dash, in every
  * language — it is punctuation rather than a word. */
@@ -229,6 +249,8 @@ export function briefParams(
             count: Math.round(health.stepsYesterday),
             steps: grouped(health.stepsYesterday, language),
           }),
+    raceDays: t('home.daysToRace', { count: Math.max(0, input.raceDaysLeft ?? 0) }),
+    backTo: t(BACK_TO[input.sport as Sport] ?? 'home.backTo.running'),
     stepsToday:
       input.stepsToday == null
         ? DASH

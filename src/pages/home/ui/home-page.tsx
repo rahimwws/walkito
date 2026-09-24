@@ -14,7 +14,7 @@ import {
   weekAttendance,
 } from '@/entities/program';
 import { useHealthSignals } from '@/entities/health';
-import { firstName, useProfileName } from '@/entities/profile';
+import { firstName, raceDaysLeft, useIntake, useProfileName } from '@/entities/profile';
 import { accents } from '@/shared/config';
 import { useLanguage } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -111,6 +111,9 @@ export function HomePage() {
   const [burst, setBurst] = useState(0);
   const name = useProfileName();
   const signals = useHealthSignals();
+  /** What they told us in onboarding — the goal and sport the brief can speak
+   * to. Null for anyone who installed before the answers were kept. */
+  const intake = useIntake();
   /** The cache outlives midnight. Until the first refresh of the day lands,
    * its "today" figures are yesterday's, and quoting them as today's would be
    * wrong by a whole day of walking. */
@@ -203,6 +206,9 @@ export function HomePage() {
                 // how the heel is — the check-in card sits right below.
                 stepsToday: signalsAreToday ? signals.stepsToday : null,
                 onFeetThreshold: signals.onFeetThreshold,
+                goal: intake?.goal ?? null,
+                sport: intake?.sport ?? null,
+                raceDaysLeft: raceDaysLeft(intake),
               },
               language,
             )}

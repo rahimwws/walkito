@@ -77,6 +77,10 @@ type Facts = {
   days: number;
   block: string;
   streak: number;
+  /** Days to the race on this date, or null. */
+  raceDays: number | null;
+  /** "back to running", resolved, or null without a sport we can name. */
+  backTo: string | null;
 };
 
 /**
@@ -98,6 +102,28 @@ const SESSION_LINES: readonly Line[] = [
   (t, f) => t('notifications.sessionCalves', { count: f.minutes }),
   (t) => t('notifications.sessionMobility'),
 ];
+
+/** The session line for someone with a race ahead: the day's work, then the
+ * countdown. Replaces the rotation outright — it is the one fact that changes
+ * every day. */
+const RACE_LINE: Line = (t, f) =>
+  t('notifications.sessionRace', { kind: f.kind, count: f.raceDays ?? 0 });
+
+/** Joins the rotation when we know their sport. */
+const BACK_TO_LINE: Line = (t, f) =>
+  t('notifications.sessionBackTo', { count: f.minutes, backTo: f.backTo ?? '' });
+
+/** "back to…" per sport. The keys are the Home brief's own, so the two say it
+ * the same way; see `BACK_TO` in `pages/home/model/brief.ts`. */
+const BACK_TO_KEYS = {
+  running: 'home.backTo.running',
+  tennis: 'home.backTo.tennis',
+  gym: 'home.backTo.gym',
+  football: 'home.backTo.football',
+  basketball: 'home.backTo.basketball',
+  cycling: 'home.backTo.cycling',
+  hiking: 'home.backTo.hiking',
+} as const;
 
 /** Never cheerful, no emoji, no encouragement. Just the smaller ask. */
 const FLARE_LINES: readonly Line[] = [
@@ -207,6 +233,11 @@ function factsFor(signals: DaySignals, t: Translate, language: Language): Facts 
     days: signals.asymmetryDays,
     block: signals.opensBlock ?? '',
     streak: signals.streak,
+    raceDays: signals.raceDaysLeft ?? null,
+    backTo:
+      signals.sport != null && signals.sport in BACK_TO_KEYS
+        ? t(BACK_TO_KEYS[signals.sport as keyof typeof BACK_TO_KEYS])
+        : null,
   };
 }
 
@@ -291,7 +322,12 @@ function bodyFor(
       return (PLAN_LINES[signals.planReason ?? 'plan'] ?? PLAN_LINES.plan)(t, facts);
     case 'session':
       if (signals.maintenance) return rotate(MAINTENANCE_LINES, signals.dateKey, 71)(t, facts);
-      return rotate(SESSION_LINES, signals.dateKey, 61)(t, facts);
+      if (facts.raceDays != null && facts.raceDays >= 0) return RACE_LINE(t, facts);
+      return rotate(
+        facts.backTo == null ? SESSION_LINES : [...SESSION_LINES, BACK_TO_LINE],
+        signals.dateKey,
+        61,
+      )(t, facts);
     case 'checkin':
       return rotate(CHECKIN_LINES, signals.dateKey, 83)(t, facts);
     case 'streak':
