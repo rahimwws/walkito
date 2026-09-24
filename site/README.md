@@ -1,6 +1,19 @@
 # Walkito — site
 
-Next.js (App Router), statically exported. Three routes and no server:
+Next.js (App Router), statically exported, in three languages. No server.
+
+The site is split into three root layouts — `app/(en)`, `app/ru`, `app/es` —
+because `<html lang>` can only be set by a root layout. English has every page;
+Russian and Spanish have the home page and the two guides. Which page exists in
+which language is one table, `TRANSLATED` in `lib/i18n.ts`, and hreflang, the
+sitemap and the footer's language switcher all read it.
+
+The guides (`lib/guides/{en,ru,es}.ts`, rendered by `components/Guide.tsx`) are
+the pages built to rank: one query each, answer in the first paragraph, every
+figure traced to `lib/citations.ts`, doses read from the app's exercise
+catalogue. Adding one is a data file entry plus a route of three lines.
+
+The original three routes:
 
 | Route | What it is for |
 |---|---|

@@ -4,6 +4,7 @@ import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
+import { CITATIONS } from '@/lib/citations';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 
 /**
@@ -36,12 +37,6 @@ export const metadata: Metadata = {
   },
 };
 
-const CITATIONS = [
-  'Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.',
-  'Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.',
-  'Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.',
-  'Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.',
-];
 
 /**
  * `Article` with `citation`, not `MedicalWebPage`.
@@ -59,7 +54,7 @@ const ARTICLE = {
     'The published trials and clinical guidelines the Walkito program follows, what they found, and where their evidence stops.',
   publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
   mainEntityOfPage: `${SITE_URL}/science/`,
-  citation: CITATIONS,
+  citation: [...CITATIONS],
 };
 
 const BREADCRUMBS = {

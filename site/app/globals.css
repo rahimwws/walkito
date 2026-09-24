@@ -355,6 +355,16 @@ figure a:hover {
   text-decoration: underline;
 }
 
+.proof.guides {
+  padding-top: 0;
+}
+
+figure h3 a {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 .proof .notice {
   max-width: 620px;
   margin: 34px auto 0;
@@ -411,6 +421,24 @@ figure figcaption b {
 
 .footer nav a:hover {
   color: var(--ink);
+}
+
+.footer nav {
+  flex-wrap: wrap;
+}
+
+/* The language switcher gets its own row: it is the one control on the page a
+   reader in the wrong language is looking for, and at the end of a row of
+   legal links it reads as one more of them. */
+.footer .langs {
+  width: 100%;
+  gap: 18px;
+}
+
+.footer .langs span {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* ------------------------------------------------------------------ prose - */
@@ -525,6 +553,62 @@ figure figcaption b {
 
 /* Required wherever symptoms are mentioned. Set apart so it cannot be mistaken
    for body copy, and never hidden at the foot of the page. */
+/* A guide's exercises. Numbered, because they are done in order, with the dose
+   on its own line in ink: it is the one thing a reader scrolls back to check
+   between sets. */
+.prose .exercises {
+  list-style: none;
+  counter-reset: ex;
+  padding: 0;
+  margin: 18px 0 8px;
+}
+
+.prose .exercises li {
+  counter-increment: ex;
+  position: relative;
+  padding: 18px 20px 16px 58px;
+  margin: 0 0 12px;
+  border: 1px solid var(--hairline);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.prose .exercises li::before {
+  content: counter(ex);
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+
+.prose .exercises h3 {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+
+.prose .exercises p {
+  margin: 6px 0 0;
+  font-size: 16px;
+}
+
+.prose .exercises .dose {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.prose ul {
+  padding-left: 22px;
+}
+
 .prose .notice {
   margin: 34px 0 28px;
   padding: 16px 18px;

@@ -1,3 +1,4 @@
+import { CHROME, type Lang } from '@/lib/i18n';
 import { storeHref } from '@/lib/site';
 
 function AppleGlyph() {
@@ -24,7 +25,16 @@ function AppleGlyph() {
  */
 /** `anchor` marks the one badge the header's pre-launch link scrolls to; a page
  * with two badges must not give both the same id. */
-export function AppStoreBadge({ campaign, anchor = false }: { campaign: string; anchor?: boolean }) {
+export function AppStoreBadge({
+  campaign,
+  anchor = false,
+  lang = 'en',
+}: {
+  campaign: string;
+  anchor?: boolean;
+  lang?: Lang;
+}) {
+  const c = CHROME[lang];
   const id = anchor ? 'get' : undefined;
   const href = storeHref(campaign);
 
@@ -39,7 +49,7 @@ export function AppStoreBadge({ campaign, anchor = false }: { campaign: string; 
       <div className="store" id={id}>
         <span className="soon">
           <AppleGlyph />
-          Coming soon to the App Store
+          {c.soonBadge}
         </span>
       </div>
     );
@@ -47,9 +57,9 @@ export function AppStoreBadge({ campaign, anchor = false }: { campaign: string; 
 
   return (
     <div className="store" id={id}>
-      <a href={href} aria-label="Get Walkito on the App Store">
+      <a href={href} aria-label={c.getBadgeLabel}>
         <AppleGlyph />
-        Get the app
+        {c.getBadge}
       </a>
     </div>
   );
