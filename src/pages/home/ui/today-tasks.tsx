@@ -42,6 +42,7 @@ import { PROGRAM_MS } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
 import { doseSeconds } from '@/widgets/session-player';
 import { SessionView } from '@/widgets/session-player';
+import { PrimaryButton } from '@/shared/ui/primary-button';
 
 /** The mascot, mid-stride. It belongs to this block rather than to the screen:
  * the list is the one place on Home that asks for work, and a character running
@@ -218,6 +219,9 @@ export function TodayTasks() {
   /** Which task's player is up. The task itself is the state — there is nothing
    * to know about the sheet the task does not already say. */
   const [open, setOpen] = useState<Task | null>(null);
+  /** The day's retest, playing. Separate from `open` because it is the whole
+   * checkpoint rather than one task off the list. */
+  const [testing, setTesting] = useState(false);
 
   /** The day the player runs against. Only its clip lookup and layout matter
    * here; the moves come from the task. */
@@ -369,6 +373,18 @@ export function TodayTasks() {
               : t('home.nothingScheduled')}
           </Text>
         )}
+        {/* A retest day used to say so and offer nothing: the only way in was
+            the program overlay, so most retests were simply never taken. Not
+            once today's tests are on record. */}
+        {ordered.length === 0 && retest && logFor(currentDay())?.sessionCompleted !== true && (
+          <PrimaryButton
+            label={t('home.startTests')}
+            onPress={() => {
+              Haptics.selectionAsync();
+              setTesting(true);
+            }}
+          />
+        )}
         {ordered.map((task) => (
           // `layout`, never `entering`. A layout transition animates a row
           // between two measured positions, so the worst it can do is not run;
@@ -400,13 +416,27 @@ export function TodayTasks() {
       <Modal
         animationType="slide"
         presentationStyle="pageSheet"
-        visible={open != null}
-        onRequestClose={() => setOpen(null)}>
+        visible={open != null || testing}
+        onRequestClose={() => {
+          setOpen(null);
+          setTesting(false);
+        }}>
         {/* The sheet paints its own page colour. `SessionView` deliberately has
             none — inside the program it sits on the sheet face, which supplies
             it — so dropped straight into a bare Modal it showed iOS's default
             white behind a dark app. Every other sheet here does the same thing
             at its call site. */}
+        {testing && (
+          <View style={[styles.player, { backgroundColor: colors.background }]}>
+            <SessionView
+              // Read now rather than from the memo above: the plan is rebuilt
+              // when it starts or crosses midnight, and this must be today.
+              day={PROGRAM[TODAY_INDEX]}
+              onBack={() => setTesting(false)}
+              onFinish={() => setTesting(false)}
+            />
+          </View>
+        )}
         {open != null && (
           <View style={[styles.player, { backgroundColor: colors.background }]}>
             <SessionView

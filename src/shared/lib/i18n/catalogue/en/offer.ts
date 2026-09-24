@@ -122,6 +122,23 @@ export const OFFER_EN = {
   'widgets.retestArchHold': 'Arch hold',
   'widgets.retestBalance': 'Single-leg balance',
 
+  // ── Retest: entering the numbers ─────────────────────────────────────────
+  'widgets.retestEntryTitle': 'Your numbers',
+  'widgets.retestEntryBlurb': 'Count what you just did. Honest numbers make the next retest mean something.',
+  'widgets.retestLeft': 'Left leg',
+  'widgets.retestRight': 'Right leg',
+  'widgets.retestLeftSore': 'Left leg — the sore one',
+  'widgets.retestRightSore': 'Right leg — the sore one',
+  'widgets.retestSeconds': 'Seconds',
+  'widgets.retestLess': 'Less',
+  'widgets.retestMore': 'More',
+  'widgets.retestSave': 'Save results',
+  'widgets.retestResultTitle': 'Where you are now',
+  'widgets.retestResultBlurb': 'Measured against your last retest, never against anyone else.',
+  'widgets.retestChange': '{from} → {to}',
+  'widgets.retestLevel': 'Lv {level}',
+  'widgets.retestDone': 'Done',
+
   // ── Session player: the counter line ─────────────────────────────────────
   // One word each, because this is read at two metres by somebody already
   // moving and it changes every three seconds.

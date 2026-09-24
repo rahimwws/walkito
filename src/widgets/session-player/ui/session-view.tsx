@@ -51,6 +51,7 @@ import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../config/exercise-clips';
 import { SessionDoneSheet } from './session-done-sheet';
+import { RetestEntrySheet } from './retest-entry-sheet';
 import { SessionPainSheet } from './session-pain-sheet';
 import {
   doseSeconds,
@@ -406,6 +407,9 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
   const retestMoves = useMemo(() => RETEST_MOVE_KEYS.map((key) => t(key)), [t]);
 
   const moves = override ?? (day.checkpoint ? retestMoves : movesFor(day));
+  /** Running the day's own retest, rather than one task or a protocol. */
+  const measuring = day.checkpoint && override == null && playlist == null;
+  const [enteringRetest, setEnteringRetest] = useState(false);
 
   /**
    * The whole session, timed.
@@ -837,7 +841,11 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
     // same reason: this is the only place that means the last move actually ran
     // out. Leaving by the arrow gets no confetti, which is correct — nothing
     // was finished.
-    setCelebrating(true);
+    // A retest run to the end goes to the numbers first — the tests were the
+    // point, and a celebration over nothing recorded is how the results used
+    // to vanish. A playlist or a single task is never a retest.
+    if (!early && measuring) setEnteringRetest(true);
+    else setCelebrating(true);
     void saveSessionToHealth({
       dayNumber: day.day,
       moves,
@@ -849,7 +857,7 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
     // it fires, and doing that at the instant the clock hits zero would take
     // the celebration off screen before it was drawn. The sheet calls it on the
     // way out instead.
-  }, [progress, deadline, endActivity, activitySnapshot, day, moves]);
+  }, [progress, deadline, endActivity, activitySnapshot, day, moves, measuring]);
 
   const advance = useCallback(() => {
     if (goTo(step + 1)) {
@@ -1438,6 +1446,15 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
         pointerEvents={expanded ? 'auto' : 'none'}>
         {ctaButton}
       </Animated.View>
+
+      <RetestEntrySheet
+        visible={enteringRetest}
+        dayNumber={day.day}
+        onDone={() => {
+          setEnteringRetest(false);
+          setCelebrating(true);
+        }}
+      />
 
       <SessionPainSheet
         visible={askingPain}

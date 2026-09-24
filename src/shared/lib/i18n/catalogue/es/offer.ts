@@ -90,6 +90,22 @@ export const OFFER_ES = {
   'widgets.retestArchHold': 'Mantener el arco',
   'widgets.retestBalance': 'Equilibrio a una pierna',
 
+  'widgets.retestEntryTitle': 'Tus resultados',
+  'widgets.retestEntryBlurb': 'Cuenta lo que acabas de hacer. Con números honestos, la próxima prueba tiene sentido.',
+  'widgets.retestLeft': 'Pierna izquierda',
+  'widgets.retestRight': 'Pierna derecha',
+  'widgets.retestLeftSore': 'Pierna izquierda, la que duele',
+  'widgets.retestRightSore': 'Pierna derecha, la que duele',
+  'widgets.retestSeconds': 'Segundos',
+  'widgets.retestLess': 'Menos',
+  'widgets.retestMore': 'Más',
+  'widgets.retestSave': 'Guardar resultados',
+  'widgets.retestResultTitle': 'Dónde estás ahora',
+  'widgets.retestResultBlurb': 'Comparado con tu prueba anterior, nunca con nadie más.',
+  'widgets.retestChange': '{from} → {to}',
+  'widgets.retestLevel': 'Nv {level}',
+  'widgets.retestDone': 'Listo',
+
   // ── Session player: the counter line ─────────────────────────────────────
   // Una palabra por fase: se lee a dos metros y cambia cada tres segundos.
   'widgets.phaseUp': 'Sube',

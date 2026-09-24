@@ -102,6 +102,7 @@ export const HOME_EN = {
   /** The two empties, which are different facts: a retest day has no exercises
    * because it is a measurement, a rest day has none because it is rest. */
   'home.retestDay': 'Retest day. {tests}, about {minutes}.',
+  'home.startTests': 'Start the tests',
   'home.nothingScheduled': 'Nothing scheduled today. Rest counts.',
   'home.markDone': 'Mark done',
   'home.markNotDone': 'Mark not done',

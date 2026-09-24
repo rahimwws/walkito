@@ -71,6 +71,7 @@ export const HOME_RU = {
   'home.allDoneBlurb':
     'Больше ничего не нужно. Следующая сессия откроется через двенадцать часов отдыха.',
   'home.retestDay': 'День замеров. {tests}, примерно {minutes}.',
+  'home.startTests': 'Начать замеры',
   'home.nothingScheduled': 'На сегодня ничего не назначено. Отдых тоже засчитан.',
   'home.markDone': 'Отметить выполненным',
   'home.markNotDone': 'Снять отметку',

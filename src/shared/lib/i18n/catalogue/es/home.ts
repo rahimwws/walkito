@@ -56,6 +56,7 @@ export const HOME_ES = {
   'home.allDoneBlurb':
     'No hace falta nada más. La próxima sesión se abre tras doce horas de descanso.',
   'home.retestDay': 'Día de control. {tests}, unos {minutes}.',
+  'home.startTests': 'Empezar las pruebas',
   'home.nothingScheduled': 'Hoy no hay nada programado. El descanso cuenta.',
   'home.markDone': 'Marcar como hecho',
   'home.markNotDone': 'Desmarcar',

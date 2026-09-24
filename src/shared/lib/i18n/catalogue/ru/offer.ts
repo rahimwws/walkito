@@ -91,6 +91,22 @@ export const OFFER_RU = {
   'widgets.retestArchHold': 'Удержание свода стопы',
   'widgets.retestBalance': 'Баланс на одной ноге',
 
+  'widgets.retestEntryTitle': 'Ваши результаты',
+  'widgets.retestEntryBlurb': 'Посчитайте, что получилось. Честные цифры делают следующий замер осмысленным.',
+  'widgets.retestLeft': 'Левая нога',
+  'widgets.retestRight': 'Правая нога',
+  'widgets.retestLeftSore': 'Левая нога — та, что болит',
+  'widgets.retestRightSore': 'Правая нога — та, что болит',
+  'widgets.retestSeconds': 'Секунды',
+  'widgets.retestLess': 'Меньше',
+  'widgets.retestMore': 'Больше',
+  'widgets.retestSave': 'Сохранить',
+  'widgets.retestResultTitle': 'Где вы сейчас',
+  'widgets.retestResultBlurb': 'Сравниваем с вашим прошлым замером, а не с кем-то ещё.',
+  'widgets.retestChange': '{from} → {to}',
+  'widgets.retestLevel': 'Ур. {level}',
+  'widgets.retestDone': 'Готово',
+
   // ── Session player: the counter line ─────────────────────────────────────
   // Одно слово на каждую фазу: это читают с двух метров, стоя на одной ноге.
   'widgets.phaseUp': 'Вверх',
