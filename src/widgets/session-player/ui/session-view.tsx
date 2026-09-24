@@ -40,6 +40,7 @@ import {
 } from '@/entities/program';
 import { clearBrowsingLapsed, useSessionsLocked } from '@/entities/purchase';
 import { fonts, meterColors, palette, primaryButton } from '@/shared/config';
+import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
@@ -389,6 +390,23 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
   const insets = useSafeAreaInsets();
   const { width, height } = useWindowDimensions();
   const t = useT();
+
+  /**
+   * The session was opened. Only the programme's own days: a single task run
+   * off Home's list, or a Quick protocol, is not a session of the plan and
+   * would make "started but not completed" meaningless.
+   */
+  useEffect(() => {
+    if (override != null || playlist != null) return;
+    track('session_started', {
+      day: day.day,
+      block: day.block,
+      kind: day.kind,
+      checkpoint: day.checkpoint,
+    });
+    // Once per mount; the caller remounts the player for every start.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   /** The offset a flare walked the plan back by. Read through the store rather
    * than once, so a session opened straight off a pain check gets the dose that

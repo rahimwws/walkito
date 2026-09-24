@@ -1,3 +1,4 @@
+import { identify, track, type PurchaseProps } from '@/shared/lib/analytics';
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 import Purchases, {
@@ -213,7 +214,55 @@ export async function startRevenueCat(apiKey: string, verbose: boolean): Promise
   // configure and the fetch is not missed.
   Purchases.addCustomerInfoUpdateListener((info) => announce(info));
 
+  void linkAnalytics();
+
   await refreshEntitlement();
+}
+
+/**
+ * One id for the same person in RevenueCat and in PostHog.
+ *
+ * PostHog is identified *as* the RevenueCat app user id, and RevenueCat is told
+ * so through `$posthogUserId`. With both pointing at one key, the revenue
+ * events RevenueCat sends PostHog from its server — renewals, refunds,
+ * cancellations, all of which happen with the app closed — land on the person
+ * whose onboarding and acquisition source are already there. Without it they
+ * arrive as strangers and the funnel stops at the paywall.
+ */
+async function linkAnalytics(): Promise<void> {
+  try {
+    const id = await Purchases.getAppUserID();
+    identify(id);
+    await Purchases.setAttributes({ $posthogUserId: id });
+  } catch {
+    // Analytics is never worth failing a store start over.
+  }
+}
+
+/**
+ * Where somebody said they heard about the app, as RevenueCat's media source.
+ *
+ * The reserved attribute rather than a custom one, because it is the one
+ * RevenueCat's own charts can split revenue and conversion by — "which channel
+ * pays" answered in the dashboard that holds the money, with no export.
+ */
+export async function setAcquisitionSource(source: string): Promise<void> {
+  try {
+    await Purchases.setMediaSource(source);
+  } catch {
+    // Not configured yet, or offline. The answer is also on the PostHog person.
+  }
+}
+
+/** What a purchase event says about the plan behind a token. */
+function purchaseProps(pkg: PurchasesPackage, offering: string): PurchaseProps {
+  return {
+    plan: pkg.identifier === PROGRAM_PACKAGE ? 'program' : 'monthly',
+    product_id: pkg.product.identifier,
+    offering,
+    price: pkg.product.price,
+    currency: pkg.product.currencyCode,
+  };
 }
 
 async function refreshEntitlement(): Promise<void> {
@@ -257,6 +306,8 @@ export const revenueCatStore: Store = {
         message: translatorFor(getLanguage())('purchase.unavailable'),
       };
     }
+    const props = purchaseProps(pkg, plan.token.split(':')[0]);
+    track('purchase_started', props);
     try {
       const { customerInfo } = await Purchases.purchasePackage(pkg);
       announce(customerInfo);
@@ -264,7 +315,11 @@ export const revenueCatStore: Store = {
       // returning. A purchase that completes without granting the entitlement
       // is a misconfigured dashboard, and saying "purchased" there would leave
       // the user paid-up and still looking at the paywall.
-      if (entitledIn(customerInfo)) return { status: 'purchased' };
+      if (entitledIn(customerInfo)) {
+        track('purchase_completed', props);
+        return { status: 'purchased' };
+      }
+      track('purchase_failed', { ...props, reason: 'no-entitlement' });
       // Bought, but nothing was granted. Almost always a dashboard that has no
       // entitlement by this name, or products not attached to it.
       explainMissingEntitlement(customerInfo);
@@ -273,7 +328,14 @@ export const revenueCatStore: Store = {
         message: 'The purchase went through but didn’t unlock. Try Restore.',
       };
     } catch (error) {
-      if (wasCancelled(error)) return { status: 'cancelled' };
+      if (wasCancelled(error)) {
+        track('purchase_cancelled', props);
+        return { status: 'cancelled' };
+      }
+      track('purchase_failed', {
+        ...props,
+        reason: String((error as PurchasesError | undefined)?.code ?? 'unknown'),
+      });
       return { status: 'failed', message: messageFrom(error) };
     }
   },
@@ -282,8 +344,11 @@ export const revenueCatStore: Store = {
     try {
       const info = await Purchases.restorePurchases();
       announce(info);
-      return entitledIn(info) ? { status: 'restored' } : { status: 'nothing-found' };
+      const restored = entitledIn(info);
+      track('restore_completed', { status: restored ? 'restored' : 'nothing-found' });
+      return restored ? { status: 'restored' } : { status: 'nothing-found' };
     } catch (error) {
+      track('restore_completed', { status: 'failed' });
       return { status: 'failed', message: messageFrom(error) };
     }
   },

@@ -189,6 +189,17 @@ export const ONBOARDING_EN = {
   'onboarding.challenge.recovery': 'Recovering faster',
   'onboarding.challenge.strength': 'Getting stronger',
   'onboarding.challenge.injury': 'Avoiding another injury',
+
+  // Where they heard about the app. Asked once; the answer is attribution.
+  'onboarding.source.title': 'How did you find Walkito?',
+  'onboarding.source.blurb': 'One tap. It helps us reach people like you.',
+  'onboarding.source.tiktok': 'TikTok',
+  'onboarding.source.instagram': 'Instagram',
+  'onboarding.source.youtube': 'YouTube',
+  'onboarding.source.friend': 'A friend told me',
+  'onboarding.source.appStore': 'Browsing the App Store',
+  'onboarding.source.google': 'Google search',
+  'onboarding.source.other': 'Somewhere else',
   /** Said when the cap pushed an earlier answer off the list. It reports what
    * happened; it does not tell anyone off. */
   'onboarding.challenge.swapped': 'Only {count} at a time — {label} was swapped out.',

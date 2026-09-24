@@ -1,4 +1,11 @@
 import Activity03Icon from '@hugeicons/core-free-icons/Activity03Icon';
+import AppStoreIcon from '@hugeicons/core-free-icons/AppStoreIcon';
+import GoogleIcon from '@hugeicons/core-free-icons/GoogleIcon';
+import InstagramIcon from '@hugeicons/core-free-icons/InstagramIcon';
+import MoreHorizontalCircle01Icon from '@hugeicons/core-free-icons/MoreHorizontalCircle01Icon';
+import TiktokIcon from '@hugeicons/core-free-icons/TiktokIcon';
+import UserMultipleIcon from '@hugeicons/core-free-icons/UserMultipleIcon';
+import YoutubeIcon from '@hugeicons/core-free-icons/YoutubeIcon';
 import SmartWatch01Icon from '@hugeicons/core-free-icons/SmartWatch01Icon';
 import SmartWatch04Icon from '@hugeicons/core-free-icons/SmartWatch04Icon';
 import Award01Icon from '@hugeicons/core-free-icons/Award01Icon';
@@ -410,6 +417,34 @@ export const STEPS: readonly OnboardingStep[] = [
       { value: 'recovery', label: (t) => t('onboarding.challenge.recovery'), icon: Moon02Icon, accent: 'amber' },
       { value: 'strength', label: (t) => t('onboarding.challenge.strength'), icon: Dumbbell01Icon, accent: 'orange' },
       { value: 'injury', label: (t) => t('onboarding.challenge.injury'), icon: Target01Icon, accent: 'teal' },
+    ],
+  },
+  {
+    /**
+     * Where they heard about the app.
+     *
+     * The only reliable attribution for organic TikTok and Instagram: a video
+     * watched, then the app searched for in the App Store, leaves no link for
+     * any SDK to follow. Asked here, after the questions about the foot and
+     * before the permission screens, because by now somebody has decided the
+     * flow is worth finishing and a quick tap costs them nothing.
+     *
+     * The values are analytics identifiers (`AcquisitionSource`), so they are
+     * never renamed — a rename splits the chart at the day it shipped.
+     */
+    kind: 'choice',
+    key: 'source',
+    act: 1,
+    title: (t) => t('onboarding.source.title'),
+    blurb: (t) => t('onboarding.source.blurb'),
+    options: [
+      { value: 'tiktok', label: (t) => t('onboarding.source.tiktok'), icon: TiktokIcon, accent: 'violet' },
+      { value: 'instagram', label: (t) => t('onboarding.source.instagram'), icon: InstagramIcon, accent: 'orange' },
+      { value: 'youtube', label: (t) => t('onboarding.source.youtube'), icon: YoutubeIcon, accent: 'amber' },
+      { value: 'friend', label: (t) => t('onboarding.source.friend'), icon: UserMultipleIcon, accent: 'teal' },
+      { value: 'app_store', label: (t) => t('onboarding.source.appStore'), icon: AppStoreIcon, accent: 'blue' },
+      { value: 'google', label: (t) => t('onboarding.source.google'), icon: GoogleIcon, accent: 'teal' },
+      { value: 'other', label: (t) => t('onboarding.source.other'), icon: MoreHorizontalCircle01Icon, accent: 'violet' },
     ],
   },
   {

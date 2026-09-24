@@ -186,6 +186,18 @@ export async function startPurchases(): Promise<void> {
 }
 
 /**
+ * Record the onboarding's "how did you find us" answer against the customer.
+ *
+ * A no-op without a real store: the simulator stand-in has no customer to
+ * attach it to.
+ */
+export function recordAcquisitionSource(source: string): void {
+  if (!purchases.configured || !keyIsUsable) return;
+  const { setAcquisitionSource } = require('./revenuecat') as typeof import('./revenuecat');
+  void setAcquisitionSource(source);
+}
+
+/**
  * Why the store is not selling, in one line, or null when it is.
  *
  * For the developer, not the user — a paywall that silently cannot charge is

@@ -168,6 +168,16 @@ export const ONBOARDING_RU = {
   'onboarding.challenge.recovery': 'Быстрее восстанавливаться',
   'onboarding.challenge.strength': 'Стать сильнее',
   'onboarding.challenge.injury': 'Избежать новой травмы',
+
+  'onboarding.source.title': 'Как вы узнали о Walkito?',
+  'onboarding.source.blurb': 'Одно касание. Так мы найдём людей вроде вас.',
+  'onboarding.source.tiktok': 'TikTok',
+  'onboarding.source.instagram': 'Instagram',
+  'onboarding.source.youtube': 'YouTube',
+  'onboarding.source.friend': 'Посоветовали знакомые',
+  'onboarding.source.appStore': 'Поиск в App Store',
+  'onboarding.source.google': 'Поиск в Google',
+  'onboarding.source.other': 'Другое',
   'onboarding.challenge.swapped': 'Не больше {count} за раз — «{label}» убрали.',
 
   // ── Health ───────────────────────────────────────────────────────────────

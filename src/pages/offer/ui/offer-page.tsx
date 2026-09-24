@@ -24,6 +24,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { cancelWinback, notificationsAllowed, scheduleWinback } from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
 import { LEGAL, PRIMARY, accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
+import { track } from '@/shared/lib/analytics';
 import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Linking } from 'react-native';
@@ -218,6 +219,24 @@ export function OfferPage() {
       live = false;
     };
   }, [offeringId]);
+
+  /**
+   * Shown, and — on the way out — left without buying.
+   *
+   * On mount and unmount rather than on the close button, because the sheet
+   * can also be swiped away, and a dismissal only the button reports would
+   * make the paywall look better than it is. A purchase or restore marks the
+   * exit as not a dismissal.
+   */
+  const converted = useRef(false);
+  useEffect(() => {
+    track('paywall_viewed', { offering: offeringId, boosted });
+    return () => {
+      if (!converted.current) track('paywall_dismissed', { offering: offeringId });
+    };
+    // Once per presentation; the offering is settled before the sheet opens.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const programPlan = offering?.program ?? null;
   const monthlyPlan = offering?.monthly ?? null;
@@ -486,6 +505,7 @@ export function OfferPage() {
     setBusy(false);
 
     if (result.status === 'purchased') {
+      converted.current = true;
       // No haptic here: the sheet fires its own as it lands, and two success
       // buzzes a frame apart read as a stutter rather than as emphasis.
       setCelebrating('purchased');
@@ -523,6 +543,7 @@ export function OfferPage() {
     setBusy(false);
 
     if (result.status === 'restored') {
+      converted.current = true;
       // The same sheet, different words. Getting a subscription back is not a
       // purchase and should not be congratulated as one — but it is the same
       // good news, and sending it to the one-line notice slot while a purchase
@@ -687,6 +708,7 @@ export function OfferPage() {
           onPress={() => {
             Haptics.selectionAsync();
             setTier('program');
+            track('paywall_plan_selected', { plan: 'program' });
           }}
         />
         {monthlyOffered && (
@@ -698,6 +720,7 @@ export function OfferPage() {
             onPress={() => {
               Haptics.selectionAsync();
               setTier('monthly');
+              track('paywall_plan_selected', { plan: 'monthly' });
             }}
           />
         )}

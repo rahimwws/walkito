@@ -14,6 +14,7 @@ import {
   useClipPrefetch,
   useLiveActivityCleanup,
   usePurchases,
+  useScreenTracking,
   useReferralSync,
   useQuickActions,
 } from '@/app/providers';
@@ -106,6 +107,8 @@ export function RootLayout() {
   // backoff that silences the app is cleared by any open, not only by a tap on
   // a notification.
   useNotificationScheduler();
+  // A `$screen` per route, for the paths and retention charts in PostHog.
+  useScreenTracking();
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>

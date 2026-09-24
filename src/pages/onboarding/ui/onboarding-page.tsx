@@ -27,6 +27,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { QUESTION_LINE_MS, TypedText } from '@/shared/ui/typed-text';
 import { type HealthSummary } from '@/entities/health';
 import { armOffer } from '@/entities/offer';
+import { recordAcquisitionSource } from '@/entities/purchase';
 import {
   REFERRAL_CODE_LENGTH,
   REFERRAL_DISCOUNT_PERCENT,
@@ -36,6 +37,7 @@ import {
 } from '@/entities/referral';
 import { firstName, setProfileEmail, setProfileName } from '@/entities/profile';
 import { completeOnboarding, signInWithApple } from '@/entities/session';
+import { setPersonOnce, track, type AcquisitionSource } from '@/shared/lib/analytics';
 import { NoteSheet } from '@/shared/ui/note-sheet';
 import { Glow } from '@/shared/ui/glow';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
@@ -364,6 +366,20 @@ export function OnboardingPage() {
     [direction, settled],
   );
 
+  /**
+   * One event per screen shown, keyed by the step's stable `key`.
+   *
+   * Driven off the index rather than off the button, so a step reached by Back
+   * counts as viewed again — which is what it was — and the funnel is built on
+   * the first view of each key per person, so the repeats cost it nothing.
+   */
+  useEffect(() => {
+    if (index === 0) track('onboarding_started');
+    track('onboarding_step_viewed', { step: step.key, index, act: step.act });
+    // `step` follows `index`; listing it would only repeat the same trigger.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index]);
+
   // The entrance runs only once the new step has actually rendered, which is
   // what guarantees nothing is ever visible mid-swap.
   useEffect(() => {
@@ -415,6 +431,7 @@ export function OnboardingPage() {
         .then((result) => {
           if (result.status === 'cancelled') return;
           if (result.status === 'failed') {
+            track('sign_in_failed', { method: 'apple' });
             Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
             setSignInFailed(true);
             return;
@@ -431,6 +448,7 @@ export function OnboardingPage() {
             if (result.fullName != null) setProfileName(firstName(result.fullName));
             if (result.email != null) setProfileEmail(result.email);
           }
+          track('sign_in_completed', { method: 'apple', status: result.status });
           Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
           step1(true);
         })
@@ -493,6 +511,10 @@ const REDEEM_MESSAGE: Readonly<Record<Exclude<RedeemResult, 'ok'>, Phrase>> = {
   failed: (t) => t('onboarding.referral.failed'),
 };
 
+/** The onboarding answers that are sent to analytics, and nothing else. */
+const ANSWERS_TRACKED = ['source', 'goal', 'sport', 'runner'] as const;
+type TrackedAnswer = (typeof ANSWERS_TRACKED)[number];
+
 /** Long enough for the confirmation to be read before the screen leaves. */
 const CONFIRM_MS = 900;
 
@@ -505,6 +527,7 @@ const CONFIRM_MS = 900;
     // Straight out, with no note. Someone who skipped the whole flow has said
     // what they want, and a personal letter asking them for a rating on the way
     // past is the exact pattern Apple's guidelines single out.
+    track('onboarding_completed', { skipped: true });
     completeOnboarding();
   }, []);
 
@@ -519,6 +542,7 @@ const CONFIRM_MS = 900;
   const leaveNote = useCallback(() => {
     setNote(false);
     armOffer({ weeks: String(plan.weeks), name });
+    track('onboarding_completed', { skipped: false, plan_weeks: plan.weeks });
     completeOnboarding();
   }, [plan.weeks, name]);
 
@@ -531,8 +555,32 @@ const CONFIRM_MS = 900;
    * at all.
    */
   const step1 = (forward: boolean) => {
+    if (forward) reportAnswer();
     const next = stepAfter(index, forward, answers);
     if (next != null) go(next, forward);
+  };
+
+  /**
+   * The few answers worth a chart, sent as the user moves past them.
+   *
+   * Only these four: they split a funnel without describing a body. Pain, age,
+   * weight, size and the Health screen never leave the device — see the note in
+   * `shared/lib/analytics/events.ts`.
+   */
+  const reportAnswer = () => {
+    if (!ANSWERS_TRACKED.includes(step.key as TrackedAnswer)) return;
+    const picked = answers[step.key];
+    const value = Array.isArray(picked) ? picked[0] : undefined;
+    if (typeof value !== 'string') return;
+    track('onboarding_answered', { step: step.key as TrackedAnswer, answer: value });
+    if (step.key === 'source') {
+      const source = value as AcquisitionSource;
+      track('acquisition_source_selected', { source });
+      // Once: the first answer is the attribution, and a revisit must not
+      // overwrite it.
+      setPersonOnce({ acquisition_source: source });
+      recordAcquisitionSource(source);
+    }
   };
 
   const onBack = () => {
@@ -965,6 +1013,7 @@ const CONFIRM_MS = 900;
         onSignedIn={(address) => {
           setEmailSignIn(false);
           setProfileEmail(address);
+          track('sign_in_completed', { method: 'email', status: 'signed-in' });
           // Clears any earlier Apple failure: they are in, and leaving the
           // message up would have the screen reporting a problem they have
           // just solved another way.
