@@ -1,10 +1,8 @@
 import * as Haptics from 'expo-haptics';
-import {
-  FireIcon,
-  FootprintsIcon,
-  HeartIcon,
-  LockSimpleIcon,
-} from 'phosphor-react-native';
+import { FireIcon } from 'phosphor-react-native/src/icons/Fire';
+import { FootprintsIcon } from 'phosphor-react-native/src/icons/Footprints';
+import { HeartIcon } from 'phosphor-react-native/src/icons/Heart';
+import { LockSimpleIcon } from 'phosphor-react-native/src/icons/LockSimple';
 import { useEffect, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {

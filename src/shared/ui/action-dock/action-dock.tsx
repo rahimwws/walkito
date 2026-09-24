@@ -1,5 +1,5 @@
 import * as Haptics from 'expo-haptics';
-import { PersonSimpleRunIcon } from 'phosphor-react-native';
+import { PersonSimpleRunIcon } from 'phosphor-react-native/src/icons/PersonSimpleRun';
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, { interpolate, useAnimatedStyle } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';

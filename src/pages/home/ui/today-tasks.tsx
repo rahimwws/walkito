@@ -1,13 +1,11 @@
 import * as Haptics from 'expo-haptics';
-import {
-  ArrowsClockwiseIcon,
-  BarbellIcon,
-  CheckIcon,
-  ClockIcon,
-  MoonIcon,
-  WavesIcon,
-  type Icon,
-} from 'phosphor-react-native';
+import type { Icon } from 'phosphor-react-native';
+import { ArrowsClockwiseIcon } from 'phosphor-react-native/src/icons/ArrowsClockwise';
+import { BarbellIcon } from 'phosphor-react-native/src/icons/Barbell';
+import { CheckIcon } from 'phosphor-react-native/src/icons/Check';
+import { ClockIcon } from 'phosphor-react-native/src/icons/Clock';
+import { MoonIcon } from 'phosphor-react-native/src/icons/Moon';
+import { WavesIcon } from 'phosphor-react-native/src/icons/Waves';
 import { useMemo, useState } from 'react';
 import { Image, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { LinearTransition, ReduceMotion } from 'react-native-reanimated';

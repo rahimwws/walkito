@@ -1,5 +1,5 @@
 import * as Haptics from 'expo-haptics';
-import { CheckCircleIcon as CheckCircle } from 'phosphor-react-native';
+import { CheckCircleIcon as CheckCircle } from 'phosphor-react-native/src/icons/CheckCircle';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,

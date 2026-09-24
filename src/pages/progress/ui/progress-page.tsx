@@ -1,5 +1,6 @@
 import { useRouter } from 'expo-router';
-import { DiamondIcon, FireIcon } from 'phosphor-react-native';
+import { DiamondIcon } from 'phosphor-react-native/src/icons/Diamond';
+import { FireIcon } from 'phosphor-react-native/src/icons/Fire';
 import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';

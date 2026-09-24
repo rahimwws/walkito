@@ -1,4 +1,4 @@
-import { FireIcon } from 'phosphor-react-native';
+import { FireIcon } from 'phosphor-react-native/src/icons/Fire';
 import { StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,

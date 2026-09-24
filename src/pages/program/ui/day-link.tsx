@@ -1,4 +1,5 @@
-import { ArrowDownIcon, FireIcon } from 'phosphor-react-native';
+import { ArrowDownIcon } from 'phosphor-react-native/src/icons/ArrowDown';
+import { FireIcon } from 'phosphor-react-native/src/icons/Fire';
 import { memo, useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Animated, {

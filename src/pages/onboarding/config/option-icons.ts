@@ -1,35 +1,33 @@
 // Phosphor v3 exports every glyph with an `Icon` suffix (`Path` would
 // otherwise collide with react-native-svg's `Path`), so each one is
 // aliased back to its plain name here rather than at every use site.
-import {
-  ArrowsClockwiseIcon as ArrowsClockwise,
-  BarbellIcon as Barbell,
-  BasketballIcon as Basketball,
-  BedIcon as Bed,
-  CalendarCheckIcon as CalendarCheck,
-  ClockIcon as Clock,
-  DropIcon as Drop,
-  FireIcon as Fire,
-  FirstAidIcon as FirstAid,
-  FootprintsIcon as Footprints,
-  LightningIcon as Lightning,
-  MapPinIcon as MapPin,
-  MoonIcon as Moon,
-  MountainsIcon as Mountains,
-  PathIcon as Path,
-  PersonSimpleBikeIcon as PersonSimpleBike,
-  PersonSimpleRunIcon as PersonSimpleRun,
-  RulerIcon as Ruler,
-  ShieldCheckIcon as ShieldCheck,
-  SneakerIcon as Sneaker,
-  SoccerBallIcon as SoccerBall,
-  SparkleIcon as Sparkle,
-  SunHorizonIcon as SunHorizon,
-  TennisBallIcon as TennisBall,
-  TimerIcon as Timer,
-  TrophyIcon as Trophy,
-  type Icon,
-} from 'phosphor-react-native';
+import type { Icon } from 'phosphor-react-native';
+import { ArrowsClockwiseIcon as ArrowsClockwise } from 'phosphor-react-native/src/icons/ArrowsClockwise';
+import { BarbellIcon as Barbell } from 'phosphor-react-native/src/icons/Barbell';
+import { BasketballIcon as Basketball } from 'phosphor-react-native/src/icons/Basketball';
+import { BedIcon as Bed } from 'phosphor-react-native/src/icons/Bed';
+import { CalendarCheckIcon as CalendarCheck } from 'phosphor-react-native/src/icons/CalendarCheck';
+import { ClockIcon as Clock } from 'phosphor-react-native/src/icons/Clock';
+import { DropIcon as Drop } from 'phosphor-react-native/src/icons/Drop';
+import { FireIcon as Fire } from 'phosphor-react-native/src/icons/Fire';
+import { FirstAidIcon as FirstAid } from 'phosphor-react-native/src/icons/FirstAid';
+import { FootprintsIcon as Footprints } from 'phosphor-react-native/src/icons/Footprints';
+import { LightningIcon as Lightning } from 'phosphor-react-native/src/icons/Lightning';
+import { MapPinIcon as MapPin } from 'phosphor-react-native/src/icons/MapPin';
+import { MoonIcon as Moon } from 'phosphor-react-native/src/icons/Moon';
+import { MountainsIcon as Mountains } from 'phosphor-react-native/src/icons/Mountains';
+import { PathIcon as Path } from 'phosphor-react-native/src/icons/Path';
+import { PersonSimpleBikeIcon as PersonSimpleBike } from 'phosphor-react-native/src/icons/PersonSimpleBike';
+import { PersonSimpleRunIcon as PersonSimpleRun } from 'phosphor-react-native/src/icons/PersonSimpleRun';
+import { RulerIcon as Ruler } from 'phosphor-react-native/src/icons/Ruler';
+import { ShieldCheckIcon as ShieldCheck } from 'phosphor-react-native/src/icons/ShieldCheck';
+import { SneakerIcon as Sneaker } from 'phosphor-react-native/src/icons/Sneaker';
+import { SoccerBallIcon as SoccerBall } from 'phosphor-react-native/src/icons/SoccerBall';
+import { SparkleIcon as Sparkle } from 'phosphor-react-native/src/icons/Sparkle';
+import { SunHorizonIcon as SunHorizon } from 'phosphor-react-native/src/icons/SunHorizon';
+import { TennisBallIcon as TennisBall } from 'phosphor-react-native/src/icons/TennisBall';
+import { TimerIcon as Timer } from 'phosphor-react-native/src/icons/Timer';
+import { TrophyIcon as Trophy } from 'phosphor-react-native/src/icons/Trophy';
 
 /**
  * The glyph and hue for each answer.

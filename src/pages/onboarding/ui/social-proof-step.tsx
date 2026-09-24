@@ -1,7 +1,7 @@
 import LaurelWreathLeft02Icon from '@hugeicons/core-free-icons/LaurelWreathLeft02Icon';
 import LaurelWreathRight02Icon from '@hugeicons/core-free-icons/LaurelWreathRight02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import { StarIcon as Star } from 'phosphor-react-native';
+import { StarIcon as Star } from 'phosphor-react-native/src/icons/Star';
 import { useEffect, useRef } from 'react';
 import {
   ScrollView,

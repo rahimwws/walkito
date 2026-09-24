@@ -6,7 +6,7 @@ import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import * as Haptics from 'expo-haptics';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { after, type LiveActivity } from 'expo-widgets';
-import { ClockIcon } from 'phosphor-react-native';
+import { ClockIcon } from 'phosphor-react-native/src/icons/Clock';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, {

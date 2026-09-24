@@ -1,15 +1,13 @@
-import {
-  ArrowsClockwiseIcon,
-  BarbellIcon,
-  CheckCircleIcon,
-  ClockIcon,
-  LockIcon,
-  MoonIcon,
-  ScalesIcon,
-  TargetIcon,
-  WavesIcon,
-  type Icon,
-} from 'phosphor-react-native';
+import type { Icon } from 'phosphor-react-native';
+import { ArrowsClockwiseIcon } from 'phosphor-react-native/src/icons/ArrowsClockwise';
+import { BarbellIcon } from 'phosphor-react-native/src/icons/Barbell';
+import { CheckCircleIcon } from 'phosphor-react-native/src/icons/CheckCircle';
+import { ClockIcon } from 'phosphor-react-native/src/icons/Clock';
+import { LockIcon } from 'phosphor-react-native/src/icons/Lock';
+import { MoonIcon } from 'phosphor-react-native/src/icons/Moon';
+import { ScalesIcon } from 'phosphor-react-native/src/icons/Scales';
+import { TargetIcon } from 'phosphor-react-native/src/icons/Target';
+import { WavesIcon } from 'phosphor-react-native/src/icons/Waves';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import {

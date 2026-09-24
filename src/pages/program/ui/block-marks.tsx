@@ -1,4 +1,4 @@
-import { FlagCheckeredIcon } from 'phosphor-react-native';
+import { FlagCheckeredIcon } from 'phosphor-react-native/src/icons/FlagCheckered';
 import { memo } from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import Animated, { FadeIn, ReduceMotion } from 'react-native-reanimated';
