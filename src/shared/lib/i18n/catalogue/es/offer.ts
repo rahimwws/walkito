@@ -123,6 +123,14 @@ export const OFFER_ES = {
 
   // ── Session player: the end of a session ─────────────────────────────────
   'widgets.sessionDoneTitle': 'Buen trabajo.',
+  'widgets.sessionStoppedTitle': 'Paramos aquí.',
+  'widgets.sessionStoppedBlurb': 'La sesión de hoy cuenta igual. Mañana empezamos un paso más suave.',
+
+  'widgets.painButton': 'Duele',
+  'widgets.painTitle': '¿Cuánto, ahora mismo?',
+  'widgets.painBlurb': 'Por debajo de 5 puedes seguir. Desde 5, paramos y mañana será más suave.',
+  'widgets.painCarryOn': 'Sigue con cuidado. Para si aumenta.',
+  'widgets.painClose': 'Cerrar',
   'widgets.sessionDoneStreak': {
     one: '{count} día seguido',
     other: '{count} días seguidos',

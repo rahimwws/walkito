@@ -125,6 +125,14 @@ export const OFFER_RU = {
 
   // ── Session player: the end of a session ─────────────────────────────────
   'widgets.sessionDoneTitle': 'Хорошая работа.',
+  'widgets.sessionStoppedTitle': 'Остановимся здесь.',
+  'widgets.sessionStoppedBlurb': 'Сегодняшняя сессия всё равно засчитана. Завтра начнём на ступень легче.',
+
+  'widgets.painButton': 'Болит',
+  'widgets.painTitle': 'Насколько сильно сейчас?',
+  'widgets.painBlurb': 'До 5 можно продолжать. От 5 и выше остановимся, а завтра будет легче.',
+  'widgets.painCarryOn': 'Продолжайте аккуратно. Остановитесь, если станет сильнее.',
+  'widgets.painClose': 'Закрыть',
   'widgets.sessionDoneStreak': {
     one: '{count} день подряд',
     few: '{count} дня подряд',

@@ -212,3 +212,4 @@ export {
 
 export { CHECKPOINT_ICON, SESSION_META } from './ui/session-meta';
 export { ZONE_META } from './ui/zone-meta';
+export { settleOffset, stepBackAfterSession } from './model/offset';

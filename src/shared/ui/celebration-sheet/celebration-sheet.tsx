@@ -45,6 +45,10 @@ export type CelebrationSheetProps = {
   /** The sentence under it. */
   blurb: string;
   ctaLabel?: string;
+  /** Off for an ending that is not a win — a session stopped on pain still
+   * counts, but confetti over "it hurt" is the app cheering at the wrong
+   * thing. */
+  confetti?: boolean;
   onClose: () => void;
 };
 
@@ -81,6 +85,7 @@ export function CelebrationSheet({
   headlineColor,
   blurb,
   ctaLabel,
+  confetti = true,
   onClose,
 }: CelebrationSheetProps) {
   const scheme = useColorScheme();
@@ -159,7 +164,7 @@ export function CelebrationSheet({
           rather than behind the whole sheet. Three launch points: one central
           plume leaves the corners empty, which is exactly where the eye goes
           when something has just been finished. */}
-      {visible && <Confetti origins={CORNERS} size={1.6} />}
+      {visible && confetti && <Confetti origins={CORNERS} size={1.6} />}
 
       {/* Tapping away closes it. The button is the advertised way out, but a
           sheet with a scrim that swallows taps feels stuck. */}

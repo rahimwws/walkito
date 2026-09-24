@@ -169,6 +169,16 @@ export const OFFER_EN = {
 
   // ── Session player: the end of a session ─────────────────────────────────
   'widgets.sessionDoneTitle': 'Nice work.',
+  /** Stopped on a pain report at or above five. It counts, and it says so. */
+  'widgets.sessionStoppedTitle': 'Stopping here.',
+  'widgets.sessionStoppedBlurb': 'It still counts as today’s session. Tomorrow starts one step back.',
+
+  // ── Session player: "it hurts" ───────────────────────────────────────────
+  'widgets.painButton': 'It hurts',
+  'widgets.painTitle': 'How much, right now?',
+  'widgets.painBlurb': 'Under 5 is fine to work through. From 5 up, we stop and ease tomorrow.',
+  'widgets.painCarryOn': 'Carry on gently. Stop if it climbs.',
+  'widgets.painClose': 'Close',
   'widgets.sessionDoneStreak': { one: '{count} day in a row', other: '{count} days in a row' },
   /** `{count}` is in both forms deliberately. The singular reads better as "One
    * move done", but every form of every language has to carry every placeholder
