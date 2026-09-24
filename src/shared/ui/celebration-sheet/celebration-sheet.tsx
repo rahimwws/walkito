@@ -49,6 +49,9 @@ export type CelebrationSheetProps = {
    * counts, but confetti over "it hurt" is the app cheering at the wrong
    * thing. */
   confetti?: boolean;
+  /** Off with the confetti, for the same reason: a trophy over "we stopped
+   * because it hurt" reads as a prize for pain. */
+  emblem?: boolean;
   onClose: () => void;
 };
 
@@ -86,6 +89,7 @@ export function CelebrationSheet({
   blurb,
   ctaLabel,
   confetti = true,
+  emblem = true,
   onClose,
 }: CelebrationSheetProps) {
   const scheme = useColorScheme();
@@ -176,14 +180,21 @@ export function CelebrationSheet({
       />
 
       <Animated.View
-        style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }, dock]}
+        style={[
+          styles.dock,
+          { paddingBottom: Math.max(insets.bottom, 16) },
+          !emblem && { paddingTop: 0 },
+          dock,
+        ]}
         pointerEvents="box-none">
-        <Animated.Image
-          source={BADGE_ART}
-          resizeMode="contain"
-          accessible={false}
-          style={[styles.badge, badge]}
-        />
+        {emblem && (
+          <Animated.Image
+            source={BADGE_ART}
+            resizeMode="contain"
+            accessible={false}
+            style={[styles.badge, badge]}
+          />
+        )}
 
         <View style={[styles.card, { backgroundColor: colors.card }]}>
           <TypedText text={title} style={[styles.title, { color: colors.foreground }]} />

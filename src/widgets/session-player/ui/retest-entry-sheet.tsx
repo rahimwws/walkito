@@ -12,12 +12,13 @@ import {
   retestResults,
   writeLog,
   type Retest,
-  type ZoneKey,
 } from '@/entities/program';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
+
+import { RetestResult } from './retest-result';
 
 export type RetestEntrySheetProps = {
   visible: boolean;
@@ -50,12 +51,6 @@ const GOAL_KEY: Readonly<Record<string, Key>> = {
   injuryfree: 'widgets.retestGoal.injuryfree',
 };
 
-const ZONE_KEY: Record<ZoneKey, Key> = {
-  calf: 'pages.program.zoneCalf',
-  arch: 'pages.program.zoneArch',
-  balance: 'pages.program.zoneBalance',
-  symmetry: 'pages.program.zoneSymmetry',
-};
 
 /**
  * The numbers from a retest, written down.
@@ -149,9 +144,6 @@ export function RetestEntrySheet({ visible, dayNumber, onDone }: RetestEntryShee
         <Text style={[styles.blurb, { color: meter.caption }]}>
           {result == null ? t('widgets.retestEntryBlurb') : t('widgets.retestResultBlurb')}
         </Text>
-        {result != null && intake?.goal != null && GOAL_KEY[intake.goal] != null && (
-          <Text style={[styles.goal, { color: colors.foreground }]}>{t(GOAL_KEY[intake.goal])}</Text>
-        )}
 
         {result == null
           ? rows.map((row) => (
@@ -171,29 +163,16 @@ export function RetestEntrySheet({ visible, dayNumber, onDone }: RetestEntryShee
                 />
               </View>
             ))
-          : result.rows.map((row) => (
-              <View key={row.zone} style={[styles.row, { backgroundColor: colors.card }]}>
-                <View style={styles.rowCopy}>
-                  <Text style={[styles.rowTitle, { color: colors.foreground }]}>
-                    {t(ZONE_KEY[row.zone])}
-                  </Text>
-                  <Text style={[styles.rowCaption, { color: meter.caption }]}>
-                    {row.from === row.to
-                      ? row.to
-                      : t('widgets.retestChange', { from: row.from, to: row.to })}
-                  </Text>
-                </View>
-                <Text
-                  style={[
-                    styles.level,
-                    // Colour never judges: only an improvement is marked, and a
-                    // level that held is ink like everything else.
-                    { color: row.level > row.wasLevel ? meter.positive : colors.foreground },
-                  ]}>
-                  {t('widgets.retestLevel', { level: row.level })}
-                </Text>
-              </View>
-            ))}
+          : (
+              <RetestResult
+                retest={result}
+                goalLine={
+                  intake?.goal != null && GOAL_KEY[intake.goal] != null
+                    ? t(GOAL_KEY[intake.goal])
+                    : null
+                }
+              />
+            )}
       </ScrollView>
 
       <View style={[styles.dock, { paddingBottom: Math.max(insets.bottom, 16) }]}>
@@ -258,11 +237,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.regular,
     marginBottom: 8,
   },
-  goal: {
-    fontSize: 16,
-    fontFamily: fonts.medium,
-    marginBottom: 8,
-  },
+
   row: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -300,10 +275,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontFamily: fonts.bold,
   },
-  level: {
-    fontSize: 17,
-    fontFamily: fonts.bold,
-  },
+
   dock: {
     position: 'absolute',
     left: 20,

@@ -201,6 +201,18 @@ type MovePlan = {
 };
 
 /**
+ * The demonstration for each retest measurement, in `RETEST_MOVE_KEYS` order.
+ *
+ * The tests had no footage, so the three moves that decide a person's levels
+ * were the only ones in the app played over an empty card — exactly where a
+ * misread instruction costs the most, because it corrupts the measurement. The
+ * arch hold and the balance test are the same movements as two catalogue
+ * exercises, and use their clips. The calf test is single-leg to failure, which
+ * no catalogue clip shows, so it has footage of its own.
+ */
+const RETEST_CLIPS: readonly string[] = ['retest_calf_raise', 'short_foot_double', 'single_leg_hold'];
+
+/**
  * How long one move runs, and whether it runs in phases.
  *
  * The dose comes from `prescriptionFor`, so a heel raise gets the block's own
@@ -518,7 +530,7 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
    * and a renamed exercise quietly losing its demonstration is a bug that looks
    * like nothing at all. Null for the six moves that have no clip yet, which
    * the card below states rather than showing another exercise's video. */
-  const clip = clipFor(current?.exercise?.id ?? '');
+  const clip = clipFor(current?.exercise?.id ?? (measuring ? (RETEST_CLIPS[step] ?? '') : ''));
 
   const player = useVideoPlayer(clip, (instance) => {
     instance.loop = true;

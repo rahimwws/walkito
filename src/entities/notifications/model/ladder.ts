@@ -161,8 +161,6 @@ export type DaySignals = {
    * has a habit of training at a particular time. Absent means the wake time.
    */
   sessionAt?: number;
-  /** Days to their race on this date, when they gave one. */
-  raceDaysLeft?: number | null;
   /** Their sport, for the one session line that names it. */
   sport?: string | null;
   minutes: number;

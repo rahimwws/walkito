@@ -105,14 +105,6 @@ export const ONBOARDING_RU = {
   'onboarding.goal.stronger': 'Укрепить ноги',
   'onboarding.goal.injuryfree': 'Обойтись без травм',
 
-  'onboarding.raceWhen.title': 'Когда старт, {name}?',
-  'onboarding.raceWhen.blurb': 'Можно примерно. От этого зависит обратный отсчёт в плане.',
-  'onboarding.raceWhen.month': 'Примерно через месяц',
-  'onboarding.raceWhen.twoMonths': 'Примерно через два месяца',
-  'onboarding.raceWhen.threeMonths': 'Примерно через три месяца',
-  'onboarding.raceWhen.later': 'Через четыре месяца и позже',
-  'onboarding.raceWhen.none': 'Даты пока нет',
-
   // ── Pain ─────────────────────────────────────────────────────────────────
   'onboarding.pain.title': 'Что вам мешает, {name}?',
   'onboarding.pain.blurb': 'Отметьте всё, что подходит. Обычно выбирают не одно.',
@@ -334,7 +326,6 @@ export const ONBOARDING_RU = {
   'onboarding.referral.already': 'Вы уже использовали код.',
   'onboarding.referral.unavailable': 'В этой сборке приглашения недоступны.',
   'onboarding.referral.failed': 'Не удалось связаться с сервером. Попробуйте через минуту.',
-
 
   // ── The note at the end of onboarding ────────────────────────────────────
   // Черновик — см. комментарий в en/onboarding.ts.

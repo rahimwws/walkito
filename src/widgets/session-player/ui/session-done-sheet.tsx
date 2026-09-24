@@ -40,10 +40,11 @@ export function SessionDoneSheet({ visible, streak, moves, early = false, onClos
       // plural. They are plural entries in the catalogue now, which is what
       // gets "2 дня" and "5 дней" right — the form Russian needs at 2, 3 and 4
       // has no English counterpart to have been built from.
-      headline={t('widgets.sessionDoneStreak', { count: streak })}
+      headline={early ? undefined : t('widgets.sessionDoneStreak', { count: streak })}
       headlineColor={accents[scheme].orange.fill}
       blurb={early ? t('widgets.sessionStoppedBlurb') : t('widgets.sessionDoneBlurb', { count: moves })}
       confetti={!early}
+      emblem={!early}
       onClose={onClose}
     />
   );

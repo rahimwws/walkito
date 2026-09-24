@@ -206,18 +206,19 @@ describe('the ladder reaches the copy', () => {
 describe('the sentence opens correctly', () => {
   const flare: BriefInput = { ...BASE, todayPain: 8, cursor: 18 };
 
-  /** With a name, the line starts on the name and the sentence continues after
-   * the vocative comma — so it stays lowercase. */
-  test('a name leads the line and is not capitalised over', () => {
-    const tokens = briefTokens({ ...flare, name: 'Sam' }, 'en');
-    expect(tokens[0]).toMatchObject({ kind: 'value', text: 'Sam', tail: ',' });
+  /** With a greeting, the line starts on it and the sentence continues after
+   * the comma — so it stays lowercase. The name no longer leads: a name on
+   * every line read as a form letter. */
+  test('a greeting leads the line and is not capitalised over', () => {
+    const tokens = briefTokens({ ...flare, name: 'Sam', hour: 9 }, 'en');
+    expect(tokens[0]).toMatchObject({ kind: 'value', text: 'Good morning', tail: ',' });
     expect(tokens[1].text).toBe('today is');
   });
 
   /** Without one, `buildBrief` restores the capital the templates are authored
    * without. Holds in all three languages. */
   for (const language of LANGUAGES) {
-    test(`${language} capitalises the opening word when there is no name`, () => {
+    test(`${language} capitalises the opening word when there is no greeting`, () => {
       const first = briefTokens(flare, language)[0].text;
       expect(first[0]).toBe(first[0].toLocaleUpperCase());
     });

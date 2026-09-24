@@ -40,6 +40,11 @@ import type { BriefVariants } from '@/shared/ui/daily-brief';
 import type { SourceEntry } from '../entry';
 
 export const HOME_EN = {
+  // ── The greeting that opens the morning line ─────────────────────────────
+  'home.greeting.morning': 'Good morning',
+  'home.greeting.afternoon': 'Good afternoon',
+  'home.greeting.evening': 'Good evening',
+
   // ── The kind of work a day is ────────────────────────────────────────────
   // "Today is 7 minutes" says nothing: seven minutes of what? The difference
   // between a strength day and a recovery day is what decides whether the
@@ -87,8 +92,6 @@ export const HOME_EN = {
    */
   'home.steps': { one: '{steps} step', other: '{steps} steps' },
 
-  /** Days to the race the user named in onboarding. */
-  'home.daysToRace': { one: '{count} day to race day', other: '{count} days to race day' },
   /**
    * "Back to" a sport, preposition included — see `BACK_TO` in `brief.ts`.
    * Russian needs the dative after «к», Spanish sometimes a verb.
@@ -276,9 +279,19 @@ export const BRIEF_EN = {
   // ── The programme's own structure ────────────────────────────────────────
   baseline: [
     [
+      { k: 'frame', text: 'today isn’t training, it’s' },
+      { k: 'metric', icon: 'retest', text: '{tests}' },
+      { k: 'frame', text: '— so there’s something to compare against later.' },
+    ],
+    [
       { k: 'frame', text: 'day one is' },
       { k: 'metric', icon: 'retest', text: '{tests}', tail: ',' },
-      { k: 'frame', text: 'not training — so every change from here is measured against you.' },
+      { k: 'frame', text: 'about four minutes. This is your starting point.' },
+    ],
+    [
+      { k: 'frame', text: 'we start with' },
+      { k: 'metric', icon: 'retest', text: '{tests}', tail: '.' },
+      { k: 'frame', text: 'In two weeks we’ll see what changed.' },
     ],
   ],
 
@@ -405,12 +418,21 @@ export const BRIEF_EN = {
     [
       { k: 'frame', text: 'already' },
       { k: 'metric', icon: 'feet', text: '{stepsToday}' },
-      { k: 'frame', text: 'today — a long day on your feet. How’s the heel?' },
+      { k: 'frame', text: 'today. How’s the heel?' },
     ],
     [
-      { k: 'frame', text: 'that’s' },
       { k: 'metric', icon: 'feet', text: '{stepsToday}' },
-      { k: 'frame', text: 'today. If the heel is talking, sitting down helps more than pushing on.' },
+      { k: 'frame', text: 'so far — a lot. If the heel is aching, sit for a bit.' },
+    ],
+    [
+      { k: 'frame', text: 'you’ve done' },
+      { k: 'metric', icon: 'feet', text: '{stepsToday}', tail: '.' },
+      { k: 'frame', text: 'Stretch the foot tonight — tomorrow morning will thank you.' },
+    ],
+    [
+      { k: 'frame', text: 'a long day on your feet —' },
+      { k: 'metric', icon: 'feet', text: '{stepsToday}', tail: '.' },
+      { k: 'frame', text: 'Log how the heel feels so the plan knows.' },
     ],
   ],
 
@@ -608,54 +630,78 @@ export const BRIEF_EN = {
   ],
 
   // ── Their goal ───────────────────────────────────────────────────────────
-  // Never a promise about the outcome. A countdown is a date, "the way back"
-  // is a direction, and neither says the heel will be fine by then.
-  'goal-race': [
-    [
-      { k: 'metric', icon: 'window', text: '{raceDays}', tail: '.' },
-      { k: 'frame', text: 'Today’s {work} is part of getting there on a foot that holds up.' },
-    ],
-    [
-      { k: 'frame', text: 'race countdown:' },
-      { k: 'metric', icon: 'window', text: '{raceDays}', tail: '.' },
-      { k: 'frame', text: 'Small doses now beat a big week later.' },
-    ],
-  ],
-
+  // Never a promise about the outcome: "the way back" is a direction, not a
+  // statement that the heel will be fine by then.
   'goal-back': [
     [
-      { k: 'frame', text: 'every session is a step back' },
+      { k: 'frame', text: 'every session is another step back' },
       { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
-      { k: 'frame', text: 'Today it’s' },
+      { k: 'frame', text: 'Today:' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'the way back' },
+      { k: 'frame', text: 'getting back' },
       { k: 'metric', icon: 'session', text: '{backTo}' },
-      { k: 'frame', text: 'is built from days like this one —' },
+      { k: 'frame', text: 'takes days like this one. Today:' },
       { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'today' },
+      { k: 'value', text: '{minutes}' },
+      { k: 'frame', text: '— and you’re a little closer' },
+      { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'a little every day is how people get back' },
+      { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
     ],
   ],
 
   'goal-consistent': [
     [
-      { k: 'frame', text: 'you said consistency is the goal —' },
+      { k: 'frame', text: 'already' },
       { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
-      { k: 'frame', text: 'Today keeps it going.' },
+      { k: 'frame', text: 'Keep it going.' },
+    ],
+    [
+      { k: 'frame', text: 'you wanted consistency — here it is:' },
+      { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
+    ],
+    [
+      { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
+      { k: 'frame', text: 'Today’s session is only' },
+      { k: 'value', text: '{minutes}', tail: '.' },
     ],
   ],
 
   'goal-stronger': [
     [
-      { k: 'frame', text: 'stronger is the goal, and it comes from repetition, not intensity. Today:' },
+      { k: 'frame', text: 'strength comes from repetition. Today:' },
       { k: 'metric', icon: 'level', text: '{work}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'today is' },
+      { k: 'metric', icon: 'level', text: '{work}', tail: '.' },
+      { k: 'frame', text: 'The more often, the stronger.' },
+    ],
+    [
+      { k: 'frame', text: 'stronger means a little, but often. Today:' },
+      { k: 'value', text: '{minutes}', tail: '.' },
     ],
   ],
 
   'goal-injuryfree': [
     [
-      { k: 'frame', text: 'staying injury-free is small doses, often. Today’s is' },
+      { k: 'frame', text: 'the best protection from injury is a little every day. Today:' },
       { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'a strong foot gets hurt less. Today it gets' },
+      { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+    [
+      { k: 'value', text: '{minutes}' },
+      { k: 'frame', text: 'a day is enough to stay ahead of injuries.' },
     ],
   ],
 

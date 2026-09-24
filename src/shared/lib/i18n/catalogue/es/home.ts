@@ -24,6 +24,10 @@
 import type { BriefVariants } from '@/shared/ui/daily-brief';
 
 export const HOME_ES = {
+  'home.greeting.morning': 'Buenos días',
+  'home.greeting.afternoon': 'Buenas tardes',
+  'home.greeting.evening': 'Buenas noches',
+
   // ── The kind of work a day is ────────────────────────────────────────────
   'home.workStrength': 'fuerza de pie y pantorrilla',
   'home.workMobility': 'estiramientos',
@@ -45,7 +49,6 @@ export const HOME_ES = {
   'home.dayOfPlan': 'día {day} de {total}',
   'home.steps': { one: '{steps} paso', other: '{steps} pasos' },
 
-  'home.daysToRace': { one: '{count} día para la carrera', other: '{count} días para la carrera' },
   // Con preposición, y a veces con verbo: «a correr», «al tenis».
   'home.backTo.running': 'a correr',
   'home.backTo.tennis': 'al tenis',
@@ -197,9 +200,19 @@ export const BRIEF_ES = {
   // ── La estructura del programa ───────────────────────────────────────────
   baseline: [
     [
+      { k: 'frame', text: 'hoy no toca entrenar, sino' },
+      { k: 'metric', icon: 'retest', text: '{tests}' },
+      { k: 'frame', text: '— para tener con qué comparar después.' },
+    ],
+    [
       { k: 'frame', text: 'el primer día son' },
       { k: 'metric', icon: 'retest', text: '{tests}', tail: ',' },
-      { k: 'frame', text: 'no un entrenamiento: todo cambio a partir de aquí se mide contra ti.' },
+      { k: 'frame', text: 'unos cuatro minutos. Es tu punto de partida.' },
+    ],
+    [
+      { k: 'frame', text: 'empezamos con' },
+      { k: 'metric', icon: 'retest', text: '{tests}', tail: '.' },
+      { k: 'frame', text: 'En dos semanas vemos qué cambió.' },
     ],
   ],
 
@@ -326,14 +339,23 @@ export const BRIEF_ES = {
 
   'steps-today': [
     [
-      { k: 'frame', text: 'hoy ya llevas' },
+      { k: 'frame', text: 'ya llevas' },
       { k: 'metric', icon: 'feet', text: '{stepsToday}' },
-      { k: 'frame', text: '— un día largo de pie. ¿Qué tal el talón?' },
+      { k: 'frame', text: 'hoy. ¿Qué tal el talón?' },
     ],
     [
-      { k: 'frame', text: 'ya son' },
       { k: 'metric', icon: 'feet', text: '{stepsToday}' },
-      { k: 'frame', text: 'hoy. Si el talón se queja, sentarte un rato ayuda más que seguir.' },
+      { k: 'frame', text: 'hasta ahora — mucho. Si el talón molesta, siéntate un rato.' },
+    ],
+    [
+      { k: 'frame', text: 'hoy llevas' },
+      { k: 'metric', icon: 'feet', text: '{stepsToday}', tail: '.' },
+      { k: 'frame', text: 'Estira el pie esta noche y mañana lo notarás.' },
+    ],
+    [
+      { k: 'frame', text: 'un día largo de pie:' },
+      { k: 'metric', icon: 'feet', text: '{stepsToday}', tail: '.' },
+      { k: 'frame', text: 'Anota cómo va el talón para que el plan lo tenga en cuenta.' },
     ],
   ],
 
@@ -527,52 +549,76 @@ export const BRIEF_ES = {
     ],
   ],
 
-  'goal-race': [
-    [
-      { k: 'metric', icon: 'window', text: '{raceDays}', tail: '.' },
-      { k: 'frame', text: 'La sesión de hoy es parte de llegar con un pie que aguante.' },
-    ],
-    [
-      { k: 'frame', text: 'cuenta atrás:' },
-      { k: 'metric', icon: 'window', text: '{raceDays}', tail: '.' },
-      { k: 'frame', text: 'Dosis pequeñas ahora valen más que una gran semana después.' },
-    ],
-  ],
-
   'goal-back': [
     [
-      { k: 'frame', text: 'cada sesión es un paso para volver' },
+      { k: 'frame', text: 'cada sesión es un paso más para volver' },
       { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
-      { k: 'frame', text: 'Hoy son' },
+      { k: 'frame', text: 'Hoy:' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'el camino para volver' },
+      { k: 'frame', text: 'para volver' },
       { k: 'metric', icon: 'session', text: '{backTo}' },
-      { k: 'frame', text: 'se hace con días como este:' },
+      { k: 'frame', text: 'hacen falta días como este. Hoy:' },
       { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'hoy' },
+      { k: 'value', text: '{minutes}' },
+      { k: 'frame', text: 'y estás un poco más cerca de volver' },
+      { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'un poco cada día: así se vuelve' },
+      { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
     ],
   ],
 
   'goal-consistent': [
     [
-      { k: 'frame', text: 'dijiste que la meta es la constancia:' },
+      { k: 'frame', text: 'ya llevas' },
       { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
-      { k: 'frame', text: 'Hoy la mantiene.' },
+      { k: 'frame', text: 'Sigue así.' },
+    ],
+    [
+      { k: 'frame', text: 'querías constancia y aquí está:' },
+      { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
+    ],
+    [
+      { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
+      { k: 'frame', text: 'Hoy son solo' },
+      { k: 'value', text: '{minutes}', tail: '.' },
     ],
   ],
 
   'goal-stronger': [
     [
-      { k: 'frame', text: 'la fuerza llega con la repetición, no con la intensidad. Hoy:' },
+      { k: 'frame', text: 'la fuerza llega con la repetición. Hoy:' },
       { k: 'metric', icon: 'level', text: '{work}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'hoy toca' },
+      { k: 'metric', icon: 'level', text: '{work}', tail: '.' },
+      { k: 'frame', text: 'Cuanto más a menudo, más fuerte.' },
+    ],
+    [
+      { k: 'frame', text: 'más fuerte es poco, pero a menudo. Hoy:' },
+      { k: 'value', text: '{minutes}', tail: '.' },
     ],
   ],
 
   'goal-injuryfree': [
     [
-      { k: 'frame', text: 'evitar lesiones es dosis pequeñas y frecuentes. Hoy son' },
+      { k: 'frame', text: 'la mejor protección contra lesiones es un poco cada día. Hoy:' },
       { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'un pie fuerte se lesiona menos. Hoy le tocan' },
+      { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+    [
+      { k: 'value', text: '{minutes}' },
+      { k: 'frame', text: 'al día bastan para ir por delante de las lesiones.' },
     ],
   ],
 

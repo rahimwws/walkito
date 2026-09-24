@@ -77,8 +77,6 @@ type Facts = {
   days: number;
   block: string;
   streak: number;
-  /** Days to the race on this date, or null. */
-  raceDays: number | null;
   /** "back to running", resolved, or null without a sport we can name. */
   backTo: string | null;
 };
@@ -102,12 +100,6 @@ const SESSION_LINES: readonly Line[] = [
   (t, f) => t('notifications.sessionCalves', { count: f.minutes }),
   (t) => t('notifications.sessionMobility'),
 ];
-
-/** The session line for someone with a race ahead: the day's work, then the
- * countdown. Replaces the rotation outright — it is the one fact that changes
- * every day. */
-const RACE_LINE: Line = (t, f) =>
-  t('notifications.sessionRace', { kind: f.kind, count: f.raceDays ?? 0 });
 
 /** Joins the rotation when we know their sport. */
 const BACK_TO_LINE: Line = (t, f) =>
@@ -233,7 +225,6 @@ function factsFor(signals: DaySignals, t: Translate, language: Language): Facts 
     days: signals.asymmetryDays,
     block: signals.opensBlock ?? '',
     streak: signals.streak,
-    raceDays: signals.raceDaysLeft ?? null,
     backTo:
       signals.sport != null && signals.sport in BACK_TO_KEYS
         ? t(BACK_TO_KEYS[signals.sport as keyof typeof BACK_TO_KEYS])
@@ -322,7 +313,6 @@ function bodyFor(
       return (PLAN_LINES[signals.planReason ?? 'plan'] ?? PLAN_LINES.plan)(t, facts);
     case 'session':
       if (signals.maintenance) return rotate(MAINTENANCE_LINES, signals.dateKey, 71)(t, facts);
-      if (facts.raceDays != null && facts.raceDays >= 0) return RACE_LINE(t, facts);
       return rotate(
         facts.backTo == null ? SESSION_LINES : [...SESSION_LINES, BACK_TO_LINE],
         signals.dateKey,

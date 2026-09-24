@@ -138,6 +138,11 @@ export const OFFER_EN = {
   'widgets.retestChange': '{from} → {to}',
   'widgets.retestLevel': 'Lv {level}',
   'widgets.retestDone': 'Done',
+  'widgets.retestUnitReps': 'reps',
+  'widgets.retestUnitSeconds': 'sec',
+  'widgets.retestUnitGap': '% gap between legs',
+  'widgets.retestYourGoal': 'Your goal',
+  'widgets.retestFirstCaption': 'This is your starting point. In two weeks you’ll see what changed.',
   /** The goal they picked in onboarding, said back on the result screen. */
   'widgets.retestGoal.painfree': 'You came here for mornings that don’t start with heel pain. These numbers are the foot getting there.',
   'widgets.retestGoal.race': 'You’re working towards a race. A stronger calf and a steadier foot are what carry you to the start line.',

@@ -10,7 +10,6 @@ export {
 } from './model/profile';
 export {
   getIntake,
-  raceDaysLeft,
   resetIntake,
   saveIntake,
   useIntake,

@@ -775,7 +775,7 @@ const CONFIRM_MS = 900;
                 contentContainerStyle={styles.scrollContent}
                 showsVerticalScrollIndicator={false}>
                 <ChoiceStep
-                  art={step.key === 'sport' ? 'sport' : 'option'}
+                  art={step.key === 'sport' ? 'sport' : step.key === 'side' ? 'side' : 'option'}
                   options={resolve(step.key === 'load' ? load.options : step.options)}
                   selected={Array.isArray(answer) ? answer : []}
                   multi={step.multi ?? false}

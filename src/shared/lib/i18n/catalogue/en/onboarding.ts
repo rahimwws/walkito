@@ -120,14 +120,6 @@ export const ONBOARDING_EN = {
   'onboarding.goal.stronger': 'Build stronger legs',
   'onboarding.goal.injuryfree': 'Stay injury-free',
 
-  'onboarding.raceWhen.title': 'When’s the race, {name}?',
-  'onboarding.raceWhen.blurb': 'Roughly is fine. It sets the countdown the plan works towards.',
-  'onboarding.raceWhen.month': 'In about a month',
-  'onboarding.raceWhen.twoMonths': 'In about two months',
-  'onboarding.raceWhen.threeMonths': 'In about three months',
-  'onboarding.raceWhen.later': 'Four months or more',
-  'onboarding.raceWhen.none': 'No date yet',
-
   // ── Pain ─────────────────────────────────────────────────────────────────
   'onboarding.pain.title': 'What’s getting in the way, {name}?',
   'onboarding.pain.blurb': 'Choose any that apply. Most people pick more than one.',
@@ -404,7 +396,6 @@ export const ONBOARDING_EN = {
   'onboarding.referral.already': 'You have already used a code.',
   'onboarding.referral.unavailable': 'Invites are not available in this build.',
   'onboarding.referral.failed': 'Could not reach the server. Try again in a moment.',
-
 
   // ── The note at the end of onboarding ────────────────────────────────────
   //

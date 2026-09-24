@@ -14,7 +14,7 @@ import {
   weekAttendance,
 } from '@/entities/program';
 import { useHealthSignals } from '@/entities/health';
-import { firstName, raceDaysLeft, useIntake, useProfileName } from '@/entities/profile';
+import { firstName, useIntake, useProfileName } from '@/entities/profile';
 import { accents } from '@/shared/config';
 import { useLanguage } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -176,6 +176,9 @@ export function HomePage() {
             tokens={briefTokens(
               {
                 name: firstName(name),
+                // Read at render: Home re-renders on focus and on every log
+                // write, which is often enough for the greeting to keep up.
+                hour: new Date().getHours(),
                 cursor: TODAY_INDEX,
                 // Null until they have actually answered, and never zero. The
                 // ladder reads null as "not asked yet" and falls through to the
@@ -208,7 +211,6 @@ export function HomePage() {
                 onFeetThreshold: signals.onFeetThreshold,
                 goal: intake?.goal ?? null,
                 sport: intake?.sport ?? null,
-                raceDaysLeft: raceDaysLeft(intake),
               },
               language,
             )}

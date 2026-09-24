@@ -34,7 +34,7 @@ import {
   type ResolvedDay,
 } from '@/entities/program';
 
-import { currentAudience, daysUntil } from './audience';
+import { currentAudience } from './audience';
 import { GAIT_PAIN_GATE, sessionAtFor, type DaySignals } from './ladder';
 import { lastOpenedOn, openedOn } from './opens';
 import { observeWake, wakeMinutes } from './wake';
@@ -108,7 +108,6 @@ export function signalsFor(dayNumber: number, now: number, today: number): DaySi
     dayNumber,
     wakeAt,
     sessionAt: sessionAtFor(wakeAt, usualSessionMinute(today)),
-    raceDaysLeft: audience.raceDate == null ? null : daysUntil(dateKey, audience.raceDate),
     sport: audience.sport,
 
     painYesterday: painOn(dayNumber - 1),

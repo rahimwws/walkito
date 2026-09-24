@@ -53,7 +53,6 @@ export const BRIEF_STATES = [
   'walk-back',
   'gait-recovered',
   // Their own goal, in their own sport.
-  'goal-race',
   'goal-back',
   'goal-consistent',
   'goal-stronger',
@@ -115,6 +114,13 @@ const AWAY_DAYS = 4;
 
 export type BriefInput = {
   name: string;
+  /**
+   * The hour, 0–23, for the greeting that opens the line.
+   *
+   * Passed in rather than read, like everything here, so a test can ask for
+   * an evening. Absent means no greeting — the sentence simply starts.
+   */
+  hour?: number;
   /** Where the user stands in the programme, 0-based. */
   cursor: number;
   /** Today's logged pain, 0–10, or null if they have not checked in yet. */
@@ -147,15 +153,11 @@ export type BriefInput = {
   goal?: string | null;
   /** The sport that loads their legs, from onboarding. */
   sport?: string | null;
-  /** Days to their race, when they gave one. */
-  raceDaysLeft?: number | null;
 };
 
 /** A personal line lands on every third quiet day — often enough to be
  * noticed as theirs, rarely enough not to become the new "same line forever". */
 export const PERSONAL_EVERY = 3;
-/** Inside the last fortnight the countdown is the line, every quiet day. */
-export const RACE_SOON_DAYS = 14;
 
 /** The sports the "way back to…" line knows how to name. */
 export const SPORTS = [
@@ -171,15 +173,13 @@ export const SPORTS = [
 /**
  * The line that speaks to their goal, if they gave one we can speak to.
  *
- * Race wins only while there is a date ahead. Pain-free, and a race with no
- * date, become the way back to their sport — which needs a sport we can name.
+ * Pain-free and a race both become the way back to their sport — which needs
+ * a sport we can name.
  */
 export function personalState(
   goal: string | null | undefined,
   sport: string | null | undefined,
-  raceDaysLeft: number | null | undefined,
 ): BriefState | null {
-  if (goal === 'race' && raceDaysLeft != null && raceDaysLeft >= 0) return 'goal-race';
   if (goal === 'consistent') return 'goal-consistent';
   if (goal === 'stronger') return 'goal-stronger';
   if (goal === 'injuryfree') return 'goal-injuryfree';
@@ -249,7 +249,6 @@ export function readBrief({
   onFeetThreshold = null,
   goal = null,
   sport = null,
-  raceDaysLeft = null,
 }: BriefInput): BriefReading {
   const day: ProgramDay | undefined = PROGRAM[cursor];
   const pain = todayPain ?? painFor(cursor);
@@ -334,14 +333,10 @@ export function readBrief({
 
   // --- Their goal -----------------------------------------------------------
   // After the plan's own structure and before the rotation. Never on a sore
-  // morning: a countdown or "the way back to running" over a bad day reads as
-  // the app pressing on regardless.
-  const personal = quiet ? personalState(goal, sport, raceDaysLeft) : null;
-  if (personal != null) {
-    const raceSoon =
-      personal === 'goal-race' && raceDaysLeft != null && raceDaysLeft <= RACE_SOON_DAYS;
-    if (raceSoon || cursor % PERSONAL_EVERY === 0) return reading(personal);
-  }
+  // morning: "the way back to running" over a bad day reads as the app
+  // pressing on regardless.
+  const personal = quiet ? personalState(goal, sport) : null;
+  if (personal != null && cursor % PERSONAL_EVERY === 0) return reading(personal);
 
   // --- Honest emptiness, held back a week --------------------------------
   // Telling someone on day two that we cannot read their walk is true and

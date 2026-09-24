@@ -41,28 +41,18 @@ function weightKg(answers: Answers): number | null {
   return measured(answers, 'body', 'kg');
 }
 
-/** A local `YYYY-MM-DD`, `weeks` from `now`. */
-function weeksAhead(now: number, weeks: number): string {
-  const d = new Date(now + weeks * 7 * 86_400_000);
-  const month = `${d.getMonth() + 1}`.padStart(2, '0');
-  const day = `${d.getDate()}`.padStart(2, '0');
-  return `${d.getFullYear()}-${month}-${day}`;
-}
-
 export function intakeFrom(
   answers: Answers,
   shoe: { size: number; unit: 'eu' | 'us' } | null,
   now: number = Date.now(),
 ): Intake {
   const side = first(answers, 'side');
-  const goal = first(answers, 'goal');
-  const raceWeeks = Number(first(answers, 'raceWhen'));
   return {
     pain: all(answers, 'pain'),
     side: side === 'left' || side === 'right' || side === 'both' ? side : null,
     sport: first(answers, 'sport'),
     runner: first(answers, 'runner'),
-    goal,
+    goal: first(answers, 'goal'),
     challenge: first(answers, 'challenge'),
     load: first(answers, 'load'),
     sessionsPerWeek: first(answers, 'sessionsPerWeek'),
@@ -71,11 +61,6 @@ export function intakeFrom(
     weightKg: weightKg(answers),
     shoe,
     watch: first(answers, 'watch'),
-    // Only for a race goal, and only when a rough date was given.
-    raceDate:
-      goal === 'race' && Number.isFinite(raceWeeks) && raceWeeks > 0
-        ? weeksAhead(now, raceWeeks)
-        : null,
     completedAt: now,
   };
 }

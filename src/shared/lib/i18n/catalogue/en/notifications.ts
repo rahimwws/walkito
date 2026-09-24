@@ -55,11 +55,6 @@ export const NOTIFICATIONS_EN = {
     other: 'Short session today — {count} minutes, sitting down.',
   },
   'notifications.sessionHeelRaises': 'Heel raises today. The one that actually moves things.',
-  /** A race ahead: the day's work, then the countdown. */
-  'notifications.sessionRace': {
-    one: '{kind} today. {count} day to race day.',
-    other: '{kind} today. {count} days to race day.',
-  },
   /** Their sport, named as the way back — never as a promise of getting there. */
   'notifications.sessionBackTo': {
     one: '{count} minute today. One more step back {backTo}.',

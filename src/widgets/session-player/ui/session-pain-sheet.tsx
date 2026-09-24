@@ -105,8 +105,10 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   cell: {
-    width: 56,
-    height: 56,
+    // Six to a row on a phone, so 0–10 sit as 6 + 5 rather than leaving the
+    // 10 alone on a third line.
+    width: 52,
+    height: 52,
     borderRadius: 16,
     alignItems: 'center',
     justifyContent: 'center',

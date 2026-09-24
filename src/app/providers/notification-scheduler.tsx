@@ -25,7 +25,7 @@ import { subscribeToLanguage } from '@/shared/lib/i18n';
  */
 export function useNotificationScheduler(): void {
   /**
-   * The two onboarding facts the copy speaks to — their sport and their race.
+   * The onboarding fact the copy speaks to — their sport.
    *
    * Introduced here because notifications may not import the profile. Set
    * during render rather than in an effect, so it is in place before the effect
@@ -33,7 +33,7 @@ export function useNotificationScheduler(): void {
    * moment onboarding finishes.
    */
   const intake = useIntake();
-  setAudience({ sport: intake?.sport ?? null, raceDate: intake?.raceDate ?? null });
+  setAudience({ sport: intake?.sport ?? null });
   useEffect(() => {
     if (intake != null && AppState.currentState !== 'background') void onAppOpen();
   }, [intake]);

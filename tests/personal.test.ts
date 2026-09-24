@@ -4,7 +4,6 @@
 
 import { describe, expect, test } from 'bun:test';
 
-import { raceDaysLeft } from '@/entities/profile/model/intake';
 import { usualSessionMinute, writeLog } from '@/entities/program/model/state';
 import { messageFor } from '@/entities/notifications/model/copy';
 import { candidates, sessionAtFor, type DaySignals } from '@/entities/notifications/model/ladder';
@@ -15,31 +14,22 @@ import { PERSONAL_EVERY, briefState, personalState } from '@/pages/home/model/br
 
 const say = (tokens: readonly { text: string }[]) => tokens.map((token) => token.text).join(' ');
 
-describe('the race date', () => {
-  test('"in about two months" becomes a date eight weeks out', () => {
-    const now = new Date(2026, 2, 1).getTime();
-    const intake = intakeFrom({ goal: ['race'], raceWhen: ['8'] }, null, now);
-    expect(intake.raceDate).toBe('2026-04-26');
-    expect(raceDaysLeft(intake, now)).toBe(56);
-  });
-
-  test('no date, or no race, is no countdown', () => {
-    expect(intakeFrom({ goal: ['race'], raceWhen: ['none'] }, null).raceDate).toBeNull();
-    expect(intakeFrom({ goal: ['painfree'], raceWhen: ['8'] }, null).raceDate).toBeNull();
-    expect(raceDaysLeft(null)).toBeNull();
-  });
-});
-
 describe('the personal line on Home', () => {
   const base = { name: '', cursor: 21, doneToday: false, streak: 4, daysInstalled: 21, todayPain: 1 };
 
   test('which line a goal gets', () => {
-    expect(personalState('race', 'running', 30)).toBe('goal-race');
-    expect(personalState('race', 'running', null)).toBe('goal-back');
-    expect(personalState('race', 'running', -2)).toBe('goal-back');
-    expect(personalState('painfree', 'tennis', null)).toBe('goal-back');
-    expect(personalState('painfree', null, null)).toBeNull();
-    expect(personalState('consistent', null, null)).toBe('goal-consistent');
+    expect(personalState('race', 'running')).toBe('goal-back');
+    expect(personalState('painfree', 'tennis')).toBe('goal-back');
+    expect(personalState('painfree', null)).toBeNull();
+    expect(personalState('consistent', null)).toBe('goal-consistent');
+  });
+
+  test('the line opens on a greeting for the time of day, not the name', () => {
+    const input = { ...base, cursor: 21, goal: 'painfree', sport: 'running' };
+    expect(say(briefTokens({ ...input, hour: 8 }, 'ru'))).toStartWith('Доброе утро');
+    expect(say(briefTokens({ ...input, hour: 14 }, 'ru'))).toStartWith('Добрый день');
+    expect(say(briefTokens({ ...input, hour: 21 }, 'en'))).toStartWith('Good evening');
+    expect(say(briefTokens({ ...input, hour: 2 }, 'es'))).toStartWith('Buenas noches');
   });
 
   test('every third quiet day, not every day', () => {
@@ -48,13 +38,8 @@ describe('the personal line on Home', () => {
     expect(briefState({ ...on, cursor: on.cursor + 1 })).not.toBe('goal-back');
   });
 
-  test('the last fortnight before a race is the countdown every quiet day', () => {
-    const racing = { ...base, cursor: 22, goal: 'race', raceDaysLeft: 9 };
-    expect(briefState(racing)).toBe('goal-race');
-  });
-
   test('never over a sore morning', () => {
-    expect(briefState({ ...base, todayPain: 6, goal: 'race', raceDaysLeft: 5 })).not.toBe('goal-race');
+    expect(briefState({ ...base, todayPain: 6, goal: 'painfree', sport: 'running' })).not.toBe('goal-back');
   });
 
   test('the sport is named in each language', () => {
@@ -64,10 +49,6 @@ describe('the personal line on Home', () => {
     expect(say(briefTokens(input, 'es'))).toContain('a correr');
   });
 
-  test('the countdown agrees in Russian', () => {
-    const input = { ...base, cursor: 22, goal: 'race', raceDaysLeft: 3 };
-    expect(say(briefTokens(input, 'ru'))).toContain('3 дня до старта');
-  });
 });
 
 describe('notifications', () => {
@@ -96,15 +77,6 @@ describe('notifications', () => {
     freezeUsedThisWeek: false,
     daysAway: 0,
     ...overrides,
-  });
-
-  test('a race ahead puts the countdown in the session line', () => {
-    expect(messageFor('session', signals({ raceDaysLeft: 12 }), 'en')?.body).toContain(
-      '12 days to race day',
-    );
-    expect(messageFor('session', signals({ raceDaysLeft: 22 }), 'ru')?.body).toContain(
-      'До старта 22 дня',
-    );
   });
 
   test('the session reminder lands at their usual time, within bounds', () => {

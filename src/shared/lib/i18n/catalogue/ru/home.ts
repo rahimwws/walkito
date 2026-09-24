@@ -28,6 +28,10 @@
 import type { BriefVariants } from '@/shared/ui/daily-brief';
 
 export const HOME_RU = {
+  'home.greeting.morning': 'Доброе утро',
+  'home.greeting.afternoon': 'Добрый день',
+  'home.greeting.evening': 'Добрый вечер',
+
   // ── The kind of work a day is ────────────────────────────────────────────
   'home.workStrength': 'сила стопы и голени',
   'home.workMobility': 'растяжка',
@@ -60,11 +64,6 @@ export const HOME_RU = {
   'home.dayOfPlan': 'день {day} из {total}',
   'home.steps': { one: '{steps} шаг', few: '{steps} шага', many: '{steps} шагов' },
 
-  'home.daysToRace': {
-    one: '{count} день до старта',
-    few: '{count} дня до старта',
-    many: '{count} дней до старта',
-  },
   // С предлогом и в дательном падеже — «к бегу», «к теннису».
   'home.backTo.running': 'к бегу',
   'home.backTo.tennis': 'к теннису',
@@ -214,9 +213,19 @@ export const BRIEF_RU = {
   // ── Структура программы ──────────────────────────────────────────────────
   baseline: [
     [
+      { k: 'frame', text: 'сегодня не тренировка, а' },
+      { k: 'metric', icon: 'retest', text: '{tests}' },
+      { k: 'frame', text: '— чтобы потом было с чем сравнить.' },
+    ],
+    [
       { k: 'frame', text: 'первый день —' },
       { k: 'metric', icon: 'retest', text: '{tests}', tail: ',' },
-      { k: 'frame', text: 'а не тренировка: дальше каждое изменение будет считаться от вас самих.' },
+      { k: 'frame', text: 'минуты на четыре. Это ваша точка отсчёта.' },
+    ],
+    [
+      { k: 'frame', text: 'начинаем с замеров:' },
+      { k: 'metric', icon: 'retest', text: '{tests}', tail: '.' },
+      { k: 'frame', text: 'Через две недели посмотрим, что изменилось.' },
     ],
   ],
 
@@ -348,13 +357,23 @@ export const BRIEF_RU = {
   'steps-today': [
     [
       { k: 'frame', text: 'сегодня уже' },
-      { k: 'metric', icon: 'feet', text: '{stepsToday}' },
-      { k: 'frame', text: '— долгий день на ногах. Как пятка?' },
+      { k: 'metric', icon: 'feet', text: '{stepsToday}', tail: '.' },
+      { k: 'frame', text: 'Как пятка?' },
     ],
     [
-      { k: 'frame', text: 'за сегодня уже' },
+      { k: 'frame', text: 'уже' },
+      { k: 'metric', icon: 'feet', text: '{stepsToday}' },
+      { k: 'frame', text: '— это много. Если пятка ноет, лучше посидеть.' },
+    ],
+    [
+      { k: 'frame', text: 'вы сегодня прошли' },
       { k: 'metric', icon: 'feet', text: '{stepsToday}', tail: '.' },
-      { k: 'frame', text: 'Если пятка даёт о себе знать, лучше присесть, чем дохаживать.' },
+      { k: 'frame', text: 'Вечером растяните стопу — утром будет легче.' },
+    ],
+    [
+      { k: 'frame', text: 'долгий день на ногах —' },
+      { k: 'metric', icon: 'feet', text: '{stepsToday}', tail: '.' },
+      { k: 'frame', text: 'Отметьте, как пятка, и план это учтёт.' },
     ],
   ],
 
@@ -550,52 +569,76 @@ export const BRIEF_RU = {
     ],
   ],
 
-  'goal-race': [
-    [
-      { k: 'metric', icon: 'window', text: '{raceDays}', tail: '.' },
-      { k: 'frame', text: 'Сегодняшняя сессия — часть того, чтобы стопа выдержала старт.' },
-    ],
-    [
-      { k: 'frame', text: 'обратный отсчёт:' },
-      { k: 'metric', icon: 'window', text: '{raceDays}', tail: '.' },
-      { k: 'frame', text: 'Маленькие дозы сейчас лучше большой недели потом.' },
-    ],
-  ],
-
   'goal-back': [
     [
-      { k: 'frame', text: 'каждая сессия — шаг обратно' },
+      { k: 'frame', text: 'каждое занятие — ещё шаг' },
       { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
-      { k: 'frame', text: 'Сегодня это' },
+      { k: 'frame', text: 'Сегодня' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'дорога обратно' },
-      { k: 'metric', icon: 'session', text: '{backTo}' },
-      { k: 'frame', text: 'складывается из таких дней, как этот —' },
+      { k: 'frame', text: 'чтобы вернуться' },
+      { k: 'metric', icon: 'session', text: '{backTo}', tail: ',' },
+      { k: 'frame', text: 'нужны вот такие дни. Сегодня' },
       { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'сегодня' },
+      { k: 'value', text: '{minutes}' },
+      { k: 'frame', text: '— и вы ещё ближе' },
+      { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'понемногу каждый день — так и возвращаются' },
+      { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
     ],
   ],
 
   'goal-consistent': [
     [
-      { k: 'frame', text: 'вы выбрали регулярность —' },
+      { k: 'frame', text: 'уже' },
       { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
-      { k: 'frame', text: 'Сегодняшний день её продолжает.' },
+      { k: 'frame', text: 'Так держать.' },
+    ],
+    [
+      { k: 'frame', text: 'вы хотели регулярности — вот она:' },
+      { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
+    ],
+    [
+      { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
+      { k: 'frame', text: 'Сегодня всего' },
+      { k: 'value', text: '{minutes}', tail: '.' },
     ],
   ],
 
   'goal-stronger': [
     [
-      { k: 'frame', text: 'сила приходит от повторения, а не от интенсивности. Сегодня:' },
+      { k: 'frame', text: 'сила приходит от повторений. Сегодня:' },
       { k: 'metric', icon: 'level', text: '{work}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'сегодня' },
+      { k: 'metric', icon: 'level', text: '{work}', tail: '.' },
+      { k: 'frame', text: 'Чем чаще, тем сильнее.' },
+    ],
+    [
+      { k: 'frame', text: 'сильнее — это понемногу, но часто. Сегодня' },
+      { k: 'value', text: '{minutes}', tail: '.' },
     ],
   ],
 
   'goal-injuryfree': [
     [
-      { k: 'frame', text: 'без травм — это маленькие дозы, но часто. Сегодня это' },
+      { k: 'frame', text: 'лучшая защита от травм — понемногу каждый день. Сегодня' },
       { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+    [
+      { k: 'frame', text: 'крепкая стопа реже болит. Сегодня на неё' },
+      { k: 'value', text: '{minutes}', tail: '.' },
+    ],
+    [
+      { k: 'value', text: '{minutes}' },
+      { k: 'frame', text: 'в день — и травмы обходят стороной.' },
     ],
   ],
 
