@@ -16,25 +16,65 @@ export const SITE_URL = 'https://walkito.site';
 export const SITE_NAME = 'Walkito';
 
 /**
- * The programme's own numbers, read out of the app rather than retyped.
+ * The plan's own numbers, read out of the app rather than retyped.
  *
- * `BLOCKS_12_WEEK` is `buildBlocks(6)` and `BLOCK_LENGTH` is 14, so the plan is
- * 84 days. Session minutes come from `MINUTES_BY_KIND` (3–7) and the
- * maintenance day (8). Retests are `RETEST_TESTS` and `RETEST_MINUTES`.
+ * There is no fixed length any more. The app builds one week at a time around
+ * a focus goal (`src/entities/program/model/plan/week.ts`), a reached goal
+ * moves to maintaining and the next takes its place (`goals.ts`: "There is no
+ * end to the plan"), so the site must never say "12 weeks" about the plan.
+ * The purchasable pass is still sold by length, but that is billing, not the
+ * programme, and the site quotes no prices.
  *
- * Verified against `src/entities/program/model/` on 20 September 2026. If the
- * plan changes, these are wrong and nothing will fail to say so — the app and
- * this site are separate builds. Checking them is part of changing the plan.
+ * - Sessions: `SessionMinutes = 3 | 5 | 10`, default 5 (`store.ts`).
+ * - Days a week: `WEEK_SHAPES` for 3, 5 or 7 days.
+ * - Tests: `TEST_EVERY_DAYS` 14, then `TEST_EVERY_DAYS_AFTER_GOAL` 28 once the
+ *   first goal is reached; a test is `RETEST_TESTS` measurements in about
+ *   `RETEST_MINUTES` minutes.
+ * - Week one "settles in": nothing that loads the fascia, nothing above level 2.
+ * - Goals (`GOAL_SPECS`): morning pain ≤ 1/10 for 14 days running; arch hold
+ *   60 s; 25 single-leg calf raises; 30 s single-leg balance; left/right gap
+ *   under 10 %.
+ *
+ * Verified against `src/entities/program/model/plan/` on 28 September 2026. The
+ * app and this site are separate builds: if the plan changes, these are wrong
+ * and nothing fails to say so. Checking them is part of changing the plan.
  */
 export const PROGRAM = {
-  weeks: 12,
-  days: 84,
-  blocks: 6,
-  blockDays: 14,
-  sessionMinutesMin: 3,
-  sessionMinutesMax: 8,
+  sessionMinutes: [3, 5, 10],
+  defaultMinutes: 5,
+  daysPerWeek: [3, 5, 7],
+  testEveryDays: 14,
+  testEveryDaysAfterGoal: 28,
   retestTests: 3,
   retestMinutes: 4,
+  painFreeDays: 14,
+  goals: {
+    archHoldSeconds: 60,
+    calfRaises: 25,
+    balanceSeconds: 30,
+    gapPercent: 10,
+  },
+} as const;
+
+/**
+ * When each page's content last really changed, `YYYY-MM-DD`.
+ *
+ * Feeds the sitemap's `lastmod`, the Article dates and the visible "Updated"
+ * line. Change a date only with a real edit to that page: a sitemap whose dates
+ * move on every build gets its dates ignored, and a visible date bumped without
+ * a change is a small lie a reader can catch.
+ *
+ * Guides keep their own date in their data (`lib/guides/*.ts`).
+ */
+export const PAGE_UPDATED = {
+  home: '2026-09-28',
+  program: '2026-09-28',
+  science: '2026-09-28',
+  faq: '2026-09-28',
+  about: '2026-09-28',
+  support: '2026-09-28',
+  privacy: '2026-09-28',
+  terms: '2026-09-28',
 } as const;
 
 /** Where the App Store listing will live. Null until it exists — a button

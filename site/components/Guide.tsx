@@ -2,12 +2,13 @@ import { Fragment } from 'react';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Footer } from '@/components/Footer';
+import { Cite } from '@/components/Cite';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
-import { CITATIONS } from '@/lib/citations';
-import type { Guide as GuideData } from '@/lib/guides';
+import { GUIDES, type Guide as GuideData } from '@/lib/guides';
 import { CHROME, TRANSLATED } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { articleSchema, faqSchema, formatDate } from '@/lib/schema';
+import { SITE_URL } from '@/lib/site';
 
 const HOME_CRUMB = { en: 'Home', ru: 'Главная', es: 'Inicio' } as const;
 
@@ -50,16 +51,22 @@ export function Guide({ guide }: { guide: GuideData }) {
   const url = `${SITE_URL}${TRANSLATED[guide.page][guide.lang]}`;
   const cited = [...new Set(guide.sections.flatMap((s) => s.cites ?? []))].sort();
 
-  const article = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
+  const article = articleSchema({
     headline: guide.title,
     description: guide.description,
-    inLanguage: guide.lang,
-    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    mainEntityOfPage: url,
-    citation: cited.map((i) => CITATIONS[i]),
-  };
+    path: TRANSLATED[guide.page][guide.lang],
+    lang: guide.lang,
+    published: guide.published,
+    updated: guide.updated,
+    cites: cited,
+  });
+
+  // The other guides in the same language. Linked from the body of the page,
+  // not only the footer: a link a reader can see in context is one a crawler
+  // weighs as a real recommendation.
+  const related = (Object.keys(GUIDES) as (keyof typeof GUIDES)[])
+    .filter((page) => page !== guide.page)
+    .map((page) => GUIDES[page][guide.lang]);
 
   const breadcrumbs = {
     '@context': 'https://schema.org',
@@ -79,11 +86,32 @@ export function Guide({ guide }: { guide: GuideData }) {
     <>
       <JsonLd data={article} />
       <JsonLd data={breadcrumbs} />
+      <JsonLd data={faqSchema(guide.faq)} />
       <Masthead lang={guide.lang} />
 
       <main className="shell prose">
         <h1>{guide.h1}</h1>
-        <p className="lede">{guide.lede}</p>
+        <p className="byline">
+          <a href={TRANSLATED.about[guide.lang]}>{c.byline}</a>
+          {' · '}
+          {c.updated} <time dateTime={guide.updated}>{formatDate(guide.updated, guide.lang)}</time>
+        </p>
+        <p className="lede">
+          <Inline text={guide.lede} />
+        </p>
+
+        {/* Key points: the summary a skimmer reads instead of the page, and
+            the lines an assistant is most likely to quote. */}
+        <aside className="takeaways" aria-label={c.keyPoints}>
+          <h2>{c.keyPoints}</h2>
+          <ul>
+            {guide.takeaways.map((t) => (
+              <li key={t}>
+                <Inline text={t} />
+              </li>
+            ))}
+          </ul>
+        </aside>
 
         {guide.sections.map((section) => (
           <section key={section.h2}>
@@ -113,14 +141,21 @@ export function Guide({ guide }: { guide: GuideData }) {
                 ))}
               </ul>
             )}
-            {section.cites?.map((i) => (
-              <p key={i} className="cite">
-                {CITATIONS[i]}
-              </p>
-            ))}
+            {section.cites?.map((i) => <Cite key={i} index={i} />)}
           </section>
         ))}
 
+        <section className="faq">
+          <h2>{c.faqHeading}</h2>
+          {guide.faq.map((item) => (
+            <div key={item.q}>
+              <h3>{item.q}</h3>
+              <p>
+                <Inline text={item.a} />
+              </p>
+            </div>
+          ))}
+        </section>
         <h2>{guide.redFlags.h2}</h2>
         <ul>
           {guide.redFlags.bullets.map((b) => (
@@ -136,6 +171,18 @@ export function Guide({ guide }: { guide: GuideData }) {
         <p className="notice">{c.notice}</p>
 
         <AppStoreBadge campaign={guide.campaign} lang={guide.lang} />
+
+        <nav className="related" aria-label={c.relatedHeading}>
+          <h2>{c.relatedHeading}</h2>
+          <ul>
+            {related.map((g) => (
+              <li key={g.page}>
+                <a href={TRANSLATED[g.page][g.lang]}>{g.h1}</a>
+                <span>{g.description}</span>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </main>
 
       <Footer lang={guide.lang} page={guide.page} />

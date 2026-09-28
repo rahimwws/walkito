@@ -9,8 +9,11 @@ import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
  * The Terms of Use App Store Connect asks for alongside the privacy policy.
  *
  * Written from what the app and the store actually do, the same way the privacy
- * page was: billing is Apple's, the plan is local, the health scopes are the
- * ones in `READ_TYPES`. Nothing here describes a mechanism that does not exist.
+ * page was: billing is Apple's, the plan is saved on the phone first and copied
+ * to Supabase under the account setup signs in with (Sign in with Apple, or
+ * email for an existing account), and Profile → Delete account clears both (`deleteAccount` in
+ * `src/entities/session`). The health scopes are the ones in `READ_TYPES`.
+ * Nothing here describes a mechanism that does not exist.
  *
  * Two clauses a template would have supplied are deliberately absent.
  *
@@ -31,7 +34,7 @@ import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Terms of Use',
   description:
-    'The terms for using Walkito: what the app is and is not, how subscriptions and cancellations work through the App Store, health and safety, and the limits of what it claims.',
+    'Terms for using Walkito: what the app is and is not, App Store subscriptions and cancellations, health and safety, and the limits of what it claims.',
   alternates: { canonical: '/terms' },
   openGraph: {
     title: `Terms of Use | ${SITE_NAME}`,
@@ -59,19 +62,20 @@ export default function Terms() {
       <main className="shell prose">
         <h1>Terms of use</h1>
 
-        <p className="updated">Last updated: 21 September 2026</p>
+        <p className="updated">Last updated: 28 September 2026</p>
 
         <p className="lede">
           These terms cover your use of the Walkito app. Using the app means you
-          accept them. If you do not, delete the app — there is no account to
-          close, because there was never one to open.
+          accept them. If you do not, stop using it. <b>Delete account</b> in
+          the app removes what you logged from the phone and from our server;
+          use it before deleting the app.
         </p>
 
         <h2>What Walkito is</h2>
         <p>
-          Walkito is a screening and exercise program for heel and foot pain in
-          runners. It gives you a daily plan, adjusts that plan from what you
-          log, and measures your progress with physical tests.
+          Walkito is an exercise program for heel and foot pain in runners. It
+          gives you a daily plan, adjusts that plan from what you log, and
+          measures your progress with physical tests.
         </p>
         <p>
           <b>It is not a medical device, a diagnosis, or a treatment.</b> It
@@ -109,7 +113,11 @@ export default function Terms() {
         <p>
           The program, the exercise catalogue, the copy and the software are
           ours. Everything you log — your pain entries, your sessions, your
-          history — is yours, and it lives on your device.
+          history — is yours. It is saved on your device first and copied to
+          Walkito’s server so it can be restored. Setup signs you in with Apple
+          (or with email and password for an account you already have); that
+          account is what your plan is stored under, and signing in to it again
+          is what brings your plan back on a new phone or after a reinstall.
         </p>
 
         <h2>Subscriptions and billing</h2>
@@ -147,8 +155,9 @@ export default function Terms() {
         <h2>Apple Health</h2>
         <p>
           If you grant them, Walkito reads walking asymmetry, walking speed, step
-          count, resting heart rate and sleep analysis, and writes completed
-          sessions back. Every one is optional and can be withdrawn at any time
+          count, flights climbed, resting heart rate, heart rate, active energy,
+          sleep analysis and workouts, and writes completed sessions back as
+          workouts and mindful minutes. Every one is optional and can be withdrawn at any time
           in iOS Settings. Health data is summarised on the device and is never
           uploaded — see the{' '}
           <a href="/privacy/">privacy page</a> for what does leave it.
@@ -165,9 +174,12 @@ export default function Terms() {
 
         <h2>Ending it</h2>
         <p>
-          You can stop at any time by deleting the app, and cancel billing
-          through Apple as above. We may suspend access if the app is being used
-          in a way these terms forbid — in practice that means resale or
+          You can stop at any time, and cancel billing through Apple as above.{' '}
+          <b>Delete account</b> in the app removes what you logged from the
+          phone and from our server; deleting the app on its own removes only
+          the copy on the phone, and we will remove the rest if you write to
+          us. We may suspend access if the app is being used in a way these
+          terms forbid — in practice that means resale or
           tampering, not anything you could do by using it normally.
         </p>
 

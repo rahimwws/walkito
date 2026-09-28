@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "prebuild": "node scripts/build-llms.mjs"
+    "prebuild": "node scripts/build-llms.mjs",
+    "deploy": "node scripts/deploy.mjs"
   },
   "dependencies": {
     "next": "^16.3.5",

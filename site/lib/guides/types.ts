@@ -36,15 +36,45 @@ export type GuideSection = {
   cites?: readonly number[];
 };
 
+/** One question from a guide's closing FAQ. */
+export type GuideQuestion = {
+  /** Worded the way people type it into a search box or ask an assistant. */
+  q: string;
+  /**
+   * A self-contained answer, 40–60 words, with the answer in its first
+   * sentence. This is the passage an AI answer or a snippet lifts, so it must
+   * read correctly with nothing around it — no "as above", no "see below".
+   * Supports the same inline marks as the rest of the guide.
+   */
+  a: string;
+};
+
 export type Guide = {
   lang: Lang;
   page: TranslatedPage;
+  /**
+   * When this page's content last really changed, `YYYY-MM-DD`. Feeds the
+   * visible "Updated" line, the Article dates and the sitemap. Bump it only
+   * with a real edit.
+   */
+  updated: string;
+  /** First published, `YYYY-MM-DD`. Never changes. */
+  published: string;
   /** `<title>`, before the brand suffix the layout adds. */
   title: string;
   description: string;
   h1: string;
   lede: string;
+  /**
+   * "Key points": three to five one-line facts shown right under the lede.
+   * Each stands alone and carries its own number or qualifier, so a reader who
+   * stops here — or an assistant quoting one line — still has it right.
+   */
+  takeaways: readonly string[];
   sections: readonly GuideSection[];
+  /** Four to six questions people actually ask, answered on their own. Also
+   * emitted as FAQPage structured data. */
+  faq: readonly GuideQuestion[];
   /** When to see a clinician instead. Always present, always last before the
    * program block. */
   redFlags: { h2: string; bullets: readonly string[] };

@@ -11,8 +11,11 @@ const ORGANISATION = {
   name: SITE_NAME,
   url: SITE_URL,
   logo: `${SITE_URL}/icon.png`,
+  // No length: the plan is built a week at a time around a measurable goal and
+  // keeps going while it is used. No `sameAs` until there are profiles that
+  // are really ours to point at.
   description:
-    'A 12-week exercise program for heel and foot pain in runners, built from published rehabilitation protocols.',
+    'An exercise plan for heel and foot pain in runners, drawn from published rehabilitation protocols and built one week at a time around a measurable goal.',
 };
 
 /**

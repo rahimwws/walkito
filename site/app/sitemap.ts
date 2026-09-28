@@ -1,21 +1,17 @@
 import type { MetadataRoute } from 'next';
 
-import { TRANSLATED, type TranslatedPage } from '@/lib/i18n';
-import { SITE_URL } from '@/lib/site';
+import { GUIDES } from '@/lib/guides';
+import { TRANSLATED, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { PAGE_UPDATED, SITE_URL } from '@/lib/site';
 
 /**
- * Only the pages that exist.
+ * Only the pages that exist, each with the date its content last changed.
  *
- * `/pricing` is still missing: it needs a price that matches the store, and a
- * wrong one in schema is worse than none. Listing a 404 here is how a site
- * teaches a crawler to trust the file less.
- *
- * `lastModified` is the build time rather than `new Date()` evaluated per
- * request, which for a static export is the same thing — but the distinction
- * matters if this ever moves to a server. A sitemap that claims every page
- * changed today, every day, gets its dates ignored altogether.
+ * Real dates, not the build time. A sitemap that claims every page changed on
+ * every deploy gets its dates ignored altogether, and then a genuine update
+ * waits for a crawl like everything else. Guides carry their own date; the
+ * other pages take theirs from `PAGE_UPDATED`.
  */
-const BUILT_AT = new Date();
 
 // Same as robots: emitted once at build time.
 export const dynamic = 'force-static';
@@ -25,10 +21,13 @@ export const dynamic = 'force-static';
  *
  * Google accepts hreflang from the sitemap as well as the page head; stating it
  * in both is belt and braces for a new domain whose pages have not been
- * crawled often enough for the head to be trusted yet.
+ * crawled often enough for the head to be trusted yet. The two must agree, so
+ * this carries the same `x-default` → English that `alternatesFor` puts in the
+ * head.
  */
 function translated(
   page: TranslatedPage,
+  updated: (lang: Lang) => string,
   changeFrequency: 'weekly' | 'monthly',
   priority: number,
 ): MetadataRoute.Sitemap {
@@ -37,10 +36,11 @@ function translated(
     en: `${SITE_URL}${paths.en}`,
     ru: `${SITE_URL}${paths.ru}`,
     es: `${SITE_URL}${paths.es}`,
+    'x-default': `${SITE_URL}${paths.en}`,
   };
   return (['en', 'ru', 'es'] as const).map((lang) => ({
     url: `${SITE_URL}${paths[lang]}`,
-    lastModified: BUILT_AT,
+    lastModified: updated(lang),
     changeFrequency,
     // English stays the reference version; the translations sit a notch under.
     priority: lang === 'en' ? priority : priority - 0.1,
@@ -48,16 +48,24 @@ function translated(
   }));
 }
 
+const single = (
+  path: string,
+  updated: string,
+  changeFrequency: 'monthly' | 'yearly',
+  priority: number,
+): MetadataRoute.Sitemap[number] => ({ url: `${SITE_URL}${path}`, lastModified: updated, changeFrequency, priority });
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    ...translated('home', 'weekly', 1),
-    ...translated('heelPain', 'monthly', 0.9),
-    ...translated('flatFeet', 'monthly', 0.9),
-    { url: `${SITE_URL}/program/`, lastModified: BUILT_AT, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${SITE_URL}/science/`, lastModified: BUILT_AT, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${SITE_URL}/faq/`, lastModified: BUILT_AT, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${SITE_URL}/support/`, lastModified: BUILT_AT, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${SITE_URL}/privacy/`, lastModified: BUILT_AT, changeFrequency: 'yearly', priority: 0.3 },
-    { url: `${SITE_URL}/terms/`, lastModified: BUILT_AT, changeFrequency: 'yearly', priority: 0.3 },
+    ...translated('home', () => PAGE_UPDATED.home, 'weekly', 1),
+    ...translated('heelPain', (lang) => GUIDES.heelPain[lang].updated, 'monthly', 0.9),
+    ...translated('flatFeet', (lang) => GUIDES.flatFeet[lang].updated, 'monthly', 0.9),
+    ...translated('about', () => PAGE_UPDATED.about, 'monthly', 0.6),
+    single('/program/', PAGE_UPDATED.program, 'monthly', 0.9),
+    single('/science/', PAGE_UPDATED.science, 'monthly', 0.9),
+    single('/faq/', PAGE_UPDATED.faq, 'monthly', 0.8),
+    single('/support/', PAGE_UPDATED.support, 'monthly', 0.5),
+    single('/privacy/', PAGE_UPDATED.privacy, 'yearly', 0.3),
+    single('/terms/', PAGE_UPDATED.terms, 'yearly', 0.3),
   ];
 }

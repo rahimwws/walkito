@@ -1,23 +1,31 @@
 import type { Metadata } from 'next';
+import { Fragment } from 'react';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { FAQ } from '@/lib/faq';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { CHROME } from '@/lib/i18n';
+import { faqSchema, formatDate } from '@/lib/schema';
+import { PAGE_UPDATED, SITE_NAME, SITE_URL } from '@/lib/site';
+
+const TITLE = 'Heel Pain & Plantar Fasciitis Exercise Program — FAQ';
+const DESCRIPTION =
+  'How Walkito’s heel pain exercise plan works — goals, sessions, tests, bad mornings, running, Apple Health and privacy — and what the research says.';
 
 export const metadata: Metadata = {
-  title: 'Questions',
-  description:
-    'How long the program runs, what happens when you miss days, which Apple Health permissions it asks for, and how the streak counts.',
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: { canonical: '/faq' },
   openGraph: {
-    title: `Questions | ${SITE_NAME}`,
-    description:
-      'Session length, missed days, Apple Health permissions, notifications and the streak — answered.',
+    title: `${TITLE} | ${SITE_NAME}`,
+    description: DESCRIPTION,
     url: '/faq',
+    siteName: SITE_NAME,
+    locale: 'en_US',
     type: 'website',
+    images: ['/opengraph-image'],
   },
 };
 
@@ -31,17 +39,11 @@ export const metadata: Metadata = {
  *
  * Generated rather than hand-written so the schema and the visible text cannot
  * disagree — a block that answers differently from the page it sits on is worse
- * than no block, because it is the version the machine reads.
+ * than no block, because it is the version the machine reads. `faqSchema`
+ * strips the inline link marks, so the schema carries the same words as plain
+ * text.
  */
-const FAQ_SCHEMA = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: FAQ.map((entry) => ({
-    '@type': 'Question',
-    name: entry.q,
-    acceptedAnswer: { '@type': 'Answer', text: entry.a },
-  })),
-};
+const FAQ_SCHEMA = faqSchema(FAQ);
 
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
@@ -52,7 +54,28 @@ const BREADCRUMBS = {
   ],
 };
 
+/**
+ * `**bold**` and `[label](/path/)`, and nothing else — the guides' two marks.
+ * Answers link to the guide section that says more, and a link a reader can
+ * see in context is one a crawler weighs as a real recommendation.
+ */
+function Inline({ text }: { text: string }) {
+  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+  return (
+    <>
+      {parts.map((part, i) => {
+        const bold = part.match(/^\*\*([^*]+)\*\*$/);
+        if (bold) return <b key={i}>{bold[1]}</b>;
+        const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (link) return <a key={i} href={link[2]}>{link[1]}</a>;
+        return <Fragment key={i}>{part}</Fragment>;
+      })}
+    </>
+  );
+}
+
 export default function Faq() {
+  const c = CHROME.en;
   return (
     <>
       <JsonLd data={FAQ_SCHEMA} />
@@ -60,12 +83,18 @@ export default function Faq() {
       <Masthead />
 
       <main className="shell prose">
-        <h1>Questions</h1>
+        <h1>Heel pain exercise program: questions and answers</h1>
+        <p className="byline">
+          <a href="/about/">{c.byline}</a> · {c.updated}{' '}
+          <time dateTime={PAGE_UPDATED.faq}>{formatDate(PAGE_UPDATED.faq, 'en')}</time>
+        </p>
 
         <p className="lede">
-          What the program asks of you, what it does with what you log, and what
-          it will never do. Every answer here describes the app rather than the
-          condition.
+          Walkito is an exercise plan for heel pain, arch pain and flexible flat
+          feet with no fixed length: it builds one week at a time around a
+          measured goal and adapts each day to your morning. Below is what it
+          asks of you, what it does with what you log, what the research behind
+          it found, and what it will never do.
         </p>
 
         {/* Real headings rather than a details/summary accordion. Collapsed
@@ -76,16 +105,24 @@ export default function Faq() {
           {FAQ.map((entry) => (
             <section key={entry.q}>
               <h2>{entry.q}</h2>
-              <p>{entry.a}</p>
+              <p>
+                <Inline text={entry.a} />
+              </p>
             </section>
           ))}
         </div>
 
-        <p className="notice">
-          Walkito is a screening and exercise program. It does not diagnose and
-          does not treat. If pain is sharp, getting worse, or stopping you
-          sleeping, see a clinician.
+        <p>
+          The exercises themselves, with starting doses, are in{' '}
+          <a href="/plantar-fasciitis-exercises/">
+            plantar fasciitis exercises and stretches
+          </a>{' '}
+          and <a href="/flat-feet-exercises/">flat feet exercises</a>; the
+          studies behind every figure above are on{' '}
+          <a href="/science/">the evidence page</a>.
         </p>
+
+        <p className="notice">{c.notice}</p>
 
         <AppStoreBadge campaign="faq" />
       </main>

@@ -1,165 +1,856 @@
 # Walkito — full text
 
-> A 12-week exercise program for heel and foot pain in runners. The plan adapts
-> daily to logged pain and walking load, and measures progress with physical
-> retests every two weeks rather than by asking how you feel.
+> An exercise plan on iPhone for runners with heel pain (often linked to
+> plantar fasciitis or a heel spur), arch pain or flexible flat feet. It is built
+> one week at a time around a goal that can be measured, adapts each day to
+> the morning's pain, and checks progress with physical tests. It has no fixed
+> length: a goal that is reached moves to maintaining, and the next takes its
+> place.
 
 Source: https://walkito.site
-Walkito provides exercise programming. It does not diagnose or treat any
-condition.
+Last updated: 2026-09-28
 
-## The 12-week program
+Walkito provides exercise programming. It does not diagnose and does not
+treat any condition. Pain that follows an injury, comes with numbness,
+tingling, swelling or warmth, wakes you at night, or is sharp or getting worse
+should be seen by a clinician.
 
-12 weeks, 6 blocks of 14 days, and a session of 3 to 8 minutes on the days that
-have one. Every 14 days the plan stops and measures you with 3 physical tests
-rather than asking how you feel.
+## How the plan works
 
-Three strength days carry the load. Mobility and balance days sit between them,
-and one day in seven is rest the plan assigns rather than rest you take — a
-prescribed rest day counts as showing up, and never breaks a streak.
-
-The morning pain you log decides the session. Report a bad morning and the plan
-steps back a level and gets shorter — three minutes, sitting down — instead of
-asking for the same work. The plan never accelerates on a good day; it only
-walks back and then returns.
-
-After the twelve weeks the program moves into maintenance: two sessions a week
-with a checkpoint every four weeks.
+- No fixed length. The plan is built one week at a time around a focus goal; a goal that is reached moves to "maintaining" (kept up at a lower dose) and the next goal takes its place, for as long as the plan is used.
+- Five measured goals: easier mornings (morning pain at or under 1/10 for 14 days running); an arch hold of 60 seconds; 25 single-leg calf raises; single-leg balance for 30 seconds; a left/right difference under 10%.
+- A new user starts with at most three goals, pain first. The app does not ask whether a flat foot is flexible or rigid; the randomised trial of arch exercise was run on flexible flat feet, so if the arch stays flat even with no weight on the foot, check with a clinician before arch work.
+- Training days: 3, 5 or 7 a week. Sessions: 3, 5 or 10 minutes (default 5), each 2 to 4 exercises; the focus exercise is never cut.
+- Week one "settles in": nothing that loads the plantar fascia and nothing above level 2.
+- Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.
+- Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal's chain moves up one level at a time.
+- Tests: 3 physical measurements (calf raises to failure, arch hold, single-leg balance) in about 4 minutes, every 14 days until the first goal is reached, then every 28 days.
+- iOS only, in English, Russian and Spanish. Coming soon to the App Store.
+- Contact: hello@walkito.app
 
 ## The evidence
 
-High-load strength training scored 29 points lower on the Foot Function Index
-than plantar-specific stretching at 3 months (randomised trial, n=48, 95% CI
-6-52, p=0.016). At 12 months the two groups had converged with no significant
-difference, so the effect is faster improvement rather than a larger one.
-Source: Rathleff MS, et al. Scand J Med Sci Sports. 2015;25(3):e292-e300.
+- High-load strength training scored 29 points lower on the Foot Function Index than plantar-specific stretching at 3 months (randomised trial, n=48, 95% CI 6-52, p=0.016); at 12 months the two groups had converged, so the effect is faster improvement rather than a larger one.
+- In people with *flexible* flat feet, a six-week exercise programme in a randomised trial (n=52) improved navicular drop by 0.4 cm and arch angle by 16 degrees more than control. Rigid flat feet are structural and exercise will not change them.
+- In a 2024 meta-analysis, only short-foot programmes longer than six weeks improved navicular drop; shorter ones showed no measurable effect.
+- The 2023 JOSPT heel pain guideline, written for physical therapists, grades among its recommendations: manual therapy A, plantar fascia and calf stretching A, taping alongside other physical therapy A, night splints A, and resistance training B. It recommends against orthotics as a stand-alone treatment (grade B; alongside other treatment they may be used, grade C) and against adding therapeutic ultrasound to stretching (grade A). Its education advice (grade E, expert opinion) is to modify weight-bearing load.
 
-A six-week program improved navicular drop by 0.4 cm and arch angle by 16
-degrees more than control in people with *flexible* flat feet (randomised
-trial, n=52, PEDro 8/10). Rigid flat feet are structural and exercise will not
-change them.
-Source: Brijwasi T, Borkar P. J Physiother. 2023;69(1):42-46.
+Sources:
+- Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+- Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
+- Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
+- Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
-Only short-foot programs longer than six weeks improved navicular drop;
-shorter ones showed no measurable effect.
-Source: Cheng J, et al. J Back Musculoskelet Rehabil. 2024;37(4):839-851.
+## Plantar fasciitis exercises and stretches for heel pain
 
-The 2023 clinical practice guideline grades plantar fascia and calf stretching
-A, taping A, night splints A, resistance training B, orthotics-alone B (do not
-use in isolation), and therapeutic ultrasound A - do not use. It advises
-against complete rest.
-Source: Koc TA Jr, et al. J Orthop Sports Phys Ther. 2023;53(12):CPG1-CPG39.
+Language: English · https://walkito.site/plantar-fasciitis-exercises/ · published 2026-09-24 · updated 2026-09-28
 
-Gait asymmetry did not predict injury in a secondary analysis of a trial with
-more than 800 runners. Walkito compares asymmetry only against the user's own
-baseline, never a population norm.
+For heel pain from plantar fasciitis, the 2023 clinical guideline gives its top grade, A, to plantar fascia and calf stretching, and a B to strength training. In a trial of 48 people, all wearing shoe inserts, slow single-leg heel raises with a towel under the toes improved pain and function faster than stretching — though by twelve months the two groups had caught up with each other. Doing both is what the guideline supports.
 
-## Questions
+- The 2023 JOSPT heel pain guideline grades plantar fascia and calf stretching A and strength training B.
+- In a trial of 48 people, all wearing shoe inserts, high-load heel raises scored 29 points lower on the Foot Function Index than stretching at three months; by twelve months the groups had converged, so strength work brought improvement forward rather than making it bigger.
+- On load, the same guideline’s advice is education on modifying weight-bearing activity — graded E, meaning theoretical rather than trial evidence.
+- Heel pain after an injury, with numbness or swelling, that wakes you at night, or that hurts when you squeeze the heel needs a clinician first.
 
-### How long is the Walkito program?
+### The exercises, with starting doses
 
-Twelve weeks — 84 days, run as six blocks of fourteen. There is also a six-week version of the same structure at three blocks. After the twelve weeks the plan moves into maintenance rather than ending.
+These are the exercises Walkito uses for heel pain, at the doses it starts from — a starting point, not a prescription. [How these guides are written](https://walkito.site/about/).
+
+Order matters. Walkito starts with the stretches and seated work; the towel heel raise, which loads the fascia hardest, comes later and is reached one level at a time. If any exercise pushes your pain to **6/10 or more**, stop for the day — that is where Walkito ends a session.
+
+- **Plantar fascia stretch** (10 × 10 s, each foot — the first before you stand up): Sitting, cross the foot over the other knee and pull the toes back until you feel the stretch in the arch, not the calf.
+- **Calf stretch** (3 × 30 s, each leg): Hands on a wall, back leg straight, heel down, hips forward. A tight calf pulls on the heel all day.
+- **Soleus stretch** (3 × 30 s, each leg): The same position, with the back knee bent until you feel it lower, near the heel. The deeper calf muscle only lets go with the knee bent.
+- **Heel raises with a towel** (3 × 12, each leg, every other day): On a step, on one foot, with a rolled towel under the toes. Three seconds up, two held at the top, three down. The towel is what makes this load the fascia rather than just the calf.
+
+### Morning heel pain: the first steps
+
+Pain on the first steps after getting up, or after sitting for a while, is the pattern most often linked to plantar fasciitis. It often eases once you get moving, and comes back after the next long rest.
+
+Two things on this page are aimed at it. The plantar fascia stretch is done **before you stand up** — on the edge of the bed, toes pulled back — so the first steps are not the first stretch. And the 2023 guideline grades night splints, worn for 1–3 months, **A** for people who consistently have pain on their first steps in the morning; that is one to discuss with a clinician, and not something Walkito provides.
+
+Walkito asks for your morning pain every day for the same reason: it is the most direct reading of how the foot coped with yesterday, and it decides how much today’s session asks.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Heel pain when running: rest or keep going?
+
+Change the load rather than stopping everything. The 2023 guideline’s advice on this is education on strategies to modify weight-bearing load at work, in sport and in daily life — graded E, meaning it is based on theoretical rather than trial evidence. In practice: keep the stretches every day, and cut back whatever makes the heel worse.
+
+On a bad morning, keep the stretches and drop the heel raises for the day. The next morning is the check — if your first steps are clearly worse after a run, that run was more than the heel could take. Walkito reads it the same way: a big day on your feet yesterday turns today’s strength session into a lighter recovery one, and a high-pain morning shrinks the session rather than cancelling it.
+
+If running hurts sharply, or the pain is getting worse week on week, stop and see a clinician rather than training through it. The same goes for pain that builds during runs after you increased your mileage, or that hurts when you squeeze the sides of the heel: both can be signs of a stress fracture, one of the other causes of heel pain the guideline names.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Strength or stretching?
+
+In a randomised trial of 48 people with plantar fasciitis confirmed by ultrasound, both groups wore shoe inserts; one added high-load heel raises every other day, the other daily plantar-specific stretching. At three months the strength group scored **29 points lower** on the Foot Function Index (95% CI 6–52, p = 0.016).
+
+At twelve months the two groups had converged — 22 against 16, no significant difference. Strength work brings improvement **forward**; it does not make it bigger. Doing both is what the guideline supports. The study-by-study reasoning is on [the evidence page](https://walkito.site/science/).
+
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### What the 2023 guideline recommends, and against: the main grades
+
+- Plantar fascia and calf stretching — **grade A**
+- Manual therapy to the joints and soft tissue of the lower limb, from a clinician — **grade A**
+- Taping alongside other physical therapy, for short-term (up to 6 weeks) improvement in pain and function — **grade A**
+- Night splints for 1–3 months, for people who consistently have pain on their first steps in the morning — **grade A**
+- Resistance and strength training — **grade B**
+- Low-level laser therapy and dry needling, from a clinician — **grade B**
+- Orthotics on their own, for short-term pain relief — **grade B against**
+- Orthotics combined with other treatment — **grade C**
+- Therapeutic ultrasound added to stretching — **grade A against**
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### When the heel stops hurting
+
+Heel pain can come back, so Walkito does not stop when the pain does. Once its pain-free mornings goal is reached — morning pain at or under 1/10 for 14 days running — that goal moves to maintaining, kept going at a lower dose, and the next goal takes its place.
+
+If your arches are flat as well, the arch has its own exercises and its own timeline — see [exercises for flat feet](https://walkito.site/flat-feet-exercises/). Questions about the app itself are answered in [the FAQ](https://walkito.site/faq/).
+
+### See a clinician first if
+
+- the pain followed an injury or a fall
+- you cannot put weight on the foot, or you are limping
+- it comes with numbness, tingling, burning, swelling or warmth
+- the heel is red, or you have a fever or feel unwell
+- it wakes you at night
+- it is sharp, or getting worse despite easing the load
+- squeezing the sides of the heel hurts, or the pain builds during runs after you increased your mileage — both can be signs of a stress fracture
+- you have diabetes, reduced feeling in your feet or poor circulation
+- both heels hurt and other joints are swollen or stiff
+- it has not improved after several weeks of exercise and a lighter load
+- one arch has flattened suddenly as an adult
+
+### Doing it as a plan
+
+Walkito turns this into a plan built one week at a time around one focus goal; with heel pain, the first is pain-free mornings — morning pain at or under 1/10 for 14 days running. You choose 3, 5 or 7 training days a week and sessions of 3, 5 or 10 minutes. A bad morning shortens and softens the day; a good one never speeds it up. Every 14 days until your first goal is reached, then every 28, it retests calf endurance, arch hold and single-leg balance. [How the plan works](https://walkito.site/program/).
+
+#### Can I keep running with plantar fasciitis?
+
+You don’t have to stop everything: change the load instead. The 2023 clinical guideline includes education on modifying weight-bearing load, graded E — theoretical rather than trial evidence. Cut back what makes the heel worse and keep stretching daily. If your first steps next morning are clearly worse, the run was too much. Sharp or worsening pain needs a clinician.
+
+#### Why is heel pain worse in the morning?
+
+First-step pain after sleep or sitting is the pattern most often linked to plantar fasciitis; the usual explanation is that the tissue under the foot stiffens at rest and is loaded suddenly by the first steps. That is why the fascia stretch is done before standing up, and why the 2023 guideline grades night splints A for it.
+
+#### Is stretching or strengthening better for plantar fasciitis?
+
+Both, and strengthening works faster. In a trial of 48 people, high-load heel raises scored 29 points lower on the Foot Function Index than stretching at three months, but by twelve months the groups had converged. The 2023 guideline grades stretching A and strength training B. [The evidence page](https://walkito.site/science/) has the details.
+
+#### Is a heel spur the same as plantar fasciitis?
+
+Not exactly. “Heel spur” is often used loosely for plantar fasciitis, but strictly it means a bony growth seen on an X-ray, while plantar fasciitis describes pain from the band of tissue under the foot. The exercises on this page are the ones the 2023 guideline grades for plantar heel pain; only a clinician can say what is behind yours.
+
+#### How often should I do plantar fasciitis exercises?
+
+Stretch daily and strengthen every other day. The plantar fascia and calf stretches are daily work, with the first fascia stretch before your first steps. The towel heel raises follow the trial Walkito uses, done every other day. In Walkito you choose 3, 5 or 7 training days a week, and strength days never fall back to back.
+
+#### When should I see a doctor about heel pain?
+
+See a clinician first if the pain followed an injury or a fall, you cannot put weight on the foot, or it comes with numbness, tingling, swelling, warmth or fever. The same applies if it wakes you at night, is sharp or getting worse, or hurts when you squeeze the heel — a possible stress fracture. Walkito does not diagnose.
+
+## Flat feet exercises for fallen arches and arch pain
+
+Language: English · https://walkito.site/flat-feet-exercises/ · published 2026-09-24 · updated 2026-09-28
+
+If your flat feet are flexible — the arch comes back when the foot is off the ground — the exercises tested in a trial are short-foot training, hip strengthening and stretching, done together: six weeks of them changed arch measures more than control. Give it time: a 2024 meta-analysis of short-foot training found no significant effect overall, and an improvement in navicular drop only in programs longer than six weeks. Those trials measured arch shape, not pain; if the pain is near the heel, the evidence for plantar fasciitis — stretching and strength work — is the better guide.
+
+- The randomised trial behind these exercises was run on flexible flat feet, where the arch reappears when the foot is off the ground.
+- In a trial of 52 people, a six-week program improved navicular drop by 0.4 cm and arch angle by 16 degrees more than control.
+- A 2024 meta-analysis found no significant overall effect of short-foot training; only in the subgroup of programs longer than six weeks did navicular drop improve.
+- A rigid flat foot, flat even off the ground, is structural, and exercise will not change it.
+- Those results measure arch shape, not pain; for plantar heel pain, the 2023 guideline grades stretching A and strength training B.
+
+### First, check: flexible or rigid?
+
+Look at your foot while you stand, then lift it off the floor or rise onto your toes. If the arch reappears, the flat foot is **flexible** — the kind the randomised trial on this page was run on. The 2024 meta-analysis pooled studies of flat feet in general.
+
+If the arch stays flat even off the ground, it is rigid. That is a structural issue exercise will not change, and it is worth seeing a clinician rather than starting a program. Walkito does not check your foot type, so this check is yours: with a rigid foot, leave the arch-hold goal aside and see a clinician first.
+
+“Fallen arches” is usually just another name for flat feet. One arch that has flattened **suddenly**, on one side, as an adult is different: see a clinician before exercising it.
+
+### The exercises, with starting doses
+
+These are the exercises Walkito uses for the arch, at the doses it starts from — a starting point, not a prescription. Short-foot work, hip strengthening and stretching are what the trial tested; toe spreading and single-leg balance are Walkito’s own additions. Do them barefoot. [How these guides are written](https://walkito.site/about/).
+
+- **Short foot, seated** (3 × 10, hold 5 s, each foot): Foot flat on the floor. Pull the ball of the foot toward the heel so the arch lifts. Don’t curl the toes — that is the most common way to do it wrong.
+- **Short foot, standing** (3 × 10, hold 5 s): The same movement with your weight on both feet. Toes stay flat and long; only the arch lifts.
+- **Short foot, one leg** (3 × 10, hold 5 s, each foot): Standing on one foot. Keep the big toe down — if it lifts, the arch is cheating. One foot at a time is where the weaker side shows.
+- **Toe spread** (3 × 10, hold 5 s): Spread the toes as wide as they go and hold. Toes that can spread share the load with the arch; lifting them is not the point.
+- **Single-leg hold** (3 × 30 s, each leg): Stand on one foot and look at one fixed spot. Let the foot wobble — it is meant to; that is the foot doing the balancing.
+- **Hip abduction** (3 × 15, each side): Lying on your side, lift the top leg out to the side, leading with the heel rather than the toes. A hip that gives way lands the load on the arch.
+- **Calf and soleus stretch** (3 × 30 s each, each leg): Hands on a wall, back leg straight, heel down, hips forward. Then bend the back knee until you feel it lower, near the heel — that is the deeper soleus.
+
+### How long before the arch changes?
+
+In a randomised trial of 52 people with **flexible** flat feet, a six-week program of foot shortening, ankle work, hip strengthening and stretching improved navicular drop by **0.4 cm** and arch angle by **16 degrees** more than the control group.
+
+A 2024 meta-analysis of short-foot training found **no significant difference overall** in navicular drop or foot posture compared with controls. Only in the subgroup of programs **longer than six weeks** did navicular drop improve significantly, and the authors say larger studies are needed. Plan for at least six weeks, and more if you are doing short-foot work on its own.
+
+That is one reason Walkito’s plan has no end date. Its arch goal — holding the arch for 60 seconds — stays in the plan until it is reached, however many weeks that takes, and the arch hold is measured every 14 days until your first goal is reached, then every 28, so you can see whether it is moving. The trials themselves are summarised on [the evidence page](https://walkito.site/science/).
+
+Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
+Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
+
+### Pain under the arch of the foot
+
+The results above are measures of arch shape — navicular drop and arch angle — not of pain. They show the arch can be trained; they are not evidence that the same exercises relieve an aching arch.
+
+None of the studies cited here measured pain under the arch. Pain at the heel, and sometimes along the arch, can come from the plantar fascia, the band of tissue that runs along the sole. If yours is near the heel, the 2023 heel pain guideline is the better guide: it grades plantar fascia and calf stretching **A** and strength training **B** for plantar heel pain — the exercises are in [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/).
+
+Walkito can work on both at once, as separate goals: pain-free mornings for the pain, an arch hold for the arch. How the two share a week is on [the plan page](https://walkito.site/program/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### See a clinician first if
+
+- the pain followed an injury or a fall
+- you cannot put weight on the foot, or you are limping
+- it comes with numbness, tingling, burning, swelling or warmth
+- the heel is red, or you have a fever or feel unwell
+- it wakes you at night
+- it is sharp, or getting worse despite easing the load
+- squeezing the sides of the heel hurts, or the pain builds during runs after you increased your mileage — both can be signs of a stress fracture
+- you have diabetes, reduced feeling in your feet or poor circulation
+- both heels hurt and other joints are swollen or stiff
+- it has not improved after several weeks of exercise and a lighter load
+- one arch has flattened suddenly as an adult
+- the arch stays flat when the foot is off the ground
+
+### Doing it as a plan
+
+Walkito builds these into a plan one week at a time, around one focus goal — for a flexible flat foot, that includes holding the arch for 60 seconds. You choose 3, 5 or 7 training days a week and sessions of 3, 5 or 10 minutes. Every 14 days until your first goal is reached, then every 28, it retests the arch hold, calf raises and single-leg balance, so you can see whether the arch work is doing anything rather than guess. A goal you reach moves to maintaining and the next one takes its place. [How the plan works](https://walkito.site/program/).
+
+#### Can exercises change flat feet?
+
+Flexible flat feet can change measurably; rigid ones cannot. In a randomised trial of 52 people whose arch reappeared off the ground, a six-week program improved navicular drop by 0.4 cm and arch angle by 16 degrees more than control. A foot that stays flat even when lifted is structural, and exercise will not change its shape.
+
+#### How long does it take for flat feet exercises to work?
+
+Six weeks or more, going by the trials. A six-week program combining short-foot, hip and stretching work changed arch measures in one randomised trial. For short-foot training alone, a 2024 meta-analysis found no significant effect overall, and an improvement in navicular drop only in programs longer than six weeks. Walkito keeps its 60-second arch-hold goal until it is reached.
+
+#### What helps pain under the arch of the foot?
+
+No study cited here measured arch pain, so there is no direct evidence here. If the pain is near the heel and linked to the plantar fascia, the 2023 heel pain guideline grades plantar fascia and calf stretching A and strength training B. The arch exercises on this page train arch shape, not pain; see [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/).
+
+#### Are fallen arches the same as flat feet?
+
+Usually, yes: “fallen arches” is a common name for flat feet. What matters more is whether the foot is flexible, with an arch that reappears off the ground, or rigid. The trial on this page was run on flexible flat feet. An arch that has flattened suddenly on one side as an adult should be seen by a clinician first.
+
+#### How often should I do flat feet exercises?
+
+On each training day while the arch is your focus. In Walkito you choose 3, 5 or 7 training days a week, and while the arch is the week’s focus goal, every session includes an arch exercise, one level harder at a time. The arch hold is retested every 14 days, then every 28 after your first goal.
+
+#### When should I see a doctor about flat feet?
+
+See a clinician before starting if the arch stays flat when the foot is off the ground, if one arch has flattened suddenly as an adult, or if the pain followed an injury, wakes you at night or comes with numbness, tingling, swelling or warmth. Pain that is sharp or getting worse also needs a clinician rather than more exercise.
+
+## Боль в пятке («пяточная шпора»): упражнения и что делать бегуну
+
+Language: Russian (Русский) · https://walkito.site/ru/bol-v-pyatke-uprazhneniya/ · published 2026-09-24 · updated 2026-09-28
+
+Когда говорят «пяточная шпора», обычно имеют в виду боль в пятке на первых шагах утром или после бега, и чаще всего она связана с подошвенным фасциитом — к нему и относятся исследования ниже; костный вырост, найденный на снимке, должен оценить врач. При подошвенном фасциите клинические рекомендации 2023 года дают высший уровень доказательности растяжке подошвенной фасции и икр, а силовым упражнениям — уровень B. В исследовании 48 человек медленные подъёмы на носок одной ноги с полотенцем под пальцами быстрее уменьшили боль и улучшили работу стопы, чем растяжка (обе группы также носили стельки), — хотя через год результаты групп сравнялись. Рекомендации поддерживают и то и другое вместе.
+
+- Клинические рекомендации JOSPT 2023 года: растяжка подошвенной фасции и икр — уровень A, силовые упражнения — уровень B.
+- Подъёмы на носок с полотенцем через 3 месяца дали на 29 баллов лучший результат по Foot Function Index, чем растяжка (исследование 48 человек, обе группы носили стельки); через 12 месяцев группы сравнялись.
+- Рекомендации 2023 года дают уровень A ночным ортезам на 1–3 месяца при постоянной боли на первых шагах утром и тейпированию вместе с другими методами физиотерапии — для кратковременного улучшения.
+- Добавлять терапевтический ультразвук к растяжке рекомендации 2023 года не советуют — уровень A против.
+- Боль после травмы, с онемением или отёком, боль, которая будит ночью, или боль при сжатии пятки с боков — повод сначала показаться врачу.
+
+### Пяточная шпора или подошвенный фасциит?
+
+Пяточная шпора в строгом смысле — костный вырост на пяточной кости, который видно на рентгене. Но в быту «шпорой» называют саму боль в пятке, и чаще всего она связана с **подошвенным фасциитом** — болью там, где подошвенная фасция крепится к пяточной кости. Исследования и рекомендации на этой странице — про подошвенный фасциит; если на снимке нашли шпору, что она значит в вашем случае, скажет врач.
+
+Типичная картина подошвенного фасциита — боль с внутренней стороны пятки, сильнее всего на первых шагах утром или после долгого сидения; после долгой нагрузки на ноги, например бега, она тоже может усиливаться. Что именно болит, скажет врач; ниже — то, что при подошвенном фасциите рекомендуют делать самому.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Упражнения и стартовые дозировки
+
+Это упражнения при боли в пятке, которые использует Walkito, в тех дозировках, с которых он начинает, — отправная точка, а не назначение. Откуда эти дозировки и как мы пишем гайды — на странице [о проекте](https://walkito.site/ru/o-proekte/).
+
+Порядок важен. Walkito начинает с растяжки и упражнений сидя; подъём на носок с полотенцем, который сильнее всего нагружает фасцию, появляется позже и достигается по одному уровню за раз. Если какое-то упражнение поднимает боль до **6 из 10 и выше**, на сегодня остановитесь — на этом Walkito заканчивает тренировку.
+
+- **Растяжка подошвенной фасции** (10 × 10 с, каждой стопой — первый раз ещё до того, как встанете): Сидя, положите стопу на колено другой ноги и тяните пальцы на себя, пока не почувствуете растяжение в своде, а не в икре.
+- **Растяжка икры** (3 × 30 с, каждой ногой): Руки на стене, задняя нога прямая, пятка на полу, таз вперёд. Зажатая икра тянет пятку весь день.
+- **Растяжка камбаловидной мышцы** (3 × 30 с, каждой ногой): То же положение, но колено задней ноги согнуто, пока не почувствуете растяжение ниже, у пятки. Глубокая мышца икры расслабляется только при согнутом колене.
+- **Подъёмы на носок с полотенцем** (3 × 12, каждой ногой, через день): На ступеньке, на одной ноге, под пальцами свёрнутое полотенце. Три секунды вверх, две — удержание, три — вниз. Именно полотенце нагружает фасцию, а не только икру.
+
+### Силовые упражнения или растяжка?
+
+В рандомизированном исследовании 48 человек с подошвенным фасциитом, подтверждённым УЗИ, одна группа делала силовые подъёмы на носок, другая — растяжку фасции; обе группы также носили стельки. Через три месяца у силовой группы результат по шкале Foot Function Index был на **29 баллов лучше** (95% ДИ 6–52, p = 0,016).
+
+Через двенадцать месяцев группы сравнялись — 22 против 16, без значимой разницы. Силовые упражнения дают улучшение **раньше**, но не делают его больше. Рекомендации поддерживают и то и другое вместе.
+
+Подробный разбор этого исследования и остальных источников — на [странице с исследованиями](https://walkito.site/science/) (на английском).
+
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Что рекомендуют — и не рекомендуют — клинические рекомендации 2023 года
+
+Рекомендации по боли в пятке при подошвенном фасциите, опубликованные в журнале JOSPT, оценивают каждый метод по силе доказательств; уровень A — самый высокий, а «против» значит, что метод применять не советуют.
+
+- Растяжка подошвенной фасции и икр — **уровень A**
+- Тейпирование вместе с другими методами физиотерапии — для кратковременного (до 6 недель) уменьшения боли и улучшения работы стопы — **уровень A**
+- Ночные ортезы на 1–3 месяца при постоянной боли на первых шагах утром — **уровень A**
+- Силовые упражнения — **уровень B**
+- Мануальная терапия суставов и мягких тканей голени и стопы, у специалиста — **уровень A**
+- Низкоинтенсивная лазеротерапия и сухое иглоукалывание, у специалиста — **уровень B**
+- Ортопедические стельки, готовые или индивидуальные, как единственная мера для кратковременного облегчения боли — **уровень B против**
+- Ортопедические стельки вместе с другим лечением — **уровень C**
+- Терапевтический ультразвук в дополнение к растяжке — **уровень A против**
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Можно ли бегать и нужен ли полный покой?
+
+Бросать всё не обязательно: нагрузку можно менять. В плохое утро оставьте растяжку, а подъёмы на носок пропустите. Проверка — следующее утро: если первые шаги после пробежки заметно хуже, пробежка была больше, чем пятка готова выдержать.
+
+Сколько при этом бегать, зависит от человека и от того, как пятка отвечает на нагрузку. Это лучше решить вместе с врачом или физиотерапевтом, а не терпеть боль, которая нарастает от пробежки к пробежке.
+
+### Почему у плана нет последней недели
+
+Walkito исходит из того, что боль в пятке может вернуться, если бросить упражнения в ту же неделю, когда перестало болеть, — это наше рассуждение, а не вывод исследований. Поэтому план не заканчивается на достигнутой цели. Когда цель достигнута — например, утренняя боль 14 дней подряд не выше 1 из 10, — она переходит в поддержку: упражнения остаются в плане в меньшей дозе, а главной становится следующая цель.
+
+Если свод стопы тоже плоский или болит, у него свои упражнения и свои сроки — см. [упражнения при плоскостопии](https://walkito.site/ru/ploskostopie-uprazhneniya/).
+
+### Сначала к врачу, если
+
+- боль появилась после травмы или падения
+- на стопу нельзя опереться или вы хромаете
+- есть онемение, покалывание, жжение, отёк или стопа горячая на ощупь
+- пятка покраснела, поднялась температура или вы плохо себя чувствуете
+- боль будит ночью
+- боль острая или нарастает, несмотря на меньшую нагрузку
+- больно, когда сжимаете пятку с боков, или боль нарастает во время пробежек после того, как вы увеличили объём бега, — и то и другое может быть признаком стрессового перелома
+- у вас диабет, сниженная чувствительность стоп или плохое кровообращение в ногах
+- болят обе пятки, а другие суставы опухают или скованы
+- за несколько недель упражнений и меньшей нагрузки лучше не стало
+- свод одной стопы у взрослого уплощился внезапно
+
+### Как это устроено в Walkito
+
+Walkito собирает план по одной неделе вокруг главной цели. Если пятка болит, первой идёт цель «Лёгкие утра»: утренняя боль 14 дней подряд не выше 1 из 10. Вы выбираете 3, 5 или 7 тренировочных дней в неделю и тренировки по 3, 5 или 10 минут. Первая неделя вводная: ничего, что нагружает фасцию, и ничего выше второго уровня. Дальше план подстраивается каждое утро: сильная утренняя боль, много шагов накануне или короткий сон делают тренировку короче и мягче, а боль 6 из 10 и выше во время тренировки останавливает её и откатывает две следующие на шаг назад. Каждые 14 дней — 3 теста примерно за 4 минуты: подъёмы на носок до отказа, удержание свода и баланс на одной ноге; после первой достигнутой цели — раз в 28 дней. Достигнутая цель переходит в поддержку, её место занимает следующая, и план идёт дальше столько, сколько вы им пользуетесь. [Как устроен Walkito](https://walkito.site/ru/); подробно о плане — на [странице о программе](https://walkito.site/program/) (на английском).
+
+#### Можно ли бегать с пяточной шпорой?
+
+Бегать через нарастающую боль не стоит, а сколько бегать, зависит от того, как пятка отвечает на нагрузку: если первые шаги на следующее утро заметно хуже, пробежка была лишней. Объём бега лучше уменьшить и обсудить со специалистом, а в плохое утро оставить растяжку и пропустить подъёмы на носок. При резкой боли, отёке или онемении сначала покажитесь врачу.
+
+#### Почему пятка болит утром сильнее всего?
+
+Обычно это объясняют так: во сне и при долгом сидении подошвенная фасция застывает, а первые шаги резко её нагружают. Такая боль — типичная черта подошвенного фасциита (в быту — «пяточной шпоры»). Поэтому первую растяжку фасции, 10 раз по 10 секунд, делают ещё в кровати. Для такой боли рекомендации 2023 года дают уровень A ночным ортезам на 1–3 месяца.
+
+#### Пяточная шпора и подошвенный фасциит — это одно и то же?
+
+Нет, это разные вещи: шпора — костный вырост на пяточной кости, который видно на рентгене, а подошвенный фасциит — боль там, где подошвенная фасция крепится к пятке. В быту «пяточной шпорой» часто называют именно эту боль. Упражнения из рекомендаций 2023 года относятся к подошвенному фасцииту, а шпору на снимке должен оценить врач.
+
+#### Что лучше при боли в пятке: растяжка или силовые упражнения?
+
+Лучше и то и другое: рекомендации 2023 года дают растяжке фасции и икр уровень A, силовым упражнениям — уровень B. В исследовании 48 человек силовая группа через три месяца была на 29 баллов лучше по шкале Foot Function Index, но через 12 месяцев группы сравнялись. Силовые упражнения ускоряют улучшение, а не делают его больше.
+
+#### Как часто делать упражнения при боли в пятке?
+
+Растяжку можно делать каждый день, а подъёмы на носок с полотенцем — через день, как в исследовании 48 человек. Стартовая дозировка подъёмов — 3 подхода по 12 на каждую ногу: три секунды вверх, две — удержание, три — вниз. В Walkito вы выбираете 3, 5 или 7 тренировочных дней в неделю, и силовые дни никогда не идут подряд.
+
+#### Когда с болью в пятке нужно идти к врачу?
+
+Сразу — если боль появилась после травмы или падения, на стопу нельзя опереться или есть онемение, покалывание, отёк, покраснение или температура. К врачу стоит обратиться и тогда, когда боль будит ночью, острая или нарастает либо пятку больно сжимать с боков: это может быть признаком стрессового перелома. Walkito не ставит диагноз и не заменяет осмотр.
+
+## Упражнения при плоскостопии: что делать, если болит свод стопы
+
+Language: Russian (Русский) · https://walkito.site/ru/ploskostopie-uprazhneniya/ · published 2026-09-24 · updated 2026-09-28
+
+Если плоскостопие гибкое — свод появляется, когда стопа не касается пола, — в рандомизированном исследовании проверяли «короткую стопу», укрепление бедра и растяжку вместе: за шесть недель такая программа изменила показатели свода больше, чем в контрольной группе. Разведение пальцев и стойку на одной ноге Walkito добавляет сам. Нужно терпение: метаанализ 2024 года в целом значимого эффекта «короткой стопы» не нашёл, а опускание ладьевидной кости улучшилось только в программах длиннее шести недель. Если свод болит при беге, одних упражнений для свода мало — боль, которая отдаёт в пятку, часто связана с подошвенным фасциитом, и при ней доказательства сильнее у растяжки и силовых упражнений для икр.
+
+- Программу из рандомизированного исследования проверяли при гибком плоскостопии — когда свод появляется, если стопа не касается пола.
+- В исследовании 52 человек с гибким плоскостопием шесть недель упражнений улучшили опускание ладьевидной кости на 0,4 см и угол свода на 16 градусов больше, чем в контрольной группе.
+- Метаанализ 2024 года в целом значимого эффекта «короткой стопы» не нашёл; опускание ладьевидной кости улучшилось только в подгруппе программ длиннее шести недель, и авторы пишут, что нужны более крупные исследования.
+- Ригидное плоскостопие — свод плоский и без нагрузки — это особенность строения, и упражнения её не изменят.
+- Цифры об упражнениях для свода — про форму стопы, а не про боль; при боли в пятке рекомендации 2023 года дают растяжке уровень A, силовым упражнениям — уровень B.
+
+### Сначала проверьте: гибкое или ригидное?
+
+Посмотрите на стопу стоя, а потом поднимите её над полом или встаньте на носки. Если свод появляется, плоскостопие **гибкое** — именно на таких людях проводилось рандомизированное исследование на этой странице. Метаанализ 2024 года объединил исследования плоскостопия в целом.
+
+Если свод остаётся плоским и без нагрузки, плоскостопие ригидное. Это особенность строения, и упражнения её не изменят: вместо программы стоит показаться врачу. Walkito тип стопы не проверяет, так что эта проверка — ваша: при ригидной стопе отложите цель по удержанию свода и сначала сходите к врачу.
+
+Если свод на одной стопе уплощился **внезапно**, уже во взрослом возрасте, — это другой случай: сначала к врачу, а потом уже упражнения.
+
+### Почему болит свод стопы при беге
+
+Боль в своде у бегуна бывает разной природы, и по одному ощущению её не различить. Подошвенная фасция тянется вдоль всего свода, от пятки к пальцам, поэтому боль в своде, которая отдаёт в пятку и сильнее всего на первых шагах утром, может быть связана с **подошвенным фасциитом** — тем, что в быту называют пяточной шпорой.
+
+Тогда основа — растяжка подошвенной фасции и икр и силовые подъёмы на носок: их с дозировками разбирает гайд [упражнения при боли в пятке («пяточной шпоре»)](https://walkito.site/ru/bol-v-pyatke-uprazhneniya/). Упражнения для свода с этой страницы идут параллельно с ними, а не вместо них.
+
+Если свод заболел после травмы, опух, немеет или уплощился внезапно, сначала покажитесь врачу, а уже потом беритесь за упражнения.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Упражнения и стартовые дозировки
+
+Это упражнения для свода стопы, которые использует Walkito, в тех дозировках, с которых он начинает, — отправная точка, а не назначение. «Короткую стопу», укрепление бедра и растяжку проверяли в исследовании; разведение пальцев и стойку на одной ноге Walkito добавляет сам. Выполняйте босиком. Откуда эти дозировки и как мы пишем гайды — на странице [о проекте](https://walkito.site/ru/o-proekte/).
+
+- **Короткая стопа, сидя** (3 × 10, удержание 5 с, каждой стопой): Стопа стоит на полу. Подтяните подушечку стопы к пятке, чтобы свод приподнялся. Не поджимайте пальцы — это самая частая ошибка.
+- **Короткая стопа, стоя** (3 × 10, удержание 5 с): То же движение, но стоя на обеих ногах. Пальцы остаются ровными и длинными, поднимается только свод.
+- **Короткая стопа, на одной ноге** (3 × 10, удержание 5 с, каждой стопой): Стоя на одной ноге. Большой палец прижат к полу — если он поднимается, работает не свод. На одной ноге и видно, какая сторона слабее.
+- **Разведение пальцев** (3 × 10, удержание 5 с): Разведите пальцы как можно шире и удержите. Пальцы, которые умеют расходиться, делят нагрузку со сводом; поднимать их не нужно.
+- **Стойка на одной ноге** (3 × 30 с, каждой ногой): Встаньте на одну ногу и смотрите в одну точку. Пусть стопа покачивается — так и нужно: это стопа держит равновесие.
+- **Отведение бедра** (3 × 15, каждой стороной): Лёжа на боку, поднимайте верхнюю ногу в сторону, ведя движение пяткой, а не носком. Когда бедро «проваливается», нагрузка ложится на свод стопы.
+- **Растяжка икроножной и камбаловидной** (3 × 30 с каждая, каждой ногой): Руки на стене, задняя нога прямая, пятка на полу, таз вперёд. Затем согните колено задней ноги, пока не почувствуете растяжение ниже, у пятки, — это камбаловидная мышца.
+
+### Через сколько свод начнёт меняться?
+
+В рандомизированном исследовании 52 человек с **гибким** плоскостопием шестинедельная программа — «короткая стопа», упражнения для голеностопа, укрепление бедра и растяжка — улучшила опускание ладьевидной кости на **0,4 см** и угол свода на **16 градусов** больше, чем в контрольной группе.
+
+Метаанализ 2024 года по упражнению «короткая стопа» в целом **значимой разницы** с контрольными группами не нашёл — ни по опусканию ладьевидной кости, ни по индексу положения стопы. Только в подгруппе программ **длиннее шести недель** опускание ладьевидной кости значимо улучшилось, и авторы пишут, что нужны более крупные исследования. Закладывайте хотя бы шесть недель, а если делаете одну «короткую стопу» — больше.
+
+Это одна из причин, почему у плана Walkito нет даты окончания. Цель по своду — удержать его 60 секунд — остаётся в плане, пока не будет достигнута, сколько бы недель это ни заняло, а удержание свода проверяется каждые 14 дней, после первой достигнутой цели — раз в 28 дней, чтобы было видно, меняется ли что-то.
+
+Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
+Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
+
+### Уйдёт ли боль от этих упражнений?
+
+Обещать этого нельзя. Цифры выше — про положение свода: опускание ладьевидной кости и угол свода. О боли они ничего не говорят, поэтому из них не следует, что упражнения для свода сами по себе её уберут.
+
+При боли в пятке доказательства есть у другого: клинические рекомендации 2023 года дают растяжке подошвенной фасции и икр **уровень A**, силовым упражнениям для стопы и голени — **уровень B**. Подробно — в гайде [упражнения при боли в пятке («пяточной шпоре»)](https://walkito.site/ru/bol-v-pyatke-uprazhneniya/). Поэтому Walkito ведёт оба направления параллельно; обоснование — на [странице с исследованиями](https://walkito.site/science/) (на английском).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Сначала к врачу, если
+
+- боль появилась после травмы или падения
+- на стопу нельзя опереться или вы хромаете
+- есть онемение, покалывание, жжение, отёк или стопа горячая на ощупь
+- пятка покраснела, поднялась температура или вы плохо себя чувствуете
+- боль будит ночью
+- боль острая или нарастает, несмотря на меньшую нагрузку
+- больно, когда сжимаете пятку с боков, или боль нарастает во время пробежек после того, как вы увеличили объём бега, — и то и другое может быть признаком стрессового перелома
+- у вас диабет, сниженная чувствительность стоп или плохое кровообращение в ногах
+- болят обе пятки, а другие суставы опухают или скованы
+- за несколько недель упражнений и меньшей нагрузки лучше не стало
+- свод одной стопы у взрослого уплощился внезапно
+- свод остаётся плоским, даже когда стопа не касается пола
+
+### Как это устроено в Walkito
+
+Walkito собирает план по одной неделе вокруг главной цели. Цель для свода при гибком плоскостопии — удержать его 60 секунд; другие цели — утренняя боль 14 дней подряд не выше 1 из 10, 25 подъёмов на носок на одной ноге, баланс на одной ноге 30 секунд и разница между левой и правой стороной меньше 10%. Вы выбираете 3, 5 или 7 тренировочных дней в неделю и тренировки по 3, 5 или 10 минут; упражнения выстроены в цепочки с уровнями от 1 до 5, и цепочка главной цели поднимается на один уровень за раз. Каждые 14 дней — 3 теста примерно за 4 минуты: подъёмы на носок до отказа, удержание свода и баланс на одной ноге, — чтобы видеть, работают ли упражнения для свода, а не гадать. Достигнутая цель переходит в поддержку, её место занимает следующая, а тесты после первой достигнутой цели идут раз в 28 дней. Последней недели у плана нет. [Как устроен Walkito](https://walkito.site/ru/); подробно о плане — на [странице о программе](https://walkito.site/program/) (на английском).
+
+#### Помогают ли упражнения при плоскостопии?
+
+При **гибком** плоскостопии положение свода меняется измеримо: в исследовании 52 человек шесть недель упражнений улучшили опускание ладьевидной кости на 0,4 см и угол свода на 16 градусов больше, чем в контрольной группе. При ригидном плоскостопии, когда свод плоский даже без нагрузки, упражнения форму стопы не изменят — с ним лучше к врачу.
+
+#### Сколько времени нужно, чтобы укрепить свод стопы?
+
+Шесть недель и больше, если судить по исследованиям. В рандомизированном исследовании при гибком плоскостопии показатели свода изменила шестинедельная программа из «короткой стопы», укрепления бедра и растяжки. Для одной «короткой стопы» метаанализ 2024 года в целом значимого эффекта не нашёл, а опускание ладьевидной кости улучшилось только в программах длиннее шести недель.
+
+#### Почему болит свод стопы при беге?
+
+Одна из возможных причин — подошвенная фасция: она тянется вдоль всего свода, и боль, которая отдаёт в пятку и сильнее всего на первых шагах утром, может быть связана с подошвенным фасциитом. Тогда основа — растяжка и силовые упражнения для икр. Но по одному ощущению причину не различить, а боль после травмы, с отёком или онемением — повод сначала пойти к врачу.
+
+#### Что лучше при плоскостопии: растягивать или укреплять стопу?
+
+И то и другое: в исследовании они шли вместе. У 52 человек с гибким плоскостопием показатели свода улучшила программа, где были и «короткая стопа», и упражнения для голеностопа, и укрепление бедра, и растяжка; вклад каждого упражнения по отдельности не оценивали. Разведение пальцев и стойку на одной ноге Walkito добавляет к ним сам.
+
+#### Как часто делать упражнения при плоскостопии?
+
+В каждый тренировочный день, пока свод — главная цель недели. В Walkito вы выбираете 3, 5 или 7 тренировочных дней в неделю; пока цель — свод, в каждую тренировку входит упражнение для него, а сложность растёт по одному уровню за раз. Стартовая дозировка «короткой стопы» — 3 подхода по 10 с удержанием 5 секунд. Удержание свода проверяется каждые 14 дней.
+
+#### Когда с плоскостопием нужно идти к врачу?
+
+Если свод остаётся плоским, даже когда стопа не касается пола: это признак ригидного плоскостопия, и упражнения его не изменят. К врачу стоит идти и тогда, когда свод у взрослого уплощился внезапно, боль появилась после травмы, будит ночью, нарастает или сопровождается онемением, покалыванием, жжением или отёком.
+
+## Ejercicios y estiramientos para la fascitis plantar y el dolor de talón
+
+Language: Spanish (Español) · https://walkito.site/es/ejercicios-fascitis-plantar/ · published 2026-09-24 · updated 2026-09-28
+
+Para la fascitis plantar, los ejercicios con más respaldo son los estiramientos de la fascia plantar y de la pantorrilla —grado A, la nota más alta de la guía clínica de 2023— y el entrenamiento de fuerza de los músculos del pie y el tobillo, con grado B (las elevaciones de talón son una forma de hacerlo). En un ensayo con 48 personas, todas con plantillas, las elevaciones lentas a una pierna con una toalla bajo los dedos mejoraron el dolor y la función antes que los estiramientos específicos de la fascia, aunque a los doce meses los dos grupos se habían igualado. Hacer las dos cosas es lo que respalda la guía.
+
+- La guía clínica de 2023 sobre la fascitis plantar da grado A a estirar la fascia plantar y la pantorrilla, y grado B al fortalecimiento.
+- En un ensayo con 48 personas, todas con plantillas, la fuerza con carga superó al estiramiento en 29 puntos del Foot Function Index a los 3 meses; a los 12 meses los grupos se igualaron.
+- Para quien tiene dolor de forma constante en los primeros pasos de la mañana, la guía de 2023 da grado A a las férulas nocturnas durante 1 a 3 meses.
+- Un espolón visto en una radiografía no demuestra por sí solo el origen del dolor; los estudios de esta guía son sobre fascitis plantar.
+- El dolor de talón tras una lesión, con entumecimiento o hinchazón, que te despierta por la noche o que duele al apretar el talón necesita antes un profesional.
+
+### ¿Espolón calcáneo o fascitis plantar?
+
+Mucha gente llama «espolón» a cualquier dolor de talón. El espolón calcáneo es un pequeño saliente de hueso que se ve en una radiografía; la **fascitis plantar** es dolor donde la fascia plantar se une al talón. Tener un espolón en la imagen no significa, por sí solo, que sea lo que duele.
+
+Los estudios y la guía clínica de esta página se refieren a la fascitis plantar. Qué tienes tú lo dirá un profesional; aquí tienes los ejercicios que la guía clínica, escrita para fisioterapeutas, califica mejor para la fascitis plantar.
+
+### Los ejercicios, con dosis de inicio
+
+Son los ejercicios que usa Walkito para el dolor de talón, con las dosis con las que empieza: un punto de partida, no una prescripción. Los tres primeros son los estiramientos para la fascitis plantar —fascia y pantorrilla, grado A en la guía de 2023—; el último, el trabajo de fuerza, con grado B. [Cómo escribimos estas guías](https://walkito.site/es/sobre-walkito/).
+
+En la app, la primera semana es de adaptación: nada que cargue la fascia plantar y nada por encima del nivel 2. Las elevaciones de talón con toalla, las que más cargan la fascia, llegan después, un nivel cada vez.
+
+- **Estiramiento plantar** (10 × 10 s, cada pie; el primero, antes de levantarte): Sentado, cruza el pie sobre la otra rodilla y tira de los dedos hacia ti hasta notar el estiramiento en el arco, no en la pantorrilla.
+- **Estiramiento de pantorrilla** (3 × 30 s, cada pierna): Manos en la pared, pierna de atrás recta, talón abajo, cadera hacia delante.
+- **Estiramiento de sóleo** (3 × 30 s, cada pierna): La misma posición con la rodilla de atrás doblada, hasta notarlo más abajo, cerca del talón. El músculo profundo de la pantorrilla solo se suelta con la rodilla doblada.
+- **Elevación de talones con toalla** (3 × 12, cada pierna, en días alternos): En un escalón, sobre un pie, con una toalla enrollada bajo los dedos. Tres segundos arriba, dos mantenidos, tres abajo. La toalla es lo que hace trabajar a la fascia y no solo a la pantorrilla.
+
+### Por qué el talón duele más por la mañana
+
+El dolor en los primeros pasos al levantarte, que suele ir cediendo al caminar un rato, se asocia a menudo con la fascitis plantar. Por eso el primer estiramiento plantar se hace sentado en la cama, antes de apoyar el pie.
+
+Para quien tiene ese dolor de forma constante, la guía clínica de 2023 da **grado A** a las férulas nocturnas durante 1–3 meses; es algo que hay que hablar con un profesional, y Walkito no lo ofrece. En Walkito, el dolor que anotas cada mañana decide la sesión del día: una mañana con mucho dolor la acorta o la suaviza, y una mañana buena no la acelera.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### ¿Fuerza o estiramiento?
+
+En un ensayo aleatorizado con 48 personas con fascitis plantar confirmada por ecografía, los dos grupos llevaron plantillas; uno hizo además elevaciones de talón con carga en días alternos y el otro, estiramientos diarios específicos de la fascia. A los tres meses, el grupo de fuerza puntuó **29 puntos mejor** en el Foot Function Index (IC 95 % 6–52, p = 0,016).
+
+A los doce meses los grupos se habían igualado: 22 frente a 16, sin diferencia significativa. La fuerza **adelanta** la mejoría; no la hace mayor. Por eso tiene sentido hacer las dos cosas, que es lo que respalda la guía.
+
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Lo que recomienda la guía de 2023, y lo que no: los grados principales
+
+- Estiramiento de la fascia plantar y de la pantorrilla — **grado A**
+- Terapia manual en las articulaciones y los tejidos blandos de la pierna y el pie, aplicada por un profesional — **grado A**
+- Vendaje funcional junto con otros tratamientos de fisioterapia, para una mejoría a corto plazo (hasta 6 semanas) — **grado A**
+- Férulas nocturnas durante 1–3 meses, para el dolor constante en los primeros pasos de la mañana — **grado A**
+- Entrenamiento de fuerza y resistencia — **grado B**
+- Láser de baja intensidad y punción seca, aplicados por un profesional — **grado B**
+- Plantillas como único tratamiento para aliviar el dolor a corto plazo — **grado B en contra**
+- Plantillas combinadas con otros tratamientos — **grado C**
+- Ultrasonido terapéutico añadido a los estiramientos — **grado A en contra**
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Dolor de talón al correr: ¿hay que parar del todo?
+
+No hace falta parar del todo: cambia la carga. Lo que aconseja la guía de 2023 en este punto es enseñar estrategias para modificar la carga en el trabajo, el deporte y la vida diaria, con **grado E**: se basa en razonamiento teórico, no en ensayos. En la práctica, mantén los estiramientos cada día y reduce lo que empeore el talón; en una mañana mala, deja las elevaciones de talón para otro día.
+
+Si corres, la carrera también es carga. Si los primeros pasos de la mañana siguiente duelen claramente más, esa carrera fue más de lo que el talón podía asumir: reduce distancia o ritmo en vez de insistir.
+
+Si correr te produce un dolor agudo, va a peor semana tras semana o te hace cojear, para y consulta a un profesional. Lo mismo si el dolor aumenta al correr después de haber subido el kilometraje o si duele al apretar los lados del talón: las dos cosas pueden ser signos de una fractura por estrés, una de las otras causas de dolor de talón que menciona la guía.
+
+Walkito aplica la misma lógica a cada sesión: un dolor de 6 sobre 10 o más durante un ejercicio termina la sesión, y las dos siguientes dan un paso atrás. Un día de muchos más pasos de lo habitual o una noche corta también acortan o suavizan la sesión de la mañana siguiente.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Después de mejorar: no dejarlo a medias
+
+El dolor de talón puede volver; por eso en Walkito un objetivo alcanzado no se abandona. Cuando alcanzas el de mañanas sin dolor —el dolor al levantarte en 1 sobre 10 o menos durante 14 días seguidos—, pasa a mantenimiento, con una dosis menor, mientras el siguiente objetivo ocupa su lugar. El plan no tiene fecha de fin.
+
+Si además tienes pie plano o te duele el arco, el arco tiene sus propios ejercicios y sus propios plazos: mira los [ejercicios para pie plano](https://walkito.site/es/ejercicios-pie-plano/). La evidencia completa, con cada estudio enlazado, está en [la página de evidencia](https://walkito.site/science/) (en inglés).
+
+### Consulta antes a un profesional si
+
+- el dolor empezó tras una lesión o una caída
+- no puedes apoyar el pie, o cojeas
+- hay entumecimiento, hormigueo, ardor, hinchazón o calor
+- el talón está rojo, o tienes fiebre o te encuentras mal
+- te despierta por la noche
+- es un dolor agudo, o va a peor aunque hayas reducido la carga
+- duele al apretar los lados del talón, o el dolor aumenta al correr después de haber subido el kilometraje: las dos cosas pueden ser signos de una fractura por estrés
+- tienes diabetes, menos sensibilidad en los pies o mala circulación
+- te duelen los dos talones y tienes otras articulaciones hinchadas o rígidas
+- no ha mejorado tras varias semanas de ejercicio y menos carga
+- un arco se ha aplanado de repente en la edad adulta
+
+### Hacerlo como programa
+
+Walkito no tiene una duración fija: arma **una semana cada vez** alrededor de un objetivo medible, y si te duele, el primero es el dolor —mañanas sin dolor, es decir, 14 días seguidos con el dolor al levantarte en 1 sobre 10 o menos—. Eliges 3, 5 o 7 días de entrenamiento a la semana y sesiones de 3, 5 o 10 minutos, y cada mañana el día se ajusta: una mañana con mucho dolor, un día de muchos pasos o una noche corta acortan o suavizan la sesión. Cada 14 días, 3 pruebas de unos 4 minutos —elevaciones de talón a una pierna, sostener el arco y equilibrio a una pierna— muestran si avanzas; tras alcanzar el primer objetivo, cada 28. Cuando alcanzas un objetivo, pasa a mantenimiento con menos dosis y el siguiente ocupa su lugar: el plan sigue mientras lo uses. Más en [la página de Walkito](https://walkito.site/es/) y en [Sobre Walkito](https://walkito.site/es/sobre-walkito/).
+
+#### ¿Puedo seguir corriendo con fascitis plantar?
+
+No hace falta parar del todo: ajusta la carga. La guía de 2023 incluye enseñar a modificar la carga (grado E: razonamiento teórico, no ensayos). Reduce lo que empeore el talón y mantén los estiramientos. Si al día siguiente los primeros pasos duelen claramente más, la carrera fue demasiado. Si el dolor es agudo o empeora, consulta a un profesional.
+
+#### ¿Por qué me duele el talón por la mañana al dar los primeros pasos?
+
+El dolor de los primeros pasos de la mañana se asocia a menudo con la fascitis plantar. Una explicación habitual: tras horas de reposo, la fascia está más rígida y los primeros apoyos la estiran de golpe. Ayuda estirarla sentado antes de levantarte, y, si ese dolor es constante, la guía clínica de 2023 da grado A a las férulas nocturnas durante 1–3 meses.
+
+#### ¿Espolón calcáneo y fascitis plantar son lo mismo?
+
+No. El espolón calcáneo es un saliente de hueso que se ve en una radiografía; la fascitis plantar es dolor donde la fascia plantar se une al talón. Tener un espolón en la imagen no demuestra que sea lo que duele. Los ejercicios de esta guía se estudiaron en fascitis plantar; qué tienes tú lo dirá un profesional.
+
+#### ¿Qué es mejor para la fascitis plantar, estirar o fortalecer?
+
+Lo mejor es combinar las dos cosas. La guía clínica de 2023 da grado A a los estiramientos de fascia y pantorrilla y grado B al fortalecimiento. En un ensayo con 48 personas, todas con plantillas, las elevaciones de talón con carga mejoraron el dolor y la función antes que el estiramiento, aunque a los doce meses se igualaron.
+
+#### ¿Cada cuánto hay que hacer los ejercicios para la fascitis plantar?
+
+Estira a diario y fortalece en días alternos. El primer estiramiento plantar del día se hace antes de levantarte. Las elevaciones de talón con toalla siguen el ensayo que usa Walkito: días alternos, desde 3 × 12 por pierna. En Walkito eliges 3, 5 o 7 días a la semana, y los de fuerza nunca van seguidos.
+
+#### ¿Cuándo debo ir al médico por dolor de talón?
+
+Antes de empezar, si el dolor apareció tras una lesión o una caída, si no puedes apoyar el pie o si hay entumecimiento, hormigueo, hinchazón, calor o fiebre. También si te despierta por la noche, es agudo o va a peor, o duele al apretar el talón: puede ser una fractura por estrés. Walkito no diagnostica.
+
+## Ejercicios para el pie plano y el dolor en el arco
+
+Language: Spanish (Español) · https://walkito.site/es/ejercicios-pie-plano/ · published 2026-09-24 · updated 2026-09-28
+
+Si tu pie plano es flexible —el arco reaparece cuando el pie no toca el suelo—, los ejercicios que probó un ensayo son el pie corto, el fortalecimiento de cadera y el estiramiento de pantorrilla, juntos: seis semanas de ellos cambiaron las medidas del arco más que en el grupo de control. Dales tiempo: un metaanálisis de 2024 sobre el ejercicio de pie corto no encontró diferencias significativas en conjunto, y solo en los programas de más de seis semanas mejoró la caída del navicular, una medida de la altura del arco. Si lo que tienes es dolor en el arco, no cuentes con que estos ejercicios lo quiten: los estudios midieron la postura del arco, no el dolor. Si el dolor está cerca del talón, la guía de 2023 sobre fascitis plantar es mejor referencia: da grado A a los estiramientos de fascia y pantorrilla y grado B a la fuerza.
+
+- El ensayo aleatorizado en el que se basan estos ejercicios se hizo en pie plano flexible: el que recupera el arco al levantar el pie del suelo.
+- En un ensayo con 52 personas, seis semanas de ejercicio mejoraron la caída del navicular 0,4 cm y el ángulo del arco 16 grados más que el grupo de control.
+- Un metaanálisis de 2024 no encontró un efecto significativo del ejercicio de pie corto en conjunto; solo en el subgrupo de programas de más de seis semanas mejoró la caída del navicular.
+- Los estudios del arco midieron su postura, no el dolor; para el dolor de talón (fascitis plantar), la guía clínica de 2023 da grado A a los estiramientos y grado B a la fuerza.
+- Un pie plano rígido, que sigue plano sin apoyo, es estructural: el ejercicio no lo cambia y conviene que lo valore un profesional.
+
+### Primero, comprueba: ¿flexible o rígido?
+
+Mira tu pie de pie, y luego levántalo del suelo o ponte de puntillas. Si el arco reaparece, el pie plano es **flexible**: el tipo con el que se hizo el ensayo aleatorizado de esta página. El metaanálisis de 2024 reunió estudios de pie plano en general.
+
+Si el arco sigue plano incluso sin apoyo, es rígido. Es una cuestión estructural que el ejercicio no va a cambiar, y conviene consultar a un profesional antes de empezar un programa. Walkito no comprueba el tipo de pie, así que esta prueba la haces tú: con un pie rígido, deja de lado el objetivo de sostener el arco y consulta antes a un profesional.
+
+El «arco caído» suele ser otra forma de llamar al pie plano. Un arco que se ha aplanado **de repente**, en un solo pie y en la edad adulta, es otra cosa: consulta a un profesional antes de ejercitarlo.
+
+### Los ejercicios, con dosis de inicio
+
+Son los ejercicios para el arco que usa Walkito, con las dosis con las que empieza: un punto de partida, no una prescripción. El pie corto, el fortalecimiento de cadera y los estiramientos son lo que probó el ensayo; la separación de dedos y el equilibrio a una pierna los añade Walkito. Hazlos descalzo: con zapato no se ve si los dedos se encogen, que es justo lo que hay que evitar. [Cómo escribimos estas guías](https://walkito.site/es/sobre-walkito/).
+
+- **Pie corto, sentado** (3 × 10, mantén 5 s, cada pie): Pie apoyado en el suelo. Lleva la parte delantera del pie hacia el talón para que el arco suba. No encojas los dedos: es el error más común.
+- **Pie corto, de pie** (3 × 10, mantén 5 s): El mismo movimiento con el peso en los dos pies. Los dedos siguen planos y largos; solo sube el arco.
+- **Pie corto, una pierna** (3 × 10, mantén 5 s, cada pie): Sobre un solo pie. El dedo gordo se queda abajo: si se levanta, el arco está haciendo trampa. Con un pie cada vez se ve qué lado es el débil.
+- **Separación de dedos** (3 × 10, mantén 5 s): Separa los dedos todo lo que puedas y mantén. Unos dedos que se separan reparten la carga con el arco; levantarlos no es el objetivo.
+- **Equilibrio a una pierna** (3 × 30 s, cada pierna): Sobre un pie, con la mirada en un punto fijo. Deja que el pie oscile: es lo que toca, es el pie haciendo el equilibrio.
+- **Abducción de cadera** (3 × 15, cada lado): Tumbado de lado, sube la pierna de arriba hacia fuera, empujando con el talón y no con los dedos. El fortalecimiento de glúteos formaba parte del programa de seis semanas del ensayo sobre pie plano flexible.
+- **Estiramiento de pantorrilla y sóleo** (3 × 30 s cada uno, cada pierna): Manos en la pared, pierna de atrás recta, talón abajo, cadera hacia delante. Después dobla la rodilla de atrás hasta notarlo más abajo, cerca del talón: ese es el sóleo.
+
+### ¿Cuánto tarda el arco en cambiar?
+
+En un ensayo aleatorizado con 52 personas con pie plano **flexible**, un programa de seis semanas de pie corto, trabajo de tobillo, fortalecimiento de cadera y estiramientos mejoró la caída del navicular en **0,4 cm** y el ángulo del arco en **16 grados** más que el grupo de control.
+
+Un metaanálisis de 2024 sobre el ejercicio de pie corto no encontró **diferencias significativas en conjunto** en la caída del navicular ni en la postura del pie frente a los grupos de control. Solo en el subgrupo de programas de **más de seis semanas** mejoró de forma significativa la caída del navicular, y los autores piden estudios más grandes. Cuenta con al menos seis semanas, y con más si haces el pie corto por sí solo.
+
+Es una de las razones por las que el plan de Walkito no tiene fecha de fin. Su objetivo del arco —sostenerlo 60 segundos— sigue en el plan hasta que lo alcanzas, tarde las semanas que tarde, y la prueba de sostener el arco se repite cada 14 días hasta que alcanzas tu primer objetivo, y después cada 28, para que veas si se mueve. Los ensayos están resumidos en [la página de evidencia](https://walkito.site/science/) (en inglés).
+
+Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
+Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
+
+### ¿Quitan el dolor estos ejercicios?
+
+Por sí solos, no hay que contar con ello. Los estudios sobre el arco de esta página midieron la postura del pie —la caída del navicular, el ángulo del arco—, no el dolor, y que el arco mejore de postura no garantiza que deje de doler.
+
+Si el dolor está cerca del talón, puede ser más relevante la guía clínica de 2023 sobre la fascitis plantar, que para el dolor de talón da **grado A** a los estiramientos de fascia y pantorrilla y **grado B** al fortalecimiento. Lo tienes en [ejercicios para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/). Walkito puede trabajar las dos cosas a la vez, como objetivos separados: mañanas sin dolor para el dolor y sostener el arco para el arco.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Dolor en el arco del pie al correr
+
+El dolor en el arco al correr puede venir de la fascia plantar —la misma estructura de la fascitis plantar—, sobre todo si se concentra cerca del talón o es peor en los primeros pasos de la mañana; por la sensación sola no se puede saber. Tener el pie plano no significa que esa sea la causa, y tener un arco normal no te libra de él.
+
+Si el dolor está cerca del talón y encaja con la fascitis plantar, lo que aplica es la [guía de ejercicios para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/). Si el dolor es agudo, va a más, te hace cojear o apareció tras un golpe, consulta a un profesional antes de seguir corriendo.
+
+### Consulta antes a un profesional si
+
+- el dolor empezó tras una lesión o una caída
+- no puedes apoyar el pie, o cojeas
+- hay entumecimiento, hormigueo, ardor, hinchazón o calor
+- el talón está rojo, o tienes fiebre o te encuentras mal
+- te despierta por la noche
+- es un dolor agudo, o va a peor aunque hayas reducido la carga
+- duele al apretar los lados del talón, o el dolor aumenta al correr después de haber subido el kilometraje: las dos cosas pueden ser signos de una fractura por estrés
+- tienes diabetes, menos sensibilidad en los pies o mala circulación
+- te duelen los dos talones y tienes otras articulaciones hinchadas o rígidas
+- no ha mejorado tras varias semanas de ejercicio y menos carga
+- un arco se ha aplanado de repente en la edad adulta
+- el arco sigue plano cuando el pie no toca el suelo
+
+### Hacerlo como programa
+
+Walkito convierte estos ejercicios en un plan sin fecha de fin que se arma **una semana cada vez** alrededor de un objetivo medible. El del arco es sostenerlo 60 segundos. Eliges 3, 5 o 7 días de entrenamiento a la semana y sesiones de 3, 5 o 10 minutos, con 2 a 4 ejercicios cada una; el del objetivo nunca se recorta. Cada 14 días, 3 pruebas de unos 4 minutos —elevaciones de talón a una pierna, sostener el arco y equilibrio a una pierna— te dicen si el trabajo del arco está sirviendo, en vez de adivinarlo; tras alcanzar el primer objetivo, cada 28. Un objetivo alcanzado pasa a mantenimiento, con menos dosis, y el siguiente ocupa su lugar. Más en [la página de Walkito](https://walkito.site/es/) y en [Sobre Walkito](https://walkito.site/es/sobre-walkito/).
+
+#### ¿Sirven de verdad los ejercicios para el pie plano?
+
+En el pie plano flexible, pueden cambiar la postura del arco de forma medible. En un ensayo con 52 personas, seis semanas de ejercicio mejoraron la caída del navicular 0,4 cm y el ángulo del arco 16 grados más que el grupo de control. En el pie plano rígido, que es estructural, el ejercicio no cambia el arco.
+
+#### ¿Cuánto tardan los ejercicios en cambiar el arco del pie?
+
+Cuenta con seis semanas o más. En un ensayo, seis semanas de pie corto, cadera y estiramientos cambiaron las medidas del arco. Para el pie corto por sí solo, un metaanálisis de 2024 no halló efecto significativo en conjunto; la caída del navicular solo mejoró con programas de más de seis semanas. Walkito mantiene el objetivo del arco hasta alcanzarlo.
+
+#### ¿Por qué me duele el arco del pie al correr?
+
+El dolor en el arco al correr puede venir de la fascia plantar, sobre todo si se concentra cerca del talón o empeora al levantarte; por la sensación sola no se sabe. Tener el pie plano no significa que sea la causa. Mira los [ejercicios para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/) y, si el dolor es agudo o va a más, consulta a un profesional.
+
+#### ¿Cómo sé si mi pie plano es flexible o rígido?
+
+Mira tu pie de pie y luego levántalo del suelo o ponte de puntillas: si el arco reaparece, es flexible; si sigue plano, es rígido. El ensayo aleatorizado de esta guía se hizo con pie plano flexible. Un pie plano rígido es estructural, el ejercicio no lo cambia y conviene que lo valore un profesional.
+
+#### ¿Los ejercicios para el pie plano quitan el dolor?
+
+No por sí solos: los estudios sobre ejercicios para el pie plano midieron la postura del arco, no el dolor, y un arco mejor alineado no garantiza un pie sin dolor. Si duele cerca del talón, la guía clínica de 2023 sobre fascitis plantar da grado A a estirar fascia y pantorrilla, y grado B a la fuerza.
+
+#### ¿Cada cuánto hay que hacer los ejercicios para el pie plano?
+
+Cada día de entrenamiento mientras el arco sea tu objetivo. En Walkito eliges 3, 5 o 7 días a la semana y, mientras el arco es el objetivo principal, cada sesión incluye un ejercicio de arco, un nivel más difícil cada vez. La prueba de sostener el arco se repite cada 14 días, y cada 28 tras tu primer objetivo.
+
+## About Walkito
+
+https://walkito.site/about/
+
+Walkito is an iPhone app of exercises for heel pain, arch pain and flexible flat feet, built for runners. This page says how the guides on this site are written, where their figures come from, what the app does not do, and how to tell us when something is wrong.
+
+### What Walkito is
+
+Walkito builds an exercise plan one week at a time around a measurable goal: pain-free mornings, a 60-second arch hold, 25 single-leg calf raises, 30 seconds of single-leg balance, or a left/right difference under 10%. You start with at most three goals, pain first if something hurts. You choose 3, 5 or 7 training days a week and sessions of 3, 5 or 10 minutes, each day adapts to how your morning went, and a short test every 14 days — every 28 once your first goal is reached — shows whether the numbers are moving.
+
+There is no fixed length. A goal that is reached moves to maintaining and the next one takes its place, for as long as you use the app. [How the plan works](https://walkito.site/program/).
+
+The app is in English, Russian and Spanish, and is coming soon to the App Store.
+
+### How the content is written
+
+The guides — [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/) and [flat feet exercises](https://walkito.site/flat-feet-exercises/) — and [the evidence page](https://walkito.site/science/) follow the same rules:
+
+- **Every figure traces to a primary source** — a randomised trial, a meta-analysis or a clinical guideline — printed and linked on the page that uses it. A number we cannot trace to one does not go on the site, and sentences have been removed for that reason.
+- **The reference point is the 2023 clinical practice guideline** on heel pain from the Journal of Orthopaedic & Sports Physical Therapy, which grades each intervention by the strength of its evidence, including the ones it advises against.
+- **Qualifiers travel with the figures.** A three-month result is always printed with what happened at twelve months, and every claim about arch shape says which feet it was measured on.
+- **Doses are the app’s own starting doses** — where Walkito’s exercises begin — not a prescription for you.
+- **No promise of a cure.** The pages say what the research found and where its evidence stops.
+
+### What Walkito does not do
+
+Walkito does not diagnose, does not treat, and does not replace a clinician. It cannot tell you what is causing your pain. See a clinician first if:
+
+- the pain followed an injury or a fall
+- you cannot put weight on the foot, or you are limping
+- it comes with numbness, tingling, burning, swelling or warmth
+- the heel is red, or you have a fever or feel unwell
+- it wakes you at night
+- it is sharp, or getting worse despite easing the load
+- squeezing the sides of the heel hurts, or the pain builds during runs after you increased your mileage — both can be signs of a stress fracture
+- you have diabetes, reduced feeling in your feet or poor circulation
+- both heels hurt and other joints are swollen or stiff
+- it has not improved after several weeks of exercise and a lighter load
+- one arch has flattened suddenly as an adult
+- the arch stays flat even when the foot is off the ground
+
+### Clinical review
+
+The guides are written by the Walkito team from the published research cited on each page. They have not yet been reviewed by a licensed clinician.
+
+When that review has happened, the reviewer’s name, credentials and what they checked will be listed here. Until then, no page on this site claims a medical reviewer.
+
+### Corrections and contact
+
+If you find a mistake — a figure that does not match its source, a dose that reads wrong, a broken link — email hello@walkito.app. Corrections are made on the page itself.
+
+Every page shows the date its content last changed, and that date moves only with a real edit.
+
+### Privacy
+
+What the app stores, what leaves the phone and how to delete it is in the [privacy policy](https://walkito.site/privacy/).
+
+## Questions (https://walkito.site/faq/)
+
+### How long does the Walkito plan last?
+
+As long as you use it — there is no fixed length. Walkito builds one week at a time around a focus goal, such as pain-free mornings or a 60-second arch hold. When a goal is reached it moves to maintaining, kept going at a lower dose, and the next goal takes its place. [How the plan works](https://walkito.site/program/).
 
 ### How long is a daily session?
 
-Between three and eight minutes. Strength days are the longest at seven minutes, mobility and balance days are five, and a prescribed recovery day is three. Retest days are four minutes and contain no training at all.
+Five minutes by default, and you can switch any session to 3 or 10. Each one is 2 to 4 exercises, and the exercise for the week’s focus goal always stays in, even in the 3-minute version. A test day takes about four minutes and has no training in it.
 
 ### How many days a week do I train?
 
-Three strength days a week carry the load, with mobility and balance days between them. One day in seven is rest the plan assigns rather than rest you take.
+Three, five or seven — you choose. Strength days never fall on consecutive days; with five or seven, mobility, balance and recovery sessions fill the days between. The days without a session are rest the plan assigns, and a prescribed rest day counts as showing up and never breaks your streak.
 
 ### What happens if I miss a few days?
 
-Nothing is owed and nothing is queued. The plan runs on dates rather than attendance, so day 24 is day 24 whether or not you were there for day 23. There is no make-up work and no catch-up screen.
+Nothing is owed and nothing is queued. The week runs on dates rather than attendance, so a missed session is not moved to tomorrow and there is no catch-up screen. What you did log still counts: next week is built from how your sessions felt and from your morning pain.
 
-### Does the program change if my pain gets worse?
+### Does the plan change if my pain gets worse?
 
-Yes. Logging a morning pain of seven or higher makes the same day step back one level and shrink to three minutes of unloaded work. A day on your feet far above your own baseline does the same. The plan only ever walks back and then returns; it never accelerates because you had a good day.
+Yes, the same morning. A morning pain of 7/10 or more turns the day into about three minutes of seated work, and a morning well above your recent average steps each exercise back a level. Pain of 6/10 or more during a session ends it and steps the next two back. A good morning never speeds the plan up.
 
-### What do the retests measure?
+### Can I keep running while I do Walkito?
 
-Three things, every fourteen days, in about four minutes: calf raises to failure, an arch hold, and single-leg balance timed on both sides. The gap between your two sides is the figure worth watching. Nothing else moves your level — not a streak, and not how the sessions felt.
+Yes — Walkito is built for runners, and the plan adjusts to your load rather than asking you to stop. When yesterday was a big day on your feet, a strength session becomes a lighter recovery one. Sharp or worsening pain needs a clinician. More in [heel pain when running](https://walkito.site/plantar-fasciitis-exercises/).
+
+### What do the tests measure?
+
+Three things, in about four minutes: calf raises to failure on each leg, arch hold time, and single-leg balance. The calf raises also give the gap between your left and right side. Tests come every 14 days until your first goal is reached, then every 28. Goals are reached on these numbers and your morning pain, never on a streak.
+
+### What happens when I reach a goal?
+
+It moves to maintaining, and the next goal takes its place. A maintained goal keeps a spot in the plan at a lower dose, so the work that got you there does not stop, and tests move from every 14 days to every 28 once your first goal is reached. The plan changes what it works on rather than ending.
 
 ### Do I need an Apple Watch?
 
-No. The signals Walkito relies on — step count, walking speed and walking asymmetry — come from the iPhone itself. A watch adds sleep and resting heart rate, and without one the features that need those simply stay quiet.
+No. The step count, walking speed and walking asymmetry Walkito relies on come from the iPhone itself. A watch adds sleep and resting heart rate; without one, the parts that need them — such as a short night softening the next session — simply stay quiet, and the rest of the plan works as normal.
 
 ### Does Walkito work offline?
 
-Yes. The plan, the pain log and the whole history live on the device, and there is no account to sign into. Nothing in the daily flow needs a network connection.
+Yes, after setup. Setup signs you in with Apple, or with email for an existing account, and needs a connection once. After that everything is saved on the phone first and nothing in the daily flow waits for a network; what you log is copied to your Walkito account in the background whenever there is a connection.
 
 ### Is my health data uploaded anywhere?
 
-No. Apple Health data is read on the device and summarised there, and it never leaves the phone. The only things that leave are a subscription status, and a notification token if you turn notifications on.
+Partly. Apple Health readings, from steps to sleep, stay on the iPhone. Your plan and what you log are copied to your Walkito account on our server: pain scores, where it hurts, sessions and in-session pain, self-test results and daily app time. That copy restores your plan and shows how the plan is used. See the [privacy policy](https://walkito.site/privacy/).
 
 ### Which Apple Health permissions does Walkito ask for?
 
-Walking asymmetry, walking speed, step count, resting heart rate and sleep analysis to read, and workouts and mindful minutes to write. Every one is optional and can be withdrawn in iOS Settings; the plan keeps working without them.
+To read: step count, walking speed, walking asymmetry, flights climbed, heart rate and resting heart rate, active energy, sleep and workouts. To write: workouts and mindful minutes. Every one is optional and can be withdrawn in iOS Settings; the plan keeps working without them, and simply adapts less to your day.
 
 ### How many notifications will I get?
 
-One a day at most and five a week at most, with nothing after 21:30. If several are ever due on the same day, the more important one is sent and the other is dropped rather than queued.
+One a day at most and five a week at most, with nothing after 21:30. If several are ever due on the same day, the more important one is sent and the other is dropped rather than queued. You can turn them off at any time in iOS Settings, and the plan works the same without them.
 
 ### Will Walkito nag me if I stop using it?
 
-No. If three notifications go unopened in a row the app drops to two a week, and after seven it stops for a month and then sends one message. After that it stays quiet unless you come back on your own.
+No. If three notifications go unopened in a row, the app drops to two a week, and after seven unopened it stops for a month and then sends one message. After that it stays quiet unless you come back on your own. The limits exist so that an app about pain never becomes one more thing to feel bad about.
 
 ### How does the streak work?
 
-The streak counts attention, not completion. A day is green if you logged your morning pain, or finished a session, or the plan itself prescribed rest that day. A rest day the program assigned can never break a streak.
+The streak counts attention, not completion. A day is green if you logged your morning pain, or finished a session, or the plan itself prescribed rest that day. A rest day the plan assigned can never break a streak, so choosing three training days a week costs you nothing.
 
 ### What happens to my streak if I have a bad week?
 
-You earn one freeze a week and can hold two at a time, and a broken streak can be restored within 48 hours. A lost streak is never shown as a failure — the app offers to put it back, and if you decline the number simply starts again.
+You earn one freeze a week and can hold two at a time, and a broken streak can be restored within 48 hours. A lost streak is never shown as a failure — the app offers to put it back, and if you decline, the number simply starts again.
 
 ### Is Walkito available on Android?
 
-No. It is iOS only, because it reads Apple Health for steps, sleep and walking asymmetry, and runs a Live Activity on the Lock Screen while a session is going.
-
-### What happens after the twelve weeks?
-
-Maintenance: two sessions a week of about eight minutes, with a checkpoint every four weeks. The plan changes job rather than ending, because the thing that undoes the work is stopping once it stops hurting.
+No. It is iOS only, because it reads Apple Health for steps, sleep and walking asymmetry, and runs a Live Activity on the Lock Screen while a session is going. It is coming soon to the App Store, in English, Russian and Spanish.
 
 ### Can Walkito tell me what is wrong with my foot?
 
-No. Walkito is a screening and exercise program. It does not diagnose and it does not treat, and it cannot identify a condition. Pain that is sharp, getting worse, or stopping you sleeping should be seen by a clinician.
+No. Walkito is an exercise plan: it does not diagnose, it does not treat, and it cannot identify what is causing your pain. Pain that is sharp, getting worse, stopping you sleeping, or that followed an injury should be seen by a clinician. The warning signs are listed in [the heel pain guide](https://walkito.site/plantar-fasciitis-exercises/).
 
 ### How long before I notice a difference?
 
-The trial Walkito’s strength protocol follows measured its groups at three months, not weekly, so an honest answer is that it reports a difference by three months rather than by a particular day. At three months the high-load strength group scored 29 points lower on the Foot Function Index than the stretching group. At twelve months the two groups had converged, which means the strength work brought improvement forward rather than making it larger.
+There is no honest day to promise. In the trial Walkito’s strength work follows, where both groups wore shoe inserts, the high-load strength group scored 29 points lower on the Foot Function Index than the stretching group at three months; by twelve months the two had converged. Strength work brought improvement forward rather than making it larger. Your own tests show your numbers as they move.
 
-### Is strength training better than stretching?
+### Is strength training better than stretching for plantar fasciitis?
 
-Faster, not better. In a randomised trial of 48 people with plantar fasciitis confirmed by ultrasound, high-load strength training scored 29 points lower on the Foot Function Index at three months than plantar-specific stretching (95% CI 6–52, p = 0.016). By twelve months the two groups had converged with no significant difference. Walkito does both: the guideline grades stretching A and it runs daily from day one.
+Faster, not better. In a randomised trial of 48 people with plantar fasciitis confirmed by ultrasound, all wearing shoe inserts, high-load strength training scored 29 points lower on the Foot Function Index at three months than plantar-specific stretching (95% CI 6–52, p = 0.016). By twelve months the groups had converged. The 2023 guideline grades stretching A and strength B; Walkito uses both. [The evidence](https://walkito.site/science/).
 
 ### Can exercise change flat feet?
 
-For flexible flat feet, where the arch reappears when the foot is lifted off the ground, a randomised trial of 52 people found a six-week program improved navicular drop by 0.4 cm and arch angle by 16 degrees more than the control group. Rigid flat feet are a structural issue and exercise will not change them.
+For flexible flat feet, yes, measurably. In a randomised trial of 52 people whose arch reappears off the ground, a six-week program improved navicular drop by 0.4 cm and arch angle by 16 degrees more than the control group. Rigid flat feet are structural and exercise will not change them. The exercises are in [flat feet exercises](https://walkito.site/flat-feet-exercises/).
 
-### Should I choose the six-week plan or the twelve-week one?
+### How long do arch exercises take to work?
 
-Twelve, if the arch is what you are after. A 2024 meta-analysis of short-foot training found that only programs longer than six weeks produced significant improvement in navicular drop; shorter ones showed no measurable effect. The six-week plan sits exactly at that boundary — long enough to train, not long enough for that finding to apply.
+Six weeks or more, going by the trials. In one randomised trial of flexible flat feet, a six-week program of short-foot, hip and stretching work changed arch measures more than control. For short-foot training alone, a 2024 meta-analysis found no significant effect overall; in a subgroup, only programs longer than six weeks improved navicular drop. More in [flat feet exercises](https://walkito.site/flat-feet-exercises/).
 
 ### Should I rest completely when my heel hurts?
 
-The 2023 clinical practice guideline advises against complete rest, which increases stiffness. Walkito modifies load rather than stopping it — on a high-pain day the session becomes three minutes of unloaded work, but it still happens.
+Walkito’s answer is to change the load rather than stop. The 2023 guideline includes education on modifying weight-bearing load in daily, work and sporting activity, graded E — theoretical rather than trial evidence. On a bad day, keep the stretches and drop the loaded work; in Walkito, a morning at 7/10 or more becomes about three minutes of seated work.
 
-### Do insoles and orthotics work?
+### Do insoles and orthotics help heel pain?
 
-The 2023 guideline grades orthotics B, with the qualifier that they should not be used in isolation. Walkito does not recommend them as a standalone fix and does not sell any. The same guideline grades therapeutic ultrasound A — do not use.
+Not on their own. The 2023 guideline recommends against orthotics as a stand-alone treatment for short-term pain relief (grade B) and says they may be used alongside other treatment (grade C, weak evidence). Walkito does not recommend them as a standalone answer and does not sell any. The full list is in [the heel pain guide](https://walkito.site/plantar-fasciitis-exercises/).
 
 ### Will the pain come back?
 
-Recurrence is common enough that Walkito does not stop at week twelve. After the program a maintenance phase keeps two sessions a week and retests every 28 days, to catch regression before it becomes pain again.
+It can, and Walkito does not promise it won’t. What it does is keep going when the pain stops: a reached goal moves to maintaining and keeps a place in the plan at a lower dose, and tests continue every 28 days once your first goal is reached, so a slide in your numbers is visible rather than guessed at.
 
 ### Does uneven walking mean I am injured?
 
-No. Walkito compares walking asymmetry only against your own baseline, never against a population norm, because none exists — a secondary analysis of a trial with more than 800 runners found gait asymmetry did not predict injury. The app will tell you your walking pattern has changed. It will never tell you what that means.
+Walkito never reads it that way. It compares your walking asymmetry, which the iPhone estimates, only against your own earlier readings, never against a population norm. It will tell you when your walking pattern has changed; it will never tell you what that means or that you are injured. If something feels wrong, that is a question for a clinician.
 
 ### Do I need to log pain every day for the plan to work?
 
-No, but the plan is only as responsive as what it knows. A logged morning is what lets it step back on a bad day; with nothing logged it runs the day the template prescribes.
+No, but the plan is only as responsive as what it knows. A logged morning is what lets it soften a bad day, and the pain-free mornings goal needs 14 mornings running at 1/10 or less, so an unlogged morning breaks that run. With nothing logged, the day runs as the week planned it.
 
 ## Not published
-There is no aggregate-user-outcome data on this site. It does not exist rather
-than being withheld.
+
+There is no aggregate user-outcome data on this site. It does not exist
+rather than being withheld.

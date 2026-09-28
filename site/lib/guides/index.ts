@@ -30,9 +30,17 @@ export function guideMetadata(guide: Guide): Metadata {
       siteName: SITE_NAME,
       locale: OG_LOCALE[guide.lang],
       type: 'article',
+      publishedTime: guide.published,
+      modifiedTime: guide.updated,
       // Stated rather than inherited: a page-level `openGraph` replaces the
       // layout's whole object, and the Russian and Spanish roots have no card
       // file of their own.
+      images: ['/opengraph-image'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${guide.title} | ${SITE_NAME}`,
+      description: guide.description,
       images: ['/opengraph-image'],
     },
   };

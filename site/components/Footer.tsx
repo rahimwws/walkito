@@ -24,6 +24,7 @@ export function Footer({ lang = 'en', page }: { lang?: Lang; page?: TranslatedPa
         <nav aria-label={c.guidesHeading}>
           <Link href={TRANSLATED.flatFeet[lang]}>{c.navFlatFeet}</Link>
           <Link href={TRANSLATED.heelPain[lang]}>{c.navHeelPain}</Link>
+          <Link href={TRANSLATED.about[lang]}>{c.navAbout}</Link>
           <Link href="/support/">{c.navSupport}</Link>
           <Link href="/privacy/">{c.navPrivacy}</Link>
           <Link href="/terms/">{c.navTerms}</Link>

@@ -2,10 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 import { anton } from '@/lib/fonts';
+import { SITE_URL } from '@/lib/site';
 
 import './globals.css';
 
 export const metadata: Metadata = {
+  // Without it the inherited social image resolves against localhost.
+  metadataBase: new URL(SITE_URL),
   title: 'Page not found | Walkito',
   robots: { index: false },
 };

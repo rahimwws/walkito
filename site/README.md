@@ -27,13 +27,13 @@ bun run dev       # http://localhost:3000
 bun run build     # static files in ./out
 ```
 
-Deploy is an upload of `out/` to `/var/www/walkito` on the droplet nginx
-serves it from (`rsync -az --delete out/ root@161.35.52.54:/var/www/walkito/`),
-then `node scripts/indexnow.mjs` so Bing re-crawls straight away.
+Deploy is `bun run deploy` (`scripts/deploy.mjs`): build, upload `out/` to
+`/var/www/walkito` on the droplet nginx serves it from, then IndexNow so Bing
+and Yandex re-crawl straight away.
 
-`public/google2e55515ad29a0837.html` and `public/BingSiteAuth.xml` prove
-ownership to Search Console and Bing Webmaster Tools (account
-rahimwws.me@gmail.com). They live in `public/` because `--delete` would wipe
+`public/google2e55515ad29a0837.html`, `public/BingSiteAuth.xml` and the
+`public/yandex_*.html` file prove ownership to Search Console, Bing Webmaster
+Tools and Yandex Webmaster (account rahimwws.me@gmail.com for the first two). They live in `public/` because `--delete` would wipe
 anything kept only on the server, and a property that loses its file loses
 verification.
 

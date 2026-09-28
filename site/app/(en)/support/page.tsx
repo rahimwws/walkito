@@ -36,38 +36,50 @@ export default function Support() {
 
         <p>
           Write to <a href="mailto:hello@walkito.app">hello@walkito.app</a>. Tell
-          us which day of the plan you are on and what the app did — that is
-          usually enough to work out what happened without a back-and-forth.
+          us what you were doing and what the app did — that is usually enough
+          to work out what happened without a back-and-forth.
         </p>
 
         <h2>The plan runs on dates, not attendance</h2>
         <p>
           Missing days does not put you behind, and there is nothing to make up.
-          Day 24 is whatever day 24 is, whether or not you were here for day 23.
-          If you have been away, open the app and carry on from today.
+          The week runs on dates, so a missed session is not moved to tomorrow
+          and there is no catch-up screen. If you have been away, open the app
+          and carry on from today.
+        </p>
+
+        <h2>Signing in and working offline</h2>
+        <p>
+          Setup signs you in with Apple, or with email and password for an
+          existing account, and needs a connection once. After that the daily
+          flow works offline, and what you log is copied to your Walkito account
+          whenever there is a connection. On a new phone or after a reinstall,
+          sign in with the same account and your plan comes back.
         </p>
 
         <h2>Notifications</h2>
         <p>
           One a day at most, five a week at most, nothing after 21:30. If you
           stop opening them the app sends fewer, and if you keep not opening them
-          it stops. You can turn them off entirely in iOS Settings → Walkito →
-          Notifications; nothing else in the app changes if you do.
+          it stops. You can turn them off entirely in Settings → Notifications →
+          Walkito; nothing else in the app changes if you do.
         </p>
 
         <h2>Health data</h2>
         <p>
-          Walkito reads steps, walking speed, walking asymmetry, sleep and
-          resting heart rate from Apple Health, and writes completed sessions
-          back. Every one of those is optional. Turn any of them off in iOS
-          Settings → Health → Data Access → Walkito and the signals that needed
-          it simply stop speaking — the plan still works.
+          Walkito reads steps, walking speed, walking asymmetry, flights
+          climbed, heart rate and resting heart rate, active energy, sleep and
+          workouts from Apple Health, and writes completed sessions back as
+          workouts and mindful minutes. These readings stay on the phone. Every
+          one of them is optional. Turn any of them off in Settings → Apps →
+          Health → Data Access &amp; Devices → Walkito and the signals that
+          needed it simply stop speaking — the plan still works.
         </p>
 
         <h2>Pain, and when to stop</h2>
         <p>
-          Walkito is a screening and exercise program. It is not a diagnosis and
-          not a treatment, and it cannot tell you what is wrong. If pain is
+          Walkito is an exercise program. It is not a diagnosis and not a
+          treatment, and it cannot tell you what is wrong. If pain is
           sharp, getting worse, or stopping you sleeping, see a clinician.
         </p>
 
@@ -81,9 +93,15 @@ export default function Support() {
 
         <h2>Deleting your data</h2>
         <p>
-          Deleting the app removes the plan, the pain log and every stored answer
-          with it. To remove a purchase record or a push token as well, write to{' '}
-          <a href="mailto:hello@walkito.app">hello@walkito.app</a>.
+          <b>Delete account</b>, at the bottom of your profile in the app,
+          deletes your account on Walkito’s server with everything copied there
+          — the plan, check-ins and pain log, sessions and test results, push
+          token, email and invite code — and then clears the phone. It cannot be
+          undone. Deleting the app on its own removes only the copy on the
+          phone: the copy on the server stays, and comes back when you sign in
+          again. To have it removed without the app, or to remove purchase
+          records at RevenueCat and analytics events at PostHog as well, write
+          to <a href="mailto:hello@walkito.app">hello@walkito.app</a>.
         </p>
       </main>
 

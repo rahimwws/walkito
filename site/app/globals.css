@@ -619,6 +619,68 @@ figure figcaption b {
   line-height: 1.55;
 }
 
+/* Who and when, right under the headline: the first thing a careful reader
+   (or a rater) checks on a health page, so it sits where they look first. */
+.prose .byline {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 6px 0 0;
+}
+
+.prose .byline a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--hairline);
+  text-underline-offset: 3px;
+}
+
+/* Key points. A tinted card rather than another list, because it is the
+   summary a skimmer reads instead of the page — and the lines an assistant is
+   most likely to quote, so each one has to stand on its own. */
+.prose .takeaways {
+  margin: 22px 0 30px;
+  padding: 18px 22px 8px;
+  background: rgba(139, 92, 246, 0.06);
+  border-radius: 16px;
+}
+
+.prose .takeaways h2 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--violet-deep);
+}
+
+.prose .faq h3 {
+  margin: 26px 0 6px;
+}
+
+.prose .related {
+  margin: 40px 0 10px;
+  padding-top: 24px;
+  border-top: 1px solid var(--hairline);
+}
+
+.prose .related ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prose .related li {
+  margin-bottom: 16px;
+}
+
+.prose .related a {
+  font-weight: 600;
+  display: block;
+}
+
+.prose .related span {
+  color: var(--muted);
+  font-size: 15px;
+}
+
 .prose .updated {
   color: var(--muted);
   font-size: 15px;

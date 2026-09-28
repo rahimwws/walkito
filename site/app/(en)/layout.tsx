@@ -2,9 +2,19 @@ import type { Metadata } from 'next';
 
 import { RootDocument } from '@/components/RootDocument';
 import { alternatesFor } from '@/lib/i18n';
-import { APPLE_APP_ID, SITE_NAME, SITE_URL } from '@/lib/site';
+import { APPLE_APP_ID, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
 
 import '../globals.css';
+
+/** "3, 5 or 10" — a list of options as a sentence says it. */
+const or = (xs: readonly number[]) => `${xs.slice(0, -1).join(', ')} or ${xs[xs.length - 1]}`;
+
+// The plan has no fixed length — it is built one week at a time around a goal —
+// so neither the title nor the description may count weeks. Numbers come from
+// `PROGRAM`, which is read out of the app.
+const DESCRIPTION = `Exercises for heel and foot pain in runners, built one week at a time around a goal: ${or(PROGRAM.sessionMinutes)} minutes a session, softer on bad mornings.`;
+const SOCIAL_TITLE = 'Heel pain from running? A plan that adapts every week | Walkito';
+const SOCIAL_DESCRIPTION = `Calf strength, stretching and balance work, ${or(PROGRAM.sessionMinutes)} minutes a session, built one week at a time and softer on bad mornings.`;
 
 /**
  * `metadataBase` first, because everything downstream depends on it.
@@ -20,12 +30,11 @@ export const metadata: Metadata = {
   title: {
     // The home page's title is this default, so it carries the query the
     // page is built for rather than the tagline.
-    default: 'Heel Pain Exercises for Runners — a 12-Week Program | Walkito',
+    default: 'Heel Pain Exercises for Runners — a Plan That Adapts | Walkito',
     // Every page supplies its own unique half; this appends the brand.
     template: `%s | ${SITE_NAME}`,
   },
-  description:
-    'A 12-week exercise program for heel and foot pain in runners: 3 to 8 minutes a day, a retest every two weeks, and a plan that steps back on bad mornings.',
+  description: DESCRIPTION,
   alternates: alternatesFor('home', 'en'),
   robots: {
     index: true,
@@ -45,8 +54,8 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'Heel pain from running? A 12-week program | Walkito',
-    description: 'Calf strength, stretching and balance work, 3 to 8 minutes a day, that steps back on bad mornings.',
+    title: SOCIAL_TITLE,
+    description: SOCIAL_DESCRIPTION,
     url: '/',
     siteName: SITE_NAME,
     locale: 'en_US',
@@ -58,8 +67,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Heel pain from running? A 12-week program | Walkito',
-    description: 'Calf strength, stretching and balance work, 3 to 8 minutes a day, that steps back on bad mornings.',
+    title: SOCIAL_TITLE,
+    description: SOCIAL_DESCRIPTION,
     images: ['/opengraph-image'],
   },
   // iOS shows a native install strip when this is present. Omitted until there

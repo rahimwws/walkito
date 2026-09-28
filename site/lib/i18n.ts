@@ -47,6 +47,12 @@ const en = {
   language: 'Language',
   sourcesHeading: 'Sources',
   guidesHeading: 'Guides',
+  updated: 'Updated',
+  byline: 'Walkito editorial team',
+  keyPoints: 'Key points',
+  faqHeading: 'Questions people ask',
+  relatedHeading: 'Related guides',
+  navAbout: 'About',
   notice:
     'Walkito is an exercise program. It does not diagnose and does not treat. If pain is sharp, getting worse, or stopping you sleeping, see a clinician.',
 };
@@ -70,6 +76,12 @@ const ru: Chrome = {
   language: 'Язык',
   sourcesHeading: 'Источники',
   guidesHeading: 'Гайды',
+  updated: 'Обновлено',
+  byline: 'Редакция Walkito',
+  keyPoints: 'Главное',
+  faqHeading: 'Частые вопросы',
+  relatedHeading: 'Похожие гайды',
+  navAbout: 'О проекте',
   notice:
     'Walkito — программа упражнений. Она не ставит диагноз и не лечит. Если боль острая, усиливается или мешает спать, обратитесь к врачу.',
 };
@@ -91,6 +103,12 @@ const es: Chrome = {
   language: 'Idioma',
   sourcesHeading: 'Fuentes',
   guidesHeading: 'Guías',
+  updated: 'Actualizado',
+  byline: 'Equipo editorial de Walkito',
+  keyPoints: 'Lo esencial',
+  faqHeading: 'Preguntas frecuentes',
+  relatedHeading: 'Guías relacionadas',
+  navAbout: 'Sobre Walkito',
   notice:
     'Walkito es un programa de ejercicios. No diagnostica ni trata. Si el dolor es agudo, va a peor o no te deja dormir, consulta a un profesional sanitario.',
 };
@@ -115,6 +133,11 @@ export const TRANSLATED = {
     en: '/plantar-fasciitis-exercises/',
     ru: '/ru/bol-v-pyatke-uprazhneniya/',
     es: '/es/ejercicios-fascitis-plantar/',
+  },
+  about: {
+    en: '/about/',
+    ru: '/ru/o-proekte/',
+    es: '/es/sobre-walkito/',
   },
 } as const satisfies Record<string, Record<Lang, string>>;
 

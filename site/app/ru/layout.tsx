@@ -1,11 +1,16 @@
 import type { Metadata } from 'next';
 
 import { RootDocument } from '@/components/RootDocument';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
 
 import '../globals.css';
 
 export { viewport } from '@/components/RootDocument';
+
+/** «3, 5 или 10 минут»: the noun agrees with the last number, so reread the
+ * sentence if `PROGRAM.sessionMinutes` changes. */
+const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
+const SESSIONS = `${MIN_A}, ${MIN_B} или ${MIN_C}`;
 
 /**
  * The Russian root. See the note on `app/(en)/layout.tsx` for why each
@@ -18,8 +23,8 @@ export const metadata: Metadata = {
     default: 'Упражнения при боли в пятке и плоскостопии для бегунов | Walkito',
     template: `%s | ${SITE_NAME}`,
   },
-  description:
-    'Программа упражнений на 12 недель при боли в пятке и стопе у бегунов: 3–8 минут в день, ретест каждые две недели и план, который сбавляет нагрузку в плохие утра.',
+  // No plan length: the plan is built a week at a time and has no last week.
+  description: `Упражнения при боли в пятке, пяточной шпоре и плоскостопии для бегунов: план, который строится по одной неделе вокруг вашей цели, и тренировки по ${SESSIONS} минут.`,
   robots: {
     index: true,
     follow: true,

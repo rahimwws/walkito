@@ -1,6 +1,11 @@
 import { ImageResponse } from 'next/og';
 
-import { SITE_NAME } from '@/lib/site';
+import { PROGRAM, SITE_NAME } from '@/lib/site';
+
+// The card quotes the session range rather than a length: the plan has no
+// fixed end, it is built a week at a time for as long as it is used.
+const MIN = Math.min(...PROGRAM.sessionMinutes);
+const MAX = Math.max(...PROGRAM.sessionMinutes);
 
 /**
  * The card every share, every DM and every AI answer preview shows.
@@ -19,7 +24,7 @@ export const dynamic = 'force-static';
 
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
-export const alt = 'Walkito — heel pain from running? A 12-week exercise program.';
+export const alt = `Walkito — heel pain from running? An exercise plan that adapts every week, ${MIN} to ${MAX} minutes a day.`;
 
 export default async function Image() {
   return new ImageResponse(
@@ -64,7 +69,9 @@ export default async function Image() {
             maxWidth: 900,
           }}
         >
-          A 12-week exercise program, 3 to 8 minutes a day.
+          {/* One string, not text with `{MIN}` holes: next/og lays each text
+              child out as its own flex item and trims the spaces between. */}
+          {`An exercise plan that adapts every week, ${MIN} to ${MAX} minutes a day.`}
         </div>
 
         <div

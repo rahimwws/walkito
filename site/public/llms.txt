@@ -1,69 +1,78 @@
 # Walkito
 
-> A 12-week exercise program for heel and foot pain in runners. The plan adapts
-> daily to logged pain and walking load, and measures progress with physical
-> retests every two weeks rather than by asking how you feel.
+> An exercise plan on iPhone for runners with heel pain (often linked to
+> plantar fasciitis or a heel spur), arch pain or flexible flat feet. It is built
+> one week at a time around a goal that can be measured, adapts each day to
+> the morning's pain, and checks progress with physical tests. It has no fixed
+> length: a goal that is reached moves to maintaining, and the next takes its
+> place.
 
-## Core pages
-- [Exercises for plantar fasciitis](https://walkito.site/plantar-fasciitis-exercises/):
-  heel raises and stretches with doses, what the 2023 guideline grades A and B,
-  and what it advises against
-- [Exercises for flat feet](https://walkito.site/flat-feet-exercises/): short-foot,
-  toe, balance and hip work for flexible flat feet, and how long the arch takes
-- [The 12-week program](https://walkito.site/program/): block structure,
-  session frequency, how the plan adapts, what the retests measure
-- [Evidence](https://walkito.site/science/): the trials and the 2023 clinical
-  guideline the program follows, with stated limitations
-- [Questions](https://walkito.site/faq/): session length, missed days, Apple
-  Health permissions, notifications, the streak
-- [Support](https://walkito.site/support/): notifications, Apple Health
-  permissions, subscriptions, deleting your data
-- [Privacy](https://walkito.site/privacy/): what stays on the device and what
-  leaves it
-- [Terms of use](https://walkito.site/terms/): the licence, App Store billing
-  and cancellation, health and safety, and what the app does not promise
+Walkito provides exercise programming. It does not diagnose and does not
+treat any condition. Pain that follows an injury, comes with numbness,
+tingling, swelling or warmth, wakes you at night, or is sharp or getting worse
+should be seen by a clinician.
+
+Last updated: 2026-09-28
+
+## Guides
+- [Plantar fasciitis exercises and stretches for heel pain](https://walkito.site/plantar-fasciitis-exercises/): Heel raises, plantar fascia and calf stretches for heel pain and morning heel pain, with starting doses and what the 2023 clinical guideline recommends.
+- [Flat feet exercises for fallen arches and arch pain](https://walkito.site/flat-feet-exercises/): Short-foot, toe, balance and hip exercises for flexible flat feet and fallen arches, with starting doses, what the trials found, and where arch pain fits.
+
+## The app and the evidence
+- [Home](https://walkito.site/): what Walkito is and how the plan works, in brief
+- [How the plan works](https://walkito.site/program/): the weekly plan, the goals, how
+  each day adapts, and what the tests measure
+- [Evidence](https://walkito.site/science/): the trials and the 2023 clinical guideline the
+  plan follows, with stated limitations
+- [Questions](https://walkito.site/faq/): sessions, goals, tests, Apple Health,
+  notifications, the streak, and the clinical questions people ask
+- [About Walkito](https://walkito.site/about/): What Walkito is, how its heel pain and flat feet guides are written and sourced, what the app does not do, and how to report a mistake.
+
+## Support and legal
+- [Support](https://walkito.site/support/): notifications, Apple Health permissions,
+  subscriptions, deleting your data
+- [Privacy](https://walkito.site/privacy/): what stays on the device and what leaves it
+- [Terms of use](https://walkito.site/terms/): the licence, App Store billing and
+  cancellation, health and safety, and what the app does not promise
 
 ## Other languages
-- Russian: [главная](https://walkito.site/ru/),
-  [боль в пятке](https://walkito.site/ru/bol-v-pyatke-uprazhneniya/),
-  [плоскостопие](https://walkito.site/ru/ploskostopie-uprazhneniya/)
-- Spanish: [inicio](https://walkito.site/es/),
-  [fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/),
-  [pie plano](https://walkito.site/es/ejercicios-pie-plano/)
+The home page, both guides and the About page are written in Russian and
+Spanish as well. The plan, evidence, FAQ and legal pages are English only.
+
+### Russian (Русский)
+- [Главная](https://walkito.site/ru/)
+- [Боль в пятке («пяточная шпора»): упражнения и что делать бегуну](https://walkito.site/ru/bol-v-pyatke-uprazhneniya/): Боль в пятке, которую зовут пяточной шпорой, и подошвенный фасциит: растяжка и подъёмы на носок с дозировками, рекомендации 2023 года и когда к врачу.
+- [Упражнения при плоскостопии: что делать, если болит свод стопы](https://walkito.site/ru/ploskostopie-uprazhneniya/): «Короткая стопа», пальцы, баланс и бедро при гибком плоскостопии: стартовые дозировки, что показали исследования и что делать, если свод болит при беге.
+- [О проекте Walkito](https://walkito.site/ru/o-proekte/)
+
+### Spanish (Español)
+- [Inicio](https://walkito.site/es/)
+- [Ejercicios y estiramientos para la fascitis plantar y el dolor de talón](https://walkito.site/es/ejercicios-fascitis-plantar/): Estiramientos y elevaciones para la fascitis plantar y el dolor de talón: dosis, por qué duele por la mañana, si puedes correr y qué dice la guía de 2023.
+- [Ejercicios para el pie plano y el dolor en el arco](https://walkito.site/es/ejercicios-pie-plano/): Pie corto, dedos, equilibrio y cadera para el pie plano flexible: dosis de inicio, cuánto tarda el arco en cambiar y qué hacer si el arco duele al correr.
+- [Sobre Walkito](https://walkito.site/es/sobre-walkito/)
 
 ## Key facts
-- Programme length: 12 weeks, six blocks of 14 days
-- Session length: 3 to 8 minutes; three strength days a week, one prescribed
-  rest day in seven
-- Retests every 14 days measure calf endurance, arch hold and single-leg
-  balance — 3 tests, 4 minutes
-- The plan steps back a level on a high-pain morning and returns when pain
-  settles; it never accelerates on a good day
-- A day counts as attended if pain was logged, a session was finished, or the
-  plan prescribed rest
-- iOS only. It reads Apple Health for steps, walking asymmetry, walking speed,
-  sleep and resting heart rate, all optional
-- Health data is summarised on the device and is never uploaded
+- No fixed length. The plan is built one week at a time around a focus goal; a goal that is reached moves to "maintaining" (kept up at a lower dose) and the next goal takes its place, for as long as the plan is used.
+- Five measured goals: easier mornings (morning pain at or under 1/10 for 14 days running); an arch hold of 60 seconds; 25 single-leg calf raises; single-leg balance for 30 seconds; a left/right difference under 10%.
+- A new user starts with at most three goals, pain first. The app does not ask whether a flat foot is flexible or rigid; the randomised trial of arch exercise was run on flexible flat feet, so if the arch stays flat even with no weight on the foot, check with a clinician before arch work.
+- Training days: 3, 5 or 7 a week. Sessions: 3, 5 or 10 minutes (default 5), each 2 to 4 exercises; the focus exercise is never cut.
+- Week one "settles in": nothing that loads the plantar fascia and nothing above level 2.
+- Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.
+- Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal's chain moves up one level at a time.
+- Tests: 3 physical measurements (calf raises to failure, arch hold, single-leg balance) in about 4 minutes, every 14 days until the first goal is reached, then every 28 days.
+- iOS only, in English, Russian and Spanish. Coming soon to the App Store.
+- Contact: hello@walkito.app
 
-## Notes
-Walkito provides exercise programming. It does not diagnose or treat any
-condition. Sharp or worsening pain should be seen by a clinician.
+## Key findings the plan follows
+- High-load strength training scored 29 points lower on the Foot Function Index than plantar-specific stretching at 3 months (randomised trial, n=48, 95% CI 6-52, p=0.016); at 12 months the two groups had converged, so the effect is faster improvement rather than a larger one.
+- In people with *flexible* flat feet, a six-week exercise programme in a randomised trial (n=52) improved navicular drop by 0.4 cm and arch angle by 16 degrees more than control. Rigid flat feet are structural and exercise will not change them.
+- In a 2024 meta-analysis, only short-foot programmes longer than six weeks improved navicular drop; shorter ones showed no measurable effect.
+- The 2023 JOSPT heel pain guideline, written for physical therapists, grades among its recommendations: manual therapy A, plantar fascia and calf stretching A, taping alongside other physical therapy A, night splints A, and resistance training B. It recommends against orthotics as a stand-alone treatment (grade B; alongside other treatment they may be used, grade C) and against adding therapeutic ultrasound to stretching (grade A). Its education advice (grade E, expert opinion) is to modify weight-bearing load.
 
 ## Full text
-The complete text of the program and questions pages is at
-https://walkito.site/llms-full.txt
+The text of every guide in all three languages, the plan, the evidence and
+the FAQ is at https://walkito.site/llms-full.txt
 
-## Key findings the program follows
-- High-load strength training scored 29 points lower on the Foot Function Index
-  than stretching at 3 months (95% CI 6-52, p=0.016); at 12 months the two had
-  converged, so the effect is speed rather than a larger result
-- A 6-week program improved navicular drop by 0.4 cm and arch angle by 16
-  degrees in people with *flexible* flat feet
-- Only short-foot programs longer than 6 weeks improved navicular drop
-- The 2023 JOSPT guideline grades stretching A, strength B, orthotics-alone B
-  (not in isolation), and therapeutic ultrasound A - do not use
-- Gait asymmetry did not predict injury in a trial of 800+ runners
-
-## Not yet published
-There is no aggregate-user-outcome data on this site. It does not exist rather
-than being withheld.
+## Not published
+There is no aggregate user-outcome data on this site. It does not exist
+rather than being withheld.

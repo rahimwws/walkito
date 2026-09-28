@@ -8,12 +8,32 @@ import { CHROME, TRANSLATED, type Lang } from '@/lib/i18n';
 import { PROGRAM, SITE_NAME } from '@/lib/site';
 
 /**
+ * The two pain thresholds the copy quotes, on the app's 0–10 scale.
+ *
+ * Not in `PROGRAM` because nothing else on the site states them. Read from the
+ * app: a morning counts towards the pain goal at `<= 1`
+ * (`src/entities/program/model/plan/goals.ts`), and in-session pain at
+ * `IN_SESSION_STOP` ends the session (`today.ts`). Same caveat as `PROGRAM`:
+ * change the plan, check these.
+ */
+const PAIN_GOAL_MAX = 1;
+const IN_SESSION_STOP = 6;
+
+const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
+const [DAYS_A, DAYS_B, DAYS_C] = PROGRAM.daysPerWeek;
+const { archHoldSeconds, calfRaises, balanceSeconds, gapPercent } = PROGRAM.goals;
+
+/**
  * The app itself, as schema.
  *
  * No `offers` and no `aggregateRating`, both deliberately. The price in the
  * brief was a number nobody checked against the store, and a rating block with
  * no ratings behind it is a manual-action risk rather than a shortcut — these
  * go in when there is a listing and real reviews to point at.
+ *
+ * No length either. The plan has none: it is built a week at a time and keeps
+ * going while the person uses it, so "an N-week program" would be a claim the
+ * app contradicts on the first day past N.
  */
 const APP = {
   '@context': 'https://schema.org',
@@ -21,12 +41,14 @@ const APP = {
   name: SITE_NAME,
   applicationCategory: 'HealthApplication',
   operatingSystem: 'iOS',
-  description: `A ${PROGRAM.weeks}-week exercise program for heel and foot pain in runners.`,
+  description:
+    'An exercise plan for heel and foot pain in runners, built one week at a time around a goal that can be measured.',
   availableLanguage: ['en', 'ru', 'es'],
   featureList: [
-    `Daily sessions of ${PROGRAM.sessionMinutesMin} to ${PROGRAM.sessionMinutesMax} minutes`,
-    'Plan adapts to logged pain and daily load',
-    `Retest assessments every ${PROGRAM.blockDays} days`,
+    `Sessions of ${MIN_A}, ${MIN_B} or ${MIN_C} minutes, on ${DAYS_A}, ${DAYS_B} or ${DAYS_C} days a week`,
+    'Each week built around one measurable focus goal; a goal reached moves to maintaining and the next takes its place',
+    'Each day adapts to morning pain, yesterday’s steps and last night’s sleep',
+    `Physical tests every ${PROGRAM.testEveryDays} days, then every ${PROGRAM.testEveryDaysAfterGoal} once the first goal is reached`,
   ],
 };
 
@@ -51,40 +73,42 @@ type HomeCopy = {
  * for the same reason. Real reviews go back in once the store has some.
  *
  * Until then the page shows what can be checked: three mechanisms, each with
- * the page that proves it. Every number comes from `PROGRAM`.
+ * the page that proves it — the week built around a goal, the day shaped by
+ * the morning, and the test that measures it. Every number comes from
+ * `PROGRAM` or the two thresholds above.
  */
 const COPY: Record<Lang, HomeCopy> = {
   en: {
     h1: 'Heel pain',
     h1Line2: 'from running?',
-    intro: `Walkito is a ${PROGRAM.weeks}-week exercise program for heel and foot pain in runners: ${PROGRAM.sessionMinutesMin} to ${PROGRAM.sessionMinutesMax} minutes a day of calf strength, stretching and balance work, a retest every ${PROGRAM.blockDays} days, and a plan that steps back on the mornings your heel says it should.`,
+    intro: `Walkito is an exercise plan for heel and foot pain in runners, built one week at a time around a goal you can measure: calf strength, stretching and balance work in sessions of ${MIN_A}, ${MIN_B} or ${MIN_C} minutes. Each morning the day adapts to how your heel feels, and when a goal is reached the next one takes its place.`,
     shotAlt: "Walkito on iPhone: the week as seven flames, today's check-in, and the day's tasks.",
     howHeading: 'How it works',
     how: [
       {
-        title: 'It steps back on bad mornings',
-        text: 'Log this morning’s heel pain in one tap. A high number shortens the session and drops a level; a long day on your feet takes the loaded work out. It never speeds up on a good day.',
+        title: 'A week at a time, around one goal',
+        text: `Each week centres on a goal you can measure: morning heel pain at ${PAIN_GOAL_MAX}/10 or less for ${PROGRAM.painFreeDays} days running, a ${archHoldSeconds}-second arch hold, ${calfRaises} single-leg calf raises, ${balanceSeconds} seconds of single-leg balance, or left and right within ${gapPercent}% of each other. Reach one and it moves to maintaining while the next takes its place.`,
         href: '/program/',
-        link: 'How the plan adapts',
+        link: 'How the plan works',
       },
       {
-        title: `A retest every ${PROGRAM.blockDays} days`,
-        text: `${PROGRAM.retestTests} physical tests in ${PROGRAM.retestMinutes} minutes — calf raises to failure, an arch hold, single-leg balance on both sides. Progress is measured, not guessed from how the week felt.`,
-        href: '/program/',
-        link: 'What the retests measure',
-      },
-      {
-        title: 'Built from the trials',
-        text: 'High-load calf strength and plantar-specific stretching, at the doses the published trials used and in the order the 2023 clinical guideline for heel pain recommends.',
+        title: `${MIN_A}, ${MIN_B} or ${MIN_C} minutes, set by the morning`,
+        text: `Log this morning’s heel pain in one tap. A painful morning, a big step count yesterday or a short night makes today’s session shorter or gentler; pain of ${IN_SESSION_STOP}/10 or more during a session ends it and steps the next two back. A bad day lowers the load rather than stopping the plan.`,
         href: '/science/',
         link: 'Read the evidence',
+      },
+      {
+        title: `A test every ${PROGRAM.testEveryDays} days, then every ${PROGRAM.testEveryDaysAfterGoal}`,
+        text: `${PROGRAM.retestTests} physical tests in about ${PROGRAM.retestMinutes} minutes — calf raises to failure, an arch hold, single-leg balance on both sides. Every ${PROGRAM.testEveryDays} days until your first goal is reached, then every ${PROGRAM.testEveryDaysAfterGoal}. Progress is measured, not guessed from how the week felt.`,
+        href: '/program/',
+        link: 'What the tests measure',
       },
     ],
     guidesHeading: 'Start with the exercises',
     guides: [
       {
         title: 'Exercises for plantar fasciitis',
-        text: 'Heel raises and stretches, with doses from the trials and what the 2023 guideline recommends.',
+        text: 'Heel raises and stretches, with Walkito’s starting doses and what the 2023 guideline recommends.',
       },
       {
         title: 'Exercises for flat feet',
@@ -95,34 +119,34 @@ const COPY: Record<Lang, HomeCopy> = {
   ru: {
     h1: 'Болит пятка',
     h1Line2: 'после бега?',
-    intro: `Walkito — программа упражнений на ${PROGRAM.weeks} недель при боли в пятке и стопе у бегунов: ${PROGRAM.sessionMinutesMin}–${PROGRAM.sessionMinutesMax} минут в день силовых упражнений для икр, растяжки и баланса, ретест каждые ${PROGRAM.blockDays} дней и план, который сбавляет нагрузку в те утра, когда пятка болит сильнее.`,
+    intro: `Walkito — план упражнений при боли в пятке и стопе у бегунов: силовые упражнения для икр, растяжка и баланс, ${MIN_A}, ${MIN_B} или ${MIN_C} минут за тренировку. План строится по одной неделе вокруг цели, которую можно измерить; каждое утро день подстраивается под то, как чувствует себя пятка, а достигнутую цель сменяет следующая.`,
     shotAlt: 'Walkito на iPhone: неделя в виде семи огоньков, утренняя отметка и задания на день.',
     howHeading: 'Как это работает',
     how: [
       {
-        title: 'Сбавляет нагрузку в плохие утра',
-        text: 'Отметьте утреннюю боль в пятке одним касанием. Высокая оценка делает тренировку короче и на уровень легче; долгий день на ногах убирает силовую часть. В хороший день план никогда не ускоряется.',
+        title: 'По неделе, вокруг одной цели',
+        text: `Каждая неделя строится вокруг цели, которую можно измерить: утренняя боль в пятке не выше ${PAIN_GOAL_MAX} из 10 ${PROGRAM.painFreeDays} дней подряд, удержание свода ${archHoldSeconds} секунд, ${calfRaises} подъёмов на носок на одной ноге, баланс на одной ноге ${balanceSeconds} секунд или разница между левой и правой стороной меньше ${gapPercent}%. Достигнутая цель переходит в поддержание, а её место занимает следующая.`,
         href: '/ru/bol-v-pyatke-uprazhneniya/',
         link: 'Упражнения при боли в пятке',
       },
       {
-        title: `Ретест каждые ${PROGRAM.blockDays} дней`,
-        text: `${PROGRAM.retestTests} физических теста за ${PROGRAM.retestMinutes} минуты — подъёмы на носок до отказа, удержание свода и баланс на одной ноге с обеих сторон. Прогресс измеряется, а не угадывается по ощущениям за неделю.`,
-        href: '/ru/ploskostopie-uprazhneniya/',
-        link: 'Упражнения при плоскостопии',
-      },
-      {
-        title: 'Основано на исследованиях',
-        text: 'Силовые упражнения для икр и растяжка подошвенной фасции — в дозировках из опубликованных исследований и в порядке, который рекомендуют клинические рекомендации 2023 года по боли в пятке.',
+        title: `${MIN_A}, ${MIN_B} или ${MIN_C} минут — в зависимости от утра`,
+        text: `Отметьте утреннюю боль в пятке одним касанием. Сильная боль с утра, много шагов накануне или короткий сон делают тренировку короче или мягче, а боль ${IN_SESSION_STOP} из 10 и выше во время тренировки завершает её и облегчает две следующие. В плохой день нагрузка снижается, а план не останавливается.`,
         href: '/science/',
         link: 'Исследования (на английском)',
+      },
+      {
+        title: `Тест каждые ${PROGRAM.testEveryDays} дней, затем каждые ${PROGRAM.testEveryDaysAfterGoal}`,
+        text: `${PROGRAM.retestTests} физических теста примерно за ${PROGRAM.retestMinutes} минуты — подъёмы на носок до отказа, удержание свода и баланс на одной ноге с обеих сторон. Каждые ${PROGRAM.testEveryDays} дней, пока не достигнута первая цель, затем каждые ${PROGRAM.testEveryDaysAfterGoal}. Прогресс измеряется, а не угадывается по ощущениям за неделю.`,
+        href: '/ru/ploskostopie-uprazhneniya/',
+        link: 'Упражнения при плоскостопии',
       },
     ],
     guidesHeading: 'Начните с упражнений',
     guides: [
       {
         title: 'Упражнения при боли в пятке',
-        text: 'Подъёмы на носок и растяжка — с дозировками из исследований и тем, что рекомендуют клинические рекомендации 2023 года.',
+        text: 'Подъёмы на носок и растяжка — со стартовыми дозировками Walkito и тем, что советуют клинические рекомендации 2023 года.',
       },
       {
         title: 'Упражнения при плоскостопии',
@@ -133,34 +157,34 @@ const COPY: Record<Lang, HomeCopy> = {
   es: {
     h1: '¿Dolor de talón',
     h1Line2: 'al correr?',
-    intro: `Walkito es un programa de ejercicios de ${PROGRAM.weeks} semanas para el dolor de talón y de pie en corredores: de ${PROGRAM.sessionMinutesMin} a ${PROGRAM.sessionMinutesMax} minutos al día de fuerza de pantorrilla, estiramientos y equilibrio, unas pruebas cada ${PROGRAM.blockDays} días y un plan que baja el ritmo las mañanas en que el talón lo pide.`,
+    intro: `Walkito es un plan de ejercicios para el dolor de talón y de pie en corredores: fuerza de pantorrilla, estiramientos y equilibrio en sesiones de ${MIN_A}, ${MIN_B} o ${MIN_C} minutos. Se construye semana a semana en torno a un objetivo que se puede medir; cada mañana el día se adapta a cómo está el talón y, cuando alcanzas un objetivo, el siguiente ocupa su lugar.`,
     shotAlt: 'Walkito en iPhone: la semana como siete llamas, el registro de hoy y las tareas del día.',
     howHeading: 'Cómo funciona',
     how: [
       {
-        title: 'Baja el ritmo en las mañanas malas',
-        text: 'Registra el dolor de talón de esta mañana con un toque. Un número alto acorta la sesión y baja un nivel; un día largo de pie quita el trabajo con carga. En un día bueno nunca acelera.',
+        title: 'Semana a semana, en torno a un objetivo',
+        text: `Cada semana gira en torno a un objetivo medible: dolor de talón por la mañana de ${PAIN_GOAL_MAX}/10 o menos durante ${PROGRAM.painFreeDays} días seguidos, sostener el arco ${archHoldSeconds} segundos, ${calfRaises} elevaciones de talón a una pierna, ${balanceSeconds} segundos de equilibrio a una pierna o menos de un ${gapPercent} % de diferencia entre izquierda y derecha. Al alcanzarlo pasa a mantenimiento y el siguiente ocupa su lugar.`,
         href: '/es/ejercicios-fascitis-plantar/',
         link: 'Ejercicios para la fascitis plantar',
       },
       {
-        title: `Pruebas cada ${PROGRAM.blockDays} días`,
-        text: `${PROGRAM.retestTests} pruebas físicas en ${PROGRAM.retestMinutes} minutos: elevaciones de talón hasta el fallo, sostener el arco y equilibrio a una pierna en los dos lados. El progreso se mide, no se adivina por cómo fue la semana.`,
-        href: '/es/ejercicios-pie-plano/',
-        link: 'Ejercicios para pie plano',
-      },
-      {
-        title: 'Basado en los ensayos',
-        text: 'Fuerza de pantorrilla con carga y estiramiento específico de la fascia, con las dosis de los ensayos publicados y en el orden que recomienda la guía clínica de 2023 para el dolor de talón.',
+        title: `${MIN_A}, ${MIN_B} o ${MIN_C} minutos, según la mañana`,
+        text: `Registra el dolor de talón de esta mañana con un toque. Una mañana con mucho dolor, muchos pasos ayer o una noche corta hacen la sesión de hoy más corta o más suave, y un dolor de ${IN_SESSION_STOP}/10 o más durante la sesión la termina y aligera las dos siguientes. Un mal día baja la carga sin detener el plan.`,
         href: '/science/',
         link: 'La evidencia (en inglés)',
+      },
+      {
+        title: `Pruebas cada ${PROGRAM.testEveryDays} días, luego cada ${PROGRAM.testEveryDaysAfterGoal}`,
+        text: `${PROGRAM.retestTests} pruebas físicas en unos ${PROGRAM.retestMinutes} minutos: elevaciones de talón hasta el fallo, sostener el arco y equilibrio a una pierna en los dos lados. Cada ${PROGRAM.testEveryDays} días hasta alcanzar el primer objetivo y después cada ${PROGRAM.testEveryDaysAfterGoal}. El progreso se mide, no se adivina por cómo fue la semana.`,
+        href: '/es/ejercicios-pie-plano/',
+        link: 'Ejercicios para pie plano',
       },
     ],
     guidesHeading: 'Empieza por los ejercicios',
     guides: [
       {
         title: 'Ejercicios para la fascitis plantar',
-        text: 'Elevaciones de talón y estiramientos, con las dosis de los ensayos y lo que recomienda la guía de 2023.',
+        text: 'Elevaciones de talón y estiramientos, con las dosis iniciales de Walkito y lo que recomienda la guía de 2023.',
       },
       {
         title: 'Ejercicios para pie plano',
@@ -193,8 +217,12 @@ export function Home({ lang }: { lang: Lang }) {
 
       <main>
         <section className="shell hero">
+          {/* The space is load-bearing. The span is a block, so on screen the
+              two lines break either way — but a crawler, a reader view or a
+              copied snippet reads the text nodes without CSS, and without it
+              the heading is "Heel painfrom running?". */}
           <h1>
-            {copy.h1}
+            {copy.h1}{' '}
             <span>{copy.h1Line2}</span>
           </h1>
           <p>{copy.intro}</p>
