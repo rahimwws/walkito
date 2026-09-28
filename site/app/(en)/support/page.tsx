@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 
 import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
+import { alternatesFor } from '@/lib/i18n';
+import { SUPPORT_EMAIL } from '@/lib/site';
 
 /**
  * The Support URL App Store Connect asks for.
@@ -9,17 +11,22 @@ import { Masthead } from '@/components/Masthead';
  * It has to answer real questions rather than point at a form: review rejects a
  * support page with no way to reach a person, and a user who found this from
  * the App Store listing is already having a problem.
+ *
+ * The notification limits are `MAX_PER_DAY`, `MAX_PER_WEEK`,
+ * `QUIET_FROM_MINUTES` and the pause in `entities/notifications/model/limits.ts`.
+ * The Russian and Spanish pages mirror this one.
  */
 export const metadata: Metadata = {
-  // The root template appends " | Walkito"; repeating it here produced
-  // "Support — Walkito | Walkito" in the tab and in every search result.
+  // The root template appends " | Walkito".
   title: 'Support',
   // Long enough that Google uses it rather than picking arbitrary text off the
   // page. Forty characters is an invitation for it to write your ad copy.
   description:
-    'Get help with Walkito: notifications, Apple Health permissions, subscriptions and refunds, and how to delete your data. Write to us and a person replies.',
-  alternates: { canonical: '/support' },
+    'Get help with Walkito: notifications, Apple Health permissions, subscriptions and the 12-week program, refunds, and how to delete your account. Write to us and a person replies.',
+  alternates: alternatesFor('support', 'en'),
 };
+
+const mail = <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>;
 
 export default function Support() {
   return (
@@ -35,9 +42,9 @@ export default function Support() {
         <p className="updated">Something off? Tell us. A person replies.</p>
 
         <p>
-          Write to <a href="mailto:hello@walkito.app">hello@walkito.app</a>. Tell
-          us which day of the plan you are on and what the app did — that is
-          usually enough to work out what happened without a back-and-forth.
+          Write to {mail}. A person replies, usually within 12 hours. Tell us
+          which day of the plan you are on and what the app did. That is usually
+          enough to work out what happened without a back-and-forth.
         </p>
 
         <h2>The plan runs on dates, not attendance</h2>
@@ -51,43 +58,62 @@ export default function Support() {
         <p>
           One a day at most, five a week at most, nothing after 21:30. If you
           stop opening them the app sends fewer, and if you keep not opening them
-          it stops. You can turn them off entirely in iOS Settings → Walkito →
-          Notifications; nothing else in the app changes if you do.
+          it pauses them for a month. You can turn them off entirely in iOS
+          Settings → Walkito → Notifications; nothing else in the app changes if
+          you do.
         </p>
 
         <h2>Health data</h2>
         <p>
-          Walkito reads steps, walking speed, walking asymmetry, sleep and
-          resting heart rate from Apple Health, and writes completed sessions
-          back. Every one of those is optional. Turn any of them off in iOS
-          Settings → Health → Data Access → Walkito and the signals that needed
-          it simply stop speaking — the plan still works.
+          Walkito reads steps, walking speed, walking asymmetry, flights climbed,
+          heart rate, resting heart rate, active energy, sleep and workouts from
+          Apple Health, and writes the sessions you finish back. Every one of
+          those is optional, and it’s processed on your phone and never uploaded
+          as data. Turn any of them
+          off in iOS Settings → Health → Data Access &amp; Devices → Walkito and
+          the parts that needed it simply go quiet. The plan still works.
         </p>
 
         <h2>Pain, and when to stop</h2>
         <p>
-          Walkito is a screening and exercise program. It is not a diagnosis and
-          not a treatment, and it cannot tell you what is wrong. If pain is
-          sharp, getting worse, or stopping you sleeping, see a clinician.
+          Walkito is an exercise program. It does not diagnose, and it cannot
+          tell you what is wrong. If pain is sharp, getting worse, or stopping you
+          sleeping, see a clinician.
         </p>
 
-        <h2>Subscriptions</h2>
+        <h2>Purchases</h2>
         <p>
-          Purchases are handled by the App Store. To cancel or request a refund,
-          use iOS Settings → your name → Subscriptions, or Apple’s{' '}
-          <a href="https://reportaproblem.apple.com">Report a Problem</a> page —
-          we cannot process refunds on Apple’s behalf.
+          There are two ways to pay, both through the App Store: a monthly
+          subscription that renews automatically, and the 12-week program, paid
+          once, which does not renew.
         </p>
+        <ul>
+          <li>
+            <b>Manage or cancel</b> a subscription in iOS Settings → your name →
+            Subscriptions. The 12-week program has nothing to cancel.
+          </li>
+          <li>
+            <b>Refunds</b> are handled by Apple. Use Apple’s{' '}
+            <a href="https://reportaproblem.apple.com">Report a Problem</a> page.
+            We cannot process refunds on Apple’s behalf.
+          </li>
+          <li>
+            <b>New phone?</b> Tap Restore Purchases in the app with the same
+            Apple ID. Your plan’s progress is stored on the old phone and does
+            not move over.
+          </li>
+        </ul>
 
-        <h2>Deleting your data</h2>
+        <h2>Deleting your account</h2>
         <p>
-          Deleting the app removes the plan, the pain log and every stored answer
-          with it. To remove a purchase record or a push token as well, write to{' '}
-          <a href="mailto:hello@walkito.app">hello@walkito.app</a>.
+          In the app, go to <b>Profile → Delete account</b>. That removes your
+          account from our server and clears everything Walkito stored on your
+          phone. Deleting the app alone does not remove your account. You can
+          also write to {mail} and we will delete it for you.
         </p>
       </main>
 
-      <Footer />
+      <Footer page="support" />
     </>
   );
 }

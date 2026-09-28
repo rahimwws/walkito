@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `Questions | ${SITE_NAME}`,
     description:
-      'Session length, missed days, Apple Health permissions, notifications and the streak — answered.',
+      'Session length, missed days, Apple Health permissions, notifications and the streak, answered.',
     url: '/faq',
     type: 'website',
   },
@@ -82,7 +82,7 @@ export default function Faq() {
         </div>
 
         <p className="notice">
-          Walkito is a screening and exercise program. It does not diagnose and
+          Walkito is an exercise program. It does not diagnose and
           does not treat. If pain is sharp, getting worse, or stopping you
           sleeping, see a clinician.
         </p>

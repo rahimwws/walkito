@@ -30,7 +30,7 @@ export type FaqEntry = {
 export const FAQ: readonly FaqEntry[] = [
   {
     q: 'How long is the Walkito program?',
-    a: 'Twelve weeks — 84 days, run as six blocks of fourteen. There is also a six-week version of the same structure at three blocks. After the twelve weeks the plan moves into maintenance rather than ending.',
+    a: 'Twelve weeks: 84 days, run as six blocks of fourteen. There is also a six-week version of the same structure at three blocks. After the twelve weeks the plan moves into maintenance rather than ending.',
   },
   {
     q: 'How long is a daily session?',
@@ -50,23 +50,23 @@ export const FAQ: readonly FaqEntry[] = [
   },
   {
     q: 'What do the retests measure?',
-    a: 'Three things, every fourteen days, in about four minutes: calf raises to failure, an arch hold, and single-leg balance timed on both sides. The gap between your two sides is the figure worth watching. Nothing else moves your level — not a streak, and not how the sessions felt.',
+    a: 'Three things, every fourteen days, in about four minutes: calf raises to failure, an arch hold, and single-leg balance timed on both sides. The gap between your two sides is the figure worth watching. Nothing else moves your level: not a streak, and not how the sessions felt.',
   },
   {
     q: 'Do I need an Apple Watch?',
-    a: 'No. The signals Walkito relies on — step count, walking speed and walking asymmetry — come from the iPhone itself. A watch adds sleep and resting heart rate, and without one the features that need those simply stay quiet.',
+    a: 'No. The signals Walkito relies on (step count, walking speed and walking asymmetry) come from the iPhone itself. A watch adds sleep and resting heart rate, and without one the features that need those simply stay quiet.',
   },
   {
     q: 'Does Walkito work offline?',
-    a: 'Yes. The plan, the pain log and the whole history live on the device, and there is no account to sign into. Nothing in the daily flow needs a network connection.',
+    a: 'Yes. The plan, the pain log and the whole history live on the device. Nothing in the daily flow needs a network connection.',
   },
   {
     q: 'Is my health data uploaded anywhere?',
-    a: 'No. Apple Health data is read on the device and summarised there, and it never leaves the phone. The only things that leave are a subscription status, and a notification token if you turn notifications on.',
+    a: 'No. Apple Health data is read on the device and summarised there, and it never leaves the phone. Your pain log stays there too. What does leave (usage analytics, your account, purchases) is listed on the privacy page, and none of it is health data.',
   },
   {
     q: 'Which Apple Health permissions does Walkito ask for?',
-    a: 'Walking asymmetry, walking speed, step count, resting heart rate and sleep analysis to read, and workouts and mindful minutes to write. Every one is optional and can be withdrawn in iOS Settings; the plan keeps working without them.',
+    a: 'Step count, walking speed, walking asymmetry, flights climbed, resting heart rate, heart rate, active energy, sleep analysis and workouts to read, and workouts and mindful minutes to write. Every one is optional and can be withdrawn in iOS Settings; the plan keeps working without them.',
   },
   {
     q: 'How many notifications will I get?',
@@ -82,7 +82,7 @@ export const FAQ: readonly FaqEntry[] = [
   },
   {
     q: 'What happens to my streak if I have a bad week?',
-    a: 'You earn one freeze a week and can hold two at a time, and a broken streak can be restored within 48 hours. A lost streak is never shown as a failure — the app offers to put it back, and if you decline the number simply starts again.',
+    a: 'You earn one freeze a week and can hold two at a time, and a broken streak can be restored within 48 hours. A lost streak is never shown as a failure. The app offers to put it back, and if you decline the number simply starts again.',
   },
   {
     q: 'Is Walkito available on Android?',
@@ -94,7 +94,7 @@ export const FAQ: readonly FaqEntry[] = [
   },
   {
     q: 'Can Walkito tell me what is wrong with my foot?',
-    a: 'No. Walkito is a screening and exercise program. It does not diagnose and it does not treat, and it cannot identify a condition. Pain that is sharp, getting worse, or stopping you sleeping should be seen by a clinician.',
+    a: 'No. Walkito is an exercise program. It does not diagnose and it does not treat, and it cannot identify a condition. Pain that is sharp, getting worse, or stopping you sleeping should be seen by a clinician.',
   },
   {
     q: 'How long before I notice a difference?',
@@ -110,15 +110,15 @@ export const FAQ: readonly FaqEntry[] = [
   },
   {
     q: 'Should I choose the six-week plan or the twelve-week one?',
-    a: 'Twelve, if the arch is what you are after. A 2024 meta-analysis of short-foot training found that only programs longer than six weeks produced significant improvement in navicular drop; shorter ones showed no measurable effect. The six-week plan sits exactly at that boundary — long enough to train, not long enough for that finding to apply.',
+    a: 'Twelve, if the arch is what you are after. A 2024 meta-analysis of short-foot training found that only programs longer than six weeks produced significant improvement in navicular drop; shorter ones showed no measurable effect. The six-week plan sits exactly at that boundary: long enough to train, not long enough for that finding to apply.',
   },
   {
     q: 'Should I rest completely when my heel hurts?',
-    a: 'The 2023 clinical practice guideline advises against complete rest, which increases stiffness. Walkito modifies load rather than stopping it — on a high-pain day the session becomes three minutes of unloaded work, but it still happens.',
+    a: 'The 2023 clinical practice guideline advises against complete rest, which increases stiffness. Walkito modifies load rather than stopping it. On a high-pain day the session becomes three minutes of unloaded work, but it still happens.',
   },
   {
     q: 'Do insoles and orthotics work?',
-    a: 'The 2023 guideline grades orthotics B, with the qualifier that they should not be used in isolation. Walkito does not recommend them as a standalone fix and does not sell any. The same guideline grades therapeutic ultrasound A — do not use.',
+    a: 'The 2023 guideline grades orthotics B, with the qualifier that they should not be used in isolation. Walkito does not recommend them as a standalone answer and does not sell any. The same guideline grades therapeutic ultrasound A: do not use.',
   },
   {
     q: 'Will the pain come back?',
@@ -126,7 +126,7 @@ export const FAQ: readonly FaqEntry[] = [
   },
   {
     q: 'Does uneven walking mean I am injured?',
-    a: 'No. Walkito compares walking asymmetry only against your own baseline, never against a population norm, because none exists — a secondary analysis of a trial with more than 800 runners found gait asymmetry did not predict injury. The app will tell you your walking pattern has changed. It will never tell you what that means.',
+    a: 'No. Walkito compares walking asymmetry only against your own baseline, never against a population norm, because none exists. A secondary analysis of a trial with more than 800 runners found gait asymmetry did not predict injury. The app will tell you your walking pattern has changed. It will never tell you what that means.',
   },
   {
     q: 'Do I need to log pain every day for the plan to work?',

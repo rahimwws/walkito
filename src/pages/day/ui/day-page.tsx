@@ -29,6 +29,7 @@ import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useLanguage, useT, type Key, type Language } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { ActionButton } from '@/shared/ui/action-button';
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 /**
  * "Tue, Aug 12" — enough to place a day without spelling out a year.
@@ -101,7 +102,7 @@ export function DayPage() {
   }
 
   return (
-    <View style={sheet}>
+    <View style={sheet} {...REPLAY_MASK}>
       {day.checkpoint ? (
         <CheckpointBody day={day} status={status} retest={stored} />
       ) : (

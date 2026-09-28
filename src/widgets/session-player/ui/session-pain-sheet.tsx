@@ -5,6 +5,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 export type SessionPainSheetProps = {
   visible: boolean;
@@ -38,7 +39,7 @@ export function SessionPainSheet({ visible, onPick, onCancel }: SessionPainSheet
   if (!visible) return null;
 
   return (
-    <View style={StyleSheet.absoluteFill}>
+    <View style={StyleSheet.absoluteFill} {...REPLAY_MASK}>
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={t('widgets.painClose')}

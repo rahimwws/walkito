@@ -4,10 +4,12 @@
  * The app ships in English, Russian and Spanish, so the site does too — and the
  * Russian and Spanish results for "flat feet exercises" are far thinner than
  * the English ones, which makes them the cheapest first page a new domain can
- * reach. Only the home page and the guides are translated. The program,
- * evidence, FAQ and legal pages stay English: they carry clinical figures and
- * legal wording, and a machine-quality translation of either is worse than an
- * honest English page.
+ * reach. The home page, the guides and the three pages App Store review reads
+ * (support, privacy, terms) are translated. The program, evidence and FAQ
+ * pages stay English: they carry clinical figures, and a machine-quality
+ * translation of those is worse than an honest English page. Where a legal
+ * translation and the English differ, the English applies, and each
+ * translated legal page says so.
  *
  * Typed off English like the app's catalogue: a key missing in Russian or
  * Spanish fails `tsc`.
@@ -71,7 +73,7 @@ const ru: Chrome = {
   sourcesHeading: 'Источники',
   guidesHeading: 'Гайды',
   notice:
-    'Walkito — программа упражнений. Она не ставит диагноз и не лечит. Если боль острая, усиливается или мешает спать, обратитесь к врачу.',
+    'Walkito: программа упражнений. Она не ставит диагноз и не лечит. Если боль острая, усиливается или мешает спать, обратитесь к врачу.',
 };
 
 const es: Chrome = {
@@ -116,6 +118,9 @@ export const TRANSLATED = {
     ru: '/ru/bol-v-pyatke-uprazhneniya/',
     es: '/es/ejercicios-fascitis-plantar/',
   },
+  support: { en: '/support/', ru: '/ru/podderzhka/', es: '/es/soporte/' },
+  privacy: { en: '/privacy/', ru: '/ru/konfidentsialnost/', es: '/es/privacidad/' },
+  terms: { en: '/terms/', ru: '/ru/usloviya/', es: '/es/terminos/' },
 } as const satisfies Record<string, Record<Lang, string>>;
 
 export type TranslatedPage = keyof typeof TRANSLATED;

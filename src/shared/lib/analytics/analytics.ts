@@ -60,7 +60,12 @@ function posthog(): PostHog | null {
         // and an email, and neither belongs in a recording.
         maskAllTextInputs: true,
         // Images stay visible: they are illustrations and exercise art, and a
-        // replay of this app with its pictures blanked out shows nothing.
+        // replay of this app with its pictures blanked out shows nothing. No
+        // image in the app shows anything about the user.
+        //
+        // Pain and Apple Health data are hidden screen by screen instead, with
+        // `ReplayMask` from `@/shared/ui/replay-mask`. The privacy policy
+        // promises it: a new screen that shows either must be wrapped.
         maskAllImages: false,
         captureLog: false,
       },

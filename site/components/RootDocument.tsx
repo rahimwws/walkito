@@ -12,7 +12,7 @@ const ORGANISATION = {
   url: SITE_URL,
   logo: `${SITE_URL}/icon.png`,
   description:
-    'A 12-week exercise program for heel and foot pain in runners, built from published rehabilitation protocols.',
+    'A 12-week exercise program for heel and foot pain, built from published rehabilitation protocols.',
 };
 
 /**

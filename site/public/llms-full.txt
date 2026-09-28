@@ -1,6 +1,6 @@
-# Walkito — full text
+# Walkito: full text
 
-> A 12-week exercise program for heel and foot pain in runners. The plan adapts
+> A 12-week exercise program for heel and foot pain. The plan adapts
 > daily to logged pain and walking load, and measures progress with physical
 > retests every two weeks rather than by asking how you feel.
 
@@ -15,11 +15,11 @@ have one. Every 14 days the plan stops and measures you with 3 physical tests
 rather than asking how you feel.
 
 Three strength days carry the load. Mobility and balance days sit between them,
-and one day in seven is rest the plan assigns rather than rest you take — a
+and one day in seven is rest the plan assigns rather than rest you take. A
 prescribed rest day counts as showing up, and never breaks a streak.
 
 The morning pain you log decides the session. Report a bad morning and the plan
-steps back a level and gets shorter — three minutes, sitting down — instead of
+steps back a level and gets shorter (three minutes, sitting down) instead of
 asking for the same work. The plan never accelerates on a good day; it only
 walks back and then returns.
 
@@ -58,7 +58,7 @@ baseline, never a population norm.
 
 ### How long is the Walkito program?
 
-Twelve weeks — 84 days, run as six blocks of fourteen. There is also a six-week version of the same structure at three blocks. After the twelve weeks the plan moves into maintenance rather than ending.
+Twelve weeks: 84 days, run as six blocks of fourteen. There is also a six-week version of the same structure at three blocks. After the twelve weeks the plan moves into maintenance rather than ending.
 
 ### How long is a daily session?
 
@@ -78,23 +78,23 @@ Yes. Logging a morning pain of seven or higher makes the same day step back one 
 
 ### What do the retests measure?
 
-Three things, every fourteen days, in about four minutes: calf raises to failure, an arch hold, and single-leg balance timed on both sides. The gap between your two sides is the figure worth watching. Nothing else moves your level — not a streak, and not how the sessions felt.
+Three things, every fourteen days, in about four minutes: calf raises to failure, an arch hold, and single-leg balance timed on both sides. The gap between your two sides is the figure worth watching. Nothing else moves your level: not a streak, and not how the sessions felt.
 
 ### Do I need an Apple Watch?
 
-No. The signals Walkito relies on — step count, walking speed and walking asymmetry — come from the iPhone itself. A watch adds sleep and resting heart rate, and without one the features that need those simply stay quiet.
+No. The signals Walkito relies on (step count, walking speed and walking asymmetry) come from the iPhone itself. A watch adds sleep and resting heart rate, and without one the features that need those simply stay quiet.
 
 ### Does Walkito work offline?
 
-Yes. The plan, the pain log and the whole history live on the device, and there is no account to sign into. Nothing in the daily flow needs a network connection.
+Yes. The plan, the pain log and the whole history live on the device. Nothing in the daily flow needs a network connection.
 
 ### Is my health data uploaded anywhere?
 
-No. Apple Health data is read on the device and summarised there, and it never leaves the phone. The only things that leave are a subscription status, and a notification token if you turn notifications on.
+No. Apple Health data is read on the device and summarised there, and it never leaves the phone. Your pain log stays there too. What does leave (usage analytics, your account, purchases) is listed on the privacy page, and none of it is health data.
 
 ### Which Apple Health permissions does Walkito ask for?
 
-Walking asymmetry, walking speed, step count, resting heart rate and sleep analysis to read, and workouts and mindful minutes to write. Every one is optional and can be withdrawn in iOS Settings; the plan keeps working without them.
+Step count, walking speed, walking asymmetry, flights climbed, resting heart rate, heart rate, active energy, sleep analysis and workouts to read, and workouts and mindful minutes to write. Every one is optional and can be withdrawn in iOS Settings; the plan keeps working without them.
 
 ### How many notifications will I get?
 
@@ -110,7 +110,7 @@ The streak counts attention, not completion. A day is green if you logged your m
 
 ### What happens to my streak if I have a bad week?
 
-You earn one freeze a week and can hold two at a time, and a broken streak can be restored within 48 hours. A lost streak is never shown as a failure — the app offers to put it back, and if you decline the number simply starts again.
+You earn one freeze a week and can hold two at a time, and a broken streak can be restored within 48 hours. A lost streak is never shown as a failure. The app offers to put it back, and if you decline the number simply starts again.
 
 ### Is Walkito available on Android?
 
@@ -122,7 +122,7 @@ Maintenance: two sessions a week of about eight minutes, with a checkpoint every
 
 ### Can Walkito tell me what is wrong with my foot?
 
-No. Walkito is a screening and exercise program. It does not diagnose and it does not treat, and it cannot identify a condition. Pain that is sharp, getting worse, or stopping you sleeping should be seen by a clinician.
+No. Walkito is an exercise program. It does not diagnose and it does not treat, and it cannot identify a condition. Pain that is sharp, getting worse, or stopping you sleeping should be seen by a clinician.
 
 ### How long before I notice a difference?
 
@@ -138,15 +138,15 @@ For flexible flat feet, where the arch reappears when the foot is lifted off the
 
 ### Should I choose the six-week plan or the twelve-week one?
 
-Twelve, if the arch is what you are after. A 2024 meta-analysis of short-foot training found that only programs longer than six weeks produced significant improvement in navicular drop; shorter ones showed no measurable effect. The six-week plan sits exactly at that boundary — long enough to train, not long enough for that finding to apply.
+Twelve, if the arch is what you are after. A 2024 meta-analysis of short-foot training found that only programs longer than six weeks produced significant improvement in navicular drop; shorter ones showed no measurable effect. The six-week plan sits exactly at that boundary: long enough to train, not long enough for that finding to apply.
 
 ### Should I rest completely when my heel hurts?
 
-The 2023 clinical practice guideline advises against complete rest, which increases stiffness. Walkito modifies load rather than stopping it — on a high-pain day the session becomes three minutes of unloaded work, but it still happens.
+The 2023 clinical practice guideline advises against complete rest, which increases stiffness. Walkito modifies load rather than stopping it. On a high-pain day the session becomes three minutes of unloaded work, but it still happens.
 
 ### Do insoles and orthotics work?
 
-The 2023 guideline grades orthotics B, with the qualifier that they should not be used in isolation. Walkito does not recommend them as a standalone fix and does not sell any. The same guideline grades therapeutic ultrasound A — do not use.
+The 2023 guideline grades orthotics B, with the qualifier that they should not be used in isolation. Walkito does not recommend them as a standalone answer and does not sell any. The same guideline grades therapeutic ultrasound A: do not use.
 
 ### Will the pain come back?
 
@@ -154,7 +154,7 @@ Recurrence is common enough that Walkito does not stop at week twelve. After the
 
 ### Does uneven walking mean I am injured?
 
-No. Walkito compares walking asymmetry only against your own baseline, never against a population norm, because none exists — a secondary analysis of a trial with more than 800 runners found gait asymmetry did not predict injury. The app will tell you your walking pattern has changed. It will never tell you what that means.
+No. Walkito compares walking asymmetry only against your own baseline, never against a population norm, because none exists. A secondary analysis of a trial with more than 800 runners found gait asymmetry did not predict injury. The app will tell you your walking pattern has changed. It will never tell you what that means.
 
 ### Do I need to log pain every day for the plan to work?
 

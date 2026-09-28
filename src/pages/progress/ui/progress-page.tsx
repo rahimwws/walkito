@@ -33,6 +33,7 @@ import { useMinimizeOnScroll } from '@/shared/ui/glass-tabs';
 import { HeaderActions } from '@/shared/ui/header-actions';
 import { SegmentedControl } from '@/shared/ui/segmented-control';
 import { IntroReveal } from '@/shared/ui/splash';
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 import { progressBrief } from '../model/brief-copy';
 import { PerformanceCard } from './performance-card';
@@ -235,7 +236,7 @@ export function ProgressPage() {
   })();
 
   return (
-    <View style={styles.screen}>
+    <View style={styles.screen} {...REPLAY_MASK}>
       {/* No wash here, unlike Home. Progress opens with a sentence carrying a
           coloured value — the trend, green or red — and a violet gradient
           behind it argues with the one colour on the screen that means

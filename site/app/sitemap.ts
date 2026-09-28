@@ -29,7 +29,7 @@ export const dynamic = 'force-static';
  */
 function translated(
   page: TranslatedPage,
-  changeFrequency: 'weekly' | 'monthly',
+  changeFrequency: 'weekly' | 'monthly' | 'yearly',
   priority: number,
 ): MetadataRoute.Sitemap {
   const paths = TRANSLATED[page];
@@ -56,8 +56,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/program/`, lastModified: BUILT_AT, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${SITE_URL}/science/`, lastModified: BUILT_AT, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${SITE_URL}/faq/`, lastModified: BUILT_AT, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${SITE_URL}/support/`, lastModified: BUILT_AT, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${SITE_URL}/privacy/`, lastModified: BUILT_AT, changeFrequency: 'yearly', priority: 0.3 },
-    { url: `${SITE_URL}/terms/`, lastModified: BUILT_AT, changeFrequency: 'yearly', priority: 0.3 },
+    ...translated('support', 'monthly', 0.5),
+    ...translated('privacy', 'yearly', 0.3),
+    ...translated('terms', 'yearly', 0.3),
   ];
 }

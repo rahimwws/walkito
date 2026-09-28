@@ -58,8 +58,8 @@ export function Masthead({ lang = 'en' }: { lang?: Lang }) {
             <Link href={TRANSLATED.heelPain[lang]}>{c.navHeelPain}</Link>
           </>
         )}
-        <Link href="/support/">{c.navSupport}</Link>
-        <Link href="/privacy/">{c.navPrivacy}</Link>
+        <Link href={TRANSLATED.support[lang]}>{c.navSupport}</Link>
+        <Link href={TRANSLATED.privacy[lang]}>{c.navPrivacy}</Link>
       </nav>
 
       {href ? (

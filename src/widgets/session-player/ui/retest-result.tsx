@@ -6,6 +6,7 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { DeltaLabel, TickBar } from '@/shared/ui/meter';
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 const ZONE_KEY: Record<ZoneKey, Key> = {
   calf: 'pages.program.zoneCalf',
@@ -65,7 +66,7 @@ export function RetestResult({ retest, goalLine }: RetestResultProps) {
   const first = retest.rows.every((row) => row.from === row.to);
 
   return (
-    <View style={styles.wrap}>
+    <View style={styles.wrap} {...REPLAY_MASK}>
       {goalLine != null && (
         <Tile glass={glass} tint={meter.glassTint} fallback={meter.solidFallback}>
           <Text style={[styles.eyebrow, { color: meter.label }]}>{t('widgets.retestYourGoal')}</Text>

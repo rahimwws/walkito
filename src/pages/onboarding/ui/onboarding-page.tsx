@@ -41,6 +41,7 @@ import { setPersonOnce, track, type AcquisitionSource } from '@/shared/lib/analy
 import { NoteSheet } from '@/shared/ui/note-sheet';
 import { Glow } from '@/shared/ui/glow';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 import { TESTIMONIAL_COUNT } from '../config/testimonials';
 import { chose } from '../model/answers';
@@ -98,6 +99,24 @@ const BLURB_DELAY_MS = 220;
 type MeasureAnswer = { unit: string; fields: Record<string, string> };
 type Answer = string | string[] | MeasureAnswer;
 type Answers = Record<string, Answer>;
+
+/**
+ * Steps hidden from session recordings: they ask about the body, the pain or
+ * Apple Health, or show the answers back. The privacy policy promises that
+ * none of this appears in a replay. `collapsable` stays false on every step so
+ * toggling the mask never changes whether the view exists natively.
+ */
+const UNRECORDED_STEPS: ReadonlySet<string> = new Set([
+  'sex',
+  'age',
+  'body',
+  'size',
+  'pain',
+  'side',
+  'outlook',
+  'plan',
+  'health',
+]);
 
 function seedMeasure(step: Extract<OnboardingStep, { kind: 'measure' }>): MeasureAnswer {
   const unit = step.units[0];
@@ -711,7 +730,9 @@ const CONFIRM_MS = 900;
         </View>
       )}
 
-      <Animated.View style={[styles.body, questionStyle]}>
+      <Animated.View
+        style={[styles.body, questionStyle]}
+        {...(UNRECORDED_STEPS.has(step.key) ? REPLAY_MASK : { collapsable: false })}>
         {/* The intro owns its whole canvas; every other screen shares the
             same heading block so the eye never has to re-find the question. */}
         {step.kind === 'intro' ? (

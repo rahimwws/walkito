@@ -26,9 +26,9 @@ if (entries.length !== declared) {
   );
 }
 
-const out = `# Walkito — full text
+const out = `# Walkito: full text
 
-> A 12-week exercise program for heel and foot pain in runners. The plan adapts
+> A 12-week exercise program for heel and foot pain. The plan adapts
 > daily to logged pain and walking load, and measures progress with physical
 > retests every two weeks rather than by asking how you feel.
 
@@ -43,11 +43,11 @@ have one. Every 14 days the plan stops and measures you with 3 physical tests
 rather than asking how you feel.
 
 Three strength days carry the load. Mobility and balance days sit between them,
-and one day in seven is rest the plan assigns rather than rest you take — a
+and one day in seven is rest the plan assigns rather than rest you take. A
 prescribed rest day counts as showing up, and never breaks a streak.
 
 The morning pain you log decides the session. Report a bad morning and the plan
-steps back a level and gets shorter — three minutes, sitting down — instead of
+steps back a level and gets shorter (three minutes, sitting down) instead of
 asking for the same work. The plan never accelerates on a good day; it only
 walks back and then returns.
 

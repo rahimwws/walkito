@@ -38,6 +38,7 @@ import { useT, type Key } from '@/shared/lib/i18n';
 import { PROGRAM_EASING, PROGRAM_MS } from '@/shared/lib/program';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
 import { PrimaryButton } from '@/shared/ui/primary-button';
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import { SessionView } from '@/widgets/session-player';
@@ -185,7 +186,7 @@ export function PainCheck({ onLogged }: PainCheckProps) {
 
   return (
     <>
-      <View style={styles.wrap}>
+      <View style={styles.wrap} {...REPLAY_MASK}>
         <View style={styles.stage}>
           {CARDS.map((card) => (
             <PainCard
@@ -454,7 +455,7 @@ function Sheet({
   };
 
   return (
-    <View style={[styles.sheetRoot, { backgroundColor: colors.background }]}>
+    <View style={[styles.sheetRoot, { backgroundColor: colors.background }]} {...REPLAY_MASK}>
       <Animated.View
         style={[
           styles.sheet,

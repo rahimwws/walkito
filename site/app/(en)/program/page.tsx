@@ -43,7 +43,7 @@ const HOW_TO = {
   '@type': 'HowTo',
   name: 'The Walkito 12-week program',
   description:
-    'A twelve-week exercise program for heel and foot pain in runners, run in six blocks of fourteen days.',
+    'A twelve-week exercise program for heel and foot pain, run in six blocks of fourteen days.',
   totalTime: 'P84D',
   step: [
     {
@@ -100,15 +100,15 @@ export default function Program() {
         <p>
           Three strength days carry the load. Mobility and balance days sit
           between them, and one day in seven is rest the plan assigns rather
-          than rest you take — a prescribed rest day counts as showing up, and
+          than rest you take. A prescribed rest day counts as showing up, and
           never breaks a streak.
         </p>
 
         <h2>It changes when you do</h2>
         <p>
           The morning pain you log decides the session. Report a bad morning and
-          the plan steps back a level and gets shorter — three minutes, sitting
-          down — instead of asking for the same work. Report a long day on your
+          the plan steps back a level and gets shorter (three minutes, sitting
+          down) instead of asking for the same work. Report a long day on your
           feet and the loaded work comes out. The plan never accelerates on a
           good day; it only walks back and then returns.
         </p>
@@ -118,7 +118,7 @@ export default function Program() {
           {PROGRAM.retestTests} measurements, {PROGRAM.retestMinutes} minutes:
           calf raises to failure, an arch hold, and single-leg balance timed on
           both sides. The gap between your two sides is the figure worth
-          watching. Nothing else moves a level — not a streak, and not how the
+          watching. Nothing else moves a level: not a streak, and not how the
           sessions felt.
         </p>
 
@@ -132,7 +132,7 @@ export default function Program() {
         {/* Required on every page that mentions symptoms. Not a disclaimer
             bolted on at the bottom — it is part of what the product is. */}
         <p className="notice">
-          Walkito is a screening and exercise program. It does not diagnose and
+          Walkito is an exercise program. It does not diagnose and
           does not treat. If pain is sharp, getting worse, or stopping you
           sleeping, see a clinician.
         </p>

@@ -1,6 +1,6 @@
 # Walkito
 
-> A 12-week exercise program for heel and foot pain in runners. The plan adapts
+> A 12-week exercise program for heel and foot pain. The plan adapts
 > daily to logged pain and walking load, and measures progress with physical
 > retests every two weeks rather than by asking how you feel.
 
@@ -26,10 +26,16 @@
 ## Other languages
 - Russian: [главная](https://walkito.site/ru/),
   [боль в пятке](https://walkito.site/ru/bol-v-pyatke-uprazhneniya/),
-  [плоскостопие](https://walkito.site/ru/ploskostopie-uprazhneniya/)
+  [плоскостопие](https://walkito.site/ru/ploskostopie-uprazhneniya/),
+  [поддержка](https://walkito.site/ru/podderzhka/),
+  [конфиденциальность](https://walkito.site/ru/konfidentsialnost/),
+  [условия](https://walkito.site/ru/usloviya/)
 - Spanish: [inicio](https://walkito.site/es/),
   [fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/),
-  [pie plano](https://walkito.site/es/ejercicios-pie-plano/)
+  [pie plano](https://walkito.site/es/ejercicios-pie-plano/),
+  [soporte](https://walkito.site/es/soporte/),
+  [privacidad](https://walkito.site/es/privacidad/),
+  [términos](https://walkito.site/es/terminos/)
 
 ## Key facts
 - Programme length: 12 weeks, six blocks of 14 days
@@ -41,8 +47,9 @@
   settles; it never accelerates on a good day
 - A day counts as attended if pain was logged, a session was finished, or the
   plan prescribed rest
-- iOS only. It reads Apple Health for steps, walking asymmetry, walking speed,
-  sleep and resting heart rate, all optional
+- iOS only. It reads Apple Health for steps, walking speed, walking asymmetry,
+  flights climbed, heart rate, resting heart rate, active energy, sleep and
+  workouts, all optional, and never uploads it
 - Health data is summarised on the device and is never uploaded
 
 ## Notes

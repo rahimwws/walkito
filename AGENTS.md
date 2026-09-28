@@ -141,6 +141,7 @@ track('session_completed', { day, block, kind, checkpoint });
 
 - **Every event is declared in `src/shared/lib/analytics/events.ts`.** A new event is a new entry there first; a misspelt name is a `tsc` error rather than a second, empty series in a funnel.
 - **Never send health data.** No pain scores, pain zones, retest measurements, HealthKit readings, age, weight or shoe size. Send that something happened (`checkin_logged`), not what was reported. Apple rejects apps that pass health data to analytics.
+- **Session replay is on, so hide what it must not see.** Any screen or element that shows pain, retest results, body answers or Apple Health numbers gets `REPLAY_MASK` spread onto its root view, or `<ReplayMask>`, from `@/shared/ui/replay-mask`. The privacy policy at walkito.site/privacy promises this.
 - **Revenue comes from RevenueCat, not from the client.** RevenueCat's PostHog integration sends purchases, renewals, refunds and cancellations server-side. `purchase_completed` is a funnel step; never sum it into revenue.
 - **Identity:** PostHog is identified as the RevenueCat app user id, and RevenueCat gets `$posthogUserId` — see `linkAnalytics` in `entities/purchase/model/revenuecat.ts`. Keep the two ids the same or the funnel breaks at the paywall.
 - **Onboarding step keys and `AcquisitionSource` values are analytics identifiers.** Renaming one splits every chart at the day it shipped.
