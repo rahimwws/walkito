@@ -11,6 +11,10 @@ const nextConfig = {
   // Every route becomes a directory with its own index.html, so `/privacy`
   // works on hosts that do not rewrite extensionless paths.
   trailingSlash: true,
+  // Three root layouts — `(en)`, `ru`, `es` — so each language can set its own
+  // `<html lang>`. With no single root there is nowhere for the ordinary
+  // not-found page to live, and this is the switch for `app/global-not-found`.
+  experimental: { globalNotFound: true },
 };
 
 export default nextConfig;

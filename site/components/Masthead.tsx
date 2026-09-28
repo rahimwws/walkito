@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { CHROME, TRANSLATED, type Lang } from '@/lib/i18n';
+import { storeHref } from '@/lib/site';
+
 /** The arrow inside the header button. Inline rather than an icon package: one
  * glyph is not worth a dependency, and an SVG in the markup cannot arrive late. */
 function DownloadGlyph() {
@@ -19,33 +22,57 @@ function DownloadGlyph() {
 }
 
 /**
- * The header, identical on all three pages.
+ * The header, identical on every page.
  *
- * `href` on the button points at the badge further down rather than straight at
- * the App Store. Until there is a listing there is no URL, and a button that
- * silently does nothing is worse than one that moves you to the thing you came
- * for — see the note on the badge itself.
+ * Once there is a listing the button goes straight to it, tagged `masthead` so
+ * App Analytics can tell it apart from the badges in the page body. Until then
+ * it moves you to the badge further down, which says plainly that the app is
+ * not out yet — see the note on the badge itself.
  */
-export function Masthead() {
+export function Masthead({ lang = 'en' }: { lang?: Lang }) {
+  const href = storeHref(lang === 'en' ? 'masthead' : `masthead-${lang}`);
+  const c = CHROME[lang];
+  const home = TRANSLATED.home[lang];
+
   return (
     <header className="shell masthead">
-      <Link className="brand" href="/">
+      <Link className="brand" href={home}>
         <Image src="/icon.png" alt="" width={36} height={36} priority />
         Walkito
       </Link>
 
+      {/* English keeps the program pages in the header. Russian and Spanish
+          have only the home page and the guides translated, so their header
+          leads with the guides and keeps Support and Privacy — the two URLs an
+          App Store reviewer is sent to — reachable from every page. */}
       <nav className="nav">
-        <Link href="/program/">Program</Link>
-        <Link href="/science/">Evidence</Link>
-        <Link href="/faq/">Questions</Link>
-        <Link href="/support/">Support</Link>
-        <Link href="/privacy/">Privacy</Link>
+        {lang === 'en' ? (
+          <>
+            <Link href="/program/">{c.navProgram}</Link>
+            <Link href="/science/">{c.navEvidence}</Link>
+            <Link href="/faq/">{c.navQuestions}</Link>
+          </>
+        ) : (
+          <>
+            <Link href={TRANSLATED.flatFeet[lang]}>{c.navFlatFeet}</Link>
+            <Link href={TRANSLATED.heelPain[lang]}>{c.navHeelPain}</Link>
+          </>
+        )}
+        <Link href="/support/">{c.navSupport}</Link>
+        <Link href="/privacy/">{c.navPrivacy}</Link>
       </nav>
 
-      <Link className="download" href="/#get">
-        Download App
-        <DownloadGlyph />
-      </Link>
+      {href ? (
+        <a className="download" href={href}>
+          {c.downloadHeader}
+          <DownloadGlyph />
+        </a>
+      ) : (
+        <Link className="download" href={`${home}#get`}>
+          {c.soonHeader}
+          <DownloadGlyph />
+        </Link>
+      )}
     </header>
   );
 }

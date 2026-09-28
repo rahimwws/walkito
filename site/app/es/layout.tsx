@@ -1,0 +1,44 @@
+import type { Metadata } from 'next';
+
+import { RootDocument } from '@/components/RootDocument';
+import { SITE_NAME, SITE_URL } from '@/lib/site';
+
+import '../globals.css';
+
+export { viewport } from '@/components/RootDocument';
+
+/**
+ * The Spanish root. See the note on `app/(en)/layout.tsx` for why each
+ * language is its own root layout. Robots and icons are the English root's,
+ * restated: metadata does not inherit across root layouts.
+ */
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'Ejercicios para el dolor de talón y el pie plano en corredores | Walkito',
+    template: `%s | ${SITE_NAME}`,
+  },
+  description:
+    'Un programa de ejercicios de 12 semanas para el dolor de talón y de pie en corredores: de 3 a 8 minutos al día, pruebas cada dos semanas y un plan que baja el ritmo en las mañanas malas.',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
+  icons: { icon: '/favicon.png', apple: '/apple-touch-icon.png' },
+  // The English card: `next/og` renders its default face, which has no
+  // Cyrillic, so a translated card would ship as boxes. The English one is
+  // honest about what the app is in any language.
+  openGraph: { siteName: SITE_NAME, locale: 'es_ES', images: ['/opengraph-image'] },
+  twitter: { card: 'summary_large_image', images: ['/opengraph-image'] },
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return <RootDocument lang="es">{children}</RootDocument>;
+}

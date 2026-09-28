@@ -87,7 +87,7 @@ export default function Faq() {
           sleeping, see a clinician.
         </p>
 
-        <AppStoreBadge />
+        <AppStoreBadge campaign="faq" />
       </main>
 
       <Footer />

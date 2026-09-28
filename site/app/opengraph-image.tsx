@@ -19,7 +19,7 @@ export const dynamic = 'force-static';
 
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
-export const alt = 'Walkito — Run without second-guessing';
+export const alt = 'Walkito — heel pain from running? A 12-week exercise program.';
 
 export default async function Image() {
   return new ImageResponse(
@@ -51,8 +51,8 @@ export default async function Image() {
             flexDirection: 'column',
           }}
         >
-          <span>Run without</span>
-          <span>second-guessing</span>
+          <span>Heel pain</span>
+          <span>from running?</span>
         </div>
 
         <div
@@ -64,7 +64,7 @@ export default async function Image() {
             maxWidth: 900,
           }}
         >
-          A daily plan that changes when your legs do.
+          A 12-week exercise program, 3 to 8 minutes a day.
         </div>
 
         <div

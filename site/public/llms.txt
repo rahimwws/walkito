@@ -5,6 +5,11 @@
 > retests every two weeks rather than by asking how you feel.
 
 ## Core pages
+- [Exercises for plantar fasciitis](https://walkito.site/plantar-fasciitis-exercises/):
+  heel raises and stretches with doses, what the 2023 guideline grades A and B,
+  and what it advises against
+- [Exercises for flat feet](https://walkito.site/flat-feet-exercises/): short-foot,
+  toe, balance and hip work for flexible flat feet, and how long the arch takes
 - [The 12-week program](https://walkito.site/program/): block structure,
   session frequency, how the plan adapts, what the retests measure
 - [Evidence](https://walkito.site/science/): the trials and the 2023 clinical
@@ -17,6 +22,14 @@
   leaves it
 - [Terms of use](https://walkito.site/terms/): the licence, App Store billing
   and cancellation, health and safety, and what the app does not promise
+
+## Other languages
+- Russian: [главная](https://walkito.site/ru/),
+  [боль в пятке](https://walkito.site/ru/bol-v-pyatke-uprazhneniya/),
+  [плоскостопие](https://walkito.site/ru/ploskostopie-uprazhneniya/)
+- Spanish: [inicio](https://walkito.site/es/),
+  [fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/),
+  [pie plano](https://walkito.site/es/ejercicios-pie-plano/)
 
 ## Key facts
 - Programme length: 12 weeks, six blocks of 14 days

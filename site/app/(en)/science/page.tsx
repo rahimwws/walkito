@@ -4,6 +4,7 @@ import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
+import { CITATIONS } from '@/lib/citations';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 
 /**
@@ -21,12 +22,14 @@ import { SITE_NAME, SITE_URL } from '@/lib/site';
  * where they would have gone.
  */
 export const metadata: Metadata = {
-  title: 'The Evidence Behind the Program',
+  // The supporting page for the home page's query: it answers the question
+  // people ask on the way to choosing a program — does exercise help, and which.
+  title: 'Exercises for Heel Pain: What the Research Says',
   description:
     'Walkito is built from published rehabilitation research — progressive loading, intrinsic foot strengthening, and the stretching protocols clinical guidelines recommend.',
   alternates: { canonical: '/science' },
   openGraph: {
-    title: `The Evidence Behind the Program | ${SITE_NAME}`,
+    title: `Exercises for Heel Pain: What the Research Says | ${SITE_NAME}`,
     description:
       'The trials the program follows, what they found, and where their evidence stops.',
     url: '/science',
@@ -34,12 +37,6 @@ export const metadata: Metadata = {
   },
 };
 
-const CITATIONS = [
-  'Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.',
-  'Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.',
-  'Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.',
-  'Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.',
-];
 
 /**
  * `Article` with `citation`, not `MedicalWebPage`.
@@ -52,12 +49,12 @@ const CITATIONS = [
 const ARTICLE = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'The Evidence Behind the Program',
+  headline: 'Exercises for Heel Pain: What the Research Says',
   description:
     'The published trials and clinical guidelines the Walkito program follows, what they found, and where their evidence stops.',
   publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
   mainEntityOfPage: `${SITE_URL}/science/`,
-  citation: CITATIONS,
+  citation: [...CITATIONS],
 };
 
 const BREADCRUMBS = {
@@ -77,7 +74,7 @@ export default function Science() {
       <Masthead />
 
       <main className="shell prose">
-        <h1>The evidence behind the program</h1>
+        <h1>Exercises for heel pain: what the research says</h1>
 
         <p className="lede">
           Walkito is not a set of exercises we invented. It follows published
@@ -261,7 +258,7 @@ export default function Science() {
           night, or if one arch has flattened suddenly as an adult.
         </p>
 
-        <AppStoreBadge />
+        <AppStoreBadge campaign="science" />
       </main>
 
       <Footer />
