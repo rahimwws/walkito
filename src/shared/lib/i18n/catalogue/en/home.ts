@@ -118,8 +118,8 @@ export const HOME_EN = {
     'Nothing else is needed. The next session unlocks after twelve hours’ rest.',
   /** The two empties, which are different facts: a retest day has no exercises
    * because it is a measurement, a rest day has none because it is rest. */
-  'home.retestDay': 'Retest day. {tests}, about {minutes}.',
-  'home.startTests': 'Start the tests',
+  'home.retestTask': 'Retest',
+  'home.retestTaskSub': 'Checkpoint · {tests}',
   'home.nothingScheduled': 'Nothing scheduled today. Rest counts.',
   'home.markDone': 'Mark done',
   'home.markNotDone': 'Mark not done',
@@ -156,9 +156,9 @@ export const HOME_EN = {
 
   // ── The leg map ──────────────────────────────────────────────────────────
   'home.whereItHurts': 'Where it hurts',
-  'home.zonesEmpty': 'Tap where it hurts — up to {count}',
-  'home.zonesFull': 'Up to {count} at a time — tap one to swap it',
-  'home.zonesPicked': '{zones} — {move} next',
+  'home.zonesEmpty': 'Tap where it hurts - up to {count}',
+  'home.zonesFull': 'Up to {count} at a time - tap one to swap it',
+  'home.zonesPicked': '{zones} - {move} next',
   /** The separator between marked places. Copy, not punctuation glue: it is
    * the one character standing between two anatomical names. */
   'home.zoneJoin': ' · ',
@@ -252,7 +252,7 @@ export const BRIEF_EN = {
       { k: 'frame', text: 'Nothing more.' },
     ],
     [
-      { k: 'frame', text: 'we’re unloading today —' },
+      { k: 'frame', text: 'we’re unloading today -' },
       { k: 'metric', icon: 'rest', text: '{restMinutes}', tail: ',' },
       { k: 'frame', text: 'off your feet.' },
     ],
@@ -281,7 +281,7 @@ export const BRIEF_EN = {
     [
       { k: 'frame', text: 'today isn’t training, it’s' },
       { k: 'metric', icon: 'retest', text: '{tests}' },
-      { k: 'frame', text: '— so there’s something to compare against later.' },
+      { k: 'frame', text: '- so there’s something to compare against later.' },
     ],
     [
       { k: 'frame', text: 'day one is' },
@@ -302,7 +302,7 @@ export const BRIEF_EN = {
       { k: 'frame', text: 'Time to see what moved.' },
     ],
     [
-      { k: 'frame', text: 'checkpoint day —' },
+      { k: 'frame', text: 'checkpoint day -' },
       { k: 'metric', icon: 'retest', text: '{tests}', tail: ',' },
       { k: 'value', text: '{testMinutes}', tail: '.' },
     ],
@@ -315,7 +315,7 @@ export const BRIEF_EN = {
 
   'checkpoint-recap': [
     [
-      { k: 'frame', text: 'a new block starts today —' },
+      { k: 'frame', text: 'a new block starts today -' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
       { k: 'frame', text: 'New shape, new load.' },
     ],
@@ -338,11 +338,11 @@ export const BRIEF_EN = {
       { k: 'metric', icon: 'streak', text: '{dayOfPlan}', tail: '.' },
       { k: 'frame', text: 'today is' },
       { k: 'metric', icon: 'tasks', text: '{moves}' },
-      { k: 'frame', text: 'of {work} —' },
+      { k: 'frame', text: 'of {work} -' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'early days —' },
+      { k: 'frame', text: 'early days -' },
       { k: 'metric', icon: 'streak', text: '{planDay}', tail: ':' },
       { k: 'value', text: '{minutes}' },
       { k: 'frame', text: 'of {work}. Short and often beats long and rare.' },
@@ -357,7 +357,7 @@ export const BRIEF_EN = {
   'big-run': [
     [
       { k: 'frame', text: 'yesterday was your' },
-      { k: 'metric', icon: 'feet', text: 'longest run in a month', tail: ' —' },
+      { k: 'metric', icon: 'feet', text: 'longest run in a month', tail: ' -' },
       { k: 'value', text: '{distance}', tail: '.' },
       { k: 'frame', text: 'Today is' },
       { k: 'metric', icon: 'rest', text: 'easy', tail: '.' },
@@ -376,7 +376,7 @@ export const BRIEF_EN = {
   stairs: [
     [
       { k: 'metric', icon: 'level', text: '{flights}' },
-      { k: 'frame', text: 'yesterday — more than your usual week. Worth an easy day.' },
+      { k: 'frame', text: 'yesterday - more than your usual week. Worth an easy day.' },
     ],
     [
       { k: 'frame', text: 'more' },
@@ -407,7 +407,7 @@ export const BRIEF_EN = {
       { k: 'frame', text: 'has cost you the next morning before.' },
     ],
     [
-      { k: 'frame', text: 'long day already —' },
+      { k: 'frame', text: 'long day already -' },
       { k: 'metric', icon: 'feet', text: '{hours}', tail: '.' },
       { k: 'frame', text: 'Worth sitting down for ten minutes.' },
     ],
@@ -422,15 +422,15 @@ export const BRIEF_EN = {
     ],
     [
       { k: 'metric', icon: 'feet', text: '{stepsToday}' },
-      { k: 'frame', text: 'so far — a lot. If the heel is aching, sit for a bit.' },
+      { k: 'frame', text: 'so far - a lot. If the heel is aching, sit for a bit.' },
     ],
     [
       { k: 'frame', text: 'you’ve done' },
       { k: 'metric', icon: 'feet', text: '{stepsToday}', tail: '.' },
-      { k: 'frame', text: 'Stretch the foot tonight — tomorrow morning will thank you.' },
+      { k: 'frame', text: 'Stretch the foot tonight - tomorrow morning will thank you.' },
     ],
     [
-      { k: 'frame', text: 'a long day on your feet —' },
+      { k: 'frame', text: 'a long day on your feet -' },
       { k: 'metric', icon: 'feet', text: '{stepsToday}', tail: '.' },
       { k: 'frame', text: 'Log how the heel feels so the plan knows.' },
     ],
@@ -441,11 +441,11 @@ export const BRIEF_EN = {
     [
       { k: 'frame', text: 'you’ve averaged' },
       { k: 'metric', icon: 'sleep', text: '{sleep}' },
-      { k: 'frame', text: 'this week. Tendons rebuild at night — today is' },
+      { k: 'frame', text: 'this week. Tendons rebuild at night - today is' },
       { k: 'metric', icon: 'rest', text: 'lighter', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'short nights all week —' },
+      { k: 'frame', text: 'short nights all week -' },
       { k: 'metric', icon: 'sleep', text: '{sleep}' },
       { k: 'frame', text: 'on average. We take a little off today.' },
     ],
@@ -468,7 +468,7 @@ export const BRIEF_EN = {
       { k: 'frame', text: 'We go gently.' },
     ],
     [
-      { k: 'frame', text: 'your body is still catching up —' },
+      { k: 'frame', text: 'your body is still catching up -' },
       { k: 'metric', icon: 'level', text: 'resting pulse up', tail: '.' },
       { k: 'frame', text: 'Lighter today.' },
     ],
@@ -489,7 +489,7 @@ export const BRIEF_EN = {
     [
       { k: 'frame', text: 'slower steps than your normal this week.' },
       { k: 'metric', icon: 'gait', text: 'Nothing alarming' },
-      { k: 'frame', text: '— but we’ll keep today easy.' },
+      { k: 'frame', text: '- but we’ll keep today easy.' },
     ],
   ],
 
@@ -497,13 +497,13 @@ export const BRIEF_EN = {
     [
       { k: 'frame', text: 'your steps got' },
       { k: 'metric', icon: 'gait', text: 'uneven', tone: 'warn' },
-      { k: 'frame', text: '—' },
+      { k: 'frame', text: '-' },
       { k: 'value', text: '{today}', tone: 'warn' },
       { k: 'frame', text: 'vs your usual' },
       { k: 'value', text: '{usual}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'less even than your normal this week —' },
+      { k: 'frame', text: 'less even than your normal this week -' },
       { k: 'metric', icon: 'gait', text: '{today}', tone: 'warn' },
       { k: 'frame', text: 'against your usual' },
       { k: 'value', text: '{usual}', tail: '.' },
@@ -525,12 +525,12 @@ export const BRIEF_EN = {
       { k: 'frame', text: 'Come back tomorrow.' },
     ],
     [
-      { k: 'frame', text: 'that’s today handled —' },
+      { k: 'frame', text: 'that’s today handled -' },
       { k: 'metric', icon: 'done', text: '{days}', tone: 'good' },
       { k: 'frame', text: 'and counting.' },
     ],
     [
-      { k: 'frame', text: 'session done — that’s' },
+      { k: 'frame', text: 'session done - that’s' },
       { k: 'metric', icon: 'done', text: '{streakDay}' },
       { k: 'frame', text: 'of the run you’re on.' },
     ],
@@ -548,7 +548,7 @@ export const BRIEF_EN = {
       { k: 'frame', text: 'today.' },
     ],
     [
-      { k: 'frame', text: 'back again — we pick up where you left off, just' },
+      { k: 'frame', text: 'back again - we pick up where you left off, just' },
       { k: 'metric', icon: 'session', text: 'lighter', tail: '.' },
     ],
   ],
@@ -558,7 +558,7 @@ export const BRIEF_EN = {
     [
       { k: 'frame', text: 'your mornings are' },
       { k: 'metric', icon: 'up', text: 'easing', tone: 'good' },
-      { k: 'frame', text: '— down' },
+      { k: 'frame', text: '- down' },
       { k: 'value', text: '{drop}', tone: 'good' },
       { k: 'frame', text: 'this month.' },
     ],
@@ -602,7 +602,7 @@ export const BRIEF_EN = {
     [
       { k: 'frame', text: 'steps are' },
       { k: 'metric', icon: 'done', text: 'back in balance', tone: 'good' },
-      { k: 'frame', text: '— two days running.' },
+      { k: 'frame', text: '- two days running.' },
     ],
     [
       { k: 'frame', text: 'that evened out.' },
@@ -618,7 +618,7 @@ export const BRIEF_EN = {
       { k: 'frame', text: 'with your phone in your pocket.' },
     ],
     [
-      { k: 'frame', text: 'still building a picture of your normal —' },
+      { k: 'frame', text: 'still building a picture of your normal -' },
       { k: 'metric', icon: 'window', text: 'a few more days' },
       { k: 'frame', text: 'should do it.' },
     ],
@@ -648,7 +648,7 @@ export const BRIEF_EN = {
     [
       { k: 'frame', text: 'today' },
       { k: 'value', text: '{minutes}' },
-      { k: 'frame', text: '— and you’re a little closer' },
+      { k: 'frame', text: '- and you’re a little closer' },
       { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
     ],
     [
@@ -664,7 +664,7 @@ export const BRIEF_EN = {
       { k: 'frame', text: 'Keep it going.' },
     ],
     [
-      { k: 'frame', text: 'you wanted consistency — here it is:' },
+      { k: 'frame', text: 'you wanted consistency - here it is:' },
       { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
     ],
     [
@@ -707,7 +707,7 @@ export const BRIEF_EN = {
 
   'no-data': [
     [
-      { k: 'frame', text: 'I can’t read your walk — keep your phone in a' },
+      { k: 'frame', text: 'I can’t read your walk - keep your phone in a' },
       { k: 'metric', icon: 'pocket', text: 'pocket', tail: ',' },
       { k: 'frame', text: 'not a bag, and I’ll pick it up.' },
     ],
@@ -717,7 +717,7 @@ export const BRIEF_EN = {
       { k: 'frame', text: 'on flat ground is what it needs.' },
     ],
     [
-      { k: 'frame', text: 'nothing to read yet — the sensors want the phone in a' },
+      { k: 'frame', text: 'nothing to read yet - the sensors want the phone in a' },
       { k: 'metric', icon: 'pocket', text: 'pocket' },
       { k: 'frame', text: 'while you walk.' },
     ],
@@ -730,7 +730,7 @@ export const BRIEF_EN = {
     [
       { k: 'frame', text: 'today is' },
       { k: 'metric', icon: 'session', text: '{move}' },
-      { k: 'frame', text: '— the one that carries this plan.' },
+      { k: 'frame', text: '- the one that carries this plan.' },
     ],
   ],
 
@@ -743,7 +743,7 @@ export const BRIEF_EN = {
 
   'quiet-load-big': [
     [
-      { k: 'frame', text: 'a big day on your feet yesterday —' },
+      { k: 'frame', text: 'a big day on your feet yesterday -' },
       { k: 'metric', icon: 'feet', text: '{steps}', tail: '.' },
       { k: 'frame', text: 'Context, not a verdict.' },
     ],

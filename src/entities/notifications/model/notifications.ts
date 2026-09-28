@@ -74,12 +74,8 @@ export async function registerPushToken(): Promise<boolean> {
   }
 }
 
-/** The two halves, in the order they land. */
-const WINBACK_IDS = ['offer-winback-plea', 'offer-winback-offer'] as const;
-
-/** The beat between them. Long enough to read as a second thought — the plea,
- * then the bribe — and short enough that both are on screen together. */
-const SECOND_MESSAGE_DELAY_S = 1;
+/** One message, one identifier — `cancelWinback` clears it by this. */
+const WINBACK_ID = 'offer-winback';
 
 /**
  * Foreground presentation.
@@ -129,105 +125,65 @@ export async function requestNotificationAccess(): Promise<boolean> {
 }
 
 /**
- * The win-back: two messages, a second apart.
+ * The win-back: one message, sent as the app goes to the background.
  *
- * The first is a person calling after you by name and asks for nothing — it
- * only has to stop the thumb. The second is the reason to turn around. Sent as
- * one message the two jobs fight each other: a name plus a discount in the same
- * banner reads as a mail-merge, while a plea that lands and *then* a price is
- * the shape of someone actually changing your mind.
+ * It says what is on offer and nothing else. It used to be two banners a second
+ * apart — a drawn-out "stoppp" and then the price — and pleading is the tone a
+ * reviewer and a user both read as the app wanting something, which it is.
  *
- * Both are kept short on purpose. A notification is read in the half second it
- * takes to slide past, and every word after the first line is one the user
- * never sees.
+ * `trigger: null` — deliver now, not schedule. iOS has already moved the app to
+ * the background by the time this runs, so the banner lands on the home screen
+ * the user has just arrived at.
  *
- * The first uses `trigger: null` — deliver now, not schedule. iOS has already
- * moved the app to the background by the time this runs, so the banner lands on
- * the home screen the user has just arrived at.
- *
- * Returns whether both were accepted. Nothing consumes that today and nothing
- * should: this runs as the app is leaving the foreground, so there is no screen
- * left to show a failure on. It exists so the outcome is *knowable* — the two
- * empty catches this replaces made a refused permission and a delivered banner
- * look identical from the outside.
+ * Returns whether it was accepted, so a refused permission and a delivered
+ * banner are distinguishable from the outside; nothing consumes that today,
+ * since there is no screen left to show a failure on.
  */
 export async function scheduleWinback(percent: number, name?: string): Promise<boolean> {
   const t = translatorFor(getLanguage());
   const who = name != null && name.trim().length > 0 ? name.trim() : null;
-  let failed = false;
-
   try {
     await Notifications.scheduleNotificationAsync({
-      identifier: WINBACK_IDS[0],
+      identifier: WINBACK_ID,
       content: {
         title:
           who != null
-            ? t('notifications.offerPleaNamed', { name: who })
-            : t('notifications.offerPlea'),
-        body: t('notifications.offerPleaBody'),
+            ? t('notifications.offerWaitNamed', { name: who, percent })
+            : t('notifications.offerWait', { percent }),
+        body: t('notifications.offerWaitBody'),
         sound: true,
         data: { kind: WINBACK_KIND },
       },
       trigger: null,
     });
+    return true;
   } catch (error) {
-    // Still not worth interrupting the user for — this fires as the app is
-    // going to the background, so there is no screen left to tell. Reported
-    // rather than swallowed: a silent catch here is indistinguishable from a
-    // notification that scheduled fine and was never tapped, and those have
-    // nothing in common as fixes.
-    console.warn('[notifications] win-back plea did not schedule:', error);
-    failed = true;
+    // Reported rather than swallowed: a silent catch here is indistinguishable
+    // from a notification that scheduled fine and was never tapped.
+    console.warn('[notifications] win-back did not schedule:', error);
+    return false;
   }
-
-  try {
-    await Notifications.scheduleNotificationAsync({
-      identifier: WINBACK_IDS[1],
-      content: {
-        // Names the product. "Take 70% off" alone does not say off what,
-        // and the discount exists on one of the two plans.
-        title: t('notifications.offerDiscountTitle', { percent }),
-        body: t('notifications.offerDiscountBody'),
-        sound: true,
-        data: { kind: WINBACK_KIND },
-      },
-      trigger: {
-        type: Notifications.SchedulableTriggerInputTypes.TIME_INTERVAL,
-        seconds: SECOND_MESSAGE_DELAY_S,
-        repeats: false,
-      },
-    });
-  } catch (error) {
-    console.warn('[notifications] win-back offer did not schedule:', error);
-    failed = true;
-  }
-
-  return !failed;
 }
 
 /**
  * Clears the message when the user comes back on their own.
  *
- * Both halves matter now that delivery is immediate: cancelling covers the
+ * Both steps matter now that delivery is immediate: cancelling covers the
  * rare case where it has not gone out yet, and dismissing takes the banner out
  * of Notification Centre if it has. Someone already looking at the offer again
  * should not find a note telling them to come back to it.
  */
 export async function cancelWinback(): Promise<void> {
-  await Promise.all(
-    WINBACK_IDS.map(async (id) => {
-      try {
-        await Notifications.cancelScheduledNotificationAsync(id);
-      } catch {
-        // Never scheduled, or already delivered. Either way, nothing to do.
-      }
-      try {
-        await Notifications.dismissNotificationAsync(id);
-      } catch {
-        // Nothing in the tray under that identifier.
-      }
-    }),
-  );
+  try {
+    await Notifications.cancelScheduledNotificationAsync(WINBACK_ID);
+  } catch {
+    // Never scheduled, or already delivered. Either way, nothing to do.
+  }
+  try {
+    await Notifications.dismissNotificationAsync(WINBACK_ID);
+  } catch {
+    // Nothing in the tray under that identifier.
+  }
 }
 
 export { Notifications };

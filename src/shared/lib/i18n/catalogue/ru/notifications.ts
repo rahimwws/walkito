@@ -152,12 +152,9 @@ export const NOTIFICATIONS_RU = {
   'notifications.winbackDay30': 'Мы здесь, если стопа снова даст о себе знать.',
 
   // ── Leaving the offer ────────────────────────────────────────────────────
-  // Растянутые гласные — намеренно: это человек, который окликает вас вслед.
-  'notifications.offerPleaNamed': '{name}, стоооп',
-  'notifications.offerPlea': 'Стоооп',
-  'notifications.offerPleaBody': 'Пожалуйстаа.',
-  'notifications.offerDiscountTitle': 'Скидка {percent}% на 12-недельную программу',
-  'notifications.offerDiscountBody': 'Нажмите, чтобы забрать.',
+  'notifications.offerWaitNamed': '{name}, подождите — скидка {percent}%',
+  'notifications.offerWait': 'Подождите — скидка {percent}%',
+  'notifications.offerWaitBody': '12-недельная программа ждёт вас по сниженной цене. Нажмите, чтобы посмотреть.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   'notifications.expiryTitle': 'Доступ к программе закончится через неделю',

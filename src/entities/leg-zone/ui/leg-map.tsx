@@ -8,11 +8,10 @@ import Animated, {
   type SharedValue,
 } from 'react-native-reanimated';
 import Svg, {
-  Circle,
-  ClipPath,
   Defs,
   Ellipse,
   G,
+  Image as SvgImage,
   LinearGradient,
   Mask,
   Path,
@@ -26,15 +25,7 @@ import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import { LEG_VIEW, zoneAt, type LegZone } from '../model/leg-zones';
-import {
-  MALLEOLUS,
-  NAIL,
-  PARTS,
-  SILHOUETTE,
-  TENDON,
-  fibresOf,
-  type Tissue,
-} from './leg-anatomy';
+import { LEG_IMAGE, ZONE_ORDER, ZONE_PATHS } from './leg-anatomy';
 
 /**
  * Where it hurts, as a leg you can point at.
@@ -45,67 +36,33 @@ import {
  * not a thing a runner picks off a menu — so the question is asked by letting
  * them touch the place.
  *
- * Drawn as an anatomical plate rather than as flat shapes: each muscle has its
- * own volume, its fibres, and a sheen along the belly; the tendon and the bone
- * read as the harder tissues they are. The first version was eleven flat
- * slabs, and a slab does not look like the thing that hurts — people hesitated
- * over which shape was their achilles because none of them looked like one.
+ * The leg is a render in the style of the exercise clips — white, sculpted,
+ * every muscle readable — so the body the user points at here is the same body
+ * they watch stretching later. The zones are outlines over it that only show
+ * once marked; see `leg-anatomy.ts` for why the drawing stopped being vector.
  *
  * No background of its own. Every other screen in the app lets the navigation
- * theme paint behind it — see the note in AGENTS.md — and a panel carrying its
- * own near-black would show its edges against the sheet it sits on. The top of
- * the leg fades out through a mask for the same reason: a fade to a colour
- * would need to know what that colour is.
+ * theme paint behind it — see the note in AGENTS.md — and the render is cut out
+ * on transparency for the same reason. The top of the leg fades out through a
+ * mask rather than to a colour, since a fade to a colour would need to know
+ * what that colour is.
  */
+
+const LEG = require('@assets/leg-map/leg.webp');
 
 /**
- * The drawing's own tones, and why they are not theme tokens.
+ * How strongly a marked zone takes the colour.
  *
- * An anatomical figure needs material tones — light falling on different
- * tissue — which is a different job from the semantic tokens, and no amount of
- * picking among those produces a legible ramp. Each tissue is three stops of a
- * radial gradient, lit from the upper left, so every part has a lit face and a
- * shadowed edge. Neutral on purpose: red is what marking means here, and
- * muscle drawn anywhere near red would blur the one signal the map gives.
+ * Well short of opaque: the render's shading has to come through the tint, or a
+ * marked calf turns into a flat red sticker on a sculpted leg.
  */
-const TONES = {
-  dark: {
-    skin: ['#2A2B31', '#3E3F48'],
-    rim: 'rgba(255,255,255,0.10)',
-    muscle: ['#6A6B78', '#474854', '#34353E'],
-    bone: ['#8A8B98', '#6A6B77', '#50515B'],
-    tendon: ['#9A9BA8', '#7A7B88', '#5D5E6A'],
-    fibre: 'rgba(0,0,0,0.28)',
-    fibreLit: 'rgba(255,255,255,0.07)',
-    gap: '#1E1F24',
-    shadow: 'rgba(0,0,0,0.45)',
-    nail: '#8A8B98',
-  },
-  light: {
-    skin: ['#D7D7DF', '#EEEEF3'],
-    rim: 'rgba(0,0,0,0.06)',
-    muscle: ['#D2D2DC', '#B4B4C2', '#9C9CAB'],
-    bone: ['#E4E4EC', '#C4C4D0', '#AAAAB8'],
-    tendon: ['#C9C9D4', '#ABABBA', '#9293A3'],
-    fibre: 'rgba(40,40,60,0.18)',
-    fibreLit: 'rgba(255,255,255,0.35)',
-    gap: '#E9E9EF',
-    shadow: 'rgba(40,40,60,0.18)',
-    nail: '#F2F2F6',
-  },
-} as const;
+const MARK_OPACITY = 0.6;
 
-/** How strongly a marked zone takes the colour. Short of opaque so the
- * gradient underneath still gives the zone its volume. */
-const MARK_OPACITY = 0.88;
-
-/** Fibres are computed once — they are geometry, not state. */
-const FIBRES: Readonly<Partial<Record<LegZone, readonly string[]>>> = Object.fromEntries(
-  PARTS.filter((part) => part.fibre != null).map((part) => [part.zone, fibresOf(part.fibre!)]),
-);
+/** The contact shadow under the foot, per scheme — a white leg on a dark
+ * sheet needs a deeper shadow to look like it is standing on anything. */
+const SHADOW = { light: 'rgba(40,40,60,0.22)', dark: 'rgba(0,0,0,0.55)' } as const;
 
 const AnimatedPath = Animated.createAnimatedComponent(Path);
-const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 
 const FADE_MS = 220;
 
@@ -113,13 +70,10 @@ const FADE_MS = 220;
 type Heal = { progress: Readonly<SharedValue<number>>; color: string };
 
 /**
- * A zone's tint, fading in over the drawn tissue when it is marked.
+ * A zone's tint, fading in over the render when it is marked.
  *
- * The tint is a layer over the tissue rather than a change to its fill, so the
- * gradient and the fibres stay visible through it — a marked calf still looks
- * like a calf, only red. `useAnimatedProps` rather than state, so it runs on the
- * UI thread: a `setState` per frame would re-render the whole drawing to animate
- * one zone.
+ * `useAnimatedProps` rather than state, so it runs on the UI thread: a
+ * `setState` per frame would re-render the whole drawing to animate one zone.
  *
  * With `heal`, the tint's colour is itself a blend: red at 0, the healed tone
  * at 1. Read on the UI thread like the rest, so a caller can scrub it with the
@@ -139,55 +93,9 @@ function useTint(on: boolean, marked: string, heal?: Heal) {
   }));
 }
 
-function Part({
-  zone,
-  d,
-  tissue,
-  on,
-  marked,
-  heal,
-  scheme,
-}: {
-  zone: LegZone;
-  d: string;
-  tissue: Tissue;
-  on: boolean;
-  marked: string;
-  heal?: Heal;
-  scheme: 'light' | 'dark';
-}) {
-  const tones = TONES[scheme];
+function Zone({ zone, on, marked, heal }: { zone: LegZone; on: boolean; marked: string; heal?: Heal }) {
   const tint = useTint(on, marked, heal);
-  const fibres = FIBRES[zone] ?? [];
-  return (
-    <G>
-      <Path
-        d={d}
-        fill={`url(#${tissue})`}
-        stroke={tones.gap}
-        strokeWidth={2.2}
-        strokeLinejoin="round"
-      />
-      <AnimatedPath d={d} animatedProps={tint} />
-      {/* Texture over the tint, so marking a muscle keeps its grain. */}
-      <G clipPath={`url(#clip-${zone})`}>
-        {fibres.map((fibre) => (
-          <G key={fibre}>
-            <Path d={fibre} fill="none" stroke={tones.fibre} strokeWidth={1.6} strokeLinecap="round" />
-            <Path
-              d={fibre}
-              translateX={2.2}
-              fill="none"
-              stroke={tones.fibreLit}
-              strokeWidth={1}
-              strokeLinecap="round"
-            />
-          </G>
-        ))}
-        <Path d={d} fill="url(#gloss)" />
-      </G>
-    </G>
-  );
+  return <AnimatedPath d={ZONE_PATHS[zone]} animatedProps={tint} />;
 }
 
 export type LegMapProps = {
@@ -212,7 +120,6 @@ export const LEG_ASPECT = LEG_VIEW.width / LEG_VIEW.height;
 export function LegMap({ selected, onToggle, healProgress, healedColor }: LegMapProps) {
   const scheme = useColorScheme();
   const t = useT();
-  const tones = TONES[scheme];
 
   /**
    * Red, and this is the one place in the app allowed to use it.
@@ -230,8 +137,6 @@ export function LegMap({ selected, onToggle, healProgress, healedColor }: LegMap
       ? { progress: healProgress, color: healedColor }
       : undefined;
 
-  const innerAnkle = useTint(selected.includes('inner_ankle'), marked, heal);
-
   /** Measured so a tap in view coordinates can be put back into viewBox ones. */
   const [size, setSize] = useState({ width: 0, height: 0 });
   const measure = (event: LayoutChangeEvent) => {
@@ -248,28 +153,9 @@ export function LegMap({ selected, onToggle, healProgress, healedColor }: LegMap
       height="100%"
       pointerEvents="none">
       <Defs>
-        <LinearGradient id="skin" x1="0" y1="0" x2="1" y2="0">
-          <Stop offset="0" stopColor={tones.skin[0]} />
-          <Stop offset="0.55" stopColor={tones.skin[1]} />
-          <Stop offset="1" stopColor={tones.skin[0]} />
-        </LinearGradient>
-        {(['muscle', 'bone', 'tendon'] as const).map((tissue) => (
-          <RadialGradient key={tissue} id={tissue} cx="0.38" cy="0.35" r="0.75">
-            <Stop offset="0" stopColor={tones[tissue][0]} />
-            <Stop offset="0.55" stopColor={tones[tissue][1]} />
-            <Stop offset="1" stopColor={tones[tissue][2]} />
-          </RadialGradient>
-        ))}
-        {/* The sheen along each belly: a narrow band of light across the
-            shape, which is most of what makes it read as rounded. */}
-        <LinearGradient id="gloss" x1="0" y1="0" x2="1" y2="0.3">
-          <Stop offset="0" stopColor="#FFFFFF" stopOpacity={0} />
-          <Stop offset="0.35" stopColor="#FFFFFF" stopOpacity={0.16} />
-          <Stop offset="0.6" stopColor="#FFFFFF" stopOpacity={0} />
-        </LinearGradient>
         <RadialGradient id="shadow" cx="0.5" cy="0.5" r="0.5">
-          <Stop offset="0" stopColor={tones.shadow} />
-          <Stop offset="1" stopColor={tones.shadow} stopOpacity={0} />
+          <Stop offset="0" stopColor={SHADOW[scheme]} />
+          <Stop offset="1" stopColor={SHADOW[scheme]} stopOpacity={0} />
         </RadialGradient>
         <LinearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
           <Stop offset="0" stopColor="#FFFFFF" stopOpacity={0} />
@@ -278,59 +164,28 @@ export function LegMap({ selected, onToggle, healProgress, healedColor }: LegMap
         <Mask id="top-fade" maskUnits="userSpaceOnUse" x={x} y={y} width={width} height={height}>
           <Rect x={x} y={y} width={width} height={height} fill="url(#fade)" />
         </Mask>
-        {PARTS.map((part) => (
-          <ClipPath key={part.zone} id={`clip-${part.zone}`}>
-            <Path d={part.d} />
-          </ClipPath>
-        ))}
       </Defs>
 
       {/* Contact shadow, so the foot stands on something. */}
-      <Ellipse cx={228} cy={520} rx={150} ry={12} fill="url(#shadow)" />
+      <Ellipse cx={520} cy={1622} rx={330} ry={26} fill="url(#shadow)" />
 
       <G mask="url(#top-fade)">
-        <Path d={SILHOUETTE} fill="url(#skin)" />
-
-        {PARTS.map((part) => (
-          <Part
-            key={part.zone}
-            zone={part.zone}
-            d={part.d}
-            tissue={part.tissue}
-            on={selected.includes(part.zone)}
+        <SvgImage
+          href={LEG}
+          x={LEG_IMAGE.x}
+          y={LEG_IMAGE.y}
+          width={LEG_IMAGE.width}
+          height={LEG_IMAGE.height}
+        />
+        {ZONE_ORDER.map((zone) => (
+          <Zone
+            key={zone}
+            zone={zone}
+            on={selected.includes(zone)}
             marked={marked}
             heal={heal}
-            scheme={scheme}
           />
         ))}
-
-        <Circle
-          cx={MALLEOLUS.cx}
-          cy={MALLEOLUS.cy}
-          r={MALLEOLUS.r}
-          fill="url(#bone)"
-          stroke={tones.gap}
-          strokeWidth={2.2}
-        />
-        <AnimatedCircle
-          cx={MALLEOLUS.cx}
-          cy={MALLEOLUS.cy}
-          r={MALLEOLUS.r}
-          animatedProps={innerAnkle}
-        />
-        <Ellipse
-          cx={MALLEOLUS.cx - 4}
-          cy={MALLEOLUS.cy - 5}
-          rx={6}
-          ry={4}
-          fill="#FFFFFF"
-          opacity={0.18}
-        />
-
-        <Path d={TENDON} fill="none" stroke="url(#tendon)" strokeWidth={5} strokeLinecap="round" />
-        <Path d={NAIL} fill={tones.nail} opacity={0.9} />
-
-        <Path d={SILHOUETTE} fill="none" stroke={tones.rim} strokeWidth={1.5} />
       </G>
     </Svg>
   );

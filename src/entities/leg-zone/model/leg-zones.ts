@@ -94,24 +94,32 @@ export const ZONE_LABEL_KEYS: Readonly<Record<LegZone, Key>> = {
  * is the honest reading of a finger on a drawing this size.
  */
 export const ZONE_CENTRES: Readonly<Partial<Record<LegZone, { x: number; y: number }>>> = {
-  calf: { x: 90, y: 140 },
-  // The strip of soleus in front of the calf's lower half — the part of it
-  // that shows. Its band under the calf is closer to the achilles centre.
-  soleus: { x: 138, y: 232 },
-  tibia: { x: 190, y: 200 },
-  tib_ant: { x: 223, y: 180 },
-  achilles: { x: 116, y: 372 },
+  calf: { x: 215, y: 460 },
+  // The strip of soleus below and in front of the calf — the part of it that
+  // shows.
+  soleus: { x: 258, y: 820 },
+  tibia: { x: 385, y: 700 },
+  tib_ant: { x: 455, y: 700 },
+  achilles: { x: 268, y: 1260 },
   // No separate centre for `ankle`: its mass sits almost exactly on top of
   // `inner_ankle`, and two centres that close make the nearest-centre test a
-  // coin flip. A tap on the ankle resolves to the inner one, which is the
+  // coin flip. A tap on the ankle resolves to the ankle bone, which is the
   // reading that matters for this condition.
-  inner_ankle: { x: 186, y: 400 },
-  heel: { x: 138, y: 482 },
-  arch: { x: 238, y: 494 },
-  dorsum: { x: 296, y: 468 },
-  ball: { x: 324, y: 503 },
-  toes: { x: 356, y: 496 },
+  inner_ankle: { x: 325, y: 1400 },
+  heel: { x: 258, y: 1505 },
+  arch: { x: 440, y: 1550 },
+  dorsum: { x: 570, y: 1455 },
+  ball: { x: 595, y: 1575 },
+  toes: { x: 750, y: 1575 },
 };
+
+/**
+ * Where the back of the leg ends and the front begins, in viewBox units.
+ *
+ * The calf, soleus, achilles and heel lie behind it, everything else in front.
+ * The outlook lays its callouts out by this, so a leader never crosses the leg.
+ */
+export const SHIN_LINE_X = 300;
 
 /**
  * How far off a centre a tap can land and still count, in viewBox units.
@@ -121,11 +129,11 @@ export const ZONE_CENTRES: Readonly<Partial<Record<LegZone, { x: number; y: numb
  * on the leg resolves to the nearest part of it, tight enough that a tap in the
  * empty margin beside the calf still does nothing.
  */
-const HIT_RADIUS = 120;
+const HIT_RADIUS = 250;
 
 /** The drawing's viewBox, which a tap has to be converted into — and which
  * anything laid over the map (the outlook's callouts) positions itself by. */
-export const LEG_VIEW = { x: 0, y: -4, width: 368, height: 548 } as const;
+export const LEG_VIEW = { x: 110, y: 40, width: 770, height: 1620 } as const;
 const VIEW = LEG_VIEW;
 
 export function zoneAt(px: number, py: number, size: { width: number; height: number }): LegZone | null {

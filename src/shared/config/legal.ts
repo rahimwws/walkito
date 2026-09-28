@@ -32,23 +32,21 @@ export const LEGAL = {
 export const SUPPORT_EMAIL = 'hello@walkito.app';
 
 /**
- * Where "rate the app" sends someone.
- *
- * **Null until the app has an App Store ID**, which it does not have yet. The
- * URL is `https://apps.apple.com/app/id<APPLE_APP_ID>?action=write-review`,
- * where the id is the numeric one App Store Connect assigns on first
- * submission — not the bundle identifier.
- *
- * Null rather than a guessed or empty string on purpose: every caller then has
- * to handle "no link yet", and a button that opens a 404 in the App Store is
- * worse than one that quietly does the rest of its job. `NoteSheet` reads this
- * and goes straight on to Home when it is null.
- *
- * `expo-store-review` is the other way to do this — Apple's own in-app prompt,
- * no id required. It is not used here because it cannot be relied on: iOS
- * decides whether to show it at all, caps it at three times a year, and does
- * nothing in a simulator, so a tap has no observable result. This link always
- * works once the id exists.
+ * The numeric id App Store Connect assigned to Walkito — the one in
+ * `apps.apple.com/app/id6813076846`, and the `ascAppId` in `eas.json`. Not the
+ * bundle identifier.
  */
-export const APP_STORE_REVIEW_URL: string | null = null;
+export const APPLE_APP_ID = '6813076846';
 
+/**
+ * Where "rate the app" sends someone: the App Store's own write-a-review page.
+ *
+ * Until the first version is live on the store this page says the app is not
+ * available, so the button only does something useful from launch day on.
+ *
+ * `expo-store-review` is the other way to do this — Apple's own in-app prompt.
+ * It is not used here because it cannot be relied on: iOS decides whether to
+ * show it at all, caps it at three times a year, and does nothing in a
+ * simulator, so a tap has no observable result. This link always works.
+ */
+export const APP_STORE_REVIEW_URL = `https://apps.apple.com/app/id${APPLE_APP_ID}?action=write-review`;

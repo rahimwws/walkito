@@ -83,8 +83,8 @@ export const HOME_RU = {
   'home.allDoneTitle': 'На сегодня всё',
   'home.allDoneBlurb':
     'Больше ничего не нужно. Следующая сессия откроется через двенадцать часов отдыха.',
-  'home.retestDay': 'День замеров. {tests}, примерно {minutes}.',
-  'home.startTests': 'Начать замеры',
+  'home.retestTask': 'Замеры',
+  'home.retestTaskSub': 'Контроль · {tests}',
   'home.nothingScheduled': 'На сегодня ничего не назначено. Отдых тоже засчитан.',
   'home.markDone': 'Отметить выполненным',
   'home.markNotDone': 'Снять отметку',
@@ -110,9 +110,9 @@ export const HOME_RU = {
 
   // ── The leg map ──────────────────────────────────────────────────────────
   'home.whereItHurts': 'Где болит',
-  'home.zonesEmpty': 'Нажмите, где болит — не больше {count}',
-  'home.zonesFull': 'Не больше {count} за раз — нажмите на одну, чтобы заменить',
-  'home.zonesPicked': '{zones} — дальше {move}',
+  'home.zonesEmpty': 'Нажмите, где болит - не больше {count}',
+  'home.zonesFull': 'Не больше {count} за раз - нажмите на одну, чтобы заменить',
+  'home.zonesPicked': '{zones} - дальше {move}',
   'home.zoneJoin': ' · ',
 
   /**
@@ -169,14 +169,14 @@ export const HOME_RU = {
   'home.bandHurts': 'Больно',
   'home.bandHurtsBlurb': 'Сейчас она решает за вас.',
   'home.bandSevere': 'Сильно',
-  'home.bandSevereBlurb': 'Проблема — стоять на ней, а не бегать.',
+  'home.bandSevereBlurb': 'Проблема - стоять на ней, а не бегать.',
 };
 
 export const BRIEF_RU = {
   // ── Боль — то, что сказал сам человек ────────────────────────────────────
   flare: [
     [
-      { k: 'frame', text: 'сегодня —' },
+      { k: 'frame', text: 'сегодня -' },
       { k: 'metric', icon: 'rest', text: '{restMinutes}', tail: ',' },
       { k: 'frame', text: 'сидя. И всё.' },
     ],
@@ -186,7 +186,7 @@ export const BRIEF_RU = {
       { k: 'frame', text: 'Больше ничего.' },
     ],
     [
-      { k: 'frame', text: 'сегодня разгружаемся —' },
+      { k: 'frame', text: 'сегодня разгружаемся -' },
       { k: 'metric', icon: 'rest', text: '{restMinutes}', tail: ',' },
       { k: 'frame', text: 'без нагрузки на стопу.' },
     ],
@@ -215,10 +215,10 @@ export const BRIEF_RU = {
     [
       { k: 'frame', text: 'сегодня не тренировка, а' },
       { k: 'metric', icon: 'retest', text: '{tests}' },
-      { k: 'frame', text: '— чтобы потом было с чем сравнить.' },
+      { k: 'frame', text: '- чтобы потом было с чем сравнить.' },
     ],
     [
-      { k: 'frame', text: 'первый день —' },
+      { k: 'frame', text: 'первый день -' },
       { k: 'metric', icon: 'retest', text: '{tests}', tail: ',' },
       { k: 'frame', text: 'минуты на четыре. Это ваша точка отсчёта.' },
     ],
@@ -236,7 +236,7 @@ export const BRIEF_RU = {
       { k: 'frame', text: 'Посмотрим, что изменилось.' },
     ],
     [
-      { k: 'frame', text: 'день замеров —' },
+      { k: 'frame', text: 'день замеров -' },
       { k: 'metric', icon: 'retest', text: '{tests}', tail: ',' },
       { k: 'value', text: '{testMinutes}', tail: '.' },
     ],
@@ -249,7 +249,7 @@ export const BRIEF_RU = {
 
   'checkpoint-recap': [
     [
-      { k: 'frame', text: 'сегодня начинается новый блок —' },
+      { k: 'frame', text: 'сегодня начинается новый блок -' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
       { k: 'frame', text: 'Другая форма, другая нагрузка.' },
     ],
@@ -269,12 +269,12 @@ export const BRIEF_RU = {
   'first-week': [
     [
       { k: 'metric', icon: 'streak', text: '{dayOfPlan}', tail: '.' },
-      { k: 'frame', text: 'сегодня {work} —' },
+      { k: 'frame', text: 'сегодня {work} -' },
       { k: 'metric', icon: 'tasks', text: '{moves}', tail: ',' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'первые дни —' },
+      { k: 'frame', text: 'первые дни -' },
       { k: 'metric', icon: 'streak', text: '{planDay}', tail: ':' },
       { k: 'frame', text: '{work},' },
       { k: 'value', text: '{minutes}', tail: '.' },
@@ -284,7 +284,7 @@ export const BRIEF_RU = {
       { k: 'metric', icon: 'streak', text: '{planDay}', tail: '.' },
       {
         k: 'frame',
-        text: 'сегодня {work}. Первая неделя — про то, чтобы просто приходить, а не про усилие.',
+        text: 'сегодня {work}. Первая неделя - про то, чтобы просто приходить, а не про усилие.',
       },
     ],
   ],
@@ -293,7 +293,7 @@ export const BRIEF_RU = {
   'big-run': [
     [
       { k: 'frame', text: 'вчера была' },
-      { k: 'metric', icon: 'feet', text: 'самая длинная пробежка за месяц', tail: ' —' },
+      { k: 'metric', icon: 'feet', text: 'самая длинная пробежка за месяц', tail: ' -' },
       { k: 'value', text: '{distance}', tail: '.' },
       { k: 'frame', text: 'Сегодня' },
       { k: 'metric', icon: 'rest', text: 'легко', tail: '.' },
@@ -304,7 +304,7 @@ export const BRIEF_RU = {
       { k: 'frame', text: 'больше всего за четыре недели. Сегодня восстанавливаемся.' },
     ],
     [
-      { k: 'frame', text: 'вчера — самая длинная пробежка за месяц. Сегодня' },
+      { k: 'frame', text: 'вчера - самая длинная пробежка за месяц. Сегодня' },
       { k: 'metric', icon: 'rest', text: 'восстановление', tail: '.' },
     ],
   ],
@@ -314,7 +314,7 @@ export const BRIEF_RU = {
       { k: 'metric', icon: 'level', text: '{flights}' },
       {
         k: 'frame',
-        text: 'вчера — больше, чем в обычную неделю. Хороший повод сделать день полегче.',
+        text: 'вчера - больше, чем в обычную неделю. Хороший повод сделать день полегче.',
       },
     ],
     [
@@ -325,7 +325,7 @@ export const BRIEF_RU = {
     [
       { k: 'frame', text: 'вчера было много' },
       { k: 'metric', icon: 'level', text: 'лестниц', tail: '.' },
-      { k: 'frame', text: 'Сегодня — полегче.' },
+      { k: 'frame', text: 'Сегодня - полегче.' },
     ],
   ],
 
@@ -348,7 +348,7 @@ export const BRIEF_RU = {
       { k: 'frame', text: 'следующее утро у вас уже бывало тяжелее.' },
     ],
     [
-      { k: 'frame', text: 'день уже длинный —' },
+      { k: 'frame', text: 'день уже длинный -' },
       { k: 'metric', icon: 'feet', text: '{hours}', tail: '.' },
       { k: 'frame', text: 'Стоит присесть минут на десять.' },
     ],
@@ -363,15 +363,15 @@ export const BRIEF_RU = {
     [
       { k: 'frame', text: 'уже' },
       { k: 'metric', icon: 'feet', text: '{stepsToday}' },
-      { k: 'frame', text: '— это много. Если пятка ноет, лучше посидеть.' },
+      { k: 'frame', text: '- это много. Если пятка ноет, лучше посидеть.' },
     ],
     [
       { k: 'frame', text: 'вы сегодня прошли' },
       { k: 'metric', icon: 'feet', text: '{stepsToday}', tail: '.' },
-      { k: 'frame', text: 'Вечером растяните стопу — утром будет легче.' },
+      { k: 'frame', text: 'Вечером растяните стопу - утром будет легче.' },
     ],
     [
-      { k: 'frame', text: 'долгий день на ногах —' },
+      { k: 'frame', text: 'долгий день на ногах -' },
       { k: 'metric', icon: 'feet', text: '{stepsToday}', tail: '.' },
       { k: 'frame', text: 'Отметьте, как пятка, и план это учтёт.' },
     ],
@@ -385,11 +385,11 @@ export const BRIEF_RU = {
       // разбивается по пробелам, и точка отдельным «словом» уехала бы от того,
       // к чему относится.
       { k: 'metric', icon: 'sleep', text: '{sleep}', tail: '.' },
-      { k: 'frame', text: 'Сухожилия восстанавливаются ночью — сегодня' },
+      { k: 'frame', text: 'Сухожилия восстанавливаются ночью - сегодня' },
       { k: 'metric', icon: 'rest', text: 'полегче', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'всю неделю короткие ночи —' },
+      { k: 'frame', text: 'всю неделю короткие ночи -' },
       { k: 'metric', icon: 'sleep', text: '{sleep}' },
       { k: 'frame', text: 'в среднем. Сегодня немного убавим.' },
     ],
@@ -404,7 +404,7 @@ export const BRIEF_RU = {
     [
       { k: 'frame', text: 'пульс покоя' },
       { k: 'metric', icon: 'level', text: 'немного выше', tail: '.' },
-      { k: 'frame', text: 'Сегодня — в сторону восстановления.' },
+      { k: 'frame', text: 'Сегодня - в сторону восстановления.' },
     ],
     [
       { k: 'frame', text: 'пульс в покое' },
@@ -412,7 +412,7 @@ export const BRIEF_RU = {
       { k: 'frame', text: 'Идём аккуратно.' },
     ],
     [
-      { k: 'frame', text: 'организм ещё догоняет —' },
+      { k: 'frame', text: 'организм ещё догоняет -' },
       { k: 'metric', icon: 'level', text: 'пульс покоя выше', tail: '.' },
       { k: 'frame', text: 'Сегодня полегче.' },
     ],
@@ -433,7 +433,7 @@ export const BRIEF_RU = {
     [
       { k: 'frame', text: 'шаг на этой неделе медленнее вашего обычного.' },
       { k: 'metric', icon: 'gait', text: 'Ничего тревожного' },
-      { k: 'frame', text: '— но сегодня оставим полегче.' },
+      { k: 'frame', text: '- но сегодня оставим полегче.' },
     ],
   ],
 
@@ -441,13 +441,13 @@ export const BRIEF_RU = {
     [
       { k: 'frame', text: 'шаг стал' },
       { k: 'metric', icon: 'gait', text: 'менее ровным', tone: 'warn' },
-      { k: 'frame', text: '—' },
+      { k: 'frame', text: '-' },
       { k: 'value', text: '{today}', tone: 'warn' },
       { k: 'frame', text: 'против ваших обычных' },
       { k: 'value', text: '{usual}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'на этой неделе шаг менее ровный, чем обычно —' },
+      { k: 'frame', text: 'на этой неделе шаг менее ровный, чем обычно -' },
       { k: 'metric', icon: 'gait', text: '{today}', tone: 'warn' },
       { k: 'frame', text: 'против ваших обычных' },
       { k: 'value', text: '{usual}', tail: '.' },
@@ -469,12 +469,12 @@ export const BRIEF_RU = {
       { k: 'frame', text: 'Возвращайтесь завтра.' },
     ],
     [
-      { k: 'frame', text: 'сегодня сделано —' },
+      { k: 'frame', text: 'сегодня сделано -' },
       { k: 'metric', icon: 'done', text: '{days}', tone: 'good' },
       { k: 'frame', text: 'и продолжаем.' },
     ],
     [
-      { k: 'frame', text: 'сессия закрыта — это' },
+      { k: 'frame', text: 'сессия закрыта - это' },
       { k: 'metric', icon: 'done', text: '{streakDay}' },
       { k: 'frame', text: 'вашей серии.' },
     ],
@@ -491,7 +491,7 @@ export const BRIEF_RU = {
       { k: 'metric', icon: 'session', text: 'с малого', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'снова здесь — продолжим с того же места, только' },
+      { k: 'frame', text: 'снова здесь - продолжим с того же места, только' },
       { k: 'metric', icon: 'session', text: 'полегче', tail: '.' },
     ],
   ],
@@ -501,7 +501,7 @@ export const BRIEF_RU = {
     [
       { k: 'frame', text: 'по утрам' },
       { k: 'metric', icon: 'up', text: 'становится легче', tone: 'good' },
-      { k: 'frame', text: '— за месяц на' },
+      { k: 'frame', text: '- за месяц на' },
       { k: 'value', text: '{drop}', tone: 'good' },
       { k: 'frame', text: 'меньше.' },
     ],
@@ -542,7 +542,7 @@ export const BRIEF_RU = {
     [
       { k: 'frame', text: 'шаг' },
       { k: 'metric', icon: 'done', text: 'снова ровный', tone: 'good' },
-      { k: 'frame', text: '— уже второй день.' },
+      { k: 'frame', text: '- уже второй день.' },
     ],
     [
       { k: 'frame', text: 'всё выровнялось.' },
@@ -558,20 +558,20 @@ export const BRIEF_RU = {
       { k: 'frame', text: 'с телефоном в кармане.' },
     ],
     [
-      { k: 'frame', text: 'пока собираю картину вашей нормы —' },
+      { k: 'frame', text: 'пока собираю картину вашей нормы -' },
       { k: 'metric', icon: 'window', text: 'ещё несколько дней' },
       { k: 'frame', text: 'и будет видно.' },
     ],
     [
       { k: 'frame', text: 'вашей истории пока маловато.' },
       { k: 'metric', icon: 'window', text: 'Ещё несколько дней' },
-      { k: 'frame', text: '— и я смогу сравнивать.' },
+      { k: 'frame', text: '- и я смогу сравнивать.' },
     ],
   ],
 
   'goal-back': [
     [
-      { k: 'frame', text: 'каждое занятие — ещё шаг' },
+      { k: 'frame', text: 'каждое занятие - ещё шаг' },
       { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
       { k: 'frame', text: 'Сегодня' },
       { k: 'value', text: '{minutes}', tail: '.' },
@@ -585,11 +585,11 @@ export const BRIEF_RU = {
     [
       { k: 'frame', text: 'сегодня' },
       { k: 'value', text: '{minutes}' },
-      { k: 'frame', text: '— и вы ещё ближе' },
+      { k: 'frame', text: '- и вы ещё ближе' },
       { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
     ],
     [
-      { k: 'frame', text: 'понемногу каждый день — так и возвращаются' },
+      { k: 'frame', text: 'понемногу каждый день - так и возвращаются' },
       { k: 'metric', icon: 'session', text: '{backTo}', tail: '.' },
     ],
   ],
@@ -601,7 +601,7 @@ export const BRIEF_RU = {
       { k: 'frame', text: 'Так держать.' },
     ],
     [
-      { k: 'frame', text: 'вы хотели регулярности — вот она:' },
+      { k: 'frame', text: 'вы хотели регулярности - вот она:' },
       { k: 'metric', icon: 'streak', text: '{days}', tail: '.' },
     ],
     [
@@ -622,14 +622,14 @@ export const BRIEF_RU = {
       { k: 'frame', text: 'Чем чаще, тем сильнее.' },
     ],
     [
-      { k: 'frame', text: 'сильнее — это понемногу, но часто. Сегодня' },
+      { k: 'frame', text: 'сильнее - это понемногу, но часто. Сегодня' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
   ],
 
   'goal-injuryfree': [
     [
-      { k: 'frame', text: 'лучшая защита от травм — понемногу каждый день. Сегодня' },
+      { k: 'frame', text: 'лучшая защита от травм - понемногу каждый день. Сегодня' },
       { k: 'value', text: '{minutes}', tail: '.' },
     ],
     [
@@ -638,13 +638,13 @@ export const BRIEF_RU = {
     ],
     [
       { k: 'value', text: '{minutes}' },
-      { k: 'frame', text: 'в день — и травмы обходят стороной.' },
+      { k: 'frame', text: 'в день - и травмы обходят стороной.' },
     ],
   ],
 
   'no-data': [
     [
-      { k: 'frame', text: 'я не вижу вашу походку — носите телефон в' },
+      { k: 'frame', text: 'я не вижу вашу походку - носите телефон в' },
       { k: 'metric', icon: 'pocket', text: 'кармане', tail: ',' },
       { k: 'frame', text: 'а не в сумке, и я её поймаю.' },
     ],
@@ -654,7 +654,7 @@ export const BRIEF_RU = {
       { k: 'frame', text: 'и ровная дорога.' },
     ],
     [
-      { k: 'frame', text: 'пока читать нечего — датчикам нужен телефон в' },
+      { k: 'frame', text: 'пока читать нечего - датчикам нужен телефон в' },
       { k: 'metric', icon: 'pocket', text: 'кармане' },
       { k: 'frame', text: 'во время ходьбы.' },
     ],
@@ -663,7 +663,7 @@ export const BRIEF_RU = {
   // ── Обычные дни ──────────────────────────────────────────────────────────
   'quiet-session': [
     [
-      { k: 'frame', text: 'сегодня —' },
+      { k: 'frame', text: 'сегодня -' },
       { k: 'metric', icon: 'session', text: '{move}', tail: '.' },
       { k: 'frame', text: 'Именно на этом держится план.' },
     ],
@@ -672,13 +672,13 @@ export const BRIEF_RU = {
   'quiet-progress': [
     [
       { k: 'metric', icon: 'streak', text: '{dayOfPlan}', tail: '.' },
-      { k: 'frame', text: 'Самое трудное — начать — уже позади.' },
+      { k: 'frame', text: 'Самое трудное - начать - уже позади.' },
     ],
   ],
 
   'quiet-load-big': [
     [
-      { k: 'frame', text: 'вчера был большой день на ногах —' },
+      { k: 'frame', text: 'вчера был большой день на ногах -' },
       { k: 'metric', icon: 'feet', text: '{steps}', tail: '.' },
       { k: 'frame', text: 'Это контекст, а не вывод.' },
     ],
@@ -704,7 +704,7 @@ export const BRIEF_RU = {
     [
       { k: 'frame', text: 'если сегодня бежите, держите каденс примерно на' },
       { k: 'metric', icon: 'up', text: '{cadence} выше обычного', tail: '.' },
-      { k: 'frame', text: 'Шаг короче — меньше нагрузки на пятку.' },
+      { k: 'frame', text: 'Шаг короче - меньше нагрузки на пятку.' },
     ],
   ],
 

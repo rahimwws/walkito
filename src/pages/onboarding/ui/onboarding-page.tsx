@@ -1024,18 +1024,38 @@ const CONFIRM_MS = 900;
               CTA arrives — anything extra inside it overflows straight into the
               safe-area padding, which put this on top of the home indicator. */}
           {step.kind === 'intro' && (!bare || introReady) && (
-            <Pressable
-              accessibilityRole="button"
-              onPress={() => {
-                Haptics.selectionAsync();
-                setEmailSignIn(true);
-              }}
-              disabled={authing}
-              style={({ pressed }) => [styles.altAuth, pressed && { opacity: 0.6 }]}>
-              <Text style={[styles.altAuthLabel, { color: meter.caption }]}>
-                {t('onboarding.intro.emailCta')}
-              </Text>
-            </Pressable>
+            <View style={styles.altAuthRow}>
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => {
+                  Haptics.selectionAsync();
+                  setEmailSignIn(true);
+                }}
+                disabled={authing}
+                style={({ pressed }) => [styles.altAuth, pressed && { opacity: 0.6 }]}>
+                <Text style={[styles.altAuthLabel, { color: meter.caption }]}>
+                  {t('onboarding.intro.emailCta')}
+                </Text>
+              </Pressable>
+              {/* Signing in is optional. It only gives the app a name and a
+                  support address — the account behind the app is anonymous
+                  either way — and App Review 5.1.1 does not allow gating the
+                  flow on an account the app does not need. */}
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => {
+                  Haptics.selectionAsync();
+                  track('sign_in_skipped');
+                  setSignInFailed(false);
+                  step1(true);
+                }}
+                disabled={authing}
+                style={({ pressed }) => [styles.altAuth, pressed && { opacity: 0.6 }]}>
+                <Text style={[styles.altAuthLabel, { color: meter.caption }]}>
+                  {t('onboarding.intro.skip')}
+                </Text>
+              </Pressable>
+            </View>
           )}
         </View>
       )}
@@ -1066,6 +1086,7 @@ const CONFIRM_MS = 900;
 }
 
 const styles = StyleSheet.create({
+  altAuthRow: { flexDirection: 'row', justifyContent: 'center', gap: 28 },
   altAuth: { alignItems: 'center', paddingTop: 16, paddingBottom: 4 },
   altAuthLabel: { fontSize: 15, fontFamily: fonts.medium, letterSpacing: -0.2 },
   root: {

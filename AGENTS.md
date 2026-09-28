@@ -145,3 +145,13 @@ track('session_completed', { day, block, kind, checkpoint });
 - **Identity:** PostHog is identified as the RevenueCat app user id, and RevenueCat gets `$posthogUserId` — see `linkAnalytics` in `entities/purchase/model/revenuecat.ts`. Keep the two ids the same or the funnel breaks at the paywall.
 - **Onboarding step keys and `AcquisitionSource` values are analytics identifiers.** Renaming one splits every chart at the day it shipped.
 - Dev builds are tagged `app_variant = development`, which the PostHog project treats as a test account. Dashboards: PostHog project 626472 (org "Walkito").
+
+# Performance: EAS Insights + Observe
+
+- `expo-insights` has no API: linked into the binary, it reports cold starts to EAS → Insights → App usage.
+- `expo-observe` goes through `@/shared/lib/observe`, never the SDK directly. It is configured once in `root-layout.tsx` with the expo-router integration (per-route `cold_ttr` / `warm_ttr` / `tti`), and `track()` mirrors every analytics event into it. Both are lazily required, so a dev client built before they were linked just drops metrics.
+- **No endless animations on mounted-but-hidden screens.** The program overlay and all tabs stay mounted. A `withRepeat` there runs on the UI thread forever: the dots on every `DayLink` once added up to several hundred and heated the phone. Gate looping motion on `useIsFocused()` or on a single element, the way `DayLink.animated`, `PathNode` and `Glow paused` do.
+
+# Updates
+
+`features/app-update` checks on launch and on foreground (at most every 30 min, after onboarding). A newer App Store version (iTunes lookup, production builds only) comes first. Otherwise an EAS Update gets downloaded and the app reloads. "Later" snoozes that offer for 24 h.

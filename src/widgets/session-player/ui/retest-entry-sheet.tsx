@@ -21,7 +21,6 @@ import { PrimaryButton } from '@/shared/ui/primary-button';
 import { RetestResult } from './retest-result';
 
 export type RetestEntrySheetProps = {
-  visible: boolean;
   /** The checkpoint day being measured. */
   dayNumber: number;
   onDone: () => void;
@@ -66,7 +65,7 @@ const GOAL_KEY: Readonly<Record<string, Key>> = {
  * An overlay rather than a `Modal` — the player already runs inside a
  * presented sheet. See `CelebrationSheet`.
  */
-export function RetestEntrySheet({ visible, dayNumber, onDone }: RetestEntrySheetProps) {
+export function RetestEntrySheet({ dayNumber, onDone }: RetestEntrySheetProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -88,8 +87,6 @@ export function RetestEntrySheet({ visible, dayNumber, onDone }: RetestEntryShee
 
   const [values, setValues] = useState<Record<Field, number>>(start);
   const [result, setResult] = useState<Retest | null>(null);
-
-  if (!visible) return null;
 
   // The sore side is the one being rehabilitated — the first column of every
   // stored result. With both sides sore, or no answer, it is simply left/right.

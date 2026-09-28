@@ -1,5 +1,5 @@
 import { FireIcon } from 'phosphor-react-native/src/icons/Fire';
-import { useRouter } from 'expo-router';
+import { useIsFocused, useRouter } from 'expo-router';
 import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
@@ -85,6 +85,9 @@ function todayLines(): { title: string; subtitle: string } {
  */
 export function HomePage() {
   const router = useRouter();
+  /** Home stays mounted under the other tabs; the drift has no reason to run
+   * there. */
+  const focused = useIsFocused();
   const onScroll = useMinimizeOnScroll();
   const insets = useSafeAreaInsets();
   const scheme = useColorScheme() === 'dark' ? 'dark' : 'light';
@@ -129,7 +132,7 @@ export function HomePage() {
           screen. It drifts here — Home is a screen people sit on, and the slow
           movement is what keeps a still background from looking like a
           screenshot. */}
-      <Glow animated />
+      <Glow animated paused={!focused} />
       <Animated.ScrollView
         onScroll={onScroll}
         scrollEventThrottle={16}

@@ -102,6 +102,10 @@ export function PainMapStep({ value, onChange }: PainMapStepProps) {
       </Text>
 
       <NoneChip selected={none} label={t('onboarding.pain.none')} onPress={onNone} />
+
+      {/* Where the user first tells the app about pain, so where it says what
+          it is not. App Review 1.4.1 wants health apps to say so in the app. */}
+      <Text style={[styles.disclaimer, { color: meter.unit }]}>{t('onboarding.pain.disclaimer')}</Text>
     </View>
   );
 }
@@ -171,6 +175,13 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: fonts.medium,
     letterSpacing: -0.1,
+    textAlign: 'center',
+  },
+  disclaimer: {
+    marginTop: 14,
+    fontSize: 11.5,
+    lineHeight: 16,
+    fontFamily: fonts.medium,
     textAlign: 'center',
   },
   chipSlot: {

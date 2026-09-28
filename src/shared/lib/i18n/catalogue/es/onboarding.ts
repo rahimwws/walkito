@@ -46,6 +46,7 @@ export const ONBOARDING_ES = {
   'onboarding.intro.footnote': '~2 min de configuración',
   'onboarding.intro.signInFailed': 'El inicio de sesión no se completó. Inténtalo otra vez.',
   'onboarding.intro.emailCta': 'Iniciar sesión con correo',
+  'onboarding.intro.skip': 'Omitir por ahora',
 
   // ── Email sign-in sheet ──────────────────────────────────────────────────
   'onboarding.email.title': 'Iniciar sesión',
@@ -109,6 +110,8 @@ export const ONBOARDING_ES = {
   'onboarding.pain.blurb': 'Toca los puntos de la pierna, hasta {count}.',
   'onboarding.pain.full': 'Hasta {count} a la vez. Toca uno para cambiarlo.',
   'onboarding.pain.none': 'Ahora no me duele nada',
+  'onboarding.pain.disclaimer':
+    'No es un consejo médico. Si el dolor es agudo, empeora o hay hinchazón o entumecimiento, consulta a un médico.',
 
   'onboarding.side.title': '¿De qué lado, {name}?',
   'onboarding.side.blurb': 'Las pruebas comparan una pierna con la otra, así que necesitamos saber con cuál trabajamos.',
@@ -234,7 +237,7 @@ export const ONBOARDING_ES = {
     'Un plan solo funciona si aparece. Deja que Walkito te diga cuándo el día trae sesión.',
   'onboarding.notify.promise1': 'Un aviso los días que tu plan tiene sesión',
   'onboarding.notify.promise2': 'Un apunte cuando cambie lo que vas a hacer',
-  'onboarding.notify.promise3': 'Nada más. Sin rachas que te hagan sentir culpable.',
+  'onboarding.notify.promise3': 'Y de vez en cuando un descuento, nada más.',
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'ahora',
   'onboarding.notify.bannerBody':
@@ -305,19 +308,19 @@ export const ONBOARDING_ES = {
   // ── Social proof ─────────────────────────────────────────────────────────
   'onboarding.social.welcomeNamed': 'Te damos la bienvenida, {name}',
   'onboarding.social.welcome': 'Te damos la bienvenida',
-  'onboarding.social.crest': 'Únete a más de 40.000 corredores\nque entrenan sin dolor',
-  'onboarding.testimonial1.before': 'Seis meses con dolor de espinilla y corrí',
-  'onboarding.testimonial1.lead': 'un 10k sin dolor',
-  'onboarding.testimonial1.after': ' a las ocho semanas.',
-  'onboarding.testimonial1.name': 'Marta K.',
-  'onboarding.testimonial2.before': 'Encontró',
-  'onboarding.testimonial2.lead': 'los gemelos, no las rodillas.',
-  'onboarding.testimonial2.after': ' El trabajo de fuerza por fin tuvo sentido.',
-  'onboarding.testimonial2.name': 'Daniel R.',
-  'onboarding.testimonial3.before': 'Volví de una lesión de Aquiles',
-  'onboarding.testimonial3.lead': 'sin perder la distancia',
-  'onboarding.testimonial3.after': ' que ya tenía.',
-  'onboarding.testimonial3.name': 'Priya S.',
+  'onboarding.social.crest': 'Unos minutos al día.\nSin gimnasio ni conjeturas.',
+  'onboarding.testimonial1.before': 'Di cómo está el pie y',
+  'onboarding.testimonial1.lead': 'la sesión del día se ajusta',
+  'onboarding.testimonial1.after': ' a eso.',
+  'onboarding.testimonial1.name': 'Cada mañana',
+  'onboarding.testimonial2.before': 'Ejercicios cortos y guiados',
+  'onboarding.testimonial2.lead': 'en casa o en el trabajo',
+  'onboarding.testimonial2.after': ': basta con el suelo y una pared.',
+  'onboarding.testimonial2.name': 'Cada sesión',
+  'onboarding.testimonial3.before': 'Un retest de un minuto',
+  'onboarding.testimonial3.lead': 'muestra lo que cambió',
+  'onboarding.testimonial3.after': ', con números y no con sensaciones.',
+  'onboarding.testimonial3.name': 'Cada dos semanas',
 
   // ── Outlook ──────────────────────────────────────────────────────────────
   'onboarding.outlook.title': '{name}, esto es lo que viene',
@@ -325,9 +328,15 @@ export const ONBOARDING_ES = {
   'onboarding.outlook.blurbNone': 'Tus piernas hoy y adónde las lleva el plan.',
   'onboarding.outlook.today': 'Hoy',
   'onboarding.outlook.month': 'Mes {n}',
-  'onboarding.outlook.lessPain': 'menos dolor',
-  'onboarding.outlook.stronger': 'más fuerte',
-  'onboarding.outlook.footnote': 'Progreso típico siguiendo el plan. El tuyo puede variar.',
+  'onboarding.outlook.pain0': 'Molesta',
+  'onboarding.outlook.pain1': 'Se calma',
+  'onboarding.outlook.pain2': 'Mejor',
+  'onboarding.outlook.pain3': 'Más tranquilo',
+  'onboarding.outlook.strength0': 'Inicio',
+  'onboarding.outlook.strength1': 'Despierta',
+  'onboarding.outlook.strength2': 'Crece',
+  'onboarding.outlook.strength3': 'Más fuerte',
+  'onboarding.outlook.footnote': 'Una ilustración de cómo avanza el plan, no una predicción. Cada persona se recupera a su ritmo.',
 
   // ── Referral ─────────────────────────────────────────────────────────────
   'onboarding.referral.title': '¿Tienes un código de invitación?',

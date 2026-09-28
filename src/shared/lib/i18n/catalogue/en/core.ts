@@ -46,6 +46,8 @@ export const CORE_EN = {
   'settings.privacy': 'Privacy Policy',
   'settings.privacyHint': 'What we store, and where',
   'settings.unpublished': 'Not published yet',
+  'settings.disclaimer':
+    'Walkito is a training aid, not medical advice, and it does not diagnose or treat any condition. If pain is sharp, getting worse, or comes with swelling, numbness or fever, stop and see a doctor.',
 
   // ── Streak ───────────────────────────────────────────────────────────────
   // `streak.title` is the clearest example of why fragments had to go: English
@@ -162,6 +164,16 @@ export const CORE_EN = {
   'block.sustain': 'Sustain',
 
   // ── Common ───────────────────────────────────────────────────────────────
+  'update.otaTitle': 'Update ready',
+  'update.otaBlurb': 'A fresh version of Walkito is ready. It takes a few seconds, then the app restarts where you were.',
+  'update.storeTitle': 'New version available',
+  'update.storeBlurb': 'Walkito {version} is in the App Store, with fixes and improvements.',
+  'update.install': 'Update now',
+  'update.openStore': 'Open the App Store',
+  'update.applying': 'Updating…',
+  'update.retry': 'Try again',
+  'update.failed': 'The download didn’t finish. Check your connection and try again.',
+  'update.later': 'Later',
   'common.back': 'Back',
   'common.close': 'Close',
   'common.profile': 'Profile',

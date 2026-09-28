@@ -1,9 +1,11 @@
+import { useIsFocused } from 'expo-router';
 import Flag03Icon from '@hugeicons/core-free-icons/Flag03Icon';
 import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
 import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import { memo, useEffect, useRef } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
+  cancelAnimation,
   Easing,
   ReduceMotion,
   useAnimatedStyle,
@@ -105,8 +107,13 @@ export const PathNode = memo(function PathNode({
   const pop = useSharedValue(1);
   const pulse = useSharedValue(0);
 
+  /** The tab stays mounted behind the others; the pulse only runs while it
+   * can be seen. */
+  const focused = useIsFocused();
+
   useEffect(() => {
-    if (!active) {
+    if (!active || !focused) {
+      cancelAnimation(pulse);
       pulse.value = 0;
       return;
     }
@@ -120,7 +127,7 @@ export const PathNode = memo(function PathNode({
       -1,
       false,
     );
-  }, [active, pulse]);
+  }, [active, focused, pulse]);
 
   // Fires only on the transition out of `today` — the node the user just
   // finished pops, the twenty behind it sit still.

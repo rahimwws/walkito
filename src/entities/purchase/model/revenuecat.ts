@@ -1,4 +1,4 @@
-import { identify, track, type PurchaseProps } from '@/shared/lib/analytics';
+import { identify, setPerson, track, type PurchaseProps } from '@/shared/lib/analytics';
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 import Purchases, {
@@ -84,8 +84,12 @@ const listeners = new Set<() => void>();
  */
 const packages = new Map<string, PurchasesPackage>();
 
+/** Whether this person has been marked as a sandbox buyer in analytics yet. */
+let flaggedSandbox = false;
+
 function announce(info: CustomerInfo) {
   lastInfo = info;
+  flagSandbox(info);
   const end = programEnd(info);
   // A moved end date is news even when access did not flip: the expiry
   // reminder is scheduled from it, and a friend's free weeks have to push that
@@ -100,6 +104,25 @@ function announce(info: CustomerInfo) {
   if (next === active && !endMoved) return;
   active = next;
   listeners.forEach((fire) => fire());
+}
+
+/**
+ * Marks a person who bought through a sandbox — TestFlight, Xcode, the Test
+ * Store — so PostHog can leave them out of revenue.
+ *
+ * RevenueCat's server-side events say which store a purchase came from but not
+ * whether it was real: a TestFlight purchase arrives as `APP_STORE`, identical
+ * to a paying customer's. The SDK does know, per entitlement, so it is written
+ * onto the person, and the project's test-account filter excludes
+ * `purchases_sandbox = true`. Once per process is enough; the flag never goes
+ * back to false.
+ */
+function flagSandbox(info: CustomerInfo): void {
+  if (flaggedSandbox) return;
+  const sandbox = Object.values(info.entitlements.all).some((ent) => ent.isSandbox);
+  if (!sandbox) return;
+  flaggedSandbox = true;
+  setPerson({ purchases_sandbox: true });
 }
 
 /**

@@ -173,15 +173,10 @@ export function NoteSheet({ visible, onDone }: Props) {
    * and comes back to whatever the app was showing when they left, so Home has
    * to already be underneath. Waiting on the link would leave them returning to
    * a dead onboarding screen.
-   *
-   * With no id configured yet (`APP_STORE_REVIEW_URL` is null) this is simply
-   * a dismissal — the note still did its job.
    */
   const rate = () => {
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-    if (APP_STORE_REVIEW_URL != null) {
-      void Linking.openURL(APP_STORE_REVIEW_URL).catch(() => {});
-    }
+    void Linking.openURL(APP_STORE_REVIEW_URL).catch(() => {});
     onDone();
   };
 

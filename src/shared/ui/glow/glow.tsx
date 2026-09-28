@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useSyncExternalStore } from 'react';
 import { StyleSheet, useWindowDimensions } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
+  cancelAnimation,
   useAnimatedStyle,
   useSharedValue,
   withRepeat,
@@ -98,7 +99,48 @@ export type GlowProps = {
    * something new arrives every few seconds already, and a second moving thing
    * behind it is noise. */
   animated?: boolean;
+  /** Hold the drift where it is. For a screen that is mounted but not being
+   * looked at — a tab in the background keeps its tree alive, and three
+   * full-width layers re-composited every frame behind a session player were
+   * a steady share of what made the phone warm. */
+  paused?: boolean;
 };
+
+/**
+ * Anything on screen that should stop the drift wherever a Glow is mounted.
+ *
+ * A count rather than a flag, so two holders cannot release each other. The
+ * session player takes one for its whole life: it is presented over Home in a
+ * page sheet, which leaves Home rendering — and animating — underneath it.
+ */
+let holders = 0;
+const listeners = new Set<() => void>();
+
+function emit() {
+  for (const listener of listeners) listener();
+}
+
+/** Stops every drifting Glow until the returned release is called. */
+export function holdGlowStill(): () => void {
+  holders += 1;
+  emit();
+  let released = false;
+  return () => {
+    if (released) return;
+    released = true;
+    holders -= 1;
+    emit();
+  };
+}
+
+function subscribe(listener: () => void) {
+  listeners.add(listener);
+  return () => {
+    listeners.delete(listener);
+  };
+}
+
+const heldStill = () => holders > 0;
 
 /**
  * The violet wash behind the app.
@@ -120,8 +162,10 @@ export type GlowProps = {
  * every frame, where translating the views they are painted on costs nothing
  * and keeps running while a list is scrolling.
  */
-export function Glow({ animated = false }: GlowProps) {
+export function Glow({ animated = false, paused = false }: GlowProps) {
   const scheme = useColorScheme();
+  const held = useSyncExternalStore(subscribe, heldStill, heldStill);
+  const still = paused || held;
   const { height } = useWindowDimensions();
 
   // Light mode gets roughly half the strength. The same alphas that read as a
@@ -149,7 +193,13 @@ export function Glow({ animated = false }: GlowProps) {
   return (
     <>
       {BLOOMS.map((bloom) => (
-        <Bloom key={bloom.key} bloom={bloom} alpha={a} size={height * REACH + OVERSCAN} />
+        <Bloom
+          key={bloom.key}
+          bloom={bloom}
+          alpha={a}
+          size={height * REACH + OVERSCAN}
+          paused={still}
+        />
       ))}
     </>
   );
@@ -159,10 +209,12 @@ function Bloom({
   bloom,
   alpha,
   size,
+  paused,
 }: {
   bloom: (typeof BLOOMS)[number];
   alpha: number;
   size: number;
+  paused: boolean;
 }) {
   /**
    * A clock, not a position.
@@ -178,8 +230,21 @@ function Bloom({
    * endpoints to stop at, because the path never ends.
    */
   const phase = useSharedValue(0);
+  /**
+   * Where the clock stood when it was last stopped. A pause cancels the loop,
+   * and restarting `withTiming` from part-way through would run the first lap
+   * at a different speed; restarting from zero and carrying the offset keeps
+   * the drift continuous across the stop.
+   */
+  const offset = useSharedValue(0);
 
   useEffect(() => {
+    if (paused) {
+      cancelAnimation(phase);
+      return undefined;
+    }
+    offset.value = (offset.value + phase.value) % 1;
+    phase.value = 0;
     phase.value = withRepeat(
       withTiming(1, {
         duration: CYCLE_MS,
@@ -189,11 +254,13 @@ function Bloom({
       -1,
       false,
     );
-  }, [phase]);
+    return () => cancelAnimation(phase);
+  }, [phase, offset, paused]);
 
   const drift = useAnimatedStyle(() => {
-    const turn = (rate: number, offset: number) =>
-      Math.sin((phase.value * rate + offset) * 2 * Math.PI);
+    const clock = (phase.value + offset.value) % 1;
+    const turn = (rate: number, start: number) =>
+      Math.sin((clock * rate + start) * 2 * Math.PI);
     return {
       transform: [
         { translateX: turn(bloom.xRate, bloom.xPhase) * bloom.x },

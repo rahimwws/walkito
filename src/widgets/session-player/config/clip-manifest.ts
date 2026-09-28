@@ -40,12 +40,17 @@ export const CLIPS: Readonly<Record<string, ClipEntry>> = {
   band_inversion: { file: '14_band_inversion.mp4', bytes: 1199592, hash: 'b9c2c7255df74174' },
   // Not a catalogue exercise: the single-leg calf raise the retest measures,
   // facing the viewer so the lifted leg and the heel rise both read.
-  retest_calf_raise: { file: 'retest.mp4', bytes: 2019794, hash: 'cdf781b4ad0a2133' },
+  //
+  // `_v2`: re-encoded from 1080p to 720p like every other clip (half the size,
+  // and a lighter decode during the session). A new object name rather than an
+  // overwrite, so the CDN cannot serve the old file against the new size, and
+  // builds already installed keep fetching `retest.mp4`.
+  retest_calf_raise: { file: 'retest_v2.mp4', bytes: 993491, hash: '9cd0221e0e59b0f3' },
 };
 
 /** What a full prefetch will cost, in bytes. Printed before it starts, because
  * "downloading…" with no figure is the kind of progress nobody trusts. */
-export const CLIPS_TOTAL_BYTES = 16916159;
+export const CLIPS_TOTAL_BYTES = 15889856;
 
 /**
  * Six of the eighteen exercises have no clip: `heel_raise_plain`,

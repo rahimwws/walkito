@@ -1,6 +1,6 @@
 name: Release
 
-# Every push to main, and on demand.
+# On demand. (It used to run on every push to main.)
 #
 # Pushing is enough for the common case. A JavaScript or asset change goes out
 # over the air by itself — that is safe to automate because the checks gate it,
@@ -10,9 +10,11 @@ name: Release
 # A native change is a different thing entirely: it costs a builder, and on
 # production it costs an App Store review that cannot be taken back. So the
 # workflow stops and asks.
+#
+# Manual only for now: a push to main no longer starts it. Run it with
+#   eas workflow:run release.yml
+# and put the `push` trigger back when releases should follow main again.
 on:
-  push:
-    branches: [main]
   workflow_dispatch: {}
 
 jobs:

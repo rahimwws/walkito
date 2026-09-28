@@ -163,16 +163,12 @@ export const NOTIFICATIONS_EN = {
   'notifications.winbackDay30': 'Still here if the foot starts talking again.',
 
   // ── Leaving the offer ────────────────────────────────────────────────────
-  // Two messages a second apart, sent as the app goes to the background. The
-  // first only has to stop the thumb and asks for nothing; the second is the
-  // reason to turn around. The stretched vowels are deliberate in every
-  // language — this is a person calling after you, not a mail-merge.
-  'notifications.offerPleaNamed': '{name}, stoppp',
-  'notifications.offerPlea': 'Stoppp',
-  'notifications.offerPleaBody': 'Pleeease.',
-  /** Names the product: "Take 70% off" alone does not say off what. */
-  'notifications.offerDiscountTitle': 'Take {percent}% off the 12-week program',
-  'notifications.offerDiscountBody': 'Tap to grab it.',
+  // One message as the app goes to the background, only for people who
+  // switched offers on. Says what is on offer and asks for nothing more — it
+  // names the program, because "{percent}% off" alone does not say off what.
+  'notifications.offerWaitNamed': '{name}, before you go — {percent}% off',
+  'notifications.offerWait': 'Before you go — {percent}% off',
+  'notifications.offerWaitBody': 'Your 12-week program is waiting at a lower price. Tap to see it.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   // The body is the part that matters. Somebody who reads "your access ends"

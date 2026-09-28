@@ -2,6 +2,7 @@ import { describe, expect, test } from 'bun:test';
 
 import { LANGUAGES, translatorFor } from '../src/shared/lib/i18n';
 import {
+  LEG_VIEW,
   MAX_ZONES,
   PAIN_ZONES,
   ZONE_LABEL_KEYS,
@@ -27,22 +28,26 @@ import { RELIEF_LIMIT } from '../src/pages/home/model/zone-relief';
 
 /** The drawing as laid out on a phone: the box keeps the viewBox aspect ratio,
  * so these are the real numbers the component passes in. */
-const SIZE = { width: 368, height: 548 };
+const SIZE = { width: 180, height: (180 * LEG_VIEW.height) / LEG_VIEW.width };
 
 /** viewBox point → the view coordinates a tap there would produce. */
 function tapAt(vx: number, vy: number) {
-  return zoneAt(((vx - 0) / 368) * SIZE.width, ((vy + 4) / 548) * SIZE.height, SIZE);
+  return zoneAt(
+    ((vx - LEG_VIEW.x) / LEG_VIEW.width) * SIZE.width,
+    ((vy - LEG_VIEW.y) / LEG_VIEW.height) * SIZE.height,
+    SIZE,
+  );
 }
 
 describe('hit testing', () => {
   const cases: readonly { zone: LegZone; x: number; y: number; where: string }[] = [
-    { zone: 'heel', x: 138, y: 482, where: 'the heel' },
-    { zone: 'arch', x: 236, y: 494, where: 'the arch' },
-    { zone: 'achilles', x: 118, y: 380, where: 'the achilles' },
-    { zone: 'toes', x: 362, y: 494, where: 'the toes' },
-    { zone: 'ball', x: 322, y: 506, where: 'the ball of the foot' },
-    { zone: 'calf', x: 84, y: 130, where: 'the calf' },
-    { zone: 'soleus', x: 140, y: 240, where: 'the soleus' },
+    { zone: 'heel', x: 250, y: 1530, where: 'the heel' },
+    { zone: 'arch', x: 430, y: 1555, where: 'the arch' },
+    { zone: 'achilles', x: 272, y: 1240, where: 'the achilles' },
+    { zone: 'toes', x: 770, y: 1570, where: 'the toes' },
+    { zone: 'ball', x: 600, y: 1580, where: 'the ball of the foot' },
+    { zone: 'calf', x: 200, y: 450, where: 'the calf' },
+    { zone: 'soleus', x: 255, y: 850, where: 'the soleus' },
   ];
 
   for (const { zone, x, y, where } of cases) {
@@ -53,15 +58,15 @@ describe('hit testing', () => {
 
   test('the heel and the arch do not bleed into each other', () => {
     // Adjacent centres, and the two most likely to be confused: both are the
-    // underside of the foot and they sit a hundred points apart.
-    expect(tapAt(150, 485)).toBe('heel');
-    expect(tapAt(250, 494)).toBe('arch');
+    // underside of the foot and they sit a hand's width apart.
+    expect(tapAt(290, 1520)).toBe('heel');
+    expect(tapAt(400, 1550)).toBe('arch');
   });
 
   test('a tap well off the leg selects nothing', () => {
-    // The empty margin to the right of the calf. Selecting "whatever is least
-    // far away" there would mark a zone the user never touched.
-    expect(tapAt(366, 40)).toBeNull();
+    // The empty margin in front of the shin. Selecting "whatever is least far
+    // away" there would mark a zone the user never touched.
+    expect(tapAt(850, 300)).toBeNull();
   });
 
   test('an unmeasured box selects nothing rather than dividing by zero', () => {
@@ -100,8 +105,8 @@ describe('the zone list', () => {
     // A zone in the list with no centre is unreachable: `zoneAt` skips it, so
     // it is drawn, documented, and impossible to select.
     const unreachable = PAIN_ZONES.filter((zone) => {
-      for (let x = 0; x <= 368; x += 4) {
-        for (let y = -4; y <= 544; y += 4) {
+      for (let x = LEG_VIEW.x; x <= LEG_VIEW.x + LEG_VIEW.width; x += 10) {
+        for (let y = LEG_VIEW.y; y <= LEG_VIEW.y + LEG_VIEW.height; y += 10) {
           if (tapAt(x, y) === zone) return false;
         }
       }

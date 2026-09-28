@@ -10,7 +10,7 @@ import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 /**
- * Language, then the documents.
+ * Language, then what App Review asks to be findable.
  *
  * It used to be the appearance picker. That went when the app became dark-only:
  * a settings screen whose single control is a choice between one option is
@@ -18,7 +18,8 @@ import { useColorScheme } from '@/shared/lib/theme';
  * discovering there is nothing to decide. The language picker is the control
  * that earns the screen back.
  *
- * Below it is what Apple requires to be reachable from a subscribing app.
+ * Below it is what Apple requires to be reachable: the documents a subscribing
+ * app must link, and the line that says this is not medical advice.
  *
  * The list embeds `LanguageOptions` directly rather than opening
  * `LanguageSheet` — this screen is already a form sheet, and a sheet inside a
@@ -94,6 +95,8 @@ export function SettingsPage() {
           );
         })}
       </View>
+
+      <Text style={[styles.disclaimer, { color: meter.unit }]}>{t('settings.disclaimer')}</Text>
     </View>
   );
 }
@@ -121,4 +124,5 @@ const styles = StyleSheet.create({
   rowText: { flex: 1 },
   rowLabel: { fontSize: 16, fontFamily: fonts.semibold, letterSpacing: -0.2 },
   rowHint: { fontSize: 13, fontFamily: fonts.medium, marginTop: 1 },
+  disclaimer: { fontSize: 12, lineHeight: 17, fontFamily: fonts.medium, marginTop: 16, paddingHorizontal: 4 },
 });

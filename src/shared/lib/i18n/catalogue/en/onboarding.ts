@@ -60,6 +60,7 @@ export const ONBOARDING_EN = {
    * nothing here the user did wrong. */
   'onboarding.intro.signInFailed': 'Sign-in didn’t complete. Try again.',
   'onboarding.intro.emailCta': 'Sign in with email',
+  'onboarding.intro.skip': 'Skip for now',
 
   // ── Email sign-in sheet ──────────────────────────────────────────────────
   'onboarding.email.title': 'Sign in',
@@ -125,6 +126,9 @@ export const ONBOARDING_EN = {
   'onboarding.pain.blurb': 'Tap the spots on the leg, up to {count}.',
   'onboarding.pain.full': 'Up to {count} at a time. Tap one to swap it.',
   'onboarding.pain.none': 'Nothing hurts right now',
+  // Shown where pain is first reported. The full wording is in Settings.
+  'onboarding.pain.disclaimer':
+    'Not medical advice. If pain is sharp, getting worse, or comes with swelling or numbness, see a doctor.',
 
   'onboarding.side.title': 'Which side, {name}?',
   'onboarding.side.blurb': 'The tests compare one leg with the other, so we need to know which one we’re working on.',
@@ -265,7 +269,7 @@ export const ONBOARDING_EN = {
     'A plan only works if it turns up. Let Walkito tell you when today has a session in it.',
   'onboarding.notify.promise1': 'A nudge on the days your plan has a session',
   'onboarding.notify.promise2': 'A heads-up when it changes what you are doing',
-  'onboarding.notify.promise3': 'Nothing else. No streaks to guilt you back.',
+  'onboarding.notify.promise3': 'And now and then a discount — nothing more.',
   /** The mock banner. `bannerApp` is the app's own name and stays as it is. */
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'now',
@@ -366,28 +370,31 @@ export const ONBOARDING_EN = {
   'onboarding.social.welcomeNamed': 'Welcome, {name}',
   'onboarding.social.welcome': 'Welcome aboard',
   /** The newline divides the crest's two lines between the wreaths. */
-  'onboarding.social.crest': 'Join 40,000+ runners\ntraining without pain',
+  'onboarding.social.crest': 'A few minutes a day.\nNo gym, no guesswork.',
   /**
-   * The three reviews.
+   * Three cards on how the plan works — not reviews. There were five-star
+   * quotes from named runners here, and a 1.0 app has no such runners: App
+   * Review reads invented testimonials as misleading (2.3.1), and so would
+   * anyone who later found out. Each card is something the app really does.
    *
-   * Each is split into `before` · `lead` · `after`, where `lead` renders bold —
-   * and the split is per language, because the emphasised clause does not land
+   * `name` is the card's small label. Each text is split into `before` ·
+   * `lead` · `after`, where `lead` renders bold — and the split is per language, because the emphasised clause does not land
    * in the same place twice. `lead` has to stay a contiguous run of the
    * sentence, the component puts a space between `before` and `lead`, and the
    * space in front of `after` is written here.
    */
-  'onboarding.testimonial1.before': 'Six months of shin pain, and I ran a',
-  'onboarding.testimonial1.lead': 'pain-free 10k',
-  'onboarding.testimonial1.after': ' eight weeks in.',
-  'onboarding.testimonial1.name': 'Marta K.',
-  'onboarding.testimonial2.before': 'It found my',
-  'onboarding.testimonial2.lead': 'calves, not my knees.',
-  'onboarding.testimonial2.after': ' The strength work finally made sense.',
-  'onboarding.testimonial2.name': 'Daniel R.',
-  'onboarding.testimonial3.before': 'Back from an Achilles injury',
-  'onboarding.testimonial3.lead': 'without losing the distance',
-  'onboarding.testimonial3.after': ' I’d already built.',
-  'onboarding.testimonial3.name': 'Priya S.',
+  'onboarding.testimonial1.before': 'Say how the foot feels, and',
+  'onboarding.testimonial1.lead': 'today’s session adjusts',
+  'onboarding.testimonial1.after': ' to match.',
+  'onboarding.testimonial1.name': 'Every morning',
+  'onboarding.testimonial2.before': 'Short, guided moves you can do',
+  'onboarding.testimonial2.lead': 'at home or at work',
+  'onboarding.testimonial2.after': ' — a floor and a wall are enough.',
+  'onboarding.testimonial2.name': 'Every session',
+  'onboarding.testimonial3.before': 'A one-minute retest',
+  'onboarding.testimonial3.lead': 'shows what actually changed',
+  'onboarding.testimonial3.after': ', in numbers rather than feelings.',
+  'onboarding.testimonial3.name': 'Every two weeks',
 
   // ── Outlook ──────────────────────────────────────────────────────────────
   // Three months, told as what changes on the leg they marked: today, then the
@@ -397,10 +404,18 @@ export const ONBOARDING_EN = {
   'onboarding.outlook.blurbNone': 'Your legs today, and where the plan takes them.',
   'onboarding.outlook.today': 'Today',
   'onboarding.outlook.month': 'Month {n}',
-  /** Callout captions, under a figure set large on its own line. */
-  'onboarding.outlook.lessPain': 'less pain',
-  'onboarding.outlook.stronger': 'stronger',
-  'onboarding.outlook.footnote': 'Typical progress when the plan is followed. Yours may differ.',
+  /** A zone's stage at each stop, in place of a percentage: the figures were
+   * invented, and a number reads as a promise. Kept to a word or two — the
+   * callout is 98pt wide. */
+  'onboarding.outlook.pain0': 'Sore',
+  'onboarding.outlook.pain1': 'Settling',
+  'onboarding.outlook.pain2': 'Easing',
+  'onboarding.outlook.pain3': 'Calmer',
+  'onboarding.outlook.strength0': 'Baseline',
+  'onboarding.outlook.strength1': 'Waking up',
+  'onboarding.outlook.strength2': 'Building',
+  'onboarding.outlook.strength3': 'Stronger',
+  'onboarding.outlook.footnote': 'An illustration of how the plan builds, not a prediction. Everyone recovers at their own pace.',
 
   // ── Referral ─────────────────────────────────────────────────────────────
   'onboarding.referral.title': 'Have a referral code?',

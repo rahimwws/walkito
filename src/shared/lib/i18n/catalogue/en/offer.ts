@@ -209,8 +209,13 @@ export const OFFER_EN = {
   // ── Session player: "it hurts" ───────────────────────────────────────────
   'widgets.painButton': 'It hurts',
   'widgets.painTitle': 'How much, right now?',
-  'widgets.painBlurb': 'Under 5 is fine to work through. From 5 up, we stop and ease tomorrow.',
   'widgets.painCarryOn': 'Carry on gently. Stop if it climbs.',
+  'widgets.painPick': 'Tap a number to see what happens next.',
+  'widgets.painLowHint': 'Mild discomfort is fine in this work. The session carries on from where you paused - just go gently, and tap the plaster again if it climbs.',
+  'widgets.painHighHint': 'That’s too much to train through. We’ll end the session here - it still counts for today - and tomorrow’s plan will be one step lighter.',
+  'widgets.painResume': 'Carry on gently',
+  'widgets.painEnd': 'End the session',
+  'widgets.painCancel': 'Never mind',
   'widgets.painClose': 'Close',
   'widgets.sessionDoneStreak': { one: '{count} day in a row', other: '{count} days in a row' },
   /** `{count}` is in both forms deliberately. The singular reads better as "One

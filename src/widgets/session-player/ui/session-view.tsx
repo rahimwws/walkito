@@ -9,7 +9,7 @@ import { useVideoPlayer, VideoView } from 'expo-video';
 import { after, type LiveActivity } from 'expo-widgets';
 import { ClockIcon } from 'phosphor-react-native/src/icons/Clock';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { AppState, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -17,7 +17,6 @@ import Animated, {
   runOnJS,
   useAnimatedReaction,
   useAnimatedStyle,
-  useFrameCallback,
   useSharedValue,
   withTiming,
 } from 'react-native-reanimated';
@@ -48,12 +47,14 @@ import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
+import { holdGlowStill } from '@/shared/ui/glow';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../config/exercise-clips';
 import { SessionDoneSheet } from './session-done-sheet';
 import { RetestEntrySheet } from './retest-entry-sheet';
 import { SessionPainSheet } from './session-pain-sheet';
+import { clearResume, readResume, writeResume } from '../model/session-resume';
 import {
   doseSeconds,
   phaseAt,
@@ -212,6 +213,18 @@ type MovePlan = {
  * no catalogue clip shows, so it has footage of its own.
  */
 const RETEST_CLIPS: readonly string[] = ['retest_calf_raise', 'short_foot_double', 'single_leg_hold'];
+
+/**
+ * How long each retest measurement runs, in seconds. A third of the flat
+ * minute every move used to get: three minutes for three tests was mostly
+ * standing and waiting for the clock.
+ */
+const RETEST_SECONDS = 20;
+
+/** How often the countdown is re-read off the wall clock. Four times a second
+ * is finer than the whole-second readout needs, and nothing on screen follows
+ * the playhead continuously any more. */
+const TICK_MS = 250;
 
 /**
  * How long one move runs, and whether it runs in phases.
@@ -460,14 +473,38 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
         cadence: null,
         perSide: step.perSide === true,
       }))
-    : moves.map((title) => planMove(title, day.block, progressionOffset));
+    : measuring
+      ? moves.map(() => ({
+          exercise: null,
+          seconds: RETEST_SECONDS,
+          cadence: null,
+          perSide: false,
+        }))
+      : moves.map((title) => planMove(title, day.block, progressionOffset));
+
+  /**
+   * What this session is called for the purpose of coming back to it.
+   *
+   * A retest is never resumed: its numbers come from doing the tests in one go,
+   * and it is short enough now that starting over costs nothing.
+   */
+  const resumeId = measuring
+    ? null
+    : playlist != null
+      ? `playlist:${playlist.map((step) => step.exerciseId).join(',')}`
+      : override != null
+        ? `moves:${day.day}:${override.join('|')}`
+        : `day:${day.day}`;
+  /** Read once, at mount. The player is keyed per run by its hosts, so this is
+   * the place the run starts from, not something to follow afterwards. */
+  const [resume] = useState(() => (resumeId == null ? null : readResume(resumeId, plan.length)));
 
   /** When this player mounted, which is when the session began. A ref rather
    * than state: nothing renders from it, and it must survive every re-render
    * the clock causes without becoming one of them. */
   const startedAt = useRef(new Date());
 
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(() => resume?.step ?? 0);
   const [playing, setPlaying] = useState(true);
   /**
    * Whole seconds into the current move.
@@ -477,7 +514,9 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
    * sampling elapsed time keeps that arithmetic in a pure function that can be
    * tested, rather than in a worklet that can only be watched.
    */
-  const [elapsed, setElapsed] = useState(0);
+  const [elapsed, setElapsed] = useState(() =>
+    resume == null ? 0 : Math.floor(resume.fraction * (plan[resume.step]?.seconds ?? 0)),
+  );
   /**
    * The last move ran out and there is nothing after it.
    *
@@ -492,7 +531,7 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
    * scrubber writes it from a finger at 120Hz and the fill reads it on the same
    * thread; pushing it through state would re-render the video card on every
    * frame of a drag. */
-  const progress = useSharedValue(0);
+  const progress = useSharedValue(resume?.fraction ?? 0);
 
   /** 0 collapsed, 1 full-screen. Drives the card's frame and both sets of
    * chrome off one number, so nothing can arrive out of step with the corner
@@ -604,27 +643,45 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
    * stale total. It is also exactly the pair of dates the Live Activity needs,
    * so there is one clock here, not two that have to be kept in step.
    */
-  const tick = useFrameCallback(() => {
-    'worklet';
-    // Nothing to count against. A move of length zero would divide the playhead
-    // by nothing; holding still is the one safe thing to do with it.
-    if (moveMs.value <= 0) return;
-    if (deadline.value === 0) {
-      deadline.value = Date.now() + (1 - progress.value) * moveMs.value;
-      return;
-    }
-    progress.value = Math.min(
-      Math.max(1 - (deadline.value - Date.now()) / moveMs.value, 0),
-      1,
-    );
-  }, false);
-
+  /*
+   * Driven off a timer on the JS thread rather than a frame callback. The
+   * callback ran a worklet on every display frame — 120 a second on a ProMotion
+   * screen — for the whole session, to feed a readout that changes once a
+   * second. With a video decoding underneath it, that was a large part of why
+   * the phone warmed up during a session. The arithmetic is the same.
+   */
   useEffect(() => {
-    // Invalidated on the way down. A deadline that sat still through a pause is
-    // a deadline in the past, and resuming on it would snap the move to zero.
-    if (!playing) deadline.value = 0;
-    tick.setActive(playing);
-  }, [tick, playing, deadline]);
+    if (!playing) {
+      // Invalidated on the way down. A deadline that sat still through a pause
+      // is a deadline in the past, and resuming on it would snap the move to
+      // zero.
+      deadline.value = 0;
+      return undefined;
+    }
+    const read = () => {
+      // Nothing to count against. A move of length zero would divide the
+      // playhead by nothing; holding still is the one safe thing to do.
+      if (moveMs.value <= 0) return;
+      if (deadline.value === 0) {
+        deadline.value = Date.now() + (1 - progress.value) * moveMs.value;
+        return;
+      }
+      progress.value = Math.min(
+        Math.max(1 - (deadline.value - Date.now()) / moveMs.value, 0),
+        1,
+      );
+    };
+    read();
+    const id = setInterval(read, TICK_MS);
+    return () => clearInterval(id);
+  }, [playing, deadline, moveMs, progress]);
+
+  /**
+   * The drift on Home, held still for as long as a session is up. The player
+   * is presented over Home in a page sheet, which leaves Home underneath it
+   * rendering and animating the whole time.
+   */
+  useEffect(() => holdGlowStill(), []);
 
   // A listener, not a read of `player.status`: the player is a native object
   // and its status is not React state, so a failure arriving after mount would
@@ -844,6 +901,8 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
    */
   const complete = useCallback((early: boolean) => {
     setEndedEarly(early);
+    // Over, in either sense: there is no place left to come back to.
+    if (resumeId != null) clearResume(resumeId);
     // Nothing after the last move. The clock holds at zero instead of wrapping:
     // a session that quietly restarts is a session you can never finish.
     progress.value = 1;
@@ -887,7 +946,7 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
     // it fires, and doing that at the instant the clock hits zero would take
     // the celebration off screen before it was drawn. The sheet calls it on the
     // way out instead.
-  }, [progress, deadline, endActivity, activitySnapshot, day, moves, measuring]);
+  }, [progress, deadline, endActivity, activitySnapshot, day, moves, measuring, resumeId]);
 
   const advance = useCallback(() => {
     if (goTo(step + 1)) {
@@ -940,8 +999,44 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
     [advance],
   );
 
+  /**
+   * Write down where this session stands, for the next time it is opened.
+   *
+   * Not once it is finished — `complete` clears the record, and a finished run
+   * re-saving itself on the way out would bring it back.
+   */
+  const finishedRef = useRef(false);
+  finishedRef.current = finished;
+  const stepRef = useRef(step);
+  stepRef.current = step;
+  const saveResume = useCallback(() => {
+    if (resumeId == null || finishedRef.current) return;
+    writeResume(resumeId, planRef.current.length, {
+      step: stepRef.current,
+      fraction: progress.value,
+    });
+  }, [resumeId, progress]);
+
+  // On every move change, and whenever the app goes to the background — the
+  // process may not come back, and a force-quit gives no warning.
+  useEffect(() => {
+    saveResume();
+  }, [step, saveResume]);
+  useEffect(() => {
+    const subscription = AppState.addEventListener('change', (next) => {
+      if (next !== 'active') saveResume();
+    });
+    return () => {
+      subscription.remove();
+      // The host unmounting the player — a sheet swiped away, the program
+      // closed — is leaving too.
+      saveResume();
+    };
+  }, [saveResume]);
+
   const leave = useCallback(() => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    saveResume();
     // Left running, a muted loop and a frame callback would keep burning
     // through a screen nobody is looking at.
     setPlaying(false);
@@ -951,7 +1046,7 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
     // behind the departing pane, so nothing else would have ended it.
     endActivity();
     onBack();
-  }, [onBack, endActivity]);
+  }, [onBack, endActivity, saveResume]);
 
   /**
    * The session, handed to the Lock Screen for the length of its run.
@@ -1477,14 +1572,22 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
         {ctaButton}
       </Animated.View>
 
-      <RetestEntrySheet
-        visible={enteringRetest}
-        dayNumber={day.day}
-        onDone={() => {
-          setEnteringRetest(false);
-          setCelebrating(true);
-        }}
-      />
+      {/* Mounted only when it is needed, so its counters open on the latest
+          stored retest rather than on whatever was known at mount. */}
+      {enteringRetest && (
+        <RetestEntrySheet
+          dayNumber={day.day}
+          // The result screen is the end of a retest. It used to hand over to
+          // the session celebration, and closing that still left the finished
+          // player on screen — straight back to where the tests were started
+          // from instead.
+          onDone={() => {
+            setEnteringRetest(false);
+            if (onFinish != null) onFinish();
+            else onBack();
+          }}
+        />
+      )}
 
       <SessionPainSheet
         visible={askingPain}
@@ -1502,7 +1605,11 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
         moves={moveCount}
         onClose={() => {
           setCelebrating(false);
-          onFinish?.();
+          // A host with nothing to do on finishing still has to be left: the
+          // pain check's relief session passed no `onFinish`, and closing its
+          // celebration left the finished player on screen.
+          if (onFinish != null) onFinish();
+          else onBack();
         }}
       />
     </View>

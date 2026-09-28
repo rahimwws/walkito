@@ -46,9 +46,10 @@ export const MINUTES_BY_KIND: Readonly<Record<DayKind, number>> = {
   recovery: 3,
 };
 
-/** A retest is three tests, and about this long. */
+/** A retest is three tests, and about this long: twenty seconds each plus the
+ * time to set up for the next. */
 export const RETEST_TESTS = 3;
-export const RETEST_MINUTES = 4;
+export const RETEST_MINUTES = 1;
 
 /** Which slot of the week a program day lands on. Day 1 is slot 1. */
 export function slotFor(dayNumber: number): number {

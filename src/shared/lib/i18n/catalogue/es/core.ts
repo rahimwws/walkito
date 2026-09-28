@@ -25,6 +25,8 @@ export const CORE_ES = {
   'settings.privacy': 'Política de privacidad',
   'settings.privacyHint': 'Qué guardamos y dónde',
   'settings.unpublished': 'Aún no publicado',
+  'settings.disclaimer':
+    'Walkito es una ayuda para entrenar, no un consejo médico, y no diagnostica ni trata ninguna afección. Si el dolor es agudo, empeora o viene con hinchazón, entumecimiento o fiebre, para y consulta a un médico.',
 
   // ── Streak ───────────────────────────────────────────────────────────────
   'streak.title': { one: 'Racha de {count} día', other: 'Racha de {count} días' },
@@ -120,6 +122,16 @@ export const CORE_ES = {
   'block.sustain': 'Mantenimiento',
 
   // ── Common ───────────────────────────────────────────────────────────────
+  'update.otaTitle': 'Actualización lista',
+  'update.otaBlurb': 'Hay una versión nueva de Walkito. Tarda unos segundos y la app se reinicia donde estabas.',
+  'update.storeTitle': 'Nueva versión disponible',
+  'update.storeBlurb': 'Walkito {version} ya está en la App Store, con correcciones y mejoras.',
+  'update.install': 'Actualizar',
+  'update.openStore': 'Abrir la App Store',
+  'update.applying': 'Actualizando…',
+  'update.retry': 'Reintentar',
+  'update.failed': 'La descarga no terminó. Revisa tu conexión e inténtalo de nuevo.',
+  'update.later': 'Más tarde',
   'common.back': 'Atrás',
   'common.close': 'Cerrar',
   'common.profile': 'Perfil',

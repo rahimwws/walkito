@@ -1,5 +1,7 @@
 import type PostHog from 'posthog-react-native';
 
+import { logObserveEvent } from '@/shared/lib/observe';
+
 import type { AnalyticsEvent, AnalyticsEvents } from './events';
 
 /**
@@ -54,21 +56,19 @@ function posthog(): PostHog | null {
       // here is anonymous until RevenueCat hands over its id, and a funnel of
       // people without profiles cannot be broken down by acquisition source.
       personProfiles: 'always',
-      enableSessionReplay: true,
-      sessionReplayConfig: {
-        // Everything typed is masked. The only free text in the app is a name
-        // and an email, and neither belongs in a recording.
-        maskAllTextInputs: true,
-        // Images stay visible: they are illustrations and exercise art, and a
-        // replay of this app with its pictures blanked out shows nothing.
-        maskAllImages: false,
-        captureLog: false,
-      },
+      // No session replay. The screens it would record carry health data —
+      // HealthKit steps and heart rate, pain scores, retest measurements — and
+      // React Native text cannot be masked wholesale, only inputs. That would
+      // put health data in PostHog, which App Review 5.1.3 forbids and the
+      // onboarding promises against. Events are enough for the funnels.
+      enableSessionReplay: false,
     });
     client.register({ app_variant: variant() });
     return client;
   } catch (error) {
-    if (__DEV__) console.warn('[analytics] PostHog unavailable, events are dropped', error);
+    // `typeof` first: the stores that call `track` are loaded under bun, where
+    // React Native's `__DEV__` global does not exist.
+    if (typeof __DEV__ !== 'undefined' && __DEV__) console.warn('[analytics] PostHog unavailable, events are dropped', error);
     return null;
   }
 }
@@ -78,7 +78,11 @@ export function track<E extends AnalyticsEvent>(
   event: E,
   ...props: AnalyticsEvents[E] extends Record<string, never> ? [] : [AnalyticsEvents[E]]
 ): void {
-  posthog()?.capture(event, props[0] as Record<string, string | number | boolean> | undefined);
+  const attributes = props[0] as Record<string, string | number | boolean> | undefined;
+  posthog()?.capture(event, attributes);
+  // And to EAS Observe, so the performance dashboard has the same timeline of
+  // what people were doing. Same names, same health-free properties.
+  logObserveEvent(event, attributes);
 }
 
 /**
@@ -91,8 +95,23 @@ export function track<E extends AnalyticsEvent>(
  */
 export function identify(id: string): void {
   const ph = posthog();
-  if (ph == null || ph.getDistinctId() === id) return;
-  ph.identify(id);
+  if (ph == null) return;
+  // The build variant as a *person* property too, not only on events.
+  // RevenueCat's server-side revenue events carry none of the app's super
+  // properties, so the only way PostHog's test-account filter can drop a
+  // development build's test purchases is by the person they land on.
+  if (ph.getDistinctId() !== id) ph.identify(id, { app_variant: variant() });
+  else setPerson({ app_variant: variant() });
+}
+
+/**
+ * Person properties that may change, written every time.
+ *
+ * For facts about the install rather than about the person's choices — see
+ * `setPersonOnce` for the ones that must never be overwritten.
+ */
+export function setPerson(props: Record<string, string | number | boolean>): void {
+  posthog()?.capture('$set', { $set: props });
 }
 
 /**

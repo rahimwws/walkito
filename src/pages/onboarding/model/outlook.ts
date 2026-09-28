@@ -23,7 +23,8 @@ export const OUTLOOK_STOPS = 4;
  * why the achilles row trails the others at every stop.
  *
  * These are typical courses for a plan that is followed, not predictions for
- * this user, and the screen says so under the drawing.
+ * this user. They are never shown as numbers — `zoneStage` turns them into a
+ * word — and the screen says under the drawing that it is an illustration.
  */
 const RELIEF: Readonly<Record<'fascia' | 'muscle' | 'tendon' | 'shin', readonly number[]>> = {
   fascia: [0, 35, 65, 85],
@@ -62,6 +63,38 @@ export const STRENGTHENED: readonly LegZone[] = ['calf', 'soleus', 'arch'];
 export function zoneGain(zone: LegZone, stop: number, painless: boolean): number {
   const clamped = Math.max(0, Math.min(OUTLOOK_STOPS - 1, stop));
   return painless ? STRENGTH[clamped] : RELIEF[TISSUE[zone]][clamped];
+}
+
+/**
+ * The word a zone's callout shows at a stop, in place of the percentage.
+ *
+ * The percentages below still set the *pace* — a tendon reaches each word later
+ * than a muscle does — but the screen no longer prints them: they are a
+ * typical course, not data about anyone, and a figure like "90% less pain"
+ * reads as a medical promise the app has no evidence for.
+ */
+export type StageKey =
+  | 'onboarding.outlook.pain0'
+  | 'onboarding.outlook.pain1'
+  | 'onboarding.outlook.pain2'
+  | 'onboarding.outlook.pain3'
+  | 'onboarding.outlook.strength0'
+  | 'onboarding.outlook.strength1'
+  | 'onboarding.outlook.strength2'
+  | 'onboarding.outlook.strength3';
+
+export function zoneStage(zone: LegZone, stop: number, painless: boolean): StageKey {
+  const gain = zoneGain(zone, stop, painless);
+  if (painless) {
+    if (gain <= 0) return 'onboarding.outlook.strength0';
+    if (gain < 15) return 'onboarding.outlook.strength1';
+    if (gain < 25) return 'onboarding.outlook.strength2';
+    return 'onboarding.outlook.strength3';
+  }
+  if (gain <= 0) return 'onboarding.outlook.pain0';
+  if (gain < 40) return 'onboarding.outlook.pain1';
+  if (gain < 70) return 'onboarding.outlook.pain2';
+  return 'onboarding.outlook.pain3';
 }
 
 /** The four stops' labels, for the month switcher: "Today", "Month 1"… */

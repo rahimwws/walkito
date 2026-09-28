@@ -1,7 +1,8 @@
 import type { Translate } from '@/shared/lib/i18n';
 
 /**
- * The three reviews on the social-proof screen.
+ * The three cards on the social-proof screen — how the plan works, not
+ * reviews (see the catalogue note). `name` is now each card's small label.
  *
  * Written as fragments rather than paragraphs: the screen is read in a glance
  * between two taps, and a long quote is a quote nobody finishes. Each one

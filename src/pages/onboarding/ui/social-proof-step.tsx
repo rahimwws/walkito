@@ -1,7 +1,6 @@
 import LaurelWreathLeft02Icon from '@hugeicons/core-free-icons/LaurelWreathLeft02Icon';
 import LaurelWreathRight02Icon from '@hugeicons/core-free-icons/LaurelWreathRight02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import { StarIcon as Star } from 'phosphor-react-native/src/icons/Star';
 import { useEffect, useRef } from 'react';
 import {
   ScrollView,
@@ -41,10 +40,6 @@ const PEEK = 30;
 const GAP = 12;
 
 const PAGE_MS = 320;
-const STAR = 16;
-/** Amber, not the brand violet. Stars are a borrowed convention and reading
- * them as *our* accent would make them look like a control. */
-const STAR_COLOR = '#FBBF24';
 
 export type SocialProofStepProps = {
   name: string;
@@ -57,7 +52,12 @@ export type SocialProofStepProps = {
 };
 
 /**
- * Three reviews on a rail, handed over one at a time.
+ * Three cards on a rail, handed over one at a time — what the plan does every
+ * morning, every session and every two weeks.
+ *
+ * They were five-star reviews from named runners until a 1.0 app had to admit
+ * it has no such runners yet; see the note on the copy in the catalogue. The
+ * rail, the paging and the component names stayed.
  *
  * The staging is the point. Three cards dropped in at once are wallpaper — the
  * eye takes the shape of a testimonial block and skips it. Advanced one per
@@ -65,8 +65,7 @@ export type SocialProofStepProps = {
  * the screen costs three deliberate presses instead of one dismissive one.
  *
  * It sits after the plan and before the paywall because that is the moment the
- * question changes from "what will this do" to "is this worth it", and other
- * people's answers are the only useful evidence at that point.
+ * question changes from "what will this do" to "is this worth it".
  */
 export function SocialProofStep({ name, index, onChange }: SocialProofStepProps) {
   const scheme = useColorScheme();
@@ -193,21 +192,13 @@ function ReviewCard({
   return (
     <View
       style={[styles.card, { width, backgroundColor: card, borderColor: track }]}>
-      <View style={styles.stars}>
-        {Array.from({ length: 5 }, (_, i) => (
-          <Star key={i} size={STAR} color={STAR_COLOR} weight="fill" />
-        ))}
-      </View>
+      <Text style={[styles.name, { color: caption }]}>{review.name}</Text>
 
       <Text style={[styles.quote, { color: ink }]}>
-        {'“'}
         {review.before}{' '}
         <Text style={styles.quoteLead}>{review.lead}</Text>
         {review.after}
-        {'”'}
       </Text>
-
-      <Text style={[styles.name, { color: caption }]}>{review.name}</Text>
     </View>
   );
 }
@@ -262,10 +253,6 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     gap: 14,
   },
-  stars: {
-    flexDirection: 'row',
-    gap: 4,
-  },
   quote: {
     fontSize: 19,
     lineHeight: 26,
@@ -276,8 +263,10 @@ const styles = StyleSheet.create({
     fontFamily: fonts.bold,
   },
   name: {
-    fontSize: 14,
-    fontFamily: fonts.semibold,
+    fontSize: 13,
+    fontFamily: fonts.bold,
+    letterSpacing: 0.6,
+    textTransform: 'uppercase',
   },
   dots: {
     flexDirection: 'row',

@@ -131,13 +131,9 @@ export const NOTIFICATIONS_ES = {
   'notifications.winbackDay30': 'Seguimos aquí si el pie vuelve a hablar.',
 
   // ── Leaving the offer ────────────────────────────────────────────────────
-  // Las vocales estiradas son deliberadas: es alguien llamándote, no un envío
-  // masivo.
-  'notifications.offerPleaNamed': '{name}, esperaaa',
-  'notifications.offerPlea': 'Esperaaa',
-  'notifications.offerPleaBody': 'Porfaaa.',
-  'notifications.offerDiscountTitle': 'Llévate un {percent}% de descuento en el programa de 12 semanas',
-  'notifications.offerDiscountBody': 'Toca para aprovecharlo.',
+  'notifications.offerWaitNamed': '{name}, antes de irte: {percent}% de descuento',
+  'notifications.offerWait': 'Antes de irte: {percent}% de descuento',
+  'notifications.offerWaitBody': 'Tu programa de 12 semanas te espera a un precio más bajo. Toca para verlo.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   'notifications.expiryTitle': 'Tu acceso al programa termina en una semana',

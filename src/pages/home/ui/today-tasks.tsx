@@ -5,6 +5,7 @@ import { BarbellIcon } from 'phosphor-react-native/src/icons/Barbell';
 import { CheckIcon } from 'phosphor-react-native/src/icons/Check';
 import { ClockIcon } from 'phosphor-react-native/src/icons/Clock';
 import { MoonIcon } from 'phosphor-react-native/src/icons/Moon';
+import { RulerIcon } from 'phosphor-react-native/src/icons/Ruler';
 import { WavesIcon } from 'phosphor-react-native/src/icons/Waves';
 import { useMemo, useState } from 'react';
 import { Image, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
@@ -40,7 +41,6 @@ import { PROGRAM_MS } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
 import { doseSeconds } from '@/widgets/session-player';
 import { SessionView } from '@/widgets/session-player';
-import { PrimaryButton } from '@/shared/ui/primary-button';
 
 /** The mascot, mid-stride. It belongs to this block rather than to the screen:
  * the list is the one place on Home that asks for work, and a character running
@@ -359,25 +359,23 @@ export function TodayTasks() {
       <View style={styles.list}>
         {/* A day with nothing on it is a real answer, not a failure to load.
             The row style and the caption colour, so the line sits exactly where
-            the first task would and reads as quietly as a finished one — the
-            list says what it has to say and asks for nothing. */}
-        {ordered.length === 0 && (
+            the first task would and reads as quietly as a finished one. */}
+        {ordered.length === 0 && !retest && (
           <Text style={[styles.title, { color: meter.caption }]}>
-            {retest
-              ? t('home.retestDay', {
-                  tests: t('home.tests', { count: RETEST_TESTS }),
-                  minutes: t('home.minutes', { count: RETEST_MINUTES }),
-                })
-              : t('home.nothingScheduled')}
+            {t('home.nothingScheduled')}
           </Text>
         )}
-        {/* A retest day used to say so and offer nothing: the only way in was
-            the program overlay, so most retests were simply never taken. Not
-            once today's tests are on record. */}
-        {ordered.length === 0 && retest && logFor(currentDay())?.sessionCompleted !== true && (
-          <PrimaryButton
-            label={t('home.startTests')}
-            onPress={() => {
+        {/* A retest day's work is the tests, drawn as one more row of the list
+            rather than as a second primary button. Until the morning check-in
+            is answered the check-in's own button is already on screen, and two
+            full-width primaries stacked one above the other asked the user to
+            pick between them. A row opens the tests the same way a task opens
+            its player, which is the grammar the rest of this list already
+            taught. */}
+        {ordered.length === 0 && retest && (
+          <RetestRow
+            done={logFor(currentDay())?.sessionCompleted === true}
+            onOpen={() => {
               Haptics.selectionAsync();
               setTesting(true);
             }}
@@ -453,6 +451,62 @@ export function TodayTasks() {
         )}
       </Modal>
     </View>
+  );
+}
+
+/**
+ * The day's retest, as a row of the list.
+ *
+ * The same two lines and the same trailing chip as a task, tinted with the
+ * accent the program uses for checkpoints. Once today's tests are on record it
+ * is struck through and ticked, and no longer opens anything: a second run
+ * would overwrite the numbers just saved.
+ */
+function RetestRow({ done, onOpen }: { done: boolean; onOpen: () => void }) {
+  const scheme = useColorScheme();
+  const colors = palette[scheme];
+  const meter = meterColors[scheme];
+  const t = useT();
+  const tone = accents[scheme].orange;
+  const title = t('home.retestTask');
+  const subtitle = t('home.retestTaskSub', { tests: t('home.tests', { count: RETEST_TESTS }) });
+
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityState={{ checked: done, disabled: done }}
+      accessibilityLabel={t('home.taskA11y', { title, subtitle })}
+      disabled={done}
+      onPress={onOpen}
+      style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}>
+      <View style={styles.copy}>
+        <Text
+          style={[
+            styles.title,
+            { color: colors.foreground },
+            done && { textDecorationLine: 'line-through', color: meter.caption },
+          ]}>
+          {title}
+        </Text>
+        <View style={styles.category}>
+          <RulerIcon size={13} weight="fill" color={tone.fill} />
+          <Text style={[styles.categoryText, { color: tone.fill }]}>{subtitle}</Text>
+        </View>
+      </View>
+
+      {done ? (
+        <View style={[styles.box, { borderColor: tone.fill, backgroundColor: tone.fill }]}>
+          <CheckIcon size={16} weight="bold" color={colors.background} />
+        </View>
+      ) : (
+        <View style={[styles.chip, { backgroundColor: tone.track }]}>
+          <ClockIcon size={13} weight="fill" color={tone.fill} />
+          <Text style={[styles.chipText, { color: tone.fill }]}>
+            {t('home.chipMinutes', { count: RETEST_MINUTES })}
+          </Text>
+        </View>
+      )}
+    </Pressable>
   );
 }
 

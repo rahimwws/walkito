@@ -1,4 +1,5 @@
 import { useFonts } from 'expo-font';
+import { useEffect, type ComponentType, type ReactNode } from 'react';
 import { Stack } from 'expo-router/stack';
 import { StatusBar } from 'expo-status-bar';
 
@@ -19,9 +20,11 @@ import {
   useReferralSync,
   useQuickActions,
 } from '@/app/providers';
+import { UpdateSheet, useAppUpdates } from '@/features/app-update';
 import { useBrowsingLapsed, useEntitled, useProgramLapsed } from '@/entities/purchase';
 import { useOnboarded } from '@/entities/session';
 import { fontAssets } from '@/shared/config';
+import { configureObserve, markInteractive } from '@/shared/lib/observe';
 // Imported for its module-scope side effect as much as anything: reading the
 // stored preference applies the saved appearance before the first render.
 import '@/shared/lib/theme';
@@ -45,14 +48,44 @@ import { IntroRevealProvider } from '@/shared/ui/splash';
  * flows). Tabs live one level down, in `tabs-layout`.
  */
 
+// Before any screen mounts: the router integration has to be listening when
+// the first route is focused.
+configureObserve();
+
+/**
+ * `ObserveRoot` if the binary has it, a pass-through if it does not.
+ *
+ * Required lazily for the same reason `shared/lib/observe` is: a dev client
+ * built before `expo-observe` was linked would otherwise fail at import, before
+ * anything could render.
+ */
+const ObserveRoot: ComponentType<{ children: ReactNode }> = (() => {
+  try {
+    return (require('expo-observe') as typeof import('expo-observe')).ObserveRoot;
+  } catch {
+    return ({ children }: { children: ReactNode }) => <>{children}</>;
+  }
+})();
+
 export function RootLayout() {
+  return (
+    <ObserveRoot>
+      <RootLayoutInner />
+    </ObserveRoot>
+  );
+}
+
+function RootLayoutInner() {
   // Expo Go can't embed fonts at build time, so load them here.
   const [fontsReady, fontError] = useFonts(fontAssets);
   // Read synchronously from MMKV, so the very first paint mounts the right
   // stack rather than flashing Home and swapping.
-  // Development builds skip onboarding entirely: its intro gates on Sign in
-  // with Apple, which a simulator cannot complete.
-  const onboarded = useOnboarded() || __DEV__;
+  // Not bypassed in development builds. It was, to get a simulator past Sign in
+  // with Apple, but that bypass meant a fresh dev install met the paywall with
+  // no onboarding in front of it. The simulator case is handled where it
+  // arises: `signInWithApple` reports "unavailable" there, which the intro
+  // screen already lets through.
+  const onboarded = useOnboarded();
   /**
    * Whether the subscription is live. The tabs are behind it.
    *
@@ -112,6 +145,19 @@ export function RootLayout() {
   useNotificationScheduler();
   // A `$screen` per route, for the paths and retention charts in PostHog.
   useScreenTracking();
+  // An over-the-air update or a new App Store build, offered in a sheet.
+  // Not during onboarding: the first minutes are not the moment to ask for a
+  // restart.
+  const update = useAppUpdates(onboarded);
+
+  // Interactive once the fonts have resolved and the first real screen has had
+  // a frame to paint — the end of the `tti` measurement in EAS Observe.
+  const ready = fontsReady || fontError != null;
+  useEffect(() => {
+    if (!ready) return;
+    const frame = requestAnimationFrame(() => markInteractive());
+    return () => cancelAnimationFrame(frame);
+  }, [ready]);
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
@@ -242,6 +288,7 @@ export function RootLayout() {
               </Stack>
             ) : null}
             <StatusBar style="auto" />
+            {(fontsReady || fontError) && <UpdateSheet {...update} />}
           </NavThemeProvider>
         </IntroRevealProvider>
       </KeyboardProvider>

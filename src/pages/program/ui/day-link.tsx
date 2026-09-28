@@ -5,6 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
+  cancelAnimation,
   interpolate,
   useAnimatedStyle,
   useSharedValue,
@@ -30,6 +31,17 @@ const STAGGER_MS = 150;
 export type DayLinkProps = {
   /** Dimmed, for the stretch of plan the user has not reached. */
   ahead?: boolean;
+  /**
+   * Run the pulse. Off by default, and on for one link on the whole page.
+   *
+   * Every link used to pulse. A twelve-week plan draws well over a hundred of
+   * them, three dots each, every one an endless timing on the UI thread for as
+   * long as the program is open — several hundred animations re-rendered every
+   * frame, which is what made the phone warm and the day sheet stutter when it
+   * blurred the list behind it. The direction of the plan is said just as well
+   * by the one link leaving today.
+   */
+  animated?: boolean;
 };
 
 /**
@@ -42,7 +54,7 @@ export type DayLinkProps = {
  * The dots pulse downward on a loop. Slow on purpose: this is background motion
  * on a screen people read, and anything faster turns a hint into a spinner.
  */
-export const DayLink = memo(function DayLink({ ahead = false }: DayLinkProps) {
+export const DayLink = memo(function DayLink({ ahead = false, animated = false }: DayLinkProps) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   const colour = ahead ? meter.track : meter.unit;
@@ -50,7 +62,7 @@ export const DayLink = memo(function DayLink({ ahead = false }: DayLinkProps) {
   return (
     <View pointerEvents="none" style={styles.link}>
       {Array.from({ length: DOTS }, (_, i) => (
-        <Dot key={i} index={i} colour={colour} />
+        <Dot key={i} index={i} colour={colour} animated={animated} />
       ))}
       <ArrowDownIcon size={23} weight="bold" color={colour} />
     </View>
@@ -64,10 +76,25 @@ export const DayLink = memo(function DayLink({ ahead = false }: DayLinkProps) {
  * its own loop because the stagger is what makes three dots read as one
  * movement.
  */
-const Dot = memo(function Dot({ index, colour }: { index: number; colour: string }) {
-  const t = useSharedValue(0);
+const Dot = memo(function Dot({
+  index,
+  colour,
+  animated,
+}: {
+  index: number;
+  colour: string;
+  animated: boolean;
+}) {
+  // A still link rests at the pulse's own peak brightness for the first dot's
+  // phase, so the run reads the same whether or not it is moving.
+  const t = useSharedValue(animated ? 0 : 0.35);
 
   useEffect(() => {
+    if (!animated) {
+      cancelAnimation(t);
+      t.value = 0.35;
+      return undefined;
+    }
     t.value = withDelay(
       index * STAGGER_MS,
       withRepeat(
@@ -80,7 +107,8 @@ const Dot = memo(function Dot({ index, colour }: { index: number; colour: string
         false,
       ),
     );
-  }, [index, t]);
+    return () => cancelAnimation(t);
+  }, [index, t, animated]);
 
   // Brightest as the wave passes, faint either side of it. Opacity only: moving
   // the dots themselves would need the gap to be taller than the dots need.

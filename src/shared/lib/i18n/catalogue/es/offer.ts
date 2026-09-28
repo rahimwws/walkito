@@ -157,8 +157,13 @@ export const OFFER_ES = {
 
   'widgets.painButton': 'Duele',
   'widgets.painTitle': '¿Cuánto, ahora mismo?',
-  'widgets.painBlurb': 'Por debajo de 5 puedes seguir. Desde 5, paramos y mañana será más suave.',
   'widgets.painCarryOn': 'Sigue con cuidado. Para si aumenta.',
+  'widgets.painPick': 'Toca un número y te decimos qué pasa después.',
+  'widgets.painLowHint': 'Una molestia leve es normal en este trabajo. La sesión sigue donde la pausaste - ve con suavidad y toca la tirita otra vez si aumenta.',
+  'widgets.painHighHint': 'Es demasiado para entrenar. Terminamos la sesión aquí - cuenta para hoy - y mañana el plan será un paso más suave.',
+  'widgets.painResume': 'Seguir con cuidado',
+  'widgets.painEnd': 'Terminar la sesión',
+  'widgets.painCancel': 'Cancelar',
   'widgets.painClose': 'Cerrar',
   'widgets.sessionDoneStreak': {
     one: '{count} día seguido',

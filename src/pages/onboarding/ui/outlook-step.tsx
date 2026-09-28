@@ -20,6 +20,7 @@ import Svg, { Circle, Path } from 'react-native-svg';
 import {
   LEG_ASPECT,
   LEG_VIEW,
+  SHIN_LINE_X,
   LegMap,
   ZONE_CENTRES,
   ZONE_LABEL_KEYS,
@@ -28,9 +29,8 @@ import {
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
-import { AnimatedNumber } from '@/shared/ui/animated-number';
 
-import { OUTLOOK_STOPS, STRENGTHENED, zoneGain } from '../model/outlook';
+import { OUTLOOK_STOPS, STRENGTHENED, zoneStage } from '../model/outlook';
 import { MonthPicker } from './month-picker';
 
 /** Held back until the heading has typed, so the first month does not turn
@@ -195,10 +195,7 @@ export function OutlookStep({ zones, months }: OutlookStepProps) {
                 stageWidth={stage.width}
                 index={i}
                 label={t(ZONE_LABEL_KEYS[callout.zone])}
-                value={zoneGain(callout.zone, stop, painless)}
-                caption={
-                  painless ? t('onboarding.outlook.stronger') : t('onboarding.outlook.lessPain')
-                }
+                stageText={t(zoneStage(callout.zone, stop, painless))}
                 heal={tint}
                 from={red}
                 to={green}
@@ -240,12 +237,12 @@ function placeCallouts(
 
   const placed: Callout[] = zones
     .map((zone) => {
-      const centre = ZONE_CENTRES[zone] ?? ZONE_CENTRES.inner_ankle ?? { x: 186, y: 400 };
+      const centre = ZONE_CENTRES[zone] ?? ZONE_CENTRES.inner_ankle ?? { x: 325, y: 1400 };
       const point = {
         x: leg.left + (centre.x - LEG_VIEW.x) * scale,
         y: leg.top + (centre.y - LEG_VIEW.y) * scale,
       };
-      const side: Callout['side'] = centre.x < 150 ? 'left' : 'right';
+      const side: Callout['side'] = centre.x < SHIN_LINE_X ? 'left' : 'right';
       return { zone, point, side, top: point.y - CARD_H / 2 };
     })
     .sort((a, b) => a.point.y - b.point.y);
@@ -358,8 +355,7 @@ function CalloutCard({
   stageWidth,
   index,
   label,
-  value,
-  caption,
+  stageText,
   heal,
   from,
   to,
@@ -369,8 +365,8 @@ function CalloutCard({
   stageWidth: number;
   index: number;
   label: string;
-  value: number;
-  caption: string;
+  /** Where the zone is at this stop, as a word — see `zoneStage`. */
+  stageText: string;
   heal: Readonly<SharedValue<number>>;
   from: string;
   to: string;
@@ -441,19 +437,12 @@ function CalloutCard({
               {label}
             </Text>
           </View>
-          <View style={styles.cardValue}>
-            <AnimatedNumber
-              text={`${value}%`}
-              value={value}
-              color={started ? meter.positive : colors.foreground}
-              fontSize={20}
-              fontFamily={fonts.heavy}
-              weight="heavy"
-              duration={0.6}
-            />
-          </View>
-          <Text style={[styles.cardCaption, { color: meter.caption }]} numberOfLines={1}>
-            {caption}
+          <Text
+            style={[styles.cardStage, { color: started ? meter.positive : colors.foreground }]}
+            numberOfLines={1}
+            adjustsFontSizeToFit
+            minimumFontScale={0.7}>
+            {stageText}
           </Text>
         </Animated.View>
       )}
@@ -505,13 +494,10 @@ const styles = StyleSheet.create({
     fontFamily: fonts.semibold,
     letterSpacing: -0.1,
   },
-  cardValue: {
-    alignItems: 'flex-start',
-    marginVertical: -2,
-  },
-  cardCaption: {
-    fontSize: 10.5,
-    fontFamily: fonts.medium,
+  cardStage: {
+    fontSize: 17,
+    fontFamily: fonts.heavy,
+    letterSpacing: -0.3,
   },
   footnote: {
     marginTop: 8,

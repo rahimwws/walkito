@@ -42,6 +42,9 @@ export type AnalyticsEvents = {
   acquisition_source_selected: { source: AcquisitionSource };
   sign_in_completed: { method: 'apple' | 'email'; status: 'signed-in' | 'unavailable' };
   sign_in_failed: { method: 'apple' | 'email' };
+  /** Went past the intro without signing in. Nothing is lost: the account is
+   * anonymous either way, and the name is asked on the next screen. */
+  sign_in_skipped: Record<string, never>;
   /** Left the flow — by finishing it, or by the header's Skip. */
   onboarding_completed: { skipped: boolean; plan_weeks?: number };
 
@@ -62,7 +65,15 @@ export type AnalyticsEvents = {
   /** A pain check-in happened. The score deliberately does not travel. */
   checkin_logged: { day: number; entries_today: number };
   morning_stretch_done: { day: number };
+
+  // ── App updates ──────────────────────────────────────────────────────────
+  /** The update sheet was shown. `ota` is an EAS Update, `store` a new build. */
+  app_update_offered: { kind: AppUpdateKind };
+  /** They tapped the sheet's primary button. */
+  app_update_accepted: { kind: AppUpdateKind };
 };
+
+export type AppUpdateKind = 'ota' | 'store';
 
 export type PurchaseProps = {
   plan: PlanTier;

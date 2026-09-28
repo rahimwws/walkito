@@ -2,6 +2,7 @@ export {
   LEG_VIEW,
   MAX_ZONES,
   PAIN_ZONES,
+  SHIN_LINE_X,
   ZONE_CENTRES,
   ZONE_LABEL_KEYS,
   toggleZone,

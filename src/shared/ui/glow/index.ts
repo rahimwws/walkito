@@ -1,1 +1,1 @@
-export { Glow, type GlowProps } from './glow';
+export { Glow, holdGlowStill, type GlowProps } from './glow';

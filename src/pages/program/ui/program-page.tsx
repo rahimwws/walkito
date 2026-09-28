@@ -384,7 +384,12 @@ export function ProgramPage() {
 
                       {!last && (
                         <View style={styles.gap}>
-                          <DayLink ahead={status === 'upcoming'} />
+                          {/* The one link on the page that moves: the step out
+                              of today. See `DayLink.animated`. */}
+                          <DayLink
+                            ahead={status === 'upcoming'}
+                            animated={day.index === TODAY_INDEX}
+                          />
                           {milestone && (
                             <>
                               <StreakMilestone days={day.day} />
@@ -451,21 +456,25 @@ export function ProgramPage() {
             // Finishing is the only thing that marks a day done. Without this
             // the program could not move: the path stayed grey, the streak
             // never counted, and the score had no attendance to read. A retest
-            // day is excluded — it is measured, not trained, and its record is
-            // the retest itself.
-            onFinish={
-              session.checkpoint
-                ? undefined
-                : () =>
-                    writeLog(session.day, {
-                      sessionCompleted: true,
-                      exercisesDone: [...planFor(session.block, session.kind)],
-                      // Stamped here rather than derived from the date, so the
-                      // rest before the next session is measured from when the
-                      // work actually ended.
-                      completedAt: Date.now(),
-                    })
-            }
+            // day writes its own record when the numbers are saved, so only
+            // the leaving is left to do here.
+            //
+            // And then it leaves. This used to stop at the write, so closing
+            // the result left the finished player on screen with nothing to
+            // press but the back arrow.
+            onFinish={() => {
+              if (!session.checkpoint) {
+                writeLog(session.day, {
+                  sessionCompleted: true,
+                  exercisesDone: [...planFor(session.block, session.kind)],
+                  // Stamped here rather than derived from the date, so the
+                  // rest before the next session is measured from when the
+                  // work actually ended.
+                  completedAt: Date.now(),
+                });
+              }
+              program?.closeDetail();
+            }}
           />
         )}
       </Animated.View>
