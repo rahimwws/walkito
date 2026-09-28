@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
 import { AppState } from 'react-native';
 
-import { PROGRAM, TODAY_INDEX, movesFor } from '@/entities/program';
-import { EXERCISE_LIST } from '@/entities/program';
+import { todayKey, weekPlan } from '@/entities/program';
 import { prefetchClips, surveyClips } from '@/widgets/session-player';
 
 /**
@@ -32,14 +31,13 @@ export function useClipPrefetch(): void {
      * day in front of the user. Fetching alphabetically would leave those until
      * last for no reason.
      */
+    // Today's and tomorrow's days from this week's plan, first.
     const soon: string[] = [];
-    for (const index of [TODAY_INDEX, TODAY_INDEX + 1]) {
-      const day = PROGRAM[index];
-      if (day == null) continue;
-      for (const title of movesFor(day)) {
-        const match = EXERCISE_LIST.find((exercise) => exercise.title === title);
-        if (match != null && !soon.includes(match.id)) soon.push(match.id);
-      }
+    const today = todayKey();
+    const days = weekPlan().days;
+    const at = Math.max(0, days.findIndex((day) => day.date === today));
+    for (const day of days.slice(at, at + 2)) {
+      for (const exercise of day.exercises) if (!soon.includes(exercise.id)) soon.push(exercise.id);
     }
 
     void prefetchClips(soon);

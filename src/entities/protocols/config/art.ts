@@ -1,6 +1,12 @@
+import FlashIcon from '@hugeicons/core-free-icons/FlashIcon';
+import MoonIcon from '@hugeicons/core-free-icons/Moon02Icon';
+import RunningShoesIcon from '@hugeicons/core-free-icons/RunningShoesIcon';
+import SunriseIcon from '@hugeicons/core-free-icons/Sun03Icon';
+import WorkoutStretchingIcon from '@hugeicons/core-free-icons/WorkoutStretchingIcon';
+import type { IconSvgElement } from '@hugeicons/react-native';
 import type { ImageSourcePropType } from 'react-native';
 
-import type { ProtocolId } from '@/entities/protocols';
+import type { ProtocolId } from '../model/protocols';
 
 /**
  * One photograph per protocol, behind its card.
@@ -33,4 +39,16 @@ export const PROTOCOL_ART: Readonly<Record<ProtocolId, ImageSourcePropType>> = {
   post_run: require('@assets/quick/post-run.jpg'),
   at_work: require('@assets/quick/at-work.jpg'),
   morning: require('@assets/quick/morning.jpg'),
+};
+
+/**
+ * Each routine's glyph. Here with the art, rather than in the Library page, so
+ * the small cards on Today wear the same picture and the same icon.
+ */
+export const PROTOCOL_ICONS: Readonly<Record<ProtocolId, IconSvgElement>> = {
+  flare: WorkoutStretchingIcon,
+  pre_run: FlashIcon,
+  post_run: RunningShoesIcon,
+  at_work: SunriseIcon,
+  morning: MoonIcon,
 };

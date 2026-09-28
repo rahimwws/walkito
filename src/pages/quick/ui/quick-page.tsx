@@ -1,22 +1,21 @@
-import FlashIcon from '@hugeicons/core-free-icons/FlashIcon';
-import MoonIcon from '@hugeicons/core-free-icons/Moon02Icon';
-import RunningShoesIcon from '@hugeicons/core-free-icons/RunningShoesIcon';
 import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
-import SunriseIcon from '@hugeicons/core-free-icons/Sun03Icon';
-import WorkoutStretchingIcon from '@hugeicons/core-free-icons/WorkoutStretchingIcon';
-import type { IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { currentDay, painOn, useProgramState } from '@/entities/program';
+import { useHealthSignals } from '@/entities/health';
 import { useEntitled } from '@/entities/purchase';
 import {
   PROTOCOLS,
   protocolById,
+  PROTOCOL_ART,
+  PROTOCOL_ICONS,
+  clearProtocolRequest,
   recommendProtocol,
+  useProtocolRequest,
   type Protocol,
   type ProtocolId,
 } from '@/entities/protocols';
@@ -25,7 +24,6 @@ import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { FeatureCard } from '@/shared/ui/feature-card';
 
-import { PROTOCOL_ART } from '../config/art';
 import { ProtocolSheet } from './protocol-sheet';
 
 /**
@@ -43,14 +41,8 @@ import { ProtocolSheet } from './protocol-sheet';
  * thing. Nothing here is a new component.
  */
 
-/** One glyph per protocol, from the set already in the app. */
-const ICONS: Readonly<Record<ProtocolId, IconSvgElement>> = {
-  flare: WorkoutStretchingIcon,
-  pre_run: FlashIcon,
-  post_run: RunningShoesIcon,
-  at_work: SunriseIcon,
-  morning: MoonIcon,
-};
+/** One glyph per protocol, shared with the small cards on Today. */
+const ICONS = PROTOCOL_ICONS;
 
 export function QuickPage() {
   const scheme = useColorScheme();
@@ -66,13 +58,15 @@ export function QuickPage() {
   useProgramState();
 
   const [open, setOpen] = useState<ProtocolId | null>(null);
+  const health = useHealthSignals();
 
   /**
    * Which protocol leads, worked out from the clock and today's log.
    *
-   * `lastRunEndedAt` is null until workout reads are wired up. The rule is
-   * skipped silently for null, by design: this tab must never be the thing
-   * that asks for a HealthKit permission.
+   * `lastRunEndedAt` comes from the health cache, which the pipeline fills
+   * from workouts — never from a query here: this tab must never be the thing
+   * that asks for a HealthKit permission. Null (no Health, no run) skips the
+   * rule silently.
    */
   const featuredId = useMemo(() => {
     const now = new Date();
@@ -81,7 +75,7 @@ export function QuickPage() {
       {
         painToday: painOn(day),
         checkedInToday: painOn(day) != null,
-        lastRunEndedAt: null,
+        lastRunEndedAt: health.lastRunEndedAt,
         hour: now.getHours(),
         weekday: now.getDay(),
       },
@@ -90,7 +84,8 @@ export function QuickPage() {
     // Recomputed on every render of this screen rather than memoised on a
     // clock: the hour can turn while the tab is open, and a stale featured
     // card is worse than the work of picking one again.
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [health.lastRunEndedAt]);
 
   const featured = protocolById(featuredId);
 
@@ -106,6 +101,19 @@ export function QuickPage() {
     }
     setOpen(protocol.id);
   };
+
+  /**
+   * A routine asked for from elsewhere — the small cards on Today — opened the
+   * same way a tap on its card here opens it, lock included.
+   */
+  const asked = useProtocolRequest();
+  useEffect(() => {
+    if (asked == null) return;
+    clearProtocolRequest();
+    openProtocol(protocolById(asked));
+    // Only the request: `openProtocol` is recreated every render.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [asked]);
 
   return (
     <View style={styles.screen}>

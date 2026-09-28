@@ -151,6 +151,7 @@ function strip(day: DailyMetric): Partial<DailyMetric> {
   if (day.restingHR != null) out.restingHR = day.restingHR;
   if (day.flights != null) out.flights = day.flights;
   if (day.longestRunKm != null) out.longestRunKm = day.longestRunKm;
+  if (day.lastRunEndAt != null) out.lastRunEndAt = day.lastRunEndAt;
   if (day.hoursOnFeet != null) out.hoursOnFeet = day.hoursOnFeet;
   return out;
 }
@@ -200,6 +201,7 @@ function blank(date: string): DailyMetric {
     restingHR: null,
     flights: null,
     longestRunKm: null,
+    lastRunEndAt: null,
     hoursOnFeet: null,
   };
 }

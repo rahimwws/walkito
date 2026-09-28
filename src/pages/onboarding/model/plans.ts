@@ -23,7 +23,7 @@ export const PLANS: readonly TrainingPlan[] = [
   {
     weeks: 6,
     tab: '6 weeks',
-    wordmark: 'MOMENTUM',
+    wordmark: 'Momentum',
     eyebrow: 'KEEP RUNNING',
     title: '6-week plan',
     blurb:
@@ -36,7 +36,7 @@ export const PLANS: readonly TrainingPlan[] = [
   {
     weeks: 12,
     tab: '12 weeks',
-    wordmark: 'FOUNDATIONS',
+    wordmark: 'Foundations',
     eyebrow: 'START RUNNING',
     title: '12-week plan',
     blurb: 'If you’re starting from scratch, or coming back after time off.',

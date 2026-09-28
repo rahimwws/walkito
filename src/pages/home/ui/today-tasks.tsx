@@ -11,36 +11,33 @@ import { useMemo, useState } from 'react';
 import { Image, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { LinearTransition, ReduceMotion } from 'react-native-reanimated';
 
+import { useHealthSignals, type HealthSignals } from '@/entities/health';
 import {
   PROGRAM,
   RETEST_MINUTES,
   RETEST_TESTS,
   TODAY_INDEX,
-  blockFor,
   currentDay,
-  daysSinceLastSession,
+  doseLabel,
+  doseSeconds as planDoseSeconds,
+  exerciseById,
   exerciseCategoryLabel,
-  hoursBaseline,
-  hoursOnFeetOn,
-  kindFor,
   logFor,
-  painAverage,
-  painOn,
-  programState,
-  resolveDay,
+  recordSession,
+  todayKey,
+  todayPlan,
   useLogsVersion,
+  usePlanVersion,
   writeLog,
-  useProgramState,
-  type Prescription,
   type ExerciseCategory,
+  type PlannedExercise,
   type ProgramDay,
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { useT, type Translate } from '@/shared/lib/i18n';
 import { PROGRAM_MS } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
-import { doseSeconds } from '@/widgets/session-player';
-import { SessionView } from '@/widgets/session-player';
+import { SessionView, type PlaylistStep } from '@/widgets/session-player';
 
 /** The mascot, mid-stride. It belongs to this block rather than to the screen:
  * the list is the one place on Home that asks for work, and a character running
@@ -119,61 +116,49 @@ export type Task = {
    * "nothing to say about time" turn out to be the same set.
    */
   dose?: string;
+  /** What the player runs for this task: the plan's own dose, timed. */
+  step: PlaylistStep;
 };
 
 /**
- * Today's list, as the engine resolves it.
+ * Today's list: this week's plan for today, adjusted to this morning.
  *
- * Not the day's template — the day *after* the user's own morning has been
- * taken into account. That distinction is the point of asking: log a seven and
- * this list is three minutes of unloaded work by the time the check-in has
- * finished sliding out of the way, without the screen having to know why.
- *
- * The chip carries the session's length rather than a per-exercise one. There
- * is no per-exercise figure to carry — the program doses in sets and reps, and
- * the player gives every move the same minute — so quoting anything else here
- * would be inventing a second source of truth next to the one the session
- * header already prints.
+ * Not the day as planned on Sunday — the day after the user's own morning has
+ * been taken into account. Log a seven and this list is three minutes of
+ * seated work by the time the check-in has slid out of the way. The Workout
+ * page shows the same day from the same call, so the two cannot disagree.
  */
-function tasksForToday(t: Translate): { tasks: readonly Task[]; retest: boolean } {
-  const dayNumber = currentDay();
-  const state = programState();
-  const block = blockFor(dayNumber, state.planLength);
-  // Past the final block there is no block to resolve against, and maintenance
-  // supplies its own schedule. The list says nothing rather than guessing, and
-  // its empty state is already the right thing to show.
-  if (block == null) return { tasks: [], retest: false };
-
-  const resolved = resolveDay({
-    dayNumber,
-    block,
-    kind: kindFor(dayNumber),
-    painToday: painOn(dayNumber),
-    pain7dAvg: painAverage(dayNumber, 7),
-    hoursOnFeetYesterday: hoursOnFeetOn(dayNumber - 1),
-    hoursBaseline: hoursBaseline(dayNumber),
-    daysSinceLastSession: daysSinceLastSession(dayNumber),
-    progressionOffset: state.progressionOffset,
-    focus: state.focus,
-  });
-
+function tasksForToday(t: Translate, health: HealthSignals): { tasks: readonly Task[]; retest: boolean } {
+  const day = todayPlan({
+    stepsYesterday: health.stepsYesterday,
+    steps28Avg: health.stepsBaseline,
+    sleepHours: health.sleepLastNightMin == null ? null : health.sleepLastNightMin / 60,
+  }, null);
+  if (day.type === 'test') return { tasks: [], retest: true };
   return {
-    // A retest day resolves to no exercises, which is not the same fact as a
-    // rest day resolving to none — so the caller is told which empty this is
-    // rather than having to infer it from a zero.
-    retest: resolved.retest,
-    tasks: resolved.exercises.map(({ exercise, prescription }): Task => ({
-      id: exercise.id,
-      title: exercise.title,
-      category: exercise.category,
-      // This exercise's length, not the session's. It used to print
-      // `resolved.minutes`, which is how long the whole list takes — so a
-      // hundred-second stretch, a ninety-second one and a set of ten all
-      // claimed seven minutes each, and the three of them together claimed
-      // twenty-one.
-      chip: chipFor(prescription, t),
-      dose: prescription?.label,
-    })),
+    retest: false,
+    tasks: day.exercises.map((planned): Task => {
+      const exercise = exerciseById(planned.id);
+      const seconds = planDoseSeconds(planned.dose);
+      return {
+        id: planned.id,
+        title: exercise.title,
+        category: exercise.category,
+        chip: chipFor(seconds, t),
+        dose: doseLabel(planned.dose.sets, planned.dose.reps, planned.dose.holdSec, planned.dose.perSide),
+        step: stepOf(planned),
+      };
+    }),
+  };
+}
+
+function stepOf(planned: PlannedExercise): PlaylistStep {
+  const { dose } = planned;
+  return {
+    exerciseId: planned.id,
+    seconds: planDoseSeconds(dose),
+    perSide: dose.perSide,
+    ...(dose.tempo != null && dose.reps != null ? { cadence: { tempo: dose.tempo, reps: dose.reps, sets: dose.sets } } : {}),
   };
 }
 
@@ -185,18 +170,11 @@ function tasksForToday(t: Translate): { tasks: readonly Task[]; retest: boolean 
  * claimed seven — twenty-one between them, against a session the same screen
  * called seven.
  *
- * `doseSeconds` is the arithmetic the player already uses for the same
- * question, so the chip and the countdown cannot disagree. A dose it cannot
- * measure — counted work with neither a tempo nor a hold, fifteen ankle rocks —
- * gets no chip rather than a guess, which is the same thing the player does
- * with it.
+ * The seconds are the plan dose's own, the same figure the player times the
+ * move by, so the chip and the countdown cannot disagree.
  */
-function chipFor(
-  prescription: Prescription | null | undefined,
-  t: Translate,
-): string | undefined {
-  const seconds = doseSeconds(prescription ?? null);
-  if (seconds == null || seconds <= 0) return undefined;
+function chipFor(seconds: number, t: Translate): string | undefined {
+  if (seconds <= 0) return undefined;
   if (seconds < 60) return t('home.chipSeconds', { count: Math.round(seconds) });
   return t('home.chipMinutes', { count: Math.round(seconds / 60) });
 }
@@ -235,7 +213,8 @@ export function TodayTasks() {
    * value is read directly — they are versions, and the work is in the memo.
    */
   const logsVersion = useLogsVersion();
-  const state = useProgramState();
+  const planVersion = usePlanVersion();
+  const health = useHealthSignals();
 
   /**
    * Which tasks are ticked, read from the day log rather than held here alone.
@@ -257,13 +236,13 @@ export function TodayTasks() {
     [logsVersion],
   );
   const { tasks, retest } = useMemo(() => {
-    return tasksForToday(t);
-    // The first two are versions rather than inputs — the resolver reads the
-    // log and the state itself, and the log map is mutated in place, so they
-    // are the only things that can tell React the answer has moved. `t` is a
-    // real input: the titles and the chips are both written in its language.
+    return tasksForToday(t, health);
+    // The first two are versions rather than inputs — the plan reads the log
+    // and its own store, and both are mutated in place, so they are the only
+    // things that can tell React the answer has moved. `t` and the health
+    // facts are real inputs.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [logsVersion, state, t]);
+  }, [logsVersion, planVersion, health, t]);
 
   /**
    * Unfinished first, in their original order; finished sink to the bottom.
@@ -292,6 +271,21 @@ export function TodayTasks() {
    */
   const record = (next: readonly string[]) => {
     const complete = tasks.length > 0 && next.length >= tasks.length;
+    const wasComplete = logFor(currentDay())?.sessionCompleted === true;
+    if (complete && !wasComplete) {
+      // The day's plan session, finished from this list: recorded the same way
+      // the Workout page records one, so next week's plan hears about it.
+      recordSession({
+        date: todayKey(),
+        source: 'plan',
+        minutes: Math.round(tasks.reduce((sum, task) => sum + task.step.seconds, 0) / 60),
+        exercises: next.map((id) => ({ id, status: 'done' as const })),
+        feedback: null,
+        inSessionPain: null,
+        completedAt: Date.now(),
+      });
+      return;
+    }
     writeLog(currentDay(), {
       exercisesDone: [...next],
       sessionCompleted: complete,
@@ -437,10 +431,10 @@ export function TodayTasks() {
           <View style={[styles.player, { backgroundColor: colors.background }]}>
             <SessionView
               day={today}
-              // One task, one move. The player's own transport still works — it
-              // simply has nowhere to go next, which is what makes the end of the
-              // move the end of the task.
-              moves={[open.title]}
+              // One task, one move, at the plan's dose. The player's own
+              // transport still works — it simply has nowhere to go next, which
+              // is what makes the end of the move the end of the task.
+              playlist={[open.step]}
               onBack={() => setOpen(null)}
               onFinish={() => {
                 finish(open.id);

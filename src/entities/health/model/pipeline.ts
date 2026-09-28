@@ -146,6 +146,7 @@ const BLANK_DAY = {
   restingHR: null,
   flights: null,
   longestRunKm: null,
+  lastRunEndAt: null,
   hoursOnFeet: null,
 } satisfies Omit<DailyMetric, 'date'>;
 
@@ -244,14 +245,19 @@ async function readRuns(from: Date, to: Date): Promise<DailyMetric[]> {
       },
     });
     const longest = new Map<string, number>();
+    const lastEnd = new Map<string, number>();
     for (const workout of workouts) {
+      const key = dayKey(new Date(workout.startDate));
+      // When it ended, whatever its distance: "just back from a run" is about
+      // the clock, and a run with no distance recorded still happened.
+      const ended = new Date(workout.endDate).getTime();
+      if (Number.isFinite(ended)) lastEnd.set(key, Math.max(lastEnd.get(key) ?? 0, ended));
       const meters = workout.totalDistance?.quantity;
       if (meters == null || !Number.isFinite(meters)) continue;
-      const key = dayKey(new Date(workout.startDate));
       // The library reports distance in metres whatever was asked for.
       longest.set(key, Math.max(longest.get(key) ?? 0, meters / 1000));
     }
-    return days('longestRunKm', longest);
+    return [...days('longestRunKm', longest), ...days('lastRunEndAt', lastEnd)];
   } catch {
     return [];
   }

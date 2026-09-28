@@ -19,6 +19,7 @@ import {
   painOn,
   programState,
   writeLog,
+  buildUpcomingWeek,
 } from '@/entities/program';
 
 /**
@@ -62,6 +63,9 @@ function syncHoursOnFeet(): void {
  */
 async function afterRefresh(): Promise<void> {
   syncHoursOnFeet();
+  // A background wake on Sunday evening is the plan's chance to build next
+  // week before Monday — see `buildUpcomingWeek`.
+  buildUpcomingWeek();
   await maybeSendStepCheck();
 }
 

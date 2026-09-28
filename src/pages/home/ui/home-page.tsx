@@ -1,22 +1,26 @@
 import { FireIcon } from 'phosphor-react-native/src/icons/Fire';
 import { useIsFocused, useRouter } from 'expo-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import {
+  BIG_MILESTONE,
   TODAY_INDEX,
   currentDay,
+  milestoneFor,
   painOn,
   toDateKey,
   useStreak,
   weekAttendance,
 } from '@/entities/program';
+
+import { weekFacts } from '../model/week-facts';
 import { useHealthSignals } from '@/entities/health';
 import { firstName, useIntake, useProfileName } from '@/entities/profile';
 import { accents } from '@/shared/config';
-import { useLanguage } from '@/shared/lib/i18n';
+import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { useProgram } from '@/shared/lib/program';
 import { useDockHeight } from '@/shared/ui/action-dock';
@@ -28,11 +32,14 @@ import { IntroReveal } from '@/shared/ui/splash';
 import { briefTokens } from '../model/brief';
 import { GiftSheet } from '@/shared/ui/gift-sheet';
 import { StreakSheet } from '@/shared/ui/streak-sheet';
+import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
+import { kv } from '@/shared/lib/storage';
 import { StreakWeek } from '@/shared/ui/streak-week';
 import { Confetti } from '@/shared/ui/confetti';
 import { DailyStack } from './daily-stack';
 import { PainCheck } from './pain-check';
 import { TodayTasks } from './today-tasks';
+import { LibraryRow } from './library-row';
 import { DailyBrief } from '@/shared/ui/daily-brief';
 
 
@@ -83,6 +90,26 @@ function todayLines(): { title: string; subtitle: string } {
  * the day the engine resolves — so the four things this screen says cannot
  * disagree with each other, which is the failure they were hard-coded into.
  */
+const MILESTONES_KEY = 'streak/milestones-seen';
+
+function milestoneSeen(days: number): boolean {
+  try {
+    return (JSON.parse(kv.getString(MILESTONES_KEY) ?? '[]') as number[]).includes(days);
+  } catch {
+    return false;
+  }
+}
+
+function markMilestone(days: number): void {
+  let seen: number[] = [];
+  try {
+    seen = JSON.parse(kv.getString(MILESTONES_KEY) ?? '[]') as number[];
+  } catch {
+    seen = [];
+  }
+  kv.set(MILESTONES_KEY, JSON.stringify([...new Set([...seen, days])]));
+}
+
 export function HomePage() {
   const router = useRouter();
   /** Home stays mounted under the other tabs; the drift has no reason to run
@@ -91,6 +118,7 @@ export function HomePage() {
   const onScroll = useMinimizeOnScroll();
   const insets = useSafeAreaInsets();
   const scheme = useColorScheme() === 'dark' ? 'dark' : 'light';
+  const t = useT();
   const dockHeight = useDockHeight();
   const program = useProgram();
   /** The reward sheet, opened from the capsule in the header. */
@@ -98,6 +126,15 @@ export function HomePage() {
   /** What the streak means, opened from the capsule that shows it. */
   const [streakOpen, setStreakOpen] = useState(false);
   const streak = useStreak();
+  /**
+   * A streak milestone reached and not yet marked — section 6 of the plan
+   * spec. Each is shown once, ever; ten gets the confetti.
+   */
+  const milestone = milestoneFor(streak.current);
+  const [milestoneOpen, setMilestoneOpen] = useState(false);
+  useEffect(() => {
+    if (milestone != null && !milestoneSeen(milestone)) setMilestoneOpen(true);
+  }, [milestone]);
   /** Whether today's answer is in. Once it is, the check-in gives up the top of
    * the screen to the list of work it was asked about. */
   /**
@@ -124,6 +161,13 @@ export function HomePage() {
   /** Subscribed to, not read once: the sentence is rebuilt in the same commit
    * as the switch is flipped, rather than on next launch. */
   const language = useLanguage();
+  /** What this week's plan has to say to the morning line. */
+  const planHealth = useHealthSignals();
+  const plan = weekFacts(language, {
+    stepsYesterday: planHealth.stepsYesterday,
+    steps28Avg: planHealth.stepsBaseline,
+    sleepHours: planHealth.sleepLastNightMin == null ? null : planHealth.sleepLastNightMin / 60,
+  });
 
   return (
     <View style={styles.screen}>
@@ -214,6 +258,7 @@ export function HomePage() {
                 onFeetThreshold: signals.onFeetThreshold,
                 goal: intake?.goal ?? null,
                 sport: intake?.sport ?? null,
+                ...plan,
               },
               language,
             )}
@@ -240,10 +285,29 @@ export function HomePage() {
             second={<TodayTasks />}
           />
         </IntroReveal>
+
+        {/* Anything outside the plan lives in the Library; the one that fits
+            this moment is offered here first. */}
+        <LibraryRow />
       </Animated.ScrollView>
 
       {/* Over everything, outside the scroller, and untouchable. */}
       {burst > 0 && <Confetti key={burst} />}
+
+      {milestone != null && (
+        <CelebrationSheet
+          visible={milestoneOpen}
+          title={t('streak.title', { count: milestone })}
+          headlineColor={accents[scheme].orange.fill}
+          blurb={milestone === BIG_MILESTONE ? t('streak.milestoneBigBlurb') : t('streak.milestoneBlurb')}
+          confetti={milestone === BIG_MILESTONE}
+          emblem={milestone >= BIG_MILESTONE}
+          onClose={() => {
+            markMilestone(milestone);
+            setMilestoneOpen(false);
+          }}
+        />
+      )}
 
       <GiftSheet visible={giftOpen} onClose={() => setGiftOpen(false)} />
 

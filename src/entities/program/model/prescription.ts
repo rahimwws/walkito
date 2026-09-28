@@ -109,7 +109,7 @@ export function effectiveBlock(blockIndex: number, progressionOffset: number): n
  * the numbers stay as prescribed and the line says what they span; the player
  * is what turns that into a clock for each foot.
  */
-function doseLabel(sets: number, reps?: number, holdSec?: number, perSide = false): string {
+export function doseLabel(sets: number, reps?: number, holdSec?: number, perSide = false): string {
   const dose = core(sets, reps, holdSec);
   // The qualifier takes the dose as a placeholder rather than being appended to
   // it. English puts "both feet" last; a language that leads with it has

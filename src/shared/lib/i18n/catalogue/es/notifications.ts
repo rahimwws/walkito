@@ -101,9 +101,9 @@ export const NOTIFICATIONS_ES = {
   'notifications.retestFollowUp': 'Las pruebas siguen abiertas. Cuatro minutos.',
 
   // ── A new block opens ────────────────────────────────────────────────────
-  'notifications.blockNew': 'Hoy empieza un bloque nuevo: {block}. Comienzan las elevaciones de talón.',
-  'notifications.blockLoadUp': 'Bloque {block}. A partir de aquí la carga sube.',
-  'notifications.blockOpens': 'Hoy empieza {block}.',
+  'notifications.blockNew': 'Hoy empieza una semana nueva. Objetivo: {block}.',
+  'notifications.blockLoadUp': 'Esta semana trabaja en «{block}».',
+  'notifications.blockOpens': 'Semana nueva. Esta va de {block}.',
 
   // ── The plan changed, and why ────────────────────────────────────────────
   'notifications.planFlare': 'El dolor subió esta semana, así que hoy se baja un nivel.',

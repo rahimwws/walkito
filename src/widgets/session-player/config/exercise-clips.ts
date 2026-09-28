@@ -1,4 +1,4 @@
-import { clipEntry } from './clip-manifest';
+import { clipEntry } from '@/shared/config';
 import { clipSource } from '../model/clip-cache';
 
 /**

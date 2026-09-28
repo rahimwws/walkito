@@ -10,3 +10,10 @@ export {
   type AccentName,
 } from './theme';
 export { APPLE_APP_ID, APP_STORE_REVIEW_URL, LEGAL, SUPPORT_EMAIL } from './legal';
+export {
+  CLIPS,
+  CLIPS_TOTAL_BYTES,
+  CLIP_BUCKET,
+  clipEntry,
+  type ClipEntry,
+} from './clip-manifest';

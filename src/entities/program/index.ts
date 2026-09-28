@@ -97,6 +97,7 @@ export {
   HEEL_RAISE_IDS,
   LOAD_NOTES,
   effectiveBlock,
+  doseLabel,
   heelRaisePrescription,
   loadNoteFor,
   prescriptionFor,
@@ -214,3 +215,102 @@ export {
 export { CHECKPOINT_ICON, SESSION_META } from './ui/session-meta';
 export { ZONE_META } from './ui/zone-meta';
 export { settleOffset, stepBackAfterSession } from './model/offset';
+
+// ── The weekly plan ──────────────────────────────────────────────────────────
+export {
+  CHAINS,
+  EQUIPMENT,
+  FALLBACKS,
+  PLAN_META,
+  planMeta,
+  type ChainName,
+  type Equipment,
+  type GoalTag,
+  type PlanKind,
+  type PlanMeta,
+} from './model/plan/catalogue-meta';
+export { doseFor, doseSeconds, type PlanDose } from './model/plan/dose';
+export { allowed, playableId, pogoAllowed, type EligibilityContext } from './model/plan/eligibility';
+export {
+  GOAL_ORDER,
+  GOAL_SPECS,
+  goalProgress,
+  type Goal,
+  type GoalStatus,
+  type GoalType,
+  type StartingFacts,
+} from './model/plan/goals';
+export {
+  OUTCOME_KINDS,
+  OUTCOME_SPORTS,
+  outcomeProgress,
+  type Outcome,
+  type OutcomeArea,
+  type OutcomeKind,
+  type OutcomeProgress,
+  type OutcomeSport,
+} from './model/plan/outcome';
+export {
+  IN_SESSION_STOP,
+  offersShortVersion,
+  twoMinuteVersion,
+  type AdjustedDay,
+  type TodayReason,
+} from './model/plan/today';
+export {
+  addDays,
+  buildWeek,
+  weekIndexFor,
+  weekStartOf,
+  type DayType,
+  type DaysPerWeek,
+  type PlanDay,
+  type PlannedExercise,
+  type Rationale,
+  type RationaleKind,
+  type SessionMinutes,
+  type WeekPlan,
+} from './model/plan/week';
+export {
+  DEFAULT_SETTINGS,
+  beginSession,
+  buildUpcomingWeek,
+  ensureGoals,
+  noteInSessionPain,
+  noteSessionFeedback,
+  exercisePrefs,
+  goals,
+  libraryFavourites,
+  markCantDo,
+  nextWeekPreview,
+  outcome,
+  painSeries,
+  planDayOn,
+  planSessionDone,
+  planWeekOf,
+  planSettings,
+  rebuildRestOfWeek,
+  recordSession,
+  refreshGoals,
+  reminderOverride,
+  sessions,
+  seedPlanSettings,
+  setLastSessionFeedback,
+  setOutcomeAreas,
+  setOutcomeKind,
+  setPlanSettings,
+  testDue,
+  todayKey,
+  todayPlan,
+  toggleLibraryFavourite,
+  usePlanVersion,
+  usualStartMinute,
+  weekPlan,
+  type CantDoReason,
+  type FootType,
+  type PlanSettings,
+  type SessionRecord,
+  type SessionSource,
+  type TodayHealth,
+} from './model/plan/store';
+export { BIG_MILESTONE, STREAK_MILESTONES, milestoneFor } from './model/streak';

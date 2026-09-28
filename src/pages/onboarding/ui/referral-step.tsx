@@ -52,7 +52,7 @@ export function ReferralStep({ value, onChange, onSubmit, note, noteGood }: Refe
         value={value}
         onChangeText={(next) => onChange(normalise(next))}
         onSubmitEditing={onSubmit}
-        placeholder={'—'.repeat(REFERRAL_CODE_LENGTH)}
+        placeholder={'-'.repeat(REFERRAL_CODE_LENGTH)}
         placeholderTextColor={meter.unit}
         selectionColor={caret}
         autoCapitalize="characters"

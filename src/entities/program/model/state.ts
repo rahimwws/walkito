@@ -90,6 +90,11 @@ export type DayLog = {
    */
   painZones?: string[];
   /**
+   * A Library routine was finished this day. It keeps the streak — any finished
+   * routine does — but it is not the plan's session, which stays open.
+   */
+  libraryDone?: boolean;
+  /**
    * Every check-in made on this day, oldest first.
    *
    * A day is not one answer. A foot can hurt in the morning, settle by midday

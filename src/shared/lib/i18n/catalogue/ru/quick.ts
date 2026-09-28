@@ -4,7 +4,7 @@ export const QUICK_RU = {
   'quick.tab': 'Быстро',
   'quick.title': 'Быстро',
   'quick.subtitle': 'Когда нужно прямо сейчас',
-  'quick.featured': 'СЕЙЧАС ПОДОЙДЁТ',
+  'quick.featured': 'Сейчас подойдёт',
 
   'quick.flare.title': 'Болит прямо сейчас',
   'quick.preRun.title': 'Перед пробежкой',

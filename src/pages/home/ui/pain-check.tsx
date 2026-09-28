@@ -1,5 +1,6 @@
 import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Haptics from 'expo-haptics';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   Image,
@@ -159,8 +160,8 @@ export function PainCheck({ onLogged }: PainCheckProps) {
    * change one of them and jolt the list arriving over it. By the time the
    * motion is paid off the height can grow freely.
    */
-  const acknowledge = (score: number) => {
-    ackTimer.current = setTimeout(() => setAck(t(acknowledgement(score))), PROGRAM_MS);
+  const acknowledge = (score: number, text: string = t(acknowledgement(score))) => {
+    ackTimer.current = setTimeout(() => setAck(text), PROGRAM_MS);
   };
 
   /**
@@ -176,12 +177,47 @@ export function PainCheck({ onLogged }: PainCheckProps) {
    * acknowledgement is a timeout — an answer that only reached storage after
    * `PROGRAM_MS` would be lost by anyone who logged and immediately left.
    */
-  const record = (score: number, zones: readonly LegZone[]) => {
+  const record = (score: number, zones: readonly LegZone[], said?: string) => {
     logPain(currentDay(), score, zones);
     // The morning's answer is what moves the plan a step back or lets it return.
     settleOffset(currentDay());
-    acknowledge(score);
+    acknowledge(score, said);
   };
+
+  /**
+   * An answer started on the home-screen widget.
+   *
+   * The widget's two cards open the app on `?checkin=fine` or `?checkin=hurts`
+   * rather than recording anything themselves — the app is where an answer is
+   * taken and said back. "No pain" is recorded here, the same way the card and
+   * button on this screen record it, and acknowledged in words that say it was
+   * recorded. "It hurts" opens the sheet, because the number and the place are
+   * the answer and neither can be given on the home screen.
+   *
+   * The parameter is cleared once read, so the same link tapped again later is
+   * a new request rather than an unchanged one React never sees.
+   */
+  const router = useRouter();
+  const { checkin } = useLocalSearchParams<{ checkin?: string }>();
+  useEffect(() => {
+    if (checkin !== 'fine' && checkin !== 'hurts' && checkin !== 'open') return;
+    router.setParams({ checkin: undefined });
+    if (checkin === 'fine') {
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      setSelected('nopain');
+      setLogged(true);
+      onLogged?.(true);
+      record(0, [], t('widget.ackNoPain'));
+    } else if (checkin === 'hurts') {
+      setSelected('pain');
+      setLogged(false);
+      setOpen(true);
+    }
+    // `open` only lands here: the question is on screen, answered or not.
+    // Keyed on the request alone. `record` and `onLogged` are fresh closures
+    // every render, and re-running for them would record the answer twice.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [checkin]);
 
   return (
     <>

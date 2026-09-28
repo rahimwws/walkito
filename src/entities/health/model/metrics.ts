@@ -39,6 +39,9 @@ export type DailyMetric = {
    * a daily total — the evidence is about one long outing, not accumulated
    * walking, and every device that writes workouts supplies it. */
   longestRunKm: number | null;
+  /** When the day's last run ended, epoch milliseconds. What "after a run"
+   * is measured from — the Library card that suits the two hours after one. */
+  lastRunEndAt: number | null;
 };
 
 export type Baseline = {
@@ -191,6 +194,8 @@ export type HealthSignals = {
   longestRunYesterdayKm: number | null;
   runMax28Km: number | null;
   bigRunYesterday: boolean;
+  /** When the most recent run ended, today or yesterday; epoch ms. */
+  lastRunEndedAt: number | null;
 
   sleepLastNightMin: number | null;
   sleepMeanMin: number | null;
@@ -246,6 +251,7 @@ export const NO_SIGNALS: HealthSignals = {
   longestRunYesterdayKm: null,
   runMax28Km: null,
   bigRunYesterday: false,
+  lastRunEndedAt: null,
   sleepLastNightMin: null,
   sleepMeanMin: null,
   sleepShort: false,
@@ -498,6 +504,7 @@ export function signalsFrom(
     flightsRatio,
 
     longestRunYesterdayKm,
+    lastRunEndedAt: today?.lastRunEndAt ?? yesterday?.lastRunEndAt ?? null,
     runMax28Km,
     bigRunYesterday,
 

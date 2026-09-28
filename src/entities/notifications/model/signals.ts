@@ -10,28 +10,20 @@
 
 import { healthSignals } from '@/entities/health';
 import {
-  blockFor,
-  blockName,
   currentDay,
   dateKeyForDay,
-  daysSinceLastSession,
   freezeUsedThisWeek,
-  hoursBaseline,
-  hoursOnFeetOn,
-  isMaintenance,
-  isRetestDay,
-  kindFor,
   logFor,
-  painAverage,
   painOn,
-  phaseFor,
-  programState,
-  resolveDay,
-  resolveMaintenanceDay,
+  planDayOn,
+  planWeekOf,
   streakThrough,
   toDateKey,
-  usualSessionMinute,
-  type ResolvedDay,
+  todayPlan,
+  reminderOverride,
+  usualStartMinute,
+  weekStartOf,
+  type PlanDay,
 } from '@/entities/program';
 
 import { currentAudience } from './audience';
@@ -45,26 +37,26 @@ export const AFTER_WAKE_MINUTES = 15;
 
 const DAY_MS = 86_400_000;
 
-/** Today's resolved session, through whichever engine owns this phase. */
-function resolve(dayNumber: number): ResolvedDay | null {
-  const state = programState();
-  if (phaseFor(dayNumber) === 'maintenance' || isMaintenance(dayNumber, state.planLength)) {
-    return resolveMaintenanceDay({ dayNumber, planLength: state.planLength });
-  }
-  const block = blockFor(dayNumber, state.planLength);
-  if (block == null) return null;
-  return resolveDay({
-    dayNumber,
-    block,
-    kind: kindFor(dayNumber),
-    painToday: painOn(dayNumber),
-    pain7dAvg: painAverage(dayNumber, 7),
-    hoursOnFeetYesterday: hoursOnFeetOn(dayNumber - 1),
-    hoursBaseline: hoursBaseline(dayNumber),
-    daysSinceLastSession: daysSinceLastSession(dayNumber),
-    progressionOffset: state.progressionOffset,
-    focus: state.focus,
-  });
+/**
+ * A day of the weekly plan, as the ladder reads it: today adjusted to this
+ * morning (so a flare or a heavy day is what the notification explains),
+ * every later day as planned.
+ */
+function planned(dateKey: string, isToday: boolean): { day: PlanDay | undefined; reason: string | null } {
+  if (!isToday) return { day: planDayOn(dateKey), reason: null };
+  const health = healthSignals();
+  const adjusted = todayPlan(
+    {
+      stepsYesterday: health.stepsYesterday,
+      steps28Avg: health.stepsBaseline,
+      sleepHours: health.sleepLastNightMin == null ? null : health.sleepLastNightMin / 60,
+    },
+    null,
+  );
+  // Short sleep steps a level down quietly; only the reasons with a sentence
+  // of their own become a plan notification.
+  const reason = adjusted.reason === 'short-sleep' ? null : adjusted.reason;
+  return { day: adjusted, reason };
 }
 
 /** Pain at or above the gate in the three days ending yesterday. */
@@ -86,15 +78,14 @@ function painRecently(dayNumber: number): boolean {
  * the first day of a planned window; see `planWindow`.
  */
 export function signalsFor(dayNumber: number, now: number, today: number): DaySignals {
-  const state = programState();
   const health = healthSignals();
   // Handed over rather than reached for: `wake.ts` knows nothing about the
   // health entity, and decides for itself how often to take a new reading up.
   observeWake(health.wakeMinutes);
   const dateKey = dateKeyForDay(dayNumber);
-  const resolved = resolve(dayNumber);
-  const block = blockFor(dayNumber, state.planLength);
   const isToday = dayNumber === today;
+  const { day, reason } = planned(dateKey, isToday);
+  const week = planWeekOf(dateKey);
   const streak = streakThrough(today);
   const wakeAt = wakeMinutes() + AFTER_WAKE_MINUTES;
   const audience = currentAudience();
@@ -107,7 +98,9 @@ export function signalsFor(dayNumber: number, now: number, today: number): DaySi
     dateKey,
     dayNumber,
     wakeAt,
-    sessionAt: sessionAtFor(wakeAt, usualSessionMinute(today)),
+    // The reminder: when this person usually starts — the median of their last
+    // ten session starts — or the time they set in Settings.
+    sessionAt: reminderOverride() ?? sessionAtFor(wakeAt, usualStartMinute()),
     sport: audience.sport,
 
     painYesterday: painOn(dayNumber - 1),
@@ -116,21 +109,25 @@ export function signalsFor(dayNumber: number, now: number, today: number): DaySi
     stepsYesterday: live ? health.stepsYesterday : null,
     asymmetryDays: live ? health.asymmetryElevatedDays : 0,
 
-    // A load warning is only honest when the engine actually backed off, which
+    // A load warning is only honest when the plan actually backed off, which
     // is exactly what these two reasons mean.
-    loadAdjusted: resolved?.reason === 'spike' || resolved?.reason === 'heavy-day',
-    planChanged: resolved != null && resolved.reason !== 'plan' && resolved.reason !== 'retest',
-    planReason: resolved?.reason ?? null,
+    loadAdjusted: reason === 'spike' || reason === 'heavy-day',
+    planChanged: reason != null,
+    planReason: reason,
 
-    isRetest: isRetestDay(dayNumber, state.planLength),
+    isRetest: day?.type === 'test',
     retestUnstarted: logFor(dayNumber)?.sessionCompleted !== true,
-    opensBlock: block != null && block.startDay === dayNumber ? blockName(block.index) : null,
+    // Monday opens a week, and says what it is for. The notification copy
+    // still calls the slot `block`; what it names is the week's focus goal.
+    opensBlock: weekStartOf(dateKey) === dateKey && week.focus != null ? week.focus : null,
 
-    // A resolved day with no exercises is rest, and rest gets nothing.
-    hasSession: resolved != null && resolved.minutes > 0 && resolved.kind !== 'recovery',
-    minutes: resolved?.minutes ?? 0,
-    kind: resolved?.kind ?? null,
-    maintenance: phaseFor(dayNumber) === 'maintenance',
+    // A planned rest gets nothing; every other day with exercises is a session.
+    hasSession: day != null && day.type !== 'rest' && day.type !== 'test' && day.exercises.length > 0,
+    minutes: day?.minutes ?? 0,
+    kind: day == null || day.type === 'rest' || day.type === 'test' ? null : day.type,
+    // There is no maintenance phase any more: a reached goal keeps ticking over
+    // inside the ordinary week.
+    maintenance: false,
 
     painLoggedToday: isToday ? painOn(dayNumber) != null : false,
     openedAppToday: isToday ? openedOn(toDateKey(new Date(now))) : false,

@@ -58,6 +58,13 @@ type Props = {
   /** Called once the user is done with the note, however they leave it. The
    * caller finishes onboarding here — the sheet never navigates itself. */
   onDone: () => void;
+  /**
+   * Whether the button asks for a review. Off at the end of onboarding: the
+   * plan spec asks for a review only at a win, never during onboarding, and a
+   * custom review ask is exactly what App Review 5.6.1 turns down. The note
+   * stays; its button just carries on.
+   */
+  asksForReview?: boolean;
 };
 
 /**
@@ -82,7 +89,7 @@ type Props = {
  * height is settled on the first frame because nothing is missing from it: a
  * property of the layout, rather than a trick defending one.
  */
-export function NoteSheet({ visible, onDone }: Props) {
+export function NoteSheet({ visible, onDone, asksForReview = true }: Props) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -269,7 +276,10 @@ export function NoteSheet({ visible, onDone }: Props) {
                 </Text>
               </View>
 
-              <PrimaryButton label={t('onboarding.note.cta')} onPress={rate} />
+              <PrimaryButton
+                label={asksForReview ? t('onboarding.note.cta') : t('common.done')}
+                onPress={asksForReview ? rate : later}
+              />
             </Animated.View>
           </ScrollView>
         </Animated.View>

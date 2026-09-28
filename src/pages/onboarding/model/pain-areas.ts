@@ -12,35 +12,14 @@
  * in it that a test should be able to reach.
  */
 
-import type { LegZone } from '@/entities/leg-zone';
+// The model file rather than the slice's barrel: the barrel also exports the
+// map component, which loads react-native, and this file is unit-tested.
+import { PAIN_AREA_OF as AREA, type LegZone, type PainArea } from '@/entities/leg-zone/model/leg-zones';
 
 /** Stored instead of zones when the user says nothing hurts. */
 export const NO_PAIN = 'none';
 
-export type PainArea = 'heel' | 'foot' | 'achilles' | 'calf' | 'shin';
-
-/**
- * Zone to complaint.
- *
- * Grouped the way a person would describe it, not the way the drawing is cut:
- * the arch, the ball, the toes and the inner ankle are all "my foot hurts" to
- * somebody who has not been told otherwise, and the inner ankle is where the
- * tendon that holds the arch up runs — which is exactly the foot line's point.
- */
-const AREA: Readonly<Record<LegZone, PainArea>> = {
-  heel: 'heel',
-  arch: 'foot',
-  ball: 'foot',
-  toes: 'foot',
-  dorsum: 'foot',
-  ankle: 'foot',
-  inner_ankle: 'foot',
-  achilles: 'achilles',
-  calf: 'calf',
-  soleus: 'calf',
-  tibia: 'shin',
-  tib_ant: 'shin',
-};
+export type { PainArea };
 
 function isZone(value: string): value is LegZone {
   return Object.prototype.hasOwnProperty.call(AREA, value);

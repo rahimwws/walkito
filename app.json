@@ -45,7 +45,21 @@
       ],
       "expo-asset",
       "expo-video",
-      "expo-widgets",
+      [
+        "expo-widgets",
+        {
+          "widgets": [
+            {
+              "name": "DailyCheck",
+              "displayName": "Walkito",
+              "description": "Log today’s check-in and see your goal for the day.",
+              "ios": {
+                "supportedFamilies": ["systemSmall", "systemMedium"]
+              }
+            }
+          ]
+        }
+      ],
       [
         "@kingstinct/react-native-healthkit",
         {

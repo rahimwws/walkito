@@ -84,7 +84,7 @@ export const EXERCISES_EN = {
   // ── Balance ──────────────────────────────────────────────────────────────
   'exercises.singleLegHold.title': 'Single-leg hold',
   'exercises.singleLegHold.rationale': 'Standing on one leg is the test your foot fails first.',
-  'exercises.singleLegHold.cue': 'Look at one spot. Let the foot wobble — it’s meant to.',
+  'exercises.singleLegHold.cue': 'Look at one spot. Let the foot wobble - it’s meant to.',
 
   'exercises.eyesClosedStand.title': 'Eyes-closed stand',
   'exercises.eyesClosedStand.rationale': 'With the eyes shut, the foot has to do the balancing.',
@@ -107,6 +107,55 @@ export const EXERCISES_EN = {
   'exercises.breathingReset.title': 'Breathing reset',
   'exercises.breathingReset.rationale': 'A minute of slow breathing ends the session properly.',
   'exercises.breathingReset.cue': 'Out for longer than in. That’s the whole thing.',
+
+  // ── The weekly plan's additions ──────────────────────────────────────────
+  'exercises.heelRaiseDouble.title': 'Double-leg heel raises',
+  'exercises.heelRaiseDouble.rationale': 'Both feet share the load while the calf wakes up.',
+  'exercises.heelRaiseDouble.cue': 'Rise straight up over the big toes, then lower slowly.',
+
+  'exercises.heelRaiseSeated.title': 'Seated heel raises',
+  'exercises.heelRaiseSeated.rationale': 'Calf work with almost no load on the heel.',
+  'exercises.heelRaiseSeated.cue': 'Press up through the balls of the feet. Hands on the knees add resistance.',
+
+  'exercises.heelRaiseHold.title': 'Heel raise hold',
+  'exercises.heelRaiseHold.rationale': 'Holding at the top loads the tendon without the bounce.',
+  'exercises.heelRaiseHold.cue': 'Rise, then stay still at the top - don’t sink back down.',
+
+  'exercises.bigToeLift.title': 'Big toe lift',
+  'exercises.bigToeLift.rationale': 'Teaches the big toe to move on its own - the arch’s first switch.',
+  'exercises.bigToeLift.cue': 'Lift only the big toe. The other four stay flat on the floor.',
+
+  'exercises.towelScrunch.title': 'Towel scrunch',
+  'exercises.towelScrunch.rationale': 'Wakes up the small muscles under the arch.',
+  'exercises.towelScrunch.cue': 'Pull the towel in with your toes. The heel stays down.',
+
+  'exercises.kneeToWall.title': 'Knee to wall',
+  'exercises.kneeToWall.rationale': 'Frees the ankle so the heel doesn’t take the strain.',
+  'exercises.kneeToWall.cue': 'Heel stays flat. Drive the knee forward over the second toe.',
+
+  'exercises.balancePillow.title': 'Balance on a pillow',
+  'exercises.balancePillow.rationale': 'A soft surface makes the ankle work on every wobble.',
+  'exercises.balancePillow.cue': 'Stand next to a wall. Soft knee, eyes straight ahead.',
+
+  'exercises.heelDropStraight.title': 'Heel drops',
+  'exercises.heelDropStraight.rationale': 'Lowering slowly is what rebuilds the calf and Achilles.',
+  'exercises.heelDropStraight.cue': 'Up on both feet, down slowly on one. Let the heel sink below the step.',
+
+  'exercises.tibialisRaise.title': 'Toe raises',
+  'exercises.tibialisRaise.rationale': 'Strengthens the shin muscle that steadies every step.',
+  'exercises.tibialisRaise.cue': 'Back against the wall. Lift the toes, keep the heels down.',
+
+  'exercises.stepDown.title': 'Step down',
+  'exercises.stepDown.rationale': 'Controls the knee so the foot isn’t landing alone.',
+  'exercises.stepDown.cue': 'Knee tracks over the toes. Tap the heel down - don’t drop.',
+
+  'exercises.soleMassage.title': 'Sole massage',
+  'exercises.soleMassage.rationale': 'Loosens the tissue after a long day.',
+  'exercises.soleMassage.cue': 'Firm thumb strokes from heel to toes. Ease off anything sharp.',
+
+  'exercises.pogoHops.title': 'Pogo hops',
+  'exercises.pogoHops.rationale': 'Teaches the foot to spring again - only once pain is gone.',
+  'exercises.pogoHops.cue': 'Small, quick hops on stiff ankles. Stop if the heel hurts.',
 
   // ── The morning stretch ──────────────────────────────────────────────────
   // Said twice — in the check-in and in the notification that fires at wake

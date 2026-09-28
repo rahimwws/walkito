@@ -152,7 +152,7 @@ export function ReliefButton({ label, onPress, icon, accent, style }: ReliefButt
       style={style}
       contentStyle={styles.button}>
       {icon != null && <HugeiconsIcon icon={icon} size={20} color={ink} strokeWidth={2.4} />}
-      <Text style={[styles.buttonLabel, { color: ink }]}>{label.toUpperCase()}</Text>
+      <Text style={[styles.buttonLabel, { color: ink }]}>{label}</Text>
     </Relief>
   );
 }
@@ -179,6 +179,6 @@ const styles = StyleSheet.create({
   buttonLabel: {
     fontSize: 16,
     fontFamily: fonts.heavy,
-    letterSpacing: 0.8,
+    letterSpacing: 0.1,
   },
 });

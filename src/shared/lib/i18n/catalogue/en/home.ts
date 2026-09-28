@@ -113,6 +113,7 @@ export const HOME_EN = {
 
   // ── Today's list ─────────────────────────────────────────────────────────
   'home.tasksTitle': 'Today’s Tasks',
+  'home.libraryTitle': 'For right now',
   'home.allDoneTitle': 'Done for today',
   'home.allDoneBlurb':
     'Nothing else is needed. The next session unlocks after twelve hours’ rest.',
@@ -199,9 +200,9 @@ export const HOME_EN = {
   // The chip says the same thing in the space a chip has. Held in caps here
   // rather than upper-cased in the component, so a language that should not be
   // shouted at can simply write it in its own case.
-  'home.rangeAboveChip': 'ABOVE USUAL RANGE',
-  'home.rangeBelowChip': 'BELOW USUAL RANGE',
-  'home.rangeWithinChip': 'WITHIN USUAL RANGE',
+  'home.rangeAboveChip': 'Above usual range',
+  'home.rangeBelowChip': 'Below usual range',
+  'home.rangeWithinChip': 'Within usual range',
   'home.usualRangeLegend': 'USUAL RANGE {low}–{high}',
   'home.usualRangeA11y': 'Usual range, {low} to {high}',
 
@@ -315,21 +316,48 @@ export const BRIEF_EN = {
 
   'checkpoint-recap': [
     [
-      { k: 'frame', text: 'a new block starts today -' },
+      { k: 'frame', text: 'a new week starts today. Focus:' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
-      { k: 'frame', text: 'New shape, new load.' },
     ],
     // The one line in the file that cites a finding. "About half" and "studies
     // of this say" are both doing work — translations keep the hedge.
     [
-      { k: 'frame', text: 'new block today. Studies of this say about' },
+      { k: 'frame', text: 'new week today. Studies of this say about' },
       { k: 'metric', icon: 'level', text: 'half' },
       { k: 'frame', text: 'the year’s gain lands in the first three months.' },
     ],
     [
-      { k: 'frame', text: 'you’re into' },
+      { k: 'frame', text: 'this week works on' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
-      { k: 'frame', text: 'The work changes shape from here.' },
+      { k: 'frame', text: 'The plan is built around it.' },
+    ],
+  ],
+
+  // ── The weekly plan ──────────────────────────────────────────────────────
+  // Never guilt, never a count of days missed.
+  'goal-reached': [
+    [
+      { k: 'metric', icon: 'up', text: '{goalDone}' },
+      { k: 'frame', text: '- done. Next up:' },
+      { k: 'metric', icon: 'level', text: '{nextGoal}', tail: '.' },
+    ],
+  ],
+  'missed-yesterday': [
+    [
+      { k: 'frame', text: 'yesterday happened. Let’s not make it two -' },
+      { k: 'metric', icon: 'session', text: '2 minutes', tail: ' today?' },
+    ],
+  ],
+  'test-soon': [
+    [
+      { k: 'metric', icon: 'retest', text: '{testIn}' },
+      { k: 'frame', text: 'to your next test.' },
+    ],
+  ],
+  'new-this-week': [
+    [
+      { k: 'frame', text: 'new this week:' },
+      { k: 'metric', icon: 'session', text: '{newMove}', tail: '.' },
     ],
   ],
 

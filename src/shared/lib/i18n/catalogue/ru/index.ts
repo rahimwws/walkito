@@ -10,6 +10,7 @@ import { PAGES_RU } from './pages';
 import { PROFILE_RU } from './profile';
 import { PROGRESS_RU } from './progress';
 import { QUICK_RU } from './quick';
+import { WIDGET_RU } from './widget';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -30,4 +31,5 @@ export const ru: CatalogueFor<'ru'> = {
   ...NOTIFICATIONS_RU,
   ...EXERCISES_RU,
   ...PAGES_RU,
+  ...WIDGET_RU,
 };

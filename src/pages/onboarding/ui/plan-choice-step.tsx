@@ -10,6 +10,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { SegmentedControl } from '@/shared/ui/segmented-control';
 
@@ -54,6 +55,7 @@ export function PlanChoiceStep({
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
+  const t = useT();
 
   const plan = plans[index];
   const photo = PLAN_PHOTOS[sex ?? 'female'] ?? PLAN_PHOTOS.female;
@@ -100,7 +102,7 @@ export function PlanChoiceStep({
             <Text style={styles.wordmark}>{plan.wordmark}</Text>
             {index === recommended && (
               <View style={styles.badge}>
-                <Text style={styles.badgeText}>RECOMMENDED</Text>
+                <Text style={styles.badgeText}>{t('onboarding.plan.recommended')}</Text>
               </View>
             )}
           </View>
@@ -180,7 +182,7 @@ const styles = StyleSheet.create({
   badgeText: {
     fontSize: 11,
     fontFamily: fonts.bold,
-    letterSpacing: 0.8,
+    letterSpacing: 0.1,
     color: '#FFFFFF',
   },
   copy: {

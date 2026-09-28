@@ -26,7 +26,9 @@ import { saveSessionToHealth } from '@/entities/health';
 import {
   HEEL_RAISE_IDS,
   PLAN_BLOCKS,
+  beginSession,
   inSessionPain,
+  noteInSessionPain,
   stepBackAfterSession,
   writeLog,
   exerciseById,
@@ -41,6 +43,7 @@ import {
   type ProgramDay,
   type Tempo,
 } from '@/entities/program';
+import { useIntake } from '@/entities/profile';
 import { clearBrowsingLapsed, useSessionsLocked } from '@/entities/purchase';
 import { fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
@@ -51,6 +54,7 @@ import { holdGlowStill } from '@/shared/ui/glow';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../config/exercise-clips';
+import { mirroredFor } from '../model/mirror';
 import { SessionDoneSheet } from './session-done-sheet';
 import { RetestEntrySheet } from './retest-entry-sheet';
 import { SessionPainSheet } from './session-pain-sheet';
@@ -289,6 +293,11 @@ export type PlaylistStep = {
   exerciseId: string;
   seconds: number;
   perSide?: boolean;
+  /**
+   * Counted reps at a tempo, for the weekly plan's doses. A protocol leaves it
+   * out — held time, not counted reps.
+   */
+  cadence?: Cadence;
 };
 
 export type SessionViewProps = {
@@ -415,6 +424,10 @@ const lockedStyles = StyleSheet.create({
 });
 
 function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: SessionViewProps) {
+  // A fresh record for this run: nothing the last session said carries over.
+  useState(() => beginSession());
+  // Left sore foot: the clips flipped to match. See `mirroredFor`.
+  const mirrored = mirroredFor(useIntake()?.side);
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -468,9 +481,10 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
         // The playlist's own length, clamped for the same reason `planMove`
         // clamps its own: the frame callback divides by this.
         seconds: Math.max(1, Math.round(step.seconds)),
-        // No tempo. A protocol is held time, not counted reps, and a readout
-        // counting reps over a stretch would be inventing a dose.
-        cadence: null,
+        // No tempo unless the step brings one. A protocol is held time, not
+        // counted reps, and a readout counting reps over a stretch would be
+        // inventing a dose; the weekly plan's heel raises do bring theirs.
+        cadence: step.cadence ?? null,
         perSide: step.perSide === true,
       }))
     : measuring
@@ -967,6 +981,8 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
   const reportPain = useCallback(
     (score: number) => {
       setAskingPain(false);
+      // Kept for the session record — the plan reads it, analytics never does.
+      noteInSessionPain(score);
       const outcome = inSessionPain(score, progressionOffset);
       if (!outcome.stop) {
         // Discomfort is allowed to be part of this. Back to where they were.
@@ -1497,7 +1513,7 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
       <Animated.View
         style={[styles.card, { backgroundColor: colors.card }, cardStyle]}>
         <VideoView
-          style={styles.video}
+          style={[styles.video, mirrored && styles.mirrored]}
           player={player}
           nativeControls={false}
           // Cover, not contain: the clip is 16:9 and the card is square, and
@@ -1617,6 +1633,10 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
 }
 
 const styles = StyleSheet.create({
+  /** A left sore foot: the demonstration flipped to match. */
+  mirrored: {
+    transform: [{ scaleX: -1 }],
+  },
   root: {
     flex: 1,
   },
@@ -1720,8 +1740,7 @@ const styles = StyleSheet.create({
   counter: {
     fontSize: 15,
     fontFamily: fonts.semibold,
-    letterSpacing: 0.7,
-    textTransform: 'uppercase',
+    letterSpacing: 0.1,
     marginTop: 6,
   },
   hint: {

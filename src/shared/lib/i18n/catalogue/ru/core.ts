@@ -16,7 +16,7 @@ export const CORE_RU = {
   // ── Language picker ──────────────────────────────────────────────────────
   'language.title': 'Язык',
   'language.system': 'Системный',
-  'language.systemHint': 'Как на устройстве — {language}',
+  'language.systemHint': 'Как на устройстве - {language}',
   'language.note': 'Выбор сохранится на этом устройстве.',
   'language.a11yLabel': 'Язык, {language}',
   'language.a11yHint': 'Меняет язык приложения',
@@ -28,8 +28,40 @@ export const CORE_RU = {
   'settings.privacy': 'Политика конфиденциальности',
   'settings.privacyHint': 'Что мы храним и где',
   'settings.unpublished': 'Ещё не опубликовано',
+  'settings.planSection': 'Ваш план',
+  'settings.outcome': 'Ваша цель',
+  'settings.outcome.painfree': 'Без боли',
+  'settings.outcome.flat_feet': 'Плоскостопие',
+  'settings.outcome.stronger': 'Сильные ноги',
+  'settings.outcome.injury_free': 'Крепкие ноги',
+  'settings.outcome.stable_ankles': 'Устойчивые лодыжки',
+  'settings.outcome.jump_higher': 'Прыгать выше',
+  'settings.outcome.race_ready': 'К забегу',
+  'settings.outcome.all_day': 'Весь день на ногах',
+  'settings.outcome.comeback': 'После травмы',
+  'settings.outcome.steady': 'Уверенный шаг',
+  'settings.daysPerWeek': 'Дней в неделю',
+  'settings.minutesPerDay': 'Минут в день',
+  'settings.whichFoot': 'Какая стопа',
+  'settings.footLeft': 'Левая',
+  'settings.footRight': 'Правая',
+  'settings.footBoth': 'Обе',
+  'settings.whereItHurts': 'Где болит',
+  'settings.whereItHurtsNone': 'Ничего не отмечено',
+  'settings.equipment': 'Что есть дома',
+  'settings.equipment.step': 'Ступенька',
+  'settings.equipment.band': 'Эспандер-лента',
+  'settings.equipment.towel': 'Полотенце',
+  'settings.equipment.pillow': 'Подушка',
+  'settings.equipment.ball': 'Массажный мяч',
+  'settings.account.saveTitle': 'Сохраните прогресс',
+  'settings.account.saveBody': 'Войдите через Apple, и план, отметки и тесты вернутся на новом телефоне или после переустановки.',
+  'settings.account.signedIn': 'Вход через Apple выполнен. Прогресс сохраняется в аккаунте.',
+  'settings.lastSync': 'Последняя синхронизация: {time}',
+  'settings.lastSyncNever': 'Ещё не синхронизировано',
+  'settings.reminder': 'Время напоминания',
   'settings.disclaimer':
-    'Walkito — помощник в тренировках, а не медицинская рекомендация. Приложение не ставит диагнозов и не лечит. Если боль острая, усиливается или сопровождается отёком, онемением или температурой, остановитесь и обратитесь к врачу.',
+    'Walkito - помощник в тренировках, а не медицинская рекомендация. Приложение не ставит диагнозов и не лечит. Если боль острая, усиливается или сопровождается отёком, онемением или температурой, остановитесь и обратитесь к врачу.',
 
   // ── Streak ───────────────────────────────────────────────────────────────
   'streak.title': {
@@ -37,8 +69,10 @@ export const CORE_RU = {
     few: '{count} дня подряд',
     many: '{count} дней подряд',
   },
+  'streak.milestoneBlurb': 'Каждый из этих дней засчитан.',
+  'streak.milestoneBigBlurb': 'Десять дней. Здесь привычка начинает держаться.',
   'streak.rule':
-    'День засчитан, если вы отметили боль, провели сессию или план сам назначил отдых.',
+    'День засчитан, если вы отметили боль, провели сессию, прошли комплекс из библиотеки или план сам назначил отдых.',
   'streak.total': {
     one: 'Всего {count} день.',
     few: 'Всего {count} дня.',
@@ -72,13 +106,13 @@ export const CORE_RU = {
   // ── Referral / gift sheet ────────────────────────────────────────────────
   'gift.title': 'Пригласить друга',
   'gift.blurb': {
-    one: 'Другу — {percent}% скидки. Вам — {count} бесплатная неделя за каждого друга.',
-    few: 'Другу — {percent}% скидки. Вам — {count} бесплатные недели за каждого друга.',
-    many: 'Другу — {percent}% скидки. Вам — {count} бесплатных недель за каждого друга.',
+    one: 'Другу - {percent}% скидки. Вам - {count} бесплатная неделя за каждого друга.',
+    few: 'Другу - {percent}% скидки. Вам - {count} бесплатные недели за каждого друга.',
+    many: 'Другу - {percent}% скидки. Вам - {count} бесплатных недель за каждого друга.',
   },
   'gift.cap': { one: 'До {count} друга.', few: 'До {count} друзей.', many: 'До {count} друзей.' },
   'gift.unavailable': 'В этой сборке приглашения недоступны.',
-  'gift.shareMessage': 'Введите мой код {code} в Walkito — и получите скидку {percent}% на 12-недельную программу.',
+  'gift.shareMessage': 'Введите мой код {code} в Walkito - и получите скидку {percent}% на 12-недельную программу.',
   'gift.share': 'Поделиться кодом',
   'gift.shared': 'Скопировано',
   'gift.copy': 'Просто скопировать',
@@ -105,7 +139,7 @@ export const CORE_RU = {
   'quick.deleteBody': 'Собираюсь удалить приложение.\n\nЧто меня оттолкнуло:\n\n',
   'quick.deleteSubject': 'Перед тем как удалить Walkito',
   'quick.talkSubject': 'Что-то не так в Walkito',
-  'quick.talkBody': 'Здравствуйте —\n\nЧто происходит:\n\n',
+  'quick.talkBody': 'Здравствуйте -\n\nЧто происходит:\n\n',
   'quick.deleteSubtitle': 'Удаляете? Расскажите, что не сработало.',
 
   // ── Tab bar ──────────────────────────────────────────────────────────────
@@ -132,7 +166,7 @@ export const CORE_RU = {
   'maintenance.through': 'Вы прошли программу.',
   'maintenance.calfGain': '{opening} Икра выросла ↗ с {before} до {after}.',
   'maintenance.relapse': 'Примерно половина людей теряет результат в течение пяти лет.',
-  'maintenance.staying': 'Две сессии в неделю — то, что оставляет вас во второй половине.',
+  'maintenance.staying': 'Две сессии в неделю - то, что оставляет вас во второй половине.',
   'maintenance.regression': 'Показатели просели. Пройти блок «{block}» ещё раз?',
 
   // ── Block names ──────────────────────────────────────────────────────────

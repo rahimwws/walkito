@@ -51,6 +51,8 @@ This project uses the free Hugeicons set, `@hugeicons/core-free-icons` (MIT, ~5,
 
 **One style only.** The free package ships stroke-rounded glyphs and has no solid/filled variants, so `altIcon`/`showAlt` stroke↔solid toggling is not available. Express active and selected states with color/tint instead — that is what the tab bar does.
 
+**Exception: WidgetKit.** The home-screen widget (`features/home-widget`) and the Live Activity (`widgets/session-player/ui/session-activity.tsx`) use SF Symbols through `@expo/ui/swift-ui` `Image systemName`. Their bodies run in expo-widgets' JavaScriptCore under the `'widget'` directive, where there are no imports and no react-native-svg. Illustrations reach a widget only as PNGs copied into the App Group and drawn with `uiImage`, as the mascot is.
+
 ## Import icons ONE AT A TIME, by subpath
 
 ```tsx
@@ -155,3 +157,12 @@ track('session_completed', { day, block, kind, checkpoint });
 # Updates
 
 `features/app-update` checks on launch and on foreground (at most every 30 min, after onboarding). A newer App Store version (iTunes lookup, production builds only) comes first. Otherwise an EAS Update gets downloaded and the app reloads. "Later" snoozes that offer for 24 h.
+
+# Home-screen widget
+
+`features/home-widget`: one widget kind, `DailyCheck`, in two sizes. Small asks the morning check-in; its two cards are `Link`s that open Home on `?checkin=fine` or `?checkin=hurts`. `PainCheck` records "no pain" and says so, or opens the check-in sheet for the scale and the leg map. The widget records nothing itself. Medium shows the day's goal and the week. `importWidgetAnswers` only reads back answers from the first build, which recorded them in the widget.
+
+- **Never put `null` in widget props or return it from a widget `onPress`.** Props are stored in UserDefaults, a JS `null` arrives as `NSNull`, and UserDefaults answers with `abort()`. Omit the key instead. `sync.ts` also strips nulls at the boundary.
+- The layout itself is JavaScript and ships over the air: the app registers it at launch and reloads the widget. Adding a widget, a size, or anything else in the `app.json` widget config changes the extension and needs `expo prebuild` and a native build.
+- `frame` with `width` or `height` is SwiftUI's fixed frame and ignores `maxWidth`/`maxHeight`. Anything that should fill takes only the `max*` bounds. Don't put padding or a background on a widget `Text`: expo-widgets applies a Text's modifiers twice.
+

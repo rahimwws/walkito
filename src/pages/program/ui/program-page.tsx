@@ -12,58 +12,62 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { blockName,
-  PLAN_BLOCKS,
-  PROGRAM,
-  PROGRAM_LENGTH,
-  TODAY_INDEX,
+import { FireIcon } from 'phosphor-react-native/src/icons/Fire';
+import { useRouter } from 'expo-router';
+
+import {
+  addDays,
   clearRetestRequest,
+  exerciseById,
   currentDay,
-  logFor,
-  nextSessionAt,
-  planFor,
-  statusFor,
+  doseLabel,
+  goals as readGoals,
+  nextWeekPreview,
+  outcome as readOutcome,
+  painOn,
+  planDayOn,
+  planSessionDone,
+  planSettings,
+  rebuildRestOfWeek,
+  recordSession,
+  refreshGoals,
+  RETEST_MINUTES,
+  RETEST_TESTS,
+  todayKey,
+  todayPlan,
+  twoMinuteVersion,
   useLogsVersion,
+  usePlanVersion,
   useRetestRequest,
-  writeLog,
+  useStreak,
+  weekPlan,
   type DayStatus,
+  type GoalType,
+  type PlanDay,
   type ProgramDay,
+  type SessionMinutes,
 } from '@/entities/program';
-import { fonts, meterColors, palette } from '@/shared/config';
-import { useLanguage, useT, type Language } from '@/shared/lib/i18n';
+import { useHealthSignals } from '@/entities/health';
+import { protocolById, recommendProtocol, requestProtocol } from '@/entities/protocols';
+import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
+import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useProgram } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
+import { StreakCapsule } from '@/shared/ui/header-actions';
 
-import { SessionView } from '@/widgets/session-player';
+import { SessionView, type PlaylistStep } from '@/widgets/session-player';
 
+import { kindName, outcomeView, rationaleLine, todayTitle, todayVariant } from '../model/plan-view';
+import { asProgramDay, playlistOf } from '../model/week-view';
+import { KIND_STICKER } from './kind-tone';
 import { DayCard } from './day-card';
-import { BlockFooter, BlockIntro, BlockOpening, ProgramFinish } from './block-marks';
-import { DayLink, StreakMilestone } from './day-link';
+import { DayLink } from './day-link';
 import { DaySheet } from './day-sheet';
-
-/**
- * The day, worded exactly as Home words it.
- *
- * A function rather than a constant: read once at module scope it would be
- * fixed at the moment the bundle loaded, and a screen left open overnight would
- * insist it was still yesterday. The same note sits over Home's copy of this.
- *
- * Formatted for the app's language rather than pinned to `en-US`. The subtitle
- * is one `Intl` call rather than a month looked up and a date appended to it:
- * Russian needs "22 сентября" — the month in the genitive, after the day — and
- * asking for a month on its own gets "сентябрь", the nominative, which no
- * arrangement of the two pieces repairs.
- */
-function todayLines(language: Language): { title: string; subtitle: string } {
-  const now = new Date();
-  return {
-    title: new Intl.DateTimeFormat(language, { weekday: 'long' }).format(now),
-    subtitle: new Intl.DateTimeFormat(language, { month: 'long', day: 'numeric' }).format(now),
-  };
-}
-
-/** A marker every third day of the plan. */
-const MILESTONE_EVERY = 3;
+import { ExerciseSheet } from './exercise-sheet';
+import { GoalCard } from './goal-card';
+import { NextWeekCard } from './next-week-card';
+import { PlanChip } from './plan-chip';
+import { TodayCard } from './today-card';
 
 /** How far the list slides under the arriving session. A fraction of the
  * screen, not all of it: the two move together, one leaving slowly and one
@@ -86,143 +90,127 @@ const PARALLAX = 0.3;
  */
 export const PROGRAM_HEADER_HEIGHT = 58;
 
+/** What the session pane is running. */
+type Running = {
+  day: ProgramDay;
+  date: string;
+  source: 'plan' | 'test';
+  /** Null for a test, which the player runs as its own measurement. */
+  playlist: PlaylistStep[] | null;
+  exerciseIds: string[];
+  minutes: number;
+};
+
+/** The colour a goal's bar wears: the colour of the work that moves it. */
+const GOAL_ACCENT: Readonly<Record<GoalType, AccentName>> = {
+  pain_free_mornings: 'teal',
+  arch_hold: 'violet',
+  calf_raises: 'violet',
+  balance: 'blue',
+  symmetry: 'blue',
+};
+
+function accentFor(type: PlanDay['type']): AccentName | null {
+  if (type === 'test') return 'amber';
+  if (type === 'rest') return null;
+  return KIND_STICKER[type].accent;
+}
+
 /**
- * The program: from the block the user is in to the end of the plan, day by day.
+ * The plan screen: the goal, this week, today, and what comes next.
  *
- * A screen rather than a sheet, so it owns its own safe area and its own way
- * out. It used to stop at the end of the current block, and a fortnight of
- * cards followed by nothing read as a program that ran out at day 14. Every
- * block ahead is shown now, each opened by what it is for — but its days stay
- * locked, because the next block still cannot be started early.
- *
- * Blocks already behind the user are left off. Today's card has to be near the
- * top of the list, and a finished fortnight is on Progress, not here.
+ * A schedule, not a path. The old screen drew a trail of arrows and dots
+ * through day cards, said the goal three times and called itself "Week 5" of
+ * nothing in particular. Now the goal is one card, the week is one strip of
+ * seven circles, today is the only big card, and the rest of the week is a
+ * short list. Everything comes from local storage — the weekly plan, adjusted
+ * to this morning — so nothing on it ever waits on a network.
  */
 export function ProgramPage() {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const program = useProgram();
+  const router = useRouter();
   const insets = useSafeAreaInsets();
   const { width } = useWindowDimensions();
-  // Subscribed: `begins` below is an exercise title resolved through the
-  // catalogue, and the header's date is formatted for the active language.
   const t = useT();
   const language = useLanguage();
+  const health = useHealthSignals();
+  const streak = useStreak();
 
-  /**
-   * The day whose session is open.
-   *
-   * Never cleared on the way back. Blanking it as the pane leaves would empty
-   * the screen the user is still looking at; leaving it mounted costs one
-   * inert subtree and keeps the exit readable.
-   */
-  const [session, setSession] = useState<ProgramDay | null>(null);
-  /**
-   * How many times a session has been started.
-   *
-   * Keying the pane on it remounts the player on every open, which is what
-   * makes "Start" mean start: the day alone is not enough, because re-opening
-   * the same day would otherwise resume a clock the user left paused halfway
-   * through a move.
-   */
-  const [run, setRun] = useState(0);
-  /** The day whose sheet is up, with the status the list was showing for it. */
-  const [reading, setReading] = useState<{ day: ProgramDay; status: DayStatus } | null>(null);
-
-  const today = PROGRAM[TODAY_INDEX];
-  /**
-   * Whether today's session is behind the user.
-   *
-   * `statusFor` takes this and nothing here was passing it, so a day finished
-   * an hour ago still rendered as "today": highlighted, unlocked, and offering
-   * to be started again. The list said the day was open while Home said it was
-   * done, and the log — which both read — already knew.
-   *
-   * Recomputed whenever the log moves; `useLogsVersion` below is what moves it.
-   */
   useLogsVersion();
-  const doneToday = logFor(currentDay())?.sessionCompleted === true;
+  usePlanVersion();
 
-  /**
-   * When the next session opens, or null while today's is still to do.
-   *
-   * The instant, not a formatted string and not a tick. `RestButton` owns the
-   * second hand — counting here would re-render every card in the block once a
-   * second to move one digit.
-   */
-  const unlockAt = nextSessionAt(currentDay());
-  const lines = todayLines(language);
-  /**
-   * The blocks on screen, each with its own days: the current one and every
-   * one after it.
-   */
-  const sections = PLAN_BLOCKS.filter((b) => b.index >= today.block).map((b) => ({
-    block: b,
-    days: PROGRAM.filter((day) => day.block === b.index),
-  }));
+  const now = Date.now();
+  const today = todayKey(now);
+  const plan = weekPlan(now);
+  const goals = readGoals();
+  const focusGoal = goals.find((goal) => goal.type === plan.focus);
 
-  /**
-   * How far into the current block the user is.
-   *
-   * `done` counts the days actually behind the user rather than the block's
-   * length, so the seam cannot congratulate anyone for a fortnight they have
-   * not lived.
-   */
-  const current = sections[0];
-  const doneInBlock = current.days.filter((day) => {
-    const status = statusFor(day, TODAY_INDEX, doneToday);
-    return status === 'done' || status === 'rest';
-  }).length;
+  const [minutes, setMinutes] = useState<SessionMinutes>(() => planSettings().defaultMinutes);
+  const adjusted = todayPlan(
+    {
+      stepsYesterday: health.stepsYesterday,
+      steps28Avg: health.stepsBaseline,
+      sleepHours: health.sleepLastNightMin == null ? null : health.sleepLastNightMin / 60,
+    },
+    minutes,
+    now,
+  );
+  const doneToday = planSessionDone(today);
+  const variant = todayVariant(adjusted, doneToday);
 
-  /** Opening a day's session: the card's own button, and the retest the day
-   * sheet hands over below, are the same act and go through one path. */
+  const [session, setSession] = useState<Running | null>(null);
+  const [run, setRun] = useState(0);
+  const [reading, setReading] = useState<{ day: PlanDay; status: DayStatus } | null>(null);
+  const [preview, setPreview] = useState<string | null>(null);
+
+  const weekday = (date: string, style: 'short' | 'long' = 'short') => {
+    const [y, m, d] = date.split('-').map(Number);
+    return new Intl.DateTimeFormat(language, { weekday: style }).format(new Date(y, m - 1, d));
+  };
+
   const start = useCallback(
-    (day: ProgramDay) => {
-      setSession(day);
+    (running: Running) => {
+      setSession(running);
       setRun((n) => n + 1);
       program?.openDetail();
     },
     [program],
   );
 
-  /**
-   * A retest asked for from the day sheet.
-   *
-   * The sheet is a form sheet sized to its contents and the tests run in the
-   * player, which is a screen — so the sheet records the ask, dismisses itself,
-   * and this page, already mounted underneath, opens the player the same way
-   * today's card does. Cleared as it is taken: a request left standing would
-   * start a session nobody asked for the next time the program opened.
-   */
+  const startToday = useCallback(
+    (short = false) => {
+      if (adjusted.type === 'test') {
+        start({ day: asProgramDay(adjusted), date: today, source: 'test', playlist: null, exerciseIds: [], minutes: RETEST_MINUTES });
+        return;
+      }
+      const planned = short ? twoMinuteVersion(adjusted) : adjusted;
+      start({
+        day: asProgramDay(planned),
+        date: today,
+        source: 'plan',
+        playlist: playlistOf(planned.exercises),
+        exerciseIds: planned.exercises.map((e) => e.id),
+        minutes: planned.minutes,
+      });
+    },
+    [adjusted, start, today],
+  );
+
+  /** A retest asked for from the day page: today's test, if today has one. */
   const requested = useRetestRequest();
   useEffect(() => {
     if (requested == null) return;
     clearRetestRequest();
-    const day = PROGRAM[requested - 1];
-    if (day == null || !day.checkpoint) return;
-    start(day);
-  }, [requested, start]);
+    if (adjusted.type === 'test') startToday();
+  }, [requested, adjusted.type, startToday]);
 
-  /** The sheet may only be dragged away from the top of the list — otherwise
-   * flicking back up to re-read the first day would dismiss the program. */
   const onScroll = useAnimatedScrollHandler((event) => {
     if (program != null) program.scrollTop.value = event.contentOffset.y;
   });
 
-  /**
-   * Back to the top whenever the program closes.
-   *
-   * The list is never unmounted, so without this it reopens wherever it was
-   * left — and today's card is third of fourteen, so anyone who had scrolled to
-   * day 26 would reopen with the only actionable card off screen, on the screen
-   * whose entire job is to say what to do today.
-   *
-   * The offset is written in the same worklet that does the scrolling, not in
-   * the context's `close()`. That is the whole point: the shared value may only
-   * be set by something that actually moved the list, or the pan's "are we at
-   * the top" test is reading a number nobody kept honest.
-   */
   const listRef = useAnimatedRef<Animated.ScrollView>();
   useAnimatedReaction(
     () => (program?.progress.value ?? 0) < 0.01,
@@ -233,54 +221,68 @@ export function ProgramPage() {
     },
   );
 
-  /**
-   * Today's sheet, up as soon as the screen is.
-   *
-   * The list is the context and the sheet is the ask, so the ask arrives first
-   * and the list is what is left when it is dismissed. Driven off the arrival
-   * rather than off mount: the page stays mounted behind Home for the whole
-   * session, and opening on mount would have fired once, at launch, for a
-   * screen nobody had asked for yet.
-   */
-  const openToday = useCallback(() => {
-    setReading({ day: today, status: statusFor(today, TODAY_INDEX, doneToday) });
-  }, [today]);
-
-  useAnimatedReaction(
-    () => (program?.progress.value ?? 0) > 0.99,
-    (arrived, was) => {
-      if (arrived && was === false) runOnJS(openToday)();
-    },
-  );
-
   const listPane = useAnimatedStyle(() => ({
     transform: [{ translateX: -(program?.detail.value ?? 0) * width * PARALLAX }],
   }));
-
-  /**
-   * The session, arriving from the right.
-   *
-   * It carries the page colour itself. Everywhere else in the app a screen
-   * leaves its background to the navigation theme, but this one has to *cover*
-   * the list sliding underneath it — and it is the same colour the sheet face
-   * is already painting, so there is no seam to see and nothing to flash.
-   *
-   * Its top padding is fixed now. It used to be animated, because the sheet was
-   * growing towards the status bar at the same time and a pinned inset would
-   * have started the back arrow a hundred points too low; the page already
-   * covers the display, so there is nothing left to grow into.
-   */
   const sessionPane = useAnimatedStyle(() => ({
     transform: [{ translateX: (1 - (program?.detail.value ?? 0)) * width }],
   }));
 
+  // ── What the screen says ─────────────────────────────────────────────────
+  const testToday = plan.days.some((day) => day.date === today && day.type === 'test');
+  const outcome = readOutcome();
+  const goal = outcome != null ? outcomeView(t, outcome, goals, plan.focus, testToday) : null;
+  const goalTone = accents[scheme][GOAL_ACCENT[goal?.current ?? plan.focus ?? 'calf_raises']];
+
+  const newTitle = plan.newThisWeek.length > 0 ? exerciseById(plan.newThisWeek[0]).title : null;
+  const rationale = rationaleLine(t, plan.rationale, newTitle);
+
+  const title = todayTitle(t, adjusted, plan.focus, variant);
+  const tomorrowDay = planDayOn(addDays(today, 1));
+  const tomorrow =
+    tomorrowDay == null || tomorrowDay.type === 'rest'
+      ? t('pages.plan.tomorrowRest')
+      : t('pages.plan.tomorrow', {
+          kind: kindName(t, tomorrowDay.type).toLocaleLowerCase(language),
+          minutes: t('session.minutes', { count: tomorrowDay.minutes }),
+        });
+
+  const routine = protocolById(
+    recommendProtocol(
+      {
+        painToday: painOn(currentDay()),
+        checkedInToday: painOn(currentDay()) != null,
+        lastRunEndedAt: health.lastRunEndedAt,
+        hour: new Date(now).getHours(),
+        weekday: new Date(now).getDay(),
+      },
+      now,
+    ),
+  );
+
+  // The rest of the week, rest days included: a week is seven days, and the
+  // two with nothing to do are part of the plan, not gaps in it.
+  const upcoming = plan.days.filter((day) => day.date > today);
+
+  const next = nextWeekPreview(now);
+  const nextSessions = next.days.filter((day) => day.type !== 'rest');
+  const nextSummary = t('pages.plan.nextWeekSummary', {
+    sessions: t('pages.plan.sessionCount', { count: nextSessions.length }),
+    goal: next.focus != null ? t(`pages.week.goal.${next.focus}`).toLocaleLowerCase(language) : '-',
+  });
+  const nextDays = nextSessions.map((day) => ({
+    date: day.date,
+    label: t('pages.plan.row', { day: weekday(day.date), kind: kindName(t, day.type) }),
+    accent: accentFor(day.type) ?? 'amber',
+  }));
+
+  const reached = goals.find((g) => g.achievedOn != null && g.achievedOn >= plan.weekStart && g.type === plan.focus);
+  const nextGoal = goals.find((g) => g.status === 'active' && g.type !== reached?.type);
+
+
   return (
     <View style={styles.root}>
       <Animated.View style={[styles.pane, listPane]}>
-        {/* Pinned, and sitting straight under the status bar rather than
-            centred in a tall box — a title floating in the middle of its own
-            empty header reads as a mistake. The arrow travels with it, so the
-            way out never scrolls away. */}
         <View style={[styles.header, { paddingTop: insets.top + 4 }]}>
           <Pressable
             accessibilityRole="button"
@@ -288,28 +290,13 @@ export function ProgramPage() {
             onPress={() => program?.close()}
             hitSlop={12}
             style={({ pressed }) => [styles.back, pressed && { opacity: 0.5 }]}>
-            <HugeiconsIcon
-              icon={ArrowLeft02Icon}
-              size={26}
-              color={colors.foreground}
-              strokeWidth={2}
-            />
+            <HugeiconsIcon icon={ArrowLeft02Icon} size={26} color={colors.foreground} strokeWidth={2} />
           </Pressable>
-
-          {/* The date, not the block's name. Home already titles the day this
-              way, and two screens about the same day should not name it two
-              different things — the block is stated beside it, where it answers
-              "how far in am I" rather than "what day is this". */}
-          <View>
-            <Text style={[styles.section, { color: colors.foreground }]}>{lines.title}</Text>
-            <Text style={[styles.blurb, { color: meter.caption }]}>
-              {t('pages.program.headerMeta', {
-                date: lines.subtitle,
-                block: today.block,
-                total: PLAN_BLOCKS.length,
-              })}
-            </Text>
-          </View>
+          <Text style={[styles.title, { color: colors.foreground }]}>{t('pages.plan.title')}</Text>
+          <StreakCapsule
+            streak={streak.current}
+            glyph={<FireIcon size={22} color={accents[scheme].orange.fill} weight="fill" />}
+          />
         </View>
 
         <Animated.ScrollView
@@ -317,161 +304,139 @@ export function ProgramPage() {
           onScroll={onScroll}
           scrollEventThrottle={16}
           showsVerticalScrollIndicator={false}
-          // No rubber band. At the top of the list a downward pull is the
-          // sheet's, not the list's — and a few points of bounce before the
-          // sheet takes over is exactly the stutter that makes a handoff feel
-          // like two components arguing.
           bounces={false}
-          contentContainerStyle={[
-            styles.list,
-            { paddingTop: 10, paddingBottom: insets.bottom + 120 },
-          ]}>
-          {sections.map(({ block, days }, section) => {
-            const isCurrent = section === 0;
-            return (
-              <View key={block.index}>
-                {/* The run from the block before into this one. The first
-                    hinge carries the greeting; after that the intros alone
-                    mark the seams, or the list becomes a row of mascots. */}
-                {!isCurrent && (
-                  <View style={styles.tail}>
-                    <DayLink ahead />
-                    {section === 1 && (
-                      <>
-                        <BlockOpening />
-                        <DayLink ahead />
-                      </>
-                    )}
-                  </View>
-                )}
+          contentContainerStyle={[styles.list, { paddingTop: 10, paddingBottom: insets.bottom + 120 }]}>
+          {goal != null && <GoalCard view={goal} tone={goalTone} />}
 
-                <View style={isCurrent ? styles.head : styles.tail}>
-                  <BlockIntro
-                    index={block.index}
-                    name={blockName(block.index, t)}
-                    startDay={block.startDay}
-                    endDay={block.endDay}
-                    ahead={!isCurrent}
+          {rationale != null && <Text style={[styles.rationale, { color: meter.caption }]}>{rationale}</Text>}
+
+          {/* The run from the goal to today, and from today on. */}
+          <DayLink />
+
+          <TodayCard
+            variant={variant}
+            kind={adjusted.type === 'rest' ? 'rest' : adjusted.type}
+            title={title}
+            moves={adjusted.exercises.map((e) => {
+              const exercise = exerciseById(e.id);
+              return {
+                id: e.id,
+                title: exercise.title,
+                dose: doseLabel(e.dose.sets, e.dose.reps, e.dose.holdSec, e.dose.perSide),
+                category: exercise.category,
+              };
+            })}
+            minutes={minutes}
+            onMinutes={setMinutes}
+            onStart={() => startToday()}
+            onPreview={setPreview}
+            tests={{
+              chips: [t('pages.program.zoneCalf'), t('pages.program.zoneArch'), t('pages.program.zoneBalance')],
+              body: t('pages.plan.testBody', { count: RETEST_TESTS, minutes: RETEST_MINUTES }),
+            }}
+            tomorrow={tomorrow}
+            restRoutine={{
+              label: t(routine.titleKey),
+              onPress: () => {
+                requestProtocol(routine.id);
+                program?.close();
+                router.navigate('/quick');
+              },
+            }}
+          />
+
+          {/* Only today's link moves — see `DayLink.animated`. */}
+          <DayLink animated={variant !== 'done'} ahead />
+
+          <Text style={[styles.sectionLabel, { color: meter.caption }]}>{t('pages.plan.upcoming')}</Text>
+          {upcoming.length === 0 ? (
+            <Text style={[styles.rationale, { color: meter.caption }]}>{t('pages.plan.upcomingEnd')}</Text>
+          ) : (
+            <View>
+              {upcoming.map((row, i) => (
+                <View key={row.date}>
+                  <DayCard
+                    day={asProgramDay(row)}
+                    status="upcoming"
+                    label={weekday(row.date, 'long')}
+                    locks={false}
+                    rest={row.type === 'rest'}
+                    onOpen={() => setReading({ day: row, status: 'upcoming' })}
                   />
-                  <DayLink ahead={!isCurrent} />
-                </View>
-
-                {days.map((day, i) => {
-                  const status = statusFor(day, TODAY_INDEX, doneToday);
-                  // Only the very next one. Every locked day after it opens on
-                  // its own date too, and a column of countdowns would read as a
-                  // queue rather than as a plan.
-                  const nextUp = day.index === TODAY_INDEX + 1 ? unlockAt : null;
-                  const last = i === days.length - 1;
-                  // Every third day the run pauses on a marker. Counted off the
-                  // day number rather than off the loop index, so it lands on
-                  // days 3, 6 and 9 whatever slice of the plan is on screen.
-                  const milestone = !last && day.day % MILESTONE_EVERY === 0;
-
-                  return (
-                    <View key={day.index}>
-                      <DayCard
-                        day={day}
-                        status={status}
-                        unlockAt={nextUp}
-                        onStart={() => start(day)}
-                        // The status travels with the tap rather than being
-                        // worked out again inside the sheet: the list has already
-                        // decided what it is showing, and a sheet that re-derived
-                        // it could disagree with the card the user just pressed.
-                        onOpen={() => setReading({ day, status })}
-                      />
-
-                      {!last && (
-                        <View style={styles.gap}>
-                          {/* The one link on the page that moves: the step out
-                              of today. See `DayLink.animated`. */}
-                          <DayLink
-                            ahead={status === 'upcoming'}
-                            animated={day.index === TODAY_INDEX}
-                          />
-                          {milestone && (
-                            <>
-                              <StreakMilestone days={day.day} />
-                              <DayLink ahead={status === 'upcoming'} />
-                            </>
-                          )}
-                        </View>
-                      )}
+                  {i < upcoming.length - 1 && (
+                    <View style={styles.gap}>
+                      <DayLink ahead />
                     </View>
-                  );
+                  )}
+                </View>
+              ))}
+            </View>
+          )}
+
+          <Text style={[styles.sectionLabel, { color: meter.caption }]}>{t('pages.plan.nextWeek')}</Text>
+          <NextWeekCard summary={nextSummary} days={nextDays} how={t('pages.plan.nextWeekHow')} />
+
+          {reached != null && nextGoal != null && (
+            <View style={[styles.reached, { backgroundColor: colors.card }]}>
+              <Text style={[styles.reachedText, { color: colors.foreground }]}>
+                {t('pages.plan.reached', {
+                  goal: t(`pages.week.goal.${reached.type}`),
+                  next: t(`pages.week.goal.${nextGoal.type}`).toLocaleLowerCase(language),
                 })}
-
-                {/* The current block closes on a count of what is behind the
-                    user. Blocks ahead need no footer — their retest card is
-                    already the last thing in them. */}
-                {isCurrent && (
-                  <View style={styles.tail}>
-                    <DayLink />
-                    <BlockFooter
-                      index={block.index}
-                      name={blockName(block.index, t)}
-                      done={doneInBlock}
-                      length={days.length}
-                    />
-                  </View>
-                )}
-              </View>
-            );
-          })}
-
-          {/* The plan's own finish line, under its last block — the only place
-              it can honestly be drawn. */}
-          <View style={styles.tail}>
-            <DayLink ahead />
-            <ProgramFinish day={PROGRAM_LENGTH} />
-          </View>
+              </Text>
+              <PlanChip
+                label={t('pages.plan.seeNextGoal')}
+                tone={accents[scheme].violet}
+                onPress={() => scrollTo(listRef, 0, 0, true)}
+              />
+            </View>
+          )}
         </Animated.ScrollView>
       </Animated.View>
 
       <DaySheet
-        day={reading?.day ?? null}
+        day={reading == null ? null : asProgramDay(reading.day)}
         status={reading?.status ?? 'upcoming'}
-        // Only when the sheet is open on the day that is next up.
-        unlockAt={reading?.day?.index === TODAY_INDEX + 1 ? unlockAt : null}
         onClose={() => setReading(null)}
         onStart={() => {
           const opened = reading?.day;
           setReading(null);
-          if (opened != null) start(opened);
+          if (opened?.date === today) startToday();
         }}
+        week={
+          reading == null
+            ? undefined
+            : {
+                moves: reading.day.exercises.length,
+                stat: weekday(reading.day.date, 'long'),
+                statLabel: focusGoal != null ? t(`pages.week.goal.${focusGoal.type}`) : '',
+                note: reading.day.date > today ? t('pages.week.adjusts') : undefined,
+              }
+        }
       />
 
-      <Animated.View
-        style={[
-          styles.pane,
-          { backgroundColor: colors.background, paddingTop: insets.top },
-          sessionPane,
-        ]}>
+      <ExerciseSheet exerciseId={preview} onClose={() => setPreview(null)} />
+
+      <Animated.View style={[styles.pane, { backgroundColor: colors.background, paddingTop: insets.top }, sessionPane]}>
         {session != null && (
           <SessionView
             key={run}
-            day={session}
+            day={session.day}
+            playlist={session.playlist ?? undefined}
             onBack={() => program?.closeDetail()}
-            // Finishing is the only thing that marks a day done. Without this
-            // the program could not move: the path stayed grey, the streak
-            // never counted, and the score had no attendance to read. A retest
-            // day writes its own record when the numbers are saved, so only
-            // the leaving is left to do here.
-            //
-            // And then it leaves. This used to stop at the write, so closing
-            // the result left the finished player on screen with nothing to
-            // press but the back arrow.
             onFinish={() => {
-              if (!session.checkpoint) {
-                writeLog(session.day, {
-                  sessionCompleted: true,
-                  exercisesDone: [...planFor(session.block, session.kind)],
-                  // Stamped here rather than derived from the date, so the
-                  // rest before the next session is measured from when the
-                  // work actually ended.
-                  completedAt: Date.now(),
-                });
+              recordSession({
+                date: session.date,
+                source: session.source,
+                minutes: session.minutes,
+                exercises: session.exerciseIds.map((id) => ({ id, status: 'done' as const })),
+                feedback: null,
+                inSessionPain: null,
+                completedAt: Date.now(),
+              });
+              if (session.source === 'test') {
+                refreshGoals();
+                rebuildRestOfWeek();
               }
               program?.closeDetail();
             }}
@@ -503,36 +468,64 @@ const styles = StyleSheet.create({
   back: {
     paddingVertical: 4,
   },
-  section: {
-    fontSize: 20,
+  title: {
+    flex: 1,
+    fontSize: 24,
     fontFamily: fonts.heavy,
     letterSpacing: -0.6,
   },
-  blurb: {
-    fontSize: 14,
-    fontFamily: fonts.semibold,
-    marginTop: 2,
-  },
-  /** The air between two cards, and what the connector is drawn in. The list
-   * itself carries no `gap` any more — the run between cards is a thing now,
-   * not a space. */
-  gap: {
-    paddingVertical: 5,
-    gap: 7,
-  },
-  /** The run past the last card. Roomier than the gaps between days: this is
-   * the end of something, and an end that is spaced like a row does not read as
-   * one. */
-  tail: {
-    paddingVertical: 5,
-    gap: 12,
-  },
-  /** The current block's intro, at the top of the list. */
-  head: {
-    paddingBottom: 5,
-    gap: 12,
-  },
   list: {
     paddingHorizontal: 20,
+    gap: 18,
+  },
+  rationale: {
+    fontSize: 15,
+    lineHeight: 21,
+    fontFamily: fonts.medium,
+    textAlign: 'center',
+    paddingHorizontal: 8,
+  },
+  sectionLabel: {
+    fontSize: 12,
+    fontFamily: fonts.bold,
+    letterSpacing: 0.6,
+    marginTop: 6,
+    marginBottom: -8,
+  },
+  rows: {
+    gap: 8,
+  },
+  gap: {
+    paddingVertical: 5,
+  },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+    borderRadius: 18,
+    borderCurve: 'continuous',
+  },
+  rowLabel: {
+    fontSize: 16,
+    fontFamily: fonts.semibold,
+    letterSpacing: -0.2,
+  },
+  rowMinutes: {
+    fontSize: 15,
+    fontFamily: fonts.bold,
+  },
+  reached: {
+    borderRadius: 26,
+    borderCurve: 'continuous',
+    padding: 18,
+    gap: 14,
+    alignItems: 'flex-start',
+  },
+  reachedText: {
+    fontSize: 17,
+    lineHeight: 23,
+    fontFamily: fonts.semibold,
   },
 });

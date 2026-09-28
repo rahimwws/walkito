@@ -3,7 +3,7 @@ import { useSyncExternalStore } from 'react';
 
 import { supabase } from '@/shared/lib/supabase';
 
-import { CLIPS, CLIPS_TOTAL_BYTES, CLIP_BUCKET, clipEntry } from '../config/clip-manifest';
+import { CLIPS, CLIPS_TOTAL_BYTES, CLIP_BUCKET, clipEntry } from '@/shared/config';
 
 /**
  * The demonstration clips, kept on disk after the first download.

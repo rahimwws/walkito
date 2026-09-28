@@ -73,13 +73,9 @@ function itemsFor(name: string, t: Translate): QuickActions.Action[] {
   return [
     {
       id: LEAVING,
-      // Caps, in the one place in the app that shouts. Everywhere inside it we
-      // are careful never to raise our voice at someone — but this line is read
-      // with a thumb already moving toward Remove App, and it has about half a
-      // second to be noticed at all.
-      title: t('quick.deleteTitle', { name: name.toUpperCase() }),
-      // Sentence case underneath. Both lines in caps is a wall, and the second
-      // line is the one that has to actually be read.
+      // No caps anywhere in the app, this line included: a name in capitals
+      // reads as shouting at the person it names.
+      title: t('quick.deleteTitle', { name }),
       subtitle: t('quick.deleteSubtitle'),
       // Our own mascot rather than a system symbol. iOS keeps only the alpha of
       // a template image, so the artwork arrives as a silhouette — which is

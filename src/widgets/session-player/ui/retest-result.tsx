@@ -160,8 +160,7 @@ const styles = StyleSheet.create({
   eyebrow: {
     fontSize: 12,
     fontFamily: fonts.bold,
-    letterSpacing: 1,
-    textTransform: 'uppercase',
+    letterSpacing: 0.1,
   },
   goal: {
     fontSize: 17,
@@ -195,8 +194,7 @@ const styles = StyleSheet.create({
   badgeText: {
     fontSize: 12,
     fontFamily: fonts.bold,
-    letterSpacing: 0.5,
-    textTransform: 'uppercase',
+    letterSpacing: 0.1,
   },
   note: {
     fontSize: 12,

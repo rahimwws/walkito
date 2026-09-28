@@ -2,27 +2,31 @@ import * as AppleAuthentication from 'expo-apple-authentication';
 import * as Device from 'expo-device';
 import { Platform } from 'react-native';
 
+import { forgetIdentity, supabase } from '@/shared/lib/supabase';
+
 /**
- * Sign in with Apple — for a name and an address, and nothing else.
+ * Sign in with Apple — a real account, and the name and address that come with it.
  *
- * No session is created. The identity token is not requested of Supabase, there
- * is no account on any server, and nothing here can be recovered on another
- * phone. Both scopes are asked for because both are used: the name greets the
- * user, the email is what support answers on, and each arrives **only on the
- * very first authorisation** for an Apple ID — every sign-in after that returns
- * nulls, so they are written to local storage there and then or lost.
+ * Apple's identity token is handed to Supabase, which makes it an account the
+ * plan's history belongs to. That is what brings the history back on a new
+ * phone or after a reinstall: signing in with the same Apple ID lands on the
+ * same user, and the plan sync restores from it.
  *
- * Deliberately this small. A real account would mean an Apple provider, manual
- * identity linking and email confirmation configured on the backend, and none
- * of those buy anything the app currently does: the programme, the pain log and
- * the streak all live on the device.
+ * On a device that was already using the app anonymously, the Apple identity is
+ * *linked* to that user rather than replacing it, so the user id — and every
+ * row already sent under it — stays. When the Apple ID already has an account
+ * (a reinstall, a second phone), linking is refused and the device signs in to
+ * that account instead; the device's own plan is local-first and goes up under
+ * the new id on the next push.
  *
- * Deliberately returns a verdict rather than throwing. Apple reports a user
- * tapping "Cancel" on its own sheet as an *error* (`ERR_REQUEST_CANCELED`),
- * which it is not — it is the most ordinary thing a person can do on that
- * sheet, and treating it as a failure would put an error in front of someone
- * who simply changed their mind. Everything else that goes wrong is a real
- * failure, and the caller decides whether it should block the flow.
+ * Name and email are asked for because both are used — the name greets the
+ * user, the email is what support answers on — and each arrives **only on the
+ * very first authorisation** for an Apple ID; every later sign-in returns nulls,
+ * so they are written to local storage there and then or lost.
+ *
+ * Returns a verdict rather than throwing. Apple reports a user tapping "Cancel"
+ * as an *error* (`ERR_REQUEST_CANCELED`), which it is not; everything else that
+ * goes wrong is a real failure, and the caller decides whether it blocks.
  */
 export type AppleSignIn =
   | {
@@ -33,7 +37,7 @@ export type AppleSignIn =
     }
   | { status: 'cancelled' }
   | { status: 'unavailable' }
-  | { status: 'failed'; error: unknown };
+  | { status: 'failed'; error: unknown; stage: 'apple' | 'server' };
 
 export async function signInWithApple(): Promise<AppleSignIn> {
   // Android lands here. A simulator does **not**, which is worth saying because
@@ -69,9 +73,12 @@ export async function signInWithApple(): Promise<AppleSignIn> {
     const name = credential.fullName;
     const fullName = [name?.givenName, name?.familyName].filter(Boolean).join(' ');
 
+    const account = await accountFor(credential.identityToken);
+    if (account.error != null) return { status: 'failed', error: account.error, stage: 'server' };
+
     return {
       status: 'signed-in',
-      userId: credential.user,
+      userId: account.userId ?? credential.user,
       email: credential.email ?? null,
       fullName: fullName.length > 0 ? fullName : null,
     };
@@ -79,6 +86,37 @@ export async function signInWithApple(): Promise<AppleSignIn> {
     if ((error as { code?: string }).code === 'ERR_REQUEST_CANCELED') {
       return { status: 'cancelled' };
     }
-    return { status: 'failed', error };
+    return { status: 'failed', error, stage: 'apple' };
   }
+}
+
+/**
+ * The Supabase account for an Apple identity token: linked to the anonymous
+ * user when there is one, signed in to directly otherwise. A build with no
+ * backend has no account to make and succeeds with none.
+ */
+async function accountFor(token: string | null): Promise<{ userId: string | null; error: unknown }> {
+  const client = supabase;
+  if (client == null) return { userId: null, error: null };
+  if (token == null) return { userId: null, error: new Error('Apple returned no identity token') };
+
+  const { data: current } = await client.auth.getSession();
+  if (current.session?.user.is_anonymous === true) {
+    const linked = await client.auth.linkIdentity({ provider: 'apple', token });
+    if (linked.error == null) {
+      forgetIdentity();
+      return { userId: linked.data.user?.id ?? current.session.user.id, error: null };
+    }
+    // Refused because this Apple ID already has an account (or manual linking
+    // is off on the project): fall through and sign in to it instead.
+  }
+
+  const { data, error } = await client.auth.signInWithIdToken({ provider: 'apple', token });
+  if (error != null) {
+    if (__DEV__) console.warn(`[auth] Apple sign-in to Supabase failed: code=${error.code ?? 'none'} ${error.message}`);
+    return { userId: null, error };
+  }
+  // A different user than the cached anonymous one — see `forgetIdentity`.
+  forgetIdentity();
+  return { userId: data.user?.id ?? null, error: null };
 }

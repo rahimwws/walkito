@@ -265,8 +265,7 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 13,
     fontFamily: fonts.bold,
-    letterSpacing: 0.6,
-    textTransform: 'uppercase',
+    letterSpacing: 0.1,
   },
   dots: {
     flexDirection: 'row',

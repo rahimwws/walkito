@@ -145,7 +145,7 @@ export function GiftSheet({ visible, onClose }: GiftSheetProps) {
                   read off one screen and typed into another, and four letters
                   set as ordinary words are four letters people mistype. */}
               <Text style={[styles.code, { color: colors.foreground }]}>
-                {code ?? (asking ? '····' : '—')}
+                {code ?? (asking ? '····' : '-')}
               </Text>
             </Animated.View>
           )}

@@ -71,7 +71,7 @@ export function PathTrail({
               styles.dividerLabel,
               { color: meter.label, backgroundColor: colors.background },
             ]}>
-            {divider.label.toUpperCase()}
+            {divider.label}
           </Text>
         </View>
       ))}
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
   dividerLabel: {
     fontSize: 12,
     fontFamily: fonts.bold,
-    letterSpacing: 1,
+    letterSpacing: 0.1,
     paddingHorizontal: 12,
     paddingVertical: 2,
   },

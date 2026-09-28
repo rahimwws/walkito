@@ -120,6 +120,12 @@ export type DayCardProps = {
   unlockAt?: number | null;
   /** Starts the session, once the wait is over. */
   onStart?: () => void;
+  /** The weekly plan's weekday, "WED", in place of "DAY 17". */
+  label?: string;
+  /** The weekly plan has no locks: a day ahead is a preview, not a door. */
+  locks?: boolean;
+  /** A planned rest day: named as rest, with no minutes to count. */
+  rest?: boolean;
 };
 
 /**
@@ -131,7 +137,7 @@ export type DayCardProps = {
  * list be read down the left edge as a column of day numbers rather than as a
  * stack of unrelated cards.
  */
-export function DayCard({ day, status, onOpen, unlockAt, onStart }: DayCardProps) {
+export function DayCard({ day, status, onOpen, unlockAt, onStart, label: dayLabel, locks = true, rest = false }: DayCardProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -168,7 +174,7 @@ export function DayCard({ day, status, onOpen, unlockAt, onStart }: DayCardProps
   const tone = accents[scheme][sticker.accent];
   const Sticker = sticker.icon;
 
-  const label = day.checkpoint ? t('pages.program.retest') : t(KIND_KEY[day.kind]);
+  const label = day.checkpoint ? t('pages.program.retest') : rest ? t('pages.plan.restDay') : t(KIND_KEY[day.kind]);
   const items = day.checkpoint
     ? t('pages.program.testCount', { count: RETEST_TESTS })
     : t('session.moveCount', { count: movesFor(day).length });
@@ -222,22 +228,28 @@ export function DayCard({ day, status, onOpen, unlockAt, onStart }: DayCardProps
           {/* The day number, back where the list can be read down its own left
               edge without a second column to carry it. */}
           <Text style={[styles.dayLabel, { color: meter.label }]}>
-            {t('session.day', { day: day.day })}
+            {dayLabel ?? t('session.day', { day: day.day })}
           </Text>
 
           <View style={styles.fact}>
             <Sticker size={19} weight="fill" color={tone.fill} />
             <Text style={[styles.factText, { color: meter.caption }]}>{label}</Text>
           </View>
-          <View style={styles.fact}>
-            <ClockIcon size={19} weight="fill" color={meter.unit} />
-            <Text style={[styles.factText, { color: meter.caption }]}>
-              {t('session.minutes', { count: day.minutes })}
-            </Text>
-          </View>
+          {!rest && (
+            <View style={styles.fact}>
+              <ClockIcon size={19} weight="fill" color={meter.unit} />
+              <Text style={[styles.factText, { color: meter.caption }]}>
+                {t('session.minutes', { count: day.minutes })}
+              </Text>
+            </View>
+          )}
         </View>
 
-        <Mark status={status} tint={colors.foreground} dim={meter.unit} />
+        {locks || status !== 'upcoming' ? (
+          <Mark status={status} tint={colors.foreground} dim={meter.unit} />
+        ) : (
+          <View style={styles.blank} />
+        )}
       </View>
 
       {/* Why the lock is there, and for how long. Without it a finished user
@@ -378,8 +390,7 @@ const styles = StyleSheet.create({
   dayLabel: {
     fontSize: 12,
     fontFamily: fonts.bold,
-    letterSpacing: 0.6,
-    textTransform: 'uppercase',
+    letterSpacing: 0.1,
   },
   fact: {
     flexDirection: 'row',

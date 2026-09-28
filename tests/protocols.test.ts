@@ -14,7 +14,7 @@ import {
   recommendProtocol,
   type NowFacts,
 } from '../src/entities/protocols/model/recommend';
-import { CLIPS } from '../src/widgets/session-player/config/clip-manifest';
+import { CLIPS } from '../src/shared/config/clip-manifest';
 
 /**
  * The five protocols, and what must stay true about them.

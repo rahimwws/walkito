@@ -65,6 +65,7 @@ export const HOME_ES = {
 
   // ── Today's list ─────────────────────────────────────────────────────────
   'home.tasksTitle': 'Tareas de hoy',
+  'home.libraryTitle': 'Para ahora mismo',
   'home.allDoneTitle': 'Hecho por hoy',
   'home.allDoneBlurb':
     'No hace falta nada más. La próxima sesión se abre tras doce horas de descanso.',
@@ -132,9 +133,9 @@ export const HOME_ES = {
   'home.rangeWithin': 'Dentro de tu rango habitual',
   // Más corto que la frase completa: la etiqueta es estrecha y el sentido
   // entero vive en la lectura de VoiceOver.
-  'home.rangeAboveChip': 'POR ENCIMA',
-  'home.rangeBelowChip': 'POR DEBAJO',
-  'home.rangeWithinChip': 'LO HABITUAL',
+  'home.rangeAboveChip': 'Por encima',
+  'home.rangeBelowChip': 'Por debajo',
+  'home.rangeWithinChip': 'Lo habitual',
   'home.usualRangeLegend': 'HABITUAL {low}–{high}',
   'home.usualRangeA11y': 'Rango habitual, de {low} a {high}',
 
@@ -236,20 +237,46 @@ export const BRIEF_ES = {
 
   'checkpoint-recap': [
     [
-      { k: 'frame', text: 'hoy empieza un bloque nuevo -' },
+      { k: 'frame', text: 'hoy empieza una semana nueva. Objetivo:' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
-      { k: 'frame', text: 'Otra forma, otra carga.' },
     ],
     // El matiz del original se mantiene: «los estudios dicen» y «alrededor de».
     [
-      { k: 'frame', text: 'bloque nuevo hoy. Los estudios dicen que alrededor de' },
+      { k: 'frame', text: 'semana nueva hoy. Los estudios dicen que alrededor de' },
       { k: 'metric', icon: 'level', text: 'la mitad' },
       { k: 'frame', text: 'de la mejora del año llega en los primeros tres meses.' },
     ],
     [
-      { k: 'frame', text: 'entras en el bloque' },
+      { k: 'frame', text: 'esta semana trabaja en' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
-      { k: 'frame', text: 'A partir de aquí el trabajo cambia de forma.' },
+      { k: 'frame', text: 'El plan gira en torno a eso.' },
+    ],
+  ],
+
+  'goal-reached': [
+    [
+      { k: 'metric', icon: 'up', text: '{goalDone}' },
+      { k: 'frame', text: ': hecho. Lo siguiente:' },
+      { k: 'metric', icon: 'level', text: '{nextGoal}', tail: '.' },
+    ],
+  ],
+  'missed-yesterday': [
+    [
+      { k: 'frame', text: 'ayer no pudo ser. Que no sean dos:' },
+      { k: 'metric', icon: 'session', text: '2 minutos', tail: ' hoy.' },
+    ],
+  ],
+  'test-soon': [
+    [
+      { k: 'frame', text: 'faltan' },
+      { k: 'metric', icon: 'retest', text: '{testIn}' },
+      { k: 'frame', text: 'para tu próximo test.' },
+    ],
+  ],
+  'new-this-week': [
+    [
+      { k: 'frame', text: 'nuevo esta semana:' },
+      { k: 'metric', icon: 'session', text: '{newMove}', tail: '.' },
     ],
   ],
 

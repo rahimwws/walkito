@@ -84,7 +84,7 @@ const BACK_TO: Readonly<Record<Sport, Key>> = {
 
 /** Stands in for a figure the phone never supplied. An em dash, in every
  * language — it is punctuation rather than a word. */
-const DASH = '—';
+const DASH = '-';
 
 /**
  * The digit separators, per language, written out rather than asked of `Intl`.
@@ -197,21 +197,36 @@ export function briefParams(
   const { cursor, streak, health = NO_SIGNALS } = input;
   const day = PROGRAM[cursor];
 
-  const kind: SessionKind = day?.kind ?? FALLBACK_KIND;
-  const minutes = day?.minutes ?? MINUTES_BY_KIND[kind];
-  const moves = day != null ? movesFor(day) : [];
+  // Today's work from the weekly plan when the caller has it; the fixed
+  // program's day otherwise.
+  const plan = input.plan;
+  const kind: SessionKind = plan?.kind ?? day?.kind ?? FALLBACK_KIND;
+  const minutes = plan != null ? plan.minutes : (day?.minutes ?? MINUTES_BY_KIND[kind]);
+  const moves = plan != null ? [...plan.moves] : day != null ? movesFor(day) : [];
 
   return {
+    // --- the weekly plan -------------------------------------------------
+    testIn: t('streak.dayCount', { count: input.daysToTest ?? 0 }),
+    newMove: input.newThisWeek ?? t('home.fallbackMove'),
+    goalDone: input.goalReached?.goal ?? '',
+    nextGoal: input.goalReached?.next ?? '',
+
     // --- the programme ---------------------------------------------------
     // `blockName` and the exercise titles are the programme entity's own copy,
     // resolved through its public API rather than restated here.
-    block: blockName(day?.block ?? 1),
+    // The week's focus goal on the weekly plan; the old block's name without it.
+    block: plan?.focus ?? blockName(day?.block ?? 1),
     work: t(WORK_KEY[kind]),
     move: moves[0] ?? t('home.fallbackMove'),
     moves: t('home.moves', { count: moves.length }),
     minutes: t('home.minutes', { count: minutes }),
     planDay: t('home.dayNumber', { count: cursor + 1 }),
-    dayOfPlan: t('home.dayOfPlan', { day: cursor + 1, total: PROGRAM_LENGTH }),
+    // The plan has no last day any more, so "day 20 of 84" became a promise of
+    // an end the app no longer has. Just the day.
+    dayOfPlan:
+      plan != null
+        ? t('home.dayNumber', { count: cursor + 1 })
+        : t('home.dayOfPlan', { day: cursor + 1, total: PROGRAM_LENGTH }),
 
     // --- fixed doses, read from the engine rather than written out -------
     restMinutes: t('home.minutes', { count: OFFLOAD_MINUTES }),
@@ -219,7 +234,7 @@ export function briefParams(
     tests: t('home.tests', { count: RETEST_TESTS }),
     // A block, in weeks. Spelled "four weeks" in the old copy, which stopped
     // being true the day a block became fourteen days long.
-    weeks: t('home.weeks', { count: BLOCK_LENGTH / 7 }),
+    weeks: t('home.weeks', { count: plan?.weeksSinceTest ?? BLOCK_LENGTH / 7 }),
 
     // --- pain, compared to the person's own history ----------------------
     jump: t('home.points', { count: reading.jump }),

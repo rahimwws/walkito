@@ -26,3 +26,5 @@ export {
   useClipCache,
   type ClipCacheState,
 } from './model/clip-cache';
+/** One exercise's clip, looping — the plan screen's preview sheet. */
+export { ExercisePreview } from './ui/exercise-preview';

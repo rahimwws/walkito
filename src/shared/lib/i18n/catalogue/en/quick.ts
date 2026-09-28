@@ -9,7 +9,7 @@ export const QUICK_EN = {
   'quick.subtitle': 'For when you need it now',
   // The eyebrow over the featured card. Shouted, because it is the one thing
   // on the screen that changes with the hour.
-  'quick.featured': 'RIGHT NOW',
+  'quick.featured': 'Right now',
 
   // ── The five ──────────────────────────────────────────────────────────────
   'quick.flare.title': 'Hurts right now',

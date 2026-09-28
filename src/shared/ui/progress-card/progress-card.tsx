@@ -85,7 +85,7 @@ function Stat({ stat, theme }: { stat: ProgressStat; theme: MeterColors }) {
 export function ProgressCard({
   score,
   scoreDelta,
-  eyebrow = 'SCORE',
+  eyebrow,
   caption,
   stats = [],
   bands = DEFAULT_BANDS,
@@ -100,7 +100,7 @@ export function ProgressCard({
 
   const heroBody = (
     <>
-      <Text style={[styles.eyebrow, { color: theme.label }]}>{eyebrow}</Text>
+      <Text style={[styles.eyebrow, { color: theme.label }]}>{eyebrow ?? t('progress.score')}</Text>
       <View style={styles.scoreRow}>
         <ScoreValue value={score} size={40} maxSize={18} />
         {score != null && (
@@ -177,10 +177,7 @@ const styles = StyleSheet.create({
   badgeLabel: {
     fontSize: 12,
     fontFamily: fonts.bold,
-    letterSpacing: 0.5,
-    // Cased in the style rather than with `toUpperCase()`, so the catalogue
-    // keeps the form a translator wrote and casing stays a display decision.
-    textTransform: 'uppercase',
+    letterSpacing: 0.1,
   },
   metaRow: {
     flexDirection: 'row',

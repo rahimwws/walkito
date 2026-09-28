@@ -2,6 +2,18 @@
 // otherwise collide with react-native-svg's `Path`), so each one is
 // aliased back to its plain name here rather than at every use site.
 import type { Icon } from 'phosphor-react-native';
+import { ScalesIcon as Scales } from 'phosphor-react-native/src/icons/Scales';
+import { ArrowFatLineUpIcon as ArrowFatLineUp } from 'phosphor-react-native/src/icons/ArrowFatLineUp';
+import { PersonSimpleWalkIcon as PersonSimpleWalk } from 'phosphor-react-native/src/icons/PersonSimpleWalk';
+import { BandaidsIcon as Bandaids } from 'phosphor-react-native/src/icons/Bandaids';
+import { PersonSimpleTaiChiIcon as PersonSimpleTaiChi } from 'phosphor-react-native/src/icons/PersonSimpleTaiChi';
+import { CalendarBlankIcon as CalendarBlank } from 'phosphor-react-native/src/icons/CalendarBlank';
+import { CalendarDotsIcon as CalendarDots } from 'phosphor-react-native/src/icons/CalendarDots';
+import { HourglassIcon as Hourglass } from 'phosphor-react-native/src/icons/Hourglass';
+import { StairsIcon as Stairs } from 'phosphor-react-native/src/icons/Stairs';
+import { InfinityIcon as Loop } from 'phosphor-react-native/src/icons/Infinity';
+import { TowelIcon as Towel } from 'phosphor-react-native/src/icons/Towel';
+import { CircleIcon as Circle } from 'phosphor-react-native/src/icons/Circle';
 import { ArrowsClockwiseIcon as ArrowsClockwise } from 'phosphor-react-native/src/icons/ArrowsClockwise';
 import { BarbellIcon as Barbell } from 'phosphor-react-native/src/icons/Barbell';
 import { BasketballIcon as Basketball } from 'phosphor-react-native/src/icons/Basketball';
@@ -100,6 +112,29 @@ export const OPTION_ICONS: Record<string, OptionArt> = {
   consistent: { icon: Fire, color: HUE.rose },
   stronger: { icon: Barbell, color: HUE.violet },
   injuryfree: { icon: ShieldCheck, color: HUE.green },
+  flatfeet: { icon: Footprints, color: HUE.teal },
+  ankles: { icon: Scales, color: HUE.sky },
+  jump: { icon: ArrowFatLineUp, color: HUE.rose },
+  allday: { icon: PersonSimpleWalk, color: HUE.amber },
+  comeback: { icon: Bandaids, color: HUE.pink },
+  steady: { icon: PersonSimpleTaiChi, color: HUE.violet },
+
+  // Days a week
+  days3: { icon: CalendarBlank, color: HUE.teal },
+  days5: { icon: CalendarCheck, color: HUE.violet },
+  days7: { icon: CalendarDots, color: HUE.amber },
+
+  // Minutes a session
+  min3: { icon: Timer, color: HUE.teal },
+  min5: { icon: Clock, color: HUE.violet },
+  min10: { icon: Hourglass, color: HUE.amber },
+
+  // What they have at home
+  step: { icon: Stairs, color: HUE.sky },
+  band: { icon: Loop, color: HUE.violet },
+  towel: { icon: Towel, color: HUE.teal },
+  pillow: { icon: Bed, color: HUE.pink },
+  ball: { icon: Circle, color: HUE.amber },
 
   // Units
   kg: { icon: Ruler, color: HUE.sky },

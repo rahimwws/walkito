@@ -19,8 +19,8 @@ export const OFFER_RU = {
   'offer.featureProgressBlurb': 'Смотрите, как готовность растёт неделя за неделей.',
 
   // ── Paywall: headline ────────────────────────────────────────────────────
-  'offer.limited': 'ТОЛЬКО СЕЙЧАС — ОДИН РАЗ',
-  'offer.inviteBadge': 'ЦЕНА ПО ПРИГЛАШЕНИЮ',
+  'offer.limited': 'Только сейчас - один раз',
+  'offer.inviteBadge': 'Цена по приглашению',
   'offer.headlineInvite': 'Ваша цена по приглашению: 12-недельная программа',
   'offer.headlineComeback': 'Ваша цена за возвращение: 12-недельная программа',
   'offer.headlineSave': {
@@ -29,9 +29,9 @@ export const OFFER_RU = {
     many: 'Заплатите один раз за {count} месяцев и сэкономьте {percent}%',
   },
   'offer.headlinePlain': {
-    one: 'Заплатите один раз за {count} месяц — или платите помесячно',
-    few: 'Заплатите один раз за {count} месяца — или платите помесячно',
-    many: 'Заплатите один раз за {count} месяцев — или платите помесячно',
+    one: 'Заплатите один раз за {count} месяц - или платите помесячно',
+    few: 'Заплатите один раз за {count} месяца - или платите помесячно',
+    many: 'Заплатите один раз за {count} месяцев - или платите помесячно',
   },
   'offer.subWeeks': {
     one: 'Ваш план на {count} неделю и всё, что вокруг него.',
@@ -85,7 +85,7 @@ export const OFFER_RU = {
   // ── Session player: the locked state ─────────────────────────────────────
   'widgets.sessionLockedTitle': 'Ваша программа завершилась',
   'widgets.sessionLockedBody':
-    'Всё, что вы записали, осталось здесь — читать можно по-прежнему. Чтобы снова проводить сессии, продолжите с того места, где остановились.',
+    'Всё, что вы записали, осталось здесь - читать можно по-прежнему. Чтобы снова проводить сессии, продолжите с того места, где остановились.',
   'widgets.sessionLockedCta': 'Посмотреть варианты',
 
   // ── Session player: the retest ───────────────────────────────────────────
@@ -97,8 +97,8 @@ export const OFFER_RU = {
   'widgets.retestEntryBlurb': 'Запишите, сколько получилось. Чем честнее цифры, тем полезнее сравнение.',
   'widgets.retestLeft': 'Левая нога',
   'widgets.retestRight': 'Правая нога',
-  'widgets.retestLeftSore': 'Левая нога — та, что болит',
-  'widgets.retestRightSore': 'Правая нога — та, что болит',
+  'widgets.retestLeftSore': 'Левая нога - та, что болит',
+  'widgets.retestRightSore': 'Правая нога - та, что болит',
   'widgets.retestSeconds': 'Секунды',
   'widgets.retestLess': 'Меньше',
   'widgets.retestMore': 'Больше',
@@ -114,12 +114,18 @@ export const OFFER_RU = {
   'widgets.retestGapNote': 'разница между ногами',
   'widgets.retestYourGoal': 'Ваша цель',
   'widgets.retestFirstCaption': 'Это ваша точка отсчёта. Через две недели увидите, что изменилось.',
-  'widgets.retestGoal.painfree': 'Вы хотели утро без боли в пятке. Эти цифры — шаг к нему.',
-  'widgets.retestGoal.race': 'Вы готовитесь к забегу. Сильные икры и крепкая стопа — это то, что вам нужно.',
+  'widgets.retestGoal.painfree': 'Вы хотели утро без боли в пятке. Эти цифры - шаг к нему.',
+  'widgets.retestGoal.race': 'Вы готовитесь к забегу. Сильные икры и крепкая стопа - это то, что вам нужно.',
   'widgets.retestGoal.consistent': 'Вы хотели заниматься регулярно. Вот что это даёт.',
   'widgets.retestGoal.stronger': 'Вы хотели стать сильнее. Здесь это видно первым делом.',
   'widgets.retestGoal.injuryfree': 'Вы хотели без травм. Крепкую стопу травмировать труднее.',
 
+  'widgets.retestGoal.flatfeet': 'Вы пришли, чтобы взять плоскостопие под контроль. Сильный свод и устойчивый баланс - вот где это видно.',
+  'widgets.retestGoal.ankles': 'Вы хотели устойчивые лодыжки. Баланс - первое, где это видно.',
+  'widgets.retestGoal.jump': 'Вы хотели прыгать выше. Сильная икра - это пружина прыжка.',
+  'widgets.retestGoal.allday': 'Вы хотели выдерживать день на ногах. Сильный свод держит час за часом.',
+  'widgets.retestGoal.comeback': 'Вы возвращаетесь после травмы. Главная цифра - разница между ногами.',
+  'widgets.retestGoal.steady': 'Вы хотели ходить уверенно. Баланс и сильная стопа - вот как это ощущается.',
   // ── Session player: the counter line ─────────────────────────────────────
   // Одно слово на каждую фазу: это читают с двух метров, стоя на одной ноге.
   'widgets.phaseUp': 'Вверх',
@@ -142,7 +148,7 @@ export const OFFER_RU = {
 
   // ── Session player: the card and the transport ───────────────────────────
   'widgets.clipFailed': 'Видео не загрузилось. Указания остаются в силе.',
-  'widgets.lockScreenHint': 'Заблокируйте телефон — таймер продолжит идти',
+  'widgets.lockScreenHint': 'Заблокируйте телефон - таймер продолжит идти',
   'widgets.expandDemo': 'Развернуть демонстрацию',
   'widgets.collapseDemo': 'Свернуть демонстрацию',
   'widgets.sessionContinue': 'Продолжить',
@@ -156,6 +162,10 @@ export const OFFER_RU = {
   'widgets.sessionDoneTitle': 'Хорошая работа.',
   'widgets.sessionStoppedTitle': 'Остановимся здесь.',
   'widgets.sessionStoppedBlurb': 'Сегодняшняя сессия всё равно засчитана. Завтра начнём на ступень легче.',
+  'widgets.feelQuestion': 'Как ощущения?',
+  'widgets.feelEasy': 'Легко',
+  'widgets.feelOk': 'Нормально',
+  'widgets.feelHard': 'Тяжело',
 
   'widgets.painButton': 'Болит',
   'widgets.painTitle': 'Насколько сильно сейчас?',
@@ -173,8 +183,8 @@ export const OFFER_RU = {
     many: '{count} дней подряд',
   },
   'widgets.sessionDoneBlurb': {
-    one: '{count} упражнение сделано. Понемногу и регулярно — так это и сдвигается.',
-    few: 'Все {count} упражнения сделаны. Понемногу и регулярно — так это и сдвигается.',
-    many: 'Все {count} упражнений сделаны. Понемногу и регулярно — так это и сдвигается.',
+    one: '{count} упражнение сделано. Понемногу и регулярно - так это и сдвигается.',
+    few: 'Все {count} упражнения сделаны. Понемногу и регулярно - так это и сдвигается.',
+    many: 'Все {count} упражнений сделаны. Понемногу и регулярно - так это и сдвигается.',
   },
 };

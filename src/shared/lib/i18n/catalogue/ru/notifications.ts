@@ -41,16 +41,16 @@ export const NOTIFICATIONS_RU = {
     many: 'День {day}. {kind}. {count} минут.',
   },
   'notifications.sessionShort': {
-    one: 'Сегодня короткая сессия — {count} минута, сидя.',
-    few: 'Сегодня короткая сессия — {count} минуты, сидя.',
-    many: 'Сегодня короткая сессия — {count} минут, сидя.',
+    one: 'Сегодня короткая сессия - {count} минута, сидя.',
+    few: 'Сегодня короткая сессия - {count} минуты, сидя.',
+    many: 'Сегодня короткая сессия - {count} минут, сидя.',
   },
   'notifications.sessionHeelRaises':
     'Сегодня подъёмы на носки. То самое, что действительно сдвигает дело.',
   'notifications.sessionBackTo': {
-    one: 'Сегодня {count} минута — ещё шаг {backTo}.',
-    few: 'Сегодня {count} минуты — ещё шаг {backTo}.',
-    many: 'Сегодня {count} минут — ещё шаг {backTo}.',
+    one: 'Сегодня {count} минута - ещё шаг {backTo}.',
+    few: 'Сегодня {count} минуты - ещё шаг {backTo}.',
+    many: 'Сегодня {count} минут - ещё шаг {backTo}.',
   },
   'notifications.sessionCalves': {
     one: '{count} минута. Сегодня всё про икры.',
@@ -78,26 +78,26 @@ export const NOTIFICATIONS_RU = {
     many: 'Вчера было тяжело. Сегодня {count} минут, сидя.',
   },
   'notifications.flarePain': {
-    one: 'Боль была {pain}. Сегодня план отходит в сторону — {count} минута.',
-    few: 'Боль была {pain}. Сегодня план отходит в сторону — {count} минуты.',
-    many: 'Боль была {pain}. Сегодня план отходит в сторону — {count} минут.',
+    one: 'Боль была {pain}. Сегодня план отходит в сторону - {count} минута.',
+    few: 'Боль была {pain}. Сегодня план отходит в сторону - {count} минуты.',
+    many: 'Боль была {pain}. Сегодня план отходит в сторону - {count} минут.',
   },
   'notifications.flareNothingHeavy': 'Вчера был плохой день. Сегодня ничего тяжёлого.',
 
   // ── A big day on their feet ──────────────────────────────────────────────
   'notifications.loadSteps': {
-    one: '{steps} шаг вчера — на {percent}% больше обычного. Сегодня восстановление.',
-    few: '{steps} шага вчера — на {percent}% больше обычного. Сегодня восстановление.',
-    many: '{steps} шагов вчера — на {percent}% больше обычного. Сегодня восстановление.',
+    one: '{steps} шаг вчера - на {percent}% больше обычного. Сегодня восстановление.',
+    few: '{steps} шага вчера - на {percent}% больше обычного. Сегодня восстановление.',
+    many: '{steps} шагов вчера - на {percent}% больше обычного. Сегодня восстановление.',
   },
   'notifications.loadBigDay': 'Вчера вы много были на ногах. План подстроился.',
   'notifications.loadBackOff': 'Вчера было долго. Сегодня план сбавляет.',
 
   // ── Проверка по шагам ────────────────────────────────────────────────────
   'notifications.stepsCheck': {
-    one: 'Сегодня уже {steps} шаг — долгий день на ногах. Как пятка?',
-    few: 'Сегодня уже {steps} шага — долгий день на ногах. Как пятка?',
-    many: 'Сегодня уже {steps} шагов — долгий день на ногах. Как пятка?',
+    one: 'Сегодня уже {steps} шаг - долгий день на ногах. Как пятка?',
+    few: 'Сегодня уже {steps} шага - долгий день на ногах. Как пятка?',
+    many: 'Сегодня уже {steps} шагов - долгий день на ногах. Как пятка?',
   },
 
   // ── Something changed in how they walk ───────────────────────────────────
@@ -112,26 +112,26 @@ export const NOTIFICATIONS_RU = {
 
   // ── Retest ───────────────────────────────────────────────────────────────
   'notifications.retestTwoWeeks': 'Две недели. Пора посмотреть, что сдвинулось. 3 теста, 4 минуты.',
-  'notifications.retestCheckpoint': 'Сегодня контрольная точка. Без тренировки — только три замера.',
+  'notifications.retestCheckpoint': 'Сегодня контрольная точка. Без тренировки - только три замера.',
   'notifications.retestDay': 'День {day}. Посмотрим, работает ли это.',
   'notifications.retestFollowUp': 'Тесты всё ещё ждут. Четыре минуты.',
 
   // ── A new block opens ────────────────────────────────────────────────────
-  'notifications.blockNew': 'Сегодня новый блок: {block}. Начинаются подъёмы на носки.',
-  'notifications.blockLoadUp': 'Блок {block}. Дальше нагрузка растёт.',
-  'notifications.blockOpens': 'Сегодня открывается {block}.',
+  'notifications.blockNew': 'Сегодня новая неделя. Цель: {block}.',
+  'notifications.blockLoadUp': 'На этой неделе работаем над целью «{block}».',
+  'notifications.blockOpens': 'Новая неделя. Главное в ней - {block}.',
 
   // ── The plan changed, and why ────────────────────────────────────────────
   'notifications.planFlare': 'На этой неделе боль выросла, поэтому сегодня на ступень легче.',
   'notifications.planSpike': 'Вчера был большой день. Сегодня начинаем полегче.',
   'notifications.planHeavyDay': 'Вчера вы долго были на ногах. Сегодня меняем на восстановление.',
   'notifications.planReturn': 'Пять дней перерыва. Сегодня начинаем на ступень легче.',
-  'notifications.planBackUp': 'Болезненности больше нет — сегодня нагрузка возвращается.',
+  'notifications.planBackUp': 'Болезненности больше нет - сегодня нагрузка возвращается.',
 
   // ── Evening check-in ─────────────────────────────────────────────────────
   'notifications.checkinHow': 'Как стопа сегодня?',
-  'notifications.checkinOneTap': 'Одно касание перед сном — как ощущалось?',
-  'notifications.checkinLog': 'Отметьте сегодня — и план будет знать, что делать завтра.',
+  'notifications.checkinOneTap': 'Одно касание перед сном - как ощущалось?',
+  'notifications.checkinLog': 'Отметьте сегодня - и план будет знать, что делать завтра.',
 
   // ── Streak ───────────────────────────────────────────────────────────────
   // Обе строки говорят, что касание сохраняет, и ни одна — что можно потерять.
@@ -152,8 +152,8 @@ export const NOTIFICATIONS_RU = {
   'notifications.winbackDay30': 'Мы здесь, если стопа снова даст о себе знать.',
 
   // ── Leaving the offer ────────────────────────────────────────────────────
-  'notifications.offerWaitNamed': '{name}, подождите — скидка {percent}%',
-  'notifications.offerWait': 'Подождите — скидка {percent}%',
+  'notifications.offerWaitNamed': '{name}, подождите - скидка {percent}%',
+  'notifications.offerWait': 'Подождите - скидка {percent}%',
   'notifications.offerWaitBody': '12-недельная программа ждёт вас по сниженной цене. Нажмите, чтобы посмотреть.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────

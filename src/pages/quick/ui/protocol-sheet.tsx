@@ -12,7 +12,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { PROGRAM, TODAY_INDEX } from '@/entities/program';
+import { PROGRAM, TODAY_INDEX, recordSession, todayKey } from '@/entities/program';
 import { type Protocol } from '@/entities/protocols';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
@@ -160,7 +160,24 @@ export function ProtocolSheet({ protocol, onClose }: Props) {
             playlist={playlist}
             cue={t(protocol.cueKey)}
             onBack={close}
-            onFinish={close}
+            // A finished routine counts for the streak and is kept as a session
+            // of its own — `library`, not `plan`, so today's plan session stays
+            // open. See section 5.3 of the plan spec.
+            onFinish={() => {
+              if (protocol != null) {
+                recordSession({
+                  date: todayKey(),
+                  source: 'library',
+                  routineId: protocol.id,
+                  minutes: protocol.minutes,
+                  exercises: protocol.steps.map((step) => ({ id: step.exerciseId, status: 'done' as const })),
+                  feedback: null,
+                  inSessionPain: null,
+                  completedAt: Date.now(),
+                });
+              }
+              close();
+            }}
           />
         </View>
       </Modal>

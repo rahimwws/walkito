@@ -7,7 +7,7 @@
  */
 
 import type { Intake } from '@/entities/profile';
-import type { PlanLength, ProgramFocus } from '@/entities/program';
+import { EQUIPMENT, type DaysPerWeek, type PlanLength, type PlanSettings, type ProgramFocus, type SessionMinutes } from '@/entities/program';
 
 import { painAreasFor } from './pain-areas';
 import { PLANS, recommendedIndex } from './plans';
@@ -107,4 +107,26 @@ export function startingPlan(intake: Intake): StartingPlan {
     progressionOffset: gentle ? -1 : 0,
     focus: focusFor(intake.pain),
   };
+}
+
+const DAYS: Readonly<Record<string, DaysPerWeek>> = { days3: 3, days5: 5, days7: 7 };
+const MINUTES: Readonly<Record<string, SessionMinutes>> = { min3: 3, min5: 5, min10: 10 };
+
+/**
+ * The plan settings onboarding asked for: days a week, minutes a session, what
+ * is at home, and when to be reminded. Only what was answered — a question
+ * stepped over leaves the default alone.
+ */
+export function planSettingsFrom(answers: Answers, reminderMinutes: number | null): Partial<PlanSettings> {
+  const out: Partial<PlanSettings> = {};
+  const days = DAYS[first(answers, 'planDays') ?? ''];
+  if (days != null) out.daysPerWeek = days;
+  const minutes = MINUTES[first(answers, 'planMinutes') ?? ''];
+  if (minutes != null) out.defaultMinutes = minutes;
+  const have = answers.equipment;
+  if (Array.isArray(have) && have.length > 0) {
+    out.equipmentMissing = EQUIPMENT.filter((item) => !have.includes(item));
+  }
+  if (reminderMinutes != null) out.reminderMinutes = reminderMinutes;
+  return out;
 }

@@ -51,8 +51,8 @@ export const NOTIFICATIONS_EN = {
     other: 'Day {day}. {kind}. {count} minutes.',
   },
   'notifications.sessionShort': {
-    one: 'Short session today — {count} minute, sitting down.',
-    other: 'Short session today — {count} minutes, sitting down.',
+    one: 'Short session today - {count} minute, sitting down.',
+    other: 'Short session today - {count} minutes, sitting down.',
   },
   'notifications.sessionHeelRaises': 'Heel raises today. The one that actually moves things.',
   /** Their sport, named as the way back — never as a promise of getting there. */
@@ -83,8 +83,8 @@ export const NOTIFICATIONS_EN = {
     other: 'Rough one yesterday. Today is {count} minutes, sitting down.',
   },
   'notifications.flarePain': {
-    one: 'Pain was {pain}. Today the plan gets out of your way — {count} minute.',
-    other: 'Pain was {pain}. Today the plan gets out of your way — {count} minutes.',
+    one: 'Pain was {pain}. Today the plan gets out of your way - {count} minute.',
+    other: 'Pain was {pain}. Today the plan gets out of your way - {count} minutes.',
   },
   'notifications.flareNothingHeavy': 'Bad day yesterday. Today asks nothing heavy.',
 
@@ -92,8 +92,8 @@ export const NOTIFICATIONS_EN = {
   // `loadSteps` is first in the set on purpose: it is the only one that names a
   // figure, so it is the one `copy.ts` drops when HealthKit gave us nothing.
   'notifications.loadSteps': {
-    one: '{steps} step yesterday — {percent}% over your usual. Today is recovery.',
-    other: '{steps} steps yesterday — {percent}% over your usual. Today is recovery.',
+    one: '{steps} step yesterday - {percent}% over your usual. Today is recovery.',
+    other: '{steps} steps yesterday - {percent}% over your usual. Today is recovery.',
   },
   'notifications.loadBigDay': 'That was a big day on your feet. The plan adjusted.',
   'notifications.loadBackOff': 'Long one yesterday. Today the plan backs off.',
@@ -104,8 +104,8 @@ export const NOTIFICATIONS_EN = {
   // this condition is sensitive to, and praising it would be the app cheering
   // the thing that makes tomorrow morning hurt.
   'notifications.stepsCheck': {
-    one: '{steps} step today — a long day on your feet. How’s the heel?',
-    other: '{steps} steps today — a long day on your feet. How’s the heel?',
+    one: '{steps} step today - a long day on your feet. How’s the heel?',
+    other: '{steps} steps today - a long day on your feet. How’s the heel?',
   },
 
   // ── Something changed in how they walk ───────────────────────────────────
@@ -122,16 +122,16 @@ export const NOTIFICATIONS_EN = {
 
   // ── Retest ───────────────────────────────────────────────────────────────
   'notifications.retestTwoWeeks': 'Two weeks. Time to see what moved. 3 tests, 4 minutes.',
-  'notifications.retestCheckpoint': 'Checkpoint today. No training — just three measurements.',
+  'notifications.retestCheckpoint': 'Checkpoint today. No training - just three measurements.',
   'notifications.retestDay': 'Day {day}. Let’s find out if it’s working.',
   /** The tail six hours later, and the only second message of a day the app
    * ever sends. Dropped the moment the tests are opened. */
   'notifications.retestFollowUp': 'The tests are still open. Four minutes.',
 
   // ── A new block opens ────────────────────────────────────────────────────
-  'notifications.blockNew': 'New block today: {block}. Heel raises start now.',
-  'notifications.blockLoadUp': 'Block {block}. The load goes up from here.',
-  'notifications.blockOpens': '{block} opens today.',
+  'notifications.blockNew': 'A new week starts today. Focus: {block}.',
+  'notifications.blockLoadUp': 'This week works on {block}.',
+  'notifications.blockOpens': 'New week, same foot. This one is about {block}.',
 
   // ── The plan changed, and why ────────────────────────────────────────────
   // One line per reason, because the whole value of this row is that it explains
@@ -140,11 +140,11 @@ export const NOTIFICATIONS_EN = {
   'notifications.planSpike': 'Yesterday was a big one. Today picks up lighter.',
   'notifications.planHeavyDay': 'Long day on your feet yesterday. Today swaps to recovery.',
   'notifications.planReturn': 'Five days off. Today picks up one step easier.',
-  'notifications.planBackUp': 'You’re not sore anymore — today the load goes back up.',
+  'notifications.planBackUp': 'You’re not sore anymore - today the load goes back up.',
 
   // ── Evening check-in ─────────────────────────────────────────────────────
   'notifications.checkinHow': 'How was the foot today?',
-  'notifications.checkinOneTap': 'One tap before bed — how did it feel?',
+  'notifications.checkinOneTap': 'One tap before bed - how did it feel?',
   'notifications.checkinLog': 'Log today and the plan knows what to do tomorrow.',
 
   // ── Streak ───────────────────────────────────────────────────────────────
@@ -166,8 +166,8 @@ export const NOTIFICATIONS_EN = {
   // One message as the app goes to the background, only for people who
   // switched offers on. Says what is on offer and asks for nothing more — it
   // names the program, because "{percent}% off" alone does not say off what.
-  'notifications.offerWaitNamed': '{name}, before you go — {percent}% off',
-  'notifications.offerWait': 'Before you go — {percent}% off',
+  'notifications.offerWaitNamed': '{name}, before you go - {percent}% off',
+  'notifications.offerWait': 'Before you go - {percent}% off',
   'notifications.offerWaitBody': 'Your 12-week program is waiting at a lower price. Tap to see it.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────

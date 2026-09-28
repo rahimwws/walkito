@@ -24,6 +24,7 @@ import { useMemo } from 'react';
 
 import { kv } from '@/shared/lib/storage';
 
+import { plannedRest } from './plan/store';
 import { PROGRAM, isSystemRest } from './program';
 import {
   currentDay,
@@ -73,20 +74,30 @@ export type Streak = {
 export function attended(dayNumber: number): boolean {
   if (dayNumber < 1) return false;
 
-  const day = PROGRAM[dayNumber - 1];
-  if (day != null && isSystemRest(day)) return true;
+  if (restScheduled(dayNumber)) return true;
 
   const log = logFor(dayNumber);
   if (log == null) return false;
   // `painMorning` is nullable and 0 is a real answer — "no pain at all" is a
   // logged morning, so this has to be a null check and not a truthiness one.
-  return log.painMorning != null || log.sessionCompleted;
+  // A Library routine counts too — section 6 of the plan spec.
+  return log.painMorning != null || log.sessionCompleted || log.libraryDone === true;
+}
+
+/**
+ * Whether the plan said rest that day. The weekly plan answers for the weeks it
+ * built; before it existed, the old fixed program's recovery day did.
+ */
+function restScheduled(dayNumber: number): boolean {
+  const weekly = plannedRest(dateKeyForDay(dayNumber));
+  if (weekly != null) return weekly;
+  const day = PROGRAM[dayNumber - 1];
+  return day != null && isSystemRest(day);
 }
 
 /** Attended because the plan said rest, with nothing of the user's own on it. */
 function restOnly(dayNumber: number): boolean {
-  const day = PROGRAM[dayNumber - 1];
-  if (day == null || !isSystemRest(day)) return false;
+  if (!restScheduled(dayNumber)) return false;
   const log = logFor(dayNumber);
   return log == null || (log.painMorning == null && !log.sessionCompleted);
 }
@@ -111,31 +122,51 @@ export function streakThrough(
   // part with the awkward rule in it, and a predicate parameter is what lets it
   // be exercised over a made-up fortnight without standing up a storage layer.
   counts: (dayNumber: number) => boolean = attended,
+  /**
+   * Spend banked freezes on missed days automatically: one earned per week on
+   * the plan, two at most. A frozen day neither breaks the run nor adds to it.
+   * Off by default so the plain arithmetic stays testable on its own.
+   */
+  freezes = false,
 ): Streak {
   let longest = 0;
   let run = 0;
   let total = 0;
+  let bank = 0;
+  const bridged = new Set<number>();
 
   for (let day = 1; day <= today; day += 1) {
+    if (freezes && day > 1 && (day - 1) % 7 === 0) bank = Math.min(bank + FREEZE_PER_WEEK, FREEZE_MAX);
     if (counts(day)) {
       run += 1;
       total += 1;
       if (run > longest) longest = run;
+    } else if (day === today) {
+      // Today is still open; it decides nothing yet.
+    } else if (freezes && bank > 0 && run > 0) {
+      bank -= 1;
+      bridged.add(day);
     } else {
       run = 0;
     }
   }
 
   // Today is still open, so measure the run that ends yesterday instead.
-  const current = counts(today) ? run : trailingRun(today - 1, counts);
+  const holds = (d: number) => counts(d) || bridged.has(d);
+  const current = counts(today) ? run : trailingRun(today - 1, holds, counts);
 
   return { current, longest: Math.max(longest, current), total };
 }
 
-/** Consecutive attended days ending at `day`, walking backwards. */
-function trailingRun(day: number, counts: (dayNumber: number) => boolean): number {
+/** Attended days in the unbroken run ending at `day`, walking backwards.
+ * `holds` keeps the run going (frozen days included); only `counts` adds to it. */
+function trailingRun(
+  day: number,
+  holds: (dayNumber: number) => boolean,
+  counts: (dayNumber: number) => boolean = holds,
+): number {
   let run = 0;
-  for (let d = day; d >= 1 && counts(d); d -= 1) run += 1;
+  for (let d = day; d >= 1 && holds(d); d -= 1) if (counts(d)) run += 1;
   return run;
 }
 
@@ -223,7 +254,7 @@ export function useStreak(): StreakView {
 
   return useMemo(() => {
     return {
-      ...streakThrough(currentDay()),
+      ...streakThrough(currentDay(), attended, true),
       week: weekAttendance(),
       strip: weekAttendance(Date.now(), 0).map((day) => day.attended),
     };
@@ -325,3 +356,17 @@ export function resetFreezes(): void {
 /** The date a program day falls on. Re-exported so screens reading attendance
  * do not have to reach into the state module for the other half of it. */
 export { dateKeyForDay };
+
+/**
+ * The streak lengths that get a moment. Day 10 gets the biggest one — early
+ * enough to arrive, late enough to mean it.
+ */
+export const STREAK_MILESTONES = [3, 7, 10, 30, 100] as const;
+export const BIG_MILESTONE = 10;
+
+/** The milestone `current` has just reached, or null. */
+export function milestoneFor(current: number): (typeof STREAK_MILESTONES)[number] | null {
+  return (STREAK_MILESTONES as readonly number[]).includes(current)
+    ? (current as (typeof STREAK_MILESTONES)[number])
+    : null;
+}

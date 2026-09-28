@@ -35,7 +35,8 @@ import {
   type RedeemResult,
 } from '@/entities/referral';
 import { firstName, saveIntake, setProfileEmail, setProfileName } from '@/entities/profile';
-import { startProgram } from '@/entities/program';
+import { wakeMinutes } from '@/entities/notifications';
+import { seedPlanSettings, startProgram } from '@/entities/program';
 import { completeOnboarding, signInWithApple } from '@/entities/session';
 import { setPersonOnce, track, type AcquisitionSource } from '@/shared/lib/analytics';
 import { NoteSheet } from '@/shared/ui/note-sheet';
@@ -44,7 +45,7 @@ import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button
 
 import { TESTIMONIAL_COUNT } from '../config/testimonials';
 import { chose } from '../model/answers';
-import { intakeFrom, startingPlan } from '../model/intake';
+import { intakeFrom, planSettingsFrom, startingPlan } from '../model/intake';
 import { loadQuestionFor, withName, type SportKey } from '../model/personalise';
 import { planSummary } from '../model/plan-summary';
 import { PLANS, recommendedIndex } from '../model/plans';
@@ -75,6 +76,7 @@ import { IntroStep } from './intro-step';
 import { MeasureStep } from './measure-step';
 import { NameStep } from './name-step';
 import { NotifyStep } from './notify-step';
+import { ReminderStep } from './reminder-step';
 import { OutlookStep } from './outlook-step';
 import { PainMapStep } from './pain-map-step';
 import { WelcomePage } from '@/pages/welcome';
@@ -146,6 +148,8 @@ export function OnboardingPage() {
    * and an unset ruler would have nothing under the needle. */
   const [sizeUnit, setSizeUnit] = useState<SizeUnit>('eu');
   const [size, setSize] = useState(42);
+  /** The daily reminder, minutes past midnight: a quarter of an hour after waking to start. */
+  const [reminder, setReminder] = useState(() => wakeMinutes() + 15);
   /** Null until the Health sheet has been answered; nulls inside it mean the
    * user declined that particular type, which is a valid outcome. */
   const [health, setHealth] = useState<HealthSummary | null>(null);
@@ -453,7 +457,7 @@ export function OnboardingPage() {
         .then((result) => {
           if (result.status === 'cancelled') return;
           if (result.status === 'failed') {
-            track('sign_in_failed', { method: 'apple' });
+            track('sign_in_failed', { method: 'apple', stage: result.stage });
             Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
             setSignInFailed(true);
             return;
@@ -462,10 +466,9 @@ export function OnboardingPage() {
           // authorisation for this Apple ID; every later sign-in is nulls. So
           // both are written down here or lost for good.
           //
-          // That is the whole of what this button does. There is no session
-          // behind it and no account on any server — the app needs a way to
-          // greet somebody and an address for support to answer on, and this is
-          // where it gets them.
+          // Behind it is a real account now (see `signInWithApple`): the one the
+          // plan syncs to, and the one a reinstall or a new phone signs back in
+          // to. There is no way past this screen without one.
           if (result.status === 'signed-in') {
             if (result.fullName != null) setProfileName(firstName(result.fullName));
             if (result.email != null) setProfileEmail(result.email);
@@ -553,10 +556,11 @@ const CONFIRM_MS = 900;
     const intake = intakeFrom(answers, { size, unit: sizeUnit });
     saveIntake(intake);
     startProgram(startingPlan(intake));
+    seedPlanSettings(planSettingsFrom(answers, reminder));
     // Both heels: the asymmetry signals can only ever report nothing, so they
     // are switched off rather than left silently dead.
     setBilateral(intake.side === 'both');
-  }, [answers, size, sizeUnit]);
+  }, [answers, size, sizeUnit, reminder]);
 
   /**
    * Leaving the note, however the user left it.
@@ -934,6 +938,8 @@ const CONFIRM_MS = 900;
               <WatchSyncStep brand={chose(answers, 'watch', 'whoop') ? 'whoop' : 'garmin'} />
             )}
 
+            {step.kind === 'reminder' && <ReminderStep minutes={reminder} onChange={setReminder} />}
+
             {step.kind === 'notify' && (
               <NotifyStep
                 name={name}
@@ -1037,24 +1043,6 @@ const CONFIRM_MS = 900;
                   {t('onboarding.intro.emailCta')}
                 </Text>
               </Pressable>
-              {/* Signing in is optional. It only gives the app a name and a
-                  support address — the account behind the app is anonymous
-                  either way — and App Review 5.1.1 does not allow gating the
-                  flow on an account the app does not need. */}
-              <Pressable
-                accessibilityRole="button"
-                onPress={() => {
-                  Haptics.selectionAsync();
-                  track('sign_in_skipped');
-                  setSignInFailed(false);
-                  step1(true);
-                }}
-                disabled={authing}
-                style={({ pressed }) => [styles.altAuth, pressed && { opacity: 0.6 }]}>
-                <Text style={[styles.altAuthLabel, { color: meter.caption }]}>
-                  {t('onboarding.intro.skip')}
-                </Text>
-              </Pressable>
             </View>
           )}
         </View>
@@ -1080,7 +1068,7 @@ const CONFIRM_MS = 900;
           there is no onboarding left to show it from once that has run, and
           over Home it would land on top of the offer sheet. `leaveNote` is what
           finally flips the flag. */}
-      <NoteSheet visible={note} onDone={leaveNote} />
+      <NoteSheet visible={note} onDone={leaveNote} asksForReview={false} />
     </KeyboardAvoidingView>
   );
 }

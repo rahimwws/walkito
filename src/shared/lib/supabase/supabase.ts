@@ -1,6 +1,7 @@
 import 'react-native-url-polyfill/auto';
 
-import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+import { createClient, type Session, type SupabaseClient } from '@supabase/supabase-js';
+import { requireOptionalNativeModule } from 'expo';
 
 import { kv } from '@/shared/lib/storage';
 
@@ -61,6 +62,62 @@ export const supabase: SupabaseClient | null =
 /** Whether this build has a backend at all. */
 export const hasBackend = supabase != null;
 
+// ── The session's spare key, in the Keychain ─────────────────────────────────
+//
+// The session itself lives in MMKV, which goes with the app when it is deleted.
+// The Keychain usually does not: on iOS its items outlive an uninstall. So the
+// refresh token is copied there, and a fresh install with no session trades it
+// for one — the same user, anonymous or not, back with their history.
+//
+// Only the refresh token: it is short, where a whole session is past the size
+// the Keychain wrapper promises to hold. And only when the native module is in
+// the binary: a dev client built before it was added simply goes without.
+
+const KEYCHAIN_KEY = 'walkito.supabase.refresh';
+
+type SecureStore = typeof import('expo-secure-store');
+
+function secureStore(): SecureStore | null {
+  if (requireOptionalNativeModule('ExpoSecureStore') == null) return null;
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  return require('expo-secure-store') as SecureStore;
+}
+
+function keepRefreshToken(session: Session | null): void {
+  const store = secureStore();
+  if (store == null) return;
+  const write =
+    session?.refresh_token != null
+      ? store.setItemAsync(KEYCHAIN_KEY, session.refresh_token, { keychainAccessible: store.AFTER_FIRST_UNLOCK })
+      : store.deleteItemAsync(KEYCHAIN_KEY);
+  void write.catch(() => {});
+}
+
+// Every new or refreshed token replaces the spare, so the one kept is always
+// the one the server will still accept; signing out removes it.
+supabase?.auth.onAuthStateChange((event, session) => {
+  if (event === 'SIGNED_OUT') keepRefreshToken(null);
+  else if (session != null) keepRefreshToken(session);
+});
+
+/** The session a previous install left in the Keychain, if the server still takes it. */
+async function sessionFromKeychain(client: SupabaseClient): Promise<string | null> {
+  const store = secureStore();
+  if (store == null) return null;
+  const token = await store.getItemAsync(KEYCHAIN_KEY).catch(() => null);
+  if (token == null) return null;
+  const { data, error } = await client.auth.refreshSession({ refresh_token: token });
+  if (error != null) return null;
+  return data.session?.user.id ?? null;
+}
+
+/** Whether the current session is the device's anonymous one, not an account. */
+export async function isAnonymousSession(): Promise<boolean> {
+  if (supabase == null) return false;
+  const { data } = await supabase.auth.getSession();
+  return data.session?.user.is_anonymous ?? true;
+}
+
 /**
  * Signs in anonymously, once, and hands back the user id.
  *
@@ -84,6 +141,10 @@ export function currentUserId(): Promise<string | null> {
 
     const { data } = await client.auth.getSession();
     if (data.session?.user.id != null) return data.session.user.id;
+
+    // A reinstall: the old identity, if the Keychain kept its key.
+    const restored = await sessionFromKeychain(client);
+    if (restored != null) return restored;
 
     const { data: created, error } = await client.auth.signInAnonymously();
     if (error != null) {

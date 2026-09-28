@@ -18,7 +18,8 @@ export const PROGRESS_ES = {
   'progress.scoreA11y': '{score} de 100',
   'progress.scoreTitle': '¡Lo estás haciendo genial!',
   'progress.scoreStreak': { one: '¡Racha de {count} día!', other: '¡Racha de {count} días!' },
-  'progress.scoreNote': 'Sigue así para terminar el bloque {block}.',
+  'progress.scoreNote': 'Sigue así: esta semana trabaja en «{goal}».',
+  'progress.scoreNoteNoGoal': 'Sigue así: el plan se ajusta sobre la marcha.',
 
   // ── Performance card ─────────────────────────────────────────────────────
   'progress.performance': 'Rendimiento',

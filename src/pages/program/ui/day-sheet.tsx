@@ -85,6 +85,11 @@ export type DaySheetProps = {
    * including today's — there is nothing to wait for on a day already open.
    */
   unlockAt?: number | null;
+  /**
+   * The weekly plan's version: its own count, "Week 5" over the focus goal in
+   * place of "Day 15" over the block, and the preview note for a day ahead.
+   */
+  week?: { moves: number; stat: string; statLabel: string; note?: string };
 };
 
 /**
@@ -99,7 +104,7 @@ export type DaySheetProps = {
  * day has no figure and the sheet closes up around the gap — see `kind-art.ts`
  * for why recovery is deliberately unillustrated.
  */
-export function DaySheet({ day, status, onClose, onStart, unlockAt }: DaySheetProps) {
+export function DaySheet({ day, status, onClose, onStart, unlockAt, week }: DaySheetProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -160,7 +165,7 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt }: DaySheetPr
 
   const art = artFor(shown.day.kind);
   const retest = shown.day.checkpoint;
-  const moves = retest ? RETEST_TESTS : movePlanFor(shown.day).length;
+  const moves = retest ? RETEST_TESTS : week != null ? week.moves : movePlanFor(shown.day).length;
   const minutes = retest ? RETEST_MINUTES : shown.day.minutes;
   /** Only today can be begun. Every other card in the list carries a padlock,
    * and a sheet that offered to start a locked day would be contradicting the
@@ -223,10 +228,14 @@ export function DaySheet({ day, status, onClose, onStart, unlockAt }: DaySheetPr
               {/* The block's name is still English — `blockName()` in
                   `entities/program` reads a plain table, not the catalogue. */}
               <Stat
-                value={t('session.day', { day: shown.day.day })}
-                label={blockName(shown.day.block)}
+                value={week != null ? week.stat : t('session.day', { day: shown.day.day })}
+                label={week != null ? week.statLabel : blockName(shown.day.block)}
               />
             </View>
+
+            {week?.note != null && (
+              <Text style={[styles.date, { color: meter.caption, textAlign: 'center' }]}>{week.note}</Text>
+            )}
 
             {startable && (
               <PrimaryButton label={t('pages.program.getStarted')} onPress={onStart} />

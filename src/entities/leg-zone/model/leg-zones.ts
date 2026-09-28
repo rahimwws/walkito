@@ -185,3 +185,51 @@ export function toggleZone(
   if (current.length >= MAX_ZONES) return null;
   return [...current, zone];
 }
+
+/** A complaint the way a person says it: "heel", "foot", "achilles", "calf", "shin". */
+export type PainArea = 'heel' | 'foot' | 'achilles' | 'calf' | 'shin';
+
+/**
+ * Zone to complaint.
+ *
+ * Grouped the way a person would describe it, not the way the drawing is cut:
+ * the arch, the ball, the toes and the inner ankle are all "my foot hurts" to
+ * somebody who has not been told otherwise, and the inner ankle is where the
+ * tendon that holds the arch up runs.
+ */
+export const PAIN_AREA_OF: Readonly<Record<LegZone, PainArea>> = {
+  heel: 'heel',
+  arch: 'foot',
+  ball: 'foot',
+  toes: 'foot',
+  dorsum: 'foot',
+  ankle: 'foot',
+  inner_ankle: 'foot',
+  achilles: 'achilles',
+  calf: 'calf',
+  soleus: 'calf',
+  tibia: 'shin',
+  tib_ant: 'shin',
+};
+
+const AREAS: readonly string[] = ['heel', 'foot', 'achilles', 'calf', 'shin'];
+
+/**
+ * The complaints in a stored pain answer, first touched first, each once.
+ *
+ * Takes either shape, because both are stored: onboarding saves complaints
+ * ("heel", "foot") and the map in Settings saves zones ("arch", "tibia").
+ * Anything else — `none`, an old value — is dropped.
+ */
+export function painAreasOf(values: readonly string[]): PainArea[] {
+  const out: PainArea[] = [];
+  for (const value of values) {
+    const area = Object.prototype.hasOwnProperty.call(PAIN_AREA_OF, value)
+      ? PAIN_AREA_OF[value as LegZone]
+      : AREAS.includes(value)
+        ? (value as PainArea)
+        : null;
+    if (area != null && !out.includes(area)) out.push(area);
+  }
+  return out;
+}

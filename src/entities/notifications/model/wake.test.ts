@@ -14,6 +14,7 @@ const BLANK: Omit<DailyMetric, 'date'> = {
   restingHR: null,
   flights: null,
   longestRunKm: null,
+  lastRunEndAt: null,
   hoursOnFeet: null,
 };
 

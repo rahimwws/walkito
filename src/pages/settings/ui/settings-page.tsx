@@ -1,13 +1,15 @@
 import ArrowUpRight01Icon from '@hugeicons/core-free-icons/ArrowUpRight01Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { LanguageOptions } from '@/features/language-switch';
 import { LEGAL, fonts, meterColors, palette } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+
+import { PlanSettings } from './plan-settings';
 
 /**
  * Language, then what App Review asks to be findable.
@@ -49,11 +51,14 @@ export function SettingsPage() {
   };
 
   return (
-    <View style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, 20) + 8 }]}>
+    // Scrolls now: the plan section made the sheet taller than a small phone.
+    <ScrollView contentContainerStyle={[styles.sheet, { paddingBottom: Math.max(insets.bottom, 20) + 8 }]}>
       <Text style={[styles.title, { color: colors.foreground }]}>{t('settings.title')}</Text>
 
       <Text style={[styles.sectionTitle, { color: meter.caption }]}>{t('language.title')}</Text>
       <LanguageOptions />
+
+      <PlanSettings />
 
       <View style={[styles.list, { backgroundColor: meter.track }]}>
         {LINKS.map((link, index) => {
@@ -97,7 +102,7 @@ export function SettingsPage() {
       </View>
 
       <Text style={[styles.disclaimer, { color: meter.unit }]}>{t('settings.disclaimer')}</Text>
-    </View>
+    </ScrollView>
   );
 }
 
@@ -107,11 +112,8 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 12,
     fontFamily: fonts.bold,
-    letterSpacing: 0.6,
+    letterSpacing: 0.1,
     marginBottom: 8,
-    // Cased in the style rather than with `toUpperCase()`, so the catalogue
-    // keeps the form a translator wrote and casing stays a display decision.
-    textTransform: 'uppercase',
   },
   list: { borderRadius: 22, borderCurve: 'continuous', overflow: 'hidden', marginTop: 24 },
   row: {

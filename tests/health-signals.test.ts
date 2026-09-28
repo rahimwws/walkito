@@ -37,6 +37,7 @@ const BLANK: Omit<DailyMetric, 'date'> = {
   restingHR: null,
   flights: null,
   longestRunKm: null,
+  lastRunEndAt: null,
   hoursOnFeet: null,
 };
 
@@ -353,5 +354,16 @@ describe('runs', () => {
     expect(s.longestRunYesterdayKm).toBe(15);
     expect(s.runMax28Km).toBe(10);
     expect(s.bigRunYesterday).toBe(true);
+  });
+});
+
+describe('the last run', () => {
+  test('ends today if there was one today, else yesterday, else nothing', () => {
+    const today = 1_700_000_000_000;
+    const yesterday = today - 86_400_000;
+    const n = 30;
+    expect(signalsFrom(days(n, (i) => (i === n - 1 ? { lastRunEndAt: today } : i === n - 2 ? { lastRunEndAt: yesterday } : {}))).lastRunEndedAt).toBe(today);
+    expect(signalsFrom(days(n, (i) => (i === n - 2 ? { lastRunEndAt: yesterday } : {}))).lastRunEndedAt).toBe(yesterday);
+    expect(signalsFrom(days(n, () => ({}))).lastRunEndedAt).toBeNull();
   });
 });

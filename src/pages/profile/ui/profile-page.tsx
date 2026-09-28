@@ -210,7 +210,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   const meter = meterColors[scheme];
   return (
     <View style={styles.section}>
-      <Text style={[styles.sectionTitle, { color: meter.caption }]}>{title.toUpperCase()}</Text>
+      <Text style={[styles.sectionTitle, { color: meter.caption }]}>{title}</Text>
       <View style={[styles.card, { backgroundColor: meter.track }]}>{children}</View>
     </View>
   );
@@ -268,7 +268,7 @@ const styles = StyleSheet.create({
   statValue: { fontSize: 30, fontFamily: fonts.heavy, letterSpacing: -0.8 },
   statLabel: { fontSize: 13, fontFamily: fonts.medium, marginTop: 2 },
   section: { marginTop: 28 },
-  sectionTitle: { fontSize: 12, fontFamily: fonts.bold, letterSpacing: 0.6, marginBottom: 8 },
+  sectionTitle: { fontSize: 12, fontFamily: fonts.bold, letterSpacing: 0.1, marginBottom: 8 },
   card: { borderRadius: 22, borderCurve: 'continuous', overflow: 'hidden' },
   row: {
     flexDirection: 'row',

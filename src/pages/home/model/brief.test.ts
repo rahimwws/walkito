@@ -355,7 +355,7 @@ describe('numbers follow the language', () => {
       hoursOnFeet: null,
       health: { ...READY, bigRunYesterday: true },
     };
-    expect(say(briefTokens(input, 'en'))).toContain('—');
+    expect(say(briefTokens(input, 'en'))).toContain('-');
   });
 });
 

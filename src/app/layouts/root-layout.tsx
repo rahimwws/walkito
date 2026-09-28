@@ -12,6 +12,10 @@ import {
   usePendingOfferPresenter,
   useHealthPipeline,
   useNotificationScheduler,
+  usePlanGoals,
+  usePlanSync,
+  useAppUsage,
+  useReviewAtWin,
   useProgramClock,
   useClipPrefetch,
   useLiveActivityCleanup,
@@ -21,6 +25,7 @@ import {
   useQuickActions,
 } from '@/app/providers';
 import { UpdateSheet, useAppUpdates } from '@/features/app-update';
+import { useHomeWidget } from '@/features/home-widget';
 import { useBrowsingLapsed, useEntitled, useProgramLapsed } from '@/entities/purchase';
 import { useOnboarded } from '@/entities/session';
 import { fontAssets } from '@/shared/config';
@@ -119,6 +124,13 @@ function RootLayoutInner() {
   useQuickActions();
   // Moves the plan's "today" on when the app is brought back after midnight.
   useProgramClock();
+  // The weekly plan's goals, from onboarding's answers, kept current.
+  usePlanGoals(onboarded);
+  // The plan copied to Supabase in the background; local stays the record.
+  usePlanSync(onboarded);
+  useAppUsage();
+  // Apple's review prompt, at a win only — never during onboarding.
+  useReviewAtWin(onboarded);
   // Fills the local health cache in the background. Never awaited and never
   // rendered — every screen reads the cache, which always has an answer.
   useHealthPipeline();
@@ -149,6 +161,8 @@ function RootLayoutInner() {
   // Not during onboarding: the first minutes are not the moment to ask for a
   // restart.
   const update = useAppUpdates(onboarded);
+  // The home-screen widget: reads back answers given on it, then redraws it.
+  useHomeWidget(onboarded);
 
   // Interactive once the fonts have resolved and the first real screen has had
   // a frame to paint — the end of the `tti` measurement in EAS Observe.

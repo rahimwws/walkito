@@ -58,7 +58,7 @@ if (serviceKey == null || serviceKey.length === 0) {
 /** What the app expects to find, read from the module the app itself uses. */
 function manifest() {
   const source = readFileSync(
-    join(ROOT, 'src/widgets/session-player/config/clip-manifest.ts'),
+    join(ROOT, 'src/shared/config/clip-manifest.ts'),
     'utf8',
   );
   const rows = [

@@ -156,6 +156,8 @@ export type OnboardingStep = StepBase &
     /** The notification ask, straight after Health — the two permissions the
      * app needs, asked back to back while the reason for both is fresh. */
     | { kind: 'notify' }
+    /** The daily reminder's time, on the system's own wheel. */
+    | { kind: 'reminder' }
     /** The plan being assembled: a photograph, a line that fills, and the
      * button on. Owns the whole screen. */
     /** The liquid-glass gate that opens the app. */
@@ -349,6 +351,12 @@ export const STEPS: readonly OnboardingStep[] = [
       { value: 'consistent', label: (t) => t('onboarding.goal.consistent'), icon: ChartIncreaseIcon, accent: 'blue' },
       { value: 'stronger', label: (t) => t('onboarding.goal.stronger'), icon: Dumbbell01Icon, accent: 'orange' },
       { value: 'injuryfree', label: (t) => t('onboarding.goal.injuryfree'), icon: Target01Icon, accent: 'amber' },
+      { value: 'flatfeet', label: (t) => t('onboarding.goal.flatfeet'), icon: FootprintsIcon, accent: 'teal' },
+      { value: 'ankles', label: (t) => t('onboarding.goal.ankles') },
+      { value: 'jump', label: (t) => t('onboarding.goal.jump') },
+      { value: 'allday', label: (t) => t('onboarding.goal.allday') },
+      { value: 'comeback', label: (t) => t('onboarding.goal.comeback') },
+      { value: 'steady', label: (t) => t('onboarding.goal.steady') },
     ],
   },
   {
@@ -500,6 +508,52 @@ export const STEPS: readonly OnboardingStep[] = [
     act: 2,
     title: (t) => t('onboarding.notify.title'),
     blurb: (t) => t('onboarding.notify.blurb'),
+  },
+  {
+    kind: 'reminder',
+    key: 'reminder',
+    act: 2,
+    title: (t) => t('onboarding.reminder.title'),
+    blurb: (t) => t('onboarding.reminder.blurb'),
+  },
+  // What the plan is built around, asked right before it is built: the same
+  // four things Settings lets them change later, so the first week is already
+  // theirs rather than a default they have to go and fix.
+  {
+    kind: 'choice',
+    key: 'planDays',
+    act: 3,
+    title: (t) => t('onboarding.days.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.days.blurb'),
+    options: (['days3', 'days5', 'days7'] as const).map((value) => ({
+      value,
+      label: (t: Translate) => t(`onboarding.days.${value}`),
+      caption: (t: Translate) => t(`onboarding.days.${value}Caption`),
+    })),
+  },
+  {
+    kind: 'choice',
+    key: 'planMinutes',
+    act: 3,
+    title: (t) => t('onboarding.minutes.title'),
+    blurb: (t) => t('onboarding.minutes.blurb'),
+    options: (['min3', 'min5', 'min10'] as const).map((value) => ({
+      value,
+      label: (t: Translate) => t(`onboarding.minutes.${value}`),
+      caption: (t: Translate) => t(`onboarding.minutes.${value}Caption`),
+    })),
+  },
+  {
+    kind: 'choice',
+    key: 'equipment',
+    act: 3,
+    title: (t) => t('onboarding.equipment.title'),
+    blurb: (t) => t('onboarding.equipment.blurb'),
+    multi: true,
+    options: (['step', 'band', 'towel', 'pillow', 'ball', 'none'] as const).map((value) => ({
+      value,
+      label: (t: Translate) => t(`onboarding.equipment.${value}`),
+    })),
   },
   {
     kind: 'building',

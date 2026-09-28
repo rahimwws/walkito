@@ -22,8 +22,8 @@ export const OFFER_ES = {
   'offer.featureProgressBlurb': 'Mira cómo sube tu preparación semana a semana.',
 
   // ── Paywall: headline ────────────────────────────────────────────────────
-  'offer.limited': 'LIMITADO — SOLO UNA VEZ',
-  'offer.inviteBadge': 'TU PRECIO POR INVITACIÓN',
+  'offer.limited': 'Limitado - solo una vez',
+  'offer.inviteBadge': 'Tu precio por invitación',
   'offer.headlineInvite': 'Tu precio por invitación en el programa de 12 semanas',
   'offer.headlineComeback': 'Tu precio de vuelta al programa de 12 semanas',
   'offer.headlineSave': {
@@ -119,6 +119,12 @@ export const OFFER_ES = {
   'widgets.retestGoal.stronger': 'Querías ser más fuerte. Aquí es donde se nota primero.',
   'widgets.retestGoal.injuryfree': 'Querías evitar lesiones. Un pie que se mide más fuerte es más difícil de lesionar.',
 
+  'widgets.retestGoal.flatfeet': 'Viniste a poner tus pies planos bajo control. Un arco más fuerte y un equilibrio más estable es donde se nota.',
+  'widgets.retestGoal.ankles': 'Querías tobillos más estables. El equilibrio es donde se nota primero.',
+  'widgets.retestGoal.jump': 'Querías saltar más alto. Una pantorrilla fuerte es el muelle detrás del salto.',
+  'widgets.retestGoal.allday': 'Querías aguantar el día de pie. Un arco fuerte es lo que sostiene hora tras hora.',
+  'widgets.retestGoal.comeback': 'Vuelves tras una lesión. La diferencia entre tus piernas es la cifra a seguir.',
+  'widgets.retestGoal.steady': 'Querías caminar con seguridad. El equilibrio y un pie fuerte son cómo se siente.',
   // ── Session player: the counter line ─────────────────────────────────────
   // Una palabra por fase: se lee a dos metros y cambia cada tres segundos.
   'widgets.phaseUp': 'Sube',
@@ -154,6 +160,10 @@ export const OFFER_ES = {
   'widgets.sessionDoneTitle': 'Buen trabajo.',
   'widgets.sessionStoppedTitle': 'Paramos aquí.',
   'widgets.sessionStoppedBlurb': 'La sesión de hoy cuenta igual. Mañana empezamos un paso más suave.',
+  'widgets.feelQuestion': '¿Qué tal se sintió?',
+  'widgets.feelEasy': 'Fácil',
+  'widgets.feelOk': 'Bien',
+  'widgets.feelHard': 'Difícil',
 
   'widgets.painButton': 'Duele',
   'widgets.painTitle': '¿Cuánto, ahora mismo?',

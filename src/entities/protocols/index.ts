@@ -20,3 +20,6 @@ export {
   recommendProtocol,
   type NowFacts,
 } from './model/recommend';
+
+export { PROTOCOL_ART, PROTOCOL_ICONS } from './config/art';
+export { clearProtocolRequest, requestProtocol, useProtocolRequest } from './model/request';

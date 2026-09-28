@@ -35,6 +35,11 @@ export const BRIEF_STATES = [
   'retest',
   'checkpoint-recap',
   'first-week',
+  // The weekly plan: a goal reached, a day missed, a test close, something new.
+  'goal-reached',
+  'missed-yesterday',
+  'test-soon',
+  'new-this-week',
   // Load, from what actually happened.
   'big-run',
   'stairs',
@@ -153,7 +158,42 @@ export type BriefInput = {
   goal?: string | null;
   /** The sport that loads their legs, from onboarding. */
   sport?: string | null;
+  /** Yesterday had a planned session and nothing was done. Never counted beyond one. */
+  missedYesterday?: boolean;
+  /** Days until the next test, when one is on this week's plan. */
+  daysToTest?: number | null;
+  /** The exercise new to the plan this week, already titled. */
+  newThisWeek?: string | null;
+  /**
+   * Whether today is a test day on the weekly plan. When given, it replaces the
+   * fixed program's checkpoint days, which no longer say when a test is due.
+   */
+  testToday?: boolean;
+  /** A goal reached this week and the one that follows it, already named. */
+  goalReached?: { goal: string; next: string } | null;
+  /**
+   * Today from the weekly plan. When given, it replaces the fixed program as
+   * the source of the day's work, the week's name for itself and the retest's
+   * "it's been N weeks".
+   */
+  plan?: WeekBrief;
 };
+
+export type WeekBrief = {
+  /** The week's focus goal, already named. */
+  focus: string | null;
+  kind: 'strength' | 'mobility' | 'balance' | 'recovery' | null;
+  minutes: number;
+  /** Today's exercise titles, in order. */
+  moves: readonly string[];
+  /** Today is the Monday a week opens on. */
+  weekStart: boolean;
+  /** Whole weeks since the last test, when there has been one. */
+  weeksSinceTest: number | null;
+};
+
+/** A test this close gets a line of its own. */
+export const TEST_SOON_DAYS = 3;
 
 /** A personal line lands on every third quiet day — often enough to be
  * noticed as theirs, rarely enough not to become the new "same line forever". */
@@ -249,6 +289,12 @@ export function readBrief({
   onFeetThreshold = null,
   goal = null,
   sport = null,
+  missedYesterday = false,
+  daysToTest = null,
+  newThisWeek = null,
+  goalReached = null,
+  testToday,
+  plan,
 }: BriefInput): BriefReading {
   const day: ProgramDay | undefined = PROGRAM[cursor];
   const pain = todayPain ?? painFor(cursor);
@@ -272,11 +318,21 @@ export function readBrief({
   // programme this length, not arbitrary ones, so they get to interrupt.
   // Day one is the baseline: the same three tests, but nothing has elapsed to
   // look back on, so it has its own line. Once taken, the day is simply done.
-  if (day?.checkpoint === true && cursor === 0) {
+  const checkpoint = testToday ?? day?.checkpoint === true;
+  if (checkpoint && cursor === 0) {
     if (!doneToday) return reading('baseline');
-  } else if (day?.checkpoint === true) {
+  } else if (checkpoint) {
     return reading('retest');
   }
+
+  // --- The weekly plan ---------------------------------------------------
+  // A goal reached outranks everything short of pain: it is the moment the
+  // plan exists for. A missed day is next, and is said once and kindly — never
+  // as a count. Then a test that is close, then what is new this week.
+  if (goalReached != null) return reading('goal-reached');
+  if (missedYesterday && !doneToday) return reading('missed-yesterday');
+  if (daysToTest != null && daysToTest > 0 && daysToTest <= TEST_SOON_DAYS) return reading('test-soon');
+  if (newThisWeek != null && !doneToday) return reading('new-this-week');
 
   // --- 5-7. Load, from what actually happened ----------------------------
   // A single run longer than anything in the past month. Per-session, because
@@ -327,7 +383,12 @@ export function readBrief({
   // A block boundary is a real change of character in the plan. Asked of the
   // blocks themselves rather than of the day number modulo a length, because
   // that arithmetic only agrees while every block is the same size.
-  if (quiet && day != null && PLAN_BLOCKS.some((block) => block.startDay === day.day)) {
+  // With the weekly plan, the change of character is a new week: Monday,
+  // named by what it works on. The fixed program's block seams are the
+  // fallback for a caller that does not pass a week.
+  if (plan != null) {
+    if (quiet && plan.weekStart && plan.focus != null) return reading('checkpoint-recap');
+  } else if (quiet && day != null && PLAN_BLOCKS.some((block) => block.startDay === day.day)) {
     return reading('checkpoint-recap');
   }
 

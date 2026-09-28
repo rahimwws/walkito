@@ -26,7 +26,8 @@ export const PROGRESS_EN = {
   'progress.scoreStreak': { one: '{count} day streak!', other: '{count} days streak!' },
   /** `{block}` is the block's name, which `blockName()` in `entities/program`
    * still returns in English only. See the report note. */
-  'progress.scoreNote': 'Keep it up to finish the {block} block.',
+  'progress.scoreNote': 'Keep it up - this week works on {goal}.',
+  'progress.scoreNoteNoGoal': 'Keep it up - the plan adjusts as you go.',
 
   // ── Performance card ─────────────────────────────────────────────────────
   'progress.performance': 'Performance',

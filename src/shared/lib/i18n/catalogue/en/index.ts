@@ -8,6 +8,7 @@ import { PAGES_EN } from './pages';
 import { PROFILE_EN } from './profile';
 import { PROGRESS_EN } from './progress';
 import { QUICK_EN } from './quick';
+import { WIDGET_EN } from './widget';
 
 /**
  * English, assembled from its domain files.
@@ -32,4 +33,5 @@ export const en = {
   ...NOTIFICATIONS_EN,
   ...EXERCISES_EN,
   ...PAGES_EN,
+  ...WIDGET_EN,
 };

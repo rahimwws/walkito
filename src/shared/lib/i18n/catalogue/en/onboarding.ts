@@ -60,7 +60,6 @@ export const ONBOARDING_EN = {
    * nothing here the user did wrong. */
   'onboarding.intro.signInFailed': 'Sign-in didn’t complete. Try again.',
   'onboarding.intro.emailCta': 'Sign in with email',
-  'onboarding.intro.skip': 'Skip for now',
 
   // ── Email sign-in sheet ──────────────────────────────────────────────────
   'onboarding.email.title': 'Sign in',
@@ -119,7 +118,38 @@ export const ONBOARDING_EN = {
   'onboarding.goal.consistent': 'Run more consistently',
   'onboarding.goal.stronger': 'Build stronger legs',
   'onboarding.goal.injuryfree': 'Stay injury-free',
-
+  'onboarding.goal.flatfeet': 'Fix my flat feet',
+  'onboarding.goal.ankles': 'Steadier ankles',
+  'onboarding.goal.jump': 'Jump higher',
+  'onboarding.goal.allday': 'Stay on my feet all day',
+  'onboarding.goal.comeback': 'Come back after an injury',
+  'onboarding.goal.steady': 'Walk with confidence',
+  'onboarding.days.title': 'How many days a week, {name}?',
+  'onboarding.days.blurb': 'Short sessions. Rest days are part of the plan, not a gap in it.',
+  'onboarding.days.days3': '3 days',
+  'onboarding.days.days3Caption': 'An easy start',
+  'onboarding.days.days5': '5 days',
+  'onboarding.days.days5Caption': 'Recommended',
+  'onboarding.days.days7': 'Every day',
+  'onboarding.days.days7Caption': 'Short and daily',
+  'onboarding.minutes.title': 'How long per session?',
+  'onboarding.minutes.blurb': 'Change it any day - busy days still count.',
+  'onboarding.minutes.min3': '3 minutes',
+  'onboarding.minutes.min3Caption': 'Even on busy days',
+  'onboarding.minutes.min5': '5 minutes',
+  'onboarding.minutes.min5Caption': 'Recommended',
+  'onboarding.minutes.min10': '10 minutes',
+  'onboarding.minutes.min10Caption': 'For faster progress',
+  'onboarding.equipment.title': 'What do you have at home?',
+  'onboarding.equipment.blurb': 'Exercises that need something you don’t have are left out of your plan.',
+  'onboarding.equipment.step': 'A step or stairs',
+  'onboarding.equipment.band': 'Resistance band',
+  'onboarding.equipment.towel': 'Towel',
+  'onboarding.equipment.pillow': 'Pillow',
+  'onboarding.equipment.ball': 'Massage ball',
+  'onboarding.equipment.none': 'None of these',
+  'onboarding.reminder.title': 'When should we remind you?',
+  'onboarding.reminder.blurb': 'One reminder a day. Pick a time you usually have five free minutes.',
   // ── Pain ─────────────────────────────────────────────────────────────────
   'onboarding.pain.title': 'Where does it usually hurt, {name}?',
   /** `{count}` is the most the map takes at once — three. */
@@ -156,13 +186,13 @@ export const ONBOARDING_EN = {
   'onboarding.load.blurbMonth': 'Your honest current month, not your best one.',
   'onboarding.load.titleRunning': 'How much are you running now, {name}?',
   'onboarding.load.titleTennis': 'How much are you on court, {name}?',
-  'onboarding.load.blurbTennis': 'Matches and practice together — the honest week.',
+  'onboarding.load.blurbTennis': 'Matches and practice together - the honest week.',
   'onboarding.load.titleGym': 'How much are you training, {name}?',
   'onboarding.load.blurbGym': 'Time under load, not time in the building.',
   'onboarding.load.titleFootball': 'How much are you playing, {name}?',
-  'onboarding.load.blurbFootball': 'Matches and training together — the honest week.',
+  'onboarding.load.blurbFootball': 'Matches and training together - the honest week.',
   'onboarding.load.titleBasketball': 'How much are you playing, {name}?',
-  'onboarding.load.blurbBasketball': 'Games and practice together — the honest week.',
+  'onboarding.load.blurbBasketball': 'Games and practice together - the honest week.',
   'onboarding.load.titleCycling': 'How much are you riding, {name}?',
   'onboarding.load.titleHiking': 'How much are you hiking, {name}?',
   /** Distance bands. `{unit}` so the scale can change without the five labels
@@ -207,7 +237,7 @@ export const ONBOARDING_EN = {
   'onboarding.source.other': 'Somewhere else',
   /** Said when the cap pushed an earlier answer off the list. It reports what
    * happened; it does not tell anyone off. */
-  'onboarding.challenge.swapped': 'Only {count} at a time — {label} was swapped out.',
+  'onboarding.challenge.swapped': 'Only {count} at a time - {label} was swapped out.',
 
   // ── Health ───────────────────────────────────────────────────────────────
   'onboarding.health.title': 'Connect your Health data',
@@ -215,7 +245,7 @@ export const ONBOARDING_EN = {
   'onboarding.health.askNamed': 'Fill me in, {name}!',
   'onboarding.health.ask': 'Fill me in!',
   'onboarding.health.askBlurb':
-    'Walkito reads your steps, energy and heart rate so the plan starts from what you have actually been doing — not what you meant to do.',
+    'Walkito reads your steps, energy and heart rate so the plan starts from what you have actually been doing - not what you meant to do.',
   'onboarding.health.steps': 'Steps',
   'onboarding.health.calories': 'Active Energy',
   'onboarding.health.heartRate': 'Heart Rate',
@@ -229,9 +259,9 @@ export const ONBOARDING_EN = {
   /** The objection every user has at this exact moment, answered before they
    * can voice it. */
   'onboarding.health.promise': 'Your health data never leaves this device.',
-  'onboarding.health.unavailable': 'Health isn’t available here — you can carry on without it.',
+  'onboarding.health.unavailable': 'Health isn’t available here - you can carry on without it.',
   'onboarding.health.declined': 'Health access was declined. Your plan will work without it.',
-  'onboarding.health.empty': 'Connected — no data yet. It will fill in as you move.',
+  'onboarding.health.empty': 'Connected - no data yet. It will fill in as you move.',
 
   // ── Watch ────────────────────────────────────────────────────────────────
   'onboarding.watch.title': 'Do you wear a watch?',
@@ -269,15 +299,15 @@ export const ONBOARDING_EN = {
     'A plan only works if it turns up. Let Walkito tell you when today has a session in it.',
   'onboarding.notify.promise1': 'A nudge on the days your plan has a session',
   'onboarding.notify.promise2': 'A heads-up when it changes what you are doing',
-  'onboarding.notify.promise3': 'And now and then a discount — nothing more.',
+  'onboarding.notify.promise3': 'And now and then a discount - nothing more.',
   /** The mock banner. `bannerApp` is the app's own name and stays as it is. */
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'now',
-  'onboarding.notify.bannerBody': 'Today is foot strength — 7 minutes. Your shins will thank you.',
+  'onboarding.notify.bannerBody': 'Today is foot strength - 7 minutes. Your shins will thank you.',
   'onboarding.notify.turnOn': 'Turn on notifications',
   'onboarding.notify.opening': 'Opening…',
   'onboarding.notify.notNow': 'Not now',
-  'onboarding.notify.declined': 'No problem — you can turn these on later in Settings.',
+  'onboarding.notify.declined': 'No problem - you can turn these on later in Settings.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.title': 'Building your plan',
@@ -320,6 +350,7 @@ export const ONBOARDING_EN = {
   // ── Plan ─────────────────────────────────────────────────────────────────
   'onboarding.plan.title': 'Your plan',
   'onboarding.plan.blurb': 'Built from your answers.',
+  'onboarding.plan.recommended': 'Recommended',
   /**
    * The headline figure. A plural entry on the weeks, which is the number that
    * moves — `{sessions}` is the three loaded days the protocol is built on and
@@ -359,10 +390,10 @@ export const ONBOARDING_EN = {
   /** The rubber stamp. Two bottom lines because it is set as two stacked rows
    * of small caps — each language splits its own phrase across them, and the
    * halves are not the same halves. Keep them short: the ring is 132pt wide. */
-  'onboarding.contract.stampTop': '★ WALKITO ★',
-  'onboarding.contract.stampText': 'COMMITTED',
-  'onboarding.contract.stampLine1': 'PAIN-FREE',
-  'onboarding.contract.stampLine2': 'RUNNING',
+  'onboarding.contract.stampTop': '★ Walkito ★',
+  'onboarding.contract.stampText': 'Committed',
+  'onboarding.contract.stampLine1': 'Pain-free',
+  'onboarding.contract.stampLine2': 'Running',
   'onboarding.contract.noteNamed': '{name}, your signature stays on this device.',
   'onboarding.contract.note': 'Your signature stays on this device.',
 
@@ -389,7 +420,7 @@ export const ONBOARDING_EN = {
   'onboarding.testimonial1.name': 'Every morning',
   'onboarding.testimonial2.before': 'Short, guided moves you can do',
   'onboarding.testimonial2.lead': 'at home or at work',
-  'onboarding.testimonial2.after': ' — a floor and a wall are enough.',
+  'onboarding.testimonial2.after': ' - a floor and a wall are enough.',
   'onboarding.testimonial2.name': 'Every session',
   'onboarding.testimonial3.before': 'A one-minute retest',
   'onboarding.testimonial3.lead': 'shows what actually changed',

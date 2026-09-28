@@ -32,10 +32,10 @@ export const OFFER_EN = {
   'offer.featureProgressBlurb': 'Watch your readiness climb week by week.',
 
   // ── Paywall: headline ────────────────────────────────────────────────────
-  'offer.limited': 'LIMITED — ONE TIME ONLY',
+  'offer.limited': 'Limited - one time only',
   /** Instead of the one-time badge, for the price an invite earned. It holds
    * on every visit, so it must not claim to be limited. */
-  'offer.inviteBadge': 'YOUR INVITE PRICE',
+  'offer.inviteBadge': 'Your invite price',
   'offer.headlineInvite': 'Your invite price on the 12-week program',
   'offer.headlineComeback': 'Your comeback price on the 12-week program',
   /** Plural on the months rather than a bare `{months}`: Russian inflects the
@@ -131,8 +131,8 @@ export const OFFER_EN = {
   'widgets.retestEntryBlurb': 'Count what you just did. Honest numbers make the next retest mean something.',
   'widgets.retestLeft': 'Left leg',
   'widgets.retestRight': 'Right leg',
-  'widgets.retestLeftSore': 'Left leg — the sore one',
-  'widgets.retestRightSore': 'Right leg — the sore one',
+  'widgets.retestLeftSore': 'Left leg - the sore one',
+  'widgets.retestRightSore': 'Right leg - the sore one',
   'widgets.retestSeconds': 'Seconds',
   'widgets.retestLess': 'Less',
   'widgets.retestMore': 'More',
@@ -155,6 +155,12 @@ export const OFFER_EN = {
   'widgets.retestGoal.stronger': 'You wanted to get stronger. This is where it shows first.',
   'widgets.retestGoal.injuryfree': 'You wanted to stay injury-free. A foot that tests stronger is harder to hurt.',
 
+  'widgets.retestGoal.flatfeet': 'You came here to get your flat feet under control. A stronger arch and steadier balance are how that shows.',
+  'widgets.retestGoal.ankles': 'You wanted steadier ankles. Balance is where that shows first.',
+  'widgets.retestGoal.jump': 'You wanted to jump higher. A stronger calf is the spring behind it.',
+  'widgets.retestGoal.allday': 'You wanted to get through the day on your feet. A stronger arch is what holds up hour after hour.',
+  'widgets.retestGoal.comeback': 'You came back from an injury. The gap between your legs is the number to watch.',
+  'widgets.retestGoal.steady': 'You wanted to walk with confidence. Balance and a strong foot are how that feels.',
   // ── Session player: the counter line ─────────────────────────────────────
   // One word each, because this is read at two metres by somebody already
   // moving and it changes every three seconds.
@@ -188,7 +194,7 @@ export const OFFER_EN = {
 
   // ── Session player: the card and the transport ───────────────────────────
   'widgets.clipFailed': 'Video didn’t load. The instructions still apply.',
-  'widgets.lockScreenHint': 'Lock your phone — the timer keeps going',
+  'widgets.lockScreenHint': 'Lock your phone - the timer keeps going',
   'widgets.expandDemo': 'Expand demonstration',
   'widgets.collapseDemo': 'Collapse demonstration',
   'widgets.sessionContinue': 'Continue',
@@ -202,9 +208,14 @@ export const OFFER_EN = {
 
   // ── Session player: the end of a session ─────────────────────────────────
   'widgets.sessionDoneTitle': 'Nice work.',
-  /** Stopped on a pain report at or above five. It counts, and it says so. */
+  /** Stopped on a pain report at or above six. It counts, and it says so. */
   'widgets.sessionStoppedTitle': 'Stopping here.',
   'widgets.sessionStoppedBlurb': 'It still counts as today’s session. Tomorrow starts one step back.',
+  /** Asked on the done sheet; the answer moves next week's progression. */
+  'widgets.feelQuestion': 'How did that feel?',
+  'widgets.feelEasy': 'Easy',
+  'widgets.feelOk': 'OK',
+  'widgets.feelHard': 'Hard',
 
   // ── Session player: "it hurts" ───────────────────────────────────────────
   'widgets.painButton': 'It hurts',

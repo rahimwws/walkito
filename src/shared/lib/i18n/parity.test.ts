@@ -145,7 +145,7 @@ describe('no empty strings', () => {
 describe('translator', () => {
   test('fills placeholders', () => {
     const t = translatorFor('en');
-    expect(t('language.systemHint', { language: 'Русский' })).toBe('Match device — Русский');
+    expect(t('language.systemHint', { language: 'Русский' })).toBe('Match device - Русский');
   });
 
   test('selects the English plural form', () => {
@@ -193,6 +193,6 @@ describe('translator', () => {
     // Cast past the parameter types on purpose — this is the runtime guard for
     // a call site that got past review with the wrong bag.
     const wrong = t as (key: 'language.systemHint', params: Record<string, string>) => string;
-    expect(wrong('language.systemHint', {})).toBe('Match device — {language}');
+    expect(wrong('language.systemHint', {})).toBe('Match device - {language}');
   });
 });

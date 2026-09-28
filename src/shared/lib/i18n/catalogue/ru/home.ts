@@ -80,6 +80,7 @@ export const HOME_RU = {
 
   // ── Today's list ─────────────────────────────────────────────────────────
   'home.tasksTitle': 'Задачи на сегодня',
+  'home.libraryTitle': 'Прямо сейчас',
   'home.allDoneTitle': 'На сегодня всё',
   'home.allDoneBlurb':
     'Больше ничего не нужно. Следующая сессия откроется через двенадцать часов отдыха.',
@@ -145,9 +146,9 @@ export const HOME_RU = {
   'home.rangeBelow': 'Ниже вашего обычного',
   'home.rangeWithin': 'В пределах вашего обычного',
   // Короче полной фразы: плашка узкая, а смысл целиком уходит в озвучку.
-  'home.rangeAboveChip': 'ВЫШЕ ОБЫЧНОГО',
-  'home.rangeBelowChip': 'НИЖЕ ОБЫЧНОГО',
-  'home.rangeWithinChip': 'КАК ОБЫЧНО',
+  'home.rangeAboveChip': 'Выше обычного',
+  'home.rangeBelowChip': 'Ниже обычного',
+  'home.rangeWithinChip': 'Как обычно',
   'home.usualRangeLegend': 'ОБЫЧНО {low}–{high}',
   'home.usualRangeA11y': 'Обычный диапазон, от {low} до {high}',
 
@@ -249,20 +250,45 @@ export const BRIEF_RU = {
 
   'checkpoint-recap': [
     [
-      { k: 'frame', text: 'сегодня начинается новый блок -' },
+      { k: 'frame', text: 'сегодня новая неделя. Цель:' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
-      { k: 'frame', text: 'Другая форма, другая нагрузка.' },
     ],
     // Хедж английского оригинала сохранён: «по исследованиям» и «около».
     [
-      { k: 'frame', text: 'сегодня новый блок. По исследованиям, около' },
+      { k: 'frame', text: 'сегодня новая неделя. По исследованиям, около' },
       { k: 'metric', icon: 'level', text: 'половины' },
       { k: 'frame', text: 'годового улучшения приходится на первые три месяца.' },
     ],
     [
-      { k: 'frame', text: 'вы перешли в блок' },
+      { k: 'frame', text: 'на этой неделе главная цель -' },
       { k: 'metric', icon: 'level', text: '{block}', tail: '.' },
-      { k: 'frame', text: 'Дальше работа меняет характер.' },
+      { k: 'frame', text: 'План построен вокруг неё.' },
+    ],
+  ],
+
+  'goal-reached': [
+    [
+      { k: 'metric', icon: 'up', text: '{goalDone}' },
+      { k: 'frame', text: '- готово. Дальше:' },
+      { k: 'metric', icon: 'level', text: '{nextGoal}', tail: '.' },
+    ],
+  ],
+  'missed-yesterday': [
+    [
+      { k: 'frame', text: 'вчера не получилось. Главное - не два дня подряд:' },
+      { k: 'metric', icon: 'session', text: '2 минуты', tail: ' сегодня?' },
+    ],
+  ],
+  'test-soon': [
+    [
+      { k: 'frame', text: 'до следующего теста' },
+      { k: 'metric', icon: 'retest', text: '{testIn}', tail: '.' },
+    ],
+  ],
+  'new-this-week': [
+    [
+      { k: 'frame', text: 'новое на этой неделе:' },
+      { k: 'metric', icon: 'session', text: '{newMove}', tail: '.' },
     ],
   ],
 

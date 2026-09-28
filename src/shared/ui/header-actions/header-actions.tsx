@@ -123,46 +123,13 @@ export function HeaderActions({
     <Animated.View style={[styles.climb, climb]}>
       <GlassContainer spacing={8} style={[styles.row, spread && styles.spread]}>
         {streak != null && (
-          // The touchable is OUTSIDE the glass, and that ordering is the whole
-          // reason this capsule opens on the first tap.
-          //
-          // `isInteractive` sets `UIGlassEffect.isInteractive`, which installs
-          // the system's own press recogniser on the effect view. Anything
-          // mounted inside a `GlassView` lands in `glassEffectView.contentView`
-          // — a descendant of that recogniser — so a `Pressable` in there was
-          // competing with it for the same touch and losing the first one. As
-          // an ancestor it takes the touch before the glass ever sees it, and
-          // the material still flexes underneath.
-          //
-          // `ActionButton` has always been built this way; the two capsules in
-          // this header were the exceptions.
-          //
-          // Announced as a control only when one is actually behind it: with no
-          // handler the capsule is the text it looks like. The count alone read
-          // as a bare "7", so the label spells the noun out either way.
-          <Pressable
-            accessible
-            accessibilityRole={onStreakPress != null ? 'button' : 'text'}
-            accessibilityLabel={
-              onStreakPress != null
-                ? `${streak} day streak, see what counts`
-                : `${streak} day streak`
-            }
-            disabled={onStreakPress == null}
+          <StreakCapsule
+            streak={streak}
             onPress={onStreakPress}
-            style={({ pressed }) => pressed && { opacity: 0.6 }}>
-            <GlassView isInteractive style={styles.streak}>
-              {streakGlyph ?? (
-                <HugeiconsIcon
-                  icon={streakIcon}
-                  size={22}
-                  color={streakTint ?? colors.foreground}
-                  strokeWidth={streakTint != null ? 2.3 : 1.9}
-                />
-              )}
-              <Text style={[styles.streakCount, { color: colors.foreground }]}>{streak}</Text>
-            </GlassView>
-          </Pressable>
+            glyph={streakGlyph}
+            icon={streakIcon}
+            tint={streakTint}
+          />
         )}
 
         {/* Absolutely placed, so it can occupy the middle of the header without
@@ -185,6 +152,52 @@ export function HeaderActions({
         </View>
       </GlassContainer>
     </Animated.View>
+  );
+}
+
+export type StreakCapsuleProps = {
+  streak: number;
+  onPress?: () => void;
+  glyph?: ReactNode;
+  icon?: IconSvgElement;
+  tint?: string;
+};
+
+/**
+ * The streak capsule from Home's header, on its own — the plan screen wears the
+ * same one in its header, so the flame and the count read the same everywhere.
+ *
+ * The touchable is OUTSIDE the glass, and that ordering is the whole reason
+ * this capsule opens on the first tap. `isInteractive` sets
+ * `UIGlassEffect.isInteractive`, which installs the system's own press
+ * recogniser on the effect view; anything mounted inside a `GlassView` lands in
+ * its `contentView`, a descendant of that recogniser, so a `Pressable` in there
+ * competed with it for the same touch and lost the first one. As an ancestor it
+ * takes the touch before the glass ever sees it, and the material still flexes
+ * underneath.
+ *
+ * Announced as a control only when one is actually behind it: with no handler
+ * the capsule is the text it looks like. The count alone read as a bare "7", so
+ * the label spells the noun out either way.
+ */
+export function StreakCapsule({ streak, onPress, glyph, icon = DropletIcon, tint }: StreakCapsuleProps) {
+  const scheme = useColorScheme();
+  const colors = palette[scheme];
+  return (
+    <Pressable
+      accessible
+      accessibilityRole={onPress != null ? 'button' : 'text'}
+      accessibilityLabel={onPress != null ? `${streak} day streak, see what counts` : `${streak} day streak`}
+      disabled={onPress == null}
+      onPress={onPress}
+      style={({ pressed }) => pressed && { opacity: 0.6 }}>
+      <GlassView isInteractive style={styles.streak}>
+        {glyph ?? (
+          <HugeiconsIcon icon={icon} size={22} color={tint ?? colors.foreground} strokeWidth={tint != null ? 2.3 : 1.9} />
+        )}
+        <Text style={[styles.streakCount, { color: colors.foreground }]}>{streak}</Text>
+      </GlassView>
+    </Pressable>
   );
 }
 

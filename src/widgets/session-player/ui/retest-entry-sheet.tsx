@@ -48,6 +48,7 @@ const GOAL_KEY: Readonly<Record<string, Key>> = {
   consistent: 'widgets.retestGoal.consistent',
   stronger: 'widgets.retestGoal.stronger',
   injuryfree: 'widgets.retestGoal.injuryfree',
+  flatfeet: 'widgets.retestGoal.flatfeet',
 };
 
 

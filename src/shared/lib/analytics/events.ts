@@ -41,10 +41,9 @@ export type AnalyticsEvents = {
   onboarding_answered: { step: 'source' | 'goal' | 'sport' | 'runner'; answer: string };
   acquisition_source_selected: { source: AcquisitionSource };
   sign_in_completed: { method: 'apple' | 'email'; status: 'signed-in' | 'unavailable' };
-  sign_in_failed: { method: 'apple' | 'email' };
-  /** Went past the intro without signing in. Nothing is lost: the account is
-   * anonymous either way, and the name is asked on the next screen. */
-  sign_in_skipped: Record<string, never>;
+  /** `stage` says whether Apple's sheet or our server refused — a server
+   * failure means the Apple provider on Supabase needs looking at. */
+  sign_in_failed: { method: 'apple' | 'email'; stage?: 'apple' | 'server' };
   /** Left the flow — by finishing it, or by the header's Skip. */
   onboarding_completed: { skipped: boolean; plan_weeks?: number };
 
@@ -62,6 +61,18 @@ export type AnalyticsEvents = {
   session_started: SessionProps;
   session_completed: SessionProps;
   retest_completed: { day: number; block: number };
+  // ── The weekly plan ──────────────────────────────────────────────────────
+  /** A goal hit its target. The goal's name, never its measurement. */
+  goal_reached: { goal: 'pain_free_mornings' | 'arch_hold' | 'calf_raises' | 'balance' | 'symmetry' };
+  /** A Library routine finished. Counts for the streak, not for the plan. */
+  library_routine_completed: { routine: string };
+  /** How a finished session felt — the answer that moves progression. */
+  session_feedback: { feedback: 'easy' | 'ok' | 'hard' };
+  /** A plan answer changed in Settings. Which field, not what it became. */
+  /** A plan sync to Supabase failed. The table and the PostgREST/Postgres error code, or
+   * `network` / `thrown`; never a row's contents. */
+  plan_sync_failed: { table: string; code: string };
+  plan_settings_changed: { field: 'daysPerWeek' | 'defaultMinutes' | 'equipmentMissing' | 'footType' | 'reminderMinutes' | 'outcome' };
   /** A pain check-in happened. The score deliberately does not travel. */
   checkin_logged: { day: number; entries_today: number };
   morning_stretch_done: { day: number };

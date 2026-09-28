@@ -298,11 +298,12 @@ export function nextOffset(
 /**
  * What a mid-session pain report does.
  *
- * Below five is discomfort and the session continues. At five or above it ends
+ * Up to five is discomfort and the session continues — the weekly plan's rule:
+ * fine if it is back to normal the next morning. At six or above it ends
  * — and it ends *complete*. The work stops, but the day is not taken away from
  * them, and tomorrow starts one step back rather than one step down.
  */
-export const IN_SESSION_STOP_PAIN = 5;
+export const IN_SESSION_STOP_PAIN = 6;
 
 export type InSessionOutcome = {
   stop: boolean;

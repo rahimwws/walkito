@@ -66,7 +66,7 @@ export const EXERCISES_RU = {
   'exercises.shortFootSingle.title': 'Короткая стопа, одна нога',
   'exercises.shortFootSingle.rationale': 'На одной ноге сразу видно, какая сторона слабее.',
   'exercises.shortFootSingle.cue':
-    'Большой палец остаётся прижатым. Если он поднимается — свод схитрил.',
+    'Большой палец остаётся прижатым. Если он поднимается - свод схитрил.',
 
   'exercises.toeSpread.title': 'Разведение пальцев',
   'exercises.toeSpread.rationale':
@@ -86,35 +86,84 @@ export const EXERCISES_RU = {
   // ── Balance ──────────────────────────────────────────────────────────────
   'exercises.singleLegHold.title': 'Стойка на одной ноге',
   'exercises.singleLegHold.rationale':
-    'Стойка на одной ноге — первый тест, который стопа перестаёт проходить.',
-  'exercises.singleLegHold.cue': 'Смотрите в одну точку. Пусть стопа покачивается — так и нужно.',
+    'Стойка на одной ноге - первый тест, который стопа перестаёт проходить.',
+  'exercises.singleLegHold.cue': 'Смотрите в одну точку. Пусть стопа покачивается - так и нужно.',
 
   'exercises.eyesClosedStand.title': 'Стойка с закрытыми глазами',
   'exercises.eyesClosedStand.rationale': 'С закрытыми глазами равновесие держит сама стопа.',
-  'exercises.eyesClosedStand.cue': 'Встаньте рядом со стеной. Опереться на неё — нормально.',
+  'exercises.eyesClosedStand.cue': 'Встаньте рядом со стеной. Опереться на неё - нормально.',
 
   'exercises.heelToeWalk.title': 'Ходьба с пятки на носок',
   'exercises.heelToeWalk.rationale':
-    'Перекат с пятки на носок — это свод, который по порядку нагружается и разгружается.',
+    'Перекат с пятки на носок - это свод, который по порядку нагружается и разгружается.',
   'exercises.heelToeWalk.cue':
-    'Сначала опускается пятка, затем идёт перекат. Медленно — так, чтобы можно было остановиться на середине шага.',
+    'Сначала опускается пятка, затем идёт перекат. Медленно - так, чтобы можно было остановиться на середине шага.',
 
   // ── What closes a session ────────────────────────────────────────────────
   'exercises.footRoll.title': 'Прокатывание стопы',
   'exercises.footRoll.rationale': 'Прокатывание успокаивает ткань после нагрузки.',
-  'exercises.footRoll.cue': 'Медленно и с нажимом. Если морщитесь от боли — ослабьте нажим.',
+  'exercises.footRoll.cue': 'Медленно и с нажимом. Если морщитесь от боли - ослабьте нажим.',
 
   'exercises.barefootHome.title': 'Босиком дома',
-  'exercises.barefootHome.rationale': 'Часы босиком — это часы, которые стопа проводит в работе.',
+  'exercises.barefootHome.rationale': 'Часы босиком - это часы, которые стопа проводит в работе.',
   'exercises.barefootHome.cue': 'Только дома, на ровном полу, и увеличивайте время постепенно.',
 
   'exercises.breathingReset.title': 'Дыхательная пауза',
   'exercises.breathingReset.rationale': 'Минута медленного дыхания правильно завершает сессию.',
   'exercises.breathingReset.cue': 'Выдох длиннее вдоха. Вот и всё.',
 
+  // ── The weekly plan's additions ──────────────────────────────────────────
+  'exercises.heelRaiseDouble.title': 'Подъёмы на носки на двух ногах',
+  'exercises.heelRaiseDouble.rationale': 'Обе стопы делят нагрузку, пока икра просыпается.',
+  'exercises.heelRaiseDouble.cue': 'Поднимайтесь прямо вверх над большими пальцами, опускайтесь медленно.',
+
+  'exercises.heelRaiseSeated.title': 'Подъёмы на носки сидя',
+  'exercises.heelRaiseSeated.rationale': 'Работа для икры почти без нагрузки на пятку.',
+  'exercises.heelRaiseSeated.cue': 'Давите вверх подушечками стоп. Руки на коленях добавят сопротивления.',
+
+  'exercises.heelRaiseHold.title': 'Удержание на носках',
+  'exercises.heelRaiseHold.rationale': 'Удержание наверху нагружает сухожилие без рывков.',
+  'exercises.heelRaiseHold.cue': 'Поднимитесь и замрите наверху - не проседайте.',
+
+  'exercises.bigToeLift.title': 'Подъём большого пальца',
+  'exercises.bigToeLift.rationale': 'Учит большой палец двигаться отдельно - первое включение свода.',
+  'exercises.bigToeLift.cue': 'Поднимайте только большой палец. Остальные четыре лежат на полу.',
+
+  'exercises.towelScrunch.title': 'Собирание полотенца',
+  'exercises.towelScrunch.rationale': 'Будит мелкие мышцы под сводом стопы.',
+  'exercises.towelScrunch.cue': 'Подтягивайте полотенце пальцами. Пятка остаётся на полу.',
+
+  'exercises.kneeToWall.title': 'Колено к стене',
+  'exercises.kneeToWall.rationale': 'Освобождает голеностоп, чтобы пятка не брала нагрузку на себя.',
+  'exercises.kneeToWall.cue': 'Пятка прижата к полу. Ведите колено вперёд над вторым пальцем.',
+
+  'exercises.balancePillow.title': 'Баланс на подушке',
+  'exercises.balancePillow.rationale': 'Мягкая опора заставляет голеностоп работать на каждом покачивании.',
+  'exercises.balancePillow.cue': 'Встаньте рядом со стеной. Колено мягкое, взгляд прямо.',
+
+  'exercises.heelDropStraight.title': 'Опускания пятки',
+  'exercises.heelDropStraight.rationale': 'Медленное опускание восстанавливает икру и ахиллово сухожилие.',
+  'exercises.heelDropStraight.cue': 'Вверх на двух ногах, вниз медленно на одной. Пятка уходит ниже ступеньки.',
+
+  'exercises.tibialisRaise.title': 'Подъёмы носков',
+  'exercises.tibialisRaise.rationale': 'Укрепляет переднюю мышцу голени, которая стабилизирует каждый шаг.',
+  'exercises.tibialisRaise.cue': 'Спиной к стене. Поднимайте носки, пятки остаются на полу.',
+
+  'exercises.stepDown.title': 'Шаг вниз',
+  'exercises.stepDown.rationale': 'Контролирует колено, чтобы стопа не принимала удар одна.',
+  'exercises.stepDown.cue': 'Колено идёт над пальцами. Касайтесь пяткой пола - не падайте.',
+
+  'exercises.soleMassage.title': 'Массаж стопы',
+  'exercises.soleMassage.rationale': 'Расслабляет ткани после долгого дня.',
+  'exercises.soleMassage.cue': 'Плотные движения большим пальцем от пятки к пальцам. Где остро - ослабьте.',
+
+  'exercises.pogoHops.title': 'Пружинящие прыжки',
+  'exercises.pogoHops.rationale': 'Учит стопу снова пружинить - только когда боль прошла.',
+  'exercises.pogoHops.cue': 'Мелкие быстрые прыжки на жёстких голеностопах. Если болит пятка - остановитесь.',
+
   // ── The morning stretch ──────────────────────────────────────────────────
   'exercises.morningStretch.copy':
-    'Прежде чем встать: потяните пальцы на себя — 10 секунд, 10 раз.',
+    'Прежде чем встать: потяните пальцы на себя - 10 секунд, 10 раз.',
 
   // ── Load notes ───────────────────────────────────────────────────────────
   'exercises.loadNote.backpack':

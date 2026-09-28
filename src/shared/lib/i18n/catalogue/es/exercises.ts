@@ -112,6 +112,55 @@ export const EXERCISES_ES = {
   'exercises.breathingReset.rationale': 'Un minuto de respiración lenta cierra bien la sesión.',
   'exercises.breathingReset.cue': 'Que la exhalación dure más que la inhalación. Eso es todo.',
 
+  // ── The weekly plan's additions ──────────────────────────────────────────
+  'exercises.heelRaiseDouble.title': 'Elevaciones de talón con dos pies',
+  'exercises.heelRaiseDouble.rationale': 'Los dos pies comparten la carga mientras el gemelo despierta.',
+  'exercises.heelRaiseDouble.cue': 'Sube recto sobre los dedos gordos y baja despacio.',
+
+  'exercises.heelRaiseSeated.title': 'Elevaciones de talón sentado',
+  'exercises.heelRaiseSeated.rationale': 'Trabajo de gemelo casi sin carga en el talón.',
+  'exercises.heelRaiseSeated.cue': 'Empuja con la parte delantera del pie. Las manos en las rodillas añaden resistencia.',
+
+  'exercises.heelRaiseHold.title': 'Elevación de talón sostenida',
+  'exercises.heelRaiseHold.rationale': 'Sostener arriba carga el tendón sin rebote.',
+  'exercises.heelRaiseHold.cue': 'Sube y quédate quieto arriba, sin dejarte caer.',
+
+  'exercises.bigToeLift.title': 'Elevación del dedo gordo',
+  'exercises.bigToeLift.rationale': 'Enseña al dedo gordo a moverse solo: el primer interruptor del arco.',
+  'exercises.bigToeLift.cue': 'Levanta solo el dedo gordo. Los otros cuatro siguen apoyados.',
+
+  'exercises.towelScrunch.title': 'Recoger la toalla',
+  'exercises.towelScrunch.rationale': 'Despierta los músculos pequeños bajo el arco.',
+  'exercises.towelScrunch.cue': 'Atrae la toalla con los dedos. El talón no se levanta.',
+
+  'exercises.kneeToWall.title': 'Rodilla a la pared',
+  'exercises.kneeToWall.rationale': 'Libera el tobillo para que el talón no cargue con la tensión.',
+  'exercises.kneeToWall.cue': 'El talón queda plano. Lleva la rodilla hacia delante sobre el segundo dedo.',
+
+  'exercises.balancePillow.title': 'Equilibrio sobre almohada',
+  'exercises.balancePillow.rationale': 'Una superficie blanda hace trabajar al tobillo en cada vaivén.',
+  'exercises.balancePillow.cue': 'Ponte junto a una pared. Rodilla suelta, mirada al frente.',
+
+  'exercises.heelDropStraight.title': 'Descensos de talón',
+  'exercises.heelDropStraight.rationale': 'Bajar despacio es lo que reconstruye el gemelo y el Aquiles.',
+  'exercises.heelDropStraight.cue': 'Sube con los dos pies y baja despacio con uno. Deja que el talón pase del escalón.',
+
+  'exercises.tibialisRaise.title': 'Elevaciones de puntas',
+  'exercises.tibialisRaise.rationale': 'Fortalece el músculo de la espinilla que estabiliza cada paso.',
+  'exercises.tibialisRaise.cue': 'Espalda contra la pared. Levanta las puntas y deja los talones abajo.',
+
+  'exercises.stepDown.title': 'Bajada de escalón',
+  'exercises.stepDown.rationale': 'Controla la rodilla para que el pie no aterrice solo.',
+  'exercises.stepDown.cue': 'La rodilla va sobre los dedos. Toca el suelo con el talón, sin dejarte caer.',
+
+  'exercises.soleMassage.title': 'Masaje de planta',
+  'exercises.soleMassage.rationale': 'Suelta el tejido después de un día largo.',
+  'exercises.soleMassage.cue': 'Pasadas firmes con el pulgar del talón a los dedos. Afloja si algo duele agudo.',
+
+  'exercises.pogoHops.title': 'Saltos pogo',
+  'exercises.pogoHops.rationale': 'Enseña al pie a rebotar de nuevo, solo cuando el dolor ya no está.',
+  'exercises.pogoHops.cue': 'Saltos pequeños y rápidos con tobillos firmes. Para si duele el talón.',
+
   // ── The morning stretch ──────────────────────────────────────────────────
   'exercises.morningStretch.copy':
     'Antes de levantarte: tira de los dedos hacia ti, 10 segundos, 10 veces.',

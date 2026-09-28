@@ -24,7 +24,8 @@ export const PROGRESS_RU = {
     few: '{count} дня подряд!',
     many: '{count} дней подряд!',
   },
-  'progress.scoreNote': 'Продолжайте в том же духе — и блок «{block}» будет пройден.',
+  'progress.scoreNote': 'Так держать - на этой неделе цель «{goal}».',
+  'progress.scoreNoteNoGoal': 'Так держать - план подстраивается по ходу.',
 
   // ── Performance card ─────────────────────────────────────────────────────
   // "Уровень", not "Производительность": the number under this label is the

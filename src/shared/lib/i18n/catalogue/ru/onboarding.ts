@@ -47,7 +47,6 @@ export const ONBOARDING_RU = {
   'onboarding.intro.footnote': 'Настройка ~2 мин',
   'onboarding.intro.signInFailed': 'Вход не завершился. Попробуйте ещё раз.',
   'onboarding.intro.emailCta': 'Войти по почте',
-  'onboarding.intro.skip': 'Пропустить',
 
   // ── Email sign-in sheet ──────────────────────────────────────────────────
   'onboarding.email.title': 'Вход',
@@ -65,7 +64,7 @@ export const ONBOARDING_RU = {
   // ── Sex ──────────────────────────────────────────────────────────────────
   'onboarding.sex.title': 'Мужчина или женщина, {name}?',
   'onboarding.sex.blurb':
-    'Переносимость нагрузки и типичные травмы разные — план тоже получится разным.',
+    'Переносимость нагрузки и типичные травмы разные - план тоже получится разным.',
   'onboarding.sex.female': 'Женщина',
   'onboarding.sex.male': 'Мужчина',
 
@@ -104,7 +103,38 @@ export const ONBOARDING_RU = {
   'onboarding.goal.consistent': 'Бегать регулярнее',
   'onboarding.goal.stronger': 'Укрепить ноги',
   'onboarding.goal.injuryfree': 'Обойтись без травм',
-
+  'onboarding.goal.flatfeet': 'Справиться с плоскостопием',
+  'onboarding.goal.ankles': 'Устойчивые лодыжки',
+  'onboarding.goal.jump': 'Прыгать выше',
+  'onboarding.goal.allday': 'Весь день на ногах без усталости',
+  'onboarding.goal.comeback': 'Вернуться после травмы',
+  'onboarding.goal.steady': 'Уверенно ходить',
+  'onboarding.days.title': 'Сколько дней в неделю, {name}?',
+  'onboarding.days.blurb': 'Короткие занятия. Дни отдыха - часть плана, а не пропуск.',
+  'onboarding.days.days3': '3 дня',
+  'onboarding.days.days3Caption': 'Спокойный старт',
+  'onboarding.days.days5': '5 дней',
+  'onboarding.days.days5Caption': 'Рекомендуем',
+  'onboarding.days.days7': 'Каждый день',
+  'onboarding.days.days7Caption': 'Коротко и каждый день',
+  'onboarding.minutes.title': 'Сколько минут на занятие?',
+  'onboarding.minutes.blurb': 'Можно менять в любой день - занятые дни тоже считаются.',
+  'onboarding.minutes.min3': '3 минуты',
+  'onboarding.minutes.min3Caption': 'Даже в загруженный день',
+  'onboarding.minutes.min5': '5 минут',
+  'onboarding.minutes.min5Caption': 'Рекомендуем',
+  'onboarding.minutes.min10': '10 минут',
+  'onboarding.minutes.min10Caption': 'Чтобы прогрессировать быстрее',
+  'onboarding.equipment.title': 'Что есть у вас дома?',
+  'onboarding.equipment.blurb': 'Упражнения с тем, чего у вас нет, в план не попадут.',
+  'onboarding.equipment.step': 'Ступенька или лестница',
+  'onboarding.equipment.band': 'Резинка',
+  'onboarding.equipment.towel': 'Полотенце',
+  'onboarding.equipment.pillow': 'Подушка',
+  'onboarding.equipment.ball': 'Массажный мяч',
+  'onboarding.equipment.none': 'Ничего из этого',
+  'onboarding.reminder.title': 'Когда вам напоминать?',
+  'onboarding.reminder.blurb': 'Одно напоминание в день. Выберите время, когда обычно есть пять свободных минут.',
   // ── Pain ─────────────────────────────────────────────────────────────────
   'onboarding.pain.title': 'Где обычно болит, {name}?',
   'onboarding.pain.blurb': 'Отметьте места на ноге, до {count}.',
@@ -136,13 +166,13 @@ export const ONBOARDING_RU = {
   'onboarding.load.blurbMonth': 'Честный текущий месяц, а не лучший.',
   'onboarding.load.titleRunning': 'Сколько вы сейчас бегаете, {name}?',
   'onboarding.load.titleTennis': 'Сколько вы сейчас на корте, {name}?',
-  'onboarding.load.blurbTennis': 'Матчи и занятия вместе — честная неделя.',
+  'onboarding.load.blurbTennis': 'Матчи и занятия вместе - честная неделя.',
   'onboarding.load.titleGym': 'Сколько вы сейчас тренируетесь, {name}?',
   'onboarding.load.blurbGym': 'Время под нагрузкой, а не время в зале.',
   'onboarding.load.titleFootball': 'Сколько вы сейчас играете, {name}?',
-  'onboarding.load.blurbFootball': 'Матчи и тренировки вместе — честная неделя.',
+  'onboarding.load.blurbFootball': 'Матчи и тренировки вместе - честная неделя.',
   'onboarding.load.titleBasketball': 'Сколько вы сейчас играете, {name}?',
-  'onboarding.load.blurbBasketball': 'Игры и тренировки вместе — честная неделя.',
+  'onboarding.load.blurbBasketball': 'Игры и тренировки вместе - честная неделя.',
   'onboarding.load.titleCycling': 'Сколько вы сейчас катаетесь, {name}?',
   'onboarding.load.titleHiking': 'Сколько вы сейчас ходите в походы, {name}?',
   'onboarding.load.km0': '0–5 {unit}',
@@ -181,7 +211,7 @@ export const ONBOARDING_RU = {
   'onboarding.source.appStore': 'Поиск в App Store',
   'onboarding.source.google': 'Поиск в Google',
   'onboarding.source.other': 'Другое',
-  'onboarding.challenge.swapped': 'Не больше {count} за раз — «{label}» убрали.',
+  'onboarding.challenge.swapped': 'Не больше {count} за раз - «{label}» убрали.',
 
   // ── Health ───────────────────────────────────────────────────────────────
   'onboarding.health.title': 'Подключите данные Здоровья',
@@ -200,10 +230,10 @@ export const ONBOARDING_RU = {
   'onboarding.health.connect': 'Подключить Здоровье',
   'onboarding.health.opening': 'Открываем Здоровье…',
   'onboarding.health.promise': 'Данные о здоровье не покидают это устройство.',
-  'onboarding.health.unavailable': 'Здесь Здоровье недоступно — можно продолжить без него.',
+  'onboarding.health.unavailable': 'Здесь Здоровье недоступно - можно продолжить без него.',
   'onboarding.health.declined': 'Доступ к Здоровью отклонён. План будет работать и без него.',
   'onboarding.health.empty':
-    'Подключено — данных пока нет. Они появятся, как только вы начнёте двигаться.',
+    'Подключено - данных пока нет. Они появятся, как только вы начнёте двигаться.',
 
   // ── Watch ────────────────────────────────────────────────────────────────
   'onboarding.watch.title': 'Вы носите часы?',
@@ -238,14 +268,14 @@ export const ONBOARDING_RU = {
     'План работает, только если о нём помнят. Пусть Walkito скажет, когда на сегодня есть занятие.',
   'onboarding.notify.promise1': 'Напоминание в дни, когда в плане есть занятие',
   'onboarding.notify.promise2': 'Предупреждение, когда план меняет то, что вы делаете',
-  'onboarding.notify.promise3': 'И иногда скидка — больше ничего.',
+  'onboarding.notify.promise3': 'И иногда скидка - больше ничего.',
   'onboarding.notify.bannerApp': 'Walkito',
   'onboarding.notify.bannerTime': 'сейчас',
-  'onboarding.notify.bannerBody': 'Сегодня сила стопы — 7 минут. Голени скажут спасибо.',
+  'onboarding.notify.bannerBody': 'Сегодня сила стопы - 7 минут. Голени скажут спасибо.',
   'onboarding.notify.turnOn': 'Включить уведомления',
   'onboarding.notify.opening': 'Открываем…',
   'onboarding.notify.notNow': 'Не сейчас',
-  'onboarding.notify.declined': 'Ничего страшного — их можно включить позже в Настройках.',
+  'onboarding.notify.declined': 'Ничего страшного - их можно включить позже в Настройках.',
 
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.title': 'Собираем ваш план',
@@ -261,7 +291,7 @@ export const ONBOARDING_RU = {
   'onboarding.pattern.achilles':
     'Нагрузка росла быстрее, чем успевало адаптироваться сухожилие. Это поправимо.',
   'onboarding.pattern.shin': 'Объём обогнал ваши ноги. План отматывает назад, а потом наращивает.',
-  'onboarding.pattern.calf': 'Икра тянет за собой всё, что ниже. Отпустите её — и остальное пойдёт следом.',
+  'onboarding.pattern.calf': 'Икра тянет за собой всё, что ниже. Отпустите её - и остальное пойдёт следом.',
   'onboarding.pattern.none': 'Вы здесь до того, как заболело. Это самый дешёвый путь.',
   'onboarding.building.promise': 'Первые изменения: с 12-го по 16-й день.',
 
@@ -277,6 +307,7 @@ export const ONBOARDING_RU = {
   // ── Plan ─────────────────────────────────────────────────────────────────
   'onboarding.plan.title': 'Ваш план',
   'onboarding.plan.blurb': 'Собран из ваших ответов.',
+  'onboarding.plan.recommended': 'Рекомендуем',
   'onboarding.plan.meta': {
     one: '{count} неделя · {sessions} тренировки в неделю',
     few: '{count} недели · {sessions} тренировки в неделю',
@@ -288,20 +319,20 @@ export const ONBOARDING_RU = {
   'onboarding.plan.phaseBuild': 'строим свод',
   'onboarding.plan.phaseLoad': 'возвращаем полную нагрузку',
   'onboarding.plan.reflectionBoth':
-    '{pain} и {volume}. Первые две недели всё успокаиваем — до любой нагрузки.',
+    '{pain} и {volume}. Первые две недели всё успокаиваем - до любой нагрузки.',
   'onboarding.plan.reflectionPain':
-    '{pain}. Первые две недели всё успокаиваем — до любой нагрузки.',
+    '{pain}. Первые две недели всё успокаиваем - до любой нагрузки.',
   'onboarding.plan.reflectionVolume':
-    '{volume}. Первые две недели строим базу — до любой нагрузки.',
+    '{volume}. Первые две недели строим базу - до любой нагрузки.',
 
   // ── Contract ─────────────────────────────────────────────────────────────
   'onboarding.contract.title': 'Давайте заключим договор, {name}',
   'onboarding.contract.blurb': 'Не со мной. С собой.',
   'onboarding.contract.hint': 'Распишитесь здесь',
-  'onboarding.contract.stampTop': '★ WALKITO ★',
-  'onboarding.contract.stampText': 'ОБЯЗУЮСЬ',
-  'onboarding.contract.stampLine1': 'БЕГ',
-  'onboarding.contract.stampLine2': 'БЕЗ БОЛИ',
+  'onboarding.contract.stampTop': '★ Walkito ★',
+  'onboarding.contract.stampText': 'Обязуюсь',
+  'onboarding.contract.stampLine1': 'Бег',
+  'onboarding.contract.stampLine2': 'Без боли',
   'onboarding.contract.noteNamed': '{name}, ваша подпись останется на этом устройстве.',
   'onboarding.contract.note': 'Ваша подпись останется на этом устройстве.',
 
@@ -309,17 +340,17 @@ export const ONBOARDING_RU = {
   'onboarding.social.welcomeNamed': 'Добро пожаловать, {name}',
   'onboarding.social.welcome': 'Добро пожаловать на борт',
   'onboarding.social.crest': 'Несколько минут в день.\nБез зала и догадок.',
-  'onboarding.testimonial1.before': 'Отметьте, как стопа сегодня, —',
+  'onboarding.testimonial1.before': 'Отметьте, как стопа сегодня, -',
   'onboarding.testimonial1.lead': 'и тренировка подстроится',
   'onboarding.testimonial1.after': ' под самочувствие.',
   'onboarding.testimonial1.name': 'Каждое утро',
-  'onboarding.testimonial2.before': 'Короткие упражнения с подсказками —',
+  'onboarding.testimonial2.before': 'Короткие упражнения с подсказками -',
   'onboarding.testimonial2.lead': 'дома или на работе',
   'onboarding.testimonial2.after': ': хватит пола и стены.',
   'onboarding.testimonial2.name': 'Каждая тренировка',
   'onboarding.testimonial3.before': 'Минутный ретест',
   'onboarding.testimonial3.lead': 'покажет, что изменилось',
-  'onboarding.testimonial3.after': ' — в цифрах, а не в ощущениях.',
+  'onboarding.testimonial3.after': ' - в цифрах, а не в ощущениях.',
   'onboarding.testimonial3.name': 'Каждые две недели',
 
   // ── Outlook ──────────────────────────────────────────────────────────────
@@ -340,7 +371,7 @@ export const ONBOARDING_RU = {
 
   // ── Referral ─────────────────────────────────────────────────────────────
   'onboarding.referral.title': 'Есть код приглашения?',
-  'onboarding.referral.blurb': 'Введите его — и получите скидку {percent}% на план.',
+  'onboarding.referral.blurb': 'Введите его - и получите скидку {percent}% на план.',
   'onboarding.referral.applied': 'Скидка {percent}% применена.',
   'onboarding.referral.unknown': 'Мы не знаем такой код. Проверьте и попробуйте ещё раз.',
   'onboarding.referral.own': 'Это ваш собственный код. Отправьте его кому-нибудь другому.',

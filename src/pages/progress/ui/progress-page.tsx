@@ -11,7 +11,8 @@ import {
   MAX_LEVEL,
   PROGRAM,
   TODAY_INDEX,
-  blockName,
+  weekPlan,
+  usePlanVersion,
   completedThrough,
   computeScore,
   currentLevels,
@@ -131,6 +132,8 @@ export function ProgressPage() {
   const scheme = useColorScheme();
   const program = useProgram();
   const today = PROGRAM[TODAY_INDEX];
+  usePlanVersion();
+  const focus = weekPlan().focus;
   const t = useT();
   const copy = progressBrief(useLanguage());
 
@@ -289,10 +292,14 @@ export function ProgressPage() {
             score={score}
             title={t('progress.scoreTitle')}
             headline={t('progress.scoreStreak', { count: streak.current })}
-            // The block's name is still English whatever the language: it
-            // comes from `blockName()` in `entities/program`, which is not
-            // this migration's to change.
-            note={t('progress.scoreNote', { block: blockName(today.block) })}
+            // What this week works on, from the weekly plan — the fixed
+            // program's block name said "finish the Sustain block" to a plan
+            // that has no blocks and no finish.
+            note={
+              focus != null
+                ? t('progress.scoreNote', { goal: t(`pages.week.goal.${focus}`) })
+                : t('progress.scoreNoteNoGoal')
+            }
           />
         </IntroReveal>
 

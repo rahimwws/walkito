@@ -34,7 +34,7 @@ export const CORE_EN = {
   'language.system': 'System',
   /** Names the language following the device would actually give, so the row
    * is a statement rather than a riddle. */
-  'language.systemHint': 'Match device — {language}',
+  'language.systemHint': 'Match device - {language}',
   'language.note': 'The choice is remembered on this device.',
   'language.a11yLabel': 'Language, {language}',
   'language.a11yHint': 'Changes the language of the app',
@@ -46,6 +46,39 @@ export const CORE_EN = {
   'settings.privacy': 'Privacy Policy',
   'settings.privacyHint': 'What we store, and where',
   'settings.unpublished': 'Not published yet',
+  // ── Your plan: what onboarding asked, changeable ─────────────────────────
+  'settings.planSection': 'Your plan',
+  'settings.outcome': 'Your goal',
+  'settings.outcome.painfree': 'Pain-free',
+  'settings.outcome.flat_feet': 'Fix flat feet',
+  'settings.outcome.stronger': 'Stronger legs',
+  'settings.outcome.injury_free': 'Sturdy legs',
+  'settings.outcome.stable_ankles': 'Steady ankles',
+  'settings.outcome.jump_higher': 'Jump higher',
+  'settings.outcome.race_ready': 'Race ready',
+  'settings.outcome.all_day': 'All day on my feet',
+  'settings.outcome.comeback': 'Back after injury',
+  'settings.outcome.steady': 'Confident steps',
+  'settings.daysPerWeek': 'Days per week',
+  'settings.minutesPerDay': 'Minutes per day',
+  'settings.whichFoot': 'Which foot',
+  'settings.footLeft': 'Left',
+  'settings.footRight': 'Right',
+  'settings.footBoth': 'Both',
+  'settings.whereItHurts': 'Where it hurts',
+  'settings.whereItHurtsNone': 'Nothing marked',
+  'settings.equipment': 'What I have at home',
+  'settings.equipment.step': 'A step',
+  'settings.equipment.band': 'Resistance band',
+  'settings.equipment.towel': 'Towel',
+  'settings.equipment.pillow': 'Pillow',
+  'settings.equipment.ball': 'Massage ball',
+  'settings.account.saveTitle': 'Keep your progress',
+  'settings.account.saveBody': 'Sign in with Apple and your plan, check-ins and tests come back on a new phone or after reinstalling.',
+  'settings.account.signedIn': 'Signed in with Apple. Your progress is saved to your account.',
+  'settings.lastSync': 'Last synced {time}',
+  'settings.lastSyncNever': 'Not synced yet',
+  'settings.reminder': 'Reminder time',
   'settings.disclaimer':
     'Walkito is a training aid, not medical advice, and it does not diagnose or treat any condition. If pain is sharp, getting worse, or comes with swelling, numbness or fever, stop and see a doctor.',
 
@@ -54,8 +87,11 @@ export const CORE_EN = {
   // puts the count first and the noun last, Russian puts "подряд" (in a row)
   // after both, and Spanish needs "de" between them.
   'streak.title': { one: '{count} Day Streak', other: '{count} Days Streak' },
+  /** The milestone moment: 3, 7, 10, 30 and 100 days. Ten is the big one. */
+  'streak.milestoneBlurb': 'Every one of those days counted.',
+  'streak.milestoneBigBlurb': 'Ten days. This is where a habit starts to hold.',
   'streak.rule':
-    'A day counts when you check in, train, or the plan gives you a rest day.',
+    'A day counts when you check in, train, finish a Library routine, or the plan gives you a rest day.',
   'streak.total': { one: '{count} day so far.', other: '{count} days so far.' },
   'streak.dismiss': 'Got it',
   'streak.dayCount': { one: '{count} day', other: '{count} days' },
@@ -114,7 +150,7 @@ export const CORE_EN = {
   'quick.deleteBody': 'I’m about to delete the app.\n\nWhat pushed me out:\n\n',
   'quick.deleteSubject': 'Before I delete Walkito',
   'quick.talkSubject': 'Something is off in Walkito',
-  'quick.talkBody': 'Hey —\n\nWhat’s going on:\n\n',
+  'quick.talkBody': 'Hey -\n\nWhat’s going on:\n\n',
   'quick.deleteSubtitle': 'Deleting? Tell us what broke.',
 
   // ── Tab bar ──────────────────────────────────────────────────────────────

@@ -117,15 +117,16 @@ describe('the plan steps back, never forward', () => {
 });
 
 describe('a mid-session pain report', () => {
-  test('below five, the session continues', () => {
+  test('up to five, the session continues', () => {
+    expect(inSessionPain(5, 0).stop).toBe(false);
     const outcome = inSessionPain(4, 0);
     expect(outcome.stop).toBe(false);
     expect(outcome.progressionOffset).toBe(0);
     expect(outcome.copy).toBeNull();
   });
 
-  test('at five it ends — and it ends complete', () => {
-    const outcome = inSessionPain(5, 0);
+  test('at six it ends — and it ends complete', () => {
+    const outcome = inSessionPain(6, 0);
     expect(outcome.stop).toBe(true);
     // Stopping early is not failing. The day is not taken away from them.
     expect(outcome.markComplete).toBe(true);

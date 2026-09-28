@@ -1,6 +1,6 @@
 import { BlurView } from 'expo-blur';
 import * as Haptics from 'expo-haptics';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
@@ -45,6 +45,8 @@ export type CelebrationSheetProps = {
   /** The sentence under it. */
   blurb: string;
   ctaLabel?: string;
+  /** Anything the host needs asked before the sheet closes, between the blurb and the button. */
+  children?: ReactNode;
   /** Off for an ending that is not a win — a session stopped on pain still
    * counts, but confetti over "it hurt" is the app cheering at the wrong
    * thing. */
@@ -88,6 +90,7 @@ export function CelebrationSheet({
   headlineColor,
   blurb,
   ctaLabel,
+  children,
   confetti = true,
   emblem = true,
   onClose,
@@ -206,6 +209,8 @@ export function CelebrationSheet({
           )}
 
           <Text style={[styles.blurb, { color: meter.caption }]}>{blurb}</Text>
+
+          {children}
 
           {/* Defaulted here rather than in the parameter list: a default
               argument is evaluated before `t` exists, so an English literal

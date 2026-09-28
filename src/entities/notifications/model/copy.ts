@@ -195,6 +195,9 @@ const WINBACK_LINES: Readonly<Record<number, Line>> = {
   30: (t) => t('notifications.winbackDay30'),
 };
 
+/** The focus goals a Monday note can name. Anything else passes through as written. */
+const GOAL_IDS = ['pain_free_mornings', 'arch_hold', 'calf_raises', 'balance', 'symmetry'] as const;
+
 /** The day's kind as a whole noun phrase. English can write "{kind} work" and
  * substitute an adjective; Russian cannot, so the catalogue holds the finished
  * phrase and the sentence holds a slot. */
@@ -223,7 +226,14 @@ function factsFor(signals: DaySignals, t: Translate, language: Language): Facts 
     percent:
       signals.stepRatio == null ? '' : `${Math.round((signals.stepRatio - 1) * 100)}`,
     days: signals.asymmetryDays,
-    block: signals.opensBlock ?? '',
+    // The week's focus goal, by its plain name. The slot is still called
+    // `block` from the fixed program it used to name.
+    block:
+      signals.opensBlock == null
+        ? ''
+        : (GOAL_IDS as readonly string[]).includes(signals.opensBlock)
+          ? t(`pages.week.goal.${signals.opensBlock as (typeof GOAL_IDS)[number]}`)
+          : signals.opensBlock,
     streak: signals.streak,
     backTo:
       signals.sport != null && signals.sport in BACK_TO_KEYS
