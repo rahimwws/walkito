@@ -79,6 +79,11 @@ export const APPLE_APP_ID: string | null = null;
 
 export const SUPPORT_EMAIL = 'hello@walkito.site';
 
+/** Social profiles, linked from the footer. Empty until the accounts exist; the
+ * footer leaves out any link whose URL is empty rather than pointing at a guess. */
+export const TIKTOK_URL = '';
+export const INSTAGRAM_URL = '';
+
 /**
  * IndexNow.
  *

@@ -36,24 +36,13 @@ export function AppStoreBadge({
 }) {
   const c = CHROME[lang];
   const id = anchor ? 'get' : undefined;
-  const href = storeHref(campaign);
 
   /*
-   * Before launch the pill is not a link. It keeps its shape so the page does
-   * not reflow on launch day, and it says what is true: the app is coming, not
-   * here. A "Get the app" that scrolls to itself was the page's one call to
-   * action and it did nothing.
+   * Always the live button, even before launch: the pill reads "Download on
+   * the App Store" and points at `#` until `APP_STORE_URL` is set, so launch is
+   * one constant and the page does not change shape on the day.
    */
-  if (!href) {
-    return (
-      <div className="store" id={id}>
-        <span className="soon">
-          <AppleGlyph />
-          {c.soonBadge}
-        </span>
-      </div>
-    );
-  }
+  const href = storeHref(campaign) ?? '#';
 
   return (
     <div className="store" id={id}>

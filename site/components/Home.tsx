@@ -2,33 +2,11 @@ import Image from 'next/image';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Footer } from '@/components/Footer';
+import { APP, HomeEn } from '@/components/HomeEn';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { CHROME, TRANSLATED, type Lang } from '@/lib/i18n';
-import { PROGRAM, SITE_NAME } from '@/lib/site';
-
-/**
- * The app itself, as schema.
- *
- * No `offers` and no `aggregateRating`, both deliberately. The price in the
- * brief was a number nobody checked against the store, and a rating block with
- * no ratings behind it is a manual-action risk rather than a shortcut — these
- * go in when there is a listing and real reviews to point at.
- */
-const APP = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: SITE_NAME,
-  applicationCategory: 'HealthApplication',
-  operatingSystem: 'iOS',
-  description: `A ${PROGRAM.weeks}-week exercise program for heel and foot pain in runners.`,
-  availableLanguage: ['en', 'ru', 'es'],
-  featureList: [
-    `Daily sessions of ${PROGRAM.sessionMinutesMin} to ${PROGRAM.sessionMinutesMax} minutes`,
-    'Plan adapts to logged pain and daily load',
-    `Retest assessments every ${PROGRAM.blockDays} days`,
-  ],
-};
+import { PROGRAM } from '@/lib/site';
 
 type HomeCopy = {
   h1: string;
@@ -52,46 +30,11 @@ type HomeCopy = {
  *
  * Until then the page shows what can be checked: three mechanisms, each with
  * the page that proves it. Every number comes from `PROGRAM`.
+ *
+ * Russian and Spanish only. The English home page is `HomeEn`, and the English
+ * runner copy that used to be here now lives at `/heel-pain-runners/`.
  */
-const COPY: Record<Lang, HomeCopy> = {
-  en: {
-    h1: 'Heel pain',
-    h1Line2: 'from running?',
-    intro: `Walkito is a ${PROGRAM.weeks}-week exercise program for heel and foot pain in runners: ${PROGRAM.sessionMinutesMin} to ${PROGRAM.sessionMinutesMax} minutes a day of calf strength, stretching and balance work, a retest every ${PROGRAM.blockDays} days, and a plan that steps back on the mornings your heel says it should.`,
-    shotAlt: "Walkito on iPhone: the week as seven flames, today's check-in, and the day's tasks.",
-    howHeading: 'How it works',
-    how: [
-      {
-        title: 'It steps back on bad mornings',
-        text: 'Log this morning’s heel pain in one tap. A high number shortens the session and drops a level; a long day on your feet takes the loaded work out. It never speeds up on a good day.',
-        href: '/program/',
-        link: 'How the plan adapts',
-      },
-      {
-        title: `A retest every ${PROGRAM.blockDays} days`,
-        text: `${PROGRAM.retestTests} physical tests in ${PROGRAM.retestMinutes} minutes — calf raises to failure, an arch hold, single-leg balance on both sides. Progress is measured, not guessed from how the week felt.`,
-        href: '/program/',
-        link: 'What the retests measure',
-      },
-      {
-        title: 'Built from the trials',
-        text: 'High-load calf strength and plantar-specific stretching, at the doses the published trials used and in the order the 2023 clinical guideline for heel pain recommends.',
-        href: '/science/',
-        link: 'Read the evidence',
-      },
-    ],
-    guidesHeading: 'Start with the exercises',
-    guides: [
-      {
-        title: 'Exercises for plantar fasciitis',
-        text: 'Heel raises and stretches, with doses from the trials and what the 2023 guideline recommends.',
-      },
-      {
-        title: 'Exercises for flat feet',
-        text: 'Short-foot, toe and balance work for flexible flat feet, and how long the arch takes to respond.',
-      },
-    ],
-  },
+const COPY: Record<Exclude<Lang, 'en'>, HomeCopy> = {
   ru: {
     h1: 'Болит пятка',
     h1Line2: 'после бега?',
@@ -181,9 +124,10 @@ const COPY: Record<Lang, HomeCopy> = {
  * language: no word implying diagnosis or cure.
  */
 export function Home({ lang }: { lang: Lang }) {
+  if (lang === 'en') return <HomeEn />;
   const copy = COPY[lang];
   const c = CHROME[lang];
-  const suffix = lang === 'en' ? '' : `-${lang}`;
+  const suffix = `-${lang}`;
   const guideHrefs = [TRANSLATED.heelPain[lang], TRANSLATED.flatFeet[lang]];
 
   return (

@@ -53,6 +53,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...translated('home', 'weekly', 1),
     ...translated('heelPain', 'monthly', 0.9),
     ...translated('flatFeet', 'monthly', 0.9),
+    // English only for now, so no alternates.
+    { url: `${SITE_URL}/heel-pain-runners/`, lastModified: BUILT_AT, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${SITE_URL}/program/`, lastModified: BUILT_AT, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${SITE_URL}/science/`, lastModified: BUILT_AT, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${SITE_URL}/faq/`, lastModified: BUILT_AT, changeFrequency: 'monthly', priority: 0.8 },

@@ -33,11 +33,9 @@ export const OG_LOCALE: Record<Lang, string> = {
 };
 
 const en = {
-  soonHeader: 'Coming soon',
-  downloadHeader: 'Download App',
-  soonBadge: 'Coming soon to the App Store',
-  getBadge: 'Get the app',
-  getBadgeLabel: 'Get Walkito on the App Store',
+  headerButton: 'Get the app',
+  getBadge: 'Download on the App Store',
+  getBadgeLabel: 'Download Walkito on the App Store',
   navProgram: 'Program',
   navEvidence: 'Evidence',
   navQuestions: 'Questions',
@@ -56,10 +54,8 @@ const en = {
 type Chrome = Record<keyof typeof en, string>;
 
 const ru: Chrome = {
-  soonHeader: 'Скоро',
-  downloadHeader: 'Скачать',
-  soonBadge: 'Скоро в App Store',
-  getBadge: 'Скачать приложение',
+  headerButton: 'Скачать приложение',
+  getBadge: 'Скачать в App Store',
   getBadgeLabel: 'Скачать Walkito в App Store',
   navProgram: 'Программа',
   navEvidence: 'Исследования',
@@ -77,11 +73,9 @@ const ru: Chrome = {
 };
 
 const es: Chrome = {
-  soonHeader: 'Muy pronto',
-  downloadHeader: 'Descargar',
-  soonBadge: 'Muy pronto en el App Store',
-  getBadge: 'Descargar la app',
-  getBadgeLabel: 'Descarga Walkito en el App Store',
+  headerButton: 'Descargar la app',
+  getBadge: 'Descargar en el App Store',
+  getBadgeLabel: 'Descargar Walkito en el App Store',
   navProgram: 'Programa',
   navEvidence: 'Evidencia',
   navQuestions: 'Preguntas',

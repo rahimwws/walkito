@@ -19,7 +19,7 @@ export const dynamic = 'force-static';
 
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
-export const alt = 'Walkito — heel pain from running? A 12-week exercise program.';
+export const alt = 'Walkito: tried everything? Try a plan built for your feet.';
 
 export default async function Image() {
   return new ImageResponse(
@@ -42,7 +42,7 @@ export default async function Image() {
         <div
           style={{
             display: 'flex',
-            fontSize: 92,
+            fontSize: 78,
             lineHeight: 1.02,
             letterSpacing: -2,
             fontWeight: 800,
@@ -51,8 +51,8 @@ export default async function Image() {
             flexDirection: 'column',
           }}
         >
-          <span>Heel pain</span>
-          <span>from running?</span>
+          <span>Tried everything?</span>
+          <span>Try a plan built for your feet.</span>
         </div>
 
         <div
@@ -64,7 +64,7 @@ export default async function Image() {
             maxWidth: 900,
           }}
         >
-          A 12-week exercise program, 3 to 8 minutes a day.
+          A personal exercise plan for heel, foot and leg pain, 3 to 8 minutes a day.
         </div>
 
         <div

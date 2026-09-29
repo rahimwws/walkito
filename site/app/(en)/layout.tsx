@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   title: {
     // The home page's title is this default, so it carries the query the
     // page is built for rather than the tagline.
-    default: 'Heel Pain Exercises for Runners — a 12-Week Program | Walkito',
+    default: 'Walkito: Exercises for Heel and Foot Pain',
     // Every page supplies its own unique half; this appends the brand.
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    'A 12-week exercise program for heel and foot pain in runners: 3 to 8 minutes a day, a retest every two weeks, and a plan that steps back on bad mornings.',
+    'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
   alternates: alternatesFor('home', 'en'),
   robots: {
     index: true,
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'Heel pain from running? A 12-week program | Walkito',
-    description: 'Calf strength, stretching and balance work, 3 to 8 minutes a day, that steps back on bad mornings.',
+    title: 'Walkito: Exercises for Heel and Foot Pain',
+    description: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
     url: '/',
     siteName: SITE_NAME,
     locale: 'en_US',
@@ -58,8 +58,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Heel pain from running? A 12-week program | Walkito',
-    description: 'Calf strength, stretching and balance work, 3 to 8 minutes a day, that steps back on bad mornings.',
+    title: 'Walkito: Exercises for Heel and Foot Pain',
+    description: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
     images: ['/opengraph-image'],
   },
   // iOS shows a native install strip when this is present. Omitted until there
