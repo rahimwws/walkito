@@ -162,6 +162,56 @@ function measure() {
     }
   }
 
+  // Diacritics: each glyph's ink (Й, Ё, accents included) must clear the ink
+  // of every glyph directly above it on the line before. Ink comes from canvas
+  // metrics in the heading's own font; the baseline from the glyph's text box.
+  const ctx = document.createElement('canvas').getContext('2d');
+  for (const h of document.querySelectorAll('h1, h2, h3')) {
+    if (!h.getClientRects().length) continue;
+    const lines = [];
+    const hw = document.createTreeWalker(h, NodeFilter.SHOW_TEXT);
+    for (let node = hw.nextNode(); node; node = hw.nextNode()) {
+      const cs = getComputedStyle(node.parentElement);
+      ctx.font = `${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+      const upper = cs.textTransform === 'uppercase';
+      for (let i = 0; i < node.data.length; i++) {
+        const ch = upper ? node.data[i].toUpperCase() : node.data[i];
+        if (!ch.trim()) continue;
+        const range = document.createRange();
+        range.setStart(node, i);
+        range.setEnd(node, i + 1);
+        const r = range.getClientRects()[0];
+        if (!r) continue;
+        const m = ctx.measureText(ch);
+        const baseline = r.top + m.fontBoundingBoxAscent;
+        const glyph = {
+          ch,
+          left: r.left + Math.min(0, -m.actualBoundingBoxLeft),
+          right: r.left + m.actualBoundingBoxRight,
+          top: baseline - m.actualBoundingBoxAscent,
+          bottom: baseline + m.actualBoundingBoxDescent,
+        };
+        let line = lines.find((l) => Math.abs(l.box - r.top) < r.height / 2);
+        if (!line) lines.push((line = { box: r.top, glyphs: [] }));
+        line.glyphs.push(glyph);
+      }
+    }
+    lines.sort((a, b) => a.box - b.box);
+    for (let i = 1; i < lines.length; i++) {
+      let worst = null;
+      for (const g of lines[i].glyphs) {
+        for (const above of lines[i - 1].glyphs) {
+          if (above.right <= g.left || above.left >= g.right) continue;
+          const gap = g.top - above.bottom;
+          if (!worst || gap < worst.gap) worst = { gap, pair: `${above.ch}/${g.ch}` };
+        }
+      }
+      if (worst && worst.gap < 1) {
+        found.push({ type: 'diacritic-touches-line-above', text: `${worst.pair} gap ${worst.gap.toFixed(1)}px`, where: `${label(h)}: ${h.textContent.trim().slice(0, 50)}` });
+      }
+    }
+  }
+
   // One entry per distinct finding.
   const seen = new Set();
   return found.filter((f) => {

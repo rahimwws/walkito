@@ -1,4 +1,4 @@
-import { cloneElement, Fragment, isValidElement, type ReactNode } from 'react';
+import { cloneElement, createElement, Fragment, isValidElement, type ReactNode } from 'react';
 
 /** A word with a hyphen in it: single-leg, follow-up, что-то, 12-недельная. */
 const HYPHENATED = /([\p{L}\p{N}]+(?:-[\p{L}\p{N}]+)+)/u;
@@ -51,5 +51,8 @@ export function typeset(node: ReactNode): ReactNode {
 
 /** A page's `<main>`, with its text run through `typeset`. */
 export function Prose({ className, children }: { className?: string; children: ReactNode }) {
-  return <main className={className}>{typeset(children)}</main>;
+  // Spread, not `{typeset(children)}`: the page's sections arrive as an array,
+  // and handed to <main> as one array React reads them as a list without keys.
+  const kids = Array.isArray(children) ? children : [children];
+  return createElement('main', { className }, ...kids.map(typeset));
 }

@@ -419,7 +419,7 @@ const COPY: Record<Lang, HomeCopy> = {
 
 /**
  * A card heading with its last two words in one span, kept together from 375px
- * up (`.tail` in globals.css). Balance otherwise breaks «На основе
+ * up (`.tail` in globals.css). Balance otherwise breaks «На основе
  * опубликованных / исследований» with the last word alone, although
  * «опубликованных исследований» fits the card; below 375px it does not fit, so
  * there the span wraps like any text.

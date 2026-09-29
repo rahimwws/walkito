@@ -32,7 +32,7 @@ const COPY: Record<Lang, { h2: string; paragraphs: readonly string[]; contact: [
     h2: 'Hecho por Rahman y Rahim',
     paragraphs: [
       'Hacemos Walkito solo nosotros dos. Empezó muy cerca de casa: familia con pie plano, amigos con dolor de talón.',
-      'Plantillas, zapatillas nuevas, diez vídeos que dicen cosas distintas, y aun así dolía cada mañana. Lo que les faltaba era un plan.',
+      'Plantillas, zapatos nuevos, diez videos que dicen cosas distintas, y aun así dolía cada mañana. Lo que les faltaba era un plan.',
       'Ahora tú tienes uno.',
     ],
     contact: ['¿Preguntas? Escribe a ', '. Te responde una persona, normalmente en menos de 12 horas.'],

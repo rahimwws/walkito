@@ -1944,3 +1944,13 @@ figcaption {
     font-size: clamp(28px, 3.6vw, 38px);
   }
 }
+
+/* Russian and Spanish headings: Й, Ё and the accented capitals (Ó, Í)
+   carry marks above the cap height, and at the English line-height they
+   touched the line above. */
+:lang(ru) h1,
+:lang(ru) h2,
+:lang(es) h1,
+:lang(es) h2 {
+  line-height: 1.14;
+}
