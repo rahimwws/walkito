@@ -1,7 +1,10 @@
 // Screenshots, from the raw simulator captures to what the site and social
 // posts use.
 //
-//   node scripts/export-screenshots.mjs [rawDir] [framedDir]
+//   node scripts/export-screenshots.mjs [rawDir] [framedDir] [webSubdir]
+//
+// `webSubdir` (e.g. `ru`) writes the WebPs to public/app/<webSubdir>/ under the
+// same names, for screenshots taken with the app in another language.
 //
 // 1. Web: every raw PNG becomes a WebP at 660 px wide and a 2x copy at 1320
 //    (capped at the source width), written to public/app/. The phone frame is
@@ -22,7 +25,7 @@ import sharp from 'sharp';
 const here = fileURLToPath(new URL('.', import.meta.url));
 const rawDir = resolve(process.argv[2] ?? join(homedir(), 'Desktop/walkito-screenshots/raw/en'));
 const framedDir = resolve(process.argv[3] ?? join(homedir(), 'Desktop/walkito-screenshots/framed/en'));
-const webDir = resolve(here, '../public/app');
+const webDir = resolve(here, '../public/app', process.argv[4] ?? '');
 
 const WEB_WIDTH = 660;
 

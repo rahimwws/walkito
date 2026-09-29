@@ -446,7 +446,7 @@ export const HOME_META: Record<Lang, HomeCopy['meta']> = {
  * `public/app/<lang>/` under the English file names; a language missing from
  * this set shows the English screens.
  */
-const LOCALIZED_SHOTS: ReadonlySet<Lang> = new Set<Lang>([]);
+const LOCALIZED_SHOTS: ReadonlySet<Lang> = new Set<Lang>(['ru', 'es']);
 
 /**
  * The home page, in each of the site's languages: one layout, one copy object
