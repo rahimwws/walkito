@@ -57,6 +57,17 @@ export const PROGRAM = {
 } as const;
 
 /**
+ * The two pain thresholds the copy quotes, on the app's 0-10 scale.
+ *
+ * Read from the app: a morning counts towards the pain goal at `<= 1`
+ * (`src/entities/program/model/plan/goals.ts`), and in-session pain at
+ * `IN_SESSION_STOP` ends the session (`today.ts`). Same caveat as `PROGRAM`:
+ * change the plan, check these.
+ */
+export const PAIN_GOAL_MAX = 1;
+export const IN_SESSION_STOP = 6;
+
+/**
  * When each page's content last really changed, `YYYY-MM-DD`.
  *
  * Feeds the sitemap's `lastmod`, the Article dates and the visible "Updated"
@@ -68,6 +79,7 @@ export const PROGRAM = {
  */
 export const PAGE_UPDATED = {
   home: '2026-09-28',
+  runners: '2026-09-28',
   program: '2026-09-28',
   science: '2026-09-28',
   faq: '2026-09-28',
@@ -117,7 +129,12 @@ export function storeHref(campaign: string): string | null {
 /** The numeric id for the iOS Smart App Banner, once there is a listing. */
 export const APPLE_APP_ID: string | null = null;
 
-export const SUPPORT_EMAIL = 'hello@walkito.app';
+export const SUPPORT_EMAIL = 'hello@walkito.site';
+
+/** Social profiles, linked from the footer. Empty until the accounts exist; the
+ * footer leaves out any link whose URL is empty rather than pointing at a guess. */
+export const TIKTOK_URL = '';
+export const INSTAGRAM_URL = '';
 
 /**
  * IndexNow.

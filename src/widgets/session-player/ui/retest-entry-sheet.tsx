@@ -17,6 +17,7 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 import { RetestResult } from './retest-result';
 
@@ -130,7 +131,7 @@ export function RetestEntrySheet({ dayNumber, onDone }: RetestEntrySheetProps) {
   };
 
   return (
-    <View style={[StyleSheet.absoluteFill, { backgroundColor: colors.background }]}>
+    <View style={[StyleSheet.absoluteFill, { backgroundColor: colors.background }]} {...REPLAY_MASK}>
       <ScrollView
         contentContainerStyle={[
           styles.content,

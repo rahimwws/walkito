@@ -2,55 +2,14 @@ import Image from 'next/image';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Footer } from '@/components/Footer';
+import { APP, HomeEn } from '@/components/HomeEn';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { CHROME, TRANSLATED, type Lang } from '@/lib/i18n';
-import { PROGRAM, SITE_NAME } from '@/lib/site';
-
-/**
- * The two pain thresholds the copy quotes, on the app's 0–10 scale.
- *
- * Not in `PROGRAM` because nothing else on the site states them. Read from the
- * app: a morning counts towards the pain goal at `<= 1`
- * (`src/entities/program/model/plan/goals.ts`), and in-session pain at
- * `IN_SESSION_STOP` ends the session (`today.ts`). Same caveat as `PROGRAM`:
- * change the plan, check these.
- */
-const PAIN_GOAL_MAX = 1;
-const IN_SESSION_STOP = 6;
+import { IN_SESSION_STOP, PAIN_GOAL_MAX, PROGRAM } from '@/lib/site';
 
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
-const [DAYS_A, DAYS_B, DAYS_C] = PROGRAM.daysPerWeek;
 const { archHoldSeconds, calfRaises, balanceSeconds, gapPercent } = PROGRAM.goals;
-
-/**
- * The app itself, as schema.
- *
- * No `offers` and no `aggregateRating`, both deliberately. The price in the
- * brief was a number nobody checked against the store, and a rating block with
- * no ratings behind it is a manual-action risk rather than a shortcut — these
- * go in when there is a listing and real reviews to point at.
- *
- * No length either. The plan has none: it is built a week at a time and keeps
- * going while the person uses it, so "an N-week program" would be a claim the
- * app contradicts on the first day past N.
- */
-const APP = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: SITE_NAME,
-  applicationCategory: 'HealthApplication',
-  operatingSystem: 'iOS',
-  description:
-    'An exercise plan for heel and foot pain in runners, built one week at a time around a goal that can be measured.',
-  availableLanguage: ['en', 'ru', 'es'],
-  featureList: [
-    `Sessions of ${MIN_A}, ${MIN_B} or ${MIN_C} minutes, on ${DAYS_A}, ${DAYS_B} or ${DAYS_C} days a week`,
-    'Each week built around one measurable focus goal; a goal reached moves to maintaining and the next takes its place',
-    'Each day adapts to morning pain, yesterday’s steps and last night’s sleep',
-    `Physical tests every ${PROGRAM.testEveryDays} days, then every ${PROGRAM.testEveryDaysAfterGoal} once the first goal is reached`,
-  ],
-};
 
 type HomeCopy = {
   h1: string;
@@ -73,49 +32,14 @@ type HomeCopy = {
  * for the same reason. Real reviews go back in once the store has some.
  *
  * Until then the page shows what can be checked: three mechanisms, each with
- * the page that proves it — the week built around a goal, the day shaped by
- * the morning, and the test that measures it. Every number comes from
- * `PROGRAM` or the two thresholds above.
+ * the page that proves it: the week built around a goal, the day shaped by the
+ * morning, and the test that measures it. Every number comes from `PROGRAM` or
+ * the two thresholds beside it in `lib/site.ts`.
+ *
+ * Russian and Spanish only. The English home page is `HomeEn`, and the English
+ * runner copy that used to be here now lives at `/heel-pain-runners/`.
  */
-const COPY: Record<Lang, HomeCopy> = {
-  en: {
-    h1: 'Heel pain',
-    h1Line2: 'from running?',
-    intro: `Walkito is an exercise plan for heel and foot pain in runners, built one week at a time around a goal you can measure: calf strength, stretching and balance work in sessions of ${MIN_A}, ${MIN_B} or ${MIN_C} minutes. Each morning the day adapts to how your heel feels, and when a goal is reached the next one takes its place.`,
-    shotAlt: "Walkito on iPhone: the week as seven flames, today's check-in, and the day's tasks.",
-    howHeading: 'How it works',
-    how: [
-      {
-        title: 'A week at a time, around one goal',
-        text: `Each week centres on a goal you can measure: morning heel pain at ${PAIN_GOAL_MAX}/10 or less for ${PROGRAM.painFreeDays} days running, a ${archHoldSeconds}-second arch hold, ${calfRaises} single-leg calf raises, ${balanceSeconds} seconds of single-leg balance, or left and right within ${gapPercent}% of each other. Reach one and it moves to maintaining while the next takes its place.`,
-        href: '/program/',
-        link: 'How the plan works',
-      },
-      {
-        title: `${MIN_A}, ${MIN_B} or ${MIN_C} minutes, set by the morning`,
-        text: `Log this morning’s heel pain in one tap. A painful morning, a big step count yesterday or a short night makes today’s session shorter or gentler; pain of ${IN_SESSION_STOP}/10 or more during a session ends it and steps the next two back. A bad day lowers the load rather than stopping the plan.`,
-        href: '/science/',
-        link: 'Read the evidence',
-      },
-      {
-        title: `A test every ${PROGRAM.testEveryDays} days, then every ${PROGRAM.testEveryDaysAfterGoal}`,
-        text: `${PROGRAM.retestTests} physical tests in about ${PROGRAM.retestMinutes} minutes — calf raises to failure, an arch hold, single-leg balance on both sides. Every ${PROGRAM.testEveryDays} days until your first goal is reached, then every ${PROGRAM.testEveryDaysAfterGoal}. Progress is measured, not guessed from how the week felt.`,
-        href: '/program/',
-        link: 'What the tests measure',
-      },
-    ],
-    guidesHeading: 'Start with the exercises',
-    guides: [
-      {
-        title: 'Exercises for plantar fasciitis',
-        text: 'Heel raises and stretches, with Walkito’s starting doses and what the 2023 guideline recommends.',
-      },
-      {
-        title: 'Exercises for flat feet',
-        text: 'Short-foot, toe and balance work for flexible flat feet, and how long the arch takes to respond.',
-      },
-    ],
-  },
+const COPY: Record<Exclude<Lang, 'en'>, HomeCopy> = {
   ru: {
     h1: 'Болит пятка',
     h1Line2: 'после бега?',
@@ -205,9 +129,10 @@ const COPY: Record<Lang, HomeCopy> = {
  * language: no word implying diagnosis or cure.
  */
 export function Home({ lang }: { lang: Lang }) {
+  if (lang === 'en') return <HomeEn />;
   const copy = COPY[lang];
   const c = CHROME[lang];
-  const suffix = lang === 'en' ? '' : `-${lang}`;
+  const suffix = `-${lang}`;
   const guideHrefs = [TRANSLATED.heelPain[lang], TRANSLATED.flatFeet[lang]];
 
   return (

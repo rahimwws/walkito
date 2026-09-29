@@ -29,7 +29,7 @@ export const LEGAL = {
  * profile screen needs the same address, and two copies of a support address is
  * how one of them ends up pointing at a mailbox nobody reads.
  */
-export const SUPPORT_EMAIL = 'hello@walkito.app';
+export const SUPPORT_EMAIL = 'hello@walkito.site';
 
 /**
  * The numeric id App Store Connect assigned to Walkito — the one in

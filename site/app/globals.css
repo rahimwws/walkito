@@ -237,22 +237,6 @@ body {
   transform: none;
 }
 
-/* The pre-launch pill: the same shape as the live one, so launch day does not
-   reflow the hero, but in outline — it is information, not a control, and a
-   filled pill is what people have learned to press. */
-.store .soon {
-  display: inline-flex;
-  align-items: center;
-  gap: 13px;
-  color: var(--ink);
-  border: 1.5px solid var(--ink);
-  font-size: clamp(17px, 1.8vw, 21px);
-  font-weight: 600;
-  letter-spacing: -0.3px;
-  padding: 16px 30px;
-  border-radius: 999px;
-}
-
 .store svg {
   width: 26px;
   height: 26px;
@@ -694,6 +678,205 @@ figure figcaption b {
  * whitespace tuned for a 1440px canvas eats a third of a phone, and controls
  * sized by their text end up under the 44pt minimum a thumb needs.
  */
+
+/* ------------------------------------------------------------- home (en) -- */
+
+/* A longer headline than the page was drawn for: the second line is a whole
+   sentence, so the display size comes down a step to keep it to two or three
+   lines instead of five. */
+.hero-long h1 {
+  font-size: clamp(40px, 6.6vw, 84px);
+}
+
+.hero .hero-small {
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+/* Plain paragraphs under a display heading: the "why" sections that carry the
+   page's argument rather than a card grid. */
+.story {
+  padding-block: 84px 0;
+  text-align: center;
+}
+
+.story h2,
+.split h2 {
+  margin: 0 0 22px;
+  font-family: var(--font-display), var(--font-body);
+  font-weight: 400;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.story p {
+  max-width: 640px;
+  margin: 0 auto 16px;
+  font-size: clamp(16px, 1.5vw, 19px);
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.story .story-contact {
+  margin-top: 28px;
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.story .story-contact a {
+  color: var(--ink);
+}
+
+/* Text beside a phone. The phone swaps sides on the second one so two in a
+   row do not read as the same block twice. */
+.split {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 56px;
+  padding-block: 84px 0;
+}
+
+.split p {
+  max-width: 520px;
+  margin: 0;
+  font-size: clamp(16px, 1.5vw, 19px);
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.split-flip {
+  grid-template-columns: auto 1fr;
+}
+
+.split-flip > :first-child {
+  order: 2;
+}
+
+/* A screenshot, or the phone-shaped place one will go. Drawn to the
+   proportions of app-home.png (538 × 1100) so a real image drops in without
+   anything moving. */
+.slot {
+  width: 260px;
+  aspect-ratio: 538 / 1100;
+  flex: none;
+}
+
+/* In the hero, where the phone is the size the screenshot was. */
+.shot .slot {
+  width: min(320px, 72vw);
+}
+
+.slot-sm {
+  width: 100%;
+  max-width: 220px;
+  margin-inline: auto;
+}
+
+.slot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 24px 48px rgba(17, 17, 20, 0.2));
+}
+
+.slot-empty {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 22px;
+  border: 7px solid var(--ink);
+  border-radius: 40px;
+  background: linear-gradient(160deg, #f4f0ff 0%, #ffffff 55%, #efeafd 100%);
+  box-shadow: 0 24px 48px rgba(17, 17, 20, 0.12);
+}
+
+.slot-island {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  width: 34%;
+  height: 16px;
+  border-radius: 999px;
+  background: var(--ink);
+  transform: translateX(-50%);
+}
+
+.slot-label {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--muted);
+}
+
+.slot-sm.slot-empty {
+  border-width: 6px;
+  border-radius: 32px;
+}
+
+.slot-sm .slot-island {
+  top: 10px;
+  height: 13px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.gallery-item p {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.home-faq .faq {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.home-faq .faq h3 {
+  margin: 0 0 8px;
+  font-size: 19px;
+}
+
+.home-faq .faq p {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.final {
+  text-align: center;
+}
+
+/* Four cards in one row rather than three and an orphan; two by two where
+   four do not fit. */
+.quotes-four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1000px) {
+  .quotes-four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* A card section that leads straight into a split section, and one that
+   follows a phone: the split carries the gap above it, and cards directly
+   under a phone need a little air rather than none. */
+.proof-lead {
+  padding-bottom: 0;
+}
+
+.proof-follow {
+  padding-top: 56px;
+}
+
 @media (max-width: 760px) {
   .shell {
     padding: 0 20px;
@@ -779,6 +962,45 @@ figure figcaption b {
 
   .proof h2 {
     margin-bottom: 24px;
+  }
+
+  .story,
+  .split {
+    padding-block: 52px 0;
+  }
+
+  /* One column, text first, phone under it, on both split sections. */
+  .split,
+  .split-flip {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .split-flip > :first-child {
+    order: 0;
+  }
+
+  .split p {
+    margin-inline: auto;
+  }
+
+  .split .slot {
+    width: min(240px, 64vw);
+    margin-inline: auto;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px 14px;
+  }
+
+  .quotes-four {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-follow {
+    padding-top: 40px;
   }
 
   figure {

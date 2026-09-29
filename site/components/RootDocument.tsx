@@ -15,7 +15,7 @@ const ORGANISATION = {
   // keeps going while it is used. No `sameAs` until there are profiles that
   // are really ours to point at.
   description:
-    'An exercise plan for heel and foot pain in runners, drawn from published rehabilitation protocols and built one week at a time around a measurable goal.',
+    'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
 };
 
 /**

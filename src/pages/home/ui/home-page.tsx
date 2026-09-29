@@ -41,6 +41,7 @@ import { PainCheck } from './pain-check';
 import { TodayTasks } from './today-tasks';
 import { LibraryRow } from './library-row';
 import { DailyBrief } from '@/shared/ui/daily-brief';
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 
 /**
@@ -218,7 +219,9 @@ export function HomePage() {
 
         {/* Under the week: one says which day, the other says how that day is
             going. */}
-        <IntroReveal order={2} style={styles.brief}>
+        {/* Masked in session recordings: it says the user's name, their pain
+            and their Apple Health numbers. */}
+        <IntroReveal order={2} style={styles.brief} {...REPLAY_MASK}>
           <DailyBrief
             tokens={briefTokens(
               {

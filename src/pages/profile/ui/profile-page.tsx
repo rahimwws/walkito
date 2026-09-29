@@ -24,6 +24,7 @@ import { SUPPORT_EMAIL, accents, fonts, meterColors, palette } from '@/shared/co
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { GiftSheet } from '@/shared/ui/gift-sheet';
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 import { DeleteAccountSheet } from './delete-account-sheet';
 import { NotePreviewRow } from './note-preview-row';
@@ -57,7 +58,7 @@ export function ProfilePage() {
   const greeting = firstName(name);
 
   return (
-    <View style={styles.screen}>
+    <View style={styles.screen} {...REPLAY_MASK}>
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{

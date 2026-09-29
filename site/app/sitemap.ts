@@ -28,7 +28,7 @@ export const dynamic = 'force-static';
 function translated(
   page: TranslatedPage,
   updated: (lang: Lang) => string,
-  changeFrequency: 'weekly' | 'monthly',
+  changeFrequency: 'weekly' | 'monthly' | 'yearly',
   priority: number,
 ): MetadataRoute.Sitemap {
   const paths = TRANSLATED[page];
@@ -61,11 +61,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...translated('heelPain', (lang) => GUIDES.heelPain[lang].updated, 'monthly', 0.9),
     ...translated('flatFeet', (lang) => GUIDES.flatFeet[lang].updated, 'monthly', 0.9),
     ...translated('about', () => PAGE_UPDATED.about, 'monthly', 0.6),
+    // English only for now, so no alternates.
+    single('/heel-pain-runners/', PAGE_UPDATED.runners, 'monthly', 0.9),
     single('/program/', PAGE_UPDATED.program, 'monthly', 0.9),
     single('/science/', PAGE_UPDATED.science, 'monthly', 0.9),
     single('/faq/', PAGE_UPDATED.faq, 'monthly', 0.8),
-    single('/support/', PAGE_UPDATED.support, 'monthly', 0.5),
-    single('/privacy/', PAGE_UPDATED.privacy, 'yearly', 0.3),
-    single('/terms/', PAGE_UPDATED.terms, 'yearly', 0.3),
+    ...translated('support', () => PAGE_UPDATED.support, 'monthly', 0.5),
+    ...translated('privacy', () => PAGE_UPDATED.privacy, 'yearly', 0.3),
+    ...translated('terms', () => PAGE_UPDATED.terms, 'yearly', 0.3),
   ];
 }

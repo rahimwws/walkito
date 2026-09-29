@@ -24,10 +24,9 @@ function DownloadGlyph() {
 /**
  * The header, identical on every page.
  *
- * Once there is a listing the button goes straight to it, tagged `masthead` so
- * App Analytics can tell it apart from the badges in the page body. Until then
- * it moves you to the badge further down, which says plainly that the app is
- * not out yet — see the note on the badge itself.
+ * The button says "Get the app" and goes straight to the listing, tagged
+ * `masthead` so App Analytics can tell it apart from the badges in the page
+ * body. Until `APP_STORE_URL` is set it points at `#`, like the badges.
  */
 export function Masthead({ lang = 'en' }: { lang?: Lang }) {
   const href = storeHref(lang === 'en' ? 'masthead' : `masthead-${lang}`);
@@ -58,21 +57,14 @@ export function Masthead({ lang = 'en' }: { lang?: Lang }) {
             <Link href={TRANSLATED.heelPain[lang]}>{c.navHeelPain}</Link>
           </>
         )}
-        <Link href="/support/">{c.navSupport}</Link>
-        <Link href="/privacy/">{c.navPrivacy}</Link>
+        <Link href={TRANSLATED.support[lang]}>{c.navSupport}</Link>
+        <Link href={TRANSLATED.privacy[lang]}>{c.navPrivacy}</Link>
       </nav>
 
-      {href ? (
-        <a className="download" href={href}>
-          {c.downloadHeader}
-          <DownloadGlyph />
-        </a>
-      ) : (
-        <Link className="download" href={`${home}#get`}>
-          {c.soonHeader}
-          <DownloadGlyph />
-        </Link>
-      )}
+      <a className="download" href={href ?? '#'}>
+        {c.headerButton}
+        <DownloadGlyph />
+      </a>
     </header>
   );
 }

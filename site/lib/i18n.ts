@@ -4,10 +4,12 @@
  * The app ships in English, Russian and Spanish, so the site does too — and the
  * Russian and Spanish results for "flat feet exercises" are far thinner than
  * the English ones, which makes them the cheapest first page a new domain can
- * reach. Only the home page and the guides are translated. The program,
- * evidence, FAQ and legal pages stay English: they carry clinical figures and
- * legal wording, and a machine-quality translation of either is worse than an
- * honest English page.
+ * reach. The home page, the guides and the three pages App Store review reads
+ * (support, privacy, terms) are translated. The program, evidence and FAQ
+ * pages stay English: they carry clinical figures, and a machine-quality
+ * translation of those is worse than an honest English page. Where a legal
+ * translation and the English differ, the English applies, and each
+ * translated legal page says so.
  *
  * Typed off English like the app's catalogue: a key missing in Russian or
  * Spanish fails `tsc`.
@@ -31,11 +33,9 @@ export const OG_LOCALE: Record<Lang, string> = {
 };
 
 const en = {
-  soonHeader: 'Coming soon',
-  downloadHeader: 'Download App',
-  soonBadge: 'Coming soon to the App Store',
-  getBadge: 'Get the app',
-  getBadgeLabel: 'Get Walkito on the App Store',
+  headerButton: 'Get the app',
+  getBadge: 'Download on the App Store',
+  getBadgeLabel: 'Download Walkito on the App Store',
   navProgram: 'Program',
   navEvidence: 'Evidence',
   navQuestions: 'Questions',
@@ -60,10 +60,8 @@ const en = {
 type Chrome = Record<keyof typeof en, string>;
 
 const ru: Chrome = {
-  soonHeader: 'Скоро',
-  downloadHeader: 'Скачать',
-  soonBadge: 'Скоро в App Store',
-  getBadge: 'Скачать приложение',
+  headerButton: 'Скачать приложение',
+  getBadge: 'Скачать в App Store',
   getBadgeLabel: 'Скачать Walkito в App Store',
   navProgram: 'Программа',
   navEvidence: 'Исследования',
@@ -83,15 +81,13 @@ const ru: Chrome = {
   relatedHeading: 'Похожие гайды',
   navAbout: 'О проекте',
   notice:
-    'Walkito — программа упражнений. Она не ставит диагноз и не лечит. Если боль острая, усиливается или мешает спать, обратитесь к врачу.',
+    'Walkito: программа упражнений. Она не ставит диагноз и не лечит. Если боль острая, усиливается или мешает спать, обратитесь к врачу.',
 };
 
 const es: Chrome = {
-  soonHeader: 'Muy pronto',
-  downloadHeader: 'Descargar',
-  soonBadge: 'Muy pronto en el App Store',
-  getBadge: 'Descargar la app',
-  getBadgeLabel: 'Descarga Walkito en el App Store',
+  headerButton: 'Descargar la app',
+  getBadge: 'Descargar en el App Store',
+  getBadgeLabel: 'Descargar Walkito en el App Store',
   navProgram: 'Programa',
   navEvidence: 'Evidencia',
   navQuestions: 'Preguntas',
@@ -139,6 +135,9 @@ export const TRANSLATED = {
     ru: '/ru/o-proekte/',
     es: '/es/sobre-walkito/',
   },
+  support: { en: '/support/', ru: '/ru/podderzhka/', es: '/es/soporte/' },
+  privacy: { en: '/privacy/', ru: '/ru/konfidentsialnost/', es: '/es/privacidad/' },
+  terms: { en: '/terms/', ru: '/ru/usloviya/', es: '/es/terminos/' },
 } as const satisfies Record<string, Record<Lang, string>>;
 
 export type TranslatedPage = keyof typeof TRANSLATED;

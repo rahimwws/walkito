@@ -2,39 +2,21 @@ import type { Metadata } from 'next';
 
 import { RootDocument } from '@/components/RootDocument';
 import { alternatesFor } from '@/lib/i18n';
-import { APPLE_APP_ID, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
+import { APPLE_APP_ID, SITE_NAME, SITE_URL } from '@/lib/site';
 
 import '../globals.css';
 
-/** "3, 5 or 10" — a list of options as a sentence says it. */
-const or = (xs: readonly number[]) => `${xs.slice(0, -1).join(', ')} or ${xs[xs.length - 1]}`;
-
-// The plan has no fixed length — it is built one week at a time around a goal —
-// so neither the title nor the description may count weeks. Numbers come from
-// `PROGRAM`, which is read out of the app.
-const DESCRIPTION = `Exercises for heel and foot pain in runners, built one week at a time around a goal: ${or(PROGRAM.sessionMinutes)} minutes a session, softer on bad mornings.`;
-const SOCIAL_TITLE = 'Heel pain from running? A plan that adapts every week | Walkito';
-const SOCIAL_DESCRIPTION = `Calf strength, stretching and balance work, ${or(PROGRAM.sessionMinutes)} minutes a session, built one week at a time and softer on bad mornings.`;
-
-/**
- * `metadataBase` first, because everything downstream depends on it.
- *
- * Without it every relative URL in metadata stays relative: Open Graph images
- * break in every scraper that will not guess a host, and canonicals can come
- * out invalid. It is also the one line that decides which domain the whole
- * site's SEO accrues to, which is why the host lives in `lib/site.ts` and not
- * inline here.
- */
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     // The home page's title is this default, so it carries the query the
     // page is built for rather than the tagline.
-    default: 'Heel Pain Exercises for Runners — a Plan That Adapts | Walkito',
+    default: 'Walkito: Exercises for Heel and Foot Pain',
     // Every page supplies its own unique half; this appends the brand.
     template: `%s | ${SITE_NAME}`,
   },
-  description: DESCRIPTION,
+  description:
+    'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
   alternates: alternatesFor('home', 'en'),
   robots: {
     index: true,
@@ -54,8 +36,8 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: SOCIAL_TITLE,
-    description: SOCIAL_DESCRIPTION,
+    title: 'Walkito: Exercises for Heel and Foot Pain',
+    description: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
     url: '/',
     siteName: SITE_NAME,
     locale: 'en_US',
@@ -67,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: SOCIAL_TITLE,
-    description: SOCIAL_DESCRIPTION,
+    title: 'Walkito: Exercises for Heel and Foot Pain',
+    description: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
     images: ['/opengraph-image'],
   },
   // iOS shows a native install strip when this is present. Omitted until there

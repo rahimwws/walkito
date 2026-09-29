@@ -7,6 +7,7 @@ import Animated, { Easing, ReduceMotion, useAnimatedStyle, useSharedValue, withT
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 import type { OutcomeView } from '../model/plan-view';
 
@@ -57,7 +58,9 @@ export function GoalCard({ view, tone }: { view: OutcomeView; tone: { fill: stri
   );
 
   return (
-    <View style={styles.wrap}>
+    // Hidden from session recordings: the goal's current value is a pain
+    // count or a test result.
+    <View style={styles.wrap} {...REPLAY_MASK}>
       <Pane>{content}</Pane>
     </View>
   );

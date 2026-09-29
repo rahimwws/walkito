@@ -17,6 +17,7 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 export type SessionPainSheetProps = {
   visible: boolean;
@@ -104,7 +105,7 @@ export function SessionPainSheet({ visible, onPick, onCancel }: SessionPainSheet
   const stops = score != null && score >= IN_SESSION_STOP_PAIN;
 
   return (
-    <View style={styles.host} pointerEvents={visible ? 'box-none' : 'none'}>
+    <View style={styles.host} pointerEvents={visible ? 'box-none' : 'none'} {...REPLAY_MASK}>
       <Animated.View style={[styles.fill, backdrop]} pointerEvents="none">
         <BlurView tint={scheme === 'dark' ? 'dark' : 'light'} intensity={BLUR} style={styles.fill} />
         <View style={[styles.fill, styles.wash]} />

@@ -1,6 +1,13 @@
 import Link from 'next/link';
 
 import { CHROME, LANG_NAMES, LANGS, TRANSLATED, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { INSTAGRAM_URL, TIKTOK_URL } from '@/lib/site';
+
+/** Brand names, not translated. A profile with no URL yet is left out. */
+const SOCIAL = [
+  { name: 'TikTok', href: TIKTOK_URL },
+  { name: 'Instagram', href: INSTAGRAM_URL },
+].filter((s) => s.href !== '');
 
 /**
  * The footer, on every page in every language.
@@ -25,9 +32,14 @@ export function Footer({ lang = 'en', page }: { lang?: Lang; page?: TranslatedPa
           <Link href={TRANSLATED.flatFeet[lang]}>{c.navFlatFeet}</Link>
           <Link href={TRANSLATED.heelPain[lang]}>{c.navHeelPain}</Link>
           <Link href={TRANSLATED.about[lang]}>{c.navAbout}</Link>
-          <Link href="/support/">{c.navSupport}</Link>
-          <Link href="/privacy/">{c.navPrivacy}</Link>
-          <Link href="/terms/">{c.navTerms}</Link>
+          <Link href={TRANSLATED.support[lang]}>{c.navSupport}</Link>
+          <Link href={TRANSLATED.privacy[lang]}>{c.navPrivacy}</Link>
+          <Link href={TRANSLATED.terms[lang]}>{c.navTerms}</Link>
+          {SOCIAL.map((s) => (
+            <a key={s.name} href={s.href} rel="me noopener">
+              {s.name}
+            </a>
+          ))}
         </nav>
         {page && (
           <nav aria-label={c.language} className="langs">

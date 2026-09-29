@@ -17,6 +17,7 @@ import { fonts } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { TypedText } from '@/shared/ui/typed-text';
 import { PrimaryButton } from '@/shared/ui/primary-button';
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
 import { PLAN_PHOTOS } from '../config/plan-photos';
 import { defaultBuildingLines, type BuildingLines } from '../model/reflection';
@@ -122,7 +123,9 @@ export function BuildingStep({ sex, lines, onDone, insets }: BuildingStepProps) 
   const photo = PLAN_PHOTOS[sex ?? 'female'] ?? PLAN_PHOTOS.female;
 
   return (
+    // Masked in session recordings: the lines repeat the pain answers.
     <Animated.View
+      {...REPLAY_MASK}
       entering={FadeIn.duration(420).reduceMotion(ReduceMotion.System)}
       style={styles.fill}>
       {/* Sized by the wrapper rather than by `StyleSheet.absoluteFill` on the
