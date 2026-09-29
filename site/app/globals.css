@@ -1735,3 +1735,49 @@ figure figcaption b {
     transform: none;
   }
 }
+
+/* An exercise without a clip: the text takes the full width, no empty box. */
+.prose .exercise-detail.exercise-text {
+  grid-template-columns: 1fr;
+}
+
+/* Mobile header: the nav is one row that scrolls sideways instead of wrapping
+   a lone link onto a second line. Every link stays, Support and Privacy
+   included. */
+@media (max-width: 760px) {
+  .nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    mask-image: linear-gradient(90deg, #000 88%, transparent);
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a {
+    flex: none;
+    white-space: nowrap;
+  }
+}
+
+/* The App Store button stays on one line down to 320px. */
+@media (max-width: 420px) {
+  .store a {
+    gap: 9px;
+    padding: 14px 20px;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .store svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .final-card {
+    padding-inline: 12px;
+  }
+}

@@ -97,6 +97,9 @@ export const FLAT_FEET_EN: Guide = {
           feel: 'The small muscles under the arch working',
           how: 'Sit with a towel flat on the floor under your foot. Pull the towel in with your toes, and keep the heel down. The towel scrunch wakes up the small muscles under the arch.',
           image: 'Exercise: towel scrunch',
+          media: 'towel_scrunch',
+          caption: 'Towel scrunch: pull the towel in with your toes, the heel stays down',
+          alt: 'A seated figure pulling a towel in with the toes of one foot',
         },
         {
           name: 'Big toe lift',
@@ -105,6 +108,9 @@ export const FLAT_FEET_EN: Guide = {
           feel: 'The big toe moving on its own',
           how: 'Sit with your feet flat. Lift only the big toe and hold. The other four toes stay flat on the floor. The big toe lift teaches the big toe to move on its own, which is the arch’s first switch.',
           image: 'Exercise: big toe lift',
+          media: 'big_toe_lift',
+          caption: 'Big toe lift: lift only the big toe while the other four stay flat',
+          alt: 'A foot on the floor lifting only the big toe, the arch highlighted',
         },
         {
           name: 'Short foot, seated',
@@ -157,6 +163,9 @@ export const FLAT_FEET_EN: Guide = {
           feel: 'Work along the inside of the foot and ankle',
           how: 'Sit with a resistance band around the foot and turn the foot in against it. Move the foot, not the leg. The knee stays still. Walkito adds the band turn-in only after six sessions of the standing short foot, so the arch’s own muscles come first.',
           image: 'Exercise: band turn-in',
+          media: 'band_inversion',
+          caption: 'Band turn-in: turn the foot in against the band, the knee stays still',
+          alt: 'A leg with a resistance band around the foot, turning the foot inward, the lower leg highlighted',
         },
         {
           name: 'Single-leg hold',
@@ -176,6 +185,9 @@ export const FLAT_FEET_EN: Guide = {
           feel: 'Work on the outside of the hip',
           how: 'Stand with a resistance band and lift one leg out to the side against it. Push through the heel, not the toes. A hip that gives way lands the load on the arch.',
           image: 'Exercise: hip abduction',
+          media: 'hip_abduction',
+          caption: 'Hip abduction: lift one leg out to the side against the band',
+          alt: 'A standing figure with a band around both legs lifting one leg out to the side, the outer hip highlighted',
         },
         {
           name: 'Calf and soleus stretch',
@@ -348,6 +360,9 @@ export const HEEL_PAIN_EN: Guide = {
           feel: 'Easy work in the calves',
           how: 'Sit with your feet flat and press up through the balls of your feet. Hands on the knees add resistance. Seated heel raises work the calf with almost no load on the heel.',
           image: 'Exercise: seated heel raises',
+          media: 'heel_raise_seated',
+          caption: 'Seated heel raises: press up through the balls of the feet',
+          alt: 'A seated figure lifting both heels, the calves highlighted',
         },
         {
           name: 'Heel raises on both feet',
@@ -356,6 +371,9 @@ export const HEEL_PAIN_EN: Guide = {
           feel: 'The calves working together',
           how: 'Stand on both feet, rise straight up over the big toes, then lower slowly. Both feet share the load while the calf wakes up.',
           image: 'Exercise: heel raises on both feet',
+          media: 'heel_raise_double',
+          caption: 'Heel raises on both feet: rise straight up over the big toes, then lower slowly',
+          alt: 'A standing figure rising onto the toes of both feet, the calf highlighted',
         },
         {
           name: 'Heel raise hold',
@@ -364,6 +382,9 @@ export const HEEL_PAIN_EN: Guide = {
           feel: 'The calves working to stay still',
           how: 'Rise onto your toes on both feet, then stay still at the top. Don’t sink back down. Holding at the top loads the tendon without the bounce.',
           image: 'Exercise: heel raise hold',
+          media: 'heel_raise_hold',
+          caption: 'Heel raise hold: rise, then stay still at the top',
+          alt: 'A figure holding a raised position on the toes of both feet, the calves highlighted',
         },
         {
           name: 'Heel raises with a towel',

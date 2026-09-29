@@ -7,7 +7,6 @@ import { Cite } from '@/components/Cite';
 import { ExerciseMedia } from '@/components/ExerciseMedia';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
-import { ScreenshotSlot } from '@/components/ScreenshotSlot';
 import { GUIDES, type Guide as GuideData } from '@/lib/guides';
 import type { GuideTable } from '@/lib/guides/types';
 import { CHROME, TRANSLATED } from '@/lib/i18n';
@@ -198,12 +197,9 @@ export function Guide({ guide }: { guide: GuideData }) {
             {section.table && <Table table={section.table} />}
             {section.exercises?.some((e) => e.feel != null) ? (
               section.exercises.map((e) => (
-                <div key={e.name} className="exercise-detail">
-                  {e.media ? (
-                    <ExerciseMedia id={e.media} alt={e.alt ?? e.name} caption={e.caption} />
-                  ) : (
-                    <ScreenshotSlot label={e.image ?? e.name} size="sm" />
-                  )}
+                // An exercise without a clip is text only: no empty box.
+                <div key={e.name} className={e.media ? 'exercise-detail' : 'exercise-detail exercise-text'}>
+                  {e.media && <ExerciseMedia id={e.media} alt={e.alt ?? e.name} caption={e.caption} />}
                   <div>
                     <h3>{e.name}</h3>
                     <p>

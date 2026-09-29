@@ -53,6 +53,13 @@ const EXERCISES = [
   { id: 'toe_spread', file: '04_toe_spread.mp4', start: 0.6, dur: 4.0, poster: 2.2, y: 380 },
   { id: 'single_leg_hold', file: '11_single_leg_hold.mp4', start: 1.0, dur: 4.0, poster: 3.0, y: 380 },
   { id: 'foot_roll', file: '07_foot_roll.mp4', start: 0.8, dur: 4.0, poster: 2.5, y: 380 },
+  { id: 'heel_raise_seated', file: '20_seated_heel_raise.mp4', start: 0.3, dur: 3.2, poster: 2.1, y: 300 },
+  { id: 'heel_raise_double', file: '19_double_leg_heel_raise.mp4', start: 1.0, dur: 4.4, poster: 2.9, y: 380 },
+  { id: 'heel_raise_hold', file: '21_heel_raise_hold.mp4', start: 1.0, dur: 4.0, poster: 2.9, y: 380 },
+  { id: 'towel_scrunch', file: '23_towel_scrunch.mp4', start: 1.0, dur: 4.4, poster: 2.2, y: 300 },
+  { id: 'big_toe_lift', file: '22_big_toe_lift.mp4', start: 0.8, dur: 3.4, poster: 1.4, y: 300 },
+  { id: 'band_inversion', file: '14_band_inversion.mp4', start: 0.8, dur: 4.0, poster: 1.5, y: 260 },
+  { id: 'hip_abduction', file: '16_hip_abduction.mp4', start: 0.6, dur: 4.4, poster: 1.4, y: 380 },
 ];
 
 function run(args) {

@@ -13,7 +13,7 @@ const COPY: Record<Lang, { h2: string; paragraphs: readonly string[]; contact: [
     h2: 'Made by Rahman and Rahim',
     paragraphs: [
       'We make Walkito, just the two of us. It started close to home: family with flat feet, friends with heel pain.',
-      'Insoles, new shoes, ten videos saying different things, and it still hurt every morning. It’s not your fault. Nobody gave you a plan: which exercises, how many, in what order, and what to do on a bad day.',
+      'Insoles, new shoes, ten videos saying different things, and it still hurt every morning. What they needed was a plan.',
       'Now you have one.',
     ],
     contact: ['Questions? Write to ', '. A person replies, usually within 12 hours.'],
@@ -22,7 +22,7 @@ const COPY: Record<Lang, { h2: string; paragraphs: readonly string[]; contact: [
     h2: 'Walkito делают Рахман и Рахим',
     paragraphs: [
       'Walkito делаем только мы вдвоём. Всё началось с близких: у родных плоскостопие, у друзей болит пятка.',
-      'Стельки, новая обувь, десяток видео, где говорят разное, а по утрам всё равно больно. Вы в этом не виноваты. Просто никто не дал вам план: какие упражнения, сколько, в каком порядке и что делать в плохой день.',
+      'Стельки, новая обувь, десяток видео, где говорят разное, а по утрам всё равно больно. Им нужен был план.',
       'Теперь он у вас есть.',
     ],
     contact: ['Есть вопросы? Напишите на ', '. Ответит человек, обычно в течение 12 часов.'],
@@ -31,7 +31,7 @@ const COPY: Record<Lang, { h2: string; paragraphs: readonly string[]; contact: [
     h2: 'Hecho por Rahman y Rahim',
     paragraphs: [
       'Hacemos Walkito solo nosotros dos. Empezó muy cerca de casa: familia con pie plano, amigos con dolor de talón.',
-      'Plantillas, zapatillas nuevas, diez vídeos que dicen cosas distintas, y aun así dolía cada mañana. No es culpa tuya. Nadie te dio un plan: qué ejercicios, cuántos, en qué orden y qué hacer en un día malo.',
+      'Plantillas, zapatillas nuevas, diez vídeos que dicen cosas distintas, y aun así dolía cada mañana. Lo que les faltaba era un plan.',
       'Ahora tienes uno.',
     ],
     contact: ['¿Preguntas? Escribe a ', '. Te responde una persona, normalmente en menos de 12 horas.'],
