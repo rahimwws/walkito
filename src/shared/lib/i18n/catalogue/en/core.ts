@@ -75,6 +75,7 @@ export const CORE_EN = {
   'settings.equipment.ball': 'Massage ball',
   'settings.account.saveTitle': 'Keep your progress',
   'settings.account.saveBody': 'Sign in with Apple and your plan, check-ins and tests come back on a new phone or after reinstalling.',
+  'settings.account.saveBodyGoogle': 'Sign in with Google and your plan, check-ins and tests come back on a new phone or after reinstalling.',
   'settings.account.signedIn': 'Signed in with Apple. Your progress is saved to your account.',
   'settings.lastSync': 'Last synced {time}',
   'settings.lastSyncNever': 'Not synced yet',
@@ -166,7 +167,7 @@ export const CORE_EN = {
   // from the store, and a figure in a catalogue is one the store can contradict.
   'purchase.unavailable': 'That plan isn’t available right now.',
 
-  'quick.deleteTitle': '{name}, WAIT.',
+  'quick.deleteTitle': '{name}, wait.',
   'quick.deleteBody': 'I’m about to delete the app.\n\nWhat pushed me out:\n\n',
   'quick.deleteSubject': 'Before I delete Walkito',
   'quick.talkSubject': 'Something is off in Walkito',
@@ -224,4 +225,5 @@ export const CORE_EN = {
   'common.close': 'Close',
   'common.profile': 'Profile',
   'common.done': 'Done',
+  'common.cancel': 'Cancel',
 } as const satisfies Record<string, SourceEntry>;

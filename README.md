@@ -104,8 +104,8 @@ assets/   Fonts, icons, Lottie
 
 ## Before shipping this as your own app
 
-- **Artwork is still Clarity's.** `assets/app*.icon` and
-  `assets/lottie/splash/*.json` carry the previous app's logo. Replace them.
+- **Artwork is still Clarity's.** `assets/app*.icon` carry the previous app's
+  logo. Replace them.
 - **No EAS project.** The old `projectId`, `owner`, and updates URL were
   removed. Run `eas init` to link your own.
 - **Bundle ID** is a placeholder: `com.walkito.app`, in `app.json` and

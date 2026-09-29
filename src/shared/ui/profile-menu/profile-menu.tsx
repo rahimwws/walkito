@@ -1,8 +1,9 @@
 import User03Icon from '@hugeicons/core-free-icons/User03Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import { GlassView } from 'expo-glass-effect';
+import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Pressable, StyleSheet } from 'react-native';
 
+import { meterColors } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
@@ -33,7 +34,9 @@ export function ProfileMenu({ onPress }: ProfileMenuProps) {
       accessibilityLabel={t('common.profile')}
       onPress={onPress}
       style={({ pressed }) => pressed && { opacity: 0.7 }}>
-      <GlassView isInteractive style={styles.capsule}>
+      <GlassView
+        isInteractive
+        style={[styles.capsule, !isLiquidGlassAvailable() && { backgroundColor: meterColors[scheme].track }]}>
         <HugeiconsIcon
           icon={User03Icon}
           size={24}

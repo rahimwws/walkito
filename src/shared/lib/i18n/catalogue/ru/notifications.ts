@@ -23,6 +23,8 @@ export const NOTIFICATIONS_RU = {
   // ── What kind of day it is ───────────────────────────────────────────────
   // Whole noun phrases, because "{kind} work" has no Russian shape — the noun
   // has to carry the case itself.
+  /** Android's name for the app's notification channel, shown in system settings. */
+  'notifications.channelName': 'Напоминания',
   'notifications.kindStrength': 'Силовая работа',
   'notifications.kindMobility': 'Работа на мобильность',
   'notifications.kindBalance': 'Работа на баланс',

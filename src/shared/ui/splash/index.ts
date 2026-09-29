@@ -1,2 +1,4 @@
 export { IntroReveal, IntroRevealProvider, useIntroRevealStyle } from './intro-reveal';
-export { SplashOverlay } from './splash-overlay';
+export { SPLASH_MASCOT_SIZE } from './reveal-math';
+export { isSplashRevealed, subscribeSplashRevealed, useSplashRevealed } from './revealed';
+export { SplashReveal } from './splash-reveal';

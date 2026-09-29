@@ -18,5 +18,12 @@ export function AnimatedNumber({
   fontSize,
   fontFamily,
 }: AnimatedNumberProps) {
-  return <Text style={{ color, fontSize, fontFamily }}>{text}</Text>;
+  // An explicit line height and no font padding: Android otherwise sizes the
+  // line from the font's own metrics, which for SF Pro Rounded are tall enough
+  // to clip the digits inside a fixed-height row.
+  return (
+    <Text style={{ color, fontSize, fontFamily, lineHeight: Math.round(fontSize * 1.15), includeFontPadding: false }}>
+      {text}
+    </Text>
+  );
 }

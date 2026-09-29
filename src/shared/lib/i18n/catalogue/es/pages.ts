@@ -62,7 +62,7 @@ export const PAGES_ES = {
   'pages.program.statExercises': 'Ejercicios',
   'pages.program.getStarted': 'Empezar',
 
-  'pages.program.blockSeam': 'BLOQUE {index} · {name}',
+  'pages.program.blockSeam': 'Bloque {index} · {name}',
   'pages.program.blockAllDone': { one: '{count} día hecho', other: '{count} días hechos' },
   'pages.program.blockProgress': '{done} de {length} hechos',
   'pages.program.blockDays': 'Días {start}–{end}',
@@ -119,7 +119,7 @@ export const PAGES_ES = {
   'pages.expired.programInvite': 'Otras 12 semanas a tu precio por invitación · {price}',
   'pages.expired.notNow': 'Ahora no',
   'pages.week.headerMeta': '{date} · Semana {n}',
-  'pages.week.seam': 'ESTA SEMANA · {goal}',
+  'pages.week.seam': 'Esta semana · {goal}',
   'pages.week.goal.pain_free_mornings': 'Mañanas más fáciles',
   'pages.week.goal.arch_hold': 'Arco más fuerte',
   'pages.week.goal.calf_raises': 'Gemelos más fuertes',

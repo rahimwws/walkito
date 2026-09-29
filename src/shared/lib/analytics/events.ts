@@ -26,6 +26,7 @@ export type AcquisitionSource =
   | 'youtube'
   | 'friend'
   | 'app_store'
+  | 'play_store'
   | 'google'
   | 'other';
 
@@ -40,10 +41,10 @@ export type AnalyticsEvents = {
   /** Only for the few answers that segment a funnel without describing a body. */
   onboarding_answered: { step: 'source' | 'goal' | 'sport' | 'runner'; answer: string };
   acquisition_source_selected: { source: AcquisitionSource };
-  sign_in_completed: { method: 'apple' | 'email'; status: 'signed-in' | 'unavailable' };
-  /** `stage` says whether Apple's sheet or our server refused — a server
-   * failure means the Apple provider on Supabase needs looking at. */
-  sign_in_failed: { method: 'apple' | 'email'; stage?: 'apple' | 'server' };
+  sign_in_completed: { method: 'apple' | 'google' | 'email'; status: 'signed-in' | 'unavailable' };
+  /** `stage` says whether the provider's own sheet or our server refused — a
+   * server failure means that provider on Supabase needs looking at. */
+  sign_in_failed: { method: 'apple' | 'google' | 'email'; stage?: 'provider' | 'server' };
   /** Left the flow — by finishing it, or by the header's Skip. */
   onboarding_completed: { skipped: boolean; plan_weeks?: number };
 

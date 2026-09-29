@@ -51,8 +51,8 @@ export const OFFER_RU = {
   // Согласовано с «программой» в названии строки.
   'offer.programActive': 'Активна',
   'offer.programActiveUntil': 'До {date}',
-  'offer.badgeOff': 'СКИДКА {percent}%',
-  'offer.badgeSave': 'ЭКОНОМИЯ {percent}%',
+  'offer.badgeOff': 'Скидка {percent}%',
+  'offer.badgeSave': 'Экономия {percent}%',
   'offer.monthlyTitle': 'Помесячно',
   'offer.monthlyPrice': '{price}/мес.',
   'offer.monthlyNote': '{perWeek}/нед. · Отмена в любой момент',

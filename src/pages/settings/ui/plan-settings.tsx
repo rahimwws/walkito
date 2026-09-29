@@ -1,7 +1,6 @@
-import { DatePicker, Host } from '@expo/ui/swift-ui';
 import * as Haptics from 'expo-haptics';
 import { useState } from 'react';
-import { Modal, Platform, Pressable, StyleSheet, Switch, Text, View } from 'react-native';
+import { Modal, Pressable, StyleSheet, Switch, Text, View } from 'react-native';
 
 import { LegMap, ZONE_LABEL_KEYS, painAreasOf, toggleZone, type LegZone } from '@/entities/leg-zone';
 import { wakeMinutes } from '@/entities/notifications';
@@ -27,6 +26,7 @@ import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { SegmentedControl } from '@/shared/ui/segmented-control';
+import { TimePicker } from '@/shared/ui/time-picker';
 
 import { AccountRow } from './account-row';
 
@@ -77,8 +77,6 @@ export function PlanSettings() {
     rebuildRestOfWeek();
   };
 
-  const reminder = new Date();
-  reminder.setHours(Math.floor(reminderAt / 60), reminderAt % 60, 0, 0);
 
   return (
     <View style={styles.root}>
@@ -150,18 +148,13 @@ export function PlanSettings() {
           </Text>
         </Pressable>
 
-        {Platform.OS === 'ios' && (
-          <View style={styles.row}>
-            <Text style={[styles.label, { color: colors.foreground }]}>{t('settings.reminder')}</Text>
-            <Host matchContents colorScheme={scheme}>
-              <DatePicker
-                selection={reminder}
-                displayedComponents={['hourAndMinute']}
-                onDateChange={(date) => setPlanSettings({ reminderMinutes: date.getHours() * 60 + date.getMinutes() })}
-              />
-            </Host>
-          </View>
-        )}
+        <View style={styles.row}>
+          <Text style={[styles.label, { color: colors.foreground }]}>{t('settings.reminder')}</Text>
+          <TimePicker
+            minutes={reminderAt}
+            onChange={(minutes) => setPlanSettings({ reminderMinutes: minutes })}
+          />
+        </View>
       </View>
 
       <Text style={[styles.sectionTitle, styles.gapTop, { color: meter.caption }]}>{t('settings.equipment')}</Text>
@@ -172,6 +165,8 @@ export function PlanSettings() {
             <Switch
               value={haveIt(item)}
               trackColor={{ true: PRIMARY }}
+              // Android tints the thumb with the theme's accent otherwise.
+              thumbColor="#FFFFFF"
               accessibilityLabel={t(`settings.equipment.${item}`)}
               onValueChange={(has) => {
                 Haptics.selectionAsync();

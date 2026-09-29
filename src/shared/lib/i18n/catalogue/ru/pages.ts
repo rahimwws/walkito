@@ -71,7 +71,7 @@ export const PAGES_RU = {
   'pages.program.statExercises': 'Упражнения',
   'pages.program.getStarted': 'Начать',
 
-  'pages.program.blockSeam': 'БЛОК {index} · {name}',
+  'pages.program.blockSeam': 'Блок {index} · {name}',
   // The participle agrees with the count, which is why all three forms differ:
   // «1 день пройден», but «2 дня пройдено».
   'pages.program.blockAllDone': {
@@ -93,7 +93,7 @@ export const PAGES_RU = {
     'Подключается бедро. Слабая ягодичная опускает свод, поэтому контроль поднимается выше по цепи, а нагрузка на стопу остаётся как в блоке 4.',
   'pages.program.blockAbout6':
     'Это уже не лечение, а поддержка. Полотенце убирается, подъёмы становятся легче - 3 × 15, и добавляется время босиком дома. Это режим, который остаётся с вами.',
-  'pages.program.finishDay': 'ДЕНЬ {day}',
+  'pages.program.finishDay': 'День {day}',
   'pages.program.finishCaption': 'Программа пройдена',
 
   // ── Welcome ──────────────────────────────────────────────────────────────
@@ -135,7 +135,7 @@ export const PAGES_RU = {
   'pages.expired.programInvite': 'Ещё 12 недель по цене приглашения · {price}',
   'pages.expired.notNow': 'Не сейчас',
   'pages.week.headerMeta': '{date} · Неделя {n}',
-  'pages.week.seam': 'ЭТА НЕДЕЛЯ · {goal}',
+  'pages.week.seam': 'Эта неделя · {goal}',
   'pages.week.goal.pain_free_mornings': 'Лёгкие утра',
   'pages.week.goal.arch_hold': 'Сильный свод',
   'pages.week.goal.calf_raises': 'Сильные икры',

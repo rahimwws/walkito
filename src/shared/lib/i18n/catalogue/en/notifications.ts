@@ -34,6 +34,8 @@ export const NOTIFICATIONS_EN = {
   // Dropped into `notifications.sessionDay` as a whole noun phrase rather than
   // a bare adjective, because "{kind} work" only parses in English — Russian
   // needs the noun to carry the case and Spanish needs "de" in front of it.
+  /** Android's name for the app's notification channel, shown in system settings. */
+  'notifications.channelName': 'Reminders',
   'notifications.kindStrength': 'Strength work',
   'notifications.kindMobility': 'Mobility work',
   'notifications.kindBalance': 'Balance work',

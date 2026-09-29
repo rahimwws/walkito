@@ -18,6 +18,7 @@ import Animated, {
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { useSplashRevealed } from '@/shared/ui/splash';
 import { TypedText } from '@/shared/ui/typed-text';
 
 import { MASCOT, MASCOT_HEIGHT } from '../config/mascot';
@@ -73,6 +74,7 @@ export type IntroStepProps = {
  * beat, so the first thing on screen is an introduction rather than a demand.
  */
 export function IntroStep({ greeting, headline, signInFailed, onReady, squash }: IntroStepProps) {
+  const revealed = useSplashRevealed();
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -157,12 +159,22 @@ export function IntroStep({ greeting, headline, signInFailed, onReady, squash }:
   return (
     <View style={styles.wrap}>
       <View style={styles.copy}>
+        {/* Typed only once the launch splash has opened onto this screen. The
+            greeting is the first thing the app says, and typing it under the
+            splash's zoom meant most of it had already been said by the time
+            anyone could see it. The ghost holds the line's size meanwhile, so
+            nothing moves when the typing starts. */}
         <Animated.View style={[styles.greetingBox, greetingStyle]}>
-          <TypedText
-            text={greeting}
-            style={[styles.greeting, greetingColor]}
-            onDone={() => setPhase(1)}
-          />
+          <Text style={[styles.greeting, styles.ghost]}>{greeting}</Text>
+          {revealed && (
+            <View style={styles.headlineFill}>
+              <TypedText
+                text={greeting}
+                style={[styles.greeting, greetingColor]}
+                onDone={() => setPhase(1)}
+              />
+            </View>
+          )}
         </Animated.View>
 
         {/* The headline's full height is reserved from the first frame by an

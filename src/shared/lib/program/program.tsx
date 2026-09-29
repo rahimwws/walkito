@@ -1,4 +1,5 @@
-import { createContext, use, useCallback, useMemo, type ReactNode } from 'react';
+import { createContext, use, useCallback, useEffect, useMemo, type ReactNode } from 'react';
+import { BackHandler } from 'react-native';
 import {
   Easing,
   ReduceMotion,
@@ -104,6 +105,29 @@ export function ProgramProvider({ children }: { children: ReactNode }) {
       closeDetail: () => spring(detail, 0),
     };
   }, [progress, detail, scrollTop, spring]);
+
+  // Android's back: out of a session first, then off the plan, and only when
+  // neither is open does it fall through to the router. Without this, back on
+  // the plan screen left the app, because the overlay is not a route.
+  //
+  // It moves the axis and nothing else — this layer knows nothing of what the
+  // pane holds. The page that fills the pane unmounts its content once the
+  // axis reaches zero, which is what stops a session left this way rather than
+  // by its own back arrow (see `dropHidden` on the plan page).
+  useEffect(() => {
+    const sub = BackHandler.addEventListener('hardwareBackPress', () => {
+      if (detail.value > 0.5) {
+        value.closeDetail();
+        return true;
+      }
+      if (progress.value > 0.5) {
+        value.close();
+        return true;
+      }
+      return false;
+    });
+    return () => sub.remove();
+  }, [value, detail, progress]);
 
   return <ProgramContext.Provider value={value}>{children}</ProgramContext.Provider>;
 }

@@ -78,7 +78,7 @@ const DARK_THEME: GlassTabBarTheme = {
   inactiveTint: '#9E9EA6',
   highlight: 'rgba(255,255,255,0.14)',
   glassTint: 'rgba(10,10,12,0.55)',
-  solidFallback: 'rgba(18,18,20,0.94)',
+  solidFallback: 'rgba(38,38,42,0.96)',
 };
 
 const LIGHT_THEME: GlassTabBarTheme = {

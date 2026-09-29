@@ -1,7 +1,7 @@
 import DropletIcon from '@hugeicons/core-free-icons/DropletIcon';
 import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import { useState, type ReactNode } from 'react';
-import { GlassContainer, GlassView } from 'expo-glass-effect';
+import { GlassContainer, GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
@@ -19,6 +19,9 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { ProfileMenu } from '@/shared/ui/profile-menu';
+
+/** Where there is no Liquid Glass — Android, older iOS — a capsule gets a plain fill instead. */
+const GLASS = isLiquidGlassAvailable();
 
 export type HeaderActionsProps = {
   /** Days in the current streak. Rendered as the bare number — the flame
@@ -191,7 +194,7 @@ export function StreakCapsule({ streak, onPress, glyph, icon = DropletIcon, tint
       disabled={onPress == null}
       onPress={onPress}
       style={({ pressed }) => pressed && { opacity: 0.6 }}>
-      <GlassView isInteractive style={styles.streak}>
+      <GlassView isInteractive style={[styles.streak, !GLASS && { backgroundColor: meterColors[scheme].track }]}>
         {glyph ?? (
           <HugeiconsIcon icon={icon} size={22} color={tint ?? colors.foreground} strokeWidth={tint != null ? 2.3 : 1.9} />
         )}
@@ -210,6 +213,7 @@ export function StreakCapsule({ streak, onPress, glyph, icon = DropletIcon, tint
  * a glitch rather than as an object being handled.
  */
 function GiftCapsule({ onPress, tint }: { onPress: () => void; tint: string }) {
+  const scheme = useColorScheme();
   const shake = useSharedValue(0);
   const t = useT();
 
@@ -235,7 +239,7 @@ function GiftCapsule({ onPress, tint }: { onPress: () => void; tint: string }) {
     // touchable inside an interactive `GlassView` loses its first tap to the
     // material's own press recogniser.
     <Pressable accessibilityRole="button" accessibilityLabel={t('gift.openA11y')} onPress={rattle}>
-      <GlassView isInteractive style={styles.gift}>
+      <GlassView isInteractive style={[styles.gift, !GLASS && { backgroundColor: meterColors[scheme].track }]}>
         <Animated.Image
           source={GIFT_ART}
           style={[styles.giftArt, wobble]}

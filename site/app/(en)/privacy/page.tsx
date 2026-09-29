@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   // "Privacy — Walkito | Walkito" in the tab and in every search result.
   title: 'Privacy',
   description:
-    'What Walkito stores and where: Apple Health data stays on your iPhone; your plan and check-ins are stored under your account on our server. What leaves, how to delete it.',
+    'What Walkito stores and where: Apple Health and Health Connect data stay on your phone; your plan and check-ins are stored under your account on our server. What leaves, how to delete it.',
   alternates: { canonical: '/privacy' },
 };
 
@@ -110,11 +110,33 @@ export default function Privacy() {
           appearing.
         </p>
 
+        <h2>Health Connect (Android)</h2>
+        <p>
+          On Android, with your permission, Walkito reads steps, floors
+          climbed, resting heart rate, heart rate, sleep sessions, exercise
+          sessions, distance and active calories burned from Health Connect,
+          and writes completed sessions back as exercise sessions.
+        </p>
+        <p>
+          We use this data only to adjust your plan: how much you moved, slept
+          and ran shapes the day's session and the hints you see. It is read
+          and summarised on the device.{' '}
+          <b>Health Connect data is never uploaded, never sold, never shared
+          with third parties and never used for advertising.</b> Walkito's use
+          of information received from Health Connect adheres to the Health
+          Connect Permissions policy, including the Limited Use requirements.
+          You can withdraw any permission at any time in the Health Connect
+          app or in Android Settings → Security &amp; privacy → Privacy →
+          Health Connect → App permissions → Walkito; the app keeps working
+          without it.
+        </p>
+
         <h2>What leaves the device</h2>
         <ul>
           <li>
-            <b>Your account.</b> Setup signs you in with Apple, or with an
-            email address and password. Apple supplies an identifier and the
+            <b>Your account.</b> Setup signs you in with Apple (on iPhone),
+            with Google (on Android), or with an email address and password.
+            Google, like Apple, supplies an identifier and your email address. Apple supplies an identifier and the
             email address you choose to share with it — your own or Apple’s
             private relay address. The identifier becomes your account on our
             server, and the email is stored as your account’s address: we use

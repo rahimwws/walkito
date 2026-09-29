@@ -16,7 +16,7 @@ Put new code in the page that uses it. Move it down a layer only when a second p
 
 # Typography: SF Pro Rounded
 
-All text uses SF Pro Rounded, bundled in `assets/fonts/` and loaded at runtime in `src/app/layouts/root-layout.tsx` (Expo Go can't embed fonts at build time; the expo-font config plugin in `app.json` covers dev builds). Rounded rather than neutral because the product is a coach — see the note at the top of `src/shared/config/fonts.ts`.
+All text uses SF Pro Rounded on iOS and **Nunito on Android** — Apple licenses SF for Apple platforms only, so the Android build must never carry it. The faces live in `src/shared/config/font-faces.ts` (SF) and `font-faces.android.ts` (Nunito, from `@expo-google-fonts/nunito`); Metro picks one per platform, and the expo-font plugin in `app.json` embeds each platform's own set. `fonts.regular` … `fonts.heavy` resolve to the right face either way. SF Pro Rounded is bundled in `assets/fonts/` and loaded at runtime in `src/app/layouts/root-layout.tsx` (Expo Go can't embed fonts at build time; the expo-font config plugin in `app.json` covers dev builds). Rounded rather than neutral because the product is a coach — see the note at the top of `src/shared/config/fonts.ts`.
 
 This said Inter until the app switched faces; the five `Inter-*.ttf` files sat unreferenced in `assets/fonts/` for as long as the doc kept claiming they were in use, and have now been deleted.
 
@@ -164,6 +164,30 @@ track('session_completed', { day, block, kind, checkpoint });
 - **After the restart** a flag (`update/applied`) written just before `reloadAsync` is compared with `Updates.updateId`. If it changed, a small "Walkito is up to date" note with the mascot drops in at the top and `app_update_applied` is tracked. If not, or on an emergency launch (`Updates.isEmergencyLaunch`, a fall back to the embedded bundle), the flag is cleared silently.
 - **Reduce motion** turns every move into a fade; the restart still happens.
 - **Preview it without publishing:** in a dev build, open the dev menu and choose "Preview update sheet" (or open any `…?previewUpdate` link). Accepting plays the whole choreography, holds the real native reload screen up for 1.2 s via the debug-only `showReloadScreen`, then shows the note.
+
+# Splash
+
+A cold start (and the relaunch after an update) is one shot: native splash, then `<SplashReveal>`'s identical first frame, then the app opening through the mascot as he leaps at the screen.
+
+- **One picture, three places.** `assets/update/mascot-handoff.png` in a `SPLASH_MASCOT_SIZE` (200 pt) square at the exact window centre, on `palette.dark.background` (`#111113`). The native splash (the `expo-splash-screen` plugin in app.json, `imageWidth` 200, the @3x file as source), the JS reveal's first frame (`shared/ui/splash`) and the update reload screen (`HANDOFF_SIZE`, which is the same constant) all draw it. Change one and you change all three; `reveal-math.test.ts` checks app.json against the JS side.
+- **Native splash needs a native build, and so does the reveal's first release.** The plugin writes the launch storyboard and Android theme at `expo prebuild`. Adding `expo-splash-screen` changed the fingerprint (`runtimeVersion` policy in `app.config.ts`), so no binary built without it can receive an update carrying the reveal: the first native build with the plugin ships both halves, and from then on the JS side (timings, math, mask) can be tuned over the air. Never give the plugin a `dark` block: it sets `UIUserInterfaceStyle` to Automatic and unpins the dark appearance. The JS side never imports the `expo-splash-screen` package; it reaches the module only through `requireOptionalNativeModule('ExpoSplashScreen')`, as expo-router does, which keeps a dev client built before the module was added bundling and running.
+- **The native splash leaves in one frame.** `splash-reveal.tsx` calls `setOptions({ duration: 0, fade: false })` at module scope. Android's default exit is a 400 ms fade, which would lie over the crouch as a double exposure.
+- **It never delays the first screen.** The overlay is part of the first frame, before fonts; the navigator mounts under it as soon as the fonts resolve. Two frames later (and once Skia has drawn the same picture under the plain cover) the reveal runs: a 180 ms crouch, then a 560 ms ease-in zoom in which he visibly grows (whole to about 1.2x, gone past 3x) before he is only a window. It starts by 2.5 s whatever happens, and unmounts completely afterwards, Skia canvas included. Reduce Motion gets a 250 ms fade and no Skia at all.
+- **Sized from the root's frame** (`useSafeAreaFrame`), never window metrics: on Android those leave out the navigation bar, which the edge-to-edge root and the native splash span.
+- **Touches stop at the overlay**, including gesture-handler's: it carries a `Gesture.Manual()` that never activates, because on Android gesture-handler hit-tests on its own and walks past a view with no handler and no background.
+- **Anything on the first screen that must not start unseen waits for `useSplashRevealed()`** (from `shared/ui/splash`, true once the overlay is gone, with a fallback so it never waits forever). A sheet opened at mount is presented above the root view and so above the splash, which then plays behind it; a greeting that types itself from mount is mostly typed before it is uncovered. Not wired yet: the welcome greeting (`IntroStep`) and the widget's "It hurts" sheet (`PainCheck`, `?checkin=hurts`) should hold on it.
+- **After an update's restart** the reload screen fades (300 ms) over the splash's first frame, which is the same picture. The reveal waits that fade out (`updateRestartHoldMs` from `features/app-update`, passed as `holdMs`), and the "up to date" note waits for the reveal (`SETTLE_MS`, 1.2 s). The dev "Preview update sheet" stops short of this: it hides the reload screen straight onto the live app, plays no reveal, and shows the note after 350 ms. Only a real update's restart shows the whole shot.
+- **The zoom's focus is measured, not guessed.** `MASCOT_FOCUS` / `MASCOT_FOCUS_RADIUS` in `shared/ui/splash/reveal-math.ts` are the centre and radius of the largest circle inside his opaque body, from a distance transform of the still's alpha channel. The zoom ends when that circle covers the window's farthest corner. Re-measure them if the still is redrawn.
+
+# Android
+
+The same app runs on Android; platform splits are files Metro picks by suffix, never `Platform.OS` branches in shared screens where a file split is cleaner.
+
+- **Health:** HealthKit on iOS, Health Connect on Android — `entities/health/model/*.android.ts` implement the same functions. Health Connect has no walking asymmetry or walking speed, so those signals stay null there, and no background observers: the app refreshes on every foreground.
+- **Sign-in:** Apple on iOS, Google on Android (`signInWithPlatform`). Google needs `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID`; without it the button lets the user through anonymously.
+- **Widget:** `features/home-widget/android` draws the same `DailyCheck` with `react-native-android-widget`. Its headless task is registered in the root `index.js` (the package `main`), before any screen mounts.
+- **No Liquid Glass or real blur:** anything using `GlassView` must give itself a fill when `isLiquidGlassAvailable()` is false, and `ProgressiveBlur` falls back to a gradient.
+- **Back button:** the program overlay handles it in `shared/lib/program` — session first, then the plan.
 
 # Home-screen widget
 

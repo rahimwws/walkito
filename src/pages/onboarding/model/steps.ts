@@ -1,5 +1,6 @@
 import Activity03Icon from '@hugeicons/core-free-icons/Activity03Icon';
 import AppStoreIcon from '@hugeicons/core-free-icons/AppStoreIcon';
+import PlayStoreIcon from '@hugeicons/core-free-icons/PlayStoreIcon';
 import GoogleIcon from '@hugeicons/core-free-icons/GoogleIcon';
 import InstagramIcon from '@hugeicons/core-free-icons/InstagramIcon';
 import MoreHorizontalCircle01Icon from '@hugeicons/core-free-icons/MoreHorizontalCircle01Icon';
@@ -22,7 +23,7 @@ import SunriseIcon from '@hugeicons/core-free-icons/SunriseIcon';
 import Target01Icon from '@hugeicons/core-free-icons/Target01Icon';
 import WorkoutRunIcon from '@hugeicons/core-free-icons/WorkoutRunIcon';
 import type { IconSvgElement } from '@hugeicons/react-native';
-import type { ImageSourcePropType } from 'react-native';
+import { Platform, type ImageSourcePropType } from 'react-native';
 
 import { healthAvailable } from '@/entities/health';
 import { MAX_ZONES } from '@/entities/leg-zone';
@@ -460,7 +461,10 @@ export const STEPS: readonly OnboardingStep[] = [
       { value: 'instagram', label: (t) => t('onboarding.source.instagram'), icon: InstagramIcon, accent: 'orange' },
       { value: 'youtube', label: (t) => t('onboarding.source.youtube'), icon: YoutubeIcon, accent: 'amber' },
       { value: 'friend', label: (t) => t('onboarding.source.friend'), icon: UserMultipleIcon, accent: 'teal' },
-      { value: 'app_store', label: (t) => t('onboarding.source.appStore'), icon: AppStoreIcon, accent: 'blue' },
+      // The store the app came from — each platform names only its own.
+      Platform.OS === 'android'
+        ? { value: 'play_store', label: (t) => t('onboarding.source.playStore'), icon: PlayStoreIcon, accent: 'blue' }
+        : { value: 'app_store', label: (t) => t('onboarding.source.appStore'), icon: AppStoreIcon, accent: 'blue' },
       { value: 'google', label: (t) => t('onboarding.source.google'), icon: GoogleIcon, accent: 'teal' },
       { value: 'other', label: (t) => t('onboarding.source.other'), icon: MoreHorizontalCircle01Icon, accent: 'violet' },
     ],
@@ -488,7 +492,9 @@ export const STEPS: readonly OnboardingStep[] = [
     // whether we owe them a set-up instruction.
     blurb: (t) => t('onboarding.watch.blurb'),
     options: WATCH_OPTIONS,
-    skipWhen: () => !healthAvailable(),
+    // Android reads whatever the watch app already syncs to Health Connect;
+    // there is no Apple Watch to ask about and no Apple Health to set up.
+    skipWhen: () => Platform.OS === 'android' || !healthAvailable(),
   },
   {
     kind: 'watch-sync',

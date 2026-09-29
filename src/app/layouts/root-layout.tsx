@@ -2,6 +2,7 @@ import { useFonts } from 'expo-font';
 import { useEffect, type ComponentType, type ReactNode } from 'react';
 import { Stack } from 'expo-router/stack';
 import { StatusBar } from 'expo-status-bar';
+import { Platform } from 'react-native';
 
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { KeyboardProvider } from 'react-native-keyboard-controller';
@@ -24,7 +25,7 @@ import {
   useReferralSync,
   useQuickActions,
 } from '@/app/providers';
-import { AppUpdateHost } from '@/features/app-update';
+import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
 import { useHomeWidget } from '@/features/home-widget';
 import { useBrowsingLapsed, useEntitled, useProgramLapsed } from '@/entities/purchase';
 import { useOnboarded } from '@/entities/session';
@@ -33,20 +34,31 @@ import { configureObserve, markInteractive } from '@/shared/lib/observe';
 // Imported for its module-scope side effect as much as anything: reading the
 // stored preference applies the saved appearance before the first render.
 import '@/shared/lib/theme';
-import { IntroRevealProvider } from '@/shared/ui/splash';
+import { IntroRevealProvider, SplashReveal } from '@/shared/ui/splash';
 
 /**
  * The app shell: fonts, theme, gesture root, routes.
  *
- * There is deliberately no launch animation. A splash that plays before the
- * first screen is time the user spends looking at nothing, and it pushed the
- * welcome screen's own introduction — the first thing with anything to say —
- * a second and a half back. The app now paints its first real screen as soon
- * as the fonts resolve.
+ * The launch is one continuous shot: the native splash (the mascot in a
+ * 200 pt square on the background colour), then `SplashReveal`'s identical
+ * first frame, then the app opening through the mascot as he leaps at the
+ * screen. The same picture ends an over-the-air update's restart, so a reload
+ * lands in the same place a cold start does.
  *
- * `IntroRevealProvider` is pinned true for the same reason: the staggered
- * reveal it drives was choreographed to follow the splash, and with the splash
- * gone it would only delay content for no one. Held at true, every
+ * The splash before it was removed for delaying the first screen: a Lottie
+ * that had to finish before anything else could show, which pushed the welcome
+ * screen's own introduction a second and a half back. This one is not that.
+ * The navigator mounts underneath it the moment the fonts resolve, exactly as
+ * it would with no splash at all; the overlay only covers it, and the reveal
+ * is the first screen appearing. It adds under 0.9 s after the fonts (two
+ * frames for the first screen to lay out, then the 0.74 s reveal), never waits
+ * on anything slow, and starts 2.5 s after launch at the latest whatever it is
+ * still waiting for (`REVEAL_BY_MS` in `shared/ui/splash`), so it cannot shut
+ * the app away. With Reduce Motion it is a quarter-second fade.
+ *
+ * `IntroRevealProvider` stays pinned true. The staggered reveal it drives was
+ * choreographed for the old splash's fade, and under a zoom that already
+ * brings the whole screen in it would only delay content. Held at true, every
  * `IntroReveal` renders its children immediately and animates nothing.
  *
  * Add new top-level routes as `Stack.Screen` entries here (modals, full-screen
@@ -277,7 +289,10 @@ function RootLayoutInner() {
                   options={{
                     presentation: 'formSheet',
                     headerShown: false,
-                    sheetAllowedDetents: 'fitToContents',
+                    // Android's sheet sized to its content stops at the screen
+                    // edge and never scrolls, which cut Settings off halfway.
+                    // A fixed, nearly full height scrolls like any other screen.
+                    sheetAllowedDetents: Platform.OS === 'android' ? [0.94] : 'fitToContents',
                     sheetGrabberVisible: true,
                     sheetCornerRadius: 28,
                   }}
@@ -308,6 +323,11 @@ function RootLayoutInner() {
           </NavThemeProvider>
         </IntroRevealProvider>
       </KeyboardProvider>
+      {/* Last, so it is above everything, and outside every provider's
+          padding: it covers the whole window from the very first frame,
+          before the fonts, and unmounts completely once the app is showing.
+          After an update's restart it waits out the reload screen's fade. */}
+      <SplashReveal ready={ready} holdMs={updateRestartHoldMs()} />
     </GestureHandlerRootView>
   );
 }

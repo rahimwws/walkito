@@ -1,29 +1,15 @@
-import { DatePicker, Host } from '@expo/ui/swift-ui';
-import { datePickerStyle } from '@expo/ui/swift-ui/modifiers';
 import { StyleSheet, View } from 'react-native';
 
-import { useColorScheme } from '@/shared/lib/theme';
+import { TimePicker } from '@/shared/ui/time-picker';
 
 /**
- * The daily reminder's time, on the system's own wheel — the same control
- * Settings uses to change it later, so the two never disagree about what a
- * time looks like.
+ * The daily reminder's time, on the system's own control — the wheel on iOS,
+ * the clock dial on Android — the same one Settings uses to change it later.
  */
 export function ReminderStep({ minutes, onChange }: { minutes: number; onChange: (minutes: number) => void }) {
-  const scheme = useColorScheme();
-  const at = new Date();
-  at.setHours(Math.floor(minutes / 60), minutes % 60, 0, 0);
-
   return (
     <View style={styles.root}>
-      <Host matchContents colorScheme={scheme}>
-        <DatePicker
-          selection={at}
-          displayedComponents={['hourAndMinute']}
-          modifiers={[datePickerStyle('wheel')]}
-          onDateChange={(date) => onChange(date.getHours() * 60 + date.getMinutes())}
-        />
-      </Host>
+      <TimePicker minutes={minutes} onChange={onChange} variant="wheel" />
     </View>
   );
 }

@@ -4,4 +4,5 @@
  * Store. The root layout mounts the host once; nothing else needs to know.
  */
 export { AppUpdateHost } from './ui/app-update-host';
+export { updateRestartHoldMs } from './model/applied';
 export type { UpdateOffer, UpdatePhase } from './model/decide';

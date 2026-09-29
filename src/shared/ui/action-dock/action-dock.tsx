@@ -1,7 +1,7 @@
 import WorkoutRunIcon from '@hugeicons/core-free-icons/WorkoutRunIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, { interpolate, useAnimatedStyle } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -35,6 +35,15 @@ const BOTTOM_BLEED = 40;
  * to the middle of the part that is actually visible.
  */
 export const DOCK_OVERLAP = -10;
+
+/**
+ * The room under the slab's label. On iPhone that is the home indicator's
+ * inset. Android's gesture bar reports little or none, which put the label on
+ * the gesture handle — so it gets a floor there.
+ */
+function bottomRoom(inset: number): number {
+  return Platform.OS === 'android' ? Math.max(inset, 46) : inset;
+}
 
 /**
  * The gradient's first stop, and so the colour of the band's top edge. The cap
@@ -94,7 +103,8 @@ export function ActionDock({ label }: ActionDockProps) {
   const t = useT();
   const text = label ?? t('dock.startWorkout');
   const program = useProgram();
-  const dockHeight = BODY_HEIGHT + insets.bottom;
+  const room = bottomRoom(insets.bottom);
+  const dockHeight = BODY_HEIGHT + room;
 
   /**
    * Out of the way, on the same value that brings the program up.
@@ -118,7 +128,7 @@ export function ActionDock({ label }: ActionDockProps) {
             'linear-gradient(180deg, #A78BFA 0%, #8B5CF6 48%, #6D4AEF 100%)',
         },
         {
-          paddingBottom: insets.bottom,
+          paddingBottom: room,
           paddingTop: DOCK_OVERLAP,
           height: dockHeight + BOTTOM_BLEED,
           bottom: -BOTTOM_BLEED,
@@ -155,7 +165,7 @@ export function ActionDock({ label }: ActionDockProps) {
 /** The room the dock needs at the bottom of a scroll view. */
 export function useDockHeight(): number {
   const insets = useSafeAreaInsets();
-  return BODY_HEIGHT + insets.bottom;
+  return BODY_HEIGHT + bottomRoom(insets.bottom);
 }
 
 const styles = StyleSheet.create({

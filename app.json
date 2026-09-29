@@ -23,7 +23,18 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.walkito.app"
+      "package": "com.walkito.app",
+      "permissions": [
+        "android.permission.health.READ_STEPS",
+        "android.permission.health.READ_FLOORS_CLIMBED",
+        "android.permission.health.READ_RESTING_HEART_RATE",
+        "android.permission.health.READ_HEART_RATE",
+        "android.permission.health.READ_SLEEP",
+        "android.permission.health.READ_EXERCISE",
+        "android.permission.health.READ_DISTANCE",
+        "android.permission.health.READ_ACTIVE_CALORIES_BURNED",
+        "android.permission.health.WRITE_EXERCISE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -34,17 +45,37 @@
       [
         "expo-font",
         {
-          "fonts": [
-            "./assets/fonts/SF-Pro-Rounded-Regular.otf",
-            "./assets/fonts/SF-Pro-Rounded-Medium.otf",
-            "./assets/fonts/SF-Pro-Rounded-Semibold.otf",
-            "./assets/fonts/SF-Pro-Rounded-Bold.otf",
-            "./assets/fonts/SF-Pro-Rounded-Heavy.otf"
-          ]
+          "ios": {
+            "fonts": [
+              "./assets/fonts/SF-Pro-Rounded-Regular.otf",
+              "./assets/fonts/SF-Pro-Rounded-Medium.otf",
+              "./assets/fonts/SF-Pro-Rounded-Semibold.otf",
+              "./assets/fonts/SF-Pro-Rounded-Bold.otf",
+              "./assets/fonts/SF-Pro-Rounded-Heavy.otf"
+            ]
+          },
+          "android": {
+            "fonts": [
+              "./node_modules/@expo-google-fonts/nunito/400Regular/Nunito_400Regular.ttf",
+              "./node_modules/@expo-google-fonts/nunito/500Medium/Nunito_500Medium.ttf",
+              "./node_modules/@expo-google-fonts/nunito/600SemiBold/Nunito_600SemiBold.ttf",
+              "./node_modules/@expo-google-fonts/nunito/700Bold/Nunito_700Bold.ttf",
+              "./node_modules/@expo-google-fonts/nunito/800ExtraBold/Nunito_800ExtraBold.ttf"
+            ]
+          }
         }
       ],
       "expo-asset",
       "expo-video",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#111113",
+          "image": "./assets/update/mascot-handoff@3x.png",
+          "imageWidth": 200,
+          "resizeMode": "contain"
+        }
+      ],
       [
         "expo-widgets",
         {
@@ -54,7 +85,10 @@
               "displayName": "Walkito",
               "description": "Log today’s check-in and see your goal for the day.",
               "ios": {
-                "supportedFamilies": ["systemSmall", "systemMedium"]
+                "supportedFamilies": [
+                  "systemSmall",
+                  "systemMedium"
+                ]
               }
             }
           ]
@@ -96,6 +130,38 @@
               "title": "SOMETHING OFF?",
               "subtitle": "Tell us. A person replies.",
               "icon": "asset:talk"
+            }
+          ]
+        }
+      ],
+      "react-native-health-connect",
+      "./plugins/with-health-connect-delegate",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 26
+          }
+        }
+      ],
+      [
+        "react-native-android-widget",
+        {
+          "fonts": [
+            "./node_modules/@expo-google-fonts/nunito/700Bold/Nunito_700Bold.ttf"
+          ],
+          "widgets": [
+            {
+              "name": "DailyCheck",
+              "label": "Walkito",
+              "description": "Log today’s check-in and see your goal for the day.",
+              "minWidth": "250dp",
+              "minHeight": "110dp",
+              "targetCellWidth": 4,
+              "targetCellHeight": 2,
+              "previewImage": "./assets/widget/mascot-tasks.png",
+              "resizeMode": "horizontal|vertical",
+              "updatePeriodMillis": 1800000
             }
           ]
         }

@@ -1,5 +1,6 @@
 import Constants from 'expo-constants';
 import * as Notifications from 'expo-notifications';
+import { Platform } from 'react-native';
 
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { currentUserId, supabase } from '@/shared/lib/supabase';
@@ -26,6 +27,30 @@ import { currentUserId, supabase } from '@/shared/lib/supabase';
  * and only one thing they both mean, and a listener checking two ids is one
  * refactor away from silently missing one of them.
  */
+/**
+ * Android's channel for everything the app sends. Android 8+ files every
+ * notification under a channel the user can mute on its own; without one they
+ * land in a nameless "Miscellaneous", and Android 13 shows no permission prompt
+ * until a channel exists. iOS ignores it.
+ */
+export const CHANNEL_ID = 'reminders';
+
+let channelReady: Promise<void> | null = null;
+
+/** Creates the channel once per process. Safe to call before every schedule. */
+export function ensureNotificationChannel(): Promise<void> {
+  if (Platform.OS !== 'android') return Promise.resolve();
+  channelReady ??= Notifications.setNotificationChannelAsync(CHANNEL_ID, {
+    name: translatorFor(getLanguage())('notifications.channelName'),
+    importance: Notifications.AndroidImportance.DEFAULT,
+  })
+    .then(() => undefined)
+    .catch(() => {
+      channelReady = null;
+    });
+  return channelReady;
+}
+
 export const WINBACK_KIND = 'offer-winback';
 
 /** Marks the push the server sends when someone uses your invite code. */
@@ -112,6 +137,7 @@ export async function notificationsAllowed(): Promise<boolean> {
  */
 export async function requestNotificationAccess(): Promise<boolean> {
   try {
+    await ensureNotificationChannel();
     const { granted, canAskAgain, status } = await Notifications.getPermissionsAsync();
     if (granted) return true;
     if (!canAskAgain && status !== 'undetermined') return false;
@@ -140,6 +166,7 @@ export async function requestNotificationAccess(): Promise<boolean> {
  * since there is no screen left to show a failure on.
  */
 export async function scheduleWinback(percent: number, name?: string): Promise<boolean> {
+  await ensureNotificationChannel();
   const t = translatorFor(getLanguage());
   const who = name != null && name.trim().length > 0 ? name.trim() : null;
   try {
@@ -154,7 +181,7 @@ export async function scheduleWinback(percent: number, name?: string): Promise<b
         sound: true,
         data: { kind: WINBACK_KIND },
       },
-      trigger: null,
+      trigger: Platform.OS === 'android' ? { channelId: CHANNEL_ID } : null,
     });
     return true;
   } catch (error) {
@@ -245,7 +272,7 @@ export async function syncExpiryNotice(endsAt: Date | null): Promise<void> {
         sound: true,
         data: { kind: EXPIRY_KIND },
       },
-      trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: at },
+      trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: at, channelId: CHANNEL_ID },
     });
   } catch (error) {
     console.warn('[notifications] expiry notice did not schedule:', error);

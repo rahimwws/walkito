@@ -69,8 +69,8 @@ export const OFFER_EN = {
   /** What somebody who already holds the programme sees instead of a price. */
   'offer.programActive': 'Active',
   'offer.programActiveUntil': 'Until {date}',
-  'offer.badgeOff': '{percent}% OFF',
-  'offer.badgeSave': 'SAVE {percent}%',
+  'offer.badgeOff': '{percent}% off',
+  'offer.badgeSave': 'Save {percent}%',
   'offer.monthlyTitle': 'Monthly',
   'offer.monthlyPrice': '{price}/month',
   'offer.monthlyNote': '{perWeek}/week · Cancel anytime',

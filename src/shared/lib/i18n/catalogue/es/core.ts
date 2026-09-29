@@ -53,6 +53,7 @@ export const CORE_ES = {
   'settings.equipment.ball': 'Pelota de masaje',
   'settings.account.saveTitle': 'Guarda tu progreso',
   'settings.account.saveBody': 'Inicia sesión con Apple y tu plan, registros y pruebas volverán en un teléfono nuevo o tras reinstalar.',
+  'settings.account.saveBodyGoogle': 'Inicia sesión con Google y tu plan, registros y pruebas volverán en un teléfono nuevo o tras reinstalar.',
   'settings.account.signedIn': 'Sesión iniciada con Apple. Tu progreso se guarda en tu cuenta.',
   'settings.lastSync': 'Última sincronización: {time}',
   'settings.lastSyncNever': 'Aún sin sincronizar',
@@ -121,7 +122,7 @@ export const CORE_ES = {
   // ── Quick actions (long-press the app icon) ────────────────────────────────
   'purchase.unavailable': 'Ese plan no está disponible ahora mismo.',
 
-  'quick.deleteTitle': '{name}, ESPERA.',
+  'quick.deleteTitle': '{name}, espera.',
   'quick.deleteBody': 'Voy a borrar la aplicación.\n\nLo que me echó:\n\n',
   'quick.deleteSubject': 'Antes de borrar Walkito',
   'quick.talkSubject': 'Algo no va bien en Walkito',
@@ -169,4 +170,5 @@ export const CORE_ES = {
   'common.close': 'Cerrar',
   'common.profile': 'Perfil',
   'common.done': 'Listo',
+  'common.cancel': 'Cancelar',
 };

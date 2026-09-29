@@ -237,6 +237,9 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     color: 'transparent',
+    // Android draws a TextInput's glyphs whatever its colour says; only the
+    // view's own opacity hides them. It still takes focus and the keyboard.
+    opacity: 0,
     fontSize: NUMBER_SIZE,
     fontFamily: fonts.bold,
     textAlign: 'center',

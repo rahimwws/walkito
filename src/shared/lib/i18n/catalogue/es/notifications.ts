@@ -19,6 +19,8 @@
 
 export const NOTIFICATIONS_ES = {
   // ── What kind of day it is ───────────────────────────────────────────────
+  /** Android's name for the app's notification channel, shown in system settings. */
+  'notifications.channelName': 'Recordatorios',
   'notifications.kindStrength': 'Trabajo de fuerza',
   'notifications.kindMobility': 'Trabajo de movilidad',
   'notifications.kindBalance': 'Trabajo de equilibrio',

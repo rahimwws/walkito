@@ -13,6 +13,8 @@ const STAGGER_MS = 70;
 
 export type PlanStepProps = {
   summary: PlanSummary;
+  /** Days a week the user chose a few screens back; the summary's own figure when they did not. */
+  sessions?: number;
 };
 
 /**
@@ -28,7 +30,7 @@ export type PlanStepProps = {
  * blocks, and the sentence from what they said about their pain and their
  * week — which is what earns the line under the title.
  */
-export function PlanStep({ summary }: PlanStepProps) {
+export function PlanStep({ summary, sessions }: PlanStepProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -50,7 +52,7 @@ export function PlanStep({ summary }: PlanStepProps) {
         style={[styles.meta, { color: colors.foreground }]}>
         {t('onboarding.plan.meta', {
           count: summary.weeks,
-          sessions: summary.strengthDays,
+          sessions: sessions ?? summary.strengthDays,
         })}
       </Animated.Text>
 
@@ -93,7 +95,7 @@ const styles = StyleSheet.create({
   wordmark: {
     fontSize: 15,
     fontFamily: fonts.heavy,
-    letterSpacing: 2.2,
+    letterSpacing: 0.1,
   },
   meta: {
     fontSize: 26,

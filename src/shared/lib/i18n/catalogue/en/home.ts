@@ -206,7 +206,7 @@ export const HOME_EN = {
   'home.rangeAboveChip': 'Above usual range',
   'home.rangeBelowChip': 'Below usual range',
   'home.rangeWithinChip': 'Within usual range',
-  'home.usualRangeLegend': 'USUAL RANGE {low}–{high}',
+  'home.usualRangeLegend': 'Usual range {low}–{high}',
   'home.usualRangeA11y': 'Usual range, {low} to {high}',
 
   /**

@@ -3,7 +3,7 @@ import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Keyboard, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Keyboard, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { KeyboardAvoidingView } from 'react-native-keyboard-controller';
 import Animated, {
   Easing,
@@ -37,7 +37,7 @@ import {
 import { firstName, saveIntake, setProfileEmail, setProfileName } from '@/entities/profile';
 import { wakeMinutes } from '@/entities/notifications';
 import { seedPlanSettings, startProgram } from '@/entities/program';
-import { completeOnboarding, signInWithApple } from '@/entities/session';
+import { completeOnboarding, signInWithPlatform } from '@/entities/session';
 import { setPersonOnce, track, type AcquisitionSource } from '@/shared/lib/analytics';
 import { NoteSheet } from '@/shared/ui/note-sheet';
 import { Glow } from '@/shared/ui/glow';
@@ -453,11 +453,11 @@ export function OnboardingPage() {
       // Cleared on the retry rather than on the failure, so the message
       // survives until the user does something about it.
       setSignInFailed(false);
-      void signInWithApple()
+      void signInWithPlatform()
         .then((result) => {
           if (result.status === 'cancelled') return;
           if (result.status === 'failed') {
-            track('sign_in_failed', { method: 'apple', stage: result.stage });
+            track('sign_in_failed', { method: SIGN_IN_METHOD, stage: result.stage });
             Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
             setSignInFailed(true);
             return;
@@ -466,14 +466,14 @@ export function OnboardingPage() {
           // authorisation for this Apple ID; every later sign-in is nulls. So
           // both are written down here or lost for good.
           //
-          // Behind it is a real account now (see `signInWithApple`): the one the
+          // Behind it is a real account now (see `signInWithPlatform`): the one the
           // plan syncs to, and the one a reinstall or a new phone signs back in
           // to. There is no way past this screen without one.
           if (result.status === 'signed-in') {
             if (result.fullName != null) setProfileName(firstName(result.fullName));
             if (result.email != null) setProfileEmail(result.email);
           }
-          track('sign_in_completed', { method: 'apple', status: result.status });
+          track('sign_in_completed', { method: SIGN_IN_METHOD, status: result.status });
           Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
           step1(true);
         })
@@ -540,6 +540,9 @@ const REDEEM_MESSAGE: Readonly<Record<Exclude<RedeemResult, 'ok'>, Phrase>> = {
 /** The onboarding answers that are sent to analytics, and nothing else. */
 const ANSWERS_TRACKED = ['source', 'goal', 'sport', 'runner'] as const;
 type TrackedAnswer = (typeof ANSWERS_TRACKED)[number];
+
+/** Which account the intro's button makes on this platform. */
+const SIGN_IN_METHOD = Platform.OS === 'android' ? 'google' : 'apple';
 
 /** Long enough for the confirmation to be read before the screen leaves. */
 const CONFIRM_MS = 900;
@@ -631,7 +634,8 @@ const CONFIRM_MS = 900;
   const ctaLabel = (() => {
     switch (step.kind) {
       case 'intro':
-        return step.cta(t);
+        // Each platform's own account: Apple on iOS, Google on Android.
+        return Platform.OS === 'android' ? t('onboarding.intro.ctaGoogle') : step.cta(t);
       case 'health':
         return health != null ? t('onboarding.cta.next') : t('onboarding.cta.skipForNow');
       case 'watch-sync':
@@ -906,6 +910,7 @@ const CONFIRM_MS = 900;
                     pain,
                     load: loadAnswer,
                   })}
+                  sessions={planSettingsFrom(answers, null).daysPerWeek}
                 />
               </ScrollView>
             )}

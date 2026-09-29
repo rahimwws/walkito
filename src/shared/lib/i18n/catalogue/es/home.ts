@@ -136,7 +136,7 @@ export const HOME_ES = {
   'home.rangeAboveChip': 'Por encima',
   'home.rangeBelowChip': 'Por debajo',
   'home.rangeWithinChip': 'Lo habitual',
-  'home.usualRangeLegend': 'HABITUAL {low}–{high}',
+  'home.usualRangeLegend': 'Habitual {low}–{high}',
   'home.usualRangeA11y': 'Rango habitual, de {low} a {high}',
 
   /**

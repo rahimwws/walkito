@@ -52,8 +52,7 @@ const CYCLE_MS = 26000;
 const BLOOMS = [
   {
     key: 'violet',
-    gradient: (a: number) =>
-      `radial-gradient(130% 75% at 18% -5%, rgba(139,92,246,${0.55 * a}) 0%, rgba(139,92,246,0) 62%)`,
+    shape: { rx: 1.3, ry: 0.75, cx: 0.18, cy: -0.05, rgb: '139,92,246', alpha: 0.55, stop: 62 },
     x: 64,
     y: 36,
     xRate: 1,
@@ -66,8 +65,7 @@ const BLOOMS = [
   },
   {
     key: 'lilac',
-    gradient: (a: number) =>
-      `radial-gradient(105% 60% at 88% 6%, rgba(167,139,250,${0.42 * a}) 0%, rgba(167,139,250,0) 66%)`,
+    shape: { rx: 1.05, ry: 0.6, cx: 0.88, cy: 0.06, rgb: '167,139,250', alpha: 0.42, stop: 66 },
     x: 56,
     y: 44,
     xRate: 2,
@@ -80,8 +78,7 @@ const BLOOMS = [
   },
   {
     key: 'indigo',
-    gradient: (a: number) =>
-      `radial-gradient(150% 85% at 55% -18%, rgba(99,102,241,${0.34 * a}) 0%, rgba(99,102,241,0) 72%)`,
+    shape: { rx: 1.5, ry: 0.85, cx: 0.55, cy: -0.18, rgb: '99,102,241', alpha: 0.34, stop: 72 },
     x: 46,
     y: 30,
     xRate: 1,
@@ -93,6 +90,34 @@ const BLOOMS = [
     scalePhase: 0.8,
   },
 ] as const;
+
+type Shape = (typeof BLOOMS)[number]['shape'];
+
+/**
+ * How much taller the painted box is than the area the blooms are sized to.
+ *
+ * Each bloom's height and centre are divided through by it (see `gradientFor`),
+ * so the extra height changes nothing about their shape — it only gives each
+ * one room to fade all the way out. Sized to the box exactly, Android's
+ * gradient ended a few shades above the background and drew a visible line
+ * across the screen where the box stopped.
+ */
+const FADE_ROOM = 1.6;
+
+/**
+ * One bloom, as a gradient over a box `FADE_ROOM` times taller than the area it
+ * is sized to. Percentages rather than points, divided through by the extra
+ * height so the bloom keeps the shape it had in the shorter box: Android reads
+ * percentages exactly as iOS does, and point positions — negative ones above
+ * all — it does not.
+ */
+function gradientFor(shape: Shape, alpha: number): string {
+  const pct = (n: number) => `${Math.round(n * 1000) / 10}%`;
+  return (
+    `radial-gradient(${pct(shape.rx)} ${pct(shape.ry / FADE_ROOM)} at ${pct(shape.cx)} ${pct(shape.cy / FADE_ROOM)}, ` +
+    `rgba(${shape.rgb},${shape.alpha * alpha}) 0%, rgba(${shape.rgb},0) ${shape.stop}%)`
+  );
+}
 
 export type GlowProps = {
   /** Drift, for screens the user sits on. The flow leaves it still: there,
@@ -172,9 +197,8 @@ export function Glow({ animated = false, paused = false }: GlowProps) {
   // glow on near-black turn into a bruise on near-white.
   const a = scheme === 'dark' ? 1 : 0.45;
 
-  // The still one keeps its exact box: the gradients are positioned in
-  // percentages of the layer, so padding it out for overscan would move every
-  // bloom and quietly restyle the flow.
+  // The still one needs no overscan: it never drifts, so there is no edge to
+  // swing into view. It does get the fade room below.
   if (!animated) {
     return (
       <Animated.View
@@ -182,8 +206,8 @@ export function Glow({ animated = false, paused = false }: GlowProps) {
         style={[
           styles.still,
           {
-            height: height * REACH,
-            experimental_backgroundImage: BLOOMS.map((b) => b.gradient(a)).join(', '),
+            height: height * REACH * FADE_ROOM,
+            experimental_backgroundImage: BLOOMS.map((b) => gradientFor(b.shape, a)).join(', '),
           },
         ]}
       />
@@ -280,7 +304,7 @@ function Bloom({
       pointerEvents="none"
       style={[
         styles.drifting,
-        { height: size, experimental_backgroundImage: bloom.gradient(alpha) },
+        { height: size * FADE_ROOM, experimental_backgroundImage: gradientFor(bloom.shape, alpha) },
         drift,
       ]}
     />

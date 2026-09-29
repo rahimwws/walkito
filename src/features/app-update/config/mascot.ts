@@ -9,6 +9,8 @@
  * so the first one is drawn from the same numbers.
  */
 
+import { SPLASH_MASCOT_SIZE } from '@/shared/ui/splash';
+
 /**
  * The welcome screen's character. Required directly rather than through
  * `pages/onboarding` (a feature may not import a page); Metro resolves both
@@ -50,8 +52,13 @@ export const HOP_PEAK_MS = ((84 - HOP_FROM_FRAME) / 24) * 1000;
  * exactly, so the picture is this square at the centre of the screen, nothing
  * else. 200 × 3 = 600 is the @3x file's size, so on a 3x screen neither side
  * resamples at all.
+ *
+ * It is the launch splash's square, not merely equal to it: the relaunched
+ * bundle opens on `SplashReveal`, which draws the same still in this square,
+ * so the reload screen fades onto an identical picture and the restart plays
+ * out like a cold start.
  */
-export const HANDOFF_SIZE = 200;
+export const HANDOFF_SIZE = SPLASH_MASCOT_SIZE;
 
 /** The mascot's box while he stands on the sheet. Drawn as `HANDOFF_SIZE`
  * scaled down, so the glide to the middle is a transform and never a relayout

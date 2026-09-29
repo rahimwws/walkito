@@ -39,6 +39,7 @@ import { useT, type Key } from '@/shared/lib/i18n';
 import { PROGRAM_EASING, PROGRAM_MS } from '@/shared/lib/program';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
 import { PrimaryButton } from '@/shared/ui/primary-button';
+import { useSplashRevealed } from '@/shared/ui/splash';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import { SessionView } from '@/widgets/session-player';
@@ -196,11 +197,17 @@ export function PainCheck({ onLogged }: PainCheckProps) {
    *
    * The parameter is cleared once read, so the same link tapped again later is
    * a new request rather than an unchanged one React never sees.
+   *
+   * Held until the launch splash has opened. A widget tap is usually a cold
+   * start, and a sheet opened at mount sat above the splash while its zoom
+   * played behind it; the acknowledgement for "no pain" was said to nobody.
    */
   const router = useRouter();
   const { checkin } = useLocalSearchParams<{ checkin?: string }>();
+  const revealed = useSplashRevealed();
   useEffect(() => {
     if (checkin !== 'fine' && checkin !== 'hurts' && checkin !== 'open') return;
+    if (!revealed) return;
     router.setParams({ checkin: undefined });
     if (checkin === 'fine') {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
@@ -217,7 +224,7 @@ export function PainCheck({ onLogged }: PainCheckProps) {
     // Keyed on the request alone. `record` and `onLogged` are fresh closures
     // every render, and re-running for them would record the answer twice.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [checkin]);
+  }, [checkin, revealed]);
 
   return (
     <>

@@ -56,6 +56,7 @@ export const CORE_RU = {
   'settings.equipment.ball': 'Массажный мяч',
   'settings.account.saveTitle': 'Сохраните прогресс',
   'settings.account.saveBody': 'Войдите через Apple, и план, отметки и тесты вернутся на новом телефоне или после переустановки.',
+  'settings.account.saveBodyGoogle': 'Войдите через Google, и план, отметки и тесты вернутся на новом телефоне или после переустановки.',
   'settings.account.signedIn': 'Вход через Apple выполнен. Прогресс сохраняется в аккаунте.',
   'settings.lastSync': 'Последняя синхронизация: {time}',
   'settings.lastSyncNever': 'Ещё не синхронизировано',
@@ -147,7 +148,7 @@ export const CORE_RU = {
   // ── Quick actions (long-press the app icon) ────────────────────────────────
   'purchase.unavailable': 'Этот план сейчас недоступен.',
 
-  'quick.deleteTitle': '{name}, СТОП.',
+  'quick.deleteTitle': '{name}, стоп.',
   'quick.deleteBody': 'Собираюсь удалить приложение.\n\nЧто меня оттолкнуло:\n\n',
   'quick.deleteSubject': 'Перед тем как удалить Walkito',
   'quick.talkSubject': 'Что-то не так в Walkito',
@@ -196,4 +197,5 @@ export const CORE_RU = {
   'common.close': 'Закрыть',
   'common.profile': 'Профиль',
   'common.done': 'Готово',
+  'common.cancel': 'Отмена',
 };

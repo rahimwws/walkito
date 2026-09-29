@@ -320,9 +320,22 @@ function ChoiceRow({
           <Glyph size={ICON} color={art.color} weight="fill" />
         )}
 
-        <Text style={[styles.label, { color: colors.foreground }]} numberOfLines={1}>
-          {option.label}
-        </Text>
+        {option.caption == null ? (
+          <Text style={[styles.label, { color: colors.foreground }]} numberOfLines={1}>
+            {option.label}
+          </Text>
+        ) : (
+          // A qualifier under the label — "Recommended", "An easy start" —
+          // in the caption colour, so the row still reads as one choice.
+          <View style={styles.labels}>
+            <Text style={[styles.labelTight, { color: colors.foreground }]} numberOfLines={1}>
+              {option.label}
+            </Text>
+            <Text style={[styles.caption, { color: meter.caption }]} numberOfLines={1}>
+              {option.caption}
+            </Text>
+          </View>
+        )}
 
         <Animated.View style={[styles.check, checkStyle]}>
           <CheckCircle size={CHECK} color={colors.card} weight="bold" />
@@ -377,6 +390,23 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontFamily: fonts.semibold,
     letterSpacing: -0.2,
+  },
+  labels: {
+    flex: 1,
+    gap: 1,
+  },
+  labelTight: {
+    fontSize: 16,
+    lineHeight: 20,
+    fontFamily: fonts.semibold,
+    letterSpacing: -0.2,
+    includeFontPadding: false,
+  },
+  caption: {
+    fontSize: 13,
+    lineHeight: 17,
+    fontFamily: fonts.medium,
+    includeFontPadding: false,
   },
   check: {
     width: CHECK,

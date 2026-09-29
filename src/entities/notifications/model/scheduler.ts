@@ -34,7 +34,7 @@ import {
   recordSent,
   type DeliveryState,
 } from './limits';
-import { notificationsAllowed } from './notifications';
+import { CHANNEL_ID, ensureNotificationChannel, notificationsAllowed } from './notifications';
 import { recordOpen } from './opens';
 import { signalsFor, windowDays } from './signals';
 import { STEP_CHECK, stepCheckBlocked, type StepCheckBlocked } from './steps-check';
@@ -265,6 +265,7 @@ export async function refresh(now: number = Date.now()): Promise<PlannedItem[]> 
 
   const planned = planWindow(now);
   const laid: string[] = [];
+  await ensureNotificationChannel();
 
   /**
    * When the next session opens — the same `nextSession` Plan and Home show,
@@ -301,7 +302,7 @@ export async function refresh(now: number = Date.now()): Promise<PlannedItem[]> 
           body: item.body,
           data: { kind: PLAN_KIND, notification: item.kind, date: item.dateKey },
         },
-        trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: when },
+        trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: when, channelId: CHANNEL_ID },
       });
       laid.push(id);
     } catch (error) {

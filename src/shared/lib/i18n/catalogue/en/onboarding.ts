@@ -55,6 +55,7 @@ export const ONBOARDING_EN = {
   'onboarding.intro.greeting': 'Hi, I’m Walkito',
   'onboarding.intro.headline': 'Let’s find out why it still hurts.',
   'onboarding.intro.cta': 'Continue with Apple',
+  'onboarding.intro.ctaGoogle': 'Continue with Google',
   'onboarding.intro.footnote': '~2 min setup',
   /** A genuine failure, not a cancel. No blame and no error code — there is
    * nothing here the user did wrong. */
@@ -233,6 +234,7 @@ export const ONBOARDING_EN = {
   'onboarding.source.youtube': 'YouTube',
   'onboarding.source.friend': 'A friend told me',
   'onboarding.source.appStore': 'Browsing the App Store',
+  'onboarding.source.playStore': 'Browsing Google Play',
   'onboarding.source.google': 'Google search',
   'onboarding.source.other': 'Somewhere else',
   /** Said when the cap pushed an earlier answer off the list. It reports what
@@ -256,6 +258,8 @@ export const ONBOARDING_EN = {
   'onboarding.health.bpm': '{value} bpm',
   'onboarding.health.connect': 'Connect to Health',
   'onboarding.health.opening': 'Opening Health…',
+  'onboarding.health.connectAndroid': 'Connect Health Connect',
+  'onboarding.health.openingAndroid': 'Opening Health Connect…',
   /** The objection every user has at this exact moment, answered before they
    * can voice it. */
   'onboarding.health.promise': 'Your health data never leaves this device.',

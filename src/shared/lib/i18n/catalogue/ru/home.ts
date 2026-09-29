@@ -149,7 +149,7 @@ export const HOME_RU = {
   'home.rangeAboveChip': 'Выше обычного',
   'home.rangeBelowChip': 'Ниже обычного',
   'home.rangeWithinChip': 'Как обычно',
-  'home.usualRangeLegend': 'ОБЫЧНО {low}–{high}',
+  'home.usualRangeLegend': 'Обычно {low}–{high}',
   'home.usualRangeA11y': 'Обычный диапазон, от {low} до {high}',
 
   /**

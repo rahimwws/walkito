@@ -1,6 +1,6 @@
 import MaskedView from '@react-native-masked-view/masked-view';
 import { BlurView } from 'expo-blur';
-import { StyleSheet, View, ViewProps } from 'react-native';
+import { Platform, StyleSheet, View, ViewProps } from 'react-native';
 
 /** Shared falloff beyond floating navigation chrome. */
 export const CHROME_BLUR_BLEED = 44;
@@ -29,6 +29,24 @@ export function ProgressiveBlur({
 }: Props) {
   const toEdge = direction === 'top' ? 'bottom' : 'top';
   const rgb = tint === 'dark' ? '0,0,0' : '255,255,255';
+
+  // Android's BlurView blurs nothing without an opt-in renderer, so the mask
+  // below would fade a flat tint and leave the content under the bar readable
+  // straight through it. A denser gradient does the softening on its own.
+  if (Platform.OS === 'android') {
+    return (
+      <View
+        pointerEvents="none"
+        style={[
+          style,
+          {
+            experimental_backgroundImage: `linear-gradient(to ${toEdge}, rgba(${rgb},0.96) 0%, rgba(${rgb},0.9) 35%, rgba(${rgb},0.6) 62%, rgba(${rgb},0.22) 84%, rgba(${rgb},0) 100%)`,
+          },
+        ]}
+        {...rest}
+      />
+    );
+  }
 
   return (
     <View pointerEvents="none" style={style} {...rest}>

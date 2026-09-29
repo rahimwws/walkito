@@ -2,7 +2,7 @@ import * as AppleAuthentication from 'expo-apple-authentication';
 import * as Device from 'expo-device';
 import { Platform } from 'react-native';
 
-import { forgetIdentity, supabase } from '@/shared/lib/supabase';
+import { accountFor } from './account';
 
 /**
  * Sign in with Apple — a real account, and the name and address that come with it.
@@ -37,7 +37,7 @@ export type AppleSignIn =
     }
   | { status: 'cancelled' }
   | { status: 'unavailable' }
-  | { status: 'failed'; error: unknown; stage: 'apple' | 'server' };
+  | { status: 'failed'; error: unknown; stage: 'provider' | 'server' };
 
 export async function signInWithApple(): Promise<AppleSignIn> {
   // Android lands here. A simulator does **not**, which is worth saying because
@@ -73,7 +73,7 @@ export async function signInWithApple(): Promise<AppleSignIn> {
     const name = credential.fullName;
     const fullName = [name?.givenName, name?.familyName].filter(Boolean).join(' ');
 
-    const account = await accountFor(credential.identityToken);
+    const account = await accountFor('apple', credential.identityToken);
     if (account.error != null) return { status: 'failed', error: account.error, stage: 'server' };
 
     return {
@@ -86,37 +86,6 @@ export async function signInWithApple(): Promise<AppleSignIn> {
     if ((error as { code?: string }).code === 'ERR_REQUEST_CANCELED') {
       return { status: 'cancelled' };
     }
-    return { status: 'failed', error, stage: 'apple' };
+    return { status: 'failed', error, stage: 'provider' };
   }
-}
-
-/**
- * The Supabase account for an Apple identity token: linked to the anonymous
- * user when there is one, signed in to directly otherwise. A build with no
- * backend has no account to make and succeeds with none.
- */
-async function accountFor(token: string | null): Promise<{ userId: string | null; error: unknown }> {
-  const client = supabase;
-  if (client == null) return { userId: null, error: null };
-  if (token == null) return { userId: null, error: new Error('Apple returned no identity token') };
-
-  const { data: current } = await client.auth.getSession();
-  if (current.session?.user.is_anonymous === true) {
-    const linked = await client.auth.linkIdentity({ provider: 'apple', token });
-    if (linked.error == null) {
-      forgetIdentity();
-      return { userId: linked.data.user?.id ?? current.session.user.id, error: null };
-    }
-    // Refused because this Apple ID already has an account (or manual linking
-    // is off on the project): fall through and sign in to it instead.
-  }
-
-  const { data, error } = await client.auth.signInWithIdToken({ provider: 'apple', token });
-  if (error != null) {
-    if (__DEV__) console.warn(`[auth] Apple sign-in to Supabase failed: code=${error.code ?? 'none'} ${error.message}`);
-    return { userId: null, error };
-  }
-  // A different user than the cached anonymous one — see `forgetIdentity`.
-  forgetIdentity();
-  return { userId: data.user?.id ?? null, error: null };
 }

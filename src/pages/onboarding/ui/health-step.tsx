@@ -4,7 +4,7 @@ import { FootprintsIcon } from 'phosphor-react-native/src/icons/Footprints';
 import { HeartIcon } from 'phosphor-react-native/src/icons/Heart';
 import { LockSimpleIcon } from 'phosphor-react-native/src/icons/LockSimple';
 import { useEffect, useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   FadeIn,
@@ -167,8 +167,8 @@ export function HealthStep({ name, summary, onConnected, onNext, onSkip }: Healt
             connected
               ? t('onboarding.cta.next')
               : busy
-                ? t('onboarding.health.opening')
-                : t('onboarding.health.connect')
+                ? t(Platform.OS === 'android' ? 'onboarding.health.openingAndroid' : 'onboarding.health.opening')
+                : t(Platform.OS === 'android' ? 'onboarding.health.connectAndroid' : 'onboarding.health.connect')
           }
           onPress={connected ? onNext : connect}
           disabled={busy || (!available && !connected)}

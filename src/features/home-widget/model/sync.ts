@@ -4,8 +4,10 @@ import * as Linking from 'expo-linking';
 import { AppState, Platform } from 'react-native';
 
 import { currentDay, logFor, logPain, settleOffset, weekPlan } from '@/entities/program';
+import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 
+import { pushAndroidWidget } from '../android/push';
 import type { DailyWidgetProps } from '../ui/daily-widget';
 import { buildWidgetProps, type WidgetArt } from './props';
 
@@ -252,6 +254,10 @@ function queue(work: () => Promise<void>): Promise<void> {
 export function syncWidget(): Promise<void> {
   return queue(async () => {
     if (currentDay() < 1) return;
+    if (Platform.OS === 'android') {
+      await refreshAndroidWidget();
+      return;
+    }
     const wrote = await importWidgetAnswers();
     // A write re-runs the sync through the log subscription; refreshing here
     // too would only do the same work twice.
@@ -261,5 +267,29 @@ export function syncWidget(): Promise<void> {
 
 /** Queued behind any sync, so a reset cannot interleave with a refresh. */
 export function resetWidget(): Promise<void> {
+  if (Platform.OS === 'android') {
+    return queue(async () => {
+      kv.remove(WRITTEN_KEY);
+      await pushAndroidWidget(null, translatorFor(getLanguage())('widget.tapToCheckIn'));
+    });
+  }
   return queue(clearWidget);
+}
+
+/**
+ * Android's widget: one entry, today, redrawn whenever the app syncs. There is
+ * no timeline to forecast into — the launcher redraws on its own schedule from
+ * what was saved, and the app refreshes it on every foreground.
+ */
+async function refreshAndroidWidget(now: number = Date.now()): Promise<void> {
+  const links = {
+    fine: Linking.createURL('/', { queryParams: { checkin: 'fine' } }),
+    hurts: Linking.createURL('/', { queryParams: { checkin: 'hurts' } }),
+    checkin: Linking.createURL('/', { queryParams: { checkin: 'open' } }),
+  };
+  const props = compact(buildWidgetProps(now, {}, Linking.createURL('/'), links, weekPlan(now).days));
+  const fingerprint = JSON.stringify(props);
+  if (kv.getString(WRITTEN_KEY) === fingerprint) return;
+  await pushAndroidWidget(props, translatorFor(getLanguage())('widget.tapToCheckIn'));
+  kv.set(WRITTEN_KEY, fingerprint);
 }

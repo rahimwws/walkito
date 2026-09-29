@@ -7,3 +7,4 @@
  * The root layout mounts `useHomeWidget` once; nothing else needs to know.
  */
 export { useHomeWidget } from './model/use-home-widget';
+export { widgetTaskHandler } from './android/task-handler';

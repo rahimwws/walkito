@@ -6,6 +6,7 @@ import {
   requestAuthorization,
 } from '@kingstinct/react-native-healthkit';
 
+import { EMPTY_SUMMARY, type HealthAccess, type HealthConnection, type HealthSummary } from './health-types';
 import { WRITE_TYPES } from './write-back';
 
 /**
@@ -59,46 +60,13 @@ const LEGACY_READ_TYPES = READ_TYPES.filter(
   (type) => type !== 'HKQuantityTypeIdentifierFlightsClimbed',
 );
 
-export type HealthSummary = {
-  /** Steps today. */
-  steps: number | null;
-  /** Active kilocalories today. */
-  calories: number | null;
-  /** Average heart rate today, bpm. */
-  heartRate: number | null;
-};
-
-export const EMPTY_SUMMARY: HealthSummary = { steps: null, calories: null, heartRate: null };
-
-/**
- * How the connect attempt actually went.
- *
- * Four outcomes rather than a boolean, because the screen has to say four
- * different things and previously could only tell that it had "asked" —
- * a decline and a granted-but-quiet account both arrived as three nulls and
- * were reported identically.
- *
- * `declined` is the honest limit of what Apple will tell us. HealthKit
- * deliberately never reports which read scopes were refused, so a user who
- * denied everything is indistinguishable from one who granted everything and
- * has no data. What we *can* see is the request itself failing or being
- * refused outright, and that is the only thing this reports as declined —
- * never a silent inference from empty readings.
- */
-export type HealthOutcome =
-  /** No HealthKit on this device or runtime. */
-  | 'unavailable'
-  /** The authorisation request failed or was refused outright. */
-  | 'declined'
-  /** Asked and answered, but every type came back empty. */
-  | 'empty'
-  /** At least one figure came back. */
-  | 'ready';
-
-export type HealthConnection = {
-  outcome: HealthOutcome;
-  summary: HealthSummary;
-};
+export {
+  EMPTY_SUMMARY,
+  type HealthAccess,
+  type HealthConnection,
+  type HealthOutcome,
+  type HealthSummary,
+} from './health-types';
 
 /** HealthKit is iOS-only, and absent on iPad and the simulator's older
  * runtimes. Everything below is written to degrade to nulls rather than throw,
@@ -151,8 +119,6 @@ export async function requestHealthAccess(): Promise<boolean> {
  *
  * Says nothing about what was *granted* — Apple will not tell anyone that.
  */
-export type HealthAccess = 'never' | 'current' | 'outdated';
-
 export async function healthAccess(): Promise<HealthAccess> {
   if (!healthAvailable()) return 'never';
   try {

@@ -1,0 +1,10 @@
+# Build output a local `expo run:android` leaves inside libraries. It is not
+# source: EAS installs fresh and never has it, so hashing it made the local
+# runtime version disagree with the build server's and failed the build.
+node_modules/**/android/build/**
+node_modules/**/android/.cxx/**
+node_modules/**/.gradle/**
+node_modules/**/android-expo/build/**
+# React Native's Gradle plugin strips the `package` attribute from this
+# library's manifest in place during a local build.
+node_modules/@react-native-masked-view/masked-view/android/src/main/AndroidManifest.xml

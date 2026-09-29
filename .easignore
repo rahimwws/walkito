@@ -80,3 +80,11 @@ assets/exercises/
 
 # Test output, if it is ever generated locally.
 /coverage
+
+# Not part of the app. .claude/ holds agent worktrees (gigabytes) and site/ is
+# the website; neither is read by the build, and both were being uploaded.
+/.claude/
+/site/
+/.agents/
+/.expo-code-review/
+/supabase/

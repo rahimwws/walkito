@@ -98,7 +98,7 @@ export const PAGES_EN = {
   // The seams between blocks. Upper case is a typographic choice made in the
   // catalogue rather than by `toUpperCase()` at the call site, so a language
   // whose script has no case can simply write it in its own.
-  'pages.program.blockSeam': 'BLOCK {index} · {name}',
+  'pages.program.blockSeam': 'Block {index} · {name}',
   'pages.program.blockAllDone': { one: '{count} day done', other: '{count} days done' },
   'pages.program.blockProgress': '{done} of {length} done',
   /** Under a block's seam: which fortnight of the plan it covers. */
@@ -118,7 +118,7 @@ export const PAGES_EN = {
     'The hip joins in. A weak glute lets the arch drop, so control moves up the chain while the load on the foot stays where Block 4 left it.',
   'pages.program.blockAbout6':
     'This is no longer treatment - it is upkeep. The towel comes off, heel raises get lighter at 3 × 15, and time barefoot at home goes in. This is the routine you keep.',
-  'pages.program.finishDay': 'DAY {day}',
+  'pages.program.finishDay': 'Day {day}',
   'pages.program.finishCaption': 'Program complete',
 
   // ── Welcome ──────────────────────────────────────────────────────────────
@@ -171,7 +171,7 @@ export const PAGES_EN = {
   // The Workout page as a week: which week it is, what it is for, and why it
   // looks the way it does. Goal names are what the pill says in capitals.
   'pages.week.headerMeta': '{date} · Week {n}',
-  'pages.week.seam': 'THIS WEEK · {goal}',
+  'pages.week.seam': 'This week · {goal}',
   'pages.week.goal.pain_free_mornings': 'Easier mornings',
   'pages.week.goal.arch_hold': 'Stronger arch',
   'pages.week.goal.calf_raises': 'Stronger calves',
