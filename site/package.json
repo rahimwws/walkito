@@ -12,6 +12,7 @@
     "deploy": "node scripts/deploy.mjs"
   },
   "dependencies": {
+    "@hugeicons/core-free-icons": "^4.2.3",
     "next": "^16.3.5",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"

@@ -24,6 +24,7 @@ export function ScreenshotSlot({
   alt,
   size = 'md',
   priority = false,
+  sizes,
 }: {
   src?: string;
   /** What the placeholder says, and the alt text when `alt` is not given. */
@@ -32,6 +33,8 @@ export function ScreenshotSlot({
   size?: 'md' | 'sm';
   /** The hero phone: load it eagerly instead of lazily. */
   priority?: boolean;
+  /** Overrides the `sizes` hint when the phone is drawn at another width. */
+  sizes?: string;
 }) {
   if (src) {
     const retina = src.replace(/\.webp$/, '@2x.webp');
@@ -42,7 +45,7 @@ export function ScreenshotSlot({
           <img
             src={src}
             srcSet={`${src} 660w, ${retina} 1206w`}
-            sizes={size === 'sm' ? '(max-width: 760px) 42vw, 220px' : '(max-width: 760px) 72vw, 320px'}
+            sizes={sizes ?? (size === 'sm' ? '(max-width: 760px) 42vw, 220px' : '(max-width: 760px) 72vw, 320px')}
             width={1206}
             height={2622}
             alt={alt ?? label}

@@ -4,6 +4,16 @@ import { Founders } from '@/components/Founders';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { ScreenshotSlot } from '@/components/ScreenshotSlot';
+import ArrowRight01Icon from '@hugeicons/core-free-icons/ArrowRight01Icon';
+import BodyPartLegIcon from '@hugeicons/core-free-icons/BodyPartLegIcon';
+import ChartIncreaseIcon from '@hugeicons/core-free-icons/ChartIncreaseIcon';
+import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
+import FootprintsIcon from '@hugeicons/core-free-icons/FootprintsIcon';
+import RunningShoesIcon from '@hugeicons/core-free-icons/RunningShoesIcon';
+import SunriseIcon from '@hugeicons/core-free-icons/SunriseIcon';
+import Timer01Icon from '@hugeicons/core-free-icons/Timer01Icon';
+
+import { Icon } from '@/components/Icon';
 import { CHROME } from '@/lib/i18n';
 import { PAIN_GOAL_MAX, PROGRAM, SITE_NAME } from '@/lib/site';
 
@@ -39,30 +49,53 @@ export const APP = {
   ],
 };
 
-/** Who it is for. Each card goes to the page that says more. */
+/**
+ * Who it is for. Each card is one link to the page that says more, tinted with
+ * one of the app's accent colours (`accents` in src/shared/config/theme.ts).
+ * The goal tag is shown only where it is one of the app's five goals.
+ */
 const FOR_WHO = [
   {
     title: 'Heel pain and plantar fasciitis',
     text: 'Sharp first steps in the morning, pain after sitting or a long walk.',
     href: '/plantar-fasciitis-exercises/',
+    icon: FootprintsIcon,
+    accent: 'teal',
+    goal: 'Goal: pain-free mornings',
   },
   {
     title: 'Flat feet',
     text: 'Tired, aching arches and feet that roll in.',
     href: '/flat-feet-exercises/',
+    icon: BodyPartLegIcon,
+    accent: 'violet',
+    goal: `Goal: ${archHoldSeconds}-second arch hold`,
   },
   {
     title: 'On your feet all day',
     text: 'Nurses, retail, warehouse, hospitality. Feet that hurt by the end of the shift.',
     // No page of its own yet; the program page is the closest honest answer.
     href: '/program/',
+    icon: Clock01Icon,
+    accent: 'amber',
+    goal: null,
   },
   {
     title: 'Runners and athletes',
     text: 'Heel, Achilles or shin pain that keeps coming back when you train.',
     href: '/heel-pain-runners/',
+    icon: RunningShoesIcon,
+    accent: 'blue',
+    goal: `Goal: ${calfRaises} single-leg calf raises`,
   },
-];
+] as const;
+
+/** Small notes around the hero phones, on wide screens only. */
+const CHIPS = [
+  { text: 'Bad morning? Today gets lighter', icon: SunriseIcon, place: 'chip-a' },
+  { text: `A test every ${PROGRAM.testEveryDays} days`, icon: ChartIncreaseIcon, place: 'chip-b' },
+  { text: `${MIN_A}, ${MIN_B} or ${MIN_C} min`, icon: Timer01Icon, place: 'chip-c' },
+] as const;
 
 /**
  * The cards under the plan section. The goal card is Rahym's, from the home
@@ -109,6 +142,8 @@ const INSIDE = [
     caption: 'Quick routines for any moment',
   },
   {
+    // TODO: swap for /app/progress-results.webp (Progress screen, left vs
+    // right over time) once that screenshot is taken.
     src: '/app/08b-retest-left-right.webp',
     label: 'Walkito: retest numbers, calf raises on the left leg against the right, arch hold and balance',
     caption: 'Your retests, left vs right',
@@ -159,27 +194,54 @@ export function HomeEn() {
       <JsonLd data={APP} />
       <Masthead lang="en" />
 
-      <main>
-        <section className="shell hero hero-long">
-          <h1>
-            Tried everything?
-            <span>Try a plan built for your feet.</span>
-          </h1>
-          <p>
-            Walkito is a personal exercise plan for heel, foot and leg pain that
-            adjusts to how your feet feel each day.
-          </p>
-          <AppStoreBadge campaign="home-hero" anchor />
-          <p className="hero-small">
-            {MIN_A}, {MIN_B} or {MIN_C} minutes a day, at home.
-          </p>
+      <main className="home">
+        <section className="shell hero hero-long hero-split">
+          <div className="hero-text">
+            <h1>
+              Tried everything?
+              <span>Try a plan built for your feet.</span>
+            </h1>
+            <p>
+              Walkito is a personal exercise plan for heel, foot and leg pain that
+              adjusts to how your feet feel each day.
+            </p>
+            <AppStoreBadge campaign="home-hero" anchor />
+            <p className="hero-small">
+              {MIN_A}, {MIN_B} or {MIN_C} minutes a day, at home.
+            </p>
+          </div>
 
-          <div className="shot">
-            <ScreenshotSlot
-              src="/app/01-plan-goal.webp"
-              label="Walkito: your plan with a pain-free running goal, step 2 of 4, stronger arch"
-              priority
-            />
+          {/* Three phones: today in front, a bad morning on the left, an
+              exercise playing on the right. Only the front one loads eagerly. */}
+          <div className="hero-phones">
+            <div className="hero-phone hero-phone-left">
+              <ScreenshotSlot
+                src="/app/hero-checkin-bad.webp"
+                label="Walkito after a bad morning is logged: today's session gets lighter"
+                sizes="(max-width: 1023px) 34vw, 230px"
+              />
+            </div>
+            <div className="hero-phone hero-phone-center">
+              <ScreenshotSlot
+                src="/app/hero-home.webp"
+                label="Walkito's Today screen: a greeting, the morning check-in and today's session"
+                sizes="(max-width: 1023px) 44vw, 270px"
+                priority
+              />
+            </div>
+            <div className="hero-phone hero-phone-right">
+              <ScreenshotSlot
+                src="/app/hero-exercise.webp"
+                label="Walkito playing an exercise video with its cue"
+                sizes="(max-width: 1023px) 34vw, 230px"
+              />
+            </div>
+            {CHIPS.map((chip) => (
+              <span key={chip.text} className={`hero-chip ${chip.place}`} aria-hidden>
+                <Icon icon={chip.icon} size={18} />
+                {chip.text}
+              </span>
+            ))}
           </div>
         </section>
 
@@ -195,15 +257,22 @@ export function HomeEn() {
 
         <section className="shell proof proof-lead">
           <h2>Is this for me?</h2>
-          <div className="quotes quotes-four">
+          <div className="who-grid">
             {FOR_WHO.map((card) => (
-              <figure key={card.title}>
-                <h3>
-                  {/* Non-breaking space: the arrow never wraps onto a line of its own. */}
-                  <a href={card.href}>{card.title}&nbsp;→</a>
-                </h3>
+              <a key={card.title} href={card.href} className={`who-card who-${card.accent}`}>
+                <span className="who-icon">
+                  <Icon icon={card.icon} size={26} />
+                </span>
+                {card.goal && <span className="who-goal">{card.goal}</span>}
+                <h3>{card.title}</h3>
                 <p>{card.text}</p>
-              </figure>
+                <span className="who-more">
+                  Read the guide
+                  <span className="who-arrow">
+                    <Icon icon={ArrowRight01Icon} size={18} strokeWidth={2} />
+                  </span>
+                </span>
+              </a>
             ))}
           </div>
         </section>
@@ -275,20 +344,29 @@ export function HomeEn() {
 
         <section className="shell proof home-faq">
           <h2>Questions</h2>
-          <div className="faq">
+          {/* Native details/summary: the answer stays in the HTML for search
+              engines and assistants, and opens on tap. */}
+          <div className="faq faq-details">
             {FAQ.map((item) => (
-              <section key={item.q}>
-                <h3>{item.q}</h3>
+              <details key={item.q}>
+                <summary>
+                  <h3>{item.q}</h3>
+                </summary>
                 <p>{item.a}</p>
-              </section>
+              </details>
             ))}
           </div>
         </section>
 
-        <section className="shell proof final">
-          <h2>Your feet, your plan.</h2>
-          <AppStoreBadge campaign="home-bottom" />
-          <p className="notice">{c.notice}</p>
+        <section className="shell final">
+          <div className="final-card">
+            <h2>Your feet, your plan.</h2>
+            <AppStoreBadge campaign="home-bottom" />
+            <p className="final-small">
+              {MIN_A}, {MIN_B} or {MIN_C} minutes a day, at home.
+            </p>
+          </div>
+          <p className="final-notice">{c.notice}</p>
         </section>
       </main>
 
