@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Cite } from '@/components/Cite';
+import { CHROME } from '@/lib/i18n';
 import { articleSchema } from '@/lib/schema';
 import { PAGE_UPDATED, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
 
@@ -21,6 +22,10 @@ import { PAGE_UPDATED, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
  *     claim about arch shape says which feet it was measured on, and the
  *     meta-analysis's six-week figure travels with its overall null result.
  *
+ * Study jargon (index names, confidence intervals, p-values, navicular drop in
+ * cm, arch angle in degrees) lives in the `cite` source lines right under the
+ * claim it backs, so the main text reads plainly and the figures stay checkable.
+ *
  * Two sections from the brief are missing, both deliberately. See the notes
  * where they would have gone.
  */
@@ -34,7 +39,7 @@ const DESCRIPTION =
 
 export const metadata: Metadata = {
   // The supporting page for the home page's query: it answers the question
-  // people ask on the way to choosing a plan — does exercise help, and which.
+  // people ask on the way to choosing a plan (does exercise help, and which).
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: '/science' },
@@ -56,8 +61,8 @@ export const metadata: Metadata = {
  * `Article` with `citation`, not `MedicalWebPage`.
  *
  * The brief is explicit and the reasoning holds: declaring medical content
- * invites the strictest YMYL evaluation Google has — credentialed authorship,
- * medical review, the lot — in exchange for nothing an exercise program can
+ * invites the strictest YMYL evaluation Google has (credentialed authorship,
+ * medical review, the lot) in exchange for nothing an exercise program can
  * win. This page cites medical research; it does not claim to be medicine.
  */
 const ARTICLE = articleSchema({
@@ -79,7 +84,37 @@ const BREADCRUMBS = {
   ],
 };
 
+// Headings once, so the contents list and the sections cannot drift apart.
+const H = {
+  twoProblems: { id: 'two-problems', h2: 'Are heel pain and flat arches the same problem?' },
+  strength: { id: 'strength-vs-stretching', h2: 'Is strength training better than stretching for plantar fasciitis?' },
+  arch: { id: 'arch', h2: 'Can exercise change a flat arch?' },
+  guideline: { id: 'guideline', h2: 'What does the 2023 guideline recommend for plantar fasciitis?' },
+  comeBack: { id: 'come-back', h2: 'Can heel pain come back after it eases?' },
+  measure: { id: 'what-walkito-measures', h2: 'What Walkito measures, and what it doesn’t' },
+  isNot: { id: 'what-walkito-is-not', h2: 'What Walkito is not' },
+  clinician: { id: 'see-a-clinician', h2: 'See a clinician first if' },
+} as const;
+
+// The guideline's grades, row for row as in HEEL_PAIN_EN (lib/guides/en.ts),
+// each checked against the 2023 guideline's summary of recommendations. The
+// last column says what the app actually does, checked against the app: taping
+// and night splints were once listed as "recommended" here, but nothing in the
+// app recommends either, so the column says so rather than borrowing a grade.
+const GRADES: readonly [option: string, grade: string, inWalkito: string][] = [
+  ['Plantar fascia and calf stretching', 'A', 'In the plan from week one'],
+  ['Manual therapy (hands-on work on the joints and soft tissue of the leg and foot), from a clinician', 'A', 'Not part of Walkito'],
+  ['Taping alongside other physical therapy, for better pain and function over up to 6 weeks', 'A', 'Not part of Walkito'],
+  ['Night splints for 1 to 3 months, if your first steps each morning keep hurting', 'A', 'Not part of Walkito'],
+  ['Resistance and strength training', 'B', 'The core of the plan, one level at a time'],
+  ['Low-level laser therapy and dry needling, from a clinician', 'B', 'Not part of Walkito'],
+  ['Orthotics on their own, for short-term pain relief', 'B against', 'Not recommended on their own'],
+  ['Orthotics combined with other care', 'C', 'Not part of Walkito'],
+  ['Therapeutic ultrasound added to stretching', 'A against', 'Not included'],
+];
+
 export default function Science() {
+  const c = CHROME.en;
   return (
     <>
       <JsonLd data={ARTICLE} />
@@ -90,171 +125,179 @@ export default function Science() {
         <h1>Heel pain research: strength vs stretching, and the 2023 guideline</h1>
         <Byline lang="en" updated={PAGE_UPDATED.science} />
 
-        {/* Answer first: the passage an AI answer lifts is the first one that
-            answers the query on its own, so the finding leads and the page's
-            description of itself follows. */}
         <p className="lede">
-          For heel pain from plantar fasciitis, the 2023 clinical guideline
-          grades stretching A and strength training B, and a randomised trial
-          found high-load strength work improved pain and function faster than
-          stretching, though the two groups had converged by twelve months.
-          For flexible flat feet, a six-week combined exercise program changed
-          arch measures in one randomised trial; for short-foot training alone,
-          a meta-analysis found no significant effect overall and an
-          improvement only in programs longer than six weeks. This page lists
-          the studies Walkito is built on, what they found and where their
-          evidence stops.
+          This page lists the studies Walkito is built on, what they found,
+          and where their evidence stops. There are four: a trial on heel pain,
+          a trial and a review on flat feet, and the 2023 clinical guideline
+          for heel pain.
+        </p>
+        {/* Answer first: the passage an AI answer lifts is the first one that
+            answers the query on its own, so the findings follow straight on,
+            each with its size, timeframe and which feet. */}
+        <p>
+          For heel pain from plantar fasciitis, the 2023 guideline gives
+          stretching its top grade, A, and strength training a B. In a trial of
+          48 people, heavy heel raises eased pain faster than stretching, and by
+          twelve months both groups were even. For <b>flexible</b> flat feet,
+          one trial of 52 people found that six weeks of exercise changed the
+          shape of the arch. A 2024 review of short-foot training found no
+          significant difference overall, and one arch measure improved only in
+          programs longer than six weeks.
         </p>
 
-        <h2>Pain and arch shape are two different problems</h2>
+        <nav className="toc" aria-label={c.contents}>
+          <h2>{c.contents}</h2>
+          <ol>
+            {Object.values(H).map((s) => (
+              <li key={s.id}>
+                <a href={`#${s.id}`}>{s.h2}</a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+
+        <h2 id={H.twoProblems.id}>{H.twoProblems.h2}</h2>
         <p>
-          The research measures them separately. The strength trial below was
-          scored on the Foot Function Index (pain and function). The arch
-          trials were scored on navicular drop and arch angle, which measure
-          the shape of the arch, not pain.
+          Heel pain and the shape of the arch are two different problems, and
+          the research measures them in different ways. The heel pain trial
+          below scored pain and daily function. The arch studies measured the
+          shape of the arch, not pain.
+        </p>
+        <p className="cite">
+          The heel pain trial was scored on the Foot Function Index. The arch
+          studies were scored on navicular drop and arch angle, two measures of
+          arch shape.
         </p>
         <p>
-          So a result for one is not evidence for the other: the arch findings
-          do not show that arch training relieves pain, and calf strength work
-          is not designed to change arch shape. Walkito works on both as
-          separate goals (pain-free mornings, and a{' '}
-          {PROGRAM.goals.archHoldSeconds}-second arch hold), with up to three
-          goals active at once and pain first when there is pain. The arch goal
-          is meant for flexible flat feet, and the app does not check which
-          kind you have: if your arch stays flat even off the ground, leave it
-          aside and see a clinician. How the goals share a week is on{' '}
+          So a result for one is not proof for the other. The arch studies do
+          not show that arch training eases pain. Calf strength work is not
+          meant to change the shape of the arch. Walkito works on both as
+          separate goals: pain-free mornings, and a{' '}
+          {PROGRAM.goals.archHoldSeconds}-second arch hold. Up to three goals
+          can be active at once, and pain comes first when you have pain.
+        </p>
+        <p>
+          The arch goal is meant for flexible flat feet, where the arch comes
+          back when the foot is off the ground. Walkito does not check which
+          kind you have. If your arch stays flat even off the ground, leave the
+          arch goal aside and see a clinician. How the goals share a week is on{' '}
           <a href="/program/">the plan page</a>.
         </p>
 
-        <h2>Strength training moves pain faster than stretching</h2>
+        <h2 id={H.strength.id}>{H.strength.h2}</h2>
         <p>
-          In a randomised trial of 48 people with plantar fasciitis confirmed by
-          ultrasound, participants all wore shoe inserts and did either
-          high-load strength training every other day or daily
-          plantar-specific stretching. At three months the strength group scored{' '}
-          <b>29 points lower</b> on the Foot Function Index (95% CI 6–52,
-          p&nbsp;=&nbsp;0.016).
+          For plantar fasciitis, strength training brought relief sooner than
+          stretching, and by twelve months the two were even. In a trial of 48
+          people with plantar fasciitis confirmed by ultrasound, everyone wore
+          shoe inserts. One group did heavy heel raises every other day. The
+          other group stretched the plantar fascia every day. At three months,
+          the strength group was clearly ahead on pain and daily function. At
+          twelve months, the two groups were even.
         </p>
         {/* The convergence is not a footnote and never moves away from the
             three-month figure. Separated, the 29 points reads as a permanent
             advantage, which is an overclaim the trial does not support. */}
+        <p className="cite">
+          Scored on the Foot Function Index (pain and function): 29 points lower
+          in the strength group at three months (95% CI 6-52,
+          p&nbsp;=&nbsp;0.016), and 22 against 16 at twelve months, not a
+          significant difference.
+        </p>
+        <Cite index={0} />
         <p>
-          At twelve months the two groups had converged: 22 against 16, no
-          significant difference. <b>What this means:</b> strength training
-          produces faster improvement, not a more complete one. That is the
-          only claim Walkito makes for strength work (sooner, not more), and it
-          never promises a cure.
+          So strength work brings the improvement forward. It does not make it
+          bigger. That is the only claim Walkito makes for strength work:
+          sooner, not more. It never promises a cure.
         </p>
         <p>
-          The heel raise Walkito uses follows this trial: single-leg, on a step,
-          a towel under the toes, three seconds up, two seconds held, three
-          seconds down, every other day. It sits near the top of the app’s calf
-          progression, so it is reached one level at a time, and never in the
-          first week, which keeps load off the plantar fascia. The exercise and
-          its starting dose are in{' '}
+          The heel raise in Walkito follows this trial. You stand on one leg on
+          a step, with a towel under your toes. You take three seconds to rise,
+          hold for two, and take three to lower, every other day. It sits near
+          the top of Walkito’s calf exercises, which get harder one level at a
+          time. It never comes in the first week, which keeps load off the
+          plantar fascia at the start. The exercise and its starting dose are
+          in{' '}
           <a href="/plantar-fasciitis-exercises/">
             plantar fasciitis exercises and stretches
           </a>
           .
         </p>
-        <Cite index={0} />
 
-        <h2>The arch responds to training, given enough time</h2>
+        <h2 id={H.arch.id}>{H.arch.h2}</h2>
         <p>
-          In a randomised trial of 52 people with <b>flexible</b> flat feet, a
-          six-week program of foot shortening, ankle work, hip strengthening and
-          stretching improved navicular drop by <b>0.4 cm</b> and arch angle by{' '}
-          <b>16 degrees</b> more than the control group.
+          Exercise can change the shape of a <b>flexible</b> flat arch, and the
+          evidence says to give it six weeks or more. In a trial of 52 people
+          with flexible flat feet, a six-week program improved the arch more
+          than in the control group. The program mixed short-foot training
+          (pulling the ball of the foot toward the heel so the arch lifts),
+          ankle work, hip strengthening and stretching.
+        </p>
+        <p className="cite">
+          Navicular drop improved by 0.4 cm and arch angle by 16 degrees more
+          than in the control group.
         </p>
         <Cite index={1} />
         <p>
-          A 2024 meta-analysis of short-foot training found{' '}
-          <b>no significant difference overall</b> in navicular drop or foot
-          posture index compared with controls. Only in the subgroup of{' '}
-          <b>programs longer than six weeks</b> did navicular drop improve
-          significantly, and the authors conclude that larger samples are
-          needed. It pooled studies of flat feet in general, and most did not
-          make clear whether participants had symptoms. That is one reason
-          Walkito’s plan has no end date: the arch goal stays in the plan until
-          it is reached, rather than stopping on a date that could fall short of
-          the point where this evidence applies.
-          The exercises and their starting doses are in{' '}
-          <a href="/flat-feet-exercises/">flat feet exercises</a>.
+          A 2024 review combined the studies of short-foot training. It found{' '}
+          <b>no significant difference overall</b> compared with control
+          groups. One arch measure improved only in programs{' '}
+          <b>longer than six weeks</b>, and the authors say larger studies are
+          needed. The review pooled studies of flat feet in general, and most
+          did not make clear whether people had symptoms.
+        </p>
+        <p className="cite">
+          Meta-analysis outcomes: navicular drop and Foot Posture Index, neither
+          significantly different from control overall. Navicular drop improved
+          significantly only in the subgroup of programs longer than six weeks.
         </p>
         <Cite index={2} />
-
-        <h2>What clinical guidelines recommend</h2>
         <p>
-          The 2023 clinical practice guideline from the{' '}
-          <i>Journal of Orthopaedic &amp; Sports Physical Therapy</i> grades the
-          evidence for each intervention.
+          That is one reason Walkito’s plan has no end date. The arch goal stays
+          in the plan until you reach it, instead of stopping on a date that
+          might come before the point where this evidence applies. The
+          exercises and their starting doses are in{' '}
+          <a href="/flat-feet-exercises/">flat feet exercises</a>.
         </p>
-        {/* The right-hand column says what the app actually does, checked
-            against the app. Taping and night splints were once listed as
-            "recommended" here; nothing in the app recommends either, so the
-            column now says so rather than borrowing the guideline's grade. */}
+
+        <h2 id={H.guideline.id}>{H.guideline.h2}</h2>
+        <p>
+          The 2023 clinical guideline for plantar fasciitis grades each option
+          by the strength of its evidence, and A is the top grade. The guideline
+          was published in the{' '}
+          <i>Journal of Orthopaedic &amp; Sports Physical Therapy</i>. A grade
+          marked “against” means the guideline advises not to use that option.
+          The last column says what Walkito does with each one.
+        </p>
         <div className="table-wrap">
           <table>
             <thead>
               <tr>
-                <th>Intervention</th>
+                <th>Option</th>
                 <th>Grade</th>
                 <th>In Walkito</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Plantar fascia and calf stretching</td>
-                <td><b>A</b></td>
-                <td>In the plan from week one</td>
-              </tr>
-              <tr>
-                <td>Manual therapy to the joints and soft tissue of the lower limb</td>
-                <td><b>A</b></td>
-                <td>Not part of the app</td>
-              </tr>
-              <tr>
-                <td>Taping alongside other physical therapy, for short-term (up to 6 weeks) improvement in pain and function</td>
-                <td><b>A</b></td>
-                <td>Not part of the app</td>
-              </tr>
-              <tr>
-                <td>Night splints, 1–3 months, for people who consistently have pain on their first steps in the morning</td>
-                <td><b>A</b></td>
-                <td>Not part of the app</td>
-              </tr>
-              <tr>
-                <td>Resistance and strength training</td>
-                <td><b>B</b></td>
-                <td>The core of the plan, one level at a time</td>
-              </tr>
-              <tr>
-                <td>Orthotics used alone, for short-term pain relief</td>
-                <td><b>B: do not use in isolation</b></td>
-                <td>Not recommended on their own</td>
-              </tr>
-              <tr>
-                <td>Orthotics combined with other treatment</td>
-                <td><b>C</b></td>
-                <td>Not part of the app</td>
-              </tr>
-              <tr>
-                <td>Therapeutic ultrasound added to stretching</td>
-                <td><b>A: do not use</b></td>
-                <td>Not included</td>
-              </tr>
+              {GRADES.map(([option, grade, inWalkito]) => (
+                <tr key={option}>
+                  <th scope="row">{option}</th>
+                  <td>
+                    <b>{grade}</b>
+                  </td>
+                  <td>{inWalkito}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
         <Cite index={3} />
         <p>
-          On load, the guideline’s advice is education on strategies to modify
-          weight-bearing load at work, in sport and in daily life, graded E,
-          meaning it is based on theoretical rather than trial evidence. Walkito
-          changes the load rather than stopping: on a high-pain morning the
-          session gets shorter and lighter, but it still happens. What that
-          means if you run is in{' '}
-          <a href="/plantar-fasciitis-exercises/">the heel pain guide</a>.
+          For load, the same guideline advises learning how to change the load
+          on your feet at work, in sport and in daily life. That advice is
+          graded E, which means it rests on theory, not trials. Walkito changes
+          the load instead of stopping. On a high-pain morning the session gets
+          shorter and lighter, but it still happens. What that means if you run
+          is in <a href="/plantar-fasciitis-exercises/">the heel pain guide</a>.
         </p>
 
         {/*
@@ -267,8 +310,8 @@ export default function Science() {
           section. A search surfaced the intrinsic-training reviews but none
           supporting either half of that claim, so it is dropped.
 
-          The recurrence cohort — 174 people, 80.5% at one year, 52.9%
-          reporting a recurrence — carried figures with no citation block, while
+          The recurrence cohort (174 people, 80.5% at one year, 52.9%
+          reporting a recurrence) carried figures with no citation block, while
           every other number on this page has one. The brief's own rule is that
           every number traces to a citation printed here. The rationale it
           supports survives below without the numbers.
@@ -278,53 +321,63 @@ export default function Science() {
           "more than 800 runners" on gait asymmetry. Neither had a citation on
           this page.
         */}
-        <h2>Heel pain can come back, so the plan doesn’t end</h2>
+        <h2 id={H.comeBack.id}>{H.comeBack.h2}</h2>
         <p>
-          Heel pain can return after it eases, so Walkito’s plan has no fixed
-          length and no last week at which the exercises simply stop. It is built one week at a time around a focus goal. A goal
-          that is reached moves to maintaining (it keeps a place in the plan at
-          a lower dose), and the next goal takes its place. Tests continue every{' '}
-          {PROGRAM.testEveryDaysAfterGoal} days once the first goal is reached,
-          so a slide in the numbers shows up rather than being guessed at. None
-          of this promises the pain will not return.
+          Heel pain can come back after it eases, so Walkito’s plan has no fixed
+          length and no last week where the exercises stop. The plan is built
+          one week at a time around a focus goal. When you reach a goal, it
+          moves to maintaining: it keeps a place in the plan at a lower dose,
+          and the next goal takes its place. Tests continue every{' '}
+          {PROGRAM.testEveryDaysAfterGoal} days after the first goal is reached,
+          so a slide in the numbers shows up instead of being guessed at. None
+          of this promises the pain will not come back.
         </p>
 
-        <h2>What we measure, and what we don’t</h2>
+        <h2 id={H.measure.id}>{H.measure.h2}</h2>
         <p>
-          Walkito tracks progress with {PROGRAM.retestTests} physical tests in
-          about {PROGRAM.retestMinutes} minutes: single-leg calf raises to
-          failure, arch hold time and single-leg balance. They come every{' '}
-          {PROGRAM.testEveryDays} days until the first goal is reached, then
-          every {PROGRAM.testEveryDaysAfterGoal}. These are measured, not
-          estimated, and cannot be inflated by using the app more.
+          Walkito tracks progress with {PROGRAM.retestTests} physical tests that
+          take about {PROGRAM.retestMinutes} minutes: single-leg calf raises
+          until you can’t do another, how long you can hold the arch, and
+          single-leg balance. The tests come every {PROGRAM.testEveryDays} days
+          until you reach your first goal, then every{' '}
+          {PROGRAM.testEveryDaysAfterGoal}. They are measured, not estimated, and
+          using the app more cannot push them up.
         </p>
         <p>
-          Walkito can also read walking asymmetry from Apple Health, which
-          iPhone estimates automatically. We compare it only against{' '}
-          <b>your own</b> baseline, never against a population norm. We will
-          tell you when your walking pattern changes. We will never tell you it
-          means you are injured.
+          Walkito can also read walking asymmetry, how uneven your steps are
+          between left and right, from Apple Health. iPhone estimates it on its
+          own. Walkito compares it only with <b>your own</b> starting point,
+          never with other people’s numbers. It will tell you when your walking
+          pattern changes. It will never tell you that the change means you are
+          injured.
         </p>
 
-        <h2>What Walkito is not</h2>
+        <h2 id={H.isNot.id}>{H.isNot.h2}</h2>
         <p>
-          Walkito provides exercise programming. It does not diagnose or treat
-          any condition, and it does not replace a clinician. How these pages
-          are written and checked is on <a href="/about/">the About page</a>;
-          questions about the app itself are answered in{' '}
+          Walkito is an exercise program. It does not diagnose or treat any
+          condition, and it does not replace a clinician. How these pages are
+          written and checked is on <a href="/about/">the About page</a>.
+          Questions about the app itself are answered in{' '}
           <a href="/faq/">the FAQ</a>.
         </p>
         <p>
-          The randomised arch trial above was run on <b>flexible</b> flat feet,
-          where the arch reappears when the foot is lifted off the ground; the
-          meta-analysis pooled studies of flat feet in general. Rigid flat feet
-          are a structural issue that exercise will not change.
+          The arch trial above was run on <b>flexible</b> flat feet, where the
+          arch comes back when the foot is lifted off the ground. The 2024
+          review pooled studies of flat feet in general. Rigid flat feet are a
+          structural problem that exercise will not change.
         </p>
-        <p className="notice">
-          See a clinician first if your pain followed an injury or fall, comes
-          with numbness, tingling, burning, swelling or warmth, wakes you at
-          night, is sharp or getting worse, hurts when you squeeze the heel, or
-          if one arch has flattened suddenly as an adult. The full list is in{' '}
+
+        <h2 id={H.clinician.id}>{H.clinician.h2}</h2>
+        <ul>
+          <li>your pain followed an injury or a fall</li>
+          <li>it comes with numbness, tingling, burning, swelling or warmth</li>
+          <li>it wakes you at night</li>
+          <li>it is sharp or getting worse</li>
+          <li>squeezing the heel hurts</li>
+          <li>one arch has flattened suddenly as an adult</li>
+        </ul>
+        <p>
+          The full list is in{' '}
           <a href="/plantar-fasciitis-exercises/">the heel pain guide</a>.
         </p>
 

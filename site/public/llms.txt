@@ -16,7 +16,7 @@ Last updated: 2026-09-28
 
 ## Guides
 - [Plantar fasciitis exercises and stretches for heel pain](https://walkito.site/plantar-fasciitis-exercises/): Plantar fasciitis exercises and stretches for heel pain: doses, how often, what each should feel like, and what the 2023 guideline recommends.
-- [Flat feet exercises for fallen arches and arch pain](https://walkito.site/flat-feet-exercises/): Short-foot, toe, balance and hip exercises for flexible flat feet and fallen arches, with starting doses, what the trials found, and where arch pain fits.
+- [Flat feet exercises for fallen arches and arch pain](https://walkito.site/flat-feet-exercises/): Flat feet exercises for flexible flat feet and fallen arches: doses, how often, what each should feel like, what trials found, and where arch pain fits.
 
 ## The app and the evidence
 - [Home](https://walkito.site/): what Walkito is and how the plan works, in brief
@@ -26,7 +26,7 @@ Last updated: 2026-09-28
   plan follows, with stated limitations
 - [Questions](https://walkito.site/faq/): sessions, goals, tests, Apple Health,
   notifications, the streak, and the clinical questions people ask
-- [About Walkito](https://walkito.site/about/): What Walkito is, how its heel pain and flat feet guides are written and sourced, what the app does not do, and how to report a mistake.
+- [About Walkito](https://walkito.site/about/): What Walkito is, how its heel pain and flat feet guides are written and sourced, what Walkito does not do, and how to report a mistake.
 
 ## Support and legal
 - [Support](https://walkito.site/support/): notifications, Apple Health permissions,

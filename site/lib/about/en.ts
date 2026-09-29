@@ -1,8 +1,8 @@
-import { PROGRAM, SUPPORT_EMAIL } from '@/lib/site';
+import { PAIN_GOAL_MAX, PROGRAM, SUPPORT_EMAIL } from '@/lib/site';
 
 import type { About } from './types';
 
-/** "3, 5 or 7" — a list of options as a sentence says it. */
+/** "3, 5 or 7": a list of options as a sentence says it. */
 const or = (xs: readonly number[]) => `${xs.slice(0, -1).join(', ')} or ${xs[xs.length - 1]}`;
 
 /*
@@ -15,35 +15,36 @@ export const ABOUT_EN: About = {
   lang: 'en',
   title: 'About Walkito: How Our Guides Are Written',
   description:
-    'What Walkito is, how its heel pain and flat feet guides are written and sourced, what the app does not do, and how to report a mistake.',
+    'What Walkito is, how its heel pain and flat feet guides are written and sourced, what Walkito does not do, and how to report a mistake.',
   h1: 'About Walkito',
-  lede: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day. This page says how the guides on this site are written, where their figures come from, what the app does not do, and how to tell us when something is wrong.',
+  lede: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day. This page explains how the guides on this site are written and where their numbers come from. It also says what Walkito does not do, and how to tell us when something is wrong.',
   sections: [
     {
-      h2: 'What Walkito is',
+      h2: 'What is Walkito?',
       paragraphs: [
-        `Walkito builds an exercise plan one week at a time around a measurable goal: pain-free mornings, a ${PROGRAM.goals.archHoldSeconds}-second arch hold, ${PROGRAM.goals.calfRaises} single-leg calf raises, ${PROGRAM.goals.balanceSeconds} seconds of single-leg balance, or a left/right difference under ${PROGRAM.goals.gapPercent}%. You start with at most three goals, pain first if something hurts. You choose ${or(PROGRAM.daysPerWeek)} training days a week and sessions of ${or(PROGRAM.sessionMinutes)} minutes, each day adapts to how your morning went, and a short test every ${PROGRAM.testEveryDays} days (every ${PROGRAM.testEveryDaysAfterGoal} once your first goal is reached) shows whether the numbers are moving.`,
-        'There is no fixed length. A goal that is reached moves to maintaining and the next one takes its place, for as long as you use the app. [How the plan works](/program/).',
-        'The app is in English, Russian and Spanish.',
+        `Walkito is an iPhone app that builds your exercise plan one week at a time around goals you can measure. There are five goals: pain-free mornings (morning pain at ${PAIN_GOAL_MAX}/10 or less for ${PROGRAM.painFreeDays} days in a row), a ${PROGRAM.goals.archHoldSeconds}-second arch hold, ${PROGRAM.goals.calfRaises} single-leg calf raises, ${PROGRAM.goals.balanceSeconds} seconds of balance on one leg, and a gap of less than ${PROGRAM.goals.gapPercent}% between your left and right sides. You start with up to three of them. If something hurts, pain comes first.`,
+        `You pick ${or(PROGRAM.daysPerWeek)} training days a week and sessions of ${or(PROGRAM.sessionMinutes)} minutes. Each day's session adapts to how your morning went. Every ${PROGRAM.testEveryDays} days, a short test shows whether your numbers are moving. Once you reach your first goal, the test comes every ${PROGRAM.testEveryDaysAfterGoal} days.`,
+        'The plan has no fixed length. When you reach a goal, it moves to maintaining at a lower dose, and the next goal takes its place. That goes on for as long as you use Walkito. [How the plan works](/program/).',
+        'Walkito is in English, Russian and Spanish.',
       ],
     },
     {
-      h2: 'How the content is written',
+      h2: 'How are Walkito’s guides written?',
       paragraphs: [
-        'The guides ([plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/) and [flat feet exercises](/flat-feet-exercises/)) and [the evidence page](/science/) follow the same rules:',
+        'Walkito’s guides are written from published research, and every number in them has a source you can check. The guides are [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/) and [flat feet exercises](/flat-feet-exercises/). They and [the evidence page](/science/) follow the same five rules:',
       ],
       bullets: [
-        '**Every figure traces to a primary source** (a randomised trial, a meta-analysis or a clinical guideline), printed and linked on the page that uses it. A number we cannot trace to one does not go on the site, and sentences have been removed for that reason.',
-        '**The reference point is the 2023 clinical practice guideline** on heel pain from the Journal of Orthopaedic & Sports Physical Therapy, which grades each intervention by the strength of its evidence, including the ones it advises against.',
-        '**Qualifiers travel with the figures.** A three-month result is always printed with what happened at twelve months, and every claim about arch shape says which feet it was measured on.',
-        '**Doses are the app’s own starting doses**, where Walkito’s exercises begin, not a prescription for you.',
+        '**Every figure traces to a primary source.** That means a randomised trial, a meta-analysis or a clinical guideline. The source is printed and linked on the page that uses it. If we cannot trace a number to one, it does not go on the site. We have removed sentences for that reason.',
+        '**The 2023 clinical practice guideline on heel pain is the reference point.** It comes from the Journal of Orthopaedic & Sports Physical Therapy. It grades each intervention by how strong its evidence is, including the ones it advises against.',
+        '**Qualifiers travel with the figures.** A three-month result is always printed with what happened at twelve months. Every claim about arch shape says which feet it was measured on.',
+        '**Doses are Walkito’s own starting doses.** They show where Walkito’s exercises begin. They are not a prescription for you.',
         '**No promise of a cure.** The pages say what the research found and where its evidence stops.',
       ],
     },
     {
-      h2: 'What Walkito does not do',
+      h2: 'What does Walkito not do?',
       paragraphs: [
-        'Walkito does not diagnose, does not treat, and does not replace a clinician. It cannot tell you what is causing your pain. See a clinician first if:',
+        'Walkito does not diagnose, does not treat, and does not replace a clinician. Walkito cannot tell you what is causing your pain. See a clinician first if:',
       ],
       // The guides' list (`lib/guides/en.ts`), word for word, plus the arch.
       bullets: [
@@ -62,22 +63,24 @@ export const ABOUT_EN: About = {
       ],
     },
     {
-      h2: 'Clinical review',
+      h2: 'Has a clinician reviewed Walkito’s guides?',
       paragraphs: [
-        'The guides are written by the Walkito team from the published research cited on each page. They have not yet been reviewed by a licensed clinician.',
-        'When that review has happened, the reviewer’s name, credentials and what they checked will be listed here. Until then, no page on this site claims a medical reviewer.',
+        'No licensed clinician has reviewed Walkito’s guides yet. The Walkito team writes them from the published research cited on each page.',
+        'When a clinician does review them, this page will list their name, their credentials and what they checked. Until then, no page on this site claims a medical reviewer.',
       ],
     },
     {
-      h2: 'Corrections and contact',
+      h2: 'How do I report a mistake?',
       paragraphs: [
-        `If you find a mistake (a figure that does not match its source, a dose that reads wrong, a broken link), email ${SUPPORT_EMAIL}. Corrections are made on the page itself.`,
-        'Every page shows the date its content last changed, and that date moves only with a real edit.',
+        `To report a mistake on this site, email ${SUPPORT_EMAIL}. It might be a figure that does not match its source, a dose that reads wrong or a broken link. We correct the page itself.`,
+        'Every page shows the date its content last changed. That date moves only when the content really changes.',
       ],
     },
     {
-      h2: 'Privacy',
-      paragraphs: ['What the app stores, what leaves the phone and how to delete it is in the [privacy policy](/privacy/).'],
+      h2: 'How does Walkito handle my data?',
+      paragraphs: [
+        'Walkito’s [privacy policy](/privacy/) explains what Walkito stores, what leaves your phone and how to delete it. In short, your plan and check-ins are saved to your account, and Apple Health data stays on your phone.',
+      ],
     },
   ],
 };
