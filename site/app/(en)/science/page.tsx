@@ -344,8 +344,9 @@ export default function Science() {
           using the app more cannot push them up.
         </p>
         <p>
-          Walkito can also read walking asymmetry, how uneven your steps are
-          between left and right, from Apple Health. iPhone estimates it on its
+          Walkito can also read walking asymmetry from Apple Health: the
+          percentage of time your steps with one foot are faster or slower than
+          your steps with the other foot. iPhone estimates it on its
           own. Walkito compares it only with <b>your own</b> starting point,
           never with other people’s numbers. It will tell you when your walking
           pattern changes. It will never tell you that the change means you are

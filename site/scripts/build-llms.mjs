@@ -360,9 +360,11 @@ const PLAN_LENGTH = new RegExp(
     String.raw`\b84 d[ií]as`,
     'seis bloques',
     // The old program as it was also described (ten weeks), and the 90-day
-    // store pass, which is a billing period and not the plan's length.
+    // store pass, which is a billing period and not the plan's length. The
+    // pass may be named as access ("3 months (90 days) of access"), which no
+    // reader takes for the plan's length.
     String.raw`\b(?:10|ten)[-\s]weeks?\b`,
-    String.raw`\b(?:90|ninety)[-\s]days?\b`,
+    String.raw`\b(?:90|ninety)[-\s]days?\b(?!\)? of access)`,
     String.raw`\b10[-\s]недел`,
     'десят[а-яё]* недел',
     String.raw`\b90[-\s]дн`,

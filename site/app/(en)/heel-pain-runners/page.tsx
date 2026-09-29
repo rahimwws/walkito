@@ -165,8 +165,8 @@ export default function HeelPainRunners() {
               trials. So there is no trial-tested rule for how much to cut back.
             </p>
             <p>
-              Changing the load can mean shorter runs, fewer runs in a week or
-              easier ones. Keep the plantar fascia and calf stretches every day,
+              For example, changing the load can mean shorter runs, fewer runs in
+              a week or easier ones. Keep the plantar fascia and calf stretches every day,
               and cut back whatever makes the heel worse. On a bad morning, keep
               the stretches and drop the heel raises for the day.
             </p>
@@ -221,8 +221,9 @@ export default function HeelPainRunners() {
             <p>
               Walkito adapts each session to yesterday’s load and this morning’s
               heel, so a hard day lowers the load without stopping the plan. If
-              you connect Apple Health, Walkito reads your steps and sleep, and a
-              long run adds to that day’s steps. The Health data stays on your
+              you connect Apple Health, Walkito reads your steps and sleep. If
+              your phone or watch counts your run’s steps, a long run adds to
+              that day’s total. The Health data stays on your
               phone. Each morning, the first row below that matches sets today’s
               session.
             </p>

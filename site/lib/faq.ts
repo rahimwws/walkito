@@ -188,7 +188,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
       },
       {
         q: 'Does uneven walking mean I am injured?',
-        a: 'Walkito never reads uneven walking as a sign of injury. It compares your walking asymmetry, which the iPhone estimates, only with your own earlier readings, never with other people. Walkito can tell you that your walking has changed. It will never tell you what that means or that you are injured. If something feels wrong, ask a clinician.',
+        a: 'Walkito never reads uneven walking as a sign of injury. Walking asymmetry is the percentage of time your steps with one foot are faster or slower than your steps with the other foot. Walkito compares it, as the iPhone estimates it, only with your own earlier readings, never with other people. Walkito can tell you that your walking has changed. It will never tell you what that means or that you are injured. If something feels wrong, ask a clinician.',
       },
     ],
   },
@@ -224,7 +224,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
     entries: [
       {
         q: 'How much does Walkito cost?',
-        a: 'Walkito’s price is set in the App Store, which shows it in your currency before you buy. There are two ways to pay. One is a monthly subscription that renews on its own. The other is a one-time purchase that gives three months of access and does not renew. The price the App Store shows is the one that applies.',
+        a: 'Walkito’s price is set in the App Store, which shows it in your currency before you buy. There are two ways to pay. One is a monthly subscription that renews on its own. The other is a one-time purchase that gives 3 months (90 days) of access and does not renew. The price the App Store shows is the one that applies.',
       },
       {
         q: 'How do I cancel my Walkito subscription?',

@@ -148,8 +148,8 @@ export default function Terms() {
             <b>A monthly subscription</b> that renews automatically.
           </li>
           <li>
-            <b>The 12-week program</b>, paid once. It gives you 12 weeks of
-            access and does not renew.
+            <b>The 12-week program</b>, paid once. It gives you 3 months (90
+            days) of access and does not renew.
           </li>
         </ul>
 

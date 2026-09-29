@@ -136,8 +136,8 @@ export default function TerminosEs() {
             <b>Una suscripción mensual</b> que se renueva automáticamente.
           </li>
           <li>
-            <b>El programa de 12 semanas</b>, con un pago único. Te da 12
-            semanas de acceso y no se renueva.
+            <b>El programa de 12 semanas</b>, con un pago único. Te da 3 meses
+            (90 días) de acceso y no se renueva.
           </li>
         </ul>
 

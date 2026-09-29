@@ -93,7 +93,7 @@ export default function Support() {
         <p>
           There are two ways to pay, both through the App Store: a monthly
           subscription that renews automatically, and the 12-week program, paid
-          once, which does not renew.
+          once, which gives 3 months (90 days) of access and does not renew.
         </p>
         <ul>
           <li>

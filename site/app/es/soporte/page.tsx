@@ -87,7 +87,8 @@ export default function SoporteEs() {
         <p>
           Hay dos formas de pagar, las dos a través del App Store: una
           suscripción mensual que se renueva automáticamente, y el programa de
-          12 semanas, con un pago único, que no se renueva.
+          12 semanas, con un pago único, que te da 3 meses (90 días) de acceso
+          y no se renueva.
         </p>
         <ul>
           <li>
