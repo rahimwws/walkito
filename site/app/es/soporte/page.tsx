@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 
 import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
+import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
 import { SUPPORT_EMAIL } from '@/lib/site';
 
@@ -26,10 +27,10 @@ export default function SoporteEs() {
     <>
       <Masthead lang="es" />
 
-      <main className="shell prose">
+      <Prose className="shell prose">
         <h1>Soporte</h1>
 
-        <p className="updated">¿Algo no va bien? Cuéntanoslo. Te responde una persona.</p>
+        <p className="updated">¿Algo no funciona bien? Cuéntanos. Te responde una persona.</p>
 
         <p>
           Escribe a {mail}. Te responde una persona, normalmente en menos de 12
@@ -50,8 +51,7 @@ export default function SoporteEs() {
         <h2>El plan va por fechas, no por asistencia</h2>
         <p>
           Saltarte días no te deja atrás, y no hay nada que recuperar. La semana
-          va por fechas, así que una sesión que te saltas no pasa a mañana. Si
-          has estado fuera, abre la app y sigue desde hoy.
+          va por fechas, así que una sesión que te saltas no pasa a mañana. Si estuviste fuera, abre la app y sigue desde hoy.
         </p>
 
         <h2>Notificaciones</h2>
@@ -79,25 +79,25 @@ export default function SoporteEs() {
         <h2>El dolor, y cuándo parar</h2>
         <p>
           Walkito es un programa de ejercicios. No diagnostica, y no puede
-          decirte qué te pasa. Si el dolor es agudo, va a peor o no te deja
-          dormir, consulta a un profesional sanitario.
+          decirte qué te pasa. Si el dolor es agudo, empeora o no te deja
+          dormir, consulta a un profesional de la salud.
         </p>
 
         <h2>Compras</h2>
         <p>
           Hay dos formas de pagar, las dos a través del App Store: una
           suscripción mensual que se renueva automáticamente, y el programa de
-          12 semanas, con un pago único, que te da 3 meses (90 días) de acceso
+          12 semanas, con un pago único, que te da 3 meses (90 días) de acceso
           y no se renueva.
         </p>
         <ul>
           <li>
-            <b>Gestiona o cancela</b> una suscripción en Ajustes → [tu nombre] →
-            Suscripciones. El programa de 12 semanas no tiene nada que cancelar.
+            <b>Administra o cancela</b> una suscripción en Ajustes → [tu nombre] →
+            Suscripciones. El programa de 12 semanas no tiene nada que cancelar.
           </li>
           <li>
             <b>Los reembolsos</b> los gestiona Apple. Usa su página{' '}
-            <a href="https://reportaproblem.apple.com">Informar de un problema</a>.
+            <a href="https://reportaproblem.apple.com">Reportar un problema</a>.
             No podemos tramitar reembolsos en nombre de Apple.
           </li>
           <li>
@@ -122,7 +122,7 @@ export default function SoporteEs() {
           <a href="/support/">la versión en inglés</a>, se aplica la versión en
           inglés.
         </p>
-      </main>
+      </Prose>
 
       <Footer lang="es" page="support" />
     </>

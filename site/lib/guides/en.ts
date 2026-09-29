@@ -287,7 +287,8 @@ export const HEEL_PAIN_EN: Guide = {
   title: 'Plantar Fasciitis Exercises for Heel Pain',
   description:
     'Plantar fasciitis exercises and stretches for heel pain: doses, how often, what each should feel like, and what the 2023 guideline recommends.',
-  h1: 'Plantar fasciitis exercises and stretches for heel pain',
+  // Non-breaking space in «stretches for»: on a phone the balanced break otherwise leaves «stretches» alone on a line.
+  h1: 'Plantar fasciitis exercises and stretches for heel pain',
   lede: 'Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, plantar fasciitis, and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.',
   intro: [
     'It’s also confusing to look up, because everyone says something different. The evidence points to two things: stretching the plantar fascia and calf, and strength work for the calf. A 2023 clinical guideline gives stretching its top grade, A, and strength training a B. In one trial of 48 people, all wearing shoe inserts, slow heel raises with a towel under the toes helped faster than stretching alone. By twelve months both groups were even. Doing both is what the guideline supports.',

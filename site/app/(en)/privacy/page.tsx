@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 
 import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
+import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
 import { SUPPORT_EMAIL } from '@/lib/site';
 
@@ -45,7 +46,7 @@ export default function Privacy() {
     <>
       <Masthead />
 
-      <main className="shell prose">
+      <Prose className="shell prose">
         <h1>Privacy</h1>
 
         <p className="updated">Last updated: 28 September 2026</p>
@@ -342,7 +343,7 @@ export default function Privacy() {
           <br />
           {mail}
         </p>
-      </main>
+      </Prose>
 
       <Footer page="privacy" />
     </>

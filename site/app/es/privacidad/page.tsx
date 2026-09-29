@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 
 import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
+import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
 import { SUPPORT_EMAIL } from '@/lib/site';
 
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Privacidad',
   description:
-    'Qué recoge Walkito y por qué. Tu plan y tus registros se guardan en tu cuenta; los datos de Apple Salud se quedan en tu teléfono. Sin anuncios ni rastreo.',
+    'Qué recopila Walkito y por qué. Tu plan y tus registros se guardan en tu cuenta; los datos de Apple Salud se quedan en tu teléfono. Sin anuncios ni rastreo.',
   alternates: alternatesFor('privacy', 'es'),
 };
 
@@ -27,7 +28,7 @@ export default function PrivacidadEs() {
     <>
       <Masthead lang="es" />
 
-      <main className="shell prose">
+      <Prose className="shell prose">
         <h1>Privacidad</h1>
 
         <p className="updated">Última actualización: 28 de septiembre de 2026</p>
@@ -95,12 +96,12 @@ export default function PrivacidadEs() {
         <ul>
           <li>
             <b>Tus respuestas y ajustes:</b> qué pie y dónde te duele, tu tipo
-            de pie, tu objetivo y tu deporte, los días por semana, la duración
+            de pie, tu meta y tu deporte, los días por semana, la duración
             de la sesión, la hora del recordatorio, el material que no tienes y
             tu fecha de inicio.
           </li>
           <li>
-            <b>Tus objetivos</b> y tu progreso en cada uno.
+            <b>Tus metas</b> y tu progreso en cada uno.
           </li>
           <li>
             <b>Tus registros de dolor:</b> cada puntuación de dolor que anotas,
@@ -124,12 +125,12 @@ export default function PrivacidadEs() {
         </ul>
         <p>
           También usamos esta copia para ver cómo se usa el plan y si la gente
-          alcanza sus objetivos, para poder mejorarlo.
+          alcanza sus metas, para poder mejorarlo.
         </p>
 
         <h2>Lo que se queda en tu teléfono</h2>
         <p>
-          Tu nombre, la edad, el sexo, el peso y la talla de calzado que indicas
+          Tu nombre, la edad, el sexo, el peso y la talla de zapato que indicas
           durante la configuración, tus ajustes de apariencia e idioma de la
           app, los videos de ejercicios que has descargado y todos los datos de
           Apple Salud. Todo esto se guarda solo en el almacenamiento propio de
@@ -159,7 +160,7 @@ export default function PrivacidadEs() {
           aparecer.
         </p>
 
-        <h2>Qué recogemos, cómo y por qué</h2>
+        <h2>Qué recopilamos, cómo y por qué</h2>
 
         <h3>Supabase: tu cuenta y tu plan</h3>
         <p>
@@ -177,13 +178,11 @@ export default function PrivacidadEs() {
         <h3>PostHog: analítica de uso</h3>
         <p>
           <b>Qué:</b> eventos que indican que algo pasó en la app, por ejemplo
-          que se mostró un paso del onboarding, que se terminó una sesión, un
+          que se mostró un paso de la configuración inicial, que se terminó una sesión, un
           registro o una prueba y si la sesión te pareció fácil, normal o
-          difícil, que se alcanzó un objetivo, que se cambió un ajuste del plan
+          difícil, que se alcanzó una meta, que se cambió un ajuste del plan
           (no a qué valor), o que se abrió la pantalla de compra. También las
-          pantallas que visitas y las respuestas a algunas preguntas del
-          onboarding: dónde oíste hablar de Walkito, tu objetivo, tu deporte y
-          cuánto corres. Tu objetivo, o el nombre de un objetivo que alcanzaste,
+          pantallas que visitas y las respuestas a algunas preguntas de la configuración inicial: dónde oíste hablar de Walkito, tu meta, tu deporte y cuánto corres. Tu meta, o el nombre de una meta que alcanzaste,
           puede dar una pista sobre tu afección. Se añaden el modelo de tu
           dispositivo, la versión de iOS y de la app, el idioma y la zona
           horaria, y PostHog deduce una ubicación aproximada (país y ciudad) a
@@ -210,7 +209,7 @@ export default function PrivacidadEs() {
           ver qué canales llevan a compras.
         </p>
 
-        <h3>Expo: notificaciones, actualizaciones, velocidad y errores</h3>
+        <h3>Expo: notificaciones, actualizaciones, velocidad y errores</h3>
         <p>
           <b>Qué:</b> cuánto tarda la app en arrancar y en abrir cada pantalla,
           los errores y los informes de fallos, los mismos eventos que recibe
@@ -222,7 +221,7 @@ export default function PrivacidadEs() {
           ningún servidor.
         </p>
         <p>
-          <b>Por qué:</b> para que la app vaya rápida y funcione bien, mantenerla
+          <b>Por qué:</b> para que la app sea rápida y funcione bien, mantenerla
           al día y entregar las notificaciones de invitaciones.
         </p>
 
@@ -251,11 +250,10 @@ export default function PrivacidadEs() {
         <h2>Cuánto tiempo los conservamos</h2>
         <ul>
           <li>
-            <b>Tu cuenta y todo lo que se guarda en ella:</b> hasta que eliminas
-            tu cuenta.
+            <b>Tu cuenta y todo lo que se guarda en ella:</b> hasta que elimines tu cuenta.
           </li>
           <li>
-            <b>Datos de analítica, de velocidad y de errores:</b> hasta 12 meses.
+            <b>Datos de analítica, de velocidad y de errores:</b> hasta 12 meses.
           </li>
           <li>
             <b>Registros de compras:</b> los conservan Apple y RevenueCat
@@ -263,7 +261,7 @@ export default function PrivacidadEs() {
             y fiscales.
           </li>
           <li>
-            <b>Lo que hay en tu teléfono:</b> hasta que eliminas tu cuenta o la
+            <b>Lo que hay en tu teléfono:</b> hasta que elimines tu cuenta o la
             app.
           </li>
         </ul>
@@ -272,7 +270,7 @@ export default function PrivacidadEs() {
         <p>
           En la app, ve a <b>Perfil → Eliminar cuenta</b>. Esto borra tu cuenta
           de nuestro servidor con todo lo que se guarda en ella: tus respuestas
-          y ajustes, objetivos, registros de dolor, resultados de pruebas,
+          y ajustes, metas, registros de dolor, resultados de pruebas,
           sesiones, uso de la app, correo, dirección de notificaciones y código
           de invitación. Después borra la clave de inicio de sesión y vacía el
           teléfono. No se puede deshacer. También puedes escribir a {mail} y la
@@ -295,8 +293,8 @@ export default function PrivacidadEs() {
 
         <h2>Menores</h2>
         <p>
-          Walkito no es para menores de 13 años, y no recogemos datos de ellos a
-          sabiendas. Si crees que un menor de 13 años ha usado la app, escribe a{' '}
+          Walkito no es para menores de 13 años, y no recopilamos datos de ellos a
+          sabiendas. Si crees que un menor de 13 años ha usado la app, escribe a{' '}
           {mail} y borraremos sus datos.
         </p>
 
@@ -335,13 +333,12 @@ export default function PrivacidadEs() {
         <h2>No es consejo médico</h2>
         <p>
           Walkito es un programa de ejercicios para el dolor de talón y de pie.
-          No diagnostica ninguna afección y no sustituye a un profesional
-          sanitario.
+          No diagnostica ninguna afección y no sustituye a un profesional de la salud.
         </p>
 
         <h2>Cambios</h2>
         <p>
-          Si cambia lo que recogemos, actualizamos esta página y la fecha de
+          Si cambia lo que recopilamos, actualizamos esta página y la fecha de
           arriba.
         </p>
 
@@ -351,7 +348,7 @@ export default function PrivacidadEs() {
           <br />
           {mail}
         </p>
-      </main>
+      </Prose>
 
       <Footer lang="es" page="privacy" />
     </>

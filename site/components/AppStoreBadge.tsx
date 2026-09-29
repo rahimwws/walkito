@@ -22,6 +22,12 @@ function AppleGlyph() {
  * and a Google Play mark side by side; Walkito reads HealthKit sleep, steps and
  * walking asymmetry and draws a Live Activity on the Lock Screen, so it is iOS
  * only. A Play glyph here would be advertising a build that does not exist.
+ *
+ * Russian and Spanish show Apple's own localized badge instead, unaltered, as
+ * downloaded from Apple's marketing tools (toolbox.marketingtools.apple.com):
+ * «Загрузите в App Store» and the Latin American «Descárgalo en el App Store».
+ * A self-made pill in those languages would have been a second translation of
+ * a phrase Apple already translates.
  */
 /** `anchor` marks the one badge the header's pre-launch link scrolls to; a page
  * with two badges must not give both the same id. */
@@ -43,6 +49,17 @@ export function AppStoreBadge({
    * one constant and the page does not change shape on the day.
    */
   const href = storeHref(campaign) ?? '#';
+
+  if (lang !== 'en') {
+    return (
+      <div className="store store-official" id={id}>
+        <a href={href} aria-label={c.getBadgeLabel}>
+          {/* Plain <img>: an SVG needs no resizing, and the export has image optimisation off. */}
+          <img src={`/badges/app-store-${lang}.svg`} alt="" width={120} height={40} />
+        </a>
+      </div>
+    );
+  }
 
   return (
     <div className="store" id={id}>

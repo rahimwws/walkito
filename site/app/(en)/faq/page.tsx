@@ -7,6 +7,7 @@ import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Cite } from '@/components/Cite';
 import { Masthead } from '@/components/Masthead';
+import { Prose, typeset } from '@/components/Prose';
 import { FAQ, FAQ_GROUPS } from '@/lib/faq';
 import { CHROME } from '@/lib/i18n';
 import { faqSchema } from '@/lib/schema';
@@ -65,7 +66,7 @@ const BREADCRUMBS = {
  */
 function Inline({ text }: { text: string }) {
   const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
-  return (
+  return typeset(
     <>
       {parts.map((part, i) => {
         const bold = part.match(/^\*\*([^*]+)\*\*$/);
@@ -74,7 +75,7 @@ function Inline({ text }: { text: string }) {
         if (link) return <a key={i} href={link[2]}>{link[1]}</a>;
         return <Fragment key={i}>{part}</Fragment>;
       })}
-    </>
+    </>,
   );
 }
 
@@ -86,7 +87,7 @@ export default function Faq() {
       <JsonLd data={BREADCRUMBS} />
       <Masthead />
 
-      <main className="shell prose">
+      <Prose className="shell prose">
         <h1>Heel pain exercise app: questions and answers</h1>
         <Byline lang="en" updated={PAGE_UPDATED.faq} />
 
@@ -148,7 +149,7 @@ export default function Faq() {
         <p className="notice">{c.notice}</p>
 
         <AppStoreBadge campaign="faq" />
-      </main>
+      </Prose>
 
       <Footer />
     </>

@@ -7,6 +7,7 @@ import { Cite } from '@/components/Cite';
 import { ExerciseMedia } from '@/components/ExerciseMedia';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
+import { Prose, typeset } from '@/components/Prose';
 import { GUIDES, type Guide as GuideData } from '@/lib/guides';
 import type { GuideTable } from '@/lib/guides/types';
 import { CHROME, TRANSLATED } from '@/lib/i18n';
@@ -25,7 +26,7 @@ const HOME_CRUMB = { en: 'Home', ru: 'Главная', es: 'Inicio' } as const;
  */
 function Inline({ text }: { text: string }) {
   const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
-  return (
+  return typeset(
     <>
       {parts.map((part, i) => {
         const bold = part.match(/^\*\*([^*]+)\*\*$/);
@@ -34,7 +35,7 @@ function Inline({ text }: { text: string }) {
         if (link) return <a key={i} href={link[2]}>{link[1]}</a>;
         return <Fragment key={i}>{part}</Fragment>;
       })}
-    </>
+    </>,
   );
 }
 
@@ -139,7 +140,7 @@ export function Guide({ guide }: { guide: GuideData }) {
       <JsonLd data={faqSchema(guide.faq)} />
       <Masthead lang={guide.lang} />
 
-      <main className="shell prose">
+      <Prose className="shell prose">
         <h1>{guide.h1}</h1>
         <Byline lang={guide.lang} updated={guide.updated} />
         <p className="lede">
@@ -286,7 +287,7 @@ export function Guide({ guide }: { guide: GuideData }) {
             ))}
           </ul>
         </nav>
-      </main>
+      </Prose>
 
       <Footer lang={guide.lang} page={guide.page} />
     </>

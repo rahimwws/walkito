@@ -387,8 +387,11 @@ for (const [name, text] of [['llms.txt', llms], ['llms-full.txt', full]]) {
   }
 }
 
-writeFileSync(join(ROOT, 'public/llms.txt'), llms);
-writeFileSync(join(ROOT, 'public/llms-full.txt'), full);
+// Plain text for machines: the non-breaking spaces that hold Russian and
+// Spanish lines together on a page (scripts/typeset.mjs) are ordinary spaces here.
+const spaces = (text) => text.replaceAll('\u00a0', ' ');
+writeFileSync(join(ROOT, 'public/llms.txt'), spaces(llms));
+writeFileSync(join(ROOT, 'public/llms-full.txt'), spaces(full));
 console.log(
   `llms.txt: ${llms.length} chars · llms-full.txt: ${full.length} chars, ` +
     `${guides.length} guides, ${FAQ.length} FAQ answers${aboutReady ? ', About' : ''}`,

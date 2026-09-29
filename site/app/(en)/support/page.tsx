@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 
 import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
+import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
 import { SUPPORT_EMAIL } from '@/lib/site';
 
@@ -33,7 +34,7 @@ export default function Support() {
     <>
       <Masthead />
 
-      <main className="shell prose">
+      <Prose className="shell prose">
         <h1>Support</h1>
 
         {/* The app's own words, from the Home Screen quick action. Promising a
@@ -121,7 +122,7 @@ export default function Support() {
           sign in again. You can also write to {mail} and we will delete it for
           you.
         </p>
-      </main>
+      </Prose>
 
       <Footer page="support" />
     </>

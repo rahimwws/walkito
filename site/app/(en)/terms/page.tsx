@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
+import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
 import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 
@@ -62,7 +63,7 @@ export default function Terms() {
       <JsonLd data={BREADCRUMBS} />
       <Masthead />
 
-      <main className="shell prose">
+      <Prose className="shell prose">
         <h1>Terms of use</h1>
 
         <p className="updated">Last updated: 28 September 2026</p>
@@ -257,7 +258,7 @@ export default function Terms() {
           <br />
           <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
         </p>
-      </main>
+      </Prose>
 
       <Footer page="terms" />
     </>

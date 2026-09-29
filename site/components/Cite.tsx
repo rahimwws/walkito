@@ -1,4 +1,5 @@
 import { CITATIONS, citationUrl } from '@/lib/citations';
+import { typeset } from '@/components/Prose';
 
 /**
  * One reference, printed under the text that relies on it, and linked.
@@ -10,7 +11,7 @@ import { CITATIONS, citationUrl } from '@/lib/citations';
 export function Cite({ index }: { index: number }) {
   const citation = CITATIONS[index];
   const url = citationUrl(citation);
-  return (
+  return typeset(
     <p className="cite">
       {url ? (
         <a href={url} rel="noopener" target="_blank">
@@ -19,6 +20,6 @@ export function Cite({ index }: { index: number }) {
       ) : (
         citation.text
       )}
-    </p>
+    </p>,
   );
 }

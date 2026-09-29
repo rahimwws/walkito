@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { ScreenshotSlot } from '@/components/ScreenshotSlot';
+import { Prose } from '@/components/Prose';
 import { CHROME } from '@/lib/i18n';
 import { articleSchema } from '@/lib/schema';
 import { IN_SESSION_STOP, PAGE_UPDATED, PAIN_GOAL_MAX, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
@@ -96,7 +97,7 @@ export default function Program() {
       <JsonLd data={BREADCRUMBS} />
       <Masthead />
 
-      <main className="shell prose">
+      <Prose className="shell prose">
         <h1>A heel pain exercise plan that adapts every week</h1>
         <Byline lang="en" updated={PAGE_UPDATED.program} />
 
@@ -385,7 +386,7 @@ export default function Program() {
 
         <p className="cta-line">Start with {PROGRAM.sessionMinutes[0]} minutes a day.</p>
         <AppStoreBadge campaign="program" />
-      </main>
+      </Prose>
 
       <Footer />
     </>

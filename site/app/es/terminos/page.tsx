@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
+import { Prose } from '@/components/Prose';
 import { alternatesFor } from '@/lib/i18n';
 import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 
@@ -42,7 +43,7 @@ export default function TerminosEs() {
       <JsonLd data={BREADCRUMBS} />
       <Masthead lang="es" />
 
-      <main className="shell prose">
+      <Prose className="shell prose">
         <h1>Términos de uso</h1>
 
         <p className="updated">Última actualización: 28 de septiembre de 2026</p>
@@ -53,7 +54,7 @@ export default function TerminosEs() {
         </p>
 
         <p className="lede">
-          Estos términos regulan tu uso de la app Walkito, que gestiona Walkito
+          Estos términos regulan tu uso de la app Walkito, que opera Walkito
           («nosotros»). Al usar la app, los aceptas. Si no los aceptas, deja de
           usarla y elimina tu cuenta en Perfil → Eliminar cuenta.
         </p>
@@ -61,15 +62,15 @@ export default function TerminosEs() {
         <h2>Qué es Walkito</h2>
         <p>
           Walkito es un programa de ejercicios para el dolor de talón y de pie.
-          Arma tu plan semana a semana en torno a objetivos que se pueden medir,
-          con sesiones de 3, 5 o 10 minutos, ajusta cada día según lo que
-          registras y mide tu progreso con pruebas físicas cada 14 días, y cada
-          28 una vez que alcanzas tu primer objetivo.
+          Arma tu plan semana a semana en torno a metas que se pueden medir,
+          con sesiones de 3, 5 o 10 minutos, ajusta cada día según lo que
+          registras y mide tu progreso con pruebas físicas cada 14 días, y cada
+          28 una vez que alcanzas tu primera meta.
         </p>
         <p>
-          <b>No es un producto sanitario, ni un diagnóstico, ni un tratamiento.</b>{' '}
+          <b>No es un dispositivo médico, ni un diagnóstico, ni un tratamiento.</b>{' '}
           No puede decirte qué le pasa a tu pie, y nada de lo que contiene
-          sustituye el consejo de un profesional sanitario que te haya
+          sustituye el consejo de un profesional de la salud que te haya
           examinado.
         </p>
 
@@ -80,8 +81,7 @@ export default function TerminosEs() {
           algo te duela de una forma que la app no tiene manera de saber.
         </p>
         <p className="notice">
-          Consulta a un profesional sanitario antes de empezar, y para y pide
-          consejo, si tu dolor empezó tras una lesión o una caída, viene con
+          Consulta a un profesional de la salud antes de empezar, y detente y pide consejo, si tu dolor empezó tras una lesión o una caída, viene con
           entumecimiento, hormigueo, ardor, hinchazón o calor, te despierta por
           la noche, o si uno de tus arcos se ha aplanado de repente en la edad
           adulta.
@@ -89,7 +89,7 @@ export default function TerminosEs() {
 
         <h2>Quién puede usarla</h2>
         <p>
-          Necesitas tener 13 años o más. Si tienes menos de 18, usa Walkito con
+          Necesitas tener 13 años o más. Si tienes menos de 18, usa Walkito con
           un padre, una madre o un tutor legal que haya leído estos términos.
         </p>
 
@@ -136,8 +136,8 @@ export default function TerminosEs() {
             <b>Una suscripción mensual</b> que se renueva automáticamente.
           </li>
           <li>
-            <b>El programa de 12 semanas</b>, con un pago único. Te da 3 meses
-            (90 días) de acceso y no se renueva.
+            <b>El programa de 12 semanas</b>, con un pago único. Te da 3 meses
+            (90 días) de acceso y no se renueva.
           </li>
         </ul>
 
@@ -146,10 +146,10 @@ export default function TerminosEs() {
           <li>
             Una suscripción se renueva automáticamente al final de cada periodo,
             y se cobra a tu Apple ID, a menos que desactives la renovación al
-            menos 24 horas antes de que termine el periodo.
+            menos 24 horas antes de que termine el periodo.
           </li>
           <li>
-            Gestiónala o cancélala en <b>Ajustes → [tu nombre] → Suscripciones</b>.
+            Adminístrala o cancélala en <b>Ajustes → [tu nombre] → Suscripciones</b>.
             Cancelar detiene la próxima renovación; mantienes el acceso hasta
             el final del periodo que ya pagaste.
           </li>
@@ -166,7 +166,7 @@ export default function TerminosEs() {
 
         <h3>Compras únicas</h3>
         <p>
-          Una compra única, como el programa de 12 semanas, se cobra una sola
+          Una compra única, como el programa de 12 semanas, se cobra una sola
           vez y nunca se renueva. No hay nada que cancelar. Cuando termina,
           puedes volver a comprarla o suscribirte.
         </p>
@@ -181,7 +181,7 @@ export default function TerminosEs() {
         <h2>Invitaciones</h2>
         <p>
           Puedes compartir tu código de invitación. Un amigo que lo use obtiene
-          un descuento en el programa de 12 semanas, y tú recibes semanas
+          un descuento en el programa de 12 semanas, y tú recibes semanas
           gratis, hasta el límite que se muestra en la app.
         </p>
         <p>
@@ -240,7 +240,7 @@ export default function TerminosEs() {
           No prometemos que la app funcione sin interrupciones ni errores, y no
           somos responsables de pérdidas indirectas o derivadas, ni de lesiones
           causadas por el ejercicio que decidiste hacer. Nada de lo aquí escrito
-          limita los derechos que te reconoce la ley de consumo y que no pueden
+          limita los derechos que te reconocen las leyes de protección al consumidor y que no pueden
           limitarse por acuerdo.
         </p>
 
@@ -250,7 +250,7 @@ export default function TerminosEs() {
           <br />
           <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
         </p>
-      </main>
+      </Prose>
 
       <Footer lang="es" page="terms" />
     </>

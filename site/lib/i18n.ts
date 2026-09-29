@@ -29,7 +29,7 @@ export const LANG_NAMES: Record<Lang, string> = {
 export const OG_LOCALE: Record<Lang, string> = {
   en: 'en_US',
   ru: 'ru_RU',
-  es: 'es_ES',
+  es: 'es_MX',
 };
 
 const en = {
@@ -63,29 +63,29 @@ type Chrome = Record<keyof typeof en, string>;
 
 const ru: Chrome = {
   headerButton: 'Скачать приложение',
-  getBadge: 'Скачать в App Store',
-  getBadgeLabel: 'Скачать Walkito в App Store',
+  getBadge: 'Скачать в App Store',
+  getBadgeLabel: 'Скачать Walkito в App Store',
   navProgram: 'Программа',
   navEvidence: 'Исследования',
   navQuestions: 'Вопросы',
   navSupport: 'Поддержка',
   navPrivacy: 'Конфиденциальность',
   navTerms: 'Условия',
-  socialTikTok: 'Walkito в TikTok',
-  socialInstagram: 'Walkito в Instagram',
+  socialTikTok: 'Walkito в TikTok',
+  socialInstagram: 'Walkito в Instagram',
   navFlatFeet: 'Плоскостопие',
-  navHeelPain: 'Боль в пятке',
+  navHeelPain: 'Боль в пятке',
   language: 'Язык',
   sourcesHeading: 'Источники',
   guidesHeading: 'Гайды',
   updated: 'Обновлено',
   keyPoints: 'Главное',
-  contents: 'На этой странице',
+  contents: 'На этой странице',
   faqHeading: 'Частые вопросы',
   relatedHeading: 'Похожие гайды',
-  navAbout: 'О проекте',
+  navAbout: 'О проекте',
   notice:
-    'Walkito: программа упражнений. Она не ставит диагноз и не лечит. Если боль острая, усиливается или мешает спать, обратитесь к врачу.',
+    'Walkito даёт программу упражнений. Он не ставит диагноз и не лечит. Если боль острая, усиливается или мешает спать, обратитесь к врачу.',
 };
 
 const es: Chrome = {
@@ -112,7 +112,7 @@ const es: Chrome = {
   relatedHeading: 'Guías relacionadas',
   navAbout: 'Sobre Walkito',
   notice:
-    'Walkito es un programa de ejercicios. No diagnostica ni trata. Si el dolor es agudo, va a peor o no te deja dormir, consulta a un profesional sanitario.',
+    'Walkito es un programa de ejercicios. No diagnostica ni trata. Si el dolor es agudo, empeora o no te deja dormir, consulta a un profesional de la salud.',
 };
 
 export const CHROME: Record<Lang, Chrome> = { en, ru, es };

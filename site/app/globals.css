@@ -1367,7 +1367,9 @@ figure figcaption b {
   position: absolute;
   left: 50%;
   top: 52%;
-  width: min(560px, 115%);
+  /* Never wider than its column: at 1024px a wider glow was the page's only
+     sideways scroll. */
+  width: min(560px, 100%);
   aspect-ratio: 1;
   transform: translate(-50%, -50%);
   background: radial-gradient(closest-side, rgba(139, 92, 246, 0.26), rgba(139, 92, 246, 0.08) 58%, transparent 78%);
@@ -1792,5 +1794,153 @@ figure figcaption b {
 
   .masthead {
     gap: 10px 12px;
+  }
+}
+
+/* Apple's own badge on the Russian and Spanish pages: the artwork as supplied,
+   no pill around it. 40px is Apple's minimum height on screen. */
+.store-official a,
+.prose .store-official a {
+  padding: 0;
+  background: none;
+  border-radius: 0;
+}
+
+.store-official img {
+  display: block;
+  width: auto;
+  height: 56px;
+}
+
+@media (max-width: 420px) {
+  .store-official a {
+    padding: 0;
+  }
+
+  .store-official img {
+    height: 48px;
+  }
+}
+
+/* ------------------------------------------------------------- wrapping -- */
+
+/* Words are never split by the browser: no automatic hyphens in any language
+   and no mid-word breaks. A heading balances its lines so none ends on a lone
+   word; body text avoids a one-word last line. Line breaks the text needs are
+   in the text itself as non-breaking spaces (scripts/typeset.mjs). */
+html {
+  hyphens: manual;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+h1,
+h2,
+h3,
+summary {
+  text-wrap: balance;
+}
+
+p,
+li,
+dd,
+figcaption {
+  text-wrap: pretty;
+}
+
+/* A hyphenated word, kept on one line (components/Prose.tsx). */
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Tablet widths: the wordmark, five links and the button do not fit on one
+   row until 1024px, so the links take a row of their own, as on a phone. */
+@media (min-width: 761px) and (max-width: 1023px) {
+  .masthead {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+  }
+}
+
+/*
+ * Russian headings.
+ *
+ * Oswald's Cyrillic capitals are wide and Russian words are long: at the
+ * English sizes «ПЕРЕПРОБОВАЛИ?» and «КОНФИДЕНЦИАЛЬНОСТИ» are wider than a
+ * phone, and a heading like «ПЛАН ПОДСТРАИВАЕТСЯ» breaks one word to a line.
+ * These sizes are set so the longest word of every Russian heading fits the
+ * column at 320px.
+ */
+/* «Всё перепробовали?» is 9.6em wide in Oswald capitals: under 29px at 320,
+   under 36px at 390, and under 48px in the 1024px two-column layout. */
+:lang(ru) .hero h1 {
+  font-size: clamp(28px, 8.9vw, 72px);
+}
+
+/* «конфиденциальности» is 10.7em; «Упражнения и растяжка» needs 11.7em of line. */
+:lang(ru) .prose h1 {
+  /* 43px keeps «Политика конфиденциальности» (15.5em) on one line at 672px. */
+  font-size: clamp(22px, 7.2vw, 43px);
+}
+
+:lang(ru) .proof h2,
+:lang(ru) .story h2,
+:lang(ru) .split h2 {
+  font-size: clamp(22px, 7vw, 44px);
+}
+
+@media (min-width: 1024px) {
+  :lang(ru) .hero-split h1 {
+    font-size: clamp(40px, 4.5vw, 52px);
+  }
+}
+
+/* The section with two phones side by side leaves its text a 207px column at
+   768px, one word to a line. Below 1024px it stacks as on a phone. */
+@media (min-width: 761px) and (max-width: 1023px) {
+  .split-flip {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    text-align: center;
+  }
+
+  .split-flip > :first-child {
+    order: 0;
+  }
+
+  .split-flip p {
+    margin-inline: auto;
+  }
+
+  .split-flip .phone-pair {
+    justify-content: center;
+  }
+}
+
+/* The last two words of a plan card heading stay together where the card is
+   wide enough (Home.tsx, keepTail): one or two cards to a row from 375px, and
+   three to a row from 1080px. Between those, three cards share the row and
+   «опубликованных исследований» (281px at 18px) is wider than a card. The
+   Russian heading is a pixel smaller so the pair fits the 291px card at 1440. */
+@media (min-width: 375px) and (max-width: 880px), (min-width: 1080px) {
+  .quotes h3 .tail {
+    white-space: nowrap;
+  }
+}
+
+:lang(ru) .quotes figure h3 {
+  font-size: 18px;
+}
+
+/* Beside a phone the Russian heading has half the row: «План подстраивается»
+   is about 12.8em, and the column is 404px at 768. */
+@media (min-width: 761px) {
+  :lang(ru) .split h2 {
+    font-size: clamp(28px, 3.6vw, 38px);
   }
 }

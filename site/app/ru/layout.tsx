@@ -1,16 +1,13 @@
 import type { Metadata } from 'next';
 
+import { HOME_META } from '@/components/Home';
 import { RootDocument } from '@/components/RootDocument';
-import { PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
+import { OG_LOCALE } from '@/lib/i18n';
+import { SITE_NAME, SITE_URL } from '@/lib/site';
 
 import '../globals.css';
 
 export { viewport } from '@/components/RootDocument';
-
-/** «3, 5 или 10 минут»: the noun agrees with the last number, so reread the
- * sentence if `PROGRAM.sessionMinutes` changes. */
-const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
-const SESSIONS = `${MIN_A}, ${MIN_B} или ${MIN_C}`;
 
 /**
  * The Russian root. See the note on `app/(en)/layout.tsx` for why each
@@ -20,11 +17,10 @@ const SESSIONS = `${MIN_A}, ${MIN_B} или ${MIN_C}`;
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Боль в пятке и плоскостопие у бегунов: упражнения | Walkito',
+    default: HOME_META.ru.title,
     template: `%s | ${SITE_NAME}`,
   },
-  // No plan length: the plan is built a week at a time and has no last week.
-  description: `Упражнения при боли в пятке, пяточной шпоре и плоскостопии для бегунов: план строится по неделе вокруг вашей цели, тренировки по ${SESSIONS} минут.`,
+  description: HOME_META.ru.description,
   robots: {
     index: true,
     follow: true,
@@ -40,7 +36,7 @@ export const metadata: Metadata = {
   // The English card: `next/og` renders its default face, which has no
   // Cyrillic, so a translated card would ship as boxes. The English one is
   // honest about what the app is in any language.
-  openGraph: { siteName: SITE_NAME, locale: 'ru_RU', images: ['/opengraph-image'] },
+  openGraph: { siteName: SITE_NAME, locale: OG_LOCALE.ru, images: ['/opengraph-image'] },
   twitter: { card: 'summary_large_image', images: ['/opengraph-image'] },
 };
 

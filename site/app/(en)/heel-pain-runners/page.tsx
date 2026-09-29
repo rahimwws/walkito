@@ -7,6 +7,7 @@ import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { ScreenshotSlot } from '@/components/ScreenshotSlot';
+import { Prose } from '@/components/Prose';
 import { CITE } from '@/lib/citations';
 import { HEEL_PAIN_EN } from '@/lib/guides/en';
 import { CHROME } from '@/lib/i18n';
@@ -111,7 +112,7 @@ export default function HeelPainRunners() {
       <JsonLd data={faqSchema(FAQ)} />
       <Masthead />
 
-      <main>
+      <Prose>
         <section className="shell hero">
           <h1>
             Heel pain
@@ -309,7 +310,7 @@ export default function HeelPainRunners() {
             <AppStoreBadge campaign="runners-bottom" />
           </section>
         </article>
-      </main>
+      </Prose>
 
       <Footer />
     </>

@@ -1,14 +1,13 @@
 import type { Metadata } from 'next';
 
+import { HOME_META } from '@/components/Home';
 import { RootDocument } from '@/components/RootDocument';
-import { PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
+import { OG_LOCALE } from '@/lib/i18n';
+import { SITE_NAME, SITE_URL } from '@/lib/site';
 
 import '../globals.css';
 
 export { viewport } from '@/components/RootDocument';
-
-/** `3, 5 o 10` — the session options as a Spanish list, as the guides say it. */
-const MINUTES = `${PROGRAM.sessionMinutes.slice(0, -1).join(', ')} o ${PROGRAM.sessionMinutes[PROGRAM.sessionMinutes.length - 1]}`;
 
 /**
  * The Spanish root. See the note on `app/(en)/layout.tsx` for why each
@@ -18,12 +17,10 @@ const MINUTES = `${PROGRAM.sessionMinutes.slice(0, -1).join(', ')} o ${PROGRAM.s
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Ejercicios de talón y pie plano para corredores | Walkito',
+    default: HOME_META.es.title,
     template: `%s | ${SITE_NAME}`,
   },
-  // No length: the plan is built a week at a time and has no end, so the
-  // description sells what it does, with the numbers read from `PROGRAM`.
-  description: `Ejercicios para el dolor de talón y el pie plano en corredores: sesiones de ${MINUTES} minutos y un plan que se arma cada semana y se ajusta a tu dolor.`,
+  description: HOME_META.es.description,
   robots: {
     index: true,
     follow: true,
@@ -39,7 +36,7 @@ export const metadata: Metadata = {
   // The English card: `next/og` renders its default face, which has no
   // Cyrillic, so a translated card would ship as boxes. The English one is
   // honest about what the app is in any language.
-  openGraph: { siteName: SITE_NAME, locale: 'es_ES', images: ['/opengraph-image'] },
+  openGraph: { siteName: SITE_NAME, locale: OG_LOCALE.es, images: ['/opengraph-image'] },
   twitter: { card: 'summary_large_image', images: ['/opengraph-image'] },
 };
 

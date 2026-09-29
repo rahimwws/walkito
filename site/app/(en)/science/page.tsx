@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Cite } from '@/components/Cite';
+import { Prose } from '@/components/Prose';
 import { CHROME } from '@/lib/i18n';
 import { articleSchema } from '@/lib/schema';
 import { PAGE_UPDATED, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
@@ -121,7 +122,7 @@ export default function Science() {
       <JsonLd data={BREADCRUMBS} />
       <Masthead />
 
-      <main className="shell prose">
+      <Prose className="shell prose">
         <h1>Heel pain research: strength vs stretching, and the 2023 guideline</h1>
         <Byline lang="en" updated={PAGE_UPDATED.science} />
 
@@ -384,7 +385,7 @@ export default function Science() {
         </p>
 
         <AppStoreBadge campaign="science" />
-      </main>
+      </Prose>
 
       <Footer />
     </>
