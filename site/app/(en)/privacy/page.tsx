@@ -9,18 +9,22 @@ import { SUPPORT_EMAIL } from '@/lib/site';
  * The Privacy Policy URL App Store Connect asks for.
  *
  * Written from what the code actually does rather than from a template, and
- * checked against it on 27 September 2026:
+ * checked against it on 28 September 2026:
  *
- * - PostHog: the events in `src/shared/lib/analytics/events.ts`, screen paths,
- *   lifecycle events, and session replay with pain and Health screens masked
- *   (`ReplayMask`). US cloud.
- * - Supabase: the anonymous user, `contact_emails`, `push_tokens`, the referral
- *   tables, `delete_account`, and the public `exercise-clips` bucket.
+ * - Account: Sign in with Apple linked to a Supabase user (`apple-auth.ts`),
+ *   a session key in the Keychain (`shared/lib/supabase`), email sign-in for
+ *   existing accounts only (`email-auth.ts`). No Skip in onboarding.
+ * - Plan sync: `entities/program/model/plan/sync.ts` into the tables in
+ *   `0007_plan.sql` and `0008_insights.sql` (profiles, goals, tests, checkins,
+ *   week_plans, sessions, session_exercises, exercise_prefs, app_usage). Every
+ *   table cascades from `auth.users`, so `delete_account` removes it all.
+ * - PostHog: the events in `src/shared/lib/analytics/events.ts`. Session replay
+ *   is off (`enableSessionReplay: false`).
+ * - Expo: EAS Update, `expo-insights` and `expo-observe` (timings, errors),
+ *   the push token for invite notifications.
  * - RevenueCat: its app user id, purchases, `$posthogUserId`, media source.
- * - Expo: the push token (invite pushes go through Expo's push service) and
- *   EAS Update.
  * - HealthKit: `READ_TYPES` in `entities/health/model/health.ts` and
- *   `WRITE_TYPES` in `write-back.ts`. Nothing from HealthKit is sent anywhere.
+ *   `WRITE_TYPES` in `write-back.ts`. Nothing from HealthKit is synced or sent.
  *
  * Apple's privacy label has to agree with this page. If the app starts sending
  * something new, this page is wrong from the moment that ships, and nothing
@@ -30,7 +34,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Privacy',
   description:
-    'What Walkito collects, where it goes and why. Your plan, pain log and Apple Health data stay on your phone. No ads and no ad tracking.',
+    'What Walkito collects, where it goes and why. Your plan and check-ins are saved to your account so they come back on a new phone; Apple Health data stays on your phone. No ads and no ad tracking.',
   alternates: alternatesFor('privacy', 'en'),
 };
 
@@ -44,66 +48,99 @@ export default function Privacy() {
       <main className="shell prose">
         <h1>Privacy</h1>
 
-        <p className="updated">Last updated: 27 September 2026</p>
+        <p className="updated">Last updated: 28 September 2026</p>
 
         <h2>The short version</h2>
         <ul>
+          <li>You sign in with Apple when you set up Walkito.</li>
           <li>
-            Walkito creates an account for you the first time you open it. You do
-            not have to register.
+            Your plan, your answers, your pain check-ins, your test results and
+            the sessions you finish are saved to your account, so they come back
+            on a new phone or after you reinstall the app.
           </li>
           <li>
-            Your plan, your pain log and your Apple Health data stay on your
-            phone. <b>Apple Health data is never uploaded as data.</b>
+            <b>Apple Health data stays on your phone and is never uploaded.</b>
           </li>
           <li>
-            A few services receive a small amount of data so the app can work:
-            PostHog (usage analytics and session recordings), Supabase (your
-            account), RevenueCat (purchases), Expo (notifications and app
-            updates) and Apple (sign-in, payments and notifications). We never
-            send your pain log or Apple Health data to any service as data.
+            A few services receive data so the app can work: Supabase (your
+            account and plan), PostHog (usage analytics), RevenueCat (purchases),
+            Expo (notifications, app updates, speed and crash reports) and Apple
+            (sign-in, payments and notifications).
           </li>
           <li>No ads, no ad tracking, and we never sell your data.</li>
         </ul>
 
         <h2>Your account</h2>
         <p>
-          The first time you open Walkito, the app creates an account on our
-          server with a random ID. Nobody has to register. The account holds your
-          invite code and, if you give them to us, your email address and your
-          notification address.
+          Setting up Walkito signs you in with Apple. Apple gives us an
+          identifier, your name and your email address, or a private relay
+          address if you choose to hide yours. The identifier becomes your
+          account on our server. Your name stays on your phone. Your email
+          address is stored with your account.
         </p>
         <p>
-          If you use Sign in with Apple, Apple shares your name and your email
-          address, or a private relay address if you choose to hide yours. Your
-          name stays on your phone. Your email address is stored with your
-          account. Signing in with an email and password works only for accounts
-          we set up ourselves, for example for App Store review. There is no
-          sign-up with email.
+          If Sign in with Apple is not available on your device, the app uses an
+          anonymous account instead. Signing in with an email and password works
+          only for accounts we set up ourselves, for example for App Store
+          review. There is no sign-up with email.
         </p>
         <p>
-          Your plan and your progress are stored on your phone and are not copied
-          to our server, so they do not move to a new phone. Purchases do: tap
-          Restore Purchases in the app with the same Apple ID.
+          A sign-in key is kept in your iPhone’s Keychain. It survives deleting
+          the app, so a reinstall can find your account again. Delete account
+          removes it.
         </p>
 
         <h2>Your email address</h2>
         <p>
-          The email we store is the one you share through Sign in with Apple, or
-          the one you sign in with. We use it only for sign-in and to answer you
-          when you contact support. We never send marketing emails, and we never
-          share your address for marketing.
+          We use your email address only to answer you when you contact support
+          and to recognise your account in our own reports. We never send
+          marketing emails, and we never share your address for marketing.
+        </p>
+
+        <h2>What is saved to your account</h2>
+        <p>
+          Everything is saved on your phone first. Then, in the background, it is
+          copied to your account on our server, so it comes back when you sign
+          in on a new phone or after you reinstall the app. That copy holds:
+        </p>
+        <ul>
+          <li>
+            <b>Your answers and settings:</b> which foot and where it hurts, your
+            foot type, your goal and sport, days a week, session length,
+            reminder time, the equipment you do not have, and your start date.
+          </li>
+          <li>
+            <b>Your goals</b> and your progress on each one.
+          </li>
+          <li>
+            <b>Your pain check-ins:</b> every pain score you log, when you logged
+            it and where it hurt, and whether you did the morning stretch.
+          </li>
+          <li>
+            <b>Your test results:</b> calf raises, arch hold and balance, left
+            and right.
+          </li>
+          <li>
+            <b>Your sessions:</b> each week’s plan, the sessions you finish,
+            which exercises you did, skipped or swapped, how the session felt,
+            any pain during it, and exercises you marked as ones you cannot do.
+          </li>
+          <li>
+            <b>Your app use:</b> how many times you opened the app each day and
+            for how long.
+          </li>
+        </ul>
+        <p>
+          We also use this copy to see how the plan is being used and whether
+          people reach their goals, so we can improve it.
         </p>
 
         <h2>What stays on your phone</h2>
         <p>
-          Everything the plan is built from: your morning check-ins and the pain
-          map, the sessions you finish, your retest results, your streak, your
-          name, your onboarding answers (including age, weight and shoe size),
-          the Apple Health summaries described below, your settings and the
-          exercise videos you have downloaded. These are kept in the app’s own
-          storage on the device. They are removed when you delete your account in
-          the app, or when you delete the app.
+          Your name, the age, sex, weight and shoe size you give during setup,
+          your settings for the app’s look and language, the exercise videos you
+          have downloaded, and every Apple Health figure. These are kept only in
+          the app’s own storage on the device.
         </p>
 
         <h2>Apple Health</h2>
@@ -116,60 +153,52 @@ export default function Privacy() {
         <p>
           This data is read and summarised on your phone.{' '}
           <b>
-            It is never uploaded as data, and never used for advertising,
-            marketing or data mining.
+            It is never uploaded, never saved to your account, and never used for
+            advertising, marketing or data mining.
           </b>{' '}
           We never sell it.
         </p>
         <p>
-          You can withdraw any permission at any time in iOS Settings → Health →
-          Data Access &amp; Devices → Walkito. The app keeps working, and the
-          parts that relied on that data stop appearing.
+          You can withdraw any permission at any time in Settings → Apps →
+          Health → Data Access &amp; Devices → Walkito. The app keeps working,
+          and the parts that relied on that data stop appearing.
         </p>
 
         <h2>What we collect, how and why</h2>
 
-        <h3>PostHog: analytics and session recordings</h3>
+        <h3>Supabase: your account and plan</h3>
+        <p>
+          <b>What:</b> your account, your email address, everything listed
+          under “What is saved to your account”, your notification address (if
+          you turned notifications on), your invite code and which account used
+          which code. Exercise videos are downloaded from Supabase storage.
+        </p>
+        <p>
+          <b>Why:</b> to run your account, bring your plan back on a new phone,
+          answer support requests, make invites work, and deliver the exercise
+          videos.
+        </p>
+
+        <h3>PostHog: usage analytics</h3>
         <p>
           <b>What:</b> events that say something happened in the app, for
-          example that an onboarding step was shown, a session was started or
-          finished, a morning check-in was logged (never what you reported), or
-          the purchase screen was opened. Also the screens you visit, the answers
-          to a few onboarding questions that say nothing about your body (where
-          you heard about Walkito, your goal, your sport and how often you run),
-          your device model, iOS version, app version, language and time zone,
-          and an approximate location (country and city) that PostHog works out
-          from your IP address. Events are linked to a random ID, the same one
-          RevenueCat uses, so a purchase can be matched to the app use that led
-          to it.
+          example that an onboarding step was shown, a session, check-in or test
+          was finished and whether the session felt easy, OK or hard, a goal was
+          reached, a plan setting was changed (not what to), or the purchase
+          screen was opened. Also the screens you visit, and the answers to a
+          few onboarding questions: where you heard about Walkito, your goal,
+          your sport and how much you run. Your goal, or the name of a goal you
+          reached, can hint at your condition. Your device model, iOS and app
+          version, language and time zone are attached, and PostHog works out an
+          approximate location (country and city) from your IP address. Events
+          are linked to a random ID, the same one RevenueCat uses.
+        </p>
+        <p>
+          <b>Never sent:</b> pain scores, pain areas, test results, Apple Health
+          readings, age or weight. Nothing on your screen is recorded.
         </p>
         <p>
           <b>Why:</b> to see where people get stuck and to improve the app.
-        </p>
-
-        {/* Worded to be true for build 23 (in review, no masking) and for the
-            next build (pain and Health screens masked with `ReplayMask`).
-            When the masked build is live, we can add: "Screens showing pain or
-            Apple Health data are hidden from recordings." The RU and ES pages
-            carry the same sentence. */}
-        <p>
-          <b>Session recordings:</b> to find bugs and improve the app, PostHog
-          records how screens are used. Anything you type is hidden, and
-          recordings are kept for up to 12 months.
-        </p>
-
-        <h3>Supabase: your account</h3>
-        <p>
-          <b>What:</b> the random account ID, your email address (if you shared
-          one), your notification address (if you turned notifications on), your
-          invite code, and which account used which code. Exercise videos are
-          downloaded from Supabase storage, which records ordinary request
-          details such as your IP address.
-        </p>
-        <p>
-          <b>Why:</b> to run your account, answer support requests, make invites
-          work, tell you when someone uses your code, and deliver the exercise
-          videos.
         </p>
 
         <h3>RevenueCat: purchases</h3>
@@ -183,17 +212,19 @@ export default function Privacy() {
           which channels lead to purchases.
         </p>
 
-        <h3>Expo: notifications and app updates</h3>
+        <h3>Expo: notifications, updates, speed and crashes</h3>
         <p>
-          <b>What:</b> your notification address and, when someone uses your
-          invite code, the text of the notification that tells you. Daily
-          reminders are scheduled on your phone and do not go through any
-          server. The app also checks Expo’s update service for new versions,
-          which sends your app version and platform.
+          <b>What:</b> how long the app takes to start and to open each screen,
+          errors and crash reports, the same events PostHog gets, and your
+          device model, iOS and app version, language and a random installation
+          ID. App updates are downloaded from Expo. When someone uses your
+          invite code, the notification that tells you goes through Expo’s push
+          service. Daily reminders are scheduled on your phone and do not go
+          through any server.
         </p>
         <p>
-          <b>Why:</b> to deliver invite notifications and keep the app up to
-          date.
+          <b>Why:</b> to keep the app fast and working, keep it up to date, and
+          deliver invite notifications.
         </p>
 
         <h3>Apple: sign-in, payments and notifications</h3>
@@ -203,45 +234,59 @@ export default function Privacy() {
           delivered through Apple’s push notification service.
         </p>
 
+        <p>
+          Every service above receives your IP address with each request, as
+          any server does.
+        </p>
+
         <h2>What we do not do</h2>
         <p>
           No advertising, no ad or attribution SDKs, and no advertising
           identifier. We do not track you across other companies’ apps or
-          websites. We do not sell your data, and we never send your pain log or
-          Apple Health data to anyone as data. The services above may use the data only to
+          websites. We do not sell your data, and we do not share anything you
+          log for anyone else’s use. The services above process it only to
           provide their service to us.
         </p>
 
         <h2>How long we keep it</h2>
         <ul>
           <li>
-            <b>Account and email:</b> until you delete your account.
+            <b>Your account and everything saved to it:</b> until you delete
+            your account.
           </li>
           <li>
-            <b>Analytics and session recordings:</b> up to 12 months.
+            <b>Analytics, speed and crash data:</b> up to 12 months.
           </li>
           <li>
             <b>Purchase records:</b> kept by Apple and RevenueCat as long as
             billing, accounting and tax law require.
           </li>
           <li>
-            <b>Everything on your phone:</b> until you delete your account or the
+            <b>What is on your phone:</b> until you delete your account or the
             app.
           </li>
         </ul>
 
         <h2>Deleting your account</h2>
         <p>
-          In the app, go to <b>Profile → Delete account</b>. This removes your
-          account, email address, notification address, invite code and invite
-          records from our server, and clears everything Walkito stored on your
-          phone. You can also write to {mail} and we will delete it for you. To
-          have your analytics or purchase records deleted sooner, write to the
-          same address.
+          In the app, go to <b>Profile → Delete account</b>. This deletes your
+          account on our server with everything saved to it: your answers and
+          settings, goals, pain check-ins, test results, sessions, app use,
+          email address, notification address and invite code. It then removes
+          the sign-in key and clears the phone. It cannot be undone. You can
+          also write to {mail} and we will delete it for you.
         </p>
         <p>
-          Deleting your account does not cancel a subscription. Only Apple can
-          do that, in iOS Settings → your name → Subscriptions.
+          Deleting the app on its own removes only what is on the phone. Your
+          account stays on our server and comes back when you sign in again.
+        </p>
+        <p>
+          Delete account does not remove purchase records at RevenueCat,
+          analytics at PostHog, or the speed and crash data Expo holds. To have
+          those deleted, write to the same address. Workouts and mindful minutes
+          Walkito wrote to Apple Health stay there until you delete them in
+          Health. Deleting your account does not cancel a subscription. Only
+          Apple can do that, in Settings → your name → Subscriptions.
         </p>
 
         <h2>Children</h2>
@@ -258,16 +303,16 @@ export default function Privacy() {
         </p>
         <ul>
           <li>
-            <b>Contract:</b> your account, purchases, invites and notifications,
-            which we need to provide the app you asked for.
+            <b>Contract:</b> your account, your saved plan, purchases, invites
+            and notifications, which we need to provide the app you asked for.
           </li>
           <li>
-            <b>Legitimate interest:</b> analytics and session recordings, to
+            <b>Legitimate interest:</b> analytics and speed and crash data, to
             understand and improve the app. You can object to this.
           </li>
           <li>
             <b>Consent:</b> Apple Health access, which you can withdraw at any
-            time in iOS Settings. That data never leaves your phone.
+            time in Settings. That data never leaves your phone.
           </li>
         </ul>
         <p>

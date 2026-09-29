@@ -115,23 +115,23 @@ export default function Program() {
         <p>Every goal is a number you can test, not a feeling:</p>
         <ul>
           <li>
-            <b>Pain-free mornings</b> — morning pain at or under 1/10 for{' '}
+            <b>Pain-free mornings:</b> morning pain at or under 1/10 for{' '}
             {PROGRAM.painFreeDays} days running.
           </li>
           <li>
-            <b>Arch hold</b> — holding the arch for {PROGRAM.goals.archHoldSeconds}{' '}
+            <b>Arch hold:</b> holding the arch for {PROGRAM.goals.archHoldSeconds}{' '}
             seconds.
           </li>
           <li>
-            <b>Calf raises</b> — {PROGRAM.goals.calfRaises} single-leg calf
+            <b>Calf raises:</b> {PROGRAM.goals.calfRaises} single-leg calf
             raises.
           </li>
           <li>
-            <b>Balance</b> — {PROGRAM.goals.balanceSeconds} seconds standing on
+            <b>Balance:</b> {PROGRAM.goals.balanceSeconds} seconds standing on
             one leg.
           </li>
           <li>
-            <b>Left/right difference</b> — under {PROGRAM.goals.gapPercent}%
+            <b>Left/right difference:</b> under {PROGRAM.goals.gapPercent}%
             between your two sides.
           </li>
         </ul>
@@ -147,8 +147,8 @@ export default function Program() {
         <h2>How a week is built</h2>
         <p>
           You choose {DAYS} training days a week and sessions of {MINUTES}{' '}
-          minutes — {PROGRAM.defaultMinutes} by default, and you can change it
-          on any day. Each session is 2 to 4 exercises. The exercise for the
+          minutes ({PROGRAM.defaultMinutes} by default, and you can change it
+          on any day). Each session is 2 to 4 exercises. The exercise for the
           focus goal comes first and is never cut, not even in a{' '}
           {PROGRAM.sessionMinutes[0]}-minute session; the others fill the time
           around it.
@@ -160,7 +160,7 @@ export default function Program() {
           day never breaks your streak.
         </p>
         <p>
-          Exercises sit on chains — calf, arch, balance, hip and mobility — at
+          Exercises sit on chains (calf, arch, balance, hip and mobility) at
           levels 1 to 5. The focus goal’s chain moves up one level at a time,
           only after sessions that felt easy and never in a week when your
           morning pain rose; a hard week steps it back.
@@ -170,8 +170,8 @@ export default function Program() {
         <p>
           The first week loads nothing onto the plantar fascia and uses nothing
           above level 2. It is there to get the foot moving, not to push.
-          Loaded work — like the towel heel raise in{' '}
-          <a href="/plantar-fasciitis-exercises/">the heel pain guide</a> —
+          Loaded work, like the towel heel raise in{' '}
+          <a href="/plantar-fasciitis-exercises/">the heel pain guide</a>,
           comes later, one level at a time.
         </p>
 
@@ -182,7 +182,7 @@ export default function Program() {
         </p>
         <ul>
           <li>
-            A high-pain morning — 7/10 or more — turns the day into about three
+            A high-pain morning (7/10 or more) turns the day into about three
             minutes of seated work that keeps load off the fascia.
           </li>
           <li>
@@ -218,18 +218,18 @@ export default function Program() {
           is worked out from the calf raises, so there is no fourth test. Tests
           come every {PROGRAM.testEveryDays} days until your first goal is
           reached, then every {PROGRAM.testEveryDaysAfterGoal}. A goal is
-          reached on these numbers and on your morning pain log — never on a
+          reached on these numbers and on your morning pain log, never on a
           streak.
         </p>
 
         <h2>When a goal is reached</h2>
         <p>
           It moves to maintaining. A maintained goal keeps a place in the plan
-          at a lower dose — one level down, on some strength days — so what you
+          at a lower dose (one level down, on some strength days), so what you
           built is not lost, and the next goal takes its place. There is no
           last week and no finish screen: the plan changes what it works on
-          rather than ending. Heel pain can come back, and our reasoning — a
-          design choice, not a research finding — is that keeping the work
+          rather than ending. Heel pain can come back, and our reasoning (a
+          design choice, not a research finding) is that keeping the work
           that helped, at a lower dose, is better than dropping it the week it
           stops hurting.
         </p>
@@ -241,9 +241,9 @@ export default function Program() {
             plantar fasciitis exercises and stretches
           </a>{' '}
           and <a href="/flat-feet-exercises/">flat feet exercises</a>. The
-          trials and the 2023 clinical guideline behind them — why strength work
+          trials and the 2023 clinical guideline behind them (why strength work
           comes with stretching, and how long arch work took to show in the
-          research — are on <a href="/science/">the evidence page</a>. Practical questions
+          research) are on <a href="/science/">the evidence page</a>. Practical questions
           are answered in <a href="/faq/">the FAQ</a>.
         </p>
 

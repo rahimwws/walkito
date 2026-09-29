@@ -12,7 +12,7 @@ import { PROGRAM } from '@/lib/site';
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
 
 const TITLE = 'Болит пятка после бега? План упражнений на каждую неделю | Walkito';
-const DESCRIPTION = `Силовые упражнения для икр, растяжка и баланс по ${MIN_A}, ${MIN_B} или ${MIN_C} минут — план, который строится по одной неделе вокруг вашей цели и сбавляет нагрузку в плохие утра.`;
+const DESCRIPTION = `Силовые упражнения для икр, растяжка и баланс по ${MIN_A}, ${MIN_B} или ${MIN_C} минут: план, который строится по одной неделе вокруг вашей цели и сбавляет нагрузку в плохие утра.`;
 
 export const metadata: Metadata = {
   alternates: alternatesFor('home', 'ru'),

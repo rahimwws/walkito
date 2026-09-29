@@ -101,7 +101,7 @@ export default function Science() {
           For heel pain from plantar fasciitis, the 2023 clinical guideline
           grades stretching A and strength training B, and a randomised trial
           found high-load strength work improved pain and function faster than
-          stretching — though the two groups had converged by twelve months.
+          stretching, though the two groups had converged by twelve months.
           For flexible flat feet, a six-week combined exercise program changed
           arch measures in one randomised trial; for short-foot training alone,
           a meta-analysis found no significant effect overall and an
@@ -113,7 +113,7 @@ export default function Science() {
         <h2>Pain and arch shape are two different problems</h2>
         <p>
           The research measures them separately. The strength trial below was
-          scored on the Foot Function Index — pain and function. The arch
+          scored on the Foot Function Index (pain and function). The arch
           trials were scored on navicular drop and arch angle, which measure
           the shape of the arch, not pain.
         </p>
@@ -121,8 +121,8 @@ export default function Science() {
           So a result for one is not evidence for the other: the arch findings
           do not show that arch training relieves pain, and calf strength work
           is not designed to change arch shape. Walkito works on both as
-          separate goals — pain-free mornings, and a{' '}
-          {PROGRAM.goals.archHoldSeconds}-second arch hold — with up to three
+          separate goals (pain-free mornings, and a{' '}
+          {PROGRAM.goals.archHoldSeconds}-second arch hold), with up to three
           goals active at once and pain first when there is pain. The arch goal
           is meant for flexible flat feet, and the app does not check which
           kind you have: if your arch stays flat even off the ground, leave it
@@ -143,17 +143,17 @@ export default function Science() {
             three-month figure. Separated, the 29 points reads as a permanent
             advantage, which is an overclaim the trial does not support. */}
         <p>
-          At twelve months the two groups had converged — 22 against 16, no
+          At twelve months the two groups had converged: 22 against 16, no
           significant difference. <b>What this means:</b> strength training
           produces faster improvement, not a more complete one. That is the
-          only claim Walkito makes for strength work — sooner, not more — and it
+          only claim Walkito makes for strength work (sooner, not more), and it
           never promises a cure.
         </p>
         <p>
           The heel raise Walkito uses follows this trial: single-leg, on a step,
           a towel under the toes, three seconds up, two seconds held, three
           seconds down, every other day. It sits near the top of the app’s calf
-          progression, so it is reached one level at a time — and never in the
+          progression, so it is reached one level at a time, and never in the
           first week, which keeps load off the plantar fascia. The exercise and
           its starting dose are in{' '}
           <a href="/plantar-fasciitis-exercises/">
@@ -163,7 +163,7 @@ export default function Science() {
         </p>
         <Cite index={0} />
 
-        <h2>The arch responds to training — given enough time</h2>
+        <h2>The arch responds to training, given enough time</h2>
         <p>
           In a randomised trial of 52 people with <b>flexible</b> flat feet, a
           six-week program of foot shortening, ankle work, hip strengthening and
@@ -234,7 +234,7 @@ export default function Science() {
               </tr>
               <tr>
                 <td>Orthotics used alone, for short-term pain relief</td>
-                <td><b>B — do not use in isolation</b></td>
+                <td><b>B: do not use in isolation</b></td>
                 <td>Not recommended on their own</td>
               </tr>
               <tr>
@@ -244,7 +244,7 @@ export default function Science() {
               </tr>
               <tr>
                 <td>Therapeutic ultrasound added to stretching</td>
-                <td><b>A — do not use</b></td>
+                <td><b>A: do not use</b></td>
                 <td>Not included</td>
               </tr>
             </tbody>
@@ -253,9 +253,9 @@ export default function Science() {
         <Cite index={3} />
         <p>
           On load, the guideline’s advice is education on strategies to modify
-          weight-bearing load at work, in sport and in daily life — graded E,
+          weight-bearing load at work, in sport and in daily life, graded E,
           meaning it is based on theoretical rather than trial evidence. Walkito
-          changes the load rather than stopping — on a high-pain morning the
+          changes the load rather than stopping: on a high-pain morning the
           session gets shorter and lighter, but it still happens. What that
           means if you run is in{' '}
           <a href="/plantar-fasciitis-exercises/">the heel pain guide</a>.
@@ -282,12 +282,12 @@ export default function Science() {
           "more than 800 runners" on gait asymmetry. Neither had a citation on
           this page.
         */}
-        <h2>Heel pain can come back — so the plan doesn’t end</h2>
+        <h2>Heel pain can come back, so the plan doesn’t end</h2>
         <p>
           Heel pain can return after it eases, so Walkito’s plan has no fixed
           length and no last week at which the exercises simply stop. It is built one week at a time around a focus goal. A goal
-          that is reached moves to maintaining — it keeps a place in the plan at
-          a lower dose — and the next goal takes its place. Tests continue every{' '}
+          that is reached moves to maintaining (it keeps a place in the plan at
+          a lower dose), and the next goal takes its place. Tests continue every{' '}
           {PROGRAM.testEveryDaysAfterGoal} days once the first goal is reached,
           so a slide in the numbers shows up rather than being guessed at. None
           of this promises the pain will not return.
@@ -319,7 +319,7 @@ export default function Science() {
           <a href="/faq/">the FAQ</a>.
         </p>
         <p>
-          The randomised arch trial above was run on <b>flexible</b> flat feet —
+          The randomised arch trial above was run on <b>flexible</b> flat feet,
           where the arch reappears when the foot is lifted off the ground; the
           meta-analysis pooled studies of flat feet in general. Rigid flat feet
           are a structural issue that exercise will not change.

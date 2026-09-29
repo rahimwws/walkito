@@ -56,7 +56,7 @@ export const FLAT_FEET_ES: Guide = {
   description:
     'Pie corto, dedos, equilibrio y cadera para el pie plano flexible: dosis de inicio, cuánto tarda el arco en cambiar y qué hacer si el arco duele al correr.',
   h1: 'Ejercicios para el pie plano y el dolor en el arco',
-  lede: 'Si tu pie plano es flexible —el arco reaparece cuando el pie no toca el suelo—, los ejercicios que probó un ensayo son el pie corto, el fortalecimiento de cadera y el estiramiento de pantorrilla, juntos: seis semanas de ellos cambiaron las medidas del arco más que en el grupo de control. Dales tiempo: un metaanálisis de 2024 sobre el ejercicio de pie corto no encontró diferencias significativas en conjunto, y solo en los programas de más de seis semanas mejoró la caída del navicular, una medida de la altura del arco. Si lo que tienes es dolor en el arco, no cuentes con que estos ejercicios lo quiten: los estudios midieron la postura del arco, no el dolor. Si el dolor está cerca del talón, la guía de 2023 sobre fascitis plantar es mejor referencia: da grado A a los estiramientos de fascia y pantorrilla y grado B a la fuerza.',
+  lede: 'Si tu pie plano es flexible (el arco reaparece cuando el pie no toca el suelo), los ejercicios que probó un ensayo son el pie corto, el fortalecimiento de cadera y el estiramiento de pantorrilla, juntos: seis semanas de ellos cambiaron las medidas del arco más que en el grupo de control. Dales tiempo: un metaanálisis de 2024 sobre el ejercicio de pie corto no encontró diferencias significativas en conjunto, y solo en los programas de más de seis semanas mejoró la caída del navicular, una medida de la altura del arco. Si lo que tienes es dolor en el arco, no cuentes con que estos ejercicios lo quiten: los estudios midieron la postura del arco, no el dolor. Si el dolor está cerca del talón, la guía de 2023 sobre fascitis plantar es mejor referencia: da grado A a los estiramientos de fascia y pantorrilla y grado B a la fuerza.',
   takeaways: [
     'El ensayo aleatorizado en el que se basan estos ejercicios se hizo en pie plano flexible: el que recupera el arco al levantar el pie del suelo.',
     'En un ensayo con 52 personas, seis semanas de ejercicio mejoraron la caída del navicular 0,4 cm y el ángulo del arco 16 grados más que el grupo de control.',
@@ -121,14 +121,14 @@ export const FLAT_FEET_ES: Guide = {
       paragraphs: [
         'En un ensayo aleatorizado con 52 personas con pie plano **flexible**, un programa de seis semanas de pie corto, trabajo de tobillo, fortalecimiento de cadera y estiramientos mejoró la caída del navicular en **0,4 cm** y el ángulo del arco en **16 grados** más que el grupo de control.',
         'Un metaanálisis de 2024 sobre el ejercicio de pie corto no encontró **diferencias significativas en conjunto** en la caída del navicular ni en la postura del pie frente a los grupos de control. Solo en el subgrupo de programas de **más de seis semanas** mejoró de forma significativa la caída del navicular, y los autores piden estudios más grandes. Cuenta con al menos seis semanas, y con más si haces el pie corto por sí solo.',
-        `Es una de las razones por las que el plan de Walkito no tiene fecha de fin. Su objetivo del arco —sostenerlo ${PROGRAM.goals.archHoldSeconds} segundos— sigue en el plan hasta que lo alcanzas, tarde las semanas que tarde, y la prueba de sostener el arco se repite cada ${PROGRAM.testEveryDays} días hasta que alcanzas tu primer objetivo, y después cada ${PROGRAM.testEveryDaysAfterGoal}, para que veas si se mueve. Los ensayos están resumidos en [la página de evidencia](/science/) (en inglés).`,
+        `Es una de las razones por las que el plan de Walkito no tiene fecha de fin. Su objetivo del arco (sostenerlo ${PROGRAM.goals.archHoldSeconds} segundos) sigue en el plan hasta que lo alcanzas, tarde las semanas que tarde, y la prueba de sostener el arco se repite cada ${PROGRAM.testEveryDays} días hasta que alcanzas tu primer objetivo, y después cada ${PROGRAM.testEveryDaysAfterGoal}, para que veas si se mueve. Los ensayos están resumidos en [la página de evidencia](/science/) (en inglés).`,
       ],
       cites: [CITE.brijwasi, CITE.cheng],
     },
     {
       h2: '¿Quitan el dolor estos ejercicios?',
       paragraphs: [
-        'Por sí solos, no hay que contar con ello. Los estudios sobre el arco de esta página midieron la postura del pie —la caída del navicular, el ángulo del arco—, no el dolor, y que el arco mejore de postura no garantiza que deje de doler.',
+        'Por sí solos, no hay que contar con ello. Los estudios sobre el arco de esta página midieron la postura del pie (la caída del navicular, el ángulo del arco), no el dolor, y que el arco mejore de postura no garantiza que deje de doler.',
         'Si el dolor está cerca del talón, puede ser más relevante la guía clínica de 2023 sobre la fascitis plantar, que para el dolor de talón da **grado A** a los estiramientos de fascia y pantorrilla y **grado B** al fortalecimiento. Lo tienes en [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/). Walkito puede trabajar las dos cosas a la vez, como objetivos separados: mañanas sin dolor para el dolor y sostener el arco para el arco.',
       ],
       cites: [CITE.guideline],
@@ -136,7 +136,7 @@ export const FLAT_FEET_ES: Guide = {
     {
       h2: 'Dolor en el arco del pie al correr',
       paragraphs: [
-        'El dolor en el arco al correr puede venir de la fascia plantar —la misma estructura de la fascitis plantar—, sobre todo si se concentra cerca del talón o es peor en los primeros pasos de la mañana; por la sensación sola no se puede saber. Tener el pie plano no significa que esa sea la causa, y tener un arco normal no te libra de él.',
+        'El dolor en el arco al correr puede venir de la fascia plantar (la misma estructura de la fascitis plantar), sobre todo si se concentra cerca del talón o es peor en los primeros pasos de la mañana; por la sensación sola no se puede saber. Tener el pie plano no significa que esa sea la causa, y tener un arco normal no te libra de él.',
         'Si el dolor está cerca del talón y encaja con la fascitis plantar, lo que aplica es la [guía de ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/). Si el dolor es agudo, va a más, te hace cojear o apareció tras un golpe, consulta a un profesional antes de seguir corriendo.',
       ],
     },
@@ -173,7 +173,7 @@ export const FLAT_FEET_ES: Guide = {
   },
   program: {
     h2: 'Hacerlo como programa',
-    text: `Walkito convierte estos ejercicios en un plan sin fecha de fin que se arma **una semana cada vez** alrededor de un objetivo medible. El del arco es sostenerlo ${PROGRAM.goals.archHoldSeconds} segundos. Eliges ${DAYS} días de entrenamiento a la semana y sesiones de ${MINUTES} minutos, con 2 a 4 ejercicios cada una; el del objetivo nunca se recorta. Cada ${PROGRAM.testEveryDays} días, ${PROGRAM.retestTests} pruebas de unos ${PROGRAM.retestMinutes} minutos —elevaciones de talón a una pierna, sostener el arco y equilibrio a una pierna— te dicen si el trabajo del arco está sirviendo, en vez de adivinarlo; tras alcanzar el primer objetivo, cada ${PROGRAM.testEveryDaysAfterGoal}. Un objetivo alcanzado pasa a mantenimiento, con menos dosis, y el siguiente ocupa su lugar. Más en [la página de Walkito](/es/) y en [Sobre Walkito](/es/sobre-walkito/).`,
+    text: `Walkito convierte estos ejercicios en un plan sin fecha de fin que se arma **una semana cada vez** alrededor de un objetivo medible. El del arco es sostenerlo ${PROGRAM.goals.archHoldSeconds} segundos. Eliges ${DAYS} días de entrenamiento a la semana y sesiones de ${MINUTES} minutos, con 2 a 4 ejercicios cada una; el del objetivo nunca se recorta. Cada ${PROGRAM.testEveryDays} días, ${PROGRAM.retestTests} pruebas de unos ${PROGRAM.retestMinutes} minutos (elevaciones de talón a una pierna, sostener el arco y equilibrio a una pierna) te dicen si el trabajo del arco está sirviendo, en vez de adivinarlo; tras alcanzar el primer objetivo, cada ${PROGRAM.testEveryDaysAfterGoal}. Un objetivo alcanzado pasa a mantenimiento, con menos dosis, y el siguiente ocupa su lugar. Más en [la página de Walkito](/es/) y en [Sobre Walkito](/es/sobre-walkito/).`,
   },
   crumb: 'Ejercicios para pie plano',
   campaign: 'guide-flat-feet-es',
@@ -188,7 +188,7 @@ export const HEEL_PAIN_ES: Guide = {
   description:
     'Estiramientos y elevaciones para la fascitis plantar y el dolor de talón: dosis, por qué duele por la mañana, si puedes correr y qué dice la guía de 2023.',
   h1: 'Ejercicios y estiramientos para la fascitis plantar y el dolor de talón',
-  lede: 'Para la fascitis plantar, los ejercicios con más respaldo son los estiramientos de la fascia plantar y de la pantorrilla —grado A, la nota más alta de la guía clínica de 2023— y el entrenamiento de fuerza de los músculos del pie y el tobillo, con grado B (las elevaciones de talón son una forma de hacerlo). En un ensayo con 48 personas, todas con plantillas, las elevaciones lentas a una pierna con una toalla bajo los dedos mejoraron el dolor y la función antes que los estiramientos específicos de la fascia, aunque a los doce meses los dos grupos se habían igualado. Hacer las dos cosas es lo que respalda la guía.',
+  lede: 'Para la fascitis plantar, los ejercicios con más respaldo son los estiramientos de la fascia plantar y de la pantorrilla (grado A, la nota más alta de la guía clínica de 2023) y el entrenamiento de fuerza de los músculos del pie y el tobillo, con grado B (las elevaciones de talón son una forma de hacerlo). En un ensayo con 48 personas, todas con plantillas, las elevaciones lentas a una pierna con una toalla bajo los dedos mejoraron el dolor y la función antes que los estiramientos específicos de la fascia, aunque a los doce meses los dos grupos se habían igualado. Hacer las dos cosas es lo que respalda la guía.',
   takeaways: [
     'La guía clínica de 2023 sobre la fascitis plantar da grado A a estirar la fascia plantar y la pantorrilla, y grado B al fortalecimiento.',
     'En un ensayo con 48 personas, todas con plantillas, la fuerza con carga superó al estiramiento en 29 puntos del Foot Function Index a los 3 meses; a los 12 meses los grupos se igualaron.',
@@ -207,7 +207,7 @@ export const HEEL_PAIN_ES: Guide = {
     {
       h2: 'Los ejercicios, con dosis de inicio',
       paragraphs: [
-        'Son los ejercicios que usa Walkito para el dolor de talón, con las dosis con las que empieza: un punto de partida, no una prescripción. Los tres primeros son los estiramientos para la fascitis plantar —fascia y pantorrilla, grado A en la guía de 2023—; el último, el trabajo de fuerza, con grado B. [Cómo escribimos estas guías](/es/sobre-walkito/).',
+        'Son los ejercicios que usa Walkito para el dolor de talón, con las dosis con las que empieza: un punto de partida, no una prescripción. Los tres primeros son los estiramientos para la fascitis plantar (fascia y pantorrilla, grado A en la guía de 2023); el último, el trabajo de fuerza, con grado B. [Cómo escribimos estas guías](/es/sobre-walkito/).',
         'En la app, la primera semana es de adaptación: nada que cargue la fascia plantar y nada por encima del nivel 2. Las elevaciones de talón con toalla, las que más cargan la fascia, llegan después, un nivel cada vez.',
       ],
       exercises: [
@@ -252,15 +252,15 @@ export const HEEL_PAIN_ES: Guide = {
     {
       h2: 'Lo que recomienda la guía de 2023, y lo que no: los grados principales',
       bullets: [
-        'Estiramiento de la fascia plantar y de la pantorrilla — **grado A**',
-        'Terapia manual en las articulaciones y los tejidos blandos de la pierna y el pie, aplicada por un profesional — **grado A**',
-        'Vendaje funcional junto con otros tratamientos de fisioterapia, para una mejoría a corto plazo (hasta 6 semanas) — **grado A**',
-        'Férulas nocturnas durante 1–3 meses, para el dolor constante en los primeros pasos de la mañana — **grado A**',
-        'Entrenamiento de fuerza y resistencia — **grado B**',
-        'Láser de baja intensidad y punción seca, aplicados por un profesional — **grado B**',
-        'Plantillas como único tratamiento para aliviar el dolor a corto plazo — **grado B en contra**',
-        'Plantillas combinadas con otros tratamientos — **grado C**',
-        'Ultrasonido terapéutico añadido a los estiramientos — **grado A en contra**',
+        'Estiramiento de la fascia plantar y de la pantorrilla: **grado A**',
+        'Terapia manual en las articulaciones y los tejidos blandos de la pierna y el pie, aplicada por un profesional: **grado A**',
+        'Vendaje funcional junto con otros tratamientos de fisioterapia, para una mejoría a corto plazo (hasta 6 semanas): **grado A**',
+        'Férulas nocturnas durante 1–3 meses, para el dolor constante en los primeros pasos de la mañana: **grado A**',
+        'Entrenamiento de fuerza y resistencia: **grado B**',
+        'Láser de baja intensidad y punción seca, aplicados por un profesional: **grado B**',
+        'Plantillas como único tratamiento para aliviar el dolor a corto plazo: **grado B en contra**',
+        'Plantillas combinadas con otros tratamientos: **grado C**',
+        'Ultrasonido terapéutico añadido a los estiramientos: **grado A en contra**',
       ],
       cites: [CITE.guideline],
     },
@@ -277,7 +277,7 @@ export const HEEL_PAIN_ES: Guide = {
     {
       h2: 'Después de mejorar: no dejarlo a medias',
       paragraphs: [
-        `El dolor de talón puede volver; por eso en Walkito un objetivo alcanzado no se abandona. Cuando alcanzas el de mañanas sin dolor —el dolor al levantarte en 1 sobre 10 o menos durante ${PROGRAM.painFreeDays} días seguidos—, pasa a mantenimiento, con una dosis menor, mientras el siguiente objetivo ocupa su lugar. El plan no tiene fecha de fin.`,
+        `El dolor de talón puede volver; por eso en Walkito un objetivo alcanzado no se abandona. Cuando alcanzas el de mañanas sin dolor (el dolor al levantarte en 1 sobre 10 o menos durante ${PROGRAM.painFreeDays} días seguidos), pasa a mantenimiento, con una dosis menor, mientras el siguiente objetivo ocupa su lugar. El plan no tiene fecha de fin.`,
         'Si además tienes pie plano o te duele el arco, el arco tiene sus propios ejercicios y sus propios plazos: mira los [ejercicios para pie plano](/es/ejercicios-pie-plano/). La evidencia completa, con cada estudio enlazado, está en [la página de evidencia](/science/) (en inglés).',
       ],
     },
@@ -311,7 +311,7 @@ export const HEEL_PAIN_ES: Guide = {
   redFlags: RED_FLAGS,
   program: {
     h2: 'Hacerlo como programa',
-    text: `Walkito no tiene una duración fija: arma **una semana cada vez** alrededor de un objetivo medible, y si te duele, el primero es el dolor —mañanas sin dolor, es decir, ${PROGRAM.painFreeDays} días seguidos con el dolor al levantarte en 1 sobre 10 o menos—. Eliges ${DAYS} días de entrenamiento a la semana y sesiones de ${MINUTES} minutos, y cada mañana el día se ajusta: una mañana con mucho dolor, un día de muchos pasos o una noche corta acortan o suavizan la sesión. Cada ${PROGRAM.testEveryDays} días, ${PROGRAM.retestTests} pruebas de unos ${PROGRAM.retestMinutes} minutos —elevaciones de talón a una pierna, sostener el arco y equilibrio a una pierna— muestran si avanzas; tras alcanzar el primer objetivo, cada ${PROGRAM.testEveryDaysAfterGoal}. Cuando alcanzas un objetivo, pasa a mantenimiento con menos dosis y el siguiente ocupa su lugar: el plan sigue mientras lo uses. Más en [la página de Walkito](/es/) y en [Sobre Walkito](/es/sobre-walkito/).`,
+    text: `Walkito no tiene una duración fija: arma **una semana cada vez** alrededor de un objetivo medible, y si te duele, el primero es el dolor (mañanas sin dolor, es decir, ${PROGRAM.painFreeDays} días seguidos con el dolor al levantarte en 1 sobre 10 o menos). Eliges ${DAYS} días de entrenamiento a la semana y sesiones de ${MINUTES} minutos, y cada mañana el día se ajusta: una mañana con mucho dolor, un día de muchos pasos o una noche corta acortan o suavizan la sesión. Cada ${PROGRAM.testEveryDays} días, ${PROGRAM.retestTests} pruebas de unos ${PROGRAM.retestMinutes} minutos (elevaciones de talón a una pierna, sostener el arco y equilibrio a una pierna) muestran si avanzas; tras alcanzar el primer objetivo, cada ${PROGRAM.testEveryDaysAfterGoal}. Cuando alcanzas un objetivo, pasa a mantenimiento con menos dosis y el siguiente ocupa su lugar: el plan sigue mientras lo uses. Más en [la página de Walkito](/es/) y en [Sobre Walkito](/es/sobre-walkito/).`,
   },
   crumb: 'Ejercicios para la fascitis plantar',
   campaign: 'guide-heel-pain-es',

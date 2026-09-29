@@ -43,14 +43,23 @@ export default function Support() {
 
         <p>
           Write to {mail}. A person replies, usually within 12 hours. Tell us
-          which day of the plan you are on and what the app did. That is usually
-          enough to work out what happened without a back-and-forth.
+          what you were doing and what the app did. That is usually enough to
+          work out what happened without a back-and-forth.
+        </p>
+
+        <h2>Signing in, and a new phone</h2>
+        <p>
+          Setup signs you in with Apple and needs a connection once. After that
+          the daily flow works offline, and what you log is copied to your
+          account whenever there is a connection. On a new phone or after
+          reinstalling, sign in with the same Apple ID and your plan, check-ins,
+          test results and sessions come back.
         </p>
 
         <h2>The plan runs on dates, not attendance</h2>
         <p>
           Missing days does not put you behind, and there is nothing to make up.
-          Day 24 is whatever day 24 is, whether or not you were here for day 23.
+          The week runs on dates, so a missed session is not moved to tomorrow.
           If you have been away, open the app and carry on from today.
         </p>
 
@@ -58,9 +67,8 @@ export default function Support() {
         <p>
           One a day at most, five a week at most, nothing after 21:30. If you
           stop opening them the app sends fewer, and if you keep not opening them
-          it pauses them for a month. You can turn them off entirely in iOS
-          Settings → Walkito → Notifications; nothing else in the app changes if
-          you do.
+          it pauses them for a month. You can turn them off entirely in Settings
+          → Notifications → Walkito; nothing else in the app changes if you do.
         </p>
 
         <h2>Health data</h2>
@@ -68,10 +76,10 @@ export default function Support() {
           Walkito reads steps, walking speed, walking asymmetry, flights climbed,
           heart rate, resting heart rate, active energy, sleep and workouts from
           Apple Health, and writes the sessions you finish back. Every one of
-          those is optional, and it’s processed on your phone and never uploaded
-          as data. Turn any of them
-          off in iOS Settings → Health → Data Access &amp; Devices → Walkito and
-          the parts that needed it simply go quiet. The plan still works.
+          those is optional. These readings stay on your phone and are never
+          uploaded or saved to your account. Turn any of them off in Settings →
+          Apps → Health → Data Access &amp; Devices → Walkito and the parts that
+          needed it simply go quiet. The plan still works.
         </p>
 
         <h2>Pain, and when to stop</h2>
@@ -89,7 +97,7 @@ export default function Support() {
         </p>
         <ul>
           <li>
-            <b>Manage or cancel</b> a subscription in iOS Settings → your name →
+            <b>Manage or cancel</b> a subscription in Settings → your name →
             Subscriptions. The 12-week program has nothing to cancel.
           </li>
           <li>
@@ -98,18 +106,20 @@ export default function Support() {
             We cannot process refunds on Apple’s behalf.
           </li>
           <li>
-            <b>New phone?</b> Tap Restore Purchases in the app with the same
-            Apple ID. Your plan’s progress is stored on the old phone and does
-            not move over.
+            <b>New phone?</b> Sign in with the same Apple ID and tap Restore
+            Purchases in the app. Your plan comes back with your account.
           </li>
         </ul>
 
         <h2>Deleting your account</h2>
         <p>
-          In the app, go to <b>Profile → Delete account</b>. That removes your
-          account from our server and clears everything Walkito stored on your
-          phone. Deleting the app alone does not remove your account. You can
-          also write to {mail} and we will delete it for you.
+          In the app, go to <b>Profile → Delete account</b>. That deletes your
+          account on our server with everything saved to it (your plan,
+          check-ins, test results, sessions, email and invite code) and clears
+          the phone. It cannot be undone. Deleting the app on its own removes
+          only the copy on the phone: your account stays and comes back when you
+          sign in again. You can also write to {mail} and we will delete it for
+          you.
         </p>
       </main>
 

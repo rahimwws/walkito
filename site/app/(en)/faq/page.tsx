@@ -10,9 +10,9 @@ import { CHROME } from '@/lib/i18n';
 import { faqSchema, formatDate } from '@/lib/schema';
 import { PAGE_UPDATED, SITE_NAME, SITE_URL } from '@/lib/site';
 
-const TITLE = 'Heel Pain & Plantar Fasciitis Exercise Program — FAQ';
+const TITLE = 'Heel Pain & Plantar Fasciitis Exercise Program: FAQ';
 const DESCRIPTION =
-  'How Walkito’s heel pain exercise plan works — goals, sessions, tests, bad mornings, running, Apple Health and privacy — and what the research says.';
+  'How Walkito’s heel pain exercise plan works (goals, sessions, tests, bad mornings, running, Apple Health and privacy) and what the research says.';
 
 export const metadata: Metadata = {
   title: TITLE,

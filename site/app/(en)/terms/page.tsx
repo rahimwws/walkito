@@ -10,9 +10,9 @@ import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
  * The Terms of Use App Store Connect asks for alongside the privacy policy.
  *
  * Written from what the app and the store actually do, the same way the privacy
- * page was: billing is Apple's, the plan is local, the account is anonymous
- * until the user signs in with Apple, the health scopes are the ones in
- * `READ_TYPES`. Nothing here describes a mechanism that does not exist.
+ * page was: billing is Apple's (`PRODUCTS` in `entities/purchase`), the plan is
+ * saved to the account the user signs in with and restored from it, the health
+ * scopes are the ones in `READ_TYPES`. Nothing here describes a mechanism that does not exist.
  *
  * Payments are written as "subscriptions" and "one-time purchases" rather than
  * as a list of today's two products, so a yearly plan or a free trial can be
@@ -65,7 +65,7 @@ export default function Terms() {
       <main className="shell prose">
         <h1>Terms of use</h1>
 
-        <p className="updated">Last updated: 27 September 2026</p>
+        <p className="updated">Last updated: 28 September 2026</p>
 
         <p className="lede">
           These terms cover your use of the Walkito app, which is run by Walkito
@@ -75,9 +75,11 @@ export default function Terms() {
 
         <h2>What Walkito is</h2>
         <p>
-          Walkito is an exercise program for heel and foot pain. It gives you a
-          daily plan, adjusts that plan from what you log, and measures your
-          progress with physical tests.
+          Walkito is an exercise program for heel and foot pain. It builds your
+          plan one week at a time around goals you can measure, with sessions of
+          3, 5 or 10 minutes, adjusts each day from what you log, and measures
+          your progress with physical tests every 14 days, then every 28 once
+          your first goal is reached.
         </p>
         <p>
           <b>It is not a medical device, a diagnosis or a treatment.</b> It
@@ -107,16 +109,17 @@ export default function Terms() {
 
         <h2>Your account</h2>
         <p>
-          Walkito creates an account for you the first time you open the app. You
-          can sign in with Apple. Signing in with an email and password works
+          You sign in with Apple when you set up Walkito, and that account is
+          where your plan is saved. Signing in with an email and password works
           only for accounts we set up ourselves; there is no sign-up with email.
           Keep your phone and your Apple ID secure, because anyone using them can
           use your account.
         </p>
         <p>
-          Your plan and progress are stored on your phone and do not move to a
-          new one. Purchases do: tap Restore Purchases in the app with the same
-          Apple ID.
+          Your plan, answers, check-ins, test results and sessions are saved on
+          your phone and copied to your account. Sign in with the same account on
+          a new phone or after reinstalling and they come back. Purchases come
+          back with Restore Purchases on the same Apple ID.
         </p>
 
         <h2>Your licence</h2>
@@ -129,7 +132,8 @@ export default function Terms() {
         <p>
           The program, the exercise catalogue, the copy and the software are
           ours. Everything you log (your pain entries, your sessions, your
-          history) is yours, and it lives on your device.
+          history) is yours. It is saved on your device and copied to your
+          account so it can be restored.
         </p>
 
         <h2>Payments</h2>
@@ -144,8 +148,8 @@ export default function Terms() {
             <b>A monthly subscription</b> that renews automatically.
           </li>
           <li>
-            <b>The 12-week program</b>, paid once. It gives you access for the
-            length of the program and does not renew.
+            <b>The 12-week program</b>, paid once. It gives you 12 weeks of
+            access and does not renew.
           </li>
         </ul>
 
@@ -157,7 +161,7 @@ export default function Terms() {
             hours before the period ends.
           </li>
           <li>
-            Manage or cancel it in <b>iOS Settings → your name → Subscriptions</b>.
+            Manage or cancel it in <b>Settings → your name → Subscriptions</b>.
             Cancelling stops the next renewal; you keep access until the end of
             the period you have paid for.
           </li>
@@ -207,8 +211,8 @@ export default function Terms() {
           asymmetry, flights climbed, resting heart rate, heart rate, active
           energy, sleep analysis and workouts, and writes the sessions you finish
           back as workouts and mindful minutes. Every permission is optional and
-          can be withdrawn at any time in iOS Settings. Apple Health data stays
-          on your phone and is never uploaded. See the{' '}
+          can be withdrawn at any time in Settings. Apple Health data stays on
+          your phone and is never uploaded or saved to your account. See the{' '}
           <a href="/privacy/">privacy page</a> for what does leave it.
         </p>
 
@@ -224,7 +228,9 @@ export default function Terms() {
         <h2>Ending it</h2>
         <p>
           You can stop at any time by deleting your account in Profile → Delete
-          account, and cancel any subscription through Apple as above. We may
+          account, which removes what you logged from the phone and from our
+          server, and cancel any subscription through Apple as above. Deleting
+          the app on its own removes only the copy on the phone. We may
           suspend access if the app is being used in a way these terms forbid. In
           practice that means resale or tampering, not anything you could do by
           using it normally.

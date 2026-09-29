@@ -46,7 +46,7 @@ export type FaqEntry = {
 export const FAQ: readonly FaqEntry[] = [
   {
     q: 'How long does the Walkito plan last?',
-    a: 'As long as you use it — there is no fixed length. Walkito builds one week at a time around a focus goal, such as pain-free mornings or a 60-second arch hold. When a goal is reached it moves to maintaining, kept going at a lower dose, and the next goal takes its place. [How the plan works](/program/).',
+    a: 'As long as you use it: there is no fixed length. Walkito builds one week at a time around a focus goal, such as pain-free mornings or a 60-second arch hold. When a goal is reached it moves to maintaining, kept going at a lower dose, and the next goal takes its place. [How the plan works](/program/).',
   },
   {
     q: 'How long is a daily session?',
@@ -54,7 +54,7 @@ export const FAQ: readonly FaqEntry[] = [
   },
   {
     q: 'How many days a week do I train?',
-    a: 'Three, five or seven — you choose. Strength days never fall on consecutive days; with five or seven, mobility, balance and recovery sessions fill the days between. The days without a session are rest the plan assigns, and a prescribed rest day counts as showing up and never breaks your streak.',
+    a: 'Three, five or seven: you choose. Strength days never fall on consecutive days; with five or seven, mobility, balance and recovery sessions fill the days between. The days without a session are rest the plan assigns, and a prescribed rest day counts as showing up and never breaks your streak.',
   },
   {
     q: 'What happens if I miss a few days?',
@@ -66,7 +66,7 @@ export const FAQ: readonly FaqEntry[] = [
   },
   {
     q: 'Can I keep running while I do Walkito?',
-    a: 'Yes — Walkito is built for runners, and the plan adjusts to your load rather than asking you to stop. When yesterday was a big day on your feet, a strength session becomes a lighter recovery one. Sharp or worsening pain needs a clinician. More in [heel pain when running](/plantar-fasciitis-exercises/).',
+    a: 'Yes. Walkito is built for runners, and the plan adjusts to your load rather than asking you to stop. When yesterday was a big day on your feet, a strength session becomes a lighter recovery one. Sharp or worsening pain needs a clinician. More in [heel pain when running](/plantar-fasciitis-exercises/).',
   },
   {
     q: 'What do the tests measure?',
@@ -78,7 +78,7 @@ export const FAQ: readonly FaqEntry[] = [
   },
   {
     q: 'Do I need an Apple Watch?',
-    a: 'No. The step count, walking speed and walking asymmetry Walkito relies on come from the iPhone itself. A watch adds sleep and resting heart rate; without one, the parts that need them — such as a short night softening the next session — simply stay quiet, and the rest of the plan works as normal.',
+    a: 'No. The step count, walking speed and walking asymmetry Walkito relies on come from the iPhone itself. A watch adds sleep and resting heart rate; without one, the parts that need them (such as a short night softening the next session) simply stay quiet, and the rest of the plan works as normal.',
   },
   {
     q: 'Does Walkito work offline?',
@@ -106,7 +106,7 @@ export const FAQ: readonly FaqEntry[] = [
   },
   {
     q: 'What happens to my streak if I have a bad week?',
-    a: 'You earn one freeze a week and can hold two at a time, and a broken streak can be restored within 48 hours. A lost streak is never shown as a failure — the app offers to put it back, and if you decline, the number simply starts again.',
+    a: 'You earn one freeze a week and can hold two at a time, and a broken streak can be restored within 48 hours. A lost streak is never shown as a failure: the app offers to put it back, and if you decline, the number simply starts again.',
   },
   {
     q: 'Is Walkito available on Android?',
@@ -134,7 +134,7 @@ export const FAQ: readonly FaqEntry[] = [
   },
   {
     q: 'Should I rest completely when my heel hurts?',
-    a: 'Walkito’s answer is to change the load rather than stop. The 2023 guideline includes education on modifying weight-bearing load in daily, work and sporting activity, graded E — theoretical rather than trial evidence. On a bad day, keep the stretches and drop the loaded work; in Walkito, a morning at 7/10 or more becomes about three minutes of seated work.',
+    a: 'Walkito’s answer is to change the load rather than stop. The 2023 guideline includes education on modifying weight-bearing load in daily, work and sporting activity, graded E (theoretical rather than trial evidence). On a bad day, keep the stretches and drop the loaded work; in Walkito, a morning at 7/10 or more becomes about three minutes of seated work.',
   },
   {
     q: 'Do insoles and orthotics help heel pain?',

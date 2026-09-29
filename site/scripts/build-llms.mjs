@@ -284,7 +284,7 @@ function aboutText(a) {
 
 const guideOrder = ['en', 'ru', 'es'].flatMap((lang) => [GUIDES.heelPain[lang], GUIDES.flatFeet[lang]]);
 
-const full = `# ${SITE_NAME} — full text
+const full = `# ${SITE_NAME}: full text
 
 ${SUMMARY}
 

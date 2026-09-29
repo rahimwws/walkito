@@ -45,7 +45,7 @@ export default function TerminosEs() {
       <main className="shell prose">
         <h1>Términos de uso</h1>
 
-        <p className="updated">Última actualización: 27 de septiembre de 2026</p>
+        <p className="updated">Última actualización: 28 de septiembre de 2026</p>
         <p className="updated">
           Esta es una traducción. Si difiere de{' '}
           <a href="/terms/">la versión en inglés</a>, se aplica la versión en
@@ -61,8 +61,10 @@ export default function TerminosEs() {
         <h2>Qué es Walkito</h2>
         <p>
           Walkito es un programa de ejercicios para el dolor de talón y de pie.
-          Te da un plan diario, lo ajusta según lo que registras y mide tu
-          progreso con pruebas físicas.
+          Arma tu plan semana a semana en torno a objetivos que se pueden medir,
+          con sesiones de 3, 5 o 10 minutos, ajusta cada día según lo que
+          registras y mide tu progreso con pruebas físicas cada 14 días, y cada
+          28 una vez que alcanzas tu primer objetivo.
         </p>
         <p>
           <b>No es un producto sanitario, ni un diagnóstico, ni un tratamiento.</b>{' '}
@@ -93,16 +95,18 @@ export default function TerminosEs() {
 
         <h2>Tu cuenta</h2>
         <p>
-          Walkito te crea una cuenta la primera vez que abres la app. Puedes
-          usar Iniciar sesión con Apple. Iniciar sesión con correo y contraseña
-          solo funciona en cuentas que creamos nosotros; no existe el registro
-          con correo. Protege tu teléfono y tu Apple ID, porque cualquiera que
-          los use puede usar tu cuenta.
+          Inicias sesión con Apple cuando configuras Walkito, y en esa cuenta se
+          guarda tu plan. Iniciar sesión con correo y contraseña solo funciona
+          en cuentas que creamos nosotros; no existe el registro con correo.
+          Protege tu teléfono y tu Apple ID, porque cualquiera que los use puede
+          usar tu cuenta.
         </p>
         <p>
-          Tu plan y tu progreso se guardan en tu teléfono y no pasan a uno
-          nuevo. Las compras sí: toca Restaurar compras en la app con el mismo
-          Apple ID.
+          Tu plan, tus respuestas, tus registros, los resultados de tus pruebas
+          y tus sesiones se guardan en tu teléfono y se copian a tu cuenta. Si
+          inicias sesión con la misma cuenta en un teléfono nuevo o después de
+          reinstalar la app, vuelven. Las compras vuelven con Restaurar compras
+          usando el mismo Apple ID.
         </p>
 
         <h2>Tu licencia</h2>
@@ -116,7 +120,8 @@ export default function TerminosEs() {
         <p>
           El programa, el catálogo de ejercicios, los textos y el software son
           nuestros. Todo lo que registras (tus entradas de dolor, tus sesiones,
-          tu historial) es tuyo, y vive en tu dispositivo.
+          tu historial) es tuyo. Se guarda en tu dispositivo y se copia a tu
+          cuenta para poder restaurarlo.
         </p>
 
         <h2>Pagos</h2>
@@ -131,8 +136,8 @@ export default function TerminosEs() {
             <b>Una suscripción mensual</b> que se renueva automáticamente.
           </li>
           <li>
-            <b>El programa de 12 semanas</b>, con un pago único. Te da acceso
-            durante la duración del programa y no se renueva.
+            <b>El programa de 12 semanas</b>, con un pago único. Te da 12
+            semanas de acceso y no se renueva.
           </li>
         </ul>
 
@@ -196,7 +201,8 @@ export default function TerminosEs() {
           análisis del sueño y los entrenamientos, y guarda las sesiones que
           terminas como entrenamientos y minutos de atención plena. Cada permiso
           es opcional y puedes retirarlo en cualquier momento en Ajustes. Los
-          datos de Apple Salud se quedan en tu teléfono y nunca se suben.
+          datos de Apple Salud se quedan en tu teléfono y nunca se suben ni se
+          guardan en tu cuenta.
           Consulta la <a href="/es/privacidad/">página de privacidad</a> para
           saber qué sí sale de él.
         </p>
@@ -213,8 +219,10 @@ export default function TerminosEs() {
         <h2>Cómo terminar</h2>
         <p>
           Puedes dejarlo cuando quieras eliminando tu cuenta en Perfil →
-          Eliminar cuenta, y cancelar cualquier suscripción a través de Apple
-          como se indica arriba. Podemos suspender el acceso si la app se usa de
+          Eliminar cuenta, lo que borra lo que registraste del teléfono y de
+          nuestro servidor, y cancelar cualquier suscripción a través de Apple
+          como se indica arriba. Borrar solo la app elimina únicamente la copia
+          del teléfono. Podemos suspender el acceso si la app se usa de
           una forma que estos términos prohíben. En la práctica, eso significa
           reventa o manipulación, nunca algo que puedas hacer usándola con
           normalidad.

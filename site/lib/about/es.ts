@@ -33,10 +33,10 @@ export const ABOUT_ES: About = {
     {
       h2: 'Cómo funciona el plan',
       paragraphs: [
-        `Eliges ${either(PROGRAM.daysPerWeek)} días de entrenamiento a la semana y sesiones de ${either(PROGRAM.sessionMinutes)} minutos —${PROGRAM.defaultMinutes} si no eliges—, con 2 a 4 ejercicios cada una. El ejercicio del objetivo principal nunca se recorta.`,
-        'La primera semana es de adaptación: nada que cargue la fascia plantar y nada por encima del nivel 2. Después, los ejercicios avanzan por cadenas —pantorrilla, arco, equilibrio, cadera y movilidad— de cinco niveles, y la del objetivo principal sube de uno en uno.',
+        `Eliges ${either(PROGRAM.daysPerWeek)} días de entrenamiento a la semana y sesiones de ${either(PROGRAM.sessionMinutes)} minutos (${PROGRAM.defaultMinutes} si no eliges), con 2 a 4 ejercicios cada una. El ejercicio del objetivo principal nunca se recorta.`,
+        'La primera semana es de adaptación: nada que cargue la fascia plantar y nada por encima del nivel 2. Después, los ejercicios avanzan por cadenas (pantorrilla, arco, equilibrio, cadera y movilidad) de cinco niveles, y la del objetivo principal sube de uno en uno.',
         'Cada mañana el día se ajusta. Una mañana con mucho dolor, un día de muchos pasos o una noche corta acortan o suavizan la sesión; un dolor de 6 sobre 10 o más durante un ejercicio la termina, y las dos sesiones siguientes dan un paso atrás.',
-        `Cada ${PROGRAM.testEveryDays} días, ${PROGRAM.retestTests} pruebas físicas de unos ${PROGRAM.retestMinutes} minutos —elevaciones de talón a una pierna hasta no poder más, sostener el arco y equilibrio a una pierna— miden el progreso. Tras alcanzar el primer objetivo, las pruebas pasan a ser cada ${PROGRAM.testEveryDaysAfterGoal} días.`,
+        `Cada ${PROGRAM.testEveryDays} días, ${PROGRAM.retestTests} pruebas físicas de unos ${PROGRAM.retestMinutes} minutos (elevaciones de talón a una pierna hasta no poder más, sostener el arco y equilibrio a una pierna) miden el progreso. Tras alcanzar el primer objetivo, las pruebas pasan a ser cada ${PROGRAM.testEveryDaysAfterGoal} días.`,
       ],
     },
     {
@@ -105,7 +105,7 @@ export const ABOUT_ES: About = {
     {
       h2: 'Correcciones y contacto',
       paragraphs: [
-        `Si ves un error —una cifra que no coincide con su fuente, una dosis mal escrita o una frase que promete más de lo que la evidencia sostiene—, escríbenos a ${SUPPORT_EMAIL}. Corregimos la página y actualizamos su fecha.`,
+        `Si ves un error (una cifra que no coincide con su fuente, una dosis mal escrita o una frase que promete más de lo que la evidencia sostiene), escríbenos a ${SUPPORT_EMAIL}. Corregimos la página y actualizamos su fecha.`,
         'La misma dirección sirve para cualquier pregunta sobre la app. Para empezar por algún sitio, la [página principal](/es/) resume cómo funciona Walkito.',
       ],
     },
