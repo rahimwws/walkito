@@ -192,7 +192,11 @@ export default function Program() {
           </table>
         </div>
         <div className="exercise-detail">
-          <ScreenshotSlot label="Screenshot: goal card" size="sm" />
+          <ScreenshotSlot
+            src="/app/01-plan-goal.webp"
+            label="Walkito: the goal card, step 2 of 4 toward pain-free running, above today’s session"
+            size="sm"
+          />
           <div>
             <p>
               Setup asks what you are working toward, such as running without
@@ -227,7 +231,11 @@ export default function Program() {
           around it.
         </p>
         <div className="exercise-detail">
-          <ScreenshotSlot label="Screenshot: week view" size="sm" />
+          <ScreenshotSlot
+            src="/app/05-week.webp"
+            label="Walkito: this week’s plan, Monday to Sunday with rest days, and next week"
+            size="sm"
+          />
           <div>
             <p>
               Strength days never fall back to back. With five or seven days,
@@ -297,7 +305,11 @@ export default function Program() {
           </li>
         </ul>
         <div className="exercise-detail">
-          <ScreenshotSlot label="Screenshot: morning check-in" size="sm" />
+          <ScreenshotSlot
+            src="/app/02b-checkin-sheet.webp"
+            label="Walkito: the morning check-in, pain 7 out of 10 at the heel, above the usual range"
+            size="sm"
+          />
           <div>
             <p>
               Steps and sleep come from Apple Health, if you allow it. That data

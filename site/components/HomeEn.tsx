@@ -142,10 +142,8 @@ const INSIDE = [
     caption: 'Quick routines for any moment',
   },
   {
-    // TODO: swap for /app/progress-results.webp (Progress screen, left vs
-    // right over time) once that screenshot is taken.
-    src: '/app/08b-retest-left-right.webp',
-    label: 'Walkito: retest numbers, calf raises on the left leg against the right, arch hold and balance',
+    src: '/app/progress-results.webp',
+    label: 'Walkito: test results, arch hold up 11 seconds and calf raises up 4, with the left leg at 19 and the right at 22',
     caption: 'Your retests, left vs right',
   },
 ] as const;
@@ -308,8 +306,8 @@ export function HomeEn() {
               label="Walkito: where does it usually hurt, with the heel and arch marked on a leg"
             />
             <ScreenshotSlot
-              src="/app/04-choose-goal.webp"
-              label="Walkito: choosing a goal, with run pain-free selected"
+              src="/app/choose-goal.webp"
+              label="Walkito: choosing a goal, with stay on my feet all day selected"
             />
           </div>
         </section>
