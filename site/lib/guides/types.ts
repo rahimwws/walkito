@@ -33,6 +33,14 @@ export type GuideExercise = {
   /** Label for the image slot beside the exercise, until a frame from the
    * app's exercise video fills it. */
   image?: string;
+  /** The app's exercise id whose clip shows this exercise
+   * (`public/exercises/<id>.*`, made by `scripts/exercise-media.mjs`). When
+   * set, it replaces the placeholder. */
+  media?: string;
+  /** One line under the clip. */
+  caption?: string;
+  /** What the still shows, for screen readers. */
+  alt?: string;
 };
 
 /** A real HTML table: doses, grades. Cells take the same inline marks. */

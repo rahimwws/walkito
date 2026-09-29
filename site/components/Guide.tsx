@@ -4,6 +4,7 @@ import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Byline } from '@/components/Byline';
 import { Footer } from '@/components/Footer';
 import { Cite } from '@/components/Cite';
+import { ExerciseMedia } from '@/components/ExerciseMedia';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { ScreenshotSlot } from '@/components/ScreenshotSlot';
@@ -198,7 +199,11 @@ export function Guide({ guide }: { guide: GuideData }) {
             {section.exercises?.some((e) => e.feel != null) ? (
               section.exercises.map((e) => (
                 <div key={e.name} className="exercise-detail">
-                  <ScreenshotSlot label={e.image ?? e.name} size="sm" />
+                  {e.media ? (
+                    <ExerciseMedia id={e.media} alt={e.alt ?? e.name} caption={e.caption} />
+                  ) : (
+                    <ScreenshotSlot label={e.image ?? e.name} size="sm" />
+                  )}
                   <div>
                     <h3>{e.name}</h3>
                     <p>
