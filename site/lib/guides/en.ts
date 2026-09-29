@@ -37,7 +37,7 @@ export const FLAT_FEET_EN: Guide = {
   page: 'flatFeet',
   published: '2026-09-24',
   updated: '2026-09-28',
-  title: 'Flat Feet Exercises for Fallen Arches and Arch Pain',
+  title: 'Flat Feet Exercises for Fallen Arches & Arch Pain',
   description:
     'Short-foot, toe, balance and hip exercises for flexible flat feet and fallen arches, with starting doses, what the trials found, and where arch pain fits.',
   h1: 'Flat feet exercises for fallen arches and arch pain',
@@ -169,13 +169,13 @@ export const HEEL_PAIN_EN: Guide = {
   page: 'heelPain',
   published: '2026-09-24',
   updated: '2026-09-28',
-  title: 'Plantar Fasciitis Exercises & Stretches for Heel Pain',
+  title: 'Plantar Fasciitis Exercises for Heel Pain',
   description:
-    'Plantar fasciitis exercises and stretches for heel pain and morning heel pain: doses, how often, what each should feel like, and what the 2023 clinical guideline recommends.',
+    'Plantar fasciitis exercises and stretches for heel pain: doses, how often, what each should feel like, and what the 2023 guideline recommends.',
   h1: 'Plantar fasciitis exercises and stretches for heel pain',
-  lede: 'Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, plantar fasciitis, and it’s one of the most common foot problems there is.',
+  lede: 'Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, plantar fasciitis, and the 2023 clinical guideline for heel pain calls it the most commonly recognised cause of heel pain under the foot.',
   intro: [
-    'It’s also confusing to look up, because everyone says something different. The evidence points to two things: stretching the plantar fascia and calf, and strength work for the calf. A 2023 clinical guideline gives stretching its top grade, A, and strength training a B. In one trial of 48 people, all wearing shoe inserts, slow heel raises with a towel under the toes helped faster than stretching alone. By twelve months both groups were even. The guideline’s advice is to do both.',
+    'It’s also confusing to look up, because everyone says something different. The evidence points to two things: stretching the plantar fascia and calf, and strength work for the calf. A 2023 clinical guideline gives stretching its top grade, A, and strength training a B. In one trial of 48 people, all wearing shoe inserts, slow heel raises with a towel under the toes helped faster than stretching alone. By twelve months both groups were even. Doing both is what the guideline supports.',
   ],
   takeaways: [
     'The 2023 heel pain guideline from the Journal of Orthopaedic & Sports Physical Therapy gives plantar fascia and calf stretching its top grade, A, and strength training a B.',
@@ -192,12 +192,12 @@ export const HEEL_PAIN_EN: Guide = {
         'Order matters. Walkito starts with the stretches and the seated work. The towel heel raise loads the plantar fascia the hardest, so it comes later and is reached one level at a time. If any exercise takes your pain to **6/10 or more**, stop for the day. That is the point where Walkito ends a session.',
       ],
       table: {
-        head: ['Exercise', 'Dose', 'How often', 'What you should feel'],
+        head: ['Exercise', 'Dose', 'How often', 'What you should feel', 'Stop if'],
         rows: [
-          ['Plantar fascia stretch', '10 holds of 10 seconds, each foot', 'Every day, the first one before you stand up', 'A stretch along the arch, not the calf'],
-          ['Calf stretch', '3 holds of 30 seconds, each leg', 'Every day', 'A stretch in the calf of the straight back leg'],
-          ['Soleus stretch', '3 holds of 30 seconds, each leg', 'Every day', 'A stretch low in the calf, near the heel'],
-          ['Heel raises with a towel', '3 sets of 12, each leg', 'Every other day', 'Hard work in the calf and a pull under the arch'],
+          ['Plantar fascia stretch', '10 holds of 10 seconds, each foot', 'Every day, the first one before you stand up', 'A stretch along the arch, not the calf', 'Pain reaches 6/10'],
+          ['Calf stretch', '3 holds of 30 seconds, each leg', 'Every day', 'A stretch in the calf of the straight back leg', 'Pain reaches 6/10'],
+          ['Soleus stretch', '3 holds of 30 seconds, each leg', 'Every day', 'A stretch low in the calf, near the heel', 'Pain reaches 6/10'],
+          ['Heel raises with a towel', '3 sets of 12, each leg', 'Every other day', 'Hard work in the calf and a pull under the arch', 'Pain reaches 6/10. Skip them on a bad morning.'],
         ],
       },
       exercises: [
@@ -207,7 +207,6 @@ export const HEEL_PAIN_EN: Guide = {
           often: 'Every day',
           feel: 'A stretch along the arch',
           how: 'Sit down and cross the foot over the other knee. Pull the toes back until you feel the stretch in the arch, not the calf. Do the first one on the edge of the bed, before your first steps.',
-          stop: 'Stop for the day if your heel pain reaches 6/10 or more.',
           image: 'Exercise: plantar fascia stretch',
         },
         {
@@ -216,7 +215,6 @@ export const HEEL_PAIN_EN: Guide = {
           often: 'Every day',
           feel: 'A stretch in the calf',
           how: 'Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward. A tight calf pulls on the heel all day, so this stretch matters even though you feel it higher up.',
-          stop: 'Stop for the day if your heel pain reaches 6/10 or more.',
           image: 'Exercise: calf stretch',
         },
         {
@@ -225,7 +223,6 @@ export const HEEL_PAIN_EN: Guide = {
           often: 'Every day',
           feel: 'A stretch near the heel',
           how: 'Take the same position, then bend the back knee until you feel the stretch lower down, near the heel. The soleus, the deeper calf muscle, only lets go with the knee bent.',
-          stop: 'Stop for the day if your heel pain reaches 6/10 or more.',
           image: 'Exercise: soleus stretch',
         },
         {
@@ -234,7 +231,6 @@ export const HEEL_PAIN_EN: Guide = {
           often: 'Every other day',
           feel: 'Hard work in the calf',
           how: 'Stand on one foot on a step, with a rolled towel under your toes. Take three seconds to rise, hold for two at the top, and take three seconds to lower. The towel is what makes this exercise work the plantar fascia and not just the calf.',
-          stop: 'Skip the heel raises on a bad morning, and stop for the day if your heel pain reaches 6/10 or more.',
           image: 'Exercise: heel raises with a towel',
         },
       ],
@@ -262,7 +258,7 @@ export const HEEL_PAIN_EN: Guide = {
       paragraphs: [
         'Strength work and stretching both help plantar fasciitis, and strength work helps sooner.',
         'In a trial of 48 people with plantar fasciitis confirmed by ultrasound, everyone wore shoe inserts. One group added heavy heel raises every other day. The other stretched the plantar fascia every day. At three months, the heel-raise group was clearly ahead on pain and daily function. At twelve months, the two groups were even. Strength work brought the improvement forward. It did not make it bigger.',
-        'Doing both is what the guideline supports. The study-by-study reasoning is on [the evidence page](/science/).',
+        'The guideline supports doing both. The study-by-study reasoning is on [the evidence page](/science/).',
       ],
       sourceNote:
         'Scored on the Foot Function Index: 29 points lower in the heel-raise group at three months (95% CI 6-52, p = 0.016), and 22 against 16 at twelve months, not a significant difference.',

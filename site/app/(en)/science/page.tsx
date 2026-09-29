@@ -28,7 +28,7 @@ import { PAGE_UPDATED, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
 // One title and one description, used by the metadata and the Article schema
 // alike: a headline in schema that differs from the page's own title is two
 // answers to "what is this page".
-const TITLE = 'Heel Pain Research: Strength vs Stretching, 2023 Guideline';
+const TITLE = 'Heel Pain Research: Strength vs Stretching';
 const DESCRIPTION =
   'What trials found on strength vs stretching for plantar fasciitis and exercise for flexible flat feet, and what the 2023 heel pain guideline recommends.';
 

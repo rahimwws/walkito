@@ -17,7 +17,7 @@ import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Условия использования',
   description:
-    'Условия использования Walkito: что приложение делает и чего не делает, ваш аккаунт, подписки и разовые покупки через App Store, приглашения, здоровье и безопасность.',
+    'Условия использования Walkito: что делает приложение, ваш аккаунт, подписки и разовые покупки, приглашения, здоровье и безопасность.',
   alternates: alternatesFor('terms', 'ru'),
   openGraph: {
     title: `Условия использования | ${SITE_NAME}`,

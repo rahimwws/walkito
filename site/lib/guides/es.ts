@@ -52,7 +52,7 @@ export const FLAT_FEET_ES: Guide = {
   page: 'flatFeet',
   published: '2026-09-24',
   updated: '2026-09-28',
-  title: 'Ejercicios para pie plano y dolor en el arco del pie',
+  title: 'Ejercicios para pie plano y dolor en el arco',
   description:
     'Pie corto, dedos, equilibrio y cadera para el pie plano flexible: dosis de inicio, cuánto tarda el arco en cambiar y qué hacer si el arco duele al correr.',
   h1: 'Ejercicios para el pie plano y el dolor en el arco',
@@ -184,7 +184,7 @@ export const HEEL_PAIN_ES: Guide = {
   page: 'heelPain',
   published: '2026-09-24',
   updated: '2026-09-28',
-  title: 'Ejercicios y estiramientos para la fascitis plantar',
+  title: 'Ejercicios y estiramientos para fascitis plantar',
   description:
     'Estiramientos y elevaciones para la fascitis plantar y el dolor de talón: dosis, por qué duele por la mañana, si puedes correr y qué dice la guía de 2023.',
   h1: 'Ejercicios y estiramientos para la fascitis plantar y el dolor de talón',

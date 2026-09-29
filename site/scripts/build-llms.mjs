@@ -145,7 +145,7 @@ const KEY_FACTS = [
   'Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.',
   'Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal\'s chain moves up one level at a time.',
   `Tests: ${PROGRAM.retestTests} physical measurements (calf raises to failure, arch hold, single-leg balance) in about ${PROGRAM.retestMinutes} minutes, every ${PROGRAM.testEveryDays} days until the first goal is reached, then every ${PROGRAM.testEveryDaysAfterGoal} days.`,
-  'iOS only, in English, Russian and Spanish. Coming soon to the App Store.',
+  'Available on iPhone now, on the App Store; Android is planned. In English, Russian and Spanish.',
   `Contact: ${SUPPORT_EMAIL}`,
 ];
 

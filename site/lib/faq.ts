@@ -66,7 +66,7 @@ export const FAQ: readonly FaqEntry[] = [
   },
   {
     q: 'Can I keep running while I do Walkito?',
-    a: 'Yes. Walkito is built for runners, and the plan adjusts to your load rather than asking you to stop. When yesterday was a big day on your feet, a strength session becomes a lighter recovery one. Sharp or worsening pain needs a clinician. More in [heel pain when running](/plantar-fasciitis-exercises/).',
+    a: 'Yes. Walkito is for anyone with heel or foot pain, including runners, and the plan adjusts to your load rather than asking you to stop. When yesterday was a big day on your feet, a strength session becomes a lighter recovery one. Sharp or worsening pain needs a clinician. More in [heel pain when running](/plantar-fasciitis-exercises/).',
   },
   {
     q: 'What do the tests measure?',
@@ -110,7 +110,7 @@ export const FAQ: readonly FaqEntry[] = [
   },
   {
     q: 'Is Walkito available on Android?',
-    a: 'No. It is iOS only, because it reads Apple Health for steps, sleep and walking asymmetry, and runs a Live Activity on the Lock Screen while a session is going. It is coming soon to the App Store, in English, Russian and Spanish.',
+    a: 'Not yet. Walkito is available on iPhone now; Android is planned. The iPhone app reads Apple Health for steps, sleep and walking asymmetry, and runs a Live Activity on the Lock Screen while a session is going. It is available on the App Store, in English, Russian and Spanish.',
   },
   {
     q: 'Can Walkito tell me what is wrong with my foot?',

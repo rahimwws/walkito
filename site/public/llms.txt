@@ -15,7 +15,7 @@ should be seen by a clinician.
 Last updated: 2026-09-28
 
 ## Guides
-- [Plantar fasciitis exercises and stretches for heel pain](https://walkito.site/plantar-fasciitis-exercises/): Plantar fasciitis exercises and stretches for heel pain and morning heel pain: doses, how often, what each should feel like, and what the 2023 clinical guideline recommends.
+- [Plantar fasciitis exercises and stretches for heel pain](https://walkito.site/plantar-fasciitis-exercises/): Plantar fasciitis exercises and stretches for heel pain: doses, how often, what each should feel like, and what the 2023 guideline recommends.
 - [Flat feet exercises for fallen arches and arch pain](https://walkito.site/flat-feet-exercises/): Short-foot, toe, balance and hip exercises for flexible flat feet and fallen arches, with starting doses, what the trials found, and where arch pain fits.
 
 ## The app and the evidence
@@ -60,7 +60,7 @@ Spanish as well. The plan, evidence, FAQ and legal pages are English only.
 - Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.
 - Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal's chain moves up one level at a time.
 - Tests: 3 physical measurements (calf raises to failure, arch hold, single-leg balance) in about 4 minutes, every 14 days until the first goal is reached, then every 28 days.
-- iOS only, in English, Russian and Spanish. Coming soon to the App Store.
+- Available on iPhone now, on the App Store; Android is planned. In English, Russian and Spanish.
 - Contact: hello@walkito.site
 
 ## Key findings the plan follows

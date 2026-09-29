@@ -25,7 +25,7 @@ should be seen by a clinician.
 - Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.
 - Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal's chain moves up one level at a time.
 - Tests: 3 physical measurements (calf raises to failure, arch hold, single-leg balance) in about 4 minutes, every 14 days until the first goal is reached, then every 28 days.
-- iOS only, in English, Russian and Spanish. Coming soon to the App Store.
+- Available on iPhone now, on the App Store; Android is planned. In English, Russian and Spanish.
 - Contact: hello@walkito.site
 
 ## The evidence
@@ -45,7 +45,7 @@ Sources:
 
 Language: English · https://walkito.site/plantar-fasciitis-exercises/ · published 2026-09-24 · updated 2026-09-28
 
-Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, plantar fasciitis, and it’s one of the most common foot problems there is.
+Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, plantar fasciitis, and the 2023 clinical guideline for heel pain calls it the most commonly recognised cause of heel pain under the foot.
 
 - The 2023 heel pain guideline from the Journal of Orthopaedic & Sports Physical Therapy gives plantar fascia and calf stretching its top grade, A, and strength training a B.
 - In a trial of 48 people, heavy heel raises eased pain and improved daily function faster than stretching, and by twelve months both groups were even (Rathleff and colleagues, 2015).
@@ -89,7 +89,7 @@ Strength work and stretching both help plantar fasciitis, and strength work help
 
 In a trial of 48 people with plantar fasciitis confirmed by ultrasound, everyone wore shoe inserts. One group added heavy heel raises every other day. The other stretched the plantar fascia every day. At three months, the heel-raise group was clearly ahead on pain and daily function. At twelve months, the two groups were even. Strength work brought the improvement forward. It did not make it bigger.
 
-Doing both is what the guideline supports. The study-by-study reasoning is on [the evidence page](https://walkito.site/science/).
+The guideline supports doing both. The study-by-study reasoning is on [the evidence page](https://walkito.site/science/).
 
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
@@ -758,7 +758,7 @@ Yes, the same morning. A morning pain of 7/10 or more turns the day into about t
 
 ### Can I keep running while I do Walkito?
 
-Yes. Walkito is built for runners, and the plan adjusts to your load rather than asking you to stop. When yesterday was a big day on your feet, a strength session becomes a lighter recovery one. Sharp or worsening pain needs a clinician. More in [heel pain when running](https://walkito.site/plantar-fasciitis-exercises/).
+Yes. Walkito is for anyone with heel or foot pain, including runners, and the plan adjusts to your load rather than asking you to stop. When yesterday was a big day on your feet, a strength session becomes a lighter recovery one. Sharp or worsening pain needs a clinician. More in [heel pain when running](https://walkito.site/plantar-fasciitis-exercises/).
 
 ### What do the tests measure?
 
@@ -802,7 +802,7 @@ You earn one freeze a week and can hold two at a time, and a broken streak can b
 
 ### Is Walkito available on Android?
 
-No. It is iOS only, because it reads Apple Health for steps, sleep and walking asymmetry, and runs a Live Activity on the Lock Screen while a session is going. It is coming soon to the App Store, in English, Russian and Spanish.
+Not yet. Walkito is available on iPhone now; Android is planned. The iPhone app reads Apple Health for steps, sleep and walking asymmetry, and runs a Live Activity on the Lock Screen while a session is going. It is available on the App Store, in English, Russian and Spanish.
 
 ### Can Walkito tell me what is wrong with my foot?
 

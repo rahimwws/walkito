@@ -18,7 +18,7 @@ const MINUTES = `${PROGRAM.sessionMinutes.slice(0, -1).join(', ')} o ${PROGRAM.s
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Ejercicios para dolor de talón y pie plano en corredores | Walkito',
+    default: 'Ejercicios de talón y pie plano para corredores | Walkito',
     template: `%s | ${SITE_NAME}`,
   },
   // No length: the plan is built a week at a time and has no end, so the

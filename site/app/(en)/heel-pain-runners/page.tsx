@@ -25,8 +25,8 @@ const { archHoldSeconds, calfRaises, balanceSeconds, gapPercent } = PROGRAM.goal
  * version exist, because an alternate that points at a page which is not a
  * translation of this one is worse than none.
  */
-const TITLE = 'Heel Pain from Running: An Exercise Plan That Adapts';
-const DESCRIPTION = `Heel pain from running? An exercise plan for runners, built one week at a time around a goal: calf strength, stretching and balance work in sessions of ${MIN_A}, ${MIN_B} or ${MIN_C} minutes, softer on bad mornings.`;
+const TITLE = 'Heel Pain from Running: A Plan That Adapts';
+const DESCRIPTION = `Heel pain from running? An exercise plan for runners, built a week at a time around a goal, with ${MIN_A}, ${MIN_B} or ${MIN_C} minute sessions that ease off on bad mornings.`;
 const PATH = '/heel-pain-runners/';
 
 export const metadata: Metadata = {

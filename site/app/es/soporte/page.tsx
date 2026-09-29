@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Soporte',
   description:
-    'Ayuda con Walkito: notificaciones, permisos de Apple Salud, suscripciones y el programa de 12 semanas, reembolsos y cómo eliminar tu cuenta. Escríbenos y te responde una persona.',
+    'Ayuda con Walkito: notificaciones, Apple Salud, compras, reembolsos y cómo eliminar tu cuenta. Escríbenos y te responde una persona.',
   alternates: alternatesFor('support', 'es'),
 };
 

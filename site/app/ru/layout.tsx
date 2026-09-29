@@ -20,11 +20,11 @@ const SESSIONS = `${MIN_A}, ${MIN_B} или ${MIN_C}`;
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Упражнения при боли в пятке и плоскостопии для бегунов | Walkito',
+    default: 'Боль в пятке и плоскостопие у бегунов: упражнения | Walkito',
     template: `%s | ${SITE_NAME}`,
   },
   // No plan length: the plan is built a week at a time and has no last week.
-  description: `Упражнения при боли в пятке, пяточной шпоре и плоскостопии для бегунов: план, который строится по одной неделе вокруг вашей цели, и тренировки по ${SESSIONS} минут.`,
+  description: `Упражнения при боли в пятке, пяточной шпоре и плоскостопии для бегунов: план строится по неделе вокруг вашей цели, тренировки по ${SESSIONS} минут.`,
   robots: {
     index: true,
     follow: true,

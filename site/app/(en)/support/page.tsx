@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   // Long enough that Google uses it rather than picking arbitrary text off the
   // page. Forty characters is an invitation for it to write your ad copy.
   description:
-    'Get help with Walkito: notifications, Apple Health permissions, subscriptions and the 12-week program, refunds, and how to delete your account. Write to us and a person replies.',
+    'Help with Walkito: notifications, Apple Health, purchases, refunds and deleting your account. Write to us and a person replies.',
   alternates: alternatesFor('support', 'en'),
 };
 
