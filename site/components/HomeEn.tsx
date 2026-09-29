@@ -1,10 +1,11 @@
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Footer } from '@/components/Footer';
+import { Founders } from '@/components/Founders';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { ScreenshotSlot } from '@/components/ScreenshotSlot';
 import { CHROME } from '@/lib/i18n';
-import { PAIN_GOAL_MAX, PROGRAM, SITE_NAME, SUPPORT_EMAIL } from '@/lib/site';
+import { PAIN_GOAL_MAX, PROGRAM, SITE_NAME } from '@/lib/site';
 
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
 const [DAYS_A, DAYS_B, DAYS_C] = PROGRAM.daysPerWeek;
@@ -90,12 +91,28 @@ const HOW = [
   },
 ];
 
-/** Where each future screenshot goes. Add `src` once the image exists. */
+/** The app, a screen at a time. Images come from scripts/export-screenshots.mjs. */
 const INSIDE = [
-  { label: 'Screenshot: today’s plan', caption: 'Today’s plan' },
-  { label: 'Screenshot: exercise video', caption: 'A video for every exercise' },
-  { label: 'Screenshot: quick routines', caption: 'Quick routines for any moment' },
-  { label: 'Screenshot: retest results', caption: 'Your retests, left vs right' },
+  {
+    src: '/app/05-week.webp',
+    label: 'Walkito: this week’s plan, Monday to Sunday with rest days, and next week',
+    caption: 'Your week, rest days included',
+  },
+  {
+    src: '/app/06-exercise.webp',
+    label: 'Walkito: a plantar stretch playing as a video with a timer',
+    caption: 'A video for every exercise',
+  },
+  {
+    src: '/app/07-quick.webp',
+    label: 'Walkito: quick routines for work, before and after a run, and when it hurts',
+    caption: 'Quick routines for any moment',
+  },
+  {
+    src: '/app/08b-retest-left-right.webp',
+    label: 'Walkito: retest numbers, calf raises on the left leg against the right, arch hold and balance',
+    caption: 'Your retests, left vs right',
+  },
 ] as const;
 
 /**
@@ -136,7 +153,6 @@ const FAQ = [
  */
 export function HomeEn() {
   const c = CHROME.en;
-  const mail = <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>;
 
   return (
     <>
@@ -158,10 +174,12 @@ export function HomeEn() {
             {MIN_A}, {MIN_B} or {MIN_C} minutes a day, at home.
           </p>
 
-          {/* A placeholder until the new screenshots exist: app-home.png shows a
-              real name. */}
           <div className="shot">
-            <ScreenshotSlot label="Screenshot: today’s plan" />
+            <ScreenshotSlot
+              src="/app/01-plan-goal.webp"
+              label="Walkito: your plan with a pain-free running goal, step 2 of 4, stronger arch"
+              priority
+            />
           </div>
         </section>
 
@@ -200,7 +218,10 @@ export function HomeEn() {
               good day.
             </p>
           </div>
-          <ScreenshotSlot label="Screenshot: morning check-in" />
+          <ScreenshotSlot
+            src="/app/02-checkin.webp"
+            label="Walkito: after a sore morning, today is three minutes of seated exercises"
+          />
         </section>
 
         <section className="shell split split-flip">
@@ -212,7 +233,16 @@ export function HomeEn() {
               time, not one routine for everyone.
             </p>
           </div>
-          <ScreenshotSlot label="Screenshot: where does it hurt" />
+          <div className="phone-pair">
+            <ScreenshotSlot
+              src="/app/03-where-it-hurts.webp"
+              label="Walkito: where does it usually hurt, with the heel and arch marked on a leg"
+            />
+            <ScreenshotSlot
+              src="/app/04-choose-goal.webp"
+              label="Walkito: choosing a goal, with run pain-free selected"
+            />
+          </div>
         </section>
 
         <section className="shell proof proof-follow">
@@ -232,7 +262,7 @@ export function HomeEn() {
           <div className="gallery">
             {INSIDE.map((item) => (
               <div key={item.caption} className="gallery-item">
-                <ScreenshotSlot label={item.label} size="sm" />
+                <ScreenshotSlot src={item.src} label={item.label} size="sm" />
                 <p>{item.caption}</p>
               </div>
             ))}
@@ -240,20 +270,7 @@ export function HomeEn() {
         </section>
 
         <section className="shell story">
-          <h2>Made by Rahman and Rahim</h2>
-          <p>
-            We make Walkito, just the two of us. It started close to home: family
-            with flat feet, friends with heel pain.
-          </p>
-          <p>
-            Insoles, new shoes, ten videos saying different things, and it still
-            hurt every morning. It’s not your fault. Nobody gave you a plan: which
-            exercises, how many, in what order, and what to do on a bad day.
-          </p>
-          <p>Now you have one.</p>
-          <p className="story-contact">
-            Questions? Write to {mail}. A person replies, usually within 12 hours.
-          </p>
+          <Founders lang="en" />
         </section>
 
         <section className="shell proof home-faq">

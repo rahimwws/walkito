@@ -687,7 +687,7 @@ Cada día de entrenamiento mientras el arco sea tu objetivo. En Walkito eliges 3
 
 https://walkito.site/about/
 
-Walkito is an iPhone app of exercises for heel pain, arch pain and flexible flat feet, built for runners. This page says how the guides on this site are written, where their figures come from, what the app does not do, and how to tell us when something is wrong.
+Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day. This page says how the guides on this site are written, where their figures come from, what the app does not do, and how to tell us when something is wrong.
 
 ### What Walkito is
 
@@ -695,7 +695,7 @@ Walkito builds an exercise plan one week at a time around a measurable goal: pai
 
 There is no fixed length. A goal that is reached moves to maintaining and the next one takes its place, for as long as you use the app. [How the plan works](https://walkito.site/program/).
 
-The app is in English, Russian and Spanish, and is coming soon to the App Store.
+The app is in English, Russian and Spanish.
 
 ### How the content is written
 

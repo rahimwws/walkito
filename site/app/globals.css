@@ -371,6 +371,57 @@ figure figcaption b {
   font-size: 15px;
 }
 
+/* ---------------------------------------------------------------- social -- */
+
+/* TikTok and Instagram as small icons: in the footer and under the founders'
+   note. 44px targets, drawn smaller. */
+.social {
+  display: flex;
+  gap: 4px;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  color: var(--muted);
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.social a:hover {
+  color: var(--ink);
+  background: rgba(17, 17, 20, 0.05);
+}
+
+.social svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Inside long-form pages the generic link colour would repaint these: the
+   badge is a filled button and keeps white text, the social icons stay muted. */
+.prose .store a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.prose .social a {
+  color: var(--muted);
+}
+
+.prose .social a:hover {
+  color: var(--ink);
+}
+
+/* Under the founders' note on the home page, centred like the text above. */
+.story .social {
+  justify-content: center;
+  margin-top: 8px;
+}
+
 /* ---------------------------------------------------------------- footer -- */
 
 .footer {
@@ -754,13 +805,19 @@ figure figcaption b {
   order: 2;
 }
 
-/* A screenshot, or the phone-shaped place one will go. Drawn to the
-   proportions of app-home.png (538 × 1100) so a real image drops in without
-   anything moving. */
+/* A screenshot in a phone, or the phone-shaped place one will go. The whole
+   phone (screen + bezel + edge) keeps one ratio so nothing moves when the image
+   arrives: the iPhone 17 Pro's 1206 × 2622 display plus the frame around it. */
 .slot {
   width: 260px;
-  aspect-ratio: 538 / 1100;
+  aspect-ratio: 1206 / 2622;
   flex: none;
+}
+
+.slot.phone {
+  /* Screen is 91.6% of the phone's width (4.2% of frame each side) at
+     1206 : 2622, plus the same 4.2% top and bottom: 1 : 2.0755. */
+  aspect-ratio: 1 / 2.0755;
 }
 
 /* In the hero, where the phone is the size the screenshot was. */
@@ -774,11 +831,67 @@ figure figcaption b {
   margin-inline: auto;
 }
 
-.slot img {
+/* The phone frame, all in CSS. Sizes are percentages of the phone's own width
+   (container query units), so it stays in proportion from 150 px to 400 px.
+   Titanium edge: the outer gradient with a thin highlight. Bezel: the black
+   padding. Display: the rounded, clipped screen. */
+.phone {
+  /* The measured box: everything inside is sized in % of its width (cqi). */
+  container-type: inline-size;
+}
+
+.phone-body {
+  position: relative;
+  height: 100%;
+  padding: 4.2cqi;
+  border-radius: 15.5cqi;
+  background:
+    linear-gradient(145deg, #74747c 0%, #2e2e33 32%, #3c3c42 62%, #6a6a72 100%);
+  box-shadow:
+    inset 0 0 0 0.35cqi rgba(255, 255, 255, 0.22),
+    inset 0 0 0 1.1cqi #050506,
+    0 3cqi 7cqi rgba(17, 17, 20, 0.18),
+    0 10cqi 22cqi rgba(17, 17, 20, 0.22);
+}
+
+.phone-body::before {
+  /* The black glass around the display. */
+  content: '';
+  position: absolute;
+  inset: 1.1cqi;
+  border-radius: 14.4cqi;
+  background: #050506;
+}
+
+.phone-screen {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12.2cqi;
+  background: #111113;
+  /* Keeps the rounded clip crisp on Safari while the image composites. */
+  isolation: isolate;
+}
+
+.phone-screen img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  filter: drop-shadow(0 24px 48px rgba(17, 17, 20, 0.2));
+  object-fit: cover;
+}
+
+/* The Dynamic Island, matched to the one the simulator draws into the capture
+   (376 × 110 at 42 px from the top of a 1206 px screen) so the two coincide.
+   The screen is 91.6cqi wide, so: top 42/1206 × 91.6, width 376/1206 × 91.6. */
+.phone-island {
+  position: absolute;
+  top: 3.19cqi;
+  left: 50%;
+  width: 28.56cqi;
+  aspect-ratio: 376 / 110;
+  border-radius: 999px;
+  background: #000;
+  transform: translateX(-50%);
 }
 
 .slot-empty {
@@ -802,6 +915,39 @@ figure figcaption b {
   border-radius: 999px;
   background: var(--ink);
   transform: translateX(-50%);
+}
+
+/* Two phones side by side, the second slightly lower, as one picture. */
+.phone-pair {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex: none;
+}
+
+.phone-pair .slot {
+  width: 220px;
+}
+
+.phone-pair .slot + .slot {
+  margin-top: 56px;
+}
+
+@media (max-width: 760px) {
+  .phone-pair {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .phone-pair .slot,
+  .split .phone-pair .slot {
+    width: min(170px, 42vw);
+    margin-inline: 0;
+  }
+
+  .phone-pair .slot + .slot {
+    margin-top: 36px;
+  }
 }
 
 .slot-label {

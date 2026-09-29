@@ -17,14 +17,14 @@ export const ABOUT_EN: About = {
   description:
     'What Walkito is, how its heel pain and flat feet guides are written and sourced, what the app does not do, and how to report a mistake.',
   h1: 'About Walkito',
-  lede: 'Walkito is an iPhone app of exercises for heel pain, arch pain and flexible flat feet, built for runners. This page says how the guides on this site are written, where their figures come from, what the app does not do, and how to tell us when something is wrong.',
+  lede: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day. This page says how the guides on this site are written, where their figures come from, what the app does not do, and how to tell us when something is wrong.',
   sections: [
     {
       h2: 'What Walkito is',
       paragraphs: [
         `Walkito builds an exercise plan one week at a time around a measurable goal: pain-free mornings, a ${PROGRAM.goals.archHoldSeconds}-second arch hold, ${PROGRAM.goals.calfRaises} single-leg calf raises, ${PROGRAM.goals.balanceSeconds} seconds of single-leg balance, or a left/right difference under ${PROGRAM.goals.gapPercent}%. You start with at most three goals, pain first if something hurts. You choose ${or(PROGRAM.daysPerWeek)} training days a week and sessions of ${or(PROGRAM.sessionMinutes)} minutes, each day adapts to how your morning went, and a short test every ${PROGRAM.testEveryDays} days (every ${PROGRAM.testEveryDaysAfterGoal} once your first goal is reached) shows whether the numbers are moving.`,
         'There is no fixed length. A goal that is reached moves to maintaining and the next one takes its place, for as long as you use the app. [How the plan works](/program/).',
-        'The app is in English, Russian and Spanish, and is coming soon to the App Store.',
+        'The app is in English, Russian and Spanish.',
       ],
     },
     {

@@ -1,10 +1,14 @@
+import { Fragment } from 'react';
+
+import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Footer } from '@/components/Footer';
+import { Founders } from '@/components/Founders';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import type { About as AboutData } from '@/lib/about/types';
 import { CHROME, TRANSLATED } from '@/lib/i18n';
 import { formatDate } from '@/lib/schema';
-import { PAGE_UPDATED, SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
+import { PAGE_UPDATED, SAME_AS, SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 
 /** `[label](/path/)` and `**bold**`, the same two marks the guides allow. */
 function Inline({ text }: { text: string }) {
@@ -39,6 +43,7 @@ export function About({ about }: { about: AboutData }) {
       name: SITE_NAME,
       url: SITE_URL,
       email: SUPPORT_EMAIL,
+      ...(SAME_AS.length > 0 ? { sameAs: SAME_AS } : {}),
     },
   };
   return (
@@ -53,24 +58,33 @@ export function About({ about }: { about: AboutData }) {
         <p className="lede">
           <Inline text={about.lede} />
         </p>
-        {about.sections.map((section) => (
-          <section key={section.h2}>
-            <h2>{section.h2}</h2>
-            {section.paragraphs?.map((p) => (
-              <p key={p}>
-                <Inline text={p} />
-              </p>
-            ))}
-            {section.bullets && (
-              <ul>
-                {section.bullets.map((b) => (
-                  <li key={b}>
-                    <Inline text={b} />
-                  </li>
-                ))}
-              </ul>
+        <AppStoreBadge campaign={about.lang === 'en' ? 'about' : `about-${about.lang}`} lang={about.lang} />
+        {about.sections.map((section, index) => (
+          <Fragment key={section.h2}>
+            <section>
+              <h2>{section.h2}</h2>
+              {section.paragraphs?.map((p) => (
+                <p key={p}>
+                  <Inline text={p} />
+                </p>
+              ))}
+              {section.bullets && (
+                <ul>
+                  {section.bullets.map((b) => (
+                    <li key={b}>
+                      <Inline text={b} />
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </section>
+            {/* Who makes it, right after what it is. */}
+            {index === 0 && (
+              <section>
+                <Founders lang={about.lang} />
+              </section>
             )}
-          </section>
+          </Fragment>
         ))}
         <p className="notice">{c.notice}</p>
       </main>

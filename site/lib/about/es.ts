@@ -21,12 +21,12 @@ export const ABOUT_ES: About = {
   description:
     'Qué es Walkito, cómo se escriben y se citan sus guías sobre dolor de talón y pie plano, qué no hace la app y cómo avisarnos de un error.',
   h1: 'Sobre Walkito',
-  lede: 'Walkito es una app para iPhone con un programa de ejercicios para el dolor de talón (fascitis plantar), el dolor en el arco y el pie plano flexible, pensada para corredores. No diagnostica ni trata: propone ejercicios, los ajusta a cómo amaneces cada día y mide con pruebas físicas si avanzas.',
+  lede: 'Walkito es un plan de ejercicios personal para el dolor de talón, de pie y de pierna que se ajusta a cómo sientes los pies cada día. No diagnostica ni trata: propone ejercicios, los ajusta a cómo amaneces cada día y mide con pruebas físicas si avanzas.',
   sections: [
     {
       h2: 'Qué es Walkito',
       paragraphs: [
-        'Una app para iPhone, muy pronto en el App Store, en inglés, ruso y español. Reúne en un solo plan los ejercicios de las dos guías de este sitio: los de [la fascitis plantar y el dolor de talón](/es/ejercicios-fascitis-plantar/) y los del [pie plano](/es/ejercicios-pie-plano/).',
+        'Está en inglés, ruso y español. Reúne en un solo plan los ejercicios de las dos guías de este sitio: los de [la fascitis plantar y el dolor de talón](/es/ejercicios-fascitis-plantar/) y los del [pie plano](/es/ejercicios-pie-plano/).',
         'No tiene una duración fija. Arma **una semana cada vez** alrededor de un objetivo medible; cuando lo alcanzas, pasa a mantenimiento con una dosis menor y el siguiente ocupa su lugar. El plan sigue mientras lo uses.',
       ],
     },

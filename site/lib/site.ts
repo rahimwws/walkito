@@ -131,10 +131,18 @@ export const APPLE_APP_ID: string | null = null;
 
 export const SUPPORT_EMAIL = 'hello@walkito.site';
 
-/** Social profiles, linked from the footer. Empty until the accounts exist; the
- * footer leaves out any link whose URL is empty rather than pointing at a guess. */
-export const TIKTOK_URL = '';
-export const INSTAGRAM_URL = '';
+/** Social profiles, linked from the footer and the founders' note. A profile
+ * with an empty URL is left out everywhere rather than pointing at a guess. */
+export const TIKTOK_URL = 'https://www.tiktok.com/@walkito.app';
+export const INSTAGRAM_URL = 'https://www.instagram.com/walkito.app/';
+
+/**
+ * The Organization's `sameAs`: every profile that is really ours. The App Store
+ * listing joins by itself the day `APP_STORE_URL` is set.
+ */
+export const SAME_AS: readonly string[] = [TIKTOK_URL, INSTAGRAM_URL, APP_STORE_URL].filter(
+  (url): url is string => url != null && url !== '',
+);
 
 /**
  * IndexNow.

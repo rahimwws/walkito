@@ -103,10 +103,12 @@ export default function HeelPainRunners() {
           </p>
           <AppStoreBadge campaign="runners-hero" anchor />
 
-          {/* A placeholder until the new screenshots exist: app-home.png shows a
-              real name. */}
           <div className="shot">
-            <ScreenshotSlot label="Screenshot: today’s plan" />
+            <ScreenshotSlot
+              src="/app/01-plan-goal.webp"
+              label="Walkito: your plan with a pain-free running goal, step 2 of 4, stronger arch"
+              priority
+            />
           </div>
         </section>
 
