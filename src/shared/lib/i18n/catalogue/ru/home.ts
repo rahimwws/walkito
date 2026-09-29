@@ -82,10 +82,10 @@ export const HOME_RU = {
   'home.tasksTitle': 'Задачи на сегодня',
   'home.libraryTitle': 'Прямо сейчас',
   'home.allDoneTitle': 'На сегодня всё',
-  'home.allDoneBlurb':
-    'Больше ничего не нужно. Следующая сессия откроется через двенадцать часов отдыха.',
+  'home.allDoneBlurb': 'На сегодня больше ничего не нужно.',
   'home.retestTask': 'Замеры',
   'home.retestTaskSub': 'Контроль · {tests}',
+  'home.seeResults': 'Посмотреть результаты',
   'home.nothingScheduled': 'На сегодня ничего не назначено. Отдых тоже засчитан.',
   'home.markDone': 'Отметить выполненным',
   'home.markNotDone': 'Снять отметку',

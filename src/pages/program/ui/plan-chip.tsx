@@ -1,4 +1,4 @@
-import type { Icon } from 'phosphor-react-native';
+import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { fonts, palette } from '@/shared/config';
@@ -6,7 +6,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 
 export type PlanChipProps = {
   label: string;
-  icon?: Icon;
+  icon?: IconSvgElement;
   tone: { fill: string; track: string };
   /** The minutes choice: filled with the tone, label in the page colour. */
   selected?: boolean;
@@ -21,13 +21,16 @@ export type PlanChipProps = {
  * screen uses it for everything that is a chip, so a Mobility chip reads the
  * same here as it does on Home without being read.
  */
-export function PlanChip({ label, icon: Glyph, tone, selected = false, onPress, accessibilityRole = 'button', accessibilityLabel }: PlanChipProps) {
+export function PlanChip({ label, icon, tone, selected = false, onPress, accessibilityRole = 'button', accessibilityLabel }: PlanChipProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const ink = selected ? colors.background : tone.fill;
   const body = (
     <View style={[styles.chip, { backgroundColor: selected ? tone.fill : tone.track }]}>
-      {Glyph != null && <Glyph size={14} weight="fill" color={ink} />}
+      {/* Stroked, a touch heavier than the default: at 14pt the set's 1.5
+          stroke thins out against a tinted ground, and the glyph has to hold
+          its own beside bold type. */}
+      {icon != null && <HugeiconsIcon icon={icon} size={14} color={ink} strokeWidth={2.2} />}
       <Text style={[styles.label, { color: ink }]} numberOfLines={1}>
         {label}
       </Text>

@@ -61,6 +61,9 @@ export type AnalyticsEvents = {
   session_started: SessionProps;
   session_completed: SessionProps;
   retest_completed: { day: number; block: number };
+  /** "Test tomorrow" on the test day's intro: the test moved a day. The plan
+   * day it was due on, never the check-in score that prompted it. */
+  retest_postponed: { day: number };
   // ── The weekly plan ──────────────────────────────────────────────────────
   /** A goal hit its target. The goal's name, never its measurement. */
   goal_reached: { goal: 'pain_free_mornings' | 'arch_hold' | 'calf_raises' | 'balance' | 'symmetry' };
@@ -82,6 +85,9 @@ export type AnalyticsEvents = {
   app_update_offered: { kind: AppUpdateKind };
   /** They tapped the sheet's primary button. */
   app_update_accepted: { kind: AppUpdateKind };
+  /** The launch after an accepted over-the-air restart is running a different
+   * update than the one it left. The funnel's last step: accepted → applied. */
+  app_update_applied: { kind: 'ota' };
 };
 
 export type AppUpdateKind = 'ota' | 'store';

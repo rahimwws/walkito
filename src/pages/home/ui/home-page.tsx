@@ -11,7 +11,9 @@ import {
   currentDay,
   milestoneFor,
   painOn,
+  planSessionDone,
   toDateKey,
+  todayKey,
   useStreak,
   weekAttendance,
 } from '@/entities/program';
@@ -234,7 +236,13 @@ export function HomePage() {
                 // rather than held — the check-in writes the log, and this
                 // component is already re-rendered by `useStreak` when it does.
                 todayPain: painOn(currentDay()),
-                doneToday: checkedIn,
+                // Today's session, not today's check-in. This was the check-in,
+                // so answering it switched the line to "done for today" before
+                // any work was done - and, once a test day's line learned to
+                // stop asking for tests that are done, it would have stopped
+                // asking the moment the question below was answered. The same
+                // answer Plan and the list underneath read.
+                doneToday: planSessionDone(todayKey()),
                 // The same figure the header shows. Two hand-written sevens is
                 // what this replaces: a streak that disagreed with itself
                 // between the capsule and the sentence directly under it.

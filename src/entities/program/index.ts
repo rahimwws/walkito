@@ -14,9 +14,7 @@ export {
   blockName,
   checkpoints,
   clearRetestRequest,
-  REST_HOURS,
   completedThrough,
-  nextSessionAt,
   programSummary,
   currentLevels,
   dateFor,
@@ -149,6 +147,7 @@ export {
   setProgramState,
   startProgram,
   toDateKey,
+  todayDayNumber,
   useLogsVersion,
   useProgramState,
   writeLog,
@@ -273,6 +272,7 @@ export {
 } from './model/plan/week';
 export {
   DEFAULT_SETTINGS,
+  abandonSession,
   beginSession,
   buildUpcomingWeek,
   ensureGoals,
@@ -289,6 +289,7 @@ export {
   planSessionDone,
   planWeekOf,
   planSettings,
+  postponeTest,
   rebuildRestOfWeek,
   recordSession,
   refreshGoals,
@@ -313,4 +314,14 @@ export {
   type SessionSource,
   type TodayHealth,
 } from './model/plan/store';
+export {
+  completePlanSession,
+  finishTestDay,
+  lastTestDayOutcome,
+  type CompletePlanSessionInput,
+  type FinishTestDayInput,
+  type TestDayOutcome,
+} from './model/plan/finish';
+export { NEXT_SESSION_HORIZON_DAYS, nextSession, useNextSession, type NextSession } from './model/plan/next-session';
+export { requestPlanPush } from './model/plan/push-request';
 export { BIG_MILESTONE, STREAK_MILESTONES, milestoneFor } from './model/streak';

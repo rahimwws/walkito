@@ -8,8 +8,8 @@ import * as Haptics from 'expo-haptics';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { after, type LiveActivity } from 'expo-widgets';
 import { ClockIcon } from 'phosphor-react-native/src/icons/Clock';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { AppState, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { AppState, Platform, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -26,6 +26,7 @@ import { saveSessionToHealth } from '@/entities/health';
 import {
   HEEL_RAISE_IDS,
   PLAN_BLOCKS,
+  abandonSession,
   beginSession,
   inSessionPain,
   noteInSessionPain,
@@ -55,8 +56,8 @@ import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../config/exercise-clips';
 import { mirroredFor } from '../model/mirror';
+import { CountInOverlay } from './count-in-overlay';
 import { SessionDoneSheet } from './session-done-sheet';
-import { RetestEntrySheet } from './retest-entry-sheet';
 import { SessionPainSheet } from './session-pain-sheet';
 import { clearResume, readResume, writeResume } from '../model/session-resume';
 import {
@@ -75,11 +76,14 @@ import { SessionTimerActivity, type SessionActivityProps } from './session-activ
  *
  * It used to be what every move got. The dose belongs to the program and the
  * program now has one, so this is the floor rather than the rule: a move with
- * no prescription at all — the three retest measurements, the barefoot habit —
- * still needs a number, and a minute is the number it has always had.
+ * no prescription at all — the barefoot habit — still needs a number, and a
+ * minute is the number it has always had.
  */
 const SECONDS_PER_MOVE = 60;
 
+/** The row the back arrow and the pain button sit in. Named because the
+ * count-in has to start exactly where it ends, so both stay pressable. */
+const HEADER_HEIGHT = 44;
 
 /** The demonstration is the screen. It takes as much width as the margins
  * allow, then gives way on short displays so the readout and the transport
@@ -144,29 +148,14 @@ function clock(seconds: number): string {
  * all three languages instead, which also survives a title that was computed
  * before a language change and handed over afterwards.
  *
- * A title with no entry — the three retest measurements, which are tests and
- * not exercises — still resolves to nothing, and every read below is written
- * to survive that.
- */
-
-/**
- * The three retest measurements, as catalogue keys.
+ * A title with no entry still resolves to nothing, and every read below is
+ * written to survive that.
  *
- * They are tests rather than exercises, so the program's own catalogue has no
- * entry for them and `exerciseByTitle` resolves them to nothing — which every
- * read below is already written to survive. The names still have to be read by
- * a person, so they are translated here, the same as any other label this
- * player draws.
- *
- * Held at module scope so the list a checkpoint day plays keeps its identity
- * across renders, like every other list here; resolving it is a `useMemo` on
- * the translator rather than work done on every frame of the countdown.
+ * The retest used to run through this player too, as three "moves" with no
+ * catalogue entry and a numbers sheet at the end. It has a flow of its own now
+ * — timers that fit a measurement, results that fit a test day — and this
+ * player is sessions only.
  */
-const RETEST_MOVE_KEYS = [
-  'widgets.retestCalfRaises',
-  'widgets.retestArchHold',
-  'widgets.retestBalance',
-] as const satisfies readonly Key[];
 
 /** What the counter line calls each part of a rep. One word each: it is read at
  * two metres by someone already moving, and it changes every three seconds. */
@@ -206,25 +195,6 @@ type MovePlan = {
   perSide: boolean;
 };
 
-/**
- * The demonstration for each retest measurement, in `RETEST_MOVE_KEYS` order.
- *
- * The tests had no footage, so the three moves that decide a person's levels
- * were the only ones in the app played over an empty card — exactly where a
- * misread instruction costs the most, because it corrupts the measurement. The
- * arch hold and the balance test are the same movements as two catalogue
- * exercises, and use their clips. The calf test is single-leg to failure, which
- * no catalogue clip shows, so it has footage of its own.
- */
-const RETEST_CLIPS: readonly string[] = ['retest_calf_raise', 'short_foot_double', 'single_leg_hold'];
-
-/**
- * How long each retest measurement runs, in seconds. A third of the flat
- * minute every move used to get: three minutes for three tests was mostly
- * standing and waiting for the clock.
- */
-const RETEST_SECONDS = 20;
-
 /** How often the countdown is re-read off the wall clock. Four times a second
  * is finer than the whole-second readout needs, and nothing on screen follows
  * the playhead continuously any more. */
@@ -235,9 +205,9 @@ const TICK_MS = 250;
  *
  * The dose comes from `prescriptionFor`, so a heel raise gets the block's own
  * sets and reps and walks back with the progression offset exactly as every
- * other surface that prints it does. Where there is no dose — the habit row,
- * the retest measurements — the move falls back to the flat minute it has
- * always had, because a made-up length would be worse than an honest default.
+ * other surface that prints it does. Where there is no dose — the habit row —
+ * the move falls back to the flat minute it has always had, because a made-up
+ * length would be worse than an honest default.
  */
 function planMove(title: string, blockIndex: number, progressionOffset: number): MovePlan {
   const exercise = exerciseByTitle(title);
@@ -326,6 +296,16 @@ export type SessionViewProps = {
   /** The last move ran out. Fires once, and not on the way back — leaving early
    * is not finishing. */
   onFinish?: () => void;
+  /**
+   * Ask "How hard was that?" in the closing sheet.
+   *
+   * Off unless the host asks, because the answer only means something for a
+   * session the plan is built from: it tunes the next sessions, and a single
+   * task off Home's list or a Quick routine has no next session for it to tune.
+   * Never asked after a session stopped on pain — that one already said how it
+   * went.
+   */
+  feedback?: boolean;
 };
 
 /**
@@ -423,9 +403,22 @@ const lockedStyles = StyleSheet.create({
   },
 });
 
-function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: SessionViewProps) {
+function SessionRun({
+  day,
+  onBack,
+  moves: override,
+  playlist,
+  cue,
+  onFinish,
+  feedback = false,
+}: SessionViewProps) {
   // A fresh record for this run: nothing the last session said carries over.
-  useState(() => beginSession());
+  const [sessionToken] = useState(() => beginSession());
+  // And nothing this run says outlives it. A host that records the session
+  // has done so by the time the player goes; one that did not — the back
+  // arrow, a task that did not finish Home's list, the relief moves — leaves
+  // notes the next record written would otherwise take as its own.
+  useEffect(() => () => abandonSession(sessionToken), [sessionToken]);
   // Left sore foot: the clips flipped to match. See `mirroredFor`.
   const mirrored = mirroredFor(useIntake()?.side);
   const scheme = useColorScheme();
@@ -457,15 +450,7 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
    * check just decided on. */
   const { progressionOffset } = useProgramState();
 
-  /** Memoised on the translator, which is itself memoised on the language — so
-   * the checkpoint list keeps one identity for the life of a session, which is
-   * what `advance` and the reaction keyed on it depend on. */
-  const retestMoves = useMemo(() => RETEST_MOVE_KEYS.map((key) => t(key)), [t]);
-
-  const moves = override ?? (day.checkpoint ? retestMoves : movesFor(day));
-  /** Running the day's own retest, rather than one task or a protocol. */
-  const measuring = day.checkpoint && override == null && playlist == null;
-  const [enteringRetest, setEnteringRetest] = useState(false);
+  const moves = override ?? movesFor(day);
 
   /**
    * The whole session, timed.
@@ -487,31 +472,18 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
         cadence: step.cadence ?? null,
         perSide: step.perSide === true,
       }))
-    : measuring
-      ? moves.map(() => ({
-          exercise: null,
-          seconds: RETEST_SECONDS,
-          cadence: null,
-          perSide: false,
-        }))
-      : moves.map((title) => planMove(title, day.block, progressionOffset));
+    : moves.map((title) => planMove(title, day.block, progressionOffset));
 
-  /**
-   * What this session is called for the purpose of coming back to it.
-   *
-   * A retest is never resumed: its numbers come from doing the tests in one go,
-   * and it is short enough now that starting over costs nothing.
-   */
-  const resumeId = measuring
-    ? null
-    : playlist != null
+  /** What this session is called for the purpose of coming back to it. */
+  const resumeId =
+    playlist != null
       ? `playlist:${playlist.map((step) => step.exerciseId).join(',')}`
       : override != null
         ? `moves:${day.day}:${override.join('|')}`
         : `day:${day.day}`;
   /** Read once, at mount. The player is keyed per run by its hosts, so this is
    * the place the run starts from, not something to follow afterwards. */
-  const [resume] = useState(() => (resumeId == null ? null : readResume(resumeId, plan.length)));
+  const [resume] = useState(() => readResume(resumeId, plan.length));
 
   /** When this player mounted, which is when the session began. A ref rather
    * than state: nothing renders from it, and it must survive every re-render
@@ -520,6 +492,38 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
 
   const [step, setStep] = useState(() => resume?.step ?? 0);
   const [playing, setPlaying] = useState(true);
+
+  /**
+   * The count-in: when the three-two-one in front of the current move began,
+   * or null once it has said go.
+   *
+   * Every move starts on one — the first, a resumed one, each one after, and
+   * the one picked up again after the pain question. The clock used to start on
+   * the press, and the press is made standing at the phone: the first seconds
+   * of every move were spent walking back to the wall to do it.
+   *
+   * Seeded at mount rather than set by an effect, so the first frame already
+   * holds the clock, the clip and the Lock Screen still. An effect would let
+   * the move run for a frame before being told not to.
+   */
+  const [countFrom, setCountFrom] = useState<number | null>(() => Date.now());
+  /** "Next up" rather than "Get ready": the count is the handover from one
+   * move to the next inside a sitting, not the start of one. */
+  const [countNext, setCountNext] = useState(false);
+  const counting = countFrom != null;
+  /**
+   * The move's clock is actually running: not paused for the pain question,
+   * not over, and not waiting on the count. Everything that moves with the
+   * session — the countdown, the clip, the Lock Screen — follows this rather
+   * than `playing`, so the count holds all three still in one place.
+   */
+  const running = playing && !counting;
+
+  /** Start a count now. */
+  const countIn = useCallback((next: boolean) => {
+    setCountNext(next);
+    setCountFrom(Date.now());
+  }, []);
   /**
    * Whole seconds into the current move.
    *
@@ -592,6 +596,8 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
    * is about the transport: the clock can be at zero while the sheet has been
    * dismissed, and re-showing it every render would trap the user behind it. */
   const [celebrating, setCelebrating] = useState(false);
+  /** The celebration has been closed, and the host told. See its `onClose`. */
+  const closedDone = useRef(false);
   const streak = useStreak();
 
   const [clipFailed, setClipFailed] = useState(false);
@@ -601,14 +607,21 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
    * and a renamed exercise quietly losing its demonstration is a bug that looks
    * like nothing at all. Null for the six moves that have no clip yet, which
    * the card below states rather than showing another exercise's video. */
-  const clip = clipFor(current?.exercise?.id ?? (measuring ? (RETEST_CLIPS[step] ?? '') : ''));
+  const clip = clipFor(current?.exercise?.id ?? '');
 
   const player = useVideoPlayer(clip, (instance) => {
     instance.loop = true;
     // Silent by design: the clip is a diagram that moves. Sound would take the
     // audio session from whatever the user is actually listening to.
     instance.muted = true;
-    instance.play();
+    // And said to the audio session as well as to the player. expo-video
+    // settles the session from every player that is playing, and the default
+    // mode on iOS does not mix — so a muted clip was still enough to stop the
+    // user's music, and enough to override the count-in's own sounds, which
+    // are set to mix. See `count-in-sound.ts`.
+    instance.audioMixingMode = 'mixWithOthers';
+    // Not played here: every session opens on the count-in, and the effect
+    // below starts the clip when it says go.
   });
 
   /**
@@ -665,10 +678,10 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
    * the phone warmed up during a session. The arithmetic is the same.
    */
   useEffect(() => {
-    if (!playing) {
+    if (!running) {
       // Invalidated on the way down. A deadline that sat still through a pause
-      // is a deadline in the past, and resuming on it would snap the move to
-      // zero.
+      // — or through a count-in — is a deadline in the past, and resuming on it
+      // would snap the move to zero.
       deadline.value = 0;
       return undefined;
     }
@@ -688,7 +701,7 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
     read();
     const id = setInterval(read, TICK_MS);
     return () => clearInterval(id);
-  }, [playing, deadline, moveMs, progress]);
+  }, [running, deadline, moveMs, progress]);
 
   /**
    * The drift on Home, held still for as long as a session is up. The player
@@ -716,18 +729,26 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
    * — so the loop held for the first demonstration and every one after it
    * played through once and froze on its last frame.
    *
-   * Cheap to repeat and safe to repeat: all three are idempotent, and keying
-   * the effect on the clip is what makes them run at the only moment they
-   * matter.
+   * Cheap to repeat and safe to repeat: all of it is idempotent, and keying
+   * the effect on the clip is what makes it run at the only moment it matters.
+   *
+   * Held on its first frame for the count-in. The demonstration begins with
+   * the move rather than three seconds into it, so the loop the user follows
+   * and the clock they are timed on start together.
    */
   useEffect(() => {
     player.loop = true;
     // Silent by design: the clip is a diagram that moves. Sound would take the
     // audio session from whatever the user is actually listening to.
     player.muted = true;
-    if (playing) player.play();
-    else player.pause();
-  }, [player, playing, clip]);
+    player.audioMixingMode = 'mixWithOthers';
+    if (running) {
+      player.play();
+      return;
+    }
+    player.pause();
+    if (counting) player.currentTime = 0;
+  }, [player, running, counting, clip]);
 
   /**
    * Whole seconds only. The playhead moves every frame; the readout must not,
@@ -900,9 +921,12 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
       // The loop starts over with the move it is illustrating, rather than
       // being picked up wherever the previous minute happened to leave it.
       player.currentTime = 0;
+      // And the move itself waits for three-two-one. Its tick is also the
+      // buzz that used to mark the change of move — one signal, not two.
+      countIn(true);
       return true;
     },
-    [player, progress, deadline, moveMs],
+    [player, progress, deadline, moveMs, countIn],
   );
 
   /**
@@ -922,6 +946,9 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
     progress.value = 1;
     deadline.value = 0;
     setPlaying(false);
+    // A count that was still running — a pain stop mid-count — has nothing
+    // left to count into.
+    setCountFrom(null);
     setFinished(true);
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
     // A countdown that reaches zero does not take itself off the Lock Screen —
@@ -944,11 +971,7 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
     // same reason: this is the only place that means the last move actually ran
     // out. Leaving by the arrow gets no confetti, which is correct — nothing
     // was finished.
-    // A retest run to the end goes to the numbers first — the tests were the
-    // point, and a celebration over nothing recorded is how the results used
-    // to vanish. A playlist or a single task is never a retest.
-    if (!early && measuring) setEnteringRetest(true);
-    else setCelebrating(true);
+    setCelebrating(true);
     void saveSessionToHealth({
       dayNumber: day.day,
       moves,
@@ -960,13 +983,12 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
     // it fires, and doing that at the instant the clock hits zero would take
     // the celebration off screen before it was drawn. The sheet calls it on the
     // way out instead.
-  }, [progress, deadline, endActivity, activitySnapshot, day, moves, measuring, resumeId]);
+  }, [progress, deadline, endActivity, activitySnapshot, day, moves, resumeId]);
 
+  /** On to the next move, or the end. No haptic of its own: the count-in's
+   * first tick lands on the same instant and says the same thing. */
   const advance = useCallback(() => {
-    if (goTo(step + 1)) {
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
-      return;
-    }
+    if (goTo(step + 1)) return;
     complete(false);
   }, [goTo, step, complete]);
 
@@ -978,6 +1000,19 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
   const [carryOn, setCarryOn] = useState(false);
   const wasPlaying = useRef(false);
 
+  /**
+   * Back to the move after the pain question, through a fresh count.
+   *
+   * "Get ready" rather than "Next up" — it is the same move — and a count at
+   * all because the answer was given with the phone in hand: the three seconds
+   * are what it takes to put it down and find the position again.
+   */
+  const resumeAfterPain = useCallback(() => {
+    if (!wasPlaying.current) return;
+    countIn(false);
+    setPlaying(true);
+  }, [countIn]);
+
   const reportPain = useCallback(
     (score: number) => {
       setAskingPain(false);
@@ -987,7 +1022,7 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
       if (!outcome.stop) {
         // Discomfort is allowed to be part of this. Back to where they were.
         setCarryOn(true);
-        if (wasPlaying.current) setPlaying(true);
+        resumeAfterPain();
         return;
       }
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
@@ -996,7 +1031,7 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
       writeLog(day.day, { sessionEndedEarly: true });
       complete(true);
     },
-    [progressionOffset, day.day, complete],
+    [progressionOffset, day.day, complete, resumeAfterPain],
   );
 
   /**
@@ -1056,6 +1091,8 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
     // Left running, a muted loop and a frame callback would keep burning
     // through a screen nobody is looking at.
     setPlaying(false);
+    // Nor should a count still going tick at a screen that is sliding away.
+    setCountFrom(null);
     // Immediately, not on the default policy: walking out of a session is the
     // one case where a countdown left on the Lock Screen would be counting
     // toward something the user has already abandoned. This view stays mounted
@@ -1071,13 +1108,19 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
    * "Start" is a fresh mount and every activity belongs to exactly one session.
    */
   useEffect(() => {
+    // Live Activities are an iOS feature; Android has no Lock Screen countdown.
+    if (Platform.OS !== 'ios') return;
     // The Lock Screen outlives the process. A crash or a force-quit mid-session
     // leaves a countdown running against a session that no longer exists, so
     // the first thing a new one does is clear the field.
     for (const orphan of SessionTimerActivity.getInstances()) orphan.end('immediate');
 
     try {
-      activity.current = SessionTimerActivity.start(activitySnapshot(false));
+      // Paused: every session opens on the count-in, and a Lock Screen that
+      // started counting down a move that has not begun would be three seconds
+      // ahead of the phone for the rest of it. Go un-pauses it, through the
+      // update below.
+      activity.current = SessionTimerActivity.start(activitySnapshot(true));
       setOnLockScreen(true);
     } catch (error) {
       // Turned off for this app in Settings, or the device is already at its
@@ -1103,14 +1146,15 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
   /**
    * Pause, resume, and the change of move.
    *
-   * Three updates for a whole session, because the seconds are not pushed —
-   * `timerInterval` is drawn from a pair of dates by the render server, so the
-   * only things worth sending are the facts that change which dates apply.
+   * A handful of updates for a whole session, because the seconds are not
+   * pushed — `timerInterval` is drawn from a pair of dates by the render
+   * server, so the only things worth sending are the facts that change which
+   * dates apply. The count-in is one of them: held, then released on go.
    */
   useEffect(() => {
     if (activity.current == null) return;
-    activity.current.update(activitySnapshot(!playing));
-  }, [step, playing, activitySnapshot]);
+    activity.current.update(activitySnapshot(!running));
+  }, [step, running, activitySnapshot]);
 
   const setOpen = useCallback(
     (next: boolean) => {
@@ -1393,6 +1437,9 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
                 Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
                 wasPlaying.current = playing;
                 setPlaying(false);
+                // A count under way is dropped, not paused: the move is picked
+                // up again through a fresh one when the question is answered.
+                setCountFrom(null);
                 setCarryOn(false);
                 setAskingPain(true);
               }}
@@ -1588,29 +1635,24 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
         {ctaButton}
       </Animated.View>
 
-      {/* Mounted only when it is needed, so its counters open on the latest
-          stored retest rather than on whatever was known at mount. */}
-      {enteringRetest && (
-        <RetestEntrySheet
-          dayNumber={day.day}
-          // The result screen is the end of a retest. It used to hand over to
-          // the session celebration, and closing that still left the finished
-          // player on screen — straight back to where the tests were started
-          // from instead.
-          onDone={() => {
-            setEnteringRetest(false);
-            if (onFinish != null) onFinish();
-            else onBack();
-          }}
-        />
-      )}
+      {/* Over everything the move is made of — the card, the readout, the
+          button — and under the header, so Back and the pain button stay
+          where they always are. Expanded there is no header to keep clear:
+          the card runs to the top and the count covers it all. */}
+      <CountInOverlay
+        from={finished ? null : countFrom}
+        eyebrow={countNext ? t('player.countIn.nextUp') : t('player.countIn.getReady')}
+        title={move ?? ''}
+        top={expanded ? 0 : HEADER_HEIGHT}
+        onDone={() => setCountFrom(null)}
+      />
 
       <SessionPainSheet
         visible={askingPain}
         onPick={reportPain}
         onCancel={() => {
           setAskingPain(false);
-          if (wasPlaying.current) setPlaying(true);
+          resumeAfterPain();
         }}
       />
 
@@ -1619,7 +1661,15 @@ function SessionRun({ day, onBack, moves: override, playlist, cue, onFinish }: S
         early={endedEarly}
         streak={streak.current}
         moves={moveCount}
+        feedback={feedback}
+        startedAt={startedAt.current.getTime()}
         onClose={() => {
+          // Once. The sheet takes a moment to fade and stays pressable while
+          // it does, so Done — or the scrim behind it — can land twice, and
+          // each landing used to finish the session again: two records, two
+          // rows on the server, one answer counted twice.
+          if (closedDone.current) return;
+          closedDone.current = true;
           setCelebrating(false);
           // A host with nothing to do on finishing still has to be left: the
           // pain check's relief session passed no `onFinish`, and closing its
@@ -1644,7 +1694,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    height: 44,
+    height: HEADER_HEIGHT,
     justifyContent: 'center',
     paddingHorizontal: CARD_MARGIN,
   },

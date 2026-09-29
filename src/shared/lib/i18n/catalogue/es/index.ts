@@ -10,7 +10,10 @@ import { PAGES_ES } from './pages';
 import { PROFILE_ES } from './profile';
 import { PROGRESS_ES } from './progress';
 import { QUICK_ES } from './quick';
+import { PLAYER_ES } from './player';
+import { TESTDAY_ES } from './testday';
 import { WIDGET_ES } from './widget';
+import { UPDATE_ES } from './update';
 
 /**
  * Assembled from its domain files, then checked against English as a whole.
@@ -32,4 +35,7 @@ export const es: CatalogueFor<'es'> = {
   ...EXERCISES_ES,
   ...PAGES_ES,
   ...WIDGET_ES,
+  ...PLAYER_ES,
+  ...TESTDAY_ES,
+  ...UPDATE_ES,
 };

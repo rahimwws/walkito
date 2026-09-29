@@ -1,6 +1,6 @@
 import ArrowLeft02Icon from '@hugeicons/core-free-icons/ArrowLeft02Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, {
   runOnJS,
@@ -18,6 +18,7 @@ import { useRouter } from 'expo-router';
 import {
   addDays,
   clearRetestRequest,
+  completePlanSession,
   exerciseById,
   currentDay,
   doseLabel,
@@ -28,16 +29,16 @@ import {
   planDayOn,
   planSessionDone,
   planSettings,
-  rebuildRestOfWeek,
-  recordSession,
-  refreshGoals,
   RETEST_MINUTES,
   RETEST_TESTS,
+  todayDayNumber,
   todayKey,
   todayPlan,
   twoMinuteVersion,
   useLogsVersion,
+  useNextSession,
   usePlanVersion,
+  useRetest,
   useRetestRequest,
   useStreak,
   weekPlan,
@@ -51,11 +52,11 @@ import { useHealthSignals } from '@/entities/health';
 import { protocolById, recommendProtocol, requestProtocol } from '@/entities/protocols';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
-import { useProgram } from '@/shared/lib/program';
+import { PROGRAM_MS, useProgram } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
 import { StreakCapsule } from '@/shared/ui/header-actions';
 
-import { SessionView, type PlaylistStep } from '@/widgets/session-player';
+import { SessionView, TestDayFlow, type PlaylistStep } from '@/widgets/session-player';
 
 import { kindName, outcomeView, rationaleLine, todayTitle, todayVariant } from '../model/plan-view';
 import { asProgramDay, playlistOf } from '../model/week-view';
@@ -90,16 +91,25 @@ const PARALLAX = 0.3;
  */
 export const PROGRAM_HEADER_HEIGHT = 58;
 
-/** What the session pane is running. */
-type Running = {
-  day: ProgramDay;
-  date: string;
-  source: 'plan' | 'test';
-  /** Null for a test, which the player runs as its own measurement. */
-  playlist: PlaylistStep[] | null;
-  exerciseIds: string[];
-  minutes: number;
-};
+/**
+ * What the session pane is running: a planned session in the player, or the
+ * test day in its own flow — taken, or opened again read-only for its results.
+ *
+ * Two shapes because they finish two ways. A session ends in
+ * `completePlanSession`, which this page calls; a test day ends in
+ * `finishTestDay`, which the flow calls itself, since only it holds the
+ * numbers.
+ */
+type Running =
+  | {
+      kind: 'session';
+      day: ProgramDay;
+      date: string;
+      playlist: PlaylistStep[];
+      exerciseIds: string[];
+      minutes: number;
+    }
+  | { kind: 'test'; review: boolean };
 
 /** The colour a goal's bar wears: the colour of the work that moves it. */
 const GOAL_ACCENT: Readonly<Record<GoalType, AccentName>> = {
@@ -160,6 +170,17 @@ export function ProgramPage() {
   );
   const doneToday = planSessionDone(today);
   const variant = todayVariant(adjusted, doneToday);
+  /**
+   * When the next session opens — the one answer the dock and Home read too.
+   *
+   * Subscribed here, on the page, and not only in the button that counts down
+   * to it: the hook wakes at midnight, and midnight is when "today" itself
+   * moves on. Without it the page sat on yesterday's finished card, whose
+   * Start would have started yesterday's session.
+   */
+  const nextUp = useNextSession();
+  /** Today's test results are on file — what "See results" reopens. */
+  const tested = useRetest(todayDayNumber(now)) != null;
 
   const [session, setSession] = useState<Running | null>(null);
   const [run, setRun] = useState(0);
@@ -171,8 +192,12 @@ export function ProgramPage() {
     return new Intl.DateTimeFormat(language, { weekday: style }).format(new Date(y, m - 1, d));
   };
 
+  /** When the last session or test was started — see `dropHidden`. */
+  const startedAt = useRef(0);
+
   const start = useCallback(
     (running: Running) => {
+      startedAt.current = Date.now();
       setSession(running);
       setRun((n) => n + 1);
       program?.openDetail();
@@ -183,14 +208,14 @@ export function ProgramPage() {
   const startToday = useCallback(
     (short = false) => {
       if (adjusted.type === 'test') {
-        start({ day: asProgramDay(adjusted), date: today, source: 'test', playlist: null, exerciseIds: [], minutes: RETEST_MINUTES });
+        start({ kind: 'test', review: false });
         return;
       }
       const planned = short ? twoMinuteVersion(adjusted) : adjusted;
       start({
+        kind: 'session',
         day: asProgramDay(planned),
         date: today,
-        source: 'plan',
         playlist: playlistOf(planned.exercises),
         exerciseIds: planned.exercises.map((e) => e.id),
         minutes: planned.minutes,
@@ -199,13 +224,15 @@ export function ProgramPage() {
     [adjusted, start, today],
   );
 
-  /** A retest asked for from the day page: today's test, if today has one. */
+  /** A retest asked for from the day page: today's test, if today has one and
+   * it has not been taken — a second run would file a second set of numbers
+   * over the first. */
   const requested = useRetestRequest();
   useEffect(() => {
     if (requested == null) return;
     clearRetestRequest();
-    if (adjusted.type === 'test') startToday();
-  }, [requested, adjusted.type, startToday]);
+    if (adjusted.type === 'test' && !doneToday) startToday();
+  }, [requested, adjusted.type, doneToday, startToday]);
 
   const onScroll = useAnimatedScrollHandler((event) => {
     if (program != null) program.scrollTop.value = event.contentOffset.y;
@@ -221,6 +248,45 @@ export function ProgramPage() {
     },
   );
 
+  /**
+   * Whatever the pane holds leaves when the pane does — a session or a test.
+   *
+   * Both stop their own clips and clocks when they are left through their own
+   * way out (the player's back arrow, the flow's `onClose`), but the pane can
+   * close without asking them: Android's back button closes it straight from
+   * the provider, and closing the plan zeroes the detail axis outright. Left
+   * mounted there, the test clock ran on behind a closed sheet, and a session
+   * kept playing: its clock, its clip, and at every change of move a count-in
+   * ticking and buzzing from a screen nobody could see, saving each new move
+   * as the place to resume from. Unmounted, the player saves where it really
+   * stopped and ends its Lock Screen activity on the way out.
+   *
+   * Dropped once the pane is fully out rather than as it starts to move, so the
+   * slide never shows it blank. Nothing is lost by it — a session is recorded
+   * by its own finish and resumes from where it was left, a test saves only
+   * when its last figure is confirmed, and every opening mounts a fresh one.
+   * Not in the moment after a start, when the pane may be on its way in
+   * rather than gone — a start can land just as the last close reaches the
+   * bottom. Then it looks again once the pane has had time to arrive.
+   */
+  const dropHidden = useCallback(() => {
+    const wait = startedAt.current + PROGRAM_MS - Date.now();
+    if (wait <= 0) {
+      setSession(null);
+      return;
+    }
+    setTimeout(() => {
+      if ((program?.detail.value ?? 0) < 0.01) setSession(null);
+    }, wait);
+  }, [program]);
+  useAnimatedReaction(
+    () => (program?.detail.value ?? 0) < 0.01,
+    (gone, was) => {
+      if (!gone || was !== false) return;
+      runOnJS(dropHidden)();
+    },
+  );
+
   const listPane = useAnimatedStyle(() => ({
     transform: [{ translateX: -(program?.detail.value ?? 0) * width * PARALLAX }],
   }));
@@ -229,7 +295,9 @@ export function ProgramPage() {
   }));
 
   // ── What the screen says ─────────────────────────────────────────────────
-  const testToday = plan.days.some((day) => day.date === today && day.type === 'test');
+  // A test still to take. Once it is done the goal card goes back to the goal
+  // itself — "Test today" over a test already saved read as one not started.
+  const testToday = !doneToday && plan.days.some((day) => day.date === today && day.type === 'test');
   const outcome = readOutcome();
   const goal = outcome != null ? outcomeView(t, outcome, goals, plan.focus, testToday) : null;
   const goalTone = accents[scheme][GOAL_ACCENT[goal?.current ?? plan.focus ?? 'calf_raises']];
@@ -239,13 +307,21 @@ export function ProgramPage() {
 
   const title = todayTitle(t, adjusted, plan.focus, variant);
   const tomorrowDay = planDayOn(addDays(today, 1));
+  // Tomorrow when there is work tomorrow. When there is not, "Tomorrow is a
+  // rest day" answered a question nobody asked and left the one they did — so
+  // when do I train next? — to be worked out from the list below.
   const tomorrow =
-    tomorrowDay == null || tomorrowDay.type === 'rest'
-      ? t('pages.plan.tomorrowRest')
-      : t('pages.plan.tomorrow', {
+    tomorrowDay != null && tomorrowDay.type !== 'rest'
+      ? t('pages.plan.tomorrow', {
           kind: kindName(t, tomorrowDay.type).toLocaleLowerCase(language),
           minutes: t('session.minutes', { count: tomorrowDay.minutes }),
-        });
+        })
+      : nextUp != null
+        ? t('pages.plan.nextSessionOn', {
+            day: weekday(nextUp.date, 'long'),
+            kind: kindName(t, nextUp.day.type).toLocaleLowerCase(language),
+          })
+        : t('pages.plan.tomorrowRest');
 
   const routine = protocolById(
     recommendProtocol(
@@ -335,6 +411,10 @@ export function ProgramPage() {
               body: t('pages.plan.testBody', { count: RETEST_TESTS, minutes: RETEST_MINUTES }),
             }}
             tomorrow={tomorrow}
+            nextAt={nextUp?.at ?? null}
+            onResults={
+              doneToday && adjusted.type === 'test' && tested ? () => start({ kind: 'test', review: true }) : undefined
+            }
             restRoutine={{
               label: t(routine.titleKey),
               onPress: () => {
@@ -387,7 +467,9 @@ export function ProgramPage() {
               <PlanChip
                 label={t('pages.plan.seeNextGoal')}
                 tone={accents[scheme].violet}
-                onPress={() => scrollTo(listRef, 0, 0, true)}
+                // The ref's own instance, not Reanimated's worklet `scrollTo`,
+                // which does nothing when called from a press on the JS thread.
+                onPress={() => listRef.current?.scrollTo({ y: 0, animated: true })}
               />
             </View>
           )}
@@ -417,29 +499,51 @@ export function ProgramPage() {
 
       <ExerciseSheet exerciseId={preview} onClose={() => setPreview(null)} />
 
-      <Animated.View style={[styles.pane, { backgroundColor: colors.background, paddingTop: insets.top }, sessionPane]}>
-        {session != null && (
+      {/* The player sits under the status bar on the pane's inset; the test
+          day keeps its own insets and paints its own page, so it gets the
+          pane bare. */}
+      <Animated.View
+        style={[
+          styles.pane,
+          { backgroundColor: colors.background, paddingTop: session?.kind === 'test' ? 0 : insets.top },
+          sessionPane,
+        ]}>
+        {session?.kind === 'session' && (
           <SessionView
             key={run}
             day={session.day}
-            playlist={session.playlist ?? undefined}
+            playlist={session.playlist}
+            // A plan session is what the next ones are tuned from, so it is
+            // the one that asks how it went.
+            feedback
             onBack={() => program?.closeDetail()}
             onFinish={() => {
-              recordSession({
+              // The one way a plan session ends: the session list, the day
+              // log and the sync, together. It never re-plans today — this
+              // page used to rebuild the week here, and that is what turned a
+              // finished test into "Recovery · Done".
+              completePlanSession({
                 date: session.date,
-                source: session.source,
+                source: 'plan',
                 minutes: session.minutes,
-                exercises: session.exerciseIds.map((id) => ({ id, status: 'done' as const })),
-                feedback: null,
-                inSessionPain: null,
-                completedAt: Date.now(),
+                exerciseIds: session.exerciseIds,
               });
-              if (session.source === 'test') {
-                refreshGoals();
-                rebuildRestOfWeek();
-              }
               program?.closeDetail();
             }}
+          />
+        )}
+        {session?.kind === 'test' && (
+          // The flow finishes the test day itself (`finishTestDay`) and paints
+          // its own page, so the pane only has to hold it.
+          <TestDayFlow
+            key={run}
+            review={session.review}
+            onClose={() => program?.closeDetail()}
+            // Back to the top underneath, where the goal card now carries the
+            // new numbers — the first thing to see on the way out. Through the
+            // ref's own instance: Reanimated's `scrollTo` is a worklet, and
+            // called from a JS callback like this one it silently does nothing.
+            onSaved={() => listRef.current?.scrollTo({ y: 0, animated: false })}
           />
         )}
       </Animated.View>

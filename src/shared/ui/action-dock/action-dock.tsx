@@ -1,5 +1,6 @@
+import WorkoutRunIcon from '@hugeicons/core-free-icons/WorkoutRunIcon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import { PersonSimpleRunIcon } from 'phosphor-react-native/src/icons/PersonSimpleRun';
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, { interpolate, useAnimatedStyle } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -58,6 +59,11 @@ export const DOCK_BOTTOM_COLOUR = '#6D4AEF';
 const GLYPH = accents.dark.amber.fill;
 
 export type ActionDockProps = {
+  /**
+   * What the slab says. Defaults to starting a workout; the app layer swaps in
+   * the wait until the next session once today's is done — the slab still
+   * opens the plan either way.
+   */
   label?: string;
 };
 
@@ -130,12 +136,17 @@ export function ActionDock({ label }: ActionDockProps) {
           program?.toggle();
         }}
         style={styles.press}>
-        {/* A runner, because the label starts one. Solid rather than
-            outlined: at this size a stroked figure on a saturated ground reads
-            as a smudge, and the fill is what lets the warm colour register at
-            all. */}
-        <PersonSimpleRunIcon size={20} color={GLYPH} weight="fill" />
-        <Text style={styles.label}>{text}</Text>
+        {/* A runner, because the label starts one. Stroked heavy: the set
+            has no solid figures, and at 1.5 a thin outline on a saturated
+            ground reads as a smudge — the weight is what lets the warm colour
+            register at all. */}
+        <HugeiconsIcon icon={WorkoutRunIcon} size={20} color={GLYPH} strokeWidth={2.4} />
+        {/* One line, shrinking a little rather than wrapping: "Следующее
+            занятие через 12 ч 30 мин" is most of a narrow phone's width, and a
+            second line would not fit the slab. */}
+        <Text style={styles.label} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.8}>
+          {text}
+        </Text>
       </Pressable>
     </Animated.View>
   );
@@ -166,8 +177,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 9,
+    // Room at the edges for a long label to shrink into rather than run off.
+    paddingHorizontal: 24,
   },
   label: {
+    flexShrink: 1,
     fontSize: 18,
     fontFamily: fonts.semibold,
     letterSpacing: -0.2,

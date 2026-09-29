@@ -8,7 +8,10 @@ import { PAGES_EN } from './pages';
 import { PROFILE_EN } from './profile';
 import { PROGRESS_EN } from './progress';
 import { QUICK_EN } from './quick';
+import { PLAYER_EN } from './player';
+import { TESTDAY_EN } from './testday';
 import { WIDGET_EN } from './widget';
+import { UPDATE_EN } from './update';
 
 /**
  * English, assembled from its domain files.
@@ -34,4 +37,7 @@ export const en = {
   ...EXERCISES_EN,
   ...PAGES_EN,
   ...WIDGET_EN,
+  ...PLAYER_EN,
+  ...TESTDAY_EN,
+  ...UPDATE_EN,
 };

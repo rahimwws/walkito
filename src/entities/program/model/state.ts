@@ -18,6 +18,7 @@ import { kv } from '@/shared/lib/storage';
 
 import { blockFor, lastDayOf, type PlanLength } from './blocks';
 import { kindFor } from './day-templates';
+import { requestPlanPush } from './plan/push-request';
 
 /** The program's own phase. Maintenance is not the end; it is the second half. */
 export type ProgramPhase = 'program' | 'maintenance';
@@ -337,6 +338,19 @@ export function currentDay(now: number = Date.now(), from: ProgramState = state)
   return dayNumberFor(from, toDateKey(new Date(now)));
 }
 
+/**
+ * The day number the day log and the retest record file today under.
+ *
+ * `currentDay`, never below 1: the log and the retest table are keyed from day
+ * 1, and a date before the start — which only a start date restored from
+ * another device could produce — has nowhere else to go. The Plan tab maps its
+ * days the same way, so a session finished from either screen lands on the
+ * same entry.
+ */
+export function todayDayNumber(now: number = Date.now()): number {
+  return Math.max(1, currentDay(now));
+}
+
 /** Whether the plan has run past its last block, whatever the stored phase says. */
 export function pastPlanEnd(dayNumber: number, from: ProgramState = state): boolean {
   return dayNumber > lastDayOf(from.planLength);
@@ -487,7 +501,7 @@ export function logPain(
   // score or the zones — see the note at the top of `shared/lib/analytics`.
   track('checkin_logged', { day: dayNumber, entries_today: entries.length });
 
-  return writeLog(
+  const log = writeLog(
     dayNumber,
     {
       painEntries: entries,
@@ -498,6 +512,11 @@ export function logPain(
     },
     now,
   );
+  // Straight up rather than after the debounce: a check-in answered from the
+  // widget or just before the phone is locked is otherwise the one write that
+  // never reaches the server that day.
+  requestPlanPush();
+  return log;
 }
 
 // Derived history

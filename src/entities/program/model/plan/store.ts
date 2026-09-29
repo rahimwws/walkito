@@ -21,6 +21,7 @@ import {
   type StartingFacts,
 } from './goals';
 import { goalsForOutcome, outcomeFor, withAreas, withKind, type Outcome, type OutcomeFacts, type OutcomeKind } from './outcome';
+import { requestPlanPush } from './push-request';
 import { adjustToday, IN_SESSION_STOP, STEP_DOWN_SESSIONS, type AdjustedDay, type TodaySignals } from './today';
 import {
   addDays,
@@ -190,16 +191,46 @@ export type SessionRecord = {
  * What the player learned during the session that is ending: how it felt and
  * the highest pain reported mid-way. Held here until the host records the
  * session, because the player asks both before the host hears it finished.
+ *
+ * `token` says which session it belongs to, so the one that began it — and
+ * only that one — can throw it away again. See `abandonSession`.
  */
-let pending: { feedback: SessionRecord['feedback']; inSessionPain: number | null; startedAt: number | null } = {
-  feedback: null,
-  inSessionPain: null,
-  startedAt: null,
+type Pending = {
+  feedback: SessionRecord['feedback'];
+  inSessionPain: number | null;
+  startedAt: number | null;
+  token: number;
 };
 
-/** Called as a session starts, so nothing from the last one leaks in. */
-export function beginSession(now: number = Date.now()): void {
-  pending = { feedback: null, inSessionPain: null, startedAt: now };
+const NOTHING_PENDING: Pending = { feedback: null, inSessionPain: null, startedAt: null, token: 0 };
+
+let pending: Pending = NOTHING_PENDING;
+let lastToken = 0;
+
+/**
+ * Called as a session starts, so nothing from the last one leaks in. Returns
+ * the session's token, for `abandonSession`.
+ */
+export function beginSession(now: number = Date.now()): number {
+  lastToken += 1;
+  pending = { feedback: null, inSessionPain: null, startedAt: now, token: lastToken };
+  return lastToken;
+}
+
+/**
+ * A session that ended without being recorded — left by the back arrow, a
+ * single task off Home's list that did not finish the day, the pain check's
+ * relief moves. What it noted is dropped here, or the next record written
+ * would pick it up: a test day saved with a pain score from a player closed an
+ * hour earlier, a start time the reminder then learned from, and a step back
+ * nobody asked for.
+ *
+ * Only while it is still that session's: a newer one may already have begun —
+ * a player remounted for the next start renders, and so begins, before the old
+ * one is torn down.
+ */
+export function abandonSession(token: number): void {
+  if (pending.token === token) pending = NOTHING_PENDING;
 }
 
 export function noteSessionFeedback(feedback: 'easy' | 'ok' | 'hard'): void {
@@ -231,22 +262,30 @@ export function recordSession(record: Omit<SessionRecord, 'id'>): SessionRecord 
     startedAt: record.startedAt ?? pending.startedAt ?? record.completedAt - record.minutes * 60_000,
     id: `${record.date}-${record.source}-${record.completedAt}`,
   };
-  pending = { feedback: null, inSessionPain: null, startedAt: null };
+  pending = NOTHING_PENDING;
   record = saved;
   write(SESSIONS_KEY, [...sessions(), saved].slice(-400));
 
   const day = dayNumberFor(programState(), record.date);
+  // The day's own midnight, so an entry this creates is dated the day the
+  // session belongs to — not the day it was saved on, which differs for a
+  // session started before midnight and finished after it.
+  const dayAt = fromDateKey(record.date).getTime();
   if (day >= 1) {
     if (record.source === 'library' || record.source === 'quick') {
-      writeLog(day, { libraryDone: true });
+      writeLog(day, { libraryDone: true }, dayAt);
       track('library_routine_completed', { routine: record.routineId ?? 'unknown' });
     } else {
-      writeLog(day, {
-        sessionCompleted: true,
-        completedAt: record.completedAt,
-        exercisesDone: record.exercises.filter((e) => e.status === 'done').map((e) => e.id),
-        ...(record.inSessionPain != null && record.inSessionPain >= IN_SESSION_STOP ? { sessionEndedEarly: true } : {}),
-      });
+      writeLog(
+        day,
+        {
+          sessionCompleted: true,
+          completedAt: record.completedAt,
+          exercisesDone: record.exercises.filter((e) => e.status === 'done').map((e) => e.id),
+          ...(record.inSessionPain != null && record.inSessionPain >= IN_SESSION_STOP ? { sessionEndedEarly: true } : {}),
+        },
+        dayAt,
+      );
     }
   }
   if (record.inSessionPain != null && record.inSessionPain >= IN_SESSION_STOP) {
@@ -425,7 +464,7 @@ export function setOutcomeKind(kind: OutcomeKind, now: number = Date.now()): voi
 }
 
 /** The latest test, read as goal measurements. */
-function measurementsFrom(result: RetestResult | undefined): Partial<Record<GoalType, number>> {
+export function measurementsFrom(result: RetestResult | undefined): Partial<Record<GoalType, number>> {
   if (result == null) return {};
   return {
     arch_hold: result.arch.left,
@@ -500,6 +539,44 @@ export function testDue(): string {
   const lastDate = addDays(start, lastDay - 1);
   const anyReached = goals().some((g) => g.status !== 'active');
   return addDays(lastDate, anyReached ? TEST_EVERY_DAYS_AFTER_GOAL : TEST_EVERY_DAYS);
+}
+
+/** The day a test was put off to — "Test tomorrow" on the test's intro. */
+const TEST_NOT_BEFORE_KEY = 'plan/test-not-before';
+
+/**
+ * The first day a due test may go on, seen from `today`.
+ *
+ * Today, unless its session is done — a finished day is history, and a test
+ * planned onto it would never be offered — or unless the test was put off past
+ * it. Only a lower bound: once the day it names has come, it says nothing, so
+ * it is never cleared.
+ */
+function testFromOn(today: string): string {
+  const from = planSessionDone(today) ? addDays(today, 1) : today;
+  const putOff = kv.getString(TEST_NOT_BEFORE_KEY);
+  return putOff != null && putOff > from ? putOff : from;
+}
+
+/**
+ * "Test tomorrow": today's test moves to tomorrow, and today becomes the day
+ * the week's shape had there — adjusted, as every day is, to the morning's
+ * check-in.
+ *
+ * The button used to only close the test. The stored week kept the test on
+ * today, so tomorrow opened on tomorrow's own session and the test came back
+ * whenever the week next happened to be rebuilt — for the first test, a week
+ * with no starting numbers. Recorded as a day rather than a flag, so every
+ * rebuild after it, this week's or next week's, places the test the same way.
+ */
+export function postponeTest(now: number = Date.now()): string {
+  const today = toDateKey(new Date(now));
+  const tomorrow = addDays(today, 1);
+  kv.set(TEST_NOT_BEFORE_KEY, tomorrow);
+  track('retest_postponed', { day: dayNumberFor(programState(), today) });
+  rebuildRestOfWeek(now);
+  requestPlanPush();
+  return tomorrow;
 }
 
 // ── Weeks ────────────────────────────────────────────────────────────────────
@@ -580,11 +657,26 @@ function build(weekStart: string, now: number, keepBefore?: string): WeekPlan {
     previousFocus: previous?.focus ?? null,
     seenBefore: seen,
     testDue: testDue(),
+    testFrom: testFromOn(today),
   });
   if (keepBefore != null && store[weekStart] != null) {
-    // A rebuild mid-week keeps the days already lived.
+    // A rebuild mid-week keeps the days already lived — and the day it starts
+    // on too, once that day's session is done.
+    //
+    // The second half is the retest bug. Finishing a test moves `testDue` a
+    // fortnight on, so a rebuild straight after it found no test due today and
+    // planned today's slot as a strength day; the adjusted view then read it as
+    // recovery, and Plan said "Recovery · Done" while Home, looking for a test,
+    // found none. A finished day is history like any other, and every rebuild —
+    // settings, "can't do this", a new big goal — goes through here.
     const old = store[weekStart];
-    plan.days = plan.days.map((day, i) => (day.date < keepBefore ? old.days[i] : day));
+    plan.days = plan.days.map((day) => {
+      const was = old.days.find((candidate) => candidate.date === day.date);
+      if (was == null) return day;
+      const lived = day.date < keepBefore;
+      const finished = day.date === keepBefore && planSessionDone(day.date);
+      return lived || finished ? was : day;
+    });
     plan.levels = old.levels;
   }
   return plan;
@@ -601,10 +693,48 @@ export function weekPlan(now: number = Date.now()): WeekPlan {
   const start = weekStartOf(toDateKey(new Date(now)));
   const store = weeks();
   const existing = store[start];
-  if (existing != null) return existing;
+  if (existing != null) return withDueTest(existing, now);
   refreshGoals(now);
   const plan = build(start, now);
   write(WEEKS_KEY, { ...weeks(), [start]: plan });
+  return plan;
+}
+
+/** The last day-and-due-date a re-plan was tried for. See `withDueTest`. */
+let replanTried: string | null = null;
+
+/**
+ * This week as stored — unless a test is due and the stored week has lost it.
+ *
+ * A stored week is not rebuilt when a day passes, so a test day that went by
+ * untaken (or was put off with "Test tomorrow") left the week with no test in
+ * it: tomorrow opened on its own session and the test came back only when
+ * something else rebuilt the week, or next Monday. For the first test that was
+ * a week planned from no numbers at all. So when a test is due by the end of
+ * this week and no day from today on holds one, the rest of the week is planned
+ * again, which puts the test on the first day it may go (`testFromOn`) — the
+ * same place a week built today would put it. The days already lived keep what
+ * they were, the missed test among them.
+ *
+ * Cheap on the common path, which is every call: most weeks either hold a test
+ * ahead or have none due, and both are answered before any rebuild. A rebuild
+ * that still found no day for the test is not tried again for the same inputs;
+ * it cannot happen as the builder stands, but a rebuild on every read would be
+ * a render loop.
+ */
+function withDueTest(stored: WeekPlan, now: number): WeekPlan {
+  const today = toDateKey(new Date(now));
+  if (stored.days.some((day) => day.type === 'test' && day.date >= today)) return stored;
+  const due = testDue();
+  const weekEnd = addDays(stored.weekStart, 6);
+  if (due > weekEnd) return stored;
+  const from = testFromOn(today);
+  if (from > weekEnd) return stored;
+  const attempt = `${stored.weekStart}|${today}|${due}|${from}`;
+  if (replanTried === attempt) return stored;
+  replanTried = attempt;
+  const plan = build(stored.weekStart, now, today);
+  write(WEEKS_KEY, { ...weeks(), [stored.weekStart]: plan });
   return plan;
 }
 
@@ -645,9 +775,11 @@ export function nextWeekPreview(now: number = Date.now()): WeekPlan {
  */
 export function planWeekOf(dateKey: string, now: number = Date.now()): WeekPlan {
   const start = weekStartOf(dateKey);
+  // This week through `weekPlan`, stored or not, so a due test it had lost is
+  // put back before anything reads a day of it.
+  if (start === weekStartOf(toDateKey(new Date(now)))) return weekPlan(now);
   const stored = weeks()[start];
   if (stored != null) return stored;
-  if (start === weekStartOf(toDateKey(new Date(now)))) return weekPlan(now);
   return build(start, now);
 }
 
@@ -655,13 +787,27 @@ export function planDayOn(dateKey: string, now: number = Date.now()): PlanDay | 
   return planWeekOf(dateKey, now).days.find((day) => day.date === dateKey);
 }
 
-/** Re-plans this week from today on, keeping the days already lived. */
+/**
+ * Re-plans this week from today on, keeping the days already lived — today
+ * among them once its session is done. See `build`.
+ *
+ * And every week after it that is already stored, from scratch: none of their
+ * days has been lived. From Sunday evening next week is stored
+ * (`buildUpcomingWeek`), and it was built from that evening's inputs — a test
+ * due that Sunday and not yet taken put one on Monday. Finishing the test,
+ * changing a setting or a goal after that re-planned this week only, and
+ * Monday still asked for a second test while Plan, the reminders and the
+ * server all read the stale week. In order, so each week is built on the one
+ * before it.
+ */
 export function rebuildRestOfWeek(now: number = Date.now()): void {
   const today = toDateKey(new Date(now));
   const start = weekStartOf(today);
-  if (weeks()[start] == null) return;
-  const plan = build(start, now, today);
-  write(WEEKS_KEY, { ...weeks(), [start]: plan });
+  if (weeks()[start] != null) write(WEEKS_KEY, { ...weeks(), [start]: build(start, now, today) });
+  const later = Object.keys(weeks())
+    .filter((weekStart) => weekStart > start)
+    .sort();
+  for (const weekStart of later) write(WEEKS_KEY, { ...weeks(), [weekStart]: build(weekStart, now) });
 }
 
 /** Every exercise id a stored week ever scheduled — for the tests and the prefetch. */
@@ -700,10 +846,22 @@ export function todayPlan(
   );
 }
 
-/** Whether a day of the plan has a finished plan session. */
+/**
+ * Whether a day of the plan has a finished plan session — the one answer every
+ * screen asks.
+ *
+ * Either record says yes. A plan or test session in the session list is a
+ * session that happened, whatever the day log says since: Home's ticks rewrite
+ * the log's `sessionCompleted` from their own count, and a test day ticks
+ * nothing, so the log alone once let Home call a finished retest day
+ * unfinished. The log is still read, for the days finished before the session
+ * list existed. A Library routine counts for neither: it keeps the streak and
+ * leaves the plan's session open.
+ */
 export function planSessionDone(dateKey: string): boolean {
   const n = dayNumberFor(programState(), dateKey);
-  return n >= 1 && logFor(n)?.sessionCompleted === true;
+  if (n >= 1 && logFor(n)?.sessionCompleted === true) return true;
+  return sessions().some((s) => s.date === dateKey && (s.source === 'plan' || s.source === 'test'));
 }
 
 /**

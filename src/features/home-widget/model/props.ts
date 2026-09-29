@@ -4,6 +4,7 @@ import {
   currentDay,
   dayNumberFor,
   logFor,
+  planSessionDone,
   programState,
   streakThrough,
   toDateKey,
@@ -56,15 +57,20 @@ function todayGoal(now: number): Goal {
     now,
   );
   const log = logFor(currentDay(now));
+  // Done is `planSessionDone`, the answer Home and Plan read: a finished plan or
+  // test session counts whatever the log's own flag says since. A test day
+  // ticks no exercise ids, which is how the log alone once read a finished
+  // retest as untaken.
+  const done = planSessionDone(toDateKey(new Date(now)));
   if (day.type === 'rest') return { type: 'rest', done: 0, total: 0 };
-  if (day.type === 'test') return { type: 'test', done: log?.sessionCompleted === true ? 1 : 0, total: 1 };
+  if (day.type === 'test') return { type: 'test', done: done ? 1 : 0, total: 1 };
   // Unique ids: a flare day can list the same move twice.
   const ids = [...new Set(day.exercises.map((exercise) => exercise.id))];
   // A finished session is the whole goal, whatever today's plan says now. The
   // plan is re-derived live, and recording a session can move the step-down
   // that picks today's exercises — so the ids ticked an hour ago need not be
   // the ids on the plan now.
-  if (log?.sessionCompleted === true) return { type: day.type, done: ids.length, total: ids.length };
+  if (done) return { type: day.type, done: ids.length, total: ids.length };
   const ticked = ids.filter((id) => log?.exercisesDone.includes(id)).length;
   return { type: day.type, done: ticked, total: ids.length };
 }
@@ -119,7 +125,7 @@ function weekFor(
               : 'today';
     } else if (number < 1) cell = 'off';
     else if (day.future) cell = rest ? 'rest' : planned?.type === 'test' ? 'test' : 'future';
-    else if (logFor(number)?.sessionCompleted === true) cell = 'done';
+    else if (planSessionDone(day.date)) cell = 'done';
     else cell = rest ? 'rest' : 'missed';
     return { label: labels[i] ?? '', state: cell };
   });

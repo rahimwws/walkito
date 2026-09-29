@@ -70,7 +70,6 @@ export const PAGES_RU = {
   'pages.program.statTests': 'Тесты',
   'pages.program.statExercises': 'Упражнения',
   'pages.program.getStarted': 'Начать',
-  'pages.program.startNow': 'Начать сейчас',
 
   'pages.program.blockSeam': 'БЛОК {index} · {name}',
   // The participle agrees with the count, which is why all three forms differ:
@@ -192,14 +191,16 @@ export const PAGES_RU = {
   'pages.plan.start': 'Начать',
   'pages.plan.testTitle': 'День теста',
   'pages.plan.testBody': {
-    one: '{count} быстрый тест · около {minutes} мин',
-    few: '{count} быстрых теста · около {minutes} мин',
-    many: '{count} быстрых тестов · около {minutes} мин',
+    one: '{count} короткий тест на время, всего около {minutes} мин. Он покажет, что дали тренировки, и план подстроится под результат.',
+    few: '{count} коротких теста на время, всего около {minutes} мин. Они покажут, что дали тренировки, и план подстроится под результаты.',
+    many: '{count} коротких тестов на время, всего около {minutes} мин. Они покажут, что дали тренировки, и план подстроится под результаты.',
   },
   'pages.plan.rest': 'День отдыха. Если хочется - растяжка на 2 минуты.',
   'pages.plan.done': 'На сегодня всё',
   'pages.plan.tomorrow': 'Завтра: {kind}, {minutes}.',
   'pages.plan.tomorrowRest': 'Завтра день отдыха.',
+  'pages.plan.nextSessionOn': 'Следующее занятие: {day}, {kind}.',
+  'pages.plan.seeResults': 'Посмотреть результаты',
   'pages.plan.upcoming': 'Дальше',
   'pages.plan.upcomingEnd': 'Это вся неделя. План на следующую придёт в воскресенье.',
   'pages.plan.row': '{day} · {kind}',

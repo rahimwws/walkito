@@ -14,7 +14,7 @@
 import * as Notifications from 'expo-notifications';
 
 import { STEP_CHECK_MARK, healthSignals } from '@/entities/health';
-import { currentDay, nextSessionAt, painEntriesOn, toDateKey } from '@/entities/program';
+import { currentDay, nextSession, painEntriesOn, toDateKey } from '@/entities/program';
 import { getLanguage } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 
@@ -267,26 +267,24 @@ export async function refresh(now: number = Date.now()): Promise<PlannedItem[]> 
   const laid: string[] = [];
 
   /**
-   * The earliest the next session can be started.
+   * When the next session opens — the same `nextSession` Plan and Home show,
+   * so a reminder can never offer what the screen it opens still has shut.
    *
-   * The plan keeps twelve hours between sessions, so somebody who trained late
-   * has a session that does not open until late morning. The daily nudge is
-   * scheduled off their wake time and knew nothing about that — it would say
-   * "day 2, stretching, five minutes" to a screen still showing a padlock.
-   *
-   * Null when today is not finished, which is the ordinary case: the thing to
-   * do is today's session and there is nothing to wait for.
+   * That is midnight of the next plan day that is not a rest day, and today
+   * until today's session is done. Null only when three weeks hold nothing
+   * but rest.
    */
-  const opensAt = nextSessionAt(currentDay(), now);
+  const opensAt = nextSession(now)?.at ?? null;
 
   for (const item of planned) {
-    let when = fireAt(item.dateKey, item.at);
+    const when = fireAt(item.dateKey, item.at);
 
-    // Pushed rather than dropped. A session nudge that would land before the
-    // rest is over is still the right message — it is only early — and moving
-    // it to the moment the session opens is what the user would want it to say.
-    if (opensAt != null && item.kind === 'session' && when.getTime() < opensAt) {
-      when = new Date(opensAt);
+    // Dropped, not moved. A session or test nudge due before the next session
+    // opens is about a day whose work is already done — today's, once it is
+    // finished — and moving it to the opening would ring at midnight. The next
+    // day's own nudge is already in the window.
+    if (opensAt != null && (item.kind === 'session' || item.kind === 'retest') && when.getTime() < opensAt) {
+      continue;
     }
 
     // A slot that has already passed today is not moved to tomorrow — it was
@@ -313,12 +311,15 @@ export async function refresh(now: number = Date.now()): Promise<PlannedItem[]> 
 
   kv.set(SCHEDULED_KEY, JSON.stringify(laid));
   // Remembered with their times, so the next open can tell what went out while
-  // the app was not running. See `reconcile`.
+  // the app was not running. See `reconcile`. Only what was actually laid: a
+  // nudge dropped above, or one the system refused, never went out, and
+  // counting it as delivered would run the unopened streak up for nothing.
+  const onCalendar = new Set(laid);
   kv.set(
     LAID_KEY,
     JSON.stringify(
       planned
-        .filter((item) => fireAt(item.dateKey, item.at).getTime() > now)
+        .filter((item) => onCalendar.has(identifierFor(item)))
         .map((item) => ({
           id: identifierFor(item),
           kind: item.kind,

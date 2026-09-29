@@ -1,14 +1,16 @@
+import ChartLineData02Icon from '@hugeicons/core-free-icons/ChartLineData02Icon';
+import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
+import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
+import Moon02Icon from '@hugeicons/core-free-icons/Moon02Icon';
+import RepeatIcon from '@hugeicons/core-free-icons/RepeatIcon';
+import RulerIcon from '@hugeicons/core-free-icons/RulerIcon';
+import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
+import Yoga01Icon from '@hugeicons/core-free-icons/Yoga01Icon';
+import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
-import type { Icon } from 'phosphor-react-native';
-import { ArrowsClockwiseIcon } from 'phosphor-react-native/src/icons/ArrowsClockwise';
-import { BarbellIcon } from 'phosphor-react-native/src/icons/Barbell';
-import { CheckIcon } from 'phosphor-react-native/src/icons/Check';
-import { ClockIcon } from 'phosphor-react-native/src/icons/Clock';
-import { MoonIcon } from 'phosphor-react-native/src/icons/Moon';
-import { RulerIcon } from 'phosphor-react-native/src/icons/Ruler';
-import { WavesIcon } from 'phosphor-react-native/src/icons/Waves';
+import { useIsFocused } from 'expo-router';
 import { useMemo, useState } from 'react';
-import { Image, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, Modal, Pressable, StyleSheet, Text, View, type StyleProp, type TextStyle } from 'react-native';
 import Animated, { LinearTransition, ReduceMotion } from 'react-native-reanimated';
 
 import { useHealthSignals, type HealthSignals } from '@/entities/health';
@@ -17,27 +19,34 @@ import {
   RETEST_MINUTES,
   RETEST_TESTS,
   TODAY_INDEX,
-  currentDay,
+  completePlanSession,
   doseLabel,
   doseSeconds as planDoseSeconds,
   exerciseById,
   exerciseCategoryLabel,
   logFor,
-  recordSession,
+  planSessionDone,
+  todayDayNumber,
   todayKey,
   todayPlan,
   useLogsVersion,
+  useNextSession,
   usePlanVersion,
+  useRetest,
   writeLog,
+  type DayType,
   type ExerciseCategory,
+  type NextSession,
   type PlannedExercise,
   type ProgramDay,
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
-import { useT, type Translate } from '@/shared/lib/i18n';
+import { useCountdown } from '@/shared/lib/clock';
+import { useLanguage, useT, type Translate } from '@/shared/lib/i18n';
 import { PROGRAM_MS } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
-import { SessionView, type PlaylistStep } from '@/widgets/session-player';
+import { waitPhrase } from '@/shared/lib/wait';
+import { SessionView, TestDayFlow, type PlaylistStep } from '@/widgets/session-player';
 
 /** The mascot, mid-stride. It belongs to this block rather than to the screen:
  * the list is the one place on Home that asks for work, and a character running
@@ -64,11 +73,15 @@ const MASCOT_SIZE = 64;
  * forget.
  */
 const CATEGORIES = {
-  fitness: { accent: 'violet' as AccentName, icon: BarbellIcon },
-  mobility: { accent: 'teal' as AccentName, icon: WavesIcon },
-  recovery: { accent: 'amber' as AccentName, icon: MoonIcon },
-  habit: { accent: 'blue' as AccentName, icon: ArrowsClockwiseIcon },
-} satisfies Record<string, { accent: AccentName; icon: Icon }>;
+  fitness: { accent: 'violet' as AccentName, icon: Dumbbell01Icon },
+  mobility: { accent: 'teal' as AccentName, icon: Yoga01Icon },
+  recovery: { accent: 'amber' as AccentName, icon: Moon02Icon },
+  habit: { accent: 'blue' as AccentName, icon: RepeatIcon },
+} satisfies Record<string, { accent: AccentName; icon: IconSvgElement }>;
+
+/** The glyphs on a row's second line. Heavier than the set's default stroke:
+ * at 13pt a 1.5 line thins to nothing against the tinted text beside it. */
+const GLYPH_STROKE = 2.2;
 
 type CategoryKey = keyof typeof CATEGORIES;
 
@@ -120,6 +133,15 @@ export type Task = {
   step: PlaylistStep;
 };
 
+type TodayWork = {
+  tasks: readonly Task[];
+  retest: boolean;
+  /** The day's kind and planned minutes: what the player says it is running,
+   * and what the session is recorded as when the list finishes it. */
+  kind: DayType;
+  minutes: number;
+};
+
 /**
  * Today's list: this week's plan for today, adjusted to this morning.
  *
@@ -128,15 +150,17 @@ export type Task = {
  * seated work by the time the check-in has slid out of the way. The Workout
  * page shows the same day from the same call, so the two cannot disagree.
  */
-function tasksForToday(t: Translate, health: HealthSignals): { tasks: readonly Task[]; retest: boolean } {
+function tasksForToday(t: Translate, health: HealthSignals): TodayWork {
   const day = todayPlan({
     stepsYesterday: health.stepsYesterday,
     steps28Avg: health.stepsBaseline,
     sleepHours: health.sleepLastNightMin == null ? null : health.sleepLastNightMin / 60,
   }, null);
-  if (day.type === 'test') return { tasks: [], retest: true };
+  if (day.type === 'test') return { tasks: [], retest: true, kind: day.type, minutes: RETEST_MINUTES };
   return {
     retest: false,
+    kind: day.type,
+    minutes: day.minutes,
     tasks: day.exercises.map((planned): Task => {
       const exercise = exerciseById(planned.id);
       const seconds = planDoseSeconds(planned.dose);
@@ -149,6 +173,30 @@ function tasksForToday(t: Translate, health: HealthSignals): { tasks: readonly T
         step: stepOf(planned),
       };
     }),
+  };
+}
+
+/**
+ * The day the player runs a task against.
+ *
+ * Today as the weekly plan has it — its kind, its minutes, today's day number —
+ * over the fixed program's day for the block, which only the load notes still
+ * read. Never a checkpoint: a task off this list is one exercise, and a day
+ * that said "checkpoint" once put the player into its measuring mode instead.
+ *
+ * Built at the moment the player opens, not memoised at mount. The memo it
+ * replaced held the day the list first rendered on, so a list left open past
+ * midnight played yesterday's day.
+ */
+function playerDay(kind: DayType, minutes: number): ProgramDay {
+  const n = todayDayNumber();
+  return {
+    ...PROGRAM[TODAY_INDEX],
+    index: n - 1,
+    day: n,
+    kind: kind === 'rest' || kind === 'test' ? 'recovery' : kind,
+    minutes,
+    checkpoint: false,
   };
 }
 
@@ -192,16 +240,15 @@ export function TodayTasks() {
   const colors = palette[scheme];
   const meter = meterColors[scheme];
   const t = useT();
-  /** Which task's player is up. The task itself is the state — there is nothing
-   * to know about the sheet the task does not already say. */
-  const [open, setOpen] = useState<Task | null>(null);
-  /** The day's retest, playing. Separate from `open` because it is the whole
-   * checkpoint rather than one task off the list. */
-  const [testing, setTesting] = useState(false);
-
-  /** The day the player runs against. Only its clip lookup and layout matter
-   * here; the moves come from the task. */
-  const today = useMemo<ProgramDay>(() => PROGRAM[TODAY_INDEX], []);
+  /** Home stays mounted under the other tabs; the countdown in the finished
+   * banner has no reason to tick there. */
+  const focused = useIsFocused();
+  /** Which task's player is up, and the day it runs against — fixed when it
+   * opens, so a write while it plays cannot hand the player a new day. */
+  const [open, setOpen] = useState<{ task: Task; day: ProgramDay } | null>(null);
+  /** The day's tests, taken or read back. Separate from `open` because it is
+   * the whole test day rather than one task off the list. */
+  const [testing, setTesting] = useState<'take' | 'review' | null>(null);
 
   /**
    * Today's work, recomputed whenever the record behind it moves.
@@ -215,6 +262,38 @@ export function TodayTasks() {
   const logsVersion = useLogsVersion();
   const planVersion = usePlanVersion();
   const health = useHealthSignals();
+  /**
+   * When the next session opens. Read here, not only in the banner that counts
+   * down to it, because the hook wakes at midnight — and midnight is when
+   * "today" moves on. The memos below list the date for the same reason: keyed
+   * on versions alone they kept yesterday's list, ticked, until something
+   * unrelated happened to write.
+   */
+  const next = useNextSession();
+  const date = todayKey();
+
+  const { tasks, retest, kind, minutes } = useMemo(() => {
+    return tasksForToday(t, health);
+    // The first two are versions rather than inputs — the plan reads the log
+    // and its own store, and both are mutated in place, so they are the only
+    // things that can tell React the answer has moved. `t` and the health
+    // facts are real inputs, and so is the date.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [logsVersion, planVersion, health, t, date]);
+
+  /**
+   * Whether today's plan session is finished — the one answer Plan, the widget
+   * and the streak read too, so the four cannot disagree.
+   *
+   * Ahead of the ticks, not derived from them. A test day ticks nothing, and a
+   * session finished on the Plan tab ticks nothing here either; reading the
+   * ticks alone is how Home once offered a test that had just been saved.
+   */
+  const dayDone = useMemo(
+    () => planSessionDone(date),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [logsVersion, planVersion, date],
+  );
 
   /**
    * Which tasks are ticked, read from the day log rather than held here alone.
@@ -223,26 +302,17 @@ export function TodayTasks() {
    * every tick through to the log, and nothing ever read it back. Leaving Home
    * and returning — or finishing a session in the player — emptied the ticks on
    * screen while the streak, the path and the score all counted the day as
-   * done. The list disagreed with every other surface about what had happened
-   * today, and it was the only one anybody was looking at.
-   *
-   * Derived, so there is one answer. `useLogsVersion` below is what re-runs it.
+   * done.
    */
-  const done = useMemo<readonly string[]>(
-    () => logFor(currentDay())?.exercisesDone ?? [],
+  const ticked = useMemo<readonly string[]>(
+    () => logFor(todayDayNumber())?.exercisesDone ?? [],
     // The log map is mutated in place, so the version is the only thing that
     // can say it moved.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [logsVersion],
+    [logsVersion, date],
   );
-  const { tasks, retest } = useMemo(() => {
-    return tasksForToday(t, health);
-    // The first two are versions rather than inputs — the plan reads the log
-    // and its own store, and both are mutated in place, so they are the only
-    // things that can tell React the answer has moved. `t` and the health
-    // facts are real inputs.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [logsVersion, planVersion, health, t]);
+  /** A finished day shows every row finished, however it was finished. */
+  const isDone = (id: string) => dayDone || ticked.includes(id);
 
   /**
    * Unfinished first, in their original order; finished sink to the bottom.
@@ -253,65 +323,61 @@ export function TodayTasks() {
    * exists to answer.
    */
   const ordered = useMemo(
-    () => [...tasks].sort((a, b) => Number(done.includes(a.id)) - Number(done.includes(b.id))),
-    [tasks, done],
+    () => (dayDone ? tasks : [...tasks].sort((a, b) => Number(ticked.includes(a.id)) - Number(ticked.includes(b.id)))),
+    [tasks, ticked, dayDone],
   );
+
+  /** Today's test results are on file — what "See results" opens. */
+  const tested = useRetest(todayDayNumber()) != null;
 
   /**
    * Ticking a task, from the list or by finishing its player.
    *
-   * Written through to the day log rather than held in component state alone.
-   * The old list was decorative — the ticks vanished on unmount and nothing
-   * downstream ever heard about them. Now the same act feeds the streak, the
-   * path and the score, which is what makes them agree with each other.
+   * Written through to the day log, so the same act feeds the streak, the path
+   * and the score. The tick that finishes the list finishes the day, and it
+   * does so the way every other screen does: `completePlanSession` writes the
+   * session, the log and the sync in one go, so Plan, the widget and the
+   * server hear about it in the same beat Home does.
    *
    * The day counts as trained once every exercise on it is ticked. Anything
    * less is progress, not a session, and claiming otherwise would let a day be
-   * completed by opening it.
+   * completed by opening it. The converse holds too: a day already finished is
+   * never un-finished by a tick — a later write of the ticks used to set
+   * `sessionCompleted: false` over a session recorded elsewhere.
    */
-  const record = (next: readonly string[]) => {
-    const complete = tasks.length > 0 && next.length >= tasks.length;
-    const wasComplete = logFor(currentDay())?.sessionCompleted === true;
+  const record = (ids: readonly string[]) => {
+    const today = todayKey();
+    const wasComplete = planSessionDone(today);
+    const complete = tasks.length > 0 && tasks.every((task) => ids.includes(task.id));
     if (complete && !wasComplete) {
-      // The day's plan session, finished from this list: recorded the same way
-      // the Workout page records one, so next week's plan hears about it.
-      recordSession({
-        date: todayKey(),
+      completePlanSession({
+        date: today,
         source: 'plan',
-        minutes: Math.round(tasks.reduce((sum, task) => sum + task.step.seconds, 0) / 60),
-        exercises: next.map((id) => ({ id, status: 'done' as const })),
-        feedback: null,
-        inSessionPain: null,
-        completedAt: Date.now(),
+        minutes,
+        exerciseIds: ids.filter((id) => tasks.some((task) => task.id === id)),
       });
       return;
     }
-    writeLog(currentDay(), {
-      exercisesDone: [...next],
-      sessionCompleted: complete,
-      // Only on the tick that finishes the day, and only once: the rest period
-      // runs from when the work ended, and restamping it on a later edit would
-      // push the next session further away for changing one's mind about a
-      // checkbox.
-      ...(complete && logFor(currentDay())?.completedAt == null
-        ? { completedAt: Date.now() }
-        : {}),
+    writeLog(todayDayNumber(), {
+      exercisesDone: [...ids],
+      sessionCompleted: complete || wasComplete,
     });
   };
 
-  const finish = (id: string) =>
-    record(done.includes(id) ? done : [...done, id]);
+  const finish = (id: string) => record(ticked.includes(id) ? ticked : [...ticked, id]);
 
   /**
-   * Everything on today's list is ticked.
+   * Everything on today's list is done — or the day is, which on a test day
+   * with no list is the same thing.
    *
    * Worth a line of its own. Without one the finished list is a column of
    * struck-through text that looks the same as a list nobody has started —
    * every row greyed, nothing saying which of the two it is. It is also the
    * only place the app can answer "am I done?", which is the question somebody
-   * opens it to ask on the evening of a day they already trained.
+   * opens it to ask on the evening of a day they already trained — and the
+   * question after it, "when is the next one?".
    */
-  const allDone = tasks.length > 0 && done.length >= tasks.length;
+  const allDone = dayDone || (tasks.length > 0 && tasks.every((task) => ticked.includes(task.id)));
 
   return (
     <View style={styles.root}>
@@ -343,9 +409,11 @@ export function TodayTasks() {
             <Text style={[styles.allDoneTitle, { color: colors.foreground }]}>
               {t('home.allDoneTitle')}
             </Text>
-            <Text style={[styles.allDoneBlurb, { color: meter.caption }]}>
-              {t('home.allDoneBlurb')}
-            </Text>
+            <NextSessionLine
+              next={next}
+              active={focused}
+              style={[styles.allDoneBlurb, { color: meter.caption }]}
+            />
           </View>
         </View>
       )}
@@ -368,11 +436,19 @@ export function TodayTasks() {
             taught. */}
         {ordered.length === 0 && retest && (
           <RetestRow
-            done={logFor(currentDay())?.sessionCompleted === true}
+            done={dayDone}
             onOpen={() => {
               Haptics.selectionAsync();
-              setTesting(true);
+              setTesting('take');
             }}
+            onResults={
+              tested
+                ? () => {
+                    Haptics.selectionAsync();
+                    setTesting('review');
+                  }
+                : null
+            }
           />
         )}
         {ordered.map((task) => (
@@ -385,19 +461,26 @@ export function TodayTasks() {
             layout={LinearTransition.duration(PROGRAM_MS).reduceMotion(ReduceMotion.System)}>
             <TaskRow
               task={task}
-              done={done.includes(task.id)}
+              done={isDone(task.id)}
               onOpen={() => {
                 Haptics.selectionAsync();
-                setOpen(task);
+                setOpen({ task, day: playerDay(kind, minutes) });
               }}
-              onToggle={() => {
-                Haptics.selectionAsync();
-                record(
-                  done.includes(task.id)
-                    ? done.filter((id) => id !== task.id)
-                    : [...done, task.id],
-                );
-              }}
+              // Nothing to untick on a finished day: every row reads done
+              // because the day is, and a box that let go of one would be a
+              // control that changes nothing.
+              onToggle={
+                dayDone
+                  ? undefined
+                  : () => {
+                      Haptics.selectionAsync();
+                      record(
+                        ticked.includes(task.id)
+                          ? ticked.filter((id) => id !== task.id)
+                          : [...ticked, task.id],
+                      );
+                    }
+              }
             />
           </Animated.View>
         ))}
@@ -406,38 +489,41 @@ export function TodayTasks() {
       <Modal
         animationType="slide"
         presentationStyle="pageSheet"
-        visible={open != null || testing}
+        visible={open != null || testing != null}
         onRequestClose={() => {
           setOpen(null);
-          setTesting(false);
+          setTesting(null);
         }}>
+        {/* The test day paints its own page and keeps its own insets, and it
+            finishes the day itself (`finishTestDay`): the numbers, the session,
+            the goals and the sync. This used to be the session player on the
+            fixed program's day, which saved nothing the plan could read — so
+            Home went on offering a test Plan called done. */}
+        {testing != null && (
+          <TestDayFlow review={testing === 'review'} onClose={() => setTesting(null)} />
+        )}
         {/* The sheet paints its own page colour. `SessionView` deliberately has
             none — inside the program it sits on the sheet face, which supplies
             it — so dropped straight into a bare Modal it showed iOS's default
             white behind a dark app. Every other sheet here does the same thing
             at its call site. */}
-        {testing && (
-          <View style={[styles.player, { backgroundColor: colors.background }]}>
-            <SessionView
-              // Read now rather than from the memo above: the plan is rebuilt
-              // when it starts or crosses midnight, and this must be today.
-              day={PROGRAM[TODAY_INDEX]}
-              onBack={() => setTesting(false)}
-              onFinish={() => setTesting(false)}
-            />
-          </View>
-        )}
         {open != null && (
           <View style={[styles.player, { backgroundColor: colors.background }]}>
             <SessionView
-              day={today}
+              day={open.day}
               // One task, one move, at the plan's dose. The player's own
               // transport still works — it simply has nowhere to go next, which
               // is what makes the end of the move the end of the task.
-              playlist={[open.step]}
+              playlist={[open.task.step]}
+              // Never asks how it felt. The answer is filed on the day's plan
+              // session and tunes the next ones, and what this player ran is
+              // one move — the last one left, when it finishes the list, but
+              // still one. "Too easy" about a stretch would have moved the
+              // calf work up. Plan's player runs the whole session and asks.
+              feedback={false}
               onBack={() => setOpen(null)}
               onFinish={() => {
-                finish(open.id);
+                finish(open.task.id);
                 setOpen(null);
               }}
             />
@@ -449,14 +535,57 @@ export function TodayTasks() {
 }
 
 /**
+ * The line under "Done for today": when the next session opens.
+ *
+ * Its own component so the countdown's tick re-renders one line of text, not
+ * the list. Counted within a day, named beyond it — "Next session in 5h 3m",
+ * "Next session: Monday". With three weeks of rest ahead there is nothing to
+ * count to, and it says so plainly.
+ */
+function NextSessionLine({
+  next,
+  active,
+  style,
+}: {
+  next: NextSession | null;
+  active: boolean;
+  style: StyleProp<TextStyle>;
+}) {
+  const t = useT();
+  const language = useLanguage();
+  const waiting = next != null && !next.open;
+  const left = useCountdown(waiting ? next.at : null, active);
+  if (next == null || !waiting || left == null || left <= 0) {
+    return <Text style={style}>{t('home.allDoneBlurb')}</Text>;
+  }
+  const phrase = waitPhrase(t, language, next.at, left);
+  return (
+    <Text style={style}>
+      {phrase.kind === 'in' ? t('nextSession.in', { time: phrase.time }) : t('nextSession.on', { day: phrase.day })}
+    </Text>
+  );
+}
+
+/**
  * The day's retest, as a row of the list.
  *
  * The same two lines and the same trailing chip as a task, tinted with the
  * accent the program uses for checkpoints. Once today's tests are on record it
- * is struck through and ticked, and no longer opens anything: a second run
- * would overwrite the numbers just saved.
+ * is struck through and never opens the tests again: a second run would file
+ * a second set of numbers over the first. What it opens instead is the
+ * results, read-only — the reason the four minutes were worth it.
  */
-function RetestRow({ done, onOpen }: { done: boolean; onOpen: () => void }) {
+function RetestRow({
+  done,
+  onOpen,
+  onResults,
+}: {
+  done: boolean;
+  onOpen: () => void;
+  /** Opens today's results. Null when there are none on file to open — a day
+   * finished before results were kept — and the row is then only a tick. */
+  onResults: (() => void) | null;
+}) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -465,13 +594,16 @@ function RetestRow({ done, onOpen }: { done: boolean; onOpen: () => void }) {
   const title = t('home.retestTask');
   const subtitle = t('home.retestTaskSub', { tests: t('home.tests', { count: RETEST_TESTS }) });
 
+  const inert = done && onResults == null;
+
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityState={{ checked: done, disabled: done }}
+      accessibilityState={{ checked: done, disabled: inert }}
       accessibilityLabel={t('home.taskA11y', { title, subtitle })}
-      disabled={done}
-      onPress={onOpen}
+      accessibilityHint={done && onResults != null ? t('home.seeResults') : undefined}
+      disabled={inert}
+      onPress={done ? (onResults ?? undefined) : onOpen}
       style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}>
       <View style={styles.copy}>
         <Text
@@ -483,18 +615,23 @@ function RetestRow({ done, onOpen }: { done: boolean; onOpen: () => void }) {
           {title}
         </Text>
         <View style={styles.category}>
-          <RulerIcon size={13} weight="fill" color={tone.fill} />
+          <HugeiconsIcon icon={RulerIcon} size={13} color={tone.fill} strokeWidth={GLYPH_STROKE} />
           <Text style={[styles.categoryText, { color: tone.fill }]}>{subtitle}</Text>
         </View>
       </View>
 
-      {done ? (
+      {done && onResults != null ? (
+        <View style={[styles.chip, { backgroundColor: tone.track }]}>
+          <HugeiconsIcon icon={ChartLineData02Icon} size={13} color={tone.fill} strokeWidth={GLYPH_STROKE} />
+          <Text style={[styles.chipText, { color: tone.fill }]}>{t('home.seeResults')}</Text>
+        </View>
+      ) : done ? (
         <View style={[styles.box, { borderColor: tone.fill, backgroundColor: tone.fill }]}>
-          <CheckIcon size={16} weight="bold" color={colors.background} />
+          <HugeiconsIcon icon={Tick02Icon} size={16} color={colors.background} strokeWidth={2.5} />
         </View>
       ) : (
         <View style={[styles.chip, { backgroundColor: tone.track }]}>
-          <ClockIcon size={13} weight="fill" color={tone.fill} />
+          <HugeiconsIcon icon={Clock01Icon} size={13} color={tone.fill} strokeWidth={GLYPH_STROKE} />
           <Text style={[styles.chipText, { color: tone.fill }]}>
             {t('home.chipMinutes', { count: RETEST_MINUTES })}
           </Text>
@@ -515,8 +652,9 @@ function TaskRow({
   /** The row opens the exercise. */
   onOpen: () => void;
   /** The box marks it done without opening anything — for the task you have
-   * already done today and only need to record. */
-  onToggle: () => void;
+   * already done today and only need to record. Absent once the day is
+   * finished, when the box is a readout rather than a control. */
+  onToggle?: () => void;
 }) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
@@ -524,7 +662,6 @@ function TaskRow({
   const t = useT();
   const category = CATEGORIES[CATEGORY_KEYS[task.category]];
   const tone = accents[scheme][category.accent];
-  const Glyph = category.icon;
 
   /**
    * The second line: what kind of thing this is, and how much of it.
@@ -562,14 +699,14 @@ function TaskRow({
           {task.title}
         </Text>
         <View style={styles.category}>
-          <Glyph size={13} weight="fill" color={tone.fill} />
+          <HugeiconsIcon icon={category.icon} size={13} color={tone.fill} strokeWidth={GLYPH_STROKE} />
           <Text style={[styles.categoryText, { color: tone.fill }]}>{subtitle}</Text>
         </View>
       </View>
 
       {task.chip != null && !done ? (
         <View style={[styles.chip, { backgroundColor: tone.track }]}>
-          <ClockIcon size={13} weight="fill" color={tone.fill} />
+          <HugeiconsIcon icon={Clock01Icon} size={13} color={tone.fill} strokeWidth={GLYPH_STROKE} />
           <Text style={[styles.chipText, { color: tone.fill }]}>{task.chip}</Text>
         </View>
       ) : (
@@ -579,8 +716,9 @@ function TaskRow({
         // which is what makes the state read from across the room.
         <Pressable
           accessibilityRole="checkbox"
-          accessibilityState={{ checked: done }}
+          accessibilityState={{ checked: done, disabled: onToggle == null }}
           accessibilityLabel={done ? t('home.markNotDone') : t('home.markDone')}
+          disabled={onToggle == null}
           onPress={onToggle}
           hitSlop={8}
           style={({ pressed }) => [
@@ -590,7 +728,7 @@ function TaskRow({
               : { borderColor: meter.track, borderStyle: 'dashed' },
             pressed && { opacity: 0.6 },
           ]}>
-          {done && <CheckIcon size={16} weight="bold" color={colors.background} />}
+          {done && <HugeiconsIcon icon={Tick02Icon} size={16} color={colors.background} strokeWidth={2.5} />}
         </Pressable>
       )}
     </Pressable>

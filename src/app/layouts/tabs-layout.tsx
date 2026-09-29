@@ -6,7 +6,10 @@ import { PRIMARY } from '@/shared/config';
 import { Tabs, TabList, TabSlot, TabTrigger } from 'expo-router/ui';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { useNextSession } from '@/entities/program';
+import { useCountdown } from '@/shared/lib/clock';
 import { ProgramProvider, useProgram } from '@/shared/lib/program';
+import { waitPhrase } from '@/shared/lib/wait';
 import { ActionDock, DOCK_OVERLAP, useDockHeight } from '@/shared/ui/action-dock';
 
 import { ProgramOverlay } from './program-overlay';
@@ -18,7 +21,7 @@ import {
   renderFadingTabScreen,
   type GlassTabItem,
 } from '@/shared/ui/glass-tabs';
-import { useT, type Key } from '@/shared/lib/i18n';
+import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { useIntroRevealStyle } from '@/shared/ui/splash';
 
@@ -49,6 +52,36 @@ function StatusBarBlur() {
       direction="top"
       tint={scheme === 'dark' ? 'dark' : 'light'}
       style={{ position: 'absolute', top: 0, left: 0, right: 0, height: insets.top }}
+    />
+  );
+}
+
+/**
+ * The dock, saying when the next session opens once today's is behind you.
+ *
+ * "Start workout" on a day that is already done sent people into the plan to
+ * find nothing to start. Now the slab counts down instead — "Next session in
+ * 5h 3m", or the weekday when it is more than a day off — and still opens the
+ * plan, where the same wait sits on the button that will start it. A rest day
+ * reads the same way, for the same reason: there is nothing to start today.
+ *
+ * Its own component so the countdown's tick re-renders the slab's label and
+ * nothing else in the chrome. `useNextSession` recomputes on a finished
+ * session and at midnight, which is when the label goes back.
+ */
+function WorkoutDock() {
+  const t = useT();
+  const language = useLanguage();
+  const next = useNextSession();
+  const waiting = next != null && !next.open;
+  const left = useCountdown(waiting ? next.at : null);
+  if (next == null || !waiting || left == null || left <= 0) return <ActionDock />;
+  const phrase = waitPhrase(t, language, next.at, left);
+  return (
+    <ActionDock
+      label={
+        phrase.kind === 'in' ? t('nextSession.in', { time: phrase.time }) : t('nextSession.on', { day: phrase.day })
+      }
     />
   );
 }
@@ -91,7 +124,7 @@ function TabsChrome() {
         <TabList asChild>
           <GlassTabBar
             entranceStyle={entranceStyle}
-            dock={<ActionDock />}
+            dock={<WorkoutDock />}
             lift={dockHeight - DOCK_OVERLAP}
             hideProgress={program?.progress}
             onIndexSelected={(i) => router.navigate(ITEMS[i].href as never)}>

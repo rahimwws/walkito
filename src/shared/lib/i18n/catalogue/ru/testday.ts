@@ -1,0 +1,176 @@
+/** testday strings (the guided test day: intro, the three tests, results). Filled per domain; see `../en/core.ts` for the rules. */
+
+export const TESTDAY_RU = {
+  // ── Chrome ────────────────────────────────────────────────────────────────
+  'testday.close': 'Закрыть',
+  'testday.leave.title': 'Выйти из теста?',
+  'testday.leave.body': 'Ничего не сохранится, пока не пройден последний тест. Тест останется в плане.',
+  'testday.leave.stay': 'Продолжить',
+  'testday.leave.confirm': 'Выйти',
+
+  // ── Intro ─────────────────────────────────────────────────────────────────
+  'testday.intro.eyebrow': 'День тестов',
+  'testday.intro.title': 'Три коротких теста',
+  'testday.intro.body': {
+    one: 'Около {count} минуты. Цифры покажут, насколько продвинулась каждая цель, и по ним строится план на следующие две недели.',
+    few: 'Около {count} минут. Цифры покажут, насколько продвинулась каждая цель, и по ним строится план на следующие две недели.',
+    many: 'Около {count} минут. Цифры покажут, насколько продвинулась каждая цель, и по ним строится план на следующие две недели.',
+  },
+  'testday.intro.nowSeconds': 'Сейчас {now} с · цель {goal} с',
+  'testday.intro.nowRaises': {
+    one: 'Сейчас {now} · цель {count} подъём',
+    few: 'Сейчас {now} · цель {count} подъёма',
+    many: 'Сейчас {now} · цель {count} подъёмов',
+  },
+  'testday.intro.firstSeconds': 'Первое измерение · цель {goal} с',
+  'testday.intro.firstRaises': {
+    one: 'Первое измерение · цель {count} подъём',
+    few: 'Первое измерение · цель {count} подъёма',
+    many: 'Первое измерение · цель {count} подъёмов',
+  },
+  'testday.intro.need': 'Понадобится',
+  'testday.intro.needBarefoot': 'Босые ноги',
+  'testday.intro.needWall': 'Стена, чтобы держать равновесие',
+  'testday.intro.needPhone': 'Телефон перед глазами',
+  'testday.intro.checkin': 'Как стопа сейчас?',
+  'testday.intro.checkinHint': 'Это засчитается как сегодняшняя отметка.',
+  'testday.intro.painNone': 'Не болит',
+  'testday.intro.painWorst': 'Очень сильно',
+  'testday.intro.painA11y': '{score} из 10',
+  'testday.intro.sore':
+    'Когда стопа болит, цифры выходят ниже, чем она может на самом деле, а следующие две недели будут спланированы по ним. Тест может подождать до завтра.',
+  'testday.intro.start': 'Начать',
+  'testday.intro.anyway': 'Всё равно пройти',
+  'testday.intro.tomorrow': 'Пройти завтра',
+
+  // ── The three tests ───────────────────────────────────────────────────────
+  'testday.test.eyebrow': 'Тест {current} из {total}',
+  'testday.test.calf.name': 'Подъёмы на носок',
+  'testday.test.calf.measures': 'Сколько подъёмов делает каждая нога в ровном темпе',
+  'testday.test.arch.name': 'Удержание свода',
+  'testday.test.arch.measures': 'Как долго свод стопы остаётся поднятым',
+  'testday.test.balance.name': 'Баланс',
+  'testday.test.balance.measures': 'Как долго вы стоите на одной ноге с закрытыми глазами',
+
+  'testday.side.left': 'Левая нога',
+  'testday.side.right': 'Правая нога',
+  'testday.side.leftSore': 'Левая нога - та, что болит',
+  'testday.side.rightSore': 'Правая нога - та, что болит',
+
+  'testday.calf.step1': 'Встаньте на одну ногу, кончиками пальцев касаясь стены для равновесия.',
+  'testday.calf.step2': 'Поднимайтесь до конца и опускайтесь, один подъём каждые 2 секунды. Темп задаёт щелчок.',
+  'testday.calf.step3': 'Нажмите «Стоп», когда не сможете держать темп или полную высоту. Затем другая нога.',
+  'testday.calf.stopHint': 'Нажмите, когда не сможете держать темп или полную высоту',
+  'testday.calf.up': 'Вверх',
+  'testday.calf.down': 'Вниз',
+  'testday.calf.otherTitle': 'Теперь другая нога',
+  'testday.calf.otherBody': 'Тот же темп, та же полная высота, пальцы на стене.',
+
+  'testday.arch.step1': 'Встаньте на обе ноги, вес распределён поровну.',
+  'testday.arch.step2': 'Подтяните подушечку стопы к пятке, чтобы свод поднялся. Пальцы длинные и расслабленные.',
+  'testday.arch.step3': 'Держите. Нажмите «Стоп», как только свод опустится.',
+  'testday.arch.stopHint': 'Нажмите, как только свод опустится',
+
+  'testday.balance.step1': 'Встаньте на одну ногу рядом со стеной, руки на поясе.',
+  'testday.balance.step2': 'Закройте глаза, когда закончится отсчёт. Звук сообщит, что время вышло.',
+  'testday.balance.step3': 'Откройте глаза и нажмите «Стоп», как только другая нога коснётся пола.',
+  'testday.balance.stopHint': 'Нажмите, когда другая нога коснётся пола',
+
+  'testday.start': 'Начать',
+  'testday.stop': 'Стоп',
+  'testday.timeLeft': 'Осталось {time}',
+  'testday.secondsLeft': { one: 'секунда осталась', few: 'секунды осталось', many: 'секунд осталось' },
+  'testday.held': 'Уже {n} с',
+
+  'testday.paused.title': 'Пауза',
+  'testday.paused.body': 'Таймер остановился, пока приложение было в фоне.',
+  'testday.paused.resume': 'Продолжить',
+  'testday.paused.restart': 'Начать этот тест заново',
+
+  'testday.confirm.raises': {
+    one: '{count} подъём - верно?',
+    few: '{count} подъёма - верно?',
+    many: '{count} подъёмов - верно?',
+  },
+  'testday.confirm.seconds': {
+    one: '{count} секунда - верно?',
+    few: '{count} секунды - верно?',
+    many: '{count} секунд - верно?',
+  },
+  'testday.confirm.hint': 'Поправьте, если сбились со счёта.',
+  'testday.confirm.holdHint': 'Если вы не сразу дотянулись до телефона, уберите эти секунды.',
+  'testday.confirm.less': 'Меньше',
+  'testday.confirm.more': 'Больше',
+  'testday.confirm.again': 'Пройти этот тест ещё раз',
+  'testday.confirm.next': 'Следующий тест',
+  'testday.confirm.finish': 'Посмотреть результаты',
+
+  // ── Results ───────────────────────────────────────────────────────────────
+  'testday.results.title': 'Ваши результаты',
+  'testday.results.blurb': 'В сравнении с вашим прошлым тестом, а не с кем-то ещё.',
+  'testday.results.firstBlurb': 'Это ваша точка отсчёта. Следующий тест покажет, что изменилось.',
+  'testday.results.name.arch_hold': 'Удержание свода',
+  'testday.results.name.calf_raises': 'Подъёмы на носок',
+  'testday.results.name.balance': 'Баланс',
+  'testday.results.name.symmetry': 'Симметрия',
+  'testday.results.unitSeconds': { one: 'секунда', few: 'секунды', many: 'секунд' },
+  'testday.results.unitRaises': { one: 'подъём', few: 'подъёма', many: 'подъёмов' },
+  'testday.results.percent': '{n} %',
+  // Genitive: it follows the figure, «17 % разницы между ногами».
+  'testday.results.gapUnit': 'разницы между ногами',
+  'testday.results.legs': 'Левая {left} · правая {right}',
+  'testday.results.goalSeconds': 'Цель {n} с',
+  'testday.results.goalRaises': {
+    one: 'Цель {count} подъём',
+    few: 'Цель {count} подъёма',
+    many: 'Цель {count} подъёмов',
+  },
+  'testday.results.goalGap': 'Цель - меньше {n} %',
+  'testday.results.toGoSeconds': { one: 'Ещё {count} с', few: 'Ещё {count} с', many: 'Ещё {count} с' },
+  'testday.results.toGoRaises': {
+    one: 'Ещё {count} подъём',
+    few: 'Ещё {count} подъёма',
+    many: 'Ещё {count} подъёмов',
+  },
+  'testday.results.toGoGap': {
+    one: 'Ещё {count} пункт',
+    few: 'Ещё {count} пункта',
+    many: 'Ещё {count} пунктов',
+  },
+  'testday.results.reached': 'Цель достигнута',
+  'testday.results.moreSeconds': {
+    one: 'На {count} с больше, чем в прошлый раз',
+    few: 'На {count} с больше, чем в прошлый раз',
+    many: 'На {count} с больше, чем в прошлый раз',
+  },
+  'testday.results.fewerSeconds': {
+    one: 'На {count} с меньше, чем в прошлый раз',
+    few: 'На {count} с меньше, чем в прошлый раз',
+    many: 'На {count} с меньше, чем в прошлый раз',
+  },
+  'testday.results.moreRaises': {
+    one: 'На {count} подъём больше, чем в прошлый раз',
+    few: 'На {count} подъёма больше, чем в прошлый раз',
+    many: 'На {count} подъёмов больше, чем в прошлый раз',
+  },
+  'testday.results.fewerRaises': {
+    one: 'На {count} подъём меньше, чем в прошлый раз',
+    few: 'На {count} подъёма меньше, чем в прошлый раз',
+    many: 'На {count} подъёмов меньше, чем в прошлый раз',
+  },
+  'testday.results.gapSmaller': {
+    one: 'Разница на {count} пункт меньше, чем в прошлый раз',
+    few: 'Разница на {count} пункта меньше, чем в прошлый раз',
+    many: 'Разница на {count} пунктов меньше, чем в прошлый раз',
+  },
+  'testday.results.gapLarger': {
+    one: 'Разница на {count} пункт больше, чем в прошлый раз',
+    few: 'Разница на {count} пункта больше, чем в прошлый раз',
+    many: 'Разница на {count} пунктов больше, чем в прошлый раз',
+  },
+  'testday.results.same': 'Как в прошлый раз',
+  'testday.results.first': 'Первое измерение',
+  'testday.results.nextTest': 'Следующий тест: {date}',
+  'testday.results.planUpdated': 'План на следующие две недели обновлён.',
+  'testday.results.done': 'Готово',
+};

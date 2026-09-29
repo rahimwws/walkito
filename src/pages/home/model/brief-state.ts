@@ -317,13 +317,11 @@ export function readBrief({
   // Week 4 and week 8 are the evidence-based reassessment points for a
   // programme this length, not arbitrary ones, so they get to interrupt.
   // Day one is the baseline: the same three tests, but nothing has elapsed to
-  // look back on, so it has its own line. Once taken, the day is simply done.
+  // look back on, so it has its own line. Once taken, either day is simply
+  // done: the retest line asks for the tests, and asking again after they are
+  // saved told someone who had just finished them that they had not started.
   const checkpoint = testToday ?? day?.checkpoint === true;
-  if (checkpoint && cursor === 0) {
-    if (!doneToday) return reading('baseline');
-  } else if (checkpoint) {
-    return reading('retest');
-  }
+  if (checkpoint && !doneToday) return reading(cursor === 0 ? 'baseline' : 'retest');
 
   // --- The weekly plan ---------------------------------------------------
   // A goal reached outranks everything short of pain: it is the moment the

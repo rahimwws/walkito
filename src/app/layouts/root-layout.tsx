@@ -24,7 +24,7 @@ import {
   useReferralSync,
   useQuickActions,
 } from '@/app/providers';
-import { UpdateSheet, useAppUpdates } from '@/features/app-update';
+import { AppUpdateHost } from '@/features/app-update';
 import { useHomeWidget } from '@/features/home-widget';
 import { useBrowsingLapsed, useEntitled, useProgramLapsed } from '@/entities/purchase';
 import { useOnboarded } from '@/entities/session';
@@ -157,10 +157,6 @@ function RootLayoutInner() {
   useNotificationScheduler();
   // A `$screen` per route, for the paths and retention charts in PostHog.
   useScreenTracking();
-  // An over-the-air update or a new App Store build, offered in a sheet.
-  // Not during onboarding: the first minutes are not the moment to ask for a
-  // restart.
-  const update = useAppUpdates(onboarded);
   // The home-screen widget: reads back answers given on it, then redraws it.
   useHomeWidget(onboarded);
 
@@ -302,7 +298,13 @@ function RootLayoutInner() {
               </Stack>
             ) : null}
             <StatusBar style="auto" />
-            {(fontsReady || fontError) && <UpdateSheet {...update} />}
+            {/* An over-the-air update or a new App Store build, offered in a
+                sheet, and the "up to date" note after the restart. Mounted
+                with the fonts, so neither draws in the system face; not during
+                onboarding, where the first minutes are not the moment to ask
+                for a restart. Its own component so expo-updates' progress
+                events re-render it rather than this layout. */}
+            {(fontsReady || fontError) && <AppUpdateHost enabled={onboarded} />}
           </NavThemeProvider>
         </IntroRevealProvider>
       </KeyboardProvider>

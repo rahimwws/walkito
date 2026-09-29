@@ -99,6 +99,15 @@ export const CORE_ES = {
   'gift.openA11y': 'Recoge tu regalo',
   'gift.capsule': 'Regalo',
 
+  // ── Waits ──────────────────────────────────────────────────────────────────
+  'time.hoursMinutes': '{hours} h {minutes} min',
+  'time.minutes': '{count} min',
+  'time.underMinute': '<1 min',
+
+  // ── The next session ───────────────────────────────────────────────────────
+  'nextSession.in': 'Próxima sesión en {time}',
+  'nextSession.on': 'Próxima sesión: {day}',
+
   // ── Dock / cards ───────────────────────────────────────────────────────────
   'dock.startWorkout': 'Empezar sesión',
   'card.dailyGoal': 'Objetivo diario',
@@ -156,16 +165,6 @@ export const CORE_ES = {
   'block.sustain': 'Mantenimiento',
 
   // ── Common ───────────────────────────────────────────────────────────────
-  'update.otaTitle': 'Actualización lista',
-  'update.otaBlurb': 'Hay una versión nueva de Walkito. Tarda unos segundos y la app se reinicia donde estabas.',
-  'update.storeTitle': 'Nueva versión disponible',
-  'update.storeBlurb': 'Walkito {version} ya está en la App Store, con correcciones y mejoras.',
-  'update.install': 'Actualizar',
-  'update.openStore': 'Abrir la App Store',
-  'update.applying': 'Actualizando…',
-  'update.retry': 'Reintentar',
-  'update.failed': 'La descarga no terminó. Revisa tu conexión e inténtalo de nuevo.',
-  'update.later': 'Más tarde',
   'common.back': 'Atrás',
   'common.close': 'Cerrar',
   'common.profile': 'Perfil',

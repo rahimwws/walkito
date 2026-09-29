@@ -115,12 +115,15 @@ export const HOME_EN = {
   'home.tasksTitle': 'Today’s Tasks',
   'home.libraryTitle': 'For right now',
   'home.allDoneTitle': 'Done for today',
-  'home.allDoneBlurb':
-    'Nothing else is needed. The next session unlocks after twelve hours’ rest.',
+  /** Under the title when there is no next session to count down to - three
+   * weeks of rest ahead. Otherwise the line is `nextSession.*`. */
+  'home.allDoneBlurb': 'Nothing else is needed today.',
   /** The two empties, which are different facts: a retest day has no exercises
    * because it is a measurement, a rest day has none because it is rest. */
   'home.retestTask': 'Retest',
   'home.retestTaskSub': 'Checkpoint · {tests}',
+  /** On the retest row once today's tests are saved: opens them again, read-only. */
+  'home.seeResults': 'See results',
   'home.nothingScheduled': 'Nothing scheduled today. Rest counts.',
   'home.markDone': 'Mark done',
   'home.markNotDone': 'Mark not done',

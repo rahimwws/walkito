@@ -1,0 +1,152 @@
+/** testday strings (the guided test day: intro, the three tests, results). Filled per domain; see `../en/core.ts` for the rules. */
+
+export const TESTDAY_ES = {
+  // ── Chrome ────────────────────────────────────────────────────────────────
+  'testday.close': 'Cerrar',
+  'testday.leave.title': '¿Salir de las pruebas?',
+  'testday.leave.body': 'No se guarda nada hasta terminar la última prueba. Seguirán pendientes.',
+  'testday.leave.stay': 'Seguir',
+  'testday.leave.confirm': 'Salir',
+
+  // ── Intro ─────────────────────────────────────────────────────────────────
+  'testday.intro.eyebrow': 'Día de pruebas',
+  'testday.intro.title': 'Tres pruebas cortas',
+  'testday.intro.body': {
+    one: 'Alrededor de {count} minuto. Las cifras muestran cuánto ha avanzado cada meta y marcan tu plan para las próximas dos semanas.',
+    other: 'Unos {count} minutos. Las cifras muestran cuánto ha avanzado cada meta y marcan tu plan para las próximas dos semanas.',
+  },
+  'testday.intro.nowSeconds': 'Ahora {now} s · meta {goal} s',
+  'testday.intro.nowRaises': {
+    one: 'Ahora {now} · meta {count} elevación',
+    other: 'Ahora {now} · meta {count} elevaciones',
+  },
+  'testday.intro.firstSeconds': 'Primera medición · meta {goal} s',
+  'testday.intro.firstRaises': {
+    one: 'Primera medición · meta {count} elevación',
+    other: 'Primera medición · meta {count} elevaciones',
+  },
+  'testday.intro.need': 'Necesitas',
+  'testday.intro.needBarefoot': 'Los pies descalzos',
+  'testday.intro.needWall': 'Una pared para apoyarte',
+  'testday.intro.needPhone': 'El móvil donde puedas verlo',
+  'testday.intro.checkin': '¿Cómo está el pie ahora mismo?',
+  'testday.intro.checkinHint': 'Cuenta como tu registro de hoy.',
+  'testday.intro.painNone': 'Sin dolor',
+  'testday.intro.painWorst': 'Máximo',
+  'testday.intro.painA11y': '{score} de 10',
+  'testday.intro.sore':
+    'En un día con dolor las cifras salen más bajas de lo que tu pie puede de verdad, y las próximas dos semanas se planificarían con ellas. Las pruebas pueden esperar a mañana.',
+  'testday.intro.start': 'Empezar',
+  'testday.intro.anyway': 'Hacerlas igualmente',
+  'testday.intro.tomorrow': 'Hacerlas mañana',
+
+  // ── The three tests ───────────────────────────────────────────────────────
+  'testday.test.eyebrow': 'Prueba {current} de {total}',
+  'testday.test.calf.name': 'Elevaciones de talón',
+  'testday.test.calf.measures': 'Cuántas elevaciones hace cada pierna a ritmo constante',
+  'testday.test.arch.name': 'Mantener el arco',
+  'testday.test.arch.measures': 'Cuánto tiempo aguanta el arco levantado',
+  'testday.test.balance.name': 'Equilibrio',
+  'testday.test.balance.measures': 'Cuánto aguantas a una pierna con los ojos cerrados',
+
+  'testday.side.left': 'Pierna izquierda',
+  'testday.side.right': 'Pierna derecha',
+  'testday.side.leftSore': 'Pierna izquierda, la que duele',
+  'testday.side.rightSore': 'Pierna derecha, la que duele',
+
+  'testday.calf.step1': 'Ponte sobre una pierna, con la punta de los dedos en la pared para equilibrarte.',
+  'testday.calf.step2': 'Sube del todo y vuelve a bajar, una elevación cada 2 segundos. Un clic marca el ritmo.',
+  'testday.calf.step3': 'Pulsa Parar cuando no puedas mantener el ritmo o la altura completa. Luego, la otra pierna.',
+  'testday.calf.stopHint': 'Pulsa cuando no puedas mantener el ritmo o la altura completa',
+  'testday.calf.up': 'Arriba',
+  'testday.calf.down': 'Abajo',
+  'testday.calf.otherTitle': 'Ahora la otra pierna',
+  'testday.calf.otherBody': 'Mismo ritmo, misma altura completa, dedos en la pared.',
+
+  'testday.arch.step1': 'Ponte de pie sobre los dos pies, con el peso repartido.',
+  'testday.arch.step2': 'Lleva la base de los dedos hacia el talón para que el arco suba. Los dedos, largos y relajados.',
+  'testday.arch.step3': 'Aguanta. Pulsa Parar en cuanto el arco baje.',
+  'testday.arch.stopHint': 'Pulsa en cuanto el arco baje',
+
+  'testday.balance.step1': 'Ponte sobre una pierna junto a la pared, con las manos en la cintura.',
+  'testday.balance.step2': 'Cierra los ojos al terminar la cuenta atrás. Un sonido te avisa cuando se acaba el tiempo.',
+  'testday.balance.step3': 'Abre los ojos y pulsa Parar en cuanto el otro pie toque el suelo.',
+  'testday.balance.stopHint': 'Pulsa cuando el otro pie toque el suelo',
+
+  'testday.start': 'Empezar',
+  'testday.stop': 'Parar',
+  'testday.timeLeft': 'Quedan {time}',
+  'testday.secondsLeft': { one: 'segundo restante', other: 'segundos restantes' },
+  'testday.held': 'Llevas {n} s',
+
+  'testday.paused.title': 'En pausa',
+  'testday.paused.body': 'El temporizador se detuvo mientras la app estaba en segundo plano.',
+  'testday.paused.resume': 'Continuar',
+  'testday.paused.restart': 'Repetir esta prueba desde el principio',
+
+  'testday.confirm.raises': {
+    one: '{count} elevación, ¿es correcto?',
+    other: '{count} elevaciones, ¿es correcto?',
+  },
+  'testday.confirm.seconds': {
+    one: '{count} segundo, ¿es correcto?',
+    other: '{count} segundos, ¿es correcto?',
+  },
+  'testday.confirm.hint': 'Ajústalo si has perdido la cuenta.',
+  'testday.confirm.holdHint': 'Si tardaste en llegar al teléfono, quita esos segundos.',
+  'testday.confirm.less': 'Menos',
+  'testday.confirm.more': 'Más',
+  'testday.confirm.again': 'Repetir esta prueba',
+  'testday.confirm.next': 'Siguiente prueba',
+  'testday.confirm.finish': 'Ver resultados',
+
+  // ── Results ───────────────────────────────────────────────────────────────
+  'testday.results.title': 'Tus resultados',
+  'testday.results.blurb': 'Comparado con tu prueba anterior, nunca con nadie más.',
+  'testday.results.firstBlurb': 'Este es tu punto de partida. La próxima prueba mostrará qué ha cambiado.',
+  'testday.results.name.arch_hold': 'Mantener el arco',
+  'testday.results.name.calf_raises': 'Elevaciones de talón',
+  'testday.results.name.balance': 'Equilibrio',
+  'testday.results.name.symmetry': 'Simetría',
+  'testday.results.unitSeconds': { one: 'segundo', other: 'segundos' },
+  'testday.results.unitRaises': { one: 'elevación', other: 'elevaciones' },
+  'testday.results.percent': '{n} %',
+  'testday.results.gapUnit': 'de diferencia entre piernas',
+  'testday.results.legs': 'Izquierda {left} · derecha {right}',
+  'testday.results.goalSeconds': 'Meta {n} s',
+  'testday.results.goalRaises': { one: 'Meta {count} elevación', other: 'Meta {count} elevaciones' },
+  'testday.results.goalGap': 'Meta: menos del {n} %',
+  'testday.results.toGoSeconds': { one: 'Falta {count} s', other: 'Faltan {count} s' },
+  'testday.results.toGoRaises': { one: 'Falta {count} elevación', other: 'Faltan {count} elevaciones' },
+  'testday.results.toGoGap': { one: 'Falta {count} punto', other: 'Faltan {count} puntos' },
+  'testday.results.reached': 'Meta alcanzada',
+  'testday.results.moreSeconds': {
+    one: '{count} s más que la última vez',
+    other: '{count} s más que la última vez',
+  },
+  'testday.results.fewerSeconds': {
+    one: '{count} s menos que la última vez',
+    other: '{count} s menos que la última vez',
+  },
+  'testday.results.moreRaises': {
+    one: '{count} elevación más que la última vez',
+    other: '{count} elevaciones más que la última vez',
+  },
+  'testday.results.fewerRaises': {
+    one: '{count} elevación menos que la última vez',
+    other: '{count} elevaciones menos que la última vez',
+  },
+  'testday.results.gapSmaller': {
+    one: 'Diferencia {count} punto menor que la última vez',
+    other: 'Diferencia {count} puntos menor que la última vez',
+  },
+  'testday.results.gapLarger': {
+    one: 'Diferencia {count} punto mayor que la última vez',
+    other: 'Diferencia {count} puntos mayor que la última vez',
+  },
+  'testday.results.same': 'Igual que la última vez',
+  'testday.results.first': 'Primera medición',
+  'testday.results.nextTest': 'Próxima prueba: {date}',
+  'testday.results.planUpdated': 'Tu plan para las próximas dos semanas está actualizado.',
+  'testday.results.done': 'Listo',
+};

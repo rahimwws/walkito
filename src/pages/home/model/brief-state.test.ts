@@ -158,3 +158,21 @@ describe('the figures the sentences quote', () => {
     }
   });
 });
+
+describe('a test day', () => {
+  /**
+   * The TestFlight bug, as the morning line saw it: the tests saved, and the
+   * line above them still asking for them. A test day asks until it is done
+   * and then reads like any other finished day.
+   */
+  test('asks for the tests only until they are done', () => {
+    expect(briefState({ ...BASE, testToday: true })).toBe('retest');
+    expect(briefState({ ...BASE, testToday: true, doneToday: true })).not.toBe('retest');
+    expect(briefState({ ...BASE, testToday: true, doneToday: true, hoursOnFeet: null })).toBe('done');
+  });
+
+  test('the baseline, the same way', () => {
+    expect(briefState({ ...BASE, cursor: 0, testToday: true })).toBe('baseline');
+    expect(briefState({ ...BASE, cursor: 0, testToday: true, doneToday: true })).not.toBe('baseline');
+  });
+});

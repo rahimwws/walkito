@@ -72,8 +72,10 @@ describe('the plan screen', () => {
     expect(rationaleLine(t, { kind: 'painUp' }, null)).not.toBeNull();
   });
 
-  test('7 · the test day reads "about 4 min"', () => {
-    expect(t('pages.plan.testBody', { count: 3, minutes: 4 })).toBe('3 quick tests · about 4 min');
+  test('7 · the test day says what and why: three timed tests, about 4 min', () => {
+    expect(t('pages.plan.testBody', { count: 3, minutes: 4 })).toBe(
+      '3 short timed tests, about 4 min in all. They show what your training has built, and the plan adjusts to the results.',
+    );
     const test = { ...day('2026-10-01', 'test'), reason: null, steppedDown: false } as const;
     expect(todayVariant(test, false)).toBe('test');
     expect(todayTitle(t, test, 'arch_hold', 'test')).toBe('Test day');

@@ -102,6 +102,12 @@ export type WeekInput = {
   seenBefore: ReadonlySet<string> | null;
   /** When the next test is due, `YYYY-MM-DD`, or null. */
   testDue: string | null;
+  /**
+   * The first day an overdue test may go on, when that is later than `today`:
+   * tomorrow once today's session is done, or the day a test was put off to
+   * ("Test tomorrow"). Omitted, it is `today`.
+   */
+  testFrom?: string;
 };
 
 /** The shape of the week by how many days the user wants. Strength days never touch. */
@@ -371,8 +377,12 @@ function testDateIn(input: WeekInput): string | null {
   if (input.testDue == null) return null;
   const weekEnd = addDays(input.weekStart, 6);
   if (daysBetween(input.testDue, weekEnd) < 0) return null; // due after this week
-  // Due inside the week, or overdue: never on a day already gone.
-  const earliest = daysBetween(input.weekStart, input.today) > 0 ? input.today : input.weekStart;
+  // Due inside the week, or overdue: never on a day already gone — nor on one
+  // whose session is done, nor before the day a test was put off to.
+  const earliest = [input.today, input.testFrom ?? input.today].reduce(
+    (latest, date) => (daysBetween(latest, date) > 0 ? date : latest),
+    input.weekStart,
+  );
   const on = daysBetween(earliest, input.testDue) >= 0 ? input.testDue : earliest;
   return daysBetween(on, weekEnd) >= 0 ? on : null;
 }

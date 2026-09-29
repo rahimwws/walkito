@@ -67,10 +67,10 @@ export const HOME_ES = {
   'home.tasksTitle': 'Tareas de hoy',
   'home.libraryTitle': 'Para ahora mismo',
   'home.allDoneTitle': 'Hecho por hoy',
-  'home.allDoneBlurb':
-    'No hace falta nada más. La próxima sesión se abre tras doce horas de descanso.',
+  'home.allDoneBlurb': 'Hoy no hace falta nada más.',
   'home.retestTask': 'Pruebas de control',
   'home.retestTaskSub': 'Control · {tests}',
+  'home.seeResults': 'Ver resultados',
   'home.nothingScheduled': 'Hoy no hay nada programado. El descanso cuenta.',
   'home.markDone': 'Marcar como hecho',
   'home.markNotDone': 'Desmarcar',

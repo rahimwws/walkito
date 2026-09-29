@@ -23,6 +23,14 @@ export type SessionPainSheetProps = {
   /** A score was confirmed, 0–10. */
   onPick: (score: number) => void;
   onCancel: () => void;
+  /**
+   * Asked after the session rather than during it — the closing sheet's "It
+   * hurt". The scale is the same; what changes is what the number is said to
+   * do, because nothing can end or carry on a session that is already over.
+   * The outcome lines speak about the next session instead, and the button
+   * only saves.
+   */
+  after?: boolean;
 };
 
 /** 0–5 on the first row, 6–10 on the second: two even rows rather than six
@@ -59,7 +67,7 @@ const RISE = 44;
  * itself runs inside a presented sheet, and a `Modal` nested in one does not
  * reliably present on iOS. See the note on `CelebrationSheet`.
  */
-export function SessionPainSheet({ visible, onPick, onCancel }: SessionPainSheetProps) {
+export function SessionPainSheet({ visible, onPick, onCancel, after = false }: SessionPainSheetProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -164,13 +172,23 @@ export function SessionPainSheet({ visible, onPick, onCancel }: SessionPainSheet
           <Text accessibilityLiveRegion="polite" style={[styles.blurb, { color: meter.caption }]}>
             {score == null
               ? t('widgets.painPick')
-              : stops
-                ? t('widgets.painHighHint')
-                : t('widgets.painLowHint')}
+              : after
+                ? stops
+                  ? t('player.afterPain.highHint')
+                  : t('player.afterPain.lowHint')
+                : stops
+                  ? t('widgets.painHighHint')
+                  : t('widgets.painLowHint')}
           </Text>
 
           <PrimaryButton
-            label={stops ? t('widgets.painEnd') : t('widgets.painResume')}
+            label={
+              after
+                ? t('player.afterPain.save')
+                : stops
+                  ? t('widgets.painEnd')
+                  : t('widgets.painResume')
+            }
             disabled={score == null}
             onPress={() => {
               if (score == null) return;

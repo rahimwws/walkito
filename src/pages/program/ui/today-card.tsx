@@ -1,6 +1,8 @@
-import { CheckCircleIcon } from 'phosphor-react-native/src/icons/CheckCircle';
-import { ClockIcon } from 'phosphor-react-native/src/icons/Clock';
-import { TargetIcon } from 'phosphor-react-native/src/icons/Target';
+import ChartLineData02Icon from '@hugeicons/core-free-icons/ChartLineData02Icon';
+import CheckmarkCircle02Icon from '@hugeicons/core-free-icons/CheckmarkCircle02Icon';
+import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
+import Target01Icon from '@hugeicons/core-free-icons/Target01Icon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import { Image, StyleSheet, Text, View } from 'react-native';
 
 import type { ExerciseCategory, SessionMinutes } from '@/entities/program';
@@ -13,6 +15,7 @@ import { artFor } from '../config/kind-art';
 import type { TodayVariant } from '../model/plan-view';
 import { CATEGORY_TONE, KIND_STICKER, TINT_TODAY, tint } from './kind-tone';
 import { PlanChip } from './plan-chip';
+import { RestButton, WaitCaption } from './rest-button';
 
 export const MINUTE_CHOICES: readonly SessionMinutes[] = [3, 5, 10];
 
@@ -27,12 +30,19 @@ export type TodayCardProps = {
   onMinutes: (minutes: SessionMinutes) => void;
   onStart: () => void;
   onPreview: (exerciseId: string) => void;
-  /** Test day: the three tests, and "3 quick tests · about 4 min". */
+  /** Test day: the three tests, and what they are for. */
   tests?: { chips: readonly string[]; body: string };
-  /** Done: "Tomorrow: balance, 5 min." */
+  /** Done: "Tomorrow: balance, 5 min.", or "Next session: Monday, strength." */
   tomorrow?: string;
   /** Rest: the Library routine the chip opens. */
   restRoutine?: { label: string; onPress: () => void };
+  /**
+   * When the next session opens, epoch ms — for the done and rest cards'
+   * countdown. Null when three weeks hold nothing but rest.
+   */
+  nextAt?: number | null;
+  /** Done on a test day: the results again, read-only. */
+  onResults?: () => void;
 };
 
 /**
@@ -42,13 +52,14 @@ export type TodayCardProps = {
  * what the session is, as glass chips that open a preview; how long, as three
  * more chips; and the button. A flare day swaps in seated work and hides the
  * minutes (it is three, fixed); a test day shows the tests instead; a rest day
- * has no button; a done day says so and looks at tomorrow.
+ * has no button, only the wait; a done day says so, names the next session and
+ * counts down to it on the button that will start it.
  *
  * The mascot sits faintly at the right edge, which is what gives the glass
  * something to refract — glass over a flat colour is just a lighter chip.
  */
 export function TodayCard(props: TodayCardProps) {
-  const { variant, kind, title, moves, minutes, onMinutes, onStart, onPreview, tests, tomorrow, restRoutine } = props;
+  const { variant, kind, title, moves, minutes, onMinutes, onStart, onPreview, tests, tomorrow, restRoutine, nextAt, onResults } = props;
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -75,15 +86,28 @@ export function TodayCard(props: TodayCardProps) {
 
       {variant === 'done' && (
         <View style={styles.doneRow}>
-          <CheckCircleIcon size={22} weight="fill" color={colors.foreground} />
+          <HugeiconsIcon icon={CheckmarkCircle02Icon} size={22} color={colors.foreground} strokeWidth={2} />
           <Text style={[styles.body, { color: colors.foreground }]}>{t('pages.plan.done')}</Text>
         </View>
       )}
       {variant === 'done' && tomorrow != null && <Text style={[styles.body, { color: meter.caption }]}>{tomorrow}</Text>}
+      {/* A finished test day keeps a way back to its numbers. The results are
+          the reason the four minutes were worth it, and the moment somebody
+          wants them again is not the moment they were first shown. */}
+      {variant === 'done' && onResults != null && (
+        <View style={styles.chips}>
+          <PlanChip label={t('pages.plan.seeResults')} icon={ChartLineData02Icon} tone={accents[scheme].amber} onPress={onResults} />
+        </View>
+      )}
+      {/* The button stays where it was, counting down to the next session and
+          turning into Start when it opens: the thumb that comes back tomorrow
+          finds it in the same place. The only countdown on the screen. */}
+      {variant === 'done' && nextAt != null && <RestButton unlockAt={nextAt} onStart={onStart} style={styles.flush} />}
 
       {rest && (
         <>
           <Text style={[styles.body, { color: meter.caption }]}>{t('pages.plan.rest')}</Text>
+          {nextAt != null && <WaitCaption at={nextAt} style={[styles.body, { color: colors.foreground }]} />}
           {restRoutine != null && (
             <View style={styles.chips}>
               <PlanChip label={restRoutine.label} tone={accents[scheme].teal} icon={CATEGORY_TONE.Mobility.icon} onPress={restRoutine.onPress} />
@@ -97,7 +121,7 @@ export function TodayCard(props: TodayCardProps) {
           <Text style={[styles.body, { color: colors.foreground }]}>{tests.body}</Text>
           <View style={styles.chips}>
             {tests.chips.map((chip) => (
-              <PlanChip key={chip} label={chip} icon={TargetIcon} tone={accents[scheme].amber} />
+              <PlanChip key={chip} label={chip} icon={Target01Icon} tone={accents[scheme].amber} />
             ))}
           </View>
         </>
@@ -126,7 +150,7 @@ export function TodayCard(props: TodayCardProps) {
                 <PlanChip
                   key={m}
                   label={t('session.minutes', { count: m })}
-                  icon={ClockIcon}
+                  icon={Clock01Icon}
                   selected={m === minutes}
                   tone={tone ?? { fill: colors.foreground, track: meter.track }}
                   accessibilityRole="radio"
@@ -189,4 +213,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 8,
   },
+  /** The card's own gap spaces the button; the button's default margin would
+   * double it. */
+  flush: {},
 });

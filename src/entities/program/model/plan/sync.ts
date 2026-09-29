@@ -3,7 +3,7 @@ import { currentUserId, supabase } from '@/shared/lib/supabase';
 import { usageDays } from '@/shared/lib/usage';
 import { kv } from '@/shared/lib/storage';
 
-import { retestResults } from '../program';
+import { importRetestResults, retestResults, type RetestResult } from '../program';
 import { allLogs, dateKeyForDay, programState, setProgramState, writeLog, type DayLog } from '../state';
 import type { Goal } from './goals';
 import type { Outcome } from './outcome';
@@ -48,8 +48,18 @@ export type ProfileFacts = {
 
 const LAST_PUSH_KEY = 'plan/sync-last-push';
 const FAILED_AT_KEY = 'plan/sync-failed-at';
-/** After a failure, wait this long before trying again. */
-const BACKOFF_MS = 30 * 60 * 1000;
+/**
+ * After the network failed, ordinary writes wait this long before trying again.
+ *
+ * A minute, not the half hour it was. Half an hour meant a session finished on
+ * a train, one tunnel after a dropped request, did not go up until long after
+ * the phone had signal again. The wait only has to stop a dead connection being
+ * hit on every tick of a session; a push that matters — a finish, a check-in,
+ * the app going away or coming back — does not wait at all.
+ */
+const BACKOFF_MS = 60 * 1000;
+/** The same table failing with the same code is reported at most this often. */
+const REPORT_EVERY_MS = 10 * 60 * 1000;
 /** Rows per request: well under PostgREST's body limit, even for week plans. */
 const CHUNK = 500;
 /** Rows per page when reading back — PostgREST's default cap is 1000. */
@@ -103,6 +113,21 @@ function sentHashes(uid: string, table: string): Record<string, string> {
 type Failure = { table: string; code: string };
 
 /**
+ * A failure as it is reported and handled.
+ *
+ * supabase-js does not throw when the request never arrives: the fetch error
+ * comes back as a value like any database error, with an empty code and the
+ * fetch's own message. Read as a table error it would be reported as `''` and
+ * retried on every write while the phone is offline, so it is named `network`
+ * here and backs off like a thrown one.
+ */
+function failureOf(table: string, error: { code?: string | null; message?: string | null }): Failure {
+  if (error.code) return { table, code: error.code };
+  const offline = /network|fetch|timed? ?out|offline|abort/i.test(error.message ?? '');
+  return { table, code: offline ? 'network' : 'unknown' };
+}
+
+/**
  * Upserts the rows of `table` that changed since they were last sent, in
  * chunks, and remembers them once the server has them. A failed chunk stops the
  * table; its rows stay unsent and go on the next push.
@@ -119,42 +144,113 @@ async function sendChanged(
   for (let i = 0; i < changed.length; i += CHUNK) {
     const chunk = changed.slice(i, i + CHUNK);
     const { error } = await db.from(table).upsert(chunk);
-    if (error != null) return { table, code: error.code ?? 'unknown' };
+    if (error != null) return failureOf(table, error);
     for (const row of chunk) sent[keyOf(row)] = hash(row);
     kv.set(sentKey(uid, table), JSON.stringify(sent));
   }
   return null;
 }
 
+export type PushOptions = {
+  /**
+   * Skip the network backoff. For the pushes that must not wait: a finished
+   * session or test, a check-in, and the app going away or coming back.
+   */
+  urgent?: boolean;
+};
+
+/** The push under way, if one is. */
+let running: Promise<SyncOutcome> | null = null;
+/** The one push queued behind it, and what it will be run with. */
+let queued: Promise<SyncOutcome> | null = null;
+let queuedWith: { facts: ProfileFacts; urgent: boolean } | null = null;
+
 /**
  * Sends what changed since the last push. Idempotent: every row is an upsert on
  * its key, so a push repeated after a failure simply finishes the job.
+ *
+ * One at a time. A finish, the debounce and the app going to the background
+ * can all ask within the same second, and two pushes racing would read the
+ * same unsent rows and send them twice. A push asked for while one is running
+ * runs once more after it — only once, however many ask — because the writes
+ * that prompted it may have landed after the running one read its rows.
  *
  * Failures never reach the user — there is nothing they could do about a
  * server — but they do reach us: each is tracked with the table and the error
  * code, so a sync that has quietly stopped working shows up in PostHog the same
  * day rather than weeks later.
  */
-export async function pushPlan(facts: ProfileFacts, now: number = Date.now()): Promise<SyncOutcome> {
+export function pushPlan(facts: ProfileFacts, options: PushOptions = {}): Promise<SyncOutcome> {
+  const urgent = options.urgent === true;
+  if (running == null) {
+    running = pushOnce(facts, urgent).finally(() => {
+      running = null;
+    });
+    return running;
+  }
+  queuedWith = { facts, urgent: urgent || (queuedWith?.urgent ?? false) };
+  if (queued == null) {
+    queued = running
+      .catch((): SyncOutcome => 'failed')
+      .then(() => {
+        const next = queuedWith ?? { facts, urgent };
+        queuedWith = null;
+        queued = null;
+        return pushPlan(next.facts, { urgent: next.urgent });
+      });
+  }
+  return queued;
+}
+
+/** When each table-and-code failure was last reported. In memory: a relaunch may say it again. */
+const reportedAt = new Map<string, number>();
+
+function report(failure: Failure, now: number): void {
+  const key = `${failure.table}/${failure.code}`;
+  const last = reportedAt.get(key);
+  if (last != null && now - last < REPORT_EVERY_MS) return;
+  reportedAt.set(key, now);
+  track('plan_sync_failed', failure);
+}
+
+async function pushOnce(facts: ProfileFacts, urgent: boolean): Promise<SyncOutcome> {
   const failedAt = Number(kv.getString(FAILED_AT_KEY) ?? 0);
-  if (now - failedAt < BACKOFF_MS) return 'skipped';
+  if (!urgent && Date.now() - failedAt < BACKOFF_MS) return 'skipped';
   const c = await client();
   if (c == null) return 'skipped';
   const { db, uid } = c;
+  // Read after the await, so the rows are the ones on disk now rather than
+  // when the push was asked for.
+  const now = Date.now();
 
   let failure: Failure | null = null;
   try {
     failure = await pushRows(db, uid, facts, now);
   } catch (error) {
-    // A thrown error is the network, not the database: PostgREST errors come back as values.
-    failure = { table: 'all', code: error instanceof Error && /network/i.test(error.message) ? 'network' : 'thrown' };
+    // A thrown error is the network, not the database: PostgREST errors come
+    // back as values. Only this backs off — there is no point asking a dead
+    // connection again on the next write.
+    const thrown: Failure = {
+      table: 'all',
+      code: error instanceof Error && /network/i.test(error.message) ? 'network' : 'thrown',
+    };
+    kv.set(FAILED_AT_KEY, String(Date.now()));
+    report(thrown, now);
+    return 'failed';
   }
-  if (failure != null) {
-    kv.set(FAILED_AT_KEY, String(now));
-    track('plan_sync_failed', failure);
+  if (failure?.code === 'network') {
+    kv.set(FAILED_AT_KEY, String(Date.now()));
+    report(failure, now);
     return 'failed';
   }
   kv.remove(FAILED_AT_KEY);
+  if (failure != null) {
+    // A table refusing its rows — a missing migration, a constraint — is not
+    // made better by waiting. Its rows stay unsent (see `sendChanged`) and go
+    // with the next write; the report is throttled so that is not a flood.
+    report(failure, now);
+    return 'failed';
+  }
   kv.set(LAST_PUSH_KEY, String(now));
   return 'pushed';
 }
@@ -239,7 +335,7 @@ async function pushRows(
   const kept = goalRows.map((row) => String(row.type));
   if (kept.length > 0) {
     const { error } = await db.from('goals').delete().eq('user_id', uid).not('type', 'in', `(${kept.join(',')})`);
-    if (error != null) return { table: 'goals', code: error.code ?? 'unknown' };
+    if (error != null) return failureOf('goals', error);
   }
 
   // Exercises after their sessions: the foreign key needs the parent first.
@@ -271,10 +367,12 @@ async function readAll(db: NonNullable<typeof supabase>, uid: string, table: str
  * Only when this device has done nothing of its own — no session and no
  * logged day — so a restore can never overwrite anything the user did here.
  * The starting goals onboarding just wrote do not count; the restored ones
- * replace them. Test results
- * are not restored: the levels table on the device is rebuilt from them by the
- * retest flow, and replaying that here would stamp every old test with today's
- * date. They stay on the server for Progress to read back later.
+ * replace them.
+ *
+ * Test results come back too, with the dates they were taken on (see
+ * `importRetestResults`). They used to stay on the server, which left a
+ * reinstalled phone with no tests at all: `testDue` fell back to the plan's
+ * first day and somebody weeks in was asked for a new baseline.
  */
 export async function restorePlan(): Promise<boolean> {
   const active = Object.values(allLogs()).some((log) => log.painMorning != null || log.sessionCompleted);
@@ -288,17 +386,26 @@ export async function restorePlan(): Promise<boolean> {
     return false;
   }
   if (profile.data == null) return false;
-  const [goalData, weekData, sessionData, exerciseData, prefData, checkinData] = await Promise.all([
+  const [goalData, weekData, sessionData, exerciseData, prefData, checkinData, testData] = await Promise.all([
     readAll(db, uid, 'goals'),
     readAll(db, uid, 'week_plans'),
     readAll(db, uid, 'sessions', 'completed_at'),
     readAll(db, uid, 'session_exercises'),
     readAll(db, uid, 'exercise_prefs'),
     readAll(db, uid, 'checkins', 'date'),
+    readAll(db, uid, 'tests', 'day_number'),
   ]);
   // All or nothing: half a history restored is worse than none, because the
   // device would then push that half back up as the whole.
-  if (goalData == null || weekData == null || sessionData == null || exerciseData == null || prefData == null || checkinData == null) {
+  if (
+    goalData == null ||
+    weekData == null ||
+    sessionData == null ||
+    exerciseData == null ||
+    prefData == null ||
+    checkinData == null ||
+    testData == null
+  ) {
     return false;
   }
   const p = profile.data as Record<string, unknown>;
@@ -382,7 +489,25 @@ export async function restorePlan(): Promise<boolean> {
     if (s.source === 'library' || s.source === 'quick') writeLog(day, { libraryDone: true });
     else writeLog(day, { sessionCompleted: true, completedAt: s.completedAt, exercisesDone: s.exercises.filter((e) => e.status === 'done').map((e) => e.id) });
   }
+
+  // Day numbers on the server count from the start date restored above, so
+  // they land on the same dates here. Only onto an empty record — a test taken
+  // on this phone is never replaced by the server's copy.
+  if (retestResults().length === 0 && testData.length > 0) {
+    importRetestResults((testData as Record<string, unknown>[]).map(testFromRow));
+  }
   return true;
+}
+
+/** A `tests` row as the device's retest record. The levels are re-derived on import. */
+function testFromRow(row: Record<string, unknown>): Pick<RetestResult, 'dayNumber' | 'date' | 'calf' | 'balance' | 'arch'> {
+  return {
+    dayNumber: Number(row.day_number),
+    date: String(row.taken_on),
+    calf: { left: Number(row.calf_left), right: Number(row.calf_right) },
+    balance: { left: Number(row.balance_left), right: Number(row.balance_right) },
+    arch: { left: Number(row.arch_left), right: Number(row.arch_right) },
+  };
 }
 
 function dayFromDate(startDate: string, date: string): number {

@@ -1,9 +1,9 @@
-import type { Icon } from 'phosphor-react-native';
-import { ArrowsClockwiseIcon } from 'phosphor-react-native/src/icons/ArrowsClockwise';
-import { BarbellIcon } from 'phosphor-react-native/src/icons/Barbell';
-import { MoonIcon } from 'phosphor-react-native/src/icons/Moon';
-import { ScalesIcon } from 'phosphor-react-native/src/icons/Scales';
-import { WavesIcon } from 'phosphor-react-native/src/icons/Waves';
+import BalanceScaleIcon from '@hugeicons/core-free-icons/BalanceScaleIcon';
+import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
+import Moon02Icon from '@hugeicons/core-free-icons/Moon02Icon';
+import RepeatIcon from '@hugeicons/core-free-icons/RepeatIcon';
+import Yoga01Icon from '@hugeicons/core-free-icons/Yoga01Icon';
+import type { IconSvgElement } from '@hugeicons/react-native';
 
 import type { ExerciseCategory, SessionKind } from '@/entities/program';
 import type { AccentName } from '@/shared/config';
@@ -28,17 +28,19 @@ export function tint(hex: string, alpha: number): string {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
 
-export const KIND_STICKER: Record<SessionKind, { icon: Icon; accent: AccentName }> = {
-  strength: { icon: BarbellIcon, accent: 'violet' },
-  mobility: { icon: WavesIcon, accent: 'teal' },
-  balance: { icon: ScalesIcon, accent: 'blue' },
-  recovery: { icon: MoonIcon, accent: 'amber' },
+/** The glyphs are the program entity's own (`SESSION_META`), so a kind wears
+ * the same one here as in a day sheet or on the path. */
+export const KIND_STICKER: Record<SessionKind, { icon: IconSvgElement; accent: AccentName }> = {
+  strength: { icon: Dumbbell01Icon, accent: 'violet' },
+  mobility: { icon: Yoga01Icon, accent: 'teal' },
+  balance: { icon: BalanceScaleIcon, accent: 'blue' },
+  recovery: { icon: Moon02Icon, accent: 'amber' },
 };
 
 /** Each exercise category's chip: the same glyph and accent Home's list uses. */
-export const CATEGORY_TONE: Record<ExerciseCategory, { icon: Icon; accent: AccentName }> = {
-  Fitness: { icon: BarbellIcon, accent: 'violet' },
-  Mobility: { icon: WavesIcon, accent: 'teal' },
-  Recovery: { icon: MoonIcon, accent: 'amber' },
-  Habit: { icon: ArrowsClockwiseIcon, accent: 'blue' },
+export const CATEGORY_TONE: Record<ExerciseCategory, { icon: IconSvgElement; accent: AccentName }> = {
+  Fitness: { icon: Dumbbell01Icon, accent: 'violet' },
+  Mobility: { icon: Yoga01Icon, accent: 'teal' },
+  Recovery: { icon: Moon02Icon, accent: 'amber' },
+  Habit: { icon: RepeatIcon, accent: 'blue' },
 };

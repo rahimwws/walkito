@@ -1,7 +1,7 @@
 /**
- * Offering a newer version of the app: an EAS Update applied in place, or a
- * new build in the App Store. The root layout mounts the hook and the sheet
- * once; nothing else needs to know.
+ * Offering a newer version of the app: an EAS Update downloaded in the
+ * background and applied with a seamless restart, or a new build in the App
+ * Store. The root layout mounts the host once; nothing else needs to know.
  */
-export { useAppUpdates, type AppUpdates, type UpdateOffer } from './model/use-app-updates';
-export { UpdateSheet } from './ui/update-sheet';
+export { AppUpdateHost } from './ui/app-update-host';
+export type { UpdateOffer, UpdatePhase } from './model/decide';

@@ -130,6 +130,26 @@ export const CORE_EN = {
   // flame without pushing the profile control off the row.
   'gift.capsule': 'Gift',
 
+  // ── Waits ──────────────────────────────────────────────────────────────────
+  // How long until something opens, as `{time}` in a sentence that owns the
+  // rest (`shared/lib/wait`). Abbreviated, like Home's chips, so a countdown
+  // stays the width of the control it sits on, and not plural entries for
+  // that reason: an abbreviation does not agree.
+  'time.hoursMinutes': '{hours}h {minutes}m',
+  'time.minutes': '{count}m',
+  /** The last minute. Notation rather than words, so it drops into `{time}`
+   * whatever case the sentence around it asks for. */
+  'time.underMinute': '<1m',
+
+  // ── The next session ───────────────────────────────────────────────────────
+  // Said by the dock, Home's finished list and the plan's today card, which is
+  // why it lives here rather than in one screen's domain.
+  'nextSession.in': 'Next session in {time}',
+  /** More than a day off: the weekday instead of a count. After a colon, so
+   * the name stands in its dictionary form - Russian needs the nominative,
+   * which a preposition would take away. */
+  'nextSession.on': 'Next session: {day}',
+
   // ── Dock / cards ───────────────────────────────────────────────────────────
   'dock.startWorkout': 'Start Workout',
   'card.dailyGoal': 'Daily Goal',
@@ -200,16 +220,6 @@ export const CORE_EN = {
   'block.sustain': 'Sustain',
 
   // ── Common ───────────────────────────────────────────────────────────────
-  'update.otaTitle': 'Update ready',
-  'update.otaBlurb': 'A fresh version of Walkito is ready. It takes a few seconds, then the app restarts where you were.',
-  'update.storeTitle': 'New version available',
-  'update.storeBlurb': 'Walkito {version} is in the App Store, with fixes and improvements.',
-  'update.install': 'Update now',
-  'update.openStore': 'Open the App Store',
-  'update.applying': 'Updating…',
-  'update.retry': 'Try again',
-  'update.failed': 'The download didn’t finish. Check your connection and try again.',
-  'update.later': 'Later',
   'common.back': 'Back',
   'common.close': 'Close',
   'common.profile': 'Profile',

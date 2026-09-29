@@ -473,14 +473,49 @@ function retestBefore(day: number): Retest | undefined {
  * the measurement, never passed in: there is no way to record a Lv4 that the
  * number beside it does not earn.
  */
-export function recordRetest(day: number, measured: RetestMeasurements): Retest {
+export function recordRetest(day: number, measured: RetestMeasurements, now: number = Date.now()): Retest {
   const retest = buildRetest(measured, retestBefore(day));
   RETESTS[day] = retest;
-  recordRetestResult(day, measured, retest);
+  recordRetestResult(day, measured, retest, now);
   persistRetests();
   for (const listener of retestSubscribers) listener();
   track('retest_completed', { day, block: blockIndexForRetest(day) });
   return retest;
+}
+
+/** The raw figures a stored result was measured as — what `recordRetest` took. */
+function measuredOf(result: Pick<RetestResult, 'calf' | 'balance' | 'arch'>): RetestMeasurements {
+  return { calf: result.calf.left, otherCalf: result.calf.right, arch: result.arch.left, balance: result.balance.left };
+}
+
+/**
+ * Test results brought back rather than taken — a reinstall getting its
+ * history back from the server.
+ *
+ * Replaces the record instead of merging into it, and re-derives every row the
+ * sheet renders from the raw numbers, oldest first, so each result is read
+ * against the one before it exactly as `recordRetest` read it when it was
+ * taken. The dates are the ones the tests were taken on: replaying them through
+ * `recordRetest` would stamp every old test with today, and would count each one
+ * in analytics a second time.
+ *
+ * Without this a reinstall starts with no tests, `testDue` falls back to the
+ * plan's first day, and somebody eight weeks in is asked for a new baseline.
+ */
+export function importRetestResults(rows: readonly Pick<RetestResult, 'dayNumber' | 'date' | 'calf' | 'balance' | 'arch'>[]): void {
+  const ordered = rows.filter((row) => Number.isFinite(row.dayNumber)).sort((a, b) => a.dayNumber - b.dayNumber);
+  for (const key of Object.keys(RETESTS)) delete RETESTS[Number(key)];
+  Object.assign(RETESTS, SEEDED_RETESTS);
+  RETEST_RESULTS.length = 0;
+  for (const row of ordered) {
+    const measured = measuredOf(row);
+    const retest = buildRetest(measured, retestBefore(row.dayNumber));
+    RETESTS[row.dayNumber] = retest;
+    RETEST_RESULTS.push(resultOf(row.dayNumber, measured, retest, row.date));
+  }
+  kv.set(RESULTS_KEY, JSON.stringify(RETEST_RESULTS));
+  persistRetests();
+  for (const listener of retestSubscribers) listener();
 }
 
 /**
@@ -532,12 +567,21 @@ export function blockIndexForRetest(day: number): number {
   return PLAN_BLOCKS.find((block) => block.retestDay === day)?.index ?? 0;
 }
 
-function recordRetestResult(day: number, measured: RetestMeasurements, retest: Retest): void {
+function recordRetestResult(day: number, measured: RetestMeasurements, retest: Retest, now: number): void {
+  const result = resultOf(day, measured, retest, toDateKey(new Date(now)));
+  const at = RETEST_RESULTS.findIndex((row) => row.dayNumber === day);
+  if (at >= 0) RETEST_RESULTS[at] = result;
+  else RETEST_RESULTS.push(result);
+  kv.set(RESULTS_KEY, JSON.stringify(RETEST_RESULTS));
+}
+
+/** One measurement as the stored record, its levels read off the rows beside it. */
+function resultOf(day: number, measured: RetestMeasurements, retest: Retest, date: string): RetestResult {
   const level = (zone: ZoneKey) => retest.rows.find((row) => row.zone === zone)?.level ?? 1;
-  const result: RetestResult = {
+  return {
     blockIndex: blockIndexForRetest(day),
     dayNumber: day,
-    date: toDateKey(new Date()),
+    date,
     // The rehabilitated side is recorded as the left column throughout. Which
     // foot that is belongs to the profile, not to the measurement.
     calf: { left: measured.calf, right: measured.otherCalf },
@@ -551,10 +595,6 @@ function recordRetestResult(day: number, measured: RetestMeasurements, retest: R
       symmetry: level('symmetry'),
     },
   };
-  const at = RETEST_RESULTS.findIndex((row) => row.dayNumber === day);
-  if (at >= 0) RETEST_RESULTS[at] = result;
-  else RETEST_RESULTS.push(result);
-  kv.set(RESULTS_KEY, JSON.stringify(RETEST_RESULTS));
 }
 
 /**
@@ -707,47 +747,17 @@ export function painFor(index: number): number {
   return 0;
 }
 
-/**
- * The shortest gap the plan will put between two sessions.
+/*
+ * When the next session opens is `nextSession` in `plan/next-session.ts`: at
+ * midnight of the next plan day that is not a rest day.
  *
- * Twelve hours, and it is the rest that does the work: loaded tendon tissue
- * needs the interval as much as the load. Without it somebody who trained at
- * eight in the evening would be offered the next session four hours later, at
- * midnight, which is the calendar talking rather than the programme.
+ * There used to be a twelve-hour rest rule here as well (`REST_HOURS`,
+ * `nextSessionAt`), which kept an evening session's successor shut until late
+ * the next morning. It was dropped for one rule the whole app shares — Plan,
+ * Home, the widget and the reminders all read `nextSession` — because the plan
+ * is a calendar of days, and the rest between sessions is the rest days the
+ * week already has.
  */
-export const REST_HOURS = 12;
-
-/**
- * When the next session becomes available, in epoch milliseconds.
- *
- * The later of two things, because both are real constraints:
- *
- * - **Tomorrow.** The plan is a calendar of days and a day is a day; finishing
- *   early does not buy an extra one.
- * - **Twelve hours after the last session ended.** Finishing at eleven at night
- *   must not open the next one an hour later.
- *
- * Null when today has not been finished — there is nothing to wait for, because
- * the thing to do is today's session.
- *
- * The countdown this feeds used to be "hours until midnight", which after an
- * evening session read "unlocks in 5h" and then let the day through at
- * midnight anyway. Both halves were wrong: the number was not the rest the body
- * needs, and it was not what the app was going to do either.
- */
-export function nextSessionAt(dayNumber: number, now = Date.now()): number | null {
-  const log = logFor(dayNumber);
-  if (log?.sessionCompleted !== true) return null;
-
-  const tomorrow = new Date(now);
-  tomorrow.setHours(24, 0, 0, 0);
-
-  // Missing on entries written before the stamp existed. Falling back to
-  // midnight keeps those days behaving as they did rather than pinning them
-  // twelve hours past a time nobody recorded.
-  const rested = log.completedAt == null ? 0 : log.completedAt + REST_HOURS * 3_600_000;
-  return Math.max(tomorrow.getTime(), rested);
-}
 
 /**
  * What the twelve weeks actually changed, in the user's own numbers.

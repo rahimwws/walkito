@@ -118,36 +118,10 @@ export const OFFER_EN = {
     'Everything you logged is still here to read. To run sessions again, pick up where you left off.',
   'widgets.sessionLockedCta': 'See your options',
 
-  // ── Session player: the retest ───────────────────────────────────────────
-  // The three measurements a checkpoint day plays instead of a session. They
-  // are tests rather than exercises, so the program's catalogue has no entry
-  // for them and they are named here.
-  'widgets.retestCalfRaises': 'Calf raises to failure',
-  'widgets.retestArchHold': 'Arch hold',
-  'widgets.retestBalance': 'Single-leg balance',
-
-  // ── Retest: entering the numbers ─────────────────────────────────────────
-  'widgets.retestEntryTitle': 'Your numbers',
-  'widgets.retestEntryBlurb': 'Count what you just did. Honest numbers make the next retest mean something.',
-  'widgets.retestLeft': 'Left leg',
-  'widgets.retestRight': 'Right leg',
-  'widgets.retestLeftSore': 'Left leg - the sore one',
-  'widgets.retestRightSore': 'Right leg - the sore one',
-  'widgets.retestSeconds': 'Seconds',
-  'widgets.retestLess': 'Less',
-  'widgets.retestMore': 'More',
-  'widgets.retestSave': 'Save results',
-  'widgets.retestResultTitle': 'Where you are now',
-  'widgets.retestResultBlurb': 'Measured against your last retest, never against anyone else.',
-  'widgets.retestChange': '{from} → {to}',
-  'widgets.retestLevel': 'Lv {level}',
-  'widgets.retestDone': 'Done',
-  'widgets.retestUnitReps': 'reps',
-  'widgets.retestUnitSeconds': 'sec',
-  'widgets.retestUnitPercent': '%',
-  'widgets.retestGapNote': 'between legs',
+  // ── Test day: the results ────────────────────────────────────────────────
+  // The rest of the test day's copy is in `testday.ts`. These stay here because
+  // the results screen took them over from the retest sheet it replaced.
   'widgets.retestYourGoal': 'Your goal',
-  'widgets.retestFirstCaption': 'This is your starting point. In two weeks you’ll see what changed.',
   /** The goal they picked in onboarding, said back on the result screen. */
   'widgets.retestGoal.painfree': 'You came here for mornings that don’t start with heel pain. These numbers are the foot getting there.',
   'widgets.retestGoal.race': 'You’re working towards a race. A stronger calf and a steadier foot are what carry you to the start line.',
@@ -211,11 +185,6 @@ export const OFFER_EN = {
   /** Stopped on a pain report at or above six. It counts, and it says so. */
   'widgets.sessionStoppedTitle': 'Stopping here.',
   'widgets.sessionStoppedBlurb': 'It still counts as today’s session. Tomorrow starts one step back.',
-  /** Asked on the done sheet; the answer moves next week's progression. */
-  'widgets.feelQuestion': 'How did that feel?',
-  'widgets.feelEasy': 'Easy',
-  'widgets.feelOk': 'OK',
-  'widgets.feelHard': 'Hard',
 
   // ── Session player: "it hurts" ───────────────────────────────────────────
   'widgets.painButton': 'It hurts',

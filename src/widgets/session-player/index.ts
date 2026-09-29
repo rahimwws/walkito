@@ -28,3 +28,9 @@ export {
 } from './model/clip-cache';
 /** One exercise's clip, looping — the plan screen's preview sheet. */
 export { ExercisePreview } from './ui/exercise-preview';
+/** The test day, whole: intro, the three tests, results.
+ *
+ * One flow for both hosts — Home presents it in a page sheet, Plan in its
+ * session pane — so a test taken from either screen is the same test, finished
+ * by the same `finishTestDay`, and the two can no longer disagree about it. */
+export { TestDayFlow, type TestDayFlowProps } from './ui/test-day/test-day-flow';

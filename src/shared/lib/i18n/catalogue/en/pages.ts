@@ -94,8 +94,6 @@ export const PAGES_EN = {
   'pages.program.statTests': 'Tests',
   'pages.program.statExercises': 'Exercises',
   'pages.program.getStarted': 'Get Started',
-  /** What the countdown becomes once the wait is over. */
-  'pages.program.startNow': 'Start now',
 
   // The seams between blocks. Upper case is a typographic choice made in the
   // catalogue rather than by `toUpperCase()` at the call site, so a language
@@ -230,11 +228,20 @@ export const PAGES_EN = {
   'pages.plan.easyDay': 'Easy day · seated',
   'pages.plan.start': 'Start',
   'pages.plan.testTitle': 'Test day',
-  'pages.plan.testBody': { one: '{count} quick test · about {minutes} min', other: '{count} quick tests · about {minutes} min' },
+  /** What a test day is and why it is worth four minutes, in one breath. */
+  'pages.plan.testBody': {
+    one: '{count} short timed test, about {minutes} min in all. It shows what your training has built, and the plan adjusts to the result.',
+    other: '{count} short timed tests, about {minutes} min in all. They show what your training has built, and the plan adjusts to the results.',
+  },
   'pages.plan.rest': 'Rest day. Try a 2-minute stretch if you feel like it.',
   'pages.plan.done': 'Done for today',
   'pages.plan.tomorrow': 'Tomorrow: {kind}, {minutes}.',
   'pages.plan.tomorrowRest': 'Tomorrow is a rest day.',
+  /** In place of "Tomorrow is a rest day" when the next session is further
+   * off: the day it falls on and what it is. */
+  'pages.plan.nextSessionOn': 'Next session: {day}, {kind}.',
+  /** On a finished test day: the results again, read-only. */
+  'pages.plan.seeResults': 'See results',
   'pages.plan.upcoming': 'Coming up',
   'pages.plan.upcomingEnd': 'That’s the week. Next week’s plan arrives Sunday.',
   'pages.plan.row': '{day} · {kind}',
