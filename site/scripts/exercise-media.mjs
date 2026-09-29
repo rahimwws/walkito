@@ -1,7 +1,9 @@
 // Exercise media for the guide pages, cut from the app's own demonstration
 // clips so the site shows exactly the exercise the app plays.
 //
-//   node scripts/exercise-media.mjs [clipsDir]
+//   node scripts/exercise-media.mjs [clipsDir] [id ...]
+//
+// With ids after the directory, only those exercises are made.
 //
 // `clipsDir` holds the app's clips by their bucket names (the same files as
 // the app's `assets/exercises/` and the `exercise-clips` Supabase bucket).
@@ -50,6 +52,7 @@ const EXERCISES = [
   { id: 'short_foot_single', file: '13_short_foot_one_leg.mp4', start: 0.6, dur: 4.0, poster: 2.6, y: 380 },
   { id: 'toe_spread', file: '04_toe_spread.mp4', start: 0.6, dur: 4.0, poster: 2.2, y: 380 },
   { id: 'single_leg_hold', file: '11_single_leg_hold.mp4', start: 1.0, dur: 4.0, poster: 3.0, y: 380 },
+  { id: 'foot_roll', file: '07_foot_roll.mp4', start: 0.8, dur: 4.0, poster: 2.5, y: 380 },
 ];
 
 function run(args) {
@@ -73,7 +76,9 @@ async function source(file) {
 const kb = async (f) => Math.round((await stat(f)).size / 1024);
 
 await mkdir(outDir, { recursive: true });
-for (const e of EXERCISES) {
+const only = new Set(process.argv.slice(3));
+
+for (const e of EXERCISES.filter((x) => only.size === 0 || only.has(x.id))) {
   const src = await source(e.file);
   const crop = `crop=${W}:${H}:0:${e.y}`;
   const out = (ext) => join(outDir, `${e.id}.${ext}`);

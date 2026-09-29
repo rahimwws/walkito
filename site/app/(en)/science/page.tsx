@@ -212,7 +212,8 @@ export default function Science() {
         <p>
           The heel raise in Walkito follows this trial. You stand on one leg on
           a step, with a towel under your toes. You take three seconds to rise,
-          hold for two, and take three to lower, every other day. It sits near
+          hold for two, and take three to lower, on strength days, three a
+          week, never two in a row. It sits near
           the top of Walkito’s calf exercises, which get harder one level at a
           time. It never comes in the first week, which keeps load off the
           plantar fascia at the start. The exercise and its starting dose are
