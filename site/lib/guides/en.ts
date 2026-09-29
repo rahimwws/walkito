@@ -46,7 +46,7 @@ export const FLAT_FEET_EN: Guide = {
     'Start with one check: whether your flat feet are flexible, meaning the arch comes back when you lift the foot. For flexible flat feet, one trial of 52 people found that six weeks of short-foot exercises, ankle work, hip strengthening and stretching, done together, changed the shape of the arch more than in a control group. The evidence for short-foot training on its own is thinner. A 2024 review found no clear change overall, and a change in one arch measure only in programs that ran longer than six weeks. Both measured the shape of the arch, not pain. If your pain is near the heel, the heel pain research is the better guide.',
   ],
   takeaways: [
-    'The randomised trial on this page was run on flexible flat feet, where the arch comes back when the foot is off the ground (Brijwasi and Borkar, 2023).',
+    'The randomized trial on this page was run on flexible flat feet, where the arch comes back when the foot is off the ground (Brijwasi and Borkar, 2023).',
     'In that trial of 52 people, six weeks of short-foot, ankle, hip and stretching work changed arch shape more than in the control group (Brijwasi and Borkar, 2023).',
     'A 2024 review of short-foot training found no clear change overall, and an improvement in one arch measure only in programs longer than six weeks (Cheng and colleagues, 2024).',
     'A rigid flat foot, one that stays flat even off the ground, is structural, and exercise will not change its shape.',
@@ -207,7 +207,7 @@ export const FLAT_FEET_EN: Guide = {
       paragraphs: [
         'Flat feet exercises changed the arch after six weeks or more in the research so far, and only in flexible flat feet. In a trial of 52 people with **flexible** flat feet, a six-week program of short-foot exercises, ankle work, hip strengthening and stretching changed two measures of arch shape more than in the control group.',
         'The evidence for short-foot training on its own is thinner. A 2024 review pooled studies of short-foot training on flat feet in general. Overall, it found no clear difference from control groups in arch shape or foot posture. Only programs longer than six weeks improved how far the arch sinks under your weight, and the authors say larger studies are needed. So plan for at least six weeks, and longer if you do short-foot work on its own.',
-        `That is one reason Walkito’s plan has no end date. The arch goal, holding the arch for ${PROGRAM.goals.archHoldSeconds} seconds, stays in the plan until you reach it, however many weeks that takes. The arch hold is tested every ${PROGRAM.testEveryDays} days until your first goal is reached, then every ${PROGRAM.testEveryDaysAfterGoal}, so you can see whether it is moving. The trials are summarised on [the evidence page](/science/).`,
+        `That is one reason Walkito’s plan has no end date. The arch goal, holding the arch for ${PROGRAM.goals.archHoldSeconds} seconds, stays in the plan until you reach it, however many weeks that takes. The arch hold is tested every ${PROGRAM.testEveryDays} days until your first goal is reached, then every ${PROGRAM.testEveryDaysAfterGoal}, so you can see whether it is moving. The trials are summarized on [the evidence page](/science/).`,
       ],
       sourceNote:
         'Brijwasi and Borkar: navicular drop (how far the navicular bone on the inside of the arch drops when you stand) improved by 0.4 cm, and arch angle by 16 degrees, more than in the control group. Cheng and colleagues: no significant difference overall in navicular drop or Foot Posture Index; navicular drop improved significantly only in the subgroup of programs longer than six weeks.',
@@ -288,7 +288,7 @@ export const HEEL_PAIN_EN: Guide = {
   description:
     'Plantar fasciitis exercises and stretches for heel pain: doses, how often, what each should feel like, and what the 2023 guideline recommends.',
   h1: 'Plantar fasciitis exercises and stretches for heel pain',
-  lede: 'Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, plantar fasciitis, and the 2023 clinical guideline for heel pain calls it the most commonly recognised cause of heel pain under the foot.',
+  lede: 'Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, plantar fasciitis, and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.',
   intro: [
     'It’s also confusing to look up, because everyone says something different. The evidence points to two things: stretching the plantar fascia and calf, and strength work for the calf. A 2023 clinical guideline gives stretching its top grade, A, and strength training a B. In one trial of 48 people, all wearing shoe inserts, slow heel raises with a towel under the toes helped faster than stretching alone. By twelve months both groups were even. Doing both is what the guideline supports.',
   ],
@@ -423,7 +423,7 @@ export const HEEL_PAIN_EN: Guide = {
       h2: 'Should you rest or keep running with heel pain?',
       paragraphs: [
         'If heel pain from plantar fasciitis flares when you run, change the load instead of stopping everything. The 2023 guideline recommends learning how to adjust the load on your feet at work, in sport and in daily life. That advice is graded E, which means it rests on theory rather than trials. So keep the stretches every day, and cut back whatever makes the heel worse.',
-        'On a bad morning, keep the stretches and drop the heel raises for the day. The next morning tells you how it went. If your first steps are clearly worse after a run, that run was more than the heel could take. Walkito reads it the same way. A big day on your feet turns the next strength session into a lighter recovery one, and a painful morning makes the session shorter without cancelling it.',
+        'On a bad morning, keep the stretches and drop the heel raises for the day. The next morning tells you how it went. If your first steps are clearly worse after a run, that run was more than the heel could take. Walkito reads it the same way. A big day on your feet turns the next strength session into a lighter recovery one, and a painful morning makes the session shorter without canceling it.',
         'Stop and see a clinician if running hurts sharply or the pain gets worse week after week. The same goes for pain that builds during runs after you added mileage, or pain when you squeeze the sides of the heel. Both can be signs of a stress fracture, one of the other causes of heel pain the guideline names.',
       ],
       cites: [CITE.guideline],

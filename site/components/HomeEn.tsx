@@ -106,7 +106,7 @@ const CHIPS = [
 const HOW = [
   {
     title: 'A week at a time, around one goal',
-    text: `Each week centres on a goal you can measure: morning heel pain at ${PAIN_GOAL_MAX}/10 or less for ${PROGRAM.painFreeDays} days running, a ${archHoldSeconds}-second arch hold, ${calfRaises} single-leg calf raises, ${balanceSeconds} seconds of single-leg balance, or left and right within ${gapPercent}% of each other. Reach one and it moves to maintaining while the next takes its place.`,
+    text: `Each week centers on a goal you can measure: morning heel pain at ${PAIN_GOAL_MAX}/10 or less for ${PROGRAM.painFreeDays} days running, a ${archHoldSeconds}-second arch hold, ${calfRaises} single-leg calf raises, ${balanceSeconds} seconds of single-leg balance, or left and right within ${gapPercent}% of each other. Reach one and it moves to maintaining while the next takes its place.`,
     href: '/program/',
     link: 'How the plan works',
   },
@@ -118,7 +118,7 @@ const HOW = [
   },
   {
     title: 'Built on published research',
-    text: 'The 2023 clinical guideline for heel pain grades stretching A and strength training B, and a randomised trial found high-load strength work improved pain and function faster than stretching.',
+    text: 'The 2023 clinical guideline for heel pain grades stretching A and strength training B, and a randomized trial found high-load strength work improved pain and function faster than stretching.',
     href: '/science/',
     link: 'Read the evidence',
   },

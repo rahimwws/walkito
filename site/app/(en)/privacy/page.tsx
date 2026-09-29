@@ -93,7 +93,7 @@ export default function Privacy() {
         <h2>Your email address</h2>
         <p>
           We use your email address only to answer you when you contact support
-          and to recognise your account in our own reports. We never send
+          and to recognize your account in our own reports. We never send
           marketing emails, and we never share your address for marketing.
         </p>
 
@@ -151,7 +151,7 @@ export default function Privacy() {
           back to Apple Health as workouts and mindful minutes.
         </p>
         <p>
-          This data is read and summarised on your phone.{' '}
+          This data is read and summarized on your phone.{' '}
           <b>
             It is never uploaded, never saved to your account, and never used for
             advertising, marketing or data mining.

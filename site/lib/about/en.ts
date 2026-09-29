@@ -34,7 +34,7 @@ export const ABOUT_EN: About = {
         'Walkito’s guides are written from published research, and every number in them has a source you can check. The guides are [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/) and [flat feet exercises](/flat-feet-exercises/). They and [the evidence page](/science/) follow the same five rules:',
       ],
       bullets: [
-        '**Every figure traces to a primary source.** That means a randomised trial, a meta-analysis or a clinical guideline. The source is printed and linked on the page that uses it. If we cannot trace a number to one, it does not go on the site. We have removed sentences for that reason.',
+        '**Every figure traces to a primary source.** That means a randomized trial, a meta-analysis or a clinical guideline. The source is printed and linked on the page that uses it. If we cannot trace a number to one, it does not go on the site. We have removed sentences for that reason.',
         '**The 2023 clinical practice guideline on heel pain is the reference point.** It comes from the Journal of Orthopaedic & Sports Physical Therapy. It grades each intervention by how strong its evidence is, including the ones it advises against.',
         '**Qualifiers travel with the figures.** A three-month result is always printed with what happened at twelve months. Every claim about arch shape says which feet it was measured on.',
         '**Doses are Walkito’s own starting doses.** They show where Walkito’s exercises begin. They are not a prescription for you.',

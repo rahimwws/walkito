@@ -19,7 +19,7 @@ should be seen by a clinician.
 
 - No fixed length. The plan is built one week at a time around a focus goal; a goal that is reached moves to "maintaining" (kept up at a lower dose) and the next goal takes its place, for as long as the plan is used.
 - Five measured goals: easier mornings (morning pain at or under 1/10 for 14 days running); an arch hold of 60 seconds; 25 single-leg calf raises; single-leg balance for 30 seconds; a left/right difference under 10%.
-- A new user starts with at most three goals, pain first. The app does not ask whether a flat foot is flexible or rigid; the randomised trial of arch exercise was run on flexible flat feet, so if the arch stays flat even with no weight on the foot, check with a clinician before arch work.
+- A new user starts with at most three goals, pain first. The app does not ask whether a flat foot is flexible or rigid; the randomized trial of arch exercise was run on flexible flat feet, so if the arch stays flat even with no weight on the foot, check with a clinician before arch work.
 - Training days: 3, 5 or 7 a week. Sessions: 3, 5 or 10 minutes (default 5), each 2 to 4 exercises; the focus exercise is never cut.
 - Week one "settles in": nothing that loads the plantar fascia and nothing above level 2.
 - Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.
@@ -30,9 +30,9 @@ should be seen by a clinician.
 
 ## The evidence
 
-- High-load strength training scored 29 points lower on the Foot Function Index than plantar-specific stretching at 3 months (randomised trial, n=48, 95% CI 6-52, p=0.016); at 12 months the two groups had converged, so the effect is faster improvement rather than a larger one.
-- In people with *flexible* flat feet, a six-week exercise programme in a randomised trial (n=52) improved navicular drop by 0.4 cm and arch angle by 16 degrees more than control. Rigid flat feet are structural and exercise will not change them.
-- In a 2024 meta-analysis, only short-foot programmes longer than six weeks improved navicular drop; shorter ones showed no measurable effect.
+- High-load strength training scored 29 points lower on the Foot Function Index than plantar-specific stretching at 3 months (randomized trial, n=48, 95% CI 6-52, p=0.016); at 12 months the two groups had converged, so the effect is faster improvement rather than a larger one.
+- In people with *flexible* flat feet, a six-week exercise program in a randomized trial (n=52) improved navicular drop by 0.4 cm and arch angle by 16 degrees more than control. Rigid flat feet are structural and exercise will not change them.
+- In a 2024 meta-analysis, only short-foot programs longer than six weeks improved navicular drop; shorter ones showed no measurable effect.
 - The 2023 JOSPT heel pain guideline, written for physical therapists, grades among its recommendations: manual therapy A, plantar fascia and calf stretching A, taping alongside other physical therapy A, night splints A, and resistance training B. It recommends against orthotics as a stand-alone treatment (grade B; alongside other treatment they may be used, grade C) and against adding therapeutic ultrasound to stretching (grade A). Its education advice (grade E, expert opinion) is to modify weight-bearing load.
 
 Sources:
@@ -45,7 +45,7 @@ Sources:
 
 Language: English · https://walkito.site/plantar-fasciitis-exercises/ · published 2026-09-24 · updated 2026-09-28
 
-Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, plantar fasciitis, and the 2023 clinical guideline for heel pain calls it the most commonly recognised cause of heel pain under the foot.
+Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, plantar fasciitis, and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.
 
 - The 2023 heel pain guideline from the Journal of Orthopaedic & Sports Physical Therapy gives plantar fascia and calf stretching its top grade, A, and strength training a B.
 - In a trial of 48 people, heavy heel raises eased pain and improved daily function faster than stretching, and by twelve months both groups were even (Rathleff and colleagues, 2015).
@@ -81,7 +81,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 If heel pain from plantar fasciitis flares when you run, change the load instead of stopping everything. The 2023 guideline recommends learning how to adjust the load on your feet at work, in sport and in daily life. That advice is graded E, which means it rests on theory rather than trials. So keep the stretches every day, and cut back whatever makes the heel worse.
 
-On a bad morning, keep the stretches and drop the heel raises for the day. The next morning tells you how it went. If your first steps are clearly worse after a run, that run was more than the heel could take. Walkito reads it the same way. A big day on your feet turns the next strength session into a lighter recovery one, and a painful morning makes the session shorter without cancelling it.
+On a bad morning, keep the stretches and drop the heel raises for the day. The next morning tells you how it went. If your first steps are clearly worse after a run, that run was more than the heel could take. Walkito reads it the same way. A big day on your feet turns the next strength session into a lighter recovery one, and a painful morning makes the session shorter without canceling it.
 
 Stop and see a clinician if running hurts sharply or the pain gets worse week after week. The same goes for pain that builds during runs after you added mileage, or pain when you squeeze the sides of the heel. Both can be signs of a stress fracture, one of the other causes of heel pain the guideline names.
 
@@ -157,7 +157,7 @@ Language: English · https://walkito.site/flat-feet-exercises/ · published 2026
 
 By evening your feet feel tired, and the arches ache. When you stand, your feet seem to roll in and the arches sink toward the floor. People may tell you flat feet are just how you’re built and not worth a second thought. Wanting to do something about them makes sense, and there is real research on training the arch.
 
-- The randomised trial on this page was run on flexible flat feet, where the arch comes back when the foot is off the ground (Brijwasi and Borkar, 2023).
+- The randomized trial on this page was run on flexible flat feet, where the arch comes back when the foot is off the ground (Brijwasi and Borkar, 2023).
 - In that trial of 52 people, six weeks of short-foot, ankle, hip and stretching work changed arch shape more than in the control group (Brijwasi and Borkar, 2023).
 - A 2024 review of short-foot training found no clear change overall, and an improvement in one arch measure only in programs longer than six weeks (Cheng and colleagues, 2024).
 - A rigid flat foot, one that stays flat even off the ground, is structural, and exercise will not change its shape.
@@ -198,7 +198,7 @@ Flat feet exercises changed the arch after six weeks or more in the research so 
 
 The evidence for short-foot training on its own is thinner. A 2024 review pooled studies of short-foot training on flat feet in general. Overall, it found no clear difference from control groups in arch shape or foot posture. Only programs longer than six weeks improved how far the arch sinks under your weight, and the authors say larger studies are needed. So plan for at least six weeks, and longer if you do short-foot work on its own.
 
-That is one reason Walkito’s plan has no end date. The arch goal, holding the arch for 60 seconds, stays in the plan until you reach it, however many weeks that takes. The arch hold is tested every 14 days until your first goal is reached, then every 28, so you can see whether it is moving. The trials are summarised on [the evidence page](https://walkito.site/science/).
+That is one reason Walkito’s plan has no end date. The arch goal, holding the arch for 60 seconds, stays in the plan until you reach it, however many weeks that takes. The arch hold is tested every 14 days until your first goal is reached, then every 28, so you can see whether it is moving. The trials are summarized on [the evidence page](https://walkito.site/science/).
 
 Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
 Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
@@ -718,7 +718,7 @@ Walkito is in English, Russian and Spanish.
 
 Walkito’s guides are written from published research, and every number in them has a source you can check. The guides are [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/) and [flat feet exercises](https://walkito.site/flat-feet-exercises/). They and [the evidence page](https://walkito.site/science/) follow the same five rules:
 
-- **Every figure traces to a primary source.** That means a randomised trial, a meta-analysis or a clinical guideline. The source is printed and linked on the page that uses it. If we cannot trace a number to one, it does not go on the site. We have removed sentences for that reason.
+- **Every figure traces to a primary source.** That means a randomized trial, a meta-analysis or a clinical guideline. The source is printed and linked on the page that uses it. If we cannot trace a number to one, it does not go on the site. We have removed sentences for that reason.
 - **The 2023 clinical practice guideline on heel pain is the reference point.** It comes from the Journal of Orthopaedic & Sports Physical Therapy. It grades each intervention by how strong its evidence is, including the ones it advises against.
 - **Qualifiers travel with the figures.** A three-month result is always printed with what happened at twelve months. Every claim about arch shape says which feet it was measured on.
 - **Doses are Walkito’s own starting doses.** They show where Walkito’s exercises begin. They are not a prescription for you.
@@ -885,7 +885,7 @@ Walkito’s price is set in the App Store, which shows it in your currency befor
 
 ### How do I cancel my Walkito subscription?
 
-Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions. Cancelling stops the next renewal, and you keep access until the end of the period you paid for. Deleting the app or your account does not cancel it. The one-time purchase never renews, so there is nothing to cancel. Refunds are handled by Apple.
+Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions. Canceling stops the next renewal, and you keep access until the end of the period you paid for. Deleting the app or your account does not cancel it. The one-time purchase never renews, so there is nothing to cancel. Refunds are handled by Apple.
 
 ## Not published
 

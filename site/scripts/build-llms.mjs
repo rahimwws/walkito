@@ -139,7 +139,7 @@ should be seen by a clinician.`;
 const KEY_FACTS = [
   'No fixed length. The plan is built one week at a time around a focus goal; a goal that is reached moves to "maintaining" (kept up at a lower dose) and the next goal takes its place, for as long as the plan is used.',
   `Five measured goals: easier mornings (morning pain at or under 1/10 for ${PROGRAM.painFreeDays} days running); an arch hold of ${archHoldSeconds} seconds; ${calfRaises} single-leg calf raises; single-leg balance for ${balanceSeconds} seconds; a left/right difference under ${gapPercent}%.`,
-  'A new user starts with at most three goals, pain first. The app does not ask whether a flat foot is flexible or rigid; the randomised trial of arch exercise was run on flexible flat feet, so if the arch stays flat even with no weight on the foot, check with a clinician before arch work.',
+  'A new user starts with at most three goals, pain first. The app does not ask whether a flat foot is flexible or rigid; the randomized trial of arch exercise was run on flexible flat feet, so if the arch stays flat even with no weight on the foot, check with a clinician before arch work.',
   `Training days: ${or(days)} a week. Sessions: ${or(minutes)} minutes (default ${PROGRAM.defaultMinutes}), each 2 to 4 exercises; the focus exercise is never cut.`,
   'Week one "settles in": nothing that loads the plantar fascia and nothing above level 2.',
   'Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.',
@@ -150,9 +150,9 @@ const KEY_FACTS = [
 ];
 
 const FINDINGS = [
-  'High-load strength training scored 29 points lower on the Foot Function Index than plantar-specific stretching at 3 months (randomised trial, n=48, 95% CI 6-52, p=0.016); at 12 months the two groups had converged, so the effect is faster improvement rather than a larger one.',
-  'In people with *flexible* flat feet, a six-week exercise programme in a randomised trial (n=52) improved navicular drop by 0.4 cm and arch angle by 16 degrees more than control. Rigid flat feet are structural and exercise will not change them.',
-  'In a 2024 meta-analysis, only short-foot programmes longer than six weeks improved navicular drop; shorter ones showed no measurable effect.',
+  'High-load strength training scored 29 points lower on the Foot Function Index than plantar-specific stretching at 3 months (randomized trial, n=48, 95% CI 6-52, p=0.016); at 12 months the two groups had converged, so the effect is faster improvement rather than a larger one.',
+  'In people with *flexible* flat feet, a six-week exercise program in a randomized trial (n=52) improved navicular drop by 0.4 cm and arch angle by 16 degrees more than control. Rigid flat feet are structural and exercise will not change them.',
+  'In a 2024 meta-analysis, only short-foot programs longer than six weeks improved navicular drop; shorter ones showed no measurable effect.',
   'The 2023 JOSPT heel pain guideline, written for physical therapists, grades among its recommendations: manual therapy A, plantar fascia and calf stretching A, taping alongside other physical therapy A, night splints A, and resistance training B. It recommends against orthotics as a stand-alone treatment (grade B; alongside other treatment they may be used, grade C) and against adding therapeutic ultrasound to stretching (grade A). Its education advice (grade E, expert opinion) is to modify weight-bearing load.',
 ];
 
@@ -205,7 +205,7 @@ ${guideLine(GUIDES.flatFeet.en)}
 - [Support](${url('/support/')}): notifications, Apple Health permissions,
   subscriptions, deleting your data
 - [Privacy](${url('/privacy/')}): what stays on the device and what leaves it
-- [Terms of use](${url('/terms/')}): the licence, App Store billing and
+- [Terms of use](${url('/terms/')}): the license, App Store billing and
   cancellation, health and safety, and what the app does not promise
 
 ## Other languages

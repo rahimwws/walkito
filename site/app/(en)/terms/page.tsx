@@ -122,15 +122,15 @@ export default function Terms() {
           back with Restore Purchases on the same Apple ID.
         </p>
 
-        <h2>Your licence</h2>
+        <h2>Your license</h2>
         <p>
-          You get a personal, non-exclusive, non-transferable licence to use
+          You get a personal, non-exclusive, non-transferable license to use
           Walkito on devices you own or control, for your own non-commercial use.
           You may not resell access, redistribute the program, reverse-engineer
           the app, or use its content to build a competing product.
         </p>
         <p>
-          The program, the exercise catalogue, the copy and the software are
+          The program, the exercise catalog, the copy and the software are
           ours. Everything you log (your pain entries, your sessions, your
           history) is yours. It is saved on your device and copied to your
           account so it can be restored.
@@ -162,7 +162,7 @@ export default function Terms() {
           </li>
           <li>
             Manage or cancel it in <b>Settings → your name → Subscriptions</b>.
-            Cancelling stops the next renewal; you keep access until the end of
+            Canceling stops the next renewal; you keep access until the end of
             the period you have paid for.
           </li>
           <li>

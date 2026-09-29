@@ -145,7 +145,7 @@ export default function HeelPainRunners() {
               while, is the pattern most often linked to plantar fasciitis. That
               is pain from the plantar fascia, the band of tissue under the foot.
               The 2023 clinical guideline for heel pain calls plantar fasciitis
-              the most commonly recognised cause of heel pain under the foot.
+              the most commonly recognized cause of heel pain under the foot.
             </p>
             <p>
               Plantar fasciitis is not the only cause. The same guideline names

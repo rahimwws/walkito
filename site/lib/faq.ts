@@ -228,7 +228,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
       },
       {
         q: 'How do I cancel my Walkito subscription?',
-        a: 'Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions. Cancelling stops the next renewal, and you keep access until the end of the period you paid for. Deleting the app or your account does not cancel it. The one-time purchase never renews, so there is nothing to cancel. Refunds are handled by Apple.',
+        a: 'Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions. Canceling stops the next renewal, and you keep access until the end of the period you paid for. Deleting the app or your account does not cancel it. The one-time purchase never renews, so there is nothing to cancel. Refunds are handled by Apple.',
       },
     ],
   },
