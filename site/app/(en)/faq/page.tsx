@@ -2,12 +2,13 @@ import type { Metadata } from 'next';
 import { Fragment } from 'react';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
+import { Byline } from '@/components/Byline';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { FAQ } from '@/lib/faq';
 import { CHROME } from '@/lib/i18n';
-import { faqSchema, formatDate } from '@/lib/schema';
+import { faqSchema } from '@/lib/schema';
 import { PAGE_UPDATED, SITE_NAME, SITE_URL } from '@/lib/site';
 
 const TITLE = 'Heel Pain & Plantar Fasciitis Exercise Program: FAQ';
@@ -84,10 +85,7 @@ export default function Faq() {
 
       <main className="shell prose">
         <h1>Heel pain exercise program: questions and answers</h1>
-        <p className="byline">
-          <a href="/about/">{c.byline}</a> · {c.updated}{' '}
-          <time dateTime={PAGE_UPDATED.faq}>{formatDate(PAGE_UPDATED.faq, 'en')}</time>
-        </p>
+        <Byline lang="en" updated={PAGE_UPDATED.faq} />
 
         <p className="lede">
           Walkito is an exercise plan for heel pain, arch pain and flexible flat

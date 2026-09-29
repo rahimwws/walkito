@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
+import { Byline } from '@/components/Byline';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Cite } from '@/components/Cite';
-import { CHROME } from '@/lib/i18n';
-import { articleSchema, formatDate } from '@/lib/schema';
+import { articleSchema } from '@/lib/schema';
 import { PAGE_UPDATED, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
 
 /**
@@ -80,7 +80,6 @@ const BREADCRUMBS = {
 };
 
 export default function Science() {
-  const c = CHROME.en;
   return (
     <>
       <JsonLd data={ARTICLE} />
@@ -89,10 +88,7 @@ export default function Science() {
 
       <main className="shell prose">
         <h1>Heel pain research: strength vs stretching, and the 2023 guideline</h1>
-        <p className="byline">
-          <a href="/about/">{c.byline}</a> · {c.updated}{' '}
-          <time dateTime={PAGE_UPDATED.science}>{formatDate(PAGE_UPDATED.science, 'en')}</time>
-        </p>
+        <Byline lang="en" updated={PAGE_UPDATED.science} />
 
         {/* Answer first: the passage an AI answer lifts is the first one that
             answers the query on its own, so the finding leads and the page's

@@ -1,13 +1,16 @@
 import { Fragment } from 'react';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
+import { Byline } from '@/components/Byline';
 import { Footer } from '@/components/Footer';
 import { Cite } from '@/components/Cite';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
+import { ScreenshotSlot } from '@/components/ScreenshotSlot';
 import { GUIDES, type Guide as GuideData } from '@/lib/guides';
+import type { GuideTable } from '@/lib/guides/types';
 import { CHROME, TRANSLATED } from '@/lib/i18n';
-import { articleSchema, faqSchema, formatDate } from '@/lib/schema';
+import { articleSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL } from '@/lib/site';
 
 const HOME_CRUMB = { en: 'Home', ru: 'Главная', es: 'Inicio' } as const;
@@ -32,6 +35,53 @@ function Inline({ text }: { text: string }) {
         return <Fragment key={i}>{part}</Fragment>;
       })}
     </>
+  );
+}
+
+/** A heading as an anchor: lower case, words joined by hyphens. */
+function slug(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[^\p{L}\p{N}]+/gu, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+/** Doses and grades as a real table, so a reader can scan a column and a
+ * crawler can read the rows. */
+function Table({ table }: { table: GuideTable }) {
+  return (
+    <div className="table-wrap">
+      <table>
+        {table.caption && <caption>{table.caption}</caption>}
+        <thead>
+          <tr>
+            {table.head.map((h) => (
+              <th key={h} scope="col">
+                {h}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {table.rows.map((row) => (
+            <tr key={row[0]}>
+              {row.map((cell, i) =>
+                i === 0 ? (
+                  <th key={i} scope="row">
+                    <Inline text={cell} />
+                  </th>
+                ) : (
+                  <td key={i}>
+                    <Inline text={cell} />
+                  </td>
+                ),
+              )}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
 
@@ -91,14 +141,15 @@ export function Guide({ guide }: { guide: GuideData }) {
 
       <main className="shell prose">
         <h1>{guide.h1}</h1>
-        <p className="byline">
-          <a href={TRANSLATED.about[guide.lang]}>{c.byline}</a>
-          {' · '}
-          {c.updated} <time dateTime={guide.updated}>{formatDate(guide.updated, guide.lang)}</time>
-        </p>
+        <Byline lang={guide.lang} updated={guide.updated} />
         <p className="lede">
           <Inline text={guide.lede} />
         </p>
+        {guide.intro?.map((p) => (
+          <p key={p}>
+            <Inline text={p} />
+          </p>
+        ))}
 
         {/* Key points: the summary a skimmer reads instead of the page, and
             the lines an assistant is most likely to quote. */}
@@ -113,15 +164,55 @@ export function Guide({ guide }: { guide: GuideData }) {
           </ul>
         </aside>
 
+        {guide.toc && (
+          <nav className="toc" aria-label={c.contents}>
+            <h2>{c.contents}</h2>
+            <ol>
+              {guide.sections.map((section) => (
+                <li key={section.h2}>
+                  <a href={`#${slug(section.h2)}`}>{section.h2}</a>
+                </li>
+              ))}
+              <li>
+                <a href="#faq">{c.faqHeading}</a>
+              </li>
+              <li>
+                <a href="#see-a-clinician">{guide.redFlags.h2}</a>
+              </li>
+              <li>
+                <a href="#plan">{guide.program.h2}</a>
+              </li>
+            </ol>
+          </nav>
+        )}
+
         {guide.sections.map((section) => (
-          <section key={section.h2}>
+          <section key={section.h2} id={slug(section.h2)}>
             <h2>{section.h2}</h2>
             {section.paragraphs?.map((p) => (
               <p key={p}>
                 <Inline text={p} />
               </p>
             ))}
-            {section.exercises && (
+            {section.table && <Table table={section.table} />}
+            {section.exercises?.some((e) => e.feel != null) ? (
+              section.exercises.map((e) => (
+                <div key={e.name} className="exercise-detail">
+                  <ScreenshotSlot label={e.image ?? e.name} size="sm" />
+                  <div>
+                    <h3>{e.name}</h3>
+                    <p>
+                      <Inline text={e.how} />
+                    </p>
+                    {e.stop && (
+                      <p className="stop">
+                        <Inline text={e.stop} />
+                      </p>
+                    )}
+                  </div>
+                </div>
+              ))
+            ) : section.exercises && (
               <ol className="exercises">
                 {section.exercises.map((e) => (
                   <li key={e.name}>
@@ -141,11 +232,16 @@ export function Guide({ guide }: { guide: GuideData }) {
                 ))}
               </ul>
             )}
+            {section.sourceNote && (
+              <p className="cite">
+                <Inline text={section.sourceNote} />
+              </p>
+            )}
             {section.cites?.map((i) => <Cite key={i} index={i} />)}
           </section>
         ))}
 
-        <section className="faq">
+        <section className="faq" id="faq">
           <h2>{c.faqHeading}</h2>
           {guide.faq.map((item) => (
             <div key={item.q}>
@@ -156,20 +252,26 @@ export function Guide({ guide }: { guide: GuideData }) {
             </div>
           ))}
         </section>
-        <h2>{guide.redFlags.h2}</h2>
+        <h2 id="see-a-clinician">{guide.redFlags.h2}</h2>
         <ul>
           {guide.redFlags.bullets.map((b) => (
             <li key={b}>{b}</li>
           ))}
         </ul>
 
-        <h2>{guide.program.h2}</h2>
+        <h2 id="plan">{guide.program.h2}</h2>
         <p>
           <Inline text={guide.program.text} />
         </p>
+        {guide.program.more?.map((p) => (
+          <p key={p}>
+            <Inline text={p} />
+          </p>
+        ))}
 
         <p className="notice">{c.notice}</p>
 
+        {guide.program.cta && <p className="cta-line">{guide.program.cta}</p>}
         <AppStoreBadge campaign={guide.campaign} lang={guide.lang} />
 
         <nav className="related" aria-label={c.relatedHeading}>

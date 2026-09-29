@@ -158,6 +158,12 @@ export const FLAT_FEET_EN: Guide = {
   campaign: 'guide-flat-feet',
 };
 
+/*
+ * The pilot for the writing guide (reader's journey, plain words, study detail
+ * in source lines, real tables, a contents list, an image slot per exercise).
+ * Every fact, dose, grade and figure is the one this page carried before the
+ * rewrite; the trial's Foot Function Index figures moved to its source line.
+ */
 export const HEEL_PAIN_EN: Guide = {
   lang: 'en',
   page: 'heelPain',
@@ -165,90 +171,128 @@ export const HEEL_PAIN_EN: Guide = {
   updated: '2026-09-28',
   title: 'Plantar Fasciitis Exercises & Stretches for Heel Pain',
   description:
-    'Heel raises, plantar fascia and calf stretches for heel pain and morning heel pain, with starting doses and what the 2023 clinical guideline recommends.',
+    'Plantar fasciitis exercises and stretches for heel pain and morning heel pain: doses, how often, what each should feel like, and what the 2023 clinical guideline recommends.',
   h1: 'Plantar fasciitis exercises and stretches for heel pain',
-  lede: 'For heel pain from plantar fasciitis, the 2023 clinical guideline gives its top grade, A, to plantar fascia and calf stretching, and a B to strength training. In a trial of 48 people, all wearing shoe inserts, slow single-leg heel raises with a towel under the toes improved pain and function faster than stretching, though by twelve months the two groups had caught up with each other. Doing both is what the guideline supports.',
-  takeaways: [
-    'The 2023 JOSPT heel pain guideline grades plantar fascia and calf stretching A and strength training B.',
-    'In a trial of 48 people, all wearing shoe inserts, high-load heel raises scored 29 points lower on the Foot Function Index than stretching at three months; by twelve months the groups had converged, so strength work brought improvement forward rather than making it bigger.',
-    'On load, the same guideline’s advice is education on modifying weight-bearing activity, graded E, meaning theoretical rather than trial evidence.',
-    'Heel pain after an injury, with numbness or swelling, that wakes you at night, or that hurts when you squeeze the heel needs a clinician first.',
+  lede: 'Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, plantar fasciitis, and it’s one of the most common foot problems there is.',
+  intro: [
+    'It’s also confusing to look up, because everyone says something different. The evidence points to two things: stretching the plantar fascia and calf, and strength work for the calf. A 2023 clinical guideline gives stretching its top grade, A, and strength training a B. In one trial of 48 people, all wearing shoe inserts, slow heel raises with a towel under the toes helped faster than stretching alone. By twelve months both groups were even. The guideline’s advice is to do both.',
   ],
+  takeaways: [
+    'The 2023 heel pain guideline from the Journal of Orthopaedic & Sports Physical Therapy gives plantar fascia and calf stretching its top grade, A, and strength training a B.',
+    'In a trial of 48 people, heavy heel raises eased pain and improved daily function faster than stretching, and by twelve months both groups were even (Rathleff and colleagues, 2015).',
+    'For heel pain when you run, the same guideline advises changing the load instead of stopping everything, advice graded E because it rests on theory, not trials.',
+    'See a clinician first if the pain followed an injury, comes with numbness or swelling, wakes you at night, or hurts when you squeeze the heel.',
+  ],
+  toc: true,
   sections: [
     {
-      h2: 'The exercises, with starting doses',
+      h2: 'The exercises for plantar fasciitis, with starting doses',
       paragraphs: [
-        'These are the exercises Walkito uses for heel pain, at the doses it starts from: a starting point, not a prescription. [How these guides are written](/about/).',
-        'Order matters. Walkito starts with the stretches and seated work; the towel heel raise, which loads the fascia hardest, comes later and is reached one level at a time. If any exercise pushes your pain to **6/10 or more**, stop for the day. That is where Walkito ends a session.',
+        'The exercises for plantar fasciitis in Walkito are three stretches and one strength exercise, shown here at the doses Walkito starts from. They are a starting point, not a prescription. [How these guides are written](/about/).',
+        'Order matters. Walkito starts with the stretches and the seated work. The towel heel raise loads the plantar fascia the hardest, so it comes later and is reached one level at a time. If any exercise takes your pain to **6/10 or more**, stop for the day. That is the point where Walkito ends a session.',
       ],
+      table: {
+        head: ['Exercise', 'Dose', 'How often', 'What you should feel'],
+        rows: [
+          ['Plantar fascia stretch', '10 holds of 10 seconds, each foot', 'Every day, the first one before you stand up', 'A stretch along the arch, not the calf'],
+          ['Calf stretch', '3 holds of 30 seconds, each leg', 'Every day', 'A stretch in the calf of the straight back leg'],
+          ['Soleus stretch', '3 holds of 30 seconds, each leg', 'Every day', 'A stretch low in the calf, near the heel'],
+          ['Heel raises with a towel', '3 sets of 12, each leg', 'Every other day', 'Hard work in the calf and a pull under the arch'],
+        ],
+      },
       exercises: [
         {
           name: 'Plantar fascia stretch',
-          dose: '10 × 10 s, each foot, the first before you stand up',
-          how: 'Sitting, cross the foot over the other knee and pull the toes back until you feel the stretch in the arch, not the calf.',
+          dose: '10 holds of 10 seconds, each foot',
+          often: 'Every day',
+          feel: 'A stretch along the arch',
+          how: 'Sit down and cross the foot over the other knee. Pull the toes back until you feel the stretch in the arch, not the calf. Do the first one on the edge of the bed, before your first steps.',
+          stop: 'Stop for the day if your heel pain reaches 6/10 or more.',
+          image: 'Exercise: plantar fascia stretch',
         },
         {
           name: 'Calf stretch',
-          dose: '3 × 30 s, each leg',
-          how: 'Hands on a wall, back leg straight, heel down, hips forward. A tight calf pulls on the heel all day.',
+          dose: '3 holds of 30 seconds, each leg',
+          often: 'Every day',
+          feel: 'A stretch in the calf',
+          how: 'Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward. A tight calf pulls on the heel all day, so this stretch matters even though you feel it higher up.',
+          stop: 'Stop for the day if your heel pain reaches 6/10 or more.',
+          image: 'Exercise: calf stretch',
         },
         {
           name: 'Soleus stretch',
-          dose: '3 × 30 s, each leg',
-          how: 'The same position, with the back knee bent until you feel it lower, near the heel. The deeper calf muscle only lets go with the knee bent.',
+          dose: '3 holds of 30 seconds, each leg',
+          often: 'Every day',
+          feel: 'A stretch near the heel',
+          how: 'Take the same position, then bend the back knee until you feel the stretch lower down, near the heel. The soleus, the deeper calf muscle, only lets go with the knee bent.',
+          stop: 'Stop for the day if your heel pain reaches 6/10 or more.',
+          image: 'Exercise: soleus stretch',
         },
         {
           name: 'Heel raises with a towel',
-          dose: '3 × 12, each leg, every other day',
-          how: 'On a step, on one foot, with a rolled towel under the toes. Three seconds up, two held at the top, three down. The towel is what makes this load the fascia rather than just the calf.',
+          dose: '3 sets of 12, each leg',
+          often: 'Every other day',
+          feel: 'Hard work in the calf',
+          how: 'Stand on one foot on a step, with a rolled towel under your toes. Take three seconds to rise, hold for two at the top, and take three seconds to lower. The towel is what makes this exercise work the plantar fascia and not just the calf.',
+          stop: 'Skip the heel raises on a bad morning, and stop for the day if your heel pain reaches 6/10 or more.',
+          image: 'Exercise: heel raises with a towel',
         },
       ],
     },
     {
-      h2: 'Morning heel pain: the first steps',
+      h2: 'What helps morning heel pain?',
       paragraphs: [
-        'Pain on the first steps after getting up, or after sitting for a while, is the pattern most often linked to plantar fasciitis. It often eases once you get moving, and comes back after the next long rest.',
-        'Two things on this page are aimed at it. The plantar fascia stretch is done **before you stand up** (on the edge of the bed, toes pulled back), so the first steps are not the first stretch. And the 2023 guideline grades night splints, worn for 1–3 months, **A** for people who consistently have pain on their first steps in the morning; that is one to discuss with a clinician, and not something Walkito provides.',
-        'Walkito asks for your morning pain every day for the same reason: it is the most direct reading of how the foot coped with yesterday, and it decides how much today’s session asks.',
+        'Morning heel pain on the first steps is the pattern most often linked to plantar fasciitis. It often eases once you get moving, and it comes back after you sit for a while.',
+        'Two things on this page aim at it. The plantar fascia stretch is done **before you stand up**, on the edge of the bed with the toes pulled back, so your first steps are not your first stretch. And the 2023 guideline gives night splints, worn for 1 to 3 months, an **A** for people who keep getting pain on their first steps in the morning. Night splints are something to talk over with a clinician. Walkito doesn’t provide them.',
+        'Walkito asks about your morning pain every day for the same reason. Morning pain is the clearest sign of how your foot coped with yesterday, and it decides how much today’s session asks of you.',
       ],
       cites: [CITE.guideline],
     },
     {
-      h2: 'Heel pain when running: rest or keep going?',
+      h2: 'Should you rest or keep running with heel pain?',
       paragraphs: [
-        'Change the load rather than stopping everything. The 2023 guideline’s advice on this is education on strategies to modify weight-bearing load at work, in sport and in daily life, graded E, meaning it is based on theoretical rather than trial evidence. In practice: keep the stretches every day, and cut back whatever makes the heel worse.',
-        'On a bad morning, keep the stretches and drop the heel raises for the day. The next morning is the check: if your first steps are clearly worse after a run, that run was more than the heel could take. Walkito reads it the same way: a big day on your feet yesterday turns today’s strength session into a lighter recovery one, and a high-pain morning shrinks the session rather than cancelling it.',
-        'If running hurts sharply, or the pain is getting worse week on week, stop and see a clinician rather than training through it. The same goes for pain that builds during runs after you increased your mileage, or that hurts when you squeeze the sides of the heel: both can be signs of a stress fracture, one of the other causes of heel pain the guideline names.',
+        'If heel pain from plantar fasciitis flares when you run, change the load instead of stopping everything. The 2023 guideline recommends learning how to adjust the load on your feet at work, in sport and in daily life. That advice is graded E, which means it rests on theory rather than trials. So keep the stretches every day, and cut back whatever makes the heel worse.',
+        'On a bad morning, keep the stretches and drop the heel raises for the day. The next morning tells you how it went. If your first steps are clearly worse after a run, that run was more than the heel could take. Walkito reads it the same way. A big day on your feet turns the next strength session into a lighter recovery one, and a painful morning makes the session shorter without cancelling it.',
+        'Stop and see a clinician if running hurts sharply or the pain gets worse week after week. The same goes for pain that builds during runs after you added mileage, or pain when you squeeze the sides of the heel. Both can be signs of a stress fracture, one of the other causes of heel pain the guideline names.',
       ],
       cites: [CITE.guideline],
     },
     {
-      h2: 'Strength or stretching?',
+      h2: 'Is strength work or stretching better for plantar fasciitis?',
       paragraphs: [
-        'In a randomised trial of 48 people with plantar fasciitis confirmed by ultrasound, both groups wore shoe inserts; one added high-load heel raises every other day, the other daily plantar-specific stretching. At three months the strength group scored **29 points lower** on the Foot Function Index (95% CI 6–52, p = 0.016).',
-        'At twelve months the two groups had converged: 22 against 16, no significant difference. Strength work brings improvement **forward**; it does not make it bigger. Doing both is what the guideline supports. The study-by-study reasoning is on [the evidence page](/science/).',
+        'Strength work and stretching both help plantar fasciitis, and strength work helps sooner.',
+        'In a trial of 48 people with plantar fasciitis confirmed by ultrasound, everyone wore shoe inserts. One group added heavy heel raises every other day. The other stretched the plantar fascia every day. At three months, the heel-raise group was clearly ahead on pain and daily function. At twelve months, the two groups were even. Strength work brought the improvement forward. It did not make it bigger.',
+        'Doing both is what the guideline supports. The study-by-study reasoning is on [the evidence page](/science/).',
       ],
+      sourceNote:
+        'Scored on the Foot Function Index: 29 points lower in the heel-raise group at three months (95% CI 6-52, p = 0.016), and 22 against 16 at twelve months, not a significant difference.',
       cites: [CITE.rathleff],
     },
     {
-      h2: 'What the 2023 guideline recommends, and against: the main grades',
-      bullets: [
-        'Plantar fascia and calf stretching: **grade A**',
-        'Manual therapy to the joints and soft tissue of the lower limb, from a clinician: **grade A**',
-        'Taping alongside other physical therapy, for short-term (up to 6 weeks) improvement in pain and function: **grade A**',
-        'Night splints for 1–3 months, for people who consistently have pain on their first steps in the morning: **grade A**',
-        'Resistance and strength training: **grade B**',
-        'Low-level laser therapy and dry needling, from a clinician: **grade B**',
-        'Orthotics on their own, for short-term pain relief: **grade B against**',
-        'Orthotics combined with other treatment: **grade C**',
-        'Therapeutic ultrasound added to stretching: **grade A against**',
+      h2: 'What does the 2023 guideline recommend for plantar fasciitis?',
+      paragraphs: [
+        'The 2023 guideline for plantar fasciitis grades each option by the strength of its evidence. A is the top grade. A grade marked “against” means the guideline advises not to use that option.',
       ],
+      table: {
+        head: ['Option', 'Grade'],
+        rows: [
+          ['Plantar fascia and calf stretching', '**A**'],
+          ['Manual therapy (hands-on work on the joints and soft tissue of the leg and foot), from a clinician', '**A**'],
+          ['Taping alongside other physical therapy, for better pain and function over up to 6 weeks', '**A**'],
+          ['Night splints for 1 to 3 months, if your first steps each morning keep hurting', '**A**'],
+          ['Resistance and strength training', '**B**'],
+          ['Low-level laser therapy and dry needling, from a clinician', '**B**'],
+          ['Orthotics on their own, for short-term pain relief', '**B against**'],
+          ['Orthotics combined with other care', '**C**'],
+          ['Therapeutic ultrasound added to stretching', '**A against**'],
+        ],
+      },
       cites: [CITE.guideline],
     },
     {
-      h2: 'When the heel stops hurting',
+      h2: 'What happens when the heel stops hurting?',
       paragraphs: [
-        `Heel pain can come back, so Walkito does not stop when the pain does. Once its pain-free mornings goal is reached (morning pain at or under 1/10 for ${PROGRAM.painFreeDays} days running), that goal moves to maintaining, kept going at a lower dose, and the next goal takes its place.`,
+        `When heel pain stops, Walkito keeps going at a lower dose, because heel pain can come back. Once you reach the pain-free mornings goal (morning pain at or under 1/10 for ${PROGRAM.painFreeDays} days in a row), that goal moves to maintaining and the next goal takes its place.`,
         'If your arches are flat as well, the arch has its own exercises and its own timeline: see [exercises for flat feet](/flat-feet-exercises/). Questions about the app itself are answered in [the FAQ](/faq/).',
       ],
     },
@@ -256,33 +300,37 @@ export const HEEL_PAIN_EN: Guide = {
   faq: [
     {
       q: 'Can I keep running with plantar fasciitis?',
-      a: 'You don’t have to stop everything: change the load instead. The 2023 clinical guideline includes education on modifying weight-bearing load, graded E (theoretical rather than trial evidence). Cut back what makes the heel worse and keep stretching daily. If your first steps next morning are clearly worse, the run was too much. Sharp or worsening pain needs a clinician.',
+      a: 'You don’t have to stop everything. Change the load instead. The 2023 clinical guideline recommends learning to adjust the load on your feet, graded E, which means it comes from theory, not trials. Cut back whatever makes the heel worse and keep stretching every day. If your first steps the next morning are clearly worse, the run was too much. Sharp or worsening pain needs a clinician.',
     },
     {
       q: 'Why is heel pain worse in the morning?',
-      a: 'First-step pain after sleep or sitting is the pattern most often linked to plantar fasciitis; the usual explanation is that the tissue under the foot stiffens at rest and is loaded suddenly by the first steps. That is why the fascia stretch is done before standing up, and why the 2023 guideline grades night splints A for it.',
+      a: 'Heel pain on the first steps after sleep or sitting is the pattern most often linked to plantar fasciitis. The usual explanation is that the tissue under the foot stiffens at rest, then gets loaded suddenly by those first steps. That is why the plantar fascia stretch is done before you stand up, and why the 2023 guideline gives night splints an A for it.',
     },
     {
       q: 'Is stretching or strengthening better for plantar fasciitis?',
-      a: 'Both, and strengthening works faster. In a trial of 48 people, high-load heel raises scored 29 points lower on the Foot Function Index than stretching at three months, but by twelve months the groups had converged. The 2023 guideline grades stretching A and strength training B. [The evidence page](/science/) has the details.',
+      a: 'Both help, and strengthening works faster. In a trial of 48 people, heavy heel raises were clearly ahead of stretching at three months, but by twelve months the two groups were even. The 2023 guideline gives stretching an A and strength training a B. [The evidence page](/science/) has the details.',
     },
     {
       q: 'Is a heel spur the same as plantar fasciitis?',
-      a: 'Not exactly. “Heel spur” is often used loosely for plantar fasciitis, but strictly it means a bony growth seen on an X-ray, while plantar fasciitis describes pain from the band of tissue under the foot. The exercises on this page are the ones the 2023 guideline grades for plantar heel pain; only a clinician can say what is behind yours.',
+      a: 'Not exactly. People often say “heel spur” when they mean plantar fasciitis, but strictly a heel spur is a bony growth that shows on an X-ray. Plantar fasciitis is pain from the band of tissue under the foot. The exercises on this page are the ones the 2023 guideline grades for heel pain under the foot. Only a clinician can say what is behind yours.',
     },
     {
       q: 'How often should I do plantar fasciitis exercises?',
-      a: `Stretch daily and strengthen every other day. The plantar fascia and calf stretches are daily work, with the first fascia stretch before your first steps. The towel heel raises follow the trial Walkito uses, done every other day. In Walkito you choose ${DAYS} training days a week, and strength days never fall back to back.`,
+      a: `Stretch every day and do the strength work every other day. The plantar fascia and calf stretches are daily, with the first fascia stretch before your first steps. The towel heel raises are done every other day, as in the trial Walkito follows. In Walkito you choose ${DAYS} training days a week, and strength days never fall back to back.`,
     },
     {
       q: 'When should I see a doctor about heel pain?',
-      a: 'See a clinician first if the pain followed an injury or a fall, you cannot put weight on the foot, or it comes with numbness, tingling, swelling, warmth or fever. The same applies if it wakes you at night, is sharp or getting worse, or hurts when you squeeze the heel (a possible stress fracture). Walkito does not diagnose.',
+      a: 'See a clinician first if the pain followed an injury or a fall, you can’t put weight on the foot, or it comes with numbness, tingling, swelling, warmth or fever. The same applies if it wakes you at night, is sharp or getting worse, or hurts when you squeeze the heel, which can mean a stress fracture. Walkito doesn’t diagnose.',
     },
   ],
   redFlags: RED_FLAGS,
   program: {
     h2: 'Doing it as a plan',
-    text: `Walkito turns this into a plan built one week at a time around one focus goal; with heel pain, the first is pain-free mornings: morning pain at or under 1/10 for ${PROGRAM.painFreeDays} days running. You choose ${DAYS} training days a week and sessions of ${MINUTES} minutes. A bad morning shortens and softens the day; a good one never speeds it up. Every ${PROGRAM.testEveryDays} days until your first goal is reached, then every ${PROGRAM.testEveryDaysAfterGoal}, it retests calf endurance, arch hold and single-leg balance. [How the plan works](/program/).`,
+    text: `You don’t have to work out the order, the doses or how long to stay on each exercise. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1/10 for ${PROGRAM.painFreeDays} days in a row.`,
+    more: [
+      `You pick ${DAYS} days a week and sessions of ${MINUTES} minutes. Every ${PROGRAM.testEveryDays} days (then every ${PROGRAM.testEveryDaysAfterGoal} once that goal is met), a short test checks calf endurance, arch hold and balance, so you can see what’s changing.`,
+    ],
+    cta: `Start with ${PROGRAM.sessionMinutes[0]} minutes a day.`,
   },
   crumb: 'Plantar fasciitis exercises',
   campaign: 'guide-heel-pain',

@@ -1,12 +1,14 @@
 import type { Metadata } from 'next';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
+import { Byline } from '@/components/Byline';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { ScreenshotSlot } from '@/components/ScreenshotSlot';
 import { CHROME } from '@/lib/i18n';
-import { IN_SESSION_STOP, PAIN_GOAL_MAX, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
+import { articleSchema } from '@/lib/schema';
+import { IN_SESSION_STOP, PAGE_UPDATED, PAIN_GOAL_MAX, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
 
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
 const { archHoldSeconds, calfRaises, balanceSeconds, gapPercent } = PROGRAM.goals;
@@ -40,15 +42,18 @@ export const metadata: Metadata = {
   },
 };
 
-const ARTICLE = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
+/** First published with the site's move away from a runners-only home page. */
+const PUBLISHED = '2026-09-28';
+
+const ARTICLE = articleSchema({
   headline: TITLE,
   description: DESCRIPTION,
-  inLanguage: 'en',
-  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-  mainEntityOfPage: `${SITE_URL}${PATH}`,
-};
+  path: PATH,
+  lang: 'en',
+  published: PUBLISHED,
+  updated: PAGE_UPDATED.runners,
+  cites: [],
+});
 
 const BREADCRUMBS = {
   '@context': 'https://schema.org',
@@ -94,6 +99,7 @@ export default function HeelPainRunners() {
             Heel pain
             <span>from running?</span>
           </h1>
+          <Byline lang="en" updated={PAGE_UPDATED.runners} />
           <p>
             Walkito is an exercise plan for runners with heel and foot pain,
             built one week at a time around a goal you can measure: calf

@@ -739,6 +739,15 @@ figure figcaption b {
   font-size: clamp(40px, 6.6vw, 84px);
 }
 
+.hero .byline {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.hero .byline a {
+  color: inherit;
+}
+
 .hero .hero-small {
   margin-top: 16px;
   font-size: 15px;
@@ -1178,4 +1187,87 @@ figure figcaption b {
     align-items: center;
     min-height: 44px;
   }
+}
+
+/* ------------------------------------------------------------- articles -- */
+
+/* Header cells: column heads stay on one line, row heads (an exercise, an
+   option) wrap like body text. */
+.prose thead th {
+  text-align: left;
+  padding: 10px 14px 10px 0;
+  border-bottom: 1px solid var(--ink);
+}
+
+.prose tbody th {
+  white-space: normal;
+  text-align: left;
+  padding: 10px 14px 10px 0;
+  border-bottom: 1px solid var(--hairline);
+  vertical-align: top;
+}
+
+/* "On this page": a short numbered list of the sections, near the top. */
+.prose .toc {
+  margin: 28px 0 8px;
+  padding: 18px 22px;
+  border: 1px solid var(--hairline);
+  border-radius: 16px;
+}
+
+.prose .toc h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.prose .toc ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.prose .toc li {
+  margin: 4px 0;
+}
+
+/* One exercise: its image slot beside the instructions. */
+.prose .exercise-detail {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 20px;
+  align-items: start;
+  margin: 26px 0;
+}
+
+.prose .exercise-detail .slot {
+  width: 110px;
+  margin: 0;
+}
+
+.prose .exercise-detail .slot-label {
+  font-size: 11px;
+}
+
+.prose .exercise-detail h3 {
+  margin: 0 0 6px;
+}
+
+.prose .exercise-detail p {
+  margin: 0 0 8px;
+}
+
+.prose .stop {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* The line said just before the App Store button. */
+.prose .cta-line {
+  margin: 28px 0 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* A grade ("B against") reads as one value; keep it on one line. */
+.prose td b {
+  white-space: nowrap;
 }

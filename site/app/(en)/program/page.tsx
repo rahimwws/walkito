@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
+import { Byline } from '@/components/Byline';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { CHROME } from '@/lib/i18n';
-import { articleSchema, formatDate } from '@/lib/schema';
+import { articleSchema } from '@/lib/schema';
 import { PAGE_UPDATED, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
 
 /**
@@ -92,10 +93,7 @@ export default function Program() {
 
       <main className="shell prose">
         <h1>A heel pain exercise plan that adapts every week</h1>
-        <p className="byline">
-          <a href="/about/">{c.byline}</a> · {c.updated}{' '}
-          <time dateTime={PAGE_UPDATED.program}>{formatDate(PAGE_UPDATED.program, 'en')}</time>
-        </p>
+        <Byline lang="en" updated={PAGE_UPDATED.program} />
 
         {/*
           Answer first. AI engines lift the first self-contained passage that

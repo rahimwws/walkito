@@ -55,7 +55,7 @@ export const ABOUT_ES: About = {
     {
       h2: 'Cómo escribimos las guías',
       paragraphs: [
-        'Cada guía responde a una pregunta concreta, y la respuesta está en su primer párrafo. Las firma el equipo editorial de Walkito y muestran cuándo se actualizaron por última vez; esa fecha solo cambia cuando cambia el contenido.',
+        'Cada guía responde a una pregunta concreta, y la respuesta está en su primer párrafo. Las firma el equipo de Walkito y muestran cuándo se actualizaron por última vez; esa fecha solo cambia cuando cambia el contenido.',
         'Las dosis son las dosis de inicio de la propia app, y así se dice. Cada idioma se escribe en ese idioma, alrededor de lo que la gente busca en él, en lugar de traducirse frase a frase.',
         'Escribimos con cautela: «se asocia a menudo con», nunca «tienes». Ninguna guía promete resultados, y cada cifra va con su matiz: cada afirmación sobre la forma del arco dice en qué pies se midió, y el resultado a los tres meses va siempre junto al de los doce.',
         'Cada cifra sale de una de estas cuatro fuentes publicadas, citada bajo la sección que la usa y reunida en [la página de evidencia](/science/) (en inglés). Una cifra sin fuente no entra en el sitio.',
