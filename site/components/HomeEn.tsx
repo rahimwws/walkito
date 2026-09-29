@@ -138,7 +138,7 @@ const INSIDE = [
   },
   {
     src: '/app/07-quick.webp',
-    label: 'Walkito: quick routines for work, before and after a run, and when it hurts',
+    label: 'Walkito: quick routines for when it hurts, before and after a run, at work, and before your first step',
     caption: 'Quick routines for any moment',
   },
   {
