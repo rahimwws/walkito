@@ -1781,3 +1781,16 @@ figure figcaption b {
     padding-inline: 12px;
   }
 }
+
+/* Very small phones: the header button fits beside the logo. */
+@media (max-width: 360px) {
+  .download {
+    padding: 0 12px;
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  .masthead {
+    gap: 10px 12px;
+  }
+}
