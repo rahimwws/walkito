@@ -93,6 +93,12 @@ export type AnalyticsEvents = {
   /** Settings → Email → Unsubscribe from all. */
   email_unsubscribed_all: Record<string, never>;
 
+  // ── Errors the user was spared ───────────────────────────────────────────
+  /** A link named a screen the app does not have; the user was sent Home. */
+  route_not_found: { path: string };
+  /** A screen threw and the friendly error screen stood in. The error's name only. */
+  app_error_shown: { name: string };
+
   // ── App updates ──────────────────────────────────────────────────────────
   /** The update sheet was shown. `ota` is an EAS Update, `store` a new build. */
   app_update_offered: { kind: AppUpdateKind };

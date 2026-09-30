@@ -21,6 +21,10 @@ export const CORE_RU = {
   'language.a11yLabel': 'Язык, {language}',
   'language.a11yHint': 'Меняет язык приложения',
 
+  'error.title': 'Что-то пошло не так',
+  'error.body': 'Ваш план и прогресс на месте. Попробуйте ещё раз.',
+  'error.retry': 'Попробовать ещё раз',
+
   // ── Settings ─────────────────────────────────────────────────────────────
   'settings.title': 'Настройки',
   'settings.terms': 'Условия использования',

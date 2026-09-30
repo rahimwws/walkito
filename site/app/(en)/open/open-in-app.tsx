@@ -6,8 +6,12 @@ import { useEffect, useState } from 'react';
  * Hands the email's path to the app, then offers the stores.
  *
  * `/open/today/?minutes=3&src=email&e=winback_7` becomes
- * `walkito://open/today?minutes=3&src=email&e=winback_7`, which the app's
- * `/open` route reads — the same route a universal link reaches directly.
+ * `walkito:///?open=today&minutes=3&src=email&e=winback_7`. The app rewrites
+ * that to its `/open` route (`app/+native-intent.tsx`) — the same route a
+ * universal link reaches directly. It is sent to the root rather than to
+ * `walkito://open/…` on purpose: a build from before the `/open` route opens
+ * the root as Home and ignores the query, where `/open/…` would put Expo
+ * Router's "Unmatched Route" screen in front of the user.
  *
  * All lowercase, like the emails that link here. The language follows the
  * browser, since this page is reached from an email and not from the site.
@@ -26,12 +30,15 @@ type Lang = keyof typeof WORDS;
 
 function schemeUrl(): string {
   const path = window.location.pathname.replace(/^\/open\/?/, '').replace(/\/+$/, '');
-  return `walkito://open/${path}${window.location.search}`;
+  const params = new URLSearchParams(window.location.search);
+  const query = new URLSearchParams({ open: path || 'today' });
+  params.forEach((value, key) => query.append(key, value));
+  return `walkito:///?${query.toString()}`;
 }
 
 export function OpenInApp() {
   const [lang, setLang] = useState<Lang>('en');
-  const [href, setHref] = useState('walkito://open');
+  const [href, setHref] = useState('walkito:///');
   const [stores, setStores] = useState(false);
   const [platform, setPlatform] = useState<'ios' | 'android' | 'other'>('other');
 

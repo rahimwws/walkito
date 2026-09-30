@@ -18,6 +18,10 @@ export const CORE_ES = {
   'language.a11yLabel': 'Idioma, {language}',
   'language.a11yHint': 'Cambia el idioma de la aplicación',
 
+  'error.title': 'Algo salió mal',
+  'error.body': 'Tu plan y tu progreso están a salvo. Inténtalo de nuevo.',
+  'error.retry': 'Intentar de nuevo',
+
   // ── Settings ─────────────────────────────────────────────────────────────
   'settings.title': 'Ajustes',
   'settings.terms': 'Términos de uso',

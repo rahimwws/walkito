@@ -39,6 +39,11 @@ export const CORE_EN = {
   'language.a11yLabel': 'Language, {language}',
   'language.a11yHint': 'Changes the language of the app',
 
+  // ── When a screen fails ──────────────────────────────────────────────────
+  'error.title': 'Something went wrong',
+  'error.body': 'Your plan and your progress are safe. Try again.',
+  'error.retry': 'Try again',
+
   // ── Settings ─────────────────────────────────────────────────────────────
   'settings.title': 'Settings',
   'settings.terms': 'Terms of Use',

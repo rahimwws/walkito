@@ -1,0 +1,36 @@
+/**
+ * Every link the system hands the app, rewritten to a path the app has.
+ *
+ * Runs before routing (`app/+native-intent.tsx`), on universal links, the
+ * `walkito://` scheme and the widget's links alike. Two shapes are rewritten:
+ *
+ * - `walkito:///?open=today&minutes=3&src=email&e=…` → `/open/today?minutes=3&src=email&e=…`.
+ *   The site's `/open/` page hands over in this shape on purpose: a build from
+ *   before the `/open` route opens it as Home with a query it ignores, instead
+ *   of Expo Router's "Unmatched Route" screen.
+ * - `walkito://open/today` → `/open/today`. With two slashes the scheme's
+ *   "host" is `open`, and it is folded back into the path.
+ *
+ * Anything else passes through untouched, and anything that fails to parse is
+ * returned as it came: this must never be the reason a link does nothing.
+ */
+export function rewriteIncomingPath(path: string): string {
+  try {
+    const url = new URL(path, 'walkito:///');
+    const params = new URLSearchParams(url.search);
+    const open = params.get('open');
+    if (open != null && open.length > 0) {
+      params.delete('open');
+      const rest = params.toString();
+      const route = open.replace(/^\/+|\/+$/g, '');
+      return `/open/${route}${rest ? `?${rest}` : ''}`;
+    }
+    if (/^walkito(\.[a-z]+)?:$/.test(url.protocol) && url.host === 'open') {
+      const route = url.pathname.replace(/^\/+|\/+$/g, '');
+      return `/open/${route}${url.search}`;
+    }
+    return path;
+  } catch {
+    return path;
+  }
+}
