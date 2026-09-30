@@ -35,6 +35,8 @@ export type Copy = {
   /** A goal figure: "25", "60 s", "under 10%". */
   target: (metric: Metric, n: string) => string;
 
+  /** Sent 15-20 seconds after the address first arrives — usually while the
+   * user is still in onboarding — so it welcomes rather than announces a plan. */
   welcome: {
     subject: string;
     intro: string;
@@ -144,11 +146,11 @@ const EN: Copy = {
   target: (metric, n) => (metric === 'calf' ? n : metric === 'symmetry' ? `under ${n}%` : `${n} s`),
 
   welcome: {
-    subject: 'your plan is ready',
+    subject: 'welcome to walkito',
     intro: 'rahim and rahman here - we built walkito, just the two of us.',
     first: (m) => `your first session takes ${minutesEn(m)}. start today, it's the easiest one.`,
     firstRunner: (m) => `your first session takes ${minutesEn(m)} - less than your warm-up.`,
-    button: "start today's session",
+    button: 'open walkito',
     ps: 'p.s. reply to this email. we read every one.',
   },
   day2Morning: {
@@ -302,7 +304,7 @@ const RU: Copy = {
   target: (metric, n) => (metric === 'calf' ? n : metric === 'symmetry' ? `меньше ${n} %` : `${n} с`),
 
   welcome: {
-    subject: 'ваш план готов',
+    subject: 'добро пожаловать в walkito',
     intro: 'это рахим и рахман - мы сделали walkito вдвоём.',
     first: (m) =>
       three(
@@ -318,7 +320,7 @@ const RU: Copy = {
         `первая сессия займёт ${m} минуты - меньше, чем ваша разминка.`,
         `первая сессия займёт ${m} минут - меньше, чем ваша разминка.`,
       ),
-    button: 'начать сегодняшнюю сессию',
+    button: 'открыть walkito',
     ps: 'p.s. ответьте на это письмо. мы читаем каждое.',
   },
   day2Morning: {
@@ -535,11 +537,11 @@ const ES: Copy = {
   target: (metric, n) => (metric === 'calf' ? n : metric === 'symmetry' ? `menos del ${n} %` : `${n} s`),
 
   welcome: {
-    subject: 'tu plan está listo',
+    subject: 'te damos la bienvenida a walkito',
     intro: 'somos rahim y rahman. hicimos walkito entre los dos.',
     first: (m) => `tu primera sesión dura ${minutesEs(m)}. empieza hoy, es la más fácil.`,
     firstRunner: (m) => `tu primera sesión dura ${minutesEs(m)} - menos que tu calentamiento.`,
-    button: 'empezar la sesión de hoy',
+    button: 'abrir walkito',
     ps: 'p. d. responde a este correo. leemos todos.',
   },
   day2Morning: {

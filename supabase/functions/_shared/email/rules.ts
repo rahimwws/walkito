@@ -385,6 +385,36 @@ export function evaluate(s: Snapshot, now: Date): Evaluation {
   }
 }
 
+/**
+ * The welcome, sent 15-20 seconds after the address first reaches us.
+ *
+ * That is usually the Sign in with Apple at the start of onboarding, so the
+ * email lands while the user is still in the app — the point is that it
+ * arrives at all, that fast, from two people who say they read the replies.
+ * It needs no plan yet, and it ignores the morning window: somebody who
+ * signed up a minute ago is awake. Everything else still holds — consent,
+ * bounces, and "once, ever" through the same `welcome` dedupe key the hourly
+ * run uses, so the two can never both send it.
+ */
+export function welcomeNow(s: Snapshot, now: Date): { decision: Decision | null; reason: string | null } {
+  const skip = (reason: string) => ({ decision: null, reason });
+  if (s.contact.unsubscribedAt != null) return skip('unsubscribed');
+  if (s.contact.bounced) return skip('bounced');
+  if (!s.contact.lifecycleOptIn) return skip('tips turned off');
+  if (s.log.some((row) => row.status !== 'failed' && row.dedupeKey === 'welcome')) return skip('already sent');
+  // A trigger replayed long after the sign-up is not a welcome any more; the
+  // hourly run's own welcome rule covers the first two days.
+  if (hoursBetween(s.contact.createdAt, now) > 1) return skip('address older than an hour');
+  const today = localTime(now, s.contact.timezone).date;
+  const minutes = todayMinutes(s, today) ?? s.profile?.defaultMinutes ?? 5;
+  const content = build.welcome(s.contact.locale, {
+    name: s.contact.firstName,
+    minutes,
+    runner: s.profile?.sport === 'running',
+  });
+  return { decision: { key: 'welcome', dedupeKey: 'welcome', content }, reason: null };
+}
+
 // ── Helpers ─────────────────────────────────────────────────────────────────
 
 /** The week's focus, else the first active goal in the big goal's order. */

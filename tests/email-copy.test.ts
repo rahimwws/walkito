@@ -159,10 +159,10 @@ describe('russian plurals', () => {
 describe('the emails as approved in the preview', () => {
   test('welcome, three languages', () => {
     expect(build.welcome('en', { name: 'sam', minutes: 5, runner: false })).toMatchObject({
-      subject: 'your plan is ready',
+      subject: 'welcome to walkito',
       greeting: 'hi sam,',
       paragraphs: ['rahim and rahman here - we built walkito, just the two of us.', "your first session takes 5 minutes. start today, it's the easiest one."],
-      button: { label: "start today's session", path: 'today' },
+      button: { label: 'open walkito', path: 'today' },
       ps: 'p.s. reply to this email. we read every one.',
     });
     expect(build.welcome('ru', { name: 'аня', minutes: 5, runner: false }).paragraphs[1]).toBe(

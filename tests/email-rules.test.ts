@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'bun:test';
 
-import { evaluate } from '../supabase/functions/_shared/email/rules.ts';
+import { evaluate, welcomeNow } from '../supabase/functions/_shared/email/rules.ts';
 import type { EmailKey, Snapshot } from '../supabase/functions/_shared/email/types.ts';
 import { date, day, freshAt, sessions, user } from './email-fixtures.ts';
 
@@ -266,7 +266,7 @@ describe('language', () => {
   test('a spanish user gets spanish', () => {
     const at = day(1, 15);
     const e = evaluate(user({ contact: { locale: 'es', firstName: 'lucía' }, profile: freshAt(at) }), at);
-    expect(e.decision?.content.subject).toBe('tu plan está listo');
+    expect(e.decision?.content.subject).toBe('te damos la bienvenida a walkito');
     expect(e.decision?.content.greeting).toBe('hola, lucía:');
   });
 
@@ -282,5 +282,30 @@ describe('access', () => {
     const at = day(5, 8);
     const s = user({ subscription: 'none', profile: freshAt(at) });
     expect(evaluate(s, at).skipped.find((x) => x.key === 'day5_start')?.reason).toBe('no access to the plan');
+  });
+});
+
+describe('welcome, straight after sign-up', () => {
+  const signedUp = day(1, 23, 40);
+  const fresh = (over: Parameters<typeof user>[0] = {}) =>
+    user({ profile: null, goals: [], tests: [], contact: { createdAt: signedUp.toISOString() }, ...over });
+
+  test('goes seconds after the address arrives, with no plan yet, even late at night', () => {
+    const r = welcomeNow(fresh(), new Date(signedUp.getTime() + 15_000));
+    expect(r.decision?.key).toBe('welcome');
+    expect(r.decision?.content.subject).toBe('welcome to walkito');
+    expect(r.decision?.content.greeting).toBe('hi sam,');
+    expect(r.decision?.content.paragraphs[1]).toBe("your first session takes 5 minutes. start today, it's the easiest one.");
+  });
+
+  test('never twice, and never to someone who said no', () => {
+    const later = new Date(signedUp.getTime() + 15_000);
+    expect(welcomeNow(fresh({ log: [sent('welcome', signedUp)] }), later).reason).toBe('already sent');
+    expect(welcomeNow(fresh({ contact: { createdAt: signedUp.toISOString(), unsubscribedAt: signedUp.toISOString() } }), later).reason).toBe('unsubscribed');
+    expect(welcomeNow(fresh({ contact: { createdAt: signedUp.toISOString(), lifecycleOptIn: false } }), later).reason).toBe('tips turned off');
+  });
+
+  test('a replay hours later is not a welcome', () => {
+    expect(welcomeNow(fresh(), new Date(signedUp.getTime() + 3 * 3_600_000)).reason).toBe('address older than an hour');
   });
 });

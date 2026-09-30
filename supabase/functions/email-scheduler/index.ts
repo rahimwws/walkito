@@ -18,6 +18,10 @@
  * rendered HTML — how a template is checked against real data before it ships:
  *   { "dryRun": true, "userId": "…", "now": "2026-10-01T08:10:00Z", "html": true }
  *
+ * The welcome does not wait for the hour. A trigger on `email_contacts` posts
+ * `{ "welcomeFor": "<user id>" }` the moment an address first arrives, and the
+ * welcome goes 15 seconds later — see `welcomeNow`.
+ *
  * Or for every email, with sample numbers, sent to one inbox — how the real
  * thing is looked at in a real mail app before anybody else gets it. Nothing
  * is logged and no user is touched; it works in any EMAIL_MODE:
@@ -28,7 +32,7 @@ import { createClient } from 'npm:@supabase/supabase-js@2';
 
 import { composeMessage, type MailConfig } from '../_shared/email/compose.ts';
 import { loadSnapshots } from '../_shared/email/load.ts';
-import { evaluate } from '../_shared/email/rules.ts';
+import { evaluate, welcomeNow } from '../_shared/email/rules.ts';
 import { sampleEmails } from '../_shared/email/samples.ts';
 
 const env = (name: string): string => Deno.env.get(name) ?? '';
@@ -55,6 +59,8 @@ const config: MailConfig = {
 };
 
 const BATCH = 200;
+/** How long after the sign-up the welcome lands: long enough to feel written, short enough to surprise. */
+const WELCOME_DELAY_MS = 15_000;
 /** Resend's default limit is a few requests a second; this stays under it. */
 const SEND_GAP_MS = 550;
 
@@ -163,6 +169,32 @@ async function send(decision: NonNullable<ReturnType<typeof evaluate>['decision'
   }
 }
 
+/** The welcome for one user who has just given an address. */
+async function welcome(userId: string): Promise<void> {
+  await sleep(WELCOME_DELAY_MS);
+  const { data: rows, error } = await db
+    .from('email_contacts')
+    .select('user_id, email, locale, timezone, first_name, lifecycle_opt_in, weekly_opt_in, unsubscribed_at, bounced, created_at')
+    .eq('user_id', userId)
+    .limit(1);
+  if (error != null || rows == null || rows.length === 0) return;
+  const [snapshot] = await loadSnapshots(db, rows, new Date().toISOString().slice(0, 10));
+  const { decision, reason } = welcomeNow(snapshot, new Date());
+  if (decision == null) {
+    console.log(`[email] welcome skipped for ${userId}: ${reason}`);
+    return;
+  }
+  const email = snapshot.contact.email;
+  if (MODE === 'off' || MODE === 'dry') {
+    console.log(`[email] welcome decided for ${userId} (${MODE}, not sent): ${decision.content.subject}`);
+    return;
+  }
+  if (MODE === 'test' && !TEST_RECIPIENTS.has(email.toLowerCase()) && !TEST_RECIPIENTS.has(userId)) return;
+  if (notReadyToSend().length > 0) return;
+  const result = await send(decision, userId, email, snapshot.contact.locale);
+  console.log(`[email] welcome for ${userId}: ${result}`);
+}
+
 /** Every email (or the ones named) with sample numbers, to one address. Not logged. */
 async function sendSamples(to: string, locale: string | undefined, keys: string[] | undefined) {
   if (!RESEND_KEY) return { error: 'RESEND_API_KEY not set' };
@@ -202,8 +234,19 @@ Deno.serve(async (req) => {
     sampleTo?: string;
     locale?: string;
     keys?: string[];
+    welcomeFor?: string;
   };
   if (body.sampleTo) return json(await sendSamples(body.sampleTo, body.locale, body.keys));
+  if (body.welcomeFor) {
+    // Answered at once so the database trigger is never held; the work goes on
+    // in the background for the fifteen seconds and the send.
+    const job = welcome(body.welcomeFor).catch((error) => console.error('[email] welcome failed', error));
+    // deno-lint-ignore no-explicit-any
+    const runtime = (globalThis as any).EdgeRuntime;
+    if (runtime?.waitUntil) runtime.waitUntil(job);
+    else await job;
+    return json({ accepted: true }, 202);
+  }
   const dry = body.dryRun === true || MODE === 'dry';
   if (MODE === 'off' && !dry) return json({ mode: MODE, note: 'EMAIL_MODE is off; nothing decided or sent' });
   const now = dry && body.now ? new Date(body.now) : new Date();

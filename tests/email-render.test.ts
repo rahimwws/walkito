@@ -46,7 +46,7 @@ describe('the rendered message', () => {
     const content = build.welcome('ru', { name: 'аня', minutes: 5, runner: false });
     const message = await composeMessage({ key: 'welcome', dedupeKey: 'welcome', content }, { userId: USER, email: 'a@b.co', locale: 'ru' }, CONFIG);
 
-    expect(message.subject).toBe('ваш план готов');
+    expect(message.subject).toBe('добро пожаловать в walkito');
     expect(message.to).toEqual(['a@b.co']);
     expect(message.reply_to).toBe('hello@walkito.site');
     expect(message.html).toContain('lang="ru"');
@@ -54,7 +54,7 @@ describe('the rendered message', () => {
     expect(message.html).toContain('https://walkito.site/email/mascot.png');
     expect(message.html).toContain('https://walkito.site/unsubscribe/?t=');
     expect(message.html).toContain('здравствуйте, аня!');
-    expect(message.html).toContain('начать сегодняшнюю сессию');
+    expect(message.html).toContain('открыть walkito');
     // The postal address, lowercased like the rest.
     expect(message.html).toContain('30 n gould st, sheridan, wy 82801');
     expect(message.headers['List-Unsubscribe']).toMatch(/^<https:\/\/example\.supabase\.co\/functions\/v1\/email-unsubscribe\?t=.+>$/);

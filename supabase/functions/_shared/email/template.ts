@@ -12,9 +12,13 @@ import type { EmailContent, Locale } from './types.ts';
  * a JSX setting the other lacks.
  *
  * Built to look like the app: the mascot waving at the top, SF Pro Rounded
- * where the mail app has it (`ui-rounded` in Apple Mail), ink on a light card,
- * one black pill button, and the dark scheme inverted for mail apps that honour
- * `prefers-color-scheme`. One idea, one button.
+ * where the mail app has it (`ui-rounded` in Apple Mail), ink straight on
+ * white, one black pill button, and the dark scheme inverted for mail apps that
+ * honour `prefers-color-scheme`. One idea, one button.
+ *
+ * No card. It was a rounded white box on a grey page, which inside a mail app
+ * is a container inside a container: the message already sits on the app's own
+ * surface, so the text goes straight onto it.
  */
 
 export type TemplateProps = {
@@ -34,8 +38,7 @@ const FONT = 'ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "
 const INK = '#111114';
 const MUTED = '#77777E';
 const FAINT = '#9E9EA6';
-const PAGE = '#F4F4F6';
-const CARD = '#FFFFFF';
+const PAGE = '#FFFFFF';
 const LINE = '#EDEDF0';
 
 /** Dark scheme, for Apple Mail and the others that read the media query. Mirrors `palette.dark`. */
@@ -43,7 +46,6 @@ const DARK_CSS = `
 :root { color-scheme: light dark; supported-color-schemes: light dark; }
 @media (prefers-color-scheme: dark) {
   .page { background-color: #111113 !important; }
-  .card { background-color: #1C1C1F !important; border-color: #2A2A2E !important; }
   .ink { color: #FFFFFF !important; }
   .muted, .faint, .faint a { color: #9E9EA6 !important; }
   .btn { background-color: #FFFFFF !important; color: #111114 !important; }
@@ -64,13 +66,10 @@ export function EmailLayout(props: TemplateProps): ReactElement {
     h(Preview, null, content.preheader),
     h(
       Body,
-      { className: 'page', style: { backgroundColor: PAGE, margin: 0, padding: '24px 12px', fontFamily: FONT } },
+      { className: 'page', style: { backgroundColor: PAGE, margin: 0, padding: '28px 20px 24px', fontFamily: FONT } },
       h(
         Container,
-        {
-          className: 'card',
-          style: { maxWidth: 520, backgroundColor: CARD, borderRadius: 24, border: `1px solid ${LINE}`, padding: '28px 28px 22px' },
-        },
+        { style: { maxWidth: 520, margin: '0 auto', padding: 0 } },
         h(Img, { src: `${props.assetBase.replace(/\/+$/, '')}/email/mascot.png`, width: 64, height: 64, alt: 'walkito', style: { margin: '0 0 14px -6px' } }),
         content.greeting != null ? text('ink', { color: INK, fontSize: 17, lineHeight: '26px', fontWeight: 700, marginBottom: 12 }, content.greeting) : null,
         ...content.paragraphs.map((p, i) =>
