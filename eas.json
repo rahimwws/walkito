@@ -18,7 +18,14 @@
     "production": {
       "autoIncrement": true,
       "environment": "production",
-      "channel": "production"
+      "channel": "production",
+      "uploadSourceMaps": true,
+      "ios": {
+        "env": {
+          "SOURCEMAP_FILE": "build/sourcemaps/main.jsbundle.map"
+        },
+        "buildArtifactPaths": ["ios/build/sourcemaps/main.jsbundle.map"]
+      }
     }
   },
   "submit": {

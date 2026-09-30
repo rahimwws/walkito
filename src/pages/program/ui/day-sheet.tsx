@@ -313,15 +313,12 @@ const styles = StyleSheet.create({
     paddingTop: 24,
   },
   date: {
-    fontSize: 14,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(14),
     textAlign: 'center',
   },
   title: {
-    fontSize: 40,
+    ...fonts.heavy(40, -1.2),
     lineHeight: 46,
-    fontFamily: fonts.heavy,
-    letterSpacing: -1.2,
     textAlign: 'center',
     marginTop: 2,
   },
@@ -335,13 +332,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 2,
   },
-  statValue: {
-    fontSize: 19,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
-  },
-  statLabel: {
-    fontSize: 13,
-    fontFamily: fonts.medium,
-  },
+  statValue: fonts.bold(19, -0.3),
+  statLabel: fonts.medium(13),
 });

@@ -57,7 +57,7 @@ export function DeltaLabel({
   return (
     <View style={styles.row}>
       <Arrow color={tone} down={!improving} size={Math.round(fontSize * 0.92)} />
-      <Text style={[styles.label, { color: tone, fontSize }]}>
+      <Text style={[fonts.bold(fontSize), { color: tone }]}>
         {Math.abs(delta)}
         {/* A unit word stands off the number ("8 min"); a symbol sets tight
             against it ("12%"). Every caller so far passes a word, so this
@@ -73,8 +73,5 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 3,
-  },
-  label: {
-    fontFamily: fonts.bold,
   },
 });

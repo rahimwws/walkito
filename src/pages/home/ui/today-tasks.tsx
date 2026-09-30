@@ -773,10 +773,8 @@ const styles = StyleSheet.create({
     height: MASCOT_SIZE,
   },
   heading: {
-    fontSize: 22,
+    ...fonts.heavy(22, -0.6),
     lineHeight: HEADING_LINE,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.6,
   },
   allDone: {
     borderRadius: 22,
@@ -798,8 +796,8 @@ const styles = StyleSheet.create({
    * and a second tick here would read as a fourth task. */
   allDoneDot: { width: 8, height: 8, borderRadius: 4, marginTop: 7 },
   allDoneText: { flex: 1 },
-  allDoneTitle: { fontSize: 17, fontFamily: fonts.bold, letterSpacing: -0.3 },
-  allDoneBlurb: { fontSize: 14, lineHeight: 19, fontFamily: fonts.regular, marginTop: 2 },
+  allDoneTitle: fonts.bold(17, -0.3),
+  allDoneBlurb: { ...fonts.regular(14), lineHeight: 19, marginTop: 2 },
   list: {
     marginTop: 14,
   },
@@ -813,21 +811,13 @@ const styles = StyleSheet.create({
     flex: 1,
     gap: 3,
   },
-  title: {
-    fontSize: 17,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
-  },
+  title: fonts.bold(17, -0.3),
   category: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 5,
   },
-  categoryText: {
-    fontSize: 14,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.1,
-  },
+  categoryText: fonts.semibold(14, -0.1),
   chip: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -837,11 +827,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderCurve: 'continuous',
   },
-  chipText: {
-    fontSize: 14,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.1,
-  },
+  chipText: fonts.bold(14, -0.1),
   box: {
     width: 30,
     height: 30,

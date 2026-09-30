@@ -56,5 +56,5 @@ export function LanguageBadge() {
 
 const styles = StyleSheet.create({
   // Tracked out a little: two capitals set tight read as one glyph.
-  badge: { fontSize: 15, fontFamily: fonts.bold, letterSpacing: 0.4 },
+  badge: fonts.bold(15, 0.4),
 });

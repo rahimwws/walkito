@@ -256,7 +256,7 @@ function Row({
 const styles = StyleSheet.create({
   screen: { flex: 1 },
   back: { alignSelf: 'flex-start', marginBottom: 14 },
-  name: { fontSize: 34, fontFamily: fonts.heavy, letterSpacing: -1 },
+  name: fonts.heavy(34, -1),
   stats: { flexDirection: 'row', gap: 12, marginTop: 20 },
   stat: {
     flex: 1,
@@ -265,10 +265,10 @@ const styles = StyleSheet.create({
     paddingVertical: 16,
     paddingHorizontal: 16,
   },
-  statValue: { fontSize: 30, fontFamily: fonts.heavy, letterSpacing: -0.8 },
-  statLabel: { fontSize: 13, fontFamily: fonts.medium, marginTop: 2 },
+  statValue: fonts.heavy(30, -0.8),
+  statLabel: { ...fonts.medium(13), marginTop: 2 },
   section: { marginTop: 28 },
-  sectionTitle: { fontSize: 12, fontFamily: fonts.bold, letterSpacing: 0.1, marginBottom: 8 },
+  sectionTitle: { ...fonts.bold(12, 0.1), marginBottom: 8 },
   card: { borderRadius: 22, borderCurve: 'continuous', overflow: 'hidden' },
   row: {
     flexDirection: 'row',
@@ -278,7 +278,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
   rowText: { flex: 1 },
-  rowLabel: { fontSize: 16, fontFamily: fonts.semibold, letterSpacing: -0.2 },
-  rowHint: { fontSize: 13, fontFamily: fonts.medium, marginTop: 1 },
-  rowValue: { fontSize: 14, fontFamily: fonts.medium },
+  rowLabel: fonts.semibold(16, -0.2),
+  rowHint: { ...fonts.medium(13), marginTop: 1 },
+  rowValue: fonts.medium(14),
 });

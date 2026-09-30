@@ -40,10 +40,8 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   summary: {
-    fontSize: 17,
+    ...fonts.bold(17, -0.2),
     lineHeight: 23,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.2,
   },
   chips: {
     flexDirection: 'row',
@@ -51,8 +49,7 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   how: {
-    fontSize: 15,
+    ...fonts.medium(15),
     lineHeight: 21,
-    fontFamily: fonts.medium,
   },
 });

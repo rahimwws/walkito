@@ -17,7 +17,9 @@ import { SPLASH_MASCOT_SIZE } from '@/shared/ui/splash';
  * requires to the same module, so it is in the bundle once.
  *
  * A raster sequence in a JSON wrapper — 121 WebP frames at 720×720, 24fps. See
- * `pages/onboarding/config/mascot.ts` for what that costs to mount.
+ * `pages/onboarding/config/mascot.ts` for what that costs to mount, and why it
+ * is not a `.lottie`: the sheet rises three frames after layout, which only
+ * works because a JSON source is decoded by then.
  */
 export const MASCOT_LOTTIE = require('@assets/lottie/mascot.json');
 

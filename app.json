@@ -42,19 +42,11 @@
       "output": "static"
     },
     "plugins": [
+      "./plugins/with-strip-frameworks",
       "expo-router",
       [
         "expo-font",
         {
-          "ios": {
-            "fonts": [
-              "./assets/fonts/SF-Pro-Rounded-Regular.otf",
-              "./assets/fonts/SF-Pro-Rounded-Medium.otf",
-              "./assets/fonts/SF-Pro-Rounded-Semibold.otf",
-              "./assets/fonts/SF-Pro-Rounded-Bold.otf",
-              "./assets/fonts/SF-Pro-Rounded-Heavy.otf"
-            ]
-          },
           "android": {
             "fonts": [
               "./node_modules/@expo-google-fonts/nunito/400Regular/Nunito_400Regular.ttf",
@@ -166,7 +158,8 @@
             }
           ]
         }
-      ]
+      ],
+      "./plugins/with-hermes-sourcemap"
     ],
     "experiments": {
       "typedRoutes": true

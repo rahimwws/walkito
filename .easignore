@@ -74,6 +74,11 @@ yarn-error.*
 # them before a release.
 assets/exercises/
 
+# The contract ceremony's full Lottie export, 3.4 MB. Only the trimmed
+# assets/lottie/contract.json that scripts/build-lottie.mjs makes from it is
+# part of the app; Metro blocks this folder, so the builder could not use it.
+/assets-src/
+
 # Editor state.
 .vscode/
 .idea/

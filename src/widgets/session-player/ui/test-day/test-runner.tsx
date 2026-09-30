@@ -577,21 +577,14 @@ const styles = StyleSheet.create({
     paddingTop: 8,
     paddingBottom: 24,
   },
-  eyebrow: {
-    fontSize: 13,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.4,
-  },
+  eyebrow: fonts.bold(13, 0.4),
   title: {
-    fontSize: 30,
+    ...fonts.heavy(30, -0.8),
     lineHeight: 36,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.8,
     marginTop: 4,
   },
   leg: {
-    fontSize: 17,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(17),
     marginTop: 2,
   },
   clipFrame: {
@@ -623,8 +616,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
   },
   clipFallbackText: {
-    fontSize: 15,
-    fontFamily: fonts.medium,
+    ...fonts.medium(15),
     textAlign: 'center',
   },
   steps: {
@@ -643,15 +635,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  stepNumberText: {
-    fontSize: 14,
-    fontFamily: fonts.bold,
-  },
+  stepNumberText: fonts.bold(14),
   stepText: {
     flex: 1,
-    fontSize: 16,
+    ...fonts.medium(16),
     lineHeight: 22,
-    fontFamily: fonts.medium,
     paddingTop: 3,
   },
   card: {
@@ -664,31 +652,23 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   question: {
-    fontSize: 20,
+    ...fonts.bold(20, -0.3),
     lineHeight: 26,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
     textAlign: 'center',
   },
   hint: {
-    fontSize: 14,
+    ...fonts.medium(14),
     lineHeight: 19,
-    fontFamily: fonts.medium,
     textAlign: 'center',
   },
   next: {
     gap: 10,
     paddingVertical: 18,
   },
-  nextTitle: {
-    fontSize: 20,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.4,
-  },
+  nextTitle: fonts.heavy(20, -0.4),
   nextBody: {
-    fontSize: 15,
+    ...fonts.medium(15),
     lineHeight: 21,
-    fontFamily: fonts.medium,
     textAlign: 'center',
   },
   chip: {
@@ -696,10 +676,7 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
     borderRadius: 50,
   },
-  chipText: {
-    fontSize: 14,
-    fontFamily: fonts.bold,
-  },
+  chipText: fonts.bold(14),
   measure: {
     flex: 1,
     paddingHorizontal: 20,
@@ -719,35 +696,28 @@ const styles = StyleSheet.create({
   /** Read from where the phone is during a test: on the floor or against a
    * wall, a couple of metres off. */
   big: {
-    fontSize: 104,
+    ...fonts.heavy(104, -3),
     lineHeight: 112,
-    fontFamily: fonts.heavy,
-    letterSpacing: -3,
     fontVariant: ['tabular-nums'],
     textAlign: 'center',
     alignSelf: 'stretch',
     paddingHorizontal: 24,
   },
   unit: {
-    fontSize: 17,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(17),
     marginTop: -6,
   },
   phase: {
-    fontSize: 20,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.2,
+    ...fonts.heavy(20, -0.2),
     marginTop: 6,
   },
   clock: {
-    fontSize: 17,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(17),
     fontVariant: ['tabular-nums'],
   },
   stopHint: {
-    fontSize: 15,
+    ...fonts.medium(15),
     lineHeight: 21,
-    fontFamily: fonts.medium,
     textAlign: 'center',
     paddingHorizontal: 12,
     paddingBottom: 12,
@@ -757,10 +727,7 @@ const styles = StyleSheet.create({
     gap: 4,
     paddingBottom: 12,
   },
-  pausedTitle: {
-    fontSize: 20,
-    fontFamily: fonts.heavy,
-  },
+  pausedTitle: fonts.heavy(20),
   dock: {
     paddingHorizontal: 20,
     paddingTop: 8,
@@ -771,9 +738,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  textButtonLabel: {
-    fontSize: 16,
-    fontFamily: fonts.semibold,
-  },
+  textButtonLabel: fonts.semibold(16),
   pressed: { opacity: 0.6 },
 });

@@ -20,8 +20,10 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 /** The app's own icon, so the mock banner is the real thing at notification
- * size rather than an illustration of one. */
-const APP_ICON = require('@assets/icon.png');
+ * size rather than an illustration of one. The 150 px copy, not `icon.png`:
+ * that one is app.json's 1254 px source for the home-screen icon, and a
+ * require of it shipped its 1.1 MB again inside the bundle to draw 38 pt. */
+const APP_ICON = require('@assets/icon-small.webp');
 
 /** What each line of the ask promises, in the order it is delivered. */
 const PROMISES = [
@@ -204,16 +206,13 @@ const styles = StyleSheet.create({
     paddingTop: 8,
   },
   title: {
-    fontSize: 28,
+    ...fonts.bold(28, -0.7),
     lineHeight: 34,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.7,
   },
   blurb: {
     marginTop: 10,
-    fontSize: 16,
+    ...fonts.regular(16),
     lineHeight: 23,
-    fontFamily: fonts.regular,
   },
   banner: {
     marginTop: 30,
@@ -239,18 +238,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
   },
-  bannerTitle: {
-    fontSize: 15,
-    fontFamily: fonts.semibold,
-  },
-  bannerTime: {
-    fontSize: 13,
-    fontFamily: fonts.regular,
-  },
+  bannerTitle: fonts.semibold(15),
+  bannerTime: fonts.regular(13),
   bannerBody: {
-    fontSize: 14,
+    ...fonts.regular(14),
     lineHeight: 19,
-    fontFamily: fonts.regular,
   },
   promises: {
     marginTop: 26,
@@ -268,9 +260,8 @@ const styles = StyleSheet.create({
   },
   promiseText: {
     flex: 1,
-    fontSize: 15,
+    ...fonts.regular(15),
     lineHeight: 21,
-    fontFamily: fonts.regular,
   },
   actions: {
     marginTop: 'auto',
@@ -281,8 +272,5 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     paddingVertical: 4,
   },
-  skipText: {
-    fontSize: 15,
-    fontFamily: fonts.semibold,
-  },
+  skipText: fonts.semibold(15),
 });

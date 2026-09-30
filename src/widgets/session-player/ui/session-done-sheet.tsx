@@ -270,9 +270,7 @@ const styles = StyleSheet.create({
     marginTop: 18,
   },
   question: {
-    fontSize: 17,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
+    ...fonts.bold(17, -0.3),
     textAlign: 'center',
   },
   line: {
@@ -287,8 +285,7 @@ const styles = StyleSheet.create({
     minHeight: 20,
   },
   lineText: {
-    fontSize: 14,
-    fontFamily: fonts.medium,
+    ...fonts.medium(14),
     textAlign: 'center',
     flexShrink: 1,
   },
@@ -306,9 +303,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   pillText: {
-    fontSize: 15,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
+    ...fonts.semibold(15, -0.2),
     flexShrink: 1,
   },
 });

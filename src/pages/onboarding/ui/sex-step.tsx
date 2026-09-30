@@ -187,9 +187,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.45)',
   },
   label: {
-    fontSize: 20,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
+    ...fonts.bold(20, -0.3),
     // Fixed white rather than the theme foreground: it sits on a photograph,
     // not on the page, so it must not flip with the colour scheme.
     color: '#FFFFFF',

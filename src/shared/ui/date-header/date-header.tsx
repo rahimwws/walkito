@@ -50,14 +50,6 @@ const styles = StyleSheet.create({
     alignItems: 'baseline',
     gap: 8,
   },
-  day: {
-    fontSize: 44,
-    fontFamily: fonts.heavy,
-    letterSpacing: -1.2,
-  },
-  month: {
-    fontSize: 24,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.3,
-  },
+  day: fonts.heavy(44, -1.2),
+  month: fonts.semibold(24, -0.3),
 });

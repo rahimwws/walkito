@@ -93,7 +93,9 @@ export function RootLayout() {
 }
 
 function RootLayoutInner() {
-  // Expo Go can't embed fonts at build time, so load them here.
+  // The fonts that are files: Inter for the note sheet, and on Android Nunito
+  // (Expo Go can't embed fonts at build time). iOS draws the app's face from
+  // the system, so nothing of it loads here.
   const [fontsReady, fontError] = useFonts(fontAssets);
   // Read synchronously from MMKV, so the very first paint mounts the right
   // stack rather than flashing Home and swapping.
@@ -321,7 +323,7 @@ function RootLayoutInner() {
             <StatusBar style="auto" />
             {/* An over-the-air update or a new App Store build, offered in a
                 sheet, and the "up to date" note after the restart. Mounted
-                with the fonts, so neither draws in the system face; not during
+                with the fonts, so neither draws in a fallback face; not during
                 onboarding, where the first minutes are not the moment to ask
                 for a restart. Its own component so expo-updates' progress
                 events re-render it rather than this layout. */}

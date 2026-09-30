@@ -136,11 +136,7 @@ const styles = StyleSheet.create({
     borderWidth: StyleSheet.hairlineWidth,
     borderColor: 'rgba(255,255,255,0.18)',
   },
-  eyebrow: {
-    fontSize: 12,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.6,
-  },
+  eyebrow: fonts.bold(12, 0.6),
   headline: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -149,10 +145,8 @@ const styles = StyleSheet.create({
     rowGap: 4,
   },
   word: {
-    fontSize: 26,
+    ...fonts.heavy(26, -0.7),
     lineHeight: 34,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.7,
   },
   lead: {
     paddingHorizontal: 10,
@@ -160,9 +154,8 @@ const styles = StyleSheet.create({
     borderCurve: 'continuous',
   },
   detail: {
-    fontSize: 15,
+    ...fonts.medium(15),
     lineHeight: 21,
-    fontFamily: fonts.medium,
   },
   line: {
     height: 24,
@@ -227,8 +220,5 @@ const styles = StyleSheet.create({
   step: {
     flex: 1,
   },
-  value: {
-    fontSize: 15,
-    fontFamily: fonts.bold,
-  },
+  value: fonts.bold(15),
 });

@@ -542,7 +542,7 @@ export function GlassTabButton({
         {/* Fades out and is clipped by the shrinking box — no layout anim. */}
         <Animated.Text
           numberOfLines={1}
-          style={[{ fontSize: LABEL_SIZE, fontFamily: fonts.semibold, marginTop: ITEM_GAP }, labelStyle]}>
+          style={[{ ...fonts.semibold(LABEL_SIZE), marginTop: ITEM_GAP }, labelStyle]}>
           {item.label}
         </Animated.Text>
       </Animated.View>

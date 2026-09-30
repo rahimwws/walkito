@@ -182,8 +182,8 @@ const SIDE_PAD = 20;
 
 const styles = StyleSheet.create({
   screen: { flex: 1 },
-  title: { fontSize: 32, fontFamily: fonts.heavy, letterSpacing: -0.8 },
-  subtitle: { marginTop: 4, fontSize: 16, fontFamily: fonts.medium, letterSpacing: -0.2 },
+  title: fonts.heavy(32, -0.8),
+  subtitle: { marginTop: 4, ...fonts.medium(16, -0.2) },
   /**
    * The full width inside the gutter, and banner-shaped.
    *

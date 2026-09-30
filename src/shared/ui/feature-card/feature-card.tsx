@@ -10,7 +10,7 @@ import {
   type ViewStyle,
 } from 'react-native';
 
-import { accents, fonts, type AccentName } from '@/shared/config';
+import { accents, faces, fonts, type AccentName } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 
 /** Width ÷ height. Taken from the design's pair of side-by-side cards. */
@@ -162,24 +162,23 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   eyebrow: {
-    fontSize: 14,
-    fontFamily: fonts.regular,
+    ...fonts.regular(14),
     color: MUTED,
   },
   title: {
-    fontSize: 19,
-    fontFamily: fonts.regular,
+    ...fonts.regular(19, -0.2),
     color: MUTED,
-    letterSpacing: -0.2,
   },
+  // Always drawn over `title`, whose -0.2 it has always inherited: spelled
+  // out, because a `fonts.*` call replaces the spacing it lands on.
   inlineTitle: {
-    fontSize: 16,
-    fontFamily: fonts.medium,
+    ...fonts.medium(16, -0.2),
     color: INK,
     flexShrink: 1,
   },
+  // Nested inside `title`, so the size and spacing are the title's.
   titleLead: {
-    fontFamily: fonts.bold,
+    ...faces.bold,
     color: INK,
   },
 });

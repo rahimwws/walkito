@@ -176,9 +176,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 8,
   },
-  buttonLabel: {
-    fontSize: 16,
-    fontFamily: fonts.heavy,
-    letterSpacing: 0.1,
-  },
+  buttonLabel: fonts.heavy(16, 0.1),
 });

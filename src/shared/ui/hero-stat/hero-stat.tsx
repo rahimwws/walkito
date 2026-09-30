@@ -65,7 +65,6 @@ export function HeroStat({ value, display, unit, goal, caption, size = 64 }: Her
             value={value}
             color={colors.foreground}
             fontSize={size}
-            fontFamily={fonts.heavy}
             weight="heavy"
             duration={0.9}
           />
@@ -77,7 +76,7 @@ export function HeroStat({ value, display, unit, goal, caption, size = 64 }: Her
               justifyContent: 'flex-end',
               paddingBottom: size * 0.2,
             }}>
-            <Text style={[styles.unit, { color: theme.unit, fontSize: size * 0.28 }]}>
+            <Text style={[fonts.semibold(size * 0.28), { color: theme.unit }]}>
               {trailing}
             </Text>
           </View>
@@ -100,8 +99,5 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-end',
     gap: 10,
-  },
-  unit: {
-    fontFamily: fonts.semibold,
   },
 });

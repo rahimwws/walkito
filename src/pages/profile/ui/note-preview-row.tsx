@@ -77,6 +77,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
   text: { flex: 1 },
-  label: { fontSize: 16, fontFamily: fonts.semibold, letterSpacing: -0.2 },
-  hint: { fontSize: 13, fontFamily: fonts.medium, marginTop: 1 },
+  label: fonts.semibold(16, -0.2),
+  hint: { ...fonts.medium(13), marginTop: 1 },
 });

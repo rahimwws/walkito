@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   head: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
-  title: { fontSize: 24, fontFamily: fonts.heavy, letterSpacing: -0.6 },
-  close: { fontSize: 16, fontFamily: fonts.medium },
-  note: { fontSize: 13, fontFamily: fonts.medium, letterSpacing: -0.1 },
+  title: fonts.heavy(24, -0.6),
+  close: fonts.medium(16),
+  note: fonts.medium(13, -0.1),
 });

@@ -175,9 +175,5 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderCurve: 'continuous',
   },
-  chipText: {
-    fontSize: 13,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.1,
-  },
+  chipText: fonts.bold(13, -0.1),
 });

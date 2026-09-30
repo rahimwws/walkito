@@ -121,8 +121,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  label: {
-    fontSize: 15,
-    fontFamily: fonts.semibold,
-  },
+  label: fonts.semibold(15),
 });

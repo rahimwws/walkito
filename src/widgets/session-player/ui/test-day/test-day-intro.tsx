@@ -260,22 +260,15 @@ const styles = StyleSheet.create({
     paddingTop: 8,
     paddingBottom: 24,
   },
-  eyebrow: {
-    fontSize: 13,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.4,
-  },
+  eyebrow: fonts.bold(13, 0.4),
   title: {
-    fontSize: 32,
+    ...fonts.heavy(32, -0.8),
     lineHeight: 38,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.8,
     marginTop: 4,
   },
   body: {
-    fontSize: 16,
+    ...fonts.medium(16),
     lineHeight: 22,
-    fontFamily: fonts.medium,
     marginTop: 8,
     marginBottom: 20,
   },
@@ -307,26 +300,18 @@ const styles = StyleSheet.create({
     flex: 1,
     gap: 2,
   },
-  testName: {
-    fontSize: 17,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.2,
-  },
+  testName: fonts.bold(17, -0.2),
   testMeasures: {
-    fontSize: 14,
+    ...fonts.medium(14),
     lineHeight: 19,
-    fontFamily: fonts.medium,
   },
   testGoal: {
-    fontSize: 13,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(13),
     marginTop: 4,
     fontVariant: ['tabular-nums'],
   },
   section: {
-    fontSize: 13,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.4,
+    ...fonts.bold(13, 0.4),
     marginTop: 24,
     marginBottom: 8,
     marginLeft: 4,
@@ -342,21 +327,15 @@ const styles = StyleSheet.create({
   },
   needText: {
     flex: 1,
-    fontSize: 15,
-    fontFamily: fonts.medium,
+    ...fonts.medium(15),
   },
   checkin: {
     marginTop: 16,
     paddingVertical: 16,
   },
-  checkinTitle: {
-    fontSize: 17,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.2,
-  },
+  checkinTitle: fonts.bold(17, -0.2),
   checkinHint: {
-    fontSize: 14,
-    fontFamily: fonts.medium,
+    ...fonts.medium(14),
     marginTop: 2,
   },
   scale: {
@@ -373,8 +352,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   cellText: {
-    fontSize: 15,
-    fontFamily: fonts.bold,
+    ...fonts.bold(15),
     fontVariant: ['tabular-nums'],
   },
   ends: {
@@ -382,10 +360,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginTop: 8,
   },
-  end: {
-    fontSize: 12,
-    fontFamily: fonts.medium,
-  },
+  end: fonts.medium(12),
   note: {
     flexDirection: 'row',
     alignItems: 'flex-start',
@@ -395,9 +370,8 @@ const styles = StyleSheet.create({
   },
   noteText: {
     flex: 1,
-    fontSize: 15,
+    ...fonts.medium(15),
     lineHeight: 21,
-    fontFamily: fonts.medium,
   },
   pressed: { opacity: 0.6 },
   dock: {
@@ -410,8 +384,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  secondaryText: {
-    fontSize: 16,
-    fontFamily: fonts.semibold,
-  },
+  secondaryText: fonts.semibold(16),
 });

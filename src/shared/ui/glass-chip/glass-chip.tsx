@@ -167,9 +167,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  label: {
-    fontSize: 14,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.1,
-  },
+  label: fonts.semibold(14, -0.1),
 });

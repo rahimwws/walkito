@@ -32,9 +32,7 @@ export function PlaceholderScreen({ title }: { title: string }) {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 34,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.5,
+    ...fonts.bold(34, -0.5),
     marginBottom: 20,
   },
 });

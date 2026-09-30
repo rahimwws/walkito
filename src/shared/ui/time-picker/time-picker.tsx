@@ -79,8 +79,5 @@ const styles = StyleSheet.create({
     borderRadius: 18,
     borderCurve: 'continuous',
   },
-  value: {
-    fontSize: 17,
-    fontFamily: fonts.semibold,
-  },
+  value: fonts.semibold(17),
 });

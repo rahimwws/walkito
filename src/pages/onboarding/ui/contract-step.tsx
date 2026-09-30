@@ -25,17 +25,28 @@ const STROKE = 3.5;
 /** Diameter of the round stamp. */
 const STAMP = 132;
 
-const CEREMONY = require('@assets/lottie/contract.json');
 /**
- * Where the ceremony actually starts.
+ * The ceremony: a flipbook of 720×720 WebP frames at 24fps, trimmed from
+ * `assets-src/lottie/contract.json` by `scripts/build-lottie.mjs`
+ * (`bun run build:lottie`).
  *
- * Measured off the file: frames 1–60 barely move — a couple of units of change
- * per frame against 25–31 later on — so the opening two and a half seconds
- * read as something already half-done rather than as a beginning. The still
- * held before signing is frame 60, and playback runs from there.
+ * It starts where the ceremony actually starts. The export is 121 frames, but
+ * measured off it, frames 1–60 barely move — a couple of units of change per
+ * frame against 25–31 later on — so its opening two and a half seconds read as
+ * something already half-done rather than as a beginning. This step always
+ * held the export's frame 60 and played on from there, so the build drops
+ * frames 0–59 and never ships them: frame 0 here is the export's frame 60, and
+ * the file is the 61 frames that are ever on screen. Timing is unchanged —
+ * the same frames, played at the same rate from the same still.
+ *
+ * Still JSON, so still inlined into the bundle as base64. A `.lottie` would
+ * ship the frames as an asset instead, but lottie-ios loads one off the main
+ * thread and decodes it a moment after mount, in the middle of this step's
+ * slide-in, which then hitches while the figure pops in. A JSON source is
+ * decoded while the view mounts, before anything moves.
  */
-const CEREMONY_FRAMES = 121;
-const CEREMONY_FROM = 60;
+const CEREMONY = require('@assets/lottie/contract.json');
+const CEREMONY_FRAMES = 61;
 const CEREMONY_FPS = 24;
 
 const AnimatedLottie = Animated.createAnimatedComponent(LottieView);
@@ -91,7 +102,7 @@ export function ContractStep({
   sealed.current = onSealed;
 
   /**
-   * The frame, as a fraction. Held rather than played.
+   * The frame, as a fraction. Held on the first frame rather than played.
    *
    * `autoPlay={false}` plus a plain `progress` number did not hold it — the
    * view started itself the moment the screen appeared, which is the one thing
@@ -99,7 +110,7 @@ export function ContractStep({
    * arrangement the welcome mascot uses and leaves nothing able to start it
    * but this component.
    */
-  const frame = useSharedValue(CEREMONY_FROM / CEREMONY_FRAMES);
+  const frame = useSharedValue(0);
   const ceremonyProps = useAnimatedProps(() => ({ progress: frame.value }));
 
   const finish = useCallback(() => {
@@ -112,7 +123,7 @@ export function ContractStep({
     frame.value = withTiming(
       1,
       {
-        duration: ((CEREMONY_FRAMES - CEREMONY_FROM) / CEREMONY_FPS) * 1000,
+        duration: (CEREMONY_FRAMES / CEREMONY_FPS) * 1000,
         easing: Easing.linear,
         reduceMotion: ReduceMotion.System,
       },
@@ -299,7 +310,7 @@ const styles = StyleSheet.create({
   wrap: { flex: 1, paddingTop: 4 },
   list: { gap: 12 },
   row: { flexDirection: 'row', alignItems: 'flex-start', gap: 10 },
-  item: { flex: 1, fontSize: 15, lineHeight: 21, fontFamily: fonts.regular },
+  item: { flex: 1, ...fonts.regular(15), lineHeight: 21 },
   // Pulled up under the heading and given real size — this is the screen's
   // subject, not an illustration beside it.
   // Fixed height and clipped, so scaling the character up inside it enlarges
@@ -321,7 +332,7 @@ const styles = StyleSheet.create({
     borderRadius: RADIUS,
     borderCurve: 'continuous',
   },
-  hint: { alignSelf: 'center', fontSize: 15, fontFamily: fonts.regular },
+  hint: { alignSelf: 'center', ...fonts.regular(15) },
   clear: { position: 'absolute', top: 10, right: 14, fontSize: 17, padding: 4 },
   // Sits low and hangs past the pad's bottom edge, the way a stamp pressed
   // over a signature would overlap whatever is under it.
@@ -343,9 +354,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 1,
   },
-  stampTop: { fontSize: 9.5, fontFamily: fonts.bold, letterSpacing: 1.6 },
-  stampText: { fontSize: 18, fontFamily: fonts.heavy, letterSpacing: 0.4 },
+  stampTop: fonts.bold(9.5, 1.6),
+  stampText: fonts.heavy(18, 0.4),
   stampRule: { width: 42, height: 1.5, marginVertical: 3 },
-  stampBottom: { fontSize: 9, fontFamily: fonts.semibold, letterSpacing: 1.1 },
-  note: { marginTop: 10, fontSize: 12, fontFamily: fonts.regular, textAlign: 'center' },
+  stampBottom: fonts.semibold(9, 1.1),
+  note: { marginTop: 10, ...fonts.regular(12), textAlign: 'center' },
 });

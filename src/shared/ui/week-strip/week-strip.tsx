@@ -160,11 +160,7 @@ const styles = StyleSheet.create({
   },
   letter: {
     position: 'absolute',
-    fontSize: 14,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(14),
   },
-  date: {
-    fontSize: 16,
-    fontFamily: fonts.medium,
-  },
+  date: fonts.medium(16),
 });

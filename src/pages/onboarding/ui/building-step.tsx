@@ -236,12 +236,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   phrase: {
-    fontSize: 25,
-    lineHeight: 32,
     // The lightest face the app has. A bold line over a photograph would shout
     // through a screen whose whole job is to be a pause.
-    fontFamily: fonts.regular,
-    letterSpacing: -0.2,
+    ...fonts.regular(25, -0.2),
+    lineHeight: 32,
     color: '#FFFFFF',
     textAlign: 'center',
   },

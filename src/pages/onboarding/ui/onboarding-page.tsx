@@ -1101,7 +1101,7 @@ const CONFIRM_MS = 900;
 const styles = StyleSheet.create({
   altAuthRow: { flexDirection: 'row', justifyContent: 'center', gap: 28 },
   altAuth: { alignItems: 'center', paddingTop: 16, paddingBottom: 4 },
-  altAuthLabel: { fontSize: 15, fontFamily: fonts.medium, letterSpacing: -0.2 },
+  altAuthLabel: fonts.medium(15, -0.2),
   root: {
     flex: 1,
     paddingHorizontal: SIDE_PAD,
@@ -1122,16 +1122,13 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   title: {
-    fontSize: 30,
+    ...fonts.bold(30, -0.8),
     lineHeight: 36,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.8,
   },
   blurb: {
     marginTop: 10,
-    fontSize: 16,
+    ...fonts.regular(16),
     lineHeight: 22,
-    fontFamily: fonts.regular,
   },
   rail: {
     marginTop: 36,

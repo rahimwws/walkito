@@ -120,7 +120,6 @@ const styles = StyleSheet.create({
   label: {
     flex: 1,
     marginLeft: 16,
-    fontSize: 17,
-    fontFamily: fonts.medium,
+    ...fonts.medium(17),
   },
 });

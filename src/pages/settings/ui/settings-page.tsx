@@ -139,11 +139,9 @@ export function SettingsPage() {
 
 const styles = StyleSheet.create({
   sheet: { paddingHorizontal: 20, paddingTop: 20 },
-  title: { fontSize: 24, fontFamily: fonts.heavy, letterSpacing: -0.6, marginBottom: 16 },
+  title: { ...fonts.heavy(24, -0.6), marginBottom: 16 },
   sectionTitle: {
-    fontSize: 12,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.1,
+    ...fonts.bold(12, 0.1),
     marginBottom: 8,
   },
   list: { borderRadius: 22, borderCurve: 'continuous', overflow: 'hidden', marginTop: 24 },
@@ -155,7 +153,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
   rowText: { flex: 1 },
-  rowLabel: { fontSize: 16, fontFamily: fonts.semibold, letterSpacing: -0.2 },
-  rowHint: { fontSize: 13, fontFamily: fonts.medium, marginTop: 1 },
-  disclaimer: { fontSize: 12, lineHeight: 17, fontFamily: fonts.medium, marginTop: 16, paddingHorizontal: 4 },
+  rowLabel: fonts.semibold(16, -0.2),
+  rowHint: { ...fonts.medium(13), marginTop: 1 },
+  disclaimer: { ...fonts.medium(12), lineHeight: 17, marginTop: 16, paddingHorizontal: 4 },
 });

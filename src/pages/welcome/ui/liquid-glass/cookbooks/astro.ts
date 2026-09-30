@@ -27,7 +27,10 @@ const stickers = {
   barbell: require('@assets/liquid-glass/astro/stickers/barbell.png'),
   // Kept from upstream: these are night-sky props, not product references, and
   // they belong on a screen that opens onto a starfield.
-  star: require('@assets/liquid-glass/astro/stickers/star.png'),
+  //
+  // The star is WebP because it alone was a full 226 KB RGBA render; the rest
+  // are small palette PNGs that WebP would only save a few KB on.
+  star: require('@assets/liquid-glass/astro/stickers/star.webp'),
   sparkle: require('@assets/liquid-glass/astro/stickers/sparkle.png'),
   bolt: require('@assets/liquid-glass/astro/stickers/bolt.png'),
   rocket: require('@assets/liquid-glass/astro/stickers/rocket.png'),
@@ -40,7 +43,7 @@ const stickers = {
 export const ASTRO_ASSET_MODULES = [
   require('@assets/liquid-glass/astro/stars.png'),
   require('@assets/liquid-glass/astro/glow.png'),
-  require('@assets/liquid-glass/astro/wordmark.png'),
+  require('@assets/liquid-glass/astro/wordmark.webp'),
   ...Object.values(stickers),
 ] as const;
 
@@ -53,7 +56,10 @@ export const ASTRO_THEME: CookbookTheme = {
     base: require('@assets/liquid-glass/astro/stars.png'),
     glow: require('@assets/liquid-glass/astro/glow.png'),
   },
-  wordmark: require('@assets/liquid-glass/astro/wordmark.png'),
+  // Lossless WebP: the same pixels as the PNG it replaced at a third of the
+  // size (147 KB, from 469). The stars stay PNG, where lossless WebP came out
+  // bigger and lossy smeared the pinpoint stars.
+  wordmark: require('@assets/liquid-glass/astro/wordmark.webp'),
   // forty slots, in plume order; the big hero stickers lead
   stickers: [
     s.sneaker, s.runner, s.stopwatch, s.heartbeat, s.medal,

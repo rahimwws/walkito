@@ -127,9 +127,7 @@ export function EmailSettings() {
 const styles = StyleSheet.create({
   root: { marginTop: 24 },
   sectionTitle: {
-    fontSize: 12,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.1,
+    ...fonts.bold(12, 0.1),
     marginBottom: 8,
   },
   group: {
@@ -145,14 +143,9 @@ const styles = StyleSheet.create({
     gap: 12,
     minHeight: 40,
   },
-  label: {
-    fontSize: 16,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
-  },
+  label: fonts.semibold(16, -0.2),
   note: {
-    fontSize: 13,
+    ...fonts.medium(13),
     lineHeight: 18,
-    fontFamily: fonts.medium,
   },
 });

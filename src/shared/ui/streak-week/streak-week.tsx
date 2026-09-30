@@ -166,11 +166,8 @@ function Cell({
       ]}>
       <Text
         style={[
-          styles.day,
-          {
-            color: isToday ? colors.foreground : meter.unit,
-            fontFamily: isToday ? fonts.bold : fonts.medium,
-          },
+          isToday ? styles.dayToday : styles.day,
+          { color: isToday ? colors.foreground : meter.unit },
         ]}>
         {label}
       </Text>
@@ -210,8 +207,6 @@ const styles = StyleSheet.create({
   cellToday: {
     transform: [{ scale: 1 }],
   },
-  day: {
-    fontSize: 14,
-    letterSpacing: -0.2,
-  },
+  day: fonts.medium(14, -0.2),
+  dayToday: fonts.bold(14, -0.2),
 });

@@ -32,7 +32,9 @@ import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { Signature } from './signature';
 
-const APP_ICON = require('@assets/icon.png');
+/** 150 px, 3x the 50 pt it is drawn at. Not `icon.png`, which is app.json's
+ * 1254 px home-screen source and would ship its 1.1 MB again in the bundle. */
+const APP_ICON = require('@assets/icon-small.webp');
 
 /** Matches `StreakSheet` exactly. Two sheets in the same app that arrive at
  * different speeds read as two different apps. */

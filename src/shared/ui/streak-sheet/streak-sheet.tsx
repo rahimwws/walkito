@@ -17,7 +17,10 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { StreakWeek } from '@/shared/ui/streak-week';
 
-const BADGE_ART = require('@assets/achievements/streak-badge.png');
+/** 552 px wide: 3x this sheet's `BADGE`, the largest the emblem is ever drawn
+ * (the celebration sheet's is 132 pt). Grow `BADGE` past 184 and the art has
+ * to be re-exported bigger, or it goes soft on a 3x screen. */
+const BADGE_ART = require('@assets/achievements/streak-badge.webp');
 
 const BADGE = 184;
 /** The card's corner. Generous, because a sheet this short with a small radius
@@ -267,14 +270,11 @@ const styles = StyleSheet.create({
     alignItems: 'stretch',
   },
   title: {
-    fontSize: 28,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.8,
+    ...fonts.heavy(28, -0.8),
     textAlign: 'center',
   },
   blurb: {
-    fontSize: 15,
-    fontFamily: fonts.medium,
+    ...fonts.medium(15),
     lineHeight: 21,
     textAlign: 'center',
     marginTop: 6,

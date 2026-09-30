@@ -105,14 +105,10 @@ const styles = StyleSheet.create({
     gap: 10,
     marginTop: 24,
   },
-  title: {
-    fontSize: 17,
-    fontFamily: fonts.bold,
-  },
+  title: fonts.bold(17),
   body: {
-    fontSize: 15,
+    ...fonts.medium(15),
     lineHeight: 21,
-    fontFamily: fonts.medium,
   },
   button: {
     height: 48,
@@ -123,13 +119,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  googleLabel: {
-    fontSize: 17,
-    fontFamily: fonts.semibold,
-  },
+  googleLabel: fonts.semibold(17),
   done: {
-    fontSize: 13,
-    fontFamily: fonts.medium,
+    ...fonts.medium(13),
     textAlign: 'center',
     marginTop: 8,
   },

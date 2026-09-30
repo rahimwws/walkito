@@ -366,20 +366,9 @@ const styles = StyleSheet.create({
   header: {
     gap: 3,
   },
-  eyebrow: {
-    fontSize: 13,
-    fontFamily: fonts.semibold,
-    letterSpacing: 0.2,
-  },
-  title: {
-    fontSize: 24,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.4,
-  },
-  subtitle: {
-    fontSize: 15,
-    fontFamily: fonts.regular,
-  },
+  eyebrow: fonts.semibold(13, 0.2),
+  title: fonts.bold(24, -0.4),
+  subtitle: fonts.regular(15),
   row: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -388,8 +377,7 @@ const styles = StyleSheet.create({
   },
   rowLabel: {
     width: 88,
-    fontSize: 16,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(16),
   },
   rowValues: {
     flex: 1,
@@ -397,18 +385,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 6,
   },
-  rowMeasure: {
-    fontSize: 16,
-    fontFamily: fonts.medium,
-  },
-  rowArrow: {
-    fontSize: 15,
-    fontFamily: fonts.medium,
-  },
-  rowLevel: {
-    fontSize: 13,
-    fontFamily: fonts.semibold,
-  },
+  rowMeasure: fonts.medium(16),
+  rowArrow: fonts.medium(15),
+  rowLevel: fonts.semibold(13),
   list: {
     gap: 14,
   },
@@ -417,10 +396,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 12,
   },
-  listLabel: {
-    fontSize: 17,
-    fontFamily: fonts.medium,
-  },
+  listLabel: fonts.medium(17),
   iconNote: {
     flexDirection: 'row',
     alignItems: 'flex-start',
@@ -428,8 +404,7 @@ const styles = StyleSheet.create({
   },
   noteText: {
     flex: 1,
-    fontSize: 15,
-    fontFamily: fonts.regular,
+    ...fonts.regular(15),
     lineHeight: 21,
   },
   painRow: {
@@ -439,17 +414,9 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     paddingTop: 14,
   },
-  painLabel: {
-    fontSize: 15,
-    fontFamily: fonts.medium,
-  },
-  painValue: {
-    fontSize: 22,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
-  },
-  painMax: {
-    fontSize: 14,
-    fontFamily: fonts.medium,
-  },
+  painLabel: fonts.medium(15),
+  painValue: fonts.bold(22, -0.3),
+  // Nested in `painValue`, whose -0.3 it has always inherited: spelled out,
+  // because a `fonts.*` call replaces the spacing it would inherit.
+  painMax: fonts.medium(14, -0.3),
 });

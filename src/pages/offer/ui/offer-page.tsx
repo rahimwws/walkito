@@ -989,17 +989,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   number: {
-    fontSize: 108,
+    ...fonts.heavy(108, -4),
     lineHeight: 112,
-    fontFamily: fonts.heavy,
-    letterSpacing: -4,
     color: PRIMARY,
   },
   percent: {
     marginTop: 14,
-    fontSize: 48,
-    fontFamily: fonts.heavy,
-    letterSpacing: -1,
+    ...fonts.heavy(48, -1),
     color: PRIMARY,
   },
   bodyContent: { gap: 16, paddingBottom: 16 },
@@ -1020,9 +1016,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   terms: {
-    fontSize: 13,
+    ...fonts.regular(13),
     lineHeight: 17,
-    fontFamily: fonts.regular,
     textAlign: 'center',
   },
   limited: {
@@ -1035,9 +1030,7 @@ const styles = StyleSheet.create({
     backgroundColor: PRIMARY,
   },
   limitedText: {
-    fontSize: 11,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.9,
+    ...fonts.bold(11, 0.9),
     color: '#FFFFFF',
   },
   // The padding/negative-margin pair is not decoration: iOS clips a text
@@ -1046,17 +1039,14 @@ const styles = StyleSheet.create({
   // to fade out inside the frame; the matching negative margin takes that room
   // back out of the layout, so the number sits exactly where it would have.
   headline: {
-    fontSize: 22,
+    ...fonts.bold(22, -0.4),
     lineHeight: 28,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.4,
     textAlign: 'center',
   },
   sub: {
     marginTop: -6,
-    fontSize: 16,
+    ...fonts.regular(16),
     lineHeight: 22,
-    fontFamily: fonts.regular,
     textAlign: 'center',
   },
   features: {
@@ -1080,14 +1070,10 @@ const styles = StyleSheet.create({
     flex: 1,
     gap: 2,
   },
-  featureTitle: {
-    fontSize: 16,
-    fontFamily: fonts.semibold,
-  },
+  featureTitle: fonts.semibold(16),
   featureBlurb: {
-    fontSize: 15,
+    ...fonts.regular(15),
     lineHeight: 20,
-    fontFamily: fonts.regular,
   },
   tiers: {
     marginTop: 4,
@@ -1111,9 +1097,7 @@ const styles = StyleSheet.create({
   },
   tierTitle: {
     flex: 1,
-    fontSize: 17,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
+    ...fonts.bold(17, -0.3),
   },
   tierBadge: {
     borderRadius: 8,
@@ -1121,11 +1105,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 3,
   },
-  tierBadgeText: {
-    fontSize: 11,
-    fontFamily: fonts.heavy,
-    letterSpacing: 0.4,
-  },
+  tierBadgeText: fonts.heavy(11, 0.4),
   tierPriceRow: {
     flexDirection: 'row',
     alignItems: 'baseline',
@@ -1140,19 +1120,11 @@ const styles = StyleSheet.create({
    * gap between these two numbers is the only thing enforcing that — so it is
    * deliberately wide rather than a point or two.
    */
-  tierPrice: {
-    fontSize: 22,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.6,
-  },
+  tierPrice: fonts.heavy(22, -0.6),
   tierWas: {
-    fontSize: 15,
-    fontFamily: fonts.medium,
+    ...fonts.medium(15),
     textDecorationLine: 'line-through',
   },
   /** The per-week figure. Secondary, and sized to stay that way. */
-  tierNote: {
-    fontSize: 13,
-    fontFamily: fonts.medium,
-  },
+  tierNote: fonts.medium(13),
 });

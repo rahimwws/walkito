@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   mascot: { width: 120, height: 120, marginBottom: 8 },
-  title: { fontSize: 24, fontFamily: fonts.heavy, letterSpacing: -0.6, textAlign: 'center' },
-  body: { fontSize: 16, lineHeight: 22, fontFamily: fonts.medium, textAlign: 'center' },
+  title: { ...fonts.heavy(24, -0.6), textAlign: 'center' },
+  body: { ...fonts.medium(16), lineHeight: 22, textAlign: 'center' },
   button: { alignSelf: 'stretch', marginTop: 16 },
 });

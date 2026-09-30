@@ -125,11 +125,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10,
   },
-  label: {
-    fontSize: 20,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.1,
-  },
+  label: fonts.semibold(20, -0.1),
   disabled: {
     opacity: 0.35,
   },

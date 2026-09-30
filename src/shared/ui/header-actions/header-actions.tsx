@@ -364,10 +364,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     borderCurve: 'continuous',
   },
-  streakCount: {
-    fontSize: 16,
-    fontFamily: fonts.semibold,
-  },
+  streakCount: fonts.semibold(16),
   trailing: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -382,15 +379,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  centreTitle: {
-    fontSize: 17,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
-  },
-  centreSub: {
-    fontSize: 13,
-    fontFamily: fonts.regular,
-  },
+  centreTitle: fonts.bold(17, -0.3),
+  centreSub: fonts.regular(13),
   // The padding is back on the glass now that the touchable wraps it: the
   // capsule is the whole target either way, and one view fewer is one fewer
   // thing between a finger and the handler.
@@ -409,9 +399,5 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   giftArt: { width: 38, height: 38 },
-  giftLabel: {
-    fontSize: 17,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
-  },
+  giftLabel: fonts.semibold(17, -0.2),
 });

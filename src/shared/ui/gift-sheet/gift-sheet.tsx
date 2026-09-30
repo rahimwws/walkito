@@ -209,16 +209,13 @@ const styles = StyleSheet.create({
   },
   art: { width: 190, height: 190 },
   title: {
-    fontSize: 28,
+    ...fonts.bold(28, -0.7),
     lineHeight: 34,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.7,
     textAlign: 'center',
   },
   blurb: {
-    fontSize: 16,
+    ...fonts.regular(16),
     lineHeight: 22,
-    fontFamily: fonts.regular,
     textAlign: 'center',
   },
   codeBox: {
@@ -229,14 +226,12 @@ const styles = StyleSheet.create({
     borderCurve: 'continuous',
   },
   code: {
-    fontSize: 34,
-    fontFamily: fonts.heavy,
-    letterSpacing: 8,
+    ...fonts.heavy(34, 8),
     // The tracking is applied to the right of every character including the
     // last, which reads as the block sitting off-centre. Half of it back.
     marginRight: -8,
   },
   actions: { alignSelf: 'stretch', gap: 14 },
   later: { alignSelf: 'center', paddingVertical: 4 },
-  laterText: { fontSize: 15, fontFamily: fonts.semibold },
+  laterText: fonts.semibold(15),
 });

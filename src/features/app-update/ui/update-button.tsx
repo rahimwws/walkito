@@ -119,11 +119,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  label: {
-    fontSize: 20,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.1,
-  },
+  label: fonts.semibold(20, -0.1),
   track: {
     position: 'absolute',
     bottom: 19,

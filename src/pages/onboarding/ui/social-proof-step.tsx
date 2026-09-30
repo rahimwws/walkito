@@ -20,7 +20,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 
-import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
+import { PRIMARY, faces, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
@@ -209,10 +209,8 @@ const styles = StyleSheet.create({
     paddingTop: 4,
   },
   welcome: {
-    fontSize: 30,
+    ...fonts.heavy(30, -0.8),
     lineHeight: 36,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.8,
     textAlign: 'center',
   },
   crest: {
@@ -223,10 +221,8 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   crestLabel: {
-    fontSize: 19,
+    ...fonts.semibold(19, -0.3),
     lineHeight: 25,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.3,
     textAlign: 'center',
   },
   rail: {
@@ -254,19 +250,12 @@ const styles = StyleSheet.create({
     gap: 14,
   },
   quote: {
-    fontSize: 19,
+    ...fonts.regular(19, -0.3),
     lineHeight: 26,
-    fontFamily: fonts.regular,
-    letterSpacing: -0.3,
   },
-  quoteLead: {
-    fontFamily: fonts.bold,
-  },
-  name: {
-    fontSize: 13,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.1,
-  },
+  // Nested inside `quote`: the size and spacing are the quote's.
+  quoteLead: faces.bold,
+  name: fonts.bold(13, 0.1),
   dots: {
     flexDirection: 'row',
     alignSelf: 'center',

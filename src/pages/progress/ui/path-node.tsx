@@ -273,14 +273,14 @@ function NodeGlyph({
 
   if (day.checkpoint && (status === 'done' || status === 'rest') && retest != null) {
     return (
-      <Text style={[styles.delta, { color, fontSize: Math.round(size * 0.3) }]}>
+      <Text style={[fonts.heavy(Math.round(size * 0.3), -0.5), { color }]}>
         +{retest.delta}
       </Text>
     );
   }
   if (status === 'upcoming') {
     return (
-      <Text style={[styles.number, { color, fontSize: Math.round(size * 0.34) }]}>{day.day}</Text>
+      <Text style={[fonts.bold(Math.round(size * 0.34), -0.3), { color }]}>{day.day}</Text>
     );
   }
 
@@ -368,15 +368,6 @@ const styles = StyleSheet.create({
   },
   label: {
     marginTop: 6,
-    fontSize: 13,
-    fontFamily: fonts.medium,
-  },
-  number: {
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
-  },
-  delta: {
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.5,
+    ...fonts.medium(13),
   },
 });

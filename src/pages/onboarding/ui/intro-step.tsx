@@ -245,16 +245,12 @@ const styles = StyleSheet.create({
     transformOrigin: 'left center',
   },
   greeting: {
-    fontSize: 26,
+    ...fonts.semibold(26, -0.4),
     lineHeight: 32,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.4,
   },
   headline: {
-    fontSize: 30,
+    ...fonts.bold(30, -0.7),
     lineHeight: 37,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.7,
   },
   /** Holds the headline's height without drawing it. */
   ghost: {

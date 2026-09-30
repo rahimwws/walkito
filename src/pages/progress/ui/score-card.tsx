@@ -185,14 +185,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  score: {
-    fontSize: 26,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.6,
-  },
+  score: fonts.bold(26, -0.6),
   scoreLabel: {
-    fontSize: 12,
-    fontFamily: fonts.medium,
+    ...fonts.medium(12),
     marginTop: -2,
   },
   copy: {
@@ -200,18 +195,12 @@ const styles = StyleSheet.create({
     gap: 2,
   },
   title: {
-    fontSize: 19,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.4,
+    ...fonts.bold(19, -0.4),
     marginBottom: 4,
   },
-  headline: {
-    fontSize: 15,
-    fontFamily: fonts.semibold,
-  },
+  headline: fonts.semibold(15),
   note: {
-    fontSize: 15,
-    fontFamily: fonts.regular,
+    ...fonts.regular(15),
     lineHeight: 20,
   },
 });

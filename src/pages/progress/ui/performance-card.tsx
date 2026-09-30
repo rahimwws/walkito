@@ -223,11 +223,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
   },
-  label: {
-    fontSize: 17,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
-  },
+  label: fonts.semibold(17, -0.2),
   gauge: {
     marginTop: 10,
   },
@@ -246,10 +242,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 9,
     paddingVertical: 3,
   },
-  bubbleText: {
-    fontSize: 14,
-    fontFamily: fonts.semibold,
-  },
+  bubbleText: fonts.semibold(14),
   tail: {
     width: 9,
     height: 7,
@@ -282,8 +275,7 @@ const styles = StyleSheet.create({
   },
   band: {
     flex: 1,
-    fontSize: 13,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(13),
     textAlign: 'center',
   },
 });

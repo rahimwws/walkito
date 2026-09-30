@@ -490,20 +490,13 @@ const styles = StyleSheet.create({
   },
   cardLabel: {
     flexShrink: 1,
-    fontSize: 11,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.1,
+    ...fonts.semibold(11, -0.1),
   },
-  cardStage: {
-    fontSize: 17,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.3,
-  },
+  cardStage: fonts.heavy(17, -0.3),
   footnote: {
     marginTop: 8,
-    fontSize: 11,
+    ...fonts.regular(11),
     lineHeight: 15,
-    fontFamily: fonts.regular,
     textAlign: 'center',
   },
 });

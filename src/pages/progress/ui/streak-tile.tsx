@@ -67,15 +67,9 @@ const styles = StyleSheet.create({
   text: {
     marginTop: 26,
   },
-  value: {
-    fontSize: 24,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.6,
-  },
+  value: fonts.bold(24, -0.6),
   label: {
-    fontSize: 16,
-    fontFamily: fonts.medium,
-    letterSpacing: -0.2,
+    ...fonts.medium(16, -0.2),
     marginTop: 2,
   },
 });

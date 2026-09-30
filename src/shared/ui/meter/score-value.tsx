@@ -26,21 +26,15 @@ export function ScoreValue({ value, size, maxSize }: ScoreValueProps) {
   const unitSize = maxSize ?? Math.round(size * 0.37);
 
   if (value == null) {
-    return (
-      <Text style={[styles.value, { color: theme.unit, fontSize: size, letterSpacing: 0 }]}>-</Text>
-    );
+    return <Text style={[fonts.heavy(size), { color: theme.unit }]}>-</Text>;
   }
 
   return (
     <View style={styles.row}>
-      <Text
-        style={[
-          styles.value,
-          { color: theme.ink, fontSize: size, letterSpacing: size * -0.028 },
-        ]}>
+      <Text style={[fonts.heavy(size, size * -0.028), { color: theme.ink }]}>
         {Math.round(value)}
       </Text>
-      <Text style={[styles.max, { color: theme.unit, fontSize: unitSize }]}>/100</Text>
+      <Text style={[fonts.semibold(unitSize), { color: theme.unit }]}>/100</Text>
     </View>
   );
 }
@@ -50,11 +44,5 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'baseline',
     gap: 3,
-  },
-  value: {
-    fontFamily: fonts.heavy,
-  },
-  max: {
-    fontFamily: fonts.semibold,
   },
 });

@@ -80,8 +80,7 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   value: {
-    fontSize: 17,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(17),
     flexShrink: 1,
   },
   track: {

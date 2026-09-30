@@ -89,8 +89,7 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   label: {
-    fontSize: 13,
-    fontFamily: fonts.medium,
+    ...fonts.medium(13),
     flexShrink: 1,
   },
   values: {
@@ -101,15 +100,8 @@ const styles = StyleSheet.create({
     alignItems: 'baseline',
     gap: 3,
   },
-  value: {
-    fontSize: 26,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.5,
-  },
-  unit: {
-    fontSize: 13,
-    fontFamily: fonts.semibold,
-  },
+  value: fonts.heavy(26, -0.5),
+  unit: fonts.semibold(13),
   deltaSlot: {
     height: 16,
     justifyContent: 'center',

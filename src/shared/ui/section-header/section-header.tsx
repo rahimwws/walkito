@@ -42,26 +42,20 @@ export function SectionHeader({ title, subtitle, size = 'default' }: SectionHead
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 22,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
+    ...fonts.bold(22, -0.3),
     marginTop: 28,
   },
   subtitle: {
-    fontSize: 15,
-    fontFamily: fonts.regular,
+    ...fonts.regular(15),
     marginTop: 4,
     marginBottom: 4,
   },
   displayTitle: {
-    fontSize: 40,
-    fontFamily: fonts.bold,
-    letterSpacing: -1,
+    ...fonts.bold(40, -1),
     lineHeight: 46,
   },
   displaySubtitle: {
-    fontSize: 17,
-    fontFamily: fonts.medium,
+    ...fonts.medium(17),
     marginTop: 6,
   },
 });

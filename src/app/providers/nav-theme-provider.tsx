@@ -3,7 +3,7 @@ import { useEffect, type ReactNode } from 'react';
 
 import * as SystemUI from 'expo-system-ui';
 
-import { fonts, palette } from '@/shared/config';
+import { faces, palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 
 /**
@@ -28,12 +28,16 @@ export function NavThemeProvider({ children }: { children: ReactNode }) {
       card: colors.background,
       text: colors.foreground,
     },
-    // Navigator-rendered text (headers, back labels) uses Inter too.
+    // Navigator-rendered text (headers, back labels) uses the app's face too.
+    // Every header is hidden today, so nothing draws from these. A theme font
+    // has no size, so it cannot take out the tracking iOS adds to the system
+    // face the way `fonts.*` does: give a header that appears its own
+    // `fonts.*` style rather than relying on this.
     fonts: {
-      regular: { fontFamily: fonts.regular, fontWeight: '400' },
-      medium: { fontFamily: fonts.medium, fontWeight: '500' },
-      bold: { fontFamily: fonts.semibold, fontWeight: '600' },
-      heavy: { fontFamily: fonts.bold, fontWeight: '700' },
+      regular: { ...faces.regular, fontWeight: '400' },
+      medium: { ...faces.medium, fontWeight: '500' },
+      bold: { ...faces.semibold, fontWeight: '600' },
+      heavy: { ...faces.bold, fontWeight: '700' },
     },
   } as const;
 

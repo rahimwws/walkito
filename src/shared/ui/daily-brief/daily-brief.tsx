@@ -18,7 +18,7 @@ import Task01Icon from '@hugeicons/core-free-icons/Task01Icon';
 import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { accents, faces, fonts, meterColors, palette } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 
 /** Type size for the whole block, and the rhythm the lines sit on. */
@@ -283,17 +283,12 @@ const styles = StyleSheet.create({
    * — at this size a light grey word next to a black white one stops reading as
    * the same sentence and starts reading as a caption under a headline. */
   word: {
-    fontSize: SIZE,
+    ...fonts.semibold(SIZE, -0.7),
     lineHeight: LINE,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.7,
   },
-  strong: {
-    fontFamily: fonts.heavy,
-  },
+  /** Only the weight changes: always drawn over `word`, which set the size. */
+  strong: faces.heavy,
   /** Trailing punctuation: back to the frame's weight, inside the value's own
-   * text run. Size and line height come from the parent. */
-  plain: {
-    fontFamily: fonts.semibold,
-  },
+   * text run. Size, spacing and line height come from the parent. */
+  plain: faces.semibold,
 });

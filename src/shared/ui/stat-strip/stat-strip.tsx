@@ -105,8 +105,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 7,
   },
-  value: {
-    fontSize: 17,
-    fontFamily: fonts.semibold,
-  },
+  value: fonts.semibold(17),
 });

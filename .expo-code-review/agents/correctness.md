@@ -22,9 +22,14 @@ issues in the changed code.
 This is an Expo SDK 57 + expo-router app. These bugs have real precedent here;
 flag them when the diff introduces one:
 
-- **Font weight.** Text weight must be set via `fontFamily` with the constants
-  from `@/shared/config` (`fonts.regular` … `fonts.heavy`). A `fontWeight`
-  style on text makes iOS synthesize or fall back to the system font.
+- **Font face and size.** Text takes its face and size from `fonts.*` in
+  `@/shared/config`, e.g. `...fonts.semibold(16, -0.2)` (size, letterSpacing).
+  A hand-set `fontFamily`, `fontWeight`, `fontSize` or `letterSpacing` is a
+  finding: on iOS the face is the system's rounded design, which iOS tracks by
+  size, and `fonts.*` is what takes that tracking back out. A later style that
+  changes only the size or the spacing brings the tracking back, so an override
+  must be another `fonts.*` call. `faces.*` (the face alone) is only for a span
+  that inherits a size already set by `fonts.*`.
 - **Icons.** Only `HugeiconsIcon` from `@hugeicons/react-native`, with icons
   default-imported one at a time by subpath from `@hugeicons/core-free-icons`
   (e.g. `import Mic01Icon from '@hugeicons/core-free-icons/Mic01Icon'`). A root

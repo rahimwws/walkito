@@ -63,10 +63,8 @@ const styles = StyleSheet.create({
     paddingTop: 44,
   },
   input: {
-    fontSize: 26,
+    ...fonts.bold(26, -0.5),
     lineHeight: 32,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.5,
     height: 40,
     padding: 0,
   },

@@ -249,15 +249,10 @@ const styles = StyleSheet.create({
     gap: 7,
   },
   value: {
-    fontSize: 54,
+    ...fonts.heavy(54, -1.2),
     lineHeight: 60,
-    fontFamily: fonts.heavy,
-    letterSpacing: -1.2,
   },
-  unit: {
-    fontSize: 18,
-    fontFamily: fonts.semibold,
-  },
+  unit: fonts.semibold(18),
   rulerWrap: {
     height: RULER_H,
     marginTop: 10,

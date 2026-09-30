@@ -1,4 +1,12 @@
-export { fonts, fontAssets, noteFonts } from './fonts';
+export {
+  fonts,
+  faces,
+  fontAssets,
+  noteFonts,
+  type Face,
+  type SizedFace,
+  type FontWeightName,
+} from './fonts';
 export {
   PRIMARY,
   palette,

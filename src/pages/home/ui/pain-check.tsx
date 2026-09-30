@@ -517,7 +517,6 @@ function Sheet({
           value={score}
           color={colors.foreground}
           fontSize={104}
-          fontFamily={fonts.heavy}
           weight="heavy"
           duration={0.25}
         />
@@ -750,9 +749,7 @@ const styles = StyleSheet.create({
   },
   art: { width: 118, height: 118 },
   title: {
-    fontSize: 19,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
+    ...fonts.bold(19, -0.3),
     textAlign: 'center',
   },
   sheetRoot: { flex: 1 },
@@ -771,12 +768,10 @@ const styles = StyleSheet.create({
   },
   grabber: { width: 40, height: 5, borderRadius: 3 },
   sheetTitle: {
-    fontSize: 28,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.7,
+    ...fonts.heavy(28, -0.7),
     marginTop: 18,
   },
-  sheetSub: { fontSize: 16, fontFamily: fonts.regular, marginTop: 2 },
+  sheetSub: { ...fonts.regular(16), marginTop: 2 },
   /** Fixed height, because the digits are a SwiftUI host that does not
    * self-size reliably in flex — and because a readout that changed height
    * between "9" and "10" would nudge every word under it. */
@@ -785,11 +780,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 8,
   },
-  bandLabel: { fontSize: 22, fontFamily: fonts.bold, letterSpacing: -0.4 },
+  bandLabel: fonts.bold(22, -0.4),
   bandBlurb: {
-    fontSize: 16,
+    ...fonts.regular(16),
     lineHeight: 22,
-    fontFamily: fonts.regular,
     textAlign: 'center',
     marginTop: 4,
   },
@@ -801,9 +795,7 @@ const styles = StyleSheet.create({
   legStage: { flex: 1, alignSelf: 'stretch', alignItems: 'center', marginTop: 6 },
   zoneLine: {
     marginTop: 6,
-    fontSize: 13,
-    fontFamily: fonts.medium,
-    letterSpacing: -0.1,
+    ...fonts.medium(13, -0.1),
     textAlign: 'center',
     marginBottom: 12,
   },

@@ -98,8 +98,7 @@ const styles = StyleSheet.create({
   },
   copy: {
     flex: 1,
-    fontSize: 13,
-    fontFamily: fonts.regular,
+    ...fonts.regular(13),
     lineHeight: 17,
   },
 });

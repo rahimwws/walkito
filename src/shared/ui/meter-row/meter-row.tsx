@@ -95,8 +95,7 @@ const styles = StyleSheet.create({
     gap: 7,
   },
   name: {
-    fontSize: 16,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(16),
     lineHeight: 20,
   },
   badgePill: {
@@ -105,18 +104,13 @@ const styles = StyleSheet.create({
     borderRadius: 7,
     borderCurve: 'continuous',
   },
-  badgeLabel: {
-    fontSize: 10,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.6,
-  },
+  badgeLabel: fonts.bold(10, 0.6),
   captionSlot: {
     height: CAPTION_HEIGHT,
     justifyContent: 'center',
   },
   caption: {
-    fontSize: 13,
-    fontFamily: fonts.regular,
+    ...fonts.regular(13),
     lineHeight: CAPTION_HEIGHT,
   },
   trailing: {

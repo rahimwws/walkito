@@ -518,11 +518,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     borderCurve: 'continuous',
   },
-  badgeText: {
-    fontSize: 12,
-    fontFamily: fonts.heavy,
-    letterSpacing: 0.4,
-  },
+  badgeText: fonts.heavy(12, 0.4),
   track: {
     height: TRACK_HEIGHT,
     justifyContent: 'center',
@@ -550,9 +546,5 @@ const styles = StyleSheet.create({
   legend: {
     marginTop: 2,
   },
-  legendText: {
-    fontSize: 12,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.6,
-  },
+  legendText: fonts.bold(12, 0.6),
 });

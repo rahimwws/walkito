@@ -256,16 +256,13 @@ const styles = StyleSheet.create({
     paddingTop: 8,
   },
   title: {
-    fontSize: 28,
+    ...fonts.bold(28, -0.7),
     lineHeight: 34,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.7,
   },
   blurb: {
     marginTop: 10,
-    fontSize: 16,
+    ...fonts.regular(16),
     lineHeight: 23,
-    fontFamily: fonts.regular,
   },
   card: {
     marginTop: 28,
@@ -282,13 +279,9 @@ const styles = StyleSheet.create({
   },
   rowLabel: {
     flex: 1,
-    fontSize: 16,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(16),
   },
-  rowValue: {
-    fontSize: 14,
-    fontFamily: fonts.medium,
-  },
+  rowValue: fonts.medium(14),
   switch: {
     width: 38,
     height: 22,
@@ -315,16 +308,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 6,
   },
-  promiseText: {
-    fontSize: 13,
-    fontFamily: fonts.medium,
-  },
+  promiseText: fonts.medium(13),
   skip: {
     alignSelf: 'center',
     paddingVertical: 4,
   },
-  skipText: {
-    fontSize: 15,
-    fontFamily: fonts.semibold,
-  },
+  skipText: fonts.semibold(15),
 });

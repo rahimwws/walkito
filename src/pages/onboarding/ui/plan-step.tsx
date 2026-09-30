@@ -92,20 +92,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 8,
   },
-  wordmark: {
-    fontSize: 15,
-    fontFamily: fonts.heavy,
-    letterSpacing: 0.1,
-  },
-  meta: {
-    fontSize: 26,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.7,
-  },
+  wordmark: fonts.heavy(15, 0.1),
+  meta: fonts.heavy(26, -0.7),
   reflection: {
-    fontSize: 16,
+    ...fonts.regular(16),
     lineHeight: 23,
-    fontFamily: fonts.regular,
     marginTop: 10,
   },
   phases: {
@@ -119,13 +110,10 @@ const styles = StyleSheet.create({
   },
   weeks: {
     width: 96,
-    fontSize: 15,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.2,
+    ...fonts.bold(15, -0.2),
   },
   label: {
     flex: 1,
-    fontSize: 15,
-    fontFamily: fonts.regular,
+    ...fonts.regular(15),
   },
 });

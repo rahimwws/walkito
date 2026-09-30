@@ -7,7 +7,8 @@ with no product on top of it yet.
 
 - **Feature-Sliced Design** — layered `src/`, thin Expo Router routes. See
   [`src/README.md`](src/README.md).
-- **Typography** — SF Pro Rounded, bundled and loaded at runtime.
+- **Typography** — SF Pro Rounded from the system on iOS (`ui-rounded`),
+  Nunito on Android.
 - **Liquid-glass tab bar** — iOS 26 glass, with a scroll-driven minimize.
 - **Launch choreography** — a Lottie splash that hands off to a staggered
   intro reveal, so content cascades in behind the fade.

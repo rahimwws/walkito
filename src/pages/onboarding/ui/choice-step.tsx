@@ -380,32 +380,23 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     overflow: 'hidden',
   },
-  chipLabel: {
-    fontSize: 15,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
-  },
+  chipLabel: fonts.semibold(15, -0.2),
   label: {
     flex: 1,
-    fontSize: 16,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
+    ...fonts.semibold(16, -0.2),
   },
   labels: {
     flex: 1,
     gap: 1,
   },
   labelTight: {
-    fontSize: 16,
+    ...fonts.semibold(16, -0.2),
     lineHeight: 20,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
     includeFontPadding: false,
   },
   caption: {
-    fontSize: 13,
+    ...fonts.medium(13),
     lineHeight: 17,
-    fontFamily: fonts.medium,
     includeFontPadding: false,
   },
   check: {

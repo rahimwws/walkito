@@ -76,14 +76,11 @@ const styles = StyleSheet.create({
     marginBottom: 6,
   },
   title: {
-    fontSize: 17,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
+    ...fonts.semibold(17, -0.2),
     textAlign: 'center',
   },
   subtitle: {
-    fontSize: 14,
-    fontFamily: fonts.regular,
+    ...fonts.regular(14),
     lineHeight: 19,
     textAlign: 'center',
     maxWidth: 260,

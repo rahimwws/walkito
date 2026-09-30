@@ -230,9 +230,7 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
   },
   title: {
-    fontSize: 26,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.7,
+    ...fonts.heavy(26, -0.7),
     textAlign: 'center',
   },
   grid: { gap: 8, marginTop: 20 },
@@ -246,11 +244,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   spacer: { flex: 1 },
-  cellText: { fontSize: 20, fontFamily: fonts.bold },
+  cellText: fonts.bold(20),
   blurb: {
-    fontSize: 15,
+    ...fonts.medium(15),
     lineHeight: 21,
-    fontFamily: fonts.medium,
     textAlign: 'center',
     marginTop: 16,
     marginBottom: 18,
@@ -260,5 +257,5 @@ const styles = StyleSheet.create({
     minHeight: 63,
   },
   cancel: { alignSelf: 'center', paddingVertical: 12 },
-  cancelText: { fontSize: 16, fontFamily: fonts.semibold },
+  cancelText: fonts.semibold(16),
 });

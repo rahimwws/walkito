@@ -194,13 +194,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  indexText: { fontSize: 13, fontFamily: fonts.bold },
+  indexText: fonts.bold(13),
   lineText: {
     flex: 1,
-    fontSize: 16,
+    ...fonts.semibold(16, -0.2),
     lineHeight: 22,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
   },
   card: {
     borderRadius: CARD_RADIUS,
@@ -208,5 +206,5 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   open: { paddingVertical: 6 },
-  openText: { fontSize: 15, fontFamily: fonts.semibold },
+  openText: fonts.semibold(15),
 });

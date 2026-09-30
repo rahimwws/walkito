@@ -103,9 +103,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   dividerLabel: {
-    fontSize: 12,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.1,
+    ...fonts.bold(12, 0.1),
     paddingHorizontal: 12,
     paddingVertical: 2,
   },

@@ -81,17 +81,14 @@ const styles = StyleSheet.create({
     gap: 14,
   },
   input: {
-    fontSize: 44,
-    fontFamily: fonts.heavy,
-    letterSpacing: 12,
+    ...fonts.heavy(44, 12),
     textAlign: 'center',
     // The tracking is applied to the right of the last character too, which
     // reads as the block sitting left of centre. Half of it back.
     marginLeft: 12,
   },
   note: {
-    fontSize: 15,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(15),
     textAlign: 'center',
   },
 });

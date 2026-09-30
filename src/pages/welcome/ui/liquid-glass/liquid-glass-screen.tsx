@@ -374,7 +374,7 @@ export function LiquidGlassScreen({ theme, copy, initialState = 'gate', onAction
     else onPrimaryPress?.();
   }, [onActionPress, onPrimaryPress, theme.id]);
 
-  const bodyText = [st.body, { color: colors.ink, fontSize: 32 * sx, lineHeight: 38 * sx, letterSpacing: -0.7 * sx }];
+  const bodyText = [st.body, fonts.medium(32 * sx, -0.7 * sx), { color: colors.ink, lineHeight: 38 * sx }];
 
   return (
     <GestureDetector gesture={pan}>
@@ -426,7 +426,7 @@ export function LiquidGlassScreen({ theme, copy, initialState = 'gate', onAction
         <Soft line={{ fade: hintFade, soften: hintSoft }}
           style={[st.block, { top: height * 0.8853, height: 22 * sx }, hintShift as unknown as ViewStyle]}
           tint={theme.blurTint}>
-          <Text style={[st.hint, { color: colors.hint, fontSize: 15 * sx, lineHeight: 20 * sx }]}>{copy.hint}</Text>
+          <Text style={[st.hint, fonts.medium(15 * sx, -0.1), { color: colors.hint, lineHeight: 20 * sx }]}>{copy.hint}</Text>
         </Soft>
 
         {/* open-state copy */}
@@ -462,10 +462,11 @@ export function LiquidGlassScreen({ theme, copy, initialState = 'gate', onAction
 
 const st = StyleSheet.create({
   block: { position: 'absolute', left: 0, right: 0, alignItems: 'center' },
-  hint: { fontFamily: fonts.medium, textAlign: 'center', letterSpacing: -0.1 },
-  body: { fontFamily: fonts.medium, textAlign: 'center' },
+  // The face and size come in at the call site: both scale with the screen.
+  hint: { textAlign: 'center' },
+  body: { textAlign: 'center' },
   strike: { position: 'absolute', left: 0, right: 0 },
-  plus: { fontSize: 38, fontFamily: fonts.regular, marginTop: -3 },
+  plus: { ...fonts.regular(38), marginTop: -3 },
   // No radius or clipping of its own any more: PrimaryButton draws its own
   // shape, and an overflow:hidden wrapper would crop its shadow.
   pillWrap: { position: 'absolute' },

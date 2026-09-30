@@ -387,21 +387,13 @@ const styles = StyleSheet.create({
     flex: 1,
     gap: 6,
   },
-  dayLabel: {
-    fontSize: 12,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.1,
-  },
+  dayLabel: fonts.bold(12, 0.1),
   fact: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 7,
   },
-  factText: {
-    fontSize: 16,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
-  },
+  factText: fonts.semibold(16, -0.2),
   /** Holds the trailing column's width open on days with no badge, so the
    * facts beside them do not widen and the list stays in one grid. */
   blank: {
@@ -425,10 +417,6 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderCurve: 'continuous',
   },
-  tagText: {
-    fontSize: 14,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.1,
-  },
+  tagText: fonts.bold(14, -0.1),
 
 });

@@ -62,10 +62,8 @@ const styles = StyleSheet.create({
     paddingTop: 44,
   },
   input: {
-    fontSize: 40,
+    ...fonts.bold(40, -1),
     lineHeight: 48,
-    fontFamily: fonts.bold,
-    letterSpacing: -1,
     // Height is pinned rather than left to the line box: an empty field and a
     // filled one must occupy the same space, or the layout jumps on the first
     // keystroke.

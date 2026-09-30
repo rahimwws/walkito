@@ -111,11 +111,6 @@ const styles = StyleSheet.create({
     borderCurve: 'continuous',
     overflow: 'hidden',
   },
-  label: {
-    fontSize: 17,
-    fontFamily: fonts.medium,
-  },
-  activeLabel: {
-    fontFamily: fonts.semibold,
-  },
+  label: fonts.medium(17),
+  activeLabel: fonts.semibold(17),
 });

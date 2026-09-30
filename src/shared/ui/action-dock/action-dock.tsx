@@ -192,9 +192,7 @@ const styles = StyleSheet.create({
   },
   label: {
     flexShrink: 1,
-    fontSize: 18,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
+    ...fonts.semibold(18, -0.2),
     // Fixed white: it sits on the brand gradient, not on the page, so it must
     // not flip with the colour scheme.
     color: '#FFFFFF',

@@ -172,16 +172,13 @@ const styles = StyleSheet.create({
   },
   line: {
     marginTop: 10,
-    fontSize: 14,
-    fontFamily: fonts.medium,
-    letterSpacing: -0.1,
+    ...fonts.medium(14, -0.1),
     textAlign: 'center',
   },
   disclaimer: {
     marginTop: 14,
-    fontSize: 11.5,
+    ...fonts.medium(11.5),
     lineHeight: 16,
-    fontFamily: fonts.medium,
     textAlign: 'center',
   },
   chipSlot: {
@@ -197,9 +194,5 @@ const styles = StyleSheet.create({
     borderRadius: CHIP_HEIGHT / 2,
     borderWidth: 1.5,
   },
-  chipLabel: {
-    fontSize: 15,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
-  },
+  chipLabel: fonts.semibold(15, -0.2),
 });

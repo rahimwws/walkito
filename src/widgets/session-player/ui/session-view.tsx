@@ -393,11 +393,9 @@ function SessionLocked({ onBack }: { onBack: () => void }) {
 const lockedStyles = StyleSheet.create({
   host: { flex: 1, paddingHorizontal: 24, gap: 24 },
   middle: { flex: 1, justifyContent: 'center', alignItems: 'center', gap: 12 },
-  title: { fontSize: 24, fontFamily: fonts.heavy, letterSpacing: -0.6, textAlign: 'center' },
+  title: { ...fonts.heavy(24, -0.6), textAlign: 'center' },
   body: {
-    fontSize: 15,
-    fontFamily: fonts.medium,
-    letterSpacing: -0.2,
+    ...fonts.medium(15, -0.2),
     textAlign: 'center',
     lineHeight: 21,
   },
@@ -1498,7 +1496,6 @@ function SessionRun({
               value={remaining}
               color={colors.foreground}
               fontSize={CLOCK_SIZE}
-              fontFamily={fonts.heavy}
               weight="heavy"
               duration={CLOCK_ROLL_SECONDS}
             />
@@ -1704,8 +1701,7 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
   carryOn: {
-    fontSize: 14,
-    fontFamily: fonts.regular,
+    ...fonts.regular(14),
     textAlign: 'center',
     paddingHorizontal: CARD_MARGIN,
   },
@@ -1720,10 +1716,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 6,
   },
-  meta: {
-    fontSize: 14,
-    fontFamily: fonts.semibold,
-  },
+  meta: fonts.semibold(14),
   dot: {
     width: 3,
     height: 3,
@@ -1753,8 +1746,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
   },
   clipFallbackText: {
-    fontSize: 15,
-    fontFamily: fonts.medium,
+    ...fonts.medium(15),
     textAlign: 'center',
   },
   expand: {
@@ -1782,15 +1774,11 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   move: {
-    fontSize: 24,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.5,
+    ...fonts.semibold(24, -0.5),
     marginTop: 2,
   },
   counter: {
-    fontSize: 15,
-    fontFamily: fonts.semibold,
-    letterSpacing: 0.1,
+    ...fonts.semibold(15, 0.1),
     marginTop: 6,
   },
   hint: {
@@ -1801,10 +1789,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: CARD_MARGIN,
     paddingBottom: 12,
   },
-  hintText: {
-    fontSize: 13,
-    fontFamily: fonts.medium,
-  },
+  hintText: fonts.medium(13),
   transport: {
     paddingHorizontal: CARD_MARGIN,
   },

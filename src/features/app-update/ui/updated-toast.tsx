@@ -183,9 +183,7 @@ const styles = StyleSheet.create({
     marginVertical: -4,
   },
   text: {
-    fontSize: 16,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
+    ...fonts.semibold(16, -0.2),
     flexShrink: 1,
   },
 });

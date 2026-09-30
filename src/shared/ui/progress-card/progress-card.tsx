@@ -157,11 +157,7 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     gap: 14,
   },
-  eyebrow: {
-    fontSize: 12,
-    fontFamily: fonts.bold,
-    letterSpacing: 1,
-  },
+  eyebrow: fonts.bold(12, 1),
   scoreRow: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -174,20 +170,13 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     borderCurve: 'continuous',
   },
-  badgeLabel: {
-    fontSize: 12,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.1,
-  },
+  badgeLabel: fonts.bold(12, 0.1),
   metaRow: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
-  metaLabel: {
-    fontSize: 13,
-    fontFamily: fonts.medium,
-  },
+  metaLabel: fonts.medium(13),
   momentum: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -209,19 +198,9 @@ const styles = StyleSheet.create({
     alignItems: 'baseline',
     gap: 3,
   },
-  statValue: {
-    fontSize: 21,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.3,
-  },
-  statUnit: {
-    fontSize: 13,
-    fontFamily: fonts.medium,
-  },
-  statLabel: {
-    fontSize: 12,
-    fontFamily: fonts.medium,
-  },
+  statValue: fonts.bold(21, -0.3),
+  statUnit: fonts.medium(13),
+  statLabel: fonts.medium(12),
   momentumDivider: {
     width: 1,
     height: 34,

@@ -187,21 +187,16 @@ const styles = StyleSheet.create({
     opacity: 0.2,
   },
   eyebrow: {
-    fontSize: 12,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.6,
+    ...fonts.bold(12, 0.6),
     opacity: 0.8,
   },
   title: {
-    fontSize: 24,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.6,
+    ...fonts.heavy(24, -0.6),
     marginTop: -6,
   },
   body: {
-    fontSize: 16,
+    ...fonts.medium(16),
     lineHeight: 22,
-    fontFamily: fonts.medium,
   },
   chips: {
     flexDirection: 'row',

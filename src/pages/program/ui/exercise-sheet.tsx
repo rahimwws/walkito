@@ -64,16 +64,13 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   title: {
-    fontSize: 24,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.6,
+    ...fonts.heavy(24, -0.6),
     textAlign: 'center',
     marginTop: 4,
   },
   cue: {
-    fontSize: 16,
+    ...fonts.medium(16),
     lineHeight: 22,
-    fontFamily: fonts.medium,
     textAlign: 'center',
   },
 });

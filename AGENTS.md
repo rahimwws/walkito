@@ -14,19 +14,29 @@ Read [`src/README.md`](src/README.md) before adding files. The rules that bite m
 
 Put new code in the page that uses it. Move it down a layer only when a second page needs it.
 
-# Typography: SF Pro Rounded
+# Typography: SF Pro Rounded (the system's), Nunito on Android
 
-All text uses SF Pro Rounded on iOS and **Nunito on Android** — Apple licenses SF for Apple platforms only, so the Android build must never carry it. The faces live in `src/shared/config/font-faces.ts` (SF) and `font-faces.android.ts` (Nunito, from `@expo-google-fonts/nunito`); Metro picks one per platform, and the expo-font plugin in `app.json` embeds each platform's own set. `fonts.regular` … `fonts.heavy` resolve to the right face either way. SF Pro Rounded is bundled in `assets/fonts/` and loaded at runtime in `src/app/layouts/root-layout.tsx` (Expo Go can't embed fonts at build time; the expo-font config plugin in `app.json` covers dev builds). Rounded rather than neutral because the product is a coach — see the note at the top of `src/shared/config/fonts.ts`.
+All text uses SF Pro Rounded on iOS and **Nunito on Android**. On iOS it is the system's own rounded design, `fontFamily: 'ui-rounded'` with a `fontWeight`, not a bundled file: the app used to embed five SF `.otf` files twice over (4.4 MB of the install), and Apple licenses the downloadable SF files for mock-ups, not for shipping. Android has no SF and may not carry it, so it gets Nunito (`@expo-google-fonts/nunito`), embedded by the expo-font plugin in `app.json` and also loaded by `useFonts` in `src/app/layouts/root-layout.tsx`. Metro picks `src/shared/config/font-faces.ts` (iOS) or `font-faces.android.ts`. Rounded rather than neutral because the product is a coach: see the note at the top of `src/shared/config/fonts.ts`.
 
-This said Inter until the app switched faces; the five `Inter-*.ttf` files sat unreferenced in `assets/fonts/` for as long as the doc kept claiming they were in use, and have now been deleted.
-
-Set weights via `fontFamily` with the constants from `src/shared/config/fonts.ts` (`fonts.regular` … `fonts.heavy`) — never via `fontWeight`, which makes iOS synthesize or fall back to the system font:
+**Every text style takes its face and size from `fonts.*`. Never set `fontFamily`, `fontWeight` or `fontSize` by hand:**
 
 ```tsx
 import { fonts } from '@/shared/config';
 
-<Text style={{ fontFamily: fonts.semibold }}>…</Text>
+const styles = StyleSheet.create({
+  title: { ...fonts.heavy(24, -0.6), textAlign: 'center' }, // size, letterSpacing
+  label: fonts.semibold(16),
+});
+
+<Text style={[fonts.bold(size), { color }]}>…</Text>; // a computed size
 ```
+
+It is a function of the size because iOS tracks the system face by size (its `trak` table: +0.37pt a character at 17pt, +0.51pt at 13pt) and never tracked the bundled file. `fonts.*` takes that back out through letterSpacing, so every line sets as wide as it did on the old file (checked on the iOS simulator, line against line). The second argument is the letterSpacing the design asks for, written as it always was. On Android the correction is 0.
+
+- **A later style that sets `fontSize` or `letterSpacing` on its own brings the tracking back.** Override with another `fonts.*` call carrying the new size and any spacing the text would have inherited: `fonts.medium(16, -0.2)` over a title set at `-0.2`.
+- **`faces.*` is the face alone**, for a nested span, or a later style on the same Text, that only changes the weight and inherits a size and spacing already set by `fonts.*`: `quoteLead: faces.bold`.
+- **SwiftUI text** (`AnimatedNumber` on iOS, the home-screen widget, the Live Activity) uses `font({ size, weight, design: 'rounded' })`, the same system face tracked the system's way. `AnimatedNumber` takes a `weight`, never a family.
+- `noteFonts` (Inter, from `@expo-google-fonts/inter`) belongs to the note sheet alone.
 
 # Color
 
@@ -153,6 +163,21 @@ track('session_completed', { day, block, kind, checkpoint });
 - `expo-insights` has no API: linked into the binary, it reports cold starts to EAS → Insights → App usage.
 - `expo-observe` goes through `@/shared/lib/observe`, never the SDK directly. It is configured once in `root-layout.tsx` with the expo-router integration (per-route `cold_ttr` / `warm_ttr` / `tti`), and `track()` mirrors every analytics event into it. Both are lazily required, so a dev client built before they were linked just drops metrics.
 - **No endless animations on mounted-but-hidden screens.** The program overlay and all tabs stay mounted. A `withRepeat` there runs on the UI thread forever: the dots on every `DayLink` once added up to several hundred and heated the phone. Gate looping motion on `useIsFocused()` or on a single element, the way `DayLink.animated`, `PathNode` and `Glow paused` do.
+
+# App size
+
+1.0.1 (26) installed at 102.6 MB, about 45 MB to download. Install size only shrinks through a store build; OTA cannot touch it. The levers, and what keeps them working:
+
+- **Embedded frameworks are stripped** in Release device builds (-7.2 MB): `plugins/strip-embedded-frameworks.sh`, run by a phase that `plugins/with-strip-frameworks.js` puts after `[CP] Embed Pods Frameworks`. It uses `strip -x -S` only where the build holds a dSYM with the framework's UUID (the Expo frameworks) and `strip -S` elsewhere: React, ReactNativeDependencies and hermesvm ship without dSYMs, so their local symbols are the only function names a crash has. Put React Native's published dSYMs in the build and they move to `-x -S` by themselves (about 5.9 MB more). The plugin stays **first** in app.json, since Xcode mods run in reverse order and it has to run last. The EAS Xcode log prints a before/after line per framework.
+- **Hermes debug info goes to a source map, not the app** (-1.5 to -1.8 MB): `plugins/with-hermes-sourcemap.js` sets `SOURCEMAP_FILE` in the bundle phase. Production sets `uploadSourceMaps`, so EAS Observe symbolicates reported errors, and keeps the map as a build artifact (`ios/build/sourcemaps/main.jsbundle.map`). For any other JS stack from a store build, download that build's artifacts from its EAS page and run `npx metro-symbolicate main.jsbundle.map < stack.txt`; Hermes frames read `address at main.jsbundle:1:<offset>`. A map fits one build only, and a stack from an OTA update needs that update's map.
+- **Android-only native modules stay out of iOS** via `expo.autolinking.ios.exclude` in package.json (Google Sign-In, -0.58 MB). It drops the RN pod and the Expo adapter together; `react-native.config.js` would only drop the first. JS must guard the missing module (`TurboModuleRegistry.get`, a platform check), as `google-auth.ts` does.
+- **A native package costs its full size whether or not anything imports it.** Rive sat unimported in the binary at 5.9 MB. Remove the dependency when its last import goes.
+- **JSON is source.** Metro inlines a required `.json` into the bytecode, so bulk data ships as an asset. The two raster Lottie flipbooks are the exception, on purpose: as `.lottie` assets they loaded off the main thread on iOS and decoded mid-animation, so the splash reveal, the update sheet and the contract step hitched. They stay JSON, and cost only the frames they play: `assets/lottie/contract.json` is the 61 frames of the ceremony the step shows, trimmed from `assets-src/lottie/contract.json` by `bun run build:lottie` (`verify:lottie` fails if it is stale, and skips on EAS, whose upload leaves the source out). Metro and `.easignore` both keep `assets-src/` out.
+- **RevenueCat's browser SDK is kept out of the phone bundles** (-1.5 MB of bytecode). `react-native-purchases` requires `@revenuecat/purchases-js-hybrid-mappings` unconditionally but calls it only in browser mode (Expo Go, web), which a build of this app never enters, so `metro.config.js` resolves it to `metro/purchases-js-hybrid-mappings.js` on iOS and Android. The stub loads cleanly and throws a named error if anything calls it. After bumping `react-native-purchases`, check that it still requires only that package for browser mode, and run a sandbox purchase and restore.
+- **Illustrations ship as WebP, photographs as JPEG** (-3.7 MB). Illustrations and cut-outs are lossless WebP, or q90+ with lossless alpha where that came out visibly identical, and decode no slower than the PNGs did. The onboarding photographs (`plan-*`, `sex-*`) stay baseline JPEG, re-encoded to luma SSIM >= 0.99: React Native hands a bundled image to UIImageView undecoded, so it is decoded on the main thread as its step arrives, and WebP decoded them 4-10x slower (up to 63 ms a photograph), a hitch on the first-run funnel. Photos keep their pixels, because the building step shows them full screen and the choice cards come close to it. `assets/icon.png` stays PNG because it is the app icon's source, and in-app uses take the 150 px `assets/icon-small.webp`. `update/mascot-handoff*.png` stays PNG: the native reload screen draws it and has to match the last JS frame.
+- **A face the system has is not bundled.** SF Pro Rounded comes from iOS (see Typography): five `.otf` files, embedded twice, were 4.4 MB. Inter ships only the three weights the note sheet sets.
+- **The app icon is as small as it gets without loss.** actool re-encodes the 1024 icon's pixels (1.4 MB), so recompressing the PNG changes nothing, and it is already opaque. Quantizing to 256 colours saves about 1 MB and bands the gradients visibly.
+- **Watch each store build.** Compare `Payload/Walkito.app` and `main.jsbundle` with the previous IPA and look into anything that grew by more than 1-2 MB: 7 MB of Lottie frames once got in unnoticed.
 
 # Updates
 

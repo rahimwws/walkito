@@ -60,9 +60,5 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderCurve: 'continuous',
   },
-  label: {
-    fontSize: 14,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.1,
-  },
+  label: fonts.bold(14, -0.1),
 });

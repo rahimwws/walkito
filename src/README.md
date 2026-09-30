@@ -77,4 +77,4 @@ import { ProgressCard } from '@/shared/ui/progress-card/progress-card'; // ❌
 | `@assets/*` | `assets/*`  |
 
 Assets stay at the repo root because `app.json` references them (icons, the
-`expo-font` plugin) with project-relative paths.
+splash image, the quick actions) with project-relative paths.

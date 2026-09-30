@@ -138,7 +138,6 @@ export function DailyGoalCard({
             value={clamped}
             color={colors.foreground}
             fontSize={38}
-            fontFamily={fonts.bold}
             weight="bold"
             duration={0.6}
           />
@@ -191,10 +190,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 2,
   },
-  caption: {
-    fontSize: 15,
-    fontFamily: fonts.medium,
-  },
+  caption: fonts.medium(15),
   button: {
     height: 60,
     borderRadius: 30,
@@ -205,8 +201,5 @@ const styles = StyleSheet.create({
     gap: 10,
     marginTop: 16,
   },
-  buttonLabel: {
-    fontSize: 18,
-    fontFamily: fonts.semibold,
-  },
+  buttonLabel: fonts.semibold(18),
 });

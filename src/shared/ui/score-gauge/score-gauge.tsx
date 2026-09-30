@@ -93,7 +93,6 @@ export function ScoreGauge({ score, delta, deltaSuffix = 'vs avg', caption }: Sc
             value={displayScore}
             color={foreground}
             fontSize={56}
-            fontFamily={fonts.heavy}
             weight="heavy"
             duration={0.9}
           />
@@ -135,13 +134,9 @@ const styles = StyleSheet.create({
     // Lifts "/100" off the box floor onto the 56px digits' baseline.
     paddingBottom: 11,
   },
-  max: {
-    fontSize: 20,
-    fontFamily: fonts.semibold,
-  },
+  max: fonts.semibold(20),
   band: {
-    fontSize: 15,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(15),
     marginTop: 2,
   },
   deltaPill: {

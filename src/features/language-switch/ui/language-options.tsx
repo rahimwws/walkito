@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
   rowText: { flex: 1 },
-  rowLabel: { fontSize: 16, fontFamily: fonts.semibold, letterSpacing: -0.2 },
-  rowHint: { fontSize: 13, fontFamily: fonts.medium, marginTop: 1 },
+  rowLabel: fonts.semibold(16, -0.2),
+  rowHint: { ...fonts.medium(13), marginTop: 1 },
   checkSlot: { width: 20, alignItems: 'center' },
 });

@@ -82,11 +82,7 @@ const styles = StyleSheet.create({
     gap: 12,
     marginTop: 28,
   },
-  heading: {
-    fontSize: 22,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.6,
-  },
+  heading: fonts.heavy(22, -0.6),
   row: {
     gap: 10,
   },

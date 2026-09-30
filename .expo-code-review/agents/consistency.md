@@ -51,8 +51,8 @@ the same kind of thing, so the codebase stays uniform and predictable.
 - **Empty states, never demo data.** Data-driven sections derive only from real
   session history. With no data, siblings render `EmptyStateCard` or hide the
   section entirely; a fabricated placeholder value is a finding.
-- **Typography and icons.** Weights via the `fonts` constants in
-  `@/shared/config` (SF Pro Rounded); icons via `HugeiconsIcon`,
+- **Typography and icons.** Face and size via `fonts.*` in `@/shared/config`
+  (the system's SF Pro Rounded on iOS, Nunito on Android); icons via `HugeiconsIcon`,
   default-imported per-icon by subpath from `@hugeicons/core-free-icons`.
   Stroke-rounded is the only style available, so active/selected states are
   expressed with color or tint, never by swapping in a filled glyph.

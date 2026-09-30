@@ -865,15 +865,12 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   title: {
-    fontSize: 26,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.7,
+    ...fonts.heavy(26, -0.7),
     textAlign: 'center',
   },
   blurb: {
-    fontSize: 15,
+    ...fonts.medium(15),
     lineHeight: 21,
-    fontFamily: fonts.medium,
     textAlign: 'center',
     paddingHorizontal: 4,
   },
@@ -882,5 +879,5 @@ const styles = StyleSheet.create({
   blurbLayer: { width: '100%' },
   blurbOver: { marginLeft: '-100%' },
   later: { alignSelf: 'center', paddingVertical: 12 },
-  laterText: { fontSize: 16, fontFamily: fonts.semibold },
+  laterText: fonts.semibold(16),
 });

@@ -24,7 +24,7 @@ import { TypedText } from '@/shared/ui/typed-text';
 
 /** The one emblem the app celebrates with. One badge for one idea: whatever
  * screen it appears over, it means something was earned. */
-const BADGE_ART = require('@assets/achievements/streak-badge.png');
+const BADGE_ART = require('@assets/achievements/streak-badge.webp');
 
 const BADGE = 132;
 const RADIUS = 34;
@@ -259,12 +259,11 @@ const styles = StyleSheet.create({
     // Clears the half of the badge that overhangs it.
     paddingTop: BADGE / 2 + 12,
   },
-  title: { fontSize: 30, fontFamily: fonts.heavy, letterSpacing: -0.9 },
-  headline: { fontSize: 20, fontFamily: fonts.bold, letterSpacing: -0.4, marginTop: 4 },
+  title: fonts.heavy(30, -0.9),
+  headline: { ...fonts.bold(20, -0.4), marginTop: 4 },
   blurb: {
-    fontSize: 16,
+    ...fonts.regular(16),
     lineHeight: 22,
-    fontFamily: fonts.regular,
     textAlign: 'center',
     marginTop: 8,
     paddingHorizontal: 6,

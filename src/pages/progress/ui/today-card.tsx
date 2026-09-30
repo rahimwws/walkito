@@ -81,23 +81,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 8,
   },
-  eyebrow: {
-    fontSize: 13,
-    fontFamily: fonts.medium,
-  },
-  title: {
-    fontSize: 22,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.4,
-  },
+  eyebrow: fonts.medium(13),
+  title: fonts.bold(22, -0.4),
   subtitle: {
-    fontSize: 15,
-    fontFamily: fonts.medium,
+    ...fonts.medium(15),
     marginTop: 2,
   },
   note: {
-    fontSize: 13,
-    fontFamily: fonts.regular,
+    ...fonts.regular(13),
     textAlign: 'center',
     marginTop: 6,
   },

@@ -231,9 +231,7 @@ const styles = StyleSheet.create({
     marginTop: 24,
   },
   sectionTitle: {
-    fontSize: 12,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.1,
+    ...fonts.bold(12, 0.1),
     marginBottom: 8,
   },
   gapTop: {
@@ -246,8 +244,7 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   syncLine: {
-    fontSize: 13,
-    fontFamily: fonts.medium,
+    ...fonts.medium(13),
     textAlign: 'center',
     marginTop: 16,
   },
@@ -262,10 +259,7 @@ const styles = StyleSheet.create({
     borderRadius: 18,
     borderCurve: 'continuous',
   },
-  pillText: {
-    fontSize: 15,
-    fontFamily: fonts.semibold,
-  },
+  pillText: fonts.semibold(15),
   row: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -273,26 +267,17 @@ const styles = StyleSheet.create({
     gap: 12,
     minHeight: 40,
   },
-  label: {
-    fontSize: 16,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
-  },
+  label: fonts.semibold(16, -0.2),
   value: {
     flexShrink: 1,
-    fontSize: 14,
-    fontFamily: fonts.medium,
+    ...fonts.medium(14),
   },
   mapSheet: {
     flex: 1,
     padding: 20,
     gap: 16,
   },
-  mapTitle: {
-    fontSize: 24,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.6,
-  },
+  mapTitle: fonts.heavy(24, -0.6),
   map: {
     flex: 1,
     alignItems: 'center',

@@ -80,8 +80,5 @@ const styles = StyleSheet.create({
     borderRadius: HEIGHT / 2,
     borderCurve: 'continuous',
   },
-  label: {
-    fontSize: 18,
-    fontFamily: fonts.semibold,
-  },
+  label: fonts.semibold(18),
 });

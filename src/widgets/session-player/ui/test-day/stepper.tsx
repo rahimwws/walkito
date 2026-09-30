@@ -106,10 +106,8 @@ const styles = StyleSheet.create({
   value: {
     minWidth: 96,
     textAlign: 'center',
-    fontSize: 56,
+    ...fonts.heavy(56, -1.5),
     lineHeight: 64,
-    fontFamily: fonts.heavy,
-    letterSpacing: -1.5,
     fontVariant: ['tabular-nums'],
   },
 });

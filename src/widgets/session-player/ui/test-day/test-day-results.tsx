@@ -286,15 +286,12 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   title: {
-    fontSize: 32,
+    ...fonts.heavy(32, -0.8),
     lineHeight: 38,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.8,
   },
   blurb: {
-    fontSize: 16,
+    ...fonts.medium(16),
     lineHeight: 22,
-    fontFamily: fonts.medium,
     marginTop: -4,
     marginBottom: 8,
   },
@@ -319,9 +316,7 @@ const styles = StyleSheet.create({
   },
   name: {
     flex: 1,
-    fontSize: 17,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.2,
+    ...fonts.bold(17, -0.2),
   },
   badge: {
     flexDirection: 'row',
@@ -331,10 +326,7 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     borderRadius: 50,
   },
-  badgeText: {
-    fontSize: 12,
-    fontFamily: fonts.bold,
-  },
+  badgeText: fonts.bold(12),
   figureRow: {
     flexDirection: 'row',
     alignItems: 'baseline',
@@ -342,20 +334,16 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   figure: {
-    fontSize: 44,
+    ...fonts.heavy(44, -1.2),
     lineHeight: 50,
-    fontFamily: fonts.heavy,
-    letterSpacing: -1.2,
     fontVariant: ['tabular-nums'],
   },
   unit: {
     flexShrink: 1,
-    fontSize: 16,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(16),
   },
   change: {
-    fontSize: 14,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(14),
     marginTop: -2,
   },
   track: {
@@ -375,13 +363,11 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   goal: {
-    fontSize: 13,
-    fontFamily: fonts.semibold,
+    ...fonts.semibold(13),
     fontVariant: ['tabular-nums'],
   },
   legs: {
-    fontSize: 13,
-    fontFamily: fonts.medium,
+    ...fonts.medium(13),
     fontVariant: ['tabular-nums'],
   },
   why: {
@@ -391,15 +377,10 @@ const styles = StyleSheet.create({
     gap: 6,
     marginTop: 4,
   },
-  whyEyebrow: {
-    fontSize: 12,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.4,
-  },
+  whyEyebrow: fonts.bold(12, 0.4),
   whyText: {
-    fontSize: 16,
+    ...fonts.semibold(16),
     lineHeight: 22,
-    fontFamily: fonts.semibold,
   },
   next: {
     flexDirection: 'row',
@@ -414,14 +395,10 @@ const styles = StyleSheet.create({
     flex: 1,
     gap: 2,
   },
-  nextTitle: {
-    fontSize: 16,
-    fontFamily: fonts.bold,
-  },
+  nextTitle: fonts.bold(16),
   nextBody: {
-    fontSize: 14,
+    ...fonts.medium(14),
     lineHeight: 19,
-    fontFamily: fonts.medium,
   },
   dock: {
     paddingHorizontal: 20,

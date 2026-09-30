@@ -92,7 +92,6 @@ export function MeasureStep({
                   value={Number(raw) || 0}
                   color={colors.foreground}
                   fontSize={NUMBER_SIZE}
-                  fontFamily={fonts.bold}
                   weight="bold"
                   duration={ROLL_DURATION}
                 />
@@ -240,8 +239,7 @@ const styles = StyleSheet.create({
     // Android draws a TextInput's glyphs whatever its colour says; only the
     // view's own opacity hides them. It still takes focus and the keyboard.
     opacity: 0,
-    fontSize: NUMBER_SIZE,
-    fontFamily: fonts.bold,
+    ...fonts.bold(NUMBER_SIZE),
     textAlign: 'center',
     padding: 0,
   },
@@ -251,10 +249,7 @@ const styles = StyleSheet.create({
     borderRadius: 2,
     marginLeft: 3,
   },
-  suffix: {
-    fontSize: 20,
-    fontFamily: fonts.medium,
-  },
+  suffix: fonts.medium(20),
   toggleRow: {
     marginTop: 24,
   },
@@ -279,8 +274,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  toggleLabel: {
-    fontSize: 16,
-    fontFamily: fonts.semibold,
-  },
+  toggleLabel: fonts.semibold(16),
 });

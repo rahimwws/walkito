@@ -163,9 +163,7 @@ const styles = StyleSheet.create({
     height: '320%',
   },
   wordmark: {
-    fontSize: 40,
-    fontFamily: fonts.heavy,
-    letterSpacing: -1.4,
+    ...fonts.heavy(40, -1.4),
     // Fixed white: it sits on a photograph, not on the page, so it must not
     // flip with the colour scheme.
     color: '#FFFFFF',
@@ -180,9 +178,7 @@ const styles = StyleSheet.create({
     backgroundColor: PRIMARY,
   },
   badgeText: {
-    fontSize: 11,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.1,
+    ...fonts.bold(11, 0.1),
     color: '#FFFFFF',
   },
   copy: {
@@ -198,20 +194,11 @@ const styles = StyleSheet.create({
     borderRadius: 999,
     borderCurve: 'continuous',
   },
-  chipText: {
-    fontSize: 11,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.8,
-  },
-  title: {
-    fontSize: 22,
-    fontFamily: fonts.bold,
-    letterSpacing: -0.5,
-  },
+  chipText: fonts.bold(11, 0.8),
+  title: fonts.bold(22, -0.5),
   blurb: {
-    fontSize: 15,
+    ...fonts.regular(15),
     lineHeight: 21,
-    fontFamily: fonts.regular,
   },
   rule: {
     height: StyleSheet.hairlineWidth,
@@ -224,8 +211,7 @@ const styles = StyleSheet.create({
   },
   bulletText: {
     flex: 1,
-    fontSize: 14,
+    ...fonts.regular(14),
     lineHeight: 20,
-    fontFamily: fonts.regular,
   },
 });

@@ -605,25 +605,20 @@ const styles = StyleSheet.create({
   },
   title: {
     flex: 1,
-    fontSize: 24,
-    fontFamily: fonts.heavy,
-    letterSpacing: -0.6,
+    ...fonts.heavy(24, -0.6),
   },
   list: {
     paddingHorizontal: 20,
     gap: 18,
   },
   rationale: {
-    fontSize: 15,
+    ...fonts.medium(15),
     lineHeight: 21,
-    fontFamily: fonts.medium,
     textAlign: 'center',
     paddingHorizontal: 8,
   },
   sectionLabel: {
-    fontSize: 12,
-    fontFamily: fonts.bold,
-    letterSpacing: 0.6,
+    ...fonts.bold(12, 0.6),
     marginTop: 6,
     marginBottom: -8,
   },
@@ -642,15 +637,8 @@ const styles = StyleSheet.create({
     borderRadius: 18,
     borderCurve: 'continuous',
   },
-  rowLabel: {
-    fontSize: 16,
-    fontFamily: fonts.semibold,
-    letterSpacing: -0.2,
-  },
-  rowMinutes: {
-    fontSize: 15,
-    fontFamily: fonts.bold,
-  },
+  rowLabel: fonts.semibold(16, -0.2),
+  rowMinutes: fonts.bold(15),
   reached: {
     borderRadius: 26,
     borderCurve: 'continuous',
@@ -659,8 +647,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   reachedText: {
-    fontSize: 17,
+    ...fonts.semibold(17),
     lineHeight: 23,
-    fontFamily: fonts.semibold,
   },
 });
