@@ -63,3 +63,16 @@ describe('the rendered message', () => {
     expect(message.text).toContain('первая сессия займёт 5 минут');
   });
 });
+
+describe('the footer without a postal address', () => {
+  test('leaves the address line out instead of printing it empty', async () => {
+    const content = build.winback7('en');
+    const message = await composeMessage(
+      { key: 'winback_7', dedupeKey: 'winback_7', content },
+      { userId: USER, email: 'a@b.co', locale: 'en' },
+      { ...CONFIG, postalAddress: '' },
+    );
+    expect(message.html).not.toContain('walkito · ');
+    expect(message.html).toContain('unsubscribe');
+  });
+});

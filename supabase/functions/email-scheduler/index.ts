@@ -8,6 +8,8 @@
  * actions to clicked emails, and reading back what Resend saw happen to recent
  * sends, so a bounce or a spam complaint stops the next one.
  *
+ * EMAIL_POSTAL_ADDRESS is optional: without it the footer has no address line.
+ *
  * EMAIL_MODE decides how far a run goes:
  *   off   nothing is decided or sent (the default until configured)
  *   dry   everything is decided and returned, nothing is sent or logged
@@ -76,7 +78,6 @@ function json(body: unknown, status = 200): Response {
 function notReadyToSend(): string[] {
   const missing: string[] = [];
   if (!RESEND_KEY) missing.push('RESEND_API_KEY');
-  if (!config.postalAddress) missing.push('EMAIL_POSTAL_ADDRESS');
   if (!config.unsubscribeSecret) missing.push('EMAIL_UNSUBSCRIBE_SECRET');
   return missing;
 }
@@ -201,7 +202,7 @@ async function sendSamples(to: string, locale: string | undefined, keys: string[
   const l = locale === 'ru' || locale === 'es' ? locale : 'en';
   const picked = sampleEmails(l).filter((x) => keys == null || keys.length === 0 || keys.includes(x.key));
   const results: { key: string; result: string }[] = [];
-  const sampleConfig = { ...config, postalAddress: config.postalAddress || 'postal address goes here' };
+  const sampleConfig = config;
   for (const sample of picked) {
     const message = await composeMessage(
       { key: sample.key, dedupeKey: `sample:${sample.key}`, content: sample.content },

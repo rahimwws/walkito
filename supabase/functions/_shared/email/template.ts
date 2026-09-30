@@ -27,7 +27,12 @@ export type TemplateProps = {
   buttonUrl: string;
   unsubscribeUrl: string;
   settingsUrl: string;
-  /** The company's postal address. Required by US anti-spam law in every email. */
+  /**
+   * The company's postal address, for the footer. Optional for now: there is
+   * none to give yet, and the line is left out rather than printed empty. US
+   * anti-spam law wants one in commercial email (here, the two offers), so it
+   * goes in as EMAIL_POSTAL_ADDRESS as soon as one exists.
+   */
   postalAddress: string;
   /** Where `email/mascot.png` is served from, e.g. `https://walkito.site`. */
   assetBase: string;
@@ -110,7 +115,9 @@ export function EmailLayout(props: TemplateProps): ReactElement {
             ' · ',
             h(Link, { href: props.settingsUrl, style: { color: FAINT, textDecoration: 'underline' } }, footer.settings),
           ),
-          text('faint', { color: FAINT, fontSize: 12, lineHeight: '18px', marginTop: 2 }, `walkito · ${props.postalAddress}`),
+          props.postalAddress
+            ? text('faint', { color: FAINT, fontSize: 12, lineHeight: '18px', marginTop: 2 }, `walkito · ${props.postalAddress}`)
+            : null,
         ),
       ),
     ),
