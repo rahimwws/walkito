@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Privacy',
   description:
-    'What Walkito collects and why. Your plan and check-ins are saved to your account; Apple Health data stays on your phone. No ads and no ad tracking.',
+    'What Walkito collects and why. Your plan and check-ins are saved to your account; Apple Health and Health Connect data stay on your phone. No ads and no ad tracking.',
   alternates: alternatesFor('privacy', 'en'),
 };
 
@@ -49,24 +49,24 @@ export default function Privacy() {
       <Prose className="shell prose">
         <h1>Privacy</h1>
 
-        <p className="updated">Last updated: 28 September 2026</p>
+        <p className="updated">Last updated: 30 September 2026</p>
 
         <h2>The short version</h2>
         <ul>
-          <li>You sign in with Apple when you set up Walkito.</li>
+          <li>You sign in with Apple on iPhone, or with Google on Android, when you set up Walkito.</li>
           <li>
             Your plan, your answers, your pain check-ins, your test results and
             the sessions you finish are saved to your account, so they come back
             on a new phone or after you reinstall the app.
           </li>
           <li>
-            <b>Apple Health data stays on your phone and is never uploaded.</b>
+            <b>Apple Health and Health Connect data stay on your phone and are never uploaded.</b>
           </li>
           <li>
             A few services receive data so the app can work: Supabase (your
             account and plan), PostHog (usage analytics), RevenueCat (purchases),
-            Expo (notifications, app updates, speed and crash reports) and Apple
-            (sign-in, payments and notifications).
+            Expo (notifications, app updates, speed and crash reports), Apple
+            (sign-in, payments and notifications) and Google (sign-in on Android).
           </li>
           <li>No ads, no ad tracking, and we never sell your data.</li>
         </ul>
@@ -78,6 +78,11 @@ export default function Privacy() {
           address if you choose to hide yours. The identifier becomes your
           account on our server. Your name stays on your phone. Your email
           address is stored with your account.
+        </p>
+        <p>
+          On Android, setup signs you in with Google instead. Google, like
+          Apple, gives us an identifier and your email address, and they are
+          used the same way.
         </p>
         <p>
           If Sign in with Apple is not available on your device, the app uses an
@@ -140,7 +145,7 @@ export default function Privacy() {
         <p>
           Your name, the age, sex, weight and shoe size you give during setup,
           your settings for the app’s look and language, the exercise videos you
-          have downloaded, and every Apple Health figure. These are kept only in
+          have downloaded, and every Apple Health or Health Connect figure. These are kept only in
           the app’s own storage on the device.
         </p>
 
@@ -163,6 +168,31 @@ export default function Privacy() {
           You can withdraw any permission at any time in Settings → Apps →
           Health → Data Access &amp; Devices → Walkito. The app keeps working,
           and the parts that relied on that data stop appearing.
+        </p>
+
+        <h2>Health Connect (Android)</h2>
+        <p>
+          On Android, with your permission, Walkito reads steps, floors
+          climbed, resting heart rate, heart rate, sleep sessions, exercise
+          sessions, distance and active calories burned from Health Connect. It
+          writes the sessions you finish back as exercise sessions.
+        </p>
+        <p>
+          We use this data only to adjust your plan: how much you moved, slept
+          and ran shapes the day’s session and the hints you see. It is read and
+          summarized on your phone.{' '}
+          <b>
+            Health Connect data is never uploaded, never sold, never shared with
+            third parties and never used for advertising.
+          </b>{' '}
+          Walkito’s use of information received from Health Connect adheres to
+          the Health Connect Permissions policy, including the Limited Use
+          requirements.
+        </p>
+        <p>
+          You can withdraw any permission at any time in the Health Connect app,
+          or in Android Settings → Security &amp; privacy → Privacy → Health
+          Connect → App permissions → Walkito. The app keeps working without it.
         </p>
 
         <h2>What we collect, how and why</h2>
@@ -312,8 +342,8 @@ export default function Privacy() {
             understand and improve the app. You can object to this.
           </li>
           <li>
-            <b>Consent:</b> Apple Health access, which you can withdraw at any
-            time in Settings. That data never leaves your phone.
+            <b>Consent:</b> Apple Health and Health Connect access, which you can
+            withdraw at any time in Settings. That data never leaves your phone.
           </li>
         </ul>
         <p>

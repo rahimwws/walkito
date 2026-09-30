@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Privacidad',
   description:
-    'Qué recopila Walkito y por qué. Tu plan y tus registros se guardan en tu cuenta; los datos de Apple Salud se quedan en tu teléfono. Sin anuncios ni rastreo.',
+    'Qué recopila Walkito y por qué. Tu plan y tus registros se guardan en tu cuenta; los datos de Apple Salud y Health Connect se quedan en tu teléfono. Sin anuncios ni rastreo.',
   alternates: alternatesFor('privacy', 'es'),
 };
 
@@ -31,7 +31,7 @@ export default function PrivacidadEs() {
       <Prose className="shell prose">
         <h1>Privacidad</h1>
 
-        <p className="updated">Última actualización: 28 de septiembre de 2026</p>
+        <p className="updated">Última actualización: 30 de septiembre de 2026</p>
         <p className="updated">
           Esta es una traducción. Si difiere de{' '}
           <a href="/privacy/">la versión en inglés</a>, se aplica la versión en
@@ -40,21 +40,21 @@ export default function PrivacidadEs() {
 
         <h2>En resumen</h2>
         <ul>
-          <li>Inicias sesión con Apple cuando configuras Walkito.</li>
+          <li>Inicias sesión con Apple en iPhone, o con Google en Android, cuando configuras Walkito.</li>
           <li>
             Tu plan, tus respuestas, tus registros de dolor, los resultados de
             tus pruebas y las sesiones que terminas se guardan en tu cuenta, así
             que vuelven en un teléfono nuevo o si reinstalas la app.
           </li>
           <li>
-            <b>Los datos de Apple Salud se quedan en tu teléfono y nunca se suben.</b>
+            <b>Los datos de Apple Salud y Health Connect se quedan en tu teléfono y nunca se suben.</b>
           </li>
           <li>
             Algunos servicios reciben datos para que la app funcione: Supabase
             (tu cuenta y tu plan), PostHog (analítica de uso), RevenueCat
             (compras), Expo (notificaciones, actualizaciones de la app e
-            informes de velocidad y de errores) y Apple (inicio de sesión, pagos
-            y notificaciones).
+            informes de velocidad y de errores), Apple (inicio de sesión, pagos
+            y notificaciones) y Google (inicio de sesión en Android).
           </li>
           <li>Sin anuncios, sin rastreo publicitario, y nunca vendemos tus datos.</li>
         </ul>
@@ -66,6 +66,10 @@ export default function PrivacidadEs() {
           reenvío privada si eliges ocultar el tuyo. Ese identificador se
           convierte en tu cuenta en nuestro servidor. Tu nombre se queda en tu
           teléfono. Tu correo se guarda con tu cuenta.
+        </p>
+        <p>
+          En Android, inicias sesión con Google. Google, como Apple, nos da un
+          identificador y tu correo electrónico, y se usan de la misma manera.
         </p>
         <p>
           Si Iniciar sesión con Apple no está disponible en tu dispositivo, la
@@ -133,7 +137,7 @@ export default function PrivacidadEs() {
           Tu nombre, la edad, el sexo, el peso y la talla de zapato que indicas
           durante la configuración, tus ajustes de apariencia e idioma de la
           app, los videos de ejercicios que has descargado y todos los datos de
-          Apple Salud. Todo esto se guarda solo en el almacenamiento propio de
+          Apple Salud y Health Connect. Todo esto se guarda solo en el almacenamiento propio de
           la app en el dispositivo.
         </p>
 
@@ -158,6 +162,31 @@ export default function PrivacidadEs() {
           Apps → Salud → Acceso a datos y dispositivos → Walkito. La app sigue
           funcionando, y las partes que dependían de esos datos dejan de
           aparecer.
+        </p>
+
+        <h2>Health Connect (Android)</h2>
+        <p>
+          En Android, con tu permiso, Walkito lee de Health Connect los pasos,
+          los pisos subidos, la frecuencia cardiaca en reposo, la frecuencia
+          cardiaca, el sueño, los entrenamientos, la distancia y las calorías
+          activas. Guarda las sesiones que terminas como entrenamientos.
+        </p>
+        <p>
+          Usamos estos datos solo para ajustar tu plan: cuánto te moviste,
+          dormiste y corriste influye en la sesión del día y en las sugerencias.
+          Se leen y se resumen en tu teléfono.{' '}
+          <b>
+            Los datos de Health Connect nunca se suben, nunca se venden, nunca se
+            comparten con terceros y nunca se usan para publicidad.
+          </b>{' '}
+          El uso que Walkito hace de la información recibida de Health Connect
+          cumple la política de permisos de Health Connect, incluidos los
+          requisitos de uso limitado (Limited Use).
+        </p>
+        <p>
+          Puedes retirar cualquier permiso en cualquier momento en la app Health
+          Connect o en Ajustes de Android → Seguridad y privacidad → Privacidad →
+          Health Connect → Permisos de apps → Walkito. La app sigue funcionando.
         </p>
 
         <h2>Qué recopilamos, cómo y por qué</h2>
@@ -315,8 +344,8 @@ export default function PrivacidadEs() {
             errores, para entender y mejorar la app. Puedes oponerte a ello.
           </li>
           <li>
-            <b>Consentimiento:</b> el acceso a Apple Salud, que puedes retirar
-            en cualquier momento en Ajustes. Esos datos nunca salen de tu
+            <b>Consentimiento:</b> el acceso a Apple Salud y Health Connect, que
+            puedes retirar en cualquier momento en Ajustes. Esos datos nunca salen de tu
             teléfono.
           </li>
         </ul>
