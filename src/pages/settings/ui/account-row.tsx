@@ -53,7 +53,7 @@ export function AccountRow({ onSignedIn }: { onSignedIn?: () => void }) {
       }
       if (result.status === 'signed-in') {
         if (result.fullName != null) setProfileName(firstName(result.fullName));
-        if (result.email != null) setProfileEmail(result.email);
+        if (result.email != null) setProfileEmail(result.email, METHOD);
       }
       track('sign_in_completed', { method: METHOD, status: result.status });
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);

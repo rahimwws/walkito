@@ -309,6 +309,10 @@ export const ONBOARDING_RU = {
   'onboarding.reflection.volumeMonthly': '{band} в месяц',
 
   // ── Plan ─────────────────────────────────────────────────────────────────
+  'onboarding.sendPlan.title': 'Прислать план\nна почту?',
+  'onboarding.sendPlan.blurb': 'Необязательно. Несколько коротких писем в первые две недели - отключить можно в любой момент.',
+  'onboarding.sendPlan.placeholder': 'you@example.com',
+  'onboarding.sendPlan.send': 'Прислать',
   'onboarding.plan.title': 'Ваш план',
   'onboarding.plan.blurb': 'Собран из ваших ответов.',
   'onboarding.plan.recommended': 'Рекомендуем',

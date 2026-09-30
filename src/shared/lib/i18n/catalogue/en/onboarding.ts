@@ -352,6 +352,11 @@ export const ONBOARDING_EN = {
   'onboarding.reflection.volumeMonthly': '{band} a month',
 
   // ── Plan ─────────────────────────────────────────────────────────────────
+  /** Optional. Empty is a skip; the button says so. */
+  'onboarding.sendPlan.title': 'Send your plan\nto your email?',
+  'onboarding.sendPlan.blurb': 'Optional. A few short emails in the first two weeks, and you can turn them off any time.',
+  'onboarding.sendPlan.placeholder': 'you@example.com',
+  'onboarding.sendPlan.send': 'Send it',
   'onboarding.plan.title': 'Your plan',
   'onboarding.plan.blurb': 'Built from your answers.',
   'onboarding.plan.recommended': 'Recommended',

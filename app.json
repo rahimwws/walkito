@@ -13,7 +13,8 @@
         "ITSAppUsesNonExemptEncryption": false
       },
       "bundleIdentifier": "com.walkito.app",
-      "appleTeamId": "HWGBXV8W4Z"
+      "appleTeamId": "HWGBXV8W4Z",
+      "associatedDomains": ["applinks:walkito.site"]
     },
     "android": {
       "adaptiveIcon": {

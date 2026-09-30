@@ -1,6 +1,7 @@
 import { identify, setPerson, track, type PurchaseProps } from '@/shared/lib/analytics';
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
+import { currentUserId, supabase } from '@/shared/lib/supabase';
 import Purchases, {
   LOG_LEVEL,
   type CustomerInfo,
@@ -271,8 +272,31 @@ async function linkAnalytics(): Promise<void> {
     const id = await Purchases.getAppUserID();
     identify(id);
     await Purchases.setAttributes({ $posthogUserId: id });
+    void linkBackend(id);
   } catch {
     // Analytics is never worth failing a store start over.
+  }
+}
+
+/**
+ * Tells our backend which RevenueCat customer this device is.
+ *
+ * RevenueCat's webhook names the buyer by the RevenueCat id, and the email
+ * scheduler knows users by the Supabase id; `link_revenuecat` joins the two, so
+ * a purchase stops the offer emails the moment the webhook lands. The Supabase
+ * id is also sent to RevenueCat as an attribute, for looking a customer up by
+ * hand. Neither changes the RevenueCat id itself, which PostHog is keyed on.
+ */
+async function linkBackend(rcId: string): Promise<void> {
+  const client = supabase;
+  if (client == null) return;
+  try {
+    const uid = await currentUserId();
+    if (uid == null) return;
+    await client.rpc('link_revenuecat', { p_app_user_id: rcId });
+    await Purchases.setAttributes({ supabase_user_id: uid });
+  } catch {
+    // The next launch links again.
   }
 }
 

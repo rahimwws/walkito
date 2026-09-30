@@ -1,9 +1,10 @@
 import { useEffect, useRef } from 'react';
 import { AppState } from 'react-native';
 
-import { getIntake } from '@/entities/profile';
+import { scheduledPushDates } from '@/entities/notifications';
+import { getIntake, syncEmailContext } from '@/entities/profile';
 import { useLogsVersion, usePlanVersion } from '@/entities/program';
-import { onPlanPushRequested, pushPlan, restorePlan } from '@/entities/program/sync';
+import { onPlanPushRequested, pushPlan, restorePlan, type SyncOutcome } from '@/entities/program/sync';
 
 /**
  * Ordinary writes are gathered for this long before one push goes up.
@@ -15,14 +16,31 @@ import { onPlanPushRequested, pushPlan, restorePlan } from '@/entities/program/s
  */
 const DEBOUNCE_MS = 1000;
 
+/** When the app last came forward: the launch, then every return to the foreground. */
+let lastOpenAt = Date.now();
+
 function facts() {
   const intake = getIntake();
+  const pushes = scheduledPushDates();
   return {
     painSide: intake?.side ?? null,
     painZones: (intake?.pain ?? []).filter((zone) => zone !== 'none'),
     goalAnswer: intake?.goal ?? null,
     sport: intake?.sport ?? null,
+    lastOpenAt,
+    pushSessionDates: pushes.session,
+    pushTestDates: pushes.test,
   };
+}
+
+/**
+ * After a push that went through, the email contact's language, time zone
+ * and name go up too if any of them changed — the scheduler writes in that
+ * language at that zone's morning. Cheap when nothing changed.
+ */
+function afterPush(outcome: SyncOutcome): SyncOutcome {
+  if (outcome === 'pushed') void syncEmailContext();
+  return outcome;
 }
 
 /**
@@ -55,9 +73,13 @@ export function usePlanSync(onboarded: boolean): void {
     if (!onboarded) return;
     restoring.current = restorePlan().catch(() => false);
     const pushNow = () => {
-      void restoring.current.then(() => pushPlan(facts(), { urgent: true })).catch(() => 'failed');
+      void restoring.current
+        .then(() => pushPlan(facts(), { urgent: true }))
+        .then(afterPush)
+        .catch(() => 'failed');
     };
     const sub = AppState.addEventListener('change', (state) => {
+      if (state === 'active') lastOpenAt = Date.now();
       if (state === 'active' || state === 'background' || state === 'inactive') pushNow();
     });
     const off = onPlanPushRequested(pushNow);
@@ -71,7 +93,10 @@ export function usePlanSync(onboarded: boolean): void {
     if (!onboarded) return;
     if (timer.current != null) clearTimeout(timer.current);
     timer.current = setTimeout(() => {
-      void restoring.current.then(() => pushPlan(facts())).catch(() => 'failed');
+      void restoring.current
+        .then(() => pushPlan(facts()))
+        .then(afterPush)
+        .catch(() => 'failed');
     }, DEBOUNCE_MS);
     return () => {
       if (timer.current != null) clearTimeout(timer.current);

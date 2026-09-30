@@ -250,7 +250,7 @@ export default function Privacy() {
           Delete account does not remove purchase records at RevenueCat,
           analytics events at PostHog, or the events, timings and crash reports
           Expo holds under your installation ID. To remove those, write to{' '}
-          <a href="mailto:hello@walkito.app">hello@walkito.app</a> and we will
+          <a href="mailto:hello@walkito.site">hello@walkito.site</a> and we will
           delete them. The analytics identifier on the phone is not reset
           either, so events sent later from the same install are tied to it
           until you delete the app. Workouts and mindful minutes Walkito wrote
@@ -265,7 +265,7 @@ export default function Privacy() {
 
         <h2>Contact</h2>
         <p>
-          <a href="mailto:hello@walkito.app">hello@walkito.app</a>
+          <a href="mailto:hello@walkito.site">hello@walkito.site</a>
         </p>
       </main>
 

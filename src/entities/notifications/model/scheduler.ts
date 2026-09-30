@@ -99,6 +99,28 @@ function laidItems(): Laid[] {
   }
 }
 
+/** Kinds that ask for a session: the email scheduler's "session" intent. */
+const SESSION_KINDS: ReadonlySet<NotificationKind> = new Set(['session', 'plan', 'flare', 'block']);
+
+/**
+ * The days the window has a session nudge or a retest nudge laid for.
+ *
+ * Synced with the plan so the email scheduler can stay quiet on a day a push
+ * already says the same thing: an email asking for today's first session is
+ * skipped when a session push is laid for today, and the test-day email when a
+ * retest push is. Read from what was actually laid, not what was planned — a
+ * nudge the system refused never rings, and must not silence an email.
+ */
+export function scheduledPushDates(): { session: string[]; test: string[] } {
+  const session = new Set<string>();
+  const test = new Set<string>();
+  for (const item of laidItems()) {
+    if (item.kind === 'retest') test.add(item.dateKey);
+    else if (SESSION_KINDS.has(item.kind)) session.add(item.dateKey);
+  }
+  return { session: [...session].sort(), test: [...test].sort() };
+}
+
 /**
  * Counts everything whose moment has passed as delivered.
  *

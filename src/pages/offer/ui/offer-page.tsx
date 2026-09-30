@@ -26,6 +26,7 @@ import { useBoost } from '@/entities/offer';
 import { useReferral } from '@/entities/referral';
 import { LEGAL, PRIMARY, accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
+import { recordAppEvent } from '@/shared/lib/supabase';
 import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { Linking } from 'react-native';
@@ -237,6 +238,42 @@ export function OfferPage() {
    * make the paywall look better than it is. A purchase or restore marks the
    * exit as not a dismissal.
    */
+  /**
+   * The same view, for the offer emails.
+   *
+   * They go four and fourteen days after the first view, and quote the store's
+   * own prices for the discounted programme and the standard one — read here,
+   * in this storefront's currency, because the server has no way to know what
+   * the App Store would charge this person. Once per mount, whichever offering
+   * this view is selling.
+   */
+  useEffect(() => {
+    if (!purchases.configured) return;
+    let live = true;
+    void Promise.all([purchases.offering(OFFERINGS.offer), purchases.offering(OFFERINGS.standard)]).then(([cheap, full]) => {
+      if (!live) return;
+      const low = cheap?.program ?? null;
+      const high = full?.program ?? null;
+      const percent =
+        low != null && high != null && high.product.price > 0 && low.product.price < high.product.price
+          ? Math.round((1 - low.product.price / high.product.price) * 100)
+          : null;
+      void recordAppEvent('paywall_viewed', {
+        offering: offeringId,
+        offer_price: low != null && percent != null ? low.product.display : null,
+        standard_price: high?.product.display ?? null,
+        percent,
+        // The programme is twelve weeks, the length every line of this sheet sells.
+        weeks: 12,
+      });
+    });
+    return () => {
+      live = false;
+    };
+    // Once per view: a change of offering mid-view is the same view.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const converted = useRef(false);
   useEffect(() => {
     track('paywall_viewed', { offering: offeringId, boosted });

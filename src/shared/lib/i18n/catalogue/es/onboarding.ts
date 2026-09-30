@@ -310,6 +310,10 @@ export const ONBOARDING_ES = {
   'onboarding.reflection.volumeMonthly': '{band} al mes',
 
   // ── Plan ─────────────────────────────────────────────────────────────────
+  'onboarding.sendPlan.title': '¿Te enviamos el plan\npor correo?',
+  'onboarding.sendPlan.blurb': 'Opcional. Unos pocos correos cortos en las dos primeras semanas, y puedes desactivarlos cuando quieras.',
+  'onboarding.sendPlan.placeholder': 'tu@ejemplo.com',
+  'onboarding.sendPlan.send': 'Enviar',
   'onboarding.plan.title': 'Tu plan',
   'onboarding.plan.blurb': 'Construido con tus respuestas.',
   'onboarding.plan.recommended': 'Recomendado',

@@ -238,9 +238,10 @@ const styles = StyleSheet.create({
   },
   greetingBox: {
     // Shrink towards the margin the line is aligned to, not towards its own
-    // middle. Also hug the content so the origin is the text's left edge
-    // rather than the container's.
-    alignSelf: 'flex-start',
+    // middle. Full width rather than hugging the text: the box's left edge is
+    // the margin either way, and a box sized to the invisible copy left the
+    // typed line on Android a hair wider than its box, so the name wrapped.
+    alignSelf: 'stretch',
     transformOrigin: 'left center',
   },
   greeting: {

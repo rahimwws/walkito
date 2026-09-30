@@ -44,6 +44,15 @@ export type ProfileFacts = {
   /** Onboarding's goal answer and sport — for slicing the backend's insights. */
   goalAnswer: string | null;
   sport: string | null;
+  /**
+   * For the email scheduler, written after every successful push (see
+   * `markSynced`): when the app was last brought forward, and the days the
+   * notification window has a session or a retest nudge laid for. Handed in,
+   * because the window belongs to the notifications entity.
+   */
+  lastOpenAt?: number | null;
+  pushSessionDates?: readonly string[];
+  pushTestDates?: readonly string[];
 };
 
 const LAST_PUSH_KEY = 'plan/sync-last-push';
@@ -252,7 +261,35 @@ async function pushOnce(facts: ProfileFacts, urgent: boolean): Promise<SyncOutco
     return 'failed';
   }
   kv.set(LAST_PUSH_KEY, String(now));
+  await markSynced(db, uid, facts, now);
   return 'pushed';
+}
+
+/**
+ * Stamps the profile once everything else went up.
+ *
+ * `last_synced_at` is how fresh the server's copy is. The email scheduler skips
+ * any email that assumes something was not done when this is more than a day
+ * old: the user may have done it offline, and "your first session is 3
+ * minutes" to someone who did it on the train is the email this prevents.
+ * Written only after every table succeeded, never alongside them — a stamp on
+ * a half-finished push would vouch for rows that are not there.
+ *
+ * Outside `sendChanged` on purpose: the stamp changes on every push, and would
+ * otherwise resend the whole profile row each time. A failure is reported and
+ * forgotten; the next push stamps again.
+ */
+async function markSynced(db: NonNullable<typeof supabase>, uid: string, facts: ProfileFacts, now: number): Promise<void> {
+  const { error } = await db
+    .from('profiles')
+    .update({
+      last_synced_at: new Date(now).toISOString(),
+      last_app_open_at: new Date(facts.lastOpenAt ?? now).toISOString(),
+      push_session_dates: [...(facts.pushSessionDates ?? [])],
+      push_test_dates: [...(facts.pushTestDates ?? [])],
+    })
+    .eq('user_id', uid);
+  if (error != null) report(failureOf('profiles_stamp', error), now);
 }
 
 async function pushRows(

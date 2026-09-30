@@ -35,7 +35,7 @@ export default function Support() {
         <p className="updated">Something off? Tell us. A person replies.</p>
 
         <p>
-          Write to <a href="mailto:hello@walkito.app">hello@walkito.app</a>. Tell
+          Write to <a href="mailto:hello@walkito.site">hello@walkito.site</a>. Tell
           us what you were doing and what the app did — that is usually enough
           to work out what happened without a back-and-forth.
         </p>
@@ -101,7 +101,7 @@ export default function Support() {
           phone: the copy on the server stays, and comes back when you sign in
           again. To have it removed without the app, or to remove purchase
           records at RevenueCat and analytics events at PostHog as well, write
-          to <a href="mailto:hello@walkito.app">hello@walkito.app</a>.
+          to <a href="mailto:hello@walkito.site">hello@walkito.site</a>.
         </p>
       </main>
 

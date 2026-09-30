@@ -28,8 +28,12 @@ export const LEGAL = {
  * Here rather than in the quick-action provider that first needed it: the
  * profile screen needs the same address, and two copies of a support address is
  * how one of them ends up pointing at a mailbox nobody reads.
+ *
+ * On walkito.site, not walkito.app: walkito.app has no MX record, so every
+ * message to hello@walkito.app bounced (it did on 24 September). The mailbox
+ * that exists is the Hostinger one, and the emails the app sends reply-to it.
  */
-export const SUPPORT_EMAIL = 'hello@walkito.app';
+export const SUPPORT_EMAIL = 'hello@walkito.site';
 
 /**
  * The numeric id App Store Connect assigned to Walkito — the one in

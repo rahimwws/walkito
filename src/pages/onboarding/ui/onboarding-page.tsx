@@ -74,6 +74,7 @@ import { HealthStep } from './health-step';
 import { EmailSignInSheet } from './email-sign-in-sheet';
 import { IntroStep } from './intro-step';
 import { MeasureStep } from './measure-step';
+import { EmailStep, looksLikeEmail } from './email-step';
 import { NameStep } from './name-step';
 import { NotifyStep } from './notify-step';
 import { ReminderStep } from './reminder-step';
@@ -252,6 +253,9 @@ export function OnboardingPage() {
 
   const canAdvance = (() => {
     switch (step.kind) {
+      // Optional: empty is a skip, anything typed has to look like an address.
+      case 'email':
+        return typeof answer !== 'string' || answer.trim().length === 0 || looksLikeEmail(answer);
       case 'choice':
       case 'sex':
       case 'watch':
@@ -471,7 +475,7 @@ export function OnboardingPage() {
           // to. There is no way past this screen without one.
           if (result.status === 'signed-in') {
             if (result.fullName != null) setProfileName(firstName(result.fullName));
-            if (result.email != null) setProfileEmail(result.email);
+            if (result.email != null) setProfileEmail(result.email, SIGN_IN_METHOD);
           }
           track('sign_in_completed', { method: SIGN_IN_METHOD, status: result.status });
           Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
@@ -510,6 +514,11 @@ export function OnboardingPage() {
       void finishWithReferral();
       return;
     }
+    // Stored the moment they choose to send it; the welcome email goes from
+    // the server within the hour, or the next morning at eight.
+    if (step.kind === 'email' && typeof answer === 'string' && looksLikeEmail(answer)) {
+      setProfileEmail(answer.trim(), 'onboarding');
+    }
     if (isLast) {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
       Keyboard.dismiss();
@@ -520,7 +529,7 @@ export function OnboardingPage() {
     // `finishWithReferral` closes over the typed code, so it has to be a
     // dependency: without it this callback keeps the version made on the first
     // render, which closes over an empty field and would skip every code.
-  }, [canAdvance, isLast, go, index, router, step.kind, plan.weeks, name, review, finishWithReferral]);
+  }, [canAdvance, isLast, go, index, router, step.kind, plan.weeks, name, review, finishWithReferral, answer]);
 
   /**
  * What to say about a code that did not work.
@@ -651,6 +660,8 @@ const CONFIRM_MS = 900;
       // The one screen whose button changes meaning with the field: nothing
       // typed is a skip, and saying so is what makes it obvious the question is
       // optional without a second control to explain it.
+      case 'email':
+        return typeof answer === 'string' && looksLikeEmail(answer) ? t('onboarding.sendPlan.send') : t('onboarding.cta.skip');
       case 'referral':
         if (redeeming) return t('onboarding.cta.checking');
         return referralCode.length === REFERRAL_CODE_LENGTH
@@ -790,6 +801,15 @@ const CONFIRM_MS = 900;
                   // and the flow can be left from any step.
                   setProfileName(next);
                 }}
+                onSubmit={onNext}
+              />
+            )}
+
+            {step.kind === 'email' && (
+              <EmailStep
+                value={typeof answer === 'string' ? answer : ''}
+                placeholder={step.placeholder(t)}
+                onChange={(next) => setAnswer(next)}
                 onSubmit={onNext}
               />
             )}
@@ -1058,7 +1078,7 @@ const CONFIRM_MS = 900;
         onClose={() => setEmailSignIn(false)}
         onSignedIn={(address) => {
           setEmailSignIn(false);
-          setProfileEmail(address);
+          setProfileEmail(address, 'onboarding');
           track('sign_in_completed', { method: 'email', status: 'signed-in' });
           // Clears any earlier Apple failure: they are in, and leaving the
           // message up would have the screen reporting a problem they have

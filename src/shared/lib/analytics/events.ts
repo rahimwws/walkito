@@ -81,6 +81,18 @@ export type AnalyticsEvents = {
   checkin_logged: { day: number; entries_today: number };
   morning_stretch_done: { day: number };
 
+  // ── Email ────────────────────────────────────────────────────────────────
+  /** The app was opened from an email button. `email_key` names the email
+   * (`welcome`, `day10_keep`…), `path` the screen it asked for. The metric that
+   * matters is what happens after this, not opens — Apple Mail opens everything. */
+  email_link_opened: { email_key: string; path: string };
+  /** An address was given to the app, and by which door. Never the address. */
+  email_captured: { source: 'apple' | 'google' | 'onboarding' };
+  /** Settings → Email changed. The toggles' new state, nothing else. */
+  email_prefs_changed: { tips: boolean; weekly: boolean };
+  /** Settings → Email → Unsubscribe from all. */
+  email_unsubscribed_all: Record<string, never>;
+
   // ── App updates ──────────────────────────────────────────────────────────
   /** The update sheet was shown. `ota` is an EAS Update, `store` a new build. */
   app_update_offered: { kind: AppUpdateKind };

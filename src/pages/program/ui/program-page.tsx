@@ -52,7 +52,7 @@ import { useHealthSignals } from '@/entities/health';
 import { protocolById, recommendProtocol, requestProtocol } from '@/entities/protocols';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { useLanguage, useT } from '@/shared/lib/i18n';
-import { PROGRAM_MS, useProgram } from '@/shared/lib/program';
+import { clearProgramRequest, PROGRAM_MS, useProgram, useProgramRequest } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
 import { StreakCapsule } from '@/shared/ui/header-actions';
 
@@ -233,6 +233,37 @@ export function ProgramPage() {
     clearRetestRequest();
     if (adjusted.type === 'test' && !doneToday) startToday();
   }, [requested, adjusted.type, doneToday, startToday]);
+
+  /**
+   * An email button: open the plan and, for "today", start today's session.
+   *
+   * A shorter session is two renders, not one: the minutes are set first, and
+   * `pendingStart` starts the session on the render that has already rebuilt
+   * today's plan at that length — starting in the same pass would start the
+   * plan built for the old minutes. A finished day starts nothing; the plan
+   * opens on its done card. "test" starts today's test only when today is the
+   * test day, the same rule as a retest request.
+   */
+  const linkRequest = useProgramRequest();
+  const [pendingStart, setPendingStart] = useState(false);
+  useEffect(() => {
+    if (linkRequest == null || program == null) return;
+    clearProgramRequest();
+    program.open();
+    if (linkRequest.kind === 'plan') return;
+    if (linkRequest.kind === 'test') {
+      if (adjusted.type === 'test' && !doneToday) setPendingStart(true);
+      return;
+    }
+    if (doneToday) return;
+    if (linkRequest.minutes != null && adjusted.type !== 'test') setMinutes(linkRequest.minutes);
+    setPendingStart(true);
+  }, [linkRequest, program, adjusted.type, doneToday]);
+  useEffect(() => {
+    if (!pendingStart) return;
+    setPendingStart(false);
+    startToday();
+  }, [pendingStart, startToday]);
 
   const onScroll = useAnimatedScrollHandler((event) => {
     if (program != null) program.scrollTop.value = event.contentOffset.y;

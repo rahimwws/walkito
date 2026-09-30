@@ -117,7 +117,7 @@ export function storeHref(campaign: string): string | null {
 /** The numeric id for the iOS Smart App Banner, once there is a listing. */
 export const APPLE_APP_ID: string | null = null;
 
-export const SUPPORT_EMAIL = 'hello@walkito.app';
+export const SUPPORT_EMAIL = 'hello@walkito.site';
 
 /**
  * IndexNow.

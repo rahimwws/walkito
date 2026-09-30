@@ -1,14 +1,17 @@
 import ArrowUpRight01Icon from '@hugeicons/core-free-icons/ArrowUpRight01Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
+import * as Application from 'expo-application';
 import * as Haptics from 'expo-haptics';
-import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { LanguageOptions } from '@/features/language-switch';
-import { LEGAL, fonts, meterColors, palette } from '@/shared/config';
+import { LEGAL, SUPPORT_EMAIL, fonts, meterColors, palette } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
+import { currentUserId } from '@/shared/lib/supabase';
 import { useColorScheme } from '@/shared/lib/theme';
 
+import { EmailSettings } from './email-settings';
 import { PlanSettings } from './plan-settings';
 
 /**
@@ -50,6 +53,21 @@ export function SettingsPage() {
     Linking.openURL(url).catch(() => {});
   };
 
+  /**
+   * A new email to the founders, with the two facts every support reply needs
+   * written into it already: which build, and which user. The id is the
+   * anonymous Supabase one — enough to find the plan, nothing that names them.
+   */
+  const write = () => {
+    Haptics.selectionAsync();
+    void currentUserId().then((id) => {
+      const version = `${Application.nativeApplicationVersion ?? '?'} (${Application.nativeBuildVersion ?? '?'})`;
+      const body = t('settings.writeBody', { version, platform: Platform.OS, id: id ?? '-' });
+      const url = `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(t('settings.writeSubject'))}&body=${encodeURIComponent(body)}`;
+      Linking.openURL(url).catch(() => {});
+    });
+  };
+
   return (
     // Scrolls now: the plan section made the sheet taller than a small phone.
     <ScrollView contentContainerStyle={[styles.sheet, { paddingBottom: Math.max(insets.bottom, 20) + 8 }]}>
@@ -60,8 +78,21 @@ export function SettingsPage() {
 
       <PlanSettings />
 
+      <EmailSettings />
+
       <View style={[styles.list, { backgroundColor: meter.track }]}>
-        {LINKS.map((link, index) => {
+        <Pressable
+          accessibilityRole="link"
+          accessibilityLabel={t('settings.write')}
+          onPress={write}
+          style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}>
+          <View style={styles.rowText}>
+            <Text style={[styles.rowLabel, { color: colors.foreground }]}>{t('settings.write')}</Text>
+            <Text style={[styles.rowHint, { color: meter.caption }]}>{t('settings.writeHint')}</Text>
+          </View>
+          <HugeiconsIcon icon={ArrowUpRight01Icon} size={18} color={meter.unit} strokeWidth={2} />
+        </Pressable>
+        {LINKS.map((link) => {
           const ready = link.url.length > 0;
           return (
             <Pressable
@@ -73,7 +104,7 @@ export function SettingsPage() {
               onPress={() => open(link.url)}
               style={({ pressed }) => [
                 styles.row,
-                index > 0 && {
+                {
                   borderTopWidth: StyleSheet.hairlineWidth,
                   borderTopColor: colors.background,
                 },

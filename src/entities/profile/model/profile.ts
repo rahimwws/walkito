@@ -1,10 +1,16 @@
 import { useSyncExternalStore } from 'react';
 
+import { track } from '@/shared/lib/analytics';
+import { getLanguage } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
-import { currentUserId, supabase } from '@/shared/lib/supabase';
+
+import { deviceTimeZone, saveEmailContact, type EmailSource } from './email';
 
 const NAME_KEY = 'profile/name';
 const EMAIL_KEY = 'profile/email';
+const EMAIL_SOURCE_KEY = 'profile/email-source';
+/** What the server last took, so an unchanged context is not sent on every sync. */
+const CONTEXT_SENT_KEY = 'profile/email-context-sent';
 
 /**
  * What the app knows about the person using it.
@@ -35,6 +41,7 @@ let name = kv.getString(NAME_KEY) ?? '';
  * something other than a device id.
  */
 let email = kv.getString(EMAIL_KEY) ?? '';
+let emailSource = (kv.getString(EMAIL_SOURCE_KEY) ?? null) as EmailSource | null;
 
 const subscribers = new Set<() => void>();
 
@@ -80,46 +87,48 @@ export function useProfileName(): string {
  * authorisation after the first, and letting one through would erase an address
  * already captured.
  */
-export function setProfileEmail(next: string): void {
+export function setProfileEmail(next: string, source: EmailSource = 'apple'): void {
   const trimmed = next.trim();
   if (trimmed.length === 0 || trimmed === email) return;
   email = trimmed;
+  emailSource = source;
   kv.set(EMAIL_KEY, trimmed);
+  kv.set(EMAIL_SOURCE_KEY, source);
   for (const listener of subscribers) listener();
+  track('email_captured', { source });
   // Server copy, alongside the local one. Never awaited: the address is stored
   // on the device either way, and a screen should not wait on a round trip to
   // finish a sign-in that has already succeeded.
-  void syncEmail(trimmed);
+  void syncEmailContext();
 }
 
 /**
- * Puts the address beside the anonymous id the server already has.
+ * Puts the address beside the anonymous id the server already has, with the
+ * language, time zone and first name the emails are written with.
  *
  * Not an account — there is no password and no session to sign into. It is one
- * row keyed to the identity this device already owns, so support has somewhere
- * to answer when somebody writes in. Built exactly as the push token is: a
- * `security definer` function, idempotent, blank input ignored.
+ * row keyed to the identity this device already owns. Built as the push token
+ * is: a `security definer` function, idempotent, blank input ignored.
+ *
+ * Called on every successful plan sync, and cheap when nothing changed: what
+ * the server last took is remembered, and an identical context is not sent
+ * again. A language switched in Settings or a flight across time zones goes up
+ * with the next sync.
  *
  * Silent on failure, like the push token. The local copy is the one the app
  * reads, and an offline launch should not put an error in front of somebody
  * who has just signed in successfully.
  */
-export async function syncStoredEmail(): Promise<void> {
-  // Nothing to send, and nothing to retry.
-  if (email === '') return;
-  await syncEmail(email);
+export async function syncEmailContext(): Promise<void> {
+  const context = JSON.stringify([email, emailSource, getLanguage(), deviceTimeZone(), firstName(name)]);
+  if (context === kv.getString(CONTEXT_SENT_KEY)) return;
+  const ok = await saveEmailContact({ email, source: emailSource, firstName: firstName(name) });
+  if (ok) kv.set(CONTEXT_SENT_KEY, context);
 }
 
-async function syncEmail(address: string): Promise<void> {
-  const client = supabase;
-  if (client == null) return;
-  try {
-    if ((await currentUserId()) == null) return;
-    const { error } = await client.rpc('save_contact_email', { p_email: address });
-    if (error != null) console.warn('[profile] could not store the email', error.message);
-  } catch (error) {
-    console.warn('[profile] could not store the email', error);
-  }
+/** The older name for it, kept for the callers that already use it. */
+export async function syncStoredEmail(): Promise<void> {
+  await syncEmailContext();
 }
 
 export function profileEmail(): string {
@@ -135,7 +144,10 @@ export function resetProfile(): void {
   if (name === '' && email === '') return;
   name = '';
   email = '';
+  emailSource = null;
   kv.remove(NAME_KEY);
   kv.remove(EMAIL_KEY);
+  kv.remove(EMAIL_SOURCE_KEY);
+  kv.remove(CONTEXT_SENT_KEY);
   for (const listener of subscribers) listener();
 }

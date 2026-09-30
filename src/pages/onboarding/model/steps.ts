@@ -27,6 +27,7 @@ import { Platform, type ImageSourcePropType } from 'react-native';
 
 import { healthAvailable } from '@/entities/health';
 import { MAX_ZONES } from '@/entities/leg-zone';
+import { profileEmail } from '@/entities/profile';
 
 import type { AccentName } from '@/shared/config';
 import type { Translate } from '@/shared/lib/i18n';
@@ -131,6 +132,7 @@ export type OnboardingStep = StepBase &
   (
     | { kind: 'intro'; cta: Phrase; footnote: Phrase; greeting: Phrase; headline: Phrase }
     | { kind: 'name'; placeholder: Phrase }
+    | { kind: 'email'; placeholder: Phrase }
     | {
         kind: 'choice';
         options: readonly OnboardingOption[];
@@ -577,6 +579,22 @@ export const STEPS: readonly OnboardingStep[] = [
     act: 3,
     title: (t) => t('onboarding.plan.title'),
     blurb: (t) => t('onboarding.plan.blurb'),
+  },
+  {
+    /**
+     * "Send your plan to your email?" — optional, straight after the plan.
+     *
+     * Asked only of someone the app has no address for: Sign in with Apple
+     * hands one over on the first authorisation, relay or real, and asking
+     * again would be asking for what we already have. Empty is a skip.
+     */
+    kind: 'email',
+    key: 'email',
+    act: 3,
+    title: (t) => t('onboarding.sendPlan.title'),
+    blurb: (t) => t('onboarding.sendPlan.blurb'),
+    placeholder: (t) => t('onboarding.sendPlan.placeholder'),
+    skipWhen: () => profileEmail().length > 0,
   },
   {
     kind: 'contract',

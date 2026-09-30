@@ -23,6 +23,7 @@ export {
   onAppOpen,
   planWindow,
   refresh,
+  scheduledPushDates,
   type PlannedItem,
 } from './model/scheduler';
 

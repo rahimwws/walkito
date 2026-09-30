@@ -26,7 +26,7 @@ should be seen by a clinician.
 - Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal's chain moves up one level at a time.
 - Tests: 3 physical measurements (calf raises to failure, arch hold, single-leg balance) in about 4 minutes, every 14 days until the first goal is reached, then every 28 days.
 - iOS only, in English, Russian and Spanish. Coming soon to the App Store.
-- Contact: hello@walkito.app
+- Contact: hello@walkito.site
 
 ## The evidence
 
@@ -732,7 +732,7 @@ When that review has happened, the reviewer’s name, credentials and what they 
 
 ### Corrections and contact
 
-If you find a mistake — a figure that does not match its source, a dose that reads wrong, a broken link — email hello@walkito.app. Corrections are made on the page itself.
+If you find a mistake — a figure that does not match its source, a dose that reads wrong, a broken link — email hello@walkito.site. Corrections are made on the page itself.
 
 Every page shows the date its content last changed, and that date moves only with a real edit.
 

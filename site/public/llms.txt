@@ -61,7 +61,7 @@ Spanish as well. The plan, evidence, FAQ and legal pages are English only.
 - Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal's chain moves up one level at a time.
 - Tests: 3 physical measurements (calf raises to failure, arch hold, single-leg balance) in about 4 minutes, every 14 days until the first goal is reached, then every 28 days.
 - iOS only, in English, Russian and Spanish. Coming soon to the App Store.
-- Contact: hello@walkito.app
+- Contact: hello@walkito.site
 
 ## Key findings the plan follows
 - High-load strength training scored 29 points lower on the Foot Function Index than plantar-specific stretching at 3 months (randomised trial, n=48, 95% CI 6-52, p=0.016); at 12 months the two groups had converged, so the effect is faster improvement rather than a larger one.

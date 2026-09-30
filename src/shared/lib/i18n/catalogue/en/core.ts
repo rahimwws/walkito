@@ -46,6 +46,22 @@ export const CORE_EN = {
   'settings.privacy': 'Privacy Policy',
   'settings.privacyHint': 'What we store, and where',
   'settings.unpublished': 'Not published yet',
+  'settings.email.section': 'Email',
+  /** The address the emails go to, often an Apple relay address. */
+  'settings.email.address': 'Sent to {email}',
+  'settings.email.none': 'No email address yet. Signing in adds one.',
+  'settings.email.unavailable': 'Email settings could not load. Try again with a connection.',
+  /** Every lifecycle email and the offers. */
+  'settings.email.tips': 'Tips & reminders',
+  /** The Sunday email. Off until turned on. */
+  'settings.email.weekly': 'Weekly summary',
+  'settings.email.unsubscribeAll': 'Unsubscribe from all',
+  'settings.email.unsubscribed': 'You will not get any emails. Turn a switch back on to start again.',
+  'settings.write': 'Write to Rahim',
+  'settings.writeHint': 'A person reads every message',
+  'settings.writeSubject': 'Walkito',
+  /** Written under the user's message, so a reply can find the build and the plan. */
+  'settings.writeBody': '\n\n\n-\nWalkito {version} · {platform}\nID {id}',
   // ── Your plan: what onboarding asked, changeable ─────────────────────────
   'settings.planSection': 'Your plan',
   'settings.outcome': 'Your goal',

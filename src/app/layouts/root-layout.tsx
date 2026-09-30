@@ -268,6 +268,12 @@ function RootLayoutInner() {
                   <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
                 </Stack.Protected>
 
+                {/* Where an email button lands (`/open/today`, `/open/plan` …).
+                    Outside every guard, so a link always resolves; it renders
+                    nothing, records the click and replaces itself with the
+                    screen the email meant — see `pages/open`. */}
+                <Stack.Screen name="open/[...path]" options={{ headerShown: false, animation: 'none' }} />
+
                 {/* The account, as a pushed screen rather than a sheet.
                     Everything else reached from the header is an aside you
                     dismiss back out of; this is somewhere you go, and it holds
