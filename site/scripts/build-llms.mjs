@@ -7,8 +7,8 @@
  * once and immediately went stale: eight clinical answers were added to
  * `lib/faq.ts` and the published file still carried the previous eighteen. It
  * went stale a second time when the plan stopped having a length — both files
- * kept describing "a 12-week program" to every AI engine that read them, weeks
- * after the app had dropped it. A file that claims to be the full text and is
+ * kept describing a fixed-length program to every AI engine that read them,
+ * weeks after the app had dropped it. A file that claims to be the full text and is
  * not is worse than no file: it is the version an AI engine reads.
  *
  * It imports the TypeScript sources directly. Node runs `.ts` natively from
@@ -360,11 +360,9 @@ const PLAN_LENGTH = new RegExp(
     String.raw`\b84 d[ií]as`,
     'seis bloques',
     // The old program as it was also described (ten weeks), and the 90-day
-    // store pass, which is a billing period and not the plan's length. The
-    // pass may be named as access ("3 months (90 days) of access"), which no
-    // reader takes for the plan's length.
+    // store pass, which is no longer sold and read as the plan's length anyway.
     String.raw`\b(?:10|ten)[-\s]weeks?\b`,
-    String.raw`\b(?:90|ninety)[-\s]days?\b(?!\)? of access)`,
+    String.raw`\b(?:90|ninety)[-\s]days?\b`,
     String.raw`\b10[-\s]недел`,
     'десят[а-яё]* недел',
     String.raw`\b90[-\s]дн`,
@@ -377,12 +375,40 @@ const PLAN_LENGTH = new RegExp(
   'i',
 );
 
+/**
+ * Walkito is sold as two auto-renewing subscriptions, yearly and weekly. The
+ * pass paid for once and the monthly subscription are no longer sold, so a
+ * line that still offers either stops the build too. `\s`, not a space, because
+ * the Russian and Spanish text still carries its non-breaking spaces here.
+ */
+const RETIRED_PRODUCT = new RegExp(
+  [
+    String.raw`\bone[-\s]time\s(?:purchase|payment)`,
+    String.raw`\bpaid\sonce\b`,
+    String.raw`\bmonthly\ssubscription`,
+    String.raw`разов[а-яё]*\s(?:оплат|покупк|плат)`,
+    String.raw`ежемесячн[а-яё]*\sподписк`,
+    String.raw`pago\súnico`,
+    String.raw`compras?\súnicas?`,
+    String.raw`suscripción\smensual`,
+  ].join('|'),
+  'i',
+);
+
 for (const [name, text] of [['llms.txt', llms], ['llms-full.txt', full]]) {
-  const hits = text.split('\n').filter((line) => PLAN_LENGTH.test(line));
+  const lines = text.split('\n');
+  const hits = lines.filter((line) => PLAN_LENGTH.test(line));
   if (hits.length) {
     throw new Error(
       `llms: ${name} would describe the plan by length, which it no longer has. ` +
         `Fix the source these lines come from:\n${hits.map((h) => `  ${h.trim()}`).join('\n')}`,
+    );
+  }
+  const retired = lines.filter((line) => RETIRED_PRODUCT.test(line));
+  if (retired.length) {
+    throw new Error(
+      `llms: ${name} would offer a product that is no longer sold. ` +
+        `Fix the source these lines come from:\n${retired.map((h) => `  ${h.trim()}`).join('\n')}`,
     );
   }
 }

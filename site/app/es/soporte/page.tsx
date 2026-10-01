@@ -85,15 +85,16 @@ export default function SoporteEs() {
 
         <h2>Compras</h2>
         <p>
-          Hay dos formas de pagar, las dos a través del App Store: una
-          suscripción mensual que se renueva automáticamente, y el programa de
-          12 semanas, con un pago único, que te da 3 meses (90 días) de acceso
-          y no se renueva.
+          Walkito se paga con una suscripción a través del App Store, anual o
+          semanal. Las dos se renuevan automáticamente, y el App Store te
+          muestra el precio en tu moneda antes de comprar.
         </p>
         <ul>
           <li>
-            <b>Administra o cancela</b> una suscripción en Ajustes → [tu nombre] →
-            Suscripciones. El programa de 12 semanas no tiene nada que cancelar.
+            <b>Administra o cancela</b> tu suscripción en Ajustes → [tu nombre] →
+            Suscripciones. Si desactivas la renovación al menos 24 horas antes de
+            que termine el periodo, no se te vuelve a cobrar. Mantienes el acceso
+            hasta el final del periodo que ya pagaste.
           </li>
           <li>
             <b>Los reembolsos</b> los gestiona Apple. Usa su página{' '}

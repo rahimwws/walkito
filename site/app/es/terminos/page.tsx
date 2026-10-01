@@ -18,7 +18,7 @@ import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Términos de uso',
   description:
-    'Términos de uso de Walkito: qué es y qué no es, tu cuenta, suscripciones y compras únicas, invitaciones, salud y seguridad.',
+    'Términos de uso de Walkito: qué es y qué no es, tu cuenta, suscripciones, invitaciones, salud y seguridad.',
   alternates: alternatesFor('terms', 'es'),
   openGraph: {
     title: `Términos de uso | ${SITE_NAME}`,
@@ -46,7 +46,7 @@ export default function TerminosEs() {
       <Prose className="shell prose">
         <h1>Términos de uso</h1>
 
-        <p className="updated">Última actualización: 28 de septiembre de 2026</p>
+        <p className="updated">Última actualización: 1 de octubre de 2026</p>
         <p className="updated">
           Esta es una traducción. Si difiere de{' '}
           <a href="/terms/">la versión en inglés</a>, se aplica la versión en
@@ -129,15 +129,15 @@ export default function TerminosEs() {
           Walkito se paga a través del App Store. Apple cobra el pago, guarda el
           recibo y te muestra las opciones, el precio y la duración antes de
           comprar. Ese es el precio que se aplica, no cualquier cifra que
-          aparezca en otro sitio. Hoy hay dos formas de pagar:
+          aparezca en otro sitio. Hoy hay dos suscripciones, y las dos se
+          renuevan automáticamente:
         </p>
         <ul>
           <li>
-            <b>Una suscripción mensual</b> que se renueva automáticamente.
+            <b>Una suscripción anual</b>, que se cobra una vez al año.
           </li>
           <li>
-            <b>El programa de 12 semanas</b>, con un pago único. Te da 3 meses
-            (90 días) de acceso y no se renueva.
+            <b>Una suscripción semanal</b>, que se cobra una vez a la semana.
           </li>
         </ul>
 
@@ -164,13 +164,6 @@ export default function TerminosEs() {
           </li>
         </ul>
 
-        <h3>Compras únicas</h3>
-        <p>
-          Una compra única, como el programa de 12 semanas, se cobra una sola
-          vez y nunca se renueva. No hay nada que cancelar. Cuando termina,
-          puedes volver a comprarla o suscribirte.
-        </p>
-
         <h3>Reembolsos</h3>
         <p>
           Los reembolsos los gestiona únicamente Apple. Usa{' '}
@@ -181,7 +174,7 @@ export default function TerminosEs() {
         <h2>Invitaciones</h2>
         <p>
           Puedes compartir tu código de invitación. Un amigo que lo use obtiene
-          un descuento en el programa de 12 semanas, y tú recibes semanas
+          un descuento en la suscripción anual, y tú recibes semanas
           gratis, hasta el límite que se muestra en la app.
         </p>
         <p>

@@ -92,14 +92,16 @@ export default function Support() {
 
         <h2>Purchases</h2>
         <p>
-          There are two ways to pay, both through the App Store: a monthly
-          subscription that renews automatically, and the 12-week program, paid
-          once, which gives 3 months (90 days) of access and does not renew.
+          Walkito is paid for with a subscription through the App Store, yearly
+          or weekly. Both renew automatically, and the App Store shows the price
+          in your currency before you buy.
         </p>
         <ul>
           <li>
-            <b>Manage or cancel</b> a subscription in Settings → your name →
-            Subscriptions. The 12-week program has nothing to cancel.
+            <b>Manage or cancel</b> your subscription in Settings → your name →
+            Subscriptions. Turn off renewal at least 24 hours before the period
+            ends and you are not charged again. You keep access until the end of
+            the period you paid for.
           </li>
           <li>
             <b>Refunds</b> are handled by Apple. Use Apple’s{' '}

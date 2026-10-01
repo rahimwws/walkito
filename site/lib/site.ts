@@ -21,9 +21,9 @@ export const SITE_NAME = 'Walkito';
  * There is no fixed length any more. The app builds one week at a time around
  * a focus goal (`src/entities/program/model/plan/week.ts`), a reached goal
  * moves to maintaining and the next takes its place (`goals.ts`: "There is no
- * end to the plan"), so the site must never say "12 weeks" about the plan.
- * The purchasable pass is still sold by length, but that is billing, not the
- * programme, and the site quotes no prices.
+ * end to the plan"), so the site must never give the plan a length in weeks.
+ * Walkito is sold as two auto-renewing subscriptions, yearly and weekly. That
+ * is billing, not the programme, and the site quotes no prices.
  *
  * - Sessions: `SessionMinutes = 3 | 5 | 10`, default 5 (`store.ts`).
  * - Days a week: `WEEK_SHAPES` for 3, 5 or 7 days.
@@ -82,11 +82,11 @@ export const PAGE_UPDATED = {
   runners: '2026-09-28',
   program: '2026-09-28',
   science: '2026-09-28',
-  faq: '2026-09-28',
+  faq: '2026-10-01',
   about: '2026-09-28',
-  support: '2026-09-28',
+  support: '2026-10-01',
   privacy: '2026-09-28',
-  terms: '2026-09-28',
+  terms: '2026-10-01',
 } as const;
 
 /** Where the App Store listing will live. Null until it exists — a button

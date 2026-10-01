@@ -17,9 +17,9 @@ import { IN_SESSION_STOP, PAGE_UPDATED, PAIN_GOAL_MAX, PROGRAM, SITE_NAME, SITE_
  * There is no fixed length any more, and this page must never say there is.
  * The app builds one week at a time around a focus goal
  * (`src/entities/program/model/plan/week.ts`); a reached goal moves to
- * maintaining and the next takes its place (`goals.ts`). This page used to be
- * "The 12-week program" (six blocks of fourteen days) and every sentence of
- * that is now wrong.
+ * maintaining and the next takes its place (`goals.ts`). This page used to
+ * describe a fixed-length program of six blocks of fourteen days, and every
+ * sentence of that is now wrong.
  *
  * Numbers come from `PROGRAM`, `PAIN_GOAL_MAX` and `IN_SESSION_STOP` in
  * `lib/site.ts`, which are read out of the app. The morning rules are the

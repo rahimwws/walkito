@@ -15,9 +15,11 @@ import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
  * saved to the account the user signs in with and restored from it, the health
  * scopes are the ones in `READ_TYPES`. Nothing here describes a mechanism that does not exist.
  *
- * Payments are written as "subscriptions" and "one-time purchases" rather than
- * as a list of today's two products, so a yearly plan or a free trial can be
- * added without a rewrite. The Russian and Spanish pages mirror this one.
+ * Payments name today's two subscriptions, yearly and weekly, and put every
+ * rule under subscriptions in general, so a new period or a free trial can be
+ * added without a rewrite. Earlier versions also listed a pass paid for once
+ * and a monthly subscription. Both were withdrawn in October 2026 and must not
+ * come back here. The Russian and Spanish pages mirror this one.
  *
  * Two clauses a template would have supplied are deliberately absent.
  *
@@ -38,7 +40,7 @@ import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Terms of Use',
   description:
-    'Terms for using Walkito: what the app is and is not, your account, subscriptions and one-time purchases, invites, health and safety.',
+    'Terms for using Walkito: what the app is and is not, your account, subscriptions, invites, health and safety.',
   alternates: alternatesFor('terms', 'en'),
   openGraph: {
     title: `Terms of Use | ${SITE_NAME}`,
@@ -66,7 +68,7 @@ export default function Terms() {
       <Prose className="shell prose">
         <h1>Terms of use</h1>
 
-        <p className="updated">Last updated: 28 September 2026</p>
+        <p className="updated">Last updated: 1 October 2026</p>
 
         <p className="lede">
           These terms cover your use of the Walkito app, which is run by Walkito
@@ -142,15 +144,15 @@ export default function Terms() {
           Walkito is paid for through the App Store. Apple takes the payment,
           holds the receipt, and shows the options, the price and the term before
           you buy. That price is the one that applies, not any figure quoted
-          elsewhere. Today there are two ways to pay:
+          elsewhere. Today there are two subscriptions, and both renew
+          automatically:
         </p>
         <ul>
           <li>
-            <b>A monthly subscription</b> that renews automatically.
+            <b>A yearly subscription</b>, charged once a year.
           </li>
           <li>
-            <b>The 12-week program</b>, paid once. It gives you 3 months (90
-            days) of access and does not renew.
+            <b>A weekly subscription</b>, charged once a week.
           </li>
         </ul>
 
@@ -177,13 +179,6 @@ export default function Terms() {
           </li>
         </ul>
 
-        <h3>One-time purchases</h3>
-        <p>
-          A one-time purchase, such as the 12-week program, is charged once and
-          never renews. There is nothing to cancel. When it ends, you can buy
-          again or subscribe.
-        </p>
-
         <h3>Refunds</h3>
         <p>
           Refunds are handled only by Apple. Use{' '}
@@ -194,8 +189,8 @@ export default function Terms() {
         <h2>Invites</h2>
         <p>
           You can share your invite code. A friend who uses it gets a discount on
-          the 12-week program, and you get free weeks, up to the limit shown in
-          the app.
+          the yearly subscription, and you get free weeks, up to the limit shown
+          in the app.
         </p>
         <p>
           Each person can use one code, once, and not their own. Invite rewards

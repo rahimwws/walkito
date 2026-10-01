@@ -15,9 +15,11 @@ import { SUPPORT_EMAIL } from './site';
  * streak and its freezes, the notification caps, what Apple Health is asked
  * for and what is copied to the server. They were re-checked against `src/` on
  * 28 September 2026. The plan has no fixed length: there are no weeks to count
- * down, no blocks and no "after the program". The one-time purchase is
- * described by its access ("three months"), the way the paywall says it,
- * because `scripts/build-llms.mjs` refuses any plan-length phrase.
+ * down, no blocks and no "after the program". Pricing names the two
+ * subscriptions by how often they bill, yearly and weekly, which is billing and
+ * not a length for the plan; `scripts/build-llms.mjs` refuses any plan-length
+ * phrase, and any mention of the pass and the monthly subscription that are no
+ * longer sold.
  *
  * **Clinical answers** carry findings, and every one traces to a citation
  * printed on `/science`. No qualifier is dropped: the twelve-month result
@@ -224,11 +226,11 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
     entries: [
       {
         q: 'How much does Walkito cost?',
-        a: 'Walkito’s price is set in the App Store, which shows it in your currency before you buy. There are two ways to pay. One is a monthly subscription that renews on its own. The other is a one-time purchase that gives 3 months (90 days) of access and does not renew. The price the App Store shows is the one that applies.',
+        a: 'Walkito’s price is set in the App Store, which shows it in your currency before you buy. There are two subscriptions, yearly and weekly, and both renew on their own until you cancel. A friend’s invite code gives a discount on the yearly one. The price the App Store shows is the one that applies.',
       },
       {
         q: 'How do I cancel my Walkito subscription?',
-        a: 'Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions. Canceling stops the next renewal, and you keep access until the end of the period you paid for. Deleting the app or your account does not cancel it. The one-time purchase never renews, so there is nothing to cancel. Refunds are handled by Apple.',
+        a: 'Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions, at least 24 hours before the period ends. Canceling stops the next renewal, and you keep access until the end of the period you paid for. Deleting the app or your account does not cancel it. Refunds are handled by Apple.',
       },
     ],
   },

@@ -1,6 +1,6 @@
 import { cloneElement, createElement, Fragment, isValidElement, type ReactNode } from 'react';
 
-/** A word with a hyphen in it: single-leg, follow-up, что-то, 12-недельная. */
+/** A word with a hyphen in it: single-leg, follow-up, что-то, из-за. */
 const HYPHENATED = /([\p{L}\p{N}]+(?:-[\p{L}\p{N}]+)+)/u;
 
 /**

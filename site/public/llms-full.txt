@@ -8,7 +8,7 @@
 > place.
 
 Source: https://walkito.site
-Last updated: 2026-09-28
+Last updated: 2026-10-01
 
 Walkito provides exercise programming. It does not diagnose and does not
 treat any condition. Pain that follows an injury, comes with numbness,
@@ -893,11 +893,11 @@ Delete your account in Walkito under Profile, then Delete account. That removes 
 
 ### How much does Walkito cost?
 
-Walkito’s price is set in the App Store, which shows it in your currency before you buy. There are two ways to pay. One is a monthly subscription that renews on its own. The other is a one-time purchase that gives 3 months (90 days) of access and does not renew. The price the App Store shows is the one that applies.
+Walkito’s price is set in the App Store, which shows it in your currency before you buy. There are two subscriptions, yearly and weekly, and both renew on their own until you cancel. A friend’s invite code gives a discount on the yearly one. The price the App Store shows is the one that applies.
 
 ### How do I cancel my Walkito subscription?
 
-Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions. Canceling stops the next renewal, and you keep access until the end of the period you paid for. Deleting the app or your account does not cancel it. The one-time purchase never renews, so there is nothing to cancel. Refunds are handled by Apple.
+Cancel a Walkito subscription on your iPhone in Settings → your name → Subscriptions, at least 24 hours before the period ends. Canceling stops the next renewal, and you keep access until the end of the period you paid for. Deleting the app or your account does not cancel it. Refunds are handled by Apple.
 
 ## Not published
 
