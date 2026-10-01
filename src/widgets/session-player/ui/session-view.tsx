@@ -333,7 +333,7 @@ export type SessionViewProps = {
  *
  * Here rather than at the three screens that open a session, because there is
  * no fourth entry point to forget and no way for two of them to disagree. It
- * only ever closes for one person: somebody whose twelve weeks ran out and who
+ * only ever closes for one person: somebody whose paid access ran out and who
  * answered the expiry screen with "Not now". They keep every screen that reads
  * their history; this is the single thing that costs something to provide.
  *

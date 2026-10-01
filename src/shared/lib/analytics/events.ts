@@ -30,7 +30,9 @@ export type AcquisitionSource =
   | 'google'
   | 'other';
 
-export type PlanTier = 'program' | 'monthly';
+/** Which subscription a paywall event is about. The two plans on sale; the
+ * one-time pass and the monthly plan that came before them are not sold. */
+export type PlanTier = 'annual' | 'weekly';
 
 export type AnalyticsEvents = {
   // ── Onboarding ───────────────────────────────────────────────────────────
@@ -55,6 +57,9 @@ export type AnalyticsEvents = {
   purchase_started: PurchaseProps;
   purchase_completed: PurchaseProps;
   purchase_cancelled: PurchaseProps;
+  /** Waiting on Ask to Buy or a bank's confirmation. Not a failure; if it
+   * goes through, RevenueCat reports the purchase server-side. */
+  purchase_pending: PurchaseProps;
   purchase_failed: PurchaseProps & { reason: string };
   restore_completed: { status: 'restored' | 'nothing-found' | 'failed' };
 

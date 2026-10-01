@@ -25,10 +25,11 @@ export type PlanStepProps = {
  * end hands that work straight back to someone with no way to answer it, and
  * invites the suspicion that the question was really about price.
  *
- * Everything on the screen is derived. The name and the length come from the
- * answer about how much they run, the three rows from the programme's own
- * blocks, and the sentence from what they said about their pain and their
- * week — which is what earns the line under the title.
+ * Everything on the screen is derived. The name comes from the answer about
+ * how much they run, the headline from the days a week they chose, the three
+ * rows from the programme's own blocks, and the sentence from what they said
+ * about their pain and their week — which is what earns the line under the
+ * title. No length: the plan has no end, so the screen names none.
  */
 export function PlanStep({ summary, sessions }: PlanStepProps) {
   const scheme = useColorScheme();
@@ -50,10 +51,7 @@ export function PlanStep({ summary, sessions }: PlanStepProps) {
           .duration(380)
           .reduceMotion(ReduceMotion.System)}
         style={[styles.meta, { color: colors.foreground }]}>
-        {t('onboarding.plan.meta', {
-          count: summary.weeks,
-          sessions: sessions ?? summary.strengthDays,
-        })}
+        {t('onboarding.plan.meta', { count: sessions ?? summary.strengthDays })}
       </Animated.Text>
 
       {summary.reflection != null && (

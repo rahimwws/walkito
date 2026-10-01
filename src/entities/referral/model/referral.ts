@@ -4,17 +4,23 @@ import { kv } from '@/shared/lib/storage';
 import { currentUserId, hasBackend, supabase } from '@/shared/lib/supabase';
 
 /**
- * What an invite is worth, on both sides of it.
+ * What an invite is worth to the friend who uses it.
  *
- * One number, here, because it appears in three places — the code sheet, the
- * onboarding step and the invite message — and three copies of it are three
- * chances for the offer to say one thing and the charge to be another.
+ * One number, here, because it appears in four places — the code sheet,
+ * Profile, the onboarding step and the invite message — and four copies of it
+ * are four chances for the offer to say one thing and the charge to be another.
  *
- * It is the programme at its `offer` price against its standard one: $14.99
- * against $49.99. That offering is what an invite actually unlocks — see
- * `discounted` below — so this is the figure the user is charged, not a
- * separate promise. It said 90 while nothing applied a discount at all; if the
- * two prices move in App Store Connect, this moves with them.
+ * It is the annual subscription at its `offer` price against its standard one:
+ * the discounted annual product against the $44.99 one, so 70 means $13.49.
+ * That offering is what an invite actually unlocks — see `discounted` below —
+ * so this is the figure the friend is charged, not a separate promise.
+ *
+ * **It does not follow the store on its own.** The invite text is written
+ * before anyone has asked the store anything, and the share message leaves
+ * the app. The paywall computes the real percentage from the two store prices
+ * and, in a development build, logs an error when it differs from this one.
+ * Change both together: the discounted annual price in App Store Connect and
+ * this constant.
  */
 export const REFERRAL_DISCOUNT_PERCENT = 70;
 
@@ -40,9 +46,8 @@ export type ReferralStatus = {
    * Whether the invite price applies. Decided by the server, never here.
    *
    * True on both sides: for whoever redeemed a code, and for whoever owns a
-   * code somebody redeemed. It unlocks the programme at its `offer` price —
-   * on the paywall for anyone who has not bought yet, and on the renewal at the
-   * end of the twelve weeks for anyone who has.
+   * code somebody redeemed. It unlocks the annual subscription at its `offer`
+   * price on the paywall, for anyone who has not subscribed yet.
    */
   discounted: boolean;
 };

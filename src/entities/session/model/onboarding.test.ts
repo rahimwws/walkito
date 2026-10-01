@@ -36,13 +36,13 @@ describe('onboarding is reachable', () => {
     const onboarding = /guard=\{!onboarded\}\s*>\s*<Stack\.Screen\s+name="onboarding"/s;
     expect(layout).toMatch(onboarding);
 
-    // The paywall: onboarded, not paid, and never having finished a programme —
+    // The paywall: onboarded, not paid, and no paid access that has lapsed —
     // that last case has its own screen below.
     const paywall =
       /guard=\{onboarded && !entitled && !lapsed\}\s*>\s*<Stack\.Screen\s+name="offer"/s;
     expect(layout).toMatch(paywall);
 
-    // The end of the twelve weeks, until they answer it.
+    // Paid access that ran out, until they answer it.
     const expired =
       /guard=\{onboarded && !entitled && lapsed && !browsing\}\s*>\s*<Stack\.Screen\s+name="expired"/s;
     expect(layout).toMatch(expired);

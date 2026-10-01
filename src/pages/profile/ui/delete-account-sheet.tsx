@@ -1,7 +1,7 @@
 import { BlurView } from 'expo-blur';
 import * as Haptics from 'expo-haptics';
 import { useEffect, useState } from 'react';
-import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Linking, Modal, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -12,6 +12,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { useEntitled } from '@/entities/purchase';
 import { deleteAccount, resetOnboarding } from '@/entities/session';
 import { clearClips } from '@/widgets/session-player';
 import { accents, fonts, meterColors, palette, primaryButton } from '@/shared/config';
@@ -24,6 +25,13 @@ const RISE = 40;
 const IN_MS = 300;
 const OUT_MS = 200;
 
+/** Where a subscription is cancelled. The store's own page, not ours: deleting
+ * a Walkito account cannot touch a subscription Apple or Google bills. */
+const MANAGE_SUBSCRIPTIONS = Platform.select({
+  android: 'https://play.google.com/store/account/subscriptions',
+  default: 'https://apps.apple.com/account/subscriptions',
+});
+
 export type DeleteAccountSheetProps = {
   visible: boolean;
   onClose: () => void;
@@ -33,7 +41,7 @@ export type DeleteAccountSheetProps = {
  * The confirmation before the one action in this app that cannot be undone.
  *
  * Two steps rather than one, and the second names what goes: a single tap on a
- * red row is how people delete twelve weeks of their own history by mistake.
+ * red row is how people delete months of their own history by mistake.
  * The list is specific — "your data" is a phrase that lets someone assume their
  * streak is safe somewhere.
  *
@@ -48,6 +56,10 @@ export function DeleteAccountSheet({ visible, onClose }: DeleteAccountSheetProps
   const meter = meterColors[scheme];
   const insets = useSafeAreaInsets();
   const t = useT();
+  /** A subscriber is told that deleting the account leaves the subscription
+   * billing, and where to cancel it — Apple's guidance for apps that sell
+   * auto-renewing subscriptions. Somebody with nothing active is not. */
+  const subscribed = useEntitled();
 
   const [mounted, setMounted] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -139,6 +151,26 @@ export function DeleteAccountSheet({ visible, onClose }: DeleteAccountSheetProps
 
           <Text style={[styles.blurb, { color: meter.caption }]}>{t('profile.deleteBlurb')}</Text>
 
+          {subscribed && (
+            <>
+              <Text style={[styles.blurb, { color: meter.caption }]}>
+                {Platform.OS === 'android'
+                  ? t('profile.deleteSubscriptionAndroid')
+                  : t('profile.deleteSubscription')}
+              </Text>
+              <Text
+                accessibilityRole="link"
+                onPress={() => {
+                  Haptics.selectionAsync();
+                  Linking.openURL(MANAGE_SUBSCRIPTIONS).catch(() => {});
+                }}
+                suppressHighlighting
+                style={[styles.manage, { color: colors.foreground }]}>
+                {t('profile.manageSubscription')}
+              </Text>
+            </>
+          )}
+
           {problem != null && (
             <Text style={[styles.problem, { color: accents[scheme].red.fill }]}>{problem}</Text>
           )}
@@ -182,6 +214,7 @@ const styles = StyleSheet.create({
   },
   title: fonts.heavy(24, -0.6),
   blurb: { ...fonts.regular(15), lineHeight: 21, marginTop: 8 },
+  manage: { ...fonts.semibold(15), lineHeight: 21, marginTop: 8, textDecorationLine: 'underline' },
   problem: { ...fonts.medium(14), lineHeight: 20, marginTop: 12 },
   cta: { alignSelf: 'stretch', marginTop: 18 },
   keep: { alignSelf: 'center', paddingVertical: 12 },

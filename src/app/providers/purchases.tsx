@@ -38,19 +38,22 @@ export function usePurchases(): void {
 
   useEffect(() => {
     /**
-     * Keep the week-before warning pointed at the real end date.
+     * Keep the week-before warning pointed at the real end date — which only a
+     * legacy one-time pass has.
      *
-     * Driven off the store rather than scheduled once at the moment of purchase,
-     * because the end date can move after that: buying a second twelve weeks
-     * extends it, a restore on a new device establishes it for the first time,
-     * and a refund removes it. Each of those arrives as an entitlement change
-     * and nothing else, so this is the only place that sees all three.
+     * A subscription has no end to warn about: it renews, and the App Store
+     * itself tells a subscriber about a price or a cancellation. So for every
+     * subscriber `passEndsAt()` is null and this cancels any warning left over.
+     * For somebody who still holds a pass, the end can move after purchase — a
+     * restore on a new device establishes it, invite days extend it, a refund
+     * removes it — and each arrives as a store change and nothing else, so this
+     * is the only place that sees all of them.
      *
      * Idempotent — `syncExpiryNotice` cancels the pending request before
      * scheduling, and the request has a fixed identifier — so running it again
      * on every change costs nothing and cannot stack up duplicates.
      */
-    const sync = () => void syncExpiryNotice(purchases.programEndsAt());
+    const sync = () => void syncExpiryNotice(purchases.passEndsAt());
     sync();
     return purchases.subscribe(sync);
   }, []);

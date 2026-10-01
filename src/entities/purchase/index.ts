@@ -1,17 +1,20 @@
 export {
   ENTITLEMENT,
+  LEGACY_PRODUCTS,
   OFFERINGS,
+  PACKAGES,
   PRODUCTS,
   PRINTED_PRICES,
-  PROGRAM_MONTHS,
-  PROGRAM_PACKAGE,
   type Offering,
   type Plan,
+  type PlanPeriod,
   type Product,
   type Purchases,
   type PurchaseResult,
   type RestoreResult,
 } from './model/purchase';
+export { annualSavingPercent, discountPercent, perWeek } from './model/pricing';
+export { fetchShelf, planOn, type Shelf } from './model/shelf';
 export {
   onSimulator,
   purchases,
@@ -21,12 +24,12 @@ export {
 } from './model/store';
 export { useEntitled } from './model/entitlement';
 export {
+  accessLapsed,
   browsingLapsed,
   clearBrowsingLapsed,
-  programLapsed,
   sessionsLocked,
   startBrowsingLapsed,
+  useAccessLapsed,
   useBrowsingLapsed,
-  useProgramLapsed,
   useSessionsLocked,
 } from './model/lapse';

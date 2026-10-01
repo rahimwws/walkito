@@ -23,19 +23,9 @@ export const PROFILE_EN = {
   /** On the row rather than behind it, because the count is the reason to tap.
    * Zero never reaches here — the screen leaves the slot blank instead. */
   'profile.invitesJoined': { one: '{count} joined', other: '{count} joined' },
-  /** Under "Invite a friend". `{count}` is weeks of free programme access. */
-  'profile.weeksPerFriend': {
-    one: '{count} free week for each friend',
-    other: '{count} free weeks for each friend',
-  },
-  'profile.weeksEarned': {
-    one: '+{count} free week earned',
-    other: '+{count} free weeks earned',
-  },
-  'profile.weeksEarnedMax': {
-    one: '+{count} free week earned, the most there is',
-    other: '+{count} free weeks earned, the most there is',
-  },
+  /** Under "Refer a friend": what an invite is worth, to the friend. The
+   * owner's free weeks are gone — see `gift.blurb`. */
+  'profile.inviteHint': 'Friends get {percent}% off the annual subscription',
   'profile.contactSupport': 'Contact support',
   'profile.deleteAccount': 'Delete account',
 
@@ -48,6 +38,13 @@ export const PROFILE_EN = {
   // the placeholder inference in `translate.ts` with it.
   'profile.deleteBlurb':
     'This removes your programme, your pain log, your streak and your invite code, from this device and from our servers. It cannot be undone.',
+  /** Shown to a subscriber only. Apple's guidance for apps that sell
+   * auto-renewing subscriptions: say that billing goes on, and how to stop it. */
+  'profile.deleteSubscription':
+    'Deleting your account doesn’t cancel your subscription. It’s billed by Apple and renews until you cancel it in Settings.',
+  'profile.deleteSubscriptionAndroid':
+    'Deleting your account doesn’t cancel your subscription. It’s billed by Google Play and renews until you cancel it there.',
+  'profile.manageSubscription': 'Manage subscription',
   /** Local storage is already gone by the time this shows, so it says which
    * half failed rather than pretending nothing happened. */
   'profile.deleteLocalOnly':

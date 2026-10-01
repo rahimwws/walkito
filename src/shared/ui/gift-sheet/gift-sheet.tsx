@@ -10,8 +10,6 @@ import Animated, {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import {
-  REFERRAL_BONUS_MAX_INVITES,
-  REFERRAL_BONUS_WEEKS,
   REFERRAL_DISCOUNT_PERCENT,
   claimCode,
   referralsAvailable,
@@ -128,10 +126,9 @@ export function GiftSheet({ visible, onClose }: GiftSheetProps) {
               .reduceMotion(ReduceMotion.System)}
             style={[styles.blurb, { color: meter.caption }]}>
             {referralsAvailable
-              ? // Two whole sentences, each its own catalogue entry: the reward,
-                // then its limit. Both carry a number that needs its own
-                // plural form, and one template cannot pluralise two counts.
-                `${t('gift.blurb', { percent: REFERRAL_DISCOUNT_PERCENT, count: REFERRAL_BONUS_WEEKS })} ${t('gift.cap', { count: REFERRAL_BONUS_MAX_INVITES })}`
+              ? // The friend's side only. The owner used to be promised free
+                // weeks, which a subscription cannot be given from the device.
+                t('gift.blurb', { percent: REFERRAL_DISCOUNT_PERCENT })
               : t('gift.unavailable')}
           </Animated.Text>
 

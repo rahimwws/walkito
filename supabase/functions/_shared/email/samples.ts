@@ -12,14 +12,15 @@ import type { EmailContent, EmailKey, Locale, PaywallView } from './types.ts';
 
 const NAME: Record<Locale, string> = { en: 'sam', ru: 'аня', es: 'lucía' };
 
+/** Annual subscription, offer and standard. Illustrative: real emails quote the store's own. */
 const PRICES: Record<Locale, { offer: string; standard: string }> = {
-  en: { offer: '$14.99', standard: '$49.99' },
-  ru: { offer: '1 190 ₽', standard: '3 990 ₽' },
-  es: { offer: '14,99 €', standard: '49,99 €' },
+  en: { offer: '$29.99', standard: '$44.99' },
+  ru: { offer: '2 490 ₽', standard: '3 790 ₽' },
+  es: { offer: '29,99 €', standard: '44,99 €' },
 };
 
 function paywall(l: Locale): PaywallView {
-  return { firstAt: '', lastAt: '', offerPrice: PRICES[l].offer, standardPrice: PRICES[l].standard, percent: 70, weeks: 12 };
+  return { firstAt: '', lastAt: '', offerPrice: PRICES[l].offer, standardPrice: PRICES[l].standard, percent: 33 };
 }
 
 export function sampleEmails(l: Locale): { key: EmailKey; content: EmailContent }[] {

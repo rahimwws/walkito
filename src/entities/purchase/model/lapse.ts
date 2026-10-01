@@ -5,13 +5,13 @@ import { kv } from '@/shared/lib/storage';
 import { purchases } from './store';
 
 /**
- * The state between "paid" and "never paid": twelve weeks bought, and finished.
+ * The state between "paid" and "never paid": access held once, and ended.
  *
  * This exists because those two are not the same person and must not meet the
  * same screen. Someone who has never paid is looking at a pitch. Someone whose
- * programme just ran out has twelve weeks of their own measurements in the app,
- * and the honest thing to show them is what those measurements say — which is
- * the expiry screen, not the paywall.
+ * subscription ended has their own measurements in the app, and the honest
+ * thing to show them is what those measurements say — which is the expiry
+ * screen, not the paywall.
  *
  * It also softens the wall, deliberately and narrowly. The app is otherwise
  * fully paid: no entitlement, no app. But locking a lapsed user out of history
@@ -22,20 +22,18 @@ import { purchases } from './store';
  */
 
 /**
- * Whether a programme was bought and its access window has closed.
+ * Whether paid access was held at some point and is not held now.
  *
- * Both halves are required. `programEndsAt` returning a date means a programme
- * was bought at some point — a monthly subscriber has no such date, so a lapsed
- * subscription is *not* a lapse in this sense and correctly falls through to the
- * ordinary paywall, which is what it has always been.
+ * Both halves are required. `hadAccess` is what tells a subscription that
+ * ended, or a legacy pass that ran out, from an account that never bought
+ * anything — which correctly falls through to the ordinary paywall.
  *
- * Reads `entitled` too, so buying again — or a monthly subscription started from
- * the expiry screen — clears this without any flag needing to be reset.
+ * Reads `entitled` first, so subscribing again — from the expiry screen or
+ * anywhere else — clears this without any flag needing to be reset.
  */
-export function programLapsed(): boolean {
+export function accessLapsed(): boolean {
   if (purchases.entitled()) return false;
-  const ends = purchases.programEndsAt();
-  return ends != null && ends.getTime() <= Date.now();
+  return purchases.hadAccess();
 }
 
 const BROWSE_KEY = 'purchase/browsing-lapsed';
@@ -46,7 +44,8 @@ const browseListeners = new Set<() => void>();
  *
  * Persisted, because the alternative is a screen that reappears on every cold
  * launch after the user has already answered it — which is not a paywall, it is
- * nagging. They can still reach both prices from the profile at any time.
+ * nagging. A locked session or routine brings the expiry screen back on demand
+ * through `clearBrowsingLapsed`.
  */
 export function browsingLapsed(): boolean {
   return kv.getBoolean(BROWSE_KEY) ?? false;
@@ -63,11 +62,11 @@ export function startBrowsingLapsed(): void {
 }
 
 /**
- * Clear the concession, so a *second* expiry is met by the expiry screen again
- * rather than by the read-only mode the first one was answered with.
+ * Clear the concession, so the expiry screen is the door again.
  *
- * Called on purchase, not on lapse: the flag is only meaningful while lapsed,
- * and clearing it the moment somebody pays is what re-arms it for next time.
+ * Called on purchase, so a *second* lapse is met by the expiry screen rather
+ * than by the read-only mode the first one was answered with; and from a locked
+ * session or routine, where it is how the user asks to see their options.
  */
 export function clearBrowsingLapsed(): void {
   if (browsingLapsed()) setBrowsing(false);
@@ -93,7 +92,7 @@ function subscribe(listener: () => void): () => void {
  * the answer cannot differ between them.
  */
 export function sessionsLocked(): boolean {
-  return programLapsed() && browsingLapsed();
+  return accessLapsed() && browsingLapsed();
 }
 
 export function useSessionsLocked(): boolean {
@@ -101,8 +100,8 @@ export function useSessionsLocked(): boolean {
 }
 
 /** Whether the expiry screen is the right door for this launch. */
-export function useProgramLapsed(): boolean {
-  return useSyncExternalStore(subscribe, programLapsed, () => false);
+export function useAccessLapsed(): boolean {
+  return useSyncExternalStore(subscribe, accessLapsed, () => false);
 }
 
 export function useBrowsingLapsed(): boolean {

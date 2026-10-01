@@ -118,18 +118,22 @@ export type LogRow = {
   status: 'sending' | 'sent' | 'failed';
 };
 
-/** What the app recorded when the paywall was last shown, from RevenueCat. */
+/**
+ * What the app recorded when the paywall was last shown, from RevenueCat.
+ *
+ * The prices are the annual subscription's: the discounted one the `offer`
+ * offering sells and the standard one. Only a view that says so (`plan:
+ * 'annual'` in its props) is read for them — see `paywallFrom` in `load.ts`.
+ */
 export type PaywallView = {
   firstAt: string;
   lastAt: string;
-  /** Store-formatted price of the discounted program, e.g. "$14.99". */
+  /** Store-formatted price of the discounted annual subscription, e.g. "$29.99". */
   offerPrice: string | null;
-  /** Store-formatted price of the standard program. */
+  /** Store-formatted price of the standard annual subscription. */
   standardPrice: string | null;
   /** Rounded discount, computed on the phone from the two store prices. */
   percent: number | null;
-  /** Length of the program the prices are for. */
-  weeks: number | null;
 };
 
 export type Contact = {

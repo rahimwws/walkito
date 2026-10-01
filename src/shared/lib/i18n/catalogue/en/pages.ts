@@ -145,27 +145,26 @@ export const PAGES_EN = {
   'pages.welcome.cta': 'Let’s go',
 
   // ── Expired ──────────────────────────────────────────────────────────────
-  // The end of the twelve weeks. Every number here is one the user produced, so
-  // nothing in this section may read as a pitch.
-  'pages.expired.title': 'Your 12 weeks are done',
+  // A subscription that ended. Every number here is one the user produced, so
+  // the recap may not read as a pitch; the plans below it are the same two the
+  // paywall sells, in the paywall's own words (`offer.*`).
+  'pages.expired.title': 'Your subscription has ended',
   'pages.expired.lede': {
     one: '{count} session. Here’s what changed.',
     other: '{count} sessions. Here’s what changed.',
   },
   /** Nothing completed, so there is no count to lead with. */
-  'pages.expired.ledeNoSessions': 'Here’s where you finished.',
+  'pages.expired.ledeNoSessions': 'Here’s where you left off.',
   'pages.expired.calfRaises': 'Calf raises',
   'pages.expired.morningPain': 'Morning pain',
   /** Neither measurement has two readings behind it. Says what is kept rather
    * than filling the card with a figure nobody earned. */
   'pages.expired.nothingMeasured': 'Your logs and retests are all still here.',
   'pages.expired.keeps': 'Your history stays either way.',
-  'pages.expired.storeUnreachable':
-    'The App Store isn’t reachable right now. Try again in a moment.',
   'pages.expired.busy': 'One moment…',
-  'pages.expired.monthly': 'Continue monthly · {price}',
-  'pages.expired.program': 'Another 12 weeks · {price}',
-  'pages.expired.programInvite': 'Another 12 weeks at your invite price · {price}',
+  /** Above the two plans. */
+  'pages.expired.plansTitle': 'Pick up where you left off',
+  'pages.expired.renew': 'Renew subscription',
   'pages.expired.notNow': 'Not now',
   // ── The weekly plan ──────────────────────────────────────────────────────
   // The Workout page as a week: which week it is, what it is for, and why it

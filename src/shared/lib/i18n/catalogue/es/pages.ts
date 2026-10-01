@@ -100,23 +100,20 @@ export const PAGES_ES = {
   'pages.welcome.cta': 'Vamos',
 
   // ── Expired ──────────────────────────────────────────────────────────────
-  'pages.expired.title': 'Tus 12 semanas han terminado',
+  'pages.expired.title': 'Tu suscripción ha terminado',
   'pages.expired.lede': {
     one: '{count} sesión. Esto es lo que cambió.',
     other: '{count} sesiones. Esto es lo que cambió.',
   },
-  'pages.expired.ledeNoSessions': 'Aquí es donde terminaste.',
+  'pages.expired.ledeNoSessions': 'Aquí es donde lo dejaste.',
   // The exercise's own name, as `exercises.heelRaiseTowel.title` writes it.
   'pages.expired.calfRaises': 'Elevación de talones',
   'pages.expired.morningPain': 'Dolor matutino',
   'pages.expired.nothingMeasured': 'Tus registros y reevaluaciones siguen aquí.',
   'pages.expired.keeps': 'Tu historial se queda de todas formas.',
-  'pages.expired.storeUnreachable':
-    'No se puede conectar con la App Store ahora mismo. Inténtalo en un momento.',
   'pages.expired.busy': 'Un momento…',
-  'pages.expired.monthly': 'Seguir mes a mes · {price}',
-  'pages.expired.program': 'Otras 12 semanas · {price}',
-  'pages.expired.programInvite': 'Otras 12 semanas a tu precio por invitación · {price}',
+  'pages.expired.plansTitle': 'Retoma donde lo dejaste',
+  'pages.expired.renew': 'Renovar la suscripción',
   'pages.expired.notNow': 'Ahora no',
   'pages.week.headerMeta': '{date} · Semana {n}',
   'pages.week.seam': 'Esta semana · {goal}',

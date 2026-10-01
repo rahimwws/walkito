@@ -49,7 +49,7 @@ export const EXERCISES_RU = {
   'exercises.heelRaiseTowel.cue': 'Полотенце под пальцами. Без него вы просто качаете икры.',
 
   'exercises.heelRaisePlain.title': 'Подъёмы на одной ноге',
-  'exercises.heelRaisePlain.rationale': 'Этот вариант останется с вами после конца программы.',
+  'exercises.heelRaisePlain.rationale': 'Простой вариант, который сохраняет набранную силу.',
   'exercises.heelRaisePlain.cue':
     'Три секунды вверх, три вниз. Быстрый темп сводит упражнение на нет.',
 

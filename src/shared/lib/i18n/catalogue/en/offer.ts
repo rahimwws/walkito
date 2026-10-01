@@ -7,9 +7,9 @@
  *
  * **No price, currency amount or product identifier appears here.** Every
  * figure on the paywall comes from the store at runtime and arrives as a
- * `{price}` or `{perWeek}` placeholder already formatted by `formatPrice` —
- * which is the only thing that knows where the symbol goes and which separator
- * the locale uses. A price written into a catalogue is wrong in every
+ * `{price}` placeholder in the store's own formatting, or as `{perWeek}`
+ * formatted by `formatPrice` — which is the only thing that knows where the
+ * symbol goes and which separator the locale uses. A price written into a catalogue is wrong in every
  * storefront but one, and it is wrong in a legally interesting way the moment
  * App Store Connect disagrees with it.
  *
@@ -32,71 +32,83 @@ export const OFFER_EN = {
   'offer.featureProgressBlurb': 'Watch your readiness climb week by week.',
 
   // ── Paywall: headline ────────────────────────────────────────────────────
-  'offer.limited': 'Limited - one time only',
-  /** Instead of the one-time badge, for the price an invite earned. It holds
-   * on every visit, so it must not claim to be limited. */
+  /** Over the comeback price. Says what the price is rather than how scarce:
+   * the win-back can come round again, so "one time only" would not be true. */
+  'offer.comebackBadge': 'Comeback price',
+  /** The same badge, for the price an invite earned. */
   'offer.inviteBadge': 'Your invite price',
-  'offer.headlineInvite': 'Your invite price on the 12-week program',
-  'offer.headlineComeback': 'Your comeback price on the 12-week program',
-  /** Plural on the months rather than a bare `{months}`: Russian inflects the
-   * noun at 1, at 2–4 and at 5+, and the programme's length is a constant only
-   * until somebody changes it. */
-  'offer.headlineSave': {
-    one: 'Pay once for {count} month and save {percent}%',
-    other: 'Pay once for {count} months and save {percent}%',
-  },
-  'offer.headlinePlain': {
-    one: 'Pay once for {count} month, or month to month',
-    other: 'Pay once for {count} months, or month to month',
-  },
-  'offer.subWeeks': {
-    one: 'Your {count}-week plan, and everything around it.',
-    other: 'Your {count}-week plan, and everything around it.',
-  },
+  /** The standard sheet. The product's name, said once at the top. */
+  'offer.headline': 'Unlock Walkito Premium',
+  /** The invite and comeback price is on the annual plan only, so the headline
+   * names the year rather than promising a cheaper app. */
+  'offer.headlineInvite': 'Your invite price on a year of Walkito Premium',
+  'offer.headlineComeback': 'Your comeback price on a year of Walkito Premium',
   'offer.sub': 'Your plan, and everything around it.',
 
-  // ── Paywall: the two rows ────────────────────────────────────────────────
-  // `{price}` and `{perWeek}` are store figures, already formatted. The middots
-  // are written as text here — unlike the session header, where they are views
-  // between separate labels — so each note is one template and a language may
-  // reorder the parts inside it.
-  'offer.programTitle': '12-Week Program',
-  'offer.programPrice': '{price} one-time',
-  'offer.programNote': {
-    one: '{count} month of access · {perWeek}/week · No subscription',
-    other: '{count} months of access · {perWeek}/week · No subscription',
-  },
-  /** What somebody who already holds the programme sees instead of a price. */
-  'offer.programActive': 'Active',
-  'offer.programActiveUntil': 'Until {date}',
+  // ── Paywall: the two plans ───────────────────────────────────────────────
+  // `{price}` is the store's own billed amount and is always the most
+  // prominent figure on a row (App Review Guideline 3.1.2). `{perWeek}` is the
+  // annual price divided by 52, secondary and smaller. The middots are written
+  // as text here so each note is one template and a language may reorder the
+  // parts inside it.
+  'offer.annualTitle': 'Annual',
+  'offer.annualPrice': '{price} per year',
+  'offer.annualNote': '{perWeek} a week, billed yearly',
+  /** `{percent}` compares one annual payment with 52 weekly ones, both store
+   * prices. Shown only when the annual plan really is cheaper. */
+  'offer.annualNoteSave': '{perWeek} a week · Save {percent}% vs weekly',
+  'offer.weeklyTitle': 'Weekly',
+  'offer.weeklyPrice': '{price} per week',
+  'offer.weeklyNote': 'Billed weekly · Cancel anytime',
+  /** On the annual row, only while it is cheaper over a year than weekly. */
+  'offer.badgeBest': 'Best value',
+  /** On the discounted annual row: the invite or comeback price against the
+   * standard annual price, both from the store. */
   'offer.badgeOff': '{percent}% off',
-  'offer.badgeSave': 'Save {percent}%',
-  'offer.monthlyTitle': 'Monthly',
-  'offer.monthlyPrice': '{price}/month',
-  'offer.monthlyNote': '{perWeek}/week · Cancel anytime',
 
   // ── Paywall: billing terms ───────────────────────────────────────────────
-  // Apple requires the renewal disclosure on the subscription, and the
-  // programme line has to say it will *not* charge again — that distinction is
-  // the whole thing the user is being asked to understand. The amount is
-  // interpolated so a discounted sheet discloses the discounted figure.
-  'offer.termsProgram':
-    '12-Week Program: one-time payment of {price} for 12 weeks of access. Does not renew and will not charge you again.',
-  'offer.termsMonthly':
-    'Monthly: {price} per month. Renews automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel in your App Store account settings.',
-  'offer.linkTerms': 'Terms',
-  'offer.linkPrivacy': 'Privacy',
-  'offer.restore': 'Restore Purchases',
+  // The disclosure Apple requires next to an auto-renewable subscription: what
+  // is included, each plan's length and price, auto-renewal, where payment is
+  // charged and how to cancel. Amounts are interpolated so a discounted sheet
+  // discloses the discounted figure.
+  /** One line directly above the button, for the plan that is selected. */
+  'offer.ctaAnnual': '{price} per year, renews automatically. Cancel anytime.',
+  'offer.ctaWeekly': '{price} per week, renews automatically. Cancel anytime.',
+  'offer.termsIncluded':
+    'Walkito Premium gives you full access: your adaptive plan, every session and routine, retests and progress tracking.',
+  'offer.termsAnnual': 'Annual subscription: {price} per year.',
+  'offer.termsWeekly': 'Weekly subscription: {price} per week.',
+  'offer.termsRenewal':
+    'Payment is charged to your Apple Account at confirmation of purchase. Your subscription renews automatically for the same period and price unless cancelled at least 24 hours before the end of the current period, and renewal is charged within the 24 hours before it ends. Manage or cancel in Settings → Apple Account → Subscriptions.',
+  /** The same disclosure for Google Play, which bills and cancels elsewhere. */
+  'offer.termsRenewalAndroid':
+    'Payment is charged to your Google Play account at confirmation of purchase. Your subscription renews automatically for the same period and price unless cancelled at least 24 hours before the end of the current period. Manage or cancel in Google Play → Payments & subscriptions → Subscriptions.',
+  'offer.linkTerms': 'Terms of use',
+  'offer.linkPrivacy': 'Privacy policy',
+  'offer.restore': 'Restore purchases',
 
   // ── Paywall: what the store said ─────────────────────────────────────────
   // Two faults that used to share one sentence. A store that never answered is
   // unreachable and worth retrying; a store that answered without the package
   // is misconfigured, and "try again in a moment" sends somebody to retry
-  // something that will never succeed.
+  // something that will never succeed. "The store" rather than a name: the
+  // same paywall sells through the App Store and through Google Play.
   'offer.planUnavailable': 'That plan isn’t available right now. Try the other one.',
-  'offer.storeUnreachable': 'The App Store isn’t reachable right now. Try again in a moment.',
-  'offer.nothingRestored': 'No previous purchase found on this Apple ID.',
+  'offer.storeUnreachable': 'The store isn’t reachable right now. Try again in a moment.',
+  'offer.nothingRestored': 'No previous purchase found.',
   'offer.restoreFailed': 'That didn’t go through. No charge was made.',
+  /** Any purchase error without a sentence of its own. The SDK's message is
+   * never shown: it is English whatever the app is set to. */
+  'offer.purchaseFailed': 'That didn’t go through. No charge was made.',
+  /** Screen Time, a parental control, or a device policy blocks buying. */
+  'offer.purchaseNotAllowed': 'Purchases are turned off on this device.',
+  'offer.alreadyOwned': 'You already have this. Tap Restore purchases.',
+  /** Ask to Buy, or a bank confirming the payment. Not an error: access
+   * arrives on its own if it goes through. */
+  'offer.pending': 'Waiting for approval. You’ll get access once it goes through.',
+  /** Paid, but the store granted no access. Almost always a dashboard fault;
+   * restoring is what fixes it from the user's side. */
+  'offer.notUnlocked': 'The purchase went through but didn’t unlock. Tap Restore purchases.',
   'offer.continue': 'Continue',
   'offer.processing': 'Processing…',
 
@@ -111,9 +123,9 @@ export const OFFER_EN = {
   'offer.start': 'Start',
 
   // ── Session player: the locked state ─────────────────────────────────────
-  // Only ever seen by somebody whose twelve weeks ran out and who answered the
+  // Only ever seen by somebody whose subscription ended and who answered the
   // expiry screen with "Not now".
-  'widgets.sessionLockedTitle': 'Your program has ended',
+  'widgets.sessionLockedTitle': 'Your subscription has ended',
   'widgets.sessionLockedBody':
     'Everything you logged is still here to read. To run sessions again, pick up where you left off.',
   'widgets.sessionLockedCta': 'See your options',

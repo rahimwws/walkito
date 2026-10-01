@@ -1,4 +1,4 @@
-import { ENTITLEMENT, PRODUCTS, PROGRAM_ACCESS_DAYS, PROGRAM_IDS } from './purchase';
+import { ENTITLEMENT, LEGACY_PASS_IDS, PASS_ACCESS_DAYS } from './purchase';
 
 /**
  * Who has access, as arithmetic on plain data.
@@ -11,6 +11,11 @@ import { ENTITLEMENT, PRODUCTS, PROGRAM_ACCESS_DAYS, PROGRAM_IDS } from './purch
  * actually read, and nothing else. `CustomerInfo` from the SDK satisfies them,
  * so the adapter passes its object straight through with no mapping layer to
  * drift, while a test can hand over an object literal.
+ *
+ * What is sold is two auto-renewing subscriptions, and RevenueCat expires those
+ * itself: an active subscription, or an active `premium` entitlement it grants,
+ * is access. The only arithmetic left is for the legacy one-time pass, which
+ * Apple never expires and which is no longer sold.
  */
 
 /** The fields of `PurchasesEntitlementInfo` this calculation reads. */
@@ -28,124 +33,159 @@ export type TransactionFacts = {
 
 /** The fields of `CustomerInfo` this calculation reads. */
 export type CustomerFacts = {
+  /** Auto-renewing subscriptions that are live right now, grace period
+   * included. RevenueCat drops a product from here when it expires. */
   readonly activeSubscriptions: readonly string[];
+  /** Everything this customer has ever bought, active or not. */
+  readonly allPurchasedProductIdentifiers: readonly string[];
   readonly nonSubscriptionTransactions: readonly TransactionFacts[];
   readonly entitlements: {
     readonly active: { readonly [key: string]: EntitlementFacts };
+    /** Every entitlement this customer has ever held, active or not. */
+    readonly all: { readonly [key: string]: EntitlementFacts };
   };
 };
 
+function isPass(productId: string): boolean {
+  return LEGACY_PASS_IDS.includes(productId);
+}
+
 /**
- * When the twelve-week programme runs out, from the latest purchase of one.
+ * Whether an auto-renewing subscription is live.
  *
- * RevenueCat cannot expire a non-renewing product. Confirmed against the
- * dashboard — the entitlement page has no duration field for this product type
- * — and against RevenueCat's documentation, which says a non-renewing purchase
+ * Any product, not a list of them: everything this app sells as a subscription
+ * unlocks the same single tier, and Apple only reports this app's own products
+ * here. Matching on identifiers would lock out a paying subscriber the day a
+ * product is renamed in App Store Connect. A pass id is excluded in case a
+ * store ever reports a non-renewing purchase as a subscription.
+ */
+export function subscriptionActive(info: CustomerFacts): boolean {
+  return info.activeSubscriptions.some((id) => !isPass(id));
+}
+
+/**
+ * When a legacy pass runs out, from the latest purchase of one.
+ *
+ * RevenueCat cannot expire a non-renewing product: a non-renewing purchase
  * attached to an entitlement unlocks it "forever", with `expirationDate` null.
- * So the end is computed here, ninety days from the most recent programme
- * purchase. Latest, not first, because buying a second twelve weeks has to
- * extend access rather than be ignored.
+ * So the end is computed here, from the most recent pass purchase. Latest, not
+ * first, because a second purchase extended access rather than being ignored.
  *
  * Two sources, deliberately. `nonSubscriptionTransactions` is the documented
  * home for these purchases and is the usual answer. The active entitlement is
- * the belt to that brace: both `pass_12wk_*` products are attached to
- * `premium`, so if the transaction list is ever empty while the entitlement is
- * present — a restore whose receipts have not finished syncing, say — reading
- * only the list would return null, and the caller would be left treating a
- * permanently-granted entitlement as undated access. That is the precise shape
- * of "an expired pass unlocks the app for ever".
+ * the belt to that brace: if the transaction list is ever empty while the
+ * entitlement is present — a restore whose receipts have not finished syncing,
+ * say — reading only the list would return null, and a permanently granted
+ * entitlement would be left undated. That is the precise shape of "an expired
+ * pass unlocks the app for ever".
  */
-export function programEnd(info: CustomerFacts, bonusDays = 0): Date | null {
+export function passEnd(info: CustomerFacts, bonusDays = 0): Date | null {
   const stamps: number[] = [];
 
   for (const t of info.nonSubscriptionTransactions) {
-    if (!PROGRAM_IDS.includes(t.productIdentifier)) continue;
+    if (!isPass(t.productIdentifier)) continue;
     const ms = new Date(t.purchaseDate).getTime();
     if (Number.isFinite(ms)) stamps.push(ms);
   }
 
   for (const ent of Object.values(info.entitlements.active)) {
-    if (!PROGRAM_IDS.includes(ent.productIdentifier)) continue;
+    if (!isPass(ent.productIdentifier)) continue;
     if (Number.isFinite(ent.latestPurchaseDateMillis)) {
       stamps.push(ent.latestPurchaseDateMillis);
     }
   }
 
   if (stamps.length === 0) return null;
-  // Bonus days — free weeks from invites — extend the latest programme and
-  // never create one: with no purchase above, this has already returned null.
-  const days = PROGRAM_ACCESS_DAYS + Math.max(0, bonusDays);
+  // Bonus days — free days from invites — extend a pass and never create one:
+  // with no purchase above, this has already returned null.
+  const days = PASS_ACCESS_DAYS + Math.max(0, bonusDays);
   return new Date(Math.max(...stamps) + days * 86_400_000);
 }
 
-/** The monthly subscription, which RevenueCat does expire on its own. */
-export function monthlyActive(info: CustomerFacts): boolean {
-  return info.activeSubscriptions.includes(PRODUCTS.monthly);
-}
-
 /**
- * Whether an active entitlement was granted by a programme purchase.
+ * Whether an active entitlement was granted by a legacy pass.
  *
- * Disarms the catch-all at the bottom of `entitledIn`. Those products grant
- * `premium` with no expiry, so "some entitlement is active" stops being
- * evidence of current access the moment one of them is involved — it only says
- * twelve weeks were bought once.
+ * Those products grant `premium` with no expiry, so "some entitlement is
+ * active" stops being evidence of current access the moment one of them is
+ * involved — it only says a pass was bought once.
  */
-export function grantedByProgram(info: CustomerFacts): boolean {
-  return Object.values(info.entitlements.active).some((ent) =>
-    PROGRAM_IDS.includes(ent.productIdentifier),
-  );
+export function grantedByPass(info: CustomerFacts): boolean {
+  return Object.values(info.entitlements.active).some((ent) => isPass(ent.productIdentifier));
 }
 
 /** What `entitled` decided, and why — the reason is for diagnostics only. */
 export type AccessVerdict = {
   readonly entitled: boolean;
   readonly reason:
-    | 'monthly'
-    | 'program-active'
-    | 'program-expired'
-    | 'program-undated'
+    | 'subscription'
+    | 'entitlement'
     | 'other-entitlement'
+    | 'pass-active'
+    | 'pass-expired'
+    | 'pass-undated'
     | 'nothing';
 };
 
 /**
  * Whether this customer has access, in the order the answers can be trusted.
  *
- * The monthly subscription first, because RevenueCat expires it on its own. The
- * programme second, against the clock — the entitlement a non-renewing purchase
- * grants never lapses, so trusting it would sell twelve weeks and hand over the
- * app for ever. Any other active entitlement last.
- *
- * That last fallback is not laxity: this app sells one level of access, so an
- * active entitlement under any name means somebody paid. It exists because a
- * constant in the bundle and a string typed into a dashboard will drift, and
- * when they do the failure should be a line in a log rather than a locked-out
- * paying customer. It sits below the programme check so an expired pass cannot
- * be resurrected by the entitlement it created, and it is skipped entirely when
- * a programme product is what granted the entitlement.
+ * 1. A live subscription. RevenueCat expires these itself, so its word is
+ *    final, and it wins over everything below — a pass that ran out must not
+ *    hide a subscription bought after it.
+ * 2. An active entitlement granted by anything other than a pass: a
+ *    subscription the store reported only through the entitlement, or access
+ *    granted from the RevenueCat dashboard. This app sells one level of access,
+ *    so an active entitlement under any name means somebody paid; the name is
+ *    only checked to tell a drifted dashboard apart in the diagnostics.
+ * 3. A legacy pass, against the clock — the entitlement it grants never
+ *    lapses, so trusting it would turn a one-time purchase into the app for
+ *    ever.
+ * 4. A pass entitlement nothing dates is refused rather than honoured.
  */
 export function decideAccess(info: CustomerFacts, now: number, bonusDays = 0): AccessVerdict {
-  if (monthlyActive(info)) return { entitled: true, reason: 'monthly' };
+  if (subscriptionActive(info)) return { entitled: true, reason: 'subscription' };
 
-  const ends = programEnd(info, bonusDays);
+  const granting = Object.entries(info.entitlements.active).filter(
+    ([, ent]) => !isPass(ent.productIdentifier),
+  );
+  if (granting.length > 0) {
+    const named = granting.some(([key]) => key === ENTITLEMENT);
+    return { entitled: true, reason: named ? 'entitlement' : 'other-entitlement' };
+  }
+
+  const ends = passEnd(info, bonusDays);
   if (ends != null) {
     return now < ends.getTime()
-      ? { entitled: true, reason: 'program-active' }
-      : { entitled: false, reason: 'program-expired' };
+      ? { entitled: true, reason: 'pass-active' }
+      : { entitled: false, reason: 'pass-expired' };
   }
 
   if (Object.keys(info.entitlements.active).length === 0) {
     return { entitled: false, reason: 'nothing' };
   }
 
-  // A programme granted it, but nothing dated the purchase. Denying is the safe
-  // reading: a customer genuinely inside their ninety days gets in through the
-  // check above as soon as the receipt syncs, whereas honouring it would hand
-  // over the app permanently on one twelve-week purchase.
-  if (grantedByProgram(info)) return { entitled: false, reason: 'program-undated' };
+  // A pass granted it, but nothing dated the purchase. Denying is the safe
+  // reading: a customer genuinely inside their access gets in through the check
+  // above as soon as the receipt syncs, whereas honouring it would hand over the
+  // app permanently on one purchase.
+  return grantedByPass(info)
+    ? { entitled: false, reason: 'pass-undated' }
+    : { entitled: false, reason: 'nothing' };
+}
 
-  return { entitled: true, reason: 'other-entitlement' };
+/**
+ * Whether this customer has ever held paid access, whatever its state now.
+ *
+ * Read with `decideAccess` to tell a lapsed subscriber from somebody who never
+ * paid. Any of three traces is enough: an entitlement held at some point (the
+ * usual one, and it survives expiry), any purchase on the account, or a pass the
+ * app can date. A refund leaves the trace too, which is right — the expiry
+ * screen is about the history they have in the app, not about the money.
+ */
+export function hadAccess(info: CustomerFacts, bonusDays = 0): boolean {
+  if (Object.keys(info.entitlements.all).length > 0) return true;
+  if (info.allPurchasedProductIdentifiers.length > 0) return true;
+  return passEnd(info, bonusDays) != null;
 }
 
 /** The entitlement identifier the dashboard is expected to use, re-exported so

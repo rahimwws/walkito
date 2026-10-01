@@ -1,41 +1,48 @@
 import * as Haptics from 'expo-haptics';
 import { useEffect, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { AppState, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { programSummary, type ProgramSummary } from '@/entities/program';
-import { useReferral } from '@/entities/referral';
 import {
   OFFERINGS,
   PRINTED_PRICES as PRINTED,
   clearBrowsingLapsed,
+  discountPercent,
+  fetchShelf,
+  perWeek,
+  planOn,
   purchases,
   startBrowsingLapsed,
-  type Offering,
   type Plan,
+  type PlanPeriod,
+  type Shelf,
 } from '@/entities/purchase';
-import { accents, fonts, meterColors, palette } from '@/shared/config';
+import { useReferral } from '@/entities/referral';
+import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { formatPrice } from '@/shared/lib/money';
 import { useColorScheme } from '@/shared/lib/theme';
+import { PlanOption } from '@/shared/ui/plan-option';
 import { PrimaryButton } from '@/shared/ui/primary-button';
+import { LegalLinks, SubscriptionTerms, type DisclosedPlan } from '@/shared/ui/subscription-terms';
 
 /**
- * The end of the twelve weeks.
+ * A subscription that ended.
  *
- * Shown instead of the paywall to somebody whose programme access has run out,
+ * Shown instead of the paywall to somebody who has paid before and no longer
+ * does — a subscription cancelled or lapsed, or a legacy pass that ran out —
  * and the distinction is the point: this person is not being pitched, they are
- * being shown what they did. Every number on the screen is one they produced —
+ * being shown what they did. Every number at the top is one they produced —
  * their first retest against their last, their first logged morning against
- * their most recent, the sessions they actually completed. Nothing here is a
+ * their most recent, the sessions they actually completed. Nothing there is a
  * marketing figure, and anything without two real readings behind it is left
  * out rather than filled in.
  *
- * Three ways forward, in the order they serve the user rather than the revenue:
- * keep going monthly, run another twelve weeks, or neither. "Not now" is a real
- * door — it opens the app read-only, so twelve weeks of their own history is
- * never held hostage to a renewal. Only new sessions lock, which is enforced in
- * the session player rather than here.
+ * Below it, the same two plans the paywall sells, described the same way and
+ * with the same disclosure, then "Not now". That is a real door — it opens the
+ * app read-only, so their own history is never held hostage to a renewal. Only
+ * new sessions lock, which is enforced in the session player rather than here.
  */
 
 type Props = {
@@ -51,80 +58,174 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
-  const accent = accents[scheme];
   const insets = useSafeAreaInsets();
   const t = useT();
 
-  // Read once, on mount. These are finished measurements from a finished
-  // programme — nothing can change them while this screen is open, and
-  // re-deriving them on every render would re-scan the whole log for nothing.
+  // Read once, on mount. These are finished measurements — nothing can change
+  // them while this screen is open, and re-deriving them on every render would
+  // re-scan the whole log for nothing.
   const [summary] = useState<ProgramSummary>(() => programSummary());
   const invited = useReferral().discounted;
 
-  const [offering, setOffering] = useState<Offering | null>(null);
+  // Never the win-back offering: that belongs to somebody who walked away
+  // from a first purchase, and quoting it to a customer who has paid and
+  // stopped would teach them that waiting is cheaper than renewing. The invite
+  // price is different — it was earned, by sharing a code somebody used or by
+  // joining with one — and coming back is where a customer who has already
+  // paid finally gets to spend it.
+  const wanted = invited ? OFFERINGS.offer : OFFERINGS.standard;
+
+  const [shelf, setShelf] = useState<Shelf>({ offering: null, standard: null });
+  /** Set only by an answer from the store — see the same flag on the paywall.
+   * A fetch that failed leaves it false, so no plan is greyed out for it. */
+  const [loaded, setLoaded] = useState(false);
+  /** The last attempt to ask the store failed. Asked again on foreground and
+   * on Renew, as on the paywall. */
+  const [unreachable, setUnreachable] = useState(false);
+  const [attempt, setAttempt] = useState(0);
+
+  const stock = (next: Shelf) => {
+    setShelf(next);
+    setLoaded(true);
+    setUnreachable(false);
+  };
+
   useEffect(() => {
     if (!purchases.configured) return;
     let live = true;
-    // Never the win-back offering: that belongs to somebody who walked away
-    // from a first purchase, and quoting it to a customer who has paid once
-    // and finished the plan would teach them that waiting is cheaper than
-    // renewing. The invite price is different — it was earned, by sharing a
-    // code somebody used or by joining with one — and the renewal is where a
-    // customer who has already paid finally gets to spend it.
-    void purchases.offering(invited ? OFFERINGS.offer : OFFERINGS.standard).then((found) => {
-      if (live) setOffering(found);
-    });
+    fetchShelf(wanted).then(
+      (next) => {
+        if (live) stock(next);
+      },
+      () => {
+        if (live) setUnreachable(true);
+      },
+    );
     return () => {
       live = false;
     };
-  }, [invited]);
+  }, [wanted, attempt]);
 
-  const monthlyPlan = offering?.monthly ?? null;
-  const programPlan = offering?.program ?? null;
-  const currency = monthlyPlan?.product.currencyCode ?? programPlan?.product.currencyCode;
+  useEffect(() => {
+    if (loaded || !purchases.configured) return;
+    const subscription = AppState.addEventListener('change', (next) => {
+      if (next === 'active') setAttempt((n) => n + 1);
+    });
+    return () => subscription.remove();
+  }, [loaded]);
 
-  const monthlyText =
-    monthlyPlan?.product.display ?? formatPrice(PRINTED.monthly, currency);
-  const programText =
-    programPlan?.product.display ?? formatPrice(PRINTED.program, currency);
+  const annualPlan = planOn(shelf, 'annual');
+  const weeklyPlan = planOn(shelf, 'weekly');
+  const currency = annualPlan?.product.currencyCode ?? weeklyPlan?.product.currencyCode;
+  const money = (amount: number) => formatPrice(amount, currency);
 
-  const [busy, setBusy] = useState<'monthly' | 'program' | null>(null);
+  const annualAmount = annualPlan?.product.price ?? PRINTED.annual;
+  const annualText = annualPlan?.product.display ?? money(PRINTED.annual);
+  const weeklyText = weeklyPlan?.product.display ?? money(PRINTED.weekly);
+
+  /** The invite discount, from two store prices, or null — see the paywall. */
+  const fullAnnual = shelf.standard?.annual ?? null;
+  const offerPct =
+    annualPlan != null && fullAnnual != null
+      ? discountPercent(annualPlan.product.price, fullAnnual.product.price)
+      : null;
+
+  const annualMissing = loaded && annualPlan == null;
+  const weeklyMissing = loaded && weeklyPlan == null;
+
+  const [tier, setTier] = useState<PlanPeriod>('annual');
+  useEffect(() => {
+    if (!loaded) return;
+    if (annualMissing && !weeklyMissing && tier === 'annual') setTier('weekly');
+    else if (weeklyMissing && !annualMissing && tier === 'weekly') setTier('annual');
+  }, [loaded, annualMissing, weeklyMissing, tier]);
+
+  const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
 
-  const buy = async (which: 'monthly' | 'program', plan: Plan | null) => {
-    if (busy != null) return;
+  const unlocked = () => {
+    // Re-arm the read-only concession, so a *second* lapse meets this screen
+    // again rather than the browsing mode the first one was answered with.
+    clearBrowsingLapsed();
+    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+    onUnlocked?.();
+  };
+
+  const buy = async () => {
+    if (busy) return;
     setNotice(null);
 
-    // No plan means no store was reached. Reporting a failed charge here would
-    // describe a transaction that was never attempted.
+    const plan = tier === 'annual' ? annualPlan : weeklyPlan;
+    // No plan means the store never answered, or answered without this
+    // package. Reporting a failed charge here would describe a transaction
+    // that was never attempted.
     if (plan == null) {
+      if (purchases.configured && !loaded) {
+        // Ask again now — see the same branch on the paywall. A fresh answer
+        // fills the prices in; buying waits for a second tap.
+        setBusy(true);
+        try {
+          stock(await fetchShelf(wanted));
+          setBusy(false);
+          Haptics.selectionAsync();
+          return;
+        } catch {
+          setBusy(false);
+          setUnreachable(true);
+        }
+      }
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
-      setNotice(t('pages.expired.storeUnreachable'));
+      setNotice(loaded ? t('offer.planUnavailable') : t('offer.storeUnreachable'));
       return;
     }
 
-    setBusy(which);
+    setBusy(true);
     const result = await purchases.buy(plan);
-    setBusy(null);
+    setBusy(false);
 
     if (result.status === 'purchased') {
-      // Re-arm the read-only concession, so a *second* expiry meets this screen
-      // again rather than the browsing mode the first one was answered with.
-      clearBrowsingLapsed();
-      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-      onUnlocked?.();
+      unlocked();
       return;
     }
     // They backed out of Apple's sheet. They know; a message would be the app
     // commenting on their decision.
     if (result.status === 'cancelled') return;
+    // Waiting on Ask to Buy or a bank. Not an error; if it goes through, the
+    // store pushes the entitlement and the guard leaves this screen.
+    if (result.status === 'pending') {
+      setNotice(t('offer.pending'));
+      return;
+    }
     if (result.status === 'failed') {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
       setNotice(result.message);
       return;
     }
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
-    setNotice(t('pages.expired.storeUnreachable'));
+    setNotice(t('offer.storeUnreachable'));
+  };
+
+  /** A subscription renewed elsewhere — on another device, or in Settings —
+   * is found here, rather than by buying it a second time. */
+  const restore = async () => {
+    if (busy) return;
+    setNotice(null);
+    setBusy(true);
+    const result = await purchases.restore();
+    setBusy(false);
+
+    if (result.status === 'restored') {
+      unlocked();
+      return;
+    }
+    if (result.status === 'nothing-found') {
+      setNotice(t('offer.nothingRestored'));
+      return;
+    }
+    if (result.status === 'failed') {
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+      setNotice(t('offer.restoreFailed'));
+    }
   };
 
   const dismiss = () => {
@@ -133,13 +234,27 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
     onDismiss?.();
   };
 
+  const select = (period: PlanPeriod) => {
+    Haptics.selectionAsync();
+    setTier(period);
+  };
+
+  /** A store price, or no store at all — see `priced` on the paywall. The
+   * disclosure and the line over the button never quote a fallback figure
+   * while a real store has not answered. */
+  const priced = (plan: Plan | null) => plan != null || !purchases.configured;
+
+  const disclosed: DisclosedPlan[] = [
+    ...(annualMissing || !priced(annualPlan) ? [] : [{ period: 'annual' as const, price: annualText }]),
+    ...(weeklyMissing || !priced(weeklyPlan) ? [] : [{ period: 'weekly' as const, price: weeklyText }]),
+  ];
+  const ctaPriced = priced(tier === 'annual' ? annualPlan : weeklyPlan);
+  const shownNotice = notice ?? (unreachable ? t('offer.storeUnreachable') : null);
+
   return (
     <View style={styles.host}>
       <ScrollView
-        contentContainerStyle={[
-          styles.scroll,
-          { paddingTop: insets.top + 32, paddingBottom: 24 },
-        ]}
+        contentContainerStyle={[styles.scroll, { paddingTop: insets.top + 32, paddingBottom: 24 }]}
         showsVerticalScrollIndicator={false}>
         <Text style={[styles.title, { color: meter.ink }]}>{t('pages.expired.title')}</Text>
         <Text style={[styles.lede, { color: meter.caption }]}>
@@ -175,44 +290,63 @@ export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
         </View>
 
         <Text style={[styles.keeps, { color: meter.caption }]}>{t('pages.expired.keeps')}</Text>
+
+        <Text style={[styles.plansTitle, { color: meter.ink }]}>
+          {t('pages.expired.plansTitle')}
+        </Text>
+        <View accessibilityRole="radiogroup">
+          <PlanOption
+            title={t('offer.annualTitle')}
+            badge={offerPct != null ? t('offer.badgeOff', { percent: offerPct }) : undefined}
+            price={t('offer.annualPrice', { price: annualText })}
+            was={offerPct != null && fullAnnual != null ? fullAnnual.product.display : undefined}
+            note={t('offer.annualNote', { perWeek: money(perWeek(annualAmount)) })}
+            disabled={annualMissing}
+            selected={tier === 'annual' && !annualMissing}
+            onPress={() => select('annual')}
+          />
+          <PlanOption
+            title={t('offer.weeklyTitle')}
+            price={t('offer.weeklyPrice', { price: weeklyText })}
+            note={t('offer.weeklyNote')}
+            disabled={weeklyMissing}
+            selected={tier === 'weekly' && !weeklyMissing}
+            onPress={() => select('weekly')}
+          />
+        </View>
+
+        <SubscriptionTerms plans={disclosed} style={styles.terms} />
       </ScrollView>
 
-      <View style={[styles.foot, { paddingBottom: insets.bottom + 12 }]}>
-        {notice != null ? (
-          <Text style={[styles.notice, { color: accent.amber.fill }]}>{notice}</Text>
+      <View style={[styles.foot, { paddingBottom: insets.bottom + 8 }]}>
+        {shownNotice != null ? (
+          <Text style={[styles.notice, { color: meter.label }]}>{shownNotice}</Text>
+        ) : null}
+        {ctaPriced ? (
+          <Text style={[styles.ctaTerms, { color: meter.label }]}>
+            {tier === 'annual'
+              ? t('offer.ctaAnnual', { price: annualText })
+              : t('offer.ctaWeekly', { price: weeklyText })}
+          </Text>
         ) : null}
 
         <PrimaryButton
-          label={
-            busy === 'monthly'
-              ? t('pages.expired.busy')
-              : t('pages.expired.monthly', { price: monthlyText })
-          }
-          onPress={() => void buy('monthly', monthlyPlan)}
-          disabled={busy != null}
+          label={busy ? t('pages.expired.busy') : t('pages.expired.renew')}
+          onPress={() => void buy()}
+          disabled={busy}
         />
 
         <Pressable
           accessibilityRole="button"
-          onPress={() => void buy('program', programPlan)}
-          disabled={busy != null}
-          style={({ pressed }) => [styles.secondary, pressed && { opacity: 0.6 }]}>
-          <Text style={[styles.secondaryLabel, { color: meter.ink }]}>
-            {invited
-              ? t('pages.expired.programInvite', { price: programText })
-              : t('pages.expired.program', { price: programText })}
-          </Text>
-        </Pressable>
-
-        <Pressable
-          accessibilityRole="button"
           onPress={dismiss}
-          disabled={busy != null}
+          disabled={busy}
           style={({ pressed }) => [styles.tertiary, pressed && { opacity: 0.6 }]}>
           <Text style={[styles.tertiaryLabel, { color: meter.caption }]}>
             {t('pages.expired.notNow')}
           </Text>
         </Pressable>
+
+        <LegalLinks onRestore={() => void restore()} disabled={busy} />
       </View>
     </View>
   );
@@ -260,10 +394,11 @@ const styles = StyleSheet.create({
   to: fonts.heavy(32, -0.8),
   empty: fonts.medium(15, -0.2),
   keeps: { marginTop: 16, ...fonts.medium(13, -0.1) },
-  foot: { paddingHorizontal: 24, gap: 10 },
-  notice: { ...fonts.medium(13), textAlign: 'center' },
-  secondary: { alignItems: 'center', paddingVertical: 13 },
-  secondaryLabel: fonts.semibold(16, -0.2),
-  tertiary: { alignItems: 'center', paddingVertical: 8 },
+  plansTitle: { marginTop: 24, marginBottom: 4, ...fonts.bold(20, -0.4) },
+  terms: { marginTop: 12 },
+  foot: { paddingHorizontal: 24, paddingTop: 8, gap: 8 },
+  notice: { ...fonts.medium(13), lineHeight: 17, textAlign: 'center' },
+  ctaTerms: { ...fonts.medium(13), lineHeight: 17, textAlign: 'center' },
+  tertiary: { alignItems: 'center', paddingVertical: 6 },
   tertiaryLabel: fonts.medium(15, -0.2),
 });

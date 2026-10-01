@@ -156,7 +156,7 @@ export const NOTIFICATIONS_RU = {
   // ── Leaving the offer ────────────────────────────────────────────────────
   'notifications.offerWaitNamed': '{name}, подождите - скидка {percent}%',
   'notifications.offerWait': 'Подождите - скидка {percent}%',
-  'notifications.offerWaitBody': '12-недельная программа ждёт вас по сниженной цене. Нажмите, чтобы посмотреть.',
+  'notifications.offerWaitBody': 'Годовая подписка ждёт вас по сниженной цене. Нажмите, чтобы посмотреть.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   'notifications.expiryTitle': 'Доступ к программе закончится через неделю',

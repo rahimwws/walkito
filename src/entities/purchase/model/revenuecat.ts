@@ -1,21 +1,24 @@
-import { identify, setPerson, track, type PurchaseProps } from '@/shared/lib/analytics';
+import { identify, setPerson, track, type PlanTier, type PurchaseProps } from '@/shared/lib/analytics';
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 import { currentUserId, supabase } from '@/shared/lib/supabase';
 import Purchases, {
   LOG_LEVEL,
+  PACKAGE_TYPE,
+  PURCHASES_ERROR_CODE,
   type CustomerInfo,
   type PurchasesError,
   type PurchasesOffering,
   type PurchasesPackage,
 } from 'react-native-purchases';
 
-import { decideAccess, programEnd as programEndOf } from './access';
+import { decideAccess, hadAccess as hadAccessOf, passEnd as passEndOf } from './access';
 import {
   ENTITLEMENT,
-  PROGRAM_PACKAGE,
+  PACKAGES,
   type Offering,
   type Plan,
+  type PlanPeriod,
   type Product,
   type Purchases as Store,
   type PurchaseResult,
@@ -33,9 +36,12 @@ import {
 
 /** The last verdict, on this device. */
 const ENTITLED_KEY = 'purchase/entitled';
-/** The last invite bonus handed in, so a cold start dates access correctly
- * before the invite server has been asked again. */
+/** The last invite bonus handed in, so a cold start dates a legacy pass
+ * correctly before the invite server has been asked again. */
 const BONUS_KEY = 'purchase/bonus-days';
+/** Whether this customer has ever held access, so the first frame can tell a
+ * lapsed subscriber from a new one — see `hadAccess` on the contract. */
+const HAD_ACCESS_KEY = 'purchase/had-access';
 
 /**
  * Whether the subscription is live, cached from the last thing the store said.
@@ -66,7 +72,10 @@ const BONUS_KEY = 'purchase/bonus-days';
  * evidence yet.
  */
 let active = kv.getBoolean(ENTITLED_KEY) ?? false;
-/** Mirrors `programEnd` from the last customer info, so the contract's
+/** Mirrors `hadAccess` from the last customer info, seeded from storage for
+ * the same first-frame reason as `active`. */
+let had = kv.getBoolean(HAD_ACCESS_KEY) ?? false;
+/** Mirrors `passEnd` from the last customer info, so the contract's
  * synchronous getter has an answer without a round trip. */
 let lastEnd: Date | null = null;
 /** Free days from invites — see `setBonusDays` on the contract. */
@@ -83,7 +92,7 @@ const listeners = new Set<() => void>();
  * contract stays free of RevenueCat's types and the paywall cannot reach into
  * one. This is where the string is exchanged back.
  */
-const packages = new Map<string, PurchasesPackage>();
+const packages = new Map<string, { pkg: PurchasesPackage; period: PlanPeriod }>();
 
 /** Whether this person has been marked as a sandbox buyer in analytics yet. */
 let flaggedSandbox = false;
@@ -91,19 +100,22 @@ let flaggedSandbox = false;
 function announce(info: CustomerInfo) {
   lastInfo = info;
   flagSandbox(info);
-  const end = programEnd(info);
-  // A moved end date is news even when access did not flip: the expiry
-  // reminder is scheduled from it, and a friend's free weeks have to push that
+  const end = passEndOf(info, bonusDays);
+  // A moved end date is news even when access did not flip: the pass expiry
+  // reminder is scheduled from it, and a friend's free days have to push that
   // reminder back rather than leave it firing on the old date.
   const endMoved = end?.getTime() !== lastEnd?.getTime();
   lastEnd = end;
   const next = entitledIn(info);
+  const nextHad = hadAccessOf(info, bonusDays);
   // Written on every answer, including one that agrees with the cache: the
   // early return below skips the notify, not the persistence, and a verdict
   // that never changed still has to survive the next cold start.
   kv.set(ENTITLED_KEY, next);
-  if (next === active && !endMoved) return;
+  kv.set(HAD_ACCESS_KEY, nextHad);
+  if (next === active && nextHad === had && !endMoved) return;
   active = next;
+  had = nextHad;
   listeners.forEach((fire) => fire());
 }
 
@@ -134,10 +146,6 @@ function flagSandbox(info: CustomerInfo): void {
  * deciding whether somebody paid untested. `CustomerInfo` structurally
  * satisfies `CustomerFacts`, so it passes straight through.
  */
-function programEnd(info: CustomerInfo): Date | null {
-  return programEndOf(info, bonusDays);
-}
-
 function entitledIn(info: CustomerInfo): boolean {
   const verdict = decideAccess(info, Date.now(), bonusDays);
 
@@ -148,9 +156,23 @@ function entitledIn(info: CustomerInfo): boolean {
         'entities/purchase/model/purchase.ts to the identifier the dashboard actually uses.',
     );
   }
-  if (__DEV__ && verdict.reason === 'program-undated') {
+  if (
+    __DEV__ &&
+    verdict.reason === 'subscription' &&
+    info.entitlements.active[ENTITLEMENT] == null
+  ) {
+    // Let in on the store's word, which is right for the customer — but the
+    // dashboard is missing a link, and RevenueCat's own charts, webhooks and
+    // the PostHog integration all key on the entitlement.
     console.warn(
-      '[purchases] A programme product granted an entitlement but no purchase date came ' +
+      `[purchases] Subscribed to "${info.activeSubscriptions.join('", "')}" but no ` +
+        `"${ENTITLEMENT}" entitlement is active. Attach the product to "${ENTITLEMENT}" in ` +
+        'the RevenueCat dashboard (Product catalog → Entitlements).',
+    );
+  }
+  if (__DEV__ && verdict.reason === 'pass-undated') {
+    console.warn(
+      '[purchases] A legacy pass granted an entitlement but no purchase date came ' +
         'back, so access cannot be dated and is being refused. Check ' +
         'nonSubscriptionTransactions in the customer info.',
     );
@@ -198,18 +220,58 @@ function wasCancelled(error: unknown): boolean {
   return (error as PurchasesError | undefined)?.userCancelled === true;
 }
 
-function messageFrom(error: unknown): string {
-  const text = (error as { message?: unknown } | undefined)?.message;
-  return typeof text === 'string' && text.length > 0
-    ? text
-    : 'That didn’t go through. No charge was made.';
+/**
+ * Whether a thrown purchase error is a purchase waiting on somebody else.
+ *
+ * Ask to Buy, or a bank's own confirmation step. RevenueCat rejects with it,
+ * but nothing failed and nothing was charged: if the parent or the bank says
+ * yes, the entitlement arrives later through the customer info listener.
+ */
+function wasPending(error: unknown): boolean {
+  return (error as PurchasesError | undefined)?.code === PURCHASES_ERROR_CODE.PAYMENT_PENDING_ERROR;
+}
+
+/**
+ * What to tell the user about a store error, in their language.
+ *
+ * Never the SDK's own message: that is English whatever the app is set to, and
+ * written for a developer ("The receipt is not valid"). The few codes a person
+ * can act on get a sentence that says what to do; everything else gets the
+ * one thing that is always true of a failed purchase, that nothing was taken.
+ */
+function messageFor(error: unknown): string {
+  // Non-React: resolved per call, so a language switched after launch is
+  // reflected.
+  const t = translatorFor(getLanguage());
+  switch ((error as PurchasesError | undefined)?.code) {
+    case PURCHASES_ERROR_CODE.NETWORK_ERROR:
+    case PURCHASES_ERROR_CODE.OFFLINE_CONNECTION_ERROR:
+    case PURCHASES_ERROR_CODE.STORE_PROBLEM_ERROR:
+    case PURCHASES_ERROR_CODE.PRODUCT_REQUEST_TIMED_OUT_ERROR:
+    case PURCHASES_ERROR_CODE.UNEXPECTED_BACKEND_RESPONSE_ERROR:
+    case PURCHASES_ERROR_CODE.UNKNOWN_BACKEND_ERROR:
+    case PURCHASES_ERROR_CODE.API_ENDPOINT_BLOCKED:
+      return t('offer.storeUnreachable');
+    case PURCHASES_ERROR_CODE.PURCHASE_NOT_ALLOWED_ERROR:
+      return t('offer.purchaseNotAllowed');
+    case PURCHASES_ERROR_CODE.PRODUCT_NOT_AVAILABLE_FOR_PURCHASE_ERROR:
+      return t('offer.planUnavailable');
+    case PURCHASES_ERROR_CODE.PRODUCT_ALREADY_PURCHASED_ERROR:
+      return t('offer.alreadyOwned');
+    default:
+      return t('offer.purchaseFailed');
+  }
 }
 
 /** A package as the app sees it: a price to print and a token to buy with. */
-function toPlan(offeringId: string, pkg: PurchasesPackage | null): Plan | null {
+function toPlan(
+  offeringId: string,
+  pkg: PurchasesPackage | null,
+  period: PlanPeriod,
+): Plan | null {
   if (pkg == null) return null;
   const token = `${offeringId}:${pkg.identifier}`;
-  packages.set(token, pkg);
+  packages.set(token, { pkg, period });
   const product: Product = {
     id: pkg.product.identifier,
     price: pkg.product.price,
@@ -218,19 +280,40 @@ function toPlan(offeringId: string, pkg: PurchasesPackage | null): Plan | null {
     // wrong side in half of Europe and the separator wrong in the other half.
     display: pkg.product.priceString,
   };
-  return { token, product };
+  return { token, period, product };
+}
+
+/**
+ * One of the two plans in an offering.
+ *
+ * RevenueCat's own slot first — `$rc_annual` and `$rc_weekly` are what the
+ * dashboard is expected to use (see `PACKAGES`). The fallbacks keep a plan on
+ * sale when a package was created under a custom identifier: the same
+ * identifier typed by hand, then any package whose product bills over that
+ * period. Without them a dashboard typo shows as a plan that is simply not
+ * there, which is the hardest version of the mistake to notice.
+ */
+function slot(
+  found: PurchasesOffering,
+  period: PlanPeriod,
+): PurchasesPackage | null {
+  const named = period === 'annual' ? found.annual : found.weekly;
+  if (named != null) return named;
+  const id = PACKAGES[period];
+  const type = period === 'annual' ? PACKAGE_TYPE.ANNUAL : PACKAGE_TYPE.WEEKLY;
+  const iso = period === 'annual' ? 'P1Y' : 'P1W';
+  return (
+    found.availablePackages.find((pkg) => pkg.identifier === id || pkg.packageType === type) ??
+    found.availablePackages.find((pkg) => pkg.product.subscriptionPeriod === iso) ??
+    null
+  );
 }
 
 function toOffering(found: PurchasesOffering): Offering {
-  // The programme is a custom package, so it is looked up by identifier rather
-  // than read off one of RevenueCat's named slots — `annual`, `monthly` and the
-  // rest only cover its own package types, and a non-renewing pass is not one.
-  const program =
-    found.availablePackages.find((pkg) => pkg.identifier === PROGRAM_PACKAGE) ?? null;
   return {
     identifier: found.identifier,
-    monthly: toPlan(found.identifier, found.monthly),
-    program: toPlan(found.identifier, program),
+    annual: toPlan(found.identifier, slot(found, 'annual'), 'annual'),
+    weekly: toPlan(found.identifier, slot(found, 'weekly'), 'weekly'),
   };
 }
 
@@ -315,10 +398,11 @@ export async function setAcquisitionSource(source: string): Promise<void> {
   }
 }
 
-/** What a purchase event says about the plan behind a token. */
-function purchaseProps(pkg: PurchasesPackage, offering: string): PurchaseProps {
+/** What a purchase event says about the plan behind a token. The price is a
+ * funnel property, never revenue — RevenueCat reports that server-side. */
+function purchaseProps(pkg: PurchasesPackage, plan: PlanTier, offering: string): PurchaseProps {
   return {
-    plan: pkg.identifier === PROGRAM_PACKAGE ? 'program' : 'monthly',
+    plan,
     product_id: pkg.product.identifier,
     offering,
     price: pkg.product.price,
@@ -340,24 +424,21 @@ export const revenueCatStore: Store = {
   configured: true,
 
   async offering(identifier: string): Promise<Offering | null> {
-    try {
-      const all = await Purchases.getOfferings();
-      // By name first, then whatever the dashboard marks current. The fallback
-      // matters for `default`, which RevenueCat exposes as `current` rather
-      // than under that key in some dashboard configurations.
-      const found = all.all[identifier] ?? (identifier === 'default' ? all.current : null);
-      return found == null ? null : toOffering(found);
-    } catch {
-      // Null, not an empty offering. The paywall distinguishes "no store" from
-      // "a store with nothing in it", and only the first is allowed to fall
-      // back to printed figures.
-      return null;
-    }
+    // No catch, on purpose: a fetch that failed rejects. It used to resolve
+    // null, which the paywall could not tell from a dashboard with no such
+    // offering — so one dropped connection greyed every plan out for good and
+    // left the only door into the app shut. See `offering` on the contract.
+    const all = await Purchases.getOfferings();
+    // By name first, then whatever the dashboard marks current. The fallback
+    // matters for `default`, which RevenueCat exposes as `current` rather than
+    // under that key in some dashboard configurations.
+    const found = all.all[identifier] ?? (identifier === 'default' ? all.current : null);
+    return found == null ? null : toOffering(found);
   },
 
   async buy(plan: Plan): Promise<PurchaseResult> {
-    const pkg = packages.get(plan.token);
-    if (pkg == null) {
+    const held = packages.get(plan.token);
+    if (held == null) {
       // The token came from an offering fetched in this process, so a miss
       // means the app is trying to buy something it never displayed.
       return {
@@ -367,7 +448,8 @@ export const revenueCatStore: Store = {
         message: translatorFor(getLanguage())('purchase.unavailable'),
       };
     }
-    const props = purchaseProps(pkg, plan.token.split(':')[0]);
+    const { pkg, period } = held;
+    const props = purchaseProps(pkg, period, plan.token.split(':')[0]);
     track('purchase_started', props);
     try {
       const { customerInfo } = await Purchases.purchasePackage(pkg);
@@ -386,18 +468,22 @@ export const revenueCatStore: Store = {
       explainMissingEntitlement(customerInfo);
       return {
         status: 'failed',
-        message: 'The purchase went through but didn’t unlock. Try Restore.',
+        message: translatorFor(getLanguage())('offer.notUnlocked'),
       };
     } catch (error) {
       if (wasCancelled(error)) {
         track('purchase_cancelled', props);
         return { status: 'cancelled' };
       }
+      if (wasPending(error)) {
+        track('purchase_pending', props);
+        return { status: 'pending' };
+      }
       track('purchase_failed', {
         ...props,
         reason: String((error as PurchasesError | undefined)?.code ?? 'unknown'),
       });
-      return { status: 'failed', message: messageFrom(error) };
+      return { status: 'failed', message: messageFor(error) };
     }
   },
 
@@ -410,7 +496,7 @@ export const revenueCatStore: Store = {
       return restored ? { status: 'restored' } : { status: 'nothing-found' };
     } catch (error) {
       track('restore_completed', { status: 'failed' });
-      return { status: 'failed', message: messageFrom(error) };
+      return { status: 'failed', message: messageFor(error) };
     }
   },
 
@@ -423,17 +509,19 @@ export const revenueCatStore: Store = {
 
   refresh: refreshEntitlement,
 
-  programEndsAt: () => lastEnd,
+  hadAccess: () => had,
+
+  passEndsAt: () => lastEnd,
 
   setBonusDays(days) {
     const next = Math.max(0, Math.floor(days));
     if (!Number.isFinite(next) || next === bonusDays) return;
     bonusDays = next;
     kv.set(BONUS_KEY, next);
-    // Re-judged on the spot against what the store last said: a friend joining
-    // can bring back access that had just run out, and waiting for the next
-    // store round trip to notice would leave the user staring at the renewal
-    // screen with free weeks already in hand.
+    // Re-judged on the spot against what the store last said: for a legacy
+    // pass, a friend joining can bring back access that had just run out. For a
+    // subscriber nothing moves — the days only ever date a pass — so this is a
+    // cheap no-op there.
     if (lastInfo != null) announce(lastInfo);
   },
 };

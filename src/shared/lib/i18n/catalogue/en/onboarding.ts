@@ -359,18 +359,25 @@ export const ONBOARDING_EN = {
   'onboarding.sendPlan.send': 'Send it',
   'onboarding.plan.title': 'Your plan',
   'onboarding.plan.blurb': 'Built from your answers.',
-  'onboarding.plan.recommended': 'Recommended',
+  /** The plan's name, set large over the rest. Two, picked by what they said
+   * about their running: already running, or starting out. Names, not
+   * lengths — the plan has no end. */
+  'onboarding.plan.wordmarkMomentum': 'Momentum',
+  'onboarding.plan.wordmarkFoundations': 'Foundations',
   /**
-   * The headline figure. A plural entry on the weeks, which is the number that
-   * moves — `{sessions}` is the three loaded days the protocol is built on and
-   * is fixed by the programme, so it rides along as a plain substitution.
+   * The headline figure: sessions a week, the days they chose. No length,
+   * because the plan has none — it is built a week at a time and a reached goal
+   * hands over to the next, so a count of weeks here would promise an end the
+   * app never reaches.
    */
   'onboarding.plan.meta': {
-    one: '{count} week · {sessions} sessions a week',
-    other: '{count} weeks · {sessions} sessions a week',
+    one: '{count} session a week',
+    other: '{count} sessions a week',
   },
   'onboarding.plan.week': 'Week {n}',
   'onboarding.plan.weeks': 'Weeks {from}–{to}',
+  /** The last row, left open: the plan carries on past it. "Weeks 9+". */
+  'onboarding.plan.weeksOn': 'Weeks {from}+',
   'onboarding.plan.phaseSettle': 'settle the irritation',
   'onboarding.plan.phaseBuild': 'build the arch',
   'onboarding.plan.phaseLoad': 'back to full load',
@@ -459,8 +466,10 @@ export const ONBOARDING_EN = {
 
   // ── Referral ─────────────────────────────────────────────────────────────
   'onboarding.referral.title': 'Have a referral code?',
-  'onboarding.referral.blurb': 'Enter it for {percent}% off your plan.',
-  'onboarding.referral.applied': '{percent}% off applied.',
+  /** The annual subscription by name: the invite price is on the annual plan
+   * only, and the weekly one is never discounted. */
+  'onboarding.referral.blurb': 'Enter it for {percent}% off the annual subscription.',
+  'onboarding.referral.applied': '{percent}% off the annual subscription applied.',
   /** Every one of these is an ordinary thing a person can do, so none is
    * phrased as an error the user caused. */
   'onboarding.referral.unknown': 'We don’t know that code. Check it and try again.',

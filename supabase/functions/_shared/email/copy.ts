@@ -90,18 +90,19 @@ export type Copy = {
     savedPlain: string;
     button: string;
   };
+  /** The offer price is the annual subscription's, so that is what these name. */
   offer: {
     subject: (percent: number | null) => string;
     ready: (goalTitle: string, current: string, target: string) => string;
     readyPlain: (goalTitle: string) => string;
-    price: (weeks: number, price: string, standard: string) => string;
-    priceUnknown: (weeks: number) => string;
+    price: (price: string, standard: string) => string;
+    priceUnknown: string;
     button: (percent: number | null) => string;
   };
   offerFinal: {
     subject: string;
-    price: (weeks: number, price: string) => string;
-    priceUnknown: (weeks: number) => string;
+    price: (price: string) => string;
+    priceUnknown: string;
     button: (price: string | null) => string;
   };
   weekly: {
@@ -183,7 +184,7 @@ const EN: Copy = {
   },
   day10Keep: {
     subject: 'most people quit in week 4',
-    notBecause: 'not because it stops working - because it starts working, and they stop.',
+    notBecause: "most people quit too early. don't.",
     painDrop: (s, l) => `your mornings went from ${s} to ${l}. that's the part people quit on.`,
     daysIn: (d) => `${d} ${two(d, 'day', 'days')} in. keep going.`,
     button: (m) => `do today's ${minutesEn(m)}`,
@@ -256,14 +257,14 @@ const EN: Copy = {
     subject: (p) => (p != null ? `your plan is saved - ${p}% off` : 'your plan is saved - at a lower price'),
     ready: (goal, current, target) => `your plan for ${goal} is ready: ${current} now, ${target} is the goal.`,
     readyPlain: (goal) => `your plan for ${goal} is ready and waiting.`,
-    price: (w, price, standard) => `the ${w}-week program is ${price} instead of ${standard}.`,
-    priceUnknown: (w) => `the ${w}-week program costs less right now.`,
+    price: (price, standard) => `the annual subscription is ${price} instead of ${standard}.`,
+    priceUnknown: 'the annual subscription costs less right now.',
     button: (p) => (p != null ? `get ${p}% off` : 'see the offer'),
   },
   offerFinal: {
     subject: 'last one from us',
-    price: (w, price) => `the ${w}-week program for ${price}. after this, no more offers.`,
-    priceUnknown: (w) => `the ${w}-week program at our lowest price. after this, no more offers.`,
+    price: (price) => `the annual subscription for ${price}. after this, no more offers.`,
+    priceUnknown: 'the annual subscription at our lowest price. after this, no more offers.',
     button: (price) => (price != null ? `get it for ${price}` : 'see the offer'),
   },
   weekly: {
@@ -357,7 +358,7 @@ const RU: Copy = {
   },
   day10Keep: {
     subject: 'большинство бросает на 4-й неделе',
-    notBecause: 'не потому, что перестаёт работать, а потому, что начинает - и люди останавливаются.',
+    notBecause: 'большинство бросают слишком рано. не бросайте.',
     painDrop: (s, l) => `утром было ${s} из 10, теперь ${l}. именно на этом месте люди и бросают.`,
     daysIn: (d) => three(d, `уже ${d} день. продолжайте.`, `уже ${d} дня. продолжайте.`, `уже ${d} дней. продолжайте.`),
     button: (m) =>
@@ -470,14 +471,14 @@ const RU: Copy = {
     subject: (p) => (p != null ? `ваш план сохранён - скидка ${p}%` : 'ваш план сохранён - и стал дешевле'),
     ready: (goal, current, target) => `ваш план «${goal}» готов: сейчас ${current}, цель - ${target}.`,
     readyPlain: (goal) => `ваш план «${goal}» готов и ждёт вас.`,
-    price: (w, price, standard) => `${w}-недельная программа - ${price} вместо ${standard}.`,
-    priceUnknown: (w) => `сейчас ${w}-недельная программа стоит дешевле.`,
+    price: (price, standard) => `годовая подписка - ${price} вместо ${standard}.`,
+    priceUnknown: 'сейчас годовая подписка стоит дешевле.',
     button: (p) => (p != null ? `получить скидку ${p}%` : 'посмотреть предложение'),
   },
   offerFinal: {
     subject: 'последнее предложение от нас',
-    price: (w, price) => `${w}-недельная программа за ${price}. больше предложений не будет.`,
-    priceUnknown: (w) => `${w}-недельная программа по самой низкой цене. больше предложений не будет.`,
+    price: (price) => `годовая подписка за ${price}. больше предложений не будет.`,
+    priceUnknown: 'годовая подписка по самой низкой цене. больше предложений не будет.',
     button: (price) => (price != null ? `получить за ${price}` : 'посмотреть предложение'),
   },
   weekly: {
@@ -577,7 +578,7 @@ const ES: Copy = {
   },
   day10Keep: {
     subject: 'la mayoría lo deja en la semana 4',
-    notBecause: 'no porque deje de funcionar, sino porque empieza a funcionar, y paran.',
+    notBecause: 'la mayoría lo deja demasiado pronto. tú no lo dejes.',
     painDrop: (s, l) => `tus mañanas pasaron de ${s} a ${l}. justo ahí es donde la gente lo deja.`,
     daysIn: (d) => `llevas ${d} ${two(d, 'día', 'días')}. sigue así.`,
     button: (m) => (m === 1 ? 'hacer el minuto de hoy' : `hacer los ${m} minutos de hoy`),
@@ -654,14 +655,14 @@ const ES: Copy = {
     subject: (p) => (p != null ? `tu plan está guardado - ${p}% de descuento` : 'tu plan está guardado - ahora más barato'),
     ready: (goal, current, target) => `tu plan para ${goal} está listo: ${current} ahora, meta ${target}.`,
     readyPlain: (goal) => `tu plan para ${goal} está listo y te espera.`,
-    price: (w, price, standard) => `el programa de ${w} semanas cuesta ${price} en lugar de ${standard}.`,
-    priceUnknown: (w) => `ahora el programa de ${w} semanas cuesta menos.`,
+    price: (price, standard) => `la suscripción anual cuesta ${price} en lugar de ${standard}.`,
+    priceUnknown: 'ahora la suscripción anual cuesta menos.',
     button: (p) => (p != null ? `conseguir el ${p}% de descuento` : 'ver la oferta'),
   },
   offerFinal: {
     subject: 'nuestra última oferta',
-    price: (w, price) => `el programa de ${w} semanas por ${price}. después de esto, no habrá más ofertas.`,
-    priceUnknown: (w) => `el programa de ${w} semanas a nuestro precio más bajo. después de esto, no habrá más ofertas.`,
+    price: (price) => `la suscripción anual por ${price}. después de esto, no habrá más ofertas.`,
+    priceUnknown: 'la suscripción anual a nuestro precio más bajo. después de esto, no habrá más ofertas.',
     button: (price) => (price != null ? `conseguirlo por ${price}` : 'ver la oferta'),
   },
   weekly: {

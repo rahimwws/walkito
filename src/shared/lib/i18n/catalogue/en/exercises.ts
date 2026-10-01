@@ -52,7 +52,7 @@ export const EXERCISES_EN = {
   'exercises.heelRaiseTowel.cue': 'Towel under the toes. Without it you’re just training calves.',
 
   'exercises.heelRaisePlain.title': 'Single-leg raises',
-  'exercises.heelRaisePlain.rationale': 'The version you keep after the program ends.',
+  'exercises.heelRaisePlain.rationale': 'The simple version that keeps the strength you have built.',
   'exercises.heelRaisePlain.cue': 'Three seconds up, three down. Speed is what makes it useless.',
 
   // ── Intrinsic foot work ──────────────────────────────────────────────────

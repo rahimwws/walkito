@@ -13,13 +13,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useStreak } from '@/entities/program';
 import { firstName, useProfileEmail, useProfileName } from '@/entities/profile';
-import {
-  REFERRAL_BONUS_MAX_INVITES,
-  REFERRAL_BONUS_WEEKS,
-  referralBonusDays,
-  referralsAvailable,
-  useReferral,
-} from '@/entities/referral';
+import { REFERRAL_DISCOUNT_PERCENT, referralsAvailable, useReferral } from '@/entities/referral';
 import { SUPPORT_EMAIL, accents, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
@@ -111,19 +105,11 @@ export function ProfilePage() {
                   ? t('profile.invitesJoined', { count: referral.invites })
                   : undefined
               }
-              // What an invite is worth to them, under the label. Before the
-              // first friend it is the offer; after, the weeks already added
-              // to their programme — the one figure that says sharing did
-              // something.
-              hint={
-                referral.invites === 0
-                  ? t('profile.weeksPerFriend', { count: REFERRAL_BONUS_WEEKS })
-                  : referral.invites >= REFERRAL_BONUS_MAX_INVITES
-                    ? t('profile.weeksEarnedMax', {
-                        count: referralBonusDays(referral.invites) / 7,
-                      })
-                    : t('profile.weeksEarned', { count: referralBonusDays(referral.invites) / 7 })
-              }
+              // What an invite is worth, under the label: the friend's
+              // discount. It used to count the free weeks the owner had earned,
+              // which a subscriber never actually received — an App Store
+              // subscription cannot be lengthened from the device.
+              hint={t('profile.inviteHint', { percent: REFERRAL_DISCOUNT_PERCENT })}
               onPress={() => {
                 Haptics.selectionAsync();
                 setGiftOpen(true);

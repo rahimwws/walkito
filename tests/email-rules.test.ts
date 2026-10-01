@@ -150,10 +150,9 @@ describe('offers', () => {
   const paywall = (d: number) => ({
     firstAt: day(d, 12).toISOString(),
     lastAt: day(d, 12).toISOString(),
-    offerPrice: '$14.99',
-    standardPrice: '$49.99',
-    percent: 70,
-    weeks: 12,
+    offerPrice: '$29.99',
+    standardPrice: '$44.99',
+    percent: 33,
   });
 
   test('offer goes 4-7 days after the paywall, offer_final 14 days after', () => {
@@ -168,10 +167,24 @@ describe('offers', () => {
     expect(e.skipped.find((x) => x.key === 'offer')?.reason).toBe('already paying');
   });
 
+  test('a subscription that ended gets no offer email', () => {
+    // A weekly subscriber who cancelled is expired inside both windows. The
+    // app sends them to the expiry screen, which never sells this price.
+    for (const [d, key] of [
+      [5, 'offer'],
+      [15, 'offer_final'],
+    ] as const) {
+      const at = day(d);
+      const e = evaluate(user({ subscription: 'expired', paywall: paywall(1), profile: freshAt(at) }), at);
+      expect(['offer', 'offer_final']).not.toContain(e.decision?.key);
+      expect(e.skipped.find((x) => x.key === key)?.reason).toBe('subscription ended');
+    }
+  });
+
   test('the offer carries the store price', () => {
     const e = evaluate(user({ subscription: 'none', paywall: paywall(1), profile: freshAt(day(5)) }), day(5));
-    expect(e.decision?.content.subject).toBe('your plan is saved - 70% off');
-    expect(e.decision?.content.paragraphs.join(' ')).toContain('$14.99 instead of $49.99');
+    expect(e.decision?.content.subject).toBe('your plan is saved - 33% off');
+    expect(e.decision?.content.paragraphs.join(' ')).toContain('the annual subscription is $29.99 instead of $44.99');
   });
 });
 
@@ -229,7 +242,7 @@ describe('coming back', () => {
     const at = day(40, 8);
     const s = user({
       profile: { ...freshAt(at) },
-      paywall: { firstAt: day(26).toISOString(), lastAt: day(26).toISOString(), offerPrice: null, standardPrice: null, percent: null, weeks: 12 },
+      paywall: { firstAt: day(26).toISOString(), lastAt: day(26).toISOString(), offerPrice: null, standardPrice: null, percent: null },
       subscription: 'none',
       log: [sent('winback_21', day(30))],
     });

@@ -26,10 +26,19 @@ import { refresh, referralBonusDays, useReferral } from '@/entities/referral';
  *    notification finds the discount already applied rather than a screen that
  *    has not caught up.
  *
- * 4. Hands the free weeks earned by invites to the store, which dates access.
- *    Here because this is the one layer allowed to know about both: the
- *    invite entity cannot import the purchase one, and should not — the store
- *    only needs a number of days, not where they came from.
+ * 4. Hands the free days earned by invites to the store. Here because this is
+ *    the one layer allowed to know about both: the invite entity cannot import
+ *    the purchase one, and should not — the store only needs a number of days,
+ *    not where they came from.
+ *
+ *    What the days do today is narrow: they lengthen a legacy one-time pass,
+ *    the only access the app dates itself. An App Store subscription cannot be
+ *    extended from the device — that takes a server-side grant (a RevenueCat
+ *    promotional entitlement) or an Apple offer code — so for a subscriber the
+ *    call is a harmless no-op. Which is why nothing in the app, the push or
+ *    the Terms promises the code's owner free weeks any more: only legacy pass
+ *    holders, all of them sandbox and TestFlight buyers, could ever get them.
+ *    Promise the reward again only once a server-side grant delivers it.
  *
  * Every step is silent on failure. None of this is worth an error in front of
  * someone who did not ask for any of it.

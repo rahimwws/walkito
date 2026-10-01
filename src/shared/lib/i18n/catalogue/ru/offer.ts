@@ -8,6 +8,9 @@
  *
  * Nothing here is a price. Every amount arrives as `{price}` or `{perWeek}`,
  * already formatted for the user's storefront — see the note in `../en/offer.ts`.
+ *
+ * Plan titles are «На год» / «На неделю» rather than «Годовая» / «Недельная»:
+ * the adjective alone leaves the reader to supply «подписка».
  */
 export const OFFER_RU = {
   // ── Paywall: what the app is ─────────────────────────────────────────────
@@ -19,58 +22,49 @@ export const OFFER_RU = {
   'offer.featureProgressBlurb': 'Смотрите, как готовность растёт неделя за неделей.',
 
   // ── Paywall: headline ────────────────────────────────────────────────────
-  'offer.limited': 'Только сейчас - один раз',
+  'offer.comebackBadge': 'Цена за возвращение',
   'offer.inviteBadge': 'Цена по приглашению',
-  'offer.headlineInvite': 'Ваша цена по приглашению: 12-недельная программа',
-  'offer.headlineComeback': 'Ваша цена за возвращение: 12-недельная программа',
-  'offer.headlineSave': {
-    one: 'Заплатите один раз за {count} месяц и сэкономьте {percent}%',
-    few: 'Заплатите один раз за {count} месяца и сэкономьте {percent}%',
-    many: 'Заплатите один раз за {count} месяцев и сэкономьте {percent}%',
-  },
-  'offer.headlinePlain': {
-    one: 'Заплатите один раз за {count} месяц - или платите помесячно',
-    few: 'Заплатите один раз за {count} месяца - или платите помесячно',
-    many: 'Заплатите один раз за {count} месяцев - или платите помесячно',
-  },
-  'offer.subWeeks': {
-    one: 'Ваш план на {count} неделю и всё, что вокруг него.',
-    few: 'Ваш план на {count} недели и всё, что вокруг него.',
-    many: 'Ваш план на {count} недель и всё, что вокруг него.',
-  },
+  'offer.headline': 'Откройте Walkito Premium',
+  'offer.headlineInvite': 'Ваша цена по приглашению на год Walkito Premium',
+  'offer.headlineComeback': 'Ваша цена за возвращение на год Walkito Premium',
   'offer.sub': 'Ваш план и всё, что вокруг него.',
 
-  // ── Paywall: the two rows ────────────────────────────────────────────────
-  'offer.programTitle': '12-недельная программа',
-  'offer.programPrice': '{price} разово',
-  'offer.programNote': {
-    one: '{count} месяц доступа · {perWeek}/нед. · Без подписки',
-    few: '{count} месяца доступа · {perWeek}/нед. · Без подписки',
-    many: '{count} месяцев доступа · {perWeek}/нед. · Без подписки',
-  },
-  // Согласовано с «программой» в названии строки.
-  'offer.programActive': 'Активна',
-  'offer.programActiveUntil': 'До {date}',
+  // ── Paywall: the two plans ───────────────────────────────────────────────
+  'offer.annualTitle': 'На год',
+  'offer.annualPrice': '{price} в год',
+  'offer.annualNote': '{perWeek} в неделю, оплата раз в год',
+  'offer.annualNoteSave': '{perWeek} в неделю · На {percent}% выгоднее, чем по неделям',
+  'offer.weeklyTitle': 'На неделю',
+  'offer.weeklyPrice': '{price} в неделю',
+  'offer.weeklyNote': 'Оплата каждую неделю · Отмена в любой момент',
+  'offer.badgeBest': 'Выгоднее всего',
   'offer.badgeOff': 'Скидка {percent}%',
-  'offer.badgeSave': 'Экономия {percent}%',
-  'offer.monthlyTitle': 'Помесячно',
-  'offer.monthlyPrice': '{price}/мес.',
-  'offer.monthlyNote': '{perWeek}/нед. · Отмена в любой момент',
 
   // ── Paywall: billing terms ───────────────────────────────────────────────
-  'offer.termsProgram':
-    '12-недельная программа: разовый платёж {price} за 12 недель доступа. Не продлевается, повторно деньги не списываются.',
-  'offer.termsMonthly':
-    'Помесячно: {price} в месяц. Продлевается автоматически, если не отменить подписку не позднее чем за 24 часа до конца текущего периода. Управлять подпиской или отменить её можно в настройках учётной записи App Store.',
-  'offer.linkTerms': 'Условия',
-  'offer.linkPrivacy': 'Конфиденциальность',
+  'offer.ctaAnnual': '{price} в год, продлевается автоматически. Отменить можно в любой момент.',
+  'offer.ctaWeekly': '{price} в неделю, продлевается автоматически. Отменить можно в любой момент.',
+  'offer.termsIncluded':
+    'Walkito Premium открывает полный доступ: адаптивный план, все сессии и комплексы, ретесты и отслеживание прогресса.',
+  'offer.termsAnnual': 'Подписка на год: {price} в год.',
+  'offer.termsWeekly': 'Подписка на неделю: {price} в неделю.',
+  'offer.termsRenewal':
+    'Оплата списывается с вашего аккаунта Apple при подтверждении покупки. Подписка продлевается автоматически на тот же срок и по той же цене, если не отменить её не позднее чем за 24 часа до конца текущего периода; оплата за продление списывается в течение 24 часов до его окончания. Управлять подпиской и отменить её можно в Настройках → Аккаунт Apple → Подписки.',
+  'offer.termsRenewalAndroid':
+    'Оплата списывается с вашего аккаунта Google Play при подтверждении покупки. Подписка продлевается автоматически на тот же срок и по той же цене, если не отменить её не позднее чем за 24 часа до конца текущего периода. Управлять подпиской и отменить её можно в Google Play → Платежи и подписки → Подписки.',
+  'offer.linkTerms': 'Условия использования',
+  'offer.linkPrivacy': 'Политика конфиденциальности',
   'offer.restore': 'Восстановить покупки',
 
   // ── Paywall: what the store said ─────────────────────────────────────────
   'offer.planUnavailable': 'Этот вариант сейчас недоступен. Выберите другой.',
-  'offer.storeUnreachable': 'App Store сейчас недоступен. Попробуйте через минуту.',
-  'offer.nothingRestored': 'На этом Apple ID покупок не найдено.',
+  'offer.storeUnreachable': 'Магазин сейчас недоступен. Попробуйте через минуту.',
+  'offer.nothingRestored': 'Предыдущих покупок не найдено.',
   'offer.restoreFailed': 'Не получилось. Деньги не списаны.',
+  'offer.purchaseFailed': 'Не получилось. Деньги не списаны.',
+  'offer.purchaseNotAllowed': 'Покупки на этом устройстве отключены.',
+  'offer.alreadyOwned': 'Это у вас уже есть. Нажмите «Восстановить покупки».',
+  'offer.pending': 'Ждём подтверждения. Доступ откроется, как только оплата пройдёт.',
+  'offer.notUnlocked': 'Оплата прошла, но доступ не открылся. Нажмите «Восстановить покупки».',
   'offer.continue': 'Продолжить',
   'offer.processing': 'Обработка…',
 
@@ -83,7 +77,7 @@ export const OFFER_RU = {
   'offer.start': 'Начать',
 
   // ── Session player: the locked state ─────────────────────────────────────
-  'widgets.sessionLockedTitle': 'Ваша программа завершилась',
+  'widgets.sessionLockedTitle': 'Ваша подписка закончилась',
   'widgets.sessionLockedBody':
     'Всё, что вы записали, осталось здесь - читать можно по-прежнему. Чтобы снова проводить сессии, продолжите с того места, где остановились.',
   'widgets.sessionLockedCta': 'Посмотреть варианты',

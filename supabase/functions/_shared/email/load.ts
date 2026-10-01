@@ -91,12 +91,24 @@ function maxPainOf(row: Row): number | null {
   return scores.length > 0 ? Math.max(...scores) : null;
 }
 
-function paywallFrom(rows: Row[]): PaywallView | null {
+/**
+ * The paywall views, as the offer emails need them.
+ *
+ * Prices come from the latest view that carried them, since the store figure
+ * can change — and only from a view that says they are the annual
+ * subscription's (`plan: 'annual'`). Views recorded before the annual existed
+ * carry the old one-time pass's prices; quoted as the annual price, they would
+ * be a number the store does not charge. Without a marked view the emails say
+ * "costs less" and print no figure, which is never wrong.
+ */
+export function paywallFrom(rows: Row[]): PaywallView | null {
   if (rows.length === 0) return null;
   const sorted = [...rows].sort((a, b) => String(a.at).localeCompare(String(b.at)));
   const last = sorted[sorted.length - 1];
-  // Prices from the latest view that carried them: the store figure can change.
-  const priced = [...sorted].reverse().find((r) => (r.props as Row | null)?.offer_price != null);
+  const priced = [...sorted].reverse().find((r) => {
+    const props = r.props as Row | null;
+    return props?.offer_price != null && props.plan === 'annual';
+  });
   const props = (priced?.props ?? {}) as Row;
   return {
     firstAt: String(sorted[0].at),
@@ -104,7 +116,6 @@ function paywallFrom(rows: Row[]): PaywallView | null {
     offerPrice: s(props.offer_price),
     standardPrice: s(props.standard_price),
     percent: n(props.percent),
-    weeks: n(props.weeks),
   };
 }
 

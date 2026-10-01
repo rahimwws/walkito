@@ -116,23 +116,21 @@ export const PAGES_RU = {
   'pages.welcome.cta': 'Поехали',
 
   // ── Expired ──────────────────────────────────────────────────────────────
-  'pages.expired.title': 'Ваши 12 недель пройдены',
+  'pages.expired.title': 'Ваша подписка закончилась',
   'pages.expired.lede': {
     one: '{count} сессия. Вот что изменилось.',
     few: '{count} сессии. Вот что изменилось.',
     many: '{count} сессий. Вот что изменилось.',
   },
-  'pages.expired.ledeNoSessions': 'Вот с чем вы закончили.',
+  'pages.expired.ledeNoSessions': 'Вот на чём вы остановились.',
   // The exercise's own name, as `exercises.heelRaiseTowel.title` writes it.
   'pages.expired.calfRaises': 'Подъёмы на носки',
   'pages.expired.morningPain': 'Утренняя боль',
   'pages.expired.nothingMeasured': 'Ваши записи и ретесты никуда не делись.',
   'pages.expired.keeps': 'История сохранится в любом случае.',
-  'pages.expired.storeUnreachable': 'App Store сейчас недоступен. Попробуйте через минуту.',
   'pages.expired.busy': 'Секунду…',
-  'pages.expired.monthly': 'Продлить помесячно · {price}',
-  'pages.expired.program': 'Ещё 12 недель · {price}',
-  'pages.expired.programInvite': 'Ещё 12 недель по цене приглашения · {price}',
+  'pages.expired.plansTitle': 'Продолжите с того же места',
+  'pages.expired.renew': 'Возобновить подписку',
   'pages.expired.notNow': 'Не сейчас',
   'pages.week.headerMeta': '{date} · Неделя {n}',
   'pages.week.seam': 'Эта неделя · {goal}',

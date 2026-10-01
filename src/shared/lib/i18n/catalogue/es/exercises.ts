@@ -49,7 +49,7 @@ export const EXERCISES_ES = {
     'Toalla bajo los dedos. Sin ella solo estás trabajando la pantorrilla.',
 
   'exercises.heelRaisePlain.title': 'Elevación a una pierna',
-  'exercises.heelRaisePlain.rationale': 'La versión que conservas cuando termina el programa.',
+  'exercises.heelRaisePlain.rationale': 'La versión sencilla que mantiene la fuerza que has ganado.',
   'exercises.heelRaisePlain.cue':
     'Tres segundos al subir y tres al bajar. La velocidad es lo que lo vuelve inútil.',
 

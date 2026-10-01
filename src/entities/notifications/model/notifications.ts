@@ -230,21 +230,22 @@ const EXPIRY_ID = 'program-expiry-notice';
 const EXPIRY_NOTICE_DAYS = 7;
 
 /**
- * Warn, once, a week before twelve-week access runs out.
+ * Warn, once, a week before access with a fixed end date runs out.
  *
  * Scheduled locally rather than pushed, because the date is known on the device
- * the moment the programme is bought and a local trigger needs no server and no
- * push token. `endsAt` comes from the purchase, so re-buying moves the warning
- * rather than adding a second one.
+ * the moment the access is granted and a local trigger needs no server and no
+ * push token. `endsAt` comes from the purchase, so a later one moves the
+ * warning rather than adding a second one.
  *
- * Passing null cancels — which is the monthly-subscriber case, and the case
- * where the pass has already lapsed. Both would otherwise leave a warning
- * pending about an end date that no longer means anything.
+ * Passing null cancels — which is the auto-renewing subscriber's case (the
+ * store renews, there is no end to warn about), and the case where access has
+ * already lapsed. Both would otherwise leave a warning pending about an end
+ * date that no longer means anything.
  *
  * The body is the part that matters. Somebody who reads "your access ends" and
- * nothing else has to assume the twelve weeks of logs go with it, and they do
- * not — so the reassurance travels in the same breath as the warning rather
- * than waiting to be discovered on a paywall.
+ * nothing else has to assume their logs go with it, and they do not — so the
+ * reassurance travels in the same breath as the warning rather than waiting to
+ * be discovered on a paywall.
  */
 export async function syncExpiryNotice(endsAt: Date | null): Promise<void> {
   try {

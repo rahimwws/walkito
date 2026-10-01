@@ -32,7 +32,7 @@ With your permission Walkito reads steps, sleep, resting heart rate and runs fro
 
 Walkito is a training aid, not medical advice, and does not diagnose or treat any condition. If pain is sharp, getting worse, or comes with swelling, numbness or fever, see a doctor.
 
-Walkito offers a 12-week program as a one-time purchase, or a monthly subscription that renews until cancelled in Google Play.
+Walkito offers an annual subscription and a weekly subscription. Each renews until you cancel it in Google Play.
 
 ## ru-RU
 
@@ -63,7 +63,7 @@ Health Connect
 
 Walkito - вспомогательное средство для тренировок, а не медицинская рекомендация. Приложение не ставит диагнозов и не лечит. Если боль острая, усиливается или сопровождается отёком, онемением или температурой, обратитесь к врачу.
 
-В Walkito есть 12-недельная программа с разовой оплатой и ежемесячная подписка, которая продлевается, пока вы не отмените её в Google Play.
+В Walkito есть годовая и недельная подписка. Каждая продлевается, пока вы не отмените её в Google Play.
 
 ## es-ES
 
@@ -94,4 +94,4 @@ Con tu permiso, Walkito lee pasos, sueño, frecuencia cardiaca en reposo y carre
 
 Walkito es una ayuda para entrenar, no un consejo médico, y no diagnostica ni trata ninguna afección. Si el dolor es agudo, empeora o viene con hinchazón, entumecimiento o fiebre, consulta a un médico.
 
-Walkito ofrece un programa de 12 semanas con pago único, o una suscripción mensual que se renueva hasta que la canceles en Google Play.
+Walkito ofrece una suscripción anual y una semanal. Cada una se renueva hasta que la canceles en Google Play.

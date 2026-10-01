@@ -7,7 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { currentDay, painOn, useProgramState } from '@/entities/program';
 import { useHealthSignals } from '@/entities/health';
-import { useEntitled } from '@/entities/purchase';
+import { browsingLapsed, clearBrowsingLapsed, useEntitled } from '@/entities/purchase';
 import {
   PROTOCOLS,
   protocolById,
@@ -96,7 +96,14 @@ export function QuickPage() {
     if (locked(protocol)) {
       // The standard paywall, from the standard offering. Tapping a locked
       // card is a clear intent to buy; it should not be answered with a shrug.
-      router.push('/offer');
+      //
+      // Except for somebody whose subscription ended and who is browsing
+      // read-only: `/offer` is not a route for them (the root guard keeps it
+      // for a first purchase), so a push would do nothing. Clearing the flag
+      // brings the expiry screen back, which sells the same plans — the way the
+      // session player's locked state does it.
+      if (browsingLapsed()) clearBrowsingLapsed();
+      else router.push('/offer');
       return;
     }
     setOpen(protocol.id);

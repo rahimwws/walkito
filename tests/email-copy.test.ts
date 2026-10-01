@@ -11,7 +11,7 @@ import { GOAL_ORDER, LOCALES, METRICS, type EmailContent, type Locale } from '..
  * boundaries, and each language complete in its own words.
  */
 
-const PAYWALL = { firstAt: '', lastAt: '', offerPrice: '$14.99', standardPrice: '$49.99', percent: 70, weeks: 12 };
+const PAYWALL = { firstAt: '', lastAt: '', offerPrice: '$29.99', standardPrice: '$44.99', percent: 33 };
 
 /** Every email, every variant, for one language. */
 function everything(l: Locale): EmailContent[] {

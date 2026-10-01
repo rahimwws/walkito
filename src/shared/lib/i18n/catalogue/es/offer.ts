@@ -22,53 +22,49 @@ export const OFFER_ES = {
   'offer.featureProgressBlurb': 'Mira cómo sube tu preparación semana a semana.',
 
   // ── Paywall: headline ────────────────────────────────────────────────────
-  'offer.limited': 'Limitado - solo una vez',
+  'offer.comebackBadge': 'Precio de vuelta',
   'offer.inviteBadge': 'Tu precio por invitación',
-  'offer.headlineInvite': 'Tu precio por invitación en el programa de 12 semanas',
-  'offer.headlineComeback': 'Tu precio de vuelta al programa de 12 semanas',
-  'offer.headlineSave': {
-    one: 'Paga una vez por {count} mes y ahorra un {percent}%',
-    other: 'Paga una vez por {count} meses y ahorra un {percent}%',
-  },
-  'offer.headlinePlain': {
-    one: 'Paga una vez por {count} mes, o mes a mes',
-    other: 'Paga una vez por {count} meses, o mes a mes',
-  },
-  'offer.subWeeks': {
-    one: 'Tu plan de {count} semana, y todo lo que lo rodea.',
-    other: 'Tu plan de {count} semanas, y todo lo que lo rodea.',
-  },
+  'offer.headline': 'Desbloquea Walkito Premium',
+  'offer.headlineInvite': 'Tu precio por invitación en un año de Walkito Premium',
+  'offer.headlineComeback': 'Tu precio de vuelta en un año de Walkito Premium',
   'offer.sub': 'Tu plan, y todo lo que lo rodea.',
 
-  // ── Paywall: the two rows ────────────────────────────────────────────────
-  'offer.programTitle': 'Programa de 12 semanas',
-  'offer.programPrice': '{price} pago único',
-  'offer.programNote': {
-    one: '{count} mes de acceso · {perWeek}/semana · Sin suscripción',
-    other: '{count} meses de acceso · {perWeek}/semana · Sin suscripción',
-  },
-  'offer.programActive': 'Activo',
-  'offer.programActiveUntil': 'Hasta el {date}',
+  // ── Paywall: the two plans ───────────────────────────────────────────────
+  'offer.annualTitle': 'Anual',
+  'offer.annualPrice': '{price} al año',
+  'offer.annualNote': '{perWeek} a la semana, con cobro anual',
+  'offer.annualNoteSave': '{perWeek} a la semana · Ahorra un {percent}% frente al semanal',
+  'offer.weeklyTitle': 'Semanal',
+  'offer.weeklyPrice': '{price} a la semana',
+  'offer.weeklyNote': 'Cobro semanal · Cancela cuando quieras',
+  'offer.badgeBest': 'Mejor opción',
   'offer.badgeOff': 'Descuento {percent}%',
-  'offer.badgeSave': 'Ahorra {percent}%',
-  'offer.monthlyTitle': 'Mensual',
-  'offer.monthlyPrice': '{price}/mes',
-  'offer.monthlyNote': '{perWeek}/semana · Cancela cuando quieras',
 
   // ── Paywall: billing terms ───────────────────────────────────────────────
-  'offer.termsProgram':
-    'Programa de 12 semanas: un único pago de {price} por 12 semanas de acceso. No se renueva ni se te volverá a cobrar.',
-  'offer.termsMonthly':
-    'Mensual: {price} al mes. Se renueva automáticamente a menos que la canceles al menos 24 horas antes de que termine el periodo actual. Gestiona o cancela la suscripción en los ajustes de tu cuenta de App Store.',
-  'offer.linkTerms': 'Términos',
-  'offer.linkPrivacy': 'Privacidad',
+  'offer.ctaAnnual': '{price} al año, se renueva automáticamente. Cancela cuando quieras.',
+  'offer.ctaWeekly': '{price} a la semana, se renueva automáticamente. Cancela cuando quieras.',
+  'offer.termsIncluded':
+    'Walkito Premium te da acceso completo: tu plan adaptativo, todas las sesiones y rutinas, las reevaluaciones y el seguimiento de tu progreso.',
+  'offer.termsAnnual': 'Suscripción anual: {price} al año.',
+  'offer.termsWeekly': 'Suscripción semanal: {price} a la semana.',
+  'offer.termsRenewal':
+    'El pago se carga a tu cuenta de Apple al confirmar la compra. La suscripción se renueva automáticamente por el mismo periodo y precio a menos que la canceles al menos 24 horas antes de que termine el periodo actual; la renovación se cobra en las 24 horas previas a ese final. Gestiónala o cancélala en Ajustes → Cuenta de Apple → Suscripciones.',
+  'offer.termsRenewalAndroid':
+    'El pago se carga a tu cuenta de Google Play al confirmar la compra. La suscripción se renueva automáticamente por el mismo periodo y precio a menos que la canceles al menos 24 horas antes de que termine el periodo actual. Gestiónala o cancélala en Google Play → Pagos y suscripciones → Suscripciones.',
+  'offer.linkTerms': 'Términos de uso',
+  'offer.linkPrivacy': 'Política de privacidad',
   'offer.restore': 'Restaurar compras',
 
   // ── Paywall: what the store said ─────────────────────────────────────────
   'offer.planUnavailable': 'Ese plan no está disponible ahora. Prueba con el otro.',
-  'offer.storeUnreachable': 'No se puede conectar con la App Store ahora mismo. Inténtalo en un momento.',
-  'offer.nothingRestored': 'No se encontró ninguna compra anterior en este Apple ID.',
+  'offer.storeUnreachable': 'No se puede conectar con la tienda ahora mismo. Inténtalo en un momento.',
+  'offer.nothingRestored': 'No se encontró ninguna compra anterior.',
   'offer.restoreFailed': 'No se pudo completar. No se te ha cobrado nada.',
+  'offer.purchaseFailed': 'No se pudo completar. No se te ha cobrado nada.',
+  'offer.purchaseNotAllowed': 'Las compras están desactivadas en este dispositivo.',
+  'offer.alreadyOwned': 'Ya tienes esto. Toca «Restaurar compras».',
+  'offer.pending': 'Esperando aprobación. Tendrás acceso en cuanto se complete.',
+  'offer.notUnlocked': 'El pago se completó, pero no se desbloqueó el acceso. Toca «Restaurar compras».',
   'offer.continue': 'Continuar',
   'offer.processing': 'Procesando…',
 
@@ -82,7 +78,7 @@ export const OFFER_ES = {
   'offer.start': 'Empezar',
 
   // ── Session player: the locked state ─────────────────────────────────────
-  'widgets.sessionLockedTitle': 'Tu programa ha terminado',
+  'widgets.sessionLockedTitle': 'Tu suscripción ha terminado',
   'widgets.sessionLockedBody':
     'Todo lo que registraste sigue aquí para consultarlo. Para volver a entrenar, retoma donde lo dejaste.',
   'widgets.sessionLockedCta': 'Ver tus opciones',

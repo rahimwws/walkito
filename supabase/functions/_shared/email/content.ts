@@ -163,8 +163,6 @@ export function winback21(locale: Locale, input: { metric: Metric | null; curren
   return email('winback_21', c.subject, [line], c.button);
 }
 
-const DEFAULT_WEEKS = 12;
-
 export function offer(
   locale: Locale,
   input: { goal: GoalType | null; metric: Metric | null; current: number | null; paywall: PaywallView | null },
@@ -172,7 +170,6 @@ export function offer(
   const copy = copyFor(locale);
   const c = copy.offer;
   const pw = input.paywall;
-  const weeks = pw?.weeks ?? DEFAULT_WEEKS;
   const percent = pw?.percent != null && pw.percent > 0 && pw.percent < 100 ? pw.percent : null;
   const paragraphs: string[] = [];
   if (input.goal != null) {
@@ -183,16 +180,15 @@ export function offer(
     );
   }
   paragraphs.push(
-    pw?.offerPrice != null && pw.standardPrice != null ? c.price(weeks, pw.offerPrice, pw.standardPrice) : c.priceUnknown(weeks),
+    pw?.offerPrice != null && pw.standardPrice != null ? c.price(pw.offerPrice, pw.standardPrice) : c.priceUnknown,
   );
   return email('offer', c.subject(percent), paragraphs, c.button(percent));
 }
 
 export function offerFinal(locale: Locale, input: { paywall: PaywallView | null }): EmailContent {
   const c = copyFor(locale).offerFinal;
-  const weeks = input.paywall?.weeks ?? DEFAULT_WEEKS;
   const price = input.paywall?.offerPrice ?? null;
-  return email('offer_final', c.subject, [price != null ? c.price(weeks, price) : c.priceUnknown(weeks)], c.button(price));
+  return email('offer_final', c.subject, [price != null ? c.price(price) : c.priceUnknown], c.button(price));
 }
 
 export function weekly(

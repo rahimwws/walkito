@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { unlockBoost } from '@/entities/offer';
 import { recordEmailLinkOpened } from '@/entities/profile';
 import { requestProtocol } from '@/entities/protocols';
-import { useEntitled } from '@/entities/purchase';
+import { clearBrowsingLapsed, useAccessLapsed, useEntitled } from '@/entities/purchase';
 import { useOnboarded } from '@/entities/session';
 import { track } from '@/shared/lib/analytics';
 import { requestProgram } from '@/shared/lib/program';
@@ -28,6 +28,7 @@ export function OpenLinkPage() {
   const router = useRouter();
   const onboarded = useOnboarded();
   const entitled = useEntitled();
+  const lapsed = useAccessLapsed();
   const params = useLocalSearchParams<{ path?: string | string[]; src?: string; e?: string; minutes?: string; offering?: string }>();
   const handled = useRef(false);
 
@@ -67,6 +68,16 @@ export function OpenLinkPage() {
           router.replace('/');
           return;
         }
+        // Somebody whose subscription ended has the expiry screen, not the
+        // paywall — `/offer` is guarded off for them, and a replace to it would
+        // leave this blank route on screen. The offer emails are not sent to
+        // them (see `rules.ts`), but an older email can still be tapped. Clear
+        // "Not now" so Home resolves to the expiry screen and its own prices.
+        if (lapsed) {
+          clearBrowsingLapsed();
+          router.replace('/');
+          return;
+        }
         if (target.offering === 'offer') unlockBoost();
         router.replace('/offer');
         return;
@@ -77,7 +88,7 @@ export function OpenLinkPage() {
       case 'home':
         router.replace('/');
     }
-  }, [onboarded, entitled, params, router]);
+  }, [onboarded, entitled, lapsed, params, router]);
 
   return null;
 }

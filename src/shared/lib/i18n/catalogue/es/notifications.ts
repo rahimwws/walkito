@@ -135,7 +135,7 @@ export const NOTIFICATIONS_ES = {
   // ── Leaving the offer ────────────────────────────────────────────────────
   'notifications.offerWaitNamed': '{name}, antes de irte: {percent}% de descuento',
   'notifications.offerWait': 'Antes de irte: {percent}% de descuento',
-  'notifications.offerWaitBody': 'Tu programa de 12 semanas te espera a un precio más bajo. Toca para verlo.',
+  'notifications.offerWaitBody': 'La suscripción anual te espera a un precio más bajo. Toca para verla.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   'notifications.expiryTitle': 'Tu acceso al programa termina en una semana',

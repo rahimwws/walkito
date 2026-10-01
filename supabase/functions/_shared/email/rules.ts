@@ -251,6 +251,11 @@ export function evaluate(s: Snapshot, now: Date): Evaluation {
       trigger: () => {
         if (s.paywall == null) return 'paywall not viewed';
         if (s.subscription === 'active') return 'already paying';
+        // A subscription that ended belongs to the lapsed flow: the app shows
+        // them the expiry screen at its own prices, never the paywall this
+        // email's discount is bought from. With a weekly plan, somebody who
+        // subscribes on paywall day 0 and cancels is expired inside this window.
+        if (s.subscription === 'expired') return 'subscription ended';
         const days = daysBetween(localTime(new Date(s.paywall.firstAt), s.contact.timezone).date, today);
         return days >= 14 && days <= 18 ? null : 'not 14 days after the paywall';
       },
@@ -263,6 +268,7 @@ export function evaluate(s: Snapshot, now: Date): Evaluation {
       trigger: () => {
         if (s.paywall == null) return 'paywall not viewed';
         if (s.subscription === 'active') return 'already paying';
+        if (s.subscription === 'expired') return 'subscription ended';
         const days = daysBetween(localTime(new Date(s.paywall.firstAt), s.contact.timezone).date, today);
         return days >= 4 && days <= 7 ? null : 'not 4-7 days after the paywall';
       },

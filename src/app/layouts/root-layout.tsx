@@ -27,7 +27,7 @@ import {
 } from '@/app/providers';
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
 import { useHomeWidget } from '@/features/home-widget';
-import { useBrowsingLapsed, useEntitled, useProgramLapsed } from '@/entities/purchase';
+import { useAccessLapsed, useBrowsingLapsed, useEntitled } from '@/entities/purchase';
 import { useOnboarded } from '@/entities/session';
 import { fontAssets } from '@/shared/config';
 import { configureObserve, markInteractive } from '@/shared/lib/observe';
@@ -114,17 +114,17 @@ function RootLayoutInner() {
    */
   const entitled = useEntitled();
   /**
-   * The fourth state, between paid and never-paid: twelve weeks bought and
-   * finished. It gets its own door — the expiry screen — because a pitch is the
-   * wrong thing to show somebody who already paid once and has twelve weeks of
-   * their own measurements in the app.
+   * The fourth state, between paid and never-paid: a subscription that ended
+   * (or a legacy pass that ran out). It gets its own door — the expiry screen —
+   * because a pitch is the wrong thing to show somebody who already paid and
+   * has their own measurements in the app.
    *
    * `browsing` is their answer to it. Having chosen "Not now" they get the tabs
    * read-only: history visible, new sessions locked in the session player. That
    * is the one hole in an otherwise fully paid app, and it is deliberate —
    * withholding data the user generated is not a pricing mechanism.
    */
-  const lapsed = useProgramLapsed();
+  const lapsed = useAccessLapsed();
   const browsing = useBrowsingLapsed();
   // Listens for the win-back notification being tapped, at the root rather
   // than on the sheet: the tap can be what launches the app, in which case no
@@ -230,9 +230,9 @@ function RootLayoutInner() {
                     nothing behind the paywall to reach — the same mechanism
                     that makes onboarding a one-way door.
 
-                    Not shown to somebody whose twelve weeks have simply run
-                    out: they get `expired` below instead. This door is for a
-                    first purchase. */}
+                    Not shown to somebody whose paid access has ended: they get
+                    `expired` below instead. This door is for a first
+                    purchase. */}
                 <Stack.Protected guard={onboarded && !entitled && !lapsed}>
                   <Stack.Screen
                     name="offer"
@@ -247,7 +247,7 @@ function RootLayoutInner() {
                   />
                 </Stack.Protected>
 
-                {/* The end of the programme, which is not the same door as the
+                {/* A subscription that ended, which is not the same door as the
                     paywall — see the note on `lapsed` above. Guarded on
                     `!browsing` so answering it with "Not now" is answering it
                     once, rather than meeting it again every cold launch. */}
@@ -263,8 +263,8 @@ function RootLayoutInner() {
                   />
                 </Stack.Protected>
 
-                {/* Paid, or browsing their own history after the programme ran
-                    out. The second case is read-only: the session player refuses
+                {/* Paid, or browsing their own history after access ended. The
+                    second case is read-only: the session player refuses
                     to start anything while `sessionsLocked()` holds. */}
                 <Stack.Protected guard={onboarded && (entitled || (lapsed && browsing))}>
                   <Stack.Screen name="(tabs)" options={{ headerShown: false }} />

@@ -15,18 +15,7 @@ export const PROFILE_ES = {
   // ── Rows ─────────────────────────────────────────────────────────────────
   'profile.referFriend': 'Invita a un amigo',
   'profile.invitesJoined': { one: '{count} se unió', other: '{count} se unieron' },
-  'profile.weeksPerFriend': {
-    one: '{count} semana gratis por cada amigo',
-    other: '{count} semanas gratis por cada amigo',
-  },
-  'profile.weeksEarned': {
-    one: '+{count} semana gratis ganada',
-    other: '+{count} semanas gratis ganadas',
-  },
-  'profile.weeksEarnedMax': {
-    one: '+{count} semana gratis ganada, el máximo',
-    other: '+{count} semanas gratis ganadas, el máximo',
-  },
+  'profile.inviteHint': 'Tus amigos obtienen un {percent}% de descuento en la suscripción anual',
   'profile.contactSupport': 'Contactar con soporte',
   'profile.deleteAccount': 'Eliminar cuenta',
 
@@ -34,6 +23,11 @@ export const PROFILE_ES = {
   'profile.deleteTitle': '¿Eliminar la cuenta?',
   'profile.deleteBlurb':
     'Esto elimina tu programa, tu registro de dolor, tu racha y tu código de invitación, de este dispositivo y de nuestros servidores. No se puede deshacer.',
+  'profile.deleteSubscription':
+    'Eliminar tu cuenta no cancela tu suscripción. La cobra Apple y se renueva hasta que la canceles en Ajustes.',
+  'profile.deleteSubscriptionAndroid':
+    'Eliminar tu cuenta no cancela tu suscripción. La cobra Google Play y se renueva hasta que la canceles allí.',
+  'profile.manageSubscription': 'Gestionar suscripción',
   'profile.deleteLocalOnly':
     'Tus datos se eliminaron de este dispositivo, pero no se pudo contactar con el servidor. Abre la aplicación con conexión para terminar, o escribe a soporte.',
   'profile.deleteConfirm': 'Eliminar todo',

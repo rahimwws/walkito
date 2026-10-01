@@ -167,15 +167,16 @@ export const NOTIFICATIONS_EN = {
   // ── Leaving the offer ────────────────────────────────────────────────────
   // One message as the app goes to the background, only for people who
   // switched offers on. Says what is on offer and asks for nothing more — it
-  // names the program, because "{percent}% off" alone does not say off what.
+  // names the annual subscription, because "{percent}% off" alone does not say
+  // off what, and the annual is the one the offer price applies to.
   'notifications.offerWaitNamed': '{name}, before you go - {percent}% off',
   'notifications.offerWait': 'Before you go - {percent}% off',
-  'notifications.offerWaitBody': 'Your 12-week program is waiting at a lower price. Tap to see it.',
+  'notifications.offerWaitBody': 'The annual subscription is waiting at a lower price. Tap to see it.',
 
   // ── Programme expiry ─────────────────────────────────────────────────────
   // The body is the part that matters. Somebody who reads "your access ends"
-  // and nothing else has to assume the twelve weeks of logs go with it, and
-  // they do not — so the reassurance travels in the same breath.
+  // and nothing else has to assume their logs go with it, and they do not — so
+  // the reassurance travels in the same breath.
   'notifications.expiryTitle': 'Your program access ends in a week',
   'notifications.expiryBody': 'Your progress stays either way.',
 } as const satisfies Record<string, SourceEntry>;

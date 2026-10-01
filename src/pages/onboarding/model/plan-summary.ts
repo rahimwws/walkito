@@ -17,7 +17,6 @@ export type PlanPhase = {
 export type PlanSummary = {
   /** The plan's own name, set large. */
   wordmark: string;
-  weeks: number;
   /** Loaded days a week — the three the protocol is built on. */
   strengthDays: number;
   /**
@@ -50,10 +49,13 @@ const PHASE_LABELS: readonly Phrase[] = [
 const WEEKS_PER_BLOCK = BLOCK_LENGTH / 7;
 
 /** "Weeks 1–2", or "Week 3" where a stretch is a single week. Two templates
- * because the plural noun is not the singular with an s in every language. */
-function weekRange(t: Translate, fromBlock: number, toBlock: number): string {
+ * because the plural noun is not the singular with an s in every language.
+ * The last stretch is left open — "Weeks 9+" — because the plan does not stop
+ * there: it keeps building a week at a time. */
+function weekRange(t: Translate, fromBlock: number, toBlock: number, open: boolean): string {
   const first = (fromBlock - 1) * WEEKS_PER_BLOCK + 1;
   const last = toBlock * WEEKS_PER_BLOCK;
+  if (open) return t('onboarding.plan.weeksOn', { from: first });
   return first === last
     ? t('onboarding.plan.week', { n: first })
     : t('onboarding.plan.weeks', { from: first, to: last });
@@ -63,9 +65,10 @@ function weekRange(t: Translate, fromBlock: number, toBlock: number): string {
  * The plan's three phases, grouped from its blocks.
  *
  * The first block on its own, the last two together, everything between them in
- * the middle — which on the twelve-week plan falls out as 1–2, 3–8 and 9–12,
- * and on the six-week one as 1–2, 3–4 and 5–6. Derived rather than written down
- * so the rows cannot describe a shape the programme no longer has.
+ * the middle — 1–2, 3–8 and 9+ for a new runner, 1–2, 3–4 and 5+ for one who
+ * already runs. The last row has no end, because the plan has none. Derived
+ * rather than written down so the rows cannot describe a shape the programme no
+ * longer has.
  */
 function phasesFor(t: Translate, planLength: PlanLength): readonly PlanPhase[] {
   const blocks = blocksFor(planLength);
@@ -80,7 +83,7 @@ function phasesFor(t: Translate, planLength: PlanLength): readonly PlanPhase[] {
 
   return bounds
     .map(([from, to], i) => ({
-      weeks: weekRange(t, from, to),
+      weeks: weekRange(t, from, to, i === bounds.length - 1),
       label: PHASE_LABELS[i](t),
       empty: from > to,
     }))
@@ -144,8 +147,7 @@ export function planSummary({ t, runner, sport, pain, load }: PlanSummaryInput):
   const planLength: PlanLength = plan.weeks >= 12 ? 84 : 42;
 
   return {
-    wordmark: plan.wordmark,
-    weeks: plan.weeks,
+    wordmark: t(plan.wordmark),
     strengthDays: WEEK.filter((day) => day.kind === 'strength').length,
     reflection: reflectionFor(t, sport, pain, load),
     phases: phasesFor(t, planLength),
