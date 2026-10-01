@@ -49,7 +49,7 @@ export default function Privacy() {
       <Prose className="shell prose">
         <h1>Privacy</h1>
 
-        <p className="updated">Last updated: 30 September 2026</p>
+        <p className="updated">Last updated: 1 October 2026</p>
 
         <h2>The short version</h2>
         <ul>
@@ -66,7 +66,7 @@ export default function Privacy() {
             A few services receive data so the app can work: Supabase (your
             account and plan), PostHog (usage analytics), RevenueCat (purchases),
             Expo (notifications, app updates, speed and crash reports), Apple
-            (sign-in, payments and notifications) and Google (sign-in on Android).
+            (sign-in, payments and notifications) Google (sign-in on Android) and Resend (emails).
           </li>
           <li>No ads, no ad tracking, and we never sell your data.</li>
         </ul>
@@ -76,8 +76,7 @@ export default function Privacy() {
           Setting up Walkito signs you in with Apple. Apple gives us an
           identifier, your name and your email address, or a private relay
           address if you choose to hide yours. The identifier becomes your
-          account on our server. Your name stays on your phone. Your email
-          address is stored with your account.
+          account on our server. Your first name and your email address are stored with your account.
         </p>
         <p>
           On Android, setup signs you in with Google instead. Google, like
@@ -98,9 +97,7 @@ export default function Privacy() {
 
         <h2>Your email address</h2>
         <p>
-          We use your email address only to answer you when you contact support
-          and to recognize your account in our own reports. We never send
-          marketing emails, and we never share your address for marketing.
+          We use your email address to answer you when you contact support, to recognize your account in our own reports, and to send you emails about your plan: reminders, a weekly summary, your test results and, now and then, an offer on Walkito Premium. The emails are written from your own plan and use your first name. Every email has a link to unsubscribe, and you can also write to us. We never share your address with anyone for their own marketing.
         </p>
 
         <h2>What is saved to your account</h2>
@@ -143,7 +140,7 @@ export default function Privacy() {
 
         <h2>What stays on your phone</h2>
         <p>
-          Your name, the age, sex, weight and shoe size you give during setup,
+          The age, sex, weight and shoe size you give during setup,
           your settings for the app’s look and language, the exercise videos you
           have downloaded, and every Apple Health or Health Connect figure. These are kept only in
           the app’s own storage on the device.
@@ -256,6 +253,16 @@ export default function Privacy() {
         <p>
           <b>Why:</b> to keep the app fast and working, keep it up to date, and
           deliver invite notifications.
+        </p>
+
+        <h3>Resend: emails</h3>
+        <p>
+          <b>What:</b> your email address, your first name and the content of
+          each email we send you, which is written from your plan.
+        </p>
+        <p>
+          <b>Why:</b> to deliver those emails and to tell us whether they
+          arrived.
         </p>
 
         <h3>Apple: sign-in, payments and notifications</h3>

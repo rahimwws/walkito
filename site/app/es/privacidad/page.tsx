@@ -31,7 +31,7 @@ export default function PrivacidadEs() {
       <Prose className="shell prose">
         <h1>Privacidad</h1>
 
-        <p className="updated">Última actualización: 30 de septiembre de 2026</p>
+        <p className="updated">Última actualización: 1 de octubre de 2026</p>
         <p className="updated">
           Esta es una traducción. Si difiere de{' '}
           <a href="/privacy/">la versión en inglés</a>, se aplica la versión en
@@ -54,7 +54,7 @@ export default function PrivacidadEs() {
             (tu cuenta y tu plan), PostHog (analítica de uso), RevenueCat
             (compras), Expo (notificaciones, actualizaciones de la app e
             informes de velocidad y de errores), Apple (inicio de sesión, pagos
-            y notificaciones) y Google (inicio de sesión en Android).
+            y notificaciones), Google (inicio de sesión en Android) y Resend (correos).
           </li>
           <li>Sin anuncios, sin rastreo publicitario, y nunca vendemos tus datos.</li>
         </ul>
@@ -64,8 +64,7 @@ export default function PrivacidadEs() {
           Al configurar Walkito, inicias sesión con Apple. Apple nos da un
           identificador, tu nombre y tu correo electrónico, o una dirección de
           reenvío privada si eliges ocultar el tuyo. Ese identificador se
-          convierte en tu cuenta en nuestro servidor. Tu nombre se queda en tu
-          teléfono. Tu correo se guarda con tu cuenta.
+          convierte en tu cuenta en nuestro servidor. Tu nombre y tu correo se guardan con tu cuenta.
         </p>
         <p>
           En Android, inicias sesión con Google. Google, como Apple, nos da un
@@ -85,10 +84,7 @@ export default function PrivacidadEs() {
 
         <h2>Tu correo electrónico</h2>
         <p>
-          Solo usamos tu correo para responderte cuando escribes a soporte y
-          para reconocer tu cuenta en nuestros propios informes. Nunca enviamos
-          correos de marketing, y nunca compartimos tu dirección con fines de
-          marketing.
+          Usamos tu correo para responderte cuando escribes a soporte, para reconocer tu cuenta en nuestros propios informes y para enviarte correos sobre tu plan: recordatorios, un resumen semanal, los resultados de tus pruebas y, de vez en cuando, una oferta de Walkito Premium. Los correos se escriben a partir de tu plan y usan tu nombre. Cada correo tiene un enlace para darte de baja, y también puedes escribirnos. Nunca compartimos tu dirección con otras empresas para su propio marketing.
         </p>
 
         <h2>Qué se guarda en tu cuenta</h2>
@@ -134,7 +130,7 @@ export default function PrivacidadEs() {
 
         <h2>Lo que se queda en tu teléfono</h2>
         <p>
-          Tu nombre, la edad, el sexo, el peso y la talla de zapato que indicas
+          La edad, el sexo, el peso y la talla de zapato que indicas
           durante la configuración, tus ajustes de apariencia e idioma de la
           app, los videos de ejercicios que has descargado y todos los datos de
           Apple Salud y Health Connect. Todo esto se guarda solo en el almacenamiento propio de
@@ -252,6 +248,15 @@ export default function PrivacidadEs() {
         <p>
           <b>Por qué:</b> para que la app sea rápida y funcione bien, mantenerla
           al día y entregar las notificaciones de invitaciones.
+        </p>
+
+        <h3>Resend: correos</h3>
+        <p>
+          <b>Qué:</b> tu correo, tu nombre y el contenido de cada correo que te
+          enviamos, hecho a partir de tu plan.
+        </p>
+        <p>
+          <b>Por qué:</b> para entregarte esos correos y saber si llegaron.
         </p>
 
         <h3>Apple: inicio de sesión, pagos y notificaciones</h3>
