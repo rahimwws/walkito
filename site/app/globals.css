@@ -1953,4 +1953,50 @@ figcaption {
 :lang(es) h1,
 :lang(es) h2 {
   line-height: 1.14;
+
+/* ------------------------------------------------------------- handoff -- */
+/* The two pages an email links to: /open/ and /unsubscribe/. One card in the
+   middle of the screen, the mascot, a line, and at most one button. */
+
+.handoff {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding-block: 48px;
+}
+
+.handoff-card {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  max-width: 420px;
+  text-align: center;
+}
+
+.handoff-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.handoff-card .handoff-title {
+  color: var(--ink);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.handoff-card button.download {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.handoff-stores {
+  display: grid;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.handoff-stores a {
+  color: var(--ink);
 }

@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["HWGBXV8W4Z.com.walkito.app"],
+        "components": [{ "/": "/open/*", "comment": "email buttons: https://walkito.site/open/{path}/" }]
+      }
+    ]
+  }
+}
