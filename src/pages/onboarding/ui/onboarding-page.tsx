@@ -971,7 +971,6 @@ const CONFIRM_MS = 900;
                 granted={notify}
                 onAnswered={setNotify}
                 onNext={onNext}
-                onSkip={onNext}
               />
             )}
 
@@ -994,7 +993,6 @@ const CONFIRM_MS = 900;
                 summary={health}
                 onConnected={setHealth}
                 onNext={onNext}
-                onSkip={onNext}
               />
             )}
 

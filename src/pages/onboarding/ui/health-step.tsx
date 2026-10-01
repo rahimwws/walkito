@@ -4,7 +4,7 @@ import { FootprintsIcon } from 'phosphor-react-native/src/icons/Footprints';
 import { HeartIcon } from 'phosphor-react-native/src/icons/Heart';
 import { LockSimpleIcon } from 'phosphor-react-native/src/icons/LockSimple';
 import { useEffect, useState } from 'react';
-import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   FadeIn,
@@ -38,11 +38,9 @@ export type HealthStepProps = {
   name: string;
   summary: HealthSummary | null;
   onConnected: (summary: HealthSummary) => void;
-  /** Both halves of leaving the screen. The page keeps its shared button bar
-   * off this screen entirely, so the forward action has to live here — the
-   * button went dead on "Connected" and the flow had nowhere left to go. */
+  /** Leaving the screen. The page keeps its shared button bar off this screen
+   * entirely, so the forward action has to live here. */
   onNext: () => void;
-  onSkip: () => void;
 };
 
 /**
@@ -63,7 +61,7 @@ export type HealthStepProps = {
  * this turns on". The *values* beside them stay blank until Health actually
  * answers, so nothing here ever claims a reading we have not taken.
  */
-export function HealthStep({ name, summary, onConnected, onNext, onSkip }: HealthStepProps) {
+export function HealthStep({ name, summary, onConnected, onNext }: HealthStepProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -158,20 +156,22 @@ export function HealthStep({ name, summary, onConnected, onNext, onSkip }: Healt
       </View>
 
       <View style={styles.actions}>
-        {/* One button, two jobs. Connecting is the only thing worth doing here
-            until it is done, and once it is, the same button is the way on —
-            a permanently disabled "Connected" sitting under a screen with no
-            other control was a dead end with a tick on it. */}
+        {/* One button, and it always says "Continue". App Review rejected the
+            earlier "Connect to Health" with a "Skip for now" beside it
+            (guideline 5.1.1(iv)): a screen before a permission request may
+            explain, but it must not steer the answer, and it must always lead
+            to the request itself. So the first press opens the system sheet,
+            whatever the person chooses there is the answer, and the same
+            button then carries on. With Health unavailable, or once it has
+            been asked, it simply goes on. */}
         <PrimaryButton
           label={
-            connected
-              ? t('onboarding.cta.next')
-              : busy
-                ? t(Platform.OS === 'android' ? 'onboarding.health.openingAndroid' : 'onboarding.health.opening')
-                : t(Platform.OS === 'android' ? 'onboarding.health.connectAndroid' : 'onboarding.health.connect')
+            busy
+              ? t(Platform.OS === 'android' ? 'onboarding.health.openingAndroid' : 'onboarding.health.opening')
+              : t('onboarding.cta.continue')
           }
-          onPress={connected ? onNext : connect}
-          disabled={busy || (!available && !connected)}
+          onPress={connected || outcome != null || !available ? onNext : connect}
+          disabled={busy}
         />
         <View style={styles.promise}>
           <LockSimpleIcon size={14} color={meter.caption} weight="fill" />
@@ -183,20 +183,6 @@ export function HealthStep({ name, summary, onConnected, onNext, onSkip }: Healt
           <Text style={[styles.promiseText, { color: meter.unit, textAlign: 'center' }]}>
             {status}
           </Text>
-        )}
-        {/* Quiet, and only while the ask is still open: declining has to be
-            possible, but it must not look like the equal of the one thing this
-            screen is for. */}
-        {!connected && (
-          <Pressable
-            accessibilityRole="button"
-            onPress={onSkip}
-            hitSlop={10}
-            style={({ pressed }) => [styles.skip, pressed && { opacity: 0.5 }]}>
-            <Text style={[styles.skipText, { color: meter.caption }]}>
-              {t('onboarding.cta.skipForNow')}
-            </Text>
-          </Pressable>
         )}
       </View>
     </View>
@@ -309,9 +295,4 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   promiseText: fonts.medium(13),
-  skip: {
-    alignSelf: 'center',
-    paddingVertical: 4,
-  },
-  skipText: fonts.semibold(15),
 });

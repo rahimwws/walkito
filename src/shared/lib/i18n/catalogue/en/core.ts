@@ -71,7 +71,7 @@ export const CORE_EN = {
   'settings.planSection': 'Your plan',
   'settings.outcome': 'Your goal',
   'settings.outcome.painfree': 'Pain-free',
-  'settings.outcome.flat_feet': 'Fix flat feet',
+  'settings.outcome.flat_feet': 'Stronger arches',
   'settings.outcome.stronger': 'Stronger legs',
   'settings.outcome.injury_free': 'Sturdy legs',
   'settings.outcome.stable_ankles': 'Steady ankles',
@@ -171,7 +171,7 @@ export const CORE_EN = {
   'nextSession.on': 'Next session: {day}',
 
   // ── Dock / cards ───────────────────────────────────────────────────────────
-  'dock.startWorkout': 'Start Workout',
+  'dock.startWorkout': 'Start session',
   'card.dailyGoal': 'Daily Goal',
   'card.getStarted': 'Get Started',
   'card.last7Days': 'Last 7 days',

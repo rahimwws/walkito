@@ -1,6 +1,6 @@
 import * as Haptics from 'expo-haptics';
 import { useEffect, useState } from 'react';
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
   FadeIn,
@@ -39,7 +39,6 @@ export type NotifyStepProps = {
   granted: boolean | null;
   onAnswered: (granted: boolean) => void;
   onNext: () => void;
-  onSkip: () => void;
 };
 
 /**
@@ -56,7 +55,7 @@ export type NotifyStepProps = {
  * whole argument, and a static picture of a notification reads as an
  * illustration where a moving one reads as a preview.
  */
-export function NotifyStep({ name, granted, onAnswered, onNext, onSkip }: NotifyStepProps) {
+export function NotifyStep({ name, granted, onAnswered, onNext }: NotifyStepProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -107,28 +106,15 @@ export function NotifyStep({ name, granted, onAnswered, onNext, onSkip }: Notify
       </View>
 
       <View style={styles.actions}>
+        {/* "Continue", and no "Not now": the same rule App Review applied to
+            the Health ask (guideline 5.1.1(iv)) holds for every permission.
+            The screen explains, the first press always opens the system
+            dialog, and whatever is answered there the same button carries on. */}
         <PrimaryButton
-          label={
-            answered
-              ? t('onboarding.cta.next')
-              : busy
-                ? t('onboarding.notify.opening')
-                : t('onboarding.notify.turnOn')
-          }
+          label={busy ? t('onboarding.notify.opening') : t('onboarding.cta.continue')}
           onPress={answered ? onNext : ask}
           disabled={busy}
         />
-        {!answered && (
-          <Pressable
-            accessibilityRole="button"
-            onPress={onSkip}
-            hitSlop={10}
-            style={({ pressed }) => [styles.skip, pressed && { opacity: 0.5 }]}>
-            <Text style={[styles.skipText, { color: meter.caption }]}>
-              {t('onboarding.notify.notNow')}
-            </Text>
-          </Pressable>
-        )}
         {granted === false && (
           <Text style={[styles.skipText, { color: meter.unit, textAlign: 'center' }]}>
             {t('onboarding.notify.declined')}
@@ -267,10 +253,6 @@ const styles = StyleSheet.create({
     marginTop: 'auto',
     marginBottom: 28,
     gap: 14,
-  },
-  skip: {
-    alignSelf: 'center',
-    paddingVertical: 4,
   },
   skipText: fonts.semibold(15),
 });

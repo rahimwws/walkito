@@ -104,7 +104,7 @@ export const ONBOARDING_RU = {
   'onboarding.goal.consistent': 'Бегать регулярнее',
   'onboarding.goal.stronger': 'Укрепить ноги',
   'onboarding.goal.injuryfree': 'Обойтись без травм',
-  'onboarding.goal.flatfeet': 'Справиться с плоскостопием',
+  'onboarding.goal.flatfeet': 'Укрепить своды стоп',
   'onboarding.goal.ankles': 'Устойчивые лодыжки',
   'onboarding.goal.jump': 'Прыгать выше',
   'onboarding.goal.allday': 'Весь день на ногах без усталости',

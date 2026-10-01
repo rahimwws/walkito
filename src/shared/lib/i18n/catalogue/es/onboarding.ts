@@ -104,7 +104,7 @@ export const ONBOARDING_ES = {
   'onboarding.goal.consistent': 'Correr con más constancia',
   'onboarding.goal.stronger': 'Fortalecer las piernas',
   'onboarding.goal.injuryfree': 'Evitar lesiones',
-  'onboarding.goal.flatfeet': 'Corregir mis pies planos',
+  'onboarding.goal.flatfeet': 'Arcos más fuertes',
   'onboarding.goal.ankles': 'Tobillos más estables',
   'onboarding.goal.jump': 'Saltar más alto',
   'onboarding.goal.allday': 'Aguantar de pie todo el día',
