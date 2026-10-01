@@ -21,9 +21,9 @@ export const SITE_NAME = 'Walkito';
  * There is no fixed length any more. The app builds one week at a time around
  * a focus goal (`src/entities/program/model/plan/week.ts`), a reached goal
  * moves to maintaining and the next takes its place (`goals.ts`: "There is no
- * end to the plan"), so the site must never say "12 weeks" about the plan.
- * The purchasable pass is still sold by length, but that is billing, not the
- * programme, and the site quotes no prices.
+ * end to the plan"), so the site must never give the plan a length in weeks.
+ * Walkito is sold as two auto-renewing subscriptions, yearly and weekly. That
+ * is billing, not the programme, and the site quotes no prices.
  *
  * - Sessions: `SessionMinutes = 3 | 5 | 10`, default 5 (`store.ts`).
  * - Days a week: `WEEK_SHAPES` for 3, 5 or 7 days.
@@ -57,6 +57,17 @@ export const PROGRAM = {
 } as const;
 
 /**
+ * The two pain thresholds the copy quotes, on the app's 0-10 scale.
+ *
+ * Read from the app: a morning counts towards the pain goal at `<= 1`
+ * (`src/entities/program/model/plan/goals.ts`), and in-session pain at
+ * `IN_SESSION_STOP` ends the session (`today.ts`). Same caveat as `PROGRAM`:
+ * change the plan, check these.
+ */
+export const PAIN_GOAL_MAX = 1;
+export const IN_SESSION_STOP = 6;
+
+/**
  * When each page's content last really changed, `YYYY-MM-DD`.
  *
  * Feeds the sitemap's `lastmod`, the Article dates and the visible "Updated"
@@ -68,13 +79,14 @@ export const PROGRAM = {
  */
 export const PAGE_UPDATED = {
   home: '2026-09-28',
+  runners: '2026-09-28',
   program: '2026-09-28',
   science: '2026-09-28',
-  faq: '2026-09-28',
+  faq: '2026-10-01',
   about: '2026-09-28',
-  support: '2026-09-28',
+  support: '2026-10-01',
   privacy: '2026-09-28',
-  terms: '2026-09-28',
+  terms: '2026-10-01',
 } as const;
 
 /** Where the App Store listing will live. Null until it exists — a button
@@ -118,6 +130,19 @@ export function storeHref(campaign: string): string | null {
 export const APPLE_APP_ID: string | null = null;
 
 export const SUPPORT_EMAIL = 'hello@walkito.site';
+
+/** Social profiles, linked from the footer and the founders' note. A profile
+ * with an empty URL is left out everywhere rather than pointing at a guess. */
+export const TIKTOK_URL = 'https://www.tiktok.com/@walkito.app';
+export const INSTAGRAM_URL = 'https://www.instagram.com/walkito.app/';
+
+/**
+ * The Organization's `sameAs`: every profile that is really ours. The App Store
+ * listing joins by itself the day `APP_STORE_URL` is set.
+ */
+export const SAME_AS: readonly string[] = [TIKTOK_URL, INSTAGRAM_URL, APP_STORE_URL].filter(
+  (url): url is string => url != null && url !== '',
+);
 
 /**
  * IndexNow.

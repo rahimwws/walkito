@@ -237,22 +237,6 @@ body {
   transform: none;
 }
 
-/* The pre-launch pill: the same shape as the live one, so launch day does not
-   reflow the hero, but in outline — it is information, not a control, and a
-   filled pill is what people have learned to press. */
-.store .soon {
-  display: inline-flex;
-  align-items: center;
-  gap: 13px;
-  color: var(--ink);
-  border: 1.5px solid var(--ink);
-  font-size: clamp(17px, 1.8vw, 21px);
-  font-weight: 600;
-  letter-spacing: -0.3px;
-  padding: 16px 30px;
-  border-radius: 999px;
-}
-
 .store svg {
   width: 26px;
   height: 26px;
@@ -385,6 +369,57 @@ figure figcaption b {
   color: var(--ink);
   font-weight: 600;
   font-size: 15px;
+}
+
+/* ---------------------------------------------------------------- social -- */
+
+/* TikTok and Instagram as small icons: in the footer and under the founders'
+   note. 44px targets, drawn smaller. */
+.social {
+  display: flex;
+  gap: 4px;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  color: var(--muted);
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.social a:hover {
+  color: var(--ink);
+  background: rgba(17, 17, 20, 0.05);
+}
+
+.social svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Inside long-form pages the generic link colour would repaint these: the
+   badge is a filled button and keeps white text, the social icons stay muted. */
+.prose .store a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.prose .social a {
+  color: var(--muted);
+}
+
+.prose .social a:hover {
+  color: var(--ink);
+}
+
+/* Under the founders' note on the home page, centred like the text above. */
+.story .social {
+  justify-content: center;
+  margin-top: 8px;
 }
 
 /* ---------------------------------------------------------------- footer -- */
@@ -694,6 +729,309 @@ figure figcaption b {
  * whitespace tuned for a 1440px canvas eats a third of a phone, and controls
  * sized by their text end up under the 44pt minimum a thumb needs.
  */
+
+/* ------------------------------------------------------------- home (en) -- */
+
+/* A longer headline than the page was drawn for: the second line is a whole
+   sentence, so the display size comes down a step to keep it to two or three
+   lines instead of five. */
+.hero-long h1 {
+  font-size: clamp(40px, 6.6vw, 84px);
+}
+
+.hero .byline {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.hero .byline a {
+  color: inherit;
+}
+
+.hero .hero-small {
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+/* Plain paragraphs under a display heading: the "why" sections that carry the
+   page's argument rather than a card grid. */
+.story {
+  padding-block: 84px 0;
+  text-align: center;
+}
+
+.story h2,
+.split h2 {
+  margin: 0 0 22px;
+  font-family: var(--font-display), var(--font-body);
+  font-weight: 400;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.story p {
+  max-width: 640px;
+  margin: 0 auto 16px;
+  font-size: clamp(16px, 1.5vw, 19px);
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.story .story-contact {
+  margin-top: 28px;
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.story .story-contact a {
+  color: var(--ink);
+}
+
+/* Text beside a phone. The phone swaps sides on the second one so two in a
+   row do not read as the same block twice. */
+.split {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 56px;
+  padding-block: 84px 0;
+}
+
+.split p {
+  max-width: 520px;
+  margin: 0;
+  font-size: clamp(16px, 1.5vw, 19px);
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.split-flip {
+  grid-template-columns: auto 1fr;
+}
+
+.split-flip > :first-child {
+  order: 2;
+}
+
+/* A screenshot in a phone, or the phone-shaped place one will go. The whole
+   phone (screen + bezel + edge) keeps one ratio so nothing moves when the image
+   arrives: the iPhone 17 Pro's 1206 × 2622 display plus the frame around it. */
+.slot {
+  width: 260px;
+  aspect-ratio: 1206 / 2622;
+  flex: none;
+}
+
+.slot.phone {
+  /* Screen is 91.6% of the phone's width (4.2% of frame each side) at
+     1206 : 2622, plus the same 4.2% top and bottom: 1 : 2.0755. */
+  aspect-ratio: 1 / 2.0755;
+}
+
+/* In the hero, where the phone is the size the screenshot was. */
+.shot .slot {
+  width: min(320px, 72vw);
+}
+
+.slot-sm {
+  width: 100%;
+  max-width: 220px;
+  margin-inline: auto;
+}
+
+/* The phone frame, all in CSS. Sizes are percentages of the phone's own width
+   (container query units), so it stays in proportion from 150 px to 400 px.
+   Titanium edge: the outer gradient with a thin highlight. Bezel: the black
+   padding. Display: the rounded, clipped screen. */
+.phone {
+  /* The measured box: everything inside is sized in % of its width (cqi). */
+  container-type: inline-size;
+}
+
+.phone-body {
+  position: relative;
+  height: 100%;
+  padding: 4.2cqi;
+  border-radius: 15.5cqi;
+  background:
+    linear-gradient(145deg, #74747c 0%, #2e2e33 32%, #3c3c42 62%, #6a6a72 100%);
+  box-shadow:
+    inset 0 0 0 0.35cqi rgba(255, 255, 255, 0.22),
+    inset 0 0 0 1.1cqi #050506,
+    0 3cqi 7cqi rgba(17, 17, 20, 0.18),
+    0 10cqi 22cqi rgba(17, 17, 20, 0.22);
+}
+
+.phone-body::before {
+  /* The black glass around the display. */
+  content: '';
+  position: absolute;
+  inset: 1.1cqi;
+  border-radius: 14.4cqi;
+  background: #050506;
+}
+
+.phone-screen {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12.2cqi;
+  background: #111113;
+  /* Keeps the rounded clip crisp on Safari while the image composites. */
+  isolation: isolate;
+}
+
+.phone-screen img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* The Dynamic Island, matched to the one the simulator draws into the capture
+   (376 × 110 at 42 px from the top of a 1206 px screen) so the two coincide.
+   The screen is 91.6cqi wide, so: top 42/1206 × 91.6, width 376/1206 × 91.6. */
+.phone-island {
+  position: absolute;
+  top: 3.19cqi;
+  left: 50%;
+  width: 28.56cqi;
+  aspect-ratio: 376 / 110;
+  border-radius: 999px;
+  background: #000;
+  transform: translateX(-50%);
+}
+
+.slot-empty {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 22px;
+  border: 7px solid var(--ink);
+  border-radius: 40px;
+  background: linear-gradient(160deg, #f4f0ff 0%, #ffffff 55%, #efeafd 100%);
+  box-shadow: 0 24px 48px rgba(17, 17, 20, 0.12);
+}
+
+.slot-island {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  width: 34%;
+  height: 16px;
+  border-radius: 999px;
+  background: var(--ink);
+  transform: translateX(-50%);
+}
+
+/* Two phones side by side, the second slightly lower, as one picture. */
+.phone-pair {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex: none;
+}
+
+.phone-pair .slot {
+  width: 220px;
+}
+
+.phone-pair .slot + .slot {
+  margin-top: 56px;
+}
+
+@media (max-width: 760px) {
+  .phone-pair {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .phone-pair .slot,
+  .split .phone-pair .slot {
+    width: min(170px, 42vw);
+    margin-inline: 0;
+  }
+
+  .phone-pair .slot + .slot {
+    margin-top: 36px;
+  }
+}
+
+.slot-label {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--muted);
+}
+
+.slot-sm.slot-empty {
+  border-width: 6px;
+  border-radius: 32px;
+}
+
+.slot-sm .slot-island {
+  top: 10px;
+  height: 13px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.gallery-item p {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.home-faq .faq {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.home-faq .faq h3 {
+  margin: 0 0 8px;
+  font-size: 19px;
+}
+
+.home-faq .faq p {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.final {
+  text-align: center;
+}
+
+/* Four cards in one row rather than three and an orphan; two by two where
+   four do not fit. */
+.quotes-four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1000px) {
+  .quotes-four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* A card section that leads straight into a split section, and one that
+   follows a phone: the split carries the gap above it, and cards directly
+   under a phone need a little air rather than none. */
+.proof-lead {
+  padding-bottom: 0;
+}
+
+.proof-follow {
+  padding-top: 56px;
+}
+
 @media (max-width: 760px) {
   .shell {
     padding: 0 20px;
@@ -781,6 +1119,45 @@ figure figcaption b {
     margin-bottom: 24px;
   }
 
+  .story,
+  .split {
+    padding-block: 52px 0;
+  }
+
+  /* One column, text first, phone under it, on both split sections. */
+  .split,
+  .split-flip {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .split-flip > :first-child {
+    order: 0;
+  }
+
+  .split p {
+    margin-inline: auto;
+  }
+
+  .split .slot {
+    width: min(240px, 64vw);
+    margin-inline: auto;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px 14px;
+  }
+
+  .quotes-four {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-follow {
+    padding-top: 40px;
+  }
+
   figure {
     padding: 22px;
   }
@@ -811,6 +1188,771 @@ figure figcaption b {
     min-height: 44px;
   }
 }
+
+/* ------------------------------------------------------------- articles -- */
+
+/* Header cells: column heads stay on one line, row heads (an exercise, an
+   option) wrap like body text. */
+.prose thead th {
+  text-align: left;
+  padding: 10px 14px 10px 0;
+  border-bottom: 1px solid var(--ink);
+}
+
+.prose tbody th {
+  white-space: normal;
+  text-align: left;
+  padding: 10px 14px 10px 0;
+  border-bottom: 1px solid var(--hairline);
+  vertical-align: top;
+}
+
+/* "On this page": a short numbered list of the sections, near the top. */
+.prose .toc {
+  margin: 28px 0 8px;
+  padding: 18px 22px;
+  border: 1px solid var(--hairline);
+  border-radius: 16px;
+}
+
+.prose .toc h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.prose .toc ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.prose .toc li {
+  margin: 4px 0;
+}
+
+/* One exercise: its image slot beside the instructions. */
+.prose .exercise-detail {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 20px;
+  align-items: start;
+  margin: 26px 0;
+}
+
+.prose .exercise-detail .slot {
+  width: 110px;
+  margin: 0;
+}
+
+.prose .exercise-detail .slot-label {
+  font-size: 11px;
+}
+
+/* An exercise shown with the app's own clip: a wider column than the
+   placeholder, since the movement has to be readable. */
+.prose .exercise-detail:has(.exercise-media) {
+  grid-template-columns: 240px 1fr;
+  gap: 26px;
+}
+
+.exercise-media {
+  margin: 0;
+}
+
+.exercise-media-frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #ececee;
+  box-shadow: 0 10px 28px rgba(17, 17, 20, 0.1);
+}
+
+.exercise-media-frame img,
+.exercise-media-frame video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.exercise-media figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+@media (max-width: 760px) {
+  .prose .exercise-detail:has(.exercise-media) {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .exercise-media {
+    max-width: 340px;
+  }
+}
+
+.prose .exercise-detail h3 {
+  margin: 0 0 6px;
+}
+
+.prose .exercise-detail p {
+  margin: 0 0 8px;
+}
+
+.prose .stop {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* The line said just before the App Store button. */
+.prose .cta-line {
+  margin: 28px 0 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* A grade ("B against") reads as one value; keep it on one line. */
+.prose td b {
+  white-space: nowrap;
+}
+
+/* ------------------------------------------------------------------ home -- */
+
+/* One vertical rhythm for the home page: the same gap between every section. */
+:root {
+  --home-gap: 96px;
+}
+
+@media (max-width: 760px) {
+  :root {
+    --home-gap: 64px;
+  }
+}
+
+.home > section.shell {
+  padding-block: 0;
+  margin-block: 0;
+}
+
+.home > section.shell + section.shell {
+  margin-top: var(--home-gap);
+}
+
+.home > section.shell.hero {
+  padding-top: 56px;
+}
+
+.home > section.shell.final {
+  margin-bottom: var(--home-gap);
+}
+
+/* Hero: three phones, today in front, tilted a little either side, with a
+   soft brand glow behind them. */
+.hero-phones {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 44px;
+  padding: 16px 0 8px;
+  isolation: isolate;
+}
+
+.hero-phones::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  /* Never wider than its column: at 1024px a wider glow was the page's only
+     sideways scroll. */
+  width: min(560px, 100%);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(closest-side, rgba(139, 92, 246, 0.26), rgba(139, 92, 246, 0.08) 58%, transparent 78%);
+  z-index: -1;
+}
+
+.hero-phone .slot {
+  width: 100%;
+  margin: 0;
+}
+
+.hero-phone-center {
+  position: relative;
+  z-index: 2;
+  width: min(270px, 44vw);
+}
+
+.hero-phone-left,
+.hero-phone-right {
+  position: relative;
+  z-index: 1;
+  width: min(230px, 34vw);
+}
+
+.hero-phone-left {
+  transform: translate(24%, 5%) rotate(-6deg);
+}
+
+.hero-phone-right {
+  transform: translate(-24%, 5%) rotate(6deg);
+}
+
+.hero-chip {
+  display: none;
+}
+
+/* The tilted side phones reach past the column on narrow screens; clip them
+   sideways only, so the shadows below still show. */
+@media (max-width: 1023px) {
+  .hero-phones {
+    overflow-x: clip;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+  }
+
+  .hero-split h1 {
+    font-size: clamp(46px, 4.7vw, 70px);
+  }
+
+  .hero-split .hero-text p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-split .store {
+    justify-content: flex-start;
+  }
+
+  .hero-split .hero-phones {
+    margin-top: 0;
+  }
+
+  .hero-chip {
+    position: absolute;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 14px 9px 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 0 0 1px var(--hairline), 0 10px 26px rgba(17, 17, 20, 0.1);
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: var(--ink);
+    animation: chip-float 6s ease-in-out infinite;
+  }
+
+  .hero-chip .icon {
+    color: var(--violet-deep);
+  }
+
+  .chip-a {
+    top: 12%;
+    left: -2%;
+  }
+
+  .chip-b {
+    top: 46%;
+    right: -4%;
+    animation-delay: -2s;
+  }
+
+  .chip-c {
+    bottom: 10%;
+    left: 4%;
+    animation-delay: -4s;
+  }
+}
+
+@keyframes chip-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* "Is this for me?": four equal cards, each one link, tinted with one of the
+   app's accent colours. */
+.who-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.who-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 230px;
+  padding: 28px;
+  border: 1px solid var(--hairline);
+  border-radius: 24px;
+  background: var(--tint);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.who-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(17, 17, 20, 0.1);
+}
+
+.who-card:focus-visible {
+  outline: 3px solid var(--violet-deep);
+  outline-offset: 3px;
+}
+
+.who-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  background: var(--track);
+  color: var(--fill);
+}
+
+.who-goal {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  align-self: flex-start;
+  padding: 4px 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.who-goal::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--fill);
+}
+
+.who-card h3 {
+  margin: 6px 0 0;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+
+.who-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.who-more {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-end;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.who-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  transition: transform 0.18s ease;
+}
+
+.who-card:hover .who-arrow {
+  transform: translateX(3px);
+}
+
+/* The app's accents (src/shared/config/theme.ts), light mode. */
+.who-teal {
+  --fill: #00b4a6;
+  --track: rgba(0, 180, 166, 0.16);
+  --tint: rgba(0, 180, 166, 0.06);
+}
+
+.who-violet {
+  --fill: #7c5cff;
+  --track: rgba(124, 92, 255, 0.16);
+  --tint: rgba(124, 92, 255, 0.06);
+}
+
+.who-amber {
+  --fill: #f5a623;
+  --track: rgba(245, 166, 35, 0.18);
+  --tint: rgba(245, 166, 35, 0.07);
+}
+
+.who-blue {
+  --fill: #0a84ff;
+  --track: rgba(10, 132, 255, 0.15);
+  --tint: rgba(10, 132, 255, 0.05);
+}
+
+/* Home FAQ: native details, answer in the HTML, open on tap. */
+.faq-details details {
+  border-bottom: 1px solid var(--hairline);
+}
+
+.faq-details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-details summary::after {
+  content: '+';
+  flex: none;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--muted);
+  transition: transform 0.2s ease;
+}
+
+.faq-details details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-details summary:focus-visible {
+  outline: 2px solid var(--violet-deep);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+.home-faq .faq-details summary h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.home-faq .faq-details details p {
+  margin: 0 0 20px;
+}
+
+/* The closing block: a card in the header's purple wash. */
+.final-card {
+  padding: 64px 28px;
+  border: 1px solid rgba(124, 92, 255, 0.18);
+  border-radius: 32px;
+  text-align: center;
+  background:
+    radial-gradient(70% 90% at 12% 0%, rgba(139, 92, 246, 0.28), transparent 70%),
+    radial-gradient(60% 80% at 90% 8%, rgba(109, 74, 239, 0.2), transparent 72%),
+    linear-gradient(180deg, #f2edff, #e9e1ff);
+}
+
+.final-card h2 {
+  margin: 0;
+  font-family: var(--font-display), var(--font-body);
+  font-weight: 400;
+  font-size: clamp(32px, 4.4vw, 54px);
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.final-card .store {
+  margin-top: 28px;
+}
+
+.final-small {
+  margin: 16px 0 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.final-notice {
+  max-width: 620px;
+  margin: 20px auto 0;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+@media (max-width: 760px) {
+  .who-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .who-card {
+    min-height: 0;
+    padding: 22px;
+  }
+
+  .final-card {
+    padding: 44px 20px;
+    border-radius: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-chip {
+    animation: none;
+  }
+
+  .who-card,
+  .who-arrow {
+    transition: none;
+  }
+
+  .who-card:hover,
+  .who-card:hover .who-arrow {
+    transform: none;
+  }
+}
+
+/* An exercise without a clip: the text takes the full width, no empty box. */
+.prose .exercise-detail.exercise-text {
+  grid-template-columns: 1fr;
+}
+
+/* Mobile header: the nav is one row that scrolls sideways instead of wrapping
+   a lone link onto a second line. Every link stays, Support and Privacy
+   included. */
+@media (max-width: 760px) {
+  .nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    mask-image: linear-gradient(90deg, #000 88%, transparent);
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a {
+    flex: none;
+    white-space: nowrap;
+  }
+}
+
+/* The App Store button stays on one line down to 320px. */
+@media (max-width: 420px) {
+  .store a {
+    gap: 9px;
+    padding: 14px 20px;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .store svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .final-card {
+    padding-inline: 12px;
+  }
+}
+
+/* Very small phones: the header button fits beside the logo. */
+@media (max-width: 360px) {
+  .download {
+    padding: 0 12px;
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  .masthead {
+    gap: 10px 12px;
+  }
+}
+
+/* Apple's own badge on the Russian and Spanish pages: the artwork as supplied,
+   no pill around it. 40px is Apple's minimum height on screen. */
+.store-official a,
+.prose .store-official a {
+  padding: 0;
+  background: none;
+  border-radius: 0;
+}
+
+.store-official img {
+  display: block;
+  width: auto;
+  height: 56px;
+}
+
+@media (max-width: 420px) {
+  .store-official a {
+    padding: 0;
+  }
+
+  .store-official img {
+    height: 48px;
+  }
+}
+
+/* ------------------------------------------------------------- wrapping -- */
+
+/* Words are never split by the browser: no automatic hyphens in any language
+   and no mid-word breaks. A heading balances its lines so none ends on a lone
+   word; body text avoids a one-word last line. Line breaks the text needs are
+   in the text itself as non-breaking spaces (scripts/typeset.mjs). */
+html {
+  hyphens: manual;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+h1,
+h2,
+h3,
+summary {
+  text-wrap: balance;
+}
+
+p,
+li,
+dd,
+figcaption {
+  text-wrap: pretty;
+}
+
+/* A hyphenated word, kept on one line (components/Prose.tsx). */
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Tablet widths: the wordmark, five links and the button do not fit on one
+   row until 1024px, so the links take a row of their own, as on a phone. */
+@media (min-width: 761px) and (max-width: 1023px) {
+  .masthead {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+  }
+}
+
+/*
+ * Russian headings.
+ *
+ * Oswald's Cyrillic capitals are wide and Russian words are long: at the
+ * English sizes «ПЕРЕПРОБОВАЛИ?» and «КОНФИДЕНЦИАЛЬНОСТИ» are wider than a
+ * phone, and a heading like «ПЛАН ПОДСТРАИВАЕТСЯ» breaks one word to a line.
+ * These sizes are set so the longest word of every Russian heading fits the
+ * column at 320px.
+ */
+/* «Всё перепробовали?» is 9.6em wide in Oswald capitals: under 29px at 320,
+   under 36px at 390, and under 48px in the 1024px two-column layout. */
+:lang(ru) .hero h1 {
+  font-size: clamp(28px, 8.9vw, 72px);
+}
+
+/* «конфиденциальности» is 10.7em; «Упражнения и растяжка» needs 11.7em of line. */
+:lang(ru) .prose h1 {
+  /* 43px keeps «Политика конфиденциальности» (15.5em) on one line at 672px. */
+  font-size: clamp(22px, 7.2vw, 43px);
+}
+
+:lang(ru) .proof h2,
+:lang(ru) .story h2,
+:lang(ru) .split h2 {
+  font-size: clamp(22px, 7vw, 44px);
+}
+
+@media (min-width: 1024px) {
+  :lang(ru) .hero-split h1 {
+    font-size: clamp(40px, 4.5vw, 52px);
+  }
+}
+
+/* The section with two phones side by side leaves its text a 207px column at
+   768px, one word to a line. Below 1024px it stacks as on a phone. */
+@media (min-width: 761px) and (max-width: 1023px) {
+  .split-flip {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    text-align: center;
+  }
+
+  .split-flip > :first-child {
+    order: 0;
+  }
+
+  .split-flip p {
+    margin-inline: auto;
+  }
+
+  .split-flip .phone-pair {
+    justify-content: center;
+  }
+}
+
+/* The last two words of a plan card heading stay together where the card is
+   wide enough (Home.tsx, keepTail): one or two cards to a row from 375px, and
+   three to a row from 1080px. Between those, three cards share the row and
+   «опубликованных исследований» (281px at 18px) is wider than a card. The
+   Russian heading is a pixel smaller so the pair fits the 291px card at 1440. */
+@media (min-width: 375px) and (max-width: 880px), (min-width: 1080px) {
+  .quotes h3 .tail {
+    white-space: nowrap;
+  }
+}
+
+:lang(ru) .quotes figure h3 {
+  font-size: 18px;
+}
+
+/* Beside a phone the Russian heading has half the row: «План подстраивается»
+   is about 12.8em, and the column is 404px at 768. */
+@media (min-width: 761px) {
+  :lang(ru) .split h2 {
+    font-size: clamp(28px, 3.6vw, 38px);
+  }
+}
+
+/* Russian and Spanish headings: Й, Ё and the accented capitals (Ó, Í)
+   carry marks above the cap height, and at the English line-height they
+   touched the line above. */
+:lang(ru) h1,
+:lang(ru) h2,
+:lang(es) h1,
+:lang(es) h2 {
+  line-height: 1.14;
 
 /* ------------------------------------------------------------- handoff -- */
 /* The two pages an email links to: /open/ and /unsubscribe/. One card in the

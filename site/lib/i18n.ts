@@ -4,10 +4,12 @@
  * The app ships in English, Russian and Spanish, so the site does too — and the
  * Russian and Spanish results for "flat feet exercises" are far thinner than
  * the English ones, which makes them the cheapest first page a new domain can
- * reach. Only the home page and the guides are translated. The program,
- * evidence, FAQ and legal pages stay English: they carry clinical figures and
- * legal wording, and a machine-quality translation of either is worse than an
- * honest English page.
+ * reach. The home page, the guides and the three pages App Store review reads
+ * (support, privacy, terms) are translated. The program, evidence and FAQ
+ * pages stay English: they carry clinical figures, and a machine-quality
+ * translation of those is worse than an honest English page. Where a legal
+ * translation and the English differ, the English applies, and each
+ * translated legal page says so.
  *
  * Typed off English like the app's catalogue: a key missing in Russian or
  * Spanish fails `tsc`.
@@ -27,29 +29,29 @@ export const LANG_NAMES: Record<Lang, string> = {
 export const OG_LOCALE: Record<Lang, string> = {
   en: 'en_US',
   ru: 'ru_RU',
-  es: 'es_ES',
+  es: 'es_MX',
 };
 
 const en = {
-  soonHeader: 'Coming soon',
-  downloadHeader: 'Download App',
-  soonBadge: 'Coming soon to the App Store',
-  getBadge: 'Get the app',
-  getBadgeLabel: 'Get Walkito on the App Store',
+  headerButton: 'Get the app',
+  getBadge: 'Download on the App Store',
+  getBadgeLabel: 'Download Walkito on the App Store',
   navProgram: 'Program',
   navEvidence: 'Evidence',
   navQuestions: 'Questions',
   navSupport: 'Support',
   navPrivacy: 'Privacy',
   navTerms: 'Terms',
+  socialTikTok: 'Walkito on TikTok',
+  socialInstagram: 'Walkito on Instagram',
   navFlatFeet: 'Flat feet',
   navHeelPain: 'Heel pain',
   language: 'Language',
   sourcesHeading: 'Sources',
   guidesHeading: 'Guides',
   updated: 'Updated',
-  byline: 'Walkito editorial team',
   keyPoints: 'Key points',
+  contents: 'On this page',
   faqHeading: 'Questions people ask',
   relatedHeading: 'Related guides',
   navAbout: 'About',
@@ -60,57 +62,57 @@ const en = {
 type Chrome = Record<keyof typeof en, string>;
 
 const ru: Chrome = {
-  soonHeader: 'Скоро',
-  downloadHeader: 'Скачать',
-  soonBadge: 'Скоро в App Store',
-  getBadge: 'Скачать приложение',
-  getBadgeLabel: 'Скачать Walkito в App Store',
+  headerButton: 'Скачать приложение',
+  getBadge: 'Скачать в App Store',
+  getBadgeLabel: 'Скачать Walkito в App Store',
   navProgram: 'Программа',
   navEvidence: 'Исследования',
   navQuestions: 'Вопросы',
   navSupport: 'Поддержка',
   navPrivacy: 'Конфиденциальность',
   navTerms: 'Условия',
+  socialTikTok: 'Walkito в TikTok',
+  socialInstagram: 'Walkito в Instagram',
   navFlatFeet: 'Плоскостопие',
-  navHeelPain: 'Боль в пятке',
+  navHeelPain: 'Боль в пятке',
   language: 'Язык',
   sourcesHeading: 'Источники',
   guidesHeading: 'Гайды',
   updated: 'Обновлено',
-  byline: 'Редакция Walkito',
   keyPoints: 'Главное',
+  contents: 'На этой странице',
   faqHeading: 'Частые вопросы',
   relatedHeading: 'Похожие гайды',
-  navAbout: 'О проекте',
+  navAbout: 'О проекте',
   notice:
-    'Walkito — программа упражнений. Она не ставит диагноз и не лечит. Если боль острая, усиливается или мешает спать, обратитесь к врачу.',
+    'Walkito даёт программу упражнений. Он не ставит диагноз и не лечит. Если боль острая, усиливается или мешает спать, обратитесь к врачу.',
 };
 
 const es: Chrome = {
-  soonHeader: 'Muy pronto',
-  downloadHeader: 'Descargar',
-  soonBadge: 'Muy pronto en el App Store',
-  getBadge: 'Descargar la app',
-  getBadgeLabel: 'Descarga Walkito en el App Store',
+  headerButton: 'Descargar la app',
+  getBadge: 'Descargar en el App Store',
+  getBadgeLabel: 'Descargar Walkito en el App Store',
   navProgram: 'Programa',
   navEvidence: 'Evidencia',
   navQuestions: 'Preguntas',
   navSupport: 'Soporte',
   navPrivacy: 'Privacidad',
   navTerms: 'Términos',
+  socialTikTok: 'Walkito en TikTok',
+  socialInstagram: 'Walkito en Instagram',
   navFlatFeet: 'Pie plano',
   navHeelPain: 'Dolor de talón',
   language: 'Idioma',
   sourcesHeading: 'Fuentes',
   guidesHeading: 'Guías',
   updated: 'Actualizado',
-  byline: 'Equipo editorial de Walkito',
   keyPoints: 'Lo esencial',
+  contents: 'En esta página',
   faqHeading: 'Preguntas frecuentes',
   relatedHeading: 'Guías relacionadas',
   navAbout: 'Sobre Walkito',
   notice:
-    'Walkito es un programa de ejercicios. No diagnostica ni trata. Si el dolor es agudo, va a peor o no te deja dormir, consulta a un profesional sanitario.',
+    'Walkito es un programa de ejercicios. No diagnostica ni trata. Si el dolor es agudo, empeora o no te deja dormir, consulta a un profesional de la salud.',
 };
 
 export const CHROME: Record<Lang, Chrome> = { en, ru, es };
@@ -139,6 +141,9 @@ export const TRANSLATED = {
     ru: '/ru/o-proekte/',
     es: '/es/sobre-walkito/',
   },
+  support: { en: '/support/', ru: '/ru/podderzhka/', es: '/es/soporte/' },
+  privacy: { en: '/privacy/', ru: '/ru/konfidentsialnost/', es: '/es/privacidad/' },
+  terms: { en: '/terms/', ru: '/ru/usloviya/', es: '/es/terminos/' },
 } as const satisfies Record<string, Record<Lang, string>>;
 
 export type TranslatedPage = keyof typeof TRANSLATED;

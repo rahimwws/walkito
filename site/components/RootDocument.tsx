@@ -1,7 +1,7 @@
 import { JsonLd } from '@/components/JsonLd';
 import { anton, oswald } from '@/lib/fonts';
 import type { Lang } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { SAME_AS, SITE_NAME, SITE_URL } from '@/lib/site';
 
 /** Sitewide, once per page. Not repeated by the pages themselves — duplicated
  * Organization blocks are a common way to make Google pick the wrong one. */
@@ -12,10 +12,11 @@ const ORGANISATION = {
   url: SITE_URL,
   logo: `${SITE_URL}/icon.png`,
   // No length: the plan is built a week at a time around a measurable goal and
-  // keeps going while it is used. No `sameAs` until there are profiles that
-  // are really ours to point at.
+  // keeps going while it is used.
   description:
-    'An exercise plan for heel and foot pain in runners, drawn from published rehabilitation protocols and built one week at a time around a measurable goal.',
+    'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
+  // Only profiles that are really ours; see `SAME_AS`.
+  ...(SAME_AS.length > 0 ? { sameAs: SAME_AS } : {}),
 };
 
 /**

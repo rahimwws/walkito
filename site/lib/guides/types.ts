@@ -22,9 +22,32 @@ import type { Lang, TranslatedPage } from '@/lib/i18n';
  */
 export type GuideExercise = {
   name: string;
-  /** Sets, reps, holds — as the reader would say it. */
+  /** Sets, reps, holds, as the reader would say it. */
   dose: string;
   how: string;
+  /** Optional, for guides that show the exercises as a table: how often, what
+   * the exercise should feel like, and when to stop. */
+  often?: string;
+  feel?: string;
+  stop?: string;
+  /** Label for the image slot beside the exercise, until a frame from the
+   * app's exercise video fills it. */
+  image?: string;
+  /** The app's exercise id whose clip shows this exercise
+   * (`public/exercises/<id>.*`, made by `scripts/exercise-media.mjs`). When
+   * set, it replaces the placeholder. */
+  media?: string;
+  /** One line under the clip. */
+  caption?: string;
+  /** What the still shows, for screen readers. */
+  alt?: string;
+};
+
+/** A real HTML table: doses, grades. Cells take the same inline marks. */
+export type GuideTable = {
+  caption?: string;
+  head: readonly string[];
+  rows: readonly (readonly string[])[];
 };
 
 export type GuideSection = {
@@ -32,6 +55,10 @@ export type GuideSection = {
   paragraphs?: readonly string[];
   exercises?: readonly GuideExercise[];
   bullets?: readonly string[];
+  table?: GuideTable;
+  /** Study detail kept out of the running text (scales, intervals, p-values),
+   * printed with the section's sources. */
+  sourceNote?: string;
   /** Indices into `CITATIONS`, printed under the section. */
   cites?: readonly number[];
 };
@@ -65,6 +92,10 @@ export type Guide = {
   description: string;
   h1: string;
   lede: string;
+  /** Paragraphs after the lede, when the opening needs more than one. */
+  intro?: readonly string[];
+  /** Show a table of contents under the key points. */
+  toc?: boolean;
   /**
    * "Key points": three to five one-line facts shown right under the lede.
    * Each stands alone and carries its own number or qualifier, so a reader who
@@ -78,7 +109,13 @@ export type Guide = {
   /** When to see a clinician instead. Always present, always last before the
    * program block. */
   redFlags: { h2: string; bullets: readonly string[] };
-  program: { h2: string; text: string };
+  program: {
+    h2: string;
+    text: string;
+    /** More paragraphs, and a short line said just before the App Store button. */
+    more?: readonly string[];
+    cta?: string;
+  };
   /** Breadcrumb label for the guide itself. */
   crumb: string;
   campaign: string;

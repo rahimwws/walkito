@@ -7,8 +7,8 @@
  * once and immediately went stale: eight clinical answers were added to
  * `lib/faq.ts` and the published file still carried the previous eighteen. It
  * went stale a second time when the plan stopped having a length — both files
- * kept describing "a 12-week program" to every AI engine that read them, weeks
- * after the app had dropped it. A file that claims to be the full text and is
+ * kept describing a fixed-length program to every AI engine that read them,
+ * weeks after the app had dropped it. A file that claims to be the full text and is
  * not is worse than no file: it is the version an AI engine reads.
  *
  * It imports the TypeScript sources directly. Node runs `.ts` natively from
@@ -139,20 +139,20 @@ should be seen by a clinician.`;
 const KEY_FACTS = [
   'No fixed length. The plan is built one week at a time around a focus goal; a goal that is reached moves to "maintaining" (kept up at a lower dose) and the next goal takes its place, for as long as the plan is used.',
   `Five measured goals: easier mornings (morning pain at or under 1/10 for ${PROGRAM.painFreeDays} days running); an arch hold of ${archHoldSeconds} seconds; ${calfRaises} single-leg calf raises; single-leg balance for ${balanceSeconds} seconds; a left/right difference under ${gapPercent}%.`,
-  'A new user starts with at most three goals, pain first. The app does not ask whether a flat foot is flexible or rigid; the randomised trial of arch exercise was run on flexible flat feet, so if the arch stays flat even with no weight on the foot, check with a clinician before arch work.',
+  'A new user starts with at most three goals, pain first. The app does not ask whether a flat foot is flexible or rigid; the randomized trial of arch exercise was run on flexible flat feet, so if the arch stays flat even with no weight on the foot, check with a clinician before arch work.',
   `Training days: ${or(days)} a week. Sessions: ${or(minutes)} minutes (default ${PROGRAM.defaultMinutes}), each 2 to 4 exercises; the focus exercise is never cut.`,
   'Week one "settles in": nothing that loads the plantar fascia and nothing above level 2.',
   'Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.',
   'Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal\'s chain moves up one level at a time.',
   `Tests: ${PROGRAM.retestTests} physical measurements (calf raises to failure, arch hold, single-leg balance) in about ${PROGRAM.retestMinutes} minutes, every ${PROGRAM.testEveryDays} days until the first goal is reached, then every ${PROGRAM.testEveryDaysAfterGoal} days.`,
-  'iOS only, in English, Russian and Spanish. Coming soon to the App Store.',
+  'Available on iPhone now, on the App Store; Android is planned. In English, Russian and Spanish.',
   `Contact: ${SUPPORT_EMAIL}`,
 ];
 
 const FINDINGS = [
-  'High-load strength training scored 29 points lower on the Foot Function Index than plantar-specific stretching at 3 months (randomised trial, n=48, 95% CI 6-52, p=0.016); at 12 months the two groups had converged, so the effect is faster improvement rather than a larger one.',
-  'In people with *flexible* flat feet, a six-week exercise programme in a randomised trial (n=52) improved navicular drop by 0.4 cm and arch angle by 16 degrees more than control. Rigid flat feet are structural and exercise will not change them.',
-  'In a 2024 meta-analysis, only short-foot programmes longer than six weeks improved navicular drop; shorter ones showed no measurable effect.',
+  'High-load strength training scored 29 points lower on the Foot Function Index than plantar-specific stretching at 3 months (randomized trial, n=48, 95% CI 6-52, p=0.016); at 12 months the two groups had converged, so the effect is faster improvement rather than a larger one.',
+  'In people with *flexible* flat feet, a six-week exercise program in a randomized trial (n=52) improved navicular drop by 0.4 cm and arch angle by 16 degrees more than control. Rigid flat feet are structural and exercise will not change them.',
+  'In a 2024 meta-analysis, only short-foot programs longer than six weeks improved navicular drop; shorter ones showed no measurable effect.',
   'The 2023 JOSPT heel pain guideline, written for physical therapists, grades among its recommendations: manual therapy A, plantar fascia and calf stretching A, taping alongside other physical therapy A, night splints A, and resistance training B. It recommends against orthotics as a stand-alone treatment (grade B; alongside other treatment they may be used, grade C) and against adding therapeutic ultrasound to stretching (grade A). Its education advice (grade E, expert opinion) is to modify weight-bearing load.',
 ];
 
@@ -205,7 +205,7 @@ ${guideLine(GUIDES.flatFeet.en)}
 - [Support](${url('/support/')}): notifications, Apple Health permissions,
   subscriptions, deleting your data
 - [Privacy](${url('/privacy/')}): what stays on the device and what leaves it
-- [Terms of use](${url('/terms/')}): the licence, App Store billing and
+- [Terms of use](${url('/terms/')}): the license, App Store billing and
   cancellation, health and safety, and what the app does not promise
 
 ## Other languages
@@ -284,7 +284,7 @@ function aboutText(a) {
 
 const guideOrder = ['en', 'ru', 'es'].flatMap((lang) => [GUIDES.heelPain[lang], GUIDES.flatFeet[lang]]);
 
-const full = `# ${SITE_NAME} — full text
+const full = `# ${SITE_NAME}: full text
 
 ${SUMMARY}
 
@@ -360,7 +360,7 @@ const PLAN_LENGTH = new RegExp(
     String.raw`\b84 d[ií]as`,
     'seis bloques',
     // The old program as it was also described (ten weeks), and the 90-day
-    // store pass, which is a billing period and not the plan's length.
+    // store pass, which is no longer sold and read as the plan's length anyway.
     String.raw`\b(?:10|ten)[-\s]weeks?\b`,
     String.raw`\b(?:90|ninety)[-\s]days?\b`,
     String.raw`\b10[-\s]недел`,
@@ -375,18 +375,49 @@ const PLAN_LENGTH = new RegExp(
   'i',
 );
 
+/**
+ * Walkito is sold as two auto-renewing subscriptions, yearly and weekly. The
+ * pass paid for once and the monthly subscription are no longer sold, so a
+ * line that still offers either stops the build too. `\s`, not a space, because
+ * the Russian and Spanish text still carries its non-breaking spaces here.
+ */
+const RETIRED_PRODUCT = new RegExp(
+  [
+    String.raw`\bone[-\s]time\s(?:purchase|payment)`,
+    String.raw`\bpaid\sonce\b`,
+    String.raw`\bmonthly\ssubscription`,
+    String.raw`разов[а-яё]*\s(?:оплат|покупк|плат)`,
+    String.raw`ежемесячн[а-яё]*\sподписк`,
+    String.raw`pago\súnico`,
+    String.raw`compras?\súnicas?`,
+    String.raw`suscripción\smensual`,
+  ].join('|'),
+  'i',
+);
+
 for (const [name, text] of [['llms.txt', llms], ['llms-full.txt', full]]) {
-  const hits = text.split('\n').filter((line) => PLAN_LENGTH.test(line));
+  const lines = text.split('\n');
+  const hits = lines.filter((line) => PLAN_LENGTH.test(line));
   if (hits.length) {
     throw new Error(
       `llms: ${name} would describe the plan by length, which it no longer has. ` +
         `Fix the source these lines come from:\n${hits.map((h) => `  ${h.trim()}`).join('\n')}`,
     );
   }
+  const retired = lines.filter((line) => RETIRED_PRODUCT.test(line));
+  if (retired.length) {
+    throw new Error(
+      `llms: ${name} would offer a product that is no longer sold. ` +
+        `Fix the source these lines come from:\n${retired.map((h) => `  ${h.trim()}`).join('\n')}`,
+    );
+  }
 }
 
-writeFileSync(join(ROOT, 'public/llms.txt'), llms);
-writeFileSync(join(ROOT, 'public/llms-full.txt'), full);
+// Plain text for machines: the non-breaking spaces that hold Russian and
+// Spanish lines together on a page (scripts/typeset.mjs) are ordinary spaces here.
+const spaces = (text) => text.replaceAll('\u00a0', ' ');
+writeFileSync(join(ROOT, 'public/llms.txt'), spaces(llms));
+writeFileSync(join(ROOT, 'public/llms-full.txt'), spaces(full));
 console.log(
   `llms.txt: ${llms.length} chars · llms-full.txt: ${full.length} chars, ` +
     `${guides.length} guides, ${FAQ.length} FAQ answers${aboutReady ? ', About' : ''}`,

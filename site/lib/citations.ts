@@ -36,7 +36,7 @@ export const CITATIONS: readonly Citation[] = [
     pmid: '38517769',
   },
   {
-    text: 'Koc TA Jr, Bise CG, Neville C, et al. Heel Pain — Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.',
+    text: 'Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.',
     doi: '10.2519/jospt.2023.0303',
     pmid: '38037331',
   },

@@ -26,6 +26,7 @@ import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { SegmentedControl } from '@/shared/ui/segmented-control';
+import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 import { TimePicker } from '@/shared/ui/time-picker';
 
 import { AccountRow } from './account-row';
@@ -79,7 +80,8 @@ export function PlanSettings() {
 
 
   return (
-    <View style={styles.root}>
+    // Hidden from session recordings: which foot and where it hurts.
+    <View style={styles.root} {...REPLAY_MASK}>
       <Text style={[styles.sectionTitle, { color: meter.caption }]}>{t('settings.planSection')}</Text>
 
       <View style={[styles.group, { backgroundColor: meter.track }]}>
@@ -193,7 +195,7 @@ export function PlanSettings() {
       </Text>
 
       <Modal visible={mapOpen} animationType="slide" presentationStyle="pageSheet" onRequestClose={() => setMapOpen(false)}>
-        <View style={[styles.mapSheet, { backgroundColor: colors.background }]}>
+        <View style={[styles.mapSheet, { backgroundColor: colors.background }]} {...REPLAY_MASK}>
           <Text style={[styles.mapTitle, { color: colors.foreground }]}>{t('settings.whereItHurts')}</Text>
           <View style={styles.map}>
             <LegMap

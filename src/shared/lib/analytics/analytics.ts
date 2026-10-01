@@ -61,6 +61,11 @@ function posthog(): PostHog | null {
       // React Native text cannot be masked wholesale, only inputs. That would
       // put health data in PostHog, which App Review 5.1.3 forbids and the
       // onboarding promises against. Events are enough for the funnels.
+      //
+      // If this is ever turned back on: the screens that show pain or Apple
+      // Health data are already wrapped in `ReplayMask` (`@/shared/ui/replay-mask`),
+      // but that covers only the views wrapped, and the privacy policy has to
+      // say recordings exist before they do.
       enableSessionReplay: false,
       // No location. PostHog would otherwise work out a country and city from
       // each event's IP address, which the App Store privacy label does not
