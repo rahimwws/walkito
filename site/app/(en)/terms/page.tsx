@@ -21,6 +21,12 @@ import { SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
  * and a monthly subscription. Both were withdrawn in October 2026 and must not
  * come back here. The Russian and Spanish pages mirror this one.
  *
+ * Invites promise only a discount. The code's owner used to be promised free
+ * weeks, which only ever lengthened the one-time pass: an App Store
+ * subscription cannot be lengthened from the device, so a subscriber would have
+ * been promised time that never arrived. Do not promise free time again until
+ * a server-side grant delivers it. The app's gift sheet says the same.
+ *
  * Two clauses a template would have supplied are deliberately absent.
  *
  * **Governing law and venue.** These need a real jurisdiction, and nobody has
@@ -189,16 +195,17 @@ export default function Terms() {
         <h2>Invites</h2>
         <p>
           You can share your invite code. A friend who uses it gets a discount on
-          the yearly subscription, and you get free weeks, up to the limit shown
-          in the app.
+          the yearly subscription. Once someone has used your code, the same
+          discount is open to you if you subscribe to the yearly plan later.
+          Sharing a code does not give you free time or any other reward.
         </p>
         <p>
-          Each person can use one code, once, and not their own. Invite rewards
-          have no cash value.
+          Each person can use one code, once, and not their own. Invite
+          discounts have no cash value.
         </p>
         <p>
-          We can change or end the invite program at any time. Rewards you have
-          already received stay yours.
+          We can change or end the invite program at any time. A discount you
+          have already subscribed at stays yours.
         </p>
 
         <h2>Apple Health</h2>

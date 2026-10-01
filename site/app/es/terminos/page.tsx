@@ -174,16 +174,18 @@ export default function TerminosEs() {
         <h2>Invitaciones</h2>
         <p>
           Puedes compartir tu código de invitación. Un amigo que lo use obtiene
-          un descuento en la suscripción anual, y tú recibes semanas
-          gratis, hasta el límite que se muestra en la app.
+          un descuento en la suscripción anual. Cuando alguien haya usado tu
+          código, el mismo descuento estará disponible para ti si te suscribes
+          al plan anual más adelante. Compartir un código no te da tiempo gratis
+          ni ninguna otra recompensa.
         </p>
         <p>
           Cada persona puede usar un código, una sola vez, y no el suyo propio.
-          Las recompensas por invitación no tienen valor en efectivo.
+          Los descuentos por invitación no tienen valor en efectivo.
         </p>
         <p>
           Podemos cambiar o terminar el programa de invitaciones en cualquier
-          momento. Las recompensas que ya hayas recibido siguen siendo tuyas.
+          momento. El descuento con el que ya te hayas suscrito sigue siendo tuyo.
         </p>
 
         <h2>Apple Salud</h2>
