@@ -62,6 +62,11 @@ function posthog(): PostHog | null {
       // put health data in PostHog, which App Review 5.1.3 forbids and the
       // onboarding promises against. Events are enough for the funnels.
       enableSessionReplay: false,
+      // No location. PostHog would otherwise work out a country and city from
+      // each event's IP address, which the App Store privacy label does not
+      // declare and nothing here needs. The project also discards client IPs
+      // on its side; this keeps the request from asking for it at all.
+      disableGeoip: true,
     });
     client.register({ app_variant: variant() });
     return client;
