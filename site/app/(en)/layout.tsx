@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   // iOS shows a native install strip when this is present. Omitted until there
   // is a listing: a banner pointing at a guessed id is a dead strip on every
   // iPhone that loads the page.
-  ...(APPLE_APP_ID != null ? { appleWebApp: { capable: false } } : {}),
+  ...(APPLE_APP_ID != null ? { itunes: { appId: APPLE_APP_ID } } : {}),
 };
 
 export { viewport } from '@/components/RootDocument';

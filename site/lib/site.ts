@@ -95,7 +95,7 @@ export const PAGE_UPDATED = {
  * The app's Apple ID is 6813076846 (`ascAppId` in `eas.json`), so once the
  * listing is public this becomes `https://apps.apple.com/app/id6813076846`.
  * `apps.apple.com` 404s on it until then. */
-export const APP_STORE_URL: string | null = null;
+export const APP_STORE_URL: string | null = 'https://apps.apple.com/app/id6813076846';
 
 /**
  * The provider token from App Store Connect → App Analytics → Campaigns.
@@ -127,7 +127,7 @@ export function storeHref(campaign: string): string | null {
 }
 
 /** The numeric id for the iOS Smart App Banner, once there is a listing. */
-export const APPLE_APP_ID: string | null = null;
+export const APPLE_APP_ID: string | null = '6813076846';
 
 export const SUPPORT_EMAIL = 'hello@walkito.site';
 
