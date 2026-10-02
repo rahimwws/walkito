@@ -398,4 +398,5 @@ export const ONBOARDING_RU = {
     'Было бы круто, если бы ты написал отзыв. Нам правда важно. Спасибо, что ты здесь.',
   'onboarding.note.signature': 'Рахим и Рахман',
   'onboarding.note.cta': 'Оценить Walkito',
+  'onboarding.note.later': 'Не сейчас',
 };

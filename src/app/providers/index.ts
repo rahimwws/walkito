@@ -11,6 +11,6 @@ export { useNotificationScheduler } from './notification-scheduler';
 export { useProgramClock } from './program-clock';
 export { useScreenTracking } from './screen-tracking';
 export { usePlanGoals } from './plan-goals';
-export { useReviewAtWin } from './review-at-win';
+export { useQueuedReview, useReviewAtWin } from './review-at-win';
 export { usePlanSync } from './plan-sync';
 export { useAppUsage } from './app-usage';

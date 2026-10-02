@@ -398,4 +398,5 @@ export const ONBOARDING_ES = {
     'Estaría genial que nos dejaras una reseña. Nos importa de verdad. Gracias por estar aquí.',
   'onboarding.note.signature': 'Rahim y Rahman',
   'onboarding.note.cta': 'Valorar Walkito',
+  'onboarding.note.later': 'Ahora no',
 };

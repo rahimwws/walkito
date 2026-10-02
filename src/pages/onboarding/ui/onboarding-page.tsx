@@ -1112,7 +1112,9 @@ const CONFIRM_MS = 900;
           there is no onboarding left to show it from once that has run, and
           over Home it would land on top of the offer sheet. `leaveNote` is what
           finally flips the flag. */}
-      <NoteSheet visible={note} onDone={leaveNote} asksForReview={false} />
+      {/* "Rate Walkito" closes the note into the next screen and Apple's star
+          sheet rises over it there (see `useQueuedReview`); "Not now" just closes. */}
+      <NoteSheet visible={note} onDone={leaveNote} />
     </KeyboardAvoidingView>
   );
 }

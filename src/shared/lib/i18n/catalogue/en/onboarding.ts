@@ -499,4 +499,5 @@ export const ONBOARDING_EN = {
     'It would mean a lot if you left a review. It genuinely matters to us. Thank you for being here.',
   'onboarding.note.signature': 'Rahim and Rahman',
   'onboarding.note.cta': 'Rate Walkito',
+  'onboarding.note.later': 'Not now',
 } as const satisfies Record<string, SourceEntry>;

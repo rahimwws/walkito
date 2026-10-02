@@ -5,7 +5,6 @@ import * as Haptics from 'expo-haptics';
 import { useEffect, useState } from 'react';
 import {
   Image,
-  Linking,
   Modal,
   Pressable,
   ScrollView,
@@ -25,8 +24,9 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { APP_STORE_REVIEW_URL, noteFonts, meterColors, palette } from '@/shared/config';
+import { noteFonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
+import { queueReview } from '@/shared/lib/review';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
@@ -61,10 +61,10 @@ type Props = {
    * caller finishes onboarding here — the sheet never navigates itself. */
   onDone: () => void;
   /**
-   * Whether the button asks for a review. Off at the end of onboarding: the
-   * plan spec asks for a review only at a win, never during onboarding, and a
-   * custom review ask is exactly what App Review 5.6.1 turns down. The note
-   * stays; its button just carries on.
+   * Whether the button asks for a review. On by default, the end of onboarding
+   * included: the tap queues Apple's own rating sheet (the API App Review
+   * 5.6.1 requires, never a custom one), shown on the next screen, and "Not
+   * now" sits under it so the rating is never the only way on.
    */
   asksForReview?: boolean;
 };
@@ -176,16 +176,16 @@ export function NoteSheet({ visible, onDone, asksForReview = true }: Props) {
   }));
 
   /**
-   * Opens the store, then hands over regardless.
+   * Hands over to the next screen, then asks for the rating there.
    *
-   * `onDone` is called unconditionally: the user is leaving for the App Store
-   * and comes back to whatever the app was showing when they left, so Home has
-   * to already be underneath. Waiting on the link would leave them returning to
-   * a dead onboarding screen.
+   * The rating is queued, not raised here: at the end of onboarding `onDone`
+   * swaps the whole tree for Home (or the paywall), and Apple's star sheet
+   * raised during that swap would go with the screen it sat on. The root
+   * layout raises it a beat after the next screen is up (`useQueuedReview`).
    */
   const rate = () => {
     Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-    void Linking.openURL(APP_STORE_REVIEW_URL).catch(() => {});
+    queueReview();
     onDone();
   };
 
@@ -282,6 +282,13 @@ export function NoteSheet({ visible, onDone, asksForReview = true }: Props) {
                 label={asksForReview ? t('onboarding.note.cta') : t('common.done')}
                 onPress={asksForReview ? rate : later}
               />
+              {/* A rating is asked for, never required: the way past it is a
+                  button too, not only a tap on the backdrop. */}
+              {asksForReview && (
+                <Pressable accessibilityRole="button" onPress={later} style={({ pressed }) => [styles.later, pressed && { opacity: 0.6 }]}>
+                  <Text style={[styles.laterText, { color: meter.caption }]}>{t('onboarding.note.later')}</Text>
+                </Pressable>
+              )}
             </Animated.View>
           </ScrollView>
         </Animated.View>
@@ -332,4 +339,6 @@ const styles = StyleSheet.create({
   close: { gap: 14 },
   signed: { gap: 2 },
   names: { fontSize: 14, fontFamily: noteFonts.medium, letterSpacing: -0.1 },
+  later: { alignSelf: 'center', paddingVertical: 12, paddingHorizontal: 24, marginTop: 4 },
+  laterText: { fontSize: 15, fontFamily: noteFonts.medium, letterSpacing: -0.1 },
 });

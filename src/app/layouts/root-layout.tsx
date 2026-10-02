@@ -16,6 +16,7 @@ import {
   usePlanGoals,
   usePlanSync,
   useAppUsage,
+  useQueuedReview,
   useReviewAtWin,
   useProgramClock,
   useClipPrefetch,
@@ -145,6 +146,8 @@ function RootLayoutInner() {
   useAppUsage();
   // Apple's review prompt, at a win only — never during onboarding.
   useReviewAtWin(onboarded);
+  // The rating asked for in the founders' note, raised over the screen after it.
+  useQueuedReview(onboarded);
   // Fills the local health cache in the background. Never awaited and never
   // rendered — every screen reads the cache, which always has an answer.
   useHealthPipeline();

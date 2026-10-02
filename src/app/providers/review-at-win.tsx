@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 import { goals, retestResults, useStreak, type Goal } from '@/entities/program';
-import { askForReview, type ReviewWin } from '@/shared/lib/review';
+import { askForReview, reviewNow, takeQueuedReview, useReviewQueued, type ReviewWin } from '@/shared/lib/review';
 
 /**
  * The first win worth asking about, or null — section 6 of the plan spec:
@@ -31,4 +31,24 @@ export function useReviewAtWin(onboarded: boolean): void {
     const win = reviewWin(streak.current, goals(), retestResults());
     if (win != null) void askForReview(win);
   }, [onboarded, streak.current]);
+}
+
+/** How long after the note closes the sheet rises: the next screen's arrival, settled. */
+const QUEUED_DELAY_MS = 900;
+
+/**
+ * Raises the rating the user asked for in the founders' note, once the screen
+ * after it is up. At the end of onboarding that waits for `onboarded` to flip,
+ * which is what swaps the tree for Home or the paywall; from Profile's preview
+ * of the note it is immediate.
+ */
+export function useQueuedReview(onboarded: boolean): void {
+  const queued = useReviewQueued();
+  useEffect(() => {
+    if (!queued || !onboarded) return;
+    const timer = setTimeout(() => {
+      if (takeQueuedReview()) void reviewNow();
+    }, QUEUED_DELAY_MS);
+    return () => clearTimeout(timer);
+  }, [queued, onboarded]);
 }
