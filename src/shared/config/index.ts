@@ -17,7 +17,7 @@ export {
   type Accent,
   type AccentName,
 } from './theme';
-export { APPLE_APP_ID, APP_STORE_REVIEW_URL, LEGAL, SUPPORT_EMAIL } from './legal';
+export { APPLE_APP_ID, APP_STORE_REVIEW_URL, LEGAL, PLAY_STORE_URL, SUPPORT_EMAIL } from './legal';
 export {
   CLIPS,
   CLIPS_TOTAL_BYTES,

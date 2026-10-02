@@ -26,6 +26,7 @@ export const PROFILE_EN = {
   /** Under "Refer a friend": what an invite is worth, to the friend. The
    * owner's free weeks are gone — see `gift.blurb`. */
   'profile.inviteHint': 'Friends get {percent}% off the annual subscription',
+  'profile.rate': 'Rate Walkito',
   'profile.contactSupport': 'Contact support',
   'profile.deleteAccount': 'Delete account',
 

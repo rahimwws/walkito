@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { HOME_META } from '@/components/Home';
 import { RootDocument } from '@/components/RootDocument';
 import { OG_LOCALE } from '@/lib/i18n';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { APPLE_APP_ID, SITE_NAME, SITE_URL } from '@/lib/site';
 
 import '../globals.css';
 
@@ -15,6 +15,8 @@ export { viewport } from '@/components/RootDocument';
  * restated: metadata does not inherit across root layouts.
  */
 export const metadata: Metadata = {
+  // Safari's Smart App Banner, as on the English root.
+  ...(APPLE_APP_ID != null ? { itunes: { appId: APPLE_APP_ID } } : {}),
   metadataBase: new URL(SITE_URL),
   title: {
     default: HOME_META.ru.title,

@@ -53,10 +53,11 @@ export const metadata: Metadata = {
     description: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
     images: ['/opengraph-image'],
   },
-  // iOS shows a native install strip when this is present. Omitted until there
-  // is a listing: a banner pointing at a guessed id is a dead strip on every
-  // iPhone that loads the page.
-  ...(APPLE_APP_ID != null ? { appleWebApp: { capable: false } } : {}),
+  // Safari's Smart App Banner: `<meta name="apple-itunes-app">`, which shows
+  // "Get" to someone without the app and "Open" to someone with it. Omitted
+  // while there was no listing; a banner pointing at a guessed id is a dead
+  // strip on every iPhone that loads the page.
+  ...(APPLE_APP_ID != null ? { itunes: { appId: APPLE_APP_ID } } : {}),
 };
 
 export { viewport } from '@/components/RootDocument';

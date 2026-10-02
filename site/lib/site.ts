@@ -89,13 +89,12 @@ export const PAGE_UPDATED = {
   terms: '2026-10-01',
 } as const;
 
-/** Where the App Store listing will live. Null until it exists — a button
- * pointing at a guessed URL is worse than one that scrolls.
+/** The App Store listing, live since 1.0.1 passed review (2 October 2026).
  *
- * The app's Apple ID is 6813076846 (`ascAppId` in `eas.json`), so once the
- * listing is public this becomes `https://apps.apple.com/app/id6813076846`.
- * `apps.apple.com` 404s on it until then. */
-export const APP_STORE_URL: string | null = null;
+ * The bare `id` form, without a country or a slug: apps.apple.com sends every
+ * visitor to their own storefront, so one link serves the English, Russian and
+ * Spanish pages alike. The app is not sold in Russia, where the store says so. */
+export const APP_STORE_URL: string | null = 'https://apps.apple.com/app/id6813076846';
 
 /**
  * The provider token from App Store Connect → App Analytics → Campaigns.
@@ -126,8 +125,8 @@ export function storeHref(campaign: string): string | null {
   return url.toString();
 }
 
-/** The numeric id for the iOS Smart App Banner, once there is a listing. */
-export const APPLE_APP_ID: string | null = null;
+/** The numeric id for the iOS Smart App Banner: Safari's own "Open / Get" strip. */
+export const APPLE_APP_ID: string | null = '6813076846';
 
 export const SUPPORT_EMAIL = 'hello@walkito.site';
 

@@ -98,6 +98,9 @@ export type AnalyticsEvents = {
   /** Settings → Email → Unsubscribe from all. */
   email_unsubscribed_all: Record<string, never>;
 
+  /** "Rate Walkito" opened the store's review page. Where it was tapped from. */
+  rate_app_tapped: { from: 'profile' };
+
   // ── Errors the user was spared ───────────────────────────────────────────
   /** A link named a screen the app does not have; the user was sent Home. */
   route_not_found: { path: string };

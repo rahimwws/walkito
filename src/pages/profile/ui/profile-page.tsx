@@ -4,17 +4,19 @@ import Delete02Icon from '@hugeicons/core-free-icons/Delete02Icon';
 import GiftIcon from '@hugeicons/core-free-icons/GiftIcon';
 import Mail01Icon from '@hugeicons/core-free-icons/Mail01Icon';
 import Settings02Icon from '@hugeicons/core-free-icons/Settings02Icon';
+import StarIcon from '@hugeicons/core-free-icons/StarIcon';
 import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
-import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useStreak } from '@/entities/program';
 import { firstName, useProfileEmail, useProfileName } from '@/entities/profile';
 import { REFERRAL_DISCOUNT_PERCENT, referralsAvailable, useReferral } from '@/entities/referral';
-import { SUPPORT_EMAIL, accents, fonts, meterColors, palette } from '@/shared/config';
+import { APP_STORE_REVIEW_URL, PLAY_STORE_URL, SUPPORT_EMAIL, accents, fonts, meterColors, palette } from '@/shared/config';
+import { track } from '@/shared/lib/analytics';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { GiftSheet } from '@/shared/ui/gift-sheet';
@@ -45,6 +47,8 @@ export function ProfilePage() {
   const streak = useStreak();
   const referral = useReferral();
   const email = useProfileEmail();
+  /** Where "Rate Walkito" goes on this phone: the store that sold the app. */
+  const rateUrl = Platform.OS === 'ios' ? APP_STORE_REVIEW_URL : PLAY_STORE_URL;
 
   const [giftOpen, setGiftOpen] = useState(false);
   const [deleteOpen, setDeleteOpen] = useState(false);
@@ -131,6 +135,20 @@ export function ProfilePage() {
             }}
           />
           <NotePreviewRow />
+          {/* The store's own review page, always one tap away — not only at the
+              wins where Apple's prompt may or may not appear (see
+              `useReviewAtWin`). Hidden on Android until the Play listing is live. */}
+          {rateUrl != null && (
+            <Row
+              icon={StarIcon}
+              label={t('profile.rate')}
+              onPress={() => {
+                Haptics.selectionAsync();
+                track('rate_app_tapped', { from: 'profile' });
+                void Linking.openURL(rateUrl).catch(() => {});
+              }}
+            />
+          )}
           <Row
             icon={Mail01Icon}
             label={t('profile.contactSupport')}

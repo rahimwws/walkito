@@ -16,6 +16,7 @@ export const PROFILE_ES = {
   'profile.referFriend': 'Invita a un amigo',
   'profile.invitesJoined': { one: '{count} se unió', other: '{count} se unieron' },
   'profile.inviteHint': 'Tus amigos obtienen un {percent}% de descuento en la suscripción anual',
+  'profile.rate': 'Valorar Walkito',
   'profile.contactSupport': 'Contactar con soporte',
   'profile.deleteAccount': 'Eliminar cuenta',
 

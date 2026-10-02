@@ -22,6 +22,7 @@ export const PROFILE_RU = {
     many: '{count} присоединились',
   },
   'profile.inviteHint': 'Друзьям - скидка {percent}% на годовую подписку',
+  'profile.rate': 'Оценить Walkito',
   'profile.contactSupport': 'Написать в поддержку',
   'profile.deleteAccount': 'Удалить аккаунт',
 

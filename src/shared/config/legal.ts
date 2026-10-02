@@ -44,9 +44,8 @@ export const APPLE_APP_ID = '6813076846';
 
 /**
  * Where "rate the app" sends someone: the App Store's own write-a-review page.
- *
- * Until the first version is live on the store this page says the app is not
- * available, so the button only does something useful from launch day on.
+ * Live since 1.0.1 passed review; Profile → Rate Walkito and the founders'
+ * note both open it.
  *
  * `expo-store-review` is the other way to do this — Apple's own in-app prompt.
  * It is not used here because it cannot be relied on: iOS decides whether to
@@ -54,3 +53,11 @@ export const APPLE_APP_ID = '6813076846';
  * simulator, so a tap has no observable result. This link always works.
  */
 export const APP_STORE_REVIEW_URL = `https://apps.apple.com/app/id${APPLE_APP_ID}?action=write-review`;
+
+/**
+ * The Google Play listing, for "rate the app" on Android. Null until the
+ * listing is public: the page answers 404 before that, so the row stays hidden
+ * on Android rather than opening a dead page. Set it to
+ * `https://play.google.com/store/apps/details?id=com.walkito.app` on launch day.
+ */
+export const PLAY_STORE_URL: string | null = null;
