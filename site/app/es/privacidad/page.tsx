@@ -227,7 +227,10 @@ export default function PrivacidadEs() {
         <p>
           <b>Qué:</b> un ID aleatorio, tu historial de compras y suscripciones
           del App Store, el ID de analítica mencionado arriba y dónde dijiste
-          que oíste hablar de Walkito.
+          que oíste hablar de Walkito. En iPhone, también si instalaste Walkito
+          desde un anuncio de búsqueda de Apple Ads y, en ese caso, de qué
+          campaña y con qué búsqueda, según AdServices de Apple. No necesita
+          permiso de rastreo ni usa el identificador de publicidad.
         </p>
         <p>
           <b>Por qué:</b> para saber qué has comprado y desbloquearlo, y para

@@ -2,6 +2,7 @@ import { identify, setPerson, track, type PlanTier, type PurchaseProps } from '@
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 import { currentUserId, supabase } from '@/shared/lib/supabase';
+import { Platform } from 'react-native';
 import Purchases, {
   LOG_LEVEL,
   PACKAGE_TYPE,
@@ -336,8 +337,29 @@ export async function startRevenueCat(apiKey: string, verbose: boolean): Promise
   Purchases.addCustomerInfoUpdateListener((info) => announce(info));
 
   void linkAnalytics();
+  void collectAdAttribution();
 
   await refreshEntitlement();
+}
+
+/**
+ * Hands RevenueCat the Apple Ads attribution token, on iOS.
+ *
+ * AdServices (iOS 14.3+) says whether this install came from an Apple Ads tap,
+ * and RevenueCat resolves the token to the campaign, ad group and keyword —
+ * which is what lets its charts say which search term brought a paying
+ * subscriber, not only an install. Standard attribution needs no App Tracking
+ * Transparency prompt, and the app shows none. The keyword level also needs the
+ * Apple AdServices integration in the RevenueCat dashboard, signed in to the
+ * Apple Ads account. Android has no equivalent; the call is iOS-only.
+ */
+async function collectAdAttribution(): Promise<void> {
+  if (Platform.OS !== 'ios') return;
+  try {
+    await Purchases.enableAdServicesAttributionTokenCollection();
+  } catch {
+    // Attribution is never worth failing a store start over.
+  }
 }
 
 /**

@@ -233,7 +233,10 @@ export default function Privacy() {
         <p>
           <b>What:</b> a random ID, your App Store purchase and subscription
           history, the analytics ID above, and where you said you heard about
-          Walkito.
+          Walkito. On iPhone, also whether you installed Walkito from an Apple
+          Ads search ad and, if so, which campaign and search term, from
+          Apple's AdServices. That needs no tracking permission and uses no
+          advertising identifier.
         </p>
         <p>
           <b>Why:</b> to know what you have bought and unlock it, and to see
