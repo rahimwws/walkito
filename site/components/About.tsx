@@ -9,7 +9,10 @@ import { Prose, typeset } from '@/components/Prose';
 import type { About as AboutData } from '@/lib/about/types';
 import { CHROME, TRANSLATED } from '@/lib/i18n';
 import { formatDate } from '@/lib/schema';
+import { REVIEWER } from '@/lib/reviewer';
 import { PAGE_UPDATED, SAME_AS, SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
+
+const REVIEWER_HEADING = { en: 'Who reviews our guides', ru: 'Кто проверяет наши гайды', es: 'Quién revisa nuestras guías' } as const;
 
 /** `[label](/path/)` and `**bold**`, the same two marks the guides allow. */
 function Inline({ text }: { text: string }) {
@@ -60,7 +63,32 @@ export function About({ about }: { about: AboutData }) {
           <Inline text={about.lede} />
         </p>
         <AppStoreBadge campaign={about.lang === 'en' ? 'about' : `about-${about.lang}`} lang={about.lang} />
-        {about.sections.map((section, index) => (
+        {REVIEWER && (
+          <section className="reviewer-card" id="reviewer">
+            <h2>{REVIEWER_HEADING[about.lang]}</h2>
+            <div>
+              {REVIEWER.photo && <img src={REVIEWER.photo} alt={REVIEWER.name} width={96} height={96} />}
+              <div>
+                <p className="reviewer-name">{REVIEWER.name}</p>
+                <p className="reviewer-cred">
+                  {REVIEWER.credentials} · {REVIEWER.affiliation}
+                </p>
+                <p>{REVIEWER.bio}</p>
+                {REVIEWER.sameAs.length > 0 && (
+                  <p className="reviewer-links">
+                    {REVIEWER.sameAs.map((u) => (
+                      <a key={u} href={u} rel="noopener">
+                        {new URL(u).hostname.replace(/^www\./, '')}
+                      </a>
+                    ))}
+                  </p>
+                )}
+              </div>
+            </div>
+          </section>
+        )}
+        {/* The "no clinician has reviewed" answer gives way to the reviewer card. */}
+        {about.sections.filter((s) => !(REVIEWER && s.id === 'clinician')).map((section, index) => (
           <Fragment key={section.h2}>
             <section>
               <h2 id={section.id}>{section.h2}</h2>

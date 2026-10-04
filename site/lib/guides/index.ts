@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { EN_ONLY, OG_LOCALE, TRANSLATED, alternatesFor, isTranslatedPage } from '@/lib/i18n';
 import { SITE_NAME } from '@/lib/site';
 
+import { groupOf } from '@/lib/nav';
+
 import { ARTICLES_EN } from './articles-en';
 import { FLAT_FEET_EN, HEEL_PAIN_EN } from './en';
 import { FLAT_FEET_ES, HEEL_PAIN_ES } from './es';
@@ -24,12 +26,21 @@ export function guidePath(guide: Guide): string {
   return isTranslatedPage(guide.page) ? TRANSLATED[guide.page][guide.lang] : EN_ONLY[guide.page];
 }
 
-/** Every other guide a reader of this one could go to next, in the same
- * language. English readers also get the English-only articles. */
-export function relatedGuides(guide: Guide): Guide[] {
+/** Up to five guides to read next, in the same language: the same topic
+ * group first (`lib/nav.ts`), then the two main guides, then the rest. A list
+ * of every page on the site is a list nobody reads. */
+export function relatedGuides(guide: Guide, max = 5): Guide[] {
   const translated = (Object.keys(GUIDES) as (keyof typeof GUIDES)[]).map((page) => GUIDES[page][guide.lang]);
   const english = guide.lang === 'en' ? Object.values(ARTICLES_EN) : [];
-  return [...translated, ...english].filter((g) => g.page !== guide.page);
+  const all = [...translated, ...english].filter((g) => g.page !== guide.page);
+  const own = groupOf(guide.page);
+  const rank = (g: Guide) =>
+    own && groupOf(g.page) === own ? 0 : g.page === 'heelPain' || g.page === 'flatFeet' ? 1 : groupOf(g.page) === 'compare' ? 3 : 2;
+  return all
+    .map((g, i) => ({ g, i }))
+    .sort((x, y) => rank(x.g) - rank(y.g) || x.i - y.i)
+    .slice(0, max)
+    .map((x) => x.g);
 }
 
 /** A guide's metadata: title, description, canonical and hreflang together, so

@@ -85,6 +85,7 @@ const ARTICLE = articleSchema({
   published: PUBLISHED,
   updated: PAGE_UPDATED.runners,
   cites: RUNNERS_CITES,
+  page: 'runners',
 });
 
 const BREADCRUMBS = {
@@ -135,7 +136,7 @@ export default function HeelPainRunners() {
             Heel pain
             <span>from running?</span>
           </h1>
-          <Byline lang="en" cites={RUNNERS_CITES} main={CITE.guideline} />
+          <Byline lang="en" cites={RUNNERS_CITES} main={CITE.guideline} page="runners" />
           <p>
             Your heel hurts on the first steps the morning after a run. It eases
             once you get moving, then comes back after you sit for a while. You

@@ -1,5 +1,6 @@
 import { CITE } from '@/lib/citations';
-import type { Lang } from '@/lib/i18n';
+import { TRANSLATED, type Lang } from '@/lib/i18n';
+import { reviewFor } from '@/lib/reviewer';
 import { AUTHOR_NAME, formatDate, howWeResearchHref } from '@/lib/schema';
 
 /**
@@ -54,15 +55,42 @@ const HOW_WE_RESEARCH: Record<Lang, string> = {
   es: 'Cómo investigamos',
 };
 
-export function Byline({ lang, cites = [], main }: { lang: Lang; cites?: readonly number[]; main?: number }) {
+const REVIEWED_BY: Record<Lang, string> = { en: 'Medically reviewed by', ru: 'Медицинская проверка:', es: 'Revisión médica:' };
+
+export function Byline({
+  lang,
+  cites = [],
+  main,
+  page,
+}: {
+  lang: Lang;
+  cites?: readonly number[];
+  main?: number;
+  /** The page key, so the byline can show the reviewer if she reviewed it. */
+  page?: string;
+}) {
   const line = sourceLine(lang, cites, main);
+  const review = page ? reviewFor(page) : null;
   return (
+    <>
     <p className="byline">
       <strong>{AUTHOR_NAME}</strong>
       {line ? ` · ${line}` : ''}
       {' · '}
       <a href={howWeResearchHref(lang)}>{HOW_WE_RESEARCH[lang]} →</a>
     </p>
+    {review && (
+      <p className="reviewer-line">
+        {review.reviewer.photo && <img src={review.reviewer.photo} alt="" width={28} height={28} />}
+        <span>
+          {REVIEWED_BY[lang]}{' '}
+          <a href={`${TRANSLATED.about[lang]}#reviewer`}>{review.reviewer.name}</a>, {review.reviewer.credentials}
+          {' · '}
+          <time dateTime={review.date}>{formatDate(review.date, lang)}</time>
+        </span>
+      </p>
+    )}
+    </>
   );
 }
 

@@ -68,6 +68,7 @@ export const ABOUT_EN: About = {
     },
     {
       h2: 'Has a clinician reviewed Walkito’s guides?',
+      id: 'clinician',
       paragraphs: [
         'No licensed clinician has reviewed Walkito’s guides yet. The Walkito team writes them from the published research cited on each page.',
         'When a clinician does review them, this page will list their name, their credentials and what they checked. Until then, no page on this site claims a medical reviewer.',

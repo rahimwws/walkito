@@ -115,6 +115,7 @@ export function Guide({ guide }: { guide: GuideData }) {
     published: guide.published,
     updated: guide.updated,
     cites: cited,
+    page: guide.page,
   });
 
   // The other guides in the same language. Linked from the body of the page,
@@ -148,7 +149,7 @@ export function Guide({ guide }: { guide: GuideData }) {
 
       <Prose className="shell prose">
         <h1>{guide.h1}</h1>
-        <Byline lang={guide.lang} cites={cited} main={guide.mainSource} />
+        <Byline lang={guide.lang} cites={cited} main={guide.mainSource} page={guide.page} />
         <p className="lede">
           <Inline text={guide.lede} />
         </p>

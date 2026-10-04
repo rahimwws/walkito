@@ -426,48 +426,78 @@ figure figcaption b {
 
 .footer {
   border-top: 1px solid var(--hairline);
-  padding: 30px 0 46px;
+  padding: 40px 0 46px;
 }
 
-.footer .shell {
+/* Guides in labelled columns, then one quiet row: copyright, socials, language. */
+.footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px 32px;
+}
+
+.footer .footer-stack {
+  display: grid;
+  gap: 24px;
+  align-content: start;
+}
+
+.footer .footer-heading {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.footer ul a {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.footer ul a:hover {
+  color: var(--ink);
+}
+
+.footer .footer-bottom {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  gap: 12px 24px;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--hairline);
 }
 
-.footer p {
+.footer .footer-bottom p {
   margin: 0;
   color: var(--muted);
   font-size: 14px;
 }
 
-.footer nav {
+/* The language switcher: the one control a reader in the wrong language is
+   looking for, so it is set apart at the end of the row. */
+.footer .langs {
   display: flex;
-  gap: 22px;
+  gap: 18px;
+  margin-left: auto;
 }
 
-.footer nav a {
+.footer .langs a {
   color: var(--muted);
   font-size: 14px;
   text-decoration: none;
-}
-
-.footer nav a:hover {
-  color: var(--ink);
-}
-
-.footer nav {
-  flex-wrap: wrap;
-}
-
-/* The language switcher gets its own row: it is the one control on the page a
-   reader in the wrong language is looking for, and at the end of a row of
-   legal links it reads as one more of them. */
-.footer .langs {
-  width: 100%;
-  gap: 18px;
 }
 
 .footer .langs span {
@@ -1171,21 +1201,28 @@ figure figcaption b {
   }
 
   .footer {
-    padding: 24px 0 36px;
+    padding: 28px 0 36px;
   }
 
-  .footer .shell {
-    /* Stacked rather than pushed to opposite edges: side by side at this width
-       the two groups sit a thumb's width apart and read as one row of links. */
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
+  /* Two columns on a phone; each link gets a thumb-sized row. */
+  .footer .footer-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 20px;
   }
 
-  .footer nav a {
+  .footer ul {
+    gap: 0;
+  }
+
+  .footer ul a {
     display: inline-flex;
     align-items: center;
-    min-height: 44px;
+    min-height: 40px;
+  }
+
+  .footer .langs {
+    margin-left: 0;
+    width: 100%;
   }
 }
 
@@ -2019,3 +2056,53 @@ figcaption {
 .prose .evidence-moderate { border-left-color: #c58a1d; }
 .prose .evidence-early,
 .prose .evidence-unsupported { border-left-color: var(--muted); }
+
+/* "Medically reviewed by", under the byline, only on pages she reviewed. */
+.reviewer-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 20px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.reviewer-line img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer-line a {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.reviewer-card > div {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.reviewer-card img {
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+
+.reviewer-card .reviewer-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.reviewer-card .reviewer-cred {
+  margin: 2px 0 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.reviewer-card .reviewer-links {
+  display: flex;
+  gap: 14px;
+  font-size: 14px;
+}

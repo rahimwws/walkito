@@ -1,5 +1,6 @@
 import { CITATIONS, citationSchema } from '@/lib/citations';
 import { TRANSLATED, type Lang } from '@/lib/i18n';
+import { reviewFor } from '@/lib/reviewer';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 
 /** The author every article names: the research side of Walkito, whose rules
@@ -44,7 +45,10 @@ export function articleSchema(input: {
   published: string;
   updated: string;
   cites: readonly number[];
+  /** Page key, to add the reviewer when she has reviewed this page. */
+  page?: string;
 }) {
+  const review = input.page ? reviewFor(input.page) : null;
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -64,6 +68,18 @@ export function articleSchema(input: {
     mainEntityOfPage: `${SITE_URL}${input.path}`,
     image: `${SITE_URL}/opengraph-image`,
     citation: input.cites.map((i) => citationSchema(CITATIONS[i])),
+    ...(review
+      ? {
+          reviewedBy: {
+            '@type': 'Person',
+            name: review.reviewer.name,
+            description: review.reviewer.credentials,
+            url: `${SITE_URL}${TRANSLATED.about[input.lang]}#reviewer`,
+            ...(review.reviewer.sameAs.length ? { sameAs: review.reviewer.sameAs } : {}),
+          },
+          lastReviewed: review.date,
+        }
+      : {}),
   };
 }
 
