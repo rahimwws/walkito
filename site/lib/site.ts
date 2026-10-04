@@ -105,7 +105,7 @@ export const APP_STORE_URL: string | null = 'https://apps.apple.com/app/id681307
  * the store reports which page sent the install. No cookie, no SDK, and the
  * privacy page stays true as written.
  */
-export const APP_STORE_PROVIDER_TOKEN: string | null = null;
+export const APP_STORE_PROVIDER_TOKEN: string | null = '126870927';
 
 /**
  * Where a download button points, named by the place it sits.

@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 
+import { storeHref } from '@/lib/site';
+
 /**
  * Hands the email's path to the app, then offers the stores.
  *
@@ -17,7 +19,9 @@ import { useEffect, useState } from 'react';
  * browser, since this page is reached from an email and not from the site.
  */
 
-const APP_STORE = 'https://apps.apple.com/app/id6813076846';
+// Campaign "email-open": installs that come from an email link show up
+// under that name in App Store Connect > Analytics > Campaigns.
+const APP_STORE = storeHref('email-open') ?? 'https://apps.apple.com/app/id6813076846';
 const PLAY_STORE = 'https://play.google.com/store/apps/details?id=com.walkito.app';
 
 const WORDS = {
