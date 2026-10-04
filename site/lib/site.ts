@@ -15,6 +15,10 @@ export const SITE_URL = 'https://walkito.site';
 
 export const SITE_NAME = 'Walkito';
 
+/** The app's name on the App Store, word for word. Used beside the short
+ * brand so search engines tie "Walkito" to this app. */
+export const APP_STORE_NAME = 'Walkito: Heel Pain & Flat Feet';
+
 /**
  * The plan's own numbers, read out of the app rather than retyped.
  *
@@ -127,10 +131,6 @@ export function storeHref(campaign: string): string | null {
 
 /** The numeric id for the iOS Smart App Banner: Safari's own "Open / Get" strip. */
 export const APPLE_APP_ID: string | null = '6813076846';
-
-/** The app's name on the App Store, word for word. Used beside the short
- * brand so search engines tie "Walkito" to this app. */
-export const APP_STORE_NAME = 'Walkito: Heel Pain & Flat Feet';
 
 export const SUPPORT_EMAIL = 'hello@walkito.site';
 
