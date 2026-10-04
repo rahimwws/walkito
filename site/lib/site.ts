@@ -109,7 +109,7 @@ export const APP_STORE_URL: string | null = 'https://apps.apple.com/app/id681307
  * the store reports which page sent the install. No cookie, no SDK, and the
  * privacy page stays true as written.
  */
-export const APP_STORE_PROVIDER_TOKEN: string | null = null;
+export const APP_STORE_PROVIDER_TOKEN: string | null = '126870927';
 
 /**
  * Where a download button points, named by the place it sits.
@@ -131,6 +131,20 @@ export function storeHref(campaign: string): string | null {
 
 /** The numeric id for the iOS Smart App Banner: Safari's own "Open / Get" strip. */
 export const APPLE_APP_ID: string | null = '6813076846';
+
+/**
+ * The Smart App Banner's meta content, with campaign tokens so installs from
+ * the banner show up in App Store Connect > Analytics > Campaigns as
+ * `smart-banner` (`-ru`, `-es`). Apple: add the campaign and provider tokens
+ * when implementing a Smart App Banner; the format is
+ * `affiliate-data=pt=<provider>&ct=<campaign>`. Without a token it is the plain
+ * banner.
+ */
+export function smartBannerContent(campaign: string): string | null {
+  if (!APPLE_APP_ID) return null;
+  if (!APP_STORE_PROVIDER_TOKEN) return `app-id=${APPLE_APP_ID}`;
+  return `app-id=${APPLE_APP_ID}, affiliate-data=pt=${APP_STORE_PROVIDER_TOKEN}&ct=${campaign}`;
+}
 
 export const SUPPORT_EMAIL = 'hello@walkito.site';
 

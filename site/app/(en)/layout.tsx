@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 import { RootDocument } from '@/components/RootDocument';
 import { alternatesFor } from '@/lib/i18n';
-import { APPLE_APP_ID, SITE_NAME, SITE_URL } from '@/lib/site';
+import { smartBannerContent, SITE_NAME, SITE_URL } from '@/lib/site';
 
 import '../globals.css';
 
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   // "Get" to someone without the app and "Open" to someone with it. Omitted
   // while there was no listing; a banner pointing at a guessed id is a dead
   // strip on every iPhone that loads the page.
-  ...(APPLE_APP_ID != null ? { itunes: { appId: APPLE_APP_ID } } : {}),
+  ...(smartBannerContent('smart-banner') ? { other: { 'apple-itunes-app': smartBannerContent('smart-banner')! } } : {}),
 };
 
 export { viewport } from '@/components/RootDocument';

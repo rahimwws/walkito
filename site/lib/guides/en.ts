@@ -536,5 +536,5 @@ export const HEEL_PAIN_EN: Guide = {
     cta: `Start with ${PROGRAM.sessionMinutes[0]} minutes a day.`,
   },
   crumb: 'Plantar fasciitis exercises',
-  campaign: 'guide-heel-pain',
+  campaign: 'guide-plantar-fasciitis',
 };

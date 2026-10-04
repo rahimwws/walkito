@@ -501,5 +501,5 @@ export const HEEL_PAIN_RU: Guide = {
     cta: `Начните с ${PROGRAM.sessionMinutes[0]} минут в день.`,
   },
   crumb: 'Упражнения при плантарном фасциите',
-  campaign: 'guide-heel-pain-ru',
+  campaign: 'guide-plantar-fasciitis-ru',
 };

@@ -514,5 +514,5 @@ export const HEEL_PAIN_ES: Guide = {
     cta: `Empieza con ${PROGRAM.sessionMinutes[0]}\u00A0minutos al día.`,
   },
   crumb: 'Ejercicios para la fascitis plantar',
-  campaign: 'guide-heel-pain-es',
+  campaign: 'guide-plantar-fasciitis-es',
 };
