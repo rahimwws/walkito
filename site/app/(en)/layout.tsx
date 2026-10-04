@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: {
     // The home page's title is this default, so it carries the query the
     // page is built for rather than the tagline.
-    default: 'Walkito: Exercises for Heel and Foot Pain',
+    default: 'Walkito: Heel Pain & Flat Feet Exercise App',
     // Every page supplies its own unique half; this appends the brand.
     template: `%s | ${SITE_NAME}`,
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'Walkito: Exercises for Heel and Foot Pain',
+    title: 'Walkito: Heel Pain & Flat Feet Exercise App',
     description: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
     url: '/',
     siteName: SITE_NAME,
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Walkito: Exercises for Heel and Foot Pain',
+    title: 'Walkito: Heel Pain & Flat Feet Exercise App',
     description: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
     images: ['/opengraph-image'],
   },

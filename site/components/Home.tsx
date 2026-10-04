@@ -16,7 +16,7 @@ import Timer01Icon from '@hugeicons/core-free-icons/Timer01Icon';
 import { Icon } from '@/components/Icon';
 import { Prose } from '@/components/Prose';
 import { CHROME, TRANSLATED, type Lang } from '@/lib/i18n';
-import { PAIN_GOAL_MAX, PROGRAM, SITE_NAME } from '@/lib/site';
+import { APP_STORE_NAME, APP_STORE_URL, PAIN_GOAL_MAX, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
 
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
 const [DAYS_A, DAYS_B, DAYS_C] = PROGRAM.daysPerWeek;
@@ -37,7 +37,11 @@ const { testEveryDays, testEveryDaysAfterGoal, painFreeDays, retestTests, retest
 const APP = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: SITE_NAME,
+  name: APP_STORE_NAME,
+  alternateName: SITE_NAME,
+  url: SITE_URL,
+  ...(APP_STORE_URL ? { installUrl: APP_STORE_URL, sameAs: [APP_STORE_URL] } : {}),
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
   applicationCategory: 'HealthApplication',
   operatingSystem: 'iOS',
   description:
@@ -103,7 +107,7 @@ type HomeCopy = {
 const COPY: Record<Lang, HomeCopy> = {
   en: {
     meta: {
-      title: 'Walkito: Exercises for Heel and Foot Pain',
+      title: 'Walkito: Heel Pain & Flat Feet Exercise App',
       description:
         'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
     },

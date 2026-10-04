@@ -78,7 +78,7 @@ export const IN_SESSION_STOP = 6;
  * Guides keep their own date in their data (`lib/guides/*.ts`).
  */
 export const PAGE_UPDATED = {
-  home: '2026-09-28',
+  home: '2026-10-04',
   runners: '2026-10-03',
   program: '2026-09-28',
   science: '2026-09-28',
@@ -127,6 +127,10 @@ export function storeHref(campaign: string): string | null {
 
 /** The numeric id for the iOS Smart App Banner: Safari's own "Open / Get" strip. */
 export const APPLE_APP_ID: string | null = '6813076846';
+
+/** The app's name on the App Store, word for word. Used beside the short
+ * brand so search engines tie "Walkito" to this app. */
+export const APP_STORE_NAME = 'Walkito: Heel Pain & Flat Feet';
 
 export const SUPPORT_EMAIL = 'hello@walkito.site';
 

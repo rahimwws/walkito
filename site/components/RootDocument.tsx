@@ -1,7 +1,7 @@
 import { JsonLd } from '@/components/JsonLd';
 import { anton, oswald } from '@/lib/fonts';
 import type { Lang } from '@/lib/i18n';
-import { SAME_AS, SITE_NAME, SITE_URL } from '@/lib/site';
+import { APP_STORE_NAME, SAME_AS, SITE_NAME, SITE_URL } from '@/lib/site';
 
 /** Sitewide, once per page. Not repeated by the pages themselves — duplicated
  * Organization blocks are a common way to make Google pick the wrong one. */
@@ -9,6 +9,9 @@ const ORGANISATION = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: SITE_NAME,
+  // The App Store name, so an engine reading "Walkito" resolves it to the
+  // heel and foot pain app, not a walkie-talkie app or another Walkito.
+  alternateName: [APP_STORE_NAME, 'Walkito app'],
   url: SITE_URL,
   logo: `${SITE_URL}/icon.png`,
   // No length: the plan is built a week at a time around a measurable goal and
@@ -32,6 +35,7 @@ function website(lang: Lang) {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: SITE_NAME,
+    alternateName: APP_STORE_NAME,
     url: SITE_URL,
     inLanguage: lang,
     publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
