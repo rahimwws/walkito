@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
-import { Byline } from '@/components/Byline';
+import { Byline, UpdatedLine } from '@/components/Byline';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
@@ -124,7 +124,7 @@ export default function Science() {
 
       <Prose className="shell prose">
         <h1>Heel pain research: strength vs stretching, and the 2023 guideline</h1>
-        <Byline lang="en" updated={PAGE_UPDATED.science} />
+        <Byline lang="en" cites={[0, 1, 2, 3]} main={3} />
 
         <p className="lede">
           This page lists the studies Walkito is built on, what they found,
@@ -385,6 +385,7 @@ export default function Science() {
         </p>
 
         <AppStoreBadge campaign="science" />
+        <UpdatedLine lang="en" updated={PAGE_UPDATED.science} />
       </Prose>
 
       <Footer />

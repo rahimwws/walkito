@@ -40,10 +40,23 @@ Sources:
 - Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
 - Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
 - Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+- Alfredson H, Pietilä T, Jonsson P, Lorentzon R. Heavy-load eccentric calf muscle training for the treatment of chronic Achilles tendinosis. American Journal of Sports Medicine. 1998;26(3):360–366.
+- Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
+- Beyer R, Kongsgaard M, Hougs Kjær B, Øhlenschlæger T, Kjær M, Magnusson SP. Heavy slow resistance versus eccentric training as treatment for Achilles tendinopathy: a randomized controlled trial. American Journal of Sports Medicine. 2015;43(7):1704–1711.
+- Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+- Menéndez C, Batalla L, Prieto A, Rodríguez MÁ, Crespo I, Olmedillas H. Medial tibial stress syndrome in novice and recreational runners: a systematic review. International Journal of Environmental Research and Public Health. 2020;17(20):E7457.
+- Chang AH, Rasmussen SZ, Jensen AE, Sørensen T, Rathleff MS. What do we actually know about a common cause of plantar heel pain? A scoping review of heel fat pad syndrome. Journal of Foot and Ankle Research. 2022;15(1):60.
+- Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial tendon dysfunction: a systematic review of randomised clinical trials and clinical guidelines. BMJ Open Sport & Exercise Medicine. 2018;4(1):e000430.
+- Buist I, Bredeweg SW, van Mechelen W, Lemmink KAPM, Pepping GJ, Diercks RL. No effect of a graded training program on the number of running-related injuries in novice runners: a randomized controlled trial. American Journal of Sports Medicine. 2008;36(1):33–39.
+- Nielsen RØ, Parner ET, Nohr EA, Sørensen H, Lind M, Rasmussen S. Excessive progression in weekly running distance and risk of running-related injuries: an association which varies according to type of injury. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):739–747.
+- Malisoux L, Ramesh J, Mann R, Seil R, Urhausen A, Theisen D. Can parallel use of different running shoes decrease running-related injury risk? Scandinavian Journal of Medicine & Science in Sports. 2015;25(1):110–115.
+- Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+- Menz HB, Dufour AB, Riskowski JL, Hillstrom HJ, Hannan MT. Foot posture, foot function and low back pain: the Framingham Foot Study. Rheumatology (Oxford). 2013;52(12):2275–2282.
+- Ling SK, Lui TH. Posterior tibial tendon dysfunction: an overview. The Open Orthopaedics Journal. 2017;11:714–723.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
-Language: English · https://walkito.site/plantar-fasciitis-exercises/ · published 2026-09-24 · updated 2026-09-28
+Language: English · https://walkito.site/plantar-fasciitis-exercises/ · published 2026-09-24 · updated 2026-10-03
 
 Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, plantar fasciitis, and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.
 
@@ -133,7 +146,11 @@ You don’t have to stop everything. Change the load instead. The 2023 clinical 
 
 #### Why is heel pain worse in the morning?
 
-Heel pain on the first steps after sleep or sitting is the pattern most often linked to plantar fasciitis. The usual explanation is that the tissue under the foot stiffens at rest, then gets loaded suddenly by those first steps. That is why the plantar fascia stretch is done before you stand up, and why the 2023 guideline gives night splints an A for it.
+Heel pain on the first steps after sleep or sitting is the pattern most often linked to plantar fasciitis. The 2023 heel pain guideline describes it as pain “most noticeable with weight bearing first thing in the morning or after a period of rest.” The usual explanation is that the tissue under the foot stiffens at rest, then gets loaded suddenly by those first steps. That is why the plantar fascia stretch is done before you stand up, and why the 2023 guideline gives night splints an A for it.
+
+#### How long does plantar fasciitis last?
+
+For most people it eases within months, not weeks. A [2020 review](https://doi.org/10.1177/2473011419896763) reports that about 90% of people get better with non-surgical care such as stretching and shoe inserts, often within 3 to 6 months. Some take longer, and a smaller group still has pain after a year. No exercise program can promise a timeline. The 2023 heel pain guideline gives stretching and calf strength work its best grades, which is why they come first on this page.
 
 #### Is stretching or strengthening better for plantar fasciitis?
 
@@ -153,7 +170,7 @@ See a clinician first if the pain followed an injury or a fall, you can’t put 
 
 ## Flat feet exercises for fallen arches and arch pain
 
-Language: English · https://walkito.site/flat-feet-exercises/ · published 2026-09-24 · updated 2026-09-28
+Language: English · https://walkito.site/flat-feet-exercises/ · published 2026-09-24 · updated 2026-10-03
 
 By evening your feet feel tired, and the arches ache. When you stand, your feet seem to roll in and the arches sink toward the floor. People may tell you flat feet are just how you’re built and not worth a second thought. Wanting to do something about them makes sense, and there is real research on training the arch.
 
@@ -252,9 +269,13 @@ Plan on six weeks or more. In one trial on flexible flat feet, a six-week progra
 
 There is no direct evidence here, because no study cited on this page measured arch pain. If the pain is near the heel and linked to the plantar fascia, the 2023 heel pain guideline grades plantar fascia and calf stretching A and strength training B. The arch exercises on this page train arch shape, not pain. See [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/).
 
-#### Are fallen arches the same as flat feet?
+#### Can flat feet cause back pain?
 
-Usually, yes. “Fallen arches” is a common name for flat feet. What matters more is whether the foot is flexible, with an arch that comes back off the ground, or rigid. The trial on this page was run on flexible flat feet. An arch that has flattened suddenly on one side as an adult should be seen by a clinician first.
+The evidence is weak and mixed, not a clear yes. The largest study on it, the [Framingham Foot Study](https://doi.org/10.1093/rheumatology/ket298) of about 1,900 adults, found no link between flat foot posture and low back pain. It found a small link in women between a foot that rolls inward while walking and low back pain, and none in men. So flat feet alone are a weak explanation for back pain. If you have both, look at them as two separate problems, and see a clinician about the back.
+
+#### What is the difference between fallen arches and flat feet?
+
+Usually none: “fallen arches” is a common name for flat feet. Most flat feet are lifelong and flexible, and the arch comes back when the foot is off the ground. Sometimes the phrase means something else: [adult-acquired flatfoot](https://doi.org/10.2174/1874325001711010714), often from a weakening posterior tibial tendon, the tendon that holds up the arch. It tends to come on in adulthood, and can bring pain or swelling on the inside of the ankle. If one arch has dropped as an adult, see a clinician before you exercise it.
 
 #### How often should I do flat feet exercises?
 
@@ -726,9 +747,15 @@ The plan has no fixed length. When you reach a goal, it moves to maintaining at 
 
 Walkito is in English, Russian and Spanish.
 
-### How are Walkito’s guides written?
+### How we research
 
-Walkito’s guides are written from published research, and every number in them has a source you can check. The guides are [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/) and [flat feet exercises](https://walkito.site/flat-feet-exercises/). They and [the evidence page](https://walkito.site/science/) follow the same five rules:
+Walkito Research writes the guides on this site: [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/), [flat feet exercises](https://walkito.site/flat-feet-exercises/), [heel pain from running](https://walkito.site/heel-pain-runners/) and [the evidence page](https://walkito.site/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study.
+
+We read the full paper, not just the abstract, before a number from it goes on a page. Every dose, grade and figure links to the study behind it, so you can open it and check.
+
+Exercises and claims carry one of three evidence labels. **Strong** means a clinical guideline grades it highly, or several good trials agree. **Moderate** means at least one well-designed trial supports it. **Early** means the research is small or just starting: worth trying, and the label may change as more comes out. A popular rule that a trial tested and did not back is marked **Not supported**.
+
+Walkito has no sponsors, no affiliate links and no paid placement. Nothing is on a page because someone paid for it. We recheck a page when new research on its topic comes out. Every guide follows five rules:
 
 - **Every figure traces to a primary source.** That means a randomized trial, a meta-analysis or a clinical guideline. The source is printed and linked on the page that uses it. If we cannot trace a number to one, it does not go on the site. We have removed sentences for that reason.
 - **The 2023 clinical practice guideline on heel pain is the reference point.** It comes from the Journal of Orthopaedic & Sports Physical Therapy. It grades each intervention by how strong its evidence is, including the ones it advises against.

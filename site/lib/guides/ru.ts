@@ -36,6 +36,7 @@ const RED_FLAGS = {
 export const FLAT_FEET_RU: Guide = {
   lang: 'ru',
   page: 'flatFeet',
+  mainSource: CITE.brijwasi,
   published: '2026-09-24',
   updated: '2026-09-28',
   title: 'Упражнения при плоскостопии и боли в своде стопы',
@@ -277,6 +278,7 @@ export const FLAT_FEET_RU: Guide = {
 export const HEEL_PAIN_RU: Guide = {
   lang: 'ru',
   page: 'heelPain',
+  mainSource: CITE.guideline,
   published: '2026-09-24',
   updated: '2026-09-28',
   title: 'Упражнения при плантарном фасциите и боли в пятке',

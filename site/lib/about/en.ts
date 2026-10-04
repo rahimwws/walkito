@@ -29,9 +29,13 @@ export const ABOUT_EN: About = {
       ],
     },
     {
-      h2: 'How are Walkito’s guides written?',
+      h2: 'How we research',
+      id: 'how-we-research',
       paragraphs: [
-        'Walkito’s guides are written from published research, and every number in them has a source you can check. The guides are [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/) and [flat feet exercises](/flat-feet-exercises/). They and [the evidence page](/science/) follow the same five rules:',
+        'Walkito Research writes the guides on this site: [plantar fasciitis exercises](/plantar-fasciitis-exercises/), [flat feet exercises](/flat-feet-exercises/), [heel pain from running](/heel-pain-runners/) and [the evidence page](/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study.',
+        'We read the full paper, not just the abstract, before a number from it goes on a page. Every dose, grade and figure links to the study behind it, so you can open it and check.',
+        'Exercises and claims carry one of three evidence labels. **Strong** means a clinical guideline grades it highly, or several good trials agree. **Moderate** means at least one well-designed trial supports it. **Early** means the research is small or just starting: worth trying, and the label may change as more comes out. A popular rule that a trial tested and did not back is marked **Not supported**.',
+        'Walkito has no sponsors, no affiliate links and no paid placement. Nothing is on a page because someone paid for it. We recheck a page when new research on its topic comes out. Every guide follows five rules:',
       ],
       bullets: [
         '**Every figure traces to a primary source.** That means a randomized trial, a meta-analysis or a clinical guideline. The source is printed and linked on the page that uses it. If we cannot trace a number to one, it does not go on the site. We have removed sentences for that reason.',

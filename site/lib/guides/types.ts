@@ -1,3 +1,4 @@
+import type { EvidenceLevel } from '@/components/Evidence';
 import type { Lang, TranslatedPage } from '@/lib/i18n';
 
 /**
@@ -37,6 +38,9 @@ export type GuideExercise = {
    * (`public/exercises/<id>.*`, made by `scripts/exercise-media.mjs`). When
    * set, it replaces the placeholder. */
   media?: string;
+  /** How strong the research behind this exercise is, and why in one line.
+   * Levels as defined in the About page section "How we research". */
+  evidence?: { level: EvidenceLevel; why: string };
   /** One line under the clip. */
   caption?: string;
   /** What the still shows, for screen readers. */
@@ -67,6 +71,9 @@ export type GuideSection = {
 export type GuideQuestion = {
   /** Worded the way people type it into a search box or ask an assistant. */
   q: string;
+  /** Indices into `CITATIONS` behind this answer, linked in its text. They
+   * count toward the byline and the Article citations. */
+  cites?: readonly number[];
   /**
    * A self-contained answer, 40–60 words, with the answer in its first
    * sentence. This is the passage an AI answer or a snippet lifts, so it must
@@ -85,6 +92,9 @@ export type Guide = {
    * with a real edit.
    */
   updated: string;
+  /** The citation the byline names as the page's main source (an index into
+   * `CITATIONS`). Left out, the byline only counts studies. */
+  mainSource?: number;
   /** First published, `YYYY-MM-DD`. Never changes. */
   published: string;
   /** `<title>`, before the brand suffix the layout adds. */

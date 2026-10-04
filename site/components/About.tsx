@@ -63,7 +63,7 @@ export function About({ about }: { about: AboutData }) {
         {about.sections.map((section, index) => (
           <Fragment key={section.h2}>
             <section>
-              <h2>{section.h2}</h2>
+              <h2 id={section.id}>{section.h2}</h2>
               {section.paragraphs?.map((p) => (
                 <p key={p}>
                   <Inline text={p} />

@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
-import { Byline } from '@/components/Byline';
+import { Byline, UpdatedLine } from '@/components/Byline';
+import { Evidence } from '@/components/Evidence';
 import { Cite } from '@/components/Cite';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
@@ -60,6 +61,22 @@ export const metadata: Metadata = {
 /** First published with the site's move away from a runners-only home page. */
 const PUBLISHED = '2026-09-28';
 
+/** Every study the page prints, for the Article schema and the byline count. */
+const RUNNERS_CITES = [
+  CITE.guideline,
+  CITE.rathleff,
+  CITE.achillesGuideline,
+  CITE.alfredson,
+  CITE.silbernagel,
+  CITE.beyer,
+  CITE.mtssReview,
+  CITE.fatPadReview,
+  CITE.posteriorTibialReview,
+  CITE.buist,
+  CITE.nielsen,
+  CITE.malisoux,
+];
+
 const ARTICLE = articleSchema({
   headline: TITLE,
   description: DESCRIPTION,
@@ -67,7 +84,7 @@ const ARTICLE = articleSchema({
   lang: 'en',
   published: PUBLISHED,
   updated: PAGE_UPDATED.runners,
-  cites: [CITE.rathleff, CITE.guideline],
+  cites: RUNNERS_CITES,
 });
 
 const BREADCRUMBS = {
@@ -118,7 +135,7 @@ export default function HeelPainRunners() {
             Heel pain
             <span>from running?</span>
           </h1>
-          <Byline lang="en" updated={PAGE_UPDATED.runners} />
+          <Byline lang="en" cites={RUNNERS_CITES} main={CITE.guideline} />
           <p>
             Your heel hurts on the first steps the morning after a run. It eases
             once you get moving, then comes back after you sit for a while. You
@@ -152,6 +169,17 @@ export default function HeelPainRunners() {
               Plantar fasciitis is not the only cause. The same guideline names
               stress fractures among the other causes of heel pain, and only a
               clinician can say what is behind yours.
+            </p>
+            <blockquote>
+              <p>
+                “Plantar heel pain is an umbrella term that may represent a number
+                of different diagnoses.”
+              </p>
+              <footer>2023 clinical practice guideline on heel pain, JOSPT</footer>
+            </blockquote>
+            <p>
+              That is why this page also covers the Achilles tendon, the shin, the
+              heel fat pad and the inside of the ankle.
             </p>
             <Cite index={CITE.guideline} />
           </section>
@@ -253,6 +281,211 @@ export default function HeelPainRunners() {
             </p>
           </section>
 
+          <section id="achilles-pain">
+            <h2>Could it be the Achilles tendon instead?</h2>
+            <p>
+              Achilles pain sits higher than plantar fasciitis: either where the
+              tendon meets the back of the heel bone, or a few centimeters above
+              it, in the tendon itself. The 2024 clinical guideline on Achilles
+              tendon pain names pain that comes with loading the tendon, like
+              running, hopping or stairs, as the main sign. If pressing the back
+              of your heel or the tendon above it hurts more than pressing the
+              arch, that points away from plantar fasciitis.
+            </p>
+            <p>
+              Where it hurts changes the next step. Pain in the middle of the
+              tendon, a few centimeters above the heel, usually starts with calf
+              loading. Pain right where the tendon attaches is handled more
+              carefully: a deep stretch at the bottom of a heel drop can irritate
+              that spot, so the work usually starts from flat ground instead of
+              off a step. Walkito’s calf stretches and heel raises are built for
+              the plantar fascia and the calf, not for pain at the attachment. If
+              yours sits right on the back of the heel bone, have a clinician
+              check it before you load it hard.
+            </p>
+            <Evidence level="strong">
+              Several controlled trials agree that loading the calf helps
+              mid-tendon Achilles pain.
+            </Evidence>
+            <p>
+              In a small 1998 trial, 15 recreational athletes with long-standing
+              Achilles pain did heavy eccentric calf raises (lowering slowly under
+              load) twice a day for 12 weeks. All 15 were back to running at
+              their earlier level. A 2007 trial of 38 people found that staying
+              active during rehab, as long as pain stayed within an agreed limit,
+              did as well as stopping running and jumping first. A 2015 trial of
+              58 people compared heavy slow strength work three times a week with
+              the eccentric routine.
+            </p>
+            <blockquote>
+              <p>
+                “Both traditional ECC and HSR yield positive, equally good,
+                lasting clinical results in patients with Achilles tendinopathy.”
+              </p>
+              <footer>Beyer and colleagues, American Journal of Sports Medicine, 2015</footer>
+            </blockquote>
+            <p>
+              None of these trials used Walkito. They are the reason calf loading
+              is the usual first step for this kind of pain. What seems to matter
+              most is loading the calf steadily for weeks, not which exact routine
+              you pick.
+            </p>
+            <Cite index={CITE.achillesGuideline} />
+            <Cite index={CITE.alfredson} />
+            <Cite index={CITE.silbernagel} />
+            <Cite index={CITE.beyer} />
+          </section>
+
+          <section id="shin-splints">
+            <h2>What about pain along the shin?</h2>
+            <p>
+              Shin splints, or medial tibial stress syndrome, is pain along the
+              inner edge of the shin bone, usually spread over several inches
+              rather than one sore spot. It isn’t the plantar fascia: the bone and the tissue around it react to repeated
+              running load. A 2020 review of novice and recreational runners
+              found the clearest links were in how runners move, such as more hip
+              rotation and a foot that rolls inward more than usual.
+            </p>
+            <Evidence level="early">
+              The 2020 review found only 11 studies worth including, most of them
+              small. Only one was a randomized trial, and it tested shockwave
+              therapy, not exercise.
+            </Evidence>
+            <p>
+              Arch-support inserts helped foot pressure and pain in some of those
+              studies, but the authors wrote that “more research is needed to
+              confirm these results.” What usually helps in practice is the load:
+              cut the running that set it off, then build back slowly once
+              walking and easy jogging are pain-free.
+            </p>
+            <p>
+              One sore spot you can point to with a finger, rather than pain
+              along a stretch of bone, can be a stress fracture. That needs a
+              clinician, not more running. Walkito has no shin-specific program.
+              If you mark the shin as sore, it gives ankle mobility work, which
+              can sit next to that recovery but does not replace running less.
+            </p>
+            <Cite index={CITE.mtssReview} />
+          </section>
+
+          <section id="fat-pad">
+            <h2>Could it be the fat pad under your heel?</h2>
+            <p>
+              The heel fat pad is the cushion under the heel bone. Pain from it,
+              called heel fat pad syndrome, can feel like plantar fasciitis, but
+              it tends to sit in the middle of the heel rather than toward the
+              arch. The 2023 heel pain guideline names it as one of the causes
+              that fall under “plantar heel pain.”
+            </p>
+            <Evidence level="early">
+              A 2022 review found 7 usable studies, mostly small observational
+              ones, and no trials of exercise for this condition.
+            </Evidence>
+            <p>
+              The review’s own conclusion is that current advice for heel fat pad
+              syndrome is “mostly anecdotal.” Telling it apart from plantar
+              fasciitis usually takes an exam, and sometimes an ultrasound of the
+              pad’s thickness. That is something a clinician does, not something
+              you can check at home. The exercises on this page were not tested
+              for fat pad pain.
+            </p>
+            <Cite index={CITE.guideline} />
+            <Cite index={CITE.fatPadReview} />
+          </section>
+
+          <section id="posterior-tibial-tendon">
+            <h2>What if the pain is on the inside of the ankle?</h2>
+            <p>
+              Pain below and behind the inner ankle bone points to the posterior
+              tibial tendon, the tendon that helps hold up your arch. It is a
+              different structure from the plantar fascia, but the two are linked:
+              a tendon that is not doing its job can let the arch drop and change
+              how the fascia is loaded.
+            </p>
+            <Evidence level="early">
+              A 2018 systematic review found “preliminary evidence” that exercise
+              helps, and few high-quality trials.
+            </Evidence>
+            <p>
+              The trials in that review used strength work for the muscle behind
+              this tendon, calf and ankle stretches, and balance work, often with
+              an arch-support insert. Walkito’s band turn-in trains that same
+              muscle, and its ankle and balance work overlaps with what the review
+              covered. If the inside of your ankle is swollen, or one arch looks
+              flatter than it did a year ago, see a clinician first. Missed early,
+              this can lead to a flat foot that stays flat.
+            </p>
+            <Cite index={CITE.posteriorTibialReview} />
+          </section>
+
+
+          <section id="training-load">
+            <h2>Does the 10% rule prevent running injuries?</h2>
+            <p>
+              The 10% rule says to add no more than 10% to your weekly distance
+              from one week to the next. No trial has shown that it lowers injury
+              risk. A 2008 trial put 532 new runners on either a 13-week program
+              built on the 10% rule or a faster 8-week program. Injuries were
+              almost identical: 20.8% in the slower group and 20.3% in the faster
+              one.
+            </p>
+            <Evidence level="unsupported">
+              One randomized trial tested the 10% rule directly and found no
+              difference.
+            </Evidence>
+            <p>
+              Sudden jumps are a better thing to watch than any exact percentage.
+              A 2014 study followed 874 new runners with GPS watches for a year.
+              Runners who added more than 30% over two weeks had more
+              distance-related injuries than those who stayed under 10%, though
+              the result fell just short of statistical significance. Those who
+              added 10 to 30% did not clearly do worse.
+            </p>
+            <Evidence level="early">
+              Avoid big, sudden jumps in distance. One cohort study points that
+              way, and the result was borderline.
+            </Evidence>
+            <p>
+              Walkito does not plan your running. It does watch for spikes: if
+              yesterday’s steps were more than 1.4 times your 28-day average on a
+              strength day, that session turns into a lighter recovery session.
+            </p>
+            <Cite index={CITE.buist} />
+            <Cite index={CITE.nielsen} />
+          </section>
+
+          <section id="shoe-replacement">
+            <h2>When should you replace your running shoes?</h2>
+            <p>
+              The usual advice is every 300 to 500 miles. That number is an
+              estimate of when cushioning wears down, not a result from a study
+              that counted injuries against shoe age. If you don’t track miles, a
+              flattened midsole or a sole worn down on one side tells you the same
+              thing.
+            </p>
+            <Evidence level="early">
+              The 300 to 500 mile range is a common rule of thumb, not a trial
+              result.
+            </Evidence>
+            <p>
+              Switching between two pairs has more behind it. A 2015 study
+              followed 264 runners for 22 weeks. Those who ran in more than one
+              pair had about a 39% lower injury risk than those who used one
+              pair. That is an observed link, not proof that the second pair
+              caused the difference. The authors’ explanation is that different
+              shoes spread the load a little differently from run to run.
+            </p>
+            <Evidence level="early">
+              One observational study of 264 runners, not a randomized trial.
+            </Evidence>
+            <p>
+              None of this means buying more shoes than you can afford. One pair,
+              replaced when the cushioning visibly flattens, is a fine default. If
+              you already own two pairs you like, take turns with them.
+            </p>
+            <Cite index={CITE.malisoux} />
+          </section>
+
           <section className="faq" id="faq">
             <h2>Questions runners ask</h2>
             {FAQ.map((item) => (
@@ -270,7 +503,9 @@ export default function HeelPainRunners() {
               builds during runs after adding mileage, or if squeezing the sides
               of the heel hurts. Both can be signs of a stress fracture. Sharp
               pain when you run, or pain that gets worse week after week, needs a
-              clinician too.
+              clinician too. So does heel or shin pain that wakes you at night:
+              pain at rest points more toward a stress fracture than toward
+              plantar fasciitis, Achilles pain or shin splints.
             </p>
             <h3>{HEEL_PAIN_EN.redFlags.h2}</h3>
             <ul>
@@ -304,6 +539,7 @@ export default function HeelPainRunners() {
               <a href="/program/">How the plan works</a>.
             </p>
 
+            <UpdatedLine lang="en" updated={PAGE_UPDATED.runners} />
             <p className="notice">{c.notice}</p>
 
             <p className="cta-line">Start with {MIN_A} minutes a day.</p>

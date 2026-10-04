@@ -31,7 +31,8 @@ export const ABOUT_ES: About = {
       ],
     },
     {
-      h2: '¿Cómo se escriben las guías de Walkito?',
+      h2: 'Cómo investigamos',
+      id: 'how-we-research',
       paragraphs: [
         'Las guías de Walkito se escriben a partir de investigación publicada, y cada número tiene una fuente que puedes revisar. Las guías son [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/) y [ejercicios para el pie plano](/es/ejercicios-pie-plano/). Ellas y [la página de evidencia](/science/) (en inglés) siguen las mismas cinco reglas:',
       ],

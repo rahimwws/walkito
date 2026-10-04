@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
-import { Byline } from '@/components/Byline';
+import { Byline, UpdatedLine } from '@/components/Byline';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
@@ -99,7 +99,7 @@ export default function Program() {
 
       <Prose className="shell prose">
         <h1>A heel pain exercise plan that adapts every week</h1>
-        <Byline lang="en" updated={PAGE_UPDATED.program} />
+        <Byline lang="en" cites={[]} />
 
         {/*
           Answer first. AI engines lift the first self-contained passage that
@@ -382,6 +382,7 @@ export default function Program() {
 
         {/* Required on every page that mentions symptoms. Not a disclaimer
             bolted on at the bottom: it is part of what the product is. */}
+        <UpdatedLine lang="en" updated={PAGE_UPDATED.program} />
         <p className="notice">{c.notice}</p>
 
         <p className="cta-line">Start with {PROGRAM.sessionMinutes[0]} minutes a day.</p>

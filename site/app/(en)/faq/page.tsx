@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Fragment } from 'react';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
-import { Byline } from '@/components/Byline';
+import { Byline, UpdatedLine } from '@/components/Byline';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Cite } from '@/components/Cite';
@@ -89,7 +89,7 @@ export default function Faq() {
 
       <Prose className="shell prose">
         <h1>Heel pain exercise app: questions and answers</h1>
-        <Byline lang="en" updated={PAGE_UPDATED.faq} />
+        <Byline lang="en" />
 
         <p className="lede">
           Walkito is an exercise plan for heel pain, arch pain and flexible flat
@@ -146,6 +146,7 @@ export default function Faq() {
           <a href="/science/">the evidence page</a>.
         </p>
 
+        <UpdatedLine lang="en" updated={PAGE_UPDATED.faq} />
         <p className="notice">{c.notice}</p>
 
         <AppStoreBadge campaign="faq" />

@@ -35,8 +35,9 @@ const RED_FLAGS = {
 export const FLAT_FEET_EN: Guide = {
   lang: 'en',
   page: 'flatFeet',
+  mainSource: CITE.brijwasi,
   published: '2026-09-24',
-  updated: '2026-09-28',
+  updated: '2026-10-03',
   title: 'Flat Feet Exercises for Fallen Arches & Arch Pain',
   description:
     'Flat feet exercises for flexible flat feet and fallen arches: doses, how often, what each should feel like, what trials found, and where arch pain fits.',
@@ -92,6 +93,7 @@ export const FLAT_FEET_EN: Guide = {
       exercises: [
         {
           name: 'Towel scrunch',
+          evidence: { level: 'early', why: 'Walkito’s own addition. It was not part of the tested program in the studies on this page.' },
           dose: '3 sets of 8, hold 5 seconds, each foot',
           often: 'Every session, while it is your level',
           feel: 'The small muscles under the arch working',
@@ -103,6 +105,7 @@ export const FLAT_FEET_EN: Guide = {
         },
         {
           name: 'Big toe lift',
+          evidence: { level: 'early', why: 'Walkito’s own addition. It was not part of the tested program in the studies on this page.' },
           dose: '3 sets of 8, hold 5 seconds, each foot',
           often: 'Every session, while it is your level',
           feel: 'The big toe moving on its own',
@@ -114,6 +117,7 @@ export const FLAT_FEET_EN: Guide = {
         },
         {
           name: 'Short foot, seated',
+          evidence: { level: 'moderate', why: 'Part of the program that improved arch shape in a 2023 trial. On its own, short foot work has weaker results.' },
           dose: '3 sets of 8, hold 5 seconds, each foot',
           often: 'Every session, while it is your level',
           feel: 'The arch lifting',
@@ -125,6 +129,7 @@ export const FLAT_FEET_EN: Guide = {
         },
         {
           name: 'Short foot, standing',
+          evidence: { level: 'moderate', why: 'Part of the program that improved arch shape in a 2023 trial. On its own, short foot work has weaker results.' },
           dose: '3 sets of 8, hold 5 seconds, both feet',
           often: 'Every session, while it is your level',
           feel: 'The arch working under your weight',
@@ -136,6 +141,7 @@ export const FLAT_FEET_EN: Guide = {
         },
         {
           name: 'Short foot, one leg',
+          evidence: { level: 'moderate', why: 'Part of the program that improved arch shape in a 2023 trial. On its own, short foot work has weaker results.' },
           dose: '3 sets of 10, hold 5 seconds, each foot',
           often: 'Every session, while it is your level',
           feel: 'Harder work in the arch',
@@ -147,6 +153,7 @@ export const FLAT_FEET_EN: Guide = {
         },
         {
           name: 'Toe spread',
+          evidence: { level: 'early', why: 'Walkito’s own addition. It was not part of the tested program in the studies on this page.' },
           dose: '3 sets of 10, each foot',
           often: 'Strength days',
           feel: 'Effort in the small muscles of the foot',
@@ -158,6 +165,7 @@ export const FLAT_FEET_EN: Guide = {
         },
         {
           name: 'Band turn-in',
+          evidence: { level: 'early', why: 'Walkito’s own addition. It was not part of the tested program in the studies on this page.' },
           dose: '3 sets of 12, each foot',
           often: 'Strength days',
           feel: 'Work along the inside of the foot and ankle',
@@ -169,6 +177,7 @@ export const FLAT_FEET_EN: Guide = {
         },
         {
           name: 'Single-leg hold',
+          evidence: { level: 'early', why: 'Walkito’s own addition. It was not part of the tested program in the studies on this page.' },
           dose: '3 holds of 20 seconds, each leg',
           often: 'Balance days',
           feel: 'Small corrections in the foot and ankle',
@@ -180,6 +189,7 @@ export const FLAT_FEET_EN: Guide = {
         },
         {
           name: 'Hip abduction',
+          evidence: { level: 'moderate', why: 'Part of the program that improved arch shape in a 2023 trial.' },
           dose: '3 sets of 10, each leg',
           often: 'Strength days',
           feel: 'Work on the outside of the hip',
@@ -191,6 +201,7 @@ export const FLAT_FEET_EN: Guide = {
         },
         {
           name: 'Calf and soleus stretch',
+          evidence: { level: 'moderate', why: 'Part of the program that improved arch shape in a 2023 trial. That trial measured arch shape, not pain.' },
           dose: '2 holds of 30 seconds for each stretch, each leg',
           often: 'Most sessions',
           feel: 'A stretch in the calf, then near the heel',
@@ -245,8 +256,14 @@ export const FLAT_FEET_EN: Guide = {
       a: 'There is no direct evidence here, because no study cited on this page measured arch pain. If the pain is near the heel and linked to the plantar fascia, the 2023 heel pain guideline grades plantar fascia and calf stretching A and strength training B. The arch exercises on this page train arch shape, not pain. See [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
     },
     {
-      q: 'Are fallen arches the same as flat feet?',
-      a: 'Usually, yes. “Fallen arches” is a common name for flat feet. What matters more is whether the foot is flexible, with an arch that comes back off the ground, or rigid. The trial on this page was run on flexible flat feet. An arch that has flattened suddenly on one side as an adult should be seen by a clinician first.',
+      q: 'Can flat feet cause back pain?',
+      a: 'The evidence is weak and mixed, not a clear yes. The largest study on it, the [Framingham Foot Study](https://doi.org/10.1093/rheumatology/ket298) of about 1,900 adults, found no link between flat foot posture and low back pain. It found a small link in women between a foot that rolls inward while walking and low back pain, and none in men. So flat feet alone are a weak explanation for back pain. If you have both, look at them as two separate problems, and see a clinician about the back.',
+      cites: [CITE.menz],
+    },
+    {
+      q: 'What is the difference between fallen arches and flat feet?',
+      a: 'Usually none: “fallen arches” is a common name for flat feet. Most flat feet are lifelong and flexible, and the arch comes back when the foot is off the ground. Sometimes the phrase means something else: [adult-acquired flatfoot](https://doi.org/10.2174/1874325001711010714), often from a weakening posterior tibial tendon, the tendon that holds up the arch. It tends to come on in adulthood, and can bring pain or swelling on the inside of the ankle. If one arch has dropped as an adult, see a clinician before you exercise it.',
+      cites: [CITE.ling],
     },
     {
       q: 'How often should I do flat feet exercises?',
@@ -282,8 +299,9 @@ export const FLAT_FEET_EN: Guide = {
 export const HEEL_PAIN_EN: Guide = {
   lang: 'en',
   page: 'heelPain',
+  mainSource: CITE.guideline,
   published: '2026-09-24',
-  updated: '2026-09-28',
+  updated: '2026-10-03',
   title: 'Plantar Fasciitis Exercises for Heel Pain',
   description:
     'Plantar fasciitis exercises and stretches for heel pain: doses, how often, what each should feel like, and what the 2023 guideline recommends.',
@@ -323,6 +341,7 @@ export const HEEL_PAIN_EN: Guide = {
       exercises: [
         {
           name: 'Plantar fascia stretch',
+          evidence: { level: 'strong', why: 'The 2023 heel pain guideline grades stretching A, its top grade.' },
           dose: '2 holds of 30 seconds, each foot',
           often: 'Most sessions',
           feel: 'A stretch along the arch',
@@ -334,6 +353,7 @@ export const HEEL_PAIN_EN: Guide = {
         },
         {
           name: 'Calf stretch',
+          evidence: { level: 'strong', why: 'The 2023 heel pain guideline grades stretching A, its top grade.' },
           dose: '2 holds of 30 seconds, each leg',
           often: 'Most sessions',
           feel: 'A stretch in the calf',
@@ -345,6 +365,7 @@ export const HEEL_PAIN_EN: Guide = {
         },
         {
           name: 'Soleus stretch',
+          evidence: { level: 'strong', why: 'The 2023 heel pain guideline grades stretching A, its top grade.' },
           dose: '2 holds of 30 seconds, each leg',
           often: 'Most sessions',
           feel: 'A stretch near the heel',
@@ -356,6 +377,7 @@ export const HEEL_PAIN_EN: Guide = {
         },
         {
           name: 'Seated heel raises',
+          evidence: { level: 'moderate', why: 'The 2023 guideline grades strength work B. This step was not tested on its own.' },
           dose: '3 sets of 10, both feet',
           often: 'Strength days',
           feel: 'Easy work in the calves',
@@ -367,6 +389,7 @@ export const HEEL_PAIN_EN: Guide = {
         },
         {
           name: 'Heel raises on both feet',
+          evidence: { level: 'moderate', why: 'The 2023 guideline grades strength work B. This step was not tested on its own.' },
           dose: '3 sets of 10, both feet',
           often: 'Strength days',
           feel: 'The calves working together',
@@ -378,6 +401,7 @@ export const HEEL_PAIN_EN: Guide = {
         },
         {
           name: 'Heel raise hold',
+          evidence: { level: 'moderate', why: 'The 2023 guideline grades strength work B. This step was not tested on its own.' },
           dose: '3 holds of 20 seconds, both feet',
           often: 'Strength days',
           feel: 'The calves working to stay still',
@@ -389,6 +413,7 @@ export const HEEL_PAIN_EN: Guide = {
         },
         {
           name: 'Heel raises with a towel',
+          evidence: { level: 'moderate', why: 'This is the routine from a 48-person trial, and the 2023 guideline grades strength work B.' },
           dose: '4 sets of 10, each leg, with added weight',
           often: 'Strength days',
           feel: 'Hard work in the calf',
@@ -400,6 +425,7 @@ export const HEEL_PAIN_EN: Guide = {
         },
         {
           name: 'Foot roll',
+          evidence: { level: 'early', why: 'Not tested in the studies on this page. It is here for comfort between sessions.' },
           dose: '1 minute',
           often: 'Recovery days',
           feel: 'Firm pressure under the foot',
@@ -476,7 +502,12 @@ export const HEEL_PAIN_EN: Guide = {
     },
     {
       q: 'Why is heel pain worse in the morning?',
-      a: 'Heel pain on the first steps after sleep or sitting is the pattern most often linked to plantar fasciitis. The usual explanation is that the tissue under the foot stiffens at rest, then gets loaded suddenly by those first steps. That is why the plantar fascia stretch is done before you stand up, and why the 2023 guideline gives night splints an A for it.',
+      a: 'Heel pain on the first steps after sleep or sitting is the pattern most often linked to plantar fasciitis. The 2023 heel pain guideline describes it as pain “most noticeable with weight bearing first thing in the morning or after a period of rest.” The usual explanation is that the tissue under the foot stiffens at rest, then gets loaded suddenly by those first steps. That is why the plantar fascia stretch is done before you stand up, and why the 2023 guideline gives night splints an A for it.',
+    },
+    {
+      q: 'How long does plantar fasciitis last?',
+      a: 'For most people it eases within months, not weeks. A [2020 review](https://doi.org/10.1177/2473011419896763) reports that about 90% of people get better with non-surgical care such as stretching and shoe inserts, often within 3 to 6 months. Some take longer, and a smaller group still has pain after a year. No exercise program can promise a timeline. The 2023 heel pain guideline gives stretching and calf strength work its best grades, which is why they come first on this page.',
+      cites: [CITE.latt],
     },
     {
       q: 'Is stretching or strengthening better for plantar fasciitis?',

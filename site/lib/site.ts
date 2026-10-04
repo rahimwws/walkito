@@ -79,11 +79,11 @@ export const IN_SESSION_STOP = 6;
  */
 export const PAGE_UPDATED = {
   home: '2026-09-28',
-  runners: '2026-09-28',
+  runners: '2026-10-03',
   program: '2026-09-28',
   science: '2026-09-28',
   faq: '2026-10-01',
-  about: '2026-09-28',
+  about: '2026-10-03',
   support: '2026-10-01',
   privacy: '2026-10-04',
   terms: '2026-10-01',

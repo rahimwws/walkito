@@ -12,6 +12,8 @@ import type { Lang } from '@/lib/i18n';
  */
 export type AboutSection = {
   h2: string;
+  /** Anchor for links into this section, e.g. the byline's "How we research". */
+  id?: string;
   paragraphs?: readonly string[];
   bullets?: readonly string[];
 };

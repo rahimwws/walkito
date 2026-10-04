@@ -1953,6 +1953,7 @@ figcaption {
 :lang(es) h1,
 :lang(es) h2 {
   line-height: 1.14;
+}
 
 /* ------------------------------------------------------------- handoff -- */
 /* The two pages an email links to: /open/ and /unsubscribe/. One card in the
@@ -2000,3 +2001,21 @@ figcaption {
 .handoff-stores a {
   color: var(--ink);
 }
+
+/* "Updated <date>" at the foot of an article; the byline carries the sources. */
+.prose .updated-line {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+/* "Evidence: Strong." One line, set apart from the body text. */
+.prose .evidence {
+  font-size: 0.9375rem;
+  border-left: 3px solid var(--muted);
+  padding-left: 0.75rem;
+}
+.prose .evidence-strong { border-left-color: #2f8f5b; }
+.prose .evidence-moderate { border-left-color: #c58a1d; }
+.prose .evidence-early,
+.prose .evidence-unsupported { border-left-color: var(--muted); }

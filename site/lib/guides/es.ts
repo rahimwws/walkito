@@ -49,6 +49,7 @@ const RED_FLAGS = {
 export const FLAT_FEET_ES: Guide = {
   lang: 'es',
   page: 'flatFeet',
+  mainSource: CITE.brijwasi,
   published: '2026-09-24',
   updated: '2026-09-28',
   title: 'Ejercicios para pie plano y dolor en el arco',
@@ -290,6 +291,7 @@ export const FLAT_FEET_ES: Guide = {
 export const HEEL_PAIN_ES: Guide = {
   lang: 'es',
   page: 'heelPain',
+  mainSource: CITE.guideline,
   published: '2026-09-24',
   updated: '2026-09-28',
   title: 'Ejercicios para fascitis plantar y dolor de talón',

@@ -1,7 +1,8 @@
 import { Fragment } from 'react';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
-import { Byline } from '@/components/Byline';
+import { Byline, UpdatedLine } from '@/components/Byline';
+import { Evidence } from '@/components/Evidence';
 import { Footer } from '@/components/Footer';
 import { Cite } from '@/components/Cite';
 import { ExerciseMedia } from '@/components/ExerciseMedia';
@@ -12,6 +13,7 @@ import { GUIDES, type Guide as GuideData } from '@/lib/guides';
 import type { GuideTable } from '@/lib/guides/types';
 import { CHROME, TRANSLATED } from '@/lib/i18n';
 import { articleSchema, faqSchema } from '@/lib/schema';
+import { videoSchema } from '@/lib/video';
 import { SITE_URL } from '@/lib/site';
 
 const HOME_CRUMB = { en: 'Home', ru: 'Главная', es: 'Inicio' } as const;
@@ -100,7 +102,9 @@ function Table({ table }: { table: GuideTable }) {
 export function Guide({ guide }: { guide: GuideData }) {
   const c = CHROME[guide.lang];
   const url = `${SITE_URL}${TRANSLATED[guide.page][guide.lang]}`;
-  const cited = [...new Set(guide.sections.flatMap((s) => s.cites ?? []))].sort();
+  const cited = [
+    ...new Set([...guide.sections.flatMap((s) => s.cites ?? []), ...guide.faq.flatMap((q) => q.cites ?? [])]),
+  ].sort((a, b) => a - b);
 
   const article = articleSchema({
     headline: guide.title,
@@ -138,11 +142,14 @@ export function Guide({ guide }: { guide: GuideData }) {
       <JsonLd data={article} />
       <JsonLd data={breadcrumbs} />
       <JsonLd data={faqSchema(guide.faq)} />
+      {videoSchema(guide.sections.flatMap((s) => s.exercises ?? []), guide.lang, guide.published).map((v) => (
+        <JsonLd key={v.contentUrl} data={v} />
+      ))}
       <Masthead lang={guide.lang} />
 
       <Prose className="shell prose">
         <h1>{guide.h1}</h1>
-        <Byline lang={guide.lang} updated={guide.updated} />
+        <Byline lang={guide.lang} cites={cited} main={guide.mainSource} />
         <p className="lede">
           <Inline text={guide.lede} />
         </p>
@@ -206,6 +213,11 @@ export function Guide({ guide }: { guide: GuideData }) {
                     <p>
                       <Inline text={e.how} />
                     </p>
+                    {e.evidence && (
+                      <Evidence level={e.evidence.level} lang={guide.lang}>
+                        {e.evidence.why}
+                      </Evidence>
+                    )}
                     {e.stop && (
                       <p className="stop">
                         <Inline text={e.stop} />
@@ -271,6 +283,7 @@ export function Guide({ guide }: { guide: GuideData }) {
           </p>
         ))}
 
+        <UpdatedLine lang={guide.lang} updated={guide.updated} />
         <p className="notice">{c.notice}</p>
 
         {guide.program.cta && <p className="cta-line">{guide.program.cta}</p>}

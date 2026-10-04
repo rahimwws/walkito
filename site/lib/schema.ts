@@ -2,6 +2,14 @@ import { CITATIONS, citationSchema } from '@/lib/citations';
 import { TRANSLATED, type Lang } from '@/lib/i18n';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 
+/** The author every article names: the research side of Walkito, whose rules
+ * are the About page section `#how-we-research`. */
+export const AUTHOR_NAME = 'Walkito Research';
+export const HOW_WE_RESEARCH_ID = 'how-we-research';
+export function howWeResearchHref(lang: Lang): string {
+  return `${TRANSLATED.about[lang]}#${HOW_WE_RESEARCH_ID}`;
+}
+
 /**
  * Who stands behind the pages, as structured data.
  *
@@ -14,8 +22,9 @@ import { SITE_NAME, SITE_URL } from '@/lib/site';
 export function authorFor(lang: Lang) {
   return {
     '@type': 'Organization',
-    name: SITE_NAME,
-    url: `${SITE_URL}${TRANSLATED.about[lang]}`,
+    name: AUTHOR_NAME,
+    url: `${SITE_URL}${howWeResearchHref(lang)}`,
+    parentOrganization: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
   };
 }
 
@@ -45,6 +54,7 @@ export function articleSchema(input: {
     datePublished: input.published,
     dateModified: input.updated,
     author: authorFor(input.lang),
+    publishingPrinciples: `${SITE_URL}${howWeResearchHref(input.lang)}`,
     publisher: {
       '@type': 'Organization',
       name: SITE_NAME,
