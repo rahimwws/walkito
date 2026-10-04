@@ -60,6 +60,9 @@ const EXERCISES = [
   { id: 'big_toe_lift', file: '22_big_toe_lift.mp4', start: 0.8, dur: 3.4, poster: 1.4, y: 300 },
   { id: 'band_inversion', file: '14_band_inversion.mp4', start: 0.8, dur: 4.0, poster: 1.5, y: 260 },
   { id: 'hip_abduction', file: '16_hip_abduction.mp4', start: 0.6, dur: 4.4, poster: 1.4, y: 380 },
+  { id: 'ankle_rocks', file: '05_ankle_rocks.mp4', start: 0.6, dur: 4.4, poster: 2.4, y: 380 },
+  { id: 'heel_drop_straight', file: '26_heel_drop_straight_knee.mp4', start: 1.0, dur: 4.4, poster: 2.6, y: 380 },
+  { id: 'tibialis_raise', file: '29_tibialis_raise.mp4', start: 0.8, dur: 4.4, poster: 3.0, y: 380 },
 ];
 
 function run(args) {

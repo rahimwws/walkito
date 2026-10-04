@@ -1,5 +1,5 @@
 import type { EvidenceLevel } from '@/components/Evidence';
-import type { Lang, TranslatedPage } from '@/lib/i18n';
+import type { Lang, EnglishPage, TranslatedPage } from '@/lib/i18n';
 
 /**
  * A guide: one page built to answer one search query in one language.
@@ -85,7 +85,7 @@ export type GuideQuestion = {
 
 export type Guide = {
   lang: Lang;
-  page: TranslatedPage;
+  page: TranslatedPage | EnglishPage;
   /**
    * When this page's content last really changed, `YYYY-MM-DD`. Feeds the
    * visible "Updated" line, the Article dates and the sitemap. Bump it only

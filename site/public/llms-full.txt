@@ -53,6 +53,19 @@ Sources:
 - Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
 - Menz HB, Dufour AB, Riskowski JL, Hillstrom HJ, Hannan MT. Foot posture, foot function and low back pain: the Framingham Foot Study. Rheumatology (Oxford). 2013;52(12):2275–2282.
 - Ling SK, Lui TH. Posterior tibial tendon dysfunction: an overview. The Open Orthopaedics Journal. 2017;11:714–723.
+- Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+- Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+- Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
+- Patel A, DiGiovanni B. Association between plantar fasciitis and isolated contracture of the gastrocnemius. Foot & Ankle International. 2011;32(1):5–8.
+- Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliability and normative values for the standing heel-rise test in healthy adults. Physiotherapy. 2017;103(4):446–452.
+- Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
+- van der Vlist AC, Winters M, Weir A, et al. Which treatment is most effective for patients with Achilles tendinopathy? A living systematic review with network meta-analysis of 29 randomised controlled trials. British Journal of Sports Medicine. 2021;55(5):249–256.
+- Winters M, Eskes M, Weir A, Moen MH, Backx FJG, Bakker EWP. Treatment of medial tibial stress syndrome: a systematic review. Sports Medicine. 2013;43(12):1315–1333.
+- Moen MH, Holtslag L, Bakker E, et al. The treatment of medial tibial stress syndrome in athletes; a randomized clinical trial. Sports Medicine, Arthroscopy, Rehabilitation, Therapy & Technology. 2012;4:12.
+- Newman P, Witchalls J, Waddington G, Adams R. Risk factors associated with medial tibial stress syndrome in runners: a systematic review and meta-analysis. Open Access Journal of Sports Medicine. 2013;4:229–241.
+- Hamstra-Wright KL, Huxel Bliven KC, Bay C. Risk factors for medial tibial stress syndrome in physically active individuals such as runners and military personnel: a systematic review and meta-analysis. British Journal of Sports Medicine. 2015;49(6):362–369.
+- Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint plantar flexor muscles in athletes with medial tibial stress syndrome: a case-control study. Journal of Science and Medicine in Sport. 2007;10(6):356–362.
+- Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
@@ -284,6 +297,543 @@ Do the short-foot work on each training day while the arch is your goal. In Walk
 #### When should I see a doctor about flat feet?
 
 See a clinician before you start if the arch stays flat when the foot is off the ground, or if one arch has flattened suddenly as an adult. The same goes for pain that followed an injury, wakes you at night, or comes with numbness, tingling, swelling or warmth. Pain that is sharp or getting worse needs a clinician, not more exercise.
+
+## Why do my feet hurt after standing all day?
+
+Language: English · https://walkito.site/feet-hurt-standing-all-day/ · published 2026-10-04 · updated 2026-10-04
+
+Your feet hurt by the end of a long shift. The arch aches, the heel is sore, and your legs feel heavy. Standing on a hard floor for hours loads the same tissues over and over, without the pumping action that walking gives your calves and veins. Stretching the calf and plantar fascia, and building some calf strength, targets the tissues that take the most strain.
+
+- A 2015 review of the occupational health literature found prolonged standing at work associated with musculoskeletal discomfort, fatigue and leg pain, with floor mats, compression stockings and supportive footwear among the interventions with evidence behind them (Waters and Dick, 2015).
+- Standing for most of the workday raised the odds of plantar fasciitis 3.6 times in a case-control study of 50 cases and 100 controls. Reduced ankle flexibility raised them 23.3 times (Riddle and colleagues, 2003).
+- In a parallel-group trial of 40 security guards randomly assigned to regular socks or one of two compression-stocking groups, both 15-20 mmHg and 20-30 mmHg stockings prevented the rise in foot and leg discomfort seen with regular socks during 12-hour standing shifts (Garcia and colleagues, 2023).
+- The 2023 heel pain guideline gives plantar fascia and calf stretching its top grade, A, and strength training a B.
+
+### Why do your feet hurt after standing all day?
+
+Feet hurt from standing because standing still loads the plantar fascia, calf muscles and heel without giving them a break. Walking pumps blood back up from the legs with each step. Standing takes that pump away, so blood pools in the lower legs and the tissues under the foot carry the same static load for hours.
+
+A 2015 review of the occupational health research found prolonged standing associated with low back pain, leg pain, discomfort and fatigue across many standing occupations. The review also noted that cardiovascular strain and leg swelling increase with standing duration. The authors called for clearer definitions of "prolonged standing" in future studies, since the threshold between safe and harmful standing time varies across people and jobs.
+
+On the calf and fascia specifically, a 2003 case-control study found two risk factors that stood out above the rest. Reduced ankle flexibility, meaning a tight calf, was the single strongest predictor of plantar fasciitis, at 23.3 times the odds. Standing for most of the working day raised the odds 3.6 times. The two are connected: a tight calf keeps the heel under more tension during every minute of standing.
+
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### The exercises for standing-related foot pain, with starting doses
+
+These exercises target the calf, the plantar fascia and the small muscles that support the arch. They are Walkito's starting doses, not a prescription. If your pain is near the heel and follows the morning-pain pattern of plantar fasciitis, the fuller set of exercises is in [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/). [How these guides are written](https://walkito.site/about/).
+
+The 2023 heel pain guideline gives plantar fascia and calf stretching its top grade, A. It gives resistance and strength training a B. Both grades are for plantar fasciitis specifically, not for general standing fatigue, but the tissues involved are the same. If any exercise takes your pain to **6/10 or more**, stop for the day.
+
+- **Calf stretch** (2 holds of 30 seconds, each leg): Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward. A tight calf pulls on the heel all day, so this stretch targets the single strongest risk factor the 2003 study found.
+- **Soleus stretch** (2 holds of 30 seconds, each leg): Take the same wall position, then bend the back knee until you feel the stretch lower down, near the heel. The soleus, the deeper calf muscle, only lets go with the knee bent.
+- **Plantar fascia stretch** (2 holds of 30 seconds, each foot): Sit and cross the foot over the other knee. Pull the toes back until you feel the stretch along the arch, not the calf. If your heel is worst first thing in the morning, do this one before your foot touches the floor.
+- **Heel raises, both feet** (3 sets of 10, both feet): Stand on both feet, rise straight up over the big toes, then lower slowly. Both feet share the load while the calf builds strength. Hold a wall or rail if you need balance.
+- **Short foot, seated** (3 sets of 10, hold 5 seconds, each foot): Sit with your foot flat on the floor. Pull the ball of the foot toward the heel so the arch lifts, and hold. Do not curl the toes. The short foot trains the small muscle inside the arch that holds it up during a long day on your feet.
+- **Single-leg hold** (3 holds of 30 seconds, each leg): Stand on one foot and look at one fixed spot. Let the foot wobble. The wobble is the foot doing the balancing. Stand near a wall if you need a safety net.
+- **Foot roll** (2 minutes): Sit and roll the sole of your foot slowly over a massage ball, with firm pressure. If you are wincing, ease off. Rolling after a long shift settles the tissue and brings some relief before the next day.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Do insoles or supportive shoes help feet that hurt from standing?
+
+Supportive shoes and shoe inserts are commonly recommended for foot pain from standing, and there is some basis for it, but the evidence is thinner than for stretching and strength work. The 2023 heel pain guideline grades orthotics on their own **B against** for short-term pain relief, meaning the evidence leans toward not using them as a standalone option. Orthotics combined with other care get a **C**.
+
+What the occupational health review supports is broader: floor mats, supportive footwear and sit-stand options all appear in the list of interventions with some evidence for reducing discomfort during standing work. None of them has a single large trial behind it in the same way calf stretching does. A reasonable approach is to use supportive shoes and a mat if your floor is hard, and do the stretching and strength work for the tissues themselves.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+
+### Do compression socks help foot pain from standing?
+
+Compression stockings have one of the better-controlled studies behind them for standing-related discomfort specifically. In a randomized trial of 40 security guards standing roughly 12-hour shifts, split into three groups, both the 15-20 mmHg and 20-30 mmHg compression-stocking groups avoided the significant rise in foot and leg discomfort, fatigue and swelling seen in the group that wore regular socks. Participants commonly said the lower-pressure stocking was easier to put on.
+
+The trial was small, all male, and tested one occupation. But it is one of the few interventions for standing-related discomfort with a randomized design, which is why it appears ahead of some more popular advice on this page. Compression stockings do not replace stretching or strength work. They help manage the swelling and fatigue while the calf and fascia still need their own attention.
+
+Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
+
+### Could foot pain from standing be plantar fasciitis, flat feet, or something else?
+
+Foot pain from standing can be general fatigue that goes away with rest, or it can be the beginning of a named condition. The most common one is plantar fasciitis: sharp pain near the heel, usually worst on the first steps after rest. If your heel hurts most in the morning and again after you sit, that pattern points toward plantar fasciitis and the exercises in [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/) are the fuller guide.
+
+If your arches feel flat or rolled in by the end of the day, the arch exercises in [flat feet exercises for fallen arches](https://walkito.site/flat-feet-exercises/) target the muscles that hold the arch up. A rigid flat foot, one that stays flat even when the foot is off the ground, is structural and needs a clinician rather than exercise.
+
+If the pain is along the shin rather than under the foot, that points toward shin splints, and [shin splints exercises](https://walkito.site/shin-splints-exercises/) covers what the research says about it. Pain at the back of the heel, in the Achilles tendon, is a different problem. Pain on the inside of the ankle can come from the posterior tibial tendon. Both are covered from a runner's perspective in [heel pain from running](https://walkito.site/heel-pain-runners/). If the pain is at the back of the heel in the Achilles tendon, see [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/); if it is the heel-raise exercise itself you want more detail on, see [calf raises for plantar fasciitis](https://walkito.site/calf-raises-plantar-fasciitis/). If you are not sure what is causing the pain, see a clinician before loading it with exercise.
+
+### How long before your feet feel better on a long shift?
+
+There is no trial that answers this directly for standing-related foot fatigue. General ache and tiredness from standing usually eases within a day or two of rest. If the pain has crossed into plantar fasciitis, the timeline is longer: a review of the clinical evidence reports that about 90% of people with plantar fasciitis improve with non-surgical care such as stretching and shoe inserts, often within 3 to 6 months.
+
+What you can measure sooner is whether the exercises are changing anything. Calf flexibility can start to shift within a few weeks of daily stretching. Retesting calf endurance and balance every few weeks gives a number to look at rather than a guess about whether things feel different. The exercises on this page and the ones in [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/) are the same tissues, so doing them for standing also covers the most common path toward PF.
+
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+
+### See a clinician first if
+
+- the pain followed an injury or a fall
+- you cannot put weight on the foot, or you are limping
+- it comes with numbness, tingling, burning, swelling or warmth
+- the heel or foot is red, or you have a fever or feel unwell
+- it wakes you at night
+- it is sharp, or getting worse despite easing the load
+- pain is localized to one pinpoint spot and worsens with activity, which can be a stress fracture pattern rather than standing fatigue
+- one leg or foot has swollen suddenly and is painful, red or warm
+- you have diabetes, reduced feeling in your feet or poor circulation
+- the pain has not eased after several weeks of lighter load, better footwear and the exercises on this page
+
+### Doing it as a plan
+
+You don't have to work out the order, the doses or when to move to a harder version. Walkito builds a plan one week at a time around one goal. If your standing-related foot pain is worst in the morning, the first goal is the same as for heel pain: morning pain at 1/10 or less for 14 days in a row. If your arches are flat as well, the arch has its own goal and exercises.
+
+#### Why do my feet hurt more at the end of a standing shift than at the start?
+
+The plantar fascia, calf muscles and veins in the lower leg have a limited tolerance for sustained, static loading, and that tolerance is used up over hours of standing. Gravity pools blood in the feet and lower legs during static standing, adding to the ache and swelling that builds through a shift. Walking breaks help because the calf pump moves blood back up.
+
+#### Is foot pain from standing all day the same thing as plantar fasciitis?
+
+Not always. General ache and tiredness from standing is common and usually goes away with rest. Plantar fasciitis is a specific condition with sharp heel pain, often worst on the first steps after rest. Standing most of the workday is an independent risk factor for developing plantar fasciitis, at 3.6 times the odds in one case-control study, so the two are related but not identical.
+
+#### Do compression socks help foot pain from standing?
+
+In a trial of 40 security guards standing 12-hour shifts, randomly assigned to regular socks or one of two compression-stocking groups, both 15-20 mmHg and 20-30 mmHg avoided the rise in foot and leg discomfort, fatigue and swelling seen with regular socks. This is one of the few standing-specific interventions with a controlled trial behind it, though the study was small and all male.
+
+#### Is it normal for feet to hurt after an 8 or 12-hour standing shift?
+
+Some fatigue and ache after a long standing shift is common and consistent with what occupational health research reports. A 2015 review found prolonged standing linked to musculoskeletal discomfort and fatigue across many standing jobs. Common does not mean it should be ignored long-term: the same review notes that floor mats, compression stockings and better shoes measurably reduce these outcomes.
+
+#### What is the single best thing to try first for foot pain from standing?
+
+Among the self-care options reviewed on this page, calf and plantar fascia stretching carry the top evidence grade (A) in the 2023 heel pain guideline for heel pain specifically, and compression stockings have the strongest controlled trial behind them for standing-related discomfort. Starting with daily calf stretches and trying compression stockings on your next long shift covers both.
+
+## Calf raises for plantar fasciitis: how to do them and how many
+
+Language: English · https://walkito.site/calf-raises-plantar-fasciitis/ · published 2026-10-04 · updated 2026-10-04
+
+Calf raises are one of the exercises in [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/), and it is the exercise behind the one randomized trial built specifically to test strength training against stretching for plantar fasciitis. In a study of 48 people, heavy heel raises eased pain faster than stretching alone over three months. This page is the deep dive on that exercise: the exact protocol, the towel, the progression, and where it sits next to stretching.
+
+- In a trial of 48 people, loaded heel raises with a towel under the toes eased plantar fasciitis pain faster than stretching alone at three months, though both groups were even by twelve months (Rathleff and colleagues, 2015).
+- The 2023 heel pain guideline grades strength training B, its second-highest grade, and grades stretching A (Koc and colleagues, 2023).
+- Reduced ankle dorsiflexion, meaning how far the foot bends up toward the shin, often caused by a tight gastrocnemius, the bigger outer calf muscle, is an independent risk factor for plantar fasciitis (Riddle and colleagues, 2003).
+- The towel under the toes engages the windlass mechanism, loading the plantar fascia along with the calf.
+- A single-leg heel-raise count in the low-to-mid 20s, about 23-24 on average, is a commonly cited adult benchmark, useful for tracking progress over weeks (Hebert-Losier and colleagues, 2017).
+
+### Do calf raises actually help plantar fasciitis?
+
+Calf raises help plantar fasciitis by strengthening the calf-Achilles-fascia chain that absorbs load every time the heel hits the ground.
+
+The only randomized trial to test this exercise for plantar fasciitis directly is Rathleff 2015. In that trial, 48 people with ultrasound-confirmed plantar fasciitis were split into two groups. Both wore shoe inserts. One group did a loaded, slow heel raise with a towel rolled under the toes. The other stretched the plantar fascia. At three months, the heel-raise group scored 29 points better on the Foot Function Index. At twelve months, both groups had converged.
+
+So calf raises brought the improvement forward. They did not produce a bigger improvement in the long run. The 2023 clinical guideline grades strength training B and stretching A. It recommends both. Nothing in the evidence suggests you should pick one and skip the other.
+
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### How do you do a towel calf raise for plantar fasciitis?
+
+The towel calf raise is the exercise from the Rathleff trial. It is a single-leg heel raise on a step, with a rolled towel under the toes. The towel pulls the toes upward at the top of the raise, which engages the windlass mechanism - the way the plantar fascia tightens when the big toe bends back. Without the towel, you are training the calf but loading the fascia much less.
+
+Stand on one foot on the edge of a step, with a rolled hand towel under all five toes. The ball of the foot stays on the step. Hold a wall or rail for balance. Rise up over three seconds, hold at the top for two, and lower over three seconds. Let the heel sink slightly below the step on the way down. In the trial, participants added weight with a backpack once bodyweight became too easy.
+
+Start on both feet if single-leg raises are too hard right now. Both-leg raises on the floor, without a step, are where the calf chain begins. The towel and the step come in later, once standing heel raises feel easy for two sessions in a row.
+
+- **Heel raises with a towel (single-leg)** (Research protocol: 12RM (the heaviest load you can lift for 12 controlled reps) x 3 sets, progressing to 8RM x 5 sets. Starting dose: 3 sets of 12, each leg): Stand on one foot on a step, rolled towel under the toes. Three seconds up, two-second hold, three seconds down. Add weight with a backpack when the last rep stops being hard.
+- **Calf stretch (straight knee)** (3 sets of 30-second holds, each leg): Hands on a wall. Back leg straight, heel down, hips forward. Hold until you feel the stretch in the upper calf.
+- **Soleus stretch (bent knee)** (3 sets of 30-second holds, each leg): Same position as the calf stretch, then bend the back knee until you feel it lower down, near the heel. The soleus, the deeper calf muscle, only releases with the knee bent.
+- **Seated heel raises** (3 sets of 10, both feet): Sit with your feet flat on the floor. Press up through the balls of both feet. Hands on the knees add resistance. This is a low-load way to start loading the calf when standing raises are too much.
+- **Heel raises on both feet** (3 sets of 10, both feet): Stand on both feet, rise straight up over the big toes, then lower slowly. Both feet share the load.
+- **Heel raise hold** (3 holds of 20 seconds, both feet): Rise onto your toes on both feet, then hold still at the top. Do not sink back down. Holding loads the tendon without the bounce of a full rep.
+
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### How many calf raises should you do, and how do you add load?
+
+The Rathleff protocol uses a repetition maximum (RM) system rather than a fixed rep count. "12RM" means the heaviest load you can lift for exactly 12 controlled reps - the twelfth rep should be the last one you can do with good form. For most people starting out, bodyweight on one leg is enough. When it is not, a backpack with books or water bottles adds weight.
+
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### What does Walkito start you on?
+
+Walkito does not drop you into the Rathleff protocol on day one. The app starts with seated heel raises (3 sets of 10, both feet), then moves to double-leg standing raises, then a heel raise hold, and only then the towel-loaded single-leg raise. Each step opens once two sessions at the current level felt easy. That ladder is the app's own pacing, not a published protocol, and it exists because most people starting an exercise plan for heel pain are not ready for a weighted single-leg raise on the first session.
+
+The calf chain in the app runs: seated heel raises, double-leg heel raises, heel raise hold, heel raises with a towel, heel drops (an eccentric lowering off a step), and pogo hops. The towel raise is level 4 of 6. Reaching the calf goal of 25 single-leg heel raises does not end the calf work. It moves to maintaining, and a new goal takes its place.
+
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Why does a tight calf matter for heel pain?
+
+A tight calf pulls on the heel through the Achilles tendon, and the plantar fascia shares the load at the other end. When the ankle cannot bend enough, every step puts more strain on the fascia.
+
+In a series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius, the outer calf muscle, and another 23 to 30 percent had a combined gastrocnemius-soleus contracture. Separately, a matched case-control study of 50 cases and 100 controls found that reduced ankle dorsiflexion, how far the foot bends up toward the shin, was the strongest independent risk factor for plantar fasciitis.
+
+This is why calf stretching and calf strengthening both appear on the list. Stretching gives the ankle more range. Strengthening gives the calf enough capacity that it does not tighten under normal daily load. The guideline recommends both. The same tight-calf mechanism shows up in other lower-leg pain too: see [shin splints exercises](https://walkito.site/shin-splints-exercises/) and [feet hurt from standing all day](https://walkito.site/feet-hurt-standing-all-day/) if your pain pattern looks more like either of those.
+
+Source: Patel A, DiGiovanni B. Association between plantar fasciitis and isolated contracture of the gastrocnemius. Foot & Ankle International. 2011;32(1):5–8.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### How is a calf raise for plantar fasciitis different from one for Achilles tendonitis?
+
+The movement is nearly the same, but the intent, the towel, and the pain rule differ. For plantar fasciitis, the towel under the toes loads the fascia through the windlass mechanism. The tempo is 3 seconds up, 2-second hold, 3 down, every other day. The pain rule on this page is: stop if pain reaches 6/10 or more.
+
+For Achilles tendonitis, the classic protocol is an eccentric heel drop (lowering only, with the rise done on both feet), originally done twice a day, seven days a week, and into pain up to about 5/10 as long as it settles by the next morning. The towel is not used because loading the fascia is not the goal. And for insertional Achilles pain, right at the back of the heel bone, heel drops should stay at floor level rather than going below the step edge, because deep dorsiflexion compresses the tendon against the bone.
+
+The two exercises are close relatives. If your pain is at the back of the heel or in the tendon above it rather than under the foot, see [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/).
+
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+Source: Alfredson H, Pietilä T, Jonsson P, Lorentzon R. Heavy-load eccentric calf muscle training for the treatment of chronic Achilles tendinosis. American Journal of Sports Medicine. 1998;26(3):360–366.
+
+### How many single-leg calf raises should you be able to do?
+
+A common adult benchmark for the single-leg heel-raise endurance test is in the low-to-mid 20s, about 23-24 repetitions on average, based on normative data from 566 healthy adults. That number shifts with age, sex, BMI and activity level, so it is a reference point rather than a pass-fail line. What matters more for tracking plantar fasciitis progress is whether the number goes up week to week, and whether the two sides are roughly even.
+
+The calf goal in the app is 25 single-leg calf raises. The test is repeated every 14 days while the calf goal is active, then every 28 days after it is reached, so you can see the trend without guessing.
+
+Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliability and normative values for the standing heel-rise test in healthy adults. Physiotherapy. 2017;103(4):446–452.
+
+### What should it feel like, and when should you stop?
+
+A calf raise for plantar fasciitis should feel like hard work in the calf. The towel version will also produce a pull under the arch. That is the fascia loading, and it is the point of the exercise.
+
+Stop for the day if pain reaches **6/10 or more** during the exercise, or if your first steps the next morning are clearly worse than usual. That is the same threshold the app uses to end a session. It is not an Achilles-specific pain model (which uses 5/10 from a different trial). This is the plantar fasciitis stop rule.
+
+Mild soreness that settles within a day is expected, especially in the first two weeks. Pain that stays elevated for days or gets worse week over week is a reason to step back one level or see a clinician.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Should you stretch or strengthen first for plantar fasciitis?
+
+The 2023 heel pain guideline gives plantar fascia and calf stretching a grade of **A** and strength training a grade of **B**. That means both are recommended, and the stretching evidence is slightly broader. In the Rathleff trial, the strength group improved faster in the first three months, but by twelve months both groups were even.
+
+Nothing in the evidence says you need to finish one before starting the other. The app starts stretching on day one and adds the first calf strengthening exercise once the goal moves past settling pain into building capacity. Doing the plantar fascia stretch before your first steps each morning is the single most repeated piece of advice in the guideline.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### See a clinician first if
+
+- the pain followed an injury or a fall, which can indicate a plantar fascia tear rather than fasciitis
+- you cannot put weight on the foot, or you are limping
+- it comes with numbness, tingling or burning, which can point to nerve entrapment rather than plantar fasciitis
+- the heel is red, or you have a fever or feel unwell
+- it wakes you at night or is present at rest, which can be more consistent with a stress fracture
+- squeezing the sides of the heel hurts, or the pain builds during runs after you increased your mileage
+- both heels hurt and other joints are swollen or stiff, which can point toward inflammatory arthritis
+- it has not improved after several weeks of exercise and a lighter load
+- you have diabetes, reduced feeling in your feet or poor circulation
+
+### Doing it as a plan
+
+You don't have to work out the sets, the weight or when to move to the next step. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1/10 for 14 days in a row. The calf raise ladder - seated, double-leg, hold, towel, heel drops - moves at your pace, not on a fixed calendar.
+
+#### How many calf raises should I do for plantar fasciitis?
+
+The only trial that tested a specific heel-raise protocol for plantar fasciitis started at a 12-repetition maximum for 3 sets, progressed to 10RM for 4 sets at week 2, and to 8RM for 5 sets at week 4, done every other day for up to 3 months (Rathleff 2015). "12RM" means the heaviest load you can lift for 12 controlled reps, not a fixed count for everyone.
+
+#### Do calf raises make plantar fasciitis worse?
+
+In the Rathleff 2015 trial, the group doing loaded heel raises improved faster than the group that only stretched. Loading made things better, not worse, in that study. Any single exercise that pushes pain to 6/10 or more should be backed off for the day, but the exercise itself is not the problem when dosed correctly.
+
+#### What is the towel for in a towel calf raise?
+
+The towel rolls under the toes so they bend upward at the top of the raise. That activates the windlass mechanism, the link between the Achilles tendon and the plantar fascia. Without the towel, the exercise mainly trains the calf. With it, the fascia takes part of the load, which is why the trial used it.
+
+#### Should I stretch or strengthen first for plantar fasciitis?
+
+The 2023 heel pain guideline gives stretching its top grade, A, and strength training a B, so both are recommended. In the Rathleff trial, strengthening moved pain scores faster in the first 3 months, but by 12 months both groups were even. Nothing in the evidence says you must finish one before starting the other.
+
+#### How soon do calf raises help plantar fasciitis pain?
+
+In the Rathleff 2015 trial of 48 people, the loaded heel-raise group was significantly ahead of the stretching-only group by the 3-month mark. By 12 months the two groups had converged. No trial has shown a guaranteed number of weeks for any one person. Recovery is measured in months.
+
+#### How many single-leg calf raises is normal?
+
+A normative study of 566 healthy adults found a median of about 23-24 repetitions as a typical adult count, which shifts with age, sex and activity level (Hebert-Losier 2017). The number is useful for comparing one leg to the other or for tracking change over weeks, not as a strict pass-fail line.
+
+#### Is it normal to feel the exercise in the calf and not the heel?
+
+Yes. Seated and double-leg heel raises are designed to feel like calf work with little load on the heel, which is why they come before the single-leg towel version. The towel-loaded raise is the version that also puts load through the arch, so a pull near the heel at that stage is expected, as long as it stays below 6/10.
+
+## Achilles tendonitis exercises: eccentric heel drops, doses and what the research says
+
+Language: English · https://walkito.site/achilles-tendonitis-exercises/ · published 2026-10-04 · updated 2026-10-04
+
+Achilles tendonitis exercises work best when the heel drop is understood as strength training, not a stretch. The 2024 clinical guideline gives exercise its top grade, **A**, and a 2021 network meta-analysis of 29 trials found no single protocol clearly better than another. What matters is loading the tendon steadily for weeks.
+
+- The 2024 clinical guideline grades exercise (any tendon-loading type) **A**, its top grade, for midportion Achilles tendinopathy (Chimenti and colleagues, 2024).
+- A network meta-analysis of 29 RCTs found no clinically relevant difference between exercise approaches at 3 or 12 months (van der Vlist and colleagues, 2021).
+- In a trial of 58 people, heavy slow resistance 3 days a week produced equally good results compared to twice-daily eccentrics (Beyer and colleagues, 2015).
+- For insertional Achilles pain (right at the heel bone), heel drops should stay at floor level rather than dropping below the step edge, because deep dorsiflexion, bending the ankle so the toes come up toward the shin, compresses the tendon against the bone (Jonsson and colleagues, 2008).
+- Pain during loading up to about 5/10, settling by the next morning and not worsening week over week, was the rule tested in one RCT that allowed continued sport during rehab (Silbernagel and colleagues, 2007).
+
+### Is it tendonitis or tendinopathy, and does it change the exercises?
+
+"Tendonitis" suggests inflammation. "Tendinopathy" describes a tendon that has changed under load, often thickened, without inflammation being the main driver. The 2024 guideline uses "tendinopathy." For the exercises, the name does not change what you do. Both describe the same problem: a tendon that hurts with loading, usually a few centimeters above the heel bone (mid-portion) or right where it attaches (insertional).
+
+Where it hurts on the tendon does change the exercises. That split is covered below.
+
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+
+### What is the eccentric heel drop, and why is it not a stretch?
+
+The eccentric heel drop is a strength exercise, not a flexibility stretch. You rise on both feet, shift to the painful side, and lower slowly on one foot, letting the heel sink below the step edge. The lowering phase is the eccentric contraction - the calf muscle lengthening under load. That controlled descent is what builds tendon capacity over weeks.
+
+The most common mistake is holding the bottom position like a calf stretch. That turns it into a static stretch, which is a different stimulus. The point is the slow, loaded descent. Three seconds down, with the muscle working the whole way.
+
+The 1998 Alfredson trial had 15 athletes with long-standing mid-tendon Achilles pain do eccentric heel drops twice a day, 7 days a week, for three months, straight and bent knee. All 15 returned to their prior running level. A small trial with no control group, but it launched a whole line of research.
+
+- **Eccentric heel drops (straight knee)** (Alfredson: 3 x 15, twice daily, three months. Walkito: 3 x 10, each leg): Stand on a step edge. Rise on both feet, shift to the painful leg, lower slowly over three seconds. Heel sinks below the step. Both feet to come back up. Straight knee targets the gastrocnemius, the bigger outer calf muscle.
+
+Source: Alfredson H, Pietilä T, Jonsson P, Lorentzon R. Heavy-load eccentric calf muscle training for the treatment of chronic Achilles tendinosis. American Journal of Sports Medicine. 1998;26(3):360–366.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+
+### Does heavy slow resistance work as well as eccentric drops?
+
+Yes, based on current evidence. A 2015 trial of 58 people compared heavy slow resistance (HSR), done 3 days a week, against the classic twice-daily eccentric protocol. The conclusion: "Both traditional ECC and HSR yield positive, equally good, lasting clinical results in patients with Achilles tendinopathy."
+
+A 2021 network meta-analysis of 29 trials found no clinically relevant difference between any active exercise approach at 3 or 12 months. All were better than doing nothing. No trial was at low risk of bias. The authors recommended starting with a calf-muscle exercise program because it is low-cost and has few harms.
+
+The protocol shape matters less than loading the tendon consistently. Eccentric drops are the most studied, HSR is equally effective and requires fewer weekly sessions, and both are valid starting points. For the plantar fasciitis version of this same calf-strengthening logic, see [calf raises for plantar fasciitis](https://walkito.site/calf-raises-plantar-fasciitis/).
+
+Source: Beyer R, Kongsgaard M, Hougs Kjær B, Øhlenschlæger T, Kjær M, Magnusson SP. Heavy slow resistance versus eccentric training as treatment for Achilles tendinopathy: a randomized controlled trial. American Journal of Sports Medicine. 2015;43(7):1704–1711.
+Source: van der Vlist AC, Winters M, Weir A, et al. Which treatment is most effective for patients with Achilles tendinopathy? A living systematic review with network meta-analysis of 29 randomised controlled trials. British Journal of Sports Medicine. 2021;55(5):249–256.
+
+### The exercises, with starting doses
+
+The exercises below progress from low-load to high-load, starting with seated heel raises and working up through the ladder. These are Walkito's starting doses alongside the research protocols. [How these guides are written](https://walkito.site/about/).
+
+For insertional Achilles pain, every exercise that uses a step should be done at floor level instead. That modification is explained in the insertional section below.
+
+- **Seated heel raises** (3 sets of 10, both feet): Sit with feet flat. Press up through the balls of both feet. Hands on the knees add resistance. A low-load way to start when standing work is too painful.
+- **Double-leg heel raises** (3 sets of 10, both feet): Stand on both feet, rise straight up over the big toes, lower slowly over three seconds. Both feet share the load.
+- **Heel raise hold (isometric)** (3 holds of 20 seconds, both feet (research: 3-5 x 30-45 seconds)): Rise onto your toes on both feet, hold still at the top. Do not sink down. This is an isometric hold, meaning the muscle works without moving, which loads the tendon without the up-and-down motion that early-stage Achilles pain can find provocative.
+- **Eccentric heel drops (straight knee)** (Alfredson: 3 x 15, twice daily. Walkito: 3 x 10, each leg): Stand on a step edge. Rise on both feet, shift to the painful leg, lower slowly with a straight knee. Heel sinks below the step. Both feet to return to the top.
+- **Calf stretch (straight knee)** (3 sets of 30-second holds, each leg): Hands on a wall. Back leg straight, heel down, hips forward. Do not bounce. For insertional pain, keep it gentle and stop if it provokes the attachment.
+- **Soleus stretch (bent knee)** (3 sets of 30-second holds, each leg): Same wall position, bend the back knee until the stretch moves lower, near the heel. The soleus only releases with the knee bent.
+
+Source: Alfredson H, Pietilä T, Jonsson P, Lorentzon R. Heavy-load eccentric calf muscle training for the treatment of chronic Achilles tendinosis. American Journal of Sports Medicine. 1998;26(3):360–366.
+Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+
+### How much pain is okay during Achilles exercises?
+
+In Silbernagel 2007, 38 people with Achilles pain were split into two groups. One continued running and jumping during rehab, guided by the rule that pain during and after loading could go up to about **5 out of 10**, as long as it returned to its usual level by the next morning and did not worsen week over week. The other group rested first. Both improved significantly at 12 months, with no difference between them.
+
+This is a different threshold from the 6/10 stop rule on the [plantar fasciitis](https://walkito.site/plantar-fasciitis-exercises/) page, which comes from a different guideline. The 5/10 figure is from one study, not a universal standard, but it is the most cited pain model in Achilles rehab.
+
+Some discomfort during loading is expected and was acceptable in the trial. Pain that does not settle overnight, worsens week to week, or arrives as a sudden sharp episode is not.
+
+Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
+
+### Is your pain mid-tendon or at the heel bone, and why it changes the exercise?
+
+Mid-portion Achilles tendinopathy sits in the body of the tendon, typically 2 to 6 centimeters above the heel bone. Standard eccentric drops and heavy slow resistance have their best evidence here. Heel drops over a step edge are appropriate for mid-portion pain.
+
+Insertional Achilles tendinopathy is pain right at the tendon-bone attachment. In a 2008 pilot study of 27 people (34 tendons) with chronic insertional pain, a modified protocol using floor-level-only eccentric loading, with no dorsiflexion past neutral, reported good results in 67 percent of cases. Deep dorsiflexion compresses the tendon against the heel bone, which irritates the insertion.
+
+If your pain is at the back of the heel bone rather than higher in the tendon, do all heel raises and heel drops at floor level. Do not drop below the step edge. Avoid aggressive stretching for the same reason. This is the most important modification in Achilles programs, and the one most commonly missed.
+
+Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+
+### How many single-leg calf raises should you be able to do?
+
+The 2024 guideline names the single-leg heel-rise endurance test as part of the recommended way to measure calf strength and track recovery. A normative study of 566 healthy adults puts a typical count at about 25 repetitions, adjusted for age, sex and activity level. What matters is the trend over time and the difference between your two sides.
+
+The calf goal in the app is 25 single-leg calf raises. The test runs every 14 days while the calf goal is active, then every 28 days. A gap between legs is also tracked, since a persistent side-to-side difference can point to incomplete recovery.
+
+Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliability and normative values for the standing heel-rise test in healthy adults. Physiotherapy. 2017;103(4):446–452.
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+
+### Can you keep running while doing Achilles rehab?
+
+In Silbernagel 2007, patients who continued running during rehab under the pain-monitoring model did not do worse than those who rested first. Both groups improved at 12 months. The trial concluded that continued, pain-monitored activity "might therefore represent a valuable option" during rehab.
+
+This does not mean running is harmless in every case. If pain does not settle overnight, or if each week is worse, back off. Pain at the heel-bone attachment needs more caution than mid-tendon pain. Any sudden pop or snap is a reason to stop and see a clinician.
+
+The [heel pain for runners](https://walkito.site/heel-pain-runners/) page covers running-specific load management in more detail.
+
+Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
+
+### How long does it take for Achilles exercises to help?
+
+Recovery from Achilles tendinopathy is measured in months. The core loading trials ran programs for about three months and tracked outcomes to 12 months. The 2024 guideline notes functional improvement can appear by 2 weeks, but fuller recovery extends well beyond that.
+
+No trial promises a fixed timeline. Some people respond faster, some slower, and insertional cases tend to take longer than mid-portion. Consistent loading over time is the common thread.
+
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Alfredson H, Pietilä T, Jonsson P, Lorentzon R. Heavy-load eccentric calf muscle training for the treatment of chronic Achilles tendinosis. American Journal of Sports Medicine. 1998;26(3):360–366.
+Source: Beyer R, Kongsgaard M, Hougs Kjær B, Øhlenschlæger T, Kjær M, Magnusson SP. Heavy slow resistance versus eccentric training as treatment for Achilles tendinopathy: a randomized controlled trial. American Journal of Sports Medicine. 2015;43(7):1704–1711.
+Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study. American Journal of Sports Medicine. 2007;35(6):897–906.
+
+### See a clinician first if
+
+- you felt a sudden pop, snap or a sensation of being kicked in the back of the leg, especially with immediate difficulty pushing off or walking on the toes - this can indicate an Achilles tendon rupture
+- you are currently taking or have recently taken a fluoroquinolone antibiotic (such as ciprofloxacin or levofloxacin) and have new or worsening tendon pain - these drugs carry an FDA boxed warning for tendinitis and tendon rupture
+- pain and swelling came on suddenly with fever, redness or warmth over the tendon
+- there is significant swelling, bruising or a palpable gap in the tendon
+- pain is right at the heel-bone attachment and gets worse with stretching or deep heel drops, not better - this points to insertional tendinopathy needing a modified approach or a clinician's input
+- pain or stiffness is getting steadily worse over weeks despite consistent loading
+- pain is present at rest or wakes you at night
+- you cannot put weight on the foot or you are limping
+
+### Doing it as a plan
+
+You don't have to guess the order, the doses or when to add load. Walkito builds a plan one week at a time around one goal. The calf chain runs from seated raises through double-leg raises, a hold, towel raises, eccentric heel drops and pogo hops. Each step opens once two sessions at the current level felt easy.
+
+#### What is the difference between Achilles tendonitis and tendinopathy?
+
+"Tendonitis" implies inflammation, while most chronic Achilles pain is a loading issue rather than a primarily inflammatory one. The 2024 guideline uses "tendinopathy." For exercise purposes, the name does not change what you do. The exercises on this page apply to both terms.
+
+#### What are eccentric heel drops for Achilles tendonitis?
+
+Eccentric heel drops are a strength exercise: rise on both feet, lower slowly on one, heel sinking below a step edge. The lowering phase is the focus. In a 1998 trial, 15 athletes doing this twice daily for three months all returned to their prior running level. Later research shows other loading styles work equally well.
+
+#### Is heavy slow resistance as good as eccentric heel drops?
+
+A 2015 trial of 58 people concluded both yield "positive, equally good, lasting clinical results." A 2021 meta-analysis of 29 trials found no clinically relevant difference between active exercise types at 3 or 12 months. What matters is consistent loading, not the specific protocol.
+
+#### How much pain is okay during Achilles exercises?
+
+One trial allowed pain up to about 5/10 during loading, provided it settled by the next morning and did not worsen week to week. Patients under that model did as well as those who rested first (Silbernagel 2007). Pain that stays elevated overnight or worsens weekly is the signal to back off.
+
+#### Are insertional Achilles exercises different?
+
+Yes. The standard deep heel-drop protocol had poor results for pain at the heel-bone attachment. A 2008 pilot study tested floor-level-only eccentric loading, no dorsiflexion past neutral, and reported good results in 67 percent of 27 patients. Deep drops and aggressive stretching should be avoided for insertional pain.
+
+#### Should I stretch a painful Achilles tendon?
+
+Stretching is not the primary exercise for Achilles tendinopathy. The trials on this page are all loading protocols (heel raises and drops), not stretching programs. Gentle calf mobility work can follow loaded sessions, but aggressive stretching can flare symptoms, especially insertional pain where dorsiflexion compresses the attachment.
+
+#### How long do Achilles tendonitis exercises take to work?
+
+Recovery is measured in months. The core trials ran loading programs for about three months, tracking results to 12 months. The 2024 guideline notes functional improvement can begin by 2 weeks, but fuller recovery extends well beyond. No trial promises a fixed timeline.
+
+## Shin splints exercises: what helps and what doesn't
+
+Language: English · https://walkito.site/shin-splints-exercises/ · published 2026-10-04 · updated 2026-10-04
+
+Shin splints is pain along the inner edge of the shinbone, spread over several inches rather than one sore spot. The clinical name is medial tibial stress syndrome, or MTSS. Most pages list exercises as if they are proven to speed recovery. A 2013 systematic review of every treatment trial found that stretching and strengthening exercises have not been shown to shorten it.
+
+- A 2013 systematic review of 11 treatment trials found stretching and strengthening exercises have not been proven to speed recovery from medial tibial stress syndrome (Winters and colleagues, 2013).
+- In the only randomized trial of exercise for shin splints, adding calf stretching and strengthening to a graded running program did not shorten recovery compared with the running program alone, in a study of 74 athletes (Moen and colleagues, 2012).
+- Runners with shin splints could do fewer calf raises to failure than matched controls, suggesting a calf endurance gap (Madeley and colleagues, 2007).
+- Focal, pinpoint tenderness over one small spot, rather than diffuse pain along several inches of bone, can be a stress fracture and needs a clinician, not more exercise.
+
+### What are shin splints, and what exercises actually help?
+
+Shin splints, or medial tibial stress syndrome, is an overuse injury of the shinbone and the tissue around it. The pain is typically diffuse, spread along the inner edge of the tibia over several inches, and it usually starts during or after running. A 2020 review of novice and recreational runners found the clearest links were in how runners move, including more hip rotation and a foot that rolls inward more than usual.
+
+The honest answer about exercises for shin splints is that no specific exercise program has been shown to speed up recovery in a controlled trial. A 2013 systematic review looked at 11 treatment studies and concluded that stretching and strengthening "have not been proven to be effective in treating MTSS." In the only randomized trial with an exercise arm, 74 athletes were split into three groups: a graded running program alone, the same program plus calf stretching and strengthening, and the same program plus compression stockings. All three groups improved at a similar rate.
+
+So the exercises below are not a dedicated shin splints protocol. They are general lower-leg and hip exercises already in the catalogue that target the muscles and joints researchers have studied in shin splints populations. The strongest move is still to reduce the running load and rebuild it slowly.
+
+Source: Menéndez C, Batalla L, Prieto A, Rodríguez MÁ, Crespo I, Olmedillas H. Medial tibial stress syndrome in novice and recreational runners: a systematic review. International Journal of Environmental Research and Public Health. 2020;17(20):E7457.
+Source: Winters M, Eskes M, Weir A, Moen MH, Backx FJG, Bakker EWP. Treatment of medial tibial stress syndrome: a systematic review. Sports Medicine. 2013;43(12):1315–1333.
+Source: Moen MH, Holtslag L, Bakker E, et al. The treatment of medial tibial stress syndrome in athletes; a randomized clinical trial. Sports Medicine, Arthroscopy, Rehabilitation, Therapy & Technology. 2012;4:12.
+
+### The exercises, with starting doses
+
+These are exercises from the app's catalogue that overlap with the muscles and risk factors identified in shin splints research. The calf stretches and heel raises are the same ones used in [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/), targeting the same tissues. They are starting doses, not a prescription. Every evidence label below is **early**, because no exercise on this list has been proven to shorten shin splint recovery in a trial. [How these guides are written](https://walkito.site/about/).
+
+If you mark the shin as sore in the check-in, Walkito gives ankle rocks and foot roll. Toe raises appear in the general plan as an accessory from level 2 onward, rotating with ankle rocks. There is no dedicated shin splints program. If any exercise takes your pain to **6/10 or more**, stop for the day.
+
+- **Calf stretch** (2 holds of 30 seconds, each leg): Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward. The calf and the shin share the job of controlling your foot while you run, so a tight calf shifts more load onto the shin.
+- **Soleus stretch** (2 holds of 30 seconds, each leg): Take the same wall position, then bend the back knee until you feel the stretch lower down, near the heel. The soleus, the deeper calf muscle, only lets go with the knee bent.
+- **Toe raises** (3 sets of 10, both feet): Stand with your back against a wall. Lift the toes and the front of both feet off the floor, keeping the heels down. Lower slowly. This is the muscle along the front of the shin, the one that aches when shin splints flare.
+- **Heel raises, both feet** (3 sets of 10, both feet): Stand on both feet, rise straight up over the big toes, then lower slowly. Calf endurance was lower in runners with shin splints than in matched controls, which is why calf strength is part of this list.
+- **Hip abduction** (3 sets of 15, each leg): Stand with a resistance band around both ankles and lift one leg out to the side against the band. Push through the heel, not the toes. Two meta-analyses found that hip rotation range of motion differs between people with and without shin splints, which is the basis for including hip work.
+- **Single-leg hold** (3 holds of 30 seconds, each leg): Stand on one foot and look at one fixed spot. Let the foot wobble. The wobble is the foot doing the balancing. Stand near a wall if you need a safety net.
+- **Ankle rocks** (2 sets of 15, each leg): Stand in a split stance near a wall. Push the front knee forward over the toes, keeping the heel flat on the floor. An ankle that bends well lets the shin absorb impact more evenly during a run.
+- **Foot roll** (2 minutes): Sit and roll the sole of your foot slowly over a massage ball, with firm pressure. If you are wincing, ease off. The foot roll does not target the shin directly, but it loosens the tissues on the underside that share load with the lower leg.
+
+Source: Winters M, Eskes M, Weir A, Moen MH, Backx FJG, Bakker EWP. Treatment of medial tibial stress syndrome: a systematic review. Sports Medicine. 2013;43(12):1315–1333.
+Source: Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint plantar flexor muscles in athletes with medial tibial stress syndrome: a case-control study. Journal of Science and Medicine in Sport. 2007;10(6):356–362.
+Source: Newman P, Witchalls J, Waddington G, Adams R. Risk factors associated with medial tibial stress syndrome in runners: a systematic review and meta-analysis. Open Access Journal of Sports Medicine. 2013;4:229–241.
+Source: Hamstra-Wright KL, Huxel Bliven KC, Bay C. Risk factors for medial tibial stress syndrome in physically active individuals such as runners and military personnel: a systematic review and meta-analysis. British Journal of Sports Medicine. 2015;49(6):362–369.
+
+### How is shin splint pain different from a stress fracture?
+
+Telling shin splints from a stress fracture matters because the two need different responses. Medial tibial stress syndrome and tibial stress fractures sit on the same continuum of bone stress injury. Shin splints can progress toward a stress fracture under continued load, which is the main reason to change the training load early instead of continuing to run through diffuse shin pain.
+
+Shin splints typically cause diffuse tenderness spread along several inches of the inner shin. A stress fracture causes focal tenderness at one small spot, often with swelling. Pain that eases as you warm up points more toward shin splints. Pain that keeps building during a run, or shows up at rest or at night, points more toward a stress fracture. Pain at the back of the heel instead of the shin is a different problem, usually the Achilles tendon; see [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/) if that is where yours sits.
+
+A commonly cited home check is a single-leg hop that reproduces sharp, localized pain, suggesting fracture. But a 2011 review in American Family Physician found no recent evidence validating its accuracy, and a positive hop test was also seen in nearly half of confirmed shin splints patients. So a positive hop is a reason to see a clinician, not a reliable way to rule a fracture in or out on your own.
+
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+
+### Can you keep running with shin splints?
+
+There is no trial that tells you exactly how much to cut back. What has some support is the shape of a graded running program: in the only randomized trial, all three study groups followed a progressive return to running, and all three improved at about the same rate. The running program, not the added exercises or compression, was the constant.
+
+Sharp pain during a run, pain that gets worse as you go, or pain at rest are reasons to stop and have it checked instead of running through it. If the pain eases with warm-up and stays manageable, a shorter or easier run at a lower frequency is a reasonable middle ground while the shin adapts. Rest days between runs give the bone time to respond to the load.
+
+The 10% rule, adding no more than 10% to your weekly mileage, is a commonly cited heuristic but not a proven one. A 2008 trial of 532 new runners found no injury-rate difference between a program built on the 10% rule and a faster one. What a 2014 study of 874 runners did show is that big, sudden jumps in distance come with more injuries. Gradual is better than sudden, but a specific percentage does not have trial backing. [Heel pain from running](https://walkito.site/heel-pain-runners/) covers the same load-management thinking in more detail.
+
+Source: Moen MH, Holtslag L, Bakker E, et al. The treatment of medial tibial stress syndrome in athletes; a randomized clinical trial. Sports Medicine, Arthroscopy, Rehabilitation, Therapy & Technology. 2012;4:12.
+Source: Buist I, Bredeweg SW, van Mechelen W, Lemmink KAPM, Pepping GJ, Diercks RL. No effect of a graded training program on the number of running-related injuries in novice runners: a randomized controlled trial. American Journal of Sports Medicine. 2008;36(1):33–39.
+Source: Nielsen RØ, Parner ET, Nohr EA, Sørensen H, Lind M, Rasmussen S. Excessive progression in weekly running distance and risk of running-related injuries: an association which varies according to type of injury. Journal of Orthopaedic & Sports Physical Therapy. 2014;44(10):739–747.
+
+### What changes to training actually prevent shin splints from coming back?
+
+No single exercise has been shown to prevent shin splints in a trial. The risk factors identified in two independent meta-analyses point toward general training-load management and gradual progression instead of any one stretch or strengthening move. The consistent risk factors across both reviews were higher BMI, greater navicular drop (how much the arch flattens under load), female sex, fewer years of running experience, and a previous history of shin splints.
+
+A general pattern for returning to running: pain-free walking first, then easy jogging on soft surfaces with rest days between, then gradually longer runs while mornings stay pain-free. Any day that reproduces sharp or focal pain, or pain that builds during the run instead of easing with warm-up, is a stop signal, not a push-through signal.
+
+Source: Newman P, Witchalls J, Waddington G, Adams R. Risk factors associated with medial tibial stress syndrome in runners: a systematic review and meta-analysis. Open Access Journal of Sports Medicine. 2013;4:229–241.
+Source: Hamstra-Wright KL, Huxel Bliven KC, Bay C. Risk factors for medial tibial stress syndrome in physically active individuals such as runners and military personnel: a systematic review and meta-analysis. British Journal of Sports Medicine. 2015;49(6):362–369.
+
+### How long do shin splints take to improve?
+
+Sources vary and none point to a single trial-backed number. General overuse-injury guidance is that mild cases ease within a few weeks of reduced activity, while cases tied to recurring training errors can take longer if the same load returns before the tissue has adapted.
+
+In the randomized trial of 74 athletes with shin splints, the mean time to complete the running program was about 102 to 118 days across the three groups (overall mean 105 days), though the range was wide.
+
+Because shin splints and tibial stress fractures sit on the same continuum, pain that does not improve after a few weeks of lighter running and rest days is a reason to have it looked at instead of waiting longer. The clearest sign of recovery is pain-free walking and then pain-free easy jogging, in that order, before mileage goes back up.
+
+Source: Moen MH, Holtslag L, Bakker E, et al. The treatment of medial tibial stress syndrome in athletes; a randomized clinical trial. Sports Medicine, Arthroscopy, Rehabilitation, Therapy & Technology. 2012;4:12.
+
+### See a clinician first if
+
+- pain is focal and pinpoint, localized to one small spot on the bone rather than spread along several inches
+- pain builds during a run instead of easing with warm-up
+- you have pain at rest or at night
+- the shin is swollen over a specific spot
+- a single-leg hop reproduces sharp, localized pain
+- exercise-induced tightness, numbness or tingling in the lower leg or foot that builds during activity and goes away within minutes of stopping, which can be a sign of compartment syndrome
+- pain that has not eased after several weeks of reduced running and rest days
+- you cannot put weight on the leg, or you are limping
+- the lower leg is red, warm, or you have a fever or feel unwell
+
+### Doing it as a plan
+
+Walkito has no dedicated shin splints program, and this page explains why: no exercise program has been proven to speed recovery from shin splints in a trial. What Walkito does have is calf, ankle and balance work that targets the same muscles researchers have studied, plus a plan that adapts to how each morning feels.
+
+#### What is the fastest way to get rid of shin splints?
+
+No trial has shown that one exercise or stretch speeds up recovery from shin splints. The closest evidence comes from a randomized trial of 74 athletes where adding calf stretching and strengthening to a graded running program did not shorten recovery over the running program alone. Cutting back the running load that caused it is still the main lever, not a specific exercise.
+
+#### Do stretches actually help shin splints?
+
+A 2013 systematic review of 11 treatment trials found stretching and strengthening exercises "have not been proven to be effective" for shin splints at the evidence level available. That does not mean stretching is harmful, just that no good-quality trial has shown it changes the course of the condition. Calf stretches are still commonly recommended and are unlikely to make things worse.
+
+#### Should you keep running with shin splints?
+
+Nothing in the trial evidence tells you an exact mileage to cut to. What the only randomized trial showed is that a graded, progressive return to running worked about equally well across all three study arms. Sharp pain during a run, pain that gets worse as you go, or pain at rest are reasons to stop and have it checked instead of pushing through it.
+
+#### Can shin splints turn into a stress fracture?
+
+Shin splints and tibial stress fractures are generally described as different points on the same continuum of bone stress injury. Unmanaged shin splints can progress toward a stress fracture under continued load. That is the main reason to change the training load early instead of continuing to run through it.
+
+#### What causes shin splints in runners?
+
+Two independent meta-analyses found a consistent set of risk factors: higher BMI, greater navicular drop (how much the arch flattens under load), female sex, fewer years of running experience, and a previous history of shin splints. A separate case-control study found runners with shin splints had lower calf endurance, suggesting a plantar-flexor deficit may be part of the picture.
+
+#### Does a specific exercise prevent shin splints from coming back?
+
+No single exercise has trial-level evidence for preventing shin splints. The risk factors from two meta-analyses, including BMI, arch drop and running experience, point toward gradual training-load management and general lower-leg conditioning instead of one particular move. That is a less satisfying answer than a named exercise, but it is what the research supports.
 
 ## Упражнения и растяжка при плантарном фасциите и боли в пятке
 

@@ -105,6 +105,70 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.2174/1874325001711010714',
     pmid: '28979585',
   },
+  {
+    text: 'Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.',
+    doi: '10.1002/rnj.166',
+    pmid: '25041875',
+  },
+  {
+    text: 'Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.',
+    doi: '10.2106/00004623-200305000-00015',
+    pmid: '12728038',
+  },
+  {
+    text: 'Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.',
+    doi: '10.1177/00187208211022126',
+    pmid: '34078143',
+  },
+  {
+    text: 'Patel A, DiGiovanni B. Association between plantar fasciitis and isolated contracture of the gastrocnemius. Foot & Ankle International. 2011;32(1):5–8.',
+    doi: '10.3113/FAI.2011.0005',
+    pmid: '21288428',
+  },
+  {
+    text: 'Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliability and normative values for the standing heel-rise test in healthy adults. Physiotherapy. 2017;103(4):446–452.',
+    doi: '10.1016/j.physio.2017.03.002',
+    pmid: '28886865',
+  },
+  {
+    text: 'Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.',
+    doi: '10.1136/bjsm.2007.039545',
+    pmid: '18184750',
+  },
+  {
+    text: 'van der Vlist AC, Winters M, Weir A, et al. Which treatment is most effective for patients with Achilles tendinopathy? A living systematic review with network meta-analysis of 29 randomised controlled trials. British Journal of Sports Medicine. 2021;55(5):249–256.',
+    doi: '10.1136/bjsports-2019-101872',
+    pmid: '32522732',
+  },
+  {
+    text: 'Winters M, Eskes M, Weir A, Moen MH, Backx FJG, Bakker EWP. Treatment of medial tibial stress syndrome: a systematic review. Sports Medicine. 2013;43(12):1315–1333.',
+    doi: '10.1007/s40279-013-0087-0',
+    pmid: '23979968',
+  },
+  {
+    text: 'Moen MH, Holtslag L, Bakker E, et al. The treatment of medial tibial stress syndrome in athletes; a randomized clinical trial. Sports Medicine, Arthroscopy, Rehabilitation, Therapy & Technology. 2012;4:12.',
+    doi: '10.1186/1758-2555-4-12',
+    pmid: '22464032',
+  },
+  {
+    text: 'Newman P, Witchalls J, Waddington G, Adams R. Risk factors associated with medial tibial stress syndrome in runners: a systematic review and meta-analysis. Open Access Journal of Sports Medicine. 2013;4:229–241.',
+    doi: '10.2147/OAJSM.S39331',
+    pmid: '24379729',
+  },
+  {
+    text: 'Hamstra-Wright KL, Huxel Bliven KC, Bay C. Risk factors for medial tibial stress syndrome in physically active individuals such as runners and military personnel: a systematic review and meta-analysis. British Journal of Sports Medicine. 2015;49(6):362–369.',
+    doi: '10.1136/bjsports-2014-093462',
+    pmid: '25185588',
+  },
+  {
+    text: 'Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint plantar flexor muscles in athletes with medial tibial stress syndrome: a case-control study. Journal of Science and Medicine in Sport. 2007;10(6):356–362.',
+    doi: '10.1016/j.jsams.2006.12.115',
+    pmid: '17336155',
+  },
+  {
+    text: 'Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.',
+    pmid: '21888126',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -126,6 +190,19 @@ export const CITE = {
   latt: 14,
   menz: 15,
   ling: 16,
+  waters: 17,
+  riddle: 18,
+  garcia: 19,
+  patelGastrocnemius: 20,
+  hebertLosier: 21,
+  jonsson: 22,
+  vanDerVlist: 23,
+  winters: 24,
+  moen: 25,
+  newman: 26,
+  hamstraWright: 27,
+  madeley: 28,
+  patelStressFracture: 29,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

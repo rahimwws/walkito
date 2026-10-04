@@ -9,7 +9,8 @@ import { ExerciseMedia } from '@/components/ExerciseMedia';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose, typeset } from '@/components/Prose';
-import { GUIDES, type Guide as GuideData } from '@/lib/guides';
+import { guidePath, relatedGuides, type Guide as GuideData } from '@/lib/guides';
+import { isTranslatedPage } from '@/lib/i18n';
 import type { GuideTable } from '@/lib/guides/types';
 import { CHROME, TRANSLATED } from '@/lib/i18n';
 import { articleSchema, faqSchema } from '@/lib/schema';
@@ -101,7 +102,7 @@ function Table({ table }: { table: GuideTable }) {
  */
 export function Guide({ guide }: { guide: GuideData }) {
   const c = CHROME[guide.lang];
-  const url = `${SITE_URL}${TRANSLATED[guide.page][guide.lang]}`;
+  const url = `${SITE_URL}${guidePath(guide)}`;
   const cited = [
     ...new Set([...guide.sections.flatMap((s) => s.cites ?? []), ...guide.faq.flatMap((q) => q.cites ?? [])]),
   ].sort((a, b) => a - b);
@@ -109,7 +110,7 @@ export function Guide({ guide }: { guide: GuideData }) {
   const article = articleSchema({
     headline: guide.title,
     description: guide.description,
-    path: TRANSLATED[guide.page][guide.lang],
+    path: guidePath(guide),
     lang: guide.lang,
     published: guide.published,
     updated: guide.updated,
@@ -119,9 +120,7 @@ export function Guide({ guide }: { guide: GuideData }) {
   // The other guides in the same language. Linked from the body of the page,
   // not only the footer: a link a reader can see in context is one a crawler
   // weighs as a real recommendation.
-  const related = (Object.keys(GUIDES) as (keyof typeof GUIDES)[])
-    .filter((page) => page !== guide.page)
-    .map((page) => GUIDES[page][guide.lang]);
+  const related = relatedGuides(guide);
 
   const breadcrumbs = {
     '@context': 'https://schema.org',
@@ -294,7 +293,7 @@ export function Guide({ guide }: { guide: GuideData }) {
           <ul>
             {related.map((g) => (
               <li key={g.page}>
-                <a href={TRANSLATED[g.page][g.lang]}>{g.h1}</a>
+                <a href={guidePath(g)}>{g.h1}</a>
                 <span>{g.description}</span>
               </li>
             ))}
@@ -302,7 +301,7 @@ export function Guide({ guide }: { guide: GuideData }) {
         </nav>
       </Prose>
 
-      <Footer lang={guide.lang} page={guide.page} />
+      <Footer lang={guide.lang} page={isTranslatedPage(guide.page) ? guide.page : undefined} />
     </>
   );
 }

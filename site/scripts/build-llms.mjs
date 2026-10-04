@@ -69,8 +69,11 @@ async function load(path) {
 }
 
 const { SITE_URL, SITE_NAME, PROGRAM, PAGE_UPDATED, SUPPORT_EMAIL } = await load('lib/site.ts');
-const { TRANSLATED } = await load('lib/i18n.ts');
-const { GUIDES } = await load('lib/guides/index.ts');
+const { TRANSLATED, EN_ONLY } = await load('lib/i18n.ts');
+const { GUIDES, ARTICLES_EN } = await load('lib/guides/index.ts');
+const ARTICLES = Object.values(ARTICLES_EN);
+/** A guide's path, translated or English-only. */
+const pathOf = (g) => (TRANSLATED[g.page] ? TRANSLATED[g.page][g.lang] : EN_ONLY[g.page]);
 const { ABOUT } = await load('lib/about/index.ts');
 const { FAQ } = await load('lib/faq.ts');
 const { CITATIONS } = await load('lib/citations.ts');
@@ -103,6 +106,7 @@ const or = (xs) => `${xs.slice(0, -1).join(', ')} or ${xs[xs.length - 1]}`;
 const newest = [
   ...Object.values(PAGE_UPDATED),
   ...Object.values(GUIDES).flatMap((byLang) => Object.values(byLang).map((g) => g.updated)),
+  ...ARTICLES.map((g) => g.updated),
 ]
   .filter(Boolean)
   .sort()
@@ -110,7 +114,10 @@ const newest = [
 
 // ─── Checks on the sources ──────────────────────────────────────────────────
 
-const guides = Object.values(GUIDES).flatMap((byLang) => ['en', 'ru', 'es'].map((lang) => byLang[lang]));
+const guides = [
+  ...Object.values(GUIDES).flatMap((byLang) => ['en', 'ru', 'es'].map((lang) => byLang[lang])),
+  ...ARTICLES,
+];
 for (const g of guides) {
   if (isPlaceholder(g) || !g.lede || !g.sections?.length) {
     throw new Error(`llms: guide ${g?.page}/${g?.lang} has no text — refusing to write a short file`);
@@ -158,7 +165,7 @@ const FINDINGS = [
 
 // ─── llms.txt ───────────────────────────────────────────────────────────────
 
-const guideLine = (g) => `- [${g.h1}](${url(TRANSLATED[g.page][g.lang])}): ${plain(g.description)}`;
+const guideLine = (g) => `- [${g.h1}](${url(pathOf(g))}): ${plain(g.description)}`;
 
 const otherLanguage = (lang) => {
   const heel = GUIDES.heelPain[lang];
@@ -186,6 +193,7 @@ Last updated: ${newest}
 ## Guides
 ${guideLine(GUIDES.heelPain.en)}
 ${guideLine(GUIDES.flatFeet.en)}
+${ARTICLES.map(guideLine).join('\n')}
 
 ## The app and the evidence
 - [Home](${url('/')}): what Walkito is and how the plan works, in brief
@@ -245,7 +253,7 @@ function guideText(g) {
     '',
     [
       `Language: ${LANG_LABEL[g.lang]}`,
-      url(TRANSLATED[g.page][g.lang]),
+      url(pathOf(g)),
       g.published && `published ${g.published}`,
       g.updated && `updated ${g.updated}`,
     ]
@@ -282,7 +290,12 @@ function aboutText(a) {
   return out.join('\n');
 }
 
-const guideOrder = ['en', 'ru', 'es'].flatMap((lang) => [GUIDES.heelPain[lang], GUIDES.flatFeet[lang]]);
+const guideOrder = [
+  GUIDES.heelPain.en,
+  GUIDES.flatFeet.en,
+  ...ARTICLES,
+  ...['ru', 'es'].flatMap((lang) => [GUIDES.heelPain[lang], GUIDES.flatFeet[lang]]),
+];
 
 const full = `# ${SITE_NAME}: full text
 

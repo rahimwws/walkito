@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
-import { CHROME, LANG_NAMES, LANGS, TRANSLATED, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { ARTICLES_EN } from '@/lib/guides/articles-en';
+import { CHROME, EN_ONLY, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
 import { SocialLinks } from '@/components/SocialLinks';
 
 /**
@@ -25,6 +26,16 @@ export function Footer({ lang = 'en', page }: { lang?: Lang; page?: TranslatedPa
         <nav aria-label={c.guidesHeading}>
           <Link href={TRANSLATED.flatFeet[lang]}>{c.navFlatFeet}</Link>
           <Link href={TRANSLATED.heelPain[lang]}>{c.navHeelPain}</Link>
+          {lang === 'en' && (
+            <>
+              <Link href="/heel-pain-runners/">Heel pain from running</Link>
+              {Object.values(ARTICLES_EN).map((g) => (
+                <Link key={g.page} href={EN_ONLY[g.page as EnglishPage]}>
+                  {g.crumb}
+                </Link>
+              ))}
+            </>
+          )}
           <Link href={TRANSLATED.about[lang]}>{c.navAbout}</Link>
           <Link href={TRANSLATED.support[lang]}>{c.navSupport}</Link>
           <Link href={TRANSLATED.privacy[lang]}>{c.navPrivacy}</Link>

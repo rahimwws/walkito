@@ -149,6 +149,23 @@ export const TRANSLATED = {
 export type TranslatedPage = keyof typeof TRANSLATED;
 
 /**
+ * Articles that exist in English only, for now. No hreflang, no language
+ * switcher: a page claims a translation only once one is written.
+ */
+export const EN_ONLY = {
+  standing: '/feet-hurt-standing-all-day/',
+  calfRaises: '/calf-raises-plantar-fasciitis/',
+  achilles: '/achilles-tendonitis-exercises/',
+  shinSplints: '/shin-splints-exercises/',
+} as const;
+
+export type EnglishPage = keyof typeof EN_ONLY;
+
+export function isTranslatedPage(page: TranslatedPage | EnglishPage): page is TranslatedPage {
+  return page in TRANSLATED;
+}
+
+/**
  * `alternates` for a translated page's metadata: its own canonical, and every
  * language version including itself, plus `x-default` on English.
  */
