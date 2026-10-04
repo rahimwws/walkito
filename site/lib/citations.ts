@@ -169,6 +169,50 @@ export const CITATIONS: readonly Citation[] = [
     text: 'Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.',
     pmid: '21888126',
   },
+  {
+    text: 'Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.',
+    doi: '10.1177/2325967118757983',
+    pmid: '29536022',
+  },
+  {
+    text: 'Amaha K, Arimoto T, Kitamura N. Effect of toe exercises and toe grip strength on the treatment of primary metatarsalgia. Journal of Orthopaedic Surgery and Research. 2020;15(1):580.',
+    doi: '10.1186/s13018-020-02113-7',
+    pmid: '33267902',
+  },
+  {
+    text: 'Reed LF, Battistutta D, Young J, Newman B. Prevalence and risk factors for foot and ankle musculoskeletal disorders experienced by nurses. BMC Musculoskeletal Disorders. 2014;15:196.',
+    doi: '10.1186/1471-2474-15-196',
+    pmid: '24902582',
+  },
+  {
+    text: 'Tojo M, Yamaguchi S, Amano N, et al. Prevalence and associated factors of foot and ankle pain among nurses at a university hospital in Japan: a cross-sectional study. Journal of Occupational Health. 2018;60(2):132–139.',
+    doi: '10.1539/joh.17-0174-OA',
+    pmid: '29151449',
+  },
+  {
+    text: 'Stolt M, Suhonen R, Kielo E, Katajisto J, Leino-Kilpi H. Foot health of nurses: a cross-sectional study. International Journal of Nursing Practice. 2017;23(4):e12560.',
+    doi: '10.1111/ijn.12560',
+    pmid: '28631438',
+  },
+  {
+    text: 'Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert statement on the growing case for change towards better health and productivity. British Journal of Sports Medicine. 2015;49(21):1357–1362.',
+    doi: '10.1136/bjsports-2015-094618',
+    pmid: '26034192',
+  },
+  {
+    text: 'Karakolis T, Callaghan JP. The impact of sit-stand office workstations on worker discomfort and productivity: a review. Applied Ergonomics. 2014;45(3):799–806.',
+    doi: '10.1016/j.apergo.2013.10.001',
+    pmid: '24157240',
+  },
+  {
+    text: 'Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.',
+    doi: '10.1016/j.gaitpost.2017.08.024',
+    pmid: '28863296',
+  },
+  {
+    text: 'Chang J, Cho E. Nurses\' steps, distance traveled, and perceived physical demands in a three-shift schedule. Human Resources for Health. 2022;20:72.',
+    doi: '10.1186/s12960-022-00768-3',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -203,6 +247,15 @@ export const CITE = {
   hamstraWright: 27,
   madeley: 28,
   patelStressFracture: 29,
+  hansen: 30,
+  amaha: 31,
+  reedNurse: 32,
+  tojo: 33,
+  stoltNurse: 34,
+  buckley: 35,
+  karakolis: 36,
+  coenen: 37,
+  changCho: 38,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

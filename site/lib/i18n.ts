@@ -157,6 +157,13 @@ export const EN_ONLY = {
   calfRaises: '/calf-raises-plantar-fasciitis/',
   achilles: '/achilles-tendonitis-exercises/',
   shinSplints: '/shin-splints-exercises/',
+  morningHeelPain: '/heel-pain-in-the-morning/',
+  pfDuration: '/how-long-does-plantar-fasciitis-last/',
+  ballOfFoot: '/ball-of-foot-pain/',
+  nurses: '/nurses-foot-pain/',
+  standingDesk: '/standing-desk-foot-pain/',
+  bestApp: '/best-app-for-plantar-fasciitis/',
+  vsExakt: '/walkito-vs-exakt-health/',
 } as const;
 
 export type EnglishPage = keyof typeof EN_ONLY;

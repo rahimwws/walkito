@@ -66,6 +66,15 @@ Sources:
 - Hamstra-Wright KL, Huxel Bliven KC, Bay C. Risk factors for medial tibial stress syndrome in physically active individuals such as runners and military personnel: a systematic review and meta-analysis. British Journal of Sports Medicine. 2015;49(6):362–369.
 - Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint plantar flexor muscles in athletes with medial tibial stress syndrome: a case-control study. Journal of Science and Medicine in Sport. 2007;10(6):356–362.
 - Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+- Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
+- Amaha K, Arimoto T, Kitamura N. Effect of toe exercises and toe grip strength on the treatment of primary metatarsalgia. Journal of Orthopaedic Surgery and Research. 2020;15(1):580.
+- Reed LF, Battistutta D, Young J, Newman B. Prevalence and risk factors for foot and ankle musculoskeletal disorders experienced by nurses. BMC Musculoskeletal Disorders. 2014;15:196.
+- Tojo M, Yamaguchi S, Amano N, et al. Prevalence and associated factors of foot and ankle pain among nurses at a university hospital in Japan: a cross-sectional study. Journal of Occupational Health. 2018;60(2):132–139.
+- Stolt M, Suhonen R, Kielo E, Katajisto J, Leino-Kilpi H. Foot health of nurses: a cross-sectional study. International Journal of Nursing Practice. 2017;23(4):e12560.
+- Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert statement on the growing case for change towards better health and productivity. British Journal of Sports Medicine. 2015;49(21):1357–1362.
+- Karakolis T, Callaghan JP. The impact of sit-stand office workstations on worker discomfort and productivity: a review. Applied Ergonomics. 2014;45(3):799–806.
+- Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+- Chang J, Cho E. Nurses' steps, distance traveled, and perceived physical demands in a three-shift schedule. Human Resources for Health. 2022;20:72.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
@@ -834,6 +843,1042 @@ Two independent meta-analyses found a consistent set of risk factors: higher BMI
 #### Does a specific exercise prevent shin splints from coming back?
 
 No single exercise has trial-level evidence for preventing shin splints. The risk factors from two meta-analyses, including BMI, arch drop and running experience, point toward gradual training-load management and general lower-leg conditioning instead of one particular move. That is a less satisfying answer than a named exercise, but it is what the research supports.
+
+## Heel pain in the morning: why it happens and what to do before your first step
+
+Language: English · https://walkito.site/heel-pain-in-the-morning/ · published 2026-10-04 · updated 2026-10-04
+
+Your first steps out of bed are the worst part of the day. That sharp pull at the heel, before you have even stood up straight, is the pattern most people describe when they look up heel pain. The most common cause is plantar fasciitis, but it is not the only one, and the morning is the most useful moment to do something about it.
+
+- Morning heel pain is the hallmark of plantar fasciitis: the 2023 heel pain guideline describes it as pain "most noticeable with weight bearing first thing in the morning or after a period of rest" (Koc and colleagues, 2023).
+- Stretching the plantar fascia before you stand up is graded **A**, the guideline's top grade. Night splints, worn for 1 to 3 months, also get an **A** for persistent first-step pain (Koc and colleagues, 2023).
+- Other conditions that hurt in the morning include Achilles tendonitis (back of the heel), heel fat pad thinning (deep central ache), calcaneal stress fracture (builds with activity, may hurt at rest), and inflammatory arthritis (both heels plus prolonged morning stiffness in other joints).
+- In a cohort of 174 people with plantar fasciitis, bilateral heel pain was a significant predictor of longer symptom duration, and the authors noted that unrecognized systemic inflammatory disease could partly explain that finding (Hansen and colleagues, 2018).
+- Morning pain on a 0 to 10 scale is the clearest day-to-day signal of whether the foot is improving or not.
+
+### Why is heel pain worse in the morning?
+
+The plantar fascia, the thick band of tissue that runs from your heel bone to your toes, stiffens while you sleep. Your foot usually points downward at rest, which lets the fascia shorten. When you stand up and flatten the foot under your full weight, that shortened tissue stretches suddenly. The result is a sharp pull at the inside of the heel.
+
+The 2023 heel pain guideline describes this as pain "most noticeable with weight bearing first thing in the morning or after a period of rest." The same pattern happens after you sit for a while and then stand, for the same reason: the tissue shortens at rest, then loads abruptly.
+
+This is not new damage happening each morning. The tissue is stiff, not tearing. Once you have taken a few steps and the fascia warms up, the pain usually eases. That warm-up effect is one of the things that separates plantar fasciitis from some of the other causes below.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### What else causes heel pain in the morning?
+
+Plantar fasciitis is the most common cause of morning heel pain, but it is not the only one. The location and behavior of the pain help tell them apart.
+
+**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon stiffens overnight just as the plantar fascia does, so first-step stiffness is common. It usually improves with walking and then worsens again with prolonged activity. If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/).
+
+**Heel fat pad thinning.** The fat pad under your heel bone acts as a cushion. When it thins or shifts, the bone takes more impact directly.
+
+A 2022 scoping review noted that fat pad pain tends to be a deep ache in the center of the heel, feels worse on hard surfaces and with barefoot walking, and can be difficult to tell apart from plantar fasciitis without imaging (Chang and colleagues, 2022). The key difference: plantar fasciitis pain is usually sharpest at the inside front of the heel, while fat pad pain sits right under the center.
+
+**Calcaneal stress fracture.** Pain that comes on gradually, usually after a jump in activity. Unlike plantar fasciitis, stress fracture pain tends to build with activity instead of easing once you warm up, and it can hurt at rest or at night. If squeezing the sides of the heel reproduces the pain, see a clinician before exercising the foot. [Heel pain from running](https://walkito.site/heel-pain-runners/) covers how sudden load changes affect the heel.
+
+**Inflammatory arthritis (a red flag).** When both heels hurt in the morning, the stiffness lasts more than 30 minutes, and other joints are also stiff or swollen, the pattern moves away from plantar fasciitis and toward something a clinician should check. Conditions like psoriatic arthritis or ankylosing spondylitis can cause pain where tendons attach to bone, including the heel.
+
+In a cohort of 174 people with plantar fasciitis followed for a mean of 9.7 years, bilateral heel pain was a significant predictor of worse long-term prognosis, and the authors noted that some unrecognized systemic inflammatory disease could partly explain that finding (Hansen and colleagues, 2018). If both heels hurt and other joints are involved, see a clinician first.
+
+Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
+Source: Chang AH, Rasmussen SZ, Jensen AE, Sørensen T, Rathleff MS. What do we actually know about a common cause of plantar heel pain? A scoping review of heel fat pad syndrome. Journal of Foot and Ankle Research. 2022;15(1):60.
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
+
+### What can you do before your first step?
+
+The most useful thing you can do for morning heel pain happens before your foot touches the floor. The 2023 heel pain guideline gives plantar fascia and calf stretching its top grade, **A**, and the morning is the single most repeated context in which it recommends stretching.
+
+Sit on the edge of the bed. Cross one ankle over the opposite knee and pull the toes back gently with one hand until you feel a stretch along the arch. Hold for about 10 seconds, then release. Do that 10 times on each foot. This loads the fascia slowly, in a controlled way, before you ask it to take your full weight.
+
+Follow with a calf stretch. Stand near the bed or a wall, one foot behind the other, back heel on the floor, and lean forward until you feel the stretch in the upper calf. Hold for 30 seconds each side.
+
+Tight calves pull on the heel through the Achilles tendon, and reduced ankle flexibility is one of the strongest independent risk factors for plantar fasciitis: in a matched case-control study of 50 cases and 100 controls, it had the highest odds ratio of any measured factor (Riddle and colleagues, 2003).
+
+Then put on supportive shoes or firm-soled slippers before walking to the kitchen. Barefoot on a hard floor is the worst combination for a stiff fascia. These morning stretches are the starting point. The longer-term plan adds strength work: [calf raises for plantar fasciitis](https://walkito.site/calf-raises-plantar-fasciitis/) are the exercise with the most direct trial evidence behind them.
+
+- **Plantar fascia stretch (seated, before standing)** (10 holds of 10 seconds, each foot): Sit on the bed. Cross one ankle over the other knee. Pull the toes back gently until you feel a stretch along the arch. Hold, then release.
+- **Calf stretch (straight knee)** (3 holds of 30 seconds, each leg): Hands on a wall. Back leg straight, heel down, hips forward. Hold until you feel the stretch in the upper calf.
+- **Soleus stretch (bent knee)** (3 holds of 30 seconds, each leg): Same position as the calf stretch, then bend the back knee until you feel the stretch lower, near the heel. The soleus, the deeper calf muscle, only releases with the knee bent.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Do night splints help morning heel pain?
+
+Night splints hold the foot at a right angle while you sleep, so the plantar fascia and calf stay gently lengthened instead of shortening overnight. The idea is simple: if morning pain comes from the fascia stiffening at rest, keeping it stretched should take some of that first-step shock away.
+
+The 2023 heel pain guideline gives night splints a grade of **A** for people whose first steps in the morning keep hurting despite stretching and other conservative care. The recommended duration is 1 to 3 months. Most night splints are a rigid or semi-rigid boot that props the foot up.
+
+Some people find them uncomfortable to sleep in, and the guideline does not suggest them as a first step for everyone. They are for the group that has already been stretching and still wakes up in pain.
+
+Night splints are something to talk over with a clinician. They are not an exercise, and no app can provide them. But they are worth knowing about because they have one of the strongest evidence grades in the guideline, specifically for the problem this page is about: first-step pain that will not settle.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Should you wear shoes at home if your heels hurt?
+
+Walking barefoot on a hard floor puts the plantar fascia under its maximum stretch with no cushion underneath. For someone whose fascia is already irritated, this is the worst combination, and it usually happens right after the morning stretch when the tissue is still warming up.
+
+Supportive shoes or firm-soled slippers at home keep the arch slightly lifted and cushion the heel. The 2023 guideline recommends footwear education as part of the overall approach, and reduced ankle flexibility, meaning how far the foot bends up toward the shin, is one of the strongest risk factors for plantar fasciitis. A shoe with a small heel-to-toe drop helps compensate for a tight calf.
+
+This does not need to be a special shoe. Any sneaker or house shoe with a firm sole and some arch support is better than bare feet on tile or hardwood. If your pain is worse at home than outside, this is often why. Standing all day on hard surfaces causes a related problem: [feet hurt from standing all day](https://walkito.site/feet-hurt-standing-all-day/) covers the exercises and footwear for that.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### How does morning pain show whether things are getting better?
+
+Morning pain is the clearest day-to-day signal of how a foot is doing. A run might feel fine but leave the fascia overloaded, and you will not know until the next morning. A long shift on your feet may feel tolerable, but the next morning tells you whether it was too much. The pattern is simple: if your first steps the next morning are worse than usual, yesterday asked more of the foot than it could handle.
+
+That is why a daily morning pain score, 0 to 10, is more useful than checking pain during the day. Daytime pain rises and falls with activity, posture, and shoes. Morning pain measures the same thing, in the same way, at roughly the same time every day. When the number drops over weeks, the foot is gaining ground. When it spikes, something in the past day or two pushed too far.
+
+Walkito asks for a morning pain score before every session. If the score is 7 or higher, the day becomes a gentle session: only seated, low-load exercises that do not stress the fascia, capped at 3 minutes. If the score is 3 or more points above the 7-day average, the app steps each exercise down one level. If yesterday had more hours on your feet than usual, a strength session converts to a lighter recovery one.
+
+The goal is morning pain at or under 1 out of 10 for 14 days in a row. That trend, not any single reading, is what tells you the foot is ready for the next stage.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### See a clinician first if
+
+- both heels hurt and morning stiffness lasts more than 30 minutes, especially if other joints are stiff or swollen
+- the pain followed an injury or a fall, which can indicate a plantar fascia tear
+- you cannot put weight on the foot, or you are limping
+- squeezing the sides of the heel reproduces the pain, which can point toward a stress fracture
+- it comes with numbness, tingling or burning, which can point to nerve entrapment
+- the heel is red, warm to the touch, or you have a fever
+- it wakes you at night or is present at rest, not just on first steps
+- it has not improved after several weeks of daily stretching and a lighter load
+- you have diabetes, reduced feeling in your feet or poor circulation
+
+### Doing it as a plan
+
+You do not have to remember the stretches, the doses or when to move to something harder. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1 out of 10 for 14 days in a row. Every morning you log your pain before your first step, and the day's session adjusts to that score.
+
+#### Why does my heel hurt only in the morning?
+
+The plantar fascia, the thick band of tissue under your foot, stiffens and shortens while you sleep. Your first steps stretch it under your full weight. The 2023 heel pain guideline describes this as pain "most noticeable with weight bearing first thing in the morning or after a period of rest." Once you walk for a few minutes the tissue warms up and the pain usually eases.
+
+#### Should I stretch before getting out of bed?
+
+Yes. The 2023 heel pain guideline gives plantar fascia and calf stretching its top grade, A, and the morning is the context it most often names. Sit on the edge of the bed, cross one ankle over the other knee, and pull the toes back gently for about 10 seconds, 10 times each foot. This loads the fascia slowly before you ask it to take your full weight.
+
+#### Is morning heel pain always plantar fasciitis?
+
+Not always. Achilles tendonitis (pain at the back of the heel), heel fat pad thinning (deep central ache, worse barefoot on hard surfaces), calcaneal stress fracture (builds with activity, may hurt at rest), and inflammatory arthritis (both heels, prolonged stiffness, other joints involved) can all cause morning pain. Location and behavior help tell them apart, but a clinician makes the call.
+
+#### Do night splints work for morning heel pain?
+
+The 2023 heel pain guideline gives night splints a grade of A, its top grade, for people whose first steps keep hurting despite stretching. Night splints hold the foot at a right angle overnight so the fascia stays gently lengthened instead of shortening. The recommended duration is 1 to 3 months. They are worth discussing with a clinician if stretching alone is not enough.
+
+#### Why does my heel hurt again after sitting?
+
+The same reason it hurts in the morning. The plantar fascia shortens and stiffens when the foot is unloaded, whether you are asleep or just sitting at a desk. When you stand up, it stretches suddenly. The guideline calls this "first-step pain after a period of rest." Doing a brief fascia stretch before standing can help.
+
+#### When should I see a doctor about morning heel pain?
+
+See a clinician if both heels hurt and morning stiffness lasts more than 30 minutes, if the pain followed an injury, if it is getting worse week over week, if it keeps you up at night, if squeezing the sides of the heel reproduces it, or if it comes with numbness, swelling or warmth. These patterns can point to something besides plantar fasciitis.
+
+#### How long does first-step pain take to get better?
+
+A 2020 review reports that about 90 percent of people with plantar fasciitis improve with non-surgical care, often within several months (Latt and colleagues, 2020). In a longer follow-up of 174 patients, about half were still symptomatic at 5 years, though most had only minor pain by that point (Hansen and colleagues, 2018). No exercise program can promise a timeline. [How long plantar fasciitis lasts](https://walkito.site/how-long-does-plantar-fasciitis-last/) covers the evidence in more detail.
+
+## How long does plantar fasciitis last? What the evidence actually says
+
+Language: English · https://walkito.site/how-long-does-plantar-fasciitis-last/ · published 2026-10-04 · updated 2026-10-04
+
+The honest answer is: it depends, and most sources understate how much it varies. A 2020 review reports that about 90 percent of people get better with non-surgical care such as stretching and shoe inserts. A longer follow-up of 174 people tells a more nuanced story: about half were symptom-free by five years, and 46 percent still had some pain at a mean of ten years, though most of those reported only minor symptoms.
+
+- A 2020 review reports that about 90 percent of plantar fasciitis cases respond to non-surgical care, often within several months (Latt and colleagues, 2020).
+- A longer-term cohort of 174 patients found the risk of still having plantar fasciitis was 80.5 percent at one year, 50.0 percent at five years, and 45.6 percent at ten years from symptom onset (Hansen and colleagues, 2018).
+- Significant predictors of slower recovery in that cohort were being female and having bilateral heel pain. BMI, age, fascia thickness, and heel spurs had no significant effect on prognosis (Hansen and colleagues, 2018).
+- The 2023 heel pain guideline gives stretching a grade of **A** and strength training a **B**. Night splints for persistent morning pain and low-level laser or dry needling from a clinician both receive a **B** (Koc and colleagues, 2023).
+- Morning pain on a 0 to 10 scale, tracked daily, is the most practical way to see whether recovery is moving in the right direction.
+
+### How long does plantar fasciitis usually last?
+
+There is no single number. Recovery depends on how long you have had it, what you do about it, and some factors you cannot control.
+
+A 2020 review of the literature states that non-surgical approaches work for about 90 percent of people with plantar fasciitis, usually within three to six months (Latt and colleagues, 2020).
+
+A 2018 cohort study gives the longer view. Hansen and colleagues followed 174 patients diagnosed with plantar fasciitis by ultrasound for a mean of 9.7 years from the onset of symptoms. At follow-up, 54 percent were symptom-free and 46 percent still had some pain.
+
+The Kaplan-Meier analysis showed the risk of still having plantar fasciitis was 80.5 percent at one year, 50.0 percent at five years, and 45.6 percent at ten years. Among those who became symptom-free, the mean duration of symptoms was 725 days, roughly two years (Hansen and colleagues, 2018).
+
+Those numbers sound worse than the usual "it goes away in a few months." Two things explain the gap. First, the Hansen cohort was a referral population: 93 percent had received a cortisone injection, which suggests these were harder-to-manage cases, not people whose pain settled with stretching and better shoes.
+
+Second, the symptomatic patients at follow-up reported only minor pain on average, scoring about 2 to 3 out of 10 during walking. So "still symptomatic at ten years" does not necessarily mean "unable to walk." For many it meant occasional discomfort instead of the sharp first-step pain they started with.
+
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
+
+### Does plantar fasciitis go away on its own?
+
+Sometimes. Some people wake up one morning and the pain is gone, with no specific intervention. But "it resolves on its own" is not a useful prediction for any individual, because there is no way to know in advance whether you are in that group.
+
+What the evidence does say is that doing something about it, stretching, strengthening the calf, wearing supportive shoes, tends to bring the improvement forward. In the Rathleff trial, 48 people with plantar fasciitis were split into two groups: one did loaded heel raises with a towel under the toes, the other stretched the plantar fascia.
+
+The heel-raise group improved faster at three months. By a year, both groups were about even (Rathleff and colleagues, 2015). So the exercises did not produce a bigger final improvement, but they moved it forward. Whether it would have happened as quickly without either intervention is unknown.
+
+The 2023 guideline recommends stretching (grade A) and strength work (grade B) as the first things to try, alongside footwear advice. The guideline does not say "wait and see." It says "start these while monitoring" (Koc and colleagues, 2023). If the pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](https://walkito.site/achilles-tendonitis-exercises/) instead.
+
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### What predicts slower recovery?
+
+The Hansen 2018 cohort tested several baseline factors against how long symptoms lasted. Two came out significant.
+
+**Being female.** For every 100 men who became symptom-free per year, only 49 women did (hazard rate ratio 0.49, P less than 0.01). The reason is not established. The authors listed hormonal differences, footwear patterns, and physical factors as possibilities without evidence to pick among them (Hansen and colleagues, 2018).
+
+**Bilateral heel pain.** People who had pain in both heels at baseline had about a third the rate of becoming symptom-free per year compared to those with one-sided pain (hazard rate ratio 0.33, P less than 0.01).
+
+The authors noted that bilateral pain could reflect an unrecognized inflammatory condition, since pain at tendon-bone attachments on both sides is a feature of some forms of arthritis. Nobody in their cohort had a known inflammatory diagnosis, but no serological screening was done (Hansen and colleagues, 2018).
+
+BMI, age, smoking status, physically demanding work, fascia thickness on ultrasound, and the presence of a heel spur all had no significant effect on prognosis in that study. That last finding surprises many people: a heel spur did not make things last longer or shorter (P = 0.88). Earlier studies have also found no correlation between heel spurs and symptoms.
+
+If both heels hurt and morning stiffness lasts a long time or other joints are involved, that is worth mentioning to a clinician even if the exercises are helping. See [heel pain in the morning](https://walkito.site/heel-pain-in-the-morning/) for more on when bilateral pain is a red flag.
+
+Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
+
+### What does "chronic" plantar fasciitis mean?
+
+There is no single agreed definition. Some sources call plantar fasciitis chronic if it has lasted more than three months, others use six months. The 2023 guideline does not draw a line. A 2020 review defines chronic plantar fasciitis as "the most common cause of chronic heel pain in adults" without naming a cutoff in months (Latt and colleagues, 2020).
+
+What matters more than the label is the pattern. Chronic plantar fasciitis typically means the sharp first-step morning pain has become a duller, more constant ache. The tissue changes over time too: the word "fasciitis" implies inflammation, but chronic cases are usually described as a degenerative rather than inflammatory process. That is why cortisone injections, which target inflammation, often help in the short term but not long-term.
+
+If you have had plantar fasciitis for more than several months and it is not clearly getting better, the next section covers what the guideline recommends.
+
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### What are realistic milestones?
+
+No study gives a week-by-week timeline that applies to everyone, and any article that does is guessing. What the evidence does offer are a few markers that most people will recognize.
+
+**First weeks.** Morning pain may not change much. The Rathleff trial showed a meaningful difference between groups by three months, not three weeks. Early on, the main change is that the exercises become easier to do and the calf feels less tight. That is worth noticing even if the heel still hurts.
+
+**One to three months.** In the Rathleff trial, the heel-raise group scored 29 points better on the Foot Function Index than the stretching-only group at three months. That is a large, measurable difference. Many people start to notice that morning pain is slightly lower more often than not, or that the first few steps are stiff instead of sharp (Rathleff and colleagues, 2015).
+
+**Three to six months.** The 2020 review's "often within three to six months" range puts the midpoint of improvement here for most people who are doing the recommended exercises and wearing supportive shoes (Latt and colleagues, 2020).
+
+**Six months and beyond.** The 2023 guideline suggests considering other options if several months of stretching, strengthening and footwear changes have not helped enough. The Hansen cohort shows that improvement can still happen after a year and beyond: the survival curve kept falling slowly through year five, but the rate of improvement slows down. If pain is flat or rising, not just slow, see the next section.
+
+The useful number is not "how many weeks until I am done" but "is my morning pain lower this month than last month?" That trend is the milestone.
+
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
+Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
+
+### What can you do if plantar fasciitis is not getting better?
+
+If several months of daily stretching, calf strengthening, and supportive shoes have not moved the needle, the 2023 heel pain guideline lists several other options with their evidence grades. These are described neutrally below. None of them come with a guarantee, and all of them involve a clinician.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### When should you see a clinician if plantar fasciitis is not getting better?
+
+The pattern in the table above is clear: stretching and strength work have the broadest support. The clinic-based options (laser, dry needling, shockwave) have some evidence but sit behind exercise in the guideline's ranking. Surgery is reserved for the small percentage of cases that do not respond to anything else, and the guideline does not give it a prominent role.
+
+If you have been doing the exercises consistently for several months and morning pain is not improving, that is a reasonable point to see a clinician and discuss the options above. It is also a reasonable point to check that the diagnosis is correct: see [heel pain in the morning](https://walkito.site/heel-pain-in-the-morning/) for other conditions that share the same pattern.
+
+For runners, load changes are often part of the picture: [heel pain from running](https://walkito.site/heel-pain-runners/) and [feet hurt from standing all day](https://walkito.site/feet-hurt-standing-all-day/) cover that angle.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### How does tracking morning pain show progress?
+
+Morning pain is the most reliable daily signal of how the foot is doing. It measures the same thing (first-step stiffness), under the same conditions (just woke up, unloaded foot), at roughly the same time every day. That makes it a much better trend line than "how my foot felt during the day," which shifts with activity, shoes, and surfaces.
+
+A daily score of 0 to 10 on your first steps, tracked over weeks, shows patterns you would not notice otherwise. A score that drifts down from 5 to 3 over a month is real progress, even if any single morning still hurts. A score that spikes the morning after a long run or a day on your feet tells you exactly which load was too much.
+
+Walkito asks for a morning pain score before every session and uses it to adjust the day's exercises. The first goal for heel pain is morning pain at or under 1 out of 10 for 14 days in a row. Once that goal is reached, it moves to maintaining and the next goal (usually calf strength or balance) takes its place. That shift, from "make mornings easier" to "build capacity," is the real milestone.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### See a clinician first if
+
+- the pain has not improved after several months of consistent stretching and strengthening
+- it is getting worse week over week, not just staying flat
+- both heels hurt and morning stiffness lasts more than 30 minutes, or other joints are stiff or swollen
+- the pain followed an injury or a fall
+- you cannot put weight on the foot, or you are limping
+- squeezing the sides of the heel reproduces the pain
+- it comes with numbness, tingling or burning
+- the heel is red, warm to the touch, or you have a fever
+- it wakes you at night or is present at rest
+- you have diabetes, reduced feeling in your feet or poor circulation
+
+### Doing it as a plan
+
+Recovery takes time, and the hardest part is knowing whether the time is doing anything. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1 out of 10 for 14 days in a row. Every morning you log your pain, and every 14 days a short test checks calf endurance, arch hold and balance, so you can see the numbers moving.
+
+#### How long does plantar fasciitis take to go away?
+
+A 2020 review reports that about 90 percent of people improve with non-surgical care, often within several months (Latt and colleagues, 2020). A cohort of 174 patients showed 50 percent symptom-free by five years and 46 percent still symptomatic at ten years, though most of those had only minor pain by that point (Hansen and colleagues, 2018). Recovery is measured in months, not weeks, and no program can promise a specific timeline.
+
+#### Does plantar fasciitis ever go away completely?
+
+For many people, yes. In the Hansen 2018 cohort, 54 percent were completely symptom-free at a mean follow-up of 9.7 years. Among those who recovered, the mean symptom duration was about 725 days. Some people still had occasional mild discomfort but scored 0 on all pain scales. Recovery was slower for women and for people with bilateral heel pain.
+
+#### Why is my plantar fasciitis not getting better?
+
+Several possibilities. The exercises may not be consistent enough, the footwear may not be supportive, or the daily load on the foot (steps, standing hours, running mileage) may be more than the tissue can keep up with. It is also possible the diagnosis is not plantar fasciitis. If stretching and strengthening have not helped after several months, the 2023 guideline recommends discussing options like night splints, laser therapy, or dry needling with a clinician.
+
+#### Does a heel spur make plantar fasciitis last longer?
+
+Not according to the Hansen 2018 study. A heel spur at baseline had no significant effect on how long symptoms lasted (P = 0.88). Many people have heel spurs with no pain, and many with pain have no spur. The spur is often there, but it is not what drives the symptoms.
+
+#### Is walking good for plantar fasciitis?
+
+Moderate walking in supportive shoes is generally fine and the guideline does not say to stop moving. What matters is whether the next morning is worse. If first-step pain the morning after a walk is clearly higher than usual, that walk was more than the foot could handle. Cut the distance or the time instead of stopping altogether.
+
+#### When should I see a doctor about plantar fasciitis that is not improving?
+
+See a clinician if pain is not clearly improving after several months of daily stretching and calf work, if it is getting worse instead of staying flat, if both heels hurt and other joints are stiff or swollen, if there is numbness or tingling, or if the pain wakes you at night. These patterns may point to a different condition or may call for options beyond exercise alone.
+
+#### Can plantar fasciitis come back after it goes away?
+
+Yes. In the Hansen 2018 cohort, 32 percent of the symptom-free group had at least one relapse before becoming permanently asymptomatic. The pattern of improvement, relapse, and further improvement is common. Continuing a maintenance dose of calf work and stretching after the pain is gone is one way to reduce the chance of it returning.
+
+## Ball of foot pain: what causes it and what helps
+
+Language: English · https://walkito.site/ball-of-foot-pain/ · published 2026-10-04 · updated 2026-10-04
+
+You push off the ground and there it is: a sharp ache right behind the toes, like walking on a pebble. The ball of the foot takes your full body weight every time you step, and several different conditions can make it hurt. This page covers what those conditions are, what the evidence says about exercise and footwear, and where the honest gaps in the research are.
+
+- In a study of 41 people with primary metatarsalgia, an 8-week toe exercise program improved pain by an average of 2.7 points on a 10-point scale. The study had no control group (Amaha and colleagues, 2020).
+- A tight gastrocnemius, the bigger outer calf muscle, shifts weight forward onto the forefoot. In a series of 254 people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture (Patel and DiGiovanni, 2011).
+- Metatarsal pads placed just behind the metatarsal heads are the most studied conservative approach for forefoot pain.
+- Morton's neuroma and metatarsalgia overlap in symptoms but differ in location: neuroma pain is typically between the third and fourth toes with tingling, while metatarsalgia is broader.
+
+### What is the ball of the foot?
+
+The ball of the foot is the padded area on the sole just behind the toes. Under it sit the heads of the five metatarsal bones, long bones that run from the midfoot to the base of each toe. When you walk, the ball of the foot bears roughly twice your body weight during the push-off phase.
+
+The muscles that curl and spread your toes are called the intrinsic foot muscles. They help share that load during push-off. When they weaken, or when the foot's structure shifts, more force lands on the metatarsal heads, and that is often where the pain starts.
+
+### What causes ball of foot pain?
+
+**Metatarsalgia** is the most common label. It describes pain and inflammation around one or more metatarsal heads, usually the second and third. Overuse, a long second metatarsal, high arches, and tight calf muscles can all contribute.
+
+**Morton's neuroma** is a thickening of the nerve between the metatarsal heads, most often between the third and fourth toes. It produces burning, tingling, or numbness rather than a pure ache. Narrow or high-heeled shoes compress the nerve and make it worse.
+
+**Sesamoiditis** is inflammation of the two small bones embedded in the tendon under the big toe joint. The pain sits directly under the big toe rather than under the middle of the forefoot.
+
+**Metatarsal stress fracture** is a small crack in one of the metatarsal bones, usually the second or third. The pain is localized, often gets worse through the day, and may hurt at night. Swelling on the top of the foot is common. This one needs imaging and rest.
+
+**Claw toes and hammer toes** bend the toe joints downward, which lifts the toe off the ground and shifts its push-off load back onto the metatarsal head behind it.
+
+**High heels and narrow shoes** tip weight forward onto the forefoot and compress the metatarsal heads together, which is why Morton's neuroma is more common in people who wear them.
+
+**High arches** (pes cavus, meaning a foot with a high, rigid arch) reduce the contact area on the sole, concentrating pressure on the heel and the ball of the foot. On the other end, [flat feet](https://walkito.site/flat-feet-exercises/) can also contribute to forefoot pain by altering how the foot rolls during push-off.
+
+**Tight calf muscles** are an underappreciated cause. When the gastrocnemius, the bigger outer calf muscle, is tight, the ankle cannot bend far enough during walking. The body lifts the heel early to compensate, which shifts more load onto the forefoot. This is the same mechanism behind [plantar fasciitis](https://walkito.site/plantar-fasciitis-exercises/) and [Achilles tendonitis](https://walkito.site/achilles-tendonitis-exercises/).
+
+Source: Patel A, DiGiovanni B. Association between plantar fasciitis and isolated contracture of the gastrocnemius. Foot & Ankle International. 2011;32(1):5–8.
+
+### How do you tell these conditions apart?
+
+Location is the first clue. Broad pain under the second and third metatarsal heads points toward metatarsalgia. Pain between the third and fourth toes, with tingling, suggests Morton's neuroma. Pain directly under the big toe joint is more consistent with sesamoiditis. A localized spot on the top of the foot with swelling raises the question of a stress fracture.
+
+Stress fractures often do not show on a plain X-ray for the first two to three weeks and may need an MRI. A clinician visit is worth it when pain stays beyond two weeks despite rest and shoe changes, or when there is tingling, night pain, or visible swelling.
+
+Source: Patel DS, Roth M, Kapil N. Stress fractures: diagnosis, treatment, and prevention. American Family Physician. 2011;83(1):39–46.
+
+### Does exercise help ball of foot pain?
+
+The honest answer is that the evidence for exercise in metatarsalgia is early and limited. It is much thinner than the evidence for [plantar fasciitis](https://walkito.site/plantar-fasciitis-exercises/) or Achilles tendonitis, where randomized trials exist.
+
+The best study so far is a 2020 pre-post study of 41 people (56 feet) with primary metatarsalgia. An 8-week toe exercise program, mainly towel scrunches and marble pickups, dropped pain scores by an average of 2.7 points on a 10-point scale and improved toe grip strength. But there was no control group, so the improvement could partly reflect natural recovery. The authors called for randomized trials.
+
+The logic is straightforward: during push-off, the toes help share the load with the metatarsal heads. When toe flexor muscles are weak, more force lands on the metatarsals. The 2020 study supports that idea, but one uncontrolled study is not proof. People who had symptoms for more than a year improved less, as did those with a higher BMI.
+
+Source: Amaha K, Arimoto T, Kitamura N. Effect of toe exercises and toe grip strength on the treatment of primary metatarsalgia. Journal of Orthopaedic Surgery and Research. 2020;15(1):580.
+
+### Does a tight calf make forefoot pain worse?
+
+Very likely. When the gastrocnemius is tight, the ankle cannot bend enough during walking. The body lifts the heel early, which throws more weight onto the ball of the foot. The clinical term for this is functional equinus, and it is a recognized cause of metatarsalgia.
+
+The numbers come from plantar fasciitis research, but the mechanism is the same. In 254 people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture. A case-control study of 50 cases and 100 controls found that reduced ankle dorsiflexion (how far the foot bends up toward the shin) was the strongest independent risk factor, at 23.3 times the odds.
+
+No trial has tested calf stretching for metatarsalgia specifically, but the link is clinically recognized. See [calf raises for plantar fasciitis](https://walkito.site/calf-raises-plantar-fasciitis/) for more on the calf-ankle connection.
+
+Source: Patel A, DiGiovanni B. Association between plantar fasciitis and isolated contracture of the gastrocnemius. Foot & Ankle International. 2011;32(1):5–8.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### What about metatarsal pads, insoles, and shoes?
+
+Metatarsal pads are the most widely used conservative approach. A pad placed just behind the metatarsal heads lifts the shaft slightly, spreading pressure wider. Placement matters. Too far forward, directly under the head, can make pain worse.
+
+Rocker-sole shoes reduce forefoot pressure by letting the foot roll through push-off without bending at the metatarsal joints. A wide toe box stops the heads from being compressed together. Switching away from narrow or heeled shoes is often the simplest first step.
+
+Pads and shoes change how load is distributed. Exercise builds the strength and flexibility to handle that load. When [standing all day](https://walkito.site/feet-hurt-standing-all-day/) is part of the picture, both matter.
+
+### The exercises
+
+These exercises target two sides of the problem: toe and intrinsic foot strength (to share load during push-off) and calf flexibility (to stop the forefoot from being overloaded). None has been tested in a randomized trial for metatarsalgia specifically. When you tap the ball-of-foot zone on the Walkito pain map during a check-in, the relief session gives toe spreads and a plantar fascia stretch. The toes zone gives toe spreads and seated short foot work.
+
+- **Toe spread** (3 sets of 10 spreads): Sit or stand with your foot flat. Spread all five toes apart as wide as you can, hold for 2 to 3 seconds, then relax. This works the small muscles between the metatarsals.
+- **Towel scrunch (toe curls)** (3 sets of 10 scrunches, each foot): Sit with your foot flat on a towel. Curl your toes to scrunch the towel toward you. Release and repeat. This is closest to what the 2020 study used.
+- **Short foot (seated)** (3 sets of 10, holding each for 5 seconds): Sit with your foot flat on the floor. Without curling the toes, try to shorten the foot by drawing the ball of the foot toward the heel. The arch should rise slightly. This targets the intrinsic foot muscles that support the arch and forefoot from underneath.
+- **Big toe lift** (3 sets of 10, each foot): Stand or sit with your foot flat. Lift only the big toe while keeping the other four toes on the ground. Then reverse: press the big toe down and lift the other four. When the big toe cannot extend properly, more load shifts onto the adjacent metatarsal heads.
+- **Plantar fascia stretch** (2 holds of 30 seconds, each foot): Sit and cross the affected foot over the opposite knee. Pull the toes back gently until you feel a stretch along the arch. The plantar fascia runs from the heel to the base of the toes, passing right through the ball of the foot.
+- **Calf stretch (straight knee)** (2 holds of 30 seconds, each leg): Hands on a wall. Back leg straight, heel down, hips forward. Hold until you feel the stretch in the upper calf.
+- **Calf stretch (bent knee)** (2 holds of 30 seconds, each leg): Same position as the straight-knee stretch, then bend the back knee until the stretch moves lower, near the Achilles tendon. This targets the soleus, the deeper calf muscle, which only releases with the knee bent.
+
+Source: Amaha K, Arimoto T, Kitamura N. Effect of toe exercises and toe grip strength on the treatment of primary metatarsalgia. Journal of Orthopaedic Surgery and Research. 2020;15(1):580.
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
+
+### What the evidence does and does not tell us
+
+The evidence for exercise in ball-of-foot pain is thinner than for [plantar fasciitis](https://walkito.site/plantar-fasciitis-exercises/) or Achilles tendonitis, where randomized trials exist. For metatarsalgia, there is one pre-post study with 41 people and no control group. The biomechanical reasoning is sound, and the risk of gentle toe exercises and calf stretches is low, but direct proof from a controlled trial is missing.
+
+Exercise alone may not be enough. Metatarsal pads, shoes with a wide toe box, and reducing time in heels have broader clinical consensus. For Morton's neuroma, shoe changes and padding are often more effective than exercise. For a metatarsal stress fracture, exercise is the wrong approach until the bone has recovered. If pain has lasted more than a few weeks, or comes with numbness or swelling, get it checked first. [Heel pain from running](https://walkito.site/heel-pain-runners/) covers load management for runners.
+
+Source: Amaha K, Arimoto T, Kitamura N. Effect of toe exercises and toe grip strength on the treatment of primary metatarsalgia. Journal of Orthopaedic Surgery and Research. 2020;15(1):580.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### See a clinician first if
+
+- there is tingling, burning, or numbness in the toes, which can point to a nerve problem like Morton's neuroma
+- the pain is localized to one spot and gets worse through the day, which can suggest a stress fracture
+- there is visible swelling on the top of the foot
+- the pain followed a sudden increase in activity, a fall, or an impact
+- the big toe joint is stiff, locked, or will not bend back
+- pain does not improve after two weeks of rest, shoe changes, and padding
+- you have diabetes, reduced feeling in your feet, or poor circulation
+- both feet hurt and other joints are swollen or stiff
+- it wakes you at night or is present at rest
+
+### Doing it as a plan
+
+You can do the exercises on this page on your own, or you can let Walkito schedule them for you. The app builds a plan one week at a time. When you mark the ball of the foot on the pain map, the check-in session focuses on toe spreads and plantar fascia stretching. The broader program adds calf stretching and strengthening as the weeks go on.
+
+#### What is metatarsalgia?
+
+Metatarsalgia is pain and inflammation around the metatarsal heads, the bony knuckles at the ball of the foot. It is a description of where it hurts, not a single diagnosis. Common causes include overuse, high arches, tight calf muscles, and weakened toe flexors. In one study of 41 people, toe exercises improved pain by an average of 2.7 points on a 10-point scale (Amaha 2020).
+
+#### How do you tell metatarsalgia from Morton's neuroma?
+
+Metatarsalgia is a dull-to-sharp ache broadly under the ball of the foot. Morton's neuroma is more specific: burning, tingling, or numbness between the third and fourth toes, sometimes with a clicking sensation when the forefoot is squeezed. A clinician can distinguish them with a physical exam and ultrasound.
+
+#### Do toe exercises help ball of foot pain?
+
+The evidence is early. One study of 41 people found that 8 weeks of toe exercises improved pain and grip strength, but it had no control group and its authors called for randomized trials (Amaha 2020). The idea makes sense: stronger toes should share more of the push-off load. But direct proof from a controlled trial is missing.
+
+#### Why does a tight calf cause pain in the ball of the foot?
+
+When the gastrocnemius, the bigger outer calf muscle, is tight, the ankle cannot bend enough during walking. The body compensates by lifting the heel early, which shifts more weight onto the ball of the foot. In people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture (Patel and DiGiovanni, 2011). The same mechanism contributes to forefoot overload.
+
+#### Do metatarsal pads work for ball of foot pain?
+
+Metatarsal pads are the most widely used conservative approach for forefoot pain. They lift the metatarsal shaft just behind the painful area, spreading pressure across a wider surface. Placement matters: the pad should sit just behind the metatarsal heads, not directly underneath them, or it can increase pain.
+
+#### Can ball of foot pain be a stress fracture?
+
+Yes. Metatarsal stress fractures, usually in the second or third metatarsal, produce localized pain that gets worse through the day and may hurt at night. Swelling on the top of the foot is common. A stress fracture often does not show on a plain X-ray for the first two to three weeks and may need an MRI. This is one of the reasons to see a clinician if forefoot pain persists.
+
+#### What shoes are best for ball of foot pain?
+
+Shoes with a wide toe box, a cushioned sole, and a low heel. Rocker-sole shoes help by letting the foot roll through push-off without bending at the metatarsal joints. Narrow shoes and high heels do the opposite. For Morton's neuroma especially, switching shoes is often the most effective single step.
+
+## Foot pain for nurses: what helps on 12-hour shifts
+
+Language: English · https://walkito.site/nurses-foot-pain/ · published 2026-10-04 · updated 2026-10-04
+
+Nurses walk more in a single shift than most people walk in a day, and they do it on hard floors in shoes that may not fit well. Foot and ankle problems are one of the most common musculoskeletal complaints in nursing, reported by more than half of hospital nurses over a 12-month period in one survey. Most of the things that help, calf stretches, arch exercises, compression stockings, can be done in a few minutes before or after a shift.
+
+- In a survey of 312 paediatric hospital nurses in Australia, 55.3% reported foot or ankle problems in the past 12 months, and the rate was higher among those working 12-hour shifts in intensive care (Reed and colleagues, 2014).
+- Nurses walked an average of 9,360 steps per shift in a tracker-based study, roughly 5.8 km over a 9.4-hour shift, a workload well above the general adult average (Chang and Cho, 2022).
+- In a cross-sectional study of 636 Japanese hospital nurses, 51% reported foot pain or disability in the past month, and 17% had pain that interfered with daily activities (Tojo and colleagues, 2018).
+- Reduced ankle flexibility, meaning a tight calf, was the single strongest predictor of plantar fasciitis in a case-control study of 50 cases and 100 controls, at 23.3 times the odds. Standing for most of the working day raised them 3.6 times (Riddle and colleagues, 2003).
+- In a trial of 40 security guards standing 12-hour shifts, both 15-20 mmHg and 20-30 mmHg compression stockings prevented the rise in discomfort and swelling seen with regular socks (Garcia and colleagues, 2023).
+
+### How common is foot pain in nurses?
+
+Foot and ankle pain is one of the top three musculoskeletal complaints in nurses, alongside lower back and neck pain. In a survey of 312 paediatric hospital nurses, 55.3% reported foot or ankle musculoskeletal problems in the past 12 months, and 43.8% had symptoms in the past seven days alone. One in six nurses said the pain limited their physical activity. Working 12-hour shifts in the intensive care unit was the single work-related factor that independently raised the odds of disabling foot problems.
+
+A separate study of 636 hospital nurses in Japan found that 51% reported foot pain or disability in the past month when assessed with a validated questionnaire. The prevalence of pain that prevented normal work was 17%. A tracker-based study of Korean nurses found an average of 5.8 km walked per shift, a physical demand well above the general population.
+
+A cross-sectional study of 411 Finnish nurses found that dry skin, foot pain and calluses were the most common foot complaints, and that foot problems were associated with decreased working ability. The authors called for prevention of foot problems in nurses to be prioritised.
+
+Source: Chang J, Cho E. Nurses' steps, distance traveled, and perceived physical demands in a three-shift schedule. Human Resources for Health. 2022;20:72.
+Source: Reed LF, Battistutta D, Young J, Newman B. Prevalence and risk factors for foot and ankle musculoskeletal disorders experienced by nurses. BMC Musculoskeletal Disorders. 2014;15:196.
+Source: Tojo M, Yamaguchi S, Amano N, et al. Prevalence and associated factors of foot and ankle pain among nurses at a university hospital in Japan: a cross-sectional study. Journal of Occupational Health. 2018;60(2):132–139.
+Source: Stolt M, Suhonen R, Kielo E, Katajisto J, Leino-Kilpi H. Foot health of nurses: a cross-sectional study. International Journal of Nursing Practice. 2017;23(4):e12560.
+
+### Why do nurses get foot pain on 12-hour shifts?
+
+Three things combine on a nursing shift: prolonged standing, long walking distances and hard floors. Standing still loads the plantar fascia, calf muscles and heel pad without the pumping action that walking provides. Walking helps blood return from the legs, but nurses alternate unpredictably between standing still at a bedside and walking long corridors, so the calf pump never settles into a steady rhythm.
+
+A 2015 review of the occupational health literature found prolonged standing at work associated with musculoskeletal discomfort, fatigue and leg pain across many standing occupations, with nurses cited as one of the highest-risk groups. The review noted that cardiovascular strain and leg swelling increase with standing duration.
+
+On the tissue level, a tight calf is a key piece. A case-control study of 50 people with plantar fasciitis and 100 matched controls found that reduced ankle flexibility, meaning the ankle cannot bend upward as far as it should because the calf is tight, was the single strongest independent risk factor for plantar fasciitis, at 23.3 times the odds. Standing for most of the working day raised the odds 3.6 times. Nurses face both risk factors at once.
+
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### What exercises help nurses with foot pain?
+
+The exercises that help are the same ones that target plantar fasciitis and standing-related foot pain: calf stretches, a plantar fascia stretch, heel raises for calf strength, and an arch exercise called the short foot. The difference for nurses is fitting them in around rotating shifts, not during them. A few minutes before or after a shift is enough to cover the most important ones.
+
+The 2023 heel pain guideline gives calf and plantar fascia stretching its top grade, A, and strength training a B. Both grades are for plantar fasciitis specifically, but the tissues involved are the same ones that take the load during a nursing shift. If any exercise brings your pain to 6 out of 10 or higher, stop for the day.
+
+- **Calf stretch (straight knee)** (2 holds of 30 seconds, each leg): Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward. This targets the gastrocnemius, the bigger outer calf muscle. You can do this in the break room or against any wall.
+- **Calf stretch (bent knee)** (2 holds of 30 seconds, each leg): Same wall position, but bend the back knee until you feel the stretch lower down, closer to the heel. The soleus, the deeper calf muscle, only lets go when the knee is bent.
+- **Plantar fascia stretch** (2 holds of 30 seconds, each foot): Sit and cross one foot over the other knee. Pull the toes back gently until you feel a stretch along the arch. If your heel is worst on the first steps of the day, do this one before your feet touch the floor in the morning.
+- **Heel raises, both feet** (3 sets of 10, both feet): Stand on both feet, rise straight up over the big toes over about three seconds, then lower slowly over three seconds. Hold a wall or rail for balance. The deep detail on this exercise, including how to progress and the towel variation, is in [calf raises for plantar fasciitis](https://walkito.site/calf-raises-plantar-fasciitis/).
+- **Short foot, seated** (3 sets of 10, hold 5 seconds, each foot): Sit with your foot flat on the floor. Pull the ball of the foot toward the heel so the arch lifts, without curling the toes. This trains the small muscles inside the arch that support it during a long day on your feet.
+- **Toe spread** (3 sets of 10, hold 5 seconds): Sit or stand and spread all five toes apart as wide as you can, then hold. After a shift in snug shoes, this wakes up the small muscles between the toes.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### How do you fit exercises around rotating shifts?
+
+A 12-hour shift leaves little time for a separate exercise routine, and rotating between day and night shifts makes scheduling even harder. The stretches on this page take about 3 minutes, so the simplest approach is to do them right before or right after a shift, at the same point in your routine every time. For example, do them after you change into or out of your work shoes.
+
+On days off, add the strength exercises: heel raises and the short foot. These take about 5 to 10 minutes. Doing strength work on off days, rather than after a demanding shift, means the calf and arch have recovery time before the next stint on your feet.
+
+Three sessions a week is a reasonable starting point. If you work three 12-hour shifts with four days off, that fits strength work on each off day. If you rotate between day and night shifts, the time of day does not matter. What matters is consistency, not the clock.
+
+### Do nursing shoes make a difference: clogs, sneakers or something else?
+
+Footwear is one of the most discussed topics among nurses, but the evidence for one type over another is limited. A 2007 evaluation of three brands of professional nursing shoes found that the shoe with a more cushioned insole and better arch support reduced lower-extremity muscle effort compared to the other two, but the study was small and brand-specific.
+
+What the research does support more broadly is that footwear comfort matters. In a survey of 125 nurses across emergency and outpatient departments, 72% of nurses reporting low footwear comfort also reported foot and heel pain, compared with 28% of those reporting high footwear comfort. The 2023 heel pain guideline grades orthotics on their own B-against for short-term plantar fasciitis relief, meaning evidence leans against using them as a standalone option.
+
+A practical approach: choose a shoe that fits well, has some cushioning and does not pinch the toes. If you already have heel or arch pain, the exercises on this page target the tissues directly. Shoes and inserts can help with comfort during a shift, but they do not replace the stretching and strength work.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Do compression stockings help nurses with foot and leg pain?
+
+Compression stockings have one of the better-controlled studies behind them for standing-related discomfort. In a randomized trial of 40 security guards standing roughly 12-hour shifts, both the 15-20 mmHg and the 20-30 mmHg compression-stocking groups avoided the significant rise in foot and leg discomfort, fatigue and swelling seen in the group that wore regular socks. Participants commonly said the lower-pressure stocking was easier to put on.
+
+A pilot randomized trial of 20 nursing students compared knee-length and thigh-length compression stockings worn during 9-hour clinical training shifts. Both groups reported high satisfaction, though the sample was too small to show clear differences in outcomes between the two lengths.
+
+The Garcia trial was all male security guards, not nurses, and neither study was large. But compression stockings are one of the few standing-specific interventions with randomized evidence behind them. A 2015 occupational health review lists them alongside floor mats and supportive footwear as interventions with some evidence for reducing discomfort during prolonged standing work. They do not replace stretching or strength work. They manage the swelling and fatigue, while the calf and fascia still need their own attention.
+
+Source: Garcia MG, Roman MG, Davila A, Martin BJ. Comparison of physiological effects induced by two compression stockings and regular socks during prolonged standing work. Human Factors. 2023;65(4):562–574.
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+
+### What can you do before and after a shift in 3, 5, or 10 minutes?
+
+If you have 3 minutes: do the two calf stretches (straight knee and bent knee, 30 seconds each side). That covers the single strongest modifiable risk factor, a tight calf, and takes the same time as tying your shoes.
+
+If you have 5 minutes: add the plantar fascia stretch (30 seconds each foot). This is the combination the 2023 guideline grades A for plantar fasciitis. If your heel is worst on the first steps of the day, do the fascia stretch before your feet touch the floor.
+
+If you have 10 minutes: add the heel raises (3 sets of 10) and the short foot (3 sets of 10 with a 5-second hold). This covers the strength side, graded B in the guideline. On off days, 10 minutes covers everything on this page.
+
+Consistency matters more than length. Three minutes of calf stretching every shift day, done at the same point in your routine, is more useful than a longer session you skip when the schedule changes.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Could foot pain from a nursing shift be plantar fasciitis or something else?
+
+General ache and tiredness from a long shift is common and usually goes away with rest. Plantar fasciitis is a specific condition: sharp pain near the heel, worst on the first steps after rest (getting out of bed, standing after a long sit). If your pain follows that pattern, the exercises in [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/) are the fuller guide, and the calf raise detail is in [calf raises for plantar fasciitis](https://walkito.site/calf-raises-plantar-fasciitis/).
+
+If your arches feel flat or rolled in by the end of a shift, the arch exercises in [flat feet exercises for fallen arches](https://walkito.site/flat-feet-exercises/) target the muscles that hold the arch up. Pain along the shin could be shin splints. Pain in the Achilles tendon at the back of the heel is a different problem.
+
+If pain from standing is your main question and you are not a nurse, [why do my feet hurt after standing all day](https://walkito.site/feet-hurt-standing-all-day/) covers the same exercises with a broader audience. For the standing-desk version of this problem, see [standing desk foot pain](https://walkito.site/standing-desk-foot-pain/). If you are not sure what is causing the pain, see a clinician before loading it with exercise.
+
+### See a clinician first if
+
+- the pain followed a specific injury or fall at work
+- you cannot put weight on the foot, or you are limping
+- the foot is numb, tingling, burning, swollen or warm
+- the heel or foot is red, or you have a fever or feel unwell
+- pain wakes you at night
+- pain is sharp, or getting worse despite easing the load
+- pain is in one pinpoint spot and gets worse with activity, which can be a stress fracture pattern and not standing fatigue
+- one leg or foot has swollen suddenly and is painful, red or warm
+- you have diabetes, reduced feeling in your feet or poor circulation
+- the pain has not eased after several weeks of lighter shifts, better shoes and the exercises on this page
+
+### Doing it as a plan
+
+You do not have to work out the order, the doses or when to move to a harder version. Walkito builds a plan one week at a time around one goal. If your foot pain follows the morning-pain pattern of plantar fasciitis, the first goal is morning pain at 1 out of 10 or less for 14 days in a row.
+
+#### How many steps do nurses walk in a 12-hour shift?
+
+In a tracker-based study of Korean hospital nurses, the average was about 9,360 steps per shift, covering roughly 5.8 km over 9.4 hours. That is well above the average daily step count for the general adult population, and the sustained walking on hard floors is a major contributor to foot pain in nursing.
+
+#### Are 12-hour shifts worse for foot pain than 8-hour shifts?
+
+In a survey of paediatric hospital nurses, working 12-hour shifts in the intensive care unit was the single work factor that independently raised the odds of disabling foot and ankle problems. The total load on the foot increases with shift length, and recovery time between shifts is shorter when the shifts themselves are longer. That said, the type of work and the floor surface matter too, not just the hours.
+
+#### Should nurses wear clogs or sneakers for foot pain?
+
+There is no large trial comparing nursing clogs to sneakers for foot outcomes. What the evidence does support is that footwear comfort is strongly associated with foot pain: in one survey, 72% of nurses reporting low footwear comfort also reported foot and heel pain. Choose a shoe that fits well, has some cushioning and does not pinch the toes. Shoes alone do not replace the stretching and strength work on this page.
+
+#### Do compression socks help nurses on long shifts?
+
+In a randomized trial of 40 security guards standing 12-hour shifts, both 15-20 mmHg and 20-30 mmHg compression stockings prevented the rise in discomfort and swelling seen with regular socks. The trial was not in nurses specifically, but the mechanism is the same: compression helps blood return from the lower legs during long periods on your feet. Most participants found the lower-pressure stocking easier to put on.
+
+#### Is foot pain from nursing something you just have to live with?
+
+Foot pain from standing and walking is common in nursing, but "common" does not mean inevitable. The 2023 heel pain guideline grades calf and fascia stretching A and strength training B. Compression stockings have randomized evidence behind them for standing-related discomfort. A few minutes of calf stretching before or after each shift, combined with strength work on off days, targets the tissues that take the most strain.
+
+#### Can plantar fasciitis develop from nursing work?
+
+Standing for most of the working day raised the odds of plantar fasciitis 3.6 times in a matched case-control study of 50 cases and 100 controls. Reduced ankle flexibility raised them 23.3 times. Nurses face both risk factors, prolonged standing and limited break time to stretch, which is why the exercises on this page overlap heavily with those in the plantar fasciitis guide.
+
+#### What is the single best thing a nurse can do first for foot pain?
+
+Among the options reviewed on this page, daily calf stretching has the strongest guideline backing (grade A for plantar fasciitis) and targets the single strongest modifiable risk factor, a tight calf. It takes about 2 minutes, needs no equipment and can be done in the break room or at home. Adding compression stockings on shift days covers the swelling and fatigue side.
+
+## Standing desk foot pain: why it happens and what helps
+
+Language: English · https://walkito.site/standing-desk-foot-pain/ · published 2026-10-04 · updated 2026-10-04
+
+Switching to a standing desk is supposed to be better for you, but your feet and legs may disagree in the first few weeks. Foot pain from a standing desk usually comes from standing too long in one position, not from the desk itself. The research points to shorter standing bouts, a mat, the right shoes and a few exercises you can do without leaving your desk.
+
+- A 2017 systematic review of 25 laboratory studies found that clinically relevant musculoskeletal symptoms developed after about 40 minutes of uninterrupted standing, shortened to 42 minutes in people prone to back pain. The authors recommended not standing continuously for more than 40 minutes (Coenen and colleagues, 2017).
+- A 2015 expert statement commissioned by Public Health England recommends initially accumulating 2 hours per day of standing and light activity during work, eventually progressing to 4 hours per day, broken into shorter bouts (Buckley and colleagues, 2015).
+- A 2014 systematic review of 14 studies found sufficient evidence that sit-stand workstations reduce low-back discomfort, with no decrease in productivity, but found no optimal sit-stand time ratio (Karakolis and Callaghan, 2014).
+- A 2015 review of occupational health research found prolonged standing associated with musculoskeletal discomfort, fatigue and leg pain, and listed floor mats, compression stockings and supportive footwear among the interventions with evidence behind them (Waters and Dick, 2015).
+- Reduced ankle flexibility, meaning a tight calf, was the strongest predictor of plantar fasciitis in a 2003 case-control study, at 23.3 times the odds. Standing for most of the working day raised them 3.6 times (Riddle and colleagues, 2003).
+
+### Why do your feet hurt from a standing desk?
+
+Standing desk foot pain happens for the same reason any prolonged standing hurts: your feet, calves and lower legs carry a static load without the relief that walking or sitting provides. When you stand still, gravity pools blood in the lower legs, the calf muscles hold the same position without contracting and relaxing, and the plantar fascia under the arch absorbs a steady load.
+
+A 2017 systematic review of 25 laboratory studies pooled data from 591 participants and found that clinically relevant levels of low-back symptoms developed after about 71 minutes of uninterrupted standing in the general population, but only 42 minutes in people who tend to develop pain while standing. For lower-limb symptoms, the picture was similar. The authors recommended a threshold of 40 minutes as a practical limit before breaking up standing time.
+
+A 2015 review of the occupational health literature confirmed the association between prolonged standing and musculoskeletal discomfort, fatigue and leg pain across many types of standing work. The review also found that cardiovascular strain and leg swelling increase with standing duration.
+
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+
+### How long should you stand at a standing desk before sitting down?
+
+There is no single answer that fits everyone, but the research narrows it down. A 2015 expert statement commissioned by Public Health England and the Active Working Community Interest Company recommended that desk-based workers initially build toward accumulating 2 hours per day of standing and light activity during working hours, eventually progressing to 4 hours per day. The statement specified that standing should be broken into shorter bouts, not done in one stretch.
+
+The 2017 review of laboratory studies suggests that 40 minutes of continuous standing is the point where symptoms start to become clinically relevant. Putting those together, a practical starting point is standing for 20 to 30 minutes, sitting for 20 to 30 minutes, and repeating through the day, adjusting as your body adapts.
+
+A 2014 systematic review of 14 studies on sit-stand workstations found sufficient evidence that they reduce low-back discomfort, with no decrease in productivity. The review found no optimal sit-stand ratio, and the authors noted that the best ratio likely varies from person to person and job to job. What the evidence supports is alternating, not a fixed rule.
+
+Source: Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert statement on the growing case for change towards better health and productivity. British Journal of Sports Medicine. 2015;49(21):1357–1362.
+Source: Coenen P, Parry S, Willenberg L, et al. Associations of prolonged standing with musculoskeletal symptoms: a systematic review of laboratory studies. Gait & Posture. 2017;58:310–318.
+Source: Karakolis T, Callaghan JP. The impact of sit-stand office workstations on worker discomfort and productivity: a review. Applied Ergonomics. 2014;45(3):799–806.
+
+### Do anti-fatigue mats help with standing desk foot pain?
+
+Anti-fatigue mats have some evidence behind them. The 2015 occupational health review lists floor mats among the interventions with evidence for reducing discomfort during prolonged standing. A crossover study of 38 surgical team members found that standing on a 15 mm rubber anti-fatigue mat during procedures resulted in significantly lower pain and fatigue scores compared to standing on standard flooring.
+
+The mechanism is straightforward: a softer surface lets the feet make small adjustments and shifts some of the load that a hard floor concentrates on the heel and ball of the foot. A 2018 systematic review of cushioning materials during prolonged standing noted consistent findings for reduced discomfort, though the studies were small and the benefit was for comfort, not for preventing a specific condition.
+
+A mat is not going to solve foot pain on its own, but it is one of the simpler things to try. If you already have a standing desk and your feet hurt, a mat combined with shorter standing bouts and the exercises on this page covers the main bases.
+
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+
+### What shoes should you wear at a standing desk?
+
+If you work from home, you may be standing at your desk in socks or slippers. That is a lot of hours without any cushioning or arch support. The 2023 heel pain guideline grades orthotics on their own B-against for plantar fasciitis, meaning the evidence leans against using them as a standalone option, but that is about inserts in isolation, not about whether any shoe is better than no shoe.
+
+A reasonable approach: wear a shoe with some cushioning and a supportive insole while you stand, even at home. You do not need a special standing-desk shoe. If you alternate between standing and sitting, you can take the shoes off during sitting periods. The exercises on this page target the tissues directly. Shoes and mats help with comfort during standing, but they do not replace the stretching and strength work.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### What exercises can you do at your desk for standing-related foot pain?
+
+These exercises target the calf, the plantar fascia and the small muscles of the foot. Some of them can be done at your desk during a sitting break. Others are better done away from the desk at a separate time. If any exercise brings your pain to 6 out of 10 or higher, stop for the day.
+
+The 2023 heel pain guideline gives calf and plantar fascia stretching its top grade, A, and strength training a B. Both are for plantar fasciitis specifically, but the same tissues take the load during standing desk work. For the full plantar fasciitis exercise list, see [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/).
+
+- **Calf stretch (straight knee)** (2 holds of 30 seconds, each leg): Step back from your desk, put your hands on the desk edge or a wall, and keep the back leg straight with the heel down. This targets the gastrocnemius, the bigger outer calf muscle. You can do this during a transition from standing to sitting.
+- **Calf stretch (bent knee)** (2 holds of 30 seconds, each leg): Same position, but bend the back knee until you feel the stretch lower down, closer to the heel. The soleus, the deeper calf muscle, only lets go when the knee is bent.
+- **Heel raises, seated** (3 sets of 15, both feet): Sit at your desk with feet flat on the floor. Raise both heels as high as you can, hold for a second, then lower slowly. This works the soleus, the deeper calf muscle, and you can do it during any sitting break without leaving your chair.
+- **Toe spread** (3 sets of 10, hold 5 seconds): Sit at your desk and spread all five toes apart as wide as you can, then hold. This activates the small muscles between the toes that get compressed inside shoes during standing. You can do it with shoes off during a sitting break.
+- **Short foot, seated** (3 sets of 10, hold 5 seconds, each foot): Sit with your foot flat on the floor. Pull the ball of the foot toward the heel so the arch lifts, without curling the toes. This trains the small muscles inside the arch that support it during standing.
+- **Heel raises, both feet (standing)** (3 sets of 10, both feet): Stand at your desk, rise straight up over the big toes over about three seconds, then lower slowly. Hold the desk edge for balance. The detailed progression, including the towel variation, is in [calf raises for plantar fasciitis](https://walkito.site/calf-raises-plantar-fasciitis/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### Should you shift your weight, use a footrest, or just move more?
+
+All three help, and all three are variations of the same idea: break up the static standing posture. The 2015 expert statement emphasises that seated work should be regularly broken up with standing, and that standing itself should include light activity. Even shifting your weight from one foot to the other changes which muscles are loaded and promotes blood flow in the lower legs.
+
+A small footrest or a low bar under the desk lets you prop one foot up and shift the load between sides. This is an old factory-floor strategy, and it is one of the interventions the occupational health review lists. You do not need a special product for this. A sturdy box or a low shelf works.
+
+Short movement breaks during sitting are just as important. Stand up, walk to the kitchen and back, or do a set of the seated heel raises or toe spreads from the table above. The goal is not a workout. It is avoiding the static posture that causes the problem in the first place.
+
+Source: Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert statement on the growing case for change towards better health and productivity. British Journal of Sports Medicine. 2015;49(21):1357–1362.
+Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
+
+### How do you transition to a standing desk without foot pain?
+
+Start with less standing than you think you need. The 2015 expert statement recommends building toward 2 hours of standing and light activity per day, not starting there. If you are new to standing, begin with 15 to 20 minutes of standing per hour and increase gradually over a few weeks.
+
+A practical first week: stand for 15 minutes, sit for 45 minutes, repeat through the day. In the second week, move to 20 minutes standing, 40 sitting. By the third or fourth week, try 30 and 30. Listen to your feet and lower back. If discomfort is building, sit down sooner instead of pushing through.
+
+Add a mat from the start if you have one. Wear shoes with some cushioning, even at home. Do the calf stretches from the table above at least once a day. If you already have foot pain from standing and want the broader guide, [why do my feet hurt after standing all day](https://walkito.site/feet-hurt-standing-all-day/) covers the overlap between standing desk pain and conditions like plantar fasciitis. For the nurse-specific version, see [foot pain for nurses](https://walkito.site/nurses-foot-pain/).
+
+Source: Buckley JP, Hedge A, Yates T, et al. The sedentary office: an expert statement on the growing case for change towards better health and productivity. British Journal of Sports Medicine. 2015;49(21):1357–1362.
+
+### Could standing desk foot pain be plantar fasciitis or something else?
+
+Standing desk foot pain is usually general discomfort from prolonged static standing. But if the pain is sharp, concentrated near the heel, and worst on the first steps after you sit for a while, that pattern points toward plantar fasciitis. Standing for most of the working day raised the odds of plantar fasciitis 3.6 times in one case-control study, so the standing desk is a plausible contributor.
+
+The exercises that help both conditions overlap heavily. If your pain follows the plantar fasciitis pattern, [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/) is the fuller guide. If your arches feel flat, see [flat feet exercises for fallen arches](https://walkito.site/flat-feet-exercises/). If you are not sure, see a clinician before loading the foot with exercise.
+
+Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
+
+### See a clinician first if
+
+- the pain followed an injury or a fall
+- you cannot put weight on the foot, or you are limping
+- the foot is numb, tingling, burning, swollen or warm
+- the heel or foot is red, or you have a fever or feel unwell
+- pain wakes you at night
+- pain is sharp, or getting worse despite sitting more
+- pain is in one pinpoint spot and gets worse with activity, which can be a stress fracture pattern and not standing discomfort
+- one leg or foot has swollen suddenly and is painful, red or warm
+- you have diabetes, reduced feeling in your feet or poor circulation
+- the pain has not eased after several weeks of shorter standing bouts, a mat and the exercises on this page
+
+### Doing it as a plan
+
+You do not have to work out the order, the doses or when to progress. Walkito builds a plan one week at a time around one goal. If your standing desk pain follows the morning-pain pattern of plantar fasciitis, the first goal is morning pain at 1 out of 10 or less for 14 days in a row.
+
+#### How long should you stand at a standing desk?
+
+A 2015 expert statement recommends building toward 2 hours of standing and light activity per working day, eventually progressing to 4 hours, broken into shorter bouts. A 2017 systematic review found that musculoskeletal symptoms became clinically relevant after about 40 minutes of continuous standing. A practical starting point is 20 to 30 minutes of standing, followed by 20 to 30 minutes of sitting.
+
+#### Do anti-fatigue mats actually work for standing desks?
+
+A 2015 occupational health review lists floor mats among the interventions with evidence for reducing discomfort during prolonged standing. A crossover study of surgical team members found lower pain and fatigue scores with a 15 mm rubber mat compared to standard flooring. The benefit is for comfort and fatigue, not for preventing a specific condition. A mat combined with shorter standing bouts and calf stretches covers more than a mat alone.
+
+#### Can a standing desk cause plantar fasciitis?
+
+Standing for most of the working day raised the odds of plantar fasciitis 3.6 times in a case-control study of 50 cases and 100 controls. A standing desk increases your daily standing hours, so it is a plausible contributor if your calf is already tight, which was the strongest independent risk factor at 23.3 times the odds. Calf stretches are the most direct way to address both risk factors.
+
+#### Is it better to sit or stand all day?
+
+Neither. The 2014 Karakolis and Callaghan review found sufficient evidence that sit-stand workstations reduce low-back discomfort, with no decrease in productivity, but found no optimal sit-stand ratio. The 2017 Coenen review found that uninterrupted standing causes symptoms after about 40 minutes. Alternating between sitting and standing is what the evidence supports, not choosing one or the other.
+
+#### What exercises can you do at a standing desk?
+
+During standing: calf stretches against the desk edge (2 holds of 30 seconds each side) and standing heel raises (3 sets of 10). During sitting breaks: seated heel raises (3 sets of 15), toe spreads and the short foot exercise. These target the calf, plantar fascia and intrinsic foot muscles that carry the standing load. If any exercise takes your pain to 6 out of 10 or higher, stop for the day.
+
+#### Why do my feet hurt more standing still than walking?
+
+Walking activates the calf pump, which pushes blood back up from the lower legs with each step. Standing still takes that pump away, so blood pools in the feet and lower legs, and the muscles hold the same static position instead of contracting and relaxing. A 2017 systematic review confirmed this mechanism and found lower-limb symptoms develop reliably during static standing in laboratory settings.
+
+## Best app for plantar fasciitis: a buyer's guide for 2026
+
+Language: English · https://walkito.site/best-app-for-plantar-fasciitis/ · published 2026-10-04 · updated 2026-10-04
+
+This page compares seven apps that include exercises for plantar fasciitis, flat feet or general foot pain. Walkito is one of them, and Walkito makes this page, so you should know that up front. The goal is to be fair, say where others are stronger, and give you enough detail to pick the one that fits your situation.
+
+- The 2023 clinical guideline for heel pain gives plantar fascia and calf stretching a grade of A and strength training a grade of B. A good app should include both.
+- Pain adaptation matters: a fixed daily routine cannot tell a good morning from a bad one, and loading an inflamed fascia the same way every day can set you back.
+- Exakt Health is the strongest option for runners recovering from plantar fasciitis who also want a return-to-running plan, and it is certified as a medical device in the EU.
+- Hinge Health is free through employers and health plans and comes with a full clinical care team, but you cannot buy it yourself.
+- No app can diagnose your foot pain. If your pain followed an injury, comes with swelling or numbness, or wakes you at night, see a clinician before starting any program.
+
+### What should a plantar fasciitis app actually do?
+
+A useful plantar fasciitis app should include exercises that match what the research supports. The 2023 clinical guideline for heel pain grades the evidence behind each approach. Plantar fascia and calf stretching earn an A, the top grade. Strength training earns a B. That means both should be in the app, not just one.
+
+Beyond the exercise list, these are the things worth checking before you subscribe:
+
+- **Progression.** Exercises should get harder over time, not stay at the same level forever. The research behind strength training for plantar fasciitis used a progressive loading protocol.
+- **Pain adaptation.** The app should respond when pain is worse. Loading a painful heel the same way on a bad morning is the fastest way to lose someone's trust in the program.
+- **Time per day.** Most people will not do 30 minutes of foot exercises. Five to ten minutes of the right exercises, done consistently, is more realistic.
+- **Price and trial.** Know what you are paying and whether there is a free trial to see if it works for you.
+- **Platforms.** Some apps are iOS only. If you use Android, your choices are narrower.
+- **Privacy.** Pain and health data is sensitive. Check whether the app shares or sells it.
+- **Clinician involvement.** An app built or reviewed by licensed physiotherapists or physical therapists is a reasonable signal. An app that can connect you to a clinician is a stronger one.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### How do these apps compare?
+
+The table below covers seven apps available in October 2026. Every fact was checked against the app's own App Store or Google Play listing and its official website. Ratings and review counts are as shown on the iOS App Store at the time of writing.
+
+### Exakt Health: the runner's rehab app
+
+Exakt Health is built for runners, and it shows. The app has over 15 injury rehab plans, from plantar fasciitis to Achilles tendinopathy to meniscus tears, plus running training plans from couch to marathon. Each rehab plan ends with a structured return-to-running phase, which is something most foot pain apps do not offer.
+
+It is certified as a medical device in the EU, which means it has passed regulatory review for safety and intended use. It was built by licensed sports physiotherapists and running coaches. The app has 600+ exercise videos and adapts its plan as you progress through levels.
+
+At $19.99 a month or $59.99 for six months, Exakt is not cheap, but the breadth of conditions and the quality of its rehab plans are hard to match in the self-serve app market. The 7-day free trial lets you see the full app before paying. It is available in English, French, German and Spanish, on both iOS and Android.
+
+Where Exakt is stronger than Walkito: more injury types covered (15+ versus heel pain, flat feet and shins), a full return-to-running program, Android availability, EU medical device certification, and an established user base with a 4.8 rating across 125 iOS reviews.
+
+Where Walkito differs: Walkito adjusts each day's session from a morning pain check-in rather than end-of-session feedback, tests left-right asymmetry every 14 days, and focuses specifically on heel and foot pain rather than the full range of running injuries.
+
+### Hinge Health: the employer-sponsored option
+
+Hinge Health is the largest digital MSK platform in the United States, with over 2 million members. If your employer or health plan covers it, it is free to you and comes with something no self-serve app can match: a dedicated care team that includes physical therapists, orthopedic doctors and other specialists.
+
+The app covers a wide range of joint and muscle conditions, not just feet. It also includes the Enso wearable device for acute pain relief. The 4.9 rating across 168,000 iOS reviews reflects the combination of guided exercises, human coaching and zero cost.
+
+The catch is access. You cannot buy Hinge Health from the App Store. You need coverage through one of the 2,800+ employers or health plans that offer it. If you have access, it is likely the most complete option on this list. If you do not, it is not an option at all.
+
+Hinge Health is not foot-specific. It covers back, knee, hip and neck pain as its primary use cases. For plantar fasciitis specifically, a more focused app may be a better starting point.
+
+### Prehab: the broadest exercise library
+
+The Prehab Guys app is built by Doctors of Physical Therapy and has the widest exercise library in this comparison: 55+ programs, 170+ workouts and 4,000+ exercise videos. It has a specific plantar fasciitis rehab program. The Body Scan feature asks about your pain, goals and movement needs, then recommends a program.
+
+At $49 a month or about $200 a year, it is the most expensive self-serve option here. The 7-day free trial is on the annual plan only. Sessions run about 20 minutes, which is longer than the 3-to-10-minute range of foot-focused apps. The quality of the video instruction is consistently praised in reviews.
+
+Prehab is a good fit if you have pain in multiple areas and want a single app that covers everything from shoulders to feet. It is less focused than apps built specifically for plantar fasciitis, and it does not adapt daily sessions based on your morning pain.
+
+It is iOS only and English only.
+
+### PlantarCare: the free tracker
+
+PlantarCare is free, has no in-app purchases, and does not require an account. It focuses entirely on heel pain and plantar fasciitis. You log your morning first-step pain and worst daytime pain, and the app moves you through recovery stages with guided stretches, calf work, heel raises and icing reminders matched to your stage.
+
+For a free app, it does a surprising amount right: pain trending over time, footwear and load logging, and red-flag reminders that tell you when to see a clinician. The trade-off is that it is new, has no ratings yet, and does not describe the research behind its exercise selection.
+
+PlantarCare is a reasonable starting point if you want to track your pain for free and follow basic stretches without committing to a subscription. It is iOS only.
+
+### Arch: Flat Feet Trainer
+
+Arch is the only app in this comparison focused entirely on flat feet and arch strengthening. It has 40+ foot exercises, progress tracking and a clean design. At $39.99 a year or $9.99 a month, with a 7-day free trial, the price is moderate.
+
+A reviewer noted that the app lacks exercise videos, using illustrations instead. The app claims its routines are "backed by science" and "proven physiotherapy principles" but does not cite specific studies. With only 6 ratings on the App Store, it is early in its life.
+
+If your primary concern is flat feet without significant pain, Arch is worth trying. For plantar fasciitis, it is not the right fit since it does not include heel-specific rehab exercises or pain tracking.
+
+### Plantar Fasciitis Exercises: a basic app with a paywall
+
+This app by Verdhit Agarwal offers 15 exercises across three levels: gentle stretches, strength building and advanced drills. It is listed as free on both iOS and Android, but both store listings show in-app purchases, and one reviewer reported being asked to pay for a monthly membership before they could use it.
+
+The exercises are basic, with text instructions rather than video demonstration. There is no progression logic, no pain tracking and no adaptation. The single iOS rating is 1 out of 5, and that review is specifically about being charged unexpectedly. It is the kind of app that exists because "plantar fasciitis exercises" is a high-volume search term, not because someone built a thoughtful program.
+
+If you want a free reference for what stretches to try, check the store listing before you start since some exercises may sit behind a paywall. For an actual guided program with progression, it is not enough.
+
+### Walkito: what it does and what it does not
+
+Walkito is an exercise program for heel pain, flat feet and lower-leg pain. It was released on the App Store on October 2, 2026. It is new, has no ratings yet, and is iOS only.
+
+What it does: builds a weekly plan from your answers about pain, goals and schedule. Each morning, a check-in adjusts that day's session to how your foot feels. Tests every 14 days measure calf raises, arch hold and single-leg balance, and compare left to right. Sessions are 3, 5 or 10 minutes. Exercises follow the 2023 heel pain guideline and the Rathleff 2015 trial. It connects to Apple Health for steps, sleep and walking data, which stay on your phone.
+
+What it does not: it does not diagnose your pain, it is not a medical device, it has no clinician on the other end and it is not available on Android. It covers heel pain, flat feet and shin pain, not the 15+ injury types Exakt covers or the full-body scope of Hinge Health or Prehab.
+
+At $44.99 a year or $7.99 a week, the annual price is lower than most competitors. The weekly price is higher relative to the annual, which is standard subscription pricing.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### How to choose
+
+Start from your situation, not from feature lists.
+
+- **You are a runner with plantar fasciitis** and want a structured return to running: [Exakt Health](https://www.exakthealth.com/) is the strongest fit.
+- **Your employer covers Hinge Health**: check your eligibility. A care team with PTs and doctors is hard to beat at zero cost.
+- **You have pain in several body areas**, not just your feet: [Prehab](https://theprehabguys.com/) gives you 55+ programs in one subscription.
+- **You want a free starting point** to track heel pain and try basic stretches: [PlantarCare](https://apps.apple.com/us/app/plantarcare-heel-pain-tracker/id6789899136) does that well for no cost.
+- **Your main issue is flat feet** without significant pain: [Arch: Flat Feet Trainer](https://apps.apple.com/us/app/arch-flat-feet-trainer/id6755728858) is focused on exactly that.
+- **You want a daily plan for heel pain or flat feet that adjusts to your morning** and tests your progress: that is what [Walkito](https://walkito.site/) was built for.
+
+### When an app is not enough, see a clinician
+
+- your pain followed an injury or a fall
+- you cannot put weight on the foot or you are limping
+- the pain comes with numbness, tingling, burning, swelling or warmth
+- the heel is red, or you have a fever
+- pain wakes you at night or is present at rest
+- both feet hurt and other joints are swollen or stiff
+- pain is getting worse week over week despite exercise
+- you have diabetes, reduced feeling in your feet or poor circulation
+
+### Doing it as a plan
+
+If you have read this far and Walkito sounds like a fit, here is how it works. You answer a few questions about where it hurts, which side, how active you are and your goal. Walkito builds a weekly plan around those answers. Each morning, a check-in adjusts the day. Every 14 days, a short test measures calf endurance, arch hold and single-leg balance.
+
+#### Is there a free app for plantar fasciitis?
+
+PlantarCare is free with no in-app purchases. It tracks morning pain, suggests stretches matched to your recovery stage, and shows trends over time. The "Plantar Fasciitis Exercises" app is listed as free but shows in-app purchases on the store, and a reviewer reported being charged to use it. PlantarCare is the more reliably free option of the two.
+
+#### What exercises should a plantar fasciitis app include?
+
+The 2023 clinical guideline for heel pain gives plantar fascia and calf stretching a grade of A and strength training a grade of B. A good app should include both: stretching for the fascia and calf, and progressive calf strengthening such as heel raises. Exercises that progress in difficulty and adapt to your pain level are more useful than a static list.
+
+#### Is Exakt Health better than Walkito for plantar fasciitis?
+
+Exakt Health covers more conditions, including 15+ running injuries and full run training plans. It is on both iOS and Android and is certified as a medical device in the EU. Walkito focuses specifically on heel and foot pain with daily pain-based adaptation and 14-day progress tests. Exakt is the stronger choice for runners who need rehab plus a running plan. Walkito is narrower but adjusts each session to your morning.
+
+#### Can an app replace seeing a physical therapist for plantar fasciitis?
+
+No app replaces a clinician who can examine your foot, rule out other causes and adjust a plan in real time. An app is useful for guided daily exercises between visits, or as a starting point when pain is mild and matches the typical plantar fasciitis pattern. If pain came from an injury, comes with swelling or numbness, or is getting worse, see a clinician first.
+
+#### Is Hinge Health free?
+
+Hinge Health is free to members whose employer or health plan covers it. You cannot buy it directly from the App Store. Check eligibility at hinge.health/covered. If you are covered, it includes a care team with physical therapists and doctors at no cost to you.
+
+#### Why does Walkito not call itself the best app for plantar fasciitis?
+
+Because it would not be honest. Walkito is new, has no user ratings yet, covers fewer conditions than Exakt Health, and has no clinician on the other end like Hinge Health. What it does well is adjust each day to your pain and test your progress every 14 days. Whether that makes it the right app for you depends on what you need.
+
+#### Do any of these apps work on Android?
+
+Exakt Health and Hinge Health are on both iOS and Android. "Plantar Fasciitis Exercises" is also on both, though it shows in-app purchases on each store. Walkito, Prehab, PlantarCare and Arch are currently iOS only. If you use Android, Exakt Health is the most feature-complete option for foot pain.
+
+## Walkito vs Exakt Health: which one fits you?
+
+Language: English · https://walkito.site/walkito-vs-exakt-health/ · published 2026-10-04 · updated 2026-10-04
+
+Walkito and Exakt Health both offer exercise-based plans for plantar fasciitis, but they are built for different people. Exakt is a runner's app with 15+ injury rehab plans and a return-to-running program. Walkito is a narrower app focused on heel pain, flat feet and daily pain adaptation. This page compares them honestly, says where Exakt is the better choice, and explains what Walkito does differently.
+
+- Exakt Health covers 15+ running injuries and includes running training plans from 5K to marathon. Walkito covers heel pain, flat feet and shin pain only.
+- Exakt is on both iOS and Android. Walkito is iOS only as of October 2026.
+- Exakt Health is certified as a medical device in the EU. Walkito is not a medical device.
+- Walkito adjusts each session from a morning pain check-in and tests left-right asymmetry every 14 days. Exakt adapts its plan from end-of-session feedback.
+- Exakt costs $19.99/month or $59.99 for six months. Walkito costs $44.99/year or $7.99/week.
+
+### Side-by-side comparison
+
+Every Exakt fact below was checked against the Exakt Health App Store listing, Google Play listing and exakthealth.com in October 2026. Every Walkito fact comes from the Walkito App Store listing, walkito.site and the app's own source code.
+
+### Who is Exakt Health built for?
+
+Exakt Health is built for runners. That is its core identity, and everything in the app reflects it. If you are a runner recovering from plantar fasciitis, Achilles tendinopathy, an ankle sprain, a hamstring strain or a meniscus tear, Exakt has a specific rehab plan for your injury. It covers over 15 different conditions.
+
+Each rehab plan ends with a walk-run return-to-running program, which is one of the hardest parts of recovery to get right on your own. The app also has running training plans for every distance from couch to 5K through to marathon.
+
+Exakt was founded in 2021 by Philip Billaudelle, Lucia Payo and Maryke Louw. It is built by licensed sports physiotherapists and running coaches, and it raised about EUR 2.2 million in seed funding in September 2024. The team is based in Berlin. The app is certified as a medical device in the EU, meaning it has passed regulatory review for its intended use.
+
+If you are a runner who needs both injury rehab and a structured training plan, Exakt is hard to match. Its 4.8 rating across 125 iOS reviews and 100K+ Android downloads show that it works for its audience.
+
+### Who is Walkito built for?
+
+Walkito is built for people whose feet hurt and who want a short daily exercise plan that adjusts to how they feel each morning. That includes plantar fasciitis, flexible flat feet, and shin pain. It is also built for people on their feet all day: nurses, retail workers, warehouse staff.
+
+The app is narrower than Exakt. It does not cover knee injuries, hamstring strains or running plans. What it does differently is adjust each day's session from a morning pain check-in rather than end-of-session feedback. A morning of 7/10 or higher switches the day to about three minutes of seated work. A big day on your feet (measured through Apple Health steps) turns the next strength session into a lighter recovery one.
+
+Walkito tests progress every 14 days with calf raises, an arch hold and single-leg balance, and compares your left side with your right. That left-right comparison is something most apps in this space do not track.
+
+Walkito was released on October 2, 2026. It is new, has no user ratings yet, and is iOS only. It does not have the track record or breadth that Exakt has built since 2021.
+
+### How does each app build your plan?
+
+Exakt asks about your injury, your experience level, and your weekly schedule, then assigns you a structured rehab plan with levels. You progress through levels based on how each session goes. When rehab is done, you can switch directly to a running training plan without starting over.
+
+Walkito asks about pain location, which side, your activity level, your goal, and how many days and minutes you have. It builds a weekly plan around measured goals: pain-free mornings, a 60-second arch hold, 25 single-leg calf raises, 30-second single-leg balance, and left-right symmetry. Each week it rebuilds the plan from how the previous week went. One goal is the focus at a time. When a goal is reached, it moves to maintaining and the next goal starts.
+
+The main difference: Exakt follows a structured level-based progression. Walkito follows a goal-based progression where each morning's check-in adjusts the day's intensity.
+
+### Conditions covered
+
+This is where Exakt is clearly stronger. Its rehab plans cover plantar fasciitis, Achilles tendinopathy, ankle sprains, hamstring strains, meniscus tears, runner's knee and more. If your pain is in your knee, hip or hamstring, Walkito does not have a plan for it.
+
+Walkito covers plantar fasciitis, flat feet (flexible), heel pain from standing, and shin pain. Its exercises follow the 2023 heel pain guideline (stretching grade A, strength grade B) and the Rathleff 2015 trial (loaded heel raises for plantar fasciitis). For those specific conditions, it has exercises, progression logic and pain adaptation. For anything outside that scope, Exakt or a broader app like Prehab is the right choice.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### Price comparison
+
+Walkito costs $44.99 per year or $7.99 per week. The annual price works out to about $0.87 per week. No free trial is listed on the App Store, though the terms of use allow for introductory offers.
+
+Exakt costs $19.99 per month for rehab plans, with 3-month ($39.99) and 6-month ($59.99) options. Running training plans go up to $99.99 per year. Every subscription starts with a 7-day free trial.
+
+Over a full year: Walkito annual is $44.99. Exakt's cheapest rehab option (6-month plan renewed twice) is about $120. If you include a running plan, Exakt can exceed $200 per year.
+
+If you need only heel or foot pain exercises, Walkito is significantly cheaper. If you need running injury rehab plus a training plan, Exakt's higher price covers more.
+
+### Platforms and languages
+
+Exakt Health is on both iOS and Android. If you use an Android phone, this is the deciding factor by itself since Walkito is iOS only.
+
+Exakt supports English, French, German and Spanish. Walkito supports English, Russian and Spanish. The overlap is English and Spanish. If you need French or German, Exakt is the only option. If you need Russian, Walkito is the only option.
+
+### Privacy
+
+Walkito reads Apple Health data (steps, sleep, walking asymmetry, walking speed, resting heart rate) and keeps it on the device. It is never uploaded. What gets synced to the Walkito account is pain scores, session data and test results. There is no ad tracking.
+
+Exakt Health's App Store privacy label lists Identifiers as data used to track you, and Purchases, Identifiers, Usage Data and Diagnostics as data collected but not linked to your identity. Its Google Play listing states no data is shared with third parties, financial data may be collected, data is encrypted in transit and deletion is available.
+
+Both apps collect standard usage data. Neither sells health data. Walkito's on-device approach to Apple Health data is a stricter privacy model.
+
+### Evidence base
+
+Exakt Health is certified as a medical device in the EU (Germany), which requires evidence of safety and intended purpose. The app is built by licensed sports physiotherapists. It states that its methods are evidence-based but does not list specific studies on its App Store listing or pricing page.
+
+Walkito lists its evidence sources on its website. Its exercises follow the 2023 clinical guideline for heel pain (Koc et al., JOSPT), the Rathleff 2015 trial on heavy heel raises, the Brijwasi 2023 trial on flat feet exercises, and others. Each exercise in the app carries an evidence level (Strong, Moderate, or Early) with a one-line explanation.
+
+Neither app has published its own clinical trial. Both rely on existing research applied through their respective programs.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### When to pick Exakt Health over Walkito
+
+Pick Exakt Health if any of the following is true:
+
+- You are a runner recovering from a running injury and want a structured return-to-running plan.
+- Your injury is not plantar fasciitis or flat feet. Exakt covers 15+ conditions; Walkito covers three.
+- You use an Android phone.
+- You want a 7-day free trial to test the app before paying.
+- EU medical device certification matters to you.
+- You need the app in French or German.
+
+### When to pick Walkito over Exakt Health
+
+Pick Walkito if any of the following is true:
+
+- Your pain is specifically heel pain, plantar fasciitis or flat feet, and you want a focused program for that.
+- You want sessions of 3 to 10 minutes rather than 15 to 30.
+- Daily pain adaptation from a morning check-in matters more to you than level-based progression.
+- You want progress tests every 14 days that compare left to right.
+- Price is a factor: Walkito at $44.99 per year is less than half of Exakt's lowest annual cost.
+- You need the app in Russian.
+- You are on your feet all day for work, not running, and want an app built for that.
+
+### When an app is not enough, see a clinician
+
+- your pain followed an injury or a fall
+- you cannot put weight on the foot or you are limping
+- the pain comes with numbness, tingling, burning, swelling or warmth
+- pain wakes you at night or is present at rest
+- squeezing the sides of the heel hurts, which can point to a stress fracture rather than plantar fasciitis
+- pain is getting worse week over week despite consistent exercise
+- you have diabetes, reduced feeling in your feet or poor circulation
+
+### Doing it as a plan
+
+If Walkito sounds like the right fit for your situation, here is how it works. You answer questions about where it hurts, which side, your activity level and your goal. Walkito builds a weekly plan around measured goals, starting with pain-free mornings. Each morning, one check-in adjusts the day.
+
+#### Is Exakt Health better than Walkito?
+
+It depends on what you need. Exakt Health covers 15+ running injuries and includes return-to-running plans. It is on both iOS and Android and is certified as a medical device in the EU. Walkito is focused on heel pain and flat feet, with daily pain adaptation and shorter sessions. For runners with multiple injury types, Exakt is the stronger fit. For heel-specific pain with daily adjustment, Walkito was built for that.
+
+#### Is Walkito cheaper than Exakt Health?
+
+Yes, on an annual basis. Walkito costs $44.99 per year. Exakt Health's cheapest rehab option is $59.99 for six months, or about $120 per year. Exakt offers a 7-day free trial; Walkito does not currently list one on the App Store.
+
+#### Does Exakt Health have a plantar fasciitis plan?
+
+Yes. Exakt Health has a specific plantar fasciitis rehab plan, along with plans for Achilles tendinopathy, ankle sprains, hamstring strains, meniscus tears and more. The plantar fasciitis plan ends with a walk-run program to return to running safely, and the app adapts the plan as you progress through its levels.
+
+#### Can I use Walkito on Android?
+
+Not yet. Walkito is iOS only as of October 2026. Android is planned but no release date has been announced. If you use Android, Exakt Health is available on Google Play with a plantar fasciitis rehab plan, and it works on both Android and iOS today.
+
+#### Is Exakt Health a medical device?
+
+Yes. Exakt Health is certified as a medical device in the EU (Germany). This means it has passed regulatory review for safety and its intended use. Walkito is not a medical device and does not claim to diagnose or provide medical advice.
+
+#### Which app adapts more to daily pain?
+
+Walkito adjusts each session from a morning pain check-in before you start. A score of 7/10 or higher makes the session lighter. A big step-count day triggers a recovery session the next day. Exakt adapts its plan from how you rate each session after you finish it. Walkito's approach is more reactive to daily pain changes; Exakt's is more focused on overall plan progression.
 
 ## Упражнения и растяжка при плантарном фасциите и боли в пятке
 
