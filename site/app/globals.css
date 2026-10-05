@@ -2159,3 +2159,55 @@ figcaption {
   margin: 18px 0;
   font-size: 15px;
 }
+
+/* Exercise library: a still of each movement beside its name. */
+.prose .library {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.prose .library li {
+  margin: 0;
+}
+
+.prose .library a {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--ink);
+  height: 100%;
+}
+
+.prose .library img {
+  width: 64px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex: none;
+}
+
+.prose .library strong {
+  display: block;
+  font-size: 16px;
+}
+
+.prose .library a span span {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+  margin-top: 2px;
+}
+
+@media (max-width: 640px) {
+  .prose .library {
+    grid-template-columns: 1fr;
+  }
+}

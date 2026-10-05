@@ -72,7 +72,19 @@ export function Footer({ lang = 'en', page }: { lang?: Lang; page?: TranslatedPa
     <footer className="footer">
       <div className="shell">
         <nav aria-label={c.guidesHeading} className="footer-cols">
-          <Column heading={h.exercises} links={group(NAV_GROUPS.exercises)} />
+          <Column
+            heading={h.exercises}
+            links={[
+              ...group(NAV_GROUPS.exercises),
+              ...(lang === 'en'
+                ? [
+                    { href: '/exercises/', label: 'Exercise library' },
+                    { href: '/calf-raise-test/', label: 'Calf raise test' },
+                    { href: '/printable-exercise-sheets/', label: 'Printable sheets (PDF)' },
+                  ]
+                : []),
+            ]}
+          />
           <Column heading={h.pain} links={group(NAV_GROUPS.pain)} />
           {lang === 'en' && (
             <div className="footer-col footer-stack">

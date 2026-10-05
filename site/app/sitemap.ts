@@ -64,6 +64,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // English only for now, so no alternates.
     single('/heel-pain-runners/', PAGE_UPDATED.runners, 'monthly', 0.9),
     ...Object.values(ARTICLES_EN).map((g) => single(EN_ONLY[g.page as EnglishPage], g.updated, 'monthly', 0.9)),
+    single('/exercises/', '2026-10-05', 'monthly', 0.8),
+    single('/printable-exercise-sheets/', '2026-10-05', 'monthly', 0.7),
     single('/program/', PAGE_UPDATED.program, 'monthly', 0.9),
     single('/science/', PAGE_UPDATED.science, 'monthly', 0.9),
     single('/faq/', PAGE_UPDATED.faq, 'monthly', 0.8),

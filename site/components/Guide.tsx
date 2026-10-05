@@ -215,6 +215,11 @@ export function Guide({ guide }: { guide: GuideData }) {
               </p>
             ))}
             {section.table && <Table table={section.table} />}
+            {section.after?.map((p) => (
+              <p key={p}>
+                <Inline text={p} />
+              </p>
+            ))}
             {section.exercises?.some((e) => e.feel != null) ? (
               section.exercises.map((e) => (
                 // An exercise without a clip is text only: no empty box.
