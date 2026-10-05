@@ -200,6 +200,13 @@ export type Purchases = {
   /** Buy a plan from an offering. The token comes from `offering()`, so the
    * price the user was shown is the price being charged. */
   buy(plan: Plan): Promise<PurchaseResult>;
+  /**
+   * Buy a store product by its identifier, for a paywall the app did not draw
+   * (Superwall's). Same tracking, same entitlement check and same results as
+   * `buy`; `basePlanId` and `offerId` pick the Google Play offer the paywall
+   * showed.
+   */
+  buyProduct(request: { productId: string; basePlanId?: string; offerId?: string; source: string }): Promise<PurchaseResult>;
   restore(): Promise<RestoreResult>;
 
   /**
@@ -265,6 +272,7 @@ export const unconfigured: Purchases = {
   configured: false,
   offering: async () => null,
   buy: async () => ({ status: 'unavailable' }),
+  buyProduct: async () => ({ status: 'unavailable' }),
   restore: async () => ({ status: 'unavailable' }),
   // Not entitled, rather than entitled. An unconfigured build is a build whose
   // store was never reached, and the safe reading of "we don't know" is the one

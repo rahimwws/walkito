@@ -6,11 +6,13 @@ import { Platform } from 'react-native';
 import Purchases, {
   LOG_LEVEL,
   PACKAGE_TYPE,
+  PRODUCT_CATEGORY,
   PURCHASES_ERROR_CODE,
   type CustomerInfo,
   type PurchasesError,
   type PurchasesOffering,
   type PurchasesPackage,
+  type PurchasesStoreProduct,
 } from 'react-native-purchases';
 
 import { decideAccess, hadAccess as hadAccessOf, passEnd as passEndOf } from './access';
@@ -505,6 +507,64 @@ export const revenueCatStore: Store = {
         ...props,
         reason: String((error as PurchasesError | undefined)?.code ?? 'unknown'),
       });
+      return { status: 'failed', message: messageFor(error) };
+    }
+  },
+
+  async buyProduct({ productId, basePlanId, offerId, source }): Promise<PurchaseResult> {
+    let product: PurchasesStoreProduct | undefined;
+    try {
+      const found = (
+        await Promise.all([
+          Purchases.getProducts([productId], PRODUCT_CATEGORY.SUBSCRIPTION),
+          Purchases.getProducts([productId], PRODUCT_CATEGORY.NON_SUBSCRIPTION),
+        ])
+      ).flat();
+      // Google Play names a subscription's products `id:basePlan`.
+      product =
+        found.find((p) => p.identifier === productId) ??
+        (basePlanId != null ? found.find((p) => p.identifier === `${productId}:${basePlanId}`) : undefined) ??
+        found[0];
+    } catch (error) {
+      return { status: 'failed', message: messageFor(error) };
+    }
+    if (product == null) {
+      return { status: 'failed', message: translatorFor(getLanguage())('purchase.unavailable') };
+    }
+    const props: PurchaseProps = {
+      plan: /annual|year/i.test(product.identifier) ? 'annual' : 'weekly',
+      product_id: product.identifier,
+      offering: source,
+      price: product.price,
+      currency: product.currencyCode,
+    };
+    track('purchase_started', props);
+    try {
+      // On Google Play the paywall chose a base plan and maybe an offer; buying
+      // the bare product would let the store pick its default offer instead.
+      const option =
+        Platform.OS === 'android' && basePlanId != null
+          ? product.subscriptionOptions?.find((o) => o.id === (offerId ? `${basePlanId}:${offerId}` : basePlanId))
+          : undefined;
+      const { customerInfo } = option != null ? await Purchases.purchaseSubscriptionOption(option) : await Purchases.purchaseStoreProduct(product);
+      announce(customerInfo);
+      if (entitledIn(customerInfo)) {
+        track('purchase_completed', props);
+        return { status: 'purchased' };
+      }
+      track('purchase_failed', { ...props, reason: 'no-entitlement' });
+      explainMissingEntitlement(customerInfo);
+      return { status: 'failed', message: translatorFor(getLanguage())('offer.notUnlocked') };
+    } catch (error) {
+      if (wasCancelled(error)) {
+        track('purchase_cancelled', props);
+        return { status: 'cancelled' };
+      }
+      if (wasPending(error)) {
+        track('purchase_pending', props);
+        return { status: 'pending' };
+      }
+      track('purchase_failed', { ...props, reason: String((error as PurchasesError | undefined)?.code ?? 'unknown') });
       return { status: 'failed', message: messageFor(error) };
     }
   },

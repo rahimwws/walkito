@@ -30,6 +30,7 @@ import { PRIMARY, accents, fonts, meterColors, palette, type AccentName } from '
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { formatPrice } from '@/shared/lib/money';
+import { usePaywall } from '@/shared/lib/paywall';
 import { recordAppEvent } from '@/shared/lib/supabase';
 import { useColorScheme } from '@/shared/lib/theme';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
@@ -145,6 +146,24 @@ export function OfferPage() {
   const invited = useReferral().discounted;
   const boosted = winback || invited;
   const offeringId = boosted ? OFFERINGS.offer : OFFERINGS.standard;
+
+  /**
+   * Superwall's paywall for this moment, over this one.
+   *
+   * The placement says which price the user has earned, so the dashboard can
+   * show a paywall with the matching products. This screen stays underneath as
+   * the fallback: no campaign, no network or no Superwall at all, and it is the
+   * paywall the user sees. A beat after mount, so the screen has arrived — and,
+   * at the end of onboarding, the founders' note has gone — before anything
+   * covers it. Once per view.
+   */
+  const paywall = usePaywall();
+  useEffect(() => {
+    const placement = invited ? 'paywall_invite' : winback ? 'paywall_comeback' : 'paywall_first';
+    const timer = setTimeout(() => paywall.register(placement, { offering: offeringId }), 600);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   /**
    * The offering being sold, and the standard one to strike through against.

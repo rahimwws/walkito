@@ -101,6 +101,12 @@ export type AnalyticsEvents = {
   /** "Rate Walkito" opened the store's review page. Where it was tapped from. */
   rate_app_tapped: { from: 'profile' };
 
+  // ── Superwall ────────────────────────────────────────────────────────────
+  /** A Superwall paywall event: shown, closed, declined, transaction steps,
+   * load failures. `paywall` is the dashboard's paywall identifier. Purchases
+   * themselves are also tracked as purchase_* with `offering: 'superwall'`. */
+  superwall_event: { event: string; paywall?: string };
+
   // ── Errors the user was spared ───────────────────────────────────────────
   /** A link named a screen the app does not have; the user was sent Home. */
   route_not_found: { path: string };

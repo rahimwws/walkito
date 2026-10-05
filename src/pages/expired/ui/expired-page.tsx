@@ -21,6 +21,7 @@ import {
 import { useReferral } from '@/entities/referral';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
+import { usePaywall } from '@/shared/lib/paywall';
 import { formatPrice } from '@/shared/lib/money';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PlanOption } from '@/shared/ui/plan-option';
@@ -55,6 +56,17 @@ type Props = {
 };
 
 export function ExpiredPage({ onUnlocked, onDismiss }: Props) {
+  /**
+   * Superwall's paywall for somebody whose access ended, over this screen,
+   * which stays as the fallback (see the offer page). Once per view.
+   */
+  const paywall = usePaywall();
+  useEffect(() => {
+    const timer = setTimeout(() => paywall.register('paywall_expired'), 600);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];

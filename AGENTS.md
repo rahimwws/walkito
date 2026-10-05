@@ -229,6 +229,17 @@ Personalised email, decided on the server from the user's own synced data. Supab
 - **`EMAIL_MODE`** on the function: `off`, `dry` (decide, send nothing), `test` (only `EMAIL_TEST_RECIPIENTS`), `live`. Sending needs `RESEND_API_KEY`. `EMAIL_POSTAL_ADDRESS` is optional and unset for now, so the footer has no address line; US anti-spam law wants one in the two offer emails, so set it once the company has an address. A dry run for one user at a chosen instant, with the HTML: POST `{ "dryRun": true, "userId": "…", "now": "…", "html": true }` with the cron secret.
 - **Mail lives on walkito.site.** walkito.app has no MX record, which is why hello@walkito.app bounced; `SUPPORT_EMAIL`, the reply-to and the sender are hello@walkito.site (Hostinger mailbox).
 
+# Paywalls: Superwall over our own
+
+Superwall presents paywalls designed and A/B-tested in its dashboard; RevenueCat stays the store. `src/app/providers/superwall.tsx` (`PaywallRoot`, inside the root layout) wires it:
+
+- **Purchases go through ours.** A Superwall paywall's purchase calls `purchases.buyProduct` (`entities/purchase`), so it gets the same `purchase_*` tracking (`offering: 'superwall'`), the same entitlement check and the same errors as our paywall. Restore calls `purchases.restore`. Superwall's subscription status is set from our `entitled()`, never inferred.
+- **Our paywall is the fallback, always.** Screens call `usePaywall().register(placement)` from `@/shared/lib/paywall`; they never import the SDK. The offer page registers `paywall_first`, `paywall_comeback` (win-back, offer email) or `paywall_invite`, and the expiry screen `paywall_expired`, 600 ms after mount. With no campaign for the placement, no network, no key for the platform or a binary without the native module, `register` does nothing and our screen is the paywall. Placement names are dashboard identifiers: renaming one detaches its campaign.
+- **Identity and attributes.** Identified by the Supabase user id (a UUID). Attributes are language, sport, runner level and platform, never health data, by the same rule as analytics.
+- **Events.** Paywall open/close/decline, transaction steps and load failures go to PostHog as `superwall_event`.
+- **Keys.** `SUPERWALL_KEYS` in `shared/config/superwall.ts`: iOS in code, Android from `EXPO_PUBLIC_SUPERWALL_ANDROID_KEY`. No key for a platform means Superwall is not started there.
+- **Native module.** `expo-superwall` is required lazily behind `requireOptionalNativeModule('SuperwallExpo')`, so an older dev client keeps running. It changes the fingerprint: the first build with it is 1.0.3. Deep links (dashboard paywall previews through `walkito://`) are handled by the provider itself.
+
 # Home-screen widget
 
 `features/home-widget`: one widget kind, `DailyCheck`, in two sizes. Small asks the morning check-in; its two cards are `Link`s that open Home on `?checkin=fine` or `?checkin=hurts`. `PainCheck` records "no pain" and says so, or opens the check-in sheet for the scale and the leg map. The widget records nothing itself. Medium shows the day's goal and the week. `importWidgetAnswers` only reads back answers from the first build, which recorded them in the widget.
