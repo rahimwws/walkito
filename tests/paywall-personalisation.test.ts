@@ -70,6 +70,14 @@ describe('paywall personalisation', () => {
     }
   });
 
+  test('a goal that names a condition is not sent', () => {
+    for (const goal of ['painfree', 'flatfeet', 'comeback']) {
+      const out = paywallPersonalisation(input('Sam', { ...full, goal }));
+      expect('goal' in out).toBe(false);
+      expect('goal_label' in out).toBe(false);
+    }
+  });
+
   test('a missing answer is left out, not sent empty', () => {
     const out = paywallPersonalisation(input('', null));
     expect('first_name' in out).toBe(false);

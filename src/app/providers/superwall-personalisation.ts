@@ -11,25 +11,26 @@ import { translatorFor, type Key, type Language } from '@/shared/lib/i18n';
  *
  * The plan and the person's own words for what they want, never their body:
  * no pain, zones, side, measurements, age, weight or shoe size, by the same
- * rule as analytics. The goal and sport are the answers `onboarding_answered`
- * already sends. A missing answer is left out rather than sent as empty, so a
+ * rule as analytics. Goals that name a condition (running pain-free, stronger
+ * arches, coming back from an injury) are left out too: this is a paywall,
+ * and App Review 5.1.3 keeps health-context data away from third parties for
+ * marketing. A missing answer is left out rather than sent as empty, so a
  * paywall's fallback text shows instead of a gap.
  *
  * Pure, so `tests/paywall-personalisation.test.ts` can hold it to that; the
  * provider passes in the live plan.
  */
 
+/** The goals a paywall may name. `painfree`, `flatfeet` and `comeback` are
+ * missing on purpose: see above. */
 const GOALS = {
-  painfree: 'onboarding.goal.painfree',
   race: 'onboarding.goal.race',
   consistent: 'onboarding.goal.consistent',
   stronger: 'onboarding.goal.stronger',
   injuryfree: 'onboarding.goal.injuryfree',
-  flatfeet: 'onboarding.goal.flatfeet',
   ankles: 'onboarding.goal.ankles',
   jump: 'onboarding.goal.jump',
   allday: 'onboarding.goal.allday',
-  comeback: 'onboarding.goal.comeback',
   steady: 'onboarding.goal.steady',
 } as const satisfies Record<string, Key>;
 
