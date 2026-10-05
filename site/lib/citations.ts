@@ -213,6 +213,75 @@ export const CITATIONS: readonly Citation[] = [
     text: 'Chang J, Cho E. Nurses\' steps, distance traveled, and perceived physical demands in a three-shift schedule. Human Resources for Health. 2022;20:72.',
     doi: '10.1186/s12960-022-00768-3',
   },
+  {
+    text: 'Silbernagel KG, Nilsson-Helander K, Thomeé R, Eriksson BI, Karlsson J. A new measurement of heel-rise endurance with the ability to detect functional deficits in patients with Achilles tendon rupture. Knee Surgery, Sports Traumatology, Arthroscopy. 2010;18(2):258–264.',
+    doi: '10.1007/s00167-009-0889-7',
+    pmid: '19690833',
+  },
+  {
+    text: 'Siriphorn A, Eksakulkla S. Calf stretching and plantar fascia-specific stretching for plantar fasciitis: a systematic review and meta-analysis. Journal of Bodywork and Movement Therapies. 2020;24(4):222–232.',
+    doi: '10.1016/j.jbmt.2020.06.013',
+    pmid: '33218515',
+  },
+  {
+    text: 'DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.',
+    doi: '10.2106/00004623-200307000-00013',
+    pmid: '12851352',
+  },
+  {
+    text: 'DiGiovanni BF, Nawoczenski DA, Malay DP, et al. Plantar fascia-specific stretching exercise improves outcomes in patients with chronic plantar fasciitis: a prospective clinical trial with two-year follow-up. Journal of Bone and Joint Surgery (American). 2006;88(8):1775–1781.',
+    doi: '10.2106/JBJS.E.01281',
+    pmid: '16882901',
+  },
+  {
+    text: 'Springer BA, Marin R, Cyhan T, Roberts H, Gill NW. Normative values for the unipedal stance test with eyes open and closed. Journal of Geriatric Physical Therapy. 2007;30(1):8–15.',
+    doi: '10.1519/00139143-200704000-00003',
+    pmid: '19839175',
+  },
+  {
+    text: 'Bellows R, Wong CK. The effect of bracing and balance training on ankle sprain incidence among athletes: a systematic review with meta-analysis. International Journal of Sports Physical Therapy. 2018;13(3):379–388.',
+    pmid: '30038824',
+  },
+  {
+    text: 'Salinas-Torres VM, Salinas-Torres RA, Carranza-García LE, Herrera-Orozco J, Tristán-Rodríguez JL. Prevalence and clinical factors associated with pes planus among children and adults: a population-based synthesis and systematic review. Journal of Foot and Ankle Surgery. 2023;62(5):899–903.',
+    doi: '10.1053/j.jfas.2023.05.007',
+    pmid: '37286098',
+  },
+  {
+    text: 'McKeon PO, Hertel J, Bramble D, Davis I. The foot core system: a new paradigm for understanding intrinsic foot muscle function. British Journal of Sports Medicine. 2015;49(5):290.',
+    doi: '10.1136/bjsports-2013-092690',
+    pmid: '24659509',
+  },
+  {
+    text: 'Gooding TM, Feger MA, Hart JM, Hertel J. Intrinsic foot muscle activation during specific exercises: a T2 time magnetic resonance imaging study. Journal of Athletic Training. 2016;51(8):644–650.',
+    doi: '10.4085/1062-6050-51.10.07',
+    pmid: '27690528',
+  },
+  {
+    text: 'Kulig K, Burnfield JM, Requejo SM, Sperry M, Terk M. Selective activation of tibialis posterior: evaluation by magnetic resonance imaging. Medicine & Science in Sports & Exercise. 2004;36(5):862–867.',
+    doi: '10.1249/01.mss.0000126385.12402.2e',
+    pmid: '15126722',
+  },
+  {
+    text: 'Lynn SK, Padilla RA, Tsang KK. Differences in static- and dynamic-balance task performance after 4 weeks of intrinsic-foot-muscle training: the short-foot exercise versus the towel-curl exercise. Journal of Sport Rehabilitation. 2012;21(4):327–333.',
+    doi: '10.1123/jsr.21.4.327',
+    pmid: '22715143',
+  },
+  {
+    text: 'Jung DY, Kim MH, Koh EK, Kwon OY, Cynn HS, Lee WH. A comparison in the muscle activity of the abductor hallucis and the medial longitudinal arch angle during toe curl and short foot exercises. Physical Therapy in Sport. 2011;12(1):30–35.',
+    doi: '10.1016/j.ptsp.2010.08.001',
+    pmid: '21256447',
+  },
+  {
+    text: 'Zarali A, Raeisi Z, Aminmahalati A. The effects of combined exercises, short foot exercises, and short foot exercises with isometric hip abduction on navicular drop, static parameters, and postural sway in women with flat foot: a randomized trial. BMC Sports Science, Medicine and Rehabilitation. 2024;16(1):233.',
+    doi: '10.1186/s13102-024-01019-9',
+    pmid: '39587664',
+  },
+  {
+    text: 'Lunsford BR, Perry J. The standing heel-rise test for ankle plantar flexion: criterion for normal. Physical Therapy. 1995;75(8):694–698.',
+    doi: '10.1093/ptj/75.8.694',
+    pmid: '7644573',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -256,6 +325,20 @@ export const CITE = {
   karakolis: 36,
   coenen: 37,
   changCho: 38,
+  silbernagelHeelRise: 39,
+  siriphorn: 40,
+  digiovanni2003: 41,
+  digiovanni2006: 42,
+  springer: 43,
+  bellows: 44,
+  salinasTorres: 45,
+  mcKeon: 46,
+  gooding: 47,
+  kulig: 48,
+  lynn: 49,
+  jung: 50,
+  zarali: 51,
+  lunsfordPerry: 52,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

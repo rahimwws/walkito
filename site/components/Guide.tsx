@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Byline, UpdatedLine } from '@/components/Byline';
 import { Evidence } from '@/components/Evidence';
+import { printableForGuide } from '@/lib/printables';
 import { Footer } from '@/components/Footer';
 import { Cite } from '@/components/Cite';
 import { ExerciseMedia } from '@/components/ExerciseMedia';
@@ -122,6 +123,8 @@ export function Guide({ guide }: { guide: GuideData }) {
   // not only the footer: a link a reader can see in context is one a crawler
   // weighs as a real recommendation.
   const related = relatedGuides(guide);
+  // English only: the sheets are in English.
+  const printable = guide.lang === 'en' ? printableForGuide(guidePath(guide)) : undefined;
 
   const breadcrumbs = {
     '@context': 'https://schema.org',
@@ -193,6 +196,15 @@ export function Guide({ guide }: { guide: GuideData }) {
             </ol>
           </nav>
         )}
+        {printable && (
+          <p className="printable-box">
+            <strong>Printable version:</strong> these exercises on a free {printable.pages}-page PDF with a week log.{' '}
+            <a href={`/downloads/${printable.slug}.pdf`} download>
+              Download the PDF
+            </a>
+            {' '}or see <a href="/printable-exercise-sheets/">all printable sheets</a>.
+          </p>
+        )}
 
         {guide.sections.map((section) => (
           <section key={section.h2} id={slug(section.h2)}>
@@ -203,6 +215,11 @@ export function Guide({ guide }: { guide: GuideData }) {
               </p>
             ))}
             {section.table && <Table table={section.table} />}
+            {section.after?.map((p) => (
+              <p key={p}>
+                <Inline text={p} />
+              </p>
+            ))}
             {section.exercises?.some((e) => e.feel != null) ? (
               section.exercises.map((e) => (
                 // An exercise without a clip is text only: no empty box.

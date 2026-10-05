@@ -60,6 +60,8 @@ export type GuideSection = {
   exercises?: readonly GuideExercise[];
   bullets?: readonly string[];
   table?: GuideTable;
+  /** Paragraphs printed after the table, for text that reads the table. */
+  after?: readonly string[];
   /** Study detail kept out of the running text (scales, intervals, p-values),
    * printed with the section's sources. */
   sourceNote?: string;

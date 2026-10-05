@@ -35,7 +35,13 @@ export function relatedGuides(guide: Guide, max = 5): Guide[] {
   const all = [...translated, ...english].filter((g) => g.page !== guide.page);
   const own = groupOf(guide.page);
   const rank = (g: Guide) =>
-    own && groupOf(g.page) === own ? 0 : g.page === 'heelPain' || g.page === 'flatFeet' ? 1 : groupOf(g.page) === 'compare' ? 3 : 2;
+    own && groupOf(g.page) === own
+      ? 0
+      : g.page === 'heelPain' || g.page === 'flatFeet'
+        ? 1
+        : groupOf(g.page) === 'compare' || groupOf(g.page) === 'library'
+          ? 3
+          : 2;
   return all
     .map((g, i) => ({ g, i }))
     .sort((x, y) => rank(x.g) - rank(y.g) || x.i - y.i)
