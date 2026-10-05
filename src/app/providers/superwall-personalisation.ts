@@ -44,7 +44,7 @@ const SPORTS = {
   hiking: 'onboarding.sport.hiking',
 } as const satisfies Record<string, Key>;
 
-export type Personalisation = Record<string, string | number>;
+export type Personalisation = Record<string, string>;
 
 export type PersonalisationInput = {
   name: string;
@@ -80,7 +80,9 @@ export function paywallPersonalisation(input: PersonalisationInput): Personalisa
 
   const date = (day: number) =>
     new Intl.DateTimeFormat(language, { month: 'long', day: 'numeric' }).format(new Date(input.dateOfDay(day)));
-  out.plan_weeks = Math.round(input.planLength / 7);
+  // A string, like every value here: the paywall declares its params as
+  // text, and Liquid's `default` does not apply to a number.
+  out.plan_weeks = String(Math.round(input.planLength / 7));
   out.plan_end_date = date(input.planLength);
   if (input.firstRetestDay != null) out.first_checkpoint_date = date(input.firstRetestDay);
 

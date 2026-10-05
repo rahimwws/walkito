@@ -56,7 +56,7 @@ describe('paywall personalisation', () => {
     expect(out.goal).toBe('race');
     expect(out.goal_label).toBe('Train for a race');
     expect(out.sport_label).toBe('Running');
-    expect(out.plan_weeks).toBe(12);
+    expect(out.plan_weeks).toBe('12');
     expect(out.first_checkpoint_date).toBe('October 19');
     expect(out.plan_end_date).toBe('December 28');
   });
