@@ -2106,3 +2106,56 @@ figcaption {
   gap: 14px;
   font-size: 14px;
 }
+
+/* Printable sheets: a preview of page one beside what is on it. */
+.prose .printables {
+  display: grid;
+  gap: 22px;
+  margin: 24px 0 8px;
+}
+
+.prose .printable {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.prose .printable img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--hairline);
+  flex: none;
+}
+
+.prose .printable h2 {
+  margin: 0 0 6px;
+  font-size: 19px;
+}
+
+.prose .printable p {
+  margin: 0 0 8px;
+}
+
+.prose .printable-meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.prose .printable-download,
+.prose .printable-box a {
+  display: inline-block;
+  font-weight: 600;
+}
+
+/* "Printable sheet" call-out on a guide. */
+.prose .printable-box {
+  border: 1px dashed var(--muted);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin: 18px 0;
+  font-size: 15px;
+}

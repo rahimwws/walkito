@@ -1,3 +1,4 @@
+import { AiReferral } from '@/components/AiReferral';
 import { JsonLd } from '@/components/JsonLd';
 import { anton, oswald } from '@/lib/fonts';
 import type { Lang } from '@/lib/i18n';
@@ -64,6 +65,7 @@ export function RootDocument({ lang, children }: { lang: Lang; children: React.R
             banner stuck to the top of the page. */}
         <div className="wash" aria-hidden />
         {children}
+        <AiReferral />
       </body>
     </html>
   );
