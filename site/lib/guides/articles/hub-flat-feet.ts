@@ -2,32 +2,21 @@ import { CITE } from '@/lib/citations';
 import type { Guide } from '../types';
 
 /*
- * ── Hub: Flat feet ────────────────────────────────────────────────────
+ * Hub: Flat feet
  *
- * ── New citations (append to CITATIONS[] in lib/citations.ts) ─────────
- *
- * 39 | salinasTorres
- *   Salinas-Torres VM, Salinas-Torres RA, Carranza-García LE,
- *   Herrera-Orozco J, Tristán-Rodríguez JL. Prevalence and Clinical
- *   Factors Associated With Pes Planus Among Children and Adults:
- *   A Population-Based Synthesis and Systematic Review. Journal of
- *   Foot and Ankle Surgery. 2023;62(5):899–903.
- *   doi: 10.1053/j.jfas.2023.05.007 | PMID: 37286098
- *   Design: Systematic review (12 population-based studies, n = 16 000)
- *
- * Add to CITE map:
- *   salinasTorres: 39,
+ * No new citations needed. Salinas-Torres VM, et al. Prevalence and
+ * Clinical Factors Associated With Pes Planus Among Children and Adults:
+ * A Population-Based Synthesis and Systematic Review. Journal of Foot
+ * and Ankle Surgery. 2023;62(5):899-903. is already in CITATIONS[] as
+ * CITE.salinasTorres (index 45). An earlier draft of this file pointed at
+ * a stale placeholder index (39, which actually belongs to
+ * silbernagelHeelRise). Fixed below to use CITE.salinasTorres directly.
  *
  * Integration:
  *   1. Add to EN_ONLY in lib/i18n.ts:
  *        hubFlatFeet: '/flat-feet/',
- *   2. Append the citation above to CITATIONS[] and CITE map.
- *   3. Register the guide in articles-en.ts / index.ts.
+ *   2. Register the guide in articles-en.ts / index.ts.
  */
-
-/** Placeholder index for the new citation. Replace with CITE.salinasTorres
- *  after adding it to lib/citations.ts. */
-const CITE_SALINAS_TORRES = 39;
 
 export const HUB_FLAT_FEET_EN: Guide = {
   lang: 'en',
@@ -58,7 +47,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
         '"Fallen arches" is a common name for flat feet. Most of the time the two phrases mean the same thing. Sometimes "fallen arches" is used more specifically for an arch that has dropped in adulthood, which has a different cause covered below.',
         'Having flat feet does not automatically mean something is wrong. Many people with low arches walk, run and stand without any symptoms. The questions that matter are whether the flat foot is flexible or rigid, and whether it is causing pain.',
       ],
-      cites: [CITE_SALINAS_TORRES],
+      cites: [CITE.salinasTorres],
     },
     {
       h2: 'How do you tell if flat feet are flexible or rigid?',
@@ -171,7 +160,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
     },
     {
       q: 'Do children grow out of flat feet?',
-      cites: [CITE_SALINAS_TORRES],
+      cites: [CITE.salinasTorres],
       a: 'Most do. Flat feet are nearly universal in toddlers, and the arch usually develops by about age 6 to 10. A 2023 systematic review noted that prevalence is highest in children aged 3 to 5 and declines into adolescence (Salinas-Torres and colleagues, 2023). A child who still has painless flexible flat feet into their teens is unlikely to have a problem that needs solving.',
     },
     {

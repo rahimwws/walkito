@@ -21,7 +21,7 @@ export const EX_CALF_RAISES: Guide = {
     'A calf raise is a standing or seated exercise where you push up onto the balls of your feet. It strengthens the gastrocnemius (the bigger outer calf muscle) and the soleus (the deeper one), and it loads the Achilles tendon and plantar fascia with every rep. This page covers the double-leg standing raise, the seated version, and the isometric hold at the top.',
   takeaways: [
     'The 2023 heel pain guideline grades calf strengthening B and recommends it alongside stretching, which it grades A (Koc and colleagues, 2023).',
-    'A normative study of 566 healthy adults found a median single-leg calf raise count of about 23 to 24 repetitions, shifting with age, sex and activity level (Hebert-Losier and colleagues, 2017).',
+    'A normative study of 566 healthy adults (ages 20 to 81) found a median single-leg calf raise count of 24 reps for men and 21 for women, shifting with age, sex and activity level (Hebert-Losier and colleagues, 2017).',
     'Reduced ankle dorsiflexion, often from a tight gastrocnemius, was the strongest independent risk factor for plantar fasciitis in a matched case-control study of 50 cases and 100 controls (Riddle and colleagues, 2003).',
     'Standing calf raises primarily load the gastrocnemius. Seated calf raises shift the load to the soleus because the bent knee shortens the gastrocnemius.',
   ],
@@ -115,7 +115,7 @@ export const EX_CALF_RAISES: Guide = {
       h2: 'How many calf raises should you do?',
       paragraphs: [
         'It depends on where you are in the ladder and what you are working on. For general calf strength, 3 sets of 10 to 15 reps at a slow tempo is a common starting dose. For the research-tested plantar fasciitis protocol, the towel heel raise starts at a 12-repetition maximum for 3 sets and progresses to 8RM for 5 sets over about five weeks.',
-        'A useful benchmark is the single-leg heel-raise endurance test. A normative study of 566 healthy adults found a typical count of about 23 to 24 repetitions, varying with age, sex and activity. The calf goal in the Walkito app is 25 single-leg calf raises. Reaching it does not end the work. It moves to maintaining.',
+        'A useful benchmark is the single-leg heel-raise endurance test. A normative study of 566 healthy adults found a median of 24 reps for men and 21 for women, varying with age, sex and activity. The calf goal in the Walkito app is 25 single-leg calf raises. Reaching it does not end the work. It moves to maintaining.',
         'For more on the specific plantar fasciitis protocol, see [towel heel raises](/exercises/towel-heel-raise/). For the Achilles tendon version, see [eccentric heel drops](/exercises/eccentric-heel-drops/).',
       ],
       cites: [CITE.hebertLosier, CITE.rathleff],
@@ -151,7 +151,7 @@ export const EX_CALF_RAISES: Guide = {
     {
       q: 'How many single-leg calf raises is normal?',
       cites: [CITE.hebertLosier],
-      a: 'A normative study of 566 healthy adults found a typical count of about 23 to 24 repetitions, adjusting for age, sex and activity level (Hebert-Losier 2017). The number is useful for tracking change over weeks and comparing one leg to the other, not as a pass-fail line.',
+      a: 'A normative study of 566 healthy adults found a median of 24 reps for men and 21 for women, adjusting for age, sex and activity level (Hebert-Losier 2017). The number is useful for tracking change over weeks and comparing one leg to the other, not as a pass-fail line.',
     },
     {
       q: 'Should calf raises be done every day?',

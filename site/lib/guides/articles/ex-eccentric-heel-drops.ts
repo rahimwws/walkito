@@ -15,7 +15,7 @@ export const EX_ECCENTRIC_HEEL_DROPS: Guide = {
   updated: '2026-10-05',
   title: 'Eccentric Heel Drops: How to Do Them Correctly',
   description:
-    'How to do eccentric heel drops for the Achilles tendon: the Alfredson protocol, sets, reps, tempo, insertional vs. mid-portion differences, and common mistakes.',
+    'How to do eccentric heel drops for the Achilles tendon: the Alfredson protocol, sets, reps, tempo, and common mistakes.',
   h1: 'Eccentric heel drops: how to do them, sets, reps and what the research says',
   lede:
     'An eccentric heel drop is a strength exercise where you rise on both feet and lower slowly on one, letting the heel sink below a step edge. The lowering phase, called an eccentric contraction, is the point. It was designed for Achilles tendinopathy and first tested in a 1998 trial by Alfredson, where 15 athletes returned to running after doing it twice daily for three months.',

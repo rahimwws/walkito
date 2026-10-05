@@ -10,6 +10,11 @@ import type { Guide } from '../types';
  *   functional deficits in patients with Achilles tendon rupture.
  *   Knee Surgery, Sports Traumatology, Arthroscopy. 2010;18(2):258–264.
  *   doi: 10.1007/s00167-009-0889-7 | PMID: 19690833 | validation study (RCT cohort)
+ *
+ * lunsfordPerry
+ *   Lunsford BR, Perry J. The standing heel-rise test for ankle plantar
+ *   flexion: criterion for normal. Physical Therapy. 1995;75(8):694–698.
+ *   doi: 10.1093/ptj/75.8.694 | PMID: 7644573 | cross-sectional normative study
  */
 
 export const CALF_RAISE_TEST_EN: Guide = {
@@ -80,7 +85,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
       h2: 'How many single-leg calf raises should you be able to do?',
       paragraphs: [
         'The table below shows the median number of single-leg heel-rise repetitions by age and sex, from Hebert-Losier 2017. These are model estimates for a person with a moderate physical activity level (level 4 on a 6-point scale) and a body mass index of 24.2, averaged across both legs.',
-        'Higher activity levels add roughly five to nine reps to the median. In 1995, Lunsford and Perry tested 203 adults aged 20 to 50 and recommended 25 repetitions as the criterion for normal performance. The Hebert-Losier data support that figure as a reasonable adult reference, though it is a population-level median, not a pass-fail line. Your own baseline and the direction of change matter more than any single number.',
+        'Higher activity levels add roughly five to nine reps to the median. In 1995, Lunsford and Perry tested 203 adults aged 20 to 59 and recommended 25 repetitions as the criterion for normal performance. The Hebert-Losier data support that figure as a reasonable adult reference, though it is a population-level median, not a pass-fail line. Your own baseline and the direction of change matter more than any single number.',
       ],
       table: {
         caption: 'Median single-leg heel-rise repetitions by age and sex (Hebert-Losier 2017)',
@@ -97,7 +102,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
       },
       sourceNote:
         'Model estimates for BMI 24.2 and physical activity level 4. Values are the average of left and right sides, rounded to the nearest integer. From Table 4 of Hebert-Losier 2017 (n = 566).',
-      cites: [CITE.hebertLosier],
+      cites: [CITE.lunsfordPerry, CITE.hebertLosier],
     },
     {
       h2: 'Should your left and right leg score the same?',

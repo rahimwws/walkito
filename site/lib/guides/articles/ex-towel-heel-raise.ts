@@ -31,7 +31,7 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
       h2: 'What does a towel heel raise work?',
       paragraphs: [
         'A towel heel raise works the gastrocnemius and soleus (the two calf muscles), the Achilles tendon, and the plantar fascia. The rolled towel bends the toes upward at the top of the raise, which pulls on the plantar fascia through the windlass mechanism. Without the towel, the exercise mainly trains the calf. With it, the fascia takes part of the load.',
-        'This is why the Rathleff trial used the towel specifically for plantar fasciitis rather than a plain heel raise. The goal is to load the calf-Achilles-fascia chain together. If your pain is in the Achilles tendon rather than under the foot, an [eccentric heel drop](/exercises/eccentric-heel-drops/) without the towel is the better starting point.',
+        'This is why the Rathleff trial used the towel specifically for plantar fasciitis instead of a plain heel raise. The goal is to load the calf-Achilles-fascia chain together. If your pain is in the Achilles tendon rather than under the foot, an [eccentric heel drop](/exercises/eccentric-heel-drops/) without the towel is the better starting point.',
       ],
       cites: [CITE.rathleff],
     },
@@ -81,7 +81,7 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
       h2: 'Common mistakes with the towel heel raise',
       paragraphs: [
         'Going too fast is the most common mistake. A three-second descent keeps the calf under tension long enough to build strength. Bouncing up and down turns it into a cardio exercise, not a strength one.',
-        'Letting the towel slip so only one or two toes sit on it reduces the fascia load. All five toes should be on the towel. If the towel keeps sliding, fold it thicker or use a hand towel rather than a bath towel.',
+        'Letting the towel slip so only one or two toes sit on it reduces the fascia load. All five toes should be on the towel. If the towel keeps sliding, fold it thicker or use a hand towel instead of a bath towel.',
         'Starting on one leg when both-leg raises are still hard leads to poor form and compensation. If a single-leg raise on a step is too much right now, start with [double-leg calf raises](/exercises/calf-raises/) on the floor and build up.',
       ],
     },
@@ -141,7 +141,7 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
   redFlags: {
     h2: 'See a clinician first if',
     bullets: [
-      'the pain followed a sudden pop or injury rather than building gradually',
+      'the pain followed a sudden pop or injury instead of building up gradually',
       'you cannot put weight on the foot or you are limping',
       'the heel is red, warm or swollen, or you have a fever',
       'pain wakes you at night or is present when you are not standing',

@@ -61,7 +61,7 @@ export const EX_TIBIALIS_RAISES: Guide = {
       h2: 'Do tibialis raises help shin splints?',
       paragraphs: [
         'Shin splints, formally called medial tibial stress syndrome (MTSS), involve pain along the inner edge of the shin bone. The tibialis anterior sits on the outer front of the shin, not at the usual pain site for MTSS, so the connection is indirect. The rationale is that a stronger tibialis anterior helps absorb impact during running and walking, reducing strain on the shin as a whole.',
-        'A 2007 case-control study found that athletes with MTSS had lower calf-raise endurance than matched controls, pointing to a general lower-leg strength deficit rather than weakness in one specific muscle. A 2013 systematic review of MTSS prevention concluded that the evidence for exercise-based prevention was limited, though calf and shin strengthening appeared in most recommended programs.',
+        'A 2007 case-control study found that athletes with MTSS had lower calf-raise endurance than matched controls, pointing to a general lower-leg strength deficit, not weakness in one specific muscle. A 2013 systematic review looked at treating MTSS that has already developed, not preventing it, and found no trial showed stretching or strengthening exercises were effective, though the evidence behind that finding was low quality overall.',
         'Honestly, we do not have a trial that tested tibialis raises alone for shin splints and showed they reduced symptoms or recurrence. The exercise is in programs because it makes biomechanical sense, not because a trial proved it. That is why its evidence label says "early." For the full shin splints page, see [shin splints exercises](/shin-splints-exercises/).',
       ],
       cites: [CITE.madeley, CITE.winters],
@@ -84,7 +84,7 @@ export const EX_TIBIALIS_RAISES: Guide = {
     {
       h2: 'Common mistakes with tibialis raises',
       paragraphs: [
-        'Feet too far from the wall. If the heels slide forward, you lose the wall support and the exercise turns into a balance challenge rather than a shin strengthener. About one foot-length away from the wall is right for most people.',
+        'Feet too far from the wall. If the heels slide forward, you lose the wall support and the exercise turns into a balance challenge instead of a shin strengthener. About one foot-length away from the wall is right for most people.',
         'Rushing the reps. A slow, controlled lift and lower produces more muscle work than fast reps. Two seconds up, one-second hold, two seconds down is a good tempo.',
         'Confusing muscle burn with bone pain. A burning sensation along the front of the shin muscles is normal during the set. A sharp, localized pain on the shin bone itself is not, and could point to a stress reaction. Stop and have it checked.',
       ],
@@ -98,7 +98,7 @@ export const EX_TIBIALIS_RAISES: Guide = {
     {
       q: 'Can tibialis raises prevent shin splints?',
       cites: [CITE.madeley, CITE.winters],
-      a: 'They are often recommended as part of a shin splints prevention plan, and the biomechanical rationale makes sense. But a 2013 systematic review found limited evidence for any single exercise-based prevention strategy for MTSS. Tibialis raises have not been tested alone in a trial for shin splints prevention.',
+      a: 'They are often included in shin splints programs for the biomechanical rationale, not trial evidence. A 2013 systematic review looked at treating MTSS, not preventing it, and found no trial showed strengthening exercises worked, though the evidence was low quality. Tibialis raises alone have not been tested for shin splints prevention either.',
     },
     {
       q: 'How often should you do tibialis raises?',
@@ -113,7 +113,7 @@ export const EX_TIBIALIS_RAISES: Guide = {
     h2: 'See a clinician first if',
     bullets: [
       'you have sharp, focused pain on the shin bone rather than diffuse muscle soreness',
-      'pain builds during running after you recently increased your mileage, which can point to a stress fracture rather than muscle fatigue',
+      'pain builds during running after you recently increased your mileage, which can point to a stress fracture instead of muscle fatigue',
       'there is swelling, redness or warmth over the shin',
       'you have trouble lifting the front of your foot (foot drop)',
       'numbness or tingling appears in the foot or lower leg',

@@ -14,7 +14,7 @@ export const EX_BAND_INVERSION: Guide = {
   updated: '2026-10-05',
   title: 'Ankle Inversion with a Band: Tibialis Posterior Exercise',
   description:
-    'How to do ankle inversion with a resistance band to strengthen the tibialis posterior: technique, sets and reps, what it does for the arch, common mistakes, and what research shows.',
+    'How to do ankle inversion with a band to strengthen the tibialis posterior: technique, sets and reps, common mistakes, and what research shows.',
   h1: 'Ankle inversion with a band: how to strengthen the tibialis posterior',
   lede:
     'Ankle inversion with a resistance band is an exercise that strengthens the tibialis posterior, the deep calf muscle whose tendon runs under the inner ankle and supports the arch from below. You turn the sole of the foot inward against the resistance of a band. A 2004 MRI study found that a similar movement, closed-chain foot adduction, produced the greatest isolated activation of the tibialis posterior out of three exercises tested.',

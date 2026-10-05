@@ -2,8 +2,11 @@ import { CITE } from '@/lib/citations';
 import type { Guide } from '../types';
 
 /*
- * ── No new citations needed for this file ──────────────────────────────
- * All references use existing CITE keys: brijwasi, cheng, menz, guideline.
+ * ── New citation (append to CITATIONS[] in lib/citations.ts) ───────────
+ *
+ * zarali | Zarali A, Raeisi Z, Aminmahalati A. The effects of combined exercises, short foot exercises, and short foot exercises with isometric hip abduction on navicular drop, static parameters, and postural sway in women with flat foot: a randomized trial. BMC Sports Science, Medicine and Rehabilitation. 2024;16:233. | 10.1186/s13102-024-01019-9 | 39587664 | RCT (3-arm)
+ *
+ * Other references use existing CITE keys: brijwasi, cheng, menz, guideline.
  */
 
 export const EX_HIP_ABDUCTION: Guide = {
@@ -13,14 +16,14 @@ export const EX_HIP_ABDUCTION: Guide = {
   updated: '2026-10-05',
   title: 'Hip Abduction for Foot and Arch Support',
   description:
-    'How to do standing hip abduction with a resistance band for better foot and arch control: technique, sets, the hip-to-foot connection, common mistakes, and what the research shows.',
+    'How to do hip abduction with a resistance band for better foot and arch control: technique, sets, the hip-to-foot link, and what research shows.',
   h1: 'Hip abduction: how it helps your feet and how to do it',
   lede:
     'Hip abduction is the movement of lifting one leg out to the side, away from the midline of the body. When the hip abductor muscles are weak, the knee drops inward during walking and the foot over-pronates, flattening the arch. Strengthening the gluteus medius with a banded hip abduction can reduce that inward collapse and take strain off the arch, the plantar fascia and the inside of the ankle.',
   takeaways: [
     'A 2023 trial of 52 people with flexible flat feet found that a six-week combined program including hip strengthening, short foot exercises, ankle work and stretching improved two measures of arch shape compared to a control group (Brijwasi and colleagues, 2023).',
     'The gluteus medius controls the pelvis and thigh during single-leg stance. When it is weak, the knee drifts inward and the foot pronates more, loading the medial arch.',
-    'A 2013 cross-sectional study of over 3,000 adults in the Framingham Foot Study found that pronated foot posture was associated with low back, knee and foot pain (Menz and colleagues, 2013).',
+    'A 2013 cross-sectional study of about 1,900 adults in the Framingham Foot Study found no link between flat foot posture and low back pain, but found a small link between a foot that rolls inward while walking and low back pain in women (Menz and colleagues, 2013).',
     'Standing hip abduction with a band is how Walkito delivers this exercise. The standing position forces the stance leg to stabilize while the working leg lifts.',
   ],
   toc: false,
@@ -59,7 +62,7 @@ export const EX_HIP_ABDUCTION: Guide = {
       paragraphs: [
         'The connection runs through a biomechanical chain: hip, knee, ankle, foot. When the gluteus medius cannot hold the pelvis level during single-leg stance, the thigh rotates inward. The knee follows, collapsing toward the midline. That rotation forces the foot to pronate, rolling the ankle inward and flattening the arch.',
         'This is why many people with flat feet or arch pain also have weak hips. The arch is not failing on its own. It is being overloaded from above. Strengthening the hip reduces that top-down load.',
-        'A 2013 cross-sectional study from the Framingham Foot Study looked at over 3,000 community-dwelling adults. It found that pronated foot posture was associated with knee pain and low back pain, suggesting the foot-hip connection runs in both directions.',
+        'A 2013 cross-sectional study from the Framingham Foot Study looked at about 1,900 community-dwelling adults. Flat foot posture itself was not linked to low back pain, but a foot that rolled inward while walking showed a small link to low back pain in women, hinting that the foot-hip-back chain can run both ways.',
         'The flat-feet trial by Brijwasi and colleagues (2023) included hip strengthening alongside short foot exercises, ankle work and stretching. The combined program improved arch shape over six weeks. The study did not separate how much the hip strengthening contributed on its own, but the inclusion reflects the biomechanical rationale.',
       ],
       cites: [CITE.menz, CITE.brijwasi],
@@ -86,10 +89,10 @@ export const EX_HIP_ABDUCTION: Guide = {
       paragraphs: [
         'The biomechanical rationale for hip abduction in foot programs is well established: weak hip abductors allow the knee to collapse inward, increasing foot pronation and arch load. Multiple observational studies confirm the link between hip weakness and lower-limb alignment issues.',
         'For clinical outcomes, the strongest evidence comes from combined programs. The 2023 trial by Brijwasi and colleagues included hip strengthening as part of a six-week exercise program for 52 people with flexible flat feet. The program improved arch shape. Hip strengthening has not been isolated in its own flat-feet or plantar-fasciitis trial.',
-        'A 2024 randomized trial compared short foot exercises alone to short foot exercises combined with isometric hip abduction in women with flat feet. The combined group showed greater reduction in postural sway in the medial-lateral direction, supporting the idea that hip control contributes to foot stability beyond what foot exercises achieve alone.',
+        'A 2024 randomized trial of 45 women with flexible flat feet compared short foot exercises, a combined exercise program, and short foot exercises plus isometric hip abduction over six weeks. The group that added isometric hip abduction to short foot exercises had a significantly larger drop in navicular height (a measure of arch collapse) than the other two groups (Zarali and colleagues, 2024), supporting the idea that hip work adds something foot exercises alone do not.',
         'The evidence supports hip abduction as part of a broader foot program. It is not a standalone exercise for arch pain, but it fills a gap that foot-only exercises leave open. Related pages: [flat feet exercises](/flat-feet-exercises/), [ankle inversion with a band](/exercises/ankle-inversion-band/), [short foot exercise](/exercises/short-foot-exercise/).',
       ],
-      cites: [CITE.brijwasi, CITE.cheng],
+      cites: [CITE.zarali, CITE.brijwasi, CITE.cheng],
     },
   ],
   faq: [
@@ -113,7 +116,7 @@ export const EX_HIP_ABDUCTION: Guide = {
     {
       q: 'Why is hip abduction in a foot exercise program?',
       cites: [CITE.menz],
-      a: 'The hip controls what happens at the knee and foot. A weak gluteus medius lets the knee collapse inward, which forces the foot to pronate and flattens the arch. A 2013 study of over 3,000 adults found that pronated foot posture was associated with knee and low back pain (Menz 2013). Strengthening the hip reduces that top-down overload on the arch.',
+      a: 'The hip controls what happens at the knee and foot. A weak gluteus medius lets the knee collapse inward, which forces the foot to pronate and flattens the arch. A 2013 study of about 1,900 adults found a small link between a foot that rolls inward while walking and low back pain in women, though flat foot posture alone was not linked to back pain (Menz 2013). Strengthening the hip reduces the top-down overload on the arch.',
     },
   ],
   redFlags: {

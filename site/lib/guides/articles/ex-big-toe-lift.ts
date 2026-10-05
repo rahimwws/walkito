@@ -16,14 +16,14 @@ export const EX_BIG_TOE_LIFT: Guide = {
   updated: '2026-10-05',
   title: 'Big Toe Lift (Toe Yoga): Technique and Benefits',
   description:
-    'How to do the big toe lift exercise (toe yoga): step-by-step technique, what muscles it works, sets and reps, common mistakes, and why independent big toe control matters for the arch.',
+    'How to do the big toe lift (toe yoga): technique, what muscles it works, sets and reps, common mistakes, and why big toe control matters.',
   h1: 'Big toe lift (toe yoga): how to do it and why it matters',
   lede:
     'The big toe lift is an exercise where you raise the big toe on its own while the other four toes stay flat on the floor. Some people call it toe yoga. It trains the brain to control the big toe independently, which matters because the big toe is the arch\'s main lever during walking. When the big toe extends, it tightens the plantar fascia through the windlass mechanism and stiffens the foot for push-off.',
   takeaways: [
     'A 2016 MRI study found first-toe extension activated the flexor digitorum brevis (18.1%), the abductor hallucis (16.9%) and the flexor digiti minimi (16.3%), because the other toes must press down to stay flat while the big toe lifts (Gooding and colleagues, 2016).',
     'The big toe drives the windlass mechanism: when it bends back, the plantar fascia tightens and the arch stiffens for push-off. Poor independent control of the big toe can reduce that stiffening.',
-    'A 2020 study of 30 people with metatarsalgia found that eight weeks of toe exercises including big toe work improved toe grip strength and reduced forefoot pain (Amaha and colleagues, 2020).',
+    'A 2020 study of 41 people (56 feet) with metatarsalgia found that eight weeks of toe exercises, including big toe work, was followed by more toe grip strength and less forefoot pain. The study had no comparison group (Amaha and colleagues, 2020).',
     'Most people find the reverse movement (lifting only the small toes while the big toe stays down) harder. Practicing both directions is sometimes called toe yoga.',
   ],
   toc: false,
@@ -87,7 +87,7 @@ export const EX_BIG_TOE_LIFT: Guide = {
       h2: 'What does the research say?',
       paragraphs: [
         'The big toe lift (first-toe extension) was one of the four exercises tested in the 2016 MRI study by Gooding and colleagues. All four exercises activated all of the intrinsic plantar muscles. The big toe lift was not the top activator for any single muscle, but it produced meaningful activation across all of them, particularly the flexor digitorum brevis.',
-        'A 2020 study by Amaha and colleagues tested eight weeks of toe exercises in 30 people with primary metatarsalgia, pain under the ball of the foot. The program included big toe exercises, towel scrunches and marble pickups. The exercise group improved toe grip strength and reported less forefoot pain than controls.',
+        'A 2020 study by Amaha and colleagues followed 41 people (56 feet) with primary metatarsalgia, pain under the ball of the foot, through eight weeks of toe exercises that included big toe work, towel scrunches and marble pickups. Toe grip strength rose and forefoot pain fell from before to after the program. The study had no control group, so some of the change may not be from the exercises alone.',
         'No study has isolated the big toe lift on its own in a controlled outcome trial. The evidence supports it as part of a broader foot-strengthening approach. Related exercise pages: [short foot exercise](/exercises/short-foot-exercise/), [toe spread](/exercises/toe-spread/), [towel scrunch](/exercises/towel-scrunch/).',
       ],
       cites: [CITE.gooding, CITE.amaha],

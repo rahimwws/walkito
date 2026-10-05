@@ -13,7 +13,7 @@ export const EX_ANKLE_ROCKS: Guide = {
   updated: '2026-10-05',
   title: 'Ankle Rocks: Knee-Over-Toes Ankle Mobility Exercise',
   description:
-    'How to do ankle rocks (knee-over-toes rocks) for ankle mobility: technique, sets and reps, why ankle dorsiflexion matters for heel pain, and how to test it.',
+    'How to do ankle rocks, the knee-over-toes drill for ankle mobility: technique, sets and reps, why ankle bend matters, and how to test it.',
   h1: 'Ankle rocks: how to do them, why ankle mobility matters',
   lede:
     'Ankle rocks are a standing exercise where the knee travels forward over the toes while the heel stays flat on the floor. They build ankle dorsiflexion, how far the ankle bends when the foot is on the ground. In a case-control study of 50 people with plantar fasciitis and 100 controls, reduced dorsiflexion was the single strongest risk factor, at 23.3 times the odds.',

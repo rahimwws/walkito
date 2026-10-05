@@ -14,7 +14,8 @@ import type { Guide } from '../types';
  *   ankle sprain incidence among athletes: a systematic review with
  *   meta-analysis. International Journal of Sports Physical Therapy.
  *   2018;13(3):379-388. | PMID: 30038824 |
- *   design: systematic review with meta-analysis (8 RCTs, 7158 athletes)
+ *   design: systematic review with meta-analysis (8 RCTs; balance-training
+ *   arm 3,577 athletes, bracing arm 3,581 athletes)
  */
 
 export const EX_SINGLE_LEG_BALANCE: Guide = {
@@ -24,12 +25,12 @@ export const EX_SINGLE_LEG_BALANCE: Guide = {
   updated: '2026-10-05',
   title: 'Single-Leg Balance: How to Do It and Why It Matters',
   description:
-    'How to do the single-leg balance hold: technique, hold times by age, eyes-closed progression, what it tests, common mistakes, and how it fits a foot program.',
+    'How to do the single-leg balance hold: technique, hold times by age, eyes-closed progression, what it tests, and common mistakes.',
   h1: 'Single-leg balance: how to do it, normal hold times and the eyes-closed progression',
   lede:
     'Standing on one leg is one of the simplest tests of ankle and foot control. It is also an exercise. Every second you hold the position, the small muscles in your foot and ankle work to keep you upright. A 2007 study of 549 healthy adults found that the ability to stand on one leg with eyes open and closed drops steadily with age, and a 2018 meta-analysis found that balance training reduced ankle sprain risk by 46 percent in athletes.',
   takeaways: [
-    'Healthy adults aged 18 to 39 averaged about 29 seconds on one leg with eyes open and about 13 seconds with eyes closed. By age 60 to 69, the eyes-open average was about 23 seconds and the eyes-closed average dropped to about 2 seconds (Springer and colleagues, 2007).',
+    'Healthy adults aged 18 to 39 averaged 43.3 seconds on one leg with eyes open and 9.4 seconds with eyes closed. By age 60 to 69, the eyes-open average was 26.9 seconds and the eyes-closed average had dropped to 2.8 seconds (Springer and colleagues, 2007).',
     'A meta-analysis of 3,577 athletes found that balance training reduced the risk of ankle sprains by 46 percent compared to no intervention (Bellows and Wong, 2018).',
     'The Walkito balance goal is 30 seconds on one leg. The test runs every 14 days while the balance goal is active.',
     'Closing the eyes removes vision as a balance input, forcing the foot and ankle to do more of the work. The app includes an eyes-closed stand as the next step after the open-eyes hold.',
@@ -67,14 +68,15 @@ export const EX_SINGLE_LEG_BALANCE: Guide = {
         'A 2007 study tested 549 healthy adults across age groups. The results give a rough benchmark, not a pass-fail line.',
       ],
       table: {
-        caption: 'Normative single-leg stance times, eyes open and closed (Springer 2007)',
+        caption: 'Mean single-leg stance times, eyes open and closed (Springer 2007)',
         head: ['Age group', 'Eyes open (seconds)', 'Eyes closed (seconds)'],
         rows: [
-          ['18-39', '~29', '~13'],
-          ['40-49', '~29', '~10'],
-          ['50-59', '~25', '~6'],
-          ['60-69', '~23', '~2'],
-          ['70-79', '~14', '~2'],
+          ['18-39', '43.3', '9.4'],
+          ['40-49', '40.3', '7.3'],
+          ['50-59', '37.0', '4.8'],
+          ['60-69', '26.9', '2.8'],
+          ['70-79', '15.0', '2.0'],
+          ['80-99', '6.2', '1.3'],
         ],
       },
       after: [
@@ -123,7 +125,7 @@ export const EX_SINGLE_LEG_BALANCE: Guide = {
     {
       q: 'How long should you be able to stand on one leg?',
       cites: [CITE.springer],
-      a: 'A 2007 normative study of 549 healthy adults found that 18-to-39-year-olds averaged about 29 seconds with eyes open and 13 seconds with eyes closed. By age 60 to 69, it was about 23 seconds open and roughly 2 seconds closed (Springer 2007). The Walkito balance goal is 30 seconds per side.',
+      a: 'A 2007 normative study of 549 healthy adults found that 18-to-39-year-olds averaged 43.3 seconds with eyes open and 9.4 seconds with eyes closed. By age 60 to 69, it was 26.9 seconds open and 2.8 seconds closed (Springer 2007). The Walkito balance goal is 30 seconds per side.',
     },
     {
       q: 'Does single-leg balance help ankle sprains?',

@@ -28,7 +28,7 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
   updated: '2026-10-05',
   title: 'Plantar Fascia Stretch: How to Do It, Sets & Reps',
   description:
-    'How to do the plantar fascia stretch for plantar fasciitis: step-by-step technique, when to stretch, how long to hold, what research says, and common mistakes.',
+    'How to do the plantar fascia stretch for plantar fasciitis: technique, when to stretch, how long to hold, and what the research says.',
   h1: 'Plantar fascia stretch: how to do it, sets and reps',
   lede:
     'The plantar fascia stretch is the single stretch tested head-to-head against Achilles tendon stretching for plantar fasciitis. In a trial of 82 people with chronic heel pain, those who did the plantar fascia stretch had better pain and function scores at eight weeks than those who stretched the Achilles tendon. This page covers the technique, the dose and when the stretch matters most.',
@@ -84,7 +84,7 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
         'The 2023 heel pain guideline reviewed the stretching evidence and gave plantar fascia and calf stretching its highest grade, **A**. That does not mean stretching alone is enough for everyone. The guideline also grades strength training **B** and recommends both. For the strength side, see [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/).',
       ],
       sourceNote:
-        'DiGiovanni 2003: Foot Function Index pain subscale significantly better in PF stretch group at 8 weeks (p = 0.016). DiGiovanni 2006: at 2 years, 92% overall satisfaction; the original Achilles-stretch group improved markedly after crossing over.',
+        'DiGiovanni 2003: Foot Function Index pain subscale significantly better in the PF stretch group at 8 weeks for worst pain (p = 0.02) and first steps in the morning (p = 0.006). DiGiovanni 2006: at 2 years, 92% overall satisfaction; the original Achilles-stretch group improved markedly after crossing over.',
       cites: [CITE.digiovanni2003, CITE.digiovanni2006, CITE.guideline],
     },
     {

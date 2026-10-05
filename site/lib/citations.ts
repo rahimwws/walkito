@@ -272,6 +272,16 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.1016/j.ptsp.2010.08.001',
     pmid: '21256447',
   },
+  {
+    text: 'Zarali A, Raeisi Z, Aminmahalati A. The effects of combined exercises, short foot exercises, and short foot exercises with isometric hip abduction on navicular drop, static parameters, and postural sway in women with flat foot: a randomized trial. BMC Sports Science, Medicine and Rehabilitation. 2024;16(1):233.',
+    doi: '10.1186/s13102-024-01019-9',
+    pmid: '39587664',
+  },
+  {
+    text: 'Lunsford BR, Perry J. The standing heel-rise test for ankle plantar flexion: criterion for normal. Physical Therapy. 1995;75(8):694–698.',
+    doi: '10.1093/ptj/75.8.694',
+    pmid: '7644573',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -327,6 +337,8 @@ export const CITE = {
   kulig: 48,
   lynn: 49,
   jung: 50,
+  zarali: 51,
+  lunsfordPerry: 52,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

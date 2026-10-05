@@ -18,14 +18,14 @@ export const EX_TOWEL_SCRUNCH: Guide = {
   updated: '2026-10-05',
   title: 'Towel Scrunch: How to Do Towel Curls for Your Feet',
   description:
-    'How to do the towel scrunch (towel curls) for stronger feet: step-by-step technique, sets and reps, what muscles it works, common mistakes, and how it compares to the short foot exercise.',
+    'How to do the towel scrunch (towel curls) for stronger feet: technique, sets and reps, what it works, mistakes, and how it compares to short foot.',
   h1: 'Towel scrunch: how to do towel curls for foot strength',
   lede:
     'The towel scrunch is an exercise where you pull a towel toward you using only your toes. It targets the small muscles under the arch and the toe flexors. It is one of the oldest and simplest foot-strengthening exercises in rehabilitation, and it appears in exercise programs for flat feet, plantar fasciitis and ball-of-foot pain.',
   takeaways: [
     'Towel scrunches activate the intrinsic foot muscles, but EMG research shows they also recruit the long toe flexors (extrinsic muscles) more than the short foot exercise does (Jung and colleagues, 2011).',
     'In a 2012 RCT of healthy adults, a four-week towel curl group improved balance less than a short foot exercise group, though both improved compared to baseline (Lynn and colleagues, 2012).',
-    'A 2020 study of 30 people with primary metatarsalgia found that an eight-week toe exercise program including towel scrunches and marble pickups improved pain and toe grip strength compared to controls (Amaha and colleagues, 2020).',
+    'A 2020 study of 41 people (56 feet) with primary metatarsalgia found that an eight-week toe exercise program including towel scrunches and marble pickups was followed by less pain and more toe grip strength. The study had no control group, so the improvement cannot be credited to the exercises alone (Amaha and colleagues, 2020).',
     'The towel scrunch is easier to learn than the short foot exercise because the towel provides a clear target for the toes to grab.',
   ],
   toc: false,
@@ -46,7 +46,7 @@ export const EX_TOWEL_SCRUNCH: Guide = {
       exercises: [
         {
           name: 'Towel scrunch',
-          evidence: { level: 'early', why: 'Included in exercise programs tested for flat feet and metatarsalgia, but not isolated in a controlled trial on its own.' },
+          evidence: { level: 'early', why: 'Included in a single-group pre-post study for metatarsalgia (Amaha 2020) and in flat-feet programs, but not isolated in a controlled trial on its own.' },
           dose: 'Walkito starts at 3 sets of 8, hold 5 seconds, each foot',
           how: 'Sit with a towel flat on the floor under your foot. Pull the towel in with your toes. Keep the heel down. Hold for five seconds, release, then repeat.',
           often: 'Every session while this is your level',
@@ -81,7 +81,7 @@ export const EX_TOWEL_SCRUNCH: Guide = {
       h2: 'Who benefits most from towel scrunches?',
       paragraphs: [
         'Towel scrunches suit people who are new to foot exercises and want a simple starting point. They also suit people with weak toe grip, because the exercise directly trains the ability to flex the toes under load.',
-        'A 2020 study by Amaha and colleagues tested an eight-week toe exercise program (including towel scrunches and marble pickups) in 30 people with primary metatarsalgia, pain under the ball of the foot. The exercise group improved toe grip strength by a mean of 1.8 kg and reported less pain than the control group. Toe grip strength may also matter for older adults at risk of falls, since the toes help with balance during standing and walking.',
+        'A 2020 study by Amaha and colleagues followed 41 people (56 feet) with primary metatarsalgia, pain under the ball of the foot, through an eight-week toe exercise program that included towel scrunches and marble pickups. Toe grip strength and pain scores both improved from before to after the program. There was no control group, so some of that change could reflect time or attention rather than the exercises themselves. Toe grip strength may also matter for older adults at risk of falls, since the toes help with balance during standing and walking.',
         'If your main goal is to raise a flat arch, the [short foot exercise](/exercises/short-foot-exercise/) and the broader [flat feet exercise program](/flat-feet-exercises/) are more targeted. If your main goal is toe grip and general foot muscle activation, towel scrunches are a good fit.',
       ],
       cites: [CITE.amaha],

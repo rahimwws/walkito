@@ -20,7 +20,7 @@ export const EX_SHORT_FOOT: Guide = {
   updated: '2026-10-05',
   title: 'Short Foot Exercise: How to Do It and Progress',
   description:
-    'How to do the short foot exercise (arch doming) step by step: technique cues, sets and reps, seated to standing progression, mistakes to avoid, and what the research shows.',
+    'How to do the short foot exercise: technique cues, sets and reps, seated to standing progression, mistakes to avoid, and what research shows.',
   h1: 'Short foot exercise: how to do it, sets, and progression',
   lede:
     'The short foot exercise trains the small muscles inside your foot to hold the arch up without curling the toes. You pull the ball of the foot toward the heel so the arch shortens and lifts. It is the exercise a 2015 narrative review called the foundation of "foot core" training, and it appears in most flat-feet and plantar fasciitis programs that target the intrinsic foot muscles.',

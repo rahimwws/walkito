@@ -19,7 +19,7 @@ export const EX_CALF_STRETCH: Guide = {
   updated: '2026-10-05',
   title: 'Calf Stretch for Plantar Fasciitis: Technique & Dose',
   description:
-    'How to do the calf stretch (gastrocnemius, straight knee) for plantar fasciitis and tight calves: technique, sets, hold time, why a tight calf matters, and what the evidence says.',
+    'How to do the calf stretch (straight knee) for plantar fasciitis and tight calves: technique, sets, hold time, and what the evidence says.',
   h1: 'Calf stretch for plantar fasciitis: technique, sets and hold time',
   lede:
     'The calf stretch with a straight knee targets the gastrocnemius, the large outer calf muscle. A tight gastrocnemius limits how far the ankle bends, and in a case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion was the strongest independent risk factor. The 2023 heel pain guideline gives calf stretching its top grade, A.',

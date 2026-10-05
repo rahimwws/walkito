@@ -87,6 +87,8 @@ Sources:
 - Kulig K, Burnfield JM, Requejo SM, Sperry M, Terk M. Selective activation of tibialis posterior: evaluation by magnetic resonance imaging. Medicine & Science in Sports & Exercise. 2004;36(5):862–867.
 - Lynn SK, Padilla RA, Tsang KK. Differences in static- and dynamic-balance task performance after 4 weeks of intrinsic-foot-muscle training: the short-foot exercise versus the towel-curl exercise. Journal of Sport Rehabilitation. 2012;21(4):327–333.
 - Jung DY, Kim MH, Koh EK, Kwon OY, Cynn HS, Lee WH. A comparison in the muscle activity of the abductor hallucis and the medial longitudinal arch angle during toe curl and short foot exercises. Physical Therapy in Sport. 2011;12(1):30–35.
+- Zarali A, Raeisi Z, Aminmahalati A. The effects of combined exercises, short foot exercises, and short foot exercises with isometric hip abduction on navicular drop, static parameters, and postural sway in women with flat foot: a randomized trial. BMC Sports Science, Medicine and Rehabilitation. 2024;16(1):233.
+- Lunsford BR, Perry J. The standing heel-rise test for ankle plantar flexion: criterion for normal. Physical Therapy. 1995;75(8):694–698.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
@@ -2401,7 +2403,7 @@ The towel heel raise is a single-leg calf raise on a step with a rolled towel un
 
 A towel heel raise works the gastrocnemius and soleus (the two calf muscles), the Achilles tendon, and the plantar fascia. The rolled towel bends the toes upward at the top of the raise, which pulls on the plantar fascia through the windlass mechanism. Without the towel, the exercise mainly trains the calf. With it, the fascia takes part of the load.
 
-This is why the Rathleff trial used the towel specifically for plantar fasciitis rather than a plain heel raise. The goal is to load the calf-Achilles-fascia chain together. If your pain is in the Achilles tendon rather than under the foot, an [eccentric heel drop](https://walkito.site/exercises/eccentric-heel-drops/) without the towel is the better starting point.
+This is why the Rathleff trial used the towel specifically for plantar fasciitis instead of a plain heel raise. The goal is to load the calf-Achilles-fascia chain together. If your pain is in the Achilles tendon rather than under the foot, an [eccentric heel drop](https://walkito.site/exercises/eccentric-heel-drops/) without the towel is the better starting point.
 
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
@@ -2428,7 +2430,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 Going too fast is the most common mistake. A three-second descent keeps the calf under tension long enough to build strength. Bouncing up and down turns it into a cardio exercise, not a strength one.
 
-Letting the towel slip so only one or two toes sit on it reduces the fascia load. All five toes should be on the towel. If the towel keeps sliding, fold it thicker or use a hand towel rather than a bath towel.
+Letting the towel slip so only one or two toes sit on it reduces the fascia load. All five toes should be on the towel. If the towel keeps sliding, fold it thicker or use a hand towel instead of a bath towel.
 
 Starting on one leg when both-leg raises are still hard leads to poor form and compensation. If a single-leg raise on a step is too much right now, start with [double-leg calf raises](https://walkito.site/exercises/calf-raises/) on the floor and build up.
 
@@ -2459,7 +2461,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 ### See a clinician first if
 
-- the pain followed a sudden pop or injury rather than building gradually
+- the pain followed a sudden pop or injury instead of building up gradually
 - you cannot put weight on the foot or you are limping
 - the heel is red, warm or swollen, or you have a fever
 - pain wakes you at night or is present when you are not standing
@@ -2496,7 +2498,7 @@ Language: English · https://walkito.site/exercises/calf-raises/ · published 20
 A calf raise is a standing or seated exercise where you push up onto the balls of your feet. It strengthens the gastrocnemius (the bigger outer calf muscle) and the soleus (the deeper one), and it loads the Achilles tendon and plantar fascia with every rep. This page covers the double-leg standing raise, the seated version, and the isometric hold at the top.
 
 - The 2023 heel pain guideline grades calf strengthening B and recommends it alongside stretching, which it grades A (Koc and colleagues, 2023).
-- A normative study of 566 healthy adults found a median single-leg calf raise count of about 23 to 24 repetitions, shifting with age, sex and activity level (Hebert-Losier and colleagues, 2017).
+- A normative study of 566 healthy adults (ages 20 to 81) found a median single-leg calf raise count of 24 reps for men and 21 for women, shifting with age, sex and activity level (Hebert-Losier and colleagues, 2017).
 - Reduced ankle dorsiflexion, often from a tight gastrocnemius, was the strongest independent risk factor for plantar fasciitis in a matched case-control study of 50 cases and 100 controls (Riddle and colleagues, 2003).
 - Standing calf raises primarily load the gastrocnemius. Seated calf raises shift the load to the soleus because the bent knee shortens the gastrocnemius.
 
@@ -2546,7 +2548,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 It depends on where you are in the ladder and what you are working on. For general calf strength, 3 sets of 10 to 15 reps at a slow tempo is a common starting dose. For the research-tested plantar fasciitis protocol, the towel heel raise starts at a 12-repetition maximum for 3 sets and progresses to 8RM for 5 sets over about five weeks.
 
-A useful benchmark is the single-leg heel-raise endurance test. A normative study of 566 healthy adults found a typical count of about 23 to 24 repetitions, varying with age, sex and activity. The calf goal in the Walkito app is 25 single-leg calf raises. Reaching it does not end the work. It moves to maintaining.
+A useful benchmark is the single-leg heel-raise endurance test. A normative study of 566 healthy adults found a median of 24 reps for men and 21 for women, varying with age, sex and activity. The calf goal in the Walkito app is 25 single-leg calf raises. Reaching it does not end the work. It moves to maintaining.
 
 For more on the specific plantar fasciitis protocol, see [towel heel raises](https://walkito.site/exercises/towel-heel-raise/). For the Achilles tendon version, see [eccentric heel drops](https://walkito.site/exercises/eccentric-heel-drops/).
 
@@ -2594,7 +2596,7 @@ They target different muscles. Standing raises mainly work the gastrocnemius, th
 
 #### How many single-leg calf raises is normal?
 
-A normative study of 566 healthy adults found a typical count of about 23 to 24 repetitions, adjusting for age, sex and activity level (Hebert-Losier 2017). The number is useful for tracking change over weeks and comparing one leg to the other, not as a pass-fail line.
+A normative study of 566 healthy adults found a median of 24 reps for men and 21 for women, adjusting for age, sex and activity level (Hebert-Losier 2017). The number is useful for tracking change over weeks and comparing one leg to the other, not as a pass-fail line.
 
 #### Should calf raises be done every day?
 
@@ -2739,7 +2741,7 @@ The wall supports your weight so you can focus on the shin contraction. If you s
 
 Shin splints, formally called medial tibial stress syndrome (MTSS), involve pain along the inner edge of the shin bone. The tibialis anterior sits on the outer front of the shin, not at the usual pain site for MTSS, so the connection is indirect. The rationale is that a stronger tibialis anterior helps absorb impact during running and walking, reducing strain on the shin as a whole.
 
-A 2007 case-control study found that athletes with MTSS had lower calf-raise endurance than matched controls, pointing to a general lower-leg strength deficit rather than weakness in one specific muscle. A 2013 systematic review of MTSS prevention concluded that the evidence for exercise-based prevention was limited, though calf and shin strengthening appeared in most recommended programs.
+A 2007 case-control study found that athletes with MTSS had lower calf-raise endurance than matched controls, pointing to a general lower-leg strength deficit, not weakness in one specific muscle. A 2013 systematic review looked at treating MTSS that has already developed, not preventing it, and found no trial showed stretching or strengthening exercises were effective, though the evidence behind that finding was low quality overall.
 
 Honestly, we do not have a trial that tested tibialis raises alone for shin splints and showed they reduced symptoms or recurrence. The exercise is in programs because it makes biomechanical sense, not because a trial proved it. That is why its evidence label says "early." For the full shin splints page, see [shin splints exercises](https://walkito.site/shin-splints-exercises/).
 
@@ -2762,7 +2764,7 @@ Strengthening one side without the other can create an imbalance. Runners who on
 
 ### Common mistakes with tibialis raises
 
-Feet too far from the wall. If the heels slide forward, you lose the wall support and the exercise turns into a balance challenge rather than a shin strengthener. About one foot-length away from the wall is right for most people.
+Feet too far from the wall. If the heels slide forward, you lose the wall support and the exercise turns into a balance challenge instead of a shin strengthener. About one foot-length away from the wall is right for most people.
 
 Rushing the reps. A slow, controlled lift and lower produces more muscle work than fast reps. Two seconds up, one-second hold, two seconds down is a good tempo.
 
@@ -2771,7 +2773,7 @@ Confusing muscle burn with bone pain. A burning sensation along the front of the
 ### See a clinician first if
 
 - you have sharp, focused pain on the shin bone rather than diffuse muscle soreness
-- pain builds during running after you recently increased your mileage, which can point to a stress fracture rather than muscle fatigue
+- pain builds during running after you recently increased your mileage, which can point to a stress fracture instead of muscle fatigue
 - there is swelling, redness or warmth over the shin
 - you have trouble lifting the front of your foot (foot drop)
 - numbness or tingling appears in the foot or lower leg
@@ -2786,7 +2788,7 @@ Tibialis raises strengthen the muscle that lifts the front of the foot. They are
 
 #### Can tibialis raises prevent shin splints?
 
-They are often recommended as part of a shin splints prevention plan, and the biomechanical rationale makes sense. But a 2013 systematic review found limited evidence for any single exercise-based prevention strategy for MTSS. Tibialis raises have not been tested alone in a trial for shin splints prevention.
+They are often included in shin splints programs for the biomechanical rationale, not trial evidence. A 2013 systematic review looked at treating MTSS, not preventing it, and found no trial showed strengthening exercises worked, though the evidence was low quality. Tibialis raises alone have not been tested for shin splints prevention either.
 
 #### How often should you do tibialis raises?
 
@@ -2802,7 +2804,7 @@ Language: English · https://walkito.site/exercises/single-leg-balance/ · publi
 
 Standing on one leg is one of the simplest tests of ankle and foot control. It is also an exercise. Every second you hold the position, the small muscles in your foot and ankle work to keep you upright. A 2007 study of 549 healthy adults found that the ability to stand on one leg with eyes open and closed drops steadily with age, and a 2018 meta-analysis found that balance training reduced ankle sprain risk by 46 percent in athletes.
 
-- Healthy adults aged 18 to 39 averaged about 29 seconds on one leg with eyes open and about 13 seconds with eyes closed. By age 60 to 69, the eyes-open average was about 23 seconds and the eyes-closed average dropped to about 2 seconds (Springer and colleagues, 2007).
+- Healthy adults aged 18 to 39 averaged 43.3 seconds on one leg with eyes open and 9.4 seconds with eyes closed. By age 60 to 69, the eyes-open average was 26.9 seconds and the eyes-closed average had dropped to 2.8 seconds (Springer and colleagues, 2007).
 - A meta-analysis of 3,577 athletes found that balance training reduced the risk of ankle sprains by 46 percent compared to no intervention (Bellows and Wong, 2018).
 - The Walkito balance goal is 30 seconds on one leg. The test runs every 14 days while the balance goal is active.
 - Closing the eyes removes vision as a balance input, forcing the foot and ankle to do more of the work. The app includes an eyes-closed stand as the next step after the open-eyes hold.
@@ -2877,7 +2879,7 @@ Walkito includes the single-leg hold and the eyes-closed stand as part of a plan
 
 #### How long should you be able to stand on one leg?
 
-A 2007 normative study of 549 healthy adults found that 18-to-39-year-olds averaged about 29 seconds with eyes open and 13 seconds with eyes closed. By age 60 to 69, it was about 23 seconds open and roughly 2 seconds closed (Springer 2007). The Walkito balance goal is 30 seconds per side.
+A 2007 normative study of 549 healthy adults found that 18-to-39-year-olds averaged 43.3 seconds with eyes open and 9.4 seconds with eyes closed. By age 60 to 69, it was 26.9 seconds open and 2.8 seconds closed (Springer 2007). The Walkito balance goal is 30 seconds per side.
 
 #### Does single-leg balance help ankle sprains?
 
@@ -3004,7 +3006,7 @@ The towel scrunch is an exercise where you pull a towel toward you using only yo
 
 - Towel scrunches activate the intrinsic foot muscles, but EMG research shows they also recruit the long toe flexors (extrinsic muscles) more than the short foot exercise does (Jung and colleagues, 2011).
 - In a 2012 RCT of healthy adults, a four-week towel curl group improved balance less than a short foot exercise group, though both improved compared to baseline (Lynn and colleagues, 2012).
-- A 2020 study of 30 people with primary metatarsalgia found that an eight-week toe exercise program including towel scrunches and marble pickups improved pain and toe grip strength compared to controls (Amaha and colleagues, 2020).
+- A 2020 study of 41 people (56 feet) with primary metatarsalgia found that an eight-week toe exercise program including towel scrunches and marble pickups was followed by less pain and more toe grip strength. The study had no control group, so the improvement cannot be credited to the exercises alone (Amaha and colleagues, 2020).
 - The towel scrunch is easier to learn than the short foot exercise because the towel provides a clear target for the toes to grab.
 
 ### What is the towel scrunch exercise?
@@ -3048,7 +3050,7 @@ Source: Jung DY, Kim MH, Koh EK, Kwon OY, Cynn HS, Lee WH. A comparison in the m
 
 Towel scrunches suit people who are new to foot exercises and want a simple starting point. They also suit people with weak toe grip, because the exercise directly trains the ability to flex the toes under load.
 
-A 2020 study by Amaha and colleagues tested an eight-week toe exercise program (including towel scrunches and marble pickups) in 30 people with primary metatarsalgia, pain under the ball of the foot. The exercise group improved toe grip strength by a mean of 1.8 kg and reported less pain than the control group. Toe grip strength may also matter for older adults at risk of falls, since the toes help with balance during standing and walking.
+A 2020 study by Amaha and colleagues followed 41 people (56 feet) with primary metatarsalgia, pain under the ball of the foot, through an eight-week toe exercise program that included towel scrunches and marble pickups. Toe grip strength and pain scores both improved from before to after the program. There was no control group, so some of that change could reflect time or attention rather than the exercises themselves. Toe grip strength may also matter for older adults at risk of falls, since the toes help with balance during standing and walking.
 
 If your main goal is to raise a flat arch, the [short foot exercise](https://walkito.site/exercises/short-foot-exercise/) and the broader [flat feet exercise program](https://walkito.site/flat-feet-exercises/) are more targeted. If your main goal is toe grip and general foot muscle activation, towel scrunches are a good fit.
 
@@ -3098,7 +3100,7 @@ Language: English · https://walkito.site/exercises/toe-spread/ · published 202
 The toe spread exercise trains the muscles that fan the toes apart. You spread all five toes as wide as they go, hold, then release. It targets the abductor hallucis on the inner side and the abductor digiti minimi on the outer side, the same muscles that support both edges of the arch. It shows up in programs for flat feet, bunions and general foot strength.
 
 - A 2016 MRI study found the toe spread exercise produced the highest mean activation (35.2%) in the abductor digiti minimi, the muscle that supports the outer arch, out of four intrinsic foot exercises tested (Gooding and colleagues, 2016).
-- EMG research in people with mild bunions found the toe spread exercise activated the abductor hallucis significantly more than the short foot exercise, with a mean difference of about 45% (Kim and colleagues, 2013, cited in Gooding 2016).
+- A 2016 MRI study found the toe spread exercise produced its second-highest mean activation (31.5%) in the adductor hallucis oblique, a muscle on the inner side of the big toe joint (Gooding and colleagues, 2016).
 - The toe spread exercise is part of the broader intrinsic foot muscle training model described in a 2015 narrative review, alongside the short foot exercise and first-toe extension (McKeon and colleagues, 2015).
 - Most people cannot spread their toes well at first. The ability improves with practice over several weeks.
 
@@ -3122,7 +3124,7 @@ Source: Gooding TM, Feger MA, Hart JM, Hertel J. Intrinsic foot muscle activatio
 
 The toe spread targets two muscles in particular. The abductor hallucis runs along the inner edge of the foot and pulls the big toe inward (toward the midline of the body). It is also one of the main supporters of the medial longitudinal arch. The abductor digiti minimi runs along the outer edge and pulls the little toe outward.
 
-A 2016 MRI study by Gooding and colleagues tested four intrinsic foot exercises and measured activation in each muscle. The toe spread exercise produced the highest activation in the abductor digiti minimi (35.2%) and the second highest in the abductor hallucis (27.2%). The short foot exercise produced more activation in the flexor digitorum brevis.
+A 2016 MRI study by Gooding and colleagues tested four intrinsic foot exercises and measured activation in each muscle. The toe spread exercise produced its highest activation in the abductor digiti minimi (35.2%), followed by the adductor hallucis oblique (31.5%) and the flexor digiti minimi (30.2%). Activation of the abductor hallucis during toe spreads (18.9%) was lower than during the short foot exercise (29.7%).
 
 This means the toe spread and the [short foot exercise](https://walkito.site/exercises/short-foot-exercise/) complement each other. The short foot targets the muscles that run along the arch. The toe spread targets the muscles at the edges. Together they cover more of the intrinsic foot muscle group.
 
@@ -3130,7 +3132,7 @@ Source: Gooding TM, Feger MA, Hart JM, Hertel J. Intrinsic foot muscle activatio
 
 ### Who benefits from toe spread exercises?
 
-People with flat feet benefit because the abductor hallucis, which the toe spread trains, is one of the muscles that holds up the arch. People with bunions (hallux valgus) may benefit because the exercise trains the muscle that pulls the big toe away from the other toes, countering the inward drift of a bunion. An EMG study in people with mild bunions found higher abductor hallucis activity during toe spreads than during short foot exercises.
+People with flat feet benefit because the toe spread activates several of the small muscles that share the job of holding up the arch alongside the abductor hallucis. People with bunions (hallux valgus) may benefit because the exercise trains muscles that pull the big toe away from the other toes, countering the inward drift of a bunion. A separate EMG study in people with mild bunions found higher abductor hallucis activity during toe spreads than during short foot exercises, though that study is not yet part of this site's citation list.
 
 Runners and people who spend long hours on their feet can use the toe spread as part of a foot-strengthening routine. Toes that can spread share load more evenly across the forefoot during push-off. If your toes are cramped from narrow shoes, the exercise helps restore range of motion.
 
@@ -3176,7 +3178,7 @@ Walkito starts at 3 sets of 10 repetitions with a 5-second hold. That is enough 
 
 #### Do toe spreads help with bunions?
 
-Toe spreads train the abductor hallucis, the muscle that pulls the big toe away from the other toes. EMG research shows this muscle is more active during toe spreads than during short foot exercises in people with mild hallux valgus. No trial has tested whether this prevents bunion progression, but strengthening the muscle is a reasonable part of a broader approach.
+Toe spreads train muscles that pull the big toe away from the other toes, which is the opposite direction from how a bunion drifts. MRI research confirms the exercise activates those muscles (Gooding and colleagues, 2016). No trial has tested whether toe spreads prevent bunion progression, but strengthening the muscles is a reasonable part of a broader approach.
 
 #### Why can I not spread my toes?
 
@@ -3188,7 +3190,7 @@ No. Toe spacers hold the toes apart passively. Toe spread exercises make you act
 
 #### Should I do toe spreads or short foot exercises?
 
-Both, ideally. MRI research shows they activate different muscles most strongly: the toe spread targets the abductor hallucis and abductor digiti minimi at the edges of the foot, while the short foot exercise targets the flexor digitorum brevis along the arch (Gooding 2016). Together they cover more of the intrinsic foot muscle group.
+Both, ideally. MRI research shows they activate the foot's small muscles somewhat differently: the toe spread works the abductor digiti minimi most on the outer edge, while the short foot exercise works the abductor hallucis most along the inner arch (Gooding 2016). Together they cover more of the intrinsic foot muscle group.
 
 ## Big toe lift (toe yoga): how to do it and why it matters
 
@@ -3198,7 +3200,7 @@ The big toe lift is an exercise where you raise the big toe on its own while the
 
 - A 2016 MRI study found first-toe extension activated the flexor digitorum brevis (18.1%), the abductor hallucis (16.9%) and the flexor digiti minimi (16.3%), because the other toes must press down to stay flat while the big toe lifts (Gooding and colleagues, 2016).
 - The big toe drives the windlass mechanism: when it bends back, the plantar fascia tightens and the arch stiffens for push-off. Poor independent control of the big toe can reduce that stiffening.
-- A 2020 study of 30 people with metatarsalgia found that eight weeks of toe exercises including big toe work improved toe grip strength and reduced forefoot pain (Amaha and colleagues, 2020).
+- A 2020 study of 41 people (56 feet) with metatarsalgia found that eight weeks of toe exercises, including big toe work, was followed by more toe grip strength and less forefoot pain. The study had no comparison group (Amaha and colleagues, 2020).
 - Most people find the reverse movement (lifting only the small toes while the big toe stays down) harder. Practicing both directions is sometimes called toe yoga.
 
 ### What is the big toe lift exercise?
@@ -3249,7 +3251,7 @@ Cramping in the arch or under the foot is common in the first few sessions. It u
 
 The big toe lift (first-toe extension) was one of the four exercises tested in the 2016 MRI study by Gooding and colleagues. All four exercises activated all of the intrinsic plantar muscles. The big toe lift was not the top activator for any single muscle, but it produced meaningful activation across all of them, particularly the flexor digitorum brevis.
 
-A 2020 study by Amaha and colleagues tested eight weeks of toe exercises in 30 people with primary metatarsalgia, pain under the ball of the foot. The program included big toe exercises, towel scrunches and marble pickups. The exercise group improved toe grip strength and reported less forefoot pain than controls.
+A 2020 study by Amaha and colleagues followed 41 people (56 feet) with primary metatarsalgia, pain under the ball of the foot, through eight weeks of toe exercises that included big toe work, towel scrunches and marble pickups. Toe grip strength rose and forefoot pain fell from before to after the program. The study had no control group, so some of the change may not be from the exercises alone.
 
 No study has isolated the big toe lift on its own in a controlled outcome trial. The evidence supports it as part of a broader foot-strengthening approach. Related exercise pages: [short foot exercise](https://walkito.site/exercises/short-foot-exercise/), [toe spread](https://walkito.site/exercises/toe-spread/), [towel scrunch](https://walkito.site/exercises/towel-scrunch/).
 
@@ -3394,7 +3396,7 @@ Hip abduction is the movement of lifting one leg out to the side, away from the 
 
 - A 2023 trial of 52 people with flexible flat feet found that a six-week combined program including hip strengthening, short foot exercises, ankle work and stretching improved two measures of arch shape compared to a control group (Brijwasi and colleagues, 2023).
 - The gluteus medius controls the pelvis and thigh during single-leg stance. When it is weak, the knee drifts inward and the foot pronates more, loading the medial arch.
-- A 2013 cross-sectional study of over 3,000 adults in the Framingham Foot Study found that pronated foot posture was associated with low back, knee and foot pain (Menz and colleagues, 2013).
+- A 2013 cross-sectional study of about 1,900 adults in the Framingham Foot Study found no link between flat foot posture and low back pain, but found a small link between a foot that rolls inward while walking and low back pain in women (Menz and colleagues, 2013).
 - Standing hip abduction with a band is how Walkito delivers this exercise. The standing position forces the stance leg to stabilize while the working leg lifts.
 
 ### What is hip abduction?
@@ -3419,7 +3421,7 @@ The connection runs through a biomechanical chain: hip, knee, ankle, foot. When 
 
 This is why many people with flat feet or arch pain also have weak hips. The arch is not failing on its own. It is being overloaded from above. Strengthening the hip reduces that top-down load.
 
-A 2013 cross-sectional study from the Framingham Foot Study looked at over 3,000 community-dwelling adults. It found that pronated foot posture was associated with knee pain and low back pain, suggesting the foot-hip connection runs in both directions.
+A 2013 cross-sectional study from the Framingham Foot Study looked at about 1,900 community-dwelling adults. Flat foot posture itself was not linked to low back pain, but a foot that rolled inward while walking showed a small link to low back pain in women, hinting that the foot-hip-back chain can run both ways.
 
 The flat-feet trial by Brijwasi and colleagues (2023) included hip strengthening alongside short foot exercises, ankle work and stretching. The combined program improved arch shape over six weeks. The study did not separate how much the hip strengthening contributed on its own, but the inclusion reflects the biomechanical rationale.
 
@@ -3450,10 +3452,11 @@ The biomechanical rationale for hip abduction in foot programs is well establish
 
 For clinical outcomes, the strongest evidence comes from combined programs. The 2023 trial by Brijwasi and colleagues included hip strengthening as part of a six-week exercise program for 52 people with flexible flat feet. The program improved arch shape. Hip strengthening has not been isolated in its own flat-feet or plantar-fasciitis trial.
 
-A 2024 randomized trial compared short foot exercises alone to short foot exercises combined with isometric hip abduction in women with flat feet. The combined group showed greater reduction in postural sway in the medial-lateral direction, supporting the idea that hip control contributes to foot stability beyond what foot exercises achieve alone.
+A 2024 randomized trial of 45 women with flexible flat feet compared short foot exercises, a combined exercise program, and short foot exercises plus isometric hip abduction over six weeks. The group that added isometric hip abduction to short foot exercises had a significantly larger drop in navicular height (a measure of arch collapse) than the other two groups (Zarali and colleagues, 2024), supporting the idea that hip work adds something foot exercises alone do not.
 
 The evidence supports hip abduction as part of a broader foot program. It is not a standalone exercise for arch pain, but it fills a gap that foot-only exercises leave open. Related pages: [flat feet exercises](https://walkito.site/flat-feet-exercises/), [ankle inversion with a band](https://walkito.site/exercises/ankle-inversion-band/), [short foot exercise](https://walkito.site/exercises/short-foot-exercise/).
 
+Source: Zarali A, Raeisi Z, Aminmahalati A. The effects of combined exercises, short foot exercises, and short foot exercises with isometric hip abduction on navicular drop, static parameters, and postural sway in women with flat foot: a randomized trial. BMC Sports Science, Medicine and Rehabilitation. 2024;16(1):233.
 Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
 Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
 
@@ -3486,7 +3489,7 @@ A light to medium resistance loop band works best. Place it around both ankles o
 
 #### Why is hip abduction in a foot exercise program?
 
-The hip controls what happens at the knee and foot. A weak gluteus medius lets the knee collapse inward, which forces the foot to pronate and flattens the arch. A 2013 study of over 3,000 adults found that pronated foot posture was associated with knee and low back pain (Menz 2013). Strengthening the hip reduces that top-down overload on the arch.
+The hip controls what happens at the knee and foot. A weak gluteus medius lets the knee collapse inward, which forces the foot to pronate and flattens the arch. A 2013 study of about 1,900 adults found a small link between a foot that rolls inward while walking and low back pain in women, though flat foot posture alone was not linked to back pain (Menz 2013). Strengthening the hip reduces the top-down overload on the arch.
 
 ## Calf raise test: how many should you do, and what does your score mean?
 
@@ -3536,8 +3539,9 @@ Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliabil
 
 The table below shows the median number of single-leg heel-rise repetitions by age and sex, from Hebert-Losier 2017. These are model estimates for a person with a moderate physical activity level (level 4 on a 6-point scale) and a body mass index of 24.2, averaged across both legs.
 
-Higher activity levels add roughly five to nine reps to the median. In 1995, Lunsford and Perry tested 203 adults aged 20 to 50 and recommended 25 repetitions as the criterion for normal performance. The Hebert-Losier data support that figure as a reasonable adult reference, though it is a population-level median, not a pass-fail line. Your own baseline and the direction of change matter more than any single number.
+Higher activity levels add roughly five to nine reps to the median. In 1995, Lunsford and Perry tested 203 adults aged 20 to 59 and recommended 25 repetitions as the criterion for normal performance. The Hebert-Losier data support that figure as a reasonable adult reference, though it is a population-level median, not a pass-fail line. Your own baseline and the direction of change matter more than any single number.
 
+Source: Lunsford BR, Perry J. The standing heel-rise test for ankle plantar flexion: criterion for normal. Physical Therapy. 1995;75(8):694–698.
 Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliability and normative values for the standing heel-rise test in healthy adults. Physiotherapy. 2017;103(4):446–452.
 
 ### Should your left and right leg score the same?
@@ -3847,7 +3851,7 @@ Flat feet are common. A 2023 systematic review pooled 12 population-based studie
 
 Having flat feet does not automatically mean something is wrong. Many people with low arches walk, run and stand without any symptoms. The questions that matter are whether the flat foot is flexible or rigid, and whether it is causing pain.
 
-Source: Silbernagel KG, Nilsson-Helander K, Thomeé R, Eriksson BI, Karlsson J. A new measurement of heel-rise endurance with the ability to detect functional deficits in patients with Achilles tendon rupture. Knee Surgery, Sports Traumatology, Arthroscopy. 2010;18(2):258–264.
+Source: Salinas-Torres VM, Salinas-Torres RA, Carranza-García LE, Herrera-Orozco J, Tristán-Rodríguez JL. Prevalence and clinical factors associated with pes planus among children and adults: a population-based synthesis and systematic review. Journal of Foot and Ankle Surgery. 2023;62(5):899–903.
 
 ### How do you tell if flat feet are flexible or rigid?
 

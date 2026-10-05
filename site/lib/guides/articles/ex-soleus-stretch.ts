@@ -13,7 +13,7 @@ export const EX_SOLEUS_STRETCH: Guide = {
   updated: '2026-10-05',
   title: 'Soleus Stretch (Bent Knee): How to Do It Right',
   description:
-    'How to do the soleus stretch with a bent knee for plantar fasciitis and tight calves: step-by-step technique, why the soleus needs its own stretch, sets and hold time.',
+    'How to do the soleus stretch (bent knee) for plantar fasciitis and tight calves: technique, why it needs its own stretch, sets and hold time.',
   h1: 'Soleus stretch (bent knee): technique, sets and why it matters',
   lede:
     'The soleus is the deeper calf muscle that sits underneath the gastrocnemius. It only stretches when the knee is bent, because bending the knee takes the gastrocnemius out of the equation. In a series of 254 people with plantar fasciitis, 23 to 30 percent had a combined gastrocnemius-soleus contracture. If you only do the straight-knee stretch, you are missing this muscle entirely.',

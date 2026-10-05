@@ -16,13 +16,13 @@ export const EX_TOE_SPREAD: Guide = {
   updated: '2026-10-05',
   title: 'Toe Spread Exercise: How to Splay Your Toes',
   description:
-    'How to do the toe spread (toe splay) exercise for stronger intrinsic foot muscles: technique cues, sets and reps, what it works, who it helps, and what MRI research shows.',
+    'How to do the toe spread exercise to splay your toes: technique, sets and reps, what muscles it works, who it helps, and what MRI research shows.',
   h1: 'Toe spread exercise: how to splay your toes for foot strength',
   lede:
     'The toe spread exercise trains the muscles that fan the toes apart. You spread all five toes as wide as they go, hold, then release. It targets the abductor hallucis on the inner side and the abductor digiti minimi on the outer side, the same muscles that support both edges of the arch. It shows up in programs for flat feet, bunions and general foot strength.',
   takeaways: [
     'A 2016 MRI study found the toe spread exercise produced the highest mean activation (35.2%) in the abductor digiti minimi, the muscle that supports the outer arch, out of four intrinsic foot exercises tested (Gooding and colleagues, 2016).',
-    'EMG research in people with mild bunions found the toe spread exercise activated the abductor hallucis significantly more than the short foot exercise, with a mean difference of about 45% (Kim and colleagues, 2013, cited in Gooding 2016).',
+    'A 2016 MRI study found the toe spread exercise produced its second-highest mean activation (31.5%) in the adductor hallucis oblique, a muscle on the inner side of the big toe joint (Gooding and colleagues, 2016).',
     'The toe spread exercise is part of the broader intrinsic foot muscle training model described in a 2015 narrative review, alongside the short foot exercise and first-toe extension (McKeon and colleagues, 2015).',
     'Most people cannot spread their toes well at first. The ability improves with practice over several weeks.',
   ],
@@ -61,7 +61,7 @@ export const EX_TOE_SPREAD: Guide = {
       h2: 'What muscles does the toe spread exercise work?',
       paragraphs: [
         'The toe spread targets two muscles in particular. The abductor hallucis runs along the inner edge of the foot and pulls the big toe inward (toward the midline of the body). It is also one of the main supporters of the medial longitudinal arch. The abductor digiti minimi runs along the outer edge and pulls the little toe outward.',
-        'A 2016 MRI study by Gooding and colleagues tested four intrinsic foot exercises and measured activation in each muscle. The toe spread exercise produced the highest activation in the abductor digiti minimi (35.2%) and the second highest in the abductor hallucis (27.2%). The short foot exercise produced more activation in the flexor digitorum brevis.',
+        'A 2016 MRI study by Gooding and colleagues tested four intrinsic foot exercises and measured activation in each muscle. The toe spread exercise produced its highest activation in the abductor digiti minimi (35.2%), followed by the adductor hallucis oblique (31.5%) and the flexor digiti minimi (30.2%). Activation of the abductor hallucis during toe spreads (18.9%) was lower than during the short foot exercise (29.7%).',
         'This means the toe spread and the [short foot exercise](/exercises/short-foot-exercise/) complement each other. The short foot targets the muscles that run along the arch. The toe spread targets the muscles at the edges. Together they cover more of the intrinsic foot muscle group.',
       ],
       cites: [CITE.gooding],
@@ -69,7 +69,7 @@ export const EX_TOE_SPREAD: Guide = {
     {
       h2: 'Who benefits from toe spread exercises?',
       paragraphs: [
-        'People with flat feet benefit because the abductor hallucis, which the toe spread trains, is one of the muscles that holds up the arch. People with bunions (hallux valgus) may benefit because the exercise trains the muscle that pulls the big toe away from the other toes, countering the inward drift of a bunion. An EMG study in people with mild bunions found higher abductor hallucis activity during toe spreads than during short foot exercises.',
+        'People with flat feet benefit because the toe spread activates several of the small muscles that share the job of holding up the arch alongside the abductor hallucis. People with bunions (hallux valgus) may benefit because the exercise trains muscles that pull the big toe away from the other toes, countering the inward drift of a bunion. A separate EMG study in people with mild bunions found higher abductor hallucis activity during toe spreads than during short foot exercises, though that study is not yet part of this site\'s citation list.',
         'Runners and people who spend long hours on their feet can use the toe spread as part of a foot-strengthening routine. Toes that can spread share load more evenly across the forefoot during push-off. If your toes are cramped from narrow shoes, the exercise helps restore range of motion.',
         'For a broader program, see [flat feet exercises](/flat-feet-exercises/) or [ball-of-foot pain](/ball-of-foot-pain/).',
       ],
@@ -101,8 +101,7 @@ export const EX_TOE_SPREAD: Guide = {
     },
     {
       q: 'Do toe spreads help with bunions?',
-      cites: [CITE.gooding],
-      a: 'Toe spreads train the abductor hallucis, the muscle that pulls the big toe away from the other toes. EMG research shows this muscle is more active during toe spreads than during short foot exercises in people with mild hallux valgus. No trial has tested whether this prevents bunion progression, but strengthening the muscle is a reasonable part of a broader approach.',
+      a: 'Toe spreads train muscles that pull the big toe away from the other toes, which is the opposite direction from how a bunion drifts. MRI research confirms the exercise activates those muscles (Gooding and colleagues, 2016). No trial has tested whether toe spreads prevent bunion progression, but strengthening the muscles is a reasonable part of a broader approach.',
     },
     {
       q: 'Why can I not spread my toes?',
@@ -115,7 +114,7 @@ export const EX_TOE_SPREAD: Guide = {
     {
       q: 'Should I do toe spreads or short foot exercises?',
       cites: [CITE.gooding],
-      a: 'Both, ideally. MRI research shows they activate different muscles most strongly: the toe spread targets the abductor hallucis and abductor digiti minimi at the edges of the foot, while the short foot exercise targets the flexor digitorum brevis along the arch (Gooding 2016). Together they cover more of the intrinsic foot muscle group.',
+      a: 'Both, ideally. MRI research shows they activate the foot\'s small muscles somewhat differently: the toe spread works the abductor digiti minimi most on the outer edge, while the short foot exercise works the abductor hallucis most along the inner arch (Gooding 2016). Together they cover more of the intrinsic foot muscle group.',
     },
   ],
   redFlags: {

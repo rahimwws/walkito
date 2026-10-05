@@ -17,7 +17,7 @@ export const EX_FOOT_ROLL: Guide = {
   updated: '2026-10-05',
   title: 'Foot Roll for Plantar Fasciitis: Ball, Bottle & How',
   description:
-    'How to roll the sole of your foot on a ball or frozen bottle for plantar fasciitis: technique, how long, what it does and does not do, and when to use ice honestly.',
+    'How to do the foot roll for plantar fasciitis: ball or frozen bottle technique, how long to roll, and what it does and does not do.',
   h1: 'Foot roll for plantar fasciitis: ball, bottle and technique',
   lede:
     'Rolling the sole of the foot over a ball or bottle is one of the most common self-care steps for plantar fasciitis. It feels good, and clinicians recommend it as a way to settle the tissue between sessions. But no randomized trial has tested rolling on its own for plantar fasciitis. This page covers what rolling does, what it does not do, and where a frozen bottle fits in honestly.',
