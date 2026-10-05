@@ -52,6 +52,8 @@ export type AnalyticsEvents = {
 
   // ── Paywall ──────────────────────────────────────────────────────────────
   paywall_viewed: { offering: string; boosted: boolean };
+  /** A step of the first paywall: the two screens before it, then the plans. */
+  paywall_step_viewed: { step: 1 | 2 | 3 };
   paywall_plan_selected: { plan: PlanTier };
   paywall_dismissed: { offering: string };
   purchase_started: PurchaseProps;

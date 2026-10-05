@@ -67,7 +67,7 @@ import { DaySheet } from './day-sheet';
 import { ExerciseSheet } from './exercise-sheet';
 import { GoalCard } from './goal-card';
 import { NextWeekCard } from './next-week-card';
-import { PlanChip } from './plan-chip';
+import { PlanChip } from '@/shared/ui/plan-chip';
 import { TodayCard } from './today-card';
 
 /** How far the list slides under the arriving session. A fraction of the

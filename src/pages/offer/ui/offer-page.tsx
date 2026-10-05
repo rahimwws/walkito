@@ -1,16 +1,21 @@
+import Calendar03Icon from '@hugeicons/core-free-icons/Calendar03Icon';
 import ChartIncreaseIcon from '@hugeicons/core-free-icons/ChartIncreaseIcon';
 import FlashIcon from '@hugeicons/core-free-icons/FlashIcon';
+import Notification01Icon from '@hugeicons/core-free-icons/Notification01Icon';
 import Route02Icon from '@hugeicons/core-free-icons/Route02Icon';
+import RunningShoesIcon from '@hugeicons/core-free-icons/RunningShoesIcon';
 import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
-import { AppState, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { AppState, BackHandler, Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, { Easing, FadeIn, FadeInDown, ReduceMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { cancelWinback, notificationsAllowed, scheduleWinback } from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
+import { firstName, useProfileName } from '@/entities/profile';
+import { RETEST_MINUTES, planSettings } from '@/entities/program';
 import {
   OFFERINGS,
   PACKAGES,
@@ -34,9 +39,13 @@ import { usePaywall } from '@/shared/lib/paywall';
 import { recordAppEvent } from '@/shared/lib/supabase';
 import { useColorScheme } from '@/shared/lib/theme';
 import { CelebrationSheet } from '@/shared/ui/celebration-sheet';
+import { PlanChip } from '@/shared/ui/plan-chip';
 import { PlanOption } from '@/shared/ui/plan-option';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { LegalLinks, SubscriptionTerms, type DisclosedPlan } from '@/shared/ui/subscription-terms';
+
+import { introSeen, markIntroSeen } from '../model/intro';
+import { IntroHow, IntroPlan, StepBar } from './offer-intro';
 
 /**
  * The three arguments the screen opens on, as catalogue keys rather than copy.
@@ -70,6 +79,23 @@ const FEATURES = [
   title: Key;
   blurb: Key;
 }[];
+
+/**
+ * What Premium holds, as the app's own chips, on the first view's plans.
+ * The same chip, tint and glyph size as the plan screen's.
+ */
+const CHIPS = [
+  { icon: Calendar03Icon, accent: 'violet', label: 'offer.chipWeekly' },
+  { icon: FlashIcon, accent: 'orange', label: 'offer.chipSessions' },
+  { icon: ChartIncreaseIcon, accent: 'teal', label: 'offer.chipTests' },
+  { icon: RunningShoesIcon, accent: 'blue', label: 'offer.chipRoutines' },
+  { icon: Notification01Icon, accent: 'amber', label: 'offer.chipReminders' },
+] as const satisfies readonly { icon: IconSvgElement; accent: AccentName; label: Key }[];
+
+const GIFT_ART = require('@assets/home/mascot-gift.png');
+
+/** A first progress check is the second test, a fortnight after today's. */
+const FIRST_CHECK_DAYS = 14;
 
 /** Long enough that the number lands before the rest arrives under it. */
 const STAGGER_MS = 90;
@@ -148,6 +174,32 @@ export function OfferPage() {
   const offeringId = boosted ? OFFERINGS.offer : OFFERINGS.standard;
 
   /**
+   * Which step is on screen: how the plan starts, how a day works, then the
+   * plans. Only on a first, full-price view, and only once on this phone (see
+   * `introSeen`); every other view opens on the plans.
+   */
+  const [flow] = useState(() => !boosted && !introSeen());
+  const [step, setStep] = useState<1 | 2 | 3>(flow ? 1 : 3);
+  useEffect(() => {
+    if (flow) track('paywall_step_viewed', { step });
+    if (step === 3) markIntroSeen();
+  }, [flow, step]);
+  // Android's back button walks the steps back. On the first one it does what
+  // it always did on the gate.
+  useEffect(() => {
+    if (!flow || step === 1) return;
+    const subscription = BackHandler.addEventListener('hardwareBackPress', () => {
+      setStep((current) => (current === 3 ? 2 : 1));
+      return true;
+    });
+    return () => subscription.remove();
+  }, [flow, step]);
+  const next = () => setStep((current) => (current === 1 ? 2 : 3));
+
+  const profileName = firstName(useProfileName());
+  const settings = planSettings();
+
+  /**
    * Superwall's paywall for this moment, over this one.
    *
    * The placement says which price the user has earned, so the dashboard can
@@ -158,12 +210,19 @@ export function OfferPage() {
    * covers it. Once per view.
    */
   const paywall = usePaywall();
+  const registered = useRef(false);
   useEffect(() => {
+    // On the plans, not before: the two screens ahead of them are this
+    // paywall's own, and a dashboard paywall stands in for the plans.
+    if (step !== 3 || registered.current) return;
     const placement = invited ? 'paywall_invite' : winback ? 'paywall_comeback' : 'paywall_first';
-    const timer = setTimeout(() => paywall.register(placement, { offering: offeringId }), 600);
+    const timer = setTimeout(() => {
+      registered.current = true;
+      paywall.register(placement, { offering: offeringId });
+    }, 600);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [step]);
 
   /**
    * The offering being sold, and the standard one to strike through against.
@@ -576,8 +635,39 @@ export function OfferPage() {
   /** What the store said last, or that it could not be reached. */
   const shownNotice = notice ?? (unreachable ? t('offer.storeUnreachable') : null);
 
+  if (step < 3) {
+    return (
+      <View style={[styles.screen, { paddingTop: insets.top + 16 }]}>
+        <StepBar step={step} />
+        <ScrollView
+          style={styles.body}
+          contentContainerStyle={styles.introContent}
+          showsVerticalScrollIndicator={false}>
+          {/* Keyed on the step, so the next one arrives rather than appears. */}
+          <Animated.View key={step} entering={FadeIn.duration(280).reduceMotion(ReduceMotion.System)}>
+            {step === 1 ? (
+              <IntroPlan
+                name={profileName}
+                testMinutes={RETEST_MINUTES}
+                minutes={settings.defaultMinutes}
+                daysPerWeek={settings.daysPerWeek}
+                checkOn={Date.now() + FIRST_CHECK_DAYS * 86_400_000}
+              />
+            ) : (
+              <IntroHow />
+            )}
+          </Animated.View>
+        </ScrollView>
+        <View style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 16) + 4 }]}>
+          <PrimaryButton label={t('offer.next')} onPress={next} />
+        </View>
+      </View>
+    );
+  }
+
   return (
     <View style={[styles.screen, { paddingTop: insets.top + 16 }]}>
+      {flow && <StepBar step={3} />}
       {/* The body scrolls and the button does not, so on a short phone or at a
           large text size Continue is never pushed off a screen that has no
           other way out. */}
@@ -585,65 +675,105 @@ export function OfferPage() {
         style={styles.body}
         contentContainerStyle={styles.bodyContent}
         showsVerticalScrollIndicator={false}>
-        {/* Only once the better price is in. A badge that was always there would
-            make the standard price look like the discounted one.
+        {boosted ? (
+          <>
+            {/* Only once the better price is in. A badge that was always there would
+                make the standard price look like the discounted one.
 
-            No percentage at display size above it any more. It was set at
-            108pt over a billed amount at 22pt, and App Review Guideline 3.1.2
-            wants the amount charged to be the most prominent price on a
-            subscription screen. The discount is still on the row, as a badge
-            and a struck-through price, beside the figure it comes from. */}
-        {offerShown && (
-          <Animated.View
-            entering={FadeIn.duration(420).reduceMotion(ReduceMotion.System)}
-            style={styles.badge}>
-            <Text style={styles.badgeText}>
-              {invited ? t('offer.inviteBadge') : t('offer.comebackBadge')}
-            </Text>
-          </Animated.View>
-        )}
-
-        <Animated.Text
-          entering={FadeIn.delay(STAGGER_MS).duration(320).reduceMotion(ReduceMotion.System)}
-          style={[offerShown ? styles.headline : styles.title, { color: colors.foreground }]}>
-          {!offerShown
-            ? t('offer.headline')
-            : invited
-              ? t('offer.headlineInvite')
-              : t('offer.headlineComeback')}
-        </Animated.Text>
-        <Animated.Text
-          entering={FadeIn.delay(STAGGER_MS * 2).duration(320).reduceMotion(ReduceMotion.System)}
-          style={[styles.sub, { color: meter.caption }]}>
-          {t('offer.sub')}
-        </Animated.Text>
-
-        <View style={styles.features}>
-          {FEATURES.map((feature, i) => {
-            const tone = accents[scheme][feature.accent];
-            return (
+                No percentage at display size above it any more. It was set at
+                108pt over a billed amount at 22pt, and App Review Guideline 3.1.2
+                wants the amount charged to be the most prominent price on a
+                subscription screen. The discount is still on the row, as a badge
+                and a struck-through price, beside the figure it comes from. */}
+            {offerShown && (
               <Animated.View
-                key={feature.title}
-                entering={FadeInDown.delay(STAGGER_MS * (3 + i))
-                  .duration(360)
-                  .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
-                  .reduceMotion(ReduceMotion.System)}
-                style={styles.feature}>
-                <View style={[styles.tile, { backgroundColor: tone.track }]}>
-                  <HugeiconsIcon icon={feature.icon} size={19} color={tone.fill} strokeWidth={2.6} />
-                </View>
-                <View style={styles.featureCopy}>
-                  <Text style={[styles.featureTitle, { color: colors.foreground }]}>
-                    {t(feature.title)}
-                  </Text>
-                  <Text style={[styles.featureBlurb, { color: meter.caption }]}>
-                    {t(feature.blurb)}
-                  </Text>
-                </View>
+                entering={FadeIn.duration(420).reduceMotion(ReduceMotion.System)}
+                style={styles.badge}>
+                <Text style={styles.badgeText}>
+                  {invited ? t('offer.inviteBadge') : t('offer.comebackBadge')}
+                </Text>
               </Animated.View>
-            );
-          })}
-        </View>
+            )}
+
+            <Animated.Text
+              entering={FadeIn.delay(STAGGER_MS).duration(320).reduceMotion(ReduceMotion.System)}
+              style={[offerShown ? styles.headline : styles.title, { color: colors.foreground }]}>
+              {!offerShown
+                ? t('offer.headline')
+                : invited
+                  ? t('offer.headlineInvite')
+                  : t('offer.headlineComeback')}
+            </Animated.Text>
+            <Animated.Text
+              entering={FadeIn.delay(STAGGER_MS * 2).duration(320).reduceMotion(ReduceMotion.System)}
+              style={[styles.sub, { color: meter.caption }]}>
+              {t('offer.sub')}
+            </Animated.Text>
+
+            <View style={styles.features}>
+              {FEATURES.map((feature, i) => {
+                const tone = accents[scheme][feature.accent];
+                return (
+                  <Animated.View
+                    key={feature.title}
+                    entering={FadeInDown.delay(STAGGER_MS * (3 + i))
+                      .duration(360)
+                      .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
+                      .reduceMotion(ReduceMotion.System)}
+                    style={styles.feature}>
+                    <View style={[styles.tile, { backgroundColor: tone.track }]}>
+                      <HugeiconsIcon icon={feature.icon} size={19} color={tone.fill} strokeWidth={2.6} />
+                    </View>
+                    <View style={styles.featureCopy}>
+                      <Text style={[styles.featureTitle, { color: colors.foreground }]}>
+                        {t(feature.title)}
+                      </Text>
+                      <Text style={[styles.featureBlurb, { color: meter.caption }]}>
+                        {t(feature.blurb)}
+                      </Text>
+                    </View>
+                  </Animated.View>
+                );
+              })}
+            </View>
+          </>
+        ) : (
+          <View style={styles.start}>
+            {/* White, so the dark scheme takes it as drawn; the light one inks it. */}
+            <Animated.Image
+              entering={FadeInDown.duration(360).reduceMotion(ReduceMotion.System)}
+              source={GIFT_ART}
+              style={[styles.gift, scheme === 'light' && { tintColor: colors.foreground }]}
+              resizeMode="contain"
+            />
+            <Animated.Text
+              entering={FadeIn.delay(STAGGER_MS).duration(320).reduceMotion(ReduceMotion.System)}
+              style={[styles.title, styles.startTitle, { color: colors.foreground }]}>
+              {t('offer.startTitle')}
+            </Animated.Text>
+            <Animated.Text
+              entering={FadeIn.delay(STAGGER_MS * 2).duration(320).reduceMotion(ReduceMotion.System)}
+              style={[styles.sub, styles.startSub, { color: meter.caption }]}>
+              {t('offer.startSub')}
+            </Animated.Text>
+            <Animated.View
+              entering={FadeInDown.delay(STAGGER_MS * 3)
+                .duration(360)
+                .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
+                .reduceMotion(ReduceMotion.System)}
+              style={styles.chips}>
+              {CHIPS.map((chip) => (
+                <PlanChip
+                  key={chip.label}
+                  label={t(chip.label)}
+                  icon={chip.icon}
+                  tone={accents[scheme][chip.accent]}
+                  accessibilityRole="text"
+                />
+              ))}
+            </Animated.View>
+          </View>
+        )}
 
         <Animated.View
           accessibilityRole="radiogroup"
@@ -836,5 +966,22 @@ const styles = StyleSheet.create({
   },
   tiers: {
     marginTop: 4,
+  },
+  /** The two steps before the plans: room under the bar. */
+  introContent: { paddingTop: 22, paddingBottom: 16 },
+  /** The first view's opening, over the plans: the mascot, a line, the chips. */
+  start: {
+    alignItems: 'center',
+    gap: 6,
+  },
+  gift: { width: 104, height: 104 },
+  startTitle: { marginTop: 4 },
+  startSub: { marginTop: 0 },
+  chips: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: 8,
+    marginTop: 12,
   },
 });

@@ -14,7 +14,7 @@ import { PrimaryButton } from '@/shared/ui/primary-button';
 import { artFor } from '../config/kind-art';
 import type { TodayVariant } from '../model/plan-view';
 import { CATEGORY_TONE, KIND_STICKER, TINT_TODAY, tint } from './kind-tone';
-import { PlanChip } from './plan-chip';
+import { PlanChip } from '@/shared/ui/plan-chip';
 import { RestButton, WaitCaption } from './rest-button';
 
 export const MINUTE_CHOICES: readonly SessionMinutes[] = [3, 5, 10];

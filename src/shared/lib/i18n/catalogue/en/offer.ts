@@ -122,6 +122,45 @@ export const OFFER_EN = {
   'offer.restoredBlurb': 'Your subscription is active again. Everything is where you left it.',
   'offer.start': 'Start',
 
+  // ── Paywall: the two steps before it, after onboarding ──────────────────
+  // How the open-ended plan starts and how a day works, then the paywall. The
+  // dates and counts are the person's own (`offer-intro.tsx`).
+  'offer.stepA11y': 'Step {step} of {total}',
+  'offer.next': 'Next',
+  'offer.introTitle': 'This is how your plan starts',
+  'offer.introTitleNamed': '{name}, this is how your plan starts',
+  'offer.introTodayWhen': 'Today',
+  'offer.introTodayTitle': { one: 'A {count}-minute test', other: 'A {count}-minute test' },
+  'offer.introTodayBody': 'Calves, arch and balance. Your plan starts from these numbers.',
+  'offer.introWeekWhen': 'This week',
+  'offer.introWeekTitle': 'Settle things down',
+  'offer.introWeekBody': {
+    one: '{minutes} min a day, {count} day a week. Strength work starts next week.',
+    other: '{minutes} min a day, {count} days a week. Strength work starts next week.',
+  },
+  'offer.introSundayWhen': 'Every Sunday',
+  'offer.introSundayTitle': 'A new week, built from the last',
+  'offer.introSundayBody': 'Easier if it felt hard, a little more if it felt easy.',
+  'offer.introCheckTitle': 'Your first progress check',
+  'offer.introCheckBody': 'The same test again. See what changed, then the next step.',
+  'offer.howTitle': 'A few minutes a day. Here is how it works.',
+  'offer.howCheckinTitle': 'Check in each morning',
+  'offer.howCheckinBody': 'Ten seconds on how your feet feel. The day is set from it.',
+  'offer.howSessionTitle': 'Do today’s session',
+  'offer.howSessionBody': '3 to 10 minutes. It only gets harder when the last one felt easy.',
+  'offer.howTestTitle': 'Retest every two weeks',
+  'offer.howTestBody': 'Calves, arch and balance, measured. Watch the numbers move.',
+  /** From the founders' note (`onboarding.note.body1`), word for word. */
+  'offer.howQuote': '“The exercises that help are well known. Nobody tells you which ones, or how many. So that is what we made.”',
+  'offer.howQuoteBy': 'Rahim, who makes Walkito with his friend Rahman',
+  'offer.startTitle': 'Start your plan today',
+  'offer.startSub': 'Your first week is ready. It starts with a short test.',
+  'offer.chipWeekly': 'Your weekly plan',
+  'offer.chipSessions': 'Short sessions',
+  'offer.chipTests': 'A test every two weeks',
+  'offer.chipRoutines': 'Flare-up and run routines',
+  'offer.chipReminders': 'Reminders',
+
   // ── Session player: the locked state ─────────────────────────────────────
   // Only ever seen by somebody whose subscription ended and who answered the
   // expiry screen with "Not now".

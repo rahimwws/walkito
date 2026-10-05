@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { fonts, meterColors, palette, type AccentName, accents } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
 
-import { PlanChip } from './plan-chip';
+import { PlanChip } from '@/shared/ui/plan-chip';
 
 export type NextWeekDay = { date: string; label: string; accent: AccentName };
 
