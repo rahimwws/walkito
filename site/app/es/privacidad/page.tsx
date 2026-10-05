@@ -256,7 +256,8 @@ export default function PrivacidadEs() {
         <h3>Superwall: pantallas de suscripción</h3>
         <p>
           <b>Qué:</b> el ID de tu cuenta, tu nombre, el objetivo y el deporte
-          que elegiste al crear tu plan, la duración y las fechas de tu plan,
+          que elegiste al crear tu plan, el primer paso de tu plan, los días y
+          los minutos que elegiste, la fecha de tu próxima revisión de progreso,
           el idioma de la app, qué pantallas de suscripción viste y qué tocaste
           en ellas, y si ya tienes una suscripción. Nunca tu dolor, tus
           respuestas sobre tu cuerpo ni nada de Apple Health o Health Connect.

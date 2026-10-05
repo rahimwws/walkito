@@ -26,7 +26,8 @@ import { SUPPORT_EMAIL } from '@/lib/site';
  * - RevenueCat: its app user id, purchases, `$posthogUserId`, media source.
  * - Superwall (from 1.0.3): `src/app/providers/superwall.tsx` and
  *   `superwall-personalisation.ts` — Supabase user id, first name, goal and
- *   sport, plan length and dates, language, platform, paywall events,
+ *   sport, the first step of the plan, days a week and minutes, the date
+ *   of the next progress check, language, platform, paywall events,
  *   subscription status.
  * - HealthKit: `READ_TYPES` in `entities/health/model/health.ts` and
  *   `WRITE_TYPES` in `write-back.ts`. Nothing from HealthKit is synced or sent.
@@ -266,7 +267,8 @@ export default function Privacy() {
         <h3>Superwall: subscription screens</h3>
         <p>
           <b>What:</b> your account ID, your first name, the goal and sport you
-          picked when you set up your plan, your plan's length and dates, your
+          picked when you set up your plan, the first step of your plan, the days
+          and minutes you chose, the date of your next progress check, your
           app language, which subscription screens you saw and what you tapped
           on them, and whether you already subscribe. Never your pain, your
           answers about your body, or anything from Apple Health or Health

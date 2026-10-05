@@ -2,7 +2,8 @@
  * What a Superwall paywall is told about the person reading it.
  *
  * Superwall is a third party, so the rule is the analytics one: the plan and
- * the person's own words for what they want, never their body.
+ * the person's own words for what they want, never their body. And the plan
+ * as it is: open-ended, so no length and no end date.
  */
 
 import { describe, expect, test } from 'bun:test';
@@ -14,12 +15,14 @@ const ALLOWED = new Set([
   'first_name',
   'goal',
   'goal_label',
+  'focus',
+  'focus_label',
   'sport',
   'sport_label',
   'runner',
-  'plan_weeks',
-  'plan_end_date',
-  'first_checkpoint_date',
+  'days_per_week',
+  'minutes',
+  'progress_check_date',
 ]);
 
 const full: Intake = {
@@ -40,29 +43,31 @@ const full: Intake = {
 };
 
 const NOW = Date.UTC(2026, 9, 6, 12);
-const input = (name: string, intake: Intake | null): PersonalisationInput => ({
-  name,
-  intake,
+const input = (patch: Partial<PersonalisationInput> = {}): PersonalisationInput => ({
+  name: 'Sam Rivera',
+  intake: full,
   language: 'en',
-  planLength: 84,
-  firstRetestDay: 14,
-  dateOfDay: (day) => NOW + (day - 1) * 86_400_000,
+  outcome: { kind: 'race_ready', steps: ['calf_raises', 'arch_hold', 'balance'] },
+  daysPerWeek: 5,
+  minutes: 5,
+  now: NOW,
+  ...patch,
 });
 
 describe('paywall personalisation', () => {
-  test('says the plan and the goal in words', () => {
-    const out = paywallPersonalisation(input('Sam Rivera', full));
+  test('says the goal, the first step and the week in words', () => {
+    const out = paywallPersonalisation(input());
     expect(out.first_name).toBe('Sam');
-    expect(out.goal).toBe('race');
-    expect(out.goal_label).toBe('Train for a race');
+    expect(out.goal_label).toBe('Race ready');
+    expect(out.focus_label).toBe('Stronger calves');
     expect(out.sport_label).toBe('Running');
-    expect(out.plan_weeks).toBe('12');
-    expect(out.first_checkpoint_date).toBe('October 19');
-    expect(out.plan_end_date).toBe('December 28');
+    expect(out.days_per_week).toBe('5');
+    expect(out.minutes).toBe('5');
+    expect(out.progress_check_date).toBe('October 20');
   });
 
-  test('never carries the body: pain, side, age, weight, shoe', () => {
-    const out = paywallPersonalisation(input('Sam', full));
+  test('never carries the body, and no plan length or end', () => {
+    const out = paywallPersonalisation(input());
     for (const key of Object.keys(out)) expect(ALLOWED.has(key)).toBe(true);
     const values = JSON.stringify(out);
     for (const leak of ['heel', 'achilles', 'left', '41', '80', '43', 'female']) {
@@ -70,18 +75,24 @@ describe('paywall personalisation', () => {
     }
   });
 
-  test('a goal that names a condition is not sent', () => {
-    for (const goal of ['painfree', 'flatfeet', 'comeback']) {
-      const out = paywallPersonalisation(input('Sam', { ...full, goal }));
+  test('a goal or a first step that names a condition is not sent', () => {
+    for (const kind of ['painfree', 'flat_feet', 'comeback'] as const) {
+      const out = paywallPersonalisation(input({ outcome: { kind, steps: ['calf_raises'] } }));
       expect('goal' in out).toBe(false);
       expect('goal_label' in out).toBe(false);
     }
+    const mornings = paywallPersonalisation(
+      input({ outcome: { kind: 'stronger', steps: ['pain_free_mornings', 'calf_raises'] } }),
+    );
+    expect('focus' in mornings).toBe(false);
+    expect('focus_label' in mornings).toBe(false);
   });
 
   test('a missing answer is left out, not sent empty', () => {
-    const out = paywallPersonalisation(input('', null));
+    const out = paywallPersonalisation(input({ name: '', intake: null, outcome: null }));
     expect('first_name' in out).toBe(false);
     expect('goal' in out).toBe(false);
+    expect('focus' in out).toBe(false);
     expect('sport' in out).toBe(false);
   });
 });

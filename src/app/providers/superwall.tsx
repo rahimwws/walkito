@@ -3,7 +3,7 @@ import { useEffect, useMemo, type ReactNode } from 'react';
 import { Platform } from 'react-native';
 
 import { getIntake, useIntake, useProfileName } from '@/entities/profile';
-import { PLAN_BLOCKS, PROGRAM_LENGTH, dateFor } from '@/entities/program';
+import { outcome, planSettings } from '@/entities/program';
 import { ENTITLEMENT, purchases, useEntitled } from '@/entities/purchase';
 import { SUPERWALL_KEYS } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
@@ -15,15 +15,16 @@ import { paywallPersonalisation } from './superwall-personalisation';
 
 /** The personalisation against the live plan, read at the moment of asking. */
 function personalisation(name: string) {
-  const now = Date.now();
+  const big = outcome();
+  const settings = planSettings();
   return paywallPersonalisation({
     name,
     intake: getIntake(),
     language: getLanguage(),
-    planLength: PROGRAM_LENGTH,
-    firstRetestDay: PLAN_BLOCKS[0]?.retestDay,
-    // Plan days are 1-based, `dateFor` indices 0-based.
-    dateOfDay: (day) => dateFor(day - 1, now),
+    outcome: big == null ? null : { kind: big.kind, steps: big.steps },
+    daysPerWeek: settings.daysPerWeek,
+    minutes: settings.defaultMinutes,
+    now: Date.now(),
   });
 }
 
