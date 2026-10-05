@@ -24,6 +24,10 @@ import { SUPPORT_EMAIL } from '@/lib/site';
  * - Expo: EAS Update, `expo-insights` and `expo-observe` (timings, errors),
  *   the push token for invite notifications.
  * - RevenueCat: its app user id, purchases, `$posthogUserId`, media source.
+ * - Superwall (from 1.0.3): `src/app/providers/superwall.tsx` and
+ *   `superwall-personalisation.ts` — Supabase user id, first name, goal and
+ *   sport, plan length and dates, language, platform, paywall events,
+ *   subscription status.
  * - HealthKit: `READ_TYPES` in `entities/health/model/health.ts` and
  *   `WRITE_TYPES` in `write-back.ts`. Nothing from HealthKit is synced or sent.
  *
@@ -49,7 +53,7 @@ export default function Privacy() {
       <Prose className="shell prose">
         <h1>Privacy</h1>
 
-        <p className="updated">Last updated: 1 October 2026</p>
+        <p className="updated">Last updated: 6 October 2026</p>
 
         <h2>The short version</h2>
         <ul>
@@ -65,6 +69,7 @@ export default function Privacy() {
           <li>
             A few services receive data so the app can work: Supabase (your
             account and plan), PostHog (usage analytics), RevenueCat (purchases),
+            Superwall (subscription screens),
             Expo (notifications, app updates, speed and crash reports), Apple
             (sign-in, payments and notifications) Google (sign-in on Android) and Resend (emails).
           </li>
@@ -256,6 +261,21 @@ export default function Privacy() {
         <p>
           <b>Why:</b> to keep the app fast and working, keep it up to date, and
           deliver invite notifications.
+        </p>
+
+        <h3>Superwall: subscription screens</h3>
+        <p>
+          <b>What:</b> your account ID, your first name, the goal and sport you
+          picked when you set up your plan, your plan's length and dates, your
+          app language, which subscription screens you saw and what you tapped
+          on them, and whether you already subscribe. Never your pain, your
+          answers about your body, or anything from Apple Health or Health
+          Connect.
+        </p>
+        <p>
+          <b>Why:</b> to show the subscription screen, address it to you and
+          your plan, and test which version works best. Payments still go
+          through Apple and RevenueCat.
         </p>
 
         <h3>Resend: emails</h3>

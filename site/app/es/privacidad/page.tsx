@@ -31,7 +31,7 @@ export default function PrivacidadEs() {
       <Prose className="shell prose">
         <h1>Privacidad</h1>
 
-        <p className="updated">Última actualización: 1 de octubre de 2026</p>
+        <p className="updated">Última actualización: 6 de octubre de 2026</p>
         <p className="updated">
           Esta es una traducción. Si difiere de{' '}
           <a href="/privacy/">la versión en inglés</a>, se aplica la versión en
@@ -52,7 +52,7 @@ export default function PrivacidadEs() {
           <li>
             Algunos servicios reciben datos para que la app funcione: Supabase
             (tu cuenta y tu plan), PostHog (analítica de uso), RevenueCat
-            (compras), Expo (notificaciones, actualizaciones de la app e
+            (compras), Superwall (pantallas de suscripción), Expo (notificaciones, actualizaciones de la app e
             informes de velocidad y de errores), Apple (inicio de sesión, pagos
             y notificaciones), Google (inicio de sesión en Android) y Resend (correos).
           </li>
@@ -251,6 +251,20 @@ export default function PrivacidadEs() {
         <p>
           <b>Por qué:</b> para que la app sea rápida y funcione bien, mantenerla
           al día y entregar las notificaciones de invitaciones.
+        </p>
+
+        <h3>Superwall: pantallas de suscripción</h3>
+        <p>
+          <b>Qué:</b> el ID de tu cuenta, tu nombre, el objetivo y el deporte
+          que elegiste al crear tu plan, la duración y las fechas de tu plan,
+          el idioma de la app, qué pantallas de suscripción viste y qué tocaste
+          en ellas, y si ya tienes una suscripción. Nunca tu dolor, tus
+          respuestas sobre tu cuerpo ni nada de Apple Health o Health Connect.
+        </p>
+        <p>
+          <b>Para qué:</b> para mostrarte la pantalla de suscripción, dirigirla
+          a ti y a tu plan, y probar qué versión funciona mejor. Los pagos
+          siguen pasando por Apple y RevenueCat.
         </p>
 
         <h3>Resend: correos</h3>

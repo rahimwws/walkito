@@ -2,13 +2,30 @@ import { requireOptionalNativeModule } from 'expo';
 import { useEffect, useMemo, type ReactNode } from 'react';
 import { Platform } from 'react-native';
 
-import { getIntake } from '@/entities/profile';
+import { getIntake, useIntake, useProfileName } from '@/entities/profile';
+import { PLAN_BLOCKS, PROGRAM_LENGTH, dateFor } from '@/entities/program';
 import { ENTITLEMENT, purchases, useEntitled } from '@/entities/purchase';
 import { SUPERWALL_KEYS } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { getLanguage, useLanguage } from '@/shared/lib/i18n';
 import { PaywallApiProvider, type PaywallApi } from '@/shared/lib/paywall';
 import { currentUserId } from '@/shared/lib/supabase';
+
+import { paywallPersonalisation } from './superwall-personalisation';
+
+/** The personalisation against the live plan, read at the moment of asking. */
+function personalisation(name: string) {
+  const now = Date.now();
+  return paywallPersonalisation({
+    name,
+    intake: getIntake(),
+    language: getLanguage(),
+    planLength: PROGRAM_LENGTH,
+    firstRetestDay: PLAN_BLOCKS[0]?.retestDay,
+    // Plan days are 1-based, `dateFor` indices 0-based.
+    dateOfDay: (day) => dateFor(day - 1, now),
+  });
+}
 
 /**
  * Superwall: paywalls drawn and tested from its dashboard, bought through ours.
@@ -134,18 +151,18 @@ function Bridge({ sdk, children }: { sdk: Sdk; children: ReactNode }) {
     ).catch(() => {});
   }, [configured, entitled, setSubscriptionStatus]);
 
-  // What audiences and paywall text may use. Never health data: no pain,
-  // zones, measurements or goals, the same rule as analytics.
+  // What audiences and paywall text may use: see `paywallPersonalisation`.
+  // Never health data, by the same rule as analytics.
+  const name = useProfileName();
+  const intake = useIntake();
   useEffect(() => {
     if (!configured) return;
-    const intake = getIntake();
     void update({
       language: getLanguage(),
-      sport: intake?.sport ?? null,
-      runner: intake?.runner ?? null,
       platform: Platform.OS,
+      ...personalisation(name),
     }).catch(() => {});
-  }, [configured, language, update]);
+  }, [configured, language, name, intake, update]);
 
   sdk.useSuperwallEvents({
     onSuperwallEvent: (info) => {
@@ -159,12 +176,15 @@ function Bridge({ sdk, children }: { sdk: Sdk; children: ReactNode }) {
   const api = useMemo<PaywallApi>(
     () => ({
       register: (placement, params) => {
-        void registerPlacement({ placement, params }).catch((error: unknown) => {
+        // The personalisation again, fresh: attributes set a moment ago may
+        // not have reached a paywall that is presented right now.
+        const merged = { ...personalisation(name), ...params };
+        void registerPlacement({ placement, params: merged }).catch((error: unknown) => {
           console.warn('[superwall] placement failed', placement, error);
         });
       },
     }),
-    [registerPlacement],
+    [registerPlacement, name],
   );
 
   return <PaywallApiProvider value={api}>{children}</PaywallApiProvider>;
