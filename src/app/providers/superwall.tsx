@@ -9,7 +9,6 @@ import { SUPERWALL_KEYS } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { getLanguage, useLanguage } from '@/shared/lib/i18n';
 import { PaywallApiProvider, type PaywallApi } from '@/shared/lib/paywall';
-import { currentUserId } from '@/shared/lib/supabase';
 
 import { paywallPersonalisation } from './superwall-personalisation';
 
@@ -131,13 +130,15 @@ function Bridge({ sdk, children }: { sdk: Sdk; children: ReactNode }) {
   const entitled = useEntitled();
   const language = useLanguage();
 
-  // Identified by the Supabase id: a UUID, not guessable, stable across a
-  // reinstall that restores the session, and the same id the backend knows.
+  // Identified as the RevenueCat customer, the id PostHog is keyed on too.
+  // Superwall learns of a purchase from RevenueCat's server, and matches it to
+  // a user only by that id — so a subscription bought on our own paywall (the
+  // holdout) counts in Superwall's results only when the two ids are one.
   useEffect(() => {
     if (!configured) return;
     let live = true;
-    void currentUserId().then((uid) => {
-      if (live && uid != null) void identify(uid).catch(() => {});
+    void purchases.appUserId().then((id) => {
+      if (live && id != null) void identify(id).catch(() => {});
     });
     return () => {
       live = false;

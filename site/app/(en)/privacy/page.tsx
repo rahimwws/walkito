@@ -24,8 +24,8 @@ import { SUPPORT_EMAIL } from '@/lib/site';
  * - Expo: EAS Update, `expo-insights` and `expo-observe` (timings, errors),
  *   the push token for invite notifications.
  * - RevenueCat: its app user id, purchases, `$posthogUserId`, media source.
- * - Superwall (from 1.0.3): `src/app/providers/superwall.tsx` and
- *   `superwall-personalisation.ts` — Supabase user id, first name, goal and
+ * - Superwall (from 1.0.2, build 31): `src/app/providers/superwall.tsx` and
+ *   `superwall-personalisation.ts` — RevenueCat app user id, first name, goal and
  *   sport, the first step of the plan, days a week and minutes, the date
  *   of the next progress check, language, platform, paywall events,
  *   subscription status.

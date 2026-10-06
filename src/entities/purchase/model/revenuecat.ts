@@ -569,6 +569,14 @@ export const revenueCatStore: Store = {
     }
   },
 
+  async appUserId(): Promise<string | null> {
+    try {
+      return await Purchases.getAppUserID();
+    } catch {
+      return null;
+    }
+  },
+
   async restore(): Promise<RestoreResult> {
     try {
       const info = await Purchases.restorePurchases();

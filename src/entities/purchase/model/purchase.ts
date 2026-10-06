@@ -208,6 +208,12 @@ export type Purchases = {
    */
   buyProduct(request: { productId: string; basePlanId?: string; offerId?: string; source: string }): Promise<PurchaseResult>;
   restore(): Promise<RestoreResult>;
+  /**
+   * The store's id for this customer: RevenueCat's app user id. PostHog and
+   * Superwall are identified as it, so a purchase RevenueCat reports from its
+   * server lands on the same person in both. Null with no store.
+   */
+  appUserId(): Promise<string | null>;
 
   /**
    * Whether the subscription is live, right now, synchronously.
@@ -274,6 +280,7 @@ export const unconfigured: Purchases = {
   buy: async () => ({ status: 'unavailable' }),
   buyProduct: async () => ({ status: 'unavailable' }),
   restore: async () => ({ status: 'unavailable' }),
+  appUserId: async () => null,
   // Not entitled, rather than entitled. An unconfigured build is a build whose
   // store was never reached, and the safe reading of "we don't know" is the one
   // that does not hand out the paid product to everybody.
