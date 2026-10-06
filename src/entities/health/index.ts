@@ -1,6 +1,7 @@
 export {
   EMPTY_SUMMARY,
   READ_TYPES,
+  SUMMARY_FIELDS,
   connectHealth,
   healthAccess,
   healthAvailable,

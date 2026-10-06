@@ -246,6 +246,9 @@ export const ONBOARDING_EN = {
   'onboarding.health.blurb': 'So your plan starts from what you have actually been doing.',
   'onboarding.health.askNamed': 'Fill me in, {name}!',
   'onboarding.health.ask': 'Fill me in!',
+  /** Android's: Health Connect is asked for steps, workouts and sleep, not energy or heart rate. */
+  'onboarding.health.askBlurbAndroid':
+    'Walkito reads your steps, runs and sleep so the plan starts from what you have actually been doing - not what you meant to do.',
   'onboarding.health.askBlurb':
     'Walkito reads your steps, energy and heart rate so the plan starts from what you have actually been doing - not what you meant to do.',
   'onboarding.health.steps': 'Steps',

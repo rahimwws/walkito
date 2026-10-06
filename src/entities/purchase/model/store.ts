@@ -2,6 +2,7 @@ import Constants from 'expo-constants';
 import * as Device from 'expo-device';
 import { Platform } from 'react-native';
 
+import { compAccess, subscribeComp } from './comp';
 import { type Purchases as Store, unconfigured } from './purchase';
 
 /**
@@ -170,7 +171,26 @@ function pick(): Store {
  * branches were all written against this contract before there was anything
  * behind it, so none of them needed touching when there was.
  */
-export const purchases: Store = pick();
+export const purchases: Store = withComp(pick());
+
+/**
+ * The store, unlocked as well for an account granted access (`comp.ts`): the
+ * store review demo account and the founders', on any phone they sign in on.
+ */
+function withComp(store: Store): Store {
+  return {
+    ...store,
+    entitled: () => store.entitled() || compAccess(),
+    subscribe: (listener) => {
+      const offStore = store.subscribe(listener);
+      const offComp = subscribeComp(listener);
+      return () => {
+        offStore();
+        offComp();
+      };
+    },
+  };
+}
 
 /**
  * Start the store, once, at launch.

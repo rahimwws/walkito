@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { AppState } from 'react-native';
 
 import { syncExpiryNotice } from '@/entities/notifications';
-import { purchases, startPurchases } from '@/entities/purchase';
+import { purchases, startCompAccess, startPurchases } from '@/entities/purchase';
 
 /**
  * Starts the store once, and re-checks the subscription on the way back in.
@@ -19,6 +19,8 @@ export function usePurchases(): void {
     // it was in a moment earlier — there is nothing for a user to do about it
     // and nothing worth interrupting launch for.
     void startPurchases();
+    // Access granted by account, read now and after every sign-in.
+    startCompAccess();
   }, []);
 
   useEffect(() => {

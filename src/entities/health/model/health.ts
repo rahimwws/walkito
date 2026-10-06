@@ -18,6 +18,9 @@ import { WRITE_TYPES } from './write-back';
  * through it. Steps and active energy say how much they move; resting heart
  * rate says how well they are recovering.
  */
+/** Which of today's totals the onboarding card can show on this platform. */
+export const SUMMARY_FIELDS = ['steps', 'calories', 'heartRate'] as const;
+
 export const READ_TYPES = [
   // What the gait signals are built from. Two mobility types, not four: step
   // length and double-support drive no signal, and an unused scope is a row on

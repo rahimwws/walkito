@@ -17,6 +17,7 @@ import Animated, {
 
 import {
   connectHealth,
+  SUMMARY_FIELDS,
   healthAvailable,
   type HealthOutcome,
   type HealthSummary,
@@ -26,12 +27,16 @@ import { useT, type Translate } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
-/** The three figures we ask for, in the order Apple's own sheet lists them. */
-const ROWS = [
-  { key: 'steps', label: 'onboarding.health.steps', icon: FootprintsIcon, color: '#38BDF8' },
-  { key: 'calories', label: 'onboarding.health.calories', icon: FireIcon, color: '#FB7185' },
-  { key: 'heartRate', label: 'onboarding.health.heartRate', icon: HeartIcon, color: '#F472B6' },
-] as const;
+/** The figures we ask for, in the order Apple's own sheet lists them — only
+ * the ones this platform's store is asked for (`SUMMARY_FIELDS`): Health
+ * Connect gets steps alone. */
+const ROWS = (
+  [
+    { key: 'steps', label: 'onboarding.health.steps', icon: FootprintsIcon, color: '#38BDF8' },
+    { key: 'calories', label: 'onboarding.health.calories', icon: FireIcon, color: '#FB7185' },
+    { key: 'heartRate', label: 'onboarding.health.heartRate', icon: HeartIcon, color: '#F472B6' },
+  ] as const
+).filter((row) => (SUMMARY_FIELDS as readonly string[]).includes(row.key));
 
 export type HealthStepProps = {
   /** Reflected back so the ask is addressed to a person, not to a user. */
@@ -122,7 +127,7 @@ export function HealthStep({ name, summary, onConnected, onNext }: HealthStepPro
           : t('onboarding.health.ask')}
       </Text>
       <Text style={[styles.blurb, { color: meter.caption }]}>
-        {t('onboarding.health.askBlurb')}
+        {t(Platform.OS === 'android' ? 'onboarding.health.askBlurbAndroid' : 'onboarding.health.askBlurb')}
       </Text>
 
       <View style={[styles.card, { backgroundColor: colors.card }]}>

@@ -220,6 +220,8 @@ export const ONBOARDING_RU = {
   'onboarding.health.blurb': 'Чтобы план стартовал с того, что вы действительно делали.',
   'onboarding.health.askNamed': 'Расскажите о себе, {name}!',
   'onboarding.health.ask': 'Расскажите о себе!',
+  'onboarding.health.askBlurbAndroid':
+    'Walkito читает шаги, пробежки и сон, чтобы план стартовал с того, что вы действительно делали, а не с того, что собирались.',
   'onboarding.health.askBlurb':
     'Walkito читает шаги, энергию и пульс, чтобы план стартовал с того, что вы действительно делали, а не с того, что собирались.',
   'onboarding.health.steps': 'Шаги',

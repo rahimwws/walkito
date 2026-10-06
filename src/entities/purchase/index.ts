@@ -23,6 +23,7 @@ export {
   storeDiagnosis,
 } from './model/store';
 export { useEntitled } from './model/entitlement';
+export { refreshCompAccess, startCompAccess } from './model/comp';
 export {
   accessLapsed,
   browsingLapsed,

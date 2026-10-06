@@ -220,6 +220,8 @@ export const ONBOARDING_ES = {
   'onboarding.health.blurb': 'Para que tu plan parta de lo que de verdad has estado haciendo.',
   'onboarding.health.askNamed': '¡Ponme al día, {name}!',
   'onboarding.health.ask': '¡Ponme al día!',
+  'onboarding.health.askBlurbAndroid':
+    'Walkito lee tus pasos, tus carreras y tu sueño para que el plan parta de lo que de verdad has hecho, no de lo que pensabas hacer.',
   'onboarding.health.askBlurb':
     'Walkito lee tus pasos, tu energía y tu frecuencia cardiaca para que el plan parta de lo que de verdad has hecho, no de lo que pensabas hacer.',
   'onboarding.health.steps': 'Pasos',

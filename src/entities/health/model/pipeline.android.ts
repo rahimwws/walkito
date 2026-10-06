@@ -8,9 +8,11 @@ import { dayKey, foldSleep } from './sleep';
  * `pipeline.ts`, read from Android's store instead of HealthKit. Metro picks
  * this file on Android.
  *
- * Two differences from iOS, both Android's:
+ * Differences from iOS:
  * - No walking asymmetry or walking speed: Health Connect has no such types.
  *   Those fields stay null and the gait signals never speak.
+ * - No floors or resting heart rate: not asked for (`READ_TYPES`), so those
+ *   stay null too.
  * - No background wakes: Health Connect has no observer queries. The app layer
  *   already refreshes on every return to the foreground, which is when the
  *   numbers are looked at anyway.
@@ -19,7 +21,7 @@ import { dayKey, foldSleep } from './sleep';
 type Field = keyof Omit<DailyMetric, 'date'>;
 
 /** What the root registers for; on Android, the records it reads. */
-export const OBSERVED_TYPES = ['Steps', 'FloorsClimbed', 'RestingHeartRate', 'SleepSession', 'ExerciseSession'] as const;
+export const OBSERVED_TYPES = ['Steps', 'SleepSession', 'ExerciseSession'] as const;
 
 const BACKFILL_DAYS = 90;
 const REFRESH_DAYS = 14;
@@ -60,31 +62,16 @@ async function readDaily(from: Date, to: Date): Promise<DailyMetric[]> {
   if (hc == null) return [];
   const slicer = { period: 'DAYS' as const, length: 1 };
   const steps = new Map<string, number>();
-  const flights = new Map<string, number>();
-  const resting = new Map<string, number>();
-  await Promise.all([
-    hc
-      .aggregateGroupByPeriod({ recordType: 'Steps', timeRangeFilter: range(from, to), timeRangeSlicer: slicer })
-      .then((groups) => {
-        for (const g of groups) if (g.result.COUNT_TOTAL > 0) steps.set(dayKey(new Date(g.startTime)), g.result.COUNT_TOTAL);
-      })
-      .catch(() => {}),
-    hc
-      .aggregateGroupByPeriod({ recordType: 'FloorsClimbed', timeRangeFilter: range(from, to), timeRangeSlicer: slicer })
-      .then((groups) => {
-        for (const g of groups) {
-          if (g.result.FLOORS_CLIMBED_TOTAL > 0) flights.set(dayKey(new Date(g.startTime)), g.result.FLOORS_CLIMBED_TOTAL);
-        }
-      })
-      .catch(() => {}),
-    hc
-      .aggregateGroupByPeriod({ recordType: 'RestingHeartRate', timeRangeFilter: range(from, to), timeRangeSlicer: slicer })
-      .then((groups) => {
-        for (const g of groups) if (g.result.BPM_AVG > 0) resting.set(dayKey(new Date(g.startTime)), g.result.BPM_AVG);
-      })
-      .catch(() => {}),
-  ]);
-  return [...days('steps', steps), ...days('flights', flights), ...days('restingHR', resting)];
+  // Steps only. Floors and resting heart rate are iOS's: Health Connect is
+  // asked for nothing a feature does not use (see `READ_TYPES`), so those
+  // fields stay null here and their signals never speak.
+  await hc
+    .aggregateGroupByPeriod({ recordType: 'Steps', timeRangeFilter: range(from, to), timeRangeSlicer: slicer })
+    .then((groups) => {
+      for (const g of groups) if (g.result.COUNT_TOTAL > 0) steps.set(dayKey(new Date(g.startTime)), g.result.COUNT_TOTAL);
+    })
+    .catch(() => {});
+  return days('steps', steps);
 }
 
 /** Hours on foot per day, from hourly step totals — the iOS rule, unchanged. */

@@ -21,17 +21,25 @@ export {
  */
 type HealthConnect = typeof import('react-native-health-connect');
 
-/** The records read, as Health Connect permissions. */
-export const READ_TYPES = [
-  'Steps',
-  'FloorsClimbed',
-  'RestingHeartRate',
-  'HeartRate',
-  'SleepSession',
-  'ExerciseSession',
-  'Distance',
-  'ActiveCaloriesBurned',
-] as const;
+/**
+ * The records read, as Health Connect permissions, and what each one is for.
+ * Google's Health Connect policy allows only the types a user-facing feature
+ * uses, each declared in Play Console with that feature: keep the list, the
+ * manifest (`app.json`) and the declaration in step.
+ *
+ * - Steps: how much you were on your feet, which sets the day's load.
+ * - ExerciseSession: your runs and workouts, so a long run means a lighter day.
+ * - Distance: how far each run went, the same load in kilometres.
+ * - SleepSession: a short night makes the day's session gentler.
+ *
+ * No heart rate, resting heart rate, active energy or floors: Play rejected
+ * 1.0.1 for asking for more than the features use.
+ */
+export const READ_TYPES = ['Steps', 'ExerciseSession', 'Distance', 'SleepSession'] as const;
+
+/** Which of today's totals the onboarding card can show here. Health Connect
+ * is asked for steps alone; energy and heart rate are iOS's. */
+export const SUMMARY_FIELDS = ['steps'] as const;
 
 /** Written back: finished sessions, as exercise. */
 const WRITE_RECORDS = ['ExerciseSession'] as const;
@@ -160,19 +168,9 @@ export async function readTodaySummary(now = Date.now()): Promise<HealthSummary>
   // behind the figure means there is no figure: "0 bpm" is not a reading.
   const known = <T extends { dataOrigins: string[] }>(r: T, value: number | undefined) =>
     r.dataOrigins.length === 0 ? null : round(value);
-  const [steps, calories, heartRate] = await Promise.all([
-    hc
-      .aggregateRecord({ recordType: 'Steps', timeRangeFilter })
-      .then((r) => known(r, r.COUNT_TOTAL))
-      .catch(() => null),
-    hc
-      .aggregateRecord({ recordType: 'ActiveCaloriesBurned', timeRangeFilter })
-      .then((r) => known(r, r.ACTIVE_CALORIES_TOTAL?.inKilocalories))
-      .catch(() => null),
-    hc
-      .aggregateRecord({ recordType: 'HeartRate', timeRangeFilter })
-      .then((r) => known(r, r.BPM_AVG))
-      .catch(() => null),
-  ]);
-  return { steps, calories, heartRate };
+  const steps = await hc
+    .aggregateRecord({ recordType: 'Steps', timeRangeFilter })
+    .then((r) => known(r, r.COUNT_TOTAL))
+    .catch(() => null);
+  return { steps, calories: null, heartRate: null };
 }
