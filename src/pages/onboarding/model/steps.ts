@@ -584,9 +584,10 @@ export const STEPS: readonly OnboardingStep[] = [
     /**
      * "Send your plan to your email?" — optional, straight after the plan.
      *
-     * Asked only of someone the app has no address for: Sign in with Apple
-     * hands one over on the first authorisation, relay or real, and asking
-     * again would be asking for what we already have. Empty is a skip.
+     * Asked only of someone the app has no address for. Sign in with Apple
+     * hands one over on the first authorisation, relay or real, and the
+     * account keeps it for every sign-in after (`accountFor`), so this is for
+     * a session with no address anywhere. Empty is a skip.
      */
     kind: 'email',
     key: 'email',

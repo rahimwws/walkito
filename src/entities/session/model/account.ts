@@ -15,26 +15,32 @@ import { forgetIdentity, supabase } from '@/shared/lib/supabase';
 export async function accountFor(
   provider: 'apple' | 'google',
   token: string | null,
-): Promise<{ userId: string | null; error: unknown }> {
+): Promise<{ userId: string | null; email: string | null; error: unknown }> {
   const client = supabase;
-  if (client == null) return { userId: null, error: null };
-  if (token == null) return { userId: null, error: new Error(`${provider} returned no identity token`) };
+  if (client == null) return { userId: null, email: null, error: null };
+  if (token == null) return { userId: null, email: null, error: new Error(`${provider} returned no identity token`) };
 
   const { data: current } = await client.auth.getSession();
   if (current.session?.user.is_anonymous === true) {
     const linked = await client.auth.linkIdentity({ provider, token });
     if (linked.error == null) {
       forgetIdentity();
-      return { userId: linked.data.user?.id ?? current.session.user.id, error: null };
+      return {
+        userId: linked.data.user?.id ?? current.session.user.id,
+        email: linked.data.user?.email || null,
+        error: null,
+      };
     }
   }
 
   const { data, error } = await client.auth.signInWithIdToken({ provider, token });
   if (error != null) {
     if (__DEV__) console.warn(`[auth] ${provider} sign-in to Supabase failed: code=${error.code ?? 'none'} ${error.message}`);
-    return { userId: null, error };
+    return { userId: null, email: null, error };
   }
   // A different user than the cached anonymous one — see `forgetIdentity`.
   forgetIdentity();
-  return { userId: data.user?.id ?? null, error: null };
+  // The account's own address: the one Apple put in the identity token, which
+  // the account keeps, so it is there on a sign-in whose credential is silent.
+  return { userId: data.user?.id ?? null, email: data.user?.email || null, error: null };
 }

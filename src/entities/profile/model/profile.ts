@@ -3,6 +3,7 @@ import { useSyncExternalStore } from 'react';
 import { track } from '@/shared/lib/analytics';
 import { getLanguage } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
+import { accountEmail } from '@/shared/lib/supabase';
 
 import { deviceTimeZone, saveEmailContact, type EmailSource } from './email';
 
@@ -126,8 +127,26 @@ export async function syncEmailContext(): Promise<void> {
   if (ok) kv.set(CONTEXT_SENT_KEY, context);
 }
 
-/** The older name for it, kept for the callers that already use it. */
+/**
+ * At launch: the server copy, and the account's address when this phone has
+ * none.
+ *
+ * A phone that signed in again — a reinstall, a second device — got null from
+ * Apple, so onboarding asked for an address the account already had. The
+ * account is asked first now, and the email step only appears for somebody
+ * with no address anywhere.
+ */
 export async function syncStoredEmail(): Promise<void> {
+  if (email === '') {
+    const account = await accountEmail().catch(() => null);
+    if (account != null) {
+      const source: EmailSource =
+        account.provider === 'google' ? 'google' : account.provider === 'apple' ? 'apple' : 'onboarding';
+      // Sends the server copy itself.
+      setProfileEmail(account.email, source);
+      return;
+    }
+  }
   await syncEmailContext();
 }
 

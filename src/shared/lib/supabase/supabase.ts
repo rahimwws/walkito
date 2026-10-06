@@ -119,6 +119,26 @@ export async function isAnonymousSession(): Promise<boolean> {
 }
 
 /**
+ * The address the signed-in account carries, and which provider gave it.
+ *
+ * Apple puts the email on the credential only the first time an Apple ID
+ * authorises the app; every later sign-in, a reinstall included, hands back
+ * null there. The identity token still carries it, and the account it signed
+ * into keeps it, so this is where it is read from when the credential is
+ * silent. Null for an anonymous session or an account with no address.
+ */
+export async function accountEmail(): Promise<{ email: string; provider: string | null } | null> {
+  if (supabase == null) return null;
+  const { data } = await supabase.auth.getSession();
+  const user = data.session?.user;
+  if (user == null || user.is_anonymous === true) return null;
+  const email = user.email?.trim() ?? '';
+  if (email === '') return null;
+  const provider = typeof user.app_metadata?.provider === 'string' ? user.app_metadata.provider : null;
+  return { email, provider };
+}
+
+/**
  * Signs in anonymously, once, and hands back the user id.
  *
  * Anonymous rather than email or social, because an invite code is not worth an

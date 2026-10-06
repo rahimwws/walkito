@@ -79,7 +79,8 @@ export async function signInWithApple(): Promise<AppleSignIn> {
     return {
       status: 'signed-in',
       userId: account.userId ?? credential.user,
-      email: credential.email ?? null,
+      // The credential's only on the first authorisation; the account's after.
+      email: credential.email ?? account.email ?? null,
       fullName: fullName.length > 0 ? fullName : null,
     };
   } catch (error) {
