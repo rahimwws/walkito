@@ -1,5 +1,5 @@
 import { requireOptionalNativeModule } from 'expo';
-import { useEffect, useMemo, type ReactNode } from 'react';
+import { useEffect, useMemo, useRef, type ReactNode } from 'react';
 import { Platform } from 'react-native';
 
 import { getIntake, useIntake, useProfileName } from '@/entities/profile';
@@ -125,7 +125,16 @@ const controller: import('expo-superwall').CustomPurchaseControllerContext = {
  */
 function Bridge({ sdk, children }: { sdk: Sdk; children: ReactNode }) {
   const configured = sdk.useSuperwall((state) => state.isConfigured);
-  const { identify, update, setSubscriptionStatus } = sdk.useUser();
+  // The SDK's functions, held in a ref and never listed as effect
+  // dependencies. `useUser().update` is a new function on every render, and an
+  // effect keyed on it ran on every render: each run set attributes, which
+  // changed the SDK's store, which re-rendered this, which ran it again. That
+  // loop held the JS thread, and onboarding froze on its second screen with
+  // "Hi, I'm Walkito" typed (the typing is on the UI thread) and nothing after
+  // it (1.0.2 builds 31 and 32 on iOS, 6 on Android).
+  const user = sdk.useUser();
+  const sdkRef = useRef(user);
+  sdkRef.current = user;
   const { registerPlacement } = sdk.usePlacement();
   const entitled = useEntitled();
   const language = useLanguage();
@@ -138,33 +147,38 @@ function Bridge({ sdk, children }: { sdk: Sdk; children: ReactNode }) {
     if (!configured) return;
     let live = true;
     void purchases.appUserId().then((id) => {
-      if (live && id != null) void identify(id).catch(() => {});
+      if (live && id != null) void sdkRef.current.identify(id).catch(() => {});
     });
     return () => {
       live = false;
     };
-  }, [configured, identify]);
+  }, [configured]);
 
   // Access as the app judges it, never Superwall's own guess.
   useEffect(() => {
     if (!configured) return;
-    void setSubscriptionStatus(
-      entitled ? { status: 'ACTIVE', entitlements: [{ id: ENTITLEMENT, type: 'SERVICE_LEVEL' }] } : { status: 'INACTIVE' },
-    ).catch(() => {});
-  }, [configured, entitled, setSubscriptionStatus]);
+    void sdkRef.current
+      .setSubscriptionStatus(
+        entitled ? { status: 'ACTIVE', entitlements: [{ id: ENTITLEMENT, type: 'SERVICE_LEVEL' }] } : { status: 'INACTIVE' },
+      )
+      .catch(() => {});
+  }, [configured, entitled]);
 
   // What audiences and paywall text may use: see `paywallPersonalisation`.
-  // Never health data, by the same rule as analytics.
+  // Never health data, by the same rule as analytics. Sent only when it
+  // differs from what was sent last, so nothing here can feed back into
+  // itself.
   const name = useProfileName();
   const intake = useIntake();
+  const sentAttributes = useRef<string | null>(null);
   useEffect(() => {
     if (!configured) return;
-    void update({
-      language: getLanguage(),
-      platform: Platform.OS,
-      ...personalisation(name),
-    }).catch(() => {});
-  }, [configured, language, name, intake, update]);
+    const attributes = { language: getLanguage(), platform: Platform.OS, ...personalisation(name) };
+    const key = JSON.stringify(attributes);
+    if (key === sentAttributes.current) return;
+    sentAttributes.current = key;
+    void sdkRef.current.update(attributes).catch(() => {});
+  }, [configured, language, name, intake]);
 
   sdk.useSuperwallEvents({
     onSuperwallEvent: (info) => {
