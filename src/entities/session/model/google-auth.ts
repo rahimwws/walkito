@@ -57,7 +57,7 @@ export async function signInWithGoogle(): Promise<AppleSignIn> {
     return {
       status: 'signed-in',
       userId: account.userId ?? user.id,
-      email: user.email ?? null,
+      email: user.email ?? account.email ?? null,
       fullName: fullName != null && fullName.length > 0 ? fullName : null,
     };
   } catch (error) {
