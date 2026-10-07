@@ -1,8 +1,10 @@
 import type { EnglishPage } from '@/lib/i18n';
 
 import { ACHILLES_ES } from './articles-es/achilles';
+import { ARCH_PAIN_ES } from './articles-es/arch-pain';
 import { BALL_OF_FOOT_ES } from './articles-es/ball-of-foot';
 import { BEST_APP_ES } from './articles-es/best-app';
+import { BUNIONS_ES } from './articles-es/bunions';
 import { CALF_RAISE_TEST_ES } from './articles-es/calf-raise-test';
 import { CALF_RAISES_ES } from './articles-es/calf-raises';
 import { EX_ANKLE_ROCKS_ES } from './articles-es/ex-ankle-rocks';
@@ -21,14 +23,27 @@ import { EX_TIBIALIS_RAISES_ES } from './articles-es/ex-tibialis-raises';
 import { EX_TOE_SPREAD_ES } from './articles-es/ex-toe-spread';
 import { EX_TOWEL_HEEL_RAISE_ES } from './articles-es/ex-towel-heel-raise';
 import { EX_TOWEL_SCRUNCH_ES } from './articles-es/ex-towel-scrunch';
+import { HAGLUNDS_ES } from './articles-es/haglunds';
+import { HAMMER_TOE_ES } from './articles-es/hammer-toe';
+import { HEEL_FAT_PAD_ES } from './articles-es/heel-fat-pad';
+import { HEEL_PAIN_AFTER_WALKING_ES } from './articles-es/heel-pain-after-walking';
+import { HEEL_PAIN_AT_NIGHT_ES } from './articles-es/heel-pain-at-night';
+import { HEEL_SPUR_EXERCISES_ES } from './articles-es/heel-spur-exercises';
+import { HIGH_ARCHES_ES } from './articles-es/high-arches';
 import { HUB_FLAT_FEET_ES } from './articles-es/hub-flat-feet';
 import { HUB_PLANTAR_FASCIITIS_ES } from './articles-es/hub-plantar-fasciitis';
 import { MORNING_HEEL_PAIN_ES } from './articles-es/morning-heel-pain';
+import { MORTONS_ES } from './articles-es/mortons';
 import { NURSES_ES } from './articles-es/nurses';
 import { PF_DURATION_ES } from './articles-es/pf-duration';
+import { PF_VS_HEEL_SPUR_ES } from './articles-es/pf-vs-heel-spur';
+import { PTTD_ES } from './articles-es/pttd';
+import { SESAMOIDITIS_ES } from './articles-es/sesamoiditis';
+import { SEVERS_ES } from './articles-es/severs';
 import { SHIN_SPLINTS_ES } from './articles-es/shin-splints';
 import { STANDING_DESK_ES } from './articles-es/standing-desk';
 import { STANDING_ES } from './articles-es/standing';
+import { TOP_OF_FOOT_ES } from './articles-es/top-of-foot';
 import { VS_EXAKT_ES } from './articles-es/vs-exakt';
 import type { Guide } from './types';
 
@@ -36,8 +51,10 @@ import type { Guide } from './types';
  * `scripts/gen-articles-es.py` from the files in `articles-es/`. */
 export const ARTICLES_ES: Partial<Record<EnglishPage, Guide>> = {
   achilles: ACHILLES_ES,
+  archPain: ARCH_PAIN_ES,
   ballOfFoot: BALL_OF_FOOT_ES,
   bestApp: BEST_APP_ES,
+  bunions: BUNIONS_ES,
   calfRaiseTest: CALF_RAISE_TEST_ES,
   calfRaises: CALF_RAISES_ES,
   exAnkleRocks: EX_ANKLE_ROCKS_ES,
@@ -56,13 +73,26 @@ export const ARTICLES_ES: Partial<Record<EnglishPage, Guide>> = {
   exToeSpread: EX_TOE_SPREAD_ES,
   exTowelHeelRaise: EX_TOWEL_HEEL_RAISE_ES,
   exTowelScrunch: EX_TOWEL_SCRUNCH_ES,
+  haglunds: HAGLUNDS_ES,
+  hammerToe: HAMMER_TOE_ES,
+  heelFatPad: HEEL_FAT_PAD_ES,
+  heelPainAfterWalking: HEEL_PAIN_AFTER_WALKING_ES,
+  heelPainAtNight: HEEL_PAIN_AT_NIGHT_ES,
+  heelSpurExercises: HEEL_SPUR_EXERCISES_ES,
+  highArches: HIGH_ARCHES_ES,
   hubFlatFeet: HUB_FLAT_FEET_ES,
   hubPlantarFasciitis: HUB_PLANTAR_FASCIITIS_ES,
   morningHeelPain: MORNING_HEEL_PAIN_ES,
+  mortons: MORTONS_ES,
   nurses: NURSES_ES,
   pfDuration: PF_DURATION_ES,
+  pfVsHeelSpur: PF_VS_HEEL_SPUR_ES,
+  pttd: PTTD_ES,
+  sesamoiditis: SESAMOIDITIS_ES,
+  severs: SEVERS_ES,
   shinSplints: SHIN_SPLINTS_ES,
   standingDesk: STANDING_DESK_ES,
   standing: STANDING_ES,
+  topOfFoot: TOP_OF_FOOT_ES,
   vsExakt: VS_EXAKT_ES,
 };

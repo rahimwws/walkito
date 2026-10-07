@@ -7,7 +7,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { ScreenshotSlot } from '@/components/ScreenshotSlot';
 import { Prose } from '@/components/Prose';
-import { CHROME } from '@/lib/i18n';
+import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { articleSchema } from '@/lib/schema';
 import { IN_SESSION_STOP, PAGE_UPDATED, PAIN_GOAL_MAX, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
 
@@ -46,7 +46,7 @@ const DESCRIPTION = `How Walkito builds a heel pain exercise plan: measured goal
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: '/program' },
+  alternates: alternatesCustomEnEs('program', 'en'),
   openGraph: {
     title: `${TITLE} | ${SITE_NAME}`,
     description: DESCRIPTION,
@@ -389,7 +389,7 @@ export default function Program() {
         <AppStoreBadge campaign="program" />
       </Prose>
 
-      <Footer />
+      <Footer languages={{ en: '/program/', es: '/es/programa/', ru: '/ru/programma/' }} />
     </>
   );
 }

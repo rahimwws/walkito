@@ -15,7 +15,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
   updated: '2026-10-07',
   title: 'Test de elevación de talón: valores por edad y cómo hacerlo',
   description:
-    'El test de elevación de talón a una pierna mide la resistencia de la pantorrilla. Cómo hacerlo, valores normales por edad y sexo, qué significa tu resultado.',
+    'Test de elevación de talón a una pierna: cómo hacerlo, valores normales por edad y sexo, y qué significa tu resultado.',
   h1: 'Test de elevación de talón: ¿cuántas deberías hacer y qué significa tu resultado?',
   lede:
     'El test de elevación de talón a una pierna mide la resistencia de los músculos de la pantorrilla. Te paras en un pie y subes en puntas tantas veces como puedas a un ritmo fijo. El número te dice cuánta fuerza resistente a la fatiga tiene la pantorrilla de cada lado, algo que importa para caminar, correr y recuperarte de lesiones del talón o del tendón de Aquiles.',
@@ -117,7 +117,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
         'La pantorrilla y la fascia plantar están conectadas a través del hueso del talón. El tendón de Aquiles tira por detrás; la fascia tira por debajo. Una pantorrilla débil o que se cansa rápido pone más tensión en los dos con cada paso.',
         'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la pantorrilla y de la fascia plantar su grado más alto, A, y al entrenamiento de fuerza una B. El ensayo de Rathleff, que probó elevaciones de talón con carga para la fascitis plantar, usó una elevación de talón como ejercicio principal, y los participantes mejoraron su dolor más rápido que solo con estiramientos durante tres meses. Mira [elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/) para el protocolo completo.',
         'Para la tendinitis de Aquiles, el test de elevación de talón es una de las medidas de resultado habituales. Las personas con tendinopatía de Aquiles en la parte media (dolor en el medio del tendón, no donde se une al hueso del talón) suelen tener menos resistencia en la pantorrilla del lado afectado. Mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/) para el trabajo excéntrico.',
-        'Al correr, la pantorrilla absorbe de dos a tres veces tu peso corporal en cada zancada. Una pantorrilla que se cansa pronto pasa la carga a la rodilla, la tibia y el pie. Subir tu número puede ser parte de un plan para volver a correr. Mira [dolor de talón en corredores](/heel-pain-runners/) (en inglés) para ver el panorama completo.',
+        'Al correr, la pantorrilla absorbe de dos a tres veces tu peso corporal en cada zancada. Una pantorrilla que se cansa pronto pasa la carga a la rodilla, la tibia y el pie. Subir tu número puede ser parte de un plan para volver a correr. Mira [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) para ver el panorama completo.',
       ],
       cites: [CITE.guideline, CITE.rathleff, CITE.achillesGuideline, CITE.madeley],
     },

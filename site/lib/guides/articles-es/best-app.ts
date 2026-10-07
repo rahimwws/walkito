@@ -8,7 +8,7 @@ export const BEST_APP_ES: Guide = {
   updated: '2026-10-07',
   title: 'Mejor app para fascitis plantar en 2026: comparación honesta',
   description:
-    'La mejor app para fascitis plantar en 2026: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch y Walkito comparadas en precio, plataformas y para quién sirven.',
+    'Mejor app para fascitis plantar: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch y Walkito comparadas en precio y para quién sirven.',
   h1: 'Mejor app para fascitis plantar: guía para elegir en 2026',
   lede:
     'Esta página compara siete apps que incluyen ejercicios para la fascitis plantar, el pie plano o el dolor de pies en general. Walkito es una de ellas, y Walkito hace esta página, así que es justo que lo sepas desde el principio. La idea es ser justos, decir dónde las otras son mejores y darte suficiente detalle para elegir la que va con tu situación.',

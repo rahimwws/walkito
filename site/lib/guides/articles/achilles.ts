@@ -41,7 +41,7 @@ export const ACHILLES_EN: Guide = {
     {
       h2: 'What is the eccentric heel drop, and why is it not a stretch?',
       paragraphs: [
-        'The eccentric heel drop is a strength exercise, not a flexibility stretch. You rise on both feet, shift to the painful side, and lower slowly on one foot, letting the heel sink below the step edge. The lowering phase is the eccentric contraction - the calf muscle lengthening under load. That controlled descent is what builds tendon capacity over weeks.',
+        'The eccentric heel drop is a strength exercise, not a flexibility stretch. You rise on both feet, shift to the painful side, and lower slowly on one foot, letting the heel sink below the step edge. The lowering phase is the eccentric contraction: the calf muscle lengthening under load. That controlled descent is what builds tendon capacity over weeks.',
         'The most common mistake is holding the bottom position like a calf stretch. That turns it into a static stretch, which is a different stimulus. The point is the slow, loaded descent. Three seconds down, with the muscle working the whole way.',
         'The 1998 Alfredson trial had 15 athletes with long-standing mid-tendon Achilles pain do eccentric heel drops twice a day, 7 days a week, for three months, straight and bent knee. All 15 returned to their prior running level. A small trial with no control group, but it launched a whole line of research.',
       ],
@@ -80,12 +80,12 @@ export const ACHILLES_EN: Guide = {
         caption: 'Achilles tendonitis exercises: research doses and Walkito starting doses',
         head: ['Exercise', 'Research protocol dose', 'Walkito starting dose', 'Evidence'],
         rows: [
-          ['Seated heel raises', 'Silbernagel Phase 1: 3 x 10, sitting', '3 x 10, both feet', '**Strong** - matches the published Phase 1 protocol'],
-          ['Double-leg heel raises', 'Silbernagel Phase 1: 3 x 10-15, standing', '3 x 10, both feet', '**Strong** - direct match to Phase 1'],
-          ['Heel raise hold (isometric)', '2024 guideline names isometric as effective; 3-5 x 30-45s suggested in practice', '3 x 20s, both feet', '**Moderate** - guideline includes isometric loading; no isolated Achilles isometric-only RCT'],
-          ['Eccentric heel drops (straight knee)', 'Alfredson: 3 x 15, 2x/day, 7 days/week, three months', '3 x 10, each leg', '**Strong** - the original protocol; guideline grade A'],
-          ['Calf stretch (straight knee)', 'Not part of loading trials; a mobility adjunct', '3 x 30s hold, each leg', '**Early** - framed as mobility, not as a loading exercise for Achilles'],
-          ['Soleus stretch (bent knee)', 'Not part of loading trials; a mobility adjunct', '3 x 30s hold, each leg', '**Early** - same caveat; avoid deep stretching for insertional pain'],
+          ['Seated heel raises', 'Silbernagel Phase 1: 3 x 10, sitting', '3 x 10, both feet', '**Strong**: matches the published Phase 1 protocol'],
+          ['Double-leg heel raises', 'Silbernagel Phase 1: 3 x 10-15, standing', '3 x 10, both feet', '**Strong**: direct match to Phase 1'],
+          ['Heel raise hold (isometric)', '2024 guideline names isometric as effective; 3-5 x 30-45s suggested in practice', '3 x 20s, both feet', '**Moderate**: guideline includes isometric loading; no isolated Achilles isometric-only RCT'],
+          ['Eccentric heel drops (straight knee)', 'Alfredson: 3 x 15, 2x/day, 7 days/week, three months', '3 x 10, each leg', '**Strong**: the original protocol; guideline grade A'],
+          ['Calf stretch (straight knee)', 'Not part of loading trials; a mobility adjunct', '3 x 30s hold, each leg', '**Early**: framed as mobility, not as a loading exercise for Achilles'],
+          ['Soleus stretch (bent knee)', 'Not part of loading trials; a mobility adjunct', '3 x 30s hold, each leg', '**Early**: same caveat; avoid deep stretching for insertional pain'],
         ],
       },
       exercises: [
@@ -248,11 +248,11 @@ export const ACHILLES_EN: Guide = {
   redFlags: {
     h2: 'See a clinician first if',
     bullets: [
-      'you felt a sudden pop, snap or a sensation of being kicked in the back of the leg, especially with immediate difficulty pushing off or walking on the toes - this can indicate an Achilles tendon rupture',
-      'you are currently taking or have recently taken a fluoroquinolone antibiotic (such as ciprofloxacin or levofloxacin) and have new or worsening tendon pain - these drugs carry an FDA boxed warning for tendinitis and tendon rupture',
+      'you felt a sudden pop, snap or a sensation of being kicked in the back of the leg, especially with immediate difficulty pushing off or walking on the toes. This can indicate an Achilles tendon rupture',
+      'you are currently taking or have recently taken a fluoroquinolone antibiotic (such as ciprofloxacin or levofloxacin) and have new or worsening tendon pain. These drugs carry an FDA boxed warning for tendinitis and tendon rupture',
       'pain and swelling came on suddenly with fever, redness or warmth over the tendon',
       'there is significant swelling, bruising or a palpable gap in the tendon',
-      'pain is right at the heel-bone attachment and gets worse with stretching or deep heel drops, not better - this points to insertional tendinopathy needing a modified approach or a clinician\'s input',
+      'pain is right at the heel-bone attachment and gets worse with stretching or deep heel drops, not better. This points to insertional tendinopathy needing a modified approach or a clinician\'s input',
       'pain or stiffness is getting steadily worse over weeks despite consistent loading',
       'pain is present at rest or wakes you at night',
       'you cannot put weight on the foot or you are limping',

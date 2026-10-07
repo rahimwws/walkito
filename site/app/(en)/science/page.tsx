@@ -7,7 +7,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Cite } from '@/components/Cite';
 import { Prose } from '@/components/Prose';
-import { CHROME } from '@/lib/i18n';
+import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { articleSchema } from '@/lib/schema';
 import { PAGE_UPDATED, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
 
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   // people ask on the way to choosing a plan (does exercise help, and which).
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: '/science' },
+  alternates: alternatesCustomEnEs('science', 'en'),
   openGraph: {
     title: `${TITLE} | ${SITE_NAME}`,
     description: DESCRIPTION,
@@ -388,7 +388,7 @@ export default function Science() {
         <UpdatedLine lang="en" updated={PAGE_UPDATED.science} />
       </Prose>
 
-      <Footer />
+      <Footer languages={{ en: '/science/', es: '/es/evidencia/', ru: '/ru/issledovaniya/' }} />
     </>
   );
 }

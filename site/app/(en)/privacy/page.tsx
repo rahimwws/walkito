@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Privacy',
   description:
-    'What Walkito collects and why. Your plan and check-ins are saved to your account; Apple Health and Health Connect data stay on your phone. No ads and no ad tracking.',
+    'What Walkito collects and why. Your plan is saved to your account, Apple Health and Health Connect data stay on your phone. No ads, no ad tracking.',
   alternates: alternatesFor('privacy', 'en'),
 };
 
@@ -54,7 +54,7 @@ export default function Privacy() {
       <Prose className="shell prose">
         <h1>Privacy</h1>
 
-        <p className="updated">Last updated: 6 October 2026</p>
+        <p className="updated">Last updated: 7 October 2026</p>
 
         <h2>The short version</h2>
         <ul>
@@ -385,6 +385,36 @@ export default function Privacy() {
           Some of the services above process data outside your country,
           including in the United States, under their own safeguards for
           international transfers.
+        </p>
+
+        <h2>Website email signups</h2>
+        <p>
+          If you sign up on the website for the printable exercise sheets and
+          the 7-day starter plan, we store your email address, the language you
+          were reading in, which page you signed up on, and a record of the
+          confirmation and each email we sent you.
+        </p>
+        <p>
+          <b>Why:</b> to send you the sheets and the seven daily emails you
+          asked for, and nothing else.
+        </p>
+        <p>
+          <b>Processors:</b> Resend (delivers the emails) and Supabase (stores
+          the signup). Both process the data only to provide their service to
+          us.
+        </p>
+        <p>
+          <b>No account is created.</b> A website signup does not create an app
+          account. The data is separate from any app data.
+        </p>
+        <p>
+          <b>Unsubscribe:</b> every email has a one-click unsubscribe link.
+          After you unsubscribe, we stop sending and delete your data within
+          30 days. You can also write to {mail}.
+        </p>
+        <p>
+          <b>No cookies, no trackers.</b> The website does not set any cookies
+          and does not load any analytics or tracking script.
         </p>
 
         <h2>Not medical advice</h2>

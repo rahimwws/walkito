@@ -282,6 +282,150 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.1093/ptj/75.8.694',
     pmid: '7644573',
   },
+  {
+    text: 'Abdalbary SA. Foot Mobilization and Exercise Program Combined with Toe Separator Improves Outcomes in Women with Moderate Hallux Valgus at 1-Year Follow-up (A Randomized Clinical Trial). Journal of the American Podiatric Medical Association. 2018;108(6):478–486.',
+    doi: '10.7547/17-026',
+    pmid: '29683337',
+  },
+  {
+    text: 'Biz C, Maccarone MC, Bonso V, et al. Conservative Treatment of Sesamoiditis: A Systematic Literature Review with Individual-Level Pooled Data Analysis. Medicina (Kaunas, Lithuania). 2025;61(7).',
+    doi: '10.3390/medicina61071215',
+    pmid: '40731844',
+  },
+  {
+    text: 'Burns J, Crosbie J, Ouvrier R, Hunt A. Effective orthotic therapy for the painful cavus foot: a randomized controlled trial. Journal of the American Podiatric Medical Association. 2006;96(3):205–11.',
+    doi: '10.7547/0960205',
+    pmid: '16707631',
+  },
+  {
+    text: 'Choo YJ, Park CH, Chang MC. Rearfoot disorders and conservative treatment: a narrative review. Annals of Palliative Medicine. 2020;9(5):3546–3552.',
+    doi: '10.21037/apm-20-446',
+    pmid: '32787369',
+  },
+  {
+    text: 'Formosa C, Grixti C, Gatt A. Conservative Approach in the Management of Lesser Toe Deformities in Older Adults. Journal of the American Podiatric Medical Association. 2022;112(3).',
+    doi: '10.7547/20-274',
+    pmid: '36074350',
+  },
+  {
+    text: 'Houck J, Neville C, Tome J, Flemister A. Randomized Controlled Trial Comparing Orthosis Augmented by Either Stretching or Stretching and Strengthening for Stage II Tibialis Posterior Tendon Dysfunction. Foot & Ankle International. 2015;36(9):1006–16.',
+    doi: '10.1177/1071100715579906',
+    pmid: '25857939',
+  },
+  {
+    text: 'James AM, Williams CM, Haines TP. Effectiveness of footwear and foot orthoses for calcaneal apophysitis: a 12-month factorial randomised trial. British Journal of Sports Medicine. 2016;50(20):1268–1275.',
+    doi: '10.1136/bjsports-2015-094986',
+    pmid: '26917682',
+  },
+  {
+    text: 'Kim MH, Yi CH, Weon JH, Cynn HS, Jung DY, Kwon OY. Effect of toe-spread-out exercise on hallux valgus angle and cross-sectional area of abductor hallucis muscle in subjects with hallux valgus. Journal of Physical Therapy Science. 2015;27(4):1019–22.',
+    doi: '10.1589/jpts.27.1019',
+    pmid: '25995546',
+  },
+  {
+    text: 'Kulig K, Lederhaus ES, Reischl S, Arya S, Bashford G. Effect of eccentric exercise program for early tibialis posterior tendinopathy. Foot & Ankle International. 2009;30(9):877–85.',
+    doi: '10.3113/FAI.2009.0877',
+    pmid: '19755073',
+  },
+  {
+    text: 'Kulig K, Reischl SF, Pomrantz AB, et al. Nonsurgical management of posterior tibial tendon dysfunction with orthoses and resistive exercise: a randomized controlled trial. Physical Therapy. 2009;89(1):26–37.',
+    doi: '10.2522/ptj.20070242',
+    pmid: '19022863',
+  },
+  {
+    text: 'Külünkoğlu BA, Akkubak Y, Çelik D, Alkan A. A comparison of the effectiveness of splinting, exercise and electrotherapy in women patients with hallux valgus: A randomized clinical trial. Foot (Edinburgh, Scotland). 2021;48:101828.',
+    doi: '10.1016/j.foot.2021.101828',
+    pmid: '34388424',
+  },
+  {
+    text: 'Malhotra K, Davda K, Singh D. The pathology and management of lesser toe deformities. EFORT Open Reviews. 2016;1(11):409–419.',
+    doi: '10.1302/2058-5241.1.160017',
+    pmid: '28461920',
+  },
+  {
+    text: 'Matthews BG, Thomson CE, Harding MP, McKinley JC, Ware RS. Treatments for Morton\'s neuroma. The Cochrane Database of Systematic Reviews. 2024;2(2):CD014687.',
+    doi: '10.1002/14651858.CD014687.pub2',
+    pmid: '38334217',
+  },
+  {
+    text: 'Matthews BG, Hurn SE, Harding MP, Henry RA, Ware RS. The effectiveness of non-surgical interventions for common plantar digital compressive neuropathy (Morton\'s neuroma): a systematic review and meta-analysis. Journal of Foot and Ankle Research. 2019;12:12.',
+    doi: '10.1186/s13047-019-0320-7',
+    pmid: '30809275',
+  },
+  {
+    text: 'Menz HB, Thomas MJ, Marshall M, et al. Coexistence of plantar calcaneal spurs and plantar fascial thickening in individuals with plantar heel pain. Rheumatology (Oxford, England). 2019;58(2):237–245.',
+    doi: '10.1093/rheumatology/key266',
+    pmid: '30204912',
+  },
+  {
+    text: 'Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.',
+    doi: '10.1186/1757-1146-1-7',
+    pmid: '18822162',
+  },
+  {
+    text: 'Perhamre S, Lundin F, Norlin R, Klässbo M. Sever\'s injury; treat it with a heel cup: a randomized, crossover study with two insole alternatives. Scandinavian Journal of Medicine & Science in Sports. 2011;21(6):e42–7.',
+    doi: '10.1111/j.1600-0838.2010.01140.x',
+    pmid: '20673253',
+  },
+  {
+    text: 'Tehraninasr A, Saeedi H, Forogh B, Bahramizadeh M, Keyhani MR. Effects of insole with toe-separator and night splint on patients with painful hallux valgus: a comparative study. Prosthetics and Orthotics International. 2008;32(1):79–83.',
+    doi: '10.1080/03093640701669074',
+    pmid: '18330806',
+  },
+  {
+    text: 'Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.',
+    pmid: '29365222',
+  },
+  {
+    text: 'Wiegerinck JI, Zwiers R, Sierevelt IN, van Weert HC, van Dijk CN, Struijs PA. Treatment of Calcaneal Apophysitis: Wait and See Versus Orthotic Device Versus Physical Therapy: A Pragmatic Therapeutic Randomized Clinical Trial. Journal of Pediatric Orthopedics. 2016;36(2):152–7.',
+    doi: '10.1097/BPO.0000000000000417',
+    pmid: '25985369',
+  },
+  {
+    text: 'Yi TI, Lee GE, Seo IS, Huh WS, Yoon TH, Kim BR. Clinical characteristics of the causes of plantar heel pain. Annals of Rehabilitation Medicine. 2011;35(4):507–13.',
+    doi: '10.5535/arm.2011.35.4.507',
+    pmid: '22506166',
+  },
+  {
+    text: 'Yuen WLP, Tan PT, Kon KKC. Surgical Treatment of Haglund\'s Deformity: A Systematic Review and Meta-Analysis. Cureus. 2022;14(7):e27500.',
+    doi: '10.7759/cureus.27500',
+    pmid: '36060327',
+  },
+  {
+    text: 'Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.',
+    doi: '10.1148/radiol.14131410',
+    pmid: '24814176',
+  },
+  {
+    text: 'Tedeschi R. Baxter\'s nerve: the hidden culprit of chronic heel pain. Neurological Sciences. 2025;46(9):4685–4689.',
+    doi: '10.1007/s10072-025-08253-0',
+    pmid: '40418415',
+  },
+  {
+    text: 'Micheli LJ, Ireland ML. Prevention and management of calcaneal apophysitis in children: an overuse syndrome. Journal of Pediatric Orthopedics. 1987;7(1):34–8.',
+    doi: '10.1097/01241398-198701000-00007',
+    pmid: '3793908',
+  },
+  {
+    text: 'Nieto-Gil P, Marco-Lledó J, García-Campos J, Ruiz-Muñoz M, Gijon-Nogueron G, Ramos-Petersen L. Risk factors and associated factors for calcaneal apophysitis (Sever\'s disease): a systematic review. BMJ Open. 2023;13(6):e064903.',
+    doi: '10.1136/bmjopen-2022-064903',
+    pmid: '37280033',
+  },
+  {
+    text: 'Burns J, Crosbie J, Hunt A, Ouvrier R. The effect of pes cavus on foot pain and plantar pressure. Clinical Biomechanics (Bristol, Avon). 2005;20(9):877–82.',
+    doi: '10.1016/j.clinbiomech.2005.03.006',
+    pmid: '15882916',
+  },
+  {
+    text: 'Burns J, Landorf KB, Ryan MM, Crosbie J, Ouvrier RA. Interventions for the prevention and treatment of pes cavus. The Cochrane Database of Systematic Reviews. 2007;2007(4):CD006154.',
+    doi: '10.1002/14651858.CD006154.pub2',
+    pmid: '17943889',
+  },
+  {
+    text: 'Yammine K. The sesamoids of the feet in humans: a systematic review and meta-analysis. Anatomical Science International. 2015;90(3):144–60.',
+    doi: '10.1007/s12565-014-0239-9',
+    pmid: '24801385',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -339,6 +483,35 @@ export const CITE = {
   jung: 50,
   zarali: 51,
   lunsfordPerry: 52,
+  abdalbary: 53,
+  bizSesamoiditis: 54,
+  burnsCavus: 55,
+  chooRearfoot: 56,
+  formosa: 57,
+  houckPTTD: 58,
+  jamesSever: 59,
+  kimHV: 60,
+  kuligEccentric: 61,
+  kuligRCT: 62,
+  kulunkoglu: 63,
+  malhotra: 64,
+  matthewsCochrane: 65,
+  matthewsSR: 66,
+  menzCoexistence: 67,
+  menzSpur: 68,
+  perhamreHeelCup: 69,
+  tehraninasr: 70,
+  tuHeelPain: 71,
+  wiegerinck: 72,
+  yiFatPad: 73,
+  yuenHaglund: 74,
+  ehrmannSpur: 75,
+  tedeschiBaxter: 76,
+  micheliSever: 77,
+  nietoGilSever: 78,
+  burnsCavusPain: 79,
+  burnsCavusCochrane: 80,
+  yammineSesamoid: 81,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

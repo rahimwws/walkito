@@ -69,7 +69,7 @@ export const EX_HIP_ABDUCTION_ES: Guide = {
       h2: '¿A quién le sirve la abducción de cadera para el dolor de pies?',
       paragraphs: [
         'A las personas con pie plano o con pronación excesiva, porque el ejercicio trabaja una causa común, más arriba en la cadena, del hundimiento del arco. Si tus rodillas tienden a irse hacia adentro cuando haces sentadillas o caminas, es probable que unos abductores de cadera débiles tengan que ver.',
-        'A los corredores, porque estar apoyado en una pierna es la postura normal al correr. Cada zancada cae sobre un pie. Un glúteo medio débil en ese lado deja que la rodilla y el pie se vayan hacia adentro, lo que puede contribuir a la periostitis tibial, la fascitis plantar y la rodilla del corredor. Mira [dolor de talón en corredores](/heel-pain-runners/) (en inglés) y [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/) para más.',
+        'A los corredores, porque estar apoyado en una pierna es la postura normal al correr. Cada zancada cae sobre un pie. Un glúteo medio débil en ese lado deja que la rodilla y el pie se vayan hacia adentro, lo que puede contribuir a la periostitis tibial, la fascitis plantar y la rodilla del corredor. Mira [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) y [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/) para más.',
         'A quienes pasan muchas horas de pie, sobre todo enfermeras y personas que trabajan en tiendas. Estar de pie mucho tiempo cansa el glúteo medio, y al final del turno el control de la cadera se debilita. Mira [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) para ejercicios que combinan bien con la abducción de cadera.',
       ],
     },

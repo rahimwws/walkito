@@ -6,7 +6,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { ARTICLES_EN, guidePath, type Guide } from '@/lib/guides';
-import { CHROME, type EnglishPage } from '@/lib/i18n';
+import { CHROME, alternatesCustomEnEs, type EnglishPage } from '@/lib/i18n';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 
 const PATH = '/exercises/';
@@ -17,7 +17,7 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: PATH },
+  alternates: alternatesCustomEnEs('exercises', 'en'),
   openGraph: { title: `${TITLE} | ${SITE_NAME}`, description: DESCRIPTION, url: PATH, siteName: SITE_NAME, type: 'website', images: ['/opengraph-image'] },
 };
 
@@ -112,7 +112,7 @@ export default function ExerciseLibrary() {
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="exercise-library" lang="en" />
       </Prose>
-      <Footer lang="en" />
+      <Footer lang="en" languages={{ en: '/exercises/', es: '/es/ejercicios/', ru: '/ru/uprazhneniya/' }} />
     </>
   );
 }

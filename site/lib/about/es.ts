@@ -68,7 +68,7 @@ export const ABOUT_ES: About = {
       h2: '¿Un profesional de la salud revisó las guías de Walkito?',
       id: 'clinician',
       paragraphs: [
-        'Ningún profesional de la salud con licencia ha revisado todavía las guías de Walkito. El equipo de Walkito las escribe a partir de la investigación publicada que se cita en cada página.',
+        'Ningún profesional de la salud con licencia ha revisado todavía las guías de Walkito. Walkito Research las escribe a partir de la investigación publicada que se cita en cada página.',
         'Cuando un profesional las revise, esta página mostrará su nombre, sus credenciales y lo que revisó. Hasta entonces, ninguna página de este sitio dice tener un revisor médico.',
       ],
     },

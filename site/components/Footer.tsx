@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
 import { SocialLinks } from '@/components/SocialLinks';
-import { CHROME, EN_ONLY, ES_ARTICLES, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
-import { hasSpanish } from '@/lib/guides';
+import { CHROME, CUSTOM_PAGES, EN_ONLY, ES_ARTICLES, RU_ARTICLES, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { hasSpanish, hasRussian } from '@/lib/guides';
 import { playHref, storeHref } from '@/lib/site';
-import { GROUP_HEADING, NAV_GROUPS, NAV_LABEL, NAV_LABEL_ES, type GuideKey } from '@/lib/nav';
+import { GROUP_HEADING, NAV_GROUPS, NAV_LABEL, NAV_LABEL_ES, NAV_LABEL_RU, type GuideKey } from '@/lib/nav';
 
 /**
  * The footer, on every page in every language.
@@ -30,10 +30,11 @@ const FOOTER_APP: Record<Lang, { ios: string; android: string }> = {
 };
 
 function hrefFor(key: GuideKey, lang: Lang): string | null {
-  if (key === 'runners') return lang === 'en' ? '/heel-pain-runners/' : null;
+  if (key === 'runners') return CUSTOM_PAGES.runners[lang];
   if (key in TRANSLATED) return TRANSLATED[key as TranslatedPage][lang];
   if (lang === 'en') return EN_ONLY[key as EnglishPage];
   if (lang === 'es' && hasSpanish(key as EnglishPage)) return ES_ARTICLES[key as EnglishPage];
+  if (lang === 'ru' && hasRussian(key as EnglishPage)) return RU_ARTICLES[key as EnglishPage];
   return null;
 }
 
@@ -78,7 +79,9 @@ export function Footer({
             ? c.navFlatFeet
             : lang === 'es'
               ? NAV_LABEL_ES[key]
-              : NAV_LABEL[key];
+              : lang === 'ru'
+                ? NAV_LABEL_RU[key]
+                : NAV_LABEL[key];
       return label ? [{ href, label }] : [];
     });
 
@@ -87,6 +90,16 @@ export function Footer({
       ? [
           { href: '/program/', label: 'How the plan works' },
           { href: '/science/', label: 'Evidence' },
+        ]
+      : lang === 'es'
+      ? [
+          { href: CUSTOM_PAGES.program.es, label: 'Cómo funciona el plan' },
+          { href: CUSTOM_PAGES.science.es, label: 'Evidencia' },
+        ]
+      : lang === 'ru'
+      ? [
+          { href: CUSTOM_PAGES.program.ru, label: 'Как работает план' },
+          { href: CUSTOM_PAGES.science.ru, label: 'Исследования' },
         ]
       : []),
     // The app itself, on every page: the one link the whole site exists for.
@@ -116,16 +129,25 @@ export function Footer({
                     { href: '/calf-raise-test/', label: 'Calf raise test' },
                     { href: '/printable-exercise-sheets/', label: 'Printable sheets (PDF)' },
                   ]
+                : lang === 'es'
+                ? [
+                    { href: CUSTOM_PAGES.exercises.es, label: 'Biblioteca de ejercicios' },
+                    { href: '/es/test-de-elevacion-de-talon/', label: 'Test de elevación de talón' },
+                    { href: CUSTOM_PAGES.printables.es, label: 'Hojas imprimibles (PDF)' },
+                  ]
+                : lang === 'ru'
+                ? [
+                    { href: CUSTOM_PAGES.exercises.ru, label: 'Библиотека упражнений' },
+                    { href: CUSTOM_PAGES.printables.ru, label: 'Листы для печати (PDF)' },
+                  ]
                 : []),
             ]}
           />
           <Column heading={h.pain} links={group(NAV_GROUPS.pain)} />
-          {lang !== 'ru' && (
-            <div className="footer-col footer-stack">
-              <Column heading={h.work} links={group(NAV_GROUPS.work)} />
-              <Column heading={h.compare} links={group(NAV_GROUPS.compare)} />
-            </div>
-          )}
+          <div className="footer-col footer-stack">
+            <Column heading={h.work} links={group(NAV_GROUPS.work)} />
+            <Column heading={h.compare} links={group(NAV_GROUPS.compare)} />
+          </div>
           {/* Spanish has no library index page, so its exercise pages are
               listed here; English links to /exercises/ instead. */}
           {lang === 'es' && <Column heading={h.library} links={group(NAV_GROUPS.library)} />}

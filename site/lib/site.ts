@@ -89,7 +89,7 @@ export const PAGE_UPDATED = {
   faq: '2026-10-01',
   about: '2026-10-03',
   support: '2026-10-01',
-  privacy: '2026-10-04',
+  privacy: '2026-10-07',
   terms: '2026-10-01',
 } as const;
 
@@ -168,6 +168,14 @@ export function smartBannerContent(campaign: string): string | null {
 
 export const SUPPORT_EMAIL = 'hello@walkito.site';
 
+/**
+ * The site-subscribe edge function URL, for the email signup form.
+ *
+ * JWT verification is disabled for this function (config.toml), so no anon
+ * key is needed. The function only accepts POST from https://walkito.site.
+ */
+export const SITE_SUBSCRIBE_URL = 'https://illpzsrzfpllovwslmdx.supabase.co/functions/v1/site-subscribe';
+
 /** Social profiles, linked from the footer and the founders' note. A profile
  * with an empty URL is left out everywhere rather than pointing at a guess. */
 export const TIKTOK_URL = 'https://www.tiktok.com/@walkito.app';
@@ -179,13 +187,14 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/walkito.app/';
  */
 /** Other profiles that are really Walkito's: the Substack publication and the
  * Strava club. Directory listings (AlternativeTo, SaaSHub) join once approved. */
+// Rahim's personal newsletter: not a Walkito profile, so not in SAME_AS.
 export const SUBSTACK_URL = 'https://rahimwws.substack.com';
 export const STRAVA_CLUB_URL = 'https://www.strava.com/clubs/walkito';
 export const YOUTUBE_URL = 'https://www.youtube.com/@walkitoapp';
 export const LINKEDIN_URL = 'https://www.linkedin.com/company/walkito-app';
 export const CRUNCHBASE_URL = 'https://www.crunchbase.com/organization/walkito';
 
-export const SAME_AS: readonly string[] = [TIKTOK_URL, INSTAGRAM_URL, APP_STORE_URL, YOUTUBE_URL, LINKEDIN_URL, CRUNCHBASE_URL, SUBSTACK_URL, STRAVA_CLUB_URL].filter(
+export const SAME_AS: readonly string[] = [TIKTOK_URL, INSTAGRAM_URL, APP_STORE_URL, YOUTUBE_URL, LINKEDIN_URL, CRUNCHBASE_URL, STRAVA_CLUB_URL].filter(
   (url): url is string => url != null && url !== '',
 );
 
