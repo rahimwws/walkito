@@ -55,13 +55,13 @@ export default function PrintableSheets() {
       <JsonLd data={BREADCRUMBS} />
       <Masthead lang="en" />
       <Prose className="shell prose">
-        <EmailSignup lang="en" source="printables" page="/printable-exercise-sheets/" />
         <h1>Printable foot exercise sheets</h1>
         <p className="lede">
           Free PDF sheets you can print and stick on the fridge. Each one has the exercises with a picture, the dose,
           how to do it, when to stop, a week log to tick off, and when to see a clinician. They come from our guides,
           so the doses match.
         </p>
+        <EmailSignup lang="en" source="printables" page="/printable-exercise-sheets/" />
         <div className="printables">
           {PRINTABLES.map((p) => (
             <div key={p.slug} className="printable">
