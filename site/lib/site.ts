@@ -129,6 +129,26 @@ export function storeHref(campaign: string): string | null {
   return url.toString();
 }
 
+/**
+ * The Google Play listing, null until the Android build is live in production.
+ *
+ * The Android app (`com.walkito.app`) was submitted to Play review on
+ * 30 September 2026 with managed publishing on, so the listing 404s until it
+ * is published. The day it is, set this and every app call-out and badge on
+ * the site gains a Google Play link next to the App Store one. A link to a
+ * listing that 404s would be worse than no link.
+ */
+export const PLAY_STORE_URL: string | null = null;
+
+/** The Play link for one placement, tagged so Play Console's acquisition
+ * report can tell placements apart (`utm_source=walkito.site`). */
+export function playHref(campaign: string): string | null {
+  if (!PLAY_STORE_URL) return null;
+  const url = new URL(PLAY_STORE_URL);
+  url.searchParams.set('referrer', `utm_source=walkito.site&utm_medium=web&utm_campaign=${campaign}`);
+  return url.toString();
+}
+
 /** The numeric id for the iOS Smart App Banner: Safari's own "Open / Get" strip. */
 export const APPLE_APP_ID: string | null = '6813076846';
 

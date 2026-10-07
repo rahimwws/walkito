@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 
+import { AppCallout } from '@/components/AppCallout';
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Byline, UpdatedLine } from '@/components/Byline';
 import { Evidence } from '@/components/Evidence';
@@ -174,6 +175,8 @@ export function Guide({ guide }: { guide: GuideData }) {
             ))}
           </ul>
         </aside>
+
+        <AppCallout campaign={`${guide.campaign}-top`} lang={guide.lang} />
 
         {guide.toc && (
           <nav className="toc" aria-label={c.contents}>

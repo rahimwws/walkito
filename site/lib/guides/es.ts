@@ -293,7 +293,7 @@ export const HEEL_PAIN_ES: Guide = {
   page: 'heelPain',
   mainSource: CITE.guideline,
   published: '2026-09-24',
-  updated: '2026-09-28',
+  updated: '2026-10-07',
   title: 'Ejercicios para fascitis plantar y dolor de talón',
   description:
     'Ejercicios y estiramientos para la fascitis plantar y el dolor de talón: dosis, frecuencia, qué debes sentir y qué recomienda la guía clínica de 2023.',
@@ -421,6 +421,14 @@ export const HEEL_PAIN_ES: Guide = {
       ],
     },
     {
+      h2: '¿Se pueden hacer los ejercicios para la fascitis plantar en casa?',
+      paragraphs: [
+        'Sí. Todos los ejercicios para la fascitis plantar de esta página se hacen en casa, sin máquinas ni gimnasio. Necesitas una pared para los estiramientos de pantorrilla y de sóleo, la orilla de la cama para el estiramiento plantar, una silla para las elevaciones de talón sentado, un escalón y una toalla enrollada para la elevación de talones con toalla, y una pelota de masaje para el automasaje plantar. Sin pelota, sirve el pulgar.',
+        `Una sesión en casa dura ${MINUTES}\u00A0minutos. El primer estiramiento plantar va en la orilla de la cama, antes de que el pie toque el piso, y el resto cabe en cualquier momento del día. Lo que cuenta es la constancia: la guía de 2023 respalda el estiramiento y el trabajo de fuerza hechos durante semanas, no una sesión larga de vez en cuando.`,
+      ],
+      cites: [CITE.guideline],
+    },
+    {
       h2: '¿Qué ayuda con el dolor de talón por la mañana?',
       paragraphs: [
         'El dolor de talón en los primeros pasos de la mañana es el patrón que más se relaciona con la fascitis plantar. Suele calmarse cuando empiezas a moverte, y vuelve después de estar un rato sentado.',
@@ -498,6 +506,16 @@ export const HEEL_PAIN_ES: Guide = {
     {
       q: '¿Con qué frecuencia debo hacer ejercicios para la fascitis plantar?',
       a: `Estira casi todos los días y haz el trabajo de fuerza de pantorrilla en los días de fuerza. En Walkito eliges ${DAYS} días de entrenamiento a la semana, y cada semana tiene tres días de fuerza, nunca dos seguidos. Los estiramientos van en casi todas las sesiones, con el primer estiramiento plantar antes de que el pie toque el piso. En el ensayo que sigue Walkito, las elevaciones de talón se hacían un día sí y un día no.`,
+    },
+    {
+      q: '¿Qué es la talalgia y qué ejercicios ayudan?',
+      a: 'Talalgia significa simplemente dolor de talón, no es un diagnóstico concreto. La causa más reconocida del dolor bajo el talón es la fascitis plantar, y para ella la guía clínica de 2023 le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, A, y al trabajo de fuerza una B. Si el dolor está detrás del talón, puede ser el tendón de Aquiles, y eso es otra cosa.',
+      cites: [CITE.guideline],
+    },
+    {
+      q: '¿Cuáles son los mejores estiramientos para la fascia plantar?',
+      a: 'El estiramiento plantar y los estiramientos de pantorrilla y de sóleo son los que la guía de 2023 califica con A. Para el plantar, cruza el pie sobre la rodilla y jala los dedos hacia atrás 30\u00A0segundos, el primero antes de pararte de la cama. Para la pantorrilla, contra una pared, con la rodilla de atrás estirada y después doblada. Walkito empieza con 2\u00A0series de 30\u00A0segundos.',
+      cites: [CITE.guideline],
     },
     {
       q: '¿Cuándo debo ir al médico por dolor de talón?',

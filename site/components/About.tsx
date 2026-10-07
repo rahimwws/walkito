@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Footer } from '@/components/Footer';
 import { Founders } from '@/components/Founders';
+import { FOUNDERS_ID } from '@/lib/schema';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose, typeset } from '@/components/Prose';
@@ -109,7 +110,7 @@ export function About({ about }: { about: AboutData }) {
             </section>
             {/* Who makes it, right after what it is. */}
             {index === 0 && (
-              <section>
+              <section id={FOUNDERS_ID}>
                 <Founders lang={about.lang} />
               </section>
             )}

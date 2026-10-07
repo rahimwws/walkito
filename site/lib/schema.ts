@@ -20,13 +20,41 @@ export function howWeResearchHref(lang: Lang): string {
  * day before: a reviewer in schema who never reviewed the page is a claim a
  * health site cannot afford to have caught.
  */
+/**
+ * The person who writes the guides. Named because on a health topic a page
+ * with a real, checkable person behind it is trusted over one signed by a
+ * team name. He is a co-founder, not a clinician, and the byline says so in
+ * as many words: the clinical weight still comes from the cited sources, and
+ * from a reviewer once there is one (`lib/reviewer.ts`).
+ */
+export const AUTHOR = {
+  name: 'Rahim Hudaykylyyev',
+  role: { en: 'co-founder of Walkito', ru: 'сооснователь Walkito', es: 'cofundador de Walkito' },
+  sameAs: ['https://www.linkedin.com/in/rhdklv/', 'https://x.com/rahimwws', 'https://github.com/rahimwws'],
+} as const;
+
+export const FOUNDERS_ID = 'founders';
+export function authorHref(lang: Lang): string {
+  return `${TRANSLATED.about[lang]}#${FOUNDERS_ID}`;
+}
+
 export function authorFor(lang: Lang) {
-  return {
-    '@type': 'Organization',
-    name: AUTHOR_NAME,
-    url: `${SITE_URL}${howWeResearchHref(lang)}`,
-    parentOrganization: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-  };
+  return [
+    {
+      '@type': 'Person',
+      name: AUTHOR.name,
+      jobTitle: AUTHOR.role[lang],
+      url: `${SITE_URL}${authorHref(lang)}`,
+      sameAs: AUTHOR.sameAs,
+      worksFor: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+    {
+      '@type': 'Organization',
+      name: AUTHOR_NAME,
+      url: `${SITE_URL}${howWeResearchHref(lang)}`,
+      parentOrganization: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    },
+  ];
 }
 
 /**

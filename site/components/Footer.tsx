@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 import { SocialLinks } from '@/components/SocialLinks';
 import { CHROME, EN_ONLY, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { playHref, storeHref } from '@/lib/site';
 import { GROUP_HEADING, NAV_GROUPS, NAV_LABEL, type GuideKey } from '@/lib/nav';
 
 /**
@@ -21,6 +22,12 @@ import { GROUP_HEADING, NAV_GROUPS, NAV_LABEL, type GuideKey } from '@/lib/nav';
  * layout, so the jump is a full load either way, and saying so keeps Next from
  * prefetching two whole documents per page.
  */
+const FOOTER_APP: Record<Lang, { ios: string; android: string }> = {
+  en: { ios: 'Walkito on the App Store', android: 'Walkito on Google Play' },
+  ru: { ios: 'Walkito в App Store', android: 'Walkito в Google Play' },
+  es: { ios: 'Walkito en el App Store', android: 'Walkito en Google Play' },
+};
+
 function hrefFor(key: GuideKey, lang: Lang): string | null {
   if (key === 'runners') return lang === 'en' ? '/heel-pain-runners/' : null;
   if (key in TRANSLATED) return TRANSLATED[key as TranslatedPage][lang];
@@ -62,6 +69,13 @@ export function Footer({ lang = 'en', page }: { lang?: Lang; page?: TranslatedPa
           { href: '/science/', label: 'Evidence' },
         ]
       : []),
+    // The app itself, on every page: the one link the whole site exists for.
+    ...[storeHref(lang === 'en' ? 'footer' : `footer-${lang}`)].flatMap((href) =>
+      href ? [{ href, label: FOOTER_APP[lang].ios }] : [],
+    ),
+    ...[playHref(lang === 'en' ? 'footer' : `footer-${lang}`)].flatMap((href) =>
+      href ? [{ href, label: FOOTER_APP[lang].android }] : [],
+    ),
     { href: TRANSLATED.about[lang], label: c.navAbout },
     { href: TRANSLATED.support[lang], label: c.navSupport },
     { href: TRANSLATED.privacy[lang], label: c.navPrivacy },

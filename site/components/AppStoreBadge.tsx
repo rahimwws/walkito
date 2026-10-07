@@ -1,5 +1,11 @@
 import { CHROME, type Lang } from '@/lib/i18n';
-import { storeHref } from '@/lib/site';
+import { playHref, storeHref } from '@/lib/site';
+
+const PLAY_LABEL: Record<Lang, string> = {
+  en: 'Get it on Google Play',
+  ru: 'Скачать в Google Play',
+  es: 'Disponible en Google Play',
+};
 
 function AppleGlyph() {
   return (
@@ -49,6 +55,14 @@ export function AppStoreBadge({
    * one constant and the page does not change shape on the day.
    */
   const href = storeHref(campaign) ?? '#';
+  // Google Play, once the Android build is live (`PLAY_STORE_URL`). Our own
+  // text pill, for the same trademark reason as the Apple one.
+  const play = playHref(campaign);
+  const playLink = play ? (
+    <a href={play} className="store-play" aria-label={PLAY_LABEL[lang]}>
+      {PLAY_LABEL[lang]}
+    </a>
+  ) : null;
 
   if (lang !== 'en') {
     return (
@@ -57,6 +71,7 @@ export function AppStoreBadge({
           {/* Plain <img>: an SVG needs no resizing, and the export has image optimisation off. */}
           <img src={`/badges/app-store-${lang}.svg`} alt="" width={120} height={40} />
         </a>
+        {playLink}
       </div>
     );
   }
@@ -67,6 +82,7 @@ export function AppStoreBadge({
         <AppleGlyph />
         {c.getBadge}
       </a>
+      {playLink}
     </div>
   );
 }

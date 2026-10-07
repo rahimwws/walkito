@@ -1,7 +1,7 @@
 import { CITE } from '@/lib/citations';
 import { TRANSLATED, type Lang } from '@/lib/i18n';
 import { reviewFor } from '@/lib/reviewer';
-import { AUTHOR_NAME, formatDate, howWeResearchHref } from '@/lib/schema';
+import { AUTHOR, AUTHOR_NAME, authorHref, formatDate, howWeResearchHref } from '@/lib/schema';
 
 /**
  * "Walkito Research · Based on <main source> and <N> published studies · How
@@ -55,6 +55,8 @@ const HOW_WE_RESEARCH: Record<Lang, string> = {
   es: 'Cómo investigamos',
 };
 
+const BY: Record<Lang, string> = { en: 'By', ru: 'Автор:', es: 'Por' };
+
 const REVIEWED_BY: Record<Lang, string> = { en: 'Medically reviewed by', ru: 'Медицинская проверка:', es: 'Revisión médica:' };
 
 export function Byline({
@@ -74,7 +76,7 @@ export function Byline({
   return (
     <>
     <p className="byline">
-      <strong>{AUTHOR_NAME}</strong>
+      {BY[lang]} <a href={authorHref(lang)}><strong>{AUTHOR.name}</strong></a>, {AUTHOR.role[lang]} · {AUTHOR_NAME}
       {line ? ` · ${line}` : ''}
       {' · '}
       <a href={howWeResearchHref(lang)}>{HOW_WE_RESEARCH[lang]} →</a>

@@ -37,7 +37,7 @@ export const FLAT_FEET_EN: Guide = {
   page: 'flatFeet',
   mainSource: CITE.brijwasi,
   published: '2026-09-24',
-  updated: '2026-10-03',
+  updated: '2026-10-07',
   title: 'Flat Feet Exercises for Fallen Arches & Arch Pain',
   description:
     'Flat feet exercises for flexible flat feet and fallen arches: doses, how often, what each should feel like, what trials found, and where arch pain fits.',
@@ -266,6 +266,10 @@ export const FLAT_FEET_EN: Guide = {
       cites: [CITE.ling],
     },
     {
+      q: 'What exercises strengthen the arches of the feet?',
+      a: 'The short-foot exercise is the main one: you lift the arch by drawing the ball of the foot toward the heel, without curling the toes. Walkito starts it seated, at 3 sets of 8 with a 5-second hold, then standing, then on one leg. Towel scrunches, big toe lifts, toe spreads and band turn-ins train the small muscles around the arch. All of it is for flexible flat feet. Step by step: [short foot exercise](/exercises/short-foot-exercise/).',
+    },
+    {
       q: 'How often should I do flat feet exercises?',
       a: `Do the short-foot work on each training day while the arch is your goal. In Walkito you choose ${DAYS} training days a week, and while the arch is the week’s focus, every session includes an arch exercise, one level harder at a time. The arch hold is retested every ${PROGRAM.testEveryDays} days, then every ${PROGRAM.testEveryDaysAfterGoal} after your first goal.`,
     },
@@ -301,7 +305,7 @@ export const HEEL_PAIN_EN: Guide = {
   page: 'heelPain',
   mainSource: CITE.guideline,
   published: '2026-09-24',
-  updated: '2026-10-03',
+  updated: '2026-10-07',
   title: 'Plantar Fasciitis Exercises for Heel Pain',
   description:
     'Plantar fasciitis exercises and stretches for heel pain: doses, how often, what each should feel like, and what the 2023 guideline recommends.',
@@ -520,6 +524,11 @@ export const HEEL_PAIN_EN: Guide = {
     {
       q: 'How often should I do plantar fasciitis exercises?',
       a: `Stretch on most days and do the calf strength work on strength days. In Walkito you choose ${DAYS} training days a week, and every week has three strength days, never two in a row. The stretches come in most sessions, with the first plantar fascia stretch before your foot touches the floor. In the trial Walkito follows, the heel raises were done every other day.`,
+    },
+    {
+      q: 'What are the best stretches for heel pain?',
+      a: 'The plantar fascia stretch and the calf and soleus stretches are the ones the 2023 heel pain guideline grades A, its top grade. Cross the foot over your knee and pull the toes back for 30 seconds, the first time before you stand up in the morning. Then stretch the calf against a wall, back knee straight, then bent. Walkito starts at 2 holds of 30 seconds each. Technique: [plantar fascia stretch](/exercises/plantar-fascia-stretch/).',
+      cites: [CITE.guideline],
     },
     {
       q: 'When should I see a doctor about heel pain?',
