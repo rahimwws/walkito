@@ -183,6 +183,21 @@ export const EN_ONLY = {
   calfRaiseTest: '/calf-raise-test/',
   hubPlantarFasciitis: '/plantar-fasciitis/',
   hubFlatFeet: '/flat-feet/',
+  pfVsHeelSpur: '/plantar-fasciitis-vs-heel-spur/',
+  heelSpurExercises: '/heel-spur-exercises/',
+  heelPainAfterWalking: '/heel-pain-after-walking/',
+  heelPainAtNight: '/heel-pain-at-night/',
+  heelFatPad: '/heel-fat-pad-syndrome/',
+  haglunds: '/haglunds-deformity/',
+  severs: '/severs-disease/',
+  archPain: '/arch-pain/',
+  highArches: '/high-arches-exercises/',
+  pttd: '/posterior-tibial-tendon-dysfunction-exercises/',
+  topOfFoot: '/top-of-foot-pain/',
+  mortons: '/mortons-neuroma/',
+  sesamoiditis: '/sesamoiditis/',
+  bunions: '/bunion-exercises/',
+  hammerToe: '/hammer-toe-exercises/',
 } as const;
 
 export type EnglishPage = keyof typeof EN_ONLY;
@@ -227,6 +242,21 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   calfRaiseTest: '/es/test-de-elevacion-de-talon/',
   hubPlantarFasciitis: '/es/fascitis-plantar/',
   hubFlatFeet: '/es/pie-plano/',
+  pfVsHeelSpur: '/es/fascitis-plantar-vs-espolon-calcaneo/',
+  heelSpurExercises: '/es/ejercicios-espolon-calcaneo/',
+  heelPainAfterWalking: '/es/dolor-de-talon-al-caminar/',
+  heelPainAtNight: '/es/dolor-de-talon-por-la-noche/',
+  heelFatPad: '/es/sindrome-almohadilla-grasa-talon/',
+  haglunds: '/es/deformidad-de-haglund/',
+  severs: '/es/enfermedad-de-sever/',
+  archPain: '/es/dolor-en-el-arco-del-pie/',
+  highArches: '/es/ejercicios-pie-cavo/',
+  pttd: '/es/ejercicios-tendon-tibial-posterior/',
+  topOfFoot: '/es/dolor-en-el-empeine/',
+  mortons: '/es/neuroma-de-morton/',
+  sesamoiditis: '/es/sesamoiditis/',
+  bunions: '/es/ejercicios-juanetes/',
+  hammerToe: '/es/ejercicios-dedo-en-martillo/',
 };
 
 /** hreflang for an English article that also exists in Spanish. */
