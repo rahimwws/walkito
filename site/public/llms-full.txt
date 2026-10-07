@@ -94,7 +94,7 @@ Sources:
 
 Language: English · https://walkito.site/plantar-fasciitis-exercises/ · published 2026-09-24 · updated 2026-10-07
 
-Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, plantar fasciitis, and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.
+Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, [plantar fasciitis](https://walkito.site/plantar-fasciitis/), and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.
 
 - The 2023 heel pain guideline from the Journal of Orthopaedic & Sports Physical Therapy gives plantar fascia and calf stretching its top grade, A, and strength training a B.
 - In a trial of 48 people, heavy heel raises eased pain and improved daily function faster than stretching, and by twelve months both groups were even (Rathleff and colleagues, 2015).
@@ -103,9 +103,9 @@ Your first steps out of bed are the worst part of the day. A sharp pull right at
 
 ### The exercises for plantar fasciitis, with starting doses
 
-The exercises for plantar fasciitis in Walkito are stretches for the plantar fascia and calf, calf strength work that builds up in small steps, and a foot roll. These are Walkito’s starting doses, not a prescription. [How these guides are written](https://walkito.site/about/).
+The exercises for plantar fasciitis in Walkito are stretches for the plantar fascia and calf, calf strength work that builds up in small steps, and a foot roll. These are Walkito’s starting doses, not a prescription. A one-page summary is on [printable exercise sheets](https://walkito.site/printable-exercise-sheets/). [How these guides are written](https://walkito.site/about/).
 
-Order matters. While pain is your goal, Walkito keeps the calf work gentle: seated heel raises first, then heel raises on both feet, then a held heel raise, one step at a time. You move up a step once the last two sessions with it felt easy. The towel heel raise loads the plantar fascia the hardest, so it only comes in once morning pain has come down and the goal moves on to calf strength. If any exercise takes your pain to **6/10 or more**, stop for the day. That is the point where Walkito ends a session.
+Order matters. While pain is your goal, Walkito keeps the calf work gentle: seated heel raises first, then heel raises on both feet, then a held heel raise, one step at a time. You move up a step once the last two sessions with it felt easy. The [towel heel raise](https://walkito.site/exercises/towel-heel-raise/) loads the plantar fascia the hardest, so it only comes in once morning pain has come down and the goal moves on to calf strength. If any exercise takes your pain to **6/10 or more**, stop for the day. That is the point where Walkito ends a session.
 
 - **Plantar fascia stretch** (2 holds of 30 seconds, each foot): Sit down and cross the foot over the other knee. Pull the toes back until you feel the stretch in the arch, not the calf. Do the first one on the edge of the bed, before your foot touches the floor.
 - **Calf stretch** (2 holds of 30 seconds, each leg): Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward. A tight calf pulls on the heel all day, so this stretch matters even though you feel it higher up.
@@ -116,13 +116,33 @@ Order matters. While pain is your goal, Walkito keeps the calf work gentle: seat
 - **Heel raises with a towel** (4 sets of 10, each leg, with added weight): Stand on one foot on a step, with a rolled towel under your toes. Take three seconds to rise, hold for two at the top, and take three seconds to lower. At this level Walkito adds weight, such as a backpack. The towel is what makes this exercise work the plantar fascia and not just the calf.
 - **Foot roll** (1 minute): Sit and roll the sole of your foot slowly over a massage ball, with firm pressure. If you’re wincing, ease off. Rolling settles the tissue after it has worked. No ball? The sole massage uses firm thumb strokes from heel to toes instead.
 
+### What exercises should you avoid with plantar fasciitis?
+
+Avoid high-impact activity that spikes the load on your heel while the pain is flared, and avoid walking barefoot on hard floors first thing in the morning.
+
+Jumping, sprinting and plyometrics land a sudden peak force on the plantar fascia. When the tissue is irritated, that peak can set it back. The 2023 guideline recommends adjusting the load on your feet at work, in sport and in daily life, advice graded E. It does not ban specific exercises. The question is whether the load is more than the tissue can recover from overnight. Walking barefoot on hard floors is a common trigger because the fascia is stiffest after rest and a hard surface offers no cushion.
+
+Two more things to watch. Rolling a ball under the foot should feel firm, not sharp. If it hurts, ease off or skip it. And if you also have Achilles pain near the back of the heel, avoid deep heel drops off a step edge because the drop can load the Achilles insertion. Keep the [towel heel raise](https://walkito.site/exercises/towel-heel-raise/) on flat ground until a clinician clears the Achilles side.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### When is the best time to do plantar fasciitis stretches?
+
+Before your first steps in the morning and before standing after sitting for a long time. Those are the two moments when the plantar fascia is stiffest and most likely to hurt.
+
+A 2003 trial of 82 people with chronic plantar fasciitis tested a plantar fascia-specific stretch done before weight-bearing. Patients held the stretch for 10 seconds, repeated it 10 times, three times a day, with the first set before the first step of the morning. At eight weeks, the group doing this stretch had significantly less pain on their first morning steps than the group doing a calf stretch alone. By two years, after all patients received the same stretch, both groups had improved.
+
+On this page, the [plantar fascia stretch](https://walkito.site/exercises/plantar-fascia-stretch/) starts on the edge of the bed, before your foot touches the floor. The [calf stretch](https://walkito.site/exercises/calf-stretch/) follows. Walkito puts the first stretch before standing for the same reason the trial did: stretching before the tissue takes load is gentler than stretching after.
+
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
+
 ### What helps morning heel pain?
 
 Morning heel pain on the first steps is the pattern most often linked to plantar fasciitis. It often eases once you get moving, and it comes back after you sit for a while.
 
 Two things on this page aim at it. The plantar fascia stretch is done **before you stand up**, on the edge of the bed with the toes pulled back, so your first steps are not your first stretch. And the 2023 guideline gives night splints, worn for 1 to 3 months, an **A** for people who keep getting pain on their first steps in the morning. Night splints are something to talk over with a clinician. Walkito doesn’t provide them.
 
-Walkito asks about your morning pain every day for the same reason. Morning pain is the clearest sign of how your foot coped with yesterday, and it decides how much today’s session asks of you.
+Walkito asks about your morning pain every day for the same reason. Morning pain is the clearest sign of how your foot coped with yesterday, and it decides how much today’s session asks of you. More on what drives it is on [heel pain in the morning](https://walkito.site/heel-pain-in-the-morning/).
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
@@ -149,6 +169,16 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 ### What does the 2023 guideline recommend for plantar fasciitis?
 
 The 2023 guideline for plantar fasciitis grades each option by the strength of its evidence. A is the top grade. A grade marked “against” means the guideline advises not to use that option.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### Do shoes and insoles help plantar fasciitis?
+
+Supportive shoes help, but insoles on their own are not enough for most people. The 2023 guideline grades orthoses (insoles and arch supports) as a standalone option **B against**, meaning the evidence says not to rely on them alone. Combined with stretching and strength work, orthoses get a **C**.
+
+Night splints, worn while you sleep for 1 to 3 months, get the guideline’s top grade, **A**, for people who keep having pain on their first steps each morning. They hold the ankle so the plantar fascia does not shorten overnight. Ask a clinician whether they are worth trying.
+
+The guideline does not grade specific shoe types, but unsupportive footwear is a commonly recognized risk factor. Shoes with arch support and a firm heel counter share some of the load the plantar fascia would carry on its own. If your feet hurt after a long day on your feet, see [feet hurt from standing all day](https://walkito.site/feet-hurt-standing-all-day/). Shift workers can start at [nurses and foot pain](https://walkito.site/nurses-foot-pain/).
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
@@ -186,7 +216,7 @@ Heel pain on the first steps after sleep or sitting is the pattern most often li
 
 #### How long does plantar fasciitis last?
 
-For most people it eases within months, not weeks. A [2020 review](https://doi.org/10.1177/2473011419896763) reports that about 90% of people get better with non-surgical care such as stretching and shoe inserts, often within 3 to 6 months. Some take longer, and a smaller group still has pain after a year. No exercise program can promise a timeline. The 2023 heel pain guideline gives stretching and calf strength work its best grades, which is why they come first on this page.
+For most people it eases within months, not weeks. The full timeline is on [how long does plantar fasciitis last](https://walkito.site/how-long-does-plantar-fasciitis-last/). A [2020 review](https://doi.org/10.1177/2473011419896763) reports that about 90% of people get better with non-surgical care such as stretching and shoe inserts, often within 3 to 6 months. Some take longer, and a smaller group still has pain after a year. No exercise program can promise a timeline. The 2023 heel pain guideline gives stretching and calf strength work its best grades, which is why they come first on this page.
 
 #### Is stretching or strengthening better for plantar fasciitis?
 
@@ -207,6 +237,10 @@ The plantar fascia stretch and the calf and soleus stretches are the ones the 20
 #### When should I see a doctor about heel pain?
 
 See a clinician first if the pain followed an injury or a fall, you can’t put weight on the foot, or it comes with numbness, tingling, swelling, warmth or fever. The same applies if it wakes you at night, is sharp or getting worse, or hurts when you squeeze the heel, which can mean a stress fracture. Walkito doesn’t diagnose.
+
+#### Does walking help plantar fasciitis?
+
+Walking is usually fine, but it is not an exercise for plantar fasciitis on its own. The 2023 guideline recommends adjusting the load rather than stopping activity. If a walk leaves your first steps the next morning clearly worse, the distance or pace was too much. Stretching before you walk, especially the [plantar fascia stretch](https://walkito.site/exercises/plantar-fascia-stretch/) before your first steps, makes the early minutes easier.
 
 ## Flat feet exercises for fallen arches and arch pain
 
