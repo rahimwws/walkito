@@ -401,6 +401,31 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.1007/s10072-025-08253-0',
     pmid: '40418415',
   },
+  {
+    text: 'Micheli LJ, Ireland ML. Prevention and management of calcaneal apophysitis in children: an overuse syndrome. Journal of Pediatric Orthopedics. 1987;7(1):34–8.',
+    doi: '10.1097/01241398-198701000-00007',
+    pmid: '3793908',
+  },
+  {
+    text: 'Nieto-Gil P, Marco-Lledó J, García-Campos J, Ruiz-Muñoz M, Gijon-Nogueron G, Ramos-Petersen L. Risk factors and associated factors for calcaneal apophysitis (Sever\'s disease): a systematic review. BMJ Open. 2023;13(6):e064903.',
+    doi: '10.1136/bmjopen-2022-064903',
+    pmid: '37280033',
+  },
+  {
+    text: 'Burns J, Crosbie J, Hunt A, Ouvrier R. The effect of pes cavus on foot pain and plantar pressure. Clinical Biomechanics (Bristol, Avon). 2005;20(9):877–82.',
+    doi: '10.1016/j.clinbiomech.2005.03.006',
+    pmid: '15882916',
+  },
+  {
+    text: 'Burns J, Landorf KB, Ryan MM, Crosbie J, Ouvrier RA. Interventions for the prevention and treatment of pes cavus. The Cochrane Database of Systematic Reviews. 2007;2007(4):CD006154.',
+    doi: '10.1002/14651858.CD006154.pub2',
+    pmid: '17943889',
+  },
+  {
+    text: 'Yammine K. The sesamoids of the feet in humans: a systematic review and meta-analysis. Anatomical Science International. 2015;90(3):144–60.',
+    doi: '10.1007/s12565-014-0239-9',
+    pmid: '24801385',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -482,6 +507,11 @@ export const CITE = {
   yuenHaglund: 74,
   ehrmannSpur: 75,
   tedeschiBaxter: 76,
+  micheliSever: 77,
+  nietoGilSever: 78,
+  burnsCavusPain: 79,
+  burnsCavusCochrane: 80,
+  yammineSesamoid: 81,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

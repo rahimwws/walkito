@@ -48,6 +48,7 @@ export const NAV_LABEL_ES: Partial<Record<GuideKey, string>> = {
   standingDesk: 'Escritorio de pie',
   bestApp: 'Mejor app para fascitis plantar',
   vsExakt: 'Walkito vs Exakt Health',
+  runners: 'Dolor de talón en corredores',
   exPlantarFasciaStretch: 'Estiramiento de la fascia plantar',
   exCalfStretch: 'Estiramiento de pantorrilla',
   exSoleusStretch: 'Estiramiento de sóleo',

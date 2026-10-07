@@ -37,9 +37,10 @@ export const SESAMOIDITIS_EN: Guide = {
       h2: 'How is sesamoiditis different from a sesamoid fracture?',
       paragraphs: [
         'Sesamoiditis is an overuse condition. The pain comes on gradually and aches during activity. A sesamoid fracture is a crack in the bone, usually from a single acute event or from chronic stress. Fracture pain tends to be sharper and may be present even at rest.',
-        'One complication is that about 10 to 30 percent of people have a bipartite sesamoid, meaning the medial sesamoid naturally comes in two pieces. On an X-ray, a bipartite sesamoid looks like a fracture. The difference is in the edges: bipartite edges are smooth and rounded, while fracture edges are jagged and irregular. Your clinician may also X-ray the other foot for comparison.',
+        'One complication is that about 1 in 10 people have a bipartite sesamoid, meaning the medial sesamoid naturally comes in two pieces. On an X-ray, a bipartite sesamoid looks like a fracture. The difference is in the edges: bipartite edges are smooth and rounded, while fracture edges are jagged and irregular. Your clinician may also X-ray the other foot for comparison.',
         'If X-rays are unclear, a bone scan or MRI can confirm the diagnosis. An MRI shows bone marrow edema, swelling inside the bone, which is present in most cases of sesamoiditis. MRI is usually reserved for cases where symptoms persist despite initial management.',
       ],
+      cites: [CITE.yammineSesamoid],
     },
     {
       h2: 'What does conservative management look like?',
@@ -98,10 +99,12 @@ export const SESAMOIDITIS_EN: Guide = {
     {
       q: 'Do I need an MRI for sesamoiditis?',
       a: 'Not always. An X-ray is usually the first step and can distinguish a fracture from a bipartite sesamoid. An MRI is useful when X-rays are normal but symptoms persist, or when the clinician wants to check for bone marrow edema or soft tissue damage.',
+      cites: [CITE.yammineSesamoid],
     },
     {
       q: 'What is a bipartite sesamoid?',
-      a: 'A bipartite sesamoid is a normal anatomical variant where the medial sesamoid bone naturally comes in two pieces. About 10 to 30 percent of people have one. On X-ray it can look like a fracture, but the edges are smooth and rounded, not jagged.',
+      a: 'A bipartite sesamoid is a normal anatomical variant where the medial sesamoid bone naturally comes in two pieces. About 1 in 10 people have one. On X-ray it can look like a fracture, but the edges are smooth and rounded, not jagged.',
+      cites: [CITE.yammineSesamoid],
     },
     {
       q: 'Is sesamoiditis the same as turf toe?',

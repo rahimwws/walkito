@@ -273,6 +273,30 @@ export function isTranslatedPage(page: TranslatedPage | EnglishPage): page is Tr
 }
 
 /**
+ * Custom pages (not Guide objects) that exist in English and Spanish only.
+ * These are hand-built pages with their own components, not generated from
+ * `lib/guides/articles-es.ts`. hreflang and sitemap entries read this table.
+ */
+export const CUSTOM_EN_ES = {
+  exercises: { en: '/exercises/', es: '/es/ejercicios/' },
+  faq: { en: '/faq/', es: '/es/preguntas-frecuentes/' },
+  runners: { en: '/heel-pain-runners/', es: '/es/dolor-de-talon-en-corredores/' },
+  printables: { en: '/printable-exercise-sheets/', es: '/es/hojas-de-ejercicios-imprimibles/' },
+  program: { en: '/program/', es: '/es/programa/' },
+  science: { en: '/science/', es: '/es/evidencia/' },
+} as const;
+
+export type CustomEnEsPage = keyof typeof CUSTOM_EN_ES;
+
+export function alternatesCustomEnEs(page: CustomEnEsPage, lang: 'en' | 'es') {
+  const paths = CUSTOM_EN_ES[page];
+  return {
+    canonical: paths[lang],
+    languages: { en: paths.en, es: paths.es, 'x-default': paths.en },
+  };
+}
+
+/**
  * `alternates` for a translated page's metadata: its own canonical, and every
  * language version including itself, plus `x-default` on English.
  */

@@ -20,12 +20,12 @@ export const HIGH_ARCHES_EN: Guide = {
   lede:
     'A high-arched foot, called pes cavus, is rigid and does not flex enough to absorb shock. Force concentrates at the heel and the ball of the foot, and the plantar fascia is often tight. About 60 percent of people with pes cavus report foot pain. The strongest evidence is for cushioned or custom orthoses. Exercise focuses on stretching the calf and plantar fascia, improving ankle mobility, and building stability.',
   intro: [
-    'Pes cavus affects roughly 10 to 15 percent of the population. Many people with high arches never have foot pain. For those who do, the pain is usually under the heel, the ball of the foot, or along the tight plantar fascia. The cause matters: most high arches are idiopathic (no known cause), but a subset is caused by neurological conditions such as Charcot-Marie-Tooth disease. Progressive or one-sided high arches always need a clinician.',
+    'Pes cavus affects roughly 1 in 10 people (Burns and colleagues, 2007). Many people with high arches never have foot pain. For those who do, the pain is usually under the heel, the ball of the foot, or along the tight plantar fascia. The cause matters: most high arches are idiopathic (no known cause), but a subset is caused by neurological conditions such as Charcot-Marie-Tooth disease. Progressive or one-sided high arches always need a clinician.',
   ],
   takeaways: [
     'In a trial of 154 adults with painful pes cavus, custom foot orthoses improved foot pain 8.3 points more than a sham insert at three months, and function 9.5 points more (Burns and colleagues, 2006).',
     'The same trial found custom orthoses reduced plantar pressure by 26 percent, compared with 9 percent for the sham insert.',
-    'About 60 percent of people with pes cavus report foot pain, commonly under the heel, the ball of the foot, or the arch (Burns 2005, cited in Cochrane review).',
+    'About 60 percent of people with pes cavus report foot pain, commonly under the heel, the ball of the foot, or the arch (Burns and colleagues, 2005).',
     'Pes cavus can be the first sign of a neurological condition such as Charcot-Marie-Tooth disease. Progressive or one-sided high arches need a neurological assessment, not exercise alone.',
     'No trial has tested an exercise program specifically for pes cavus foot pain. The exercises on this page target the tight structures and unstable joints common in high-arched feet.',
   ],
@@ -38,7 +38,7 @@ export const HIGH_ARCHES_EN: Guide = {
         'The plantar fascia in a cavus foot is typically short and tight, which holds the arch in its high position but reduces the foot\'s ability to flex and absorb shock. The forefoot often sits lower than the rearfoot (a plantarflexed first metatarsal), and the toes may claw. These changes shift pressure onto the metatarsal heads and the heel, and away from the midfoot.',
         'Foot pain in pes cavus commonly presents as metatarsalgia (pain under the ball of the foot), plantar heel pain, or aching along the tight plantar fascia. Ankle sprains are also more common because the rigid, inverted foot is less stable on uneven ground.',
       ],
-      cites: [CITE.burnsCavus],
+      cites: [CITE.burnsCavusCochrane, CITE.burnsCavusPain, CITE.burnsCavus],
     },
     {
       h2: 'What causes high arches?',
@@ -194,7 +194,8 @@ export const HIGH_ARCHES_EN: Guide = {
     },
     {
       q: 'Is pes cavus the same as high arches?',
-      a: 'Yes. Pes cavus is the medical term for a foot with an excessively high arch. It describes a foot shape, not a disease. About 10 to 15 percent of the population has pes cavus, and many never have foot pain. When foot pain does develop, it is usually under the heel, the ball of the foot, or along the tight plantar fascia.',
+      a: 'Yes. Pes cavus is the medical term for a foot with an excessively high arch. It describes a foot shape, not a disease. About 1 in 10 people have pes cavus, and many never have foot pain. When foot pain does develop, it is usually under the heel, the ball of the foot, or along the tight plantar fascia.',
+      cites: [CITE.burnsCavusCochrane],
     },
     {
       q: 'Can high arches cause plantar fasciitis?',

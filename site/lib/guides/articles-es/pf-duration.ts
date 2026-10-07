@@ -113,7 +113,7 @@ export const PF_DURATION_ES: Guide = {
       paragraphs: [
         'El patrón de la tabla es claro: el estiramiento y el trabajo de fuerza son los que tienen más respaldo. Las opciones de consultorio (láser, punción seca, ondas de choque) tienen algo de evidencia, pero quedan detrás del ejercicio en la guía. La cirugía se reserva para el pequeño porcentaje de casos que no responden a nada más, y la guía no le da un papel importante.',
         'Si llevas varios meses haciendo los ejercicios con constancia y el dolor de la mañana no mejora, es un buen momento para ver a un profesional de la salud y hablar de las opciones de arriba. También es un buen momento para revisar que el diagnóstico sea el correcto: en [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) están otras condiciones con el mismo patrón.',
-        'Si corres, los cambios de carga suelen ser parte del tema: [dolor de talón al correr](/heel-pain-runners/) (en inglés) y [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) explican ese tema.',
+        'Si corres, los cambios de carga suelen ser parte del tema: [dolor de talón al correr](/es/dolor-de-talon-en-corredores/) y [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) explican ese tema.',
       ],
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },

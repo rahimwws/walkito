@@ -222,7 +222,7 @@ export const FLAT_FEET_ES: Guide = {
       paragraphs: [
         'En la investigación hasta ahora, los ejercicios para pie plano cambiaron el arco después de seis semanas o más, y solo en pie plano flexible. En un ensayo con 52\u00A0personas con pie plano **flexible**, un programa de seis semanas de pie corto, trabajo de tobillo, fortalecimiento de cadera y estiramientos cambió dos medidas de la forma del arco más que en el grupo de control.',
         'La evidencia sobre el pie corto por sí solo es más escasa. Una revisión de 2024 juntó estudios sobre entrenamiento de pie corto en pie plano en general. En conjunto, no encontró una diferencia clara con los grupos de control en la forma del arco ni en la postura del pie. Solo los programas de más de seis semanas mejoraron cuánto se hunde el arco bajo tu peso, y los autores dicen que hacen falta estudios más grandes. Así que cuenta con al menos seis semanas, y más si haces solo pie corto.',
-        `Esa es una de las razones por las que el plan de Walkito no tiene fecha de fin. La meta del arco, mantenerlo ${PROGRAM.goals.archHoldSeconds}\u00A0segundos, sigue en el plan hasta que la alcanzas, tome las semanas que tome. La prueba de mantener el arco se hace cada ${PROGRAM.testEveryDays}\u00A0días hasta que alcanzas tu primera meta, y después cada ${PROGRAM.testEveryDaysAfterGoal}, así que puedes ver si está avanzando. Los ensayos están resumidos en [la página de evidencia](/science/) (en inglés).`,
+        `Esa es una de las razones por las que el plan de Walkito no tiene fecha de fin. La meta del arco, mantenerlo ${PROGRAM.goals.archHoldSeconds}\u00A0segundos, sigue en el plan hasta que la alcanzas, tome las semanas que tome. La prueba de mantener el arco se hace cada ${PROGRAM.testEveryDays}\u00A0días hasta que alcanzas tu primera meta, y después cada ${PROGRAM.testEveryDaysAfterGoal}, así que puedes ver si está avanzando. Los ensayos están resumidos en [la página de evidencia](/es/evidencia/).`,
       ],
       sourceNote:
         'Brijwasi y Borkar: la caída del navicular (cuánto baja el hueso navicular, en la parte interna del arco, al pararte) mejoró 0,4\u00A0cm, y el ángulo del arco 16\u00A0grados, más que en el grupo de control. Cheng y colegas: sin diferencia significativa en conjunto en la caída del navicular ni en el Foot Posture Index; la caída del navicular mejoró de forma significativa solo en el subgrupo de programas de más de seis semanas.',
@@ -233,7 +233,7 @@ export const FLAT_FEET_ES: Guide = {
       paragraphs: [
         'Ningún estudio de esta página muestra que los ejercicios para pie plano alivien el dolor en el arco, porque ninguno lo midió. El ensayo y la revisión midieron la forma del arco. Muestran que el arco se puede entrenar. No son evidencia de que los mismos ejercicios alivien un arco adolorido.',
         'El dolor en el talón, y a veces a lo largo del arco, puede venir de la fascia plantar, la banda de tejido que recorre la planta del pie. Si el tuyo está cerca del talón, la guía de 2023 para el dolor de talón es la mejor referencia. Para el dolor de talón bajo el pie, le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, **A**, y al entrenamiento de fuerza una **B**. Esos ejercicios están en [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
-        'Walkito puede trabajar las dos cosas a la vez, como metas separadas: mañanas más fáciles para el dolor, y mantener el arco para el arco. Cómo se reparten una semana está en [la página del plan](/program/) (en inglés).',
+        'Walkito puede trabajar las dos cosas a la vez, como metas separadas: mañanas más fáciles para el dolor, y mantener el arco para el arco. Cómo se reparten una semana está en [la página del plan](/es/programa/).',
       ],
       cites: [CITE.guideline],
     },
@@ -242,7 +242,7 @@ export const FLAT_FEET_ES: Guide = {
       paragraphs: [
         `Cuando alcanzas la meta del arco, mantenerlo ${PROGRAM.goals.archHoldSeconds}\u00A0segundos, Walkito deja el trabajo del arco en el plan con una dosis más baja. La meta pasa a mantenimiento y la siguiente meta ocupa su lugar. Alcanzarla no significa que el trabajo del arco se acabe.`,
         `Las pruebas también siguen, cada ${PROGRAM.testEveryDaysAfterGoal}\u00A0días una vez que alcanzas tu primera meta. Si el tiempo con el arco arriba empieza a bajar, lo ves en los números en lugar de adivinarlo.`,
-        'Si también te duele el talón, el talón tiene sus propios ejercicios y su propia meta: mira [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/). Las preguntas sobre la app están en [las preguntas frecuentes](/faq/) (en inglés).',
+        'Si también te duele el talón, el talón tiene sus propios ejercicios y su propia meta: mira [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/). Las preguntas sobre la app están en [las preguntas frecuentes](/es/preguntas-frecuentes/).',
       ],
     },
   ],
@@ -294,9 +294,9 @@ export const HEEL_PAIN_ES: Guide = {
   mainSource: CITE.guideline,
   published: '2026-09-24',
   updated: '2026-10-07',
-  title: 'Ejercicios para fascitis plantar y dolor de talón',
+  title: 'Ejercicios para fascitis plantar: dosis de la guía de 2023',
   description:
-    'Ejercicios y estiramientos para la fascitis plantar y el dolor de talón: dosis, frecuencia, qué debes sentir y qué recomienda la guía clínica de 2023.',
+    'Ocho ejercicios y estiramientos para la fascitis plantar con dosis, qué evitar, mejor momento para estirar y grados de evidencia de la guía de 2023.',
   h1: 'Ejercicios y estiramientos para la fascitis plantar y el dolor de talón',
   lede: 'Los primeros pasos al levantarte son lo peor del día. Un tirón agudo justo en el talón, antes incluso del café. Se calma cuando empiezas a moverte, y vuelve después de estar un rato sentado. Ese patrón tiene nombre, fascitis plantar, y la guía clínica de 2023 para el dolor de talón la llama la causa más reconocida del dolor de talón bajo el pie.',
   intro: [
@@ -421,6 +421,24 @@ export const HEEL_PAIN_ES: Guide = {
       ],
     },
     {
+      h2: '¿Qué ejercicios debes evitar con fascitis plantar?',
+      paragraphs: [
+        'Evita la actividad de alto impacto que dispare la carga sobre el talón mientras el dolor está encendido, y evita caminar descalzo en pisos duros a primera hora de la mañana.',
+        'Saltar, esprintar y los pliométricos ponen una fuerza pico repentina sobre la fascia plantar. Cuando el tejido está irritado, ese pico puede hacerlo retroceder. La guía de 2023 recomienda ajustar la carga sobre tus pies en el trabajo, en el deporte y en el día a día, un consejo con grado E. No prohíbe ejercicios específicos. La pregunta es si la carga es más de lo que el tejido puede recuperar de un día para otro. Caminar descalzo en pisos duros es un detonante común porque la fascia está más rígida después del reposo y un piso duro no ofrece amortiguación.',
+        'Dos cosas más a tener en cuenta. Rodar una pelota bajo el pie debe sentirse firme, no agudo. Si duele, afloja o déjalo. Y si también tienes dolor de Aquiles cerca de la parte de atrás del talón, evita los descensos profundos de talón desde la orilla de un escalón, porque la bajada puede cargar la inserción del Aquiles. Mantén la [elevación de talones con toalla](/es/ejercicios/elevacion-de-talones-con-toalla/) en piso plano hasta que un profesional de la salud descarte el Aquiles.',
+      ],
+      cites: [CITE.guideline],
+    },
+    {
+      h2: '¿Cuál es el mejor momento para estirar con fascitis plantar?',
+      paragraphs: [
+        'Antes de tus primeros pasos de la mañana y antes de pararte después de estar sentado mucho rato. Esos son los dos momentos en que la fascia plantar está más rígida y es más probable que duela.',
+        'Un ensayo de 2003 con 82\u00A0personas con fascitis plantar crónica probó un estiramiento específico de la fascia plantar hecho antes de apoyar el peso. Los pacientes mantenían el estiramiento 10\u00A0segundos, lo repetían 10\u00A0veces, tres veces al día, con la primera serie antes del primer paso de la mañana. A las ocho semanas, el grupo que hacía este estiramiento tenía significativamente menos dolor en sus primeros pasos de la mañana que el grupo que solo estiraba la pantorrilla. A los dos años, después de que todos los pacientes recibieron el mismo estiramiento, los dos grupos habían mejorado.',
+        'En esta página, el [estiramiento plantar](/es/ejercicios/estiramiento-fascia-plantar/) empieza en la orilla de la cama, antes de que el pie toque el piso. El [estiramiento de pantorrilla](/es/ejercicios/estiramiento-de-pantorrilla/) sigue después. Walkito pone el primer estiramiento antes de pararte por la misma razón que el ensayo: estirar antes de que el tejido reciba carga es más suave que estirar después.',
+      ],
+      cites: [CITE.digiovanni2003],
+    },
+    {
       h2: '¿Se pueden hacer los ejercicios para la fascitis plantar en casa?',
       paragraphs: [
         'Sí. Todos los ejercicios para la fascitis plantar de esta página se hacen en casa, sin máquinas ni gimnasio. Necesitas una pared para los estiramientos de pantorrilla y de sóleo, la orilla de la cama para el estiramiento plantar, una silla para las elevaciones de talón sentado, un escalón y una toalla enrollada para la elevación de talones con toalla, y una pelota de masaje para el automasaje plantar. Sin pelota, sirve el pulgar.',
@@ -451,11 +469,20 @@ export const HEEL_PAIN_ES: Guide = {
       paragraphs: [
         'El trabajo de fuerza y el estiramiento ayudan los dos con la fascitis plantar, y la fuerza ayuda antes.',
         'En un ensayo con 48\u00A0personas con fascitis plantar confirmada por ultrasonido, todos usaron plantillas. Un grupo añadió elevaciones de talón con carga alta un día sí y un día no. El otro estiró la fascia plantar todos los días. A los tres meses, el grupo de las elevaciones iba claramente adelante en dolor y función diaria. A los doce meses, los dos grupos estaban igualados. La fuerza adelantó la mejora. No la hizo más grande.',
-        'La guía respalda hacer las dos cosas. El análisis estudio por estudio está en [la página de evidencia](/science/) (en inglés).',
+        'La guía respalda hacer las dos cosas. El análisis estudio por estudio está en [la página de evidencia](/es/evidencia/).',
       ],
       sourceNote:
         'Medido con el Foot Function Index: 29\u00A0puntos menos en el grupo de las elevaciones a los tres meses (IC 95\u00A0%: 6-52, p = 0,016), y 22 frente a 16 a los doce meses, una diferencia no significativa.',
       cites: [CITE.rathleff],
+    },
+    {
+      h2: '¿Los zapatos y las plantillas ayudan con la fascitis plantar?',
+      paragraphs: [
+        'Los zapatos con soporte ayudan, pero las plantillas por sí solas no alcanzan para la mayoría de las personas. La guía de 2023 califica las ortesis (plantillas y soportes de arco) como opción independiente con **B en contra**, lo que significa que la evidencia dice que no debes depender solo de ellas. Combinadas con estiramiento y trabajo de fuerza, las ortesis reciben una **C**.',
+        'Las férulas nocturnas, usadas mientras duermes de 1 a 3\u00A0meses, reciben el grado más alto de la guía, **A**, en personas que siguen con dolor en los primeros pasos de cada mañana. Mantienen el tobillo para que la fascia plantar no se acorte durante la noche. Pregúntale a un profesional de la salud si vale la pena probarlas.',
+        'La guía no califica tipos específicos de zapatos, pero el calzado sin soporte es un factor de riesgo comúnmente reconocido. Los zapatos con soporte de arco y contrafuerte firme comparten parte de la carga que la fascia plantar cargaría sola. Si te duelen los pies después de un día largo de pie, mira [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/). Quienes trabajan por turnos pueden empezar en [dolor de pies en enfermeras](/es/dolor-de-pies-enfermeras/).',
+      ],
+      cites: [CITE.guideline],
     },
     {
       h2: '¿Qué recomienda la guía de 2023 para la fascitis plantar?',
@@ -482,7 +509,7 @@ export const HEEL_PAIN_ES: Guide = {
       h2: '¿Qué pasa cuando el talón deja de doler?',
       paragraphs: [
         `Cuando el dolor de talón se va, Walkito sigue con una dosis más baja, porque el dolor de talón puede volver. Cuando alcanzas la meta de mañanas más fáciles (dolor por la mañana de 1/10 o menos durante ${PROGRAM.painFreeDays}\u00A0días seguidos), esa meta pasa a mantenimiento y la siguiente ocupa su lugar.`,
-        'Si además tienes pie plano, el arco tiene sus propios ejercicios y sus propios tiempos: mira [ejercicios para el pie plano](/es/ejercicios-pie-plano/). Las preguntas sobre la app están en [las preguntas frecuentes](/faq/) (en inglés).',
+        'Si además tienes pie plano, el arco tiene sus propios ejercicios y sus propios tiempos: mira [ejercicios para el pie plano](/es/ejercicios-pie-plano/). Las preguntas sobre la app están en [las preguntas frecuentes](/es/preguntas-frecuentes/).',
       ],
     },
   ],
@@ -497,7 +524,7 @@ export const HEEL_PAIN_ES: Guide = {
     },
     {
       q: '¿Qué es mejor para la fascitis plantar, estirar o fortalecer?',
-      a: 'Las dos cosas ayudan, y fortalecer funciona más rápido. En un ensayo con 48\u00A0personas, las elevaciones de talón con carga alta iban claramente adelante del estiramiento a los tres meses, pero a los doce meses los dos grupos estaban igualados. La guía de 2023 le da al estiramiento una A y al entrenamiento de fuerza una B. [La página de evidencia](/science/) (en inglés) tiene los detalles.',
+      a: 'Las dos cosas ayudan, y fortalecer funciona más rápido. En un ensayo con 48\u00A0personas, las elevaciones de talón con carga alta iban claramente adelante del estiramiento a los tres meses, pero a los doce meses los dos grupos estaban igualados. La guía de 2023 le da al estiramiento una A y al entrenamiento de fuerza una B. [La página de evidencia](/es/evidencia/) tiene los detalles.',
     },
     {
       q: '¿El espolón calcáneo es lo mismo que la fascitis plantar?',
@@ -506,6 +533,11 @@ export const HEEL_PAIN_ES: Guide = {
     {
       q: '¿Con qué frecuencia debo hacer ejercicios para la fascitis plantar?',
       a: `Estira casi todos los días y haz el trabajo de fuerza de pantorrilla en los días de fuerza. En Walkito eliges ${DAYS} días de entrenamiento a la semana, y cada semana tiene tres días de fuerza, nunca dos seguidos. Los estiramientos van en casi todas las sesiones, con el primer estiramiento plantar antes de que el pie toque el piso. En el ensayo que sigue Walkito, las elevaciones de talón se hacían un día sí y un día no.`,
+    },
+    {
+      q: '¿Cuánto dura la fascitis plantar?',
+      a: 'Para la mayoría de las personas se alivia en meses, no en semanas. Una [revisión de 2020](https://doi.org/10.1177/2473011419896763) reporta que cerca del 90\u00A0% de las personas mejoran con atención no quirúrgica como estiramiento y plantillas, a menudo en 3 a 6\u00A0meses. Algunas tardan más, y un grupo más pequeño sigue con dolor después de un año. La línea de tiempo completa está en [cuánto dura la fascitis plantar](/es/cuanto-dura-la-fascitis-plantar/). Ningún programa de ejercicios puede prometer un plazo.',
+      cites: [CITE.latt],
     },
     {
       q: '¿Qué es la talalgia y qué ejercicios ayudan?',
@@ -520,6 +552,10 @@ export const HEEL_PAIN_ES: Guide = {
     {
       q: '¿Cuándo debo ir al médico por dolor de talón?',
       a: 'Consulta primero a un profesional de la salud si el dolor empezó después de una lesión o una caída, no puedes apoyar el pie, o viene con entumecimiento, hormigueo, hinchazón, calor o fiebre. Lo mismo si te despierta por la noche, es agudo o empeora, o te duele al apretar el talón, que puede ser señal de una fractura por estrés. Walkito no diagnostica.',
+    },
+    {
+      q: '¿Caminar ayuda con la fascitis plantar?',
+      a: 'Caminar está bien en general, pero no es un ejercicio para la fascitis plantar por sí solo. La guía de 2023 recomienda ajustar la carga en vez de dejar la actividad. Si una caminata deja tus primeros pasos a la mañana siguiente claramente peores, la distancia o el ritmo fueron demasiado. Estirar antes de caminar, sobre todo el [estiramiento plantar](/es/ejercicios/estiramiento-fascia-plantar/) antes de tus primeros pasos, hace más fáciles los primeros minutos.',
     },
   ],
   redFlags: RED_FLAGS,

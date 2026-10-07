@@ -48,10 +48,10 @@ export const SEVERS_EN: Guide = {
       h2: 'What age does it happen, and who gets it?',
       paragraphs: [
         "Sever's disease affects children between about 8 and 15 years old. The calcaneal apophysis first appears at around age 7 to 9 and usually fuses between 15 and 17. Boys are affected two to three times more often than girls, with a typical onset around age 12 for boys and 11 for girls. About 60 percent of cases involve both heels.",
-        "It accounts for 2 to 16 percent of all musculoskeletal complaints in children. The sports most associated with it are soccer, basketball, track, cross-country, gymnastics and tennis. The pattern is predictable: it tends to appear at the start of a sport season or during a growth spurt, when the load on the heel suddenly increases.",
+        "It accounts for 2 to 16 percent of visits to sports clinics by children. The sports most associated with it are soccer, basketball, track, cross-country, gymnastics and tennis. The pattern is predictable: it tends to appear at the start of a sport season or during a growth spurt, when the load on the heel suddenly increases.",
         'Risk factors include high levels of running and jumping activity, tight calf muscles, limited ankle flexibility, a high BMI, hard playing surfaces, and poorly cushioned shoes or cleats.',
       ],
-      cites: [CITE.wiegerinck, CITE.jamesSever],
+      cites: [CITE.nietoGilSever, CITE.micheliSever, CITE.wiegerinck, CITE.jamesSever],
     },
     {
       h2: "What does Sever's disease feel like?",

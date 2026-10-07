@@ -113,6 +113,11 @@ Sources:
 - Yuen WLP, Tan PT, Kon KKC. Surgical Treatment of Haglund's Deformity: A Systematic Review and Meta-Analysis. Cureus. 2022;14(7):e27500.
 - Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
 - Tedeschi R. Baxter's nerve: the hidden culprit of chronic heel pain. Neurological Sciences. 2025;46(9):4685–4689.
+- Micheli LJ, Ireland ML. Prevention and management of calcaneal apophysitis in children: an overuse syndrome. Journal of Pediatric Orthopedics. 1987;7(1):34–8.
+- Nieto-Gil P, Marco-Lledó J, García-Campos J, Ruiz-Muñoz M, Gijon-Nogueron G, Ramos-Petersen L. Risk factors and associated factors for calcaneal apophysitis (Sever's disease): a systematic review. BMJ Open. 2023;13(6):e064903.
+- Burns J, Crosbie J, Hunt A, Ouvrier R. The effect of pes cavus on foot pain and plantar pressure. Clinical Biomechanics (Bristol, Avon). 2005;20(9):877–82.
+- Burns J, Landorf KB, Ryan MM, Crosbie J, Ouvrier RA. Interventions for the prevention and treatment of pes cavus. The Cochrane Database of Systematic Reviews. 2007;2007(4):CD006154.
+- Yammine K. The sesamoids of the feet in humans: a systematic review and meta-analysis. Anatomical Science International. 2015;90(3):144–60.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
@@ -4689,7 +4694,7 @@ Source: Yi TI, Lee GE, Seo IS, Huh WS, Yoon TH, Kim BR. Clinical characteristics
 
 The most commonly recommended first steps for heel fat pad syndrome are external: viscoelastic heel cups, cushioned insoles, and shoes with thick, shock-absorbing soles. These aim to replace the cushioning the fat pad no longer provides.
 
-The 2022 scoping review flagged an uncomfortable gap: no randomised controlled trial has tested heel cups or taping specifically for heel fat pad syndrome. A single case report described pain relief with silicone gel heel cups after one and three months. Low-dye taping reduced pain by 2 to 3 points on a 0-to-10 scale compared to barefoot walking in one small study, but that study did not isolate fat pad syndrome from other causes of heel pain.
+The 2022 scoping review flagged an uncomfortable gap: no randomised controlled trial has tested heel cups or taping specifically for heel fat pad syndrome. A single case report described pain relief with silicone gel heel cups after one and three months. Some small trials of low-dye taping for general plantar heel pain report a modest drop in pain scores against sham or no treatment, but none of them isolate fat pad syndrome from other causes of heel pain, so the size of any benefit here is not known.
 
 Despite the weak evidence base, the logic is straightforward: if the cushion is gone, adding one externally is a reasonable step. Avoid walking barefoot on hard surfaces. Choose shoes with well-cushioned heels and avoid flat, thin-soled shoes. These are consensus recommendations, not trial-tested ones, and this page says so plainly.
 
@@ -4937,10 +4942,12 @@ Source: Wiegerinck JI, Zwiers R, Sierevelt IN, van Weert HC, van Dijk CN, Struij
 
 Sever's disease affects children between about 8 and 15 years old. The calcaneal apophysis first appears at around age 7 to 9 and usually fuses between 15 and 17. Boys are affected two to three times more often than girls, with a typical onset around age 12 for boys and 11 for girls. About 60 percent of cases involve both heels.
 
-It accounts for 2 to 16 percent of all musculoskeletal complaints in children. The sports most associated with it are soccer, basketball, track, cross-country, gymnastics and tennis. The pattern is predictable: it tends to appear at the start of a sport season or during a growth spurt, when the load on the heel suddenly increases.
+It accounts for 2 to 16 percent of visits to sports clinics by children. The sports most associated with it are soccer, basketball, track, cross-country, gymnastics and tennis. The pattern is predictable: it tends to appear at the start of a sport season or during a growth spurt, when the load on the heel suddenly increases.
 
 Risk factors include high levels of running and jumping activity, tight calf muscles, limited ankle flexibility, a high BMI, hard playing surfaces, and poorly cushioned shoes or cleats.
 
+Source: Nieto-Gil P, Marco-Lledó J, García-Campos J, Ruiz-Muñoz M, Gijon-Nogueron G, Ramos-Petersen L. Risk factors and associated factors for calcaneal apophysitis (Sever's disease): a systematic review. BMJ Open. 2023;13(6):e064903.
+Source: Micheli LJ, Ireland ML. Prevention and management of calcaneal apophysitis in children: an overuse syndrome. Journal of Pediatric Orthopedics. 1987;7(1):34–8.
 Source: Wiegerinck JI, Zwiers R, Sierevelt IN, van Weert HC, van Dijk CN, Struijs PA. Treatment of Calcaneal Apophysitis: Wait and See Versus Orthotic Device Versus Physical Therapy: A Pragmatic Therapeutic Randomized Clinical Trial. Journal of Pediatric Orthopedics. 2016;36(2):152–7.
 Source: James AM, Williams CM, Haines TP. Effectiveness of footwear and foot orthoses for calcaneal apophysitis: a 12-month factorial randomised trial. British Journal of Sports Medicine. 2016;50(20):1268–1275.
 
@@ -5200,7 +5207,7 @@ A high-arched foot, called pes cavus, is rigid and does not flex enough to absor
 
 - In a trial of 154 adults with painful pes cavus, custom foot orthoses improved foot pain 8.3 points more than a sham insert at three months, and function 9.5 points more (Burns and colleagues, 2006).
 - The same trial found custom orthoses reduced plantar pressure by 26 percent, compared with 9 percent for the sham insert.
-- About 60 percent of people with pes cavus report foot pain, commonly under the heel, the ball of the foot, or the arch (Burns 2005, cited in Cochrane review).
+- About 60 percent of people with pes cavus report foot pain, commonly under the heel, the ball of the foot, or the arch (Burns and colleagues, 2005).
 - Pes cavus can be the first sign of a neurological condition such as Charcot-Marie-Tooth disease. Progressive or one-sided high arches need a neurological assessment, not exercise alone.
 - No trial has tested an exercise program specifically for pes cavus foot pain. The exercises on this page target the tight structures and unstable joints common in high-arched feet.
 
@@ -5212,6 +5219,8 @@ The plantar fascia in a cavus foot is typically short and tight, which holds the
 
 Foot pain in pes cavus commonly presents as metatarsalgia (pain under the ball of the foot), plantar heel pain, or aching along the tight plantar fascia. Ankle sprains are also more common because the rigid, inverted foot is less stable on uneven ground.
 
+Source: Burns J, Landorf KB, Ryan MM, Crosbie J, Ouvrier RA. Interventions for the prevention and treatment of pes cavus. The Cochrane Database of Systematic Reviews. 2007;2007(4):CD006154.
+Source: Burns J, Crosbie J, Hunt A, Ouvrier R. The effect of pes cavus on foot pain and plantar pressure. Clinical Biomechanics (Bristol, Avon). 2005;20(9):877–82.
 Source: Burns J, Crosbie J, Ouvrier R, Hunt A. Effective orthotic therapy for the painful cavus foot: a randomized controlled trial. Journal of the American Podiatric Medical Association. 2006;96(3):205–11.
 
 ### What causes high arches?
@@ -5314,7 +5323,7 @@ Cushioned shoes with a roomy toe box and no aggressive arch support. A high arch
 
 #### Is pes cavus the same as high arches?
 
-Yes. Pes cavus is the medical term for a foot with an excessively high arch. It describes a foot shape, not a disease. About 10 to 15 percent of the population has pes cavus, and many never have foot pain. When foot pain does develop, it is usually under the heel, the ball of the foot, or along the tight plantar fascia.
+Yes. Pes cavus is the medical term for a foot with an excessively high arch. It describes a foot shape, not a disease. About 1 in 10 people have pes cavus, and many never have foot pain. When foot pain does develop, it is usually under the heel, the ball of the foot, or along the tight plantar fascia.
 
 #### Can high arches cause plantar fasciitis?
 
@@ -5760,9 +5769,11 @@ Source: Biz C, Maccarone MC, Bonso V, et al. Conservative Treatment of Sesamoidi
 
 Sesamoiditis is an overuse condition. The pain comes on gradually and aches during activity. A sesamoid fracture is a crack in the bone, usually from a single acute event or from chronic stress. Fracture pain tends to be sharper and may be present even at rest.
 
-One complication is that about 10 to 30 percent of people have a bipartite sesamoid, meaning the medial sesamoid naturally comes in two pieces. On an X-ray, a bipartite sesamoid looks like a fracture. The difference is in the edges: bipartite edges are smooth and rounded, while fracture edges are jagged and irregular. Your clinician may also X-ray the other foot for comparison.
+One complication is that about 1 in 10 people have a bipartite sesamoid, meaning the medial sesamoid naturally comes in two pieces. On an X-ray, a bipartite sesamoid looks like a fracture. The difference is in the edges: bipartite edges are smooth and rounded, while fracture edges are jagged and irregular. Your clinician may also X-ray the other foot for comparison.
 
 If X-rays are unclear, a bone scan or MRI can confirm the diagnosis. An MRI shows bone marrow edema, swelling inside the bone, which is present in most cases of sesamoiditis. MRI is usually reserved for cases where symptoms persist despite initial management.
+
+Source: Yammine K. The sesamoids of the feet in humans: a systematic review and meta-analysis. Anatomical Science International. 2015;90(3):144–60.
 
 ### What does conservative management look like?
 
@@ -5833,7 +5844,7 @@ Not always. An X-ray is usually the first step and can distinguish a fracture fr
 
 #### What is a bipartite sesamoid?
 
-A bipartite sesamoid is a normal anatomical variant where the medial sesamoid bone naturally comes in two pieces. About 10 to 30 percent of people have one. On X-ray it can look like a fracture, but the edges are smooth and rounded, not jagged.
+A bipartite sesamoid is a normal anatomical variant where the medial sesamoid bone naturally comes in two pieces. About 1 in 10 people have one. On X-ray it can look like a fracture, but the edges are smooth and rounded, not jagged.
 
 #### Is sesamoiditis the same as turf toe?
 
@@ -6332,6 +6343,26 @@ El orden importa. Mientras el dolor sea tu meta, Walkito mantiene suave el traba
 - **Elevación de talones con toalla** (4 series de 10, cada pierna, con peso extra): Párate en un pie sobre un escalón, con una toalla enrollada bajo los dedos. Tarda tres segundos en subir, mantén dos arriba y tarda tres en bajar. En este nivel Walkito añade peso, por ejemplo una mochila. La toalla es lo que hace que este ejercicio trabaje la fascia plantar y no solo la pantorrilla.
 - **Automasaje plantar** (1 minuto): Siéntate y rueda la planta del pie despacio sobre una pelota de masaje, con presión firme. Si haces muecas de dolor, afloja. Rodar calma el tejido después de trabajar. ¿No tienes pelota? El masaje de planta usa pasadas firmes con el pulgar, del talón a los dedos.
 
+### ¿Qué ejercicios debes evitar con fascitis plantar?
+
+Evita la actividad de alto impacto que dispare la carga sobre el talón mientras el dolor está encendido, y evita caminar descalzo en pisos duros a primera hora de la mañana.
+
+Saltar, esprintar y los pliométricos ponen una fuerza pico repentina sobre la fascia plantar. Cuando el tejido está irritado, ese pico puede hacerlo retroceder. La guía de 2023 recomienda ajustar la carga sobre tus pies en el trabajo, en el deporte y en el día a día, un consejo con grado E. No prohíbe ejercicios específicos. La pregunta es si la carga es más de lo que el tejido puede recuperar de un día para otro. Caminar descalzo en pisos duros es un detonante común porque la fascia está más rígida después del reposo y un piso duro no ofrece amortiguación.
+
+Dos cosas más a tener en cuenta. Rodar una pelota bajo el pie debe sentirse firme, no agudo. Si duele, afloja o déjalo. Y si también tienes dolor de Aquiles cerca de la parte de atrás del talón, evita los descensos profundos de talón desde la orilla de un escalón, porque la bajada puede cargar la inserción del Aquiles. Mantén la [elevación de talones con toalla](https://walkito.site/es/ejercicios/elevacion-de-talones-con-toalla/) en piso plano hasta que un profesional de la salud descarte el Aquiles.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
+
+### ¿Cuál es el mejor momento para estirar con fascitis plantar?
+
+Antes de tus primeros pasos de la mañana y antes de pararte después de estar sentado mucho rato. Esos son los dos momentos en que la fascia plantar está más rígida y es más probable que duela.
+
+Un ensayo de 2003 con 82 personas con fascitis plantar crónica probó un estiramiento específico de la fascia plantar hecho antes de apoyar el peso. Los pacientes mantenían el estiramiento 10 segundos, lo repetían 10 veces, tres veces al día, con la primera serie antes del primer paso de la mañana. A las ocho semanas, el grupo que hacía este estiramiento tenía significativamente menos dolor en sus primeros pasos de la mañana que el grupo que solo estiraba la pantorrilla. A los dos años, después de que todos los pacientes recibieron el mismo estiramiento, los dos grupos habían mejorado.
+
+En esta página, el [estiramiento plantar](https://walkito.site/es/ejercicios/estiramiento-fascia-plantar/) empieza en la orilla de la cama, antes de que el pie toque el piso. El [estiramiento de pantorrilla](https://walkito.site/es/ejercicios/estiramiento-de-pantorrilla/) sigue después. Walkito pone el primer estiramiento antes de pararte por la misma razón que el ensayo: estirar antes de que el tejido reciba carga es más suave que estirar después.
+
+Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
+
 ### ¿Se pueden hacer los ejercicios para la fascitis plantar en casa?
 
 Sí. Todos los ejercicios para la fascitis plantar de esta página se hacen en casa, sin máquinas ni gimnasio. Necesitas una pared para los estiramientos de pantorrilla y de sóleo, la orilla de la cama para el estiramiento plantar, una silla para las elevaciones de talón sentado, un escalón y una toalla enrollada para la elevación de talones con toalla, y una pelota de masaje para el automasaje plantar. Sin pelota, sirve el pulgar.
@@ -6366,9 +6397,19 @@ El trabajo de fuerza y el estiramiento ayudan los dos con la fascitis plantar, y
 
 En un ensayo con 48 personas con fascitis plantar confirmada por ultrasonido, todos usaron plantillas. Un grupo añadió elevaciones de talón con carga alta un día sí y un día no. El otro estiró la fascia plantar todos los días. A los tres meses, el grupo de las elevaciones iba claramente adelante en dolor y función diaria. A los doce meses, los dos grupos estaban igualados. La fuerza adelantó la mejora. No la hizo más grande.
 
-La guía respalda hacer las dos cosas. El análisis estudio por estudio está en [la página de evidencia](https://walkito.site/science/) (en inglés).
+La guía respalda hacer las dos cosas. El análisis estudio por estudio está en [la página de evidencia](https://walkito.site/es/evidencia/).
 
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
+
+### ¿Los zapatos y las plantillas ayudan con la fascitis plantar?
+
+Los zapatos con soporte ayudan, pero las plantillas por sí solas no alcanzan para la mayoría de las personas. La guía de 2023 califica las ortesis (plantillas y soportes de arco) como opción independiente con **B en contra**, lo que significa que la evidencia dice que no debes depender solo de ellas. Combinadas con estiramiento y trabajo de fuerza, las ortesis reciben una **C**.
+
+Las férulas nocturnas, usadas mientras duermes de 1 a 3 meses, reciben el grado más alto de la guía, **A**, en personas que siguen con dolor en los primeros pasos de cada mañana. Mantienen el tobillo para que la fascia plantar no se acorte durante la noche. Pregúntale a un profesional de la salud si vale la pena probarlas.
+
+La guía no califica tipos específicos de zapatos, pero el calzado sin soporte es un factor de riesgo comúnmente reconocido. Los zapatos con soporte de arco y contrafuerte firme comparten parte de la carga que la fascia plantar cargaría sola. Si te duelen los pies después de un día largo de pie, mira [dolor de pies por estar de pie todo el día](https://walkito.site/es/dolor-de-pies-por-estar-de-pie/). Quienes trabajan por turnos pueden empezar en [dolor de pies en enfermeras](https://walkito.site/es/dolor-de-pies-enfermeras/).
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
 ### ¿Qué recomienda la guía de 2023 para la fascitis plantar?
 
@@ -6380,7 +6421,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Cuando el dolor de talón se va, Walkito sigue con una dosis más baja, porque el dolor de talón puede volver. Cuando alcanzas la meta de mañanas más fáciles (dolor por la mañana de 1/10 o menos durante 14 días seguidos), esa meta pasa a mantenimiento y la siguiente ocupa su lugar.
 
-Si además tienes pie plano, el arco tiene sus propios ejercicios y sus propios tiempos: mira [ejercicios para el pie plano](https://walkito.site/es/ejercicios-pie-plano/). Las preguntas sobre la app están en [las preguntas frecuentes](https://walkito.site/faq/) (en inglés).
+Si además tienes pie plano, el arco tiene sus propios ejercicios y sus propios tiempos: mira [ejercicios para el pie plano](https://walkito.site/es/ejercicios-pie-plano/). Las preguntas sobre la app están en [las preguntas frecuentes](https://walkito.site/es/preguntas-frecuentes/).
 
 ### Consulta primero a un profesional de la salud si
 
@@ -6410,7 +6451,7 @@ El dolor de talón en los primeros pasos después de dormir o de estar sentado e
 
 #### ¿Qué es mejor para la fascitis plantar, estirar o fortalecer?
 
-Las dos cosas ayudan, y fortalecer funciona más rápido. En un ensayo con 48 personas, las elevaciones de talón con carga alta iban claramente adelante del estiramiento a los tres meses, pero a los doce meses los dos grupos estaban igualados. La guía de 2023 le da al estiramiento una A y al entrenamiento de fuerza una B. [La página de evidencia](https://walkito.site/science/) (en inglés) tiene los detalles.
+Las dos cosas ayudan, y fortalecer funciona más rápido. En un ensayo con 48 personas, las elevaciones de talón con carga alta iban claramente adelante del estiramiento a los tres meses, pero a los doce meses los dos grupos estaban igualados. La guía de 2023 le da al estiramiento una A y al entrenamiento de fuerza una B. [La página de evidencia](https://walkito.site/es/evidencia/) tiene los detalles.
 
 #### ¿El espolón calcáneo es lo mismo que la fascitis plantar?
 
@@ -6419,6 +6460,10 @@ No exactamente. Mucha gente dice «espolón calcáneo» cuando habla de fascitis
 #### ¿Con qué frecuencia debo hacer ejercicios para la fascitis plantar?
 
 Estira casi todos los días y haz el trabajo de fuerza de pantorrilla en los días de fuerza. En Walkito eliges 3, 5 o 7 días de entrenamiento a la semana, y cada semana tiene tres días de fuerza, nunca dos seguidos. Los estiramientos van en casi todas las sesiones, con el primer estiramiento plantar antes de que el pie toque el piso. En el ensayo que sigue Walkito, las elevaciones de talón se hacían un día sí y un día no.
+
+#### ¿Cuánto dura la fascitis plantar?
+
+Para la mayoría de las personas se alivia en meses, no en semanas. Una [revisión de 2020](https://doi.org/10.1177/2473011419896763) reporta que cerca del 90 % de las personas mejoran con atención no quirúrgica como estiramiento y plantillas, a menudo en 3 a 6 meses. Algunas tardan más, y un grupo más pequeño sigue con dolor después de un año. La línea de tiempo completa está en [cuánto dura la fascitis plantar](https://walkito.site/es/cuanto-dura-la-fascitis-plantar/). Ningún programa de ejercicios puede prometer un plazo.
 
 #### ¿Qué es la talalgia y qué ejercicios ayudan?
 
@@ -6431,6 +6476,10 @@ El estiramiento plantar y los estiramientos de pantorrilla y de sóleo son los q
 #### ¿Cuándo debo ir al médico por dolor de talón?
 
 Consulta primero a un profesional de la salud si el dolor empezó después de una lesión o una caída, no puedes apoyar el pie, o viene con entumecimiento, hormigueo, hinchazón, calor o fiebre. Lo mismo si te despierta por la noche, es agudo o empeora, o te duele al apretar el talón, que puede ser señal de una fractura por estrés. Walkito no diagnostica.
+
+#### ¿Caminar ayuda con la fascitis plantar?
+
+Caminar está bien en general, pero no es un ejercicio para la fascitis plantar por sí solo. La guía de 2023 recomienda ajustar la carga en vez de dejar la actividad. Si una caminata deja tus primeros pasos a la mañana siguiente claramente peores, la distancia o el ritmo fueron demasiado. Estirar antes de caminar, sobre todo el [estiramiento plantar](https://walkito.site/es/ejercicios/estiramiento-fascia-plantar/) antes de tus primeros pasos, hace más fáciles los primeros minutos.
 
 ## Ejercicios para el pie plano y el dolor en el arco
 
@@ -6479,7 +6528,7 @@ En la investigación hasta ahora, los ejercicios para pie plano cambiaron el arc
 
 La evidencia sobre el pie corto por sí solo es más escasa. Una revisión de 2024 juntó estudios sobre entrenamiento de pie corto en pie plano en general. En conjunto, no encontró una diferencia clara con los grupos de control en la forma del arco ni en la postura del pie. Solo los programas de más de seis semanas mejoraron cuánto se hunde el arco bajo tu peso, y los autores dicen que hacen falta estudios más grandes. Así que cuenta con al menos seis semanas, y más si haces solo pie corto.
 
-Esa es una de las razones por las que el plan de Walkito no tiene fecha de fin. La meta del arco, mantenerlo 60 segundos, sigue en el plan hasta que la alcanzas, tome las semanas que tome. La prueba de mantener el arco se hace cada 14 días hasta que alcanzas tu primera meta, y después cada 28, así que puedes ver si está avanzando. Los ensayos están resumidos en [la página de evidencia](https://walkito.site/science/) (en inglés).
+Esa es una de las razones por las que el plan de Walkito no tiene fecha de fin. La meta del arco, mantenerlo 60 segundos, sigue en el plan hasta que la alcanzas, tome las semanas que tome. La prueba de mantener el arco se hace cada 14 días hasta que alcanzas tu primera meta, y después cada 28, así que puedes ver si está avanzando. Los ensayos están resumidos en [la página de evidencia](https://walkito.site/es/evidencia/).
 
 Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
 Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot posture in patients with flatfeet: a systematic review and meta-analysis. Journal of Back and Musculoskeletal Rehabilitation. 2024;37(4):839–851.
@@ -6490,7 +6539,7 @@ Ningún estudio de esta página muestra que los ejercicios para pie plano alivie
 
 El dolor en el talón, y a veces a lo largo del arco, puede venir de la fascia plantar, la banda de tejido que recorre la planta del pie. Si el tuyo está cerca del talón, la guía de 2023 para el dolor de talón es la mejor referencia. Para el dolor de talón bajo el pie, le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, **A**, y al entrenamiento de fuerza una **B**. Esos ejercicios están en [ejercicios y estiramientos para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/).
 
-Walkito puede trabajar las dos cosas a la vez, como metas separadas: mañanas más fáciles para el dolor, y mantener el arco para el arco. Cómo se reparten una semana está en [la página del plan](https://walkito.site/program/) (en inglés).
+Walkito puede trabajar las dos cosas a la vez, como metas separadas: mañanas más fáciles para el dolor, y mantener el arco para el arco. Cómo se reparten una semana está en [la página del plan](https://walkito.site/es/programa/).
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
@@ -6500,7 +6549,7 @@ Cuando alcanzas la meta del arco, mantenerlo 60 segundos, Walkito deja el trabaj
 
 Las pruebas también siguen, cada 28 días una vez que alcanzas tu primera meta. Si el tiempo con el arco arriba empieza a bajar, lo ves en los números en lugar de adivinarlo.
 
-Si también te duele el talón, el talón tiene sus propios ejercicios y su propia meta: mira [ejercicios y estiramientos para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/). Las preguntas sobre la app están en [las preguntas frecuentes](https://walkito.site/faq/) (en inglés).
+Si también te duele el talón, el talón tiene sus propios ejercicios y su propia meta: mira [ejercicios y estiramientos para la fascitis plantar](https://walkito.site/es/ejercicios-fascitis-plantar/). Las preguntas sobre la app están en [las preguntas frecuentes](https://walkito.site/es/preguntas-frecuentes/).
 
 ### Consulta primero a un profesional de la salud si
 

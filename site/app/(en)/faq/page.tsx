@@ -9,7 +9,7 @@ import { Cite } from '@/components/Cite';
 import { Masthead } from '@/components/Masthead';
 import { Prose, typeset } from '@/components/Prose';
 import { FAQ, FAQ_GROUPS } from '@/lib/faq';
-import { CHROME } from '@/lib/i18n';
+import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { faqSchema } from '@/lib/schema';
 import { PAGE_UPDATED, SITE_NAME, SITE_URL } from '@/lib/site';
 
@@ -20,7 +20,7 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: '/faq' },
+  alternates: alternatesCustomEnEs('faq', 'en'),
   openGraph: {
     title: `${TITLE} | ${SITE_NAME}`,
     description: DESCRIPTION,
@@ -152,7 +152,7 @@ export default function Faq() {
         <AppStoreBadge campaign="faq" />
       </Prose>
 
-      <Footer />
+      <Footer languages={{ en: '/faq/', es: '/es/preguntas-frecuentes/' }} />
     </>
   );
 }

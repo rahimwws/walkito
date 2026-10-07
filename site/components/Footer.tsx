@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import { SocialLinks } from '@/components/SocialLinks';
-import { CHROME, EN_ONLY, ES_ARTICLES, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { CHROME, CUSTOM_EN_ES, EN_ONLY, ES_ARTICLES, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
 import { hasSpanish } from '@/lib/guides';
 import { playHref, storeHref } from '@/lib/site';
 import { GROUP_HEADING, NAV_GROUPS, NAV_LABEL, NAV_LABEL_ES, type GuideKey } from '@/lib/nav';
@@ -30,7 +30,7 @@ const FOOTER_APP: Record<Lang, { ios: string; android: string }> = {
 };
 
 function hrefFor(key: GuideKey, lang: Lang): string | null {
-  if (key === 'runners') return lang === 'en' ? '/heel-pain-runners/' : null;
+  if (key === 'runners') return lang === 'en' ? '/heel-pain-runners/' : lang === 'es' ? '/es/dolor-de-talon-en-corredores/' : null;
   if (key in TRANSLATED) return TRANSLATED[key as TranslatedPage][lang];
   if (lang === 'en') return EN_ONLY[key as EnglishPage];
   if (lang === 'es' && hasSpanish(key as EnglishPage)) return ES_ARTICLES[key as EnglishPage];
@@ -88,6 +88,11 @@ export function Footer({
           { href: '/program/', label: 'How the plan works' },
           { href: '/science/', label: 'Evidence' },
         ]
+      : lang === 'es'
+      ? [
+          { href: CUSTOM_EN_ES.program.es, label: 'Cómo funciona el plan' },
+          { href: CUSTOM_EN_ES.science.es, label: 'Evidencia' },
+        ]
       : []),
     // The app itself, on every page: the one link the whole site exists for.
     ...[storeHref(lang === 'en' ? 'footer' : `footer-${lang}`)].flatMap((href) =>
@@ -115,6 +120,12 @@ export function Footer({
                     { href: '/exercises/', label: 'Exercise library' },
                     { href: '/calf-raise-test/', label: 'Calf raise test' },
                     { href: '/printable-exercise-sheets/', label: 'Printable sheets (PDF)' },
+                  ]
+                : lang === 'es'
+                ? [
+                    { href: CUSTOM_EN_ES.exercises.es, label: 'Biblioteca de ejercicios' },
+                    { href: '/es/test-de-elevacion-de-talon/', label: 'Test de elevación de talón' },
+                    { href: CUSTOM_EN_ES.printables.es, label: 'Hojas imprimibles (PDF)' },
                   ]
                 : []),
             ]}

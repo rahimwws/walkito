@@ -6,7 +6,7 @@ import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
-import { CHROME } from '@/lib/i18n';
+import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { PRINTABLES } from '@/lib/printables';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 
@@ -18,7 +18,7 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: { canonical: PATH },
+  alternates: alternatesCustomEnEs('printables', 'en'),
   openGraph: { title: `${TITLE} | ${SITE_NAME}`, description: DESCRIPTION, url: PATH, siteName: SITE_NAME, type: 'website', images: ['/opengraph-image'] },
 };
 
@@ -97,7 +97,7 @@ export default function PrintableSheets() {
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="printables" lang="en" />
       </Prose>
-      <Footer lang="en" />
+      <Footer lang="en" languages={{ en: '/printable-exercise-sheets/', es: '/es/hojas-de-ejercicios-imprimibles/' }} />
     </>
   );
 }

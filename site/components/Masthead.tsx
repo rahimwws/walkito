@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { CHROME, TRANSLATED, type Lang } from '@/lib/i18n';
+import { CHROME, CUSTOM_EN_ES, TRANSLATED, type Lang } from '@/lib/i18n';
 import { storeHref } from '@/lib/site';
 
 /** The arrow inside the header button. Inline rather than an icon package: one
@@ -40,16 +40,21 @@ export function Masthead({ lang = 'en' }: { lang?: Lang }) {
         Walkito
       </Link>
 
-      {/* English keeps the program pages in the header. Russian and Spanish
-          have only the home page and the guides translated, so their header
-          leads with the guides and keeps Support and Privacy — the two URLs an
-          App Store reviewer is sent to — reachable from every page. */}
+      {/* English and Spanish keep program, evidence and questions in the
+          header. Russian has only the guides translated, so its header leads
+          with the guides. */}
       <nav className="nav">
         {lang === 'en' ? (
           <>
             <Link href="/program/">{c.navProgram}</Link>
             <Link href="/science/">{c.navEvidence}</Link>
             <Link href="/faq/">{c.navQuestions}</Link>
+          </>
+        ) : lang === 'es' ? (
+          <>
+            <Link href={CUSTOM_EN_ES.program.es}>{c.navProgram}</Link>
+            <Link href={CUSTOM_EN_ES.science.es}>{c.navEvidence}</Link>
+            <Link href={CUSTOM_EN_ES.faq.es}>{c.navQuestions}</Link>
           </>
         ) : (
           <>

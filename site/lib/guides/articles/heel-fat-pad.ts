@@ -75,7 +75,7 @@ export const HEEL_FAT_PAD_EN: Guide = {
       h2: 'What helps: cushioning, taping, and footwear',
       paragraphs: [
         'The most commonly recommended first steps for heel fat pad syndrome are external: viscoelastic heel cups, cushioned insoles, and shoes with thick, shock-absorbing soles. These aim to replace the cushioning the fat pad no longer provides.',
-        'The 2022 scoping review flagged an uncomfortable gap: no randomised controlled trial has tested heel cups or taping specifically for heel fat pad syndrome. A single case report described pain relief with silicone gel heel cups after one and three months. Low-dye taping reduced pain by 2 to 3 points on a 0-to-10 scale compared to barefoot walking in one small study, but that study did not isolate fat pad syndrome from other causes of heel pain.',
+        'The 2022 scoping review flagged an uncomfortable gap: no randomised controlled trial has tested heel cups or taping specifically for heel fat pad syndrome. A single case report described pain relief with silicone gel heel cups after one and three months. Some small trials of low-dye taping for general plantar heel pain report a modest drop in pain scores against sham or no treatment, but none of them isolate fat pad syndrome from other causes of heel pain, so the size of any benefit here is not known.',
         'Despite the weak evidence base, the logic is straightforward: if the cushion is gone, adding one externally is a reasonable step. Avoid walking barefoot on hard surfaces. Choose shoes with well-cushioned heels and avoid flat, thin-soled shoes. These are consensus recommendations, not trial-tested ones, and this page says so plainly.',
       ],
       cites: [CITE.fatPadReview],
