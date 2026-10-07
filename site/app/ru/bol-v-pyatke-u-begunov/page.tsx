@@ -21,7 +21,7 @@ const { archHoldSeconds, calfRaises, balanceSeconds, gapPercent } = PROGRAM.goal
 
 const TITLE = 'Боль в пятке у бегунов: отдыхать или продолжать?';
 const DESCRIPTION =
-  'Болит пятка при беге? Когда менять нагрузку, а не останавливаться, что говорит следующее утро, признаки стрессового перелома и план, который подстраивается.';
+  'Болит пятка при беге? Когда менять нагрузку, а не останавливаться, признаки стрессового перелома и план, который подстраивается.';
 const PATH = '/ru/bol-v-pyatke-u-begunov/';
 
 export const metadata: Metadata = {

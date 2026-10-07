@@ -15,7 +15,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
   updated: '2026-10-07',
   title: 'Test de elevación de talón: valores por edad y cómo hacerlo',
   description:
-    'El test de elevación de talón a una pierna mide la resistencia de la pantorrilla. Cómo hacerlo, valores normales por edad y sexo, qué significa tu resultado.',
+    'Test de elevación de talón a una pierna: cómo hacerlo, valores normales por edad y sexo, y qué significa tu resultado.',
   h1: 'Test de elevación de talón: ¿cuántas deberías hacer y qué significa tu resultado?',
   lede:
     'El test de elevación de talón a una pierna mide la resistencia de los músculos de la pantorrilla. Te paras en un pie y subes en puntas tantas veces como puedas a un ritmo fijo. El número te dice cuánta fuerza resistente a la fatiga tiene la pantorrilla de cada lado, algo que importa para caminar, correr y recuperarte de lesiones del talón o del tendón de Aquiles.',
