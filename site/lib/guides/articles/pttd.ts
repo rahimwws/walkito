@@ -48,7 +48,7 @@ export const PTTD_EN: Guide = {
     {
       h2: 'What does the exercise evidence say?',
       paragraphs: [
-        'A 2018 systematic review identified three studies with 93 participants, including two RCTs and one controlled trial. All three tested strengthening exercises on top of orthoses and stretching. The review found moderate effect sizes (SMD 0.6 to 1.2) for eccentric strengthening in reducing pain and disability compared with orthoses and stretching alone.',
+        'A 2018 systematic review identified three randomized controlled trials with 93 participants total. Two tested strengthening on top of orthoses and stretching; the third tested strengthening and balance training against no intervention. The review found moderate effect sizes (SMD 0.6 to 1.2) for eccentric strengthening in reducing pain and disability compared with orthoses and stretching alone.',
         'The largest of the three studies was a 2009 RCT of 36 people with stage I or II PTTD. Participants were assigned to one of three groups for three months: orthoses and stretching only, orthoses plus stretching plus concentric exercise, or orthoses plus stretching plus eccentric exercise. Both exercise groups improved more than the orthoses-only group. The eccentric group achieved loads 3.3 times higher than the concentric group by the end of the program, though both exercise types reduced pain.',
         'A second RCT, published in 2015, randomized 39 people with stage II PTTD to orthoses plus stretching or orthoses plus stretching plus strengthening (including band exercises and heel raises). Both groups improved, but the strengthening group did not separate significantly from the stretching group on the primary outcome. The authors suggested the strengthening dose may not have been high enough.',
         'The review authors concluded that the evidence supports adding progressive resistance exercise to orthoses for early PTTD, but called for larger trials. This is an area where the research is still catching up to clinical practice.',
@@ -145,7 +145,7 @@ export const PTTD_EN: Guide = {
     {
       h2: 'How long does improvement take?',
       paragraphs: [
-        'The two RCTs ran for three months. Both showed improvement by the end of the program, but neither tracked participants long-term. The eccentric exercise pilot study by the same group also ran for about two and a half months and found symptom improvement along with some tendon changes on ultrasound.',
+        'The two RCTs ran for three months. Both showed improvement by the end of the program, but neither tracked participants long-term. A small pilot study of ten patients by the same group also ran for about two and a half months of twice-daily eccentric loading and found symptom improvement along with some tendon changes on ultrasound.',
         'In clinical practice, improvement from stage I or II PTTD with exercise and orthoses is measured in months, not weeks. Tendon degeneration does not reverse quickly. A reasonable expectation is reduced pain and better function over three to six months, with ongoing maintenance exercise after that. If there is no improvement after three months of consistent exercise and orthoses, it is worth going back to a clinician to reassess the stage.',
       ],
       cites: [CITE.kuligRCT, CITE.kuligEccentric],

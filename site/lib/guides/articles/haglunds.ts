@@ -14,7 +14,7 @@ export const HAGLUNDS_EN: Guide = {
   lede:
     "Haglund's deformity is a bony enlargement on the upper back of the heel bone. It sits right where the Achilles tendon attaches, and when shoes press on it, the bursa between the bone and the tendon gets irritated. The result is posterior heel pain, swelling, and sometimes a visible bump that some people call a pump bump. Conservative management is the first-line approach, but the evidence behind it is mostly expert opinion, not trials.",
   intro: [
-    "This page covers the anatomy, the relationship to insertional Achilles tendinopathy and retrocalcaneal bursitis, what conservative steps exist, and when surgery enters the conversation. If your pain is higher on the tendon rather than at the bone, the [Achilles tendonitis exercises](/achilles-tendonitis-exercises/) page is the better starting point. If your pain is under the heel, see [plantar fasciitis exercises](/plantar-fasciitis-exercises/) or [heel pain in the morning](/heel-pain-in-the-morning/).",
+    "This page covers the anatomy, the relationship to insertional Achilles tendinopathy and retrocalcaneal bursitis, what conservative steps exist, and when surgery enters the conversation. If your pain sits higher on the tendon instead of at the bone, the [Achilles tendonitis exercises](/achilles-tendonitis-exercises/) page is the better starting point. If your pain is under the heel, see [plantar fasciitis exercises](/plantar-fasciitis-exercises/) or [heel pain in the morning](/heel-pain-in-the-morning/).",
   ],
   takeaways: [
     "Haglund's deformity is an abnormal bony prominence at the posterosuperior calcaneus, first described by Patrick Haglund in 1927. It can lead to retrocalcaneal bursitis and insertional Achilles tendinopathy (Yuen and colleagues, 2022).",
@@ -71,7 +71,7 @@ export const HAGLUNDS_EN: Guide = {
       exercises: [
         {
           name: 'Eccentric heel drops (floor level)',
-          evidence: { level: 'moderate', why: "Jonsson 2008 pilot study: floor-level-only eccentric loading, no dorsiflexion past neutral, reported good results in 67% of 27 patients with insertional Achilles pain. Applied to Haglund's by extension." },
+          evidence: { level: 'early', why: "Jonsson 2008 was a small, uncontrolled pilot study (27 patients, no comparison group): floor-level-only eccentric loading, no dorsiflexion past neutral, reported good results in 67% of patients with insertional Achilles pain. No controlled trial has tested this for Haglund's, so the evidence stays early rather than moderate." },
           dose: 'Walkito starts at 3 x 10, each leg. Jonsson protocol: 3 x 15, twice daily, three months',
           how: 'Stand on a flat floor (not a step edge). Rise on both feet, shift to the affected leg, lower slowly over three seconds. The heel returns to floor level, not below it. Both feet to come back up. Straight knee first; add bent-knee sets once straight-knee sets feel manageable.',
           often: 'Strength days. Jonsson protocol: twice daily.',
@@ -131,7 +131,7 @@ export const HAGLUNDS_EN: Guide = {
     {
       h2: "When is surgery considered for Haglund's deformity?",
       paragraphs: [
-        'Surgery is discussed after at least six months of conservative management have not provided adequate relief. The 2022 systematic review by Yuen and colleagues included 21 studies and found that both open and endoscopic techniques improved AOFAS (American Orthopaedic Foot and Ankle Society) scores. Endoscopic approaches showed shorter recovery times.',
+        'Surgery is discussed after at least six months of conservative management have not provided adequate relief. The 2022 systematic review by Yuen and colleagues included 20 studies and found that both open and endoscopic techniques improved AOFAS (American Orthopaedic Foot and Ankle Society) scores. Endoscopic approaches showed shorter recovery times.',
         "The surgery typically involves removing the bony prominence (calcaneoplasty), excising the inflamed bursa, and in some cases debriding or reattaching the Achilles tendon. Complications can include wound healing problems, nerve injury, and tendon weakening. The decision is between you and your surgeon.",
         'This page does not recommend for or against surgery. The conservative steps above are where most people start, and many respond well enough to avoid an operation. If six months of shoe modification, exercise, and activity changes have not helped, a foot and ankle specialist can discuss surgical options.',
       ],
@@ -198,7 +198,7 @@ export const HAGLUNDS_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: "Walkito's calf-loading progression runs from seated raises through double-leg raises, a hold, eccentric heel drops and beyond. For Haglund's and insertional Achilles pain, every step stays at floor level rather than dropping below a step edge. Walkito moves you up once two sessions at a level felt easy, rather than on a fixed schedule.",
+    text: "Walkito's calf-loading progression runs from seated raises through double-leg raises, a hold, eccentric heel drops and beyond. For Haglund's and insertional Achilles pain, every step stays at floor level instead of dropping below a step edge. Walkito moves you up once two sessions at a level felt easy, rather than on a fixed schedule.",
     more: [
       "Sessions are 3, 5 or 10 minutes. Every 14 days, a test checks calf endurance and balance. Walkito is an exercise program. It does not diagnose. If you have a visible bump on the back of your heel and are not sure what is causing the pain, have a clinician check it before you start loading.",
     ],

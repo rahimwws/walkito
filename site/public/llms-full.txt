@@ -111,6 +111,8 @@ Sources:
 - Wiegerinck JI, Zwiers R, Sierevelt IN, van Weert HC, van Dijk CN, Struijs PA. Treatment of Calcaneal Apophysitis: Wait and See Versus Orthotic Device Versus Physical Therapy: A Pragmatic Therapeutic Randomized Clinical Trial. Journal of Pediatric Orthopedics. 2016;36(2):152–7.
 - Yi TI, Lee GE, Seo IS, Huh WS, Yoon TH, Kim BR. Clinical characteristics of the causes of plantar heel pain. Annals of Rehabilitation Medicine. 2011;35(4):507–13.
 - Yuen WLP, Tan PT, Kon KKC. Surgical Treatment of Haglund's Deformity: A Systematic Review and Meta-Analysis. Cureus. 2022;14(7):e27500.
+- Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
+- Tedeschi R. Baxter's nerve: the hidden culprit of chronic heel pain. Neurological Sciences. 2025;46(9):4685–4689.
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
@@ -4062,10 +4064,10 @@ Language: English · https://walkito.site/plantar-fasciitis-vs-heel-spur/ · pub
 
 A heel spur is a bony growth on the bottom of the heel bone. Plantar fasciitis is irritation of the plantar fascia, the thick band of tissue that runs from that bone to your toes. They often show up together, but they are not the same condition, and the spur is usually not what hurts. Many people with spurs on X-ray have no pain at all.
 
-- In a study of 216 older adults, 55% had at least one plantar calcaneal spur on X-ray, and spur presence was related to obesity and osteoarthritis but not to foot posture (Menz and colleagues, 2008).
-- In a cross-sectional study of 560 people with foot pain, 35% had a plantar calcaneal spur, but spurs were not independently associated with plantar heel pain once plantar fascia thickening was accounted for (Menz and colleagues, 2019).
+- In a study of 216 older adults aged 62 to 94, 55% had at least one plantar calcaneal spur on X-ray, and spur presence was related to obesity and osteoarthritis but not to foot posture (Menz and colleagues, 2008). This is an older-adult sample, not a general-population figure.
+- In a cross-sectional study of 560 people aged 50 and over with foot pain, 35% had a plantar calcaneal spur, but spurs were not independently associated with plantar heel pain once plantar fascia thickening was accounted for (Menz and colleagues, 2019).
 - The 2023 heel pain guideline focuses on plantar fasciitis as the most common cause of plantar heel pain and notes that imaging is usually not needed when the clinical exam already points to plantar fasciitis (Koc and colleagues, 2023).
-- Estimates in the general population put asymptomatic heel spur prevalence at 11 to 16% in younger adults, rising with age.
+- The Menz 2008 study itself notes that earlier research in younger-to-middle-aged adults had put heel spur prevalence at 11 to 16%, well below the 55% found in their own older sample (Menz and colleagues, 2008).
 - The exercises that help plantar fasciitis pain also address the soft tissue around a heel spur. Exercise does not dissolve a spur, but the spur is rarely what needs attention.
 
 ### Is a heel spur the same as plantar fasciitis?
@@ -4076,6 +4078,7 @@ Plantar fasciitis causes the sharp, stabbing pain people describe on the bottom 
 
 The confusion is understandable. For decades, heel spurs were thought to be the cause of plantar heel pain. That view has largely been replaced by evidence showing that spurs are common in people without pain, and that many people with plantar fasciitis have no spur at all.
 
+Source: Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
 ### Do heel spurs actually cause pain?
@@ -4086,7 +4089,7 @@ In a cross-sectional study of 560 people aged 50 and over who reported foot pain
 
 Separately, in a study of 216 older adults aged 62 to 94, 55% had at least one plantar calcaneal spur on X-ray. Spurs were related to obesity, osteoarthritis and a history of heel pain, but not to foot posture. The authors suggested that spurs may be an adaptive response to vertical compression of the heel, not a result of the plantar fascia pulling on the bone (Menz and colleagues, 2008).
 
-Literature reviews report that 11 to 16% of younger-to-middle-aged adults have plantar heel spurs without symptoms. Only about 5% of people with a spur on X-ray report heel pain. So most spurs sit quietly in the bone without causing trouble.
+The Menz 2008 study notes that earlier research in younger-to-middle-aged adults had reported heel spur prevalence of 11 to 16%, well below the 55% the authors found in their own sample of older adults. In that same older-adult sample, 61% of people with a spur had no current or past heel pain (Menz and colleagues, 2008). Spurs do not reliably predict who ends up with pain, in older or younger groups.
 
 Source: Menz HB, Thomas MJ, Marshall M, et al. Coexistence of plantar calcaneal spurs and plantar fascial thickening in individuals with plantar heel pain. Rheumatology (Oxford, England). 2019;58(2):237–245.
 Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
@@ -4095,10 +4098,11 @@ Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in 
 
 Heel spurs are common. Prevalence depends on the age group and the method used to look for them.
 
-In the general population, radiographic studies put the prevalence of plantar calcaneal spurs at 11 to 16% in younger-to-middle-aged adults. That number rises steeply with age. Among the 216 older adults (mean age 76) in the Menz 2008 study, 55% had a plantar spur. An MRI study of 77 asymptomatic volunteers found a calcaneal spur in 19% of them (Ehrmann and colleagues, 2014).
+The Menz 2008 study of older adults cites earlier research reporting heel spur prevalence of 11 to 16% in younger-to-middle-aged adults, a range well below the 55% the authors found in their own sample of 216 people aged 62 to 94. A separate MRI study of 77 asymptomatic volunteers (mean age 48, range 23 to 83) found a calcaneal spur in 15 of them, 19% (Ehrmann and colleagues, 2014).
 
 The pattern is consistent: a large proportion of people with spurs have no symptoms, and a spur on its own does not predict whether someone will have heel pain. This is why the 2023 heel pain guideline does not list a heel spur as a reason to change the exercise approach.
 
+Source: Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.
 Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
 
 ### What does the 2023 heel pain guideline say about heel spurs?
@@ -4180,7 +4184,7 @@ No. A heel spur is a bony growth on the underside of the heel bone. Plantar fasc
 
 #### Do heel spurs cause pain?
 
-Most heel spurs do not cause pain. In a cross-sectional study of 560 people with foot pain, plantar calcaneal spurs were not independently associated with plantar heel pain once plantar fascia thickening was accounted for (Menz and colleagues, 2019). Estimates suggest only about 5% of people with a spur on X-ray report heel pain.
+Most heel spurs do not cause pain. In a cross-sectional study of 560 people aged 50 and over with foot pain, plantar calcaneal spurs were not independently associated with plantar heel pain once plantar fascia thickening was accounted for (Menz and colleagues, 2019). In a separate study of 216 older adults, 61% of those with a spur had no current or past heel pain (Menz and colleagues, 2008).
 
 #### Can you have plantar fasciitis without a heel spur?
 
@@ -4196,7 +4200,7 @@ The 2023 guideline says imaging is usually not needed when the clinical exam poi
 
 #### How common are heel spurs?
 
-Prevalence depends on age. In younger-to-middle-aged adults, 11 to 16% have a plantar calcaneal spur on X-ray without symptoms. In a study of 216 people over age 62, 55% had at least one plantar spur (Menz and colleagues, 2008). Spurs become more common with age, higher BMI and osteoarthritis.
+Prevalence depends on age. Earlier research cited in the Menz 2008 study reported 11 to 16% of younger-to-middle-aged adults with a plantar calcaneal spur on X-ray without symptoms. In a study of 216 people aged 62 to 94, 55% had at least one plantar spur (Menz and colleagues, 2008). Spurs become more common with age, higher BMI and osteoarthritis.
 
 #### When does a heel spur need surgery?
 
@@ -4491,7 +4495,7 @@ Heel pain that shows up at night, in bed, or at rest is a different pattern from
 
 - Plantar fasciitis pain is worst with first steps after rest and usually fades once you are moving. Pain that stays at rest, wakes you from sleep, or worsens through the night is a red-flag pattern that warrants investigation (Tu, 2018).
 - Calcaneal stress fractures can ache or throb at night and typically worsen with continued weight bearing rather than warming up (Patel and colleagues, 2011).
-- Tarsal tunnel syndrome and Baxter's nerve entrapment, compression of branches of the tibial nerve, can produce burning or tingling heel pain that worsens at rest and at night (Tu, 2018).
+- Tarsal tunnel syndrome and Baxter's nerve entrapment, compression of branches of the tibial nerve, produce burning or tingling heel pain, a different character from fasciitis (Tu, 2018). Baxter's nerve entrapment specifically may account for up to 20% of chronic heel pain and can appear at rest (Tedeschi, 2025).
 - Bilateral heel pain with prolonged morning stiffness may point to inflammatory arthritis such as a spondyloarthropathy. In a cohort of 174 people with plantar fasciitis, bilateral pain was a significant predictor of longer symptom duration (Hansen and colleagues, 2018).
 - The 2023 heel pain guideline grades night splints **A** for persistent plantar fasciitis, but the purpose is to prevent the fascia from shortening overnight, not to address the kinds of night pain described on this page (Koc and colleagues, 2023).
 
@@ -4503,6 +4507,7 @@ An 2018 review in American Family Physician lists several causes of heel pain th
 
 The foot also points downward (plantarflexion) during sleep. That position can shorten the Achilles tendon and calf, which sometimes contributes to discomfort at the heel. Night splints address this by holding the ankle at a neutral angle. But a night splint is a tool for plantar fasciitis, not a substitute for investigating pain that genuinely worsens at rest.
 
+Source: Tedeschi R. Baxter's nerve: the hidden culprit of chronic heel pain. Neurological Sciences. 2025;46(9):4685–4689.
 Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
@@ -4519,12 +4524,13 @@ Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 20
 
 ### What about nerve entrapment: tarsal tunnel syndrome and Baxter's nerve?
 
-The tibial nerve passes through a space behind the inner ankle called the tarsal tunnel. Compression there, tarsal tunnel syndrome, causes burning, tingling, or numbness along the sole and heel. Symptoms can worsen at rest and at night as the disorder progresses, which helps separate it from plantar fasciitis.
+The tibial nerve passes through a space behind the inner ankle called the tarsal tunnel. Compression there, tarsal tunnel syndrome, causes burning, tingling, or numbness along the sole and heel. Tu (2018) describes tarsal tunnel pain as typically worse with standing, walking, or running, and eased by rest and elevation. That pattern differs from plantar fasciitis, but it is not the same as true rest pain, so tarsal tunnel does not always fit the pattern this page is about.
 
-Baxter's nerve is the first branch of the lateral plantar nerve, a smaller nerve near the inner heel. When it is compressed, it produces sharp or burning pain at the medial heel. The pain often worsens with activity over the course of the day, but can also appear at rest. Baxter's nerve entrapment may account for up to 20% of chronic heel pain cases.
+Baxter's nerve is the first branch of the lateral plantar nerve, a smaller nerve near the inner heel. When it is compressed, it produces sharp or burning pain at the medial heel. The pain often worsens with activity over the course of the day, but can also appear at rest. A 2025 review states Baxter's nerve entrapment may account for up to 20% of chronic heel pain cases (Tedeschi, 2025).
 
 Nerve entrapment is frequently misdiagnosed as plantar fasciitis because both cause medial heel pain. The difference is the character: burning, tingling, or numbness is a nerve sign. Imaging and nerve conduction studies can help a clinician confirm the diagnosis.
 
+Source: Tedeschi R. Baxter's nerve: the hidden culprit of chronic heel pain. Neurological Sciences. 2025;46(9):4685–4689.
 Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 2018;97(2):86–93.
 
 ### Can inflammatory arthritis cause heel pain at night?
@@ -4620,7 +4626,7 @@ Plantar fasciitis can ache in the evening after a long day of standing or walkin
 
 #### What is Baxter's nerve entrapment?
 
-Baxter's nerve is the first branch of the lateral plantar nerve. When it is compressed near the inner heel, it causes sharp or burning pain, sometimes with numbness. It may account for up to 20% of chronic heel pain. Unlike plantar fasciitis, the pain often worsens later in the day or at rest and does not ease with movement.
+Baxter's nerve is the first branch of the lateral plantar nerve. When it is compressed near the inner heel, it causes sharp or burning pain, sometimes with numbness. A 2025 review states it may account for up to 20% of chronic heel pain (Tedeschi, 2025). Unlike plantar fasciitis, the pain often worsens later in the day or at rest and does not ease with movement.
 
 #### Should I see a doctor for heel pain at night?
 
@@ -4844,7 +4850,7 @@ Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for
 
 ### When is surgery considered for Haglund's deformity?
 
-Surgery is discussed after at least six months of conservative management have not provided adequate relief. The 2022 systematic review by Yuen and colleagues included 21 studies and found that both open and endoscopic techniques improved AOFAS (American Orthopaedic Foot and Ankle Society) scores. Endoscopic approaches showed shorter recovery times.
+Surgery is discussed after at least six months of conservative management have not provided adequate relief. The 2022 systematic review by Yuen and colleagues included 20 studies and found that both open and endoscopic techniques improved AOFAS (American Orthopaedic Foot and Ankle Society) scores. Endoscopic approaches showed shorter recovery times.
 
 The surgery typically involves removing the bony prominence (calcaneoplasty), excising the inflamed bursa, and in some cases debriding or reattaching the Achilles tendon. Complications can include wound healing problems, nerve injury, and tendon weakening. The decision is between you and your surgeon.
 
@@ -4875,7 +4881,7 @@ Source: Yuen WLP, Tan PT, Kon KKC. Surgical Treatment of Haglund's Deformity: A 
 
 ### Doing it as a plan
 
-Walkito's calf-loading progression runs from seated raises through double-leg raises, a hold, eccentric heel drops and beyond. For Haglund's and insertional Achilles pain, every step stays at floor level rather than dropping below a step edge. Walkito moves you up once two sessions at a level felt easy, rather than on a fixed schedule.
+Walkito's calf-loading progression runs from seated raises through double-leg raises, a hold, eccentric heel drops and beyond. For Haglund's and insertional Achilles pain, every step stays at floor level instead of dropping below a step edge. Walkito moves you up once two sessions at a level felt easy, rather than on a fixed schedule.
 
 #### What is a pump bump?
 
@@ -4974,7 +4980,7 @@ Source: Wiegerinck JI, Zwiers R, Sierevelt IN, van Weert HC, van Dijk CN, Struij
 
 Heel cups are among the most practical interventions for Sever's disease. They cushion the heel, absorb impact and reduce the peak forces reaching the growth plate. The Perhamre crossover trial found that a heel cup reduced pain by about 80 percent compared to a heel wedge in 51 boys, which suggests that impact absorption at the heel matters more than simply changing the heel angle.
 
-In the James factorial trial, heel raises (a type of insert that lifts the heel) showed a small short-term advantage over prefabricated orthoses at 2 months, but no advantage at 12 months. Custom orthoses were not tested in either of these trials. A 2021 trial of 91 children by Alfaro-Santafe and colleagues compared custom EVA orthoses against heel lifts over three months and found greater improvement in the custom orthoses group, though both groups improved.
+In the James factorial trial, heel raises (a type of insert that lifts the heel) showed a small short-term advantage over prefabricated orthoses at 2 months, but no advantage at 12 months. Custom orthoses were not tested in either of these trials.
 
 A reasonable starting point is an inexpensive over-the-counter heel cup, worn in both shoes and during sport. If that does not help, a clinician can assess whether a custom orthotic is worth the cost.
 
@@ -4999,7 +5005,7 @@ If your child has been cleared by a clinician and you are looking for exercise g
 
 ### How long does it last, and does it come back?
 
-Sever's disease usually resolves within weeks to months of load management and supportive care. Most children can return to sport within two to eight weeks. Full resolution is guaranteed once the growth plate closes, typically between ages 12 and 17 depending on the child's sex and rate of maturity.
+Sever's disease usually resolves within weeks to months of load management and supportive care. Most children can return to sport within two to eight weeks. The pain typically settles for good once the growth plate fuses into solid bone, usually between ages 12 and 17 depending on the child's sex and rate of maturity (StatPearls review, 2024).
 
 Recurrence is common and expected. Each growth spurt and each new sport season can bring the pain back. Recurrence is not a sign of failed care. It is a sign that the growth plate is still open. Continuing with heel cups, good footwear and calf stretching during sport seasons can reduce the severity and frequency of flare-ups.
 
@@ -5135,7 +5141,7 @@ A normal arch with sudden overuse, for instance a week of much more walking than
 
 ### What about orthotics and shoes for arch pain?
 
-The 2023 heel pain guideline grades orthotics as a standalone option B against for short-term plantar fasciitis pain. Orthotics combined with other care get a C. Supportive shoes are commonly recommended and can reduce discomfort, but no large trial has shown them to be better than stretching and strength work.
+The 2023 heel pain guideline grades orthotics B against using them alone for short-term plantar fasciitis pain. Orthotics combined with other care, such as stretching, get a C in favor. Supportive shoes are commonly recommended and can reduce discomfort, but no large trial has shown them to be better than stretching and strength work.
 
 For flat feet, a medial arch support can reduce the collapse of the arch during standing and walking, giving the posterior tibial tendon and plantar fascia less work to do. For high arches, a cushioned orthotic absorbs the shock that the rigid arch does not. In a 2006 trial of 154 people with pes cavus foot pain, custom foot orthoses improved pain and function more than a sham insert at three months (Burns and colleagues, 2006).
 
@@ -5180,7 +5186,7 @@ See a clinician if the pain comes with numbness, tingling or burning, which can 
 
 #### Do orthotics help arch pain?
 
-The 2023 heel pain guideline grades orthotics as a standalone option B against for plantar fasciitis. Orthotics combined with stretching and strength work can help manage symptoms while the foot builds capacity. For high arches, cushioned or custom orthoses have better evidence, including one RCT showing improvement over a sham insert at three months.
+The 2023 heel pain guideline grades orthotics B against using them alone for plantar fasciitis. Orthotics combined with stretching and strength work can help manage symptoms while the foot builds capacity. For high arches, cushioned or custom orthoses have better evidence, including one RCT showing improvement over a sham insert at three months.
 
 #### Is arch pain the same as plantar fasciitis?
 
@@ -5354,7 +5360,7 @@ Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial 
 
 ### What does the exercise evidence say?
 
-A 2018 systematic review identified three studies with 93 participants, including two RCTs and one controlled trial. All three tested strengthening exercises on top of orthoses and stretching. The review found moderate effect sizes (SMD 0.6 to 1.2) for eccentric strengthening in reducing pain and disability compared with orthoses and stretching alone.
+A 2018 systematic review identified three randomized controlled trials with 93 participants total. Two tested strengthening on top of orthoses and stretching; the third tested strengthening and balance training against no intervention. The review found moderate effect sizes (SMD 0.6 to 1.2) for eccentric strengthening in reducing pain and disability compared with orthoses and stretching alone.
 
 The largest of the three studies was a 2009 RCT of 36 people with stage I or II PTTD. Participants were assigned to one of three groups for three months: orthoses and stretching only, orthoses plus stretching plus concentric exercise, or orthoses plus stretching plus eccentric exercise. Both exercise groups improved more than the orthoses-only group. The eccentric group achieved loads 3.3 times higher than the concentric group by the end of the program, though both exercise types reduced pain.
 
@@ -5416,7 +5422,7 @@ Source: Zarali A, Raeisi Z, Aminmahalati A. The effects of combined exercises, s
 
 ### How long does improvement take?
 
-The two RCTs ran for three months. Both showed improvement by the end of the program, but neither tracked participants long-term. The eccentric exercise pilot study by the same group also ran for about two and a half months and found symptom improvement along with some tendon changes on ultrasound.
+The two RCTs ran for three months. Both showed improvement by the end of the program, but neither tracked participants long-term. A small pilot study of ten patients by the same group also ran for about two and a half months of twice-daily eccentric loading and found symptom improvement along with some tendon changes on ultrasound.
 
 In clinical practice, improvement from stage I or II PTTD with exercise and orthoses is measured in months, not weeks. Tendon degeneration does not reverse quickly. A reasonable expectation is reduced pain and better function over three to six months, with ongoing maintenance exercise after that. If there is no improvement after three months of consistent exercise and orthoses, it is worth going back to a clinician to reassess the stage.
 
@@ -5604,7 +5610,7 @@ Language: English · https://walkito.site/mortons-neuroma/ · published 2026-10-
 Morton's neuroma is a thickening of the nerve between the metatarsal heads, most often between the third and fourth toes. It produces burning, tingling, or the feeling of walking on a pebble. It is not a true tumour. Shoe changes and metatarsal pads are the usual first steps, and a 2024 Cochrane review found that the overall evidence for any single intervention is still limited. This page covers what works, what does not, and where exercise fits in.
 
 - A 2024 Cochrane review of six RCTs with 373 participants found low-to-moderate-certainty evidence for most Morton's neuroma interventions. No single treatment had strong, high-certainty support (Matthews and colleagues, 2024).
-- Wider shoes with a low heel and a metatarsal pad placed just behind the metatarsal heads are the most commonly recommended conservative first step. About 41 percent of people managed this way report significant improvement.
+- Wider shoes with a low heel and a metatarsal pad placed just behind the metatarsal heads are the most commonly recommended conservative first step. About 32 percent of people managed this way report significant improvement.
 - Corticosteroid injection provides short-term pain relief, but the 2024 Cochrane review found low-certainty evidence that adding a corticosteroid to a local anaesthetic may result in little to no difference in pain or function compared with local anaesthetic alone.
 - Exercise does not target the nerve directly. Toe and foot exercises may help with general forefoot comfort and load distribution, but no trial has tested exercise for Morton's neuroma specifically.
 
@@ -5628,7 +5634,7 @@ The distinction matters because the approaches differ. Metatarsalgia responds to
 
 Wider shoes with a low heel and a metatarsal pad are the most commonly recommended first step for Morton's neuroma. The pad is placed just behind the metatarsal heads, not directly under them, to lift the shaft of the metatarsals and spread them apart, reducing compression on the nerve.
 
-Properly fitted footwear with a wide toe box, low heel, and metatarsal pad was assessed in two studies included in a 2019 systematic review. About 41 percent of people managed conservatively with these changes reported significant improvement. However, an RCT comparing footwear and padding with corticosteroid injection found the injection group had six times greater odds of success at six months.
+Properly fitted footwear with a wide toe box, low heel, and metatarsal pad was assessed in two studies included in a 2019 systematic review. Combining those two studies, footwear and padding were successful in about 32 percent of people at a follow-up averaging four and a half months. However, an RCT comparing footwear and padding with corticosteroid injection found the injection group had six times greater odds of success at six months.
 
 The practical takeaway: shoe changes and pads are low-risk and worth trying first. They work for some people and not others. If they have not helped after four to six weeks, the next step is usually a clinician visit to discuss injections or further imaging.
 
@@ -5679,7 +5685,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 The 2024 Cochrane review is the most rigorous summary available. It included six RCTs with 373 participants. Its conclusions: there is low-to-moderate-certainty evidence for most Morton's neuroma interventions, and no single treatment has strong, high-certainty support. After 20 years of additional research since the original 2004 Cochrane review, the authors reached the same basic conclusion.
 
-That does not mean nothing works. Shoe changes and metatarsal pads help about 4 in 10 people. Ultrasound-guided corticosteroid injection probably improves pain compared with unguided injection. Neurectomy relieves pain for many people but carries the trade-off of permanent numbness. What is missing is a clear first-line treatment backed by strong evidence.
+That does not mean nothing works. Shoe changes and metatarsal pads help about 3 in 10 people. Ultrasound-guided corticosteroid injection probably improves pain compared with unguided injection. Neurectomy relieves pain for many people but carries the trade-off of permanent numbness. What is missing is a clear first-line treatment backed by strong evidence.
 
 For exercise, the gap is even wider. No trial has tested exercise for Morton's neuroma. The exercises on this page are comfort and load-management measures, not neuroma-specific interventions. If exercise is part of your plan, it should sit alongside shoe changes and clinical advice, not replace them.
 
@@ -5711,7 +5717,7 @@ Metatarsalgia is a broad term for pain under the ball of the foot. Morton's neur
 
 #### Do metatarsal pads work for Morton's neuroma?
 
-Metatarsal pads placed just behind the metatarsal heads spread the bones apart and reduce compression on the nerve. About 41 percent of people treated conservatively with wider shoes and padding report significant improvement (Matthews 2019). The pad must sit behind the metatarsal heads, not under them. Placement too far forward can increase pain.
+Metatarsal pads placed just behind the metatarsal heads spread the bones apart and reduce compression on the nerve. About 32 percent of people treated conservatively with wider shoes and padding report significant improvement (Matthews 2019). The pad must sit behind the metatarsal heads, not under them. Placement too far forward can increase pain.
 
 #### Do exercises help Morton's neuroma?
 
@@ -5844,7 +5850,7 @@ Language: English · https://walkito.site/bunion-exercises/ · published 2026-10
 Bunion exercises cannot reverse the bony angle of a bunion. That is a structural change in the joint, and no exercise undoes it. What some small trials show is that specific exercises can strengthen the abductor hallucis muscle, the muscle that pulls the big toe inward, and in some cases that comes with modest pain relief and a small change in the hallux valgus angle. This page covers what those studies found, what they did not test, and which exercises have the best support.
 
 - In a trial of 24 people with mild to moderate hallux valgus, 8 weeks of toe-spread-out exercises plus an orthosis reduced the hallux valgus angle by an average of 3.4 degrees and increased abductor hallucis muscle size. The orthosis-only group showed no change (Kim and colleagues, 2015).
-- A trial of 30 women with moderate hallux valgus found that foot mobilization exercises combined with a toe separator improved pain and function at 1 year, compared to a control group that received only a toe separator (Abdalbary, 2018).
+- A trial of 56 women with moderate hallux valgus found that 3 months of foot mobilization and exercise, combined with a toe separator, improved pain and function at 1 year, compared to a control group that received no intervention (Abdalbary, 2018).
 - Toe spacers can relieve pressure between the toes and may reduce pain in the short term, but the evidence for them changing the hallux valgus angle long term is weak.
 - Exercise does not replace surgery for moderate to severe bunions that cause daily pain. It may help with mild symptoms and muscle support around the joint.
 
@@ -5862,9 +5868,9 @@ The best evidence comes from a handful of small trials. None is large, and none 
 
 Kim and colleagues (2015) randomly assigned 24 people with mild to moderate hallux valgus to either an orthosis alone or an orthosis plus toe-spread-out exercises for 8 weeks. The exercise group reduced their hallux valgus angle by an average of 3.4 degrees and increased the cross-sectional area of the abductor hallucis muscle. The orthosis-only group showed no significant change on either measure. The study was small and included mostly young adults with mild bunions.
 
-Abdalbary (2018) compared a foot mobilization exercise program combined with toe separators to toe separators alone in 30 women with moderate hallux valgus. At 1 year, the exercise group had better pain and function scores. This trial is notable for its longer follow-up, but the sample was still small.
+Abdalbary (2018) randomly assigned 56 women with moderate hallux valgus to 3 months of foot mobilization, strengthening exercises, and a toe separator, or to no intervention (a waiting list). At 3 months and again at 1 year, the exercise group had significantly better pain, function, and radiographic angle measurements than the group that received nothing. This trial is notable for its longer follow-up, but because the toe separator was bundled with mobilization and exercise, the study cannot tell us how much the separator alone contributed.
 
-Külünkoğlu and colleagues (2021) compared splinting, exercise, and electrotherapy in women with hallux valgus. All three groups improved in pain and function, with no clear winner among them. The study did not include a no-treatment control, so it is hard to know how much any of the three approaches added beyond natural variation.
+Külünkoğlu and colleagues (2021) randomly assigned 60 women (120 feet) with hallux valgus to one month of night splinting, exercise, or electrical stimulation. All three groups improved in pain and function, but splinting was more effective than exercise and electrotherapy, and exercise outperformed electrotherapy. The study did not include an untreated control, so it is hard to know how much any of the three approaches added beyond natural variation.
 
 Source: Kim MH, Yi CH, Weon JH, Cynn HS, Jung DY, Kwon OY. Effect of toe-spread-out exercise on hallux valgus angle and cross-sectional area of abductor hallucis muscle in subjects with hallux valgus. Journal of Physical Therapy Science. 2015;27(4):1019–22.
 Source: Abdalbary SA. Foot Mobilization and Exercise Program Combined with Toe Separator Improves Outcomes in Women with Moderate Hallux Valgus at 1-Year Follow-up (A Randomized Clinical Trial). Journal of the American Podiatric Medical Association. 2018;108(6):478–486.
@@ -5874,7 +5880,7 @@ Source: Külünkoğlu BA, Akkubak Y, Çelik D, Alkan A. A comparison of the effe
 
 Toe spacers, also called toe separators, sit between the big toe and the second toe. They reduce friction, relieve pressure on the bunion, and gently push the big toe away from the second toe while worn.
 
-In the Abdalbary trial, the control group used toe separators alone and still showed some improvement in pain, though less than the group that added exercises. Tehraninasr and colleagues (2008) studied an insole with a built-in toe separator and a night splint in 32 people with painful hallux valgus and found pain improvement, but no statistically significant change in the hallux valgus angle at follow-up.
+Tehraninasr and colleagues (2008) studied 30 women with painful hallux valgus over a 3-month period. One group wore an insole with a built-in toe separator, and a separate group wore a night splint instead. Pain dropped significantly in the toe-separator group but not in the night-splint group. Neither group had a statistically significant change in the hallux valgus angle. Abdalbary's trial paired a toe separator with manual therapy and exercise, so it does not isolate what the separator did on its own.
 
 The pattern across studies is consistent: toe spacers may help with comfort and short-term symptoms, but the evidence that they change the bone angle over time is weak. They are not harmful and are inexpensive, so many clinicians recommend them alongside exercises and footwear changes.
 
@@ -5932,7 +5938,7 @@ The Kim 2015 trial measured changes after 8 weeks of daily toe-spread-out exerci
 
 #### Are toe spacers worth trying?
 
-Toe spacers can reduce friction and short-term discomfort. The Tehraninasr 2008 study found pain improvement but no significant change in the hallux valgus angle. They are inexpensive and not harmful, so they are reasonable to try alongside exercises and wider shoes.
+Toe spacers can reduce friction and short-term discomfort. In the Tehraninasr 2008 study, a toe-separator insole significantly reduced pain in one group of 30 women, while a separate night-splint group did not improve. Neither group's hallux valgus angle changed significantly. Toe spacers are inexpensive and not harmful, so they are reasonable to try alongside exercises and wider shoes.
 
 #### Do bunions get worse without surgery?
 
@@ -6032,7 +6038,7 @@ Surgery is considered when a rigid hammer toe causes persistent pain, skin break
 
 Common procedures include proximal interphalangeal joint arthroplasty (removing a small piece of bone to straighten the joint) and arthrodesis (fusing the joint in a straight position). Newer minimally invasive techniques exist but long-term outcome data are still being collected.
 
-Recovery from hammer toe surgery typically takes three to six weeks in a postoperative shoe. Some stiffness in the toe is expected. A 2016 review noted that hammer toe surgery is the most common forefoot procedure, accounting for 48 percent of forefoot surgeries.
+Recovery from hammer toe surgery typically takes three to six weeks in a postoperative shoe. Some stiffness in the toe is expected. A 2016 review cited Swedish registry data showing that lesser toe procedures, which include hammer toe, claw toe, and related deformities, made up almost a quarter of all forefoot surgeries.
 
 Source: Malhotra K, Davda K, Singh D. The pathology and management of lesser toe deformities. EFORT Open Reviews. 2016;1(11):409–419.
 

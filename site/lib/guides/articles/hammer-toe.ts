@@ -9,7 +9,7 @@ export const HAMMER_TOE_EN: Guide = {
   updated: '2026-10-07',
   title: 'Hammer Toe Exercises: Flexible vs Rigid and What Helps',
   description:
-    'Hammer toe exercises for flexible deformities, how hammer toe differs from claw toe, footwear tips, and when surgery may be discussed. Honest look at the evidence.',
+    'Hammer toe exercises for flexible deformities, how it differs from claw toe, footwear tips, and when surgery may be discussed.',
   h1: 'Hammer toe exercises: what they can do and where the evidence stands',
   lede:
     'A hammer toe is a lesser toe that bends downward at the middle joint. If it still straightens when you press on it, it is flexible, and exercises, wider shoes, and padding may help keep it that way. If it is rigid, exercise will not change the position, and the goal shifts to managing pressure and preventing skin problems. This page covers the difference, what exercises are commonly recommended, and how thin the evidence actually is.',
@@ -130,7 +130,7 @@ export const HAMMER_TOE_EN: Guide = {
       paragraphs: [
         'Surgery is considered when a rigid hammer toe causes persistent pain, skin breakdown, or difficulty wearing shoes despite conservative care. The decision is based on symptoms and functional limitation, not on the appearance of the toe.',
         'Common procedures include proximal interphalangeal joint arthroplasty (removing a small piece of bone to straighten the joint) and arthrodesis (fusing the joint in a straight position). Newer minimally invasive techniques exist but long-term outcome data are still being collected.',
-        'Recovery from hammer toe surgery typically takes three to six weeks in a postoperative shoe. Some stiffness in the toe is expected. A 2016 review noted that hammer toe surgery is the most common forefoot procedure, accounting for 48 percent of forefoot surgeries.',
+        'Recovery from hammer toe surgery typically takes three to six weeks in a postoperative shoe. Some stiffness in the toe is expected. A 2016 review cited Swedish registry data showing that lesser toe procedures, which include hammer toe, claw toe, and related deformities, made up almost a quarter of all forefoot surgeries.',
       ],
       cites: [CITE.malhotra],
     },

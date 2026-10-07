@@ -9,14 +9,14 @@ export const BUNIONS_EN: Guide = {
   updated: '2026-10-07',
   title: 'Bunion Exercises: What the Evidence Actually Supports',
   description:
-    'Can bunion exercises reduce pain or slow progression? Honest look at the evidence for toe-spread-out, abductor hallucis training, and toe spacers for hallux valgus.',
+    'Can bunion exercises reduce pain or slow hallux valgus progression? An honest look at toe-spread-out, abductor hallucis training, and toe spacers.',
   h1: 'Bunion exercises: what they can and cannot do',
   lede:
     'Bunion exercises cannot reverse the bony angle of a bunion. That is a structural change in the joint, and no exercise undoes it. What some small trials show is that specific exercises can strengthen the abductor hallucis muscle, the muscle that pulls the big toe inward, and in some cases that comes with modest pain relief and a small change in the hallux valgus angle. This page covers what those studies found, what they did not test, and which exercises have the best support.',
   toc: true,
   takeaways: [
     'In a trial of 24 people with mild to moderate hallux valgus, 8 weeks of toe-spread-out exercises plus an orthosis reduced the hallux valgus angle by an average of 3.4 degrees and increased abductor hallucis muscle size. The orthosis-only group showed no change (Kim and colleagues, 2015).',
-    'A trial of 30 women with moderate hallux valgus found that foot mobilization exercises combined with a toe separator improved pain and function at 1 year, compared to a control group that received only a toe separator (Abdalbary, 2018).',
+    'A trial of 56 women with moderate hallux valgus found that 3 months of foot mobilization and exercise, combined with a toe separator, improved pain and function at 1 year, compared to a control group that received no intervention (Abdalbary, 2018).',
     'Toe spacers can relieve pressure between the toes and may reduce pain in the short term, but the evidence for them changing the hallux valgus angle long term is weak.',
     'Exercise does not replace surgery for moderate to severe bunions that cause daily pain. It may help with mild symptoms and muscle support around the joint.',
   ],
@@ -34,18 +34,18 @@ export const BUNIONS_EN: Guide = {
       paragraphs: [
         'The best evidence comes from a handful of small trials. None is large, and none followed participants for more than a year.',
         'Kim and colleagues (2015) randomly assigned 24 people with mild to moderate hallux valgus to either an orthosis alone or an orthosis plus toe-spread-out exercises for 8 weeks. The exercise group reduced their hallux valgus angle by an average of 3.4 degrees and increased the cross-sectional area of the abductor hallucis muscle. The orthosis-only group showed no significant change on either measure. The study was small and included mostly young adults with mild bunions.',
-        'Abdalbary (2018) compared a foot mobilization exercise program combined with toe separators to toe separators alone in 30 women with moderate hallux valgus. At 1 year, the exercise group had better pain and function scores. This trial is notable for its longer follow-up, but the sample was still small.',
-        'Külünkoğlu and colleagues (2021) compared splinting, exercise, and electrotherapy in women with hallux valgus. All three groups improved in pain and function, with no clear winner among them. The study did not include a no-treatment control, so it is hard to know how much any of the three approaches added beyond natural variation.',
+        'Abdalbary (2018) randomly assigned 56 women with moderate hallux valgus to 3 months of foot mobilization, strengthening exercises, and a toe separator, or to no intervention (a waiting list). At 3 months and again at 1 year, the exercise group had significantly better pain, function, and radiographic angle measurements than the group that received nothing. This trial is notable for its longer follow-up, but because the toe separator was bundled with mobilization and exercise, the study cannot tell us how much the separator alone contributed.',
+        'Külünkoğlu and colleagues (2021) randomly assigned 60 women (120 feet) with hallux valgus to one month of night splinting, exercise, or electrical stimulation. All three groups improved in pain and function, but splinting was more effective than exercise and electrotherapy, and exercise outperformed electrotherapy. The study did not include an untreated control, so it is hard to know how much any of the three approaches added beyond natural variation.',
       ],
       sourceNote:
-        'Kim 2015: 24 subjects, 8-week RCT. HV angle change: exercise group -3.41 ± 3.17 degrees, orthosis group -0.5 ± 2.07 degrees (p < 0.05). AbdH CSA change: exercise group +0.48 cm², orthosis group -0.11 cm². Abdalbary 2018: 30 women, 1-year follow-up RCT. Külünkoğlu 2021: 3-arm RCT, no untreated control.',
+        'Kim 2015: 24 subjects, 8-week RCT. HV angle change: exercise group -3.41 ± 3.17 degrees, orthosis group -0.5 ± 2.07 degrees (p < 0.05). AbdH CSA change: exercise group +0.48 cm², orthosis group -0.11 cm². Abdalbary 2018: 56 women, randomized to 3 months of mobilization + exercise + toe separator (36 sessions) vs no intervention, 1-year follow-up RCT. Külünkoğlu 2021: 60 women (120 feet), 3-arm RCT (splint, exercise, electrotherapy), 1-month treatment, no untreated control; splinting was the most effective of the three.',
       cites: [CITE.kimHV, CITE.abdalbary, CITE.kulunkoglu],
     },
     {
       h2: 'Do toe spacers work for bunions?',
       paragraphs: [
         'Toe spacers, also called toe separators, sit between the big toe and the second toe. They reduce friction, relieve pressure on the bunion, and gently push the big toe away from the second toe while worn.',
-        'In the Abdalbary trial, the control group used toe separators alone and still showed some improvement in pain, though less than the group that added exercises. Tehraninasr and colleagues (2008) studied an insole with a built-in toe separator and a night splint in 32 people with painful hallux valgus and found pain improvement, but no statistically significant change in the hallux valgus angle at follow-up.',
+        'Tehraninasr and colleagues (2008) studied 30 women with painful hallux valgus over a 3-month period. One group wore an insole with a built-in toe separator, and a separate group wore a night splint instead. Pain dropped significantly in the toe-separator group but not in the night-splint group. Neither group had a statistically significant change in the hallux valgus angle. Abdalbary\'s trial paired a toe separator with manual therapy and exercise, so it does not isolate what the separator did on its own.',
         'The pattern across studies is consistent: toe spacers may help with comfort and short-term symptoms, but the evidence that they change the bone angle over time is weak. They are not harmful and are inexpensive, so many clinicians recommend them alongside exercises and footwear changes.',
       ],
       cites: [CITE.abdalbary, CITE.tehraninasr],
@@ -145,7 +145,7 @@ export const BUNIONS_EN: Guide = {
     },
     {
       q: 'Are toe spacers worth trying?',
-      a: 'Toe spacers can reduce friction and short-term discomfort. The Tehraninasr 2008 study found pain improvement but no significant change in the hallux valgus angle. They are inexpensive and not harmful, so they are reasonable to try alongside exercises and wider shoes.',
+      a: 'Toe spacers can reduce friction and short-term discomfort. In the Tehraninasr 2008 study, a toe-separator insole significantly reduced pain in one group of 30 women, while a separate night-splint group did not improve. Neither group\'s hallux valgus angle changed significantly. Toe spacers are inexpensive and not harmful, so they are reasonable to try alongside exercises and wider shoes.',
       cites: [CITE.tehraninasr],
     },
     {

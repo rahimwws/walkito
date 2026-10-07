@@ -86,7 +86,7 @@ export const SEVERS_EN: Guide = {
       h2: 'Heel cups and insoles',
       paragraphs: [
         "Heel cups are among the most practical interventions for Sever's disease. They cushion the heel, absorb impact and reduce the peak forces reaching the growth plate. The Perhamre crossover trial found that a heel cup reduced pain by about 80 percent compared to a heel wedge in 51 boys, which suggests that impact absorption at the heel matters more than simply changing the heel angle.",
-        "In the James factorial trial, heel raises (a type of insert that lifts the heel) showed a small short-term advantage over prefabricated orthoses at 2 months, but no advantage at 12 months. Custom orthoses were not tested in either of these trials. A 2021 trial of 91 children by Alfaro-Santafe and colleagues compared custom EVA orthoses against heel lifts over three months and found greater improvement in the custom orthoses group, though both groups improved.",
+        "In the James factorial trial, heel raises (a type of insert that lifts the heel) showed a small short-term advantage over prefabricated orthoses at 2 months, but no advantage at 12 months. Custom orthoses were not tested in either of these trials.",
         'A reasonable starting point is an inexpensive over-the-counter heel cup, worn in both shoes and during sport. If that does not help, a clinician can assess whether a custom orthotic is worth the cost.',
       ],
       cites: [CITE.perhamreHeelCup, CITE.jamesSever],
@@ -110,7 +110,7 @@ export const SEVERS_EN: Guide = {
     {
       h2: 'How long does it last, and does it come back?',
       paragraphs: [
-        "Sever's disease usually resolves within weeks to months of load management and supportive care. Most children can return to sport within two to eight weeks. Full resolution is guaranteed once the growth plate closes, typically between ages 12 and 17 depending on the child's sex and rate of maturity.",
+        "Sever's disease usually resolves within weeks to months of load management and supportive care. Most children can return to sport within two to eight weeks. The pain typically settles for good once the growth plate fuses into solid bone, usually between ages 12 and 17 depending on the child's sex and rate of maturity (StatPearls review, 2024).",
         'Recurrence is common and expected. Each growth spurt and each new sport season can bring the pain back. Recurrence is not a sign of failed care. It is a sign that the growth plate is still open. Continuing with heel cups, good footwear and calf stretching during sport seasons can reduce the severity and frequency of flare-ups.',
         "No long-term problems have been associated with Sever's disease. It does not damage the growth plate or affect final bone shape.",
       ],

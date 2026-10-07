@@ -168,7 +168,7 @@ export const ARCH_PAIN_EN: Guide = {
     {
       h2: 'What about orthotics and shoes for arch pain?',
       paragraphs: [
-        'The 2023 heel pain guideline grades orthotics as a standalone option B against for short-term plantar fasciitis pain. Orthotics combined with other care get a C. Supportive shoes are commonly recommended and can reduce discomfort, but no large trial has shown them to be better than stretching and strength work.',
+        "The 2023 heel pain guideline grades orthotics B against using them alone for short-term plantar fasciitis pain. Orthotics combined with other care, such as stretching, get a C in favor. Supportive shoes are commonly recommended and can reduce discomfort, but no large trial has shown them to be better than stretching and strength work.",
         'For flat feet, a medial arch support can reduce the collapse of the arch during standing and walking, giving the posterior tibial tendon and plantar fascia less work to do. For high arches, a cushioned orthotic absorbs the shock that the rigid arch does not. In a 2006 trial of 154 people with pes cavus foot pain, custom foot orthoses improved pain and function more than a sham insert at three months (Burns and colleagues, 2006).',
         'Shoes and inserts help manage symptoms while exercise builds the capacity the foot needs. They are not a substitute for each other.',
       ],
@@ -202,7 +202,7 @@ export const ARCH_PAIN_EN: Guide = {
     {
       q: 'Do orthotics help arch pain?',
       cites: [CITE.guideline],
-      a: 'The 2023 heel pain guideline grades orthotics as a standalone option B against for plantar fasciitis. Orthotics combined with stretching and strength work can help manage symptoms while the foot builds capacity. For high arches, cushioned or custom orthoses have better evidence, including one RCT showing improvement over a sham insert at three months.',
+      a: "The 2023 heel pain guideline grades orthotics B against using them alone for plantar fasciitis. Orthotics combined with stretching and strength work can help manage symptoms while the foot builds capacity. For high arches, cushioned or custom orthoses have better evidence, including one RCT showing improvement over a sham insert at three months.",
     },
     {
       q: 'Is arch pain the same as plantar fasciitis?',

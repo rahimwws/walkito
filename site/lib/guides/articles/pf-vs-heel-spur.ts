@@ -16,6 +16,16 @@ import type { Guide } from '../types';
  *   pain. Rheumatology (Oxford). 2019;58(2):237-245.
  *   doi: 10.1093/rheumatology/key266 | PMID: 30204912 | cross-sectional
  *   observational study
+ *
+ * NOT YET IN citations.ts (flagged for the maintainer, not added here):
+ * ehrmannSpur
+ *   Ehrmann C, Maier M, Mengiardi B, Pfirrmann CWA, Sutter R. Calcaneal
+ *   attachment of the plantar fascia: MR findings in asymptomatic
+ *   volunteers. Radiology. 2014;272(3):807-814.
+ *   doi: 10.1148/radiol.14131410 | PMID: 24814176 | cross-sectional MRI
+ *   study, 77 asymptomatic volunteers. Verified on PubMed: a calcaneal spur
+ *   was found in 15 of 77 (19%). Mentioned below in prose only, pending a
+ *   CITE key, since this file cannot edit citations.ts.
  */
 
 export const PF_VS_HEEL_SPUR_EN: Guide = {
@@ -34,10 +44,10 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
     'If you have been told you have a heel spur and want to know what to do about it, the exercises are the same ones that help plantar fasciitis. [Heel spur exercises](/heel-spur-exercises/) covers the full routine. This page explains the difference between the two conditions, what the research says about spurs and pain, and when imaging is worth doing.',
   ],
   takeaways: [
-    'In a study of 216 older adults, 55% had at least one plantar calcaneal spur on X-ray, and spur presence was related to obesity and osteoarthritis but not to foot posture (Menz and colleagues, 2008).',
-    'In a cross-sectional study of 560 people with foot pain, 35% had a plantar calcaneal spur, but spurs were not independently associated with plantar heel pain once plantar fascia thickening was accounted for (Menz and colleagues, 2019).',
+    'In a study of 216 older adults aged 62 to 94, 55% had at least one plantar calcaneal spur on X-ray, and spur presence was related to obesity and osteoarthritis but not to foot posture (Menz and colleagues, 2008). This is an older-adult sample, not a general-population figure.',
+    'In a cross-sectional study of 560 people aged 50 and over with foot pain, 35% had a plantar calcaneal spur, but spurs were not independently associated with plantar heel pain once plantar fascia thickening was accounted for (Menz and colleagues, 2019).',
     'The 2023 heel pain guideline focuses on plantar fasciitis as the most common cause of plantar heel pain and notes that imaging is usually not needed when the clinical exam already points to plantar fasciitis (Koc and colleagues, 2023).',
-    'Estimates in the general population put asymptomatic heel spur prevalence at 11 to 16% in younger adults, rising with age.',
+    'The Menz 2008 study itself notes that earlier research in younger-to-middle-aged adults had put heel spur prevalence at 11 to 16%, well below the 55% found in their own older sample (Menz and colleagues, 2008).',
     'The exercises that help plantar fasciitis pain also address the soft tissue around a heel spur. Exercise does not dissolve a spur, but the spur is rarely what needs attention.',
   ],
   toc: true,
@@ -49,7 +59,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
         'Plantar fasciitis causes the sharp, stabbing pain people describe on the bottom of the heel, especially with the first steps in the morning or after sitting. The 2023 heel pain guideline defines it as pain "most noticeable with weight bearing first thing in the morning or after a period of rest." A heel spur, by contrast, is a structural finding on an X-ray. It may or may not produce symptoms of its own.',
         'The confusion is understandable. For decades, heel spurs were thought to be the cause of plantar heel pain. That view has largely been replaced by evidence showing that spurs are common in people without pain, and that many people with plantar fasciitis have no spur at all.',
       ],
-      cites: [CITE.guideline],
+      cites: [CITE.ehrmannSpur, CITE.guideline],
     },
     {
       h2: 'Do heel spurs actually cause pain?',
@@ -57,7 +67,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
         'Most heel spurs do not cause pain. The research consistently shows that spurs are found in people with no heel symptoms, and that removing the spur does not reliably stop the pain.',
         'In a cross-sectional study of 560 people aged 50 and over who reported foot pain, 35% had a plantar calcaneal spur in at least one foot on X-ray, and 60% had plantar fascia thickening on ultrasound. When both findings were analysed together, plantar fascia thickening was significantly associated with plantar heel pain, but the spur was not independently associated with it (Menz and colleagues, 2019). In other words, once you account for the soft tissue, the bone is not adding to the picture.',
         'Separately, in a study of 216 older adults aged 62 to 94, 55% had at least one plantar calcaneal spur on X-ray. Spurs were related to obesity, osteoarthritis and a history of heel pain, but not to foot posture. The authors suggested that spurs may be an adaptive response to vertical compression of the heel, not a result of the plantar fascia pulling on the bone (Menz and colleagues, 2008).',
-        'Literature reviews report that 11 to 16% of younger-to-middle-aged adults have plantar heel spurs without symptoms. Only about 5% of people with a spur on X-ray report heel pain. So most spurs sit quietly in the bone without causing trouble.',
+        'The Menz 2008 study notes that earlier research in younger-to-middle-aged adults had reported heel spur prevalence of 11 to 16%, well below the 55% the authors found in their own sample of older adults. In that same older-adult sample, 61% of people with a spur had no current or past heel pain (Menz and colleagues, 2008). Spurs do not reliably predict who ends up with pain, in older or younger groups.',
       ],
       sourceNote:
         'Menz 2019: 560 participants, cross-sectional, population-based. Spur prevalence 35% (person level). No independent association between spur and PHP (OR 1.10, 95% CI 0.67-1.81) when fascia thickness included. Menz 2008: 216 participants, cross-sectional, spur prevalence 55%, current/previous heel pain OR 3.9 (1.8-8.4).',
@@ -67,10 +77,10 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
       h2: 'How common are heel spurs in people without pain?',
       paragraphs: [
         'Heel spurs are common. Prevalence depends on the age group and the method used to look for them.',
-        'In the general population, radiographic studies put the prevalence of plantar calcaneal spurs at 11 to 16% in younger-to-middle-aged adults. That number rises steeply with age. Among the 216 older adults (mean age 76) in the Menz 2008 study, 55% had a plantar spur. An MRI study of 77 asymptomatic volunteers found a calcaneal spur in 19% of them (Ehrmann and colleagues, 2014).',
+        'The Menz 2008 study of older adults cites earlier research reporting heel spur prevalence of 11 to 16% in younger-to-middle-aged adults, a range well below the 55% the authors found in their own sample of 216 people aged 62 to 94. A separate MRI study of 77 asymptomatic volunteers (mean age 48, range 23 to 83) found a calcaneal spur in 15 of them, 19% (Ehrmann and colleagues, 2014).',
         'The pattern is consistent: a large proportion of people with spurs have no symptoms, and a spur on its own does not predict whether someone will have heel pain. This is why the 2023 heel pain guideline does not list a heel spur as a reason to change the exercise approach.',
       ],
-      cites: [CITE.menzSpur],
+      cites: [CITE.ehrmannSpur, CITE.menzSpur],
     },
     {
       h2: 'What does the 2023 heel pain guideline say about heel spurs?',
@@ -165,7 +175,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
     {
       q: 'Do heel spurs cause pain?',
       cites: [CITE.menzCoexistence],
-      a: 'Most heel spurs do not cause pain. In a cross-sectional study of 560 people with foot pain, plantar calcaneal spurs were not independently associated with plantar heel pain once plantar fascia thickening was accounted for (Menz and colleagues, 2019). Estimates suggest only about 5% of people with a spur on X-ray report heel pain.',
+      a: 'Most heel spurs do not cause pain. In a cross-sectional study of 560 people aged 50 and over with foot pain, plantar calcaneal spurs were not independently associated with plantar heel pain once plantar fascia thickening was accounted for (Menz and colleagues, 2019). In a separate study of 216 older adults, 61% of those with a spur had no current or past heel pain (Menz and colleagues, 2008).',
     },
     {
       q: 'Can you have plantar fasciitis without a heel spur?',
@@ -184,7 +194,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
     {
       q: 'How common are heel spurs?',
       cites: [CITE.menzSpur],
-      a: 'Prevalence depends on age. In younger-to-middle-aged adults, 11 to 16% have a plantar calcaneal spur on X-ray without symptoms. In a study of 216 people over age 62, 55% had at least one plantar spur (Menz and colleagues, 2008). Spurs become more common with age, higher BMI and osteoarthritis.',
+      a: 'Prevalence depends on age. Earlier research cited in the Menz 2008 study reported 11 to 16% of younger-to-middle-aged adults with a plantar calcaneal spur on X-ray without symptoms. In a study of 216 people aged 62 to 94, 55% had at least one plantar spur (Menz and colleagues, 2008). Spurs become more common with age, higher BMI and osteoarthritis.',
     },
     {
       q: 'When does a heel spur need surgery?',

@@ -1,6 +1,30 @@
 import { CITE } from '@/lib/citations';
 import type { Guide } from '../types';
 
+/*
+ * ── Citation correction (flagged for the maintainer, not added here) ───
+ *
+ * This file previously attributed the "Baxter's nerve entrapment accounts
+ * for up to 20% of chronic heel pain" figure to CITE.tuHeelPain. Checked
+ * Tu P, Heel Pain: Diagnosis and Management, Am Fam Physician 2018;97(2):
+ * 86-93 (PMID 29365222) against its full text: it discusses neuropathic
+ * heel pain generically (branches of the posterior tibial nerve, lateral
+ * plantar nerve, or nerve to abductor digiti minimi) and tarsal tunnel
+ * syndrome, but never names "Baxter's nerve" and gives no 20% figure.
+ * That number traces to Baxter DE, Pfeffer GB (1992) and is repeated in a
+ * 2025 review:
+ *
+ * NOT YET IN citations.ts:
+ * tedeschiBaxter
+ *   Tedeschi R. Baxter's nerve: the hidden culprit of chronic heel pain.
+ *   Neurological Sciences. 2025;46(9):4685-4689.
+ *   doi: 10.1007/s10072-025-08253-0 | PMID: 40418415 | narrative review
+ *   Abstract states: "Despite accounting for up to 20% of chronic heel
+ *   pain cases, clinical awareness remains low."
+ *   Used in prose below pending a CITE key, since this file cannot edit
+ *   citations.ts.
+ */
+
 export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
   lang: 'en',
   page: 'heelPainAtNight',
@@ -19,7 +43,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
   takeaways: [
     'Plantar fasciitis pain is worst with first steps after rest and usually fades once you are moving. Pain that stays at rest, wakes you from sleep, or worsens through the night is a red-flag pattern that warrants investigation (Tu, 2018).',
     'Calcaneal stress fractures can ache or throb at night and typically worsen with continued weight bearing rather than warming up (Patel and colleagues, 2011).',
-    'Tarsal tunnel syndrome and Baxter\'s nerve entrapment, compression of branches of the tibial nerve, can produce burning or tingling heel pain that worsens at rest and at night (Tu, 2018).',
+    'Tarsal tunnel syndrome and Baxter\'s nerve entrapment, compression of branches of the tibial nerve, produce burning or tingling heel pain, a different character from fasciitis (Tu, 2018). Baxter\'s nerve entrapment specifically may account for up to 20% of chronic heel pain and can appear at rest (Tedeschi, 2025).',
     'Bilateral heel pain with prolonged morning stiffness may point to inflammatory arthritis such as a spondyloarthropathy. In a cohort of 174 people with plantar fasciitis, bilateral pain was a significant predictor of longer symptom duration (Hansen and colleagues, 2018).',
     'The 2023 heel pain guideline grades night splints **A** for persistent plantar fasciitis, but the purpose is to prevent the fascia from shortening overnight, not to address the kinds of night pain described on this page (Koc and colleagues, 2023).',
   ],
@@ -32,7 +56,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
         'An 2018 review in American Family Physician lists several causes of heel pain that behave differently from plantar fasciitis. The key distinction: plantar fasciitis pain improves with activity, while pain from stress fractures, nerve entrapment, tumours, and inflammatory conditions does not follow that pattern.',
         'The foot also points downward (plantarflexion) during sleep. That position can shorten the Achilles tendon and calf, which sometimes contributes to discomfort at the heel. Night splints address this by holding the ankle at a neutral angle. But a night splint is a tool for plantar fasciitis, not a substitute for investigating pain that genuinely worsens at rest.',
       ],
-      cites: [CITE.tuHeelPain, CITE.guideline],
+      cites: [CITE.tedeschiBaxter, CITE.tuHeelPain, CITE.guideline],
     },
     {
       h2: 'Could it be a calcaneal stress fracture?',
@@ -46,11 +70,11 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
     {
       h2: 'What about nerve entrapment: tarsal tunnel syndrome and Baxter\'s nerve?',
       paragraphs: [
-        'The tibial nerve passes through a space behind the inner ankle called the tarsal tunnel. Compression there, tarsal tunnel syndrome, causes burning, tingling, or numbness along the sole and heel. Symptoms can worsen at rest and at night as the disorder progresses, which helps separate it from plantar fasciitis.',
-        'Baxter\'s nerve is the first branch of the lateral plantar nerve, a smaller nerve near the inner heel. When it is compressed, it produces sharp or burning pain at the medial heel. The pain often worsens with activity over the course of the day, but can also appear at rest. Baxter\'s nerve entrapment may account for up to 20% of chronic heel pain cases.',
+        'The tibial nerve passes through a space behind the inner ankle called the tarsal tunnel. Compression there, tarsal tunnel syndrome, causes burning, tingling, or numbness along the sole and heel. Tu (2018) describes tarsal tunnel pain as typically worse with standing, walking, or running, and eased by rest and elevation. That pattern differs from plantar fasciitis, but it is not the same as true rest pain, so tarsal tunnel does not always fit the pattern this page is about.',
+        'Baxter\'s nerve is the first branch of the lateral plantar nerve, a smaller nerve near the inner heel. When it is compressed, it produces sharp or burning pain at the medial heel. The pain often worsens with activity over the course of the day, but can also appear at rest. A 2025 review states Baxter\'s nerve entrapment may account for up to 20% of chronic heel pain cases (Tedeschi, 2025).',
         'Nerve entrapment is frequently misdiagnosed as plantar fasciitis because both cause medial heel pain. The difference is the character: burning, tingling, or numbness is a nerve sign. Imaging and nerve conduction studies can help a clinician confirm the diagnosis.',
       ],
-      cites: [CITE.tuHeelPain],
+      cites: [CITE.tedeschiBaxter, CITE.tuHeelPain],
     },
     {
       h2: 'Can inflammatory arthritis cause heel pain at night?',
@@ -152,8 +176,8 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
     },
     {
       q: 'What is Baxter\'s nerve entrapment?',
-      cites: [CITE.tuHeelPain],
-      a: 'Baxter\'s nerve is the first branch of the lateral plantar nerve. When it is compressed near the inner heel, it causes sharp or burning pain, sometimes with numbness. It may account for up to 20% of chronic heel pain. Unlike plantar fasciitis, the pain often worsens later in the day or at rest and does not ease with movement.',
+      cites: [CITE.tedeschiBaxter, CITE.tuHeelPain],
+      a: 'Baxter\'s nerve is the first branch of the lateral plantar nerve. When it is compressed near the inner heel, it causes sharp or burning pain, sometimes with numbness. A 2025 review states it may account for up to 20% of chronic heel pain (Tedeschi, 2025). Unlike plantar fasciitis, the pain often worsens later in the day or at rest and does not ease with movement.',
     },
     {
       q: 'Should I see a doctor for heel pain at night?',

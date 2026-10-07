@@ -33,7 +33,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
   updated: '2026-10-07',
   title: 'Heel Spur Exercises and Stretches for Pain Relief',
   description:
-    'Heel spur exercises and stretches that target the plantar fascia and calf: the routine, doses, progression, and why exercise helps the pain even though it cannot dissolve a spur.',
+    'Heel spur exercises and stretches for the plantar fascia and calf: the routine, doses, and progression that ease pain without dissolving the spur.',
   h1: 'Heel spur exercises: stretches and strengthening for the pain around a spur',
   lede:
     'Exercise does not dissolve a heel spur. The spur is bone, and bone does not shrink from stretching. But the pain people feel when they have a heel spur almost always comes from the plantar fascia and calf around it, not from the bone itself. The exercises below target those soft tissues. They are the same ones the 2023 heel pain guideline recommends for plantar fasciitis.',

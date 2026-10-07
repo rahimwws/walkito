@@ -9,7 +9,7 @@ export const SESAMOIDITIS_EN: Guide = {
   updated: '2026-10-07',
   title: 'Sesamoiditis: Causes, Offloading, and When You Need Imaging',
   description:
-    'Sesamoiditis causes pain under the big toe joint. Learn about dancer\'s pads, offloading, footwear, how to tell it from a sesamoid fracture, and when imaging helps.',
+    'Sesamoiditis causes pain under the big toe joint. Dancer\'s pads, offloading, footwear, telling it apart from a fracture, and when imaging helps.',
   h1: 'Sesamoiditis: what it is, what helps, and when to get imaging',
   lede:
     'Sesamoiditis is inflammation of the two small bones embedded in the tendon under the big toe joint. The pain usually sits right under the ball of the foot, beneath the big toe, and gets worse when you push off during walking or running. This page covers what causes it, what offloading and footwear changes can do, and when imaging is worth pursuing.',

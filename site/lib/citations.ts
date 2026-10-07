@@ -391,6 +391,16 @@ export const CITATIONS: readonly Citation[] = [
     doi: '10.7759/cureus.27500',
     pmid: '36060327',
   },
+  {
+    text: 'Ehrmann C, Maier M, Mengiardi B, Pfirrmann CW, Sutter R. Calcaneal attachment of the plantar fascia: MR findings in asymptomatic volunteers. Radiology. 2014;272(3):807–814.',
+    doi: '10.1148/radiol.14131410',
+    pmid: '24814176',
+  },
+  {
+    text: 'Tedeschi R. Baxter\'s nerve: the hidden culprit of chronic heel pain. Neurological Sciences. 2025;46(9):4685–4689.',
+    doi: '10.1007/s10072-025-08253-0',
+    pmid: '40418415',
+  },
 ];
 
 /** Readable names for the indices, so a guide says `CITE.rathleff` rather than `0`. */
@@ -470,6 +480,8 @@ export const CITE = {
   wiegerinck: 72,
   yiFatPad: 73,
   yuenHaglund: 74,
+  ehrmannSpur: 75,
+  tedeschiBaxter: 76,
 } as const;
 
 /** Where a citation resolves: the DOI when there is one, else PubMed. */

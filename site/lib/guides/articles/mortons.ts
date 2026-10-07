@@ -19,7 +19,7 @@ export const MORTONS_EN: Guide = {
   toc: true,
   takeaways: [
     "A 2024 Cochrane review of six RCTs with 373 participants found low-to-moderate-certainty evidence for most Morton's neuroma interventions. No single treatment had strong, high-certainty support (Matthews and colleagues, 2024).",
-    "Wider shoes with a low heel and a metatarsal pad placed just behind the metatarsal heads are the most commonly recommended conservative first step. About 41 percent of people managed this way report significant improvement.",
+    "Wider shoes with a low heel and a metatarsal pad placed just behind the metatarsal heads are the most commonly recommended conservative first step. About 32 percent of people managed this way report significant improvement.",
     "Corticosteroid injection provides short-term pain relief, but the 2024 Cochrane review found low-certainty evidence that adding a corticosteroid to a local anaesthetic may result in little to no difference in pain or function compared with local anaesthetic alone.",
     "Exercise does not target the nerve directly. Toe and foot exercises may help with general forefoot comfort and load distribution, but no trial has tested exercise for Morton's neuroma specifically.",
   ],
@@ -44,7 +44,7 @@ export const MORTONS_EN: Guide = {
       h2: 'Do metatarsal pads and shoe changes help?',
       paragraphs: [
         "Wider shoes with a low heel and a metatarsal pad are the most commonly recommended first step for Morton's neuroma. The pad is placed just behind the metatarsal heads, not directly under them, to lift the shaft of the metatarsals and spread them apart, reducing compression on the nerve.",
-        'Properly fitted footwear with a wide toe box, low heel, and metatarsal pad was assessed in two studies included in a 2019 systematic review. About 41 percent of people managed conservatively with these changes reported significant improvement. However, an RCT comparing footwear and padding with corticosteroid injection found the injection group had six times greater odds of success at six months.',
+        'Properly fitted footwear with a wide toe box, low heel, and metatarsal pad was assessed in two studies included in a 2019 systematic review. Combining those two studies, footwear and padding were successful in about 32 percent of people at a follow-up averaging four and a half months. However, an RCT comparing footwear and padding with corticosteroid injection found the injection group had six times greater odds of success at six months.',
         'The practical takeaway: shoe changes and pads are low-risk and worth trying first. They work for some people and not others. If they have not helped after four to six weeks, the next step is usually a clinician visit to discuss injections or further imaging.',
         "Placement matters. A pad too far forward, directly under the metatarsal head, can increase pressure rather than relieve it. Stick-on metatarsal pads from a pharmacy are cheap enough to try, but positioning takes some experimenting. A podiatrist can fit a custom orthosis if off-the-shelf pads are not working.",
       ],
@@ -128,7 +128,7 @@ export const MORTONS_EN: Guide = {
       h2: 'What the evidence does and does not tell us',
       paragraphs: [
         "The 2024 Cochrane review is the most rigorous summary available. It included six RCTs with 373 participants. Its conclusions: there is low-to-moderate-certainty evidence for most Morton's neuroma interventions, and no single treatment has strong, high-certainty support. After 20 years of additional research since the original 2004 Cochrane review, the authors reached the same basic conclusion.",
-        'That does not mean nothing works. Shoe changes and metatarsal pads help about 4 in 10 people. Ultrasound-guided corticosteroid injection probably improves pain compared with unguided injection. Neurectomy relieves pain for many people but carries the trade-off of permanent numbness. What is missing is a clear first-line treatment backed by strong evidence.',
+        'That does not mean nothing works. Shoe changes and metatarsal pads help about 3 in 10 people. Ultrasound-guided corticosteroid injection probably improves pain compared with unguided injection. Neurectomy relieves pain for many people but carries the trade-off of permanent numbness. What is missing is a clear first-line treatment backed by strong evidence.',
         "For exercise, the gap is even wider. No trial has tested exercise for Morton's neuroma. The exercises on this page are comfort and load-management measures, not neuroma-specific interventions. If exercise is part of your plan, it should sit alongside shoe changes and clinical advice, not replace them.",
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],
@@ -146,7 +146,7 @@ export const MORTONS_EN: Guide = {
     {
       q: "Do metatarsal pads work for Morton's neuroma?",
       cites: [CITE.matthewsSR],
-      a: 'Metatarsal pads placed just behind the metatarsal heads spread the bones apart and reduce compression on the nerve. About 41 percent of people treated conservatively with wider shoes and padding report significant improvement (Matthews 2019). The pad must sit behind the metatarsal heads, not under them. Placement too far forward can increase pain.',
+      a: 'Metatarsal pads placed just behind the metatarsal heads spread the bones apart and reduce compression on the nerve. About 32 percent of people treated conservatively with wider shoes and padding report significant improvement (Matthews 2019). The pad must sit behind the metatarsal heads, not under them. Placement too far forward can increase pain.',
     },
     {
       q: "Do exercises help Morton's neuroma?",
