@@ -8,7 +8,7 @@
 > place.
 
 Source: https://walkito.site
-Last updated: 2026-10-05
+Last updated: 2026-10-07
 
 Walkito provides exercise programming. It does not diagnose and does not
 treat any condition. Pain that follows an injury, comes with numbness,
@@ -92,7 +92,7 @@ Sources:
 
 ## Plantar fasciitis exercises and stretches for heel pain
 
-Language: English · https://walkito.site/plantar-fasciitis-exercises/ · published 2026-09-24 · updated 2026-10-03
+Language: English · https://walkito.site/plantar-fasciitis-exercises/ · published 2026-09-24 · updated 2026-10-07
 
 Your first steps out of bed are the worst part of the day. A sharp pull right at the heel, before you’ve even had coffee. It eases once you’re moving, then comes back after you sit for a while. That pattern has a name, plantar fasciitis, and the 2023 clinical guideline for heel pain calls it the most commonly recognized cause of heel pain under the foot.
 
@@ -200,13 +200,17 @@ Not exactly. People often say “heel spur” when they mean plantar fasciitis, 
 
 Stretch on most days and do the calf strength work on strength days. In Walkito you choose 3, 5 or 7 training days a week, and every week has three strength days, never two in a row. The stretches come in most sessions, with the first plantar fascia stretch before your foot touches the floor. In the trial Walkito follows, the heel raises were done every other day.
 
+#### What are the best stretches for heel pain?
+
+The plantar fascia stretch and the calf and soleus stretches are the ones the 2023 heel pain guideline grades A, its top grade. Cross the foot over your knee and pull the toes back for 30 seconds, the first time before you stand up in the morning. Then stretch the calf against a wall, back knee straight, then bent. Walkito starts at 2 holds of 30 seconds each. Technique: [plantar fascia stretch](https://walkito.site/exercises/plantar-fascia-stretch/).
+
 #### When should I see a doctor about heel pain?
 
 See a clinician first if the pain followed an injury or a fall, you can’t put weight on the foot, or it comes with numbness, tingling, swelling, warmth or fever. The same applies if it wakes you at night, is sharp or getting worse, or hurts when you squeeze the heel, which can mean a stress fracture. Walkito doesn’t diagnose.
 
 ## Flat feet exercises for fallen arches and arch pain
 
-Language: English · https://walkito.site/flat-feet-exercises/ · published 2026-09-24 · updated 2026-10-03
+Language: English · https://walkito.site/flat-feet-exercises/ · published 2026-09-24 · updated 2026-10-07
 
 By evening your feet feel tired, and the arches ache. When you stand, your feet seem to roll in and the arches sink toward the floor. People may tell you flat feet are just how you’re built and not worth a second thought. Wanting to do something about them makes sense, and there is real research on training the arch.
 
@@ -312,6 +316,10 @@ The evidence is weak and mixed, not a clear yes. The largest study on it, the [F
 #### What is the difference between fallen arches and flat feet?
 
 Usually none: “fallen arches” is a common name for flat feet. Most flat feet are lifelong and flexible, and the arch comes back when the foot is off the ground. Sometimes the phrase means something else: [adult-acquired flatfoot](https://doi.org/10.2174/1874325001711010714), often from a weakening posterior tibial tendon, the tendon that holds up the arch. It tends to come on in adulthood, and can bring pain or swelling on the inside of the ankle. If one arch has dropped as an adult, see a clinician before you exercise it.
+
+#### What exercises strengthen the arches of the feet?
+
+The short-foot exercise is the main one: you lift the arch by drawing the ball of the foot toward the heel, without curling the toes. Walkito starts it seated, at 3 sets of 8 with a 5-second hold, then standing, then on one leg. Towel scrunches, big toe lifts, toe spreads and band turn-ins train the small muscles around the arch. All of it is for flexible flat feet. Step by step: [short foot exercise](https://walkito.site/exercises/short-foot-exercise/).
 
 #### How often should I do flat feet exercises?
 
@@ -4217,7 +4225,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ## Ejercicios y estiramientos para la fascitis plantar y el dolor de talón
 
-Language: Spanish (Español) · https://walkito.site/es/ejercicios-fascitis-plantar/ · published 2026-09-24 · updated 2026-09-28
+Language: Spanish (Español) · https://walkito.site/es/ejercicios-fascitis-plantar/ · published 2026-09-24 · updated 2026-10-07
 
 Los primeros pasos al levantarte son lo peor del día. Un tirón agudo justo en el talón, antes incluso del café. Se calma cuando empiezas a moverte, y vuelve después de estar un rato sentado. Ese patrón tiene nombre, fascitis plantar, y la guía clínica de 2023 para el dolor de talón la llama la causa más reconocida del dolor de talón bajo el pie.
 
@@ -4240,6 +4248,14 @@ El orden importa. Mientras el dolor sea tu meta, Walkito mantiene suave el traba
 - **Elevación de talón sostenida** (3 series de 20 segundos, los dos pies): Sube en puntas con los dos pies y quédate quieto arriba. No te dejes caer. Sostener arriba carga el tendón sin rebote.
 - **Elevación de talones con toalla** (4 series de 10, cada pierna, con peso extra): Párate en un pie sobre un escalón, con una toalla enrollada bajo los dedos. Tarda tres segundos en subir, mantén dos arriba y tarda tres en bajar. En este nivel Walkito añade peso, por ejemplo una mochila. La toalla es lo que hace que este ejercicio trabaje la fascia plantar y no solo la pantorrilla.
 - **Automasaje plantar** (1 minuto): Siéntate y rueda la planta del pie despacio sobre una pelota de masaje, con presión firme. Si haces muecas de dolor, afloja. Rodar calma el tejido después de trabajar. ¿No tienes pelota? El masaje de planta usa pasadas firmes con el pulgar, del talón a los dedos.
+
+### ¿Se pueden hacer los ejercicios para la fascitis plantar en casa?
+
+Sí. Todos los ejercicios para la fascitis plantar de esta página se hacen en casa, sin máquinas ni gimnasio. Necesitas una pared para los estiramientos de pantorrilla y de sóleo, la orilla de la cama para el estiramiento plantar, una silla para las elevaciones de talón sentado, un escalón y una toalla enrollada para la elevación de talones con toalla, y una pelota de masaje para el automasaje plantar. Sin pelota, sirve el pulgar.
+
+Una sesión en casa dura 3, 5 o 10 minutos. El primer estiramiento plantar va en la orilla de la cama, antes de que el pie toque el piso, y el resto cabe en cualquier momento del día. Lo que cuenta es la constancia: la guía de 2023 respalda el estiramiento y el trabajo de fuerza hechos durante semanas, no una sesión larga de vez en cuando.
+
+Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
 ### ¿Qué ayuda con el dolor de talón por la mañana?
 
@@ -4320,6 +4336,14 @@ No exactamente. Mucha gente dice «espolón calcáneo» cuando habla de fascitis
 #### ¿Con qué frecuencia debo hacer ejercicios para la fascitis plantar?
 
 Estira casi todos los días y haz el trabajo de fuerza de pantorrilla en los días de fuerza. En Walkito eliges 3, 5 o 7 días de entrenamiento a la semana, y cada semana tiene tres días de fuerza, nunca dos seguidos. Los estiramientos van en casi todas las sesiones, con el primer estiramiento plantar antes de que el pie toque el piso. En el ensayo que sigue Walkito, las elevaciones de talón se hacían un día sí y un día no.
+
+#### ¿Qué es la talalgia y qué ejercicios ayudan?
+
+Talalgia significa simplemente dolor de talón, no es un diagnóstico concreto. La causa más reconocida del dolor bajo el talón es la fascitis plantar, y para ella la guía clínica de 2023 le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, A, y al trabajo de fuerza una B. Si el dolor está detrás del talón, puede ser el tendón de Aquiles, y eso es otra cosa.
+
+#### ¿Cuáles son los mejores estiramientos para la fascia plantar?
+
+El estiramiento plantar y los estiramientos de pantorrilla y de sóleo son los que la guía de 2023 califica con A. Para el plantar, cruza el pie sobre la rodilla y jala los dedos hacia atrás 30 segundos, el primero antes de pararte de la cama. Para la pantorrilla, contra una pared, con la rodilla de atrás estirada y después doblada. Walkito empieza con 2 series de 30 segundos.
 
 #### ¿Cuándo debo ir al médico por dolor de talón?
 
