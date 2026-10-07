@@ -11,7 +11,7 @@ import { ExerciseMedia } from '@/components/ExerciseMedia';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose, typeset } from '@/components/Prose';
-import { guidePath, relatedGuides, type Guide as GuideData } from '@/lib/guides';
+import { guidePath, languagesOf, relatedGuides, type Guide as GuideData } from '@/lib/guides';
 import { isTranslatedPage } from '@/lib/i18n';
 import type { GuideTable } from '@/lib/guides/types';
 import { CHROME, TRANSLATED } from '@/lib/i18n';
@@ -322,7 +322,11 @@ export function Guide({ guide }: { guide: GuideData }) {
         </nav>
       </Prose>
 
-      <Footer lang={guide.lang} page={isTranslatedPage(guide.page) ? guide.page : undefined} />
+      <Footer
+        lang={guide.lang}
+        page={isTranslatedPage(guide.page) ? guide.page : undefined}
+        languages={languagesOf(guide)}
+      />
     </>
   );
 }

@@ -1,9 +1,10 @@
 import Link from 'next/link';
 
 import { SocialLinks } from '@/components/SocialLinks';
-import { CHROME, EN_ONLY, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { CHROME, EN_ONLY, ES_ARTICLES, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { hasSpanish } from '@/lib/guides';
 import { playHref, storeHref } from '@/lib/site';
-import { GROUP_HEADING, NAV_GROUPS, NAV_LABEL, type GuideKey } from '@/lib/nav';
+import { GROUP_HEADING, NAV_GROUPS, NAV_LABEL, NAV_LABEL_ES, type GuideKey } from '@/lib/nav';
 
 /**
  * The footer, on every page in every language.
@@ -31,7 +32,9 @@ const FOOTER_APP: Record<Lang, { ios: string; android: string }> = {
 function hrefFor(key: GuideKey, lang: Lang): string | null {
   if (key === 'runners') return lang === 'en' ? '/heel-pain-runners/' : null;
   if (key in TRANSLATED) return TRANSLATED[key as TranslatedPage][lang];
-  return lang === 'en' ? EN_ONLY[key as EnglishPage] : null;
+  if (lang === 'en') return EN_ONLY[key as EnglishPage];
+  if (lang === 'es' && hasSpanish(key as EnglishPage)) return ES_ARTICLES[key as EnglishPage];
+  return null;
 }
 
 function Column({ heading, links }: { heading: string; links: { href: string; label: string }[] }) {
@@ -50,7 +53,18 @@ function Column({ heading, links }: { heading: string; links: { href: string; la
   );
 }
 
-export function Footer({ lang = 'en', page }: { lang?: Lang; page?: TranslatedPage }) {
+export function Footer({
+  lang = 'en',
+  page,
+  languages,
+}: {
+  lang?: Lang;
+  page?: TranslatedPage;
+  /** The page in each language it exists in, for pages outside `TRANSLATED`
+   * (an English article with a Spanish version). */
+  languages?: Partial<Record<Lang, string>> | null;
+}) {
+  const switcher: Partial<Record<Lang, string>> | null = page ? TRANSLATED[page] : (languages ?? null);
   const c = CHROME[lang];
   const h = GROUP_HEADING[lang];
   const group = (keys: readonly GuideKey[]) =>
@@ -58,7 +72,13 @@ export function Footer({ lang = 'en', page }: { lang?: Lang; page?: TranslatedPa
       const href = hrefFor(key, lang);
       if (!href) return [];
       const label =
-        key === 'heelPain' && lang !== 'en' ? c.navHeelPain : key === 'flatFeet' && lang !== 'en' ? c.navFlatFeet : NAV_LABEL[key];
+        key === 'heelPain' && lang !== 'en'
+          ? c.navHeelPain
+          : key === 'flatFeet' && lang !== 'en'
+            ? c.navFlatFeet
+            : lang === 'es'
+              ? NAV_LABEL_ES[key]
+              : NAV_LABEL[key];
       return label ? [{ href, label }] : [];
     });
 
@@ -100,26 +120,29 @@ export function Footer({ lang = 'en', page }: { lang?: Lang; page?: TranslatedPa
             ]}
           />
           <Column heading={h.pain} links={group(NAV_GROUPS.pain)} />
-          {lang === 'en' && (
+          {lang !== 'ru' && (
             <div className="footer-col footer-stack">
               <Column heading={h.work} links={group(NAV_GROUPS.work)} />
               <Column heading={h.compare} links={group(NAV_GROUPS.compare)} />
             </div>
           )}
+          {/* Spanish has no library index page, so its exercise pages are
+              listed here; English links to /exercises/ instead. */}
+          {lang === 'es' && <Column heading={h.library} links={group(NAV_GROUPS.library)} />}
           <Column heading={h.walkito} links={walkito} />
         </nav>
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} Walkito</p>
           <SocialLinks lang={lang} />
-          {page && (
+          {switcher && (
             <nav aria-label={c.language} className="langs">
-              {LANGS.map((l) =>
+              {LANGS.filter((l) => switcher[l]).map((l) =>
                 l === lang ? (
                   <span key={l} aria-current="page">
                     {LANG_NAMES[l]}
                   </span>
                 ) : (
-                  <a key={l} href={TRANSLATED[page][l]} hrefLang={l} lang={l}>
+                  <a key={l} href={switcher[l]} hrefLang={l} lang={l}>
                     {LANG_NAMES[l]}
                   </a>
                 ),

@@ -187,6 +187,57 @@ export const EN_ONLY = {
 
 export type EnglishPage = keyof typeof EN_ONLY;
 
+/**
+ * Spanish versions of the English-only articles: the same page, in Spanish,
+ * without a Russian one (yet). Search Console shows Spanish as the biggest
+ * demand on the site, so Spanish gets the whole library first.
+ *
+ * A page here gets hreflang en <-> es (plus x-default -> en) in its head and
+ * in the sitemap, and a two-language switcher in the footer. A page claims a
+ * Spanish version only once `ARTICLES_ES` (`lib/guides/articles-es.ts`) has it.
+ */
+export const ES_ARTICLES: Record<EnglishPage, string> = {
+  standing: '/es/dolor-de-pies-por-estar-de-pie/',
+  calfRaises: '/es/elevaciones-de-talon-fascitis-plantar/',
+  achilles: '/es/ejercicios-tendinitis-aquiles/',
+  shinSplints: '/es/ejercicios-periostitis-tibial/',
+  morningHeelPain: '/es/dolor-de-talon-al-levantarse/',
+  pfDuration: '/es/cuanto-dura-la-fascitis-plantar/',
+  ballOfFoot: '/es/metatarsalgia-dolor-planta-del-pie/',
+  nurses: '/es/dolor-de-pies-enfermeras/',
+  standingDesk: '/es/escritorio-de-pie-dolor-de-pies/',
+  bestApp: '/es/mejor-app-fascitis-plantar/',
+  vsExakt: '/es/walkito-vs-exakt-health/',
+  exPlantarFasciaStretch: '/es/ejercicios/estiramiento-fascia-plantar/',
+  exCalfStretch: '/es/ejercicios/estiramiento-de-pantorrilla/',
+  exSoleusStretch: '/es/ejercicios/estiramiento-de-soleo/',
+  exFootRoll: '/es/ejercicios/masaje-plantar-con-pelota/',
+  exAnkleRocks: '/es/ejercicios/movilidad-de-tobillo/',
+  exTowelHeelRaise: '/es/ejercicios/elevacion-de-talones-con-toalla/',
+  exCalfRaises: '/es/ejercicios/elevaciones-de-talon/',
+  exEccentricHeelDrops: '/es/ejercicios/excentricos-de-talon/',
+  exTibialisRaises: '/es/ejercicios/elevaciones-de-tibial-anterior/',
+  exSingleLegBalance: '/es/ejercicios/equilibrio-a-una-pierna/',
+  exShortFoot: '/es/ejercicios/pie-corto/',
+  exTowelScrunch: '/es/ejercicios/recoger-toalla-con-los-dedos/',
+  exToeSpread: '/es/ejercicios/separar-los-dedos-del-pie/',
+  exBigToeLift: '/es/ejercicios/levantar-el-dedo-gordo/',
+  exBandInversion: '/es/ejercicios/inversion-de-tobillo-con-banda/',
+  exHipAbduction: '/es/ejercicios/abduccion-de-cadera/',
+  calfRaiseTest: '/es/test-de-elevacion-de-talon/',
+  hubPlantarFasciitis: '/es/fascitis-plantar/',
+  hubFlatFeet: '/es/pie-plano/',
+};
+
+/** hreflang for an English article that also exists in Spanish. */
+export function alternatesEnEs(page: EnglishPage, lang: 'en' | 'es') {
+  const paths = { en: EN_ONLY[page], es: ES_ARTICLES[page] };
+  return {
+    canonical: paths[lang],
+    languages: { en: paths.en, es: paths.es, 'x-default': paths.en },
+  };
+}
+
 export function isTranslatedPage(page: TranslatedPage | EnglishPage): page is TranslatedPage {
   return page in TRANSLATED;
 }

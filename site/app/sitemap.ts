@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
-import { ARTICLES_EN, GUIDES } from '@/lib/guides';
-import { EN_ONLY, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { ARTICLES_EN, ARTICLES_ES, GUIDES } from '@/lib/guides';
+import { EN_ONLY, ES_ARTICLES, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
 import { PAGE_UPDATED, SITE_URL } from '@/lib/site';
 
 /**
@@ -55,6 +55,24 @@ const single = (
   priority: number,
 ): MetadataRoute.Sitemap[number] => ({ url: `${SITE_URL}${path}`, lastModified: updated, changeFrequency, priority });
 
+/**
+ * An English article, plus its Spanish version when there is one, each
+ * carrying en/es/x-default alternates like the page head does.
+ */
+function enEs(page: EnglishPage, enUpdated: string): MetadataRoute.Sitemap {
+  const es = ARTICLES_ES[page];
+  if (!es) return [single(EN_ONLY[page], enUpdated, 'monthly', 0.9)];
+  const languages = {
+    en: `${SITE_URL}${EN_ONLY[page]}`,
+    es: `${SITE_URL}${ES_ARTICLES[page]}`,
+    'x-default': `${SITE_URL}${EN_ONLY[page]}`,
+  };
+  return [
+    { url: languages.en, lastModified: enUpdated, changeFrequency: 'monthly', priority: 0.9, alternates: { languages } },
+    { url: languages.es, lastModified: es.updated, changeFrequency: 'monthly', priority: 0.8, alternates: { languages } },
+  ];
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...translated('home', () => PAGE_UPDATED.home, 'weekly', 1),
@@ -63,7 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...translated('about', () => PAGE_UPDATED.about, 'monthly', 0.6),
     // English only for now, so no alternates.
     single('/heel-pain-runners/', PAGE_UPDATED.runners, 'monthly', 0.9),
-    ...Object.values(ARTICLES_EN).map((g) => single(EN_ONLY[g.page as EnglishPage], g.updated, 'monthly', 0.9)),
+    ...Object.values(ARTICLES_EN).flatMap((g) => enEs(g.page as EnglishPage, g.updated)),
     single('/exercises/', '2026-10-05', 'monthly', 0.8),
     single('/printable-exercise-sheets/', '2026-10-05', 'monthly', 0.7),
     single('/program/', PAGE_UPDATED.program, 'monthly', 0.9),

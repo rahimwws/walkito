@@ -69,11 +69,12 @@ async function load(path) {
 }
 
 const { SITE_URL, SITE_NAME, PROGRAM, PAGE_UPDATED, SUPPORT_EMAIL } = await load('lib/site.ts');
-const { TRANSLATED, EN_ONLY } = await load('lib/i18n.ts');
-const { GUIDES, ARTICLES_EN } = await load('lib/guides/index.ts');
+const { TRANSLATED, EN_ONLY, ES_ARTICLES } = await load('lib/i18n.ts');
+const { GUIDES, ARTICLES_EN, ARTICLES_ES } = await load('lib/guides/index.ts');
 const ARTICLES = Object.values(ARTICLES_EN);
 /** A guide's path, translated or English-only. */
-const pathOf = (g) => (TRANSLATED[g.page] ? TRANSLATED[g.page][g.lang] : EN_ONLY[g.page]);
+const pathOf = (g) =>
+  TRANSLATED[g.page] ? TRANSLATED[g.page][g.lang] : g.lang === 'es' ? ES_ARTICLES[g.page] : EN_ONLY[g.page];
 const { ABOUT } = await load('lib/about/index.ts');
 const { FAQ } = await load('lib/faq.ts');
 const { CITATIONS } = await load('lib/citations.ts');
@@ -178,6 +179,7 @@ const otherLanguage = (lang) => {
     `- [${home}](${url(TRANSLATED.home[lang])})`,
     guideLine(heel),
     guideLine(flat),
+    ...(lang === 'es' ? Object.values(ARTICLES_ES).map(guideLine) : []),
     `- [${aboutLabel}](${url(TRANSLATED.about[lang])})`,
   ].join('\n');
 };
