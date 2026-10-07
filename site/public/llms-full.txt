@@ -4065,9 +4065,9 @@ Language: English · https://walkito.site/plantar-fasciitis-vs-heel-spur/ · pub
 A heel spur is a bony growth on the bottom of the heel bone. Plantar fasciitis is irritation of the plantar fascia, the thick band of tissue that runs from that bone to your toes. They often show up together, but they are not the same condition, and the spur is usually not what hurts. Many people with spurs on X-ray have no pain at all.
 
 - In a study of 216 older adults aged 62 to 94, 55% had at least one plantar calcaneal spur on X-ray, and spur presence was related to obesity and osteoarthritis but not to foot posture (Menz and colleagues, 2008). This is an older-adult sample, not a general-population figure.
-- In a cross-sectional study of 560 people aged 50 and over with foot pain, 35% had a plantar calcaneal spur, but spurs were not independently associated with plantar heel pain once plantar fascia thickening was accounted for (Menz and colleagues, 2019).
+- In a study of 530 people aged 50 and over with foot pain, heel spurs and a thickened plantar fascia usually showed up together, and a spur on its own was rare (6% of feet). Heel pain was linked to having both findings together (Menz and colleagues, 2019).
 - The 2023 heel pain guideline focuses on plantar fasciitis as the most common cause of plantar heel pain and notes that imaging is usually not needed when the clinical exam already points to plantar fasciitis (Koc and colleagues, 2023).
-- The Menz 2008 study itself notes that earlier research in younger-to-middle-aged adults had put heel spur prevalence at 11 to 16%, well below the 55% found in their own older sample (Menz and colleagues, 2008).
+- The Menz 2008 study itself notes that earlier research in the general population had put heel spur prevalence at 11 to 16%, well below the 55% found in their own older sample (Menz and colleagues, 2008).
 - The exercises that help plantar fasciitis pain also address the soft tissue around a heel spur. Exercise does not dissolve a spur, but the spur is rarely what needs attention.
 
 ### Is a heel spur the same as plantar fasciitis?
@@ -4085,11 +4085,11 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Most heel spurs do not cause pain. The research consistently shows that spurs are found in people with no heel symptoms, and that removing the spur does not reliably stop the pain.
 
-In a cross-sectional study of 560 people aged 50 and over who reported foot pain, 35% had a plantar calcaneal spur in at least one foot on X-ray, and 60% had plantar fascia thickening on ultrasound. When both findings were analysed together, plantar fascia thickening was significantly associated with plantar heel pain, but the spur was not independently associated with it (Menz and colleagues, 2019). In other words, once you account for the soft tissue, the bone is not adding to the picture.
+In a study of 530 people aged 50 and over who reported foot pain, X-rays found a heel spur in 26.5% of feet and ultrasound found a thickened plantar fascia in 47.3% of feet. The two usually came together, and a spur on its own was rare (6% of feet). People with heel pain were about twice as likely to have both findings together (Menz and colleagues, 2019). In other words, the spur rarely shows up without the soft tissue change that goes with it.
 
 Separately, in a study of 216 older adults aged 62 to 94, 55% had at least one plantar calcaneal spur on X-ray. Spurs were related to obesity, osteoarthritis and a history of heel pain, but not to foot posture. The authors suggested that spurs may be an adaptive response to vertical compression of the heel, not a result of the plantar fascia pulling on the bone (Menz and colleagues, 2008).
 
-The Menz 2008 study notes that earlier research in younger-to-middle-aged adults had reported heel spur prevalence of 11 to 16%, well below the 55% the authors found in their own sample of older adults. In that same older-adult sample, 61% of people with a spur had no current or past heel pain (Menz and colleagues, 2008). Spurs do not reliably predict who ends up with pain, in older or younger groups.
+The Menz 2008 study notes that earlier research in the general population had reported heel spur prevalence of 11 to 16%, well below the 55% the authors found in their own sample of older adults. In that same older-adult sample, about 6 in 10 people with a spur had never had heel pain, although heel pain was still more common in people with spurs (40%) than without (12%) (Menz and colleagues, 2008). A spur raises the odds, but it does not decide who ends up with pain.
 
 Source: Menz HB, Thomas MJ, Marshall M, et al. Coexistence of plantar calcaneal spurs and plantar fascial thickening in individuals with plantar heel pain. Rheumatology (Oxford, England). 2019;58(2):237–245.
 Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in older people: longitudinal traction or vertical compression? Journal of Foot and Ankle Research. 2008;1(1):7.
@@ -4098,7 +4098,7 @@ Source: Menz HB, Zammit GV, Landorf KB, Munteanu SE. Plantar calcaneal spurs in 
 
 Heel spurs are common. Prevalence depends on the age group and the method used to look for them.
 
-The Menz 2008 study of older adults cites earlier research reporting heel spur prevalence of 11 to 16% in younger-to-middle-aged adults, a range well below the 55% the authors found in their own sample of 216 people aged 62 to 94. A separate MRI study of 77 asymptomatic volunteers (mean age 48, range 23 to 83) found a calcaneal spur in 15 of them, 19% (Ehrmann and colleagues, 2014).
+The Menz 2008 study of older adults cites earlier research reporting heel spur prevalence of 11 to 16% in the general population, a range well below the 55% the authors found in their own sample of 216 people aged 62 to 94. A separate MRI study of 77 asymptomatic volunteers (mean age 48, range 23 to 83) found a calcaneal spur in 15 of them, 19% (Ehrmann and colleagues, 2014).
 
 The pattern is consistent: a large proportion of people with spurs have no symptoms, and a spur on its own does not predict whether someone will have heel pain. This is why the 2023 heel pain guideline does not list a heel spur as a reason to change the exercise approach.
 
@@ -4184,7 +4184,7 @@ No. A heel spur is a bony growth on the underside of the heel bone. Plantar fasc
 
 #### Do heel spurs cause pain?
 
-Most heel spurs do not cause pain. In a cross-sectional study of 560 people aged 50 and over with foot pain, plantar calcaneal spurs were not independently associated with plantar heel pain once plantar fascia thickening was accounted for (Menz and colleagues, 2019). In a separate study of 216 older adults, 61% of those with a spur had no current or past heel pain (Menz and colleagues, 2008).
+Most heel spurs do not cause pain. In a study of 530 people aged 50 and over with foot pain, a heel spur on its own was rare, and heel pain was linked to a spur together with a thickened plantar fascia (Menz and colleagues, 2019). In a separate study of 216 older adults, about 6 in 10 of those with a spur had no current or past heel pain (Menz and colleagues, 2008).
 
 #### Can you have plantar fasciitis without a heel spur?
 
@@ -4200,7 +4200,7 @@ The 2023 guideline says imaging is usually not needed when the clinical exam poi
 
 #### How common are heel spurs?
 
-Prevalence depends on age. Earlier research cited in the Menz 2008 study reported 11 to 16% of younger-to-middle-aged adults with a plantar calcaneal spur on X-ray without symptoms. In a study of 216 people aged 62 to 94, 55% had at least one plantar spur (Menz and colleagues, 2008). Spurs become more common with age, higher BMI and osteoarthritis.
+Prevalence depends on age. Earlier research cited in the Menz 2008 study reported 11 to 16% of the general population with a plantar calcaneal spur on X-ray. In a study of 216 people aged 62 to 94, 55% had at least one plantar spur (Menz and colleagues, 2008). Spurs become more common with age, higher BMI and osteoarthritis.
 
 #### When does a heel spur need surgery?
 
@@ -4220,7 +4220,7 @@ Exercise does not dissolve a heel spur. The spur is bone, and bone does not shri
 
 ### Why do exercises help a heel spur?
 
-The heel spur is a bony growth on the underside of the heel bone. In a cross-sectional study of 560 people with foot pain, plantar calcaneal spurs were not independently associated with plantar heel pain once plantar fascia thickening was accounted for (Menz and colleagues, 2019). The pain comes from the soft tissue, and that is what exercise can reach.
+The heel spur is a bony growth on the underside of the heel bone. In a study of 530 people aged 50 and over with foot pain, a heel spur on its own was rare (6% of feet), and heel pain was linked to a spur together with a thickened plantar fascia, the band of tissue under the foot (Menz and colleagues, 2019). The pain comes from the soft tissue, and that is what exercise can reach.
 
 Stretching the plantar fascia and the calf reduces the tension on the heel attachment. Strengthening the calf builds the capacity of the chain that absorbs load every time the heel strikes the ground. Together, they lower the daily stress on the tissue around the spur.
 
@@ -4299,7 +4299,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 Exercise, stretching and dietary changes do not dissolve a heel spur. The spur is calcified bone. It stays on the X-ray whether you stretch or not.
 
-But "getting rid of the spur" is rarely the right goal. In the 2019 coexistence study, the spur was not independently associated with pain once the fascia was accounted for. The pain comes from the soft tissue. The exercises on this page target the soft tissue. If the pain settles, the spur is not a problem that needs solving.
+But "getting rid of the spur" is rarely the right goal. In the 2019 study, the spur almost always came with a thickened plantar fascia, and the soft tissue is the part exercise can change. The pain comes from the soft tissue. The exercises on this page target the soft tissue. If the pain settles, the spur is not a problem that needs solving.
 
 If someone has promised you a supplement, cream or device that dissolves heel spurs, be skeptical. No published evidence supports that claim. The guideline-recommended approach is stretching, calf strengthening and load management.
 
@@ -4353,7 +4353,7 @@ Language: English · https://walkito.site/heel-pain-after-walking/ · published 
 Your heel felt fine while you were walking, but now that you have stopped it aches. Or it started partway through a long walk and got worse with each step. Both patterns point to the same thing: the tissues under your heel were loaded past what they could handle that day. The most common cause is plantar fasciitis, and the most useful response is stretching and gradual calf strengthening.
 
 - The 2023 heel pain guideline describes plantar fasciitis pain as "most noticeable with weight bearing first thing in the morning or after a period of rest," but it also lists pain that worsens with prolonged weight-bearing activity as a key feature (Koc and colleagues, 2023).
-- In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion (how far the foot bends up toward the shin) was the strongest independent risk factor, followed by standing for most of the working day (Riddle and colleagues, 2003).
+- In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion (how far the foot bends up toward the shin) was the strongest independent risk factor, ahead of a body mass index over 30 and standing for most of the working day (Riddle and colleagues, 2003).
 - The guideline gives plantar fascia and calf stretching its top grade, **A**, and strength training a **B** (Koc and colleagues, 2023).
 - About 90% of people with plantar fasciitis improve with non-surgical care such as stretching, calf work and load management (Latt and colleagues, 2020).
 - Heel pain after walking that builds with every session and does not ease with rest can point to a stress fracture rather than plantar fasciitis. Squeezing the sides of the heel is one clinical sign.

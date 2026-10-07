@@ -27,7 +27,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
   ],
   takeaways: [
     'The 2023 heel pain guideline describes plantar fasciitis pain as "most noticeable with weight bearing first thing in the morning or after a period of rest," but it also lists pain that worsens with prolonged weight-bearing activity as a key feature (Koc and colleagues, 2023).',
-    'In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion (how far the foot bends up toward the shin) was the strongest independent risk factor, followed by standing for most of the working day (Riddle and colleagues, 2003).',
+    'In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion (how far the foot bends up toward the shin) was the strongest independent risk factor, ahead of a body mass index over 30 and standing for most of the working day (Riddle and colleagues, 2003).',
     'The guideline gives plantar fascia and calf stretching its top grade, **A**, and strength training a **B** (Koc and colleagues, 2023).',
     'About 90% of people with plantar fasciitis improve with non-surgical care such as stretching, calf work and load management (Latt and colleagues, 2020).',
     'Heel pain after walking that builds with every session and does not ease with rest can point to a stress fracture rather than plantar fasciitis. Squeezing the sides of the heel is one clinical sign.',

@@ -52,7 +52,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
     {
       h2: 'Why do exercises help a heel spur?',
       paragraphs: [
-        'The heel spur is a bony growth on the underside of the heel bone. In a cross-sectional study of 560 people with foot pain, plantar calcaneal spurs were not independently associated with plantar heel pain once plantar fascia thickening was accounted for (Menz and colleagues, 2019). The pain comes from the soft tissue, and that is what exercise can reach.',
+        'The heel spur is a bony growth on the underside of the heel bone. In a study of 530 people aged 50 and over with foot pain, a heel spur on its own was rare (6% of feet), and heel pain was linked to a spur together with a thickened plantar fascia, the band of tissue under the foot (Menz and colleagues, 2019). The pain comes from the soft tissue, and that is what exercise can reach.',
         'Stretching the plantar fascia and the calf reduces the tension on the heel attachment. Strengthening the calf builds the capacity of the chain that absorbs load every time the heel strikes the ground. Together, they lower the daily stress on the tissue around the spur.',
         'No exercise program will make a spur disappear on X-ray. But most people with a heel spur do not need the spur to disappear. They need the pain to settle, and that comes from the fascia and the calf getting stronger and more flexible.',
       ],
@@ -250,7 +250,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       h2: 'Can you get rid of a heel spur naturally?',
       paragraphs: [
         'Exercise, stretching and dietary changes do not dissolve a heel spur. The spur is calcified bone. It stays on the X-ray whether you stretch or not.',
-        'But "getting rid of the spur" is rarely the right goal. In the 2019 coexistence study, the spur was not independently associated with pain once the fascia was accounted for. The pain comes from the soft tissue. The exercises on this page target the soft tissue. If the pain settles, the spur is not a problem that needs solving.',
+        'But "getting rid of the spur" is rarely the right goal. In the 2019 study, the spur almost always came with a thickened plantar fascia, and the soft tissue is the part exercise can change. The pain comes from the soft tissue. The exercises on this page target the soft tissue. If the pain settles, the spur is not a problem that needs solving.',
         'If someone has promised you a supplement, cream or device that dissolves heel spurs, be skeptical. No published evidence supports that claim. The guideline-recommended approach is stretching, calf strengthening and load management.',
       ],
       cites: [CITE.menzCoexistence, CITE.guideline],
