@@ -51,7 +51,10 @@ function json(body: unknown, status = 200): Response {
 // ── Validation ──────────────────────────────────────────────────────────────
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-const MAX_ATTEMPTS_PER_EMAIL_PER_DAY = 5;
+/** Confirmation emails per address: at most this many a day… */
+const MAX_CONFIRMS_PER_DAY = 3;
+/** …and none sooner than this after the last. */
+const CONFIRM_COOLDOWN_MS = 60_000;
 
 function validEmail(raw: string): string | null {
   const trimmed = raw.trim().toLowerCase();
@@ -194,18 +197,6 @@ async function handlePost(req: Request): Promise<Response> {
   const source = validSource(body.source);
   const page = typeof body.page === 'string' ? body.page.slice(0, 200) : '/';
 
-  // Rate limit: max N signups per email per day.
-  const today = new Date().toISOString().slice(0, 10);
-  const { count } = await db
-    .from('site_leads')
-    .select('id', { count: 'exact', head: true })
-    .eq('email', email)
-    .gte('created_at', `${today}T00:00:00Z`);
-  // count is null on error; treat as 0.
-  if ((count ?? 0) >= MAX_ATTEMPTS_PER_EMAIL_PER_DAY) {
-    return json({ ok: false, error: 'too many attempts' }, 429);
-  }
-
   // Generate confirm token.
   const token = randomToken();
   const tokenHash = await hashToken(token);
@@ -238,6 +229,39 @@ async function handlePost(req: Request): Promise<Response> {
     return json({ ok: true, already: true });
   }
 
+  // Rate limit, per address. There is one row per address (the upsert), so
+  // counting rows never limited anything: every POST re-sent the confirmation,
+  // and anyone could fill a stranger's inbox through this public endpoint. Each
+  // confirmation is logged instead, and the log is what is counted: one a
+  // minute, three a day.
+  const dayAgo = new Date(Date.now() - 86_400_000).toISOString();
+  const { data: recent } = await db
+    .from('site_lead_email_log')
+    .select('sent_at')
+    .eq('lead_id', lead.id)
+    .eq('email_key', 'site_confirm')
+    .gte('sent_at', dayAgo)
+    .order('sent_at', { ascending: false });
+  const sends = recent ?? [];
+  if (sends.length >= MAX_CONFIRMS_PER_DAY) {
+    return json({ ok: false, error: 'too many attempts' }, 429);
+  }
+  if (sends.length > 0 && Date.now() - new Date(sends[0].sent_at).getTime() < CONFIRM_COOLDOWN_MS) {
+    // The last one is still on its way; say yes without sending another.
+    return json({ ok: true });
+  }
+  const logged = await db
+    .from('site_lead_email_log')
+    .insert({
+      lead_id: lead.id,
+      email_key: 'site_confirm',
+      dedupe_key: `site_confirm:${Date.now()}`,
+      locale,
+      status: 'sending',
+    })
+    .select('id')
+    .single();
+
   // Send the confirmation email.
   const confirmUrl = `${SUPABASE_URL}/functions/v1/site-subscribe?confirm=${token}`;
   const content = confirmEmail(locale);
@@ -252,6 +276,13 @@ async function handlePost(req: Request): Promise<Response> {
     { name: 'email_key', value: 'site_confirm' },
     { name: 'locale', value: locale },
   ]);
+
+  if (logged.data != null) {
+    await db
+      .from('site_lead_email_log')
+      .update(result.ok ? { status: 'sent', resend_id: result.id } : { status: 'failed', error: result.error })
+      .eq('id', logged.data.id);
+  }
 
   if (!result.ok) {
     console.error('[site-subscribe] confirm email failed', result.error);
