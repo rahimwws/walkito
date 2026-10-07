@@ -12,7 +12,7 @@ import { SITE_NAME, SITE_URL } from '@/lib/site';
 const PATH = '/es/ejercicios/';
 const TITLE = 'Biblioteca de ejercicios para pies y pantorrillas';
 const DESCRIPTION =
-  'Cada ejercicio del plan de Walkito en su propia página: cómo hacerlo, series y repeticiones, errores comunes, versiones más fáciles y más difíciles, y qué dice la investigación.';
+  'Cada ejercicio del plan de Walkito: cómo hacerlo, series y repeticiones, errores comunes, versiones más fáciles y difíciles, y qué dice la investigación.';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -130,7 +130,7 @@ export default function ExerciseLibraryEs() {
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="exercise-library-es" lang="es" />
       </Prose>
-      <Footer lang="es" languages={{ en: '/exercises/', es: PATH }} />
+      <Footer lang="es" languages={{ en: '/exercises/', es: PATH, ru: '/ru/uprazhneniya/' }} />
     </>
   );
 }

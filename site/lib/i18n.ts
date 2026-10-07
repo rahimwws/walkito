@@ -203,13 +203,10 @@ export const EN_ONLY = {
 export type EnglishPage = keyof typeof EN_ONLY;
 
 /**
- * Spanish versions of the English-only articles: the same page, in Spanish,
- * without a Russian one (yet). Search Console shows Spanish as the biggest
- * demand on the site, so Spanish gets the whole library first.
- *
- * A page here gets hreflang en <-> es (plus x-default -> en) in its head and
- * in the sitemap, and a two-language switcher in the footer. A page claims a
- * Spanish version only once `ARTICLES_ES` (`lib/guides/articles-es.ts`) has it.
+ * Spanish versions of the English-only articles. A page here gets hreflang
+ * en <-> es (plus x-default -> en, and ru when ARTICLES_RU has it too) in its
+ * head and in the sitemap, and a language switcher in the footer. A page claims
+ * a Spanish version only once `ARTICLES_ES` (`lib/guides/articles-es.ts`) has it.
  */
 export const ES_ARTICLES: Record<EnglishPage, string> = {
   standing: '/es/dolor-de-pies-por-estar-de-pie/',
@@ -259,13 +256,74 @@ export const ES_ARTICLES: Record<EnglishPage, string> = {
   hammerToe: '/es/ejercicios-dedo-en-martillo/',
 };
 
-/** hreflang for an English article that also exists in Spanish. */
-export function alternatesEnEs(page: EnglishPage, lang: 'en' | 'es') {
-  const paths = { en: EN_ONLY[page], es: ES_ARTICLES[page] };
-  return {
-    canonical: paths[lang],
-    languages: { en: paths.en, es: paths.es, 'x-default': paths.en },
-  };
+/**
+ * Russian versions of the English-only articles: the same page, in Russian.
+ * Mirrors ES_ARTICLES. A page claims a Russian version only once
+ * `ARTICLES_RU` (`lib/guides/articles-ru.ts`) has it.
+ */
+export const RU_ARTICLES: Record<EnglishPage, string> = {
+  standing: '/ru/bolyat-nogi-ot-stoyaniya/',
+  calfRaises: '/ru/podemy-na-noski-pri-plantarnom-fastsiite/',
+  achilles: '/ru/tendinit-akhillova-sukhozhiliya-uprazhneniya/',
+  shinSplints: '/ru/periostit-goleni-uprazhneniya/',
+  morningHeelPain: '/ru/bol-v-pyatke-utrom/',
+  pfDuration: '/ru/skolko-dlitsya-plantarnyy-fastsiit/',
+  ballOfFoot: '/ru/metatarzalgiya/',
+  nurses: '/ru/bol-v-stopakh-u-medsester/',
+  standingDesk: '/ru/stol-dlya-raboty-stoya-bol-v-stopakh/',
+  bestApp: '/ru/prilozhenie-pri-plantarnom-fastsiite/',
+  vsExakt: '/ru/walkito-vs-exakt-health/',
+  exPlantarFasciaStretch: '/ru/uprazhneniya/rastyazhka-plantarnoy-fastsii/',
+  exCalfStretch: '/ru/uprazhneniya/rastyazhka-ikronozhnoy-myshtsy/',
+  exSoleusStretch: '/ru/uprazhneniya/rastyazhka-kambalovidnoy-myshtsy/',
+  exFootRoll: '/ru/uprazhneniya/massazh-stopy-myachom/',
+  exAnkleRocks: '/ru/uprazhneniya/mobilnost-golenostopa/',
+  exTowelHeelRaise: '/ru/uprazhneniya/podemy-na-noski-s-polotentsem/',
+  exCalfRaises: '/ru/uprazhneniya/podemy-na-noski/',
+  exEccentricHeelDrops: '/ru/uprazhneniya/ekstsentricheskie-opuskaniya-pyatok/',
+  exTibialisRaises: '/ru/uprazhneniya/podemy-noskov-u-steny/',
+  exSingleLegBalance: '/ru/uprazhneniya/ravnovesie-na-odnoy-noge/',
+  exShortFoot: '/ru/uprazhneniya/korotkaya-stopa/',
+  exTowelScrunch: '/ru/uprazhneniya/sobiranie-polotentsa-paltsami/',
+  exToeSpread: '/ru/uprazhneniya/razvedenie-paltsev-stopy/',
+  exBigToeLift: '/ru/uprazhneniya/podem-bolshogo-paltsa/',
+  exBandInversion: '/ru/uprazhneniya/inversiya-stopy-s-rezinkoy/',
+  exHipAbduction: '/ru/uprazhneniya/otvedenie-bedra/',
+  calfRaiseTest: '/ru/test-podema-na-noski/',
+  hubPlantarFasciitis: '/ru/plantarnyy-fastsiit/',
+  hubFlatFeet: '/ru/ploskostopie/',
+  pfVsHeelSpur: '/ru/plantarnyy-fastsiit-ili-pyatochnaya-shpora/',
+  heelSpurExercises: '/ru/pyatochnaya-shpora-uprazhneniya/',
+  heelPainAfterWalking: '/ru/bol-v-pyatke-posle-khodby/',
+  heelPainAtNight: '/ru/bol-v-pyatke-nochyu/',
+  heelFatPad: '/ru/sindrom-zhirovoy-podushki-pyatki/',
+  haglunds: '/ru/deformatsiya-khaglunda/',
+  severs: '/ru/bolezn-severa/',
+  archPain: '/ru/bol-v-svode-stopy/',
+  highArches: '/ru/polaya-stopa-uprazhneniya/',
+  pttd: '/ru/disfunktsiya-zadnego-bolshebertsovogo-sukhozhiliya/',
+  topOfFoot: '/ru/bol-v-podyome-stopy/',
+  mortons: '/ru/nevroma-mortona/',
+  sesamoiditis: '/ru/sesamoidit/',
+  bunions: '/ru/kostochka-na-noge-uprazhneniya/',
+  hammerToe: '/ru/molotkoobraznye-paltsy-uprazhneniya/',
+};
+
+/**
+ * hreflang for an English article that exists in Spanish and/or Russian.
+ * Only includes a language when its article barrel has the page.
+ */
+export function alternatesArticle(
+  page: EnglishPage,
+  lang: 'en' | 'es' | 'ru',
+  hasEs: boolean,
+  hasRu: boolean,
+) {
+  const languages: Record<string, string> = { en: EN_ONLY[page], 'x-default': EN_ONLY[page] };
+  if (hasEs) languages.es = ES_ARTICLES[page];
+  if (hasRu) languages.ru = RU_ARTICLES[page];
+  const canonical = lang === 'es' ? ES_ARTICLES[page] : lang === 'ru' ? RU_ARTICLES[page] : EN_ONLY[page];
+  return { canonical, languages };
 }
 
 export function isTranslatedPage(page: TranslatedPage | EnglishPage): page is TranslatedPage {
@@ -273,27 +331,37 @@ export function isTranslatedPage(page: TranslatedPage | EnglishPage): page is Tr
 }
 
 /**
- * Custom pages (not Guide objects) that exist in English and Spanish only.
+ * Custom pages (not Guide objects) that exist in English, Spanish and Russian.
  * These are hand-built pages with their own components, not generated from
- * `lib/guides/articles-es.ts`. hreflang and sitemap entries read this table.
+ * articles barrels. hreflang and sitemap entries read this table.
  */
-export const CUSTOM_EN_ES = {
-  exercises: { en: '/exercises/', es: '/es/ejercicios/' },
-  faq: { en: '/faq/', es: '/es/preguntas-frecuentes/' },
-  runners: { en: '/heel-pain-runners/', es: '/es/dolor-de-talon-en-corredores/' },
-  printables: { en: '/printable-exercise-sheets/', es: '/es/hojas-de-ejercicios-imprimibles/' },
-  program: { en: '/program/', es: '/es/programa/' },
-  science: { en: '/science/', es: '/es/evidencia/' },
+export const CUSTOM_PAGES = {
+  exercises: { en: '/exercises/', es: '/es/ejercicios/', ru: '/ru/uprazhneniya/' },
+  faq: { en: '/faq/', es: '/es/preguntas-frecuentes/', ru: '/ru/voprosy/' },
+  runners: { en: '/heel-pain-runners/', es: '/es/dolor-de-talon-en-corredores/', ru: '/ru/bol-v-pyatke-u-begunov/' },
+  printables: { en: '/printable-exercise-sheets/', es: '/es/hojas-de-ejercicios-imprimibles/', ru: '/ru/uprazhneniya-dlya-pechati/' },
+  program: { en: '/program/', es: '/es/programa/', ru: '/ru/programma/' },
+  science: { en: '/science/', es: '/es/evidencia/', ru: '/ru/issledovaniya/' },
 } as const;
 
-export type CustomEnEsPage = keyof typeof CUSTOM_EN_ES;
+export type CustomPage = keyof typeof CUSTOM_PAGES;
 
-export function alternatesCustomEnEs(page: CustomEnEsPage, lang: 'en' | 'es') {
-  const paths = CUSTOM_EN_ES[page];
+/** @deprecated use CUSTOM_PAGES instead */
+export const CUSTOM_EN_ES = CUSTOM_PAGES;
+/** @deprecated use CustomPage instead */
+export type CustomEnEsPage = CustomPage;
+
+export function alternatesCustom(page: CustomPage, lang: Lang) {
+  const paths = CUSTOM_PAGES[page];
   return {
     canonical: paths[lang],
-    languages: { en: paths.en, es: paths.es, 'x-default': paths.en },
+    languages: { en: paths.en, es: paths.es, ru: paths.ru, 'x-default': paths.en },
   };
+}
+
+/** @deprecated use alternatesCustom instead */
+export function alternatesCustomEnEs(page: CustomPage, lang: 'en' | 'es') {
+  return alternatesCustom(page, lang);
 }
 
 /**

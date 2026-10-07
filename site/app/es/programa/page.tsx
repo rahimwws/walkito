@@ -17,7 +17,7 @@ const DAYS = or(PROGRAM.daysPerWeek);
 const MINUTES = or(PROGRAM.sessionMinutes);
 
 const TITLE = 'Plan de ejercicios para el dolor de talón que se adapta';
-const DESCRIPTION = `Cómo Walkito arma un plan de ejercicios para el dolor de talón: metas medibles, ${DAYS} días a la semana, sesiones de ${MINUTES} minutos, y una prueba corta cada ${PROGRAM.testEveryDays} días.`;
+const DESCRIPTION = `Cómo Walkito arma tu plan para el dolor de talón: metas medibles, ${DAYS} días a la semana, sesiones de ${MINUTES} minutos y una prueba cada ${PROGRAM.testEveryDays} días.`;
 const PATH = '/es/programa/';
 
 export const metadata: Metadata = {
@@ -71,7 +71,7 @@ export default function ProgramEs() {
         <p className="lede">
           Walkito arma tu plan de ejercicios para el dolor de talón una semana a la vez, en torno a
           metas que puedes medir. Cada mañana ajusta el día a cómo se siente tu pie. Una prueba
-          corta cada {PROGRAM.testEveryDays}\u00A0días muestra qué está cambiando. El plan no tiene
+          corta cada {PROGRAM.testEveryDays}&nbsp;días muestra qué está cambiando. El plan no tiene
           una duración fija: cuando alcanzas una meta, la siguiente ocupa su lugar.
         </p>
         <p>
@@ -90,14 +90,14 @@ export default function ProgramEs() {
             con el dolor primero si algo te duele.
           </li>
           <li>
-            Eliges {DAYS}\u00A0días a la semana y sesiones de {MINUTES}\u00A0minutos. Walkito
+            Eliges {DAYS}&nbsp;días a la semana y sesiones de {MINUTES}&nbsp;minutos. Walkito
             planea una semana a la vez.
           </li>
           <li>Cada mañana, un registro rápido ajusta la sesión de ese día.</li>
           <li>
-            Cada {PROGRAM.testEveryDays}\u00A0días, una prueba de unos{' '}
-            {PROGRAM.retestMinutes}\u00A0minutos mide tu progreso. Después de tu primera
-            meta, se hace cada {PROGRAM.testEveryDaysAfterGoal}\u00A0días.
+            Cada {PROGRAM.testEveryDays}&nbsp;días, una prueba de unos{' '}
+            {PROGRAM.retestMinutes}&nbsp;minutos mide tu progreso. Después de tu primera
+            meta, se hace cada {PROGRAM.testEveryDaysAfterGoal}&nbsp;días.
           </li>
           <li>
             Cuando alcanzas una meta, baja a una dosis más baja para que la mantengas, y la
@@ -124,13 +124,13 @@ export default function ProgramEs() {
                 <th scope="row">Mañanas sin dolor</th>
                 <td>
                   Dolor de la mañana de {PAIN_GOAL_MAX}/10 o menos durante{' '}
-                  {PROGRAM.painFreeDays}\u00A0días seguidos
+                  {PROGRAM.painFreeDays}&nbsp;días seguidos
                 </td>
                 <td>Tu registro de la mañana</td>
               </tr>
               <tr>
                 <th scope="row">Mantener el arco</th>
-                <td>{PROGRAM.goals.archHoldSeconds}\u00A0segundos</td>
+                <td>{PROGRAM.goals.archHoldSeconds}&nbsp;segundos</td>
                 <td>La prueba</td>
               </tr>
               <tr>
@@ -140,12 +140,12 @@ export default function ProgramEs() {
               </tr>
               <tr>
                 <th scope="row">Equilibrio</th>
-                <td>{PROGRAM.goals.balanceSeconds}\u00A0segundos en una pierna</td>
+                <td>{PROGRAM.goals.balanceSeconds}&nbsp;segundos en una pierna</td>
                 <td>La prueba</td>
               </tr>
               <tr>
                 <th scope="row">Diferencia izquierda/derecha</th>
-                <td>Menos de {PROGRAM.goals.gapPercent}\u00A0% entre los dos lados</td>
+                <td>Menos de {PROGRAM.goals.gapPercent}&nbsp;% entre los dos lados</td>
                 <td>Se calcula con tus elevaciones de talón</td>
               </tr>
             </tbody>
@@ -180,11 +180,11 @@ export default function ProgramEs() {
 
         <h2>¿Cuántos días a la semana, y cuánto duran las sesiones?</h2>
         <p>
-          Eliges {DAYS}\u00A0días de entrenamiento a la semana y sesiones de {MINUTES}{' '}
-          minutos. La opción por defecto es {PROGRAM.defaultMinutes}\u00A0minutos, y puedes
-          cambiarlo cualquier día. Cada sesión tiene de 2 a 4\u00A0ejercicios. El ejercicio de
+          Eliges {DAYS}&nbsp;días de entrenamiento a la semana y sesiones de {MINUTES}{' '}
+          minutos. La opción por defecto es {PROGRAM.defaultMinutes}&nbsp;minutos, y puedes
+          cambiarlo cualquier día. Cada sesión tiene de 2 a 4&nbsp;ejercicios. El ejercicio de
           la meta de la semana va primero y nunca se quita, ni siquiera en una sesión de{' '}
-          {PROGRAM.sessionMinutes[0]}\u00A0minutos. Los demás llenan el tiempo.
+          {PROGRAM.sessionMinutes[0]}&nbsp;minutos. Los demás llenan el tiempo.
         </p>
         <div className="exercise-detail">
           <ScreenshotSlot
@@ -274,9 +274,9 @@ export default function ProgramEs() {
 
         <h2>¿Cada cuánto mide Walkito mi progreso?</h2>
         <p>
-          Walkito mide tu progreso cada {PROGRAM.testEveryDays}\u00A0días hasta que alcanzas tu
-          primera meta, y después cada {PROGRAM.testEveryDaysAfterGoal}\u00A0días. Cada prueba
-          tiene {PROGRAM.retestTests}\u00A0partes y dura unos {PROGRAM.retestMinutes}\u00A0minutos:
+          Walkito mide tu progreso cada {PROGRAM.testEveryDays}&nbsp;días hasta que alcanzas tu
+          primera meta, y después cada {PROGRAM.testEveryDaysAfterGoal}&nbsp;días. Cada prueba
+          tiene {PROGRAM.retestTests}&nbsp;partes y dura unos {PROGRAM.retestMinutes}&nbsp;minutos:
         </p>
         <ul>
           <li>elevaciones de talón en cada pierna, todas las que puedas</li>
@@ -321,18 +321,18 @@ export default function ProgramEs() {
         <h2>Empezar el plan</h2>
         <p>
           No tienes que decidir el orden, las dosis ni cuándo subir de nivel. Walkito lo hace una
-          semana a la vez, y la prueba cada {PROGRAM.testEveryDays}\u00A0días te muestra qué está
+          semana a la vez, y la prueba cada {PROGRAM.testEveryDays}&nbsp;días te muestra qué está
           cambiando.
         </p>
 
         <UpdatedLine lang="es" updated={PAGE_UPDATED.program} />
         <p className="notice">{c.notice}</p>
 
-        <p className="cta-line">Empieza con {PROGRAM.sessionMinutes[0]}\u00A0minutos al día.</p>
+        <p className="cta-line">Empieza con {PROGRAM.sessionMinutes[0]}&nbsp;minutos al día.</p>
         <AppStoreBadge campaign="program-es" lang="es" />
       </Prose>
 
-      <Footer lang="es" languages={{ en: '/program/', es: PATH }} />
+      <Footer lang="es" languages={{ en: '/program/', es: PATH, ru: '/ru/programma/' }} />
     </>
   );
 }

@@ -388,7 +388,7 @@ export default function Science() {
         <UpdatedLine lang="en" updated={PAGE_UPDATED.science} />
       </Prose>
 
-      <Footer languages={{ en: '/science/', es: '/es/evidencia/' }} />
+      <Footer languages={{ en: '/science/', es: '/es/evidencia/', ru: '/ru/issledovaniya/' }} />
     </>
   );
 }

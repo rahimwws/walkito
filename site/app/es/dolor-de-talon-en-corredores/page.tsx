@@ -21,7 +21,7 @@ const { archHoldSeconds, calfRaises, balanceSeconds, gapPercent } = PROGRAM.goal
 
 const TITLE = 'Dolor de talón en corredores: ¿descansar o seguir?';
 const DESCRIPTION =
-  'Dolor de talón al correr? Cuándo cambiar la carga en vez de parar, qué te dice la mañana siguiente, señales de fractura por estrés, y un plan que se adapta.';
+  '¿Dolor de talón al correr? Cuándo cambiar la carga en vez de parar, qué dice la mañana siguiente, señales de fractura por estrés, y un plan que se adapta.';
 const PATH = '/es/dolor-de-talon-en-corredores/';
 
 export const metadata: Metadata = {
@@ -117,7 +117,7 @@ export default function HeelPainRunnersEs() {
             empiezas a moverte, y vuelve después de estar un rato sentado. No tienes que dejarlo
             todo. La guía de 2023 para el dolor de talón aconseja cambiar la carga sobre tus pies.
             Walkito lo incorpora en un plan de fuerza de pantorrilla, estiramiento y equilibrio, en
-            sesiones de {MIN_A}, {MIN_B} o {MIN_C}\u00A0minutos que se adaptan a cómo se siente
+            sesiones de {MIN_A}, {MIN_B} o {MIN_C}&nbsp;minutos que se adaptan a cómo se siente
             cada mañana.
           </p>
           <AppStoreBadge campaign="runners-hero-es" lang="es" anchor />
@@ -189,7 +189,7 @@ export default function HeelPainRunnersEs() {
               Walkito pregunta por tu dolor de la mañana todos los días por la misma razón. Lo
               registras con un solo toque en una escala de 0 a 10, y esa puntuación decide cuánto
               te pide la sesión de hoy. La primera meta para el dolor de talón es una mejor mañana:
-              dolor de {PAIN_GOAL_MAX}/10 o menos durante {PROGRAM.painFreeDays}\u00A0días seguidos.
+              dolor de {PAIN_GOAL_MAX}/10 o menos durante {PROGRAM.painFreeDays}&nbsp;días seguidos.
             </p>
           </section>
 
@@ -202,7 +202,7 @@ export default function HeelPainRunnersEs() {
               resistencia y fuerza una B.
             </p>
             <p>
-              En un ensayo con 48\u00A0personas, todas con plantillas, elevaciones de talón lentas
+              En un ensayo con 48&nbsp;personas, todas con plantillas, elevaciones de talón lentas
               con carga alta y una toalla bajo los dedos aliviaron el dolor y mejoraron la función
               diaria más rápido que solo estirar. A los doce meses, los dos grupos estaban
               igualados. El trabajo de fuerza adelantó la mejora. No la hizo más grande. La guía
@@ -277,13 +277,13 @@ export default function HeelPainRunnersEs() {
               de Aquiles en la porción media.
             </Evidence>
             <p>
-              En un ensayo pequeño de 1998, 15\u00A0atletas recreativos con dolor de Aquiles de
+              En un ensayo pequeño de 1998, 15&nbsp;atletas recreativos con dolor de Aquiles de
               mucho tiempo hicieron elevaciones excéntricas de pantorrilla (bajar despacio con carga)
               dos veces al día durante tres meses. Los 15 volvieron a correr a su nivel anterior.
-              Un ensayo de 2007 con 38\u00A0personas encontró que seguir activo durante la
+              Un ensayo de 2007 con 38&nbsp;personas encontró que seguir activo durante la
               rehabilitación, mientras el dolor se mantuviera dentro de un límite acordado, dio
               resultados tan buenos como dejar de correr y saltar primero. Un ensayo de 2015 con
-              58\u00A0personas comparó el trabajo de fuerza pesado y lento tres veces por semana con
+              58&nbsp;personas comparó el trabajo de fuerza pesado y lento tres veces por semana con
               la rutina excéntrica.
             </p>
             <blockquote>
@@ -315,7 +315,7 @@ export default function HeelPainRunnersEs() {
               de la cadera y un pie que se va hacia adentro más de lo habitual.
             </p>
             <Evidence level="early">
-              La revisión de 2020 encontró solo 11\u00A0estudios que valían la pena incluir, la
+              La revisión de 2020 encontró solo 11&nbsp;estudios que valían la pena incluir, la
               mayoría pequeños. Solo uno era un ensayo aleatorizado, y probó terapia de ondas de
               choque, no ejercicio.
             </Evidence>
@@ -346,7 +346,7 @@ export default function HeelPainRunnersEs() {
               bajo «dolor de talón plantar».
             </p>
             <Evidence level="early">
-              Una revisión de 2022 encontró 7\u00A0estudios aprovechables, la mayoría observacionales
+              Una revisión de 2022 encontró 7&nbsp;estudios aprovechables, la mayoría observacionales
               pequeños, y ningún ensayo de ejercicio para esta condición.
             </Evidence>
             <p>
@@ -386,26 +386,26 @@ export default function HeelPainRunnersEs() {
           </section>
 
           <section id="carga-de-entrenamiento">
-            <h2>¿La regla del 10\u00A0% previene lesiones al correr?</h2>
+            <h2>¿La regla del 10&nbsp;% previene lesiones al correr?</h2>
             <p>
-              La regla del 10\u00A0% dice que no debes añadir más del 10\u00A0% a tu distancia
+              La regla del 10&nbsp;% dice que no debes añadir más del 10&nbsp;% a tu distancia
               semanal de una semana a la siguiente. Ningún ensayo ha demostrado que baje el riesgo
-              de lesión. Un ensayo de 2008 puso a 532\u00A0corredores nuevos en un programa de
-              13\u00A0semanas basado en la regla del 10\u00A0% o en uno más rápido de
-              8\u00A0semanas. Las lesiones fueron casi idénticas: 20,8\u00A0% en el grupo más lento
-              y 20,3\u00A0% en el más rápido.
+              de lesión. Un ensayo de 2008 puso a 532&nbsp;corredores nuevos en un programa de
+              13&nbsp;semanas basado en la regla del 10&nbsp;% o en uno más rápido de
+              8&nbsp;semanas. Las lesiones fueron casi idénticas: 20,8&nbsp;% en el grupo más lento
+              y 20,3&nbsp;% en el más rápido.
             </p>
             <Evidence level="unsupported">
-              Un ensayo aleatorizado probó la regla del 10\u00A0% directamente y no encontró
+              Un ensayo aleatorizado probó la regla del 10&nbsp;% directamente y no encontró
               diferencia.
             </Evidence>
             <p>
               Los saltos bruscos son mejor cosa a la que prestar atención que cualquier porcentaje
-              exacto. Un estudio de 2014 siguió a 874\u00A0corredores nuevos con relojes GPS
-              durante un año. Los corredores que añadieron más del 30\u00A0% en dos semanas tuvieron
+              exacto. Un estudio de 2014 siguió a 874&nbsp;corredores nuevos con relojes GPS
+              durante un año. Los corredores que añadieron más del 30&nbsp;% en dos semanas tuvieron
               más lesiones relacionadas con la distancia que los que se mantuvieron bajo el
-              10\u00A0%, aunque el resultado quedó justo por debajo de la significancia estadística.
-              Los que añadieron entre 10 y 30\u00A0% no les fue claramente peor.
+              10&nbsp;%, aunque el resultado quedó justo por debajo de la significancia estadística.
+              Los que añadieron entre 10 y 30&nbsp;% no les fue claramente peor.
             </p>
             <Evidence level="early">
               Evita saltos bruscos grandes en la distancia. Un estudio de cohorte apunta en esa
@@ -413,7 +413,7 @@ export default function HeelPainRunnersEs() {
             </Evidence>
             <p>
               Walkito no planea tus carreras. Sí vigila los picos: si los pasos de ayer fueron más
-              de 1,4\u00A0veces tu promedio de 28\u00A0días en un día de fuerza, esa sesión se
+              de 1,4&nbsp;veces tu promedio de 28&nbsp;días en un día de fuerza, esa sesión se
               convierte en una de recuperación más ligera.
             </p>
             <Cite index={CITE.buist} />
@@ -423,24 +423,24 @@ export default function HeelPainRunnersEs() {
           <section id="cambio-de-zapatos">
             <h2>¿Cuándo deberías cambiar tus zapatos para correr?</h2>
             <p>
-              El consejo habitual es cada 500 a 800\u00A0kilómetros. Ese número es una estimación de
+              El consejo habitual es cada 500 a 800&nbsp;kilómetros. Ese número es una estimación de
               cuándo se gasta la amortiguación, no un resultado de un estudio que contó lesiones
               contra la edad del zapato. Si no registras kilómetros, una entresuela aplanada o una
               suela gastada de un lado te dice lo mismo.
             </p>
             <Evidence level="early">
-              El rango de 500 a 800\u00A0km es una regla de uso común, no un resultado de ensayo.
+              El rango de 500 a 800&nbsp;km es una regla de uso común, no un resultado de ensayo.
             </Evidence>
             <p>
               Alternar entre dos pares tiene más respaldo. Un estudio de 2015 siguió a
-              264\u00A0corredores durante 22\u00A0semanas. Los que corrían con más de un par
-              tuvieron un riesgo de lesión cerca de 39\u00A0% menor que los que usaban un solo par.
+              264&nbsp;corredores durante 22&nbsp;semanas. Los que corrían con más de un par
+              tuvieron un riesgo de lesión cerca de 39&nbsp;% menor que los que usaban un solo par.
               Eso es una relación observada, no prueba de que el segundo par causó la diferencia.
               La explicación de los autores es que zapatos diferentes reparten la carga un poco
               diferente de una carrera a otra.
             </p>
             <Evidence level="early">
-              Un estudio observacional de 264\u00A0corredores, no un ensayo aleatorizado.
+              Un estudio observacional de 264&nbsp;corredores, no un ensayo aleatorizado.
             </Evidence>
             <p>
               Nada de esto significa comprar más zapatos de los que puedes pagar. Un par, cambiado
@@ -485,17 +485,17 @@ export default function HeelPainRunnersEs() {
               No tienes que decidir el orden, las dosis ni cuándo pasar al siguiente. Walkito arma
               un plan una semana a la vez en torno a una meta que puedes medir. Para el dolor de
               talón, la primera meta es dolor de la mañana de {PAIN_GOAL_MAX}/10 o menos durante{' '}
-              {PROGRAM.painFreeDays}\u00A0días seguidos. Las otras son mantener el arco{' '}
-              {archHoldSeconds}\u00A0segundos, {calfRaises} elevaciones de talón a una pierna,{' '}
-              {balanceSeconds}\u00A0segundos de equilibrio a una pierna, e izquierda y derecha
-              dentro del {gapPercent}\u00A0% la una de la otra. Una meta que alcanzas pasa a
+              {PROGRAM.painFreeDays}&nbsp;días seguidos. Las otras son mantener el arco{' '}
+              {archHoldSeconds}&nbsp;segundos, {calfRaises} elevaciones de talón a una pierna,{' '}
+              {balanceSeconds}&nbsp;segundos de equilibrio a una pierna, e izquierda y derecha
+              dentro del {gapPercent}&nbsp;% la una de la otra. Una meta que alcanzas pasa a
               mantenimiento con una dosis más baja, y la siguiente ocupa su lugar.
             </p>
             <p>
-              Eliges {DAYS_A}, {DAYS_B} o {DAYS_C}\u00A0días a la semana y sesiones de {MIN_A},{' '}
-              {MIN_B} o {MIN_C}\u00A0minutos. Cada {PROGRAM.testEveryDays}\u00A0días (y después
+              Eliges {DAYS_A}, {DAYS_B} o {DAYS_C}&nbsp;días a la semana y sesiones de {MIN_A},{' '}
+              {MIN_B} o {MIN_C}&nbsp;minutos. Cada {PROGRAM.testEveryDays}&nbsp;días (y después
               cada {PROGRAM.testEveryDaysAfterGoal} una vez que alcanzas tu primera meta),{' '}
-              {PROGRAM.retestTests}\u00A0pruebas en unos {PROGRAM.retestMinutes}\u00A0minutos miden
+              {PROGRAM.retestTests}&nbsp;pruebas en unos {PROGRAM.retestMinutes}&nbsp;minutos miden
               elevaciones de talón hasta el fallo, mantener el arco y equilibrio a una pierna en los
               dos lados. El progreso se mide, no se adivina por cómo se sintió la semana.{' '}
               <a href="/es/programa/">Cómo funciona el plan</a>.
@@ -504,13 +504,13 @@ export default function HeelPainRunnersEs() {
             <UpdatedLine lang="es" updated={PAGE_UPDATED.runners} />
             <p className="notice">{c.notice}</p>
 
-            <p className="cta-line">Empieza con {MIN_A}\u00A0minutos al día.</p>
+            <p className="cta-line">Empieza con {MIN_A}&nbsp;minutos al día.</p>
             <AppStoreBadge campaign="runners-bottom-es" lang="es" />
           </section>
         </article>
       </Prose>
 
-      <Footer lang="es" languages={{ en: '/heel-pain-runners/', es: PATH }} />
+      <Footer lang="es" languages={{ en: '/heel-pain-runners/', es: PATH, ru: '/ru/bol-v-pyatke-u-begunov/' }} />
     </>
   );
 }

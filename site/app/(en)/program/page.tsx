@@ -389,7 +389,7 @@ export default function Program() {
         <AppStoreBadge campaign="program" />
       </Prose>
 
-      <Footer languages={{ en: '/program/', es: '/es/programa/' }} />
+      <Footer languages={{ en: '/program/', es: '/es/programa/', ru: '/ru/programma/' }} />
     </>
   );
 }

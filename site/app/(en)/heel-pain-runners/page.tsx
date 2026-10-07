@@ -549,7 +549,7 @@ export default function HeelPainRunners() {
         </article>
       </Prose>
 
-      <Footer languages={{ en: '/heel-pain-runners/', es: '/es/dolor-de-talon-en-corredores/' }} />
+      <Footer languages={{ en: '/heel-pain-runners/', es: '/es/dolor-de-talon-en-corredores/', ru: '/ru/bol-v-pyatke-u-begunov/' }} />
     </>
   );
 }

@@ -123,7 +123,7 @@ export default function PrintableSheetsEs() {
                 <h2>{p.title}</h2>
                 <p>{p.blurb}</p>
                 <p className="printable-meta">
-                  {p.pages}\u00A0páginas · Carta US · <a href={p.guide}>Lee la guía completa con videos</a>
+                  {p.pages}&nbsp;páginas · Carta US · <a href={p.guide}>Lee la guía completa con videos</a>
                 </p>
                 <p>
                   <a className="printable-download" href={`/downloads/${p.slug}.pdf`} download>
@@ -148,7 +148,7 @@ export default function PrintableSheetsEs() {
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="printables-es" lang="es" />
       </Prose>
-      <Footer lang="es" languages={{ en: '/printable-exercise-sheets/', es: PATH }} />
+      <Footer lang="es" languages={{ en: '/printable-exercise-sheets/', es: PATH, ru: '/ru/uprazhneniya-dlya-pechati/' }} />
     </>
   );
 }

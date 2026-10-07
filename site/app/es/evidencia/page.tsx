@@ -109,10 +109,10 @@ export default function ScienceEs() {
         </p>
         <p>
           Para el dolor de talón por fascitis plantar, la guía de 2023 le da al estiramiento su
-          grado más alto, A, y al entrenamiento de fuerza una B. En un ensayo con 48\u00A0personas,
+          grado más alto, A, y al entrenamiento de fuerza una B. En un ensayo con 48&nbsp;personas,
           las elevaciones de talón con carga alta aliviaron el dolor más rápido que el estiramiento,
           y a los doce meses los dos grupos estaban igualados. Para el pie plano{' '}
-          <b>flexible</b>, un ensayo con 52\u00A0personas encontró que seis semanas de ejercicio
+          <b>flexible</b>, un ensayo con 52&nbsp;personas encontró que seis semanas de ejercicio
           cambiaron la forma del arco. Una revisión de 2024 sobre el entrenamiento de pie corto no
           encontró una diferencia significativa en general, y solo una medida del arco mejoró en
           programas de más de seis semanas.
@@ -145,7 +145,7 @@ export default function ScienceEs() {
           demuestran que el entrenamiento del arco alivie el dolor. El trabajo de fuerza de
           pantorrilla no está hecho para cambiar la forma del arco. Walkito trabaja las dos cosas
           como metas separadas: mañanas sin dolor, y mantener el arco{' '}
-          {PROGRAM.goals.archHoldSeconds}\u00A0segundos. Hasta tres metas pueden estar activas a la
+          {PROGRAM.goals.archHoldSeconds}&nbsp;segundos. Hasta tres metas pueden estar activas a la
           vez, y el dolor va primero cuando tienes dolor.
         </p>
         <p>
@@ -160,14 +160,14 @@ export default function ScienceEs() {
         <p>
           Para la fascitis plantar, el entrenamiento de fuerza trajo alivio antes que el
           estiramiento, y a los doce meses los dos estaban igualados. En un ensayo con
-          48\u00A0personas con fascitis plantar confirmada por ultrasonido, todos usaron plantillas.
+          48&nbsp;personas con fascitis plantar confirmada por ultrasonido, todos usaron plantillas.
           Un grupo hizo elevaciones de talón con carga alta un día sí y un día no. El otro estiró
           la fascia plantar todos los días. A los tres meses, el grupo de la fuerza iba claramente
           adelante en dolor y función diaria. A los doce meses, los dos grupos estaban igualados.
         </p>
         <p className="cite">
-          Medido con el Foot Function Index (dolor y función): 29\u00A0puntos menos en el grupo de
-          la fuerza a los tres meses (IC 95\u00A0%: 6-52, p&nbsp;=&nbsp;0,016), y 22 frente a 16
+          Medido con el Foot Function Index (dolor y función): 29&nbsp;puntos menos en el grupo de
+          la fuerza a los tres meses (IC 95&nbsp;%: 6-52, p&nbsp;=&nbsp;0,016), y 22 frente a 16
           a los doce meses, una diferencia no significativa.
         </p>
         <Cite index={0} />
@@ -192,14 +192,14 @@ export default function ScienceEs() {
         <h2 id={H.arch.id}>{H.arch.h2}</h2>
         <p>
           El ejercicio puede cambiar la forma de un arco plano <b>flexible</b>, y la evidencia
-          dice que le des seis semanas o más. En un ensayo con 52\u00A0personas con pie plano
+          dice que le des seis semanas o más. En un ensayo con 52&nbsp;personas con pie plano
           flexible, un programa de seis semanas mejoró el arco más que en el grupo de control. El
           programa mezcló entrenamiento de pie corto (llevar la parte delantera del pie hacia el
           talón para que el arco suba), trabajo de tobillo, fortalecimiento de cadera y
           estiramientos.
         </p>
         <p className="cite">
-          La caída del navicular mejoró 0,4\u00A0cm y el ángulo del arco 16\u00A0grados más que en
+          La caída del navicular mejoró 0,4&nbsp;cm y el ángulo del arco 16&nbsp;grados más que en
           el grupo de control.
         </p>
         <Cite index={1} />
@@ -271,17 +271,17 @@ export default function ScienceEs() {
           se arma una semana a la vez en torno a una meta. Cuando alcanzas una meta, pasa a
           mantenimiento: conserva un lugar en el plan con una dosis más baja, y la siguiente meta
           ocupa su lugar. Las pruebas siguen cada{' '}
-          {PROGRAM.testEveryDaysAfterGoal}\u00A0días después de tu primera meta, así que una bajada
+          {PROGRAM.testEveryDaysAfterGoal}&nbsp;días después de tu primera meta, así que una bajada
           en los números se ve en vez de adivinarse. Nada de esto promete que el dolor no va a
           volver.
         </p>
 
         <h2 id={H.measure.id}>{H.measure.h2}</h2>
         <p>
-          Walkito mide el progreso con {PROGRAM.retestTests}\u00A0pruebas físicas que duran unos{' '}
-          {PROGRAM.retestMinutes}\u00A0minutos: elevaciones de talón a una pierna hasta que no
+          Walkito mide el progreso con {PROGRAM.retestTests}&nbsp;pruebas físicas que duran unos{' '}
+          {PROGRAM.retestMinutes}&nbsp;minutos: elevaciones de talón a una pierna hasta que no
           puedas más, cuánto tiempo mantienes el arco y equilibrio a una pierna. Las pruebas se
-          hacen cada {PROGRAM.testEveryDays}\u00A0días hasta tu primera meta, y después cada{' '}
+          hacen cada {PROGRAM.testEveryDays}&nbsp;días hasta tu primera meta, y después cada{' '}
           {PROGRAM.testEveryDaysAfterGoal}. Son medidas, no estimaciones, y usar más la app no
           puede subirlas.
         </p>
@@ -325,7 +325,7 @@ export default function ScienceEs() {
         <UpdatedLine lang="es" updated={PAGE_UPDATED.science} />
       </Prose>
 
-      <Footer lang="es" languages={{ en: '/science/', es: PATH }} />
+      <Footer lang="es" languages={{ en: '/science/', es: PATH, ru: '/ru/issledovaniya/' }} />
     </>
   );
 }

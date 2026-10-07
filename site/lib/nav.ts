@@ -67,6 +67,41 @@ export const NAV_LABEL_ES: Partial<Record<GuideKey, string>> = {
   exHipAbduction: 'Abducción de cadera',
 };
 
+/** Russian footer labels, for the articles that exist in Russian. */
+export const NAV_LABEL_RU: Partial<Record<GuideKey, string>> = {
+  hubPlantarFasciitis: 'Плантарный фасциит',
+  hubFlatFeet: 'Плоскостопие',
+  calfRaiseTest: 'Тест подъёма на носки',
+  calfRaises: 'Подъёмы на носки',
+  achilles: 'Тендинит ахиллова сухожилия',
+  shinSplints: 'Периостит голени',
+  morningHeelPain: 'Боль в пятке утром',
+  pfDuration: 'Сколько длится плантарный фасциит',
+  ballOfFoot: 'Метатарзалгия',
+  standing: 'На ногах весь день',
+  nurses: 'Медсёстры',
+  standingDesk: 'Стол для работы стоя',
+  bestApp: 'Приложение при плантарном фасциите',
+  vsExakt: 'Walkito vs Exakt Health',
+  runners: 'Боль в пятке у бегунов',
+  exPlantarFasciaStretch: 'Растяжка подошвенной фасции',
+  exCalfStretch: 'Растяжка икроножной мышцы',
+  exSoleusStretch: 'Растяжка камбаловидной мышцы',
+  exFootRoll: 'Массаж стопы мячом',
+  exAnkleRocks: 'Мобильность голеностопа',
+  exTowelHeelRaise: 'Подъёмы на носки с полотенцем',
+  exCalfRaises: 'Подъёмы на носки (техника)',
+  exEccentricHeelDrops: 'Эксцентрические опускания пяток',
+  exTibialisRaises: 'Подъёмы носков у стены',
+  exSingleLegBalance: 'Равновесие на одной ноге',
+  exShortFoot: 'Короткая стопа',
+  exTowelScrunch: 'Собирание полотенца пальцами',
+  exToeSpread: 'Разведение пальцев стопы',
+  exBigToeLift: 'Подъём большого пальца',
+  exBandInversion: 'Инверсия стопы с резинкой',
+  exHipAbduction: 'Отведение бедра',
+};
+
 export const NAV_GROUPS: Record<NavGroup, readonly GuideKey[]> = {
   exercises: ['heelPain', 'flatFeet', 'calfRaises', 'achilles', 'shinSplints'],
   pain: ['hubPlantarFasciitis', 'hubFlatFeet', 'morningHeelPain', 'pfDuration', 'ballOfFoot', 'runners'],

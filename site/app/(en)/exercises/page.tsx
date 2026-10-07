@@ -112,7 +112,7 @@ export default function ExerciseLibrary() {
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="exercise-library" lang="en" />
       </Prose>
-      <Footer lang="en" languages={{ en: '/exercises/', es: '/es/ejercicios/' }} />
+      <Footer lang="en" languages={{ en: '/exercises/', es: '/es/ejercicios/', ru: '/ru/uprazhneniya/' }} />
     </>
   );
 }

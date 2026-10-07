@@ -152,7 +152,7 @@ export default function Faq() {
         <AppStoreBadge campaign="faq" />
       </Prose>
 
-      <Footer languages={{ en: '/faq/', es: '/es/preguntas-frecuentes/' }} />
+      <Footer languages={{ en: '/faq/', es: '/es/preguntas-frecuentes/', ru: '/ru/voprosy/' }} />
     </>
   );
 }

@@ -97,7 +97,7 @@ export default function PrintableSheets() {
         <p className="notice">{c.notice}</p>
         <AppStoreBadge campaign="printables" lang="en" />
       </Prose>
-      <Footer lang="en" languages={{ en: '/printable-exercise-sheets/', es: '/es/hojas-de-ejercicios-imprimibles/' }} />
+      <Footer lang="en" languages={{ en: '/printable-exercise-sheets/', es: '/es/hojas-de-ejercicios-imprimibles/', ru: '/ru/uprazhneniya-dlya-pechati/' }} />
     </>
   );
 }

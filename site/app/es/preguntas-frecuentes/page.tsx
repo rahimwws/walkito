@@ -15,7 +15,7 @@ import { PAGE_UPDATED, SITE_NAME, SITE_URL } from '@/lib/site';
 
 const TITLE = 'Preguntas frecuentes sobre Walkito';
 const DESCRIPTION =
-  'Cómo funciona el plan de Walkito para el dolor de talón: sesiones, metas, pruebas, malas mañanas, correr, Apple Health, privacidad, precios y la investigación.';
+  'Cómo funciona el plan de Walkito para el dolor de talón: sesiones, metas, pruebas, correr, Apple Health, privacidad, precios e investigación.';
 const PATH = '/es/preguntas-frecuentes/';
 
 export const metadata: Metadata = {
@@ -128,7 +128,7 @@ export default function FaqEs() {
         <AppStoreBadge campaign="faq-es" lang="es" />
       </Prose>
 
-      <Footer lang="es" languages={{ en: '/faq/', es: PATH }} />
+      <Footer lang="es" languages={{ en: '/faq/', es: PATH, ru: '/ru/voprosy/' }} />
     </>
   );
 }
