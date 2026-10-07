@@ -80,29 +80,31 @@ export function EmailLayout(props: TemplateProps): ReactElement {
         ...content.paragraphs.map((p, i) =>
           h(Text, { key: i, className: 'ink', style: { margin: '0 0 12px', color: INK, fontSize: 17, lineHeight: '26px', fontFamily: FONT } }, p),
         ),
-        h(
-          Section,
-          { style: { margin: '10px 0 6px' } },
-          h(
-            Button,
-            {
-              href: props.buttonUrl,
-              className: 'btn',
-              style: {
-                backgroundColor: INK,
-                color: '#FFFFFF',
-                borderRadius: 999,
-                padding: '14px 24px',
-                fontSize: 16,
-                fontWeight: 800,
-                fontFamily: FONT,
-                textDecoration: 'none',
-                display: 'inline-block',
-              },
-            },
-            content.button.label,
-          ),
-        ),
+        content.button.label
+          ? h(
+              Section,
+              { style: { margin: '10px 0 6px' } },
+              h(
+                Button,
+                {
+                  href: props.buttonUrl,
+                  className: 'btn',
+                  style: {
+                    backgroundColor: INK,
+                    color: '#FFFFFF',
+                    borderRadius: 999,
+                    padding: '14px 24px',
+                    fontSize: 16,
+                    fontWeight: 800,
+                    fontFamily: FONT,
+                    textDecoration: 'none',
+                    display: 'inline-block',
+                  },
+                },
+                content.button.label,
+              ),
+            )
+          : null,
         content.ps != null ? text('muted', { color: MUTED, fontSize: 15, lineHeight: '22px', marginTop: 14 }, content.ps) : null,
         h(
           Section,
