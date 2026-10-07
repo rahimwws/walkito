@@ -4,6 +4,7 @@ import { AppCallout } from '@/components/AppCallout';
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Byline, UpdatedLine } from '@/components/Byline';
 import { Evidence } from '@/components/Evidence';
+import { EmailSignup } from '@/components/EmailSignup';
 import { printableForGuide } from '@/lib/printables';
 import { Footer } from '@/components/Footer';
 import { Cite } from '@/components/Cite';
@@ -200,13 +201,16 @@ export function Guide({ guide }: { guide: GuideData }) {
           </nav>
         )}
         {printable && (
-          <p className="printable-box">
-            <strong>Printable version:</strong> these exercises on a free {printable.pages}-page PDF with a week log.{' '}
-            <a href={`/downloads/${printable.slug}.pdf`} download>
-              Download the PDF
-            </a>
-            {' '}or see <a href="/printable-exercise-sheets/">all printable sheets</a>.
-          </p>
+          <>
+            <p className="printable-box">
+              <strong>Printable version:</strong> these exercises on a free {printable.pages}-page PDF with a week log.{' '}
+              <a href={`/downloads/${printable.slug}.pdf`} download>
+                Download the PDF
+              </a>
+              {' '}or see <a href="/printable-exercise-sheets/">all printable sheets</a>.
+            </p>
+            <EmailSignup lang="en" source="guide" page={guidePath(guide)} />
+          </>
         )}
 
         {guide.sections.map((section) => (

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 import { AppStoreBadge } from '@/components/AppStoreBadge';
+import { EmailSignup } from '@/components/EmailSignup';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
@@ -54,6 +55,7 @@ export default function PrintableSheets() {
       <JsonLd data={BREADCRUMBS} />
       <Masthead lang="en" />
       <Prose className="shell prose">
+        <EmailSignup lang="en" source="printables" page="/printable-exercise-sheets/" />
         <h1>Printable foot exercise sheets</h1>
         <p className="lede">
           Free PDF sheets you can print and stick on the fridge. Each one has the exercises with a picture, the dose,
