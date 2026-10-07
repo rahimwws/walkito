@@ -68,7 +68,7 @@ const DARK_CSS = `
 :root { color-scheme: light dark; supported-color-schemes: light dark; }
 @media (prefers-color-scheme: dark) {
   .page { background-color: #111113 !important; }
-  /* React Email puts the page colour on the inner <td>, not on <body>: darken it too,
+  /* React Email puts the page colour on the inner table cell, not on the body: darken it too,
      or white text lands on a white cell and the email reads blank in dark mode. */
   .page td { background-color: #111113 !important; }
   .ink { color: #FFFFFF !important; }
