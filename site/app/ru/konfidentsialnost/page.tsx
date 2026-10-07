@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Политика конфиденциальности',
   description:
-    'Что собирает Walkito и зачем. План и отметки о боли сохраняются в аккаунте, данные Apple Здоровья и Health Connect остаются на телефоне. Без рекламы и отслеживания.',
+    'Что собирает Walkito и зачем. План хранится в аккаунте, данные Apple Здоровья и Health Connect остаются на телефоне. Без рекламы и отслеживания.',
   alternates: alternatesFor('privacy', 'ru'),
 };
 

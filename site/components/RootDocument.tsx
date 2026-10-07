@@ -25,11 +25,15 @@ const ORGANISATION = {
   disambiguatingDescription:
     'Walkito is an iPhone exercise app for heel pain, plantar fasciitis and flat feet. It is not a dog-walking service.',
   foundingDate: '2026',
-  founder: {
-    '@type': 'Person',
-    name: 'Rahim Hudaykylyyev',
-    sameAs: ['https://www.linkedin.com/in/rhdklv/', 'https://x.com/rahimwws'],
-  },
+  // Both co-founders. Rahman by name only until his profiles describe Walkito.
+  founder: [
+    {
+      '@type': 'Person',
+      name: 'Rahim Hudaykylyyev',
+      sameAs: ['https://www.linkedin.com/in/rhdklv/', 'https://x.com/rahimwws'],
+    },
+    { '@type': 'Person', name: 'Rahman Bazarov' },
+  ],
   // Only profiles that are really ours; see `SAME_AS`.
   ...(SAME_AS.length > 0 ? { sameAs: SAME_AS } : {}),
 };

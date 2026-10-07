@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Privacy',
   description:
-    'What Walkito collects and why. Your plan and check-ins are saved to your account; Apple Health and Health Connect data stay on your phone. No ads and no ad tracking.',
+    'What Walkito collects and why. Your plan is saved to your account, Apple Health and Health Connect data stay on your phone. No ads, no ad tracking.',
   alternates: alternatesFor('privacy', 'en'),
 };
 

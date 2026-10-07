@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Privacidad',
   description:
-    'Qué recopila Walkito y por qué. Tu plan y tus registros se guardan en tu cuenta; los datos de Apple Salud y Health Connect se quedan en tu teléfono. Sin anuncios ni rastreo.',
+    'Qué recopila Walkito y por qué. Tu plan se guarda en tu cuenta; los datos de Apple Salud y Health Connect quedan en tu teléfono. Sin anuncios ni rastreo.',
   alternates: alternatesFor('privacy', 'es'),
 };
 
