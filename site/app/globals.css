@@ -2231,3 +2231,100 @@ figcaption {
 .store .store-play {
   margin-left: 10px;
 }
+
+/* -------------------------------------------------------- email signup -- */
+
+.email-signup {
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  padding: 18px 20px 14px;
+  margin: 24px 0;
+  background: var(--surface, #fafafa);
+}
+
+@media (prefers-color-scheme: dark) {
+  .email-signup {
+    background: rgba(255, 255, 255, 0.03);
+  }
+}
+
+.email-signup-heading {
+  font-weight: 700;
+  font-size: 17px;
+  margin: 0 0 4px;
+}
+
+.email-signup-description {
+  font-size: 15px;
+  color: var(--muted);
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+.email-signup-row {
+  display: flex;
+  gap: 8px;
+}
+
+.email-signup-row input[type="email"] {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 14px;
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  background: var(--page, #fff);
+  color: var(--ink);
+}
+
+.email-signup-row button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: var(--ink);
+  color: var(--page, #fff);
+  font-weight: 700;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.email-signup-row button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.email-signup-consent {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--faint);
+}
+
+.email-signup-consent a {
+  color: var(--faint);
+  text-decoration: underline;
+}
+
+.email-signup-error {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #c33;
+}
+
+.email-signup-done {
+  text-align: center;
+}
+
+.email-signup-done p {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .email-signup-row {
+    flex-direction: column;
+  }
+}

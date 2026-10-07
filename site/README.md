@@ -86,6 +86,55 @@ implying diagnosis or cure — "screening, program, exercises, never treatment".
 - Support tone — the Home Screen quick action in `app.json`
 - Colours — `src/shared/config/theme.ts`
 
+## Email list (site leads)
+
+The site collects emails for the printable exercise sheets and a 7-day starter
+plan. The form is on `/printable-exercise-sheets/` and on the three guides that
+have a printable PDF.
+
+### Deploy steps
+
+1. **Run the migration:**
+   ```
+   supabase db push   # or apply supabase/migrations/0014_site_leads.sql manually
+   ```
+2. **Deploy the edge functions:**
+   ```
+   supabase functions deploy site-subscribe email-scheduler email-unsubscribe
+   ```
+3. **Secrets needed** (already set if the existing email system works):
+   - `RESEND_API_KEY` (the same Resend key the scheduler uses)
+   - `EMAIL_UNSUBSCRIBE_SECRET` (the same HMAC secret)
+   - No new secrets are needed. `site-subscribe` reads the same env vars.
+4. **Resend sending domain:** `walkito.site` must be verified in Resend so
+   emails from `hello@walkito.site` are delivered. This is already done if the
+   existing emails work.
+5. **JWT verification** is disabled for `site-subscribe` in
+   `supabase/config.toml` so the form works without a Supabase anon key.
+6. **Build and deploy the site:**
+   ```
+   cd site && bun run build && bun run deploy
+   ```
+7. **Test:** sign up with a real email on `/printable-exercise-sheets/`. You
+   should get a confirmation email. Click the link. You should land on
+   `/subscribed/` and receive the PDFs email. Over the next 7 days the
+   scheduler sends one email per day.
+
+### How it works
+
+- `supabase/migrations/0014_site_leads.sql`: `site_leads` table (separate from
+  app users) and `site_lead_email_log` for send dedupe.
+- `supabase/functions/site-subscribe/index.ts`: POST to sign up, GET to confirm.
+  Double opt-in. Sends day 0 (PDFs) on confirm.
+- `supabase/functions/_shared/email/site-leads.ts`: the confirm email, day 0
+  welcome, and 7 daily emails with exercises from the guides.
+- `supabase/functions/email-scheduler/index.ts`: extended with a site-leads
+  loop that sends the next day's email every ~24h.
+- `supabase/functions/email-unsubscribe/index.ts`: extended to check
+  `site_leads` when the token does not match an app user.
+- `site/components/EmailSignup.tsx`: the form component.
+- `site/app/(en)/subscribed/`: the confirmation landing page.
+
 ## A note for whoever touches the Expo app
 
 `metro.config.js` at the repo root blocks `site/node_modules` and `site/.next`.
