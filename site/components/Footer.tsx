@@ -1,4 +1,7 @@
+import Image from 'next/image';
 import Link from 'next/link';
+
+import { AppStoreBadge } from '@/components/AppStoreBadge';
 
 import { SocialLinks } from '@/components/SocialLinks';
 import { CHROME, CUSTOM_PAGES, EN_ONLY, ES_ARTICLES, RU_ARTICLES, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
@@ -40,9 +43,12 @@ function hrefFor(key: GuideKey, lang: Lang): string | null {
 
 function Column({ heading, links }: { heading: string; links: { href: string; label: string }[] }) {
   if (links.length === 0) return null;
+  // <details open>: every link is in the page for readers and crawlers alike.
+  // On a phone the script at the end of the footer folds the sections, so the
+  // footer is a short list of headings instead of sixty links.
   return (
-    <div className="footer-col">
-      <p className="footer-heading">{heading}</p>
+    <details className="footer-col" open>
+      <summary className="footer-heading">{heading}</summary>
       <ul>
         {links.map((l) => (
           <li key={l.href}>
@@ -50,9 +56,18 @@ function Column({ heading, links }: { heading: string; links: { href: string; la
           </li>
         ))}
       </ul>
-    </div>
+    </details>
   );
 }
+
+const TAGLINE: Record<Lang, string> = {
+  en: 'Daily exercise plans for heel, foot and leg pain, built on clinical guidelines.',
+  es: 'Planes diarios de ejercicios para el dolor de talón, pie y pierna, basados en guías clínicas.',
+  ru: 'Ежедневные планы упражнений при боли в пятке, стопе и ногах на основе клинических рекомендаций.',
+};
+
+/** Folds the footer sections on a phone, before first paint of the footer. */
+const FOLD_ON_PHONE = `if(matchMedia("(max-width: 760px)").matches){document.querySelectorAll(".footer details[open]").forEach(function(d){d.removeAttribute("open")})}`;
 
 export function Footer({
   lang = 'en',
@@ -115,49 +130,61 @@ export function Footer({
     { href: TRANSLATED.terms[lang], label: c.navTerms },
   ];
 
+  const extras = [
+      ...(lang === 'en'
+        ? [
+            { href: '/exercises/', label: 'Exercise library' },
+            { href: '/calf-raise-test/', label: 'Calf raise test' },
+            { href: '/printable-exercise-sheets/', label: 'Printable sheets (PDF)' },
+          ]
+        : lang === 'es'
+        ? [
+            { href: CUSTOM_PAGES.exercises.es, label: 'Biblioteca de ejercicios' },
+            { href: '/es/test-de-elevacion-de-talon/', label: 'Test de elevación de talón' },
+            { href: CUSTOM_PAGES.printables.es, label: 'Hojas imprimibles (PDF)' },
+          ]
+        : lang === 'ru'
+        ? [
+            { href: CUSTOM_PAGES.exercises.ru, label: 'Библиотека упражнений' },
+            { href: CUSTOM_PAGES.printables.ru, label: 'Листы для печати (PDF)' },
+          ]
+        : []),
+  ];
+
   return (
     <footer className="footer">
       <div className="shell">
-        <nav aria-label={c.guidesHeading} className="footer-cols">
-          <Column
-            heading={h.exercises}
-            links={[
-              ...group(NAV_GROUPS.exercises),
-              ...(lang === 'en'
-                ? [
-                    { href: '/exercises/', label: 'Exercise library' },
-                    { href: '/calf-raise-test/', label: 'Calf raise test' },
-                    { href: '/printable-exercise-sheets/', label: 'Printable sheets (PDF)' },
-                  ]
-                : lang === 'es'
-                ? [
-                    { href: CUSTOM_PAGES.exercises.es, label: 'Biblioteca de ejercicios' },
-                    { href: '/es/test-de-elevacion-de-talon/', label: 'Test de elevación de talón' },
-                    { href: CUSTOM_PAGES.printables.es, label: 'Hojas imprimibles (PDF)' },
-                  ]
-                : lang === 'ru'
-                ? [
-                    { href: CUSTOM_PAGES.exercises.ru, label: 'Библиотека упражнений' },
-                    { href: CUSTOM_PAGES.printables.ru, label: 'Листы для печати (PDF)' },
-                  ]
-                : []),
-            ]}
-          />
-          <Column heading={h.pain} links={group(NAV_GROUPS.pain)} />
-          <Column heading={h.heel} links={group(NAV_GROUPS.heel)} />
-          <Column heading={h.foot} links={group(NAV_GROUPS.foot)} />
-          <div className="footer-col footer-stack">
-            <Column heading={h.work} links={group(NAV_GROUPS.work)} />
-            <Column heading={h.compare} links={group(NAV_GROUPS.compare)} />
+        <div className="footer-panel">
+          <div className="footer-brand">
+            <div className="footer-brand-text">
+              <Link className="footer-logo" href={TRANSLATED.home[lang]}>
+                <Image src="/icon.png" alt="" width={40} height={40} />
+                Walkito
+              </Link>
+              <p>{TAGLINE[lang]}</p>
+            </div>
+            <div className="footer-brand-actions">
+              <SocialLinks lang={lang} />
+              <AppStoreBadge campaign={lang === 'en' ? 'footer-badge' : `footer-badge-${lang}`} lang={lang} />
+            </div>
           </div>
-          {/* Spanish has no library index page, so its exercise pages are
-              listed here; English links to /exercises/ instead. */}
-          {lang === 'es' && <Column heading={h.library} links={group(NAV_GROUPS.library)} />}
-          <Column heading={h.walkito} links={walkito} />
-        </nav>
+          <nav aria-label={c.guidesHeading} className="footer-cols">
+            <Column heading={h.exercises} links={[...group(NAV_GROUPS.exercises), ...extras]} />
+            <Column
+              heading={h.heel}
+              links={group(['hubPlantarFasciitis', 'morningHeelPain', 'pfDuration', 'runners', ...NAV_GROUPS.heel])}
+            />
+            <Column heading={h.pain} links={group(['hubFlatFeet', 'ballOfFoot', ...NAV_GROUPS.foot])} />
+            <div className="footer-stack">
+              <Column heading={h.work} links={group(NAV_GROUPS.work)} />
+              <Column heading={h.compare} links={group(NAV_GROUPS.compare)} />
+            </div>
+            <Column heading={h.walkito} links={walkito} />
+          </nav>
+          <script dangerouslySetInnerHTML={{ __html: FOLD_ON_PHONE }} />
+        </div>
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} Walkito</p>
-          <SocialLinks lang={lang} />
           {switcher && (
             <nav aria-label={c.language} className="langs">
               {LANGS.filter((l) => switcher[l]).map((l) =>

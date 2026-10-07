@@ -424,16 +424,94 @@ figure figcaption b {
 
 /* ---------------------------------------------------------------- footer -- */
 
+/* One soft panel: the brand and the download button on the left, every guide
+   in five short columns on the right. Every link stays in the page; on a
+   phone the columns fold into tap-to-open sections. */
 .footer {
-  border-top: 1px solid var(--hairline);
-  padding: 40px 0 46px;
+  padding: 56px 0 40px;
 }
 
-/* Guides in labelled columns, then one quiet row: copyright, socials, language. */
+.footer .footer-panel {
+  display: grid;
+  gap: 32px;
+  padding: 40px;
+  border: 1px solid rgba(139, 92, 246, 0.14);
+  border-radius: 28px;
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(139, 92, 246, 0.1), transparent 55%),
+    linear-gradient(180deg, rgba(139, 92, 246, 0.05), rgba(139, 92, 246, 0.015));
+}
+
+/* The brand row: logo and one line on the left, socials and the download
+   button on the right, a hairline under it. */
+.footer .footer-brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px 32px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(139, 92, 246, 0.14);
+}
+
+.footer .footer-brand-text {
+  display: grid;
+  gap: 8px;
+  max-width: 420px;
+}
+
+.footer .footer-brand-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer .footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer .footer-logo img {
+  border-radius: 10px;
+}
+
+.footer .footer-brand p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer .footer-brand .store {
+  margin: 0;
+}
+
+/* A compact pill here: the big one belongs to the page body. */
+.footer .footer-brand .store a {
+  gap: 8px;
+  padding: 11px 20px;
+  font-size: 15px;
+  letter-spacing: -0.1px;
+}
+
+.footer .footer-brand .store svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer .footer-brand .social {
+  margin: 0;
+}
+
 .footer .footer-cols {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 28px 32px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 28px 28px;
 }
 
 .footer .footer-stack {
@@ -443,12 +521,19 @@ figure figcaption b {
 }
 
 .footer .footer-heading {
-  margin: 0 0 10px;
-  color: var(--ink);
-  font-size: 13px;
+  display: block;
+  margin: 0 0 12px;
+  color: var(--violet-deep);
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  list-style: none;
+  cursor: default;
+}
+
+.footer .footer-heading::-webkit-details-marker {
+  display: none;
 }
 
 .footer ul {
@@ -456,18 +541,21 @@ figure figcaption b {
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 8px;
+  gap: 9px;
 }
 
 .footer ul a {
-  color: var(--muted);
+  color: rgba(17, 17, 20, 0.72);
   font-size: 14px;
   line-height: 1.35;
   text-decoration: none;
+  transition: color 0.15s ease;
 }
 
 .footer ul a:hover {
-  color: var(--ink);
+  color: var(--violet-deep);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .footer .footer-bottom {
@@ -475,35 +563,53 @@ figure figcaption b {
   flex-wrap: wrap;
   align-items: center;
   gap: 12px 24px;
-  margin-top: 32px;
-  padding-top: 20px;
-  border-top: 1px solid var(--hairline);
+  margin-top: 20px;
+  padding: 0 8px;
 }
 
 .footer .footer-bottom p {
   margin: 0;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13px;
 }
 
-/* The language switcher: the one control a reader in the wrong language is
-   looking for, so it is set apart at the end of the row. */
+/* The language switcher: pills, so the reader in the wrong language sees it. */
 .footer .langs {
   display: flex;
-  gap: 18px;
+  gap: 8px;
   margin-left: auto;
+}
+
+.footer .langs a,
+.footer .langs span {
+  padding: 6px 14px;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  font-size: 13px;
+  text-decoration: none;
 }
 
 .footer .langs a {
   color: var(--muted);
-  font-size: 14px;
-  text-decoration: none;
+  background: var(--paper);
+}
+
+.footer .langs a:hover {
+  color: var(--ink);
+  border-color: rgba(17, 17, 20, 0.25);
 }
 
 .footer .langs span {
-  color: var(--ink);
-  font-size: 14px;
+  color: var(--paper);
+  background: var(--ink);
+  border-color: var(--ink);
   font-weight: 600;
+}
+
+@media (max-width: 1060px) {
+  .footer .footer-cols {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 /* ------------------------------------------------------------------ prose - */
@@ -1201,23 +1307,88 @@ figure figcaption b {
   }
 
   .footer {
-    padding: 28px 0 36px;
+    padding: 36px 0 32px;
   }
 
-  /* Two columns on a phone; each link gets a thumb-sized row. */
+  /* On a phone the panel is one column and each guide group is a
+     tap-to-open row with a chevron. */
+  .footer .footer-panel {
+    padding: 28px 20px 12px;
+    border-radius: 24px;
+    gap: 24px;
+  }
+
+  .footer .footer-panel > *,
+  .footer .footer-cols > * {
+    min-width: 0;
+  }
+
+  .footer .footer-brand {
+    display: grid;
+    gap: 18px;
+    padding-bottom: 20px;
+  }
+
+  .footer .footer-brand-actions {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
   .footer .footer-cols {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px 20px;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .footer .footer-stack {
+    gap: 0;
+  }
+
+  .footer .footer-col {
+    border-top: 1px solid rgba(139, 92, 246, 0.14);
+  }
+
+  .footer .footer-cols > .footer-col:first-child {
+    border-top: 0;
+  }
+
+  .footer .footer-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 52px;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  /* The same "+" as the questions on the home page, turning into a "×". */
+  .footer .footer-heading::after {
+    content: "+";
+    color: var(--muted);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    transition: transform 0.2s ease;
+  }
+
+  .footer details[open] > .footer-heading::after {
+    transform: rotate(45deg);
   }
 
   .footer ul {
     gap: 0;
+    padding-bottom: 12px;
   }
 
   .footer ul a {
     display: inline-flex;
     align-items: center;
     min-height: 40px;
+    font-size: 15px;
+  }
+
+  .footer .footer-bottom {
+    padding: 0 4px;
   }
 
   .footer .langs {
@@ -2326,5 +2497,12 @@ figcaption {
 @media (max-width: 480px) {
   .email-signup-row {
     flex-direction: column;
+  }
+}
+
+/* On a wide screen the footer sections are always open: the headings are labels. */
+@media (min-width: 761px) {
+  .footer .footer-heading {
+    pointer-events: none;
   }
 }
