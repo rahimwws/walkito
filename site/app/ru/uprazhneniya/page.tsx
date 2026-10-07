@@ -37,7 +37,7 @@ const GROUPS: readonly { h2: string; text: string; keys: readonly EnglishPage[] 
   },
   {
     h2: 'Сила икр и голени',
-    text: 'Нагрузка на икры и ахиллово сухожилие: от подъёмов сидя до подъёмов с полотенцем и эксцентрических опусканий.',
+    text: 'Упражнения нагружают икры и ахиллово сухожилие: от подъёмов сидя до подъёмов с полотенцем и эксцентрических опусканий.',
     keys: ['exCalfRaises', 'exTowelHeelRaise', 'exEccentricHeelDrops', 'exTibialisRaises', 'exSingleLegBalance'],
   },
   {
