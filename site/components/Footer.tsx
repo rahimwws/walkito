@@ -158,7 +158,7 @@ export function Footer({
           <div className="footer-brand">
             <div className="footer-brand-text">
               <Link className="footer-logo" href={TRANSLATED.home[lang]}>
-                <Image src="/icon.png" alt="" width={40} height={40} />
+                <Image src="/icon-96.webp" alt="" width={40} height={40} />
                 Walkito
               </Link>
               <p>{TAGLINE[lang]}</p>

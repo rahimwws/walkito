@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 import { RootDocument } from '@/components/RootDocument';
+import { anton } from '@/lib/font-anton';
 import { alternatesFor } from '@/lib/i18n';
 import { smartBannerContent, SITE_NAME, SITE_URL } from '@/lib/site';
 
@@ -71,5 +72,5 @@ export { viewport } from '@/components/RootDocument';
  * them is a full page load, which is what a language change should be anyway.
  */
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <RootDocument lang="en">{children}</RootDocument>;
+  return <RootDocument lang="en" fontClass={anton.variable}>{children}</RootDocument>;
 }

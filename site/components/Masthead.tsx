@@ -36,7 +36,7 @@ export function Masthead({ lang = 'en' }: { lang?: Lang }) {
   return (
     <header className="shell masthead">
       <Link className="brand" href={home}>
-        <Image src="/icon.png" alt="" width={36} height={36} priority />
+        <Image src="/icon-96.webp" alt="" width={36} height={36} priority />
         Walkito
       </Link>
 
