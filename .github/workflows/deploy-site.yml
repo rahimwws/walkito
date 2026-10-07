@@ -1,0 +1,53 @@
+# The site goes live when site/ changes on main: build, upload, IndexNow.
+#
+# Merging a branch into main is the deploy, so anyone with write access to the
+# repo can ship the site without access to the server. The upload uses the
+# `deploy` user on the droplet, whose key (secret DEPLOY_SSH_KEY) can only
+# rsync into /var/www/walkito: `command="/usr/bin/rrsync /var/www/walkito",
+# restrict` in /home/deploy/.ssh/authorized_keys. No shell, no other folder.
+#
+# The backend (Supabase migrations and edge functions) is never deployed from
+# here: those go out by hand, after review.
+name: Deploy site
+
+on:
+  push:
+    branches: [main]
+    paths: ['site/**']
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-site
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: SSH key and pinned host key
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy
+          chmod 600 ~/.ssh/deploy
+          echo '161.35.52.54 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIElfFfND7AXnyNHfsLTq7v9y5DnnSaP69cU0w0YdID/W' > ~/.ssh/known_hosts
+
+      - name: Install
+        working-directory: site
+        run: bun install --frozen-lockfile
+
+      - name: Build, upload, IndexNow
+        working-directory: site
+        env:
+          DEPLOY_TARGET: 'deploy@161.35.52.54:'
+          DEPLOY_SSH: ssh -i ~/.ssh/deploy -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes
+        run: bun run deploy

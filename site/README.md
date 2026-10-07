@@ -31,6 +31,12 @@ Deploy is `bun run deploy` (`scripts/deploy.mjs`): build, upload `out/` to
 `/var/www/walkito` on the droplet nginx serves it from, then IndexNow so Bing
 and Yandex re-crawl straight away.
 
+**Merging into `main` deploys it.** Any push to `main` that touches `site/`
+runs `.github/workflows/deploy-site.yml`, which does the same three steps as
+the `deploy` user (rsync into `/var/www/walkito` only). It can also be run by
+hand from the Actions tab (Deploy site, Run workflow). `bun run deploy` from a
+laptop still works and uploads as root, then hands the files back to `deploy`.
+
 `public/google2e55515ad29a0837.html`, `public/BingSiteAuth.xml` and the
 `public/yandex_*.html` file prove ownership to Search Console, Bing Webmaster
 Tools and Yandex Webmaster (account rahimwws.me@gmail.com for the first two). They live in `public/` because `--delete` would wipe
