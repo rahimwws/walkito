@@ -463,7 +463,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### How do you do a towel calf raise for plantar fasciitis?
 
-The towel calf raise is the exercise from the Rathleff trial. It is a single-leg heel raise on a step, with a rolled towel under the toes. The towel pulls the toes upward at the top of the raise, which engages the windlass mechanism - the way the plantar fascia tightens when the big toe bends back. Without the towel, you are training the calf but loading the fascia much less.
+The towel calf raise is the exercise from the Rathleff trial. It is a single-leg heel raise on a step, with a rolled towel under the toes. The towel pulls the toes upward at the top of the raise, which engages the windlass mechanism: the way the plantar fascia tightens when the big toe bends back. Without the towel, you are training the calf but loading the fascia much less.
 
 Stand on one foot on the edge of a step, with a rolled hand towel under all five toes. The ball of the foot stays on the step. Hold a wall or rail for balance. Rise up over three seconds, hold at the top for two, and lower over three seconds. Let the heel sink slightly below the step on the way down. In the trial, participants added weight with a backpack once bodyweight became too easy.
 
@@ -481,7 +481,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 ### How many calf raises should you do, and how do you add load?
 
-The Rathleff protocol uses a repetition maximum (RM) system rather than a fixed rep count. "12RM" means the heaviest load you can lift for exactly 12 controlled reps - the twelfth rep should be the last one you can do with good form. For most people starting out, bodyweight on one leg is enough. When it is not, a backpack with books or water bottles adds weight.
+The Rathleff protocol uses a repetition maximum (RM) system rather than a fixed rep count. "12RM" means the heaviest load you can lift for exactly 12 controlled reps. The twelfth rep should be the last one you can do with good form. For most people starting out, bodyweight on one leg is enough. When it is not, a backpack with books or water bottles adds weight.
 
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
@@ -609,7 +609,7 @@ Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Ach
 
 ### What is the eccentric heel drop, and why is it not a stretch?
 
-The eccentric heel drop is a strength exercise, not a flexibility stretch. You rise on both feet, shift to the painful side, and lower slowly on one foot, letting the heel sink below the step edge. The lowering phase is the eccentric contraction - the calf muscle lengthening under load. That controlled descent is what builds tendon capacity over weeks.
+The eccentric heel drop is a strength exercise, not a flexibility stretch. You rise on both feet, shift to the painful side, and lower slowly on one foot, letting the heel sink below the step edge. The lowering phase is the eccentric contraction: the calf muscle lengthening under load. That controlled descent is what builds tendon capacity over weeks.
 
 The most common mistake is holding the bottom position like a calf stretch. That turns it into a static stretch, which is a different stimulus. The point is the slow, loaded descent. Three seconds down, with the muscle working the whole way.
 
@@ -701,11 +701,11 @@ Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports act
 
 ### See a clinician first if
 
-- you felt a sudden pop, snap or a sensation of being kicked in the back of the leg, especially with immediate difficulty pushing off or walking on the toes - this can indicate an Achilles tendon rupture
-- you are currently taking or have recently taken a fluoroquinolone antibiotic (such as ciprofloxacin or levofloxacin) and have new or worsening tendon pain - these drugs carry an FDA boxed warning for tendinitis and tendon rupture
+- you felt a sudden pop, snap or a sensation of being kicked in the back of the leg, especially with immediate difficulty pushing off or walking on the toes. This can indicate an Achilles tendon rupture
+- you are currently taking or have recently taken a fluoroquinolone antibiotic (such as ciprofloxacin or levofloxacin) and have new or worsening tendon pain. These drugs carry an FDA boxed warning for tendinitis and tendon rupture
 - pain and swelling came on suddenly with fever, redness or warmth over the tendon
 - there is significant swelling, bruising or a palpable gap in the tendon
-- pain is right at the heel-bone attachment and gets worse with stretching or deep heel drops, not better - this points to insertional tendinopathy needing a modified approach or a clinician's input
+- pain is right at the heel-bone attachment and gets worse with stretching or deep heel drops, not better. This points to insertional tendinopathy needing a modified approach or a clinician's input
 - pain or stiffness is getting steadily worse over weeks despite consistent loading
 - pain is present at rest or wakes you at night
 - you cannot put weight on the foot or you are limping
@@ -4513,7 +4513,7 @@ Walkito does not diagnose, does not treat, and does not replace a clinician. Wal
 
 ### Has a clinician reviewed Walkito’s guides?
 
-No licensed clinician has reviewed Walkito’s guides yet. The Walkito team writes them from the published research cited on each page.
+No licensed clinician has reviewed Walkito’s guides yet. Walkito Research writes them from the published research cited on each page.
 
 When a clinician does review them, this page will list their name, their credentials and what they checked. Until then, no page on this site claims a medical reviewer.
 

@@ -44,7 +44,7 @@ export const CALF_RAISES_EN: Guide = {
     {
       h2: 'How do you do a towel calf raise for plantar fasciitis?',
       paragraphs: [
-        'The towel calf raise is the exercise from the Rathleff trial. It is a single-leg heel raise on a step, with a rolled towel under the toes. The towel pulls the toes upward at the top of the raise, which engages the windlass mechanism - the way the plantar fascia tightens when the big toe bends back. Without the towel, you are training the calf but loading the fascia much less.',
+        'The towel calf raise is the exercise from the Rathleff trial. It is a single-leg heel raise on a step, with a rolled towel under the toes. The towel pulls the toes upward at the top of the raise, which engages the windlass mechanism: the way the plantar fascia tightens when the big toe bends back. Without the towel, you are training the calf but loading the fascia much less.',
         'Stand on one foot on the edge of a step, with a rolled hand towel under all five toes. The ball of the foot stays on the step. Hold a wall or rail for balance. Rise up over three seconds, hold at the top for two, and lower over three seconds. Let the heel sink slightly below the step on the way down. In the trial, participants added weight with a backpack once bodyweight became too easy.',
         'Start on both feet if single-leg raises are too hard right now. Both-leg raises on the floor, without a step, are where the calf chain begins. The towel and the step come in later, once standing heel raises feel easy for two sessions in a row.',
       ],
@@ -127,7 +127,7 @@ export const CALF_RAISES_EN: Guide = {
     {
       h2: 'How many calf raises should you do, and how do you add load?',
       paragraphs: [
-        'The Rathleff protocol uses a repetition maximum (RM) system rather than a fixed rep count. "12RM" means the heaviest load you can lift for exactly 12 controlled reps - the twelfth rep should be the last one you can do with good form. For most people starting out, bodyweight on one leg is enough. When it is not, a backpack with books or water bottles adds weight.',
+        'The Rathleff protocol uses a repetition maximum (RM) system rather than a fixed rep count. "12RM" means the heaviest load you can lift for exactly 12 controlled reps. The twelfth rep should be the last one you can do with good form. For most people starting out, bodyweight on one leg is enough. When it is not, a backpack with books or water bottles adds weight.',
       ],
       table: {
         caption: 'Rathleff 2015 heel-raise progression',

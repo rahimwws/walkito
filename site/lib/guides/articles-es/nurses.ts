@@ -14,7 +14,7 @@ export const NURSES_ES: Guide = {
   mainSource: CITE.reedNurse,
   published: '2026-10-07',
   updated: '2026-10-07',
-  title: 'Dolor de pies en enfermeras: turnos de 12\u00A0horas y ejercicios',
+  title: 'Dolor de pies en enfermeras: turnos de 12\u00A0horas',
   description:
     'Por qué las enfermeras tienen dolor de pies en turnos de 12\u00A0horas: zapatos, medias de compresión, ejercicios y cómo hacerlos con turnos rotativos.',
   h1: 'Dolor de pies en enfermeras: qué ayuda en turnos de 12\u00A0horas',
