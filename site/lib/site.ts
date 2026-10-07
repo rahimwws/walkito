@@ -179,13 +179,14 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/walkito.app/';
  */
 /** Other profiles that are really Walkito's: the Substack publication and the
  * Strava club. Directory listings (AlternativeTo, SaaSHub) join once approved. */
+// Rahim's personal newsletter: not a Walkito profile, so not in SAME_AS.
 export const SUBSTACK_URL = 'https://rahimwws.substack.com';
 export const STRAVA_CLUB_URL = 'https://www.strava.com/clubs/walkito';
 export const YOUTUBE_URL = 'https://www.youtube.com/@walkitoapp';
 export const LINKEDIN_URL = 'https://www.linkedin.com/company/walkito-app';
 export const CRUNCHBASE_URL = 'https://www.crunchbase.com/organization/walkito';
 
-export const SAME_AS: readonly string[] = [TIKTOK_URL, INSTAGRAM_URL, APP_STORE_URL, YOUTUBE_URL, LINKEDIN_URL, CRUNCHBASE_URL, SUBSTACK_URL, STRAVA_CLUB_URL].filter(
+export const SAME_AS: readonly string[] = [TIKTOK_URL, INSTAGRAM_URL, APP_STORE_URL, YOUTUBE_URL, LINKEDIN_URL, CRUNCHBASE_URL, STRAVA_CLUB_URL].filter(
   (url): url is string => url != null && url !== '',
 );
 
