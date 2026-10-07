@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { CHROME, CUSTOM_EN_ES, TRANSLATED, type Lang } from '@/lib/i18n';
+import { CHROME, CUSTOM_PAGES, TRANSLATED, type Lang } from '@/lib/i18n';
 import { storeHref } from '@/lib/site';
 
 /** The arrow inside the header button. Inline rather than an icon package: one
@@ -40,28 +40,12 @@ export function Masthead({ lang = 'en' }: { lang?: Lang }) {
         Walkito
       </Link>
 
-      {/* English and Spanish keep program, evidence and questions in the
-          header. Russian has only the guides translated, so its header leads
-          with the guides. */}
+      {/* Every language now has program, evidence and questions pages, so the
+          header is the same in all three. */}
       <nav className="nav">
-        {lang === 'en' ? (
-          <>
-            <Link href="/program/">{c.navProgram}</Link>
-            <Link href="/science/">{c.navEvidence}</Link>
-            <Link href="/faq/">{c.navQuestions}</Link>
-          </>
-        ) : lang === 'es' ? (
-          <>
-            <Link href={CUSTOM_EN_ES.program.es}>{c.navProgram}</Link>
-            <Link href={CUSTOM_EN_ES.science.es}>{c.navEvidence}</Link>
-            <Link href={CUSTOM_EN_ES.faq.es}>{c.navQuestions}</Link>
-          </>
-        ) : (
-          <>
-            <Link href={TRANSLATED.flatFeet[lang]}>{c.navFlatFeet}</Link>
-            <Link href={TRANSLATED.heelPain[lang]}>{c.navHeelPain}</Link>
-          </>
-        )}
+        <Link href={CUSTOM_PAGES.program[lang]}>{c.navProgram}</Link>
+        <Link href={CUSTOM_PAGES.science[lang]}>{c.navEvidence}</Link>
+        <Link href={CUSTOM_PAGES.faq[lang]}>{c.navQuestions}</Link>
         <Link href={TRANSLATED.support[lang]}>{c.navSupport}</Link>
         <Link href={TRANSLATED.privacy[lang]}>{c.navPrivacy}</Link>
       </nav>
