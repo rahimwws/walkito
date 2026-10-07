@@ -65,6 +65,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
           feel: 'Un ardor en la pantorrilla que crece con las repeticiones',
           stop: 'No puedes levantar el talón, no puedes seguir el ritmo del metrónomo o se te dobla la rodilla',
           media: 'heel_raise_double',
+          mediaIsStandIn: true,
           caption: 'Test de elevación de talón: sube lo más alto que puedas en cada pulso, con la punta de los dedos en la pared para el equilibrio',
           alt: 'Una figura sube en puntas sobre un pie, con la punta de los dedos en una pared para el equilibrio',
         },

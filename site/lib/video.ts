@@ -26,12 +26,16 @@ function clipSeconds(id: string): number | undefined {
 }
 
 export function videoSchema(
-  items: readonly { media?: string; name: string; caption?: string; how: string }[],
+  items: readonly { media?: string; mediaIsStandIn?: boolean; name: string; caption?: string; how: string }[],
   lang: Lang,
   uploadDate: string,
 ) {
+  // One VideoObject per clip per page: a clip shown twice is one video, and a
+  // stand-in clip is not described as a video of the block it illustrates.
+  const seen = new Set<string>();
   return items
-    .filter((e): e is typeof e & { media: string } => Boolean(e.media))
+    .filter((e): e is typeof e & { media: string } => Boolean(e.media) && !e.mediaIsStandIn)
+    .filter((e) => (seen.has(e.media) ? false : (seen.add(e.media), true)))
     .map((e) => {
       const seconds = clipSeconds(e.media);
       return {
