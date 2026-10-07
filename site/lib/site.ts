@@ -177,7 +177,12 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/walkito.app/';
  * The Organization's `sameAs`: every profile that is really ours. The App Store
  * listing joins by itself the day `APP_STORE_URL` is set.
  */
-export const SAME_AS: readonly string[] = [TIKTOK_URL, INSTAGRAM_URL, APP_STORE_URL].filter(
+/** Other profiles that are really Walkito's: the Substack publication and the
+ * Strava club. Directory listings (AlternativeTo, SaaSHub) join once approved. */
+export const SUBSTACK_URL = 'https://rahimwws.substack.com';
+export const STRAVA_CLUB_URL = 'https://www.strava.com/clubs/walkito';
+
+export const SAME_AS: readonly string[] = [TIKTOK_URL, INSTAGRAM_URL, APP_STORE_URL, SUBSTACK_URL, STRAVA_CLUB_URL].filter(
   (url): url is string => url != null && url !== '',
 );
 

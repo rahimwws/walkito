@@ -19,6 +19,17 @@ const ORGANISATION = {
   // keeps going while it is used.
   description:
     'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
+  // Another "Walkito" exists (a dog-walking marketplace in Uruguay at
+  // walkito.com), and Google's AI answers have been resolving the name to it.
+  // This says in one line which Walkito this one is.
+  disambiguatingDescription:
+    'Walkito is an iPhone exercise app for heel pain, plantar fasciitis and flat feet. It is not a dog-walking service.',
+  foundingDate: '2026',
+  founder: {
+    '@type': 'Person',
+    name: 'Rahim Hudaykylyyev',
+    sameAs: ['https://www.linkedin.com/in/rhdklv/', 'https://x.com/rahimwws'],
+  },
   // Only profiles that are really ours; see `SAME_AS`.
   ...(SAME_AS.length > 0 ? { sameAs: SAME_AS } : {}),
 };

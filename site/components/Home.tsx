@@ -36,14 +36,18 @@ const { testEveryDays, testEveryDaysAfterGoal, painFreeDays, retestTests, retest
  */
 const APP = {
   '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
+  '@type': ['SoftwareApplication', 'MobileApplication'],
   name: APP_STORE_NAME,
-  alternateName: SITE_NAME,
+  alternateName: [SITE_NAME, 'Walkito app'],
+  disambiguatingDescription:
+    'An iPhone exercise app for heel pain, plantar fasciitis and flat feet. Not the Walkito dog-walking service.',
   url: SITE_URL,
   ...(APP_STORE_URL ? { installUrl: APP_STORE_URL, sameAs: [APP_STORE_URL] } : {}),
   publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
   applicationCategory: 'HealthApplication',
   operatingSystem: 'iOS',
+  // Free to download; the plan itself is a subscription inside the app.
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   description:
     'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
   availableLanguage: ['en', 'ru', 'es'],
