@@ -386,6 +386,8 @@ Deno.serve(async (req) => {
             settingsUrl: unsubscribeUrl,
             postalAddress: config.postalAddress ? config.postalAddress.toLowerCase() : '',
             assetBase: config.linkBase,
+            footerWhy: "you're getting this because you asked for the free exercise sheets on walkito.site.",
+            hideSettings: true,
           });
 
           const res = await fetch('https://api.resend.com/emails', {

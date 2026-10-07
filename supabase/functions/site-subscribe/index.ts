@@ -121,6 +121,8 @@ async function renderSiteEmail(
     settingsUrl: unsubscribeUrl,
     postalAddress: POSTAL ? POSTAL.toLowerCase() : '',
     assetBase: SITE,
+    footerWhy: "you're getting this because you asked for the free exercise sheets on walkito.site.",
+    hideSettings: true,
   });
 
   return {

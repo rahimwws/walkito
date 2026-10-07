@@ -4,6 +4,19 @@ import { createElement as h, type ReactElement } from 'react';
 import { copyFor } from './copy.ts';
 import type { EmailContent, Locale } from './types.ts';
 
+/** `[label](https://...)` inside a paragraph becomes a real link; the rest stays text. */
+function inlineLinks(p: string): (string | ReactElement)[] {
+  const out: (string | ReactElement)[] = [];
+  let last = 0;
+  for (const m of p.matchAll(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g)) {
+    if (m.index! > last) out.push(p.slice(last, m.index));
+    out.push(h(Link, { key: m.index, href: m[2], className: 'ink', style: { color: INK, textDecoration: 'underline', fontWeight: 600 } }, m[1]));
+    last = m.index! + m[0].length;
+  }
+  if (last < p.length) out.push(p.slice(last));
+  return out.length ? out : [p];
+}
+
 /**
  * The one email layout, in React Email.
  *
@@ -36,6 +49,10 @@ export type TemplateProps = {
   postalAddress: string;
   /** Where `email/mascot.png` is served from, e.g. `https://walkito.site`. */
   assetBase: string;
+  /** Replaces the footer's "why you get this" line, e.g. for website signups who never used the app. */
+  footerWhy?: string;
+  /** Hide the "email settings" link (website signups have no app settings). */
+  hideSettings?: boolean;
 };
 
 const FONT = 'ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
@@ -51,6 +68,9 @@ const DARK_CSS = `
 :root { color-scheme: light dark; supported-color-schemes: light dark; }
 @media (prefers-color-scheme: dark) {
   .page { background-color: #111113 !important; }
+  /* React Email puts the page colour on the inner <td>, not on <body>: darken it too,
+     or white text lands on a white cell and the email reads blank in dark mode. */
+  .page td { background-color: #111113 !important; }
   .ink { color: #FFFFFF !important; }
   .muted, .faint, .faint a { color: #9E9EA6 !important; }
   .btn { background-color: #FFFFFF !important; color: #111114 !important; }
@@ -78,7 +98,7 @@ export function EmailLayout(props: TemplateProps): ReactElement {
         h(Img, { src: `${props.assetBase.replace(/\/+$/, '')}/email/mascot.png`, width: 64, height: 64, alt: 'walkito', style: { margin: '0 0 14px -6px' } }),
         content.greeting != null ? text('ink', { color: INK, fontSize: 17, lineHeight: '26px', fontWeight: 700, marginBottom: 12 }, content.greeting) : null,
         ...content.paragraphs.map((p, i) =>
-          h(Text, { key: i, className: 'ink', style: { margin: '0 0 12px', color: INK, fontSize: 17, lineHeight: '26px', fontFamily: FONT } }, p),
+          h(Text, { key: i, className: 'ink', style: { margin: '0 0 12px', color: INK, fontSize: 17, lineHeight: '26px', fontFamily: FONT } }, ...inlineLinks(p)),
         ),
         content.button.label
           ? h(
@@ -109,13 +129,13 @@ export function EmailLayout(props: TemplateProps): ReactElement {
         h(
           Section,
           { className: 'rule', style: { borderTop: `1px solid ${LINE}`, marginTop: 22, paddingTop: 14 } },
-          text('faint', { color: FAINT, fontSize: 12, lineHeight: '18px' }, footer.why),
+          text('faint', { color: FAINT, fontSize: 12, lineHeight: '18px' }, props.footerWhy ?? footer.why),
           h(
             Text,
             { className: 'faint', style: { margin: '2px 0 0', color: FAINT, fontSize: 12, lineHeight: '18px', fontFamily: FONT } },
             h(Link, { href: props.unsubscribeUrl, style: { color: FAINT, textDecoration: 'underline' } }, footer.unsubscribe),
-            ' · ',
-            h(Link, { href: props.settingsUrl, style: { color: FAINT, textDecoration: 'underline' } }, footer.settings),
+            props.hideSettings ? null : ' · ',
+            props.hideSettings ? null : h(Link, { href: props.settingsUrl, style: { color: FAINT, textDecoration: 'underline' } }, footer.settings),
           ),
           props.postalAddress
             ? text('faint', { color: FAINT, fontSize: 12, lineHeight: '18px', marginTop: 2 }, `walkito · ${props.postalAddress}`)
