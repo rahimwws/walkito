@@ -171,7 +171,7 @@ export function day4(_locale: Locale): SiteEmailContent {
 
 export function day5(_locale: Locale): SiteEmailContent {
   return {
-    subject: 'day 5: how your morning pain tells you what to do today',
+    subject: 'day 5: what your first steps tell you about today',
     preheader: 'the first steps are the clearest signal of how yesterday went.',
     paragraphs: [
       'morning pain on the first steps is the pattern most often linked to plantar fasciitis. it usually eases once you get moving, and it comes back after you sit for a while.',
