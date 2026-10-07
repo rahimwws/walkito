@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: alternatesCustomEnEs('exercises', 'en'),
-  openGraph: { title: `${TITLE} | ${SITE_NAME}`, description: DESCRIPTION, url: PATH, siteName: SITE_NAME, type: 'website', images: ['/opengraph-image'] },
+  openGraph: { title: `${TITLE} | ${SITE_NAME}`, description: DESCRIPTION, url: PATH, siteName: SITE_NAME, locale: 'en_US', type: 'website', images: ['/opengraph-image'] },
 };
 
 /** The library in three groups, in the order a plan usually adds them. */
@@ -97,7 +97,7 @@ export default function ExerciseLibrary() {
                 return (
                   <li key={k}>
                     <a href={guidePath(g)}>
-                      {media && <img src={`/exercises/${media}.webp`} alt="" width={96} height={120} loading="lazy" />}
+                      {media && <img src={`/exercises/${media}.webp`} alt={`${g.crumb}: demonstration`} width={96} height={120} loading="lazy" />}
                       <span>
                         <strong>{g.crumb}</strong>
                         <span>{g.description}</span>

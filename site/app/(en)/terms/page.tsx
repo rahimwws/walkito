@@ -49,9 +49,11 @@ export const metadata: Metadata = {
     'Terms for using Walkito: what the app is and is not, your account, subscriptions, invites, health and safety.',
   alternates: alternatesFor('terms', 'en'),
   openGraph: {
+    locale: 'en_US',
     title: `Terms of Use | ${SITE_NAME}`,
     description: 'What the app is, how payments work, and the limits of what it claims.',
     url: '/terms',
+    images: ['/opengraph-image'],
     type: 'website',
   },
 };

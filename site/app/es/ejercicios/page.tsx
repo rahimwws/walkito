@@ -115,7 +115,7 @@ export default function ExerciseLibraryEs() {
                 return (
                   <li key={k}>
                     <a href={guidePath(g)}>
-                      {media && <img src={`/exercises/${media}.webp`} alt="" width={96} height={120} loading="lazy" />}
+                      {media && <img src={`/exercises/${media}.webp`} alt={`Demostración: ${g.crumb.toLowerCase()}`} width={96} height={120} loading="lazy" />}
                       <span>
                         <strong>{g.crumb}</strong>
                         <span>{g.description}</span>
