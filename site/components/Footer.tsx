@@ -144,6 +144,8 @@ export function Footer({
             ]}
           />
           <Column heading={h.pain} links={group(NAV_GROUPS.pain)} />
+          <Column heading={h.heel} links={group(NAV_GROUPS.heel)} />
+          <Column heading={h.foot} links={group(NAV_GROUPS.foot)} />
           <div className="footer-col footer-stack">
             <Column heading={h.work} links={group(NAV_GROUPS.work)} />
             <Column heading={h.compare} links={group(NAV_GROUPS.compare)} />
