@@ -244,7 +244,7 @@ export const CALF_RAISES_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'You don\'t have to work out the sets, the weight or when to move to the next step. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1/10 for 14 days in a row. The calf raise ladder - seated, double-leg, hold, towel, heel drops - moves at your pace, not on a fixed calendar.',
+    text: 'You don\'t have to work out the sets, the weight or when to move to the next step. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1/10 for 14 days in a row. The calf raise ladder (seated, double-leg, hold, towel, heel drops) moves at your pace, not on a fixed calendar.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once that goal is met), a short test checks calf endurance, arch hold and balance, so you can see what is changing. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],
