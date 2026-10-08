@@ -13,4 +13,13 @@ for (const dir of ['articles', 'articles-es', 'articles-ru']) {
   console.log(`${dir}/calf-raise-test.ts norms table: ${ok ? 'matches' : 'DIFFERS'}`);
   if (!ok) failed++;
 }
+// Recovery timeline: every Hansen 2018 number must appear in each guide.
+const pts = [...readFileSync('lib/tools/pf-timeline.ts', 'utf8').matchAll(/pct: ([\d.]+)/g)].map((m) => Number(m[1]));
+for (const dir of ['articles', 'articles-es', 'articles-ru']) {
+  const src = readFileSync(`lib/guides/${dir}/pf-duration.ts`, 'utf8');
+  const sep = dir === 'articles' ? '.' : ',';
+  const missing = pts.filter((p) => !src.includes(p.toFixed(1).replace('.', sep)));
+  console.log(`${dir}/pf-duration.ts Hansen numbers: ${missing.length ? 'MISSING ' + missing.join(' ') : 'all present'}`);
+  if (missing.length || pts.length !== 4) failed++;
+}
 process.exit(failed ? 1 : 0);

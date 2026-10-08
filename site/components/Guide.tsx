@@ -20,6 +20,7 @@ import { articleSchema, faqSchema } from '@/lib/schema';
 import { videoSchema, imageSchema } from '@/lib/video';
 import { AnatomyFigure } from '@/components/AnatomyFigure';
 import { CalfRaiseCalculator } from '@/components/tools/CalfRaiseCalculator';
+import { PfTimeline } from '@/components/tools/PfTimeline';
 import { anatomySchema } from '@/lib/anatomy';
 import { SITE_URL } from '@/lib/site';
 
@@ -381,6 +382,11 @@ export function Guide({ guide }: { guide: GuideData }) {
               <CalfRaiseCalculator lang={guide.lang}>
                 <AppStoreBadge campaign="tool-calf-raise" lang={guide.lang} />
               </CalfRaiseCalculator>
+            )}
+            {section.tool === 'pf-timeline' && (
+              <PfTimeline lang={guide.lang}>
+                <AppStoreBadge campaign="tool-pf-timeline" lang={guide.lang} />
+              </PfTimeline>
             )}
           </section>
         ))}
