@@ -42,4 +42,27 @@ export const QUICK_DE = {
 
   'quick.locked': 'Gesperrt',
   'quick.lockedHint': 'Im Programm enthalten',
+
+  'quick.kicker': 'Routine',
+  'quick.whyTitle': 'Warum das hilft',
+  'quick.flare.why':
+    'Drei Übungen im Sitzen, die der schmerzenden Stelle kaum etwas abverlangen. Rollen und sanftes Dehnen lösen die Spannung, ohne Gewicht auf den Fuß zu bringen.',
+  'quick.preRun.why':
+    'Zwei Minuten, die das Sprunggelenk und die kleinen Muskeln unter dem Gewölbe wecken, damit dein Fuß ab dem ersten Schritt bereit ist.',
+  'quick.postRun.why':
+    'Nach dem Laufen werden Waden und Fußsohlen fest. Langsames, gehaltenes Dehnen, solange du noch warm bist, hilft ihnen, sich zu lösen.',
+  'quick.atWork.why':
+    'Stundenlanges Stehen ist hart für die Füße. Ein paar unauffällige Übungen halten das Gewölbe aktiv und das Sprunggelenk beweglich, ohne dass du deinen Platz verlässt.',
+  'quick.morning.why':
+    'Die ersten Schritte am Tag sind oft die schwersten. Die Sohle vor dem Aufstehen zu dehnen, gibt ihr einen sanften Start.',
+  'quick.moves': { one: '{count} Übung', other: '{count} Übungen' },
+  'quick.stepSeconds': { one: '{count} Sek.', other: '{count} Sek.' },
+  'quick.stepSwitch': {
+    one: '{count} Sek., nach der Hälfte Bein wechseln',
+    other: '{count} Sek., nach der Hälfte Bein wechseln',
+  },
+  'quick.startMinutes': {
+    one: 'Starten · {count} Min.',
+    other: 'Starten · {count} Min.',
+  },
 };

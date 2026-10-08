@@ -4,12 +4,13 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { useHealthSignals } from '@/entities/health';
 import { libraryFavourites, painSeries, todayKey, usePlanVersion } from '@/entities/program';
+import { browsingLapsed, clearBrowsingLapsed, useEntitled } from '@/entities/purchase';
 import {
   PROTOCOL_ART,
   PROTOCOL_ICONS,
   PROTOCOLS,
   protocolById,
-  requestProtocol,
+  type Protocol,
   type ProtocolId,
 } from '@/entities/protocols';
 import { fonts, palette } from '@/shared/config';
@@ -26,8 +27,8 @@ const CARD_WIDTH = 150;
  * Library routines under Today, as small cards — section 5.2 of the plan spec.
  *
  * The card that suits this moment first, then favourites, then the rest. A tap
- * opens the routine on the Library tab, where it lives, so there is one place
- * that starts a routine and one place that decides whether it is locked.
+ * pushes the routine's own page (`/routine/[id]`), the same page the Quick tab
+ * opens, so there is one place that starts a routine. Back returns here.
  */
 export function LibraryRow() {
   const scheme = useColorScheme();
@@ -35,7 +36,24 @@ export function LibraryRow() {
   const t = useT();
   const router = useRouter();
   const health = useHealthSignals();
+  const entitled = useEntitled();
   usePlanVersion();
+
+  /**
+   * A locked routine goes to the paywall, as it does from the Quick tab: the
+   * standard offer, or for somebody browsing after their access ended, the
+   * expiry screen (clearing the flag brings it back; `/offer` is not a route
+   * for them).
+   */
+  const open = (protocol: Protocol) => {
+    Haptics.selectionAsync();
+    if (!protocol.free && !entitled) {
+      if (browsingLapsed()) clearBrowsingLapsed();
+      else router.push('/offer');
+      return;
+    }
+    router.push({ pathname: '/routine/[id]', params: { id: protocol.id } });
+  };
 
   const today = todayKey();
   const pain = painSeries(today, 1)[0];
@@ -64,11 +82,7 @@ export function LibraryRow() {
               icon={PROTOCOL_ICONS[id]}
               accent={protocol.accent}
               style={styles.card}
-              onPress={() => {
-                Haptics.selectionAsync();
-                requestProtocol(id);
-                router.navigate('/quick');
-              }}
+              onPress={() => open(protocol)}
             />
           );
         })}

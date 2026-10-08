@@ -149,4 +149,34 @@ export const TESTDAY_ES = {
   'testday.results.nextTest': 'Próxima prueba: {date}',
   'testday.results.planUpdated': 'Tu plan para las próximas dos semanas está actualizado.',
   'testday.results.done': 'Listo',
+
+  'testday.results.verdictFirst': 'Tres pruebas hechas. Estos son tus números de partida.',
+  'testday.results.verdictSteady': 'Tres pruebas hechas. Así se compara cada una.',
+  'testday.results.verdictUp.calf_raises': 'Tres pruebas hechas. Las elevaciones de talón subieron.',
+  'testday.results.verdictUp.arch_hold': 'Tres pruebas hechas. Mantuviste el arco más tiempo.',
+  'testday.results.verdictUp.balance': 'Tres pruebas hechas. Mantuviste el equilibrio más tiempo.',
+  'testday.results.verdictUpTwo': 'Tres pruebas hechas. Dos de ellas subieron.',
+  'testday.results.verdictUpAll': 'Tres pruebas hechas. Las tres subieron.',
+  'testday.results.dateVs': {
+    one: '{date} · comparado con hace {count} día',
+    other: '{date} · comparado con hace {count} días',
+  },
+  'testday.results.dateFirst': '{date} · tu punto de partida',
+  'testday.results.chipBaseline': 'Punto de partida',
+  'testday.results.chipSame': 'Igual',
+  'testday.results.chipSeconds': '{delta} s',
+  'testday.results.chipRaises': { one: '{delta} elevación', other: '{delta} elevaciones' },
+  'testday.results.lastSeconds': 'La última vez {n} s',
+  'testday.results.lastRaises': 'La última vez {n}',
+  'testday.results.legLeft': 'Izquierda',
+  'testday.results.legRight': 'Derecha',
+  'testday.results.weakerLeg': 'El número grande es tu pierna más débil.',
+  'testday.results.gapBetween': 'Diferencia entre piernas {n} %',
+  'testday.results.explain.calf_raises':
+    'Las elevaciones de talón muestran cuánto trabajo aguantan tu pantorrilla y tu tendón de Aquiles antes de cansarse. Más elevaciones significa que la pantorrilla lleva más de cada paso en caminatas y carreras largas.',
+  'testday.results.explain.arch_hold':
+    'Mantener el arco muestra cuánto tiempo los músculos pequeños de la planta sostienen el arco levantado. Un tiempo más largo significa que el pie se mantiene apoyado durante más parte del día.',
+  'testday.results.explain.balance':
+    'Estar sobre una pierna con los ojos cerrados muestra lo bien que tu pie y tu tobillo sienten el suelo. Más segundos significa pasos más firmes en caminos irregulares y cuando estás cansado.',
+  'testday.results.explainA11y': 'Qué muestra esto',
 };

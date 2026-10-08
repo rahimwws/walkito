@@ -1,7 +1,7 @@
 import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -17,14 +17,11 @@ import {
   recommendProtocol,
   useProtocolRequest,
   type Protocol,
-  type ProtocolId,
 } from '@/entities/protocols';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { FeatureCard } from '@/shared/ui/feature-card';
-
-import { ProtocolSheet } from './protocol-sheet';
 
 /**
  * The third tab: five short protocols, runnable any day.
@@ -35,8 +32,8 @@ import { ProtocolSheet } from './protocol-sheet';
  * nothing.
  *
  * Everything on it is assembled from parts that already existed: the cards are
- * `FeatureCard`, the sheet is the same bottom sheet the rest of the app uses,
- * the player is the session player with a playlist handed to it, and every
+ * `FeatureCard`, a tap pushes the routine's own page (`pages/routine`), the
+ * player there is the session player with a playlist handed to it, and every
  * colour is the accent already used for the day type that means the same
  * thing. Nothing here is a new component.
  */
@@ -57,7 +54,6 @@ export function QuickPage() {
   // mounted has to change what is featured here.
   useProgramState();
 
-  const [open, setOpen] = useState<ProtocolId | null>(null);
   const health = useHealthSignals();
 
   /**
@@ -88,6 +84,7 @@ export function QuickPage() {
   }, [health.lastRunEndedAt]);
 
   const featured = protocolById(featuredId);
+  const rest = PROTOCOLS.filter((protocol) => protocol.id !== featuredId);
 
   const locked = (protocol: Protocol) => !protocol.free && !entitled;
 
@@ -106,12 +103,13 @@ export function QuickPage() {
       else router.push('/offer');
       return;
     }
-    setOpen(protocol.id);
+    router.push({ pathname: '/routine/[id]', params: { id: protocol.id } });
   };
 
   /**
-   * A routine asked for from elsewhere — the small cards on Today — opened the
-   * same way a tap on its card here opens it, lock included.
+   * A routine asked for from elsewhere (the plan screen, an email link) opened
+   * the same way a tap on its card here opens it, lock included: its page is
+   * pushed over the tabs.
    */
   const asked = useProtocolRequest();
   useEffect(() => {
@@ -138,9 +136,9 @@ export function QuickPage() {
         <Text style={[styles.title, { color: colors.foreground }]}>{t('quick.title')}</Text>
         <Text style={[styles.subtitle, { color: meter.caption }]}>{t('quick.subtitle')}</Text>
 
-        {/* The one that suits right now. It stays in the grid below as well —
-            people look for a protocol where it usually is, and moving it when
-            it happens to be featured would hide it exactly when it matters.
+        {/* The one that suits right now, and only here: the grid below holds
+            the others. Showing it twice put the same picture and title on the
+            screen twice, one above the other.
 
             A banner rather than the card's own near-square aspect. `FeatureCard`
             is sized for a pair sitting side by side; at full width that shape
@@ -149,13 +147,13 @@ export function QuickPage() {
         <FeatureCard
           title={t(featured.titleKey)}
           image={PROTOCOL_ART[featured.id]}
-          icon={ICONS[featured.id]}
+          icon={locked(featured) ? SquareLock02Icon : ICONS[featured.id]}
           accent={featured.accent}
           onPress={() => openProtocol(featured)}
           style={styles.featured}
         />
         <View style={styles.grid}>
-          {PROTOCOLS.map((protocol, i) => (
+          {rest.map((protocol, i) => (
             <FeatureCard
               key={protocol.id}
               title={t(protocol.titleKey)}
@@ -166,20 +164,11 @@ export function QuickPage() {
               // An odd one out is alone on its row and stretches to the full
               // width, where the tile's near-square shape made it the tallest
               // thing on the screen. It takes the banner shape instead.
-              style={
-                i === PROTOCOLS.length - 1 && PROTOCOLS.length % 2 === 1
-                  ? styles.wide
-                  : styles.tile
-              }
+              style={i === rest.length - 1 && rest.length % 2 === 1 ? styles.wide : styles.tile}
             />
           ))}
         </View>
       </ScrollView>
-
-      <ProtocolSheet
-        protocol={open == null ? null : protocolById(open)}
-        onClose={() => setOpen(null)}
-      />
     </View>
   );
 }

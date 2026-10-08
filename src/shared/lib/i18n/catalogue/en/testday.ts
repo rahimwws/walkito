@@ -174,4 +174,42 @@ export const TESTDAY_EN = {
   'testday.results.nextTest': 'Next test: {date}',
   'testday.results.planUpdated': 'Your plan for the next two weeks is updated.',
   'testday.results.done': 'Done',
+
+  // The headline over the cards. It names what went up and never what went
+  // down; with nothing up it only says the tests are done.
+  'testday.results.verdictFirst': 'Three tests done. These are your starting numbers.',
+  'testday.results.verdictSteady': 'Three tests done. Here is how each one compares.',
+  'testday.results.verdictUp.calf_raises': 'Three tests done. Calf raises went up.',
+  'testday.results.verdictUp.arch_hold': 'Three tests done. Your arch hold got longer.',
+  'testday.results.verdictUp.balance': 'Three tests done. You balanced for longer.',
+  'testday.results.verdictUpTwo': 'Three tests done. Two of them went up.',
+  'testday.results.verdictUpAll': 'Three tests done. All three went up.',
+  // Under the headline: the test's date, and how far back the comparison goes.
+  'testday.results.dateVs': {
+    one: '{date} · compared with {count} day ago',
+    other: '{date} · compared with {count} days ago',
+  },
+  'testday.results.dateFirst': '{date} · your starting point',
+  // The chip beside a test's name: the change since last time, in short.
+  'testday.results.chipBaseline': 'Baseline',
+  'testday.results.chipSame': 'Same',
+  'testday.results.chipSeconds': '{delta} s',
+  'testday.results.chipRaises': { one: '{delta} raise', other: '{delta} raises' },
+  // Under the comparison track, at last time's dot.
+  'testday.results.lastSeconds': 'Last time {n} s',
+  'testday.results.lastRaises': 'Last time {n}',
+  // The calf card's two legs, and the gap between them.
+  'testday.results.legLeft': 'Left',
+  'testday.results.legRight': 'Right',
+  'testday.results.weakerLeg': 'The big number is your weaker leg.',
+  'testday.results.gapBetween': 'Gap between legs {n}%',
+  // What each test shows, and what a higher number means on your feet. No
+  // diagnosis, no promise.
+  'testday.results.explain.calf_raises':
+    'Calf raises show how much work your calf and Achilles can do before they tire. More raises means your calf carries more of each step on long walks and runs.',
+  'testday.results.explain.arch_hold':
+    'The arch hold shows how long the small muscles under your foot keep the arch lifted. A longer hold means your foot stays supported for more of the day.',
+  'testday.results.explain.balance':
+    'Standing on one leg with your eyes closed shows how well your foot and ankle sense the ground. More seconds means steadier steps on uneven paths and when you are tired.',
+  'testday.results.explainA11y': 'What this shows',
 } as const satisfies Record<string, SourceEntry>;

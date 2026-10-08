@@ -149,4 +149,34 @@ export const TESTDAY_DE = {
   'testday.results.nextTest': 'Nächster Test: {date}',
   'testday.results.planUpdated': 'Dein Plan für die nächsten zwei Wochen ist aktualisiert.',
   'testday.results.done': 'Fertig',
+
+  'testday.results.verdictFirst': 'Drei Tests geschafft. Das sind deine Startwerte.',
+  'testday.results.verdictSteady': 'Drei Tests geschafft. So steht jeder im Vergleich da.',
+  'testday.results.verdictUp.calf_raises': 'Drei Tests geschafft. Beim Fersenheben ging es nach oben.',
+  'testday.results.verdictUp.arch_hold': 'Drei Tests geschafft. Du hältst das Gewölbe länger.',
+  'testday.results.verdictUp.balance': 'Drei Tests geschafft. Du hältst die Balance länger.',
+  'testday.results.verdictUpTwo': 'Drei Tests geschafft. Zwei davon gingen nach oben.',
+  'testday.results.verdictUpAll': 'Drei Tests geschafft. Alle drei gingen nach oben.',
+  'testday.results.dateVs': {
+    one: '{date} · verglichen mit vor {count} Tag',
+    other: '{date} · verglichen mit vor {count} Tagen',
+  },
+  'testday.results.dateFirst': '{date} · dein Ausgangspunkt',
+  'testday.results.chipBaseline': 'Ausgangswert',
+  'testday.results.chipSame': 'Gleich',
+  'testday.results.chipSeconds': '{delta} s',
+  'testday.results.chipRaises': { one: '{delta} Wiederholung', other: '{delta} Wiederholungen' },
+  'testday.results.lastSeconds': 'Letztes Mal {n} s',
+  'testday.results.lastRaises': 'Letztes Mal {n}',
+  'testday.results.legLeft': 'Links',
+  'testday.results.legRight': 'Rechts',
+  'testday.results.weakerLeg': 'Die große Zahl ist dein schwächeres Bein.',
+  'testday.results.gapBetween': 'Unterschied zwischen den Beinen {n} %',
+  'testday.results.explain.calf_raises':
+    'Fersenheben zeigt, wie viel Arbeit Wade und Achillessehne leisten, bevor sie ermüden. Mehr Wiederholungen heißt, dass die Wade bei langen Spaziergängen und Läufen mehr von jedem Schritt trägt.',
+  'testday.results.explain.arch_hold':
+    'Das Gewölbehalten zeigt, wie lange die kleinen Muskeln unter dem Fuß das Gewölbe oben halten. Längeres Halten heißt, dass der Fuß über mehr vom Tag gestützt bleibt.',
+  'testday.results.explain.balance':
+    'Auf einem Bein mit geschlossenen Augen zeigt sich, wie gut Fuß und Knöchel den Boden spüren. Mehr Sekunden heißt sicherere Schritte auf unebenem Weg und wenn du müde bist.',
+  'testday.results.explainA11y': 'Was das zeigt',
 };

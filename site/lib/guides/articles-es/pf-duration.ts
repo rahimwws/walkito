@@ -27,6 +27,7 @@ export const PF_DURATION_ES: Guide = {
   sections: [
     {
       h2: '¿Cuánto dura normalmente la fascitis plantar?',
+      tool: 'pf-timeline',
       keyFact: 'En una cohorte de 174\u00A0personas, las mujeres quedaron sin síntomas a cerca de la mitad del ritmo de los hombres, y quienes tenían dolor en ambos talones, a cerca de un tercio del ritmo de quienes lo tenían en uno solo (Hansen y colegas, 2018).',
       paragraphs: [
         'No hay un solo número. La recuperación depende de cuánto tiempo llevas con ella, de lo que haces al respecto y de algunos factores que no puedes controlar.',

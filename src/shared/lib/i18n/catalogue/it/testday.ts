@@ -149,4 +149,34 @@ export const TESTDAY_IT = {
   'testday.results.nextTest': 'Prossimo test: {date}',
   'testday.results.planUpdated': 'Il tuo piano per le prossime due settimane è aggiornato.',
   'testday.results.done': 'Fatto',
+
+  'testday.results.verdictFirst': 'Tre test fatti. Questi sono i tuoi numeri di partenza.',
+  'testday.results.verdictSteady': 'Tre test fatti. Ecco come si confronta ciascuno.',
+  'testday.results.verdictUp.calf_raises': 'Tre test fatti. I sollevamenti sui talloni sono aumentati.',
+  'testday.results.verdictUp.arch_hold': 'Tre test fatti. Hai tenuto l’arco più a lungo.',
+  'testday.results.verdictUp.balance': 'Tre test fatti. Sei rimasto in equilibrio più a lungo.',
+  'testday.results.verdictUpTwo': 'Tre test fatti. Due sono aumentati.',
+  'testday.results.verdictUpAll': 'Tre test fatti. Sono aumentati tutti e tre.',
+  'testday.results.dateVs': {
+    one: '{date} · confrontato con {count} giorno fa',
+    other: '{date} · confrontato con {count} giorni fa',
+  },
+  'testday.results.dateFirst': '{date} · il tuo punto di partenza',
+  'testday.results.chipBaseline': 'Punto di partenza',
+  'testday.results.chipSame': 'Uguale',
+  'testday.results.chipSeconds': '{delta} s',
+  'testday.results.chipRaises': { one: '{delta} sollevamento', other: '{delta} sollevamenti' },
+  'testday.results.lastSeconds': 'L’ultima volta {n} s',
+  'testday.results.lastRaises': 'L’ultima volta {n}',
+  'testday.results.legLeft': 'Sinistra',
+  'testday.results.legRight': 'Destra',
+  'testday.results.weakerLeg': 'Il numero grande è la tua gamba più debole.',
+  'testday.results.gapBetween': 'Differenza tra le gambe {n}%',
+  'testday.results.explain.calf_raises':
+    'I sollevamenti sui talloni mostrano quanto lavoro polpaccio e tendine d’Achille reggono prima di stancarsi. Più sollevamenti significa che il polpaccio porta una parte maggiore di ogni passo nelle camminate e nelle corse lunghe.',
+  'testday.results.explain.arch_hold':
+    'La tenuta dell’arco mostra per quanto tempo i piccoli muscoli sotto il piede tengono l’arco sollevato. Una tenuta più lunga significa che il piede resta sostenuto per più parte della giornata.',
+  'testday.results.explain.balance':
+    'Stare su una gamba a occhi chiusi mostra quanto bene piede e caviglia sentono il terreno. Più secondi significa passi più sicuri su terreno irregolare e quando sei stanco.',
+  'testday.results.explainA11y': 'Cosa mostra',
 };

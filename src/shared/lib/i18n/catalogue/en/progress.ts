@@ -43,8 +43,8 @@ export const PROGRESS_EN = {
   // ── Streak tiles ─────────────────────────────────────────────────────────
   // The counts themselves come from `streak.dayCount` in core, so the two
   // tiles and the streak sheet can never write a day differently.
-  'progress.currentStreak': 'Current Streak',
-  'progress.longestStreak': 'Longest Streak',
+  'progress.currentStreak': 'Current streak',
+  'progress.longestStreak': 'Longest streak',
 
   // ── The path ─────────────────────────────────────────────────────────────
   'progress.retestToday': 'Retest today',
@@ -77,6 +77,60 @@ export const PROGRESS_EN = {
   'progress.goalsEmpty': 'Your goals appear after your first test.',
   'progress.goalReached': 'Reached',
   'progress.streakCaption': 'Rest days, rough days and 2-minute days all count.',
+
+  // ── The redesigned screen ────────────────────────────────────────────────
+  // Morning pain card. `{delta}` arrives signed and formatted ("-1.2"), so the
+  // sentence only places it.
+  'progress.avgWeek': 'Average over the last 7 days',
+  'progress.avgMonth': 'Average over the last month',
+  'progress.avgQuarter': 'Average over the last 3 months',
+  'progress.painOutOf': '/10',
+  'progress.deltaWeek': '{delta} vs the week before',
+  'progress.deltaMonth': '{delta} vs the month before',
+  'progress.deltaQuarter': '{delta} vs the 3 months before',
+  'progress.deltaSame': 'Same as before',
+  /** The dashed line across the chart: where the first week sat. */
+  'progress.startLine': 'Start {value}',
+  /** A weekly bar's dates, both already formatted. */
+  'progress.tooltipRange': '{from} - {to}',
+  'progress.painChartA11y': 'Morning pain chart, average {value} out of 10',
+  'progress.painBarA11y': '{date}: {value} out of 10',
+  'progress.painBarEmptyA11y': '{date}: no check-in',
+  'progress.painNoneInRange': 'No morning check-ins in this stretch yet.',
+  /** The empty chart: how many mornings until it is drawn. */
+  'progress.painToGo': {
+    one: '{count} more morning check-in and your chart starts.',
+    other: '{count} more morning check-ins and your chart starts.',
+  },
+  'progress.painToGoSteps': '{done} of {total} check-ins',
+
+  // Strength tests card. The value and its unit are set apart, so the unit is
+  // its own entry; `{delta}` carries its sign.
+  'progress.calfName': 'Calf raises',
+  'progress.balanceName': 'Balance',
+  'progress.archName': 'Arch hold',
+  'progress.repsUnit': { one: 'rep', other: 'reps' },
+  'progress.secondsUnit': 's',
+  'progress.repsDelta': { one: '{delta} rep', other: '{delta} reps' },
+  'progress.secondsDelta': '{delta} s',
+  'progress.baseline': 'Baseline',
+  'progress.noChange': 'No change',
+  'progress.strengthNoTest': 'Not tested yet',
+  'progress.strengthDeltaCaption': 'Changes are counted from your first test.',
+  'progress.nextTest': 'Next test on {date}',
+  'progress.nextTestToday': 'Your next test is due today',
+  'progress.strengthRowA11y': '{name}: {value} {unit}, {change}',
+
+  // Goals card.
+  'progress.goalPercent': '{pct}%',
+  'progress.goalA11y': '{goal}, {pct}% there',
+
+  // Consistency card.
+  'progress.consistencyTitle': 'Consistency',
+  'progress.last4Weeks': 'Last 4 weeks',
+  'progress.heatDone': 'Showed up',
+  'progress.heatRest': 'Rest day',
+  'progress.heatA11y': '{done} of {total} days in the last 4 weeks',
 } as const satisfies Record<string, SourceEntry>;
 
 /**

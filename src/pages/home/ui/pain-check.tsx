@@ -1,16 +1,12 @@
+import ArrowRight01Icon from '@hugeicons/core-free-icons/ArrowRight01Icon';
+import StethoscopeIcon from '@hugeicons/core-free-icons/StethoscopeIcon';
+import Tick02Icon from '@hugeicons/core-free-icons/Tick02Icon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Haptics from 'expo-haptics';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import {
-  Image,
-  Modal,
-  Pressable,
-  StyleSheet,
-  Text,
-  useWindowDimensions,
-  View,
-} from 'react-native';
+import { Image, Modal, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import Animated, {
   Easing,
   ReduceMotion,
@@ -19,6 +15,7 @@ import Animated, {
   useAnimatedStyle,
   useDerivedValue,
   useSharedValue,
+  withSpring,
   withTiming,
 } from 'react-native-reanimated';
 
@@ -35,7 +32,7 @@ import {
   type ProgramDay,
   exerciseById,
 } from '@/entities/program';
-import { fonts, meterColors, palette, primaryButton } from '@/shared/config';
+import { accents, fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { PROGRAM_EASING, PROGRAM_MS } from '@/shared/lib/program';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
@@ -46,30 +43,31 @@ import { useColorScheme } from '@/shared/lib/theme';
 
 import { SessionView } from '@/widgets/session-player';
 
-import {
-  LegMap,
-  MAX_ZONES,
-  ZONE_LABEL_KEYS,
-  toggleZone,
-  type LegZone,
-} from '@/entities/leg-zone';
+import { LegMap, MAX_ZONES, ZONE_LABEL_KEYS, toggleZone, type LegZone } from '@/entities/leg-zone';
 
 import { reliefIdsFor } from '../model/zone-relief';
 
 import { PAIN_MAX, PAIN_MIN, PainScale, painBand, painColor } from './pain-scale';
 import { SafetySheet } from './safety-sheet';
 
-const RADIUS = 36;
 const PRESS_MS = 90;
 const SELECT_MS = 260;
+const SELECT_EASING = Easing.bezier(0.23, 1, 0.32, 1);
 
-/** The overlap and the tilt: what makes the pair read as two cards dropped on
- * the screen rather than two cells of a grid. */
-const CARD_WIDTH = '62%';
+/** The card's corner, and the tiles' — nested, so the inner radius is the
+ * outer one less the padding between them. */
+const CARD_RADIUS = 28;
+const CARD_PAD = 18;
+const TILE_RADIUS = CARD_RADIUS - CARD_PAD / 2;
+
+/** The answer cards: glass, overlapping and tipped a few degrees apart, so the
+ * pair reads as two cards dropped on the screen rather than two cells of a
+ * grid. */
+const GLASS_RADIUS = 36;
+const GLASS_WIDTH = '62%';
 const STAGGER = 34;
 const TILT = 5;
-/** Tall enough for a card; the stage adds the offset between the two. */
-const CARD_HEIGHT = 182;
+const GLASS_HEIGHT = 182;
 
 /** The title is a key, resolved where the card is drawn — so the pair repaints
  * with the language rather than at next launch. */
@@ -106,10 +104,15 @@ export type PainCheckProps = {
  * outcomes visible at once means neither is the default that gets tapped
  * without reading.
  *
- * They are laid on a diagonal, overlapping and tipped a few degrees apart. Side
- * by side in a neat row the pair had shrunk into two small tiles that read as
- * chrome; offset like this they read as two cards dropped on the screen, which
- * is worth the asymmetry on a screen otherwise built out of straight rows.
+ * One card holds the whole question: a kicker that says what this is and how
+ * long it takes, the question itself, the two answers as tiles and the one
+ * button that commits. It used to be grey centred text floating over two
+ * tilted cards, with the button and the link drifting underneath — four
+ * things that did not look like they belonged to each other.
+ *
+ * Picking a tile tints it violet. That is the app's colour for "selected",
+ * the same for either answer: it says which one you chose, never whether it
+ * was the good one.
  *
  * Choosing and confirming are separate. Each card used to carry its own Log
  * button, which asked the same question twice and put two loud primaries side
@@ -236,74 +239,79 @@ export function PainCheck({ onLogged }: PainCheckProps) {
 
   return (
     <>
-      <View style={styles.wrap} {...REPLAY_MASK}>
-        <Text style={[styles.question, { color: meter.label }]}>
-          {morning ? t('home.checkInSubMorning') : t('home.checkInSubDay')}
-        </Text>
-        <View style={styles.stage}>
-          {CARDS.map((card) => (
-            <PainCard
-              key={card.key}
-              card={card}
-              selected={selected === card.key}
-              // Nothing is chosen when the screen arrives, so both sit at full
-              // strength: dimming everything would read as disabled.
-              dimmed={selected != null && selected !== card.key}
-              // Not locked once answered. The cards stay live so a second
-              // check-in can be started from the same place as the first.
-              locked={false}
+      <View style={styles.wrap}>
+        <View style={styles.block} {...REPLAY_MASK}>
+          <View style={styles.head}>
+            <Text style={[styles.kicker, { color: meter.label }]}>
+              {morning ? t('home.checkInKickerMorning') : t('home.checkInKickerDay')}
+            </Text>
+            <Text accessibilityRole="header" style={[styles.question, { color: palette[scheme].foreground }]}>
+              {morning ? t('home.checkInSubMorning') : t('home.checkInSubDay')}
+            </Text>
+          </View>
+
+          <View style={glass.stage} accessibilityRole="radiogroup">
+            {CARDS.map((card) => (
+              <PainCard
+                key={card.key}
+                card={card}
+                selected={selected === card.key}
+                // Nothing is chosen when the screen arrives, so both sit at full
+                // strength: dimming everything would read as disabled.
+                dimmed={selected != null && selected !== card.key}
+                // Not locked once answered. The cards stay live so a second
+                // check-in can be started from the same place as the first.
+                locked={false}
+                onPress={() => {
+                  Haptics.selectionAsync();
+                  setSelected(card.key);
+                  // Re-opens the question. Without this the button would still
+                  // read "Check in again" after a fresh choice had been made.
+                  setLogged(false);
+                }}
+              />
+            ))}
+          </View>
+
+          {/* Only once a tile is picked. Disabled, it was a big grey slab under
+              two answers that already read as the thing to tap. */}
+          {selected != null && (
+            <PrimaryButton
+              label={logged ? t('home.checkInAgain') : t('home.logCheckIn')}
               onPress={() => {
-                Haptics.selectionAsync();
-                setSelected(card.key);
-                // Re-opens the question. Without this the button would still
-                // read "Check in again" after a fresh choice had been made.
-                setLogged(false);
+                Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+                // "No pain today" is already the whole answer. Opening a slider to
+                // ask how much of the nothing there was would be the app refusing
+                // to take yes for an answer.
+                if (selected === 'nopain') {
+                  setLogged(true);
+                  onLogged?.(true);
+                  // A real zero, not an absent reading. The engine treats null as
+                  // "they have not been asked yet" and would go on adapting today
+                  // off yesterday's number; "no pain today" is an answer and has to
+                  // be stored as one.
+                  // No zones: nothing hurts, so there is nowhere to point at.
+                  record(0, []);
+                  return;
+                }
+                setOpen(true);
               }}
             />
-          ))}
+          )}
+
+          {ack != null && (
+            <Text accessibilityLiveRegion="polite" style={[styles.ack, { color: meter.caption }]}>
+              {ack}
+            </Text>
+          )}
         </View>
 
-        <PrimaryButton
-          label={logged ? t('home.checkInAgain') : t('home.logCheckIn')}
-          disabled={selected == null}
-          onPress={() => {
-            Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-            // "No pain today" is already the whole answer. Opening a slider to
-            // ask how much of the nothing there was would be the app refusing
-            // to take yes for an answer.
-            if (selected === 'nopain') {
-              setLogged(true);
-              onLogged?.(true);
-              // A real zero, not an absent reading. The engine treats null as
-              // "they have not been asked yet" and would go on adapting today
-              // off yesterday's number; "no pain today" is an answer and has to
-              // be stored as one.
-              // No zones: nothing hurts, so there is nowhere to point at.
-              record(0, []);
-              return;
-            }
-            setOpen(true);
-          }}
-        />
-
-        {ack != null && (
-          <Text
-            accessibilityLiveRegion="polite"
-            style={[styles.bandBlurb, { color: meter.caption }]}>
-            {ack}
-          </Text>
-        )}
-
-        <SomethingNew onPress={() => setSafety(true)} />
+        <SomethingNewRow onPress={() => setSafety(true)} />
       </View>
 
       <SafetySheet visible={safety} onClose={() => setSafety(false)} />
 
-      <Modal
-        animationType="slide"
-        presentationStyle="pageSheet"
-        visible={open}
-        onRequestClose={() => setOpen(false)}>
+      <Modal animationType="slide" presentationStyle="pageSheet" visible={open} onRequestClose={() => setOpen(false)}>
         <Sheet
           onClose={() => setOpen(false)}
           onSaved={(score, zones) => {
@@ -397,7 +405,48 @@ function reliefDay(): ProgramDay {
  * point — the answer decides what tomorrow's session is, and it should be
  * impossible to log a 7 while thinking you logged a 3.
  */
-/** "Something new? (swelling, numbness, a pop)" — the way to the red-flag check. */
+/**
+ * "Something new?" on Home: the way to the red-flag check, as a row of its own.
+ *
+ * It was an underlined line of grey text, which read as a footnote — and the
+ * thing it opens is the one screen in the app that can say "see a doctor".
+ * A tile, a title, the examples on a line of their own and a chevron make it
+ * read as somewhere you can go, without making it loud. The stethoscope is
+ * neutral on purpose: the row asks a question, it does not raise an alarm.
+ */
+function SomethingNewRow({ onPress }: { onPress: () => void }) {
+  const scheme = useColorScheme();
+  const colors = palette[scheme];
+  const meter = meterColors[scheme];
+  const t = useT();
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={t('home.somethingNew')}
+      onPress={() => {
+        Haptics.selectionAsync();
+        onPress();
+      }}
+      style={({ pressed }) => [styles.newRow, { backgroundColor: colors.card }, pressed && { opacity: 0.7 }]}
+    >
+      <View style={[styles.newTile, { backgroundColor: meter.iconTile }]}>
+        <HugeiconsIcon icon={StethoscopeIcon} size={21} color={colors.foreground} strokeWidth={1.8} />
+      </View>
+      <View style={styles.newCopy}>
+        <Text numberOfLines={1} style={[styles.newTitle, { color: colors.foreground }]}>
+          {t('home.somethingNewTitle')}
+        </Text>
+        <Text numberOfLines={1} style={[styles.newSub, { color: meter.caption }]}>
+          {t('home.somethingNewSub')}
+        </Text>
+      </View>
+      <HugeiconsIcon icon={ArrowRight01Icon} size={20} color={meter.caption} strokeWidth={2} />
+    </Pressable>
+  );
+}
+
+/** The same way in, inside the check-in sheet, where the height is spoken for
+ * and a line of text is all there is room for. */
 function SomethingNew({ onPress }: { onPress: () => void }) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
@@ -410,7 +459,8 @@ function SomethingNew({ onPress }: { onPress: () => void }) {
         onPress();
       }}
       hitSlop={8}
-      style={({ pressed }) => [styles.somethingNew, pressed && { opacity: 0.5 }]}>
+      style={({ pressed }) => [styles.somethingNew, pressed && { opacity: 0.5 }]}
+    >
       <Text style={[styles.somethingNewText, { color: meter.caption }]}>{t('home.somethingNew')}</Text>
     </Pressable>
   );
@@ -468,10 +518,7 @@ function Sheet({
    * active language on read. Without it a language change would leave this memo
    * holding titles in the language the sheet was opened in.
    */
-  const reliefMoves = useMemo(
-    () => reliefIdsFor(zones).map((id) => exerciseById(id).title),
-    [zones, t],
-  );
+  const reliefMoves = useMemo(() => reliefIdsFor(zones).map((id) => exerciseById(id).title), [zones, t]);
 
   const usual = useMemo(usualRange, []);
   /** Held steady across renders: a fresh object every frame would hand the
@@ -534,85 +581,75 @@ function Sheet({
 
   return (
     <View style={[styles.sheetRoot, { backgroundColor: colors.background }]} {...REPLAY_MASK}>
-      <Animated.View
-        style={[
-          styles.sheet,
-          { paddingBottom: Math.max(insets.bottom, 20) + 8 },
-          checkPane,
-        ]}>
-      <View style={[styles.grabber, { backgroundColor: meter.track }]} />
+      <Animated.View style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, 20) + 8 }, checkPane]}>
+        <View style={[styles.grabber, { backgroundColor: meter.track }]} />
 
-      <Text style={[styles.sheetTitle, { color: colors.foreground }]}>
-        {t('home.checkInTitle')}
-      </Text>
-      <Text style={[styles.sheetSub, { color: meter.caption }]}>
-        {morning ? t('home.checkInSubMorning') : t('home.checkInSubDay')}
-      </Text>
+        <Text style={[styles.sheetTitle, { color: colors.foreground }]}>{t('home.checkInTitle')}</Text>
+        <Text style={[styles.sheetSub, { color: meter.caption }]}>
+          {morning ? t('home.checkInSubMorning') : t('home.checkInSubDay')}
+        </Text>
 
-      <View style={styles.readout}>
-        <AnimatedNumber
-          text={String(score)}
-          value={score}
-          color={colors.foreground}
-          fontSize={104}
-          weight="heavy"
-          duration={0.25}
-        />
-      </View>
+        <View style={styles.readout}>
+          <AnimatedNumber
+            text={String(score)}
+            value={score}
+            color={colors.foreground}
+            fontSize={104}
+            weight="heavy"
+            duration={0.25}
+          />
+        </View>
 
-      <Text style={[styles.bandLabel, { color: colors.foreground }]}>{t(band.label)}</Text>
+        <Text style={[styles.bandLabel, { color: colors.foreground }]}>{t(band.label)}</Text>
 
-      {/* Where first, then how much.
+        {/* Where first, then how much.
           The place is the part the user has to look at the drawing to answer,
           and the scale is the part their thumb already knows — putting the
           drawing directly under the readout means the eye finishes one question
           before the hand starts the other. It also takes the leftover height,
           so the scale and the button keep theirs on a short screen. */}
-      <View style={styles.legStage}>
-        <LegMap selected={zones} onToggle={onZoneTap} />
-      </View>
-      <Text style={[styles.zoneLine, { color: meter.caption }]}>
-        {zonesFull
-          ? t('home.zonesFull', { count: MAX_ZONES })
-          : zones.length === 0
-            ? t('home.zonesEmpty', { count: MAX_ZONES })
-            : t('home.zonesPicked', {
-                zones: zones.map((zone) => t(ZONE_LABEL_KEYS[zone])).join(t('home.zoneJoin')),
-                move: reliefMoves[0],
-              })}
-      </Text>
+        <View style={styles.legStage}>
+          <LegMap selected={zones} onToggle={onZoneTap} />
+        </View>
+        <Text style={[styles.zoneLine, { color: meter.caption }]}>
+          {zonesFull
+            ? t('home.zonesFull', { count: MAX_ZONES })
+            : zones.length === 0
+              ? t('home.zonesEmpty', { count: MAX_ZONES })
+              : t('home.zonesPicked', {
+                  zones: zones.map((zone) => t(ZONE_LABEL_KEYS[zone])).join(t('home.zoneJoin')),
+                  move: reliefMoves[0],
+                })}
+        </Text>
 
-      <View style={styles.scale}>
-        <PainScale score={score} onChange={setScore} usual={usual} />
-      </View>
+        <View style={styles.scale}>
+          <PainScale score={score} onChange={setScore} usual={usual} />
+        </View>
 
-      <SomethingNew onPress={() => setSafety(true)} />
-      <SafetySheet visible={safety} onClose={() => setSafety(false)} />
+        <SomethingNew onPress={() => setSafety(true)} />
+        <SafetySheet visible={safety} onClose={() => setSafety(false)} />
 
-
-      <PrimaryButton
-        label={logged ? t('home.saved') : t('home.save')}
-        // The button is the colour of the answer it is about to commit. It is
-        // the last thing under the thumb before the number is written down, and
-        // carrying the same colour as the wedge is what makes it read as "save
-        // *this*" rather than as a generic confirm.
-        // Ink, not white. The fill sweeps the whole ramp, and every stop on
-        // it is a light hue: white reads at roughly 1.9:1 through the amber
-        // middle and never better than 3:1 at the red end, while ink clears 6:1
-        // everywhere. This is exactly the pairing `tint`'s own doc asks the
-        // caller to make rather than assume.
-        tint={{ fill: tone, label: primaryButton.dark.label }}
-        style={styles.save}
-        onPress={save}
-      />
-
+        <PrimaryButton
+          label={logged ? t('home.saved') : t('home.save')}
+          // The button is the colour of the answer it is about to commit. It is
+          // the last thing under the thumb before the number is written down, and
+          // carrying the same colour as the wedge is what makes it read as "save
+          // *this*" rather than as a generic confirm.
+          // Ink, not white. The fill sweeps the whole ramp, and every stop on
+          // it is a light hue: white reads at roughly 1.9:1 through the amber
+          // middle and never better than 3:1 at the red end, while ink clears 6:1
+          // everywhere. This is exactly the pairing `tint`'s own doc asks the
+          // caller to make rather than assume.
+          tint={{ fill: tone, label: primaryButton.dark.label }}
+          style={styles.save}
+          onPress={save}
+        />
       </Animated.View>
 
       {/* The offload, arriving from the right. It paints the page colour itself
           because it has to cover the check-in sliding underneath it, and it is
           the same colour the sheet is already painting, so there is no seam. */}
-      <Animated.View
-        style={[styles.pane, { backgroundColor: colors.background }, reliefPane]}>
+      <Animated.View style={[styles.pane, { backgroundColor: colors.background }, reliefPane]}>
         {relieving && <SessionView day={relief} moves={reliefMoves} onBack={onClose} />}
       </Animated.View>
     </View>
@@ -702,8 +739,8 @@ function PainCard({
   return (
     <Animated.View
       style={[
-        styles.slot,
-        left ? styles.slotLeft : styles.slotRight,
+        glass.slot,
+        left ? glass.slotLeft : glass.slotRight,
         // The chosen card has to be the one on top, or straightening it would
         // slide it under its neighbour.
         { zIndex: selected ? 2 : 1 },
@@ -725,21 +762,21 @@ function PainCard({
             reduceMotion: ReduceMotion.System,
           });
         }}
-        style={styles.face}>
+        style={glass.face}>
         {/* The glass is an absolute sibling under the content, never a parent
             of it: a GlassView nested inside another glass effect renders empty
             on iOS 26. Where liquid glass is unavailable the card falls back to
             the flat surface. */}
         {hasGlass ? (
-          <GlassView glassEffectStyle="regular" style={[StyleSheet.absoluteFill, styles.shape]} />
+          <GlassView glassEffectStyle="regular" style={[StyleSheet.absoluteFill, glass.shape]} />
         ) : (
-          <View style={[StyleSheet.absoluteFill, styles.shape, { backgroundColor: colors.card }]} />
+          <View style={[StyleSheet.absoluteFill, glass.shape, { backgroundColor: colors.card }]} />
         )}
-        <Animated.View style={[StyleSheet.absoluteFill, styles.shape, styles.ring, ring]} />
+        <Animated.View style={[StyleSheet.absoluteFill, glass.shape, glass.ring, ring]} />
 
-        <View style={styles.body}>
-          <Image source={card.art} style={styles.art} resizeMode="contain" />
-          <Text style={[styles.title, { color: colors.foreground }]}>{title}</Text>
+        <View style={glass.body}>
+          <Image source={card.art} style={glass.art} resizeMode="contain" />
+          <Text style={[glass.title, { color: colors.foreground }]}>{title}</Text>
         </View>
 
         {/* Last child, so it veils the artwork and the label as well as the
@@ -748,7 +785,7 @@ function PainCard({
           pointerEvents="none"
           style={[
             StyleSheet.absoluteFill,
-            styles.shape,
+            glass.shape,
             { backgroundColor: colors.background },
             scrim,
           ]}
@@ -759,40 +796,77 @@ function PainCard({
 }
 
 const styles = StyleSheet.create({
-  wrap: { gap: 16 },
-  stage: { height: CARD_HEIGHT + STAGGER },
-  slot: {
-    position: 'absolute',
-    width: CARD_WIDTH,
-    height: CARD_HEIGHT,
-  },
-  slotLeft: { left: 0, top: 0 },
-  slotRight: { right: 0, top: STAGGER },
-  face: {
-    borderRadius: RADIUS,
+  wrap: { gap: 12 },
+  block: { gap: 16 },
+  card: {
+    borderRadius: CARD_RADIUS,
     borderCurve: 'continuous',
-    overflow: 'hidden',
+    padding: CARD_PAD,
+    paddingTop: 20,
+    gap: 16,
   },
-  /** The glass layer's own shape, matching the card's. */
-  shape: {
-    borderRadius: RADIUS,
+  head: { gap: 6, paddingHorizontal: 2 },
+  kicker: fonts.semibold(13, -0.1),
+  question: { ...fonts.heavy(22, -0.6), lineHeight: 27 },
+  tiles: { flexDirection: 'row', gap: 10 },
+  tile: {
+    flex: 1,
+    borderRadius: TILE_RADIUS,
     borderCurve: 'continuous',
+    borderWidth: 2,
   },
-  ring: {
-    borderWidth: 2.5,
-  },
-  body: {
-    height: CARD_HEIGHT,
+  tileBody: {
     alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 12,
-    gap: 6,
+    paddingTop: 12,
+    paddingBottom: 14,
+    paddingHorizontal: 10,
+    gap: 4,
   },
-  art: { width: 118, height: 118 },
-  title: {
-    ...fonts.bold(19, -0.3),
+  art: { width: 92, height: 92 },
+  tileLabel: {
+    ...fonts.bold(16, -0.3),
+    lineHeight: 20,
     textAlign: 'center',
   },
+  /** Top-right, out of the drawing's way. */
+  radio: {
+    position: 'absolute',
+    top: 10,
+    right: 10,
+    width: 22,
+    height: 22,
+    borderRadius: 11,
+    borderWidth: 1.5,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  ack: {
+    ...fonts.medium(15),
+    lineHeight: 21,
+    marginTop: -4,
+    paddingHorizontal: 2,
+  },
+  newRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 14,
+    paddingVertical: 14,
+    paddingLeft: 14,
+    paddingRight: 12,
+    borderRadius: 22,
+    borderCurve: 'continuous',
+  },
+  newTile: {
+    width: 42,
+    height: 42,
+    borderRadius: 14,
+    borderCurve: 'continuous',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  newCopy: { flex: 1, gap: 2 },
+  newTitle: fonts.bold(16, -0.3),
+  newSub: fonts.medium(14, -0.1),
   sheetRoot: { flex: 1 },
   /** Both panes fill the sheet and are moved by transform alone, so neither can
    * push the other around mid-transition. */
@@ -822,23 +896,11 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   bandLabel: fonts.bold(22, -0.4),
-  question: {
-    ...fonts.semibold(17, -0.3),
-    lineHeight: 23,
-    textAlign: 'center',
-    paddingHorizontal: 12,
-  },
   somethingNew: { alignSelf: 'center', paddingVertical: 6 },
   somethingNewText: {
     ...fonts.semibold(14),
     textAlign: 'center',
     textDecorationLine: 'underline',
-  },
-  bandBlurb: {
-    ...fonts.regular(16),
-    lineHeight: 22,
-    textAlign: 'center',
-    marginTop: 4,
   },
   /** Takes the slack, so the wedge sits against the button on a tall phone and
    * gives way before anything else on a short one. */
@@ -853,4 +915,41 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   save: { alignSelf: 'stretch' },
+});
+
+/** The answer cards, kept as they were before the check-in got its header. */
+const glass = StyleSheet.create({
+  stage: { height: GLASS_HEIGHT + STAGGER },
+  slot: {
+    position: 'absolute',
+    width: GLASS_WIDTH,
+    height: GLASS_HEIGHT,
+  },
+  slotLeft: { left: 0, top: 0 },
+  slotRight: { right: 0, top: STAGGER },
+  face: {
+    borderRadius: GLASS_RADIUS,
+    borderCurve: 'continuous',
+    overflow: 'hidden',
+  },
+  /** The glass layer's own shape, matching the card's. */
+  shape: {
+    borderRadius: GLASS_RADIUS,
+    borderCurve: 'continuous',
+  },
+  ring: {
+    borderWidth: 2.5,
+  },
+  body: {
+    height: GLASS_HEIGHT,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 12,
+    gap: 6,
+  },
+  art: { width: 118, height: 118 },
+  title: {
+    ...fonts.bold(19, -0.3),
+    textAlign: 'center',
+  },
 });

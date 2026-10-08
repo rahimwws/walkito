@@ -75,6 +75,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
     },
     {
       h2: '¿Cuántas elevaciones de talón a una pierna deberías poder hacer?',
+      tool: 'calf-raise-calculator',
       keyFact: 'En 1995, un estudio con 203\u00A0adultos de 20 a 59\u00A0años propuso 25\u00A0repeticiones como referencia de un rendimiento normal en la elevación de talón a una pierna (Lunsford y Perry, 1995).',
       paragraphs: [
         'La tabla de abajo muestra la mediana de repeticiones de elevación de talón a una pierna según la edad y el sexo, de Hebert-Losier 2017. Son estimaciones del modelo para una persona con un nivel de actividad física moderado (nivel 4 en una escala de 6 puntos) y un índice de masa corporal de 24,2, con el promedio de las dos piernas.',

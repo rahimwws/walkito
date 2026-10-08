@@ -16,7 +16,7 @@ import { SUPPORT_EMAIL } from '@/lib/site';
  */
 export const metadata: Metadata = {
   // The root template appends " | Walkito".
-  title: 'Support',
+  title: 'Hilfe und Support',
   description:
     'Hilfe zu Walkito: Mitteilungen, Apple Health, Käufe, Erstattungen und das Löschen deines Kontos. Schreib uns, und ein Mensch antwortet.',
   alternates: alternatesFor('support', 'de'),
@@ -30,7 +30,7 @@ export default function SupportDe() {
       <Masthead lang="de" />
 
       <Prose className="shell prose" kicker={{ label: CHROME.de.navSupport, lang: 'de' }}>
-        <h1>Support</h1>
+        <h1>Hilfe und Support</h1>
 
         <p className="updated">Stimmt etwas nicht? Sag es uns. Ein Mensch antwortet.</p>
 

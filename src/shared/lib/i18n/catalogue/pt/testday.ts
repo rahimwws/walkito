@@ -149,4 +149,34 @@ export const TESTDAY_PT = {
   'testday.results.nextTest': 'Próximo teste: {date}',
   'testday.results.planUpdated': 'Seu plano para as próximas duas semanas foi atualizado.',
   'testday.results.done': 'Pronto',
+
+  'testday.results.verdictFirst': 'Três testes feitos. Estes são seus números de partida.',
+  'testday.results.verdictSteady': 'Três testes feitos. Veja como cada um se compara.',
+  'testday.results.verdictUp.calf_raises': 'Três testes feitos. As elevações de calcanhar subiram.',
+  'testday.results.verdictUp.arch_hold': 'Três testes feitos. Você sustentou o arco por mais tempo.',
+  'testday.results.verdictUp.balance': 'Três testes feitos. Você se equilibrou por mais tempo.',
+  'testday.results.verdictUpTwo': 'Três testes feitos. Dois deles subiram.',
+  'testday.results.verdictUpAll': 'Três testes feitos. Os três subiram.',
+  'testday.results.dateVs': {
+    one: '{date} · comparado com {count} dia atrás',
+    other: '{date} · comparado com {count} dias atrás',
+  },
+  'testday.results.dateFirst': '{date} · seu ponto de partida',
+  'testday.results.chipBaseline': 'Ponto de partida',
+  'testday.results.chipSame': 'Igual',
+  'testday.results.chipSeconds': '{delta} s',
+  'testday.results.chipRaises': { one: '{delta} elevação', other: '{delta} elevações' },
+  'testday.results.lastSeconds': 'Da última vez {n} s',
+  'testday.results.lastRaises': 'Da última vez {n}',
+  'testday.results.legLeft': 'Esquerda',
+  'testday.results.legRight': 'Direita',
+  'testday.results.weakerLeg': 'O número grande é a sua perna mais fraca.',
+  'testday.results.gapBetween': 'Diferença entre as pernas {n}%',
+  'testday.results.explain.calf_raises':
+    'As elevações de calcanhar mostram quanto trabalho a panturrilha e o tendão de Aquiles aguentam antes de cansar. Mais elevações significa que a panturrilha carrega mais de cada passo em caminhadas e corridas longas.',
+  'testday.results.explain.arch_hold':
+    'O arco sustentado mostra por quanto tempo os pequenos músculos da sola mantêm o arco elevado. Um tempo maior significa que o pé fica apoiado por mais tempo ao longo do dia.',
+  'testday.results.explain.balance':
+    'Ficar em uma perna de olhos fechados mostra o quanto o pé e o tornozelo sentem o chão. Mais segundos significa passos mais firmes em terreno irregular e quando você está cansado.',
+  'testday.results.explainA11y': 'O que isto mostra',
 };

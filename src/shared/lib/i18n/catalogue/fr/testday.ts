@@ -149,4 +149,34 @@ export const TESTDAY_FR = {
   'testday.results.nextTest': 'Prochain test : {date}',
   'testday.results.planUpdated': 'Ton plan pour les deux semaines à venir est à jour.',
   'testday.results.done': 'Terminé',
+
+  'testday.results.verdictFirst': 'Trois tests faits. Voici vos chiffres de départ.',
+  'testday.results.verdictSteady': 'Trois tests faits. Voici comment chacun se compare.',
+  'testday.results.verdictUp.calf_raises': 'Trois tests faits. Les montées sur pointes ont augmenté.',
+  'testday.results.verdictUp.arch_hold': 'Trois tests faits. Vous tenez la voûte plus longtemps.',
+  'testday.results.verdictUp.balance': 'Trois tests faits. Vous tenez l’équilibre plus longtemps.',
+  'testday.results.verdictUpTwo': 'Trois tests faits. Deux d’entre eux ont augmenté.',
+  'testday.results.verdictUpAll': 'Trois tests faits. Les trois ont augmenté.',
+  'testday.results.dateVs': {
+    one: '{date} · comparé à il y a {count} jour',
+    other: '{date} · comparé à il y a {count} jours',
+  },
+  'testday.results.dateFirst': '{date} · votre point de départ',
+  'testday.results.chipBaseline': 'Point de départ',
+  'testday.results.chipSame': 'Identique',
+  'testday.results.chipSeconds': '{delta} s',
+  'testday.results.chipRaises': { one: '{delta} montée', other: '{delta} montées' },
+  'testday.results.lastSeconds': 'La dernière fois {n} s',
+  'testday.results.lastRaises': 'La dernière fois {n}',
+  'testday.results.legLeft': 'Gauche',
+  'testday.results.legRight': 'Droite',
+  'testday.results.weakerLeg': 'Le grand chiffre, c’est votre jambe la plus faible.',
+  'testday.results.gapBetween': 'Écart entre les jambes {n} %',
+  'testday.results.explain.calf_raises':
+    'Les montées sur pointes montrent combien de travail votre mollet et votre tendon d’Achille fournissent avant de fatiguer. Plus de montées veut dire que le mollet porte une plus grande part de chaque pas lors des longues marches et sorties de course.',
+  'testday.results.explain.arch_hold':
+    'Le maintien de la voûte montre combien de temps les petits muscles sous le pied gardent la voûte levée. Un maintien plus long veut dire que le pied reste soutenu plus longtemps dans la journée.',
+  'testday.results.explain.balance':
+    'Tenir sur une jambe les yeux fermés montre à quel point votre pied et votre cheville sentent le sol. Plus de secondes veut dire des pas plus sûrs sur un terrain inégal et quand vous êtes fatigué.',
+  'testday.results.explainA11y': 'Ce que cela montre',
 };

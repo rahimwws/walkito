@@ -42,4 +42,11 @@ export const PLAYER_PT = {
   'player.painRule.a11y': 'Quanta dor é aceitável',
   'player.tempo.on': 'Sons de ritmo ligados',
   'player.tempo.off': 'Sons de ritmo desligados',
+
+  // ── The player's own chrome ───────────────────────────────────────────────
+  'player.header.meta': '{minutes} · {moves}',
+  'player.chip.position': '{index} de {total}',
+  'player.cta.pause': 'Pausar',
+  'player.cta.resume': 'Retomar',
+  'player.cta.done': 'Pronto',
 };

@@ -43,4 +43,27 @@ export const QUICK_ES = {
 
   'quick.locked': 'Bloqueado',
   'quick.lockedHint': 'Incluido con el programa',
+
+  'quick.kicker': 'Rutina',
+  'quick.whyTitle': 'Por qué ayuda',
+  'quick.flare.why':
+    'Tres ejercicios sentado que casi no exigen nada a la zona que duele. Rodar y estirar con suavidad alivian la tensión sin cargar peso en el pie.',
+  'quick.preRun.why':
+    'Dos minutos para despertar el tobillo y los músculos pequeños bajo el arco, y que el pie esté listo desde la primera zancada.',
+  'quick.postRun.why':
+    'Después de correr, gemelos y plantas se tensan. Estiramientos lentos y mantenidos, mientras sigues en calor, los ayudan a relajarse.',
+  'quick.atWork.why':
+    'Pasar horas de pie cansa los pies. Unos movimientos discretos mantienen el arco activo y el tobillo en movimiento, sin moverte de tu sitio.',
+  'quick.morning.why':
+    'Los primeros pasos del día suelen ser los más duros. Estirar la planta antes de levantarte le da un comienzo suave.',
+  'quick.moves': { one: '{count} ejercicio', other: '{count} ejercicios' },
+  'quick.stepSeconds': { one: '{count} s', other: '{count} s' },
+  'quick.stepSwitch': {
+    one: '{count} s, cambia de pierna a la mitad',
+    other: '{count} s, cambia de pierna a la mitad',
+  },
+  'quick.startMinutes': {
+    one: 'Empezar · {count} min',
+    other: 'Empezar · {count} min',
+  },
 };

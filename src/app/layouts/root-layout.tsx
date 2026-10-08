@@ -293,6 +293,10 @@ function RootLayoutInner() {
 
                   <Stack.Protected guard={onboarded && ((entitled && !setupPending) || (lapsed && browsing))}>
                     <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+                    {/* A routine from the Quick tab or Home's row: a pushed
+                        page over the tabs, under the same guard, so it goes
+                        wherever the tabs go. */}
+                    <Stack.Screen name="routine/[id]" options={{ headerShown: false }} />
                   </Stack.Protected>
 
                   {/* Where an email button lands (`/open/today`, `/open/plan` …).

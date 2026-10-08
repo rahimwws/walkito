@@ -52,4 +52,16 @@ export const PLAYER_EN = {
   'player.painRule.a11y': 'How much pain is OK',
   'player.tempo.on': 'Tempo sounds on',
   'player.tempo.off': 'Tempo sounds off',
+
+  // ── The player's own chrome ───────────────────────────────────────────────
+  // The second line of the centred header title, under "Day 1". Both halves
+  // arrive already counted (`session.minutes`, `session.moveCount`).
+  'player.header.meta': '{minutes} · {moves}',
+  // The chip on the demonstration: which move of the session this is.
+  'player.chip.position': '{index} of {total}',
+  // The one button under the readout. It is an action in every state: pause
+  // the move, pick it up again, or close a session that is over.
+  'player.cta.pause': 'Pause',
+  'player.cta.resume': 'Resume',
+  'player.cta.done': 'Done',
 } as const satisfies Record<string, SourceEntry>;

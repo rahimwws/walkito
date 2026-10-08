@@ -384,31 +384,31 @@ export default function PrivacidadEs() {
           internacionales.
         </p>
 
-        <h2>Suscripcion en el sitio web</h2>
+        <h2>Suscripción en el sitio web</h2>
         <p>
           Si te suscribes en el sitio web para recibir los ejercicios y el plan
-          de 7 dias, guardamos tu email, el idioma, la pagina donde te
+          de 7 días, guardamos tu email, el idioma, la página donde te
           suscribiste y un registro de cada correo enviado.
         </p>
         <p>
-          <b>Para que:</b> para enviarte los ejercicios y los siete correos
-          diarios, y nada mas.
+          <b>Para qué:</b> para enviarte los ejercicios y los siete correos
+          diarios, y nada más.
         </p>
         <p>
           <b>Procesadores:</b> Resend (entrega los correos) y Supabase (guarda
-          la suscripcion).
+          la suscripción).
         </p>
         <p>
-          <b>No se crea una cuenta.</b> La suscripcion en el sitio web no crea
+          <b>No se crea una cuenta.</b> La suscripción en el sitio web no crea
           una cuenta en la app. Los datos se guardan por separado.
         </p>
         <p>
           <b>Darse de baja:</b> cada correo tiene un enlace para darse de baja
           con un clic. Tras darte de baja, dejamos de enviar y eliminamos tus
-          datos en un plazo de 30 dias. Tambien puedes escribir a {mail}.
+          datos en un plazo de 30 días. También puedes escribir a {mail}.
         </p>
         <p>
-          <b>El sitio web no usa cookies ni carga ningun rastreador.</b>
+          <b>El sitio web no usa cookies ni carga ningún rastreador.</b>
         </p>
 
         <h2>No es consejo médico</h2>

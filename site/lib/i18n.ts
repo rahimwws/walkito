@@ -624,6 +624,7 @@ export const CUSTOM_PAGES = {
   printables: { en: '/printable-exercise-sheets/', es: '/es/hojas-de-ejercicios-imprimibles/', ru: '/ru/uprazhneniya-dlya-pechati/' },
   program: { en: '/program/', es: '/es/programa/', ru: '/ru/programma/' },
   science: { en: '/science/', es: '/es/evidencia/', ru: '/ru/issledovaniya/' },
+  footMap: { en: '/foot-pain-identifier/', es: '/es/donde-me-duele-el-pie/', ru: '/ru/gde-bolit-stopa/' },
 } as const;
 
 export type CustomPage = keyof typeof CUSTOM_PAGES;

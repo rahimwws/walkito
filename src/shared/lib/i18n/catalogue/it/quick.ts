@@ -45,4 +45,27 @@ export const QUICK_IT = {
 
   'quick.locked': 'Bloccato',
   'quick.lockedHint': 'Incluso nel programma',
+
+  'quick.kicker': 'Routine',
+  'quick.whyTitle': 'Perché aiuta',
+  'quick.flare.why':
+    'Tre esercizi in posizione seduta che non chiedono quasi nulla alla zona che fa male. Rullare e allungare con delicatezza sciolgono la tensione senza caricare il piede.',
+  'quick.preRun.why':
+    'Due minuti per svegliare la caviglia e i piccoli muscoli sotto l’arco, così il piede è pronto dal primo passo.',
+  'quick.postRun.why':
+    'Dopo la corsa polpacci e piante si irrigidiscono. Allungamenti lenti e tenuti, finché il corpo è ancora caldo, li aiutano a sciogliersi.',
+  'quick.atWork.why':
+    'Ore in piedi stancano i piedi. Qualche movimento discreto tiene l’arco attivo e la caviglia in movimento, senza spostarti.',
+  'quick.morning.why':
+    'I primi passi della giornata sono spesso i più duri. Allungare la pianta prima di alzarti le dà un inizio delicato.',
+  'quick.moves': { one: '{count} esercizio', other: '{count} esercizi' },
+  'quick.stepSeconds': { one: '{count} s', other: '{count} s' },
+  'quick.stepSwitch': {
+    one: '{count} s, cambia gamba a metà',
+    other: '{count} s, cambia gamba a metà',
+  },
+  'quick.startMinutes': {
+    one: 'Inizia · {count} min',
+    other: 'Inizia · {count} min',
+  },
 };

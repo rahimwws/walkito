@@ -173,4 +173,35 @@ export const TESTDAY_RU = {
   'testday.results.nextTest': 'Следующий тест: {date}',
   'testday.results.planUpdated': 'План на следующие две недели обновлён.',
   'testday.results.done': 'Готово',
+
+  'testday.results.verdictFirst': 'Три теста позади. Это ваши стартовые цифры.',
+  'testday.results.verdictSteady': 'Три теста позади. Вот как каждый выглядит рядом с прошлым.',
+  'testday.results.verdictUp.calf_raises': 'Три теста позади. Подъёмов на носок стало больше.',
+  'testday.results.verdictUp.arch_hold': 'Три теста позади. Свод держится дольше.',
+  'testday.results.verdictUp.balance': 'Три теста позади. Баланс держится дольше.',
+  'testday.results.verdictUpTwo': 'Три теста позади. Два из них выросли.',
+  'testday.results.verdictUpAll': 'Три теста позади. Выросли все три.',
+  'testday.results.dateVs': {
+    one: '{date} · в сравнении с тестом {count} день назад',
+    few: '{date} · в сравнении с тестом {count} дня назад',
+    many: '{date} · в сравнении с тестом {count} дней назад',
+  },
+  'testday.results.dateFirst': '{date} · ваша точка отсчёта',
+  'testday.results.chipBaseline': 'Старт',
+  'testday.results.chipSame': 'Без изменений',
+  'testday.results.chipSeconds': '{delta} с',
+  'testday.results.chipRaises': { one: '{delta} подъём', few: '{delta} подъёма', many: '{delta} подъёмов' },
+  'testday.results.lastSeconds': 'В прошлый раз {n} с',
+  'testday.results.lastRaises': 'В прошлый раз {n}',
+  'testday.results.legLeft': 'Левая',
+  'testday.results.legRight': 'Правая',
+  'testday.results.weakerLeg': 'Большая цифра - это более слабая нога.',
+  'testday.results.gapBetween': 'Разница между ногами {n} %',
+  'testday.results.explain.calf_raises':
+    'Подъёмы на носок показывают, сколько работы икра и ахиллово сухожилие выдерживают, пока не устанут. Больше подъёмов - значит, икра берёт на себя больше каждого шага на долгой прогулке или пробежке.',
+  'testday.results.explain.arch_hold':
+    'Удержание свода показывает, как долго маленькие мышцы стопы держат свод поднятым. Чем дольше удержание, тем дольше стопа остаётся опорой в течение дня.',
+  'testday.results.explain.balance':
+    'Стойка на одной ноге с закрытыми глазами показывает, насколько хорошо стопа и голеностоп чувствуют опору. Больше секунд - значит, шаг увереннее на неровной дороге и когда вы устали.',
+  'testday.results.explainA11y': 'Что это показывает',
 };

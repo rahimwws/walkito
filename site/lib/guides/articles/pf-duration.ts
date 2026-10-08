@@ -27,6 +27,7 @@ export const PF_DURATION_EN: Guide = {
   sections: [
     {
       h2: 'How long does plantar fasciitis usually last?',
+      tool: 'pf-timeline',
       keyFact: 'In a cohort of 174 people, the risk of still having plantar fasciitis symptoms was 80.5 percent at one year, falling to 45.6 percent at ten years (Hansen and colleagues, 2018).',
       paragraphs: [
         'There is no single number. Recovery depends on how long you have had it, what you do about it, and some factors you cannot control.',
