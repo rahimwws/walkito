@@ -39,7 +39,7 @@ export const EX_ECCENTRIC_HEEL_DROPS: Guide = {
       h2: 'How do you do eccentric heel drops?',
       paragraphs: [
         'Stand on the edge of a step with the balls of your feet on the step and heels off the edge. Rise up on both feet. Shift your weight to the working leg. Lower that heel slowly over about three seconds, letting it sink below the step. Keep the knee straight. Use both feet to rise back to the top.',
-        'A straight-knee heel drop targets the gastrocnemius, the bigger outer calf muscle. Alfredson also prescribed a bent-knee version to target the soleus, the deeper calf muscle. The bent-knee version is the same movement with the knee bent to about 30 to 45 degrees during the lowering phase.',
+        'A straight-knee heel drop targets the gastrocnemius, the bigger, more superficial calf muscle. Alfredson also prescribed a bent-knee version to target the soleus, the deeper calf muscle. The bent-knee version is the same movement with the knee bent to about 30 to 45 degrees during the lowering phase.',
       ],
       exercises: [
         {

@@ -143,7 +143,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
         },
         {
           name: 'Calf stretch (straight knee)',
-          evidence: { level: 'strong', why: 'Same guideline grade A. Targets the gastrocnemius, the bigger outer calf muscle.' },
+          evidence: { level: 'strong', why: 'Same guideline grade A. Targets the gastrocnemius, the bigger, more superficial calf muscle.' },
           dose: '2 holds of 30 seconds, each leg',
           how: 'Hands on a wall. Back leg straight, heel down, hips forward. A tight calf pulls on the heel through the Achilles tendon, adding load to the fascia.',
           often: 'Most sessions',

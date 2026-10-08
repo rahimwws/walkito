@@ -72,7 +72,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
       h2: 'Cos’è il piede piatto acquisito dell’adulto?',
       paragraphs: [
         'La deformità del piede piatto acquisito dell’adulto è un problema in cui un arco che era normale si abbassa in età adulta, di solito perché il tendine tibiale posteriore (il tendine che sostiene l’arco dall’interno della caviglia) si indebolisce e non riesce più a fare il suo lavoro. Il nome clinico del problema al tendine è disfunzione del tendine tibiale posteriore.',
-        'Il tendine tibiale posteriore passa dietro il malleolo interno e si attacca alle ossa che formano l’arco. Quando si allunga o si lesiona, l’arco si abbassa, il tallone si inclina verso l’esterno e l’avampiede può iniziare a puntare verso l’esterno. Dolore e gonfiore lungo l’interno della caviglia sono segni precoci comuni. Il test del sollevamento su un tallone, in cui provi a stare su un piede e a salire sulle punte, può essere difficile o doloroso dal lato colpito.',
+        'Il tendine tibiale posteriore passa dietro il malleolo interno e si attacca alle ossa che formano l’arco. Quando si allunga o si lesiona, l’arco si abbassa, il tallone si inclina verso l’esterno e l’avampiede può iniziare a puntare verso l’esterno. Dolore e gonfiore lungo l’interno della caviglia sono segni precoci comuni. Il test del sollevamento sulle punte su un solo piede, in cui provi a stare su un piede e a salire sulle punte, può essere difficile o doloroso dal lato colpito.',
         'Una panoramica pubblicata su The Open Orthopaedics Journal descrive quattro stadi: nello stadio I c’è un’infiammazione del tendine senza deformità visibile, nello stadio II c’è una deformità di piede piatto flessibile che si può ancora correggere con le mani, nello stadio III la deformità è rigida e non si corregge con le mani, e nello stadio IV ci sono alterazioni dell’articolazione della caviglia in aggiunta alla deformità rigida.',
         'Una revisione sistematica sull’esercizio nella disfunzione del tendine tibiale posteriore ha trovato poche prove da studi randomizzati. La revisione ha notato che le linee guida cliniche raccomandano una gestione non chirurgica, con esercizi, ortesi e modifiche delle attività, per gli stadi iniziali (stadi I e II), ma gli studi di alta qualità sono pochi. Gli stadi successivi spesso richiedono una valutazione da un professionista sanitario e possono comportare un tutore o la chirurgia.',
         'Se da adulto un arco si è abbassato, con dolore o gonfiore all’interno della caviglia, rivolgiti a un professionista sanitario prima di iniziare un programma di esercizi. Non è la stessa cosa di un piede piatto flessibile che hai da sempre.',
@@ -97,7 +97,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
     {
       h2: 'Scarpe e plantari aiutano il piede piatto?',
       paragraphs: [
-        'Scarpe con un buon sostegno, un’intersuola rigida e un po’ di supporto per l’arco possono rendere più comodo stare in piedi e camminare con il piede piatto. Non cambiano l’arco nel tempo, ma riducono il lavoro che i muscoli dell’arco devono fare durante il giorno.',
+        'Scarpe con un buon sostegno, un’intersuola rigida e un po’ di supporto per l’arco possono rendere più comodo stare in piedi e camminare con il piede piatto. Non cambiano l’arco nel tempo, ma possono ridurre il lavoro che i muscoli dell’arco devono fare durante il giorno.',
         'I plantari per l’arco già pronti si trovano facilmente e costano poco. I plantari su misura, fatti da un calco del piede, costano di più e a volte vengono consigliati per la disfunzione del tendine tibiale posteriore. Le prove sui plantari nel piede piatto in particolare sono più deboli di quanto pensino in molti. Per la fascite plantare, la linea guida del 2023 sul dolore al tallone sconsiglia i plantari come approccio a sé nel breve periodo (grado B contro), ma dà una C alle cure combinate che includono i plantari.',
         'Se il piede piatto non ti fa male, non ti servono scarpe speciali. Se stare in piedi o camminare ti fa dolere l’arco o la caviglia, una scarpa con suola rigida e un leggero supporto per l’arco è un primo passo ragionevole, da provare prima di spendere di più per plantari su misura. Le scarpe con suole molto piatte e senza sostegno (sandali sottili, scarpe da ginnastica consumate) tendono a peggiorare la stanchezza dell’arco nelle giornate lunghe.',
       ],
@@ -107,7 +107,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
       h2: 'Quali esercizi aiutano il piede piatto?',
       paragraphs: [
         'Gli esercizi per il piede piatto si concentrano sui muscoli che sostengono l’arco da sotto (i muscoli intrinseci del piede) e sui muscoli più in alto che controllano come appoggi il piede (il polpaccio, l’anca). Le prove migliori finora vengono da uno studio su 52\u00A0persone con piede piatto flessibile, in cui sei settimane di esercizi combinati hanno cambiato la forma dell’arco più che in un gruppo di controllo. Quello studio includeva piede corto, esercizi per la caviglia, rinforzo dell’anca e allungamenti, fatti insieme.',
-        'Una revisione del 2024 sull’allenamento del piede corto da solo è stata meno incoraggiante: non ha trovato un cambiamento chiaro nel complesso, e ha visto un miglioramento in una misura dell’arco solo nei programmi più lunghi di sei settimane. Quindi un programma combinato funziona meglio di un solo esercizio, e serve pazienza.',
+        'Una revisione del 2024 sull’allenamento del piede corto da solo è stata meno incoraggiante: non ha trovato un cambiamento chiaro nel complesso, e ha visto un miglioramento in una misura dell’arco solo nei programmi più lunghi di sei settimane. Quindi le prove sono più favorevoli a un programma combinato che a un solo esercizio, e serve pazienza.',
         '[Esercizi per il piede piatto](/it/esercizi-piede-piatto/) ha l’elenco completo degli esercizi, le dosi, cosa dovresti sentire e le prove dietro ciascuno. Walkito costruisce un piano settimanale intorno a un obiettivo di tenuta dell’arco, partendo dal piede corto da seduto e salendo alle versioni in piedi e su una gamba, poi aggiungendo la resistenza dell’elastico e il rinforzo dell’anca. Le pagine dei singoli esercizi approfondiscono:',
       ],
       bullets: [
@@ -124,7 +124,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
         'Il piede piatto può sovrapporsi ad altri problemi del piede, soprattutto quando stai in piedi o cammini a lungo. Se il dolore è vicino al tallone e segue lo schema del mattino (una fitta ai primi passi che si calma dopo qualche minuto), è più compatibile con la fascite plantare. Vedi [fascite plantare](/it/fascite-plantare/) per una panoramica completa.',
       ],
       bullets: [
-        'Il [dolore all’avampiede](/ball-of-foot-pain/) (in inglese) può venire da un carico eccessivo sulla parte anteriore del piede quando l’arco è basso. Un polpaccio rigido sposta il peso in avanti.',
+        'Il [dolore all’avampiede](/ball-of-foot-pain/) (in inglese) può venire da un carico eccessivo sulla parte anteriore del piede quando l’arco è basso. Un polpaccio rigido può spostare il peso in avanti.',
         '[Piedi doloranti dopo una giornata in piedi](/feet-hurt-standing-all-day/) (in inglese) spiega gli esercizi e le scarpe che aiutano quando una lunga giornata su un pavimento duro ti lascia l’arco dolorante.',
         '[Infermieri e dolore ai piedi](/nurses-foot-pain/) (in inglese) parla dei turni da 12\u00A0ore.',
       ],
@@ -184,7 +184,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
     {
       q: 'In quali etnie è più comune il piede piatto?',
       cites: [CITE.salinasTorres],
-      a: 'Il piede piatto (pes planus) è più frequente in alcuni gruppi, anche se la ricerca è limitata. Una revisione sistematica del 2023 su studi di popolazione ha trovato che l’origine asiatica era legata a probabilità più che doppie di piede piatto, e l’origine bianca a circa la metà delle probabilità, in confronti separati tra sottogruppi. Sono schemi di popolazione, non una previsione sui piedi di una singola persona.',
+      a: 'Il piede piatto (pes planus) è più frequente in alcuni gruppi, anche se la ricerca è limitata. Una revisione sistematica del 2023 su studi di popolazione ha trovato che l’origine asiatica era legata a un odds ratio superiore a 2 per il piede piatto, e l’origine bianca a un odds ratio di circa 0,5, in confronti separati tra sottogruppi. Sono schemi di popolazione, non una previsione sui piedi di una singola persona.',
     },
   ],
   redFlags: {

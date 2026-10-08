@@ -53,15 +53,15 @@ export const SHIN_SPLINTS_ES: Guide = {
     {
       h2: '¿Qué ejercicios ayudan con la periostitis tibial y cuánto hacer?',
       paragraphs: [
-        'Son ejercicios del catálogo de la app que coinciden con los músculos y factores de riesgo que aparecen en la investigación sobre la periostitis tibial. Los estiramientos de pantorrilla y las elevaciones de talón son los mismos de [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/), y trabajan los mismos tejidos. Son dosis de inicio, no una indicación médica. Todas las etiquetas de evidencia de abajo son **inicial**, porque ningún ejercicio de esta lista ha demostrado acortar la recuperación de la periostitis tibial en un ensayo. [Cómo escribimos estas guías](/es/sobre-walkito/).',
-        'Si marcas la tibia como adolorida en el check-in, Walkito te da movilidad de tobillo y automasaje plantar. Las elevaciones de dedos aparecen en el plan general como ejercicio complementario a partir del nivel 2, turnándose con la movilidad de tobillo. No hay un programa específico para la periostitis tibial. Si algún ejercicio sube tu dolor a **6/10 o más**, detente por hoy.',
+        'Son ejercicios del catálogo de la app que coinciden con los músculos y factores de riesgo que aparecen en la investigación sobre la periostitis tibial. Los estiramientos de pantorrilla y las elevaciones de talón son los mismos de [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/), y trabajan los mismos tejidos. Son dosis de inicio, no una indicación médica. Todas las etiquetas de evidencia de abajo dicen **Inicial**, porque ningún ejercicio de esta lista ha demostrado acortar la recuperación de la periostitis tibial en un ensayo. [Cómo escribimos estas guías](/es/sobre-walkito/).',
+        'Si marcas la tibia como adolorida en el registro de la mañana, Walkito te da movilidad de tobillo y automasaje plantar. Las elevaciones de dedos y antepié aparecen en el plan general como ejercicio complementario a partir del nivel 2, turnándose con la movilidad de tobillo. No hay un programa específico para la periostitis tibial. Si algún ejercicio sube tu dolor a **6/10 o más**, detente por hoy.',
       ],
       table: {
         head: ['Ejercicio', 'Dosis', 'Con qué frecuencia', 'Qué debes sentir', 'Detente si'],
         rows: [
           ['Estiramiento de pantorrilla', '2\u00A0series de 30\u00A0segundos, cada pierna', 'Casi todas las sesiones', 'Un estiramiento en la pantorrilla de la pierna de atrás, estirada', 'El dolor llega a 6/10'],
           ['Estiramiento de sóleo', '2\u00A0series de 30\u00A0segundos, cada pierna', 'Casi todas las sesiones', 'Un estiramiento en la parte baja de la pantorrilla, cerca del talón', 'El dolor llega a 6/10'],
-          ['Elevaciones de puntas', '3\u00A0series de 10, los dos pies', 'Días de fuerza', 'El músculo de la parte delantera de la pierna trabajando al subir los dedos', 'El dolor llega a 6/10'],
+          ['Elevaciones de dedos y antepié', '3\u00A0series de 10, los dos pies', 'Días de fuerza', 'El músculo de la parte delantera de la pierna trabajando al subir los dedos', 'El dolor llega a 6/10'],
           ['Elevaciones de talón con dos pies', '3\u00A0series de 10, los dos pies', 'Días de fuerza', 'Las pantorrillas trabajando, con los dos pies compartiendo la carga', 'El dolor llega a 6/10'],
           ['Abducción de cadera', '3\u00A0series de 15, cada pierna', 'Días de fuerza', 'Trabajo en la parte externa de la cadera', 'El dolor llega a 6/10'],
           ['Equilibrio a una pierna', '3\u00A0series de 30\u00A0segundos, cada pierna', 'Días de equilibrio', 'El pie y el tobillo haciendo pequeñas correcciones', 'El dolor llega a 6/10'],
@@ -101,18 +101,18 @@ export const SHIN_SPLINTS_ES: Guide = {
           alt: 'Una figura estirando contra la pared con la rodilla de atrás doblada, con la parte baja de la pantorrilla resaltada',
         },
         {
-          name: 'Elevaciones de puntas',
+          name: 'Elevaciones de dedos y antepié',
           evidence: {
             level: 'early',
-            why: 'Trabaja el tibial anterior, el músculo de la parte delantera de la pierna. No hay un ensayo específico para la periostitis tibial, pero es justo el músculo que duele.',
+            why: 'Trabaja el tibial anterior, el músculo de la parte delantera de la tibia. No hay un ensayo específico para la periostitis tibial, que además suele doler a lo largo del borde interno de la tibia, así que la relación es indirecta.',
           },
           dose: '3\u00A0series de 10, los dos pies',
           often: 'Días de fuerza',
           feel: 'El músculo de la parte delantera de la pierna trabajando al subir los dedos',
-          how: 'Párate con la espalda contra una pared. Levanta los dedos y la parte delantera de los dos pies del piso, con los talones abajo. Baja despacio. Es el músculo que va por delante de la tibia, el que duele cuando la periostitis tibial se activa.',
-          image: 'Ejercicio: elevaciones de dedos',
+          how: 'Párate con la espalda contra una pared. Levanta los dedos y la parte delantera de los dos pies del piso, con los talones abajo. Baja despacio. Trabaja el músculo que va por delante de la tibia.',
+          image: 'Ejercicio: elevaciones de dedos y antepié',
           media: 'tibialis_raise',
-          caption: 'Elevaciones de puntas: espalda contra la pared, sube los dedos, los talones no se mueven',
+          caption: 'Elevaciones de dedos y antepié: espalda contra la pared, sube los dedos, los talones no se mueven',
           alt: 'Una figura de pie contra una pared levanta los dedos del piso, con los músculos de la parte delantera de la pierna resaltados',
         },
         {
@@ -134,7 +134,7 @@ export const SHIN_SPLINTS_ES: Guide = {
           name: 'Abducción de cadera',
           evidence: {
             level: 'early',
-            why: 'La rotación externa de cadera es un factor de riesgo confirmado en dos metaanálisis. Ningún ensayo ha probado el fortalecimiento de cadera como tratamiento para la periostitis tibial.',
+            why: 'Dos metaanálisis relacionaron el rango de rotación de cadera con la periostitis tibial. Ningún ensayo ha probado el fortalecimiento de cadera como tratamiento para la periostitis tibial.',
           },
           dose: '3\u00A0series de 15, cada pierna',
           often: 'Días de fuerza',

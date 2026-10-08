@@ -17,9 +17,9 @@ export const EX_CALF_STRETCH_FR: Guide = {
     'Comment faire l’étirement du mollet genou tendu contre la fasciite plantaire et les mollets raides\u00A0: technique, séries, durée de maintien, données.',
   h1: 'Étirement du mollet pour la fasciite plantaire\u00A0: technique, séries et durée de maintien',
   lede:
-    'L’étirement du mollet genou tendu cible le gastrocnémien, le gros muscle externe du mollet. Un gastrocnémien raide limite la flexion de la cheville, et dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville réduite était le plus fort facteur de risque indépendant. La recommandation de 2023 sur la douleur au talon donne aux étirements du mollet sa meilleure note, A.',
+    'L’étirement du mollet genou tendu cible le gastrocnémien, le gros muscle superficiel du mollet. Un gastrocnémien raide limite la flexion de la cheville, et dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville réduite était le plus fort facteur de risque indépendant. La recommandation de 2023 sur la douleur au talon donne aux étirements du mollet sa meilleure note, A.',
   takeaways: [
-    'Une flexion dorsale de cheville réduite était le plus fort facteur de risque indépendant de fasciite plantaire dans une étude cas-témoins appariée, avec une cote (odds) multipliée par 23,3 (Riddle et coll., 2003).',
+    'Une flexion dorsale de cheville réduite était le plus fort facteur de risque indépendant de fasciite plantaire dans une étude cas-témoins appariée, avec un odds ratio de 23,3 (Riddle et coll., 2003).',
     'Dans une série de 254\u00A0personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien (Patel et DiGiovanni, 2011).',
     'La recommandation de 2023 sur la douleur au talon donne aux étirements du fascia plantaire et du mollet la note A, sa meilleure note (Koc et coll., 2023).',
     'Une méta-analyse de 2020 a trouvé un effet important des étirements du mollet et du fascia plantaire, même si la qualité des preuves allait de modérée à très faible (Siriphorn et Eksakulkla, 2020).',
@@ -57,13 +57,13 @@ export const EX_CALF_STRETCH_FR: Guide = {
       keyFact: 'Dans une revue de 254\u00A0personnes atteintes de fasciite plantaire, un peu plus de la moitié avaient une rétraction isolée du gastrocnémien, et 23 à 30\u00A0% avaient les deux muscles du mollet raides (Patel et DiGiovanni, 2011).',
       paragraphs: [
         'Le gastrocnémien part de l’arrière du genou et descend jusqu’au talon par le tendon d’Achille. Le fascia plantaire prend le relais là où s’arrête le tendon d’Achille\u00A0: il passe sous l’os du talon et file vers les orteils. Quand le gastrocnémien est raide, il limite la capacité de la cheville à se plier vers le haut. Le fascia plantaire doit alors absorber plus de tension à chaque pas.',
-        'Dans une étude cas-témoins appariée sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville réduite multipliait par 23,3 la cote (odds) de fasciite plantaire. C’était plus fort que l’IMC, le temps passé debout ou toute autre variable de l’étude.',
+        'Dans une étude cas-témoins appariée sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville réduite avait un odds ratio de 23,3 pour la fasciite plantaire. C’était plus fort que l’IMC, le temps passé debout ou toute autre variable de l’étude.',
         'Par ailleurs, une revue de 254\u00A0personnes atteintes de fasciite plantaire a trouvé que 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien, et 23 à 30\u00A0% de plus une rétraction combinée du gastrocnémien et du soléaire. Autrement dit, un mollet raide n’est pas un détail. Il est présent chez la plupart des personnes atteintes.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
     },
     {
-      h2: 'L’étirement du mollet aide-t-il la fasciite plantaire\u00A0?',
+      h2: 'L’étirement du mollet aide-t-il en cas de fasciite plantaire\u00A0?',
       paragraphs: [
         'La recommandation de 2023 sur la douleur au talon a examiné les études disponibles sur les étirements et a donné aux étirements du fascia plantaire et du mollet la note **A**, sa meilleure. Cette note couvre ensemble l’étirement du fascia plantaire et l’étirement du mollet, car la plupart des protocoles comprennent les deux.',
         'Une revue systématique et méta-analyse de 2020 a regroupé les essais sur les étirements et a trouvé un effet important pour l’étirement du mollet comme pour l’étirement du fascia plantaire. Les auteurs ont jugé la qualité des preuves de modérée à très faible et ont appelé à des essais de meilleure qualité. L’effet restait malgré tout important, et comparable à celui d’autres traitements.',
@@ -111,12 +111,12 @@ export const EX_CALF_STRETCH_FR: Guide = {
     {
       q: 'Quelle différence entre un étirement du mollet et un étirement du soléaire\u00A0?',
       cites: [CITE.patelGastrocnemius],
-      a: 'L’étirement du mollet genou tendu cible le gastrocnémien, le gros muscle externe du mollet. L’étirement du soléaire se fait genou arrière plié, ce qui détend le gastrocnémien et isole le soléaire, plus profond. Les deux muscles étaient raides chez la majorité des personnes atteintes de fasciite plantaire (Patel et DiGiovanni, 2011).',
+      a: 'L’étirement du mollet genou tendu cible le gastrocnémien, le gros muscle superficiel du mollet. L’étirement du soléaire se fait genou arrière plié, ce qui détend le gastrocnémien et isole le soléaire, plus profond. Chez les personnes atteintes de fasciite plantaire, plus de la moitié n’avaient que le gastrocnémien raide, et 23 à 30\u00A0% avaient les deux muscles du mollet raides (Patel et DiGiovanni, 2011).',
     },
     {
       q: 'Des mollets raides peuvent-ils causer une fasciite plantaire\u00A0?',
       cites: [CITE.riddle, CITE.patelGastrocnemius],
-      a: 'Un mollet raide limite la flexion dorsale de la cheville, et c’était le plus fort facteur de risque indépendant de fasciite plantaire dans une étude cas-témoins (cote multipliée par 23,3). Par ailleurs, 52 à 60\u00A0% de 254\u00A0personnes atteintes de fasciite plantaire avaient une rétraction isolée du gastrocnémien. Un mollet raide ne garantit pas une fasciite plantaire, mais il en augmente nettement le risque.',
+      a: 'Un mollet raide limite la flexion dorsale de la cheville, et c’était le plus fort facteur de risque indépendant de fasciite plantaire dans une étude cas-témoins (odds ratio de 23,3). Par ailleurs, 52 à 60\u00A0% de 254\u00A0personnes atteintes de fasciite plantaire avaient une rétraction isolée du gastrocnémien. Un mollet raide ne garantit pas une fasciite plantaire, mais il en augmente nettement le risque.',
     },
   ],
   redFlags: {
@@ -134,7 +134,7 @@ export const EX_CALF_STRETCH_FR: Guide = {
     h2: 'En faire un plan',
     text: 'Walkito place l’étirement du mollet avec l’étirement du soléaire et l’étirement du fascia plantaire dans la plupart des séances. Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. L’application passe des étirements au renforcement à votre rythme.',
     more: [
-      'Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre. Un mollet raide qui se détend au fil des semaines se verra dans une plus grande amplitude de cheville au test. Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé.',
+      'Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet, le maintien de la voûte et l’équilibre. Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé.',
     ],
     cta: 'Commencez avec 3\u00A0minutes par jour.',
   },

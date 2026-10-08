@@ -17,9 +17,9 @@ export const EX_CALF_STRETCH_ES: Guide = {
     'Cómo hacer el estiramiento de pantorrilla con la rodilla estirada para la fascitis plantar y la pantorrilla tensa: técnica, series, tiempo y evidencia.',
   h1: 'Estiramiento de pantorrilla para la fascitis plantar: técnica, series y tiempo',
   lede:
-    'El estiramiento de pantorrilla con la rodilla estirada trabaja el gastrocnemio, el músculo grande y externo de la pantorrilla. Un gastrocnemio tenso limita cuánto se dobla el tobillo, y en un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la menor dorsiflexión del tobillo fue el factor de riesgo independiente más fuerte. La guía de 2023 para el dolor de talón le da al estiramiento de pantorrilla su grado más alto, A.',
+    'El estiramiento de pantorrilla con la rodilla estirada trabaja el gastrocnemio, el músculo grande y superficial de la pantorrilla. Un gastrocnemio tenso limita cuánto se dobla el tobillo, y en un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la menor dorsiflexión del tobillo fue el factor de riesgo independiente más fuerte. La guía de 2023 para el dolor de talón le da al estiramiento de pantorrilla su grado más alto, A.',
   takeaways: [
-    'La menor dorsiflexión del tobillo fue el factor de riesgo independiente más fuerte para la fascitis plantar en un estudio de casos y controles emparejados, con 23,3\u00A0veces más probabilidades (Riddle y colegas, 2003).',
+    'La menor dorsiflexión del tobillo fue el factor de riesgo independiente más fuerte para la fascitis plantar en un estudio de casos y controles emparejados, con una razón de probabilidades de 23,3 (Riddle y colegas, 2003).',
     'En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenía una contractura solo en el gastrocnemio (Patel y DiGiovanni, 2011).',
     'La guía de 2023 para el dolor de talón le da una A, su grado más alto, al estiramiento de la fascia plantar y de la pantorrilla (Koc y colegas, 2023).',
     'Un metaanálisis de 2020 encontró un efecto grande del estiramiento de pantorrilla y de fascia plantar, aunque la calidad de la evidencia iba de moderada a muy baja (Siriphorn y Eksakulkla, 2020).',
@@ -57,7 +57,7 @@ export const EX_CALF_STRETCH_ES: Guide = {
       keyFact: 'En una revisión de 254\u00A0personas con fascitis plantar, algo más de la mitad tenía una contractura solo en el gastrocnemio, y entre el 23 y el 30\u00A0% tenía tensos los dos músculos de la pantorrilla (Patel y DiGiovanni, 2011).',
       paragraphs: [
         'El gastrocnemio va desde detrás de la rodilla hasta el talón, a través del tendón de Aquiles. La fascia plantar sigue donde termina el Aquiles: rodea por debajo el hueso del talón y avanza hasta los dedos. Cuando el gastrocnemio está tenso, limita cuánto se puede doblar el tobillo hacia arriba. Eso obliga a la fascia plantar a absorber más tensión en cada paso.',
-        'En un estudio de casos y controles emparejados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la menor dorsiflexión del tobillo multiplicó por 23,3 las probabilidades de tener fascitis plantar. Pesó más que el índice de masa corporal, el tiempo de pie o cualquier otra variable del estudio.',
+        'En un estudio de casos y controles emparejados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la menor dorsiflexión del tobillo se asoció con una razón de probabilidades de 23,3 para la fascitis plantar. Pesó más que el índice de masa corporal, el tiempo de pie o cualquier otra variable del estudio.',
         'Aparte, una revisión de 254\u00A0personas con fascitis plantar encontró que entre el 52 y el 60\u00A0% tenía una contractura solo en el gastrocnemio, y otro 23 a 30\u00A0% tenía una contractura combinada de gastrocnemio y sóleo. Es decir, la pantorrilla tensa no es un tema secundario. Está presente en la mayoría de las personas con este problema.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -111,12 +111,12 @@ export const EX_CALF_STRETCH_ES: Guide = {
     {
       q: '¿Cuál es la diferencia entre el estiramiento de pantorrilla y el de sóleo?',
       cites: [CITE.patelGastrocnemius],
-      a: 'El estiramiento de pantorrilla con la rodilla estirada trabaja el gastrocnemio, el músculo grande y externo de la pantorrilla. El estiramiento de sóleo dobla la rodilla de atrás, lo que afloja el gastrocnemio y deja trabajar al sóleo, más profundo. Se encontró tensión en los dos músculos en la mayoría de las personas con fascitis plantar (Patel y DiGiovanni, 2011).',
+      a: 'El estiramiento de pantorrilla con la rodilla estirada trabaja el gastrocnemio, el músculo grande y superficial de la pantorrilla. El estiramiento de sóleo dobla la rodilla de atrás, lo que afloja el gastrocnemio y deja trabajar al sóleo, más profundo. Más de la mitad de las personas con fascitis plantar tenía tenso solo el gastrocnemio, y entre el 23 y el 30\u00A0% tenía tensos los dos músculos de la pantorrilla (Patel y DiGiovanni, 2011).',
     },
     {
       q: '¿Las pantorrillas tensas pueden causar fascitis plantar?',
       cites: [CITE.riddle, CITE.patelGastrocnemius],
-      a: 'Una pantorrilla tensa limita la dorsiflexión del tobillo, y eso fue el factor de riesgo independiente más fuerte para la fascitis plantar en un estudio de casos y controles (23,3\u00A0veces más probabilidades). Aparte, entre el 52 y el 60\u00A0% de 254\u00A0personas con fascitis plantar tenía una contractura solo en el gastrocnemio. No garantiza la fascitis plantar, pero sube bastante las probabilidades.',
+      a: 'Una pantorrilla tensa limita la dorsiflexión del tobillo, y eso fue el factor de riesgo independiente más fuerte para la fascitis plantar en un estudio de casos y controles (razón de probabilidades de 23,3). Aparte, entre el 52 y el 60\u00A0% de 254\u00A0personas con fascitis plantar tenía una contractura solo en el gastrocnemio. No garantiza la fascitis plantar, pero sube bastante las probabilidades.',
     },
   ],
   redFlags: {
@@ -134,7 +134,7 @@ export const EX_CALF_STRETCH_ES: Guide = {
     h2: 'Hacerlo como un plan',
     text: 'Walkito pone el estiramiento de pantorrilla junto con el de sóleo y el de la fascia plantar en casi todas las sesiones. Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. La app pasa de los estiramientos al trabajo de fuerza a tu ritmo.',
     more: [
-      'Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Una pantorrilla tensa que se suelta con las semanas se nota como más rango en el tobillo en la prueba. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud.',
+      'Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud.',
     ],
     cta: 'Empieza con 3\u00A0minutos al día.',
   },

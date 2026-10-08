@@ -84,7 +84,7 @@ export const STANDING_DESK_EN: Guide = {
             why: 'The 2023 heel pain guideline grades calf stretching A. A tight calf was the strongest risk factor for plantar fasciitis in a 2003 case-control study.',
           },
           dose: '2 holds of 30 seconds, each leg',
-          how: 'Step back from your desk, put your hands on the desk edge or a wall, and keep the back leg straight with the heel down. This targets the gastrocnemius, the bigger outer calf muscle. You can do this during a transition from standing to sitting.',
+          how: 'Step back from your desk, put your hands on the desk edge or a wall, and keep the back leg straight with the heel down. This targets the gastrocnemius, the bigger, more superficial calf muscle. You can do this during a transition from standing to sitting.',
           media: 'calf_stretch_straight',
           caption: 'Calf stretch: back leg straight, heel down, hands on desk or wall',
           alt: 'A figure leaning against a desk with the back leg straight and the calf highlighted',

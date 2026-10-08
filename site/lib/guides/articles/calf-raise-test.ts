@@ -44,7 +44,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
       h2: 'What does the single-leg calf raise test measure?',
       keyFact: 'In a case-control study of 20 athletes, those with medial tibial stress syndrome (shin splints) showed lower calf endurance than healthy controls (Madeley and colleagues, 2007).',
       paragraphs: [
-        'The test measures the endurance of the plantar flexors, the muscles that push the foot down and lift the heel off the ground. The main muscles are the gastrocnemius (the bigger outer calf muscle) and the soleus (the deeper one underneath it). Together they connect to the heel bone through the Achilles tendon.',
+        'The test measures the endurance of the plantar flexors, the muscles that push the foot down and lift the heel off the ground. The main muscles are the gastrocnemius (the bigger, more superficial calf muscle) and the soleus (the deeper one underneath it). Together they connect to the heel bone through the Achilles tendon.',
         'Endurance here means how many repetitions you can complete before the calf fatigues and the heel can no longer rise high enough or keep pace. The count captures the ability to sustain work over dozens of cycles, which is closer to what the calf does during walking and running than a single heavy push.',
         'Clinicians use the test to track recovery from Achilles tendon ruptures, to screen for calf weakness in people with heel pain or shin splints, and to compare one leg to the other. Athletes with medial tibial stress syndrome (shin splints) had lower calf endurance than healthy controls in a case-control study of 20 athletes.',
       ],

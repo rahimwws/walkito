@@ -32,7 +32,7 @@ export const HOME_PT: HomeCopy = {
   whoH2: 'Isso é para mim?',
   whoKicker: 'Para você',
   whoLead:
-    'Escolha o que mais combina com você. O plano começa por aí e muda conforme seus pés estão a cada dia.',
+    'Escolha o que mais combina com você. O plano começa por aí e muda conforme o estado dos seus pés a cada dia.',
   who: {
     heel: {
       title: 'Dor no calcanhar e fascite plantar',

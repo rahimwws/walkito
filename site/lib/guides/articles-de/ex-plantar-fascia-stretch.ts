@@ -77,7 +77,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_DE: Guide = {
     {
       h2: 'Was unterscheidet die Plantarfaszien-Dehnung von einer Wadendehnung?',
       paragraphs: [
-        'Sie zielen auf verschiedene Strukturen. Die [Wadendehnung](/de/uebungen/wade-dehnen/) verlängert den Gastrocnemius, den großen äußeren Wadenmuskel, über die Achillessehne. Die Plantarfaszien-Dehnung zieht die Zehen zurück und belastet die Faszie direkt unter dem Gewölbe. Beide sind über das Fersenbein verbunden, reagieren aber auf unterschiedliche Positionen.',
+        'Sie zielen auf verschiedene Strukturen. Die [Wadendehnung](/de/uebungen/wade-dehnen/) verlängert den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel, über die Achillessehne. Die Plantarfaszien-Dehnung zieht die Zehen zurück und belastet die Faszie direkt unter dem Gewölbe. Beide sind über das Fersenbein verbunden, reagieren aber auf unterschiedliche Positionen.',
         'Eine verkürzte Wade ist für sich allein ein Risikofaktor für Plantarfasziitis. In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein beugen lässt, der stärkste unabhängige Risikofaktor. Deshalb empfiehlt die Leitlinie beide Dehnungen, nicht nur eine davon.',
         'Für den tieferen Wadenmuskel, den Soleus, ändert sich die Dehnung: Du beugst das hintere Knie, um die Last vom Gastrocnemius auf den Soleus zu verlagern. Das ist eine eigene Übung. Siehe [Soleusdehnung](/exercises/soleus-stretch/) (auf Englisch).',
       ],
@@ -137,7 +137,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_DE: Guide = {
       'die Ferse gerötet, warm oder geschwollen ist',
       'der Schmerz dich nachts weckt oder auch in Ruhe da ist',
       'Dehnen den Schmerz immer wieder schlimmer macht statt besser',
-      'es nach mehreren Wochen täglichem Dehnen und weniger Belastung nicht besser geworden ist',
+      'es nach mehreren Wochen täglichen Dehnens und weniger Belastung nicht besser geworden ist',
     ],
   },
   program: {

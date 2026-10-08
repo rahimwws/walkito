@@ -77,7 +77,7 @@ export const PF_DURATION_PT: Guide = {
     {
       h2: 'O que significa fascite plantar “crônica”?',
       paragraphs: [
-        'Não existe uma definição única aceita por todos. Algumas fontes chamam a fascite plantar de crônica quando dura mais de três meses, outras usam seis meses. A diretriz de 2023 não define um limite. Uma revisão de 2020 define a fascite plantar crônica como “a causa mais comum de dor crônica no calcanhar em adultos”, sem dar um limite em meses (Latt e colegas, 2020).',
+        'Não existe uma definição única aceita por todos. Algumas fontes chamam a fascite plantar de crônica quando dura mais de três meses, outras usam seis meses. A diretriz de 2023 não define um limite. Uma revisão de 2020 descreve a fascite plantar crônica como “a causa mais comum de dor crônica no calcanhar em adultos”, sem dar um limite em meses (Latt e colegas, 2020).',
         'O padrão importa mais que o rótulo. A fascite plantar crônica normalmente significa que a dor forte nos primeiros passos da manhã virou uma dor mais surda e mais constante. O tecido também muda com o tempo: a palavra “fascite” sugere inflamação, mas os casos crônicos costumam ser descritos como um processo degenerativo e não inflamatório. É por isso que as injeções de corticoide, que agem na inflamação, muitas vezes ajudam a curto prazo, mas não a longo prazo.',
         'Se você tem fascite plantar há mais de alguns meses e ela não está claramente melhorando, a próxima seção mostra o que a diretriz recomenda.',
       ],
@@ -130,7 +130,7 @@ export const PF_DURATION_PT: Guide = {
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },
     {
-      h2: 'Como acompanhar a dor da manhã mostra a evolução?',
+      h2: 'Por que acompanhar a dor da manhã mostra a evolução?',
       paragraphs: [
         'A dor da manhã é o sinal diário mais confiável de como o pé está. Ela mede a mesma coisa (a rigidez dos primeiros passos), nas mesmas condições (acabou de acordar, pé sem carga), mais ou menos no mesmo horário todo dia. Isso a torna uma linha de tendência muito melhor do que “como o meu pé estava durante o dia”, que muda com a atividade, o calçado e o piso.',
         'Uma nota diária de 0 a 10 nos primeiros passos, acompanhada ao longo das semanas, mostra padrões que você não perceberia de outro jeito. Uma nota que desce de 5 para 3 em um mês é evolução de verdade, mesmo que alguma manhã ainda doa. Uma nota que dispara na manhã depois de uma corrida longa ou de um dia em pé mostra exatamente qual carga foi demais.',

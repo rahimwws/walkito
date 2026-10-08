@@ -72,7 +72,7 @@ export const HOME_FR: HomeCopy = {
       link: 'Ce que mesurent les tests (en anglais)',
     },
     {
-      title: 'Choisis d’après la recherche publiée',
+      title: 'Exercices choisis d’après la recherche publiée',
       text: 'Des exercices choisis d’après la recherche et les recommandations publiées. Walkito lui-même n’a pas été testé dans un essai clinique.',
       link: 'Voir les données scientifiques (en anglais)',
     },

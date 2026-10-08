@@ -145,7 +145,7 @@ export function Byline({
 
 /** "Updated <date>" at the foot of the article. The About page promises every
  * page shows when its content last changed; the byline no longer carries it. */
-const UPDATED: Record<Lang, string> = { en: 'Updated', ru: 'Обновлено', es: 'Actualizado', pt: 'Atualizado', fr: 'Mis à jour', it: 'Aggiornato', de: 'Aktualisiert' };
+const UPDATED: Record<Lang, string> = { en: 'Updated', ru: 'Обновлено', es: 'Actualizado', pt: 'Atualizado', fr: 'Mis à jour le', it: 'Aggiornato', de: 'Aktualisiert' };
 export function UpdatedLine({ lang, updated }: { lang: Lang; updated: string }) {
   return (
     <p className="updated-line">

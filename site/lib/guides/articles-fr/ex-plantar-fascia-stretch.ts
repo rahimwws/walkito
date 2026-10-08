@@ -64,7 +64,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_FR: Guide = {
       cites: [CITE.digiovanni2003, CITE.guideline],
     },
     {
-      h2: 'L’étirement du fascia plantaire aide-t-il vraiment la fasciite plantaire\u00A0?',
+      h2: 'L’étirement du fascia plantaire aide-t-il vraiment en cas de fasciite plantaire\u00A0?',
       keyFact: 'Dans un essai sur 82\u00A0personnes atteintes de fasciite plantaire chronique, les scores de douleur étaient nettement meilleurs dans le groupe de l’étirement du fascia plantaire à huit semaines, pour la pire douleur et pour les premiers pas du matin (DiGiovanni et coll., 2003).',
       paragraphs: [
         'Dans l’essai original de 2003, 82\u00A0personnes atteintes d’une fasciite plantaire chronique depuis plus de dix mois ont été réparties au hasard entre un étirement du fascia plantaire et un étirement classique du tendon d’Achille. À huit semaines, le groupe du fascia plantaire avait un score nettement meilleur au Foot Function Index, qui mesure la douleur et les limitations d’activité. Les auteurs ont qualifié cette différence de cliniquement significative.',
@@ -78,7 +78,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_FR: Guide = {
     {
       h2: 'En quoi l’étirement du fascia plantaire diffère-t-il d’un étirement du mollet\u00A0?',
       paragraphs: [
-        'Ils visent des structures différentes. L’[étirement du mollet](/fr/exercices/etirement-mollet/) allonge le gastrocnémien, le gros muscle externe du mollet, par l’intermédiaire du tendon d’Achille. L’étirement du fascia plantaire tire les orteils vers l’arrière pour charger directement le fascia sous la voûte. Les deux sont reliés par l’os du talon, mais réagissent à des positions différentes.',
+        'Ils visent des structures différentes. L’[étirement du mollet](/fr/exercices/etirement-mollet/) allonge le gastrocnémien, le gros muscle superficiel du mollet, par l’intermédiaire du tendon d’Achille. L’étirement du fascia plantaire tire les orteils vers l’arrière pour charger directement le fascia sous la voûte. Les deux sont reliés par l’os du talon, mais réagissent à des positions différentes.',
         'Un mollet raide est à lui seul un facteur de risque de fasciite plantaire. Dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, était le plus fort facteur de risque indépendant. C’est pourquoi la recommandation conseille les deux étirements, pas l’un ou l’autre.',
         'Pour le muscle profond du mollet, le soléaire, l’étirement change\u00A0: vous pliez le genou arrière pour faire passer la charge du gastrocnémien au soléaire. C’est un exercice à part. Voir [étirement du soléaire](/exercises/soleus-stretch/) (en anglais).',
       ],

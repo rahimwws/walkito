@@ -36,7 +36,7 @@ export const HUB_FLAT_FEET_FR: Guide = {
       figure: { id: 'arches', caption: 'Les mêmes os du pied avec un pied plat, une voûte normale et une voûte haute, vus du côté intérieur.', alt: 'Trois pieds vus du côté intérieur sur un sol plat\u00A0: un pied plat dont la voûte repose au sol, une voûte normale avec un petit espace dessous et une voûte haute avec un grand espace sous le milieu du pied.' },
       keyFact: 'Une revue systématique de 2023 regroupant 12\u00A0études de population sur environ 16\u00A0000\u00A0personnes a trouvé que les pieds plats touchent environ 15,6\u00A0% des gens dans l’ensemble, plus souvent avec un IMC plus élevé et un âge plus avancé (Salinas-Torres et coll., 2023).',
       paragraphs: [
-        'La voûte du pied, appelée arche longitudinale médiale, est formée par les os, les ligaments et les tendons de l’intérieur du pied. Sur un pied plat, cette voûte est plus basse ou absente quand vous êtes debout. Le terme médical est pes planus.',
+        'La voûte du pied, appelée voûte longitudinale interne (médiale), est formée par les os, les ligaments et les tendons de l’intérieur du pied. Sur un pied plat, cette voûte est plus basse ou absente quand vous êtes debout. Le terme médical est pes planus.',
         'Les pieds plats sont fréquents. Une revue systématique de 2023 a regroupé 12\u00A0études de population portant sur environ 16\u00A0000\u00A0personnes et a rapporté une fréquence globale de 15,6\u00A0%. Chez les adultes seuls, les estimations vont d’environ 5 à 27\u00A0% selon la population et la méthode de mesure. Un IMC plus élevé et un âge plus avancé sont associés à une fréquence plus élevée.',
         '«\u00A0Voûte affaissée\u00A0» est un nom courant pour les pieds plats. La plupart du temps, les deux expressions veulent dire la même chose. Parfois, «\u00A0voûte affaissée\u00A0» désigne plus précisément une voûte qui est descendue à l’âge adulte, ce qui a une autre cause, présentée plus bas.',
         'Avoir les pieds plats ne veut pas dire automatiquement que quelque chose ne va pas. Beaucoup de personnes avec une voûte basse marchent, courent et restent debout sans aucun symptôme. Les questions qui comptent sont de savoir si le pied plat est souple ou rigide, et s’il fait mal.',
@@ -100,7 +100,7 @@ export const HUB_FLAT_FEET_FR: Guide = {
       cites: [CITE.guideline],
     },
     {
-      h2: 'Quels exercices aident les pieds plats\u00A0?',
+      h2: 'Quels exercices pour les pieds plats\u00A0?',
       paragraphs: [
         'L’exercice pour les pieds plats vise les muscles qui soutiennent la voûte par en dessous (les muscles intrinsèques du pied) et les muscles plus haut qui contrôlent la façon dont le pied se pose (le mollet, la hanche). Les meilleures preuves à ce jour viennent d’un essai sur 52\u00A0personnes aux pieds plats souples, où six semaines d’exercices combinés ont modifié la forme de la voûte davantage que dans un groupe témoin. Cet essai comprenait le pied court, des exercices de cheville, le renforcement de la hanche et des étirements, faits ensemble.',
         'Une revue de 2024 sur le pied court seul était moins encourageante\u00A0: elle n’a trouvé aucun changement net dans l’ensemble, et une amélioration sur une mesure de la voûte seulement dans les programmes de plus de six semaines. À retenir\u00A0: un programme combiné marche mieux qu’un exercice isolé, et la patience compte.',
@@ -180,7 +180,7 @@ export const HUB_FLAT_FEET_FR: Guide = {
     {
       q: 'Les pieds plats sont-ils plus fréquents selon l’origine ethnique\u00A0?',
       cites: [CITE.salinasTorres],
-      a: 'Les pieds plats (pes planus) sont plus fréquents dans certains groupes, même si la recherche est limitée. Une revue systématique de 2023 d’études de population a relié l’origine asiatique à un risque plus de deux fois plus élevé de pieds plats, et l’origine blanche à un risque environ deux fois plus faible, dans des comparaisons de sous-groupes séparées. Ce sont des tendances de population, pas une prédiction pour les pieds d’une personne en particulier.',
+      a: 'Les pieds plats (pes planus) sont plus fréquents dans certains groupes, même si la recherche est limitée. Une revue systématique de 2023 d’études de population a relié l’ascendance asiatique à un odds ratio supérieur à 2 pour les pieds plats, et l’ascendance européenne à un odds ratio d’environ 0,5, dans des comparaisons de sous-groupes séparées. Ce sont des tendances de population, pas une prédiction pour les pieds d’une personne en particulier.',
     },
   ],
   redFlags: {

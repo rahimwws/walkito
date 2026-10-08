@@ -28,7 +28,7 @@ export const NURSES_ES: Guide = {
     'En una encuesta a 312 enfermeras de un hospital pediátrico en Australia, el 55,3\u00A0% reportó problemas de pie o tobillo en los últimos 12\u00A0meses, y la tasa fue más alta entre quienes trabajaban turnos de 12\u00A0horas en cuidados intensivos (Reed y colegas, 2014).',
     'En un estudio con podómetros, las enfermeras caminaron en promedio 9360\u00A0pasos por turno, unos 5,8\u00A0km en un turno de 9,4\u00A0horas, una carga muy por encima del promedio de los adultos en general (Chang y Cho, 2022).',
     'En un estudio transversal con 636 enfermeras de hospitales en Japón, el 51\u00A0% reportó dolor o discapacidad en los pies en el último mes, y el 17\u00A0% tenía dolor que interfería con sus actividades diarias (Tojo y colegas, 2018).',
-    'La poca flexibilidad del tobillo, es decir, una pantorrilla tensa, fue el factor que más predijo la fascitis plantar en un estudio de casos y controles con 50 casos y 100 controles: 23,3 veces las probabilidades. Estar de pie la mayor parte de la jornada las multiplicó por 3,6 (Riddle y colegas, 2003).',
+    'La poca flexibilidad del tobillo, es decir, una pantorrilla tensa, fue el factor que más predijo la fascitis plantar en un estudio de casos y controles con 50 casos y 100 controles: una razón de probabilidades de 23,3. Estar de pie la mayor parte de la jornada tuvo una razón de probabilidades de 3,6 (Riddle y colegas, 2003).',
     'En un ensayo con 40 guardias de seguridad que trabajaban de pie turnos de 12\u00A0horas, tanto las medias de compresión de 15-20\u00A0mmHg como las de 20-30\u00A0mmHg evitaron el aumento de molestias e hinchazón que se vio con calcetines normales (Garcia y colegas, 2023).',
   ],
   sections: [
@@ -46,7 +46,7 @@ export const NURSES_ES: Guide = {
       paragraphs: [
         'En un turno de enfermería se juntan tres cosas: estar mucho tiempo de pie, caminar largas distancias y los pisos duros. Estar de pie sin moverte carga la fascia plantar, los músculos de la pantorrilla y la almohadilla del talón sin el bombeo que da caminar. Caminar ayuda a que la sangre regrese de las piernas, pero en enfermería se alterna sin aviso entre estar de pie sin moverse junto a una cama y caminar pasillos largos, así que el bombeo de la pantorrilla nunca agarra un ritmo estable.',
         'Una revisión de 2015 sobre salud laboral encontró que estar de pie mucho tiempo en el trabajo se asocia con molestias musculares, cansancio y dolor de piernas en muchos trabajos de pie, y menciona a las enfermeras como uno de los grupos de mayor riesgo. La revisión señaló que el esfuerzo del corazón y la hinchazón de las piernas aumentan con el tiempo de pie.',
-        'En los tejidos, una pantorrilla tensa es una pieza clave. Un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100 controles emparejados encontró que la poca flexibilidad del tobillo, es decir, que el tobillo no se dobla hacia arriba lo que debería porque la pantorrilla está tensa, fue el factor de riesgo independiente más fuerte para la fascitis plantar: 23,3 veces las probabilidades. Estar de pie la mayor parte de la jornada las multiplicó por 3,6. Las enfermeras tienen los dos factores de riesgo a la vez.',
+        'En los tejidos, una pantorrilla tensa es una pieza clave. Un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100 controles emparejados encontró que la poca flexibilidad del tobillo, es decir, que el tobillo no se dobla hacia arriba lo que debería porque la pantorrilla está tensa, fue el factor de riesgo independiente más fuerte para la fascitis plantar: una razón de probabilidades de 23,3. Estar de pie la mayor parte de la jornada tuvo una razón de probabilidades de 3,6. Las enfermeras tienen los dos factores de riesgo a la vez.',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -65,7 +65,7 @@ export const NURSES_ES: Guide = {
             why: 'La guía de 2023 para el dolor de talón le da al estiramiento de pantorrilla una A para la fascitis plantar. Una pantorrilla tensa fue el mayor factor de riesgo en un estudio de casos y controles de 2003.',
           },
           dose: '2\u00A0series de 30\u00A0segundos, cada pierna',
-          how: 'Pon las manos en una pared. Mantén la pierna de atrás estirada, el talón abajo y la cadera hacia adelante. Esto trabaja el gastrocnemio, el músculo más grande y externo de la pantorrilla. Lo puedes hacer en la sala de descanso o contra cualquier pared.',
+          how: 'Pon las manos en una pared. Mantén la pierna de atrás estirada, el talón abajo y la cadera hacia adelante. Esto trabaja el gastrocnemio, el músculo más grande y superficial de la pantorrilla. Lo puedes hacer en la sala de descanso o contra cualquier pared.',
           media: 'calf_stretch_straight',
           caption: 'Estiramiento de pantorrilla: pierna de atrás estirada, talón abajo, cadera hacia adelante',
           alt: 'Una figura apoyada en una pared con la pierna de atrás estirada, con la pantorrilla resaltada',
@@ -220,7 +220,7 @@ export const NURSES_ES: Guide = {
     },
     {
       q: '¿El trabajo de enfermería puede causar fascitis plantar?',
-      a: 'Estar de pie la mayor parte de la jornada multiplicó por 3,6 las probabilidades de fascitis plantar en un estudio de casos y controles emparejados con 50 casos y 100 controles. La poca flexibilidad del tobillo las multiplicó por 23,3. Las enfermeras tienen los dos factores de riesgo, mucho tiempo de pie y poco tiempo de descanso para estirar, por eso los ejercicios de esta página se parecen tanto a los de la guía de fascitis plantar.',
+      a: 'Estar de pie la mayor parte de la jornada se asoció con una razón de probabilidades de 3,6 para la fascitis plantar en un estudio de casos y controles emparejados con 50 casos y 100 controles. La poca flexibilidad del tobillo tuvo una razón de probabilidades de 23,3. Las enfermeras tienen los dos factores de riesgo, mucho tiempo de pie y poco tiempo de descanso para estirar, por eso los ejercicios de esta página se parecen tanto a los de la guía de fascitis plantar.',
       cites: [CITE.riddle],
     },
     {

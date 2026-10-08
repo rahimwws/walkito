@@ -50,7 +50,7 @@ export const ACHILLES_EN: Guide = {
           name: 'Eccentric heel drops (straight knee)',
           evidence: { level: 'strong', why: 'The original Alfredson protocol; supported by the 2024 guideline grading exercise A.' },
           dose: 'Alfredson: 3 x 15, twice daily, three months. Walkito: 3 x 10, each leg',
-          how: 'Stand on a step edge. Rise on both feet, shift to the painful leg, lower slowly over three seconds. Heel sinks below the step. Both feet to come back up. Straight knee targets the gastrocnemius, the bigger outer calf muscle.',
+          how: 'Stand on a step edge. Rise on both feet, shift to the painful leg, lower slowly over three seconds. Heel sinks below the step. Both feet to come back up. Straight knee targets the gastrocnemius, the bigger, more superficial calf muscle.',
           often: 'Twice daily in the Alfredson protocol. Walkito: strength days.',
           feel: 'Hard work in the calf during the lowering, not a stretch at the bottom',
           stop: 'Pain above 5/10 that does not settle by the next morning, or pain worsening week over week',
@@ -170,7 +170,7 @@ export const ACHILLES_EN: Guide = {
       keyFact: 'In a trial of 38 people, those who kept running with pain held to about 5 out of 10 and settled by morning improved as much at twelve months as those who rested first (Silbernagel and colleagues, 2007).',
       paragraphs: [
         'In Silbernagel 2007, 38 people with Achilles pain were split into two groups. One continued running and jumping during rehab, guided by the rule that pain during and after loading could go up to about **5 out of 10**, as long as it returned to its usual level by the next morning and did not worsen week over week. The other group rested first. Both improved significantly at 12 months, with no difference between them.',
-        'This is a different threshold from the 6/10 stop rule on the [plantar fasciitis](/plantar-fasciitis-exercises/) page, which comes from a different guideline. The 5/10 figure is from one study, not a universal standard, but it is the most cited pain model in Achilles rehab.',
+        'This is a different threshold from the 6/10 stop rule on the [plantar fasciitis](/plantar-fasciitis-exercises/) page, which is the limit Walkito uses for heel pain. The 5/10 figure is from one study, not a universal standard, but it is the most cited pain model in Achilles rehab.',
         'Some discomfort during loading is expected and was acceptable in the trial. Pain that does not settle overnight, worsens week to week, or arrives as a sudden sharp episode is not.',
       ],
       cites: [CITE.silbernagel],
@@ -189,7 +189,7 @@ export const ACHILLES_EN: Guide = {
     {
       h2: 'How many single-leg calf raises should you be able to do?',
       paragraphs: [
-        'The 2024 guideline names the single-leg heel-rise endurance test as part of the recommended way to measure calf strength and track recovery. A normative study of 566 healthy adults puts a typical count at about 25 repetitions, adjusted for age, sex and activity level. What matters is the trend over time and the difference between your two sides.',
+        'The 2024 guideline names the single-leg heel-rise endurance test as part of the recommended way to measure calf strength and track recovery. A normative study of 566 healthy adults puts the typical count at about 23 to 24 repetitions, adjusted for age, sex and activity level. What matters is the trend over time and the difference between your two sides.',
         'The calf goal in the app is 25 single-leg calf raises. The test runs every 14 days while the calf goal is active, then every 28 days. A gap between legs is also tracked, since a persistent side-to-side difference can point to incomplete recovery.',
       ],
       cites: [CITE.hebertLosier, CITE.achillesGuideline],

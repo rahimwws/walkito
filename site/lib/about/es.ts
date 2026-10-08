@@ -26,7 +26,7 @@ export const ABOUT_ES: About = {
       paragraphs: [
         `Walkito es una app para iPhone que arma tu plan de ejercicios una semana a la vez, en torno a metas que se pueden medir. Hay cinco metas: mañanas más fáciles (dolor por la mañana de ${PAIN_GOAL_MAX}/10 o menos durante ${PROGRAM.painFreeDays}\u00A0días seguidos), mantener el arco ${PROGRAM.goals.archHoldSeconds}\u00A0segundos, ${PROGRAM.goals.calfRaises} elevaciones de talón a una pierna, ${PROGRAM.goals.balanceSeconds}\u00A0segundos de equilibrio en una pierna y menos de un ${PROGRAM.goals.gapPercent}\u00A0% de diferencia entre tu lado izquierdo y el derecho. Empiezas con hasta tres de ellas. Si algo te duele, el dolor va primero.`,
         `Eliges ${either(PROGRAM.daysPerWeek)} días de entrenamiento por semana y sesiones de ${either(PROGRAM.sessionMinutes)}\u00A0minutos. La sesión de cada día se adapta a cómo fue tu mañana. Cada ${PROGRAM.testEveryDays}\u00A0días, una prueba corta muestra si tus números se mueven. Cuando alcanzas tu primera meta, la prueba pasa a ser cada ${PROGRAM.testEveryDaysAfterGoal}\u00A0días.`,
-        'El plan no tiene una duración fija. Cuando alcanzas una meta, pasa a mantenimiento con una dosis menor y la siguiente ocupa su lugar. Y así sigue mientras uses Walkito. [Cómo funciona el plan](/program/) (en inglés).',
+        'El plan no tiene una duración fija. Cuando alcanzas una meta, pasa a mantenimiento con una dosis menor y la siguiente ocupa su lugar. Y así sigue mientras uses Walkito. [Cómo funciona el plan](/es/programa/).',
         'Walkito está en inglés, ruso y español.',
       ],
     },
@@ -34,7 +34,7 @@ export const ABOUT_ES: About = {
       h2: 'Cómo investigamos',
       id: 'how-we-research',
       paragraphs: [
-        'Las guías de Walkito se escriben a partir de investigación publicada, y cada número tiene una fuente que puedes revisar. Las guías son [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/) y [ejercicios para el pie plano](/es/ejercicios-pie-plano/). Ellas y [la página de evidencia](/science/) (en inglés) siguen las mismas cinco reglas:',
+        'Las guías de Walkito se escriben a partir de investigación publicada, y cada número tiene una fuente que puedes revisar. Las guías son [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/) y [ejercicios para el pie plano](/es/ejercicios-pie-plano/). Estas guías y [la página de evidencia](/es/evidencia/) siguen las mismas cinco reglas:',
       ],
       bullets: [
         '**Cada cifra viene de una fuente primaria.** Es decir, un ensayo aleatorizado, un metaanálisis o una guía clínica. La fuente aparece con su enlace en la página que la usa. Si no podemos rastrear un número hasta una fuente, no va en el sitio. Ya hemos quitado frases por esa razón.',

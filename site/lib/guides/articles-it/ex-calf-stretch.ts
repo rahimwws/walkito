@@ -18,10 +18,10 @@ export const EX_CALF_STRETCH_IT: Guide = {
     'Come fare l’allungamento del polpaccio a ginocchio teso per la fascite plantare e i polpacci rigidi: tecnica, serie, tempi e cosa dicono gli studi.',
   h1: 'Allungamento del polpaccio per la fascite plantare: tecnica, serie e tempi',
   lede:
-    'L’allungamento del polpaccio a ginocchio teso lavora sul gastrocnemio, il grande muscolo esterno del polpaccio. Un gastrocnemio rigido limita quanto si piega la caviglia, e in uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia ridotta era il fattore di rischio indipendente più forte. La linea guida del 2023 sul dolore al tallone dà all’allungamento del polpaccio il grado più alto, A.',
+    'L’allungamento del polpaccio a ginocchio teso lavora sul gastrocnemio, il muscolo più grande e superficiale del polpaccio. Un gastrocnemio rigido limita quanto si piega la caviglia, e in uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia ridotta era il fattore di rischio indipendente più forte. La linea guida del 2023 sul dolore al tallone dà all’allungamento del polpaccio il grado più alto, A.',
   takeaways: [
-    'Una dorsiflessione della caviglia ridotta era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo appaiato, con probabilità 23,3\u00A0volte più alte (Riddle e colleghi, 2003).',
-    'In una serie di 254\u00A0persone con fascite plantare, tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio (Patel e DiGiovanni, 2011).',
+    'Una dorsiflessione della caviglia ridotta era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo appaiato, con un odds ratio di 23,3 (Riddle e colleghi, 2003).',
+    'In un’analisi retrospettiva su 254\u00A0persone con fascite plantare, tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio (Patel e DiGiovanni, 2011).',
     'La linea guida del 2023 sul dolore al tallone dà all’allungamento della fascia plantare e del polpaccio una A, il suo grado più alto (Koc e colleghi, 2023).',
     'Una meta-analisi del 2020 ha trovato un effetto ampio dell’allungamento del polpaccio e della fascia plantare, anche se la qualità delle prove andava da moderata a molto bassa (Siriphorn e Eksakulkla, 2020).',
     'Walkito parte da 3\u00A0tenute da 30\u00A0secondi, ogni gamba.',
@@ -55,11 +55,11 @@ export const EX_CALF_STRETCH_IT: Guide = {
     },
     {
       h2: 'Perché un polpaccio rigido fa male al tallone?',
-      keyFact: 'In una revisione di 254\u00A0persone con fascite plantare, poco più della metà aveva una contrattura limitata al gastrocnemio, e tra il 23 e il 30% aveva rigidi entrambi i muscoli del polpaccio (Patel e DiGiovanni, 2011).',
+      keyFact: 'In un’analisi retrospettiva su 254\u00A0persone con fascite plantare, poco più della metà aveva una contrattura limitata al gastrocnemio, e tra il 23 e il 30% aveva rigidi entrambi i muscoli del polpaccio (Patel e DiGiovanni, 2011).',
       paragraphs: [
-        'Il gastrocnemio va da dietro il ginocchio fino al tallone, attraverso il tendine d’Achille. La fascia plantare parte da dove finisce l’Achille, passa sotto l’osso del tallone e corre in avanti fino alle dita. Quando il gastrocnemio è rigido, limita quanto la caviglia può piegarsi verso l’alto. Così la fascia plantare deve assorbire più tensione a ogni passo.',
-        'In uno studio caso-controllo appaiato su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia ridotta aumentava di 23,3\u00A0volte le probabilità di fascite plantare. Era un fattore più forte dell’IMC, del tempo passato in piedi o di qualsiasi altra variabile dello studio.',
-        'A parte, una revisione di 254\u00A0persone con fascite plantare ha trovato che tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio, e un altro 23-30% una contrattura combinata di gastrocnemio e soleo. In altre parole, un polpaccio rigido non è un dettaglio. C’è nella maggior parte delle persone con questo problema.',
+        'Il gastrocnemio va da dietro il ginocchio fino al tallone, attraverso il tendine d’Achille. La fascia plantare è collegata al tendine d’Achille attraverso l’osso del tallone: passa sotto il calcagno e corre in avanti fino alle dita. Quando il gastrocnemio è rigido, limita quanto la caviglia può piegarsi verso l’alto. Così la fascia plantare deve assorbire più tensione a ogni passo.',
+        'In uno studio caso-controllo appaiato su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia ridotta era associata a un rischio molto più alto di fascite plantare (odds ratio 23,3). Era un fattore più forte dell’IMC, del tempo passato in piedi o di qualsiasi altra variabile dello studio.',
+        'A parte, un’analisi retrospettiva su 254\u00A0persone con fascite plantare ha trovato che tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio, e un altro 23-30% una contrattura combinata di gastrocnemio e soleo. In altre parole, un polpaccio rigido non è un dettaglio. C’è nella maggior parte delle persone con questo problema.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
     },
@@ -77,14 +77,14 @@ export const EX_CALF_STRETCH_IT: Guide = {
       paragraphs: [
         'Piegare il ginocchio dietro. Appena il ginocchio si piega, il gastrocnemio si rilassa e l’allungamento passa al soleo. Tieni il ginocchio dietro bloccato e teso per tutta la tenuta.',
         'Lasciare che il tallone dietro si sollevi. Se il tallone si stacca da terra, il polpaccio non si sta allungando. Prima premi il tallone a terra, poi porta il peso in avanti finché compare l’allungamento.',
-        'Ruotare in fuori il piede dietro. Quando il piede ruota verso l’esterno, l’allungamento colpisce il lato esterno del polpaccio invece di tutto il muscolo. Tieni le dita puntate dritte verso il muro.',
+        'Ruotare in fuori il piede dietro. Quando il piede ruota verso l’esterno, l’allungamento si concentra sul lato esterno del polpaccio invece di tutto il muscolo. Tieni le dita puntate dritte verso il muro.',
         'Tenere troppo poco. Una tenuta da 10\u00A0secondi non basta perché un allungamento prolungato agisca sulla lunghezza del tessuto. Tieni almeno 30\u00A0secondi per ripetizione.',
       ],
     },
     {
       h2: 'Chi dovrebbe fare questo allungamento e chi dovrebbe saltarlo?',
       paragraphs: [
-        'Questo allungamento è utile per chi ha dolore al tallone, fascite plantare, polpacci rigidi per le tante ore in piedi o per uno sport che carica il polpaccio, come la corsa. È negli elenchi di esercizi di [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/), [piedi doloranti dopo una giornata in piedi](/feet-hurt-standing-all-day/) (in inglese) e [dolore al tallone quando corri](/heel-pain-runners/) (in inglese).',
+        'Questo allungamento è utile per chi ha dolore al tallone, fascite plantare, polpacci rigidi per le tante ore in piedi o per uno sport che carica il polpaccio, come la corsa. Fa parte delle pagine [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/), [piedi doloranti dopo una giornata in piedi](/feet-hurt-standing-all-day/) (in inglese) e [dolore al tallone quando corri](/heel-pain-runners/) (in inglese).',
         'Saltalo o modificalo se hai un problema al tendine d’Achille che fa male durante l’allungamento. In quel caso il dolore viene da un’altra struttura, e caricare l’Achille con un allungamento al muro potrebbe non essere il punto di partenza giusto. Vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) per l’approccio specifico per l’Achille.',
         'Se non riesci ad arrivare al muro o a stare in piedi comodamente, un allungamento da seduto con un asciugamano dà una tensione simile sul polpaccio. Passa un asciugamano intorno all’avampiede, tieni il ginocchio teso e tira le dita verso di te.',
       ],
@@ -112,12 +112,12 @@ export const EX_CALF_STRETCH_IT: Guide = {
     {
       q: 'Che differenza c’è tra allungamento del polpaccio e del soleo?',
       cites: [CITE.patelGastrocnemius],
-      a: 'L’allungamento del polpaccio a ginocchio teso lavora sul gastrocnemio, il grande muscolo esterno del polpaccio. L’allungamento del soleo piega il ginocchio dietro, così il gastrocnemio si rilassa e si isola il soleo, più profondo. Entrambi i muscoli risultavano rigidi nella maggior parte delle persone con fascite plantare (Patel e DiGiovanni, 2011).',
+      a: 'L’allungamento del polpaccio a ginocchio teso lavora sul gastrocnemio, il muscolo più grande e superficiale del polpaccio. L’allungamento del soleo piega il ginocchio dietro, così il gastrocnemio si rilassa e si isola il soleo, più profondo. Più della metà delle persone con fascite plantare aveva rigido solo il gastrocnemio, e tra il 23 e il 30% entrambi i muscoli del polpaccio (Patel e DiGiovanni, 2011).',
     },
     {
       q: 'I polpacci rigidi possono causare la fascite plantare?',
       cites: [CITE.riddle, CITE.patelGastrocnemius],
-      a: 'Un polpaccio rigido limita la dorsiflessione della caviglia, che era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo (probabilità 23,3\u00A0volte più alte). A parte, tra il 52 e il 60% di 254\u00A0persone con fascite plantare aveva una contrattura limitata al gastrocnemio. Un polpaccio rigido non garantisce la fascite plantare, ma ne aumenta di molto le probabilità.',
+      a: 'Un polpaccio rigido limita la dorsiflessione della caviglia, che era il fattore di rischio indipendente più forte per la fascite plantare in uno studio caso-controllo (odds ratio 23,3). A parte, tra il 52 e il 60% di 254\u00A0persone con fascite plantare aveva una contrattura limitata al gastrocnemio. Un polpaccio rigido non porta per forza alla fascite plantare, ma è un fattore di rischio importante.',
     },
   ],
   redFlags: {
@@ -135,7 +135,7 @@ export const EX_CALF_STRETCH_IT: Guide = {
     h2: 'Farlo come un piano',
     text: 'Walkito mette l’allungamento del polpaccio insieme all’allungamento del soleo e a quello della fascia plantare in quasi tutte le sessioni. Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. L’app passa dagli allungamenti al lavoro di forza al tuo ritmo.',
     more: [
-      'Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Un polpaccio rigido che si scioglie nel giro di settimane si vede nel test come più movimento della caviglia. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',
+      'Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',
     ],
     cta: 'Inizia con 3\u00A0minuti al giorno.',
   },

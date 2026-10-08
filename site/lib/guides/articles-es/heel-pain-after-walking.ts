@@ -18,7 +18,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
   updated: '2026-10-07',
   title: 'Dolor de talón al caminar: por qué pasa y qué hacer',
   description:
-    'Dolor de talón al caminar o después de caminar: por qué te duele el talón, qué condiciones lo causan, cuándo preocuparte y qué ejercicios ayudan más.',
+    'Dolor de talón al caminar o después de caminar: por qué te duele el talón, qué afecciones lo causan, cuándo preocuparte y qué ejercicios ayudan más.',
   h1: 'Dolor de talón al caminar: por qué te duele y qué hacer al respecto',
   lede:
     'Tu talón estaba bien mientras caminabas, pero ahora que te detuviste te duele. O el dolor empezó a mitad de una caminata larga y fue empeorando con cada paso. Los dos patrones apuntan a lo mismo: los tejidos bajo el talón recibieron más carga de la que podían aguantar ese día. La causa más común es la fascitis plantar, y la respuesta más útil es estirar y fortalecer la pantorrilla de forma gradual.',
@@ -57,7 +57,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
     {
       h2: '¿En qué se diferencia el dolor de talón al caminar del dolor de talón en la mañana?',
       paragraphs: [
-        'El dolor de talón en la mañana y el dolor después de caminar son dos caras de la misma condición en la mayoría de los casos. El dolor de la mañana ocurre porque la fascia se pone rígida y se acorta durante la noche, y luego se estira de golpe cuando te paras. El dolor después de caminar ocurre porque la fascia recibió carga repetitiva durante la caminata y el tejido te está diciendo que fue suficiente.',
+        'El dolor de talón en la mañana y el dolor después de caminar son dos caras de la misma afección en la mayoría de los casos. El dolor de la mañana ocurre porque la fascia se pone rígida y se acorta durante la noche, y luego se estira de golpe cuando te paras. El dolor después de caminar ocurre porque la fascia recibió carga repetitiva durante la caminata y el tejido te está diciendo que fue suficiente.',
         'La diferencia importa para el momento de los ejercicios. El dolor de la mañana responde mejor a un estiramiento de la fascia plantar hecho antes del primer paso. El dolor después de caminar responde a manejar la carga: caminar una distancia que el pie pueda aguantar, aumentar esa distancia poco a poco, y usar estiramientos y trabajo de pantorrilla para subir el umbral. En [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) están los estiramientos de la mañana y las férulas nocturnas con detalle.',
         'Si tienes tanto dolor en la mañana como dolor después de caminar, ese es el patrón típico de la fascitis plantar. Los ejercicios se cruzan. El estiramiento de la mañana y los estiramientos de pantorrilla ayudan con los dos. El fortalecimiento de la pantorrilla sube la capacidad de toda la cadena para que la carga de caminar cada día quede dentro de lo que los tejidos pueden manejar.',
       ],
@@ -153,10 +153,10 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
     },
     {
       h2: '¿Cuánto tiempo hasta que el talón deje de doler después de caminar?',
-      keyFact: 'En datos normativos con 566\u00A0adultos sanos, el número promedio de elevaciones de talón a una pierna fue de unas 23 a 24\u00A0repeticiones, un punto de referencia para seguir la resistencia de la pantorrilla con el tiempo (Hebert-Losier y colegas, 2017).',
+      keyFact: 'En datos normativos con 566\u00A0adultos sanos, el número promedio de elevaciones de talón a una pierna fue de unas 23 a 24\u00A0repeticiones, un punto de referencia para seguir la resistencia de la pantorrilla con el tiempo (Hébert-Losier y colegas, 2017).',
       paragraphs: [
         'No hay un plazo fijo. Una revisión de la evidencia clínica indica que cerca del 90\u00A0% de las personas con fascitis plantar mejora con cuidados sin cirugía, a menudo en varios meses (Latt y colegas, 2020). En un seguimiento más largo de 174\u00A0personas, cerca de la mitad todavía tenía algunos síntomas a los 5\u00A0años, aunque la mayoría eran leves para ese momento (Hansen y colegas, 2018).',
-        'Lo que sí puedes medir más pronto es si los ejercicios están funcionando. El dolor de la mañana en una escala de 0 a 10 es la señal diaria más clara. La resistencia de la pantorrilla, medida contando cuántas elevaciones de talón a una pierna puedes hacer, sigue la fuerza a lo largo de semanas. Un dato normativo comúnmente citado para adultos es de unas 23 a 24\u00A0repeticiones en promedio, de datos normativos con 566\u00A0adultos sanos (Hebert-Losier y colegas, 2017). Lo que importa es si tu número está subiendo, no si coincide con ese dato.',
+        'Lo que sí puedes medir más pronto es si los ejercicios están funcionando. El dolor de la mañana en una escala de 0 a 10 es la señal diaria más clara. La resistencia de la pantorrilla, medida contando cuántas elevaciones de talón a una pierna puedes hacer, sigue la fuerza a lo largo de semanas. Un dato normativo comúnmente citado para adultos es de unas 23 a 24\u00A0repeticiones en promedio, de datos normativos con 566\u00A0adultos sanos (Hébert-Losier y colegas, 2017). Lo que importa es si tu número está subiendo, no si coincide con ese dato.',
         'Para más información sobre el plazo general, mira [¿cuánto dura la fascitis plantar?](/es/cuanto-dura-la-fascitis-plantar/).',
       ],
       cites: [CITE.latt, CITE.hansen, CITE.hebertLosier],

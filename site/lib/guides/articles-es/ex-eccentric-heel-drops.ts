@@ -39,7 +39,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_ES: Guide = {
       h2: '¿Cómo hacer excéntricos de talón (rodilla estirada)?',
       paragraphs: [
         'Párate en la orilla de un escalón, con la parte delantera de los pies sobre el escalón y los talones afuera. Sube con los dos pies. Pasa el peso a la pierna que trabaja. Baja ese talón despacio, en unos tres segundos, dejando que baje por debajo del escalón. Mantén la rodilla estirada. Usa los dos pies para volver arriba.',
-        'El excéntrico de talón con la rodilla estirada trabaja el gastrocnemio, el músculo más grande y externo de la pantorrilla. Alfredson también indicó una versión con la rodilla doblada para trabajar el sóleo, el músculo más profundo de la pantorrilla. Es el mismo movimiento, con la rodilla doblada a unos 30 a 45\u00A0grados durante la bajada.',
+        'El excéntrico de talón con la rodilla estirada trabaja el gastrocnemio, el músculo más grande y superficial de la pantorrilla. Alfredson también indicó una versión con la rodilla doblada para trabajar el sóleo, el músculo más profundo de la pantorrilla. Es el mismo movimiento, con la rodilla doblada a unos 30 a 45\u00A0grados durante la bajada.',
       ],
       exercises: [
         {

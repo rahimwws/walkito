@@ -43,7 +43,7 @@ export const PF_DURATION_IT: Guide = {
       keyFact: 'In una coorte di 174\u00A0persone, il rischio di avere ancora sintomi di fascite plantare era dell’80,5% a un anno, e scendeva al 45,6% a dieci anni (Hansen e colleghi, 2018).',
       paragraphs: [
         'Non c’è un numero unico. I tempi dipendono da quanto tempo ce l’hai, da cosa fai per affrontarla e da alcuni fattori che non puoi controllare.',
-        'Una revisione della letteratura del 2020 dice che gli approcci non chirurgici funzionano per circa il 90% delle persone con fascite plantare, di solito nel giro di tre-sei mesi (Latt e colleghi, 2020).',
+        'Una revisione della letteratura del 2020 riporta che circa il 90% delle persone con fascite plantare migliora con cure non chirurgiche, di solito nel giro di tre-sei mesi (Latt e colleghi, 2020).',
         'Uno studio di coorte del 2018 dà la visione più lunga. Hansen e colleghi hanno seguito 174\u00A0pazienti con fascite plantare diagnosticata con ecografia per in media 9,7\u00A0anni dall’inizio dei sintomi. Al follow-up, il 54% non aveva più sintomi e il 46% aveva ancora un po’ di dolore.',
         'L’analisi di Kaplan-Meier ha mostrato che il rischio di avere ancora la fascite plantare era dell’80,5% a un anno, del 50,0% a cinque anni e del 45,6% a dieci anni. Tra chi non aveva più sintomi, la durata media dei sintomi era di 725\u00A0giorni, circa due anni (Hansen e colleghi, 2018).',
         'Questi numeri sembrano peggiori del solito «passa in qualche mese». Due cose spiegano la differenza. Primo, la coorte di Hansen era una popolazione inviata da altri medici: il 93% aveva ricevuto un’infiltrazione di cortisone, il che fa pensare a casi più difficili da gestire, non a persone il cui dolore si era calmato con lo stretching e scarpe migliori.',
@@ -136,9 +136,9 @@ export const PF_DURATION_IT: Guide = {
     {
       h2: 'Come fa il dolore del mattino a mostrarti i progressi?',
       paragraphs: [
-        'Il dolore del mattino è il segnale quotidiano più affidabile di come sta il piede. Misura la stessa cosa (la rigidità ai primi passi), nelle stesse condizioni (appena sveglio, piede senza carico), più o meno alla stessa ora ogni giorno. Questo lo rende una linea di tendenza molto migliore di «come mi sentivo il piede durante il giorno», che cambia con l’attività, le scarpe e le superfici.',
-        'Un punteggio quotidiano da 0 a 10 ai primi passi, seguito per settimane, mostra schemi che altrimenti non noteresti. Un punteggio che scende piano da 5 a 3 in un mese è un progresso vero, anche se qualche mattina fa ancora male. Un punteggio che sale di colpo la mattina dopo una lunga corsa o una giornata in piedi ti dice esattamente quale carico era troppo.',
-        'Walkito ti chiede un punteggio del dolore del mattino prima di ogni sessione e lo usa per adattare gli esercizi del giorno. Il primo obiettivo per il dolore al tallone è un dolore del mattino a 1 su 10 o meno per 14\u00A0giorni di fila. Quando lo raggiungi, passa al mantenimento e il successivo (di solito forza del polpaccio o equilibrio) prende il suo posto. Quel passaggio, da «rendere più facili le mattine» a «costruire capacità», è il vero traguardo.',
+        'Il dolore del mattino è il segnale quotidiano più affidabile di come sta il piede. Misura la stessa cosa (la rigidità ai primi passi), nelle stesse condizioni (appena sveglio, piede senza carico), più o meno alla stessa ora ogni giorno. Questo lo rende una linea di tendenza molto migliore di «come sentivo il piede durante il giorno», che cambia con l’attività, le scarpe e le superfici.',
+        'Un punteggio quotidiano da 0 a 10 ai primi passi, seguito per settimane, mostra schemi che altrimenti non noteresti. Un punteggio che scende piano da 5 a 3 in un mese è un progresso vero, anche se qualche mattina fa ancora male. Un punteggio che sale di colpo la mattina dopo una lunga corsa o una giornata in piedi ti dice quale carico è stato eccessivo.',
+        'Walkito ti chiede un punteggio del dolore del mattino prima di ogni sessione e lo usa per adattare gli esercizi del giorno. Il primo obiettivo per il dolore al tallone è un dolore del mattino a 1 su 10 o meno per 14\u00A0giorni di fila. Quando lo raggiungi, quell’obiettivo passa al mantenimento e il successivo (di solito forza del polpaccio o equilibrio) prende il suo posto. Quel passaggio, da «rendere più facili le mattine» a «costruire capacità», è il vero traguardo.',
       ],
       cites: [CITE.guideline],
     },
@@ -162,7 +162,7 @@ export const PF_DURATION_IT: Guide = {
     {
       q: 'La spina calcaneare fa durare di più la fascite plantare?',
       cites: [CITE.hansen],
-      a: 'Non secondo lo studio di Hansen del 2018. Avere una spina calcaneare all’inizio non cambiava in modo significativo quanto duravano i sintomi (P = 0,88). Molte persone hanno una spina calcaneare senza dolore, e molte con dolore non hanno la spina. La spina spesso c’è, ma non è lei a causare i sintomi.',
+      a: 'Non secondo lo studio di Hansen del 2018. Avere una spina calcaneare all’inizio non cambiava in modo significativo quanto duravano i sintomi (P = 0,88). Molte persone hanno una spina calcaneare senza dolore, e molte con dolore non hanno la spina. La spina spesso c’è, ma di solito non è lei a causare i sintomi.',
     },
     {
       q: 'Camminare fa bene alla fascite plantare?',
@@ -206,9 +206,9 @@ export const PF_DURATION_IT: Guide = {
   },
   program: {
     h2: 'Farlo come un piano',
-    text: 'Il recupero richiede tempo, e la parte più difficile è capire se quel tempo sta servendo. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è una mattina migliore: dolore a 1 su 10 o meno per 14\u00A0giorni di fila. Ogni mattina segni il dolore, e ogni 14\u00A0giorni un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi i numeri muoversi.',
+    text: 'Il recupero richiede tempo, e la parte più difficile è capire se quel tempo sta servendo. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è una mattina migliore: dolore a 1 su 10 o meno per 14\u00A0giorni di fila. Ogni mattina segni il dolore, e ogni 14\u00A0giorni un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi se i numeri cambiano.',
     more: [
-      'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Quando hai raggiunto l’obiettivo del mattino, passa al mantenimento e il successivo prende il suo posto. Non c’è una data di fine fissa, perché il ritmo lo decide il piede.',
+      'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Quando hai raggiunto l’obiettivo del mattino, quell’obiettivo passa al mantenimento e il successivo prende il suo posto. Non c’è una data di fine fissa, perché il ritmo lo decide il piede.',
       'Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario. Se il dolore non migliora dopo diversi mesi, rivolgiti a un professionista sanitario per verificare la diagnosi e parlare delle opzioni di questa pagina.',
     ],
     cta: 'Inizia con 3\u00A0minuti al giorno.',

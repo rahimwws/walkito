@@ -43,7 +43,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
       h2: 'Perché gli esercizi aiutano la spina calcaneare?',
       keyFact: 'In uno studio su 530\u00A0persone con dolore al piede, la spina calcaneare compariva da sola solo nel 6% dei piedi, di solito insieme a una fascia plantare ispessita (Menz e colleghi, 2019).',
       paragraphs: [
-        'La spina calcaneare è una crescita ossea sulla parte inferiore dell’osso del tallone. In uno studio su 530\u00A0persone dai 50\u00A0anni in su con dolore al piede, una spina calcaneare da sola era rara (6% dei piedi), e il dolore al tallone era legato a una spina insieme a una fascia plantare ispessita, la banda di tessuto sotto il piede (Menz e colleghi, 2019). Il dolore viene dal tessuto molle, ed è lì che l’esercizio può arrivare.',
+        'La spina calcaneare è una crescita ossea sulla parte inferiore dell’osso del tallone. In uno studio su 530\u00A0persone dai 50\u00A0anni in su con dolore al piede, una spina calcaneare da sola era rara (6% dei piedi), e il dolore al tallone era legato a una spina insieme a una fascia plantare ispessita, la banda di tessuto sotto il piede (Menz e colleghi, 2019). Di solito il dolore viene dal tessuto molle, ed è lì che l’esercizio può arrivare.',
         'Allungare la fascia plantare e il polpaccio riduce la tensione sul punto in cui si attaccano al tallone. Rinforzare il polpaccio aumenta la capacità della catena che assorbe il carico ogni volta che il tallone tocca terra. Insieme, riducono lo stress quotidiano sul tessuto intorno alla spina.',
         'Nessun programma di esercizi farà sparire una spina dalla radiografia. Ma la maggior parte delle persone con una spina calcaneare non ha bisogno che la spina sparisca. Ha bisogno che il dolore si calmi, e questo viene da una fascia e un polpaccio più forti e più flessibili.',
       ],
@@ -58,7 +58,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
       exercises: [
         {
           name: 'Allungamento della fascia plantare',
-          evidence: { level: 'strong', why: 'Grado A nella linea guida. Uno studio del 2003 su 101\u00A0persone ha trovato questo allungamento più efficace del solo allungamento del polpaccio a 8\u00A0settimane.' },
+          evidence: { level: 'strong', why: 'Grado A nella linea guida. Uno studio del 2003 su 101\u00A0persone (82 hanno completato il follow-up) ha trovato questo allungamento più efficace del solo allungamento del polpaccio a 8\u00A0settimane.' },
           dose: '10\u00A0tenute da 10\u00A0secondi, ogni piede',
           how: 'Siediti e accavalla una caviglia sull’altro ginocchio. Tira indietro le dita con delicatezza finché senti un allungamento lungo l’arco. Tieni, poi rilascia. Fallo prima del primo passo ogni mattina e dopo essere stato seduto a lungo.',
           often: 'Ogni mattina e dopo essere stato seduto',
@@ -72,7 +72,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
           name: 'Allungamento del polpaccio (ginocchio teso)',
           evidence: { level: 'strong', why: 'Grado A nella linea guida. Un gastrocnemio rigido è stato il fattore di rischio più forte per la fascite plantare in uno studio caso-controllo del 2003.' },
           dose: '2\u00A0tenute da 30\u00A0secondi, ogni gamba',
-          how: 'Mani al muro. Gamba dietro tesa, tallone a terra, fianchi in avanti. Tieni finché senti l’allungamento nella parte alta del polpaccio. Il gastrocnemio, il muscolo del polpaccio più grande e più esterno, si allunga solo con il ginocchio teso.',
+          how: 'Mani al muro. Gamba dietro tesa, tallone a terra, fianchi in avanti. Tieni finché senti l’allungamento nella parte alta del polpaccio. Il gastrocnemio, il muscolo del polpaccio più grande e più superficiale, si allunga solo con il ginocchio teso.',
           often: 'Quasi tutte le sessioni',
           feel: 'Un allungamento nella parte alta del polpaccio',
           stop: 'Il dolore arriva a 6/10',
@@ -82,7 +82,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
         },
         {
           name: 'Allungamento del soleo (ginocchio piegato)',
-          evidence: { level: 'strong', why: 'Grado A nella linea guida. Lavora sul soleo, il muscolo più profondo del polpaccio, che si rilascia solo con il ginocchio piegato.' },
+          evidence: { level: 'strong', why: 'Grado A nella linea guida. Lavora sul soleo, il muscolo più profondo del polpaccio, che si allunga davvero solo con il ginocchio piegato.' },
           dose: '2\u00A0tenute da 30\u00A0secondi, ogni gamba',
           how: 'Stessa posizione al muro dell’allungamento del polpaccio, poi piega il ginocchio dietro finché senti l’allungamento scendere, vicino al tallone. Il soleo sta sotto il gastrocnemio e si attacca più vicino al tallone.',
           often: 'Quasi tutte le sessioni, dopo l’allungamento a ginocchio teso',
@@ -186,7 +186,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
           name: 'Massaggio con la pallina',
           evidence: { level: 'early', why: 'Non testato negli studi di questa pagina. È qui per dare sollievo tra una sessione e l’altra.' },
           dose: '2\u00A0minuti, ogni piede',
-          how: 'Siediti e fai rotolare lentamente la pianta del piede su una pallina da massaggio o una bottiglia d’acqua ghiacciata. Tieni una pressione decisa, ma non tanto da farti fare smorfie. Farlo dopo una lunga giornata in piedi può calmare il tessuto.',
+          how: 'Siediti e fai rotolare lentamente la pianta del piede su una pallina da massaggio o una bottiglia d’acqua ghiacciata. Tieni una pressione decisa, ma non tanto da farti fare smorfie. Farlo dopo una lunga giornata in piedi può dare sollievo al tessuto.',
           often: 'Giorni di recupero o dopo una lunga giornata',
           feel: 'Pressione decisa sotto il piede, mai un dolore acuto',
           stop: 'Il dolore arriva a 6/10',
@@ -242,8 +242,8 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
     {
       h2: 'Si può eliminare la spina calcaneare in modo naturale?',
       paragraphs: [
-        'Esercizi, stretching e cambi nella dieta non sciolgono una spina calcaneare. La spina è osso calcificato. Resta nella radiografia che tu faccia stretching o no.',
-        'Ma «eliminare la spina» è raramente l’obiettivo giusto. Nello studio del 2019, la spina c’era quasi sempre insieme a una fascia plantare ispessita, e il tessuto molle è la parte che l’esercizio può cambiare. Il dolore viene dal tessuto molle. Gli esercizi di questa pagina lavorano sul tessuto molle. Se il dolore si calma, la spina non è un problema da risolvere.',
+        'Esercizi, stretching e cambi nella dieta non sciolgono una spina calcaneare. La spina è tessuto osseo. Resta nella radiografia che tu faccia stretching o no.',
+        'Ma «eliminare la spina» è raramente l’obiettivo giusto. Nello studio del 2019, la spina c’era quasi sempre insieme a una fascia plantare ispessita, e il tessuto molle è la parte che l’esercizio può cambiare. Di solito il dolore viene dal tessuto molle. Gli esercizi di questa pagina lavorano sul tessuto molle. Se il dolore si calma, la spina non è un problema da risolvere.',
         'Se qualcuno ti ha promesso un integratore, una crema o un dispositivo che scioglie le spine calcaneari, sii scettico. Nessuna prova pubblicata sostiene questa affermazione. L’approccio raccomandato dalla linea guida è stretching, rinforzo del polpaccio e gestione del carico.',
       ],
       cites: [CITE.menzCoexistence, CITE.guideline],
@@ -257,7 +257,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
     },
     {
       q: 'Gli esercizi sciolgono la spina calcaneare?',
-      a: 'No. La spina calcaneare è osso calcificato e l’esercizio non la scioglie. Gli esercizi lavorano sulla fascia plantare e sul polpaccio, i tessuti molli intorno alla spina che sono quasi sempre l’origine del dolore. Se con gli esercizi il dolore si calma, la spina nella radiografia non è un problema da risolvere.',
+      a: 'No. La spina calcaneare è tessuto osseo e l’esercizio non la scioglie. Gli esercizi lavorano sulla fascia plantare e sul polpaccio, i tessuti molli intorno alla spina che sono quasi sempre l’origine del dolore. Se con gli esercizi il dolore si calma, la spina nella radiografia non è un problema da risolvere.',
     },
     {
       q: 'Quanto spesso fare gli allungamenti per la spina calcaneare?',
@@ -277,12 +277,12 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
     {
       q: 'Camminare fa bene con la spina calcaneare?',
       cites: [CITE.guideline],
-      a: 'Camminare in sé non è il problema. Camminare con scarpe che sostengono il piede, a un ritmo comodo, di solito va bene ed è meglio del riposo completo. Il dolore viene dalla fascia plantare e dal polpaccio sotto la spina, e camminare in modo moderato tiene attiva la pompa del polpaccio. Se camminare ti peggiora il dolore del mattino dopo, accorcia la distanza e riaumentala piano piano.',
+      a: 'Camminare in sé non è il problema. Camminare con scarpe che sostengono il piede, a un ritmo comodo, di solito va bene ed è meglio del riposo completo. Di solito il dolore viene dalla fascia plantare e dal polpaccio intorno alla spina, e camminare in modo moderato tiene attiva la pompa del polpaccio. Se camminare ti peggiora il dolore del mattino dopo, accorcia la distanza e riaumentala piano piano.',
     },
     {
       q: 'Quali esercizi evitare con la spina calcaneare?',
       cites: [CITE.guideline],
-      a: 'Evita i movimenti ad alto impatto come corsa, salti e pliometria mentre il dolore al tallone è acceso; colpi ripetuti su una superficie dura sforzano il tessuto vicino alla spina. Anche le discese profonde del tallone dal bordo di un gradino possono sovraccaricare una fascia irritata. La linea guida del 2023 sostiene di regolare il carico invece di vietare esercizi; il test è se il tallone va peggio la mattina dopo.',
+      a: 'Evita i movimenti ad alto impatto come corsa, salti e pliometria nelle fasi in cui il dolore al tallone è più forte; colpi ripetuti su una superficie dura sforzano il tessuto vicino alla spina. Anche le discese profonde del tallone dal bordo di un gradino possono sovraccaricare una fascia irritata. La linea guida del 2023 sostiene di regolare il carico invece di vietare esercizi; il test è se il tallone va peggio la mattina dopo.',
     },
     {
       q: 'Cosa fa riacutizzare il dolore da spina calcaneare?',

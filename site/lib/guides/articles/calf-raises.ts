@@ -24,7 +24,7 @@ export const CALF_RAISES_EN: Guide = {
   takeaways: [
     'In a trial of 48 people, loaded heel raises with a towel under the toes eased plantar fasciitis pain faster than stretching alone at three months, though both groups were even by twelve months (Rathleff and colleagues, 2015).',
     'The 2023 heel pain guideline grades strength training B, its second-highest grade, and grades stretching A (Koc and colleagues, 2023).',
-    'Reduced ankle dorsiflexion, meaning how far the foot bends up toward the shin, often caused by a tight gastrocnemius, the bigger outer calf muscle, is an independent risk factor for plantar fasciitis (Riddle and colleagues, 2003).',
+    'Reduced ankle dorsiflexion, meaning how far the foot bends up toward the shin, often caused by a tight gastrocnemius, the bigger, more superficial calf muscle, is an independent risk factor for plantar fasciitis (Riddle and colleagues, 2003).',
     'The towel under the toes engages the windlass mechanism, loading the plantar fascia along with the calf.',
     'A single-leg heel-raise count in the low-to-mid 20s, about 23-24 on average, is a commonly cited adult benchmark, useful for tracking progress over weeks (Hebert-Losier and colleagues, 2017).',
   ],
@@ -155,7 +155,7 @@ export const CALF_RAISES_EN: Guide = {
       keyFact: 'In a series of 254 people with plantar fasciitis, 52 to 60% had a contracture limited to the gastrocnemius, and another 23 to 30% had a combined gastrocnemius-soleus contracture (Patel and colleagues, 2011).',
       paragraphs: [
         'A tight calf pulls on the heel through the Achilles tendon, and the plantar fascia shares the load at the other end. When the ankle cannot bend enough, every step puts more strain on the fascia.',
-        'In a series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius, the outer calf muscle, and another 23 to 30 percent had a combined gastrocnemius-soleus contracture. Separately, a matched case-control study of 50 cases and 100 controls found that reduced ankle dorsiflexion, how far the foot bends up toward the shin, was the strongest independent risk factor for plantar fasciitis.',
+        'In a series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius, the more superficial calf muscle, and another 23 to 30 percent had a combined gastrocnemius-soleus contracture. Separately, a matched case-control study of 50 cases and 100 controls found that reduced ankle dorsiflexion, how far the foot bends up toward the shin, was the strongest independent risk factor for plantar fasciitis.',
         'This is why calf stretching and calf strengthening both appear on the list. Stretching gives the ankle more range. Strengthening gives the calf enough capacity that it does not tighten under normal daily load. The guideline recommends both. The same tight-calf mechanism shows up in other lower-leg pain too: see [shin splints exercises](/shin-splints-exercises/) and [feet hurt from standing all day](/feet-hurt-standing-all-day/) if your pain pattern looks more like either of those.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle, CITE.guideline],
@@ -200,7 +200,7 @@ export const CALF_RAISES_EN: Guide = {
     {
       q: 'How many calf raises should I do for plantar fasciitis?',
       cites: [CITE.rathleff],
-      a: 'The only trial that tested a specific heel-raise protocol for plantar fasciitis started at a 12-repetition maximum for 3 sets, progressed to 10RM for 4 sets at week 2, and to 8RM for 5 sets at week 4, done every other day for up to 3 months (Rathleff 2015). "12RM" means the heaviest load you can lift for 12 controlled reps, not a fixed count for everyone.',
+      a: 'The only trial that tested a specific heel-raise protocol for plantar fasciitis started at a 12-repetition maximum for 3 sets, progressed to 10RM for 4 sets at week 3, and to 8RM for 5 sets at week 5, done every other day for up to 3 months (Rathleff 2015). "12RM" means the heaviest load you can lift for 12 controlled reps, not a fixed count for everyone.',
     },
     {
       q: 'Do calf raises make plantar fasciitis worse?',
@@ -210,7 +210,7 @@ export const CALF_RAISES_EN: Guide = {
     {
       q: 'What is the towel for in a towel calf raise?',
       cites: [CITE.rathleff],
-      a: 'The towel rolls under the toes so they bend upward at the top of the raise. That activates the windlass mechanism, the link between the Achilles tendon and the plantar fascia. Without the towel, the exercise mainly trains the calf. With it, the fascia takes part of the load, which is why the trial used it.',
+      a: 'The towel rolls under the toes so they bend upward at the top of the raise. That activates the windlass mechanism: when the big toe bends upward, the plantar fascia tightens. Without the towel, the exercise mainly trains the calf. With it, the fascia takes part of the load, which is why the trial used it.',
     },
     {
       q: 'Should I stretch or strengthen first for plantar fasciitis?',

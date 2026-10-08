@@ -18,7 +18,7 @@ export const EX_CALF_RAISES: Guide = {
     'How to do calf raises correctly: standing, seated, and isometric hold variations, muscles worked, sets and reps, common mistakes, and who they help.',
   h1: 'Calf raises: how to do them correctly, with sets, reps and variations',
   lede:
-    'A calf raise is a standing or seated exercise where you push up onto the balls of your feet. It strengthens the gastrocnemius (the bigger outer calf muscle) and the soleus (the deeper one), and it loads the Achilles tendon and plantar fascia with every rep. This page covers the double-leg standing raise, the seated version, and the isometric hold at the top.',
+    'A calf raise is a standing or seated exercise where you push up onto the balls of your feet. It strengthens the gastrocnemius (the bigger, more superficial calf muscle) and the soleus (the deeper one), and it loads the Achilles tendon and plantar fascia with every rep. This page covers the double-leg standing raise, the seated version, and the isometric hold at the top.',
   takeaways: [
     'The 2023 heel pain guideline grades calf strengthening B and recommends it alongside stretching, which it grades A (Koc and colleagues, 2023).',
     'A normative study of 566 healthy adults (ages 20 to 81) found a median single-leg calf raise count of 24 reps for men and 21 for women, shifting with age, sex and activity level (Hebert-Losier and colleagues, 2017).',

@@ -91,7 +91,7 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
     {
       h2: 'How is the plantar fascia stretch different from a calf stretch?',
       paragraphs: [
-        'They target different structures. The [calf stretch](/exercises/calf-stretch/) lengthens the gastrocnemius, the big outer calf muscle, through the Achilles tendon. The plantar fascia stretch pulls the toes back to load the fascia directly under the arch. The two are connected through the heel bone but respond to different positions.',
+        'They target different structures. The [calf stretch](/exercises/calf-stretch/) lengthens the gastrocnemius, the big, more superficial calf muscle, through the Achilles tendon. The plantar fascia stretch pulls the toes back to load the fascia directly under the arch. The two are connected through the heel bone but respond to different positions.',
         'A tight calf is a risk factor for plantar fasciitis on its own. In a case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion, how far the foot bends up toward the shin, was the strongest independent risk factor. That is why the guideline recommends both stretches, not one or the other.',
         'For the deeper calf muscle, the soleus, the stretch changes: you bend the back knee to shift the load from the gastrocnemius to the soleus. That is a separate exercise. See [soleus stretch](/exercises/soleus-stretch/).',
       ],

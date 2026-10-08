@@ -28,23 +28,23 @@ export const STANDING_ES: Guide = {
   lede:
     'Al final de un turno largo te duelen los pies. Te duele el arco, el talón está adolorido y sientes las piernas pesadas. Estar de pie por horas sobre un piso duro carga los mismos tejidos una y otra vez, sin el bombeo que caminar les da a tus pantorrillas y a tus venas. Estirar la pantorrilla y la fascia plantar, y ganar algo de fuerza en la pantorrilla, trabaja justo los tejidos que más se cargan.',
   intro: [
-    'No todo el dolor de pies por estar de pie es fascitis plantar, pero las dos cosas se cruzan. Un estudio de casos y controles de 2003, con 50\u00A0personas con fascitis plantar y 100 controles emparejados, encontró que estar de pie la mayor parte de la jornada laboral multiplicaba por 3,6 las probabilidades de tener fascitis plantar. La poca flexibilidad del tobillo fue un factor de riesgo todavía más fuerte: 23,3 veces las probabilidades. Los ejercicios que ayudan en los dos casos son casi los mismos: estiramientos de pantorrilla y de fascia plantar, más trabajo de fuerza para la pantorrilla.',
+    'No todo el dolor de pies por estar de pie es fascitis plantar, pero las dos cosas se cruzan. Un estudio de casos y controles de 2003, con 50\u00A0personas con fascitis plantar y 100 controles emparejados, encontró que estar de pie la mayor parte de la jornada laboral se asociaba con una razón de probabilidades de 3,6 para la fascitis plantar. La poca flexibilidad del tobillo fue un factor de riesgo todavía más fuerte: una razón de probabilidades de 23,3. Los ejercicios que ayudan en los dos casos son casi los mismos: estiramientos de pantorrilla y de fascia plantar, más trabajo de fuerza para la pantorrilla.',
   ],
   toc: true,
   takeaways: [
     'Una revisión de 2015 sobre salud laboral encontró que estar de pie mucho tiempo en el trabajo se asocia con molestias musculares, cansancio y dolor de piernas. Los tapetes para el piso, las medias de compresión y el calzado con soporte están entre las medidas con evidencia a favor (Waters y Dick, 2015).',
-    'Estar de pie la mayor parte de la jornada multiplicó por 3,6 las probabilidades de fascitis plantar en un estudio de casos y controles con 50 casos y 100 controles. La poca flexibilidad del tobillo las multiplicó por 23,3 (Riddle y colegas, 2003).',
+    'Estar de pie la mayor parte de la jornada se asoció con una razón de probabilidades de 3,6 para la fascitis plantar en un estudio de casos y controles con 50 casos y 100 controles. La poca flexibilidad del tobillo tuvo una razón de probabilidades de 23,3 (Riddle y colegas, 2003).',
     'En un ensayo de grupos paralelos con 40 guardias de seguridad asignados al azar a calcetines normales o a uno de dos grupos con medias de compresión, tanto las medias de 15-20\u00A0mmHg como las de 20-30\u00A0mmHg evitaron el aumento de molestias en pies y piernas que se vio con calcetines normales durante turnos de pie de 12\u00A0horas (Garcia y colegas, 2023).',
     'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, A, y al entrenamiento de fuerza una B.',
   ],
   sections: [
     {
       h2: '¿Por qué te duelen los pies después de estar de pie todo el día?',
-      keyFact: 'En un estudio de casos y controles, la poca flexibilidad del tobillo multiplicó por 23,3 las probabilidades de fascitis plantar, y estar de pie la mayor parte de la jornada, por 3,6 (Riddle y colegas, 2003).',
+      keyFact: 'En un estudio de casos y controles, la poca flexibilidad del tobillo se asoció con una razón de probabilidades de 23,3 para la fascitis plantar, y estar de pie la mayor parte de la jornada, por 3,6 (Riddle y colegas, 2003).',
       paragraphs: [
         'Los pies duelen por estar de pie porque, quieto, cargas la fascia plantar, los músculos de la pantorrilla y el talón sin darles un descanso. Al caminar, cada paso bombea la sangre de las piernas hacia arriba. Estar de pie quita ese bombeo, así que la sangre se acumula en la parte baja de las piernas y los tejidos bajo el pie cargan el mismo peso fijo durante horas.',
         'Una revisión de 2015 sobre la investigación en salud laboral encontró que estar de pie mucho tiempo se asocia con dolor lumbar, dolor de piernas, molestias y cansancio en muchos trabajos que se hacen de pie. La revisión también señaló que el esfuerzo del corazón y la hinchazón de las piernas aumentan con el tiempo de pie. Los autores pidieron definiciones más claras de «estar de pie mucho tiempo» en futuros estudios, porque el límite entre un tiempo de pie seguro y uno dañino cambia según la persona y el trabajo.',
-        'En cuanto a la pantorrilla y la fascia, un estudio de casos y controles de 2003 encontró dos factores de riesgo que destacaron sobre el resto. La poca flexibilidad del tobillo, es decir, una pantorrilla tensa, fue el factor que más predijo la fascitis plantar: 23,3 veces las probabilidades. Estar de pie la mayor parte de la jornada las multiplicó por 3,6. Las dos cosas están conectadas: una pantorrilla tensa mantiene el talón con más tensión en cada minuto que pasas de pie.',
+        'En cuanto a la pantorrilla y la fascia, un estudio de casos y controles de 2003 encontró dos factores de riesgo que destacaron sobre el resto. La poca flexibilidad del tobillo, es decir, una pantorrilla tensa, fue el factor que más predijo la fascitis plantar: una razón de probabilidades de 23,3. Estar de pie la mayor parte de la jornada tuvo una razón de probabilidades de 3,6. Las dos cosas están conectadas: una pantorrilla tensa mantiene el talón con más tensión en cada minuto que pasas de pie.',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -220,7 +220,7 @@ export const STANDING_ES: Guide = {
     },
     {
       q: '¿El dolor de pies por estar de pie todo el día es lo mismo que la fascitis plantar?',
-      a: 'No siempre. El dolor y el cansancio general por estar de pie son comunes y suelen quitarse con descanso. La fascitis plantar es un problema específico, con dolor agudo en el talón, muchas veces peor en los primeros pasos después de descansar. Estar de pie la mayor parte de la jornada es un factor de riesgo independiente para la fascitis plantar, con 3,6 veces las probabilidades en un estudio de casos y controles, así que están relacionados pero no son lo mismo.',
+      a: 'No siempre. El dolor y el cansancio general por estar de pie son comunes y suelen quitarse con descanso. La fascitis plantar es un problema específico, con dolor agudo en el talón, muchas veces peor en los primeros pasos después de descansar. Estar de pie la mayor parte de la jornada es un factor de riesgo independiente para la fascitis plantar, con una razón de probabilidades de 3,6 en un estudio de casos y controles, así que están relacionados pero no son lo mismo.',
       cites: [CITE.riddle],
     },
     {

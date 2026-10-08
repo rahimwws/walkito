@@ -129,7 +129,7 @@ export const EX_HIP_ABDUCTION_ES: Guide = {
   },
   program: {
     h2: 'Hacerlo como un plan',
-    text: 'Walkito añade la abducción de cadera en los días de fuerza cuando una meta de equilibrio entre izquierda y derecha entra en tu plan. Va junto con ejercicios intrínsecos del pie y trabajo de pantorrilla, para que el arco tenga apoyo desde arriba y desde abajo. Las sesiones duran 3, 5 o 10\u00A0minutos, y una prueba cada 14\u00A0días sigue tu avance.',
+    text: 'Walkito añade la abducción de cadera en los días de fuerza cuando una meta de diferencia entre izquierda y derecha entra en tu plan. Va junto con ejercicios intrínsecos del pie y trabajo de pantorrilla, para que el arco tenga apoyo desde arriba y desde abajo. Las sesiones duran 3, 5 o 10\u00A0minutos, y una prueba cada 14\u00A0días sigue tu avance.',
     cta: 'Empieza con 3\u00A0minutos al día.',
   },
   crumb: 'Abducción de cadera',

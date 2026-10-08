@@ -63,7 +63,7 @@ export const NURSES_EN: Guide = {
             why: 'The 2023 heel pain guideline grades calf stretching A for plantar fasciitis. A tight calf was the strongest risk factor in a 2003 case-control study.',
           },
           dose: '2 holds of 30 seconds, each leg',
-          how: 'Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward. This targets the gastrocnemius, the bigger outer calf muscle. You can do this in the break room or against any wall.',
+          how: 'Put your hands on a wall. Keep the back leg straight, the heel down and the hips forward. This targets the gastrocnemius, the bigger, more superficial calf muscle. You can do this in the break room or against any wall.',
           media: 'calf_stretch_straight',
           caption: 'Calf stretch: back leg straight, heel down, hips forward',
           alt: 'A figure leaning against a wall with the back leg straight and the calf highlighted',

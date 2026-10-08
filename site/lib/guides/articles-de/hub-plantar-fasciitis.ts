@@ -56,7 +56,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
       keyFact: 'In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100 ohne erhöhte eine eingeschränkte Dorsalflexion im Sprunggelenk die Odds für Plantarfasziitis um das 23,3-Fache, der stärkste gemessene Risikofaktor (Riddle und Kollegen, 2003).',
       paragraphs: [
         'Plantarfasziitis entsteht, wenn die Faszie stärker belastet wird, als sie verkraften und sich davon erholen kann. Die Last kann auf einmal zu groß sein (ein plötzlicher Sprung bei den Laufkilometern) oder über lange Zeit gleichmäßig wirken (den ganzen Tag auf hartem Boden stehen).',
-        'Eine gematchte Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollen fand, dass eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor war, mit einer Odds Ratio von 23,3. In einer anderen Serie von 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Verkürzung, die nur den Gastrocnemius betraf, den größeren, äußeren Wadenmuskel. Langes Stehen bei der Arbeit erhöhte die Odds um das 3,6-Fache. Ein höherer Body-Mass-Index erhöhte sie ebenfalls.',
+        'Eine gematchte Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollen fand, dass eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor war, mit einer Odds Ratio von 23,3. In einer anderen Serie von 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Verkürzung, die nur den Gastrocnemius betraf, den größeren, oberflächlicheren Wadenmuskel. Langes Stehen bei der Arbeit erhöhte die Odds um das 3,6-Fache. Ein höherer Body-Mass-Index erhöhte sie ebenfalls.',
         'Die Leitlinie nennt weitere Risikofaktoren: ein Alter zwischen 40 und 60, Laufen oder Springen und Berufe mit langem Stehen. Plattfüße oder ein Hohlfuß können verändern, wie die Last durch die Faszie läuft, aber keins von beiden führt zwangsläufig dazu.',
         'Meist kommt Plantarfasziitis aus einer Kombination: eine verkürzte Wade, eine Belastung, auf die der Fuß nicht vorbereitet war, und zu wenig Erholungszeit.',
       ],
@@ -86,7 +86,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
           ['Manuelle Therapie (Arbeit an Gelenken und Weichteilen)', '**A**', 'Beste Bewertung. Durch eine Fachperson, bei eingeschränkter Beweglichkeit von Gelenken und Gewebe.'],
           ['Tapen des Fußes (starr oder elastisch)', '**A**', 'Beste Bewertung für kurzfristig weniger Schmerz und bessere Funktion, zusammen mit anderer Behandlung.'],
           ['Nachtschienen für 1 bis 3\u00A0Monate', '**A**', 'Beste Bewertung bei anhaltendem Morgenschmerz. Siehe [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/).'],
-          ['Krafttraining (belastetes Fersenheben)', '**B**', 'Hat die Besserung in einer Studie mit 48\u00A0Personen vorgezogen. Siehe [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).'],
+          ['Krafttraining (belastetes Fersenheben)', '**B**', 'Hat die Besserung in einer Studie mit 48\u00A0Personen beschleunigt. Siehe [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).'],
           ['Low-Level-Lasertherapie', '**B**', 'Behandlung in der Praxis.'],
           ['Dry Needling', '**B**', 'Behandlung in der Praxis.'],
           ['Einlagen in Kombination mit anderer Behandlung', '**C**', 'Schwache Belege. Kann als Teil eines breiteren Programms helfen.'],
@@ -135,7 +135,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
       h2: 'Plantarfasziitis bei der Arbeit und beim Laufen',
       paragraphs: [
         'Langes Stehen auf harten Böden ist einer der Risikofaktoren aus der Studie von Riddle 2003: Es erhöhte die Odds für Plantarfasziitis um das 3,6-Fache. Eine Übersichtsarbeit von 2015 zur arbeitsmedizinischen Literatur verband langes Stehen bei der Arbeit mit Beschwerden des Bewegungsapparats, Erschöpfung und Beinschmerzen. Wenn dir die Füße am Ende einer Schicht wehtun, gelten dieselben Wadendehnungen und dasselbe Krafttraining.',
-        'Läuferinnen und Läufern rät die Leitlinie von 2023, die Belastung zu verändern, statt ganz aufzuhören. Das heißt, Umfang oder Intensität zu reduzieren, nicht auf null zu gehen. Die Empfehlung beruht auf Expertenmeinung (Bewertung E), weil keine Studie sie getestet hat, aber sie passt dazu, wie auch die Leitlinien zur Achillessehne und zum Schienbeinkantensyndrom mit Überlastungsverletzungen umgehen.',
+        'Läuferinnen und Läufern rät die Leitlinie von 2023, die Belastung zu verändern, statt ganz aufzuhören. Das heißt, Umfang oder Intensität zu reduzieren, nicht auf null zu gehen. Die Empfehlung beruht auf theoretischen Grundlagen (Bewertung E), weil keine Studie sie getestet hat, aber sie passt dazu, wie auch die Leitlinien zur Achillessehne und zum Schienbeinkantensyndrom mit Überlastungsverletzungen umgehen.',
       ],
       bullets: [
         '[Fußschmerzen vom langen Stehen](/feet-hurt-standing-all-day/) (auf Englisch) behandelt Übungen und Schuhe für alle, die bei der Arbeit viel stehen.',
@@ -184,12 +184,12 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     {
       q: 'Wie wird man Plantarfasziitis am schnellsten los?',
       cites: [CITE.guideline, CITE.rathleff],
-      a: 'Eine Abkürzung gibt es nicht, aber die Belege sprechen dafür, früh mit Dehnen anzufangen (Bewertung A in der Leitlinie) und Wadenkrafttraining dazuzunehmen (Bewertung B). In einer Studie mit 48\u00A0Personen hat schweres Fersenheben die Besserung nach drei Monaten vorgezogen (Rathleff und Kollegen, 2015). Tägliches Dehnen, stützende Schuhe und den Fuß nicht zu überlasten sind die Grundlagen.',
+      a: 'Eine Abkürzung gibt es nicht, aber die Belege sprechen dafür, früh mit Dehnen anzufangen (Bewertung A in der Leitlinie) und Wadenkrafttraining dazuzunehmen (Bewertung B). In einer Studie mit 48\u00A0Personen hat schweres Fersenheben die Besserung in den ersten drei Monaten beschleunigt (Rathleff und Kollegen, 2015). Tägliches Dehnen, stützende Schuhe und den Fuß nicht zu überlasten sind die Grundlagen.',
     },
     {
       q: 'Geht Plantarfasziitis von allein weg?',
       cites: [CITE.latt, CITE.hansen],
-      a: 'Das kann sie, aber meist dauert es lange. Eine Übersichtsarbeit von 2020 berichtet, dass es etwa 90\u00A0% der Menschen mit konservativer Behandlung besser geht (Latt und Kollegen, 2020). In einer Kohorte von 174\u00A0Patientinnen und Patienten war nach fünf Jahren etwa die Hälfte beschwerdefrei (Hansen und Kollegen, 2018). Aktiv etwas zu tun, verkürzt diesen Zeitraum.',
+      a: 'Das kann sie, aber meist dauert es lange. Eine Übersichtsarbeit von 2020 berichtet, dass es etwa 90\u00A0% der Menschen mit konservativer Behandlung besser geht (Latt und Kollegen, 2020). In einer Kohorte von 174\u00A0Patientinnen und Patienten war nach fünf Jahren etwa die Hälfte beschwerdefrei (Hansen und Kollegen, 2018). Aktiv etwas zu tun, kann diesen Zeitraum verkürzen.',
     },
     {
       q: 'Ist Gehen bei Plantarfasziitis gut oder schlecht?',

@@ -78,7 +78,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_PT: Guide = {
     {
       h2: 'Qual a diferença entre o alongamento da fáscia plantar e o de panturrilha?',
       paragraphs: [
-        'Eles miram estruturas diferentes. O [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) alonga o gastrocnêmio, o músculo grande e mais externo da panturrilha, pelo tendão de Aquiles. O alongamento da fáscia plantar puxa os dedos para trás para carregar a fáscia diretamente, embaixo do arco. Os dois estão ligados pelo osso do calcanhar, mas respondem a posições diferentes.',
+        'Eles miram estruturas diferentes. O [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) alonga o gastrocnêmio, o músculo grande e mais superficial da panturrilha, pelo tendão de Aquiles. O alongamento da fáscia plantar puxa os dedos para trás para tensionar a fáscia diretamente, embaixo do arco. Os dois estão ligados pelo osso do calcanhar, mas respondem a posições diferentes.',
         'Uma panturrilha tensa é por si só um fator de risco para fascite plantar. Em um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a dorsiflexão reduzida do tornozelo, o quanto o pé dobra para cima em direção à canela, foi o fator de risco independente mais forte. É por isso que a diretriz recomenda os dois alongamentos, e não um ou outro.',
         'Para o músculo mais profundo da panturrilha, o sóleo, o alongamento muda: você dobra o joelho de trás para passar a carga do gastrocnêmio para o sóleo. É outro exercício. Veja [alongamento do sóleo](/exercises/soleus-stretch/) (em inglês).',
       ],

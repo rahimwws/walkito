@@ -67,7 +67,7 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
           name: 'Estiramiento de pantorrilla (rodilla estirada)',
           evidence: { level: 'strong', why: 'Grado A en la guía. Un gastrocnemio tenso fue el factor de riesgo más fuerte para la fascitis plantar en un estudio de casos y controles de 2003.' },
           dose: '2\u00A0repeticiones de 30\u00A0segundos, cada pierna',
-          how: 'Manos en una pared. Pierna de atrás estirada, talón en el piso, cadera hacia adelante. Mantén hasta sentir el estiramiento en la parte alta de la pantorrilla. El gastrocnemio, el músculo más grande y externo de la pantorrilla, solo se estira con la rodilla estirada.',
+          how: 'Manos en una pared. Pierna de atrás estirada, talón en el piso, cadera hacia adelante. Mantén hasta sentir el estiramiento en la parte alta de la pantorrilla. El gastrocnemio, el músculo más grande y superficial de la pantorrilla, solo se estira con la rodilla estirada.',
           often: 'La mayoría de las sesiones',
           feel: 'Un estiramiento en la parte alta de la pantorrilla',
           stop: 'Dolor de 6/10',
@@ -228,7 +228,7 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
     {
       h2: '¿Cuánto tarda el dolor del espolón en mejorar con ejercicio?',
       paragraphs: [
-        'No hay un ensayo que mida los resultados del ejercicio específicamente para personas con espolón calcáneo. Los tiempos de abajo vienen de estudios de fascitis plantar, que es la condición que produce el dolor alrededor del espolón en la mayoría de los casos.',
+        'No hay un ensayo que mida los resultados del ejercicio específicamente para personas con espolón calcáneo. Los tiempos de abajo vienen de estudios de fascitis plantar, que es la afección que produce el dolor alrededor del espolón en la mayoría de los casos.',
         'Una revisión de la evidencia clínica indica que cerca del 90\u00A0% de las personas con fascitis plantar mejora con cuidados sin cirugía, como estiramientos y plantillas, a menudo en varios meses (Latt y colegas, 2020). En el ensayo de Rathleff de 2015, el grupo de elevaciones de talón con carga iba significativamente adelante del grupo de solo estiramientos a los tres meses.',
         'Ningún programa de ejercicios puede prometer un plazo para ninguna persona. Lo que sí puedes medir es si las cosas están cambiando. El dolor de la mañana en una escala de 0 a 10, anotado antes del primer paso, es la señal más clara en el día a día. La resistencia de la pantorrilla, medida por cuántas elevaciones de talón a una pierna puedes hacer, sigue la fuerza a lo largo de semanas. Las dos son más útiles que adivinar.',
       ],
@@ -277,7 +277,7 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
     {
       q: '¿Qué ejercicios debo evitar si tengo un espolón calcáneo?',
       cites: [CITE.guideline],
-      a: 'Evita movimientos de alto impacto como correr, saltar y la pliometría mientras el talón esté inflamado; el golpeteo repetido sobre una superficie dura tensiona el tejido junto al espolón. Los descensos profundos de talón desde la orilla de un escalón también pueden sobrecargar una fascia irritada. La guía de 2023 respalda ajustar la carga en lugar de prohibir ejercicios; la prueba es si el talón se siente peor a la mañana siguiente.',
+      a: 'Evita movimientos de alto impacto como correr, saltar y la pliometría mientras el talón esté irritado; el golpeteo repetido sobre una superficie dura tensiona el tejido junto al espolón. Los descensos profundos de talón desde la orilla de un escalón también pueden sobrecargar una fascia irritada. La guía de 2023 respalda ajustar la carga en lugar de prohibir ejercicios; la prueba es si el talón se siente peor a la mañana siguiente.',
     },
     {
       q: '¿Qué dispara el dolor de un espolón calcáneo?',

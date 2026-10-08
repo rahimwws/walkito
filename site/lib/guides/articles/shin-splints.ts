@@ -143,12 +143,12 @@ export const SHIN_SPLINTS_EN: Guide = {
           name: 'Toe raises',
           evidence: {
             level: 'early',
-            why: 'Targets the tibialis anterior, the shin muscle itself. No shin-splints-specific trial, but the muscle is the one that hurts.',
+            why: 'Targets the tibialis anterior, the muscle on the front of the shin. No shin-splints-specific trial, and shin splints usually hurt along the inner edge of the shinbone, so the link is indirect.',
           },
           dose: '3 sets of 10, both feet',
           often: 'Strength days',
           feel: 'The shin muscle working as the toes lift',
-          how: 'Stand with your back against a wall. Lift the toes and the front of both feet off the floor, keeping the heels down. Lower slowly. This is the muscle along the front of the shin, the one that aches when shin splints flare.',
+          how: 'Stand with your back against a wall. Lift the toes and the front of both feet off the floor, keeping the heels down. Lower slowly. This is the muscle along the front of the shin.',
           image: 'Exercise: toe raises',
           media: 'tibialis_raise',
           caption: 'Toe raises: back against the wall, lift the toes, heels stay down',
@@ -173,7 +173,7 @@ export const SHIN_SPLINTS_EN: Guide = {
           name: 'Hip abduction',
           evidence: {
             level: 'early',
-            why: 'Hip external rotation is a confirmed risk factor in two meta-analyses. No trial has tested hip strengthening as a treatment for shin splints.',
+            why: 'Two meta-analyses linked hip rotation range to shin splints. No trial has tested hip strengthening as a treatment for shin splints.',
           },
           dose: '3 sets of 15, each leg',
           often: 'Strength days',

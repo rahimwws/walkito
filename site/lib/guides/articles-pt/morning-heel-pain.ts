@@ -23,12 +23,12 @@ export const MORNING_HEEL_PAIN_PT: Guide = {
   lede:
     'Os primeiros passos ao sair da cama são a pior parte do dia. Aquela fisgada forte no calcanhar, antes mesmo de você ficar em pé direito, é o padrão que a maioria das pessoas descreve quando pesquisa sobre dor no calcanhar. A causa mais comum é a fascite plantar, mas não é a única, e a manhã é o momento mais útil para fazer alguma coisa a respeito.',
   intro: [
-    'A página de [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) traz a lista completa de exercícios, a evidência por trás de cada um e os graus da diretriz. Esta página se aprofunda na manhã em si: por que o primeiro passo dói, quais outras condições têm o mesmo padrão, o que fazer antes de o pé tocar o chão, e como acompanhar a sua dor da manhã mostra se as coisas estão melhorando.',
+    'A página de [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) traz a lista completa de exercícios, a evidência por trás de cada um e os graus da diretriz. Esta página se aprofunda na manhã em si: por que o primeiro passo dói, quais outras condições têm o mesmo padrão, o que fazer antes de o pé tocar o chão, e por que acompanhar a sua dor da manhã mostra se as coisas estão melhorando.',
   ],
   takeaways: [
     'A dor no calcanhar pela manhã é a marca da fascite plantar: a diretriz de 2023 para dor no calcanhar a descreve como uma dor “mais perceptível ao apoiar o peso logo cedo pela manhã ou depois de um período de repouso” (Koc e colegas, 2023).',
     'Alongar a fáscia plantar antes de ficar em pé tem grau **A**, o mais alto da diretriz. As talas noturnas, usadas por 1 a 3\u00A0meses, também recebem um **A** para dor nos primeiros passos que não passa (Koc e colegas, 2023).',
-    'Outras condições que doem de manhã são a tendinite de Aquiles (parte de trás do calcanhar), o afinamento do coxim gorduroso do calcanhar (dor funda no centro), a fratura por estresse do calcâneo (aumenta com a atividade, pode doer em repouso) e a artrite inflamatória (os dois calcanhares, com rigidez prolongada pela manhã em outras articulações).',
+    'Outras condições que doem de manhã são a tendinite de Aquiles (parte de trás do calcanhar), a síndrome do coxim gorduroso do calcanhar (dor funda no centro), a fratura por estresse do calcâneo (aumenta com a atividade, pode doer em repouso) e a artrite inflamatória (os dois calcanhares, com rigidez prolongada pela manhã em outras articulações).',
     'Em um grupo de 174\u00A0pessoas com fascite plantar, dor nos dois calcanhares foi um preditor significativo de sintomas mais duradouros, e os autores observaram que uma doença inflamatória sistêmica não reconhecida poderia explicar em parte esse achado (Hansen e colegas, 2018).',
     'A dor da manhã numa escala de 0 a 10 é o sinal mais claro do dia a dia para saber se o pé está melhorando ou não.',
   ],
@@ -50,7 +50,7 @@ export const MORNING_HEEL_PAIN_PT: Guide = {
       paragraphs: [
         'A fascite plantar é a causa mais comum de dor no calcanhar pela manhã, mas não é a única. O local e o comportamento da dor ajudam a diferenciar.',
         '**Tendinite de Aquiles.** Dor na parte de trás do calcanhar ou no tendão logo acima, não embaixo do pé. O tendão de Aquiles fica rígido durante a noite assim como a fáscia plantar, então rigidez nos primeiros passos é comum. Normalmente melhora ao caminhar e depois piora de novo com atividade prolongada. Se a sua dor é na parte de trás do calcanhar e não embaixo dele, veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
-        '**Afinamento do coxim gorduroso do calcanhar.** O coxim gorduroso embaixo do osso do calcanhar funciona como uma almofada. Quando ele afina ou se desloca, o osso recebe mais impacto diretamente.',
+        '**Síndrome do coxim gorduroso do calcanhar.** O coxim gorduroso embaixo do osso do calcanhar funciona como uma almofada. Quando ele afina ou se desloca, o osso recebe mais impacto diretamente.',
         'Uma revisão de escopo de 2022 observou que a dor do coxim gorduroso costuma ser uma dor funda no centro do calcanhar, piora em superfícies duras e ao andar descalço, e pode ser difícil de diferenciar da fascite plantar sem exame de imagem (Chang e colegas, 2022). A diferença principal: a dor da fascite plantar costuma ser mais forte na parte de dentro e da frente do calcanhar, enquanto a dor do coxim gorduroso fica bem embaixo, no centro.',
         '**Fratura por estresse do calcâneo.** Dor que aparece aos poucos, normalmente depois de um aumento de atividade. Ao contrário da fascite plantar, a dor da fratura por estresse costuma aumentar com a atividade em vez de melhorar depois do aquecimento, e pode doer em repouso ou à noite. Se apertar as laterais do calcanhar reproduz a dor, procure um profissional de saúde antes de exercitar o pé. [Dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) explica como mudanças repentinas de carga afetam o calcanhar.',
         '**Artrite inflamatória (um sinal de alerta).** Quando os dois calcanhares doem de manhã, a rigidez dura mais de 30\u00A0minutos e outras articulações também estão rígidas ou inchadas, o padrão se afasta da fascite plantar e se aproxima de algo que um profissional de saúde deve avaliar. Condições como artrite psoriásica ou espondilite anquilosante podem causar dor onde os tendões se prendem ao osso, incluindo o calcanhar.',
@@ -62,7 +62,7 @@ export const MORNING_HEEL_PAIN_PT: Guide = {
       h2: 'O que você pode fazer antes do primeiro passo?',
       paragraphs: [
         'O mais útil que você pode fazer pela dor no calcanhar pela manhã acontece antes de o pé tocar o chão. A diretriz de 2023 para dor no calcanhar dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, **A**, e a manhã é o momento que ela mais repete quando recomenda alongar.',
-        'Sente-se na beira da cama. Cruze um tornozelo sobre o joelho oposto e puxe os dedos para trás com cuidado, com uma mão, até sentir um alongamento ao longo do arco. Segure por cerca de 10\u00A0segundos e solte. Faça isso 10\u00A0vezes em cada pé. Isso carrega a fáscia devagar, de forma controlada, antes de você pedir que ela aguente todo o seu peso.',
+        'Sente-se na beira da cama. Cruze um tornozelo sobre o joelho oposto e puxe os dedos para trás com cuidado, com uma mão, até sentir um alongamento ao longo do arco. Segure por cerca de 10\u00A0segundos e solte. Faça isso 10\u00A0vezes em cada pé. Isso tensiona a fáscia devagar, de forma controlada, antes de você pedir que ela aguente todo o seu peso.',
         'Em seguida, alongue a panturrilha. Fique perto da cama ou de uma parede, um pé atrás do outro, o calcanhar de trás no chão, e incline para a frente até sentir o alongamento na parte de cima da panturrilha. Segure por 30\u00A0segundos de cada lado.',
         'Panturrilhas tensas puxam o calcanhar pelo tendão de Aquiles, e pouca flexibilidade no tornozelo é um dos fatores de risco independentes mais fortes para fascite plantar: em um estudo de caso-controle pareado com 50\u00A0casos e 100\u00A0controles, ela teve a maior razão de chances de todos os fatores medidos (Riddle e colegas, 2003).',
         'Depois calce um sapato com bom suporte ou um chinelo de sola firme antes de ir até a cozinha. Descalço em piso duro é a pior combinação para uma fáscia rígida. Esses alongamentos da manhã são o ponto de partida. O plano de mais longo prazo acrescenta treino de força: a [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/) é o exercício com a evidência de ensaio mais direta por trás.',
@@ -82,7 +82,7 @@ export const MORNING_HEEL_PAIN_PT: Guide = {
         },
         {
           name: 'Alongamento de panturrilha (joelho esticado)',
-          evidence: { level: 'strong', why: 'O mesmo grau A na diretriz. Trabalha o gastrocnêmio, o músculo maior e mais externo da panturrilha.' },
+          evidence: { level: 'strong', why: 'O mesmo grau A na diretriz. Trabalha o gastrocnêmio, o músculo maior e mais superficial da panturrilha.' },
           dose: '3\u00A0vezes de 30\u00A0segundos, cada perna',
           how: 'Mãos na parede. Perna de trás esticada, calcanhar no chão, quadril para a frente. Segure até sentir o alongamento na parte de cima da panturrilha.',
           often: 'Depois do alongamento da fáscia, na maioria das manhãs',
@@ -147,7 +147,7 @@ export const MORNING_HEEL_PAIN_PT: Guide = {
     {
       q: 'Devo alongar antes de sair da cama?',
       cites: [CITE.guideline],
-      a: 'Sim. A diretriz de 2023 para dor no calcanhar dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, A, e a manhã é o momento que ela mais cita. Sente-se na beira da cama, cruze um tornozelo sobre o outro joelho e puxe os dedos para trás com cuidado por cerca de 10\u00A0segundos, 10\u00A0vezes em cada pé. Isso carrega a fáscia devagar antes de você pedir que ela aguente todo o seu peso.',
+      a: 'Sim. A diretriz de 2023 para dor no calcanhar dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, A, e a manhã é o momento que ela mais cita. Sente-se na beira da cama, cruze um tornozelo sobre o outro joelho e puxe os dedos para trás com cuidado por cerca de 10\u00A0segundos, 10\u00A0vezes em cada pé. Isso tensiona a fáscia devagar antes de você pedir que ela aguente todo o seu peso.',
     },
     {
       q: 'Dor no calcanhar de manhã é sempre fascite plantar?',

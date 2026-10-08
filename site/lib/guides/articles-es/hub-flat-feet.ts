@@ -100,7 +100,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
       h2: '¿Qué ejercicios ayudan con el pie plano?',
       paragraphs: [
         'Los ejercicios para el pie plano se enfocan en los músculos que sostienen el arco desde abajo (los músculos intrínsecos del pie) y en los músculos más arriba que controlan cómo apoya el pie (la pantorrilla, la cadera). La mejor evidencia hasta ahora viene de un ensayo con 52\u00A0personas con pie plano flexible, en el que seis semanas de ejercicios combinados cambiaron la forma del arco más que en un grupo de control. Ese ensayo incluyó pie corto, ejercicios de tobillo, fortalecimiento de cadera y estiramientos, hechos juntos.',
-        'Una revisión de 2024 sobre el pie corto por sí solo fue menos alentadora: no encontró un cambio claro en general, y solo una mejora en una medida del arco en programas de más de seis semanas. La conclusión es que un programa combinado funciona mejor que un solo ejercicio, y que la paciencia importa.',
+        'Una revisión de 2024 sobre el pie corto por sí solo fue menos alentadora: no encontró un cambio claro en general, y solo una mejora en una medida del arco en programas de más de seis semanas. Esto sugiere que un programa combinado podría funcionar mejor que un solo ejercicio, y que la paciencia importa.',
         'En [ejercicios para pie plano](/es/ejercicios-pie-plano/) está la lista completa, con dosis, qué debes sentir en cada uno y la evidencia detrás. Walkito arma un plan semanal en torno a una meta de mantener el arco: empieza con pie corto sentado, pasa a las versiones de pie y a una pierna, y después suma la banda elástica y el fortalecimiento de cadera. Cada ejercicio tiene su propia página:',
       ],
       bullets: [
@@ -138,7 +138,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
   ],
   faq: [
     {
-      q: '¿El pie plano es algo de qué preocuparse?',
+      q: '¿El pie plano es algo por lo que preocuparse?',
       cites: [CITE.menz],
       a: 'Para la mayoría de las personas, no. Un pie plano flexible que no duele y no limita tu actividad es una forma normal del pie, no un trastorno. El Framingham Foot Study, con unos 1900\u00A0adultos, no encontró relación entre el pie plano y el dolor de espalda baja (Menz y colegas, 2013). Los casos que sí necesitan atención son el pie plano rígido y los arcos que se hundieron en la edad adulta con dolor o hinchazón.',
     },
@@ -177,7 +177,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
     {
       q: '¿Qué grupo étnico tiene más pie plano?',
       cites: [CITE.salinasTorres],
-      a: 'El pie plano (pes planus) aparece con más frecuencia en algunos grupos, aunque la investigación es limitada. Una revisión sistemática de 2023 sobre estudios de población encontró que la raza asiática se asoció con más del doble de probabilidades de pie plano, y la raza blanca con aproximadamente la mitad de probabilidades, en comparaciones de subgrupos distintas. Son patrones de población, no una predicción sobre los pies de una persona en particular.',
+      a: 'El pie plano (pes planus) aparece con más frecuencia en algunos grupos, aunque la investigación es limitada. Una revisión sistemática de 2023 sobre estudios de población encontró que, en las personas de origen asiático, la razón de probabilidades de pie plano fue de más del doble, y en las personas blancas, de aproximadamente la mitad, en comparaciones de subgrupos distintas. Son patrones de población, no una predicción sobre los pies de una persona en particular.',
     },
   ],
   redFlags: {
@@ -196,7 +196,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
   },
   program: {
     h2: 'Hacerlo como un plan',
-    text: 'No tienes que decidir qué ejercicios de arco hacer ni cuándo pasar a una versión más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Para un pie plano flexible, esa meta es mantener el arco: sostenerlo arriba 60\u00A0segundos. Si además te duele el talón, primero van las mañanas sin dolor.',
+    text: 'No tienes que decidir qué ejercicios de arco hacer ni cuándo pasar a una versión más difícil. Walkito arma un plan una semana a la vez en torno a una meta. Para un pie plano flexible, esa meta es mantener el arco: sostenerlo arriba 60\u00A0segundos. Si además te duele el talón, primero van las mañanas más fáciles.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días (y después cada 28 una vez que alcanzas tu primera meta), una prueba corta mide cuánto mantienes el arco, la resistencia de la pantorrilla y el equilibrio. La meta de mantener el arco sigue en el plan hasta que la alcanzas, tome las semanas que tome.',
       'Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud. Si un arco se te bajó de adulto con dolor o hinchazón, consulta a un profesional antes de empezar.',

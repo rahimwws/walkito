@@ -19,11 +19,11 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
   title: 'Fascitis plantar vs espolón calcáneo: ¿son lo mismo?',
   description:
     'Fascitis plantar vs espolón calcáneo: en qué se diferencian, si el espolón causa dolor, qué dice la investigación y cuándo conviene una radiografía.',
-  h1: 'Fascitis plantar vs espolón calcáneo: ¿son la misma condición?',
+  h1: 'Fascitis plantar vs espolón calcáneo: ¿son la misma afección?',
   lede:
-    'Un espolón calcáneo es un crecimiento de hueso en la parte de abajo del hueso del talón. La fascitis plantar es una irritación de la fascia plantar, la banda gruesa de tejido que va de ese hueso hasta los dedos. Suelen aparecer juntos, pero no son la misma condición, y el espolón casi nunca es lo que duele. Muchas personas con espolón en la radiografía no sienten ningún dolor.',
+    'Un espolón calcáneo es un crecimiento de hueso en la parte de abajo del hueso del talón. La fascitis plantar es una irritación de la fascia plantar, la banda gruesa de tejido que va de ese hueso hasta los dedos. Suelen aparecer juntos, pero no son la misma afección, y el espolón casi nunca es lo que duele. Muchas personas con espolón en la radiografía no sienten ningún dolor.',
   intro: [
-    'Si te dijeron que tienes un espolón calcáneo y quieres saber qué hacer, los ejercicios son los mismos que ayudan con la fascitis plantar. En [ejercicios para el espolón calcáneo](/es/ejercicios-espolon-calcaneo/) está la rutina completa. Esta página explica la diferencia entre las dos condiciones, qué dice la investigación sobre los espolones y el dolor, y cuándo vale la pena pedir estudios de imagen.',
+    'Si te dijeron que tienes un espolón calcáneo y quieres saber qué hacer, los ejercicios son los mismos que ayudan con la fascitis plantar. En [ejercicios para el espolón calcáneo](/es/ejercicios-espolon-calcaneo/) está la rutina completa. Esta página explica la diferencia entre las dos afecciones, qué dice la investigación sobre los espolones y el dolor, y cuándo vale la pena pedir estudios de imagen.',
   ],
   takeaways: [
     'En un estudio con 216\u00A0adultos mayores de 62 a 94\u00A0años, el 55\u00A0% tenía al menos un espolón calcáneo plantar en la radiografía, y la presencia de espolón se relacionó con obesidad y artrosis, pero no con la postura del pie (Menz y colegas, 2008). Es una muestra de adultos mayores, no una cifra de la población general.',
@@ -89,7 +89,7 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
       h2: 'Si el espolón no es el problema, ¿qué es?',
       paragraphs: [
         'El dolor suele venir de la fascia plantar y los tejidos que la rodean, no del hueso. La fascia plantar se une a la parte inferior del hueso del talón. Cuando se sobrecarga, sobre todo en alguien con la pantorrilla tensa, un IMC alto o muchas horas de pie, ese punto de unión se irrita. Esa irritación es la fascitis plantar.',
-        'Una pantorrilla tensa es uno de los factores de riesgo más fuertes. En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, una dorsiflexión de tobillo reducida, es decir, cuánto puede subir el pie hacia la tibia, tuvo la razón de probabilidades más alta de todos los factores medidos. Estar de pie la mayor parte de la jornada laboral también fue significativo, con 3,6\u00A0veces las probabilidades (Riddle y colegas, 2003).',
+        'Una pantorrilla tensa es uno de los factores de riesgo más fuertes. En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, una dorsiflexión de tobillo reducida, es decir, cuánto puede subir el pie hacia la tibia, tuvo la razón de probabilidades más alta de todos los factores medidos. Estar de pie la mayor parte de la jornada laboral también fue significativo, con una razón de probabilidades de 3,6 (Riddle y colegas, 2003).',
         'El espolón, cuando está, se encuentra cerca. Puede haberse formado a lo largo de meses o años como respuesta al mismo estrés mecánico que irritó la fascia. Pero es la fascia y la pantorrilla lo que responde al estiramiento y al trabajo de fuerza, no el hueso. Por eso la guía recomienda ejercicio, no la remoción del espolón.',
         'Para una visión general completa de la fascitis plantar, incluyendo causas, factores de riesgo y lo que recomienda la guía, mira [fascitis plantar](/es/fascitis-plantar/).',
       ],
@@ -125,7 +125,7 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
         },
         {
           name: 'Estiramiento de pantorrilla (rodilla estirada)',
-          evidence: { level: 'strong', why: 'Mismo grado A en la guía. Trabaja el gastrocnemio, el músculo más grande y externo de la pantorrilla.' },
+          evidence: { level: 'strong', why: 'Mismo grado A en la guía. Trabaja el gastrocnemio, el músculo más grande y superficial de la pantorrilla.' },
           dose: '2\u00A0repeticiones de 30\u00A0segundos, cada pierna',
           how: 'Manos en una pared. Pierna de atrás estirada, talón en el piso, cadera hacia adelante. Una pantorrilla tensa jala del talón a través del tendón de Aquiles, añadiendo carga a la fascia.',
           often: 'La mayoría de las sesiones',

@@ -37,7 +37,7 @@ export const SEVERS_ES: Guide = {
       paragraphs: [
         'La enfermedad de Sever es una inflamación de la apófisis calcánea, la placa de crecimiento en la parte de atrás del hueso del talón donde se inserta el tendón de Aquiles. En un niño en crecimiento, esta placa de crecimiento es de cartílago, más blando y más vulnerable al estrés que el hueso alrededor. El tendón de Aquiles y la fascia plantar tiran de esta zona. Cuando un niño corre, salta o hace deporte sobre superficies duras, esas fuerzas se repiten cientos de veces por sesión.',
         'Durante un estirón de crecimiento, el hueso del talón puede crecer más rápido que los músculos de la pantorrilla y el tendón de Aquiles, lo que aumenta la tensión sobre la placa de crecimiento. Esa combinación de crecimiento óseo rápido e impacto repetido es lo que causa la irritación.',
-        'La enfermedad de Sever no es una fractura y no daña la placa de crecimiento de forma permanente. Se clasifica como una apofisitis por tracción: la placa de crecimiento recibe un tirón, no se rompe. Cuando la placa de crecimiento se cierra y se convierte en hueso sólido, la condición no puede volver.',
+        'La enfermedad de Sever no es una fractura y no daña la placa de crecimiento de forma permanente. Se clasifica como una apofisitis por tracción: la placa de crecimiento recibe un tirón, no se rompe. Cuando la placa de crecimiento se cierra y se convierte en hueso sólido, la afección no puede volver.',
       ],
       cites: [CITE.wiegerinck],
     },
@@ -93,7 +93,7 @@ export const SEVERS_ES: Guide = {
     {
       h2: '¿El estiramiento de pantorrilla ayuda con la enfermedad de Sever?',
       paragraphs: [
-        'Las pantorrillas tensas aumentan el tirón sobre la placa de crecimiento, y la rigidez de la pantorrilla es uno de los factores de riesgo reconocidos de la apofisitis calcánea. Estirar el gastrocnemio (el músculo más grande y externo de la pantorrilla, que se estira con la rodilla estirada) y el sóleo (el músculo más profundo, que se estira con la rodilla doblada) es una recomendación habitual.',
+        'Las pantorrillas tensas aumentan el tirón sobre la placa de crecimiento, y la rigidez de la pantorrilla es uno de los factores de riesgo reconocidos de la apofisitis calcánea. Estirar el gastrocnemio (el músculo más grande y superficial de la pantorrilla, que se estira con la rodilla estirada) y el sóleo (el músculo más profundo, que se estira con la rodilla doblada) es una recomendación habitual.',
         'En el ensayo de Wiegerinck, el grupo de ejercicio hizo un programa de fortalecimiento excéntrico de la pantorrilla bajo supervisión de un fisioterapeuta. Este grupo mejoró tanto como los de la plantilla y los de esperar y observar. El estiramiento y el fortalecimiento suave son seguros y pueden ayudar al reducir la tracción sobre la placa de crecimiento, pero la evidencia no muestra que sean mejores que las taloneras o el manejo de la carga por sí solos.',
         'Los ejercicios para niños con apofisitis calcánea deben ser supervisados o enseñados por un profesional de la salud o un fisioterapeuta. La dosis y la progresión dependen de la edad del niño, su nivel de dolor y las exigencias de su deporte. Un niño con dolor agudo que está cojeando necesita descansar primero, no hacer ejercicios.',
       ],
@@ -142,7 +142,7 @@ export const SEVERS_ES: Guide = {
     },
     {
       q: '¿En qué se diferencia la enfermedad de Sever de la fascitis plantar?',
-      a: 'La enfermedad de Sever afecta la placa de crecimiento en la parte de atrás del talón en niños, mientras que la fascitis plantar es una irritación de la fascia plantar bajo el pie, sobre todo en adultos. El dolor de Sever suele estar en la parte de atrás y en los lados del talón y empeora con la actividad. El de la fascitis plantar suele estar bajo el talón y es peor en los primeros pasos después de descansar. Las dos condiciones tienen causas y caminos de cuidado distintos.',
+      a: 'La enfermedad de Sever afecta la placa de crecimiento en la parte de atrás del talón en niños, mientras que la fascitis plantar es una irritación de la fascia plantar bajo el pie, sobre todo en adultos. El dolor de Sever suele estar en la parte de atrás y en los lados del talón y empeora con la actividad. El de la fascitis plantar suele estar bajo el talón y es peor en los primeros pasos después de descansar. Las dos afecciones tienen causas y caminos de cuidado distintos.',
     },
     {
       q: '¿Walkito puede ayudar a mi hijo con enfermedad de Sever?',

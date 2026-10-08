@@ -54,7 +54,7 @@ export const HOME_DE: HomeCopy = {
     run: {
       title: 'Läufer und Sportler',
       text: 'Schmerzen an Ferse, Achillessehne oder Schienbein, die beim Training immer wiederkommen.',
-      goal: `Ziel: ${calfRaises}\u00A0Wadenheben auf einem Bein`,
+      goal: `Ziel: ${calfRaises}-mal einbeiniges Fersenheben`,
     },
   },
   whoMore: 'Zum Ratgeber',
@@ -62,7 +62,7 @@ export const HOME_DE: HomeCopy = {
   how: [
     {
       title: 'Woche für Woche, rund um ein Ziel',
-      text: `Jede Woche dreht sich um ein Ziel, das du messen kannst: morgendlicher Fersenschmerz bei ${PAIN_GOAL_MAX}/10 oder weniger an ${painFreeDays}\u00A0Tagen am Stück, das Gewölbe ${archHoldSeconds}\u00A0Sekunden halten, ${calfRaises}\u00A0Wadenheben auf einem Bein, ${balanceSeconds}\u00A0Sekunden Gleichgewicht auf einem Bein oder links und rechts weniger als ${gapPercent}\u00A0% auseinander. Erreichst du eins, geht es in die Erhaltung über und das nächste rückt nach.`,
+      text: `Jede Woche dreht sich um ein Ziel, das du messen kannst: morgendlicher Fersenschmerz bei ${PAIN_GOAL_MAX}/10 oder weniger an ${painFreeDays}\u00A0Tagen am Stück, das Gewölbe ${archHoldSeconds}\u00A0Sekunden halten, ${calfRaises}-mal einbeiniges Fersenheben, ${balanceSeconds}\u00A0Sekunden Gleichgewicht auf einem Bein oder links und rechts weniger als ${gapPercent}\u00A0% auseinander. Erreichst du eins, geht es in die Erhaltung über und das nächste rückt nach.`,
       link: 'So funktioniert der Plan (auf Englisch)',
     },
     {

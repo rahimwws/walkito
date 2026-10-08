@@ -20,7 +20,7 @@ export const EX_ANKLE_ROCKS: Guide = {
   takeaways: [
     'Reduced ankle dorsiflexion was the strongest independent risk factor for plantar fasciitis in a matched case-control study, at 23.3 times the odds (Riddle and colleagues, 2003).',
     'Ankle rocks build dorsiflexion by loading the end of the range under bodyweight, unlike a passive wall stretch.',
-    'The knee-to-wall test measures how far the knee travels past the toes with the heel down. Walkito includes a knee-to-wall exercise (2 holds of 30 seconds, each leg) and uses the test in its periodic check-in.',
+    'The knee-to-wall test measures how far the knee travels past the toes with the heel down. Walkito includes a knee-to-wall exercise (2 holds of 30 seconds, each leg).',
     'Walkito starts ankle rocks at 2 sets of 15, each leg.',
   ],
   toc: false,
@@ -74,7 +74,7 @@ export const EX_ANKLE_ROCKS: Guide = {
       h2: 'The knee-to-wall test and how it connects',
       paragraphs: [
         'The knee-to-wall test, also called the weight-bearing lunge test, is a simple way to measure ankle dorsiflexion. You stand facing a wall, one foot a few centimeters back, and lunge the knee forward until it touches the wall. If the heel lifts before the knee reaches the wall, move the foot closer. The distance from the big toe to the wall at the point where the knee just touches, with the heel still flat, is your score.',
-        'Walkito includes a knee-to-wall exercise in the app (2 holds of 30 seconds, each leg) and uses the test in its periodic check-in. Tracking this distance over weeks tells you whether your ankle range is actually improving. An increase of a centimeter or two over a few weeks is meaningful.',
+        'Walkito includes a knee-to-wall exercise in the app (2 holds of 30 seconds, each leg). Tracking this distance over weeks tells you whether your ankle range is actually improving. An increase of a centimeter or two over a few weeks is meaningful.',
         'Ankle rocks and the knee-to-wall exercise work the same range from different angles. Rocks are repetitions through the range. The knee-to-wall hold is a sustained load at end-range. Both help. Walkito programs them on mobility days.',
       ],
     },
@@ -108,7 +108,7 @@ export const EX_ANKLE_ROCKS: Guide = {
     },
     {
       q: 'What is the knee-to-wall test?',
-      a: 'A simple measure of ankle dorsiflexion. Stand facing a wall and lunge the knee forward until it touches, keeping the heel flat. The distance from the big toe to the wall is your score. Walkito includes this as a periodic test and as a separate exercise (2 holds of 30 seconds per leg) to build end-range control.',
+      a: 'A simple measure of ankle dorsiflexion. Stand facing a wall and lunge the knee forward until it touches, keeping the heel flat. The distance from the big toe to the wall is your score. Walkito includes it as an exercise (2 holds of 30 seconds per leg) to build end-range control.',
     },
     {
       q: 'Are ankle rocks the same as knee-over-toes rocks?',
@@ -132,9 +132,9 @@ export const EX_ANKLE_ROCKS: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'Walkito programs ankle rocks on mobility days, alongside the calf and soleus stretches. You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. The app tracks your ankle range through the knee-to-wall test every 14 days.',
+    text: 'Walkito programs ankle rocks on mobility days, alongside the calf and soleus stretches. You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes.',
     more: [
-      'A centimeter of improvement in the knee-to-wall score over a few weeks is meaningful and easy to see on the graph. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
+      'A centimeter of improvement in the knee-to-wall score over a few weeks is meaningful. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],
     cta: 'Start with 3 minutes a day.',
   },

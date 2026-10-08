@@ -42,14 +42,14 @@ export const SHIN_SPLINTS_FR: Guide = {
       h2: 'Qu’est-ce que la périostite tibiale, et quels exercices aident vraiment\u00A0?',
       keyFact: 'Une revue systématique de 2013 couvrant 11\u00A0essais de traitement de la périostite tibiale a conclu qu’aucune approche par étirement ou renforcement n’avait de preuve claire d’accélérer la récupération (Winters et coll., 2013).',
       paragraphs: [
-        'La périostite tibiale, ou syndrome de stress tibial médial, est une blessure de surmenage du tibia et des tissus qui l’entourent. La douleur est en général diffuse, étalée le long du bord interne du tibia sur plusieurs centimètres, et elle commence souvent pendant ou après la course. Une revue de 2020 sur des coureurs débutants et loisirs a trouvé les liens les plus nets dans la façon de bouger des coureurs, notamment une rotation de hanche plus grande et un pied qui s’affaisse vers l’intérieur plus que la normale.',
+        'La périostite tibiale, ou syndrome de stress tibial médial, est une blessure de surmenage du tibia et des tissus qui l’entourent. La douleur est en général diffuse, étalée le long du bord interne du tibia sur plusieurs centimètres, et elle commence souvent pendant ou après la course. Une revue de 2020 sur des coureurs débutants et de loisir a trouvé les liens les plus nets dans la façon de bouger des coureurs, notamment une rotation de hanche plus grande et un pied qui s’affaisse vers l’intérieur plus que la normale.',
         'La réponse honnête sur les exercices contre la périostite tibiale, c’est qu’aucun programme d’exercices précis n’a montré dans un essai contrôlé qu’il accélère la récupération. Une revue systématique de 2013 a examiné 11\u00A0études de traitement et a conclu que les étirements et le renforcement «\u00A0n’ont pas fait la preuve de leur efficacité dans le traitement du MTSS\u00A0». Dans le seul essai randomisé avec un bras exercice, 74\u00A0sportifs ont été répartis en trois groupes\u00A0: un programme de course progressif seul, le même programme plus des étirements et du renforcement du mollet, et le même programme plus des bas de compression. Les trois groupes se sont améliorés à un rythme semblable.',
         'Les exercices ci-dessous ne forment donc pas un protocole dédié à la périostite tibiale. Ce sont des exercices généraux pour le bas de la jambe et la hanche, déjà dans le catalogue, qui visent les muscles et les articulations que les chercheurs ont étudiés chez les personnes atteintes. Le geste le plus efficace reste de réduire la charge de course et de la reconstruire lentement.',
       ],
       cites: [CITE.mtssReview, CITE.winters, CITE.moen],
     },
     {
-      h2: 'Quels exercices aident la périostite tibiale, et combien en faire\u00A0?',
+      h2: 'Quels exercices pour la périostite tibiale, et combien en faire\u00A0?',
       paragraphs: [
         'Ce sont des exercices du catalogue de l’application qui recoupent les muscles et les facteurs de risque identifiés dans la recherche sur la périostite tibiale. Les étirements du mollet et les montées sur pointes sont les mêmes que dans les [exercices et étirements pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/), et visent les mêmes tissus. Ce sont des doses de départ, pas une prescription. Chaque niveau de preuve ci-dessous est **préliminaire**, car aucun exercice de cette liste n’a montré dans un essai qu’il raccourcit la récupération d’une périostite tibiale. [Comment ces guides sont écrits](/fr/a-propos/).',
         'Si vous signalez le tibia comme douloureux lors du bilan du jour, Walkito vous donne des bascules de cheville et le massage avec une balle. Les relevés des orteils apparaissent dans le plan général comme exercice complémentaire à partir du niveau 2, en alternance avec les bascules de cheville. Il n’y a pas de programme dédié à la périostite tibiale. Si un exercice fait monter votre douleur à **6/10 ou plus**, arrêtez pour aujourd’hui.',
@@ -59,7 +59,7 @@ export const SHIN_SPLINTS_FR: Guide = {
         rows: [
           ['Étirement du mollet', '2\u00A0maintiens de 30\u00A0secondes, chaque jambe', 'La plupart des séances', 'Un étirement dans le mollet de la jambe arrière tendue', 'La douleur atteint 6/10'],
           ['Étirement du soléaire', '2\u00A0maintiens de 30\u00A0secondes, chaque jambe', 'La plupart des séances', 'Un étirement en bas du mollet, près du talon', 'La douleur atteint 6/10'],
-          ['Relevés des orteils', '3\u00A0séries de 10, deux pieds', 'Jours de renforcement', 'Le muscle du tibia qui travaille quand les orteils montent', 'La douleur atteint 6/10'],
+          ['Relevés des orteils', '3\u00A0séries de 10, deux pieds', 'Jours de renforcement', 'Le muscle à l’avant du tibia qui travaille quand les orteils montent', 'La douleur atteint 6/10'],
           ['Montées sur pointes, deux pieds', '3\u00A0séries de 10, deux pieds', 'Jours de renforcement', 'Les mollets au travail, les deux pieds se partagent la charge', 'La douleur atteint 6/10'],
           ['Abduction de hanche', '3\u00A0séries de 15, chaque jambe', 'Jours de renforcement', 'Un travail à l’extérieur de la hanche', 'La douleur atteint 6/10'],
           ['Équilibre sur une jambe', '3\u00A0maintiens de 30\u00A0secondes, chaque jambe', 'Jours d’équilibre', 'Le pied et la cheville qui font de petites corrections', 'La douleur atteint 6/10'],
@@ -102,12 +102,12 @@ export const SHIN_SPLINTS_FR: Guide = {
           name: 'Relevés des orteils',
           evidence: {
             level: 'early',
-            why: 'Cible le tibial antérieur, le muscle du tibia lui-même. Pas d’essai propre à la périostite tibiale, mais c’est ce muscle qui fait mal.',
+            why: 'Cible le tibial antérieur, le muscle situé à l’avant du tibia. Pas d’essai propre à la périostite tibiale, et la périostite tibiale fait en général mal le long du bord interne du tibia, donc le lien est indirect.',
           },
           dose: '3\u00A0séries de 10, deux pieds',
           often: 'Jours de renforcement',
-          feel: 'Le muscle du tibia qui travaille quand les orteils montent',
-          how: 'Tenez-vous debout, le dos contre un mur. Levez les orteils et l’avant des deux pieds du sol, les talons restent au sol. Redescendez lentement. C’est le muscle à l’avant du tibia, celui qui fait mal quand la périostite tibiale se réveille.',
+          feel: 'Le muscle à l’avant du tibia qui travaille quand les orteils montent',
+          how: 'Tenez-vous debout, le dos contre un mur. Levez les orteils et l’avant des deux pieds du sol, les talons restent au sol. Redescendez lentement. Cet exercice fait travailler le muscle situé à l’avant du tibia.',
           image: 'Exercice\u00A0: relevés des orteils',
           media: 'tibialis_raise',
           caption: 'Relevés des orteils\u00A0: dos au mur, levez les orteils, les talons restent au sol',
@@ -132,7 +132,7 @@ export const SHIN_SPLINTS_FR: Guide = {
           name: 'Abduction de hanche',
           evidence: {
             level: 'early',
-            why: 'La rotation externe de hanche est un facteur de risque confirmé dans deux méta-analyses. Aucun essai n’a testé le renforcement de la hanche comme traitement de la périostite tibiale.',
+            why: 'Deux méta-analyses ont relié l’amplitude de rotation de la hanche à la périostite tibiale. Aucun essai n’a testé le renforcement de la hanche comme traitement de la périostite tibiale.',
           },
           dose: '3\u00A0séries de 15, chaque jambe',
           often: 'Jours de renforcement',

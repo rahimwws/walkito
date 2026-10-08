@@ -45,7 +45,7 @@ export const MORTONS_ES: Guide = {
       paragraphs: [
         'La metatarsalgia es un término más amplio que significa dolor alrededor de las cabezas de los metatarsianos, los nudillos de hueso en la [planta delantera del pie](/es/metatarsalgia-dolor-planta-del-pie/). El neuroma de Morton es una causa específica de dolor en la parte delantera del pie, y entra dentro del concepto de metatarsalgia.',
         'La diferencia clave es qué duele y cómo. La metatarsalgia suele ser un dolor de sordo a agudo debajo de la parte delantera de la planta, muchas veces bajo la segunda y la tercera cabeza de los metatarsianos. El neuroma de Morton produce ardor, hormigueo o entumecimiento entre los dedos, casi siempre entre el tercero y el cuarto. Apretar la parte delantera del pie, lo que se llama la prueba de Mulder, puede reproducir los síntomas del neuroma y a veces produce un chasquido audible cuando el nervio se desliza entre los metatarsianos.',
-        'La distinción importa porque los enfoques son diferentes. La metatarsalgia responde a descargar las cabezas de los metatarsianos y fortalecer los dedos. El neuroma de Morton responde a descomprimir el nervio, lo que significa zapatos más anchos, almohadillas y a veces inyecciones o cirugía. Los ejercicios ayudan con la comodidad de la parte delantera del pie en los dos casos, pero ninguna condición tiene evidencia fuerte de ensayos específicos sobre ejercicio. Mira [dolor en la planta del pie](/es/metatarsalgia-dolor-planta-del-pie/) para más sobre el panorama más amplio de la metatarsalgia.',
+        'La distinción importa porque los enfoques son diferentes. La metatarsalgia responde a descargar las cabezas de los metatarsianos y fortalecer los dedos. El neuroma de Morton responde a descomprimir el nervio, lo que significa zapatos más anchos, almohadillas y a veces inyecciones o cirugía. Los ejercicios ayudan con la comodidad de la parte delantera del pie en los dos casos, pero ninguna afección tiene evidencia fuerte de ensayos específicos sobre ejercicio. Mira [dolor en la planta del pie](/es/metatarsalgia-dolor-planta-del-pie/) para más sobre el panorama más amplio de la metatarsalgia.',
       ],
     },
     {
@@ -115,7 +115,7 @@ export const MORTONS_ES: Guide = {
           how: 'Manos en la pared. Pierna de atrás estirada, talón abajo, cadera hacia adelante. Una pantorrilla rígida pasa peso hacia la parte delantera del pie, lo que aumenta la compresión sobre el nervio.',
           feel: 'Un estiramiento en la parte alta de la pantorrilla',
           stop: 'Dolor en el tendón de Aquiles',
-          evidence: { level: 'strong', why: 'El estiramiento de pantorrilla tiene grado A en la guía para condiciones relacionadas. No se ha probado para el neuroma específicamente, pero el mecanismo de sobrecarga de la parte delantera del pie está reconocido.' },
+          evidence: { level: 'strong', why: 'El estiramiento de pantorrilla tiene grado A en la guía para afecciones relacionadas. No se ha probado para el neuroma específicamente, pero el mecanismo de sobrecarga de la parte delantera del pie está reconocido.' },
           media: 'calf_stretch_straight',
           caption: 'Estiramiento de pantorrilla: pierna de atrás estirada, talón abajo, cadera hacia adelante',
           alt: 'Una figura apoyada en una pared con la pierna de atrás estirada, con la pantorrilla resaltada',
@@ -164,7 +164,7 @@ export const MORTONS_ES: Guide = {
     },
     {
       q: '¿El neuroma de Morton se va solo?',
-      a: 'Algunas personas encuentran que cambiar a zapatos más anchos con tacón bajo es suficiente para que los síntomas se calmen en semanas a meses. En otras, el engrosamiento del nervio persiste y los síntomas vuelven cada vez que la parte delantera del pie se comprime. La condición en sí no se revierte, pero los síntomas se pueden manejar. Si los pasos conservadores no han ayudado después de varias semanas, un profesional de la salud puede hablar de inyecciones u otras opciones.',
+      a: 'Algunas personas encuentran que cambiar a zapatos más anchos con tacón bajo es suficiente para que los síntomas se calmen en semanas a meses. En otras, el engrosamiento del nervio persiste y los síntomas vuelven cada vez que la parte delantera del pie se comprime. La afección en sí no se revierte, pero los síntomas se pueden manejar. Si los pasos conservadores no han ayudado después de varias semanas, un profesional de la salud puede hablar de inyecciones u otras opciones.',
     },
     {
       q: '¿Las inyecciones de corticosteroides funcionan para el neuroma de Morton?',

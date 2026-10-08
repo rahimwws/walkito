@@ -369,7 +369,9 @@ export function Guide({ guide }: { guide: GuideData }) {
                   <li key={e.name}>
                     <h3 id={firstExerciseId.has(e.name) ? undefined : (firstExerciseId.add(e.name), exerciseId(e.name))}>{e.name}</h3>
                     <p className="dose">{e.dose}</p>
-                    <p>{e.how}</p>
+                    <p>
+                      <Inline text={e.how} />
+                    </p>
                   </li>
                 ))}
               </ol>

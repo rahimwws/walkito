@@ -43,7 +43,7 @@ export const EX_SHORT_FOOT_FR: Guide = {
       exercises: [
         {
           name: 'Pied court, assis',
-          evidence: { level: 'moderate', why: 'Fait partie du programme testé dans un essai randomisé de 2023 sur les pieds plats (Brijwasi 2023). Seul, une méta-analyse de 2024 n’a trouvé de résultats significatifs qu’après six semaines.' },
+          evidence: { level: 'moderate', why: 'Fait partie du programme testé dans un essai randomisé de 2023 sur les pieds plats (Brijwasi 2023). Testé seul, l’exercice n’a donné de résultats significatifs qu’au-delà de six semaines (méta-analyse de 2024).' },
           dose: 'Walkito commence à 3\u00A0séries de 10, tenir 5\u00A0secondes, chaque pied',
           how: 'Asseyez-vous, pieds à plat au sol. Tirez la base des orteils vers le talon pour que la voûte se soulève. Gardez les orteils détendus et à plat. Tenez cinq secondes, puis relâchez.',
           often: 'À chaque séance, tant que c’est votre niveau',

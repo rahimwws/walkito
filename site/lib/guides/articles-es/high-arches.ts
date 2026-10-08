@@ -21,13 +21,13 @@ export const HIGH_ARCHES_ES: Guide = {
   lede:
     'Un pie con arco alto, llamado pie cavo, es rígido y no se flexiona lo suficiente para absorber el impacto. La fuerza se concentra en el talón y la parte delantera del pie, y la fascia plantar suele estar tensa. Cerca del 60\u00A0por ciento de las personas con pie cavo reportan dolor de pie. La evidencia más fuerte es para las plantillas acolchadas o a medida. El ejercicio se enfoca en estirar la pantorrilla y la fascia plantar, mejorar la movilidad del tobillo y construir estabilidad.',
   intro: [
-    'El pie cavo afecta a cerca de 1 de cada 10 personas (Burns y colegas, 2007). Muchas personas con arcos altos nunca tienen dolor de pie. Para quienes sí, el dolor suele estar bajo el talón, la parte delantera del pie o a lo largo de la fascia plantar tensa. La causa importa: la mayoría de los arcos altos son idiopáticos (sin causa conocida), pero un subgrupo se debe a condiciones neurológicas como la enfermedad de Charcot-Marie-Tooth. Un pie cavo progresivo o de un solo lado siempre necesita un profesional de la salud.',
+    'El pie cavo afecta a cerca de 1 de cada 10 personas (Burns y colegas, 2007). Muchas personas con arcos altos nunca tienen dolor de pie. Para quienes sí, el dolor suele estar bajo el talón, la parte delantera del pie o a lo largo de la fascia plantar tensa. La causa importa: la mayoría de los arcos altos son idiopáticos (sin causa conocida), pero un subgrupo se debe a afecciones neurológicas como la enfermedad de Charcot-Marie-Tooth. Un pie cavo progresivo o de un solo lado siempre necesita un profesional de la salud.',
   ],
   takeaways: [
     'En un ensayo con 154\u00A0adultos con pie cavo doloroso, las plantillas a medida mejoraron el dolor de pie 8,3\u00A0puntos más que una plantilla falsa a los tres meses, y la función 9,5\u00A0puntos más (Burns y colegas, 2006).',
     'El mismo ensayo encontró que las plantillas a medida redujeron la presión plantar un 26\u00A0por ciento, frente al 9\u00A0por ciento de la plantilla falsa.',
     'Cerca del 60\u00A0por ciento de las personas con pie cavo reportan dolor de pie, comúnmente bajo el talón, la parte delantera del pie o el arco (Burns y colegas, 2005).',
-    'El pie cavo puede ser la primera señal de una condición neurológica como la enfermedad de Charcot-Marie-Tooth. Un arco alto progresivo o de un solo lado necesita una evaluación neurológica, no solo ejercicio.',
+    'El pie cavo puede ser la primera señal de una afección neurológica como la enfermedad de Charcot-Marie-Tooth. Un arco alto progresivo o de un solo lado necesita una evaluación neurológica, no solo ejercicio.',
     'Ningún ensayo ha probado un programa de ejercicios diseñado específicamente para el dolor de pie por pie cavo. Los ejercicios de esta página se enfocan en las estructuras tensas y las articulaciones inestables comunes en los pies de arco alto.',
   ],
   toc: true,
@@ -46,9 +46,9 @@ export const HIGH_ARCHES_ES: Guide = {
       h2: '¿Qué causa los arcos altos?',
       paragraphs: [
         'La mayoría de los arcos altos son idiopáticos, es decir, no se encuentra una causa específica. Estos suelen ser bilaterales (los dos pies), estables con el tiempo y presentes desde la infancia.',
-        'Un grupo más pequeño pero clínicamente importante se debe a condiciones neurológicas. La más común es la enfermedad de Charcot-Marie-Tooth (CMT), una neuropatía hereditaria motora y sensitiva que causa debilidad muscular progresiva y pérdida de masa, empezando en los pies y las piernas. El pie cavovaro en la CMT se desarrolla porque ciertos músculos se debilitan más rápido que otros, jalando el pie hacia una posición de arco alto e invertido.',
+        'Un grupo más pequeño pero clínicamente importante se debe a afecciones neurológicas. La más común es la enfermedad de Charcot-Marie-Tooth (CMT), una neuropatía hereditaria motora y sensitiva que causa debilidad muscular progresiva y pérdida de masa, empezando en los pies y las piernas. El pie cavovaro en la CMT se desarrolla porque ciertos músculos se debilitan más rápido que otros, jalando el pie hacia una posición de arco alto e invertido.',
         'Otras causas neurológicas incluyen anomalías de la médula espinal, la poliomielitis, la espina bífida, la parálisis cerebral y otras neuropatías periféricas. El pie cavo también puede aparecer después de un evento vascular cerebral o una lesión de la médula espinal.',
-        'La distinción importa para el ejercicio. El pie cavo idiopático suele ser estable: el pie tiene esa forma y se queda así. El pie cavo neurológico puede ser progresivo: el arco sube más, la debilidad empeora y el pie se vuelve menos estable con el tiempo. Los ejercicios pueden mantener la movilidad y la estabilidad en un pie cavo neurológico, pero no pueden revertir la condición de base, y un profesional de la salud debe estar involucrado.',
+        'La distinción importa para el ejercicio. El pie cavo idiopático suele ser estable: el pie tiene esa forma y se queda así. El pie cavo neurológico puede ser progresivo: el arco sube más, la debilidad empeora y el pie se vuelve menos estable con el tiempo. Los ejercicios pueden mantener la movilidad y la estabilidad en un pie cavo neurológico, pero no pueden revertir la afección de base, y un profesional de la salud debe estar involucrado.',
       ],
     },
     {
@@ -189,7 +189,7 @@ export const HIGH_ARCHES_ES: Guide = {
     },
     {
       q: '¿Los arcos altos son señal de un problema neurológico?',
-      a: 'Pueden serlo. La mayoría de los arcos altos son idiopáticos y estables. Pero un pie cavo progresivo o de un solo lado puede ser la primera señal de la enfermedad de Charcot-Marie-Tooth u otra condición neurológica. Si tus arcos están subiendo, si un pie está más afectado que el otro, o si tienes debilidad o cambios sensoriales en los pies, consulta a un neurólogo.',
+      a: 'Pueden serlo. La mayoría de los arcos altos son idiopáticos y estables. Pero un pie cavo progresivo o de un solo lado puede ser la primera señal de la enfermedad de Charcot-Marie-Tooth u otra afección neurológica. Si tus arcos están subiendo, si un pie está más afectado que el otro, o si tienes debilidad o cambios sensoriales en los pies, consulta a un neurólogo.',
     },
     {
       q: '¿Qué zapatos son mejores para los arcos altos?',
@@ -232,7 +232,7 @@ export const HIGH_ARCHES_ES: Guide = {
   },
   program: {
     h2: 'Hacerlo como un plan',
-    text: 'Walkito incluye estiramiento de pantorrilla, estiramiento de fascia plantar, trabajo de estabilidad de tobillo y masaje plantar con pelota, todo relevante para los arcos altos. Cuando señalas el arco en el mapa corporal, la app ofrece ejercicios para esa zona. Pero la app no tiene una meta ni un programa específico para pie cavo. Si tus arcos altos causan dolor de talón, las metas de dolor de talón de la app pueden encajar. Si tu dolor está principalmente bajo la parte delantera del pie o se relaciona con una condición neurológica, un profesional de la salud debe dirigir tu plan de ejercicios.',
+    text: 'Walkito incluye estiramiento de pantorrilla, estiramiento de fascia plantar, trabajo de estabilidad de tobillo y masaje plantar con pelota, todo relevante para los arcos altos. Cuando señalas el arco en el mapa corporal, la app ofrece ejercicios para esa zona. Pero la app no tiene una meta ni un programa específico para pie cavo. Si tus arcos altos causan dolor de talón, las metas de dolor de talón de la app pueden encajar. Si tu dolor está principalmente bajo la parte delantera del pie o se relaciona con una afección neurológica, un profesional de la salud debe dirigir tu plan de ejercicios.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud.',
     ],

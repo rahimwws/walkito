@@ -60,7 +60,7 @@ export const MORNING_HEEL_PAIN_DE: Guide = {
     {
       h2: 'Was kannst du vor dem ersten Schritt tun?',
       paragraphs: [
-        'Das Nützlichste, was du gegen Fersenschmerzen am Morgen tun kannst, passiert, bevor dein Fuß den Boden berührt. Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarfaszie und Wade ihre beste Bewertung, **A**, und der Morgen ist der Zusammenhang, in dem sie das Dehnen am häufigsten empfiehlt.',
+        'Das Nützlichste, was du gegen Fersenschmerzen am Morgen tun kannst, passiert, bevor dein Fuß den Boden berührt. Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarfaszie und Wade ihre beste Bewertung, **A**, und am häufigsten empfiehlt sie das Dehnen für den Morgen.',
         'Setz dich auf die Bettkante. Leg einen Knöchel über das andere Knie und zieh die Zehen mit einer Hand sanft zurück, bis du eine Dehnung entlang des Gewölbes spürst. Halte etwa 10\u00A0Sekunden, dann lass los. Mach das 10-mal pro Fuß. So belastest du die Faszie langsam und kontrolliert, bevor sie dein volles Gewicht tragen muss.',
         'Danach kommt eine Wadendehnung. Stell dich neben das Bett oder an eine Wand, ein Fuß hinter dem anderen, die hintere Ferse am Boden, und lehn dich nach vorn, bis du die Dehnung in der oberen Wade spürst. Halte 30\u00A0Sekunden pro Seite.',
         'Verkürzte Waden ziehen über die Achillessehne an der Ferse, und eingeschränkte Beweglichkeit im Sprunggelenk ist einer der stärksten unabhängigen Risikofaktoren für Plantarfasziitis: In einer gematchten Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen hatte sie die höchste Odds Ratio aller gemessenen Faktoren (Riddle und Kollegen, 2003).',
@@ -81,7 +81,7 @@ export const MORNING_HEEL_PAIN_DE: Guide = {
         },
         {
           name: 'Wadendehnung (Knie gestreckt)',
-          evidence: { level: 'strong', why: 'Dieselbe Bewertung A in der Leitlinie. Zielt auf den Gastrocnemius, den größeren, äußeren Wadenmuskel.' },
+          evidence: { level: 'strong', why: 'Dieselbe Bewertung A in der Leitlinie. Zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel.' },
           dose: '3-mal 30\u00A0Sekunden halten, jedes Bein',
           how: 'Hände an die Wand. Das hintere Bein bleibt gestreckt, die Ferse unten, die Hüfte nach vorn. Halte, bis du die Dehnung in der oberen Wade spürst.',
           often: 'Nach der Faszien-Dehnung, an den meisten Morgen',
@@ -100,7 +100,7 @@ export const MORNING_HEEL_PAIN_DE: Guide = {
           feel: 'Eine Dehnung tiefer in der Wade, nahe der Ferse',
           stop: 'Der Schmerz 6/10 erreicht',
           media: 'calf_stretch_bent',
-          caption: 'Soleusdehnung: Beug das hintere Knie, bis die Dehnung tiefer rutscht',
+          caption: 'Soleusdehnung: Beug das hintere Knie, bis du die Dehnung tiefer spürst',
           alt: 'Eine Figur in Schrittstellung mit gebeugten Knien, die untere Wade ist hervorgehoben',
         },
       ],
@@ -193,7 +193,7 @@ export const MORNING_HEEL_PAIN_DE: Guide = {
       'Taubheit, Kribbeln oder Brennen dazukommen, was auf einen eingeklemmten Nerv hindeuten kann',
       'die Ferse gerötet ist, sich warm anfühlt oder du Fieber hast',
       'der Schmerz dich nachts weckt oder auch in Ruhe da ist, nicht nur bei den ersten Schritten',
-      'es nach mehreren Wochen täglichem Dehnen und weniger Belastung nicht besser geworden ist',
+      'es nach mehreren Wochen täglichen Dehnens und weniger Belastung nicht besser geworden ist',
       'du Diabetes, weniger Gefühl in den Füßen oder eine schlechte Durchblutung hast',
     ],
   },

@@ -21,7 +21,7 @@ export const BALL_OF_FOOT_EN: Guide = {
   toc: true,
   takeaways: [
     'In a study of 41 people with primary metatarsalgia, an 8-week toe exercise program improved pain by an average of 2.7 points on a 10-point scale. The study had no control group (Amaha and colleagues, 2020).',
-    'A tight gastrocnemius, the bigger outer calf muscle, shifts weight forward onto the forefoot. In a series of 254 people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture (Patel and DiGiovanni, 2011).',
+    'A tight gastrocnemius, the bigger, more superficial calf muscle, shifts weight forward onto the forefoot. In a series of 254 people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture (Patel and DiGiovanni, 2011).',
     'Metatarsal pads placed just behind the metatarsal heads are the most studied conservative approach for forefoot pain.',
     'Morton\'s neuroma and metatarsalgia overlap in symptoms but differ in location: neuroma pain is typically between the third and fourth toes with tingling, while metatarsalgia is broader.',
   ],
@@ -44,7 +44,7 @@ export const BALL_OF_FOOT_EN: Guide = {
         '**Claw toes and hammer toes** bend the toe joints downward, which lifts the toe off the ground and shifts its push-off load back onto the metatarsal head behind it.',
         '**High heels and narrow shoes** tip weight forward onto the forefoot and compress the metatarsal heads together, which is why Morton\'s neuroma is more common in people who wear them.',
         '**High arches** (pes cavus, meaning a foot with a high, rigid arch) reduce the contact area on the sole, concentrating pressure on the heel and the ball of the foot. On the other end, [flat feet](/flat-feet-exercises/) can also contribute to forefoot pain by altering how the foot rolls during push-off.',
-        '**Tight calf muscles** are an underappreciated cause. When the gastrocnemius, the bigger outer calf muscle, is tight, the ankle cannot bend far enough during walking. The body lifts the heel early to compensate, which shifts more load onto the forefoot. This is the same mechanism behind [plantar fasciitis](/plantar-fasciitis-exercises/) and [Achilles tendonitis](/achilles-tendonitis-exercises/).',
+        '**Tight calf muscles** are an underappreciated cause. When the gastrocnemius, the bigger, more superficial calf muscle, is tight, the ankle cannot bend far enough during walking. The body lifts the heel early to compensate, which shifts more load onto the forefoot. This is the same mechanism behind [plantar fasciitis](/plantar-fasciitis-exercises/) and [Achilles tendonitis](/achilles-tendonitis-exercises/).',
       ],
       cites: [CITE.patelGastrocnemius],
     },
@@ -199,7 +199,7 @@ export const BALL_OF_FOOT_EN: Guide = {
     {
       q: 'Why does a tight calf cause pain in the ball of the foot?',
       cites: [CITE.patelGastrocnemius, CITE.riddle],
-      a: 'When the gastrocnemius, the bigger outer calf muscle, is tight, the ankle cannot bend enough during walking. The body compensates by lifting the heel early, which shifts more weight onto the ball of the foot. In people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture (Patel and DiGiovanni, 2011). The same mechanism contributes to forefoot overload.',
+      a: 'When the gastrocnemius, the bigger, more superficial calf muscle, is tight, the ankle cannot bend enough during walking. The body compensates by lifting the heel early, which shifts more weight onto the ball of the foot. In people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture (Patel and DiGiovanni, 2011). The same mechanism contributes to forefoot overload.',
     },
     {
       q: 'Do metatarsal pads work for ball of foot pain?',

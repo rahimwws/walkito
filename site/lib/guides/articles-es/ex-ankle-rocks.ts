@@ -18,11 +18,11 @@ export const EX_ANKLE_ROCKS_ES: Guide = {
     'Cómo hacer el ejercicio de movilidad de tobillo con la rodilla sobre los dedos: técnica, series, por qué importa que el tobillo se doble y cómo medirlo.',
   h1: 'Movilidad de tobillo: cómo hacer el balanceo de rodilla y por qué importa',
   lede:
-    'La movilidad de tobillo de esta página es un ejercicio de pie en el que la rodilla avanza por encima de los dedos mientras el talón se queda plano en el piso. Trabaja la dorsiflexión del tobillo, es decir, cuánto se dobla el tobillo con el pie apoyado. En un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la menor dorsiflexión fue el factor de riesgo más fuerte, con 23,3\u00A0veces más probabilidades.',
+    'La movilidad de tobillo de esta página es un ejercicio de pie en el que la rodilla avanza por encima de los dedos mientras el talón se queda plano en el piso. Trabaja la dorsiflexión del tobillo, es decir, cuánto se dobla el tobillo con el pie apoyado. En un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la menor dorsiflexión fue el factor de riesgo más fuerte, con una razón de probabilidades de 23,3.',
   takeaways: [
-    'La menor dorsiflexión del tobillo fue el factor de riesgo independiente más fuerte para la fascitis plantar en un estudio de casos y controles emparejados, con 23,3\u00A0veces más probabilidades (Riddle y colegas, 2003).',
+    'La menor dorsiflexión del tobillo fue el factor de riesgo independiente más fuerte para la fascitis plantar en un estudio de casos y controles emparejados, con una razón de probabilidades de 23,3 (Riddle y colegas, 2003).',
     'El balanceo de tobillo trabaja la dorsiflexión cargando el final del rango con el peso del cuerpo, a diferencia de un estiramiento pasivo en la pared.',
-    'La prueba de rodilla a la pared mide cuánto avanza la rodilla más allá de los dedos con el talón abajo. Walkito incluye un ejercicio de rodilla a la pared (2\u00A0repeticiones de 30\u00A0segundos, cada pierna) y usa la prueba en su revisión periódica.',
+    'La prueba de rodilla a la pared mide cuánto avanza la rodilla más allá de los dedos con el talón abajo. Walkito incluye un ejercicio de rodilla a la pared (2\u00A0repeticiones de 30\u00A0segundos, cada pierna).',
     'Walkito empieza la movilidad de tobillo con 2\u00A0series de 15, cada pierna.',
   ],
   toc: false,
@@ -55,10 +55,10 @@ export const EX_ANKLE_ROCKS_ES: Guide = {
     },
     {
       h2: '¿Por qué importa la movilidad de tobillo para el dolor de talón?',
-      keyFact: 'En un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la menor dorsiflexión del tobillo pesó más que el índice de masa corporal o el tiempo de pie, con 23,3\u00A0veces más probabilidades (Riddle y colegas, 2003).',
+      keyFact: 'En un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la menor dorsiflexión del tobillo pesó más que el índice de masa corporal o el tiempo de pie, con una razón de probabilidades de 23,3 (Riddle y colegas, 2003).',
       paragraphs: [
         'La dorsiflexión del tobillo es cuánto se puede doblar el pie hacia arriba, hacia la tibia, mientras el talón sigue en el piso. Cada paso que das necesita algo de dorsiflexión. Cuando el tobillo no se dobla lo suficiente, el cuerpo compensa. El pie puede irse hacia adentro, la pantorrilla recibe más tensión y la fascia plantar absorbe fuerzas para las que no está hecha.',
-        'En el estudio de casos y controles de Riddle de 2003, la menor dorsiflexión del tobillo fue la variable con el mayor efecto independiente, con 23,3\u00A0veces más probabilidades de desarrollar fascitis plantar. Pesó más que el índice de masa corporal, el tiempo de pie o la distancia que se corría. En otra revisión, una pantorrilla tensa, en concreto el gastrocnemio, estaba presente en entre el 52 y el 60\u00A0% de 254\u00A0personas con fascitis plantar.',
+        'En el estudio de casos y controles de Riddle de 2003, la menor dorsiflexión del tobillo fue la variable con el mayor efecto independiente, con una razón de probabilidades de 23,3 para la fascitis plantar. Pesó más que el índice de masa corporal, el tiempo de pie o la distancia que se corría. En otra revisión, una pantorrilla tensa, en concreto el gastrocnemio, estaba presente en entre el 52 y el 60\u00A0% de 254\u00A0personas con fascitis plantar.',
         'Estirar la pantorrilla de forma pasiva (como en el [estiramiento de pantorrilla](/es/ejercicios/estiramiento-de-pantorrilla/) y el [estiramiento de sóleo](/es/ejercicios/estiramiento-de-soleo/)) atiende una parte del problema: la longitud del músculo. La movilidad de tobillo atiende la otra: el control activo al final del rango. Llevar la rodilla por encima de los dedos con el peso del cuerpo le enseña al tobillo a usar el rango que tiene, no solo a alcanzarlo de forma pasiva.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -76,7 +76,7 @@ export const EX_ANKLE_ROCKS_ES: Guide = {
       h2: 'La prueba de rodilla a la pared y cómo se relaciona',
       paragraphs: [
         'La prueba de rodilla a la pared, también llamada prueba de estocada con carga, es una forma sencilla de medir la dorsiflexión del tobillo. Te paras frente a una pared, con un pie unos centímetros atrás, y llevas la rodilla hacia adelante hasta que toque la pared. Si el talón se levanta antes de que la rodilla llegue, acerca el pie. Tu resultado es la distancia entre el dedo gordo y la pared en el punto en el que la rodilla apenas toca, con el talón todavía plano.',
-        'Walkito incluye en la app un ejercicio de rodilla a la pared (2\u00A0repeticiones de 30\u00A0segundos, cada pierna) y usa la prueba en su revisión periódica. Seguir esta distancia durante semanas te dice si el rango de tu tobillo de verdad está mejorando. Ganar uno o dos centímetros en unas semanas es importante.',
+        'Walkito incluye en la app un ejercicio de rodilla a la pared (2\u00A0repeticiones de 30\u00A0segundos, cada pierna). Seguir esta distancia durante semanas te dice si el rango de tu tobillo de verdad está mejorando. Ganar uno o dos centímetros en unas semanas es importante.',
         'La movilidad de tobillo y el ejercicio de rodilla a la pared trabajan el mismo rango desde ángulos distintos. El balanceo son repeticiones a lo largo del rango. Rodilla a la pared es una carga sostenida al final del rango. Los dos ayudan. Walkito los pone en los días de movilidad.',
       ],
     },
@@ -106,11 +106,11 @@ export const EX_ANKLE_ROCKS_ES: Guide = {
     {
       q: '¿La movilidad de tobillo ayuda con la fascitis plantar?',
       cites: [CITE.riddle],
-      a: 'Este ejercicio trabaja la dorsiflexión del tobillo, que fue el factor de riesgo independiente más fuerte para la fascitis plantar en un estudio de casos y controles (23,3\u00A0veces más probabilidades). Ningún ensayo lo ha probado como ejercicio aislado para la fascitis plantar, pero mejorar ese rango atiende el mayor factor de riesgo biomecánico que ha identificado la investigación.',
+      a: 'Este ejercicio trabaja la dorsiflexión del tobillo, que fue el factor de riesgo independiente más fuerte para la fascitis plantar en un estudio de casos y controles (razón de probabilidades de 23,3). Ningún ensayo lo ha probado como ejercicio aislado para la fascitis plantar, pero mejorar ese rango atiende el mayor factor de riesgo biomecánico que ha identificado la investigación.',
     },
     {
       q: '¿Qué es la prueba de rodilla a la pared?',
-      a: 'Una forma sencilla de medir la dorsiflexión del tobillo. Párate frente a una pared y lleva la rodilla hacia adelante hasta que la toque, con el talón plano. La distancia entre el dedo gordo y la pared es tu resultado. Walkito la incluye como prueba periódica y como ejercicio aparte (2\u00A0repeticiones de 30\u00A0segundos por pierna) para ganar control al final del rango.',
+      a: 'Una forma sencilla de medir la dorsiflexión del tobillo. Párate frente a una pared y lleva la rodilla hacia adelante hasta que la toque, con el talón plano. La distancia entre el dedo gordo y la pared es tu resultado. Walkito la incluye como ejercicio (2\u00A0repeticiones de 30\u00A0segundos por pierna) para ganar control al final del rango.',
     },
     {
       q: '¿Es lo mismo que el balanceo de rodilla sobre los dedos?',
@@ -134,9 +134,9 @@ export const EX_ANKLE_ROCKS_ES: Guide = {
   },
   program: {
     h2: 'Hacerlo como un plan',
-    text: 'Walkito pone la movilidad de tobillo en los días de movilidad, junto con los estiramientos de pantorrilla y de sóleo. Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. La app sigue el rango de tu tobillo con la prueba de rodilla a la pared cada 14\u00A0días.',
+    text: 'Walkito pone la movilidad de tobillo en los días de movilidad, junto con los estiramientos de pantorrilla y de sóleo. Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos.',
     more: [
-      'Ganar un centímetro en la prueba de rodilla a la pared en unas semanas es importante y fácil de ver en la gráfica. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud.',
+      'Ganar un centímetro en la prueba de rodilla a la pared en unas semanas es importante. Walkito es un programa de ejercicios. No diagnostica y no reemplaza a un profesional de la salud.',
     ],
     cta: 'Empieza con 3\u00A0minutos al día.',
   },

@@ -17,10 +17,10 @@ export const EX_CALF_RAISES_ES: Guide = {
     'Cómo hacer elevaciones de talón bien: de pie, sentado y sostenidas, qué músculos trabajan, series y repeticiones, errores comunes y para quién sirven.',
   h1: 'Elevaciones de talón: cómo hacerlas bien, con series, repeticiones y variantes',
   lede:
-    'Una elevación de talón es un ejercicio, de pie o sentado, en el que subes sobre la parte delantera del pie. Fortalece el gastrocnemio (el músculo más grande y externo de la pantorrilla) y el sóleo (el más profundo), y en cada repetición pone carga sobre el tendón de Aquiles y la fascia plantar. Esta página explica la elevación de pie con dos pies, la versión sentado y la elevación sostenida arriba.',
+    'Una elevación de talón es un ejercicio, de pie o sentado, en el que subes sobre la parte delantera del pie. Fortalece el gastrocnemio (el músculo más grande y superficial de la pantorrilla) y el sóleo (el más profundo), y en cada repetición pone carga sobre el tendón de Aquiles y la fascia plantar. Esta página explica la elevación de pie con dos pies, la versión sentado y la elevación sostenida arriba.',
   takeaways: [
     'La guía de 2023 para el dolor de talón le da al fortalecimiento de la pantorrilla una B y lo recomienda junto con el estiramiento, al que le da una A (Koc y colegas, 2023).',
-    'Un estudio de valores normales con 566\u00A0adultos sanos (de 20 a 81\u00A0años) encontró una mediana de 24\u00A0elevaciones de talón a una pierna en hombres y 21 en mujeres, con cambios según la edad, el sexo y el nivel de actividad (Hebert-Losier y colegas, 2017).',
+    'Un estudio de valores normales con 566\u00A0adultos sanos (de 20 a 81\u00A0años) encontró una mediana de 24\u00A0elevaciones de talón a una pierna en hombres y 21 en mujeres, con cambios según la edad, el sexo y el nivel de actividad (Hébert-Losier y colegas, 2017).',
     'Menos dorsiflexión del tobillo, muchas veces por un gastrocnemio tenso, fue el factor de riesgo independiente más fuerte de fascitis plantar en un estudio de casos y controles con 50\u00A0casos y 100\u00A0controles (Riddle y colegas, 2003).',
     'Las elevaciones de talón de pie cargan sobre todo el gastrocnemio. Sentado, la carga pasa al sóleo, porque la rodilla doblada acorta el gastrocnemio.',
   ],
@@ -112,7 +112,7 @@ export const EX_CALF_RAISES_ES: Guide = {
     },
     {
       h2: '¿Cuántas elevaciones de talón debes hacer?',
-      keyFact: 'Un estudio de valores normales con 566\u00A0adultos sanos de 20 a 81\u00A0años encontró que el número de elevaciones a una pierna variaba con la edad, el sexo y la actividad, con una mediana de 21\u00A0repeticiones en mujeres (Hebert-Losier y colegas, 2017).',
+      keyFact: 'Un estudio de valores normales con 566\u00A0adultos sanos de 20 a 81\u00A0años encontró que el número de elevaciones a una pierna variaba con la edad, el sexo y la actividad, con una mediana de 21\u00A0repeticiones en mujeres (Hébert-Losier y colegas, 2017).',
       paragraphs: [
         'Depende de en qué paso de la escalera estés y de qué estés trabajando. Para la fuerza general de la pantorrilla, 3\u00A0series de 10 a 15\u00A0repeticiones a ritmo lento es una dosis de inicio común. En el protocolo para fascitis plantar que se probó en un ensayo, la elevación de talones con toalla empieza con 3\u00A0series a un máximo de 12\u00A0repeticiones (12RM) y sube a 5\u00A0series a 8RM en unas cinco semanas.',
         'Una referencia útil es la prueba de resistencia de elevación de talón a una pierna. Un estudio de valores normales con 566\u00A0adultos sanos encontró una mediana de 24\u00A0repeticiones en hombres y 21 en mujeres, con cambios según la edad, el sexo y la actividad. La meta de pantorrilla en la app de Walkito son 25\u00A0elevaciones de talón a una pierna. Alcanzarla no termina el trabajo. Pasa a mantenimiento.',
@@ -151,7 +151,7 @@ export const EX_CALF_RAISES_ES: Guide = {
     {
       q: '¿Cuántas elevaciones de talón a una pierna son normales?',
       cites: [CITE.hebertLosier],
-      a: 'Un estudio de valores normales con 566\u00A0adultos sanos encontró una mediana de 24\u00A0repeticiones en hombres y 21 en mujeres, ajustada por edad, sexo y nivel de actividad (Hebert-Losier, 2017). El número sirve para seguir los cambios con las semanas y comparar una pierna con la otra, no como una línea de aprobado o reprobado.',
+      a: 'Un estudio de valores normales con 566\u00A0adultos sanos encontró una mediana de 24\u00A0repeticiones en hombres y 21 en mujeres, ajustada por edad, sexo y nivel de actividad (Hébert-Losier, 2017). El número sirve para seguir los cambios con las semanas y comparar una pierna con la otra, no como una línea de aprobado o reprobado.',
     },
     {
       q: '¿Hay que hacer elevaciones de talón todos los días?',
