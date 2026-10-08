@@ -114,6 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...customPage('program', PAGE_UPDATED.program, 'monthly', 0.9),
     ...customPage('science', PAGE_UPDATED.science, 'monthly', 0.9),
     ...customPage('faq', PAGE_UPDATED.faq, 'monthly', 0.8),
+    ...customPage('footMap', '2026-10-08', 'monthly', 0.9),
     ...translated('support', () => PAGE_UPDATED.support, 'monthly', 0.5),
     ...translated('privacy', () => PAGE_UPDATED.privacy, 'yearly', 0.3),
     ...translated('terms', () => PAGE_UPDATED.terms, 'yearly', 0.3),
