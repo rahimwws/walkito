@@ -36,7 +36,6 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
   sections: [
     {
       h2: '¿Por qué te duele el talón después de caminar?',
-      keyFact: 'En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la dorsiflexión de tobillo reducida fue el factor de riesgo más fuerte, por delante de un índice de masa corporal alto y estar de pie mucho tiempo en el trabajo (Riddle y colegas, 2003).',
       paragraphs: [
         'Caminar carga la fascia plantar, la banda gruesa de tejido bajo el pie, con cada paso. Cada vez que el talón golpea el piso y el pie rueda hacia adelante, la fascia se estira y absorbe fuerza. En un pie sano esto no es problema. Pero cuando la fascia está irritada o la pantorrilla está demasiado tensa para absorber su parte, la carga se concentra en la unión del talón.',
         'El resultado es un dolor que aumenta durante o después de una caminata, sobre todo si es más larga de lo habitual. La guía de 2023 describe dos patrones típicos de la fascitis plantar: dolor en los primeros pasos después de descansar, y dolor que aumenta con la actividad prolongada que implica apoyar el peso. Caminar es la actividad prolongada con carga de peso más común que existe.',
@@ -201,7 +200,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
     },
     {
       q: '¿Cómo quitar el dolor de talón justo después de caminar?',
-      a: 'Justo después de caminar, descansa el pie, aplica hielo unos 15 minutos y evita salir de nuevo descalzo sobre piso duro. Eso alivia la molestia inmediata, pero no cambia la causa de fondo. Los ejercicios de esta página, estiramiento de pantorrilla y fascia más trabajo de fuerza progresivo, son lo que cambia cómo el talón aguanta la siguiente caminata.',
+      a: 'Justo después de caminar, descansa el pie, aplica hielo un rato en la zona que duele y evita salir de nuevo descalzo sobre piso duro. Eso alivia la molestia inmediata, pero no cambia la causa de fondo. Los ejercicios de esta página, estiramiento de pantorrilla y fascia más trabajo de fuerza progresivo, son lo que cambia cómo el talón aguanta la siguiente caminata.',
     },
     {
       q: '¿Qué causa dolor de talón solo en un pie después de caminar?',

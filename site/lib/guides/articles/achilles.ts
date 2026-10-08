@@ -167,7 +167,7 @@ export const ACHILLES_EN: Guide = {
     },
     {
       h2: 'How much pain is okay during Achilles exercises?',
-      keyFact: 'In a trial of 38 people, those who kept running under a pain-monitoring rule, allowing pain up to about 5 out of 10 that settled by morning, improved as much at twelve months as those who rested first (Silbernagel and colleagues, 2007).',
+      keyFact: 'In a trial of 38 people, those who kept running with pain held to about 5 out of 10 and settled by morning improved as much at twelve months as those who rested first (Silbernagel and colleagues, 2007).',
       paragraphs: [
         'In Silbernagel 2007, 38 people with Achilles pain were split into two groups. One continued running and jumping during rehab, guided by the rule that pain during and after loading could go up to about **5 out of 10**, as long as it returned to its usual level by the next morning and did not worsen week over week. The other group rested first. Both improved significantly at 12 months, with no difference between them.',
         'This is a different threshold from the 6/10 stop rule on the [plantar fasciitis](/plantar-fasciitis-exercises/) page, which comes from a different guideline. The 5/10 figure is from one study, not a universal standard, but it is the most cited pain model in Achilles rehab.',

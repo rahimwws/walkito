@@ -52,7 +52,7 @@ export const PF_DURATION_EN: Guide = {
     },
     {
       h2: 'What predicts slower recovery?',
-      keyFact: 'In that cohort, women became symptom-free at about half the rate of men, and people with pain in both heels recovered at about a third the rate of those with one-sided pain (Hansen and colleagues, 2018).',
+      keyFact: 'In a cohort of 174 people, women became symptom-free at about half the rate of men, and people with pain in both heels recovered at about a third the rate of those with one-sided pain (Hansen and colleagues, 2018).',
       paragraphs: [
         'The Hansen 2018 cohort tested several baseline factors against how long symptoms lasted. Two came out significant.',
         '**Being female.** For every 100 men who became symptom-free per year, only 49 women did (hazard rate ratio 0.49, P less than 0.01). The reason is not established. The authors listed hormonal differences, footwear patterns, and physical factors as possibilities without evidence to pick among them (Hansen and colleagues, 2018).',

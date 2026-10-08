@@ -219,7 +219,7 @@ export const FLAT_FEET_ES: Guide = {
     },
     {
       h2: '¿Cuánto tardan los ejercicios para pie plano en cambiar el arco?',
-      keyFact: 'En un ensayo con 52\u00A0personas con pie plano flexible, seis semanas de pie corto, tobillo, cadera y estiramientos mejoraron la caída del navicular en 0,4\u00A0cm y el ángulo del arco en 16\u00A0grados más que en el grupo de control (Brijwasi y Borkar, 2023).',
+      keyFact: 'En un ensayo con 52 personas con pie plano flexible, seis semanas de ejercicios mejoraron la caída del navicular en 0,4 cm y el ángulo del arco en 16 grados más que en el grupo de control (Brijwasi y Borkar, 2023).',
       paragraphs: [
         'En la investigación hasta ahora, los ejercicios para pie plano cambiaron el arco después de seis semanas o más, y solo en pie plano flexible. En un ensayo con 52\u00A0personas con pie plano **flexible**, un programa de seis semanas de pie corto, trabajo de tobillo, fortalecimiento de cadera y estiramientos cambió dos medidas de la forma del arco más que en el grupo de control.',
         'La evidencia sobre el pie corto por sí solo es más escasa. Una revisión de 2024 juntó estudios sobre entrenamiento de pie corto en pie plano en general. En conjunto, no encontró una diferencia clara con los grupos de control en la forma del arco ni en la postura del pie. Solo los programas de más de seis semanas mejoraron cuánto se hunde el arco bajo tu peso, y los autores dicen que hacen falta estudios más grandes. Así que cuenta con al menos seis semanas, y más si haces solo pie corto.',

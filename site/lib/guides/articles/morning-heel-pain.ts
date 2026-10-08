@@ -50,7 +50,6 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
     },
     {
       h2: 'What can you do before your first step?',
-      keyFact: 'In a case-control study of 50 people with plantar fasciitis and 100 without, reduced ankle flexibility had the highest odds ratio of any risk factor measured (Riddle and colleagues, 2003).',
       paragraphs: [
         'The most useful thing you can do for morning heel pain happens before your foot touches the floor. The 2023 heel pain guideline gives plantar fascia and calf stretching its top grade, **A**, and the morning is the single most repeated context in which it recommends stretching.',
         'Sit on the edge of the bed. Cross one ankle over the opposite knee and pull the toes back gently with one hand until you feel a stretch along the arch. Hold for about 10 seconds, then release. Do that 10 times on each foot. This loads the fascia slowly, in a controlled way, before you ask it to take your full weight.',

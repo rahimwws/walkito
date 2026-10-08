@@ -50,7 +50,6 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
     },
     {
       h2: '¿Qué puedes hacer antes del primer paso?',
-      keyFact: 'En un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100\u00A0sin ella, la menor flexibilidad del tobillo tuvo la razón de probabilidades más alta de todos los factores medidos (Riddle y colegas, 2003).',
       paragraphs: [
         'Lo más útil que puedes hacer contra el dolor de talón por la mañana pasa antes de que el pie toque el piso. La guía de 2023 para el dolor de talón le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, **A**, y la mañana es el momento que más repite cuando recomienda estirar.',
         'Siéntate en la orilla de la cama. Cruza un tobillo sobre la rodilla contraria y jala los dedos hacia atrás con suavidad, con una mano, hasta sentir un estiramiento a lo largo del arco. Mantén unos 10\u00A0segundos y suelta. Hazlo 10\u00A0veces con cada pie. Así cargas la fascia despacio y con control antes de pedirle que aguante todo tu peso.',

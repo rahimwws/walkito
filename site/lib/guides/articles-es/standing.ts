@@ -40,7 +40,7 @@ export const STANDING_ES: Guide = {
   sections: [
     {
       h2: '¿Por qué te duelen los pies después de estar de pie todo el día?',
-      keyFact: 'En un estudio de casos y controles de 2003, la poca flexibilidad del tobillo multiplicó por 23,3 las probabilidades de fascitis plantar, el factor de riesgo más fuerte, y estar de pie la mayor parte de la jornada las multiplicó por 3,6 (Riddle y colegas, 2003).',
+      keyFact: 'En un estudio de casos y controles, la poca flexibilidad del tobillo multiplicó por 23,3 las probabilidades de fascitis plantar, y estar de pie la mayor parte de la jornada, por 3,6 (Riddle y colegas, 2003).',
       paragraphs: [
         'Los pies duelen por estar de pie porque, quieto, cargas la fascia plantar, los músculos de la pantorrilla y el talón sin darles un descanso. Al caminar, cada paso bombea la sangre de las piernas hacia arriba. Estar de pie quita ese bombeo, así que la sangre se acumula en la parte baja de las piernas y los tejidos bajo el pie cargan el mismo peso fijo durante horas.',
         'Una revisión de 2015 sobre la investigación en salud laboral encontró que estar de pie mucho tiempo se asocia con dolor lumbar, dolor de piernas, molestias y cansancio en muchos trabajos que se hacen de pie. La revisión también señaló que el esfuerzo del corazón y la hinchazón de las piernas aumentan con el tiempo de pie. Los autores pidieron definiciones más claras de «estar de pie mucho tiempo» en futuros estudios, porque el límite entre un tiempo de pie seguro y uno dañino cambia según la persona y el trabajo.',
@@ -186,7 +186,7 @@ export const STANDING_ES: Guide = {
     },
     {
       h2: '¿Las medias de compresión ayudan con el dolor de pies por estar de pie?',
-      keyFact: 'En un ensayo con 40 guardias de seguridad que trabajaban de pie turnos de unas 12 horas, tanto las medias de 15-20 mmHg como las de 20-30 mmHg evitaron el aumento de molestias en pies y piernas que tuvo el grupo con calcetines normales (Garcia y colegas, 2023).',
+      keyFact: 'En un ensayo con 40 guardias de seguridad en turnos de unas 12 horas de pie, las medias de compresión de 15-20 y de 20-30 mmHg evitaron el aumento de molestias en pies y piernas que hubo con calcetines normales (Garcia y colegas, 2023).',
       paragraphs: [
         'Las medias de compresión tienen uno de los estudios mejor controlados sobre las molestias por estar de pie. En un ensayo aleatorizado con 40 guardias de seguridad que trabajaban de pie turnos de unas 12\u00A0horas, divididos en tres grupos, tanto el grupo con medias de 15-20\u00A0mmHg como el de 20-30\u00A0mmHg evitaron el aumento importante de molestias en pies y piernas, cansancio e hinchazón que tuvo el grupo con calcetines normales. Muchos participantes dijeron que la media de menor presión era más fácil de poner.',
         'El ensayo fue pequeño, solo con hombres, y probó un solo tipo de trabajo. Pero es una de las pocas medidas para las molestias por estar de pie con un diseño aleatorizado, por eso aparece antes que otros consejos más populares en esta página. Las medias de compresión no reemplazan los estiramientos ni el trabajo de fuerza. Ayudan con la hinchazón y el cansancio, mientras la pantorrilla y la fascia siguen necesitando su propio trabajo.',
