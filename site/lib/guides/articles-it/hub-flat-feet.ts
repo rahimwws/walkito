@@ -37,6 +37,7 @@ export const HUB_FLAT_FEET_IT: Guide = {
   sections: [
     {
       h2: 'Cos’è il piede piatto?',
+      figure: { id: 'arches', caption: 'Le stesse ossa del piede con piede piatto, arco normale e arco alto, viste dal lato interno.', alt: 'Tre piedi visti dal lato interno su un pavimento piano: un piede piatto con l’arco appoggiato a terra, un arco normale con un piccolo spazio sotto e un arco alto con un grande spazio sotto la parte centrale del piede.' },
       keyFact: 'Una revisione sistematica del 2023 che ha messo insieme 12\u00A0studi di popolazione su circa 16.000\u00A0persone ha trovato il piede piatto in circa il 15,6% dei casi complessivi, più spesso con un indice di massa corporea più alto e un’età più avanzata (Salinas-Torres e colleghi, 2023).',
       paragraphs: [
         'L’arco del piede, chiamato arco longitudinale mediale, è formato da ossa, legamenti e tendini nella parte interna del piede. Nel piede piatto, questo arco è più basso o assente quando sei in piedi. Il termine medico è pes planus.',

@@ -33,6 +33,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
   sections: [
     {
       h2: '¿Qué es la fascitis plantar?',
+      figure: { id: 'plantar-fascia', caption: 'La fascia plantar va del hueso del talón a los dedos. El dolor de la fascitis plantar suele empezar donde se une al talón.', alt: 'Planta de un pie con la fascia plantar como bandas blancas que se abren desde el hueso del talón hasta la base de los dedos, y una mancha roja en el talón donde suele empezar el dolor.' },
       paragraphs: [
         'La fascitis plantar es una sobrecarga de la fascia plantar. La fascia plantar es una banda resistente de tejido conectivo que recorre la planta del pie, desde el hueso del talón (el calcáneo) hasta la base de los dedos. Sostiene el arco y absorbe el impacto cada vez que das un paso.',
         'Cuando la fascia recibe más carga de la que puede recuperar, el tejido se irrita cerca de donde se une al talón. El nombre termina en «-itis», que hace pensar en inflamación, pero hoy se cree que es más bien un proceso degenerativo del tejido, no una inflamación que sigue activa. Algunos profesionales prefieren decir «fasciopatía plantar». El nombre no cambia los síntomas ni lo que se recomienda hacer.',

@@ -151,6 +151,7 @@ export const CALF_RAISES_FR: Guide = {
     },
     {
       h2: 'Pourquoi un mollet raide compte-t-il dans la douleur au talon\u00A0?',
+      figure: { id: 'calf', caption: 'Les deux muscles du mollet, le gastrocnémien et le soléaire, se rejoignent dans le tendon d’Achille, qui s’attache à l’os du talon.', alt: 'Vues de côté et de dos d’une jambe montrant le gastrocnémien et le soléaire qui s’affinent jusqu’au tendon d’Achille, au-dessus du talon.' },
       keyFact: 'Dans une série de 254\u00A0personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction limitée au gastrocnémien, et 23 à 30\u00A0% de plus une rétraction combinée du gastrocnémien et du soléaire (Patel et coll., 2011).',
       paragraphs: [
         'Un mollet raide tire sur le talon par le tendon d’Achille, et le fascia plantaire partage la charge à l’autre bout. Quand la cheville ne peut pas assez se plier, chaque pas met plus de tension sur le fascia.',

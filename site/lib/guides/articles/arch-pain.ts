@@ -159,6 +159,7 @@ export const ARCH_PAIN_EN: Guide = {
     },
     {
       h2: 'Does foot type affect arch pain?',
+      figure: { id: 'arches', caption: 'The same foot bones with a flat foot, a typical arch and a high arch, seen from the inner side.', alt: 'Three feet seen from the inner side on a flat floor: a flat foot whose arch rests on the floor, a typical arch with a small gap underneath, and a high arch with a large gap under the middle of the foot.' },
       paragraphs: [
         'Yes. Both flat feet and high arches change how force travels through the foot, but in opposite ways.',
         'A flat foot lets the arch collapse under load, stretching the plantar fascia and the posterior tibial tendon beyond their comfortable range. The exercises for flat feet focus on strengthening the arch muscles (short foot, toe spread, band turn-in) and the hip (hip abduction), because a hip that gives way during single-leg stance pushes the arch inward. See [flat feet exercises](/flat-feet-exercises/).',

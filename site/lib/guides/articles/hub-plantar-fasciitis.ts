@@ -36,6 +36,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
   sections: [
     {
       h2: 'What is plantar fasciitis?',
+      figure: { id: 'plantar-fascia', caption: 'The plantar fascia runs from the heel bone to the toes. Plantar fasciitis pain usually starts where it attaches to the heel.', alt: 'Sole of a foot showing the plantar fascia as white bands fanning out from the heel bone to the base of the toes, with a red spot on the heel where pain usually starts.' },
       paragraphs: [
         'Plantar fasciitis is an overload condition of the plantar fascia. The plantar fascia is a tough band of connective tissue that stretches along the sole of your foot from the heel bone (the calcaneus) to the base of the toes. It supports the arch and absorbs shock every time you step.',
         'When the fascia is loaded more than it can recover from, the tissue becomes irritated near its attachment at the heel. The name ends in "-itis," which suggests inflammation, but current thinking points toward a degenerative process in the tissue rather than ongoing inflammation. Some clinicians use "plantar fasciopathy" instead. The name does not change the symptoms or the recommended approach.',

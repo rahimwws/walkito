@@ -151,6 +151,7 @@ export const CALF_RAISES_DE: Guide = {
     },
     {
       h2: 'Warum spielt eine verkürzte Wade bei Fersenschmerzen eine Rolle?',
+      figure: { id: 'calf', caption: 'Die beiden Wadenmuskeln, Gastrocnemius und Soleus, gehen in die Achillessehne über, die am Fersenbein ansetzt.', alt: 'Unterschenkel von der Seite und von hinten: Gastrocnemius und Soleus werden schmaler und gehen über der Ferse in die Achillessehne über.' },
       keyFact: 'In einer Fallserie mit 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius und weitere 23 bis 30\u00A0% eine kombinierte Kontraktur von Gastrocnemius und Soleus (Patel und Kollegen, 2011).',
       paragraphs: [
         'Eine verkürzte Wade zieht über die Achillessehne an der Ferse, und am anderen Ende teilt sich die Plantarfaszie die Last. Wenn sich das Sprunggelenk nicht weit genug beugen lässt, kommt bei jedem Schritt mehr Spannung auf die Faszie.',

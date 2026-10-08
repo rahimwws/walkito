@@ -41,6 +41,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
   sections: [
     {
       h2: 'What are flat feet?',
+      figure: { id: 'arches', caption: 'The same foot bones with a flat foot, a typical arch and a high arch, seen from the inner side.', alt: 'Three feet seen from the inner side on a flat floor: a flat foot whose arch rests on the floor, a typical arch with a small gap underneath, and a high arch with a large gap under the middle of the foot.' },
       keyFact: 'A 2023 systematic review pooling 12 population studies of about 16,000 people found flat feet affect roughly 15.6 percent overall, with higher rates linked to higher BMI and older age (Salinas-Torres and colleagues, 2023).',
       paragraphs: [
         'The arch of the foot, called the medial longitudinal arch, is formed by the bones, ligaments and tendons on the inside of the foot. In a flat foot, this arch is lower or absent when you stand. The medical term is pes planus.',

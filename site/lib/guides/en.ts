@@ -57,6 +57,7 @@ export const FLAT_FEET_EN: Guide = {
   sections: [
     {
       h2: 'How do you tell if flat feet are flexible or rigid?',
+      figure: { id: 'arches', caption: 'The same foot bones with a flat foot, a typical arch and a high arch, seen from the inner side.', alt: 'Three feet seen from the inner side on a flat floor: a flat foot whose arch rests on the floor, a typical arch with a small gap underneath, and a high arch with a large gap under the middle of the foot.' },
       paragraphs: [
         'You can tell whether flat feet are flexible or rigid with a check that takes a few seconds. It matters because the trial on this page was run on flexible flat feet, and exercise will not change the shape of a rigid one. The 2024 review pooled studies of flat feet in general. Walkito doesn’t check your foot type, so this check is yours to do:',
       ],
@@ -334,6 +335,7 @@ export const HEEL_PAIN_EN: Guide = {
   sections: [
     {
       h2: 'Which exercises help plantar fasciitis, and how much should you do?',
+      figure: { id: 'plantar-fascia', caption: 'The plantar fascia runs from the heel bone to the toes. Plantar fasciitis pain usually starts where it attaches to the heel.', alt: 'Sole of a foot showing the plantar fascia as white bands fanning out from the heel bone to the base of the toes, with a red spot on the heel where pain usually starts.' },
       paragraphs: [
         'The exercises for plantar fasciitis in Walkito are stretches for the plantar fascia and calf, calf strength work that builds up in small steps, and a foot roll. These are Walkito’s starting doses, not a prescription. A one-page summary is on [printable exercise sheets](/printable-exercise-sheets/). [How these guides are written](/about/).',
         'Order matters. While pain is your goal, Walkito keeps the calf work gentle: seated heel raises first, then heel raises on both feet, then a held heel raise, one step at a time. You move up a step once the last two sessions with it felt easy. The [towel heel raise](/exercises/towel-heel-raise/) loads the plantar fascia the hardest, so it only comes in once morning pain has come down and the goal moves on to calf strength. If any exercise takes your pain to **6/10 or more**, stop for the day. That is the point where Walkito ends a session.',

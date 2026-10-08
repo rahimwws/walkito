@@ -36,6 +36,7 @@ export const HAGLUNDS_ES: Guide = {
   sections: [
     {
       h2: '¿Qué es la deformidad de Haglund?',
+      figure: { id: 'haglund', caption: 'La deformidad de Haglund es un bulto óseo en la esquina superior trasera del calcáneo. La bursa entre el bulto y el tendón de Aquiles puede quedar pinzada.', alt: 'Vista lateral de un tobillo y un talón con el tendón de Aquiles, un bulto óseo en la esquina superior trasera del calcáneo y una pequeña bolsa de líquido entre ambos.' },
       paragraphs: [
         'La deformidad de Haglund es un bulto óseo en la parte posterosuperior del calcáneo, la esquina superior trasera del hueso del talón. Entre este bulto y el tendón de Aquiles hay un pequeño saco lleno de líquido llamado bursa retrocalcánea. Cuando el bulto es prominente, la bursa se comprime entre el hueso y el tendón, causando inflamación (bursitis retrocalcánea) y dolor en la parte de atrás del talón.',
         'El bulto en sí es una variación estructural. Algunas personas tienen un calcáneo más prominente que otras. Se vuelve un problema cuando la presión del zapato, la carga del tendón, o ambas, irritan la bursa y la inserción del tendón. La combinación de la prominencia ósea, la bursitis y la tendinopatía insercional del Aquiles a veces se llama síndrome de Haglund.',

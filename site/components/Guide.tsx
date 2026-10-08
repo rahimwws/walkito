@@ -17,7 +17,9 @@ import { isTranslatedPage } from '@/lib/i18n';
 import type { GuideTable } from '@/lib/guides/types';
 import { CHROME, CUSTOM_PAGES, TRANSLATED, customHref } from '@/lib/i18n';
 import { articleSchema, faqSchema } from '@/lib/schema';
-import { videoSchema } from '@/lib/video';
+import { videoSchema, imageSchema } from '@/lib/video';
+import { AnatomyFigure } from '@/components/AnatomyFigure';
+import { anatomySchema } from '@/lib/anatomy';
 import { SITE_URL } from '@/lib/site';
 
 const HOME_CRUMB = { en: 'Home', ru: 'Главная', es: 'Inicio', pt: 'Início', fr: 'Accueil', it: 'Home', de: 'Start' } as const;
@@ -76,6 +78,12 @@ function Inline({ text }: { text: string }) {
 /** The anchor of an exercise card, linked from the list at the top. */
 function exerciseId(name: string): string {
   return `ex-${slug(name)}`;
+}
+
+/** A first paragraph ending in a colon introduces the list that follows, so
+ * the figure goes after the list instead of between them. */
+function figureAtEnd(section: { paragraphs?: readonly string[] }): boolean {
+  return section.paragraphs?.[0]?.trimEnd().endsWith(':') ?? false;
 }
 
 function slug(text: string): string {
@@ -200,6 +208,19 @@ export function Guide({ guide }: { guide: GuideData }) {
       {videoSchema(guide.sections.flatMap((s) => s.exercises ?? []), guide.lang, guide.published).map((v) => (
         <JsonLd key={v.contentUrl} data={v} />
       ))}
+      {/* Stills render only in sections laid out as exercise cards (the ones
+          with "feel" lines), so only those are described as images. */}
+      {imageSchema(
+        guide.sections.filter((s) => s.exercises?.some((e) => e.feel != null)).flatMap((s) => s.exercises ?? []),
+        guide.lang,
+        url,
+      ).map((img) => (
+        <JsonLd key={img.contentUrl} data={img} />
+      ))}
+      {guide.sections.flatMap((s) => (s.figure ? [s.figure] : [])).map((fig) => {
+        const img = anatomySchema(fig, guide.lang, url);
+        return <JsonLd key={img.contentUrl} data={img} />;
+      })}
       <Masthead lang={guide.lang} />
 
       <Prose className="shell prose">
@@ -286,11 +307,19 @@ export function Guide({ guide }: { guide: GuideData }) {
                 <Inline text={section.keyFact} />
               </p>
             )}
-            {section.paragraphs?.map((p) => (
-              <p key={p}>
-                <Inline text={p} />
-              </p>
+            {section.paragraphs?.map((p, i) => (
+              <Fragment key={p}>
+                <p>
+                  <Inline text={p} />
+                </p>
+                {i === 0 && section.figure && !figureAtEnd(section) && (
+                  <AnatomyFigure lang={guide.lang} {...section.figure} />
+                )}
+              </Fragment>
             ))}
+            {!section.paragraphs?.length && section.figure && (
+              <AnatomyFigure lang={guide.lang} {...section.figure} />
+            )}
             {section.table && <Table table={section.table} />}
             {section.after?.map((p) => (
               <p key={p}>
@@ -301,7 +330,7 @@ export function Guide({ guide }: { guide: GuideData }) {
               section.exercises.map((e) => (
                 // An exercise without a clip is text only: no empty box.
                 <div key={e.name} className={e.media ? 'exercise-detail' : 'exercise-detail exercise-text'}>
-                  {e.media && <ExerciseMedia id={e.media} alt={e.alt ?? e.name} caption={e.caption} />}
+                  {e.media && <ExerciseMedia id={e.media} alt={e.alt ? `${e.name}. ${e.alt}` : e.name} caption={e.caption} />}
                   <div>
                     <h3 id={firstExerciseId.has(e.name) ? undefined : (firstExerciseId.add(e.name), exerciseId(e.name))}>{e.name}</h3>
                     <p>
@@ -340,6 +369,7 @@ export function Guide({ guide }: { guide: GuideData }) {
                 ))}
               </ul>
             )}
+            {section.figure && figureAtEnd(section) && <AnatomyFigure lang={guide.lang} {...section.figure} />}
             {section.sourceNote && (
               <p className="cite">
                 <Inline text={section.sourceNote} />

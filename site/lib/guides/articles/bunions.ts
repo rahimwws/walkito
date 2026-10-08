@@ -23,6 +23,7 @@ export const BUNIONS_EN: Guide = {
   sections: [
     {
       h2: 'Can exercises fix a bunion?',
+      figure: { id: 'bunion', caption: 'A bunion is a bony bump at the big toe joint, with the big toe leaning toward the other toes.', alt: 'Top view of the foot bones with the big toe angled toward the second toe and a red bump on the inner side of the big toe joint.' },
       paragraphs: [
         'No. A bunion, clinically called hallux valgus, is a bony deviation at the first metatarsophalangeal joint (the big toe joint). The first metatarsal drifts inward and the big toe angles outward. Once the bone has shifted and the joint capsule has adapted, exercise cannot push it back.',
         'What exercise can do is strengthen the muscles around the joint. The abductor hallucis muscle runs along the inner arch and pulls the big toe into alignment. In people with hallux valgus, this muscle is weaker and smaller than in people without it. Strengthening it will not undo the structural change, but it may improve control, reduce symptoms, and possibly slow further drift in mild cases.',

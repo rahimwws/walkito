@@ -36,6 +36,7 @@ export const MORNING_HEEL_PAIN_PT: Guide = {
   sections: [
     {
       h2: 'Por que a dor no calcanhar é pior de manhã?',
+      figure: { id: 'heel-side', caption: 'Vista lateral: a fáscia plantar se prende embaixo do osso do calcanhar, onde a dor da fascite plantar costuma começar.', alt: 'Vista lateral interna de um pé com a pele transparente, mostrando o osso do calcanhar, a fáscia plantar sob o arco e uma área vermelha sob o calcanhar onde a dor costuma começar.' },
       paragraphs: [
         'A fáscia plantar, a faixa grossa de tecido que vai do osso do calcanhar até os dedos, fica mais rígida enquanto você dorme. Em repouso, o pé costuma ficar apontado para baixo, o que deixa a fáscia encurtar. Quando você fica em pé e apoia o pé com todo o seu peso, esse tecido encurtado se estica de repente. O resultado é uma fisgada forte na parte de dentro do calcanhar.',
         'A diretriz de 2023 para dor no calcanhar descreve isso como uma dor “mais perceptível ao apoiar o peso logo cedo pela manhã ou depois de um período de repouso”. O mesmo padrão aparece quando você fica um tempo sentado e depois levanta, pelo mesmo motivo: o tecido encurta em repouso e depois recebe carga de uma vez.',

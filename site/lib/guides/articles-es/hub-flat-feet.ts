@@ -30,6 +30,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
   sections: [
     {
       h2: '¿Qué es el pie plano?',
+      figure: { id: 'arches', caption: 'Los mismos huesos del pie con pie plano, arco típico y arco alto, vistos desde el lado interior.', alt: 'Tres pies vistos desde el lado interior sobre un suelo plano: un pie plano con el arco apoyado en el suelo, un arco típico con un pequeño espacio debajo y un arco alto con un gran espacio bajo el centro del pie.' },
       keyFact: 'Una revisión sistemática de 2023 con 12 estudios de población y unas 16\u00A0000 personas encontró una frecuencia general del 15,6\u00A0%, más alta con un IMC mayor y una edad mayor (Salinas-Torres y colegas, 2023).',
       paragraphs: [
         'El arco del pie, llamado arco longitudinal medial, lo forman los huesos, ligamentos y tendones de la parte interna del pie. En un pie plano, este arco queda bajo o desaparece cuando te paras. El término médico es pes planus.',

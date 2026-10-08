@@ -23,6 +23,7 @@ export const BUNIONS_ES: Guide = {
   sections: [
     {
       h2: '¿Se pueden corregir los juanetes con ejercicios?',
+      figure: { id: 'bunion', caption: 'Un juanete es un bulto óseo en la articulación del dedo gordo, con el dedo gordo inclinado hacia los demás.', alt: 'Vista superior de los huesos del pie con el dedo gordo inclinado hacia el segundo dedo y un bulto rojo en el lado interior de la articulación del dedo gordo.' },
       paragraphs: [
         'No. Un juanete, clínicamente llamado hallux valgus, es una desviación ósea en la articulación metatarsofalángica del dedo gordo. El primer metatarsiano se desvía hacia adentro y el dedo gordo se inclina hacia afuera. Una vez que el hueso se ha movido y la cápsula articular se ha adaptado, el ejercicio no puede empujarlo de vuelta.',
         'Lo que el ejercicio sí puede hacer es fortalecer los músculos alrededor de la articulación. El músculo abductor del dedo gordo corre a lo largo del arco interno y jala el dedo gordo hacia la alineación. En las personas con hallux valgus, este músculo es más débil y más pequeño que en las personas sin él. Fortalecerlo no va a deshacer el cambio estructural, pero puede mejorar el control, reducir los síntomas y posiblemente frenar el avance en casos leves.',

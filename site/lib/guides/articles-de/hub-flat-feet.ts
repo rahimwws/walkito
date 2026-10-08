@@ -34,6 +34,7 @@ export const HUB_FLAT_FEET_DE: Guide = {
   sections: [
     {
       h2: 'Was ist ein Plattfuß?',
+      figure: { id: 'arches', caption: 'Dieselben Fußknochen bei Plattfuß, normalem und hohem Gewölbe, von der Innenseite gesehen.', alt: 'Drei Füße von der Innenseite auf ebenem Boden: ein Plattfuß, dessen Gewölbe auf dem Boden aufliegt, ein normales Gewölbe mit kleinem Spalt darunter und ein hohes Gewölbe mit großem Spalt unter der Fußmitte.' },
       keyFact: 'Eine systematische Übersichtsarbeit von 2023, die 12\u00A0Bevölkerungsstudien mit rund 16.000 Menschen zusammenfasste, fand Plattfüße bei insgesamt etwa 15,6\u00A0%, häufiger bei höherem BMI und höherem Alter (Salinas-Torres und Kollegen, 2023).',
       paragraphs: [
         'Das Fußgewölbe, genauer das mediale Längsgewölbe, wird von den Knochen, Bändern und Sehnen an der Innenseite des Fußes gebildet. Bei einem Plattfuß liegt dieses Gewölbe im Stehen tiefer oder fehlt ganz. Der Fachbegriff ist Pes planus.',

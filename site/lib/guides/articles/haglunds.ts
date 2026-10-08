@@ -27,6 +27,7 @@ export const HAGLUNDS_EN: Guide = {
   sections: [
     {
       h2: "What is Haglund's deformity?",
+      figure: { id: 'haglund', caption: 'Haglund\'s deformity is a bony bump on the upper back corner of the heel bone. The bursa between it and the Achilles tendon can get pinched.', alt: 'Side view of an ankle and heel showing the Achilles tendon, a bony bump at the upper back corner of the heel bone, and a small fluid sac between them.' },
       paragraphs: [
         "Haglund's deformity is a bony bump on the posterosuperior part of the calcaneus, the upper back corner of the heel bone. Between this bump and the Achilles tendon sits a small fluid-filled sac called the retrocalcaneal bursa. When the bump is prominent, the bursa gets pinched between the bone and the tendon, causing inflammation (retrocalcaneal bursitis) and pain at the back of the heel.",
         'The bump itself is a structural variation. Some people have a more prominent calcaneus than others. It becomes a problem when shoe pressure, tendon loading, or both irritate the bursa and the tendon insertion. The combination of the bony prominence, bursitis, and insertional Achilles tendinopathy is sometimes called Haglund\'s syndrome.',

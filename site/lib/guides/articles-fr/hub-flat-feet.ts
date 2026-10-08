@@ -33,6 +33,7 @@ export const HUB_FLAT_FEET_FR: Guide = {
   sections: [
     {
       h2: 'Qu’est-ce que les pieds plats\u00A0?',
+      figure: { id: 'arches', caption: 'Les mêmes os du pied avec un pied plat, une voûte normale et une voûte haute, vus du côté intérieur.', alt: 'Trois pieds vus du côté intérieur sur un sol plat\u00A0: un pied plat dont la voûte repose au sol, une voûte normale avec un petit espace dessous et une voûte haute avec un grand espace sous le milieu du pied.' },
       keyFact: 'Une revue systématique de 2023 regroupant 12\u00A0études de population sur environ 16\u00A0000\u00A0personnes a trouvé que les pieds plats touchent environ 15,6\u00A0% des gens dans l’ensemble, plus souvent avec un IMC plus élevé et un âge plus avancé (Salinas-Torres et coll., 2023).',
       paragraphs: [
         'La voûte du pied, appelée arche longitudinale médiale, est formée par les os, les ligaments et les tendons de l’intérieur du pied. Sur un pied plat, cette voûte est plus basse ou absente quand vous êtes debout. Le terme médical est pes planus.',

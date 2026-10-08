@@ -1,4 +1,5 @@
 import type { EvidenceLevel } from '@/components/Evidence';
+import type { AnatomyId } from '@/lib/anatomy';
 import type { Lang, EnglishPage, TranslatedPage } from '@/lib/i18n';
 
 /**
@@ -64,6 +65,9 @@ export type GuideSection = {
    * printed under the heading: the line a reader or an AI answer quotes.
    * Only a number already in this section's text and sources. */
   keyFact?: string;
+  /** A labelled anatomy illustration, shown after the first paragraph.
+   * `caption` is one plain line under it; `alt` says what it shows. */
+  figure?: { id: AnatomyId; caption: string; alt: string };
   paragraphs?: readonly string[];
   exercises?: readonly GuideExercise[];
   bullets?: readonly string[];

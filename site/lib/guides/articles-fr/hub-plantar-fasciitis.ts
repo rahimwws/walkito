@@ -33,6 +33,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
   sections: [
     {
       h2: 'Qu’est-ce que la fasciite plantaire\u00A0?',
+      figure: { id: 'plantar-fascia', caption: 'Le fascia plantaire va de l’os du talon jusqu’aux orteils. La douleur de la fasciite plantaire commence souvent là où il s’attache au talon.', alt: 'Plante d’un pied montrant le fascia plantaire en bandes blanches qui s’étalent de l’os du talon jusqu’à la base des orteils, avec une tache rouge sur le talon là où la douleur commence souvent.' },
       paragraphs: [
         'La fasciite plantaire est une surcharge du fascia plantaire. Le fascia plantaire est une bande résistante de tissu conjonctif qui longe la plante du pied, de l’os du talon (le calcanéum) à la base des orteils. Il soutient la voûte et amortit les chocs à chaque pas.',
         'Quand le fascia reçoit plus de charge qu’il ne peut en récupérer, le tissu s’irrite près de son attache au talon. Le suffixe «\u00A0-ite\u00A0» évoque une inflammation, mais les connaissances actuelles penchent plutôt vers un processus dégénératif du tissu qu’une inflammation durable. Certains professionnels de santé parlent plutôt d’«\u00A0aponévrosite\u00A0» ou de «\u00A0fasciopathie plantaire\u00A0». Le nom ne change ni les symptômes ni l’approche recommandée.',

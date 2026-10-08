@@ -177,6 +177,7 @@ export const ACHILLES_PT: Guide = {
     },
     {
       h2: 'A dor é no meio do tendão ou no osso do calcanhar, e por que isso muda o exercício?',
+      figure: { id: 'achilles', caption: 'A dor no tendão de Aquiles costuma ficar em um de dois lugares: no meio do tendão ou onde ele se prende ao osso do calcanhar.', alt: 'Vista lateral de um pé e tornozelo com o tendão de Aquiles indo da panturrilha até a parte de trás do osso do calcanhar, e uma área vermelha no meio do tendão.' },
       keyFact: 'Em um estudo piloto com 27\u00A0pessoas com dor de Aquiles insercional, a carga excêntrica só no nível do chão, sem dorsiflexão profunda, deu bons resultados em 67% dos casos (Jonsson e colegas, 2008).',
       paragraphs: [
         'A tendinopatia de Aquiles no meio do tendão fica no corpo do tendão, em geral de 2 a 6\u00A0centímetros acima do osso do calcanhar. As descidas excêntricas padrão e a resistência pesada e lenta têm a melhor evidência aqui. Descidas do calcanhar passando da beira de um degrau são adequadas para dor no meio do tendão.',

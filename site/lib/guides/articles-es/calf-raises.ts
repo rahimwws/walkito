@@ -151,6 +151,7 @@ export const CALF_RAISES_ES: Guide = {
     },
     {
       h2: '¿Por qué importa una pantorrilla tensa en el dolor de talón?',
+      figure: { id: 'calf', caption: 'Los dos músculos de la pantorrilla, el gastrocnemio y el sóleo, se unen en el tendón de Aquiles, que se inserta en el hueso del talón.', alt: 'Vistas lateral y posterior de una pierna con los músculos gastrocnemio y sóleo que se estrechan hasta el tendón de Aquiles por encima del talón.' },
       keyFact: 'En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenía una contractura limitada al gastrocnemio, y otro 23 a 30\u00A0% tenía una contractura combinada de gastrocnemio y sóleo (Patel y colegas, 2011).',
       paragraphs: [
         'Una pantorrilla tensa jala del talón a través del tendón de Aquiles, y la fascia plantar comparte la carga en el otro extremo. Cuando el tobillo no se dobla lo suficiente, cada paso pone más tensión en la fascia.',

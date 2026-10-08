@@ -54,6 +54,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
   sections: [
     {
       h2: 'Is a heel spur the same as plantar fasciitis?',
+      figure: { id: 'heel-side', caption: 'A heel spur, when there is one, forms on the underside of the heel bone, close to where the plantar fascia attaches.', alt: 'Inner side view of a foot with see-through skin showing the heel bone, the plantar fascia running under the arch, and a red area under the heel where pain usually starts.' },
       paragraphs: [
         'A heel spur and plantar fasciitis are not the same thing. Plantar fasciitis is a soft tissue problem: the plantar fascia, the thick band running from the heel bone to the toes, becomes irritated, usually where it attaches to the bone. A heel spur is a bony outgrowth on the underside of the heel bone (the calcaneus). The two often coexist, but they can each appear without the other.',
         'Plantar fasciitis causes the sharp, stabbing pain people describe on the bottom of the heel, especially with the first steps in the morning or after sitting. The 2023 heel pain guideline defines it as pain "most noticeable with weight bearing first thing in the morning or after a period of rest." A heel spur, by contrast, is a structural finding on an X-ray. It may or may not produce symptoms of its own.',
