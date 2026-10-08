@@ -193,14 +193,22 @@ export function weekAttendance(
    * when the window is chosen rather than afterwards.
    */
   firstDay: 0 | 1 = 1,
+  /**
+   * The real now, when `now` only picks which week to draw. A past week asked
+   * for by a date inside it would otherwise call that date "today" and every
+   * day after it in the week "future".
+   */
+  current: number = now,
 ): DayAttendance[] {
   const state = programState();
-  const todayKey = toDateKey(new Date(now));
-  const today = new Date(now);
+  const todayKey = toDateKey(new Date(current));
+  const today = new Date(current);
   today.setHours(0, 0, 0, 0);
+  const anchor = new Date(now);
+  anchor.setHours(0, 0, 0, 0);
 
-  const offset = (today.getDay() - firstDay + 7) % 7;
-  const monday = today.getTime() - offset * DAY_MS;
+  const offset = (anchor.getDay() - firstDay + 7) % 7;
+  const monday = anchor.getTime() - offset * DAY_MS;
 
   return Array.from({ length: 7 }, (_, i): DayAttendance => {
     const date = new Date(monday + i * DAY_MS);

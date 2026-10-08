@@ -41,4 +41,11 @@ export const PLAYER_RU = {
   'player.painRule.a11y': 'Какая боль допустима',
   'player.tempo.on': 'Звуки темпа включены',
   'player.tempo.off': 'Звуки темпа выключены',
+
+  // ── The player's own chrome ───────────────────────────────────────────────
+  'player.header.meta': '{minutes} · {moves}',
+  'player.chip.position': '{index} из {total}',
+  'player.cta.pause': 'Пауза',
+  'player.cta.resume': 'Продолжить',
+  'player.cta.done': 'Готово',
 };

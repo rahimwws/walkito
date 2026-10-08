@@ -58,12 +58,12 @@ export type StreakWeekProps = {
  * Three states, and the difference between them is carried by colour and shape
  * rather than by a badge:
  *
- * - **Earned** — a flame, but grey. It happened; it is not news.
- * - **Today** — the only lit thing on the row, in the app's orange, on a raised
- *   cell. It is the only day the user can still do anything about.
- * - **Ahead** — the same flame, unlit. One shape across the whole row means
- *   the week reads as a single object with a lit position in it, rather than
- *   as two kinds of thing sitting next to each other.
+ * - **Earned** — lit, in the app's orange. A streak is a row of lit days; a
+ *   grey flame for a day that counted read as a day that did not.
+ * - **Today** — on a raised cell. Lit once it is earned, a plain grey flame
+ *   until then: the one day the user can still do something about.
+ * - **Missed or ahead** — the same flame, barely there. One shape across the
+ *   whole row means the week reads as a single object.
  */
 export function StreakWeek({ done, today = new Date().getDay() }: StreakWeekProps) {
   const language = useLanguage();
@@ -172,11 +172,11 @@ function Cell({
         {label}
       </Text>
       {/* Solid, not outlined: at this size a stroked flame reads as a
-          scribble. Three tones, one glyph — lit for today, legible grey for
-          what is banked, barely there for what has not happened yet. */}
+          scribble. Three tones, one glyph — lit for every day that counted,
+          grey for today while it is still open, barely there otherwise. */}
       <FireIcon
         size={30}
-        color={isToday ? flame.fill : ahead ? meter.track : meter.unit}
+        color={earned ? flame.fill : isToday ? meter.unit : meter.track}
         weight="fill"
       />
     </Animated.View>

@@ -41,4 +41,11 @@ export const PLAYER_IT = {
   'player.painRule.a11y': 'Quanto dolore va bene',
   'player.tempo.on': 'Suoni del ritmo attivi',
   'player.tempo.off': 'Suoni del ritmo disattivati',
+
+  // ── The player's own chrome ───────────────────────────────────────────────
+  'player.header.meta': '{minutes} · {moves}',
+  'player.chip.position': '{index} di {total}',
+  'player.cta.pause': 'Pausa',
+  'player.cta.resume': 'Riprendi',
+  'player.cta.done': 'Fatto',
 };

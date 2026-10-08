@@ -118,6 +118,17 @@ export const HOME_EN = {
   /** Under the title when there is no next session to count down to - three
    * weeks of rest ahead. Otherwise the line is `nextSession.*`. */
   'home.allDoneBlurb': 'Nothing else is needed today.',
+  /** The done card's second line: how long, and how much. The separator is
+   * typography; the counted halves agree inside their own keys. */
+  'home.doneSummary': '{minutes} · {work}',
+  'home.doneMoves': { one: '{count} move done', other: '{count} moves done' },
+  'home.doneTests': { one: '{count} test done', other: '{count} tests done' },
+  /** A position in the run, said under the week. Only from two days on. */
+  'home.doneStreak': 'Day {count} in a row',
+  /** The first day of a run. Never a word about a run that ended. */
+  'home.doneStreakStart': 'Your streak starts today',
+  /** The done card's week of dots, read aloud as one fact. */
+  'home.weekDoneA11y': { one: '{count} day done this week', other: '{count} days done this week' },
   /** The two empties, which are different facts: a retest day has no exercises
    * because it is a measurement, a rest day has none because it is rest. */
   'home.retestTask': 'Retest',
@@ -146,6 +157,12 @@ export const HOME_EN = {
   'home.checkInSubMorning': 'How bad were your first steps out of bed this morning?',
   'home.checkInSubDay': 'How’s your foot today?',
   'home.somethingNew': 'Something new? (swelling, numbness, a pop)',
+  /** Above the check-in question: what this is, and what it costs. */
+  'home.checkInKickerMorning': 'Morning check-in · 10 sec',
+  'home.checkInKickerDay': 'Daily check-in · 10 sec',
+  /** The row on Home that opens the red-flag check. */
+  'home.somethingNewTitle': 'Something new?',
+  'home.somethingNewSub': 'Swelling, numbness, a pop',
   'safety.title': 'Something new?',
   'safety.sub': 'Tap any that apply right now.',
   'safety.a1': 'My calf is swollen, warm or red on one side, or I’m short of breath or have chest pain',

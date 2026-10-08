@@ -59,4 +59,34 @@ export const QUICK_EN = {
   // ── Locked ────────────────────────────────────────────────────────────────
   'quick.locked': 'Locked',
   'quick.lockedHint': 'Included with the program',
+
+  // ── The routine page ──────────────────────────────────────────────────────
+  // The kicker over the title in the hero.
+  'quick.kicker': 'Routine',
+  'quick.whyTitle': 'Why this helps',
+  // A short paragraph per routine. What it does and why now, never a promised
+  // result and never a diagnosis.
+  'quick.flare.why':
+    'Three seated moves that ask almost nothing of the sore tissue. Rolling and gentle stretching ease the tension while your weight stays off the foot.',
+  'quick.preRun.why':
+    'Two minutes that wake up the ankle and the small muscles under the arch, so your foot is ready from the first stride.',
+  'quick.postRun.why':
+    'Calves and soles tighten after a run. Slow, held stretches while you are still warm help them settle.',
+  'quick.atWork.why':
+    'Hours on your feet are hard on them. A few quiet moves keep the arch working and the ankle moving, without leaving your spot.',
+  'quick.morning.why':
+    'The first steps of the day are often the hardest. Stretching the sole before you stand gives it a gentle start.',
+  'quick.moves': { one: '{count} move', other: '{count} moves' },
+  // One move's line in the list: how long it runs.
+  'quick.stepSeconds': { one: '{count} sec', other: '{count} sec' },
+  // A move that switches feet halfway, as one line.
+  'quick.stepSwitch': {
+    one: '{count} sec, switch legs halfway',
+    other: '{count} sec, switch legs halfway',
+  },
+  // The page's one button: what it starts and how long it takes.
+  'quick.startMinutes': {
+    one: 'Start · {count} min',
+    other: 'Start · {count} min',
+  },
 } satisfies Record<string, SourceEntry>;

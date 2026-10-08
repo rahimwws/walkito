@@ -10,7 +10,7 @@ import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useIsFocused } from 'expo-router';
 import { useMemo, useState } from 'react';
-import { Image, Modal, Pressable, StyleSheet, Text, View, type StyleProp, type TextStyle } from 'react-native';
+import { Image, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, { LinearTransition, ReduceMotion } from 'react-native-reanimated';
 
 import { useHealthSignals, type HealthSignals } from '@/entities/health';
@@ -37,18 +37,17 @@ import {
   writeLog,
   type DayType,
   type ExerciseCategory,
-  type NextSession,
   type PlannedExercise,
   type ProgramDay,
   type TodayReason,
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
-import { useCountdown } from '@/shared/lib/clock';
-import { useLanguage, useT, type Translate } from '@/shared/lib/i18n';
+import { useT, type Translate } from '@/shared/lib/i18n';
 import { PROGRAM_MS } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
-import { waitPhrase } from '@/shared/lib/wait';
 import { SessionView, TestDayFlow, type PlaylistStep } from '@/widgets/session-player';
+
+import { DoneCard } from './done-card';
 
 /** The mascot, mid-stride. It belongs to this block rather than to the screen:
  * the list is the one place on Home that asks for work, and a character running
@@ -157,13 +156,23 @@ type TodayWork = {
  * page shows the same day from the same call, so the two cannot disagree.
  */
 function tasksForToday(t: Translate, health: HealthSignals): TodayWork {
-  const day = todayPlan({
-    stepsYesterday: health.stepsYesterday,
-    steps28Avg: health.stepsBaseline,
-    sleepHours: health.sleepLastNightMin == null ? null : health.sleepLastNightMin / 60,
-  }, null);
+  const day = todayPlan(
+    {
+      stepsYesterday: health.stepsYesterday,
+      steps28Avg: health.stepsBaseline,
+      sleepHours: health.sleepLastNightMin == null ? null : health.sleepLastNightMin / 60,
+    },
+    null,
+  );
   if (day.type === 'test') {
-    return { tasks: [], retest: true, kind: day.type, minutes: RETEST_MINUTES, reason: null, short: [] };
+    return {
+      tasks: [],
+      retest: true,
+      kind: day.type,
+      minutes: RETEST_MINUTES,
+      reason: null,
+      short: [],
+    };
   }
   return {
     retest: false,
@@ -216,7 +225,9 @@ function stepOf(planned: PlannedExercise): PlaylistStep {
     exerciseId: planned.id,
     seconds: planDoseSeconds(dose),
     perSide: dose.perSide,
-    ...(dose.tempo != null && dose.reps != null ? { cadence: { tempo: dose.tempo, reps: dose.reps, sets: dose.sets } } : {}),
+    ...(dose.tempo != null && dose.reps != null
+      ? { cadence: { tempo: dose.tempo, reps: dose.reps, sets: dose.sets } }
+      : {}),
     ...(dose.addWeight === true ? { addWeight: true } : {}),
   };
 }
@@ -285,7 +296,14 @@ export function TodayTasks() {
   const next = useNextSession();
   const date = todayKey();
 
-  const { tasks, retest, kind, minutes, reason, short: shortSteps } = useMemo(() => {
+  const {
+    tasks,
+    retest,
+    kind,
+    minutes,
+    reason,
+    short: shortSteps,
+  } = useMemo(() => {
     return tasksForToday(t, health);
     // The first two are versions rather than inputs — the plan reads the log
     // and its own store, and both are mutated in place, so they are the only
@@ -402,13 +420,17 @@ export function TodayTasks() {
         {/* Decoration, and only decoration — it says nothing the list does not
             already say, so it is hidden from anyone listening rather than read
             out as an unnamed image between a heading and its rows. */}
-        <Image
-          source={MASCOT}
-          accessibilityElementsHidden
-          importantForAccessibility="no"
-          style={styles.mascot}
-          resizeMode="contain"
-        />
+        {/* Not when the day is done: the done card brings its own mascot, and
+            two on one heading read as a sticker sheet. */}
+        {!allDone && (
+          <Image
+            source={MASCOT}
+            accessibilityElementsHidden
+            importantForAccessibility="no"
+            style={styles.mascot}
+            resizeMode="contain"
+          />
+        )}
       </View>
 
       {/* Why today is not the day as planned — said, rather than done silently. */}
@@ -423,19 +445,14 @@ export function TodayTasks() {
           work behind a tick would make the screen forget the session the
           moment it ended. */}
       {allDone && (
-        <View style={[styles.allDone, { backgroundColor: meter.track }]}>
-          <View style={[styles.allDoneDot, { backgroundColor: meter.positive }]} />
-          <View style={styles.allDoneText}>
-            <Text style={[styles.allDoneTitle, { color: colors.foreground }]}>
-              {t('home.allDoneTitle')}
-            </Text>
-            <NextSessionLine
-              next={next}
-              active={focused}
-              style={[styles.allDoneBlurb, { color: meter.caption }]}
-            />
-          </View>
-        </View>
+        <DoneCard
+          next={next}
+          active={focused}
+          date={date}
+          plannedMinutes={minutes}
+          tickedMoves={dayDone ? tasks.length : ticked.length}
+          retest={retest}
+        />
       )}
 
       <View style={styles.list}>
@@ -443,9 +460,7 @@ export function TodayTasks() {
             The row style and the caption colour, so the line sits exactly where
             the first task would and reads as quietly as a finished one. */}
         {ordered.length === 0 && !retest && (
-          <Text style={[styles.title, { color: meter.caption }]}>
-            {t('home.nothingScheduled')}
-          </Text>
+          <Text style={[styles.title, { color: meter.caption }]}>{t('home.nothingScheduled')}</Text>
         )}
         {/* A retest day's work is the tests, drawn as one more row of the list
             rather than as a second primary button. Until the morning check-in
@@ -476,9 +491,7 @@ export function TodayTasks() {
           // between two measured positions, so the worst it can do is not run;
           // an entering animation seeds the row at opacity zero and has left
           // content permanently invisible in this project three times.
-          <Animated.View
-            key={task.id}
-            layout={LinearTransition.duration(PROGRAM_MS).reduceMotion(ReduceMotion.System)}>
+          <Animated.View key={task.id} layout={LinearTransition.duration(PROGRAM_MS).reduceMotion(ReduceMotion.System)}>
             <TaskRow
               task={task}
               done={isDone(task.id)}
@@ -494,11 +507,7 @@ export function TodayTasks() {
                   ? undefined
                   : () => {
                       Haptics.selectionAsync();
-                      record(
-                        ticked.includes(task.id)
-                          ? ticked.filter((id) => id !== task.id)
-                          : [...ticked, task.id],
-                      );
+                      record(ticked.includes(task.id) ? ticked.filter((id) => id !== task.id) : [...ticked, task.id]);
                     }
               }
             />
@@ -516,7 +525,8 @@ export function TodayTasks() {
             setShort(playerDay(kind, 2));
           }}
           hitSlop={8}
-          style={({ pressed }) => [styles.notUp, pressed && { opacity: 0.5 }]}>
+          style={({ pressed }) => [styles.notUp, pressed && { opacity: 0.5 }]}
+        >
           <Text style={[styles.notUpText, { color: meter.caption }]}>{t('pages.plan.notUpForIt')}</Text>
         </Pressable>
       )}
@@ -529,7 +539,8 @@ export function TodayTasks() {
           setOpen(null);
           setTesting(null);
           setShort(null);
-        }}>
+        }}
+      >
         {short != null && (
           <View style={[styles.player, { backgroundColor: colors.background }]}>
             <SessionView
@@ -555,9 +566,7 @@ export function TodayTasks() {
             the goals and the sync. This used to be the session player on the
             fixed program's day, which saved nothing the plan could read — so
             Home went on offering a test Plan called done. */}
-        {testing != null && (
-          <TestDayFlow review={testing === 'review'} onClose={() => setTesting(null)} />
-        )}
+        {testing != null && <TestDayFlow review={testing === 'review'} onClose={() => setTesting(null)} />}
         {/* The sheet paints its own page colour. `SessionView` deliberately has
             none — inside the program it sits on the sheet face, which supplies
             it — so dropped straight into a bare Modal it showed iOS's default
@@ -588,38 +597,6 @@ export function TodayTasks() {
 }
 
 /**
- * The line under "Done for today": when the next session opens.
- *
- * Its own component so the countdown's tick re-renders one line of text, not
- * the list. Counted within a day, named beyond it — "Next session in 5h 3m",
- * "Next session: Monday". With three weeks of rest ahead there is nothing to
- * count to, and it says so plainly.
- */
-function NextSessionLine({
-  next,
-  active,
-  style,
-}: {
-  next: NextSession | null;
-  active: boolean;
-  style: StyleProp<TextStyle>;
-}) {
-  const t = useT();
-  const language = useLanguage();
-  const waiting = next != null && !next.open;
-  const left = useCountdown(waiting ? next.at : null, active);
-  if (next == null || !waiting || left == null || left <= 0) {
-    return <Text style={style}>{t('home.allDoneBlurb')}</Text>;
-  }
-  const phrase = waitPhrase(t, language, next.at, left);
-  return (
-    <Text style={style}>
-      {phrase.kind === 'in' ? t('nextSession.in', { time: phrase.time }) : t('nextSession.on', { day: phrase.day })}
-    </Text>
-  );
-}
-
-/**
  * The day's retest, as a row of the list.
  *
  * The same two lines and the same trailing chip as a task, tinted with the
@@ -645,7 +622,9 @@ function RetestRow({
   const t = useT();
   const tone = accents[scheme].orange;
   const title = t('home.retestTask');
-  const subtitle = t('home.retestTaskSub', { tests: t('home.tests', { count: RETEST_TESTS }) });
+  const subtitle = t('home.retestTaskSub', {
+    tests: t('home.tests', { count: RETEST_TESTS }),
+  });
 
   const inert = done && onResults == null;
 
@@ -657,20 +636,30 @@ function RetestRow({
       accessibilityHint={done && onResults != null ? t('home.seeResults') : undefined}
       disabled={inert}
       onPress={done ? (onResults ?? undefined) : onOpen}
-      style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}>
+      style={({ pressed }) => [styles.retestCard, { backgroundColor: colors.card }, pressed && { opacity: 0.7 }]}
+    >
+      {/* The tile carries the kind of work the way a task row's tinted line
+          does, so the one row on a test day still reads at a glance. */}
+      <View style={[styles.iconTile, { backgroundColor: tone.track }]}>
+        <HugeiconsIcon icon={RulerIcon} size={22} color={tone.fill} strokeWidth={2} />
+      </View>
       <View style={styles.copy}>
         <Text
+          numberOfLines={1}
           style={[
             styles.title,
             { color: colors.foreground },
-            done && { textDecorationLine: 'line-through', color: meter.caption },
-          ]}>
+            done && {
+              textDecorationLine: 'line-through',
+              color: meter.caption,
+            },
+          ]}
+        >
           {title}
         </Text>
-        <View style={styles.category}>
-          <HugeiconsIcon icon={RulerIcon} size={13} color={tone.fill} strokeWidth={GLYPH_STROKE} />
-          <Text style={[styles.categoryText, { color: tone.fill }]}>{subtitle}</Text>
-        </View>
+        <Text numberOfLines={1} style={[styles.categoryText, { color: tone.fill }]}>
+          {subtitle}
+        </Text>
       </View>
 
       {done && onResults != null ? (
@@ -726,8 +715,7 @@ function TaskRow({
    * the list its rhythm. The separator is what lets one line hold both.
    */
   const label = exerciseCategoryLabel(task.category);
-  const subtitle =
-    task.dose != null ? t('home.taskSubtitle', { category: label, dose: task.dose }) : label;
+  const subtitle = task.dose != null ? t('home.taskSubtitle', { category: label, dose: task.dose }) : label;
 
   return (
     <Pressable
@@ -738,7 +726,8 @@ function TaskRow({
       // who cannot hear how many.
       accessibilityLabel={t('home.taskA11y', { title: task.title, subtitle })}
       onPress={onOpen}
-      style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}>
+      style={({ pressed }) => [styles.row, pressed && { opacity: 0.6 }]}
+    >
       <View style={styles.copy}>
         <Text
           style={[
@@ -747,8 +736,12 @@ function TaskRow({
             // Struck through rather than hidden. A list that removes what you
             // finished takes the evidence away with it, and on a bad week the
             // evidence is the point.
-            done && { textDecorationLine: 'line-through', color: meter.caption },
-          ]}>
+            done && {
+              textDecorationLine: 'line-through',
+              color: meter.caption,
+            },
+          ]}
+        >
           {task.title}
         </Text>
         <View style={styles.category}>
@@ -777,10 +770,15 @@ function TaskRow({
           style={({ pressed }) => [
             styles.box,
             done
-              ? { borderColor: tone.fill, backgroundColor: tone.fill, borderStyle: 'solid' }
+              ? {
+                  borderColor: tone.fill,
+                  backgroundColor: tone.fill,
+                  borderStyle: 'solid',
+                }
               : { borderColor: meter.track, borderStyle: 'dashed' },
             pressed && { opacity: 0.6 },
-          ]}>
+          ]}
+        >
           {done && <HugeiconsIcon icon={Tick02Icon} size={16} color={colors.background} strokeWidth={2.5} />}
         </Pressable>
       )}
@@ -839,28 +837,6 @@ const styles = StyleSheet.create({
     ...fonts.heavy(22, -0.6),
     lineHeight: HEADING_LINE,
   },
-  allDone: {
-    borderRadius: 22,
-    borderCurve: 'continuous',
-    paddingVertical: 16,
-    paddingHorizontal: 18,
-    // Clear of the heading above and of the first row below. It was pinned
-    // straight under the title with 14 beneath it, which read as a subtitle
-    // belonging to "Today's Tasks" rather than as a card of its own — and the
-    // heading row is absolute-positioned artwork, so it contributes no margin
-    // of its own for this to sit against.
-    marginTop: 14,
-    marginBottom: 6,
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    gap: 10,
-  },
-  /** A filled dot rather than a tick glyph: the rows below already carry ticks,
-   * and a second tick here would read as a fourth task. */
-  allDoneDot: { width: 8, height: 8, borderRadius: 4, marginTop: 7 },
-  allDoneText: { flex: 1 },
-  allDoneTitle: fonts.bold(17, -0.3),
-  allDoneBlurb: { ...fonts.regular(14), lineHeight: 19, marginTop: 2 },
   list: {
     marginTop: 14,
   },
@@ -881,6 +857,26 @@ const styles = StyleSheet.create({
     gap: 5,
   },
   categoryText: fonts.semibold(14, -0.1),
+  /** The retest on a day with nothing else on it: one row, given a surface of
+   * its own so it does not float alone under the heading. */
+  retestCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 14,
+    paddingVertical: 14,
+    paddingLeft: 14,
+    paddingRight: 14,
+    borderRadius: 22,
+    borderCurve: 'continuous',
+  },
+  iconTile: {
+    width: 46,
+    height: 46,
+    borderRadius: 15,
+    borderCurve: 'continuous',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   chip: {
     flexDirection: 'row',
     alignItems: 'center',

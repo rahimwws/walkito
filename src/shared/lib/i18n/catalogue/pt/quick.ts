@@ -43,4 +43,27 @@ export const QUICK_PT = {
 
   'quick.locked': 'Bloqueado',
   'quick.lockedHint': 'Incluído no programa',
+
+  'quick.kicker': 'Rotina',
+  'quick.whyTitle': 'Por que ajuda',
+  'quick.flare.why':
+    'Três exercícios sentados que quase não exigem nada da região dolorida. Rolar e alongar com calma aliviam a tensão sem colocar peso no pé.',
+  'quick.preRun.why':
+    'Dois minutos para acordar o tornozelo e os músculos pequenos sob o arco, para o pé estar pronto desde a primeira passada.',
+  'quick.postRun.why':
+    'Depois da corrida, panturrilhas e solas ficam tensas. Alongamentos lentos e sustentados, ainda com o corpo aquecido, ajudam a soltar.',
+  'quick.atWork.why':
+    'Horas em pé cansam os pés. Alguns movimentos discretos mantêm o arco ativo e o tornozelo em movimento, sem sair do lugar.',
+  'quick.morning.why':
+    'Os primeiros passos do dia costumam ser os mais difíceis. Alongar a sola antes de levantar dá a ela um começo suave.',
+  'quick.moves': { one: '{count} exercício', other: '{count} exercícios' },
+  'quick.stepSeconds': { one: '{count} s', other: '{count} s' },
+  'quick.stepSwitch': {
+    one: '{count} s, troque de perna na metade',
+    other: '{count} s, troque de perna na metade',
+  },
+  'quick.startMinutes': {
+    one: 'Começar · {count} min',
+    other: 'Começar · {count} min',
+  },
 };
