@@ -27,7 +27,7 @@ export const EX_SINGLE_LEG_BALANCE_ES: Guide = {
   toc: false,
   sections: [
     {
-      h2: 'Cómo hacer el equilibrio a una pierna',
+      h2: '¿Cómo hacer el equilibrio a una pierna?',
       paragraphs: [
         'Párate cerca de una pared o una barra de cocina. Levanta un pie del piso doblando un poco la rodilla. Mira un punto fijo al frente. Deja que el pie de apoyo se tambalee. Ese tambaleo es justo el ejercicio: los músculos pequeños del pie y del tobillo están trabajando para mantenerte de pie.',
         'Aguanta todo lo que puedas, hasta 30\u00A0segundos, y cambia de lado. Tres veces por lado es una dosis común. Si no aguantas más de unos segundos, deja las puntas de los dedos en la pared y ve subiendo poco a poco.',
@@ -93,7 +93,7 @@ export const EX_SINGLE_LEG_BALANCE_ES: Guide = {
       cites: [CITE.bellows, CITE.brijwasi],
     },
     {
-      h2: 'Errores comunes en el equilibrio a una pierna',
+      h2: '¿Cuáles son los errores comunes en el equilibrio a una pierna?',
       paragraphs: [
         'Mirar al piso. Tus ojos deben estar en un punto fijo a la altura de la vista. Mirar hacia abajo lleva tu peso hacia adelante y hace el ejercicio más fácil, y así pierde su sentido.',
         'Bloquear la rodilla de apoyo. Una ligera flexión mantiene activos los músculos. Con la rodilla bloqueada, la carga pasa a la articulación en lugar de a los músculos que la rodean.',

@@ -82,7 +82,7 @@ export const HEEL_PAIN_AT_NIGHT_ES: Guide = {
       cites: [CITE.guideline],
     },
     {
-      h2: 'Férulas nocturnas: qué hacen y cuándo ayudan',
+      h2: '¿Las férulas nocturnas ayudan con el dolor de talón?',
       keyFact: 'La guía de 2023 para el dolor de talón les da a las férulas nocturnas un grado A, su grado más alto de evidencia, para la fascitis plantar, usadas normalmente de uno a tres meses (Koc y colegas, 2023).',
       paragraphs: [
         'Una férula nocturna es un aparato que mantiene el tobillo a 90\u00A0grados mientras duermes. La idea es evitar que la pantorrilla y la fascia plantar se acorten durante la noche, para que el primer paso de la mañana duela menos.',

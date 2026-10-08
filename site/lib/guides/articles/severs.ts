@@ -84,7 +84,7 @@ export const SEVERS_EN: Guide = {
       cites: [CITE.wiegerinck],
     },
     {
-      h2: 'Heel cups and insoles',
+      h2: 'Do heel cups and insoles help Sever\'s disease?',
       keyFact: 'A crossover trial of 51 boys found a heel cup cut pain by about 80 percent versus a heel wedge, suggesting impact absorption matters more than the angle of the heel lift (Perhamre and colleagues, 2011).',
       paragraphs: [
         "Heel cups are among the most practical interventions for Sever's disease. They cushion the heel, absorb impact and reduce the peak forces reaching the growth plate. The Perhamre crossover trial found that a heel cup reduced pain by about 80 percent compared to a heel wedge in 51 boys, which suggests that impact absorption at the heel matters more than simply changing the heel angle.",
@@ -94,7 +94,7 @@ export const SEVERS_EN: Guide = {
       cites: [CITE.perhamreHeelCup, CITE.jamesSever],
     },
     {
-      h2: 'Calf stretching and strengthening',
+      h2: 'Does calf stretching help Sever\'s disease?',
       paragraphs: [
         'Tight calf muscles increase the pull on the growth plate, and calf tightness is one of the recognized risk factors for calcaneal apophysitis. Stretching the gastrocnemius (the outer calf muscle, stretched with the knee straight) and the soleus (the deeper calf muscle, stretched with the knee bent) is a standard recommendation.',
         "In the Wiegerinck trial, the exercise group performed an eccentric calf strengthening program under physiotherapist supervision. This group improved as much as the heel raise and wait-and-see groups. Stretching and gentle strengthening are safe and may help by reducing the traction on the growth plate, but the evidence does not show them to be superior to heel cups or load management alone.",

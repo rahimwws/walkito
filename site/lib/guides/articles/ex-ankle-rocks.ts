@@ -79,7 +79,7 @@ export const EX_ANKLE_ROCKS: Guide = {
       ],
     },
     {
-      h2: 'Common mistakes with ankle rocks',
+      h2: 'What are the common mistakes with ankle rocks?',
       paragraphs: [
         'Letting the heel lift. The heel must stay flat throughout every rep. If it lifts, you have passed the end of your range and the exercise loses its point. Rock only as far as the heel allows.',
         'Turning the foot outward. The foot should point straight ahead. External rotation lets the ankle sidestep its tight spot. Keep the second toe aimed at the wall.',

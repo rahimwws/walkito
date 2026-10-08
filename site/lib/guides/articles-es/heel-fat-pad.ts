@@ -82,7 +82,7 @@ export const HEEL_FAT_PAD_ES: Guide = {
       cites: [CITE.fatPadReview, CITE.yiFatPad],
     },
     {
-      h2: 'Qué ayuda: amortiguación, vendaje y calzado',
+      h2: '¿Qué ayuda con el dolor de la almohadilla grasa del talón?',
       keyFact: 'Un solo reporte de caso encontró alivio del dolor con taloneras de gel de silicona al mes y a los tres meses, pero ningún ensayo aleatorizado ha probado taloneras o vendaje para esta condición (Chang y colegas, 2022).',
       paragraphs: [
         'Los primeros pasos más recomendados para el síndrome de la almohadilla grasa del talón son externos: taloneras viscoelásticas, plantillas acolchadas y zapatos con suelas gruesas que absorban el impacto. Su objetivo es reemplazar la amortiguación que la almohadilla ya no proporciona.',

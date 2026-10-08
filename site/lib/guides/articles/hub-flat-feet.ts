@@ -107,7 +107,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
       cites: [CITE.guideline],
     },
     {
-      h2: 'Exercises for flat feet',
+      h2: 'Which exercises help flat feet?',
       paragraphs: [
         'Exercise for flat feet focuses on the muscles that support the arch from below (the intrinsic foot muscles) and the muscles higher up that control how the foot lands (the calf, the hip). The best evidence so far comes from a trial of 52 people with flexible flat feet where six weeks of combined exercise changed arch shape more than in a control group. That trial included short-foot work, ankle exercises, hip strengthening and stretching, done together.',
         'A 2024 review of short-foot training on its own was less encouraging: it found no clear change overall, and an improvement in one arch measure only in programs longer than six weeks. The takeaway is that a combined program works better than one exercise in isolation, and patience matters.',

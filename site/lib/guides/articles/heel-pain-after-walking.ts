@@ -73,7 +73,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
       cites: [CITE.waters],
     },
     {
-      h2: 'The exercises that help heel pain after walking',
+      h2: 'Which exercises help heel pain after walking?',
       keyFact: 'A systematic review found that both plantar fascia stretching and calf stretching reduced pain in plantar fasciitis more than no stretching at all (Siriphorn and Eksakulkla, 2020).',
       paragraphs: [
         'The exercises are the same ones the 2023 guideline recommends for plantar fasciitis. The guideline gives stretching its top grade, **A**, and strength training a **B**. Both are recommended. A systematic review found that plantar fascia stretching and calf stretching both reduced pain compared with no stretching (Siriphorn and Eksakulkla, 2020).',
@@ -143,7 +143,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
       cites: [CITE.guideline, CITE.siriphorn, CITE.rathleff, CITE.riddle],
     },
     {
-      h2: 'How to manage walking distance when your heel hurts',
+      h2: 'How far should you walk when your heel hurts?',
       paragraphs: [
         'The goal is not to stop walking. It is to find the distance your heel can handle without flaring the next morning, and then build from there.',
         'A practical approach: walk a distance that keeps morning pain the next day at or below its current baseline. If your usual morning score is 4 out of 10 and a 30-minute walk pushes it to 6 the following morning, that walk was too much. Shorten it until the morning score stays stable. Then add five minutes every week or two, as long as morning pain does not spike.',

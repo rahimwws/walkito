@@ -86,7 +86,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_ES: Guide = {
       cites: [CITE.riddle, CITE.guideline],
     },
     {
-      h2: 'Errores comunes en el estiramiento de la fascia plantar',
+      h2: '¿Cuáles son los errores comunes en el estiramiento de la fascia plantar?',
       paragraphs: [
         'Jalar los dedos con demasiada fuerza. El estiramiento debe sentirse firme bajo el arco, no doloroso. Si haces muecas de dolor, ya te pasaste del rango útil. Afloja hasta sentir un tirón sin filo.',
         'Sentirlo en la pantorrilla en vez del arco. Si el estiramiento se siente sobre todo en la pantorrilla, la rodilla está demasiado estirada o estás jalando muy fuerte. Cruza el pie más arriba sobre la otra rodilla para que el tobillo se relaje, y concéntrate en doblar los dedos hacia atrás, no todo el pie.',

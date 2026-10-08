@@ -75,7 +75,7 @@ export const EX_TOE_SPREAD_ES: Guide = {
       cites: [CITE.gooding],
     },
     {
-      h2: 'Errores comunes al separar los dedos',
+      h2: '¿Cuáles son los errores comunes al separar los dedos?',
       paragraphs: [
         'El error más común es levantar los dedos del piso en lugar de separarlos hacia los lados. La meta es abrirlos en horizontal, no levantarlos. Mantén los dedos tocando el piso suavemente.',
         'Otro error es encoger los dedos mientras intentas separarlos. Pasa cuando el cerebro todavía no logra separar el movimiento de abrir del movimiento de doblar. Mejora con la práctica. Intenta separarlos mirándote los dedos, así ves lo que de verdad está pasando.',

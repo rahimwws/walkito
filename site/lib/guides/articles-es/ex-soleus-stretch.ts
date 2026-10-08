@@ -71,7 +71,7 @@ export const EX_SOLEUS_STRETCH_ES: Guide = {
       ],
     },
     {
-      h2: 'Errores comunes en el estiramiento de sóleo',
+      h2: '¿Cuáles son los errores comunes en el estiramiento de sóleo?',
       paragraphs: [
         'No doblar lo suficiente la rodilla. Una flexión ligera no alcanza para aflojar el gastrocnemio. Necesitas doblarla de verdad, lo bastante para ver que la rodilla de atrás avanza por encima de los dedos.',
         'Dejar que el talón se levante. En cuanto el talón se despega del piso, el estiramiento desaparece. Apoya bien el talón y deja que la rodilla avance por encima del pie.',

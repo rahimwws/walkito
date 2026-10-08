@@ -51,7 +51,7 @@ export const SHIN_SPLINTS_ES: Guide = {
       cites: [CITE.mtssReview, CITE.winters, CITE.moen],
     },
     {
-      h2: 'Los ejercicios, con dosis de inicio',
+      h2: '¿Qué ejercicios ayudan con la periostitis tibial y cuánto hacer?',
       paragraphs: [
         'Son ejercicios del catálogo de la app que coinciden con los músculos y factores de riesgo que aparecen en la investigación sobre la periostitis tibial. Los estiramientos de pantorrilla y las elevaciones de talón son los mismos de [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/), y trabajan los mismos tejidos. Son dosis de inicio, no una indicación médica. Todas las etiquetas de evidencia de abajo son **inicial**, porque ningún ejercicio de esta lista ha demostrado acortar la recuperación de la periostitis tibial en un ensayo. [Cómo escribimos estas guías](/es/sobre-walkito/).',
         'Si marcas la tibia como adolorida en el check-in, Walkito te da movilidad de tobillo y automasaje plantar. Las elevaciones de dedos aparecen en el plan general como ejercicio complementario a partir del nivel 2, turnándose con la movilidad de tobillo. No hay un programa específico para la periostitis tibial. Si algún ejercicio sube tu dolor a **6/10 o más**, detente por hoy.',

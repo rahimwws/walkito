@@ -90,7 +90,7 @@ export const BALL_OF_FOOT_ES: Guide = {
       ],
     },
     {
-      h2: 'Los ejercicios',
+      h2: '¿Qué ejercicios ayudan con el dolor en la planta del pie (metatarsalgia)?',
       paragraphs: [
         'Estos ejercicios atacan dos lados del problema: la fuerza de los dedos y de los músculos intrínsecos del pie (para repartir la carga al impulsarte) y la flexibilidad de la pantorrilla (para que la parte delantera del pie no se sobrecargue). Ninguno se ha probado en un ensayo aleatorizado específicamente para la metatarsalgia. Cuando tocas la zona de la planta delantera en el mapa de dolor de Walkito durante un check-in, la sesión de alivio te da separación de dedos y estiramiento plantar. La zona de los dedos te da separación de dedos y pie corto sentado.',
       ],

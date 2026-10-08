@@ -83,7 +83,7 @@ export const FLAT_FEET_ES: Guide = {
       ],
     },
     {
-      h2: 'Los ejercicios para el pie plano, con dosis de inicio',
+      h2: '¿Qué ejercicios ayudan con el pie plano y cuánto hacer?',
       paragraphs: [
         'Los ejercicios para el pie plano en Walkito empiezan con recoger la toalla y la elevación del dedo gordo, y después suben por tres versiones del pie corto. La separación de dedos, la inversión con banda, el equilibrio a una pierna, la abducción de cadera y los estiramientos de pantorrilla completan el resto. Son las dosis de inicio de Walkito, no una indicación médica. Hazlos descalzo. [Cómo escribimos estas guías](/es/sobre-walkito/).',
         'El pie corto es la base del trabajo del arco. Acortas el pie llevando la parte delantera del pie hacia el talón, para que el arco suba, sin encoger los dedos. El pie corto, el fortalecimiento de cadera y los estiramientos son lo que probó el ensayo. Recoger la toalla, la elevación del dedo gordo, la separación de dedos, la inversión con banda y el equilibrio a una pierna son añadidos de Walkito.',
@@ -312,7 +312,7 @@ export const HEEL_PAIN_ES: Guide = {
   toc: true,
   sections: [
     {
-      h2: 'Los ejercicios para la fascitis plantar, con dosis de inicio',
+      h2: '¿Qué ejercicios ayudan con la fascitis plantar y cuánto hacer?',
       paragraphs: [
         'Los ejercicios para la fascitis plantar en Walkito son estiramientos de la fascia plantar y de la pantorrilla, trabajo de fuerza para la pantorrilla que sube en pasos pequeños, y un automasaje plantar. Son las dosis de inicio de Walkito, no una indicación médica. [Cómo escribimos estas guías](/es/sobre-walkito/).',
         'El orden importa. Mientras el dolor sea tu meta, Walkito mantiene suave el trabajo de pantorrilla: primero elevaciones de talón sentado, después elevaciones de talón con dos pies, después una elevación de talón sostenida, un paso a la vez. Subes un paso cuando las dos últimas sesiones con él se sintieron fáciles. La elevación de talones con toalla es la que más carga la fascia plantar, así que solo entra cuando el dolor de la mañana ya bajó y la meta pasa a la fuerza de la pantorrilla. Si algún ejercicio sube tu dolor a **6/10 o más**, detente por hoy. Es el punto en el que Walkito termina una sesión.',

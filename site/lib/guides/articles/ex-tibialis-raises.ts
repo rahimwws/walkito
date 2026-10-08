@@ -34,7 +34,7 @@ export const EX_TIBIALIS_RAISES: Guide = {
       ],
     },
     {
-      h2: 'How to do a tibialis raise',
+      h2: 'How do you do a tibialis raise?',
       paragraphs: [
         'Stand with your back flat against a wall. Walk your feet forward about 30 centimeters (roughly a foot length) from the wall. Keep your heels on the ground. Lift the front of both feet as high as you can, pulling the toes toward your shins. Hold at the top for a beat. Lower slowly.',
         'The wall supports your weight so you can focus on the shin contraction. If you slide away from the wall, your feet are too far out.',
@@ -83,7 +83,7 @@ export const EX_TIBIALIS_RAISES: Guide = {
       ],
     },
     {
-      h2: 'Common mistakes with tibialis raises',
+      h2: 'What are the common mistakes with tibialis raises?',
       paragraphs: [
         'Feet too far from the wall. If the heels slide forward, you lose the wall support and the exercise turns into a balance challenge instead of a shin strengthener. About one foot-length away from the wall is right for most people.',
         'Rushing the reps. A slow, controlled lift and lower produces more muscle work than fast reps. Two seconds up, one-second hold, two seconds down is a good tempo.',

@@ -77,7 +77,7 @@ export const EX_HIP_ABDUCTION: Guide = {
       ],
     },
     {
-      h2: 'Common mistakes with standing hip abduction',
+      h2: 'What are the common mistakes with standing hip abduction?',
       paragraphs: [
         'Leaning the body to the opposite side is the most common mistake. When you lean away, the body uses momentum and side-bending instead of the gluteus medius. Stay upright. A smaller lift with a straight body is better than a high lift with a lean.',
         'Rotating the foot outward so the toes point to the ceiling is another mistake. This shifts the work to the hip flexors and the tensor fasciae latae instead of the gluteus medius. Keep the toes pointing forward or slightly downward.',

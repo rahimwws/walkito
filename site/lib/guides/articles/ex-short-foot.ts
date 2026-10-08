@@ -106,7 +106,7 @@ export const EX_SHORT_FOOT: Guide = {
       cites: [CITE.brijwasi],
     },
     {
-      h2: 'Common mistakes that make the short foot less effective',
+      h2: 'What mistakes make the short foot exercise less effective?',
       paragraphs: [
         'The most common mistake is curling the toes. If the toes flex and grip the floor, the exercise becomes a toe curl and the extrinsic flexors take over. Keep the toes long and relaxed. Some people find it helps to lift the toes briefly, contract the arch, then lay the toes back down.',
         'The second mistake is pushing the foot outward instead of shortening it. The movement should be straight back, ball toward heel, not side to side. The third is holding your breath. Breathe normally through each hold.',

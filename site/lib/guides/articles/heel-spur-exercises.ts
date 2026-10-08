@@ -60,7 +60,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       cites: [CITE.menzCoexistence, CITE.guideline],
     },
     {
-      h2: 'The stretches',
+      h2: 'Which stretches help heel spur pain?',
       keyFact: 'A systematic review found both calf stretching and plantar fascia stretching eased plantar fasciitis pain compared with no stretching (Siriphorn and Eksakulkla, 2020).',
       paragraphs: [
         'Stretching is the starting point. The 2023 guideline grades plantar fascia and calf stretching **A**, its top grade. A systematic review and meta-analysis of stretching for plantar fasciitis found that both calf stretching and plantar fascia stretching reduced pain compared with no stretching (Siriphorn and Eksakulkla, 2020). Start with these three.',
@@ -106,7 +106,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       cites: [CITE.guideline, CITE.siriphorn, CITE.digiovanni2003, CITE.riddle],
     },
     {
-      h2: 'The strengthening exercises',
+      h2: 'Which strengthening exercises help heel spur pain?',
       keyFact: 'In a trial of 48 people, the heel-raise group scored 29 points better on the Foot Function Index than the stretching-only group at three months (Rathleff and colleagues, 2015).',
       paragraphs: [
         'Stretching alone is often enough in the first few weeks. Once the morning pain starts settling, adding calf strengthening builds the capacity the heel chain needs. The guideline grades strength training **B**, its second-highest grade. In the only trial built to test heel raises for plantar fasciitis, 48 people were split into a loaded heel-raise group and a stretching-only group. The heel-raise group scored 29 points better on the Foot Function Index at three months (Rathleff and colleagues, 2015).',
@@ -165,7 +165,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
-      h2: 'How to progress through the exercises',
+      h2: 'How do you progress the heel spur exercises?',
       paragraphs: [
         'Progress by feel, not by calendar. The rule is: if the current level felt easy for two sessions in a row, move up one step. If morning pain is worse after a session, stay at the current level or step back.',
       ],

@@ -110,7 +110,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       cites: [CITE.latt, CITE.hansen],
     },
     {
-      h2: 'Exercises and stretches for plantar fasciitis',
+      h2: 'Which exercises and stretches help plantar fasciitis?',
       paragraphs: [
         'The exercises the guideline supports fall into two groups: stretching (grade A) and strength training (grade B). Stretching targets the plantar fascia and the calf. Strength training builds the calf\'s capacity to handle daily load without overloading the fascia.',
         '[Plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/) has the full list with starting doses, what each should feel like, and when to stop. [Calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/) goes deeper on the one exercise behind the main strength-training trial. Individual exercise pages cover each movement:',

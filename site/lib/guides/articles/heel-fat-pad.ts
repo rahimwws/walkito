@@ -73,7 +73,7 @@ export const HEEL_FAT_PAD_EN: Guide = {
       cites: [CITE.fatPadReview, CITE.yiFatPad],
     },
     {
-      h2: 'What helps: cushioning, taping, and footwear',
+      h2: 'What helps heel fat pad pain?',
       keyFact: 'A single case report found pain relief from silicone gel heel cups at one and three months, but no randomised trial has tested heel cups or taping for this condition (Chang and colleagues, 2022).',
       paragraphs: [
         'The most commonly recommended first steps for heel fat pad syndrome are external: viscoelastic heel cups, cushioned insoles, and shoes with thick, shock-absorbing soles. These aim to replace the cushioning the fat pad no longer provides.',

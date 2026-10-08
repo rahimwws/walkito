@@ -96,7 +96,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
       cites: [CITE.guideline],
     },
     {
-      h2: 'Ejercicios para el pie plano',
+      h2: '¿Qué ejercicios ayudan con el pie plano?',
       paragraphs: [
         'Los ejercicios para el pie plano se enfocan en los músculos que sostienen el arco desde abajo (los músculos intrínsecos del pie) y en los músculos más arriba que controlan cómo apoya el pie (la pantorrilla, la cadera). La mejor evidencia hasta ahora viene de un ensayo con 52\u00A0personas con pie plano flexible, en el que seis semanas de ejercicios combinados cambiaron la forma del arco más que en un grupo de control. Ese ensayo incluyó pie corto, ejercicios de tobillo, fortalecimiento de cadera y estiramientos, hechos juntos.',
         'Una revisión de 2024 sobre el pie corto por sí solo fue menos alentadora: no encontró un cambio claro en general, y solo una mejora en una medida del arco en programas de más de seis semanas. La conclusión es que un programa combinado funciona mejor que un solo ejercicio, y que la paciencia importa.',

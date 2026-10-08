@@ -38,7 +38,7 @@ export const EX_SINGLE_LEG_BALANCE: Guide = {
   toc: false,
   sections: [
     {
-      h2: 'How to do a single-leg balance hold',
+      h2: 'How do you do a single-leg balance hold?',
       paragraphs: [
         'Stand near a wall or counter. Lift one foot off the ground by bending the knee slightly. Look at a fixed point straight ahead. Let the standing foot wobble. That wobble is the point: the small muscles in the foot and ankle are working to keep you upright.',
         'Hold for as long as you can, up to 30 seconds, then switch sides. Three holds per side is a common dose. If you cannot hold for more than a few seconds, keep your fingertips on the wall and build up gradually.',
@@ -104,7 +104,7 @@ export const EX_SINGLE_LEG_BALANCE: Guide = {
       cites: [CITE.bellows, CITE.brijwasi],
     },
     {
-      h2: 'Common mistakes with single-leg balance',
+      h2: 'What are the common mistakes with single-leg balance?',
       paragraphs: [
         'Looking at the floor. Your eyes should be on a fixed point at eye level. Looking down shifts your weight forward and makes the exercise easier, which defeats the purpose.',
         'Locking the standing knee. A slight bend keeps the muscles active. A locked knee transfers the load to the joint rather than the muscles around it.',

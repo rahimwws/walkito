@@ -77,7 +77,7 @@ export const EX_TOE_SPREAD: Guide = {
       cites: [CITE.gooding],
     },
     {
-      h2: 'Common mistakes with the toe spread exercise',
+      h2: 'What are the common mistakes with the toe spread exercise?',
       paragraphs: [
         'Lifting the toes off the floor instead of spreading them sideways is the most common mistake. The goal is horizontal spread, not vertical lift. Keep the toes lightly touching the ground.',
         'Another mistake is curling the toes while trying to spread. This happens when the brain cannot yet separate the spreading movement from the flexion movement. It improves with practice. Try spreading while looking at your toes so you can see what is actually happening.',

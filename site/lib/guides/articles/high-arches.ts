@@ -70,7 +70,7 @@ export const HIGH_ARCHES_EN: Guide = {
       cites: [CITE.burnsCavus],
     },
     {
-      h2: 'Exercises for high arches',
+      h2: 'Which exercises help high arches?',
       keyFact: 'The 2023 heel pain guideline grades calf and plantar fascia stretching A and strength training B for plantar heel pain, the most common pain site in pes cavus (Koc and colleagues, 2023).',
       paragraphs: [
         'No trial has tested an exercise program designed specifically for pes cavus foot pain. The exercises below target the structures that are commonly tight or unstable in a high-arched foot: the calf, the plantar fascia, the ankle, and the intrinsic foot muscles. They are borrowed from the evidence for plantar fasciitis, ankle instability, and general foot conditioning, and labeled accordingly.',

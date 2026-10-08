@@ -81,7 +81,7 @@ export const SEVERS_ES: Guide = {
       cites: [CITE.wiegerinck],
     },
     {
-      h2: 'Taloneras y plantillas',
+      h2: '¿Las taloneras y plantillas ayudan con la enfermedad de Sever?',
       keyFact: 'Un ensayo cruzado con 51\u00A0niños varones encontró que una talonera redujo el dolor en un 80\u00A0por ciento frente a una cuña de talón, lo que sugiere que la absorción del impacto importa más que el ángulo del talón (Perhamre y colegas, 2011).',
       paragraphs: [
         'Las taloneras son una de las intervenciones más prácticas para la enfermedad de Sever. Amortiguan el talón, absorben el impacto y reducen las fuerzas de pico que llegan a la placa de crecimiento. El ensayo cruzado de Perhamre encontró que una talonera redujo el dolor en un 80\u00A0por ciento en comparación con una cuña de talón en 51\u00A0niños, lo que sugiere que la absorción del impacto en el talón importa más que simplemente cambiar el ángulo del talón.',
@@ -91,7 +91,7 @@ export const SEVERS_ES: Guide = {
       cites: [CITE.perhamreHeelCup, CITE.jamesSever],
     },
     {
-      h2: 'Estiramiento y fortalecimiento de la pantorrilla',
+      h2: '¿El estiramiento de pantorrilla ayuda con la enfermedad de Sever?',
       paragraphs: [
         'Las pantorrillas tensas aumentan el tirón sobre la placa de crecimiento, y la rigidez de la pantorrilla es uno de los factores de riesgo reconocidos de la apofisitis calcánea. Estirar el gastrocnemio (el músculo más grande y externo de la pantorrilla, que se estira con la rodilla estirada) y el sóleo (el músculo más profundo, que se estira con la rodilla doblada) es una recomendación habitual.',
         'En el ensayo de Wiegerinck, el grupo de ejercicio hizo un programa de fortalecimiento excéntrico de la pantorrilla bajo supervisión de un fisioterapeuta. Este grupo mejoró tanto como los de la plantilla y los de esperar y observar. El estiramiento y el fortalecimiento suave son seguros y pueden ayudar al reducir la tracción sobre la placa de crecimiento, pero la evidencia no muestra que sean mejores que las taloneras o el manejo de la carga por sí solos.',

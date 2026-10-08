@@ -107,7 +107,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
       cites: [CITE.latt, CITE.hansen],
     },
     {
-      h2: 'Ejercicios y estiramientos para la fascitis plantar',
+      h2: '¿Qué ejercicios y estiramientos ayudan con la fascitis plantar?',
       paragraphs: [
         'Los ejercicios que respalda la guía son de dos tipos: estiramiento (grado A) y entrenamiento de fuerza (grado B). El estiramiento trabaja la fascia plantar y la pantorrilla. El entrenamiento de fuerza le da a la pantorrilla la capacidad de aguantar la carga del día sin sobrecargar la fascia.',
         'En [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/) está la lista completa con dosis de inicio, qué debe sentirse en cada uno y cuándo parar. [Elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/) explica a fondo el ejercicio del ensayo principal de fuerza. Cada ejercicio tiene su propia página:',

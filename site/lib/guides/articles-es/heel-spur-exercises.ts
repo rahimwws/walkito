@@ -45,7 +45,7 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
       cites: [CITE.menzCoexistence, CITE.guideline],
     },
     {
-      h2: 'Los estiramientos',
+      h2: '¿Qué estiramientos ayudan con el espolón calcáneo?',
       keyFact: 'Una revisión sistemática encontró que tanto estirar la pantorrilla como estirar la fascia plantar alivian el dolor de la fascitis plantar en comparación con no estirar (Siriphorn y Eksakulkla, 2020).',
       paragraphs: [
         'El estiramiento es el punto de partida. La guía de 2023 le da al estiramiento de la fascia plantar y de la pantorrilla un grado **A**, el más alto. Una revisión sistemática y metaanálisis de estiramiento para la fascitis plantar encontró que tanto el estiramiento de la pantorrilla como el de la fascia plantar redujeron el dolor en comparación con no estirar (Siriphorn y Eksakulkla, 2020). Empieza con estos tres.',
@@ -91,7 +91,7 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
       cites: [CITE.guideline, CITE.siriphorn, CITE.digiovanni2003, CITE.riddle],
     },
     {
-      h2: 'Los ejercicios de fortalecimiento',
+      h2: '¿Qué ejercicios de fortalecimiento ayudan con el espolón calcáneo?',
       keyFact: 'En un ensayo con 48\u00A0personas, el grupo de las elevaciones de talón anotó 29\u00A0puntos mejor en el Foot Function Index que el grupo que solo estiraba, a los tres meses (Rathleff y colegas, 2015).',
       paragraphs: [
         'El estiramiento solo suele ser suficiente en las primeras semanas. Cuando el dolor de la mañana empiece a ceder, añadir fortalecimiento de la pantorrilla aumenta la capacidad que la cadena del talón necesita. La guía le da al entrenamiento de fuerza un grado **B**, el segundo más alto. En el único ensayo diseñado para probar las elevaciones de talón en la fascitis plantar, 48\u00A0personas se dividieron en un grupo de elevaciones con carga y un grupo de solo estiramientos. El grupo de elevaciones de talón mejoró 29\u00A0puntos más en el Foot Function Index a los tres meses (Rathleff y colegas, 2015).',
@@ -150,7 +150,7 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
-      h2: 'Cómo progresar en los ejercicios',
+      h2: '¿Cómo progresar en los ejercicios para el espolón calcáneo?',
       paragraphs: [
         'Progresa por cómo se siente, no por el calendario. La regla es: si el nivel actual se sintió fácil durante dos sesiones seguidas, sube un paso. Si el dolor de la mañana es peor después de una sesión, quédate en el nivel actual o baja un paso.',
       ],

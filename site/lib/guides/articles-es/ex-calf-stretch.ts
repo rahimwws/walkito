@@ -72,7 +72,7 @@ export const EX_CALF_STRETCH_ES: Guide = {
       cites: [CITE.guideline, CITE.siriphorn],
     },
     {
-      h2: 'Errores comunes en el estiramiento de pantorrilla',
+      h2: '¿Cuáles son los errores comunes en el estiramiento de pantorrilla?',
       paragraphs: [
         'Doblar la rodilla de atrás. En cuanto la rodilla se dobla, el gastrocnemio se afloja y el estiramiento pasa al sóleo. Mantén la rodilla de atrás bien estirada todo el tiempo.',
         'Dejar que el talón de atrás se levante. Si el talón se despega del piso, la pantorrilla no se está estirando. Primero apoya bien el talón y después inclínate hacia adelante hasta sentir el estiramiento.',

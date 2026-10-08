@@ -59,7 +59,7 @@ export const HAMMER_TOE_ES: Guide = {
       cites: [CITE.gooding],
     },
     {
-      h2: 'Los ejercicios',
+      h2: '¿Qué ejercicios ayudan con el dedo en martillo?',
       paragraphs: [
         'Estos ejercicios apuntan a los músculos intrínsecos del pie y buscan mantener la flexibilidad en un dedo que todavía es flexible. Si tu dedo en martillo es rígido, estos ejercicios no van a cambiar la posición, pero los estiramientos suaves pueden ayudar con la rigidez y la molestia. Todas las etiquetas de evidencia de abajo son honestas: ningún ejercicio aquí se ha probado en un ensayo para dedos en martillo.',
       ],

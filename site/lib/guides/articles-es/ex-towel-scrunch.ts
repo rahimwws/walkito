@@ -84,7 +84,7 @@ export const EX_TOWEL_SCRUNCH_ES: Guide = {
       cites: [CITE.amaha],
     },
     {
-      h2: 'Errores comunes al recoger la toalla',
+      h2: '¿Cuáles son los errores comunes al recoger la toalla?',
       paragraphs: [
         'El error más común es levantar el talón del piso. Cuando el talón se levanta, la pantorrilla toma el control y los músculos del pie trabajan menos. Mantén el talón apoyado en cada repetición.',
         'Otro error es jalar demasiado rápido. Un tirón rápido de la toalla usa el impulso en lugar de la contracción del músculo. Jala despacio y mantén la toalla recogida los cinco segundos completos antes de soltar.',

@@ -37,7 +37,7 @@ export const EX_CALF_RAISES: Guide = {
       cites: [CITE.patelGastrocnemius],
     },
     {
-      h2: 'How to do a standing calf raise (double-leg)',
+      h2: 'How do you do a standing calf raise?',
       paragraphs: [
         'Stand with both feet flat on the floor, about hip-width apart. Hold a wall or chair for balance. Rise up onto the balls of your feet, pushing through the big toes. Hold for a beat at the top, then lower slowly over about three seconds. Both feet share the load.',
         'If you have access to a step, stand with the balls of your feet on the edge and let the heels hang slightly below on the way down. That extra range at the bottom stretches the calf a little more each rep. On the floor, the range is smaller but the exercise still works.',
@@ -122,7 +122,7 @@ export const EX_CALF_RAISES: Guide = {
       cites: [CITE.hebertLosier, CITE.rathleff],
     },
     {
-      h2: 'Common mistakes with calf raises',
+      h2: 'What are the common mistakes with calf raises?',
       paragraphs: [
         'Going too fast. A slow descent (about three seconds) is what builds strength. Bouncing at the bottom wastes the eccentric phase, which is the part that does most of the work for tendon adaptation.',
         'Rolling to the outside edge of the foot. The push should go through the big toe and the ball of the foot. If the ankle rolls outward, the calf cannot contract fully and the small muscles on the outside of the ankle take strain they are not built for.',

@@ -77,7 +77,7 @@ export const EX_CALF_STRETCH: Guide = {
       cites: [CITE.guideline, CITE.siriphorn],
     },
     {
-      h2: 'Common mistakes with the calf stretch',
+      h2: 'What are the common mistakes with the calf stretch?',
       paragraphs: [
         'Bending the back knee. The moment the knee bends, the gastrocnemius goes slack and the stretch moves to the soleus. Keep the back knee locked straight throughout the hold.',
         'Letting the back heel lift. If the heel comes off the floor, the calf is not being stretched. Press the heel down first, then lean forward until the stretch appears.',

@@ -168,7 +168,7 @@ export const BEST_APP_RU: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
-      h2: 'Как выбрать',
+      h2: 'Как выбрать подходящее приложение при плантарном фасциите?',
       paragraphs: [
         'Начинайте от ситуации, а не от списков функций.',
       ],

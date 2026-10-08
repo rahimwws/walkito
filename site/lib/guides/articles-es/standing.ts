@@ -49,7 +49,7 @@ export const STANDING_ES: Guide = {
       cites: [CITE.waters, CITE.riddle],
     },
     {
-      h2: 'Ejercicios para el dolor de pies por estar de pie, con dosis de inicio',
+      h2: '¿Qué ejercicios ayudan con el dolor de pies por estar de pie?',
       keyFact: 'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, A, y al entrenamiento de resistencia y de fuerza una B (Koc y colegas, 2023).',
       paragraphs: [
         'Estos ejercicios trabajan la pantorrilla, la fascia plantar y los músculos pequeños que sostienen el arco. Son las dosis de inicio de Walkito, no una indicación médica. Si el dolor está cerca del talón y sigue el patrón de dolor por la mañana de la fascitis plantar, la lista completa está en [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/). [Cómo escribimos estas guías](/es/sobre-walkito/).',

@@ -72,7 +72,7 @@ export const ACHILLES_EN: Guide = {
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
     {
-      h2: 'The exercises, with starting doses',
+      h2: 'Which exercises help Achilles tendonitis, and how much should you do?',
       paragraphs: [
         'The exercises below progress from low-load to high-load, starting with seated heel raises and working up through the ladder. These are Walkito\'s starting doses alongside the research protocols. [How these guides are written](/about/).',
         'For insertional Achilles pain, every exercise that uses a step should be done at floor level instead. That modification is explained in the insertional section below.',

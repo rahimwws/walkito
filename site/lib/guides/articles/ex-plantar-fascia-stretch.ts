@@ -98,7 +98,7 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
       cites: [CITE.riddle, CITE.guideline],
     },
     {
-      h2: 'Common mistakes with the plantar fascia stretch',
+      h2: 'What are the common mistakes with the plantar fascia stretch?',
       paragraphs: [
         'Pulling the toes too hard. The stretch should feel firm under the arch, not painful. If you are wincing, you are past the useful range. Ease back until you feel a pull without a sharp edge.',
         'Feeling it in the calf instead of the arch. If the stretch is mostly in the calf, the knee is too straight or the pull is too aggressive. Cross the foot higher on the opposite knee so the ankle relaxes, and focus on the toes bending back rather than the whole foot.',

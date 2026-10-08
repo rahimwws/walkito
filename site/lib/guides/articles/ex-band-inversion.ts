@@ -76,7 +76,7 @@ export const EX_BAND_INVERSION: Guide = {
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
     {
-      h2: 'Common mistakes with the band inversion exercise',
+      h2: 'What are the common mistakes with the band inversion exercise?',
       paragraphs: [
         'The most common mistake is rotating the whole leg instead of just the foot. When the hip rotates inward to turn the foot, the tibialis posterior does almost nothing. Keep the knee pointing straight ahead. Only the foot moves at the ankle.',
         'Another mistake is using a band that is too strong. The tibialis posterior is a small, deep muscle. A heavy band forces the larger muscles to take over. Start with a light band and focus on feeling the work along the inner ankle and arch.',

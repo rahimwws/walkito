@@ -76,7 +76,7 @@ export const EX_BIG_TOE_LIFT: Guide = {
       ],
     },
     {
-      h2: 'Common mistakes with the big toe lift',
+      h2: 'What are the common mistakes with the big toe lift?',
       paragraphs: [
         'The most common mistake is lifting all five toes together. If all the toes go up at once, the exercise becomes a general toe extension and the independent control is lost. Press the smaller toes down with your fingers if needed until the separation develops.',
         'Another mistake is using the shin muscle (tibialis anterior) to lift the big toe by pulling the whole foot upward. Keep the foot flat. Only the big toe moves.',

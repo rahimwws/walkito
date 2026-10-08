@@ -64,7 +64,7 @@ export const ARCH_PAIN_EN: Guide = {
       cites: [CITE.guideline, CITE.posteriorTibialReview],
     },
     {
-      h2: 'Exercises that help arch pain',
+      h2: 'Which exercises help arch pain?',
       keyFact: 'In the 2023 heel pain guideline, plantar fascia and calf stretching earn the top evidence grade, A, while strength training is graded one level lower, B (Koc and colleagues, 2023).',
       paragraphs: [
         'The exercises below target the arch itself and the calf muscles that pull on it. They apply best when arch pain is related to plantar fasciitis, flat feet, or general overuse. For PTTD or nerve-related arch pain, a clinician should direct the exercise plan. If any exercise takes your pain to **6/10 or more**, stop for the day.',

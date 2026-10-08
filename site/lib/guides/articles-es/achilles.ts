@@ -72,7 +72,7 @@ export const ACHILLES_ES: Guide = {
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
     {
-      h2: 'Los ejercicios, con dosis de inicio',
+      h2: '¿Qué ejercicios ayudan con la tendinitis de Aquiles y cuánto hacer?',
       paragraphs: [
         'Los ejercicios de abajo van de poca carga a mucha carga, empezando con elevaciones de talón sentado y subiendo por la escalera. Son las dosis de inicio de Walkito junto a los protocolos de investigación. [Cómo escribimos estas guías](/es/sobre-walkito/).',
         'Para el dolor de Aquiles insercional, todo ejercicio que use un escalón se debe hacer a nivel del piso. Ese cambio está explicado en la sección sobre el dolor insercional, más abajo.',

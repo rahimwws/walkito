@@ -62,7 +62,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
       cites: [CITE.hebertLosier],
     },
     {
-      h2: 'How to do the calf raise test at home',
+      h2: 'How do you do the calf raise test at home?',
       paragraphs: [
         'You do not need an incline board. Standing on flat ground gives a slightly easier test, so your count may be a few reps higher than the published norms. That is fine for tracking change over time and comparing left to right.',
         'Stand near a wall with your fingertips touching it at shoulder height. Lift one foot. Set a metronome app to 60 beats per minute. On the first beat, rise onto your toes as high as you can. On the second beat, lower your heel back to the floor. Keep going until you cannot maintain the pace, your heel barely lifts, or your knee bends.',
@@ -136,7 +136,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
       cites: [CITE.guideline, CITE.rathleff, CITE.achillesGuideline, CITE.madeley],
     },
     {
-      h2: 'How to improve a low calf raise score',
+      h2: 'How can you improve a low calf raise score?',
       paragraphs: [
         'The exercises that build calf endurance for rehab are the same ones that raise your test score. Start at the level that matches where you are now, and move up once two sessions in a row feel easy.',
         'If you can do fewer than 10 single-leg raises, start with seated or double-leg standing raises. Move to a heel raise hold to build isometric endurance, then to single-leg raises on the floor. Adding a step increases range. Adding a backpack increases load. See [calf raises](/exercises/calf-raises/) for the basic movement, [towel heel raise](/exercises/towel-heel-raise/) for the version that also loads the plantar fascia, and [eccentric heel drops](/exercises/eccentric-heel-drops/) for the Achilles-focused variant.',

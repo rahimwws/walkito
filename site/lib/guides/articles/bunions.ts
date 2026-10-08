@@ -53,7 +53,7 @@ export const BUNIONS_EN: Guide = {
       cites: [CITE.abdalbary, CITE.tehraninasr],
     },
     {
-      h2: 'The exercises',
+      h2: 'Which exercises help bunions?',
       paragraphs: [
         'These exercises target the abductor hallucis and the smaller intrinsic foot muscles. The goal is to restore muscle support around the first metatarsophalangeal joint. None will reverse the bony deformity, but two of them have trial support for improving muscle size and reducing symptoms in mild hallux valgus.',
       ],

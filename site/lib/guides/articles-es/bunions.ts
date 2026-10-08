@@ -53,7 +53,7 @@ export const BUNIONS_ES: Guide = {
       cites: [CITE.abdalbary, CITE.tehraninasr],
     },
     {
-      h2: 'Los ejercicios',
+      h2: '¿Qué ejercicios ayudan con los juanetes?',
       paragraphs: [
         'Estos ejercicios apuntan al abductor del dedo gordo y a los músculos intrínsecos más pequeños del pie. El objetivo es restaurar el soporte muscular alrededor de la articulación metatarsofalángica del dedo gordo. Ninguno revertirá la deformidad ósea, pero dos de ellos tienen respaldo en ensayos para mejorar el tamaño muscular y reducir los síntomas en el hallux valgus leve.',
       ],

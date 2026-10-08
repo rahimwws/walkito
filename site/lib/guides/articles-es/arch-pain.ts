@@ -65,7 +65,7 @@ export const ARCH_PAIN_ES: Guide = {
       cites: [CITE.guideline, CITE.posteriorTibialReview],
     },
     {
-      h2: 'Ejercicios que ayudan al dolor de arco',
+      h2: '¿Qué ejercicios ayudan con el dolor de arco?',
       keyFact: 'La guía de 2023 para el dolor de talón le da a la fascia plantar y a la pantorrilla una A, su grado más alto, y al entrenamiento de fuerza un grado más bajo, B (Koc y colegas, 2023).',
       paragraphs: [
         'Los ejercicios de abajo se enfocan en el arco y en los músculos de la pantorrilla que tiran de él. Aplican mejor cuando el dolor de arco está relacionado con fascitis plantar, pie plano o sobreuso general. Para la DTTP o el dolor de arco por un nervio, un profesional de la salud debe dirigir el plan de ejercicios. Si algún ejercicio lleva tu dolor a **6/10 o más**, para por el día.',

@@ -59,7 +59,7 @@ export const HAMMER_TOE_EN: Guide = {
       cites: [CITE.gooding],
     },
     {
-      h2: 'The exercises',
+      h2: 'Which exercises help hammer toes?',
       paragraphs: [
         'These exercises target the intrinsic foot muscles and aim to maintain flexibility in a toe that is still flexible. If your hammer toe is rigid, these exercises will not change the position, but gentle stretching may help with stiffness and discomfort. All evidence labels below are honest: no exercise here has been tested in a hammer toe trial.',
       ],

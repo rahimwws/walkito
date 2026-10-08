@@ -69,7 +69,7 @@ export const EX_SOLEUS_STRETCH: Guide = {
       ],
     },
     {
-      h2: 'Common mistakes with the soleus stretch',
+      h2: 'What are the common mistakes with the soleus stretch?',
       paragraphs: [
         'Not bending the knee enough. A slight bend is not enough to release the gastrocnemius. You need a real bend, enough that you can see the back knee tracking forward over the toes.',
         'Letting the heel lift. The moment the heel comes off the floor, the stretch vanishes. Press the heel down and let the knee move forward over the foot.',

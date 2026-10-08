@@ -66,7 +66,7 @@ export const PTTD_ES: Guide = {
       cites: [CITE.posteriorTibialReview, CITE.kuligRCT, CITE.houckPTTD],
     },
     {
-      h2: 'Los ejercicios',
+      h2: '¿Qué ejercicios ayudan con la disfunción del tendón tibial posterior?',
       paragraphs: [
         'Los ejercicios de abajo trabajan el músculo tibial posterior y los músculos que sostienen el arco. La inversión con banda entrena el tibial posterior directamente. Las elevaciones de talón con énfasis en el arco cargan el tendón durante un movimiento funcional. El pie corto fortalece los músculos intrínsecos del pie que ayudan al arco. El estiramiento de pantorrilla aborda el hallazgo común de dorsiflexión reducida en personas con DTTP.',
         'Los programas de ejercicio de los ensayos también incluían estiramiento de pantorrilla y ortesis. Las ortesis no eran opcionales en ningún estudio. Si tienes DTTP, una ortesis con soporte de arco es parte del programa, no un sustituto del ejercicio ni al revés.',

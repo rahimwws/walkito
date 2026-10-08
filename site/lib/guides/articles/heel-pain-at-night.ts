@@ -97,7 +97,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
       cites: [CITE.guideline],
     },
     {
-      h2: 'Night splints: what they do and when they help',
+      h2: 'Do night splints help heel pain?',
       keyFact: 'The 2023 heel pain guideline grades night splints A, its top evidence grade, for plantar fasciitis, typically used for one to three months (Koc and colleagues, 2023).',
       paragraphs: [
         'A night splint is a brace that holds the ankle at 90 degrees while you sleep. The idea is to prevent the calf and plantar fascia from shortening overnight, so the first step in the morning is less painful.',

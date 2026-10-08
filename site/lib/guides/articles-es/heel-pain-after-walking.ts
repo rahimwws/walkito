@@ -73,7 +73,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
       cites: [CITE.waters],
     },
     {
-      h2: 'Los ejercicios que ayudan con el dolor de talón al caminar',
+      h2: '¿Qué ejercicios ayudan con el dolor de talón al caminar?',
       keyFact: 'Una revisión sistemática encontró que tanto el estiramiento de la fascia plantar como el de la pantorrilla redujeron más el dolor de la fascitis plantar que no estirar en absoluto (Siriphorn y Eksakulkla, 2020).',
       paragraphs: [
         'Los ejercicios son los mismos que la guía de 2023 recomienda para la fascitis plantar. La guía le da al estiramiento su grado más alto, **A**, y al entrenamiento de fuerza una **B**. Se recomiendan los dos. Una revisión sistemática encontró que tanto el estiramiento de la fascia plantar como el de la pantorrilla redujeron el dolor en comparación con no estirar (Siriphorn y Eksakulkla, 2020).',
@@ -143,7 +143,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
       cites: [CITE.guideline, CITE.siriphorn, CITE.rathleff, CITE.riddle],
     },
     {
-      h2: 'Cómo manejar la distancia al caminar cuando te duele el talón',
+      h2: '¿Cuánto deberías caminar si te duele el talón?',
       paragraphs: [
         'La meta no es dejar de caminar. Es encontrar la distancia que tu talón puede aguantar sin que empeore a la mañana siguiente, y después construir desde ahí.',
         'Un enfoque práctico: camina una distancia que mantenga el dolor de la mañana del día siguiente igual o por debajo de su nivel habitual. Si tu puntuación normal de la mañana es 4 de 10 y una caminata de 30\u00A0minutos la sube a 6 a la mañana siguiente, esa caminata fue demasiado. Acórtala hasta que la puntuación de la mañana se mantenga estable. Después añade cinco minutos cada una o dos semanas, siempre que el dolor de la mañana no se dispare.',

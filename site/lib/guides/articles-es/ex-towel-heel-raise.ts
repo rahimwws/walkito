@@ -37,7 +37,7 @@ export const EX_TOWEL_HEEL_RAISE_ES: Guide = {
       cites: [CITE.rathleff],
     },
     {
-      h2: 'Cómo hacer la elevación de talones con toalla',
+      h2: '¿Cómo hacer la elevación de talones con toalla?',
       paragraphs: [
         'Enrolla una toalla de manos pequeña en forma de cilindro, más o menos del ancho de tu puño. Ponla en la orilla de un escalón. Párate en un pie con los cinco dedos sobre la toalla y la parte delantera del pie sobre el escalón. Agárrate de una pared o un pasamanos para el equilibrio.',
         'Sube en tres segundos, empujando con el dedo gordo. Quédate arriba dos segundos. Baja en tres segundos y deja que el talón baje un poco por debajo del escalón. Ese ritmo lento es parte del protocolo. Las repeticiones rápidas bajan la carga sobre el tendón y la fascia.',
@@ -79,7 +79,7 @@ export const EX_TOWEL_HEEL_RAISE_ES: Guide = {
       cites: [CITE.rathleff],
     },
     {
-      h2: 'Errores comunes en la elevación de talones con toalla',
+      h2: '¿Cuáles son los errores comunes en la elevación de talones con toalla?',
       paragraphs: [
         'Ir demasiado rápido es el error más común. Bajar en tres segundos mantiene la pantorrilla en tensión el tiempo suficiente para ganar fuerza. Subir y bajar rebotando lo convierte en un ejercicio de cardio, no de fuerza.',
         'Si la toalla se resbala y solo quedan uno o dos dedos encima, baja la carga sobre la fascia. Los cinco dedos deben estar sobre la toalla. Si la toalla se sigue resbalando, dóblala más gruesa o usa una toalla de manos en vez de una de baño.',

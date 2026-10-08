@@ -145,7 +145,7 @@ export const VS_EXAKT_EN: Guide = {
       ],
     },
     {
-      h2: 'Conditions covered',
+      h2: 'Which conditions does each app cover?',
       keyFact: 'Walkito\'s exercises follow the 2023 heel pain guideline, which grades plantar fascia and calf stretching A and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
         'This is where Exakt is clearly stronger. Its rehab plans cover plantar fasciitis, Achilles tendinopathy, ankle sprains, hamstring strains, meniscus tears, runner\'s knee and more. If your pain is in your knee, hip or hamstring, Walkito does not have a plan for it.',
@@ -154,7 +154,7 @@ export const VS_EXAKT_EN: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
-      h2: 'Price comparison',
+      h2: 'How much do Walkito and Exakt Health cost?',
       paragraphs: [
         'Walkito costs $44.99 per year or $7.99 per week. The annual price works out to about $0.87 per week. No free trial is listed on the App Store, though the terms of use allow for introductory offers.',
         'Exakt costs $19.99 per month for rehab plans, with 3-month ($39.99) and 6-month ($59.99) options. Running training plans go up to $99.99 per year. Every subscription starts with a 7-day free trial.',
@@ -178,7 +178,7 @@ export const VS_EXAKT_EN: Guide = {
       ],
     },
     {
-      h2: 'Evidence base',
+      h2: 'What evidence is each app built on?',
       paragraphs: [
         'Exakt Health is certified as a medical device in the EU (Germany), which requires evidence of safety and intended purpose. The app is built by licensed sports physiotherapists. It states that its methods are evidence-based but does not list specific studies on its App Store listing or pricing page.',
         'Walkito lists its evidence sources on its website. Its exercises follow the 2023 clinical guideline for heel pain (Koc et al., JOSPT), the Rathleff 2015 trial on heavy heel raises, the Brijwasi 2023 trial on flat feet exercises, and others. Each exercise in the app carries an evidence level (Strong, Moderate, or Early) with a one-line explanation.',
@@ -187,7 +187,7 @@ export const VS_EXAKT_EN: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
-      h2: 'When to pick Exakt Health over Walkito',
+      h2: 'When is Exakt Health the better choice?',
       paragraphs: [
         'Pick Exakt Health if any of the following is true:',
       ],
@@ -201,7 +201,7 @@ export const VS_EXAKT_EN: Guide = {
       ],
     },
     {
-      h2: 'When to pick Walkito over Exakt Health',
+      h2: 'When is Walkito the better choice?',
       paragraphs: [
         'Pick Walkito if any of the following is true:',
       ],

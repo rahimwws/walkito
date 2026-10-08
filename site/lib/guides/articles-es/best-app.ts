@@ -168,7 +168,7 @@ export const BEST_APP_ES: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
-      h2: 'Cómo elegir',
+      h2: '¿Cómo elegir la app adecuada para la fascitis plantar?',
       paragraphs: [
         'Empieza por tu situación, no por la lista de funciones.',
       ],

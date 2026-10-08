@@ -66,7 +66,7 @@ export const STANDING_EN: Guide = {
       cites: [CITE.waters, CITE.riddle],
     },
     {
-      h2: 'The exercises for standing-related foot pain, with starting doses',
+      h2: 'Which exercises help feet that hurt from standing?',
       keyFact: 'The 2023 heel pain guideline grades plantar fascia and calf stretching A, its top grade, and resistance and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
         'These exercises target the calf, the plantar fascia and the small muscles that support the arch. They are Walkito\'s starting doses, not a prescription. If your pain is near the heel and follows the morning-pain pattern of plantar fasciitis, the fuller set of exercises is in [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/). [How these guides are written](/about/).',

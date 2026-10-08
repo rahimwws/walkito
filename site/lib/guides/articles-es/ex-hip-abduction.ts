@@ -75,7 +75,7 @@ export const EX_HIP_ABDUCTION_ES: Guide = {
       ],
     },
     {
-      h2: 'Errores comunes en la abducción de cadera de pie',
+      h2: '¿Cuáles son los errores comunes en la abducción de cadera de pie?',
       paragraphs: [
         'Inclinar el cuerpo hacia el lado contrario es el error más común. Cuando te inclinas, el cuerpo usa impulso y flexión lateral en lugar del glúteo medio. Mantente derecho. Es mejor subir menos con el cuerpo recto que subir mucho inclinándote.',
         'Otro error es girar el pie hacia afuera, con los dedos apuntando al techo. Así el trabajo pasa a los flexores de cadera y al tensor de la fascia lata en lugar del glúteo medio. Mantén los dedos apuntando al frente o un poco hacia abajo.',

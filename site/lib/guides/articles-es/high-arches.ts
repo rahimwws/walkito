@@ -71,7 +71,7 @@ export const HIGH_ARCHES_ES: Guide = {
       cites: [CITE.burnsCavus],
     },
     {
-      h2: 'Ejercicios para pie cavo',
+      h2: '¿Qué ejercicios ayudan con el pie cavo?',
       keyFact: 'La guía de 2023 para el dolor de talón le da al estiramiento de pantorrilla y fascia plantar una A y al entrenamiento de fuerza una B para el dolor de talón, el punto de dolor más común en el pie cavo (Koc y colegas, 2023).',
       paragraphs: [
         'Ningún ensayo ha probado un programa de ejercicios diseñado específicamente para el dolor de pie por pie cavo. Los ejercicios de abajo se enfocan en las estructuras que suelen estar tensas o inestables en un pie de arco alto: la pantorrilla, la fascia plantar, el tobillo y los músculos intrínsecos del pie. Están tomados de la evidencia para la fascitis plantar, la inestabilidad de tobillo y el acondicionamiento general del pie, y están etiquetados de acuerdo a eso.',

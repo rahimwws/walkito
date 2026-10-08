@@ -81,7 +81,7 @@ export const EX_ANKLE_ROCKS_ES: Guide = {
       ],
     },
     {
-      h2: 'Errores comunes en la movilidad de tobillo',
+      h2: '¿Cuáles son los errores comunes en la movilidad de tobillo?',
       paragraphs: [
         'Dejar que el talón se levante. El talón tiene que quedarse plano en cada repetición. Si se levanta, ya pasaste el final de tu rango y el ejercicio pierde su sentido. Avanza solo hasta donde el talón te deje.',
         'Girar el pie hacia afuera. El pie debe apuntar recto. Si gira hacia afuera, el tobillo esquiva su punto tenso. Mantén el segundo dedo apuntando a la pared.',

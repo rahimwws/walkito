@@ -74,7 +74,7 @@ export const EX_BIG_TOE_LIFT_ES: Guide = {
       ],
     },
     {
-      h2: 'Errores comunes al levantar el dedo gordo',
+      h2: '¿Cuáles son los errores comunes al levantar el dedo gordo?',
       paragraphs: [
         'El error más común es subir los cinco dedos juntos. Si todos los dedos suben a la vez, el ejercicio se vuelve una extensión general de los dedos y se pierde el control independiente. Si hace falta, sostén los dedos pequeños con los dedos de la mano hasta que aparezca la separación.',
         'Otro error es usar el músculo de la tibia (tibial anterior) para subir el dedo gordo, levantando todo el pie. Mantén el pie apoyado. Solo se mueve el dedo gordo.',

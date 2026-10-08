@@ -88,7 +88,7 @@ export const EX_TOWEL_SCRUNCH: Guide = {
       cites: [CITE.amaha],
     },
     {
-      h2: 'Common mistakes with towel scrunches',
+      h2: 'What are the common mistakes with towel scrunches?',
       paragraphs: [
         'The most common mistake is lifting the heel off the floor. When the heel lifts, the calf takes over and the foot muscles do less. Press the heel down throughout each rep.',
         'Another mistake is pulling too fast. A quick snatch of the towel uses momentum instead of muscle contraction. Pull slowly and hold the scrunch for the full five seconds before releasing.',

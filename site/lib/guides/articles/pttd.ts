@@ -59,7 +59,7 @@ export const PTTD_EN: Guide = {
       cites: [CITE.posteriorTibialReview, CITE.kuligRCT, CITE.houckPTTD],
     },
     {
-      h2: 'The exercises',
+      h2: 'Which exercises help posterior tibial tendon dysfunction?',
       paragraphs: [
         'The exercises below target the tibialis posterior muscle and the muscles that support the arch. Band inversion trains the tibialis posterior directly. Heel raises with a focus on arch lift load the tendon during a functional movement. Short foot strengthens the intrinsic muscles that help the arch. Calf stretching addresses the common finding of reduced ankle dorsiflexion in people with PTTD.',
         'The exercise programs in the trials also included calf stretching and orthoses. Orthoses were not optional in any study. If you have PTTD, an arch-supporting orthosis is part of the program, not a substitute for exercise or the other way around.',

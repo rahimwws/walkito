@@ -86,7 +86,7 @@ export const BALL_OF_FOOT_EN: Guide = {
       ],
     },
     {
-      h2: 'The exercises',
+      h2: 'Which exercises help ball of foot pain?',
       paragraphs: [
         'These exercises target two sides of the problem: toe and intrinsic foot strength (to share load during push-off) and calf flexibility (to stop the forefoot from being overloaded). None has been tested in a randomized trial for metatarsalgia specifically. When you tap the ball-of-foot zone on the Walkito pain map during a check-in, the relief session gives toe spreads and a plantar fascia stretch. The toes zone gives toe spreads and seated short foot work.',
       ],

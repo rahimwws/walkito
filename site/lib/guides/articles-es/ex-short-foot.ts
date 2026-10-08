@@ -100,7 +100,7 @@ export const EX_SHORT_FOOT_ES: Guide = {
       cites: [CITE.brijwasi],
     },
     {
-      h2: 'Errores comunes que le quitan efecto al pie corto',
+      h2: '¿Qué errores le quitan efecto al ejercicio de pie corto?',
       paragraphs: [
         'El error más común es encoger los dedos. Si los dedos se doblan y se aferran al piso, el ejercicio se vuelve un encogimiento de dedos y los flexores extrínsecos toman el control. Mantén los dedos largos y relajados. A algunas personas les ayuda levantar los dedos un momento, contraer el arco y luego volver a bajar los dedos.',
         'El segundo error es empujar el pie hacia afuera en lugar de acortarlo. El movimiento va derecho hacia atrás, de la parte delantera hacia el talón, no de lado a lado. El tercero es aguantar la respiración. Respira normal en cada repetición.',

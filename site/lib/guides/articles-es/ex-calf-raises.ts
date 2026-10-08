@@ -36,7 +36,7 @@ export const EX_CALF_RAISES_ES: Guide = {
       cites: [CITE.patelGastrocnemius],
     },
     {
-      h2: 'Cómo hacer elevaciones de talón de pie (con dos pies)',
+      h2: '¿Cómo hacer elevaciones de talón de pie (con dos pies)?',
       paragraphs: [
         'Párate con los dos pies apoyados en el piso, separados más o menos al ancho de la cadera. Apóyate en una pared o una silla para no perder el equilibrio. Sube sobre la parte delantera del pie, empujando con los dedos gordos. Quédate un momento arriba y baja despacio, en unos tres segundos. Los dos pies comparten la carga.',
         'Si tienes un escalón, párate con la parte delantera del pie en la orilla y deja que los talones bajen un poco más al bajar. Ese rango extra abajo estira la pantorrilla un poco más en cada repetición. En el piso el rango es menor, pero el ejercicio igual funciona.',
@@ -121,7 +121,7 @@ export const EX_CALF_RAISES_ES: Guide = {
       cites: [CITE.hebertLosier, CITE.rathleff],
     },
     {
-      h2: 'Errores comunes en las elevaciones de talón',
+      h2: '¿Cuáles son los errores comunes en las elevaciones de talón?',
       paragraphs: [
         'Ir demasiado rápido. Lo que construye fuerza es bajar despacio (unos tres segundos). Rebotar abajo desperdicia la fase excéntrica, que es la parte que hace la mayor parte del trabajo para que el tendón se adapte.',
         'Irte hacia el borde externo del pie. El empuje va por el dedo gordo y la parte delantera del pie. Si el tobillo se va hacia afuera, la pantorrilla no se contrae del todo y los músculos pequeños de la parte externa del tobillo cargan un esfuerzo para el que no están hechos.',

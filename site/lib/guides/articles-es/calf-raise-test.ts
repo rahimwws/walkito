@@ -52,7 +52,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
       cites: [CITE.hebertLosier],
     },
     {
-      h2: 'Cómo hacer el test de elevación de talón en casa',
+      h2: '¿Cómo hacer el test de elevación de talón en casa?',
       paragraphs: [
         'No necesitas una tabla inclinada. En el piso plano el test es un poco más fácil, así que tu número puede salir unas repeticiones más alto que los valores publicados. No pasa nada: sirve igual para ver cómo cambias con el tiempo y para comparar izquierda y derecha.',
         'Párate cerca de una pared y toca la pared con la punta de los dedos a la altura del hombro. Levanta un pie. Pon una app de metrónomo a 60\u00A0pulsaciones por minuto. En el primer pulso, sube en puntas lo más alto que puedas. En el segundo, baja el talón al piso. Sigue hasta que no puedas mantener el ritmo, el talón apenas suba o se te doble la rodilla.',
@@ -126,7 +126,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
       cites: [CITE.guideline, CITE.rathleff, CITE.achillesGuideline, CITE.madeley],
     },
     {
-      h2: 'Cómo mejorar un resultado bajo en el test de elevación de talón',
+      h2: '¿Cómo mejorar un resultado bajo en el test de elevación de talón?',
       paragraphs: [
         'Los ejercicios que construyen la resistencia de la pantorrilla en la rehabilitación son los mismos que suben tu resultado en el test. Empieza en el nivel que va con dónde estás ahora, y sube cuando dos sesiones seguidas se sientan fáciles.',
         'Si puedes hacer menos de 10 elevaciones a una pierna, empieza con elevaciones sentado o de pie con los dos pies. Pasa a la elevación de talón sostenida para construir resistencia isométrica, y después a elevaciones a una pierna en el piso. Hacerlas en un escalón aumenta el rango. Ponerte una mochila aumenta la carga. Mira [elevaciones de talón](/es/ejercicios/elevaciones-de-talon/) para el movimiento básico, [elevación de talones con toalla](/es/ejercicios/elevacion-de-talones-con-toalla/) para la versión que además carga la fascia plantar, y [excéntricos de talón](/es/ejercicios/excentricos-de-talon/) para la variante enfocada en el Aquiles.',

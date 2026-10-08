@@ -69,7 +69,7 @@ export const FLAT_FEET_EN: Guide = {
       ],
     },
     {
-      h2: 'The exercises for flat feet, with starting doses',
+      h2: 'Which exercises help flat feet, and how much should you do?',
       paragraphs: [
         'The exercises for flat feet in Walkito start with towel scrunches and big toe lifts, then move up through three versions of the short foot. Toe spreads, band turn-ins, a single-leg hold, hip abduction and calf stretches fill in around them. These are Walkito’s starting doses, not a prescription. Do them barefoot. [How these guides are written](/about/).',
         'The short foot is the core of the arch work. You shorten the foot by pulling the ball of the foot toward the heel, so the arch lifts, without curling the toes. Short-foot work, hip strengthening and stretching are what the trial tested. The towel scrunch, big toe lift, toe spread, band turn-in and single-leg hold are Walkito’s own additions.',
@@ -325,7 +325,7 @@ export const HEEL_PAIN_EN: Guide = {
   toc: true,
   sections: [
     {
-      h2: 'The exercises for plantar fasciitis, with starting doses',
+      h2: 'Which exercises help plantar fasciitis, and how much should you do?',
       paragraphs: [
         'The exercises for plantar fasciitis in Walkito are stretches for the plantar fascia and calf, calf strength work that builds up in small steps, and a foot roll. These are Walkito’s starting doses, not a prescription. A one-page summary is on [printable exercise sheets](/printable-exercise-sheets/). [How these guides are written](/about/).',
         'Order matters. While pain is your goal, Walkito keeps the calf work gentle: seated heel raises first, then heel raises on both feet, then a held heel raise, one step at a time. You move up a step once the last two sessions with it felt easy. The [towel heel raise](/exercises/towel-heel-raise/) loads the plantar fascia the hardest, so it only comes in once morning pain has come down and the goal moves on to calf strength. If any exercise takes your pain to **6/10 or more**, stop for the day. That is the point where Walkito ends a session.',

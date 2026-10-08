@@ -34,7 +34,7 @@ export const EX_TIBIALIS_RAISES_ES: Guide = {
       ],
     },
     {
-      h2: 'Cómo hacer una elevación de tibial anterior',
+      h2: '¿Cómo hacer una elevación de tibial anterior?',
       paragraphs: [
         'Párate con la espalda pegada a una pared. Avanza los pies unos 30\u00A0centímetros (más o menos el largo de un pie) desde la pared. Deja los talones en el piso. Levanta la parte delantera de los dos pies lo más alto que puedas, llevando los dedos hacia la tibia. Quédate un momento arriba. Baja despacio.',
         'La pared sostiene tu peso para que te concentres en el trabajo de la parte delantera de la pierna. Si te separas de la pared, tienes los pies demasiado adelante.',
@@ -83,7 +83,7 @@ export const EX_TIBIALIS_RAISES_ES: Guide = {
       ],
     },
     {
-      h2: 'Errores comunes en las elevaciones de tibial anterior',
+      h2: '¿Cuáles son los errores comunes en las elevaciones de tibial anterior?',
       paragraphs: [
         'Pies demasiado lejos de la pared. Si los talones se deslizan hacia adelante, pierdes el apoyo de la pared y el ejercicio se vuelve un reto de equilibrio en lugar de un ejercicio de fuerza para la parte delantera de la pierna. Para la mayoría, más o menos el largo de un pie desde la pared es lo correcto.',
         'Apurar las repeticiones. Subir y bajar despacio y con control hace trabajar más al músculo que las repeticiones rápidas. Dos segundos para subir, un segundo arriba y dos segundos para bajar es un buen ritmo.',

@@ -75,7 +75,7 @@ export const EX_BAND_INVERSION_ES: Guide = {
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
     {
-      h2: 'Errores comunes en la inversión con banda',
+      h2: '¿Cuáles son los errores comunes en la inversión con banda?',
       paragraphs: [
         'El error más común es girar toda la pierna en lugar de solo el pie. Cuando la cadera gira hacia adentro para girar el pie, el tibial posterior casi no trabaja. Mantén la rodilla apuntando al frente. Solo el pie se mueve en el tobillo.',
         'Otro error es usar una banda demasiado fuerte. El tibial posterior es un músculo pequeño y profundo. Una banda pesada hace que los músculos más grandes tomen el control. Empieza con una banda suave y concéntrate en sentir el trabajo a lo largo de la parte interna del tobillo y del arco.',

@@ -90,7 +90,7 @@ export const SHIN_SPLINTS_EN: Guide = {
       cites: [CITE.mtssReview, CITE.winters, CITE.moen],
     },
     {
-      h2: 'The exercises, with starting doses',
+      h2: 'Which exercises help shin splints, and how much should you do?',
       paragraphs: [
         'These are exercises from the app\'s catalogue that overlap with the muscles and risk factors identified in shin splints research. The calf stretches and heel raises are the same ones used in [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/), targeting the same tissues. They are starting doses, not a prescription. Every evidence label below is **early**, because no exercise on this list has been proven to shorten shin splint recovery in a trial. [How these guides are written](/about/).',
         'If you mark the shin as sore in the check-in, Walkito gives ankle rocks and foot roll. Toe raises appear in the general plan as an accessory from level 2 onward, rotating with ankle rocks. There is no dedicated shin splints program. If any exercise takes your pain to **6/10 or more**, stop for the day.',

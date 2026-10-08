@@ -145,7 +145,7 @@ export const VS_EXAKT_ES: Guide = {
       ],
     },
     {
-      h2: 'Lesiones que cubre cada una',
+      h2: '¿Qué lesiones cubre cada app?',
       keyFact: 'Los ejercicios de Walkito siguen la guía clínica de 2023 para el dolor de talón, que le da al estiramiento un grado A y al entrenamiento de fuerza un grado B (Koc y colegas, 2023).',
       paragraphs: [
         'Aquí Exakt es claramente mejor. Sus planes de rehabilitación cubren la fascitis plantar, la tendinopatía de Aquiles, los esguinces de tobillo, los desgarros de isquiotibiales, las roturas de menisco, la rodilla del corredor y más. Si el dolor está en la rodilla, la cadera o los isquiotibiales, Walkito no tiene un plan para eso.',
@@ -154,7 +154,7 @@ export const VS_EXAKT_ES: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
-      h2: 'Comparación de precios',
+      h2: '¿Cuánto cuestan Walkito y Exakt Health?',
       paragraphs: [
         'Walkito cuesta $44.99 al año o $7.99 a la semana. El precio anual sale a unos $0.87 por semana. No aparece una prueba gratis en el App Store, aunque los términos de uso permiten ofertas de introducción.',
         'Exakt cuesta $19.99 al mes para los planes de rehabilitación, con opciones de 3\u00A0meses ($39.99) y 6\u00A0meses ($59.99). Los planes de entrenamiento para correr llegan hasta $99.99 al año. Todas las suscripciones empiezan con una prueba gratis de 7\u00A0días.',
@@ -178,7 +178,7 @@ export const VS_EXAKT_ES: Guide = {
       ],
     },
     {
-      h2: 'Evidencia detrás de cada app',
+      h2: '¿En qué evidencia se basa cada app?',
       paragraphs: [
         'Exakt Health está certificada como dispositivo médico en la UE (Alemania), lo que exige evidencia de seguridad y de su uso previsto. La app la hicieron fisioterapeutas deportivos con licencia. Dice que sus métodos se basan en evidencia, pero no menciona estudios concretos en su ficha del App Store ni en su página de precios.',
         'Walkito publica sus fuentes de evidencia en su sitio web. Sus ejercicios siguen la guía clínica de 2023 para el dolor de talón (Koc y colegas, JOSPT), el ensayo de Rathleff de 2015 sobre elevaciones de talón con carga alta, el ensayo de Brijwasi de 2023 sobre ejercicios para el pie plano y otros. Cada ejercicio de la app lleva un nivel de evidencia (Fuerte, Moderada o Inicial) con una explicación de una línea.',
@@ -187,7 +187,7 @@ export const VS_EXAKT_ES: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
-      h2: 'Cuándo elegir Exakt Health en vez de Walkito',
+      h2: '¿Cuándo conviene elegir Exakt Health en vez de Walkito?',
       paragraphs: [
         'Elige Exakt Health si se cumple cualquiera de estas:',
       ],
@@ -201,7 +201,7 @@ export const VS_EXAKT_ES: Guide = {
       ],
     },
     {
-      h2: 'Cuándo elegir Walkito en vez de Exakt Health',
+      h2: '¿Cuándo conviene elegir Walkito en vez de Exakt Health?',
       paragraphs: [
         'Elige Walkito si se cumple cualquiera de estas:',
       ],
