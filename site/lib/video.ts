@@ -51,3 +51,34 @@ export function videoSchema(
       };
     });
 }
+
+/**
+ * `ImageObject` for each exercise still a guide shows, so image search can
+ * list it with its name and credit it to Walkito (the stills are frames from
+ * the app's own clips). Only stills that are on the page: the caller passes
+ * the exercises it renders with media. One object per still per page.
+ */
+export function imageSchema(
+  items: readonly { media?: string; name: string; alt?: string }[],
+  lang: Lang,
+  pageUrl: string,
+) {
+  const seen = new Set<string>();
+  return items
+    .filter((e): e is typeof e & { media: string } => Boolean(e.media))
+    .filter((e) => (seen.has(e.media) ? false : (seen.add(e.media), true)))
+    .map((e) => ({
+      '@context': 'https://schema.org',
+      '@type': 'ImageObject',
+      contentUrl: `${SITE_URL}/exercises/${e.media}@2x.webp`,
+      url: pageUrl,
+      name: e.name,
+      ...(e.alt ? { caption: e.alt } : {}),
+      inLanguage: lang,
+      width: 720,
+      height: 900,
+      creator: { '@type': 'Organization', name: 'Walkito', url: SITE_URL },
+      creditText: 'Walkito',
+      copyrightNotice: '© Walkito',
+    }));
+}
