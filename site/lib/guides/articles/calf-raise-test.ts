@@ -204,7 +204,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
     {
       q: 'What are signs of weak calves?',
       cites: [CITE.silbernagelHeelRise],
-      a: 'Weak calves often show up as quick fatigue on stairs or hills, a weaker push-off when walking or running, or wobbling during single-leg balance. The clearest objective sign is the single-leg calf raise test: a clear gap between your left and right leg is easier to trust than how the calf looks or feels, and rehabilitation commonly flags a gap of more than about 10 percent.',
+      a: 'Weak calves often show up as quick fatigue on stairs or hills, a weaker push-off when walking or running, or wobbling during single-leg balance. The clearest objective sign is the single-leg calf raise test: a clear gap between your left and right leg is easier to trust than how the calf looks or feels.',
     },
     {
       q: 'Where should you feel a calf raise?',

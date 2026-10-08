@@ -41,7 +41,7 @@ export const HAMMER_TOE_ES: Guide = {
     },
     {
       h2: '¿Cuál es la diferencia entre un dedo en martillo flexible y uno rígido?',
-      keyFact: 'Un estudio de 2022 con 20 adultos mayores con dedo en martillo o en garra encontró que los protectores de silicón moldeados a la medida redujeron de forma significativa la presión máxima en la punta del segundo dedo, tanto en casos flexibles como rígidos (Formosa y colegas, 2022).',
+      keyFact: 'En 20 adultos mayores con dedo en martillo o en garra, unos protectores de silicón a la medida redujeron la presión máxima en la punta del segundo dedo, en dedos flexibles y rígidos (Formosa y colegas, 2022).',
       paragraphs: [
         'Un dedo en martillo flexible todavía se puede enderezar a mano. La articulación se dobla pero no está contraída de forma permanente. Si el dedo se endereza cuando lo empujas, los ejercicios, los estiramientos y el calzado más ancho pueden ayudar a mantener esa movilidad y posiblemente frenar el avance.',
         'Un dedo en martillo rígido no se puede enderezar a mano. La articulación está fija. En este punto, los ejercicios y los estiramientos no van a cambiar la forma. El enfoque se desplaza a proteger la piel de la fricción con almohadillas, fundas de gel y zapatos con suficiente espacio sobre el dedo doblado.',

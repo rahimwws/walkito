@@ -41,7 +41,6 @@ export const NURSES_EN: Guide = {
     },
     {
       h2: 'Why do nurses get foot pain on 12-hour shifts?',
-      keyFact: 'In a case-control study of 50 cases and 100 controls, reduced ankle flexibility raised the odds of plantar fasciitis 23.3 times, the strongest risk factor, and standing most of the day raised them 3.6 times (Riddle and colleagues, 2003).',
       paragraphs: [
         'Three things combine on a nursing shift: prolonged standing, long walking distances and hard floors. Standing still loads the plantar fascia, calf muscles and heel pad without the pumping action that walking provides. Walking helps blood return from the legs, but nurses alternate unpredictably between standing still at a bedside and walking long corridors, so the calf pump never settles into a steady rhythm.',
         'A 2015 review of the occupational health literature found prolonged standing at work associated with musculoskeletal discomfort, fatigue and leg pain across many standing occupations, with nurses cited as one of the highest-risk groups. The review noted that cardiovascular strain and leg swelling increase with standing duration.',

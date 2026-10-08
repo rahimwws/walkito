@@ -150,6 +150,7 @@ export const SEVERS_ES: Guide = {
     },
     {
       q: '¿Qué se puede confundir con la enfermedad de Sever?',
+      cites: [CITE.wiegerinck],
       a: 'La irritación del tendón de Aquiles, una fractura por estrés del calcáneo y la bursitis retrocalcánea pueden verse parecidas en un niño que crece. Una prueba de apretar positiva (dolor al presionar los lados del talón), una edad entre 8 y 15 años, y un aumento reciente en el entrenamiento apuntan más a la enfermedad de Sever. Una lesión puntual o dolor que empeora en un punto específico necesita que un profesional descarte una fractura.',
     },
     {

@@ -153,6 +153,7 @@ export const SEVERS_EN: Guide = {
     },
     {
       q: "What can be mistaken for Sever's disease?",
+      cites: [CITE.wiegerinck],
       a: "Achilles tendon irritation, a calcaneal stress fracture, and retrocalcaneal bursitis can all look similar in a growing child. A positive squeeze test (pain when the sides of the heel are pressed together), an age of 8 to 15, and a recent jump in training point toward Sever's disease instead. A single injury, swelling, or pain worsening at one specific spot needs a clinician to rule out a fracture.",
     },
     {

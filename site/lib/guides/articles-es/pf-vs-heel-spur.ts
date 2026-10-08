@@ -86,7 +86,6 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
     },
     {
       h2: 'Si el espolón no es el problema, ¿qué es?',
-      keyFact: 'En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la dorsiflexión de tobillo reducida tuvo la razón de probabilidades más alta de todos los factores medidos, y estar de pie mucho tiempo multiplicó por 3,6 las probabilidades (Riddle y colegas, 2003).',
       paragraphs: [
         'El dolor suele venir de la fascia plantar y los tejidos que la rodean, no del hueso. La fascia plantar se une a la parte inferior del hueso del talón. Cuando se sobrecarga, sobre todo en alguien con la pantorrilla tensa, un IMC alto o muchas horas de pie, ese punto de unión se irrita. Esa irritación es la fascitis plantar.',
         'Una pantorrilla tensa es uno de los factores de riesgo más fuertes. En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, una dorsiflexión de tobillo reducida, es decir, cuánto puede subir el pie hacia la tibia, tuvo la razón de probabilidades más alta de todos los factores medidos. Estar de pie la mayor parte de la jornada laboral también fue significativo, con 3,6\u00A0veces las probabilidades (Riddle y colegas, 2003).',

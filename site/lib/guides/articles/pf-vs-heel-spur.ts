@@ -104,7 +104,6 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
     },
     {
       h2: 'If the spur is not the problem, what is?',
-      keyFact: 'In a case-control study of 50 people with plantar fasciitis and 100 without, reduced ankle dorsiflexion had the highest odds ratio of any factor measured, and prolonged standing raised the odds 3.6 times (Riddle and colleagues, 2003).',
       paragraphs: [
         'The pain usually comes from the plantar fascia and the tissues around it, not from the bone. The plantar fascia attaches to the bottom of the heel bone. When it is overloaded, especially in someone with a tight calf, high BMI or long hours on their feet, that attachment point becomes irritated. That irritation is plantar fasciitis.',
         'A tight calf is one of the strongest risk factors. In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion, how far the foot bends up toward the shin, had the highest odds ratio of any factor measured. Standing for most of the working day was also significant, at 3.6 times the odds (Riddle and colleagues, 2003).',

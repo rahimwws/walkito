@@ -36,7 +36,6 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
   sections: [
     {
       h2: 'Why does your heel hurt after walking?',
-      keyFact: 'In a case-control study of 50 people with plantar fasciitis and 100 without, reduced ankle dorsiflexion was the strongest risk factor, ahead of high body mass index and prolonged standing at work (Riddle and colleagues, 2003).',
       paragraphs: [
         'Walking loads the plantar fascia, the thick band of tissue under the foot, with every step. Each time the heel hits the ground and the foot rolls forward, the fascia stretches and absorbs force. In a healthy foot this is fine. But when the fascia is irritated or the calf is too tight to absorb its share, the load concentrates at the heel attachment.',
         'The result is pain that builds during or after a walk, especially a longer one than usual. The 2023 heel pain guideline lists two hallmark patterns for plantar fasciitis: first-step pain after rest, and pain that increases with prolonged weight-bearing activity. Walking is the most common prolonged weight-bearing activity there is.',
@@ -201,7 +200,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
     },
     {
       q: 'How do you get rid of heel pain right after a walk?',
-      a: 'Right after a walk, rest the foot, ice it for about 15 minutes, and avoid going straight back out barefoot on a hard floor. That eases the immediate ache, but it does not change the underlying cause. The exercises on this page, calf and fascia stretching plus gradual strength work, are what change how the heel handles the next walk.',
+      a: 'Right after a walk, rest the foot, put ice on the sore spot for a short while, and avoid going straight back out barefoot on a hard floor. That eases the immediate ache, but it does not change the underlying cause. The exercises on this page, calf and fascia stretching plus gradual strength work, are what change how the heel handles the next walk.',
     },
     {
       q: 'What causes heel pain in only one foot after walking?',

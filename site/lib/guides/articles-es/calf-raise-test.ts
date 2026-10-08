@@ -99,7 +99,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
     },
     {
       h2: '¿Tu pierna izquierda y la derecha deberían dar lo mismo?',
-      keyFact: 'En un estudio con 78\u00A0personas tras una rotura del tendón de Aquiles, la simetría promedio a los seis meses fue del 84\u00A0% en repeticiones pero solo del 61\u00A0% en trabajo total, lo que muestra que contar repeticiones puede subestimar un déficit (Silbernagel y colegas, 2010).',
+      keyFact: 'Tras una rotura del tendón de Aquiles, 78 personas tenían a los seis meses una simetría del 84 % contando repeticiones, pero solo del 61 % en trabajo total (Silbernagel y colegas, 2010).',
       paragraphs: [
         'Casi lo mismo, sí. En el estudio de Hebert-Losier, la mediana de la diferencia entre la derecha y la izquierda fue de una repetición, y el error de medición típico fue de unas dos repeticiones. Una diferencia tan pequeña es ruido.',
         'En la rehabilitación de la pierna, un índice de simetría entre extremidades (LSI) del 90\u00A0% o más es la referencia habitual de una función normal. El LSI es el lado más débil dividido entre el más fuerte, por 100. Menos del 90\u00A0% quiere decir que un lado es más de un 10\u00A0% más débil. Silbernagel y colegas usaron este umbral en 78 pacientes después de una rotura del tendón de Aquiles: a los 6\u00A0meses, los pacientes tenían en promedio un LSI del 84\u00A0% en repeticiones y solo del 61\u00A0% en trabajo total, lo que muestra que contar solo las repeticiones puede subestimar un déficit.',
@@ -194,7 +194,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
     {
       q: '¿Cuáles son las señales de una pantorrilla débil?',
       cites: [CITE.silbernagelHeelRise],
-      a: 'Una pantorrilla débil suele notarse como cansancio rápido en escaleras, un impulso más débil al caminar o correr, o tambaleo en equilibrio a una pierna. La señal objetiva más clara es el test de elevación de talón a una pierna: una diferencia clara entre tu lado izquierdo y el derecho es más confiable que cómo se ve la pantorrilla, y en rehabilitación una diferencia de más del 10 por ciento suele ser señal de alerta.',
+      a: 'Una pantorrilla débil suele notarse como cansancio rápido en escaleras, un impulso más débil al caminar o correr, o tambaleo en equilibrio a una pierna. La señal objetiva más clara es el test de elevación de talón a una pierna: una diferencia clara entre tu lado izquierdo y el derecho es más confiable que cómo se ve o se siente la pantorrilla.',
     },
     {
       q: '¿Dónde debo sentir la elevación de talón?',
