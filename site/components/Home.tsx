@@ -75,7 +75,10 @@ const APP = {
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   description:
     'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
-  availableLanguage: ['en', 'ru', 'es', 'pt', 'fr', 'it', 'de'],
+  // The languages of the build on the store (1.0.1). Portuguese, French,
+  // Italian and German come with 1.0.3: list them here, in the FAQ below and
+  // in lib/home/{pt,fr,it,de}.ts once it is live.
+  availableLanguage: ['en', 'ru', 'es'],
   featureList: [
     `Sessions of ${MIN_A}, ${MIN_B} or ${MIN_C} minutes, on ${DAYS_A}, ${DAYS_B} or ${DAYS_C} days a week`,
     'Each week built around one measurable focus goal; a goal reached moves to maintaining and the next takes its place',
@@ -223,7 +226,7 @@ const COPY: Record<Lang, HomeCopy> = {
         q: 'Is it medical advice?',
         a: 'No. Walkito is an exercise program. It doesn’t diagnose, and it isn’t a substitute for a clinician.',
       },
-      { q: 'What languages is it in?', a: 'English, Russian, Spanish, Portuguese, French, Italian and German.' },
+      { q: 'What languages is it in?', a: 'English, Russian and Spanish.' },
     ],
   },
 
@@ -306,7 +309,7 @@ const COPY: Record<Lang, HomeCopy> = {
         q: 'Это медицинская консультация?',
         a: 'Нет. Walkito даёт программу упражнений. Он не ставит диагноз и не заменяет врача.',
       },
-      { q: 'На каких языках приложение?', a: 'Английский, русский, испанский, португальский, французский, итальянский и немецкий.' },
+      { q: 'На каких языках приложение?', a: 'На английском, русском и испанском.' },
     ],
   },
 
@@ -389,7 +392,7 @@ const COPY: Record<Lang, HomeCopy> = {
         q: '¿Es un consejo médico?',
         a: 'No. Walkito es un programa de ejercicios. No diagnostica y no sustituye a un profesional de la salud.',
       },
-      { q: '¿En qué idiomas está?', a: 'En inglés, ruso, español, portugués, francés, italiano y alemán.' },
+      { q: '¿En qué idiomas está?', a: 'En inglés, ruso y español.' },
     ],
   },
 };
@@ -543,7 +546,9 @@ export function Home({ lang }: { lang: Lang }) {
           </div>
 
           <div className="hero-text">
-            <h1>
+            {/* The longer line's length sets the size on wide screens, so each
+                line stays whole in every language (globals.css, .hero-glass h1). */}
+            <h1 style={{ '--h1-len': Math.max(copy.h1a.length, copy.h1b.length) } as React.CSSProperties}>
               {copy.h1a}
               <span>{copy.h1b}</span>
             </h1>

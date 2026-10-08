@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: PATH,
     locale: 'ru_RU',
-    images: ['/ru/opengraph-image'],
+    images: ['/share/ru.jpg'],
     type: 'article',
   },
 };

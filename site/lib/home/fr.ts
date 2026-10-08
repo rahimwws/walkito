@@ -94,6 +94,6 @@ export const HOME_FR: HomeCopy = {
       q: 'Est-ce un avis médical\u00A0?',
       a: 'Non. Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé.',
     },
-    { q: 'En quelles langues est l’application\u00A0?', a: 'En sept langues\u00A0: anglais, russe, espagnol, portugais, français, italien et allemand.' },
+    { q: 'En quelles langues est l’application\u00A0?', a: 'En anglais, en russe et en espagnol.' },
   ],
 };

@@ -4735,3 +4735,24 @@ html[data-scrolled] .masthead-float .download {
   margin: 0 0 12px;
   font-size: 15px;
 }
+
+/*
+ * The hero headline, sized so its longer line fits the row in every language.
+ *
+ * The lines are the language's own ("Попробуйте план, созданный для ваших
+ * стоп." is 41 characters to the English 31), so one size would wrap some to
+ * four rows. On wide screens the size is the smaller of the design size and
+ * what the longer line needs: about 0.46em a character in Anton capitals,
+ * 0.54em in Oswald's Cyrillic. Phones keep the design size and wrap.
+ */
+@media (min-width: 761px) {
+  .hero-glass h1 {
+    --h1-em: 0.46;
+    font-size: min(clamp(48px, 7vw, 112px), calc(min(94vw, 1300px) / (var(--h1-len, 31) * var(--h1-em))));
+  }
+
+  :lang(ru) .hero-glass h1 {
+    --h1-em: 0.54;
+    font-size: min(clamp(40px, 7vw, 96px), calc(min(94vw, 1300px) / (var(--h1-len, 31) * var(--h1-em))));
+  }
+}

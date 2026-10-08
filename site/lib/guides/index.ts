@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 
 import { NEW_ARTICLE_PATHS, isFullLang, type NewLang } from '@/lib/i18n';
 import { EN_ONLY, ES_ARTICLES, RU_ARTICLES, OG_LOCALE, TRANSLATED, alternatesArticle, alternatesFor, isTranslatedPage, type EnglishPage, type Lang } from '@/lib/i18n';
+import { shareCard } from '@/lib/share';
 import { SITE_NAME, smartBannerContent, type AppScreen } from '@/lib/site';
 
 import { groupOf } from '@/lib/nav';
@@ -155,7 +156,3 @@ export function guideMetadata(guide: Guide): Metadata {
   };
 }
 
-/** The share card a page in this language points at. */
-function shareCard(lang: Guide['lang']): string {
-  return lang === 'ru' || lang === 'es' ? `/${lang}/opengraph-image` : '/opengraph-image';
-}

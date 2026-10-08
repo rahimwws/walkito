@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     siteName: 'Walkito',
     locale: OG_LOCALE.fr,
     type: 'website',
-    images: ['/opengraph-image'],
+    images: ['/share/en.jpg'],
   },
-  twitter: { card: 'summary_large_image', title, description, images: ['/opengraph-image'] },
+  twitter: { card: 'summary_large_image', title, description, images: ['/share/en.jpg'] },
 };
 
 export default function HomeFr() {

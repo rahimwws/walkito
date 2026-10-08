@@ -176,7 +176,7 @@ export function Footer({
         : lang === 'ru'
         ? [
             { href: CUSTOM_PAGES.exercises.ru, label: 'Библиотека упражнений' },
-            { href: '/ru/test-podema-na-noski/', label: 'Тест подъёма на носки' },
+            { href: '/ru/test-podema-na-noski/', label: 'Тест подъёма на носки' },
             { href: CUSTOM_PAGES.printables.ru, label: 'Листы для печати (PDF)' },
           ]
         : []),

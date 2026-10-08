@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: `Termos de uso | ${SITE_NAME}`,
     description: 'O que o app é, como funcionam os pagamentos e os limites do que ele afirma.',
     url: '/pt/termos/',
-    images: ['/opengraph-image'],
+    images: ['/share/en.jpg'],
     type: 'website',
   },
 };

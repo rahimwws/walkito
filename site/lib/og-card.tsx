@@ -2,14 +2,15 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 import { ImageResponse } from 'next/og';
+import sharp from 'sharp';
 
 /**
  * The share card: the home page's hero, flattened to 1200 x 630.
  *
  * Three of them and no more: English (every page that is not Russian or
- * Spanish), Russian and Spanish, drawn by `app/opengraph-image.tsx`,
- * `app/ru/opengraph-image.tsx` and `app/es/opengraph-image.tsx`. A card per
- * page was tried and dropped: the hero is the picture people recognise.
+ * Spanish), Russian and Spanish, built to /share/<lang>.jpg by `app/share` and
+ * named by `shareCard()` in lib/share.ts. A card per page was tried and
+ * dropped: the hero is the picture people recognise.
  *
  * The icon's blues falling to lilac, the phone with today's screen and our own
  * Dynamic Island, the app's "No pain today" card and streak capsule beside it,
@@ -19,8 +20,7 @@ import { ImageResponse } from 'next/og';
  * beside them). Anton has no Cyrillic, so Russian is set in Oswald.
  */
 
-export const OG_SIZE = { width: 1200, height: 630 };
-export const OG_CONTENT_TYPE = 'image/png';
+const OG_SIZE = { width: 1200, height: 630 };
 
 type CardLang = 'en' | 'ru' | 'es';
 
@@ -32,11 +32,6 @@ const WORDS: Record<CardLang, { a: string; b: string; noPain: string; get: strin
   es: { a: '¿Ya probaste de todo?', b: 'Prueba un plan hecho para tus pies.', noPain: 'Hoy no me duele', get: 'Descargar la app' },
 };
 
-export const OG_ALT: Record<CardLang, string> = {
-  en: 'Walkito: tried everything? Try a plan built for your feet.',
-  ru: 'Walkito: всё перепробовали? Попробуйте план, созданный для ваших стоп.',
-  es: 'Walkito: ¿ya probaste de todo? Prueba un plan hecho para tus pies.',
-};
 
 /** Phosphor's Fire, fill weight: the app's streak flame. */
 const FIRE =
@@ -72,7 +67,18 @@ function lineSize(text: string, lang: CardLang, max: number) {
   return Math.min(max, Math.floor(1100 / (text.length * em)));
 }
 
-export function ogCard(lang: CardLang) {
+/**
+ * The card as a JPEG. satori draws a PNG of about 320 KB, over the 300 KB
+ * WhatsApp is known to skip previews above; at this quality the gradient
+ * keeps no visible banding and the file is a third of that.
+ */
+export async function shareImage(lang: CardLang): Promise<Response> {
+  const png = Buffer.from(await ogCard(lang).arrayBuffer());
+  const jpeg = await sharp(png).jpeg({ quality: 88, mozjpeg: true, chromaSubsampling: '4:4:4' }).toBuffer();
+  return new Response(new Uint8Array(jpeg), { headers: { 'Content-Type': 'image/jpeg' } });
+}
+
+function ogCard(lang: CardLang) {
   const { anton, oswald, phone, icon, mascot } = load();
   const w = WORDS[lang];
   const display = lang === 'ru' ? 'Oswald' : 'Anton';

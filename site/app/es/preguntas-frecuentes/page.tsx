@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: 'es_MX',
     type: 'website',
-    images: ['/es/opengraph-image'],
+    images: ['/share/es.jpg'],
   },
 };
 

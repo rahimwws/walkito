@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-09-21',
     modifiedTime: PAGE_UPDATED.science,
-    images: ['/es/opengraph-image'],
+    images: ['/share/es.jpg'],
   },
 };
 

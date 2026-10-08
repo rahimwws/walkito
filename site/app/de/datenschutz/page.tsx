@@ -33,7 +33,7 @@ export default function DatenschutzDe() {
       <Prose className="shell prose">
         <h1>Datenschutz</h1>
 
-        <p className="updated">Zuletzt aktualisiert: 7. Oktober 2026</p>
+        <p className="updated">Zuletzt aktualisiert: 8. Oktober 2026</p>
         <p className="updated">
           Dies ist eine Übersetzung. Wenn sie von{' '}
           <a href="/privacy/">der englischen Fassung</a> abweicht, gilt die

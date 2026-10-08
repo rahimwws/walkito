@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-09-21',
     modifiedTime: PAGE_UPDATED.program,
-    images: ['/es/opengraph-image'],
+    images: ['/share/es.jpg'],
   },
 };
 

@@ -33,7 +33,7 @@ export default function ConfidentialiteFr() {
       <Prose className="shell prose">
         <h1>Confidentialité</h1>
 
-        <p className="updated">Dernière mise à jour : 7 octobre 2026</p>
+        <p className="updated">Dernière mise à jour : 8 octobre 2026</p>
         <p className="updated">
           Ceci est une traduction. Si elle diffère de{' '}
           <a href="/privacy/">la version anglaise</a>, c’est la version anglaise

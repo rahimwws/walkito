@@ -56,7 +56,7 @@ export default function Privacy() {
       <Prose className="shell prose">
         <h1>Privacy</h1>
 
-        <p className="updated">Last updated: 7 October 2026</p>
+        <p className="updated">Last updated: 8 October 2026</p>
 
         <h2>The short version</h2>
         <ul>

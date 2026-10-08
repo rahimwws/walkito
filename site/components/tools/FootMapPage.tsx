@@ -6,6 +6,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
 import { CHROME, alternatesCustom, type FullLang } from '@/lib/i18n';
+import { shareCard } from '@/lib/share';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 import { FOOT_MAP, FOOT_MAP_PATH, HOTSPOTS, REGION_ORDER, guideHref, type MapView } from '@/lib/tools/foot-map';
 
@@ -35,7 +36,8 @@ export function footMapMetadata(lang: FullLang): Metadata {
       siteName: SITE_NAME,
       locale: LOCALE[lang],
       type: 'website',
-      images: ['/opengraph-image'],
+      // Russian and Spanish have a share card of their own (lib/og-card.tsx).
+      images: [shareCard(lang)],
     },
   };
 }

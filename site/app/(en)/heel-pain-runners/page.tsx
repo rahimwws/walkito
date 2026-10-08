@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: `${TITLE} | ${SITE_NAME}`,
     description: DESCRIPTION,
     url: PATH,
-    images: ['/opengraph-image'],
+    images: ['/share/en.jpg'],
     type: 'article',
   },
 };

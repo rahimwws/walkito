@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: alternatesCustomEnEs('exercises', 'en'),
-  openGraph: { title: `${TITLE} | ${SITE_NAME}`, description: DESCRIPTION, url: PATH, siteName: SITE_NAME, locale: 'en_US', type: 'website', images: ['/opengraph-image'] },
+  openGraph: { title: `${TITLE} | ${SITE_NAME}`, description: DESCRIPTION, url: PATH, siteName: SITE_NAME, locale: 'en_US', type: 'website', images: ['/share/en.jpg'] },
 };
 
 /** The library in three groups, in the order a plan usually adds them. */

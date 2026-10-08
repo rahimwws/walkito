@@ -93,6 +93,6 @@ export const HOME_DE: HomeCopy = {
       q: 'Ist das medizinischer Rat?',
       a: 'Nein. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
     },
-    { q: 'In welchen Sprachen gibt es die App?', a: 'Auf Englisch, Russisch, Spanisch, Portugiesisch, Französisch, Italienisch und Deutsch.' },
+    { q: 'In welchen Sprachen gibt es die App?', a: 'Auf Englisch, Russisch und Spanisch.' },
   ],
 };

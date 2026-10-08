@@ -32,7 +32,7 @@ export default function PrivacyIt() {
       <Prose className="shell prose">
         <h1>Informativa sulla privacy</h1>
 
-        <p className="updated">Ultimo aggiornamento: 7 ottobre 2026</p>
+        <p className="updated">Ultimo aggiornamento: 8 ottobre 2026</p>
         <p className="updated">
           Questa è una traduzione. Se differisce dalla{' '}
           <a href="/privacy/">versione in inglese</a>, vale la versione in

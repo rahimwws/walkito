@@ -33,7 +33,7 @@ export default function PrivacidadePt() {
       <Prose className="shell prose">
         <h1>Privacidade</h1>
 
-        <p className="updated">Última atualização: 7 de outubro de 2026</p>
+        <p className="updated">Última atualização: 8 de outubro de 2026</p>
         <p className="updated">
           Esta é uma tradução. Se ela for diferente da{' '}
           <a href="/privacy/">versão em inglês</a>, vale a versão em inglês.
