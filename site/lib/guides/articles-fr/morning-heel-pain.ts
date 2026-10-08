@@ -36,6 +36,7 @@ export const MORNING_HEEL_PAIN_FR: Guide = {
   sections: [
     {
       h2: 'Pourquoi la douleur au talon est-elle pire le matin\u00A0?',
+      figure: { id: 'heel-side', caption: 'Vue de côté\u00A0: le fascia plantaire s’attache sous l’os du talon, là où la douleur de la fasciite plantaire commence souvent.', alt: 'Vue de côté, face intérieure, d’un pied à la peau transparente montrant l’os du talon, le fascia plantaire sous la voûte et une zone rouge sous le talon là où la douleur commence souvent.' },
       paragraphs: [
         'Le fascia plantaire, l’épaisse bande de tissu qui va de l’os du talon aux orteils, se raidit pendant le sommeil. Au repos, le pied pointe en général vers le bas, ce qui laisse le fascia se raccourcir. Quand vous vous levez et que le pied s’aplatit sous tout votre poids, ce tissu raccourci s’étire d’un coup. Résultat\u00A0: une vive traction à l’intérieur du talon.',
         'La recommandation de 2023 sur la douleur au talon décrit une douleur «\u00A0plus marquée à la mise en charge au réveil ou après une période de repos\u00A0». Le même schéma se produit quand vous restez assis un moment puis vous levez, pour la même raison\u00A0: le tissu se raccourcit au repos, puis reçoit la charge d’un coup.',

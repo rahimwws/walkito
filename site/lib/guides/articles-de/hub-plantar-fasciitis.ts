@@ -34,6 +34,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
   sections: [
     {
       h2: 'Was ist Plantarfasziitis?',
+      figure: { id: 'plantar-fascia', caption: 'Die Plantarfaszie verläuft vom Fersenbein bis zu den Zehen. Der Schmerz bei Plantarfasziitis beginnt meist dort, wo sie an der Ferse ansetzt.', alt: 'Fußsohle mit der Plantarfaszie als weiße Bänder, die sich vom Fersenbein fächerförmig bis zu den Zehen ausbreiten, und einem roten Fleck an der Ferse, wo der Schmerz meist beginnt.' },
       paragraphs: [
         'Plantarfasziitis ist eine Überlastung der Plantarfaszie. Die Plantarfaszie ist ein festes Band aus Bindegewebe, das an der Fußsohle vom Fersenbein (Calcaneus) bis zu den Zehengrundgelenken läuft. Sie stützt das Fußgewölbe und federt jeden Schritt ab.',
         'Wenn die Faszie stärker belastet wird, als sie sich erholen kann, wird das Gewebe nahe seinem Ansatz an der Ferse gereizt. Die Endung „-itis“ klingt nach Entzündung, aber nach heutigem Verständnis geht es eher um einen degenerativen Prozess im Gewebe als um eine anhaltende Entzündung. Manche Fachleute sagen deshalb „Plantarfasziopathie“. Der Name ändert nichts an den Beschwerden oder am empfohlenen Vorgehen.',

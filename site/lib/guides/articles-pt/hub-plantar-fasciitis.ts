@@ -33,6 +33,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
   sections: [
     {
       h2: 'O que é fascite plantar?',
+      figure: { id: 'plantar-fascia', caption: 'A fáscia plantar vai do osso do calcanhar até os dedos. A dor da fascite plantar costuma começar onde ela se prende ao calcanhar.', alt: 'Sola de um pé com a fáscia plantar em faixas brancas que se abrem do osso do calcanhar até a base dos dedos, e uma mancha vermelha no calcanhar onde a dor costuma começar.' },
       paragraphs: [
         'A fascite plantar é uma condição de sobrecarga da fáscia plantar. A fáscia plantar é uma faixa resistente de tecido conjuntivo que corre pela sola do pé, do osso do calcanhar (o calcâneo) até a base dos dedos. Ela sustenta o arco e absorve impacto a cada passo.',
         'Quando a fáscia recebe mais carga do que consegue recuperar, o tecido fica irritado perto de onde se prende no calcanhar. O nome termina em “-ite”, o que sugere inflamação, mas o entendimento atual aponta mais para um processo degenerativo no tecido do que para uma inflamação contínua. Alguns profissionais preferem dizer “fasciopatia plantar”. O nome não muda os sintomas nem a abordagem recomendada.',

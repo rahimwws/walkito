@@ -41,6 +41,7 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
   sections: [
     {
       h2: 'La spina calcaneare è la stessa cosa della fascite plantare?',
+      figure: { id: 'heel-side', caption: 'Una spina calcaneare, quando c’è, si forma nella parte inferiore dell’osso del tallone, vicino al punto in cui si attacca la fascia plantare.', alt: 'Vista laterale interna di un piede con la pelle trasparente che mostra l’osso del tallone, la fascia plantare sotto l’arco e una zona rossa sotto il tallone dove di solito inizia il dolore.' },
       paragraphs: [
         'Spina calcaneare e fascite plantare non sono la stessa cosa. La fascite plantare è un problema del tessuto molle: la fascia plantare, la banda spessa che va dall’osso del tallone alle dita, si irrita, di solito dove si attacca all’osso. La spina calcaneare è una sporgenza ossea sulla parte inferiore dell’osso del tallone (il calcagno). Le due spesso convivono, ma ognuna può comparire senza l’altra.',
         'La fascite plantare dà il dolore acuto, a fitta, che le persone descrivono sotto il tallone, soprattutto ai primi passi del mattino o dopo essere state sedute. La linea guida del 2023 sul dolore al tallone la definisce come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo». La spina calcaneare invece è un reperto strutturale in una radiografia. Può dare sintomi propri oppure no.',

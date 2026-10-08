@@ -26,30 +26,50 @@ const HEEL_SIDE_ALT = {
   en: 'Inner side view of a foot with see-through skin showing the heel bone, the plantar fascia running under the arch, and a red area under the heel where pain usually starts.',
   es: 'Vista lateral interior de un pie con la piel transparente que muestra el hueso del talón, la fascia plantar bajo el arco y una zona roja bajo el talón donde suele empezar el dolor.',
   ru: 'Стопа с внутренней стороны, кожа прозрачная: видны пяточная кость, подошвенная фасция под сводом и красная зона под пяткой, где обычно начинается боль.',
+  pt: 'Vista lateral interna de um pé com a pele transparente, mostrando o osso do calcanhar, a fáscia plantar sob o arco e uma área vermelha sob o calcanhar onde a dor costuma começar.',
+  fr: 'Vue de côté, face intérieure, d’un pied à la peau transparente montrant l’os du talon, le fascia plantaire sous la voûte et une zone rouge sous le talon là où la douleur commence souvent.',
+  it: 'Vista laterale interna di un piede con la pelle trasparente che mostra l’osso del tallone, la fascia plantare sotto l’arco e una zona rossa sotto il tallone dove di solito inizia il dolore.',
+  de: 'Fuß von der Innenseite mit durchsichtiger Haut: Fersenbein, Plantarfaszie unter dem Gewölbe und eine rote Stelle unter der Ferse, wo der Schmerz meist beginnt.',
 };
 
 const HEEL_SIDE = {
   en: { caption: 'Side view: the plantar fascia attaches under the heel bone, where plantar fasciitis pain usually starts.', alt: HEEL_SIDE_ALT.en },
   es: { caption: 'Vista lateral: la fascia plantar se une por debajo del hueso del talón, donde suele empezar el dolor de la fascitis plantar.', alt: HEEL_SIDE_ALT.es },
   ru: { caption: 'Вид сбоку: подошвенная фасция крепится к нижней стороне пяточной кости, и именно там обычно начинается боль при плантарном фасциите.', alt: HEEL_SIDE_ALT.ru },
+  pt: { caption: 'Vista lateral: a fáscia plantar se prende embaixo do osso do calcanhar, onde a dor da fascite plantar costuma começar.', alt: HEEL_SIDE_ALT.pt },
+  fr: { caption: 'Vue de côté\u00A0: le fascia plantaire s’attache sous l’os du talon, là où la douleur de la fasciite plantaire commence souvent.', alt: HEEL_SIDE_ALT.fr },
+  it: { caption: 'Vista laterale: la fascia plantare si attacca sotto l’osso del tallone, dove di solito inizia il dolore della fascite plantare.', alt: HEEL_SIDE_ALT.it },
+  de: { caption: 'Seitenansicht: Die Plantarfaszie setzt unten am Fersenbein an, dort beginnt der Schmerz bei Plantarfasziitis meist.', alt: HEEL_SIDE_ALT.de },
 };
 
 const HEEL_SPUR = {
   en: { caption: 'A heel spur, when there is one, forms on the underside of the heel bone, close to where the plantar fascia attaches.', alt: HEEL_SIDE_ALT.en },
   es: { caption: 'Un espolón, cuando existe, se forma en la parte inferior del hueso del talón, cerca de donde se une la fascia plantar.', alt: HEEL_SIDE_ALT.es },
   ru: { caption: 'Пяточная шпора, если она есть, образуется на нижней стороне пяточной кости, рядом с местом крепления подошвенной фасции.', alt: HEEL_SIDE_ALT.ru },
+  pt: { caption: 'O esporão, quando existe, se forma na parte de baixo do osso do calcanhar, perto de onde a fáscia plantar se prende.', alt: HEEL_SIDE_ALT.pt },
+  fr: { caption: 'Une épine calcanéenne, quand il y en a une, se forme sous l’os du talon, près de l’endroit où s’attache le fascia plantaire.', alt: HEEL_SIDE_ALT.fr },
+  it: { caption: 'Una spina calcaneare, quando c’è, si forma nella parte inferiore dell’osso del tallone, vicino al punto in cui si attacca la fascia plantare.', alt: HEEL_SIDE_ALT.it },
+  de: { caption: 'Ein Fersensporn bildet sich, wenn es einen gibt, an der Unterseite des Fersenbeins, nahe dem Ansatz der Plantarfaszie.', alt: HEEL_SIDE_ALT.de },
 };
 
 const CALF = {
   en: { caption: 'The two calf muscles, the gastrocnemius and the soleus, join into the Achilles tendon, which attaches to the heel bone.', alt: 'Side and back views of a lower leg showing the gastrocnemius and soleus muscles narrowing into the Achilles tendon above the heel.' },
   es: { caption: 'Los dos músculos de la pantorrilla, el gastrocnemio y el sóleo, se unen en el tendón de Aquiles, que se inserta en el hueso del talón.', alt: 'Vistas lateral y posterior de una pierna con los músculos gastrocnemio y sóleo que se estrechan hasta el tendón de Aquiles por encima del talón.' },
   ru: { caption: 'Две мышцы голени, икроножная и камбаловидная, переходят в ахиллово сухожилие, которое крепится к пяточной кости.', alt: 'Голень сбоку и сзади: икроножная и камбаловидная мышцы сужаются и переходят в ахиллово сухожилие над пяткой.' },
+  pt: { caption: 'Os dois músculos da panturrilha, o gastrocnêmio e o sóleo, se unem no tendão de Aquiles, que se prende ao osso do calcanhar.', alt: 'Vistas lateral e de trás de uma perna mostrando os músculos gastrocnêmio e sóleo afinando até o tendão de Aquiles, acima do calcanhar.' },
+  fr: { caption: 'Les deux muscles du mollet, le gastrocnémien et le soléaire, se rejoignent dans le tendon d’Achille, qui s’attache à l’os du talon.', alt: 'Vues de côté et de dos d’une jambe montrant le gastrocnémien et le soléaire qui s’affinent jusqu’au tendon d’Achille, au-dessus du talon.' },
+  it: { caption: 'I due muscoli del polpaccio, il gastrocnemio e il soleo, si uniscono nel tendine d’Achille, che si attacca all’osso del tallone.', alt: 'Viste laterale e posteriore di una gamba con i muscoli gastrocnemio e soleo che si assottigliano nel tendine d’Achille, sopra il tallone.' },
+  de: { caption: 'Die beiden Wadenmuskeln, Gastrocnemius und Soleus, gehen in die Achillessehne über, die am Fersenbein ansetzt.', alt: 'Unterschenkel von der Seite und von hinten: Gastrocnemius und Soleus werden schmaler und gehen über der Ferse in die Achillessehne über.' },
 };
 
 const ACHILLES = {
   en: { caption: 'Achilles tendon pain is usually in one of two places: the middle of the tendon, or where it attaches to the heel bone.', alt: 'Side view of a foot and ankle showing the Achilles tendon running from the calf to the back of the heel bone, with a red area in the middle of the tendon.' },
   es: { caption: 'El dolor del tendón de Aquiles suele estar en uno de dos sitios: la parte media del tendón o donde se une al hueso del talón.', alt: 'Vista lateral de un pie y un tobillo con el tendón de Aquiles desde la pantorrilla hasta la parte de atrás del hueso del talón, y una zona roja en la parte media del tendón.' },
   ru: { caption: 'Боль в ахилловом сухожилии обычно бывает в одном из двух мест: в середине сухожилия или там, где оно крепится к пяточной кости.', alt: 'Стопа и голеностоп сбоку: ахиллово сухожилие идёт от икры к задней части пяточной кости, в середине сухожилия красная зона.' },
+  pt: { caption: 'A dor no tendão de Aquiles costuma ficar em um de dois lugares: no meio do tendão ou onde ele se prende ao osso do calcanhar.', alt: 'Vista lateral de um pé e tornozelo com o tendão de Aquiles indo da panturrilha até a parte de trás do osso do calcanhar, e uma área vermelha no meio do tendão.' },
+  fr: { caption: 'La douleur du tendon d’Achille se situe le plus souvent à l’un de deux endroits\u00A0: au corps du tendon, ou là où il s’attache à l’os du talon.', alt: 'Vue de côté d’un pied et d’une cheville montrant le tendon d’Achille, du mollet jusqu’à l’arrière de l’os du talon, avec une zone rouge au milieu du tendon.' },
+  it: { caption: 'Il dolore al tendine d’Achille di solito è in uno di due punti: nella parte media del tendine o dove si attacca all’osso del tallone.', alt: 'Vista laterale di un piede e una caviglia con il tendine d’Achille dal polpaccio alla parte posteriore dell’osso del tallone, e una zona rossa nella parte media del tendine.' },
+  de: { caption: 'Schmerzen an der Achillessehne sitzen meist an einer von zwei Stellen: im Mittelteil der Sehne oder dort, wo sie am Fersenbein ansetzt.', alt: 'Fuß und Sprunggelenk von der Seite: die Achillessehne von der Wade bis zur Rückseite des Fersenbeins, mit einer roten Stelle im Mittelteil der Sehne.' },
 };
 
 const BUNION = {
@@ -76,9 +96,13 @@ const HAGLUND = {
   ru: { caption: 'Деформация Хаглунда: костный выступ в верхнем заднем углу пяточной кости. Бурса между ним и ахилловым сухожилием может защемляться.', alt: 'Голеностоп и пятка сбоку: ахиллово сухожилие, костный выступ в верхнем заднем углу пяточной кости и небольшая сумка с жидкостью между ними.' },
 };
 
-const ARTICLE_DIR = { en: 'articles', es: 'articles-es', ru: 'articles-ru' };
+const ARTICLE_DIR = { en: 'articles', es: 'articles-es', ru: 'articles-ru', pt: 'articles-pt', fr: 'articles-fr', it: 'articles-it', de: 'articles-de' };
 
-/** Articles exist in en, es and ru; same file name and section order. */
+/** Articles that also exist in Portuguese, French, Italian and German. */
+const ALL_SEVEN = new Set(['hub-plantar-fasciitis', 'morning-heel-pain', 'pf-vs-heel-spur', 'achilles', 'calf-raises', 'hub-flat-feet']);
+
+/** Articles exist in en, es and ru (six also in pt, fr, it, de); same file
+ * name and section order in every language. */
 const ARTICLES = [
   ['hub-plantar-fasciitis', 0, 'plantar-fascia', PF],
   ['morning-heel-pain', 0, 'heel-side', HEEL_SIDE],
@@ -96,7 +120,7 @@ const ARTICLES = [
 
 export const PLACEMENTS = [
   ...ARTICLES.flatMap(([file, section, id, text]) =>
-    ['en', 'es', 'ru'].map((lang) => ({
+    (ALL_SEVEN.has(file) ? ['en', 'es', 'ru', 'pt', 'fr', 'it', 'de'] : ['en', 'es', 'ru']).map((lang) => ({
       file: `lib/guides/${ARTICLE_DIR[lang]}/${file}.ts`,
       guide: null,
       section,

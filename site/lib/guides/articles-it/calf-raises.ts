@@ -154,6 +154,7 @@ export const CALF_RAISES_IT: Guide = {
     },
     {
       h2: 'Perché un polpaccio rigido conta per il dolore al tallone?',
+      figure: { id: 'calf', caption: 'I due muscoli del polpaccio, il gastrocnemio e il soleo, si uniscono nel tendine d’Achille, che si attacca all’osso del tallone.', alt: 'Viste laterale e posteriore di una gamba con i muscoli gastrocnemio e soleo che si assottigliano nel tendine d’Achille, sopra il tallone.' },
       keyFact: 'In una serie di 254\u00A0persone con fascite plantare, tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio, e un altro 23-30% una contrattura combinata di gastrocnemio e soleo (Patel e colleghi, 2011).',
       paragraphs: [
         'Un polpaccio rigido tira il tallone attraverso il tendine d’Achille, e la fascia plantare si divide il carico dall’altra parte. Quando la caviglia non riesce a piegarsi abbastanza, ogni passo mette più tensione sulla fascia.',

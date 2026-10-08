@@ -33,6 +33,7 @@ export const HUB_FLAT_FEET_PT: Guide = {
   sections: [
     {
       h2: 'O que é pé chato?',
+      figure: { id: 'arches', caption: 'Os mesmos ossos do pé com pé chato, arco típico e arco alto, vistos pelo lado de dentro.', alt: 'Três pés vistos pelo lado de dentro sobre um chão plano: um pé chato com o arco apoiado no chão, um arco típico com um pequeno espaço embaixo e um arco alto com um grande espaço sob o meio do pé.' },
       keyFact: 'Uma revisão sistemática de 2023 que juntou 12\u00A0estudos populacionais com cerca de 16.000\u00A0pessoas encontrou pé chato em cerca de 15,6% no geral, com taxas mais altas ligadas a IMC mais alto e idade mais avançada (Salinas-Torres e colegas, 2023).',
       paragraphs: [
         'O arco do pé, chamado arco longitudinal medial, é formado pelos ossos, ligamentos e tendões da parte de dentro do pé. No pé chato, esse arco fica mais baixo ou some quando você fica em pé. O nome médico é pé plano (pes planus).',

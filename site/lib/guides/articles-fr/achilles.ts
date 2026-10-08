@@ -177,6 +177,7 @@ export const ACHILLES_FR: Guide = {
     },
     {
       h2: 'Douleur au corps du tendon ou à l’os du talon\u00A0: pourquoi cela change l’exercice\u00A0?',
+      figure: { id: 'achilles', caption: 'La douleur du tendon d’Achille se situe le plus souvent à l’un de deux endroits\u00A0: au corps du tendon, ou là où il s’attache à l’os du talon.', alt: 'Vue de côté d’un pied et d’une cheville montrant le tendon d’Achille, du mollet jusqu’à l’arrière de l’os du talon, avec une zone rouge au milieu du tendon.' },
       keyFact: 'Dans une étude pilote sur 27\u00A0personnes avec une douleur d’Achille d’insertion, une charge excentrique uniquement au niveau du sol, sans flexion dorsale profonde, a donné de bons résultats dans 67\u00A0% des cas (Jonsson et coll., 2008).',
       paragraphs: [
         'La tendinopathie d’Achille du corps du tendon se situe dans la partie centrale du tendon, en général 2 à 6\u00A0centimètres au-dessus de l’os du talon. C’est là que les descentes excentriques classiques et la résistance lourde et lente ont leurs meilleures données. Les descentes du talon au bord d’une marche conviennent à une douleur du corps du tendon.',

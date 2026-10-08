@@ -38,6 +38,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
   sections: [
     {
       h2: 'Ist ein Fersensporn dasselbe wie Plantarfasziitis?',
+      figure: { id: 'heel-side', caption: 'Ein Fersensporn bildet sich, wenn es einen gibt, an der Unterseite des Fersenbeins, nahe dem Ansatz der Plantarfaszie.', alt: 'Fuß von der Innenseite mit durchsichtiger Haut: Fersenbein, Plantarfaszie unter dem Gewölbe und eine rote Stelle unter der Ferse, wo der Schmerz meist beginnt.' },
       paragraphs: [
         'Ein Fersensporn und eine Plantarfasziitis sind nicht dasselbe. Plantarfasziitis ist ein Problem des Weichgewebes: Die Plantarfaszie, das dicke Band vom Fersenbein bis zu den Zehen, wird gereizt, meist dort, wo sie am Knochen ansetzt. Ein Fersensporn ist ein knöcherner Auswuchs an der Unterseite des Fersenbeins (Calcaneus). Beides kommt oft zusammen vor, aber jedes kann auch ohne das andere auftreten.',
         'Die Plantarfasziitis verursacht den scharfen, stechenden Schmerz unten an der Ferse, den viele beschreiben, vor allem bei den ersten Schritten am Morgen oder nach dem Sitzen. Die Leitlinie von 2023 zu Fersenschmerzen beschreibt ihn als Schmerz, der „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“ auffällt. Ein Fersensporn dagegen ist ein struktureller Befund auf dem Röntgenbild. Er kann eigene Beschwerden machen oder auch nicht.',

@@ -179,6 +179,7 @@ export const ACHILLES_IT: Guide = {
     },
     {
       h2: 'Il dolore è nella parte media del tendine o sull’osso del tallone, e perché cambia l’esercizio?',
+      figure: { id: 'achilles', caption: 'Il dolore al tendine d’Achille di solito è in uno di due punti: nella parte media del tendine o dove si attacca all’osso del tallone.', alt: 'Vista laterale di un piede e una caviglia con il tendine d’Achille dal polpaccio alla parte posteriore dell’osso del tallone, e una zona rossa nella parte media del tendine.' },
       keyFact: 'In uno studio pilota su 27\u00A0persone con dolore inserzionale all’Achille, un carico eccentrico solo a terra in piano, senza dorsiflessione profonda, ha dato buoni risultati nel 67% dei casi (Jonsson e colleghi, 2008).',
       paragraphs: [
         'La tendinopatia achillea della porzione media si trova nel corpo del tendine, di solito da 2 a 6\u00A0centimetri sopra l’osso del tallone. Le discese eccentriche standard e il carico pesante e lento hanno qui le prove migliori. Le discese del tallone oltre il bordo del gradino vanno bene per il dolore nella porzione media.',

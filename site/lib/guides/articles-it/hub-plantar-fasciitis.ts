@@ -37,6 +37,7 @@ export const HUB_PLANTAR_FASCIITIS_IT: Guide = {
   sections: [
     {
       h2: 'Cos’è la fascite plantare?',
+      figure: { id: 'plantar-fascia', caption: 'La fascia plantare va dall’osso del tallone alle dita. Il dolore della fascite plantare di solito inizia dove si attacca al tallone.', alt: 'Pianta di un piede con la fascia plantare come fasce bianche che si aprono a ventaglio dall’osso del tallone alla base delle dita, e una macchia rossa sul tallone dove di solito inizia il dolore.' },
       paragraphs: [
         'La fascite plantare è un sovraccarico della fascia plantare. La fascia plantare è una banda resistente di tessuto connettivo che corre lungo la pianta del piede, dall’osso del tallone (il calcagno) alla base delle dita. Sostiene l’arco e assorbe gli urti a ogni passo.',
         'Quando la fascia riceve più carico di quello da cui riesce a riprendersi, il tessuto si irrita vicino al punto in cui si attacca al tallone. Il nome finisce in «-ite», che fa pensare a un’infiammazione, ma oggi si pensa più a un processo degenerativo del tessuto che a un’infiammazione continua. Alcuni professionisti dicono invece «fasciopatia plantare». Il nome non cambia i sintomi né l’approccio consigliato.',

@@ -40,6 +40,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
   sections: [
     {
       h2: 'Perché il dolore al tallone è peggio al mattino?',
+      figure: { id: 'heel-side', caption: 'Vista laterale: la fascia plantare si attacca sotto l’osso del tallone, dove di solito inizia il dolore della fascite plantare.', alt: 'Vista laterale interna di un piede con la pelle trasparente che mostra l’osso del tallone, la fascia plantare sotto l’arco e una zona rossa sotto il tallone dove di solito inizia il dolore.' },
       paragraphs: [
         'La fascia plantare, la banda spessa di tessuto che va dall’osso del tallone alle dita, si irrigidisce mentre dormi. A riposo il piede di solito punta verso il basso, e questo lascia accorciare la fascia. Quando ti alzi e appoggi il piede sotto tutto il tuo peso, quel tessuto accorciato si allunga all’improvviso. Il risultato è una fitta nella parte interna del tallone.',
         'La linea guida del 2023 sul dolore al tallone lo descrive come un dolore «più evidente quando si carica il peso appena svegli o dopo un periodo di riposo». Lo stesso schema si ripete quando sei stato seduto un po’ e poi ti alzi, per lo stesso motivo: il tessuto si accorcia a riposo, poi viene caricato di colpo.',

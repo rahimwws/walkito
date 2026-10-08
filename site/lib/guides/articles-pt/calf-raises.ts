@@ -151,6 +151,7 @@ export const CALF_RAISES_PT: Guide = {
     },
     {
       h2: 'Por que uma panturrilha tensa importa na dor no calcanhar?',
+      figure: { id: 'calf', caption: 'Os dois músculos da panturrilha, o gastrocnêmio e o sóleo, se unem no tendão de Aquiles, que se prende ao osso do calcanhar.', alt: 'Vistas lateral e de trás de uma perna mostrando os músculos gastrocnêmio e sóleo afinando até o tendão de Aquiles, acima do calcanhar.' },
       keyFact: 'Em uma série de 254\u00A0pessoas com fascite plantar, 52 a 60% tinham uma contratura limitada ao gastrocnêmio, e outros 23 a 30% tinham uma contratura combinada de gastrocnêmio e sóleo (Patel e colegas, 2011).',
       paragraphs: [
         'Uma panturrilha tensa puxa o calcanhar pelo tendão de Aquiles, e a fáscia plantar divide a carga na outra ponta. Quando o tornozelo não consegue dobrar o suficiente, cada passo coloca mais tensão na fáscia.',

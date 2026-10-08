@@ -177,6 +177,7 @@ export const ACHILLES_DE: Guide = {
     },
     {
       h2: 'Sitzt dein Schmerz im Mittelteil der Sehne oder am Fersenbein, und warum ändert das die Übung?',
+      figure: { id: 'achilles', caption: 'Schmerzen an der Achillessehne sitzen meist an einer von zwei Stellen: im Mittelteil der Sehne oder dort, wo sie am Fersenbein ansetzt.', alt: 'Fuß und Sprunggelenk von der Seite: die Achillessehne von der Wade bis zur Rückseite des Fersenbeins, mit einer roten Stelle im Mittelteil der Sehne.' },
       keyFact: 'In einer Pilotstudie mit 27\u00A0Personen mit Schmerzen am Ansatz der Achillessehne brachte exzentrische Belastung nur auf Bodenhöhe, ohne tiefe Dorsalflexion, in 67\u00A0% der Fälle gute Ergebnisse (Jonsson und Kollegen, 2008).',
       paragraphs: [
         'Eine Tendinopathie im Mittelteil der Achillessehne sitzt im Körper der Sehne, meist 2 bis 6\u00A0Zentimeter über dem Fersenbein. Klassisches exzentrisches Absenken und Heavy Slow Resistance haben hier ihre besten Belege. Fersenabsenken über eine Stufenkante passt bei Schmerzen im Mittelteil.',

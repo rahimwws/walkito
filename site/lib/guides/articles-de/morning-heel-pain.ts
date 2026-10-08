@@ -35,6 +35,7 @@ export const MORNING_HEEL_PAIN_DE: Guide = {
   sections: [
     {
       h2: 'Warum sind Fersenschmerzen morgens schlimmer?',
+      figure: { id: 'heel-side', caption: 'Seitenansicht: Die Plantarfaszie setzt unten am Fersenbein an, dort beginnt der Schmerz bei Plantarfasziitis meist.', alt: 'Fuß von der Innenseite mit durchsichtiger Haut: Fersenbein, Plantarfaszie unter dem Gewölbe und eine rote Stelle unter der Ferse, wo der Schmerz meist beginnt.' },
       paragraphs: [
         'Die Plantarfaszie, das dicke Gewebeband vom Fersenbein bis zu deinen Zehen, wird im Schlaf steif. In Ruhe zeigt dein Fuß meist nach unten, und die Faszie kann sich verkürzen. Wenn du aufstehst und der Fuß sich unter deinem vollen Gewicht abflacht, wird das verkürzte Gewebe plötzlich gedehnt. Das Ergebnis ist ein stechendes Ziehen an der Innenseite der Ferse.',
         'Die Leitlinie von 2023 zu Fersenschmerzen beschreibt das als Schmerz, der „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“ auffällt. Dasselbe Muster zeigt sich, wenn du eine Weile gesessen hast und dann aufstehst, aus demselben Grund: Das Gewebe verkürzt sich in Ruhe und wird dann abrupt belastet.',
