@@ -1,7 +1,5 @@
 'use client';
 
-import { ListIcon } from '@phosphor-icons/react/dist/csr/List';
-import { XIcon } from '@phosphor-icons/react/dist/csr/X';
 import Link from 'next/link';
 import { useEffect, useId, useRef, useState } from 'react';
 
@@ -61,7 +59,11 @@ export function MobileMenu({
         aria-label={open ? labels.close : labels.open}
         onClick={() => setOpen((value) => !value)}
       >
-        {open ? <XIcon size={22} weight="bold" aria-hidden /> : <ListIcon size={22} weight="bold" aria-hidden />}
+        {/* Two bars, the lower one shorter, that turn into a cross. */}
+        <span className="menu-bars" aria-hidden>
+          <span />
+          <span />
+        </span>
       </button>
 
       <div ref={panel} id={id} className="menu-panel" data-open={open ? '' : undefined} hidden={!open}>

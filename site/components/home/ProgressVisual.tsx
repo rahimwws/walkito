@@ -165,7 +165,7 @@ const COPY: Record<Lang, VisualCopy> = {
   ru: {
     painTitle: 'Боль по утрам',
     painNow: (value) => `${value} / 10 за неделю`,
-    painCaption: 'Перепады изо дня в день нормальны. Смотрите на линию.',
+    painCaption: 'Перепады изо дня в день нормальны. Смотрите на линию.',
     goalsTitle: 'Цели',
     goalName: { arch_hold: 'Сильный свод', calf_raises: 'Сильные икры', balance: 'Лучше баланс' },
     goalLine: {

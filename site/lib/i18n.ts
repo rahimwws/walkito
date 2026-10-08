@@ -55,6 +55,7 @@ export const OG_LOCALE: Record<Lang, string> = {
 
 const en = {
   headerButton: 'Get the app',
+  headerPainMap: 'Where does it hurt?',
   getBadge: 'Download on the App Store',
   getBadgeLabel: 'Download Walkito on the App Store',
   navHome: 'Home',
@@ -93,6 +94,7 @@ type Chrome = Record<keyof typeof en, string>;
 
 const ru: Chrome = {
   headerButton: 'Скачать приложение',
+  headerPainMap: 'Где болит?',
   getBadge: 'Скачать в App Store',
   getBadgeLabel: 'Скачать Walkito в App Store',
   navHome: 'Главная',
@@ -129,6 +131,7 @@ const ru: Chrome = {
 
 const es: Chrome = {
   headerButton: 'Descargar la app',
+  headerPainMap: '¿Dónde te duele?',
   getBadge: 'Descargar en el App Store',
   getBadgeLabel: 'Descargar Walkito en el App Store',
   navHome: 'Inicio',
@@ -165,6 +168,7 @@ const es: Chrome = {
 
 const pt: Chrome = {
   headerButton: 'Baixar o app',
+  headerPainMap: 'Onde dói?',
   getBadge: 'Baixar na App Store',
   getBadgeLabel: 'Baixar o Walkito na App Store',
   navHome: 'Início',
@@ -201,6 +205,7 @@ const pt: Chrome = {
 
 const fr: Chrome = {
   headerButton: "Télécharger l'app",
+  headerPainMap: 'Où avez-vous mal ?',
   getBadge: "Télécharger dans l'App Store",
   getBadgeLabel: "Télécharger Walkito dans l'App Store",
   navHome: 'Accueil',
@@ -238,6 +243,7 @@ const fr: Chrome = {
 
 const it: Chrome = {
   headerButton: "Scarica l'app",
+  headerPainMap: 'Dove fa male?',
   getBadge: "Scarica sull'App Store",
   getBadgeLabel: "Scarica Walkito sull'App Store",
   navHome: 'Home',
@@ -274,6 +280,7 @@ const it: Chrome = {
 
 const de: Chrome = {
   headerButton: 'App laden',
+  headerPainMap: 'Wo tut es weh?',
   getBadge: 'Im App Store laden',
   getBadgeLabel: 'Walkito im App Store laden',
   navHome: 'Start',

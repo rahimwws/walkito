@@ -1,3 +1,4 @@
+import { FootprintsIcon } from '@phosphor-icons/react/dist/ssr/Footprints';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -70,10 +71,21 @@ export function Masthead({
         ))}
       </nav>
 
-      <GetAppButton className="download" ios={href ?? '#'} android={playHref(`masthead${suffix}`)}>
-        <AppleGlyph />
-        {c.headerButton}
-      </GetAppButton>
+      {/* On home the hero has "Get the app" right under the headline, so the
+          header offers the next step instead: the free foot pain map. Every
+          other page keeps the store button. Still `.download`, which the
+          floating header measures and moves. */}
+      {current === 'home' ? (
+        <Link className="download download-alt" href={customHref('footMap', lang)}>
+          <FootprintsIcon weight="fill" aria-hidden />
+          {c.headerPainMap}
+        </Link>
+      ) : (
+        <GetAppButton className="download" ios={href ?? '#'} android={playHref(`masthead${suffix}`)}>
+          <AppleGlyph />
+          {c.headerButton}
+        </GetAppButton>
+      )}
 
       {/* Phones: a burger in place of the nav and the button. */}
       <MobileMenu
