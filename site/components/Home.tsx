@@ -686,30 +686,41 @@ export function Home({ lang }: { lang: Lang }) {
  * with the first paint: waiting for hydration would show the words, hide them
  * and then raise them. Reduce Motion leaves them standing.
  *
+ * The lines are drawn twice: the heading, and a blurred copy over it that no
+ * one reads (aria-hidden, outside the h1). A soft band moving left to right
+ * shows the copy and hides the heading, so the blur passes through the
+ * letters alone and never paints a box over the sky (globals.css).
+ *
  * Sized in globals.css (.hero-title): on wide screens the first line stays
  * whole and the second takes two rows at most; on a phone the longest word
- * fits. In every language. Words joined by
- * a non-breaking space stay one word.
+ * fits. In every language. Words joined by a non-breaking space stay one word.
  */
 function HeroTitle({ a, b }: { a: string; b: string }) {
   const lines = [a, b].map((line) => line.split(' '));
   const longest = Math.max(...lines.flat().map((word) => word.length));
-  let n = 0;
+  const words = () => {
+    let n = 0;
+    return lines.map((line, i) => (
+      <span key={i} className="hero-line" aria-hidden>
+        {line.map((word, j) => (
+          <span key={j} className="hero-word">
+            <span style={{ '--w': n++ } as React.CSSProperties}>{word}</span>
+          </span>
+        ))}
+      </span>
+    ));
+  };
   return (
-    <h1
+    <div
       className="hero-title"
-      aria-label={`${a} ${b}`}
       style={{ '--h1a-len': a.length, '--h1b-len': b.length, '--h1-word': longest } as React.CSSProperties}
     >
-      {lines.map((words, i) => (
-        <span key={i} className="hero-line" aria-hidden>
-          {words.map((word, j) => (
-            <span key={j} className="hero-word">
-              <span style={{ '--w': n++ } as React.CSSProperties}>{word}</span>
-            </span>
-          ))}
-        </span>
-      ))}
-    </h1>
+      <h1 className="hero-sharp" aria-label={`${a} ${b}`}>
+        {words()}
+      </h1>
+      <div className="hero-soft" aria-hidden>
+        {words()}
+      </div>
+    </div>
   );
 }

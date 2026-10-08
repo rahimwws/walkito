@@ -2153,7 +2153,8 @@ figcaption {
 /* ---- the "Get the app" dialog ---- */
 
 .get-dialog {
-  width: min(400px, calc(100vw - 32px));
+  width: min(600px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
   padding: 0;
   border: 0;
   background: transparent;
@@ -2167,62 +2168,95 @@ figcaption {
 }
 
 .get-dialog[open] {
-  animation: get-in 0.22s ease-out;
+  animation: get-in 0.28s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes get-in {
   from {
     opacity: 0;
-    transform: translateY(12px) scale(0.98);
+    transform: translateY(14px) scale(0.97);
   }
 }
 
+/* White card: the title and the cross on one row, then the grey panel. */
 .get-card {
-  position: relative;
   display: grid;
-  justify-items: center;
-  gap: 14px;
-  padding: 32px 28px 28px;
-  border-radius: 32px;
-  background: var(--paper);
-  text-align: center;
+  gap: 20px;
+  padding: 28px 16px 16px;
+  border-radius: 44px;
+  background: #fff;
   color: var(--ink);
 }
 
-.get-close {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  border: 0;
-  border-radius: 50%;
-  background: #f1f1f4;
-  color: var(--ink);
-  cursor: pointer;
-}
-
-.get-icon {
-  width: 64px;
-  height: 64px;
-  border-radius: 16px;
+.get-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-inline: 20px 8px;
 }
 
 .get-card h2 {
   margin: 0;
-  font-size: 24px;
-  font-weight: 800;
+  font-family: var(--font-body);
+  font-size: clamp(20px, 3.2vw, 26px);
+  font-weight: 600;
   letter-spacing: -0.4px;
+  text-align: left;
+}
+
+.get-close {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.get-close:hover {
+  background: #f1f1f4;
+}
+
+.get-panel {
+  display: grid;
+  gap: 8px;
+  padding: 28px 20px 22px;
+  border-radius: 32px;
+  background: #f4f4f7;
+}
+
+/* The phone's top on the left, falling away; the code over its right edge. */
+.get-stage {
+  position: relative;
+  height: 320px;
+}
+
+.get-phone {
+  position: absolute;
+  left: 12%;
+  top: 0;
+  width: 230px;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent 98%);
+  mask-image: linear-gradient(180deg, #000 60%, transparent 98%);
 }
 
 .get-qr {
-  width: 200px;
-  padding: 10px;
-  border-radius: 24px;
+  position: absolute;
+  right: 6%;
+  top: 34px;
+  width: 236px;
+  padding: 22px;
+  border-radius: 48px;
   background: #fff;
-  box-shadow: inset 0 0 0 1px var(--hairline);
+  box-shadow: 0 18px 40px rgba(17, 17, 20, 0.08);
 }
 
 .get-qr svg {
@@ -2231,42 +2265,65 @@ figcaption {
   height: auto;
 }
 
-.get-scan {
-  max-width: 30ch;
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.5;
-  color: var(--muted);
+/* The icon in the cleared middle of the code. */
+.get-qr-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 22%;
+  height: auto;
+  border-radius: 22%;
+  translate: -50% -50%;
 }
 
 .get-stores {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  width: 100%;
-  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 32px;
 }
 
 .get-store {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 52px;
-  padding: 0 12px;
-  border-radius: var(--radius-button);
-  background: var(--ink);
-  color: #fff;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 4px;
+  color: var(--ink);
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.get-store:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .get-store-soon {
-  background: #f1f1f4;
   color: var(--muted);
-  font-size: 13px;
-  line-height: 1.2;
+}
+
+.get-store-soon:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 560px) {
+  .get-stage {
+    height: 270px;
+  }
+
+  .get-phone {
+    left: 0;
+    width: 190px;
+  }
+
+  .get-qr {
+    right: 0;
+    width: 190px;
+    padding: 16px;
+    border-radius: 38px;
+  }
 }
 
 .handoff-card img[src='/icon.png'] {
@@ -3267,16 +3324,16 @@ html[data-scrolled] .masthead-float .download {
     -webkit-tap-highlight-color: transparent;
   }
 
-  /* Over the hero's blue the burger is the icon alone, white. Over the white
-     page it needs a body: the nav's deep blue. */
+  /* The burger is the icon alone, no tile: white over the hero's blue, ink
+     once the page has scrolled onto white. */
   .masthead-float .menu-toggle {
     background: transparent;
     color: #fff;
-    transition: background 0.4s ease;
+    transition: color 0.4s ease;
   }
 
   html[data-scrolled] .masthead-float .menu-toggle {
-    background: rgba(8, 40, 200, 0.9);
+    color: var(--ink);
   }
 
   .menu-panel[data-open] {
@@ -4736,7 +4793,7 @@ html[data-scrolled] .masthead-float .download {
   line-gap-override: 0%;
 }
 
-html:not(:lang(ru)) .hero-glass h1 {
+html:not(:lang(ru)) .hero-glass .hero-title {
   font-family: Anton, 'Anton Caps Fallback', var(--font-body);
 }
 
@@ -4750,9 +4807,9 @@ html:not(:lang(ru)) .hero-glass h1 {
  * would need more than two rows. Phones: smaller, and never more than the
  * longest word allows. About 0.46em a character in Anton capitals; Oswald's
  * Cyrillic capitals run 0.54em on average and up to 0.6em in a long word.
- * `h1.` to outweigh `:lang(ru) .hero h1`.
+ * The h1 inside takes all of it from the wrapper (see below).
  */
-.hero-glass h1.hero-title {
+.hero-glass .hero-title {
   --h1-em: 0.46;
   --h1-word-em: 0.48;
   position: relative;
@@ -4766,13 +4823,13 @@ html:not(:lang(ru)) .hero-glass h1 {
   text-wrap: balance;
 }
 
-:lang(ru) .hero-glass h1.hero-title {
+:lang(ru) .hero-glass .hero-title {
   --h1-em: 0.54;
   --h1-word-em: 0.6;
 }
 
 @media (min-width: 761px) {
-  .hero-glass h1.hero-title {
+  .hero-glass .hero-title {
     margin-bottom: -0.4em;
     font-size: min(
       clamp(64px, 10.5vw, 168px),
@@ -4960,7 +5017,7 @@ html:not(:lang(ru)) .hero-glass h1 {
   box-shadow: 0 10px 30px rgba(2, 20, 120, 0.22), inset 0 -2px 0 rgba(17, 17, 20, 0.06);
 }
 
-/* ---- the header's second button on home: glass, so it is not the hero's ---- */
+/* ---- the header's "Get the app" on home: glass, so it is not the hero's twin ---- */
 
 .masthead-float .download-alt {
   background: rgba(255, 255, 255, 0.16);
@@ -4968,12 +5025,6 @@ html:not(:lang(ru)) .hero-glass h1 {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.34);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-}
-
-.masthead-float .download-alt svg {
-  width: 20px;
-  height: 20px;
-  margin-top: 0;
 }
 
 html[data-scrolled] .masthead-float .download-alt {
@@ -4985,4 +5036,126 @@ html[data-scrolled] .masthead-float .download-alt {
   .menu-bars > span {
     transition: none;
   }
+}
+
+/* The heading and its blurred copy are the wrapper's type exactly, so the two
+   break into the same rows. */
+.hero-glass .hero-title {
+  font-family: var(--font-display), var(--font-body);
+}
+
+.hero-glass .hero-title > .hero-sharp,
+.hero-glass .hero-title > .hero-soft {
+  margin: 0;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  text-wrap: inherit;
+}
+
+.hero-glass .hero-soft {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  filter: blur(0.06em);
+  opacity: 0;
+}
+
+/*
+ * The blur passing through the letters, left to right, once the words have
+ * risen. Both layers carry the same moving band as a mask, the heading its
+ * negative: inside the band only the blurred copy shows, outside it only the
+ * heading. The masks are three widths wide, so they always cover the box.
+ * Only while the hero is on screen (`data-live`), never with Reduce Motion.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-glass .hero-sharp,
+  .hero-glass .hero-soft {
+    -webkit-mask-size: 300% 100%;
+    mask-size: 300% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: 90% 0;
+    mask-position: 90% 0;
+    animation: hero-blur-sweep 6.5s cubic-bezier(0.45, 0, 0.55, 1) 1.8s infinite;
+  }
+
+  .hero-glass .hero-sharp {
+    -webkit-mask-image: linear-gradient(90deg, #000 46.5%, transparent 49%, transparent 51%, #000 53.5%);
+    mask-image: linear-gradient(90deg, #000 46.5%, transparent 49%, transparent 51%, #000 53.5%);
+  }
+
+  .hero-glass .hero-soft {
+    opacity: 1;
+    -webkit-mask-image: linear-gradient(90deg, transparent 46.5%, #000 49%, #000 51%, transparent 53.5%);
+    mask-image: linear-gradient(90deg, transparent 46.5%, #000 49%, #000 51%, transparent 53.5%);
+  }
+
+  .hero-glass:not([data-live]) .hero-sharp,
+  .hero-glass:not([data-live]) .hero-soft {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes hero-blur-sweep {
+  0% {
+    -webkit-mask-position: 90% 0;
+    mask-position: 90% 0;
+  }
+
+  70%,
+  100% {
+    -webkit-mask-position: 10% 0;
+    mask-position: 10% 0;
+  }
+}
+
+/* ---- the language picker in the header, where "Get the app" was ---- */
+
+/* The wrapper keeps `.download` for the floating header's measuring, and none
+   of the button's look. */
+.masthead .download.masthead-lang,
+html[data-scrolled] .masthead-float .download.masthead-lang {
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  transform: none;
+}
+
+.masthead-lang .lp-button {
+  min-height: 48px;
+  padding: 0 16px 0 14px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.34);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.masthead-lang .lp-button:hover,
+.masthead-lang .lp[open] .lp-button {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+/* Over the white page: the nav's deep blue. */
+html[data-scrolled] .masthead-float .masthead-lang .lp-button {
+  background: rgba(8, 40, 200, 0.86);
+  box-shadow: none;
+}
+
+.lp-down .lp-menu {
+  top: calc(100% + 8px);
+  bottom: auto;
+}
+
+@keyframes lp-in-down {
+  from {
+    opacity: 0;
+    translate: 0 -6px;
+  }
+}
+
+.lp-down .lp-menu {
+  animation-name: lp-in-down;
 }

@@ -55,13 +55,12 @@ export const OG_LOCALE: Record<Lang, string> = {
 
 const en = {
   headerButton: 'Get the app',
-  headerPainMap: 'Where does it hurt?',
   getBadge: 'Download on the App Store',
   getBadgeLabel: 'Download Walkito on the App Store',
   navHome: 'Home',
   menuOpen: 'Menu',
   menuClose: 'Close menu',
-  getTitle: 'Get Walkito',
+  getTitle: 'Scan to download Walkito',
   getScan: 'Point your phone’s camera at the code. It opens the right store for your phone.',
   getAppStore: 'App Store',
   getPlay: 'Google Play',
@@ -94,13 +93,12 @@ type Chrome = Record<keyof typeof en, string>;
 
 const ru: Chrome = {
   headerButton: 'Скачать приложение',
-  headerPainMap: 'Где болит?',
   getBadge: 'Скачать в App Store',
   getBadgeLabel: 'Скачать Walkito в App Store',
   navHome: 'Главная',
   menuOpen: 'Меню',
   menuClose: 'Закрыть меню',
-  getTitle: 'Скачать Walkito',
+  getTitle: 'Отсканируйте, чтобы скачать Walkito',
   getScan: 'Наведите камеру телефона на код. Он откроет нужный магазин для вашего телефона.',
   getAppStore: 'App Store',
   getPlay: 'Google Play',
@@ -131,13 +129,12 @@ const ru: Chrome = {
 
 const es: Chrome = {
   headerButton: 'Descargar la app',
-  headerPainMap: '¿Dónde te duele?',
   getBadge: 'Descargar en el App Store',
   getBadgeLabel: 'Descargar Walkito en el App Store',
   navHome: 'Inicio',
   menuOpen: 'Menú',
   menuClose: 'Cerrar menú',
-  getTitle: 'Descarga Walkito',
+  getTitle: 'Escanea para descargar Walkito',
   getScan: 'Apunta la cámara del teléfono al código. Abre la tienda que corresponde a tu teléfono.',
   getAppStore: 'App Store',
   getPlay: 'Google Play',
@@ -168,13 +165,12 @@ const es: Chrome = {
 
 const pt: Chrome = {
   headerButton: 'Baixar o app',
-  headerPainMap: 'Onde dói?',
   getBadge: 'Baixar na App Store',
   getBadgeLabel: 'Baixar o Walkito na App Store',
   navHome: 'Início',
   menuOpen: 'Menu',
   menuClose: 'Fechar menu',
-  getTitle: 'Baixe o Walkito',
+  getTitle: 'Escaneie para baixar o Walkito',
   getScan: 'Aponte a câmera do celular para o código. Ele abre a loja certa para o seu celular.',
   getAppStore: 'App Store',
   getPlay: 'Google Play',
@@ -205,13 +201,12 @@ const pt: Chrome = {
 
 const fr: Chrome = {
   headerButton: "Télécharger l'app",
-  headerPainMap: 'Où avez-vous mal ?',
   getBadge: "Télécharger dans l'App Store",
   getBadgeLabel: "Télécharger Walkito dans l'App Store",
   navHome: 'Accueil',
   menuOpen: 'Menu',
   menuClose: 'Fermer le menu',
-  getTitle: 'Télécharger Walkito',
+  getTitle: 'Scannez pour télécharger Walkito',
   getScan:
     "Pointez l'appareil photo de votre téléphone vers le code. Il ouvre la boutique d'applications de votre téléphone.",
   getAppStore: 'App Store',
@@ -243,13 +238,12 @@ const fr: Chrome = {
 
 const it: Chrome = {
   headerButton: "Scarica l'app",
-  headerPainMap: 'Dove fa male?',
   getBadge: "Scarica sull'App Store",
   getBadgeLabel: "Scarica Walkito sull'App Store",
   navHome: 'Home',
   menuOpen: 'Menu',
   menuClose: 'Chiudi il menu',
-  getTitle: 'Scarica Walkito',
+  getTitle: 'Inquadra per scaricare Walkito',
   getScan: 'Inquadra il codice con la fotocamera del telefono. Apre lo store giusto per il tuo telefono.',
   getAppStore: 'App Store',
   getPlay: 'Google Play',
@@ -280,13 +274,12 @@ const it: Chrome = {
 
 const de: Chrome = {
   headerButton: 'App laden',
-  headerPainMap: 'Wo tut es weh?',
   getBadge: 'Im App Store laden',
   getBadgeLabel: 'Walkito im App Store laden',
   navHome: 'Start',
   menuOpen: 'Menü',
   menuClose: 'Menü schließen',
-  getTitle: 'Walkito laden',
+  getTitle: 'Scannen und Walkito laden',
   getScan: 'Richte die Kamera deines Handys auf den Code. Er öffnet den passenden Store für dein Handy.',
   getAppStore: 'App Store',
   getPlay: 'Google Play',

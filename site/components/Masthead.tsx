@@ -1,17 +1,16 @@
-import { FootprintsIcon } from '@phosphor-icons/react/dist/ssr/Footprints';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { AppleGlyph } from '@/components/AppStoreBadge';
-import { GetAppButton, GetAppDialog } from '@/components/GetApp';
+import { GetAppDialog } from '@/components/GetApp';
+import { LangPicker } from '@/components/LangPicker';
 import { MobileMenu } from '@/components/MobileMenu';
 import { ScrollState } from '@/components/ScrollState';
-import { CHROME, TRANSLATED, customHref, type Lang } from '@/lib/i18n';
+import { CHROME, LANG_NAMES, LANGS, TRANSLATED, customHref, type Lang } from '@/lib/i18n';
 import { qrPath } from '@/lib/qr';
 import { playHref, SITE_URL, storeHref } from '@/lib/site';
 
 /** What the dialog's QR code opens: `/get/` picks the phone's own store. */
-const QR = qrPath(`${SITE_URL}/get/`);
+const QR = qrPath(`${SITE_URL}/get/`, { hole: 0.24 });
 
 /**
  * The header, identical on every page: the home page's floating one.
@@ -22,9 +21,9 @@ const QR = qrPath(`${SITE_URL}/get/`);
  * does the measuring and sets `html[data-scrolled]`; it is rendered here so no
  * page has to remember it.
  *
- * The button says "Get the app" and goes straight to the listing, tagged
- * `masthead` so App Analytics can tell it apart from the badges in the page
- * body. Until `APP_STORE_URL` is set it points at `#`, like the badges.
+ * On the right, the language picker (the footer's, opening downward). "Get
+ * the app" lives in the hero and the phone menu; the header renders the one
+ * dialog with the QR code that every such button on the page opens.
  *
  * `current` marks the link of the page being shown (`aria-current`), drawn as
  * the selected item in the nav.
@@ -41,7 +40,6 @@ export function Masthead({
   floating?: boolean;
 }) {
   const suffix = lang === 'en' ? '' : `-${lang}`;
-  const href = storeHref(`masthead${suffix}`);
   const c = CHROME[lang];
   const home = TRANSLATED.home[lang];
 
@@ -71,21 +69,17 @@ export function Masthead({
         ))}
       </nav>
 
-      {/* On home the hero has "Get the app" right under the headline, so the
-          header offers the next step instead: the free foot pain map. Every
-          other page keeps the store button. Still `.download`, which the
-          floating header measures and moves. */}
-      {current === 'home' ? (
-        <Link className="download download-alt" href={customHref('footMap', lang)}>
-          <FootprintsIcon weight="fill" aria-hidden />
-          {c.headerPainMap}
-        </Link>
-      ) : (
-        <GetAppButton className="download" ios={href ?? '#'} android={playHref(`masthead${suffix}`)}>
-          <AppleGlyph />
-          {c.headerButton}
-        </GetAppButton>
-      )}
+      {/* The languages, where "Get the app" used to be: the hero and the phone
+          menu carry that. Still `.download` on the wrapper, which the floating
+          header measures and moves. */}
+      <div className="download masthead-lang">
+        <LangPicker
+          place="down"
+          label={c.language}
+          current={LANG_NAMES[lang]}
+          options={LANGS.map((l) => ({ lang: l, name: LANG_NAMES[l], href: TRANSLATED.home[l], current: l === lang }))}
+        />
+      </div>
 
       {/* Phones: a burger in place of the nav and the button. */}
       <MobileMenu
