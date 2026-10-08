@@ -113,7 +113,7 @@ export default function ExerciseLibraryRu() {
                 return (
                   <li key={k}>
                     <a href={guidePath(g)}>
-                      {media && <img src={`/exercises/${media}.webp`} alt="" width={96} height={120} loading="lazy" />}
+                      {media && <img src={`/exercises/${media}.webp`} alt={`Демонстрация упражнения: ${g.crumb.charAt(0).toLowerCase()}${g.crumb.slice(1)}`} width={96} height={120} loading="lazy" />}
                       <span>
                         <strong>{g.crumb}</strong>
                         <span>{g.description}</span>

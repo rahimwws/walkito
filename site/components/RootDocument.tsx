@@ -1,6 +1,5 @@
 import { AiReferral } from '@/components/AiReferral';
 import { JsonLd } from '@/components/JsonLd';
-import { anton, oswald } from '@/lib/fonts';
 import type { Lang } from '@/lib/i18n';
 import { APP_STORE_NAME, SAME_AS, SITE_NAME, SITE_URL } from '@/lib/site';
 
@@ -66,12 +65,21 @@ export const viewport = {
  * `<html>` and `<body>`, shared by the three root layouts.
  *
  * Russian gets its own display face because Anton has no Cyrillic; see
- * `lib/fonts.ts`.
+ * `lib/font-anton.ts` and `lib/font-oswald.ts`.
  */
-export function RootDocument({ lang, children }: { lang: Lang; children: React.ReactNode }) {
-  const display = lang === 'ru' ? oswald : anton;
+export function RootDocument({
+  lang,
+  fontClass,
+  children,
+}: {
+  lang: Lang;
+  /** The display face's CSS variable class. Each root layout imports only its
+   * own face, so a page preloads one font file instead of both families. */
+  fontClass: string;
+  children: React.ReactNode;
+}) {
   return (
-    <html lang={lang} className={display.variable}>
+    <html lang={lang} className={fontClass}>
       <body>
         <JsonLd data={ORGANISATION} />
         <JsonLd data={website(lang)} />

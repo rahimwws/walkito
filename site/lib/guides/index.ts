@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 import { EN_ONLY, ES_ARTICLES, RU_ARTICLES, OG_LOCALE, TRANSLATED, alternatesArticle, alternatesFor, isTranslatedPage, type EnglishPage, type Lang } from '@/lib/i18n';
-import { SITE_NAME } from '@/lib/site';
+import { SITE_NAME, smartBannerContent, type AppScreen } from '@/lib/site';
 
 import { groupOf } from '@/lib/nav';
 
@@ -93,9 +93,21 @@ export function relatedGuides(guide: Guide, max = 5): Guide[] {
 
 /** A guide's metadata: title, description, canonical and hreflang together, so
  * no page can ship one without the others. */
+/** Which app screen a guide's Smart App Banner opens for people who already
+ * have the app: the in-app calf raise test from the test page, the morning
+ * routine from the morning heel pain page, today's session from the rest. */
+function bannerScreen(guide: Guide): AppScreen {
+  if (guide.page === 'calfRaiseTest') return 'test';
+  if (guide.page === 'morningHeelPain') return 'library/morning';
+  return 'today';
+}
+
 export function guideMetadata(guide: Guide): Metadata {
   const url = guidePath(guide);
+  const banner = smartBannerContent(guide.lang === 'en' ? 'smart-banner' : `smart-banner-${guide.lang}`, bannerScreen(guide));
   return {
+    // Stated per page: a page-level `other` replaces the layout's.
+    ...(banner ? { other: { 'apple-itunes-app': banner } } : {}),
     title: guide.title,
     description: guide.description,
     alternates: isTranslatedPage(guide.page)

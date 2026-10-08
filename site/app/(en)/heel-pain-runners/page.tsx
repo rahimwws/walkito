@@ -51,9 +51,11 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: alternatesCustomEnEs('runners', 'en'),
   openGraph: {
+    locale: 'en_US',
     title: `${TITLE} | ${SITE_NAME}`,
     description: DESCRIPTION,
     url: PATH,
+    images: ['/opengraph-image'],
     type: 'article',
   },
 };

@@ -6,7 +6,8 @@ import { useEffect, useRef, useState } from 'react';
  * One exercise, shown the way the app shows it: the app's own demonstration
  * clip, cut to a single repetition, looping, muted.
  *
- * The still is always in the page. It is what search engines, screen readers
+ * The still is always in the page, and the clip is in it too inside
+ * <noscript> for clients that do not run scripts. It is what search engines, screen readers
  * and people who prefer reduced motion get, and it holds the 4:5 box so the
  * layout never jumps. The video is only added once the card is near the
  * viewport, so a guide with seven exercises downloads the clips people
@@ -54,6 +55,15 @@ export function ExerciseMedia({ id, alt, caption }: { id: string; alt: string; c
           loading="lazy"
           decoding="async"
         />
+        {/* The same clip as plain HTML for anything that does not run scripts:
+            crawlers that read the page as sent, and browsers with JS off. No
+            autoplay there, so a long guide does not fetch every clip at once. */}
+        <noscript>
+          <video controls muted loop playsInline preload="none" poster={still}>
+            <source src={`/exercises/${id}.webm`} type="video/webm" />
+            <source src={`/exercises/${id}.mp4`} type="video/mp4" />
+          </video>
+        </noscript>
         {play && (
           <video autoPlay muted loop playsInline preload="none" poster={still} aria-hidden>
             <source src={`/exercises/${id}.webm`} type="video/webm" />

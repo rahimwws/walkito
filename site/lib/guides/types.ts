@@ -38,6 +38,10 @@ export type GuideExercise = {
    * (`public/exercises/<id>.*`, made by `scripts/exercise-media.mjs`). When
    * set, it replaces the placeholder. */
   media?: string;
+  /** The clip only illustrates this block (e.g. the calf raise test shown
+   * with the two-foot raise clip). It still plays on the page, but is not
+   * described to search engines as a video of this block. */
+  mediaIsStandIn?: boolean;
   /** How strong the research behind this exercise is, and why in one line.
    * Levels as defined in the About page section "How we research". */
   evidence?: { level: EvidenceLevel; why: string };

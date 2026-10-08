@@ -75,6 +75,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
           feel: 'Increasing burn in the calf as reps build up',
           stop: 'You cannot lift the heel, cannot keep the metronome pace, or your knee bends',
           media: 'heel_raise_double',
+          mediaIsStandIn: true,
           caption: 'Calf raise test: rise as high as you can on each beat, fingertip support for balance',
           alt: 'A figure rising onto the toes of one foot with fingertips on a wall for balance',
         },

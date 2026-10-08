@@ -21,9 +21,11 @@ export const metadata: Metadata = {
     'Términos de uso de Walkito: qué es y qué no es, tu cuenta, suscripciones, invitaciones, salud y seguridad.',
   alternates: alternatesFor('terms', 'es'),
   openGraph: {
+    locale: 'es_MX',
     title: `Términos de uso | ${SITE_NAME}`,
     description: 'Qué es la app, cómo funcionan los pagos y los límites de lo que afirma.',
     url: '/es/terminos/',
+    images: ['/opengraph-image'],
     type: 'website',
   },
 };

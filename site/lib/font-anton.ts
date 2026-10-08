@@ -1,4 +1,4 @@
-import { Anton, Oswald } from 'next/font/google';
+import { Anton } from 'next/font/google';
 
 /**
  * The display face: heavy, extremely condensed, one weight.
@@ -17,23 +17,12 @@ export const anton = Anton({
   weight: '400',
   // latin-ext for Spanish: ñ and the accented vowels are in `latin`, but
   // `latin-ext` is what keeps a stray ü or ç from falling back mid-word.
-  subsets: ['latin', 'latin-ext'],
+  // Only `latin` is preloaded: it covers English and Spanish headlines,
+  // including ñ and the accented vowels. The latin-ext face is still declared
+  // in the CSS (next/font includes every subset) and loads only if a headline
+  // actually uses one of its letters.
+  subsets: ['latin'],
   display: 'swap',
   variable: '--font-display',
 });
 
-/**
- * The Russian display face.
- *
- * Anton has no Cyrillic, so a Russian headline in it falls back to the body
- * face letter by letter. Oswald is the nearest condensed grotesque that does.
- * One weight, 700: the headline CSS asks for 400 (see `.hero h1`), and with a
- * single heavier face declared the browser uses it as is rather than
- * synthesising anything.
- */
-export const oswald = Oswald({
-  weight: '700',
-  subsets: ['cyrillic', 'latin'],
-  display: 'swap',
-  variable: '--font-display',
-});

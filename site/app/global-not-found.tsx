@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-import { anton } from '@/lib/fonts';
+import { antonNoPreload as anton } from '@/lib/font-anton-404';
 import { SITE_URL } from '@/lib/site';
 
 import './globals.css';

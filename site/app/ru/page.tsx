@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: ['/opengraph-image'],
   },
-  twitter: { title, description },
+  twitter: { card: 'summary_large_image', title, description, images: ['/opengraph-image'] },
 };
 
 export default function HomeRu() {

@@ -15,12 +15,13 @@ import { Prose, typeset } from '@/components/Prose';
 import { guidePath, languagesOf, relatedGuides, type Guide as GuideData } from '@/lib/guides';
 import { isTranslatedPage } from '@/lib/i18n';
 import type { GuideTable } from '@/lib/guides/types';
-import { CHROME, TRANSLATED } from '@/lib/i18n';
+import { CHROME, CUSTOM_PAGES, TRANSLATED } from '@/lib/i18n';
 import { articleSchema, faqSchema } from '@/lib/schema';
 import { videoSchema } from '@/lib/video';
 import { SITE_URL } from '@/lib/site';
 
 const HOME_CRUMB = { en: 'Home', ru: 'Главная', es: 'Inicio' } as const;
+const LIBRARY_CRUMB = { en: 'Exercise library', ru: 'Библиотека упражнений', es: 'Biblioteca de ejercicios' } as const;
 
 /**
  * `**bold**` and `[label](/path/)`, and nothing else.
@@ -128,18 +129,18 @@ export function Guide({ guide }: { guide: GuideData }) {
   // English only: the sheets are in English.
   const printable = guide.lang === 'en' ? printableForGuide(guidePath(guide)) : undefined;
 
+  // Exercise pages sit under the exercise library, so their trail has the
+  // library in the middle: Home > Exercise library > Calf raises.
+  const inLibrary = guide.page.startsWith('ex');
+  const trail = [
+    { name: HOME_CRUMB[guide.lang], item: `${SITE_URL}${TRANSLATED.home[guide.lang]}` },
+    ...(inLibrary ? [{ name: LIBRARY_CRUMB[guide.lang], item: `${SITE_URL}${CUSTOM_PAGES.exercises[guide.lang]}` }] : []),
+    { name: guide.crumb, item: url },
+  ];
   const breadcrumbs = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: HOME_CRUMB[guide.lang],
-        item: `${SITE_URL}${TRANSLATED.home[guide.lang]}`,
-      },
-      { '@type': 'ListItem', position: 2, name: guide.crumb, item: url },
-    ],
+    itemListElement: trail.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.item })),
   };
 
   return (

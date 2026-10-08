@@ -21,9 +21,11 @@ export const metadata: Metadata = {
     'Условия использования Walkito: что делает приложение, ваш аккаунт, подписки, приглашения, здоровье и безопасность.',
   alternates: alternatesFor('terms', 'ru'),
   openGraph: {
+    locale: 'ru_RU',
     title: `Условия использования | ${SITE_NAME}`,
     description: 'Что такое приложение, как устроена оплата и где заканчиваются его обещания.',
     url: '/ru/usloviya/',
+    images: ['/opengraph-image'],
     type: 'website',
   },
 };

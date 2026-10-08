@@ -160,10 +160,29 @@ export const APPLE_APP_ID: string | null = '6813076846';
  * `affiliate-data=pt=<provider>&ct=<campaign>`. Without a token it is the plain
  * banner.
  */
-export function smartBannerContent(campaign: string): string | null {
+export function smartBannerContent(campaign: string, open: AppScreen = 'today'): string | null {
   if (!APPLE_APP_ID) return null;
-  if (!APP_STORE_PROVIDER_TOKEN) return `app-id=${APPLE_APP_ID}`;
-  return `app-id=${APPLE_APP_ID}, affiliate-data=pt=${APP_STORE_PROVIDER_TOKEN}&ct=${campaign}`;
+  const argument = `app-argument=${appLink(open, campaign)}`;
+  if (!APP_STORE_PROVIDER_TOKEN) return `app-id=${APPLE_APP_ID}, ${argument}`;
+  return `app-id=${APPLE_APP_ID}, affiliate-data=pt=${APP_STORE_PROVIDER_TOKEN}&ct=${campaign}, ${argument}`;
+}
+
+/**
+ * The screens the app opens from a link (`src/pages/open/model/route.ts` in
+ * the app). Smart App Banner's "Open" button, for people who already have the
+ * app, hands this to the app instead of opening it cold on Home.
+ */
+export type AppScreen = 'today' | 'test' | 'library/morning';
+
+/**
+ * `walkito:///?open=<screen>` rather than the /open/ universal link: it is
+ * the shape the app rewrites before routing (`src/pages/open/model/intent.ts`),
+ * and a build from before the /open route opens it as Home with a query it
+ * ignores instead of an "Unmatched Route" screen. Same reason the site's
+ * /open/ page hands over in this shape.
+ */
+export function appLink(open: AppScreen, campaign: string): string {
+  return `walkito:///?open=${open}&src=${campaign}`;
 }
 
 export const SUPPORT_EMAIL = 'hello@walkito.site';
