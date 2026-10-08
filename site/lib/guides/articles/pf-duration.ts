@@ -20,7 +20,7 @@ export const PF_DURATION_EN: Guide = {
     'A 2020 review reports that about 90 percent of plantar fasciitis cases respond to non-surgical care, often within several months (Latt and colleagues, 2020).',
     'A longer-term cohort of 174 patients found the risk of still having plantar fasciitis was 80.5 percent at one year, 50.0 percent at five years, and 45.6 percent at ten years from symptom onset (Hansen and colleagues, 2018).',
     'Significant predictors of slower recovery in that cohort were being female and having bilateral heel pain. BMI, age, fascia thickness, and heel spurs had no significant effect on prognosis (Hansen and colleagues, 2018).',
-    'The 2023 heel pain guideline gives stretching a grade of **A** and strength training a **B**. Night splints for persistent morning pain and low-level laser or dry needling from a clinician both receive a **B** (Koc and colleagues, 2023).',
+    'The 2023 heel pain guideline gives stretching a grade of **A** and strength training a **B**. Night splints for persistent morning pain get an **A**, and low-level laser or dry needling from a clinician a **B** (Koc and colleagues, 2023).',
     'Morning pain on a 0 to 10 scale, tracked daily, is the most practical way to see whether recovery is moving in the right direction.',
   ],
   toc: true,

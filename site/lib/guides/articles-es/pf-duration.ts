@@ -20,7 +20,7 @@ export const PF_DURATION_ES: Guide = {
     'Una revisión de 2020 indica que cerca del 90\u00A0% de los casos de fascitis plantar responde a cuidados sin cirugía, a menudo en varios meses (Latt y colegas, 2020).',
     'Una cohorte de 174\u00A0pacientes seguida a largo plazo encontró que el riesgo de seguir con fascitis plantar era del 80,5\u00A0% al año, del 50,0\u00A0% a los cinco años y del 45,6\u00A0% a los diez años desde que empezaron los síntomas (Hansen y colegas, 2018).',
     'En esa cohorte, lo que predecía de forma significativa una recuperación más lenta era ser mujer y tener dolor en los dos talones. El IMC, la edad, el grosor de la fascia y los espolones calcáneos no tuvieron un efecto significativo en el pronóstico (Hansen y colegas, 2018).',
-    'La guía de 2023 para el dolor de talón le da al estiramiento un grado **A** y al entrenamiento de fuerza una **B**. Las férulas nocturnas para el dolor de la mañana que no se va, y el láser de baja intensidad o la punción seca hechos por un profesional, reciben una **B** (Koc y colegas, 2023).',
+    'La guía de 2023 para el dolor de talón le da al estiramiento un grado **A** y al entrenamiento de fuerza una **B**. Las férulas nocturnas para el dolor de la mañana que no se va reciben una **A**, y el láser de baja intensidad o la punción seca hechos por un profesional, una **B** (Koc y colegas, 2023).',
     'Anotar cada día el dolor de la mañana en una escala de 0 a 10 es la forma más práctica de ver si la recuperación va en la dirección correcta.',
   ],
   toc: true,

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
-import { ARTICLES_EN, ARTICLES_ES, ARTICLES_RU, GUIDES } from '@/lib/guides';
-import { LANGS, CUSTOM_PAGES, EN_ONLY, ES_ARTICLES, RU_ARTICLES, TRANSLATED, type CustomPage, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { ARTICLES_EN, ARTICLES_ES, ARTICLES_NEW, ARTICLES_RU, GUIDES } from '@/lib/guides';
+import { NEW_ARTICLE_PATHS, NEW_LANGS, LANGS, CUSTOM_PAGES, EN_ONLY, ES_ARTICLES, RU_ARTICLES, TRANSLATED, type CustomPage, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
 import { PAGE_UPDATED, SITE_URL } from '@/lib/site';
 
 /**
@@ -83,18 +83,21 @@ function customPage(
 function article(page: EnglishPage, enUpdated: string): MetadataRoute.Sitemap {
   const es = ARTICLES_ES[page];
   const ru = ARTICLES_RU[page];
-  if (!es && !ru) return [single(EN_ONLY[page], enUpdated, 'monthly', 0.9)];
+  const news = NEW_LANGS.filter((l) => ARTICLES_NEW[l][page]);
+  if (!es && !ru && news.length === 0) return [single(EN_ONLY[page], enUpdated, 'monthly', 0.9)];
   const languages: Record<string, string> = {
     en: `${SITE_URL}${EN_ONLY[page]}`,
     'x-default': `${SITE_URL}${EN_ONLY[page]}`,
   };
   if (es) languages.es = `${SITE_URL}${ES_ARTICLES[page]}`;
   if (ru) languages.ru = `${SITE_URL}${RU_ARTICLES[page]}`;
+  for (const l of news) languages[l] = `${SITE_URL}${NEW_ARTICLE_PATHS[l][page]}`;
   const entries: MetadataRoute.Sitemap = [
     { url: languages.en, lastModified: enUpdated, changeFrequency: 'monthly', priority: 0.9, alternates: { languages } },
   ];
   if (es) entries.push({ url: languages.es, lastModified: es.updated, changeFrequency: 'monthly', priority: 0.8, alternates: { languages } });
   if (ru) entries.push({ url: languages.ru!, lastModified: ru.updated, changeFrequency: 'monthly', priority: 0.8, alternates: { languages } });
+  for (const l of news) entries.push({ url: languages[l], lastModified: ARTICLES_NEW[l][page]!.updated, changeFrequency: 'monthly', priority: 0.8, alternates: { languages } });
   return entries;
 }
 
