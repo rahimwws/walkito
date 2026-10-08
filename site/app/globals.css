@@ -4793,7 +4793,7 @@ html[data-scrolled] .masthead-float .download {
   line-gap-override: 0%;
 }
 
-html:not(:lang(ru)) .hero-glass .hero-title {
+html:not(:lang(ru)) .hero-glass h1.hero-title {
   font-family: Anton, 'Anton Caps Fallback', var(--font-body);
 }
 
@@ -4807,9 +4807,9 @@ html:not(:lang(ru)) .hero-glass .hero-title {
  * would need more than two rows. Phones: smaller, and never more than the
  * longest word allows. About 0.46em a character in Anton capitals; Oswald's
  * Cyrillic capitals run 0.54em on average and up to 0.6em in a long word.
- * The h1 inside takes all of it from the wrapper (see below).
+ * `h1.` to outweigh `:lang(ru) .hero h1`.
  */
-.hero-glass .hero-title {
+.hero-glass h1.hero-title {
   --h1-em: 0.46;
   --h1-word-em: 0.48;
   position: relative;
@@ -4823,13 +4823,13 @@ html:not(:lang(ru)) .hero-glass .hero-title {
   text-wrap: balance;
 }
 
-:lang(ru) .hero-glass .hero-title {
+:lang(ru) .hero-glass h1.hero-title {
   --h1-em: 0.54;
   --h1-word-em: 0.6;
 }
 
 @media (min-width: 761px) {
-  .hero-glass .hero-title {
+  .hero-glass h1.hero-title {
     margin-bottom: -0.4em;
     font-size: min(
       clamp(64px, 10.5vw, 168px),
@@ -5038,110 +5038,126 @@ html[data-scrolled] .masthead-float .download-alt {
   }
 }
 
-/* The heading and its blurred copy are the wrapper's type exactly, so the two
-   break into the same rows. */
-.hero-glass .hero-title {
-  font-family: var(--font-display), var(--font-body);
-}
-
-.hero-glass .hero-title > .hero-sharp,
-.hero-glass .hero-title > .hero-soft {
-  margin: 0;
-  font: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  text-transform: inherit;
-  text-wrap: inherit;
-}
-
-.hero-glass .hero-soft {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  filter: blur(0.06em);
-  opacity: 0;
-}
-
 /*
- * The blur passing through the letters, left to right, once the words have
- * risen. Both layers carry the same moving band as a mask, the heading its
- * negative: inside the band only the blurred copy shows, outside it only the
- * heading. The masks are three widths wide, so they always cover the box.
- * Only while the hero is on screen (`data-live`), never with Reduce Motion.
+ * After the opening, a blur passes through the words one at a time, in
+ * reading order: each word softens and comes back while the next takes it
+ * up, and the round starts again. The filter sits on the word's clip, so the
+ * blur spreads past the letters rather than being cut by it. One round is the
+ * words' count times the step plus a rest. Only while the hero is on screen
+ * (`data-live`), never with Reduce Motion.
  */
 @media (prefers-reduced-motion: no-preference) {
-  .hero-glass .hero-sharp,
-  .hero-glass .hero-soft {
-    -webkit-mask-size: 300% 100%;
-    mask-size: 300% 100%;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: 90% 0;
-    mask-position: 90% 0;
-    animation: hero-blur-sweep 6.5s cubic-bezier(0.45, 0, 0.55, 1) 1.8s infinite;
+  .hero-glass .hero-word {
+    --step: 0.32s;
+    --round: calc(var(--words, 9) * var(--step) + 3.2s);
+    animation: hero-word-blur var(--round) ease-in-out infinite;
+    animation-delay: calc(1.9s + var(--w) * var(--step));
   }
 
-  .hero-glass .hero-sharp {
-    -webkit-mask-image: linear-gradient(90deg, #000 46.5%, transparent 49%, transparent 51%, #000 53.5%);
-    mask-image: linear-gradient(90deg, #000 46.5%, transparent 49%, transparent 51%, #000 53.5%);
-  }
-
-  .hero-glass .hero-soft {
-    opacity: 1;
-    -webkit-mask-image: linear-gradient(90deg, transparent 46.5%, #000 49%, #000 51%, transparent 53.5%);
-    mask-image: linear-gradient(90deg, transparent 46.5%, #000 49%, #000 51%, transparent 53.5%);
-  }
-
-  .hero-glass:not([data-live]) .hero-sharp,
-  .hero-glass:not([data-live]) .hero-soft {
+  .hero-glass:not([data-live]) .hero-word {
     animation-play-state: paused;
   }
 }
 
-@keyframes hero-blur-sweep {
-  0% {
-    -webkit-mask-position: 90% 0;
-    mask-position: 90% 0;
+@keyframes hero-word-blur {
+  0%,
+  14%,
+  100% {
+    filter: blur(0);
   }
 
-  70%,
-  100% {
-    -webkit-mask-position: 10% 0;
-    mask-position: 10% 0;
+  6% {
+    filter: blur(0.07em);
   }
 }
 
-/* ---- the language picker in the header, where "Get the app" was ---- */
+/* ---- the header's right end: the languages, then "Get the app" ---- */
 
 /* The wrapper keeps `.download` for the floating header's measuring, and none
-   of the button's look. */
-.masthead .download.masthead-lang,
-html[data-scrolled] .masthead-float .download.masthead-lang {
+   of the button's look. Both children sit in its one cell, left-aligned, so it
+   keeps the size and the left edge the header measured. */
+.masthead .download.masthead-end,
+html[data-scrolled] .masthead-float .download.masthead-end {
+  display: grid;
+  justify-items: start;
+  align-items: center;
   padding: 0;
   background: none;
   box-shadow: none;
   transform: none;
 }
 
-.masthead-lang .lp-button {
-  min-height: 48px;
-  padding: 0 16px 0 14px;
-  font-size: 16px;
+.masthead-end > * {
+  grid-area: 1 / 1;
+  transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+/* A smaller button than the footer's: the globe and the name, no caret. */
+.masthead-end .lp-button {
+  gap: 7px;
+  min-height: 42px;
+  padding: 0 15px 0 12px;
+  font-size: 15px;
+  line-height: 1;
   background: rgba(255, 255, 255, 0.16);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.34);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
 
-.masthead-lang .lp-button:hover,
-.masthead-lang .lp[open] .lp-button {
+.masthead-end .lp-button svg {
+  display: block;
+  flex: none;
+}
+
+.masthead-end .lp-button:hover,
+.masthead-end .lp[open] .lp-button {
   background: rgba(255, 255, 255, 0.24);
 }
 
-/* Over the white page: the nav's deep blue. */
-html[data-scrolled] .masthead-float .masthead-lang .lp-button {
-  background: rgba(8, 40, 200, 0.86);
-  box-shadow: none;
+.masthead-get {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: var(--radius-button);
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: inset 0 0 0 1px rgba(17, 17, 20, 0.08);
+}
+
+.masthead-get svg {
+  width: 17px;
+  height: 17px;
+  margin-top: -2px;
+}
+
+/* At the top: the languages. */
+.masthead-end > .masthead-get {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Scrolled: "Get the app". */
+html[data-scrolled] .masthead-end > .lp {
+  opacity: 0;
+  visibility: hidden;
+}
+
+html[data-scrolled] .masthead-end > .masthead-get {
+  opacity: 1;
+  visibility: visible;
+}
+
+@supports (corner-shape: superellipse(1.5)) {
+  .masthead-get {
+    corner-shape: superellipse(1.5);
+  }
 }
 
 .lp-down .lp-menu {

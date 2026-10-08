@@ -1,6 +1,5 @@
 'use client';
 
-import { CaretDownIcon } from '@phosphor-icons/react/dist/csr/CaretDown';
 import { CaretUpIcon } from '@phosphor-icons/react/dist/csr/CaretUp';
 import { CheckIcon } from '@phosphor-icons/react/dist/csr/Check';
 import { GlobeIcon } from '@phosphor-icons/react/dist/csr/Globe';
@@ -74,11 +73,7 @@ export function LangPicker({
       <summary className="lp-button" aria-label={`${label}: ${current}`}>
         <GlobeIcon size={18} weight="fill" aria-hidden />
         <span>{current}</span>
-        {place === 'down' ? (
-          <CaretDownIcon className="lp-caret" size={14} weight="bold" aria-hidden />
-        ) : (
-          <CaretUpIcon className="lp-caret" size={14} weight="bold" aria-hidden />
-        )}
+        {place === 'up' && <CaretUpIcon className="lp-caret" size={14} weight="bold" aria-hidden />}
       </summary>
       <nav className="lp-menu" aria-label={label}>
         {options.map((o) =>

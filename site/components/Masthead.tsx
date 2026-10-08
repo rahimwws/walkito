@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { GetAppDialog } from '@/components/GetApp';
+import { AppleGlyph } from '@/components/AppStoreBadge';
+import { GetAppButton, GetAppDialog } from '@/components/GetApp';
 import { LangPicker } from '@/components/LangPicker';
 import { MobileMenu } from '@/components/MobileMenu';
 import { ScrollState } from '@/components/ScrollState';
@@ -21,8 +22,8 @@ const QR = qrPath(`${SITE_URL}/get/`, { hole: 0.24 });
  * does the measuring and sets `html[data-scrolled]`; it is rendered here so no
  * page has to remember it.
  *
- * On the right, the language picker (the footer's, opening downward). "Get
- * the app" lives in the hero and the phone menu; the header renders the one
+ * On the right, the language picker (the footer's, opening downward), which
+ * gives way to "Get the app" once the page scrolls. The header renders the one
  * dialog with the QR code that every such button on the page opens.
  *
  * `current` marks the link of the page being shown (`aria-current`), drawn as
@@ -69,16 +70,24 @@ export function Masthead({
         ))}
       </nav>
 
-      {/* The languages, where "Get the app" used to be: the hero and the phone
-          menu carry that. Still `.download` on the wrapper, which the floating
-          header measures and moves. */}
-      <div className="download masthead-lang">
+      {/* At the top of the page, the languages; once it scrolls, "Get the app"
+          in their place. Both share one grid cell, so the box the floating
+          header measures and moves (`.download`) keeps its size. */}
+      <div className="download masthead-end">
         <LangPicker
           place="down"
           label={c.language}
           current={LANG_NAMES[lang]}
           options={LANGS.map((l) => ({ lang: l, name: LANG_NAMES[l], href: TRANSLATED.home[l], current: l === lang }))}
         />
+        <GetAppButton
+          className="masthead-get"
+          ios={storeHref(`masthead${suffix}`) ?? '#'}
+          android={playHref(`masthead${suffix}`)}
+        >
+          <AppleGlyph />
+          {c.headerButton}
+        </GetAppButton>
       </div>
 
       {/* Phones: a burger in place of the nav and the button. */}
