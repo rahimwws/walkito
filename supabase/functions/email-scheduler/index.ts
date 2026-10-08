@@ -36,7 +36,7 @@ import { composeMessage, type MailConfig } from '../_shared/email/compose.ts';
 import { loadSnapshots } from '../_shared/email/load.ts';
 import { evaluate, welcomeNow } from '../_shared/email/rules.ts';
 import { sampleEmails } from '../_shared/email/samples.ts';
-import { siteLeadEmail } from '../_shared/email/site-leads.ts';
+import { siteFooterWhy, siteLeadEmail } from '../_shared/email/site-leads.ts';
 import { unsubscribeToken } from '../_shared/email/links.ts';
 import { renderEmail } from '../_shared/email/template.ts';
 import { asLocale, type Locale } from '../_shared/email/types.ts';
@@ -387,7 +387,7 @@ Deno.serve(async (req) => {
             settingsUrl: unsubscribeUrl,
             postalAddress: config.postalAddress ? config.postalAddress.toLowerCase() : '',
             assetBase: config.linkBase,
-            footerWhy: "you're getting this because you asked for the free exercise sheets on walkito.site.",
+            footerWhy: siteFooterWhy(locale),
             hideSettings: true,
           });
 

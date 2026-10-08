@@ -18,7 +18,7 @@
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
 import { unsubscribeToken } from '../_shared/email/links.ts';
-import { confirmEmail, day0Welcome } from '../_shared/email/site-leads.ts';
+import { confirmEmail, day0Welcome, siteFooterWhy } from '../_shared/email/site-leads.ts';
 import { renderEmail } from '../_shared/email/template.ts';
 
 const env = (name: string): string => Deno.env.get(name) ?? '';
@@ -124,7 +124,7 @@ async function renderSiteEmail(
     settingsUrl: unsubscribeUrl,
     postalAddress: POSTAL ? POSTAL.toLowerCase() : '',
     assetBase: SITE,
-    footerWhy: "you're getting this because you asked for the free exercise sheets on walkito.site.",
+    footerWhy: siteFooterWhy(locale),
     hideSettings: true,
   });
 
