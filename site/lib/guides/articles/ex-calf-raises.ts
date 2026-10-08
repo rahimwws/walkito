@@ -37,7 +37,7 @@ export const EX_CALF_RAISES: Guide = {
       cites: [CITE.patelGastrocnemius],
     },
     {
-      h2: 'How to do a standing calf raise (double-leg)',
+      h2: 'How do you do a standing calf raise?',
       paragraphs: [
         'Stand with both feet flat on the floor, about hip-width apart. Hold a wall or chair for balance. Rise up onto the balls of your feet, pushing through the big toes. Hold for a beat at the top, then lower slowly over about three seconds. Both feet share the load.',
         'If you have access to a step, stand with the balls of your feet on the edge and let the heels hang slightly below on the way down. That extra range at the bottom stretches the calf a little more each rep. On the floor, the range is smaller but the exercise still works.',
@@ -113,6 +113,7 @@ export const EX_CALF_RAISES: Guide = {
     },
     {
       h2: 'How many calf raises should you do?',
+      keyFact: 'A normative study of 566 healthy adults aged 20 to 81 found single-leg calf-raise counts varied by age, sex and activity level, with women reaching a median of 21 reps (Hebert-Losier and colleagues, 2017).',
       paragraphs: [
         'It depends on where you are in the ladder and what you are working on. For general calf strength, 3 sets of 10 to 15 reps at a slow tempo is a common starting dose. For the research-tested plantar fasciitis protocol, the towel heel raise starts at a 12-repetition maximum for 3 sets and progresses to 8RM for 5 sets over about five weeks.',
         'A useful benchmark is the single-leg heel-raise endurance test. A normative study of 566 healthy adults found a median of 24 reps for men and 21 for women, varying with age, sex and activity. The calf goal in the Walkito app is 25 single-leg calf raises. Reaching it does not end the work. It moves to maintaining.',
@@ -121,7 +122,7 @@ export const EX_CALF_RAISES: Guide = {
       cites: [CITE.hebertLosier, CITE.rathleff],
     },
     {
-      h2: 'Common mistakes with calf raises',
+      h2: 'What are the common mistakes with calf raises?',
       paragraphs: [
         'Going too fast. A slow descent (about three seconds) is what builds strength. Bouncing at the bottom wastes the eccentric phase, which is the part that does most of the work for tendon adaptation.',
         'Rolling to the outside edge of the foot. The push should go through the big toe and the ball of the foot. If the ankle rolls outward, the calf cannot contract fully and the small muscles on the outside of the ankle take strain they are not built for.',

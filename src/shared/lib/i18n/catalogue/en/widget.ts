@@ -8,6 +8,8 @@ import type { SourceEntry } from '../entry';
 export const WIDGET_EN = {
   // ── Small: the check-in ──────────────────────────────────────────────────
   'widget.question': 'How’s the foot today?',
+  /** Before noon: the first steps out of bed. Short, to fit the small widget. */
+  'widget.questionMorning': 'First steps this morning?',
   'widget.hurts': 'It hurts',
   'widget.fine': 'No pain',
   'widget.ackNoPain': 'Logged: no pain today.',

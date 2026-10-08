@@ -26,12 +26,16 @@ function clipSeconds(id: string): number | undefined {
 }
 
 export function videoSchema(
-  items: readonly { media?: string; name: string; caption?: string; how: string }[],
+  items: readonly { media?: string; mediaIsStandIn?: boolean; name: string; caption?: string; how: string }[],
   lang: Lang,
   uploadDate: string,
 ) {
+  // One VideoObject per clip per page: a clip shown twice is one video, and a
+  // stand-in clip is not described as a video of the block it illustrates.
+  const seen = new Set<string>();
   return items
-    .filter((e): e is typeof e & { media: string } => Boolean(e.media))
+    .filter((e): e is typeof e & { media: string } => Boolean(e.media) && !e.mediaIsStandIn)
+    .filter((e) => (seen.has(e.media) ? false : (seen.add(e.media), true)))
     .map((e) => {
       const seconds = clipSeconds(e.media);
       return {
@@ -46,4 +50,35 @@ export function videoSchema(
         ...(seconds ? { duration: `PT${seconds}S` } : {}),
       };
     });
+}
+
+/**
+ * `ImageObject` for each exercise still a guide shows, so image search can
+ * list it with its name and credit it to Walkito (the stills are frames from
+ * the app's own clips). Only stills that are on the page: the caller passes
+ * the exercises it renders with media. One object per still per page.
+ */
+export function imageSchema(
+  items: readonly { media?: string; name: string; alt?: string }[],
+  lang: Lang,
+  pageUrl: string,
+) {
+  const seen = new Set<string>();
+  return items
+    .filter((e): e is typeof e & { media: string } => Boolean(e.media))
+    .filter((e) => (seen.has(e.media) ? false : (seen.add(e.media), true)))
+    .map((e) => ({
+      '@context': 'https://schema.org',
+      '@type': 'ImageObject',
+      contentUrl: `${SITE_URL}/exercises/${e.media}@2x.webp`,
+      url: pageUrl,
+      name: e.name,
+      ...(e.alt ? { caption: e.alt } : {}),
+      inLanguage: lang,
+      width: 720,
+      height: 900,
+      creator: { '@type': 'Organization', name: 'Walkito', url: SITE_URL },
+      creditText: 'Walkito',
+      copyrightNotice: '© Walkito',
+    }));
 }

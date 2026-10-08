@@ -5,7 +5,7 @@ import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
-/** The radius `PerformanceCard` uses. These sit directly under it, and two
+/** The radius the Progress cards use. These sit directly under them, and two
  * different corners in the same column read as two different design systems. */
 const RADIUS = 28;
 const ICON_SIZE = 30;

@@ -8,6 +8,7 @@ export {
   ZONE_LABEL_KEYS,
   painAreasOf,
   toggleZone,
+  whereKey,
   zoneAt,
   type LegZone,
   type PainArea,

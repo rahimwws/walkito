@@ -13,6 +13,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 
 import { EmailSettings } from './email-settings';
 import { PlanSettings } from './plan-settings';
+import { SoundSettings } from './sound-settings';
 
 /**
  * Language, then what App Review asks to be findable.
@@ -77,6 +78,8 @@ export function SettingsPage() {
       <LanguageOptions />
 
       <PlanSettings />
+
+      <SoundSettings />
 
       <EmailSettings />
 

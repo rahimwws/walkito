@@ -30,14 +30,14 @@ export const EXERCISES_RU = {
     'Тяните пальцы на себя, пока не почувствуете свод стопы, а не икру.',
 
   'exercises.calfStretchStraight.title': 'Растяжка икры',
-  'exercises.calfStretchStraight.rationale': 'Зажатая икра весь день тянет за пятку.',
+  'exercises.calfStretchStraight.rationale': 'Расслабленная икра снимает часть нагрузки с пятки.',
   'exercises.calfStretchStraight.cue': 'Задняя нога прямая, пятка на полу, таз вперёд.',
 
   'exercises.calfStretchBent.title': 'Растяжка камбаловидной',
   'exercises.calfStretchBent.rationale':
     'Камбаловидная мышца лежит глубже и отпускает только при согнутом колене.',
   'exercises.calfStretchBent.cue':
-    'Согните заднее колено, пока не почувствуете натяжение ниже, ближе к пятке.',
+    'Слегка согните оба колена. Пятка задней ноги стоит на полу.',
 
   'exercises.ankleRocks.title': 'Качания в голеностопе',
   'exercises.ankleRocks.rationale': 'Подвижный голеностоп позволяет пятке оставаться на полу.',
@@ -45,7 +45,7 @@ export const EXERCISES_RU = {
 
   // ── The loaded work ──────────────────────────────────────────────────────
   'exercises.heelRaiseTowel.title': 'Подъёмы на носки',
-  'exercises.heelRaiseTowel.rationale': 'Именно это упражнение быстрее всего снимает боль.',
+  'exercises.heelRaiseTowel.rationale': 'В одном исследовании медленные подъёмы с весом облегчали боль быстрее, чем одна растяжка.',
   'exercises.heelRaiseTowel.cue': 'Полотенце под пальцами. Без него вы просто качаете икры.',
 
   'exercises.heelRaisePlain.title': 'Подъёмы на одной ноге',
@@ -71,7 +71,7 @@ export const EXERCISES_RU = {
   'exercises.toeSpread.title': 'Разведение пальцев',
   'exercises.toeSpread.rationale':
     'Пальцы, которые умеют расходиться, берут часть нагрузки со свода.',
-  'exercises.toeSpread.cue': 'Разведите пальцы широко и удержите. Поднимать их не нужно.',
+  'exercises.toeSpread.cue': 'Разведите пальцы в стороны по полу, затем прижмите к полу большой палец и мизинец.',
 
   'exercises.bandInversion.title': 'Поворот стопы внутрь',
   'exercises.bandInversion.rationale':
@@ -79,9 +79,9 @@ export const EXERCISES_RU = {
   'exercises.bandInversion.cue':
     'Двигается только стопа против резинки, а не вся нога. Колено остаётся на месте.',
 
-  'exercises.hipAbduction.title': 'Отведение бедра',
+  'exercises.hipAbduction.title': 'Подъём ноги лёжа на боку',
   'exercises.hipAbduction.rationale': 'Когда бедро проваливается, нагрузка уходит на свод стопы.',
-  'exercises.hipAbduction.cue': 'Отталкивайтесь пяткой, а не пальцами.',
+  'exercises.hipAbduction.cue': 'Лягте на бок. Поднимите верхнюю ногу вверх и чуть назад, носок смотрит вперёд.',
 
   // ── Balance ──────────────────────────────────────────────────────────────
   'exercises.singleLegHold.title': 'Стойка на одной ноге',
@@ -126,7 +126,7 @@ export const EXERCISES_RU = {
   'exercises.heelRaiseHold.cue': 'Поднимитесь и замрите наверху - не проседайте.',
 
   'exercises.bigToeLift.title': 'Подъём большого пальца',
-  'exercises.bigToeLift.rationale': 'Учит большой палец двигаться отдельно - первое включение свода.',
+  'exercises.bigToeLift.rationale': 'Учит большой палец двигаться отдельно.',
   'exercises.bigToeLift.cue': 'Поднимайте только большой палец. Остальные четыре лежат на полу.',
 
   'exercises.towelScrunch.title': 'Собирание полотенца',

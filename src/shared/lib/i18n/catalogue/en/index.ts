@@ -3,6 +3,7 @@ import { EXERCISES_EN } from './exercises';
 import { HOME_EN } from './home';
 import { NOTIFICATIONS_EN } from './notifications';
 import { OFFER_EN } from './offer';
+import { JOURNEY_EN } from './journey';
 import { ONBOARDING_EN } from './onboarding';
 import { PAGES_EN } from './pages';
 import { PROFILE_EN } from './profile';
@@ -28,6 +29,7 @@ import { UPDATE_EN } from './update';
 export const en = {
   ...CORE_EN,
   ...ONBOARDING_EN,
+  ...JOURNEY_EN,
   ...HOME_EN,
   ...PROGRESS_EN,
   ...QUICK_EN,

@@ -9,7 +9,7 @@
 
 /** Ordered as the picker renders them: the source language first, then by
  * speaker count. */
-export const LANGUAGES = ['en', 'ru', 'es'] as const;
+export const LANGUAGES = ['en', 'ru', 'es', 'pt', 'fr', 'de', 'it'] as const;
 
 export type Language = (typeof LANGUAGES)[number];
 
@@ -31,6 +31,10 @@ export const LANGUAGE_META: Record<Language, { name: string; badge: string }> = 
   en: { name: 'English', badge: 'EN' },
   ru: { name: 'Русский', badge: 'RU' },
   es: { name: 'Español', badge: 'ES' },
+  pt: { name: 'Português', badge: 'PT' },
+  fr: { name: 'Français', badge: 'FR' },
+  de: { name: 'Deutsch', badge: 'DE' },
+  it: { name: 'Italiano', badge: 'IT' },
 };
 
 /** Narrows anything to a supported language, or null. Accepts full tags

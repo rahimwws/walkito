@@ -21,15 +21,22 @@ export function howWeResearchHref(lang: Lang): string {
  * health site cannot afford to have caught.
  */
 /**
- * The person who writes the guides. Named because on a health topic a page
- * with a real, checkable person behind it is trusted over one signed by a
- * team name. He is a co-founder, not a clinician, and the byline says so in
- * as many words: the clinical weight still comes from the cited sources, and
- * from a reviewer once there is one (`lib/reviewer.ts`).
+ * The co-founder profile, kept for the About page's founders section. The
+ * guides themselves are signed "Walkito Research" (decided with Rahman,
+ * 2026-10-07): the trust comes from the cited sources and the How-we-research
+ * rules, and from a clinician reviewer once there is one (`lib/reviewer.ts`).
  */
 export const AUTHOR = {
   name: 'Rahim Hudaykylyyev',
-  role: { en: 'co-founder of Walkito', ru: 'сооснователь Walkito', es: 'cofundador de Walkito' },
+  role: {
+    en: 'co-founder of Walkito',
+    ru: 'сооснователь Walkito',
+    es: 'cofundador de Walkito',
+    pt: 'cofundador do Walkito',
+    fr: 'cofondateur de Walkito',
+    it: 'cofondatore di Walkito',
+    de: 'Mitgründer von Walkito',
+  },
   sameAs: ['https://www.linkedin.com/in/rhdklv/', 'https://x.com/rahimwws', 'https://github.com/rahimwws'],
 } as const;
 
@@ -39,22 +46,12 @@ export function authorHref(lang: Lang): string {
 }
 
 export function authorFor(lang: Lang) {
-  return [
-    {
-      '@type': 'Person',
-      name: AUTHOR.name,
-      jobTitle: AUTHOR.role[lang],
-      url: `${SITE_URL}${authorHref(lang)}`,
-      sameAs: AUTHOR.sameAs,
-      worksFor: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    },
-    {
-      '@type': 'Organization',
-      name: AUTHOR_NAME,
-      url: `${SITE_URL}${howWeResearchHref(lang)}`,
-      parentOrganization: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    },
-  ];
+  return {
+    '@type': 'Organization',
+    name: AUTHOR_NAME,
+    url: `${SITE_URL}${howWeResearchHref(lang)}`,
+    parentOrganization: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  };
 }
 
 /**
@@ -129,7 +126,7 @@ export function faqSchema(items: readonly { q: string; a: string }[]) {
 
 /** A date as the page prints it, in the page's language. */
 export function formatDate(iso: string, lang: Lang): string {
-  const locale = { en: 'en-US', ru: 'ru-RU', es: 'es-ES' }[lang];
+  const locale = { en: 'en-US', ru: 'ru-RU', es: 'es-ES', pt: 'pt-BR', fr: 'fr-FR', it: 'it-IT', de: 'de-DE' }[lang];
   return new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(
     new Date(`${iso}T00:00:00Z`),
   );

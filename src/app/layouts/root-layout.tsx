@@ -30,7 +30,7 @@ import {
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
 import { useHomeWidget } from '@/features/home-widget';
 import { useAccessLapsed, useBrowsingLapsed, useEntitled } from '@/entities/purchase';
-import { useOnboarded } from '@/entities/session';
+import { useOnboarded, useSetupPending } from '@/entities/session';
 import { fontAssets } from '@/shared/config';
 import { configureObserve, markInteractive } from '@/shared/lib/observe';
 // Imported for its module-scope side effect as much as anything: reading the
@@ -128,6 +128,12 @@ function RootLayoutInner() {
    */
   const lapsed = useAccessLapsed();
   const browsing = useBrowsingLapsed();
+  /**
+   * The screens owed after the first purchase: saving the plan, Health, the
+   * watch, the founders' note and the widget (`pages/setup`). Armed when the
+   * new onboarding finishes, so an install from before never sees them.
+   */
+  const setupPending = useSetupPending();
   // Listens for the win-back notification being tapped, at the root rather
   // than on the sheet: the tap can be what launches the app, in which case no
   // screen has mounted yet to hear it.
@@ -271,7 +277,21 @@ function RootLayoutInner() {
                   {/* Paid, or browsing their own history after access ended. The
                       second case is read-only: the session player refuses
                       to start anything while `sessionsLocked()` holds. */}
-                  <Stack.Protected guard={onboarded && (entitled || (lapsed && browsing))}>
+                  {/* Straight after the first purchase, once: the same one-way door
+                      as the paywall, so there is nothing behind it to swipe to. */}
+                  <Stack.Protected guard={onboarded && entitled && setupPending}>
+                    <Stack.Screen
+                      name="setup"
+                      options={{
+                        headerShown: false,
+                        presentation: 'card',
+                        gestureEnabled: false,
+                        animation: 'fade',
+                      }}
+                    />
+                  </Stack.Protected>
+
+                  <Stack.Protected guard={onboarded && ((entitled && !setupPending) || (lapsed && browsing))}>
                     <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
                   </Stack.Protected>
 

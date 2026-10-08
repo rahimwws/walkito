@@ -66,6 +66,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_ES: Guide = {
     },
     {
       h2: '¿El estiramiento de la fascia plantar de verdad ayuda con la fascitis plantar?',
+      keyFact: 'En un ensayo con 82\u00A0personas con fascitis plantar crónica, el grupo que estiró la fascia plantar tuvo puntajes de dolor mucho mejores a las ocho semanas, tanto en el peor dolor como en los primeros pasos de la mañana (DiGiovanni y colegas, 2003).',
       paragraphs: [
         'En el ensayo original de 2003, 82\u00A0personas con fascitis plantar crónica de más de diez meses se asignaron al azar a un estiramiento de la fascia plantar o a un estiramiento estándar del tendón de Aquiles. A las ocho semanas, el grupo de la fascia plantar tuvo puntajes bastante mejores en el Foot Function Index, que mide el dolor y las limitaciones en la actividad. Los autores lo llamaron una diferencia clínicamente importante.',
         'Un estudio de seguimiento acompañó a los mismos pacientes durante dos años. A las ocho semanas, todos los participantes pasaron al estiramiento de la fascia plantar. A los dos años, el 92\u00A0% de todos los pacientes dijo estar satisfecho con su resultado, y el grupo que al principio estiraba el Aquiles mejoró mucho una vez que empezó con el estiramiento de la fascia plantar.',
@@ -85,7 +86,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_ES: Guide = {
       cites: [CITE.riddle, CITE.guideline],
     },
     {
-      h2: 'Errores comunes en el estiramiento de la fascia plantar',
+      h2: '¿Cuáles son los errores comunes en el estiramiento de la fascia plantar?',
       paragraphs: [
         'Jalar los dedos con demasiada fuerza. El estiramiento debe sentirse firme bajo el arco, no doloroso. Si haces muecas de dolor, ya te pasaste del rango útil. Afloja hasta sentir un tirón sin filo.',
         'Sentirlo en la pantorrilla en vez del arco. Si el estiramiento se siente sobre todo en la pantorrilla, la rodilla está demasiado estirada o estás jalando muy fuerte. Cruza el pie más arriba sobre la otra rodilla para que el tobillo se relaje, y concéntrate en doblar los dedos hacia atrás, no todo el pie.',

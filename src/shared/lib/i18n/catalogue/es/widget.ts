@@ -2,6 +2,8 @@
 
 export const WIDGET_ES = {
   'widget.question': '¿Cómo va el pie hoy?',
+  /** Before noon: the first steps out of bed. Short, to fit the small widget. */
+  'widget.questionMorning': '¿Primeros pasos de hoy?',
   'widget.hurts': 'Me duele',
   'widget.fine': 'Sin dolor',
   'widget.ackNoPain': 'Anotado: hoy sin dolor.',

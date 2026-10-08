@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   // The root template appends " | Walkito".
   title: 'Privacidad',
   description:
-    'Qué recopila Walkito y por qué. Tu plan y tus registros se guardan en tu cuenta; los datos de Apple Salud y Health Connect se quedan en tu teléfono. Sin anuncios ni rastreo.',
+    'Qué recopila Walkito y por qué. Tu plan se guarda en tu cuenta; los datos de Apple Salud y Health Connect quedan en tu teléfono. Sin anuncios ni rastreo.',
   alternates: alternatesFor('privacy', 'es'),
 };
 
@@ -31,7 +31,7 @@ export default function PrivacidadEs() {
       <Prose className="shell prose">
         <h1>Privacidad</h1>
 
-        <p className="updated">Última actualización: 6 de octubre de 2026</p>
+        <p className="updated">Última actualización: 7 de octubre de 2026</p>
         <p className="updated">
           Esta es una traducción. Si difiere de{' '}
           <a href="/privacy/">la versión en inglés</a>, se aplica la versión en
@@ -382,6 +382,33 @@ export default function PrivacidadEs() {
           servicios de arriba tratan datos fuera de tu país, incluido en
           Estados Unidos, con sus propias garantías para las transferencias
           internacionales.
+        </p>
+
+        <h2>Suscripcion en el sitio web</h2>
+        <p>
+          Si te suscribes en el sitio web para recibir los ejercicios y el plan
+          de 7 dias, guardamos tu email, el idioma, la pagina donde te
+          suscribiste y un registro de cada correo enviado.
+        </p>
+        <p>
+          <b>Para que:</b> para enviarte los ejercicios y los siete correos
+          diarios, y nada mas.
+        </p>
+        <p>
+          <b>Procesadores:</b> Resend (entrega los correos) y Supabase (guarda
+          la suscripcion).
+        </p>
+        <p>
+          <b>No se crea una cuenta.</b> La suscripcion en el sitio web no crea
+          una cuenta en la app. Los datos se guardan por separado.
+        </p>
+        <p>
+          <b>Darse de baja:</b> cada correo tiene un enlace para darse de baja
+          con un clic. Tras darte de baja, dejamos de enviar y eliminamos tus
+          datos en un plazo de 30 dias. Tambien puedes escribir a {mail}.
+        </p>
+        <p>
+          <b>El sitio web no usa cookies ni carga ningun rastreador.</b>
         </p>
 
         <h2>No es consejo médico</h2>

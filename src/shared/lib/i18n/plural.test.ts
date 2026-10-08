@@ -87,3 +87,32 @@ describe('negatives', () => {
     expect(pluralCategory('en', -1)).toBe('one');
   });
 });
+
+describe('portuguese, german and italian', () => {
+  test('one only at exactly 1', () => {
+    for (const language of ['pt', 'de', 'it'] as const) {
+      expect(pluralCategory(language, 1)).toBe('one');
+      expect(pluralCategory(language, 0)).toBe('other');
+      expect(pluralCategory(language, 2)).toBe('other');
+      expect(pluralCategory(language, 21)).toBe('other');
+      expect(pluralCategory(language, 1.5)).toBe('other');
+    }
+  });
+});
+
+describe('french', () => {
+  // "0 jour", "1 jour", "1,5 jour", "2 jours".
+  test('one for 0 and 1, fractions included', () => {
+    for (const n of [0, 1, 0.5, 1.5]) {
+      expect(pluralCategory('fr', n)).toBe('one');
+    }
+    for (const n of [2, 3, 10, 21, 100]) {
+      expect(pluralCategory('fr', n)).toBe('other');
+    }
+  });
+
+  test('many only at whole millions', () => {
+    expect(pluralCategory('fr', 1_000_000)).toBe('many');
+    expect(pluralCategory('fr', 1_000_001)).toBe('other');
+  });
+});

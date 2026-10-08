@@ -14,7 +14,7 @@ export const NURSES_ES: Guide = {
   mainSource: CITE.reedNurse,
   published: '2026-10-07',
   updated: '2026-10-07',
-  title: 'Dolor de pies en enfermeras: turnos de 12\u00A0horas y ejercicios',
+  title: 'Dolor de pies en enfermeras: turnos de 12\u00A0horas',
   description:
     'Por qué las enfermeras tienen dolor de pies en turnos de 12\u00A0horas: zapatos, medias de compresión, ejercicios y cómo hacerlos con turnos rotativos.',
   h1: 'Dolor de pies en enfermeras: qué ayuda en turnos de 12\u00A0horas',
@@ -52,6 +52,7 @@ export const NURSES_ES: Guide = {
     },
     {
       h2: '¿Qué ejercicios ayudan a las enfermeras con el dolor de pies?',
+      keyFact: 'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la pantorrilla y de la fascia plantar su grado más alto, A, y al entrenamiento de fuerza una B (Koc y colegas, 2023).',
       paragraphs: [
         'Los ejercicios que ayudan son los mismos que trabajan la fascitis plantar y el dolor de pies por estar de pie: estiramientos de pantorrilla, un estiramiento plantar, elevaciones de talón para la fuerza de la pantorrilla y un ejercicio para el arco llamado pie corto. Lo distinto en enfermería es acomodarlos alrededor de los turnos rotativos, no durante el turno. Unos minutos antes o después del turno bastan para hacer los más importantes.',
         'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la pantorrilla y de la fascia plantar su grado más alto, A, y al entrenamiento de fuerza una B. Las dos notas son para la fascitis plantar, pero los tejidos son los mismos que cargan el peso durante un turno de enfermería. Si algún ejercicio sube tu dolor a 6 de 10 o más, detente por hoy.',
@@ -163,6 +164,7 @@ export const NURSES_ES: Guide = {
     },
     {
       h2: '¿Las medias de compresión ayudan a las enfermeras con el dolor de pies y piernas?',
+      keyFact: 'En un ensayo con 40 guardias de seguridad en turnos de unas 12 horas de pie, las medias de compresión de 15-20 y de 20-30 mmHg evitaron el aumento de molestias en pies y piernas que hubo con calcetines normales (Garcia y colegas, 2023).',
       paragraphs: [
         'Las medias de compresión tienen uno de los estudios mejor controlados sobre las molestias por estar de pie. En un ensayo aleatorizado con 40 guardias de seguridad que trabajaban de pie turnos de unas 12\u00A0horas, tanto el grupo con medias de 15-20\u00A0mmHg como el de 20-30\u00A0mmHg evitaron el aumento importante de molestias en pies y piernas, cansancio e hinchazón que tuvo el grupo con calcetines normales. Muchos participantes dijeron que la media de menor presión era más fácil de poner.',
         'Un ensayo piloto aleatorizado con 20 estudiantes de enfermería comparó medias de compresión hasta la rodilla y hasta el muslo, usadas durante turnos de práctica clínica de 9\u00A0horas. Los dos grupos reportaron mucha satisfacción, aunque la muestra fue demasiado pequeña para mostrar diferencias claras entre los dos largos.',

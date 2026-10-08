@@ -11,7 +11,8 @@ import type { en } from './en';
  * - **Russian `other`** is the fractional form. Every count here is a whole
  *   day, minute, move or second, so it is never selected — but leaving the
  *   member out entirely would make the type lie about the language.
- * - **Spanish `many`** is the whole-millions form. Same reasoning.
+ * - **Spanish, Portuguese, French and Italian `many`** is the whole-millions
+ *   form. Same reasoning.
  *
  * Russian's `few` is *not* optional, and that is the point of the whole type:
  * a translator who fills in `one` and `many` and stops has written a catalogue
@@ -21,6 +22,10 @@ export type PluralForms = {
   en: { one: string; other: string };
   ru: { one: string; few: string; many: string; other?: string };
   es: { one: string; other: string; many?: string };
+  pt: { one: string; other: string; many?: string };
+  fr: { one: string; other: string; many?: string };
+  de: { one: string; other: string };
+  it: { one: string; other: string; many?: string };
 };
 
 /** English is the source of truth. Every other catalogue is typed *from* it, so

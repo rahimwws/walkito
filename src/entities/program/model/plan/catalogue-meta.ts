@@ -58,7 +58,7 @@ export const PLAN_META: readonly PlanMeta[] = [
   m({ id: 'short_foot_double', kind: 'strength', tags: ['arch'], position: 'standing', equipment: [], fascia: false, level: 2, chain: 'arch', dose: 'arch' }),
   m({ id: 'short_foot_single', kind: 'strength', tags: ['arch'], position: 'standing', equipment: [], fascia: false, level: 3, chain: 'arch', dose: 'arch' }),
   m({ id: 'band_inversion', kind: 'strength', tags: ['arch'], position: 'seated', equipment: ['band'], fascia: false, level: 3, chain: 'accessory', dose: 'reps' }),
-  m({ id: 'hip_abduction', kind: 'strength', tags: ['symmetry', 'balance'], position: 'standing', equipment: ['band'], fascia: false, level: 2, chain: 'hip', dose: 'reps' }),
+  m({ id: 'hip_abduction', kind: 'strength', tags: ['symmetry', 'balance'], position: 'seated', equipment: [], fascia: false, level: 2, chain: 'hip', dose: 'reps' }),
   m({ id: 'heel_raise_double', kind: 'strength', tags: ['calf'], position: 'standing', equipment: [], fascia: true, level: 2, chain: 'calf', dose: 'calf' }),
   m({ id: 'heel_raise_seated', kind: 'strength', tags: ['calf'], position: 'seated', equipment: [], fascia: false, level: 1, chain: 'calf', dose: 'calf' }),
   m({ id: 'heel_raise_hold', kind: 'strength', tags: ['calf', 'pain'], position: 'standing', equipment: [], fascia: true, level: 2, chain: 'calf', dose: 'calfHold' }),

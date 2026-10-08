@@ -36,6 +36,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
   sections: [
     {
       h2: 'What is plantar fasciitis?',
+      figure: { id: 'plantar-fascia', caption: 'The plantar fascia runs from the heel bone to the toes. Plantar fasciitis pain usually starts where it attaches to the heel.', alt: 'Sole of a foot showing the plantar fascia as white bands fanning out from the heel bone to the base of the toes, with a red spot on the heel where pain usually starts.' },
       paragraphs: [
         'Plantar fasciitis is an overload condition of the plantar fascia. The plantar fascia is a tough band of connective tissue that stretches along the sole of your foot from the heel bone (the calcaneus) to the base of the toes. It supports the arch and absorbs shock every time you step.',
         'When the fascia is loaded more than it can recover from, the tissue becomes irritated near its attachment at the heel. The name ends in "-itis," which suggests inflammation, but current thinking points toward a degenerative process in the tissue rather than ongoing inflammation. Some clinicians use "plantar fasciopathy" instead. The name does not change the symptoms or the recommended approach.',
@@ -54,6 +55,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
     },
     {
       h2: 'What causes plantar fasciitis, and who gets it?',
+      keyFact: 'In a case-control study of 50 people with plantar fasciitis and 100 without, reduced ankle dorsiflexion raised the odds of plantar fasciitis 23.3 times, the strongest risk factor measured (Riddle and colleagues, 2003).',
       paragraphs: [
         'Plantar fasciitis happens when the fascia is loaded beyond what it can handle and recover from. The load can be too much at once (a sudden jump in running mileage) or steady over time (standing on a hard floor all day).',
         'A matched case-control study of 50 people with plantar fasciitis and 100 controls found that reduced ankle dorsiflexion was the strongest independent risk factor, with an odds ratio of 23.3. In a separate series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius, the bigger outer calf muscle. Prolonged standing at work raised the odds 3.6 times. Higher body mass index also raised them.',
@@ -73,6 +75,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
     },
     {
       h2: 'What helps plantar fasciitis?',
+      keyFact: 'In a trial of 48 people, loaded heel raises with a towel eased pain faster than stretching alone at three months, though by twelve months both groups were even (Rathleff and colleagues, 2015).',
       paragraphs: [
         'The 2023 clinical guideline grades each approach by how strong the evidence behind it is. The strongest recommendations are stretching, taping, manual therapy from a clinician, and night splints for persistent morning pain. Strength training comes next. The table below lists the main options with their guideline grades.',
         'No single option works for everyone. Most people start with stretching and supportive shoes, add strength work once the initial pain settles, and see a clinician about the remaining options if progress stalls. In a trial of 48 people, loaded heel raises with a towel under the toes eased pain faster than stretching alone at three months, though by twelve months both groups were even. The guideline recommends against using orthotics alone as a standalone short-term approach and against adding therapeutic ultrasound to stretching.',
@@ -99,6 +102,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
     },
     {
       h2: 'How long does plantar fasciitis last?',
+      keyFact: 'In a cohort of 174 people, about half were symptom-free by five years, and 46 percent still had some pain at ten years, most only minor (Hansen and colleagues, 2018).',
       paragraphs: [
         'A 2020 review reports that about 90 percent of people improve with non-surgical care, often within several months. A longer follow-up of 174 patients gives a more detailed picture: about half were symptom-free by five years, and 46 percent still had some pain at a mean of ten years, though most of those reported only minor symptoms.',
         'Recovery depends on how long you have had it, what you do about it, and some factors you cannot control. The Hansen 2018 cohort found that being female and having bilateral heel pain were significant predictors of slower recovery. BMI, age, fascia thickness, and the presence of a heel spur were not.',
@@ -107,7 +111,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       cites: [CITE.latt, CITE.hansen],
     },
     {
-      h2: 'Exercises and stretches for plantar fasciitis',
+      h2: 'Which exercises and stretches help plantar fasciitis?',
       paragraphs: [
         'The exercises the guideline supports fall into two groups: stretching (grade A) and strength training (grade B). Stretching targets the plantar fascia and the calf. Strength training builds the calf\'s capacity to handle daily load without overloading the fascia.',
         '[Plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/) has the full list with starting doses, what each should feel like, and when to stop. [Calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/) goes deeper on the one exercise behind the main strength-training trial. Individual exercise pages cover each movement:',
@@ -212,6 +216,15 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
     {
       q: 'When should I see a doctor about heel pain?',
       a: 'See a clinician if pain followed an injury, if you cannot put weight on the foot, if both heels hurt and other joints are stiff, if there is numbness or tingling, if the heel is red or warm, if it wakes you at night, or if pain is not improving after several months of stretching and calf work. These patterns may point to a different condition.',
+    },
+    {
+      q: 'Why do I have plantar fasciitis in only one foot?',
+      a: 'Plantar fasciitis often shows up in one foot first because load rarely splits evenly between legs. A dominant leg, an old limp, a job favoring one side, or a sudden jump in activity on one leg, like starting to run, can overload one fascia more than the other. Both feet can still be affected over time.',
+    },
+    {
+      q: 'Why did I suddenly get plantar fasciitis?',
+      cites: [CITE.guideline],
+      a: 'Sudden plantar fasciitis usually follows a sudden change in load, not a sudden injury. A fast jump in running mileage, new shoes, a new job that keeps you standing, or weight gain can overload the fascia faster than it can adapt. Prolonged standing at work is one of the recognized risk factors in the 2023 heel pain guideline.',
     },
   ],
   redFlags: {

@@ -30,6 +30,21 @@ import { EX_HIP_ABDUCTION } from './articles/ex-hip-abduction';
 import { CALF_RAISE_TEST_EN } from './articles/calf-raise-test';
 import { HUB_PLANTAR_FASCIITIS_EN } from './articles/hub-plantar-fasciitis';
 import { HUB_FLAT_FEET_EN } from './articles/hub-flat-feet';
+import { PF_VS_HEEL_SPUR_EN } from './articles/pf-vs-heel-spur';
+import { HEEL_SPUR_EXERCISES_EN } from './articles/heel-spur-exercises';
+import { HEEL_PAIN_AFTER_WALKING_EN } from './articles/heel-pain-after-walking';
+import { HEEL_PAIN_AT_NIGHT_EN } from './articles/heel-pain-at-night';
+import { HEEL_FAT_PAD_EN } from './articles/heel-fat-pad';
+import { HAGLUNDS_EN } from './articles/haglunds';
+import { SEVERS_EN } from './articles/severs';
+import { ARCH_PAIN_EN } from './articles/arch-pain';
+import { HIGH_ARCHES_EN } from './articles/high-arches';
+import { PTTD_EN } from './articles/pttd';
+import { TOP_OF_FOOT_EN } from './articles/top-of-foot';
+import { MORTONS_EN } from './articles/mortons';
+import { SESAMOIDITIS_EN } from './articles/sesamoiditis';
+import { BUNIONS_EN } from './articles/bunions';
+import { HAMMER_TOE_EN } from './articles/hammer-toe';
 import type { Guide } from './types';
 
 /**
@@ -68,4 +83,19 @@ export const ARTICLES_EN: Record<EnglishPage, Guide> = {
   calfRaiseTest: CALF_RAISE_TEST_EN,
   hubPlantarFasciitis: HUB_PLANTAR_FASCIITIS_EN,
   hubFlatFeet: HUB_FLAT_FEET_EN,
+  pfVsHeelSpur: PF_VS_HEEL_SPUR_EN,
+  heelSpurExercises: HEEL_SPUR_EXERCISES_EN,
+  heelPainAfterWalking: HEEL_PAIN_AFTER_WALKING_EN,
+  heelPainAtNight: HEEL_PAIN_AT_NIGHT_EN,
+  heelFatPad: HEEL_FAT_PAD_EN,
+  haglunds: HAGLUNDS_EN,
+  severs: SEVERS_EN,
+  archPain: ARCH_PAIN_EN,
+  highArches: HIGH_ARCHES_EN,
+  pttd: PTTD_EN,
+  topOfFoot: TOP_OF_FOOT_EN,
+  mortons: MORTONS_EN,
+  sesamoiditis: SESAMOIDITIS_EN,
+  bunions: BUNIONS_EN,
+  hammerToe: HAMMER_TOE_EN,
 };

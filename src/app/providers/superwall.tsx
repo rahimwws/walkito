@@ -4,7 +4,7 @@ import { Platform } from 'react-native';
 
 import { getIntake, useIntake, useProfileName } from '@/entities/profile';
 import { outcome, planSettings } from '@/entities/program';
-import { ENTITLEMENT, purchases, useEntitled } from '@/entities/purchase';
+import { ENTITLEMENT, grantDevAccess, onSimulator, purchases, useEntitled } from '@/entities/purchase';
 import { SUPERWALL_KEYS } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { getLanguage, useLanguage } from '@/shared/lib/i18n';
@@ -92,6 +92,12 @@ export function PaywallRoot({ children }: { children: ReactNode }) {
 /** Superwall's purchase and restore, handed to our store. */
 const controller: import('expo-superwall').CustomPurchaseControllerContext = {
   async onPurchase(params) {
+    // Development on a simulator: no StoreKit purchase exists, so the paywall's
+    // button stands in for one and the flow carries on into the setup screens.
+    if (__DEV__ && onSimulator) {
+      grantDevAccess();
+      return { type: 'purchased' };
+    }
     const result = await purchases.buyProduct({
       productId: params.productId,
       basePlanId: params.platform === 'android' ? params.basePlanId : undefined,

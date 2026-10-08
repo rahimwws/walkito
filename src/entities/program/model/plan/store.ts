@@ -7,9 +7,9 @@ import { track } from '@/shared/lib/analytics';
 import { kv } from '@/shared/lib/storage';
 
 import { retestResults, type RetestResult } from '../program';
-import { dayNumberFor, fromDateKey, logFor, programState, toDateKey, writeLog } from '../state';
-import { CHAINS, type Equipment } from './catalogue-meta';
-import type { EligibilityContext } from './eligibility';
+import { dayNumberFor, firstStepOn, fromDateKey, logFor, painLatestOn, programState, toDateKey, writeLog } from '../state';
+import { CHAINS, PLAN_META, planMeta, type Equipment } from './catalogue-meta';
+import { allowed, atOrBelow, type EligibilityContext } from './eligibility';
 import {
   advanceGoals,
   MAX_ACTIVE_GOALS,
@@ -65,6 +65,12 @@ export type PlanSettings = {
   footType: FootType;
   /** The reminder time set by hand, minutes past midnight. Null follows the habit. */
   reminderMinutes: number | null;
+  /**
+   * Week one sitting down: an injury from a fall, or a foot that cannot take
+   * weight yet. Only seated exercises while the plan is settling. Optional so
+   * settings saved before it, and the server's copy, read as false.
+   */
+  seatedStart?: boolean;
 };
 
 const SETTINGS_KEY = 'plan/settings';
@@ -151,7 +157,10 @@ export function seedPlanSettings(patch: Partial<PlanSettings>, now: number = Dat
 export function setPlanSettings(patch: Partial<PlanSettings>, now: number = Date.now()): PlanSettings {
   const next = { ...planSettings(), ...patch };
   write(SETTINGS_KEY, next);
-  for (const field of Object.keys(patch) as (keyof PlanSettings)[]) track('plan_settings_changed', { field });
+  for (const field of Object.keys(patch) as (keyof PlanSettings)[]) {
+    // Set once by onboarding, never from Settings; nothing to chart.
+    if (field !== 'seatedStart') track('plan_settings_changed', { field });
+  }
   // A rigid foot drops the arch step; a flexible one gets it back.
   const set = outcome();
   if (patch.footType != null && set != null) {
@@ -344,6 +353,32 @@ export function markCantDo(id: string, reason: CantDoReason, now: number = Date.
   rebuildRestOfWeek(now);
 }
 
+/**
+ * What runs instead of `id`, right now, once it has been marked "can't do".
+ *
+ * The nearest step on its own chain at the same level or lower, then any other
+ * step on that chain, then the easiest exercise of the same kind. Read after
+ * `markCantDo`, so the equipment it just took away is already out. Null when
+ * nothing fits, which the player answers by moving on.
+ */
+export function swapFor(id: string, now: number = Date.now()): string | null {
+  const meta = planMeta(id);
+  if (meta == null) return null;
+  const ctx: EligibilityContext = { ...withSkips(eligibilityFor(toDateKey(new Date(now)))), settling: false };
+  const ok = (candidate: string) => candidate !== id && allowed(candidate, ctx);
+  if (meta.chain !== 'accessory') {
+    const steps = CHAINS[meta.chain];
+    const below = atOrBelow(meta.chain, Math.max(0, steps.indexOf(id) - 1), ctx);
+    if (below != null && below.id !== id) return below.id;
+    const other = steps.find(ok);
+    if (other != null) return other;
+  }
+  const kin = PLAN_META.filter((candidate) => candidate.kind === meta.kind && ok(candidate.id)).sort(
+    (a, b) => Math.abs(a.level - meta.level) - Math.abs(b.level - meta.level),
+  );
+  return kin[0]?.id ?? null;
+}
+
 function recordSkip(id: string): void {
   const prefs = exercisePrefs();
   const count = (prefs[id]?.skipCount ?? 0) + 1;
@@ -512,14 +547,27 @@ export function refreshGoals(now: number = Date.now()): GoalType[] {
 
 // ── Pain and tests ───────────────────────────────────────────────────────────
 
-/** Morning pain for the `days` days ending on `endDate`, oldest first. */
+/**
+ * First-step pain for the `days` days ending on `endDate`, oldest first. Only
+ * check-ins made before noon: an afternoon answer is the day's, and never
+ * enters a goal or a weekly mean.
+ */
 export function painSeries(endDate: string, days: number): (number | null)[] {
   const state = programState();
   return Array.from({ length: days }, (_, i) => {
     const date = addDays(endDate, i - days + 1);
     const n = dayNumberFor(state, date);
-    return n >= 1 ? (logFor(n)?.painMorning ?? null) : null;
+    return n >= 1 ? firstStepOn(n) : null;
   });
+}
+
+/** Today's pain for adapting today: the worse of the first steps and the
+ * latest check-in, so an afternoon flare still shortens the day. */
+function painForToday(dateKey: string): number | null {
+  const n = dayNumberFor(programState(), dateKey);
+  if (n < 1) return null;
+  const readings = [firstStepOn(n), painLatestOn(n)].filter((p): p is number => p != null);
+  return readings.length === 0 ? null : Math.max(...readings);
 }
 
 function mean(values: readonly (number | null)[]): number | null {
@@ -612,6 +660,7 @@ export function eligibilityFor(dateKey: string): Omit<EligibilityContext, 'settl
     cantDo,
     painLast14: painSeries(dateKey, 14),
     shortFootStandingSessions: standing,
+    ...(settings.seatedStart === true ? { seatedOnly: true } : {}),
   };
 }
 
@@ -833,7 +882,7 @@ export function todayPlan(
   return adjustToday(
     day,
     {
-      painToday: pains[7],
+      painToday: painForToday(today),
       pain7Avg: mean(pains.slice(0, 7)),
       stepsYesterday: health.stepsYesterday,
       steps28Avg: health.steps28Avg,

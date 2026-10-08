@@ -32,6 +32,7 @@ export const CALF_RAISES_EN: Guide = {
   sections: [
     {
       h2: 'Do calf raises actually help plantar fasciitis?',
+      keyFact: 'In a trial of 48 people, the heel-raise group scored 29 points better on the Foot Function Index at three months, though both groups had converged by twelve months (Rathleff and colleagues, 2015).',
       paragraphs: [
         'Calf raises help plantar fasciitis by strengthening the calf-Achilles-fascia chain that absorbs load every time the heel hits the ground.',
         'The only randomized trial to test this exercise for plantar fasciitis directly is Rathleff 2015. In that trial, 48 people with ultrasound-confirmed plantar fasciitis were split into two groups. Both wore shoe inserts. One group did a loaded, slow heel raise with a towel rolled under the toes. The other stretched the plantar fascia. At three months, the heel-raise group scored 29 points better on the Foot Function Index. At twelve months, both groups had converged.',
@@ -44,7 +45,7 @@ export const CALF_RAISES_EN: Guide = {
     {
       h2: 'How do you do a towel calf raise for plantar fasciitis?',
       paragraphs: [
-        'The towel calf raise is the exercise from the Rathleff trial. It is a single-leg heel raise on a step, with a rolled towel under the toes. The towel pulls the toes upward at the top of the raise, which engages the windlass mechanism - the way the plantar fascia tightens when the big toe bends back. Without the towel, you are training the calf but loading the fascia much less.',
+        'The towel calf raise is the exercise from the Rathleff trial. It is a single-leg heel raise on a step, with a rolled towel under the toes. The towel pulls the toes upward at the top of the raise, which engages the windlass mechanism: the way the plantar fascia tightens when the big toe bends back. Without the towel, you are training the calf but loading the fascia much less.',
         'Stand on one foot on the edge of a step, with a rolled hand towel under all five toes. The ball of the foot stays on the step. Hold a wall or rail for balance. Rise up over three seconds, hold at the top for two, and lower over three seconds. Let the heel sink slightly below the step on the way down. In the trial, participants added weight with a backpack once bodyweight became too easy.',
         'Start on both feet if single-leg raises are too hard right now. Both-leg raises on the floor, without a step, are where the calf chain begins. The towel and the step come in later, once standing heel raises feel easy for two sessions in a row.',
       ],
@@ -127,7 +128,7 @@ export const CALF_RAISES_EN: Guide = {
     {
       h2: 'How many calf raises should you do, and how do you add load?',
       paragraphs: [
-        'The Rathleff protocol uses a repetition maximum (RM) system rather than a fixed rep count. "12RM" means the heaviest load you can lift for exactly 12 controlled reps - the twelfth rep should be the last one you can do with good form. For most people starting out, bodyweight on one leg is enough. When it is not, a backpack with books or water bottles adds weight.',
+        'The Rathleff protocol uses a repetition maximum (RM) system rather than a fixed rep count. "12RM" means the heaviest load you can lift for exactly 12 controlled reps. The twelfth rep should be the last one you can do with good form. For most people starting out, bodyweight on one leg is enough. When it is not, a backpack with books or water bottles adds weight.',
       ],
       table: {
         caption: 'Rathleff 2015 heel-raise progression',
@@ -150,6 +151,8 @@ export const CALF_RAISES_EN: Guide = {
     },
     {
       h2: 'Why does a tight calf matter for heel pain?',
+      figure: { id: 'calf', caption: 'The two calf muscles, the gastrocnemius and the soleus, join into the Achilles tendon, which attaches to the heel bone.', alt: 'Side and back views of a lower leg showing the gastrocnemius and soleus muscles narrowing into the Achilles tendon above the heel.' },
+      keyFact: 'In a series of 254 people with plantar fasciitis, 52 to 60% had a contracture limited to the gastrocnemius, and another 23 to 30% had a combined gastrocnemius-soleus contracture (Patel and colleagues, 2011).',
       paragraphs: [
         'A tight calf pulls on the heel through the Achilles tendon, and the plantar fascia shares the load at the other end. When the ankle cannot bend enough, every step puts more strain on the fascia.',
         'In a series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius, the outer calf muscle, and another 23 to 30 percent had a combined gastrocnemius-soleus contracture. Separately, a matched case-control study of 50 cases and 100 controls found that reduced ankle dorsiflexion, how far the foot bends up toward the shin, was the strongest independent risk factor for plantar fasciitis.',
@@ -168,6 +171,7 @@ export const CALF_RAISES_EN: Guide = {
     },
     {
       h2: 'How many single-leg calf raises should you be able to do?',
+      keyFact: 'A normative study of 566 healthy adults found a single-leg heel-raise count in the low-to-mid 20s, about 23 to 24 repetitions on average (Hebert-Losier and colleagues, 2017).',
       paragraphs: [
         'A common adult benchmark for the single-leg heel-raise endurance test is in the low-to-mid 20s, about 23-24 repetitions on average, based on normative data from 566 healthy adults. That number shifts with age, sex, BMI and activity level, so it is a reference point rather than a pass-fail line. What matters more for tracking plantar fasciitis progress is whether the number goes up week to week, and whether the two sides are roughly even.',
         'The calf goal in the app is 25 single-leg calf raises. The test is repeated every 14 days while the calf goal is active, then every 28 days after it is reached, so you can see the trend without guessing.',
@@ -227,6 +231,16 @@ export const CALF_RAISES_EN: Guide = {
       q: 'Is it normal to feel the exercise in the calf and not the heel?',
       a: 'Yes. Seated and double-leg heel raises are designed to feel like calf work with little load on the heel, which is why they come before the single-leg towel version. The towel-loaded raise is the version that also puts load through the arch, so a pull near the heel at that stage is expected, as long as it stays below 6/10.',
     },
+    {
+      q: 'Do weak calves cause plantar fasciitis?',
+      cites: [CITE.riddle, CITE.patelGastrocnemius, CITE.rathleff],
+      a: 'The strongest evidence links a tight calf, not weak calves, to plantar fasciitis. A case-control study found reduced ankle flexibility was the top risk factor, and over half of one patient series had a calf contracture. Strength training still helps: in a 48-person trial, heel raises eased pain faster than stretching alone over the first three months.',
+    },
+    {
+      q: 'What is the one best exercise for plantar fasciitis?',
+      cites: [CITE.guideline, CITE.rathleff],
+      a: 'There is no single best exercise; the 2023 guideline grades stretching (A) and strength training (B) as separate, complementary approaches. The plantar fascia stretch targets first-step pain directly, while heel raises build the calf\'s long-term capacity. In a 48-person trial, the heel-raise group improved faster than the stretching group at three months, though both were similar by twelve months.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',
@@ -244,7 +258,7 @@ export const CALF_RAISES_EN: Guide = {
   },
   program: {
     h2: 'Doing it as a plan',
-    text: 'You don\'t have to work out the sets, the weight or when to move to the next step. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1/10 for 14 days in a row. The calf raise ladder - seated, double-leg, hold, towel, heel drops - moves at your pace, not on a fixed calendar.',
+    text: 'You don\'t have to work out the sets, the weight or when to move to the next step. Walkito builds a plan one week at a time around one goal. For heel pain, the first goal is a better morning: pain at or under 1/10 for 14 days in a row. The calf raise ladder (seated, double-leg, hold, towel, heel drops) moves at your pace, not on a fixed calendar.',
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Every 14 days (then every 28 once that goal is met), a short test checks calf endurance, arch hold and balance, so you can see what is changing. Walkito is an exercise program. It does not diagnose and is not a substitute for a clinician.',
     ],

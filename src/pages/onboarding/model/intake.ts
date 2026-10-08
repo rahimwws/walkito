@@ -9,6 +9,16 @@
 import type { Intake } from '@/entities/profile';
 import { EQUIPMENT, type DaysPerWeek, type PlanLength, type PlanSettings, type ProgramFocus, type SessionMinutes } from '@/entities/program';
 
+import {
+  durationOf,
+  footTypeFor,
+  habitOf,
+  morningPainOf,
+  recentStart,
+  roleOf,
+  safetyPlan,
+  sportFor,
+} from './journey';
 import { painAreasFor } from './pain-areas';
 import { PLANS, recommendedIndex } from './plans';
 
@@ -28,38 +38,52 @@ function measured(answers: Answers, key: string, field: string): number | null {
   return Number.isFinite(n) && n > 0 ? n : null;
 }
 
-function weightKg(answers: Answers): number | null {
-  const body = answers.body as { unit?: string } | undefined;
-  if (body?.unit === 'lb') {
-    const lb = measured(answers, 'body', 'lb');
-    return lb == null ? null : Math.round(lb * 0.453592);
-  }
-  return measured(answers, 'body', 'kg');
+function strings(answers: Answers, key: string): string[] {
+  const value = answers[key];
+  return Array.isArray(value) ? value.filter((v): v is string => typeof v === 'string') : [];
 }
+
+/** The 30-second check's answers, when it ran. */
+export type MiniTestAnswers = {
+  arch: 'yes' | 'no' | 'unsure' | null;
+  balanceLeft: number | null;
+  balanceRight: number | null;
+};
 
 export function intakeFrom(
   answers: Answers,
-  shoe: { size: number; unit: 'eu' | 'us' } | null,
+  miniTest: MiniTestAnswers | null = null,
   now: number = Date.now(),
 ): Intake {
   const side = first(answers, 'side');
+  const safety = strings(answers, 'safety');
   return {
     // The pain step stores leg zones; the plan speaks in complaints. Grouped
     // here so `focusFor` and everything reading the saved intake see "heel",
     // "calf", never "soleus" or "tib_ant".
     pain: painAreasFor(answers.pain),
     side: side === 'left' || side === 'right' || side === 'both' ? side : null,
-    sport: first(answers, 'sport'),
+    sport: sportFor(answers),
     runner: first(answers, 'runner'),
     goal: first(answers, 'goal'),
-    challenge: first(answers, 'challenge'),
+    // No longer asked: weight and shoe size bought nothing the user could see,
+    // and the challenge repeated the goal. Kept in the type for old intakes.
+    challenge: null,
     load: first(answers, 'load'),
-    sessionsPerWeek: first(answers, 'sessionsPerWeek'),
+    sessionsPerWeek: null,
     sex: first(answers, 'sex'),
     age: measured(answers, 'age', 'years'),
-    weightKg: weightKg(answers),
-    shoe,
-    watch: first(answers, 'watch'),
+    weightKg: null,
+    shoe: null,
+    // Asked after the purchase now, and written there.
+    watch: null,
+    role: roleOf(answers),
+    painDuration: durationOf(answers),
+    morningPain: morningPainOf(answers),
+    safety,
+    tried: strings(answers, 'tried'),
+    habit: habitOf(answers),
+    miniTest,
     completedAt: now,
   };
 }
@@ -99,9 +123,15 @@ export type StartingPlan = {
  * starting gently is a couple of days and the cost of starting too hard is a
  * flare in week one.
  */
-export function startingPlan(intake: Intake): StartingPlan {
+export function startingPlan(intake: Intake, answers: Answers = {}): StartingPlan {
   const plan = PLANS[recommendedIndex(intake.runner)];
-  const gentle = intake.runner === 'new' || (intake.age != null && intake.age >= EASY_START_AGE);
+  // Also lighter for a pain only weeks old, which is the irritable kind, and
+  // for a week one that starts seated after the safety check.
+  const gentle =
+    intake.runner === 'new' ||
+    (intake.age != null && intake.age >= EASY_START_AGE) ||
+    recentStart(answers) ||
+    safetyPlan(answers).seated;
   return {
     planLength: plan.weeks >= 12 ? 84 : 42,
     progressionOffset: gentle ? -1 : 0,
@@ -117,8 +147,15 @@ const MINUTES: Readonly<Record<string, SessionMinutes>> = { min3: 3, min5: 5, mi
  * is at home, and when to be reminded. Only what was answered — a question
  * stepped over leaves the default alone.
  */
-export function planSettingsFrom(answers: Answers, reminderMinutes: number | null): Partial<PlanSettings> {
+export function planSettingsFrom(
+  answers: Answers,
+  reminderMinutes: number | null,
+  miniTest: MiniTestAnswers | null = null,
+): Partial<PlanSettings> {
   const out: Partial<PlanSettings> = {};
+  if (safetyPlan(answers).seated) out.seatedStart = true;
+  const foot = footTypeFor(miniTest?.arch ?? null);
+  if (foot !== 'unknown') out.footType = foot;
   const days = DAYS[first(answers, 'planDays') ?? ''];
   if (days != null) out.daysPerWeek = days;
   const minutes = MINUTES[first(answers, 'planMinutes') ?? ''];

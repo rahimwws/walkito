@@ -1,4 +1,5 @@
 import { addDays } from './time.ts';
+import { asLocale } from './types.ts';
 import type {
   CheckinRow,
   Contact,
@@ -52,7 +53,7 @@ const n = (v: unknown): number | null => (v == null ? null : Number(v));
 const s = (v: unknown): string | null => (v == null ? null : String(v));
 
 export function contactFromRow(row: Row): Contact {
-  const locale = row.locale === 'ru' || row.locale === 'es' ? row.locale : 'en';
+  const locale = asLocale(row.locale);
   return {
     email: String(row.email),
     locale,

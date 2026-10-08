@@ -54,6 +54,7 @@ export const EX_CALF_STRETCH_ES: Guide = {
     },
     {
       h2: '¿Por qué una pantorrilla tensa causa dolor de talón?',
+      keyFact: 'En una revisión de 254\u00A0personas con fascitis plantar, algo más de la mitad tenía una contractura solo en el gastrocnemio, y entre el 23 y el 30\u00A0% tenía tensos los dos músculos de la pantorrilla (Patel y DiGiovanni, 2011).',
       paragraphs: [
         'El gastrocnemio va desde detrás de la rodilla hasta el talón, a través del tendón de Aquiles. La fascia plantar sigue donde termina el Aquiles: rodea por debajo el hueso del talón y avanza hasta los dedos. Cuando el gastrocnemio está tenso, limita cuánto se puede doblar el tobillo hacia arriba. Eso obliga a la fascia plantar a absorber más tensión en cada paso.',
         'En un estudio de casos y controles emparejados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la menor dorsiflexión del tobillo multiplicó por 23,3 las probabilidades de tener fascitis plantar. Pesó más que el índice de masa corporal, el tiempo de pie o cualquier otra variable del estudio.',
@@ -71,7 +72,7 @@ export const EX_CALF_STRETCH_ES: Guide = {
       cites: [CITE.guideline, CITE.siriphorn],
     },
     {
-      h2: 'Errores comunes en el estiramiento de pantorrilla',
+      h2: '¿Cuáles son los errores comunes en el estiramiento de pantorrilla?',
       paragraphs: [
         'Doblar la rodilla de atrás. En cuanto la rodilla se dobla, el gastrocnemio se afloja y el estiramiento pasa al sóleo. Mantén la rodilla de atrás bien estirada todo el tiempo.',
         'Dejar que el talón de atrás se levante. Si el talón se despega del piso, la pantorrilla no se está estirando. Primero apoya bien el talón y después inclínate hacia adelante hasta sentir el estiramiento.',
@@ -82,7 +83,7 @@ export const EX_CALF_STRETCH_ES: Guide = {
     {
       h2: '¿Quién debe hacer este estiramiento y quién no?',
       paragraphs: [
-        'Este estiramiento sirve para cualquier persona con dolor de talón, fascitis plantar, pantorrillas tensas por estar de pie todo el día o por un deporte que carga la pantorrilla, como correr. Aparece en las listas de ejercicios de [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/), [dolor de pies por estar de pie](/es/dolor-de-pies-por-estar-de-pie/) y [dolor de talón al correr](/heel-pain-runners/) (en inglés).',
+        'Este estiramiento sirve para cualquier persona con dolor de talón, fascitis plantar, pantorrillas tensas por estar de pie todo el día o por un deporte que carga la pantorrilla, como correr. Aparece en las listas de ejercicios de [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/), [dolor de pies por estar de pie](/es/dolor-de-pies-por-estar-de-pie/) y [dolor de talón al correr](/es/dolor-de-talon-en-corredores/).',
         'Sáltalo o modifícalo si tienes un problema en el tendón de Aquiles que duele durante el estiramiento. En ese caso, el dolor viene de otra estructura, y cargar el Aquiles con un estiramiento en la pared quizá no sea el mejor punto de partida. Para el enfoque específico del Aquiles, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
         'Si no llegas a la pared o no puedes estar de pie cómodo, un estiramiento sentado con toalla da un tirón parecido en la pantorrilla. Pasa una toalla por la parte delantera del pie, mantén la rodilla estirada y jala los dedos hacia ti.',
       ],

@@ -26,6 +26,7 @@ export const BEST_APP_EN: Guide = {
   sections: [
     {
       h2: 'What should a plantar fasciitis app actually do?',
+      keyFact: 'The 2023 clinical guideline for heel pain grades plantar fascia and calf stretching A, the top grade, and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
         'A useful plantar fasciitis app should include exercises that match what the research supports. The 2023 clinical guideline for heel pain grades the evidence behind each approach. Plantar fascia and calf stretching earn an A, the top grade. Strength training earns a B. That means both should be in the app, not just one.',
         'Beyond the exercise list, these are the things worth checking before you subscribe:',
@@ -167,7 +168,7 @@ export const BEST_APP_EN: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
-      h2: 'How to choose',
+      h2: 'How do you choose the right app for plantar fasciitis?',
       paragraphs: [
         'Start from your situation, not from feature lists.',
       ],
@@ -210,6 +211,16 @@ export const BEST_APP_EN: Guide = {
     {
       q: 'Do any of these apps work on Android?',
       a: 'Exakt Health and Hinge Health are on both iOS and Android. "Plantar Fasciitis Exercises" is also on both, though it shows in-app purchases on each store. Walkito, Prehab, PlantarCare and Arch are currently iOS only. If you use Android, Exakt Health is the most feature-complete option for foot pain.',
+    },
+    {
+      q: 'Do you need an app to do plantar fasciitis exercises?',
+      cites: [CITE.guideline],
+      a: 'No. An app is not required. You can do the exercises with research-grade evidence behind them, such as fascia stretching and calf raise progressions, from a printed sheet or a clinician handout. What an app usually adds is reminders, progress tracking, and pain-based pacing rules, which help some people stick with the plan longer, not a different exercise.',
+    },
+    {
+      q: 'How often should you use a plantar fasciitis exercise app?',
+      cites: [CITE.guideline],
+      a: 'Most plantar fasciitis exercise programs, including the ones graded highest in the 2023 heel pain guideline, are built around daily or near-daily sessions for about three months, not occasional use. An app is most useful when you open it most days, since consistency drives the loading effect, not any single feature inside it.',
     },
   ],
   redFlags: {

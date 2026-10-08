@@ -20,13 +20,14 @@ export const PF_DURATION_ES: Guide = {
     'Una revisión de 2020 indica que cerca del 90\u00A0% de los casos de fascitis plantar responde a cuidados sin cirugía, a menudo en varios meses (Latt y colegas, 2020).',
     'Una cohorte de 174\u00A0pacientes seguida a largo plazo encontró que el riesgo de seguir con fascitis plantar era del 80,5\u00A0% al año, del 50,0\u00A0% a los cinco años y del 45,6\u00A0% a los diez años desde que empezaron los síntomas (Hansen y colegas, 2018).',
     'En esa cohorte, lo que predecía de forma significativa una recuperación más lenta era ser mujer y tener dolor en los dos talones. El IMC, la edad, el grosor de la fascia y los espolones calcáneos no tuvieron un efecto significativo en el pronóstico (Hansen y colegas, 2018).',
-    'La guía de 2023 para el dolor de talón le da al estiramiento un grado **A** y al entrenamiento de fuerza una **B**. Las férulas nocturnas para el dolor de la mañana que no se va, y el láser de baja intensidad o la punción seca hechos por un profesional, reciben una **B** (Koc y colegas, 2023).',
+    'La guía de 2023 para el dolor de talón le da al estiramiento un grado **A** y al entrenamiento de fuerza una **B**. Las férulas nocturnas para el dolor de la mañana que no se va reciben una **A**, y el láser de baja intensidad o la punción seca hechos por un profesional, una **B** (Koc y colegas, 2023).',
     'Anotar cada día el dolor de la mañana en una escala de 0 a 10 es la forma más práctica de ver si la recuperación va en la dirección correcta.',
   ],
   toc: true,
   sections: [
     {
       h2: '¿Cuánto dura normalmente la fascitis plantar?',
+      keyFact: 'En una cohorte de 174\u00A0personas, las mujeres quedaron sin síntomas a cerca de la mitad del ritmo de los hombres, y quienes tenían dolor en ambos talones, a cerca de un tercio del ritmo de quienes lo tenían en uno solo (Hansen y colegas, 2018).',
       paragraphs: [
         'No hay un solo número. La recuperación depende de cuánto tiempo llevas con ella, de lo que haces al respecto y de algunos factores que no puedes controlar.',
         'Una revisión de 2020 dice que los enfoques sin cirugía funcionan en cerca del 90\u00A0% de las personas con fascitis plantar, casi siempre en un plazo de tres a seis meses (Latt y colegas, 2020).',
@@ -51,6 +52,7 @@ export const PF_DURATION_ES: Guide = {
     },
     {
       h2: '¿Qué hace que la fascitis plantar tarde más en mejorar?',
+      keyFact: 'En una cohorte de 174\u00A0personas, las mujeres quedaron sin síntomas a cerca de la mitad del ritmo de los hombres, y quienes tenían dolor en los dos talones, a cerca de un tercio del ritmo de quienes tenían dolor de un solo lado (Hansen y colegas, 2018).',
       paragraphs: [
         'La cohorte de Hansen de 2018 comparó varios factores del inicio con cuánto duraron los síntomas. Dos resultaron significativos.',
         '**Ser mujer.** Por cada 100\u00A0hombres que se quedaban sin síntomas al año, solo lo hacían 49\u00A0mujeres (razón de tasas de riesgo 0,49, p menor que 0,01). La razón no está clara. Los autores mencionaron diferencias hormonales, el tipo de calzado y factores físicos como posibilidades, sin evidencia para elegir entre ellas (Hansen y colegas, 2018).',
@@ -74,6 +76,7 @@ export const PF_DURATION_ES: Guide = {
     },
     {
       h2: '¿Qué avances son realistas y cuándo?',
+      keyFact: 'En el ensayo de Rathleff, el grupo de las elevaciones de talón tuvo 29\u00A0puntos mejor en el Foot Function Index que el grupo que solo estiraba a los tres meses, una diferencia descrita como grande y medible (Rathleff y colegas, 2015).',
       paragraphs: [
         'Ningún estudio da un calendario semana por semana que sirva para todos, y cualquier artículo que lo dé está adivinando. Lo que sí ofrece la evidencia son algunas señales que la mayoría va a reconocer.',
         '**Primeras semanas.** Puede que el dolor de la mañana no cambie mucho. El ensayo de Rathleff mostró una diferencia importante entre los grupos a los tres meses, no a las tres semanas. Al principio, el cambio principal es que los ejercicios se vuelven más fáciles y la pantorrilla se siente menos tensa. Vale la pena notarlo aunque el talón todavía duela.',
@@ -113,7 +116,7 @@ export const PF_DURATION_ES: Guide = {
       paragraphs: [
         'El patrón de la tabla es claro: el estiramiento y el trabajo de fuerza son los que tienen más respaldo. Las opciones de consultorio (láser, punción seca, ondas de choque) tienen algo de evidencia, pero quedan detrás del ejercicio en la guía. La cirugía se reserva para el pequeño porcentaje de casos que no responden a nada más, y la guía no le da un papel importante.',
         'Si llevas varios meses haciendo los ejercicios con constancia y el dolor de la mañana no mejora, es un buen momento para ver a un profesional de la salud y hablar de las opciones de arriba. También es un buen momento para revisar que el diagnóstico sea el correcto: en [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) están otras condiciones con el mismo patrón.',
-        'Si corres, los cambios de carga suelen ser parte del tema: [dolor de talón al correr](/heel-pain-runners/) (en inglés) y [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) explican ese tema.',
+        'Si corres, los cambios de carga suelen ser parte del tema: [dolor de talón al correr](/es/dolor-de-talon-en-corredores/) y [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) explican ese tema.',
       ],
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },
@@ -161,6 +164,16 @@ export const PF_DURATION_ES: Guide = {
       q: '¿La fascitis plantar puede volver después de quitarse?',
       cites: [CITE.hansen],
       a: 'Sí. En la cohorte de Hansen de 2018, el 32\u00A0% del grupo que se quedó sin síntomas tuvo al menos una recaída antes de quedar sin síntomas de forma permanente. Es común mejorar, recaer y volver a mejorar. Seguir con una dosis de mantenimiento de trabajo de pantorrilla y estiramientos después de que el dolor se va es una forma de bajar la probabilidad de que vuelva.',
+    },
+    {
+      q: '¿Cuáles son las señales de que la fascitis plantar está mejorando?',
+      cites: [CITE.rathleff],
+      a: 'La señal más clara es menos dolor por la mañana: los primeros pasos se sienten rígidos en lugar de agudos, y la molestia se calma más rápido en cuanto empiezas a caminar. Muchas personas notan este cambio antes de que el dolor desaparezca por completo. En el ensayo de Rathleff, el grupo de elevaciones de talón obtuvo puntuaciones medibles mejores a los tres meses, que es cuando este cambio suele aparecer.',
+    },
+    {
+      q: '¿Qué no se debe hacer si la fascitis plantar no mejora?',
+      cites: [CITE.guideline],
+      a: 'No dejes de hacer los ejercicios en cuanto el dolor de la mañana se calme, y no persigas un solo atajo en lugar de lo básico. Que el dolor baje antes de que la fascia se haya adaptado es una razón común de que los síntomas vuelvan. Si el dolor se mantiene igual o empeora durante varios meses a pesar de estirar, fortalecer y usar calzado con soporte, eso pide un profesional, no esperar más.',
     },
   ],
   redFlags: {

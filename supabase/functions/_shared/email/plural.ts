@@ -1,7 +1,7 @@
 import type { Locale } from './types.ts';
 
 /**
- * Plural choice for the three languages, integers only.
+ * Plural choice for the languages emails are written in, integers only.
  *
  * The same CLDR rules as `src/shared/lib/i18n/plural.ts`, restated here because
  * the edge function cannot reach into the app's `src`. Every count an email
@@ -20,12 +20,20 @@ export function pick<T>(locale: Locale, n: number, forms: { one: T; few?: T; man
     if (d10 >= 2 && d10 <= 4 && (d100 < 12 || d100 > 14)) return forms.few ?? forms.many ?? forms.one;
     return forms.many ?? forms.one;
   }
+  // French keeps the singular for 0 as well as 1: "0 jour".
+  if (locale === 'fr') return i <= 1 ? forms.one : forms.other ?? forms.one;
   return i === 1 ? forms.one : forms.other ?? forms.one;
 }
 
-/** English and Spanish: one form at exactly 1, the other otherwise. */
+/** English, Spanish, Portuguese, German and Italian: one form at exactly 1,
+ * the other otherwise. French uses `twoFr`. */
 export function two(n: number, one: string, other: string): string {
   return Math.abs(Math.trunc(n)) === 1 ? one : other;
+}
+
+/** French: the singular for 0 and 1. */
+export function twoFr(n: number, one: string, other: string): string {
+  return Math.abs(Math.trunc(n)) <= 1 ? one : other;
 }
 
 /** Russian: the three forms. */

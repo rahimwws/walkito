@@ -1,0 +1,152 @@
+/** testday strings, Italian (the guided test day: intro, the three tests, results). Filled per domain; see `../en/core.ts` for the rules. */
+
+export const TESTDAY_IT = {
+  // ── Chrome ────────────────────────────────────────────────────────────────
+  'testday.close': 'Chiudi',
+  'testday.leave.title': 'Uscire dal test?',
+  'testday.leave.body': 'Non viene salvato niente finché non finisci l’ultimo test. Il test resta da fare.',
+  'testday.leave.stay': 'Continua il test',
+  'testday.leave.confirm': 'Esci',
+
+  // ── Intro ─────────────────────────────────────────────────────────────────
+  'testday.intro.eyebrow': 'Giorno di test',
+  'testday.intro.title': 'Tre test brevi',
+  'testday.intro.body': {
+    one: 'Circa {count} minuto. I numeri mostrano quanto è avanzato ogni obiettivo e impostano il tuo piano per le prossime due settimane.',
+    other: 'Circa {count} minuti. I numeri mostrano quanto è avanzato ogni obiettivo e impostano il tuo piano per le prossime due settimane.',
+  },
+  'testday.intro.nowSeconds': 'Ora {now} s · obiettivo {goal} s',
+  'testday.intro.nowRaises': {
+    one: 'Ora {now} · obiettivo {count} sollevamento',
+    other: 'Ora {now} · obiettivo {count} sollevamenti',
+  },
+  'testday.intro.firstSeconds': 'Prima misurazione · obiettivo {goal} s',
+  'testday.intro.firstRaises': {
+    one: 'Prima misurazione · obiettivo {count} sollevamento',
+    other: 'Prima misurazione · obiettivo {count} sollevamenti',
+  },
+  'testday.intro.need': 'Ti serve',
+  'testday.intro.needBarefoot': 'Piedi nudi',
+  'testday.intro.needWall': 'Un muro da toccare per l’equilibrio',
+  'testday.intro.needPhone': 'Il telefono dove puoi vederlo',
+  'testday.intro.checkin': 'Come sta il piede adesso?',
+  'testday.intro.checkinHint': 'Vale come check-in di oggi.',
+  'testday.intro.painNone': 'Nessun dolore',
+  'testday.intro.painWorst': 'Il peggiore',
+  'testday.intro.painA11y': '{score} su 10',
+  'testday.intro.sore':
+    'In un giorno di dolore i numeri escono più bassi di quanto valga davvero il tuo piede, e le prossime due settimane verrebbero pianificate su quelli. Il test può aspettare domani.',
+  'testday.intro.start': 'Inizia',
+  'testday.intro.anyway': 'Fai il test comunque',
+  'testday.intro.tomorrow': 'Fai il test domani',
+
+  // ── The three tests ───────────────────────────────────────────────────────
+  'testday.test.eyebrow': 'Test {current} di {total}',
+  'testday.test.calf.name': 'Sollevamenti sui talloni',
+  'testday.test.calf.measures': 'Quanti sollevamenti fa ogni gamba a ritmo costante',
+  'testday.test.arch.name': 'Tenuta dell’arco',
+  'testday.test.arch.measures': 'Per quanto tempo l’arco resta sollevato',
+  'testday.test.balance.name': 'Equilibrio',
+  'testday.test.balance.measures': 'Per quanto tempo stai su una gamba a occhi chiusi',
+
+  'testday.side.left': 'Gamba sinistra',
+  'testday.side.right': 'Gamba destra',
+  'testday.side.leftSore': 'Gamba sinistra - quella che fa male',
+  'testday.side.rightSore': 'Gamba destra - quella che fa male',
+
+  'testday.calf.step1': 'Mettiti su una gamba, con la punta delle dita sul muro per l’equilibrio.',
+  'testday.calf.step2': 'Sali fino in cima e scendi di nuovo, un sollevamento ogni 2 secondi. Un tic tiene il ritmo.',
+  'testday.calf.step3': 'Tocca Stop quando non riesci più a tenere il ritmo o l’altezza piena. Poi l’altra gamba.',
+  'testday.calf.stopHint': 'Tocca quando non riesci a tenere il ritmo o l’altezza piena',
+  'testday.calf.up': 'Su',
+  'testday.calf.down': 'Giù',
+  'testday.calf.otherTitle': 'Ora l’altra gamba',
+  'testday.calf.otherBody': 'Stesso ritmo, stessa altezza piena, dita sul muro.',
+
+  'testday.arch.step1': 'Stai in piedi su entrambi i piedi, con il peso distribuito.',
+  'testday.arch.step2': 'Avvicina l’avampiede al tallone così che l’arco si sollevi. Le dita restano distese e rilassate.',
+  'testday.arch.step3': 'Tieni. Tocca Stop appena l’arco scende.',
+  'testday.arch.stopHint': 'Tocca appena l’arco scende',
+
+  'testday.balance.step1': 'Mettiti su una gamba vicino al muro, mani sui fianchi.',
+  'testday.balance.step2': 'Chiudi gli occhi al via. Un suono ti avvisa quando il tempo è finito.',
+  'testday.balance.step3': 'Apri gli occhi e tocca Stop appena l’altro piede tocca terra.',
+  'testday.balance.stopHint': 'Tocca quando l’altro piede tocca terra',
+
+  'testday.start': 'Inizia',
+  'testday.stop': 'Stop',
+  'testday.timeLeft': 'Mancano {time}',
+  'testday.secondsLeft': { one: 'secondo rimasto', other: 'secondi rimasti' },
+  'testday.held': 'Tenuto per {n} s',
+
+  'testday.paused.title': 'In pausa',
+  'testday.paused.body': 'Il timer si è fermato mentre l’app era in background.',
+  'testday.paused.resume': 'Riprendi',
+  'testday.paused.restart': 'Ricomincia questo test',
+
+  'testday.confirm.raises': {
+    one: '{count} sollevamento - è giusto?',
+    other: '{count} sollevamenti - è giusto?',
+  },
+  'testday.confirm.seconds': {
+    one: '{count} secondo - è giusto?',
+    other: '{count} secondi - è giusto?',
+  },
+  'testday.confirm.hint': 'Correggilo se il conteggio non torna.',
+  'testday.confirm.holdHint': 'Se ti ci è voluto un attimo per raggiungere il telefono, togli quei secondi.',
+  'testday.confirm.less': 'Meno',
+  'testday.confirm.more': 'Più',
+  'testday.confirm.again': 'Rifai questo test',
+  'testday.confirm.next': 'Test successivo',
+  'testday.confirm.finish': 'Vedi i risultati',
+
+  // ── Results ───────────────────────────────────────────────────────────────
+  'testday.results.title': 'I tuoi risultati',
+  'testday.results.blurb': 'Confrontati con il tuo ultimo test, mai con qualcun altro.',
+  'testday.results.firstBlurb': 'Questo è il tuo punto di partenza. Il prossimo test mostrerà cosa è cambiato.',
+  'testday.results.name.arch_hold': 'Tenuta dell’arco',
+  'testday.results.name.calf_raises': 'Sollevamenti sui talloni',
+  'testday.results.name.balance': 'Equilibrio',
+  'testday.results.name.symmetry': 'Simmetria',
+  'testday.results.unitSeconds': { one: 'secondo', other: 'secondi' },
+  'testday.results.unitRaises': { one: 'sollevamento', other: 'sollevamenti' },
+  'testday.results.percent': '{n}%',
+  'testday.results.gapUnit': 'di differenza tra le gambe',
+  'testday.results.legs': 'Sinistra {left} · destra {right}',
+  'testday.results.goalSeconds': 'Obiettivo {n} s',
+  'testday.results.goalRaises': { one: 'Obiettivo {count} sollevamento', other: 'Obiettivo {count} sollevamenti' },
+  'testday.results.goalGap': 'Obiettivo: sotto il {n}%',
+  'testday.results.toGoSeconds': { one: 'Manca {count} s', other: 'Mancano {count} s' },
+  'testday.results.toGoRaises': { one: 'Manca {count} sollevamento', other: 'Mancano {count} sollevamenti' },
+  'testday.results.toGoGap': { one: 'Manca {count} punto', other: 'Mancano {count} punti' },
+  'testday.results.reached': 'Obiettivo raggiunto',
+  'testday.results.moreSeconds': {
+    one: '{count} s in più dell’ultima volta',
+    other: '{count} s in più dell’ultima volta',
+  },
+  'testday.results.fewerSeconds': {
+    one: '{count} s in meno dell’ultima volta',
+    other: '{count} s in meno dell’ultima volta',
+  },
+  'testday.results.moreRaises': {
+    one: '{count} sollevamento in più dell’ultima volta',
+    other: '{count} sollevamenti in più dell’ultima volta',
+  },
+  'testday.results.fewerRaises': {
+    one: '{count} sollevamento in meno dell’ultima volta',
+    other: '{count} sollevamenti in meno dell’ultima volta',
+  },
+  'testday.results.gapSmaller': {
+    one: 'Differenza più piccola di {count} punto rispetto all’ultima volta',
+    other: 'Differenza più piccola di {count} punti rispetto all’ultima volta',
+  },
+  'testday.results.gapLarger': {
+    one: 'Differenza più grande di {count} punto rispetto all’ultima volta',
+    other: 'Differenza più grande di {count} punti rispetto all’ultima volta',
+  },
+  'testday.results.same': 'Come l’ultima volta',
+  'testday.results.first': 'Prima misurazione',
+  'testday.results.nextTest': 'Prossimo test: {date}',
+  'testday.results.planUpdated': 'Il tuo piano per le prossime due settimane è aggiornato.',
+  'testday.results.done': 'Fatto',
+};

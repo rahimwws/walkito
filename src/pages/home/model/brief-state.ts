@@ -223,7 +223,8 @@ export function personalState(
   if (goal === 'consistent') return 'goal-consistent';
   if (goal === 'stronger') return 'goal-stronger';
   if (goal === 'injuryfree') return 'goal-injuryfree';
-  if ((goal === 'painfree' || goal === 'race') && (SPORTS as readonly string[]).includes(sport ?? '')) {
+  // `mornings` is the newer wording of the pain goal, `comeback` "back to running".
+  if ((goal === 'painfree' || goal === 'mornings' || goal === 'race' || goal === 'comeback') && (SPORTS as readonly string[]).includes(sport ?? '')) {
     return 'goal-back';
   }
   return null;

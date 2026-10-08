@@ -2,43 +2,34 @@ import { useRouter } from 'expo-router';
 import { DiamondIcon } from 'phosphor-react-native/src/icons/Diamond';
 import { FireIcon } from 'phosphor-react-native/src/icons/Fire';
 import { useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import {
-  CONSISTENCY_WINDOW,
-  MAX_LEVEL,
-  PROGRAM,
-  TODAY_INDEX,
-  weekPlan,
+  currentDay,
+  goals as planGoals,
+  painSeries,
+  retestResults,
+  todayKey,
+  useLogsVersion,
   usePlanVersion,
-  completedThrough,
-  computeScore,
-  currentLevels,
-  latestRetest,
-  painFor,
-  painOn,
   useStreak,
-  type RetestRow,
 } from '@/entities/program';
-import { accents } from '@/shared/config';
-import { useLanguage, useT } from '@/shared/lib/i18n';
+import { accents, fonts, meterColors } from '@/shared/config';
+import { useT } from '@/shared/lib/i18n';
 import { useProgram } from '@/shared/lib/program';
 import { useColorScheme } from '@/shared/lib/theme';
 import { useDockHeight } from '@/shared/ui/action-dock';
-import { DailyBrief, buildBrief } from '@/shared/ui/daily-brief';
 import { GiftSheet } from '@/shared/ui/gift-sheet';
 import { StreakSheet } from '@/shared/ui/streak-sheet';
 import { useMinimizeOnScroll } from '@/shared/ui/glass-tabs';
 import { HeaderActions } from '@/shared/ui/header-actions';
-import { SegmentedControl } from '@/shared/ui/segmented-control';
 import { IntroReveal } from '@/shared/ui/splash';
 import { REPLAY_MASK } from '@/shared/ui/replay-mask';
 
-import { progressBrief } from '../model/brief-copy';
-import { PerformanceCard } from './performance-card';
-import { ScoreCard } from './score-card';
+import { rollingMean, strengthRows } from '../model/progress-data';
+import { GoalsCard, PainLineCard, StrengthCard } from './progress-cards';
 import { StreakTile } from './streak-tile';
 
 const SIDE_PAD = 20;
@@ -48,195 +39,37 @@ const SIDE_PAD = 20;
 // attendance, and then both come from the same place" — `useStreak` is that
 // place, and it reads the same logs the rest of this screen does.
 
-/** The ruler's vocabulary, lowest first. Four words for four levels. */
-const BANDS = [
-  'progress.bandVeryLow',
-  'progress.bandLow',
-  'progress.bandMedium',
-  'progress.bandHigh',
-] as const;
+/** How far back the pain line reaches. */
+const PAIN_DAYS = 90;
 
 /**
- * The three windows.
- *
- * Only the window is declared here now. `score`, `ability` and `abilityDelta`
- * used to be written into this table as stand-ins; they are measured below —
- * the score from the published formula, and the ability from the last two
- * retests. A number on this screen is either something the user did or
- * something derived from it, and nothing in between.
- *
- * `label` and `window` are two keys for what English writes as the same words,
- * because Russian does not: the segment reads "7 дней", and the same span
- * inside the trend sentence reads "последние 7 дней" — and "последний месяц",
- * where the qualifier changes with the noun. The agreement belongs to the
- * catalogue, so each language holds the finished phrase for both jobs.
+ * The screen, in the order it is read: what the tests measured, how mornings
+ * are trending, how far each goal has come, then turning up.
  */
-const RANGES = [
-  { label: 'progress.range7Days', window: 'progress.window7Days', days: 7 },
-  { label: 'progress.rangeMonth', window: 'progress.windowMonth', days: 30 },
-  { label: 'progress.range3Months', window: 'progress.window3Months', days: 90 },
-] as const;
-
-/**
- * Ninety days, not seven.
- *
- * Pain fluctuates day to day, so a week-long window shows a worsening trend
- * roughly half the time from noise alone — and a screen that tells someone
- * their pain is up when nothing has actually changed is worse than a screen
- * that says nothing. Three months is long enough for the signal to clear the
- * noise, so it is what the tab opens on.
- */
-const DEFAULT_RANGE = 2;
-
-/** Both halves of a window need enough days to average, or the comparison is
- * one noisy reading against another. */
-const MIN_WINDOW_DAYS = 14;
-
-/**
- * Mean logged pain across a span of program days, or null if it is empty.
- *
- * Clamped to the days that have actually happened — asking for ninety days of
- * history from a programme that is sixteen days old has to come back empty
- * rather than wrapping around the sample log and inventing a past.
- */
-function meanPain(from: number, to: number): number | null {
-  const start = Math.max(0, from);
-  const end = Math.min(TODAY_INDEX, to);
-  if (end <= start) return null;
-  let sum = 0;
-  for (let i = start; i < end; i += 1) sum += painFor(i);
-  return sum / (end - start);
-}
-
-/**
- * Mornings actually logged in the last `window` days.
- *
- * Counts entries, not sessions — the consistency term of the score is about
- * turning up, and answering "it hurts today" is turning up. Clamped to days
- * that have happened so a fortnight-old programme is not marked down for the
- * days it has not lived through.
- */
-function checkInsIn(cursor: number, window: number): number {
-  let count = 0;
-  for (let index = Math.max(0, cursor - window); index < cursor; index += 1) {
-    if (painOn(index + 1) != null) count += 1;
-  }
-  return count;
-}
-
-/** The screen: how the window moved, then where the user stands in it. */
 export function ProgressPage() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const onScroll = useMinimizeOnScroll();
   const dockHeight = useDockHeight();
   const scheme = useColorScheme();
+  const meter = meterColors[scheme];
   const program = useProgram();
-  const today = PROGRAM[TODAY_INDEX];
   usePlanVersion();
-  const focus = weekPlan().focus;
+  useLogsVersion();
   const t = useT();
-  const copy = progressBrief(useLanguage());
 
   /** The reward sheet, opened from the capsule in the header. */
   const [giftOpen, setGiftOpen] = useState(false);
   /** What the streak means, opened from the capsule that shows it. */
   const [streakOpen, setStreakOpen] = useState(false);
   const streak = useStreak();
-  const [rangeIndex, setRangeIndex] = useState(DEFAULT_RANGE);
-  const range = RANGES[rangeIndex];
 
-  /**
-   * Ability, and how far it moved at the last retest.
-   *
-   * Neither figure follows the range control, and that is deliberate: a level
-   * is a measurement taken on a particular morning, not a statistic over a
-   * window. Re-averaging it per tab would let the same performance read as two
-   * different abilities depending on which segment happened to be selected,
-   * which is exactly the drift the levels rule exists to prevent. The delta is
-   * this retest against the one before it — the two figures the rows already
-   * carry — so the card and the retest sheet can never disagree.
-   */
-  const levels = currentLevels(TODAY_INDEX);
-  const latest = latestRetest(TODAY_INDEX);
-
-  const average = (pick: (row: RetestRow) => number) =>
-    latest == null
-      ? null
-      : latest.retest.rows.reduce((sum, row) => sum + pick(row), 0) / latest.retest.rows.length;
-
-  const ability = average((row) => row.level) ?? 0;
-  const wasAbility = average((row) => row.wasLevel) ?? 0;
-  // Guarded: before the first retest there is nothing to divide by, and a
-  // level cannot fall to zero, so this can only be zero when unmeasured.
-  const abilityDelta =
-    wasAbility > 0 ? Math.round(((ability - wasAbility) / wasAbility) * 100) : 0;
-
-  /**
-   * The score, as the formula publishes it.
-   *
-   * Levels carry half of it, the pain trend thirty and turning up twenty. The
-   * pain term is the one thing here that follows the range control, because it
-   * is the only one of the three that is a statistic over a window — which is
-   * also what makes switching tabs worth doing.
-   */
-  const score = computeScore({
-    levels,
-    painEarlier: meanPain(TODAY_INDEX - range.days, TODAY_INDEX - Math.floor(range.days / 2)),
-    painRecent: meanPain(TODAY_INDEX - Math.floor(range.days / 2), TODAY_INDEX),
-    checkInsLast14: checkInsIn(TODAY_INDEX, CONSISTENCY_WINDOW),
-  });
-
-  /**
-   * The headline sentence, in Home's voice: grey carries the grammar and the
-   * emphasis carries the fact, so the line can be skimmed for the coloured
-   * words alone and still be read correctly.
-   *
-   * Three shapes, and which one appears is decided by the data rather than by
-   * the tab: a week counts, a long enough window compares its two halves, and
-   * a window the programme has not lived through yet says so instead of
-   * manufacturing a trend out of one reading.
-   *
-   * All three used to be built here as inline token arrays, which welded the
-   * English word order into the sequence — `DailyBrief` renders tokens as
-   * sibling `<Text>` nodes and has no reordering layer, so the array *is* the
-   * sentence. They are now one `BriefSegment[]` per language in the catalogue
-   * (see `../model/brief-copy`), and the orders genuinely differ: Russian
-   * states the week first and puts the figures last, and Spanish spends three
-   * segments where English spends two. Neither is reachable by substituting
-   * into the English array.
-   */
-  const brief = (() => {
-    if (range.days === 7) {
-      const logged = completedThrough(TODAY_INDEX) - completedThrough(Math.max(TODAY_INDEX - 7, 0));
-      return buildBrief(copy.week, { logged: String(logged) }, { capitalise: true });
-    }
-    const half = Math.floor(range.days / 2);
-    const recent = meanPain(TODAY_INDEX - half, TODAY_INDEX);
-    const earlier = meanPain(TODAY_INDEX - range.days, TODAY_INDEX - half);
-    if (recent == null || earlier == null || TODAY_INDEX < MIN_WINDOW_DAYS) {
-      // The span arrives as a finished phrase — "16 days", "16 дней" — from
-      // the same core entry the streak tiles use, so the two can never write a
-      // day count differently.
-      return buildBrief(
-        copy.tooEarly,
-        { days: t('streak.dayCount', { count: TODAY_INDEX }) },
-        { capitalise: true },
-      );
-    }
-    const from = Math.round(earlier);
-    const to = Math.round(recent);
-    // Falling pain is the good direction, so the arrow and the colour both
-    // come off the same comparison — they are baked into the two segment
-    // arrays. Getting this backwards would paint an improving month red, or
-    // worse, a worsening one green.
-    const better = to <= from;
-    return buildBrief(
-      better ? copy.trendBetter : copy.trendWorse,
-      { window: t(range.window), from: String(from), to: String(to) },
-      { capitalise: true },
-    );
-  })();
+  const strength = strengthRows(retestResults());
+  // First-step readings only, from the start of the plan or the last 90 days.
+  const days = Math.max(1, Math.min(PAIN_DAYS, currentDay()));
+  const daily = painSeries(todayKey(), days);
+  const mean = rollingMean(daily);
+  const goalList = planGoals();
 
   return (
     <View style={styles.screen} {...REPLAY_MASK}>
@@ -276,48 +109,20 @@ export function ProgressPage() {
           />
         </IntroReveal>
 
-        <IntroReveal order={1} style={styles.control}>
-          <SegmentedControl
-            segments={RANGES.map((option) => t(option.label))}
-            selectedIndex={rangeIndex}
-            onChange={setRangeIndex}
-          />
+        <IntroReveal order={1} style={styles.first}>
+          <StrengthCard rows={strength} />
         </IntroReveal>
 
-        <IntroReveal order={2} style={styles.brief}>
-          <DailyBrief tokens={brief} />
+        <IntroReveal order={2} style={styles.next}>
+          <PainLineCard daily={daily} mean={mean} />
         </IntroReveal>
 
-        <IntroReveal order={3}>
-          <ScoreCard
-            score={score}
-            title={t('progress.scoreTitle')}
-            headline={t('progress.scoreStreak', { count: streak.current })}
-            // What this week works on, from the weekly plan — the fixed
-            // program's block name said "finish the Sustain block" to a plan
-            // that has no blocks and no finish.
-            note={
-              focus != null
-                ? t('progress.scoreNote', { goal: t(`pages.week.goal.${focus}`) })
-                : t('progress.scoreNoteNoGoal')
-            }
-          />
+        <IntroReveal order={3} style={styles.next}>
+          <GoalsCard goals={goalList} />
         </IntroReveal>
 
-        <IntroReveal order={4} style={styles.performance}>
-          <PerformanceCard
-            value={ability}
-            max={MAX_LEVEL}
-            delta={abilityDelta}
-            bands={BANDS.map((band) => t(band))}
-          />
-        </IntroReveal>
-
-        {/* Attendance, under the card about ability. The two streaks do not
-            move with the range control on purpose: a current streak is a fact
-            about today, and "3 days" would be a lie if it quietly became "3
-            days, measured over 3 months". */}
-        <IntroReveal order={5} style={styles.streaks}>
+        {/* Turning up, last. Every kind of day counts, and the line says so. */}
+        <IntroReveal order={4} style={styles.streaks}>
           <StreakTile
             icon={FireIcon}
             tint={accents[scheme].orange.fill}
@@ -331,6 +136,7 @@ export function ProgressPage() {
             label={t('progress.longestStreak')}
           />
         </IntroReveal>
+        <Text style={[styles.streakCaption, { color: meter.caption }]}>{t('progress.streakCaption')}</Text>
 
         <GiftSheet visible={giftOpen} onClose={() => setGiftOpen(false)} />
 
@@ -353,21 +159,21 @@ const styles = StyleSheet.create({
   root: {
     flex: 1,
   },
-  control: {
+  first: {
     marginTop: 22,
   },
-  brief: {
-    marginTop: 20,
-    marginBottom: 22,
-  },
-  performance: {
+  next: {
     marginTop: 14,
   },
   streaks: {
     flexDirection: 'row',
-    // The gap between the two tiles reads as the same air as the gap above
-    // them, so the three cards sit on one grid rather than in two clusters.
     gap: 14,
     marginTop: 14,
+  },
+  streakCaption: {
+    ...fonts.medium(13),
+    lineHeight: 18,
+    marginTop: 10,
+    paddingHorizontal: 4,
   },
 });

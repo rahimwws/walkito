@@ -1,5 +1,5 @@
 /**
- * CLDR plural categories for the three languages this app ships in.
+ * CLDR plural categories for the languages this app ships in.
  *
  * **Why this is hand-written rather than `Intl.PluralRules`.**
  *
@@ -11,7 +11,7 @@
  * "5 день" on the streak tile for everyone. Nobody notices until a Russian
  * speaker opens the app.
  *
- * Three languages is four short predicates. They are frozen data — CLDR plural
+ * Seven languages is a handful of short predicates. They are frozen data — CLDR plural
  * *categories* for established languages do not change — and being ours means
  * they are testable in bun, on the machine, in the same run as everything else.
  * See `plural.test.ts`, which covers the boundaries these rules exist for
@@ -38,6 +38,10 @@ export const CATEGORIES_BY_LANGUAGE = {
   en: ['one', 'other'],
   ru: ['one', 'few', 'many', 'other'],
   es: ['one', 'many', 'other'],
+  pt: ['one', 'many', 'other'],
+  fr: ['one', 'many', 'other'],
+  de: ['one', 'other'],
+  it: ['one', 'many', 'other'],
 } as const satisfies Record<string, readonly PluralCategory[]>;
 
 /** Integer part and visible-fraction-digit count, the two operands CLDR's rules
@@ -97,7 +101,60 @@ function russian(count: number): PluralCategory {
   return 'many';
 }
 
-const RULES = { en: english, ru: russian, es: spanish } as const;
+/** Whole millions: "un million de jours", "um milhão de dias". Unreachable
+ * here, implemented for the same reason as Spanish `many`. */
+function isWholeMillions(i: number, v: number): boolean {
+  return i !== 0 && i % 1_000_000 === 0 && v === 0;
+}
+
+/**
+ * Portuguese, as written in Brazil. `one` at exactly 1, as German and Italian.
+ *
+ * A deliberate departure from CLDR, which puts 0 (and 0.5, 1.5) in `one` for
+ * `pt`. The app's zero is a count of days, moves or minutes ("0 dias"), and
+ * Portuguese writes that in the plural in both Brazil and Portugal; "0 dia" on
+ * a streak tile reads as a typo.
+ */
+function portuguese(count: number): PluralCategory {
+  const { i, v } = operands(count);
+  if (i === 1 && v === 0) return 'one';
+  if (isWholeMillions(i, v)) return 'many';
+  return 'other';
+}
+
+/**
+ * French. `one` for 0 and 1, including their fractions: "0 jour", "1,5 jour".
+ * That is French grammar, not a quirk: the singular runs up to two.
+ */
+function french(count: number): PluralCategory {
+  const { i, v } = operands(count);
+  if (i === 0 || i === 1) return 'one';
+  if (isWholeMillions(i, v)) return 'many';
+  return 'other';
+}
+
+/** German. `one` at exactly 1, `other` everywhere else, as English. */
+function german(count: number): PluralCategory {
+  return english(count);
+}
+
+/** Italian. `one` at exactly 1; `many` only at whole millions. */
+function italian(count: number): PluralCategory {
+  const { i, v } = operands(count);
+  if (i === 1 && v === 0) return 'one';
+  if (isWholeMillions(i, v)) return 'many';
+  return 'other';
+}
+
+const RULES = {
+  en: english,
+  ru: russian,
+  es: spanish,
+  pt: portuguese,
+  fr: french,
+  de: german,
+  it: italian,
+} as const;
 
 /** The CLDR category `count` selects in `language`. */
 export function pluralCategory(

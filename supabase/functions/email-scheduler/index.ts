@@ -36,6 +36,10 @@ import { composeMessage, type MailConfig } from '../_shared/email/compose.ts';
 import { loadSnapshots } from '../_shared/email/load.ts';
 import { evaluate, welcomeNow } from '../_shared/email/rules.ts';
 import { sampleEmails } from '../_shared/email/samples.ts';
+import { siteLeadEmail } from '../_shared/email/site-leads.ts';
+import { unsubscribeToken } from '../_shared/email/links.ts';
+import { renderEmail } from '../_shared/email/template.ts';
+import { asLocale, type Locale } from '../_shared/email/types.ts';
 
 const env = (name: string): string => Deno.env.get(name) ?? '';
 
@@ -128,7 +132,7 @@ async function checkDeliveries(): Promise<{ checked: number; bounced: number; co
 
 type Outcome = { userId: string; key: string; subject: string; result: string; html?: string };
 
-async function send(decision: NonNullable<ReturnType<typeof evaluate>['decision']>, userId: string, email: string, locale: 'en' | 'ru' | 'es'): Promise<string> {
+async function send(decision: NonNullable<ReturnType<typeof evaluate>['decision']>, userId: string, email: string, locale: Locale): Promise<string> {
   // Claim first. The unique (user_id, dedupe_key) index is what keeps two
   // overlapping runs from sending the same email twice.
   const claim = await db
@@ -199,7 +203,7 @@ async function welcome(userId: string): Promise<void> {
 /** Every email (or the ones named) with sample numbers, to one address. Not logged. */
 async function sendSamples(to: string, locale: string | undefined, keys: string[] | undefined) {
   if (!RESEND_KEY) return { error: 'RESEND_API_KEY not set' };
-  const l = locale === 'ru' || locale === 'es' ? locale : 'en';
+  const l = asLocale(locale);
   const picked = sampleEmails(l).filter((x) => keys == null || keys.length === 0 || keys.includes(x.key));
   const results: { key: string; result: string }[] = [];
   const sampleConfig = config;
@@ -314,7 +318,132 @@ Deno.serve(async (req) => {
     if (rows.length < BATCH || body.userId) break;
   }
 
+  // ── Site leads: 7-day sequence ─────────────────────────────────────────
+  // Confirmed, opted-in, not-unsubscribed leads with days left to send.
+  const siteLeadResults: { leadId: string; day: number; result: string }[] = [];
+  if (!dry) {
+    const SITE_BATCH = 100;
+    const HOURS_BETWEEN = 23; // send next day's email after ~24h (with 1h margin)
+    for (let from = 0; ; from += SITE_BATCH) {
+      const { data: leads, error: leadsError } = await db
+        .from('site_leads')
+        .select('id, email, locale, plan_day, last_sent_at')
+        .not('confirmed_at', 'is', null)
+        .is('unsubscribed_at', null)
+        .eq('bounced', false)
+        .eq('lifecycle_opt_in', true)
+        .lt('plan_day', 7)
+        .order('id')
+        .range(from, from + SITE_BATCH - 1);
+      if (leadsError != null || leads == null || leads.length === 0) break;
+
+      for (const lead of leads) {
+        const lastSent = lead.last_sent_at ? new Date(lead.last_sent_at).getTime() : 0;
+        const hoursSince = (Date.now() - lastSent) / 3_600_000;
+        if (hoursSince < HOURS_BETWEEN) continue;
+
+        const nextDay = (lead.plan_day ?? 0) + 1;
+        if (nextDay > 7) continue;
+
+        const locale = lead.locale === 'ru' || lead.locale === 'es' ? lead.locale : 'en';
+        const content = siteLeadEmail(nextDay, locale as 'en' | 'ru' | 'es');
+        if (content == null) continue;
+
+        const emailKey = `site_day${nextDay}`;
+        const dedupeKey = emailKey;
+
+        // Claim in the log (dedupe).
+        const claim = await db
+          .from('site_lead_email_log')
+          .insert({ lead_id: lead.id, email_key: emailKey, dedupe_key: dedupeKey, locale, status: 'sending' })
+          .select('id')
+          .single();
+        if (claim.error != null) {
+          siteLeadResults.push({ leadId: lead.id, day: nextDay, result: claim.error.code === '23505' ? 'already claimed' : `claim: ${claim.error.message}` });
+          continue;
+        }
+
+        try {
+          const token = await unsubscribeToken(lead.id, config.unsubscribeSecret);
+          const unsubscribeUrl = `${config.linkBase}/unsubscribe/?t=${encodeURIComponent(token)}&l=${locale}`;
+          const oneClickUrl = `${config.functionsBase}/email-unsubscribe?t=${encodeURIComponent(token)}`;
+
+          const emailContent = {
+            subject: content.subject,
+            preheader: content.preheader,
+            greeting: null,
+            paragraphs: content.paragraphs,
+            button: content.button != null
+              ? { label: content.button.label, path: '__external__' }
+              : { label: '', path: '' },
+            ps: content.ps,
+          };
+
+          const { html, text } = await renderEmail({
+            content: emailContent,
+            locale: locale as 'en' | 'ru' | 'es',
+            buttonUrl: content.button?.url ?? '',
+            unsubscribeUrl,
+            settingsUrl: unsubscribeUrl,
+            postalAddress: config.postalAddress ? config.postalAddress.toLowerCase() : '',
+            assetBase: config.linkBase,
+            footerWhy: "you're getting this because you asked for the free exercise sheets on walkito.site.",
+            hideSettings: true,
+          });
+
+          const res = await fetch('https://api.resend.com/emails', {
+            method: 'POST',
+            headers: {
+              Authorization: `Bearer ${RESEND_KEY}`,
+              'Content-Type': 'application/json',
+              'Idempotency-Key': `${lead.id}:${dedupeKey}`,
+            },
+            body: JSON.stringify({
+              from: config.from,
+              to: [lead.email],
+              reply_to: config.replyTo,
+              subject: content.subject,
+              html,
+              text,
+              headers: {
+                'List-Unsubscribe': `<${oneClickUrl}>`,
+                'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
+              },
+              tags: [
+                { name: 'email_key', value: emailKey },
+                { name: 'locale', value: locale },
+              ],
+            }),
+          });
+          const resBody = (await res.json().catch(() => ({}))) as { id?: string; message?: string };
+
+          if (res.ok && resBody.id) {
+            const sentAt = new Date().toISOString();
+            await db.from('site_lead_email_log').update({ status: 'sent', resend_id: resBody.id, sent_at: sentAt }).eq('id', claim.data.id);
+            await db.from('site_leads').update({ plan_day: nextDay, last_sent_at: sentAt }).eq('id', lead.id);
+            siteLeadResults.push({ leadId: lead.id, day: nextDay, result: 'sent' });
+          } else {
+            // Rejected address: mark bounced.
+            if (res.status === 422 && /to|address|email/i.test(resBody.message ?? '')) {
+              await db.from('site_lead_email_log').update({ status: 'failed', error: resBody.message }).eq('id', claim.data.id);
+              await db.from('site_leads').update({ bounced: true }).eq('id', lead.id);
+            } else {
+              await db.from('site_lead_email_log').delete().eq('id', claim.data.id);
+            }
+            siteLeadResults.push({ leadId: lead.id, day: nextDay, result: `failed ${res.status}: ${resBody.message ?? ''}` });
+          }
+          await sleep(SEND_GAP_MS);
+        } catch (error) {
+          await db.from('site_lead_email_log').delete().eq('id', claim.data.id);
+          siteLeadResults.push({ leadId: lead.id, day: nextDay, result: `error: ${error instanceof Error ? error.message : String(error)}` });
+        }
+      }
+      if (leads.length < SITE_BATCH) break;
+    }
+  }
+  const siteLeadsSent = siteLeadResults.filter((r) => r.result === 'sent').length;
+
   const sent = outcomes.filter((o) => o.result === 'sent').length;
-  console.log(`[email] mode=${MODE}${dry ? ' (dry)' : ''} contacts=${contacts} decided=${outcomes.length} sent=${sent} attributed=${attributed}`);
-  return json({ mode: MODE, dry, now: now.toISOString(), contacts, attributed, deliveries, sent, outcomes, skippedByReason });
+  console.log(`[email] mode=${MODE}${dry ? ' (dry)' : ''} contacts=${contacts} decided=${outcomes.length} sent=${sent} attributed=${attributed} siteLeads=${siteLeadsSent}`);
+  return json({ mode: MODE, dry, now: now.toISOString(), contacts, attributed, deliveries, sent, outcomes, skippedByReason, siteLeads: { sent: siteLeadsSent, results: siteLeadResults } });
 });

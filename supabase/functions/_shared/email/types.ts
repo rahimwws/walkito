@@ -7,9 +7,15 @@
  * touches Deno, Supabase or Resend.
  */
 
-export type Locale = 'en' | 'ru' | 'es';
+export type Locale = 'en' | 'ru' | 'es' | 'pt' | 'fr' | 'de' | 'it';
 
-export const LOCALES: readonly Locale[] = ['en', 'ru', 'es'];
+export const LOCALES: readonly Locale[] = ['en', 'ru', 'es', 'pt', 'fr', 'de', 'it'];
+
+/** Narrows whatever the phone or a row sent to a language we write emails in,
+ * or English. A whole email in one language, never a mix. */
+export function asLocale(value: unknown): Locale {
+  return (LOCALES as readonly unknown[]).includes(value) ? (value as Locale) : 'en';
+}
 
 /** Mirrors `GoalType` in `src/entities/program/model/plan/goals.ts`. */
 export type GoalType = 'pain_free_mornings' | 'arch_hold' | 'calf_raises' | 'balance' | 'symmetry';

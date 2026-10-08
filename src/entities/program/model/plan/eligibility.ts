@@ -18,6 +18,8 @@ export type EligibilityContext = {
   shortFootStandingSessions: number;
   /** Week one: nothing that loads the fascia, nothing above level 2. */
   settling: boolean;
+  /** Week one seated only — see `PlanSettings.seatedStart`. Applies while settling. */
+  seatedOnly?: boolean;
 };
 
 /** `band_inversion` waits for the arch's own muscles: six standing short-foot sessions first. */
@@ -53,6 +55,7 @@ export function allowed(id: string, ctx: EligibilityContext): boolean {
   if (ctx.cantDo.has(id)) return false;
   if (meta.equipment.some((item) => ctx.equipmentMissing.includes(item))) return false;
   if (ctx.settling && (meta.fascia || meta.level > 2)) return false;
+  if (ctx.settling && ctx.seatedOnly === true && meta.position !== 'seated') return false;
   if (id === 'pogo_hops' && !pogoAllowed(ctx.painLast14)) return false;
   if (id === 'band_inversion' && ctx.shortFootStandingSessions < BAND_INVERSION_AFTER) return false;
   return true;

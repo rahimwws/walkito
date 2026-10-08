@@ -13,7 +13,15 @@ import { formatDate } from '@/lib/schema';
 import { REVIEWER } from '@/lib/reviewer';
 import { PAGE_UPDATED, SAME_AS, SITE_NAME, SITE_URL, SUPPORT_EMAIL } from '@/lib/site';
 
-const REVIEWER_HEADING = { en: 'Who reviews our guides', ru: 'Кто проверяет наши гайды', es: 'Quién revisa nuestras guías' } as const;
+const REVIEWER_HEADING = {
+  en: 'Who reviews our guides',
+  ru: 'Кто проверяет наши гайды',
+  es: 'Quién revisa nuestras guías',
+  pt: 'Quem revisa nossos guias',
+  fr: 'Qui relit nos guides',
+  it: 'Chi rivede le nostre guide',
+  de: 'Wer unsere Ratgeber prüft',
+} as const;
 
 /** `[label](/path/)` and `**bold**`, the same two marks the guides allow. */
 function Inline({ text }: { text: string }) {

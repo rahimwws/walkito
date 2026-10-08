@@ -1,4 +1,5 @@
 import type { EvidenceLevel } from '@/components/Evidence';
+import type { AnatomyId } from '@/lib/anatomy';
 import type { Lang, EnglishPage, TranslatedPage } from '@/lib/i18n';
 
 /**
@@ -38,6 +39,10 @@ export type GuideExercise = {
    * (`public/exercises/<id>.*`, made by `scripts/exercise-media.mjs`). When
    * set, it replaces the placeholder. */
   media?: string;
+  /** The clip only illustrates this block (e.g. the calf raise test shown
+   * with the two-foot raise clip). It still plays on the page, but is not
+   * described to search engines as a video of this block. */
+  mediaIsStandIn?: boolean;
   /** How strong the research behind this exercise is, and why in one line.
    * Levels as defined in the About page section "How we research". */
   evidence?: { level: EvidenceLevel; why: string };
@@ -56,6 +61,13 @@ export type GuideTable = {
 
 export type GuideSection = {
   h2: string;
+  /** One sentence with the section's key study number and who found it,
+   * printed under the heading: the line a reader or an AI answer quotes.
+   * Only a number already in this section's text and sources. */
+  keyFact?: string;
+  /** A labelled anatomy illustration, shown after the first paragraph.
+   * `caption` is one plain line under it; `alt` says what it shows. */
+  figure?: { id: AnatomyId; caption: string; alt: string };
   paragraphs?: readonly string[];
   exercises?: readonly GuideExercise[];
   bullets?: readonly string[];

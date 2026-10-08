@@ -2,10 +2,12 @@ import { afterAll, beforeAll, describe, expect, test } from 'bun:test';
 
 import {
   buildUpcomingWeek,
+  markCantDo,
   planSessionDone,
   planSettings,
   recordSession,
   setPlanSettings,
+  swapFor,
   weekPlan,
 } from '@/entities/program/model/plan/store';
 import { WEEK_SHAPES } from '@/entities/program/model/plan/week';
@@ -70,5 +72,21 @@ describe('the plan store', () => {
     // Kept: the second call finds it already there.
     expect(buildUpcomingWeek(sundayEvening)).toBe(false);
     expect(JSON.parse(kv.getString('plan/weeks') ?? '{}')['2026-10-05']).toBeDefined();
+  });
+});
+
+describe('"can\'t do this"', () => {
+  test('swaps a move for one on its own chain, and leaves it out of the plan', () => {
+    markCantDo('heel_raise_hold', 'hurts', WEDNESDAY);
+    const replacement = swapFor('heel_raise_hold', WEDNESDAY);
+    expect(replacement).not.toBeNull();
+    expect(replacement).not.toBe('heel_raise_hold');
+    expect(weekPlan(WEDNESDAY).days.flatMap((d) => d.exercises.map((e) => e.id))).not.toContain('heel_raise_hold');
+  });
+
+  test('a missing ball takes the ball out everywhere', () => {
+    markCantDo('foot_roll', 'no_ball', WEDNESDAY);
+    expect(planSettings().equipmentMissing).toContain('ball');
+    expect(swapFor('foot_roll', WEDNESDAY)).toBe('sole_massage');
   });
 });

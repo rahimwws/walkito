@@ -24,6 +24,10 @@ import { PlayIcon } from '@phosphor-icons/react/dist/ssr/Play';
 import { SneakerIcon } from '@phosphor-icons/react/dist/ssr/Sneaker';
 import { SunHorizonIcon } from '@phosphor-icons/react/dist/ssr/SunHorizon';
 import { TimerIcon } from '@phosphor-icons/react/dist/ssr/Timer';
+import { HOME_DE } from '@/lib/home/de';
+import { HOME_FR } from '@/lib/home/fr';
+import { HOME_IT } from '@/lib/home/it';
+import { HOME_PT } from '@/lib/home/pt';
 
 import { Prose } from '@/components/Prose';
 import { CHROME, TRANSLATED, type Lang } from '@/lib/i18n';
@@ -81,7 +85,7 @@ type Card = { title: string; text: string; goal: string | null };
  * sentence if its number changes. Non-breaking spaces are put in by
  * `scripts/typeset.mjs`, not by hand.
  */
-type HomeCopy = {
+export type HomeCopy = {
   meta: { title: string; description: string };
   h1a: string;
   h1b: string;
@@ -148,6 +152,10 @@ type HomeCopy = {
 };
 
 const COPY: Record<Lang, HomeCopy> = {
+  pt: HOME_PT,
+  fr: HOME_FR,
+  it: HOME_IT,
+  de: HOME_DE,
   en: {
     meta: {
       title: 'Walkito: Heel Pain & Flat Feet Exercise App',
@@ -550,6 +558,10 @@ export const HOME_META: Record<Lang, HomeCopy['meta']> = {
   en: COPY.en.meta,
   ru: COPY.ru.meta,
   es: COPY.es.meta,
+  pt: COPY.pt.meta,
+  fr: COPY.fr.meta,
+  it: COPY.it.meta,
+  de: COPY.de.meta,
 };
 
 /**

@@ -549,6 +549,32 @@ export function painLatestOn(dayNumber: number): number | null {
   return logs[dayNumber]?.painMorning ?? null;
 }
 
+/**
+ * Before this hour a check-in is about the first steps out of bed; after it,
+ * about the day. Only the first kind feeds the goals and the weekly means — a
+ * foot at nine in the evening says how the day went, not how the morning was.
+ */
+export const FIRST_STEP_CUTOFF_HOUR = 12;
+
+/** Whether a check-in made at `at` is a first-step reading. */
+export function isFirstStepTime(at: number): boolean {
+  return new Date(at).getHours() < FIRST_STEP_CUTOFF_HOUR;
+}
+
+/**
+ * The first-step reading for a day: the first check-in made before noon, or
+ * null when the day's only answers came later. Logs written before check-ins
+ * were a list carry their one reading as the morning's, as they always did.
+ */
+export function firstStepOn(dayNumber: number): number | null {
+  const log = logs[dayNumber];
+  if (log == null) return null;
+  const entries = log.painEntries;
+  if (entries == null || entries.length === 0) return log.painMorning ?? null;
+  const morning = entries.find((entry) => entry.at === 0 || isFirstStepTime(entry.at));
+  return morning?.score ?? null;
+}
+
 /** Every check-in made on a day, oldest first. */
 export function painEntriesOn(dayNumber: number): readonly PainEntry[] {
   const log = logs[dayNumber];
@@ -570,7 +596,7 @@ export function painAverage(dayNumber: number, window: number, minimum = 3): num
   let sum = 0;
   let count = 0;
   for (let day = Math.max(1, dayNumber - window); day < dayNumber; day += 1) {
-    const pain = painOn(day);
+    const pain = firstStepOn(day);
     if (pain != null) {
       sum += pain;
       count += 1;

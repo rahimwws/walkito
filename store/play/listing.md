@@ -30,7 +30,7 @@ A streak that counts check-ins, training and planned rest days. A score and test
 Health Connect
 With your permission Walkito reads steps, sleep, resting heart rate and runs from Health Connect to adjust the day's session, and saves finished sessions back. This data stays on your phone.
 
-Walkito is a training aid, not medical advice, and does not diagnose or treat any condition. If pain is sharp, getting worse, or comes with swelling, numbness or fever, see a doctor.
+Walkito is not a medical device and does not diagnose, treat, cure or prevent any medical condition. If pain is sharp, getting worse, or comes with swelling, numbness or fever, see a doctor.
 
 Walkito offers an annual subscription and a weekly subscription. Each renews until you cancel it in Google Play.
 
@@ -61,7 +61,7 @@ Walkito - короткая ежедневная тренировка для ст
 Health Connect
 С вашего разрешения Walkito читает из Health Connect шаги, сон, пульс покоя и пробежки, чтобы подстроить занятие дня, и сохраняет туда завершённые тренировки. Эти данные остаются на телефоне.
 
-Walkito - вспомогательное средство для тренировок, а не медицинская рекомендация. Приложение не ставит диагнозов и не лечит. Если боль острая, усиливается или сопровождается отёком, онемением или температурой, обратитесь к врачу.
+Walkito не является медицинским изделием и не диагностирует, не лечит, не излечивает и не предотвращает никакие заболевания. Если боль острая, усиливается или сопровождается отёком, онемением или температурой, обратитесь к врачу.
 
 В Walkito есть годовая и недельная подписка. Каждая продлевается, пока вы не отмените её в Google Play.
 
@@ -92,6 +92,6 @@ Una racha que cuenta registros, entrenamientos y días de descanso planificados.
 Health Connect
 Con tu permiso, Walkito lee pasos, sueño, frecuencia cardiaca en reposo y carreras desde Health Connect para ajustar la sesión del día, y guarda allí las sesiones terminadas. Estos datos se quedan en tu teléfono.
 
-Walkito es una ayuda para entrenar, no un consejo médico, y no diagnostica ni trata ninguna afección. Si el dolor es agudo, empeora o viene con hinchazón, entumecimiento o fiebre, consulta a un médico.
+Walkito no es un producto sanitario y no diagnostica, trata, cura ni previene ninguna afección. Si el dolor es agudo, empeora o viene con hinchazón, entumecimiento o fiebre, consulta a un médico.
 
 Walkito ofrece una suscripción anual y una semanal. Cada una se renueva hasta que la canceles en Google Play.

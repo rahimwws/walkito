@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 
 import { HOME_META } from '@/components/Home';
 import { RootDocument } from '@/components/RootDocument';
+import { oswald } from '@/lib/font-oswald';
 import { OG_LOCALE } from '@/lib/i18n';
 import { smartBannerContent, SITE_NAME, SITE_URL } from '@/lib/site';
 
@@ -43,5 +44,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <RootDocument lang="ru">{children}</RootDocument>;
+  return <RootDocument lang="ru" fontClass={oswald.variable}>{children}</RootDocument>;
 }

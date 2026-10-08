@@ -35,12 +35,12 @@ export const EXERCISES_EN = {
   'exercises.fasciaStretch.cue': 'Pull the toes back until you feel the arch, not the calf.',
 
   'exercises.calfStretchStraight.title': 'Calf stretch',
-  'exercises.calfStretchStraight.rationale': 'A tight calf pulls on the heel all day.',
+  'exercises.calfStretchStraight.rationale': 'A looser calf takes some strain off the heel.',
   'exercises.calfStretchStraight.cue': 'Back leg straight, heel down, hips forward.',
 
   'exercises.calfStretchBent.title': 'Soleus stretch',
   'exercises.calfStretchBent.rationale': 'The deeper calf muscle only lets go with the knee bent.',
-  'exercises.calfStretchBent.cue': 'Bend the back knee until you feel it lower, near the heel.',
+  'exercises.calfStretchBent.cue': 'Bend both knees a little. Keep the back heel flat on the floor.',
 
   'exercises.ankleRocks.title': 'Ankle rocks',
   'exercises.ankleRocks.rationale': 'An ankle that bends lets the heel stay down.',
@@ -48,7 +48,7 @@ export const EXERCISES_EN = {
 
   // ── The loaded work ──────────────────────────────────────────────────────
   'exercises.heelRaiseTowel.title': 'Heel raises',
-  'exercises.heelRaiseTowel.rationale': 'This is the one that moves pain fastest.',
+  'exercises.heelRaiseTowel.rationale': 'In one trial, slow heavy raises eased pain sooner than stretching alone.',
   'exercises.heelRaiseTowel.cue': 'Towel under the toes. Without it you’re just training calves.',
 
   'exercises.heelRaisePlain.title': 'Single-leg raises',
@@ -70,16 +70,16 @@ export const EXERCISES_EN = {
 
   'exercises.toeSpread.title': 'Toe spread',
   'exercises.toeSpread.rationale': 'Toes that can spread share the load with the arch.',
-  'exercises.toeSpread.cue': 'Spread wide, then hold. The lift is not the point.',
+  'exercises.toeSpread.cue': 'Spread your toes apart along the floor, then press the big toe and little toe down.',
 
   'exercises.bandInversion.title': 'Band turn-in',
   'exercises.bandInversion.rationale':
     'Turning the foot in trains the muscle that runs under the arch.',
   'exercises.bandInversion.cue': 'Move the foot, not the leg. The knee stays still.',
 
-  'exercises.hipAbduction.title': 'Hip abduction',
+  'exercises.hipAbduction.title': 'Side-lying leg raise',
   'exercises.hipAbduction.rationale': 'A hip that gives way lands the load on the arch.',
-  'exercises.hipAbduction.cue': 'Push through the heel, not the toes.',
+  'exercises.hipAbduction.cue': 'Lie on your side. Lift the top leg up and slightly back, toes facing forward.',
 
   // ── Balance ──────────────────────────────────────────────────────────────
   'exercises.singleLegHold.title': 'Single-leg hold',
@@ -122,7 +122,7 @@ export const EXERCISES_EN = {
   'exercises.heelRaiseHold.cue': 'Rise, then stay still at the top - don’t sink back down.',
 
   'exercises.bigToeLift.title': 'Big toe lift',
-  'exercises.bigToeLift.rationale': 'Teaches the big toe to move on its own - the arch’s first switch.',
+  'exercises.bigToeLift.rationale': 'Teaches the big toe to move on its own.',
   'exercises.bigToeLift.cue': 'Lift only the big toe. The other four stay flat on the floor.',
 
   'exercises.towelScrunch.title': 'Towel scrunch',

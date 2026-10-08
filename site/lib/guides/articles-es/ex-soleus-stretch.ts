@@ -54,6 +54,7 @@ export const EX_SOLEUS_STRETCH_ES: Guide = {
     },
     {
       h2: '¿Por qué el sóleo necesita su propio estiramiento?',
+      keyFact: 'En una revisión de 254\u00A0personas con fascitis plantar, alrededor de una cuarta parte tenía tensos los dos músculos de la pantorrilla, el gastrocnemio y el sóleo (Patel y DiGiovanni, 2011).',
       paragraphs: [
         'El gastrocnemio, el músculo externo de la pantorrilla, cruza la rodilla y el tobillo. Cuando estiras la rodilla y te inclinas hacia adelante, él recibe el estiramiento. El sóleo está más profundo y cruza solo el tobillo. Con la rodilla estirada, el gastrocnemio hace todo el trabajo y el sóleo casi no se mueve.',
         'Al doblar la rodilla, el gastrocnemio se afloja y deja de resistir. Ahora la dorsiflexión del tobillo jala del sóleo. Ese es todo el sentido de la versión con la rodilla doblada. No es una adaptación. Es otro ejercicio para otro músculo.',
@@ -70,7 +71,7 @@ export const EX_SOLEUS_STRETCH_ES: Guide = {
       ],
     },
     {
-      h2: 'Errores comunes en el estiramiento de sóleo',
+      h2: '¿Cuáles son los errores comunes en el estiramiento de sóleo?',
       paragraphs: [
         'No doblar lo suficiente la rodilla. Una flexión ligera no alcanza para aflojar el gastrocnemio. Necesitas doblarla de verdad, lo bastante para ver que la rodilla de atrás avanza por encima de los dedos.',
         'Dejar que el talón se levante. En cuanto el talón se despega del piso, el estiramiento desaparece. Apoya bien el talón y deja que la rodilla avance por encima del pie.',

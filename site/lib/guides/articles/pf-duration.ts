@@ -20,13 +20,14 @@ export const PF_DURATION_EN: Guide = {
     'A 2020 review reports that about 90 percent of plantar fasciitis cases respond to non-surgical care, often within several months (Latt and colleagues, 2020).',
     'A longer-term cohort of 174 patients found the risk of still having plantar fasciitis was 80.5 percent at one year, 50.0 percent at five years, and 45.6 percent at ten years from symptom onset (Hansen and colleagues, 2018).',
     'Significant predictors of slower recovery in that cohort were being female and having bilateral heel pain. BMI, age, fascia thickness, and heel spurs had no significant effect on prognosis (Hansen and colleagues, 2018).',
-    'The 2023 heel pain guideline gives stretching a grade of **A** and strength training a **B**. Night splints for persistent morning pain and low-level laser or dry needling from a clinician both receive a **B** (Koc and colleagues, 2023).',
+    'The 2023 heel pain guideline gives stretching a grade of **A** and strength training a **B**. Night splints for persistent morning pain get an **A**, and low-level laser or dry needling from a clinician a **B** (Koc and colleagues, 2023).',
     'Morning pain on a 0 to 10 scale, tracked daily, is the most practical way to see whether recovery is moving in the right direction.',
   ],
   toc: true,
   sections: [
     {
       h2: 'How long does plantar fasciitis usually last?',
+      keyFact: 'In a cohort of 174 people, the risk of still having plantar fasciitis symptoms was 80.5 percent at one year, falling to 45.6 percent at ten years (Hansen and colleagues, 2018).',
       paragraphs: [
         'There is no single number. Recovery depends on how long you have had it, what you do about it, and some factors you cannot control.',
         'A 2020 review of the literature states that non-surgical approaches work for about 90 percent of people with plantar fasciitis, usually within three to six months (Latt and colleagues, 2020).',
@@ -51,6 +52,7 @@ export const PF_DURATION_EN: Guide = {
     },
     {
       h2: 'What predicts slower recovery?',
+      keyFact: 'In a cohort of 174 people, women became symptom-free at about half the rate of men, and people with pain in both heels recovered at about a third the rate of those with one-sided pain (Hansen and colleagues, 2018).',
       paragraphs: [
         'The Hansen 2018 cohort tested several baseline factors against how long symptoms lasted. Two came out significant.',
         '**Being female.** For every 100 men who became symptom-free per year, only 49 women did (hazard rate ratio 0.49, P less than 0.01). The reason is not established. The authors listed hormonal differences, footwear patterns, and physical factors as possibilities without evidence to pick among them (Hansen and colleagues, 2018).',
@@ -74,6 +76,7 @@ export const PF_DURATION_EN: Guide = {
     },
     {
       h2: 'What are realistic milestones?',
+      keyFact: 'In the Rathleff trial, the heel-raise group scored 29 points better (lower) on the Foot Function Index than the stretching group at three months, a difference described as large and measurable (Rathleff and colleagues, 2015).',
       paragraphs: [
         'No study gives a week-by-week timeline that applies to everyone, and any article that does is guessing. What the evidence does offer are a few markers that most people will recognize.',
         '**First weeks.** Morning pain may not change much. The Rathleff trial showed a meaningful difference between groups by three months, not three weeks. Early on, the main change is that the exercises become easier to do and the calf feels less tight. That is worth noticing even if the heel still hurts.',
@@ -161,6 +164,16 @@ export const PF_DURATION_EN: Guide = {
       q: 'Can plantar fasciitis come back after it goes away?',
       cites: [CITE.hansen],
       a: 'Yes. In the Hansen 2018 cohort, 32 percent of the symptom-free group had at least one relapse before becoming permanently asymptomatic. The pattern of improvement, relapse, and further improvement is common. Continuing a maintenance dose of calf work and stretching after the pain is gone is one way to reduce the chance of it returning.',
+    },
+    {
+      q: 'What are signs that plantar fasciitis is healing?',
+      cites: [CITE.rathleff],
+      a: 'The clearest sign is less morning pain: first steps feel stiff instead of sharp, and the ache fades faster once you start walking. Many people notice this shift before the pain is fully gone. In the Rathleff trial, heel-raise patients scored measurably better by three months, which is when this shift often appears.',
+    },
+    {
+      q: 'What should you not do if plantar fasciitis is not improving?',
+      cites: [CITE.guideline],
+      a: 'Don\'t stop exercising the moment morning pain eases, and don\'t chase a single shortcut instead of the basics. Pain easing before the fascia has adapted is a common reason symptoms return. If pain stays flat or gets worse for several months despite stretching, strengthening and supportive shoes, that calls for a clinician, not a longer wait.',
     },
   ],
   redFlags: {

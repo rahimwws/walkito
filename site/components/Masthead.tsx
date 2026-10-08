@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { AppleGlyph } from '@/components/AppStoreBadge';
 import { GetAppButton, GetAppDialog } from '@/components/GetApp';
 import { MobileMenu } from '@/components/MobileMenu';
-import { CHROME, TRANSLATED, type Lang } from '@/lib/i18n';
+import { CHROME, TRANSLATED, customHref, type Lang } from '@/lib/i18n';
 import { qrPath } from '@/lib/qr';
 import { playHref, SITE_URL, storeHref } from '@/lib/site';
 
@@ -36,28 +36,20 @@ export function Masthead({
   const c = CHROME[lang];
   const home = TRANSLATED.home[lang];
 
-  // English keeps the program pages in the header. Russian and Spanish have
-  // only the home page and the guides translated, so their header leads with
-  // the guides. Support and Privacy, the two URLs an App Store reviewer is
-  // sent to, are in the footer of every page.
+  // Every language has its program, evidence and questions pages, so the nav
+  // is the same everywhere. Support and Privacy, the two URLs an App Store
+  // reviewer is sent to, are in the footer of every page.
   const links = [
     { href: home, label: c.navHome, current: current === 'home' },
-    ...(lang === 'en'
-      ? [
-          { href: '/program/', label: c.navProgram, current: false },
-          { href: '/science/', label: c.navEvidence, current: false },
-          { href: '/faq/', label: c.navQuestions, current: false },
-        ]
-      : [
-          { href: TRANSLATED.flatFeet[lang], label: c.navFlatFeet, current: false },
-          { href: TRANSLATED.heelPain[lang], label: c.navHeelPain, current: false },
-        ]),
+    { href: customHref('program', lang), label: c.navProgram, current: false },
+    { href: customHref('science', lang), label: c.navEvidence, current: false },
+    { href: customHref('faq', lang), label: c.navQuestions, current: false },
   ];
 
   return (
     <header className={`shell masthead${floating ? ' masthead-float' : ''}`}>
       <Link className="brand" href={home} aria-label="Walkito">
-        <Image src="/icon.png" alt="" width={36} height={36} priority />
+        <Image src="/icon-96.webp" alt="" width={36} height={36} priority />
         <span className="brand-name">Walkito</span>
       </Link>
 

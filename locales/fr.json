@@ -1,0 +1,13 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Walkito",
+    "NSHealthShareUsageDescription": "walkito lit tes pas, ta façon de marcher et ton sommeil pour que ton plan parte de ce que tu fais vraiment.",
+    "NSHealthUpdateUsageDescription": "walkito enregistre tes séances dans Santé pour qu’elles comptent dans ton activité.",
+    "\"SOMETHING OFF?\"": "UN SOUCI ?",
+    "\"Tell us. A person replies.\"": "Dis-le-nous. Une vraie personne te répond."
+  },
+  "android": {
+    "app_name": "Walkito",
+    "widget_dailycheck_description": "Fais ton bilan du jour et vois ton objectif d’aujourd’hui."
+  }
+}

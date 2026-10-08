@@ -43,7 +43,21 @@ async function apply(userId: string, action: 'unsubscribe' | 'resubscribe'): Pro
       : { unsubscribed_at: null, lifecycle_opt_in: true, updated_at: now };
   const { data, error } = await db.from('email_contacts').update(patch).eq('user_id', userId).select('locale').maybeSingle();
   if (error != null) throw new Error(error.message);
-  return data == null ? null : String(data.locale ?? 'en');
+  if (data != null) return String(data.locale ?? 'en');
+
+  // Not an app user: try site_leads. The token's id part is the lead's uuid.
+  const leadPatch =
+    action === 'unsubscribe'
+      ? { unsubscribed_at: now, lifecycle_opt_in: false }
+      : { unsubscribed_at: null, lifecycle_opt_in: true };
+  const { data: lead, error: leadError } = await db
+    .from('site_leads')
+    .update(leadPatch)
+    .eq('id', userId)
+    .select('locale')
+    .maybeSingle();
+  if (leadError != null) throw new Error(leadError.message);
+  return lead == null ? null : String(lead.locale ?? 'en');
 }
 
 Deno.serve(async (req) => {

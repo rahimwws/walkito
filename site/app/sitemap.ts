@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
-import { ARTICLES_EN, ARTICLES_ES, GUIDES } from '@/lib/guides';
-import { EN_ONLY, ES_ARTICLES, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { ARTICLES_EN, ARTICLES_ES, ARTICLES_NEW, ARTICLES_RU, GUIDES } from '@/lib/guides';
+import { NEW_ARTICLE_PATHS, NEW_LANGS, LANGS, CUSTOM_PAGES, EN_ONLY, ES_ARTICLES, RU_ARTICLES, TRANSLATED, type CustomPage, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
 import { PAGE_UPDATED, SITE_URL } from '@/lib/site';
 
 /**
@@ -33,12 +33,10 @@ function translated(
 ): MetadataRoute.Sitemap {
   const paths = TRANSLATED[page];
   const languages = {
-    en: `${SITE_URL}${paths.en}`,
-    ru: `${SITE_URL}${paths.ru}`,
-    es: `${SITE_URL}${paths.es}`,
+    ...Object.fromEntries(LANGS.map((l) => [l, `${SITE_URL}${paths[l]}`])),
     'x-default': `${SITE_URL}${paths.en}`,
   };
-  return (['en', 'ru', 'es'] as const).map((lang) => ({
+  return LANGS.map((lang) => ({
     url: `${SITE_URL}${paths[lang]}`,
     lastModified: updated(lang),
     changeFrequency,
@@ -56,21 +54,51 @@ const single = (
 ): MetadataRoute.Sitemap[number] => ({ url: `${SITE_URL}${path}`, lastModified: updated, changeFrequency, priority });
 
 /**
- * An English article, plus its Spanish version when there is one, each
- * carrying en/es/x-default alternates like the page head does.
+ * A custom page that exists in English, Spanish and Russian.
  */
-function enEs(page: EnglishPage, enUpdated: string): MetadataRoute.Sitemap {
-  const es = ARTICLES_ES[page];
-  if (!es) return [single(EN_ONLY[page], enUpdated, 'monthly', 0.9)];
+function customPage(
+  page: CustomPage,
+  updated: string,
+  changeFrequency: 'monthly' | 'yearly',
+  priority: number,
+): MetadataRoute.Sitemap {
+  const paths = CUSTOM_PAGES[page];
   const languages = {
-    en: `${SITE_URL}${EN_ONLY[page]}`,
-    es: `${SITE_URL}${ES_ARTICLES[page]}`,
-    'x-default': `${SITE_URL}${EN_ONLY[page]}`,
+    en: `${SITE_URL}${paths.en}`,
+    es: `${SITE_URL}${paths.es}`,
+    ru: `${SITE_URL}${paths.ru}`,
+    'x-default': `${SITE_URL}${paths.en}`,
   };
   return [
-    { url: languages.en, lastModified: enUpdated, changeFrequency: 'monthly', priority: 0.9, alternates: { languages } },
-    { url: languages.es, lastModified: es.updated, changeFrequency: 'monthly', priority: 0.8, alternates: { languages } },
+    { url: languages.en, lastModified: updated, changeFrequency, priority, alternates: { languages } },
+    { url: languages.es, lastModified: updated, changeFrequency, priority: priority - 0.1, alternates: { languages } },
+    { url: languages.ru, lastModified: updated, changeFrequency, priority: priority - 0.1, alternates: { languages } },
   ];
+}
+
+/**
+ * An English article, plus its Spanish and/or Russian versions, each
+ * carrying alternates like the page head does.
+ */
+function article(page: EnglishPage, enUpdated: string): MetadataRoute.Sitemap {
+  const es = ARTICLES_ES[page];
+  const ru = ARTICLES_RU[page];
+  const news = NEW_LANGS.filter((l) => ARTICLES_NEW[l][page]);
+  if (!es && !ru && news.length === 0) return [single(EN_ONLY[page], enUpdated, 'monthly', 0.9)];
+  const languages: Record<string, string> = {
+    en: `${SITE_URL}${EN_ONLY[page]}`,
+    'x-default': `${SITE_URL}${EN_ONLY[page]}`,
+  };
+  if (es) languages.es = `${SITE_URL}${ES_ARTICLES[page]}`;
+  if (ru) languages.ru = `${SITE_URL}${RU_ARTICLES[page]}`;
+  for (const l of news) languages[l] = `${SITE_URL}${NEW_ARTICLE_PATHS[l][page]}`;
+  const entries: MetadataRoute.Sitemap = [
+    { url: languages.en, lastModified: enUpdated, changeFrequency: 'monthly', priority: 0.9, alternates: { languages } },
+  ];
+  if (es) entries.push({ url: languages.es, lastModified: es.updated, changeFrequency: 'monthly', priority: 0.8, alternates: { languages } });
+  if (ru) entries.push({ url: languages.ru!, lastModified: ru.updated, changeFrequency: 'monthly', priority: 0.8, alternates: { languages } });
+  for (const l of news) entries.push({ url: languages[l], lastModified: ARTICLES_NEW[l][page]!.updated, changeFrequency: 'monthly', priority: 0.8, alternates: { languages } });
+  return entries;
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -79,14 +107,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...translated('heelPain', (lang) => GUIDES.heelPain[lang].updated, 'monthly', 0.9),
     ...translated('flatFeet', (lang) => GUIDES.flatFeet[lang].updated, 'monthly', 0.9),
     ...translated('about', () => PAGE_UPDATED.about, 'monthly', 0.6),
-    // English only for now, so no alternates.
-    single('/heel-pain-runners/', PAGE_UPDATED.runners, 'monthly', 0.9),
-    ...Object.values(ARTICLES_EN).flatMap((g) => enEs(g.page as EnglishPage, g.updated)),
-    single('/exercises/', '2026-10-05', 'monthly', 0.8),
-    single('/printable-exercise-sheets/', '2026-10-05', 'monthly', 0.7),
-    single('/program/', PAGE_UPDATED.program, 'monthly', 0.9),
-    single('/science/', PAGE_UPDATED.science, 'monthly', 0.9),
-    single('/faq/', PAGE_UPDATED.faq, 'monthly', 0.8),
+    ...customPage('runners', PAGE_UPDATED.runners, 'monthly', 0.9),
+    ...Object.values(ARTICLES_EN).flatMap((g) => article(g.page as EnglishPage, g.updated)),
+    ...customPage('exercises', '2026-10-05', 'monthly', 0.8),
+    ...customPage('printables', '2026-10-05', 'monthly', 0.7),
+    ...customPage('program', PAGE_UPDATED.program, 'monthly', 0.9),
+    ...customPage('science', PAGE_UPDATED.science, 'monthly', 0.9),
+    ...customPage('faq', PAGE_UPDATED.faq, 'monthly', 0.8),
     ...translated('support', () => PAGE_UPDATED.support, 'monthly', 0.5),
     ...translated('privacy', () => PAGE_UPDATED.privacy, 'yearly', 0.3),
     ...translated('terms', () => PAGE_UPDATED.terms, 'yearly', 0.3),

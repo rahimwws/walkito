@@ -88,6 +88,11 @@ export const CORE_EN = {
   'settings.footBoth': 'Both',
   'settings.whereItHurts': 'Where it hurts',
   'settings.whereItHurtsNone': 'Nothing marked',
+  'settings.sound.title': 'Session sounds',
+  'settings.sound.tempo': 'Tempo sounds',
+  'settings.sound.tempoHint': 'A beat for slow reps, so you can keep time without looking.',
+  'settings.sound.voice': 'Voice counting',
+  'settings.sound.voiceHint': 'Says “up, 2, 3, hold, down” instead of tones.',
   'settings.equipment': 'What I have at home',
   'settings.equipment.step': 'A step',
   'settings.equipment.band': 'Resistance band',
@@ -101,8 +106,7 @@ export const CORE_EN = {
   'settings.lastSync': 'Last synced {time}',
   'settings.lastSyncNever': 'Not synced yet',
   'settings.reminder': 'Reminder time',
-  'settings.disclaimer':
-    'Walkito is a training aid, not medical advice, and it does not diagnose or treat any condition. If pain is sharp, getting worse, or comes with swelling, numbness or fever, stop and see a doctor.',
+  'settings.disclaimer': 'Walkito is not a medical device and does not diagnose, treat, cure or prevent any medical condition. If pain is sharp, getting worse, or comes with swelling, numbness or fever, stop and see a doctor.',
 
   // ── Streak ───────────────────────────────────────────────────────────────
   // `streak.title` is the clearest example of why fragments had to go: English

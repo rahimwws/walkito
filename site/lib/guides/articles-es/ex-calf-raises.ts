@@ -36,7 +36,7 @@ export const EX_CALF_RAISES_ES: Guide = {
       cites: [CITE.patelGastrocnemius],
     },
     {
-      h2: 'Cómo hacer elevaciones de talón de pie (con dos pies)',
+      h2: '¿Cómo hacer elevaciones de talón de pie (con dos pies)?',
       paragraphs: [
         'Párate con los dos pies apoyados en el piso, separados más o menos al ancho de la cadera. Apóyate en una pared o una silla para no perder el equilibrio. Sube sobre la parte delantera del pie, empujando con los dedos gordos. Quédate un momento arriba y baja despacio, en unos tres segundos. Los dos pies comparten la carga.',
         'Si tienes un escalón, párate con la parte delantera del pie en la orilla y deja que los talones bajen un poco más al bajar. Ese rango extra abajo estira la pantorrilla un poco más en cada repetición. En el piso el rango es menor, pero el ejercicio igual funciona.',
@@ -112,6 +112,7 @@ export const EX_CALF_RAISES_ES: Guide = {
     },
     {
       h2: '¿Cuántas elevaciones de talón debes hacer?',
+      keyFact: 'Un estudio de valores normales con 566\u00A0adultos sanos de 20 a 81\u00A0años encontró que el número de elevaciones a una pierna variaba con la edad, el sexo y la actividad, con una mediana de 21\u00A0repeticiones en mujeres (Hebert-Losier y colegas, 2017).',
       paragraphs: [
         'Depende de en qué paso de la escalera estés y de qué estés trabajando. Para la fuerza general de la pantorrilla, 3\u00A0series de 10 a 15\u00A0repeticiones a ritmo lento es una dosis de inicio común. En el protocolo para fascitis plantar que se probó en un ensayo, la elevación de talones con toalla empieza con 3\u00A0series a un máximo de 12\u00A0repeticiones (12RM) y sube a 5\u00A0series a 8RM en unas cinco semanas.',
         'Una referencia útil es la prueba de resistencia de elevación de talón a una pierna. Un estudio de valores normales con 566\u00A0adultos sanos encontró una mediana de 24\u00A0repeticiones en hombres y 21 en mujeres, con cambios según la edad, el sexo y la actividad. La meta de pantorrilla en la app de Walkito son 25\u00A0elevaciones de talón a una pierna. Alcanzarla no termina el trabajo. Pasa a mantenimiento.',
@@ -120,7 +121,7 @@ export const EX_CALF_RAISES_ES: Guide = {
       cites: [CITE.hebertLosier, CITE.rathleff],
     },
     {
-      h2: 'Errores comunes en las elevaciones de talón',
+      h2: '¿Cuáles son los errores comunes en las elevaciones de talón?',
       paragraphs: [
         'Ir demasiado rápido. Lo que construye fuerza es bajar despacio (unos tres segundos). Rebotar abajo desperdicia la fase excéntrica, que es la parte que hace la mayor parte del trabajo para que el tendón se adapte.',
         'Irte hacia el borde externo del pie. El empuje va por el dedo gordo y la parte delantera del pie. Si el tobillo se va hacia afuera, la pantorrilla no se contrae del todo y los músculos pequeños de la parte externa del tobillo cargan un esfuerzo para el que no están hechos.',

@@ -27,6 +27,7 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
   sections: [
     {
       h2: '¿Por qué me duele el talón al levantarme?',
+      figure: { id: 'heel-side', caption: 'Vista lateral: la fascia plantar se une por debajo del hueso del talón, donde suele empezar el dolor de la fascitis plantar.', alt: 'Vista lateral interior de un pie con la piel transparente que muestra el hueso del talón, la fascia plantar bajo el arco y una zona roja bajo el talón donde suele empezar el dolor.' },
       paragraphs: [
         'La fascia plantar, la banda gruesa de tejido que va del hueso del talón a los dedos, se pone rígida mientras duermes. En reposo, el pie suele quedar apuntando hacia abajo, y eso deja que la fascia se acorte. Cuando te paras y el pie se aplana bajo todo tu peso, ese tejido acortado se estira de golpe. El resultado es un tirón agudo en la parte interna del talón.',
         'La guía de 2023 para el dolor de talón lo describe como un dolor «más notorio al apoyar el peso a primera hora de la mañana o después de un rato de reposo». Lo mismo pasa cuando estás sentado un rato y te paras, por la misma razón: el tejido se acorta en reposo y después recibe la carga de golpe.',
@@ -36,12 +37,13 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
     },
     {
       h2: '¿Qué más causa dolor de talón en la mañana?',
+      keyFact: 'En una cohorte de 174\u00A0personas con fascitis plantar seguidas una media de 9,7\u00A0años, tener dolor en los dos talones predijo un peor pronóstico a largo plazo, y los autores señalaron que podría reflejar una enfermedad inflamatoria sistémica no detectada (Hansen y colegas, 2018).',
       paragraphs: [
         'La fascitis plantar es la causa más común del dolor de talón por la mañana, pero no es la única. Dónde está el dolor y cómo se comporta ayudan a distinguirlas.',
         '**Tendinitis de Aquiles.** Dolor en la parte de atrás del talón o en el tendón que está arriba, no bajo el pie. El tendón de Aquiles se pone rígido durante la noche igual que la fascia plantar, así que la rigidez en los primeros pasos es común. Suele mejorar al caminar y después empeora otra vez con la actividad larga. Si el dolor está detrás del talón y no debajo, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
         '**Adelgazamiento de la almohadilla grasa del talón.** La almohadilla de grasa bajo el hueso del talón funciona como un cojín. Cuando se adelgaza o se desplaza, el hueso recibe más impacto directo.',
         'Una revisión exploratoria de 2022 señaló que el dolor de la almohadilla grasa suele ser un dolor profundo en el centro del talón, se siente peor sobre superficies duras y al caminar descalzo, y puede ser difícil de distinguir de la fascitis plantar sin estudios de imagen (Chang y colegas, 2022). La diferencia clave: el dolor de la fascitis plantar suele ser más agudo en la parte interna y delantera del talón, y el de la almohadilla grasa está justo debajo del centro.',
-        '**Fractura por estrés del calcáneo.** Un dolor que aparece poco a poco, casi siempre después de subir mucho la actividad. A diferencia de la fascitis plantar, el dolor de una fractura por estrés suele aumentar con la actividad en lugar de calmarse cuando entras en calor, y puede doler en reposo o de noche. Si apretar los lados del talón provoca el dolor, consulta a un profesional de la salud antes de ejercitar el pie. [Dolor de talón al correr](/heel-pain-runners/) (en inglés) explica cómo los cambios bruscos de carga afectan al talón.',
+        '**Fractura por estrés del calcáneo.** Un dolor que aparece poco a poco, casi siempre después de subir mucho la actividad. A diferencia de la fascitis plantar, el dolor de una fractura por estrés suele aumentar con la actividad en lugar de calmarse cuando entras en calor, y puede doler en reposo o de noche. Si apretar los lados del talón provoca el dolor, consulta a un profesional de la salud antes de ejercitar el pie. [Dolor de talón al correr](/es/dolor-de-talon-en-corredores/) explica cómo los cambios bruscos de carga afectan al talón.',
         '**Artritis inflamatoria (una señal de alerta).** Cuando te duelen los dos talones en la mañana, la rigidez dura más de 30\u00A0minutos y otras articulaciones también están rígidas o hinchadas, el patrón se aleja de la fascitis plantar y apunta a algo que debe revisar un profesional de la salud. Condiciones como la artritis psoriásica o la espondilitis anquilosante pueden causar dolor donde los tendones se unen al hueso, incluido el talón.',
         'En una cohorte de 174\u00A0personas con fascitis plantar seguidas una media de 9,7\u00A0años, tener dolor en los dos talones predecía de forma significativa un peor pronóstico a largo plazo, y los autores señalaron que alguna enfermedad inflamatoria no detectada podría explicar en parte ese resultado (Hansen y colegas, 2018). Si te duelen los dos talones y hay otras articulaciones afectadas, consulta primero a un profesional de la salud.',
       ],
@@ -98,6 +100,7 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
     },
     {
       h2: '¿Las férulas nocturnas ayudan con el dolor de talón por la mañana?',
+      keyFact: 'La guía de 2023 les da a las férulas nocturnas, usadas de uno a tres meses, su grado más alto, A, para quienes siguen con dolor en los primeros pasos de la mañana a pesar de estirar (Koc y colegas, 2023).',
       paragraphs: [
         'Las férulas nocturnas mantienen el pie en ángulo recto mientras duermes, para que la fascia plantar y la pantorrilla se queden suavemente estiradas en lugar de acortarse durante la noche. La idea es sencilla: si el dolor de la mañana viene de que la fascia se pone rígida en reposo, mantenerla estirada debería quitar parte del golpe de los primeros pasos.',
         'La guía de 2023 para el dolor de talón les da a las férulas nocturnas un grado **A** para las personas cuyos primeros pasos de la mañana siguen doliendo a pesar de estirar y de otros cuidados conservadores. El tiempo recomendado es de 1 a 3\u00A0meses. La mayoría de las férulas nocturnas son una bota rígida o semirrígida que mantiene el pie hacia arriba.',
@@ -160,6 +163,16 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
       q: '¿Cuánto tarda en mejorar el dolor de los primeros pasos?',
       cites: [CITE.latt, CITE.hansen],
       a: 'Una revisión de 2020 indica que cerca del 90\u00A0% de las personas con fascitis plantar mejora con cuidados sin cirugía, a menudo en varios meses (Latt y colegas, 2020). En un seguimiento más largo de 174\u00A0pacientes, cerca de la mitad seguía con síntomas a los 5\u00A0años, aunque para entonces la mayoría tenía solo un dolor leve (Hansen y colegas, 2018). Ningún programa de ejercicios puede prometer un plazo. En [¿cuánto dura la fascitis plantar?](/es/cuanto-dura-la-fascitis-plantar/) está la evidencia con más detalle.',
+    },
+    {
+      q: '¿Qué debo evitar si me duele el talón por la mañana?',
+      cites: [CITE.guideline],
+      a: 'Evita caminar descalzo sobre un piso duro justo al despertar, y evita saltarte el estiramiento antes de pararte. La fascia está más rígida en ese momento, así que pisar baldosa o madera sin ningún tipo de amortiguación es un disparador común del dolor agudo del primer paso. Ponte zapatos con soporte o pantuflas firmes antes de salir del cuarto, y estira mientras todavía estás sentado en la cama.',
+    },
+    {
+      q: '¿Cuáles son algunos remedios caseros para el dolor de talón por la mañana?',
+      cites: [CITE.guideline],
+      a: 'Los remedios caseros para el dolor de talón por la mañana son estirar, aplicar hielo y usar calzado con soporte, hechos todos los días y no una sola vez. Estira la fascia y la pantorrilla antes de pararte, y después ponte zapatos con soporte antes de caminar sobre piso duro. Rodar la planta sobre una botella de agua congelada alivia la rigidez, aunque no sustituye consultar a un profesional si el dolor no mejora.',
     },
   ],
   redFlags: {

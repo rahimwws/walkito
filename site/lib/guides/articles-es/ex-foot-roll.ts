@@ -80,7 +80,7 @@ export const EX_FOOT_ROLL_ES: Guide = {
       ],
     },
     {
-      h2: 'Errores comunes en el masaje plantar',
+      h2: '¿Cuáles son los errores comunes en el masaje plantar?',
       paragraphs: [
         'Presionar demasiado. Más fuerte no es mejor. Si empujas hasta que el dolor llega a 6/10 o haces muecas, puedes estar irritando la fascia en lugar de calmarla. Vuelve a una presión firme y constante.',
         'Rodar demasiado rápido. Ir y venir rápido pasa por encima del tejido. Rueda despacio, más o menos una pasada completa por segundo, para que cada punto reciba presión sostenida.',
@@ -89,7 +89,7 @@ export const EX_FOOT_ROLL_ES: Guide = {
       cites: [CITE.guideline],
     },
     {
-      h2: 'Cuándo hacerlo y cuándo no',
+      h2: '¿Cuándo conviene hacerlo y cuándo es mejor evitarlo?',
       paragraphs: [
         'Rueda el pie después de un día largo de pie, después de una sesión de elevaciones de talón, o cuando sientas la planta tensa. En Walkito, el automasaje plantar aparece en los días de recuperación y al final de las sesiones para bajar el ritmo.',
         'No lo hagas si el talón está muy hinchado, rojo o caliente. Esas señales pueden apuntar a algo distinto de la fascitis plantar, y presionar una zona inflamada puede empeorarla. Consulta primero a un profesional de la salud. Para todos los ejercicios que recomienda la guía, mira [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/) o [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/).',

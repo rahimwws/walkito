@@ -1,0 +1,152 @@
+/** testday strings (the guided test day: intro, the three tests, results), German. Filled per domain; see `../en/core.ts` for the rules. */
+
+export const TESTDAY_DE = {
+  // ── Chrome ────────────────────────────────────────────────────────────────
+  'testday.close': 'Schließen',
+  'testday.leave.title': 'Test verlassen?',
+  'testday.leave.body': 'Gespeichert wird erst nach dem letzten Test. Der Test bleibt offen.',
+  'testday.leave.stay': 'Weiter testen',
+  'testday.leave.confirm': 'Verlassen',
+
+  // ── Intro ─────────────────────────────────────────────────────────────────
+  'testday.intro.eyebrow': 'Testtag',
+  'testday.intro.title': 'Drei kurze Tests',
+  'testday.intro.body': {
+    one: 'Etwa {count} Minute. Die Zahlen zeigen, wie weit jedes Ziel gekommen ist, und legen deinen Plan für die nächsten zwei Wochen fest.',
+    other: 'Etwa {count} Minuten. Die Zahlen zeigen, wie weit jedes Ziel gekommen ist, und legen deinen Plan für die nächsten zwei Wochen fest.',
+  },
+  'testday.intro.nowSeconds': 'Jetzt {now} s · Ziel {goal} s',
+  'testday.intro.nowRaises': {
+    one: 'Jetzt {now} · Ziel {count} Wiederholung',
+    other: 'Jetzt {now} · Ziel {count} Wiederholungen',
+  },
+  'testday.intro.firstSeconds': 'Erste Messung · Ziel {goal} s',
+  'testday.intro.firstRaises': {
+    one: 'Erste Messung · Ziel {count} Wiederholung',
+    other: 'Erste Messung · Ziel {count} Wiederholungen',
+  },
+  'testday.intro.need': 'Du brauchst',
+  'testday.intro.needBarefoot': 'Nackte Füße',
+  'testday.intro.needWall': 'Eine Wand zum Festhalten',
+  'testday.intro.needPhone': 'Das Handy in Sichtweite',
+  'testday.intro.checkin': 'Wie geht es dem Fuß gerade?',
+  'testday.intro.checkinHint': 'Das zählt als heutiger Check-in.',
+  'testday.intro.painNone': 'Kein Schmerz',
+  'testday.intro.painWorst': 'Am stärksten',
+  'testday.intro.painA11y': '{score} von 10',
+  'testday.intro.sore':
+    'An einem gereizten Tag fallen die Zahlen niedriger aus, als dein Fuß wirklich ist, und die nächsten zwei Wochen würden danach geplant. Der Test kann bis morgen warten.',
+  'testday.intro.start': 'Starten',
+  'testday.intro.anyway': 'Trotzdem testen',
+  'testday.intro.tomorrow': 'Morgen testen',
+
+  // ── The three tests ───────────────────────────────────────────────────────
+  'testday.test.eyebrow': 'Test {current} von {total}',
+  'testday.test.calf.name': 'Fersenheben',
+  'testday.test.calf.measures': 'Wie viele Wiederholungen jedes Bein im gleichmäßigen Tempo schafft',
+  'testday.test.arch.name': 'Gewölbe halten',
+  'testday.test.arch.measures': 'Wie lange dein Gewölbe angehoben bleibt',
+  'testday.test.balance.name': 'Balance',
+  'testday.test.balance.measures': 'Wie lange du mit geschlossenen Augen auf einem Bein stehst',
+
+  'testday.side.left': 'Linkes Bein',
+  'testday.side.right': 'Rechtes Bein',
+  'testday.side.leftSore': 'Linkes Bein - das gereizte',
+  'testday.side.rightSore': 'Rechtes Bein - das gereizte',
+
+  'testday.calf.step1': 'Stell dich auf ein Bein, Fingerspitzen zum Halten an der Wand.',
+  'testday.calf.step2': 'Geh ganz hoch und wieder runter, eine Wiederholung alle 2 Sekunden. Ein Ticken gibt das Tempo vor.',
+  'testday.calf.step3': 'Tipp auf Stopp, wenn du das Tempo oder die volle Höhe nicht mehr hältst. Dann das andere Bein.',
+  'testday.calf.stopHint': 'Tippen, wenn du Tempo oder volle Höhe nicht mehr hältst',
+  'testday.calf.up': 'Hoch',
+  'testday.calf.down': 'Runter',
+  'testday.calf.otherTitle': 'Jetzt das andere Bein',
+  'testday.calf.otherBody': 'Gleiches Tempo, gleiche volle Höhe, Fingerspitzen an der Wand.',
+
+  'testday.arch.step1': 'Stell dich auf beide Füße, Gewicht gleichmäßig verteilt.',
+  'testday.arch.step2': 'Zieh den Fußballen Richtung Ferse, sodass sich das Gewölbe hebt. Die Zehen bleiben lang und locker.',
+  'testday.arch.step3': 'Halte es. Tipp auf Stopp, sobald das Gewölbe absinkt.',
+  'testday.arch.stopHint': 'Tippen, sobald das Gewölbe absinkt',
+
+  'testday.balance.step1': 'Stell dich neben der Wand auf ein Bein, Hände an den Hüften.',
+  'testday.balance.step2': 'Schließ beim Start die Augen. Ein Ton sagt dir, wann die Zeit um ist.',
+  'testday.balance.step3': 'Öffne die Augen und tipp auf Stopp, sobald der andere Fuß den Boden berührt.',
+  'testday.balance.stopHint': 'Tippen, wenn der andere Fuß den Boden berührt',
+
+  'testday.start': 'Starten',
+  'testday.stop': 'Stopp',
+  'testday.timeLeft': 'Noch {time}',
+  'testday.secondsLeft': { one: 'Sekunde übrig', other: 'Sekunden übrig' },
+  'testday.held': '{n} s gehalten',
+
+  'testday.paused.title': 'Pausiert',
+  'testday.paused.body': 'Der Timer hat angehalten, während die App im Hintergrund war.',
+  'testday.paused.resume': 'Fortsetzen',
+  'testday.paused.restart': 'Diesen Test neu starten',
+
+  'testday.confirm.raises': {
+    one: '{count} Wiederholung - stimmt das?',
+    other: '{count} Wiederholungen - stimmt das?',
+  },
+  'testday.confirm.seconds': {
+    one: '{count} Sekunde - stimmt das?',
+    other: '{count} Sekunden - stimmt das?',
+  },
+  'testday.confirm.hint': 'Pass es an, wenn die Zählung nicht gestimmt hat.',
+  'testday.confirm.holdHint': 'Wenn du kurz zum Handy gebraucht hast, zieh diese Sekunden ab.',
+  'testday.confirm.less': 'Weniger',
+  'testday.confirm.more': 'Mehr',
+  'testday.confirm.again': 'Diesen Test wiederholen',
+  'testday.confirm.next': 'Nächster Test',
+  'testday.confirm.finish': 'Ergebnisse ansehen',
+
+  // ── Results ───────────────────────────────────────────────────────────────
+  'testday.results.title': 'Deine Ergebnisse',
+  'testday.results.blurb': 'Verglichen mit deinem letzten Test, nie mit jemand anderem.',
+  'testday.results.firstBlurb': 'Das ist dein Ausgangspunkt. Der nächste Test zeigt, was sich verändert hat.',
+  'testday.results.name.arch_hold': 'Gewölbe halten',
+  'testday.results.name.calf_raises': 'Fersenheben',
+  'testday.results.name.balance': 'Balance',
+  'testday.results.name.symmetry': 'Symmetrie',
+  'testday.results.unitSeconds': { one: 'Sekunde', other: 'Sekunden' },
+  'testday.results.unitRaises': { one: 'Wiederholung', other: 'Wiederholungen' },
+  'testday.results.percent': '{n} %',
+  'testday.results.gapUnit': 'zwischen den Beinen',
+  'testday.results.legs': 'Links {left} · rechts {right}',
+  'testday.results.goalSeconds': 'Ziel {n} s',
+  'testday.results.goalRaises': { one: 'Ziel {count} Wiederholung', other: 'Ziel {count} Wiederholungen' },
+  'testday.results.goalGap': 'Ziel unter {n} %',
+  'testday.results.toGoSeconds': { one: 'Noch {count} s', other: 'Noch {count} s' },
+  'testday.results.toGoRaises': { one: 'Noch {count} Wiederholung', other: 'Noch {count} Wiederholungen' },
+  'testday.results.toGoGap': { one: 'Noch {count} Punkt', other: 'Noch {count} Punkte' },
+  'testday.results.reached': 'Ziel erreicht',
+  'testday.results.moreSeconds': {
+    one: '{count} s mehr als beim letzten Mal',
+    other: '{count} s mehr als beim letzten Mal',
+  },
+  'testday.results.fewerSeconds': {
+    one: '{count} s weniger als beim letzten Mal',
+    other: '{count} s weniger als beim letzten Mal',
+  },
+  'testday.results.moreRaises': {
+    one: '{count} Wiederholung mehr als beim letzten Mal',
+    other: '{count} Wiederholungen mehr als beim letzten Mal',
+  },
+  'testday.results.fewerRaises': {
+    one: '{count} Wiederholung weniger als beim letzten Mal',
+    other: '{count} Wiederholungen weniger als beim letzten Mal',
+  },
+  'testday.results.gapSmaller': {
+    one: 'Unterschied {count} Punkt kleiner als beim letzten Mal',
+    other: 'Unterschied {count} Punkte kleiner als beim letzten Mal',
+  },
+  'testday.results.gapLarger': {
+    one: 'Unterschied {count} Punkt größer als beim letzten Mal',
+    other: 'Unterschied {count} Punkte größer als beim letzten Mal',
+  },
+  'testday.results.same': 'Gleich wie beim letzten Mal',
+  'testday.results.first': 'Erste Messung',
+  'testday.results.nextTest': 'Nächster Test: {date}',
+  'testday.results.planUpdated': 'Dein Plan für die nächsten zwei Wochen ist aktualisiert.',
+  'testday.results.done': 'Fertig',
+};

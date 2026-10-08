@@ -139,6 +139,20 @@ export function screen(path: string): void {
   void posthog()?.screen(path);
 }
 
+/**
+ * A PostHog feature flag's variant for this person, or null when there is no
+ * analytics, the flags have not loaded yet, or the person is not in the
+ * experiment. Null is always the control: an A/B test must never change the
+ * app for somebody it could not measure. Reading it records the exposure.
+ */
+export function featureFlag(key: string): string | boolean | null {
+  try {
+    return posthog()?.getFeatureFlag(key) ?? null;
+  } catch {
+    return null;
+  }
+}
+
 /** The underlying client, for `PostHogProvider`. Null without a key. */
 export function analyticsClient(): PostHog | null {
   return posthog();

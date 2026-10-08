@@ -1,0 +1,6 @@
+# Supabase project configuration (functions only).
+# The full config lives on the hosted project; this file carries only the
+# settings the deploy command needs.
+
+[functions.site-subscribe]
+verify_jwt = false

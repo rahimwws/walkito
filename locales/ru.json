@@ -1,0 +1,13 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Walkito",
+    "NSHealthShareUsageDescription": "walkito читает ваши шаги, походку и сон, чтобы план начинался с того, что вы на самом деле делали.",
+    "NSHealthUpdateUsageDescription": "walkito сохраняет ваши занятия в Здоровье, чтобы они шли в зачёт вашей активности.",
+    "\"SOMETHING OFF?\"": "ЧТО-ТО НЕ ТАК?",
+    "\"Tell us. A person replies.\"": "Напишите нам. Ответит человек."
+  },
+  "android": {
+    "app_name": "Walkito",
+    "widget_dailycheck_description": "Отметьте самочувствие и посмотрите цель на сегодня."
+  }
+}

@@ -27,7 +27,7 @@ export const EXERCISES_ES = {
   'exercises.fasciaStretch.cue': 'Tira de los dedos hacia ti hasta notar el arco, no la pantorrilla.',
 
   'exercises.calfStretchStraight.title': 'Estiramiento de pantorrilla',
-  'exercises.calfStretchStraight.rationale': 'Una pantorrilla tensa tira del talón todo el día.',
+  'exercises.calfStretchStraight.rationale': 'Una pantorrilla más suelta quita algo de tensión al talón.',
   'exercises.calfStretchStraight.cue':
     'Pierna de atrás recta, talón en el suelo, cadera hacia delante.',
 
@@ -35,7 +35,7 @@ export const EXERCISES_ES = {
   'exercises.calfStretchBent.rationale':
     'El sóleo está más profundo y solo cede con la rodilla flexionada.',
   'exercises.calfStretchBent.cue':
-    'Flexiona la rodilla de atrás hasta notarlo más abajo, cerca del talón.',
+    'Flexiona un poco las dos rodillas. El talón de atrás, apoyado en el suelo.',
 
   'exercises.ankleRocks.title': 'Movilidad de tobillo',
   'exercises.ankleRocks.rationale': 'Un tobillo que flexiona deja que el talón siga apoyado.',
@@ -44,7 +44,7 @@ export const EXERCISES_ES = {
 
   // ── The loaded work ──────────────────────────────────────────────────────
   'exercises.heelRaiseTowel.title': 'Elevación de talones',
-  'exercises.heelRaiseTowel.rationale': 'Este es el que baja el dolor más rápido.',
+  'exercises.heelRaiseTowel.rationale': 'En un estudio, las elevaciones lentas con peso aliviaron el dolor antes que solo estirar.',
   'exercises.heelRaiseTowel.cue':
     'Toalla bajo los dedos. Sin ella solo estás trabajando la pantorrilla.',
 
@@ -71,7 +71,7 @@ export const EXERCISES_ES = {
   'exercises.toeSpread.title': 'Separación de dedos',
   'exercises.toeSpread.rationale':
     'Unos dedos que pueden separarse reparten la carga con el arco.',
-  'exercises.toeSpread.cue': 'Sepáralos bien y mantén. Levantarlos no es el objetivo.',
+  'exercises.toeSpread.cue': 'Separa los dedos por el suelo y luego presiona el dedo gordo y el meñique contra el suelo.',
 
   'exercises.bandInversion.title': 'Inversión con banda',
   'exercises.bandInversion.rationale':
@@ -79,9 +79,9 @@ export const EXERCISES_ES = {
   'exercises.bandInversion.cue':
     'Mueve solo el pie contra la banda, no la pierna. La rodilla se queda quieta.',
 
-  'exercises.hipAbduction.title': 'Abducción de cadera',
+  'exercises.hipAbduction.title': 'Elevación lateral de pierna',
   'exercises.hipAbduction.rationale': 'Una cadera que cede deja la carga sobre el arco.',
-  'exercises.hipAbduction.cue': 'Empuja con el talón, no con los dedos.',
+  'exercises.hipAbduction.cue': 'Túmbate de lado. Sube la pierna de arriba, un poco hacia atrás, con la punta mirando al frente.',
 
   // ── Balance ──────────────────────────────────────────────────────────────
   'exercises.singleLegHold.title': 'Equilibrio a una pierna',
@@ -126,7 +126,7 @@ export const EXERCISES_ES = {
   'exercises.heelRaiseHold.cue': 'Sube y quédate quieto arriba, sin dejarte caer.',
 
   'exercises.bigToeLift.title': 'Elevación del dedo gordo',
-  'exercises.bigToeLift.rationale': 'Enseña al dedo gordo a moverse solo: el primer interruptor del arco.',
+  'exercises.bigToeLift.rationale': 'Enseña al dedo gordo a moverse solo.',
   'exercises.bigToeLift.cue': 'Levanta solo el dedo gordo. Los otros cuatro siguen apoyados.',
 
   'exercises.towelScrunch.title': 'Recoger la toalla',

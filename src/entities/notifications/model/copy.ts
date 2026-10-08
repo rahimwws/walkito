@@ -92,11 +92,13 @@ type Facts = {
  */
 type Line = (t: Translate, facts: Facts) => string;
 
+/** Before this hour the session reminder is the morning one. */
+const MORNING_UNTIL_HOUR = 12;
+
 const SESSION_LINES: readonly Line[] = [
   (t, f) => t('notifications.sessionStrength', { count: f.minutes }),
   (t, f) => t('notifications.sessionDay', { day: f.day, kind: f.kind, count: f.minutes }),
   (t, f) => t('notifications.sessionShort', { count: f.minutes }),
-  (t) => t('notifications.sessionHeelRaises'),
   (t, f) => t('notifications.sessionCalves', { count: f.minutes }),
   (t) => t('notifications.sessionMobility'),
 ];
@@ -118,11 +120,7 @@ const BACK_TO_KEYS = {
 } as const;
 
 /** Never cheerful, no emoji, no encouragement. Just the smaller ask. */
-const FLARE_LINES: readonly Line[] = [
-  (t, f) => t('notifications.flareRough', { count: f.minutes }),
-  (t, f) => t('notifications.flarePain', { pain: f.pain, count: f.minutes }),
-  (t) => t('notifications.flareNothingHeavy'),
-];
+const FLARE_LINES: readonly Line[] = [(t) => t('notifications.flareCheckIn')];
 
 /** The first names a figure, which is why it is first: `bodyFor` drops it by
  * slicing when HealthKit has given us no step count. */
@@ -323,6 +321,12 @@ function bodyFor(
       return (PLAN_LINES[signals.planReason ?? 'plan'] ?? PLAN_LINES.plan)(t, facts);
     case 'session':
       if (signals.maintenance) return rotate(MAINTENANCE_LINES, signals.dateKey, 71)(t, facts);
+      // A reminder that lands before noon is the morning one: it says the
+      // intention back, in the words they agreed to.
+      // Both are minutes after local midnight.
+      if ((signals.sessionAt ?? signals.wakeAt) < MORNING_UNTIL_HOUR * 60) {
+        return t('notifications.morningIntention');
+      }
       return rotate(
         facts.backTo == null ? SESSION_LINES : [...SESSION_LINES, BACK_TO_LINE],
         signals.dateKey,

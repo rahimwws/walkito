@@ -56,7 +56,7 @@ export const ONBOARDING_EN = {
   'onboarding.intro.headline': 'Let’s find out why it still hurts.',
   'onboarding.intro.cta': 'Continue with Apple',
   'onboarding.intro.ctaGoogle': 'Continue with Google',
-  'onboarding.intro.footnote': '~2 min setup',
+  'onboarding.intro.footnote': 'About 3 minutes',
   /** A genuine failure, not a cancel. No blame and no error code — there is
    * nothing here the user did wrong. */
   'onboarding.intro.signInFailed': 'Sign-in didn’t complete. Try again.',
@@ -142,7 +142,7 @@ export const ONBOARDING_EN = {
   'onboarding.minutes.min10': '10 minutes',
   'onboarding.minutes.min10Caption': 'For faster progress',
   'onboarding.equipment.title': 'What do you have at home?',
-  'onboarding.equipment.blurb': 'Exercises that need something you don’t have are left out of your plan.',
+  'onboarding.equipment.blurb': 'Pick all you have.',
   'onboarding.equipment.step': 'A step or stairs',
   'onboarding.equipment.band': 'Resistance band',
   'onboarding.equipment.towel': 'Towel',
@@ -185,7 +185,7 @@ export const ONBOARDING_EN = {
   'onboarding.load.title': 'How much are you doing right now?',
   'onboarding.load.blurb': 'Your honest current week, not your best one.',
   'onboarding.load.blurbMonth': 'Your honest current month, not your best one.',
-  'onboarding.load.titleRunning': 'How much are you running now, {name}?',
+  'onboarding.load.titleRunning': 'How much do you run a week?',
   'onboarding.load.titleTennis': 'How much are you on court, {name}?',
   'onboarding.load.blurbTennis': 'Matches and practice together - the honest week.',
   'onboarding.load.titleGym': 'How much are you training, {name}?',
@@ -302,8 +302,7 @@ export const ONBOARDING_EN = {
   'onboarding.notify.blurb': 'So your plan can tell you when it needs you.',
   'onboarding.notify.askNamed': 'Don’t go it alone, {name}',
   'onboarding.notify.ask': 'Don’t go it alone',
-  'onboarding.notify.askBlurb':
-    'A plan only works if it turns up. Let Walkito tell you when today has a session in it.',
+  'onboarding.notify.askBlurb': 'Only on days your plan has a session.',
   'onboarding.notify.promise1': 'A nudge on the days your plan has a session',
   'onboarding.notify.promise2': 'A heads-up when it changes what you are doing',
   'onboarding.notify.promise3': 'And now and then a discount - nothing more.',
@@ -411,8 +410,8 @@ export const ONBOARDING_EN = {
    * halves are not the same halves. Keep them short: the ring is 132pt wide. */
   'onboarding.contract.stampTop': '★ Walkito ★',
   'onboarding.contract.stampText': 'Committed',
-  'onboarding.contract.stampLine1': 'Pain-free',
-  'onboarding.contract.stampLine2': 'Running',
+  'onboarding.contract.stampLine1': 'Day one',
+  'onboarding.contract.stampLine2': 'Started',
   'onboarding.contract.noteNamed': '{name}, your signature stays on this device.',
   'onboarding.contract.note': 'Your signature stays on this device.',
 
@@ -473,6 +472,7 @@ export const ONBOARDING_EN = {
    * only, and the weekly one is never discounted. */
   'onboarding.referral.blurb': 'Enter it for {percent}% off the annual subscription.',
   'onboarding.referral.applied': '{percent}% off the annual subscription applied.',
+  'onboarding.referral.unlocked': 'Code accepted. Walkito Premium is on.',
   /** Every one of these is an ordinary thing a person can do, so none is
    * phrased as an error the user caused. */
   'onboarding.referral.unknown': 'We don’t know that code. Check it and try again.',

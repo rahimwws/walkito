@@ -321,7 +321,9 @@ function ChoiceRow({
         )}
 
         {option.caption == null ? (
-          <Text style={[styles.label, { color: colors.foreground }]} numberOfLines={1}>
+          // Two lines at most: the safety check's answers are whole sentences,
+          // and an ellipsis there would hide the part that matters.
+          <Text style={[styles.label, { color: colors.foreground }]} numberOfLines={2}>
             {option.label}
           </Text>
         ) : (
@@ -350,7 +352,10 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   row: {
-    height: HEIGHT,
+    // A floor, not a height, so a two-line answer grows the row instead of
+    // being cut. One-line rows are exactly as tall as before.
+    minHeight: HEIGHT,
+    paddingVertical: 8,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
@@ -384,6 +389,7 @@ const styles = StyleSheet.create({
   label: {
     flex: 1,
     ...fonts.semibold(16, -0.2),
+    lineHeight: 21,
   },
   labels: {
     flex: 1,

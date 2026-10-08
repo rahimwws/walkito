@@ -27,7 +27,7 @@ export const EX_SINGLE_LEG_BALANCE_ES: Guide = {
   toc: false,
   sections: [
     {
-      h2: 'Cómo hacer el equilibrio a una pierna',
+      h2: '¿Cómo hacer el equilibrio a una pierna?',
       paragraphs: [
         'Párate cerca de una pared o una barra de cocina. Levanta un pie del piso doblando un poco la rodilla. Mira un punto fijo al frente. Deja que el pie de apoyo se tambalee. Ese tambaleo es justo el ejercicio: los músculos pequeños del pie y del tobillo están trabajando para mantenerte de pie.',
         'Aguanta todo lo que puedas, hasta 30\u00A0segundos, y cambia de lado. Tres veces por lado es una dosis común. Si no aguantas más de unos segundos, deja las puntas de los dedos en la pared y ve subiendo poco a poco.',
@@ -84,6 +84,7 @@ export const EX_SINGLE_LEG_BALANCE_ES: Guide = {
     },
     {
       h2: '¿Por qué importa el equilibrio para el dolor de pies?',
+      keyFact: 'En los esguinces de tobillo, un metanálisis de 8 estudios y 3577 deportistas encontró que el entrenamiento de equilibrio reduce el riesgo de esguince un 46 % frente a no intervenir (Bellows y colegas, 2018).',
       paragraphs: [
         'El equilibrio no está separado de la fuerza del pie. Cuando te paras en una pierna, los músculos intrínsecos del pie (los músculos pequeños dentro del pie que sostienen el arco), los músculos de la pantorrilla, el tibial anterior y los estabilizadores de la cadera trabajan juntos. Un déficit en cualquier punto de esa cadena hace que el pie compense.',
         'En la fascitis plantar y el pie plano, el entrenamiento de equilibrio aparece en los programas junto con estiramientos y fortalecimiento porque entrena toda la cadena a la vez. Un ensayo de 2023 con 52\u00A0personas con pie plano flexible encontró que un programa que combinaba ejercicios de pie corto, trabajo de tobillo, fortalecimiento de cadera, estiramientos y equilibrio cambió la forma del arco más que un grupo de control. El equilibrio no se probó por separado en ese ensayo, pero era parte del programa que funcionó.',
@@ -92,7 +93,7 @@ export const EX_SINGLE_LEG_BALANCE_ES: Guide = {
       cites: [CITE.bellows, CITE.brijwasi],
     },
     {
-      h2: 'Errores comunes en el equilibrio a una pierna',
+      h2: '¿Cuáles son los errores comunes en el equilibrio a una pierna?',
       paragraphs: [
         'Mirar al piso. Tus ojos deben estar en un punto fijo a la altura de la vista. Mirar hacia abajo lleva tu peso hacia adelante y hace el ejercicio más fácil, y así pierde su sentido.',
         'Bloquear la rodilla de apoyo. Una ligera flexión mantiene activos los músculos. Con la rodilla bloqueada, la carga pasa a la articulación en lugar de a los músculos que la rodean.',

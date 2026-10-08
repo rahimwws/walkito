@@ -1,7 +1,7 @@
 import { CITE } from '@/lib/citations';
 import { TRANSLATED, type Lang } from '@/lib/i18n';
 import { reviewFor } from '@/lib/reviewer';
-import { AUTHOR, AUTHOR_NAME, authorHref, formatDate, howWeResearchHref } from '@/lib/schema';
+import { AUTHOR_NAME, formatDate, howWeResearchHref } from '@/lib/schema';
 
 /**
  * "Walkito Research · Based on <main source> and <N> published studies · How
@@ -21,13 +21,21 @@ import { AUTHOR, AUTHOR_NAME, authorHref, formatDate, howWeResearchHref } from '
 const MAIN_SOURCE: Partial<Record<number, Record<Lang, string>>> = {
   [CITE.brijwasi]: {
     en: 'a 2023 trial on flexible flat feet',
-    ru: 'клинического испытания 2023 года при гибком плоскостопии',
+    ru: 'клиническое испытание 2023 года при гибком плоскостопии',
     es: 'un ensayo de 2023 sobre pie plano flexible',
+    pt: 'um ensaio de 2023 sobre pé chato flexível',
+    fr: 'un essai de 2023 sur les pieds plats souples',
+    it: 'uno studio clinico del 2023 sul piede piatto flessibile',
+    de: 'eine Studie von 2023 zu flexiblen Plattfüßen',
   },
   [CITE.guideline]: {
     en: 'the 2023 heel pain clinical guideline',
-    ru: 'клинических рекомендаций 2023 года по боли в пятке',
+    ru: 'клинические рекомендации 2023 года по боли в пятке',
     es: 'la guía clínica de 2023 sobre el dolor de talón',
+    pt: 'a diretriz clínica de 2023 sobre dor no calcanhar',
+    fr: 'la recommandation clinique de 2023 sur la douleur au talon',
+    it: 'la linea guida clinica del 2023 sul dolore al tallone',
+    de: 'die klinische Leitlinie von 2023 zu Fersenschmerzen',
   },
 };
 
@@ -45,8 +53,16 @@ function more(n: number, lang: Lang): string {
           : 'источников';
     return `${n} ${word}`;
   }
-  if (lang === 'es') return n === 1 ? '1 fuente' : `${n} fuentes`;
-  return n === 1 ? '1 source' : `${n} sources`;
+  const forms: Record<Exclude<Lang, 'ru'>, [string, string]> = {
+    en: ['source', 'sources'],
+    es: ['fuente', 'fuentes'],
+    pt: ['fonte', 'fontes'],
+    fr: ['source', 'sources'],
+    it: ['fonte', 'fonti'],
+    de: ['Quelle', 'Quellen'],
+  };
+  const [one, other] = forms[lang];
+  return `${n} ${n === 1 ? one : other}`;
 }
 
 /** "Sources: …", or null for a page that cites nothing. */
@@ -55,10 +71,10 @@ export function sourceLine(lang: Lang, cites: readonly number[], main?: number):
   const named = main != null && unique.includes(main) ? MAIN_SOURCE[main]?.[lang] : undefined;
   const rest = named ? unique.length - 1 : unique.length;
   if (!named && rest === 0) return null;
-  const label = { en: 'Sources:', ru: 'Источники:', es: 'Fuentes:' }[lang];
+  const label = { en: 'Sources:', ru: 'Источники:', es: 'Fuentes:', pt: 'Fontes:', fr: 'Sources :', it: 'Fonti:', de: 'Quellen:' }[lang];
   if (!named) return `${label} ${more(rest, lang)}`;
-  if (rest === 0) return `${{ en: 'Source:', ru: 'Источник:', es: 'Fuente:' }[lang]} ${named}`;
-  const plus = { en: `and ${rest} more`, ru: `и ещё ${rest}`, es: `y ${rest} más` }[lang];
+  if (rest === 0) return `${{ en: 'Source:', ru: 'Источник:', es: 'Fuente:', pt: 'Fonte:', fr: 'Source :', it: 'Fonte:', de: 'Quelle:' }[lang]} ${named}`;
+  const plus = { en: `and ${rest} more`, ru: `и ещё ${rest}`, es: `y ${rest} más`, pt: `e mais ${rest}`, fr: `et ${rest} autres`, it: `e altre ${rest}`, de: `und ${rest} weitere` }[lang];
   return `${label} ${named} ${plus}`;
 }
 
@@ -66,11 +82,13 @@ const HOW_WE_RESEARCH: Record<Lang, string> = {
   en: 'How we research',
   ru: 'Как мы работаем с исследованиями',
   es: 'Cómo investigamos',
+  pt: 'Como pesquisamos',
+  fr: 'Notre méthode',
+  it: 'Come facciamo ricerca',
+  de: 'So recherchieren wir',
 };
 
-const BY: Record<Lang, string> = { en: 'By', ru: 'Автор:', es: 'Por' };
-
-const REVIEWED_BY: Record<Lang, string> = { en: 'Medically reviewed by', ru: 'Медицинская проверка:', es: 'Revisión médica:' };
+const REVIEWED_BY: Record<Lang, string> = { en: 'Medically reviewed by', ru: 'Медицинская проверка:', es: 'Revisión médica:', pt: 'Revisão médica:', fr: 'Relecture médicale :', it: 'Revisione medica:', de: 'Medizinisch geprüft von' };
 
 export function Byline({
   lang,
@@ -89,7 +107,7 @@ export function Byline({
   return (
     <>
     <p className="byline">
-      {BY[lang]} <a href={authorHref(lang)}><strong>{AUTHOR.name}</strong></a>, {AUTHOR.role[lang]} · {AUTHOR_NAME}
+      <strong>{AUTHOR_NAME}</strong>
       {line ? ` · ${line}` : ''}
       {' · '}
       <a href={howWeResearchHref(lang)}>{HOW_WE_RESEARCH[lang]} →</a>
@@ -111,7 +129,7 @@ export function Byline({
 
 /** "Updated <date>" at the foot of the article. The About page promises every
  * page shows when its content last changed; the byline no longer carries it. */
-const UPDATED: Record<Lang, string> = { en: 'Updated', ru: 'Обновлено', es: 'Actualizado' };
+const UPDATED: Record<Lang, string> = { en: 'Updated', ru: 'Обновлено', es: 'Actualizado', pt: 'Atualizado', fr: 'Mis à jour', it: 'Aggiornato', de: 'Aktualisiert' };
 export function UpdatedLine({ lang, updated }: { lang: Lang; updated: string }) {
   return (
     <p className="updated-line">

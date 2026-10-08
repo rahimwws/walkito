@@ -42,6 +42,7 @@ export const SHIN_SPLINTS_ES: Guide = {
   sections: [
     {
       h2: '¿Qué es la periostitis tibial y qué ejercicios ayudan de verdad?',
+      keyFact: 'Una revisión sistemática de 2013 que cubrió 11\u00A0ensayos de tratamiento para la periostitis tibial no encontró evidencia clara de que el estiramiento o el fortalecimiento aceleraran la recuperación (Winters y colegas, 2013).',
       paragraphs: [
         'La periostitis tibial, o síndrome de estrés tibial medial, es una lesión por sobreuso de la tibia y del tejido que la rodea. El dolor suele ser difuso, repartido a lo largo del borde interno de la tibia en varios centímetros, y casi siempre empieza durante o después de correr. Una revisión de 2020 sobre corredores principiantes y recreativos encontró que las relaciones más claras estaban en cómo se mueven los corredores, por ejemplo más rotación de cadera y un pie que se va hacia adentro más de lo normal.',
         'La respuesta honesta sobre los ejercicios para la periostitis tibial es que ningún programa de ejercicios concreto ha demostrado acelerar la recuperación en un ensayo controlado. Una revisión sistemática de 2013 analizó 11\u00A0estudios de tratamiento y concluyó que el estiramiento y el fortalecimiento «no han demostrado ser eficaces para tratar el SETM». En el único ensayo aleatorizado con un grupo de ejercicio, 74\u00A0deportistas se dividieron en tres grupos: un programa de carrera progresivo solo, el mismo programa más estiramiento y fortalecimiento de pantorrilla, y el mismo programa más medias de compresión. Los tres grupos mejoraron a un ritmo parecido.',
@@ -50,7 +51,7 @@ export const SHIN_SPLINTS_ES: Guide = {
       cites: [CITE.mtssReview, CITE.winters, CITE.moen],
     },
     {
-      h2: 'Los ejercicios, con dosis de inicio',
+      h2: '¿Qué ejercicios ayudan con la periostitis tibial y cuánto hacer?',
       paragraphs: [
         'Son ejercicios del catálogo de la app que coinciden con los músculos y factores de riesgo que aparecen en la investigación sobre la periostitis tibial. Los estiramientos de pantorrilla y las elevaciones de talón son los mismos de [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/), y trabajan los mismos tejidos. Son dosis de inicio, no una indicación médica. Todas las etiquetas de evidencia de abajo son **inicial**, porque ningún ejercicio de esta lista ha demostrado acortar la recuperación de la periostitis tibial en un ensayo. [Cómo escribimos estas guías](/es/sobre-walkito/).',
         'Si marcas la tibia como adolorida en el check-in, Walkito te da movilidad de tobillo y automasaje plantar. Las elevaciones de dedos aparecen en el plan general como ejercicio complementario a partir del nivel 2, turnándose con la movilidad de tobillo. No hay un programa específico para la periostitis tibial. Si algún ejercicio sube tu dolor a **6/10 o más**, detente por hoy.',
@@ -203,10 +204,11 @@ export const SHIN_SPLINTS_ES: Guide = {
     },
     {
       h2: '¿Puedes seguir corriendo con periostitis tibial?',
+      keyFact: 'Un ensayo de 2008 con 532\u00A0corredores nuevos no encontró diferencia en la tasa de lesiones entre subir el kilometraje un 10\u00A0% semanal o hacerlo más rápido, dejando esa regla sin respaldo (Buist y colegas, 2008).',
       paragraphs: [
         'No hay un ensayo que te diga exactamente cuánto bajar. Lo que tiene algo de respaldo es la forma de un programa de carrera progresivo: en el único ensayo aleatorizado, los tres grupos siguieron un regreso gradual a correr, y los tres mejoraron más o menos al mismo ritmo. El programa de carrera, no los ejercicios agregados ni la compresión, fue lo que tuvieron en común.',
         'Un dolor agudo durante la carrera, un dolor que empeora mientras corres o un dolor en reposo son razones para parar y que te revisen, en lugar de seguir corriendo con él. Si el dolor se calma al entrar en calor y sigue siendo manejable, correr menos, más suave y menos veces es un punto medio razonable mientras la tibia se adapta. Los días de descanso entre carreras le dan tiempo al hueso para responder a la carga.',
-        'La regla del 10\u00A0%, no subir más de un 10\u00A0% el kilometraje semanal, se menciona mucho, pero no está demostrada. Un ensayo de 2008 con 532\u00A0corredores nuevos no encontró diferencia en la tasa de lesiones entre un programa basado en la regla del 10\u00A0% y uno más rápido. Lo que sí mostró un estudio de 2014 con 874\u00A0corredores es que los saltos grandes y repentinos de distancia vienen con más lesiones. Gradual es mejor que repentino, pero un porcentaje concreto no tiene respaldo de ensayos. [Dolor de talón al correr](/heel-pain-runners/) (en inglés) explica la misma forma de manejar la carga con más detalle.',
+        'La regla del 10\u00A0%, no subir más de un 10\u00A0% el kilometraje semanal, se menciona mucho, pero no está demostrada. Un ensayo de 2008 con 532\u00A0corredores nuevos no encontró diferencia en la tasa de lesiones entre un programa basado en la regla del 10\u00A0% y uno más rápido. Lo que sí mostró un estudio de 2014 con 874\u00A0corredores es que los saltos grandes y repentinos de distancia vienen con más lesiones. Gradual es mejor que repentino, pero un porcentaje concreto no tiene respaldo de ensayos. [Dolor de talón al correr](/es/dolor-de-talon-en-corredores/) explica la misma forma de manejar la carga con más detalle.',
       ],
       cites: [CITE.moen, CITE.buist, CITE.nielsen],
     },
@@ -220,6 +222,7 @@ export const SHIN_SPLINTS_ES: Guide = {
     },
     {
       h2: '¿Cuánto dura la periostitis tibial?',
+      keyFact: 'En un ensayo con 74\u00A0deportistas con periostitis tibial, el tiempo promedio para completar el programa de carrera fue de unos 105\u00A0días en los tres grupos, aunque el rango fue amplio (Moen y colegas, 2012).',
       paragraphs: [
         'Las fuentes varían y ninguna apunta a un número único respaldado por un ensayo. La orientación general para lesiones por sobreuso es que los casos leves se calman en unas semanas con menos actividad, mientras que los casos ligados a errores de entrenamiento que se repiten pueden tardar más si vuelve la misma carga antes de que el tejido se adapte.',
         'En el ensayo aleatorizado con 74\u00A0deportistas con periostitis tibial, el tiempo promedio para completar el programa de carrera fue de unos 102 a 118\u00A0días según el grupo (promedio general de 105\u00A0días), aunque el rango fue amplio.',
@@ -257,6 +260,16 @@ export const SHIN_SPLINTS_ES: Guide = {
       q: '¿Hay algún ejercicio que evite que la periostitis tibial vuelva?',
       a: 'Ningún ejercicio concreto tiene evidencia de ensayos para prevenir la periostitis tibial. Los factores de riesgo de dos metaanálisis, como el IMC, la caída del arco y los años corriendo, apuntan a manejar la carga de entrenamiento poco a poco y a un acondicionamiento general de la pierna, no a un ejercicio en particular. Es una respuesta menos satisfactoria que el nombre de un ejercicio, pero es lo que respalda la investigación.',
       cites: [CITE.newman, CITE.hamstraWright],
+    },
+    {
+      q: '¿Qué se confunde comúnmente con la periostitis tibial?',
+      a: 'Una fractura por estrés de la tibia, el síndrome compartimental crónico por esfuerzo y la tendinopatía del tibial posterior pueden causar dolor en la tibia y confundirse con periostitis tibial. Una fractura por estrés suele doler en un punto muy específico del hueso, mientras que el síndrome compartimental causa presión y entumecimiento que aumentan durante la carrera y se calman poco después de parar. Las dos necesitan un profesional de la salud, no más carga.',
+      cites: [CITE.mtssReview],
+    },
+    {
+      q: '¿Se puede caminar con periostitis tibial?',
+      a: 'Generalmente sí. Caminar es de menor impacto que correr, y muchas personas con síndrome de estrés tibial medial pueden seguir caminando sin que se dispare el dolor, siempre que se mantenga leve y se calme rápido después. Si caminar por sí solo reproduce un dolor agudo en un solo punto del hueso, detente y consúltalo, porque ese patrón se parece más a una fractura por estrés que a la periostitis tibial.',
+      cites: [CITE.mtssReview],
     },
   ],
   redFlags: {

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 
 import { HOME_META } from '@/components/Home';
 import { RootDocument } from '@/components/RootDocument';
+import { anton } from '@/lib/font-anton';
 import { OG_LOCALE } from '@/lib/i18n';
 import { smartBannerContent, SITE_NAME, SITE_URL } from '@/lib/site';
 
@@ -43,5 +44,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <RootDocument lang="es">{children}</RootDocument>;
+  return <RootDocument lang="es" fontClass={anton.variable}>{children}</RootDocument>;
 }

@@ -57,6 +57,7 @@ export const EX_BIG_TOE_LIFT_ES: Guide = {
     },
     {
       h2: '¿Qué músculos trabaja levantar el dedo gordo?',
+      keyFact: 'En un estudio de resonancia magnética con un grupo pequeño de deportistas, levantar el dedo gordo activó los tres músculos intrínsecos de la planta medidos, sobre todo el flexor corto de los dedos, con un 18,1 % (Gooding y colegas, 2016).',
       paragraphs: [
         'Los músculos que suben el dedo gordo son el extensor largo del dedo gordo (que viene de la pierna) y el extensor corto del dedo gordo (que está sobre el pie). Pero el ejercicio también trabaja los músculos que mantienen abajo los otros dedos, y ahí es donde está el verdadero entrenamiento.',
         'Un estudio con resonancia magnética de 2016, de Gooding y colegas, encontró que el ejercicio de extensión del dedo gordo activó el flexor corto de los dedos (18,1\u00A0%), el abductor del dedo gordo (16,9\u00A0%) y el flexor corto del quinto dedo (16,3\u00A0%). Los músculos intrínsecos de la planta trabajaban para mantener planos los dedos pequeños mientras el dedo gordo subía.',
@@ -73,7 +74,7 @@ export const EX_BIG_TOE_LIFT_ES: Guide = {
       ],
     },
     {
-      h2: 'Errores comunes al levantar el dedo gordo',
+      h2: '¿Cuáles son los errores comunes al levantar el dedo gordo?',
       paragraphs: [
         'El error más común es subir los cinco dedos juntos. Si todos los dedos suben a la vez, el ejercicio se vuelve una extensión general de los dedos y se pierde el control independiente. Si hace falta, sostén los dedos pequeños con los dedos de la mano hasta que aparezca la separación.',
         'Otro error es usar el músculo de la tibia (tibial anterior) para subir el dedo gordo, levantando todo el pie. Mantén el pie apoyado. Solo se mueve el dedo gordo.',

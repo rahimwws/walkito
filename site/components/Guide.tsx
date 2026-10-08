@@ -4,6 +4,7 @@ import { AppCallout } from '@/components/AppCallout';
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 import { Byline, UpdatedLine } from '@/components/Byline';
 import { Evidence } from '@/components/Evidence';
+import { EmailSignup } from '@/components/EmailSignup';
 import { printableForGuide } from '@/lib/printables';
 import { Footer } from '@/components/Footer';
 import { Cite } from '@/components/Cite';
@@ -14,12 +15,41 @@ import { Prose, typeset } from '@/components/Prose';
 import { guidePath, languagesOf, relatedGuides, type Guide as GuideData } from '@/lib/guides';
 import { isTranslatedPage } from '@/lib/i18n';
 import type { GuideTable } from '@/lib/guides/types';
-import { CHROME, TRANSLATED } from '@/lib/i18n';
+import { CHROME, CUSTOM_PAGES, TRANSLATED, customHref } from '@/lib/i18n';
 import { articleSchema, faqSchema } from '@/lib/schema';
-import { videoSchema } from '@/lib/video';
+import { videoSchema, imageSchema } from '@/lib/video';
+import { AnatomyFigure } from '@/components/AnatomyFigure';
+import { anatomySchema } from '@/lib/anatomy';
 import { SITE_URL } from '@/lib/site';
 
-const HOME_CRUMB = { en: 'Home', ru: 'Главная', es: 'Inicio' } as const;
+const HOME_CRUMB = { en: 'Home', ru: 'Главная', es: 'Inicio', pt: 'Início', fr: 'Accueil', it: 'Home', de: 'Start' } as const;
+const EXERCISE_LIST_HEADING = {
+  en: 'Exercises on this page',
+  ru: 'Упражнения на этой странице',
+  es: 'Ejercicios de esta página',
+  pt: 'Exercícios nesta página',
+  fr: 'Exercices de cette page',
+  it: 'Esercizi in questa pagina',
+  de: 'Übungen auf dieser Seite',
+} as const;
+const KEY_FACT_LABEL = {
+  en: 'Key finding',
+  ru: 'Главное из исследований',
+  es: 'Dato clave',
+  pt: 'Dado-chave',
+  fr: 'À retenir',
+  it: 'Dato chiave',
+  de: 'Kernaussage',
+} as const;
+const LIBRARY_CRUMB = {
+  en: 'Exercise library',
+  ru: 'Библиотека упражнений',
+  es: 'Biblioteca de ejercicios',
+  pt: 'Biblioteca de exercícios',
+  fr: "Bibliothèque d'exercices",
+  it: 'Libreria di esercizi',
+  de: 'Übungsbibliothek',
+} as const;
 
 /**
  * `**bold**` and `[label](/path/)`, and nothing else.
@@ -45,6 +75,17 @@ function Inline({ text }: { text: string }) {
 }
 
 /** A heading as an anchor: lower case, words joined by hyphens. */
+/** The anchor of an exercise card, linked from the list at the top. */
+function exerciseId(name: string): string {
+  return `ex-${slug(name)}`;
+}
+
+/** A first paragraph ending in a colon introduces the list that follows, so
+ * the figure goes after the list instead of between them. */
+function figureAtEnd(section: { paragraphs?: readonly string[] }): boolean {
+  return section.paragraphs?.[0]?.trimEnd().endsWith(':') ?? false;
+}
+
 function slug(text: string): string {
   return text
     .toLowerCase()
@@ -124,21 +165,39 @@ export function Guide({ guide }: { guide: GuideData }) {
   // not only the footer: a link a reader can see in context is one a crawler
   // weighs as a real recommendation.
   const related = relatedGuides(guide);
+
+  // The exercises on the page as one numbered list near the top, each linking
+  // to its card: the summary a reader scans first, and the shape Google uses
+  // for "... exercises" featured snippets. Built from the same data as the
+  // cards, so it can never disagree with them. Only on guides with three or
+  // more different exercises; not on single-exercise pages or the test page.
+  const exerciseList = (() => {
+    if (guide.page.startsWith('ex') || guide.page === 'calfRaiseTest') return [];
+    const seen = new Set<string>();
+    return guide.sections
+      .flatMap((s) => s.exercises ?? [])
+      .filter((e) => (seen.has(e.name) ? false : (seen.add(e.name), true)));
+  })();
+  // Doses only when every one is short ("2 holds of 30 seconds, each leg"):
+  // a list where some lines are full sentences stops being scannable, so
+  // those pages show the names alone.
+  const listDoses = exerciseList.every((e) => (e.dose ?? '').length > 0 && e.dose.length <= 48);
+  const firstExerciseId = new Set<string>();
   // English only: the sheets are in English.
   const printable = guide.lang === 'en' ? printableForGuide(guidePath(guide)) : undefined;
 
+  // Exercise pages sit under the exercise library, so their trail has the
+  // library in the middle: Home > Exercise library > Calf raises.
+  const inLibrary = guide.page.startsWith('ex');
+  const trail = [
+    { name: HOME_CRUMB[guide.lang], item: `${SITE_URL}${TRANSLATED.home[guide.lang]}` },
+    ...(inLibrary ? [{ name: LIBRARY_CRUMB[guide.lang], item: `${SITE_URL}${customHref('exercises', guide.lang)}` }] : []),
+    { name: guide.crumb, item: url },
+  ];
   const breadcrumbs = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: HOME_CRUMB[guide.lang],
-        item: `${SITE_URL}${TRANSLATED.home[guide.lang]}`,
-      },
-      { '@type': 'ListItem', position: 2, name: guide.crumb, item: url },
-    ],
+    itemListElement: trail.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.item })),
   };
 
   return (
@@ -149,6 +208,19 @@ export function Guide({ guide }: { guide: GuideData }) {
       {videoSchema(guide.sections.flatMap((s) => s.exercises ?? []), guide.lang, guide.published).map((v) => (
         <JsonLd key={v.contentUrl} data={v} />
       ))}
+      {/* Stills render only in sections laid out as exercise cards (the ones
+          with "feel" lines), so only those are described as images. */}
+      {imageSchema(
+        guide.sections.filter((s) => s.exercises?.some((e) => e.feel != null)).flatMap((s) => s.exercises ?? []),
+        guide.lang,
+        url,
+      ).map((img) => (
+        <JsonLd key={img.contentUrl} data={img} />
+      ))}
+      {guide.sections.flatMap((s) => (s.figure ? [s.figure] : [])).map((fig) => {
+        const img = anatomySchema(fig, guide.lang, url);
+        return <JsonLd key={img.contentUrl} data={img} />;
+      })}
       <Masthead lang={guide.lang} />
 
       <Prose className="shell prose">
@@ -176,6 +248,20 @@ export function Guide({ guide }: { guide: GuideData }) {
           </ul>
         </aside>
 
+        {exerciseList.length >= 3 && (
+          <aside className="exercise-list" aria-label={EXERCISE_LIST_HEADING[guide.lang]}>
+            <h2>{EXERCISE_LIST_HEADING[guide.lang]}</h2>
+            <ol>
+              {exerciseList.map((e) => (
+                <li key={e.name}>
+                  <a href={`#${exerciseId(e.name)}`}>{e.name}</a>
+                  {listDoses && <span className="dose">{e.dose}</span>}
+                </li>
+              ))}
+            </ol>
+          </aside>
+        )}
+
         <AppCallout campaign={`${guide.campaign}-top`} lang={guide.lang} />
 
         {guide.toc && (
@@ -200,23 +286,40 @@ export function Guide({ guide }: { guide: GuideData }) {
           </nav>
         )}
         {printable && (
-          <p className="printable-box">
-            <strong>Printable version:</strong> these exercises on a free {printable.pages}-page PDF with a week log.{' '}
-            <a href={`/downloads/${printable.slug}.pdf`} download>
-              Download the PDF
-            </a>
-            {' '}or see <a href="/printable-exercise-sheets/">all printable sheets</a>.
-          </p>
+          <>
+            <p className="printable-box">
+              <strong>Printable version:</strong> these exercises on a free {printable.pages}-page PDF with a week log.{' '}
+              <a href={`/downloads/${printable.slug}.pdf`} download>
+                Download the PDF
+              </a>
+              {' '}or see <a href="/printable-exercise-sheets/">all printable sheets</a>.
+            </p>
+            <EmailSignup lang="en" source="guide" page={guidePath(guide)} />
+          </>
         )}
 
         {guide.sections.map((section) => (
           <section key={section.h2} id={slug(section.h2)}>
             <h2>{section.h2}</h2>
-            {section.paragraphs?.map((p) => (
-              <p key={p}>
-                <Inline text={p} />
+            {section.keyFact && (
+              <p className="key-fact">
+                <strong>{KEY_FACT_LABEL[guide.lang]}</strong>
+                <Inline text={section.keyFact} />
               </p>
+            )}
+            {section.paragraphs?.map((p, i) => (
+              <Fragment key={p}>
+                <p>
+                  <Inline text={p} />
+                </p>
+                {i === 0 && section.figure && !figureAtEnd(section) && (
+                  <AnatomyFigure lang={guide.lang} {...section.figure} />
+                )}
+              </Fragment>
             ))}
+            {!section.paragraphs?.length && section.figure && (
+              <AnatomyFigure lang={guide.lang} {...section.figure} />
+            )}
             {section.table && <Table table={section.table} />}
             {section.after?.map((p) => (
               <p key={p}>
@@ -227,9 +330,9 @@ export function Guide({ guide }: { guide: GuideData }) {
               section.exercises.map((e) => (
                 // An exercise without a clip is text only: no empty box.
                 <div key={e.name} className={e.media ? 'exercise-detail' : 'exercise-detail exercise-text'}>
-                  {e.media && <ExerciseMedia id={e.media} alt={e.alt ?? e.name} caption={e.caption} />}
+                  {e.media && <ExerciseMedia id={e.media} alt={e.alt ? `${e.name}. ${e.alt}` : e.name} caption={e.caption} />}
                   <div>
-                    <h3>{e.name}</h3>
+                    <h3 id={firstExerciseId.has(e.name) ? undefined : (firstExerciseId.add(e.name), exerciseId(e.name))}>{e.name}</h3>
                     <p>
                       <Inline text={e.how} />
                     </p>
@@ -250,7 +353,7 @@ export function Guide({ guide }: { guide: GuideData }) {
               <ol className="exercises">
                 {section.exercises.map((e) => (
                   <li key={e.name}>
-                    <h3>{e.name}</h3>
+                    <h3 id={firstExerciseId.has(e.name) ? undefined : (firstExerciseId.add(e.name), exerciseId(e.name))}>{e.name}</h3>
                     <p className="dose">{e.dose}</p>
                     <p>{e.how}</p>
                   </li>
@@ -266,6 +369,7 @@ export function Guide({ guide }: { guide: GuideData }) {
                 ))}
               </ul>
             )}
+            {section.figure && figureAtEnd(section) && <AnatomyFigure lang={guide.lang} {...section.figure} />}
             {section.sourceNote && (
               <p className="cite">
                 <Inline text={section.sourceNote} />

@@ -97,6 +97,8 @@ async function exportWeb(file) {
   const twice = Math.min(WEB_WIDTH * 2, width);
   await sharp(file).resize({ width: WEB_WIDTH }).webp({ quality: 86 }).toFile(join(webDir, `${name}.webp`));
   await sharp(file).resize({ width: twice }).webp({ quality: 82 }).toFile(join(webDir, `${name}@2x.webp`));
+  // A small copy for phones, where a phone mockup is drawn ~140-200 CSS px wide.
+  await sharp(file).resize({ width: 360 }).webp({ quality: 82 }).toFile(join(webDir, `${name}@360w.webp`));
 }
 
 async function exportFramed(file) {

@@ -19,7 +19,7 @@ export const ACHILLES_ES: Guide = {
   lede:
     'Los ejercicios para la tendinitis de Aquiles funcionan mejor cuando entiendes el descenso de talón como trabajo de fuerza, no como un estiramiento. La guía clínica de 2024 le da al ejercicio su grado más alto, **A**, y un metaanálisis en red de 2021 con 29\u00A0ensayos no encontró ningún protocolo claramente mejor que otro. Lo que importa es cargar el tendón de forma constante durante semanas.',
   intro: [
-    'Esta página explica esos ejercicios a fondo. Si te duele bajo el pie y no en la parte de atrás del talón, lo que buscas son [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/). La página de [dolor de talón en corredores](/heel-pain-runners/) (en inglés) resume los dos. Si el dolor está a lo largo de la tibia y no en el talón, mira [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/); si solo aparece después de un día largo de pie y no al correr, mira [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/). La mayoría de la gente usa «tendinitis» y «tendinopatía» como si fueran lo mismo. Las guías actuales usan «tendinopatía» porque el problema suele ser de carga, no pura inflamación. Esta página usa «tendinitis» en los títulos y «tendinopatía» donde la guía lo hace.',
+    'Esta página explica esos ejercicios a fondo. Si te duele bajo el pie y no en la parte de atrás del talón, lo que buscas son [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/). La página de [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) resume los dos. Si el dolor está a lo largo de la tibia y no en el talón, mira [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/); si solo aparece después de un día largo de pie y no al correr, mira [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/). La mayoría de la gente usa «tendinitis» y «tendinopatía» como si fueran lo mismo. Las guías actuales usan «tendinopatía» porque el problema suele ser de carga, no pura inflamación. Esta página usa «tendinitis» en los títulos y «tendinopatía» donde la guía lo hace.',
   ],
   takeaways: [
     'La guía clínica de 2024 le da al ejercicio (cualquier tipo que cargue el tendón) un grado **A**, su grado más alto, para la tendinopatía de Aquiles en la porción media (Chimenti y colegas, 2024).',
@@ -63,6 +63,7 @@ export const ACHILLES_ES: Guide = {
     },
     {
       h2: '¿La resistencia pesada y lenta funciona igual que los excéntricos?',
+      keyFact: 'Un ensayo de 2015 con 58\u00A0personas encontró que la resistencia pesada y lenta tres días a la semana dio resultados duraderos igual de buenos que el protocolo excéntrico clásico de dos veces al día (Beyer y colegas, 2015).',
       paragraphs: [
         'Sí, según la evidencia actual. Un ensayo de 2015 con 58\u00A0personas comparó la resistencia pesada y lenta (HSR, por sus siglas en inglés), hecha 3\u00A0días a la semana, con el protocolo excéntrico clásico de dos veces al día. La conclusión: «Tanto el ECC tradicional como el HSR dan resultados clínicos positivos, igual de buenos y duraderos en pacientes con tendinopatía de Aquiles».',
         'Un metaanálisis en red de 2021 con 29\u00A0ensayos no encontró una diferencia clínicamente relevante entre ningún tipo de ejercicio activo a los 3 ni a los 12\u00A0meses. Todos fueron mejores que no hacer nada. Ningún ensayo tenía bajo riesgo de sesgo. Los autores recomendaron empezar con un programa de ejercicios para la pantorrilla porque es barato y tiene pocos riesgos.',
@@ -71,7 +72,7 @@ export const ACHILLES_ES: Guide = {
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
     {
-      h2: 'Los ejercicios, con dosis de inicio',
+      h2: '¿Qué ejercicios ayudan con la tendinitis de Aquiles y cuánto hacer?',
       paragraphs: [
         'Los ejercicios de abajo van de poca carga a mucha carga, empezando con elevaciones de talón sentado y subiendo por la escalera. Son las dosis de inicio de Walkito junto a los protocolos de investigación. [Cómo escribimos estas guías](/es/sobre-walkito/).',
         'Para el dolor de Aquiles insercional, todo ejercicio que use un escalón se debe hacer a nivel del piso. Ese cambio está explicado en la sección sobre el dolor insercional, más abajo.',
@@ -166,6 +167,7 @@ export const ACHILLES_ES: Guide = {
     },
     {
       h2: '¿Cuánto dolor es normal en los ejercicios para el Aquiles?',
+      keyFact: 'En un ensayo con 38\u00A0personas, quienes siguieron corriendo bajo una regla de control del dolor, permitiendo hasta unos 5 de 10 que se calmaba para la mañana, mejoraron tanto a los doce meses como quienes descansaron primero (Silbernagel y colegas, 2007).',
       paragraphs: [
         'En Silbernagel 2007, 38\u00A0personas con dolor de Aquiles se dividieron en dos grupos. Uno siguió corriendo y saltando durante la rehabilitación, con la regla de que el dolor durante y después de la carga podía llegar a unos **5 de 10**, siempre que volviera a su nivel habitual para la mañana siguiente y no empeorara semana a semana. El otro grupo primero descansó. Los dos mejoraron de forma significativa a los 12\u00A0meses, sin diferencia entre ellos.',
         'Este límite es distinto de la regla de parar en 6/10 de la página de [fascitis plantar](/es/ejercicios-fascitis-plantar/), que viene de otra guía. La cifra de 5/10 es de un solo estudio, no un estándar universal, pero es el modelo de dolor más citado en la rehabilitación del Aquiles.',
@@ -175,6 +177,8 @@ export const ACHILLES_ES: Guide = {
     },
     {
       h2: '¿Tu dolor está en la mitad del tendón o en el hueso del talón, y por qué eso cambia el ejercicio?',
+      figure: { id: 'achilles', caption: 'El dolor del tendón de Aquiles suele estar en uno de dos sitios: la parte media del tendón o donde se une al hueso del talón.', alt: 'Vista lateral de un pie y un tobillo con el tendón de Aquiles desde la pantorrilla hasta la parte de atrás del hueso del talón, y una zona roja en la parte media del tendón.' },
+      keyFact: 'En un estudio piloto de 27\u00A0personas con dolor insercional del Aquiles, la carga excéntrica a nivel del piso sin dorsiflexión profunda dio buenos resultados en el 67\u00A0% de los casos (Jonsson y colegas, 2008).',
       paragraphs: [
         'La tendinopatía de Aquiles en la porción media está en el cuerpo del tendón, normalmente de 2 a 6\u00A0centímetros por encima del hueso del talón. Los excéntricos clásicos y la resistencia pesada y lenta tienen su mejor evidencia aquí. Los descensos de talón desde la orilla de un escalón son adecuados para el dolor en la porción media.',
         'La tendinopatía de Aquiles insercional es dolor justo donde el tendón se une al hueso. En un estudio piloto de 2008 con 27\u00A0personas (34\u00A0tendones) con dolor insercional crónico, un protocolo modificado con carga excéntrica solo a nivel del piso, sin dorsiflexión más allá de la posición neutra, reportó buenos resultados en el 67\u00A0por ciento de los casos. Una dorsiflexión profunda aprieta el tendón contra el hueso del talón, y eso irrita la inserción.',
@@ -195,7 +199,7 @@ export const ACHILLES_ES: Guide = {
       paragraphs: [
         'En Silbernagel 2007, los pacientes que siguieron corriendo durante la rehabilitación con el modelo de control del dolor no estuvieron peor que los que primero descansaron. Los dos grupos mejoraron a los 12\u00A0meses. El ensayo concluyó que seguir activo, vigilando el dolor, «podría ser una opción valiosa» durante la rehabilitación.',
         'Eso no significa que correr sea inofensivo en todos los casos. Si el dolor no se calma en la noche, o si cada semana va peor, bájale. El dolor donde el tendón se une al hueso del talón pide más cuidado que el dolor en la mitad del tendón. Cualquier chasquido o tronido repentino es una razón para parar y consultar a un profesional de la salud.',
-        'La página de [dolor de talón en corredores](/heel-pain-runners/) (en inglés) explica con más detalle cómo manejar la carga al correr.',
+        'La página de [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) explica con más detalle cómo manejar la carga al correr.',
       ],
       cites: [CITE.silbernagel],
     },
@@ -243,6 +247,21 @@ export const ACHILLES_ES: Guide = {
       q: '¿Cuánto tardan en funcionar los ejercicios para la tendinitis de Aquiles?',
       cites: [CITE.achillesGuideline, CITE.alfredson, CITE.beyer],
       a: 'La recuperación se mide en meses. Los principales ensayos hicieron programas de carga de unos tres meses y siguieron los resultados hasta los 12\u00A0meses. La guía de 2024 señala que la función puede empezar a mejorar desde las 2\u00A0semanas, pero una recuperación más completa tarda bastante más. Ningún ensayo promete un plazo fijo.',
+    },
+    {
+      q: '¿Qué no se debe hacer con tendinitis de Aquiles?',
+      cites: [CITE.jonsson, CITE.silbernagel],
+      a: 'Evita aumentos repentinos en el volumen de carrera o la intensidad de los sprints, el estiramiento profundo de pantorrilla si el dolor está en la inserción con el hueso del talón, y seguir forzando con dolor que sigue alto a la mañana siguiente. Un chasquido o tronido repentino necesita atención de un profesional de inmediato. El reposo total tampoco es obligatorio; la actividad guiada por el dolor suele ser mejor que detenerse por completo.',
+    },
+    {
+      q: '¿Caminar empeora la tendinitis de Aquiles?',
+      cites: [CITE.silbernagel],
+      a: 'Generalmente no. Caminar es de menor impacto que correr, y muchas personas con tendinopatía de Aquiles pueden seguir caminando sin que se les dispare el dolor. Vigila si el dolor sigue alto a la mañana siguiente o va empeorando semana a semana; esa es la señal para bajarle la distancia o el ritmo, no para dejar de moverte del todo. Las subidas pronunciadas y caminar rápido sobre superficies duras son más propensas a irritarlo.',
+    },
+    {
+      q: '¿Qué se confunde con la tendinitis de Aquiles?',
+      cites: [CITE.chooRearfoot],
+      a: 'La bursitis retrocalcánea, la deformidad de Haglund y un desgarro parcial del Aquiles pueden causar un dolor parecido en la parte de atrás del talón. Un bulto óseo visible apunta más a la deformidad de Haglund, mientras que la hinchazón justo en la línea de atrás del zapato sugiere bursitis. Cualquier dolor agudo repentino con un chasquido, o la incapacidad de pararte en puntas, necesita evaluación urgente para descartar una rotura del tendón.',
     },
   ],
   redFlags: {

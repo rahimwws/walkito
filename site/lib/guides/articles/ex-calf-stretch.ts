@@ -59,6 +59,7 @@ export const EX_CALF_STRETCH: Guide = {
     },
     {
       h2: 'Why does a tight calf muscle cause heel pain?',
+      keyFact: 'In a review of 254 people with plantar fasciitis, slightly over half had a contracture isolated to the gastrocnemius, and 23 to 30 percent had both calf muscles tight (Patel and DiGiovanni, 2011).',
       paragraphs: [
         'The gastrocnemius runs from behind the knee down to the heel through the Achilles tendon. The plantar fascia picks up where the Achilles leaves off, wrapping under the heel bone and running forward to the toes. When the gastrocnemius is tight, it limits how far the ankle can bend upward. That forces the plantar fascia to absorb more strain with every step.',
         'In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion raised the odds of plantar fasciitis 23.3 times. That was stronger than BMI, standing time or any other variable in the study.',
@@ -76,7 +77,7 @@ export const EX_CALF_STRETCH: Guide = {
       cites: [CITE.guideline, CITE.siriphorn],
     },
     {
-      h2: 'Common mistakes with the calf stretch',
+      h2: 'What are the common mistakes with the calf stretch?',
       paragraphs: [
         'Bending the back knee. The moment the knee bends, the gastrocnemius goes slack and the stretch moves to the soleus. Keep the back knee locked straight throughout the hold.',
         'Letting the back heel lift. If the heel comes off the floor, the calf is not being stretched. Press the heel down first, then lean forward until the stretch appears.',

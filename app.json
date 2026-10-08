@@ -3,14 +3,15 @@
     "name": "Walkito",
     "slug": "tread",
     "scheme": "walkito",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": false,
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "CFBundleAllowMixedLocalizations": true
       },
       "bundleIdentifier": "com.walkito.app",
       "appleTeamId": "HWGBXV8W4Z",
@@ -65,6 +66,7 @@
           "resizeMode": "contain"
         }
       ],
+      "./plugins/with-widget-locales",
       [
         "expo-widgets",
         {
@@ -155,7 +157,21 @@
           ]
         }
       ],
-      "./plugins/with-hermes-sourcemap"
+      "./plugins/with-hermes-sourcemap",
+      [
+        "expo-localization",
+        {
+          "supportedLocales": [
+            "en",
+            "ru",
+            "es",
+            "pt",
+            "fr",
+            "de",
+            "it"
+          ]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
@@ -188,6 +204,15 @@
     "owner": "nazarly-digital",
     "updates": {
       "url": "https://u.expo.dev/ada5351e-5344-43d9-a088-b23f1695cbb1"
+    },
+    "locales": {
+      "en": "./locales/en.json",
+      "ru": "./locales/ru.json",
+      "es": "./locales/es.json",
+      "pt": "./locales/pt.json",
+      "fr": "./locales/fr.json",
+      "de": "./locales/de.json",
+      "it": "./locales/it.json"
     }
   }
 }

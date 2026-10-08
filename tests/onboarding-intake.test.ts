@@ -15,27 +15,42 @@ import { focusFor, intakeFrom, startingPlan } from '@/pages/onboarding/model/int
 const measure = (unit: string, field: string, value: string) => ({ unit, fields: { [field]: value } });
 
 describe('reading the answers', () => {
-  test('choices, measures and the shoe all survive', () => {
+  test('choices and measures survive, and the new questions with them', () => {
     const intake = intakeFrom(
       {
         pain: ['heel', 'achilles'],
         side: ['left'],
-        sport: ['running'],
+        role: ['both'],
         runner: ['casual'],
-        goal: ['painfree'],
+        goal: ['mornings'],
         age: measure('years', 'years', '41'),
-        body: measure('lb', 'lb', '180'),
+        duration: ['year'],
+        morningPain: '7',
+        safety: ['none'],
+        tried: ['insoles', 'rest'],
+        habit: ['coffee'],
       },
-      { size: 43, unit: 'eu' },
+      null,
       1000,
     );
     expect(intake.pain).toEqual(['heel', 'achilles']);
     expect(intake.side).toBe('left');
+    // Who they are says the sport now: anybody who runs is a runner.
     expect(intake.sport).toBe('running');
+    expect(intake.role).toBe('both');
     expect(intake.age).toBe(41);
-    expect(intake.weightKg).toBe(82);
-    expect(intake.shoe).toEqual({ size: 43, unit: 'eu' });
+    expect(intake.painDuration).toBe('year');
+    expect(intake.morningPain).toBe(7);
+    expect(intake.tried).toEqual(['insoles', 'rest']);
+    expect(intake.habit).toBe('coffee');
+    // No longer asked.
+    expect(intake.weightKg).toBeNull();
+    expect(intake.shoe).toBeNull();
     expect(intake.completedAt).toBe(1000);
+  });
+
+  test('a standing job names no sport', () => {
+    expect(intakeFrom({ role: ['feet'] }).sport).toBeNull();
   });
 
   test('a skipped flow is a set of nulls, not invented defaults', () => {
@@ -60,6 +75,10 @@ describe('the starting plan', () => {
     expect(startingPlan({ ...base, runner: 'new' }).progressionOffset).toBe(-1);
     expect(startingPlan({ ...base, runner: 'regular', age: 60 }).progressionOffset).toBe(-1);
     expect(startingPlan({ ...base, runner: 'regular', age: 30 }).progressionOffset).toBe(0);
+    // A pain only weeks old, or a week one that starts seated.
+    expect(startingPlan({ ...base, runner: 'regular' }, { duration: ['weeks'] }).progressionOffset).toBe(-1);
+    expect(startingPlan({ ...base, runner: 'regular' }, { safety: ['fall'] }).progressionOffset).toBe(-1);
+    expect(startingPlan({ ...base, runner: 'regular' }, { safety: ['numb'] }).progressionOffset).toBe(0);
   });
 
   test('heel and foot win; otherwise the calf or the hip leads', () => {

@@ -34,7 +34,7 @@ export const EX_TIBIALIS_RAISES_ES: Guide = {
       ],
     },
     {
-      h2: 'Cómo hacer una elevación de tibial anterior',
+      h2: '¿Cómo hacer una elevación de tibial anterior?',
       paragraphs: [
         'Párate con la espalda pegada a una pared. Avanza los pies unos 30\u00A0centímetros (más o menos el largo de un pie) desde la pared. Deja los talones en el piso. Levanta la parte delantera de los dos pies lo más alto que puedas, llevando los dedos hacia la tibia. Quédate un momento arriba. Baja despacio.',
         'La pared sostiene tu peso para que te concentres en el trabajo de la parte delantera de la pierna. Si te separas de la pared, tienes los pies demasiado adelante.',
@@ -59,6 +59,7 @@ export const EX_TIBIALIS_RAISES_ES: Guide = {
     },
     {
       h2: '¿Las elevaciones de tibial anterior ayudan con la periostitis tibial?',
+      keyFact: 'En un estudio de casos y controles de 2007, los deportistas con periostitis tibial tenían menos resistencia en elevaciones de talón que controles comparables, lo que apunta a un déficit general de fuerza, no a un músculo concreto (Madeley y colegas, 2007).',
       paragraphs: [
         'La periostitis tibial, cuyo nombre clínico es síndrome de estrés tibial medial (SETM), es dolor a lo largo del borde interno de la tibia. El tibial anterior está en la parte delantera y externa de la tibia, no en el lugar donde suele doler el SETM, así que la relación es indirecta. La idea es que un tibial anterior más fuerte ayuda a absorber el impacto al correr y caminar, y reduce la tensión sobre la tibia en general.',
         'Un estudio de casos y controles de 2007 encontró que los deportistas con SETM tenían menos resistencia en elevaciones de talón que controles comparables, lo que apunta a un déficit general de fuerza en la parte baja de la pierna, no a la debilidad de un músculo concreto. Una revisión sistemática de 2013 estudió el tratamiento del SETM ya presente, no su prevención, y no encontró ningún ensayo que mostrara que los estiramientos o los ejercicios de fuerza funcionaran, aunque en general la evidencia detrás de ese resultado era de baja calidad.',
@@ -82,7 +83,7 @@ export const EX_TIBIALIS_RAISES_ES: Guide = {
       ],
     },
     {
-      h2: 'Errores comunes en las elevaciones de tibial anterior',
+      h2: '¿Cuáles son los errores comunes en las elevaciones de tibial anterior?',
       paragraphs: [
         'Pies demasiado lejos de la pared. Si los talones se deslizan hacia adelante, pierdes el apoyo de la pared y el ejercicio se vuelve un reto de equilibrio en lugar de un ejercicio de fuerza para la parte delantera de la pierna. Para la mayoría, más o menos el largo de un pie desde la pared es lo correcto.',
         'Apurar las repeticiones. Subir y bajar despacio y con control hace trabajar más al músculo que las repeticiones rápidas. Dos segundos para subir, un segundo arriba y dos segundos para bajar es un buen ritmo.',

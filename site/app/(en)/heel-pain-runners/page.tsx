@@ -11,7 +11,7 @@ import { ScreenshotSlot } from '@/components/ScreenshotSlot';
 import { Prose } from '@/components/Prose';
 import { CITE } from '@/lib/citations';
 import { HEEL_PAIN_EN } from '@/lib/guides/en';
-import { CHROME } from '@/lib/i18n';
+import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { articleSchema, faqSchema } from '@/lib/schema';
 import { IN_SESSION_STOP, PAGE_UPDATED, PAIN_GOAL_MAX, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
 
@@ -49,11 +49,13 @@ export const metadata: Metadata = {
   // Absolute: the root template would append " | Walkito" a second time.
   title: { absolute: `${TITLE} | ${SITE_NAME}` },
   description: DESCRIPTION,
-  alternates: { canonical: PATH },
+  alternates: alternatesCustomEnEs('runners', 'en'),
   openGraph: {
+    locale: 'en_US',
     title: `${TITLE} | ${SITE_NAME}`,
     description: DESCRIPTION,
     url: PATH,
+    images: ['/opengraph-image'],
     type: 'article',
   },
 };
@@ -549,7 +551,7 @@ export default function HeelPainRunners() {
         </article>
       </Prose>
 
-      <Footer />
+      <Footer languages={{ en: '/heel-pain-runners/', es: '/es/dolor-de-talon-en-corredores/', ru: '/ru/bol-v-pyatke-u-begunov/' }} />
     </>
   );
 }

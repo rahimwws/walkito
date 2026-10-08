@@ -4,7 +4,7 @@ import { adjustToday } from '@/entities/program/model/plan/today';
 import type { Goal } from '@/entities/program/model/plan/goals';
 import type { PlanDay } from '@/entities/program/model/plan/week';
 import { CLIPS } from '@/shared/config/clip-manifest';
-import { translatorFor } from '@/shared/lib/i18n';
+import { LANGUAGES, translatorFor } from '@/shared/lib/i18n';
 import { en as EN } from '@/shared/lib/i18n/catalogue/en';
 
 import { goalView, outcomeView, rationaleLine, splitLead, todayTitle, todayVariant } from './plan-view';
@@ -136,7 +136,7 @@ describe('the plan screen', () => {
     const view = outcomeView(t, outcome, [{ ...goal('arch_hold', 60), status: 'maintaining' }], null, false);
     expect(view.fill).toBe(1);
     expect(view.current).toBeNull();
-    expect(view.headline.lead).toBe('under control');
+    expect(view.headline.lead).toBe('support');
   });
 
   test('the lead is found wherever a language puts it', () => {
@@ -145,7 +145,7 @@ describe('the plan screen', () => {
   });
 
   test('every outcome sentence marks exactly one lead in every language', () => {
-    for (const lang of ['en', 'ru', 'es'] as const) {
+    for (const lang of LANGUAGES) {
       const say = translatorFor(lang);
       for (const kind of ['painfree', 'injury_free', 'stronger'] as const) {
         const line = say(`pages.plan.outcome.${kind}`, { sport: 'x' });

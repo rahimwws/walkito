@@ -40,6 +40,7 @@ export const STANDING_ES: Guide = {
   sections: [
     {
       h2: '¿Por qué te duelen los pies después de estar de pie todo el día?',
+      keyFact: 'En un estudio de casos y controles, la poca flexibilidad del tobillo multiplicó por 23,3 las probabilidades de fascitis plantar, y estar de pie la mayor parte de la jornada, por 3,6 (Riddle y colegas, 2003).',
       paragraphs: [
         'Los pies duelen por estar de pie porque, quieto, cargas la fascia plantar, los músculos de la pantorrilla y el talón sin darles un descanso. Al caminar, cada paso bombea la sangre de las piernas hacia arriba. Estar de pie quita ese bombeo, así que la sangre se acumula en la parte baja de las piernas y los tejidos bajo el pie cargan el mismo peso fijo durante horas.',
         'Una revisión de 2015 sobre la investigación en salud laboral encontró que estar de pie mucho tiempo se asocia con dolor lumbar, dolor de piernas, molestias y cansancio en muchos trabajos que se hacen de pie. La revisión también señaló que el esfuerzo del corazón y la hinchazón de las piernas aumentan con el tiempo de pie. Los autores pidieron definiciones más claras de «estar de pie mucho tiempo» en futuros estudios, porque el límite entre un tiempo de pie seguro y uno dañino cambia según la persona y el trabajo.',
@@ -48,7 +49,8 @@ export const STANDING_ES: Guide = {
       cites: [CITE.waters, CITE.riddle],
     },
     {
-      h2: 'Ejercicios para el dolor de pies por estar de pie, con dosis de inicio',
+      h2: '¿Qué ejercicios ayudan con el dolor de pies por estar de pie?',
+      keyFact: 'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, A, y al entrenamiento de resistencia y de fuerza una B (Koc y colegas, 2023).',
       paragraphs: [
         'Estos ejercicios trabajan la pantorrilla, la fascia plantar y los músculos pequeños que sostienen el arco. Son las dosis de inicio de Walkito, no una indicación médica. Si el dolor está cerca del talón y sigue el patrón de dolor por la mañana de la fascitis plantar, la lista completa está en [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/). [Cómo escribimos estas guías](/es/sobre-walkito/).',
         'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, A. Al entrenamiento de resistencia y de fuerza le da una B. Las dos notas son para la fascitis plantar, no para el cansancio general por estar de pie, pero los tejidos son los mismos. Si algún ejercicio sube tu dolor a **6/10 o más**, detente por hoy.',
@@ -184,6 +186,7 @@ export const STANDING_ES: Guide = {
     },
     {
       h2: '¿Las medias de compresión ayudan con el dolor de pies por estar de pie?',
+      keyFact: 'En un ensayo con 40 guardias de seguridad en turnos de unas 12 horas de pie, las medias de compresión de 15-20 y de 20-30 mmHg evitaron el aumento de molestias en pies y piernas que hubo con calcetines normales (Garcia y colegas, 2023).',
       paragraphs: [
         'Las medias de compresión tienen uno de los estudios mejor controlados sobre las molestias por estar de pie. En un ensayo aleatorizado con 40 guardias de seguridad que trabajaban de pie turnos de unas 12\u00A0horas, divididos en tres grupos, tanto el grupo con medias de 15-20\u00A0mmHg como el de 20-30\u00A0mmHg evitaron el aumento importante de molestias en pies y piernas, cansancio e hinchazón que tuvo el grupo con calcetines normales. Muchos participantes dijeron que la media de menor presión era más fácil de poner.',
         'El ensayo fue pequeño, solo con hombres, y probó un solo tipo de trabajo. Pero es una de las pocas medidas para las molestias por estar de pie con un diseño aleatorizado, por eso aparece antes que otros consejos más populares en esta página. Las medias de compresión no reemplazan los estiramientos ni el trabajo de fuerza. Ayudan con la hinchazón y el cansancio, mientras la pantorrilla y la fascia siguen necesitando su propio trabajo.',
@@ -197,7 +200,7 @@ export const STANDING_ES: Guide = {
       paragraphs: [
         'El dolor de pies por estar de pie puede ser cansancio general que se quita con descanso, o puede ser el inicio de un problema con nombre. El más común es la fascitis plantar: dolor agudo cerca del talón, que suele ser peor en los primeros pasos después de descansar. Si el talón te duele más en la mañana y otra vez después de estar sentado, ese patrón apunta a fascitis plantar, y la guía más completa es [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
         'Si al final del día sientes los arcos planos o hundidos hacia adentro, los ejercicios de [ejercicios para pie plano y arcos caídos](/es/ejercicios-pie-plano/) trabajan los músculos que sostienen el arco. Un pie plano rígido, que sigue plano incluso cuando el pie no toca el piso, es estructural y necesita a un profesional de la salud, no ejercicio.',
-        'Si el dolor está a lo largo de la tibia y no bajo el pie, eso apunta a periostitis tibial, y [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/) explica lo que dice la investigación. El dolor en la parte de atrás del talón, en el tendón de Aquiles, es otro problema. El dolor en la parte interna del tobillo puede venir del tendón tibial posterior. Los dos se explican desde el punto de vista de los corredores en [dolor de talón al correr](/heel-pain-runners/) (en inglés). Si el dolor está atrás del talón, en el tendón de Aquiles, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/); si quieres más detalle sobre el ejercicio de elevación de talón, mira [elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/). Si no sabes qué está causando el dolor, consulta a un profesional de la salud antes de cargarlo con ejercicio.',
+        'Si el dolor está a lo largo de la tibia y no bajo el pie, eso apunta a periostitis tibial, y [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/) explica lo que dice la investigación. El dolor en la parte de atrás del talón, en el tendón de Aquiles, es otro problema. El dolor en la parte interna del tobillo puede venir del tendón tibial posterior. Los dos se explican desde el punto de vista de los corredores en [dolor de talón al correr](/es/dolor-de-talon-en-corredores/). Si el dolor está atrás del talón, en el tendón de Aquiles, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/); si quieres más detalle sobre el ejercicio de elevación de talón, mira [elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/). Si no sabes qué está causando el dolor, consulta a un profesional de la salud antes de cargarlo con ejercicio.',
       ],
     },
     {
@@ -234,6 +237,16 @@ export const STANDING_ES: Guide = {
       q: '¿Qué es lo primero que debo probar para el dolor de pies por estar de pie?',
       a: 'De las opciones de autocuidado que revisa esta página, el estiramiento de pantorrilla y de fascia plantar tiene el grado de evidencia más alto (A) en la guía de 2023 para el dolor de talón, y las medias de compresión tienen el ensayo controlado más sólido para las molestias por estar de pie. Empezar con estiramientos de pantorrilla diarios y probar medias de compresión en tu próximo turno largo cubre las dos cosas.',
       cites: [CITE.guideline, CITE.garcia],
+    },
+    {
+      q: '¿Cuánto tiempo es demasiado estar de pie?',
+      a: 'No hay un límite seguro único y probado. La investigación en salud laboral encuentra que la molestia, el cansancio y la hinchazón aumentan cuanto más dura un turno de pie, con el aumento más claro entre las 8 y las 12 horas. La comodidad depende más del movimiento que de las horas: pausas cortas sentado o caminando cada hora ayudan a compensar la carga estática de estar de pie.',
+      cites: [CITE.waters],
+    },
+    {
+      q: '¿Cómo puedo estar de pie 10 horas sin dolor?',
+      a: 'Ningún truco por sí solo quita el dolor de un turno de 10 horas, pero combinar varias cosas ayuda a la mayoría: usa zapatos acolchados y con soporte, agrega un tapete para pisos duros, toma pausas cortas caminando cada hora para reactivar la circulación, y estira la pantorrilla y la fascia plantar todos los días. Las medias de compresión redujeron la molestia y la hinchazón en un ensayo con guardias de seguridad en turnos largos.',
+      cites: [CITE.garcia, CITE.waters],
     },
   ],
   redFlags: {

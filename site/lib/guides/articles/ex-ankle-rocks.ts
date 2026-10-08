@@ -53,6 +53,7 @@ export const EX_ANKLE_ROCKS: Guide = {
     },
     {
       h2: 'Why does ankle mobility matter for heel pain?',
+      keyFact: 'In a case-control study of 50 people with plantar fasciitis and 100 controls, limited ankle dorsiflexion was a stronger risk factor than BMI or standing time, raising the odds 23.3-fold (Riddle and colleagues, 2003).',
       paragraphs: [
         'Ankle dorsiflexion is how far the foot can bend upward toward the shin while the heel stays on the ground. Every step you take requires some dorsiflexion. When the ankle cannot bend far enough, the body compensates. The foot may roll inward, the calf takes more strain, and the plantar fascia absorbs forces it was not designed for.',
         'In the Riddle 2003 case-control study, reduced ankle dorsiflexion was the variable with the largest independent effect, at 23.3 times the odds of developing plantar fasciitis. That was stronger than BMI, standing time or running distance. A tight calf, specifically the gastrocnemius, was present in 52 to 60 percent of 254 people with plantar fasciitis in a separate review.',
@@ -78,7 +79,7 @@ export const EX_ANKLE_ROCKS: Guide = {
       ],
     },
     {
-      h2: 'Common mistakes with ankle rocks',
+      h2: 'What are the common mistakes with ankle rocks?',
       paragraphs: [
         'Letting the heel lift. The heel must stay flat throughout every rep. If it lifts, you have passed the end of your range and the exercise loses its point. Rock only as far as the heel allows.',
         'Turning the foot outward. The foot should point straight ahead. External rotation lets the ankle sidestep its tight spot. Keep the second toe aimed at the wall.',

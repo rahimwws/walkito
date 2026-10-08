@@ -70,10 +70,11 @@ describe('the catalogue and the manifest', () => {
     for (const id of ids(plan)) expect(few.has(id)).toBe(true);
   });
 
-  test('2 · missing clip 17 (heel_raise_plain) resolves to heel_raise_double, never to nothing', () => {
+  test('2 · a missing clip (heel_raise_plain) resolves to heel_raise_double, never to nothing', () => {
     const ctx = { clips: new Set(Object.keys(CLIPS)), equipmentMissing: [] as Equipment[] };
-    expect(CLIPS.heel_raise_plain).toBeUndefined();
-    expect(playableId('heel_raise_plain', ctx)).toBe('heel_raise_double');
+    const without = { ...ctx, clips: new Set(Object.keys(CLIPS).filter((id) => id !== 'heel_raise_plain')) };
+    expect(playableId('heel_raise_plain', ctx)).toBe('heel_raise_plain');
+    expect(playableId('heel_raise_plain', without)).toBe('heel_raise_double');
     expect(playableId('single_leg_mini_squat', { ...ctx, equipmentMissing: ['step'] })).toBe('hip_abduction');
     expect(playableId('single_leg_mini_squat', ctx)).toBe('step_down');
   });

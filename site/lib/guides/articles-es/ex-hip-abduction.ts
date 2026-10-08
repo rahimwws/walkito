@@ -57,6 +57,7 @@ export const EX_HIP_ABDUCTION_ES: Guide = {
     },
     {
       h2: '¿Cómo afecta la cadera al pie y al arco?',
+      keyFact: 'En unos 1900 adultos del Framingham Foot Study, el pie plano no se relacionó con el dolor lumbar, pero el pie que se va hacia adentro al caminar sí mostró una relación pequeña en mujeres (Menz y colegas, 2013).',
       paragraphs: [
         'La conexión pasa por una cadena biomecánica: cadera, rodilla, tobillo, pie. Cuando el glúteo medio no logra mantener la pelvis nivelada al apoyarte en una pierna, el muslo gira hacia adentro. La rodilla lo sigue y se va hacia la línea media. Ese giro obliga al pie a hacer pronación: el tobillo se va hacia adentro y el arco se aplana.',
         'Por eso muchas personas con pie plano o dolor en el arco también tienen las caderas débiles. El arco no está fallando por sí solo. Está recibiendo demasiada carga desde arriba. Fortalecer la cadera reduce esa carga que baja.',
@@ -69,12 +70,12 @@ export const EX_HIP_ABDUCTION_ES: Guide = {
       h2: '¿A quién le sirve la abducción de cadera para el dolor de pies?',
       paragraphs: [
         'A las personas con pie plano o con pronación excesiva, porque el ejercicio trabaja una causa común, más arriba en la cadena, del hundimiento del arco. Si tus rodillas tienden a irse hacia adentro cuando haces sentadillas o caminas, es probable que unos abductores de cadera débiles tengan que ver.',
-        'A los corredores, porque estar apoyado en una pierna es la postura normal al correr. Cada zancada cae sobre un pie. Un glúteo medio débil en ese lado deja que la rodilla y el pie se vayan hacia adentro, lo que puede contribuir a la periostitis tibial, la fascitis plantar y la rodilla del corredor. Mira [dolor de talón en corredores](/heel-pain-runners/) (en inglés) y [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/) para más.',
+        'A los corredores, porque estar apoyado en una pierna es la postura normal al correr. Cada zancada cae sobre un pie. Un glúteo medio débil en ese lado deja que la rodilla y el pie se vayan hacia adentro, lo que puede contribuir a la periostitis tibial, la fascitis plantar y la rodilla del corredor. Mira [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) y [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/) para más.',
         'A quienes pasan muchas horas de pie, sobre todo enfermeras y personas que trabajan en tiendas. Estar de pie mucho tiempo cansa el glúteo medio, y al final del turno el control de la cadera se debilita. Mira [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) para ejercicios que combinan bien con la abducción de cadera.',
       ],
     },
     {
-      h2: 'Errores comunes en la abducción de cadera de pie',
+      h2: '¿Cuáles son los errores comunes en la abducción de cadera de pie?',
       paragraphs: [
         'Inclinar el cuerpo hacia el lado contrario es el error más común. Cuando te inclinas, el cuerpo usa impulso y flexión lateral en lugar del glúteo medio. Mantente derecho. Es mejor subir menos con el cuerpo recto que subir mucho inclinándote.',
         'Otro error es girar el pie hacia afuera, con los dedos apuntando al techo. Así el trabajo pasa a los flexores de cadera y al tensor de la fascia lata en lugar del glúteo medio. Mantén los dedos apuntando al frente o un poco hacia abajo.',
