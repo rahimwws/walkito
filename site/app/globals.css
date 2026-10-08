@@ -4766,8 +4766,7 @@ html[data-scrolled] .masthead-float .download {
  * Arial's. With the stock fallback the not-yet-loaded headline wrapped onto an
  * extra line on phones and the page jumped when Anton arrived (PageSpeed CLS
  * 0.087 on that headline). At 69.5% the lines break where Anton's do, so
- * nothing moves. The text is invisible until Anton loads (font-display:
- * block), so this face is never seen; it only holds the space.
+ * nothing moves when Anton swaps in.
  * Russian uses Oswald, whose stock fallback is already within 4%.
  */
 @font-face {
