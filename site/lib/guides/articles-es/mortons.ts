@@ -175,6 +175,18 @@ export const MORTONS_ES: Guide = {
       cites: [CITE.matthewsCochrane],
       a: 'La cirugía suele considerarse después de varios meses de manejo conservador, incluyendo cambios de calzado, almohadillas y una o dos rondas de inyecciones, que no han dado alivio duradero. La neurectomía, la extirpación del segmento engrosado del nervio, es el procedimiento más común. Alivia el dolor en muchas personas, pero deja un entumecimiento permanente entre los dedos afectados.',
     },
+    {
+      q: '¿Qué provoca el neuroma de Morton?',
+      a: 'El neuroma de Morton se dispara por cualquier cosa que comprima el nervio entre los huesos metatarsianos. Los disparadores comunes incluyen zapatos angostos o de punta puntiaguda, tacones altos, actividades de impacto repetido como correr, y formas del pie como el pie plano o los arcos altos que desplazan presión extra hacia adelante. Es más común en mujeres y en la mediana edad.',
+    },
+    {
+      q: '¿Qué es la prueba de pellizco para el neuroma de Morton?',
+      a: 'La prueba de pellizco, también llamada señal de Mulder, es un examen físico que un profesional usa para ayudar a diagnosticar el neuroma de Morton. Aprieta la parte delantera del pie de lado a lado mientras presiona entre las cabezas de los metatarsianos. Un chasquido o clic palpable, junto con dolor ardiente reproducido, respalda el diagnóstico, aunque un profesional todavía necesita descartar otras causas.',
+    },
+    {
+      q: '¿Caminar es bueno para el neuroma de Morton?',
+      a: 'Caminar en sí no daña el nervio, pero los zapatos apretados o de suela delgada mientras caminas pueden aumentar la compresión y empeorar los síntomas. Caminatas cortas con zapatos anchos y acolchados suelen estar bien. Caminatas más largas sobre superficies duras o con zapatos angostos suelen aumentar el ardor u hormigueo entre los dedos. Si caminar provoca síntomas de forma constante, cambiar de zapatos ayuda más que reducir la actividad.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

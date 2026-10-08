@@ -238,6 +238,16 @@ export const STANDING_ES: Guide = {
       a: 'De las opciones de autocuidado que revisa esta página, el estiramiento de pantorrilla y de fascia plantar tiene el grado de evidencia más alto (A) en la guía de 2023 para el dolor de talón, y las medias de compresión tienen el ensayo controlado más sólido para las molestias por estar de pie. Empezar con estiramientos de pantorrilla diarios y probar medias de compresión en tu próximo turno largo cubre las dos cosas.',
       cites: [CITE.guideline, CITE.garcia],
     },
+    {
+      q: '¿Cuánto tiempo es demasiado estar de pie?',
+      a: 'No hay un límite seguro único y probado. La investigación en salud laboral encuentra que la molestia, el cansancio y la hinchazón aumentan cuanto más dura un turno de pie, con el aumento más claro entre las 8 y las 12 horas. La comodidad depende más del movimiento que de las horas: pausas cortas sentado o caminando cada hora ayudan a compensar la carga estática de estar de pie.',
+      cites: [CITE.waters],
+    },
+    {
+      q: '¿Cómo puedo estar de pie 10 horas sin dolor?',
+      a: 'Ningún truco por sí solo quita el dolor de un turno de 10 horas, pero combinar varias cosas ayuda a la mayoría: usa zapatos acolchados y con soporte, agrega un tapete para pisos duros, toma pausas cortas caminando cada hora para reactivar la circulación, y estira la pantorrilla y la fascia plantar todos los días. Las medias de compresión redujeron la molestia y la hinchazón en un ensayo con guardias de seguridad en turnos largos.',
+      cites: [CITE.garcia, CITE.waters],
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

@@ -210,6 +210,18 @@ export const ARCH_PAIN_ES: Guide = {
       q: '¿El dolor de arco es lo mismo que la fascitis plantar?',
       a: 'No siempre. La fascitis plantar es una causa específica del dolor de arco, la más común. Pero el dolor de arco también puede venir del pie plano, la disfunción del tendón tibial posterior, el pie cavo, el sobreuso o la irritación de un nervio. Toda fascitis plantar involucra dolor de arco o de talón, pero no todo dolor de arco es fascitis plantar. El patrón del dolor, sobre todo su horario, ayuda a distinguirlas.',
     },
+    {
+      q: '¿Qué puede causar dolor en el arco externo del pie?',
+      a: 'Los ejercicios de esta página se enfocan en el arco interno, así que el dolor en el arco externo suele tener otra causa. Puede venir de los tendones peroneos, detrás del tobillo externo, o del síndrome del cuboides, donde un hueso pequeño del mediopié se desplaza un poco, muchas veces tras un esguince o sobreuso. Las dos necesitan un examen distinto al estiramiento plantar, así que consulta a un profesional.',
+    },
+    {
+      q: '¿El dolor en el arco se quita solo?',
+      a: 'A veces. Un episodio corto de dolor por sobreuso suele calmarse en unos días en cuanto reduces la carga que lo causó. El dolor por fascitis plantar, pie plano o disfunción del tendón tibial posterior tiende a quedarse o a volver sin estiramiento ni trabajo de fuerza. Si no ha mejorado después de varias semanas de descanso y menos carga, consulta a un profesional de la salud.',
+    },
+    {
+      q: '¿Debo masajear el dolor en el arco?',
+      a: 'Un rodado suave puede ayudar entre sesiones, aunque ningún estudio citado aquí probó el masaje por sí solo. Rueda la planta despacio sobre una pelota de masaje o una botella de agua congelada, con presión firme pero nunca al punto de hacerte encoger. Es una medida de alivio, no resuelve la causa. Si al presionar un punto se reproduce un dolor agudo, hazlo revisar en lugar de presionar más fuerte.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

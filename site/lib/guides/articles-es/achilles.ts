@@ -247,6 +247,21 @@ export const ACHILLES_ES: Guide = {
       cites: [CITE.achillesGuideline, CITE.alfredson, CITE.beyer],
       a: 'La recuperación se mide en meses. Los principales ensayos hicieron programas de carga de unos tres meses y siguieron los resultados hasta los 12\u00A0meses. La guía de 2024 señala que la función puede empezar a mejorar desde las 2\u00A0semanas, pero una recuperación más completa tarda bastante más. Ningún ensayo promete un plazo fijo.',
     },
+    {
+      q: '¿Qué no se debe hacer con tendinitis de Aquiles?',
+      cites: [CITE.jonsson, CITE.silbernagel],
+      a: 'Evita aumentos repentinos en el volumen de carrera o la intensidad de los sprints, el estiramiento profundo de pantorrilla si el dolor está en la inserción con el hueso del talón, y seguir forzando con dolor que sigue alto a la mañana siguiente. Un chasquido o tronido repentino necesita atención de un profesional de inmediato. El reposo total tampoco es obligatorio; la actividad guiada por el dolor suele ser mejor que detenerse por completo.',
+    },
+    {
+      q: '¿Caminar empeora la tendinitis de Aquiles?',
+      cites: [CITE.silbernagel],
+      a: 'Generalmente no. Caminar es de menor impacto que correr, y muchas personas con tendinopatía de Aquiles pueden seguir caminando sin que se les dispare el dolor. Vigila si el dolor sigue alto a la mañana siguiente o va empeorando semana a semana; esa es la señal para bajarle la distancia o el ritmo, no para dejar de moverte del todo. Las subidas pronunciadas y caminar rápido sobre superficies duras son más propensas a irritarlo.',
+    },
+    {
+      q: '¿Qué se confunde con la tendinitis de Aquiles?',
+      cites: [CITE.chooRearfoot],
+      a: 'La bursitis retrocalcánea, la deformidad de Haglund y un desgarro parcial del Aquiles pueden causar un dolor parecido en la parte de atrás del talón. Un bulto óseo visible apunta más a la deformidad de Haglund, mientras que la hinchazón justo en la línea de atrás del zapato sugiere bursitis. Cualquier dolor agudo repentino con un chasquido, o la incapacidad de pararte en puntas, necesita evaluación urgente para descartar una rotura del tendón.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

@@ -224,6 +224,15 @@ export const STANDING_DESK_ES: Guide = {
       a: 'Al caminar se activa el bombeo de la pantorrilla, que sube la sangre de la parte baja de las piernas en cada paso. Estar quieto de pie quita ese bombeo, así que la sangre se acumula en los pies y la parte baja de las piernas, y los músculos se quedan en la misma posición fija en lugar de contraerse y relajarse. Una revisión sistemática de 2017 confirmó este mecanismo y encontró que los síntomas en las piernas aparecen de forma constante al estar de pie quieto en estudios de laboratorio.',
       cites: [CITE.coenen],
     },
+    {
+      q: '¿Qué es la regla 20-8-2 para escritorios de pie?',
+      a: 'La regla 20-8-2 es una pauta de ergonomía: divide cada bloque de 30 minutos en 20 minutos sentado, 8 minutos de pie y 2 minutos moviéndote. Es una convención general, no una fórmula probada en ensayos, pero coincide con la idea central de esta página: ninguna posición fija por horas es ideal, y los cambios de postura cortos y frecuentes reducen la carga estática que causa el cansancio en los pies.',
+    },
+    {
+      q: '¿Estar de pie empeora la fascitis plantar?',
+      a: 'Puede hacerlo. Estar de pie mantiene la fascia plantar y la pantorrilla bajo carga constante, sin las pausas de caminar que bombean sangre y bajan la tensión. Pasar la mayor parte de la jornada de pie es un factor de riesgo independiente de fascitis plantar en la investigación sobre estar de pie por tiempo prolongado. Si ya tienes fascitis plantar, un escritorio de pie sobre piso duro sin pausas ni estiramientos puede empeorar los síntomas.',
+      cites: [CITE.riddle],
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

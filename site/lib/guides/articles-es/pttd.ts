@@ -194,6 +194,14 @@ export const PTTD_ES: Guide = {
       cites: [CITE.ling],
       a: 'La cirugía suele discutirse cuando el manejo conservador, es decir, ejercicio, ortesis y a veces una bota ortopédica, no ha mejorado los síntomas después de varios meses, o cuando la deformidad ha progresado a la etapa III o IV, donde el pie está rígidamente plano o la articulación del tobillo está afectada. La mayoría de los casos en etapa I y II responden al manejo conservador.',
     },
+    {
+      q: '¿Es malo caminar con tendinitis del tibial posterior?',
+      a: 'No automáticamente, pero caminar demasiado sí puede serlo. Cada paso carga el tendón que sostiene el arco, así que mucha caminata sobre un tendón irritado tiende a empeorar el dolor. El manejo inicial reduce la carga que provoca el dolor, no caminar por completo, junto con ortesis y los ejercicios de arriba. Si una caminata te provoca dolor, es señal de bajarle.',
+    },
+    {
+      q: '¿Qué empeora la tendinitis del tibial posterior?',
+      a: 'Cualquier cosa que cargue el tendón de forma repetida mientras está irritado: tramos largos de pie o caminando, subidas, terreno irregular y zapatos gastados. El peso extra agrega más fuerza con cada paso, y un aumento repentino de actividad es un disparador común. Nada de esto significa descansar por completo; significa reducir la carga y agregar ortesis y los ejercicios de arriba.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

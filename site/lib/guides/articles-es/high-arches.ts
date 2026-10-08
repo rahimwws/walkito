@@ -205,6 +205,15 @@ export const HIGH_ARCHES_ES: Guide = {
       cites: [CITE.guideline],
       a: 'Los arcos altos se mencionan como factor de riesgo de la fascitis plantar. El pie rígido pone más tensión en la fascia plantar con cada paso, y la fascia ya suele estar tensa de por sí. Si tu pie de arco alto tiene dolor bajo el talón que es peor en la mañana, ese patrón es compatible con fascitis plantar y los ejercicios de [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/) aplican.',
     },
+    {
+      q: '¿Cómo saber si tengo el arco muy alto?',
+      a: 'Prueba la huella mojada: humedece la planta descalza y pisa sobre una superficie plana y seca. Un arco alto deja poca o ninguna huella en el borde externo, a veces solo el talón y la parte delantera del pie, mientras que un pie plano deja casi toda la planta marcada. Una diferencia grande entre tus dos pies vale la pena mencionarla a un profesional de la salud.',
+    },
+    {
+      q: '¿Es mejor tener pie plano o arcos altos?',
+      cites: [CITE.burnsCavusPain],
+      a: 'Ninguno es claramente mejor. Un pie plano reparte la carga en un área más amplia, pero puede sobreestirar la fascia plantar y el tendón tibial posterior. Un arco alto es rígido y concentra la fuerza en el talón y la parte delantera del pie. Cerca del 60 por ciento de las personas con pie cavo reportan dolor de pie, así que la forma del pie sola no predice cómo se sentirán tus pies.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

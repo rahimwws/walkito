@@ -272,6 +272,14 @@ export const FLAT_FEET_ES: Guide = {
       q: '¿Cuándo debo ir al médico por el pie plano?',
       a: 'Consulta a un profesional de la salud antes de empezar si el arco sigue plano cuando el pie no toca el piso, o si un arco se aplanó de repente en la edad adulta. Lo mismo si el dolor empezó después de una lesión, te despierta por la noche o viene con entumecimiento, hormigueo, hinchazón o calor. Un dolor agudo o que empeora necesita un profesional, no más ejercicio.',
     },
+    {
+      q: '¿Es bueno caminar descalzo si tienes pie plano?',
+      a: 'No hay ningún ensayo que compare caminar descalzo con usar zapatos en pie plano, así que ningún estudio lo resuelve. Caminar descalzo sí trabaja los músculos pequeños que sostienen el arco, por eso ejercicios de arco como el pie corto y el recogido de toalla se hacen sin zapatos. Si caminar descalzo te provoca dolor nuevo, bájale y pruébalo primero sobre una superficie suave.',
+    },
+    {
+      q: '¿Qué empeora el pie plano?',
+      a: 'Pasar mucho tiempo de pie o caminando, usar zapatos gastados o sin soporte, cargar peso extra y dejar de hacer el trabajo de arco y pantorrilla que mantiene fuertes los músculos de soporte. Nada de esto cambia la forma del arco, pero puede hacer que un pie plano flexible se sienta más cansado o dolorido hacia la noche. Un pie plano rígido que sigue doliendo necesita un profesional de la salud, no solo descanso.',
+    },
   ],
   redFlags: {
     h2: RED_FLAGS.h2,
@@ -559,6 +567,16 @@ export const HEEL_PAIN_ES: Guide = {
     {
       q: '¿Caminar ayuda con la fascitis plantar?',
       a: 'Caminar está bien en general, pero no es un ejercicio para la fascitis plantar por sí solo. La guía de 2023 recomienda ajustar la carga en vez de dejar la actividad. Si una caminata deja tus primeros pasos a la mañana siguiente claramente peores, la distancia o el ritmo fueron demasiado. Estirar antes de caminar, sobre todo el [estiramiento plantar](/es/ejercicios/estiramiento-fascia-plantar/) antes de tus primeros pasos, hace más fáciles los primeros minutos.',
+    },
+    {
+      q: '¿Qué es lo peor que puedes hacer con fascitis plantar?',
+      a: 'Caminar descalzo sobre piso duro justo al despertar, y volver de golpe a correr o saltar mientras el talón sigue inflamado, son los errores más claros. Las dos cosas cargan la fascia más rígida y menos recuperada con fuerza repentina. La guía de 2023 para el dolor de talón recomienda ajustar la carga en lugar de forzar el dolor.',
+      cites: [CITE.guideline],
+    },
+    {
+      q: '¿Se puede quitar la fascitis plantar con masajes?',
+      a: 'Ninguna sesión de masaje quita la fascitis plantar, pero un automasaje suave puede aliviar la rigidez entre sesiones. La guía de 2023 califica la terapia manual hecha por un profesional, trabajo sobre la articulación y el tejido blando, con grado A, su nota más alta, si se combina con estiramiento. Rodar la planta del pie es solo alivio, no sustituye el estiramiento ni el trabajo de pantorrilla.',
+      cites: [CITE.guideline],
     },
   ],
   redFlags: RED_FLAGS,

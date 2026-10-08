@@ -162,6 +162,14 @@ export const BUNIONS_ES: Guide = {
       q: '¿Qué causa los juanetes?',
       a: 'Los juanetes son resultado de una combinación de genética, estructura del pie y calzado. Los antecedentes familiares de hallux valgus son el factor de riesgo más fuerte. Los zapatos angostos y los tacones no causan juanetes por sí solos, pero pueden acelerar el avance en alguien que tiene la predisposición.',
     },
+    {
+      q: '¿Es mejor caminar descalzo para los juanetes?',
+      a: 'Ningún ensayo ha probado caminar descalzo contra usar zapatos en juanetes. Andar descalzo quita la presión de una puntera angosta sobre la articulación, lo que puede aliviar los síntomas en algunas personas. No revierte el ángulo del hueso. Sobre terreno duro o irregular, caminar descalzo puede cargar el pie de otra forma, así que hazlo de manera gradual en lugar de cambiar todo de golpe.',
+    },
+    {
+      q: '¿A qué edad salen los juanetes?',
+      a: 'No hay una edad única. Los juanetes suelen formarse poco a poco durante años y se notan más a partir de la mediana edad. Una forma juvenil menos común aparece en la adolescencia, muchas veces con antecedentes familiares marcados. Los zapatos angostos y los tacones altos aceleran la progresión en cualquiera que ya sea propenso a tenerlos, a cualquier edad.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

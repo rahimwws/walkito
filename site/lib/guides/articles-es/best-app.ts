@@ -212,6 +212,16 @@ export const BEST_APP_ES: Guide = {
       q: '¿Alguna de estas apps funciona en Android?',
       a: 'Exakt Health y Hinge Health están en iOS y Android. «Plantar Fasciitis Exercises» también está en las dos, aunque muestra compras dentro de la app en cada tienda. Walkito, Prehab, PlantarCare y Arch por ahora son solo para iOS. Si usas Android, Exakt Health es la opción más completa para el dolor de pies.',
     },
+    {
+      q: '¿Necesito una app para hacer los ejercicios de la fascitis plantar?',
+      cites: [CITE.guideline],
+      a: 'No. Una app no es obligatoria. Puedes hacer los ejercicios con evidencia de investigación detrás, como el estiramiento de la fascia y las progresiones de elevación de talón, desde una hoja impresa o un folleto de un profesional. Lo que suele agregar una app son recordatorios, seguimiento del progreso y reglas de ritmo según el dolor, que ayudan a algunas personas a mantener el plan por más tiempo, no un ejercicio diferente.',
+    },
+    {
+      q: '¿Con qué frecuencia debo usar una app de ejercicios para la fascitis plantar?',
+      cites: [CITE.guideline],
+      a: 'La mayoría de los programas de ejercicio para la fascitis plantar, incluidos los que la guía de 2023 califica más alto, están armados para sesiones diarias o casi diarias durante unos tres meses, no para un uso ocasional. Una app es más útil cuando la abres la mayoría de los días, porque la constancia es lo que impulsa el efecto de la carga, no ninguna función específica dentro de ella.',
+    },
   ],
   redFlags: {
     h2: 'Cuando una app no basta, consulta a un profesional de la salud',

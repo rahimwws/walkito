@@ -217,6 +217,14 @@ export const BALL_OF_FOOT_ES: Guide = {
       q: '¿Qué zapatos son mejores para el dolor en la planta del pie?',
       a: 'Zapatos con puntera ancha, suela acolchada y tacón bajo. Los zapatos con suela balancín ayudan porque dejan que el pie ruede al impulsarte sin doblarse en las articulaciones de los metatarsianos. Los zapatos angostos y los tacones hacen lo contrario. Sobre todo para el neuroma de Morton, cambiar de zapatos suele ser el paso más eficaz por sí solo.',
     },
+    {
+      q: '¿Cuánto dura un brote de metatarsalgia?',
+      a: 'No hay un tiempo fijo. Un brote leve suele calmarse en cuanto reduces la actividad que lo provoca, cambias a zapatos acolchados y más anchos, y agregas una almohadilla metatarsal. Los brotes ligados a una causa que sigue activa, como tacones altos, dedos en garra o una pantorrilla tensa, pueden durar meses, porque ningún plazo único se ajusta a todas las causas.',
+    },
+    {
+      q: '¿Cuáles son las complicaciones de una metatarsalgia sin tratar?',
+      a: 'Si no se atiende, la metatarsalgia puede cambiar tu forma de caminar, porque de forma natural quitas peso del punto dolorido y lo pasas a otras partes del pie, lo que puede crear dolor en zonas nuevas. La presión constante sobre las cabezas de los metatarsianos también puede contribuir a callos o, con menos frecuencia, a deformidades como el dedo en martillo. Cambiar de calzado y usar almohadillas metatarsales a tiempo reduce este riesgo.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

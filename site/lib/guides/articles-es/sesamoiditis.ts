@@ -116,6 +116,15 @@ export const SESAMOIDITIS_ES: Guide = {
       q: '¿Los ejercicios pueden prevenir que la sesamoiditis vuelva?',
       a: 'Ningún ejercicio se ha probado para la prevención de la sesamoiditis. Estirar las pantorrillas para reducir la carga en la parte delantera del pie y fortalecer los músculos intrínsecos del pie para repartir la presión de forma más pareja son ideas razonables, pero no están comprobadas para esta condición en específico. El uso continuo de una almohadilla de bailarina y calzado adecuado es la estrategia con más respaldo.',
     },
+    {
+      q: '¿Qué pasa si no se trata la sesamoiditis?',
+      a: 'Sin cambios en la carga, la sesamoiditis suele persistir o tener brotes con la actividad. Una revisión de 2025 sobre cuidado conservador encontró mejoría del dolor en cerca de dos tercios de los casos, pero la recaída fue común incluso con tratamiento. Sin descarga ni cambio de actividad, espera que el dolor siga y limite cuánto puedes correr o impulsarte con el pie.',
+      cites: [CITE.bizSesamoiditis],
+    },
+    {
+      q: '¿Es bueno masajear la sesamoiditis?',
+      a: 'Un masaje suave alrededor de la zona puede aliviar algo de molestia, pero la presión firme justo sobre los huesos sesamoideos suele empeorar el dolor, no mejorarlo, porque es exactamente donde está el tejido irritado. Si quieres trabajar la parte delantera del pie, mejor estira la pantorrilla, lo que quita algo de carga de los sesamoideos, en lugar de presionar directamente sobre el punto dolorido.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

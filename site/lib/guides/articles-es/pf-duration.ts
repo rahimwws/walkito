@@ -165,6 +165,16 @@ export const PF_DURATION_ES: Guide = {
       cites: [CITE.hansen],
       a: 'Sí. En la cohorte de Hansen de 2018, el 32\u00A0% del grupo que se quedó sin síntomas tuvo al menos una recaída antes de quedar sin síntomas de forma permanente. Es común mejorar, recaer y volver a mejorar. Seguir con una dosis de mantenimiento de trabajo de pantorrilla y estiramientos después de que el dolor se va es una forma de bajar la probabilidad de que vuelva.',
     },
+    {
+      q: '¿Cuáles son las señales de que la fascitis plantar está mejorando?',
+      cites: [CITE.rathleff],
+      a: 'La señal más clara es menos dolor por la mañana: los primeros pasos se sienten rígidos en lugar de agudos, y la molestia se calma más rápido en cuanto empiezas a caminar. Muchas personas notan este cambio antes de que el dolor desaparezca por completo. En el ensayo de Rathleff, el grupo de elevaciones de talón obtuvo puntuaciones medibles mejores a los tres meses, que es cuando este cambio suele aparecer.',
+    },
+    {
+      q: '¿Qué no se debe hacer si la fascitis plantar no mejora?',
+      cites: [CITE.guideline],
+      a: 'No dejes de hacer los ejercicios en cuanto el dolor de la mañana se calme, y no persigas un solo atajo en lugar de lo básico. Que el dolor baje antes de que la fascia se haya adaptado es una razón común de que los síntomas vuelvan. Si el dolor se mantiene igual o empeora durante varios meses a pesar de estirar, fortalecer y usar calzado con soporte, eso pide un profesional, no esperar más.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

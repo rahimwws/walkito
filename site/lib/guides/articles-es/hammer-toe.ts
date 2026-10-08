@@ -169,6 +169,14 @@ export const HAMMER_TOE_ES: Guide = {
       q: '¿Los juanetes pueden causar dedos en martillo?',
       a: 'Sí. Cuando el dedo gordo se inclina hacia afuera en el hallux valgus, puede empujar al segundo dedo hacia arriba y fuera de posición, contribuyendo a un dedo en martillo. Abordar el juanete con zapatos más anchos y [ejercicios para juanetes](/es/ejercicios-juanetes/) puede ayudar a reducir la presión sobre el segundo dedo.',
     },
+    {
+      q: '¿Se puede quitar un dedo en martillo con masajes?',
+      a: 'No. El masaje no puede enderezar un dedo en martillo, sea flexible o rígido, porque la curvatura es una posición de la articulación, no un nudo de tejido blando. Un masaje suave y el estiramiento de la parte de arriba del dedo pueden aliviar la molestia y la tensión del tendón, y ayudar a que un dedo flexible siga moviéndose. No va a deshacer la deformidad, así que combínalo con zapatos más anchos.',
+    },
+    {
+      q: '¿Es bueno caminar descalzo con dedo en martillo?',
+      a: 'Ningún ensayo ha probado esto directamente. Caminar descalzo quita la presión y la fricción de un zapato angosto sobre la articulación doblada, lo que puede aliviar la irritación en algunas personas. No va a enderezar un dedo en martillo. Sobre terreno duro o irregular, andar descalzo también puede cargar los dedos de otra forma, así que introdúcelo poco a poco en lugar de cambiar todo de golpe.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

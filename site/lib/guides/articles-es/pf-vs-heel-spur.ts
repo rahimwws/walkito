@@ -186,6 +186,16 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
       cites: [CITE.latt],
       a: 'Casi nunca. La guía no recomienda la remoción del espolón para la fascitis plantar. Cerca del 90\u00A0% de las personas con fascitis plantar mejoran con cuidados no quirúrgicos como estiramientos, fortalecimiento de pantorrilla y manejo de la carga (Latt y colegas, 2020). Cuando se considera la cirugía después de meses de cuidados conservadores sin resultado, normalmente implica liberar la fascia plantar, no quitar el espolón.',
     },
+    {
+      q: '¿Qué pasa si sigo caminando con un espolón calcáneo?',
+      cites: [CITE.menzSpur, CITE.guideline],
+      a: 'Caminar no va a meter el espolón más adentro del tejido cercano. El dolor que se dispara al caminar casi siempre viene de la fascia plantar irritada junto al espolón, no del hueso en sí. La guía de 2023 recomienda ajustar la carga, como la distancia o el ritmo, en lugar de dejar de caminar, si al día siguiente el talón empeora.',
+    },
+    {
+      q: '¿Es bueno masajear un espolón calcáneo?',
+      cites: [CITE.guideline],
+      a: 'Un masaje suave alrededor del espolón calcáneo puede aliviar la tensión del tejido blando, pero no cambia el hueso en sí. Rodar la planta con presión firme, nunca aguda, puede soltar la fascia y la pantorrilla, los tejidos que suelen causar el dolor. La guía califica la terapia manual de un profesional con grado A; el automasaje es solo alivio, no un sustituto del estiramiento.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

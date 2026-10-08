@@ -230,6 +230,16 @@ export const CALF_RAISES_ES: Guide = {
       q: '¿Es normal sentir el ejercicio en la pantorrilla y no en el talón?',
       a: 'Sí. Las elevaciones de talón sentado y con dos pies están pensadas para sentirse como trabajo de pantorrilla con poca carga en el talón, y por eso van antes de la versión a una pierna con toalla. La elevación con toalla es la que también carga el arco, así que en esa etapa es normal sentir un tirón cerca del talón, siempre que se quede por debajo de 6/10.',
     },
+    {
+      q: '¿La pantorrilla débil causa fascitis plantar?',
+      cites: [CITE.riddle, CITE.patelGastrocnemius, CITE.rathleff],
+      a: 'La evidencia más fuerte relaciona una pantorrilla tensa, no débil, con la fascitis plantar. Un estudio de casos y controles encontró que la flexibilidad reducida del tobillo era el principal factor de riesgo, y más de la mitad de una serie de pacientes tenía una contractura de pantorrilla. Aun así, fortalecer ayuda: en un ensayo con 48 personas, las elevaciones de talón aliviaron el dolor más rápido que solo estirar en los primeros tres meses.',
+    },
+    {
+      q: '¿Cuál es el mejor ejercicio para la fascitis plantar?',
+      cites: [CITE.guideline, CITE.rathleff],
+      a: 'No existe un solo mejor ejercicio; la guía de 2023 califica el estiramiento (A) y el fortalecimiento (B) como enfoques distintos y complementarios. El estiramiento plantar ataca directamente el dolor del primer paso, mientras que las elevaciones de talón construyen capacidad a largo plazo. En un ensayo con 48 personas, el grupo de elevaciones mejoró más rápido a los tres meses, aunque a los doce meses ambos grupos quedaron parecidos.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

@@ -213,6 +213,15 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
       q: '¿Cuándo debo ir al médico por dolor de talón?',
       a: 'Consulta a un profesional de la salud si el dolor empezó después de una lesión, si no puedes apoyar el pie, si te duelen los dos talones y tienes otras articulaciones rígidas, si hay entumecimiento u hormigueo, si el talón está rojo o caliente, si te despierta por la noche, o si no mejora después de varios meses de estiramientos y trabajo de pantorrilla. Estos patrones pueden apuntar a otra condición.',
     },
+    {
+      q: '¿Por qué tengo fascitis plantar solo en un pie?',
+      a: 'La fascitis plantar suele aparecer primero en un pie porque la carga rara vez se reparte igual entre las dos piernas. Una pierna dominante, una cojera antigua, un trabajo que favorece un lado, o un aumento repentino de actividad en una sola pierna, como empezar a correr, pueden sobrecargar una fascia más que la otra. Con el tiempo, los dos pies pueden verse afectados.',
+    },
+    {
+      q: '¿Por qué me dio fascitis plantar de repente?',
+      cites: [CITE.guideline],
+      a: 'La fascitis plantar repentina suele seguir a un cambio brusco de carga, no a una lesión súbita. Un aumento rápido en el kilometraje de carrera, zapatos nuevos, un trabajo nuevo que te mantiene de pie, o subir de peso pueden sobrecargar la fascia más rápido de lo que puede adaptarse. Estar de pie por tiempo prolongado en el trabajo es uno de los factores de riesgo reconocidos en la guía de 2023.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

@@ -191,6 +191,15 @@ export const CALF_RAISE_TEST_ES: Guide = {
       q: '¿El test de elevación de talón puede diagnosticar fascitis plantar o tendinitis de Aquiles?',
       a: 'No. Un resultado bajo te dice que la pantorrilla se cansa pronto, no por qué. La fascitis plantar, la tendinitis de Aquiles, estar fuera de forma y una lesión reciente pueden dar un número bajo. Los profesionales de la salud combinan el resultado con un examen físico y tu historia. El test mide la resistencia de la pantorrilla, no un problema concreto.',
     },
+    {
+      q: '¿Cuáles son las señales de una pantorrilla débil?',
+      cites: [CITE.silbernagelHeelRise],
+      a: 'Una pantorrilla débil suele notarse como cansancio rápido en escaleras, un impulso más débil al caminar o correr, o tambaleo en equilibrio a una pierna. La señal objetiva más clara es el test de elevación de talón a una pierna: una diferencia clara entre tu lado izquierdo y el derecho es más confiable que cómo se ve la pantorrilla, y en rehabilitación una diferencia de más del 10 por ciento suele ser señal de alerta.',
+    },
+    {
+      q: '¿Dónde debo sentir la elevación de talón?',
+      a: 'Debes sentir el trabajo en la pantorrilla, tanto en el gastrocnemio, el músculo más voluminoso de arriba, como en el sóleo, más abajo cerca del Aquiles, no en el hueso del talón, el arco ni la rodilla. Si en cambio sientes un dolor agudo en el talón o el Aquiles en lugar de cansancio de pantorrilla, necesitas ajustar la técnica o la carga antes de seguir contando repeticiones.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

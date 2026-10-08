@@ -148,6 +148,14 @@ export const SEVERS_ES: Guide = {
       q: '¿Walkito puede ayudar a mi hijo con enfermedad de Sever?',
       a: 'Walkito está diseñado para adultos con dolor de talón y de arco. Sus dosis de ejercicio, umbrales de dolor y reglas de progresión están pensados para cuerpos adultos, no para la placa de crecimiento abierta de un niño. Un especialista en medicina deportiva pediátrica o un podólogo es la fuente adecuada para el programa de ejercicios de un niño.',
     },
+    {
+      q: '¿Qué se puede confundir con la enfermedad de Sever?',
+      a: 'La irritación del tendón de Aquiles, una fractura por estrés del calcáneo y la bursitis retrocalcánea pueden verse parecidas en un niño que crece. Una prueba de apretar positiva (dolor al presionar los lados del talón), una edad entre 8 y 15 años, y un aumento reciente en el entrenamiento apuntan más a la enfermedad de Sever. Una lesión puntual o dolor que empeora en un punto específico necesita que un profesional descarte una fractura.',
+    },
+    {
+      q: '¿Cómo se coloca cinta kinesiológica para la enfermedad de Sever?',
+      a: 'No hay ningún ensayo que pruebe la cinta kinesiológica para la enfermedad de Sever, así que ningún patrón está comprobado como mejor que las taloneras o el manejo de la carga. Algunos profesionales la colocan a lo largo del Aquiles y bajo el talón para reducir la tracción sobre la placa de crecimiento. Si quieres probarlo, pide a un fisioterapeuta o entrenador deportivo que la aplique y te muestre el patrón.',
+    },
   ],
   redFlags: {
     h2: 'Consulta a un profesional de la salud si',

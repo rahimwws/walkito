@@ -177,6 +177,16 @@ export const HEEL_FAT_PAD_ES: Guide = {
       cites: [CITE.fatPadReview, CITE.yiFatPad],
       a: 'Un profesional de la salud puede sospecharlo a partir del patrón de dolor y un examen físico. La ecografía mide el grosor de la almohadilla, y una almohadilla de menos de 1\u00A0centímetro se considera generalmente atrofiada. La resonancia magnética puede mostrar daño interno. Los criterios de imagen no están estandarizados, y es en parte un diagnóstico de exclusión cuando el enfoque de fascitis plantar no ha funcionado.',
     },
+    {
+      q: '¿Cuánto tarda en mejorar el síndrome de la almohadilla grasa del talón?',
+      cites: [CITE.fatPadReview],
+      a: 'No hay un tiempo establecido, porque la atrofia de la almohadilla grasa es un adelgazamiento estructural que el ejercicio y el reposo no revierten. Una revisión exploratoria de 2022 no encontró ningún ensayo que diera seguimiento al tiempo de recuperación de esta condición. Las taloneras acolchadas, los zapatos de suela más gruesa y evitar caminar descalzo sobre piso duro pueden aliviar el dolor, pero el adelgazamiento en sí suele quedarse.',
+    },
+    {
+      q: '¿Cómo se venda el síndrome de la almohadilla grasa del talón?',
+      cites: [CITE.fatPadReview],
+      a: 'El vendaje low-dye jala el arco hacia arriba y redirige la presión lejos del talón, con tiras que cruzan la planta y suben por los lados del pie; normalmente un profesional o fisioterapeuta aplica la primera para mostrar el patrón. La revisión exploratoria de 2022 no encontró ningún ensayo que probara el vendaje específicamente para el síndrome de la almohadilla grasa, así que es una técnica prestada, no comprobada.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

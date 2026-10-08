@@ -274,6 +274,16 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
       cites: [CITE.guideline],
       a: 'Caminar en sí no es el problema. Caminar con zapatos de buen soporte a un ritmo cómodo por lo general está bien y es mejor que el descanso total. El dolor viene de la fascia plantar y la pantorrilla bajo el espolón, y caminar con moderación mantiene activa la bomba de la pantorrilla. Si caminar empeora tu dolor de la mañana al día siguiente, acorta la distancia y recupérala poco a poco.',
     },
+    {
+      q: '¿Qué ejercicios debo evitar si tengo un espolón calcáneo?',
+      cites: [CITE.guideline],
+      a: 'Evita movimientos de alto impacto como correr, saltar y la pliometría mientras el talón esté inflamado; el golpeteo repetido sobre una superficie dura tensiona el tejido junto al espolón. Los descensos profundos de talón desde la orilla de un escalón también pueden sobrecargar una fascia irritada. La guía de 2023 respalda ajustar la carga en lugar de prohibir ejercicios; la prueba es si el talón se siente peor a la mañana siguiente.',
+    },
+    {
+      q: '¿Qué dispara el dolor de un espolón calcáneo?',
+      cites: [CITE.guideline, CITE.riddle],
+      a: 'El golpeteo repetido sobre una superficie dura es el disparador más común: correr, saltar o estar de pie varias horas irrita el tejido blando junto al espolón igual que irrita la fascitis plantar normal. Un aumento repentino de actividad, zapatos gastados y caminar descalzo sobre baldosa también pueden provocarlo. Ajustar la carga, no el hueso, es lo que calma un brote.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

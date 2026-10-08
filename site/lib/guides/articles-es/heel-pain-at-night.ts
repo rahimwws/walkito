@@ -172,6 +172,15 @@ export const HEEL_PAIN_AT_NIGHT_ES: Guide = {
       cites: [CITE.tuHeelPain, CITE.patelStressFracture],
       a: 'Sí. El dolor nocturno de talón que te despierta, que no mejora con el movimiento, que incluye ardor u hormigueo, o que está en los dos talones con rigidez prolongada, debe ser evaluado por un profesional de la salud. Estos patrones pueden indicar una fractura por estrés, un nervio atrapado o una enfermedad inflamatoria que el ejercicio solo no va a resolver.',
     },
+    {
+      q: '¿Qué me puedo poner en el talón para el dolor por la noche?',
+      a: 'El hielo es el primer paso más común: una compresa fría o una botella de agua congelada aplicada en la zona dolorida puede aliviar la molestia superficial. Nada de esto trata una fractura por estrés, un nervio atrapado o una artritis inflamatoria, las condiciones más relacionadas con el dolor nocturno verdadero, así que una compresa fría no sustituye encontrar la causa.',
+    },
+    {
+      q: '¿Qué no se debe hacer si el talón duele por la noche?',
+      cites: [CITE.tuHeelPain, CITE.patelStressFracture],
+      a: 'No asumas que es fascitis plantar y sigas con la actividad si el dolor no encaja con el patrón de primer paso que después mejora. No ignores un dolor que te despierta, que empeora al seguir caminando, o que viene con ardor, hormigueo o hinchazón. Tratar por tu cuenta un dolor en reposo con estiramientos o férulas nocturnas puede retrasar el diagnóstico de una fractura por estrés, un nervio atrapado o una artritis inflamatoria.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

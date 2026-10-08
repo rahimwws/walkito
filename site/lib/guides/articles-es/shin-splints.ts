@@ -261,6 +261,16 @@ export const SHIN_SPLINTS_ES: Guide = {
       a: 'Ningún ejercicio concreto tiene evidencia de ensayos para prevenir la periostitis tibial. Los factores de riesgo de dos metaanálisis, como el IMC, la caída del arco y los años corriendo, apuntan a manejar la carga de entrenamiento poco a poco y a un acondicionamiento general de la pierna, no a un ejercicio en particular. Es una respuesta menos satisfactoria que el nombre de un ejercicio, pero es lo que respalda la investigación.',
       cites: [CITE.newman, CITE.hamstraWright],
     },
+    {
+      q: '¿Qué se confunde comúnmente con la periostitis tibial?',
+      a: 'Una fractura por estrés de la tibia, el síndrome compartimental crónico por esfuerzo y la tendinopatía del tibial posterior pueden causar dolor en la tibia y confundirse con periostitis tibial. Una fractura por estrés suele doler en un punto muy específico del hueso, mientras que el síndrome compartimental causa presión y entumecimiento que aumentan durante la carrera y se calman poco después de parar. Las dos necesitan un profesional de la salud, no más carga.',
+      cites: [CITE.mtssReview],
+    },
+    {
+      q: '¿Se puede caminar con periostitis tibial?',
+      a: 'Generalmente sí. Caminar es de menor impacto que correr, y muchas personas con síndrome de estrés tibial medial pueden seguir caminando sin que se dispare el dolor, siempre que se mantenga leve y se calme rápido después. Si caminar por sí solo reproduce un dolor agudo en un solo punto del hueso, detente y consúltalo, porque ese patrón se parece más a una fractura por estrés que a la periostitis tibial.',
+      cites: [CITE.mtssReview],
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

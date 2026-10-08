@@ -195,6 +195,16 @@ export const HAGLUNDS_ES: Guide = {
       cites: [CITE.yuenHaglund],
       a: 'La bursitis retrocalcánea es la inflamación del saco lleno de líquido (bursa) entre el tendón de Aquiles y el hueso del talón. La deformidad de Haglund la hace más probable porque el hueso prominente comprime la bursa durante el movimiento del tobillo. El dolor es profundo, en la parte de atrás del talón, y suele empeorar con los zapatos y la dorsiflexión.',
     },
+    {
+      q: '¿Qué pasa si no se trata la deformidad de Haglund?',
+      cites: [CITE.chooRearfoot, CITE.yuenHaglund],
+      a: 'Sin cambios, el bulto no se reduce y la fricción del zapato que lo causó suele seguir, así que el dolor y la bursitis retrocalcánea pueden seguir aumentando. La irritación prolongada también eleva el riesgo de tendinopatía insercional del Aquiles. El crecimiento óseo en sí no se revierte con cuidado conservador, aunque los síntomas suelen calmarse una vez que cambias el calzado y la carga.',
+    },
+    {
+      q: '¿Es malo caminar con deformidad de Haglund?',
+      cites: [CITE.chooRearfoot],
+      a: 'Caminar en sí no es dañino, y mantenerse activo suele estar bien. Lo que importa es el zapato: un contrafuerte rígido o bajo que roce el bulto puede empeorar el dolor y la bursitis con cada paso. Cambiar a zapatos con el talón suave o abierto suele servir más que descansar por completo.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

@@ -169,6 +169,15 @@ export const HUB_FLAT_FEET_ES: Guide = {
       q: '¿Puedo correr si tengo pie plano?',
       a: 'Muchos corredores tienen pie plano y corren sin problemas. Un arco bajo puede aumentar la pronación, y algunos corredores lo manejan con tenis de estabilidad. Si correr te causa dolor en el arco, el tobillo o la rodilla que no se calma entre carreras, un profesional de la salud puede revisar si el pie plano influye. Fortalecer los músculos del arco y de la cadera es un enfoque razonable, cambies de tenis o no.',
     },
+    {
+      q: '¿El pie plano se considera una discapacidad?',
+      a: 'Por lo general, no. La mayoría de los pies planos no causan dolor ni limitan la actividad, así que no cumplen por sí solos los criterios de discapacidad. Un pie plano severo o rígido que causa dolor constante y limita caminar o estar de pie puede, en algunos casos, respaldar un reclamo de discapacidad, pero eso depende del programa específico, como el Seguro Social, y de tu función general, no solo de tener pie plano.',
+    },
+    {
+      q: '¿Qué grupo étnico tiene más pie plano?',
+      cites: [CITE.salinasTorres],
+      a: 'El pie plano (pes planus) aparece con más frecuencia en algunos grupos, aunque la investigación es limitada. Una revisión sistemática de 2023 sobre estudios de población encontró que la raza asiática se asoció con más del doble de probabilidades de pie plano, y la raza blanca con aproximadamente la mitad de probabilidades, en comparaciones de subgrupos distintas. Son patrones de población, no una predicción sobre los pies de una persona en particular.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

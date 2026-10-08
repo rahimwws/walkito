@@ -199,6 +199,14 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
       cites: [CITE.patelStressFracture],
       a: 'El dolor de la fractura por estrés normalmente aumenta con la actividad, apareció después de un aumento repentino en el volumen de caminata o carrera, y no se alivia mucho con el descanso. Apretar los lados del talón puede reproducirlo. El dolor de la fascitis plantar suele calmarse cuando entras en calor y es peor en los primeros pasos después de descansar. Si el patrón encaja con una fractura, consulta a un profesional de la salud antes de hacer ejercicios.',
     },
+    {
+      q: '¿Cómo quitar el dolor de talón justo después de caminar?',
+      a: 'Justo después de caminar, descansa el pie, aplica hielo unos 15 minutos y evita salir de nuevo descalzo sobre piso duro. Eso alivia la molestia inmediata, pero no cambia la causa de fondo. Los ejercicios de esta página, estiramiento de pantorrilla y fascia más trabajo de fuerza progresivo, son lo que cambia cómo el talón aguanta la siguiente caminata.',
+    },
+    {
+      q: '¿Qué causa dolor de talón solo en un pie después de caminar?',
+      a: 'El dolor de talón después de caminar suele aparecer en un solo pie porque la carga durante una caminata rara vez se reparte igual entre las dos piernas. Un paso más largo de un lado, una lesión antigua, zapatos más gastados en un pie, o cargar una bolsa en un solo hombro pueden desviar tensión extra a un talón. Con el tiempo, los dos lados pueden volverse sintomáticos.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',

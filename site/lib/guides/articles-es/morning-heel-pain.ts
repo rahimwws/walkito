@@ -164,6 +164,16 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
       cites: [CITE.latt, CITE.hansen],
       a: 'Una revisión de 2020 indica que cerca del 90\u00A0% de las personas con fascitis plantar mejora con cuidados sin cirugía, a menudo en varios meses (Latt y colegas, 2020). En un seguimiento más largo de 174\u00A0pacientes, cerca de la mitad seguía con síntomas a los 5\u00A0años, aunque para entonces la mayoría tenía solo un dolor leve (Hansen y colegas, 2018). Ningún programa de ejercicios puede prometer un plazo. En [¿cuánto dura la fascitis plantar?](/es/cuanto-dura-la-fascitis-plantar/) está la evidencia con más detalle.',
     },
+    {
+      q: '¿Qué debo evitar si me duele el talón por la mañana?',
+      cites: [CITE.guideline],
+      a: 'Evita caminar descalzo sobre un piso duro justo al despertar, y evita saltarte el estiramiento antes de pararte. La fascia está más rígida en ese momento, así que pisar baldosa o madera sin ningún tipo de amortiguación es un disparador común del dolor agudo del primer paso. Ponte zapatos con soporte o pantuflas firmes antes de salir del cuarto, y estira mientras todavía estás sentado en la cama.',
+    },
+    {
+      q: '¿Cuáles son algunos remedios caseros para el dolor de talón por la mañana?',
+      cites: [CITE.guideline],
+      a: 'Los remedios caseros para el dolor de talón por la mañana son estirar, aplicar hielo y usar calzado con soporte, hechos todos los días y no una sola vez. Estira la fascia y la pantorrilla antes de pararte, y después ponte zapatos con soporte antes de caminar sobre piso duro. Rodar la planta sobre una botella de agua congelada alivia la rigidez, aunque no sustituye consultar a un profesional si el dolor no mejora.',
+    },
   ],
   redFlags: {
     h2: 'Consulta primero a un profesional de la salud si',
