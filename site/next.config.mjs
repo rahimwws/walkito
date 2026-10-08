@@ -14,11 +14,11 @@ const nextConfig = {
   // Three root layouts — `(en)`, `ru`, `es` — so each language can set its own
   // `<html lang>`. With no single root there is nowhere for the ordinary
   // not-found page to live, and this is the switch for `app/global-not-found`.
-  //
-  // inlineCss: the stylesheets go into each page's <head> as <style> instead
-  // of five <link>s, so a phone can paint the hero without waiting for extra
-  // round trips (Lighthouse measured them as about 0.6 s of render blocking).
-  experimental: { globalNotFound: true, inlineCss: true },
+  // inlineCss was tried (PR #13) and taken out: on the live server the page
+  // carried every rule twice (a <style> plus the RSC payload), and PageSpeed
+  // on walkito.site dropped (guide 94 -> 78) even though a Cloudflare-fronted
+  // copy scored higher. Stylesheet links it is.
+  experimental: { globalNotFound: true },
 };
 
 export default nextConfig;
