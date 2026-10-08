@@ -1,36 +1,46 @@
 import { Fragment } from 'react';
 
+import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
+import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
+import FootprintsIcon from '@hugeicons/core-free-icons/FootprintsIcon';
+import Moon02Icon from '@hugeicons/core-free-icons/Moon02Icon';
+import WorkoutRunIcon from '@hugeicons/core-free-icons/WorkoutRunIcon';
+import Yoga01Icon from '@hugeicons/core-free-icons/Yoga01Icon';
+import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr/ArrowRight';
+
 import { AppleGlyph } from '@/components/AppStoreBadge';
 import { Footer } from '@/components/Footer';
 import { GetAppButton } from '@/components/GetApp';
 import { HomeFeatures } from '@/components/HomeFeatures';
+import {
+  ArchResult,
+  HeroToday,
+  PainCard,
+  PainPair,
+  StreakCapsule,
+  StrengthCard,
+  TodayMinutes,
+  TodayTasks,
+  storyChips,
+} from '@/components/home/app-pieces';
 import { Cta } from '@/components/home/Cta';
 import { Faq } from '@/components/home/Faq';
 import { Guides } from '@/components/home/Guides';
 import { Reviews } from '@/components/home/Reviews';
+import { Icon } from '@/components/Icon';
 import { InView } from '@/components/InView';
+import { Kicker } from '@/components/Kicker';
 import { ScrollProgress } from '@/components/ScrollProgress';
 import { ScrollState } from '@/components/ScrollState';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
-import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr/ArrowRight';
-import { CalendarDotsIcon } from '@phosphor-icons/react/dist/ssr/CalendarDots';
-import { ChartLineUpIcon } from '@phosphor-icons/react/dist/ssr/ChartLineUp';
-import { CheckIcon } from '@phosphor-icons/react/dist/ssr/Check';
-import { ClockIcon } from '@phosphor-icons/react/dist/ssr/Clock';
-import { FireIcon } from '@phosphor-icons/react/dist/ssr/Fire';
-import { FootprintsIcon } from '@phosphor-icons/react/dist/ssr/Footprints';
-import { PlayIcon } from '@phosphor-icons/react/dist/ssr/Play';
-import { SneakerIcon } from '@phosphor-icons/react/dist/ssr/Sneaker';
-import { SunHorizonIcon } from '@phosphor-icons/react/dist/ssr/SunHorizon';
-import { TimerIcon } from '@phosphor-icons/react/dist/ssr/Timer';
 import { HOME_DE } from '@/lib/home/de';
 import { HOME_FR } from '@/lib/home/fr';
 import { HOME_IT } from '@/lib/home/it';
 import { HOME_PT } from '@/lib/home/pt';
 
 import { Prose } from '@/components/Prose';
-import { CHROME, TRANSLATED, type Lang } from '@/lib/i18n';
+import { CHROME, TRANSLATED, customHref, isFullLang, type Lang } from '@/lib/i18n';
 import { APP_STORE_NAME, APP_STORE_URL, PAIN_GOAL_MAX, PROGRAM, playHref, SITE_NAME, SITE_URL, storeHref } from '@/lib/site';
 
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
@@ -65,7 +75,7 @@ const APP = {
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   description:
     'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
-  availableLanguage: ['en', 'ru', 'es'],
+  availableLanguage: ['en', 'ru', 'es', 'pt', 'fr', 'it', 'de'],
   featureList: [
     `Sessions of ${MIN_A}, ${MIN_B} or ${MIN_C} minutes, on ${DAYS_A}, ${DAYS_B} or ${DAYS_C} days a week`,
     'Each week built around one measurable focus goal; a goal reached moves to maintaining and the next takes its place',
@@ -91,23 +101,15 @@ export type HomeCopy = {
   h1b: string;
   lead: string;
   small: string;
-  /**
-   * The glass cards around the hero phone, each one a piece of the app's own
-   * UI. Worded as the app words them (`home.noPain`, `dock.startWorkout`,
-   * `progress.calfChange`), so the page and the product say the same thing.
+  /*
+   * No words for the pieces of the app drawn around the hero phone, in the
+   * "Is this for me?" pictures or in the story's chips: those are the app's
+   * own, copied per language from its catalogue into
+   * `components/home/app-pieces.tsx`.
    */
-  cards: { noPain: string; today: string; start: string; calf: string; streak: string };
   alt: {
-    heroLeft: string;
+    /** The phone in the hero, the one screenshot left on the page. */
     heroCenter: string;
-    heroRight: string;
-    checkin: string;
-    where: string;
-    goal: string;
-    week: string;
-    exercise: string;
-    quick: string;
-    tests: string;
   };
   storyH2: string;
   storyP: string;
@@ -123,32 +125,15 @@ export type HomeCopy = {
   /** The tilted chip above the heading, and the line under it. */
   whoKicker: string;
   whoLead: string;
-  /** Words inside the cards' pictures, worded as the app words them. */
-  whoVisual: {
-    hurts: string;
-    noPain: string;
-    arch: string;
-    sec: string;
-    tasks: string;
-    calf: string;
-    shortFoot: string;
-    hold: string;
-    min: string;
-  };
-  who: { heel: Card; flat: Card; allday: Card; run: Card };
+  who:{ heel: Card; flat: Card; allday: Card; run: Card };
   /** The link on a card whose page is in this language, and on one that is English only. */
   whoMore: string;
   whoMoreEn: string;
-  adjustH2: string;
-  adjustP: string;
-  answersH2: string;
-  answersP: string;
+  /** Section 05's three cards: the plan, the tests, the evidence. A link says
+   * it opens an English page only in a language that page has no version in. */
   how: { title: string; text: string; link: string }[];
-  insideH2: string;
-  inside: { week: string; video: string; quick: string; tests: string };
-  faqH2: string;
+  /** Section 06; its heading and frame are `components/home/Faq.tsx`'s. */
   faq: { q: string; a: string }[];
-  finalH2: string;
 };
 
 const COPY: Record<Lang, HomeCopy> = {
@@ -166,24 +151,8 @@ const COPY: Record<Lang, HomeCopy> = {
     h1b: 'Try a plan built for your feet.',
     lead: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
     small: `${MIN_A}, ${MIN_B} or ${MIN_C} minutes a day, at home.`,
-    cards: {
-      noPain: 'No pain today',
-      today: `Today, ${MIN_B} min`,
-      start: 'Start session',
-      calf: 'Calf raises',
-      streak: '35 days in a row',
-    },
     alt: {
-      heroLeft: "Walkito after a bad morning is logged: today's session gets lighter",
       heroCenter: "Walkito's Today screen: a greeting, the morning check-in and today's session",
-      heroRight: 'Walkito playing an exercise video with its cue',
-      checkin: 'Walkito: after a sore morning, today is three minutes of seated exercises',
-      where: 'Walkito: where does it usually hurt, with the heel and arch marked on a leg',
-      goal: 'Walkito: choosing a goal, with stay on my feet all day selected',
-      week: 'Walkito: this week’s plan, Monday to Sunday with rest days, and next week',
-      exercise: 'Walkito: a plantar stretch playing as a video with a timer',
-      quick: 'Walkito: quick routines for when it hurts, before and after a run, at work, and before your first step',
-      tests: 'Walkito: test results, arch hold up 11 seconds and calf raises up 4, with the left leg at 19 and the right at 22',
     },
     storyH2: 'It’s not your fault.',
     storyP:
@@ -193,17 +162,6 @@ const COPY: Record<Lang, HomeCopy> = {
     whoH2: 'Is this for me?',
     whoKicker: 'For you',
     whoLead: 'Pick the one that sounds like you. The plan starts there and changes with how your feet feel each day.',
-    whoVisual: {
-      hurts: 'It hurts today',
-      noPain: 'No pain today',
-      arch: 'Stronger arch',
-      sec: 's',
-      tasks: 'Today’s Tasks',
-      calf: 'Calf raises',
-      shortFoot: 'Short foot',
-      hold: 'Single-leg hold',
-      min: 'min',
-    },
     who: {
       heel: {
         title: 'Heel pain and plantar fasciitis',
@@ -228,12 +186,6 @@ const COPY: Record<Lang, HomeCopy> = {
     },
     whoMore: 'Read the guide',
     whoMoreEn: 'Read the guide',
-    adjustH2: 'It adjusts to your morning.',
-    adjustP:
-      'Every morning you log how your feet feel in one tap. On a bad morning, today’s session gets shorter and easier. After a long day on your feet, the loaded work comes out. It never speeds up on a good day.',
-    answersH2: 'A plan built from your answers.',
-    answersP:
-      'Tell Walkito where it hurts, which side, what you do and what you want to get back to. It builds your plan from that, one week at a time, not one routine for everyone.',
     how: [
       {
         title: 'A week at a time, around one goal',
@@ -251,14 +203,6 @@ const COPY: Record<Lang, HomeCopy> = {
         link: 'Read the evidence',
       },
     ],
-    insideH2: 'Inside the app',
-    inside: {
-      week: 'Your week, rest days included',
-      video: 'A video for every exercise',
-      quick: 'Quick routines for any moment',
-      tests: 'Your retests, left vs right',
-    },
-    faqH2: 'Questions',
     faq: [
       {
         q: 'How long until I feel a difference?',
@@ -279,9 +223,8 @@ const COPY: Record<Lang, HomeCopy> = {
         q: 'Is it medical advice?',
         a: 'No. Walkito is an exercise program. It doesn’t diagnose, and it isn’t a substitute for a clinician.',
       },
-      { q: 'What languages is it in?', a: 'English, Russian and Spanish.' },
+      { q: 'What languages is it in?', a: 'English, Russian, Spanish, Portuguese, French, Italian and German.' },
     ],
-    finalH2: 'Your feet, your plan.',
   },
 
   ru: {
@@ -294,25 +237,8 @@ const COPY: Record<Lang, HomeCopy> = {
     h1b: 'Попробуйте план, созданный для ваших стоп.',
     lead: 'Walkito составляет персональный план упражнений при боли в пятке, стопе и голени и каждый день подстраивает его под состояние ваших стоп.',
     small: `${MIN_A}, ${MIN_B} или ${MIN_C} минут в день, дома.`,
-    // «минут» agrees with MIN_B = 5; reread it if that changes.
-    cards: {
-      noPain: 'Сегодня не болит',
-      today: `Сегодня ${MIN_B} минут`,
-      start: 'Начать занятие',
-      calf: 'Подъёмы на носок',
-      streak: '35 дней подряд',
-    },
     alt: {
-      heroLeft: 'Walkito после отметки о плохом утре: сегодняшнее занятие становится легче',
       heroCenter: 'Главный экран Walkito: приветствие, утренняя отметка и сегодняшнее занятие',
-      heroRight: 'Walkito показывает видео упражнения с подсказкой',
-      checkin: 'Walkito: после болезненного утра сегодня три минуты упражнений сидя',
-      where: 'Walkito: где обычно болит, на ноге отмечены пятка и свод',
-      goal: 'Walkito: выбор цели, выбрано «Весь день на ногах без усталости»',
-      week: 'Walkito: план на эту неделю, с понедельника по воскресенье с днями отдыха, и следующая неделя',
-      exercise: 'Walkito: видео растяжки фасции с таймером',
-      quick: 'Walkito: комплексы «Быстро»: «Болит прямо сейчас», «Перед пробежкой», «После пробежки», «На работе» и «Утро до первого шага»',
-      tests: 'Walkito: результаты тестов, удержание свода выросло на 11 секунд, подъёмы на носок на 4, левая нога 19, правая 22',
     },
     storyH2: 'Вы ни в чём не виноваты.',
     storyP:
@@ -322,17 +248,6 @@ const COPY: Record<Lang, HomeCopy> = {
     whoH2: 'Это для меня?',
     whoKicker: 'Для вас',
     whoLead: 'Выберите то, что похоже на вас. План начинается отсюда и меняется вместе с тем, как чувствуют себя ваши стопы.',
-    whoVisual: {
-      hurts: 'Сегодня болит',
-      noPain: 'Сегодня не болит',
-      arch: 'Сильный свод',
-      sec: 'с',
-      tasks: 'Задачи на сегодня',
-      calf: 'Подъёмы на носки',
-      shortFoot: 'Короткая стопа',
-      hold: 'Стойка на одной ноге',
-      min: 'мин',
-    },
     who: {
       heel: {
         title: 'Боль в пятке и плантарный фасциит',
@@ -357,37 +272,23 @@ const COPY: Record<Lang, HomeCopy> = {
     },
     whoMore: 'Читать гайд',
     whoMoreEn: 'Читать (на английском)',
-    adjustH2: 'План подстраивается под ваше утро.',
-    adjustP:
-      'Каждое утро вы одним касанием отмечаете, как чувствуют себя стопы. Если утро плохое, сегодняшнее занятие становится короче и легче. После долгого дня на ногах упражнения с нагрузкой убираются. В хороший день план не ускоряется.',
-    answersH2: 'План по вашим ответам.',
-    answersP:
-      'Расскажите Walkito, где болит, с какой стороны, чем вы занимаетесь и к чему хотите вернуться. По этим ответам он составляет ваш план, по одной неделе за раз, а не один комплекс для всех.',
     how: [
       {
         title: 'По неделе за раз, вокруг одной цели',
         text: `В центре каждой недели цель, которую можно измерить: утренняя боль в пятке не выше ${PAIN_GOAL_MAX} из 10 в течение ${painFreeDays} дней подряд, удержание свода ${archHoldSeconds} секунд, ${calfRaises} подъёмов на носок на одной ноге, ${balanceSeconds} секунд баланса на одной ноге или разница между левой и правой стороной не больше ${gapPercent} %. Когда цель достигнута, она переходит в поддержание, а её место занимает следующая.`,
-        link: 'Как устроен план (на английском)',
+        link: 'Как устроен план',
       },
       {
         title: `Тест каждые ${testEveryDays} дней, затем каждые ${testEveryDaysAfterGoal}`,
         text: `${retestTests} физических теста примерно за ${retestMinutes} минуты: подъёмы на носок до отказа, удержание свода и баланс на одной ноге с обеих сторон. Каждые ${testEveryDays} дней, пока не достигнута первая цель, затем каждые ${testEveryDaysAfterGoal}. Прогресс измеряется, а не угадывается по ощущениям от недели.`,
-        link: 'Что измеряют тесты (на английском)',
+        link: 'Что измеряют тесты',
       },
       {
         title: 'Подобрано по опубликованным исследованиям',
         text: 'Упражнения подобраны по опубликованным исследованиям и клиническим рекомендациям. Сам Walkito в клинических испытаниях не проверялся.',
-        link: 'Исследования (на английском)',
+        link: 'Исследования',
       },
     ],
-    insideH2: 'Внутри приложения',
-    inside: {
-      week: 'Ваша неделя с днями отдыха',
-      video: 'Видео к каждому упражнению',
-      quick: 'Короткие комплексы на любой случай',
-      tests: 'Ваши тесты: левая и правая сторона',
-    },
-    faqH2: 'Вопросы',
     faq: [
       {
         q: 'Когда я почувствую разницу?',
@@ -405,9 +306,8 @@ const COPY: Record<Lang, HomeCopy> = {
         q: 'Это медицинская консультация?',
         a: 'Нет. Walkito даёт программу упражнений. Он не ставит диагноз и не заменяет врача.',
       },
-      { q: 'На каких языках приложение?', a: 'На английском, русском и испанском.' },
+      { q: 'На каких языках приложение?', a: 'Английский, русский, испанский, португальский, французский, итальянский и немецкий.' },
     ],
-    finalH2: 'Ваши стопы, ваш план.',
   },
 
   es: {
@@ -420,24 +320,8 @@ const COPY: Record<Lang, HomeCopy> = {
     h1b: 'Prueba un plan hecho para tus pies.',
     lead: 'Walkito es un plan de ejercicios personalizado para el dolor de talón, pie y pierna que se ajusta cada día a cómo se sienten tus pies.',
     small: `${MIN_A}, ${MIN_B} o ${MIN_C} minutos al día, en casa.`,
-    cards: {
-      noPain: 'Hoy no me duele',
-      today: `Hoy, ${MIN_B} min`,
-      start: 'Empezar sesión',
-      calf: 'Elevaciones de talón',
-      streak: 'Racha de 35 días',
-    },
     alt: {
-      heroLeft: 'Walkito después de registrar una mala mañana: la sesión de hoy es más suave',
       heroCenter: 'La pantalla de hoy en Walkito: un saludo, el registro de la mañana y la sesión de hoy',
-      heroRight: 'Walkito reproduce el video de un ejercicio con su indicación',
-      checkin: 'Walkito: tras una mañana con dolor, hoy son tres minutos de ejercicios sentado',
-      where: 'Walkito: dónde te suele doler, con el talón y el arco marcados en una pierna',
-      goal: 'Walkito: elegir una meta, con «Aguantar de pie todo el día» seleccionado',
-      week: 'Walkito: el plan de esta semana, de lunes a domingo con días de descanso, y la semana siguiente',
-      exercise: 'Walkito: un estiramiento plantar en video con temporizador',
-      quick: 'Walkito: rutinas rápidas «Me duele ahora», «Antes de correr», «Después de correr», «En el trabajo» y «Antes del primer paso»',
-      tests: 'Walkito: resultados de las pruebas, el arco aguanta 11 segundos más y las elevaciones de talón suben 4, con 19 en la pierna izquierda y 22 en la derecha',
     },
     storyH2: 'No es tu culpa.',
     storyP:
@@ -447,17 +331,6 @@ const COPY: Record<Lang, HomeCopy> = {
     whoH2: '¿Esto es para mí?',
     whoKicker: 'Para ti',
     whoLead: 'Elige lo que se parece a ti. El plan empieza ahí y cambia según cómo se sienten tus pies cada día.',
-    whoVisual: {
-      hurts: 'Hoy me duele',
-      noPain: 'Hoy no me duele',
-      arch: 'Arco más fuerte',
-      sec: 's',
-      tasks: 'Tareas de hoy',
-      calf: 'Elevación de talones',
-      shortFoot: 'Pie corto',
-      hold: 'Equilibrio a una pierna',
-      min: 'min',
-    },
     who: {
       heel: {
         title: 'Dolor de talón y fascitis plantar',
@@ -482,37 +355,23 @@ const COPY: Record<Lang, HomeCopy> = {
     },
     whoMore: 'Leer la guía',
     whoMoreEn: 'Leer (en inglés)',
-    adjustH2: 'Se adapta a tu mañana.',
-    adjustP:
-      'Cada mañana registras con un toque cómo se sienten tus pies. Si la mañana es mala, la sesión de hoy es más corta y más fácil. Después de un día largo de pie, se quitan los ejercicios con carga. En un buen día, nunca acelera.',
-    answersH2: 'Un plan hecho con tus respuestas.',
-    answersP:
-      'Dile a Walkito dónde te duele, de qué lado, a qué te dedicas y a qué quieres volver. Con eso arma tu plan, una semana a la vez, no una rutina igual para todos.',
     how: [
       {
         title: 'Una semana a la vez, en torno a una meta',
         text: `Cada semana gira en torno a una meta que se puede medir: dolor de talón por la mañana de ${PAIN_GOAL_MAX}/10 o menos durante ${painFreeDays} días seguidos, mantener el arco ${archHoldSeconds} segundos, ${calfRaises} elevaciones de talón a una pierna, ${balanceSeconds} segundos de equilibrio a una pierna, o menos de un ${gapPercent} % de diferencia entre el lado izquierdo y el derecho. Cuando alcanzas una, pasa a mantenimiento y la siguiente ocupa su lugar.`,
-        link: 'Cómo funciona el plan (en inglés)',
+        link: 'Cómo funciona el plan',
       },
       {
         title: `Una prueba cada ${testEveryDays} días, luego cada ${testEveryDaysAfterGoal}`,
         text: `${retestTests} pruebas físicas en unos ${retestMinutes} minutos: elevaciones de talón hasta el fallo, mantener el arco y equilibrio a una pierna de ambos lados. Cada ${testEveryDays} días hasta que alcances tu primera meta, luego cada ${testEveryDaysAfterGoal}. El progreso se mide, no se adivina por cómo se sintió la semana.`,
-        link: 'Qué miden las pruebas (en inglés)',
+        link: 'Qué miden las pruebas',
       },
       {
         title: 'Elegido a partir de investigación publicada',
         text: 'Ejercicios elegidos a partir de investigación y guías publicadas. Walkito en sí no se ha probado en un ensayo.',
-        link: 'Ver la evidencia (en inglés)',
+        link: 'Ver la evidencia',
       },
     ],
-    insideH2: 'Dentro de la app',
-    inside: {
-      week: 'Tu semana, con días de descanso',
-      video: 'Un video para cada ejercicio',
-      quick: 'Rutinas rápidas para cualquier momento',
-      tests: 'Tus pruebas: izquierda vs. derecha',
-    },
-    faqH2: 'Preguntas',
     faq: [
       {
         q: '¿En cuánto tiempo voy a notar la diferencia?',
@@ -530,28 +389,10 @@ const COPY: Record<Lang, HomeCopy> = {
         q: '¿Es un consejo médico?',
         a: 'No. Walkito es un programa de ejercicios. No diagnostica y no sustituye a un profesional de la salud.',
       },
-      { q: '¿En qué idiomas está?', a: 'En inglés, ruso y español.' },
+      { q: '¿En qué idiomas está?', a: 'En inglés, ruso, español, portugués, francés, italiano y alemán.' },
     ],
-    finalH2: 'Tus pies, tu plan.',
   },
 };
-
-/**
- * A card heading with its last two words in one span, kept together from 375px
- * up (`.tail` in globals.css). Balance otherwise breaks «На основе
- * опубликованных / исследований» with the last word alone, although
- * «опубликованных исследований» fits the card; below 375px it does not fit, so
- * there the span wraps like any text.
- */
-function keepTail(title: string) {
-  const words = title.split(' ');
-  if (words.length < 3) return title;
-  return (
-    <>
-      {words.slice(0, -2).join(' ')} <span className="tail">{words.slice(-2).join(' ')}</span>
-    </>
-  );
-}
 
 /** Title and description for each language's home page metadata. */
 export const HOME_META: Record<Lang, HomeCopy['meta']> = {
@@ -563,13 +404,6 @@ export const HOME_META: Record<Lang, HomeCopy['meta']> = {
   it: COPY.it.meta,
   de: COPY.de.meta,
 };
-
-/**
- * Screenshots taken with the app in each language. Russian and Spanish live in
- * `public/app/<lang>/` under the English file names; a language missing from
- * this set shows the English screens.
- */
-const LOCALIZED_SHOTS: ReadonlySet<Lang> = new Set<Lang>(['ru', 'es']);
 
 /**
  * The home page, in each of the site's languages: one layout, one copy object
@@ -584,77 +418,20 @@ export function Home({ lang }: { lang: Lang }) {
   const copy = COPY[lang];
   const c = CHROME[lang];
   const suffix = lang === 'en' ? '' : `-${lang}`;
-  const shot = (name: string) =>
-    LOCALIZED_SHOTS.has(lang) ? `/app/${lang}/${name}.webp` : `/app/${name}.webp`;
   const app = lang === 'en' ? APP : { ...APP, description: copy.meta.description, featureList: undefined };
 
-  const v = copy.whoVisual;
-
   /**
-   * The picture in each card, a piece of the app that card's person would
-   * meet first: the morning check-in, the arch-hold goal, today's minutes, and
-   * the day's tasks ticking off.
+   * The picture in each card: the piece of the app that card's person meets
+   * first, drawn from the app's own components (`components/home/app-pieces`).
+   * Heel pain, the morning check-in; flat feet, the arch hold on the test
+   * results; on your feet all day, today's card with its three lengths; runners,
+   * Today's list ticking off.
    */
   const visuals = {
-    heel: (
-      <span className="wv-checkin">
-        <span className="wv-check wv-check-back">
-          <img src="/hero/mascot-pain.webp" alt="" width={240} height={240} />
-          {v.hurts}
-        </span>
-        <span className="wv-check wv-check-front">
-          <img src="/hero/mascot-nopain.webp" alt="" width={240} height={240} />
-          {v.noPain}
-        </span>
-      </span>
-    ),
-    flat: (
-      <span className="wv-ring">
-        <svg viewBox="0 0 120 120">
-          <circle className="wv-ring-track" cx="60" cy="60" r="52" />
-          <circle className="wv-ring-fill" cx="60" cy="60" r="52" pathLength={100} />
-        </svg>
-        <span className="wv-ring-num">
-          <span className="wv-count" style={{ '--to': archHoldSeconds } as React.CSSProperties} />
-          {v.sec}
-        </span>
-        <span className="wv-ring-label">{v.arch}</span>
-      </span>
-    ),
-    allday: (
-      <span className="wv-minutes">
-        <span className="wv-big">
-          {MIN_B}
-          <small>{v.min}</small>
-        </span>
-        <span className="wv-chip">
-          <ClockIcon size={16} weight="fill" aria-hidden />
-          {MIN_A} · {MIN_B} · {MIN_C} {v.min}
-        </span>
-        <img className="wv-walker" src="/hero/mascot-tasks.webp" alt="" width={240} height={240} />
-      </span>
-    ),
-    run: (
-      <span className="wv-tasks">
-        <span className="wv-tasks-head">
-          <FireIcon size={16} weight="fill" aria-hidden />
-          {v.tasks}
-        </span>
-        {[
-          [v.calf, '3 × 12'],
-          [v.shortFoot, '3 × 10'],
-          [v.hold, '3 × 30s'],
-        ].map(([name, dose], k) => (
-          <span key={name} className="wv-row" style={{ '--k': k } as React.CSSProperties}>
-            <span className="wv-tick">
-              <CheckIcon size={14} weight="bold" aria-hidden />
-            </span>
-            <span className="wv-row-name">{name}</span>
-            <span className="wv-row-dose">{dose}</span>
-          </span>
-        ))}
-      </span>
-    ),
+    heel: <PainPair lang={lang} />,
+    flat: <ArchResult lang={lang} />,
+    allday: <TodayMinutes lang={lang} chosen={MIN_B} />,
+    run: <TodayTasks lang={lang} />,
   };
 
   /** The story paragraph as words, and which word each chip follows. */
@@ -677,28 +454,22 @@ export function Home({ lang }: { lang: Lang }) {
       if (text === copy.storyAccent) for (let k = i; k <= j; k++) accent.add(k);
     }
   }
-  const storyChips = [
-    <img key="pain" src="/hero/mascot-pain.webp" alt="" width={240} height={240} />,
-    <>{v.hurts}</>,
-    <>
-      <FireIcon size={22} weight="fill" aria-hidden />
-      {v.tasks}
-    </>,
-    <>
-      <img src="/hero/mascot-nopain.webp" alt="" width={240} height={240} />
-      {v.noPain}
-    </>,
-  ];
+  const chips = storyChips(lang);
 
-  /** English-only targets carry `hrefLang="en"` so the switch of language is announced. */
+  /**
+   * The program, evidence and runners pages (`CUSTOM_PAGES`) are in the full
+   * languages only. Elsewhere their links open the English page, so they carry
+   * `hrefLang="en"`, which announces the switch, and a label that says so.
+   */
+  const customInEnglish = !isFullLang(lang);
+
   const forWho = [
     { card: copy.who.heel, href: TRANSLATED.heelPain[lang], accent: 'teal', en: false, visual: visuals.heel },
     { card: copy.who.flat, href: TRANSLATED.flatFeet[lang], accent: 'violet', en: false, visual: visuals.flat },
     // No page of its own yet; the program page is the closest honest answer.
-    { card: copy.who.allday, href: '/program/', accent: 'amber', en: true, visual: visuals.allday },
-    { card: copy.who.run, href: '/heel-pain-runners/', accent: 'blue', en: true, visual: visuals.run },
+    { card: copy.who.allday, href: customHref('program', lang), accent: 'amber', en: customInEnglish, visual: visuals.allday },
+    { card: copy.who.run, href: customHref('runners', lang), accent: 'blue', en: customInEnglish, visual: visuals.run },
   ] as const;
-  const englishOnly = lang !== 'en';
 
   /**
    * The cards under the plan section. The goal card is Rahym's, from the home
@@ -706,8 +477,7 @@ export function Home({ lang }: { lang: Lang }) {
    * The evidence card states only what the evidence page says, after the claims
    * there were re-checked against the papers.
    */
-  const howHrefs = ['/program/', '/program/', '/science/'];
-
+  const howHrefs = [customHref('program', lang), customHref('program', lang), customHref('science', lang)];
 
   return (
     <>
@@ -726,7 +496,7 @@ export function Home({ lang }: { lang: Lang }) {
         </div>
 
 
-        <section className="shell hero hero-glass">
+        <InView className="shell hero hero-glass">
           <div className="hero-device">
             <div className="hero-arch" aria-hidden />
 
@@ -751,36 +521,24 @@ export function Home({ lang }: { lang: Lang }) {
               </span>
             </div>
 
-            <div className="glass-card card-nopain" aria-hidden>
-              <img src="/hero/mascot-nopain.webp" alt="" width={240} height={240} />
-              <span>{copy.cards.noPain}</span>
+            {/* Pieces of the app's own screens, around the phone: the morning
+                check-in card, the streak capsule from Home's header, a row of
+                Today's list over the dock, and the tests card from Progress.
+                They drift only while the hero is on screen. */}
+            <div className="hero-piece card-nopain" aria-hidden>
+              <PainCard lang={lang} kind="nopain" />
             </div>
 
-            <div className="glass-card card-streak" aria-hidden>
-              <span className="card-fire">
-                <FireIcon size={20} weight="fill" aria-hidden />
-              </span>
-              <span>{copy.cards.streak}</span>
+            <div className="hero-piece card-streak" aria-hidden>
+              <StreakCapsule />
             </div>
 
-            <div className="glass-card card-today" aria-hidden>
-              <span className="card-today-text">{copy.cards.today}</span>
-              <span className="card-start">
-                <PlayIcon size={14} weight="fill" aria-hidden />
-                {copy.cards.start}
-              </span>
+            <div className="hero-piece card-today" aria-hidden>
+              <HeroToday lang={lang} />
             </div>
 
-            <div className="glass-card card-calf" aria-hidden>
-              <span className="card-label">{copy.cards.calf}</span>
-              <span className="card-figure">
-                12 <span className="card-arrow">→</span> 18
-              </span>
-              <span className="card-bars">
-                {[34, 46, 52, 64, 78, 100].map((h) => (
-                  <span key={h} style={{ height: `${h}%` }} />
-                ))}
-              </span>
+            <div className="hero-piece card-calf" aria-hidden>
+              <StrengthCard lang={lang} />
             </div>
           </div>
 
@@ -802,7 +560,7 @@ export function Home({ lang }: { lang: Lang }) {
             </GetAppButton>
             <p className="hero-small">{copy.small}</p>
           </div>
-        </section>
+        </InView>
       </div>
 
       <Prose className="home">
@@ -810,10 +568,7 @@ export function Home({ lang }: { lang: Lang }) {
             app in it. Loops run only while the section is on screen. */}
         <InView className="who-sheet">
           <div className="who-inner">
-          <span className="who-kicker" aria-hidden>
-            <span className="kick-num">01</span>
-            <span className="kick-label">{copy.whoKicker}</span>
-          </span>
+          <Kicker num="01" label={copy.whoKicker} />
           {/* Each word rises out of its own line box, one after another. */}
           <h2 aria-label={copy.whoH2}>
             {copy.whoH2.split(' ').map((word, w) => (
@@ -829,7 +584,7 @@ export function Home({ lang }: { lang: Lang }) {
               <a
                 key={href}
                 href={href}
-                hrefLang={en && englishOnly ? 'en' : undefined}
+                hrefLang={en ? 'en' : undefined}
                 className={`who-tile who-${accent}`}
                 style={{ '--i': i } as React.CSSProperties}
               >
@@ -858,20 +613,18 @@ export function Home({ lang }: { lang: Lang }) {
             drift up behind. */}
         <ScrollProgress className="story-flow">
           <div className="flow-stage">
+            {/* The app's own glyphs, stroked as it strokes them: the arch
+                test's footprints, the minute chip's clock, and the four kinds
+                of work on Today's list and the dock's runner. */}
             <div className="flow-float" aria-hidden>
-              {[FootprintsIcon, TimerIcon, ChartLineUpIcon, SunHorizonIcon, SneakerIcon, CalendarDotsIcon].map(
-                (Glyph, k) => (
-                  <span key={k} className={`ftile ftile-${k}`}>
-                    <Glyph size={30} weight="fill" />
-                  </span>
-                ),
-              )}
+              {[FootprintsIcon, Clock01Icon, Dumbbell01Icon, Yoga01Icon, WorkoutRunIcon, Moon02Icon].map((glyph, k) => (
+                <span key={k} className={`ftile ftile-${k}`}>
+                  <Icon icon={glyph} size={30} strokeWidth={2} />
+                </span>
+              ))}
             </div>
             <div className="flow-inner">
-              <h2 className="who-kicker flow-kicker">
-                <span className="kick-num">02</span>
-                <span className="kick-label">{copy.storyH2}</span>
-              </h2>
+              <Kicker as="h2" className="flow-kicker" num="02" label={copy.storyH2} />
               <p className="flow-text">
                 {/* Read once, as written; the animated words below are hidden from screen readers. */}
                 <span className="sr-only">{copy.storyP}</span>
@@ -887,7 +640,7 @@ export function Home({ lang }: { lang: Lang }) {
                           aria-hidden
                           style={{ '--t': (i / storyTokens.length).toFixed(3) } as React.CSSProperties}
                         >
-                          {storyChips[chipAt.get(i)!]}
+                          {chips[chipAt.get(i)!]}
                         </span>{' '}
                       </>
                     )}
@@ -911,7 +664,7 @@ export function Home({ lang }: { lang: Lang }) {
           items={copy.how.map((item, i) => ({
             ...item,
             href: howHrefs[i],
-            hrefLang: englishOnly ? 'en' : undefined,
+            hrefLang: customInEnglish ? 'en' : undefined,
           }))}
         />
 

@@ -4,8 +4,8 @@ import { PAIN_GOAL_MAX, PROGRAM } from '@/lib/site';
 /*
  * The Italian home page, translated from the `en` entry of `COPY` in
  * `components/Home.tsx` (2026-10-08). Informal «tu». Every number is read from
- * `PROGRAM` as in English. The app itself is not in Italian yet, so the FAQ
- * answer on languages lists English, Russian and Spanish, as the English does.
+ * `PROGRAM` as in English. The program and evidence pages exist only in
+ * English, so their links say «(in inglese)».
  */
 
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
@@ -22,23 +22,18 @@ export const HOME_IT: HomeCopy = {
   h1b: 'Prova un piano fatto per i tuoi piedi.',
   lead: 'Walkito è un piano di esercizi personalizzato per il dolore a tallone, piede e gamba, che si adatta ogni giorno a come stanno i tuoi piedi.',
   small: `${MIN_A}, ${MIN_B} o ${MIN_C}\u00A0minuti al giorno, a casa.`,
-  chips: ['Brutta mattina? Oggi si va più piano', `Un test ogni ${testEveryDays}\u00A0giorni`, `${MIN_A}, ${MIN_B} o ${MIN_C}\u00A0min`],
   alt: {
-    heroLeft: 'Walkito dopo aver segnato una brutta mattina: la sessione di oggi diventa più leggera',
     heroCenter: 'La schermata Oggi di Walkito: un saluto, il check-in del mattino e la sessione di oggi',
-    heroRight: 'Walkito mostra il video di un esercizio con la sua indicazione',
-    checkin: 'Walkito: dopo una mattina con dolore, oggi ci sono tre minuti di esercizi da seduto',
-    where: 'Walkito: dove ti fa male di solito, con il tallone e l’arco segnati su una gamba',
-    goal: 'Walkito: la scelta dell’obiettivo, con «stare in piedi tutto il giorno» selezionato',
-    week: 'Walkito: il piano di questa settimana, da lunedì a domenica con i giorni di riposo, e la settimana dopo',
-    exercise: 'Walkito: un allungamento plantare in video con il timer',
-    quick: 'Walkito: routine veloci per quando fa male, prima e dopo la corsa, al lavoro e prima del primo passo',
-    tests: 'Walkito: risultati dei test, tenuta dell’arco su di 11 secondi e sollevamenti sulle punte su di 4, con 19 per la gamba sinistra e 22 per la destra',
   },
   storyH2: 'Non è colpa tua.',
   storyP:
-    'Plantari, scarpe nuove, un tutore notturno, cinquanta video che dicono tutti cose diverse. Possono farti sentire i piedi più sostenuti, ma nessuno di questi allena il piede. Quello che manca è un piano chiaro: quali esercizi, quanti, in che ordine e cosa fare in una giornata no.',
+    'Plantari, scarpe nuove, cinquanta video che si contraddicono. Nessuno di questi allena il piede. Quello che manca è un piano chiaro, per le giornate buone e per quelle no.',
+  storyChipsAfter: ['contraddicono.', 'piede.', 'chiaro,', 'no.'],
+  storyAccent: 'un piano chiaro,',
   whoH2: 'Fa per me?',
+  whoKicker: 'Per te',
+  whoLead:
+    'Scegli quello che ti somiglia. Il piano parte da lì e cambia ogni giorno in base a come stanno i tuoi piedi.',
   who: {
     heel: {
       title: 'Dolore al tallone e fascite plantare',
@@ -63,12 +58,6 @@ export const HOME_IT: HomeCopy = {
   },
   whoMore: 'Leggi la guida',
   whoMoreEn: 'Leggi (in inglese)',
-  adjustH2: 'Si adatta alla tua mattina.',
-  adjustP:
-    'Ogni mattina segni con un tocco come stanno i tuoi piedi. Se la mattina è brutta, la sessione di oggi diventa più corta e più facile. Dopo una lunga giornata in piedi, gli esercizi con carico vengono tolti. In una buona giornata non accelera mai.',
-  answersH2: 'Un piano costruito sulle tue risposte.',
-  answersP:
-    'Di’ a Walkito dove ti fa male, da che lato, cosa fai e a cosa vuoi tornare. Da lì costruisce il tuo piano, una settimana alla volta, non una routine uguale per tutti.',
   how: [
     {
       title: 'Una settimana alla volta, intorno a un obiettivo',
@@ -81,19 +70,11 @@ export const HOME_IT: HomeCopy = {
       link: 'Cosa misurano i test (in inglese)',
     },
     {
-      title: 'Basato sulla ricerca pubblicata',
-      text: 'La linea guida clinica del 2023 sul dolore al tallone dà allo stretching il grado A e al lavoro di forza il grado B, e uno studio randomizzato ha visto che il lavoro di forza con carico alto migliorava dolore e funzionalità più in fretta dello stretching.',
+      title: 'Scelti in base alla ricerca pubblicata',
+      text: 'Esercizi scelti in base a ricerche e linee guida pubblicate. Walkito in sé non è stato testato in uno studio clinico.',
       link: 'Leggi le evidenze (in inglese)',
     },
   ],
-  insideH2: 'Dentro l’app',
-  inside: {
-    week: 'La tua settimana, giorni di riposo compresi',
-    video: 'Un video per ogni esercizio',
-    quick: 'Routine veloci per ogni momento',
-    tests: 'I tuoi test, sinistra contro destra',
-  },
-  faqH2: 'Domande',
   faq: [
     {
       q: 'Quanto ci vuole prima di sentire una differenza?',
@@ -111,7 +92,6 @@ export const HOME_IT: HomeCopy = {
       q: 'È un consiglio medico?',
       a: 'No. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',
     },
-    { q: 'In che lingue è disponibile?', a: 'In inglese, russo e spagnolo.' },
+    { q: 'In che lingue è disponibile?', a: 'In inglese, russo, spagnolo, portoghese, francese, italiano e tedesco.' },
   ],
-  finalH2: 'I tuoi piedi, il tuo piano.',
 };

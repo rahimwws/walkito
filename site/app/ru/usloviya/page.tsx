@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: `Условия использования | ${SITE_NAME}`,
     description: 'Что такое приложение, как устроена оплата и где заканчиваются его обещания.',
     url: '/ru/usloviya/',
-    images: ['/opengraph-image'],
+    images: ['/ru/opengraph-image'],
     type: 'website',
   },
 };

@@ -15,9 +15,17 @@ const WORDS = {
   en: { going: 'Opening the store…', appStore: 'App Store', play: 'Google Play', soon: 'Walkito for Android is coming to Google Play soon.' },
   ru: { going: 'Открываем магазин…', appStore: 'App Store', play: 'Google Play', soon: 'Walkito для Android скоро появится в Google Play.' },
   es: { going: 'Abriendo la tienda…', appStore: 'App Store', play: 'Google Play', soon: 'Walkito para Android llegará pronto a Google Play.' },
+  pt: { going: 'Abrindo a loja…', appStore: 'App Store', play: 'Google Play', soon: 'O Walkito para Android chega em breve ao Google Play.' },
+  fr: { going: 'Ouverture de la boutique…', appStore: 'App Store', play: 'Google Play', soon: 'Walkito pour Android arrive bientôt sur Google Play.' },
+  it: { going: 'Apertura dello store…', appStore: 'App Store', play: 'Google Play', soon: 'Walkito per Android arriva presto su Google Play.' },
+  de: { going: 'Store wird geöffnet…', appStore: 'App Store', play: 'Google Play', soon: 'Walkito für Android kommt bald zu Google Play.' },
 } as const;
 
 type Lang = keyof typeof WORDS;
+
+function isLang(code: string): code is Lang {
+  return Object.keys(WORDS).includes(code);
+}
 
 export function GetRedirect() {
   const [lang, setLang] = useState<Lang>('en');
@@ -25,8 +33,8 @@ export function GetRedirect() {
   const [android, setAndroid] = useState(false);
 
   useEffect(() => {
-    const code = (navigator.language || 'en').slice(0, 2);
-    if (code === 'ru' || code === 'es') setLang(code);
+    const code = (navigator.language || 'en').slice(0, 2).toLowerCase();
+    if (isLang(code)) setLang(code);
     const platform = detectPlatform();
     setAndroid(platform === 'android');
     const target = platform === 'ios' ? APP_STORE : platform === 'android' ? PLAY_STORE : null;

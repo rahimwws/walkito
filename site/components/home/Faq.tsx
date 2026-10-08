@@ -43,6 +43,30 @@ const COPY: Record<Lang, FaqCopy> = {
     moreTitle: '¿Te queda alguna duda?',
     more: { before: '', link: 'Escríbenos', after: ' y te responde una persona.' },
   },
+  pt: {
+    kicker: 'Perguntas',
+    h2: ['Alguma pergunta?', 'Respostas sem rodeios.'],
+    moreTitle: 'Ainda ficou alguma dúvida?',
+    more: { before: '', link: 'Escreva para a gente', after: ' e uma pessoa responde.' },
+  },
+  fr: {
+    kicker: 'Questions',
+    h2: ['Des questions ?', 'Voici des réponses claires.'],
+    moreTitle: 'Encore une question ?',
+    more: { before: '', link: 'Écrivez-nous', after: ', une vraie personne vous répond.' },
+  },
+  it: {
+    kicker: 'Domande',
+    h2: ['Hai domande?', 'Ecco risposte chiare.'],
+    moreTitle: 'Hai ancora qualche dubbio?',
+    more: { before: '', link: 'Scrivici', after: ' e ti risponde una persona.' },
+  },
+  de: {
+    kicker: 'Fragen',
+    h2: ['Du hast Fragen?', 'Hier sind klare Antworten.'],
+    moreTitle: 'Noch etwas offen?',
+    more: { before: '', link: 'Schreib uns', after: ', ein Mensch antwortet dir.' },
+  },
 };
 
 /**

@@ -24,23 +24,18 @@ export const HOME_FR: HomeCopy = {
   h1b: 'Essayez un plan conçu pour vos pieds.',
   lead: 'Walkito est un programme d’exercices personnalisé contre la douleur au talon, au pied et à la jambe, qui s’adapte chaque jour à l’état de vos pieds.',
   small: `${MIN_A}, ${MIN_B} ou ${MIN_C}\u00A0minutes par jour, à la maison.`,
-  chips: ['Mauvais réveil\u00A0? Séance plus légère', `Un test tous les ${testEveryDays}\u00A0jours`, `${MIN_A}, ${MIN_B} ou ${MIN_C}\u00A0min`],
   alt: {
-    heroLeft: 'Walkito après un mauvais matin noté\u00A0: la séance du jour devient plus légère',
     heroCenter: 'L’écran Aujourd’hui de Walkito\u00A0: un message d’accueil, le bilan du matin et la séance du jour',
-    heroRight: 'Walkito lit la vidéo d’un exercice avec sa consigne',
-    checkin: 'Walkito\u00A0: après un matin douloureux, la séance du jour fait trois minutes d’exercices assis',
-    where: 'Walkito\u00A0: où avez-vous mal le plus souvent, avec le talon et la voûte marqués sur une jambe',
-    goal: 'Walkito\u00A0: le choix d’un objectif, avec «\u00A0tenir debout toute la journée\u00A0» sélectionné',
-    week: 'Walkito\u00A0: le plan de la semaine, du lundi au dimanche avec les jours de repos, et la semaine suivante',
-    exercise: 'Walkito\u00A0: un étirement plantaire en vidéo avec un minuteur',
-    quick: 'Walkito\u00A0: des routines rapides pour quand ça fait mal, avant et après la course, au travail et avant le premier pas',
-    tests: 'Walkito\u00A0: résultats des tests, maintien de la voûte en hausse de 11\u00A0secondes et montées sur pointes en hausse de 4, avec 19 pour la jambe gauche et 22 pour la droite',
   },
   storyH2: 'Ce n’est pas votre faute.',
   storyP:
-    'Semelles, nouvelles chaussures, attelle de nuit, cinquante vidéos qui disent toutes autre chose. Elles peuvent donner à vos pieds une impression de soutien, mais aucune n’entraîne le pied. Ce qui manque, c’est un plan clair\u00A0: quels exercices, combien, dans quel ordre, et quoi faire les mauvais jours.',
+    'Semelles, nouvelles chaussures, cinquante vidéos qui se contredisent. Aucune n’entraîne le pied. Ce qui manque, c’est un plan clair, pour les bons jours comme pour les mauvais.',
+  storyChipsAfter: ['contredisent.', 'pied.', 'clair,', 'mauvais.'],
+  storyAccent: 'un plan clair,',
   whoH2: 'Est-ce pour moi\u00A0?',
+  whoKicker: 'Pour vous',
+  whoLead:
+    'Choisissez ce qui vous ressemble. Le plan part de là et change selon l’état de vos pieds, jour après jour.',
   who: {
     heel: {
       title: 'Douleur au talon et fasciite plantaire',
@@ -65,12 +60,6 @@ export const HOME_FR: HomeCopy = {
   },
   whoMore: 'Lire le guide',
   whoMoreEn: 'Lire (en anglais)',
-  adjustH2: 'Il s’adapte à votre matin.',
-  adjustP:
-    'Chaque matin, vous indiquez d’un geste comment vont vos pieds. Si le matin est mauvais, la séance du jour devient plus courte et plus facile. Après une longue journée debout, les exercices avec charge sont retirés. Les bons jours, le plan n’accélère jamais.',
-  answersH2: 'Un plan construit à partir de vos réponses.',
-  answersP:
-    'Dites à Walkito où vous avez mal, de quel côté, ce que vous faites et ce que vous voulez pouvoir refaire. Il construit votre plan à partir de là, une semaine à la fois, et pas une routine identique pour tout le monde.',
   how: [
     {
       title: 'Une semaine à la fois, autour d’un objectif',
@@ -83,19 +72,11 @@ export const HOME_FR: HomeCopy = {
       link: 'Ce que mesurent les tests (en anglais)',
     },
     {
-      title: 'Fondé sur la recherche publiée',
-      text: 'La recommandation clinique de 2023 sur la douleur au talon donne la note A aux étirements et la note B au renforcement musculaire, et un essai randomisé a montré qu’un renforcement à charge élevée améliorait la douleur et la fonction plus vite que les étirements.',
+      title: 'Choisis d’après la recherche publiée',
+      text: 'Des exercices choisis d’après la recherche et les recommandations publiées. Walkito lui-même n’a pas été testé dans un essai clinique.',
       link: 'Voir les données scientifiques (en anglais)',
     },
   ],
-  insideH2: 'Dans l’application',
-  inside: {
-    week: 'Votre semaine, jours de repos compris',
-    video: 'Une vidéo pour chaque exercice',
-    quick: 'Des routines rapides pour chaque moment',
-    tests: 'Vos tests, gauche contre droite',
-  },
-  faqH2: 'Questions',
   faq: [
     {
       q: 'Au bout de combien de temps vais-je sentir une différence\u00A0?',
@@ -113,7 +94,6 @@ export const HOME_FR: HomeCopy = {
       q: 'Est-ce un avis médical\u00A0?',
       a: 'Non. Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé.',
     },
-    { q: 'En quelles langues est l’application\u00A0?', a: 'En anglais, en russe et en espagnol.' },
+    { q: 'En quelles langues est l’application\u00A0?', a: 'En sept langues\u00A0: anglais, russe, espagnol, portugais, français, italien et allemand.' },
   ],
-  finalH2: 'Vos pieds, votre plan.',
 };

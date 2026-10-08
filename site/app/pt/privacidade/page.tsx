@@ -231,7 +231,9 @@ export default function PrivacidadePt() {
           idioma e o fuso horário vão junto, e o PostHog calcula uma
           localização aproximada (país e cidade) a partir do seu endereço IP. Os
           eventos ficam ligados a um ID aleatório, o mesmo que o RevenueCat
-          usa.
+          usa. Depois que você entra na sua conta, o e-mail e o nome que a
+          Apple ou o Google nos passaram são adicionados a ele, para podermos
+          escrever para você se algo der errado.
         </p>
         <p>
           <b>Nunca enviado:</b> notas de dor, locais da dor, resultados de

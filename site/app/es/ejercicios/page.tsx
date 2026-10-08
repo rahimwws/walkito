@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: 'es_MX',
     type: 'website',
-    images: ['/opengraph-image'],
+    images: ['/es/opengraph-image'],
   },
 };
 
@@ -87,7 +87,10 @@ export default function ExerciseLibraryEs() {
       <JsonLd data={SCHEMA} />
       <JsonLd data={BREADCRUMBS} />
       <Masthead lang="es" />
-      <Prose className="shell prose">
+      <Prose
+        className="shell prose"
+        kicker={{ label: 'Ejercicios', lang: 'es', num: String(GROUPS.reduce((n, g) => n + g.keys.length, 0)) }}
+      >
         <h1>Biblioteca de ejercicios</h1>
         <p className="lede">
           Cada ejercicio del plan de Walkito en su propia página. Encuentras cómo hacerlo, la dosis

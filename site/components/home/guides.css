@@ -1,12 +1,12 @@
 /* ------------------------------------------------------- 05 "Guides" -- */
 
 /*
- * Three cards on the white page, the middle one large and coloured. Each
- * drawing is laid out on a "stage" measured in --u, a hundredth of the
- * stage's width, taken from the card's own size (container query units), so
- * a drawing keeps its proportions from a phone to a wide screen instead of
- * reflowing. Text inside a drawing has a floor so it never goes below
- * legible.
+ * Three cards on the white page, the middle one large and coloured. Two of
+ * the pictures are the app's own components (the Plan screen's goal and day
+ * cards, the test results and the strength card), measured in the app's
+ * points and scaled to the card from its own size (container query units),
+ * so they keep the app's proportions from a phone to a wide screen. The third
+ * is a drawing of papers on a stage measured in --u, a hundredth of its width.
  */
 .gd {
   --gd-ease: cubic-bezier(0.16, 1, 0.3, 1);
@@ -41,9 +41,10 @@
   display: inline-block;
   overflow: hidden;
   vertical-align: top;
-  /* Room for descenders inside the clip. */
-  padding-block: 0.06em;
-  margin-block: -0.06em;
+  /* Room inside the clip for descenders and Ç's cedilla below, and above for
+     the marks over capitals (É, Ü, Й). */
+  padding-block: 0.2em 0.12em;
+  margin-block: -0.2em -0.12em;
 }
 
 .gd-word > span {
@@ -148,7 +149,7 @@
   display: grid;
   place-items: center;
   flex: none;
-  height: 340px;
+  height: 420px;
   overflow: hidden;
   border-radius: 36px;
   container-type: size;
@@ -232,9 +233,11 @@
   min-height: 620px;
   overflow: hidden;
   border-radius: 40px;
+  /* The words sit low on the left, so the lilac there is a small, faint glow
+     in the corner: white text holds 5.5:1 or better over all of it. */
   background:
     radial-gradient(60% 50% at 92% 4%, rgba(24, 216, 253, 0.42), transparent 70%),
-    radial-gradient(60% 50% at 0% 100%, rgba(240, 191, 253, 0.36), transparent 70%),
+    radial-gradient(40% 30% at 0% 100%, rgba(240, 191, 253, 0.18), transparent 70%),
     linear-gradient(155deg, #5b3df5, #3b4af8 50%, #1652ff);
   color: #fff;
 }
@@ -258,7 +261,7 @@
 }
 
 .gd-feature .gd-tag {
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.28);
   color: #fff;
 }
@@ -285,7 +288,7 @@
   line-clamp: 3;
   font-size: 16px;
   line-height: 1.55;
-  color: rgba(255, 255, 255, 0.82);
+  color: #fff;
 }
 
 .gd-read {
@@ -315,20 +318,462 @@
   color: #fff;
 }
 
+
 @supports (corner-shape: superellipse(1.5)) {
   .gd-art,
   .gd-feature,
   .gd-read,
   .gd-read-arrow,
-  .gd-panel,
-  .gd-hold,
-  .gd-paper-in {
+  .gd-paper-in,
+  .gd-pg,
+  .gd-goal,
+  .gd-goal-lead,
+  .gd-day,
+  .gd-rc,
+  .gd-rc-tile,
+  .gd-sc {
     corner-shape: superellipse(1.5);
   }
 }
 
 /* ---- the drawings ---- */
 
+/*
+ * The plan and the tests are the app's own components, drawn in the app's
+ * points and in its dark scheme (`src/shared/config/theme.ts`): one `--gd-pt`
+ * is one point, in pixels, worked out from the room the card has (container
+ * units). Registered, so it resolves once on the drawing rather than again on
+ * every element that uses it. The values beside each rule are the app's.
+ */
+@property --gd-pt {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 1px;
+}
+
+/* 1. The plan: the top of the Plan screen, cut off by the card's edge. */
+
+.gd-plan {
+  /* The page's 300 points of column and its margins across the card. */
+  --gd-pt: min(calc(100cqw / 372), 1.15px);
+  position: absolute;
+  inset: 0;
+  color: #fff;
+  font-size: calc(var(--gd-pt) * 15);
+  line-height: 1.25;
+  text-align: left;
+}
+
+/* The app's page, #111113, rising out of the card's blue. */
+.gd-pg {
+  position: absolute;
+  top: calc(var(--gd-pt) * 24);
+  right: calc(var(--gd-pt) * 22);
+  bottom: calc(var(--gd-pt) * -80);
+  left: calc(var(--gd-pt) * 22);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gd-pt) * 18);
+  padding: calc(var(--gd-pt) * 16) calc(var(--gd-pt) * 14);
+  overflow: hidden;
+  border-radius: calc(var(--gd-pt) * 34);
+  background: #111113;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+/* GoalCard: radius 28, padding 20, gap 8. Liquid Glass in the app; this is
+   its fallback, a dark pane with a hairline. */
+.gd-goal {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gd-pt) * 8);
+  padding: calc(var(--gd-pt) * 20);
+  border-radius: calc(var(--gd-pt) * 28);
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+}
+
+/* bold 12, +0.6, caption grey. */
+.gd-eyebrow,
+.gd-section {
+  font-size: calc(var(--gd-pt) * 12);
+  font-weight: 700;
+  letter-spacing: calc(var(--gd-pt) * 0.6);
+  color: #9e9ea6;
+}
+
+/* heavy 26, -0.7, line 34; the words wrap round the chip. */
+.gd-goal-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: calc(var(--gd-pt) * 4) calc(var(--gd-pt) * 7);
+  font-size: calc(var(--gd-pt) * 26);
+  font-weight: 800;
+  line-height: calc(var(--gd-pt) * 34);
+  letter-spacing: calc(var(--gd-pt) * -0.7);
+}
+
+/* The goal's accent: violet for calves (`GOAL_ACCENT`), track under fill. */
+.gd-goal-lead {
+  padding: 0 calc(var(--gd-pt) * 10);
+  border-radius: calc(var(--gd-pt) * 12);
+  background: rgba(155, 133, 255, 0.22);
+  color: #9b85ff;
+}
+
+/* ProgressLine: a 12-point track marked where each step ends, the fill with
+   its gloss, and the knob glowing in the step's colour at the current value. */
+.gd-prog {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: calc(var(--gd-pt) * 24);
+  margin-top: calc(var(--gd-pt) * 12);
+}
+
+.gd-prog-track {
+  position: relative;
+  flex: 1;
+  height: calc(var(--gd-pt) * 12);
+  overflow: hidden;
+  border-radius: calc(var(--gd-pt) * 6);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.gd-prog-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: calc(var(--fill) * 100%);
+  border-radius: calc(var(--gd-pt) * 6);
+  background: #9b85ff;
+}
+
+.gd-prog-fill::after {
+  content: '';
+  position: absolute;
+  top: calc(var(--gd-pt) * 2);
+  right: calc(var(--gd-pt) * 6);
+  left: calc(var(--gd-pt) * 6);
+  height: calc(var(--gd-pt) * 3);
+  border-radius: calc(var(--gd-pt) * 1.5);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.gd-prog-tick {
+  position: absolute;
+  top: calc(var(--gd-pt) * 3);
+  bottom: calc(var(--gd-pt) * 3);
+  left: calc(var(--at) * 100%);
+  width: calc(var(--gd-pt) * 2);
+  margin-left: calc(var(--gd-pt) * -1);
+  border-radius: calc(var(--gd-pt) * 1);
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.gd-prog-knob {
+  position: absolute;
+  top: 50%;
+  left: calc(var(--fill) * 100%);
+  display: grid;
+  place-items: center;
+  width: calc(var(--gd-pt) * 22);
+  height: calc(var(--gd-pt) * 22);
+  margin: calc(var(--gd-pt) * -11) 0 0 calc(var(--gd-pt) * -11);
+  border-radius: 50%;
+  background: #9b85ff;
+  /* The app's glow on the "you, now" point, not a shadow under a card. */
+  box-shadow: 0 0 calc(var(--gd-pt) * 8) rgba(155, 133, 255, 0.9);
+}
+
+.gd-prog-knob::after {
+  content: '';
+  width: calc(var(--gd-pt) * 8);
+  height: calc(var(--gd-pt) * 8);
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* bold 15: the step in white, the value in the goal's accent. */
+.gd-goal-values {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: calc(var(--gd-pt) * 12);
+  margin-top: calc(var(--gd-pt) * 4);
+  font-size: calc(var(--gd-pt) * 15);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.gd-goal-step {
+  flex: 1;
+  min-width: 0;
+}
+
+.gd-goal-now {
+  flex: none;
+  color: #9b85ff;
+}
+
+/* "Coming up": marginTop 6, marginBottom -8 against the list's 18. */
+.gd-section {
+  margin: calc(var(--gd-pt) * 6) 0 calc(var(--gd-pt) * -8);
+}
+
+/* DayCard: radius 26, padding 16, the kind's accent at 0.34 over the page. */
+.gd-day {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gd-pt) * 6);
+  padding: calc(var(--gd-pt) * 16);
+  border-radius: calc(var(--gd-pt) * 26);
+}
+
+.gd-day + .gd-day {
+  margin-top: calc(var(--gd-pt) * -8);
+}
+
+.gd-day-strength {
+  --tone: #9b85ff;
+  background: rgba(155, 133, 255, 0.34);
+}
+
+.gd-day-mobility {
+  --tone: #2ed3c6;
+  background: rgba(46, 211, 198, 0.34);
+}
+
+/* bold 12, +0.1, label grey. */
+.gd-day-label {
+  font-size: calc(var(--gd-pt) * 12);
+  font-weight: 700;
+  letter-spacing: calc(var(--gd-pt) * 0.1);
+  color: #9e9ea6;
+}
+
+/* semibold 16, -0.2, caption grey; the 19-point glyph before it. */
+.gd-day-fact {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--gd-pt) * 7);
+  font-size: calc(var(--gd-pt) * 16);
+  font-weight: 600;
+  letter-spacing: calc(var(--gd-pt) * -0.2);
+  color: #9e9ea6;
+}
+
+.gd-day-fact svg {
+  flex: none;
+  width: calc(var(--gd-pt) * 19);
+  height: calc(var(--gd-pt) * 19);
+}
+
+.gd-day-kind svg {
+  color: var(--tone);
+}
+
+.gd-day-min svg {
+  color: #7c7c84;
+}
+
+/* The card is a link; on this one its arrow sits low, over the empty end of
+   the day cards, so it never covers the goal. */
+.gd-art-week .gd-go {
+  top: auto;
+  bottom: 16px;
+}
+
+/* 2. The tests: the result card, and the strength card beside it. */
+
+.gd-results {
+  /* One card, 330 points wide and about 270 tall. */
+  --gd-pt: min(calc(92cqw / 330), calc(88cqh / 270), 1.1px);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--gd-pt) * 12);
+  color: #fff;
+  line-height: 1.25;
+  text-align: left;
+}
+
+/* Both cards, 310 and 280 points with 12 between them. */
+@container (min-width: 480px) {
+  .gd-results {
+    --gd-pt: min(calc(94cqw / 602), calc(88cqh / 300), 1.1px);
+  }
+}
+
+/* ResultCard: #1C1C1F, radius 26, padding 18, gap 6. */
+.gd-rc {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gd-pt) * 6);
+  width: calc(var(--gd-pt) * 330);
+  padding: calc(var(--gd-pt) * 18);
+  border-radius: calc(var(--gd-pt) * 26);
+  background: #1c1c1f;
+}
+
+@container (min-width: 480px) {
+  .gd-rc {
+    width: calc(var(--gd-pt) * 310);
+  }
+}
+
+.gd-rc-head {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--gd-pt) * 12);
+}
+
+/* The calf zone's tile: 38 points, radius 12, violet track, the leg glyph. */
+.gd-rc-tile {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: calc(var(--gd-pt) * 38);
+  height: calc(var(--gd-pt) * 38);
+  border-radius: calc(var(--gd-pt) * 12);
+  background: rgba(155, 133, 255, 0.22);
+  color: #9b85ff;
+}
+
+.gd-rc-tile svg {
+  display: block;
+  width: calc(var(--gd-pt) * 20);
+  height: calc(var(--gd-pt) * 20);
+}
+
+/* bold 17, -0.2. */
+.gd-rc-name {
+  flex: 1;
+  min-width: 0;
+  font-size: calc(var(--gd-pt) * 17);
+  font-weight: 700;
+  letter-spacing: calc(var(--gd-pt) * -0.2);
+}
+
+.gd-rc-figure {
+  display: flex;
+  align-items: baseline;
+  gap: calc(var(--gd-pt) * 6);
+  margin-top: calc(var(--gd-pt) * 8);
+}
+
+/* heavy 44, -1.2, line 50, tabular; always white, whatever the value. */
+.gd-rc-num {
+  font-size: calc(var(--gd-pt) * 44);
+  font-weight: 800;
+  line-height: calc(var(--gd-pt) * 50);
+  letter-spacing: calc(var(--gd-pt) * -1.2);
+  font-variant-numeric: tabular-nums;
+}
+
+.gd-rc-unit {
+  min-width: 0;
+  font-size: calc(var(--gd-pt) * 16);
+  font-weight: 600;
+  color: #7c7c84;
+}
+
+/* The improving change, in the app's positive green: the one thing colour
+   is allowed to say about a number. */
+.gd-rc-change {
+  margin-top: calc(var(--gd-pt) * -2);
+  font-size: calc(var(--gd-pt) * 14);
+  font-weight: 600;
+  color: #2ecc71;
+}
+
+/* 10 points, the zone's accent at every length. */
+.gd-rc-track {
+  position: relative;
+  height: calc(var(--gd-pt) * 10);
+  margin-top: calc(var(--gd-pt) * 10);
+  overflow: hidden;
+  border-radius: calc(var(--gd-pt) * 5);
+  background: rgba(155, 133, 255, 0.22);
+}
+
+.gd-rc-track > span {
+  position: absolute;
+  inset: 0;
+  border-radius: calc(var(--gd-pt) * 5);
+  background: #9b85ff;
+  transform-origin: left center;
+  scale: var(--fill) 1;
+}
+
+.gd-rc-goal {
+  display: flex;
+  justify-content: space-between;
+  gap: calc(var(--gd-pt) * 12);
+  margin-top: calc(var(--gd-pt) * 4);
+  font-size: calc(var(--gd-pt) * 13);
+  font-weight: 600;
+  color: #9e9ea6;
+  font-variant-numeric: tabular-nums;
+}
+
+.gd-rc-legs {
+  font-size: calc(var(--gd-pt) * 13);
+  font-weight: 500;
+  color: #9e9ea6;
+  font-variant-numeric: tabular-nums;
+}
+
+/* StrengthCard: #1C1C1F, radius 28, padding 18, gap 10. Only where both fit. */
+.gd-sc {
+  display: none;
+  flex: none;
+  flex-direction: column;
+  gap: calc(var(--gd-pt) * 10);
+  width: calc(var(--gd-pt) * 280);
+  padding: calc(var(--gd-pt) * 18);
+  border-radius: calc(var(--gd-pt) * 28);
+  background: #1c1c1f;
+}
+
+@container (min-width: 480px) {
+  .gd-sc {
+    display: flex;
+  }
+}
+
+/* bold 19, -0.4. */
+.gd-sc-title {
+  font-size: calc(var(--gd-pt) * 19);
+  font-weight: 700;
+  letter-spacing: calc(var(--gd-pt) * -0.4);
+}
+
+/* semibold 18, -0.3, each under a hairline. */
+.gd-sc-row {
+  padding-top: calc(var(--gd-pt) * 10);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: calc(var(--gd-pt) * 18);
+  font-weight: 600;
+  letter-spacing: calc(var(--gd-pt) * -0.3);
+}
+
+/* medium 13, line 18. */
+.gd-sc-caption {
+  font-size: calc(var(--gd-pt) * 13);
+  font-weight: 500;
+  line-height: calc(var(--gd-pt) * 18);
+  color: #9e9ea6;
+}
+
+/* The papers keep their own unit: a hundredth of the stage's width. */
 .gd-stage {
   position: relative;
   display: block;
@@ -337,323 +782,12 @@
   height: calc(var(--u) * 80);
 }
 
-.gd-stage-week,
 .gd-stage-papers {
   --u: min(0.92cqw, 1.12cqh);
 }
 
 .gd-stage svg {
   display: block;
-}
-
-.gd-ring {
-  position: absolute;
-  display: block;
-}
-
-.gd-ring svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  rotate: -90deg;
-}
-
-.gd-ring circle {
-  fill: none;
-  stroke-width: 12;
-  stroke-linecap: round;
-}
-
-.gd-ring-fill {
-  stroke-dasharray: 100;
-}
-
-/* 1. The plan: the week's goal ring, five of seven days, the mascot. */
-
-.gd-glass {
-  position: absolute;
-  display: inline-flex;
-  align-items: center;
-  gap: calc(var(--u) * 1.2);
-  padding: calc(var(--u) * 1.6) calc(var(--u) * 3.2);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
-  font-size: max(12px, calc(var(--u) * 3.6));
-  font-weight: 700;
-  line-height: 1.2;
-  white-space: nowrap;
-}
-
-.gd-week-chip {
-  top: calc(var(--u) * 5);
-  left: calc(var(--u) * 5);
-}
-
-.gd-ring-goal {
-  top: calc(var(--u) * 15);
-  left: calc(var(--u) * 6);
-  width: calc(var(--u) * 50);
-  height: calc(var(--u) * 50);
-}
-
-.gd-ring-goal .gd-ring-track {
-  stroke: rgba(255, 255, 255, 0.22);
-}
-
-.gd-ring-goal .gd-ring-fill {
-  stroke: #fff;
-  /* Five days of seven. */
-  stroke-dashoffset: 29;
-}
-
-.gd-goal-core {
-  position: absolute;
-  inset: calc(var(--u) * 13);
-  display: grid;
-  place-items: center;
-  padding: calc(var(--u) * 5);
-  border-radius: 999px;
-  background: #fff;
-  color: #1652ff;
-}
-
-.gd-days {
-  position: absolute;
-  top: calc(var(--u) * 70);
-  left: calc(var(--u) * 9);
-  display: flex;
-  gap: calc(var(--u) * 2.2);
-}
-
-.gd-days > span {
-  width: calc(var(--u) * 4.4);
-  height: calc(var(--u) * 4.4);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.28);
-}
-
-.gd-days > .gd-day-done {
-  background: #fff;
-}
-
-.gd-mascot {
-  position: absolute;
-  right: calc(var(--u) * 2);
-  bottom: calc(var(--u) * 4);
-  width: calc(var(--u) * 42);
-  height: calc(var(--u) * 42);
-}
-
-/* 2. The tests: the result card, the arch-hold ring, the next date. */
-
-.gd-stage-tests {
-  --u: min(0.9cqw, 1.5cqh);
-  height: calc(var(--u) * 58);
-}
-
-.gd-panel {
-  position: absolute;
-  top: calc(var(--u) * 3);
-  left: calc(var(--u) * 2);
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--u) * 1.6);
-  width: calc(var(--u) * 60);
-  height: calc(var(--u) * 49);
-  padding: calc(var(--u) * 4);
-  border-radius: calc(var(--u) * 6);
-  background: rgba(255, 255, 255, 0.13);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22);
-}
-
-.gd-panel-head {
-  display: flex;
-  align-items: center;
-  gap: calc(var(--u) * 2);
-  min-width: 0;
-}
-
-.gd-tile {
-  flex: none;
-  display: grid;
-  width: calc(var(--u) * 8);
-  height: calc(var(--u) * 8);
-  padding: calc(var(--u) * 1.7);
-  border-radius: calc(var(--u) * 2.4);
-  background: #fff;
-  color: #7c5cff;
-}
-
-.gd-panel-name {
-  min-width: 0;
-  overflow: hidden;
-  font-size: max(11px, calc(var(--u) * 3.3));
-  font-weight: 700;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  color: rgba(255, 255, 255, 0.88);
-}
-
-.gd-figure {
-  display: flex;
-  align-items: baseline;
-  gap: calc(var(--u) * 1.4);
-  min-width: 0;
-  white-space: nowrap;
-}
-
-.gd-figure .gd-count {
-  font-size: calc(var(--u) * 12);
-  font-weight: 800;
-  line-height: 0.9;
-  letter-spacing: -0.04em;
-}
-
-.gd-unit {
-  font-size: max(11px, calc(var(--u) * 3.3));
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.72);
-}
-
-/* The app's positive green, on white so it reads on the violet. */
-.gd-delta {
-  align-self: center;
-  padding: calc(var(--u) * 0.5) calc(var(--u) * 1.8);
-  border-radius: 999px;
-  background: #fff;
-  color: #23a55a;
-  font-size: max(10px, calc(var(--u) * 2.9));
-  font-weight: 800;
-}
-
-.gd-bars {
-  display: flex;
-  flex: 1 1 0;
-  align-items: flex-end;
-  gap: calc(var(--u) * 2.2);
-  min-height: 0;
-}
-
-.gd-bars > span {
-  flex: 1;
-  height: var(--h);
-  border-radius: calc(var(--u) * 1.8);
-  background: rgba(255, 255, 255, 0.3);
-  transform-origin: bottom;
-}
-
-.gd-bars > span:last-child {
-  background: #fff;
-}
-
-.gd-hold {
-  position: absolute;
-  top: calc(var(--u) * 8);
-  right: calc(var(--u) * 2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--u) * 0.8);
-  width: calc(var(--u) * 38);
-  height: calc(var(--u) * 44);
-  padding: calc(var(--u) * 3);
-  border-radius: calc(var(--u) * 6);
-  background: #fff;
-  color: var(--ink);
-  rotate: 4deg;
-}
-
-.gd-ring-hold {
-  position: relative;
-  flex: none;
-  width: calc(var(--u) * 21);
-  height: calc(var(--u) * 21);
-}
-
-.gd-ring-hold .gd-ring-track {
-  stroke: #ece8fb;
-}
-
-.gd-ring-hold .gd-ring-fill {
-  stroke: var(--violet);
-  /* 41 of the 60-second goal. */
-  stroke-dashoffset: 32;
-}
-
-.gd-hold-num {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  font-size: calc(var(--u) * 7.2);
-  font-weight: 800;
-  letter-spacing: -0.03em;
-}
-
-.gd-hold-unit {
-  margin-top: calc(var(--u) * 0.4);
-  font-size: max(10px, calc(var(--u) * 2.8));
-  font-weight: 600;
-  color: #77777e;
-}
-
-.gd-hold-name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--u) * 0.8);
-  font-size: max(11px, calc(var(--u) * 3.1));
-  font-weight: 700;
-  line-height: 1.15;
-  text-align: center;
-}
-
-.gd-hold-name svg {
-  flex: none;
-  color: #7c5cff;
-}
-
-.gd-next {
-  position: absolute;
-  bottom: 0;
-  left: calc(var(--u) * 6);
-  display: inline-flex;
-  align-items: center;
-  gap: calc(var(--u) * 1.2);
-  padding: calc(var(--u) * 1.5) calc(var(--u) * 3);
-  border-radius: 999px;
-  background: #fff;
-  color: var(--ink);
-  font-size: max(11px, calc(var(--u) * 3.1));
-  font-weight: 700;
-  line-height: 1.2;
-  white-space: nowrap;
-}
-
-.gd-next svg {
-  flex: none;
-  color: var(--violet);
-}
-
-.gd-bubble {
-  position: absolute;
-  top: calc(var(--u) * -2);
-  right: calc(var(--u) * -1);
-  width: calc(var(--u) * 11);
-  height: calc(var(--u) * 11);
-}
-
-.gd-bubble-in {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  padding: calc(var(--u) * 2.4);
-  border-radius: 999px;
-  background: #18d8fd;
-  color: #0234fd;
 }
 
 /* A count that can run up from zero: an integer custom property shown as a
@@ -672,6 +806,7 @@
 .gd-count::after {
   content: counter(gd-n);
 }
+
 
 /* 3. The evidence: three papers, fanned. */
 
@@ -759,15 +894,18 @@
 .gd-line:nth-child(4) { width: 94%; }
 .gd-line:nth-child(5) { width: 58%; }
 
+
 /* ---- motion ---- */
 
 /*
  * The first time the section is in view: the chips drop in, each word of the
  * heading rises out of its line, the lead unblurs, and the cards follow one by
- * one. Then the drawings settle: the bars grow test by test, the counts run
- * up, the rings fill, the papers fan out. All of it only where motion is
- * welcome; otherwise, and without JavaScript, the finished state is simply
- * there.
+ * one. Then the app's pieces settle as the app plays them: the plan's page
+ * rises, its goal line fills to the knob, the days come up one after another;
+ * the result card's figure runs up, its bar fills (800 ms, ease out, as
+ * `BAR_MS`), the change arrives, the strength rows follow. The papers fan out.
+ * All of it only where motion is welcome; otherwise, and without JavaScript,
+ * the finished state is simply there.
  */
 @media (prefers-reduced-motion: no-preference) {
   .gd[data-js] .kick-num,
@@ -837,103 +975,100 @@
     translate: 0 0;
   }
 
-  /* The pieces of each drawing, a beat behind their card. */
-  .gd[data-js] .gd-glass,
-  .gd[data-js] .gd-panel,
-  .gd[data-js] .gd-next {
+  /* The plan: the page rises a beat behind its card, then the line fills. */
+  .gd[data-js] .gd-pg {
+    translate: 0 calc(var(--gd-pt) * 60);
+    transition: translate 1.3s var(--gd-ease) 0.75s;
+  }
+
+  .gd[data-seen] .gd-pg {
+    translate: 0 0;
+  }
+
+  .gd[data-js] .gd-prog-fill {
+    width: calc(var(--fill) * 100% * 0.04);
+    transition: width 1.2s cubic-bezier(0.33, 1, 0.68, 1) 1.25s;
+  }
+
+  .gd[data-js] .gd-prog-knob {
+    left: calc(var(--fill) * 100% * 0.04);
+    transition: left 1.2s cubic-bezier(0.33, 1, 0.68, 1) 1.25s;
+  }
+
+  .gd[data-seen] .gd-prog-fill {
+    width: calc(var(--fill) * 100%);
+  }
+
+  .gd[data-seen] .gd-prog-knob {
+    left: calc(var(--fill) * 100%);
+  }
+
+  .gd[data-js] .gd-day {
     opacity: 0;
-    translate: 0 calc(var(--u) * 6);
-    transition: opacity 0.8s ease, translate 1.1s var(--gd-ease);
-    transition-delay: 0.9s;
+    translate: 0 calc(var(--gd-pt) * 24);
+    transition: opacity 0.7s ease, translate 1s var(--gd-ease);
+    transition-delay: calc(1.35s + var(--k) * 0.12s);
   }
 
-  .gd[data-js] .gd-next {
-    transition-delay: 1.5s;
-  }
-
-  .gd[data-seen] .gd-glass,
-  .gd[data-seen] .gd-panel,
-  .gd[data-seen] .gd-next {
+  .gd[data-seen] .gd-day {
     opacity: 1;
     translate: 0 0;
   }
 
-  .gd[data-js] .gd-ring-fill {
-    stroke-dashoffset: 100;
-    transition: stroke-dashoffset 1.6s var(--gd-ease) 1.15s;
+  /* The tests: the cards come up, then the numbers move. */
+  .gd[data-js] .gd-rc,
+  .gd[data-js] .gd-sc {
+    opacity: 0;
+    translate: 0 calc(var(--gd-pt) * 32);
+    transition: opacity 0.8s ease, translate 1.2s var(--gd-ease);
+    transition-delay: 0.85s;
   }
 
-  .gd[data-seen] .gd-ring-goal .gd-ring-fill {
-    stroke-dashoffset: 29;
+  .gd[data-js] .gd-sc {
+    transition-delay: 1s;
   }
 
-  .gd[data-seen] .gd-ring-hold .gd-ring-fill {
-    stroke-dashoffset: 32;
-  }
-
-  .gd[data-js] .gd-bars > span {
-    scale: 1 0;
-    transition: scale 1s var(--gd-ease);
-    transition-delay: calc(1.1s + var(--k) * 0.1s);
-  }
-
-  .gd[data-seen] .gd-bars > span {
-    scale: 1 1;
+  .gd[data-seen] .gd-rc,
+  .gd[data-seen] .gd-sc {
+    opacity: 1;
+    translate: 0 0;
   }
 
   .gd[data-js] .gd-count {
     --gd-n: 0;
-    transition: --gd-n 1.5s cubic-bezier(0.2, 0.7, 0.2, 1) 1.1s;
+    transition: --gd-n 1.3s cubic-bezier(0.2, 0.7, 0.2, 1) 1.15s;
   }
 
   .gd[data-seen] .gd-count {
     --gd-n: var(--to);
   }
 
-  .gd[data-js] .gd-hold {
-    opacity: 0;
-    translate: calc(var(--u) * 6) calc(var(--u) * 4);
-    rotate: 14deg;
-    transition: opacity 0.8s ease, translate 1.2s var(--gd-ease), rotate 1.2s var(--gd-ease);
-    transition-delay: 1.05s;
+  .gd[data-js] .gd-rc-track > span {
+    scale: 0 1;
+    transition: scale 0.8s cubic-bezier(0.33, 1, 0.68, 1) 1.3s;
   }
 
-  .gd[data-seen] .gd-hold {
+  .gd[data-seen] .gd-rc-track > span {
+    scale: var(--fill) 1;
+  }
+
+  .gd[data-js] .gd-rc-change {
+    opacity: 0;
+    transition: opacity 0.6s ease 2s;
+  }
+
+  .gd[data-seen] .gd-rc-change {
     opacity: 1;
-    translate: 0 0;
-    rotate: 4deg;
   }
 
-  .gd[data-js] .gd-bubble,
-  .gd[data-js] .gd-goal-core,
-  .gd[data-js] .gd-days > span {
-    scale: 0;
-    transition: scale 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
-    transition-delay: 1.6s;
-  }
-
-  .gd[data-js] .gd-goal-core {
-    transition-delay: 1s;
-  }
-
-  .gd[data-js] .gd-days > span {
-    transition-delay: calc(1.2s + var(--k) * 0.08s);
-  }
-
-  .gd[data-seen] .gd-bubble,
-  .gd[data-seen] .gd-goal-core,
-  .gd[data-seen] .gd-days > span {
-    scale: 1;
-  }
-
-  .gd[data-js] .gd-mascot {
+  .gd[data-js] .gd-sc-row {
     opacity: 0;
-    translate: calc(var(--u) * 12) 0;
-    transition: opacity 0.8s ease, translate 1.2s var(--gd-ease);
-    transition-delay: 1.2s;
+    translate: 0 calc(var(--gd-pt) * 8);
+    transition: opacity 0.6s ease, translate 0.9s var(--gd-ease);
+    transition-delay: calc(1.4s + var(--k) * 0.12s);
   }
 
-  .gd[data-seen] .gd-mascot {
+  .gd[data-seen] .gd-sc-row {
     opacity: 1;
     translate: 0 0;
   }
@@ -954,32 +1089,28 @@
     opacity: 1;
   }
 
-  /* Small floats, only while the section is on screen. They move `transform`,
-     so they never fight the entrance, which moves `translate` and `scale`. */
-  .gd-mascot.gd-loop {
-    animation: gd-bob 3.4s ease-in-out infinite alternate;
-  }
-
-  .gd-bubble-in.gd-loop {
-    animation: gd-float 5s ease-in-out infinite;
-  }
-
+  /* The one float: the top paper, only while the section is on screen. It
+     moves `transform`, so it never fights the entrance, which moves
+     `translate`. */
   .gd-paper:nth-child(3) .gd-paper-in {
     animation: gd-float 6.5s ease-in-out infinite;
   }
 
-  .gd:not([data-live]) .gd-loop,
   .gd:not([data-live]) .gd-paper-in {
     animation-play-state: paused;
   }
 
   /* No lift on hover: the picture inside eases in a little, and that is all. */
   @media (hover: hover) {
-    .gd-stage {
+    .gd-stage,
+    .gd-plan,
+    .gd-results {
       transition: scale 0.9s var(--gd-ease);
     }
 
-    .gd-card:hover .gd-stage {
+    .gd-card:hover .gd-stage,
+    .gd-card:hover .gd-plan,
+    .gd-card:hover .gd-results {
       scale: 1.04;
     }
   }
@@ -988,15 +1119,6 @@
 @keyframes gd-float {
   50% {
     transform: translateY(-8px);
-  }
-}
-
-@keyframes gd-bob {
-  from {
-    transform: translateY(0) rotate(-3deg);
-  }
-  to {
-    transform: translateY(-6px) rotate(3deg);
   }
 }
 
@@ -1037,7 +1159,7 @@
   }
 
   .gd-art {
-    height: 300px;
+    height: 380px;
   }
 }
 
@@ -1068,7 +1190,7 @@
 
   .gd-feature {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: 236px auto;
+    grid-template-rows: 290px auto;
     grid-template-areas:
       'art'
       'body';
@@ -1090,8 +1212,13 @@
   }
 
   .gd-art {
-    height: 250px;
+    height: 260px;
     border-radius: 30px;
+  }
+
+  /* Tall enough for the goal card and the first day under it. */
+  .gd-art-week {
+    height: 380px;
   }
 
   .gd-card {
@@ -1111,6 +1238,11 @@
     right: 14px;
     width: 40px;
     height: 40px;
+  }
+
+  .gd-art-week .gd-go {
+    top: auto;
+    bottom: 14px;
   }
 }
 

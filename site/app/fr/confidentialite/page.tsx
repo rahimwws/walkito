@@ -233,7 +233,9 @@ export default function ConfidentialiteFr() {
           fuseau horaire y sont joints, et PostHog déduit une localisation
           approximative (pays et ville) de votre adresse IP. Les événements
           sont liés à un identifiant aléatoire, le même que celui qu’utilise
-          RevenueCat.
+          RevenueCat. Dès que vous vous connectez, l’adresse e-mail et le nom
+          qu’Apple ou Google nous ont transmis y sont ajoutés, pour que nous
+          puissions vous écrire si quelque chose vous bloque.
         </p>
         <p>
           <b>Jamais envoyés :</b> scores de douleur, zones douloureuses,

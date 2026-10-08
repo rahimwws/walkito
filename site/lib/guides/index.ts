@@ -142,15 +142,20 @@ export function guideMetadata(guide: Guide): Metadata {
       publishedTime: guide.published,
       modifiedTime: guide.updated,
       // Stated rather than inherited: a page-level `openGraph` replaces the
-      // layout's whole object, and the Russian and Spanish roots have no card
-      // file of their own.
-      images: ['/opengraph-image'],
+      // layout's whole object. Russian and Spanish have a card of their own
+      // (lib/og-card.tsx); every other language shares the English one.
+      images: [shareCard(guide.lang)],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${guide.title} | ${SITE_NAME}`,
       description: guide.description,
-      images: ['/opengraph-image'],
+      images: [shareCard(guide.lang)],
     },
   };
+}
+
+/** The share card a page in this language points at. */
+function shareCard(lang: Guide['lang']): string {
+  return lang === 'ru' || lang === 'es' ? `/${lang}/opengraph-image` : '/opengraph-image';
 }

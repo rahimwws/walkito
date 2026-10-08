@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: 'es_MX',
     type: 'website',
-    images: ['/opengraph-image'],
+    images: ['/es/opengraph-image'],
   },
 };
 
@@ -52,14 +52,14 @@ const PRINTABLES_ES: readonly {
   {
     slug: 'walkito-flat-feet-exercises',
     title: 'Ejercicios para pie plano (PDF en inglés)',
-    blurb: '10 ejercicios de arco, dedos y cadera con dosis, un registro semanal y cuándo consultar a un profesional.',
+    blurb: '10 ejercicios de arco, dedos y cadera con dosis, un registro semanal y cuándo consultar a un profesional.',
     guide: '/es/ejercicios-pie-plano/',
     pages: 3,
   },
   {
     slug: 'walkito-standing-all-day-exercises',
     title: 'Ejercicios para pies cansados de estar de pie (PDF en inglés)',
-    blurb: '7 ejercicios cortos para turnos largos, con dosis, un registro semanal y cuándo consultar a un profesional.',
+    blurb: '7 ejercicios cortos para turnos largos, con dosis, un registro semanal y cuándo consultar a un profesional.',
     guide: '/es/dolor-de-pies-por-estar-de-pie/',
     pages: 2,
   },

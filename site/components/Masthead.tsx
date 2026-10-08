@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { AppleGlyph } from '@/components/AppStoreBadge';
 import { GetAppButton, GetAppDialog } from '@/components/GetApp';
 import { MobileMenu } from '@/components/MobileMenu';
+import { ScrollState } from '@/components/ScrollState';
 import { CHROME, TRANSLATED, customHref, type Lang } from '@/lib/i18n';
 import { qrPath } from '@/lib/qr';
 import { playHref, SITE_URL, storeHref } from '@/lib/site';
@@ -12,7 +13,13 @@ import { playHref, SITE_URL, storeHref } from '@/lib/site';
 const QR = qrPath(`${SITE_URL}/get/`);
 
 /**
- * The header, identical on every page.
+ * The header, identical on every page: the home page's floating one.
+ *
+ * Fixed over the band at the top of the page (the hero on home, `.pg-head` on
+ * every other page, see `components/Prose.tsx`), white over the icon's blue,
+ * and drawn together into one capsule once the page scrolls. `ScrollState`
+ * does the measuring and sets `html[data-scrolled]`; it is rendered here so no
+ * page has to remember it.
  *
  * The button says "Get the app" and goes straight to the listing, tagged
  * `masthead` so App Analytics can tell it apart from the badges in the page
@@ -24,11 +31,12 @@ const QR = qrPath(`${SITE_URL}/get/`);
 export function Masthead({
   lang = 'en',
   current,
-  floating = false,
+  floating = true,
 }: {
   lang?: Lang;
-  current?: 'home';
-  /** Home only: fixed over the hero, drawn together into one capsule on scroll. */
+  current?: 'home' | 'program' | 'science' | 'faq';
+  /** Fixed over the page's top band, drawn together into one capsule on
+   * scroll. On by default; `false` gives the plain header in the flow. */
   floating?: boolean;
 }) {
   const suffix = lang === 'en' ? '' : `-${lang}`;
@@ -41,13 +49,14 @@ export function Masthead({
   // reviewer is sent to, are in the footer of every page.
   const links = [
     { href: home, label: c.navHome, current: current === 'home' },
-    { href: customHref('program', lang), label: c.navProgram, current: false },
-    { href: customHref('science', lang), label: c.navEvidence, current: false },
-    { href: customHref('faq', lang), label: c.navQuestions, current: false },
+    { href: customHref('program', lang), label: c.navProgram, current: current === 'program' },
+    { href: customHref('science', lang), label: c.navEvidence, current: current === 'science' },
+    { href: customHref('faq', lang), label: c.navQuestions, current: current === 'faq' },
   ];
 
   return (
     <header className={`shell masthead${floating ? ' masthead-float' : ''}`}>
+      {floating && <ScrollState />}
       <Link className="brand" href={home} aria-label="Walkito">
         <Image src="/icon-96.webp" alt="" width={36} height={36} priority />
         <span className="brand-name">Walkito</span>

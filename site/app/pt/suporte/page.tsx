@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
-import { alternatesFor } from '@/lib/i18n';
+import { CHROME, alternatesFor } from '@/lib/i18n';
 import { SUPPORT_EMAIL } from '@/lib/site';
 
 /**
@@ -29,7 +29,7 @@ export default function SuportePt() {
     <>
       <Masthead lang="pt" />
 
-      <Prose className="shell prose">
+      <Prose className="shell prose" kicker={{ label: CHROME.pt.navSupport, lang: 'pt' }}>
         <h1>Suporte</h1>
 
         <p className="updated">Algo estranho? Conte para a gente. Uma pessoa responde.</p>

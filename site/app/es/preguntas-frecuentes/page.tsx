@@ -7,7 +7,7 @@ import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Cite } from '@/components/Cite';
 import { Masthead } from '@/components/Masthead';
-import { Prose, typeset } from '@/components/Prose';
+import { FaqRows, Prose, typeset } from '@/components/Prose';
 import { FAQ_ES, FAQ_GROUPS_ES } from '@/lib/faq-es';
 import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { faqSchema } from '@/lib/schema';
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: 'es_MX',
     type: 'website',
-    images: ['/opengraph-image'],
+    images: ['/es/opengraph-image'],
   },
 };
 
@@ -65,9 +65,9 @@ export default function FaqEs() {
     <>
       <JsonLd data={FAQ_SCHEMA} />
       <JsonLd data={BREADCRUMBS} />
-      <Masthead lang="es" />
+      <Masthead lang="es" current="faq" />
 
-      <Prose className="shell prose">
+      <Prose className="shell prose" kicker={{ label: c.navQuestions, lang: 'es', num: String(FAQ_ES.length) }}>
         <h1>App de ejercicios para el dolor de talón: preguntas y respuestas</h1>
         <Byline lang="es" />
 
@@ -93,22 +93,24 @@ export default function FaqEs() {
         {FAQ_GROUPS_ES.map((group) => (
           <section key={group.id} id={group.id}>
             <h2>{group.h2}</h2>
-            <div className="faq">
-              {group.entries.map((entry) => (
-                <section key={entry.q}>
-                  <h3>{entry.q}</h3>
-                  <p>
-                    <Inline text={entry.a} />
-                  </p>
-                  {entry.source && (
-                    <p className="cite">
-                      <Inline text={entry.source} />
+            <FaqRows
+              items={group.entries.map((entry) => ({
+                q: entry.q,
+                a: (
+                  <>
+                    <p>
+                      <Inline text={entry.a} />
                     </p>
-                  )}
-                  {entry.cites?.map((i) => <Cite key={i} index={i} />)}
-                </section>
-              ))}
-            </div>
+                    {entry.source && (
+                      <p className="cite">
+                        <Inline text={entry.source} />
+                      </p>
+                    )}
+                    {entry.cites?.map((i) => <Cite key={i} index={i} />)}
+                  </>
+                ),
+              }))}
+            />
           </section>
         ))}
 

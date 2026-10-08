@@ -1,0 +1,2127 @@
+/* ================================================================ pages ==
+ *
+ * Every page but home, on the home page's design (components/Prose.tsx lays
+ * them out; components/RootDocument.tsx imports this file once).
+ *
+ *   main.pg
+ *     header.pg-head      the band the floating header sits on: the hero's
+ *                         icon blues thinning to lilac, the section chip, the
+ *                         title in the display face, the byline as chips
+ *     div.pg-sheet        a white sheet with the home page's big top corners,
+ *                         rising over the band's foot
+ *       div.prose         the reading column, 720px of text
+ *     ::after             the sheet's rounded foot over the dark footer
+ *
+ * Scoped to `.pg`, which only these pages carry, so nothing here reaches the
+ * home page (`main.home`). Every rule has one class more than the globals.css
+ * rule it replaces, so it wins whichever order the two files arrive in.
+ *
+ * The palette is the app's (src/shared/config/theme.ts): the light page
+ * #F4F4F6 as the card colour on white, ink #111114, the violet #8B5CF6 for the
+ * one active state. Depth comes from colour and inset hairlines, never from a
+ * drop shadow, and colour never judges a value.
+ */
+
+.pg {
+  --pg-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --pg-head: var(--head-h, 94px);
+  /* The sheet's corner, and how far it rides up over the band. */
+  --pg-r: 56px;
+  --pg-ink: #111114;
+  --pg-text: #3a3a42;
+  --pg-muted: #6b6b73;
+  /* The app's light page, as a card on the white sheet. */
+  --pg-card: #f4f4f6;
+  /* The app's violet over white, for the one raised thing in a block. */
+  --pg-tint: #f3effe;
+  --pg-violet: #8b5cf6;
+  --pg-violet-deep: #6d4aef;
+  --pg-line: rgba(17, 17, 20, 0.08);
+  display: block;
+}
+
+/* The violet wash behind the old header: the band replaces it. */
+body:has(> .pg) > .wash {
+  display: none;
+}
+
+/* Jumping to a section from a contents list: clear of the fixed header. */
+.pg [id] {
+  scroll-margin-top: calc(var(--pg-head) + 20px);
+}
+
+/* ------------------------------------------------------------ the band -- */
+
+/*
+ * The home hero, compact: the icon's deep blue under the header (whose white
+ * type was drawn for it), brightening and thinning to lilac by the time the
+ * title starts, so the title is ink on light. The stops near the top are
+ * fixed lengths from the header's own height; the ones at the foot are
+ * percentages, so a one-line title and a four-line one both end in lilac.
+ */
+.pg .pg-head {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  padding: calc(var(--pg-head) + clamp(28px, 4.4vw, 60px)) 24px calc(var(--pg-r) + clamp(44px, 5.6vw, 80px));
+  background: linear-gradient(
+    180deg,
+    #0234fd 0,
+    #0b52ff calc(var(--pg-head) * 0.6),
+    #3d8bff calc(var(--pg-head) + 20px),
+    #a9c8ff calc(var(--pg-head) + 120px),
+    #e4ddff max(calc(var(--pg-head) + 240px), 66%),
+    #ece4ff 100%
+  );
+  color: var(--pg-ink);
+  text-align: center;
+}
+
+/* Light in the room, as on the hero (`.hero-sky`): cyan under the header's
+   right, pink and lilac low on the sides, one diagonal streak through the
+   title's lines. */
+.pg .pg-sky {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(180deg, #000 45%, transparent 92%);
+  mask-image: linear-gradient(180deg, #000 45%, transparent 92%);
+}
+
+.pg .pg-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(72px);
+}
+
+.pg .pg-blob-a {
+  top: -220px;
+  right: -8vw;
+  width: min(44vw, 620px);
+  height: min(44vw, 620px);
+  background: #18d8fd;
+  opacity: 0.55;
+}
+
+.pg .pg-blob-b {
+  top: 34%;
+  left: -12vw;
+  width: min(38vw, 520px);
+  height: min(28vw, 380px);
+  background: #f0bffd;
+  opacity: 0.6;
+}
+
+.pg .pg-blob-c {
+  top: 46%;
+  right: -6vw;
+  width: min(32vw, 440px);
+  height: min(24vw, 320px);
+  background: #b685fd;
+  opacity: 0.4;
+}
+
+.pg .pg-streak {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 70vw;
+  height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  filter: blur(26px);
+  rotate: -22deg;
+}
+
+/* The measure the title's size is capped by (`--pg-fit`, set per title in
+   Prose.tsx): the column, as a container. */
+.pg .pg-head-inner {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+  container-type: inline-size;
+}
+
+.pg .pg-head .pg-kicker {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto 26px;
+}
+
+/*
+ * The title: the home headings' face and treatment, a step smaller because a
+ * page title is a sentence, not three words. Capped at the column's width over
+ * the title's longest word, so a German compound shrinks the line instead of
+ * leaving it.
+ */
+.pg .pg-head .pg-title {
+  /* The size for the title's length (`data-size`, from Prose.tsx). */
+  --pg-size: clamp(40px, 5.6vw, 80px);
+  margin: 0 auto;
+  max-width: 100%;
+  font-family: var(--font-display), var(--font-body);
+  /* Anton has one weight; an h1's default bold would be synthesised. */
+  font-weight: 400;
+  font-size: min(var(--pg-size), calc(98cqi / var(--pg-fit, 1)));
+  line-height: 1.02;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-wrap: balance;
+  color: var(--pg-ink);
+}
+
+/* A word or two: home's section headings. A long sentence: a step down. */
+.pg .pg-head .pg-title[data-size='s'] {
+  --pg-size: clamp(44px, 7vw, 104px);
+}
+
+.pg .pg-head .pg-title[data-size='l'] {
+  --pg-size: clamp(36px, 4.6vw, 64px);
+}
+
+/* Accented capitals (É, Ü, Ñ, Й) need a little more room between lines. */
+.pg:lang(es) .pg-head .pg-title,
+.pg:lang(pt) .pg-head .pg-title,
+.pg:lang(fr) .pg-head .pg-title,
+.pg:lang(it) .pg-head .pg-title,
+.pg:lang(de) .pg-head .pg-title {
+  line-height: 1.08;
+}
+
+/* Oswald's Cyrillic capitals are wider than Anton's Latin ones. */
+.pg:lang(ru) .pg-head .pg-title {
+  --pg-size: clamp(32px, 4.6vw, 64px);
+  line-height: 1.1;
+}
+
+.pg:lang(ru) .pg-head .pg-title[data-size='s'] {
+  --pg-size: clamp(36px, 5.6vw, 84px);
+}
+
+.pg:lang(ru) .pg-head .pg-title[data-size='l'] {
+  --pg-size: clamp(28px, 3.8vw, 52px);
+}
+
+/* ---- the byline and the dates, as chips ---- */
+
+.pg .pg-head .pg-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: clamp(22px, 2.6vw, 32px);
+}
+
+.pg .pg-head .byline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  max-width: none;
+  font-size: 14px;
+  color: var(--pg-ink);
+}
+
+/* The separators stay in the text for screen readers; the chips are the
+   separation on screen. */
+.pg .pg-head .byline-sep {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Glass over the band, as the hero's cards: white, a soft blur, an inset rim.
+   A byline that is only a date (About) is one chip itself. */
+.pg .pg-head .byline-chip,
+.pg .pg-head .byline:not(:has(.byline-chip)),
+.pg .pg-head .reviewer-line,
+.pg .pg-head p.updated {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  backdrop-filter: blur(14px) saturate(1.3);
+  color: var(--pg-ink);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.pg .pg-head .byline-author {
+  padding-left: 7px;
+}
+
+.pg .pg-head .byline-author img {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+}
+
+.pg .pg-head .byline-author strong {
+  font-weight: 800;
+}
+
+/* The one chip that goes somewhere: ink, like the app's primary button. */
+.pg .pg-head a.byline-link {
+  background: var(--pg-ink);
+  box-shadow: none;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.pg .pg-head a.byline-link:hover {
+  background: #2c2c33;
+}
+
+.pg .pg-head a.byline-link:focus-visible {
+  outline: 3px solid #0a6cff;
+  outline-offset: 2px;
+}
+
+.pg .pg-head .reviewer-line {
+  padding-left: 6px;
+  color: #3b3b42;
+  font-weight: 500;
+}
+
+.pg .pg-head .reviewer-line a {
+  color: var(--pg-ink);
+  font-weight: 700;
+}
+
+/* "Last updated", the support line, a translation note: one chip each, which
+   wraps into a short block when the line is a sentence. */
+.pg .pg-head p.updated {
+  display: block;
+  max-width: 600px;
+  min-height: 0;
+  padding: 8px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #3b3b42;
+  text-wrap: balance;
+}
+
+.pg .pg-head p.updated a {
+  color: var(--pg-ink);
+  font-weight: 700;
+}
+
+/* ---- the runners pages: their hero, inside the band ---- */
+
+/* The band already has the gutter; the section's own would double it. */
+.pg .pg-head-hero .hero {
+  padding: 0;
+}
+
+/* The two lines as the home hero sets them: the icon's blue, then ink. */
+.pg .pg-head-hero .hero h1 {
+  font-size: clamp(44px, 7vw, 104px);
+  line-height: 1;
+  color: #1652ff;
+}
+
+.pg:lang(ru) .pg-head-hero .hero h1 {
+  font-size: clamp(30px, 7.4vw, 72px);
+  line-height: 1.08;
+}
+
+.pg .pg-head-hero .hero h1 span {
+  color: var(--pg-ink);
+}
+
+.pg .pg-head-hero .hero .byline {
+  margin-top: 24px;
+}
+
+.pg .pg-head-hero .hero > p:not(.byline) {
+  max-width: 640px;
+  margin: 26px auto 0;
+  font-size: clamp(17px, 1.6vw, 20px);
+  line-height: 1.55;
+  color: #3b3b42;
+}
+
+.pg .pg-head-hero .shot {
+  margin-top: 40px;
+}
+
+/* --------------------------------------------------------- the sheet -- */
+
+.pg .pg-sheet {
+  position: relative;
+  z-index: 1;
+  margin-top: calc(var(--pg-r) * -1);
+  border-radius: var(--pg-r) var(--pg-r) 0 0;
+  background: var(--paper, #fff);
+}
+
+/* The sheet's foot: white rounded corners with the footer's dark in them, so
+   the page closes over the footer the way home's bands close over each
+   other. A spread shadow fills the corners, clipped to the strip itself. */
+.pg:has(+ .ft)::after {
+  content: '';
+  display: block;
+  height: var(--pg-r);
+  border-radius: 0 0 var(--pg-r) var(--pg-r);
+  background: var(--paper, #fff);
+  box-shadow: 0 0 0 var(--pg-r) #111113;
+  clip-path: inset(0);
+}
+
+@supports (corner-shape: superellipse(1.5)) {
+  .pg .pg-sheet,
+  .pg:has(+ .ft)::after,
+  .pg .pg-head .byline-chip,
+  .pg .pg-head .byline:not(:has(.byline-chip)),
+  .pg .pg-head .reviewer-line,
+  .pg .pg-head p.updated {
+    corner-shape: superellipse(1.5);
+  }
+}
+
+/* ------------------------------------------------------- the column -- */
+
+/* 720px of text inside the 24px gutters, and the headings' measure. */
+.pg .pg-sheet .prose {
+  max-width: 768px;
+  padding-top: clamp(44px, 5.6vw, 72px);
+  padding-bottom: clamp(72px, 8vw, 120px);
+  container-type: inline-size;
+}
+
+.pg .prose p,
+.pg .prose li {
+  font-size: 18px;
+  line-height: 1.66;
+  color: var(--pg-text);
+}
+
+.pg .prose b,
+.pg .prose strong {
+  color: var(--pg-ink);
+}
+
+.pg .prose a {
+  color: var(--pg-violet-deep);
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: rgba(109, 74, 239, 0.35);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.pg .prose a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* The answer-first opener: the passage a reader decides on. */
+.pg .prose .lede {
+  margin: 0 0 20px;
+  font-size: clamp(20px, 2.1vw, 23px);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+  color: var(--pg-ink);
+}
+
+/* Section headings in the display face, a size down from home's. Capped by
+   each heading's own longest word (`--pg-fit`), as the title is. */
+.pg .pg-sheet .prose > h2,
+.pg .pg-sheet .prose > section > h2 {
+  margin: clamp(56px, 7vw, 88px) 0 18px;
+  font-family: var(--font-display), var(--font-body);
+  font-weight: 400;
+  font-size: min(clamp(30px, 4vw, 48px), calc(98cqi / var(--pg-fit, 1)));
+  line-height: 1.04;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-wrap: balance;
+  color: var(--pg-ink);
+}
+
+.pg:lang(ru) .pg-sheet .prose > h2,
+.pg:lang(ru) .pg-sheet .prose > section > h2 {
+  font-size: min(clamp(26px, 3.4vw, 40px), calc(98cqi / var(--pg-fit, 1)));
+  line-height: 1.12;
+}
+
+.pg:lang(es) .pg-sheet .prose > h2,
+.pg:lang(es) .pg-sheet .prose > section > h2,
+.pg:lang(pt) .pg-sheet .prose > h2,
+.pg:lang(pt) .pg-sheet .prose > section > h2,
+.pg:lang(fr) .pg-sheet .prose > h2,
+.pg:lang(fr) .pg-sheet .prose > section > h2,
+.pg:lang(it) .pg-sheet .prose > h2,
+.pg:lang(it) .pg-sheet .prose > section > h2,
+.pg:lang(de) .pg-sheet .prose > h2,
+.pg:lang(de) .pg-sheet .prose > section > h2 {
+  line-height: 1.1;
+}
+
+/* The first thing in the column needs no gap above it. */
+.pg .pg-sheet .prose > h2:first-child,
+.pg .pg-sheet .prose > section:first-child > h2:first-child {
+  margin-top: 0;
+}
+
+.pg .prose h3 {
+  margin: 34px 0 8px;
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: -0.3px;
+  color: var(--pg-ink);
+}
+
+/* Lists: the app's violet on the markers, nothing else. */
+.pg .prose ul,
+.pg .prose ol {
+  padding-left: 24px;
+}
+
+.pg .prose li {
+  margin-bottom: 8px;
+  padding-left: 4px;
+}
+
+.pg .prose ul > li::marker {
+  color: var(--pg-violet);
+}
+
+.pg .prose ol > li::marker {
+  color: var(--pg-violet-deep);
+  font-weight: 800;
+}
+
+/* Lists drawn as cards keep no indent and no marker. */
+.pg .prose .library,
+.pg .prose .exercises,
+.pg .prose .related ul {
+  padding: 0;
+}
+
+.pg .prose .library li {
+  margin: 0;
+  padding: 0;
+}
+
+/* The badge is a filled button, and the founders' icons stay quiet: the
+   column's link colour must not repaint them. */
+.pg .prose .store a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.pg .prose .social a {
+  color: var(--pg-muted);
+  text-decoration: none;
+}
+
+.pg .prose .social a:hover {
+  color: var(--pg-ink);
+}
+
+/* Small print the column's 18px would otherwise enlarge. */
+.pg .prose .printable-meta,
+.pg .prose .reviewer-cred,
+.pg .prose .reviewer-links {
+  font-size: 14px;
+  color: var(--pg-muted);
+}
+
+.pg .prose .email-signup-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--pg-ink);
+}
+
+.pg .prose .email-signup-description {
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--pg-muted);
+}
+
+.pg .prose .email-signup-consent {
+  font-size: 13px;
+}
+
+/* Said in ink, not red: nothing on these pages is red. */
+.pg .prose .email-signup-error {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--pg-ink);
+}
+
+.pg .prose .email-signup-done p {
+  font-size: 16px;
+}
+
+/* ---- tables: a card, labels in the app's eyebrow style ---- */
+
+.pg .prose .table-wrap {
+  margin: 26px 0 14px;
+  padding: 6px 22px;
+  border-radius: 28px;
+  background: var(--pg-card);
+}
+
+.pg .prose table {
+  font-size: 15.5px;
+}
+
+.pg .prose th,
+.pg .prose td {
+  padding: 14px 18px 14px 0;
+  border-bottom: 1px solid var(--pg-line);
+  font-size: 15.5px;
+  line-height: 1.45;
+  color: var(--pg-text);
+}
+
+.pg .prose thead th {
+  padding-block: 16px 12px;
+  border-bottom: 1px solid rgba(17, 17, 20, 0.14);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #77777e;
+}
+
+.pg .prose tbody th {
+  font-weight: 700;
+  color: var(--pg-ink);
+}
+
+.pg .prose tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.pg .prose caption {
+  caption-side: top;
+  padding: 14px 0 2px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--pg-muted);
+}
+
+/* ---- a quotation ---- */
+
+.pg .prose blockquote {
+  margin: 30px 0;
+  padding: 28px 32px;
+  border-radius: 32px;
+  background: var(--pg-tint);
+}
+
+.pg .prose blockquote p {
+  margin: 0;
+  font-size: clamp(19px, 2vw, 22px);
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.2px;
+  color: var(--pg-ink);
+}
+
+.pg .prose blockquote footer {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--pg-muted);
+}
+
+/* ---- anatomy figures: the white drawing in a card, caption under it ---- */
+
+.pg .prose figure.anatomy {
+  margin: 30px 0;
+  overflow: hidden;
+  border: 1px solid var(--pg-line);
+  border-radius: 32px;
+  background: #fff;
+}
+
+.pg .prose .anatomy figcaption {
+  padding: 16px 22px 18px;
+  border-top: 0;
+  background: var(--pg-card);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--pg-muted);
+}
+
+/* ---- key points: the app's violet card, a tilted chip, ticks ---- */
+
+.pg .prose .takeaways {
+  margin: 4px 0 28px;
+  padding: 26px 28px 14px;
+  border-radius: 32px;
+  background: var(--pg-tint);
+}
+
+/* The heading as a section chip (`.kick-label` on home), in violet. */
+.pg .prose .takeaways h2,
+.pg .prose .exercise-list h2,
+.pg .prose .toc h2 {
+  display: inline-grid;
+  place-items: center;
+  min-height: 30px;
+  margin: 0 0 16px;
+  padding: 6px 13px;
+  border-radius: 10px;
+  background: var(--pg-violet);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  rotate: -3deg;
+}
+
+/* Clear of the mascot in the corner. */
+.pg .prose .exercise-list h2 {
+  max-width: calc(100% - 72px);
+}
+
+.pg .prose .exercise-list h2,
+.pg .prose .toc h2 {
+  background: #4a4a52;
+}
+
+.pg .prose .takeaways ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pg .prose .takeaways li {
+  position: relative;
+  margin: 0 0 12px;
+  padding-left: 38px;
+  font-size: 17.5px;
+  line-height: 1.55;
+  color: var(--pg-ink);
+}
+
+/* The app's filled task box: a rounded square in the accent, Hugeicons'
+   Tick02 in it (today-tasks.tsx). */
+.pg .prose .takeaways li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background: var(--pg-violet)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 14L8.5 17.5L19 6.5'/%3E%3C/svg%3E")
+    center / 15px no-repeat;
+}
+
+/* ---- the exercises on the page: the app's task list ---- */
+
+/*
+ * As Home's "Today's tasks" (today-tasks.tsx): a heading with the mascot
+ * running off it, then rows of a bold title over a quieter line, with the
+ * dose in a chip at the end. Numbered here, because the page does them in
+ * order.
+ */
+.pg .prose .exercise-list {
+  position: relative;
+  margin: 0 0 28px;
+  padding: 26px 28px 14px;
+  border: 0;
+  border-radius: 32px;
+  background: var(--pg-card);
+}
+
+.pg .prose .exercise-list::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  width: 64px;
+  height: 64px;
+  background: url('/hero/mascot-tasks.webp') center / contain no-repeat;
+  pointer-events: none;
+}
+
+.pg .prose .exercise-list ol,
+.pg .prose .toc ol {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: pgex;
+}
+
+.pg .prose .exercise-list li,
+.pg .prose .toc li {
+  counter-increment: pgex;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 13px 0 13px 40px;
+  border-top: 1px solid var(--pg-line);
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.pg .prose .exercise-list li::before,
+.pg .prose .toc li::before {
+  content: counter(pgex);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  translate: 0 -50%;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: rgba(17, 17, 20, 0.07);
+  color: #3b3b42;
+  font-size: 13px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.pg .prose .exercise-list a,
+.pg .prose .toc a {
+  flex: 1;
+  min-width: 0;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: var(--pg-ink);
+  text-decoration: none;
+}
+
+.pg .prose .exercise-list a:hover,
+.pg .prose .toc a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(17, 17, 20, 0.3);
+}
+
+/* The dose: the app's chip (11 × 7 padding, 12 corner), in neutral ink. */
+.pg .prose .exercise-list .dose {
+  display: inline-block;
+  flex: none;
+  max-width: 48%;
+  padding: 6px 11px;
+  border-radius: 12px;
+  background: #fff;
+  color: #3b3b42;
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: right;
+}
+
+/* ---- "On this page" ---- */
+
+.pg .prose .toc {
+  margin: 26px 0 8px;
+  padding: 26px 28px 12px;
+  border: 0;
+  border-radius: 32px;
+  background: var(--pg-card);
+}
+
+.pg .prose .toc li {
+  font-size: 16.5px;
+}
+
+/* ---- a study's key number ---- */
+
+.pg .prose .key-fact {
+  margin: 4px 0 20px;
+  padding: 18px 22px;
+  border-left: 0;
+  border-radius: 24px;
+  background: var(--pg-tint);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--pg-ink);
+}
+
+.pg .prose .key-fact strong {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: var(--pg-violet-deep);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ---- references and source notes ---- */
+
+.pg .prose .cite {
+  margin: 14px 0 22px;
+  padding: 12px 16px;
+  border-left: 0;
+  border-radius: 18px;
+  background: var(--pg-card);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--pg-muted);
+}
+
+/* Several references in a row read as one list. */
+.pg .prose .cite + .cite {
+  margin-top: -16px;
+}
+
+.pg .prose .cite a {
+  color: #3b3b42;
+  text-decoration-color: rgba(17, 17, 20, 0.22);
+}
+
+/* ---- "Evidence: Strong." with the app's tick meter ---- */
+
+.pg .prose .evidence {
+  margin: 12px 0 10px;
+  padding-left: 0;
+  border-left: 0;
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+
+.pg .prose .evidence-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 6px;
+  padding: 5px 11px 5px 10px;
+  border-radius: 10px;
+  background: #ececf0;
+  color: var(--pg-ink);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.3;
+  vertical-align: 1px;
+}
+
+.pg .prose .evidence-ticks {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.pg .prose .evidence-tick {
+  width: 4px;
+  height: 13px;
+  border-radius: 2px;
+  background: rgba(17, 17, 20, 0.12);
+}
+
+.pg .prose .evidence-tick-on {
+  background: var(--pg-ink);
+}
+
+/* ---- exercise cards: the app's clip beside the steps ---- */
+
+.pg .prose .exercise-detail {
+  margin: 26px 0;
+}
+
+.pg .prose .exercise-detail:has(.exercise-media),
+.pg .prose .exercise-detail:has(.slot),
+.pg .prose .exercise-detail.exercise-text {
+  align-items: center;
+  padding: 14px 26px 14px 14px;
+  border-radius: 36px;
+  background: var(--pg-card);
+}
+
+.pg .prose .exercise-detail:has(.exercise-media) {
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 28px;
+}
+
+.pg .prose .exercise-detail:has(.slot) {
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 28px;
+  padding: 18px 28px 18px 18px;
+}
+
+.pg .prose .exercise-detail.exercise-text {
+  padding: 24px 28px;
+}
+
+.pg .prose .exercise-detail h3 {
+  margin: 4px 0 8px;
+  font-size: 22px;
+}
+
+.pg .prose .exercise-detail p {
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+
+.pg .prose .exercise-detail .slot {
+  width: 150px;
+  max-width: none;
+}
+
+.pg .prose .exercise-media {
+  margin: 0;
+}
+
+.pg .prose .exercise-media-frame {
+  border-radius: 26px;
+  background: #e9e9ee;
+  box-shadow: none;
+}
+
+.pg .prose .exercise-media figcaption {
+  margin-top: 10px;
+  padding: 0 6px 4px;
+  font-size: 13px;
+}
+
+/* The phone frame keeps its titanium rim and bezel; no shadow under it. */
+.pg .phone-body {
+  box-shadow:
+    inset 0 0 0 0.35cqi rgba(255, 255, 255, 0.22),
+    inset 0 0 0 1.1cqi #050506;
+}
+
+/* "Stop if…": said plainly, in ink. */
+.pg .prose .stop {
+  color: var(--pg-ink);
+  font-weight: 600;
+}
+
+/* ---- numbered exercises without a clip ---- */
+
+.pg .prose .exercises li {
+  margin: 0 0 10px;
+  padding: 20px 24px 18px 66px;
+  border: 0;
+  border-radius: 28px;
+  background: var(--pg-card);
+}
+
+.pg .prose .exercises li::before {
+  left: 22px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: var(--pg-ink);
+  font-size: 14px;
+}
+
+.pg .prose .exercises h3 {
+  margin: 3px 0 0;
+  font-size: 19px;
+}
+
+.pg .prose .exercises .dose {
+  display: inline-block;
+  margin: 10px 0 0;
+  padding: 5px 11px;
+  border-radius: 10px;
+  background: rgba(139, 92, 246, 0.12);
+  color: var(--pg-violet-deep);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.pg .prose .exercises p {
+  font-size: 16.5px;
+}
+
+/* ---- the medical notice ---- */
+
+.pg .prose .notice {
+  margin: 36px 0 28px;
+  padding: 18px 22px;
+  border-left: 0;
+  border-radius: 24px;
+  background: var(--pg-card);
+  font-size: 15px;
+  line-height: 1.55;
+  color: #3b3b42;
+}
+
+/* ---- "Updated <date>", and the closing line before the badge ---- */
+
+.pg .prose .updated-line {
+  display: inline-flex;
+  margin: 40px 0 0;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background: var(--pg-card);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--pg-muted);
+}
+
+.pg .prose p.updated {
+  font-size: 15px;
+  color: var(--pg-muted);
+}
+
+/* "Start with 5 minutes a day." in the display face, over the badge. */
+.pg .prose .cta-line {
+  margin: 48px 0 0;
+  font-family: var(--font-display), var(--font-body);
+  font-size: clamp(30px, 4.4vw, 48px);
+  font-weight: 400;
+  line-height: 1.04;
+  text-align: center;
+  text-transform: uppercase;
+  text-wrap: balance;
+  color: var(--pg-ink);
+}
+
+.pg:lang(ru) .prose .cta-line {
+  font-size: clamp(24px, 3.6vw, 38px);
+  line-height: 1.12;
+}
+
+.pg .prose .store {
+  margin-top: 28px;
+}
+
+/* ---- related guides: cards, as the home page's guides ---- */
+
+.pg .prose .related {
+  margin: clamp(64px, 8vw, 96px) 0 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.pg .prose .related h2 {
+  margin: 0 0 22px;
+  font-family: var(--font-display), var(--font-body);
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 400;
+  line-height: 1.04;
+  text-transform: uppercase;
+  color: var(--pg-ink);
+}
+
+.pg:lang(ru) .prose .related h2 {
+  font-size: clamp(26px, 3.4vw, 38px);
+}
+
+.pg .prose .related ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pg .prose .related li {
+  position: relative;
+  margin: 0;
+  padding: 22px 24px 24px;
+  border-radius: 28px;
+  background: var(--pg-card);
+  transition: background-color 0.25s ease;
+}
+
+.pg .prose .related li:hover {
+  background: #ececf0;
+}
+
+.pg .prose .related a {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.2px;
+  color: var(--pg-ink);
+  text-decoration: none;
+}
+
+/* The whole card is the link. */
+.pg .prose .related a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.pg .prose .related a:focus-visible {
+  outline: none;
+}
+
+.pg .prose .related a:focus-visible::after {
+  outline: 3px solid #0a6cff;
+  outline-offset: 3px;
+}
+
+.pg .prose .related span {
+  display: block;
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--pg-muted);
+}
+
+/* ---- the exercise library ---- */
+
+.pg .prose .library {
+  gap: 10px;
+  margin: 20px 0 8px;
+}
+
+.pg .prose .library a {
+  gap: 14px;
+  padding: 10px 16px 10px 10px;
+  border: 0;
+  border-radius: 24px;
+  background: var(--pg-card);
+  transition: background-color 0.25s ease;
+}
+
+.pg .prose .library a:hover {
+  background: #ececf0;
+}
+
+.pg .prose .library img {
+  border-radius: 16px;
+}
+
+.pg .prose .library strong {
+  font-size: 16.5px;
+  letter-spacing: -0.2px;
+}
+
+/* ---- printable sheets ---- */
+
+.pg .prose .printable {
+  gap: 20px;
+  padding: 16px 20px 16px 16px;
+  border: 0;
+  border-radius: 32px;
+  background: var(--pg-card);
+}
+
+.pg .prose .printable img {
+  border: 1px solid var(--pg-line);
+  border-radius: 14px;
+}
+
+.pg .prose .printable h2 {
+  font-size: 20px;
+  letter-spacing: -0.2px;
+}
+
+.pg .prose .printable-download {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 14px;
+  background: var(--pg-ink);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pg .prose .printable-box {
+  margin: 22px 0;
+  padding: 16px 20px;
+  border: 0;
+  border-radius: 24px;
+  background: var(--pg-card);
+  font-size: 15.5px;
+}
+
+/* ---- the email form ---- */
+
+.pg .email-signup {
+  margin: 26px 0;
+  padding: 22px 24px 18px;
+  border: 0;
+  border-radius: 28px;
+  background: var(--pg-card);
+}
+
+.pg .email-signup .email-signup-row input[type='email'] {
+  min-height: 48px;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.pg .email-signup .email-signup-row button {
+  min-height: 48px;
+  border-radius: 14px;
+}
+
+/* ---- the reviewer, on About ---- */
+
+.pg .prose .reviewer-card > div {
+  padding: 20px;
+  border-radius: 32px;
+  background: var(--pg-card);
+}
+
+/* ------------------------------------------------------- questions -- */
+
+/*
+ * The home page's question rows (components/home/faq.css), on white: a
+ * numbered row per question on the app's card colour, a plus that turns into
+ * a minus, and the open one raised in the violet with the button filled.
+ */
+.pg .pgfaq {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 22px 0 10px;
+}
+
+.pg .pgfaq-item {
+  interpolate-size: allow-keywords;
+  border-radius: 28px;
+  background-color: var(--pg-card);
+  box-shadow: inset 0 0 0 1px transparent;
+  transition:
+    background-color 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+.pg .pgfaq-item[open] {
+  background-color: rgba(139, 92, 246, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(124, 92, 255, 0.14);
+}
+
+.pg .pgfaq .pgfaq-q {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr) 44px;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 14px 14px 20px;
+  border-radius: 28px;
+  cursor: pointer;
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pg .pgfaq .pgfaq-q::-webkit-details-marker {
+  display: none;
+}
+
+.pg .pgfaq .pgfaq-q::marker {
+  content: '';
+}
+
+.pg .pgfaq .pgfaq-q:focus-visible {
+  outline: 2px solid var(--pg-violet);
+  outline-offset: 2px;
+}
+
+.pg .pgfaq .pgfaq-num {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: rgba(17, 17, 20, 0.07);
+  color: var(--pg-muted);
+  font-size: 13px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  transition:
+    background-color 0.45s ease,
+    color 0.45s ease;
+}
+
+.pg .pgfaq-item[open] .pgfaq-num {
+  background: var(--pg-ink);
+  color: #fff;
+}
+
+.pg .pgfaq .pgfaq-qtext {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.32;
+  letter-spacing: -0.2px;
+  text-transform: none;
+  color: var(--pg-ink);
+}
+
+.pg .pgfaq .pgfaq-toggle {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 15px;
+  background: #fff;
+  color: var(--pg-ink);
+  transition:
+    background-color 0.45s ease,
+    color 0.45s ease;
+}
+
+.pg .pgfaq-item[open] .pgfaq-toggle {
+  background: var(--pg-violet);
+  color: #fff;
+}
+
+/* Plus and minus share the square and trade places with a quarter turn. */
+.pg .pgfaq .pgfaq-plus,
+.pg .pgfaq .pgfaq-minus {
+  position: absolute;
+  transition:
+    opacity 0.35s ease,
+    rotate 0.5s var(--pg-ease),
+    scale 0.5s var(--pg-ease);
+}
+
+.pg .pgfaq .pgfaq-minus {
+  opacity: 0;
+  rotate: -90deg;
+  scale: 0.6;
+}
+
+.pg .pgfaq-item[open] .pgfaq-plus {
+  opacity: 0;
+  rotate: 90deg;
+  scale: 0.6;
+}
+
+.pg .pgfaq-item[open] .pgfaq-minus {
+  opacity: 1;
+  rotate: 0deg;
+  scale: 1;
+}
+
+/* A closed row answers the pointer with colour alone. */
+@media (hover: hover) {
+  .pg .pgfaq-item:not([open]):hover {
+    background-color: #ececf0;
+  }
+}
+
+/* The answer lines up under the question, past the number. */
+.pg .pgfaq .pgfaq-a {
+  padding: 0 74px 22px calc(20px + 26px + 16px);
+}
+
+.pg .pgfaq .pgfaq-a p {
+  max-width: 68ch;
+  margin: 0 0 12px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.pg .pgfaq .pgfaq-a > :last-child {
+  margin-bottom: 0;
+}
+
+.pg .pgfaq .pgfaq-a .cite {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+@supports (interpolate-size: allow-keywords) {
+  .pg .pgfaq-item::details-content {
+    block-size: 0;
+    overflow: hidden;
+    transition:
+      block-size 0.5s var(--pg-ease),
+      content-visibility 0.5s allow-discrete;
+  }
+
+  .pg .pgfaq-item[open]::details-content {
+    block-size: auto;
+  }
+
+  .pg .pgfaq .pgfaq-a {
+    opacity: 0;
+    translate: 0 -8px;
+    transition:
+      opacity 0.35s ease,
+      translate 0.5s var(--pg-ease);
+  }
+
+  .pg .pgfaq-item[open] .pgfaq-a {
+    opacity: 1;
+    translate: 0 0;
+    transition-delay: 0.08s;
+  }
+}
+
+/* The same rows drawn open, for a page whose questions are plain headings
+   (the runners pages): numbered, raised, no button. */
+.pg .prose section.faq {
+  counter-reset: pgfaq;
+}
+
+.pg .prose section.faq > div:not(.pgfaq) {
+  counter-increment: pgfaq;
+  position: relative;
+  margin: 0 0 8px;
+  padding: 18px 24px 20px 62px;
+  border-radius: 28px;
+  background: rgba(139, 92, 246, 0.1);
+}
+
+.pg .prose section.faq > div:not(.pgfaq)::before {
+  content: counter(pgfaq);
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: var(--pg-ink);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.pg .prose section.faq > div:not(.pgfaq) h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.pg .prose section.faq > div:not(.pgfaq) p {
+  margin: 0;
+  font-size: 17px;
+}
+
+@supports (corner-shape: superellipse(1.5)) {
+  .pg .pgfaq-item,
+  .pg .pgfaq .pgfaq-q,
+  .pg .pgfaq .pgfaq-num,
+  .pg .pgfaq .pgfaq-toggle,
+  .pg .prose section.faq > div:not(.pgfaq),
+  .pg .prose .table-wrap,
+  .pg .prose blockquote,
+  .pg .prose figure.anatomy,
+  .pg .prose .takeaways,
+  .pg .prose .takeaways h2,
+  .pg .prose .takeaways li::before,
+  .pg .prose .exercise-list,
+  .pg .prose .exercise-list h2,
+  .pg .prose .exercise-list .dose,
+  .pg .prose .toc,
+  .pg .prose .toc h2,
+  .pg .prose .key-fact,
+  .pg .prose .cite,
+  .pg .prose .evidence-chip,
+  .pg .prose .exercise-detail,
+  .pg .prose .exercise-media-frame,
+  .pg .prose .exercises li,
+  .pg .prose .exercises .dose,
+  .pg .prose .notice,
+  .pg .prose .updated-line,
+  .pg .prose .related li,
+  .pg .prose .library a,
+  .pg .prose .printable,
+  .pg .prose .printable-download,
+  .pg .prose .printable-box,
+  .pg .email-signup,
+  .pg .prose .reviewer-card > div {
+    corner-shape: superellipse(1.5);
+  }
+}
+
+/* ------------------------------------------------ the app, in a card -- */
+
+/*
+ * components/AppCallout.tsx: the home page's closing card, small. The app's
+ * dark surface (#111113), the icon's blues lighting the phone from below, the
+ * phone rising out of the bottom edge, and "Get the app" as the app's primary
+ * button on a dark screen: white, ink label, its 0.42 corner.
+ */
+.pg .prose .pg-app {
+  --pg-pw: 230px;
+  /* How much of the phone shows above the card's edge. */
+  --pg-show: 0.56;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--pg-pw);
+  gap: 32px;
+  margin: 8px 0 36px;
+  padding: 0 40px;
+  overflow: hidden;
+  border-radius: 40px;
+  background:
+    radial-gradient(42% 70% at 82% 112%, rgba(24, 216, 253, 0.55), transparent 72%),
+    radial-gradient(44% 64% at 96% 18%, rgba(22, 82, 255, 0.6), transparent 72%),
+    radial-gradient(52% 70% at 0% 0%, rgba(139, 92, 246, 0.3), transparent 70%),
+    #111113;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.07);
+  color: #fff;
+}
+
+.pg .prose .pg-app-copy {
+  align-self: center;
+  padding-block: 36px;
+}
+
+.pg .prose .pg-app-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+  line-height: 1;
+  color: #fff;
+}
+
+.pg .prose .pg-app-brand img {
+  display: block;
+  border-radius: 8px;
+}
+
+.pg .prose .pg-app-lead {
+  margin: 16px 0 0;
+  font-size: 19px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.pg .prose .pg-app-get {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+  min-height: 58px;
+  padding: 0 28px;
+  border-radius: var(--radius-button-lg, 24px);
+  background: #fff;
+  color: var(--pg-ink);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+.pg .prose .pg-app-get:active {
+  opacity: 0.86;
+}
+
+.pg .prose .pg-app-get:focus-visible {
+  outline: 3px solid #18d8fd;
+  outline-offset: 3px;
+}
+
+.pg .prose .pg-app-get svg {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin-top: -2px;
+}
+
+/* The well is the card's bottom edge for the phone. */
+.pg .prose .pg-app-well {
+  position: relative;
+  align-self: end;
+  width: var(--pg-pw);
+  height: calc(var(--pg-pw) * 2.064 * var(--pg-show));
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.pg .prose .pg-app-phone {
+  position: relative;
+  container-type: inline-size;
+}
+
+.pg .prose .pg-app-phone > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The home hero's Dynamic Island (`.hero-island`), value for value. */
+.pg .prose .pg-app-island {
+  position: absolute;
+  top: 5.6cqi;
+  left: 50%;
+  translate: -50% 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 1.8cqi;
+  height: 10.4cqi;
+  min-width: 34cqi;
+  padding: 0 1.8cqi 0 1.4cqi;
+  border-radius: 999px;
+  background: #000;
+  box-shadow: 0 0 0 0.5cqi rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 3.7cqi;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.pg .prose .pg-app-island img {
+  display: block;
+  width: 6cqi;
+  height: 6cqi;
+  border-radius: 50%;
+}
+
+.pg .prose .pg-app-island-name {
+  flex: 1;
+  text-align: left;
+}
+
+/* A Live Activity's progress ring, in the icon's cyan. */
+.pg .prose .pg-app-island-ring {
+  width: 4.6cqi;
+  height: 4.6cqi;
+  border-radius: 50%;
+  background:
+    radial-gradient(closest-side, #000 68%, transparent 70%),
+    conic-gradient(#18d8fd 0 68%, rgba(255, 255, 255, 0.18) 68% 100%);
+}
+
+/* The phone rises out of the well the first time the card is seen. */
+.pg .pg-app[data-js] .pg-app-phone {
+  translate: 0 36%;
+  transition: translate 1.3s var(--pg-ease) 0.1s;
+}
+
+.pg .pg-app[data-seen] .pg-app-phone {
+  translate: 0 0;
+}
+
+@supports (corner-shape: superellipse(1.5)) {
+  .pg .prose .pg-app,
+  .pg .prose .pg-app-get {
+    corner-shape: superellipse(1.5);
+  }
+}
+
+/* ------------------------------------------------------------ motion -- */
+
+/* The band arrives once, on load: the chips drop and tilt into place, the
+   title and the chips under it rise. No loops anywhere on these pages. */
+@media (prefers-reduced-motion: no-preference) {
+  .pg .pg-head-inner > .pg-title,
+  .pg .pg-head-inner > .pg-meta,
+  .pg .pg-head-hero .hero > * {
+    animation: pg-rise 1s var(--pg-ease) both;
+  }
+
+  .pg .pg-head-inner > .pg-title,
+  .pg .pg-head-hero .hero > :nth-child(2) {
+    animation-delay: 0.08s;
+  }
+
+  .pg .pg-head-inner > .pg-meta,
+  .pg .pg-head-hero .hero > :nth-child(n + 3) {
+    animation-delay: 0.2s;
+  }
+
+  .pg .pg-kicker .kick-num {
+    animation: pg-num 1s var(--pg-ease) 0.05s both;
+  }
+
+  .pg .pg-kicker .kick-label {
+    animation: pg-label 1s var(--pg-ease) 0.12s both;
+  }
+}
+
+@keyframes pg-rise {
+  from {
+    opacity: 0;
+    translate: 0 28px;
+  }
+}
+
+@keyframes pg-num {
+  from {
+    opacity: 0;
+    translate: 0 -18px;
+    rotate: -24deg;
+  }
+}
+
+@keyframes pg-label {
+  from {
+    opacity: 0;
+    translate: 0 -18px;
+    rotate: 18deg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pg .pg-app[data-js] .pg-app-phone {
+    translate: none;
+    transition: none;
+  }
+
+  .pg .pgfaq-item,
+  .pg .pgfaq .pgfaq-num,
+  .pg .pgfaq .pgfaq-toggle,
+  .pg .pgfaq .pgfaq-plus,
+  .pg .pgfaq .pgfaq-minus,
+  .pg .pgfaq .pgfaq-a,
+  .pg .prose .related li,
+  .pg .prose .library a {
+    transition: none;
+  }
+
+  /* On its own: a browser without the pseudo-element drops the whole rule. */
+  .pg .pgfaq-item::details-content {
+    transition: none;
+  }
+
+  .pg .pgfaq .pgfaq-a {
+    opacity: 1;
+    translate: none;
+  }
+}
+
+/* ------------------------------------------------------------ phones -- */
+
+@media (max-width: 760px) {
+  .pg {
+    --pg-r: 36px;
+    /* The phone header's own height (12px + the 46px burger + 12px), so the
+       band does not move when ScrollState measures it. */
+    --pg-head: var(--head-h, 70px);
+  }
+
+  .pg .pg-head {
+    padding-inline: 16px;
+  }
+
+  .pg .pg-head .pg-kicker {
+    margin-bottom: 20px;
+  }
+
+  .pg .pg-head .pg-title {
+    --pg-size: clamp(34px, 10vw, 52px);
+  }
+
+  .pg .pg-head .pg-title[data-size='s'] {
+    --pg-size: clamp(40px, 12vw, 60px);
+  }
+
+  .pg .pg-head .pg-title[data-size='l'] {
+    --pg-size: clamp(30px, 8.6vw, 44px);
+  }
+
+  .pg:lang(ru) .pg-head .pg-title {
+    --pg-size: clamp(28px, 8.4vw, 42px);
+  }
+
+  .pg:lang(ru) .pg-head .pg-title[data-size='s'] {
+    --pg-size: clamp(32px, 9.6vw, 48px);
+  }
+
+  .pg:lang(ru) .pg-head .pg-title[data-size='l'] {
+    --pg-size: clamp(24px, 7.2vw, 36px);
+  }
+
+  .pg .pg-head .byline {
+    gap: 6px;
+  }
+
+  .pg .pg-head .byline-chip,
+  .pg .pg-head .reviewer-line {
+    min-height: 32px;
+    padding: 5px 11px;
+    font-size: 13px;
+  }
+
+  .pg .pg-head .byline-author {
+    padding-left: 5px;
+  }
+
+  .pg .pg-head p.updated {
+    font-size: 14px;
+  }
+
+  .pg .pg-head-hero .hero h1 {
+    font-size: clamp(40px, 12vw, 60px);
+  }
+
+  .pg:lang(ru) .pg-head-hero .hero h1 {
+    font-size: clamp(28px, 8.9vw, 44px);
+  }
+
+  .pg .pg-sheet .prose {
+    padding-inline: 20px;
+  }
+
+  .pg .prose p,
+  .pg .prose li {
+    font-size: 17px;
+  }
+
+  .pg .prose .lede {
+    font-size: 19px;
+  }
+
+  .pg .pg-sheet .prose > h2,
+  .pg .pg-sheet .prose > section > h2 {
+    margin-top: 52px;
+    font-size: min(clamp(28px, 8.2vw, 36px), calc(98cqi / var(--pg-fit, 1)));
+  }
+
+  .pg:lang(ru) .pg-sheet .prose > h2,
+  .pg:lang(ru) .pg-sheet .prose > section > h2 {
+    font-size: min(clamp(22px, 6.8vw, 30px), calc(98cqi / var(--pg-fit, 1)));
+  }
+
+  .pg .prose h3 {
+    font-size: 20px;
+  }
+
+  .pg .prose .table-wrap {
+    margin-inline: -4px;
+    padding: 4px 16px;
+    border-radius: 24px;
+  }
+
+  .pg .prose blockquote {
+    padding: 22px 22px;
+    border-radius: 26px;
+  }
+
+  .pg .prose .takeaways,
+  .pg .prose .exercise-list,
+  .pg .prose .toc {
+    padding: 22px 18px 10px;
+    border-radius: 28px;
+  }
+
+  .pg .prose .takeaways li {
+    font-size: 16.5px;
+  }
+
+  .pg .prose .exercise-list::after {
+    top: 6px;
+    right: 10px;
+    width: 54px;
+    height: 54px;
+  }
+
+  /* The dose goes under the name, as the app's second line. */
+  .pg .prose .exercise-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .pg .prose .exercise-list li::before {
+    top: 13px;
+    translate: none;
+  }
+
+  .pg .prose .exercise-list .dose {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .pg .prose .exercise-detail:has(.exercise-media),
+  .pg .prose .exercise-detail:has(.slot) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    padding: 12px 12px 18px;
+    border-radius: 30px;
+  }
+
+  .pg .prose .exercise-detail:has(.exercise-media) > div:last-child,
+  .pg .prose .exercise-detail:has(.slot) > div:last-child {
+    padding-inline: 8px;
+  }
+
+  .pg .prose .exercise-detail:has(.slot) .slot {
+    width: 150px;
+    margin: 6px auto 0;
+  }
+
+  .pg .prose .exercise-media {
+    max-width: none;
+  }
+
+  .pg .prose .exercise-media-frame {
+    border-radius: 22px;
+  }
+
+  .pg .prose .exercise-detail.exercise-text {
+    padding: 20px 20px;
+    border-radius: 28px;
+  }
+
+  .pg .prose .exercises li {
+    padding: 18px 18px 16px 58px;
+  }
+
+  .pg .prose .exercises li::before {
+    left: 16px;
+    top: 18px;
+  }
+
+  .pg .prose .related ul {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pg .prose .printable {
+    flex-direction: column;
+  }
+
+  .pg .prose .printable img {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .pg .pgfaq-item,
+  .pg .pgfaq .pgfaq-q {
+    border-radius: 24px;
+  }
+
+  .pg .pgfaq .pgfaq-q {
+    grid-template-columns: 24px minmax(0, 1fr) 40px;
+    gap: 12px;
+    padding: 12px 10px 12px 14px;
+  }
+
+  .pg .pgfaq .pgfaq-num {
+    width: 24px;
+    height: 24px;
+  }
+
+  .pg .pgfaq .pgfaq-qtext {
+    font-size: 16.5px;
+  }
+
+  .pg .pgfaq .pgfaq-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+  }
+
+  .pg .pgfaq .pgfaq-plus,
+  .pg .pgfaq .pgfaq-minus {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* On a phone the answer takes the row's full width. */
+  .pg .pgfaq .pgfaq-a {
+    padding: 0 16px 18px;
+  }
+
+  .pg .pgfaq .pgfaq-a p {
+    font-size: 16px;
+  }
+
+  .pg .prose section.faq > div:not(.pgfaq) {
+    padding: 16px 18px 18px 52px;
+  }
+
+  .pg .prose section.faq > div:not(.pgfaq)::before {
+    left: 14px;
+    top: 17px;
+  }
+
+  /* The card stacks: the words, then the phone rising from the edge. */
+  .pg .prose .pg-app {
+    --pg-pw: 200px;
+    --pg-show: 0.46;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    padding: 0 22px;
+    border-radius: 32px;
+  }
+
+  .pg .prose .pg-app-copy {
+    padding-block: 28px 0;
+  }
+
+  .pg .prose .pg-app-lead {
+    font-size: 17px;
+  }
+
+  /* Full width, and allowed a second line: «Скачать приложение» at 320px. */
+  .pg .prose .pg-app-get {
+    width: 100%;
+    min-height: 56px;
+    padding: 0 16px;
+    font-size: 17px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .pg .prose .pg-app-well {
+    justify-self: center;
+    margin-top: 26px;
+  }
+}
+
+/* -------------------------------------- the header on a page with no band -- */
+
+/*
+ * A page that opens on something other than a title (the "subscribed" page)
+ * has no blue under the header, so the header is drawn as it is once the
+ * page scrolls: the logo in ink, the nav on the icon's deep blue. The page
+ * starts below it.
+ */
+body:has(> .masthead-float):not(:has(.pg-head, .hero-stage)) {
+  padding-top: var(--head-h, 94px);
+}
+
+body:not(:has(.pg-head, .hero-stage)) .masthead-float .brand {
+  color: var(--ink);
+}
+
+body:not(:has(.pg-head, .hero-stage)) .masthead-float .nav {
+  background: rgba(8, 40, 200, 0.86);
+  box-shadow: none;
+}
+
+body:not(:has(.pg-head, .hero-stage)) .masthead-float .download {
+  box-shadow: inset 0 0 0 1px rgba(17, 17, 20, 0.08);
+}
+
+body:not(:has(.pg-head, .hero-stage)) .handoff {
+  min-height: calc(100vh - var(--head-h, 94px));
+}
+
+@media (max-width: 760px) {
+  body:not(:has(.pg-head, .hero-stage)) .masthead-float .menu-toggle {
+    background: rgba(8, 40, 200, 0.9);
+    color: #fff;
+  }
+}

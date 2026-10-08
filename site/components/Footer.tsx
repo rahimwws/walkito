@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { GlobeIcon } from '@phosphor-icons/react/dist/ssr/Globe';
 
 import './footer.css';
+import './footer-fix.css';
 import { BackToTop } from '@/components/BackToTop';
+import { LangPicker } from '@/components/LangPicker';
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 
 import { SocialLinks } from '@/components/SocialLinks';
@@ -31,7 +32,7 @@ import { GROUP_HEADING, NAV_GROUPS, NAV_LABEL, NAV_LABEL_ES, NAV_LABEL_RU, type 
  */
 const FOOTER_APP: Record<Lang, { ios: string; android: string }> = {
   en: { ios: 'Walkito on the App Store', android: 'Walkito on Google Play' },
-  ru: { ios: 'Walkito в App Store', android: 'Walkito в Google Play' },
+  ru: { ios: 'Walkito в App Store', android: 'Walkito в Google Play' },
   es: { ios: 'Walkito en el App Store', android: 'Walkito en Google Play' },
   pt: { ios: 'Walkito na App Store', android: 'Walkito no Google Play' },
   fr: { ios: "Walkito sur l'App Store", android: 'Walkito sur Google Play' },
@@ -60,7 +61,9 @@ function Column({ heading, links }: { heading: string; links: { href: string; la
   // On a phone the script at the end of the footer folds the sections, so the
   // footer is a short list of headings instead of sixty links.
   return (
-    <details className={split ? 'ft-col ft-col-wide' : 'ft-col'} open>
+    // suppressHydrationWarning: on a phone the inline script below closes the
+    // sections before React hydrates, so the attribute differs on purpose.
+    <details className={split ? 'ft-col ft-col-wide' : 'ft-col'} open suppressHydrationWarning>
       <summary className="ft-heading">{heading}</summary>
       <ul className={split ? 'ft-list ft-split' : 'ft-list'}>
         {links.map((l) => (
@@ -76,7 +79,7 @@ function Column({ heading, links }: { heading: string; links: { href: string; la
 const TAGLINE: Record<Lang, string> = {
   en: 'Daily exercise plans for heel, foot and leg pain, built on clinical guidelines.',
   es: 'Planes diarios de ejercicios para el dolor de talón, pie y pierna, basados en guías clínicas.',
-  ru: 'Ежедневные планы упражнений при боли в пятке, стопе и ногах на основе клинических рекомендаций.',
+  ru: 'Ежедневные планы упражнений при боли в пятке, стопе и ногах на основе клинических рекомендаций.',
   pt: 'Planos diários de exercícios para dor no calcanhar, no pé e na perna, baseados em diretrizes clínicas.',
   fr: "Des programmes d'exercices quotidiens pour la douleur au talon, au pied et à la jambe, fondés sur les recommandations cliniques.",
   it: 'Piani di esercizi quotidiani per il dolore a tallone, piede e gamba, basati sulle linee guida cliniche.',
@@ -217,20 +220,16 @@ export function Footer({
             <div className="ft-meta">
               <p className="ft-copy">© {new Date().getFullYear()} Walkito</p>
               {switcher && (
-                <nav aria-label={c.language} className="ft-langs">
-                  <GlobeIcon className="ft-globe" size={18} weight="fill" aria-hidden />
-                  {LANGS.filter((l) => switcher[l]).map((l) =>
-                    l === lang ? (
-                      <span key={l} aria-current="page">
-                        {LANG_NAMES[l]}
-                      </span>
-                    ) : (
-                      <a key={l} href={switcher[l]} hrefLang={l} lang={l}>
-                        {LANG_NAMES[l]}
-                      </a>
-                    ),
-                  )}
-                </nav>
+                <LangPicker
+                  label={c.language}
+                  current={LANG_NAMES[lang]}
+                  options={LANGS.filter((l) => switcher[l]).map((l) => ({
+                    lang: l,
+                    name: LANG_NAMES[l],
+                    href: switcher[l]!,
+                    current: l === lang,
+                  }))}
+                />
               )}
             </div>
             <p className="ft-notice">{c.notice}</p>

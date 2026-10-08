@@ -75,9 +75,10 @@
 .hfaq .hfaq-line {
   display: block;
   overflow: hidden;
-  /* Room for descenders and the question mark's dot inside the clip. */
-  padding-block: 0.06em;
-  margin-block: -0.06em;
+  /* Room inside the clip for descenders and the question mark's dot below,
+     and above for the marks over capitals (É, Ü, Ñ, Й). */
+  padding-block: 0.2em 0.06em;
+  margin-block: -0.2em -0.06em;
 }
 
 .hfaq .hfaq-line > span {

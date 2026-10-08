@@ -28,7 +28,6 @@ export function aboutMetadata(about: About): Metadata {
       siteName: SITE_NAME,
       locale: OG_LOCALE[about.lang],
       type: 'website',
-      images: ['/opengraph-image'],
     },
   };
 }

@@ -33,10 +33,12 @@
   overflow-x: clip;
 }
 
-/* Anton's capitals fill the line at 0.96. Í, Й and Ё carry marks above the
-   capitals, so Russian and Spanish get a little more room between lines. */
+/* Anton's capitals fill the line at 0.96. Í, É, Ü, Й and Ё carry marks above
+   the capitals, so the languages that set them get a little more room. */
 :lang(ru) .hcta,
-:lang(es) .hcta {
+:lang(es) .hcta,
+:lang(pt) .hcta,
+:lang(de) .hcta {
   --hcta-lead: 1.08;
 }
 
@@ -247,7 +249,7 @@
   position: absolute;
   width: var(--hcta-tile);
   height: var(--hcta-tile);
-  border-radius: calc(var(--hcta-tile) * 0.3);
+  border-radius: 23%;
   pointer-events: auto;
 }
 
@@ -288,75 +290,18 @@
   --dl: -5.6s;
 }
 
+/* The face carries the tilt and the float; the network's own app icon
+   (components/BrandIcons.tsx) fills it, ground and mark. The tile reads its
+   corners and its hairline from these two properties. */
 .hcta .hcta-face {
+  --brand-radius: 23%;
+  --brand-ring: inset 0 0 0 1px rgba(255, 255, 255, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.3);
   display: grid;
   place-items: center;
   width: 100%;
   height: 100%;
-  border-radius: inherit;
-  color: #fff;
+  border-radius: 23%;
   rotate: var(--r);
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.28);
-}
-
-.hcta .hcta-face svg {
-  display: block;
-  width: 54%;
-  height: 54%;
-}
-
-/* The brands' own colours. */
-.hcta .hcta-yt .hcta-face {
-  background: #ff0000;
-}
-
-.hcta .hcta-ig .hcta-face {
-  background: radial-gradient(circle at 26% 108%, #feda75 0%, #fa7e1e 24%, #d62976 50%, #962fbf 76%, #4f5bd5 100%);
-}
-
-.hcta .hcta-tt .hcta-face {
-  background: #000;
-}
-
-.hcta .hcta-in .hcta-face {
-  background: #0a66c2;
-}
-
-/* The fill marks of Instagram and LinkedIn are a white square with the glyph
-   cut out; a little smaller, so the brand colour frames them. */
-.hcta .hcta-ig .hcta-face svg,
-.hcta .hcta-in .hcta-face svg {
-  width: 50%;
-  height: 50%;
-}
-
-/* TikTok's note, three deep: cyan up and left, red down and right, white on
-   top, each shifted by 3% of the tile. */
-.hcta .hcta-face .hcta-note {
-  --shift: calc(var(--hcta-tile) * 0.03);
-  position: relative;
-  display: block;
-  width: 54%;
-  height: 54%;
-}
-
-.hcta .hcta-face .hcta-note svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.hcta .hcta-face .hcta-note-cyan {
-  color: #25f4ee;
-  translate: calc(var(--shift) * -1) calc(var(--shift) * -1);
-}
-
-.hcta .hcta-face .hcta-note-red {
-  color: #fe2c55;
-  translate: var(--shift) var(--shift);
 }
 
 /* ---- stores and notice ---- */
@@ -452,6 +397,14 @@
   /* «КАЖДЫЙ ДЕНЬ.» at 40px is 274px, inside the 288px column at 320. */
   :lang(ru) .hcta {
     --hcta-fs: clamp(40px, 12.5vw, 60px);
+  }
+
+  /* «CHAQUE JOUR.», «IL TUO PIANO.» and «DEINE FÜSSE.» run about a fifth
+     wider than «EVERY DAY.», so each line stays one line on a phone. */
+  :lang(fr) .hcta,
+  :lang(it) .hcta,
+  :lang(de) .hcta {
+    --hcta-fs: clamp(44px, 14.5vw, 80px);
   }
 
   /* No room beside the lines: all four go under them, at the phone's edges,

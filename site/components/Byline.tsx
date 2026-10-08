@@ -1,3 +1,5 @@
+import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr/ArrowRight';
+
 import { CITE } from '@/lib/citations';
 import { TRANSLATED, type Lang } from '@/lib/i18n';
 import { reviewFor } from '@/lib/reviewer';
@@ -104,13 +106,27 @@ export function Byline({
 }) {
   const line = sourceLine(lang, cites, main);
   const review = page ? reviewFor(page) : null;
+  // Drawn as chips under the title (app/pages.css). The separators stay in the
+  // text, visually hidden, so the line still reads as one sentence to a screen
+  // reader and to anything that reads the page as text.
   return (
     <>
     <p className="byline">
-      <strong>{AUTHOR_NAME}</strong>
-      {line ? ` · ${line}` : ''}
-      {' · '}
-      <a href={howWeResearchHref(lang)}>{HOW_WE_RESEARCH[lang]} →</a>
+      <span className="byline-chip byline-author">
+        <img src="/icon-96.webp" alt="" width={20} height={20} />
+        <strong>{AUTHOR_NAME}</strong>
+      </span>
+      {line && (
+        <>
+          <span className="byline-sep"> · </span>
+          <span className="byline-chip">{line}</span>
+        </>
+      )}
+      <span className="byline-sep"> · </span>
+      <a className="byline-chip byline-link" href={howWeResearchHref(lang)}>
+        {HOW_WE_RESEARCH[lang]}
+        <ArrowRightIcon size={14} weight="bold" aria-hidden />
+      </a>
     </p>
     {review && (
       <p className="reviewer-line">

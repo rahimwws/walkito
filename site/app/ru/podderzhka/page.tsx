@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
-import { alternatesFor } from '@/lib/i18n';
+import { CHROME, alternatesFor } from '@/lib/i18n';
 import { SUPPORT_EMAIL } from '@/lib/site';
 
 /**
@@ -28,7 +28,7 @@ export default function SupportRu() {
     <>
       <Masthead lang="ru" />
 
-      <Prose className="shell prose">
+      <Prose className="shell prose" kicker={{ label: CHROME.ru.navSupport, lang: 'ru' }}>
         <h1>Поддержка</h1>
 
         <p className="updated">Что-то не так? Напишите нам. Ответит человек.</p>

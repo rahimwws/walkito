@@ -278,30 +278,6 @@ body {
 
 /* ---------------------------------------------------------------- proof --- */
 
-.proof {
-  /* Block-only. See the note on `.masthead`. */
-  padding-block: 84px 96px;
-}
-
-.proof h2 {
-  margin: 0 0 34px;
-  text-align: center;
-  font-family: var(--font-display), var(--font-body);
-  /* Same reason as the headline: `h2` is bold by default and Anton has no bold
-     to give, so without this the browser draws one itself. */
-  font-weight: 400;
-  font-size: clamp(28px, 4vw, 44px);
-  line-height: 1.1;
-  letter-spacing: 0;
-  text-transform: uppercase;
-}
-
-.quotes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 18px;
-}
-
 figure {
   margin: 0;
   padding: 26px;
@@ -351,23 +327,10 @@ figure a:hover {
   text-decoration: underline;
 }
 
-.proof.guides {
-  padding-top: 0;
-}
-
 figure h3 a {
   margin: 0;
   font-size: inherit;
   font-weight: inherit;
-}
-
-.proof .notice {
-  max-width: 620px;
-  margin: 34px auto 0;
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.55;
-  color: var(--muted);
 }
 
 figure figcaption {
@@ -426,202 +389,6 @@ figure figcaption b {
 
 .prose .social a:hover {
   color: var(--ink);
-}
-
-/* Under the founders' note on the home page, centred like the text above. */
-.story .social {
-  justify-content: center;
-  margin-top: 8px;
-}
-
-/* ---------------------------------------------------------------- footer -- */
-
-/* One soft panel: the brand and the download button on the left, every guide
-   in five short columns on the right. Every link stays in the page; on a
-   phone the columns fold into tap-to-open sections. */
-.footer {
-  padding: 56px 0 40px;
-}
-
-.footer .footer-panel {
-  display: grid;
-  gap: 32px;
-  padding: 40px;
-  border: 1px solid rgba(139, 92, 246, 0.14);
-  border-radius: 28px;
-  background:
-    radial-gradient(120% 140% at 0% 0%, rgba(139, 92, 246, 0.1), transparent 55%),
-    linear-gradient(180deg, rgba(139, 92, 246, 0.05), rgba(139, 92, 246, 0.015));
-}
-
-/* The brand row: logo and one line on the left, socials and the download
-   button on the right, a hairline under it. */
-.footer .footer-brand {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px 32px;
-  padding-bottom: 28px;
-  border-bottom: 1px solid rgba(139, 92, 246, 0.14);
-}
-
-.footer .footer-brand-text {
-  display: grid;
-  gap: 8px;
-  max-width: 420px;
-}
-
-.footer .footer-brand-actions {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.footer .footer-logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--ink);
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.footer .footer-logo img {
-  border-radius: 10px;
-}
-
-.footer .footer-brand p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.footer .footer-brand .store {
-  margin: 0;
-}
-
-/* A compact pill here: the big one belongs to the page body. */
-.footer .footer-brand .store a {
-  gap: 8px;
-  padding: 11px 20px;
-  font-size: 15px;
-  letter-spacing: -0.1px;
-}
-
-.footer .footer-brand .store svg {
-  width: 18px;
-  height: 18px;
-}
-
-.footer .footer-brand .social {
-  margin: 0;
-}
-
-.footer .footer-cols {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 28px 28px;
-}
-
-.footer .footer-stack {
-  display: grid;
-  gap: 24px;
-  align-content: start;
-}
-
-.footer .footer-heading {
-  display: block;
-  margin: 0 0 12px;
-  color: var(--violet-deep);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  list-style: none;
-  cursor: default;
-}
-
-.footer .footer-heading::-webkit-details-marker {
-  display: none;
-}
-
-.footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 9px;
-}
-
-.footer ul a {
-  color: rgba(17, 17, 20, 0.72);
-  font-size: 14px;
-  line-height: 1.35;
-  text-decoration: none;
-  transition: color 0.15s ease;
-}
-
-.footer ul a:hover {
-  color: var(--violet-deep);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.footer .footer-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px 24px;
-  margin-top: 20px;
-  padding: 0 8px;
-}
-
-.footer .footer-bottom p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-/* The language switcher: pills, so the reader in the wrong language sees it. */
-.footer .langs {
-  display: flex;
-  gap: 8px;
-  margin-left: auto;
-}
-
-.footer .langs a,
-.footer .langs span {
-  padding: 6px 14px;
-  border: 1px solid var(--hairline);
-  border-radius: 999px;
-  font-size: 13px;
-  text-decoration: none;
-}
-
-.footer .langs a {
-  color: var(--muted);
-  background: var(--paper);
-}
-
-.footer .langs a:hover {
-  color: var(--ink);
-  border-color: rgba(17, 17, 20, 0.25);
-}
-
-.footer .langs span {
-  color: var(--paper);
-  background: var(--ink);
-  border-color: var(--ink);
-  font-weight: 600;
-}
-
-@media (max-width: 1060px) {
-  .footer .footer-cols {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 /* ------------------------------------------------------------------ prose - */
@@ -972,13 +739,6 @@ figure figcaption b {
 
 /* ------------------------------------------------------------- home (en) -- */
 
-/* A longer headline than the page was drawn for: the second line is a whole
-   sentence, so the display size comes down a step to keep it to two or three
-   lines instead of five. */
-.hero-long h1 {
-  font-size: clamp(40px, 6.6vw, 84px);
-}
-
 .hero .byline {
   margin-top: 18px;
   font-size: 14px;
@@ -991,67 +751,6 @@ figure figcaption b {
 .hero .hero-small {
   margin-top: 16px;
   font-size: 15px;
-}
-
-/* Plain paragraphs under a display heading: the "why" sections that carry the
-   page's argument rather than a card grid. */
-.story {
-  padding-block: 84px 0;
-  text-align: center;
-}
-
-.story h2,
-.split h2 {
-  margin: 0 0 22px;
-  font-family: var(--font-display), var(--font-body);
-  font-weight: 400;
-  font-size: clamp(28px, 4vw, 44px);
-  line-height: 1.1;
-  text-transform: uppercase;
-}
-
-.story p {
-  max-width: 640px;
-  margin: 0 auto 16px;
-  font-size: clamp(16px, 1.5vw, 19px);
-  line-height: 1.6;
-  color: var(--muted);
-}
-
-.story .story-contact {
-  margin-top: 28px;
-  font-size: 16px;
-  color: var(--ink);
-}
-
-.story .story-contact a {
-  color: var(--ink);
-}
-
-/* Text beside a phone. The phone swaps sides on the second one so two in a
-   row do not read as the same block twice. */
-.split {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 56px;
-  padding-block: 84px 0;
-}
-
-.split p {
-  max-width: 520px;
-  margin: 0;
-  font-size: clamp(16px, 1.5vw, 19px);
-  line-height: 1.6;
-  color: var(--muted);
-}
-
-.split-flip {
-  grid-template-columns: auto 1fr;
-}
-
-.split-flip > :first-child {
-  order: 2;
 }
 
 /* A screenshot in a phone, or the phone-shaped place one will go. The whole
@@ -1166,39 +865,6 @@ figure figcaption b {
   transform: translateX(-50%);
 }
 
-/* Two phones side by side, the second slightly lower, as one picture. */
-.phone-pair {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  flex: none;
-}
-
-.phone-pair .slot {
-  width: 220px;
-}
-
-.phone-pair .slot + .slot {
-  margin-top: 56px;
-}
-
-@media (max-width: 760px) {
-  .phone-pair {
-    justify-content: center;
-    gap: 12px;
-  }
-
-  .phone-pair .slot,
-  .split .phone-pair .slot {
-    width: min(170px, 42vw);
-    margin-inline: 0;
-  }
-
-  .phone-pair .slot + .slot {
-    margin-top: 36px;
-  }
-}
-
 .slot-label {
   font-size: 14px;
   line-height: 1.4;
@@ -1216,61 +882,9 @@ figure figcaption b {
   height: 13px;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
-.gallery-item p {
-  margin: 16px 0 0;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.home-faq .faq {
-  max-width: 680px;
-  margin: 0 auto;
-}
-
-.home-faq .faq h3 {
-  margin: 0 0 8px;
-  font-size: 19px;
-}
-
-.home-faq .faq p {
-  font-size: 16px;
-  line-height: 1.55;
-  color: var(--muted);
-}
-
-.final {
-  text-align: center;
-}
-
-/* Four cards in one row rather than three and an orphan; two by two where
-   four do not fit. */
-.quotes-four {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-@media (max-width: 1000px) {
-  .quotes-four {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 /* A card section that leads straight into a split section, and one that
    follows a phone: the split carries the gap above it, and cards directly
    under a phone need a little air rather than none. */
-.proof-lead {
-  padding-bottom: 0;
-}
-
-.proof-follow {
-  padding-top: 56px;
-}
 
 @media (max-width: 760px) {
   .shell {
@@ -1349,55 +963,6 @@ figure figcaption b {
     margin-top: 36px;
   }
 
-  /* 96px of air under the fold is a desktop figure. On a phone it reads as the
-     page having ended. */
-  .proof {
-    padding-block: 52px 60px;
-  }
-
-  .proof h2 {
-    margin-bottom: 24px;
-  }
-
-  .story,
-  .split {
-    padding-block: 52px 0;
-  }
-
-  /* One column, text first, phone under it, on both split sections. */
-  .split,
-  .split-flip {
-    grid-template-columns: 1fr;
-    gap: 28px;
-    text-align: center;
-  }
-
-  .split-flip > :first-child {
-    order: 0;
-  }
-
-  .split p {
-    margin-inline: auto;
-  }
-
-  .split .slot {
-    width: min(240px, 64vw);
-    margin-inline: auto;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px 14px;
-  }
-
-  .quotes-four {
-    grid-template-columns: 1fr;
-  }
-
-  .proof-follow {
-    padding-top: 40px;
-  }
-
   figure {
     padding: 22px;
   }
@@ -1408,96 +973,6 @@ figure figcaption b {
 
   .prose h2 {
     margin-top: 30px;
-  }
-
-  .footer {
-    padding: 36px 0 32px;
-  }
-
-  /* On a phone the panel is one column and each guide group is a
-     tap-to-open row with a chevron. */
-  .footer .footer-panel {
-    padding: 28px 20px 12px;
-    border-radius: 24px;
-    gap: 24px;
-  }
-
-  .footer .footer-panel > *,
-  .footer .footer-cols > * {
-    min-width: 0;
-  }
-
-  .footer .footer-brand {
-    display: grid;
-    gap: 18px;
-    padding-bottom: 20px;
-  }
-
-  .footer .footer-brand-actions {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .footer .footer-cols {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .footer .footer-stack {
-    gap: 0;
-  }
-
-  .footer .footer-col {
-    border-top: 1px solid rgba(139, 92, 246, 0.14);
-  }
-
-  .footer .footer-cols > .footer-col:first-child {
-    border-top: 0;
-  }
-
-  .footer .footer-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 52px;
-    margin: 0;
-    cursor: pointer;
-  }
-
-  /* The same "+" as the questions on the home page, turning into a "×". */
-  .footer .footer-heading::after {
-    content: "+";
-    color: var(--muted);
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1;
-    transition: transform 0.2s ease;
-  }
-
-  .footer details[open] > .footer-heading::after {
-    transform: rotate(45deg);
-  }
-
-  .footer ul {
-    gap: 0;
-    padding-bottom: 12px;
-  }
-
-  .footer ul a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 40px;
-    font-size: 15px;
-  }
-
-  .footer .footer-bottom {
-    padding: 0 4px;
-  }
-
-  .footer .langs {
-    margin-left: 0;
-    width: 100%;
   }
 }
 
@@ -1697,51 +1172,12 @@ figure figcaption b {
   margin-top: var(--home-gap);
 }
 
-.home > section.shell.final {
-  margin-bottom: var(--home-gap);
-}
-
 /* "Is this for me?": four equal cards, each one link, tinted with one of the
    app's accent colours. */
 .who-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
-}
-
-.who-card {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  min-height: 230px;
-  padding: 28px;
-  border: 1px solid var(--hairline);
-  border-radius: 24px;
-  background: var(--tint);
-  color: var(--ink);
-  text-decoration: none;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-.who-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 36px rgba(17, 17, 20, 0.1);
-}
-
-.who-card:focus-visible {
-  outline: 3px solid var(--violet-deep);
-  outline-offset: 3px;
-}
-
-.who-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
-  border-radius: 999px;
-  background: var(--track);
-  color: var(--fill);
 }
 
 .who-goal {
@@ -1762,20 +1198,6 @@ figure figcaption b {
   height: 7px;
   border-radius: 999px;
   background: var(--fill);
-}
-
-.who-card h3 {
-  margin: 6px 0 0;
-  font-size: 21px;
-  font-weight: 700;
-  letter-spacing: -0.2px;
-}
-
-.who-card p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--muted);
 }
 
 .who-more {
@@ -1799,10 +1221,6 @@ figure figcaption b {
   background: var(--ink);
   color: #fff;
   transition: transform 0.18s ease;
-}
-
-.who-card:hover .who-arrow {
-  transform: translateX(3px);
 }
 
 /* The app's accents (src/shared/config/theme.ts), light mode. */
@@ -1830,119 +1248,18 @@ figure figcaption b {
   --tint: rgba(10, 132, 255, 0.05);
 }
 
-/* Home FAQ: native details, answer in the HTML, open on tap. */
-.faq-details details {
-  border-bottom: 1px solid var(--hairline);
-}
-
-.faq-details summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 18px 0;
-  cursor: pointer;
-  list-style: none;
-}
-
-.faq-details summary::-webkit-details-marker {
-  display: none;
-}
-
-.faq-details summary::after {
-  content: '+';
-  flex: none;
-  font-size: 26px;
-  line-height: 1;
-  color: var(--muted);
-  transition: transform 0.2s ease;
-}
-
-.faq-details details[open] summary::after {
-  transform: rotate(45deg);
-}
-
-.faq-details summary:focus-visible {
-  outline: 2px solid var(--violet-deep);
-  outline-offset: 4px;
-  border-radius: 6px;
-}
-
-.home-faq .faq-details summary h3 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.home-faq .faq-details details p {
-  margin: 0 0 20px;
-}
-
 /* The closing block: a card in the header's purple wash. */
-.final-card {
-  padding: 64px 28px;
-  border: 1px solid rgba(124, 92, 255, 0.18);
-  border-radius: 32px;
-  text-align: center;
-  background:
-    radial-gradient(70% 90% at 12% 0%, rgba(139, 92, 246, 0.28), transparent 70%),
-    radial-gradient(60% 80% at 90% 8%, rgba(109, 74, 239, 0.2), transparent 72%),
-    linear-gradient(180deg, #f2edff, #e9e1ff);
-}
-
-.final-card h2 {
-  margin: 0;
-  font-family: var(--font-display), var(--font-body);
-  font-weight: 400;
-  font-size: clamp(32px, 4.4vw, 54px);
-  line-height: 1.05;
-  text-transform: uppercase;
-}
-
-.final-card .store {
-  margin-top: 28px;
-}
-
-.final-small {
-  margin: 16px 0 0;
-  font-size: 15px;
-  color: var(--muted);
-}
-
-.final-notice {
-  max-width: 620px;
-  margin: 20px auto 0;
-  text-align: center;
-  font-size: 13px;
-  line-height: 1.55;
-  color: var(--muted);
-}
 
 @media (max-width: 760px) {
   .who-grid {
     grid-template-columns: 1fr;
     gap: 14px;
   }
-
-  .who-card {
-    min-height: 0;
-    padding: 22px;
-  }
-
-  .final-card {
-    padding: 44px 20px;
-    border-radius: 24px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .who-card,
   .who-arrow {
     transition: none;
-  }
-
-  .who-card:hover,
-  .who-card:hover .who-arrow {
-    transform: none;
   }
 }
 
@@ -1985,10 +1302,6 @@ figure figcaption b {
   .store svg {
     width: 20px;
     height: 20px;
-  }
-
-  .final-card {
-    padding-inline: 12px;
   }
 }
 
@@ -2094,63 +1407,6 @@ figcaption {
 :lang(ru) .prose h1 {
   /* 43px keeps «Политика конфиденциальности» (15.5em) on one line at 672px. */
   font-size: clamp(22px, 7.2vw, 43px);
-}
-
-:lang(ru) .proof h2,
-:lang(ru) .story h2,
-:lang(ru) .split h2 {
-  font-size: clamp(22px, 7vw, 44px);
-}
-
-@media (min-width: 1024px) {
-  :lang(ru) .hero-split h1 {
-    font-size: clamp(40px, 4.5vw, 52px);
-  }
-}
-
-/* The section with two phones side by side leaves its text a 207px column at
-   768px, one word to a line. Below 1024px it stacks as on a phone. */
-@media (min-width: 761px) and (max-width: 1023px) {
-  .split-flip {
-    grid-template-columns: 1fr;
-    gap: 36px;
-    text-align: center;
-  }
-
-  .split-flip > :first-child {
-    order: 0;
-  }
-
-  .split-flip p {
-    margin-inline: auto;
-  }
-
-  .split-flip .phone-pair {
-    justify-content: center;
-  }
-}
-
-/* The last two words of a plan card heading stay together where the card is
-   wide enough (Home.tsx, keepTail): one or two cards to a row from 375px, and
-   three to a row from 1080px. Between those, three cards share the row and
-   «опубликованных исследований» (281px at 18px) is wider than a card. The
-   Russian heading is a pixel smaller so the pair fits the 291px card at 1440. */
-@media (min-width: 375px) and (max-width: 880px), (min-width: 1080px) {
-  .quotes h3 .tail {
-    white-space: nowrap;
-  }
-}
-
-:lang(ru) .quotes figure h3 {
-  font-size: 18px;
-}
-
-/* Beside a phone the Russian heading has half the row: «План подстраивается»
-   is about 12.8em, and the column is 404px at 768. */
-@media (min-width: 761px) {
-  :lang(ru) .split h2 {
-    font-size: clamp(28px, 3.6vw, 38px);
-  }
 }
 
 /* Russian and Spanish headings: Й, Ё and the accented capitals (Ó, Í)
@@ -2562,7 +1818,7 @@ figcaption {
    under the fade and the headline. */
 .hero-device {
   position: relative;
-  height: calc(var(--pw) * 2.064 * 0.68);
+  height: calc(var(--pw) * 2.064 * 0.62);
   margin-inline: auto;
   max-width: 1040px;
   /* The phone stops here; the cards may still reach past the sides. */
@@ -2595,9 +1851,10 @@ figcaption {
   width: var(--pw);
   transform: translateX(-50%);
   container-type: inline-size;
-  /* Sinks into the band where the device box ends (68% down the phone). */
-  -webkit-mask-image: linear-gradient(180deg, #000 36%, transparent 66%);
-  mask-image: linear-gradient(180deg, #000 36%, transparent 66%);
+  /* Gone completely (56% down the phone) a little before the headline
+     starts, so the headline always sits on clean light, never on the screen. */
+  -webkit-mask-image: linear-gradient(180deg, #000 30%, transparent 56%);
+  mask-image: linear-gradient(180deg, #000 30%, transparent 56%);
 }
 
 .hero-main > img {
@@ -2656,158 +1913,65 @@ figcaption {
     conic-gradient(var(--icon-cyan) 0 68%, rgba(255, 255, 255, 0.18) 68% 100%);
 }
 
-/* ---- glass cards ---- */
+/* ---- the app's own pieces around the phone ---- */
 
-.glass-card {
+/*
+ * Each one is a component from the app (components/home/app-pieces), drawn
+ * at the app's sizes in points: `--ap-pt` makes one point a pixel or so from
+ * the phone's width, so the pieces grow and shrink with it. They float, and
+ * only while the hero is on screen.
+ */
+.hero-piece {
+  --ap-pt: clamp(0.74px, calc(var(--pw) / 380), 1.06px);
   position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.62);
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.85),
-    inset 0 1px 0 rgba(255, 255, 255, 1),
-    0 24px 50px rgba(2, 20, 120, 0.18);
-  backdrop-filter: blur(22px) saturate(1.6);
-  -webkit-backdrop-filter: blur(22px) saturate(1.6);
-  color: var(--ink);
-  font-weight: 700;
-  text-align: left;
-  white-space: nowrap;
+  z-index: 3;
+  display: block;
+  transform: rotate(var(--r, 0deg));
   animation: glass-float 7s ease-in-out infinite;
 }
 
-/* The two behind the phone: out of focus, as depth. */
+.hero-glass:not([data-live]) .hero-piece {
+  animation-play-state: paused;
+}
+
+/* The two behind the phone. */
 .card-nopain,
 .card-streak {
   z-index: 1;
-  filter: blur(0.6px);
 }
 
-.card-today,
-.card-calf {
-  z-index: 3;
-}
-
-/* The app's own check-in card: dark glass, the mascot, its words. */
+/* PainCheck's "No pain today", tipped as the app tips it. */
 .card-nopain {
-  --r: -9deg;
-  flex-direction: column;
-  gap: 6px;
-  width: 240px;
-  padding: 22px 18px 24px;
-  top: 10%;
-  left: calc(50% - var(--pw) * 0.5 - 210px);
-  background: rgba(24, 24, 30, 0.72);
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.22),
-    0 24px 50px rgba(2, 20, 120, 0.25);
-  color: #fff;
-  font-size: 21px;
-  text-align: center;
+  --r: 5deg;
+  top: 9%;
+  left: calc(50% - var(--pw) * 0.5 - 196px);
 }
 
-.card-nopain img {
-  width: 130px;
-  height: 130px;
-  display: block;
-}
-
+/* The streak capsule from Home's header, a size up: the header draws it
+   small, and here it stands on its own. */
 .card-streak {
-  --r: 7deg;
-  top: 18%;
-  right: calc(50% - var(--pw) * 0.5 - 180px);
-  padding: 14px 22px 14px 14px;
-  font-size: 19px;
-  border-radius: var(--radius-button);
+  --ap-pt: clamp(1.1px, calc(var(--pw) / 250), 1.6px);
+  --r: -6deg;
+  top: 17%;
+  right: calc(50% - var(--pw) * 0.5 - 104px);
   animation-delay: -3s;
 }
 
-.card-fire {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #fff1e6;
-  color: #ff8a2a;
-}
-
+/* A row of Today's list over the dock: the foot of the Home screen. High
+   enough that its foot clears the headline. */
 .card-today {
-  --r: 5deg;
-  top: 58%;
-  left: calc(50% - var(--pw) * 0.5 - 230px);
-  gap: 26px;
-  padding: 14px 14px 14px 26px;
-  font-size: 20px;
-  border-radius: 22px;
+  --r: -3deg;
+  top: 46%;
+  left: calc(50% - var(--pw) * 0.5 - 250px);
   animation-delay: -1.5s;
 }
 
-.card-start {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 12px 20px;
-  border-radius: var(--radius-item);
-  background: linear-gradient(180deg, #a78bfa, var(--violet));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 6px 16px rgba(139, 92, 246, 0.4);
-  color: #fff;
-  font-size: 16px;
-}
-
+/* The tests card from Progress. */
 .card-calf {
-  --r: 11deg;
-  top: 38%;
-  right: calc(50% - var(--pw) * 0.5 - 230px);
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
-  width: 300px;
-  padding: 24px 26px 0;
-  overflow: hidden;
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.82);
+  --r: 5deg;
+  top: 31%;
+  right: calc(50% - var(--pw) * 0.5 - 214px);
   animation-delay: -4.5s;
-}
-
-.card-label {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--muted);
-}
-
-.card-figure {
-  font-size: 42px;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-}
-
-.card-arrow {
-  color: #23a55a;
-}
-
-.card-bars {
-  display: flex;
-  align-items: flex-end;
-  gap: 8px;
-  width: 100%;
-  height: 92px;
-  margin-top: 12px;
-}
-
-.card-bars span {
-  flex: 1;
-  border-radius: 10px 10px 0 0;
-  background: linear-gradient(180deg, var(--icon-blue), rgba(10, 108, 255, 0.25));
-  opacity: 0.85;
-}
-
-.card-bars span:last-child {
-  background: linear-gradient(180deg, var(--violet), rgba(139, 92, 246, 0.3));
-  opacity: 1;
 }
 
 @keyframes glass-float {
@@ -2825,7 +1989,9 @@ figcaption {
 .hero-glass .hero-text {
   position: relative;
   z-index: 7;
-  margin-top: calc(var(--pw) * -0.26);
+  /* A short overlap only, over the part of the device box where the phone
+     has already faded out and no card reaches. */
+  margin-top: calc(var(--pw) * -0.12);
 }
 
 .hero-glass h1 {
@@ -2847,16 +2013,28 @@ figcaption {
   margin-top: 28px;
 }
 
-/* Tablet: the side cards come in closer. */
+/* The lead and the small line sit on the band's lilac foot, where the page's
+   usual grey falls to 2.9:1; this ink holds 5:1 or better across it. */
+.hero-glass .hero-text p {
+  color: #45454f;
+}
+
+/* Tablet: the side pieces come in closer. */
 @media (max-width: 1023px) {
   .card-nopain {
-    left: calc(50% - var(--pw) * 0.5 - 150px);
-    width: 190px;
+    left: calc(50% - var(--pw) * 0.5 - 136px);
+  }
+
+  .card-streak {
+    right: calc(50% - var(--pw) * 0.5 - 84px);
+  }
+
+  .card-today {
+    left: calc(50% - var(--pw) * 0.5 - 170px);
   }
 
   .card-calf {
-    right: calc(50% - var(--pw) * 0.5 - 170px);
-    width: 240px;
+    right: calc(50% - var(--pw) * 0.5 - 160px);
   }
 }
 
@@ -2879,44 +2057,39 @@ figcaption {
     padding-top: 18px;
   }
 
+  /* Two pieces on a phone, a size the screen can read: Today's row and
+     the dock low on the left, the tests card high on the right with its
+     first row only. */
   .card-nopain,
   .card-streak {
     display: none;
   }
 
-  .card-today {
-    left: -14px;
-    top: 58%;
-    gap: 12px;
-    padding: 8px 8px 8px 14px;
-    font-size: 14px;
-    border-radius: 18px;
+  .hero-piece {
+    --ap-pt: clamp(0.66px, calc(var(--pw) / 380), 0.76px);
   }
 
-  .card-start {
-    padding: 8px 12px;
-    font-size: 12px;
+  .card-today {
+    left: -12px;
+    top: 56%;
+  }
+
+  .card-today .ap-screen {
+    width: calc(var(--ap-pt) * 316);
   }
 
   .card-calf {
-    right: -16px;
-    top: 20%;
-    width: 136px;
-    padding: 14px 14px 0;
-    border-radius: 20px;
+    right: -12px;
+    top: 15%;
   }
 
-  .card-figure {
-    font-size: 24px;
+  .card-calf .ap-strength {
+    width: calc(var(--ap-pt) * 236);
   }
 
-  .card-label {
-    font-size: 12px;
-  }
-
-  .card-bars {
-    height: 46px;
-    gap: 5px;
+  .card-calf .ap-strength-more,
+  .card-calf .ap-caption {
+    display: none;
   }
 
   .hero-glass .hero-text {
@@ -2925,9 +2098,8 @@ figcaption {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .glass-card {
+  .hero-piece {
     animation: none;
-    transform: rotate(var(--r, 0deg));
   }
 }
 
@@ -2942,10 +2114,7 @@ figcaption {
   .download,
   .store a,
   .masthead-float .nav,
-  .masthead-float .nav a,
-  .card-streak,
-  .card-start,
-  .glass-card {
+  .masthead-float .nav a {
     corner-shape: superellipse(1.5);
   }
 }
@@ -3033,7 +2202,6 @@ figcaption {
   padding: 32px 28px 28px;
   border-radius: 32px;
   background: var(--paper);
-  box-shadow: 0 30px 80px rgba(2, 16, 90, 0.3);
   text-align: center;
   color: var(--ink);
 }
@@ -3071,7 +2239,7 @@ figcaption {
   padding: 10px;
   border-radius: 24px;
   background: #fff;
-  box-shadow: inset 0 0 0 1px var(--hairline), 0 8px 24px rgba(2, 20, 120, 0.1);
+  box-shadow: inset 0 0 0 1px var(--hairline);
 }
 
 .get-qr svg {
@@ -3490,21 +2658,27 @@ html[data-scrolled] .masthead-float .download {
 }
 
 /* The third tile is the coloured one, like a photo among the cards: the
-   hero's blue. */
+   hero's blue. The words sit on its lower half, so the blue stays deep there
+   (white text holds 4.7:1 or better over all of it) and the lilac is only a
+   glow in the corner, out from under the lines. */
 .who-tile.who-amber {
   background:
     radial-gradient(80% 60% at 80% 0%, rgba(24, 216, 253, 0.55), transparent 70%),
-    radial-gradient(70% 50% at 10% 100%, rgba(240, 191, 253, 0.55), transparent 70%),
-    linear-gradient(170deg, #0234fd, #0b62ff 60%, #3d8bff);
+    radial-gradient(50% 30% at 0% 100%, rgba(240, 191, 253, 0.35), transparent 70%),
+    linear-gradient(170deg, #0234fd, #0b52ff 60%, #1652ff);
   color: #fff;
 }
 
+/* The picture: a piece of the app (components/home/app-pieces), sized by
+   `.ap-fit` from this box's width and the room given here. */
 .who-visual {
+  --ap-room: 240px;
   position: relative;
   display: grid;
   place-items: center;
   height: 270px;
   flex: none;
+  container-type: inline-size;
 }
 
 .who-body {
@@ -3533,7 +2707,7 @@ html[data-scrolled] .masthead-float .download {
 }
 
 .who-amber p {
-  color: rgba(255, 255, 255, 0.84);
+  color: #fff;
 }
 
 .who-tile .who-goal {
@@ -3543,7 +2717,7 @@ html[data-scrolled] .masthead-float .download {
 }
 
 .who-amber .who-goal {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.12);
   color: #fff;
 }
 
@@ -3665,300 +2839,21 @@ html[data-scrolled] .masthead-float .download {
   scale: 1;
 }
 
-/* Loops run only while the section is on screen. */
+/* Loops run only while the section is on screen (the check-in pair's ring
+   and veil are pseudo-elements, which `*` does not reach). */
 .who-sheet:not([data-live]) .who-visual,
-.who-sheet:not([data-live]) .who-visual * {
+.who-sheet:not([data-live]) .who-visual *,
+.who-sheet:not([data-live]) .who-visual *::before,
+.who-sheet:not([data-live]) .who-visual *::after {
   animation-play-state: paused !important;
 }
 
-/* ---- 1. the morning check-in: the two cards trade places ---- */
-
-.wv-checkin {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.wv-check {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 6px;
-  width: 156px;
-  height: 182px;
-  padding: 14px 10px 18px;
-  border-radius: 28px;
-  background: #18181d;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
-  color: #fff;
-  font-size: 15px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-.wv-check img {
-  width: 98px;
-  height: 98px;
-}
-
-.wv-check-back {
-  z-index: 1;
-  transform: translate(-82%, -56%) rotate(-8deg) scale(0.94);
-  animation: wv-swap-back 7s cubic-bezier(0.65, 0, 0.35, 1) infinite;
-}
-
-.wv-check-front {
-  z-index: 2;
-  transform: translate(-18%, -44%) rotate(6deg);
-  animation: wv-swap-front 7s cubic-bezier(0.65, 0, 0.35, 1) infinite;
-}
-
-@keyframes wv-swap-front {
-  0%, 40% { z-index: 2; transform: translate(-18%, -44%) rotate(6deg); }
-  50%, 90% { z-index: 1; transform: translate(-82%, -56%) rotate(-8deg) scale(0.94); }
-  100% { z-index: 2; transform: translate(-18%, -44%) rotate(6deg); }
-}
-
-@keyframes wv-swap-back {
-  0%, 40% { z-index: 1; transform: translate(-82%, -56%) rotate(-8deg) scale(0.94); }
-  50%, 90% { z-index: 2; transform: translate(-18%, -44%) rotate(6deg); }
-  100% { z-index: 1; transform: translate(-82%, -56%) rotate(-8deg) scale(0.94); }
-}
-
-/* ---- 2. the arch hold: a ring fills while the seconds count up ---- */
-
+/* Registered here first for the old arch-hold counter; other sections read
+   `--n` too, so the registration stays. */
 @property --n {
   syntax: '<integer>';
   inherits: false;
   initial-value: 0;
-}
-
-.wv-ring {
-  position: relative;
-  display: grid;
-  place-items: center;
-  width: 186px;
-  height: 186px;
-  margin-top: -16px;
-}
-
-.wv-ring svg {
-  position: absolute;
-  inset: 0;
-  transform: rotate(-90deg);
-}
-
-.wv-ring circle {
-  fill: none;
-  stroke-width: 11;
-  stroke-linecap: round;
-}
-
-.wv-ring-track {
-  stroke: #e6e1f7;
-}
-
-.wv-ring-fill {
-  stroke: var(--violet);
-  stroke-dasharray: 100;
-  stroke-dashoffset: 0;
-  animation: wv-ring 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-}
-
-@keyframes wv-ring {
-  0% { stroke-dashoffset: 100; }
-  60%, 88% { stroke-dashoffset: 0; opacity: 1; }
-  100% { stroke-dashoffset: 0; opacity: 0.2; }
-}
-
-.wv-ring-num {
-  display: flex;
-  align-items: baseline;
-  font-size: 54px;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1;
-}
-
-.wv-count {
-  --n: var(--to);
-  counter-reset: n var(--n);
-  animation: wv-count 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-}
-
-.wv-count::after {
-  content: counter(n);
-}
-
-@keyframes wv-count {
-  0% { --n: 0; }
-  60%, 100% { --n: var(--to); }
-}
-
-.wv-ring-label {
-  position: absolute;
-  bottom: -26px;
-  padding: 7px 14px;
-  border-radius: var(--radius-item);
-  background: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  white-space: nowrap;
-  color: var(--violet-deep);
-}
-
-/* ---- 3. today's minutes, with the mascot walking past ---- */
-
-.wv-minutes {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding-top: 30px;
-}
-
-.wv-big {
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
-  font-size: 112px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: -0.05em;
-}
-
-.wv-big small {
-  font-size: 30px;
-  letter-spacing: -0.02em;
-}
-
-.wv-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 12px;
-  padding: 8px 14px;
-  border-radius: var(--radius-item);
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.wv-walker {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 84px;
-  height: 84px;
-  animation: wv-walk 10s linear infinite, wv-bob 0.6s ease-in-out infinite alternate;
-}
-
-@keyframes wv-walk {
-  0% { translate: -260% 0; }
-  100% { translate: 160% 0; }
-}
-
-@keyframes wv-bob {
-  from { transform: translateY(0) rotate(-3deg); }
-  to { transform: translateY(-7px) rotate(3deg); }
-}
-
-/* ---- 4. today's tasks, ticking off one by one ---- */
-
-.wv-tasks {
-  display: flex;
-  flex-direction: column;
-  width: 86%;
-  max-width: 300px;
-  overflow: hidden;
-  border-radius: 24px;
-  background: #fff;
-  text-align: left;
-  animation: wv-float 6s ease-in-out infinite;
-}
-
-@keyframes wv-float {
-  50% { translate: 0 -8px; }
-}
-
-.wv-tasks-head {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 13px 16px;
-  background: #111114;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.wv-tasks-head svg {
-  color: #ff8a2a;
-}
-
-.wv-row {
-  display: grid;
-  grid-template-columns: 24px 1fr auto;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 16px;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.wv-row + .wv-row {
-  border-top: 1px solid var(--hairline);
-}
-
-.wv-row-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.wv-row-dose {
-  color: var(--violet-deep);
-  font-weight: 700;
-}
-
-/* The tick is Phosphor's, centred by the grid; the circle fills and the
-   mark pops in, row after row. */
-.wv-tick {
-  display: grid;
-  place-items: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  border: 2px solid #d9d9e0;
-  color: #fff;
-  animation: wv-tick 6s ease infinite;
-  animation-delay: calc(var(--k) * 0.7s);
-}
-
-.wv-tick svg {
-  display: block;
-  scale: 0;
-  animation: wv-tick-mark 6s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
-  animation-delay: inherit;
-}
-
-@keyframes wv-tick {
-  0%, 12% { border-color: #d9d9e0; background: transparent; }
-  20%, 85% { border-color: var(--violet); background: var(--violet); }
-  100% { border-color: #d9d9e0; background: transparent; }
-}
-
-@keyframes wv-tick-mark {
-  0%, 14% { scale: 0; }
-  24%, 85% { scale: 1; }
-  100% { scale: 0; }
 }
 
 /* Tablet: two by two. Phone: one column. */
@@ -4007,6 +2902,7 @@ html[data-scrolled] .masthead-float .download {
   }
 
   .who-visual {
+    --ap-room: 226px;
     height: 250px;
   }
 }
@@ -4118,7 +3014,8 @@ html[data-scrolled] .masthead-float .download {
   font-size: 1em;
   opacity: var(--c);
   scale: calc(0.4 + var(--c) * 0.6);
-  rotate: calc((1 - var(--c)) * -14deg);
+  /* Lands at the piece's own tilt (the check-in cards sit five degrees off). */
+  rotate: calc(var(--tilt, 0deg) + (1 - var(--c)) * -14deg);
   white-space: nowrap;
 }
 
@@ -4139,38 +3036,68 @@ html[data-scrolled] .masthead-float .download {
   font-weight: 700;
 }
 
+/*
+ * The four pieces, each the app's own (components/home/app-pieces,
+ * `storyChips`), in its dark scheme: a check-in card shrunk to its mascot,
+ * the "It hurts today" card, a minute chip off Today's list, and the "No pain
+ * today" card. The two check-in cards keep PainCheck's tilt, five degrees
+ * either way, its card colour and its rim.
+ */
 .fchip-0 {
-  width: 1.7em;
+  --tilt: -5deg;
+  width: 1.3em;
+  height: 1.12em;
   padding: 0;
-  background: #18181d;
+  border-radius: 0.24em;
+  background: #1c1c1f;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
 .fchip-0 img {
-  width: 0.92em;
-  height: 0.92em;
+  width: 0.82em;
+  height: 0.82em;
+}
+
+.fchip-1,
+.fchip-3 {
+  border-radius: 0.56em;
+  background: #1c1c1f;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  color: #fff;
 }
 
 .fchip-1 {
-  background: linear-gradient(180deg, #f6f6f8, #e9e9ee);
-  box-shadow: inset 0 1px 0 #fff, inset 0 0 0 1px rgba(17, 17, 20, 0.05);
-  color: var(--ink);
+  --tilt: -5deg;
 }
 
+/* The chip as Today's list draws it: the category's violet track on the
+   page, the clock and the minutes in violet. */
 .fchip-2 {
-  background: linear-gradient(180deg, #a78bfa, var(--violet));
-  color: #fff;
+  border-radius: 1em;
+  background: linear-gradient(rgba(155, 133, 255, 0.22), rgba(155, 133, 255, 0.22)), #111113;
+  color: #9b85ff;
+}
+
+.fchip-2 > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36em;
 }
 
 .fchip-2 svg {
-  width: 1.3em;
-  height: 1.3em;
-  color: #ffd2a8;
+  width: 1.05em;
+  height: 1.05em;
 }
 
 .fchip-3 {
+  --tilt: 5deg;
   padding-left: 0.5em;
-  background: #18181d;
-  color: #fff;
+}
+
+.fchip-3 > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.18em;
 }
 
 .fchip-3 img {
@@ -4291,6 +3218,29 @@ html[data-scrolled] .masthead-float .download {
   }
 }
 
+/* A short window (a phone on its side, a laptop zoomed in): the paragraph can
+   be taller than the pinned screen, and its first and last lines would be cut
+   off. No pin, as with Reduce Motion, and every word and chip already in
+   place, since the reveal follows a pin that is no longer there. A phone held
+   upright keeps the pin: the paragraph takes about half of even a short one. */
+@media (max-height: 560px) {
+  .story-flow {
+    --run: 2;
+    height: auto;
+  }
+
+  .flow-stage {
+    position: static;
+    height: auto;
+    overflow: visible;
+    padding-block: 64px;
+  }
+
+  .flow-float {
+    display: none;
+  }
+}
+
 /* ---------------------------------------------------------- phone menu -- */
 
 .menu-toggle,
@@ -4362,7 +3312,7 @@ html[data-scrolled] .masthead-float .download {
     padding: 10px;
     border-radius: 28px;
     background: #fff;
-    box-shadow: inset 0 0 0 1px var(--hairline), 0 24px 60px rgba(2, 20, 120, 0.22);
+    box-shadow: inset 0 0 0 1px var(--hairline);
     animation: menu-in 0.32s cubic-bezier(0.22, 1, 0.36, 1);
     transform-origin: top right;
   }
@@ -4681,7 +3631,9 @@ html[data-scrolled] .masthead-float .download {
   text-align: left;
 }
 
-.feat-current {
+/* The tag and title are remounted for each feature, so the swap replays; the
+   block around them stays put, as the live region that reads the new title. */
+.feat-current > * {
   animation: feat-swap 0.7s var(--ease-premium);
 }
 
@@ -4689,7 +3641,6 @@ html[data-scrolled] .masthead-float .download {
   from {
     opacity: 0;
     translate: 0 18px;
-    filter: blur(6px);
   }
 }
 
@@ -5014,10 +3965,57 @@ html[data-scrolled] .masthead-float .download {
   }
 }
 
+/* ---- a short window: no pin ---- */
+
+/*
+ * Under 560px of height (a phone on its side, a laptop zoomed in), or on a
+ * phone whose toolbars leave it under 640px, the card and the four items do
+ * not fit the pinned screen and the foot of the list would be cut off. The
+ * section then scrolls with the page like any other: the phone card keeps a
+ * fixed height and shows the picked feature, and the list works as tabs, a
+ * tap showing that feature's screen. FeatureScroller reads the stage's
+ * `position` and stops following the scroll while it is not sticky. The
+ * screens stay one at a time rather than stacked: each is laid out for the
+ * full card, the extras over it included.
+ */
+@media (max-height: 560px), (max-width: 760px) and (max-height: 640px) {
+  .feat-scroll {
+    height: auto;
+  }
+
+  .feat-stage {
+    position: static;
+    height: auto;
+    overflow: visible;
+    padding: 0 32px;
+  }
+
+  .feat-grid {
+    height: auto;
+    grid-template-rows: minmax(440px, auto);
+  }
+
+  /* It measured the scroll through a feature; there is none to measure. */
+  .feat-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) and (max-height: 640px) {
+  .feat-stage {
+    padding: 0 12px;
+  }
+
+  /* The phone card as tall as it is when pinned on a full-size phone. */
+  .feat-grid {
+    grid-template-rows: 320px auto;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .feat-shot,
   .feat-visual,
-  .feat-current,
+  .feat-current > *,
   .feat-text,
   .feat-text > span {
     transition: none;
@@ -5029,6 +4027,8 @@ html[data-scrolled] .masthead-float .download {
     translate: none;
     filter: none;
     transition: none;
+  }
+}
 
 /* ---------------------------------------------- from origin/main (phase 2/3) -- */
 
@@ -5129,9 +4129,33 @@ html[data-scrolled] .masthead-float .download {
   }
 }
 
-/* On a wide screen the footer sections are always open: the headings are labels. */
-@media (min-width: 761px) {
-  .footer .footer-heading {
-    pointer-events: none;
+/* Tablet widths: the old header wrapped the nav onto its own row (`order: 3;
+   width: 100%` above). The floating header is a three-column grid with the nav
+   in the middle and room for all four links, so it stays on one row. */
+@media (min-width: 761px) and (max-width: 1023px) {
+  .masthead-float .nav {
+    order: 0;
+    width: auto;
   }
+
+  .masthead-float .nav a {
+    padding: 9px 12px;
+    font-size: 15px;
+  }
+}
+
+/* "How it works" holds still for four screens of scroll: keep each frame of it
+   cheap. The two cards are painted on their own and the pieces that move are
+   promoted ahead of time, so a change inside one never repaints the page. No
+   backdrop blur in here: over a moving, fading layer Chrome can flash it
+   black for a frame. */
+.feat-shot-card,
+.feat-list-card {
+  contain: paint;
+}
+
+.feat-shot,
+.feat-visual,
+.feat-extras {
+  will-change: opacity, translate;
 }

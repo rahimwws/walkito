@@ -7,7 +7,7 @@ import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
 import { Cite } from '@/components/Cite';
 import { Masthead } from '@/components/Masthead';
-import { Prose, typeset } from '@/components/Prose';
+import { FaqRows, Prose, typeset } from '@/components/Prose';
 import { FAQ, FAQ_GROUPS } from '@/lib/faq';
 import { CHROME, alternatesCustomEnEs } from '@/lib/i18n';
 import { faqSchema } from '@/lib/schema';
@@ -85,9 +85,9 @@ export default function Faq() {
     <>
       <JsonLd data={FAQ_SCHEMA} />
       <JsonLd data={BREADCRUMBS} />
-      <Masthead />
+      <Masthead current="faq" />
 
-      <Prose className="shell prose">
+      <Prose className="shell prose" kicker={{ label: c.navQuestions, lang: 'en', num: String(FAQ.length) }}>
         <h1>Heel pain exercise app: questions and answers</h1>
         <Byline lang="en" />
 
@@ -110,29 +110,32 @@ export default function Faq() {
           </ol>
         </nav>
 
-        {/* Real headings, not a details/summary accordion. Collapsed content
-            is still in the HTML, but an answer behind a click is an answer a
-            person has to hunt for, and the whole point of this page is that
-            each one can be read on its own. */}
+        {/* The home page's question rows, one block per group. Each answer
+            is still a self-contained block in the HTML (search engines,
+            assistants and find-in-page all read it, and find-in-page opens
+            it). The first of each group starts open, and the rows are not
+            exclusive, so several answers can be read side by side. */}
         {FAQ_GROUPS.map((group) => (
           <section key={group.id} id={group.id}>
             <h2>{group.h2}</h2>
-            <div className="faq">
-              {group.entries.map((entry) => (
-                <section key={entry.q}>
-                  <h3>{entry.q}</h3>
-                  <p>
-                    <Inline text={entry.a} />
-                  </p>
-                  {entry.source && (
-                    <p className="cite">
-                      <Inline text={entry.source} />
+            <FaqRows
+              items={group.entries.map((entry) => ({
+                q: entry.q,
+                a: (
+                  <>
+                    <p>
+                      <Inline text={entry.a} />
                     </p>
-                  )}
-                  {entry.cites?.map((i) => <Cite key={i} index={i} />)}
-                </section>
-              ))}
-            </div>
+                    {entry.source && (
+                      <p className="cite">
+                        <Inline text={entry.source} />
+                      </p>
+                    )}
+                    {entry.cites?.map((i) => <Cite key={i} index={i} />)}
+                  </>
+                ),
+              }))}
+            />
           </section>
         ))}
 

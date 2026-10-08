@@ -23,10 +23,24 @@ const LABEL: Record<Lang, Record<EvidenceLevel, string>> = {
 };
 const WORD: Record<Lang, string> = { en: 'Evidence', ru: 'Доказательства', es: 'Evidencia', pt: 'Evidência', fr: 'Niveau de preuve', it: 'Evidenza', de: 'Evidenz' };
 
+/** How many of the three ticks are inked. */
+const TICKS: Record<EvidenceLevel, number> = { strong: 3, moderate: 2, early: 1, unsupported: 0 };
+
+/**
+ * Drawn as a chip with the app's tick meter in it (`TickBar`,
+ * src/shared/ui/meter/tick-bar.tsx: rounded bars, ink against a 10% track).
+ * Ink only, at every level: in the app colour never judges a value, and a
+ * green "strong" next to a grey "early" would be exactly that.
+ */
 export function Evidence({ level, lang = 'en', children }: { level: EvidenceLevel; lang?: Lang; children?: ReactNode }) {
   return (
     <p className={`evidence evidence-${level}`}>
-      <strong>
+      <strong className="evidence-chip">
+        <span className="evidence-ticks" aria-hidden>
+          {[0, 1, 2].map((k) => (
+            <span key={k} className={k < TICKS[level] ? 'evidence-tick evidence-tick-on' : 'evidence-tick'} />
+          ))}
+        </span>
         {WORD[lang]}: {LABEL[lang][level]}.
       </strong>
       {children ? <> {children}</> : null}

@@ -9,6 +9,10 @@ const LABEL: Record<Lang, string> = {
   en: 'Back to top',
   ru: 'Наверх',
   es: 'Volver arriba',
+  pt: 'Voltar ao topo',
+  fr: 'Retour en haut',
+  it: 'Torna su',
+  de: 'Nach oben',
 };
 
 /**

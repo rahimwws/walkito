@@ -234,7 +234,10 @@ export default function DatenschutzDe() {
           iOS- und App-Version, Sprache und Zeitzone werden mitgeschickt, und
           PostHog ermittelt aus deiner IP-Adresse einen ungefähren Standort (Land
           und Stadt). Ereignisse sind mit einer zufälligen ID verknüpft,
-          derselben, die RevenueCat nutzt.
+          derselben, die RevenueCat nutzt. Sobald du dich anmeldest, werden ihr
+          die E-Mail-Adresse und der Name hinzugefügt, die uns Apple oder Google
+          übermittelt hat, damit wir dir schreiben können, falls du nicht
+          weiterkommst.
         </p>
         <p>
           <b>Nie gesendet:</b> Schmerzwerte, Schmerzbereiche, Testergebnisse,

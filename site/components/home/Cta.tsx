@@ -1,13 +1,11 @@
 import './cta.css';
 
-import { InstagramLogoIcon } from '@phosphor-icons/react/dist/ssr/InstagramLogo';
-import { LinkedinLogoIcon } from '@phosphor-icons/react/dist/ssr/LinkedinLogo';
-import { TiktokLogoIcon } from '@phosphor-icons/react/dist/ssr/TiktokLogo';
-import { YoutubeLogoIcon } from '@phosphor-icons/react/dist/ssr/YoutubeLogo';
 import type { CSSProperties, ReactNode } from 'react';
 
+import { InstagramLogo, LinkedInLogo, TikTokLogo, YouTubeLogo } from '@/components/BrandIcons';
 import { GetAppButton } from '@/components/GetApp';
 import { InView } from '@/components/InView';
+import { SOCIAL_LABELS } from '@/components/SocialLinks';
 import { AppleLogo, GooglePlayLogo } from '@/components/StoreLogos';
 import { CHROME, type Lang } from '@/lib/i18n';
 import { INSTAGRAM_URL, LINKEDIN_URL, playHref, storeHref, TIKTOK_URL, YOUTUBE_URL } from '@/lib/site';
@@ -17,17 +15,18 @@ type CtaCopy = {
   lines: [string, string, string];
   /** The two lines of each store button, as the stores' own badges word them. */
   appStoreTop: string;
+  /** The big line, where a badge folds the article into it (French: «l’App Store»). */
+  appStoreName?: string;
   playTop: string;
   playSoon: string;
-  youtube: string;
-  linkedin: string;
 };
 
 /**
  * The closing call to action, per language. The lines say again what the
- * hero's last heading said ("Your feet, your plan."), with the daily rhythm
- * the app is built around added as the third. The store lines follow Apple's
- * and Google's localized badges.
+ * hero's last heading said ("Your feet, your plan.", `finalH2`), with the
+ * daily rhythm the app is built around added as the third. The store lines
+ * follow Apple's and Google's localized badges. The profiles' names come from
+ * `SOCIAL_LABELS`, shared with the footer.
  */
 const COPY: Record<Lang, CtaCopy> = {
   en: {
@@ -35,24 +34,43 @@ const COPY: Record<Lang, CtaCopy> = {
     appStoreTop: 'Download on the',
     playTop: 'Get it on',
     playSoon: 'Coming soon',
-    youtube: 'Walkito on YouTube',
-    linkedin: 'Walkito on LinkedIn',
   },
   ru: {
     lines: ['Ваши стопы.', 'Ваш план.', 'Каждый день.'],
     appStoreTop: 'Загрузите в',
     playTop: 'Доступно в',
     playSoon: 'Скоро',
-    youtube: 'Walkito на YouTube',
-    linkedin: 'Walkito в LinkedIn',
   },
   es: {
     lines: ['Tus pies.', 'Tu plan.', 'Cada día.'],
     appStoreTop: 'Descárgalo en el',
     playTop: 'Disponible en',
     playSoon: 'Muy pronto',
-    youtube: 'Walkito en YouTube',
-    linkedin: 'Walkito en LinkedIn',
+  },
+  pt: {
+    lines: ['Seus pés.', 'Seu plano.', 'Todo dia.'],
+    appStoreTop: 'Baixar na',
+    playTop: 'Disponível no',
+    playSoon: 'Em breve',
+  },
+  fr: {
+    lines: ['Vos pieds.', 'Votre plan.', 'Chaque jour.'],
+    appStoreTop: 'Télécharger dans',
+    appStoreName: 'l’App Store',
+    playTop: 'Disponible sur',
+    playSoon: 'Bientôt disponible',
+  },
+  it: {
+    lines: ['I tuoi piedi.', 'Il tuo piano.', 'Ogni giorno.'],
+    appStoreTop: 'Scarica su',
+    playTop: 'Disponibile su',
+    playSoon: 'Prossimamente',
+  },
+  de: {
+    lines: ['Deine Füße.', 'Dein Plan.', 'Jeden Tag.'],
+    appStoreTop: 'Laden im',
+    playTop: 'Jetzt bei',
+    playSoon: 'Demnächst',
   },
 };
 
@@ -77,24 +95,13 @@ export function Cta({ lang }: { lang: Lang }) {
 
   // In the order they sit, left to right, which is also the tab order. A
   // profile with an empty URL in `lib/site.ts` is left out, as in the footer.
-  const socials: { key: string; href: string; label: string; glyph: ReactNode }[] = [
-    { key: 'yt', href: YOUTUBE_URL, label: copy.youtube, glyph: <YoutubeLogoIcon weight="fill" aria-hidden /> },
-    { key: 'ig', href: INSTAGRAM_URL, label: c.socialInstagram, glyph: <InstagramLogoIcon weight="fill" aria-hidden /> },
-    {
-      key: 'tt',
-      href: TIKTOK_URL,
-      label: c.socialTikTok,
-      // TikTok's mark is the note with a cyan and a red copy offset behind it;
-      // three of Phosphor's notes, stacked, draw it without a second icon set.
-      glyph: (
-        <span className="hcta-note" aria-hidden>
-          <TiktokLogoIcon weight="fill" className="hcta-note-cyan" />
-          <TiktokLogoIcon weight="fill" className="hcta-note-red" />
-          <TiktokLogoIcon weight="fill" />
-        </span>
-      ),
-    },
-    { key: 'in', href: LINKEDIN_URL, label: copy.linkedin, glyph: <LinkedinLogoIcon weight="fill" aria-hidden /> },
+  // Each is the network's own app icon, mark and ground, from BrandIcons.
+  const labels = SOCIAL_LABELS[lang];
+  const socials: { key: string; href: string; label: string; tile: ReactNode }[] = [
+    { key: 'yt', href: YOUTUBE_URL, label: labels.youtube, tile: <YouTubeLogo variant="tile" size="100%" /> },
+    { key: 'ig', href: INSTAGRAM_URL, label: c.socialInstagram, tile: <InstagramLogo variant="tile" size="100%" /> },
+    { key: 'tt', href: TIKTOK_URL, label: c.socialTikTok, tile: <TikTokLogo variant="tile" size="100%" /> },
+    { key: 'in', href: LINKEDIN_URL, label: labels.linkedin, tile: <LinkedInLogo variant="tile" size="100%" /> },
   ].filter((s) => s.href !== '');
 
   return (
@@ -149,7 +156,7 @@ export function Cta({ lang }: { lang: Lang }) {
                 aria-label={s.label}
                 style={{ '--i': i } as CSSProperties}
               >
-                <span className="hcta-face">{s.glyph}</span>
+                <span className="hcta-face">{s.tile}</span>
               </a>
             ))}
           </div>
@@ -166,7 +173,7 @@ export function Cta({ lang }: { lang: Lang }) {
             <AppleLogo size={30} />
             <span className="hcta-store-text">
               <small>{copy.appStoreTop}</small>
-              <strong>App Store</strong>
+              <strong>{copy.appStoreName ?? 'App Store'}</strong>
             </span>
           </GetAppButton>
 

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 
+import { TRANSLATED } from '@/lib/i18n';
 import { SITE_SUBSCRIBE_URL, SUPPORT_EMAIL } from '@/lib/site';
 
 /**
@@ -51,12 +52,6 @@ const COPY = {
     tooMany: 'Demasiados intentos. Intentalo manana.',
   },
 } as const;
-
-const PRIVACY_PATH: Record<Lang, string> = {
-  en: '/privacy/',
-  ru: '/konfidentsialnost/',
-  es: '/privacidad/',
-};
 
 type State = 'idle' | 'sending' | 'success' | 'already' | 'error' | 'too-many';
 
@@ -144,7 +139,9 @@ export function EmailSignup({
         {state === 'too-many' && <p className="email-signup-error">{c.tooMany}</p>}
       </form>
       <p className="email-signup-consent">
-        <a href={PRIVACY_PATH[lang]}>{c.privacy}</a>
+        {/* The policy in the form's own language, from the one table every
+            translated page's address lives in. */}
+        <a href={TRANSLATED.privacy[lang]}>{c.privacy}</a>
       </p>
     </div>
   );

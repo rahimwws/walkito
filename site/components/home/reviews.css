@@ -377,7 +377,11 @@ a.rev-chip:focus-visible,
   color: var(--card-sub, rgba(255, 255, 255, 0.66));
 }
 
-/* ---- the five tones: two dark, two of the brand's colours, two light ---- */
+/* ---- the five tones: two dark, two of the brand's colours, two light ----
+
+   Every line on every tone holds 4.5:1 against the card under it, the
+   corners included: on the coloured cards the second line is near-white, and
+   on the light ones it is a dark grey rather than ink at reduced opacity. */
 
 .rev-tone-1 {
   --card-bg: linear-gradient(160deg, #0e0e12, #1c1c1f);
@@ -392,19 +396,22 @@ a.rev-chip:focus-visible,
     radial-gradient(80% 60% at 90% 0%, rgba(24, 216, 253, 0.4), transparent 70%),
     linear-gradient(160deg, #0234fd, #1652ff);
   --card-line: rgba(255, 255, 255, 0.16);
-  --card-sub: rgba(255, 255, 255, 0.76);
+  --card-sub: rgba(255, 255, 255, 0.9);
   --av-bg: #fff;
   --av-fg: #0234fd;
   --q-bg: rgba(255, 255, 255, 0.2);
   --tilt: 3.5deg;
 }
 
+/* The deep violet: white on the brand's #8b5cf6 is only 4.2:1, and less where
+   it ran to magenta, so the card starts at the darker violet and the lilac
+   under the name is a faint glow. */
 .rev-tone-3 {
   --card-bg:
-    radial-gradient(70% 55% at 10% 100%, rgba(240, 191, 253, 0.35), transparent 70%),
-    linear-gradient(160deg, #8b5cf6, #c45cf6);
+    radial-gradient(70% 55% at 10% 100%, rgba(240, 191, 253, 0.15), transparent 70%),
+    linear-gradient(160deg, #6d4aef, #8338d6);
   --card-line: rgba(255, 255, 255, 0.18);
-  --card-sub: rgba(255, 255, 255, 0.78);
+  --card-sub: rgba(255, 255, 255, 0.92);
   --av-bg: #f0bffd;
   --av-fg: #3b1d7a;
   --q-bg: rgba(255, 255, 255, 0.22);
@@ -415,7 +422,7 @@ a.rev-chip:focus-visible,
   --card-bg: linear-gradient(160deg, #eef0ff, #d9d4ff);
   --card-line: rgba(255, 255, 255, 0.6);
   --card-ink: #111114;
-  --card-sub: rgba(17, 17, 20, 0.6);
+  --card-sub: #4a4a55;
   --star: #7c5cff;
   --q-bg: rgba(124, 92, 255, 0.14);
   --q-fg: #7c5cff;
@@ -424,13 +431,15 @@ a.rev-chip:focus-visible,
   --tilt: -2.5deg;
 }
 
+/* Lilac that deepens toward its lower corner, kept light enough there for the
+   second line, which is a shade darker than on the paler card. */
 .rev-tone-5 {
   --card-bg:
-    radial-gradient(80% 60% at 100% 100%, rgba(155, 133, 255, 0.55), transparent 70%),
-    linear-gradient(150deg, #f1edff, #c9b6ff 70%, #b685fd);
+    radial-gradient(80% 60% at 100% 100%, rgba(155, 133, 255, 0.35), transparent 70%),
+    linear-gradient(150deg, #f1edff, #d9ccff 70%, #c9a9fe);
   --card-line: rgba(255, 255, 255, 0.5);
   --card-ink: #111114;
-  --card-sub: rgba(17, 17, 20, 0.62);
+  --card-sub: #3d3d47;
   --star: #6d4aef;
   --q-bg: rgba(17, 17, 20, 0.08);
   --q-fg: #6d4aef;

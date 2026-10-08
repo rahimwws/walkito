@@ -1,0 +1,750 @@
+/* ------------------------------------------------- pieces of the app -- */
+
+/*
+ * The app's own components, drawn in its dark scheme (src/shared/config/
+ * theme.ts: page #111113, card #1C1C1F, the dark accents) at its own sizes.
+ * Every measure is in the app's points: one `--ap-pt` is one point, in pixels,
+ * set by whatever holds the piece (the hero's cards from the phone's width;
+ * the "Is this for me?" tiles from the room in the tile, see `.ap-fit`).
+ * Registered, so it is worked out once where it is set and inherited as a
+ * length rather than re-resolved on every element.
+ *
+ * `borderCurve: 'continuous'` is the superellipse at the bottom of the file.
+ * No drop shadows: the app draws none under its cards either.
+ */
+@property --ap-pt {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 1px;
+}
+
+.ap {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: none;
+  white-space: normal;
+  color: #fff;
+}
+
+.ap .icon,
+.ap svg {
+  display: block;
+  flex: none;
+}
+
+/*
+ * Sized to the tile it sits in: as large as the app draws it, smaller where
+ * the tile is narrower than the piece's own width (`--ap-w`, in points) or
+ * shorter than its height (`--ap-h`). `100cqi` is the tile picture's width.
+ */
+.ap-fit {
+  --ap-pt: min(
+    var(--ap-max, 1px),
+    calc((100cqi - 28px) / var(--ap-w, 340)),
+    calc(var(--ap-room, 240px) / var(--ap-h, 220))
+  );
+}
+
+/* The dark accents, `fill` over `track`. They name a kind, never rate it. */
+.ap-tone-violet {
+  --fill: #9b85ff;
+  --track: rgba(155, 133, 255, 0.22);
+}
+
+.ap-tone-teal {
+  --fill: #2ed3c6;
+  --track: rgba(46, 211, 198, 0.22);
+}
+
+.ap-tone-amber {
+  --fill: #f0b458;
+  --track: rgba(240, 180, 88, 0.22);
+}
+
+.ap-tone-blue {
+  --fill: #3b9eff;
+  --track: rgba(59, 158, 255, 0.22);
+}
+
+/* ------------------------------------------------- PainCheck, one card -- */
+
+/* pain-check.tsx: 182 tall, 62% of the row wide, 36 radius, the mascot at
+   118 over a bold 19 title, 12 of side padding, 6 of gap. */
+.ap-pain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--ap-pt) * 6);
+  width: calc(var(--ap-pt) * 212);
+  height: calc(var(--ap-pt) * 182);
+  padding: 0 calc(var(--ap-pt) * 12);
+  border-radius: calc(var(--ap-pt) * 36);
+  background: #1c1c1f;
+  /* The rim liquid glass draws at the card's edge. */
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.ap-pain img {
+  display: block;
+  flex: none;
+  width: calc(var(--ap-pt) * 118);
+  height: calc(var(--ap-pt) * 118);
+}
+
+.ap-pain-title {
+  font-size: calc(var(--ap-pt) * 19);
+  font-weight: 700;
+  letter-spacing: calc(var(--ap-pt) * -0.3);
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* ------------------------------------------------ PainCheck, the pair -- */
+
+/* The stage: the card's height plus the 34-point stagger. The left card sits
+   high and tips five degrees anticlockwise, the right one low and clockwise. */
+.ap-pair {
+  position: relative;
+  display: block;
+  width: calc(var(--ap-pt) * 342);
+  height: calc(var(--ap-pt) * 216);
+}
+
+.ap-pair .ap-pain {
+  position: absolute;
+  width: 62%;
+}
+
+.ap-pair-left {
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transform: rotate(-5deg);
+}
+
+.ap-pair-right {
+  top: calc(var(--ap-pt) * 34);
+  right: 0;
+  z-index: 1;
+  transform: rotate(5deg);
+}
+
+/* The veil over a card that was not picked (the page's colour at 45%, never
+   an opacity on the card), and the ring round the one that was. */
+.ap-pair .ap-pain::before,
+.ap-pair .ap-pain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.ap-pair .ap-pain::before {
+  background: #111113;
+  opacity: 0;
+}
+
+.ap-pair .ap-pain::after {
+  border: calc(var(--ap-pt) * 2.5) solid transparent;
+}
+
+/*
+ * The pick, in a loop: "No pain today" comes level, lifts six points, grows
+ * 4% and takes the ring while the other tips two degrees further and shrinks
+ * under its veil; then the other way round. The app's own curve (0.23, 1,
+ * 0.32, 1) for each move.
+ */
+.ap-pair-right {
+  animation: ap-pick-b 9s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+}
+
+.ap-pair-left {
+  animation: ap-pick-a 9s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+}
+
+.ap-pair-right::after {
+  animation: ap-ring-1 9s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+}
+
+.ap-pair-right::before {
+  animation: ap-veil-2 9s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+}
+
+.ap-pair-left::after {
+  animation: ap-ring-2 9s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+}
+
+.ap-pair-left::before {
+  animation: ap-veil-1 9s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+}
+
+@keyframes ap-pick-b {
+  0%, 12%, 48%, 62%, 98%, 100% { transform: rotate(5deg); }
+  18%, 42% { transform: translateY(calc(var(--ap-pt) * -6)) rotate(0deg) scale(1.04); }
+  68%, 92% { transform: rotate(7deg) scale(0.96); }
+}
+
+@keyframes ap-pick-a {
+  0%, 12%, 48%, 62%, 98%, 100% { transform: rotate(-5deg); z-index: 0; }
+  18%, 42% { transform: rotate(-7deg) scale(0.96); z-index: 0; }
+  64% { z-index: 2; }
+  68%, 92% { transform: translateY(calc(var(--ap-pt) * -6)) rotate(0deg) scale(1.04); z-index: 2; }
+  97% { z-index: 2; }
+}
+
+@keyframes ap-ring-1 {
+  0%, 12%, 48%, 100% { border-color: transparent; }
+  18%, 42% { border-color: #fff; }
+}
+
+@keyframes ap-ring-2 {
+  0%, 62%, 98%, 100% { border-color: transparent; }
+  68%, 92% { border-color: #fff; }
+}
+
+@keyframes ap-veil-1 {
+  0%, 12%, 48%, 100% { opacity: 0; }
+  18%, 42% { opacity: 0.45; }
+}
+
+@keyframes ap-veil-2 {
+  0%, 62%, 98%, 100% { opacity: 0; }
+  68%, 92% { opacity: 0.45; }
+}
+
+/* -------------------------------------------------------------- streak -- */
+
+/* header-actions.tsx: 13 / 16 of side padding, 9 top and bottom, 7 of gap,
+   the flame at 22, the count semibold 16, a capsule of liquid glass. */
+.ap-streak {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--ap-pt) * 7);
+  padding: calc(var(--ap-pt) * 9) calc(var(--ap-pt) * 16) calc(var(--ap-pt) * 9) calc(var(--ap-pt) * 13);
+  border-radius: 999px;
+  background: rgba(28, 28, 31, 0.62);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(18px) saturate(1.5);
+  -webkit-backdrop-filter: blur(18px) saturate(1.5);
+}
+
+.ap-streak svg {
+  width: calc(var(--ap-pt) * 22);
+  height: calc(var(--ap-pt) * 22);
+  color: #ff9245;
+}
+
+.ap-streak span {
+  font-size: calc(var(--ap-pt) * 16);
+  font-weight: 600;
+  line-height: calc(var(--ap-pt) * 22);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------------------------------------------------------- TodayTasks -- */
+
+/* today-tasks.tsx: two lines per row, no card round any of them. Title bold
+   17; the kind line semibold 14 in the category's colour with its glyph at 13;
+   the chip 7 x 11 of padding, radius 12, bold 14; the box 30 square, radius
+   10, filled with a tick once done. */
+.ap-task {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--ap-pt) * 12);
+  padding: calc(var(--ap-pt) * 13) 0;
+}
+
+.ap-task-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: calc(var(--ap-pt) * 3);
+  min-width: 0;
+}
+
+.ap-task-title {
+  font-size: calc(var(--ap-pt) * 17);
+  font-weight: 700;
+  letter-spacing: calc(var(--ap-pt) * -0.3);
+  line-height: 1.25;
+  color: #fff;
+  /* Struck through once done; drawn always, so only its colour moves. */
+  text-decoration: line-through transparent;
+  text-decoration-thickness: max(1px, calc(var(--ap-pt) * 1.5));
+}
+
+.ap-task-kind {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--ap-pt) * 5);
+  font-size: calc(var(--ap-pt) * 14);
+  font-weight: 600;
+  letter-spacing: calc(var(--ap-pt) * -0.1);
+  line-height: 1.25;
+  color: var(--fill);
+}
+
+.ap-task-kind svg {
+  width: calc(var(--ap-pt) * 13);
+  height: calc(var(--ap-pt) * 13);
+}
+
+/* The chip and the box share one slot. */
+.ap-task-end {
+  display: grid;
+  flex: none;
+  align-items: center;
+  justify-items: end;
+}
+
+.ap-task-end > * {
+  grid-area: 1 / 1;
+}
+
+.ap-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--ap-pt) * 5);
+  padding: calc(var(--ap-pt) * 7) calc(var(--ap-pt) * 11);
+  border-radius: calc(var(--ap-pt) * 12);
+  background: var(--track);
+  color: var(--fill);
+  font-size: calc(var(--ap-pt) * 14);
+  font-weight: 700;
+  letter-spacing: calc(var(--ap-pt) * -0.1);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.ap-chip svg {
+  width: calc(var(--ap-pt) * 13);
+  height: calc(var(--ap-pt) * 13);
+}
+
+.ap-task-box {
+  display: grid;
+  place-items: center;
+  width: calc(var(--ap-pt) * 30);
+  height: calc(var(--ap-pt) * 30);
+  border: calc(var(--ap-pt) * 1.5) solid var(--fill);
+  border-radius: calc(var(--ap-pt) * 10);
+  background: var(--fill);
+  /* The tick is the page's colour, punched out of the fill. */
+  color: #111113;
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.ap-task-box svg {
+  width: calc(var(--ap-pt) * 16);
+  height: calc(var(--ap-pt) * 16);
+}
+
+/* The list: the page itself, the heading with the mascot run off its end,
+   14 under it, then the rows. 20 of side margin, as on the screen. */
+.ap-tasks {
+  display: block;
+  width: calc(var(--ap-pt) * 330);
+  padding: calc(var(--ap-pt) * 18) calc(var(--ap-pt) * 18) calc(var(--ap-pt) * 6);
+  border-radius: calc(var(--ap-pt) * 32);
+  background: #111113;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.ap-tasks-head {
+  position: relative;
+  display: block;
+  min-height: calc(var(--ap-pt) * 28);
+  padding-right: calc(var(--ap-pt) * 50);
+}
+
+.ap-tasks-title {
+  display: block;
+  font-size: calc(var(--ap-pt) * 22);
+  font-weight: 800;
+  letter-spacing: calc(var(--ap-pt) * -0.6);
+  line-height: calc(var(--ap-pt) * 28);
+}
+
+/* 64 square, centred on the heading's first line, nudged 6 into the gutter. */
+.ap-tasks-head img {
+  position: absolute;
+  top: calc(var(--ap-pt) * -18);
+  right: calc(var(--ap-pt) * -6);
+  width: calc(var(--ap-pt) * 64);
+  height: calc(var(--ap-pt) * 64);
+}
+
+.ap-tasks-list {
+  display: block;
+  margin-top: calc(var(--ap-pt) * 14);
+}
+
+/*
+ * The day ticking off: one row after another the chip gives way to the filled
+ * box, the title greys and is struck through; then they reset, and again. The
+ * list runs this only while its section is on screen.
+ */
+.ap-task-anim .ap-task-chip,
+.ap-task-anim .ap-task-box,
+.ap-task-anim .ap-task-title {
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: calc(0.6s + var(--k, 0) * 0.8s);
+}
+
+.ap-task-anim .ap-task-chip {
+  animation-name: ap-chip-out;
+  animation-timing-function: ease;
+}
+
+.ap-task-anim .ap-task-box {
+  animation-name: ap-box-in;
+  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.ap-task-anim .ap-task-title {
+  animation-name: ap-title-done;
+  animation-timing-function: ease;
+}
+
+@keyframes ap-chip-out {
+  0%, 14% { opacity: 1; transform: scale(1); }
+  20%, 82% { opacity: 0; transform: scale(0.85); }
+  90%, 100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes ap-box-in {
+  0%, 15% { opacity: 0; transform: scale(0.6); }
+  23%, 82% { opacity: 1; transform: scale(1); }
+  89%, 100% { opacity: 0; transform: scale(0.6); }
+}
+
+@keyframes ap-title-done {
+  0%, 14% { color: #fff; text-decoration-color: transparent; }
+  20%, 82% { color: #9e9ea6; text-decoration-color: #9e9ea6; }
+  90%, 100% { color: #fff; text-decoration-color: transparent; }
+}
+
+/* ---------------------------------------------------------- ActionDock -- */
+
+/* action-dock.tsx: the brand gradient top to bottom, a runner at 20 in the
+   dark amber, stroked heavy, and the label semibold 18. The slab's 40-point
+   top corners; its foot runs off the screen, so here it simply closes. */
+.ap-dock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--ap-pt) * 9);
+  height: calc(var(--ap-pt) * 58);
+  padding: 0 calc(var(--ap-pt) * 24);
+  border-radius: calc(var(--ap-pt) * 40) calc(var(--ap-pt) * 40) calc(var(--ap-pt) * 18) calc(var(--ap-pt) * 18);
+  background: linear-gradient(180deg, #a78bfa 0%, #8b5cf6 48%, #6d4aef 100%);
+  color: #fff;
+  font-size: calc(var(--ap-pt) * 18);
+  font-weight: 600;
+  letter-spacing: calc(var(--ap-pt) * -0.2);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.ap-dock svg {
+  width: calc(var(--ap-pt) * 20);
+  height: calc(var(--ap-pt) * 20);
+  color: #f0b458;
+}
+
+/* The foot of Home, cut out: the page under a task row, the dock under that. */
+.ap-screen {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--ap-pt) * 8);
+  width: calc(var(--ap-pt) * 330);
+  padding: calc(var(--ap-pt) * 2) calc(var(--ap-pt) * 16) calc(var(--ap-pt) * 14);
+  border-radius: calc(var(--ap-pt) * 30);
+  background: rgba(17, 17, 19, 0.9);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+}
+
+/* ------------------------------------------------------------ Progress -- */
+
+/* progress-cards.tsx: radius 28, 18 of padding, 10 of gap; the title bold 19,
+   each row semibold 18 under a hairline, the caption medium 13. */
+.ap-card {
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--ap-pt) * 18);
+  border-radius: calc(var(--ap-pt) * 28);
+  background: #1c1c1f;
+}
+
+.ap-strength {
+  gap: calc(var(--ap-pt) * 10);
+  width: calc(var(--ap-pt) * 300);
+}
+
+.ap-card-title {
+  font-size: calc(var(--ap-pt) * 19);
+  font-weight: 700;
+  letter-spacing: calc(var(--ap-pt) * -0.4);
+  line-height: 1.2;
+}
+
+.ap-strength-row {
+  padding-top: calc(var(--ap-pt) * 10);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: calc(var(--ap-pt) * 18);
+  font-weight: 600;
+  letter-spacing: calc(var(--ap-pt) * -0.3);
+  line-height: 1.25;
+  font-variant-numeric: tabular-nums;
+}
+
+.ap-caption {
+  font-size: calc(var(--ap-pt) * 13);
+  font-weight: 500;
+  line-height: calc(var(--ap-pt) * 18);
+  color: #9e9ea6;
+}
+
+/* ------------------------------------------------------------ Test day -- */
+
+/* test-day-results.tsx, ResultCard: radius 26, 18 of padding, 6 of gap; the
+   zone's tile 38 square at radius 12; the figure heavy 44 with its unit
+   semibold 16; the change semibold 14; the bar 10 tall; the goal line
+   semibold 13. */
+.ap-result {
+  gap: calc(var(--ap-pt) * 6);
+  width: calc(var(--ap-pt) * 300);
+  border-radius: calc(var(--ap-pt) * 26);
+}
+
+.ap-result-head {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--ap-pt) * 12);
+}
+
+.ap-result-tile {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: calc(var(--ap-pt) * 38);
+  height: calc(var(--ap-pt) * 38);
+  border-radius: calc(var(--ap-pt) * 12);
+  background: var(--track);
+  color: var(--fill);
+}
+
+.ap-result-tile svg {
+  width: calc(var(--ap-pt) * 20);
+  height: calc(var(--ap-pt) * 20);
+}
+
+.ap-result-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  font-size: calc(var(--ap-pt) * 17);
+  font-weight: 700;
+  letter-spacing: calc(var(--ap-pt) * -0.2);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ap-result-figure {
+  display: flex;
+  align-items: baseline;
+  gap: calc(var(--ap-pt) * 6);
+  margin-top: calc(var(--ap-pt) * 8);
+}
+
+.ap-result-value {
+  font-size: calc(var(--ap-pt) * 44);
+  font-weight: 800;
+  letter-spacing: calc(var(--ap-pt) * -1.2);
+  line-height: calc(var(--ap-pt) * 50);
+  font-variant-numeric: tabular-nums;
+}
+
+.ap-result-unit {
+  font-size: calc(var(--ap-pt) * 16);
+  font-weight: 600;
+  color: #7c7c84;
+}
+
+/* `meterColors.dark.positive`: an improving delta, the only green there is. */
+.ap-result-change {
+  margin-top: calc(var(--ap-pt) * -2);
+  font-size: calc(var(--ap-pt) * 14);
+  font-weight: 600;
+  color: #2ecc71;
+}
+
+.ap-result-track {
+  position: relative;
+  display: block;
+  height: calc(var(--ap-pt) * 10);
+  margin-top: calc(var(--ap-pt) * 10);
+  overflow: hidden;
+  border-radius: calc(var(--ap-pt) * 5);
+  background: var(--track);
+}
+
+.ap-result-fill {
+  position: absolute;
+  inset: 0;
+  border-radius: calc(var(--ap-pt) * 5);
+  background: var(--fill);
+  transform: scaleX(var(--frac));
+  transform-origin: left center;
+  /* The app fills the bar in 800 ms, ease-out cubic; here it fills again
+     each time round. */
+  animation: ap-bar 6s cubic-bezier(0.33, 1, 0.68, 1) infinite;
+}
+
+@keyframes ap-bar {
+  0%, 4% { transform: scaleX(0); opacity: 1; }
+  18%, 88% { transform: scaleX(var(--frac)); opacity: 1; }
+  96% { transform: scaleX(var(--frac)); opacity: 0; }
+  100% { transform: scaleX(0); opacity: 0; }
+}
+
+.ap-result-goal {
+  display: flex;
+  justify-content: space-between;
+  gap: calc(var(--ap-pt) * 12);
+  margin-top: calc(var(--ap-pt) * 4);
+  font-size: calc(var(--ap-pt) * 13);
+  font-weight: 600;
+  color: #9e9ea6;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ------------------------------------------------------------ The plan -- */
+
+/* today-card.tsx: the kind's colour at 46% over the page with a 1.5 edge in
+   it, radius 26, 18 of padding, 12 of gap; the eyebrow bold 12, the title
+   heavy 24; PlanChips (glyph 14, the chosen one filled, its words in the
+   page's colour); the primary button 76 tall at radius 32, white on the dark
+   scheme with ink on it. */
+.ap-today {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--ap-pt) * 12);
+  width: calc(var(--ap-pt) * 300);
+  padding: calc(var(--ap-pt) * 18);
+  border: calc(var(--ap-pt) * 1.5) solid var(--fill);
+  border-radius: calc(var(--ap-pt) * 26);
+  background: linear-gradient(rgba(155, 133, 255, 0.46), rgba(155, 133, 255, 0.46)), #111113;
+}
+
+.ap-today-eyebrow {
+  font-size: calc(var(--ap-pt) * 12);
+  font-weight: 700;
+  letter-spacing: calc(var(--ap-pt) * 0.6);
+  opacity: 0.8;
+}
+
+.ap-today-title {
+  margin-top: calc(var(--ap-pt) * -6);
+  font-size: calc(var(--ap-pt) * 24);
+  font-weight: 800;
+  letter-spacing: calc(var(--ap-pt) * -0.6);
+  line-height: 1.2;
+}
+
+.ap-today-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--ap-pt) * 8);
+}
+
+.ap-plan-chip svg {
+  width: calc(var(--ap-pt) * 14);
+  height: calc(var(--ap-pt) * 14);
+}
+
+.ap-plan-chip[data-selected] {
+  background: var(--fill);
+  color: #111113;
+}
+
+/* The choice moving along the three lengths, a third of the loop each. */
+.ap-plan-chip {
+  animation: ap-choose 9s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+  animation-delay: calc(var(--lag, 0) * -3s);
+}
+
+@keyframes ap-choose {
+  0%, 30% { background: var(--fill); color: #111113; }
+  33.3%, 97% { background: var(--track); color: var(--fill); }
+  100% { background: var(--fill); color: #111113; }
+}
+
+.ap-primary {
+  display: grid;
+  place-items: center;
+  height: calc(var(--ap-pt) * 76);
+  border-radius: calc(var(--ap-pt) * 32);
+  background: #fff;
+  color: #111114;
+  font-size: calc(var(--ap-pt) * 20);
+  font-weight: 600;
+  letter-spacing: calc(var(--ap-pt) * -0.1);
+}
+
+/* ------------------------------------------------------------- shapes -- */
+
+@supports (corner-shape: superellipse(1.5)) {
+  .ap-pain,
+  .ap-pair .ap-pain::before,
+  .ap-pair .ap-pain::after,
+  .ap-chip,
+  .ap-task-box,
+  .ap-tasks,
+  .ap-screen,
+  .ap-dock,
+  .ap-card,
+  .ap-result-tile,
+  .ap-today,
+  .ap-primary {
+    corner-shape: superellipse(1.5);
+  }
+}
+
+/* --------------------------------------------------------- Reduce Motion -- */
+
+/* Nothing moves; the list shows its first row done, the way a morning looks
+   once one task is finished. */
+@media (prefers-reduced-motion: reduce) {
+  .ap,
+  .ap *,
+  .ap-pair .ap-pain::before,
+  .ap-pair .ap-pain::after {
+    animation: none !important;
+  }
+
+  .ap-tasks .ap-task:first-child .ap-task-chip {
+    opacity: 0;
+  }
+
+  .ap-tasks .ap-task:first-child .ap-task-box {
+    opacity: 1;
+    transform: none;
+  }
+
+  .ap-tasks .ap-task:first-child .ap-task-title {
+    color: #9e9ea6;
+    text-decoration-color: #9e9ea6;
+  }
+}

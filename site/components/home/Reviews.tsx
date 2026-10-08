@@ -97,9 +97,67 @@ const COPY: Record<Lang, ReviewsCopy> = {
     download: 'Descargar Walkito',
     soon: 'Muy pronto',
   },
+  pt: {
+    kicker: 'Avaliações',
+    kickerPlain: 'Fundadores',
+    h2: 'Feito por Rahman e Rahim',
+    lead: 'O Walkito é feito só por nós dois, e cada mensagem é respondida por uma pessoa. Conte para a gente como estão as suas manhãs.',
+    listLabel: 'O que dizem do Walkito',
+    starsSr: (n) => `Nota ${n} de 5`,
+    // Brazilian Portuguese counts 0 and 1 as singular.
+    ratings: (n, raw) => `${n}${NBSP}${raw < 2 ? 'avaliação' : 'avaliações'}`,
+    ratingSr: (store, rating, count) => `${store}: ${rating} de 5${count ? `, ${count}` : ''}`,
+    download: 'Baixar o Walkito',
+    soon: 'Em breve',
+  },
+  fr: {
+    kicker: 'Avis',
+    kickerPlain: 'Fondateurs',
+    h2: 'Fait par Rahman et Rahim',
+    lead: 'Walkito, nous le faisons à deux, et une vraie personne répond à chaque message. Racontez-nous comment se passent vos matins.',
+    listLabel: 'Ce que l’on dit de Walkito',
+    starsSr: (n) => `Noté ${n} sur 5`,
+    // French counts 0 and 1 as singular.
+    ratings: (n, raw) => `${n}${NBSP}${raw < 2 ? 'note' : 'notes'}`,
+    ratingSr: (store, rating, count) => `${store}${NBSP}: ${rating} sur 5${count ? `, ${count}` : ''}`,
+    download: 'Télécharger Walkito',
+    soon: 'Bientôt disponible',
+  },
+  it: {
+    kicker: 'Recensioni',
+    kickerPlain: 'Fondatori',
+    h2: 'Fatto da Rahman e Rahim',
+    lead: 'Walkito lo facciamo solo noi due, e a ogni messaggio risponde una persona. Raccontaci come vanno le tue mattine.',
+    listLabel: 'Cosa dicono di Walkito',
+    starsSr: (n) => `Valutazione ${n} su 5`,
+    ratings: (n, raw) => `${n}${NBSP}${raw === 1 ? 'valutazione' : 'valutazioni'}`,
+    ratingSr: (store, rating, count) => `${store}: ${rating} su 5${count ? `, ${count}` : ''}`,
+    download: 'Scarica Walkito',
+    soon: 'Prossimamente',
+  },
+  de: {
+    kicker: 'Bewertungen',
+    kickerPlain: 'Gründer',
+    h2: 'Gemacht von Rahman und Rahim',
+    lead: 'Walkito machen nur wir zwei, und auf jede Nachricht antwortet ein Mensch. Erzähl uns, wie es morgens bei dir läuft.',
+    listLabel: 'Was Leute über Walkito sagen',
+    starsSr: (n) => `${n} von 5 Sternen`,
+    ratings: (n, raw) => `${n}${NBSP}${raw === 1 ? 'Bewertung' : 'Bewertungen'}`,
+    ratingSr: (store, rating, count) => `${store}: ${rating} von 5${count ? `, ${count}` : ''}`,
+    download: 'Walkito laden',
+    soon: 'Demnächst',
+  },
 };
 
-const LOCALE: Record<Lang, string> = { en: 'en-US', ru: 'ru-RU', es: 'es-MX' };
+const LOCALE: Record<Lang, string> = {
+  en: 'en-US',
+  ru: 'ru-RU',
+  es: 'es-MX',
+  pt: 'pt-BR',
+  fr: 'fr-FR',
+  it: 'it-IT',
+  de: 'de-DE',
+};
 
 const STORE_NAME: Record<Store, string> = { appStore: 'App Store', googlePlay: 'Google Play' };
 
