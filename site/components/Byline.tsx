@@ -21,37 +21,50 @@ import { AUTHOR, AUTHOR_NAME, authorHref, formatDate, howWeResearchHref } from '
 const MAIN_SOURCE: Partial<Record<number, Record<Lang, string>>> = {
   [CITE.brijwasi]: {
     en: 'a 2023 trial on flexible flat feet',
-    ru: 'клинического испытания 2023 года при гибком плоскостопии',
+    ru: 'клинического испытания 2023 года при гибком плоскостопии',
     es: 'un ensayo de 2023 sobre pie plano flexible',
   },
   [CITE.guideline]: {
     en: 'the 2023 heel pain clinical guideline',
-    ru: 'клинических рекомендаций 2023 года по боли в пятке',
+    ru: 'клинических рекомендаций 2023 года по боли в пятке',
     es: 'la guía clínica de 2023 sobre el dolor de talón',
   },
 };
 
-function studies(n: number, lang: Lang): string {
-  if (lang === 'ru') return n === 1 ? '1 опубликованного исследования' : `${n} опубликованных исследований`;
-  if (lang === 'es') return n === 1 ? '1 estudio publicado' : `${n} estudios publicados`;
-  return n === 1 ? '1 published study' : `${n} published studies`;
+/** How many more sources, said as a count of references — never as "N studies"
+ * the app is built on. */
+function more(n: number, lang: Lang): string {
+  if (lang === 'ru') {
+    const mod10 = n % 10;
+    const mod100 = n % 100;
+    const word =
+      mod10 === 1 && mod100 !== 11
+        ? 'источник'
+        : mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)
+          ? 'источника'
+          : 'источников';
+    return `${n} ${word}`;
+  }
+  if (lang === 'es') return n === 1 ? '1 fuente' : `${n} fuentes`;
+  return n === 1 ? '1 source' : `${n} sources`;
 }
 
-/** "Based on …", or null for a page that cites nothing. */
+/** "Sources: …", or null for a page that cites nothing. */
 export function sourceLine(lang: Lang, cites: readonly number[], main?: number): string | null {
   const unique = [...new Set(cites)];
   const named = main != null && unique.includes(main) ? MAIN_SOURCE[main]?.[lang] : undefined;
   const rest = named ? unique.length - 1 : unique.length;
   if (!named && rest === 0) return null;
-  const based = { en: 'Based on', ru: 'На основе', es: 'Basado en' }[lang];
-  const and = { en: 'and', ru: 'и', es: 'y' }[lang];
-  if (!named) return `${based} ${studies(rest, lang)}`;
-  return rest === 0 ? `${based} ${named}` : `${based} ${named} ${and} ${studies(rest, lang)}`;
+  const label = { en: 'Sources:', ru: 'Источники:', es: 'Fuentes:' }[lang];
+  if (!named) return `${label} ${more(rest, lang)}`;
+  if (rest === 0) return `${{ en: 'Source:', ru: 'Источник:', es: 'Fuente:' }[lang]} ${named}`;
+  const plus = { en: `and ${rest} more`, ru: `и ещё ${rest}`, es: `y ${rest} más` }[lang];
+  return `${label} ${named} ${plus}`;
 }
 
 const HOW_WE_RESEARCH: Record<Lang, string> = {
   en: 'How we research',
-  ru: 'Как мы работаем с исследованиями',
+  ru: 'Как мы работаем с исследованиями',
   es: 'Cómo investigamos',
 };
 

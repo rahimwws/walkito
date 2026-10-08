@@ -1,0 +1,569 @@
+/* ---------------------------------------------------------------- footer --
+ *
+ * components/Footer.tsx, on every page in all three languages.
+ *
+ * The page ends on the app's dark surface (#111113). The name runs across the
+ * full width; a glass panel rises over its lower half, lit from behind by the
+ * app icon's blues, and carries the links. Every class is `ft-`, so the old
+ * `.footer` rules in globals.css never reach it.
+ *
+ * Depth is colour, blur and inset hairlines, never a drop shadow.
+ */
+
+.ft {
+  /*
+   * The wordmark's size, fitted to the footer's own width.
+   *
+   * Container units, not vw: vw counts a desktop scrollbar, which is how a
+   * full-width word starts a horizontal scroll. Anton sets WALKITO at 3.175em
+   * of advance (3.105em with the tracking below), so 30.5cqi fills about 95%
+   * of the width. Oswald, the Russian display face, is wider at 3.52em, hence
+   * the `:lang(ru)` size. Capped so a very wide screen gets a big word, not a
+   * wall. Resolved in the children, whose container is this element.
+   */
+  --ft-size: min(30.5cqi, 560px);
+  position: relative;
+  isolation: isolate;
+  container-type: inline-size;
+  overflow: clip;
+  background: #111113;
+  color: #fff;
+}
+
+.ft:lang(ru) {
+  --ft-size: min(27cqi, 500px);
+}
+
+/* ----------------------------------------------------------- wordmark -- */
+
+.ft-stage {
+  position: relative;
+  z-index: 1;
+  /* Holds the wordmark's negative margins in, so the panel's pull-up below is
+     measured from the line box and not merged with them. */
+  display: flow-root;
+  padding-top: clamp(64px, 9cqi, 160px);
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/*
+ * Line-height 0.8 trims Anton's tall ascent so the line box is close to the
+ * capitals themselves (cap height 0.86em, baseline at 0.82em of the box),
+ * which is what lets the panel's negative margin land at their middle.
+ *
+ * The capitals overhang that box by a few hundredths of an em at both ends,
+ * and a background clipped to text paints only inside the box, so without the
+ * padding the tops of the letters would be cut off. The negative margin keeps
+ * the layout as if the padding were not there.
+ */
+.ft-mark {
+  display: block;
+  padding-block: 0.08em;
+  margin-block: -0.08em;
+  font-family: var(--font-display), var(--font-body);
+  font-weight: 400;
+  font-size: var(--ft-size);
+  line-height: 0.8;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: rgba(60, 70, 160, 0.35);
+}
+
+/* Faded indigo at the top, brightening toward the light behind the panel. The
+   plain colour above stays for a browser that cannot clip a gradient to text. */
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+  .ft-mark {
+    background: linear-gradient(
+      180deg,
+      rgba(70, 80, 180, 0.38) 0%,
+      rgba(96, 128, 255, 0.6) 55%,
+      rgba(160, 185, 255, 0.85) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* ------------------------------------------------------- glow + panel -- */
+
+/* Pulled up over the lower half of the capitals: the line box is 0.8em and
+   their middle sits about 0.4em above its foot. */
+.ft-base {
+  position: relative;
+  margin-top: calc(var(--ft-size) * -0.4);
+  padding: 0 24px;
+}
+
+/*
+ * The light behind the panel: the icon's blues, centred on the panel's top
+ * edge, so half of it blooms up through the letters and half reaches the
+ * reader through the glass. Soft gradient falloff instead of a blur filter,
+ * which would be a full-width offscreen pass for the same picture.
+ */
+.ft-glow {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 50%;
+  width: max(640px, 112cqi);
+  height: calc(var(--ft-size) * 1.2);
+  translate: -50% -50%;
+  pointer-events: none;
+  background:
+    radial-gradient(26% 32% at 50% 50%, rgba(24, 216, 253, 0.3) 0%, rgba(24, 216, 253, 0) 100%),
+    radial-gradient(44% 50% at 50% 50%, rgba(61, 123, 255, 0.92) 0%, rgba(22, 82, 255, 0.66) 38%, rgba(2, 52, 253, 0) 100%),
+    radial-gradient(50% 50% at 50% 50%, rgba(2, 52, 253, 0.42) 0%, rgba(2, 52, 253, 0) 100%);
+}
+
+.ft-panel {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 104px 64px calc(40px + env(safe-area-inset-bottom, 0px));
+  border-radius: 56px 56px 0 0;
+  background: linear-gradient(
+    180deg,
+    rgba(120, 110, 255, 0.35) 0%,
+    rgba(80, 70, 240, 0.18) 42%,
+    rgba(80, 70, 240, 0.12) 100%
+  );
+  -webkit-backdrop-filter: blur(28px) saturate(150%);
+  backdrop-filter: blur(28px) saturate(150%);
+  /* Hairlines only: a brighter one on the lit top edge, a faint one round the
+     sides. */
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+/* Centred on the panel's top edge. */
+.ft-top {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 50%;
+  translate: -50% -50%;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-button);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(16px) saturate(140%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22);
+  transition: background-color 0.25s ease;
+}
+
+.ft-top:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.ft-top:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* ------------------------------------------------------------ columns -- */
+
+.ft-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 48px 40px;
+}
+
+/* A long list (Spanish's exercise library) takes two tracks and sets its
+   links in two columns. */
+.ft-col-wide {
+  grid-column: span 2;
+}
+
+.ft-stack {
+  display: grid;
+  gap: 40px;
+  align-content: start;
+}
+
+.ft-heading {
+  margin: 0 0 18px;
+  font-family: var(--font-display), var(--font-body);
+  font-weight: 400;
+  font-size: clamp(26px, 2.4vw, 36px);
+  line-height: 1;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.ft-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.ft-split {
+  display: block;
+  columns: 2;
+  column-gap: 32px;
+}
+
+.ft-split li {
+  break-inside: avoid;
+  margin-bottom: 12px;
+}
+
+.ft-list a {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+  line-height: 1.35;
+  /* «Конфиденциальность» is wider than a column on a 320px phone. */
+  overflow-wrap: anywhere;
+  text-decoration: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease;
+}
+
+.ft-list a:hover {
+  color: #fff;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.45);
+}
+
+.ft-list a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* These keep their own rounded shapes; the outline follows them. */
+.ft-langs a:focus-visible,
+.ft .social a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------- bottom -- */
+
+.ft-bottom {
+  margin-top: 72px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.ft-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+}
+
+.ft-copy {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+}
+
+/* SocialLinks, restyled for the dark panel. Two classes beat globals.css's
+   one, so the muted ink colours there never land here. */
+.ft .social {
+  gap: 8px;
+}
+
+.ft .social a {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  transition: background-color 0.2s ease;
+}
+
+.ft .social a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.ft .social svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* The language switcher as a segmented pill, set apart at the end of the row:
+   the one control a reader in the wrong language is looking for. The globe is
+   there for exactly that reader, who cannot read the word "Language". */
+.ft-langs {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: auto;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.ft-globe {
+  flex: none;
+  margin: 0 4px 0 8px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ft-langs a,
+.ft-langs span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.ft-langs a {
+  color: rgba(255, 255, 255, 0.78);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.ft-langs a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.ft-langs span {
+  color: #111114;
+  background: #fff;
+  font-weight: 600;
+}
+
+.ft-notice {
+  max-width: 760px;
+  margin: 20px 0 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+@supports (corner-shape: superellipse(1.5)) {
+  .ft-panel,
+  .ft-top,
+  .ft .social a {
+    corner-shape: superellipse(1.5);
+  }
+}
+
+/* ------------------------------------------------------------- motion -- */
+
+/*
+ * The word rises out from behind the panel and the light comes up with it, as
+ * the footer scrolls in. Tied to the scroll and played once each way, so
+ * nothing loops and nothing runs while the footer is off screen. Browsers
+ * without scroll timelines, and readers who asked for less motion, get the
+ * finished picture.
+ */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .ft-mark {
+      animation: ft-mark-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 100%;
+    }
+
+    .ft-glow {
+      animation: ft-glow-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 100%;
+    }
+  }
+}
+
+@keyframes ft-mark-rise {
+  from {
+    translate: 0 28%;
+    opacity: 0.35;
+  }
+  to {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+@keyframes ft-glow-rise {
+  from {
+    scale: 0.6 0.4;
+    opacity: 0.2;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ft-top,
+  .ft-list a,
+  .ft-langs a,
+  .ft .social a {
+    transition: none;
+  }
+}
+
+/* ------------------------------------------------------------- tablet -- */
+
+@media (max-width: 1100px) {
+  .ft-base {
+    padding: 0 20px;
+  }
+
+  .ft-panel {
+    padding: 96px 40px calc(36px + env(safe-area-inset-bottom, 0px));
+    border-radius: 44px 44px 0 0;
+  }
+
+  .ft-cols {
+    gap: 40px 32px;
+  }
+
+  .ft-bottom {
+    margin-top: 56px;
+  }
+}
+
+/* -------------------------------------------------------------- phone -- */
+
+@media (max-width: 760px) {
+  .ft-stage {
+    padding-top: 56px;
+  }
+
+  /* Full width on a phone: the panel is the bottom of the page. */
+  .ft-base {
+    padding: 0;
+  }
+
+  .ft-panel {
+    padding: 64px 20px calc(28px + env(safe-area-inset-bottom, 0px));
+    border-radius: 32px 32px 0 0;
+  }
+
+  .ft-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 20px;
+  }
+
+  .ft-col-wide {
+    grid-column: 1 / -1;
+  }
+
+  .ft-stack {
+    gap: 32px;
+  }
+
+  .ft-heading {
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+
+  /* Each link gets a thumb-sized row. */
+  .ft-list {
+    gap: 0;
+  }
+
+  .ft-list a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    font-size: 15px;
+  }
+
+  .ft-split {
+    column-gap: 20px;
+  }
+
+  .ft-split li {
+    margin-bottom: 0;
+  }
+
+  .ft-bottom {
+    margin-top: 40px;
+    padding-top: 22px;
+  }
+
+  .ft-meta {
+    gap: 16px;
+  }
+
+  /* Three endonyms and the globe still fit on one line at 320px. */
+  .ft-langs {
+    margin-left: 0;
+  }
+
+  .ft-globe {
+    margin: 0 2px 0 6px;
+  }
+
+  .ft-langs a,
+  .ft-langs span {
+    padding: 0 12px;
+  }
+}
+
+/* ------------------------------------------------- forced colours, print -- */
+
+/* The word and the light are pictures; with system colours they would turn
+   into a solid slab of text. Hidden, not removed, so the layout holds. */
+@media (forced-colors: active) {
+  .ft-mark,
+  .ft-glow {
+    visibility: hidden;
+  }
+
+  .ft-panel,
+  .ft-top,
+  .ft-langs {
+    border: 1px solid CanvasText;
+  }
+}
+
+@media print {
+  .ft {
+    background: none;
+    color: #000;
+  }
+
+  .ft-stage,
+  .ft-glow,
+  .ft-top {
+    display: none;
+  }
+
+  .ft-base {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .ft-panel {
+    padding: 24px 0 0;
+    background: none;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .ft-heading,
+  .ft-list a,
+  .ft-copy,
+  .ft-notice {
+    color: #000;
+  }
+}

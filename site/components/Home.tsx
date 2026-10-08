@@ -1,22 +1,33 @@
-import { AppStoreBadge } from '@/components/AppStoreBadge';
+import { Fragment } from 'react';
+
+import { AppleGlyph } from '@/components/AppStoreBadge';
 import { Footer } from '@/components/Footer';
-import { Founders } from '@/components/Founders';
+import { GetAppButton } from '@/components/GetApp';
+import { HomeFeatures } from '@/components/HomeFeatures';
+import { Cta } from '@/components/home/Cta';
+import { Faq } from '@/components/home/Faq';
+import { Guides } from '@/components/home/Guides';
+import { Reviews } from '@/components/home/Reviews';
+import { InView } from '@/components/InView';
+import { ScrollProgress } from '@/components/ScrollProgress';
+import { ScrollState } from '@/components/ScrollState';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
-import { ScreenshotSlot } from '@/components/ScreenshotSlot';
-import ArrowRight01Icon from '@hugeicons/core-free-icons/ArrowRight01Icon';
-import BodyPartLegIcon from '@hugeicons/core-free-icons/BodyPartLegIcon';
-import ChartIncreaseIcon from '@hugeicons/core-free-icons/ChartIncreaseIcon';
-import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
-import FootprintsIcon from '@hugeicons/core-free-icons/FootprintsIcon';
-import RunningShoesIcon from '@hugeicons/core-free-icons/RunningShoesIcon';
-import SunriseIcon from '@hugeicons/core-free-icons/SunriseIcon';
-import Timer01Icon from '@hugeicons/core-free-icons/Timer01Icon';
+import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr/ArrowRight';
+import { CalendarDotsIcon } from '@phosphor-icons/react/dist/ssr/CalendarDots';
+import { ChartLineUpIcon } from '@phosphor-icons/react/dist/ssr/ChartLineUp';
+import { CheckIcon } from '@phosphor-icons/react/dist/ssr/Check';
+import { ClockIcon } from '@phosphor-icons/react/dist/ssr/Clock';
+import { FireIcon } from '@phosphor-icons/react/dist/ssr/Fire';
+import { FootprintsIcon } from '@phosphor-icons/react/dist/ssr/Footprints';
+import { PlayIcon } from '@phosphor-icons/react/dist/ssr/Play';
+import { SneakerIcon } from '@phosphor-icons/react/dist/ssr/Sneaker';
+import { SunHorizonIcon } from '@phosphor-icons/react/dist/ssr/SunHorizon';
+import { TimerIcon } from '@phosphor-icons/react/dist/ssr/Timer';
 
-import { Icon } from '@/components/Icon';
 import { Prose } from '@/components/Prose';
 import { CHROME, TRANSLATED, type Lang } from '@/lib/i18n';
-import { APP_STORE_NAME, APP_STORE_URL, PAIN_GOAL_MAX, PROGRAM, SITE_NAME, SITE_URL } from '@/lib/site';
+import { APP_STORE_NAME, APP_STORE_URL, PAIN_GOAL_MAX, PROGRAM, playHref, SITE_NAME, SITE_URL, storeHref } from '@/lib/site';
 
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
 const [DAYS_A, DAYS_B, DAYS_C] = PROGRAM.daysPerWeek;
@@ -76,7 +87,12 @@ type HomeCopy = {
   h1b: string;
   lead: string;
   small: string;
-  chips: [string, string, string];
+  /**
+   * The glass cards around the hero phone, each one a piece of the app's own
+   * UI. Worded as the app words them (`home.noPain`, `dock.startWorkout`,
+   * `progress.calfChange`), so the page and the product say the same thing.
+   */
+  cards: { noPain: string; today: string; start: string; calf: string; streak: string };
   alt: {
     heroLeft: string;
     heroCenter: string;
@@ -91,7 +107,30 @@ type HomeCopy = {
   };
   storyH2: string;
   storyP: string;
+  /**
+   * Where the story's four chips sit: each is placed after the first word
+   * (from the previous chip on) that ends with this text. Decoration only; the
+   * paragraph is read as written.
+   */
+  storyChipsAfter: [string, string, string, string];
+  /** The words the story turns on, drawn in the brand blue once revealed. */
+  storyAccent: string;
   whoH2: string;
+  /** The tilted chip above the heading, and the line under it. */
+  whoKicker: string;
+  whoLead: string;
+  /** Words inside the cards' pictures, worded as the app words them. */
+  whoVisual: {
+    hurts: string;
+    noPain: string;
+    arch: string;
+    sec: string;
+    tasks: string;
+    calf: string;
+    shortFoot: string;
+    hold: string;
+    min: string;
+  };
   who: { heel: Card; flat: Card; allday: Card; run: Card };
   /** The link on a card whose page is in this language, and on one that is English only. */
   whoMore: string;
@@ -119,7 +158,13 @@ const COPY: Record<Lang, HomeCopy> = {
     h1b: 'Try a plan built for your feet.',
     lead: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
     small: `${MIN_A}, ${MIN_B} or ${MIN_C} minutes a day, at home.`,
-    chips: ['Bad morning? Today gets lighter', `A test every ${testEveryDays} days`, `${MIN_A}, ${MIN_B} or ${MIN_C} min`],
+    cards: {
+      noPain: 'No pain today',
+      today: `Today, ${MIN_B} min`,
+      start: 'Start session',
+      calf: 'Calf raises',
+      streak: '35 days in a row',
+    },
     alt: {
       heroLeft: "Walkito after a bad morning is logged: today's session gets lighter",
       heroCenter: "Walkito's Today screen: a greeting, the morning check-in and today's session",
@@ -134,8 +179,23 @@ const COPY: Record<Lang, HomeCopy> = {
     },
     storyH2: 'It’s not your fault.',
     storyP:
-      'Insoles, new shoes, a night splint, fifty videos that all say something different. They can make your feet feel supported, but none of them train the foot. What’s missing is one clear plan: which exercises, how many, in what order, and what to do on a bad day.',
+      'Insoles, new shoes, fifty videos that all disagree. None of them train the foot. What’s missing is one clear plan, for good days and bad ones.',
+    storyChipsAfter: ['disagree.', 'foot.', 'plan,', 'ones.'],
+    storyAccent: 'one clear plan,',
     whoH2: 'Is this for me?',
+    whoKicker: 'For you',
+    whoLead: 'Pick the one that sounds like you. The plan starts there and changes with how your feet feel each day.',
+    whoVisual: {
+      hurts: 'It hurts today',
+      noPain: 'No pain today',
+      arch: 'Stronger arch',
+      sec: 's',
+      tasks: 'Today’s Tasks',
+      calf: 'Calf raises',
+      shortFoot: 'Short foot',
+      hold: 'Single-leg hold',
+      min: 'min',
+    },
     who: {
       heel: {
         title: 'Heel pain and plantar fasciitis',
@@ -178,8 +238,8 @@ const COPY: Record<Lang, HomeCopy> = {
         link: 'What the tests measure',
       },
       {
-        title: 'Built on published research',
-        text: 'The 2023 clinical guideline for heel pain grades stretching A and strength training B, and a randomized trial found high-load strength work improved pain and function faster than stretching.',
+        title: 'Chosen from published research',
+        text: 'Exercises chosen from published research and guidelines. Walkito itself hasn’t been tested in a trial.',
         link: 'Read the evidence',
       },
     ],
@@ -226,7 +286,14 @@ const COPY: Record<Lang, HomeCopy> = {
     h1b: 'Попробуйте план, созданный для ваших стоп.',
     lead: 'Walkito составляет персональный план упражнений при боли в пятке, стопе и голени и каждый день подстраивает его под состояние ваших стоп.',
     small: `${MIN_A}, ${MIN_B} или ${MIN_C} минут в день, дома.`,
-    chips: ['Плохое утро? Сегодня будет легче', `Тест каждые ${testEveryDays} дней`, `${MIN_A}, ${MIN_B} или ${MIN_C} мин`],
+    // «минут» agrees with MIN_B = 5; reread it if that changes.
+    cards: {
+      noPain: 'Сегодня не болит',
+      today: `Сегодня ${MIN_B} минут`,
+      start: 'Начать занятие',
+      calf: 'Подъёмы на носок',
+      streak: '35 дней подряд',
+    },
     alt: {
       heroLeft: 'Walkito после отметки о плохом утре: сегодняшнее занятие становится легче',
       heroCenter: 'Главный экран Walkito: приветствие, утренняя отметка и сегодняшнее занятие',
@@ -241,8 +308,23 @@ const COPY: Record<Lang, HomeCopy> = {
     },
     storyH2: 'Вы ни в чём не виноваты.',
     storyP:
-      'Стельки, новая обувь, ночной ортез, полсотни видео, где каждый говорит своё. Всё это может дать стопам ощущение опоры, но ничто из этого не тренирует саму стопу. Не хватает одного понятного плана: какие упражнения, сколько, в каком порядке и что делать в плохой день.',
+      'Стельки, новая обувь, полсотни видео, где каждый говорит своё. Ничто из этого не тренирует саму стопу. Не хватает одного понятного плана, на хорошие дни и на плохие.',
+    storyChipsAfter: ['своё.', 'стопу.', 'плана,', 'плохие.'],
+    storyAccent: 'одного понятного плана,',
     whoH2: 'Это для меня?',
+    whoKicker: 'Для вас',
+    whoLead: 'Выберите то, что похоже на вас. План начинается отсюда и меняется вместе с тем, как чувствуют себя ваши стопы.',
+    whoVisual: {
+      hurts: 'Сегодня болит',
+      noPain: 'Сегодня не болит',
+      arch: 'Сильный свод',
+      sec: 'с',
+      tasks: 'Задачи на сегодня',
+      calf: 'Подъёмы на носки',
+      shortFoot: 'Короткая стопа',
+      hold: 'Стойка на одной ноге',
+      min: 'мин',
+    },
     who: {
       heel: {
         title: 'Боль в пятке и плантарный фасциит',
@@ -285,8 +367,8 @@ const COPY: Record<Lang, HomeCopy> = {
         link: 'Что измеряют тесты (на английском)',
       },
       {
-        title: 'На основе опубликованных исследований',
-        text: 'Клинические рекомендации 2023 года по боли в пятке дают растяжке уровень A, а силовым упражнениям уровень B. В рандомизированном исследовании силовая работа с высокой нагрузкой быстрее растяжки уменьшала боль и улучшала функцию стопы.',
+        title: 'Подобрано по опубликованным исследованиям',
+        text: 'Упражнения подобраны по опубликованным исследованиям и клиническим рекомендациям. Сам Walkito в клинических испытаниях не проверялся.',
         link: 'Исследования (на английском)',
       },
     ],
@@ -330,7 +412,13 @@ const COPY: Record<Lang, HomeCopy> = {
     h1b: 'Prueba un plan hecho para tus pies.',
     lead: 'Walkito es un plan de ejercicios personalizado para el dolor de talón, pie y pierna que se ajusta cada día a cómo se sienten tus pies.',
     small: `${MIN_A}, ${MIN_B} o ${MIN_C} minutos al día, en casa.`,
-    chips: ['¿Mala mañana? Hoy va más suave', `Una prueba cada ${testEveryDays} días`, `${MIN_A}, ${MIN_B} o ${MIN_C} min`],
+    cards: {
+      noPain: 'Hoy no me duele',
+      today: `Hoy, ${MIN_B} min`,
+      start: 'Empezar sesión',
+      calf: 'Elevaciones de talón',
+      streak: 'Racha de 35 días',
+    },
     alt: {
       heroLeft: 'Walkito después de registrar una mala mañana: la sesión de hoy es más suave',
       heroCenter: 'La pantalla de hoy en Walkito: un saludo, el registro de la mañana y la sesión de hoy',
@@ -345,8 +433,23 @@ const COPY: Record<Lang, HomeCopy> = {
     },
     storyH2: 'No es tu culpa.',
     storyP:
-      'Plantillas, zapatos nuevos, una férula nocturna, cincuenta videos que dicen cosas distintas. Pueden hacer que tus pies se sientan con más apoyo, pero ninguno entrena el pie. Lo que falta es un plan claro: qué ejercicios, cuántos, en qué orden y qué hacer en un mal día.',
+      'Plantillas, zapatos nuevos, cincuenta videos que se contradicen. Ninguno entrena el pie. Lo que falta es un plan claro, para los días buenos y los malos.',
+    storyChipsAfter: ['contradicen.', 'pie.', 'claro,', 'malos.'],
+    storyAccent: 'un plan claro,',
     whoH2: '¿Esto es para mí?',
+    whoKicker: 'Para ti',
+    whoLead: 'Elige lo que se parece a ti. El plan empieza ahí y cambia según cómo se sienten tus pies cada día.',
+    whoVisual: {
+      hurts: 'Hoy me duele',
+      noPain: 'Hoy no me duele',
+      arch: 'Arco más fuerte',
+      sec: 's',
+      tasks: 'Tareas de hoy',
+      calf: 'Elevación de talones',
+      shortFoot: 'Pie corto',
+      hold: 'Equilibrio a una pierna',
+      min: 'min',
+    },
     who: {
       heel: {
         title: 'Dolor de talón y fascitis plantar',
@@ -389,8 +492,8 @@ const COPY: Record<Lang, HomeCopy> = {
         link: 'Qué miden las pruebas (en inglés)',
       },
       {
-        title: 'Basado en investigación publicada',
-        text: 'La guía clínica de 2023 para el dolor de talón le da al estiramiento un grado A y al entrenamiento de fuerza un grado B, y un ensayo aleatorizado encontró que el trabajo de fuerza con carga alta redujo el dolor y mejoró la función más rápido que el estiramiento.',
+        title: 'Elegido a partir de investigación publicada',
+        text: 'Ejercicios elegidos a partir de investigación y guías publicadas. Walkito en sí no se ha probado en un ensayo.',
         link: 'Ver la evidencia (en inglés)',
       },
     ],
@@ -473,22 +576,117 @@ export function Home({ lang }: { lang: Lang }) {
     LOCALIZED_SHOTS.has(lang) ? `/app/${lang}/${name}.webp` : `/app/${name}.webp`;
   const app = lang === 'en' ? APP : { ...APP, description: copy.meta.description, featureList: undefined };
 
+  const v = copy.whoVisual;
+
+  /**
+   * The picture in each card, a piece of the app that card's person would
+   * meet first: the morning check-in, the arch-hold goal, today's minutes, and
+   * the day's tasks ticking off.
+   */
+  const visuals = {
+    heel: (
+      <span className="wv-checkin">
+        <span className="wv-check wv-check-back">
+          <img src="/hero/mascot-pain.webp" alt="" width={240} height={240} />
+          {v.hurts}
+        </span>
+        <span className="wv-check wv-check-front">
+          <img src="/hero/mascot-nopain.webp" alt="" width={240} height={240} />
+          {v.noPain}
+        </span>
+      </span>
+    ),
+    flat: (
+      <span className="wv-ring">
+        <svg viewBox="0 0 120 120">
+          <circle className="wv-ring-track" cx="60" cy="60" r="52" />
+          <circle className="wv-ring-fill" cx="60" cy="60" r="52" pathLength={100} />
+        </svg>
+        <span className="wv-ring-num">
+          <span className="wv-count" style={{ '--to': archHoldSeconds } as React.CSSProperties} />
+          {v.sec}
+        </span>
+        <span className="wv-ring-label">{v.arch}</span>
+      </span>
+    ),
+    allday: (
+      <span className="wv-minutes">
+        <span className="wv-big">
+          {MIN_B}
+          <small>{v.min}</small>
+        </span>
+        <span className="wv-chip">
+          <ClockIcon size={16} weight="fill" aria-hidden />
+          {MIN_A} · {MIN_B} · {MIN_C} {v.min}
+        </span>
+        <img className="wv-walker" src="/hero/mascot-tasks.webp" alt="" width={240} height={240} />
+      </span>
+    ),
+    run: (
+      <span className="wv-tasks">
+        <span className="wv-tasks-head">
+          <FireIcon size={16} weight="fill" aria-hidden />
+          {v.tasks}
+        </span>
+        {[
+          [v.calf, '3 × 12'],
+          [v.shortFoot, '3 × 10'],
+          [v.hold, '3 × 30s'],
+        ].map(([name, dose], k) => (
+          <span key={name} className="wv-row" style={{ '--k': k } as React.CSSProperties}>
+            <span className="wv-tick">
+              <CheckIcon size={14} weight="bold" aria-hidden />
+            </span>
+            <span className="wv-row-name">{name}</span>
+            <span className="wv-row-dose">{dose}</span>
+          </span>
+        ))}
+      </span>
+    ),
+  };
+
+  /** The story paragraph as words, and which word each chip follows. */
+  const storyTokens = copy.storyP.split(' ');
+  const chipAt = new Map<number, number>();
+  copy.storyChipsAfter.reduce((from, end, k) => {
+    const i = storyTokens.findIndex((word, j) => j >= from && word.endsWith(end));
+    if (i < 0) return from;
+    chipAt.set(i, k);
+    return i + 1;
+  }, 0);
+  // The accent: the run of words, from wherever it starts, that spells
+  // `storyAccent` (non-breaking spaces read as spaces).
+  const plain = (word: string) => word.replace(/\u00a0/g, ' ');
+  const accent = new Set<number>();
+  for (let i = 0; i < storyTokens.length && accent.size === 0; i++) {
+    let text = '';
+    for (let j = i; j < storyTokens.length && text.length < copy.storyAccent.length; j++) {
+      text += (text ? ' ' : '') + plain(storyTokens[j]);
+      if (text === copy.storyAccent) for (let k = i; k <= j; k++) accent.add(k);
+    }
+  }
+  const storyChips = [
+    <img key="pain" src="/hero/mascot-pain.webp" alt="" width={240} height={240} />,
+    <>{v.hurts}</>,
+    <>
+      <FireIcon size={22} weight="fill" aria-hidden />
+      {v.tasks}
+    </>,
+    <>
+      <img src="/hero/mascot-nopain.webp" alt="" width={240} height={240} />
+      {v.noPain}
+    </>,
+  ];
+
   /** English-only targets carry `hrefLang="en"` so the switch of language is announced. */
   const forWho = [
-    { card: copy.who.heel, href: TRANSLATED.heelPain[lang], icon: FootprintsIcon, accent: 'teal', en: false },
-    { card: copy.who.flat, href: TRANSLATED.flatFeet[lang], icon: BodyPartLegIcon, accent: 'violet', en: false },
+    { card: copy.who.heel, href: TRANSLATED.heelPain[lang], accent: 'teal', en: false, visual: visuals.heel },
+    { card: copy.who.flat, href: TRANSLATED.flatFeet[lang], accent: 'violet', en: false, visual: visuals.flat },
     // No page of its own yet; the program page is the closest honest answer.
-    { card: copy.who.allday, href: '/program/', icon: Clock01Icon, accent: 'amber', en: true },
-    { card: copy.who.run, href: '/heel-pain-runners/', icon: RunningShoesIcon, accent: 'blue', en: true },
+    { card: copy.who.allday, href: '/program/', accent: 'amber', en: true, visual: visuals.allday },
+    { card: copy.who.run, href: '/heel-pain-runners/', accent: 'blue', en: true, visual: visuals.run },
   ] as const;
   const englishOnly = lang !== 'en';
-
-  /** Small notes around the hero phones, on wide screens only. */
-  const chips = [
-    { text: copy.chips[0], icon: SunriseIcon, place: 'chip-a' },
-    { text: copy.chips[1], icon: ChartIncreaseIcon, place: 'chip-b' },
-    { text: copy.chips[2], icon: Timer01Icon, place: 'chip-c' },
-  ];
 
   /**
    * The cards under the plan section. The goal card is Rahym's, from the home
@@ -498,170 +696,216 @@ export function Home({ lang }: { lang: Lang }) {
    */
   const howHrefs = ['/program/', '/program/', '/science/'];
 
-  /** The app, a screen at a time. Images come from scripts/export-screenshots.mjs. */
-  const inside = [
-    { src: shot('05-week'), label: copy.alt.week, caption: copy.inside.week },
-    { src: shot('06-exercise'), label: copy.alt.exercise, caption: copy.inside.video },
-    { src: shot('07-quick'), label: copy.alt.quick, caption: copy.inside.quick },
-    { src: shot('progress-results'), label: copy.alt.tests, caption: copy.inside.tests },
-  ];
 
   return (
     <>
       <JsonLd data={app} />
-      <Masthead lang={lang} />
+      {/* The hero is a band of its own: the icon's blue, the header laid over
+          it, one phone with today's screen and the app's own cards around it. */}
+      <ScrollState />
+      <Masthead lang={lang} current="home" floating />
+      <div className="hero-stage">
+        <div className="hero-sky" aria-hidden>
+          <span className="sky-blob sky-a" />
+          <span className="sky-blob sky-b" />
+          <span className="sky-blob sky-c" />
+          <span className="sky-streak sky-s1" />
+          <span className="sky-streak sky-s2" />
+        </div>
 
-      <Prose className="home">
-        <section className="shell hero hero-long hero-split">
+
+        <section className="shell hero hero-glass">
+          <div className="hero-device">
+            <div className="hero-arch" aria-hidden />
+
+            {/* The phone is one picture, frame and all (`public/hero/phone-home*`,
+                cut from the mockup with its transparent surround). */}
+            <div className="hero-main">
+              <img
+                src="/hero/phone-home.webp"
+                srcSet="/hero/phone-home.webp 376w, /hero/phone-home@2x.webp 751w"
+                sizes="(max-width: 760px) 64vw, 330px"
+                width={751}
+                height={1550}
+                alt={copy.alt.heroCenter}
+                fetchPriority="high"
+                decoding="async"
+              />
+              {/* Our own Dynamic Island, drawn over the one in the mockup. */}
+              <span className="hero-island" aria-hidden>
+                <img src="/icon.png" alt="" width={64} height={64} />
+                <span className="hero-island-name">Walkito</span>
+                <span className="hero-island-ring" />
+              </span>
+            </div>
+
+            <div className="glass-card card-nopain" aria-hidden>
+              <img src="/hero/mascot-nopain.webp" alt="" width={240} height={240} />
+              <span>{copy.cards.noPain}</span>
+            </div>
+
+            <div className="glass-card card-streak" aria-hidden>
+              <span className="card-fire">
+                <FireIcon size={20} weight="fill" aria-hidden />
+              </span>
+              <span>{copy.cards.streak}</span>
+            </div>
+
+            <div className="glass-card card-today" aria-hidden>
+              <span className="card-today-text">{copy.cards.today}</span>
+              <span className="card-start">
+                <PlayIcon size={14} weight="fill" aria-hidden />
+                {copy.cards.start}
+              </span>
+            </div>
+
+            <div className="glass-card card-calf" aria-hidden>
+              <span className="card-label">{copy.cards.calf}</span>
+              <span className="card-figure">
+                12 <span className="card-arrow">→</span> 18
+              </span>
+              <span className="card-bars">
+                {[34, 46, 52, 64, 78, 100].map((h) => (
+                  <span key={h} style={{ height: `${h}%` }} />
+                ))}
+              </span>
+            </div>
+          </div>
+
           <div className="hero-text">
             <h1>
               {copy.h1a}
               <span>{copy.h1b}</span>
             </h1>
             <p>{copy.lead}</p>
-            <AppStoreBadge campaign={`home-hero${suffix}`} anchor lang={lang} />
+            {/* "Get the app", not the store badge: on a laptop it opens the QR
+                dialog, on a phone it goes to that phone's store. */}
+            <GetAppButton
+              className="hero-get"
+              ios={storeHref(`home-hero${suffix}`) ?? '#'}
+              android={playHref(`home-hero${suffix}`)}
+            >
+              <AppleGlyph />
+              {c.headerButton}
+            </GetAppButton>
             <p className="hero-small">{copy.small}</p>
           </div>
+        </section>
+      </div>
 
-          {/* Three phones: today in front, a bad morning on the left, an
-              exercise playing on the right. Only the front one loads eagerly. */}
-          <div className="hero-phones">
-            <div className="hero-phone hero-phone-left">
-              <ScreenshotSlot
-                src={shot('hero-checkin-bad')}
-                label={copy.alt.heroLeft}
-                sizes="(max-width: 1023px) 34vw, 230px"
-              />
-            </div>
-            <div className="hero-phone hero-phone-center">
-              <ScreenshotSlot
-                src={shot('hero-home')}
-                label={copy.alt.heroCenter}
-                sizes="(max-width: 1023px) 44vw, 270px"
-                priority
-              />
-            </div>
-            <div className="hero-phone hero-phone-right">
-              <ScreenshotSlot
-                src={shot('hero-exercise')}
-                label={copy.alt.heroRight}
-                sizes="(max-width: 1023px) 34vw, 230px"
-              />
-            </div>
-            {chips.map((chip) => (
-              <span key={chip.place} className={`hero-chip ${chip.place}`} aria-hidden>
-                <Icon icon={chip.icon} size={18} />
-                {chip.text}
+      <Prose className="home">
+        {/* "Is this for me?": four tall cards, each with a moving piece of the
+            app in it. Loops run only while the section is on screen. */}
+        <InView className="who-sheet">
+          <div className="who-inner">
+          <span className="who-kicker" aria-hidden>
+            <span className="kick-num">01</span>
+            <span className="kick-label">{copy.whoKicker}</span>
+          </span>
+          {/* Each word rises out of its own line box, one after another. */}
+          <h2 aria-label={copy.whoH2}>
+            {copy.whoH2.split(' ').map((word, w) => (
+              <span key={w} className="rise-word" aria-hidden>
+                <span style={{ '--w': w } as React.CSSProperties}>{word}</span>
               </span>
             ))}
-          </div>
-        </section>
+          </h2>
+          <p className="who-lead">{copy.whoLead}</p>
 
-        <section className="shell story">
-          <h2>{copy.storyH2}</h2>
-          <p>{copy.storyP}</p>
-        </section>
-
-        <section className="shell proof proof-lead">
-          <h2>{copy.whoH2}</h2>
-          <div className="who-grid">
-            {forWho.map(({ card, href, icon, accent, en }) => (
+          <div className="who-grid who-grid-v2">
+            {forWho.map(({ card, href, accent, en, visual }, i) => (
               <a
                 key={href}
                 href={href}
                 hrefLang={en && englishOnly ? 'en' : undefined}
-                className={`who-card who-${accent}`}
+                className={`who-tile who-${accent}`}
+                style={{ '--i': i } as React.CSSProperties}
               >
-                <span className="who-icon">
-                  <Icon icon={icon} size={26} />
+                <span className="who-visual" aria-hidden>
+                  {visual}
                 </span>
-                {card.goal && <span className="who-goal">{card.goal}</span>}
-                <h3>{card.title}</h3>
-                <p>{card.text}</p>
-                <span className="who-more">
-                  {en ? copy.whoMoreEn : copy.whoMore}
-                  <span className="who-arrow">
-                    <Icon icon={ArrowRight01Icon} size={18} strokeWidth={2} />
+                <span className="who-body">
+                  {card.goal && <span className="who-goal">{card.goal}</span>}
+                  <h3>{card.title}</h3>
+                  <p>{card.text}</p>
+                  <span className="who-more">
+                    {en ? copy.whoMoreEn : copy.whoMore}
+                    <span className="who-arrow">
+                      <ArrowRightIcon size={18} weight="bold" aria-hidden />
+                    </span>
                   </span>
                 </span>
               </a>
             ))}
           </div>
-        </section>
-
-        <section className="shell split">
-          <div>
-            <h2>{copy.adjustH2}</h2>
-            <p>{copy.adjustP}</p>
           </div>
-          <ScreenshotSlot src={shot('02-checkin')} label={copy.alt.checkin} />
-        </section>
-
-        <section className="shell split split-flip">
-          <div>
-            <h2>{copy.answersH2}</h2>
-            <p>{copy.answersP}</p>
+        </InView>
+        {/* "It's not your fault": the paragraph stays in the middle of the
+            screen while the page scrolls past it. Its words darken one by one,
+            chips from the app pop into the gaps left for them, and app icons
+            drift up behind. */}
+        <ScrollProgress className="story-flow">
+          <div className="flow-stage">
+            <div className="flow-float" aria-hidden>
+              {[FootprintsIcon, TimerIcon, ChartLineUpIcon, SunHorizonIcon, SneakerIcon, CalendarDotsIcon].map(
+                (Glyph, k) => (
+                  <span key={k} className={`ftile ftile-${k}`}>
+                    <Glyph size={30} weight="fill" />
+                  </span>
+                ),
+              )}
+            </div>
+            <div className="flow-inner">
+              <h2 className="who-kicker flow-kicker">
+                <span className="kick-num">02</span>
+                <span className="kick-label">{copy.storyH2}</span>
+              </h2>
+              <p className="flow-text">
+                {/* Read once, as written; the animated words below are hidden from screen readers. */}
+                <span className="sr-only">{copy.storyP}</span>
+                {storyTokens.map((word, i) => (
+                  <Fragment key={i}>
+                    <span className={accent.has(i) ? 'fw fw-accent' : 'fw'} aria-hidden style={{ '--t': (i / storyTokens.length).toFixed(3) } as React.CSSProperties}>
+                      {word}
+                    </span>{' '}
+                    {chipAt.has(i) && (
+                      <>
+                        <span
+                          className={`fchip fchip-${chipAt.get(i)}`}
+                          aria-hidden
+                          style={{ '--t': (i / storyTokens.length).toFixed(3) } as React.CSSProperties}
+                        >
+                          {storyChips[chipAt.get(i)!]}
+                        </span>{' '}
+                      </>
+                    )}
+                  </Fragment>
+                ))}
+              </p>
+            </div>
           </div>
-          <div className="phone-pair">
-            <ScreenshotSlot src={shot('03-where-it-hurts')} label={copy.alt.where} />
-            <ScreenshotSlot src={shot('choose-goal')} label={copy.alt.goal} />
-          </div>
-        </section>
+        </ScrollProgress>
 
-        <section className="shell proof proof-follow">
-          <div className="quotes">
-            {copy.how.map((item, i) => (
-              <figure key={item.title}>
-                <h3>{keepTail(item.title)}</h3>
-                <p>{item.text}</p>
-                <a href={howHrefs[i]} hrefLang={englishOnly ? 'en' : undefined}>
-                  {item.link}&nbsp;→
-                </a>
-              </figure>
-            ))}
-          </div>
-        </section>
+        {/* 03 "How it works" and 04 "Progress", on one dark band. They
+            replace the two text-and-phone sections that used to sit here. */}
+        <HomeFeatures lang={lang} />
 
-        <section className="shell proof">
-          <h2>{copy.insideH2}</h2>
-          <div className="gallery">
-            {inside.map((item) => (
-              <div key={item.caption} className="gallery-item">
-                <ScreenshotSlot src={item.src} label={item.label} size="sm" />
-                <p>{item.caption}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* 04 Reviews, on the white page again. */}
+        <Reviews lang={lang} />
 
-        <section className="shell story">
-          <Founders lang={lang} />
-        </section>
+        {/* 05 Guides: the three ways in to how the plan works. */}
+        <Guides
+          lang={lang}
+          items={copy.how.map((item, i) => ({
+            ...item,
+            href: howHrefs[i],
+            hrefLang: englishOnly ? 'en' : undefined,
+          }))}
+        />
 
-        <section className="shell proof home-faq">
-          <h2>{copy.faqH2}</h2>
-          {/* Native details/summary: the answer stays in the HTML for search
-              engines and assistants, and opens on tap. */}
-          <div className="faq faq-details">
-            {copy.faq.map((item) => (
-              <details key={item.q}>
-                <summary>
-                  <h3>{item.q}</h3>
-                </summary>
-                <p>{item.a}</p>
-              </details>
-            ))}
-          </div>
-        </section>
-
-        <section className="shell final">
-          <div className="final-card">
-            <h2>{copy.finalH2}</h2>
-            <AppStoreBadge campaign={`home-bottom${suffix}`} lang={lang} />
-            <p className="final-small">{copy.small}</p>
-          </div>
-          <p className="final-notice">{c.notice}</p>
-        </section>
+        {/* 06 FAQ, then the closing call, on one dark band. */}
+        <Faq lang={lang} items={copy.faq} />
+        <Cta lang={lang} />
       </Prose>
 
       <Footer lang={lang} page="home" />

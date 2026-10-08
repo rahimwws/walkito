@@ -212,7 +212,9 @@ export default function PrivacidadEs() {
           dispositivo, la versión de iOS y de la app, el idioma y la zona
           horaria, y PostHog deduce una ubicación aproximada (país y ciudad) a
           partir de tu dirección IP. Los eventos van unidos a un ID aleatorio,
-          el mismo que usa RevenueCat.
+          el mismo que usa RevenueCat. Cuando inicias sesión, se le añaden el
+          correo y el nombre que nos dio Apple o Google, para poder escribirte
+          si algo no te funciona.
         </p>
         <p>
           <b>Nunca se envía:</b> puntuaciones de dolor, zonas de dolor,

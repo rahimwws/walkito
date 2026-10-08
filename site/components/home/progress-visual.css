@@ -1,0 +1,398 @@
+/* ------------- "How it works" 04: the Progress screen and its streak sheet -- */
+
+/*
+ * Everything here is measured in the app's own points, so the pieces keep the
+ * app's proportions: one `--pv-pt` is one point, in pixels, worked out from
+ * the room the card has (container units). Registered, so it is computed once
+ * on the stage rather than re-resolved on every element that uses it.
+ */
+@property --pv-pt {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 1px;
+}
+
+.pv {
+  position: absolute;
+  inset: 0;
+  container: pv / size;
+}
+
+/*
+ * Narrow and tall (a tablet held upright): the screen at the top, the sheet
+ * docked under it, the way the app stacks them. Sized so the whole tests card
+ * stays clear of the emblem: 18 + 213 points of screen above it, 8 of air, and
+ * about 545 points of sheet and emblem below (the blurb runs a line longer in
+ * Russian).
+ */
+.pv-stage {
+  --pv-pt: min(calc(88cqw / 390), calc(92cqh / 798), 1.1px);
+  position: absolute;
+  inset: 0;
+  color: #fff;
+  text-align: left;
+}
+
+.pv-stage > * {
+  position: absolute;
+}
+
+/* ---- behind: the Progress screen ---- */
+
+.pv-page {
+  top: 8cqh;
+  left: calc(50% - var(--pv-pt) * 195);
+  bottom: calc(var(--pv-pt) * -40);
+  width: calc(var(--pv-pt) * 390);
+  padding: calc(var(--pv-pt) * 18) calc(var(--pv-pt) * 20) 0;
+  overflow: hidden;
+  border-radius: calc(var(--pv-pt) * 44);
+  background: #111113;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+/* The app lays a trace of ink over the page while the sheet is up, driven by
+   the same timing as the card. Its blur is left out: here the tests behind
+   are half the point. */
+.pv-page::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.pv-card {
+  display: block;
+  padding: calc(var(--pv-pt) * 18);
+  border-radius: calc(var(--pv-pt) * 28);
+  background: #1c1c1f;
+}
+
+.pv-strength {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--pv-pt) * 10);
+}
+
+.pv-card-title {
+  font-size: calc(var(--pv-pt) * 19);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: calc(var(--pv-pt) * -0.4);
+}
+
+.pv-row {
+  padding-top: calc(var(--pv-pt) * 10);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: calc(var(--pv-pt) * 18);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: calc(var(--pv-pt) * -0.3);
+  white-space: nowrap;
+}
+
+.pv-caption,
+.pv-page-caption {
+  font-size: calc(var(--pv-pt) * 13);
+  font-weight: 500;
+  line-height: calc(var(--pv-pt) * 18);
+  color: #9e9ea6;
+}
+
+.pv-tiles {
+  display: flex;
+  gap: calc(var(--pv-pt) * 14);
+  margin-top: calc(var(--pv-pt) * 14);
+}
+
+.pv-tile {
+  flex: 1;
+  min-width: 0;
+}
+
+.pv-tile svg {
+  display: block;
+  width: calc(var(--pv-pt) * 30);
+  height: calc(var(--pv-pt) * 30);
+}
+
+/* The accent names the metric, never rates it: orange is the streak at one
+   day and at ninety, amber the longest. */
+.pv-tile-fire svg {
+  color: #ff9245;
+}
+
+.pv-tile-diamond svg {
+  color: #f0b458;
+}
+
+.pv-tile-value {
+  display: block;
+  margin-top: calc(var(--pv-pt) * 26);
+  font-size: calc(var(--pv-pt) * 24);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: calc(var(--pv-pt) * -0.6);
+}
+
+.pv-tile-label {
+  display: block;
+  margin-top: calc(var(--pv-pt) * 2);
+  overflow: hidden;
+  font-size: calc(var(--pv-pt) * 16);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: calc(var(--pv-pt) * -0.2);
+  color: #9e9ea6;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Narrower than the screen, so it wraps before the sheet's edge where the
+   two overlap. */
+.pv-page-caption {
+  display: block;
+  max-width: calc(var(--pv-pt) * 300);
+  margin-top: calc(var(--pv-pt) * 10);
+  padding: 0 calc(var(--pv-pt) * 4);
+}
+
+/* ---- in front: the streak sheet ---- */
+
+/* The dock: its top padding is the half of the emblem that sits in the air,
+   so the card's top edge cuts the emblem exactly through its middle. */
+.pv-sheet {
+  left: calc(50% - var(--pv-pt) * 181);
+  bottom: calc(var(--pv-pt) * 14);
+  width: calc(var(--pv-pt) * 362);
+  padding-top: calc(var(--pv-pt) * 92);
+  opacity: 0;
+  translate: 0 calc(var(--pv-pt) * 44);
+}
+
+.pv-badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  width: calc(var(--pv-pt) * 184);
+  height: calc(var(--pv-pt) * 184);
+  margin-left: calc(var(--pv-pt) * -92);
+  object-fit: contain;
+}
+
+.pv-sheet-card {
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--pv-pt) * 106) calc(var(--pv-pt) * 20) calc(var(--pv-pt) * 18);
+  border-radius: calc(var(--pv-pt) * 36);
+  background: #1c1c1f;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.pv-title {
+  font-size: calc(var(--pv-pt) * 28);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: calc(var(--pv-pt) * -0.8);
+  text-align: center;
+}
+
+.pv-blurb {
+  margin-top: calc(var(--pv-pt) * 6);
+  padding: 0 calc(var(--pv-pt) * 4);
+  font-size: calc(var(--pv-pt) * 15);
+  font-weight: 500;
+  line-height: calc(var(--pv-pt) * 21);
+  color: #9e9ea6;
+  text-align: center;
+}
+
+/* The week as seven flames: banked days grey, today the one lit thing on a
+   raised cell, the days ahead barely there. */
+.pv-week {
+  display: flex;
+  gap: calc(var(--pv-pt) * 6);
+  margin: calc(var(--pv-pt) * 20) 0;
+}
+
+.pv-cell {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--pv-pt) * 10);
+  min-width: 0;
+  padding: calc(var(--pv-pt) * 15) 0;
+  border-radius: calc(var(--pv-pt) * 26);
+  opacity: 0;
+  scale: 0.86;
+}
+
+.pv-cell[data-today] {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.pv-day {
+  font-size: calc(var(--pv-pt) * 14);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: calc(var(--pv-pt) * -0.2);
+  color: #7c7c84;
+}
+
+.pv-cell[data-today] .pv-day {
+  font-weight: 700;
+  color: #fff;
+}
+
+.pv-cell svg {
+  display: block;
+  width: calc(var(--pv-pt) * 30);
+  height: calc(var(--pv-pt) * 30);
+  color: #7c7c84;
+}
+
+.pv-cell[data-today] svg {
+  color: #ff9245;
+}
+
+.pv-cell[data-ahead] svg {
+  color: rgba(255, 255, 255, 0.14);
+}
+
+/* The app's primary button on the dark scheme: white, ink label. */
+.pv-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(var(--pv-pt) * 76);
+  border-radius: calc(var(--pv-pt) * 32);
+  background: #fff;
+  color: #111114;
+  font-size: calc(var(--pv-pt) * 20);
+  font-weight: 600;
+  letter-spacing: calc(var(--pv-pt) * -0.1);
+}
+
+@supports (corner-shape: superellipse(1.5)) {
+  .pv-page,
+  .pv-card,
+  .pv-sheet-card,
+  .pv-cell,
+  .pv-button {
+    corner-shape: superellipse(1.5);
+  }
+}
+
+/* ---- motion: the sheet arrives once the feature is the active one ---- */
+
+/*
+ * The app's numbers. In: 340 ms, ease-out cubic, a 44-point rise. Out: 220 ms,
+ * ease-in cubic, at once (leaving is the reader having moved on). The rise
+ * waits for the visual's own slide into the card to settle. The flames land
+ * 55 ms apart as the sheet rises, from 0.86 with a touch of spring.
+ */
+.pv-sheet,
+.pv-page::after {
+  transition:
+    opacity 0.22s cubic-bezier(0.32, 0, 0.67, 0),
+    translate 0.22s cubic-bezier(0.32, 0, 0.67, 0);
+}
+
+.pv-cell {
+  transition: opacity 0.15s ease, scale 0.2s ease;
+}
+
+[data-on] > .pv .pv-sheet {
+  opacity: 1;
+  translate: 0 0;
+}
+
+[data-on] > .pv .pv-page::after {
+  opacity: 1;
+}
+
+[data-on] > .pv .pv-sheet,
+[data-on] > .pv .pv-page::after {
+  transition:
+    opacity 0.34s cubic-bezier(0.33, 1, 0.68, 1) 0.45s,
+    translate 0.34s cubic-bezier(0.33, 1, 0.68, 1) 0.45s;
+}
+
+[data-on] > .pv .pv-cell {
+  opacity: 1;
+  scale: 1;
+  transition:
+    opacity 0.26s ease-out calc(0.45s + var(--d) * 55ms),
+    scale 0.5s cubic-bezier(0.3, 1.35, 0.6, 1) calc(0.45s + var(--d) * 55ms);
+}
+
+/* ---- the room the card has ---- */
+
+/*
+ * Nearly square or wider, and tall enough (a laptop): the screen to the left,
+ * the sheet to the right and in front. From 9:10 on, this draws both larger
+ * than the stack does. They overlap by 48 points: that is as far
+ * as it can reach and leave every line on the screen readable (the longest,
+ * "Longest Streak", ends six points short of it), and the emblem then hangs
+ * beside the screen rather than over it. 390 + 362 - 48 = 704 points across.
+ */
+@container pv (min-aspect-ratio: 9 / 10) and (min-height: 421px) {
+  .pv-stage {
+    --pv-pt: min(calc(90cqw / 704), calc(88cqh / 545), 1px);
+  }
+
+  .pv-page {
+    left: calc(50% - var(--pv-pt) * 352);
+  }
+
+  .pv-sheet {
+    left: calc(50% - var(--pv-pt) * 10);
+    bottom: 6cqh;
+  }
+}
+
+/*
+ * Short (a phone, where the card is under half the screen): the sheet alone,
+ * as large as the height allows. The screen behind would be a sliver at this
+ * size; the list beside it already says what the tests do.
+ */
+@container pv (max-height: 420px) {
+  .pv-stage {
+    --pv-pt: min(calc(92cqh / 545), calc(90cqw / 362), 1px);
+  }
+
+  .pv-page {
+    display: none;
+  }
+
+  .pv-sheet {
+    left: calc(50% - var(--pv-pt) * 181);
+    bottom: 4cqh;
+  }
+}
+
+/* Reduce Motion: the sheet is simply there, the week already filled in. */
+@media (prefers-reduced-motion: reduce) {
+  .pv-sheet,
+  .pv-page::after,
+  .pv-cell,
+  [data-on] > .pv .pv-sheet,
+  [data-on] > .pv .pv-page::after,
+  [data-on] > .pv .pv-cell {
+    transition: none;
+  }
+
+  .pv-sheet,
+  .pv-page::after,
+  .pv-cell {
+    opacity: 1;
+    translate: none;
+    scale: none;
+  }
+}

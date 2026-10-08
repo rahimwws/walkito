@@ -1,0 +1,314 @@
+/*
+ * The app pieces either side of the phone in "How it works" (HomeFeatures).
+ *
+ * Each feature's set is one `.feat-extras` layer in the dark phone card. It
+ * takes the same `data-on` / `data-past` as its screenshot, and its pieces
+ * rise one after another (`--x`) once the phone has settled, then sink away
+ * when the next feature takes over. Sizes are in `cqw` of the card (it is a
+ * size container), so the pieces keep their place against the phone at every
+ * width.
+ */
+
+.feat-extras {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fx {
+  --fx-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  padding: 0.75em 0.95em;
+  border-radius: 1.3em;
+  background: rgba(30, 30, 38, 0.82);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px) saturate(1.3);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  color: #fff;
+  font-size: clamp(10px, 2.1cqw, 15px);
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+  opacity: 0;
+  translate: 0 3.5em;
+  filter: blur(6px);
+  transition:
+    opacity 0.35s ease,
+    translate 0.5s var(--fx-ease),
+    filter 0.35s ease;
+}
+
+@supports (corner-shape: superellipse(1.5)) {
+  .fx {
+    corner-shape: superellipse(1.5);
+  }
+}
+
+.feat-extras[data-on] .fx {
+  opacity: 1;
+  translate: 0 0;
+  filter: none;
+  transition:
+    opacity 0.8s ease,
+    translate 1.1s var(--fx-ease),
+    filter 0.8s ease;
+  transition-delay: calc(0.35s + var(--x, 0) * 0.14s);
+}
+
+.feat-extras[data-past] .fx {
+  translate: 0 -2em;
+}
+
+.fx svg {
+  flex: none;
+  width: 1.3em;
+  height: 1.3em;
+}
+
+/* Places, around a phone that is 58% of the card wide and centred. */
+.fx-l {
+  left: 4%;
+  top: 30%;
+}
+
+.fx-r {
+  right: 4%;
+  top: 19%;
+}
+
+.fx-r2 {
+  right: 4%;
+  top: 60%;
+}
+
+.fx-label {
+  display: block;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.fx-value {
+  display: block;
+}
+
+.fx-icon {
+  display: grid;
+  place-items: center;
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 0.8em;
+  flex: none;
+}
+
+.fx-violet {
+  background: rgba(155, 133, 255, 0.22);
+  color: #9b85ff;
+}
+
+.fx-green {
+  color: #2ecc71;
+}
+
+/* Check-in: where it hurts, as the leg map's chips. */
+.fx-zones {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.fx-chips {
+  display: flex;
+  gap: 0.4em;
+}
+
+.fx-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  padding: 0.35em 0.6em;
+  border-radius: 0.7em;
+  background: rgba(255, 146, 69, 0.18);
+  color: #ff9245;
+  font-size: 0.9em;
+}
+
+.fx-chip svg {
+  width: 1.05em;
+  height: 1.05em;
+}
+
+.fx-pill {
+  padding: 0.6em 0.9em;
+  border-radius: 999px;
+  font-size: 0.86em;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+/* Session: the hold timer counting down. */
+.fx-timer {
+  flex-direction: column;
+  gap: 0.15em;
+  padding: 0.8em 1.1em 0.7em;
+}
+
+.fx-timer svg {
+  position: absolute;
+  inset: 0.45em auto auto 50%;
+  width: 4.1em;
+  height: 4.1em;
+  translate: -50% 0;
+  rotate: -90deg;
+}
+
+.fx-timer circle {
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.fx-ring-track {
+  stroke: rgba(255, 255, 255, 0.12);
+}
+
+.fx-ring-fill {
+  stroke: #9b85ff;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+}
+
+.feat-extras[data-on] .fx-ring-fill {
+  animation: fx-hold 6s linear 0.6s infinite;
+}
+
+@keyframes fx-hold {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+
+.fx-timer-num {
+  display: grid;
+  place-items: center;
+  width: 4.1em;
+  height: 4.1em;
+  font-size: 1em;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Week: the streak chip and the three kinds of day, in the app's tints. */
+.fx-streak {
+  left: 6%;
+  top: 22%;
+  padding: 0.55em 0.95em;
+  border-radius: 999px;
+  background: rgba(255, 146, 69, 0.2);
+  color: #ff9245;
+}
+
+.fx-day {
+  right: 3.5%;
+  gap: 0.55em;
+  padding: 0.7em 0.9em;
+}
+
+.fx-day .fx-min {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  margin-left: 0.2em;
+  font-size: 0.86em;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.fx-day .fx-min svg {
+  width: 1.05em;
+  height: 1.05em;
+}
+
+.fx-day-0 {
+  top: 34%;
+  background: rgba(46, 211, 198, 0.2);
+  color: #2ed3c6;
+}
+
+.fx-day-1 {
+  top: 47%;
+  background: rgba(155, 133, 255, 0.22);
+  color: #9b85ff;
+}
+
+.fx-day-2 {
+  top: 60%;
+  background: rgba(59, 158, 255, 0.2);
+  color: #3b9eff;
+}
+
+.fx-day .fx-value {
+  color: #fff;
+}
+
+/* Phones: the card is short and the phone fills more of it, so the pieces
+   tuck in tighter and the lock hint, the longest, steps aside. */
+@container (max-width: 520px) {
+  .fx {
+    font-size: clamp(9px, 2.9cqw, 12px);
+  }
+
+  .fx-l {
+    left: 2.5%;
+    top: 38%;
+  }
+
+  .fx-r {
+    right: 2.5%;
+    top: 14%;
+  }
+
+  .fx-r2 {
+    right: 2.5%;
+    top: 66%;
+  }
+
+  .fx-streak {
+    left: 3%;
+  }
+
+  .fx-day {
+    right: 2%;
+  }
+
+  .fx-day .fx-min {
+    display: none;
+  }
+}
+
+@container (max-width: 400px) {
+  .fx-pill {
+    max-width: 46%;
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fx,
+  .feat-extras[data-on] .fx {
+    filter: none;
+    translate: none;
+    transition: opacity 0.2s linear;
+  }
+
+  .feat-extras[data-on] .fx-ring-fill {
+    animation: none;
+  }
+}

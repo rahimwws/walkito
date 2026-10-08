@@ -37,9 +37,45 @@ const WORDS = {
     resubscribed: 'los correos vuelven a estar activos.',
     invalid: 'este enlace ya no funciona.',
   },
+  pt: {
+    working: 'um momento…',
+    title: 'sua inscrição foi cancelada',
+    done: 'o walkito não vai mais te enviar e-mails. você pode ativá-los de novo no app: ajustes → e-mail.',
+    undo: 'voltar a receber e-mails',
+    resubscribed: 'os e-mails estão ativos de novo.',
+    invalid: 'este link não funciona mais.',
+  },
+  fr: {
+    working: 'un instant…',
+    title: 'désabonnement confirmé',
+    done: 'walkito ne t’enverra plus d’e-mails. tu peux les réactiver dans l’app : réglages → e-mail.',
+    undo: 'réactiver les e-mails',
+    resubscribed: 'les e-mails sont réactivés.',
+    invalid: 'ce lien ne fonctionne plus.',
+  },
+  de: {
+    working: 'einen moment…',
+    title: 'du bist abgemeldet',
+    done: 'walkito schickt dir keine e-mails mehr. du kannst sie in der app wieder einschalten: einstellungen → e-mail.',
+    undo: 'e-mails wieder einschalten',
+    resubscribed: 'e-mails sind wieder eingeschaltet.',
+    invalid: 'dieser link funktioniert nicht mehr.',
+  },
+  it: {
+    working: 'un momento…',
+    title: 'iscrizione annullata',
+    done: 'walkito non ti manderà più email. puoi riattivarle nell’app: impostazioni → email.',
+    undo: 'riattiva le email',
+    resubscribed: 'le email sono di nuovo attive.',
+    invalid: 'questo link non funziona più.',
+  },
 } as const;
 
 type Lang = keyof typeof WORDS;
+
+function isLang(value: unknown): value is Lang {
+  return typeof value === 'string' && Object.hasOwn(WORDS, value);
+}
 type State = 'working' | 'done' | 'resubscribed' | 'invalid';
 
 async function post(t: string, action: 'unsubscribe' | 'resubscribe'): Promise<{ ok: boolean; locale?: string }> {
@@ -63,7 +99,7 @@ export function Unsubscribe() {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const l = params.get('l');
-    if (l === 'ru' || l === 'es') setLang(l);
+    if (isLang(l)) setLang(l);
     const t = params.get('t') ?? '';
     setToken(t);
     if (!t) {
@@ -71,7 +107,7 @@ export function Unsubscribe() {
       return;
     }
     void post(t, 'unsubscribe').then((r) => {
-      if (r.locale === 'ru' || r.locale === 'es' || r.locale === 'en') setLang(r.locale);
+      if (isLang(r.locale)) setLang(r.locale);
       setState(r.ok ? 'done' : 'invalid');
     });
   }, []);

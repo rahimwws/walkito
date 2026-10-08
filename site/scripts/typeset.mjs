@@ -40,7 +40,7 @@ const ES_FILES = [
   'lib/about/es.ts',
 ].map((f) => resolve(root, f));
 /** Files with all three languages in them: Russian rules everywhere, Spanish in the `es` block. */
-const MIXED = ['components/Home.tsx', 'components/Founders.tsx', 'components/Byline.tsx', 'lib/i18n.ts'].map((f) =>
+const MIXED = ['components/Home.tsx', 'components/HomeFeatures.tsx', 'components/home/ProgressVisual.tsx', 'components/home/Reviews.tsx', 'components/home/Guides.tsx', 'components/home/Faq.tsx', 'components/home/Cta.tsx', 'components/Footer.tsx', 'lib/testimonials.ts', 'components/Founders.tsx', 'components/Byline.tsx', 'lib/i18n.ts'].map((f) =>
   resolve(root, f),
 );
 

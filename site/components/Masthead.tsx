@@ -1,25 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { AppleGlyph } from '@/components/AppStoreBadge';
+import { GetAppButton, GetAppDialog } from '@/components/GetApp';
+import { MobileMenu } from '@/components/MobileMenu';
 import { CHROME, TRANSLATED, type Lang } from '@/lib/i18n';
-import { storeHref } from '@/lib/site';
+import { qrPath } from '@/lib/qr';
+import { playHref, SITE_URL, storeHref } from '@/lib/site';
 
-/** The arrow inside the header button. Inline rather than an icon package: one
- * glyph is not worth a dependency, and an SVG in the markup cannot arrive late. */
-function DownloadGlyph() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden>
-      <circle cx="12" cy="12" r="10.25" stroke="currentColor" strokeWidth="1.5" />
-      <path
-        d="M12 7.25v9.5m0 0 3.25-3.25M12 16.75 8.75 13.5"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
+/** What the dialog's QR code opens: `/get/` picks the phone's own store. */
+const QR = qrPath(`${SITE_URL}/get/`);
 
 /**
  * The header, identical on every page.
@@ -27,44 +17,83 @@ function DownloadGlyph() {
  * The button says "Get the app" and goes straight to the listing, tagged
  * `masthead` so App Analytics can tell it apart from the badges in the page
  * body. Until `APP_STORE_URL` is set it points at `#`, like the badges.
+ *
+ * `current` marks the link of the page being shown (`aria-current`), drawn as
+ * the selected item in the nav.
  */
-export function Masthead({ lang = 'en' }: { lang?: Lang }) {
-  const href = storeHref(lang === 'en' ? 'masthead' : `masthead-${lang}`);
+export function Masthead({
+  lang = 'en',
+  current,
+  floating = false,
+}: {
+  lang?: Lang;
+  current?: 'home';
+  /** Home only: fixed over the hero, drawn together into one capsule on scroll. */
+  floating?: boolean;
+}) {
+  const suffix = lang === 'en' ? '' : `-${lang}`;
+  const href = storeHref(`masthead${suffix}`);
   const c = CHROME[lang];
   const home = TRANSLATED.home[lang];
 
+  // English keeps the program pages in the header. Russian and Spanish have
+  // only the home page and the guides translated, so their header leads with
+  // the guides. Support and Privacy, the two URLs an App Store reviewer is
+  // sent to, are in the footer of every page.
+  const links = [
+    { href: home, label: c.navHome, current: current === 'home' },
+    ...(lang === 'en'
+      ? [
+          { href: '/program/', label: c.navProgram, current: false },
+          { href: '/science/', label: c.navEvidence, current: false },
+          { href: '/faq/', label: c.navQuestions, current: false },
+        ]
+      : [
+          { href: TRANSLATED.flatFeet[lang], label: c.navFlatFeet, current: false },
+          { href: TRANSLATED.heelPain[lang], label: c.navHeelPain, current: false },
+        ]),
+  ];
+
   return (
-    <header className="shell masthead">
-      <Link className="brand" href={home}>
+    <header className={`shell masthead${floating ? ' masthead-float' : ''}`}>
+      <Link className="brand" href={home} aria-label="Walkito">
         <Image src="/icon.png" alt="" width={36} height={36} priority />
-        Walkito
+        <span className="brand-name">Walkito</span>
       </Link>
 
-      {/* English keeps the program pages in the header. Russian and Spanish
-          have only the home page and the guides translated, so their header
-          leads with the guides and keeps Support and Privacy — the two URLs an
-          App Store reviewer is sent to — reachable from every page. */}
       <nav className="nav">
-        {lang === 'en' ? (
-          <>
-            <Link href="/program/">{c.navProgram}</Link>
-            <Link href="/science/">{c.navEvidence}</Link>
-            <Link href="/faq/">{c.navQuestions}</Link>
-          </>
-        ) : (
-          <>
-            <Link href={TRANSLATED.flatFeet[lang]}>{c.navFlatFeet}</Link>
-            <Link href={TRANSLATED.heelPain[lang]}>{c.navHeelPain}</Link>
-          </>
-        )}
-        <Link href={TRANSLATED.support[lang]}>{c.navSupport}</Link>
-        <Link href={TRANSLATED.privacy[lang]}>{c.navPrivacy}</Link>
+        {links.map((link) => (
+          <Link key={link.href} href={link.href} aria-current={link.current ? 'page' : undefined}>
+            {link.label}
+          </Link>
+        ))}
       </nav>
 
-      <a className="download" href={href ?? '#'}>
+      <GetAppButton className="download" ios={href ?? '#'} android={playHref(`masthead${suffix}`)}>
+        <AppleGlyph />
         {c.headerButton}
-        <DownloadGlyph />
-      </a>
+      </GetAppButton>
+
+      {/* Phones: a burger in place of the nav and the button. */}
+      <MobileMenu
+        links={links}
+        getApp={{ ios: storeHref(`menu${suffix}`) ?? '#', android: playHref(`menu${suffix}`), label: c.headerButton }}
+        labels={{ open: c.menuOpen, close: c.menuClose }}
+      />
+
+      <GetAppDialog
+        qr={QR}
+        ios={storeHref(`get-dialog${suffix}`) ?? '#'}
+        android={playHref(`get-dialog${suffix}`)}
+        words={{
+          title: c.getTitle,
+          scan: c.getScan,
+          appStore: c.getAppStore,
+          play: c.getPlay,
+          playSoon: c.getPlaySoon,
+          close: c.getClose,
+        }}
+      />
     </header>
   );
 }

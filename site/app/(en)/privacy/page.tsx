@@ -19,7 +19,9 @@ import { SUPPORT_EMAIL } from '@/lib/site';
  *   `0007_plan.sql` and `0008_insights.sql` (profiles, goals, tests, checkins,
  *   week_plans, sessions, session_exercises, exercise_prefs, app_usage). Every
  *   table cascades from `auth.users`, so `delete_account` removes it all.
- * - PostHog: the events in `src/shared/lib/analytics/events.ts`. Session replay
+ * - PostHog: the events in `src/shared/lib/analytics/events.ts`, and once signed
+ *   in the account's email, name and Supabase id (`describePerson` in
+ *   `shared/lib/supabase`). Session replay
  *   is off (`enableSessionReplay: false`).
  * - Expo: EAS Update, `expo-insights` and `expo-observe` (timings, errors),
  *   the push token for invite notifications.
@@ -225,7 +227,9 @@ export default function Privacy() {
           reached, can hint at your condition. Your device model, iOS and app
           version, language and time zone are attached, and PostHog works out an
           approximate location (country and city) from your IP address. Events
-          are linked to a random ID, the same one RevenueCat uses.
+          are linked to a random ID, the same one RevenueCat uses. Once you
+          sign in, the email address and name Apple or Google gave us are added
+          to it, so we can write to you if you get stuck.
         </p>
         <p>
           <b>Never sent:</b> pain scores, pain areas, test results, Apple Health
