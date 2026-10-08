@@ -59,6 +59,7 @@ export const EX_HIP_ABDUCTION: Guide = {
     },
     {
       h2: 'How does the hip affect the foot and arch?',
+      keyFact: 'A 2013 study of about 1,900 adults in the Framingham Foot Study found no link between flat feet and low back pain, but a small link between inward foot roll and back pain in women (Menz and colleagues, 2013).',
       paragraphs: [
         'The connection runs through a biomechanical chain: hip, knee, ankle, foot. When the gluteus medius cannot hold the pelvis level during single-leg stance, the thigh rotates inward. The knee follows, collapsing toward the midline. That rotation forces the foot to pronate, rolling the ankle inward and flattening the arch.',
         'This is why many people with flat feet or arch pain also have weak hips. The arch is not failing on its own. It is being overloaded from above. Strengthening the hip reduces that top-down load.',
@@ -76,7 +77,7 @@ export const EX_HIP_ABDUCTION: Guide = {
       ],
     },
     {
-      h2: 'Common mistakes with standing hip abduction',
+      h2: 'What are the common mistakes with standing hip abduction?',
       paragraphs: [
         'Leaning the body to the opposite side is the most common mistake. When you lean away, the body uses momentum and side-bending instead of the gluteus medius. Stay upright. A smaller lift with a straight body is better than a high lift with a lean.',
         'Rotating the foot outward so the toes point to the ceiling is another mistake. This shifts the work to the hip flexors and the tensor fasciae latae instead of the gluteus medius. Keep the toes pointing forward or slightly downward.',

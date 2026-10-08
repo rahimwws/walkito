@@ -54,6 +54,7 @@ export const PTTD_ES: Guide = {
     },
     {
       h2: '¿Qué dice la evidencia sobre el ejercicio?',
+      keyFact: 'Al reunir tres ensayos pequeños con 93 personas en total, una revisión de 2018 encontró que el fortalecimiento excéntrico sumado a ortesis y estiramientos produjo mejorías de tamaño moderado frente a ortesis y estiramientos solos (Ross y colegas, 2018).',
       paragraphs: [
         'Una revisión sistemática de 2018 identificó tres ensayos aleatorizados controlados con 93\u00A0participantes en total. Dos probaron el fortalecimiento añadido a ortesis y estiramientos; el tercero probó fortalecimiento y entrenamiento de equilibrio contra ninguna intervención. La revisión encontró tamaños de efecto moderados (DME 0,6 a 1,2) para el fortalecimiento excéntrico en la reducción del dolor y la discapacidad, comparado con ortesis y estiramientos solos.',
         'El más grande de los tres estudios fue un ensayo aleatorizado de 2009 con 36\u00A0personas con DTTP en etapa I o II. Los participantes fueron asignados a uno de tres grupos durante tres meses: ortesis y estiramientos solos, ortesis más estiramientos más ejercicio concéntrico, u ortesis más estiramientos más ejercicio excéntrico. Los dos grupos de ejercicio mejoraron más que el grupo de solo ortesis. El grupo excéntrico alcanzó cargas 3,3\u00A0veces mayores que el grupo concéntrico al final del programa, aunque los dos tipos de ejercicio redujeron el dolor.',
@@ -65,7 +66,7 @@ export const PTTD_ES: Guide = {
       cites: [CITE.posteriorTibialReview, CITE.kuligRCT, CITE.houckPTTD],
     },
     {
-      h2: 'Los ejercicios',
+      h2: '¿Qué ejercicios ayudan con la disfunción del tendón tibial posterior?',
       paragraphs: [
         'Los ejercicios de abajo trabajan el músculo tibial posterior y los músculos que sostienen el arco. La inversión con banda entrena el tibial posterior directamente. Las elevaciones de talón con énfasis en el arco cargan el tendón durante un movimiento funcional. El pie corto fortalece los músculos intrínsecos del pie que ayudan al arco. El estiramiento de pantorrilla aborda el hallazgo común de dorsiflexión reducida en personas con DTTP.',
         'Los programas de ejercicio de los ensayos también incluían estiramiento de pantorrilla y ortesis. Las ortesis no eran opcionales en ningún estudio. Si tienes DTTP, una ortesis con soporte de arco es parte del programa, no un sustituto del ejercicio ni al revés.',
@@ -151,6 +152,7 @@ export const PTTD_ES: Guide = {
     },
     {
       h2: '¿Cuánto tarda la mejoría?',
+      keyFact: 'Un pequeño estudio piloto de diez pacientes con carga excéntrica dos veces al día durante unos dos meses y medio encontró mejoría de los síntomas junto con algunos cambios del tendón en la ecografía (Kulig y colegas, 2009).',
       paragraphs: [
         'Los dos ensayos aleatorizados duraron tres meses. Los dos mostraron mejoría al final del programa, pero ninguno siguió a los participantes a largo plazo. Un pequeño estudio piloto de diez pacientes del mismo grupo también duró unos dos meses y medio de carga excéntrica dos veces al día y encontró mejoría en los síntomas junto con algunos cambios del tendón en la ecografía.',
         'En la práctica clínica, la mejoría de la DTTP en etapa I o II con ejercicio y ortesis se mide en meses, no en semanas. La degeneración del tendón no se revierte rápido. Una expectativa razonable es menos dolor y mejor función a lo largo de tres a seis meses, con ejercicio de mantenimiento después de eso. Si no hay mejoría después de tres meses de ejercicio constante y ortesis, vale la pena volver al profesional de la salud para reevaluar la etapa.',
@@ -191,6 +193,14 @@ export const PTTD_ES: Guide = {
       q: '¿Cuándo necesita cirugía la DTTP?',
       cites: [CITE.ling],
       a: 'La cirugía suele discutirse cuando el manejo conservador, es decir, ejercicio, ortesis y a veces una bota ortopédica, no ha mejorado los síntomas después de varios meses, o cuando la deformidad ha progresado a la etapa III o IV, donde el pie está rígidamente plano o la articulación del tobillo está afectada. La mayoría de los casos en etapa I y II responden al manejo conservador.',
+    },
+    {
+      q: '¿Es malo caminar con tendinitis del tibial posterior?',
+      a: 'No automáticamente, pero caminar demasiado sí puede serlo. Cada paso carga el tendón que sostiene el arco, así que mucha caminata sobre un tendón irritado tiende a empeorar el dolor. El manejo inicial reduce la carga que provoca el dolor, no caminar por completo, junto con ortesis y los ejercicios de arriba. Si una caminata te provoca dolor, es señal de bajarle.',
+    },
+    {
+      q: '¿Qué empeora la tendinitis del tibial posterior?',
+      a: 'Cualquier cosa que cargue el tendón de forma repetida mientras está irritado: tramos largos de pie o caminando, subidas, terreno irregular y zapatos gastados. El peso extra agrega más fuerza con cada paso, y un aumento repentino de actividad es un disparador común. Nada de esto significa descansar por completo; significa reducir la carga y agregar ortesis y los ejercicios de arriba.',
     },
   ],
   redFlags: {

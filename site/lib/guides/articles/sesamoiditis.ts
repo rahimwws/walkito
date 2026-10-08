@@ -35,6 +35,7 @@ export const SESAMOIDITIS_EN: Guide = {
     },
     {
       h2: 'How is sesamoiditis different from a sesamoid fracture?',
+      keyFact: 'About 1 in 10 people have a bipartite sesamoid, a normal variant that can look like a fracture on X-ray but has smooth, rounded edges rather than jagged ones (Yammine, 2015).',
       paragraphs: [
         'Sesamoiditis is an overuse condition. The pain comes on gradually and aches during activity. A sesamoid fracture is a crack in the bone, usually from a single acute event or from chronic stress. Fracture pain tends to be sharper and may be present even at rest.',
         'One complication is that about 1 in 10 people have a bipartite sesamoid, meaning the medial sesamoid naturally comes in two pieces. On an X-ray, a bipartite sesamoid looks like a fracture. The difference is in the edges: bipartite edges are smooth and rounded, while fracture edges are jagged and irregular. Your clinician may also X-ray the other foot for comparison.',
@@ -44,6 +45,7 @@ export const SESAMOIDITIS_EN: Guide = {
     },
     {
       h2: 'What does conservative management look like?',
+      keyFact: 'A 2025 review pooling 11 studies and 59 patients found pain scores improved in about 66 percent of cases treated conservatively, though recurrence was common (Biz and colleagues, 2025).',
       paragraphs: [
         'The 2025 systematic review by Biz and colleagues pooled individual-level data from 11 studies covering 59 patients. The most common treatments were orthotics, activity modification, and corticosteroid injections. Pain scores improved in about 66 percent of cases, but recurrence was common and some patients remained symptomatic.',
         'The review found that orthotics and offloading were used in nearly every case. Corticosteroid injections gave short-term relief but carried a risk of recurrence. No treatment was compared head to head in a randomized trial. The authors concluded that standardized protocols and higher-quality studies are needed.',
@@ -113,6 +115,15 @@ export const SESAMOIDITIS_EN: Guide = {
     {
       q: 'Can exercises prevent sesamoiditis from coming back?',
       a: 'No exercise has been tested for sesamoiditis prevention. Calf stretching to reduce forefoot load and intrinsic foot strengthening to share pressure more evenly are reasonable ideas but are not proven for this condition specifically. Ongoing use of a dancer\'s pad and appropriate shoes is the more established strategy.',
+    },
+    {
+      q: 'What happens if sesamoiditis is left untreated?',
+      cites: [CITE.bizSesamoiditis],
+      a: 'Without changes to load, sesamoiditis often lingers or flares up with activity. A 2025 review of conservative care found pain improved in about two-thirds of cases, but recurrence was common even with treatment. Without offloading or an activity change, expect the pain to persist and keep limiting how much you can run or push off.',
+    },
+    {
+      q: 'Is it good to massage sesamoiditis?',
+      a: 'Gentle massage around the area may ease some soreness, but firm pressure right on the sesamoid bones usually makes the pain worse, not better, since that is exactly where the irritated tissue sits. If you want to work on the forefoot, stretch the calf instead, which shifts some load off the sesamoids, rather than pressing on the sore spot itself.',
     },
   ],
   redFlags: {

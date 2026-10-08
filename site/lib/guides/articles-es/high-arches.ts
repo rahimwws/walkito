@@ -60,6 +60,7 @@ export const HIGH_ARCHES_ES: Guide = {
     },
     {
       h2: '¿Las plantillas ayudan con el dolor de pie cavo?',
+      keyFact: 'Un ensayo aleatorizado con 154 adultos con dolor de pie por pie cavo encontró que las plantillas a medida superaron a una plantilla falsa por 8,3 puntos en dolor y 9,5 puntos en función a los tres meses (Burns y colegas, 2006).',
       paragraphs: [
         'Las plantillas a medida tienen la evidencia más fuerte para el dolor de pie por pie cavo. En el único ensayo aleatorizado, Burns y colegas asignaron a 154\u00A0adultos con dolor crónico de pie y pie cavo bilateral a plantillas de polipropileno hechas a medida o a una plantilla plana falsa. A los tres meses, el grupo de plantillas a medida reportó una mejoría de 8,3\u00A0puntos más en dolor de pie en el Foot Health Status Questionnaire que el grupo con plantilla falsa. La función mejoró 9,5\u00A0puntos más. La presión plantar bajó un 26\u00A0por ciento con las plantillas a medida, frente al 9\u00A0por ciento con la plantilla falsa.',
         'El ensayo incluyó personas con pie cavo tanto idiopático como neuromuscular (133\u00A0idiopáticos, 21\u00A0neuromusculares incluyendo 16\u00A0con enfermedad de Charcot-Marie-Tooth). Las plantillas tenían una forma moldeada al pie con una cubierta superior acolchada de largo completo.',
@@ -70,7 +71,8 @@ export const HIGH_ARCHES_ES: Guide = {
       cites: [CITE.burnsCavus],
     },
     {
-      h2: 'Ejercicios para pie cavo',
+      h2: '¿Qué ejercicios ayudan con el pie cavo?',
+      keyFact: 'La guía de 2023 para el dolor de talón le da al estiramiento de pantorrilla y fascia plantar una A y al entrenamiento de fuerza una B para el dolor de talón, el punto de dolor más común en el pie cavo (Koc y colegas, 2023).',
       paragraphs: [
         'Ningún ensayo ha probado un programa de ejercicios diseñado específicamente para el dolor de pie por pie cavo. Los ejercicios de abajo se enfocan en las estructuras que suelen estar tensas o inestables en un pie de arco alto: la pantorrilla, la fascia plantar, el tobillo y los músculos intrínsecos del pie. Están tomados de la evidencia para la fascitis plantar, la inestabilidad de tobillo y el acondicionamiento general del pie, y están etiquetados de acuerdo a eso.',
         'La guía de 2023 para el dolor de talón le da al estiramiento de la pantorrilla y de la fascia plantar una A y al entrenamiento de fuerza una B para el dolor de talón, que es uno de los puntos de dolor más comunes en el pie cavo. No existe una guía comparable específica para el pie cavo.',
@@ -202,6 +204,15 @@ export const HIGH_ARCHES_ES: Guide = {
       q: '¿El pie cavo puede causar fascitis plantar?',
       cites: [CITE.guideline],
       a: 'Los arcos altos se mencionan como factor de riesgo de la fascitis plantar. El pie rígido pone más tensión en la fascia plantar con cada paso, y la fascia ya suele estar tensa de por sí. Si tu pie de arco alto tiene dolor bajo el talón que es peor en la mañana, ese patrón es compatible con fascitis plantar y los ejercicios de [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/) aplican.',
+    },
+    {
+      q: '¿Cómo saber si tengo el arco muy alto?',
+      a: 'Prueba la huella mojada: humedece la planta descalza y pisa sobre una superficie plana y seca. Un arco alto deja poca o ninguna huella en el borde externo, a veces solo el talón y la parte delantera del pie, mientras que un pie plano deja casi toda la planta marcada. Una diferencia grande entre tus dos pies vale la pena mencionarla a un profesional de la salud.',
+    },
+    {
+      q: '¿Es mejor tener pie plano o arcos altos?',
+      cites: [CITE.burnsCavusPain],
+      a: 'Ninguno es claramente mejor. Un pie plano reparte la carga en un área más amplia, pero puede sobreestirar la fascia plantar y el tendón tibial posterior. Un arco alto es rígido y concentra la fuerza en el talón y la parte delantera del pie. Cerca del 60 por ciento de las personas con pie cavo reportan dolor de pie, así que la forma del pie sola no predice cómo se sentirán tus pies.',
     },
   ],
   redFlags: {

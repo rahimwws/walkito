@@ -47,6 +47,7 @@ export const PTTD_EN: Guide = {
     },
     {
       h2: 'What does the exercise evidence say?',
+      keyFact: 'Pooling three small trials with 93 people in total, a 2018 review found eccentric strengthening added to orthoses and stretching produced moderately sized improvements over orthoses and stretching alone (Ross and colleagues, 2018).',
       paragraphs: [
         'A 2018 systematic review identified three randomized controlled trials with 93 participants total. Two tested strengthening on top of orthoses and stretching; the third tested strengthening and balance training against no intervention. The review found moderate effect sizes (SMD 0.6 to 1.2) for eccentric strengthening in reducing pain and disability compared with orthoses and stretching alone.',
         'The largest of the three studies was a 2009 RCT of 36 people with stage I or II PTTD. Participants were assigned to one of three groups for three months: orthoses and stretching only, orthoses plus stretching plus concentric exercise, or orthoses plus stretching plus eccentric exercise. Both exercise groups improved more than the orthoses-only group. The eccentric group achieved loads 3.3 times higher than the concentric group by the end of the program, though both exercise types reduced pain.',
@@ -58,7 +59,7 @@ export const PTTD_EN: Guide = {
       cites: [CITE.posteriorTibialReview, CITE.kuligRCT, CITE.houckPTTD],
     },
     {
-      h2: 'The exercises',
+      h2: 'Which exercises help posterior tibial tendon dysfunction?',
       paragraphs: [
         'The exercises below target the tibialis posterior muscle and the muscles that support the arch. Band inversion trains the tibialis posterior directly. Heel raises with a focus on arch lift load the tendon during a functional movement. Short foot strengthens the intrinsic muscles that help the arch. Calf stretching addresses the common finding of reduced ankle dorsiflexion in people with PTTD.',
         'The exercise programs in the trials also included calf stretching and orthoses. Orthoses were not optional in any study. If you have PTTD, an arch-supporting orthosis is part of the program, not a substitute for exercise or the other way around.',
@@ -144,6 +145,7 @@ export const PTTD_EN: Guide = {
     },
     {
       h2: 'How long does improvement take?',
+      keyFact: 'A small pilot study of ten patients using twice-daily eccentric loading for about two and a half months found symptom improvement along with some tendon changes on ultrasound (Kulig and colleagues, 2009).',
       paragraphs: [
         'The two RCTs ran for three months. Both showed improvement by the end of the program, but neither tracked participants long-term. A small pilot study of ten patients by the same group also ran for about two and a half months of twice-daily eccentric loading and found symptom improvement along with some tendon changes on ultrasound.',
         'In clinical practice, improvement from stage I or II PTTD with exercise and orthoses is measured in months, not weeks. Tendon degeneration does not reverse quickly. A reasonable expectation is reduced pain and better function over three to six months, with ongoing maintenance exercise after that. If there is no improvement after three months of consistent exercise and orthoses, it is worth going back to a clinician to reassess the stage.',
@@ -184,6 +186,14 @@ export const PTTD_EN: Guide = {
       q: 'When does PTTD need surgery?',
       cites: [CITE.ling],
       a: 'Surgery is usually discussed when conservative management, meaning exercise, orthoses, and sometimes a walking boot, has not improved symptoms after several months, or when the deformity has progressed to stage III or IV, where the foot is rigidly flat or the ankle joint is affected. Most stage I and II cases respond to conservative care.',
+    },
+    {
+      q: 'Is walking bad for posterior tibial tendonitis?',
+      a: 'Not automatically, but too much of it can be. Every step loads the tendon that holds the arch up, so a lot of walking on an irritated tendon tends to worsen pain. Early management cuts back the load that provokes pain, not walking altogether, alongside orthoses and the exercises above. A walk that brings on pain means scale back.',
+    },
+    {
+      q: 'What aggravates posterior tibial tendonitis?',
+      a: 'Anything that loads the tendon repeatedly while it is irritated: long stretches of standing or walking, hills, uneven ground, and worn-out shoes. Extra body weight adds more force with each step, and a sudden jump in activity is a common trigger. None of this means resting completely; it means reducing the load and adding orthoses and the exercises above.',
     },
   ],
   redFlags: {

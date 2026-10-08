@@ -41,6 +41,7 @@ export const HAMMER_TOE_EN: Guide = {
     },
     {
       h2: 'What is the difference between flexible and rigid hammer toes?',
+      keyFact: 'A 2022 study of 20 older adults with hammer or claw toe found custom-molded silicone toe props significantly reduced peak pressure at the tip of the second toe in both flexible and rigid cases (Formosa and colleagues, 2022).',
       paragraphs: [
         'A flexible hammer toe still has motion at the middle joint. You can straighten it with your hand. The muscles and tendons are tight, but the joint has not developed a fixed contracture. This is the stage where conservative measures have the most to offer.',
         'A rigid hammer toe has a fixed contracture at the middle joint. The joint no longer straightens. At this point, exercise cannot change the position. The goals shift to reducing friction (wider shoes, toe pads) and preventing corns, calluses, and skin breakdown.',
@@ -58,7 +59,7 @@ export const HAMMER_TOE_EN: Guide = {
       cites: [CITE.gooding],
     },
     {
-      h2: 'The exercises',
+      h2: 'Which exercises help hammer toes?',
       paragraphs: [
         'These exercises target the intrinsic foot muscles and aim to maintain flexibility in a toe that is still flexible. If your hammer toe is rigid, these exercises will not change the position, but gentle stretching may help with stiffness and discomfort. All evidence labels below are honest: no exercise here has been tested in a hammer toe trial.',
       ],
@@ -127,6 +128,7 @@ export const HAMMER_TOE_EN: Guide = {
     },
     {
       h2: 'When is surgery discussed?',
+      keyFact: 'A 2016 review cited Swedish registry data showing lesser toe procedures, including hammer and claw toe surgery, made up almost a quarter of all forefoot operations (Malhotra and colleagues, 2016).',
       paragraphs: [
         'Surgery is considered when a rigid hammer toe causes persistent pain, skin breakdown, or difficulty wearing shoes despite conservative care. The decision is based on symptoms and functional limitation, not on the appearance of the toe.',
         'Common procedures include proximal interphalangeal joint arthroplasty (removing a small piece of bone to straighten the joint) and arthrodesis (fusing the joint in a straight position). Newer minimally invasive techniques exist but long-term outcome data are still being collected.',
@@ -166,6 +168,14 @@ export const HAMMER_TOE_EN: Guide = {
     {
       q: 'Can bunions cause hammer toes?',
       a: 'Yes. When the big toe angles outward in hallux valgus, it can push the second toe upward and out of position, contributing to a hammer toe. Addressing the bunion with wider shoes and [bunion exercises](/bunion-exercises/) may help reduce pressure on the second toe.',
+    },
+    {
+      q: 'Can you massage out a hammer toe?',
+      a: 'No. Massage cannot straighten a hammer toe, flexible or rigid, because the bend is a joint position, not a soft tissue knot. Gentle massage and stretching of the toe top can ease soreness and tendon tightness, and help a flexible toe keep moving. It will not undo the deformity, so pair it with wider shoes instead of expecting it to change shape.',
+    },
+    {
+      q: 'Is walking barefoot good for hammer toe?',
+      a: 'No trial has tested this directly. Walking barefoot removes the pressure and friction of a narrow shoe on the bent joint, which can ease irritation for some people. It will not straighten a hammer toe. On hard or uneven ground, going barefoot can also load the toes differently, so introduce it gradually rather than switching all at once.',
     },
   ],
   redFlags: {

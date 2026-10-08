@@ -65,7 +65,8 @@ export const ARCH_PAIN_ES: Guide = {
       cites: [CITE.guideline, CITE.posteriorTibialReview],
     },
     {
-      h2: 'Ejercicios que ayudan al dolor de arco',
+      h2: '¿Qué ejercicios ayudan con el dolor de arco?',
+      keyFact: 'La guía de 2023 para el dolor de talón le da a la fascia plantar y a la pantorrilla una A, su grado más alto, y al entrenamiento de fuerza un grado más bajo, B (Koc y colegas, 2023).',
       paragraphs: [
         'Los ejercicios de abajo se enfocan en el arco y en los músculos de la pantorrilla que tiran de él. Aplican mejor cuando el dolor de arco está relacionado con fascitis plantar, pie plano o sobreuso general. Para la DTTP o el dolor de arco por un nervio, un profesional de la salud debe dirigir el plan de ejercicios. Si algún ejercicio lleva tu dolor a **6/10 o más**, para por el día.',
         'Estas son las dosis de inicio de Walkito, no las dosis de los protocolos de investigación. La guía de 2023 para el dolor de talón le da al estiramiento de la fascia plantar y de la pantorrilla una A, y al entrenamiento de fuerza una B. El ejercicio de pie corto y el masaje plantar con pelota tienen evidencia más delgada por sí solos. [Cómo escribimos estas guías](/es/sobre-walkito/).',
@@ -208,6 +209,18 @@ export const ARCH_PAIN_ES: Guide = {
     {
       q: '¿El dolor de arco es lo mismo que la fascitis plantar?',
       a: 'No siempre. La fascitis plantar es una causa específica del dolor de arco, la más común. Pero el dolor de arco también puede venir del pie plano, la disfunción del tendón tibial posterior, el pie cavo, el sobreuso o la irritación de un nervio. Toda fascitis plantar involucra dolor de arco o de talón, pero no todo dolor de arco es fascitis plantar. El patrón del dolor, sobre todo su horario, ayuda a distinguirlas.',
+    },
+    {
+      q: '¿Qué puede causar dolor en el arco externo del pie?',
+      a: 'Los ejercicios de esta página se enfocan en el arco interno, así que el dolor en el arco externo suele tener otra causa. Puede venir de los tendones peroneos, detrás del tobillo externo, o del síndrome del cuboides, donde un hueso pequeño del mediopié se desplaza un poco, muchas veces tras un esguince o sobreuso. Las dos necesitan un examen distinto al estiramiento plantar, así que consulta a un profesional.',
+    },
+    {
+      q: '¿El dolor en el arco se quita solo?',
+      a: 'A veces. Un episodio corto de dolor por sobreuso suele calmarse en unos días en cuanto reduces la carga que lo causó. El dolor por fascitis plantar, pie plano o disfunción del tendón tibial posterior tiende a quedarse o a volver sin estiramiento ni trabajo de fuerza. Si no ha mejorado después de varias semanas de descanso y menos carga, consulta a un profesional de la salud.',
+    },
+    {
+      q: '¿Debo masajear el dolor en el arco?',
+      a: 'Un rodado suave puede ayudar entre sesiones, aunque ningún estudio citado aquí probó el masaje por sí solo. Rueda la planta despacio sobre una pelota de masaje o una botella de agua congelada, con presión firme pero nunca al punto de hacerte encoger. Es una medida de alivio, no resuelve la causa. Si al presionar un punto se reproduce un dolor agudo, hazlo revisar en lugar de presionar más fuerte.',
     },
   ],
   redFlags: {

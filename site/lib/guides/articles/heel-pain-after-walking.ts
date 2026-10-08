@@ -36,6 +36,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
   sections: [
     {
       h2: 'Why does your heel hurt after walking?',
+      keyFact: 'In a case-control study of 50 people with plantar fasciitis and 100 without, reduced ankle dorsiflexion was the strongest risk factor, ahead of high body mass index and prolonged standing at work (Riddle and colleagues, 2003).',
       paragraphs: [
         'Walking loads the plantar fascia, the thick band of tissue under the foot, with every step. Each time the heel hits the ground and the foot rolls forward, the fascia stretches and absorbs force. In a healthy foot this is fine. But when the fascia is irritated or the calf is too tight to absorb its share, the load concentrates at the heel attachment.',
         'The result is pain that builds during or after a walk, especially a longer one than usual. The 2023 heel pain guideline lists two hallmark patterns for plantar fasciitis: first-step pain after rest, and pain that increases with prolonged weight-bearing activity. Walking is the most common prolonged weight-bearing activity there is.',
@@ -72,7 +73,8 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
       cites: [CITE.waters],
     },
     {
-      h2: 'The exercises that help heel pain after walking',
+      h2: 'Which exercises help heel pain after walking?',
+      keyFact: 'A systematic review found that both plantar fascia stretching and calf stretching reduced pain in plantar fasciitis more than no stretching at all (Siriphorn and Eksakulkla, 2020).',
       paragraphs: [
         'The exercises are the same ones the 2023 guideline recommends for plantar fasciitis. The guideline gives stretching its top grade, **A**, and strength training a **B**. Both are recommended. A systematic review found that plantar fascia stretching and calf stretching both reduced pain compared with no stretching (Siriphorn and Eksakulkla, 2020).',
       ],
@@ -141,7 +143,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
       cites: [CITE.guideline, CITE.siriphorn, CITE.rathleff, CITE.riddle],
     },
     {
-      h2: 'How to manage walking distance when your heel hurts',
+      h2: 'How far should you walk when your heel hurts?',
       paragraphs: [
         'The goal is not to stop walking. It is to find the distance your heel can handle without flaring the next morning, and then build from there.',
         'A practical approach: walk a distance that keeps morning pain the next day at or below its current baseline. If your usual morning score is 4 out of 10 and a 30-minute walk pushes it to 6 the following morning, that walk was too much. Shorten it until the morning score stays stable. Then add five minutes every week or two, as long as morning pain does not spike.',
@@ -152,6 +154,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
     },
     {
       h2: 'How long before the heel stops hurting after walks?',
+      keyFact: 'In normative data on 566 healthy adults, the average single-leg heel raise count was about 23 to 24 repetitions, a benchmark for tracking calf endurance over time (Hebert-Losier and colleagues, 2017).',
       paragraphs: [
         'There is no fixed timeline. A review of the clinical evidence reports that about 90% of people with plantar fasciitis improve with non-surgical care, often within several months (Latt and colleagues, 2020). In a longer follow-up of 174 people, about half still had some symptoms at 5 years, though most were minor by that point (Hansen and colleagues, 2018).',
         'What you can measure sooner is whether the exercises are working. Morning pain on a 0 to 10 scale is the clearest daily signal. Calf endurance, measured by counting single-leg heel raises, tracks strength over weeks. A commonly cited adult benchmark is about 23 to 24 repetitions on average, from normative data on 566 healthy adults (Hebert-Losier and colleagues, 2017). What matters is whether your number is going up, not whether it matches the benchmark.',
@@ -195,6 +198,14 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
       q: 'How can I tell if my heel pain is a stress fracture?',
       cites: [CITE.patelStressFracture],
       a: 'Stress fracture pain typically builds with activity, came on after a sudden increase in walking or running volume, and does not ease much with rest. Squeezing the sides of the heel can reproduce it. Plantar fasciitis pain usually eases once you warm up and is worst on first steps after rest. If the pattern fits a fracture, see a clinician before doing exercises.',
+    },
+    {
+      q: 'How do you get rid of heel pain right after a walk?',
+      a: 'Right after a walk, rest the foot, ice it for about 15 minutes, and avoid going straight back out barefoot on a hard floor. That eases the immediate ache, but it does not change the underlying cause. The exercises on this page, calf and fascia stretching plus gradual strength work, are what change how the heel handles the next walk.',
+    },
+    {
+      q: 'What causes heel pain in only one foot after walking?',
+      a: 'Heel pain after walking often shows up in just one foot because load during a walk rarely splits evenly between legs. A longer stride on one side, an old injury, worn-down shoes on one foot, or carrying a bag on one shoulder can all shift extra strain onto one heel. Both sides can still become symptomatic over time.',
     },
   ],
   redFlags: {

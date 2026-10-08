@@ -34,6 +34,7 @@ export const STANDING_DESK_ES: Guide = {
   sections: [
     {
       h2: '¿Por qué te duelen los pies con un escritorio de pie?',
+      keyFact: 'Una revisión sistemática de 2017 con 25 estudios encontró que los síntomas de espalda baja se volvían clínicamente relevantes tras unos 71 minutos de pie en general, pero solo 42 minutos en personas propensas al dolor de pie (Coenen y colegas, 2017).',
       paragraphs: [
         'El dolor de pies con un escritorio de pie pasa por la misma razón que duele cualquier rato largo de pie: tus pies, pantorrillas y la parte baja de las piernas cargan un peso fijo sin el alivio que dan caminar o sentarte. Cuando estás quieto de pie, la gravedad acumula sangre en la parte baja de las piernas, los músculos de la pantorrilla se quedan en la misma posición sin contraerse ni relajarse, y la fascia plantar bajo el arco absorbe una carga constante.',
         'Una revisión sistemática de 2017 con 25 estudios de laboratorio juntó datos de 591 participantes y encontró que los síntomas de espalda baja llegaban a niveles clínicamente relevantes después de unos 71\u00A0minutos de pie sin pausa en la población general, pero solo 42\u00A0minutos en personas que suelen tener dolor al estar de pie. Para los síntomas en las piernas, el panorama fue parecido. Los autores recomendaron 40\u00A0minutos como límite práctico antes de cortar el tiempo de pie.',
@@ -43,6 +44,7 @@ export const STANDING_DESK_ES: Guide = {
     },
     {
       h2: '¿Cuánto tiempo estar de pie en un escritorio de pie antes de sentarte?',
+      keyFact: 'Una declaración de expertos de 2015 recomienda ir sumando hasta 2 horas al día de estar de pie y actividad ligera, y con el tiempo llegar a 4 horas, repartidas en ratos más cortos (Buckley y colegas, 2015).',
       paragraphs: [
         'No hay una sola respuesta para todos, pero la investigación la acota. Una declaración de expertos de 2015, encargada por Public Health England y Active Working Community Interest Company, recomendó que quienes trabajan en escritorio empiecen sumando 2\u00A0horas al día de estar de pie y actividad ligera durante el horario de trabajo, y con el tiempo lleguen a 4\u00A0horas al día. La declaración especificó que el tiempo de pie debe repartirse en ratos más cortos, no hacerse de un jalón.',
         'La revisión de 2017 de estudios de laboratorio sugiere que 40\u00A0minutos de pie sin pausa es el punto en el que los síntomas empiezan a ser clínicamente relevantes. Juntando las dos cosas, un punto de partida práctico es estar de pie de 20 a 30\u00A0minutos, sentarte de 20 a 30\u00A0minutos y repetir durante el día, ajustando a medida que tu cuerpo se adapta.',
@@ -71,6 +73,7 @@ export const STANDING_DESK_ES: Guide = {
     },
     {
       h2: '¿Qué ejercicios puedes hacer en tu escritorio para el dolor de pies?',
+      keyFact: 'La guía clínica de 2023 para el dolor de talón le da al estiramiento de pantorrilla y de fascia plantar su grado más alto, A, y al entrenamiento de fuerza una B (Koc y colegas, 2023).',
       paragraphs: [
         'Estos ejercicios trabajan la pantorrilla, la fascia plantar y los músculos pequeños del pie. Algunos se pueden hacer en tu escritorio durante una pausa sentado. Otros conviene hacerlos lejos del escritorio, en otro momento. Si algún ejercicio sube tu dolor a 6 de 10 o más, detente por hoy.',
         'La guía clínica de 2023 para el dolor de talón le da al estiramiento de pantorrilla y de fascia plantar su grado más alto, A, y al entrenamiento de fuerza una B. Las dos notas son para la fascitis plantar, pero los mismos tejidos cargan el peso cuando trabajas en un escritorio de pie. Para la lista completa de ejercicios para la fascitis plantar, mira [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
@@ -220,6 +223,15 @@ export const STANDING_DESK_ES: Guide = {
       q: '¿Por qué me duelen más los pies quieto de pie que caminando?',
       a: 'Al caminar se activa el bombeo de la pantorrilla, que sube la sangre de la parte baja de las piernas en cada paso. Estar quieto de pie quita ese bombeo, así que la sangre se acumula en los pies y la parte baja de las piernas, y los músculos se quedan en la misma posición fija en lugar de contraerse y relajarse. Una revisión sistemática de 2017 confirmó este mecanismo y encontró que los síntomas en las piernas aparecen de forma constante al estar de pie quieto en estudios de laboratorio.',
       cites: [CITE.coenen],
+    },
+    {
+      q: '¿Qué es la regla 20-8-2 para escritorios de pie?',
+      a: 'La regla 20-8-2 es una pauta de ergonomía: divide cada bloque de 30 minutos en 20 minutos sentado, 8 minutos de pie y 2 minutos moviéndote. Es una convención general, no una fórmula probada en ensayos, pero coincide con la idea central de esta página: ninguna posición fija por horas es ideal, y los cambios de postura cortos y frecuentes reducen la carga estática que causa el cansancio en los pies.',
+    },
+    {
+      q: '¿Estar de pie empeora la fascitis plantar?',
+      a: 'Puede hacerlo. Estar de pie mantiene la fascia plantar y la pantorrilla bajo carga constante, sin las pausas de caminar que bombean sangre y bajan la tensión. Pasar la mayor parte de la jornada de pie es un factor de riesgo independiente de fascitis plantar en la investigación sobre estar de pie por tiempo prolongado. Si ya tienes fascitis plantar, un escritorio de pie sobre piso duro sin pausas ni estiramientos puede empeorar los síntomas.',
+      cites: [CITE.riddle],
     },
   ],
   redFlags: {

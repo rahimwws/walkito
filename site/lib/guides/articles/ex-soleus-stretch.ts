@@ -52,6 +52,7 @@ export const EX_SOLEUS_STRETCH: Guide = {
     },
     {
       h2: 'Why does the soleus need its own stretch?',
+      keyFact: 'In a review of 254 people with plantar fasciitis, roughly one quarter had tightness in both calf muscles, the gastrocnemius and the soleus (Patel and DiGiovanni, 2011).',
       paragraphs: [
         'The gastrocnemius, the outer calf muscle, crosses both the knee and the ankle. When you straighten the knee and lean forward, it takes the stretch. The soleus sits deeper and crosses only the ankle. With a straight knee, the gastrocnemius does all the work and the soleus barely moves.',
         'Bending the knee puts slack into the gastrocnemius so it stops resisting. Now the ankle dorsiflexion pulls on the soleus instead. That is the whole point of the bent-knee version. It is not a modification. It is a separate exercise for a separate muscle.',
@@ -68,7 +69,7 @@ export const EX_SOLEUS_STRETCH: Guide = {
       ],
     },
     {
-      h2: 'Common mistakes with the soleus stretch',
+      h2: 'What are the common mistakes with the soleus stretch?',
       paragraphs: [
         'Not bending the knee enough. A slight bend is not enough to release the gastrocnemius. You need a real bend, enough that you can see the back knee tracking forward over the toes.',
         'Letting the heel lift. The moment the heel comes off the floor, the stretch vanishes. Press the heel down and let the knee move forward over the foot.',

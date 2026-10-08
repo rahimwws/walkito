@@ -61,6 +61,7 @@ export const BALL_OF_FOOT_ES: Guide = {
     },
     {
       h2: '¿El ejercicio ayuda con la metatarsalgia?',
+      keyFact: 'En un estudio antes y después de 2020 con 41 personas con metatarsalgia primaria, un programa de ejercicios de dedos de 8 semanas bajó el dolor en promedio 2,7 puntos en una escala de 10, sin grupo de control (Amaha y colegas, 2020).',
       paragraphs: [
         'La respuesta honesta es que la evidencia sobre el ejercicio en la metatarsalgia es inicial y limitada. Es mucho más escasa que la evidencia para la [fascitis plantar](/es/ejercicios-fascitis-plantar/) o la tendinitis de Aquiles, donde sí hay ensayos aleatorizados.',
         'El mejor estudio hasta ahora es un estudio antes y después de 2020 con 41\u00A0personas (56\u00A0pies) con metatarsalgia primaria. Un programa de ejercicios de dedos de 8\u00A0semanas, sobre todo recoger la toalla y levantar canicas, bajó el dolor en promedio 2,7\u00A0puntos en una escala de 10 y mejoró la fuerza de agarre de los dedos. Pero no hubo grupo de control, así que parte de la mejora podría deberse a la recuperación natural. Los autores pidieron ensayos aleatorizados.',
@@ -72,6 +73,7 @@ export const BALL_OF_FOOT_ES: Guide = {
     },
     {
       h2: '¿Una pantorrilla rígida empeora el dolor en la parte delantera del pie?',
+      keyFact: 'En 254 personas con fascitis plantar, entre el 52 y el 60 % tenía una contractura aislada del gastrocnemio, la pantorrilla rígida también vinculada a la sobrecarga de la parte delantera del pie (Patel y DiGiovanni, 2011).',
       paragraphs: [
         'Es muy probable. Cuando el gastrocnemio está rígido, el tobillo no se dobla lo suficiente al caminar. El cuerpo levanta el talón antes de tiempo, y eso carga más peso sobre la parte delantera de la planta. El término clínico es equino funcional, y es una causa reconocida de metatarsalgia.',
         'Los números vienen de la investigación sobre la fascitis plantar, pero el mecanismo es el mismo. En 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenían una contractura aislada del gastrocnemio. Un estudio de casos y controles con 50\u00A0casos y 100\u00A0controles encontró que la menor dorsiflexión del tobillo (cuánto sube el pie hacia la tibia) era el factor de riesgo independiente más fuerte, con 23,3\u00A0veces más probabilidades.',
@@ -88,7 +90,7 @@ export const BALL_OF_FOOT_ES: Guide = {
       ],
     },
     {
-      h2: 'Los ejercicios',
+      h2: '¿Qué ejercicios ayudan con el dolor en la planta del pie (metatarsalgia)?',
       paragraphs: [
         'Estos ejercicios atacan dos lados del problema: la fuerza de los dedos y de los músculos intrínsecos del pie (para repartir la carga al impulsarte) y la flexibilidad de la pantorrilla (para que la parte delantera del pie no se sobrecargue). Ninguno se ha probado en un ensayo aleatorizado específicamente para la metatarsalgia. Cuando tocas la zona de la planta delantera en el mapa de dolor de Walkito durante un check-in, la sesión de alivio te da separación de dedos y estiramiento plantar. La zona de los dedos te da separación de dedos y pie corto sentado.',
       ],
@@ -214,6 +216,14 @@ export const BALL_OF_FOOT_ES: Guide = {
     {
       q: '¿Qué zapatos son mejores para el dolor en la planta del pie?',
       a: 'Zapatos con puntera ancha, suela acolchada y tacón bajo. Los zapatos con suela balancín ayudan porque dejan que el pie ruede al impulsarte sin doblarse en las articulaciones de los metatarsianos. Los zapatos angostos y los tacones hacen lo contrario. Sobre todo para el neuroma de Morton, cambiar de zapatos suele ser el paso más eficaz por sí solo.',
+    },
+    {
+      q: '¿Cuánto dura un brote de metatarsalgia?',
+      a: 'No hay un tiempo fijo. Un brote leve suele calmarse en cuanto reduces la actividad que lo provoca, cambias a zapatos acolchados y más anchos, y agregas una almohadilla metatarsal. Los brotes ligados a una causa que sigue activa, como tacones altos, dedos en garra o una pantorrilla tensa, pueden durar meses, porque ningún plazo único se ajusta a todas las causas.',
+    },
+    {
+      q: '¿Cuáles son las complicaciones de una metatarsalgia sin tratar?',
+      a: 'Si no se atiende, la metatarsalgia puede cambiar tu forma de caminar, porque de forma natural quitas peso del punto dolorido y lo pasas a otras partes del pie, lo que puede crear dolor en zonas nuevas. La presión constante sobre las cabezas de los metatarsianos también puede contribuir a callos o, con menos frecuencia, a deformidades como el dedo en martillo. Cambiar de calzado y usar almohadillas metatarsales a tiempo reduce este riesgo.',
     },
   ],
   redFlags: {

@@ -75,6 +75,7 @@ export const EX_TOWEL_SCRUNCH_ES: Guide = {
     },
     {
       h2: '¿A quién le sirve más recoger la toalla?',
+      keyFact: 'En un estudio de 2020 con 41 personas (56 pies) con metatarsalgia, un programa de ocho semanas con recoger la toalla y levantar canicas estuvo seguido de menos dolor y más fuerza de agarre, sin grupo de control (Amaha y colegas, 2020).',
       paragraphs: [
         'Recoger la toalla les queda bien a quienes empiezan con ejercicios para el pie y quieren un punto de partida sencillo. También a quienes tienen poca fuerza de agarre en los dedos, porque el ejercicio entrena directamente la capacidad de doblar los dedos con carga.',
         'Un estudio de 2020 de Amaha y colegas siguió a 41\u00A0personas (56\u00A0pies) con metatarsalgia primaria, dolor bajo la parte delantera de la planta del pie, durante un programa de ocho semanas de ejercicios de dedos que incluía recoger la toalla y levantar canicas. La fuerza de agarre de los dedos y el dolor mejoraron de antes a después del programa. No hubo grupo de control, así que parte del cambio podría deberse al tiempo o a la atención y no a los ejercicios en sí. La fuerza de agarre de los dedos también puede importar en adultos mayores con riesgo de caídas, porque los dedos ayudan al equilibrio al estar de pie y al caminar.',
@@ -83,7 +84,7 @@ export const EX_TOWEL_SCRUNCH_ES: Guide = {
       cites: [CITE.amaha],
     },
     {
-      h2: 'Errores comunes al recoger la toalla',
+      h2: '¿Cuáles son los errores comunes al recoger la toalla?',
       paragraphs: [
         'El error más común es levantar el talón del piso. Cuando el talón se levanta, la pantorrilla toma el control y los músculos del pie trabajan menos. Mantén el talón apoyado en cada repetición.',
         'Otro error es jalar demasiado rápido. Un tirón rápido de la toalla usa el impulso en lugar de la contracción del músculo. Jala despacio y mantén la toalla recogida los cinco segundos completos antes de soltar.',

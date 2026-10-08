@@ -59,6 +59,7 @@ export const HIGH_ARCHES_EN: Guide = {
     },
     {
       h2: 'Do orthoses help pes cavus foot pain?',
+      keyFact: 'A randomized trial of 154 adults with pes cavus foot pain found custom orthoses beat a sham insole by 8.3 points on pain and 9.5 points on function at three months (Burns and colleagues, 2006).',
       paragraphs: [
         'Custom foot orthoses have the strongest evidence for pes cavus foot pain. In the only randomized trial, Burns and colleagues assigned 154 adults with chronic foot pain and bilateral pes cavus to either custom-made polypropylene foot orthoses or a flat sham insole. At three months, the custom orthoses group reported 8.3 points more improvement in foot pain on the Foot Health Status Questionnaire than the sham group. Function scores improved 9.5 points more. Plantar pressure dropped 26 percent with the custom orthoses, compared with 9 percent with the sham.',
         'The trial included people with both idiopathic and neuromuscular pes cavus (133 idiopathic, 21 neuromuscular including 16 with Charcot-Marie-Tooth disease). The orthoses were contoured to the shape of the foot with a full-length cushioned top cover.',
@@ -69,7 +70,8 @@ export const HIGH_ARCHES_EN: Guide = {
       cites: [CITE.burnsCavus],
     },
     {
-      h2: 'Exercises for high arches',
+      h2: 'Which exercises help high arches?',
+      keyFact: 'The 2023 heel pain guideline grades calf and plantar fascia stretching A and strength training B for plantar heel pain, the most common pain site in pes cavus (Koc and colleagues, 2023).',
       paragraphs: [
         'No trial has tested an exercise program designed specifically for pes cavus foot pain. The exercises below target the structures that are commonly tight or unstable in a high-arched foot: the calf, the plantar fascia, the ankle, and the intrinsic foot muscles. They are borrowed from the evidence for plantar fasciitis, ankle instability, and general foot conditioning, and labeled accordingly.',
         'The 2023 heel pain guideline grades calf and plantar fascia stretching A and strength training B for plantar heel pain, which is one of the most common pain sites in pes cavus. No comparable guideline exists for pes cavus specifically.',
@@ -201,6 +203,15 @@ export const HIGH_ARCHES_EN: Guide = {
       q: 'Can high arches cause plantar fasciitis?',
       cites: [CITE.guideline],
       a: 'High arches are listed as a risk factor for plantar fasciitis. The rigid foot puts more strain on the plantar fascia with each step, and the fascia is often tight to begin with. If your high-arched foot has pain under the heel that is worst in the morning, that pattern is consistent with plantar fasciitis and the exercises in [plantar fasciitis exercises](/plantar-fasciitis-exercises/) apply.',
+    },
+    {
+      q: 'How do I tell if my arches are too high?',
+      a: 'Try a wet footprint test: wet your bare sole and step onto a flat, dry surface. A high arch leaves little or no print along the outer edge, often just the heel and ball of the foot, while a flat foot leaves almost the whole sole. A big difference between your two feet is worth mentioning to a clinician.',
+    },
+    {
+      q: 'Is it better to be flat-footed or have high arches?',
+      cites: [CITE.burnsCavusPain],
+      a: 'Neither is clearly better. A flat foot spreads load wide but can overstretch the plantar fascia and posterior tibial tendon. A high arch is rigid and concentrates force at the heel and ball of the foot. About 60 percent of people with high arches report foot pain, so foot shape alone does not predict how your feet will feel.',
     },
   ],
   redFlags: {

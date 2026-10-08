@@ -69,7 +69,7 @@ export const FLAT_FEET_EN: Guide = {
       ],
     },
     {
-      h2: 'The exercises for flat feet, with starting doses',
+      h2: 'Which exercises help flat feet, and how much should you do?',
       paragraphs: [
         'The exercises for flat feet in Walkito start with towel scrunches and big toe lifts, then move up through three versions of the short foot. Toe spreads, band turn-ins, a single-leg hold, hip abduction and calf stretches fill in around them. These are Walkito’s starting doses, not a prescription. Do them barefoot. [How these guides are written](/about/).',
         'The short foot is the core of the arch work. You shorten the foot by pulling the ball of the foot toward the heel, so the arch lifts, without curling the toes. Short-foot work, hip strengthening and stretching are what the trial tested. The towel scrunch, big toe lift, toe spread, band turn-in and single-leg hold are Walkito’s own additions.',
@@ -215,6 +215,7 @@ export const FLAT_FEET_EN: Guide = {
     },
     {
       h2: 'How long before flat feet exercises change the arch?',
+      keyFact: 'In a trial of 52 people with flexible flat feet, six weeks of short-foot, ankle, hip and stretching work improved navicular drop by 0.4 cm and arch angle by 16 degrees more than a control group (Brijwasi and Borkar, 2023).',
       paragraphs: [
         'Flat feet exercises changed the arch after six weeks or more in the research so far, and only in flexible flat feet. In a trial of 52 people with **flexible** flat feet, a six-week program of short-foot exercises, ankle work, hip strengthening and stretching changed two measures of arch shape more than in the control group.',
         'The evidence for short-foot training on its own is thinner. A 2024 review pooled studies of short-foot training on flat feet in general. Overall, it found no clear difference from control groups in arch shape or foot posture. Only programs longer than six weeks improved how far the arch sinks under your weight, and the authors say larger studies are needed. So plan for at least six weeks, and longer if you do short-foot work on its own.',
@@ -277,6 +278,14 @@ export const FLAT_FEET_EN: Guide = {
       q: 'When should I see a doctor about flat feet?',
       a: 'See a clinician before you start if the arch stays flat when the foot is off the ground, or if one arch has flattened suddenly as an adult. The same goes for pain that followed an injury, wakes you at night, or comes with numbness, tingling, swelling or warmth. Pain that is sharp or getting worse needs a clinician, not more exercise.',
     },
+    {
+      q: 'Is walking barefoot good for flat feet?',
+      a: 'There is no trial testing barefoot walking against shoes for flat feet, so no study here settles it. Walking barefoot does work the small muscles that support the arch, which is why bare-foot arch exercises like the short foot and towel scrunch are done without shoes. If barefoot walking brings on new pain, ease up and try it on soft ground first.',
+    },
+    {
+      q: 'What aggravates flat feet?',
+      a: 'Long periods of standing or walking, worn-out or unsupportive shoes, carrying extra weight, and skipping the arch and calf work that keeps the supporting muscles strong. None of this changes the arch\u2019s shape, but it can make a flexible flat foot feel more tired or sore by evening. A rigid flat foot that stays painful needs a clinician, not just rest.',
+    },
   ],
   redFlags: {
     h2: RED_FLAGS.h2,
@@ -324,7 +333,7 @@ export const HEEL_PAIN_EN: Guide = {
   toc: true,
   sections: [
     {
-      h2: 'The exercises for plantar fasciitis, with starting doses',
+      h2: 'Which exercises help plantar fasciitis, and how much should you do?',
       paragraphs: [
         'The exercises for plantar fasciitis in Walkito are stretches for the plantar fascia and calf, calf strength work that builds up in small steps, and a foot roll. These are Walkito’s starting doses, not a prescription. A one-page summary is on [printable exercise sheets](/printable-exercise-sheets/). [How these guides are written](/about/).',
         'Order matters. While pain is your goal, Walkito keeps the calf work gentle: seated heel raises first, then heel raises on both feet, then a held heel raise, one step at a time. You move up a step once the last two sessions with it felt easy. The [towel heel raise](/exercises/towel-heel-raise/) loads the plantar fascia the hardest, so it only comes in once morning pain has come down and the goal moves on to calf strength. If any exercise takes your pain to **6/10 or more**, stop for the day. That is the point where Walkito ends a session.',
@@ -452,6 +461,7 @@ export const HEEL_PAIN_EN: Guide = {
     },
     {
       h2: 'When is the best time to do plantar fasciitis stretches?',
+      keyFact: 'In a trial of 82 people with chronic plantar fasciitis, stretching the plantar fascia before standing eased first-step morning pain more than calf stretching alone by eight weeks (DiGiovanni and colleagues, 2003).',
       paragraphs: [
         'Before your first steps in the morning and before standing after sitting for a long time. Those are the two moments when the plantar fascia is stiffest and most likely to hurt.',
         'A 2003 trial of 82 people with chronic plantar fasciitis tested a plantar fascia-specific stretch done before weight-bearing. Patients held the stretch for 10 seconds, repeated it 10 times, three times a day, with the first set before the first step of the morning. At eight weeks, the group doing this stretch had significantly less pain on their first morning steps than the group doing a calf stretch alone. By two years, after all patients received the same stretch, both groups had improved.',
@@ -479,6 +489,7 @@ export const HEEL_PAIN_EN: Guide = {
     },
     {
       h2: 'Is strength work or stretching better for plantar fasciitis?',
+      keyFact: 'In a trial of 48 people, the heel-raise group scored 29 points lower on the Foot Function Index at three months, but by twelve months the two groups were about even (Rathleff and colleagues, 2015).',
       paragraphs: [
         'Strength work and stretching both help plantar fasciitis, and strength work helps sooner.',
         'In a trial of 48 people with plantar fasciitis confirmed by ultrasound, everyone wore shoe inserts. One group added heavy heel raises every other day. The other stretched the plantar fascia every day. At three months, the heel-raise group was clearly ahead on pain and daily function. At twelve months, the two groups were even. Strength work brought the improvement forward. It did not make it bigger.',
@@ -564,6 +575,16 @@ export const HEEL_PAIN_EN: Guide = {
     {
       q: 'Does walking help plantar fasciitis?',
       a: 'Walking is usually fine, but it is not an exercise for plantar fasciitis on its own. The 2023 guideline recommends adjusting the load rather than stopping activity. If a walk leaves your first steps the next morning clearly worse, the distance or pace was too much. Stretching before you walk, especially the [plantar fascia stretch](/exercises/plantar-fascia-stretch/) before your first steps, makes the early minutes easier.',
+    },
+    {
+      q: 'What is the worst thing you can do for plantar fasciitis?',
+      a: 'Walking barefoot on hard floors right after waking, and jumping straight back into running or jumping while the heel is still flared, are the clearest mistakes. Both load the stiffest, least-recovered fascia with sudden force. The 2023 heel pain guideline recommends adjusting your load instead of pushing through pain.',
+      cites: [CITE.guideline],
+    },
+    {
+      q: 'Can plantar fasciitis be massaged out?',
+      a: 'No single rub session massages plantar fasciitis away, but gentle self massage can ease stiffness between sessions. The 2023 guideline grades manual therapy done by a clinician, hands-on work on the joint and soft tissue, as A, its top grade, when paired with stretching. Rolling your own sole is comfort care, not a replacement for stretching and calf strength work.',
+      cites: [CITE.guideline],
     },
   ],
   redFlags: RED_FLAGS,

@@ -59,6 +59,7 @@ export const EX_BAND_INVERSION: Guide = {
     },
     {
       h2: 'What muscle does this exercise target?',
+      keyFact: 'A 2004 MRI study of 5 healthy adults found that turning the foot inward raised tibialis posterior signal by 50 percent, with under 5 percent change in nearby muscles (Kulig and colleagues, 2004).',
       paragraphs: [
         'The primary target is the tibialis posterior. It is the deepest muscle in the back of the lower leg, sitting behind the tibia and fibula. Its tendon runs behind the medial malleolus (the inner ankle bone), then fans out in multiple slips that attach to nearly every bone in the midfoot.',
         'A 2004 MRI study by Kulig and colleagues tested three exercises in 5 healthy adults: foot adduction (turning the foot inward along the floor), a single-leg heel raise, and open-chain foot supination. Foot adduction produced the greatest tibialis posterior activation (50% signal increase) with the least activation in surrounding muscles (under 5%). The single-leg heel raise activated the tibialis posterior too, but also heavily activated the gastrocnemius (99%) and the soleus (39%), making it a much less selective exercise for the tibialis posterior.',
@@ -75,7 +76,7 @@ export const EX_BAND_INVERSION: Guide = {
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
     {
-      h2: 'Common mistakes with the band inversion exercise',
+      h2: 'What are the common mistakes with the band inversion exercise?',
       paragraphs: [
         'The most common mistake is rotating the whole leg instead of just the foot. When the hip rotates inward to turn the foot, the tibialis posterior does almost nothing. Keep the knee pointing straight ahead. Only the foot moves at the ankle.',
         'Another mistake is using a band that is too strong. The tibialis posterior is a small, deep muscle. A heavy band forces the larger muscles to take over. Start with a light band and focus on feeling the work along the inner ankle and arch.',

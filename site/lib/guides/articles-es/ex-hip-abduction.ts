@@ -57,6 +57,7 @@ export const EX_HIP_ABDUCTION_ES: Guide = {
     },
     {
       h2: '¿Cómo afecta la cadera al pie y al arco?',
+      keyFact: 'Un estudio transversal de 2013 del Framingham Foot Study con unos 1900 adultos no encontró relación entre el pie plano y el dolor lumbar, pero sí una relación pequeña entre el pie que se va hacia adentro al caminar y el dolor lumbar en mujeres (Menz y colegas, 2013).',
       paragraphs: [
         'La conexión pasa por una cadena biomecánica: cadera, rodilla, tobillo, pie. Cuando el glúteo medio no logra mantener la pelvis nivelada al apoyarte en una pierna, el muslo gira hacia adentro. La rodilla lo sigue y se va hacia la línea media. Ese giro obliga al pie a hacer pronación: el tobillo se va hacia adentro y el arco se aplana.',
         'Por eso muchas personas con pie plano o dolor en el arco también tienen las caderas débiles. El arco no está fallando por sí solo. Está recibiendo demasiada carga desde arriba. Fortalecer la cadera reduce esa carga que baja.',
@@ -74,7 +75,7 @@ export const EX_HIP_ABDUCTION_ES: Guide = {
       ],
     },
     {
-      h2: 'Errores comunes en la abducción de cadera de pie',
+      h2: '¿Cuáles son los errores comunes en la abducción de cadera de pie?',
       paragraphs: [
         'Inclinar el cuerpo hacia el lado contrario es el error más común. Cuando te inclinas, el cuerpo usa impulso y flexión lateral en lugar del glúteo medio. Mantente derecho. Es mejor subir menos con el cuerpo recto que subir mucho inclinándote.',
         'Otro error es girar el pie hacia afuera, con los dedos apuntando al techo. Así el trabajo pasa a los flexores de cadera y al tensor de la fascia lata en lugar del glúteo medio. Mantén los dedos apuntando al frente o un poco hacia abajo.',

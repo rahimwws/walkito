@@ -21,6 +21,8 @@ import { videoSchema } from '@/lib/video';
 import { SITE_URL } from '@/lib/site';
 
 const HOME_CRUMB = { en: 'Home', ru: 'Главная', es: 'Inicio' } as const;
+const EXERCISE_LIST_HEADING = { en: 'Exercises on this page', ru: 'Упражнения на этой странице', es: 'Ejercicios de esta página' } as const;
+const KEY_FACT_LABEL = { en: 'Key finding', ru: 'Главное из исследований', es: 'Dato clave' } as const;
 const LIBRARY_CRUMB = { en: 'Exercise library', ru: 'Библиотека упражнений', es: 'Biblioteca de ejercicios' } as const;
 
 /**
@@ -47,6 +49,11 @@ function Inline({ text }: { text: string }) {
 }
 
 /** A heading as an anchor: lower case, words joined by hyphens. */
+/** The anchor of an exercise card, linked from the list at the top. */
+function exerciseId(name: string): string {
+  return `ex-${slug(name)}`;
+}
+
 function slug(text: string): string {
   return text
     .toLowerCase()
@@ -126,6 +133,24 @@ export function Guide({ guide }: { guide: GuideData }) {
   // not only the footer: a link a reader can see in context is one a crawler
   // weighs as a real recommendation.
   const related = relatedGuides(guide);
+
+  // The exercises on the page as one numbered list near the top, each linking
+  // to its card: the summary a reader scans first, and the shape Google uses
+  // for "... exercises" featured snippets. Built from the same data as the
+  // cards, so it can never disagree with them. Only on guides with three or
+  // more different exercises; not on single-exercise pages or the test page.
+  const exerciseList = (() => {
+    if (guide.page.startsWith('ex') || guide.page === 'calfRaiseTest') return [];
+    const seen = new Set<string>();
+    return guide.sections
+      .flatMap((s) => s.exercises ?? [])
+      .filter((e) => (seen.has(e.name) ? false : (seen.add(e.name), true)));
+  })();
+  // Doses only when every one is short ("2 holds of 30 seconds, each leg"):
+  // a list where some lines are full sentences stops being scannable, so
+  // those pages show the names alone.
+  const listDoses = exerciseList.every((e) => (e.dose ?? '').length > 0 && e.dose.length <= 48);
+  const firstExerciseId = new Set<string>();
   // English only: the sheets are in English.
   const printable = guide.lang === 'en' ? printableForGuide(guidePath(guide)) : undefined;
 
@@ -178,6 +203,20 @@ export function Guide({ guide }: { guide: GuideData }) {
           </ul>
         </aside>
 
+        {exerciseList.length >= 3 && (
+          <aside className="exercise-list" aria-label={EXERCISE_LIST_HEADING[guide.lang]}>
+            <h2>{EXERCISE_LIST_HEADING[guide.lang]}</h2>
+            <ol>
+              {exerciseList.map((e) => (
+                <li key={e.name}>
+                  <a href={`#${exerciseId(e.name)}`}>{e.name}</a>
+                  {listDoses && <span className="dose">{e.dose}</span>}
+                </li>
+              ))}
+            </ol>
+          </aside>
+        )}
+
         <AppCallout campaign={`${guide.campaign}-top`} lang={guide.lang} />
 
         {guide.toc && (
@@ -217,6 +256,12 @@ export function Guide({ guide }: { guide: GuideData }) {
         {guide.sections.map((section) => (
           <section key={section.h2} id={slug(section.h2)}>
             <h2>{section.h2}</h2>
+            {section.keyFact && (
+              <p className="key-fact">
+                <strong>{KEY_FACT_LABEL[guide.lang]}</strong>
+                <Inline text={section.keyFact} />
+              </p>
+            )}
             {section.paragraphs?.map((p) => (
               <p key={p}>
                 <Inline text={p} />
@@ -234,7 +279,7 @@ export function Guide({ guide }: { guide: GuideData }) {
                 <div key={e.name} className={e.media ? 'exercise-detail' : 'exercise-detail exercise-text'}>
                   {e.media && <ExerciseMedia id={e.media} alt={e.alt ?? e.name} caption={e.caption} />}
                   <div>
-                    <h3>{e.name}</h3>
+                    <h3 id={firstExerciseId.has(e.name) ? undefined : (firstExerciseId.add(e.name), exerciseId(e.name))}>{e.name}</h3>
                     <p>
                       <Inline text={e.how} />
                     </p>
@@ -255,7 +300,7 @@ export function Guide({ guide }: { guide: GuideData }) {
               <ol className="exercises">
                 {section.exercises.map((e) => (
                   <li key={e.name}>
-                    <h3>{e.name}</h3>
+                    <h3 id={firstExerciseId.has(e.name) ? undefined : (firstExerciseId.add(e.name), exerciseId(e.name))}>{e.name}</h3>
                     <p className="dose">{e.dose}</p>
                     <p>{e.how}</p>
                   </li>

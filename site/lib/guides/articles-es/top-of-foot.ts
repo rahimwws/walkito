@@ -31,6 +31,7 @@ export const TOP_OF_FOOT_ES: Guide = {
   sections: [
     {
       h2: '¿Qué causa el dolor en el empeine del pie?',
+      keyFact: 'Una fractura por estrés de un metatarsiano puede no aparecer en una radiografía simple hasta dos o tres semanas después de empezar los síntomas, por lo que una resonancia magnética puede confirmarla antes (Patel y colegas, 2011).',
       paragraphs: [
         '**Tendinitis de los extensores** es la causa más común. Los tendones extensores recorren el empeine del pie desde la tibia hasta los dedos. Levantan los dedos y el pie al caminar. Cuando se irritan, sientes un dolor a lo largo del empeine que empeora con la actividad y muchas veces duele cuando jalas los dedos hacia arriba contra resistencia. Los detonantes habituales son cordones de zapato que presionan directo sobre los tendones, un aumento repentino en la distancia que caminas o corres, o zapatos con una lengüeta rígida.',
         '**Fractura por estrés de un metatarsiano** es una pequeña fisura en uno de los huesos largos del pie, casi siempre en el segundo o el tercero. El dolor está más localizado que el de la tendinitis, se centra en un solo punto y tiende a empeorar a lo largo del día. La hinchazón en el empeine es común. Las fracturas por estrés pueden tardar dos o tres semanas en aparecer en una radiografía simple, así que los estudios tempranos pueden necesitar una resonancia magnética. Este caso requiere reposo, no ejercicio.',
@@ -161,6 +162,14 @@ export const TOP_OF_FOOT_ES: Guide = {
     {
       q: '¿Debo ir al médico por dolor en el empeine?',
       a: 'Consulta a un profesional de la salud si el dolor está en un solo punto y empeora, si hay enrojecimiento o calor sobre la zona que duele, si el dolor sigue después de una semana de reposo y cambio de zapatos, si apareció de golpe después de una lesión, o si hay entumecimiento u hormigueo. Las fracturas por estrés, la gota y los problemas de nervios se benefician de una evaluación temprana.',
+    },
+    {
+      q: '¿Puedo seguir caminando con tendinitis de los extensores?',
+      a: 'Sí, caminar con tendinitis de los extensores suele estar bien si el dolor se mantiene leve y no empeora. Elige zapatos con una lengüeta suave y flexible, y afloja o cambia la forma de atar los cordones para quitar presión de los tendones adoloridos. Si caminar aumenta mucho el dolor o la molestia se queda horas después, reduce la distancia hasta que el cambio de cordones y el descanso lo bajen.',
+    },
+    {
+      q: '¿Cuánto tiempo tarda en mejorar la tendinitis de los extensores del pie?',
+      a: 'Ningún ensayo ha dado seguimiento al tiempo de recuperación de la tendinitis de los extensores en concreto, así que no hay un plazo comprobado. Los casos leves causados por cordones apretados suelen calmarse en cuanto se quita la presión. Los casos ligados a un aumento de entrenamiento, o a presión constante del zapato, pueden tardar más, a veces varias semanas, sobre todo si el detonante no se resuelve del todo.',
     },
   ],
   redFlags: {

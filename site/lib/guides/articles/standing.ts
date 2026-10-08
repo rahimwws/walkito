@@ -57,6 +57,7 @@ export const STANDING_EN: Guide = {
   sections: [
     {
       h2: 'Why do your feet hurt after standing all day?',
+      keyFact: 'In a 2003 case-control study, reduced ankle flexibility raised the odds of plantar fasciitis 23.3 times, the strongest risk factor found, and standing most of the working day raised the odds 3.6 times (Riddle and colleagues, 2003).',
       paragraphs: [
         'Feet hurt from standing because standing still loads the plantar fascia, calf muscles and heel without giving them a break. Walking pumps blood back up from the legs with each step. Standing takes that pump away, so blood pools in the lower legs and the tissues under the foot carry the same static load for hours.',
         'A 2015 review of the occupational health research found prolonged standing associated with low back pain, leg pain, discomfort and fatigue across many standing occupations. The review also noted that cardiovascular strain and leg swelling increase with standing duration. The authors called for clearer definitions of "prolonged standing" in future studies, since the threshold between safe and harmful standing time varies across people and jobs.',
@@ -65,7 +66,8 @@ export const STANDING_EN: Guide = {
       cites: [CITE.waters, CITE.riddle],
     },
     {
-      h2: 'The exercises for standing-related foot pain, with starting doses',
+      h2: 'Which exercises help feet that hurt from standing?',
+      keyFact: 'The 2023 heel pain guideline grades plantar fascia and calf stretching A, its top grade, and resistance and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
         'These exercises target the calf, the plantar fascia and the small muscles that support the arch. They are Walkito\'s starting doses, not a prescription. If your pain is near the heel and follows the morning-pain pattern of plantar fasciitis, the fuller set of exercises is in [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/). [How these guides are written](/about/).',
         'The 2023 heel pain guideline gives plantar fascia and calf stretching its top grade, A. It gives resistance and strength training a B. Both grades are for plantar fasciitis specifically, not for general standing fatigue, but the tissues involved are the same. If any exercise takes your pain to **6/10 or more**, stop for the day.',
@@ -201,6 +203,7 @@ export const STANDING_EN: Guide = {
     },
     {
       h2: 'Do compression socks help foot pain from standing?',
+      keyFact: 'In a trial of 40 security guards standing 12-hour shifts, both 15-20 mmHg and 20-30 mmHg compression stockings avoided the rise in foot and leg discomfort seen with regular socks (Garcia and colleagues, 2023).',
       paragraphs: [
         'Compression stockings have one of the better-controlled studies behind them for standing-related discomfort specifically. In a randomized trial of 40 security guards standing roughly 12-hour shifts, split into three groups, both the 15-20 mmHg and 20-30 mmHg compression-stocking groups avoided the significant rise in foot and leg discomfort, fatigue and swelling seen in the group that wore regular socks. Participants commonly said the lower-pressure stocking was easier to put on.',
         'The trial was small, all male, and tested one occupation. But it is one of the few interventions for standing-related discomfort with a randomized design, which is why it appears ahead of some more popular advice on this page. Compression stockings do not replace stretching or strength work. They help manage the swelling and fatigue while the calf and fascia still need their own attention.',
@@ -251,6 +254,16 @@ export const STANDING_EN: Guide = {
       q: 'What is the single best thing to try first for foot pain from standing?',
       a: 'Among the self-care options reviewed on this page, calf and plantar fascia stretching carry the top evidence grade (A) in the 2023 heel pain guideline for heel pain specifically, and compression stockings have the strongest controlled trial behind them for standing-related discomfort. Starting with daily calf stretches and trying compression stockings on your next long shift covers both.',
       cites: [CITE.guideline, CITE.garcia],
+    },
+    {
+      q: 'How long is too long to stand on your feet?',
+      a: "There's no single tested safe limit. Occupational health research finds that discomfort, fatigue, and swelling increase the longer a shift involves standing, with the clearest rise over 8- to 12-hour shifts. Comfort depends more on movement than on an hour count: short seated or walking breaks every hour or so help offset the static load standing puts on your feet.",
+      cites: [CITE.waters],
+    },
+    {
+      q: 'How can I stand for 10 hours without pain?',
+      a: 'No single trick removes pain from a 10-hour shift, but combining approaches helps most: wear cushioned, supportive shoes, add a standing mat on hard floors, take short walking breaks every hour to restart circulation, and do daily calf and plantar fascia stretching. Compression stockings reduced discomfort and swelling in one trial of security guards on long shifts.',
+      cites: [CITE.garcia, CITE.waters],
     },
   ],
   redFlags: {

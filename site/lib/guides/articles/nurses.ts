@@ -41,6 +41,7 @@ export const NURSES_EN: Guide = {
     },
     {
       h2: 'Why do nurses get foot pain on 12-hour shifts?',
+      keyFact: 'In a case-control study of 50 cases and 100 controls, reduced ankle flexibility raised the odds of plantar fasciitis 23.3 times, the strongest risk factor, and standing most of the day raised them 3.6 times (Riddle and colleagues, 2003).',
       paragraphs: [
         'Three things combine on a nursing shift: prolonged standing, long walking distances and hard floors. Standing still loads the plantar fascia, calf muscles and heel pad without the pumping action that walking provides. Walking helps blood return from the legs, but nurses alternate unpredictably between standing still at a bedside and walking long corridors, so the calf pump never settles into a steady rhythm.',
         'A 2015 review of the occupational health literature found prolonged standing at work associated with musculoskeletal discomfort, fatigue and leg pain across many standing occupations, with nurses cited as one of the highest-risk groups. The review noted that cardiovascular strain and leg swelling increase with standing duration.',
@@ -50,6 +51,7 @@ export const NURSES_EN: Guide = {
     },
     {
       h2: 'What exercises help nurses with foot pain?',
+      keyFact: 'The 2023 heel pain guideline grades calf and plantar fascia stretching A, its top grade, and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
         'The exercises that help are the same ones that target plantar fasciitis and standing-related foot pain: calf stretches, a plantar fascia stretch, heel raises for calf strength, and an arch exercise called the short foot. The difference for nurses is fitting them in around rotating shifts, not during them. A few minutes before or after a shift is enough to cover the most important ones.',
         'The 2023 heel pain guideline gives calf and plantar fascia stretching its top grade, A, and strength training a B. Both grades are for plantar fasciitis specifically, but the tissues involved are the same ones that take the load during a nursing shift. If any exercise brings your pain to 6 out of 10 or higher, stop for the day.',
@@ -161,6 +163,7 @@ export const NURSES_EN: Guide = {
     },
     {
       h2: 'Do compression stockings help nurses with foot and leg pain?',
+      keyFact: 'In a trial of 40 security guards standing roughly 12-hour shifts, both 15-20 mmHg and 20-30 mmHg compression stockings avoided the rise in foot and leg discomfort seen with regular socks (Garcia and colleagues, 2023).',
       paragraphs: [
         'Compression stockings have one of the better-controlled studies behind them for standing-related discomfort. In a randomized trial of 40 security guards standing roughly 12-hour shifts, both the 15-20 mmHg and the 20-30 mmHg compression-stocking groups avoided the significant rise in foot and leg discomfort, fatigue and swelling seen in the group that wore regular socks. Participants commonly said the lower-pressure stocking was easier to put on.',
         'A pilot randomized trial of 20 nursing students compared knee-length and thigh-length compression stockings worn during 9-hour clinical training shifts. Both groups reported high satisfaction, though the sample was too small to show clear differences in outcomes between the two lengths.',

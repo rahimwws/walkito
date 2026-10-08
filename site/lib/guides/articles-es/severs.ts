@@ -60,6 +60,7 @@ export const SEVERS_ES: Guide = {
     },
     {
       h2: '¿Qué ayuda en la enfermedad de Sever? La evidencia',
+      keyFact: 'En un ensayo con 101\u00A0niños, los tres enfoques mejoraron el dolor, y el grupo de la plantilla reportó más satisfacción a las seis semanas, aunque la diferencia desapareció a los tres meses (Wiegerinck y colegas, 2016).',
       paragraphs: [
         'La base de evidencia para la enfermedad de Sever es pequeña pero va creciendo. Las tres opciones principales estudiadas son el manejo de la carga (reducir la actividad que causa dolor), las taloneras o plantillas, y los estiramientos o ejercicios de fortalecimiento. Las tres han mostrado beneficio, y ninguna ha demostrado ser claramente mejor que las otras al final del seguimiento.',
         'En un ensayo de 2016 con 101\u00A0niños de 8 a 15\u00A0años, Wiegerinck y colegas compararon tres enfoques: esperar y observar con el consejo de dejar la actividad dolorosa, una plantilla con elevación de talón y ejercicios excéntricos supervisados. Los tres grupos mejoraron de forma significativa. A las seis semanas, el grupo de la plantilla estaba más satisfecho que los otros dos. A los tres meses, no quedaba una diferencia clínicamente relevante entre los tres.',
@@ -80,7 +81,8 @@ export const SEVERS_ES: Guide = {
       cites: [CITE.wiegerinck],
     },
     {
-      h2: 'Taloneras y plantillas',
+      h2: '¿Las taloneras y plantillas ayudan con la enfermedad de Sever?',
+      keyFact: 'Un ensayo cruzado con 51\u00A0niños varones encontró que una talonera redujo el dolor en un 80\u00A0por ciento frente a una cuña de talón, lo que sugiere que la absorción del impacto importa más que el ángulo del talón (Perhamre y colegas, 2011).',
       paragraphs: [
         'Las taloneras son una de las intervenciones más prácticas para la enfermedad de Sever. Amortiguan el talón, absorben el impacto y reducen las fuerzas de pico que llegan a la placa de crecimiento. El ensayo cruzado de Perhamre encontró que una talonera redujo el dolor en un 80\u00A0por ciento en comparación con una cuña de talón en 51\u00A0niños, lo que sugiere que la absorción del impacto en el talón importa más que simplemente cambiar el ángulo del talón.',
         'En el ensayo factorial de James, las elevaciones de talón (un tipo de plantilla que levanta el talón) mostraron una pequeña ventaja a corto plazo frente a las plantillas prefabricadas a los 2\u00A0meses, pero no a los 12\u00A0meses. Las plantillas a medida no se probaron en ninguno de estos ensayos.',
@@ -89,7 +91,7 @@ export const SEVERS_ES: Guide = {
       cites: [CITE.perhamreHeelCup, CITE.jamesSever],
     },
     {
-      h2: 'Estiramiento y fortalecimiento de la pantorrilla',
+      h2: '¿El estiramiento de pantorrilla ayuda con la enfermedad de Sever?',
       paragraphs: [
         'Las pantorrillas tensas aumentan el tirón sobre la placa de crecimiento, y la rigidez de la pantorrilla es uno de los factores de riesgo reconocidos de la apofisitis calcánea. Estirar el gastrocnemio (el músculo más grande y externo de la pantorrilla, que se estira con la rodilla estirada) y el sóleo (el músculo más profundo, que se estira con la rodilla doblada) es una recomendación habitual.',
         'En el ensayo de Wiegerinck, el grupo de ejercicio hizo un programa de fortalecimiento excéntrico de la pantorrilla bajo supervisión de un fisioterapeuta. Este grupo mejoró tanto como los de la plantilla y los de esperar y observar. El estiramiento y el fortalecimiento suave son seguros y pueden ayudar al reducir la tracción sobre la placa de crecimiento, pero la evidencia no muestra que sean mejores que las taloneras o el manejo de la carga por sí solos.',
@@ -145,6 +147,14 @@ export const SEVERS_ES: Guide = {
     {
       q: '¿Walkito puede ayudar a mi hijo con enfermedad de Sever?',
       a: 'Walkito está diseñado para adultos con dolor de talón y de arco. Sus dosis de ejercicio, umbrales de dolor y reglas de progresión están pensados para cuerpos adultos, no para la placa de crecimiento abierta de un niño. Un especialista en medicina deportiva pediátrica o un podólogo es la fuente adecuada para el programa de ejercicios de un niño.',
+    },
+    {
+      q: '¿Qué se puede confundir con la enfermedad de Sever?',
+      a: 'La irritación del tendón de Aquiles, una fractura por estrés del calcáneo y la bursitis retrocalcánea pueden verse parecidas en un niño que crece. Una prueba de apretar positiva (dolor al presionar los lados del talón), una edad entre 8 y 15 años, y un aumento reciente en el entrenamiento apuntan más a la enfermedad de Sever. Una lesión puntual o dolor que empeora en un punto específico necesita que un profesional descarte una fractura.',
+    },
+    {
+      q: '¿Cómo se coloca cinta kinesiológica para la enfermedad de Sever?',
+      a: 'No hay ningún ensayo que pruebe la cinta kinesiológica para la enfermedad de Sever, así que ningún patrón está comprobado como mejor que las taloneras o el manejo de la carga. Algunos profesionales la colocan a lo largo del Aquiles y bajo el talón para reducir la tracción sobre la placa de crecimiento. Si quieres probarlo, pide a un fisioterapeuta o entrenador deportivo que la aplique y te muestre el patrón.',
     },
   ],
   redFlags: {

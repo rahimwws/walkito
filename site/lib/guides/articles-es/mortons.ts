@@ -49,6 +49,7 @@ export const MORTONS_ES: Guide = {
     },
     {
       h2: '¿Las almohadillas metatarsales y los cambios de calzado ayudan?',
+      keyFact: 'Combinando dos estudios de una revisión de 2019, los zapatos más anchos y una almohadilla metatarsal ayudaron a cerca del 32 por ciento de las personas a un seguimiento promedio de cuatro meses y medio (Matthews y colegas, 2019).',
       paragraphs: [
         'Los zapatos más anchos con tacón bajo y una almohadilla metatarsal son el primer paso más recomendado para el neuroma de Morton. La almohadilla se coloca justo detrás de las cabezas de los metatarsianos, no directamente debajo, para levantar el cuerpo de los metatarsianos y separarlos, reduciendo la compresión sobre el nervio.',
         'El calzado bien ajustado con puntera ancha, tacón bajo y almohadilla metatarsal se evaluó en dos estudios incluidos en una revisión sistemática de 2019. Combinando esos dos estudios, el calzado y la almohadilla tuvieron éxito en cerca del 32\u00A0por ciento de las personas a un seguimiento promedio de cuatro meses y medio. Sin embargo, un ensayo aleatorizado que comparó el calzado y la almohadilla con la inyección de corticosteroides encontró que el grupo de inyección tenía seis veces más probabilidades de éxito a los seis meses.',
@@ -59,6 +60,7 @@ export const MORTONS_ES: Guide = {
     },
     {
       h2: '¿Qué dice la evidencia sobre las inyecciones?',
+      keyFact: 'En la revisión Cochrane de 2024, la inyección de corticosteroides guiada por ecografía probablemente mejoró el dolor más que la inyección sin guía, con evidencia de certeza moderada a los 2, 6 y 12 meses (Matthews y colegas, 2024).',
       paragraphs: [
         'La inyección de corticosteroides es el enfoque invasivo no quirúrgico más estudiado para el neuroma de Morton. La revisión Cochrane de 2024 incluyó seis ensayos aleatorizados con 373\u00A0participantes. Encontró evidencia de baja certeza de que agregar un corticosteroide a un anestésico local podría no hacer diferencia en el dolor o la función a los tres a seis meses, comparado con la inyección de anestésico local solo. Los autores de la Cochrane señalaron que agregar un corticosteroide podría aumentar los eventos adversos, incluyendo atrofia de la almohadilla grasa y cambios en la piel.',
         'La inyección guiada por ecografía probablemente mejora el dolor comparada con la inyección sin guía, con diferencias clínicamente significativas a los 2, 6 y 12\u00A0meses en los estudios incluidos. La evidencia se calificó como de certeza moderada.',
@@ -172,6 +174,18 @@ export const MORTONS_ES: Guide = {
       q: '¿Cuándo necesita cirugía el neuroma de Morton?',
       cites: [CITE.matthewsCochrane],
       a: 'La cirugía suele considerarse después de varios meses de manejo conservador, incluyendo cambios de calzado, almohadillas y una o dos rondas de inyecciones, que no han dado alivio duradero. La neurectomía, la extirpación del segmento engrosado del nervio, es el procedimiento más común. Alivia el dolor en muchas personas, pero deja un entumecimiento permanente entre los dedos afectados.',
+    },
+    {
+      q: '¿Qué provoca el neuroma de Morton?',
+      a: 'El neuroma de Morton se dispara por cualquier cosa que comprima el nervio entre los huesos metatarsianos. Los disparadores comunes incluyen zapatos angostos o de punta puntiaguda, tacones altos, actividades de impacto repetido como correr, y formas del pie como el pie plano o los arcos altos que desplazan presión extra hacia adelante. Es más común en mujeres y en la mediana edad.',
+    },
+    {
+      q: '¿Qué es la prueba de pellizco para el neuroma de Morton?',
+      a: 'La prueba de pellizco, también llamada señal de Mulder, es un examen físico que un profesional usa para ayudar a diagnosticar el neuroma de Morton. Aprieta la parte delantera del pie de lado a lado mientras presiona entre las cabezas de los metatarsianos. Un chasquido o clic palpable, junto con dolor ardiente reproducido, respalda el diagnóstico, aunque un profesional todavía necesita descartar otras causas.',
+    },
+    {
+      q: '¿Caminar es bueno para el neuroma de Morton?',
+      a: 'Caminar en sí no daña el nervio, pero los zapatos apretados o de suela delgada mientras caminas pueden aumentar la compresión y empeorar los síntomas. Caminatas cortas con zapatos anchos y acolchados suelen estar bien. Caminatas más largas sobre superficies duras o con zapatos angostos suelen aumentar el ardor u hormigueo entre los dedos. Si caminar provoca síntomas de forma constante, cambiar de zapatos ayuda más que reducir la actividad.',
     },
   ],
   redFlags: {

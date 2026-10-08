@@ -36,6 +36,7 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
   sections: [
     {
       h2: '¿Por qué los ejercicios ayudan con un espolón calcáneo?',
+      keyFact: 'En un estudio con 530\u00A0personas con dolor de pie, un espolón apareció solo en el 6\u00A0% de los pies, por lo general junto con una fascia plantar engrosada (Menz y colegas, 2019).',
       paragraphs: [
         'El espolón calcáneo es un crecimiento de hueso en la parte inferior del hueso del talón. En un estudio con 530\u00A0personas de 50\u00A0años o más con dolor de pie, un espolón calcáneo solo era raro (6\u00A0% de los pies), y el dolor de talón se asoció con un espolón junto con una fascia plantar engrosada, la banda de tejido bajo el pie (Menz y colegas, 2019). El dolor viene del tejido blando, y eso es lo que el ejercicio puede alcanzar.',
         'Estirar la fascia plantar y la pantorrilla reduce la tensión en la unión del talón. Fortalecer la pantorrilla aumenta la capacidad de la cadena que absorbe la carga cada vez que el talón golpea el piso. Juntos, bajan el estrés diario sobre el tejido alrededor del espolón.',
@@ -44,7 +45,8 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
       cites: [CITE.menzCoexistence, CITE.guideline],
     },
     {
-      h2: 'Los estiramientos',
+      h2: '¿Qué estiramientos ayudan con el espolón calcáneo?',
+      keyFact: 'Una revisión sistemática encontró que tanto estirar la pantorrilla como estirar la fascia plantar alivian el dolor de la fascitis plantar en comparación con no estirar (Siriphorn y Eksakulkla, 2020).',
       paragraphs: [
         'El estiramiento es el punto de partida. La guía de 2023 le da al estiramiento de la fascia plantar y de la pantorrilla un grado **A**, el más alto. Una revisión sistemática y metaanálisis de estiramiento para la fascitis plantar encontró que tanto el estiramiento de la pantorrilla como el de la fascia plantar redujeron el dolor en comparación con no estirar (Siriphorn y Eksakulkla, 2020). Empieza con estos tres.',
       ],
@@ -89,7 +91,8 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
       cites: [CITE.guideline, CITE.siriphorn, CITE.digiovanni2003, CITE.riddle],
     },
     {
-      h2: 'Los ejercicios de fortalecimiento',
+      h2: '¿Qué ejercicios de fortalecimiento ayudan con el espolón calcáneo?',
+      keyFact: 'En un ensayo con 48\u00A0personas, el grupo de las elevaciones de talón anotó 29\u00A0puntos mejor en el Foot Function Index que el grupo que solo estiraba, a los tres meses (Rathleff y colegas, 2015).',
       paragraphs: [
         'El estiramiento solo suele ser suficiente en las primeras semanas. Cuando el dolor de la mañana empiece a ceder, añadir fortalecimiento de la pantorrilla aumenta la capacidad que la cadena del talón necesita. La guía le da al entrenamiento de fuerza un grado **B**, el segundo más alto. En el único ensayo diseñado para probar las elevaciones de talón en la fascitis plantar, 48\u00A0personas se dividieron en un grupo de elevaciones con carga y un grupo de solo estiramientos. El grupo de elevaciones de talón mejoró 29\u00A0puntos más en el Foot Function Index a los tres meses (Rathleff y colegas, 2015).',
         'Empieza en el nivel más fácil y sube solo cuando se sienta fácil durante dos sesiones seguidas. La progresión de abajo va desde el trabajo sentado hasta la elevación con toalla y carga del ensayo.',
@@ -147,7 +150,7 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
-      h2: 'Cómo progresar en los ejercicios',
+      h2: '¿Cómo progresar en los ejercicios para el espolón calcáneo?',
       paragraphs: [
         'Progresa por cómo se siente, no por el calendario. La regla es: si el nivel actual se sintió fácil durante dos sesiones seguidas, sube un paso. Si el dolor de la mañana es peor después de una sesión, quédate en el nivel actual o baja un paso.',
       ],
@@ -270,6 +273,16 @@ export const HEEL_SPUR_EXERCISES_ES: Guide = {
       q: '¿Caminar es bueno para el espolón calcáneo?',
       cites: [CITE.guideline],
       a: 'Caminar en sí no es el problema. Caminar con zapatos de buen soporte a un ritmo cómodo por lo general está bien y es mejor que el descanso total. El dolor viene de la fascia plantar y la pantorrilla bajo el espolón, y caminar con moderación mantiene activa la bomba de la pantorrilla. Si caminar empeora tu dolor de la mañana al día siguiente, acorta la distancia y recupérala poco a poco.',
+    },
+    {
+      q: '¿Qué ejercicios debo evitar si tengo un espolón calcáneo?',
+      cites: [CITE.guideline],
+      a: 'Evita movimientos de alto impacto como correr, saltar y la pliometría mientras el talón esté inflamado; el golpeteo repetido sobre una superficie dura tensiona el tejido junto al espolón. Los descensos profundos de talón desde la orilla de un escalón también pueden sobrecargar una fascia irritada. La guía de 2023 respalda ajustar la carga en lugar de prohibir ejercicios; la prueba es si el talón se siente peor a la mañana siguiente.',
+    },
+    {
+      q: '¿Qué dispara el dolor de un espolón calcáneo?',
+      cites: [CITE.guideline, CITE.riddle],
+      a: 'El golpeteo repetido sobre una superficie dura es el disparador más común: correr, saltar o estar de pie varias horas irrita el tejido blando junto al espolón igual que irrita la fascitis plantar normal. Un aumento repentino de actividad, zapatos gastados y caminar descalzo sobre baldosa también pueden provocarlo. Ajustar la carga, no el hueso, es lo que calma un brote.',
     },
   ],
   redFlags: {

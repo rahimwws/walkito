@@ -64,7 +64,8 @@ export const ARCH_PAIN_EN: Guide = {
       cites: [CITE.guideline, CITE.posteriorTibialReview],
     },
     {
-      h2: 'Exercises that help arch pain',
+      h2: 'Which exercises help arch pain?',
+      keyFact: 'In the 2023 heel pain guideline, plantar fascia and calf stretching earn the top evidence grade, A, while strength training is graded one level lower, B (Koc and colleagues, 2023).',
       paragraphs: [
         'The exercises below target the arch itself and the calf muscles that pull on it. They apply best when arch pain is related to plantar fasciitis, flat feet, or general overuse. For PTTD or nerve-related arch pain, a clinician should direct the exercise plan. If any exercise takes your pain to **6/10 or more**, stop for the day.',
         'These are Walkito\'s starting doses, not research protocol doses. The 2023 heel pain guideline grades plantar fascia and calf stretching A, and strength training B. The short foot exercise and foot roll have thinner evidence on their own. [How these guides are written](/about/).',
@@ -207,6 +208,18 @@ export const ARCH_PAIN_EN: Guide = {
     {
       q: 'Is arch pain the same as plantar fasciitis?',
       a: 'Not always. Plantar fasciitis is one specific cause of arch pain, the most common one. But arch pain can also come from flat feet, posterior tibial tendon dysfunction, high arches, overuse, or nerve irritation. All plantar fasciitis involves arch or heel pain, but not all arch pain is plantar fasciitis. The pattern of pain, especially its timing, helps tell them apart.',
+    },
+    {
+      q: 'What could be causing pain in the outside arch of my foot?',
+      a: 'The exercises here target the inner arch, so outer-arch pain usually has a different cause. It can come from peroneal tendon irritation (the tendons behind the outer ankle) or cuboid syndrome, where a small midfoot bone shifts slightly, often after a sprain or overuse. Both need a different exam and plan than plantar fascia stretching, so see a clinician.',
+    },
+    {
+      q: 'Does arch pain go away on its own?',
+      a: 'Sometimes. A short bout of overuse pain often eases within days once you cut back on the load that caused it. Pain from plantar fasciitis, flat feet or posterior tibial tendon dysfunction tends to stick around or return without stretching and strength work. If it hasn\u2019t improved after several weeks of rest and a lighter load, see a clinician.',
+    },
+    {
+      q: 'Should I massage arch pain?',
+      a: 'Gentle rolling can help between sessions, though no study here tested massage alone. Roll the sole slowly over a massage ball or frozen water bottle, firm pressure but never enough to wince. It\u2019s a comfort measure. It doesn\u2019t address the cause itself. If pressing one spot sharply reproduces the pain, get it checked instead of pressing harder.',
     },
   ],
   redFlags: {

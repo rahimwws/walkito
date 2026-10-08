@@ -69,6 +69,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
     },
     {
       h2: 'What about nerve entrapment: tarsal tunnel syndrome and Baxter\'s nerve?',
+      keyFact: 'A 2025 narrative review found Baxter\'s nerve entrapment may account for up to 20% of chronic heel pain cases (Tedeschi, 2025).',
       paragraphs: [
         'The tibial nerve passes through a space behind the inner ankle called the tarsal tunnel. Compression there, tarsal tunnel syndrome, causes burning, tingling, or numbness along the sole and heel. Tu (2018) describes tarsal tunnel pain as typically worse with standing, walking, or running, and eased by rest and elevation. That pattern differs from plantar fasciitis, but it is not the same as true rest pain, so tarsal tunnel does not always fit the pattern this page is about.',
         'Baxter\'s nerve is the first branch of the lateral plantar nerve, a smaller nerve near the inner heel. When it is compressed, it produces sharp or burning pain at the medial heel. The pain often worsens with activity over the course of the day, but can also appear at rest. A 2025 review states Baxter\'s nerve entrapment may account for up to 20% of chronic heel pain cases (Tedeschi, 2025).',
@@ -78,6 +79,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
     },
     {
       h2: 'Can inflammatory arthritis cause heel pain at night?',
+      keyFact: 'In a 5-to-15-year follow-up of 174 people with plantar fasciitis, bilateral heel pain was a significant predictor of longer symptom duration (Hansen and colleagues, 2018).',
       paragraphs: [
         'Spondyloarthropathies, a group of inflammatory conditions including ankylosing spondylitis and psoriatic arthritis, can cause enthesitis, inflammation where a tendon or ligament attaches to bone. The heel is a common site. The pain is often bilateral, may be present at the Achilles insertion or under the heel, and is accompanied by prolonged morning stiffness (over 30 minutes) that improves with movement.',
         'In a 5-to-15-year follow-up of 174 people with plantar fasciitis, bilateral heel pain was a significant predictor of longer symptom duration. The authors noted that unrecognised systemic inflammatory disease could partly explain that finding.',
@@ -95,7 +97,8 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
       cites: [CITE.guideline],
     },
     {
-      h2: 'Night splints: what they do and when they help',
+      h2: 'Do night splints help heel pain?',
+      keyFact: 'The 2023 heel pain guideline grades night splints A, its top evidence grade, for plantar fasciitis, typically used for one to three months (Koc and colleagues, 2023).',
       paragraphs: [
         'A night splint is a brace that holds the ankle at 90 degrees while you sleep. The idea is to prevent the calf and plantar fascia from shortening overnight, so the first step in the morning is less painful.',
         'The 2023 heel pain guideline grades night splints **A** for plantar fasciitis. They are typically recommended for 1 to 3 months when first-step pain has not improved with stretching and loading exercises alone. They do not address nerve pain, stress fractures, or inflammatory conditions.',
@@ -183,6 +186,15 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
       q: 'Should I see a doctor for heel pain at night?',
       cites: [CITE.tuHeelPain, CITE.patelStressFracture],
       a: 'Yes. Night heel pain that wakes you, does not improve with movement, involves burning or tingling, or is in both heels with prolonged stiffness should be assessed by a clinician. These patterns can indicate a stress fracture, nerve entrapment, or inflammatory disease that exercises alone will not address.',
+    },
+    {
+      q: 'What to put on my heel for pain at night?',
+      a: 'Ice is the most common first step: an ice pack or a frozen water bottle applied to the sore spot can ease surface soreness. None of these address a stress fracture, nerve entrapment, or inflammatory arthritis, the conditions most linked to true night pain, so a cold pack is not a substitute for finding the cause.',
+    },
+    {
+      q: 'What should you not do if your heel hurts at night?',
+      cites: [CITE.tuHeelPain, CITE.patelStressFracture],
+      a: 'Do not assume it is plantar fasciitis and push through activity if the pain does not fit the first-step-then-better pattern. Do not ignore pain that wakes you, worsens with continued walking, or comes with burning, tingling, or swelling. Self-treating rest pain with stretches or night splints can delay diagnosis of a stress fracture, nerve entrapment, or inflammatory arthritis.',
     },
   ],
   redFlags: {

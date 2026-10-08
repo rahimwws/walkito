@@ -79,7 +79,7 @@ export const EX_FOOT_ROLL: Guide = {
       ],
     },
     {
-      h2: 'Common mistakes with the foot roll',
+      h2: 'What are the common mistakes with the foot roll?',
       paragraphs: [
         'Pressing too hard. Harder is not better. If you push until the pain hits 6/10 or you are grimacing, you may be irritating the fascia rather than settling it. Back off to firm, steady pressure.',
         'Rolling too fast. Quick back-and-forth movement skips over the tissue. Roll slowly, about one full pass per second, so each spot gets sustained pressure.',
@@ -88,7 +88,7 @@ export const EX_FOOT_ROLL: Guide = {
       cites: [CITE.guideline],
     },
     {
-      h2: 'When to roll and when to skip it',
+      h2: 'When should you roll your foot, and when should you skip it?',
       paragraphs: [
         'Roll after a long day on your feet, after a session of calf raises, or any time the sole feels tight. In Walkito, the foot roll appears on recovery days and at the end of sessions as a cooldown.',
         'Skip rolling if the heel is acutely swollen, red or warm. Those signs can point to something other than plantar fasciitis, and pressing into an inflamed area can make it worse. See a clinician first. For the full set of exercises the guideline recommends, see [plantar fasciitis exercises](/plantar-fasciitis-exercises/) or [feet that hurt from standing all day](/feet-hurt-standing-all-day/).',

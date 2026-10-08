@@ -63,6 +63,7 @@ export const HAGLUNDS_EN: Guide = {
     },
     {
       h2: "What exercises help with Haglund's deformity?",
+      keyFact: 'In a pilot study of 27 people with insertional Achilles pain, floor-level eccentric loading that avoided deep dorsiflexion gave good results in 67% of cases (Jonsson and colleagues, 2008).',
       paragraphs: [
         "Exercise for Haglund's has two goals: reduce calf tightness that pulls on the heel, and build calf strength that helps the tendon tolerate load. Both are borrowed from the Achilles tendinopathy literature. No trial has tested them for Haglund's specifically.",
         'The key modification is floor level only. For insertional Achilles pain, a 2008 pilot study of 27 people tested eccentric loading without dorsiflexion past neutral, meaning the heel never dropped below the floor. Good results were reported in 67% of cases. Standard heel drops over a step edge, which let the heel sink below the edge and push the ankle into deep dorsiflexion, can compress the tendon against the bump and make symptoms worse.',
@@ -122,6 +123,7 @@ export const HAGLUNDS_EN: Guide = {
     },
     {
       h2: 'How much pain is okay during exercises?',
+      keyFact: 'The pain-monitoring model allows pain up to about 5 out of 10 during loading, as long as it returns to baseline by the next morning and does not worsen week over week (Silbernagel and colleagues, 2007).',
       paragraphs: [
         'The Silbernagel 2007 pain-monitoring model for Achilles tendinopathy allowed pain up to about 5 out of 10 during loading, provided it returned to baseline by the next morning and did not worsen week over week. This model was tested for midportion Achilles pain, not specifically for Haglund\'s or insertional cases, but it is the most cited pain threshold in the Achilles literature.',
         "For insertional problems associated with Haglund's, be more cautious. The bump adds a mechanical element that midportion tendinopathy does not have: compression of the bursa and tendon against the bone. If exercises provoke a sharp pain at the back of the heel that does not settle quickly, step down the load or switch to isometric holds before trying eccentric work again.",
@@ -130,6 +132,7 @@ export const HAGLUNDS_EN: Guide = {
     },
     {
       h2: "When is surgery considered for Haglund's deformity?",
+      keyFact: 'A 2022 systematic review of 20 studies found both open and endoscopic surgery improved AOFAS function scores, with endoscopic techniques showing shorter recovery (Yuen and colleagues, 2022).',
       paragraphs: [
         'Surgery is discussed after at least six months of conservative management have not provided adequate relief. The 2022 systematic review by Yuen and colleagues included 20 studies and found that both open and endoscopic techniques improved AOFAS (American Orthopaedic Foot and Ankle Society) scores. Endoscopic approaches showed shorter recovery times.',
         "The surgery typically involves removing the bony prominence (calcaneoplasty), excising the inflamed bursa, and in some cases debriding or reattaching the Achilles tendon. Complications can include wound healing problems, nerve injury, and tendon weakening. The decision is between you and your surgeon.",
@@ -182,6 +185,16 @@ export const HAGLUNDS_EN: Guide = {
       q: 'What is retrocalcaneal bursitis?',
       cites: [CITE.yuenHaglund],
       a: "Retrocalcaneal bursitis is inflammation of the fluid-filled sac (bursa) between the Achilles tendon and the heel bone. Haglund's deformity makes it more likely because the prominent bone pinches the bursa during ankle movement. The pain is deep, at the back of the heel, and often worsened by shoes and dorsiflexion.",
+    },
+    {
+      q: "What happens if Haglund's deformity is left untreated?",
+      cites: [CITE.chooRearfoot, CITE.yuenHaglund],
+      a: "Without changes, the bump does not shrink and the shoe friction that caused it usually continues, so pain and retrocalcaneal bursitis can keep building. Long-standing irritation also raises the risk of insertional Achilles tendinopathy. The bony growth itself does not reverse with conservative care, though symptoms often ease once footwear and loading are changed.",
+    },
+    {
+      q: "Is walking bad for Haglund's deformity?",
+      cites: [CITE.chooRearfoot],
+      a: "Walking itself is not harmful, and staying active is usually fine. What matters is the shoe: a rigid or low-cut heel counter that rubs the bump can aggravate pain and bursitis with every step. Switching to shoes with a soft or open heel is usually more useful than resting completely.",
     },
   ],
   redFlags: {

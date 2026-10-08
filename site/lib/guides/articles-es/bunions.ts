@@ -31,6 +31,7 @@ export const BUNIONS_ES: Guide = {
     },
     {
       h2: '¿Qué dice la investigación sobre los ejercicios para juanetes?',
+      keyFact: 'Un ensayo con 60 mujeres (120 pies) que comparó un mes de férula nocturna, ejercicio o estimulación eléctrica encontró que los tres mejoraron el dolor y la función, pero la férula superó al ejercicio y la electroterapia (Külünkoğlu y colegas, 2021).',
       paragraphs: [
         'La mejor evidencia viene de un puñado de ensayos pequeños. Ninguno es grande, y ninguno siguió a los participantes más de un año.',
         'Kim y colegas (2015) asignaron al azar a 24\u00A0personas con hallux valgus leve a moderado a una órtesis sola o a una órtesis más ejercicios de separación de dedos durante 8\u00A0semanas. El grupo de ejercicio redujo su ángulo de hallux valgus un promedio de 3,4\u00A0grados y aumentó el área transversal del músculo abductor del dedo gordo. El grupo con solo órtesis no mostró cambios significativos en ninguna de las dos medidas. El estudio fue pequeño e incluyó sobre todo adultos jóvenes con juanetes leves.',
@@ -43,6 +44,7 @@ export const BUNIONS_ES: Guide = {
     },
     {
       h2: '¿Funcionan los separadores de dedos para los juanetes?',
+      keyFact: 'En un estudio con 30 mujeres con hallux valgus doloroso, una plantilla con separador de dedos redujo el dolor de forma significativa en tres meses, mientras que un grupo separado con férula nocturna no mejoró (Tehraninasr y colegas, 2008).',
       paragraphs: [
         'Los separadores de dedos se colocan entre el dedo gordo y el segundo dedo. Reducen la fricción, alivian la presión sobre el juanete y empujan suavemente el dedo gordo lejos del segundo dedo mientras se usan.',
         'Tehraninasr y colegas (2008) estudiaron a 30\u00A0mujeres con hallux valgus doloroso durante 3\u00A0meses. Un grupo usó una plantilla con un separador de dedos integrado, y otro grupo usó una férula nocturna. El dolor bajó significativamente en el grupo del separador pero no en el grupo de la férula nocturna. Ninguno de los dos grupos tuvo un cambio estadísticamente significativo en el ángulo de hallux valgus. El ensayo de Abdalbary combinó un separador de dedos con terapia manual y ejercicio, así que no aísla lo que hizo el separador por sí solo.',
@@ -51,7 +53,7 @@ export const BUNIONS_ES: Guide = {
       cites: [CITE.abdalbary, CITE.tehraninasr],
     },
     {
-      h2: 'Los ejercicios',
+      h2: '¿Qué ejercicios ayudan con los juanetes?',
       paragraphs: [
         'Estos ejercicios apuntan al abductor del dedo gordo y a los músculos intrínsecos más pequeños del pie. El objetivo es restaurar el soporte muscular alrededor de la articulación metatarsofalángica del dedo gordo. Ninguno revertirá la deformidad ósea, pero dos de ellos tienen respaldo en ensayos para mejorar el tamaño muscular y reducir los síntomas en el hallux valgus leve.',
       ],
@@ -159,6 +161,14 @@ export const BUNIONS_ES: Guide = {
     {
       q: '¿Qué causa los juanetes?',
       a: 'Los juanetes son resultado de una combinación de genética, estructura del pie y calzado. Los antecedentes familiares de hallux valgus son el factor de riesgo más fuerte. Los zapatos angostos y los tacones no causan juanetes por sí solos, pero pueden acelerar el avance en alguien que tiene la predisposición.',
+    },
+    {
+      q: '¿Es mejor caminar descalzo para los juanetes?',
+      a: 'Ningún ensayo ha probado caminar descalzo contra usar zapatos en juanetes. Andar descalzo quita la presión de una puntera angosta sobre la articulación, lo que puede aliviar los síntomas en algunas personas. No revierte el ángulo del hueso. Sobre terreno duro o irregular, caminar descalzo puede cargar el pie de otra forma, así que hazlo de manera gradual en lugar de cambiar todo de golpe.',
+    },
+    {
+      q: '¿A qué edad salen los juanetes?',
+      a: 'No hay una edad única. Los juanetes suelen formarse poco a poco durante años y se notan más a partir de la mediana edad. Una forma juvenil menos común aparece en la adolescencia, muchas veces con antecedentes familiares marcados. Los zapatos angostos y los tacones altos aceleran la progresión en cualquiera que ya sea propenso a tenerlos, a cualquier edad.',
     },
   ],
   redFlags: {

@@ -51,6 +51,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     },
     {
       h2: '¿Qué causa la fascitis plantar y a quién le da?',
+      keyFact: 'En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la dorsiflexión de tobillo reducida multiplicó por 23,3 las probabilidades de fascitis plantar, el factor de riesgo más fuerte medido (Riddle y colegas, 2003).',
       paragraphs: [
         'La fascitis plantar aparece cuando la fascia recibe más carga de la que puede aguantar y recuperar. La carga puede ser mucha de golpe (subir de repente los kilómetros que corres) o constante en el tiempo (estar de pie en un piso duro todo el día).',
         'Un estudio de casos y controles pareados, con 50\u00A0personas con fascitis plantar y 100\u00A0controles, encontró que una dorsiflexión de tobillo reducida era el factor de riesgo independiente más fuerte, con una razón de probabilidades de 23,3. En otra serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenía una contractura solo en el gastrocnemio, el músculo más grande y externo de la pantorrilla. Estar mucho tiempo de pie en el trabajo multiplicó por 3,6 las probabilidades. Un índice de masa corporal más alto también las aumentó.',
@@ -70,6 +71,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     },
     {
       h2: '¿Qué ayuda con la fascitis plantar?',
+      keyFact: 'En un ensayo con 48\u00A0personas, las elevaciones de talón con carga y una toalla aliviaron el dolor más rápido que solo estirar a los tres meses, aunque a los doce meses los dos grupos estaban igualados (Rathleff y colegas, 2015).',
       paragraphs: [
         'La guía clínica de 2023 califica cada opción según la fuerza de la evidencia que la respalda. Las recomendaciones más fuertes son el estiramiento, el vendaje, la terapia manual hecha por un profesional y las férulas nocturnas para el dolor de la mañana que no se va. Después viene el entrenamiento de fuerza. La tabla de abajo muestra las opciones principales con su grado en la guía.',
         'Ninguna opción le funciona a todo el mundo. La mayoría empieza con estiramientos y zapatos con buen soporte, añade trabajo de fuerza cuando el dolor inicial baja, y habla con un profesional de la salud sobre las demás opciones si el avance se frena. En un ensayo con 48\u00A0personas, las elevaciones de talón con carga y una toalla bajo los dedos aliviaron el dolor más rápido que solo estirar a los tres meses, aunque a los doce meses los dos grupos estaban igualados. La guía recomienda no usar plantillas ortopédicas solas como única opción a corto plazo, y no añadir ultrasonido terapéutico al estiramiento.',
@@ -96,6 +98,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     },
     {
       h2: '¿Cuánto dura la fascitis plantar?',
+      keyFact: 'En un seguimiento de 174 pacientes, cerca de la mitad ya no tenía síntomas a los cinco años, y el 46 % todavía tenía algo de dolor a los diez años, casi siempre leve (Hansen y colegas, 2018).',
       paragraphs: [
         'Una revisión de 2020 indica que cerca del 90\u00A0% de las personas mejora con cuidados sin cirugía, a menudo en varios meses. Un seguimiento más largo de 174\u00A0pacientes da una imagen más detallada: cerca de la mitad ya no tenía síntomas a los cinco años, y el 46\u00A0% todavía tenía algo de dolor a una media de diez años, aunque la mayoría de ellos solo tenía síntomas leves.',
         'La recuperación depende de cuánto tiempo llevas con ella, de lo que haces al respecto y de algunos factores que no puedes controlar. La cohorte de Hansen de 2018 encontró que ser mujer y tener dolor en los dos talones predecían de forma significativa una recuperación más lenta. El IMC, la edad, el grosor de la fascia y tener un espolón calcáneo no.',
@@ -104,7 +107,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
       cites: [CITE.latt, CITE.hansen],
     },
     {
-      h2: 'Ejercicios y estiramientos para la fascitis plantar',
+      h2: '¿Qué ejercicios y estiramientos ayudan con la fascitis plantar?',
       paragraphs: [
         'Los ejercicios que respalda la guía son de dos tipos: estiramiento (grado A) y entrenamiento de fuerza (grado B). El estiramiento trabaja la fascia plantar y la pantorrilla. El entrenamiento de fuerza le da a la pantorrilla la capacidad de aguantar la carga del día sin sobrecargar la fascia.',
         'En [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/) está la lista completa con dosis de inicio, qué debe sentirse en cada uno y cuándo parar. [Elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/) explica a fondo el ejercicio del ensayo principal de fuerza. Cada ejercicio tiene su propia página:',
@@ -209,6 +212,15 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     {
       q: '¿Cuándo debo ir al médico por dolor de talón?',
       a: 'Consulta a un profesional de la salud si el dolor empezó después de una lesión, si no puedes apoyar el pie, si te duelen los dos talones y tienes otras articulaciones rígidas, si hay entumecimiento u hormigueo, si el talón está rojo o caliente, si te despierta por la noche, o si no mejora después de varios meses de estiramientos y trabajo de pantorrilla. Estos patrones pueden apuntar a otra condición.',
+    },
+    {
+      q: '¿Por qué tengo fascitis plantar solo en un pie?',
+      a: 'La fascitis plantar suele aparecer primero en un pie porque la carga rara vez se reparte igual entre las dos piernas. Una pierna dominante, una cojera antigua, un trabajo que favorece un lado, o un aumento repentino de actividad en una sola pierna, como empezar a correr, pueden sobrecargar una fascia más que la otra. Con el tiempo, los dos pies pueden verse afectados.',
+    },
+    {
+      q: '¿Por qué me dio fascitis plantar de repente?',
+      cites: [CITE.guideline],
+      a: 'La fascitis plantar repentina suele seguir a un cambio brusco de carga, no a una lesión súbita. Un aumento rápido en el kilometraje de carrera, zapatos nuevos, un trabajo nuevo que te mantiene de pie, o subir de peso pueden sobrecargar la fascia más rápido de lo que puede adaptarse. Estar de pie por tiempo prolongado en el trabajo es uno de los factores de riesgo reconocidos en la guía de 2023.',
     },
   ],
   redFlags: {

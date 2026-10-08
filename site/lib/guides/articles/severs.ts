@@ -63,6 +63,7 @@ export const SEVERS_EN: Guide = {
     },
     {
       h2: "What helps Sever's disease? The evidence",
+      keyFact: 'In a trial of 101 children, all three approaches improved pain, and the heel raise group reported more satisfaction at six weeks, though the difference disappeared by three months (Wiegerinck and colleagues, 2016).',
       paragraphs: [
         "The evidence base for Sever's disease is small but growing. The three main options studied are load management (reducing painful activity), heel cups or insoles, and stretching or strengthening exercises. All three have shown benefit, and no single one has been shown to be clearly better than the others at final follow-up.",
         "In a 2016 trial of 101 children aged 8 to 15, Wiegerinck and colleagues compared three approaches: wait-and-see with advice to stop painful activity, a heel raise inlay, and supervised eccentric exercises. All three groups improved significantly. At six weeks, the heel raise group was more satisfied than the other two groups. At three months, no clinically relevant difference remained between the three.",
@@ -83,7 +84,8 @@ export const SEVERS_EN: Guide = {
       cites: [CITE.wiegerinck],
     },
     {
-      h2: 'Heel cups and insoles',
+      h2: 'Do heel cups and insoles help Sever\'s disease?',
+      keyFact: 'A crossover trial of 51 boys found a heel cup cut pain by about 80 percent versus a heel wedge, suggesting impact absorption matters more than the angle of the heel lift (Perhamre and colleagues, 2011).',
       paragraphs: [
         "Heel cups are among the most practical interventions for Sever's disease. They cushion the heel, absorb impact and reduce the peak forces reaching the growth plate. The Perhamre crossover trial found that a heel cup reduced pain by about 80 percent compared to a heel wedge in 51 boys, which suggests that impact absorption at the heel matters more than simply changing the heel angle.",
         "In the James factorial trial, heel raises (a type of insert that lifts the heel) showed a small short-term advantage over prefabricated orthoses at 2 months, but no advantage at 12 months. Custom orthoses were not tested in either of these trials.",
@@ -92,7 +94,7 @@ export const SEVERS_EN: Guide = {
       cites: [CITE.perhamreHeelCup, CITE.jamesSever],
     },
     {
-      h2: 'Calf stretching and strengthening',
+      h2: 'Does calf stretching help Sever\'s disease?',
       paragraphs: [
         'Tight calf muscles increase the pull on the growth plate, and calf tightness is one of the recognized risk factors for calcaneal apophysitis. Stretching the gastrocnemius (the outer calf muscle, stretched with the knee straight) and the soleus (the deeper calf muscle, stretched with the knee bent) is a standard recommendation.',
         "In the Wiegerinck trial, the exercise group performed an eccentric calf strengthening program under physiotherapist supervision. This group improved as much as the heel raise and wait-and-see groups. Stretching and gentle strengthening are safe and may help by reducing the traction on the growth plate, but the evidence does not show them to be superior to heel cups or load management alone.",
@@ -148,6 +150,14 @@ export const SEVERS_EN: Guide = {
     {
       q: "Can Walkito help my child with Sever's disease?",
       a: "Walkito is designed for adults with heel and arch pain. Its exercise doses, pain thresholds and progression rules are built for adult bodies, not for a child's open growth plate. A paediatric sports medicine clinician or podiatrist is the right source for a child's exercise program.",
+    },
+    {
+      q: "What can be mistaken for Sever's disease?",
+      a: "Achilles tendon irritation, a calcaneal stress fracture, and retrocalcaneal bursitis can all look similar in a growing child. A positive squeeze test (pain when the sides of the heel are pressed together), an age of 8 to 15, and a recent jump in training point toward Sever's disease instead. A single injury, swelling, or pain worsening at one specific spot needs a clinician to rule out a fracture.",
+    },
+    {
+      q: "How do you KT tape Sever's disease?",
+      a: "There's no trial testing kinesiology tape for Sever's disease, so no pattern is proven better than heel cups or load management. Some clinicians tape along the Achilles and under the heel to reduce the pull on the growth plate. If you want to try it, have a physiotherapist or athletic trainer apply it and show you the pattern.",
     },
   ],
   redFlags: {

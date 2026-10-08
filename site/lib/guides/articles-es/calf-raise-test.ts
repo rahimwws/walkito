@@ -32,6 +32,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
   sections: [
     {
       h2: '¿Qué mide el test de elevación de talón a una pierna?',
+      keyFact: 'En un estudio de casos y controles con 20\u00A0atletas, los que tenían síndrome de estrés tibial medial (periostitis tibial) mostraron menos resistencia de pantorrilla que los controles sanos (Madeley y colegas, 2007).',
       paragraphs: [
         'El test mide la resistencia de los flexores plantares, los músculos que empujan el pie hacia abajo y levantan el talón del piso. Los principales son el gastrocnemio (el músculo más grande y externo de la pantorrilla) y el sóleo (el más profundo, debajo de él). Juntos se unen al hueso del talón a través del tendón de Aquiles.',
         'Aquí, resistencia quiere decir cuántas repeticiones puedes hacer antes de que la pantorrilla se canse y el talón ya no suba lo suficiente o no siga el ritmo. El número muestra la capacidad de aguantar el trabajo durante decenas de repeticiones, que se parece más a lo que hace la pantorrilla al caminar y correr que un solo empujón con mucho peso.',
@@ -51,7 +52,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
       cites: [CITE.hebertLosier],
     },
     {
-      h2: 'Cómo hacer el test de elevación de talón en casa',
+      h2: '¿Cómo hacer el test de elevación de talón en casa?',
       paragraphs: [
         'No necesitas una tabla inclinada. En el piso plano el test es un poco más fácil, así que tu número puede salir unas repeticiones más alto que los valores publicados. No pasa nada: sirve igual para ver cómo cambias con el tiempo y para comparar izquierda y derecha.',
         'Párate cerca de una pared y toca la pared con la punta de los dedos a la altura del hombro. Levanta un pie. Pon una app de metrónomo a 60\u00A0pulsaciones por minuto. En el primer pulso, sube en puntas lo más alto que puedas. En el segundo, baja el talón al piso. Sigue hasta que no puedas mantener el ritmo, el talón apenas suba o se te doble la rodilla.',
@@ -74,6 +75,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
     },
     {
       h2: '¿Cuántas elevaciones de talón a una pierna deberías poder hacer?',
+      keyFact: 'En 1995, un estudio con 203\u00A0adultos de 20 a 59\u00A0años propuso 25\u00A0repeticiones como referencia de un rendimiento normal en la elevación de talón a una pierna (Lunsford y Perry, 1995).',
       paragraphs: [
         'La tabla de abajo muestra la mediana de repeticiones de elevación de talón a una pierna según la edad y el sexo, de Hebert-Losier 2017. Son estimaciones del modelo para una persona con un nivel de actividad física moderado (nivel 4 en una escala de 6 puntos) y un índice de masa corporal de 24,2, con el promedio de las dos piernas.',
         'Los niveles de actividad más altos suman de cinco a nueve repeticiones a la mediana. En 1995, Lunsford y Perry evaluaron a 203 adultos de 20 a 59 años y recomendaron 25 repeticiones como criterio de un resultado normal. Los datos de Hebert-Losier respaldan esa cifra como una referencia razonable para adultos, aunque es una mediana de la población, no una línea de aprobado o reprobado. Tu propio punto de partida y hacia dónde vas importan más que cualquier número suelto.',
@@ -97,6 +99,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
     },
     {
       h2: '¿Tu pierna izquierda y la derecha deberían dar lo mismo?',
+      keyFact: 'En un estudio con 78\u00A0personas tras una rotura del tendón de Aquiles, la simetría promedio a los seis meses fue del 84\u00A0% en repeticiones pero solo del 61\u00A0% en trabajo total, lo que muestra que contar repeticiones puede subestimar un déficit (Silbernagel y colegas, 2010).',
       paragraphs: [
         'Casi lo mismo, sí. En el estudio de Hebert-Losier, la mediana de la diferencia entre la derecha y la izquierda fue de una repetición, y el error de medición típico fue de unas dos repeticiones. Una diferencia tan pequeña es ruido.',
         'En la rehabilitación de la pierna, un índice de simetría entre extremidades (LSI) del 90\u00A0% o más es la referencia habitual de una función normal. El LSI es el lado más débil dividido entre el más fuerte, por 100. Menos del 90\u00A0% quiere decir que un lado es más de un 10\u00A0% más débil. Silbernagel y colegas usaron este umbral en 78 pacientes después de una rotura del tendón de Aquiles: a los 6\u00A0meses, los pacientes tenían en promedio un LSI del 84\u00A0% en repeticiones y solo del 61\u00A0% en trabajo total, lo que muestra que contar solo las repeticiones puede subestimar un déficit.',
@@ -123,7 +126,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
       cites: [CITE.guideline, CITE.rathleff, CITE.achillesGuideline, CITE.madeley],
     },
     {
-      h2: 'Cómo mejorar un resultado bajo en el test de elevación de talón',
+      h2: '¿Cómo mejorar un resultado bajo en el test de elevación de talón?',
       paragraphs: [
         'Los ejercicios que construyen la resistencia de la pantorrilla en la rehabilitación son los mismos que suben tu resultado en el test. Empieza en el nivel que va con dónde estás ahora, y sube cuando dos sesiones seguidas se sientan fáciles.',
         'Si puedes hacer menos de 10 elevaciones a una pierna, empieza con elevaciones sentado o de pie con los dos pies. Pasa a la elevación de talón sostenida para construir resistencia isométrica, y después a elevaciones a una pierna en el piso. Hacerlas en un escalón aumenta el rango. Ponerte una mochila aumenta la carga. Mira [elevaciones de talón](/es/ejercicios/elevaciones-de-talon/) para el movimiento básico, [elevación de talones con toalla](/es/ejercicios/elevacion-de-talones-con-toalla/) para la versión que además carga la fascia plantar, y [excéntricos de talón](/es/ejercicios/excentricos-de-talon/) para la variante enfocada en el Aquiles.',
@@ -187,6 +190,15 @@ export const CALF_RAISE_TEST_ES: Guide = {
     {
       q: '¿El test de elevación de talón puede diagnosticar fascitis plantar o tendinitis de Aquiles?',
       a: 'No. Un resultado bajo te dice que la pantorrilla se cansa pronto, no por qué. La fascitis plantar, la tendinitis de Aquiles, estar fuera de forma y una lesión reciente pueden dar un número bajo. Los profesionales de la salud combinan el resultado con un examen físico y tu historia. El test mide la resistencia de la pantorrilla, no un problema concreto.',
+    },
+    {
+      q: '¿Cuáles son las señales de una pantorrilla débil?',
+      cites: [CITE.silbernagelHeelRise],
+      a: 'Una pantorrilla débil suele notarse como cansancio rápido en escaleras, un impulso más débil al caminar o correr, o tambaleo en equilibrio a una pierna. La señal objetiva más clara es el test de elevación de talón a una pierna: una diferencia clara entre tu lado izquierdo y el derecho es más confiable que cómo se ve la pantorrilla, y en rehabilitación una diferencia de más del 10 por ciento suele ser señal de alerta.',
+    },
+    {
+      q: '¿Dónde debo sentir la elevación de talón?',
+      a: 'Debes sentir el trabajo en la pantorrilla, tanto en el gastrocnemio, el músculo más voluminoso de arriba, como en el sóleo, más abajo cerca del Aquiles, no en el hueso del talón, el arco ni la rodilla. Si en cambio sientes un dolor agudo en el talón o el Aquiles en lugar de cansancio de pantorrilla, necesitas ajustar la técnica o la carga antes de seguir contando repeticiones.',
     },
   ],
   redFlags: {

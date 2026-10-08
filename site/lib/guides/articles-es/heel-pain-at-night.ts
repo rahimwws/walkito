@@ -54,6 +54,7 @@ export const HEEL_PAIN_AT_NIGHT_ES: Guide = {
     },
     {
       h2: '¿Qué pasa con los nervios atrapados: túnel del tarso y nervio de Baxter?',
+      keyFact: 'Una revisión narrativa de 2025 encontró que el atrapamiento del nervio de Baxter podría explicar hasta el 20\u00A0% de los casos de dolor crónico de talón (Tedeschi, 2025).',
       paragraphs: [
         'El nervio tibial pasa por un espacio detrás del tobillo interno llamado túnel del tarso. La compresión ahí, el síndrome del túnel del tarso, causa ardor, hormigueo o entumecimiento en la planta y el talón. Tu (2018) describe el dolor del túnel del tarso como uno que normalmente empeora al estar de pie, caminar o correr, y se alivia con el reposo y la elevación. Ese patrón difiere de la fascitis plantar, pero no es lo mismo que un dolor verdaderamente en reposo, así que el túnel del tarso no siempre encaja con el patrón del que habla esta página.',
         'El nervio de Baxter es la primera rama del nervio plantar lateral, un nervio más pequeño cerca de la parte interna del talón. Cuando se comprime, produce un dolor agudo o ardiente en la parte medial del talón. El dolor suele empeorar con la actividad a lo largo del día, pero también puede aparecer en reposo. Una revisión de 2025 indica que el atrapamiento del nervio de Baxter podría representar hasta el 20\u00A0% de los casos de dolor crónico de talón (Tedeschi, 2025).',
@@ -63,6 +64,7 @@ export const HEEL_PAIN_AT_NIGHT_ES: Guide = {
     },
     {
       h2: '¿Puede la artritis inflamatoria causar dolor de talón por la noche?',
+      keyFact: 'En un seguimiento de 5 a 15\u00A0años de 174\u00A0personas con fascitis plantar, el dolor bilateral de talón fue un predictor significativo de mayor duración de los síntomas (Hansen y colegas, 2018).',
       paragraphs: [
         'Las espondiloartropatías, un grupo de condiciones inflamatorias que incluyen la espondilitis anquilosante y la artritis psoriásica, pueden causar entesitis, inflamación donde un tendón o ligamento se une al hueso. El talón es un sitio frecuente. El dolor suele ser bilateral, puede estar en la inserción del Aquiles o bajo el talón, y va acompañado de rigidez matutina prolongada (más de 30\u00A0minutos) que mejora con el movimiento.',
         'En un seguimiento de 5 a 15\u00A0años de 174\u00A0personas con fascitis plantar, el dolor bilateral de talón fue un predictor significativo de mayor duración de los síntomas. Los autores señalaron que una enfermedad inflamatoria sistémica no reconocida podría explicar en parte ese hallazgo.',
@@ -80,7 +82,8 @@ export const HEEL_PAIN_AT_NIGHT_ES: Guide = {
       cites: [CITE.guideline],
     },
     {
-      h2: 'Férulas nocturnas: qué hacen y cuándo ayudan',
+      h2: '¿Las férulas nocturnas ayudan con el dolor de talón?',
+      keyFact: 'La guía de 2023 para el dolor de talón les da a las férulas nocturnas un grado A, su grado más alto de evidencia, para la fascitis plantar, usadas normalmente de uno a tres meses (Koc y colegas, 2023).',
       paragraphs: [
         'Una férula nocturna es un aparato que mantiene el tobillo a 90\u00A0grados mientras duermes. La idea es evitar que la pantorrilla y la fascia plantar se acorten durante la noche, para que el primer paso de la mañana duela menos.',
         'La guía de 2023 para el dolor de talón les da a las férulas nocturnas un grado **A** para la fascitis plantar. Se recomiendan normalmente durante 1 a 3\u00A0meses cuando el dolor del primer paso no ha mejorado solo con estiramientos y ejercicios de carga. No abordan el dolor de nervios, las fracturas por estrés ni las condiciones inflamatorias.',
@@ -168,6 +171,15 @@ export const HEEL_PAIN_AT_NIGHT_ES: Guide = {
       q: '¿Debo ir al médico por dolor de talón por la noche?',
       cites: [CITE.tuHeelPain, CITE.patelStressFracture],
       a: 'Sí. El dolor nocturno de talón que te despierta, que no mejora con el movimiento, que incluye ardor u hormigueo, o que está en los dos talones con rigidez prolongada, debe ser evaluado por un profesional de la salud. Estos patrones pueden indicar una fractura por estrés, un nervio atrapado o una enfermedad inflamatoria que el ejercicio solo no va a resolver.',
+    },
+    {
+      q: '¿Qué me puedo poner en el talón para el dolor por la noche?',
+      a: 'El hielo es el primer paso más común: una compresa fría o una botella de agua congelada aplicada en la zona dolorida puede aliviar la molestia superficial. Nada de esto trata una fractura por estrés, un nervio atrapado o una artritis inflamatoria, las condiciones más relacionadas con el dolor nocturno verdadero, así que una compresa fría no sustituye encontrar la causa.',
+    },
+    {
+      q: '¿Qué no se debe hacer si el talón duele por la noche?',
+      cites: [CITE.tuHeelPain, CITE.patelStressFracture],
+      a: 'No asumas que es fascitis plantar y sigas con la actividad si el dolor no encaja con el patrón de primer paso que después mejora. No ignores un dolor que te despierta, que empeora al seguir caminando, o que viene con ardor, hormigueo o hinchazón. Tratar por tu cuenta un dolor en reposo con estiramientos o férulas nocturnas puede retrasar el diagnóstico de una fractura por estrés, un nervio atrapado o una artritis inflamatoria.',
     },
   ],
   redFlags: {

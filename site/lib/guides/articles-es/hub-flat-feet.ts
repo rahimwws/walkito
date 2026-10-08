@@ -30,6 +30,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
   sections: [
     {
       h2: '¿Qué es el pie plano?',
+      keyFact: 'Una revisión sistemática de 2023 con 12 estudios de población y unas 16\u00A0000 personas encontró una frecuencia general del 15,6\u00A0%, más alta con un IMC mayor y una edad mayor (Salinas-Torres y colegas, 2023).',
       paragraphs: [
         'El arco del pie, llamado arco longitudinal medial, lo forman los huesos, ligamentos y tendones de la parte interna del pie. En un pie plano, este arco queda bajo o desaparece cuando te paras. El término médico es pes planus.',
         'El pie plano es común. Una revisión sistemática de 2023 juntó 12\u00A0estudios de población con unas 16\u00A0000\u00A0personas y encontró una frecuencia general del 15,6\u00A0%. Solo en adultos, las cifras van de alrededor del 5 al 27\u00A0%, según la población y el método de medición. Un IMC más alto y una edad mayor se asocian con más casos.',
@@ -40,6 +41,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
     },
     {
       h2: '¿Cómo saber si el pie plano es flexible o rígido?',
+      keyFact: 'En un ensayo con 52 personas con pie plano flexible, seis semanas de pie corto, ejercicios de tobillo, fortalecimiento de cadera y estiramientos mejoraron dos medidas de la forma del arco más que en un grupo de control (Brijwasi y Borkar, 2023).',
       paragraphs: [
         'Un pie plano flexible es el que se aplana con tu peso pero recupera el arco cuando el pie no toca el piso. La mayoría de los pies planos son de este tipo. Un pie plano rígido sigue plano estés parado sobre él o no.',
         'Una prueba rápida: siéntate y mira la parte interna del pie. Si ves un arco, párate sobre los dos pies. Si el arco desaparece al pararte pero estaba ahí sentado, el pie plano es flexible. Otra forma: sube en puntas. Si el arco aparece al subir, es flexible.',
@@ -49,6 +51,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
     },
     {
       h2: '¿El pie plano es realmente un problema?',
+      keyFact: 'El Framingham Foot Study, con unos 1900 adultos, no encontró relación entre el pie plano y el dolor de espalda, aunque una marcha en pronación mostró una relación pequeña solo en mujeres (Menz y colegas, 2013).',
       paragraphs: [
         'Para la mayoría de las personas, no. Un pie plano flexible que no duele y no te limita es una variación normal en la forma del pie, no algo que haya que arreglar.',
         'La duda más común es el dolor de espalda. El estudio más grande sobre el tema, el Framingham Foot Study, analizó a unos 1900\u00A0adultos. No encontró relación entre el pie plano y el dolor de espalda baja. En mujeres, un pie que se iba hacia adentro al caminar (marcha en pronación) mostró una relación pequeña con el dolor de espalda, pero la forma del pie en sí, plano o no, no. En hombres, ni la forma del pie ni la marcha se relacionaron con el dolor de espalda.',
@@ -93,7 +96,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
       cites: [CITE.guideline],
     },
     {
-      h2: 'Ejercicios para el pie plano',
+      h2: '¿Qué ejercicios ayudan con el pie plano?',
       paragraphs: [
         'Los ejercicios para el pie plano se enfocan en los músculos que sostienen el arco desde abajo (los músculos intrínsecos del pie) y en los músculos más arriba que controlan cómo apoya el pie (la pantorrilla, la cadera). La mejor evidencia hasta ahora viene de un ensayo con 52\u00A0personas con pie plano flexible, en el que seis semanas de ejercicios combinados cambiaron la forma del arco más que en un grupo de control. Ese ensayo incluyó pie corto, ejercicios de tobillo, fortalecimiento de cadera y estiramientos, hechos juntos.',
         'Una revisión de 2024 sobre el pie corto por sí solo fue menos alentadora: no encontró un cambio claro en general, y solo una mejora en una medida del arco en programas de más de seis semanas. La conclusión es que un programa combinado funciona mejor que un solo ejercicio, y que la paciencia importa.',
@@ -165,6 +168,15 @@ export const HUB_FLAT_FEET_ES: Guide = {
     {
       q: '¿Puedo correr si tengo pie plano?',
       a: 'Muchos corredores tienen pie plano y corren sin problemas. Un arco bajo puede aumentar la pronación, y algunos corredores lo manejan con tenis de estabilidad. Si correr te causa dolor en el arco, el tobillo o la rodilla que no se calma entre carreras, un profesional de la salud puede revisar si el pie plano influye. Fortalecer los músculos del arco y de la cadera es un enfoque razonable, cambies de tenis o no.',
+    },
+    {
+      q: '¿El pie plano se considera una discapacidad?',
+      a: 'Por lo general, no. La mayoría de los pies planos no causan dolor ni limitan la actividad, así que no cumplen por sí solos los criterios de discapacidad. Un pie plano severo o rígido que causa dolor constante y limita caminar o estar de pie puede, en algunos casos, respaldar un reclamo de discapacidad, pero eso depende del programa específico, como el Seguro Social, y de tu función general, no solo de tener pie plano.',
+    },
+    {
+      q: '¿Qué grupo étnico tiene más pie plano?',
+      cites: [CITE.salinasTorres],
+      a: 'El pie plano (pes planus) aparece con más frecuencia en algunos grupos, aunque la investigación es limitada. Una revisión sistemática de 2023 sobre estudios de población encontró que la raza asiática se asoció con más del doble de probabilidades de pie plano, y la raza blanca con aproximadamente la mitad de probabilidades, en comparaciones de subgrupos distintas. Son patrones de población, no una predicción sobre los pies de una persona en particular.',
     },
   ],
   redFlags: {

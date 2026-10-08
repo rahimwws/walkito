@@ -36,6 +36,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
   sections: [
     {
       h2: '¿Por qué te duele el talón después de caminar?',
+      keyFact: 'En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la dorsiflexión de tobillo reducida fue el factor de riesgo más fuerte, por delante de un índice de masa corporal alto y estar de pie mucho tiempo en el trabajo (Riddle y colegas, 2003).',
       paragraphs: [
         'Caminar carga la fascia plantar, la banda gruesa de tejido bajo el pie, con cada paso. Cada vez que el talón golpea el piso y el pie rueda hacia adelante, la fascia se estira y absorbe fuerza. En un pie sano esto no es problema. Pero cuando la fascia está irritada o la pantorrilla está demasiado tensa para absorber su parte, la carga se concentra en la unión del talón.',
         'El resultado es un dolor que aumenta durante o después de una caminata, sobre todo si es más larga de lo habitual. La guía de 2023 describe dos patrones típicos de la fascitis plantar: dolor en los primeros pasos después de descansar, y dolor que aumenta con la actividad prolongada que implica apoyar el peso. Caminar es la actividad prolongada con carga de peso más común que existe.',
@@ -72,7 +73,8 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
       cites: [CITE.waters],
     },
     {
-      h2: 'Los ejercicios que ayudan con el dolor de talón al caminar',
+      h2: '¿Qué ejercicios ayudan con el dolor de talón al caminar?',
+      keyFact: 'Una revisión sistemática encontró que tanto el estiramiento de la fascia plantar como el de la pantorrilla redujeron más el dolor de la fascitis plantar que no estirar en absoluto (Siriphorn y Eksakulkla, 2020).',
       paragraphs: [
         'Los ejercicios son los mismos que la guía de 2023 recomienda para la fascitis plantar. La guía le da al estiramiento su grado más alto, **A**, y al entrenamiento de fuerza una **B**. Se recomiendan los dos. Una revisión sistemática encontró que tanto el estiramiento de la fascia plantar como el de la pantorrilla redujeron el dolor en comparación con no estirar (Siriphorn y Eksakulkla, 2020).',
       ],
@@ -141,7 +143,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
       cites: [CITE.guideline, CITE.siriphorn, CITE.rathleff, CITE.riddle],
     },
     {
-      h2: 'Cómo manejar la distancia al caminar cuando te duele el talón',
+      h2: '¿Cuánto deberías caminar si te duele el talón?',
       paragraphs: [
         'La meta no es dejar de caminar. Es encontrar la distancia que tu talón puede aguantar sin que empeore a la mañana siguiente, y después construir desde ahí.',
         'Un enfoque práctico: camina una distancia que mantenga el dolor de la mañana del día siguiente igual o por debajo de su nivel habitual. Si tu puntuación normal de la mañana es 4 de 10 y una caminata de 30\u00A0minutos la sube a 6 a la mañana siguiente, esa caminata fue demasiado. Acórtala hasta que la puntuación de la mañana se mantenga estable. Después añade cinco minutos cada una o dos semanas, siempre que el dolor de la mañana no se dispare.',
@@ -152,6 +154,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
     },
     {
       h2: '¿Cuánto tiempo hasta que el talón deje de doler después de caminar?',
+      keyFact: 'En datos normativos con 566\u00A0adultos sanos, el número promedio de elevaciones de talón a una pierna fue de unas 23 a 24\u00A0repeticiones, un punto de referencia para seguir la resistencia de la pantorrilla con el tiempo (Hebert-Losier y colegas, 2017).',
       paragraphs: [
         'No hay un plazo fijo. Una revisión de la evidencia clínica indica que cerca del 90\u00A0% de las personas con fascitis plantar mejora con cuidados sin cirugía, a menudo en varios meses (Latt y colegas, 2020). En un seguimiento más largo de 174\u00A0personas, cerca de la mitad todavía tenía algunos síntomas a los 5\u00A0años, aunque la mayoría eran leves para ese momento (Hansen y colegas, 2018).',
         'Lo que sí puedes medir más pronto es si los ejercicios están funcionando. El dolor de la mañana en una escala de 0 a 10 es la señal diaria más clara. La resistencia de la pantorrilla, medida contando cuántas elevaciones de talón a una pierna puedes hacer, sigue la fuerza a lo largo de semanas. Un dato normativo comúnmente citado para adultos es de unas 23 a 24\u00A0repeticiones en promedio, de datos normativos con 566\u00A0adultos sanos (Hebert-Losier y colegas, 2017). Lo que importa es si tu número está subiendo, no si coincide con ese dato.',
@@ -195,6 +198,14 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
       q: '¿Cómo puedo saber si mi dolor de talón es una fractura por estrés?',
       cites: [CITE.patelStressFracture],
       a: 'El dolor de la fractura por estrés normalmente aumenta con la actividad, apareció después de un aumento repentino en el volumen de caminata o carrera, y no se alivia mucho con el descanso. Apretar los lados del talón puede reproducirlo. El dolor de la fascitis plantar suele calmarse cuando entras en calor y es peor en los primeros pasos después de descansar. Si el patrón encaja con una fractura, consulta a un profesional de la salud antes de hacer ejercicios.',
+    },
+    {
+      q: '¿Cómo quitar el dolor de talón justo después de caminar?',
+      a: 'Justo después de caminar, descansa el pie, aplica hielo unos 15 minutos y evita salir de nuevo descalzo sobre piso duro. Eso alivia la molestia inmediata, pero no cambia la causa de fondo. Los ejercicios de esta página, estiramiento de pantorrilla y fascia más trabajo de fuerza progresivo, son lo que cambia cómo el talón aguanta la siguiente caminata.',
+    },
+    {
+      q: '¿Qué causa dolor de talón solo en un pie después de caminar?',
+      a: 'El dolor de talón después de caminar suele aparecer en un solo pie porque la carga durante una caminata rara vez se reparte igual entre las dos piernas. Un paso más largo de un lado, una lesión antigua, zapatos más gastados en un pie, o cargar una bolsa en un solo hombro pueden desviar tensión extra a un talón. Con el tiempo, los dos lados pueden volverse sintomáticos.',
     },
   ],
   redFlags: {

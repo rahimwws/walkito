@@ -130,7 +130,7 @@ Your first steps out of bed are the worst part of the day. A sharp pull right at
 - For heel pain when you run, the same guideline advises changing the load instead of stopping everything, advice graded E because it rests on theory, not trials.
 - See a clinician first if the pain followed an injury, comes with numbness or swelling, wakes you at night, or hurts when you squeeze the heel.
 
-### The exercises for plantar fasciitis, with starting doses
+### Which exercises help plantar fasciitis, and how much should you do?
 
 The exercises for plantar fasciitis in Walkito are stretches for the plantar fascia and calf, calf strength work that builds up in small steps, and a foot roll. These are Walkito’s starting doses, not a prescription. A one-page summary is on [printable exercise sheets](https://walkito.site/printable-exercise-sheets/). [How these guides are written](https://walkito.site/about/).
 
@@ -271,6 +271,14 @@ See a clinician first if the pain followed an injury or a fall, you can’t put 
 
 Walking is usually fine, but it is not an exercise for plantar fasciitis on its own. The 2023 guideline recommends adjusting the load rather than stopping activity. If a walk leaves your first steps the next morning clearly worse, the distance or pace was too much. Stretching before you walk, especially the [plantar fascia stretch](https://walkito.site/exercises/plantar-fascia-stretch/) before your first steps, makes the early minutes easier.
 
+#### What is the worst thing you can do for plantar fasciitis?
+
+Walking barefoot on hard floors right after waking, and jumping straight back into running or jumping while the heel is still flared, are the clearest mistakes. Both load the stiffest, least-recovered fascia with sudden force. The 2023 heel pain guideline recommends adjusting your load instead of pushing through pain.
+
+#### Can plantar fasciitis be massaged out?
+
+No single rub session massages plantar fasciitis away, but gentle self massage can ease stiffness between sessions. The 2023 guideline grades manual therapy done by a clinician, hands-on work on the joint and soft tissue, as A, its top grade, when paired with stretching. Rolling your own sole is comfort care, not a replacement for stretching and calf strength work.
+
 ## Flat feet exercises for fallen arches and arch pain
 
 Language: English · https://walkito.site/flat-feet-exercises/ · published 2026-09-24 · updated 2026-10-07
@@ -293,7 +301,7 @@ You can tell whether flat feet are flexible or rigid with a check that takes a f
 - If the arch stays flat even off the ground, the foot is **rigid**. That is a structural issue exercise will not change. Leave the arch-hold goal aside and see a clinician before starting a program.
 - “Fallen arches” is usually just another name for flat feet. But if one arch has flattened **suddenly**, on one side, as an adult, see a clinician before you exercise it, whatever the check shows.
 
-### The exercises for flat feet, with starting doses
+### Which exercises help flat feet, and how much should you do?
 
 The exercises for flat feet in Walkito start with towel scrunches and big toe lifts, then move up through three versions of the short foot. Toe spreads, band turn-ins, a single-leg hold, hip abduction and calf stretches fill in around them. These are Walkito’s starting doses, not a prescription. Do them barefoot. [How these guides are written](https://walkito.site/about/).
 
@@ -392,6 +400,14 @@ Do the short-foot work on each training day while the arch is your goal. In Walk
 
 See a clinician before you start if the arch stays flat when the foot is off the ground, or if one arch has flattened suddenly as an adult. The same goes for pain that followed an injury, wakes you at night, or comes with numbness, tingling, swelling or warmth. Pain that is sharp or getting worse needs a clinician, not more exercise.
 
+#### Is walking barefoot good for flat feet?
+
+There is no trial testing barefoot walking against shoes for flat feet, so no study here settles it. Walking barefoot does work the small muscles that support the arch, which is why bare-foot arch exercises like the short foot and towel scrunch are done without shoes. If barefoot walking brings on new pain, ease up and try it on soft ground first.
+
+#### What aggravates flat feet?
+
+Long periods of standing or walking, worn-out or unsupportive shoes, carrying extra weight, and skipping the arch and calf work that keeps the supporting muscles strong. None of this changes the arch’s shape, but it can make a flexible flat foot feel more tired or sore by evening. A rigid flat foot that stays painful needs a clinician, not just rest.
+
 ## Why do my feet hurt after standing all day?
 
 Language: English · https://walkito.site/feet-hurt-standing-all-day/ · published 2026-10-04 · updated 2026-10-04
@@ -414,7 +430,7 @@ On the calf and fascia specifically, a 2003 case-control study found two risk fa
 Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
 
-### The exercises for standing-related foot pain, with starting doses
+### Which exercises help feet that hurt from standing?
 
 These exercises target the calf, the plantar fascia and the small muscles that support the arch. They are Walkito's starting doses, not a prescription. If your pain is near the heel and follows the morning-pain pattern of plantar fasciitis, the fuller set of exercises is in [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/). [How these guides are written](https://walkito.site/about/).
 
@@ -500,6 +516,14 @@ Some fatigue and ache after a long standing shift is common and consistent with 
 #### What is the single best thing to try first for foot pain from standing?
 
 Among the self-care options reviewed on this page, calf and plantar fascia stretching carry the top evidence grade (A) in the 2023 heel pain guideline for heel pain specifically, and compression stockings have the strongest controlled trial behind them for standing-related discomfort. Starting with daily calf stretches and trying compression stockings on your next long shift covers both.
+
+#### How long is too long to stand on your feet?
+
+There's no single tested safe limit. Occupational health research finds that discomfort, fatigue, and swelling increase the longer a shift involves standing, with the clearest rise over 8- to 12-hour shifts. Comfort depends more on movement than on an hour count: short seated or walking breaks every hour or so help offset the static load standing puts on your feet.
+
+#### How can I stand for 10 hours without pain?
+
+No single trick removes pain from a 10-hour shift, but combining approaches helps most: wear cushioned, supportive shoes, add a standing mat on hard floors, take short walking breaks every hour to restart circulation, and do daily calf and plantar fascia stretching. Compression stockings reduced discomfort and swelling in one trial of security guards on long shifts.
 
 ## Calf raises for plantar fasciitis: how to do them and how many
 
@@ -650,6 +674,14 @@ A normative study of 566 healthy adults found a median of about 23-24 repetition
 
 Yes. Seated and double-leg heel raises are designed to feel like calf work with little load on the heel, which is why they come before the single-leg towel version. The towel-loaded raise is the version that also puts load through the arch, so a pull near the heel at that stage is expected, as long as it stays below 6/10.
 
+#### Do weak calves cause plantar fasciitis?
+
+The strongest evidence links a tight calf, not weak calves, to plantar fasciitis. A case-control study found reduced ankle flexibility was the top risk factor, and over half of one patient series had a calf contracture. Strength training still helps: in a 48-person trial, heel raises eased pain faster than stretching alone over the first three months.
+
+#### What is the one best exercise for plantar fasciitis?
+
+There is no single best exercise; the 2023 guideline grades stretching (A) and strength training (B) as separate, complementary approaches. The plantar fascia stretch targets first-step pain directly, while heel raises build the calf's long-term capacity. In a 48-person trial, the heel-raise group improved faster than the stretching group at three months, though both were similar by twelve months.
+
 ## Achilles tendonitis exercises: eccentric heel drops, doses and what the research says
 
 Language: English · https://walkito.site/achilles-tendonitis-exercises/ · published 2026-10-04 · updated 2026-10-04
@@ -694,7 +726,7 @@ The protocol shape matters less than loading the tendon consistently. Eccentric 
 Source: Beyer R, Kongsgaard M, Hougs Kjær B, Øhlenschlæger T, Kjær M, Magnusson SP. Heavy slow resistance versus eccentric training as treatment for Achilles tendinopathy: a randomized controlled trial. American Journal of Sports Medicine. 2015;43(7):1704–1711.
 Source: van der Vlist AC, Winters M, Weir A, et al. Which treatment is most effective for patients with Achilles tendinopathy? A living systematic review with network meta-analysis of 29 randomised controlled trials. British Journal of Sports Medicine. 2021;55(5):249–256.
 
-### The exercises, with starting doses
+### Which exercises help Achilles tendonitis, and how much should you do?
 
 The exercises below progress from low-load to high-load, starting with seated heel raises and working up through the ladder. These are Walkito's starting doses alongside the research protocols. [How these guides are written](https://walkito.site/about/).
 
@@ -805,6 +837,18 @@ Stretching is not the primary exercise for Achilles tendinopathy. The trials on 
 
 Recovery is measured in months. The core trials ran loading programs for about three months, tracking results to 12 months. The 2024 guideline notes functional improvement can begin by 2 weeks, but fuller recovery extends well beyond. No trial promises a fixed timeline.
 
+#### What should you not do with Achilles tendonitis?
+
+Avoid sudden increases in running volume or sprint intensity, deep calf stretching if your pain is at the heel-bone attachment, and pushing through pain that stays elevated the next morning or worsens week to week. A sudden pop or snap needs a clinician right away. Complete rest is not required either; pain-monitored activity is usually a better option than stopping completely.
+
+#### Will walking aggravate Achilles tendonitis?
+
+Usually not. Walking is lower-impact than running, and many people with Achilles tendinopathy can keep walking without a flare. Watch for pain that stays elevated the next morning or gets worse week to week; that is the signal to cut back distance or pace, not to stop moving altogether. Steep hills and fast walking on hard surfaces are more likely to irritate it.
+
+#### What is mistaken for Achilles tendonitis?
+
+Retrocalcaneal bursitis, Haglund's deformity, and a partial Achilles tear can all cause similar pain at the back of the heel. A visible bony bump points toward Haglund's deformity, while swelling right at the back of the shoe line suggests bursitis. Any sudden sharp pain with a pop, or an inability to rise on the toes, needs urgent assessment for a tendon tear.
+
 ## Shin splints exercises: what helps and what doesn't
 
 Language: English · https://walkito.site/shin-splints-exercises/ · published 2026-10-04 · updated 2026-10-04
@@ -828,7 +872,7 @@ Source: Menéndez C, Batalla L, Prieto A, Rodríguez MÁ, Crespo I, Olmedillas H
 Source: Winters M, Eskes M, Weir A, Moen MH, Backx FJG, Bakker EWP. Treatment of medial tibial stress syndrome: a systematic review. Sports Medicine. 2013;43(12):1315–1333.
 Source: Moen MH, Holtslag L, Bakker E, et al. The treatment of medial tibial stress syndrome in athletes; a randomized clinical trial. Sports Medicine, Arthroscopy, Rehabilitation, Therapy & Technology. 2012;4:12.
 
-### The exercises, with starting doses
+### Which exercises help shin splints, and how much should you do?
 
 These are exercises from the app's catalogue that overlap with the muscles and risk factors identified in shin splints research. The calf stretches and heel raises are the same ones used in [plantar fasciitis exercises and stretches](https://walkito.site/plantar-fasciitis-exercises/), targeting the same tissues. They are starting doses, not a prescription. Every evidence label below is **early**, because no exercise on this list has been proven to shorten shin splint recovery in a trial. [How these guides are written](https://walkito.site/about/).
 
@@ -928,6 +972,14 @@ Two independent meta-analyses found a consistent set of risk factors: higher BMI
 #### Does a specific exercise prevent shin splints from coming back?
 
 No single exercise has trial-level evidence for preventing shin splints. The risk factors from two meta-analyses, including BMI, arch drop and running experience, point toward gradual training-load management and general lower-leg conditioning instead of one particular move. That is a less satisfying answer than a named exercise, but it is what the research supports.
+
+#### What is commonly mistaken for shin splints?
+
+A tibial stress fracture, chronic exertional compartment syndrome, and posterior tibial tendinopathy can all cause shin pain and get labeled shin splints. A stress fracture tends to hurt at one specific point on the bone, while compartment syndrome causes tightness and numbness that builds during a run and eases soon after stopping. Both need a clinician rather than more loading.
+
+#### Should you walk with shin splints?
+
+Usually yes. Walking is lower-impact than running, and many people with medial tibial stress syndrome can keep walking without a flare, as long as pain stays mild and settles quickly afterward. If walking itself reproduces sharp pain at a single point on the bone, stop and get it checked, since that pattern fits a stress fracture more than shin splints.
 
 ## Heel pain in the morning: why it happens and what to do before your first step
 
@@ -1069,6 +1121,14 @@ See a clinician if both heels hurt and morning stiffness lasts more than 30 minu
 #### How long does first-step pain take to get better?
 
 A 2020 review reports that about 90 percent of people with plantar fasciitis improve with non-surgical care, often within several months (Latt and colleagues, 2020). In a longer follow-up of 174 patients, about half were still symptomatic at 5 years, though most had only minor pain by that point (Hansen and colleagues, 2018). No exercise program can promise a timeline. [How long plantar fasciitis lasts](https://walkito.site/how-long-does-plantar-fasciitis-last/) covers the evidence in more detail.
+
+#### What should you avoid when your heel hurts in the morning?
+
+Avoid walking barefoot on a hard floor right after waking, and avoid skipping the pre-stand stretch. The fascia is stiffest at that moment, so stepping onto tile or hardwood with no cushion is a common trigger for sharp first-step pain. Put on supportive shoes or firm slippers before leaving the bedroom, and stretch while still sitting on the bed.
+
+#### What are some home remedies for heel pain in the morning?
+
+Home remedies for morning heel pain are stretching, ice, and supportive shoes, done daily rather than once. Stretch the fascia and calf before standing, then wear supportive shoes before walking on hard floors. Rolling the sole over a frozen water bottle for a few minutes eases stiffness, though it does not replace seeing a clinician if pain does not improve.
 
 ## How long does plantar fasciitis last? What the evidence actually says
 
@@ -1232,6 +1292,14 @@ See a clinician if pain is not clearly improving after several months of daily s
 
 Yes. In the Hansen 2018 cohort, 32 percent of the symptom-free group had at least one relapse before becoming permanently asymptomatic. The pattern of improvement, relapse, and further improvement is common. Continuing a maintenance dose of calf work and stretching after the pain is gone is one way to reduce the chance of it returning.
 
+#### What are signs that plantar fasciitis is healing?
+
+The clearest sign is less morning pain: first steps feel stiff instead of sharp, and the ache fades faster once you start walking. Many people notice this shift before the pain is fully gone. In the Rathleff trial, heel-raise patients scored measurably better by three months, which is when this shift often appears.
+
+#### What should you not do if plantar fasciitis is not improving?
+
+Don't stop exercising the moment morning pain eases, and don't chase a single shortcut instead of the basics. Pain easing before the fascia has adapted is a common reason symptoms return. If pain stays flat or gets worse for several months despite stretching, strengthening and supportive shoes, that calls for a clinician, not a longer wait.
+
 ## Ball of foot pain: what causes it and what helps
 
 Language: English · https://walkito.site/ball-of-foot-pain/ · published 2026-10-04 · updated 2026-10-04
@@ -1306,7 +1374,7 @@ Rocker-sole shoes reduce forefoot pressure by letting the foot roll through push
 
 Pads and shoes change how load is distributed. Exercise builds the strength and flexibility to handle that load. When [standing all day](https://walkito.site/feet-hurt-standing-all-day/) is part of the picture, both matter.
 
-### The exercises
+### Which exercises help ball of foot pain?
 
 These exercises target two sides of the problem: toe and intrinsic foot strength (to share load during push-off) and calf flexibility (to stop the forefoot from being overloaded). None has been tested in a randomized trial for metatarsalgia specifically. When you tap the ball-of-foot zone on the Walkito pain map during a check-in, the relief session gives toe spreads and a plantar fascia stretch. The toes zone gives toe spreads and seated short foot work.
 
@@ -1374,6 +1442,14 @@ Yes. Metatarsal stress fractures, usually in the second or third metatarsal, pro
 #### What shoes are best for ball of foot pain?
 
 Shoes with a wide toe box, a cushioned sole, and a low heel. Rocker-sole shoes help by letting the foot roll through push-off without bending at the metatarsal joints. Narrow shoes and high heels do the opposite. For Morton's neuroma especially, switching shoes is often the most effective single step.
+
+#### How long does a metatarsalgia flare-up last?
+
+There is no set timeline. A mild flare often settles once you reduce the triggering activity, switch to cushioned, wider shoes, and add a metatarsal pad. Flares linked to an ongoing cause, such as high heels, claw toes, or a tight calf, can persist for months, since no single timeline fits every cause.
+
+#### What are the complications of untreated metatarsalgia?
+
+Left unaddressed, metatarsalgia can change how you walk, since people naturally shift weight off the painful spot and onto other parts of the foot, which can create new areas of pain. Ongoing pressure on the metatarsal heads can also contribute to calluses or, less often, toe deformities like hammer toes. Early shoe changes and metatarsal pads reduce this risk.
 
 ## Foot pain for nurses: what helps on 12-hour shifts
 
@@ -1661,6 +1737,14 @@ During standing: calf stretches against the desk edge (2 holds of 30 seconds eac
 
 Walking activates the calf pump, which pushes blood back up from the lower legs with each step. Standing still takes that pump away, so blood pools in the feet and lower legs, and the muscles hold the same static position instead of contracting and relaxing. A 2017 systematic review confirmed this mechanism and found lower-limb symptoms develop reliably during static standing in laboratory settings.
 
+#### What is the 20-8-2 rule for standing desks?
+
+The 20-8-2 rule is an ergonomics guideline: split each 30-minute block into 20 minutes sitting, 8 minutes standing, and 2 minutes moving. It is a general convention, not a tested formula, but it matches this page's main point: no single position for hours is ideal, and short, frequent changes in posture reduce the static load that causes foot fatigue.
+
+#### Does standing aggravate plantar fasciitis?
+
+It can. Standing keeps the plantar fascia and calf under sustained load without the walking breaks that pump blood and ease tension. Standing most of the workday is an independent risk factor for plantar fasciitis in research on prolonged standing. If you already have plantar fasciitis, a hard-floor standing desk without breaks or stretching can worsen symptoms.
+
 ## Best app for plantar fasciitis: a buyer's guide for 2026
 
 Language: English · https://walkito.site/best-app-for-plantar-fasciitis/ · published 2026-10-04 · updated 2026-10-04
@@ -1762,7 +1846,7 @@ At $44.99 a year or $7.99 a week, the annual price is lower than most competitor
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### How to choose
+### How do you choose the right app for plantar fasciitis?
 
 Start from your situation, not from feature lists.
 
@@ -1816,6 +1900,14 @@ Because it would not be honest. Walkito is new, has no user ratings yet, covers 
 
 Exakt Health and Hinge Health are on both iOS and Android. "Plantar Fasciitis Exercises" is also on both, though it shows in-app purchases on each store. Walkito, Prehab, PlantarCare and Arch are currently iOS only. If you use Android, Exakt Health is the most feature-complete option for foot pain.
 
+#### Do you need an app to do plantar fasciitis exercises?
+
+No. An app is not required. You can do the exercises with research-grade evidence behind them, such as fascia stretching and calf raise progressions, from a printed sheet or a clinician handout. What an app usually adds is reminders, progress tracking, and pain-based pacing rules, which help some people stick with the plan longer, not a different exercise.
+
+#### How often should you use a plantar fasciitis exercise app?
+
+Most plantar fasciitis exercise programs, including the ones graded highest in the 2023 heel pain guideline, are built around daily or near-daily sessions for about three months, not occasional use. An app is most useful when you open it most days, since consistency drives the loading effect, not any single feature inside it.
+
 ## Walkito vs Exakt Health: which one fits you?
 
 Language: English · https://walkito.site/walkito-vs-exakt-health/ · published 2026-10-04 · updated 2026-10-04
@@ -1860,7 +1952,7 @@ Walkito asks about pain location, which side, your activity level, your goal, an
 
 The main difference: Exakt follows a structured level-based progression. Walkito follows a goal-based progression where each morning's check-in adjusts the day's intensity.
 
-### Conditions covered
+### Which conditions does each app cover?
 
 This is where Exakt is clearly stronger. Its rehab plans cover plantar fasciitis, Achilles tendinopathy, ankle sprains, hamstring strains, meniscus tears, runner's knee and more. If your pain is in your knee, hip or hamstring, Walkito does not have a plan for it.
 
@@ -1869,7 +1961,7 @@ Walkito covers plantar fasciitis, flat feet (flexible), heel pain from standing,
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### Price comparison
+### How much do Walkito and Exakt Health cost?
 
 Walkito costs $44.99 per year or $7.99 per week. The annual price works out to about $0.87 per week. No free trial is listed on the App Store, though the terms of use allow for introductory offers.
 
@@ -1893,7 +1985,7 @@ Exakt Health's App Store privacy label lists Identifiers as data used to track y
 
 Both apps collect standard usage data. Neither sells health data. Walkito's on-device approach to Apple Health data is a stricter privacy model.
 
-### Evidence base
+### What evidence is each app built on?
 
 Exakt Health is certified as a medical device in the EU (Germany), which requires evidence of safety and intended purpose. The app is built by licensed sports physiotherapists. It states that its methods are evidence-based but does not list specific studies on its App Store listing or pricing page.
 
@@ -1904,7 +1996,7 @@ Neither app has published its own clinical trial. Both rely on existing research
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### When to pick Exakt Health over Walkito
+### When is Exakt Health the better choice?
 
 Pick Exakt Health if any of the following is true:
 
@@ -1915,7 +2007,7 @@ Pick Exakt Health if any of the following is true:
 - EU medical device certification matters to you.
 - You need the app in French or German.
 
-### When to pick Walkito over Exakt Health
+### When is Walkito the better choice?
 
 Pick Walkito if any of the following is true:
 
@@ -2024,7 +2116,7 @@ For the deeper calf muscle, the soleus, the stretch changes: you bend the back k
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
-### Common mistakes with the plantar fascia stretch
+### What are the common mistakes with the plantar fascia stretch?
 
 Pulling the toes too hard. The stretch should feel firm under the arch, not painful. If you are wincing, you are past the useful range. Ease back until you feel a pull without a sharp edge.
 
@@ -2121,7 +2213,7 @@ No single trial isolates the straight-knee calf stretch on its own for plantar f
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Siriphorn A, Eksakulkla S. Calf stretching and plantar fascia-specific stretching for plantar fasciitis: a systematic review and meta-analysis. Journal of Bodywork and Movement Therapies. 2020;24(4):222–232.
 
-### Common mistakes with the calf stretch
+### What are the common mistakes with the calf stretch?
 
 Bending the back knee. The moment the knee bends, the gastrocnemius goes slack and the stretch moves to the soleus. Keep the back knee locked straight throughout the hold.
 
@@ -2215,7 +2307,7 @@ If you feel nothing, try stepping the back foot closer to the wall and bending t
 
 If the stretch sits in the Achilles tendon itself and feels sharp rather than like a pull, ease off. A stretch should feel firm and sustained, not painful. Pain in the tendon during stretching is different from calf tightness and may point to [Achilles tendonitis](https://walkito.site/achilles-tendonitis-exercises/).
 
-### Common mistakes with the soleus stretch
+### What are the common mistakes with the soleus stretch?
 
 Not bending the knee enough. A slight bend is not enough to release the gastrocnemius. You need a real bend, enough that you can see the back knee tracking forward over the toes.
 
@@ -2307,7 +2399,7 @@ Start with whatever you have. If a tennis ball feels too soft after a few sessio
 
 A frozen water bottle works in place of a ball and adds cold. A foam roller under the foot is gentler still. A specialized foot roller from a sports store does the same job. None of these is proven to work better than the others.
 
-### Common mistakes with the foot roll
+### What are the common mistakes with the foot roll?
 
 Pressing too hard. Harder is not better. If you push until the pain hits 6/10 or you are grimacing, you may be irritating the fascia rather than settling it. Back off to firm, steady pressure.
 
@@ -2317,7 +2409,7 @@ Using it as the only exercise. Rolling feels productive, and it is easy to do at
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
-### When to roll and when to skip it
+### When should you roll your foot, and when should you skip it?
 
 Roll after a long day on your feet, after a session of calf raises, or any time the sole feels tight. In Walkito, the foot roll appears on recovery days and at the end of sessions as a cooldown.
 
@@ -2408,7 +2500,7 @@ Walkito includes a knee-to-wall exercise in the app (2 holds of 30 seconds, each
 
 Ankle rocks and the knee-to-wall exercise work the same range from different angles. Rocks are repetitions through the range. The knee-to-wall hold is a sustained load at end-range. Both help. Walkito programs them on mobility days.
 
-### Common mistakes with ankle rocks
+### What are the common mistakes with ankle rocks?
 
 Letting the heel lift. The heel must stay flat throughout every rep. If it lifts, you have passed the end of your range and the exercise loses its point. Rock only as far as the heel allows.
 
@@ -2478,7 +2570,7 @@ This is why the Rathleff trial used the towel specifically for plantar fasciitis
 
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### How to do the towel heel raise
+### How do you do the towel heel raise?
 
 Roll a small hand towel into a cylinder about the width of your fist. Place it on the edge of a step. Stand on one foot with all five toes on the towel and the ball of the foot on the step. Hold a wall or rail for balance.
 
@@ -2497,7 +2589,7 @@ The trial progressed the load over roughly three months. The tempo stayed the sa
 
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### Common mistakes with the towel heel raise
+### What are the common mistakes with the towel heel raise?
 
 Going too fast is the most common mistake. A three-second descent keeps the calf under tension long enough to build strength. Bouncing up and down turns it into a cardio exercise, not a strength one.
 
@@ -2583,7 +2675,7 @@ Both muscles connect to the heel through the Achilles tendon. Every calf raise a
 
 Source: Patel A, DiGiovanni B. Association between plantar fasciitis and isolated contracture of the gastrocnemius. Foot & Ankle International. 2011;32(1):5–8.
 
-### How to do a standing calf raise (double-leg)
+### How do you do a standing calf raise?
 
 Stand with both feet flat on the floor, about hip-width apart. Hold a wall or chair for balance. Rise up onto the balls of your feet, pushing through the big toes. Hold for a beat at the top, then lower slowly over about three seconds. Both feet share the load.
 
@@ -2626,7 +2718,7 @@ For more on the specific plantar fasciitis protocol, see [towel heel raises](htt
 Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliability and normative values for the standing heel-rise test in healthy adults. Physiotherapy. 2017;103(4):446–452.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### Common mistakes with calf raises
+### What are the common mistakes with calf raises?
 
 Going too fast. A slow descent (about three seconds) is what builds strength. Bouncing at the bottom wastes the eccentric phase, which is the part that does most of the work for tendon adaptation.
 
@@ -2692,7 +2784,7 @@ The most common confusion is between a heel drop and a calf stretch. A stretch h
 
 Source: Alfredson H, Pietilä T, Jonsson P, Lorentzon R. Heavy-load eccentric calf muscle training for the treatment of chronic Achilles tendinosis. American Journal of Sports Medicine. 1998;26(3):360–366.
 
-### How to do eccentric heel drops (straight knee)
+### How do you do eccentric heel drops?
 
 Stand on the edge of a step with the balls of your feet on the step and heels off the edge. Rise up on both feet. Shift your weight to the working leg. Lower that heel slowly over about three seconds, letting it sink below the step. Keep the knee straight. Use both feet to rise back to the top.
 
@@ -2731,7 +2823,7 @@ If your pain is right at the back of the heel bone, do all heel drops on the flo
 Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
 Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
 
-### Common mistakes with eccentric heel drops
+### What are the common mistakes with eccentric heel drops?
 
 Holding the bottom position like a stretch. The benefit is in the slow descent, not in hanging at the bottom. Lower over three seconds, then use both feet to come back up immediately.
 
@@ -2800,7 +2892,7 @@ Tibialis raises mainly target the tibialis anterior, the muscle on the front of 
 
 The exercise also works the smaller toe extensor muscles along the front of the lower leg. It does not load the calf muscles on the back of the leg, which is why it pairs with [calf raises](https://walkito.site/exercises/calf-raises/) to cover both sides of the lower leg.
 
-### How to do a tibialis raise
+### How do you do a tibialis raise?
 
 Stand with your back flat against a wall. Walk your feet forward about 30 centimeters (roughly a foot length) from the wall. Keep your heels on the ground. Lift the front of both feet as high as you can, pulling the toes toward your shins. Hold at the top for a beat. Lower slowly.
 
@@ -2833,7 +2925,7 @@ Tibialis raises and [calf raises](https://walkito.site/exercises/calf-raises/) a
 
 Strengthening one side without the other can create an imbalance. Runners who only do calf raises may still get shin pain because the tibialis anterior cannot keep up with the calf during high mileage. A balanced program includes both.
 
-### Common mistakes with tibialis raises
+### What are the common mistakes with tibialis raises?
 
 Feet too far from the wall. If the heels slide forward, you lose the wall support and the exercise turns into a balance challenge instead of a shin strengthener. About one foot-length away from the wall is right for most people.
 
@@ -2880,7 +2972,7 @@ Standing on one leg is one of the simplest tests of ankle and foot control. It i
 - The Walkito balance goal is 30 seconds on one leg. The test runs every 14 days while the balance goal is active.
 - Closing the eyes removes vision as a balance input, forcing the foot and ankle to do more of the work. The app includes an eyes-closed stand as the next step after the open-eyes hold.
 
-### How to do a single-leg balance hold
+### How do you do a single-leg balance hold?
 
 Stand near a wall or counter. Lift one foot off the ground by bending the knee slightly. Look at a fixed point straight ahead. Let the standing foot wobble. That wobble is the point: the small muscles in the foot and ankle are working to keep you upright.
 
@@ -2916,7 +3008,7 @@ For ankle sprains specifically, a 2018 meta-analysis of 8 studies and 3,577 athl
 Source: Bellows R, Wong CK. The effect of bracing and balance training on ankle sprain incidence among athletes: a systematic review with meta-analysis. International Journal of Sports Physical Therapy. 2018;13(3):379–388.
 Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
 
-### Common mistakes with single-leg balance
+### What are the common mistakes with single-leg balance?
 
 Looking at the floor. Your eyes should be on a fixed point at eye level. Looking down shifts your weight forward and makes the exercise easier, which defeats the purpose.
 
@@ -3016,7 +3108,7 @@ Each version is the same movement. The only change is the load. Standing doubles
 
 Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
 
-### Common mistakes that make the short foot less effective
+### What mistakes make the short foot exercise less effective?
 
 The most common mistake is curling the toes. If the toes flex and grip the floor, the exercise becomes a toe curl and the extrinsic flexors take over. Keep the toes long and relaxed. Some people find it helps to lift the toes briefly, contract the arch, then lay the toes back down.
 
@@ -3127,7 +3219,7 @@ If your main goal is to raise a flat arch, the [short foot exercise](https://wal
 
 Source: Amaha K, Arimoto T, Kitamura N. Effect of toe exercises and toe grip strength on the treatment of primary metatarsalgia. Journal of Orthopaedic Surgery and Research. 2020;15(1):580.
 
-### Common mistakes with towel scrunches
+### What are the common mistakes with towel scrunches?
 
 The most common mistake is lifting the heel off the floor. When the heel lifts, the calf takes over and the foot muscles do less. Press the heel down throughout each rep.
 
@@ -3211,7 +3303,7 @@ For a broader program, see [flat feet exercises](https://walkito.site/flat-feet-
 
 Source: Gooding TM, Feger MA, Hart JM, Hertel J. Intrinsic foot muscle activation during specific exercises: a T2 time magnetic resonance imaging study. Journal of Athletic Training. 2016;51(8):644–650.
 
-### Common mistakes with the toe spread exercise
+### What are the common mistakes with the toe spread exercise?
 
 Lifting the toes off the floor instead of spreading them sideways is the most common mistake. The goal is horizontal spread, not vertical lift. Keep the toes lightly touching the ground.
 
@@ -3308,7 +3400,7 @@ If the big toe cannot extend independently, the windlass does not engage fully. 
 
 The big toe lift exercise does not load the windlass the way a towel calf raise does. What it does is teach the brain to activate the big toe on its own, so the windlass can do its job during normal walking. It is a coordination exercise, not a strength exercise.
 
-### Common mistakes with the big toe lift
+### What are the common mistakes with the big toe lift?
 
 The most common mistake is lifting all five toes together. If all the toes go up at once, the exercise becomes a general toe extension and the independent control is lost. Press the smaller toes down with your fingers if needed until the separation develops.
 
@@ -3411,7 +3503,7 @@ This is why [flat feet exercise programs](https://walkito.site/flat-feet-exercis
 Source: Ling SK, Lui TH. Posterior tibial tendon dysfunction: an overview. The Open Orthopaedics Journal. 2017;11:714–723.
 Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial tendon dysfunction: a systematic review of randomised clinical trials and clinical guidelines. BMJ Open Sport & Exercise Medicine. 2018;4(1):e000430.
 
-### Common mistakes with the band inversion exercise
+### What are the common mistakes with the band inversion exercise?
 
 The most common mistake is rotating the whole leg instead of just the foot. When the hip rotates inward to turn the foot, the tibialis posterior does almost nothing. Keep the knee pointing straight ahead. Only the foot moves at the ankle.
 
@@ -3507,7 +3599,7 @@ Runners benefit because single-leg stance is the default running posture. Every 
 
 People who stand for long hours, especially nurses and retail workers, can also benefit. Prolonged standing fatigues the gluteus medius, and by the end of a shift the hip control weakens. See [feet hurt standing all day](https://walkito.site/feet-hurt-standing-all-day/) for exercises that pair with hip abduction.
 
-### Common mistakes with standing hip abduction
+### What are the common mistakes with standing hip abduction?
 
 Leaning the body to the opposite side is the most common mistake. When you lean away, the body uses momentum and side-bending instead of the gluteus medius. Stay upright. A smaller lift with a straight body is better than a high lift with a lean.
 
@@ -3594,7 +3686,7 @@ The test stops when the heel can no longer lift off the board, the metronome pac
 
 Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliability and normative values for the standing heel-rise test in healthy adults. Physiotherapy. 2017;103(4):446–452.
 
-### How to do the calf raise test at home
+### How do you do the calf raise test at home?
 
 You do not need an incline board. Standing on flat ground gives a slightly easier test, so your count may be a few reps higher than the published norms. That is fine for tracking change over time and comparing left to right.
 
@@ -3649,7 +3741,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
 Source: Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint plantar flexor muscles in athletes with medial tibial stress syndrome: a case-control study. Journal of Science and Medicine in Sport. 2007;10(6):356–362.
 
-### How to improve a low calf raise score
+### How can you improve a low calf raise score?
 
 The exercises that build calf endurance for rehab are the same ones that raise your test score. Start at the level that matches where you are now, and move up once two sessions in a row feel easy.
 
@@ -3703,6 +3795,14 @@ The research protocol uses a metronome at 60 beats per minute. Free metronome ap
 #### Can a calf raise test diagnose plantar fasciitis or Achilles tendonitis?
 
 No. A low score tells you the calf fatigues early, not why. Plantar fasciitis, Achilles tendonitis, deconditioning, and recent injury can all produce a low count. Clinicians combine the result with a physical exam and history. The test measures calf endurance, not a specific condition.
+
+#### What are signs of weak calves?
+
+Weak calves often show up as quick fatigue on stairs or hills, a weaker push-off when walking or running, or wobbling during single-leg balance. The clearest objective sign is the single-leg calf raise test: a clear gap between your left and right leg is easier to trust than how the calf looks or feels, and rehabilitation commonly flags a gap of more than about 10 percent.
+
+#### Where should you feel a calf raise?
+
+You should feel the work in the calf, both the bulkier gastrocnemius higher up and the soleus lower near the Achilles, not at the heel bone, the arch, or the knee. If you feel sharp pain at the heel or Achilles instead of calf fatigue, your form or load needs adjusting before you keep counting reps.
 
 ## Plantar fasciitis: symptoms, causes, and what the evidence says helps
 
@@ -3781,7 +3881,7 @@ The useful question is not "how many weeks until it is over" but "is my morning 
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
 Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
 
-### Exercises and stretches for plantar fasciitis
+### Which exercises and stretches help plantar fasciitis?
 
 The exercises the guideline supports fall into two groups: stretching (grade A) and strength training (grade B). Stretching targets the plantar fascia and the calf. Strength training builds the calf's capacity to handle daily load without overloading the fascia.
 
@@ -3900,6 +4000,14 @@ The guideline recommends footwear education as part of the approach but does not
 
 See a clinician if pain followed an injury, if you cannot put weight on the foot, if both heels hurt and other joints are stiff, if there is numbness or tingling, if the heel is red or warm, if it wakes you at night, or if pain is not improving after several months of stretching and calf work. These patterns may point to a different condition.
 
+#### Why do I have plantar fasciitis in only one foot?
+
+Plantar fasciitis often shows up in one foot first because load rarely splits evenly between legs. A dominant leg, an old limp, a job favoring one side, or a sudden jump in activity on one leg, like starting to run, can overload one fascia more than the other. Both feet can still be affected over time.
+
+#### Why did I suddenly get plantar fasciitis?
+
+Sudden plantar fasciitis usually follows a sudden change in load, not a sudden injury. A fast jump in running mileage, new shoes, a new job that keeps you standing, or weight gain can overload the fascia faster than it can adapt. Prolonged standing at work is one of the recognized risk factors in the 2023 heel pain guideline.
+
 ## Flat feet: what they are, what causes them, and when they need attention
 
 Language: English · https://walkito.site/flat-feet/ · published 2026-10-05 · updated 2026-10-05
@@ -3984,7 +4092,7 @@ If your flat feet cause no pain, you do not need special shoes. If standing or w
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
-### Exercises for flat feet
+### Which exercises help flat feet?
 
 Exercise for flat feet focuses on the muscles that support the arch from below (the intrinsic foot muscles) and the muscles higher up that control how the foot lands (the calf, the hip). The best evidence so far comes from a trial of 52 people with flexible flat feet where six weeks of combined exercise changed arch shape more than in a control group. That trial included short-foot work, ankle exercises, hip strengthening and stretching, done together.
 
@@ -4062,6 +4170,14 @@ Adult-acquired flatfoot is a progressive collapse of the arch, usually from weak
 #### Is it safe to run with flat feet?
 
 Many runners have flat feet and run without problems. A low arch may increase pronation, which some runners manage with stability shoes. If running causes pain in the arch, ankle or knee that does not settle between runs, a clinician can check whether the flat foot is contributing. Strengthening the arch and hip muscles is a reasonable approach whether or not you change shoes.
+
+#### Is a flat foot considered a disability?
+
+Usually not. Most flat feet cause no pain and do not limit activity, so they do not meet disability criteria on their own. Severe or rigid flat feet that cause ongoing pain and limit walking or standing can sometimes support a disability claim, but that depends on the specific program, such as Social Security, and your overall function, not on having flat feet alone.
+
+#### What ethnicity has flat feet?
+
+Flat feet (pes planus) occur more often in some groups, though the research is limited. A 2023 systematic review of population studies found Asian race linked to more than twice the odds of flat feet, and White race linked to roughly half the odds, in separate subgroup comparisons. These are population patterns, not a prediction for any one person’s feet.
 
 ## Plantar fasciitis vs heel spur: are they the same thing?
 
@@ -4211,6 +4327,14 @@ Prevalence depends on age. Earlier research cited in the Menz 2008 study reporte
 
 Almost never. The guideline does not recommend spur removal for plantar fasciitis. About 90% of people with plantar fasciitis improve with non-surgical care such as stretching, calf strengthening and load management (Latt and colleagues, 2020). When surgery is considered after months of failed conservative care, it usually involves releasing the plantar fascia, not removing the spur.
 
+#### What happens if you keep walking on a heel spur?
+
+Walking will not drive the spur into nearby tissue. Pain that flares with walking usually comes from the irritated plantar fascia next to the spur, not the bone itself. The 2023 guideline recommends adjusting load, like distance or pace, rather than stopping, if walking makes the heel worse the next morning.
+
+#### Is it good to massage heel spurs?
+
+Gentle massage around a heel spur can ease soft tissue tightness, but it does not change the bone itself. Rolling the sole with firm, not sharp, pressure may loosen the fascia and calf, the tissues that usually cause the pain. The guideline grades clinician manual therapy an A; self massage is comfort care, not a substitute for stretching.
+
 ## Heel spur exercises: stretches and strengthening for the pain around a spur
 
 Language: English · https://walkito.site/heel-spur-exercises/ · published 2026-10-07 · updated 2026-10-07
@@ -4221,7 +4345,7 @@ Exercise does not dissolve a heel spur. The spur is bone, and bone does not shri
 - The 2023 heel pain guideline gives plantar fascia and calf stretching its top grade, **A**, and strength training a **B** (Koc and colleagues, 2023).
 - In a trial of 48 people with plantar fasciitis, heavy heel raises with a towel under the toes eased pain faster than stretching alone at three months, though by twelve months both groups were even (Rathleff and colleagues, 2015).
 - A tight calf, measured as reduced ankle dorsiflexion, was the strongest independent risk factor for plantar fasciitis in a matched case-control study of 50 cases and 100 controls (Riddle and colleagues, 2003).
-- A systematic review and meta-analysis found that both calf stretching and plantar fascia stretching reduced pain compared with no stretching, with plantar fascia stretching showing a slight edge (Siriphorn and Eksakulkla, 2020).
+- A systematic review and meta-analysis found that both calf stretching and plantar fascia stretching reduced pain compared with no stretching (Siriphorn and Eksakulkla, 2020).
 
 ### Why do exercises help a heel spur?
 
@@ -4234,7 +4358,7 @@ No exercise program will make a spur disappear on X-ray. But most people with a 
 Source: Menz HB, Thomas MJ, Marshall M, et al. Coexistence of plantar calcaneal spurs and plantar fascial thickening in individuals with plantar heel pain. Rheumatology (Oxford, England). 2019;58(2):237–245.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
-### The stretches
+### Which stretches help heel spur pain?
 
 Stretching is the starting point. The 2023 guideline grades plantar fascia and calf stretching **A**, its top grade. A systematic review and meta-analysis of stretching for plantar fasciitis found that both calf stretching and plantar fascia stretching reduced pain compared with no stretching (Siriphorn and Eksakulkla, 2020). Start with these three.
 
@@ -4247,7 +4371,7 @@ Source: Siriphorn A, Eksakulkla S. Calf stretching and plantar fascia-specific s
 Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
 
-### The strengthening exercises
+### Which strengthening exercises help heel spur pain?
 
 Stretching alone is often enough in the first few weeks. Once the morning pain starts settling, adding calf strengthening builds the capacity the heel chain needs. The guideline grades strength training **B**, its second-highest grade. In the only trial built to test heel raises for plantar fasciitis, 48 people were split into a loaded heel-raise group and a stretching-only group. The heel-raise group scored 29 points better on the Foot Function Index at three months (Rathleff and colleagues, 2015).
 
@@ -4261,7 +4385,7 @@ Start at the easiest level and move up only when it feels easy for two sessions 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### How to progress through the exercises
+### How do you progress the heel spur exercises?
 
 Progress by feel, not by calendar. The rule is: if the current level felt easy for two sessions in a row, move up one step. If morning pain is worse after a session, stay at the current level or step back.
 
@@ -4351,6 +4475,14 @@ Not necessarily. The guideline recommends exercise as part of the approach, not 
 
 Walking itself is not the problem. Walking in supportive shoes at a comfortable pace is usually fine and better than complete rest. The pain comes from the plantar fascia and calf under the spur, and moderate walking keeps the calf pump active. If walking makes your morning pain worse the next day, shorten the distance and build it back gradually.
 
+#### What exercises should you avoid if you have a heel spur?
+
+Skip high-impact moves like running, jumping and plyometrics while the heel is flared; repeated pounding on a hard surface strains the tissue next to the spur. Deep heel drops off a step edge can also overload an irritated fascia. The 2023 guideline supports adjusting load rather than banning exercises; the test is whether your heel feels worse the next morning.
+
+#### What flares up heel spur pain?
+
+Repeated pounding on a hard surface is the most common trigger: running, jumping, or standing for hours flares the soft tissue next to the spur the same way it flares plain plantar fasciitis. A sudden jump in activity, worn shoes, and barefoot walking on tile can bring it on. Adjusting the load, not the bone, is what settles a flare.
+
 ## Heel pain after walking: why your heel hurts and what to do about it
 
 Language: English · https://walkito.site/heel-pain-after-walking/ · published 2026-10-07 · updated 2026-10-07
@@ -4408,7 +4540,7 @@ If your feet ache after standing for hours but feel fine after a walk, the probl
 
 Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
 
-### The exercises that help heel pain after walking
+### Which exercises help heel pain after walking?
 
 The exercises are the same ones the 2023 guideline recommends for plantar fasciitis. The guideline gives stretching its top grade, **A**, and strength training a **B**. Both are recommended. A systematic review found that plantar fascia stretching and calf stretching both reduced pain compared with no stretching (Siriphorn and Eksakulkla, 2020).
 
@@ -4423,7 +4555,7 @@ Source: Siriphorn A, Eksakulkla S. Calf stretching and plantar fascia-specific s
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
 
-### How to manage walking distance when your heel hurts
+### How far should you walk when your heel hurts?
 
 The goal is not to stop walking. It is to find the distance your heel can handle without flaring the next morning, and then build from there.
 
@@ -4492,6 +4624,14 @@ Standing loads the foot statically without the calf pump that walking provides. 
 
 Stress fracture pain typically builds with activity, came on after a sudden increase in walking or running volume, and does not ease much with rest. Squeezing the sides of the heel can reproduce it. Plantar fasciitis pain usually eases once you warm up and is worst on first steps after rest. If the pattern fits a fracture, see a clinician before doing exercises.
 
+#### How do you get rid of heel pain right after a walk?
+
+Right after a walk, rest the foot, ice it for about 15 minutes, and avoid going straight back out barefoot on a hard floor. That eases the immediate ache, but it does not change the underlying cause. The exercises on this page, calf and fascia stretching plus gradual strength work, are what change how the heel handles the next walk.
+
+#### What causes heel pain in only one foot after walking?
+
+Heel pain after walking often shows up in just one foot because load during a walk rarely splits evenly between legs. A longer stride on one side, an old injury, worn-down shoes on one foot, or carrying a bag on one shoulder can all shift extra strain onto one heel. Both sides can still become symptomatic over time.
+
 ## Heel pain at night: what causes it and when it is a red flag
 
 Language: English · https://walkito.site/heel-pain-at-night/ · published 2026-10-07 · updated 2026-10-07
@@ -4559,7 +4699,7 @@ If pain is genuinely at its worst at night and at rest, rather than improving wi
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
-### Night splints: what they do and when they help
+### Do night splints help heel pain?
 
 A night splint is a brace that holds the ankle at 90 degrees while you sleep. The idea is to prevent the calf and plantar fascia from shortening overnight, so the first step in the morning is less painful.
 
@@ -4637,6 +4777,14 @@ Baxter's nerve is the first branch of the lateral plantar nerve. When it is comp
 
 Yes. Night heel pain that wakes you, does not improve with movement, involves burning or tingling, or is in both heels with prolonged stiffness should be assessed by a clinician. These patterns can indicate a stress fracture, nerve entrapment, or inflammatory disease that exercises alone will not address.
 
+#### What to put on my heel for pain at night?
+
+Ice is the most common first step: an ice pack or a frozen water bottle applied to the sore spot can ease surface soreness. None of these address a stress fracture, nerve entrapment, or inflammatory arthritis, the conditions most linked to true night pain, so a cold pack is not a substitute for finding the cause.
+
+#### What should you not do if your heel hurts at night?
+
+Do not assume it is plantar fasciitis and push through activity if the pain does not fit the first-step-then-better pattern. Do not ignore pain that wakes you, worsens with continued walking, or comes with burning, tingling, or swelling. Self-treating rest pain with stretches or night splints can delay diagnosis of a stress fracture, nerve entrapment, or inflammatory arthritis.
+
 ## Heel fat pad syndrome: what it is, how it differs from plantar fasciitis, and what the evidence says
 
 Language: English · https://walkito.site/heel-fat-pad-syndrome/ · published 2026-10-07 · updated 2026-10-07
@@ -4690,7 +4838,7 @@ Unlike a muscle or tendon, the fat pad does not rebuild itself with exercise or 
 Source: Chang AH, Rasmussen SZ, Jensen AE, Sørensen T, Rathleff MS. What do we actually know about a common cause of plantar heel pain? A scoping review of heel fat pad syndrome. Journal of Foot and Ankle Research. 2022;15(1):60.
 Source: Yi TI, Lee GE, Seo IS, Huh WS, Yoon TH, Kim BR. Clinical characteristics of the causes of plantar heel pain. Annals of Rehabilitation Medicine. 2011;35(4):507–13.
 
-### What helps: cushioning, taping, and footwear
+### What helps heel fat pad pain?
 
 The most commonly recommended first steps for heel fat pad syndrome are external: viscoelastic heel cups, cushioned insoles, and shoes with thick, shock-absorbing soles. These aim to replace the cushioning the fat pad no longer provides.
 
@@ -4771,6 +4919,14 @@ Cortisone injections are generally not recommended for heel fat pad syndrome. Co
 #### How is heel fat pad syndrome diagnosed?
 
 A clinician can suspect it from the pain pattern and a physical exam. Ultrasound measures the fat pad thickness, and a pad under 1 centimetre is generally considered atrophied. MRI can show internal damage. Imaging criteria are not standardised, and it is partly a diagnosis of exclusion when plantar fasciitis treatment has not helped.
+
+#### How long does heel fat pad syndrome take to improve?
+
+There is no established timeline, because fat pad atrophy is a structural thinning that exercise and rest do not reverse. A 2022 scoping review found no trial tracking recovery time for this condition. Cushioned heel cups, thicker-soled shoes, and avoiding barefoot walking on hard floors may ease pain, but the thinning itself usually remains.
+
+#### How do you tape for heel fat pad syndrome?
+
+Low-dye taping pulls the arch up and redirects pressure away from the heel, using strips run across the sole and up the sides of the foot; a clinician or physical therapist usually applies the first one to show the pattern. The 2022 scoping review found no trial testing taping specifically for fat pad syndrome, so it is a borrowed, not proven, technique.
 
 ## Haglund's deformity: the bump on the back of the heel, what causes it and what helps
 
@@ -4916,6 +5072,14 @@ Shoes with a soft, padded, or flexible heel counter. Avoid rigid-backed shoes th
 
 Retrocalcaneal bursitis is inflammation of the fluid-filled sac (bursa) between the Achilles tendon and the heel bone. Haglund's deformity makes it more likely because the prominent bone pinches the bursa during ankle movement. The pain is deep, at the back of the heel, and often worsened by shoes and dorsiflexion.
 
+#### What happens if Haglund's deformity is left untreated?
+
+Without changes, the bump does not shrink and the shoe friction that caused it usually continues, so pain and retrocalcaneal bursitis can keep building. Long-standing irritation also raises the risk of insertional Achilles tendinopathy. The bony growth itself does not reverse with conservative care, though symptoms often ease once footwear and loading are changed.
+
+#### Is walking bad for Haglund's deformity?
+
+Walking itself is not harmful, and staying active is usually fine. What matters is the shoe: a rigid or low-cut heel counter that rubs the bump can aggravate pain and bursitis with every step. Switching to shoes with a soft or open heel is usually more useful than resting completely.
+
 ## Sever's disease: what it is, what helps, and when to see a clinician
 
 Language: English · https://walkito.site/severs-disease/ · published 2026-10-07 · updated 2026-10-07
@@ -4983,7 +5147,7 @@ The hardest part of load management is that Sever's disease tends to recur. A ch
 
 Source: Wiegerinck JI, Zwiers R, Sierevelt IN, van Weert HC, van Dijk CN, Struijs PA. Treatment of Calcaneal Apophysitis: Wait and See Versus Orthotic Device Versus Physical Therapy: A Pragmatic Therapeutic Randomized Clinical Trial. Journal of Pediatric Orthopedics. 2016;36(2):152–7.
 
-### Heel cups and insoles
+### Do heel cups and insoles help Sever's disease?
 
 Heel cups are among the most practical interventions for Sever's disease. They cushion the heel, absorb impact and reduce the peak forces reaching the growth plate. The Perhamre crossover trial found that a heel cup reduced pain by about 80 percent compared to a heel wedge in 51 boys, which suggests that impact absorption at the heel matters more than simply changing the heel angle.
 
@@ -4994,7 +5158,7 @@ A reasonable starting point is an inexpensive over-the-counter heel cup, worn in
 Source: Perhamre S, Lundin F, Norlin R, Klässbo M. Sever's injury; treat it with a heel cup: a randomized, crossover study with two insole alternatives. Scandinavian Journal of Medicine & Science in Sports. 2011;21(6):e42–7.
 Source: James AM, Williams CM, Haines TP. Effectiveness of footwear and foot orthoses for calcaneal apophysitis: a 12-month factorial randomised trial. British Journal of Sports Medicine. 2016;50(20):1268–1275.
 
-### Calf stretching and strengthening
+### Does calf stretching help Sever's disease?
 
 Tight calf muscles increase the pull on the growth plate, and calf tightness is one of the recognized risk factors for calcaneal apophysitis. Stretching the gastrocnemius (the outer calf muscle, stretched with the knee straight) and the soleus (the deeper calf muscle, stretched with the knee bent) is a standard recommendation.
 
@@ -5064,6 +5228,14 @@ Sever's disease affects the growth plate at the back of the heel in children, wh
 
 Walkito is designed for adults with heel and arch pain. Its exercise doses, pain thresholds and progression rules are built for adult bodies, not for a child's open growth plate. A paediatric sports medicine clinician or podiatrist is the right source for a child's exercise program.
 
+#### What can be mistaken for Sever's disease?
+
+Achilles tendon irritation, a calcaneal stress fracture, and retrocalcaneal bursitis can all look similar in a growing child. A positive squeeze test (pain when the sides of the heel are pressed together), an age of 8 to 15, and a recent jump in training point toward Sever's disease instead. A single injury, swelling, or pain worsening at one specific spot needs a clinician to rule out a fracture.
+
+#### How do you KT tape Sever's disease?
+
+There's no trial testing kinesiology tape for Sever's disease, so no pattern is proven better than heel cups or load management. Some clinicians tape along the Achilles and under the heel to reduce the pull on the growth plate. If you want to try it, have a physiotherapist or athletic trainer apply it and show you the pattern.
+
 ## Arch pain: what causes it and what to do about it
 
 Language: English · https://walkito.site/arch-pain/ · published 2026-10-07 · updated 2026-10-07
@@ -5103,7 +5275,7 @@ The location of the pain, the time of day it is worst, and what makes it better 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial tendon dysfunction: a systematic review of randomised clinical trials and clinical guidelines. BMJ Open Sport & Exercise Medicine. 2018;4(1):e000430.
 
-### Exercises that help arch pain
+### Which exercises help arch pain?
 
 The exercises below target the arch itself and the calf muscles that pull on it. They apply best when arch pain is related to plantar fasciitis, flat feet, or general overuse. For PTTD or nerve-related arch pain, a clinician should direct the exercise plan. If any exercise takes your pain to **6/10 or more**, stop for the day.
 
@@ -5199,6 +5371,18 @@ The 2023 heel pain guideline grades orthotics B against using them alone for pla
 
 Not always. Plantar fasciitis is one specific cause of arch pain, the most common one. But arch pain can also come from flat feet, posterior tibial tendon dysfunction, high arches, overuse, or nerve irritation. All plantar fasciitis involves arch or heel pain, but not all arch pain is plantar fasciitis. The pattern of pain, especially its timing, helps tell them apart.
 
+#### What could be causing pain in the outside arch of my foot?
+
+The exercises here target the inner arch, so outer-arch pain usually has a different cause. It can come from peroneal tendon irritation (the tendons behind the outer ankle) or cuboid syndrome, where a small midfoot bone shifts slightly, often after a sprain or overuse. Both need a different exam and plan than plantar fascia stretching, so see a clinician.
+
+#### Does arch pain go away on its own?
+
+Sometimes. A short bout of overuse pain often eases within days once you cut back on the load that caused it. Pain from plantar fasciitis, flat feet or posterior tibial tendon dysfunction tends to stick around or return without stretching and strength work. If it hasn’t improved after several weeks of rest and a lighter load, see a clinician.
+
+#### Should I massage arch pain?
+
+Gentle rolling can help between sessions, though no study here tested massage alone. Roll the sole slowly over a massage ball or frozen water bottle, firm pressure but never enough to wince. It’s a comfort measure. It doesn’t address the cause itself. If pressing one spot sharply reproduces the pain, get it checked instead of pressing harder.
+
 ## High arches exercises: what helps and what needs a clinician
 
 Language: English · https://walkito.site/high-arches-exercises/ · published 2026-10-07 · updated 2026-10-07
@@ -5251,7 +5435,7 @@ Over-the-counter cushioned insoles are a reasonable first step before committing
 
 Source: Burns J, Crosbie J, Ouvrier R, Hunt A. Effective orthotic therapy for the painful cavus foot: a randomized controlled trial. Journal of the American Podiatric Medical Association. 2006;96(3):205–11.
 
-### Exercises for high arches
+### Which exercises help high arches?
 
 No trial has tested an exercise program designed specifically for pes cavus foot pain. The exercises below target the structures that are commonly tight or unstable in a high-arched foot: the calf, the plantar fascia, the ankle, and the intrinsic foot muscles. They are borrowed from the evidence for plantar fasciitis, ankle instability, and general foot conditioning, and labeled accordingly.
 
@@ -5329,6 +5513,14 @@ Yes. Pes cavus is the medical term for a foot with an excessively high arch. It 
 
 High arches are listed as a risk factor for plantar fasciitis. The rigid foot puts more strain on the plantar fascia with each step, and the fascia is often tight to begin with. If your high-arched foot has pain under the heel that is worst in the morning, that pattern is consistent with plantar fasciitis and the exercises in [plantar fasciitis exercises](https://walkito.site/plantar-fasciitis-exercises/) apply.
 
+#### How do I tell if my arches are too high?
+
+Try a wet footprint test: wet your bare sole and step onto a flat, dry surface. A high arch leaves little or no print along the outer edge, often just the heel and ball of the foot, while a flat foot leaves almost the whole sole. A big difference between your two feet is worth mentioning to a clinician.
+
+#### Is it better to be flat-footed or have high arches?
+
+Neither is clearly better. A flat foot spreads load wide but can overstretch the plantar fascia and posterior tibial tendon. A high arch is rigid and concentrates force at the heel and ball of the foot. About 60 percent of people with high arches report foot pain, so foot shape alone does not predict how your feet will feel.
+
 ## Posterior tibial tendon dysfunction exercises: what helps and when
 
 Language: English · https://walkito.site/posterior-tibial-tendon-dysfunction-exercises/ · published 2026-10-07 · updated 2026-10-07
@@ -5381,7 +5573,7 @@ Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial 
 Source: Kulig K, Reischl SF, Pomrantz AB, et al. Nonsurgical management of posterior tibial tendon dysfunction with orthoses and resistive exercise: a randomized controlled trial. Physical Therapy. 2009;89(1):26–37.
 Source: Houck J, Neville C, Tome J, Flemister A. Randomized Controlled Trial Comparing Orthosis Augmented by Either Stretching or Stretching and Strengthening for Stage II Tibialis Posterior Tendon Dysfunction. Foot & Ankle International. 2015;36(9):1006–16.
 
-### The exercises
+### Which exercises help posterior tibial tendon dysfunction?
 
 The exercises below target the tibialis posterior muscle and the muscles that support the arch. Band inversion trains the tibialis posterior directly. Heel raises with a focus on arch lift load the tendon during a functional movement. Short foot strengthens the intrinsic muscles that help the arch. Calf stretching addresses the common finding of reduced ankle dorsiflexion in people with PTTD.
 
@@ -5480,6 +5672,14 @@ PTTD is one of the more common causes of pain on the inner side of the ankle, bu
 #### When does PTTD need surgery?
 
 Surgery is usually discussed when conservative management, meaning exercise, orthoses, and sometimes a walking boot, has not improved symptoms after several months, or when the deformity has progressed to stage III or IV, where the foot is rigidly flat or the ankle joint is affected. Most stage I and II cases respond to conservative care.
+
+#### Is walking bad for posterior tibial tendonitis?
+
+Not automatically, but too much of it can be. Every step loads the tendon that holds the arch up, so a lot of walking on an irritated tendon tends to worsen pain. Early management cuts back the load that provokes pain, not walking altogether, alongside orthoses and the exercises above. A walk that brings on pain means scale back.
+
+#### What aggravates posterior tibial tendonitis?
+
+Anything that loads the tendon repeatedly while it is irritated: long stretches of standing or walking, hills, uneven ground, and worn-out shoes. Extra body weight adds more force with each step, and a sudden jump in activity is a common trigger. None of this means resting completely; it means reducing the load and adding orthoses and the exercises above.
 
 ## Top of foot pain: what causes it and when to see a clinician
 
@@ -5611,6 +5811,14 @@ Yes. Gout classically hits the big toe joint, but it can affect the midfoot join
 #### Should I see a doctor for top of foot pain?
 
 See a clinician if the pain is localized to one spot and getting worse, if there is redness or heat over the sore area, if the pain persists after a week of rest and shoe changes, if it came on suddenly after an injury, or if there is numbness or tingling. Stress fractures, gout, and nerve problems all benefit from early assessment.
+
+#### Can I still walk with extensor tendonitis?
+
+Yes, walking with extensor tendonitis is usually fine if the pain stays mild and does not get worse. Choose shoes with a soft, flexible tongue and loosen or re-lace to take pressure off the sore tendons. If walking increases pain significantly or the ache lingers for hours afterward, cut back distance until a lacing change and rest bring it down.
+
+#### How long does it take for extensor tendonitis in the foot to heal?
+
+No trial has tracked recovery time for extensor tendonitis specifically, so there is no tested timeline. Mild cases triggered by tight laces often settle once the pressure is removed. Cases tied to a training increase, or ongoing shoe pressure, can take longer, sometimes several weeks, especially if the trigger is not fully addressed.
 
 ## Morton's neuroma: what it is, what helps, and what the evidence says
 
@@ -5744,6 +5952,18 @@ A 2024 Cochrane review of six RCTs found low-certainty evidence that adding a co
 
 Surgery is usually considered after several months of conservative management, including shoe changes, padding, and one or two rounds of injection, have not provided lasting relief. Neurectomy, removal of the thickened nerve segment, is the most common procedure. It relieves pain in many people but leaves permanent numbness between the affected toes.
 
+#### What triggers Morton's neuroma?
+
+Morton's neuroma is triggered by anything that compresses the nerve between the metatarsal bones. Common triggers include narrow or pointed-toe shoes, high heels, repetitive impact activities like running, and foot shapes such as flat feet or high arches that shift extra pressure forward. It is more common in women and in middle age.
+
+#### What is the pinch test for Morton's neuroma?
+
+The pinch test, sometimes called Mulder's click, is a physical exam a clinician uses to help diagnose Morton's neuroma. They squeeze the forefoot from side to side while pressing between the metatarsal heads. A palpable click or pop, along with reproduced burning pain, supports the diagnosis, though a clinician still needs to rule out other causes.
+
+#### Is walking good for foot neuroma?
+
+Walking itself does not harm the nerve, but tight or thin-soled shoes during walking can increase forefoot compression and worsen symptoms. Short walks in wide, cushioned shoes are usually fine. Longer walks on hard surfaces or in narrow shoes often increase burning or tingling between the toes. If walking consistently triggers symptoms, switching shoes before cutting activity usually helps more.
+
 ## Sesamoiditis: what it is, what helps, and when to get imaging
 
 Language: English · https://walkito.site/sesamoiditis/ · published 2026-10-07 · updated 2026-10-07
@@ -5854,6 +6074,14 @@ No. Turf toe is a sprain of the ligaments around the big toe joint, usually from
 
 No exercise has been tested for sesamoiditis prevention. Calf stretching to reduce forefoot load and intrinsic foot strengthening to share pressure more evenly are reasonable ideas but are not proven for this condition specifically. Ongoing use of a dancer's pad and appropriate shoes is the more established strategy.
 
+#### What happens if sesamoiditis is left untreated?
+
+Without changes to load, sesamoiditis often lingers or flares up with activity. A 2025 review of conservative care found pain improved in about two-thirds of cases, but recurrence was common even with treatment. Without offloading or an activity change, expect the pain to persist and keep limiting how much you can run or push off.
+
+#### Is it good to massage sesamoiditis?
+
+Gentle massage around the area may ease some soreness, but firm pressure right on the sesamoid bones usually makes the pain worse, not better, since that is exactly where the irritated tissue sits. If you want to work on the forefoot, stretch the calf instead, which shifts some load off the sesamoids, rather than pressing on the sore spot itself.
+
 ## Bunion exercises: what they can and cannot do
 
 Language: English · https://walkito.site/bunion-exercises/ · published 2026-10-07 · updated 2026-10-07
@@ -5898,7 +6126,7 @@ The pattern across studies is consistent: toe spacers may help with comfort and 
 Source: Abdalbary SA. Foot Mobilization and Exercise Program Combined with Toe Separator Improves Outcomes in Women with Moderate Hallux Valgus at 1-Year Follow-up (A Randomized Clinical Trial). Journal of the American Podiatric Medical Association. 2018;108(6):478–486.
 Source: Tehraninasr A, Saeedi H, Forogh B, Bahramizadeh M, Keyhani MR. Effects of insole with toe-separator and night splint on patients with painful hallux valgus: a comparative study. Prosthetics and Orthotics International. 2008;32(1):79–83.
 
-### The exercises
+### Which exercises help bunions?
 
 These exercises target the abductor hallucis and the smaller intrinsic foot muscles. The goal is to restore muscle support around the first metatarsophalangeal joint. None will reverse the bony deformity, but two of them have trial support for improving muscle size and reducing symptoms in mild hallux valgus.
 
@@ -5963,6 +6191,14 @@ Many people run with bunions without problems. A wide toe box running shoe and a
 
 Bunions result from a combination of genetics, foot structure, and footwear. A family history of hallux valgus is the strongest risk factor. Narrow shoes and high heels do not cause bunions on their own but can accelerate progression in someone who is predisposed.
 
+#### Is walking barefoot better for bunions?
+
+No trial has tested barefoot walking against shoes for bunions. Going barefoot removes the pressure of a narrow toe box on the joint, which can ease symptoms for some. It does not reverse the bone angle. On hard or uneven ground, barefoot walking can strain the foot differently, so build it up gradually rather than switching all at once.
+
+#### At what age do most people get bunions?
+
+There is no single age. Bunions usually build gradually over years and become more noticeable from midlife onward. A less common juvenile form shows up in the teens, often with a strong family history. Narrow shoes and high heels speed up progression in anyone already prone to it, at any age.
+
 ## Hammer toe exercises: what they can do and where the evidence stands
 
 Language: English · https://walkito.site/hammer-toe-exercises/ · published 2026-10-07 · updated 2026-10-07
@@ -6014,7 +6250,7 @@ What we do know from studies on other forefoot conditions is that intrinsic foot
 
 Source: Gooding TM, Feger MA, Hart JM, Hertel J. Intrinsic foot muscle activation during specific exercises: a T2 time magnetic resonance imaging study. Journal of Athletic Training. 2016;51(8):644–650.
 
-### The exercises
+### Which exercises help hammer toes?
 
 These exercises target the intrinsic foot muscles and aim to maintain flexibility in a toe that is still flexible. If your hammer toe is rigid, these exercises will not change the position, but gentle stretching may help with stiffness and discomfort. All evidence labels below are honest: no exercise here has been tested in a hammer toe trial.
 
@@ -6094,6 +6330,14 @@ Surgery is usually considered when pain, corns, calluses, or skin problems persi
 
 Yes. When the big toe angles outward in hallux valgus, it can push the second toe upward and out of position, contributing to a hammer toe. Addressing the bunion with wider shoes and [bunion exercises](https://walkito.site/bunion-exercises/) may help reduce pressure on the second toe.
 
+#### Can you massage out a hammer toe?
+
+No. Massage cannot straighten a hammer toe, flexible or rigid, because the bend is a joint position, not a soft tissue knot. Gentle massage and stretching of the toe top can ease soreness and tendon tightness, and help a flexible toe keep moving. It will not undo the deformity, so pair it with wider shoes instead of expecting it to change shape.
+
+#### Is walking barefoot good for hammer toe?
+
+No trial has tested this directly. Walking barefoot removes the pressure and friction of a narrow shoe on the bent joint, which can ease irritation for some people. It will not straighten a hammer toe. On hard or uneven ground, going barefoot can also load the toes differently, so introduce it gradually rather than switching all at once.
+
 ## Упражнения и растяжка при плантарном фасциите и боли в пятке
 
 Language: Russian (Русский) · https://walkito.site/ru/bol-v-pyatke-uprazhneniya/ · published 2026-09-24 · updated 2026-10-07
@@ -6105,7 +6349,7 @@ Language: Russian (Русский) · https://walkito.site/ru/bol-v-pyatke-upraz
 - Если пятка болит при беге, те же рекомендации советуют менять нагрузку, а не бросать всё. У этого совета уровень E: он основан на теории, а не на исследованиях.
 - Сначала обратитесь к врачу, если боль появилась после травмы, сопровождается онемением или отёком, будит вас ночью или пятка болит при сжатии.
 
-### Упражнения при плантарном фасциите и стартовые дозировки
+### Какие упражнения помогают при плантарном фасциите и сколько их делать?
 
 При плантарном фасциите в Walkito есть растяжка подошвенной фасции и икр, силовая работа для икр, которая наращивается маленькими шагами, и прокатывание стопы. Это стартовые дозировки Walkito, а не назначение. [Как написаны эти гайды](https://walkito.site/ru/o-proekte/).
 
@@ -6242,6 +6486,14 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Ходьба обычно допустима, но она не упражнение при плантарном фасциите сама по себе. Рекомендации 2023 года советуют регулировать нагрузку, а не прекращать активность. Если после прогулки на следующее утро первые шаги заметно хуже, дистанция или темп были чрезмерными. Растяжка перед прогулкой, особенно [растяжка подошвенной фасции](https://walkito.site/ru/uprazhneniya/rastyazhka-plantarnoy-fastsii/) перед первыми шагами, облегчает начало.
 
+#### Что хуже всего делать при плантарном фасциите?
+
+Самые явные ошибки: ходить босиком по твёрдому полу сразу после сна и сразу возвращаться к бегу или прыжкам, пока пятка ещё воспалена. В обоих случаях резкая нагрузка приходится на самую жёсткую, не восстановившуюся фасцию. Клинические рекомендации 2023 года советуют регулировать нагрузку, а не терпеть боль.
+
+#### Можно ли размассировать плантарный фасциит?
+
+Одним сеансом массажа плантарный фасциит не убрать, но лёгкий самомассаж может снимать скованность между занятиями. Клинические рекомендации 2023 года оценивают ручную терапию у специалиста, работу руками с суставом и мягкими тканями, на уровне A, высшем, в сочетании с растяжкой. Перекатывание стопы руками облегчает самочувствие, но не заменяет растяжку и силовую работу для икр.
+
 ## Упражнения при плоскостопии и боли в своде стопы
 
 Language: Russian (Русский) · https://walkito.site/ru/ploskostopie-uprazhneniya/ · published 2026-09-24 · updated 2026-10-07
@@ -6264,7 +6516,7 @@ Language: Russian (Русский) · https://walkito.site/ru/ploskostopie-upraz
 - Если свод остаётся плоским даже на весу, стопа **жёсткая**. Это вопрос строения стопы, и упражнения его не изменят. Отложите цель по удержанию свода и перед началом программы обратитесь к врачу.
 - «Опущенным сводом» обычно называют то же плоскостопие. Но если свод одной стопы опустился **резко**, с одной стороны, уже во взрослом возрасте, обратитесь к врачу, прежде чем его тренировать, что бы ни показала проверка.
 
-### Упражнения при плоскостопии и стартовые дозировки
+### Какие упражнения помогают при плоскостопии и сколько их делать?
 
 Упражнения при плоскостопии в Walkito начинаются с собирания полотенца и подъёма большого пальца, а затем идут три версии «короткой стопы». Вокруг них: разведение пальцев, поворот стопы внутрь с лентой, стойка на одной ноге, отведение бедра и растяжка икр. Это стартовые дозировки Walkito, а не назначение. Делайте упражнения босиком. [Как написаны эти гайды](https://walkito.site/ru/o-proekte/).
 
@@ -6351,6 +6603,14 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Обычно да. «Опущенным сводом» часто называют плоскостопие. Важнее другое: гибкая ли стопа, то есть возвращается ли свод на весу, или жёсткая. Исследование на этой странице проводилось при гибком плоскостопии. Если свод одной стопы резко опустился уже во взрослом возрасте, сначала покажитесь врачу.
 
+#### Полезно ли ходить босиком при плоскостопии?
+
+Нет исследования, которое сравнивало бы ходьбу босиком с ходьбой в обуви при плоскостопии, поэтому однозначного ответа тут нет. Ходьба босиком действительно нагружает мелкие мышцы, поддерживающие свод, поэтому упражнения для свода, такие как «короткая стопа» и собирание полотенца, делают без обуви. Если ходьба босиком вызывает новую боль, снизьте нагрузку и попробуйте сначала на мягкой поверхности.
+
+#### Что усугубляет плоскостопие?
+
+Долгое стояние или ходьба, стоптанная или не держащая стопу обувь, лишний вес и отказ от упражнений для свода и икр, которые поддерживают мышцы в тонусе. Форма свода при этом не меняется, но к вечеру гибкое плоскостопие может ощущаться более усталым и болезненным. Жёсткое плоскостопие, которое продолжает болеть, требует осмотра врача, а не только отдыха.
+
 #### Какие упражнения укрепляют свод стопы?
 
 Главное упражнение: «Короткая стопа». Вы поднимаете свод, подтягивая подушечку стопы к пятке, не сгибая пальцы. Walkito начинает с 3 подходов по 8 с удержанием 5 секунд сидя, затем стоя, затем на одной ноге. Также помогают собирание полотенца пальцами, подъёмы большого пальца, разведение пальцев и инверсия с резинкой: они тренируют мелкие мышцы вокруг свода. Всё это для гибкого плоскостопия.
@@ -6374,7 +6634,7 @@ Los primeros pasos al levantarte son lo peor del día. Un tirón agudo justo en 
 - Para el dolor de talón al correr, la misma guía aconseja cambiar la carga en lugar de dejarlo todo, un consejo con grado E porque se basa en teoría, no en ensayos.
 - Consulta primero a un profesional de la salud si el dolor empezó después de una lesión, viene con entumecimiento o hinchazón, te despierta por la noche o te duele al apretar el talón.
 
-### Los ejercicios para la fascitis plantar, con dosis de inicio
+### ¿Qué ejercicios ayudan con la fascitis plantar y cuánto hacer?
 
 Los ejercicios para la fascitis plantar en Walkito son estiramientos de la fascia plantar y de la pantorrilla, trabajo de fuerza para la pantorrilla que sube en pasos pequeños, y un automasaje plantar. Son las dosis de inicio de Walkito, no una indicación médica. [Cómo escribimos estas guías](https://walkito.site/es/sobre-walkito/).
 
@@ -6527,6 +6787,14 @@ Consulta primero a un profesional de la salud si el dolor empezó después de un
 
 Caminar está bien en general, pero no es un ejercicio para la fascitis plantar por sí solo. La guía de 2023 recomienda ajustar la carga en vez de dejar la actividad. Si una caminata deja tus primeros pasos a la mañana siguiente claramente peores, la distancia o el ritmo fueron demasiado. Estirar antes de caminar, sobre todo el [estiramiento plantar](https://walkito.site/es/ejercicios/estiramiento-fascia-plantar/) antes de tus primeros pasos, hace más fáciles los primeros minutos.
 
+#### ¿Qué es lo peor que puedes hacer con fascitis plantar?
+
+Caminar descalzo sobre piso duro justo al despertar, y volver de golpe a correr o saltar mientras el talón sigue inflamado, son los errores más claros. Las dos cosas cargan la fascia más rígida y menos recuperada con fuerza repentina. La guía de 2023 para el dolor de talón recomienda ajustar la carga en lugar de forzar el dolor.
+
+#### ¿Se puede quitar la fascitis plantar con masajes?
+
+Ninguna sesión de masaje quita la fascitis plantar, pero un automasaje suave puede aliviar la rigidez entre sesiones. La guía de 2023 califica la terapia manual hecha por un profesional, trabajo sobre la articulación y el tejido blando, con grado A, su nota más alta, si se combina con estiramiento. Rodar la planta del pie es solo alivio, no sustituye el estiramiento ni el trabajo de pantorrilla.
+
 ## Ejercicios para el pie plano y el dolor en el arco
 
 Language: Spanish (Español) · https://walkito.site/es/ejercicios-pie-plano/ · published 2026-09-24 · updated 2026-09-28
@@ -6549,7 +6817,7 @@ Puedes saber si tu pie plano es flexible o rígido con una prueba de unos segund
 - Si el arco sigue plano incluso sin tocar el piso, el pie es **rígido**. Es un tema estructural que el ejercicio no va a cambiar. Deja de lado la meta de mantener el arco y consulta a un profesional de la salud antes de empezar un programa.
 - «Arcos caídos» suele ser otro nombre para el pie plano. Pero si un arco se aplanó **de repente**, de un solo lado, en la edad adulta, consulta a un profesional de la salud antes de ejercitarlo, diga lo que diga la prueba.
 
-### Los ejercicios para el pie plano, con dosis de inicio
+### ¿Qué ejercicios ayudan con el pie plano y cuánto hacer?
 
 Los ejercicios para el pie plano en Walkito empiezan con recoger la toalla y la elevación del dedo gordo, y después suben por tres versiones del pie corto. La separación de dedos, la inversión con banda, el equilibrio a una pierna, la abducción de cadera y los estiramientos de pantorrilla completan el resto. Son las dosis de inicio de Walkito, no una indicación médica. Hazlos descalzo. [Cómo escribimos estas guías](https://walkito.site/es/sobre-walkito/).
 
@@ -6640,6 +6908,14 @@ Haz el trabajo de pie corto cada día de entrenamiento mientras el arco sea tu m
 
 Consulta a un profesional de la salud antes de empezar si el arco sigue plano cuando el pie no toca el piso, o si un arco se aplanó de repente en la edad adulta. Lo mismo si el dolor empezó después de una lesión, te despierta por la noche o viene con entumecimiento, hormigueo, hinchazón o calor. Un dolor agudo o que empeora necesita un profesional, no más ejercicio.
 
+#### ¿Es bueno caminar descalzo si tienes pie plano?
+
+No hay ningún ensayo que compare caminar descalzo con usar zapatos en pie plano, así que ningún estudio lo resuelve. Caminar descalzo sí trabaja los músculos pequeños que sostienen el arco, por eso ejercicios de arco como el pie corto y el recogido de toalla se hacen sin zapatos. Si caminar descalzo te provoca dolor nuevo, bájale y pruébalo primero sobre una superficie suave.
+
+#### ¿Qué empeora el pie plano?
+
+Pasar mucho tiempo de pie o caminando, usar zapatos gastados o sin soporte, cargar peso extra y dejar de hacer el trabajo de arco y pantorrilla que mantiene fuertes los músculos de soporte. Nada de esto cambia la forma del arco, pero puede hacer que un pie plano flexible se sienta más cansado o dolorido hacia la noche. Un pie plano rígido que sigue doliendo necesita un profesional de la salud, no solo descanso.
+
 ## Упражнения при тендините ахиллова сухожилия: эксцентрические опускания, дозировки и что говорят исследования
 
 Language: Russian (Русский) · https://walkito.site/ru/tendinit-akhillova-sukhozhiliya-uprazhneniya/ · published 2026-10-04 · updated 2026-10-07
@@ -6684,7 +6960,7 @@ Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Ach
 Source: Beyer R, Kongsgaard M, Hougs Kjær B, Øhlenschlæger T, Kjær M, Magnusson SP. Heavy slow resistance versus eccentric training as treatment for Achilles tendinopathy: a randomized controlled trial. American Journal of Sports Medicine. 2015;43(7):1704–1711.
 Source: van der Vlist AC, Winters M, Weir A, et al. Which treatment is most effective for patients with Achilles tendinopathy? A living systematic review with network meta-analysis of 29 randomised controlled trials. British Journal of Sports Medicine. 2021;55(5):249–256.
 
-### Упражнения и стартовые дозировки
+### Какие упражнения помогают при тендините ахиллова сухожилия и сколько их делать?
 
 Упражнения ниже выстроены от малой нагрузки к большой: от подъёмов на носки сидя до полной лестницы. Здесь стартовые дозировки Walkito рядом с протоколами исследований. [Как написаны эти гайды](https://walkito.site/ru/o-proekte/).
 
@@ -6795,6 +7071,18 @@ Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports act
 
 Восстановление измеряется месяцами. Основные исследования длились около трёх месяцев, отслеживая результаты до 12 месяцев. Рекомендации 2024 года отмечают, что функциональное улучшение может проявиться к 2 неделям, но полное восстановление занимает значительно больше. Ни одно исследование не обещает фиксированных сроков.
 
+#### Что нельзя делать при тендините ахиллова сухожилия?
+
+Избегайте резкого увеличения объёма бега или скорости спринта, глубокой растяжки икры, если боль у места прикрепления к пяточной кости, и терпения боли, которая остаётся повышенной на следующее утро или нарастает от недели к неделе. Внезапный хлопок или щелчок требует немедленного осмотра врача. Полный покой тоже не обязателен: активность с контролем боли обычно лучше, чем полная остановка.
+
+#### Усиливает ли ходьба тендинит ахиллова сухожилия?
+
+Обычно нет. Ходьба даёт меньшую нагрузку, чем бег, и многие люди с тендинопатией ахиллова сухожилия продолжают ходить без обострения. Следите за болью, которая остаётся повышенной на следующее утро или нарастает от недели к неделе: это сигнал снизить дистанцию или темп, а не прекратить движение совсем. Крутые склоны и быстрая ходьба по твёрдой поверхности раздражают сухожилие чаще.
+
+#### Что можно спутать с тендинитом ахиллова сухожилия?
+
+Ретрокальканеальный бурсит, деформация Хаглунда и частичный разрыв ахиллова сухожилия могут давать похожую боль в задней части пятки. Заметная костная шишка говорит в пользу деформации Хаглунда, а отёк прямо у верхнего края задника обуви указывает на бурсит. Любая внезапная резкая боль с хлопком или невозможность встать на носки требует срочной оценки на разрыв сухожилия.
+
 ## Боль в своде стопы: причины и что с ней делать
 
 Language: Russian (Русский) · https://walkito.site/ru/bol-v-svode-stopy/ · published 2026-10-07 · updated 2026-10-07
@@ -6834,7 +7122,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial tendon dysfunction: a systematic review of randomised clinical trials and clinical guidelines. BMJ Open Sport & Exercise Medicine. 2018;4(1):e000430.
 
-### Упражнения при боли в своде стопы
+### Какие упражнения помогают при боли в своде стопы?
 
 Упражнения ниже нацелены на сам свод и на мышцы икры, которые на него тянут. Они лучше всего подходят, когда боль в своде связана с плантарным фасциитом, плоскостопием или обычной перегрузкой. При PTTD или боли, связанной с нервом, упражнения должен назначать врач. Если какое-то упражнение поднимает боль до **6 из 10 или выше**, на сегодня остановитесь.
 
@@ -6930,6 +7218,18 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Не всегда. Плантарный фасциит является одной конкретной причиной боли в своде, самой частой. Но боль в своде может быть вызвана также плоскостопием, дисфункцией сухожилия задней большеберцовой мышцы, полой стопой, перегрузкой или раздражением нерва. Любой плантарный фасциит сопровождается болью в своде или пятке, но не всякая боль в своде является плантарным фасциитом. Паттерн боли, особенно её время, помогает их различить.
 
+#### Почему болит свод стопы с наружной стороны?
+
+Упражнения на этой странице направлены на внутренний свод, поэтому у боли в наружном своде обычно другая причина. Её может вызывать раздражение малоберцовых сухожилий (сухожилий за наружной лодыжкой) или кубовидный синдром, при котором небольшая кость среднего отдела стопы слегка смещается, часто после растяжения связок или перегрузки. Обоим состояниям нужны другой осмотр и другой план, чем растяжка подошвенной фасции, поэтому обратитесь к врачу.
+
+#### Проходит ли боль в своде стопы сама?
+
+Иногда. Кратковременная боль от перегрузки часто стихает за несколько дней, если снизить нагрузку, которая её вызвала. Боль при плантарном фасциите, плоскостопии или дисфункции сухожилия задней большеберцовой мышцы обычно держится или возвращается без растяжки и силовых упражнений. Если после нескольких недель отдыха и меньшей нагрузки лучше не стало, обратитесь к врачу.
+
+#### Можно ли массировать свод стопы при боли?
+
+Мягкое прокатывание может помочь между занятиями, хотя ни одно исследование на этой странице не проверяло массаж сам по себе. Медленно прокатывайте подошву по массажному мячу или замороженной бутылке с водой, с плотным давлением, но не до гримасы боли. Это мера для комфорта, и на причину она не действует. Если при резком нажатии на одну точку возникает та самая боль, покажитесь врачу, а не давите сильнее.
+
 ## Боль в подушечке стопы: причины и что помогает
 
 Language: Russian (Русский) · https://walkito.site/ru/metatarzalgiya/ · published 2026-10-04 · updated 2026-10-07
@@ -7004,7 +7304,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 Подкладки и обувь меняют распределение нагрузки. Упражнения наращивают силу и гибкость, чтобы эту нагрузку выдерживать. Если в картину входит [целый день на ногах](https://walkito.site/ru/bolyat-nogi-ot-stoyaniya/), важны оба подхода.
 
-### Упражнения
+### Какие упражнения помогают при боли в подушечке стопы?
 
 Эти упражнения нацелены на две стороны проблемы: силу пальцев и собственных мышц стопы (чтобы делить нагрузку при отталкивании) и гибкость икры (чтобы подушечка стопы не перегружалась). Ни одно из них не проверено в рандомизированном исследовании конкретно при метатарзалгии. Когда вы отмечаете зону подушечки стопы на карте боли Walkito во время проверки, облегчающая сессия даёт разведение пальцев и растяжку подошвенной фасции. Зона пальцев даёт разведение пальцев и «короткую стопу» сидя.
 
@@ -7072,6 +7372,14 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 #### Какая обувь лучше при боли в подушечке стопы?
 
 Обувь с широким носком, мягкой подошвой и невысоким каблуком. Обувь с перекатной подошвой помогает, позволяя стопе перекатываться при отталкивании без сгибания в плюснефаланговых суставах. Узкая обувь и каблуки делают наоборот. Для невромы Мортона смена обуви часто самый эффективный первый шаг.
+
+#### Сколько длится обострение метатарзалгии?
+
+Единого срока нет. Лёгкое обострение часто проходит само, если снизить провоцирующую активность, перейти на амортизирующую и более широкую обувь и добавить метатарзальную подкладку. Обострения, связанные с постоянной причиной, такой как каблуки, молоткообразные пальцы или тугая икра, могут держаться месяцами, потому что единого срока для всех причин не существует.
+
+#### Какие осложнения бывают у нелеченной метатарзалгии?
+
+Без внимания к проблеме метатарзалгия может изменить то, как вы ходите, ведь тело естественно переносит вес с болезненного места на другие участки стопы, а это создаёт новые очаги боли. Постоянное давление на головки плюсневых костей также может способствовать мозолям или, реже, деформациям пальцев, типа молоткообразных. Ранняя смена обуви и метатарзальные подкладки снижают этот риск.
 
 ## Лучшее приложение при плантарном фасциите: гайд покупателя на 2026 год
 
@@ -7174,7 +7482,7 @@ Walkito является программой упражнений при бол
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### Как выбрать
+### Как выбрать подходящее приложение при плантарном фасциите?
 
 Начинайте от ситуации, а не от списков функций.
 
@@ -7228,6 +7536,14 @@ Hinge Health бесплатен для участников, чей работо
 
 Exakt Health и Hinge Health доступны на iOS и Android. «Plantar Fasciitis Exercises» тоже на обеих платформах, хотя на обеих указаны встроенные покупки. Walkito, Prehab, PlantarCare и Arch пока доступны только для iOS. Если у вас Android, Exakt Health является самым функциональным вариантом для боли в стопах.
 
+#### Нужно ли приложение, чтобы делать упражнения при плантарном фасциите?
+
+Нет, приложение не обязательно. Упражнения с доказанной эффективностью, такие как растяжка фасции и прогрессия с подъёмами на носки, можно делать по распечатанной памятке или листку от врача. Приложение обычно добавляет напоминания, отслеживание прогресса и правила дозирования по боли, что помогает некоторым дольше держаться плана, а не другие упражнения.
+
+#### Как часто нужно пользоваться приложением для упражнений при плантарном фасциите?
+
+Большинство программ упражнений при плантарном фасциите, включая те, что получили высшие оценки в клинических рекомендациях 2023 года, строятся на ежедневных или почти ежедневных занятиях на протяжении примерно трёх месяцев, а не на эпизодическом использовании. Приложение приносит больше пользы, если вы открываете его почти каждый день, потому что результат даёт именно регулярность, а не какая-то одна функция внутри него.
+
 ## Упражнения при косточке на ноге: что они могут и чего не могут
 
 Language: Russian (Русский) · https://walkito.site/ru/kostochka-na-noge-uprazhneniya/ · published 2026-10-07 · updated 2026-10-07
@@ -7272,7 +7588,7 @@ Tehraninasr и коллеги (2008) наблюдали 30 женщин с бо�
 Source: Abdalbary SA. Foot Mobilization and Exercise Program Combined with Toe Separator Improves Outcomes in Women with Moderate Hallux Valgus at 1-Year Follow-up (A Randomized Clinical Trial). Journal of the American Podiatric Medical Association. 2018;108(6):478–486.
 Source: Tehraninasr A, Saeedi H, Forogh B, Bahramizadeh M, Keyhani MR. Effects of insole with toe-separator and night splint on patients with painful hallux valgus: a comparative study. Prosthetics and Orthotics International. 2008;32(1):79–83.
 
-### Упражнения
+### Какие упражнения помогают при косточке на ноге?
 
 Эти упражнения нацелены на мышцу, отводящую большой палец, и мелкие собственные мышцы стопы. Цель: восстановить мышечную поддержку вокруг первого плюснефалангового сустава. Ни одно из них не обратит костную деформацию, но два из них имеют поддержку исследований в плане увеличения размера мышцы и уменьшения симптомов при лёгкой вальгусной деформации.
 
@@ -7337,6 +7653,14 @@ Walkito включает [разведение пальцев](https://walkito.s
 
 Косточка возникает от сочетания генетики, строения стопы и обуви. Семейная предрасположенность к hallux valgus является самым сильным фактором риска. Узкая обувь и каблуки сами по себе не вызывают косточку, но могут ускорить прогрессирование у предрасположенного человека.
 
+#### Что лучше при косточке: ходить босиком или в обуви?
+
+Ни одно исследование не сравнивало ходьбу босиком и в обуви именно при косточках. Без обуви исчезает давление узкого носка на сустав, что может уменьшить симптомы у некоторых, но не меняет угол кости. На твёрдой или неровной поверхности ходьба босиком может иначе нагружать стопу, поэтому вводите её постепенно, а не сразу.
+
+#### В каком возрасте обычно появляется косточка на ноге?
+
+Строго определённого возраста нет. Косточка обычно формируется постепенно в течение лет и становится более заметной со среднего возраста. Более редкая ювенильная форма проявляется в подростковом возрасте, обычно при сильной семейной истории. Узкая обувь и каблуки ускоряют прогрессирование у любого, кто к ней предрасположен, в любом возрасте.
+
 ## Тест подъёма на носки: сколько раз нужно сделать и что значит результат?
 
 Language: Russian (Русский) · https://walkito.site/ru/test-podema-na-noski/ · published 2026-10-05 · updated 2026-10-07
@@ -7369,7 +7693,7 @@ Source: Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint planta
 
 Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliability and normative values for the standing heel-rise test in healthy adults. Physiotherapy. 2017;103(4):446–452.
 
-### Как сделать тест подъёма на носки дома
+### Как сделать тест подъёма на носки дома?
 
 Вам не нужна наклонная доска. Стоя на ровной поверхности, вы получите немного более лёгкий вариант теста, так что ваше число может оказаться на несколько повторений выше опубликованных норм. Это нормально для отслеживания изменений со временем и сравнения левой и правой ноги.
 
@@ -7422,7 +7746,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
 Source: Madeley LT, Munteanu SE, Bonanno DR. Endurance of the ankle joint plantar flexor muscles in athletes with medial tibial stress syndrome: a case-control study. Journal of Science and Medicine in Sport. 2007;10(6):356–362.
 
-### Как улучшить низкий результат теста
+### Как улучшить низкий результат теста?
 
 Упражнения, которые наращивают выносливость икр для реабилитации, те же, что повышают результат теста. Начните с уровня, который соответствует вашему текущему состоянию, и переходите к следующему, когда два занятия подряд дались легко.
 
@@ -7476,6 +7800,14 @@ Walkito проводит тест подъёма на носки на одной
 #### Может ли тест подъёма на носки диагностировать плантарный фасциит или тендинит ахиллова сухожилия?
 
 Нет. Низкий результат говорит о том, что икра устаёт рано, а не почему. Плантарный фасциит, тендинит ахиллова сухожилия, снижение тренированности и недавняя травма могут давать одинаково низкий результат. Врач сопоставляет результат с осмотром и историей. Тест измеряет выносливость икры, а не конкретное состояние.
+
+#### Какие признаки слабых икр?
+
+Слабые икры часто проявляются быстрой усталостью на лестнице или подъёмах, более слабым толчком при ходьбе или беге и покачиванием при удержании равновесия на одной ноге. Самым надёжным объективным признаком служит тест подъёма на носки на одной ноге: явная разница между левой и правой ногой вызывает больше доверия, чем то, как икра выглядит или ощущается, а в реабилитации границей обычно считают разницу больше 10 процентов.
+
+#### Где должны ощущаться подъёмы на носки?
+
+Нагрузку нужно чувствовать в икре: и в более крупной икроножной мышце выше, и в камбаловидной мышце ниже, ближе к ахиллову сухожилию, а не в пяточной кости, своде или колене. Если вместо усталости икры вы чувствуете резкую боль в пятке или ахилловом сухожилии, сначала поправьте технику или нагрузку, а потом считайте повторы.
 
 ## Подъёмы на носки при плантарном фасциите: как делать и сколько
 
@@ -7626,6 +7958,14 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 Да. Подъёмы на носки сидя и на двух ногах задуманы как работа для икры почти без нагрузки на пятку, именно поэтому они идут до версии с полотенцем на одной ноге. Версия с полотенцем является именно той, которая также нагружает свод, поэтому натяжение у пятки на этом этапе ожидаемо, если оно остаётся ниже 6 из 10.
 
+#### Вызывают ли слабые икры плантарный фасциит?
+
+Самые весомые данные связывают с плантарным фасциитом именно тугую, а не слабую икроножную мышцу. Исследование случай-контроль нашло, что сниженная подвижность голеностопа была главным фактором риска, а больше половины пациентов в одной серии имели контрактуру икроножной мышцы. Силовая работа всё равно помогает: в исследовании с участием 48 человек подъёмы на носки снимали боль быстрее, чем одна растяжка, в первые три месяца.
+
+#### Какое одно упражнение самое лучшее при плантарном фасциите?
+
+Единственного лучшего упражнения нет: клинические рекомендации 2023 года оценивают растяжку (уровень A) и силовую работу (уровень B) как разные, дополняющие друг друга подходы. Растяжка подошвенной фасции напряиую снимает боль на первых шагах, а подъёмы на носки наращивают долгосрочную выносливость икры. В исследовании с участием 48 человек группа с подъёмами на носки улучшалась быстрее группы с растяжкой через три месяца, хотя через двенадцать месяцев результаты сравнялись.
+
 ## Качания в голеностопе: как делать, зачем нужна подвижность голеностопа
 
 Language: Russian (Русский) · https://walkito.site/ru/uprazhneniya/mobilnost-golenostopa/ · published 2026-10-05 · updated 2026-10-07
@@ -7678,7 +8018,7 @@ Walkito использует этот тест в периодической п�
 
 Увеличение на сантиметр в тесте «колено к стене» за несколько недель считается значимым результатом. Качания в голеностопе являются основным упражнением, которое нарабатывает это увеличение.
 
-### Частые ошибки при качаниях в голеностопе
+### Какие ошибки чаще всего допускают при качаниях в голеностопе?
 
 Отрыв пятки от пола. Пятка должна оставаться на полу на всём протяжении каждого повторения. Если она отрывается, вы прошли конец своей амплитуды, и упражнение теряет смысл. Качайте только так далеко, как позволяет пятка.
 
@@ -7780,7 +8120,7 @@ Source: Kulig K, Burnfield JM, Requejo SM, Sperry M, Terk M. Selective activatio
 Source: Ling SK, Lui TH. Posterior tibial tendon dysfunction: an overview. The Open Orthopaedics Journal. 2017;11:714–723.
 Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial tendon dysfunction: a systematic review of randomised clinical trials and clinical guidelines. BMJ Open Sport & Exercise Medicine. 2018;4(1):e000430.
 
-### Частые ошибки при повороте стопы внутрь с лентой
+### Какие ошибки чаще всего допускают при повороте стопы внутрь с лентой?
 
 Самая частая ошибка заключается во вращении всей ноги вместо одной стопы. Когда бедро разворачивается внутрь для поворота стопы, задняя большеберцовая почти не работает. Колено должно смотреть прямо вперёд. Двигается только стопа в голеностопе.
 
@@ -7873,7 +8213,7 @@ Source: Gooding TM, Feger MA, Hart JM, Hertel J. Intrinsic foot muscle activatio
 
 Подъём большого пальца не нагружает ворот так, как подъёмы на носки с полотенцем. Он учит мозг включать большой палец отдельно, чтобы ворот мог сработать при обычной ходьбе. Это упражнение на координацию, а не на силу.
 
-### Частые ошибки при подъёме большого пальца
+### Какие ошибки чаще всего допускают при подъёме большого пальца?
 
 Самая частая ошибка проявляется в том, что все пять пальцев поднимаются вместе. Если все пальцы уходят вверх разом, упражнение становится общим разгибанием пальцев, и независимый контроль теряется. Прижимайте мелкие пальцы пальцами руки, если нужно, пока разделение не появится.
 
@@ -7946,7 +8286,7 @@ Language: Russian (Русский) · https://walkito.site/ru/uprazhneniya/podem
 
 Source: Patel A, DiGiovanni B. Association between plantar fasciitis and isolated contracture of the gastrocnemius. Foot & Ankle International. 2011;32(1):5–8.
 
-### Как делать подъёмы на носки стоя (на двух ногах)
+### Как делать подъёмы на носки стоя (на двух ногах)?
 
 Встаньте на обе стопы на полу, ноги на ширине бёдер. Держитесь за стену или стул для равновесия. Поднимитесь на подушечки стоп, толкаясь через большие пальцы. Задержитесь наверху на мгновение, затем опуститесь медленно, примерно за три секунды. Обе стопы делят нагрузку.
 
@@ -7989,7 +8329,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliability and normative values for the standing heel-rise test in healthy adults. Physiotherapy. 2017;103(4):446–452.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### Частые ошибки при подъёмах на носки
+### Какие ошибки чаще всего допускают при подъёмах на носки?
 
 Слишком быстрый темп. Медленное опускание (около трёх секунд) наращивает силу. Пружинящие движения внизу убирают эксцентрическую фазу, а именно она делает основную работу для адаптации сухожилия.
 
@@ -8081,7 +8421,7 @@ Source: Patel A, DiGiovanni B. Association between plantar fasciitis and isolate
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Siriphorn A, Eksakulkla S. Calf stretching and plantar fascia-specific stretching for plantar fasciitis: a systematic review and meta-analysis. Journal of Bodywork and Movement Therapies. 2020;24(4):222–232.
 
-### Частые ошибки при растяжке икры
+### Какие ошибки чаще всего допускают при растяжке икры?
 
 Сгибание заднего колена. Как только колено сгибается, икроножная мышца расслабляется и растяжка переходит на камбаловидную. Держите заднее колено прямым на всём протяжении удержания.
 
@@ -8155,7 +8495,7 @@ Language: Russian (Русский) · https://walkito.site/ru/uprazhneniya/eksts
 
 Source: Alfredson H, Pietilä T, Jonsson P, Lorentzon R. Heavy-load eccentric calf muscle training for the treatment of chronic Achilles tendinosis. American Journal of Sports Medicine. 1998;26(3):360–366.
 
-### Как делать эксцентрические опускания пятки (прямое колено)
+### Как делать эксцентрические опускания пятки (прямое колено)?
 
 Встаньте на край ступеньки так, чтобы подушечки стоп были на ступеньке, а пятки свисали. Поднимитесь на обеих стопах. Перенесите вес на рабочую ногу. Медленно опускайте пятку примерно три секунды, позволяя ей уйти ниже ступеньки. Колено остаётся прямым. Вернитесь наверх на обеих стопах.
 
@@ -8194,7 +8534,7 @@ Source: Silbernagel KG, Thomeé R, Eriksson BI, Karlsson J. Continued sports act
 Source: Jonsson P, Alfredson H, Sunding K, Fahlström M, Cook J. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. British Journal of Sports Medicine. 2008;42(9):746–749.
 Source: Chimenti RL, Neville C, Houck J, Cuddeford T, Carreira D, Martin RL. Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision 2024. Journal of Orthopaedic & Sports Physical Therapy. 2024;54(12):CPG1–CPG32.
 
-### Частые ошибки при эксцентрических опусканиях пятки
+### Какие ошибки чаще всего допускают при эксцентрических опусканиях пятки?
 
 Зависание внизу как в растяжке. Польза в медленном спуске, а не в задержке внизу. Опускайтесь три секунды, затем сразу возвращайтесь наверх на обеих стопах.
 
@@ -8291,7 +8631,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Замороженная бутылка с водой заменяет мяч и добавляет холод. Пенный ролик под стопой даёт более мягкое давление. Специализированный ролик для стопы из спортивного магазина делает то же самое. Ни один из них не доказал превосходства над другими.
 
-### Частые ошибки при прокатывании стопы
+### Какие ошибки чаще всего допускают при прокатывании стопы?
 
 Давить слишком сильно. Сильнее не значит лучше. Если вы давите до боли 6 из 10 или морщитесь, вы скорее раздражаете фасцию, чем успокаиваете. Снизьте давление до плотного, но ровного.
 
@@ -8301,7 +8641,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
-### Когда катать и когда пропустить
+### Когда стоит катать стопу, а когда лучше пропустить?
 
 Катайте после долгого дня на ногах, после сеанса подъёмов на носки или в любой момент, когда подошва ощущается скованной. В Walkito прокатывание стопы появляется в дни восстановления и в конце занятий как заминка.
 
@@ -8388,7 +8728,7 @@ Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot ali
 
 Людям, которые долго стоят, особенно медсёстрам и работникам торговли. Длительное стояние утомляет среднюю ягодичную, и к концу смены контроль бедра ослабевает. Подробнее: [болят ноги от стояния](https://walkito.site/ru/bolyat-nogi-ot-stoyaniya/).
 
-### Частые ошибки при отведении бедра стоя
+### Какие ошибки чаще всего допускают при отведении бедра стоя?
 
 Наклон корпуса в противоположную сторону является самой частой ошибкой. Когда вы наклоняетесь, тело использует инерцию и боковой наклон вместо средней ягодичной. Стойте прямо. Меньший подъём с прямым корпусом лучше, чем высокий подъём с наклоном.
 
@@ -8502,7 +8842,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
-### Частые ошибки при растяжке подошвенной фасции
+### Какие ошибки чаще всего допускают при растяжке подошвенной фасции?
 
 Тянуть пальцы слишком сильно. Растяжение должно ощущаться плотным под сводом, а не болезненным. Если вы морщитесь, вы вышли за полезный диапазон. Ослабьте усилие, пока не почувствуете тягу без резкого края.
 
@@ -8606,7 +8946,7 @@ Source: Jung DY, Kim MH, Koh EK, Kwon OY, Cynn HS, Lee WH. A comparison in the m
 
 Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
 
-### Частые ошибки, которые снижают эффективность «короткой стопы»
+### Какие ошибки снижают эффективность упражнения «короткая стопа»?
 
 Чаще всего встречается ошибка с поджиманием пальцев. Если пальцы сгибаются и хватаются за пол, упражнение становится сгибанием пальцев, и внешние сгибатели берут верх. Пальцы должны оставаться длинными и расслабленными. Некоторым помогает ненадолго поднять пальцы, сократить свод, а затем опустить пальцы обратно.
 
@@ -8670,7 +9010,7 @@ Language: Russian (Русский) · https://walkito.site/ru/uprazhneniya/ravno
 - Цель Walkito по балансу: 30 секунд на одной ноге. Тест проводится каждые 14 дней, пока цель по балансу активна.
 - Закрывание глаз убирает зрение как входной сигнал для баланса, заставляя стопу и голеностоп брать на себя больше работы. Приложение включает стойку с закрытыми глазами как следующую ступень после стойки с открытыми.
 
-### Как делать стойку на одной ноге
+### Как делать стойку на одной ноге?
 
 Встаньте рядом со стеной или столешницей. Поднимите одну стопу от пола, слегка согнув колено. Смотрите в одну точку прямо перед собой. Пусть стопа покачивается. Эти покачивания и есть суть: мелкие мышцы стопы и голеностопа работают, чтобы удержать вас вертикально.
 
@@ -8706,7 +9046,7 @@ Walkito включает стойку с закрытыми глазами ка�
 Source: Bellows R, Wong CK. The effect of bracing and balance training on ankle sprain incidence among athletes: a systematic review with meta-analysis. International Journal of Sports Physical Therapy. 2018;13(3):379–388.
 Source: Brijwasi T, Borkar P. A comprehensive exercise program improves foot alignment in people with flexible flat foot: a randomised trial. Journal of Physiotherapy. 2023;69(1):42–46.
 
-### Частые ошибки при стойке на одной ноге
+### Какие ошибки чаще всего допускают при стойке на одной ноге?
 
 Взгляд в пол. Глаза должны быть на фиксированной точке на уровне глаз. Взгляд вниз смещает вес вперёд и делает упражнение легче, что противоречит цели.
 
@@ -8793,7 +9133,7 @@ Source: Patel A, DiGiovanni B. Association between plantar fasciitis and isolate
 
 Если растяжка ощущается прямо в ахилловом сухожилии и чувствуется резкой, а не тянущей, ослабьте усилие. Растяжка должна ощущаться плотной и устойчивой, а не болезненной. Боль в самом сухожилии во время растяжки отличается от зажатости икры и может указывать на [тендинит ахиллова сухожилия](https://walkito.site/ru/tendinit-akhillova-sukhozhiliya-uprazhneniya/).
 
-### Частые ошибки при растяжке камбаловидной мышцы
+### Какие ошибки чаще всего допускают при растяжке камбаловидной мышцы?
 
 Недостаточное сгибание колена. Небольшого сгибания не хватит, чтобы расслабить икроножную мышцу. Нужен заметный сгиб: такой, чтобы было видно, как заднее колено уходит вперёд над пальцами.
 
@@ -8857,7 +9197,7 @@ Language: Russian (Русский) · https://walkito.site/ru/uprazhneniya/podem
 
 Упражнение также тренирует мелкие разгибатели пальцев вдоль передней стороны голени. Мышцы задней стороны (икры) оно не нагружает, поэтому его сочетают с [подъёмами на носки](https://walkito.site/ru/uprazhneniya/podemy-na-noski/), чтобы покрыть обе стороны голени.
 
-### Как делать подъёмы носков
+### Как делать подъёмы носков?
 
 Встаньте спиной к стене, спина прижата. Выставьте стопы вперёд примерно на 30 сантиметров от стены. Пятки остаются на полу. Поднимите переднюю часть обеих стоп как можно выше, подтягивая носки к голеням. Задержитесь наверху на мгновение. Опустите медленно.
 
@@ -8890,7 +9230,7 @@ Walkito начинает с 3 подходов по 10, обе стопы, у с
 
 Тренировать одну сторону без другой может создать дисбаланс. Бегуны, которые делают только подъёмы на носки, всё равно могут получить боль в голени, потому что передняя большеберцовая мышца не успевает за икрой при большом объёме бега. Сбалансированная программа включает и то и другое.
 
-### Частые ошибки при подъёмах носков
+### Какие ошибки чаще всего допускают при подъёмах носков?
 
 Стопы слишком далеко от стены. Если пятки проскальзывают вперёд, опора на стену теряется и упражнение превращается в тест на равновесие, а не в укрепление передней стороны голени. Для большинства правильное расстояние составляет примерно одну длину стопы от стены.
 
@@ -8973,7 +9313,7 @@ Source: Gooding TM, Feger MA, Hart JM, Hertel J. Intrinsic foot muscle activatio
 
 Source: Gooding TM, Feger MA, Hart JM, Hertel J. Intrinsic foot muscle activation during specific exercises: a T2 time magnetic resonance imaging study. Journal of Athletic Training. 2016;51(8):644–650.
 
-### Частые ошибки при разведении пальцев
+### Какие ошибки чаще всего допускают при разведении пальцев?
 
 Самой частой ошибкой считается поднимание пальцев от пола вместо разведения в стороны. Цель: горизонтальное разведение, а не вертикальный подъём. Пальцы должны слегка касаться пола.
 
@@ -9044,7 +9384,7 @@ Language: Russian (Русский) · https://walkito.site/ru/uprazhneniya/podem
 
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### Как делать подъёмы на носки с полотенцем
+### Как делать подъёмы на носки с полотенцем?
 
 Сверните небольшое ручное полотенце в валик толщиной примерно с кулак. Положите его на край ступеньки. Встаньте на одну ногу так, чтобы все пять пальцев лежали на полотенце, а подушечка стопы стояла на ступеньке. Держитесь за стену или перила для равновесия.
 
@@ -9063,7 +9403,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### Частые ошибки при подъёмах на носки с полотенцем
+### Какие ошибки чаще всего допускают при подъёмах на носки с полотенцем?
 
 Чаще всего ошибаются со слишком быстрым темпом. Опускание за три секунды удерживает икру под нагрузкой достаточно долго, чтобы наращивать силу. Пружинящие движения вверх-вниз превращают упражнение из силового в кардио.
 
@@ -9186,7 +9526,7 @@ Source: Jung DY, Kim MH, Koh EK, Kwon OY, Cynn HS, Lee WH. A comparison in the m
 
 Source: Amaha K, Arimoto T, Kitamura N. Effect of toe exercises and toe grip strength on the treatment of primary metatarsalgia. Journal of Orthopaedic Surgery and Research. 2020;15(1):580.
 
-### Частые ошибки при собирании полотенца
+### Какие ошибки чаще всего допускают при собирании полотенца?
 
 Чаще всего ошибаются тем, что пятка отрывается от пола. Когда пятка поднимается, икра берёт на себя работу, а мышцы стопы делают меньше. Прижимайте пятку к полу на протяжении каждого повторения.
 
@@ -9367,6 +9707,14 @@ Source: Yuen WLP, Tan PT, Kon KKC. Surgical Treatment of Haglund's Deformity: A 
 
 Ретрокальканеальный бурсит представляет собой воспаление заполненной жидкостью полости (бурсы) между ахилловым сухожилием и пяточной костью. Деформация Хаглунда повышает его вероятность, потому что выступающая кость зажимает бурсу при движении голеностопа. Боль ощущается глубоко, в задней части пятки, и часто усиливается от обуви и от тыльного сгибания стопы.
 
+#### Что будет, если ничего не делать с деформацией Хаглунда?
+
+Если ничего не менять, выступ не уменьшится, а трение обуви, которое его спровоцировало, обычно продолжится, поэтому боль и ретрокальканеальный бурсит могут нарастать. Длительное раздражение также повышает риск инсерционной тендинопатии ахиллова сухожилия. Сам костный выступ при консервативном подходе не исчезает, хотя симптомы часто ослабевают после смены обуви и коррекции нагрузки.
+
+#### Вредно ли ходить при деформации Хаглунда?
+
+Сама ходьба не вредна, и оставаться активным обычно можно. Важнее обувь: жёсткий или низкий задник, который натирает выступ, может усиливать боль и бурсит с каждым шагом. Перейти на обувь с мягким или открытым задником обычно полезнее, чем полностью отказаться от нагрузки.
+
 ## Молоткообразные пальцы: упражнения, что они могут и что говорят исследования
 
 Language: Russian (Русский) · https://walkito.site/ru/molotkoobraznye-paltsy-uprazhneniya/ · published 2026-10-07 · updated 2026-10-07
@@ -9418,7 +9766,7 @@ Source: Formosa C, Grixti C, Gatt A. Conservative Approach in the Management of 
 
 Source: Gooding TM, Feger MA, Hart JM, Hertel J. Intrinsic foot muscle activation during specific exercises: a T2 time magnetic resonance imaging study. Journal of Athletic Training. 2016;51(8):644–650.
 
-### Упражнения
+### Какие упражнения помогают при молоткообразных пальцах?
 
 Эти упражнения нацелены на собственные мышцы стопы и направлены на поддержание подвижности пальца, который ещё гибкий. Если ваш молоткообразный палец ригидный, упражнения не изменят его положение, но мягкая растяжка может помочь с тугоподвижностью и дискомфортом. Все пометки об уровне доказательств ниже честные: ни одно упражнение здесь не проверялось в исследовании при молоткообразных пальцах.
 
@@ -9498,6 +9846,14 @@ Walkito включает [собирание полотенца](https://walkito
 
 Да. Когда большой палец при вальгусной деформации уходит наружу, он может оттеснить второй палец вверх, способствуя формированию молоткообразного пальца. Работа с косточкой при помощи широкой обуви и [упражнений при косточке](https://walkito.site/ru/kostochka-na-noge-uprazhneniya/) может помочь снизить давление на второй палец.
 
+#### Можно ли рассосать массажем молоткообразный палец?
+
+Нет. Массаж не может выпрямить молоткообразный палец, гибкий или ригидный, потому что изгиб является положением сустава, а не узлом мягких тканей. Нежный массаж и растяжка верха пальца могут ослабить болезненность и натяжение сухожилия, помогая гибкому пальцу сохранять подвижность, но не устранит деформацию, поэтому совмещайте его с широкой обувью, а не ждите изменения формы.
+
+#### Полезна ли ходьба босиком при молоткообразном пальце?
+
+Ни одно исследование не сравнивало это напрямуу. Без обуви исчезает давление и трение узкой обуви на согнутый сустав, что может ослабить раздражение у некоторых людей. Выпрямить молоткообразный палец она не может. На твёрдой или неровной земле ходьба босиком тоже иначе нагружает пальцы, поэтому вводите её постепенно, а не сразу.
+
 ## Синдром жировой подушки пятки: что это, чем отличается от плантарного фасциита и что говорят данные
 
 Language: Russian (Русский) · https://walkito.site/ru/sindrom-zhirovoy-podushki-pyatki/ · published 2026-10-07 · updated 2026-10-07
@@ -9551,7 +9907,7 @@ Source: Chang AH, Rasmussen SZ, Jensen AE, Sørensen T, Rathleff MS. What do we 
 Source: Chang AH, Rasmussen SZ, Jensen AE, Sørensen T, Rathleff MS. What do we actually know about a common cause of plantar heel pain? A scoping review of heel fat pad syndrome. Journal of Foot and Ankle Research. 2022;15(1):60.
 Source: Yi TI, Lee GE, Seo IS, Huh WS, Yoon TH, Kim BR. Clinical characteristics of the causes of plantar heel pain. Annals of Rehabilitation Medicine. 2011;35(4):507–13.
 
-### Что помогает: амортизация, тейпирование и обувь
+### Что помогает при боли в жировой подушке пятки?
 
 Самые распространённые первые шаги при синдроме жировой подушки являются внешними: вискоэластичные подпяточники, амортизирующие стельки и обувь с толстой подошвой, поглощающей удар. Они призваны заменить амортизацию, которую жировая подушка больше не обеспечивает.
 
@@ -9633,6 +9989,14 @@ Walkito строит ежедневные занятия на основе по�
 
 Врач может заподозрить его по паттерну боли и осмотру. УЗИ измеряет толщину жировой подушки: подушка тоньше 1 сантиметра обычно считается атрофированной. МРТ может показать внутренние повреждения. Критерии визуализации не стандартизированы, и диагноз отчасти ставится методом исключения, когда ведение плантарного фасциита не помогло.
 
+#### Как долго проходит синдром жировой подушки пятки?
+
+Установленных сроков нет, потому что атрофия жировой подушки представляет собой структурное истончение, которое упражнения и отдых не обращают вспять. Обзор 2022 года не нашёл ни одного исследования, которое отслеживало бы время восстановления при этом состоянии. Амортизирующие подпяточники, обувь с более толстой подошвой и отказ от ходьбы босиком по твёрдому полу могут уменьшить боль, но само истончение обычно остаётся.
+
+#### Как тейпировать пятку при синдроме жировой подушки?
+
+Тейпирование low-dye подтягивает свод и уводит давление от пятки: полоски тейпа проводят поперёк подошвы и вверх по бокам стопы. Первый раз его обычно накладывает врач или физиотерапевт, чтобы показать схему. Обзор 2022 года не нашёл ни одного исследования тейпирования именно при синдроме жировой подушки, поэтому этот приём заимствован из ведения других состояний и не доказан.
+
 ## Боль в пятке после ходьбы: почему болит и что с этим делать
 
 Language: Russian (Русский) · https://walkito.site/ru/bol-v-pyatke-posle-khodby/ · published 2026-10-07 · updated 2026-10-07
@@ -9690,7 +10054,7 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
 
-### Упражнения, которые помогают при боли в пятке после ходьбы
+### Какие упражнения помогают при боли в пятке после ходьбы?
 
 Упражнения те же, что клинические рекомендации 2023 года советуют при плантарном фасциите. Рекомендации дают растяжке высший уровень, **A**, а силовым упражнениям уровень **B**. Рекомендуются оба. Систематический обзор показал, что и растяжка подошвенной фасции, и растяжка икр уменьшали боль по сравнению с отсутствием растяжки (Siriphorn и Eksakulkla, 2020).
 
@@ -9705,7 +10069,7 @@ Source: Siriphorn A, Eksakulkla S. Calf stretching and plantar fascia-specific s
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
 
-### Как управлять дистанцией ходьбы, если пятка болит
+### Сколько можно ходить, если болит пятка?
 
 Цель не в том, чтобы прекратить ходить. А в том, чтобы найти дистанцию, которую пятка выдерживает без обострения на следующее утро, и постепенно наращивать её.
 
@@ -9774,6 +10138,14 @@ Source: Hébert-Losier K, Wessman C, Alricsson M, Svantesson U. Updated reliabil
 
 Боль при стрессовом переломе обычно нарастает с нагрузкой, появляется после резкого увеличения объёма ходьбы или бега и мало ослабевает в покое. Сжатие пятки с боков может воспроизвести боль. Боль при плантарном фасциите обычно ослабевает, когда вы расходитесь, и сильнее всего на первых шагах после покоя. Если картина похожа на перелом, обратитесь к врачу до начала упражнений.
 
+#### Как снять боль в пятке сразу после ходьбы?
+
+Сразу после ходьбы дайте стопе отдохнуть, приложите лёд примерно на 15 минут и не выходите сразу снова босиком по твёрдому полу. Это снимает сиюминутную боль, но не меняет её причину. Именно упражнения с этой страницы, растяжка икры и фасции плюс постепенная силовая работа, меняют то, как пятка переносит следующую прогулку.
+
+#### Почему после ходьбы болит пятка только на одной ноге?
+
+Боль в пятке после ходьбы часто появляется только на одной стопе, потому что нагрузка во время ходьбы редко распределяется между ногами поровну. Более длинный шаг с одной стороны, старая травма, стоптанная обувь на одной ноге или сумка на одном плече могут сдвигать дополнительную нагрузку на одну пятку. Со временем симптомы могут появиться и на другой стороне.
+
 ## Боль в пятке ночью: что вызывает и когда это тревожный знак
 
 Language: Russian (Русский) · https://walkito.site/ru/bol-v-pyatke-nochyu/ · published 2026-10-07 · updated 2026-10-07
@@ -9841,7 +10213,7 @@ Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 20
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
-### Ночные ортезы: для чего и когда помогают
+### Помогают ли ночные ортезы при боли в пятке?
 
 Ночной ортез представляет собой бандаж, который удерживает голеностоп под углом 90 градусов во время сна. Идея в том, чтобы не дать икре и подошвенной фасции укоротиться за ночь, так что первый шаг утром будет менее болезненным.
 
@@ -9919,6 +10291,14 @@ Source: Tu P. Heel Pain: Diagnosis and Management. American Family Physician. 20
 
 Да. Ночная боль в пятке, которая будит вас, не проходит при движении, сопровождается жжением или покалыванием или ощущается в обеих пятках с длительной скованностью, должна быть оценена врачом. Эти паттерны могут указывать на стрессовый перелом, защемление нерва или воспалительное заболевание, с которыми одни упражнения не справятся.
 
+#### Что приложить к пятке, если она болит ночью?
+
+Чаще всего начинают со льда: пакет со льдом или замороженная бутылка с водой, приложенные к больному месту, могут ослабить поверхностную болезненность. Но ни одно из этих средств не действует на стрессовый перелом, защемление нерва или воспалительный артрит, то есть на состояния, чаще всего связанные с настоящей ночной болью. Поэтому холод не заменяет поиск причины.
+
+#### Что нельзя делать, если пятка болит ночью?
+
+Не считайте сразу, что это плантарный фасциит, и не продолжайте нагрузку через боль, если она не похожа на типичную картину «больно на первых шагах, потом легче». Не игнорируйте боль, которая будит вас, усиливается при продолжении ходьбы или сопровождается жжением, покалыванием или отёком. Самостоятельные растяжки или ночные ортезы при боли в покое могут отсрочить диагностику стрессового перелома, защемления нерва или воспалительного артрита.
+
 ## Упражнения при пяточной шпоре: растяжка и укрепление для снятия боли
 
 Language: Russian (Русский) · https://walkito.site/ru/pyatochnaya-shpora-uprazhneniya/ · published 2026-10-07 · updated 2026-10-07
@@ -9942,7 +10322,7 @@ Language: Russian (Русский) · https://walkito.site/ru/pyatochnaya-shpora
 Source: Menz HB, Thomas MJ, Marshall M, et al. Coexistence of plantar calcaneal spurs and plantar fascial thickening in individuals with plantar heel pain. Rheumatology (Oxford, England). 2019;58(2):237–245.
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
-### Растяжка
+### Какая растяжка помогает при пяточной шпоре?
 
 Растяжка служит отправной точкой. Клинические рекомендации 2023 года дают растяжке подошвенной фасции и икр уровень **A**, высший уровень. Систематический обзор и метаанализ растяжки при плантарном фасциите показали, что и растяжка икр, и растяжка подошвенной фасции уменьшали боль по сравнению с отсутствием растяжки (Siriphorn и Eksakulkla, 2020). Начните с этих трёх.
 
@@ -9955,7 +10335,7 @@ Source: Siriphorn A, Eksakulkla S. Calf stretching and plantar fascia-specific s
 Source: DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. Journal of Bone and Joint Surgery (American). 2003;85(7):1270–1277.
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
 
-### Силовые упражнения
+### Какие силовые упражнения помогают при пяточной шпоре?
 
 В первые несколько недель часто достаточно одной растяжки. Когда утренняя боль начинает уменьшаться, подключение силовой работы для икр повышает способность цепочки мышц нести нагрузку. Рекомендации дают силовым упражнениям уровень **B**, второй по силе. В единственном исследовании, проверявшем подъёмы на носки именно при плантарном фасциите, 48 человек разделили на группу с нагруженными подъёмами на носки и группу с одной растяжкой. Группа с подъёмами на носки набрала на 29 баллов лучше по индексу функции стопы через три месяца (Rathleff и коллеги, 2015).
 
@@ -9969,7 +10349,7 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### Как продвигаться по ступеням
+### Как прогрессировать в упражнениях при пяточной шпоре?
 
 Продвигайтесь по ощущениям, а не по календарю. Правило: если текущий уровень давался легко два занятия подряд, переходите на ступень выше. Если утренняя боль после занятия стала сильнее, останьтесь на текущем уровне или вернитесь на ступень назад.
 
@@ -10059,6 +10439,14 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Ходьба сама по себе не проблема. Ходьба в обуви с хорошей поддержкой в комфортном темпе обычно допустима и лучше полного покоя. Боль идёт от подошвенной фасции и икр под шпорой, а умеренная ходьба поддерживает работу мышечного насоса икры. Если после ходьбы утренняя боль на следующий день усиливается, сократите дистанцию и наращивайте её постепенно.
 
+#### Какие упражнения избегать, если у вас пяточная шпора?
+
+Пока пятка воспалена, пропустите ударные движения: бег, прыжки и плиометрику, потому что повторяющиеся удары по твёрдой поверхности нагружают ткани рядом со шпорой. Глубокие опускания на пятку с края ступеньки также могут перегрузить раздражённую фасцию. Клинические рекомендации 2023 года советуют регулировать нагрузку, а не запрещать упражнения: ориентир это то, не станет ли пятке хуже на следующее утро.
+
+#### От чего обостряется боль при пяточной шпоре?
+
+Самый частый триггер это повторяющиеся удары по твёрдой поверхности: бег, прыжки или долгое стояние раздражают мягкие ткани рядом со шпорой точно так же, как при обычном плантарном фасциите. Резкий скачок активности, стоптанная обувь и ходьба босиком по плитке могут вызвать его. Справляется с обострением изменение нагрузки, а не воздействие на кость.
+
 ## Полая стопа: какие упражнения помогают и когда нужен врач
 
 Language: Russian (Русский) · https://walkito.site/ru/polaya-stopa-uprazhneniya/ · published 2026-10-07 · updated 2026-10-07
@@ -10111,7 +10499,7 @@ Source: Burns J, Crosbie J, Ouvrier R, Hunt A. Effective orthotic therapy for th
 
 Source: Burns J, Crosbie J, Ouvrier R, Hunt A. Effective orthotic therapy for the painful cavus foot: a randomized controlled trial. Journal of the American Podiatric Medical Association. 2006;96(3):205–11.
 
-### Упражнения при полой стопе
+### Какие упражнения помогают при полой стопе?
 
 Ни одно исследование не тестировало программу упражнений, разработанную именно при боли, связанной с полой стопой. Упражнения ниже нацелены на структуры, которые обычно тугие или нестабильные при высоком своде: икру, подошвенную фасцию, голеностоп и собственные мышцы стопы. Они взяты из доказательной базы по плантарному фасцииту, нестабильности голеностопа и общей тренировке стопы, и помечены соответственно.
 
@@ -10188,6 +10576,14 @@ Walkito построено вокруг боли в пятке и боли в с
 #### Может ли полая стопа привести к плантарному фасцииту?
 
 Полая стопа указана как фактор риска плантарного фасциита. Ригидная стопа создаёт большее натяжение подошвенной фасции при каждом шаге, а фасция и без того часто тугая. Если при полой стопе болит под пяткой и хуже всего утром, этот паттерн соответствует плантарному фасцииту, и подходят упражнения из гайда [упражнения при плантарном фасциите](https://walkito.site/ru/bol-v-pyatke-uprazhneniya/).
+
+#### Как понять, что у меня слишком высокий свод стопы?
+
+Попробуйте тест с мокрым следом: смочите босую подошву и встаньте на ровную сухую поверхность. При высоком своде вдоль наружного края отпечатка почти ничего не остаётся, часто видны только пятка и подушечка стопы, а при плоскостопии отпечатывается почти вся подошва. Если следы двух стоп сильно различаются, стоит сказать об этом врачу.
+
+#### Что лучше: плоскостопие или высокий свод?
+
+Однозначно лучшего варианта нет. Плоская стопа широко распределяет нагрузку, но может перерастягивать подошвенную фасцию и сухожилие задней большеберцовой мышцы. Высокий свод ригиден и концентрирует силу на пятке и подушечке стопы. Около 60% людей с высоким сводом сообщают о боли в стопе, так что одна лишь форма стопы не предсказывает, как будут себя чувствовать ваши стопы.
 
 ## Плоскостопие: что это, почему возникает и когда требует внимания
 
@@ -10273,7 +10669,7 @@ Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial 
 
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 
-### Упражнения при плоскостопии
+### Какие упражнения помогают при плоскостопии?
 
 Упражнения при плоскостопии направлены на мышцы, поддерживающие свод снизу (собственные мышцы стопы), и на мышцы выше, управляющие тем, как стопа ставится (икры, бедро). Лучшие на сегодня данные получены из исследования с участием 52 человек с гибким плоскостопием, где шесть недель комбинированных упражнений изменили форму свода сильнее, чем в контрольной группе. Исследование включало «короткую стопу», работу с голеностопом, укрепление бедра и растяжку, выполнявшиеся вместе.
 
@@ -10352,6 +10748,14 @@ Source: Cheng J, Han D, Qu J, et al. Effects of short foot training on foot post
 
 Многие бегуны с плоскостопием бегают без проблем. Низкий свод может усиливать пронацию, с которой некоторые бегуны справляются при помощи стабилизирующей обуви. Если бег вызывает боль в своде, голеностопе или колене, которая не проходит между пробежками, врач может проверить, связано ли это с плоскостопием. Укрепление мышц свода и бедра является разумным подходом вне зависимости от того, меняете ли вы обувь.
 
+#### Считается ли плоскостопие инвалидностью?
+
+Обычно нет. Большинство случаев плоскостопия не вызывают боли и не ограничивают активность, поэтому сами по себе не соответствуют критериям инвалидности. Сильное или жёсткое плоскостопие с постоянной болью, которое ограничивает ходьбу или стояние, иногда может стать основанием для оформления инвалидности, но это зависит от конкретной программы и общей функции, а не только от наличия плоскостопия.
+
+#### У какой этнической группы чаще встречается плоскостофие?
+
+Плоскостофие (pes planus) встречается чаще у некоторых групп населения, хотя исследований пока немного. Систематический обзор популяционных исследований 2023 года нашёл, что у людей азиатской расы шансы плоскостофия более чем вдвое выше, а у людей европейской (белой) расы примерно вдвое ниже, в отдельных сравнениях подгрупп. Это закономерности на уровне населения, а не прогноз для стоп конкретного человека.
+
 ## Плантарный фасциит: симптомы, причины и что говорят исследования
 
 Language: Russian (Русский) · https://walkito.site/ru/plantarnyy-fastsiit/ · published 2026-10-05 · updated 2026-10-07
@@ -10427,7 +10831,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of chronic plantar fasciitis. Foot & Ankle Orthopaedics. 2020;5(1):2473011419896763.
 Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognosis of plantar fasciitis: a 5- to 15-year follow-up study of 174 patients with ultrasound examination. Orthopaedic Journal of Sports Medicine. 2018;6(3):2325967118757983.
 
-### Упражнения и растяжка при плантарном фасциите
+### Какие упражнения и растяжки помогают при плантарном фасциите?
 
 Упражнения, которые поддерживают рекомендации, делятся на две группы: растяжка (уровень A) и силовая работа (уровень B). Растяжка нацелена на подошвенную фасцию и икры. Силовая работа наращивает ресурс икр, чтобы справляться с повседневной нагрузкой, не перегружая фасцию.
 
@@ -10545,6 +10949,14 @@ Source: Hansen L, Krogh TP, Ellingsen T, Bolvig L, Fredberg U. Long-term prognos
 #### Когда идти к врачу с болью в пятке?
 
 Обратитесь к врачу, если боль появилась после травмы, если вы не можете наступить на ногу, если болят обе пятки и другие суставы скованы, если есть онемение или покалывание, если пятка покраснела или горячая, если боль будит ночью или если нет улучшения после нескольких месяцев растяжки и силовой работы для икр. Эти паттерны могут указывать на другое состояние.
+
+#### Почему у меня плантарный фасциит только на одной ноге?
+
+Плантарный фасциит часто сначала появляется на одной стопе, потому что нагрузка редко распределяется между ногами поровну. Доминирующая нога, старая хромота, работа, где нагружена одна сторона, или резкий скачок активности на одной ноге, например начало бега, могут перегружать одну фасцию сильнее другой. Со временем могут пострадать обе стопы.
+
+#### Почему у меня внезапно появился плантарный фасциит?
+
+Внезапный плантарный фасциит обычно следует за резким изменением нагрузки, а не за внезапной травмой. Быстрый рост километража в беге, новая обувь, новая работа, где приходится много стоять, или прибавка в весе могут перегрузить фасцию быстрее, чем она успевает адаптироваться. Длительное стояние на работе один из признанных факторов риска в клинических рекомендациях 2023 года по боли в пятке.
 
 ## Боль в пятке утром: почему и что сделать до первого шага
 
@@ -10687,6 +11099,14 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Обзор 2020 года сообщает, что около 90 процентов людей с плантарным фасциитом улучшаются при консервативных мерах, часто в пределах нескольких месяцев (Latt и коллеги, 2020). В более длительном наблюдении за 174 пациентами около половины сохраняли симптомы через 5 лет, хотя у большинства к тому моменту боль была незначительной (Hansen и коллеги, 2018). Ни одна программа упражнений не обещает конкретных сроков. Страница [сколько длится плантарный фасциит](https://walkito.site/ru/skolko-dlitsya-plantarnyy-fastsiit/) подробнее рассматривает доказательства.
 
+#### Чего избегать, если пятка болит по утрам?
+
+Избегайте ходить босиком по твёрдому полу сразу после сна и пропускать растяжку до того, как встать. В этот момент фасция самая жёсткая, поэтому шаг на плитку или паркет без амортизации часто запускает резкую боль на первых шагах. Наденьте обувь с поддержкой или жёсткие тапочки, прежде чем выйти из спальни, и растянитесь, ещё сидя на кровати.
+
+#### Какие есть домашние средства от боли в пятке по утрам?
+
+Домашние средства от утренней боли в пятке: растяжка, лёд и обувь с поддержкой, применяемые каждый день, а не время от времени. Растяните фасцию и икру до того, как встать, затем наденьте обувь с поддержкой перед ходьбой по твёрдому полу. Перекатывание стопы по замороженной бутылке воды несколько минут снимает скованность, хотя и не заменяет визит к врачу, если боль не отступает.
+
 ## Неврома Мортона: что это, что помогает и что говорят исследования
 
 Language: Russian (Русский) · https://walkito.site/ru/nevroma-mortona/ · published 2026-10-07 · updated 2026-10-07
@@ -10818,6 +11238,18 @@ Walkito создан вокруг плантарного фасциита и п�
 #### Когда при невроме Мортона нужна хирургия?
 
 Хирургия обычно рассматривается, когда несколько месяцев консервативного подхода (смена обуви, подушечки, один-два курса инъекций) не дали устойчивого облегчения. Нейрэктомия (удаление утолщённого участка нерва) является самой распространённой операцией. Она снимает боль у многих людей, но оставляет стойкое онемение между поражёнными пальцами.
+
+#### Отчего появляется неврома Мортона?
+
+Неврому Мортона провоцирует всё, что сдавливает нерв между плюсневыми костями. Частые причины: узкая обувь или обувь с острым носком, высокие каблуки, повторяющиеся ударные нагрузки, например бег, а также форма стопы, например плоскостопие или высокий свод, при которой лишнее давление смещается вперёд. Чаще она встречается у женщин и в среднем возрасте.
+
+#### Что такое тест Малдера при невроме Мортона?
+
+Тест сжатия стопы, который иногда называют щелчком Малдера, представляет собой приём осмотра, которым врач пользуется, чтобы помочь диагностировать неврому Мортона. Врач сжимает передний отдел стопы с боков и одновременно надавливает между головками плюсневых костей. Ощутимый щелчок вместе с воспроизведением жгучей боли подтверждает диагноз, хотя врачу всё равно нужно исключить другие причины.
+
+#### Полезно ли ходить при невроме стопы?
+
+Сама ходьба нерву не вредит, но тесная обувь или обувь с тонкой подошвой при ходьбе может усиливать сдавление переднего отдела стопы и ухудшать симптомы. Короткие прогулки в широкой обуви с амортизацией обычно не вызывают проблем. Долгая ходьба по твёрдой поверхности или в узкой обуви часто усиливает жжение или покалывание между пальцами. Если ходьба постоянно вызывает симптомы, сначала смените обувь: обычно это помогает больше, чем сокращение активности.
 
 ## Боль в стопах у медсестёр: что помогает на 12-часовых сменах
 
@@ -11128,6 +11560,14 @@ Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Rev
 
 Да. В когорте Hansen 2018 года у 32 процентов тех, кто избавился от симптомов, был хотя бы один рецидив, прежде чем боль ушла окончательно. Картина «улучшение, рецидив, дальнейшее улучшение» встречается часто. Поддерживающая дозировка силовой работы для икр и растяжки после того, как боль прошла, один из способов снизить вероятность возвращения.
 
+#### Какие есть признаки, что плантарный фасциит заживает?
+
+Яснее всего это заметно по утренней боли: она становится слабее, первые шаги кажутся скованными, а не острыми, а сама боль проходит быстрее, как только вы начинаете двигаться. Многие замечают эту смену раньше, чем боль уходит полностью. В исследовании Rathleff и коллег группа с подъёмами на носки зафиксировала заметно лучший результат уже через три месяца, и именно тогда обычно и проявляется этот сдвиг.
+
+#### Что нельзя делать, если плантарный фасциит не проходит?
+
+Не бросайте упражнения сразу после того, как утренняя боль ослабла, и не гонитесь за одним быстрым решением вместо базовых мер. Боль, которая стихает ся раньше, чем фасция успела адаптироваться, частая причина возврата симптомов. Если боль держится на одном уровне или нарастает несколько месяцев, несмотря на растяжку, силовую работу и обувь с поддержкой, нужен врач, а не более долгое ожидание.
+
 ## Плантарный фасциит и пяточная шпора: это одно и то же?
 
 Language: Russian (Русский) · https://walkito.site/ru/plantarnyy-fastsiit-ili-pyatochnaya-shpora/ · published 2026-10-07 · updated 2026-10-07
@@ -11276,6 +11716,14 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 
 Почти никогда. Клинические рекомендации не рекомендуют удаление шпоры при плантарном фасциите. Около 90% людей с плантарным фасциитом становятся лучше при консервативном ведении: растяжке, укреплении икр и управлении нагрузкой (Latt и коллеги, 2020). Если после нескольких месяцев консервативного ведения рассматривается операция, она обычно заключается в рассечении подошвенной фасции, а не в удалении шпоры.
 
+#### Что будет, если продолжать ходить при пяточной шпоре?
+
+Ходьба не «вгонит» шпору в соседние ткани. Боль, усиливающаяся от ходьбы, обычно идёт от раздражённой подошвенной фасции рядом со шпорой, а не от самой кости. Клинические рекомендации 2023 года советуют регулировать нагрузку, например дистанцию или темп, а не прекращать ходьбу, если на следующее утро пятке становится хуже.
+
+#### Полезно ли массировать пяточную шпору?
+
+Лёгкий массаж вокруг шпоры может снять напряжение мягких тканей, но самую кость он не меняет. Перекатывание стопы с твёрдым, но не резким давлением может расслабить фасцию и икру, именно те ткани, которые обычно и вызывают боль. Рекомендации оценивают ручную терапию у специалиста на уровне A; самомассаж это способ снять дискомфорт, а не замена растяжке.
+
 ## Упражнения при дисфункции сухожилия задней большеберцовой мышцы: что помогает и когда
 
 Language: Russian (Русский) · https://walkito.site/ru/disfunktsiya-zadnego-bolshebertsovogo-sukhozhiliya/ · published 2026-10-07 · updated 2026-10-07
@@ -11328,7 +11776,7 @@ Source: Ross MH, Smith MD, Mellor R, Vicenzino B. Exercise for posterior tibial 
 Source: Kulig K, Reischl SF, Pomrantz AB, et al. Nonsurgical management of posterior tibial tendon dysfunction with orthoses and resistive exercise: a randomized controlled trial. Physical Therapy. 2009;89(1):26–37.
 Source: Houck J, Neville C, Tome J, Flemister A. Randomized Controlled Trial Comparing Orthosis Augmented by Either Stretching or Stretching and Strengthening for Stage II Tibialis Posterior Tendon Dysfunction. Foot & Ankle International. 2015;36(9):1006–16.
 
-### Упражнения
+### Какие упражнения помогают при дисфункции сухожилия задней большеберцовой мышцы?
 
 Упражнения ниже нацелены на заднюю большеберцовую мышцу и мышцы, поддерживающие свод. Поворот стопы внутрь с лентой тренирует заднюю большеберцовую мышцу напрямую. Подъёмы на носки с акцентом на свод нагружают сухожилие при функциональном движении. «Короткая стопа» укрепляет собственные мышцы стопы, которые помогают своду. Растяжка икры направлена на частую находку при PTTD: ограниченное тыльное сгибание голеностопа.
 
@@ -11427,6 +11875,14 @@ PTTD является одной из более частых причин бо�
 #### Когда при PTTD нужна операция?
 
 Операцию обычно обсуждают, если консервативные меры, то есть упражнения, стельки и иногда ортопедический сапожок, не улучшили симптомы за несколько месяцев, или деформация прогрессировала до стадии III или IV, когда стопа ригидно плоская или вовлечён голеностопный сустав. Большинство случаев стадий I и II откликаются на консервативные меры.
+
+#### Можно ли ходить при тендините задней большеберцовой мышцы?
+
+Не обязательно вредно, но много ходьбы может ухудшить состояние. Каждый шаг нагружает сухожилие, которое держит свод, поэтому длительная ходьба по раздражённому сухожилию часто усиливает боль. На ранних этапах нужно снизить именно эту нагрузку, а не отказаться от ходьбы совсем, вместе со стельками и упражнениями выше. Если прогулка вызывает боль, уменьшите её объём.
+
+#### Что усиливает боль при тендините задней большеберцовой мышцы?
+
+Всё, что повторно нагружает раздражённое сухожилие: долгое стояние или ходьба, подъёмы в горку, неровная поверхность и изношенная обувь. Лишний вес добавляет нагрузку на каждый шаг, а резкий скачок активности часто становится триггером. Это не значит, что нужен полный покой, значит снизить нагрузку и добавить стельки и упражнения выше.
 
 ## Сезамоидит: что это, что помогает и когда нужна визуализация
 
@@ -11538,6 +11994,14 @@ Hallux rigidus (тугоподвижность и артрит сустава б
 
 Ни одно упражнение не проверялось в качестве профилактики сезамоидита. Растяжка икры для снижения передней нагрузки и укрепление собственных мышц стопы для более равномерного распределения давления считаются разумными идеями, но именно для этого состояния они не доказаны. Постоянное использование подушечки «танцора» и подходящей обуви остаётся более устоявшейся стратегией.
 
+#### Что будет, если не лечить сезамоидит?
+
+Без изменения нагрузки сезамоидит часто затягивается или обостряется при активности. В обзоре 2025 года по консервативной терапии боль уменьшилась примерно в двух третях случаев, но рецидивы были частыми даже при лечении. Без разгрузки или смены активности стоит ожидать, что боль сохранится и будет по-прежнему ограничивать бег и отталкивание.
+
+#### Можно ли делать массаж при сезамоидите?
+
+Мягкий массаж вокруг зоны может немного уменьшить недомогание, но сильное давление именно на сесамовидные кости часто усиливает боль, а не снижает её, ведь именно там находится раздражённая ткань. Для работы над передним отделом лучше растягивать икру, снимая часть нагрузки с сесамовидных костей, вместо того чтобы надавливать на само больное место.
+
 ## Болезнь Севера: что это, что помогает и когда обратиться к врачу
 
 Language: Russian (Русский) · https://walkito.site/ru/bolezn-severa/ · published 2026-10-07 · updated 2026-10-07
@@ -11605,7 +12069,7 @@ Source: Perhamre S, Lundin F, Norlin R, Klässbo M. Sever's injury; treat it wit
 
 Source: Wiegerinck JI, Zwiers R, Sierevelt IN, van Weert HC, van Dijk CN, Struijs PA. Treatment of Calcaneal Apophysitis: Wait and See Versus Orthotic Device Versus Physical Therapy: A Pragmatic Therapeutic Randomized Clinical Trial. Journal of Pediatric Orthopedics. 2016;36(2):152–7.
 
-### Подпяточники и стельки
+### Помогают ли подпяточники и стельки при болезни Севера?
 
 Подпяточники относятся к самым практичным вмешательствам при болезни Севера. Они амортизируют пятку, поглощают удар и снижают пиковые нагрузки, доходящие до зоны роста. Перекрёстное исследование Perhamre показало, что подпяточник уменьшил боль примерно на 80 % по сравнению с пяточным клином у 51 мальчика, что говорит о том, что амортизация удара в области пятки важнее, чем простое изменение угла.
 
@@ -11616,7 +12080,7 @@ Source: Wiegerinck JI, Zwiers R, Sierevelt IN, van Weert HC, van Dijk CN, Struij
 Source: Perhamre S, Lundin F, Norlin R, Klässbo M. Sever's injury; treat it with a heel cup: a randomized, crossover study with two insole alternatives. Scandinavian Journal of Medicine & Science in Sports. 2011;21(6):e42–7.
 Source: James AM, Williams CM, Haines TP. Effectiveness of footwear and foot orthoses for calcaneal apophysitis: a 12-month factorial randomised trial. British Journal of Sports Medicine. 2016;50(20):1268–1275.
 
-### Растяжка и укрепление икры
+### Помогает ли растяжка икры при болезни Севера?
 
 Тугоподвижность икроножных мышц усиливает натяжение на зону роста, и тугоподвижность икры является одним из признанных факторов риска апофизита пяточной кости. Растяжка икроножной мышцы (наружная мышца икры, растягивается с прямым коленом) и камбаловидной мышцы (более глубокая мышца, растягивается с согнутым коленом) входит в стандартные рекомендации.
 
@@ -11686,6 +12150,14 @@ Walkito создано для взрослых с болью в пятке и с
 
 Walkito создано для взрослых с болью в пятке и своде стопы. Его дозировки, пороги боли и правила прогрессии рассчитаны на организм взрослого человека, а не на открытую зону роста ребёнка. Для составления программы упражнений для ребёнка обратитесь к детскому спортивному врачу или ортопеду.
 
+#### С чем можно спутать болезнь Севера?
+
+У растущего ребёнка раздражение ахиллова сухожилия, стрессовый перелом пяточной кости и ретрокальканеальный бурсит дают похожую картину. Положительный симптом сдавления (боль при сдавливании боковых поверхностей пятки), возраст от 8 до 15 лет и недавний скачок нагрузки говорят скорее в пользу болезни Севера. Единичная травма, отёк или усиление боли в одной точке требуют осмотра врача, чтобы исключить перелом.
+
+#### Как клеить кинезиотейп при болезни Севера?
+
+Исследований кинезиотейпа при болезни Севера нет, так что ни один способ наклейвания не доказан лучше подпяточников или коррекции нагрузки. Некоторые врачи клеят ленту вдоль ахиллова сухожилия и под пяткой, чтобы снизить натяжение на зону роста. Заклеивать самостоятельно не стоит, попрсите врача или физиотерапевта нанести тейп и следующий раз сделать самим.
+
 ## Упражнения при периостите голени: что помогает, а что нет
 
 Language: Russian (Русский) · https://walkito.site/ru/periostit-goleni-uprazhneniya/ · published 2026-10-04 · updated 2026-10-07
@@ -11709,7 +12181,7 @@ Source: Menéndez C, Batalla L, Prieto A, Rodríguez MÁ, Crespo I, Olmedillas H
 Source: Winters M, Eskes M, Weir A, Moen MH, Backx FJG, Bakker EWP. Treatment of medial tibial stress syndrome: a systematic review. Sports Medicine. 2013;43(12):1315–1333.
 Source: Moen MH, Holtslag L, Bakker E, et al. The treatment of medial tibial stress syndrome in athletes; a randomized clinical trial. Sports Medicine, Arthroscopy, Rehabilitation, Therapy & Technology. 2012;4:12.
 
-### Упражнения и стартовые дозировки
+### Какие упражнения помогают при периостите голени и сколько их делать?
 
 Ниже перечислены упражнения из каталога приложения, которые пересекаются с мышцами и факторами риска, выявленными в исследованиях периостита. Растяжка икр и подъёмы на носки совпадают с теми, что на странице [упражнения при плантарном фасциите и боли в пятке](https://walkito.site/ru/bol-v-pyatke-uprazhneniya/), для тех же тканей. Это стартовые дозировки, а не назначение. Каждая пометка об уровне доказательств ниже отмечена как **начальные**, потому что ни одно упражнение в этом списке не доказало способность сократить восстановление при периостите в исследовании. [Как написаны эти гайды](https://walkito.site/ru/o-proekte/).
 
@@ -11809,6 +12281,14 @@ Source: Moen MH, Holtslag L, Bakker E, et al. The treatment of medial tibial str
 #### Существует ли конкретное упражнение, предотвращающее возвращение периостита?
 
 Ни одно конкретное упражнение не подкреплено данными исследований для профилактики периостита. Факторы риска из двух мета-анализов, включая ИМТ, опускание свода и стаж бега, указывают на постепенное управление нагрузкой и общее укрепление голени, а не на какое-то одно движение. Менее удовлетворительный ответ, чем конкретное упражнение, но именно это показывают исследования.
+
+#### С чем часто путают периостит голени?
+
+Стрессовый перелом большеберцовой кости, хронический компартмент-синдром при нагрузке и тендинопатия задней большеберцовой мышцы могут давать боль в голени и ошибочно называться периоститом. Стрессовый перелом обычно болит в одной конкретной точке кости, а компартмент-синдром вызывает нарастающее во время бега распирание и онемение, которое быстро проходит после остановки. Оба состояния требуют врача, а не дополнительной нагрузки.
+
+#### Можно ли ходить при периостите голени?
+
+Обычно да. Ходьба даёт меньшую нагрузку, чем бег, и многие люди с синдромом медиального напряжения большеберцовой кости могут ходить без обострения, если боль остаётся лёгкой и быстро утихает после нагрузки. Если сама ходьба вызывает резкую боль в одной точке кости, остановитесь и покажитесь врачу: такой паттерн ближе к стрессовому перелому, чем к периоститу.
 
 ## Боль в стопах от стоячего стола: почему и что помогает
 
@@ -11947,7 +12427,15 @@ Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fas
 
 #### Почему стоять на месте больнее, чем ходить?
 
-Ходьба задействует мышечный насос икры, который проталкивает кровь вверх из нижних конечностей при каждом шаге. Стояние на месте этот насос выключает, и кровь скапливается в стопах и ногах, а мышцы удерживают одно и то же статическое положение вместо циклического сокращения и расслабления. Систематический обзор 2017 года подтвердил этот механизм и обнаружил, что симптомы в нижних конечностях стабильно развиваются при статическом стоянии в лабораторных условиях.
+Ходьба задействует мышечный насос икры, который проталкивает кровь вверх из нижних конечностей при каждом шаге. Стояние на месте этот насос выключает, и кровь скапливается в стопах и ногах, а мышцы удерживают одно и то же статическое положение вместо циклического сокращения и расслабления. Систематический обзор 2017 года подтвердил этот механизм и обнаружил, что симптомы в нижних конечностях стабильно развивается при статическом стоянии в лабораторных условиях.
+
+#### Что такое правило 20-8-2 для стоячего стола?
+
+Правилом 20-8-2 называют зргономическую рекомендацию: делить каждые 30 минут на 20 минут сидя, 8 минут стоя и 2 минуты в движении. Буквальных исследований за ним нет, это общей ориентир в эргономике, но он совпадает с главной идей этой страницы: одно положение тела много часов подряд не идеален, а частая смена позы снижает статическую нагрузку, которая и вызывает усталость стоп.
+
+#### Усиливает ли стояние плантарный фасциит?
+
+Может усиливать. Стояние держит подошвенную фасцию и икру под постоянной нагрузкой без перерывов на ходьбу, которые разгоняют кровь и снимают напряжение. Исследования длительного стояния называют стояние большую часть рабочего дня самостоятельным фактором риска плантарного фасциита. Если у вас уже есть плантарный фасциит, стоячий стол на твёрдом полу без перерывов и растяжки может ухудшить симптомы.
 
 ## Почему болят ноги от долгого стояния на ногах?
 
@@ -11971,7 +12459,7 @@ Language: Russian (Русский) · https://walkito.site/ru/bolyat-nogi-ot-sto
 Source: Waters TR, Dick RB. Evidence of health risks associated with prolonged standing at work and intervention effectiveness. Rehabilitation Nursing. 2015;40(3):148–165.
 Source: Riddle DL, Pulisic M, Pidcoe P, Johnson RE. Risk factors for plantar fasciitis: a matched case-control study. Journal of Bone and Joint Surgery (American). 2003;85(5):872–877.
 
-### Упражнения при боли в стопах от стояния и стартовые дозировки
+### Какие упражнения помогают при боли в стопах от стояния?
 
 Упражнения при боли в стопах от стояния начинаются с растяжки икр и подошвенной фасции и переходят к подъёмам на носки и работе со сводом. Это стартовые дозировки Walkito, а не назначение. [Как написаны эти гайды](https://walkito.site/ru/o-proekte/).
 
@@ -12057,6 +12545,14 @@ Source: Latt LD, Jaffe DE, Tang Y, Taljanovic MS. Evaluation and treatment of ch
 #### С чего лучше начать при боли в стопах от стояния?
 
 Из мер самопомощи, рассмотренных на этой странице, растяжка икр и подошвенной фасции имеет высший уровень доказательности (A) в рекомендациях 2023 года по боли в пятке, а компрессионные чулки имеют наиболее качественное контролируемое исследование именно для дискомфорта от стояния. Начните с ежедневной растяжки икр и попробуйте компрессионные чулки на следующей длинной смене.
+
+#### Сколько времени можно стоять на ногах без вреда для здоровья?
+
+Единого проверенного безопасного предела нет. Исследования по охране труда показывают, что дискомфорт, усталость и отёк нарастают, чем дольше смена проходит стоя, особенно заметно при сменах длиной 8-12 часов. Комфорт зависит больше от движения, чем от числа часов: короткие перерывы сидя или на ходьбе каждый час помогают снизить статическую нагрузку, которую стояние даёт стопам.
+
+#### Как простоять 10 часов без боли в ногах?
+
+Один приём не снимет боль от 10-часовой смены, но вместе обычно помогают: обувь с амортизацией и поддержкой, коврик под ноги на твёрдом полу, короткие перерывы на ходьбу каждый час, чтобы восстановить кровообращение, и ежедневная растяжка икр и подошвенной фасции. В одном исследовании охранников на долгих сменах компрессионные гольфы снизили дискомфорт и отёк.
 
 ## Боль в подъёме стопы: что её вызывает и когда обратиться к врачу
 
@@ -12189,6 +12685,14 @@ Walkito создан вокруг боли в пятке и плоскостоп
 
 Обратитесь к врачу, если боль сосредоточена в одной точке и нарастает, если над больным местом есть покраснение или жар, если боль не прошла за неделю покоя и смены обуви, если она возникла внезапно после травмы или если есть онемение или покалывание. Стрессовый перелом, подагра и проблемы с нервом выигрывают от ранней оценки.
 
+#### Можно ли дальше ходить при тендините разгибателей стопы?
+
+Да, ходить с тендинитом разгибателей обычно можно, если боль остаётся лёгкой и не усиливается. Выбирайте обувь с мягким, гибким язычком и ослабьте или перезавяжите шнурки, чтобы снять давление с болезных сухожилий. Если ходьба заметно усиливает боль или ноет держится часами после, сократите дистанцию, до тех пор, пока смена шнуровки и отдых не снизят боль.
+
+#### Сколько заживает тендинит разгибателей стопы?
+
+Ни одно исследование не отслеживало сроки восстановления именно при этом тендините, так что проверенных сроков нет. Лёгкие случаи от тугих шнурков обычно стихаются после снятия давления. Случаи, связанные с ростом нагрузки или постоянным давлением обуви, могут тянуться дольше, иногда несколько недель, особенно если причина не устранена полностью.
+
 ## Walkito vs Exakt Health: какое приложение подходит вам?
 
 Language: Russian (Русский) · https://walkito.site/ru/walkito-vs-exakt-health/ · published 2026-10-04 · updated 2026-10-07
@@ -12233,7 +12737,7 @@ Walkito спрашивает о локализации боли, стороне,
 
 Главное отличие в том, что Exakt следует структурированной прогрессии по уровням, а Walkito следует прогрессии по целям, где утренний опрос каждый день корректирует интенсивность.
 
-### Охват состояний
+### Какие состояния покрывает каждое приложение?
 
 Здесь Exakt явно сильнее. Его планы реабилитации покрывают плантарный фасциит, тендинопатию ахиллова сухожилия, растяжения голеностопа, травмы задней поверхности бедра, повреждения мениска, «колено бегуна» и другое. Если боль в колене, бедре или задней поверхности бедра, у Walkito плана для неё нет.
 
@@ -12242,7 +12746,7 @@ Walkito покрывает плантарный фасциит, плоскост
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### Сравнение цен
+### Сколько стоят Walkito и Exakt Health?
 
 Walkito стоит $44,99/год или $7,99/нед. В пересчёте на неделю это примерно $0,87. Пробный период не указан в App Store, хотя условия использования допускают вступительные предложения.
 
@@ -12266,7 +12770,7 @@ Walkito читает данные Apple Health (шаги, сон, асиммет
 
 Оба приложения собирают стандартные данные об использовании. Ни одно не продаёт данные о здоровье. Подход Walkito, где данные Apple Health хранятся на устройстве, даёт более строгую модель конфиденциальности.
 
-### Доказательная база
+### На каких доказательствах основано каждое приложение?
 
 Exakt Health сертифицирован как медицинское изделие в ЕС (Германия), что требует доказательств безопасности и назначения. Создан лицензированными спортивными физиотерапевтами. На странице в App Store и на странице с ценами указано, что методы основаны на доказательствах, но конкретные исследования не перечислены.
 
@@ -12277,7 +12781,7 @@ Walkito перечисляет свои источники данных на с�
 Source: Koc TA Jr, Bise CG, Neville C, et al. Heel Pain - Plantar Fasciitis: Revision 2023. Journal of Orthopaedic & Sports Physical Therapy. 2023;53(12):CPG1–CPG39.
 Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength training improves outcome in patients with plantar fasciitis: a randomized controlled trial with 12-month follow-up. Scandinavian Journal of Medicine & Science in Sports. 2015;25(3):e292–e300.
 
-### Когда выбрать Exakt Health вместо Walkito
+### Когда лучше выбрать Exakt Health вместо Walkito?
 
 Выберите Exakt Health, если верно хотя бы одно из следующего:
 
@@ -12288,7 +12792,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - Для вас важна сертификация как медицинское изделие в ЕС.
 - Вам нужно приложение на французском или немецком.
 
-### Когда выбрать Walkito вместо Exakt Health
+### Когда лучше выбрать Walkito вместо Exakt Health?
 
 Выберите Walkito, если верно хотя бы одно из следующего:
 

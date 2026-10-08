@@ -35,6 +35,7 @@ export const SESAMOIDITIS_ES: Guide = {
     },
     {
       h2: '¿Cómo se diferencia la sesamoiditis de una fractura de sesamoideo?',
+      keyFact: 'Cerca de 1 de cada 10 personas tiene un sesamoideo bipartito, una variante normal que puede verse como una fractura en la radiografía pero tiene bordes lisos y redondeados en vez de dentados (Yammine, 2015).',
       paragraphs: [
         'La sesamoiditis es una condición por sobreuso. El dolor aparece poco a poco y duele durante la actividad. Una fractura de sesamoideo es una fisura en el hueso, casi siempre por un evento agudo o por estrés crónico. El dolor de la fractura tiende a ser más agudo y puede estar presente incluso en reposo.',
         'Una complicación es que cerca de 1 de cada 10 personas tiene un sesamoideo bipartito, es decir, el sesamoideo medial viene naturalmente en dos piezas. En una radiografía, un sesamoideo bipartito se ve como una fractura. La diferencia está en los bordes: los bordes del bipartito son lisos y redondeados, mientras que los bordes de una fractura son irregulares y dentados. Tu profesional de la salud también puede radiografiar el otro pie para comparar.',
@@ -44,6 +45,7 @@ export const SESAMOIDITIS_ES: Guide = {
     },
     {
       h2: '¿Cómo es el manejo conservador?',
+      keyFact: 'Una revisión de 2025 que reunió 11 estudios y 59 pacientes encontró que las puntuaciones de dolor mejoraron en cerca del 66 por ciento de los casos tratados de forma conservadora, aunque la recurrencia fue común (Biz y colegas, 2025).',
       paragraphs: [
         'La revisión sistemática de 2025 de Biz y colegas reunió datos individuales de 11\u00A0estudios con 59\u00A0pacientes. Los tratamientos más comunes fueron órtesis, modificación de actividad e inyecciones de corticosteroides. Las puntuaciones de dolor mejoraron en cerca del 66\u00A0por ciento de los casos, pero la recurrencia fue común y algunos pacientes seguían con síntomas.',
         'La revisión encontró que las órtesis y la descarga se usaron en casi todos los casos. Las inyecciones de corticosteroides dieron alivio a corto plazo pero tenían riesgo de recurrencia. Ningún tratamiento se comparó directamente en un ensayo aleatorizado. Los autores concluyeron que se necesitan protocolos estandarizados y estudios de mayor calidad.',
@@ -113,6 +115,15 @@ export const SESAMOIDITIS_ES: Guide = {
     {
       q: '¿Los ejercicios pueden prevenir que la sesamoiditis vuelva?',
       a: 'Ningún ejercicio se ha probado para la prevención de la sesamoiditis. Estirar las pantorrillas para reducir la carga en la parte delantera del pie y fortalecer los músculos intrínsecos del pie para repartir la presión de forma más pareja son ideas razonables, pero no están comprobadas para esta condición en específico. El uso continuo de una almohadilla de bailarina y calzado adecuado es la estrategia con más respaldo.',
+    },
+    {
+      q: '¿Qué pasa si no se trata la sesamoiditis?',
+      a: 'Sin cambios en la carga, la sesamoiditis suele persistir o tener brotes con la actividad. Una revisión de 2025 sobre cuidado conservador encontró mejoría del dolor en cerca de dos tercios de los casos, pero la recaída fue común incluso con tratamiento. Sin descarga ni cambio de actividad, espera que el dolor siga y limite cuánto puedes correr o impulsarte con el pie.',
+      cites: [CITE.bizSesamoiditis],
+    },
+    {
+      q: '¿Es bueno masajear la sesamoiditis?',
+      a: 'Un masaje suave alrededor de la zona puede aliviar algo de molestia, pero la presión firme justo sobre los huesos sesamoideos suele empeorar el dolor, no mejorarlo, porque es exactamente donde está el tejido irritado. Si quieres trabajar la parte delantera del pie, mejor estira la pantorrilla, lo que quita algo de carga de los sesamoideos, en lugar de presionar directamente sobre el punto dolorido.',
     },
   ],
   redFlags: {

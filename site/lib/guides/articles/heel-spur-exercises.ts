@@ -45,12 +45,13 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
     'The 2023 heel pain guideline gives plantar fascia and calf stretching its top grade, **A**, and strength training a **B** (Koc and colleagues, 2023).',
     'In a trial of 48 people with plantar fasciitis, heavy heel raises with a towel under the toes eased pain faster than stretching alone at three months, though by twelve months both groups were even (Rathleff and colleagues, 2015).',
     'A tight calf, measured as reduced ankle dorsiflexion, was the strongest independent risk factor for plantar fasciitis in a matched case-control study of 50 cases and 100 controls (Riddle and colleagues, 2003).',
-    'A systematic review and meta-analysis found that both calf stretching and plantar fascia stretching reduced pain compared with no stretching, with plantar fascia stretching showing a slight edge (Siriphorn and Eksakulkla, 2020).',
+    'A systematic review and meta-analysis found that both calf stretching and plantar fascia stretching reduced pain compared with no stretching (Siriphorn and Eksakulkla, 2020).',
   ],
   toc: true,
   sections: [
     {
       h2: 'Why do exercises help a heel spur?',
+      keyFact: 'In a study of 530 people with foot pain, a heel spur appeared alone in only 6 percent of feet, usually alongside a thickened plantar fascia (Menz and colleagues, 2019).',
       paragraphs: [
         'The heel spur is a bony growth on the underside of the heel bone. In a study of 530 people aged 50 and over with foot pain, a heel spur on its own was rare (6% of feet), and heel pain was linked to a spur together with a thickened plantar fascia, the band of tissue under the foot (Menz and colleagues, 2019). The pain comes from the soft tissue, and that is what exercise can reach.',
         'Stretching the plantar fascia and the calf reduces the tension on the heel attachment. Strengthening the calf builds the capacity of the chain that absorbs load every time the heel strikes the ground. Together, they lower the daily stress on the tissue around the spur.',
@@ -59,7 +60,8 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       cites: [CITE.menzCoexistence, CITE.guideline],
     },
     {
-      h2: 'The stretches',
+      h2: 'Which stretches help heel spur pain?',
+      keyFact: 'A systematic review found both calf stretching and plantar fascia stretching eased plantar fasciitis pain compared with no stretching (Siriphorn and Eksakulkla, 2020).',
       paragraphs: [
         'Stretching is the starting point. The 2023 guideline grades plantar fascia and calf stretching **A**, its top grade. A systematic review and meta-analysis of stretching for plantar fasciitis found that both calf stretching and plantar fascia stretching reduced pain compared with no stretching (Siriphorn and Eksakulkla, 2020). Start with these three.',
       ],
@@ -104,7 +106,8 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       cites: [CITE.guideline, CITE.siriphorn, CITE.digiovanni2003, CITE.riddle],
     },
     {
-      h2: 'The strengthening exercises',
+      h2: 'Which strengthening exercises help heel spur pain?',
+      keyFact: 'In a trial of 48 people, the heel-raise group scored 29 points better on the Foot Function Index than the stretching-only group at three months (Rathleff and colleagues, 2015).',
       paragraphs: [
         'Stretching alone is often enough in the first few weeks. Once the morning pain starts settling, adding calf strengthening builds the capacity the heel chain needs. The guideline grades strength training **B**, its second-highest grade. In the only trial built to test heel raises for plantar fasciitis, 48 people were split into a loaded heel-raise group and a stretching-only group. The heel-raise group scored 29 points better on the Foot Function Index at three months (Rathleff and colleagues, 2015).',
         'Start at the easiest level and move up only when it feels easy for two sessions in a row. The progression below runs from seated work to the loaded towel raise from the trial.',
@@ -162,7 +165,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       cites: [CITE.guideline, CITE.rathleff],
     },
     {
-      h2: 'How to progress through the exercises',
+      h2: 'How do you progress the heel spur exercises?',
       paragraphs: [
         'Progress by feel, not by calendar. The rule is: if the current level felt easy for two sessions in a row, move up one step. If morning pain is worse after a session, stay at the current level or step back.',
       ],
@@ -285,6 +288,16 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       q: 'Is walking good for heel spurs?',
       cites: [CITE.guideline],
       a: 'Walking itself is not the problem. Walking in supportive shoes at a comfortable pace is usually fine and better than complete rest. The pain comes from the plantar fascia and calf under the spur, and moderate walking keeps the calf pump active. If walking makes your morning pain worse the next day, shorten the distance and build it back gradually.',
+    },
+    {
+      q: 'What exercises should you avoid if you have a heel spur?',
+      cites: [CITE.guideline],
+      a: 'Skip high-impact moves like running, jumping and plyometrics while the heel is flared; repeated pounding on a hard surface strains the tissue next to the spur. Deep heel drops off a step edge can also overload an irritated fascia. The 2023 guideline supports adjusting load rather than banning exercises; the test is whether your heel feels worse the next morning.',
+    },
+    {
+      q: 'What flares up heel spur pain?',
+      cites: [CITE.guideline, CITE.riddle],
+      a: 'Repeated pounding on a hard surface is the most common trigger: running, jumping, or standing for hours flares the soft tissue next to the spur the same way it flares plain plantar fasciitis. A sudden jump in activity, worn shoes, and barefoot walking on tile can bring it on. Adjusting the load, not the bone, is what settles a flare.',
     },
   ],
   redFlags: {

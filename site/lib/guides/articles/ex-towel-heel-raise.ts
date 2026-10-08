@@ -36,7 +36,7 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
       cites: [CITE.rathleff],
     },
     {
-      h2: 'How to do the towel heel raise',
+      h2: 'How do you do the towel heel raise?',
       paragraphs: [
         'Roll a small hand towel into a cylinder about the width of your fist. Place it on the edge of a step. Stand on one foot with all five toes on the towel and the ball of the foot on the step. Hold a wall or rail for balance.',
         'Rise up over three seconds, pushing through the big toe. Hold at the top for two seconds. Lower over three seconds, letting the heel sink slightly below the step. That slow tempo is part of the protocol. Fast reps reduce the load on the tendon and fascia.',
@@ -78,7 +78,7 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
       cites: [CITE.rathleff],
     },
     {
-      h2: 'Common mistakes with the towel heel raise',
+      h2: 'What are the common mistakes with the towel heel raise?',
       paragraphs: [
         'Going too fast is the most common mistake. A three-second descent keeps the calf under tension long enough to build strength. Bouncing up and down turns it into a cardio exercise, not a strength one.',
         'Letting the towel slip so only one or two toes sit on it reduces the fascia load. All five toes should be on the towel. If the towel keeps sliding, fold it thicker or use a hand towel instead of a bath towel.',
@@ -94,6 +94,7 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
     },
     {
       h2: 'What does the research say about towel heel raises?',
+      keyFact: 'In a trial of 48 people with confirmed plantar fasciitis, towel heel raises scored better on the Foot Function Index at three months, but outcomes were similar to stretching alone by twelve months (Rathleff and colleagues, 2015).',
       paragraphs: [
         'The Rathleff 2015 trial is the only randomized trial that tested the towel heel raise specifically for plantar fasciitis. In 48 people with ultrasound-confirmed plantar fasciitis, the heel-raise group scored 29 points better on the Foot Function Index at three months than the stretching-only group. By twelve months, both groups had converged.',
         'The 2023 heel pain guideline reviewed this and other evidence and gave strength training a grade of **B** and stretching a grade of **A**. Both are recommended. The guideline does not single out the towel variant, but it is the only strength exercise tested in its own plantar-fasciitis trial.',

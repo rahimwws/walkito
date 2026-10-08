@@ -81,6 +81,7 @@ export const SHIN_SPLINTS_EN: Guide = {
   sections: [
     {
       h2: 'What are shin splints, and what exercises actually help?',
+      keyFact: 'A 2013 systematic review covering 11 treatment trials for shin splints concluded no stretching or strengthening approach had clear evidence of speeding recovery (Winters and colleagues, 2013).',
       paragraphs: [
         'Shin splints, or medial tibial stress syndrome, is an overuse injury of the shinbone and the tissue around it. The pain is typically diffuse, spread along the inner edge of the tibia over several inches, and it usually starts during or after running. A 2020 review of novice and recreational runners found the clearest links were in how runners move, including more hip rotation and a foot that rolls inward more than usual.',
         'The honest answer about exercises for shin splints is that no specific exercise program has been shown to speed up recovery in a controlled trial. A 2013 systematic review looked at 11 treatment studies and concluded that stretching and strengthening "have not been proven to be effective in treating MTSS." In the only randomized trial with an exercise arm, 74 athletes were split into three groups: a graded running program alone, the same program plus calf stretching and strengthening, and the same program plus compression stockings. All three groups improved at a similar rate.',
@@ -89,7 +90,7 @@ export const SHIN_SPLINTS_EN: Guide = {
       cites: [CITE.mtssReview, CITE.winters, CITE.moen],
     },
     {
-      h2: 'The exercises, with starting doses',
+      h2: 'Which exercises help shin splints, and how much should you do?',
       paragraphs: [
         'These are exercises from the app\'s catalogue that overlap with the muscles and risk factors identified in shin splints research. The calf stretches and heel raises are the same ones used in [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/), targeting the same tissues. They are starting doses, not a prescription. Every evidence label below is **early**, because no exercise on this list has been proven to shorten shin splint recovery in a trial. [How these guides are written](/about/).',
         'If you mark the shin as sore in the check-in, Walkito gives ankle rocks and foot roll. Toe raises appear in the general plan as an accessory from level 2 onward, rotating with ankle rocks. There is no dedicated shin splints program. If any exercise takes your pain to **6/10 or more**, stop for the day.',
@@ -242,6 +243,7 @@ export const SHIN_SPLINTS_EN: Guide = {
     },
     {
       h2: 'Can you keep running with shin splints?',
+      keyFact: 'A 2008 trial of 532 new runners found no difference in injury rates between a 10% weekly mileage increase and a faster progression, leaving that rule unproven (Buist and colleagues, 2008).',
       paragraphs: [
         'There is no trial that tells you exactly how much to cut back. What has some support is the shape of a graded running program: in the only randomized trial, all three study groups followed a progressive return to running, and all three improved at about the same rate. The running program, not the added exercises or compression, was the constant.',
         'Sharp pain during a run, pain that gets worse as you go, or pain at rest are reasons to stop and have it checked instead of running through it. If the pain eases with warm-up and stays manageable, a shorter or easier run at a lower frequency is a reasonable middle ground while the shin adapts. Rest days between runs give the bone time to respond to the load.',
@@ -259,6 +261,7 @@ export const SHIN_SPLINTS_EN: Guide = {
     },
     {
       h2: 'How long do shin splints take to improve?',
+      keyFact: 'In a trial of 74 athletes with shin splints, the mean time to complete the running program was about 105 days across the three groups, though the range was wide (Moen and colleagues, 2012).',
       paragraphs: [
         'Sources vary and none point to a single trial-backed number. General overuse-injury guidance is that mild cases ease within a few weeks of reduced activity, while cases tied to recurring training errors can take longer if the same load returns before the tissue has adapted.',
         'In the randomized trial of 74 athletes with shin splints, the mean time to complete the running program was about 102 to 118 days across the three groups (overall mean 105 days), though the range was wide.',
@@ -296,6 +299,16 @@ export const SHIN_SPLINTS_EN: Guide = {
       q: 'Does a specific exercise prevent shin splints from coming back?',
       a: 'No single exercise has trial-level evidence for preventing shin splints. The risk factors from two meta-analyses, including BMI, arch drop and running experience, point toward gradual training-load management and general lower-leg conditioning instead of one particular move. That is a less satisfying answer than a named exercise, but it is what the research supports.',
       cites: [CITE.newman, CITE.hamstraWright],
+    },
+    {
+      q: 'What is commonly mistaken for shin splints?',
+      cites: [CITE.mtssReview],
+      a: 'A tibial stress fracture, chronic exertional compartment syndrome, and posterior tibial tendinopathy can all cause shin pain and get labeled shin splints. A stress fracture tends to hurt at one specific point on the bone, while compartment syndrome causes tightness and numbness that builds during a run and eases soon after stopping. Both need a clinician rather than more loading.',
+    },
+    {
+      q: 'Should you walk with shin splints?',
+      cites: [CITE.mtssReview],
+      a: 'Usually yes. Walking is lower-impact than running, and many people with medial tibial stress syndrome can keep walking without a flare, as long as pain stays mild and settles quickly afterward. If walking itself reproduces sharp pain at a single point on the bone, stop and get it checked, since that pattern fits a stress fracture more than shin splints.',
     },
   ],
   redFlags: {

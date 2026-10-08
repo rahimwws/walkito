@@ -25,6 +25,7 @@ export const TOP_OF_FOOT_EN: Guide = {
   sections: [
     {
       h2: 'What causes pain on the top of the foot?',
+      keyFact: 'A metatarsal stress fracture may not show up on a plain X-ray for two to three weeks after symptoms start, so an MRI can confirm it earlier (Patel and colleagues, 2011).',
       paragraphs: [
         '**Extensor tendonitis** is the most common cause. The extensor tendons run along the top of the foot from the shin to the toes. They lift the toes and the foot during walking. When they become irritated, you feel an ache along the top of the foot that gets worse with activity and often hurts when you pull the toes upward against resistance. The usual triggers are tight shoe laces pressing directly on the tendons, a sudden increase in walking or running distance, or shoes with a rigid tongue.',
         '**Metatarsal stress fracture** is a small crack in one of the long bones of the foot, usually the second or third metatarsal. The pain is more localized than tendonitis, sits over one specific spot, and tends to get worse through the day. Swelling on the top of the foot is common. Stress fractures can take two to three weeks to show on a plain X-ray, so early imaging may need an MRI. This one needs rest, not exercise.',
@@ -155,6 +156,14 @@ export const TOP_OF_FOOT_EN: Guide = {
     {
       q: 'Should I see a doctor for top of foot pain?',
       a: 'See a clinician if the pain is localized to one spot and getting worse, if there is redness or heat over the sore area, if the pain persists after a week of rest and shoe changes, if it came on suddenly after an injury, or if there is numbness or tingling. Stress fractures, gout, and nerve problems all benefit from early assessment.',
+    },
+    {
+      q: 'Can I still walk with extensor tendonitis?',
+      a: 'Yes, walking with extensor tendonitis is usually fine if the pain stays mild and does not get worse. Choose shoes with a soft, flexible tongue and loosen or re-lace to take pressure off the sore tendons. If walking increases pain significantly or the ache lingers for hours afterward, cut back distance until a lacing change and rest bring it down.',
+    },
+    {
+      q: 'How long does it take for extensor tendonitis in the foot to heal?',
+      a: 'No trial has tracked recovery time for extensor tendonitis specifically, so there is no tested timeline. Mild cases triggered by tight laces often settle once the pressure is removed. Cases tied to a training increase, or ongoing shoe pressure, can take longer, sometimes several weeks, especially if the trigger is not fully addressed.',
     },
   ],
   redFlags: {

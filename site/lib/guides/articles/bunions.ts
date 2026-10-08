@@ -31,6 +31,7 @@ export const BUNIONS_EN: Guide = {
     },
     {
       h2: 'What does the research say about bunion exercises?',
+      keyFact: 'A trial of 60 women (120 feet) comparing one month of night splinting, exercise, or electrical stimulation found all three improved pain and function, but splinting outperformed exercise and electrotherapy (Külünkoğlu and colleagues, 2021).',
       paragraphs: [
         'The best evidence comes from a handful of small trials. None is large, and none followed participants for more than a year.',
         'Kim and colleagues (2015) randomly assigned 24 people with mild to moderate hallux valgus to either an orthosis alone or an orthosis plus toe-spread-out exercises for 8 weeks. The exercise group reduced their hallux valgus angle by an average of 3.4 degrees and increased the cross-sectional area of the abductor hallucis muscle. The orthosis-only group showed no significant change on either measure. The study was small and included mostly young adults with mild bunions.',
@@ -43,6 +44,7 @@ export const BUNIONS_EN: Guide = {
     },
     {
       h2: 'Do toe spacers work for bunions?',
+      keyFact: 'In a study of 30 women with painful hallux valgus, a toe-separator insole reduced pain significantly over three months, while a separate night-splint group did not improve (Tehraninasr and colleagues, 2008).',
       paragraphs: [
         'Toe spacers, also called toe separators, sit between the big toe and the second toe. They reduce friction, relieve pressure on the bunion, and gently push the big toe away from the second toe while worn.',
         'Tehraninasr and colleagues (2008) studied 30 women with painful hallux valgus over a 3-month period. One group wore an insole with a built-in toe separator, and a separate group wore a night splint instead. Pain dropped significantly in the toe-separator group but not in the night-splint group. Neither group had a statistically significant change in the hallux valgus angle. Abdalbary\'s trial paired a toe separator with manual therapy and exercise, so it does not isolate what the separator did on its own.',
@@ -51,7 +53,7 @@ export const BUNIONS_EN: Guide = {
       cites: [CITE.abdalbary, CITE.tehraninasr],
     },
     {
-      h2: 'The exercises',
+      h2: 'Which exercises help bunions?',
       paragraphs: [
         'These exercises target the abductor hallucis and the smaller intrinsic foot muscles. The goal is to restore muscle support around the first metatarsophalangeal joint. None will reverse the bony deformity, but two of them have trial support for improving muscle size and reducing symptoms in mild hallux valgus.',
       ],
@@ -159,6 +161,14 @@ export const BUNIONS_EN: Guide = {
     {
       q: 'What causes bunions in the first place?',
       a: 'Bunions result from a combination of genetics, foot structure, and footwear. A family history of hallux valgus is the strongest risk factor. Narrow shoes and high heels do not cause bunions on their own but can accelerate progression in someone who is predisposed.',
+    },
+    {
+      q: 'Is walking barefoot better for bunions?',
+      a: 'No trial has tested barefoot walking against shoes for bunions. Going barefoot removes the pressure of a narrow toe box on the joint, which can ease symptoms for some. It does not reverse the bone angle. On hard or uneven ground, barefoot walking can strain the foot differently, so build it up gradually rather than switching all at once.',
+    },
+    {
+      q: 'At what age do most people get bunions?',
+      a: 'There is no single age. Bunions usually build gradually over years and become more noticeable from midlife onward. A less common juvenile form shows up in the teens, often with a strong family history. Narrow shoes and high heels speed up progression in anyone already prone to it, at any age.',
     },
   ],
   redFlags: {

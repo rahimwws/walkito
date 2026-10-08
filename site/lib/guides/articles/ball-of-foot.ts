@@ -57,6 +57,7 @@ export const BALL_OF_FOOT_EN: Guide = {
     },
     {
       h2: 'Does exercise help ball of foot pain?',
+      keyFact: 'In a 2020 pre-post study of 41 people with primary metatarsalgia, an 8-week toe exercise program lowered pain by an average of 2.7 points on a 10-point scale, with no control group (Amaha and colleagues, 2020).',
       paragraphs: [
         'The honest answer is that the evidence for exercise in metatarsalgia is early and limited. It is much thinner than the evidence for [plantar fasciitis](/plantar-fasciitis-exercises/) or Achilles tendonitis, where randomized trials exist.',
         'The best study so far is a 2020 pre-post study of 41 people (56 feet) with primary metatarsalgia. An 8-week toe exercise program, mainly towel scrunches and marble pickups, dropped pain scores by an average of 2.7 points on a 10-point scale and improved toe grip strength. But there was no control group, so the improvement could partly reflect natural recovery. The authors called for randomized trials.',
@@ -68,6 +69,7 @@ export const BALL_OF_FOOT_EN: Guide = {
     },
     {
       h2: 'Does a tight calf make forefoot pain worse?',
+      keyFact: 'In 254 people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture, a tight calf that is also linked to forefoot overload (Patel and DiGiovanni, 2011).',
       paragraphs: [
         'Very likely. When the gastrocnemius is tight, the ankle cannot bend enough during walking. The body lifts the heel early, which throws more weight onto the ball of the foot. The clinical term for this is functional equinus, and it is a recognized cause of metatarsalgia.',
         'The numbers come from plantar fasciitis research, but the mechanism is the same. In 254 people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture. A case-control study of 50 cases and 100 controls found that reduced ankle dorsiflexion (how far the foot bends up toward the shin) was the strongest independent risk factor, at 23.3 times the odds.',
@@ -84,7 +86,7 @@ export const BALL_OF_FOOT_EN: Guide = {
       ],
     },
     {
-      h2: 'The exercises',
+      h2: 'Which exercises help ball of foot pain?',
       paragraphs: [
         'These exercises target two sides of the problem: toe and intrinsic foot strength (to share load during push-off) and calf flexibility (to stop the forefoot from being overloaded). None has been tested in a randomized trial for metatarsalgia specifically. When you tap the ball-of-foot zone on the Walkito pain map during a check-in, the relief session gives toe spreads and a plantar fascia stretch. The toes zone gives toe spreads and seated short foot work.',
       ],
@@ -210,6 +212,14 @@ export const BALL_OF_FOOT_EN: Guide = {
     {
       q: 'What shoes are best for ball of foot pain?',
       a: 'Shoes with a wide toe box, a cushioned sole, and a low heel. Rocker-sole shoes help by letting the foot roll through push-off without bending at the metatarsal joints. Narrow shoes and high heels do the opposite. For Morton\'s neuroma especially, switching shoes is often the most effective single step.',
+    },
+    {
+      q: 'How long does a metatarsalgia flare-up last?',
+      a: 'There is no set timeline. A mild flare often settles once you reduce the triggering activity, switch to cushioned, wider shoes, and add a metatarsal pad. Flares linked to an ongoing cause, such as high heels, claw toes, or a tight calf, can persist for months, since no single timeline fits every cause.',
+    },
+    {
+      q: 'What are the complications of untreated metatarsalgia?',
+      a: 'Left unaddressed, metatarsalgia can change how you walk, since people naturally shift weight off the painful spot and onto other parts of the foot, which can create new areas of pain. Ongoing pressure on the metatarsal heads can also contribute to calluses or, less often, toe deformities like hammer toes. Early shoe changes and metatarsal pads reduce this risk.',
     },
   ],
   redFlags: {

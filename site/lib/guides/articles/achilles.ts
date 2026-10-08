@@ -63,6 +63,7 @@ export const ACHILLES_EN: Guide = {
     },
     {
       h2: 'Does heavy slow resistance work as well as eccentric drops?',
+      keyFact: 'A 2015 trial of 58 people found that heavy slow resistance three days a week gave lasting results as good as the classic twice-daily eccentric protocol (Beyer and colleagues, 2015).',
       paragraphs: [
         'Yes, based on current evidence. A 2015 trial of 58 people compared heavy slow resistance (HSR), done 3 days a week, against the classic twice-daily eccentric protocol. The conclusion: "Both traditional ECC and HSR yield positive, equally good, lasting clinical results in patients with Achilles tendinopathy."',
         'A 2021 network meta-analysis of 29 trials found no clinically relevant difference between any active exercise approach at 3 or 12 months. All were better than doing nothing. No trial was at low risk of bias. The authors recommended starting with a calf-muscle exercise program because it is low-cost and has few harms.',
@@ -71,7 +72,7 @@ export const ACHILLES_EN: Guide = {
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
     {
-      h2: 'The exercises, with starting doses',
+      h2: 'Which exercises help Achilles tendonitis, and how much should you do?',
       paragraphs: [
         'The exercises below progress from low-load to high-load, starting with seated heel raises and working up through the ladder. These are Walkito\'s starting doses alongside the research protocols. [How these guides are written](/about/).',
         'For insertional Achilles pain, every exercise that uses a step should be done at floor level instead. That modification is explained in the insertional section below.',
@@ -166,6 +167,7 @@ export const ACHILLES_EN: Guide = {
     },
     {
       h2: 'How much pain is okay during Achilles exercises?',
+      keyFact: 'In a trial of 38 people, those who kept running under a pain-monitoring rule, allowing pain up to about 5 out of 10 that settled by morning, improved as much at twelve months as those who rested first (Silbernagel and colleagues, 2007).',
       paragraphs: [
         'In Silbernagel 2007, 38 people with Achilles pain were split into two groups. One continued running and jumping during rehab, guided by the rule that pain during and after loading could go up to about **5 out of 10**, as long as it returned to its usual level by the next morning and did not worsen week over week. The other group rested first. Both improved significantly at 12 months, with no difference between them.',
         'This is a different threshold from the 6/10 stop rule on the [plantar fasciitis](/plantar-fasciitis-exercises/) page, which comes from a different guideline. The 5/10 figure is from one study, not a universal standard, but it is the most cited pain model in Achilles rehab.',
@@ -175,6 +177,7 @@ export const ACHILLES_EN: Guide = {
     },
     {
       h2: 'Is your pain mid-tendon or at the heel bone, and why it changes the exercise?',
+      keyFact: 'In a pilot study of 27 people with insertional Achilles pain, floor-level-only eccentric loading that avoided deep dorsiflexion gave good results in 67% of cases (Jonsson and colleagues, 2008).',
       paragraphs: [
         'Mid-portion Achilles tendinopathy sits in the body of the tendon, typically 2 to 6 centimeters above the heel bone. Standard eccentric drops and heavy slow resistance have their best evidence here. Heel drops over a step edge are appropriate for mid-portion pain.',
         'Insertional Achilles tendinopathy is pain right at the tendon-bone attachment. In a 2008 pilot study of 27 people (34 tendons) with chronic insertional pain, a modified protocol using floor-level-only eccentric loading, with no dorsiflexion past neutral, reported good results in 67 percent of cases. Deep dorsiflexion compresses the tendon against the heel bone, which irritates the insertion.',
@@ -243,6 +246,21 @@ export const ACHILLES_EN: Guide = {
       q: 'How long do Achilles tendonitis exercises take to work?',
       cites: [CITE.achillesGuideline, CITE.alfredson, CITE.beyer],
       a: 'Recovery is measured in months. The core trials ran loading programs for about three months, tracking results to 12 months. The 2024 guideline notes functional improvement can begin by 2 weeks, but fuller recovery extends well beyond. No trial promises a fixed timeline.',
+    },
+    {
+      q: 'What should you not do with Achilles tendonitis?',
+      cites: [CITE.jonsson, CITE.silbernagel],
+      a: 'Avoid sudden increases in running volume or sprint intensity, deep calf stretching if your pain is at the heel-bone attachment, and pushing through pain that stays elevated the next morning or worsens week to week. A sudden pop or snap needs a clinician right away. Complete rest is not required either; pain-monitored activity is usually a better option than stopping completely.',
+    },
+    {
+      q: 'Will walking aggravate Achilles tendonitis?',
+      cites: [CITE.silbernagel],
+      a: 'Usually not. Walking is lower-impact than running, and many people with Achilles tendinopathy can keep walking without a flare. Watch for pain that stays elevated the next morning or gets worse week to week; that is the signal to cut back distance or pace, not to stop moving altogether. Steep hills and fast walking on hard surfaces are more likely to irritate it.',
+    },
+    {
+      q: 'What is mistaken for Achilles tendonitis?',
+      cites: [CITE.chooRearfoot],
+      a: "Retrocalcaneal bursitis, Haglund's deformity, and a partial Achilles tear can all cause similar pain at the back of the heel. A visible bony bump points toward Haglund's deformity, while swelling right at the back of the shoe line suggests bursitis. Any sudden sharp pain with a pop, or an inability to rise on the toes, needs urgent assessment for a tendon tear.",
     },
   ],
   redFlags: {
