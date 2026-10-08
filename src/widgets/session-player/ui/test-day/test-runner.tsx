@@ -1,3 +1,5 @@
+import ArrowExpandDiagonal01Icon from '@hugeicons/core-free-icons/ArrowExpandDiagonal01Icon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useVideoPlayer, VideoView, type VideoPlayer } from 'expo-video';
 import { useCallback, useEffect, useRef, useState } from 'react';
@@ -29,6 +31,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../../config/exercise-clips';
+import { ClipViewer } from '../clip-viewer';
 import { playCountInCue } from '../../model/count-in-sound';
 import {
   CALF_PACE_MS,
@@ -136,6 +139,8 @@ export function TestRunner({
   /** The figure on the confirmation, as corrected. */
   const [value, setValue] = useState(0);
   const [clipFailed, setClipFailed] = useState(false);
+  /** The demonstration at full size, opened from either card. */
+  const [viewing, setViewing] = useState(false);
 
   /** What the ring shows is left, 1 → 0. */
   const ring = useSharedValue(1);
@@ -324,6 +329,7 @@ export function TestRunner({
     const clipHeight = Math.min(width - 40, height * 0.34);
     return (
       <View style={styles.root}>
+        <ClipViewer clip={meta.clip} mirrored={mirrored} visible={viewing} onClose={() => setViewing(false)} />
         <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
           <Heading eyebrow={eyebrow} title={name} leg={legLabel} />
 
@@ -333,6 +339,7 @@ export function TestRunner({
                 player={player}
                 mirrored={mirrored}
                 failed={clipFailed}
+                onExpand={() => setViewing(true)}
                 style={{ height: clipHeight, marginTop: 16 }}
               />
               <View style={styles.steps}>
@@ -405,12 +412,20 @@ export function TestRunner({
 
   return (
     <View style={styles.root}>
+      <ClipViewer clip={meta.clip} mirrored={mirrored} visible={viewing} onClose={() => setViewing(false)} />
       <View style={styles.measure}>
         <View style={styles.measureHead}>
           <View style={styles.flex}>
             <Heading eyebrow={eyebrow} title={name} leg={legLabel} />
           </View>
-          <ClipCard player={player} mirrored={mirrored} failed={clipFailed} style={styles.thumb} small />
+          <ClipCard
+            player={player}
+            mirrored={mirrored}
+            failed={clipFailed}
+            onExpand={() => setViewing(true)}
+            style={styles.thumb}
+            small
+          />
         </View>
 
         {/* Not one accessible element: the figure, its unit and the clock
@@ -532,17 +547,20 @@ function TextButton({ label, onPress }: { label: string; onPress: () => void }) 
 }
 
 /** The demonstration in a rounded card: the full width before the test, a
- * thumbnail in the corner during it. */
+ * thumbnail in the corner during it. Either one opens it at full size, so the
+ * movement can actually be followed, not just glimpsed. */
 function ClipCard({
   player,
   mirrored,
   failed,
+  onExpand,
   small = false,
   style,
 }: {
   player: VideoPlayer;
   mirrored: boolean;
   failed: boolean;
+  onExpand: () => void;
   small?: boolean;
   style?: StyleProp<ViewStyle>;
 }) {
@@ -553,19 +571,34 @@ function ClipCard({
   return (
     // The player is a native view: nothing clips it but an ancestor that says
     // so, which is why the radius lives on this wrapper.
-    <View style={[small ? styles.thumbFrame : styles.clipFrame, { backgroundColor: colors.card }, style]}>
-      <VideoView
-        style={[styles.video, mirrored && styles.mirrored]}
-        player={player}
-        nativeControls={false}
-        contentFit="cover"
-      />
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={t('widgets.expandDemo')}
+      disabled={failed}
+      onPress={() => {
+        Haptics.selectionAsync();
+        onExpand();
+      }}
+      style={[small ? styles.thumbFrame : styles.clipFrame, { backgroundColor: colors.card }, style]}>
+      <View style={styles.video} pointerEvents="none">
+        <VideoView
+          style={[styles.video, mirrored && styles.mirrored]}
+          player={player}
+          nativeControls={false}
+          contentFit="cover"
+        />
+      </View>
+      {!failed && (
+        <View style={[styles.expand, small && styles.expandSmall]} pointerEvents="none">
+          <HugeiconsIcon icon={ArrowExpandDiagonal01Icon} size={small ? 14 : 18} color="#111114" strokeWidth={2.2} />
+        </View>
+      )}
       {failed && !small && (
         <View style={styles.clipFallback} pointerEvents="none">
           <Text style={[styles.clipFallbackText, { color: meter.caption }]}>{t('widgets.clipFailed')}</Text>
         </View>
       )}
-    </View>
+    </Pressable>
   );
 }
 
@@ -602,6 +635,24 @@ const styles = StyleSheet.create({
     height: 88,
   },
   video: { flex: 1 },
+  expand: {
+    position: 'absolute',
+    right: 12,
+    bottom: 12,
+    width: 34,
+    height: 34,
+    borderRadius: 17,
+    backgroundColor: 'rgba(255,255,255,0.92)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  expandSmall: {
+    right: 6,
+    bottom: 6,
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+  },
   mirrored: {
     transform: [{ scaleX: -1 }],
   },

@@ -8,14 +8,15 @@ import { HugeiconsIcon, type IconSvgElement } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
-import { AppState, BackHandler, Image, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { AppState, BackHandler, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, { Easing, FadeIn, FadeInDown, ReduceMotion } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { cancelWinback, notificationsAllowed, scheduleWinback } from '@/entities/notifications';
 import { useBoost } from '@/entities/offer';
-import { firstName, useProfileName } from '@/entities/profile';
-import { RETEST_MINUTES, planSettings } from '@/entities/program';
+import { painAreasOf, whereKey } from '@/entities/leg-zone';
+import { firstName, getIntake, useProfileName } from '@/entities/profile';
+import { planSettings } from '@/entities/program';
 import {
   OFFERINGS,
   PACKAGES,
@@ -23,6 +24,8 @@ import {
   annualSavingPercent,
   discountPercent,
   fetchShelf,
+  grantDevAccess,
+  onSimulator,
   perWeek,
   planOn,
   purchases,
@@ -30,7 +33,7 @@ import {
   type PlanPeriod,
   type Shelf,
 } from '@/entities/purchase';
-import { REFERRAL_DISCOUNT_PERCENT, useReferral } from '@/entities/referral';
+import { REFERRAL_DISCOUNT_PERCENT, referralsAvailable, useReferral } from '@/entities/referral';
 import { PRIMARY, accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useT, type Key } from '@/shared/lib/i18n';
@@ -45,7 +48,15 @@ import { PrimaryButton } from '@/shared/ui/primary-button';
 import { LegalLinks, SubscriptionTerms, type DisclosedPlan } from '@/shared/ui/subscription-terms';
 
 import { introSeen, markIntroSeen } from '../model/intro';
+import { CodeSheet } from './code-sheet';
 import { IntroHow, IntroPlan, StepBar } from './offer-intro';
+
+const DURATION: Readonly<Record<string, Key>> = {
+  weeks: 'onboarding.duration.weeks',
+  months: 'onboarding.duration.months',
+  year: 'onboarding.duration.year',
+  longer: 'onboarding.duration.longer',
+};
 
 /**
  * The three arguments the screen opens on, as catalogue keys rather than copy.
@@ -198,6 +209,25 @@ export function OfferPage() {
 
   const profileName = firstName(useProfileName());
   const settings = planSettings();
+  /** "Have a code?" under the plans — the referral screen, folded in here. */
+  const [code, setCode] = useState(false);
+
+  /**
+   * Their own numbers across the top of the first step: where it hurts, this
+   * morning's first steps, how long. Our paywall only: none of it is sent to
+   * Superwall (`paywallPersonalisation` never carries the body).
+   */
+  const strip = (() => {
+    const intake = getIntake();
+    if (intake == null) return [];
+    const out: string[] = [];
+    const where = whereKey(painAreasOf(intake.pain)[0], intake.side);
+    if (where != null) out.push(t(where));
+    if (intake.morningPain != null && where != null) out.push(t('offer.stripMornings', { score: intake.morningPain }));
+    const duration = intake.painDuration != null ? DURATION[intake.painDuration] : undefined;
+    if (duration != null) out.push(t(duration));
+    return out;
+  })();
 
   /**
    * Superwall's paywall for this moment, over this one.
@@ -215,6 +245,9 @@ export function OfferPage() {
     // On the plans, not before: the two screens ahead of them are this
     // paywall's own, and a dashboard paywall stands in for the plans.
     if (step !== 3 || registered.current) return;
+    // A simulator in development cannot buy through Superwall (no StoreKit
+    // products), so our own paywall stays up and its button carries on.
+    if (__DEV__ && onSimulator) return;
     const placement = invited ? 'paywall_invite' : winback ? 'paywall_comeback' : 'paywall_first';
     const timer = setTimeout(() => {
       registered.current = true;
@@ -524,6 +557,14 @@ export function OfferPage() {
    */
   const start = async () => {
     if (busy) return;
+    // A simulator in development has no StoreKit purchase to make. "Start my
+    // plan" plays the purchase's ending instead, so the flow after it — the
+    // setup screens — can be walked through.
+    if (__DEV__ && onSimulator) {
+      converted.current = true;
+      setCelebrating('purchased');
+      return;
+    }
     setNotice(null);
     setBusy(true);
     // The plan object, not a product identifier. It came out of the same fetch
@@ -648,7 +689,7 @@ export function OfferPage() {
             {step === 1 ? (
               <IntroPlan
                 name={profileName}
-                testMinutes={RETEST_MINUTES}
+                strip={strip}
                 minutes={settings.defaultMinutes}
                 daysPerWeek={settings.daysPerWeek}
                 checkOn={Date.now() + FIRST_CHECK_DAYS * 86_400_000}
@@ -824,6 +865,14 @@ export function OfferPage() {
           />
         </Animated.View>
 
+        {/* One line of trust under the plans, and true: "Before your first
+            step" in Library is free and keeps playing after access ends. */}
+        <Animated.Text
+          entering={FadeIn.delay(STAGGER_MS * 6.5).duration(320).reduceMotion(ReduceMotion.System)}
+          style={[styles.freeLine, { color: meter.label }]}>
+          {t('offer.freeLine')}
+        </Animated.Text>
+
         <Animated.View
           entering={FadeInDown.delay(STAGGER_MS * 7)
             .duration(360)
@@ -846,12 +895,31 @@ export function OfferPage() {
           </Text>
         )}
         <PrimaryButton
-          label={busy ? t('offer.processing') : t('offer.continue')}
+          label={busy ? t('offer.processing') : t('offer.startPlan')}
           disabled={busy}
           onPress={start}
         />
         <LegalLinks onRestore={restore} disabled={busy} />
+        {/* The referral screen used to stand in front of the paywall and
+            send people off looking for a discount. Now it is a line here,
+            for somebody who already has a code. Not on an invited view: the
+            code has been used. */}
+        {referralsAvailable && !invited && (
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => {
+              Haptics.selectionAsync();
+              track('paywall_code_opened');
+              setCode(true);
+            }}
+            hitSlop={8}
+            style={({ pressed }) => [styles.codeLink, pressed && { opacity: 0.6 }]}>
+            <Text style={[styles.codeText, { color: meter.label }]}>{t('offer.haveCode')}</Text>
+          </Pressable>
+        )}
       </View>
+
+      <CodeSheet visible={code} onClose={() => setCode(false)} />
 
       {/* Owns the dismissal. The paywall vanishing into Home is what backing out
           looks like too, so the one moment worth marking was the one that read
@@ -865,6 +933,7 @@ export function OfferPage() {
         ctaLabel={t('offer.start')}
         onClose={() => {
           setCelebrating(null);
+          if (__DEV__ && onSimulator) grantDevAccess();
           close();
         }}
       />
@@ -903,6 +972,16 @@ const styles = StyleSheet.create({
   termsBlock: {
     paddingTop: 10,
   },
+  freeLine: {
+    ...fonts.semibold(14),
+    lineHeight: 19,
+    textAlign: 'center',
+  },
+  codeLink: {
+    alignSelf: 'center',
+    paddingVertical: 2,
+  },
+  codeText: fonts.semibold(14),
   badge: {
     alignSelf: 'center',
     marginTop: -4,

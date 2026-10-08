@@ -2,7 +2,11 @@ import type { Language } from '@/shared/lib/i18n';
 import type { BriefSegment } from '@/shared/ui/daily-brief';
 
 import { PROGRESS_BRIEF_EN } from '@/shared/lib/i18n/catalogue/en/progress';
+import { PROGRESS_BRIEF_DE } from '@/shared/lib/i18n/catalogue/de/progress';
 import { PROGRESS_BRIEF_ES } from '@/shared/lib/i18n/catalogue/es/progress';
+import { PROGRESS_BRIEF_FR } from '@/shared/lib/i18n/catalogue/fr/progress';
+import { PROGRESS_BRIEF_IT } from '@/shared/lib/i18n/catalogue/it/progress';
+import { PROGRESS_BRIEF_PT } from '@/shared/lib/i18n/catalogue/pt/progress';
 import { PROGRESS_BRIEF_RU } from '@/shared/lib/i18n/catalogue/ru/progress';
 
 /**
@@ -42,6 +46,10 @@ const BRIEFS: Record<Language, ProgressBriefCopy> = {
   en: PROGRESS_BRIEF_EN,
   ru: PROGRESS_BRIEF_RU,
   es: PROGRESS_BRIEF_ES,
+  pt: PROGRESS_BRIEF_PT,
+  fr: PROGRESS_BRIEF_FR,
+  de: PROGRESS_BRIEF_DE,
+  it: PROGRESS_BRIEF_IT,
 };
 
 export function progressBrief(language: Language): ProgressBriefCopy {

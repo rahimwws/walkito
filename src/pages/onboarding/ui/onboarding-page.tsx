@@ -1,10 +1,16 @@
-import ArrowLeft02Icon from '@hugeicons/core-free-icons/ArrowLeft02Icon';
-import { HugeiconsIcon } from '@hugeicons/react-native';
-import * as Haptics from 'expo-haptics';
-import { useRouter } from 'expo-router';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Keyboard, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { KeyboardAvoidingView } from 'react-native-keyboard-controller';
+import ArrowLeft02Icon from "@hugeicons/core-free-icons/ArrowLeft02Icon";
+import { HugeiconsIcon } from "@hugeicons/react-native";
+import * as Haptics from "expo-haptics";
+import { useCallback, useEffect, useRef, useState } from "react";
+import {
+  Keyboard,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
+import { KeyboardAvoidingView } from "react-native-keyboard-controller";
 import Animated, {
   Easing,
   FadeIn,
@@ -13,80 +19,119 @@ import Animated, {
   runOnJS,
   useAnimatedStyle,
   useSharedValue,
-  withDelay,
-  withSequence,
   withTiming,
-} from 'react-native-reanimated';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+} from "react-native-reanimated";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import { LanguageBadge } from '@/features/language-switch';
-import { fonts, meterColors, palette } from '@/shared/config';
-import { useT } from '@/shared/lib/i18n';
-import { useColorScheme } from '@/shared/lib/theme';
-import { QUESTION_LINE_MS, TypedText } from '@/shared/ui/typed-text';
-import { setBilateral, type HealthSummary } from '@/entities/health';
-import { armOffer } from '@/entities/offer';
-import { recordAcquisitionSource } from '@/entities/purchase';
+import { LanguageBadge } from "@/features/language-switch";
+import { SignInSheet } from "@/features/sign-in";
+import { fonts, meterColors, palette } from "@/shared/config";
 import {
-  REFERRAL_CODE_LENGTH,
-  REFERRAL_DISCOUNT_PERCENT,
-  normalise,
-  redeem,
-  type RedeemResult,
-} from '@/entities/referral';
-import { firstName, saveIntake, setProfileEmail, setProfileName } from '@/entities/profile';
-import { wakeMinutes } from '@/entities/notifications';
-import { seedPlanSettings, startProgram } from '@/entities/program';
-import { completeOnboarding, signInWithPlatform } from '@/entities/session';
-import { setPersonOnce, track, type AcquisitionSource } from '@/shared/lib/analytics';
-import { NoteSheet } from '@/shared/ui/note-sheet';
-import { Glow } from '@/shared/ui/glow';
-import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
-import { REPLAY_MASK } from '@/shared/ui/replay-mask';
+  featureFlag,
+  setPersonOnce,
+  track,
+  type AcquisitionSource,
+} from "@/shared/lib/analytics";
+import { useT, type Key, type Translate } from "@/shared/lib/i18n";
+import { useColorScheme } from "@/shared/lib/theme";
+import { QUESTION_LINE_MS, TypedText } from "@/shared/ui/typed-text";
+import { setBilateral } from "@/entities/health";
+import { whereKey } from "@/entities/leg-zone";
+import { armOffer } from "@/entities/offer";
+import { recordAcquisitionSource } from "@/entities/purchase";
+import {
+  saveIntake,
+  setProfileEmail,
+  setProfileName,
+} from "@/entities/profile";
+import { wakeMinutes } from "@/entities/notifications";
+import {
+  EQUIPMENT,
+  exerciseById,
+  logPain,
+  seedPlanSettings,
+  startProgram,
+  todayDayNumber,
+} from "@/entities/program";
+import { armSetup, completeOnboarding } from "@/entities/session";
+import {
+  PRIMARY_BUTTON_HEIGHT,
+  PrimaryButton,
+} from "@/shared/ui/primary-button";
+import { REPLAY_MASK } from "@/shared/ui/replay-mask";
+import { Glow } from "@/shared/ui/glow";
+import { WelcomePage } from "@/pages/welcome";
 
-import { TESTIMONIAL_COUNT } from '../config/testimonials';
-import { chose } from '../model/answers';
-import { intakeFrom, planSettingsFrom, startingPlan } from '../model/intake';
-import { loadQuestionFor, withName, type SportKey } from '../model/personalise';
-import { planSummary } from '../model/plan-summary';
-import { PLANS, recommendedIndex } from '../model/plans';
+import { chose } from "../model/answers";
+import {
+  intakeFrom,
+  planSettingsFrom,
+  startingPlan,
+  type MiniTestAnswers,
+} from "../model/intake";
+import {
+  MINI_TEST_FLAG,
+  MORNING_PAIN_SEED,
+  areaReaction,
+  balanceAllowed,
+  durationOf,
+  durationReaction,
+  equipmentReaction,
+  firstWeekMoves,
+  goalValuesFor,
+  habitOf,
+  miniTestEligible,
+  morningPainOf,
+  reminderFor,
+  roleOf,
+  roleReaction,
+  runs,
+  safetyPlan,
+  safetyReaction,
+  sessionDays,
+  standsAtWork,
+  triedKey,
+  triedReaction,
+  whyLines,
+  type Habit,
+  type Reaction,
+} from "../model/journey";
+import { loadQuestionForRole, withName } from "../model/personalise";
+import { PLANS, recommendedIndex } from "../model/plans";
+import { primaryPain } from "../model/reflection";
+import { outlookMonths } from "../model/outlook";
+import { painAreasFor, zonesIn } from "../model/pain-areas";
 import {
   STEPS,
   STEP_COUNT,
+  hurts,
   stepAfter,
   type OnboardingOption,
   type OnboardingStep,
   type Phrase,
   type ResolvedOption,
-} from '../model/steps';
-import { buildingLines } from '../model/reflection';
-import { outlookMonths } from '../model/outlook';
-import { painAreasFor, zonesIn } from '../model/pain-areas';
-import { BuildingStep } from './building-step';
-import { WatchSyncStep } from './watch-sync-step';
-import { ChoiceStep } from './choice-step';
-import { ContractStep } from './contract-step';
-import { PlanStep } from './plan-step';
-import { SexStep } from './sex-step';
-import { ReferralStep } from './referral-step';
-import { SocialProofStep } from './social-proof-step';
-import { SizeStep, type SizeUnit } from './size-step';
-import { HealthStep } from './health-step';
-import { EmailSignInSheet } from './email-sign-in-sheet';
-import { IntroStep } from './intro-step';
-import { MeasureStep } from './measure-step';
-import { EmailStep, looksLikeEmail } from './email-step';
-import { NameStep } from './name-step';
-import { NotifyStep } from './notify-step';
-import { ReminderStep } from './reminder-step';
-import { OutlookStep } from './outlook-step';
-import { PainMapStep } from './pain-map-step';
-import { WelcomePage } from '@/pages/welcome';
-import { StepProgress } from './step-progress';
+} from "../model/steps";
+import { BuildingStep } from "./building-step";
+import { ChoiceStep } from "./choice-step";
+import { ContractStep } from "./contract-step";
+import { FirstWeekStep, type WeekMove } from "./first-week-step";
+import { HabitStep } from "./habit-step";
+import { InlineReaction } from "./inline-reaction";
+import { IntroStep } from "./intro-step";
+import { MeasureStep } from "./measure-step";
+import { MidwayStep } from "./midway-step";
+import { TestBalance, TestIntro, TestResult, TestToe } from "./mini-test";
+import { MorningPainStep } from "./morning-pain-step";
+import { NameStep } from "./name-step";
+import { NotifyStep } from "./notify-step";
+import { OutlookStep } from "./outlook-step";
+import { PainMapStep } from "./pain-map-step";
+import { ReactionStep } from "./reaction-step";
+import { SexStep } from "./sex-step";
+import { StepProgress } from "./step-progress";
+import { WhyStep } from "./why-step";
 
 const SIDE_PAD = 24;
-/** Square, matching the primary button's height so the pair reads as one bar. */
-const BACK_SIZE = 76;
 
 /** The two halves of a step change. The exit is quicker than the entrance —
  * exits should get out of the way, entrances should feel like arriving. */
@@ -94,9 +139,7 @@ const EXIT_MS = 130;
 const ENTER_MS = 240;
 /** How far a question slides. Enough to read as direction, not as a page. */
 const SLIDE = 28;
-/** The sub-line trails the question rather than landing with it, so the eye
- * has somewhere to go once the heading has typed. Short of the full typing
- * sweep on purpose — waiting for the whole question would stall the screen. */
+/** The sub-line trails the question rather than landing with it. */
 const BLURB_DELAY_MS = 220;
 
 type MeasureAnswer = { unit: string; fields: Record<string, string> };
@@ -104,56 +147,132 @@ type Answer = string | string[] | MeasureAnswer;
 type Answers = Record<string, Answer>;
 
 /**
- * Steps hidden from session recordings: they ask about the body, the pain or
- * Apple Health, or show the answers back. The privacy policy promises that
- * none of this appears in a replay. `collapsable` stays false on every step so
- * toggling the mask never changes whether the view exists natively.
+ * Steps hidden from session recordings: they ask about the body or the pain,
+ * or show the answers back. The privacy policy promises none of this appears
+ * in a replay. `collapsable` stays false on every step so toggling the mask
+ * never changes whether the view exists natively.
  */
 const UNRECORDED_STEPS: ReadonlySet<string> = new Set([
-  'sex',
-  'age',
-  'body',
-  'size',
-  'pain',
-  'side',
-  'outlook',
-  'plan',
-  'health',
+  "sex",
+  "age",
+  "pain",
+  "side",
+  "duration",
+  "duration-reaction",
+  "morningPain",
+  "safety",
+  "tried",
+  "tried-reaction",
+  "midway",
+  "why",
+  "test-toe",
+  "test-balance",
+  "test-result",
+  "first-week",
+  "outlook",
 ]);
 
-function seedMeasure(step: Extract<OnboardingStep, { kind: 'measure' }>): MeasureAnswer {
-  const unit = step.units[0];
-  const fields: Record<string, string> = {};
-  for (const field of unit.fields) fields[field.key] = field.initial;
-  return { unit: unit.value, fields };
+/**
+ * The only questions with a line under them. Everywhere else the question is
+ * enough: a sub-line that explains why we ask is reading nobody does. These
+ * keep one because it says how to answer (several, up to three) or what the
+ * screen is.
+ */
+const BLURB_STEPS: ReadonlySet<string> = new Set([
+  "pain",
+  "safety",
+  "tried",
+  "equipment",
+  "contract",
+]);
+
+/** The onboarding answers that are sent to analytics, and nothing else. */
+const ANSWERS_TRACKED = ["source", "goal", "runner", "role"] as const;
+type TrackedAnswer = (typeof ANSWERS_TRACKED)[number];
+
+/** How each goal value reads, by who is asked. `allday` is the shift for a
+ * standing job and "on my feet all day" for anyone else. */
+function goalLabel(value: string, standing: boolean): Key {
+  switch (value) {
+    case "mornings":
+      return "onboarding.goal.mornings";
+    case "comeback":
+      return "onboarding.goal.backToRunning";
+    case "race":
+      return "onboarding.goal.race";
+    case "flatfeet":
+      return "onboarding.goal.flatfeet";
+    case "allday":
+      return standing ? "onboarding.goal.shift" : "onboarding.goal.allday";
+    case "steady":
+      return "onboarding.goal.steady";
+    default:
+      return "onboarding.goal.injuryfree";
+  }
 }
 
-function initialAnswers(): Answers {
-  const seed: Answers = {};
+function whereLabel(
+  t: Translate,
+  area: string | null,
+  side: string | null,
+): string | null {
+  const key = whereKey(area, side);
+  return key != null ? t(key) : null;
+}
+
+const DURATION_LABEL: Readonly<Record<string, Key>> = {
+  weeks: "onboarding.duration.weeks",
+  months: "onboarding.duration.months",
+  year: "onboarding.duration.year",
+  longer: "onboarding.duration.longer",
+};
+
+const TRIED_LABEL: Readonly<Record<string, Key>> = {
+  insoles: "onboarding.tried.insoles",
+  stretching: "onboarding.tried.stretching",
+  shoes: "onboarding.tried.shoes",
+  rest: "onboarding.tried.rest",
+  physio: "onboarding.tried.physio",
+};
+
+const EQUIPMENT_LABEL: Readonly<Record<string, Key>> = {
+  step: "onboarding.equipment.step",
+  band: "onboarding.equipment.band",
+  towel: "onboarding.equipment.towel",
+  pillow: "onboarding.equipment.pillow",
+  ball: "onboarding.equipment.ball",
+};
+
+function seedAnswers(): Answers {
+  const seed: Answers = { morningPain: String(MORNING_PAIN_SEED) };
   for (const step of STEPS) {
-    if (step.kind === 'measure') seed[step.key] = seedMeasure(step);
+    if (step.kind !== "measure") continue;
+    const unit = step.units[0];
+    const fields: Record<string, string> = {};
+    for (const field of unit.fields) fields[field.key] = field.initial;
+    seed[step.key] = { unit: unit.value, fields };
   }
   return seed;
 }
 
+function list(answer: Answer | undefined): string[] {
+  return Array.isArray(answer) ? answer : [];
+}
+
 /**
- * The onboarding flow: fifteen screens, one surface.
+ * The onboarding flow: one surface whose contents change.
  *
- * The whole thing is a single screen that swaps its contents rather than a
- * stack of routes. The progress bar, the button bar, and the safe-area padding
- * are the same objects the whole way through, so they hold perfectly still
- * while only the question moves — which is what makes fifteen screens feel
- * like one continuous conversation instead of a form with fifteen pages. It
- * also puts the transition under our control rather than the navigator's.
+ * The progress bar, the button bar and the safe-area padding are the same
+ * objects the whole way through, so they hold still while only the question
+ * moves — which is what makes the screens read as one conversation.
  *
- * The order is deliberate and is the point of the flow: every screen either
- * tells the user something about themselves or shows what the app will do for
- * them. It ends on the plan being built — a photograph, a line that fills, and
- * one button into the app — so the last thing the flow does is hand over
- * something made out of the answers rather than ask for anything.
+ * Every few questions the flow says something back: a line under the options,
+ * or a whole screen when the answer deserves one. It ends on what the answers
+ * point to, the plan built from them, the first week, and the contract; then
+ * Home, where the paywall rises. Signing in, Health and the watch come after
+ * the first purchase (`pages/setup`).
  */
 export function OnboardingPage() {
-  const router = useRouter();
   const insets = useSafeAreaInsets();
   const scheme = useColorScheme();
   const colors = palette[scheme];
@@ -161,87 +280,50 @@ export function OnboardingPage() {
   const t = useT();
 
   const [index, setIndex] = useState(0);
-  /** The founder's note, shown between the last answer and Home. */
-  const [note, setNote] = useState(false);
-  const [answers, setAnswers] = useState<Answers>(initialAnswers);
-  /** Seeded at the middle of the EU range — the ruler has to start somewhere,
-   * and an unset ruler would have nothing under the needle. */
-  const [sizeUnit, setSizeUnit] = useState<SizeUnit>('eu');
-  const [size, setSize] = useState(42);
-  /** The daily reminder, minutes past midnight: a quarter of an hour after waking to start. */
+  const [answers, setAnswers] = useState<Answers>(seedAnswers);
+  /** The daily reminder, minutes past midnight. Follows the habit they pick
+   * until they change it by hand. */
   const [reminder, setReminder] = useState(() => wakeMinutes() + 15);
-  /** Null until the Health sheet has been answered; nulls inside it mean the
-   * user declined that particular type, which is a valid outcome. */
-  const [health, setHealth] = useState<HealthSummary | null>(null);
-  /** Null until the notification sheet has been answered; false means the user
-   * declined, which the flow carries on from exactly as it does for Health. */
+  const reminderTouched = useRef(false);
   const [notify, setNotify] = useState<boolean | null>(null);
-  /** The welcome screen introduces itself before it asks for anything, so its
-   * CTA stays out until the sequence has played. */
+  /** The welcome screen introduces itself before it asks for anything. */
   const [introReady, setIntroReady] = useState(false);
-  /** Which of the two plan lengths is showing. Null until the screen is
-   * reached, so it can open on whatever the answers recommend by then rather
-   * than on a choice made before the questions were asked. */
-  /** Which review the social screen is showing. Lives here rather than inside
-   * that step because the shared button bar is what pages it. */
-  const [review, setReview] = useState(0);
-  /** Peaks each time the welcome character lands on the button. Owned here
-   * because the button is the page's; the intro step only drives it. */
   const ctaSquash = useSharedValue(0);
-  /** True while Apple's sheet is up, so a second tap cannot open a second one. */
-  const [authing, setAuthing] = useState(false);
-  /** Apple came back with a real failure — not a cancel, and not a device that
-   * cannot offer it. The intro screen says so and the flow holds, because
-   * advancing silently would look exactly like a sign-in that worked. */
-  const [signInFailed, setSignInFailed] = useState(false);
-  /** The email-and-password door, which App Store review needs — see the sheet
-   * itself for why one sign-in method is not enough. */
-  const [emailSignIn, setEmailSignIn] = useState(false);
-  /** The invite code as typed, and what came of trying it. Held here rather
-   * than in the step so a failed attempt survives the step's own re-renders. */
-  const [referralCode, setReferralCode] = useState('');
-  const [referralNote, setReferralNote] = useState<string | null>(null);
-  const [referralGood, setReferralGood] = useState(false);
-  const [redeeming, setRedeeming] = useState(false);
+  /** "Already have an account?" */
+  const [signIn, setSignIn] = useState(false);
+  /** The one-leg check, in seconds, per side. */
+  const [balance, setBalance] = useState<{
+    left: number | null;
+    right: number | null;
+  }>({ left: null, right: null });
 
   /** Whether the contract has been signed, and how far its stamp has come down. */
   const [signed, setSigned] = useState(false);
-  const [drawing, setDrawing] = useState(false);
-  /** True from the moment the contract's button is pressed until its ceremony
-   * has played out. The step itself says when that is. */
+  const [, setDrawing] = useState(false);
   const [sealing, setSealing] = useState(false);
   const stamp = useSharedValue(0);
 
   const step = STEPS[index];
   const answer = answers[step.key];
 
-  /** Everything after the name step addresses the user directly, and the
-   * questions after the sport step are phrased in that sport's language. */
-  const name = typeof answers.name === 'string' ? answers.name : '';
-  const sport = Array.isArray(answers.sport) ? (answers.sport[0] ?? null) : null;
-  const sex = Array.isArray(answers.sex) ? (answers.sex[0] ?? null) : null;
-  const load = loadQuestionFor(sport);
-  const isLast = index === STEP_COUNT - 1;
-
-  /** The pain step stores zones; the lines that talk back about it read them
-   * as complaints. See `pain-areas.ts`. */
+  const name = typeof answers.name === "string" ? answers.name : "";
+  const sex = list(answers.sex)[0] ?? null;
+  const role = roleOf(answers);
   const painZones = zonesIn(answers.pain);
   const pain = painAreasFor(answers.pain);
-  const painless = painZones.length === 0;
-  const loadAnswer = Array.isArray(answers.load) ? answers.load : [];
-
-  const runner = Array.isArray(answers.runner) ? (answers.runner[0] ?? null) : null;
-  // Decided from what they said about themselves, not offered. See
-  // `plan-summary.ts` for why the choice went away.
+  const painless = !hurts(answers);
+  const area = primaryPain(pain);
+  const side = list(answers.side)[0] ?? null;
+  const score = morningPainOf(answers) ?? MORNING_PAIN_SEED;
+  const load = loadQuestionForRole(role);
+  const isLast = index === STEP_COUNT - 1;
+  const runner = list(answers.runner)[0] ?? null;
+  // Decided from what they said about themselves, not offered.
   const plan = PLANS[recommendedIndex(runner)];
 
-  /** A phrase from the step table, resolved and then addressed to this user.
-   * The lookup leaves `{name}` in place on purpose — see `NAME_SLOT`. */
+  /** A phrase from the step table, resolved and addressed to this user. */
   const say = (phrase: Phrase) => withName(phrase(t), name);
 
-  /** A step's options with their text resolved for this render. The cards take
-   * strings; only the table holds lookups. Labels carry `{name}` too, which is
-   * why they go the same way round as the headings. */
   const resolve = (options: readonly OnboardingOption[]): ResolvedOption[] =>
     options.map((option) => ({
       value: option.value,
@@ -252,60 +334,214 @@ export function OnboardingPage() {
       photo: option.photo,
     }));
 
+  const goalValues = goalValuesFor(role, painless);
+  const goalOptions: ResolvedOption[] = goalValues.map((value) => ({
+    value,
+    label: t(goalLabel(value, role === "feet" || role === "both")),
+  }));
 
-  /** Screens that own their whole canvas, with no header over them. The plan
-   * screen is a full-bleed photograph, and a back arrow on it would offer a
-   * retreat from something that is already running. */
+  /** The options a choice step shows: its own, or the ones swapped in for
+   * who this person is. */
+  const optionsFor = (current: OnboardingStep): ResolvedOption[] => {
+    if (current.kind !== "choice") return [];
+    if (current.key === "goal") return goalOptions;
+    if (current.key === "load") return resolve(load.options);
+    return resolve(current.options);
+  };
+
+  // ── Lines read back ──────────────────────────────────────────────────────
+  const where = whereLabel(t, area, side);
+  const loadLine = (() => {
+    const value = list(answers.load)[0];
+    const option =
+      value == null ? null : load.options.find((o) => o.value === value);
+    if (option == null) return null;
+    const band = option.label(t);
+    if (standsAtWork(answers))
+      return t("onboarding.reflection.feetDaily", { band });
+    if (runs(answers)) return t("onboarding.reflection.volumeWeekly", { band });
+    return null;
+  })();
+
+  const midwayRows = (() => {
+    if (painless)
+      return [
+        t("onboarding.midway.nothing"),
+        ...(loadLine != null ? [loadLine] : []),
+      ];
+    const rows: string[] = [];
+    if (where != null) rows.push(where);
+    rows.push(t("onboarding.midway.mornings", { score }));
+    const duration = durationOf(answers);
+    if (duration != null)
+      rows.push(
+        t("onboarding.midway.since", { duration: t(DURATION_LABEL[duration]) }),
+      );
+    const tried = list(answers.tried).filter(
+      (value) => TRIED_LABEL[value] != null,
+    );
+    if (tried.length > 0) {
+      // Lower-cased: the labels open a sentence on their own and sit mid-line here.
+      rows.push(
+        t("onboarding.midway.tried", {
+          items: tried
+            .map((value) => t(TRIED_LABEL[value]).toLocaleLowerCase())
+            .join(", "),
+        }),
+      );
+    }
+    if (loadLine != null) rows.push(loadLine);
+    return rows;
+  })();
+
+  const buildingLines = (() => {
+    const lines: string[] = [];
+    if (painless) lines.push(t("onboarding.midway.nothing"));
+    else if (where != null)
+      lines.push(t("onboarding.building.where", { where, score }));
+    if (!painless) {
+      lines.push(
+        safetyPlan(answers).seated
+          ? t("onboarding.building.seated")
+          : t("onboarding.building.safety"),
+      );
+    }
+    if (loadLine != null) lines.push(loadLine);
+    const have = list(answers.equipment);
+    if (have.includes("none")) lines.push(t("onboarding.building.kitNone"));
+    else if (have.length > 0) {
+      const missing = EQUIPMENT.filter((item) => !have.includes(item));
+      lines.push(
+        missing.length === 0
+          ? t("onboarding.building.kitAll")
+          : t("onboarding.building.kitWithout", {
+              items: missing
+                .map((item) => t(EQUIPMENT_LABEL[item]).toLocaleLowerCase())
+                .join(", "),
+            }),
+      );
+    }
+    lines.push(t("onboarding.building.choosing"));
+    return lines;
+  })();
+
+  const why = whyLines(area, answers);
+  const whySections =
+    why == null
+      ? []
+      : [
+          { head: t("onboarding.why.patternHead"), text: t(why.pattern) },
+          ...(why.lingers != null || why.tried != null
+            ? [
+                {
+                  head: t("onboarding.why.lingersHead"),
+                  // Two whole sentences, each complete in every language.
+                  text: [why.lingers, why.tried]
+                    .filter((key): key is Key => key != null)
+                    .map((key) => t(key))
+                    .join(" "),
+                },
+              ]
+            : []),
+          { head: t("onboarding.why.helpsHead"), text: t(why.helps) },
+        ];
+
+  const settingsNow = planSettingsFrom(answers, null);
+  const weekMoves: WeekMove[] = [
+    {
+      id: "fascia_stretch",
+      title: t("quick.morning.title"),
+      meta: t("onboarding.week.morningMeta"),
+    },
+    ...firstWeekMoves(area).map((id) => ({
+      id,
+      title: t(exerciseById(id).titleKey),
+      meta: t("onboarding.week.sessionMeta"),
+    })),
+  ];
+
+  const reaction: Reaction | null =
+    step.kind !== "reaction"
+      ? null
+      : step.of === "role"
+        ? roleReaction(role)
+        : step.of === "duration"
+          ? durationReaction(durationOf(answers))
+          : triedReaction(triedKey(answers));
+
+  /** The line under the options, for the questions that get one. */
+  const inline = (() => {
+    if (step.kind === "name" && name.trim().length > 1) {
+      return {
+        id: "name",
+        text: t("onboarding.react.nameNamed", { name: name.trim() }),
+      };
+    }
+    if (step.kind === "pain-map" && list(answer).length > 0) {
+      const found = areaReaction(painless ? "none" : area);
+      return found != null ? { id: found.key, text: t(found.text) } : null;
+    }
+    if (step.key === "safety") {
+      const found = safetyReaction(answers);
+      return found != null ? { id: found.key, text: t(found.text) } : null;
+    }
+    if (step.key === "equipment") {
+      const found = equipmentReaction(answers);
+      return found != null ? { id: found.key, text: t(found.text) } : null;
+    }
+    return null;
+  })();
+
+  const miniTestAnswers: MiniTestAnswers | null =
+    chose(answers, "miniTest", "test") && list(answers["test-toe"]).length > 0
+      ? {
+          arch:
+            (list(answers["test-toe"])[0] as MiniTestAnswers["arch"]) ?? null,
+          balanceLeft: balance.left,
+          balanceRight: balance.right,
+        }
+      : null;
+
+  /** Screens that own their whole canvas, with no header over them. */
   const bare =
-    step.kind === 'intro' || step.kind === 'building' || step.kind === 'welcome';
-  /** Screens the shared button bar stays out of. Health supplies its own
-   * single button — rendering the shared bar underneath it put a second,
-   * equally loud primary next to "Connect to Health", which reads as Skip and
-   * competes with the only action that matters. The plan screen has no action
-   * at all: it advances itself, and a button there would only offer a way to
-   * hurry work the screen claims to be doing. */
+    step.kind === "intro" ||
+    step.kind === "building" ||
+    step.kind === "welcome";
+  /** Screens the shared button bar stays out of. */
   const noSharedCta =
-    step.kind === 'health' ||
-    step.kind === 'notify' ||
-    step.kind === 'building' ||
-    step.kind === 'welcome';
+    step.kind === "notify" ||
+    step.kind === "building" ||
+    step.kind === "welcome" ||
+    step.kind === "reaction";
+  /** Screens that set their own heading rather than the shared question block. */
+  const ownHeading =
+    step.kind === "notify" ||
+    step.kind === "building" ||
+    step.kind === "reaction" ||
+    step.kind === "midway" ||
+    step.kind === "why" ||
+    step.kind === "first-week" ||
+    step.kind.startsWith("test-");
 
   const canAdvance = (() => {
     switch (step.kind) {
-      // Optional: empty is a skip, anything typed has to look like an address.
-      case 'email':
-        return typeof answer !== 'string' || answer.trim().length === 0 || looksLikeEmail(answer);
-      case 'choice':
-      case 'sex':
-      case 'watch':
-      // A zone, or "nothing hurts" — either is an answer, silence is not.
-      case 'pain-map':
-        return Array.isArray(answer) && answer.length > 0;
-      // Seeded with a plausible size, so it is always advanceable.
-      case 'size':
-        return true;
-      // A contract you have not signed is not a contract.
-      // Locked once the ceremony starts, so a second press cannot restart it.
-      case 'contract':
+      case "choice":
+        if (step.key === "goal")
+          return goalValues.includes(list(answer)[0] ?? "");
+        if (step.key === "load")
+          return load.options.some((o) => o.value === list(answer)[0]);
+        return list(answer).length > 0;
+      case "sex":
+      case "pain-map":
+        return list(answer).length > 0;
+      case "habit":
+        return habitOf(answers) != null;
+      case "test-toe":
+        return list(answer).length > 0;
+      case "test-balance":
+        return balance.left != null && balance.right != null;
+      case "contract":
         return signed && !sealing;
-      // Seeded, so always advanceable.
-      // Health is skippable by design: a user who declines the sheet must
-      // still be able to finish, and refusing to let them past would be the
-      // one screen in the flow that holds them hostage.
-      case 'measure':
-      case 'intro':
-      case 'health':
-      // Nothing here can be verified: HealthKit will not say which read scopes
-      // are receiving data, so the screen never claims to know whether the
-      // switch was flipped and never blocks on it.
-      case 'watch-sync':
-      case 'notify':
-      case 'building':
-      case 'welcome':
-      case 'outlook':
-      // Opens on the recommendation, so there is always an answer.
-      case 'plan':
-        return true;
       default:
         return true;
     }
@@ -321,82 +557,25 @@ export function OnboardingPage() {
     ],
   }));
 
-  /**
-   * Screens built on liquid glass slide without fading.
-   *
-   * Glass under an ancestor whose alpha is animated renders empty, and does not
-   * come back when the alpha settles at 1 (expo/expo#41024) — the program
-   * overlay and the intro reveal both work around the same thing. The body is
-   * that ancestor for every step, so a glass step keeps it opaque and arrives
-   * on the slide alone.
-   */
-  const glassStep = step.kind === 'outlook';
+  /** Glass under an ancestor whose alpha is animated renders empty
+   * (expo/expo#41024), so a glass step keeps the body opaque. */
+  const glassStep = step.kind === "outlook";
   const questionStyle = useAnimatedStyle(() => ({
     opacity: glassStep ? 1 : settled.value,
     transform: [{ translateX: (1 - settled.value) * SLIDE * direction.value }],
   }));
 
-  /** Which side the *incoming* screen enters from. A ref, not state: it is
-   * read inside an effect and must never itself cause a render. */
   const enterFrom = useRef(1);
   const mounted = useRef(false);
 
   /**
-   * The last screen's answer, and the end of the flow.
-   *
-   * An empty field is a skip and finishes immediately. A filled one is checked
-   * first, and a code that does not work keeps the user on the screen with the
-   * reason under the field — leaving for Home on a failed code would be the app
-   * quietly deciding the question did not matter after asking it.
-   *
-   * On success the confirmation is held on screen for a beat before the flow
-   * moves, so the one thing the user came to this screen for is actually seen.
-   */
-  const finishWithReferral = useCallback(async () => {
-    const finish = () => {
-      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-      Keyboard.dismiss();
-      setNote(true);
-    };
-
-    const code = normalise(referralCode);
-    if (code.length !== REFERRAL_CODE_LENGTH) {
-      finish();
-      return;
-    }
-    if (redeeming) return;
-
-    setRedeeming(true);
-    const result = await redeem(code);
-    setRedeeming(false);
-
-    if (result !== 'ok') {
-      setReferralGood(false);
-      setReferralNote(REDEEM_MESSAGE[result](t));
-      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
-      return;
-    }
-
-    setReferralGood(true);
-    setReferralNote(t('onboarding.referral.applied', { percent: REFERRAL_DISCOUNT_PERCENT }));
-    setTimeout(finish, CONFIRM_MS);
-  }, [referralCode, redeeming, plan.weeks, name, t]);
-
-  /**
-   * Exit, then swap, then enter — in that order.
-   *
-   * The swap has to happen at the trough, inside the animation callback.
-   * Calling `setIndex` alongside `withTiming` (as this did) renders the new
-   * screen immediately, at whatever opacity the *outgoing* animation happens
-   * to be at — so the next question appeared at full strength, faded out with
-   * the tail of the exit, and faded back in. That double-take was the blink.
+   * Exit, then swap, then enter — in that order. The swap happens at the
+   * trough, inside the animation callback, so nothing is visible mid-swap.
    */
   const go = useCallback(
     (next: number, forward: boolean) => {
-      // Only drop the keyboard when the arriving screen has nothing to type
-      // into. Dismissing between two typed steps would bounce it down and
-      // straight back up, which is the jankiest thing in the flow.
-      if (STEPS[next].kind !== 'name' && STEPS[next].kind !== 'measure') Keyboard.dismiss();
+      if (STEPS[next].kind !== "name" && STEPS[next].kind !== "measure")
+        Keyboard.dismiss();
       enterFrom.current = forward ? 1 : -1;
       direction.value = forward ? -1 : 1;
       settled.value = withTiming(
@@ -407,7 +586,7 @@ export function OnboardingPage() {
           reduceMotion: ReduceMotion.System,
         },
         (finished) => {
-          'worklet';
+          "worklet";
           if (finished) runOnJS(setIndex)(next);
         },
       );
@@ -415,22 +594,19 @@ export function OnboardingPage() {
     [direction, settled],
   );
 
-  /**
-   * One event per screen shown, keyed by the step's stable `key`.
-   *
-   * Driven off the index rather than off the button, so a step reached by Back
-   * counts as viewed again — which is what it was — and the funnel is built on
-   * the first view of each key per person, so the repeats cost it nothing.
-   */
+  /** One event per screen shown, keyed by the step's stable `key`. */
   useEffect(() => {
-    if (index === 0) track('onboarding_started');
-    track('onboarding_step_viewed', { step: step.key, index, act: step.act });
+    if (index === 0) track("onboarding_started");
+    track("onboarding_step_viewed", { step: step.key, index, act: step.act });
+    if (step.kind === "reaction" && reaction != null)
+      track("onboarding_reaction_viewed", {
+        reaction: reaction.key,
+        full: true,
+      });
     // `step` follows `index`; listing it would only repeat the same trigger.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index]);
 
-  // The entrance runs only once the new step has actually rendered, which is
-  // what guarantees nothing is ever visible mid-swap.
   useEffect(() => {
     if (!mounted.current) {
       mounted.current = true;
@@ -444,17 +620,72 @@ export function OnboardingPage() {
     });
   }, [index, direction, settled]);
 
-  const onNext = useCallback(() => {
-    if (!canAdvance || authing) return;
+  /** The few answers worth a chart. Pain, age, the safety answers, what they
+   * tried and the check's results never leave the device. */
+  const reportAnswer = () => {
+    if (!ANSWERS_TRACKED.includes(step.key as TrackedAnswer)) return;
+    const value = list(answers[step.key])[0];
+    if (typeof value !== "string") return;
+    track("onboarding_answered", {
+      step: step.key as TrackedAnswer,
+      answer: value,
+    });
+    if (step.key === "source") {
+      const source = value as AcquisitionSource;
+      track("acquisition_source_selected", { source });
+      setPersonOnce({ acquisition_source: source });
+      recordAcquisitionSource(source);
+    }
+  };
 
-    // The stamp is the acknowledgement, so it plays before the screen leaves —
-    // advancing underneath it would throw away the one beat the whole screen
-    // exists for.
-    if (step.kind === 'contract') {
+  /**
+   * Move one step, over anything that does not apply. `patch` is written into
+   * the answers first and read by the skip rules of this very move — the
+   * experiment's assignment and "skip the check" both decide which screen is
+   * next, so they cannot wait for the state update to land.
+   */
+  const move = (forward: boolean, patch?: Answers) => {
+    if (forward) reportAnswer();
+    const nextAnswers = patch != null ? { ...answers, ...patch } : answers;
+    if (patch != null) setAnswers(nextAnswers);
+    const next = stepAfter(index, forward, nextAnswers);
+    if (next != null) go(next, forward);
+  };
+
+  /**
+   * Keeps what the user told us, and starts the plan they were shown.
+   *
+   * The morning number is also written as today's check-in, so the progress
+   * chart opens on it — the same question, the same scale.
+   */
+  const commit = () => {
+    const intake = intakeFrom(answers, miniTestAnswers);
+    saveIntake(intake);
+    startProgram(startingPlan(intake, answers));
+    seedPlanSettings(planSettingsFrom(answers, reminder, miniTestAnswers));
+    setBilateral(intake.side === "both");
+    if (!painless && intake.morningPain != null)
+      logPain(todayDayNumber(), intake.morningPain, painZones);
+  };
+
+  /** The end: the answers kept, the offer armed, the screens after the first
+   * purchase owed, and Home. */
+  const finish = () => {
+    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+    Keyboard.dismiss();
+    commit();
+    armOffer({ weeks: String(plan.weeks), name });
+    armSetup();
+    track("onboarding_completed", { skipped: false, plan_weeks: plan.weeks });
+    completeOnboarding();
+  };
+
+  const onNext = () => {
+    if (!canAdvance) return;
+
+    // The stamp is the acknowledgement, so it plays before the screen leaves.
+    if (step.kind === "contract") {
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy);
-      // The stamp lands here; everything after it belongs to the step, which
-      // owns the animation and therefore knows when it has finished. Advancing
-      // on a timer from this side would be guessing at its length.
       setSealing(true);
       stamp.value = withTiming(1, {
         duration: 260,
@@ -463,280 +694,90 @@ export function OnboardingPage() {
       });
       return;
     }
-
-    // The intro screen's button signs the user in before it advances. A cancel
-    // leaves them exactly where they were and says nothing — they know what
-    // they just tapped. A device that cannot offer Apple sign-in at all falls
-    // through, because refusing to let those users past would strand them at
-    // the front door. A genuine failure does neither: it holds the screen and
-    // says so, since a flow that advances on a failed sign-in has just told the
-    // user it worked.
-    if (step.kind === 'intro') {
-      setAuthing(true);
-      // Cleared on the retry rather than on the failure, so the message
-      // survives until the user does something about it.
-      setSignInFailed(false);
-      void signInWithPlatform()
-        .then((result) => {
-          if (result.status === 'cancelled') return;
-          if (result.status === 'failed') {
-            track('sign_in_failed', { method: SIGN_IN_METHOD, stage: result.stage });
-            Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
-            setSignInFailed(true);
-            return;
-          }
-          // Apple returns the name and the email only on the **very first**
-          // authorisation for this Apple ID; every later sign-in is nulls. So
-          // both are written down here or lost for good.
-          //
-          // Behind it is a real account now (see `signInWithPlatform`): the one the
-          // plan syncs to, and the one a reinstall or a new phone signs back in
-          // to. There is no way past this screen without one.
-          if (result.status === 'signed-in') {
-            if (result.fullName != null) setProfileName(firstName(result.fullName));
-            if (result.email != null) setProfileEmail(result.email, SIGN_IN_METHOD);
-          }
-          track('sign_in_completed', { method: SIGN_IN_METHOD, status: result.status });
-          Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-          step1(true);
-        })
-        .finally(() => setAuthing(false));
-      return;
-    }
-    // The social screen spends the button on itself before spending it on the
-    // flow: each press pages to the next review, and only from the last one
-    // does the same press present the offer. One tap past three cards would
-    // make them scenery.
-    if (step.kind === 'social' && review < TESTIMONIAL_COUNT - 1) {
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-      setReview((n) => n + 1);
-      return;
-    }
-    // The last screen of the flow hands straight over to Home and *arms* the
-    // offer; the sheet follows a couple of seconds later, over Home.
-    //
-    // It used to present the offer here and let that sheet finish onboarding,
-    // which put the paywall on top of a stack that was being torn down the
-    // moment it closed — the source of both "GO_BACK was not handled" and the
-    // frozen sheet with a dead button. Over Home there is nothing to unwind.
-    // The reviews hand over to the outlook — their own leg, and what the plan
-    // does to it — and from there to the invite question, asked last on
-    // purpose: a code is worth most to someone who has just decided they want
-    // the thing.
-    if (step.kind === 'social') {
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-      step1(true);
-      return;
-    }
-
-    if (step.kind === 'referral') {
-      void finishWithReferral();
-      return;
-    }
-    // Stored the moment they choose to send it; the welcome email goes from
-    // the server within the hour, or the next morning at eight.
-    if (step.kind === 'email' && typeof answer === 'string' && looksLikeEmail(answer)) {
-      setProfileEmail(answer.trim(), 'onboarding');
-    }
     if (isLast) {
-      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-      Keyboard.dismiss();
-      setNote(true);
+      finish();
       return;
     }
-    step1(true);
-    // `finishWithReferral` closes over the typed code, so it has to be a
-    // dependency: without it this callback keeps the version made on the first
-    // render, which closes over an empty field and would skip every code.
-  }, [canAdvance, isLast, go, index, router, step.kind, plan.weeks, name, review, finishWithReferral, answer]);
-
-  /**
- * What to say about a code that did not work.
- *
- * Every one of these is an ordinary thing a person can do, so none of them is
- * phrased as an error the user caused — the screen says what happened and
- * leaves the field alone so they can try again.
- */
-const REDEEM_MESSAGE: Readonly<Record<Exclude<RedeemResult, 'ok'>, Phrase>> = {
-  unknown: (t) => t('onboarding.referral.unknown'),
-  own: (t) => t('onboarding.referral.own'),
-  already: (t) => t('onboarding.referral.already'),
-  unavailable: (t) => t('onboarding.referral.unavailable'),
-  failed: (t) => t('onboarding.referral.failed'),
-};
-
-/** The onboarding answers that are sent to analytics, and nothing else. */
-const ANSWERS_TRACKED = ['source', 'goal', 'sport', 'runner'] as const;
-type TrackedAnswer = (typeof ANSWERS_TRACKED)[number];
-
-/** Which account the intro's button makes on this platform. */
-const SIGN_IN_METHOD = Platform.OS === 'android' ? 'google' : 'apple';
-
-/** Long enough for the confirmation to be read before the screen leaves. */
-const CONFIRM_MS = 900;
-
-  /**
-   * Keeps what the user told us, and starts the plan they were shown.
-   *
-   * Every answer used to die with this screen: only the name survived, the plan
-   * summary promised six weeks while the engine ran twelve, and the start date
-   * was never written at all. The flow has one way out now — the note at the
-   * end — so this runs there.
-   */
-  const commit = useCallback(() => {
-    const intake = intakeFrom(answers, { size, unit: sizeUnit });
-    saveIntake(intake);
-    startProgram(startingPlan(intake));
-    seedPlanSettings(planSettingsFrom(answers, reminder));
-    // Both heels: the asymmetry signals can only ever report nothing, so they
-    // are switched off rather than left silently dead.
-    setBilateral(intake.side === 'both');
-  }, [answers, size, sizeUnit, reminder]);
-
-  /**
-   * Leaving the note, however the user left it.
-   *
-   * `armOffer` happens here rather than where the last answer was given, so the
-   * offer's clock starts when Home actually appears. Armed earlier it would run
-   * down while the note was still typing, and the paywall would be waiting the
-   * moment the user arrived — or worse, while they were still reading.
-   */
-  const leaveNote = useCallback(() => {
-    setNote(false);
-    armOffer({ weeks: String(plan.weeks), name });
-    commit();
-    // `skipped` stays in the event for continuity with earlier data; the close
-    // button it counted is gone, so it is always false now.
-    track('onboarding_completed', { skipped: false, plan_weeks: plan.weeks });
-    completeOnboarding();
-  }, [plan.weeks, name, commit]);
-
-  /**
-   * Move one step, over anything that does not apply to this user.
-   *
-   * Every caller goes through here rather than through `go(index ± 1)`: a step
-   * that is hidden has to be hidden from both directions, and a back button
-   * that lands on the screen the forward pass skipped is worse than no skipping
-   * at all.
-   */
-  const step1 = (forward: boolean) => {
-    if (forward) reportAnswer();
-    const next = stepAfter(index, forward, answers);
-    if (next != null) go(next, forward);
-  };
-
-  /**
-   * The few answers worth a chart, sent as the user moves past them.
-   *
-   * Only these four: they split a funnel without describing a body. Pain, age,
-   * weight, size and the Health screen never leave the device — see the note in
-   * `shared/lib/analytics/events.ts`.
-   */
-  const reportAnswer = () => {
-    if (!ANSWERS_TRACKED.includes(step.key as TrackedAnswer)) return;
-    const picked = answers[step.key];
-    const value = Array.isArray(picked) ? picked[0] : undefined;
-    if (typeof value !== 'string') return;
-    track('onboarding_answered', { step: step.key as TrackedAnswer, answer: value });
-    if (step.key === 'source') {
-      const source = value as AcquisitionSource;
-      track('acquisition_source_selected', { source });
-      // Once: the first answer is the attribution, and a revisit must not
-      // overwrite it.
-      setPersonOnce({ acquisition_source: source });
-      recordAcquisitionSource(source);
+    // The 30-second check's experiment is decided here, as the flow reaches
+    // it, and only for somebody it is for: reading the flag records the
+    // exposure, and an ineligible person must not count in either arm.
+    if (
+      step.key === "equipment" &&
+      answers.miniTest == null &&
+      miniTestEligible(answers, painless)
+    ) {
+      const variant =
+        featureFlag(MINI_TEST_FLAG) === "test" ? "test" : "control";
+      track("mini_test_assigned", { variant });
+      move(true, { miniTest: variant });
+      return;
     }
+    if (step.kind === "test-result") {
+      track("mini_test_completed", { balance: balance.left != null });
+    }
+    move(true);
   };
 
   const onBack = () => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    // Step 0 is the front door; there is nothing behind it to go back to.
     if (index === 0) return;
-    step1(false);
+    move(false);
   };
 
-  const setAnswer = (value: Answer) => {
+  const setAnswer = (value: Answer) =>
     setAnswers((prev) => ({ ...prev, [step.key]: value }));
-  };
 
   const ctaLabel = (() => {
     switch (step.kind) {
-      case 'intro':
-        // Each platform's own account: Apple on iOS, Google on Android.
-        return Platform.OS === 'android' ? t('onboarding.intro.ctaGoogle') : step.cta(t);
-      case 'health':
-        return health != null ? t('onboarding.cta.next') : t('onboarding.cta.skipForNow');
-      case 'watch-sync':
-        return t('onboarding.cta.done');
-      case 'plan':
-        return t('onboarding.cta.startPlan');
-      // Same label throughout: the reviews now hand over to the outlook rather
-      // than to the offer, so "see my offer" would promise the wrong screen.
-      case 'social':
-      case 'outlook':
-      case 'contract':
-        return t('onboarding.cta.continue');
-      // The one screen whose button changes meaning with the field: nothing
-      // typed is a skip, and saying so is what makes it obvious the question is
-      // optional without a second control to explain it.
-      case 'email':
-        return typeof answer === 'string' && looksLikeEmail(answer) ? t('onboarding.sendPlan.send') : t('onboarding.cta.skip');
-      case 'referral':
-        if (redeeming) return t('onboarding.cta.checking');
-        return referralCode.length === REFERRAL_CODE_LENGTH
-          ? t('onboarding.cta.applyCode')
-          : t('onboarding.cta.skip');
+      case "intro":
+        return t("onboarding.intro.ctaStart");
+      case "why":
+        return t("onboarding.why.cta");
+      case "test-intro":
+        return t("onboarding.test.start");
+      case "midway":
+      case "first-week":
+      case "outlook":
+      case "contract":
+      case "test-result":
+        return t("onboarding.cta.continue");
       default:
-        return t('onboarding.cta.next');
+        return t("onboarding.cta.next");
     }
   })();
 
-  // The welcome gate replaces the whole surface instead of sitting inside it.
-  // Rendered as a child it inherited the root's horizontal gutter and safe-area
-  // padding, and the Glow painted over its sky — a full-bleed screen with its
-  // own status bar and its own gesture cannot live inside the padded frame the
-  // questions share. Absolute positioning does not rescue it either: in Yoga an
-  // absolute child is laid out against its parent's *padding* box, so `left: 0`
-  // still lands 24pt in.
-  //
-  // Every hook has run by this point, so the early return is safe.
-  if (step.kind === 'welcome') {
+  // The welcome gate replaces the whole surface. Every hook has run by here.
+  if (step.kind === "welcome") {
     return <WelcomePage onDone={onNext} />;
   }
+
+  const heading = (() => {
+    if (step.kind === "choice" && step.key === "load") return say(load.title);
+    return say(step.title);
+  })();
+  const blurb = (() => {
+    if (step.kind === "outlook" && painless)
+      return t("onboarding.outlook.blurbNone");
+    if (step.kind === "choice" && step.key === "load") return say(load.blurb);
+    return say(step.blurb);
+  })();
 
   return (
     <KeyboardAvoidingView
       behavior="padding"
       keyboardVerticalOffset={0}
-      style={[styles.root, { paddingTop: insets.top + 12 }]}>
-      {/* Sits behind everything and never moves between steps — it is the
-          surface the flow happens on, not part of any one screen. */}
+      style={[styles.root, { paddingTop: insets.top + 12 }]}
+    >
       <Glow />
-      {/* Back, progress and language on one row — the running apps all put
-          the retreat controls in the header and leave the bottom bar to the
-          single forward action.
-
-          No close. There used to be one, and it was Skip: it finished the flow
-          on the spot. But the plan, the reminders and the offer are all built
-          from these answers, so an app entered without them has nothing to
-          show — onboarding is the way in, not a detour from it. A square Back button beside the CTA competes
-          with it for the thumb and makes going back look as important as going
-          on.
-
-          The language badge sits after the bar rather than before it so the
-          back arrow keeps the top-left corner every iOS user reaches for
-          without looking. It costs the progress bar about forty points, which
-          is why it is two letters and not a labelled control — see
-          `LanguageBadge`. The gap is tightened from 20 to 16 to pay some of
-          that back. */}
       {!bare && (
         <View style={styles.header}>
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel={t('common.back')}
+            accessibilityLabel={t("common.back")}
             onPress={onBack}
             hitSlop={12}
-            style={({ pressed }) => pressed && { opacity: 0.5 }}>
+            style={({ pressed }) => pressed && { opacity: 0.5 }}
+          >
             <HugeiconsIcon
               icon={ArrowLeft02Icon}
               size={26}
@@ -751,101 +792,76 @@ const CONFIRM_MS = 900;
 
       <Animated.View
         style={[styles.body, questionStyle]}
-        {...(UNRECORDED_STEPS.has(step.key) ? REPLAY_MASK : { collapsable: false })}>
-        {/* The intro owns its whole canvas; every other screen shares the
-            same heading block so the eye never has to re-find the question. */}
-        {step.kind === 'intro' ? (
+        {...(UNRECORDED_STEPS.has(step.key)
+          ? REPLAY_MASK
+          : { collapsable: false })}
+      >
+        {step.kind === "intro" ? (
           <IntroStep
             squash={ctaSquash}
             greeting={step.greeting(t)}
             headline={step.headline(t)}
-            signInFailed={signInFailed}
             onReady={() => setIntroReady(true)}
           />
         ) : (
           <>
-            {/* The health and plan screens write their own headings: on one
-                the title and its explanatory copy are a single block with the
-                permission card rather than a question above a list, and on the
-                other they sit on a photograph rather than on the page. */}
-            {step.kind !== 'health' &&
-              step.kind !== 'notify' &&
-              step.kind !== 'building' &&
-              step.kind !== 'social' && (
+            {!ownHeading && (
               <>
-                {/* Typed in, the same way the welcome screen introduces
-                    itself — so the app reads as speaking each question rather
-                    than paging through a form. Keyed on the step so it
-                    retypes on every arrival, including the two steps whose
-                    wording only differs by the sport it was rewritten for. */}
+                {/* Typed in, so the app reads as speaking each question. Keyed
+                    on the step so it retypes on every arrival. */}
                 <TypedText
                   key={step.key}
-                  text={say(
-                    step.kind === 'choice' && step.key === 'load' ? load.title : step.title,
-                  )}
+                  text={heading}
                   style={[styles.title, { color: colors.foreground }]}
                   maxDuration={QUESTION_LINE_MS}
                 />
-                {/* Size keeps its question but drops the sub-line: two lines
-                    of explanation there were two lines the photograph wanted,
-                    and a ruler under a shoe-size question needs no gloss. */}
-                {step.kind !== 'size' && (
-                  // Fades in under the question rather than typing too: two
-                  // lines typing in sequence is the welcome screen's trick,
-                  // and repeating it on every question would make the sub-line
-                  // something you wait for instead of something you glance at.
+                {BLURB_STEPS.has(step.key) && (
                   <Animated.Text
                     key={`${step.key}-blurb`}
                     entering={FadeIn.duration(320)
                       .delay(BLURB_DELAY_MS)
                       .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
                       .reduceMotion(ReduceMotion.System)}
-                    style={[styles.blurb, { color: meter.caption }]}>
-                    {step.kind === 'outlook' && painless
-                      ? t('onboarding.outlook.blurbNone')
-                      : say(
-                          step.kind === 'choice' && step.key === 'load' ? load.blurb : step.blurb,
-                        )}
+                    style={[styles.blurb, { color: meter.caption }]}
+                  >
+                    {blurb}
                   </Animated.Text>
                 )}
               </>
             )}
 
-            {step.kind === 'name' && (
-              <NameStep
-                value={typeof answer === 'string' ? answer : ''}
-                placeholder={step.placeholder(t)}
-                onChange={(next) => {
-                  setAnswer(next);
-                  // Written as it is typed rather than on leaving the screen:
-                  // the answers live in this component's state and go with it,
-                  // and the flow can be left from any step.
-                  setProfileName(next);
-                }}
-                onSubmit={onNext}
-              />
+            {step.kind === "name" && (
+              <View style={styles.scroll}>
+                <NameStep
+                  value={typeof answer === "string" ? answer : ""}
+                  placeholder={step.placeholder(t)}
+                  onChange={(next) => {
+                    setAnswer(next);
+                    setProfileName(next);
+                  }}
+                  onSubmit={onNext}
+                />
+                {inline != null && (
+                  <InlineReaction id={inline.id} text={inline.text} />
+                )}
+              </View>
             )}
 
-            {step.kind === 'email' && (
-              <EmailStep
-                value={typeof answer === 'string' ? answer : ''}
-                placeholder={step.placeholder(t)}
-                onChange={(next) => setAnswer(next)}
-                onSubmit={onNext}
-              />
-            )}
-
-            {step.kind === 'measure' && (
+            {step.kind === "measure" && (
               <MeasureStep
                 key={step.key}
                 units={step.units}
                 unit={
-                  answer != null && !Array.isArray(answer) && typeof answer === 'object'
+                  answer != null &&
+                  !Array.isArray(answer) &&
+                  typeof answer === "object"
                     ? answer.unit
                     : step.units[0].value
                 }
                 values={
-                  answer != null && !Array.isArray(answer) && typeof answer === 'object'
+                  answer != null &&
+                  !Array.isArray(answer) &&
+                  typeof answer === "object"
                     ? answer.fields
                     : {}
                 }
@@ -853,140 +869,120 @@ const CONFIRM_MS = 900;
                   const unit = step.units.find((u) => u.value === next);
                   if (unit == null) return;
                   const fields: Record<string, string> = {};
-                  for (const field of unit.fields) fields[field.key] = field.initial;
+                  for (const field of unit.fields)
+                    fields[field.key] = field.initial;
                   Haptics.selectionAsync();
                   setAnswer({ unit: next, fields });
                 }}
                 onChangeField={(fieldKey, next) => {
-                  if (answer == null || Array.isArray(answer) || typeof answer !== 'object') return;
-                  setAnswer({ ...answer, fields: { ...answer.fields, [fieldKey]: next } });
+                  if (
+                    answer == null ||
+                    Array.isArray(answer) ||
+                    typeof answer !== "object"
+                  )
+                    return;
+                  setAnswer({
+                    ...answer,
+                    fields: { ...answer.fields, [fieldKey]: next },
+                  });
                 }}
               />
             )}
 
-            {step.kind === 'choice' && (
-              // Top-down from under the question. Bottom-aligning it was the
-              // single biggest thing making these screens look home-made: no
-              // shipping onboarding parks its options against the CTA.
+            {step.kind === "choice" && (
               <ScrollView
                 style={styles.scroll}
                 contentContainerStyle={styles.scrollContent}
-                showsVerticalScrollIndicator={false}>
+                showsVerticalScrollIndicator={false}
+              >
                 <ChoiceStep
-                  art={step.key === 'sport' ? 'sport' : step.key === 'side' ? 'side' : 'option'}
-                  options={resolve(step.key === 'load' ? load.options : step.options)}
-                  selected={Array.isArray(answer) ? answer : []}
+                  art={step.key === "side" ? "side" : "option"}
+                  options={optionsFor(step)}
+                  selected={list(answer)}
                   multi={step.multi ?? false}
                   max={step.max}
                   onChange={setAnswer}
                 />
+                {inline != null && (
+                  <InlineReaction id={inline.id} text={inline.text} />
+                )}
               </ScrollView>
             )}
 
-            {step.kind === 'sex' && (
+            {step.kind === "sex" && (
               <SexStep
                 options={resolve(step.options)}
-                selected={Array.isArray(answer) ? (answer[0] ?? null) : null}
+                selected={list(answer)[0] ?? null}
                 onChange={(next) => setAnswer([next])}
               />
             )}
 
-            {step.kind === 'size' && (
-              <SizeStep
-                unit={sizeUnit}
-                value={size}
-                sex={sex}
-                onChangeUnit={(next) => {
-                  // Each unit owns its own scale, so switching reseeds to that
-                  // scale's middle rather than converting — a converted 42 EU
-                  // landing on 9.5 US mid-drag reads as the ruler jumping.
-                  setSizeUnit(next);
-                  setSize(next === 'eu' ? 42 : 9);
-                }}
-                onChangeValue={setSize}
+            {step.kind === "pain-map" && (
+              <View style={styles.fill}>
+                <PainMapStep value={list(answer)} onChange={setAnswer} />
+                {inline != null && (
+                  <InlineReaction id={inline.id} text={inline.text} />
+                )}
+              </View>
+            )}
+
+            {step.kind === "reaction" && reaction != null && (
+              <ReactionStep
+                title={t(reaction.title)}
+                body={t(reaction.body)}
+                onNext={onNext}
               />
             )}
 
-            {step.kind === 'social' && (
-              <SocialProofStep name={name} index={review} onChange={setReview} />
-            )}
-
-            {step.kind === 'pain-map' && (
-              <PainMapStep
-                value={Array.isArray(answer) ? answer : []}
-                onChange={setAnswer}
+            {step.kind === "morning-pain" && (
+              <MorningPainStep
+                score={score}
+                onChange={(next) =>
+                  setAnswers((prev) => ({ ...prev, morningPain: String(next) }))
+                }
               />
             )}
 
-            {step.kind === 'outlook' && (
+            {step.kind === "midway" && (
+              <MidwayStep
+                title={say(() =>
+                  t("onboarding.midway.title", { name: "{name}" }),
+                )}
+                body={t("onboarding.midway.body")}
+                rows={midwayRows}
+              />
+            )}
+
+            {step.kind === "why" && (
+              <WhyStep
+                title={say(() => t("onboarding.why.title", { name: "{name}" }))}
+                sections={whySections}
+                footer={t("onboarding.why.footer")}
+              />
+            )}
+
+            {step.kind === "outlook" && (
               <OutlookStep zones={painZones} months={outlookMonths(t)} />
             )}
 
-            {step.kind === 'referral' && (
-              <ReferralStep
-                value={referralCode}
-                onChange={(next) => {
-                  setReferralCode(next);
-                  // A note describes the last attempt. Typing starts a new one.
-                  setReferralNote(null);
+            {step.kind === "habit" && (
+              <HabitStep
+                options={resolve(step.options)}
+                habit={habitOf(answers)}
+                onHabit={(next: Habit) => {
+                  setAnswer([next]);
+                  if (!reminderTouched.current)
+                    setReminder(reminderFor(next, wakeMinutes()));
                 }}
-                onSubmit={onNext}
-                note={referralNote}
-                noteGood={referralGood}
+                minutes={reminder}
+                onMinutes={(next) => {
+                  reminderTouched.current = true;
+                  setReminder(next);
+                }}
               />
             )}
 
-            {step.kind === 'plan' && (
-              <ScrollView
-                style={styles.scroll}
-                contentContainerStyle={styles.scrollContent}
-                showsVerticalScrollIndicator={false}>
-                <PlanStep
-                  summary={planSummary({
-                    t,
-                    runner,
-                    // `load` in this scope is the *question*; the answer is
-                    // `loadAnswer`, which is what the reflection line reads too.
-                    sport: sport as SportKey | null,
-                    pain,
-                    load: loadAnswer,
-                  })}
-                  sessions={planSettingsFrom(answers, null).daysPerWeek}
-                />
-              </ScrollView>
-            )}
-
-            {step.kind === 'watch' && (
-              <ScrollView
-                style={styles.scroll}
-                contentContainerStyle={styles.scrollContent}
-                showsVerticalScrollIndicator={false}>
-                {/* The same component every other question uses. This one has
-                    no bespoke anything: it is a four-option single-select, and
-                    building it a second time would be two lists to keep in
-                    visual step for no gain. */}
-                <ChoiceStep
-                  art="option"
-                  options={resolve(step.options)}
-                  selected={Array.isArray(answer) ? answer : []}
-                  multi={false}
-                  onChange={setAnswer}
-                />
-              </ScrollView>
-            )}
-
-            {step.kind === 'watch-sync' && (
-              // Through `chose`, not `answers.watch === 'whoop'`. Choice
-              // answers are arrays, so that comparison was false for everybody
-              // and every user — Whoop included — was handed the Garmin guide,
-              // whose clip is null. That is why the video "never opened": the
-              // step was showing, with the wrong brand's content in it.
-              <WatchSyncStep brand={chose(answers, 'watch', 'whoop') ? 'whoop' : 'garmin'} />
-            )}
-
-            {step.kind === 'reminder' && <ReminderStep minutes={reminder} onChange={setReminder} />}
-
-            {step.kind === 'notify' && (
+            {step.kind === "notify" && (
               <NotifyStep
                 name={name}
                 granted={notify}
@@ -995,7 +991,56 @@ const CONFIRM_MS = 900;
               />
             )}
 
-            {step.kind === 'contract' && (
+            {step.kind === "test-intro" && (
+              <TestIntro
+                withBalance={balanceAllowed(answers, painless)}
+                onSkip={() => {
+                  Haptics.selectionAsync();
+                  move(true, { miniTest: "skipped" });
+                }}
+              />
+            )}
+
+            {step.kind === "test-toe" && (
+              <TestToe
+                total={balanceAllowed(answers, painless) ? 2 : 1}
+                options={[
+                  { value: "yes", label: t("onboarding.test.toeYes") },
+                  { value: "no", label: t("onboarding.test.toeNo") },
+                  { value: "unsure", label: t("onboarding.test.toeUnsure") },
+                ]}
+                answer={list(answer)[0] ?? null}
+                onAnswer={(next) => setAnswer([next])}
+              />
+            )}
+
+            {step.kind === "test-balance" && (
+              <TestBalance
+                total={2}
+                left={balance.left}
+                right={balance.right}
+                onResult={(which, seconds) =>
+                  setBalance((prev) => ({ ...prev, [which]: seconds }))
+                }
+              />
+            )}
+
+            {step.kind === "test-result" && (
+              <TestResult
+                arch={miniTestAnswers?.arch ?? null}
+                left={balance.left}
+                right={balance.right}
+              />
+            )}
+
+            {step.kind === "first-week" && (
+              <FirstWeekStep
+                days={sessionDays(settingsNow.daysPerWeek ?? 5)}
+                moves={weekMoves}
+              />
+            )}
+
+            {step.kind === "contract" && (
               <View style={styles.scroll}>
                 <ContractStep
                   name={name}
@@ -1003,51 +1048,28 @@ const CONFIRM_MS = 900;
                   onDrawingChange={setDrawing}
                   stamp={stamp}
                   sealing={sealing}
-                  onSealed={() => step1(true)}
+                  onSealed={() => move(true)}
                 />
               </View>
             )}
-
-            {step.kind === 'health' && (
-              <HealthStep
-                name={name}
-                summary={health}
-                onConnected={setHealth}
-                onNext={onNext}
-              />
-            )}
-
           </>
         )}
       </Animated.View>
 
-      {/* Pinned over the whole page rather than placed in the sliding body: a
-          full-screen photograph carried by the step transition would drag a
-          28pt strip of empty page behind it. It fades in over the trough
-          instead, once the outgoing question has left. */}
-      {step.kind === 'building' && (
+      {/* Pinned over the whole page rather than carried by the step slide. */}
+      {step.kind === "building" && (
         <BuildingStep
           sex={sex}
-          lines={buildingLines({ t, sport: sport as SportKey | null, pain, load: loadAnswer })}
+          lines={buildingLines}
           onDone={onNext}
           insets={insets}
         />
       )}
 
-
-      {/* On the welcome screen the CTA is the last beat of the introduction,
-          so the button itself arrives only once the sequence finishes and
-          rises in. Its *space*, though, is held from the first frame: mounting
-          the whole bar late shortened the body mid-sequence, and the welcome
-          screen's character — which sits at the bottom of that body — visibly
-          jumped as the button appeared under it. */}
       {!noSharedCta && (
-        <View style={[styles.bar, { paddingBottom: Math.max(insets.bottom, 16) }]}>
-          {/* Squashed, not moved. Origin at the bottom so the base stays put
-              on the safe-area line and the top edge dips towards it — the
-              button gives under the weight instead of sliding down the page.
-              Widening slightly as it flattens is what keeps the volume
-              believable rather than reading as a scale-down. */}
+        <View
+          style={[styles.bar, { paddingBottom: Math.max(insets.bottom, 16) }]}
+        >
           <Animated.View style={[styles.ctaSlot, ctaSquashStyle]}>
             {(!bare || introReady) && (
               <Animated.View
@@ -1057,89 +1079,85 @@ const CONFIRM_MS = 900;
                         .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
                         .reduceMotion(ReduceMotion.System)
                     : undefined
-                }>
-                <PrimaryButton label={ctaLabel} onPress={onNext} disabled={!canAdvance} />
+                }
+              >
+                <PrimaryButton
+                  label={ctaLabel}
+                  onPress={onNext}
+                  disabled={!canAdvance}
+                />
               </Animated.View>
             )}
           </Animated.View>
 
-          {/* The other way in. Below the Apple button rather than beside it,
-              because Apple sign-in is the one this screen leads with and two
-              equal-weight buttons would make the choice look like it matters.
-              Not decoration: without it a failed Apple authorisation ends the
-              flow, and there are no credentials to hand App Store review.
-
-              A sibling of `ctaSlot`, not a child. That slot is pinned to the
-              button's exact height so the body never resizes when the welcome
-              CTA arrives — anything extra inside it overflows straight into the
-              safe-area padding, which put this on top of the home indicator. */}
-          {step.kind === 'intro' && (!bare || introReady) && (
-            <View style={styles.altAuthRow}>
+          {/* Under the intro's button: how long this takes, honestly, and the
+              way back in for somebody who already has an account. No sign-in
+              before the plan: the anonymous account from first launch holds
+              everything until the screen after the first purchase saves it. */}
+          {step.kind === "intro" && introReady && (
+            <Animated.View
+              entering={FadeIn.delay(200)
+                .duration(320)
+                .reduceMotion(ReduceMotion.System)}
+              style={styles.introFoot}
+            >
+              <Text style={[styles.footnote, { color: meter.caption }]}>
+                {t("onboarding.intro.footnote")}
+              </Text>
               <Pressable
                 accessibilityRole="button"
                 onPress={() => {
                   Haptics.selectionAsync();
-                  setEmailSignIn(true);
+                  track("sign_in_opened", { from: "intro" });
+                  setSignIn(true);
                 }}
-                disabled={authing}
-                style={({ pressed }) => [styles.altAuth, pressed && { opacity: 0.6 }]}>
-                <Text style={[styles.altAuthLabel, { color: meter.caption }]}>
-                  {t('onboarding.intro.emailCta')}
+                hitSlop={8}
+                style={({ pressed }) => pressed && { opacity: 0.6 }}
+              >
+                <Text style={[styles.haveAccount, { color: meter.label }]}>
+                  {t("onboarding.intro.haveAccount")}
                 </Text>
               </Pressable>
-            </View>
+            </Animated.View>
           )}
         </View>
       )}
 
-      <EmailSignInSheet
-        visible={emailSignIn}
-        onClose={() => setEmailSignIn(false)}
-        onSignedIn={(address) => {
-          setEmailSignIn(false);
-          setProfileEmail(address, 'onboarding');
-          track('sign_in_completed', { method: 'email', status: 'signed-in' });
-          // Clears any earlier Apple failure: they are in, and leaving the
-          // message up would have the screen reporting a problem they have
-          // just solved another way.
-          setSignInFailed(false);
-          step1(true);
+      <SignInSheet
+        visible={signIn}
+        onClose={() => setSignIn(false)}
+        onSignedIn={({ email }) => {
+          setSignIn(false);
+          if (email != null) {
+            setProfileEmail(email, "onboarding");
+            track("sign_in_completed", {
+              method: "email",
+              status: "signed-in",
+            });
+          }
+          move(true);
         }}
       />
-
-      {/* The last thing the flow does. It sits here, inside onboarding, rather
-          than over Home, because `completeOnboarding()` swaps the whole tree —
-          there is no onboarding left to show it from once that has run, and
-          over Home it would land on top of the offer sheet. `leaveNote` is what
-          finally flips the flag. */}
-      {/* "Rate Walkito" closes the note into the next screen and Apple's star
-          sheet rises over it there (see `useQueuedReview`); "Not now" just closes. */}
-      <NoteSheet visible={note} onDone={leaveNote} />
     </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
-  altAuthRow: { flexDirection: 'row', justifyContent: 'center', gap: 28 },
-  altAuth: { alignItems: 'center', paddingTop: 16, paddingBottom: 4 },
-  altAuthLabel: fonts.medium(15, -0.2),
   root: {
     flex: 1,
     paddingHorizontal: SIDE_PAD,
   },
   header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    // 16 rather than 20 since the language badge joined the row: four children
-    // at the old gap took enough width off the progress bar that it stopped
-    // reading as a bar on a small phone.
+    flexDirection: "row",
+    alignItems: "center",
     gap: 16,
-    // Room for the bar to breathe between the two controls, which is what
-    // keeps it reading as a progress hint rather than as a divider.
     paddingHorizontal: 2,
     marginBottom: 26,
   },
   body: {
+    flex: 1,
+  },
+  fill: {
     flex: 1,
   },
   title: {
@@ -1151,18 +1169,11 @@ const styles = StyleSheet.create({
     ...fonts.regular(16),
     lineHeight: 22,
   },
-  rail: {
-    marginTop: 36,
-  },
   scroll: {
     flex: 1,
     marginTop: 26,
   },
   scrollContent: {
-    paddingBottom: 8,
-  },
-  freeContent: {
-    flexGrow: 1,
     paddingBottom: 8,
   },
   bar: {
@@ -1172,6 +1183,14 @@ const styles = StyleSheet.create({
    * welcome screen's CTA arrives. */
   ctaSlot: {
     height: PRIMARY_BUTTON_HEIGHT,
-    transformOrigin: 'bottom',
+    transformOrigin: "bottom",
   },
+  introFoot: {
+    alignItems: "center",
+    gap: 10,
+    paddingTop: 14,
+    paddingBottom: 2,
+  },
+  footnote: fonts.medium(13),
+  haveAccount: fonts.semibold(15, -0.2),
 });

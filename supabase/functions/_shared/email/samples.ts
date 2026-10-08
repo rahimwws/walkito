@@ -10,13 +10,25 @@ import type { EmailContent, EmailKey, Locale, PaywallView } from './types.ts';
  * calves", calf raises 8 → 14 of 25, mornings 6 → 3.
  */
 
-const NAME: Record<Locale, string> = { en: 'sam', ru: 'аня', es: 'lucía' };
+const NAME: Record<Locale, string> = {
+  en: 'sam',
+  ru: 'аня',
+  es: 'lucía',
+  pt: 'ana',
+  fr: 'léa',
+  de: 'jonas',
+  it: 'giulia',
+};
 
 /** Annual subscription, offer and standard. Illustrative: real emails quote the store's own. */
 const PRICES: Record<Locale, { offer: string; standard: string }> = {
   en: { offer: '$29.99', standard: '$44.99' },
   ru: { offer: '2 490 ₽', standard: '3 790 ₽' },
   es: { offer: '29,99 €', standard: '44,99 €' },
+  pt: { offer: 'R$ 149,90', standard: 'R$ 229,90' },
+  fr: { offer: '29,99 €', standard: '44,99 €' },
+  de: { offer: '29,99 €', standard: '44,99 €' },
+  it: { offer: '29,99 €', standard: '44,99 €' },
 };
 
 function paywall(l: Locale): PaywallView {

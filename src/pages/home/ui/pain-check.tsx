@@ -28,6 +28,7 @@ import {
   PROGRAM,
   TODAY_INDEX,
   currentDay,
+  isFirstStepTime,
   painOn,
   logPain,
   settleOffset,
@@ -56,6 +57,7 @@ import {
 import { reliefIdsFor } from '../model/zone-relief';
 
 import { PAIN_MAX, PAIN_MIN, PainScale, painBand, painColor } from './pain-scale';
+import { SafetySheet } from './safety-sheet';
 
 const RADIUS = 36;
 const PRESS_MS = 90;
@@ -120,6 +122,11 @@ export function PainCheck({ onLogged }: PainCheckProps) {
   const t = useT();
   const [selected, setSelected] = useState<CardKey | null>(null);
   const [open, setOpen] = useState(false);
+  /** The red-flag check, behind "Something new?". */
+  const [safety, setSafety] = useState(false);
+  /** Before noon the question is about the first steps out of bed; after it,
+   * about the day. Read per render, so a screen left open across noon follows. */
+  const morning = isFirstStepTime(Date.now());
   /**
    * Whether a check-in has been made since this screen was opened.
    *
@@ -230,6 +237,9 @@ export function PainCheck({ onLogged }: PainCheckProps) {
   return (
     <>
       <View style={styles.wrap} {...REPLAY_MASK}>
+        <Text style={[styles.question, { color: meter.label }]}>
+          {morning ? t('home.checkInSubMorning') : t('home.checkInSubDay')}
+        </Text>
         <View style={styles.stage}>
           {CARDS.map((card) => (
             <PainCard
@@ -283,7 +293,11 @@ export function PainCheck({ onLogged }: PainCheckProps) {
             {ack}
           </Text>
         )}
+
+        <SomethingNew onPress={() => setSafety(true)} />
       </View>
+
+      <SafetySheet visible={safety} onClose={() => setSafety(false)} />
 
       <Modal
         animationType="slide"
@@ -383,6 +397,25 @@ function reliefDay(): ProgramDay {
  * point — the answer decides what tomorrow's session is, and it should be
  * impossible to log a 7 while thinking you logged a 3.
  */
+/** "Something new? (swelling, numbness, a pop)" — the way to the red-flag check. */
+function SomethingNew({ onPress }: { onPress: () => void }) {
+  const scheme = useColorScheme();
+  const meter = meterColors[scheme];
+  const t = useT();
+  return (
+    <Pressable
+      accessibilityRole="button"
+      onPress={() => {
+        Haptics.selectionAsync();
+        onPress();
+      }}
+      hitSlop={8}
+      style={({ pressed }) => [styles.somethingNew, pressed && { opacity: 0.5 }]}>
+      <Text style={[styles.somethingNewText, { color: meter.caption }]}>{t('home.somethingNew')}</Text>
+    </Pressable>
+  );
+}
+
 function Sheet({
   onClose,
   onSaved,
@@ -410,6 +443,8 @@ function Sheet({
   /** Set when a fourth zone is refused, cleared by the next accepted tap. The
    * map has to answer every tap — see `toggleZone`. */
   const [zonesFull, setZonesFull] = useState(false);
+  const [safety, setSafety] = useState(false);
+  const morning = isFirstStepTime(Date.now());
   const onZoneTap = (zone: LegZone) => {
     const next = toggleZone(zones, zone);
     if (next == null) {
@@ -510,7 +545,9 @@ function Sheet({
       <Text style={[styles.sheetTitle, { color: colors.foreground }]}>
         {t('home.checkInTitle')}
       </Text>
-      <Text style={[styles.sheetSub, { color: meter.caption }]}>{t('home.checkInSub')}</Text>
+      <Text style={[styles.sheetSub, { color: meter.caption }]}>
+        {morning ? t('home.checkInSubMorning') : t('home.checkInSubDay')}
+      </Text>
 
       <View style={styles.readout}>
         <AnimatedNumber
@@ -548,6 +585,9 @@ function Sheet({
       <View style={styles.scale}>
         <PainScale score={score} onChange={setScore} usual={usual} />
       </View>
+
+      <SomethingNew onPress={() => setSafety(true)} />
+      <SafetySheet visible={safety} onClose={() => setSafety(false)} />
 
 
       <PrimaryButton
@@ -782,6 +822,18 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   bandLabel: fonts.bold(22, -0.4),
+  question: {
+    ...fonts.semibold(17, -0.3),
+    lineHeight: 23,
+    textAlign: 'center',
+    paddingHorizontal: 12,
+  },
+  somethingNew: { alignSelf: 'center', paddingVertical: 6 },
+  somethingNewText: {
+    ...fonts.semibold(14),
+    textAlign: 'center',
+    textDecorationLine: 'underline',
+  },
   bandBlurb: {
     ...fonts.regular(16),
     lineHeight: 22,

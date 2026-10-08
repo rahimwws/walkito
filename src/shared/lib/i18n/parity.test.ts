@@ -108,10 +108,11 @@ describe('catalogue completeness', () => {
       const catalogue = CATALOGUES[language] as Record<string, unknown>;
       const required = CATEGORIES_BY_LANGUAGE[language].filter(
         (category) =>
-          // The optional members: Russian fractions and Spanish millions,
+          // The optional members: Russian fractions and the millions form
+          // in Spanish, Portuguese, French and Italian,
           // neither of which any count in this app can select.
           !(language === 'ru' && category === 'other') &&
-          !(language === 'es' && category === 'many'),
+          !(['es', 'pt', 'fr', 'it'].includes(language) && category === 'many'),
       );
 
       for (const [key, source] of Object.entries(en)) {

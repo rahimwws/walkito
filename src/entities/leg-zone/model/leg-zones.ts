@@ -233,3 +233,36 @@ export function painAreasOf(values: readonly string[]): PainArea[] {
   }
   return out;
 }
+
+const WHERE_KEYS: Readonly<Record<PainArea, Readonly<Record<'left' | 'right' | 'both', Key>>>> = {
+  heel: { left: 'onboarding.where.heelLeft', right: 'onboarding.where.heelRight', both: 'onboarding.where.heelBoth' },
+  foot: { left: 'onboarding.where.footLeft', right: 'onboarding.where.footRight', both: 'onboarding.where.footBoth' },
+  achilles: {
+    left: 'onboarding.where.achillesLeft',
+    right: 'onboarding.where.achillesRight',
+    both: 'onboarding.where.achillesBoth',
+  },
+  calf: { left: 'onboarding.where.calfLeft', right: 'onboarding.where.calfRight', both: 'onboarding.where.calfBoth' },
+  shin: { left: 'onboarding.where.shinLeft', right: 'onboarding.where.shinRight', both: 'onboarding.where.shinBoth' },
+};
+
+const AREA_KEYS: Readonly<Record<PainArea, Key>> = {
+  heel: 'onboarding.reflection.painHeel',
+  foot: 'onboarding.reflection.painFoot',
+  achilles: 'onboarding.reflection.painAchilles',
+  calf: 'onboarding.reflection.painCalf',
+  shin: 'onboarding.reflection.painShin',
+};
+
+/**
+ * The complaint and the side as one name — "Left heel", «Левая пятка»,
+ * «Talón izquierdo» — or the complaint alone ("Heel pain") with no side.
+ * Whole names per side, because the adjective agrees with the noun in Russian
+ * and follows it in Spanish. Null for anything that is not a complaint.
+ */
+export function whereKey(area: string | null | undefined, side: string | null | undefined): Key | null {
+  if (area == null || !AREAS.includes(area)) return null;
+  const known = area as PainArea;
+  if (side === 'left' || side === 'right' || side === 'both') return WHERE_KEYS[known][side];
+  return AREA_KEYS[known];
+}

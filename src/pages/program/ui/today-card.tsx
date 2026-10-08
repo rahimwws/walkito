@@ -3,7 +3,7 @@ import CheckmarkCircle02Icon from '@hugeicons/core-free-icons/CheckmarkCircle02I
 import Clock01Icon from '@hugeicons/core-free-icons/Clock01Icon';
 import Target01Icon from '@hugeicons/core-free-icons/Target01Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import type { ExerciseCategory, SessionMinutes } from '@/entities/program';
 import { accents, fonts, meterColors, palette } from '@/shared/config';
@@ -43,6 +43,10 @@ export type TodayCardProps = {
   nextAt?: number | null;
   /** Done on a test day: the results again, read-only. */
   onResults?: () => void;
+  /** "Not up for it?": start the 2-minute version instead. */
+  onShort?: () => void;
+  /** Why today differs from the plan — a big day yesterday, a short night. */
+  note?: string | null;
 };
 
 /**
@@ -59,7 +63,7 @@ export type TodayCardProps = {
  * something to refract — glass over a flat colour is just a lighter chip.
  */
 export function TodayCard(props: TodayCardProps) {
-  const { variant, kind, title, moves, minutes, onMinutes, onStart, onPreview, tests, tomorrow, restRoutine, nextAt, onResults } = props;
+  const { variant, kind, title, moves, minutes, onMinutes, onStart, onPreview, tests, tomorrow, restRoutine, nextAt, onResults, onShort, note } = props;
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -127,6 +131,10 @@ export function TodayCard(props: TodayCardProps) {
         </>
       )}
 
+      {(variant === 'session' || variant === 'easy') && note != null && (
+        <Text style={[styles.body, { color: meter.caption }]}>{note}</Text>
+      )}
+
       {(variant === 'session' || variant === 'easy') && (
         <>
           <View style={styles.chips}>
@@ -164,6 +172,15 @@ export function TodayCard(props: TodayCardProps) {
 
       {(variant === 'session' || variant === 'easy' || variant === 'test') && (
         <PrimaryButton label={t('pages.plan.start')} onPress={onStart} />
+      )}
+      {(variant === 'session' || variant === 'easy') && onShort != null && (
+        <Pressable
+          accessibilityRole="button"
+          onPress={onShort}
+          hitSlop={8}
+          style={({ pressed }) => [styles.notUp, pressed && { opacity: 0.5 }]}>
+          <Text style={[styles.notUpText, { color: meter.caption }]}>{t('pages.plan.notUpForIt')}</Text>
+        </Pressable>
       )}
     </View>
   );
@@ -211,4 +228,9 @@ const styles = StyleSheet.create({
   /** The card's own gap spaces the button; the button's default margin would
    * double it. */
   flush: {},
+  notUp: { alignSelf: 'center', paddingVertical: 2 },
+  notUpText: {
+    ...fonts.semibold(15),
+    textDecorationLine: 'underline',
+  },
 });

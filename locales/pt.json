@@ -1,0 +1,13 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Walkito",
+    "NSHealthShareUsageDescription": "o walkito lê seus passos, seu jeito de caminhar e seu sono para que o plano comece do que você realmente vem fazendo.",
+    "NSHealthUpdateUsageDescription": "o walkito salva suas sessões no Saúde para que elas contem na sua atividade.",
+    "\"SOMETHING OFF?\"": "ALGO ESTRANHO?",
+    "\"Tell us. A person replies.\"": "Conte pra gente. Uma pessoa responde."
+  },
+  "android": {
+    "app_name": "Walkito",
+    "widget_dailycheck_description": "Registre como você está hoje e veja sua meta do dia."
+  }
+}

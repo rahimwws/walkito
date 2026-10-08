@@ -32,6 +32,8 @@ export const NOTIFICATIONS_RU = {
   'notifications.kindFoot': 'Работа со стопой',
 
   // ── The morning nudge ────────────────────────────────────────────────────
+  /** The morning reminder, in the words of the intention signed in onboarding. */
+  'notifications.morningIntention': 'Проснувшись, ещё до того как встать, сделайте растяжку стопы.',
   'notifications.sessionStrength': {
     one: 'Сегодня сила стопы. {count} минута.',
     few: 'Сегодня сила стопы. {count} минуты.',
@@ -47,8 +49,6 @@ export const NOTIFICATIONS_RU = {
     few: 'Сегодня короткая сессия - {count} минуты, сидя.',
     many: 'Сегодня короткая сессия - {count} минут, сидя.',
   },
-  'notifications.sessionHeelRaises':
-    'Сегодня подъёмы на носки. То самое, что действительно сдвигает дело.',
   'notifications.sessionBackTo': {
     one: 'Сегодня {count} минута - ещё шаг {backTo}.',
     few: 'Сегодня {count} минуты - ещё шаг {backTo}.',
@@ -74,17 +74,7 @@ export const NOTIFICATIONS_RU = {
   // ── The morning after a bad day ──────────────────────────────────────────
   // Ни одного восклицательного знака и ни одной похвалы: вчера человеку было
   // плохо, и бодрый тон здесь означал бы, что приложение ему не верит.
-  'notifications.flareRough': {
-    one: 'Вчера было тяжело. Сегодня {count} минута, сидя.',
-    few: 'Вчера было тяжело. Сегодня {count} минуты, сидя.',
-    many: 'Вчера было тяжело. Сегодня {count} минут, сидя.',
-  },
-  'notifications.flarePain': {
-    one: 'Боль была {pain}. Сегодня план отходит в сторону - {count} минута.',
-    few: 'Боль была {pain}. Сегодня план отходит в сторону - {count} минуты.',
-    many: 'Боль была {pain}. Сегодня план отходит в сторону - {count} минут.',
-  },
-  'notifications.flareNothingHeavy': 'Вчера был плохой день. Сегодня ничего тяжёлого.',
+  'notifications.flareCheckIn': 'Вчера было тяжело. Отметьтесь, когда встанете - если всё ещё плохо, сегодня будет коротко и сидя.',
 
   // ── A big day on their feet ──────────────────────────────────────────────
   'notifications.loadSteps': {

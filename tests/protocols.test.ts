@@ -84,8 +84,10 @@ describe('hurts right now', () => {
   test('is the one that is free', () => {
     expect(FREE_PROTOCOL).toBe('flare');
     expect(flare.free).toBe(true);
-    const paid = PROTOCOLS.filter((p) => p.id !== 'flare');
+    // The morning stretch is the other: the paywall promises it stays free.
+    const paid = PROTOCOLS.filter((p) => p.id !== 'flare' && p.id !== 'morning');
     expect(paid.every((p) => !p.free)).toBe(true);
+    expect(PROTOCOLS.find((p) => p.id === 'morning')?.free).toBe(true);
   });
 
   test('is seated', () => {

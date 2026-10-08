@@ -1,0 +1,152 @@
+/** testday strings, French (the guided test day: intro, the three tests, results). Filled per domain; see `../en/core.ts` for the rules. */
+
+export const TESTDAY_FR = {
+  // ── Chrome ────────────────────────────────────────────────────────────────
+  'testday.close': 'Fermer',
+  'testday.leave.title': 'Quitter le test ?',
+  'testday.leave.body': 'Rien n’est enregistré avant la fin du dernier test. Le test reste à faire.',
+  'testday.leave.stay': 'Continuer le test',
+  'testday.leave.confirm': 'Quitter',
+
+  // ── Intro ─────────────────────────────────────────────────────────────────
+  'testday.intro.eyebrow': 'Jour de test',
+  'testday.intro.title': 'Trois tests courts',
+  'testday.intro.body': {
+    one: 'Environ {count} minute. Les chiffres montrent où en est chaque objectif et fixent ton plan pour les deux semaines à venir.',
+    other: 'Environ {count} minutes. Les chiffres montrent où en est chaque objectif et fixent ton plan pour les deux semaines à venir.',
+  },
+  'testday.intro.nowSeconds': 'Maintenant {now} s · objectif {goal} s',
+  'testday.intro.nowRaises': {
+    one: 'Maintenant {now} · objectif {count} montée',
+    other: 'Maintenant {now} · objectif {count} montées',
+  },
+  'testday.intro.firstSeconds': 'Première mesure · objectif {goal} s',
+  'testday.intro.firstRaises': {
+    one: 'Première mesure · objectif {count} montée',
+    other: 'Première mesure · objectif {count} montées',
+  },
+  'testday.intro.need': 'Il te faut',
+  'testday.intro.needBarefoot': 'Les pieds nus',
+  'testday.intro.needWall': 'Un mur à toucher pour l’équilibre',
+  'testday.intro.needPhone': 'Le téléphone à portée de vue',
+  'testday.intro.checkin': 'Comment va ton pied, là ?',
+  'testday.intro.checkinHint': 'Ça compte comme ton bilan du jour.',
+  'testday.intro.painNone': 'Aucune douleur',
+  'testday.intro.painWorst': 'Pire',
+  'testday.intro.painA11y': '{score} sur 10',
+  'testday.intro.sore':
+    'Un jour où ça fait mal, les chiffres sortent plus bas que ce dont ton pied est vraiment capable, et les deux semaines suivantes seraient planifiées à partir d’eux. Le test peut attendre demain.',
+  'testday.intro.start': 'Commencer',
+  'testday.intro.anyway': 'Faire le test quand même',
+  'testday.intro.tomorrow': 'Faire le test demain',
+
+  // ── The three tests ───────────────────────────────────────────────────────
+  'testday.test.eyebrow': 'Test {current} sur {total}',
+  'testday.test.calf.name': 'Montées sur pointes',
+  'testday.test.calf.measures': 'Combien de montées chaque jambe enchaîne à un rythme régulier',
+  'testday.test.arch.name': 'Maintien de la voûte',
+  'testday.test.arch.measures': 'Combien de temps ta voûte reste levée',
+  'testday.test.balance.name': 'Équilibre',
+  'testday.test.balance.measures': 'Combien de temps tu tiens sur une jambe, les yeux fermés',
+
+  'testday.side.left': 'Jambe gauche',
+  'testday.side.right': 'Jambe droite',
+  'testday.side.leftSore': 'Jambe gauche - celle qui fait mal',
+  'testday.side.rightSore': 'Jambe droite - celle qui fait mal',
+
+  'testday.calf.step1': 'Tiens-toi sur une jambe, le bout des doigts contre le mur pour l’équilibre.',
+  'testday.calf.step2': 'Monte tout en haut et redescends, une montée toutes les 2 secondes. Un tic donne le rythme.',
+  'testday.calf.step3': 'Touche Stop quand tu ne tiens plus le rythme ou la pleine hauteur. Puis l’autre jambe.',
+  'testday.calf.stopHint': 'Touche quand tu ne tiens plus le rythme ou la pleine hauteur',
+  'testday.calf.up': 'Monte',
+  'testday.calf.down': 'Descends',
+  'testday.calf.otherTitle': 'Maintenant l’autre jambe',
+  'testday.calf.otherBody': 'Même rythme, même pleine hauteur, le bout des doigts au mur.',
+
+  'testday.arch.step1': 'Tiens-toi sur les deux pieds, le poids bien réparti.',
+  'testday.arch.step2': 'Rapproche l’avant-pied du talon pour que la voûte se lève. Les orteils restent allongés et détendus.',
+  'testday.arch.step3': 'Tiens. Touche Stop dès que la voûte retombe.',
+  'testday.arch.stopHint': 'Touche dès que la voûte retombe',
+
+  'testday.balance.step1': 'Tiens-toi sur une jambe à côté du mur, les mains sur les hanches.',
+  'testday.balance.step2': 'Ferme les yeux au top départ. Un son t’indique quand le temps est écoulé.',
+  'testday.balance.step3': 'Ouvre les yeux et touche Stop dès que l’autre pied touche le sol.',
+  'testday.balance.stopHint': 'Touche quand l’autre pied touche le sol',
+
+  'testday.start': 'Commencer',
+  'testday.stop': 'Stop',
+  'testday.timeLeft': 'Encore {time}',
+  'testday.secondsLeft': { one: 'seconde restante', other: 'secondes restantes' },
+  'testday.held': 'Tenu {n} s',
+
+  'testday.paused.title': 'En pause',
+  'testday.paused.body': 'Le chrono s’est arrêté pendant que l’app était en arrière-plan.',
+  'testday.paused.resume': 'Reprendre',
+  'testday.paused.restart': 'Recommencer ce test',
+
+  'testday.confirm.raises': {
+    one: '{count} montée - c’est bien ça ?',
+    other: '{count} montées - c’est bien ça ?',
+  },
+  'testday.confirm.seconds': {
+    one: '{count} seconde - c’est bien ça ?',
+    other: '{count} secondes - c’est bien ça ?',
+  },
+  'testday.confirm.hint': 'Corrige si le compte n’est pas bon.',
+  'testday.confirm.holdHint': 'Si tu as mis un moment à atteindre le téléphone, retire ces secondes.',
+  'testday.confirm.less': 'Moins',
+  'testday.confirm.more': 'Plus',
+  'testday.confirm.again': 'Refaire ce test',
+  'testday.confirm.next': 'Test suivant',
+  'testday.confirm.finish': 'Voir les résultats',
+
+  // ── Results ───────────────────────────────────────────────────────────────
+  'testday.results.title': 'Tes résultats',
+  'testday.results.blurb': 'Comparés à ton dernier test, jamais à quelqu’un d’autre.',
+  'testday.results.firstBlurb': 'C’est ton point de départ. Le prochain test montrera ce qui a changé.',
+  'testday.results.name.arch_hold': 'Maintien de la voûte',
+  'testday.results.name.calf_raises': 'Montées sur pointes',
+  'testday.results.name.balance': 'Équilibre',
+  'testday.results.name.symmetry': 'Symétrie',
+  'testday.results.unitSeconds': { one: 'seconde', other: 'secondes' },
+  'testday.results.unitRaises': { one: 'montée', other: 'montées' },
+  'testday.results.percent': '{n} %',
+  'testday.results.gapUnit': 'd’écart entre les jambes',
+  'testday.results.legs': 'Gauche {left} · droite {right}',
+  'testday.results.goalSeconds': 'Objectif {n} s',
+  'testday.results.goalRaises': { one: 'Objectif {count} montée', other: 'Objectif {count} montées' },
+  'testday.results.goalGap': 'Objectif : moins de {n} %',
+  'testday.results.toGoSeconds': { one: 'Encore {count} s', other: 'Encore {count} s' },
+  'testday.results.toGoRaises': { one: 'Encore {count} montée', other: 'Encore {count} montées' },
+  'testday.results.toGoGap': { one: 'Encore {count} point', other: 'Encore {count} points' },
+  'testday.results.reached': 'Objectif atteint',
+  'testday.results.moreSeconds': {
+    one: '{count} s de plus que la dernière fois',
+    other: '{count} s de plus que la dernière fois',
+  },
+  'testday.results.fewerSeconds': {
+    one: '{count} s de moins que la dernière fois',
+    other: '{count} s de moins que la dernière fois',
+  },
+  'testday.results.moreRaises': {
+    one: '{count} montée de plus que la dernière fois',
+    other: '{count} montées de plus que la dernière fois',
+  },
+  'testday.results.fewerRaises': {
+    one: '{count} montée de moins que la dernière fois',
+    other: '{count} montées de moins que la dernière fois',
+  },
+  'testday.results.gapSmaller': {
+    one: 'Écart réduit de {count} point depuis la dernière fois',
+    other: 'Écart réduit de {count} points depuis la dernière fois',
+  },
+  'testday.results.gapLarger': {
+    one: 'Écart augmenté de {count} point depuis la dernière fois',
+    other: 'Écart augmenté de {count} points depuis la dernière fois',
+  },
+  'testday.results.same': 'Comme la dernière fois',
+  'testday.results.first': 'Première mesure',
+  'testday.results.nextTest': 'Prochain test : {date}',
+  'testday.results.planUpdated': 'Ton plan pour les deux semaines à venir est à jour.',
+  'testday.results.done': 'Terminé',
+};

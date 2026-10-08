@@ -32,7 +32,7 @@ export type SessionDoneSheetProps = {
   moves: number;
   /** Stopped on a pain report rather than run to the end. */
   early?: boolean;
-  /** Ask "How hard was that?". See `SessionViewProps.feedback`. */
+  /** Ask "Could you have done 2 more good reps?". See `SessionViewProps.feedback`. */
   feedback?: boolean;
   /** When the session began, epoch ms — how the answer tells whether the host
    * has already filed the session it belongs to. See `remember`. */
@@ -174,7 +174,7 @@ export function SessionDoneSheet({
 }
 
 /**
- * "How hard was that?" — one card, four answers, none of them picked.
+ * "Could you have done 2 more good reps?" — one card, four answers, none picked.
  *
  * It replaced a segmented control that sat on "OK" before anyone touched it.
  * That preselection was the problem: a session closed without an answer read

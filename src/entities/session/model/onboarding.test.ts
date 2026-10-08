@@ -47,9 +47,13 @@ describe('onboarding is reachable', () => {
       /guard=\{onboarded && !entitled && lapsed && !browsing\}\s*>\s*<Stack\.Screen\s+name="expired"/s;
     expect(layout).toMatch(expired);
 
-    // The app itself: paid, or reading their own history after a lapse.
+    // Straight after the first purchase, the setup screens, once.
+    const setup = /guard=\{onboarded && entitled && setupPending\}\s*>\s*<Stack\.Screen\s+name="setup"/s;
+    expect(layout).toMatch(setup);
+
+    // The app itself: paid and set up, or reading their own history after a lapse.
     const tabs =
-      /guard=\{onboarded && \(entitled \|\| \(lapsed && browsing\)\)\}\s*>\s*<Stack\.Screen name="\(tabs\)"/s;
+      /guard=\{onboarded && \(\(entitled && !setupPending\) \|\| \(lapsed && browsing\)\)\}\s*>\s*<Stack\.Screen name="\(tabs\)"/s;
     expect(layout).toMatch(tabs);
   });
 
@@ -69,7 +73,8 @@ describe('onboarding is reachable', () => {
     // One gate, inside the player, so none of the screens that open a session
     // can forget it.
     expect(player).toContain('useSessionsLocked()');
-    expect(player).toMatch(/if \(!locked\) return <SessionRun/);
+    // The one exception is a routine marked free (the morning stretch).
+    expect(player).toMatch(/if \(!locked \|\| props\.free === true\) return <SessionRun/);
   });
 
   test('the paywall is a screen, not a dismissible sheet', () => {

@@ -133,13 +133,13 @@ describe('every language gets a whole sentence', () => {
   });
 
   test('the words actually change with the language', () => {
-    const [en, ru, es] = LANGUAGES.map((l) => messageFor('checkin', base(), l)?.body);
-    expect(new Set([en, ru, es]).size).toBe(3);
+    const bodies = LANGUAGES.map((l) => messageFor('checkin', base(), l)?.body);
+    expect(new Set(bodies).size).toBe(LANGUAGES.length);
   });
 
   test('the retest tail is translated too', () => {
     const tails = LANGUAGES.map((l) => retestFollowUpBody(l));
-    expect(new Set(tails).size).toBe(3);
+    expect(new Set(tails).size).toBe(LANGUAGES.length);
     for (const tail of tails) expect(tail.trim().length).toBeGreaterThan(0);
   });
 
@@ -147,8 +147,9 @@ describe('every language gets a whole sentence', () => {
    * with one line all fortnight would have lost the variants. */
   test('each rotating kind says more than one thing in every language', () => {
     for (const language of LANGUAGES) {
-      for (const kind of ['session', 'flare', 'retest', 'checkin'] as const) {
-        expect(new Set(bodies(kind, language, { painYesterday: 8 })).size).toBeGreaterThan(1);
+      for (const kind of ['session', 'retest', 'checkin'] as const) {
+        // An afternoon reminder: before noon the session line is the intention.
+        expect(new Set(bodies(kind, language, { painYesterday: 8, sessionAt: 17 * 60 })).size).toBeGreaterThan(1);
       }
     }
   });
@@ -160,7 +161,15 @@ describe('the morning nudge', () => {
    * means the streak may not appear anywhere but its own row — and a morning
    * nudge is the row most likely to pick one up by accident.
    */
-  const STREAK_WORD: Record<Language, string> = { en: 'streak', ru: 'подряд', es: 'racha' };
+  const STREAK_WORD: Record<Language, string> = {
+    en: 'streak',
+    ru: 'подряд',
+    es: 'racha',
+    pt: 'sequência',
+    fr: 'série',
+    de: 'serie',
+    it: 'serie',
+  };
 
   test('never mentions the streak, whatever the streak is', () => {
     for (const language of LANGUAGES) {
@@ -173,8 +182,14 @@ describe('the morning nudge', () => {
 
   test('names the minutes the day actually asks for', () => {
     for (const language of LANGUAGES) {
-      expect(bodies('session', language, { minutes: 6 }).some((b) => b.includes('6'))).toBe(true);
+      expect(bodies('session', language, { minutes: 6, sessionAt: 17 * 60 }).some((b) => b.includes('6'))).toBe(true);
     }
+  });
+
+  test('before noon it says the intention back', () => {
+    expect(new Set(bodies('session', 'en', { sessionAt: 7 * 60 }))).toEqual(
+      new Set(['When you wake up, before you stand, do your foot stretch.']),
+    );
   });
 
   /** English, named: the day-number line reads as a whole sentence rather than
@@ -201,7 +216,7 @@ describe('the morning nudge', () => {
     for (const language of LANGUAGES) {
       for (const kind of ['strength', 'mobility', 'balance', 'recovery', null]) {
         const dayLine = span
-          .map((dateKey) => messageFor('session', base({ dateKey, kind }), language)?.body ?? '')
+          .map((dateKey) => messageFor('session', base({ dateKey, kind, sessionAt: 17 * 60 }), language)?.body ?? '')
           .find((body) => body.includes('17'));
         expect(dayLine, `${language} never reached the day line for ${kind}`).toBeDefined();
         expect(dayLine).not.toContain('{');
@@ -224,6 +239,10 @@ describe('flare support', () => {
     en: ['great', 'awesome', 'well done', 'keep it up', 'nice', 'you got this'],
     ru: ['отлично', 'молодец', 'супер', 'так держать', 'здорово', 'вы справитесь'],
     es: ['genial', 'bien hecho', 'sigue así', 'excelente', 'ánimo', 'tú puedes'],
+    pt: ['ótimo', 'incrível', 'muito bem', 'mandou bem', 'continue assim', 'você consegue'],
+    fr: ['génial', 'super', 'bravo', 'bien joué', 'continue comme ça', 'tu peux le faire'],
+    de: ['toll', 'super', 'klasse', 'gut gemacht', 'weiter so', 'du schaffst das'],
+    it: ['ottimo', 'fantastico', 'bravo', 'ben fatto', 'continua così', 'ce la puoi fare'],
   };
   /** Punctuation and emoji are banned everywhere: an exclamation mark is
    * cheerful in all three. */
@@ -240,20 +259,10 @@ describe('flare support', () => {
     }
   });
 
-  test('names the smaller ask', () => {
-    for (const language of LANGUAGES) {
-      expect(bodies('flare', language, flare).some((b) => b.includes('3'))).toBe(true);
-    }
-  });
-
-  /** The Russian minute forms, which are the reason the catalogue is typed the
-   * way it is: 3 takes `few`, 5 takes `many`, and a flat translation renders
-   * "3 минут" on the morning after a flare. */
-  test('Russian agrees the minutes with the number', () => {
-    const t = translatorFor('ru');
-    expect(t('notifications.flareRough', { count: 1 })).toContain('1 минута');
-    expect(t('notifications.flareRough', { count: 3 })).toContain('3 минуты');
-    expect(t('notifications.flareRough', { count: 5 })).toContain('5 минут');
+  test('asks for a check-in, and says today stays short and seated', () => {
+    expect(new Set(bodies('flare', 'en', flare))).toEqual(new Set([
+      'Rough one yesterday. Check in when you’re up - if it’s still bad, today stays short and seated.',
+    ]));
   });
 });
 
@@ -304,6 +313,10 @@ describe('gait change', () => {
     en: ['limp', 'compensat', 'injur', 'damage', 'average', 'normal', 'most people'],
     ru: ['хром', 'компенс', 'травм', 'поврежд', 'средн', 'норм', 'большинств'],
     es: ['cojea', 'compens', 'lesión', 'lesion', 'daño', 'promedio', 'normal', 'la mayoría'],
+    pt: ['manca', 'compens', 'lesão', 'lesao', 'dano', 'média', 'normal', 'a maioria'],
+    fr: ['boit', 'compens', 'blessure', 'lésion', 'dommage', 'moyenne', 'normal', 'la plupart'],
+    de: ['hink', 'kompens', 'verletz', 'schaden', 'durchschnitt', 'normal', 'die meisten'],
+    it: ['zoppic', 'compens', 'infortun', 'lesion', 'danno', 'nella media', 'la media', 'normal', 'la maggior'],
   };
 
   test('never diagnoses, never predicts, never compares to anyone else', () => {
@@ -355,6 +368,10 @@ describe('streak protection', () => {
     en: ['lost', 'lose', 'don’t break', 'about to'],
     ru: ['потер', 'терят', 'сгор', 'прерв'],
     es: ['pierd', 'perder', 'se acaba', 'rompas'],
+    pt: ['perd', 'quebr', 'acabar'],
+    fr: ['perd', 'casse', 'bris'],
+    de: ['verlier', 'verlor', 'brich', 'reiß'],
+    it: ['perd', 'perso', 'romp', 'spezz'],
   };
 
   test('states what a tap keeps, never what is lost', () => {

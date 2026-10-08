@@ -41,7 +41,16 @@ export type AnalyticsEvents = {
   /** A step appeared. `step` is its stable key from `STEPS`, never its title. */
   onboarding_step_viewed: { step: string; index: number; act: number };
   /** Only for the few answers that segment a funnel without describing a body. */
-  onboarding_answered: { step: 'source' | 'goal' | 'sport' | 'runner'; answer: string };
+  onboarding_answered: { step: 'source' | 'goal' | 'sport' | 'runner' | 'role'; answer: string };
+  /** A reaction to an answer appeared — a full screen or a line under the
+   * options. The reaction's key, never the answer that chose it. */
+  onboarding_reaction_viewed: { reaction: string; full: boolean };
+  /** The 30-second check: whether this person is in it, then that they did it.
+   * Never the result — an arch or a balance time is a body measurement. */
+  mini_test_assigned: { variant: 'test' | 'control' };
+  mini_test_completed: { balance: boolean };
+  /** "Already have an account?" on the intro. */
+  sign_in_opened: { from: 'intro' | 'setup' };
   acquisition_source_selected: { source: AcquisitionSource };
   sign_in_completed: { method: 'apple' | 'google' | 'email'; status: 'signed-in' | 'unavailable' };
   /** `stage` says whether the provider's own sheet or our server refused — a
@@ -55,6 +64,8 @@ export type AnalyticsEvents = {
   /** A step of the first paywall: the two screens before it, then the plans. */
   paywall_step_viewed: { step: 1 | 2 | 3 };
   paywall_plan_selected: { plan: PlanTier };
+  /** "Have a code?" under the plans. */
+  paywall_code_opened: Record<string, never>;
   paywall_dismissed: { offering: string };
   purchase_started: PurchaseProps;
   purchase_completed: PurchaseProps;
@@ -64,6 +75,13 @@ export type AnalyticsEvents = {
   purchase_pending: PurchaseProps;
   purchase_failed: PurchaseProps & { reason: string };
   restore_completed: { status: 'restored' | 'nothing-found' | 'failed' };
+
+  // ── After the first purchase ─────────────────────────────────────────────
+  setup_step_viewed: { step: string };
+  setup_completed: Record<string, never>;
+  /** The widget, asked for. `pinned` only where the system could add it
+   * itself (Android); on iPhone it is the walkthrough being finished. */
+  widget_add: { result: 'pinned' | 'guided' | 'skipped' };
 
   // ── Program ──────────────────────────────────────────────────────────────
   session_started: SessionProps;
@@ -79,6 +97,9 @@ export type AnalyticsEvents = {
   library_routine_completed: { routine: string };
   /** How a finished session felt — the answer that moves progression. */
   session_feedback: { feedback: 'easy' | 'ok' | 'hard' };
+  /** "Can't do this" in the player. A missing-kit reason travels; "it hurts"
+   * goes as `other`, because a pain answer is health data. */
+  exercise_cant_do: { exercise: string; reason: 'no_step' | 'no_band' | 'no_towel' | 'no_pillow' | 'no_ball' | 'other' };
   /** A plan answer changed in Settings. Which field, not what it became. */
   /** A plan sync to Supabase failed. The table and the PostgREST/Postgres error code, or
    * `network` / `thrown`; never a row's contents. */

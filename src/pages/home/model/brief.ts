@@ -13,7 +13,11 @@ import {
 import { NO_SIGNALS } from '@/entities/health/model/metrics';
 import { translatorFor, type Key, type Language, type Translate } from '@/shared/lib/i18n';
 import { BRIEF_EN } from '@/shared/lib/i18n/catalogue/en/home';
+import { BRIEF_DE } from '@/shared/lib/i18n/catalogue/de/home';
 import { BRIEF_ES } from '@/shared/lib/i18n/catalogue/es/home';
+import { BRIEF_FR } from '@/shared/lib/i18n/catalogue/fr/home';
+import { BRIEF_IT } from '@/shared/lib/i18n/catalogue/it/home';
+import { BRIEF_PT } from '@/shared/lib/i18n/catalogue/pt/home';
 import { BRIEF_RU } from '@/shared/lib/i18n/catalogue/ru/home';
 // Runtime helpers straight from `template`, types from the barrel.
 //
@@ -98,8 +102,25 @@ const DASH = '-';
  * Both are language facts rather than copy, so they live beside the formatter
  * instead of in the catalogue: a translator has nothing to decide about them.
  */
-const GROUP: Readonly<Record<Language, string>> = { en: ',', ru: ' ', es: '.' };
-const DECIMAL: Readonly<Record<Language, string>> = { en: '.', ru: ',', es: ',' };
+const GROUP: Readonly<Record<Language, string>> = {
+  en: ',',
+  ru: ' ',
+  es: '.',
+  pt: '.',
+  // French groups with a narrow no-break space, so a figure never wraps.
+  fr: '\u202f',
+  de: '.',
+  it: '.',
+};
+const DECIMAL: Readonly<Record<Language, string>> = {
+  en: '.',
+  ru: ',',
+  es: ',',
+  pt: ',',
+  fr: ',',
+  de: ',',
+  it: ',',
+};
 
 /** Thousands separated the way this language separates them. */
 function grouped(value: number, language: Language): string {
@@ -168,6 +189,10 @@ const BRIEFS: Readonly<Record<Language, Record<BriefState, BriefVariants>>> = {
   en: BRIEF_EN,
   ru: BRIEF_RU,
   es: BRIEF_ES,
+  pt: BRIEF_PT,
+  fr: BRIEF_FR,
+  de: BRIEF_DE,
+  it: BRIEF_IT,
 };
 
 /**

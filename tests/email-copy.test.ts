@@ -77,6 +77,10 @@ describe.each([...LOCALES])('%s', (l: Locale) => {
       en: /\b(treat\w*|cure[sd]?|curing|fix\w*|heal(s|ed|ing)?)\b/i,
       ru: /(лечи|лечен|вылеч|исцел)/i,
       es: /\b(trat(ar|amiento)\w*|cur(ar|a|an|ación)|san(ar|a|an))\b/i,
+      pt: /\b(trat(ar|amento)\w*|cur(ar|a|am|ação)|sarar)\b/i,
+      fr: /\b(trait(er|ement)\w*|guéri\w*|soign\w*)\b/i,
+      de: /(behandl|heilen|heilung|kurier)/i,
+      it: /\b(tratt(are|amento)\w*|cur(are|a)|guari\w*)\b/i,
     };
     const rule = banned[l];
     expect(all.filter((t) => rule.test(t))).toEqual([]);
@@ -108,17 +112,21 @@ describe.each([...LOCALES])('%s', (l: Locale) => {
 });
 
 describe('languages are complete in their own words', () => {
-  test('russian is cyrillic and spanish is not english', () => {
+  test('russian is cyrillic and the others are not english', () => {
     const en = everything('en').map((e) => e.subject);
     const ru = everything('ru').map((e) => e.subject);
     const es = everything('es').map((e) => e.subject);
     for (const s of ru) expect(s).toMatch(/[а-яё]/);
     const same = es.filter((s, i) => s === en[i]);
     expect(same).toEqual([]);
+    for (const l of ['pt', 'fr', 'de', 'it'] as const) {
+      const theirs = everything(l).map((e) => e.subject);
+      expect(theirs.filter((s, i) => s === en[i])).toEqual([]);
+    }
   });
 
   test('an unknown language falls back to a whole english email', () => {
-    expect(copyFor('de')).toBe(COPY.en);
+    expect(copyFor('ja')).toBe(COPY.en);
     expect(copyFor(null)).toBe(COPY.en);
   });
 });
@@ -192,7 +200,9 @@ describe('the samples sent to an inbox before launch', () => {
     for (const l of LOCALES) {
       const samples = sampleEmails(l);
       expect(samples.map((s) => s.key).sort()).toEqual([...EMAIL_KEYS].sort());
-      for (const s of samples) for (const t of words(s.content)) expect(t).not.toMatch(/[A-ZА-ЯЁÀ-ÖØ-Þ—–]/);
+      // A price is quoted exactly as the store gave it, and "R$" is how Brazil
+      // writes its currency. It is the one capital an email may carry.
+      for (const s of samples) for (const t of words(s.content)) expect(t.replaceAll('R$', '')).not.toMatch(/[A-ZА-ЯЁÀ-ÖØ-Þ—–]/);
     }
   });
 });

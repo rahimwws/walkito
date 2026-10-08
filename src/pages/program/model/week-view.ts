@@ -47,5 +47,6 @@ export function playlistOf(exercises: readonly PlannedExercise[]): PlaylistStep[
     ...(e.dose.tempo != null && e.dose.reps != null
       ? { cadence: { tempo: e.dose.tempo, reps: e.dose.reps, sets: e.dose.sets } }
       : {}),
+    ...(e.dose.addWeight === true ? { addWeight: true } : {}),
   }));
 }

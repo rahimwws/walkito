@@ -115,7 +115,7 @@ const HOURS: readonly OnboardingOption[] = [
  */
 const LOAD: Record<SportKey, LoadQuestion> = {
   running: {
-    title: (t) => t('onboarding.load.titleRunning', NAME_SLOT),
+    title: (t) => t('onboarding.load.titleRunning'),
     blurb: (t) => t('onboarding.load.blurb'),
     options: KM(UNIT_KM),
     extraLabel: (t) => t('onboarding.load.runsPerWeek'),
@@ -160,4 +160,25 @@ const LOAD: Record<SportKey, LoadQuestion> = {
 
 export function loadQuestionFor(sport: string | null): LoadQuestion {
   return LOAD[(sport ?? 'running') as SportKey] ?? LOAD.running;
+}
+
+/** Hours on their feet on a working day — the load a standing job puts on them. */
+const FEET: LoadQuestion = {
+  title: (t) => t('onboarding.load.titleFeet'),
+  blurb: (t) => t('onboarding.load.blurbFeet'),
+  options: [
+    { value: 'under4', label: (t) => t('onboarding.load.feet0') },
+    { value: '4-8', label: (t) => t('onboarding.load.feet1') },
+    { value: '8-12', label: (t) => t('onboarding.load.feet2') },
+    { value: '12+', label: (t) => t('onboarding.load.feet3') },
+  ],
+  extraLabel: (t) => t('onboarding.load.sessionsPerWeek'),
+};
+
+/**
+ * The load question for who they are: kilometres for anybody who runs, hours
+ * on feet for a standing job. The step is skipped for everyone else.
+ */
+export function loadQuestionForRole(role: string | null): LoadQuestion {
+  return role === 'feet' ? FEET : LOAD.running;
 }

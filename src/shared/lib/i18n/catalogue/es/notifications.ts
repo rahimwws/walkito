@@ -28,6 +28,8 @@ export const NOTIFICATIONS_ES = {
   'notifications.kindFoot': 'Trabajo para el pie',
 
   // ── The morning nudge ────────────────────────────────────────────────────
+  /** The morning reminder, in the words of the intention signed in onboarding. */
+  'notifications.morningIntention': 'Al despertar, antes de ponerte de pie, haz tu estiramiento del pie.',
   'notifications.sessionStrength': {
     one: 'Hoy toca fuerza del pie. {count} minuto.',
     other: 'Hoy toca fuerza del pie. {count} minutos.',
@@ -40,8 +42,6 @@ export const NOTIFICATIONS_ES = {
     one: 'Hoy una sesión corta: {count} minuto, sin levantarte de la silla.',
     other: 'Hoy una sesión corta: {count} minutos, sin levantarte de la silla.',
   },
-  'notifications.sessionHeelRaises':
-    'Hoy elevaciones de talón. El ejercicio que de verdad cambia las cosas.',
   'notifications.sessionBackTo': {
     one: 'Hoy {count} minuto. Un paso más para volver {backTo}.',
     other: 'Hoy {count} minutos. Un paso más para volver {backTo}.',
@@ -63,15 +63,7 @@ export const NOTIFICATIONS_ES = {
   // ── The morning after a bad day ──────────────────────────────────────────
   // Sin signos de exclamación, sin ánimos y sin elogios: ayer dolió, y un tono
   // alegre aquí le diría al usuario que la app no le cree.
-  'notifications.flareRough': {
-    one: 'Ayer fue duro. Hoy es {count} minuto, sin levantarte de la silla.',
-    other: 'Ayer fue duro. Hoy son {count} minutos, sin levantarte de la silla.',
-  },
-  'notifications.flarePain': {
-    one: 'El dolor fue {pain}. Hoy el plan se aparta: {count} minuto.',
-    other: 'El dolor fue {pain}. Hoy el plan se aparta: {count} minutos.',
-  },
-  'notifications.flareNothingHeavy': 'Ayer fue un mal día. Hoy no se pide nada exigente.',
+  'notifications.flareCheckIn': 'Ayer fue duro. Registra cómo estás al levantarte - si sigue mal, hoy toca algo corto y sentado.',
 
   // ── A big day on their feet ──────────────────────────────────────────────
   'notifications.loadSteps': {

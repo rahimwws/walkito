@@ -2,6 +2,8 @@
 
 export const WIDGET_RU = {
   'widget.question': 'Как стопа сегодня?',
+  /** Before noon: the first steps out of bed. Short, to fit the small widget. */
+  'widget.questionMorning': 'Первые шаги утром?',
   'widget.hurts': 'Болит',
   'widget.fine': 'Не болит',
   'widget.ackNoPain': 'Записали: сегодня не болит.',

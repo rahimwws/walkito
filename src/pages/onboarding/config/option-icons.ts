@@ -119,6 +119,50 @@ export const OPTION_ICONS: Record<string, OptionArt> = {
   comeback: { icon: Bandaids, color: HUE.pink },
   steady: { icon: PersonSimpleTaiChi, color: HUE.violet },
 
+  // Who they are
+  running: { icon: PersonSimpleRun, color: HUE.sky },
+  feet: { icon: Sneaker, color: HUE.amber },
+  both: { icon: Lightning, color: HUE.violet },
+  walking: { icon: PersonSimpleWalk, color: HUE.teal },
+
+  // How long
+  weeks: { icon: Timer, color: HUE.teal },
+  months: { icon: CalendarBlank, color: HUE.sky },
+  year: { icon: CalendarDots, color: HUE.violet },
+  longer: { icon: Hourglass, color: HUE.amber },
+
+  // The safety check
+  calf: { icon: Drop, color: HUE.rose },
+  pop: { icon: Lightning, color: HUE.amber },
+  diabetes: { icon: FirstAid, color: HUE.pink },
+  fall: { icon: Bandaids, color: HUE.violet },
+  numb: { icon: Sparkle, color: HUE.sky },
+
+  // What they tried
+  insoles: { icon: Footprints, color: HUE.teal },
+  stretching: { icon: PersonSimpleTaiChi, color: HUE.violet },
+  physio: { icon: FirstAid, color: HUE.rose },
+
+  // The goal, newer wording
+  mornings: { icon: SunHorizon, color: HUE.amber },
+
+  // Hours on feet
+  under4: { icon: Timer, color: HUE.teal },
+  '4-8': { icon: Clock, color: HUE.sky },
+  '8-12': { icon: Hourglass, color: HUE.violet },
+  '12+': { icon: Mountains, color: HUE.amber },
+
+  // The habit
+  wake: { icon: SunHorizon, color: HUE.amber },
+  coffee: { icon: Drop, color: HUE.pink },
+  shift: { icon: Clock, color: HUE.sky },
+  bed: { icon: Moon, color: HUE.violet },
+
+  // The big toe lift
+  yes: { icon: ShieldCheck, color: HUE.green },
+  no: { icon: Circle, color: HUE.sky },
+  unsure: { icon: Sparkle, color: HUE.violet },
+
   // Days a week
   days3: { icon: CalendarBlank, color: HUE.teal },
   days5: { icon: CalendarCheck, color: HUE.violet },

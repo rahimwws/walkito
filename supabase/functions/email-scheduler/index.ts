@@ -39,6 +39,7 @@ import { sampleEmails } from '../_shared/email/samples.ts';
 import { siteLeadEmail } from '../_shared/email/site-leads.ts';
 import { unsubscribeToken } from '../_shared/email/links.ts';
 import { renderEmail } from '../_shared/email/template.ts';
+import { asLocale, type Locale } from '../_shared/email/types.ts';
 
 const env = (name: string): string => Deno.env.get(name) ?? '';
 
@@ -131,7 +132,7 @@ async function checkDeliveries(): Promise<{ checked: number; bounced: number; co
 
 type Outcome = { userId: string; key: string; subject: string; result: string; html?: string };
 
-async function send(decision: NonNullable<ReturnType<typeof evaluate>['decision']>, userId: string, email: string, locale: 'en' | 'ru' | 'es'): Promise<string> {
+async function send(decision: NonNullable<ReturnType<typeof evaluate>['decision']>, userId: string, email: string, locale: Locale): Promise<string> {
   // Claim first. The unique (user_id, dedupe_key) index is what keeps two
   // overlapping runs from sending the same email twice.
   const claim = await db
@@ -202,7 +203,7 @@ async function welcome(userId: string): Promise<void> {
 /** Every email (or the ones named) with sample numbers, to one address. Not logged. */
 async function sendSamples(to: string, locale: string | undefined, keys: string[] | undefined) {
   if (!RESEND_KEY) return { error: 'RESEND_API_KEY not set' };
-  const l = locale === 'ru' || locale === 'es' ? locale : 'en';
+  const l = asLocale(locale);
   const picked = sampleEmails(l).filter((x) => keys == null || keys.length === 0 || keys.includes(x.key));
   const results: { key: string; result: string }[] = [];
   const sampleConfig = config;

@@ -289,7 +289,7 @@ export const EXERCISE_LIST: readonly Exercise[] = [
     cueKey: 'exercises.hipAbduction.cue',
     category: 'Fitness',
     track: 'B',
-    position: 'standing',
+    position: 'none',
     loadsFascia: false,
     defaultSets: 3,
     defaultReps: 15,

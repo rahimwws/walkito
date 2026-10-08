@@ -436,6 +436,14 @@ export function ProgramPage() {
             minutes={minutes}
             onMinutes={setMinutes}
             onStart={() => startToday()}
+            onShort={() => startToday(true)}
+            note={
+              adjusted.reason === 'heavy-day'
+                ? t('pages.plan.reasonHeavyDay')
+                : adjusted.reason === 'short-sleep'
+                  ? t('pages.plan.reasonShortSleep')
+                  : null
+            }
             onPreview={setPreview}
             tests={{
               chips: [t('pages.program.zoneCalf'), t('pages.program.zoneArch'), t('pages.program.zoneBalance')],

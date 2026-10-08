@@ -3,6 +3,7 @@ import 'react-native-url-polyfill/auto';
 import { createClient, type Session, type SupabaseClient } from '@supabase/supabase-js';
 import { requireOptionalNativeModule } from 'expo';
 
+import { setPerson } from '@/shared/lib/analytics';
 import { kv } from '@/shared/lib/storage';
 
 /**
@@ -98,7 +99,26 @@ function keepRefreshToken(session: Session | null): void {
 supabase?.auth.onAuthStateChange((event, session) => {
   if (event === 'SIGNED_OUT') keepRefreshToken(null);
   else if (session != null) keepRefreshToken(session);
+  if (event === 'INITIAL_SESSION' || event === 'SIGNED_IN' || event === 'USER_UPDATED') describePerson(session);
 });
+
+/**
+ * Who a PostHog person is, once they have signed in: the email and name Apple
+ * or Google gave, and the Supabase id that `insights.users` is keyed on. The
+ * person list then reads as people a founder can write to, not random ids.
+ *
+ * Contact details only, never anything about the body. Anonymous sessions
+ * have neither, so nothing is sent for them.
+ */
+function describePerson(session: Session | null): void {
+  const user = session?.user;
+  if (user == null || user.is_anonymous === true) return;
+  const props: Record<string, string> = { supabase_user_id: user.id };
+  if (user.email != null && user.email.length > 0) props.email = user.email;
+  const name = user.user_metadata?.full_name ?? user.user_metadata?.name;
+  if (typeof name === 'string' && name.length > 0) props.name = name;
+  setPerson(props);
+}
 
 /** The session a previous install left in the Keychain, if the server still takes it. */
 async function sessionFromKeychain(client: SupabaseClient): Promise<string | null> {

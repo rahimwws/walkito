@@ -1,4 +1,3 @@
-import Activity03Icon from '@hugeicons/core-free-icons/Activity03Icon';
 import AppStoreIcon from '@hugeicons/core-free-icons/AppStoreIcon';
 import PlayStoreIcon from '@hugeicons/core-free-icons/PlayStoreIcon';
 import GoogleIcon from '@hugeicons/core-free-icons/GoogleIcon';
@@ -7,32 +6,16 @@ import MoreHorizontalCircle01Icon from '@hugeicons/core-free-icons/MoreHorizonta
 import TiktokIcon from '@hugeicons/core-free-icons/TiktokIcon';
 import UserMultipleIcon from '@hugeicons/core-free-icons/UserMultipleIcon';
 import YoutubeIcon from '@hugeicons/core-free-icons/YoutubeIcon';
-import SmartWatch01Icon from '@hugeicons/core-free-icons/SmartWatch01Icon';
-import SmartWatch04Icon from '@hugeicons/core-free-icons/SmartWatch04Icon';
-import Award01Icon from '@hugeicons/core-free-icons/Award01Icon';
-import ChartIncreaseIcon from '@hugeicons/core-free-icons/ChartIncreaseIcon';
-import Dumbbell01Icon from '@hugeicons/core-free-icons/Dumbbell01Icon';
-import FlashIcon from '@hugeicons/core-free-icons/FlashIcon';
-import FootprintsIcon from '@hugeicons/core-free-icons/FootprintsIcon';
-
-import { chose } from './answers';
-import Moon02Icon from '@hugeicons/core-free-icons/Moon02Icon';
-import Route02Icon from '@hugeicons/core-free-icons/Route02Icon';
-import ShieldEnergyIcon from '@hugeicons/core-free-icons/ShieldEnergyIcon';
-import SunriseIcon from '@hugeicons/core-free-icons/SunriseIcon';
-import Target01Icon from '@hugeicons/core-free-icons/Target01Icon';
-import WorkoutRunIcon from '@hugeicons/core-free-icons/WorkoutRunIcon';
 import type { IconSvgElement } from '@hugeicons/react-native';
 import { Platform, type ImageSourcePropType } from 'react-native';
 
-import { healthAvailable } from '@/entities/health';
 import { MAX_ZONES } from '@/entities/leg-zone';
-import { profileEmail } from '@/entities/profile';
 
 import type { AccentName } from '@/shared/config';
 import type { Translate } from '@/shared/lib/i18n';
 
-import { REFERRAL_DISCOUNT_PERCENT } from '@/entities/referral';
+import { chose } from './answers';
+import { balanceAllowed, miniTestEligible, roleOf, runs, standsAtWork } from './journey';
 
 /**
  * One line of copy, resolved against whatever language is current.
@@ -130,62 +113,54 @@ const UNUSED: Phrase = () => '';
  */
 export type OnboardingStep = StepBase &
   (
-    | { kind: 'intro'; cta: Phrase; footnote: Phrase; greeting: Phrase; headline: Phrase }
+    | { kind: 'intro'; greeting: Phrase; headline: Phrase }
     | { kind: 'name'; placeholder: Phrase }
-    | { kind: 'email'; placeholder: Phrase }
     | {
         kind: 'choice';
         options: readonly OnboardingOption[];
         /** Selecting more than one. `max` caps it. */
         multi?: boolean;
         max?: number;
-        /** A follow-up row of small chips under the cards. */
-        extra?: { key: string; label: Phrase; options: readonly string[] };
       }
     | { kind: 'measure'; units: readonly MeasureUnit[] }
-    /** Two full-bleed photo cards. Asked early because the shoe-size screen
-     * reads the answer to decide whose legs it shows. */
+    /** Two full-bleed photo cards. */
     | { kind: 'sex'; options: readonly OnboardingOption[] }
-    /** Shoe size on a draggable ruler, in EU or US. */
-    | { kind: 'size' }
-    | { kind: 'health' }
-    /** Which watch, if any. Only asked to decide whether the next screen has
-     * anything to teach — the gait metrics come from the iPhone, so the answer
-     * changes nothing about the plan itself. */
-    | { kind: 'watch'; options: readonly OnboardingOption[] }
-    /** How to turn on Health sync in the third-party app, as a loop of video.
-     * Skipped entirely unless the watch answer is one that needs it. */
-    | { kind: 'watch-sync' }
-    /** The notification ask, straight after Health — the two permissions the
-     * app needs, asked back to back while the reason for both is fresh. */
+    /** A full-screen answer to the question before it: mascot, a heading, a
+     * line, tap anywhere. `of` names the question it reacts to. */
+    | { kind: 'reaction'; of: 'role' | 'duration' | 'tried' }
+    /** The first steps this morning, 0–10, the daily check-in's own question. */
+    | { kind: 'morning-pain' }
+    /** Halfway: what the flow knows so far, read back. */
+    | { kind: 'midway' }
+    /** Why it still hurts: the intro's promise, answered from the answers. */
+    | { kind: 'why' }
+    /** The notification ask. */
     | { kind: 'notify' }
-    /** The daily reminder's time, on the system's own wheel. */
-    | { kind: 'reminder' }
-    /** The plan being assembled: a photograph, a line that fills, and the
-     * button on. Owns the whole screen. */
+    /** The moment of the day the session is tied to, and the reminder it sets. */
+    | { kind: 'habit'; options: readonly OnboardingOption[] }
+    /** The 30-second check, behind a PostHog flag: what it is, the big toe
+     * lift, one leg, and the result. */
+    | { kind: 'test-intro' }
+    | { kind: 'test-toe' }
+    | { kind: 'test-balance' }
+    | { kind: 'test-result' }
     /** The liquid-glass gate that opens the app. */
     | { kind: 'welcome' }
-    /** Signing the commitment contract, after the plan is chosen. */
+    /** Signing the commitment contract. */
     | { kind: 'contract' }
+    /** The plan being assembled from the answers, line by line. */
     | { kind: 'building' }
-    /** Choosing between the two lengths the plan can take. */
-    | { kind: 'plan' }
-    /** Three reviews, handed over one per press, ahead of the offer. */
-    | { kind: 'social' }
+    /** The first week: its days and its moves. */
+    | { kind: 'first-week' }
     /** Where it hurts, on the leg. Up to `MAX_ZONES` zones, or "nothing". */
     | { kind: 'pain-map' }
     /** The marked zones again, beside what the plan changes and when. */
     | { kind: 'outlook' }
-    | { kind: 'referral' }
   );
 
 /**
- * The four acts.
- *
- * Fifteen segments would read as a long form — which is exactly the feeling
- * this flow is trying to avoid. Four named acts say "you are a quarter of the
- * way through something with a shape", and the current act fills continuously
- * as its questions are answered.
+ * The four acts. The progress bar fills continuously; these name its stretches
+ * for anything that wants to say where in the flow somebody is.
  */
 export const ACTS: readonly Phrase[] = [
   (t) => t('onboarding.act.about'),
@@ -194,78 +169,39 @@ export const ACTS: readonly Phrase[] = [
   (t) => t('onboarding.act.plan'),
 ];
 
+/** Whether anything at all was picked on the pain step besides "nothing". */
+export function hurts(answers: Readonly<Record<string, unknown>>): boolean {
+  const pain = answers.pain;
+  return Array.isArray(pain) && pain.some((value) => value !== 'none');
+}
+
+/** In the 30-second check's experiment, and somebody it is for. */
+function testing(answers: Readonly<Record<string, unknown>>): boolean {
+  return chose(answers, 'miniTest', 'test') && miniTestEligible(answers, !hurts(answers));
+}
+
 /**
  * Every screen, in order.
  *
- * Deliberately not "name → sex → age → weight → …". Each screen either tells
- * the user something about themselves or explains what the app will do *for
- * them*; the demographic questions that survive are the ones that visibly feed
- * the plan. That is why there is no sex question and no BMI anywhere — a body
- * stat the product cannot justify reads as a data grab and buys friction for
- * nothing.
- */
-/**
- * The watch answers, and what each one actually buys.
+ * A question, then every few questions something said back: a line under the
+ * options, or a whole screen when the answer deserves one. The flow should
+ * read as a conversation with something that is listening, not a form.
  *
- * "Nothing" is deliberately last and deliberately not framed as a lesser tier.
- * Mobility metrics — the whole gait feature — come from the iPhone, not the
- * watch, so a person with no watch is missing nothing this app is built on.
- * A list that implied otherwise would be selling an upgrade the product does
- * not need.
+ * Gone from here: weight and shoe size (nothing the user could see used them),
+ * the sport list (who they are says it), the challenge (it repeated the goal),
+ * the reviews and the referral screen (the paywall has both now). Health, the
+ * watch and signing in come after the first purchase, in `pages/setup`.
  */
-const WATCH_OPTIONS: readonly OnboardingOption[] = [
-  {
-    value: 'apple',
-    label: (t) => t('onboarding.watch.apple'),
-    caption: (t) => t('onboarding.watch.appleCaption'),
-    icon: SmartWatch01Icon,
-    accent: 'blue',
-  },
-  {
-    value: 'garmin',
-    label: (t) => t('onboarding.watch.garmin'),
-    caption: (t) => t('onboarding.watch.switchCaption'),
-    icon: SmartWatch04Icon,
-    accent: 'teal',
-  },
-  {
-    value: 'whoop',
-    label: (t) => t('onboarding.watch.whoop'),
-    caption: (t) => t('onboarding.watch.switchCaption'),
-    icon: Activity03Icon,
-    accent: 'violet',
-  },
-  {
-    value: 'none',
-    label: (t) => t('onboarding.watch.none'),
-    caption: (t) => t('onboarding.watch.noneCaption'),
-    icon: FootprintsIcon,
-    accent: 'amber',
-  },
-];
-
 export const STEPS: readonly OnboardingStep[] = [
-  {
-    // Ahead of the intro: this is the front door, and the intro is Walkito
-    // introducing itself once the door is open.
-    kind: 'welcome',
-    key: 'welcome',
-    act: 0,
-    title: UNUSED,
-    blurb: UNUSED,
-  },
+  { kind: 'welcome', key: 'welcome', act: 0, title: UNUSED, blurb: UNUSED },
   {
     kind: 'intro',
     key: 'intro',
     act: 0,
-    // `title`/`blurb` stay for the step's own bookkeeping; the welcome screen
-    // renders the two lines below instead, in sequence.
     title: (t) => t('onboarding.intro.title'),
     blurb: (t) => t('onboarding.intro.blurb'),
     greeting: (t) => t('onboarding.intro.greeting'),
     headline: (t) => t('onboarding.intro.headline'),
-    cta: (t) => t('onboarding.intro.cta'),
-    footnote: (t) => t('onboarding.intro.footnote'),
   },
   {
     kind: 'name',
@@ -287,20 +223,6 @@ export const STEPS: readonly OnboardingStep[] = [
     ],
   },
   {
-    kind: 'choice',
-    key: 'runner',
-    act: 0,
-    title: (t) => t('onboarding.runner.title', NAME_SLOT),
-    blurb: (t) => t('onboarding.runner.blurb'),
-    options: [
-      { value: 'new', label: (t) => t('onboarding.runner.new'), icon: SunriseIcon, accent: 'amber' },
-      { value: 'casual', label: (t) => t('onboarding.runner.casual'), icon: FootprintsIcon, accent: 'teal' },
-      { value: 'regular', label: (t) => t('onboarding.runner.regular'), icon: WorkoutRunIcon, accent: 'blue' },
-      { value: 'racing', label: (t) => t('onboarding.runner.racing'), icon: Award01Icon, accent: 'violet' },
-      { value: 'serious', label: (t) => t('onboarding.runner.serious'), icon: FlashIcon, accent: 'orange' },
-    ],
-  },
-  {
     kind: 'measure',
     key: 'age',
     act: 0,
@@ -310,62 +232,44 @@ export const STEPS: readonly OnboardingStep[] = [
       {
         value: 'years',
         label: (t) => t('onboarding.age.years'),
-        fields: [
-          { key: 'years', suffix: (t) => t('onboarding.age.years'), maxDigits: 2, initial: '28' },
-        ],
+        fields: [{ key: 'years', suffix: (t) => t('onboarding.age.years'), maxDigits: 2, initial: '28' }],
       },
     ],
   },
   {
-    kind: 'measure',
-    key: 'body',
-    act: 0,
-    title: (t) => t('onboarding.body.title', NAME_SLOT),
-    blurb: (t) => t('onboarding.body.blurb'),
-    units: [
-      {
-        value: 'kg',
-        label: (t) => t('onboarding.body.kg'),
-        fields: [{ key: 'kg', suffix: (t) => t('onboarding.body.kg'), maxDigits: 3, initial: '72' }],
-      },
-      {
-        value: 'lb',
-        label: (t) => t('onboarding.body.lb'),
-        fields: [{ key: 'lb', suffix: (t) => t('onboarding.body.lb'), maxDigits: 3, initial: '159' }],
-      },
-    ],
-  },
-  {
-    kind: 'size',
-    key: 'size',
-    act: 0,
-    title: (t) => t('onboarding.size.title', NAME_SLOT),
-    blurb: (t) => t('onboarding.size.blurb'),
-  },
-  {
+    // Who they are, before anything about running: half the people with
+    // heel pain are on their feet at work, and "what kind of athlete are
+    // you" lost them on the fifth screen. `role` is an analytics identifier.
     kind: 'choice',
-    key: 'goal',
-    act: 1,
-    title: (t) => t('onboarding.goal.title', NAME_SLOT),
-    blurb: (t) => t('onboarding.goal.blurb'),
+    key: 'role',
+    act: 0,
+    title: (t) => t('onboarding.role.title', NAME_SLOT),
+    blurb: (t) => t('onboarding.role.blurb'),
     options: [
-      { value: 'painfree', label: (t) => t('onboarding.goal.painfree'), icon: ShieldEnergyIcon, accent: 'teal' },
-      { value: 'race', label: (t) => t('onboarding.goal.race'), icon: Award01Icon, accent: 'violet' },
-      { value: 'consistent', label: (t) => t('onboarding.goal.consistent'), icon: ChartIncreaseIcon, accent: 'blue' },
-      { value: 'stronger', label: (t) => t('onboarding.goal.stronger'), icon: Dumbbell01Icon, accent: 'orange' },
-      { value: 'injuryfree', label: (t) => t('onboarding.goal.injuryfree'), icon: Target01Icon, accent: 'amber' },
-      { value: 'flatfeet', label: (t) => t('onboarding.goal.flatfeet'), icon: FootprintsIcon, accent: 'teal' },
-      { value: 'ankles', label: (t) => t('onboarding.goal.ankles') },
-      { value: 'jump', label: (t) => t('onboarding.goal.jump') },
-      { value: 'allday', label: (t) => t('onboarding.goal.allday') },
-      { value: 'comeback', label: (t) => t('onboarding.goal.comeback') },
-      { value: 'steady', label: (t) => t('onboarding.goal.steady') },
+      { value: 'running', label: (t) => t('onboarding.role.running') },
+      { value: 'feet', label: (t) => t('onboarding.role.feet') },
+      { value: 'both', label: (t) => t('onboarding.role.both') },
+      { value: 'walking', label: (t) => t('onboarding.role.walking') },
     ],
   },
+  { kind: 'reaction', of: 'role', key: 'role-reaction', act: 0, title: UNUSED, blurb: UNUSED, skipWhen: (a) => roleOf(a) == null },
   {
-    // Asked on the same leg the daily check-in uses, so the first time the
-    // user meets the map is the day they tell us what is wrong — and the
-    // outlook near the end can show those very zones recovering.
+    // Only for somebody who runs. The values are analytics identifiers.
+    kind: 'choice',
+    key: 'runner',
+    act: 0,
+    title: (t) => t('onboarding.runner.titleRunning', NAME_SLOT),
+    blurb: (t) => t('onboarding.runner.blurb'),
+    options: [
+      { value: 'new', label: (t) => t('onboarding.runner.new') },
+      { value: 'casual', label: (t) => t('onboarding.runner.casual') },
+      { value: 'regular', label: (t) => t('onboarding.runner.regular') },
+      { value: 'racing', label: (t) => t('onboarding.runner.racing') },
+      { value: 'serious', label: (t) => t('onboarding.runner.serious') },
+    ],
+    skipWhen: (a) => !runs(a),
+  },
+  {
     kind: 'pain-map',
     key: 'pain',
     act: 1,
@@ -373,11 +277,8 @@ export const STEPS: readonly OnboardingStep[] = [
     blurb: (t) => t('onboarding.pain.blurb', { count: MAX_ZONES }),
   },
   {
-    // Which side, because two things downstream depend on it and neither can
-    // guess: the retest counts calf raises on the side being rehabilitated
-    // against the other one, and a symmetric problem cannot produce an
-    // asymmetric gait — so "both" switches the asymmetry signals off rather
-    // than leaving them to never fire.
+    // Which side: the retest compares the sore leg with the other, and "both"
+    // switches the asymmetry signals off rather than leaving them dead.
     kind: 'choice',
     key: 'side',
     act: 1,
@@ -388,74 +289,99 @@ export const STEPS: readonly OnboardingStep[] = [
       { value: 'right', label: (t) => t('onboarding.side.right') },
       { value: 'both', label: (t) => t('onboarding.side.both') },
     ],
-    // Nothing hurts, nothing to ask about.
-    skipWhen: (answers) => !hurts(answers),
+    skipWhen: (a) => !hurts(a),
   },
   {
     kind: 'choice',
-    key: 'sport',
+    key: 'duration',
     act: 1,
-    title: (t) => t('onboarding.sport.title', NAME_SLOT),
-    blurb: (t) => t('onboarding.sport.blurb'),
+    title: (t) => t('onboarding.duration.title'),
+    blurb: (t) => t('onboarding.duration.blurb'),
     options: [
-      { value: 'running', label: (t) => t('onboarding.sport.running') },
-      { value: 'tennis', label: (t) => t('onboarding.sport.tennis') },
-      { value: 'gym', label: (t) => t('onboarding.sport.gym') },
-      { value: 'football', label: (t) => t('onboarding.sport.football') },
-      { value: 'basketball', label: (t) => t('onboarding.sport.basketball') },
-      { value: 'cycling', label: (t) => t('onboarding.sport.cycling') },
-      { value: 'hiking', label: (t) => t('onboarding.sport.hiking') },
+      { value: 'weeks', label: (t) => t('onboarding.duration.weeks') },
+      { value: 'months', label: (t) => t('onboarding.duration.months') },
+      { value: 'year', label: (t) => t('onboarding.duration.year') },
+      { value: 'longer', label: (t) => t('onboarding.duration.longer') },
     ],
+    skipWhen: (a) => !hurts(a),
+  },
+  { kind: 'reaction', of: 'duration', key: 'duration-reaction', act: 1, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !hurts(a) },
+  {
+    kind: 'morning-pain',
+    key: 'morningPain',
+    act: 1,
+    title: (t) => t('onboarding.morning.title'),
+    blurb: (t) => t('onboarding.morning.blurb'),
+    skipWhen: (a) => !hurts(a),
   },
   {
+    // Changes the plan and nothing else: no refusals. A fall or a foot that
+    // will not take weight starts week one seated; numbness is the ordinary
+    // plan, watched in the check-ins. See `safetyPlan`.
+    kind: 'choice',
+    key: 'safety',
+    act: 1,
+    title: (t) => t('onboarding.safety.title'),
+    blurb: (t) => t('onboarding.safety.blurb'),
+    multi: true,
+    options: [
+      { value: 'calf', label: (t) => t('onboarding.safety.calf') },
+      { value: 'pop', label: (t) => t('onboarding.safety.pop') },
+      { value: 'diabetes', label: (t) => t('onboarding.safety.diabetes') },
+      { value: 'fall', label: (t) => t('onboarding.safety.fall') },
+      { value: 'numb', label: (t) => t('onboarding.safety.numb') },
+      { value: 'none', label: (t) => t('onboarding.safety.none') },
+    ],
+    skipWhen: (a) => !hurts(a),
+  },
+  {
+    kind: 'choice',
+    key: 'tried',
+    act: 1,
+    title: (t) => t('onboarding.tried.title'),
+    blurb: (t) => t('onboarding.tried.blurb'),
+    multi: true,
+    options: [
+      { value: 'insoles', label: (t) => t('onboarding.tried.insoles') },
+      { value: 'stretching', label: (t) => t('onboarding.tried.stretching') },
+      { value: 'shoes', label: (t) => t('onboarding.tried.shoes') },
+      { value: 'rest', label: (t) => t('onboarding.tried.rest') },
+      { value: 'physio', label: (t) => t('onboarding.tried.physio') },
+      { value: 'none', label: (t) => t('onboarding.tried.none') },
+    ],
+    skipWhen: (a) => !hurts(a),
+  },
+  { kind: 'reaction', of: 'tried', key: 'tried-reaction', act: 1, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !hurts(a) },
+  {
+    // Options swapped in by the page from `goalValuesFor`: five at most, pain
+    // first, worded for who they are. Values are analytics identifiers.
+    kind: 'choice',
+    key: 'goal',
+    act: 2,
+    title: (t) => t('onboarding.goal.titleShort'),
+    blurb: (t) => t('onboarding.goal.blurb'),
+    options: [],
+  },
+  {
+    // Placeholder copy: the page swaps in kilometres for a runner and hours
+    // on feet for a standing job. Nobody else is asked.
     kind: 'choice',
     key: 'load',
-    act: 1,
-    // Placeholder copy. `loadQuestionFor` swaps in the wording and the ranges
-    // for whichever sport was chosen — a runner is asked about kilometres, a
-    // tennis player about hours on court.
+    act: 2,
     title: (t) => t('onboarding.load.title'),
     blurb: (t) => t('onboarding.load.blurb'),
     options: [],
-    extra: {
-      key: 'sessionsPerWeek',
-      label: (t) => t('onboarding.load.sessionsPerWeek'),
-      options: ['1', '2', '3', '4', '5+'],
-    },
+    skipWhen: (a) => !runs(a) && !standsAtWork(a),
   },
-  {
-    kind: 'choice',
-    key: 'challenge',
-    act: 1,
-    title: (t) => t('onboarding.challenge.title', NAME_SLOT),
-    blurb: (t) => t('onboarding.challenge.blurb'),
-    multi: true,
-    max: 2,
-    options: [
-      { value: 'painfree', label: (t) => t('onboarding.challenge.painfree'), icon: ShieldEnergyIcon, accent: 'teal' },
-      { value: 'back', label: (t) => t('onboarding.challenge.back'), icon: WorkoutRunIcon, accent: 'blue' },
-      { value: 'distance', label: (t) => t('onboarding.challenge.distance'), icon: ChartIncreaseIcon, accent: 'violet' },
-      { value: 'recovery', label: (t) => t('onboarding.challenge.recovery'), icon: Moon02Icon, accent: 'amber' },
-      { value: 'strength', label: (t) => t('onboarding.challenge.strength'), icon: Dumbbell01Icon, accent: 'orange' },
-      { value: 'injury', label: (t) => t('onboarding.challenge.injury'), icon: Target01Icon, accent: 'teal' },
-    ],
-  },
+  { kind: 'midway', key: 'midway', act: 2, title: UNUSED, blurb: UNUSED },
   {
     /**
-     * Where they heard about the app.
-     *
-     * The only reliable attribution for organic TikTok and Instagram: a video
-     * watched, then the app searched for in the App Store, leaves no link for
-     * any SDK to follow. Asked here, after the questions about the foot and
-     * before the permission screens, because by now somebody has decided the
-     * flow is worth finishing and a quick tap costs them nothing.
-     *
-     * The values are analytics identifiers (`AcquisitionSource`), so they are
-     * never renamed — a rename splits the chart at the day it shipped.
+     * Where they heard about the app — the only attribution organic TikTok
+     * and Instagram have. The values are analytics identifiers (`AcquisitionSource`).
      */
     kind: 'choice',
     key: 'source',
-    act: 1,
+    act: 2,
     title: (t) => t('onboarding.source.title'),
     blurb: (t) => t('onboarding.source.blurb'),
     options: [
@@ -463,7 +389,6 @@ export const STEPS: readonly OnboardingStep[] = [
       { value: 'instagram', label: (t) => t('onboarding.source.instagram'), icon: InstagramIcon, accent: 'orange' },
       { value: 'youtube', label: (t) => t('onboarding.source.youtube'), icon: YoutubeIcon, accent: 'amber' },
       { value: 'friend', label: (t) => t('onboarding.source.friend'), icon: UserMultipleIcon, accent: 'teal' },
-      // The store the app came from — each platform names only its own.
       Platform.OS === 'android'
         ? { value: 'play_store', label: (t) => t('onboarding.source.playStore'), icon: PlayStoreIcon, accent: 'blue' }
         : { value: 'app_store', label: (t) => t('onboarding.source.appStore'), icon: AppStoreIcon, accent: 'blue' },
@@ -471,62 +396,27 @@ export const STEPS: readonly OnboardingStep[] = [
       { value: 'other', label: (t) => t('onboarding.source.other'), icon: MoreHorizontalCircle01Icon, accent: 'violet' },
     ],
   },
-  {
-    kind: 'health',
-    key: 'health',
-    act: 2,
-    title: (t) => t('onboarding.health.title'),
-    blurb: (t) => t('onboarding.health.blurb'),
-    // Gone entirely on a device with no HealthKit — iPad, and the older
-    // simulator runtimes. The screen used to appear and explain that it could
-    // not work, which is a step the user has to read and dismiss to learn
-    // nothing. The watch question goes with it: it exists only to set up a
-    // Health sync there is no Health to sync to.
-    skipWhen: () => !healthAvailable(),
-  },
-  {
-    kind: 'watch',
-    key: 'watch',
-    act: 2,
-    title: (t) => t('onboarding.watch.title'),
-    // Deliberately not a promise. Mobility comes from the phone, so this
-    // answer buys the user nothing they would otherwise miss — it only decides
-    // whether we owe them a set-up instruction.
-    blurb: (t) => t('onboarding.watch.blurb'),
-    options: WATCH_OPTIONS,
-    // Android reads whatever the watch app already syncs to Health Connect;
-    // there is no Apple Watch to ask about and no Apple Health to set up.
-    skipWhen: () => Platform.OS === 'android' || !healthAvailable(),
-  },
-  {
-    kind: 'watch-sync',
-    key: 'watch-sync',
-    act: 2,
-    title: (t) => t('onboarding.watchSync.title'),
-    blurb: (t) => t('onboarding.watchSync.blurb'),
-    // The only two answers with a switch to find. Apple Watch is already
-    // wired, and someone with no watch has nothing to set up — showing either
-    // of them a how-to for an app they do not have is a screen that reads as
-    // the flow not having listened.
-    skipWhen: (answers) => !chose(answers, 'watch', 'garmin', 'whoop'),
-  },
+  { kind: 'why', key: 'why', act: 2, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !hurts(a) },
   {
     kind: 'notify',
     key: 'notify',
-    act: 2,
+    act: 3,
     title: (t) => t('onboarding.notify.title'),
     blurb: (t) => t('onboarding.notify.blurb'),
   },
   {
-    kind: 'reminder',
-    key: 'reminder',
-    act: 2,
-    title: (t) => t('onboarding.reminder.title'),
-    blurb: (t) => t('onboarding.reminder.blurb'),
+    kind: 'habit',
+    key: 'habit',
+    act: 3,
+    title: (t) => t('onboarding.habit.title'),
+    blurb: (t) => t('onboarding.habit.blurb'),
+    options: [
+      { value: 'wake', label: (t) => t('onboarding.habit.wake') },
+      { value: 'coffee', label: (t) => t('onboarding.habit.coffee') },
+      { value: 'shift', label: (t) => t('onboarding.habit.shift') },
+      { value: 'bed', label: (t) => t('onboarding.habit.bed') },
+    ],
   },
-  // What the plan is built around, asked right before it is built: the same
-  // four things Settings lets them change later, so the first week is already
-  // theirs rather than a default they have to go and fix.
   {
     kind: 'choice',
     key: 'planDays',
@@ -563,40 +453,19 @@ export const STEPS: readonly OnboardingStep[] = [
       label: (t: Translate) => t(`onboarding.equipment.${value}`),
     })),
   },
+  { kind: 'test-intro', key: 'test-intro', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
+  { kind: 'test-toe', key: 'test-toe', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
   {
-    kind: 'building',
-    key: 'building',
+    kind: 'test-balance',
+    key: 'test-balance',
     act: 3,
-    // Both are bookkeeping only: the screen is a photograph with its own three
-    // lines on it, and it goes through neither the shared heading block nor
-    // the shared button bar.
-    title: (t) => t('onboarding.building.title'),
-    blurb: (t) => t('onboarding.building.blurb'),
+    title: UNUSED,
+    blurb: UNUSED,
+    skipWhen: (a) => !testing(a) || !balanceAllowed(a, !hurts(a)),
   },
-  {
-    kind: 'plan',
-    key: 'plan',
-    act: 3,
-    title: (t) => t('onboarding.plan.title'),
-    blurb: (t) => t('onboarding.plan.blurb'),
-  },
-  {
-    /**
-     * "Send your plan to your email?" — optional, straight after the plan.
-     *
-     * Asked only of someone the app has no address for. Sign in with Apple
-     * hands one over on the first authorisation, relay or real, and the
-     * account keeps it for every sign-in after (`accountFor`), so this is for
-     * a session with no address anywhere. Empty is a skip.
-     */
-    kind: 'email',
-    key: 'email',
-    act: 3,
-    title: (t) => t('onboarding.sendPlan.title'),
-    blurb: (t) => t('onboarding.sendPlan.blurb'),
-    placeholder: (t) => t('onboarding.sendPlan.placeholder'),
-    skipWhen: () => profileEmail().length > 0,
-  },
+  { kind: 'test-result', key: 'test-result', act: 3, title: UNUSED, blurb: UNUSED, skipWhen: (a) => !testing(a) },
+  { kind: 'building', key: 'building', act: 3, title: UNUSED, blurb: UNUSED },
+  { kind: 'first-week', key: 'first-week', act: 3, title: UNUSED, blurb: UNUSED },
   {
     kind: 'contract',
     key: 'contract',
@@ -605,71 +474,24 @@ export const STEPS: readonly OnboardingStep[] = [
     blurb: (t) => t('onboarding.contract.blurb'),
   },
   {
-    // Writes its own heading, so the shared title and blurb are unused here.
-    kind: 'social',
-    key: 'social',
-    act: 3,
-    title: UNUSED,
-    blurb: UNUSED,
-  },
-  {
-    /**
-     * What the plan does for the places they marked, after the reviews.
-     *
-     * Straight after other people's results, so the question "would this work
-     * for me?" is answered with their own leg rather than left hanging. The
-     * blurb is swapped by the page for someone who said nothing hurts.
-     */
     kind: 'outlook',
     key: 'outlook',
     act: 3,
     title: (t) => t('onboarding.outlook.title', NAME_SLOT),
     blurb: (t) => t('onboarding.outlook.blurb'),
   },
-  {
-    /**
-     * The last thing asked, and the only optional one.
-     *
-     * After the reviews rather than before them: a code is worth more to
-     * someone who has just decided they want the thing. And last rather than
-     * anywhere else because it is the one question whose answer is usually
-     * "no" — a screen most people skip belongs at the end, where skipping it
-     * costs them nothing they were in the middle of.
-     */
-    kind: 'referral',
-    key: 'referral',
-    act: 3,
-    title: (t) => t('onboarding.referral.title'),
-    blurb: (t) => t('onboarding.referral.blurb', { percent: REFERRAL_DISCOUNT_PERCENT }),
-  },
 ];
 
 export const STEP_COUNT = STEPS.length;
-
-/** Where each act starts and ends, so the bar can fill within the current one
- * rather than counting fifteen segments. */
-export function actBounds(act: number): { start: number; end: number } {
-  const first = STEPS.findIndex((s) => s.act === act);
-  const last = STEPS.map((s) => s.act).lastIndexOf(act);
-  return { start: first, end: last };
-}
 
 /**
  * The next step in a direction, stepping over anything that does not apply.
  *
  * A loop rather than a single check: two skippable steps can sit next to each
- * other — on an iPad both Health and the watch question go — and stopping at
- * the first one would land the flow on a screen it had just decided to hide.
- *
- * Returns null when there is nothing left in that direction, which is the
- * caller's signal that the flow is over rather than an index to move to.
+ * other, and stopping at the first would land the flow on a screen it had just
+ * decided to hide. Null when there is nothing left in that direction — the
+ * caller's signal that the flow is over.
  */
-/** Whether anything at all was picked on the pain step besides "nothing". */
-function hurts(answers: Readonly<Record<string, unknown>>): boolean {
-  const pain = answers.pain;
-  return Array.isArray(pain) && pain.some((value) => value !== 'none');
-}
-
 export function stepAfter(
   from: number,
   forward: boolean,
@@ -681,3 +503,4 @@ export function stepAfter(
   }
   return null;
 }
+

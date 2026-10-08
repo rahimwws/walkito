@@ -29,6 +29,7 @@ import {
   todayDayNumber,
   todayKey,
   todayPlan,
+  twoMinuteVersion,
   useLogsVersion,
   useNextSession,
   usePlanVersion,
@@ -39,6 +40,7 @@ import {
   type NextSession,
   type PlannedExercise,
   type ProgramDay,
+  type TodayReason,
 } from '@/entities/program';
 import { accents, fonts, meterColors, palette, type AccentName } from '@/shared/config';
 import { useCountdown } from '@/shared/lib/clock';
@@ -140,6 +142,10 @@ type TodayWork = {
    * and what the session is recorded as when the list finishes it. */
   kind: DayType;
   minutes: number;
+  /** Why today differs from the plan, when it does. */
+  reason: TodayReason;
+  /** "Not up for it?": the focus exercise alone, two sets. */
+  short: PlaylistStep[];
 };
 
 /**
@@ -156,11 +162,15 @@ function tasksForToday(t: Translate, health: HealthSignals): TodayWork {
     steps28Avg: health.stepsBaseline,
     sleepHours: health.sleepLastNightMin == null ? null : health.sleepLastNightMin / 60,
   }, null);
-  if (day.type === 'test') return { tasks: [], retest: true, kind: day.type, minutes: RETEST_MINUTES };
+  if (day.type === 'test') {
+    return { tasks: [], retest: true, kind: day.type, minutes: RETEST_MINUTES, reason: null, short: [] };
+  }
   return {
     retest: false,
     kind: day.type,
     minutes: day.minutes,
+    reason: day.reason,
+    short: twoMinuteVersion(day).exercises.map(stepOf),
     tasks: day.exercises.map((planned): Task => {
       const exercise = exerciseById(planned.id);
       const seconds = planDoseSeconds(planned.dose);
@@ -207,6 +217,7 @@ function stepOf(planned: PlannedExercise): PlaylistStep {
     seconds: planDoseSeconds(dose),
     perSide: dose.perSide,
     ...(dose.tempo != null && dose.reps != null ? { cadence: { tempo: dose.tempo, reps: dose.reps, sets: dose.sets } } : {}),
+    ...(dose.addWeight === true ? { addWeight: true } : {}),
   };
 }
 
@@ -249,6 +260,8 @@ export function TodayTasks() {
   /** The day's tests, taken or read back. Separate from `open` because it is
    * the whole test day rather than one task off the list. */
   const [testing, setTesting] = useState<'take' | 'review' | null>(null);
+  /** The 2-minute version, playing. */
+  const [short, setShort] = useState<ProgramDay | null>(null);
 
   /**
    * Today's work, recomputed whenever the record behind it moves.
@@ -272,7 +285,7 @@ export function TodayTasks() {
   const next = useNextSession();
   const date = todayKey();
 
-  const { tasks, retest, kind, minutes } = useMemo(() => {
+  const { tasks, retest, kind, minutes, reason, short: shortSteps } = useMemo(() => {
     return tasksForToday(t, health);
     // The first two are versions rather than inputs — the plan reads the log
     // and its own store, and both are mutated in place, so they are the only
@@ -398,6 +411,13 @@ export function TodayTasks() {
         />
       </View>
 
+      {/* Why today is not the day as planned — said, rather than done silently. */}
+      {!allDone && (reason === 'heavy-day' || reason === 'short-sleep') && (
+        <Text style={[styles.reason, { color: meter.caption }]}>
+          {reason === 'heavy-day' ? t('pages.plan.reasonHeavyDay') : t('pages.plan.reasonShortSleep')}
+        </Text>
+      )}
+
       {/* Above the list, not instead of it. The rows stay readable — somebody
           checking what they did today should be able to see it, and hiding the
           work behind a tick would make the screen forget the session the
@@ -486,14 +506,50 @@ export function TodayTasks() {
         ))}
       </View>
 
+      {/* "Not up for it?": the focus exercise alone. It finishes the day the
+          way the full list does, so it counts for the streak. */}
+      {!allDone && !retest && shortSteps.length > 0 && (
+        <Pressable
+          accessibilityRole="button"
+          onPress={() => {
+            Haptics.selectionAsync();
+            setShort(playerDay(kind, 2));
+          }}
+          hitSlop={8}
+          style={({ pressed }) => [styles.notUp, pressed && { opacity: 0.5 }]}>
+          <Text style={[styles.notUpText, { color: meter.caption }]}>{t('pages.plan.notUpForIt')}</Text>
+        </Pressable>
+      )}
+
       <Modal
         animationType="slide"
         presentationStyle="pageSheet"
-        visible={open != null || testing != null}
+        visible={open != null || testing != null || short != null}
         onRequestClose={() => {
           setOpen(null);
           setTesting(null);
+          setShort(null);
         }}>
+        {short != null && (
+          <View style={[styles.player, { backgroundColor: colors.background }]}>
+            <SessionView
+              day={short}
+              playlist={shortSteps}
+              onBack={() => setShort(null)}
+              onFinish={() => {
+                if (!planSessionDone(todayKey())) {
+                  completePlanSession({
+                    date: todayKey(),
+                    source: 'plan',
+                    minutes: 2,
+                    exerciseIds: shortSteps.map((step) => step.exerciseId),
+                  });
+                }
+                setShort(null);
+              }}
+            />
+          </View>
+        )}
         {/* The test day paints its own page and keeps its own insets, and it
             finishes the day itself (`finishTestDay`): the numbers, the session,
             the goals and the sync. This used to be the session player on the
@@ -515,12 +571,9 @@ export function TodayTasks() {
               // transport still works — it simply has nowhere to go next, which
               // is what makes the end of the move the end of the task.
               playlist={[open.task.step]}
-              // Never asks how it felt. The answer is filed on the day's plan
-              // session and tunes the next ones, and what this player ran is
-              // one move — the last one left, when it finishes the list, but
-              // still one. "Too easy" about a stretch would have moved the
-              // calf work up. Plan's player runs the whole session and asks.
-              feedback={false}
+              // Asks "2 more good reps?" like every other session. The answer
+              // is filed on the day's plan session.
+              feedback
               onBack={() => setOpen(null)}
               onFinish={() => {
                 finish(open.task.id);
@@ -737,6 +790,16 @@ function TaskRow({
 
 const styles = StyleSheet.create({
   player: { flex: 1 },
+  reason: {
+    ...fonts.medium(15),
+    lineHeight: 21,
+    marginTop: 6,
+  },
+  notUp: { alignSelf: 'center', paddingVertical: 10, marginTop: 4 },
+  notUpText: {
+    ...fonts.semibold(15),
+    textDecorationLine: 'underline',
+  },
   root: {
     alignSelf: 'stretch',
   },

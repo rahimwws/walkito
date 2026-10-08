@@ -3,7 +3,7 @@
  *
  * **Why this is hand-written instead of i18next.** Expo's own docs point at
  * i18next, and for an app pulling translations from a service it would be the
- * right answer. This one ships three bundled languages and needs exactly two
+ * right answer. This one ships seven bundled languages and needs exactly two
  * guarantees, both of which a library makes *harder* rather than easier:
  *
  *   • **A missing translation must not compile.** `CatalogueFor<L>` is derived

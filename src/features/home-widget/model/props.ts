@@ -3,6 +3,7 @@ import {
   attended,
   currentDay,
   dayNumberFor,
+  isFirstStepTime,
   logFor,
   planSessionDone,
   programState,
@@ -179,7 +180,8 @@ export function buildWidgetProps(
     // a null here would abort the app when the timeline is stored.
     ...(answerScore != null ? { answerScore } : {}),
     text: {
-      question: t('widget.question'),
+      // Before noon the question is the morning's: how the first steps were.
+      question: isFirstStepTime(now) ? t('widget.questionMorning') : t('widget.question'),
       hurts: t('widget.hurts'),
       fine: t('widget.fine'),
       tapToCheckIn: t('widget.tapToCheckIn'),

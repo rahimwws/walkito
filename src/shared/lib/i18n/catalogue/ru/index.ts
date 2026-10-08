@@ -5,6 +5,7 @@ import { EXERCISES_RU } from './exercises';
 import { HOME_RU } from './home';
 import { NOTIFICATIONS_RU } from './notifications';
 import { OFFER_RU } from './offer';
+import { JOURNEY_RU } from './journey';
 import { ONBOARDING_RU } from './onboarding';
 import { PAGES_RU } from './pages';
 import { PROFILE_RU } from './profile';
@@ -26,6 +27,7 @@ import { UPDATE_RU } from './update';
 export const ru: CatalogueFor<'ru'> = {
   ...CORE_RU,
   ...ONBOARDING_RU,
+  ...JOURNEY_RU,
   ...HOME_RU,
   ...PROGRESS_RU,
   ...QUICK_RU,

@@ -19,7 +19,11 @@ import { describe, expect, test } from 'bun:test';
 import { NO_SIGNALS, type HealthSignals } from '@/entities/health/model/metrics';
 import { LANGUAGES, translatorFor, type Language } from '@/shared/lib/i18n';
 import { BRIEF_EN } from '@/shared/lib/i18n/catalogue/en/home';
+import { BRIEF_DE } from '@/shared/lib/i18n/catalogue/de/home';
 import { BRIEF_ES } from '@/shared/lib/i18n/catalogue/es/home';
+import { BRIEF_FR } from '@/shared/lib/i18n/catalogue/fr/home';
+import { BRIEF_IT } from '@/shared/lib/i18n/catalogue/it/home';
+import { BRIEF_PT } from '@/shared/lib/i18n/catalogue/pt/home';
 import { BRIEF_RU } from '@/shared/lib/i18n/catalogue/ru/home';
 import { buildBrief, type BriefSegment } from '@/shared/ui/daily-brief/template';
 
@@ -36,6 +40,10 @@ const TABLES: Record<Language, Record<string, readonly (readonly BriefSegment[])
   en: BRIEF_EN,
   ru: BRIEF_RU,
   es: BRIEF_ES,
+  pt: BRIEF_PT,
+  fr: BRIEF_FR,
+  de: BRIEF_DE,
+  it: BRIEF_IT,
 };
 
 /** A phone that has granted everything and had time to learn. Without it the
@@ -409,6 +417,10 @@ describe('clinical honesty', () => {
     en: ['limping', 'compensating', 'abnormal', 'too high', 'diagnos'],
     ru: ['хрома', 'компенсир', 'патолог', 'диагноз'],
     es: ['cojea', 'cojera', 'compensando', 'anormal', 'patológic', 'diagnóstic'],
+    pt: ['manca', 'mancando', 'compensando', 'anormal', 'patológic', 'diagnóstic'],
+    fr: ['boit', 'compens', 'anormal', 'patholog', 'diagnos'],
+    de: ['hink', 'kompensier', 'abnormal', 'patholog', 'diagnos'],
+    it: ['zoppic', 'compens', 'anormal', 'patologic', 'diagnos'],
   };
 
   const HEALTH_STATES: readonly BriefState[] = [
@@ -438,15 +450,18 @@ describe('clinical honesty', () => {
     });
   }
 
-  /** The one line that cites a finding keeps its hedge in translation —
-   * "about half", not "half". */
+  /** The one line about how long this takes keeps its hedge in translation —
+   * "most people" and "usually", never a promise. */
   test('the research line stays hedged', () => {
     const at = (language: Language) => {
       const params = briefParams(BASE, readBrief(BASE), translatorFor(language), language);
       return say(buildBrief(TABLES[language]['checkpoint-recap'][1], params, { capitalise: true }));
     };
-    expect(at('en')).toContain('about');
-    expect(at('ru')).toContain('около');
-    expect(at('es')).toContain('alrededor de');
+    expect(at('en')).toContain('Most people');
+    expect(at('en')).toContain('usually');
+    expect(at('ru')).toContain('У большинства');
+    expect(at('ru')).toContain('обычно');
+    expect(at('es')).toContain('La mayoría');
+    expect(at('es')).toContain('suele');
   });
 });

@@ -16,11 +16,11 @@ export const PLAYER_EN = {
   // ── How hard was that ─────────────────────────────────────────────────────
   // Asked once, at the end, and optional. The purpose line is there because an
   // unexplained question reads as a survey; this one changes the next session.
-  'player.feedback.question': 'How hard was that?',
+  'player.feedback.question': 'Could you have done 2 more good reps?',
   'player.feedback.purpose': 'Your answer tunes the next sessions.',
-  'player.feedback.easy': 'Too easy',
-  'player.feedback.right': 'Just right',
-  'player.feedback.hard': 'Too hard',
+  'player.feedback.easy': 'Yes, easily',
+  'player.feedback.right': 'About right',
+  'player.feedback.hard': 'No',
   'player.feedback.hurt': 'It hurt',
   'player.feedback.adjusts': 'Got it. The plan adjusts.',
   // "Adjusts" would be untrue for the one answer that asks it not to.
@@ -34,4 +34,22 @@ export const PLAYER_EN = {
   'player.afterPain.highHint':
     'That’s more than this work should cause. Your next session starts one step back.',
   'player.afterPain.save': 'Save',
+  'player.cantDo.button': 'Can’t do this',
+  'player.cantDo.title': 'What’s in the way?',
+  'player.cantDo.blurb': 'We’ll swap it now and leave it out of your plan.',
+  'player.cantDo.noStep': 'No step',
+  'player.cantDo.noBand': 'No band',
+  'player.cantDo.noTowel': 'No towel',
+  'player.cantDo.noPillow': 'No pillow',
+  'player.cantDo.noBall': 'No ball',
+  'player.cantDo.hurts': 'It hurts',
+  'player.cantDo.swapped': 'Swapped for {name}.',
+  'player.cantDo.skipped': 'Nothing fits here today, so this one is skipped.',
+  'player.load.backpack': 'Add a backpack with about 5-10% of your body weight. If 12 slow reps feel easy, add a little more.',
+  'player.painRule.title': 'How much pain is OK?',
+  'player.painRule.body': '0-3 is fine. 4-5 is OK if it settles by next morning. 6 or more - stop.',
+  'player.painRule.ok': 'Got it',
+  'player.painRule.a11y': 'How much pain is OK',
+  'player.tempo.on': 'Tempo sounds on',
+  'player.tempo.off': 'Tempo sounds off',
 } as const satisfies Record<string, SourceEntry>;

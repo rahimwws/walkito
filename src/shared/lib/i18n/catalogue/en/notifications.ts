@@ -44,6 +44,8 @@ export const NOTIFICATIONS_EN = {
   'notifications.kindFoot': 'Foot work',
 
   // ── The morning nudge ────────────────────────────────────────────────────
+  /** The morning reminder, in the words of the intention signed in onboarding. */
+  'notifications.morningIntention': 'When you wake up, before you stand, do your foot stretch.',
   'notifications.sessionStrength': {
     one: 'Foot strength today. {count} minute.',
     other: 'Foot strength today. {count} minutes.',
@@ -56,7 +58,6 @@ export const NOTIFICATIONS_EN = {
     one: 'Short session today - {count} minute, sitting down.',
     other: 'Short session today - {count} minutes, sitting down.',
   },
-  'notifications.sessionHeelRaises': 'Heel raises today. The one that actually moves things.',
   /** Their sport, named as the way back — never as a promise of getting there. */
   'notifications.sessionBackTo': {
     one: '{count} minute today. One more step back {backTo}.',
@@ -80,15 +81,7 @@ export const NOTIFICATIONS_EN = {
 
   // ── The morning after a bad day ──────────────────────────────────────────
   // Never cheerful, no emoji, no encouragement. Just the smaller ask.
-  'notifications.flareRough': {
-    one: 'Rough one yesterday. Today is {count} minute, sitting down.',
-    other: 'Rough one yesterday. Today is {count} minutes, sitting down.',
-  },
-  'notifications.flarePain': {
-    one: 'Pain was {pain}. Today the plan gets out of your way - {count} minute.',
-    other: 'Pain was {pain}. Today the plan gets out of your way - {count} minutes.',
-  },
-  'notifications.flareNothingHeavy': 'Bad day yesterday. Today asks nothing heavy.',
+  'notifications.flareCheckIn': 'Rough one yesterday. Check in when you’re up - if it’s still bad, today stays short and seated.',
 
   // ── A big day on their feet ──────────────────────────────────────────────
   // `loadSteps` is first in the set on purpose: it is the only one that names a

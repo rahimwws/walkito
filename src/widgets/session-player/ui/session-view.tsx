@@ -1,7 +1,11 @@
 import ArrowExpandDiagonal01Icon from '@hugeicons/core-free-icons/ArrowExpandDiagonal01Icon';
 import ArrowShrink01Icon from '@hugeicons/core-free-icons/ArrowShrink01Icon';
 import ArrowLeft02Icon from '@hugeicons/core-free-icons/ArrowLeft02Icon';
+import Backpack03Icon from '@hugeicons/core-free-icons/Backpack03Icon';
 import BandageIcon from '@hugeicons/core-free-icons/BandageIcon';
+import InformationCircleIcon from '@hugeicons/core-free-icons/InformationCircleIcon';
+import VolumeHighIcon from '@hugeicons/core-free-icons/VolumeHighIcon';
+import VolumeOffIcon from '@hugeicons/core-free-icons/VolumeOffIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import SquareLock02Icon from '@hugeicons/core-free-icons/SquareLock02Icon';
 import * as Haptics from 'expo-haptics';
@@ -29,7 +33,10 @@ import {
   abandonSession,
   beginSession,
   inSessionPain,
+  markCantDo,
   noteInSessionPain,
+  planMeta,
+  swapFor,
   stepBackAfterSession,
   writeLog,
   exerciseById,
@@ -42,13 +49,16 @@ import {
   useStreak,
   type Exercise,
   type ProgramDay,
+  type CantDoReason,
   type Tempo,
 } from '@/entities/program';
 import { useIntake } from '@/entities/profile';
 import { clearBrowsingLapsed, useSessionsLocked } from '@/entities/purchase';
 import { fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
-import { useT, type Key } from '@/shared/lib/i18n';
+import { useLanguage, useT, type Key } from '@/shared/lib/i18n';
+import { setSoundPrefs, useSoundPrefs } from '@/shared/lib/sound';
+import { kv } from '@/shared/lib/storage';
 import { useColorScheme } from '@/shared/lib/theme';
 import { AnimatedNumber } from '@/shared/ui/animated-number';
 import { holdGlowStill } from '@/shared/ui/glow';
@@ -59,6 +69,8 @@ import { mirroredFor } from '../model/mirror';
 import { CountInOverlay } from './count-in-overlay';
 import { SessionDoneSheet } from './session-done-sheet';
 import { SessionPainSheet } from './session-pain-sheet';
+import { CantDoSheet, PainRuleSheet } from './session-sheets';
+import { playTempoCue, preloadTempoSounds } from '../model/tempo-sound';
 import { clearResume, readResume, writeResume } from '../model/session-resume';
 import {
   doseSeconds,
@@ -81,6 +93,10 @@ import { SessionTimerActivity, type SessionActivityProps } from './session-activ
  */
 const SECONDS_PER_MOVE = 60;
 
+/** Room the three header controls take on the right: sound, the pain rule
+ * and "it hurts", with their gaps and the margin. */
+const HEADER_ACTIONS_WIDTH = 140;
+
 /** The row the back arrow and the pain button sit in. Named because the
  * count-in has to start exactly where it ends, so both stay pressable. */
 const HEADER_HEIGHT = 44;
@@ -89,8 +105,19 @@ const HEADER_HEIGHT = 44;
  * allow, then gives way on short displays so the readout and the transport
  * below it are never the things that get squeezed. */
 const CARD_MARGIN = 20;
-const CARD_MAX_HEIGHT_FRACTION = 0.44;
 const CARD_RADIUS = 32;
+
+/**
+ * The clips are filmed upright, 9:16, with the whole body in frame. The card
+ * takes that shape so a heel raise shows the head and the heels at once — a
+ * square cut the feet off, which on half of these moves is the part being
+ * shown. Any clip of another shape is fitted inside it, never cropped.
+ */
+const CLIP_ASPECT = 9 / 16;
+
+/** The studio backdrop the clips are filmed on, so a clip fitted inside the
+ * card with room to spare blends into it rather than sitting on bars. */
+const CLIP_BACKDROP = '#ECF0F1';
 
 /** Big enough to read from where the phone actually is during a session:
  * propped against a wall, several feet away, by someone balancing on one foot
@@ -193,7 +220,12 @@ type MovePlan = {
    * twice as long as prescribed or splitting it by eye.
    */
   perSide: boolean;
+  /** Heel raises at the top of the calf chain: load with a backpack. */
+  addWeight?: boolean;
 };
+
+/** Seen the pain rule once — the first session shows it before it starts. */
+const PAIN_RULE_SEEN_KEY = 'player/pain-rule-seen';
 
 /** How often the countdown is re-read off the wall clock. Four times a second
  * is finer than the whole-second readout needs, and nothing on screen follows
@@ -268,6 +300,8 @@ export type PlaylistStep = {
    * out — held time, not counted reps.
    */
   cadence?: Cadence;
+  /** The plan's dose asks for weight on top — shown as the backpack line. */
+  addWeight?: boolean;
 };
 
 export type SessionViewProps = {
@@ -284,6 +318,11 @@ export type SessionViewProps = {
   /** One line under the title, set by whatever assembled the playlist. */
   cue?: string;
   /**
+   * A routine that stays free after access ends — the morning stretch, which
+   * the paywall promises (`offer.freeLine`). It plays while the rest is locked.
+   */
+  free?: boolean;
+  /**
    * The moves to run, when they are not the day's own.
    *
    * Home opens this player for a single task off its list, and that task is one
@@ -297,13 +336,9 @@ export type SessionViewProps = {
    * is not finishing. */
   onFinish?: () => void;
   /**
-   * Ask "How hard was that?" in the closing sheet.
-   *
-   * Off unless the host asks, because the answer only means something for a
-   * session the plan is built from: it tunes the next sessions, and a single
-   * task off Home's list or a Quick routine has no next session for it to tune.
-   * Never asked after a session stopped on pain — that one already said how it
-   * went.
+   * Ask "Could you have done 2 more good reps?" in the closing sheet. On for
+   * every session — Plan, Home's tasks, the Library — and never after a session
+   * stopped on pain, which already said how it went.
    */
   feedback?: boolean;
 };
@@ -348,7 +383,7 @@ export type SessionViewProps = {
  */
 export function SessionView(props: SessionViewProps) {
   const locked = useSessionsLocked();
-  if (!locked) return <SessionRun {...props} />;
+  if (!locked || props.free === true) return <SessionRun {...props} />;
   return <SessionLocked onBack={props.onBack} />;
 }
 
@@ -408,7 +443,7 @@ function SessionRun({
   playlist,
   cue,
   onFinish,
-  feedback = false,
+  feedback = true,
 }: SessionViewProps) {
   // A fresh record for this run: nothing the last session said carries over.
   const [sessionToken] = useState(() => beginSession());
@@ -448,7 +483,12 @@ function SessionRun({
    * check just decided on. */
   const { progressionOffset } = useProgramState();
 
-  const moves = override ?? movesFor(day);
+  // A playlist names its own moves. Reading the day's here put the day's
+  // titles over a routine's clips, and ran out before the routine did.
+  const moves =
+    playlist != null
+      ? playlist.map((entry) => exerciseById(entry.exerciseId).title)
+      : (override ?? movesFor(day));
 
   /**
    * The whole session, timed.
@@ -458,7 +498,14 @@ function SessionRun({
    * current one ends — see `goTo`. Cheap enough to do on any render that
    * changes the list: it is a lookup and some multiplication per move.
    */
-  const plan: readonly MovePlan[] = playlist != null
+  /**
+   * Moves swapped mid-session by "Can't do this", by position. The replacement
+   * keeps the slot's length; it runs as held time, not as counted reps, since
+   * the dose it brings belonged to the move it replaced.
+   */
+  const [swaps, setSwaps] = useState<Readonly<Record<number, string>>>({});
+
+  const basePlan: readonly MovePlan[] = playlist != null
     ? playlist.map((step) => ({
         exercise: exerciseById(step.exerciseId) ?? null,
         // The playlist's own length, clamped for the same reason `planMove`
@@ -469,8 +516,16 @@ function SessionRun({
         // inventing a dose; the weekly plan's heel raises do bring theirs.
         cadence: step.cadence ?? null,
         perSide: step.perSide === true,
+        addWeight: step.addWeight === true,
       }))
     : moves.map((title) => planMove(title, day.block, progressionOffset));
+
+  const plan: readonly MovePlan[] = basePlan.map((entry, index) => {
+    const swapped = swaps[index];
+    if (swapped == null) return entry;
+    const exercise = exerciseById(swapped) ?? null;
+    return { exercise, seconds: entry.seconds, cadence: null, perSide: exercise?.perSide === true };
+  });
 
   /** What this session is called for the purpose of coming back to it. */
   const resumeId =
@@ -489,7 +544,8 @@ function SessionRun({
   const startedAt = useRef(new Date());
 
   const [step, setStep] = useState(() => resume?.step ?? 0);
-  const [playing, setPlaying] = useState(true);
+  // Held still behind the pain rule the first time it is shown.
+  const [playing, setPlaying] = useState(() => kv.getString(PAIN_RULE_SEEN_KEY) != null);
 
   /**
    * The count-in: when the three-two-one in front of the current move began,
@@ -504,7 +560,12 @@ function SessionRun({
    * holds the clock, the clip and the Lock Screen still. An effect would let
    * the move run for a frame before being told not to.
    */
-  const [countFrom, setCountFrom] = useState<number | null>(() => Date.now());
+  /**
+   * The pain rule, shown once before the first session ever starts and after
+   * that behind the info button. While it is up the count-in waits.
+   */
+  const [ruleOpen, setRuleOpen] = useState(() => kv.getString(PAIN_RULE_SEEN_KEY) == null);
+  const [countFrom, setCountFrom] = useState<number | null>(() => (ruleOpen ? null : Date.now()));
   /** "Next up" rather than "Get ready": the count is the handover from one
    * move to the next inside a sitting, not the start of one. */
   const [countNext, setCountNext] = useState(false);
@@ -561,7 +622,7 @@ function SessionRun({
   /** This view's own box. See the note where the rects are built. */
   const [box, setBox] = useState<Frame | null>(null);
 
-  const move = moves[step];
+  const move = swaps[step] != null ? (plan[step]?.exercise?.title ?? moves[step]) : moves[step];
   const moveCount = moves.length;
   /** The press that ends the session, which both the label and the colour of
    * the button answer to. */
@@ -1032,6 +1093,92 @@ function SessionRun({
     [progressionOffset, day.day, complete, resumeAfterPain],
   );
 
+  /** "Can't do this": paused while the reason is asked, like the pain question. */
+  const [askingCantDo, setAskingCantDo] = useState(false);
+  /** Said for a moment under the header once a move has been swapped. */
+  const [swapNote, setSwapNote] = useState<string | null>(null);
+
+  const pauseForQuestion = useCallback(() => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    wasPlaying.current = playing;
+    setPlaying(false);
+    setCountFrom(null);
+    setCarryOn(false);
+    setSwapNote(null);
+  }, [playing]);
+
+  const reportCantDo = useCallback(
+    (reason: CantDoReason) => {
+      setAskingCantDo(false);
+      const id = current?.exercise?.id;
+      if (id == null) {
+        resumeAfterPain();
+        return;
+      }
+      // Stored first, so the replacement is chosen with the missing kit
+      // already out of the picture, and the rest of the plan follows.
+      markCantDo(id, reason);
+      track('exercise_cant_do', { exercise: id, reason: reason === 'hurts' ? 'other' : reason });
+      const replacement = swapFor(id);
+      if (replacement == null) {
+        setSwapNote(t('player.cantDo.skipped'));
+        setPlaying(true);
+        advance();
+        return;
+      }
+      setSwaps((previous) => ({ ...previous, [step]: replacement }));
+      setSwapNote(t('player.cantDo.swapped', { name: exerciseById(replacement).title }));
+      // The slot starts over with the new move, through a fresh count.
+      progress.value = 0;
+      deadline.value = 0;
+      setElapsed(0);
+      player.currentTime = 0;
+      countIn(false);
+      setPlaying(true);
+    },
+    [current, step, t, advance, resumeAfterPain, progress, deadline, player, countIn],
+  );
+
+  const closeRule = useCallback(() => {
+    const first = kv.getString(PAIN_RULE_SEEN_KEY) == null;
+    kv.set(PAIN_RULE_SEEN_KEY, '1');
+    setRuleOpen(false);
+    // The first time it stood in front of the session's own count; after that
+    // it was opened mid-move and the move picks up where it was.
+    if (first) {
+      countIn(false);
+      setPlaying(true);
+      return;
+    }
+    resumeAfterPain();
+  }, [countIn, resumeAfterPain]);
+
+  /**
+   * The tempo, out loud: "up · 2 · 3 · hold · 2 · down · 2 · 3".
+   *
+   * One sound per second of a tempo move, keyed on the second so a re-render
+   * never plays it twice. Silent on moves without a tempo, during the count-in
+   * and while paused.
+   */
+  const sound = useSoundPrefs();
+  const language = useLanguage();
+  useEffect(() => {
+    if (sound.tempo) preloadTempoSounds(language, sound.voice);
+  }, [sound.tempo, sound.voice, language]);
+  const cueKey = useRef<string | null>(null);
+  useEffect(() => {
+    if (!sound.tempo || !running || phase == null || phase.done || current?.cadence == null) {
+      cueKey.current = null;
+      return;
+    }
+    const key = `${step}:${elapsed}`;
+    if (cueKey.current === key) return;
+    cueKey.current = key;
+    const length = current.cadence.tempo[phase.phase];
+    const second = Math.max(1, Math.round(length) - phase.secondsLeft + 1);
+    playTempoCue(phase.phase, second, language, sound.voice);
+  }, [sound.tempo, sound.voice, running, phase, current, step, elapsed, language]);
+
   /**
    * The move running out, from either direction.
    *
@@ -1174,7 +1321,10 @@ function SessionRun({
   const boxWidth = box?.width ?? width;
   const boxHeight = box?.height ?? height;
 
-  const cardSize = Math.min(boxWidth - CARD_MARGIN * 2, boxHeight * CARD_MAX_HEIGHT_FRACTION);
+  // Upright, fitted to whatever height the stage was left with.
+  const cardHeight =
+    stage == null ? 0 : Math.min(stage.height, (stage.width - CARD_MARGIN * 2) / CLIP_ASPECT);
+  const cardWidth = cardHeight * CLIP_ASPECT;
   const floor = Math.max(insets.bottom, CARD_MARGIN);
 
   /**
@@ -1191,7 +1341,7 @@ function SessionRun({
     x: CARD_MARGIN,
     y: 0,
     width: boxWidth - CARD_MARGIN * 2,
-    height: Math.max(boxHeight - floor - CONTINUE_BLOCK, cardSize),
+    height: Math.max(boxHeight - floor - CONTINUE_BLOCK, cardHeight),
   };
 
   /** The resting rect, centred in whatever the flex layout left the stage. */
@@ -1199,10 +1349,10 @@ function SessionRun({
     stage == null
       ? null
       : {
-          x: stage.x + (stage.width - cardSize) / 2,
-          y: stage.y + (stage.height - cardSize) / 2,
-          width: cardSize,
-          height: cardSize,
+          x: stage.x + (stage.width - cardWidth) / 2,
+          y: stage.y + (stage.height - cardHeight) / 2,
+          width: cardWidth,
+          height: cardHeight,
         };
 
   const cardStyle = useAnimatedStyle(() => {
@@ -1428,27 +1578,53 @@ function SessionRun({
               than behind a menu: the moment it is needed is the moment nobody
               goes looking for it. Not on a finished session. */}
           {!finished && (
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel={t('widgets.painButton')}
-              onPress={() => {
-                Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-                wasPlaying.current = playing;
-                setPlaying(false);
-                // A count under way is dropped, not paused: the move is picked
-                // up again through a fresh one when the question is answered.
-                setCountFrom(null);
-                setCarryOn(false);
-                setAskingPain(true);
-              }}
-              hitSlop={12}
-              style={({ pressed }) => [styles.painButton, pressed && { opacity: 0.5 }]}>
-              <HugeiconsIcon icon={BandageIcon} size={24} color={colors.foreground} strokeWidth={1.8} />
-            </Pressable>
+            <View style={styles.headerActions}>
+              {/* The tempo out loud, on or off. The same switch as Settings. */}
+              <Pressable
+                accessibilityRole="switch"
+                accessibilityState={{ checked: sound.tempo }}
+                accessibilityLabel={sound.tempo ? t('player.tempo.on') : t('player.tempo.off')}
+                onPress={() => {
+                  Haptics.selectionAsync();
+                  setSoundPrefs({ tempo: !sound.tempo });
+                }}
+                hitSlop={10}
+                style={({ pressed }) => pressed && { opacity: 0.5 }}>
+                <HugeiconsIcon
+                  icon={sound.tempo ? VolumeHighIcon : VolumeOffIcon}
+                  size={23}
+                  color={colors.foreground}
+                  strokeWidth={1.8}
+                />
+              </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={t('player.painRule.a11y')}
+                onPress={() => {
+                  pauseForQuestion();
+                  setRuleOpen(true);
+                }}
+                hitSlop={10}
+                style={({ pressed }) => pressed && { opacity: 0.5 }}>
+                <HugeiconsIcon icon={InformationCircleIcon} size={23} color={colors.foreground} strokeWidth={1.8} />
+              </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={t('widgets.painButton')}
+                onPress={() => {
+                  // A count under way is dropped, not paused: the move is picked
+                  // up again through a fresh one when the question is answered.
+                  pauseForQuestion();
+                  setAskingPain(true);
+                }}
+                hitSlop={10}
+                style={({ pressed }) => pressed && { opacity: 0.5 }}>
+                <HugeiconsIcon icon={BandageIcon} size={24} color={colors.foreground} strokeWidth={1.8} />
+              </Pressable>
+            </View>
           )}
 
-          {/* Centred on the screen rather than in what the arrow leaves over, so
-              it lands where a navigation title lands. Inert: it is a label. */}
+          {/* Between the arrow and the controls. Inert: it is a label. */}
           <View pointerEvents="none" style={styles.headerTitle}>
             <Text style={[styles.meta, { color: meter.caption }]}>
               {t('session.day', { day: day.day })}
@@ -1467,6 +1643,9 @@ function SessionRun({
 
         {carryOn && (
           <Text style={[styles.carryOn, { color: meter.caption }]}>{t('widgets.painCarryOn')}</Text>
+        )}
+        {swapNote != null && !carryOn && (
+          <Text style={[styles.carryOn, { color: meter.caption }]}>{swapNote}</Text>
         )}
 
         {/* The card is drawn over this, not in it — it has to travel to a rect
@@ -1523,6 +1702,28 @@ function SessionRun({
               {position.text}
             </Text>
           )}
+          {/* The weight, said where it can be read: on the move it belongs to,
+              on the days the dose asks for it. */}
+          {!finished && (current?.addWeight === true || loadNote != null) && (
+            <View style={styles.load}>
+              <HugeiconsIcon icon={Backpack03Icon} size={17} color={meter.label} strokeWidth={1.8} />
+              <Text style={[styles.loadText, { color: meter.label }]}>
+                {current?.addWeight === true ? t('player.load.backpack') : loadNote}
+              </Text>
+            </View>
+          )}
+          {!finished && current?.exercise != null && (
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => {
+                pauseForQuestion();
+                setAskingCantDo(true);
+              }}
+              hitSlop={8}
+              style={({ pressed }) => [styles.cantDo, pressed && { opacity: 0.5 }]}>
+              <Text style={[styles.cantDoText, { color: meter.caption }]}>{t('player.cantDo.button')}</Text>
+            </Pressable>
+          )}
         </View>
 
         {/* The whole point of the Live Activity, said once where it is
@@ -1555,15 +1756,15 @@ function SessionRun({
           screen. Positioned rather than scaled: a scaled video is a stretched
           video, and a scaled corner radius is the wrong radius all the way. */}
       <Animated.View
-        style={[styles.card, { backgroundColor: colors.card }, cardStyle]}>
+        style={[styles.card, { backgroundColor: CLIP_BACKDROP }, cardStyle]}>
         <VideoView
           style={[styles.video, mirrored && styles.mirrored]}
           player={player}
           nativeControls={false}
-          // Cover, not contain: the clip is 16:9 and the card is square, and
-          // a letterboxed demo inside a rounded card reads as a bug. The
-          // subject is centred in frame, so the crop takes only backdrop.
-          contentFit="cover"
+          // Contain, never cover: the whole body stays in frame. The card is
+          // the clips' own shape, so an upright clip fills it; anything else
+          // sits on the backdrop colour instead of losing its edges.
+          contentFit="contain"
         />
 
         {/* Over the player, not instead of it: the card keeps its size and its
@@ -1653,6 +1854,18 @@ function SessionRun({
         }}
       />
 
+      <CantDoSheet
+        visible={askingCantDo}
+        equipment={planMeta(current?.exercise?.id ?? '')?.equipment ?? []}
+        onPick={reportCantDo}
+        onCancel={() => {
+          setAskingCantDo(false);
+          resumeAfterPain();
+        }}
+      />
+
+      <PainRuleSheet visible={ruleOpen} onClose={closeRule} />
+
       <SessionDoneSheet
         visible={celebrating}
         early={endedEarly}
@@ -1695,28 +1908,32 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: CARD_MARGIN,
   },
-  painButton: {
+  headerActions: {
     position: 'absolute',
     right: CARD_MARGIN,
     zIndex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 18,
   },
   carryOn: {
     ...fonts.regular(14),
     textAlign: 'center',
     paddingHorizontal: CARD_MARGIN,
   },
+  /** Beside the back arrow rather than centred: the right of the row is the
+   * three controls now, and a centred title ran under them. */
   headerTitle: {
     position: 'absolute',
     top: 0,
-    left: 0,
-    right: 0,
+    left: CARD_MARGIN + 38,
+    right: HEADER_ACTIONS_WIDTH,
     bottom: 0,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    gap: 6,
+    gap: 5,
   },
-  meta: fonts.semibold(14),
+  meta: fonts.semibold(13),
   dot: {
     width: 3,
     height: 3,
@@ -1781,6 +1998,22 @@ const styles = StyleSheet.create({
     ...fonts.semibold(15, 0.1),
     marginTop: 6,
   },
+  load: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: 8,
+    marginTop: 8,
+  },
+  loadText: {
+    ...fonts.medium(14),
+    lineHeight: 19,
+    flexShrink: 1,
+  },
+  cantDo: {
+    alignSelf: 'flex-start',
+    marginTop: 10,
+  },
+  cantDoText: fonts.semibold(15),
   hint: {
     flexDirection: 'row',
     alignItems: 'center',

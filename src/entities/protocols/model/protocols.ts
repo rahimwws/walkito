@@ -52,12 +52,13 @@ export type Protocol = {
   /** The one line shown in the player. Sets the intent before the first clip. */
   readonly cueKey: Key;
   readonly steps: readonly ProtocolStep[];
-  /** Runnable without paying. True for exactly one — see `FREE_PROTOCOL`. */
+  /** Runnable without paying: the flare (`FREE_PROTOCOL`) and the morning stretch. */
   readonly free: boolean;
 };
 
 /**
- * The flare protocol is free, and it is the only one.
+ * The flare protocol is free. The morning stretch is the other free one — the
+ * paywall promises it stays free after access ends (`offer.freeLine`).
  *
  * Not generosity. The moment somebody's foot is bad is the moment they are
  * most likely to delete the app, and the moment real help buys the most trust.
@@ -162,7 +163,9 @@ export const PROTOCOLS: readonly Protocol[] = [
     accent: 'amber',
     titleKey: 'quick.morning.title',
     cueKey: 'quick.morning.cue',
-    free: false,
+    // Free, and the paywall says so (`offer.freeLine`): the one routine that
+    // helps most should never be behind the price.
+    free: true,
     steps: [
       // One entry per foot rather than one entry switching at half. The switch
       // is the point of the protocol, not an aside inside a longer move, and a

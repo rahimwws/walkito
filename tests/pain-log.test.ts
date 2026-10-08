@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, test } from 'bun:test';
 
 import {
+  firstStepOn,
   logPain,
   painEntriesOn,
   painLatestOn,
@@ -95,5 +96,28 @@ describe('logs written before check-ins were a list', () => {
     expect(painOn(DAY)).toBeNull();
     expect(painLatestOn(DAY)).toBeNull();
     expect(painEntriesOn(DAY)).toEqual([]);
+  });
+});
+
+/**
+ * First steps and the rest of the day.
+ *
+ * Only a check-in made before noon is a first-step reading; it is the one the
+ * goals and the weekly means read. An afternoon answer stays the day's.
+ */
+describe('first-step readings', () => {
+  const at = (hour: number) => new Date(2026, 8, 22, hour, 0).getTime();
+
+  test('a morning check-in is the first-step reading', () => {
+    logPain(DAY, 5, [], at(8));
+    logPain(DAY, 2, [], at(18));
+    expect(firstStepOn(DAY)).toBe(5);
+  });
+
+  test('a day answered only after noon has no first-step reading', () => {
+    logPain(DAY, 6, [], at(15));
+    expect(firstStepOn(DAY)).toBeNull();
+    // It is still today's pain for everything that asks how the foot is now.
+    expect(painLatestOn(DAY)).toBe(6);
   });
 });

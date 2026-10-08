@@ -159,6 +159,7 @@ export function ProtocolSheet({ protocol, onClose }: Props) {
             day={day}
             playlist={playlist}
             cue={t(protocol.cueKey)}
+            free={protocol.free}
             onBack={close}
             // A finished routine counts for the streak and is kept as a session
             // of its own — `library`, not `plan`, so today's plan session stays

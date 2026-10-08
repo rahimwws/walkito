@@ -126,10 +126,10 @@ export const OFFER_ES = {
   'widgets.retestGoal.stronger': 'Querías ser más fuerte. Aquí es donde se nota primero.',
   'widgets.retestGoal.injuryfree': 'Querías evitar lesiones. Un pie que se mide más fuerte es más difícil de lesionar.',
 
-  'widgets.retestGoal.flatfeet': 'Viniste a poner tus pies planos bajo control. Un arco más fuerte y un equilibrio más estable es donde se nota.',
+  'widgets.retestGoal.flatfeet': 'Viniste por tus pies planos. El arco sostenido y un equilibrio más estable es donde se nota el trabajo.',
   'widgets.retestGoal.ankles': 'Querías tobillos más estables. El equilibrio es donde se nota primero.',
   'widgets.retestGoal.jump': 'Querías saltar más alto. Una pantorrilla fuerte es el muelle detrás del salto.',
-  'widgets.retestGoal.allday': 'Querías aguantar el día de pie. Un arco fuerte es lo que sostiene hora tras hora.',
+  'widgets.retestGoal.allday': 'Querías aguantar el día de pie. Aquí se entrenan los músculos que sostienen tu arco.',
   'widgets.retestGoal.comeback': 'Vuelves tras una lesión. La diferencia entre tus piernas es la cifra a seguir.',
   'widgets.retestGoal.steady': 'Querías caminar con seguridad. El equilibrio y un pie fuerte son cómo se siente.',
   // ── Session player: the counter line ─────────────────────────────────────

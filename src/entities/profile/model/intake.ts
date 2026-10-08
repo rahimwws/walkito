@@ -32,6 +32,27 @@ export type Intake = {
   weightKg: number | null;
   shoe: { size: number; unit: 'eu' | 'us' } | null;
   watch: string | null;
+  /** What keeps them on their feet: `running`, `feet` (a standing job),
+   * `both` or `walking`. Optional: intakes written before it was asked. */
+  role?: string | null;
+  /** How long it has been like this: `weeks`, `months`, `year` or `longer`. */
+  painDuration?: string | null;
+  /** The first steps out of bed this morning, 0–10. Also logged as day one's
+   * check-in, so the progress chart starts from it. */
+  morningPain?: number | null;
+  /** The safety answers that change the plan, `none` when none applied. */
+  safety?: readonly string[];
+  /** What they have already tried for it. */
+  tried?: readonly string[];
+  /** The everyday moment the session is tied to (`wake`, `coffee`, `shift`, `bed`). */
+  habit?: string | null;
+  /** The 30-second check, when it ran: arch on the big toe lift, and seconds
+   * on one leg per side. */
+  miniTest?: {
+    arch: 'yes' | 'no' | 'unsure' | null;
+    balanceLeft: number | null;
+    balanceRight: number | null;
+  } | null;
   /** When the flow finished, epoch ms. */
   completedAt: number;
 };

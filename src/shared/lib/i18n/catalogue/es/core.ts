@@ -61,6 +61,11 @@ export const CORE_ES = {
   'settings.footBoth': 'Los dos',
   'settings.whereItHurts': 'Dónde duele',
   'settings.whereItHurtsNone': 'Nada marcado',
+  'settings.sound.title': 'Sonidos de la sesión',
+  'settings.sound.tempo': 'Sonidos de ritmo',
+  'settings.sound.tempoHint': 'Un pulso para las repeticiones lentas, para seguir el ritmo sin mirar.',
+  'settings.sound.voice': 'Cuenta en voz alta',
+  'settings.sound.voiceHint': 'Dice «arriba, dos, tres, mantén, abajo» en vez de tonos.',
   'settings.equipment': 'Lo que tengo en casa',
   'settings.equipment.step': 'Un escalón',
   'settings.equipment.band': 'Banda elástica',
@@ -74,8 +79,7 @@ export const CORE_ES = {
   'settings.lastSync': 'Última sincronización: {time}',
   'settings.lastSyncNever': 'Aún sin sincronizar',
   'settings.reminder': 'Hora del recordatorio',
-  'settings.disclaimer':
-    'Walkito es una ayuda para entrenar, no un consejo médico, y no diagnostica ni trata ninguna afección. Si el dolor es agudo, empeora o viene con hinchazón, entumecimiento o fiebre, para y consulta a un médico.',
+  'settings.disclaimer': 'Walkito no es un producto sanitario y no diagnostica, trata, cura ni previene ninguna afección. Si el dolor es agudo, empeora o viene con hinchazón, entumecimiento o fiebre, para y consulta a un médico.',
 
   // ── Streak ───────────────────────────────────────────────────────────────
   'streak.title': { one: 'Racha de {count} día', other: 'Racha de {count} días' },

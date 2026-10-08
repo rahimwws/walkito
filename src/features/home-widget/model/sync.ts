@@ -3,7 +3,7 @@ import { Directory, File } from 'expo-file-system';
 import * as Linking from 'expo-linking';
 import { AppState, Platform } from 'react-native';
 
-import { currentDay, logFor, logPain, settleOffset, weekPlan } from '@/entities/program';
+import { FIRST_STEP_CUTOFF_HOUR, currentDay, logFor, logPain, settleOffset, weekPlan } from '@/entities/program';
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 
@@ -155,6 +155,13 @@ export async function importWidgetAnswers(): Promise<boolean> {
   return wrote;
 }
 
+/** Local noon on the day of `now` — when the check-in question changes. */
+function noonOf(now: number): number {
+  const date = new Date(now);
+  date.setHours(FIRST_STEP_CUTOFF_HOUR, 0, 0, 0);
+  return date.getTime();
+}
+
 /** The next local midnight. `setHours(24)` rather than adding a day's worth of
  * milliseconds, so a daylight-saving change does not move it off the hour. */
 function nextMidnight(now: number): number {
@@ -192,10 +199,18 @@ export async function refreshWidget(now: number = Date.now()): Promise<void> {
   const entries: { date: Date; props: DailyWidgetProps }[] = [
     { date: new Date(now), props: compact(buildWidgetProps(now, shared, url, links, plan)) },
   ];
+  // Noon turns the morning question ("First steps this morning?") into the
+  // day's ("How's the foot today?"), so every day gets a second entry there.
+  const todayNoon = noonOf(now);
+  if (now < todayNoon) {
+    entries.push({ date: new Date(todayNoon), props: compact(buildWidgetProps(todayNoon, shared, url, links, plan)) });
+  }
   let midnight = nextMidnight(now);
   for (let i = 0; i < FORECAST_DAYS; i += 1) {
     // A second past midnight, so the forecast is built for the new date.
     entries.push({ date: new Date(midnight), props: compact(buildWidgetProps(midnight + 1000, shared, url, links, plan, true)) });
+    const noon = noonOf(midnight + 1000);
+    entries.push({ date: new Date(noon), props: compact(buildWidgetProps(noon, shared, url, links, plan, true)) });
     midnight = nextMidnight(midnight + 1000);
   }
   // After a week unopened, the "open the app" face rather than the last

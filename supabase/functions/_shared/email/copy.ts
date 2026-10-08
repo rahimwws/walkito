@@ -1,8 +1,14 @@
 import { three, two } from './plural.ts';
-import type { GoalType, Locale, Metric } from './types.ts';
+import { DE } from './copy-de.ts';
+import { FR } from './copy-fr.ts';
+import { IT } from './copy-it.ts';
+import { PT } from './copy-pt.ts';
+import { asLocale, type GoalType, type Locale, type Metric } from './types.ts';
 
 /**
- * Every word an email can say, in English, Russian and Spanish.
+ * Every word an email can say, in English, Russian and Spanish here, and in
+ * Portuguese, French, German and Italian in `copy-pt.ts`, `copy-fr.ts`,
+ * `copy-de.ts` and `copy-it.ts`.
  *
  * Three rules hold across all of it, and `tests/email-copy.test.ts` checks each
  * one against every email in every language:
@@ -136,7 +142,7 @@ const EN: Copy = {
   },
   goalTitle: {
     pain_free_mornings: 'easier mornings',
-    arch_hold: 'stronger arch',
+    arch_hold: 'arch hold',
     calf_raises: 'stronger calves',
     balance: 'better balance',
     symmetry: 'even feet',
@@ -294,7 +300,7 @@ const RU: Copy = {
   },
   goalTitle: {
     pain_free_mornings: 'лёгкие утра',
-    arch_hold: 'сильный свод',
+    arch_hold: 'удержание свода',
     calf_raises: 'сильные икры',
     balance: 'лучше баланс',
     symmetry: 'ровные стопы',
@@ -517,7 +523,7 @@ const ES: Copy = {
   },
   goalTitle: {
     pain_free_mornings: 'mañanas más fáciles',
-    arch_hold: 'arco más fuerte',
+    arch_hold: 'arco sostenido',
     calf_raises: 'pantorrillas más fuertes',
     balance: 'mejor equilibrio',
     symmetry: 'pies parejos',
@@ -681,9 +687,9 @@ const ES: Copy = {
   },
 };
 
-export const COPY: Readonly<Record<Locale, Copy>> = { en: EN, ru: RU, es: ES };
+export const COPY: Readonly<Record<Locale, Copy>> = { en: EN, ru: RU, es: ES, pt: PT, fr: FR, de: DE, it: IT };
 
 /** Anything unrecognised is English: a whole email in one language, never a mix. */
 export function copyFor(locale: string | null | undefined): Copy {
-  return locale === 'ru' || locale === 'es' ? COPY[locale] : COPY.en;
+  return COPY[asLocale(locale)];
 }

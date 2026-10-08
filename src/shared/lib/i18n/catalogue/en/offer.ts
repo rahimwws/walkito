@@ -180,10 +180,10 @@ export const OFFER_EN = {
   'widgets.retestGoal.stronger': 'You wanted to get stronger. This is where it shows first.',
   'widgets.retestGoal.injuryfree': 'You wanted to stay injury-free. A foot that tests stronger is harder to hurt.',
 
-  'widgets.retestGoal.flatfeet': 'You came here to get your flat feet under control. A stronger arch and steadier balance are how that shows.',
+  'widgets.retestGoal.flatfeet': 'You came here for your flat feet. The arch hold and steadier balance are where the training shows.',
   'widgets.retestGoal.ankles': 'You wanted steadier ankles. Balance is where that shows first.',
   'widgets.retestGoal.jump': 'You wanted to jump higher. A stronger calf is the spring behind it.',
-  'widgets.retestGoal.allday': 'You wanted to get through the day on your feet. A stronger arch is what holds up hour after hour.',
+  'widgets.retestGoal.allday': 'You wanted to get through the day on your feet. The muscles that support your arch are what this trains.',
   'widgets.retestGoal.comeback': 'You came back from an injury. The gap between your legs is the number to watch.',
   'widgets.retestGoal.steady': 'You wanted to walk with confidence. Balance and a strong foot are how that feels.',
   // ── Session player: the counter line ─────────────────────────────────────

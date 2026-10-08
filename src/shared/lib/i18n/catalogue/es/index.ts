@@ -5,6 +5,7 @@ import { EXERCISES_ES } from './exercises';
 import { HOME_ES } from './home';
 import { NOTIFICATIONS_ES } from './notifications';
 import { OFFER_ES } from './offer';
+import { JOURNEY_ES } from './journey';
 import { ONBOARDING_ES } from './onboarding';
 import { PAGES_ES } from './pages';
 import { PROFILE_ES } from './profile';
@@ -26,6 +27,7 @@ import { UPDATE_ES } from './update';
 export const es: CatalogueFor<'es'> = {
   ...CORE_ES,
   ...ONBOARDING_ES,
+  ...JOURNEY_ES,
   ...HOME_ES,
   ...PROGRESS_ES,
   ...QUICK_ES,
