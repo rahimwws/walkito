@@ -59,6 +59,8 @@ export const metadata: Metadata = {
   // while there was no listing; a banner pointing at a guessed id is a dead
   // strip on every iPhone that loads the page.
   ...(smartBannerContent('smart-banner') ? { other: { 'apple-itunes-app': smartBannerContent('smart-banner')! } } : {}),
+  // Pinterest website claim for the @walkitoapp business account.
+  verification: { other: { 'p:domain_verify': 'f6ce0c7ac5114f3d1dc94de31e88996e' } },
 };
 
 export { viewport } from '@/components/RootDocument';
