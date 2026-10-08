@@ -118,7 +118,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
       nextWeek: 'Next week',
       nextSummary: '3 sessions · focus: stronger arch',
       nextHow:
-        'A new week is planned every Sunday evening from how this one went - your check-ins, your tests and how hard sessions felt.',
+        'A new week is planned every Sunday evening from how this one went: your check-ins, your tests and how hard sessions felt.',
       kinds: { mobility: 'Mobility', strength: 'Strength', balance: 'Balance' },
     },
   },
@@ -168,7 +168,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
       nextWeek: 'Следующая неделя',
       nextSummary: '3 занятия · фокус: сильный свод',
       nextHow:
-        'Каждое воскресенье вечером план на новую неделю собирается заново - по вашим отметкам боли, тестам и тому, насколько тяжело шли занятия.',
+        'Каждое воскресенье вечером план на новую неделю собирается заново: по вашим отметкам боли, тестам и тому, насколько тяжело шли занятия.',
       kinds: { mobility: 'Подвижность', strength: 'Сила', balance: 'Баланс' },
     },
   },
@@ -268,7 +268,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
       nextWeek: 'Próxima semana',
       nextSummary: '3 sessões · foco: arco mais forte',
       nextHow:
-        'Toda noite de domingo uma semana nova é planejada a partir de como foi esta - seus registros, seus testes e o quanto as sessões pareceram pesadas.',
+        'Toda noite de domingo uma semana nova é planejada a partir de como foi esta: seus registros, seus testes e o quanto as sessões pareceram pesadas.',
       kinds: { mobility: 'Mobilidade', strength: 'Força', balance: 'Equilíbrio' },
     },
   },
@@ -318,7 +318,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
       nextWeek: 'La semaine prochaine',
       nextSummary: '3 séances · objectif : une voûte plus forte',
       nextHow:
-        'Chaque dimanche soir, une nouvelle semaine est planifiée d’après celle-ci - tes bilans, tes tests et la difficulté ressentie des séances.',
+        'Chaque dimanche soir, une nouvelle semaine est planifiée d’après celle-ci : tes bilans, tes tests et la difficulté ressentie des séances.',
       kinds: { mobility: 'Mobilité', strength: 'Force', balance: 'Équilibre' },
     },
   },
@@ -368,7 +368,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
       nextWeek: 'La prossima settimana',
       nextSummary: '3 sessioni · obiettivo: arco più forte',
       nextHow:
-        'Ogni domenica sera una nuova settimana viene pianificata in base a com’è andata questa - i tuoi check-in, i tuoi test e quanto ti sono sembrate dure le sessioni.',
+        'Ogni domenica sera una nuova settimana viene pianificata in base a com’è andata questa: i tuoi check-in, i tuoi test e quanto ti sono sembrate dure le sessioni.',
       kinds: { mobility: 'Mobilità', strength: 'Forza', balance: 'Equilibrio' },
     },
   },
@@ -420,7 +420,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
       // German also lowercases the noun; the noun keeps its capital here.
       nextSummary: '3 Einheiten · Fokus: kräftigeres Gewölbe',
       nextHow:
-        'Jeden Sonntagabend wird eine neue Woche geplant, danach, wie diese lief - deine Check-ins, deine Tests und wie anstrengend sich die Einheiten angefühlt haben.',
+        'Jeden Sonntagabend wird eine neue Woche geplant, danach, wie diese lief: deine Check-ins, deine Tests und wie anstrengend sich die Einheiten angefühlt haben.',
       kinds: { mobility: 'Beweglichkeit', strength: 'Kraft', balance: 'Balance' },
     },
   },
