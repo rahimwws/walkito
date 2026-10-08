@@ -177,6 +177,7 @@ export const ACHILLES_EN: Guide = {
     },
     {
       h2: 'Is your pain mid-tendon or at the heel bone, and why it changes the exercise?',
+      figure: { id: 'achilles', caption: 'Achilles tendon pain is usually in one of two places: the middle of the tendon, or where it attaches to the heel bone.', alt: 'Side view of a foot and ankle showing the Achilles tendon running from the calf to the back of the heel bone, with a red area in the middle of the tendon.' },
       keyFact: 'In a pilot study of 27 people with insertional Achilles pain, floor-level-only eccentric loading that avoided deep dorsiflexion gave good results in 67% of cases (Jonsson and colleagues, 2008).',
       paragraphs: [
         'Mid-portion Achilles tendinopathy sits in the body of the tendon, typically 2 to 6 centimeters above the heel bone. Standard eccentric drops and heavy slow resistance have their best evidence here. Heel drops over a step edge are appropriate for mid-portion pain.',

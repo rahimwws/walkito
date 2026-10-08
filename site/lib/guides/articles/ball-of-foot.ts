@@ -28,6 +28,7 @@ export const BALL_OF_FOOT_EN: Guide = {
   sections: [
     {
       h2: 'What is the ball of the foot?',
+      figure: { id: 'ball', caption: 'The ball of the foot sits under the ends of the metatarsal bones. Metatarsalgia pain is often under the second and third.', alt: 'Top view of the foot bones with the ends of the second, third and fourth metatarsal bones highlighted in red.' },
       paragraphs: [
         'The ball of the foot is the padded area on the sole just behind the toes. Under it sit the heads of the five metatarsal bones, long bones that run from the midfoot to the base of each toe. When you walk, the ball of the foot bears roughly twice your body weight during the push-off phase.',
         'The muscles that curl and spread your toes are called the intrinsic foot muscles. They help share that load during push-off. When they weaken, or when the foot\'s structure shifts, more force lands on the metatarsal heads, and that is often where the pain starts.',

@@ -177,6 +177,7 @@ export const ACHILLES_ES: Guide = {
     },
     {
       h2: '¿Tu dolor está en la mitad del tendón o en el hueso del talón, y por qué eso cambia el ejercicio?',
+      figure: { id: 'achilles', caption: 'El dolor del tendón de Aquiles suele estar en uno de dos sitios: la parte media del tendón o donde se une al hueso del talón.', alt: 'Vista lateral de un pie y un tobillo con el tendón de Aquiles desde la pantorrilla hasta la parte de atrás del hueso del talón, y una zona roja en la parte media del tendón.' },
       keyFact: 'En un estudio piloto de 27\u00A0personas con dolor insercional del Aquiles, la carga excéntrica a nivel del piso sin dorsiflexión profunda dio buenos resultados en el 67\u00A0% de los casos (Jonsson y colegas, 2008).',
       paragraphs: [
         'La tendinopatía de Aquiles en la porción media está en el cuerpo del tendón, normalmente de 2 a 6\u00A0centímetros por encima del hueso del talón. Los excéntricos clásicos y la resistencia pesada y lenta tienen su mejor evidencia aquí. Los descensos de talón desde la orilla de un escalón son adecuados para el dolor en la porción media.',

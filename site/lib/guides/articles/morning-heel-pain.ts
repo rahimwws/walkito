@@ -27,6 +27,7 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
   sections: [
     {
       h2: 'Why is heel pain worse in the morning?',
+      figure: { id: 'heel-side', caption: 'Side view: the plantar fascia attaches under the heel bone, where plantar fasciitis pain usually starts.', alt: 'Inner side view of a foot with see-through skin showing the heel bone, the plantar fascia running under the arch, and a red area under the heel where pain usually starts.' },
       paragraphs: [
         'The plantar fascia, the thick band of tissue that runs from your heel bone to your toes, stiffens while you sleep. Your foot usually points downward at rest, which lets the fascia shorten. When you stand up and flatten the foot under your full weight, that shortened tissue stretches suddenly. The result is a sharp pull at the inside of the heel.',
         'The 2023 heel pain guideline describes this as pain "most noticeable with weight bearing first thing in the morning or after a period of rest." The same pattern happens after you sit for a while and then stand, for the same reason: the tissue shortens at rest, then loads abruptly.',

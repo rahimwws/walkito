@@ -69,6 +69,7 @@ export const FLAT_FEET_FR: Guide = {
   sections: [
     {
       h2: 'Comment savoir si vos pieds plats sont souples ou rigides\u00A0?',
+      figure: { id: 'arches', caption: 'Les mêmes os du pied avec un pied plat, une voûte normale et une voûte haute, vus du côté intérieur.', alt: 'Trois pieds vus du côté intérieur sur un sol plat\u00A0: un pied plat dont la voûte repose au sol, une voûte normale avec un petit espace dessous et une voûte haute avec un grand espace sous le milieu du pied.' },
       paragraphs: [
         'Une vérification de quelques secondes suffit pour savoir si vos pieds plats sont souples ou rigides. C’est important, car l’essai de cette page portait sur des pieds plats souples, et l’exercice ne changera pas la forme d’un pied rigide. La revue de 2024 regroupait des études sur les pieds plats en général. Walkito ne vérifie pas votre type de pied, cette vérification vous revient donc\u00A0:',
       ],
@@ -330,6 +331,7 @@ export const HEEL_PAIN_FR: Guide = {
   sections: [
     {
       h2: 'Les exercices pour la fasciite plantaire, avec les doses de départ',
+      figure: { id: 'plantar-fascia', caption: 'Le fascia plantaire va de l’os du talon jusqu’aux orteils. La douleur de la fasciite plantaire commence souvent là où il s’attache au talon.', alt: 'Plante d’un pied montrant le fascia plantaire en bandes blanches qui s’étalent de l’os du talon jusqu’à la base des orteils, avec une tache rouge sur le talon là où la douleur commence souvent.' },
       paragraphs: [
         'Dans Walkito, les exercices pour la fasciite plantaire sont des étirements du fascia plantaire et du mollet, un renforcement du mollet qui progresse par petites étapes, et un massage du pied avec une balle. Ce sont les doses de départ de Walkito, pas une prescription. Un résumé sur une page est disponible dans les [fiches d’exercices à imprimer](/printable-exercise-sheets/) (en anglais). [Comment ces guides sont écrits](/fr/a-propos/).',
         'L’ordre compte. Tant que la douleur est votre objectif, Walkito garde le travail du mollet en douceur\u00A0: d’abord les montées sur pointes assis, puis les montées sur pointes sur les deux pieds, puis le maintien sur pointes, une étape à la fois. Vous montez d’une étape quand les deux dernières séances avec l’exercice vous ont paru faciles. La [montée sur pointes avec serviette](/exercises/towel-heel-raise/) (en anglais) sollicite le plus le fascia plantaire, elle n’arrive donc qu’une fois la douleur du matin redescendue, quand l’objectif passe à la force du mollet. Si un exercice fait monter votre douleur à **6/10 ou plus**, arrêtez pour aujourd’hui. C’est le seuil où Walkito met fin à une séance.',

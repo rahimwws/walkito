@@ -34,6 +34,7 @@ export const HIGH_ARCHES_ES: Guide = {
   sections: [
     {
       h2: '¿Qué es el pie cavo y por qué causa dolor?',
+      figure: { id: 'arches', caption: 'Los mismos huesos del pie con pie plano, arco típico y arco alto, vistos desde el lado interior.', alt: 'Tres pies vistos desde el lado interior sobre un suelo plano: un pie plano con el arco apoyado en el suelo, un arco típico con un pequeño espacio debajo y un arco alto con un gran espacio bajo el centro del pie.' },
       paragraphs: [
         'El pie cavo es un pie con un arco longitudinal medial excesivamente alto. El arco se mantiene alto incluso cuando el pie está cargando peso. A diferencia de un pie plano, que colapsa bajo la carga y reparte el impacto sobre una superficie amplia, un pie de arco alto es rígido y concentra la fuerza en una superficie más pequeña: el talón y la parte delantera del pie.',
         'La fascia plantar en un pie cavo suele ser corta y tensa, lo que mantiene el arco en su posición alta pero reduce la capacidad del pie de flexionarse y absorber el impacto. La parte delantera del pie muchas veces queda más baja que la trasera (un primer metatarsiano plantarflexionado), y los dedos pueden engarrotarse. Estos cambios mueven la presión hacia las cabezas de los metatarsianos y el talón, y la alejan del mediopié.',

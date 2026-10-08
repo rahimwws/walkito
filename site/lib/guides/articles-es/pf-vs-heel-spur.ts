@@ -36,6 +36,7 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
   sections: [
     {
       h2: '¿Un espolón calcáneo es lo mismo que la fascitis plantar?',
+      figure: { id: 'heel-side', caption: 'Un espolón, cuando existe, se forma en la parte inferior del hueso del talón, cerca de donde se une la fascia plantar.', alt: 'Vista lateral interior de un pie con la piel transparente que muestra el hueso del talón, la fascia plantar bajo el arco y una zona roja bajo el talón donde suele empezar el dolor.' },
       paragraphs: [
         'Un espolón calcáneo y la fascitis plantar no son lo mismo. La fascitis plantar es un problema de tejido blando: la fascia plantar, la banda gruesa que va del hueso del talón a los dedos, se irrita, generalmente donde se une al hueso. Un espolón calcáneo es un crecimiento de hueso en la parte inferior del hueso del talón (el calcáneo). Los dos suelen coexistir, pero cada uno puede aparecer sin el otro.',
         'La fascitis plantar provoca el dolor agudo y punzante que la gente describe en la parte de abajo del talón, sobre todo en los primeros pasos de la mañana o después de estar sentado un rato. La guía de 2023 la define como un dolor «más notorio al apoyar el peso a primera hora de la mañana o después de un rato de reposo». Un espolón calcáneo, en cambio, es un hallazgo estructural en una radiografía. Puede o no producir síntomas por sí solo.',

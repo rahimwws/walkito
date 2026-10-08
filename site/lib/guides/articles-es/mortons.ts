@@ -33,6 +33,7 @@ export const MORTONS_ES: Guide = {
   sections: [
     {
       h2: '¿Qué es el neuroma de Morton?',
+      figure: { id: 'mortons', caption: 'El neuroma de Morton es un engrosamiento del nervio entre las cabezas de los metatarsianos, con más frecuencia entre el tercer y el cuarto dedo.', alt: 'Vista superior de los huesos del pie con nervios amarillos hacia los dedos y un óvalo hinchado en el nervio entre el tercer y el cuarto dedo.' },
       paragraphs: [
         'El neuroma de Morton es un engrosamiento benigno del nervio plantar digital común, normalmente en el tercer espacio intermetatarsiano (entre el tercer y el cuarto dedo). Con menos frecuencia ocurre en el segundo espacio. No es cáncer y no es un crecimiento en el hueso.',
         'El nervio pasa debajo del ligamento metatarsal transverso, una banda de tejido que mantiene juntas las cabezas de los metatarsianos. Cuando las cabezas se comprimen, el nervio queda atrapado. Con el tiempo, la vaina del nervio se engrosa y el nervio mismo puede agrandarse. El resultado es dolor, ardor, hormigueo o entumecimiento en el espacio entre los dedos, que se irradia hacia los dedos afectados.',

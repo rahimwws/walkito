@@ -32,6 +32,7 @@ export const BALL_OF_FOOT_ES: Guide = {
   sections: [
     {
       h2: '¿Qué es la planta delantera del pie?',
+      figure: { id: 'ball', caption: 'La parte delantera de la planta está bajo el extremo de los metatarsianos. El dolor de la metatarsalgia suele estar bajo el segundo y el tercero.', alt: 'Vista superior de los huesos del pie con el extremo del segundo, tercer y cuarto metatarsiano resaltado en rojo.' },
       paragraphs: [
         'Es la zona acolchada de la planta, justo detrás de los dedos. Debajo están las cabezas de los cinco metatarsianos, huesos largos que van desde la mitad del pie hasta la base de cada dedo. Al caminar, esta zona soporta más o menos el doble de tu peso en el momento en que te impulsas.',
         'Los músculos que doblan y separan los dedos se llaman músculos intrínsecos del pie. Ayudan a repartir esa carga cuando te impulsas. Cuando se debilitan, o cuando cambia la estructura del pie, cae más fuerza sobre las cabezas de los metatarsianos, y muchas veces ahí empieza el dolor.',

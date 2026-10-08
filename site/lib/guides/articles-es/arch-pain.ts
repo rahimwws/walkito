@@ -160,6 +160,7 @@ export const ARCH_PAIN_ES: Guide = {
     },
     {
       h2: '¿El tipo de pie afecta el dolor de arco?',
+      figure: { id: 'arches', caption: 'Los mismos huesos del pie con pie plano, arco típico y arco alto, vistos desde el lado interior.', alt: 'Tres pies vistos desde el lado interior sobre un suelo plano: un pie plano con el arco apoyado en el suelo, un arco típico con un pequeño espacio debajo y un arco alto con un gran espacio bajo el centro del pie.' },
       paragraphs: [
         'Sí. Tanto el pie plano como el pie cavo cambian la forma en que la fuerza viaja por el pie, pero en sentidos opuestos.',
         'Un pie plano deja que el arco colapse bajo la carga, estirando la fascia plantar y el tendón tibial posterior más allá de su rango cómodo. Los ejercicios para pie plano se enfocan en fortalecer los músculos del arco (pie corto, separar los dedos, inversión con banda) y la cadera (abducción de cadera), porque una cadera que cede durante el apoyo en una pierna empuja el arco hacia adentro. Mira [ejercicios para pie plano](/es/ejercicios-pie-plano/).',

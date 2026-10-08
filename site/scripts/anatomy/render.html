@@ -1,0 +1,177 @@
+<!doctype html>
+<!--
+  Renders the labelled anatomy figures. Serve this folder (with figures.mjs and
+  src/) over HTTP, open the page, then call `await render(id, lang)` from the
+  console or a browser driver: it returns { w, h, big, small } with WebP data
+  URLs for public/anatomy/<id>.<lang>.webp and <id>.<lang>@600w.webp.
+  `preview(id, lang)` draws the result on the page instead.
+-->
+<html>
+<body style="margin:0;background:#ddd">
+<div id="out"></div>
+<script type="module">
+import { FIGURES, TEXT, OUT_W, FONT } from './figures.mjs';
+
+const INK = '#2f2f33';
+const LINE = '#4a4a50';
+const cache = {};
+
+function load(src) {
+  if (!cache[src]) {
+    cache[src] = new Promise((ok, bad) => {
+      const img = new Image();
+      img.onload = () => ok(img);
+      img.onerror = bad;
+      img.src = 'src/' + src;
+    });
+  }
+  return cache[src];
+}
+
+function wrap(ctx, text, max) {
+  const words = text.split(' ');
+  const lines = [];
+  let line = '';
+  for (const w of words) {
+    const next = line ? line + ' ' + w : w;
+    if (line && ctx.measureText(next).width > max) {
+      lines.push(line);
+      line = w;
+    } else line = next;
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+
+async function draw(id, lang) {
+  const fig = FIGURES[id];
+  const text = TEXT[id][lang];
+  if (!text) throw new Error(`no ${lang} text for ${id}`);
+  const img = await load(fig.src);
+  const [x0, y0, x1, y1] = fig.crop;
+  const s = OUT_W / (x1 - x0);
+  const W = OUT_W;
+  const H = Math.round((y1 - y0) * s);
+  const c = document.createElement('canvas');
+  c.width = W;
+  c.height = H;
+  const ctx = c.getContext('2d');
+
+  // Background: the source's own corner colour (white for the SVGs).
+  const probe = document.createElement('canvas');
+  probe.width = probe.height = 1000;
+  const pctx = probe.getContext('2d');
+  pctx.drawImage(img, 0, 0, 1000, 1000);
+  const px = pctx.getImageData(4, 4, 1, 1).data;
+  ctx.fillStyle = px[3] < 10 ? '#fff' : `rgb(${px[0]},${px[1]},${px[2]})`;
+  ctx.fillRect(0, 0, W, H);
+
+  ctx.setTransform(s, 0, 0, s, -x0 * s, -y0 * s);
+  ctx.drawImage(img, 0, 0, 1000, 1000);
+
+  for (const [gx, gy, r] of fig.glow ?? []) {
+    const g = ctx.createRadialGradient(gx, gy, 0, gx, gy, r);
+    g.addColorStop(0, 'rgba(226, 70, 96, 0.55)');
+    g.addColorStop(1, 'rgba(226, 70, 96, 0)');
+    ctx.fillStyle = g;
+    ctx.beginPath();
+    ctx.arc(gx, gy, r, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  const fs = FONT / s;
+  const lh = fs * 1.18;
+  ctx.font = `600 ${fs}px "Helvetica Neue", Helvetica, Arial, sans-serif`;
+  ctx.textBaseline = 'alphabetic';
+  const problems = [];
+
+  for (const L of fig.labels) {
+    const str = text[L.k];
+    if (str == null) throw new Error(`missing ${lang}.${L.k} for ${id}`);
+    const lines = wrap(ctx, str, L.w);
+    const tw = Math.max(...lines.map((l) => ctx.measureText(l).width));
+    const [px0, py0] = L.p;
+    let left;
+    if (L.align === 'left') left = px0;
+    else if (L.align === 'right') left = px0 - tw;
+    else left = px0 - tw / 2;
+    if (left < x0 + 6 || left + tw > x1 - 6) problems.push(`${id}.${lang}.${L.k} runs off the side`);
+    if (tw > L.w + 1) problems.push(`${id}.${lang}.${L.k}: a word wider than ${L.w}`);
+    const bottom = py0 + lh * lines.length;
+    if (bottom > y1 - 4) problems.push(`${id}.${lang}.${L.k} runs off the bottom`);
+
+    // Soft white backing so text stays readable where it crosses the drawing.
+    ctx.fillStyle = 'rgba(255,255,255,0.72)';
+    lines.forEach((l, i) => {
+      const lw = ctx.measureText(l).width;
+      const lx = L.align === 'left' ? left : L.align === 'right' ? px0 - lw : px0 - lw / 2;
+      ctx.fillRect(lx - fs * 0.15, py0 + lh * i + fs * 0.05, lw + fs * 0.3, lh);
+    });
+    ctx.fillStyle = INK;
+    lines.forEach((l, i) => {
+      const lw = ctx.measureText(l).width;
+      const lx = L.align === 'left' ? left : L.align === 'right' ? px0 - lw : px0 - lw / 2;
+      ctx.fillText(l, lx, py0 + lh * i + fs);
+    });
+    if (L.plain) continue;
+
+    const uy = bottom + fs * 0.12;
+    ctx.strokeStyle = LINE;
+    ctx.fillStyle = LINE;
+    ctx.lineWidth = 2.6 / s;
+    ctx.lineCap = 'round';
+    ctx.beginPath();
+    ctx.moveTo(left, uy);
+    ctx.lineTo(left + tw, uy);
+    const ends = [];
+    if (L.b) {
+      ends.push([left, L.a], [left + tw, L.b]);
+    } else {
+      const nearRight = L.a[0] > left + tw / 2;
+      ends.push([nearRight ? left + tw : left, L.a]);
+    }
+    for (const [ex, [ax, ay]] of ends) {
+      ctx.moveTo(ex, uy);
+      ctx.lineTo(ax, ay);
+    }
+    ctx.stroke();
+    for (const [, [ax, ay]] of ends) {
+      ctx.beginPath();
+      ctx.arc(ax, ay, 5.5 / s, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+  return { c, W, H, problems };
+}
+
+window.render = async (id, lang) => {
+  const { c, W, H, problems } = await draw(id, lang);
+  const small = document.createElement('canvas');
+  small.width = 600;
+  small.height = Math.round((H * 600) / W);
+  const sctx = small.getContext('2d');
+  sctx.imageSmoothingQuality = 'high';
+  sctx.drawImage(c, 0, 0, small.width, small.height);
+  return {
+    w: W,
+    h: H,
+    problems,
+    big: c.toDataURL('image/webp', 0.84),
+    small: small.toDataURL('image/webp', 0.84),
+  };
+};
+
+window.preview = async (id, lang, width = 600) => {
+  const { c, problems } = await draw(id, lang);
+  c.style.width = width + 'px';
+  c.style.display = 'block';
+  c.style.margin = '10px';
+  c.dataset.id = `${id}.${lang}`;
+  document.getElementById('out').append(c);
+  return problems;
+};
+window.FIGS = { FIGURES, TEXT };
+document.title = 'ready';
+</script>
+</body>
+</html>

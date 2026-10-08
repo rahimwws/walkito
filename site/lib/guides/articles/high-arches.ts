@@ -33,6 +33,7 @@ export const HIGH_ARCHES_EN: Guide = {
   sections: [
     {
       h2: 'What is pes cavus, and why does it cause foot pain?',
+      figure: { id: 'arches', caption: 'The same foot bones with a flat foot, a typical arch and a high arch, seen from the inner side.', alt: 'Three feet seen from the inner side on a flat floor: a flat foot whose arch rests on the floor, a typical arch with a small gap underneath, and a high arch with a large gap under the middle of the foot.' },
       paragraphs: [
         'Pes cavus is a foot with an excessively high medial longitudinal arch. The arch stays high even when the foot is bearing weight. Unlike a flat foot, which collapses under load and spreads impact across a wide area, a high-arched foot is rigid and concentrates force on a smaller surface: the heel and the ball of the foot.',
         'The plantar fascia in a cavus foot is typically short and tight, which holds the arch in its high position but reduces the foot\'s ability to flex and absorb shock. The forefoot often sits lower than the rearfoot (a plantarflexed first metatarsal), and the toes may claw. These changes shift pressure onto the metatarsal heads and the heel, and away from the midfoot.',

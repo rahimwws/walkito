@@ -27,6 +27,7 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
   sections: [
     {
       h2: '¿Por qué me duele el talón al levantarme?',
+      figure: { id: 'heel-side', caption: 'Vista lateral: la fascia plantar se une por debajo del hueso del talón, donde suele empezar el dolor de la fascitis plantar.', alt: 'Vista lateral interior de un pie con la piel transparente que muestra el hueso del talón, la fascia plantar bajo el arco y una zona roja bajo el talón donde suele empezar el dolor.' },
       paragraphs: [
         'La fascia plantar, la banda gruesa de tejido que va del hueso del talón a los dedos, se pone rígida mientras duermes. En reposo, el pie suele quedar apuntando hacia abajo, y eso deja que la fascia se acorte. Cuando te paras y el pie se aplana bajo todo tu peso, ese tejido acortado se estira de golpe. El resultado es un tirón agudo en la parte interna del talón.',
         'La guía de 2023 para el dolor de talón lo describe como un dolor «más notorio al apoyar el peso a primera hora de la mañana o después de un rato de reposo». Lo mismo pasa cuando estás sentado un rato y te paras, por la misma razón: el tejido se acorta en reposo y después recibe la carga de golpe.',

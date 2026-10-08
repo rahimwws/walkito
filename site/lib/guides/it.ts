@@ -70,6 +70,7 @@ export const FLAT_FEET_IT: Guide = {
   sections: [
     {
       h2: 'Come capire se il piede piatto è flessibile o rigido?',
+      figure: { id: 'arches', caption: 'Le stesse ossa del piede con piede piatto, arco normale e arco alto, viste dal lato interno.', alt: 'Tre piedi visti dal lato interno su un pavimento piano: un piede piatto con l’arco appoggiato a terra, un arco normale con un piccolo spazio sotto e un arco alto con un grande spazio sotto la parte centrale del piede.' },
       paragraphs: [
         'Puoi capire se il tuo piede piatto è flessibile o rigido con una verifica di pochi secondi. Conta perché lo studio di questa pagina riguardava il piede piatto flessibile, e l’esercizio non cambierà la forma di uno rigido. La revisione del 2024 ha messo insieme studi sul piede piatto in generale. Walkito non controlla il tipo di piede, quindi questa verifica tocca a te:',
       ],
@@ -331,6 +332,7 @@ export const HEEL_PAIN_IT: Guide = {
   sections: [
     {
       h2: 'Gli esercizi per la fascite plantare, con le dosi di partenza',
+      figure: { id: 'plantar-fascia', caption: 'La fascia plantare va dall’osso del tallone alle dita. Il dolore della fascite plantare di solito inizia dove si attacca al tallone.', alt: 'Pianta di un piede con la fascia plantare come fasce bianche che si aprono a ventaglio dall’osso del tallone alla base delle dita, e una macchia rossa sul tallone dove di solito inizia il dolore.' },
       paragraphs: [
         'Gli esercizi per la fascite plantare in Walkito sono allungamenti per la fascia plantare e il polpaccio, lavoro di forza per il polpaccio che sale a piccoli passi, e un massaggio con la pallina. Sono le dosi di partenza di Walkito, non una prescrizione. Un riassunto di una pagina è nelle [schede di esercizi da stampare](/printable-exercise-sheets/) (in inglese). [Come scriviamo queste guide](/it/chi-siamo/).',
         'L’ordine conta. Finché il dolore è il tuo obiettivo, Walkito tiene leggero il lavoro sul polpaccio: prima i sollevamenti sulle punte da seduto, poi quelli su due piedi, poi la tenuta sulle punte, un gradino alla volta. Sali di un gradino quando le ultime due sessioni con quell’esercizio ti sono sembrate facili. Il [sollevamento sulle punte con asciugamano](/exercises/towel-heel-raise/) (in inglese) carica di più la fascia plantare, quindi arriva solo quando il dolore del mattino è sceso e l’obiettivo passa alla forza del polpaccio. Se un esercizio porta il dolore a **6/10 o più**, fermati per oggi. È il punto in cui Walkito chiude una sessione.',

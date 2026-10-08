@@ -26,6 +26,7 @@ export const MORTONS_EN: Guide = {
   sections: [
     {
       h2: "What is Morton's neuroma?",
+      figure: { id: 'mortons', caption: 'Morton\'s neuroma is a thickened nerve between the metatarsal heads, most often between the third and fourth toes.', alt: 'Top view of the foot bones with yellow nerves running to the toes and a swollen oval on the nerve between the third and fourth toes.' },
       paragraphs: [
         "Morton's neuroma is a benign thickening of the common plantar digital nerve, usually in the third intermetatarsal space (between the third and fourth toes). Less often, it occurs in the second space. It is not cancer and it is not a growth on the bone.",
         'The nerve runs under the transverse metatarsal ligament, a band of tissue that holds the metatarsal heads together. When the heads compress, the nerve gets pinched. Over time, the nerve sheath thickens, and the nerve itself can become enlarged. The result is pain, burning, tingling, or numbness in the webspace that radiates into the affected toes.',

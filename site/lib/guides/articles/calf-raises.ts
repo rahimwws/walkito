@@ -151,6 +151,7 @@ export const CALF_RAISES_EN: Guide = {
     },
     {
       h2: 'Why does a tight calf matter for heel pain?',
+      figure: { id: 'calf', caption: 'The two calf muscles, the gastrocnemius and the soleus, join into the Achilles tendon, which attaches to the heel bone.', alt: 'Side and back views of a lower leg showing the gastrocnemius and soleus muscles narrowing into the Achilles tendon above the heel.' },
       keyFact: 'In a series of 254 people with plantar fasciitis, 52 to 60% had a contracture limited to the gastrocnemius, and another 23 to 30% had a combined gastrocnemius-soleus contracture (Patel and colleagues, 2011).',
       paragraphs: [
         'A tight calf pulls on the heel through the Achilles tendon, and the plantar fascia shares the load at the other end. When the ankle cannot bend enough, every step puts more strain on the fascia.',

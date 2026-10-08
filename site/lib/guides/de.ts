@@ -74,6 +74,7 @@ export const FLAT_FEET_DE: Guide = {
   sections: [
     {
       h2: 'Woran erkennst du, ob ein Plattfuß flexibel oder starr ist?',
+      figure: { id: 'arches', caption: 'Dieselben Fußknochen bei Plattfuß, normalem und hohem Gewölbe, von der Innenseite gesehen.', alt: 'Drei Füße von der Innenseite auf ebenem Boden: ein Plattfuß, dessen Gewölbe auf dem Boden aufliegt, ein normales Gewölbe mit kleinem Spalt darunter und ein hohes Gewölbe mit großem Spalt unter der Fußmitte.' },
       paragraphs: [
         'Ob dein Plattfuß flexibel oder starr ist, zeigt ein Check, der nur ein paar Sekunden dauert. Das ist wichtig, weil die Studie auf dieser Seite mit flexiblen Plattfüßen gemacht wurde, und Übungen die Form eines starren Plattfußes nicht verändern. Die Übersichtsarbeit von 2024 hat Studien zu Plattfüßen allgemein zusammengefasst. Walkito prüft deinen Fußtyp nicht, diesen Check machst also du:',
       ],
@@ -335,6 +336,7 @@ export const HEEL_PAIN_DE: Guide = {
   sections: [
     {
       h2: 'Die Übungen bei Plantarfasziitis, mit Startdosis',
+      figure: { id: 'plantar-fascia', caption: 'Die Plantarfaszie verläuft vom Fersenbein bis zu den Zehen. Der Schmerz bei Plantarfasziitis beginnt meist dort, wo sie an der Ferse ansetzt.', alt: 'Fußsohle mit der Plantarfaszie als weiße Bänder, die sich vom Fersenbein fächerförmig bis zu den Zehen ausbreiten, und einem roten Fleck an der Ferse, wo der Schmerz meist beginnt.' },
       paragraphs: [
         'Die Übungen bei Plantarfasziitis in Walkito sind Dehnungen für Plantarfaszie und Wade, Krafttraining für die Wade, das sich in kleinen Schritten steigert, und Fußrollen. Das sind die Startdosen von Walkito, keine Verordnung. Eine einseitige Zusammenfassung gibt es unter [Übungsblätter zum Ausdrucken](/printable-exercise-sheets/) (auf Englisch). [Wie diese Ratgeber entstehen](/de/ueber-walkito/).',
         'Die Reihenfolge zählt. Solange Schmerz dein Ziel ist, hält Walkito die Wadenarbeit sanft: zuerst Fersenheben im Sitzen, dann Fersenheben beidbeinig, dann Fersenheben mit Halten, eine Stufe nach der anderen. Du gehst eine Stufe höher, sobald sich die letzten zwei Einheiten damit leicht angefühlt haben. Das [Fersenheben mit Handtuch](/exercises/towel-heel-raise/) (auf Englisch) belastet die Plantarfaszie am stärksten, deshalb kommt es erst dazu, wenn der Morgenschmerz zurückgegangen ist und das Ziel zur Wadenkraft wechselt. Wenn eine Übung deinen Schmerz auf **6/10 oder mehr** bringt, hör für heute auf. An diesem Punkt beendet Walkito eine Einheit.',

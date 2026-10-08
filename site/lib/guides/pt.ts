@@ -70,6 +70,7 @@ export const FLAT_FEET_PT: Guide = {
   sections: [
     {
       h2: 'Como saber se o pé chato é flexível ou rígido?',
+      figure: { id: 'arches', caption: 'Os mesmos ossos do pé com pé chato, arco típico e arco alto, vistos pelo lado de dentro.', alt: 'Três pés vistos pelo lado de dentro sobre um chão plano: um pé chato com o arco apoiado no chão, um arco típico com um pequeno espaço embaixo e um arco alto com um grande espaço sob o meio do pé.' },
       paragraphs: [
         'Dá para saber se o seu pé chato é flexível ou rígido com um teste de poucos segundos. Isso importa porque o ensaio desta página foi feito com pé chato flexível, e o exercício não vai mudar o formato de um pé rígido. A revisão de 2024 juntou estudos sobre pé chato em geral. O Walkito não avalia o seu tipo de pé, então esse teste é com você:',
       ],
@@ -331,6 +332,7 @@ export const HEEL_PAIN_PT: Guide = {
   sections: [
     {
       h2: 'Os exercícios para fascite plantar, com doses iniciais',
+      figure: { id: 'plantar-fascia', caption: 'A fáscia plantar vai do osso do calcanhar até os dedos. A dor da fascite plantar costuma começar onde ela se prende ao calcanhar.', alt: 'Sola de um pé com a fáscia plantar em faixas brancas que se abrem do osso do calcanhar até a base dos dedos, e uma mancha vermelha no calcanhar onde a dor costuma começar.' },
       paragraphs: [
         'Os exercícios para fascite plantar no Walkito são alongamentos da fáscia plantar e da panturrilha, treino de força para a panturrilha que sobe aos poucos, e rolar o pé na bolinha. Essas são as doses iniciais do Walkito, não uma prescrição. Um resumo de uma página está nas [fichas de exercícios para imprimir](/printable-exercise-sheets/) (em inglês). [Como estes guias são escritos](/pt/sobre-walkito/).',
         'A ordem importa. Enquanto a dor for a sua meta, o Walkito mantém o trabalho de panturrilha leve: primeiro elevação de calcanhar sentado, depois elevação de calcanhar com os dois pés, depois uma elevação de calcanhar sustentada, um degrau de cada vez. Você sobe um degrau quando as duas últimas sessões com ele pareceram fáceis. A [elevação de calcanhar com toalha](/exercises/towel-heel-raise/) (em inglês) é a que mais carrega a fáscia plantar, então ela só entra quando a dor da manhã já diminuiu e a meta passa para a força da panturrilha. Se algum exercício levar a sua dor a **6/10 ou mais**, pare por hoje. É nesse ponto que o Walkito encerra uma sessão.',

@@ -71,6 +71,7 @@ export const FLAT_FEET_ES: Guide = {
   sections: [
     {
       h2: '¿Cómo saber si tu pie plano es flexible o rígido?',
+      figure: { id: 'arches', caption: 'Los mismos huesos del pie con pie plano, arco típico y arco alto, vistos desde el lado interior.', alt: 'Tres pies vistos desde el lado interior sobre un suelo plano: un pie plano con el arco apoyado en el suelo, un arco típico con un pequeño espacio debajo y un arco alto con un gran espacio bajo el centro del pie.' },
       paragraphs: [
         'Puedes saber si tu pie plano es flexible o rígido con una prueba de unos segundos. Importa porque el ensayo de esta página se hizo con pie plano flexible, y el ejercicio no va a cambiar la forma de uno rígido. La revisión de 2024 juntó estudios sobre pie plano en general. Walkito no revisa tu tipo de pie, así que esta prueba te toca a ti:',
       ],
@@ -321,6 +322,7 @@ export const HEEL_PAIN_ES: Guide = {
   sections: [
     {
       h2: '¿Qué ejercicios ayudan con la fascitis plantar y cuánto hacer?',
+      figure: { id: 'plantar-fascia', caption: 'La fascia plantar va del hueso del talón a los dedos. El dolor de la fascitis plantar suele empezar donde se une al talón.', alt: 'Planta de un pie con la fascia plantar como bandas blancas que se abren desde el hueso del talón hasta la base de los dedos, y una mancha roja en el talón donde suele empezar el dolor.' },
       paragraphs: [
         'Los ejercicios para la fascitis plantar en Walkito son estiramientos de la fascia plantar y de la pantorrilla, trabajo de fuerza para la pantorrilla que sube en pasos pequeños, y un automasaje plantar. Son las dosis de inicio de Walkito, no una indicación médica. [Cómo escribimos estas guías](/es/sobre-walkito/).',
         'El orden importa. Mientras el dolor sea tu meta, Walkito mantiene suave el trabajo de pantorrilla: primero elevaciones de talón sentado, después elevaciones de talón con dos pies, después una elevación de talón sostenida, un paso a la vez. Subes un paso cuando las dos últimas sesiones con él se sintieron fáciles. La elevación de talones con toalla es la que más carga la fascia plantar, así que solo entra cuando el dolor de la mañana ya bajó y la meta pasa a la fuerza de la pantorrilla. Si algún ejercicio sube tu dolor a **6/10 o más**, detente por hoy. Es el punto en el que Walkito termina una sesión.',
