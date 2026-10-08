@@ -1139,7 +1139,7 @@ The honest answer is: it depends, and most sources understate how much it varies
 - A 2020 review reports that about 90 percent of plantar fasciitis cases respond to non-surgical care, often within several months (Latt and colleagues, 2020).
 - A longer-term cohort of 174 patients found the risk of still having plantar fasciitis was 80.5 percent at one year, 50.0 percent at five years, and 45.6 percent at ten years from symptom onset (Hansen and colleagues, 2018).
 - Significant predictors of slower recovery in that cohort were being female and having bilateral heel pain. BMI, age, fascia thickness, and heel spurs had no significant effect on prognosis (Hansen and colleagues, 2018).
-- The 2023 heel pain guideline gives stretching a grade of **A** and strength training a **B**. Night splints for persistent morning pain and low-level laser or dry needling from a clinician both receive a **B** (Koc and colleagues, 2023).
+- The 2023 heel pain guideline gives stretching a grade of **A** and strength training a **B**. Night splints for persistent morning pain get an **A**, and low-level laser or dry needling from a clinician a **B** (Koc and colleagues, 2023).
 - Morning pain on a 0 to 10 scale, tracked daily, is the most practical way to see whether recovery is moving in the right direction.
 
 ### How long does plantar fasciitis usually last?
@@ -11407,7 +11407,7 @@ Language: Russian (Русский) · https://walkito.site/ru/skolko-dlitsya-pla
 - Обзор 2020 года сообщает, что примерно 90 процентов случаев плантарного фасциита поддаются консервативному лечению, часто в течение нескольких месяцев (Latt и коллеги, 2020).
 - Когортное наблюдение за 174 пациентами показало, что риск сохранения плантарного фасциита составлял 80,5 процента через год, 50,0 процента через пять лет и 45,6 процента через десять лет от начала симптомов (Hansen и коллеги, 2018).
 - Значимыми предикторами более медленного выздоровления в этой когорте были женский пол и боль в обеих пятках. ИМТ, возраст, толщина фасции и пяточная шпора не оказали значимого влияния на прогноз (Hansen и коллеги, 2018).
-- Клинические рекомендации 2023 года по боли в пятке дают растяжке уровень **A**, а силовым упражнениям **B**. Ночным ортезам при стойкой утренней боли и лазерной терапии / сухому иглоукалыванию у специалиста дан уровень **B** (Koc и коллеги, 2023).
+- Клинические рекомендации 2023 года по боли в пятке дают растяжке уровень **A**, а силовым упражнениям **B**. Ночным ортезам при стойкой утренней боли дан уровень **A**, а лазерной терапии / сухому иглоукалыванию у специалиста **B** (Koc и коллеги, 2023).
 - Утренняя боль по шкале от 0 до 10, которую вы записываете каждый день, самый наглядный способ увидеть, движется ли выздоровление в правильную сторону.
 
 ### Сколько обычно длится плантарный фасциит?

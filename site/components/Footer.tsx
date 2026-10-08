@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 
 import { SocialLinks } from '@/components/SocialLinks';
-import { CHROME, CUSTOM_PAGES, isFullLang, EN_ONLY, ES_ARTICLES, RU_ARTICLES, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
-import { hasSpanish, hasRussian } from '@/lib/guides';
+import { CHROME, CUSTOM_PAGES, NEW_ARTICLE_PATHS, isFullLang, EN_ONLY, ES_ARTICLES, RU_ARTICLES, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { ARTICLES_NEW, hasSpanish, hasRussian } from '@/lib/guides';
 import { playHref, storeHref } from '@/lib/site';
 import { GROUP_HEADING, NAV_GROUPS, NAV_LABEL, NAV_LABEL_ES, NAV_LABEL_RU, type GuideKey } from '@/lib/nav';
 
@@ -42,6 +42,7 @@ function hrefFor(key: GuideKey, lang: Lang): string | null {
   if (lang === 'en') return EN_ONLY[key as EnglishPage];
   if (lang === 'es' && hasSpanish(key as EnglishPage)) return ES_ARTICLES[key as EnglishPage];
   if (lang === 'ru' && hasRussian(key as EnglishPage)) return RU_ARTICLES[key as EnglishPage];
+  if (!isFullLang(lang) && ARTICLES_NEW[lang][key as EnglishPage]) return NEW_ARTICLE_PATHS[lang][key as EnglishPage] ?? null;
   return null;
 }
 
@@ -104,7 +105,9 @@ export function Footer({
               ? NAV_LABEL_ES[key]
               : lang === 'ru'
                 ? NAV_LABEL_RU[key]
-                : NAV_LABEL[key];
+                : lang === 'en'
+                  ? NAV_LABEL[key]
+                  : ARTICLES_NEW[lang][key as EnglishPage]?.crumb;
       return label ? [{ href, label }] : [];
     });
 

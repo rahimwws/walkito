@@ -454,6 +454,83 @@ export const RU_ARTICLES: Record<EnglishPage, string> = {
  * hreflang for an English article that exists in Spanish and/or Russian.
  * Only includes a language when its article barrel has the page.
  */
+
+/** The languages added on 8 October 2026, which have only part of the site. */
+export type NewLang = 'pt' | 'fr' | 'it' | 'de';
+export const NEW_LANGS: readonly NewLang[] = ['pt', 'fr', 'it', 'de'];
+
+/**
+ * Where each English article lives in the newer languages. Only the articles
+ * translated so far have a path; a page claims a translation only once
+ * `ARTICLES_NEW` (`lib/guides/articles-new.ts`) has it.
+ */
+export const NEW_ARTICLE_PATHS: Record<NewLang, Partial<Record<EnglishPage, string>>> = {
+  pt: {
+    hubPlantarFasciitis: '/pt/fascite-plantar/',
+    hubFlatFeet: '/pt/pe-chato/',
+    heelSpurExercises: '/pt/esporao-calcaneo-exercicios/',
+    pfVsHeelSpur: '/pt/fascite-plantar-ou-esporao/',
+    morningHeelPain: '/pt/dor-no-calcanhar-ao-acordar/',
+    pfDuration: '/pt/quanto-tempo-dura-fascite-plantar/',
+    calfRaises: '/pt/elevacao-de-calcanhar-fascite-plantar/',
+    achilles: '/pt/tendinite-de-aquiles-exercicios/',
+    shinSplints: '/pt/canelite-exercicios/',
+    bestApp: '/pt/melhor-app-fascite-plantar/',
+    exPlantarFasciaStretch: '/pt/exercicios/alongamento-fascia-plantar/',
+    exCalfStretch: '/pt/exercicios/alongamento-panturrilha/',
+    exShortFoot: '/pt/exercicios/pe-curto/',
+    exTowelHeelRaise: '/pt/exercicios/elevacao-calcanhar-toalha/',
+  },
+  fr: {
+    hubPlantarFasciitis: '/fr/fasciite-plantaire/',
+    hubFlatFeet: '/fr/pieds-plats/',
+    heelSpurExercises: '/fr/epine-calcaneenne-exercices/',
+    pfVsHeelSpur: '/fr/fasciite-plantaire-ou-epine-calcaneenne/',
+    morningHeelPain: '/fr/douleur-talon-au-reveil/',
+    pfDuration: '/fr/combien-de-temps-dure-fasciite-plantaire/',
+    calfRaises: '/fr/montees-sur-pointes-fasciite-plantaire/',
+    achilles: '/fr/tendinite-achille-exercices/',
+    shinSplints: '/fr/periostite-tibiale-exercices/',
+    bestApp: '/fr/meilleure-app-fasciite-plantaire/',
+    exPlantarFasciaStretch: '/fr/exercices/etirement-fascia-plantaire/',
+    exCalfStretch: '/fr/exercices/etirement-mollet/',
+    exShortFoot: '/fr/exercices/pied-court/',
+    exTowelHeelRaise: '/fr/exercices/montee-sur-pointes-serviette/',
+  },
+  it: {
+    hubPlantarFasciitis: '/it/fascite-plantare/',
+    hubFlatFeet: '/it/piede-piatto/',
+    heelSpurExercises: '/it/spina-calcaneare-esercizi/',
+    pfVsHeelSpur: '/it/fascite-plantare-o-spina-calcaneare/',
+    morningHeelPain: '/it/dolore-tallone-al-mattino/',
+    pfDuration: '/it/quanto-dura-fascite-plantare/',
+    calfRaises: '/it/sollevamenti-tallone-fascite-plantare/',
+    achilles: '/it/tendinite-achille-esercizi/',
+    shinSplints: '/it/periostite-tibiale-esercizi/',
+    bestApp: '/it/migliore-app-fascite-plantare/',
+    exPlantarFasciaStretch: '/it/esercizi/stretching-fascia-plantare/',
+    exCalfStretch: '/it/esercizi/stretching-polpaccio/',
+    exShortFoot: '/it/esercizi/piede-corto/',
+    exTowelHeelRaise: '/it/esercizi/sollevamento-tallone-asciugamano/',
+  },
+  de: {
+    hubPlantarFasciitis: '/de/plantarfasziitis/',
+    hubFlatFeet: '/de/plattfuss/',
+    heelSpurExercises: '/de/fersensporn-uebungen/',
+    pfVsHeelSpur: '/de/plantarfasziitis-oder-fersensporn/',
+    morningHeelPain: '/de/fersenschmerzen-morgens/',
+    pfDuration: '/de/wie-lange-dauert-plantarfasziitis/',
+    calfRaises: '/de/wadenheben-plantarfasziitis/',
+    achilles: '/de/achillessehnenentzuendung-uebungen/',
+    shinSplints: '/de/schienbeinkantensyndrom-uebungen/',
+    bestApp: '/de/beste-app-plantarfasziitis/',
+    exPlantarFasciaStretch: '/de/uebungen/plantarfaszie-dehnen/',
+    exCalfStretch: '/de/uebungen/wade-dehnen/',
+    exShortFoot: '/de/uebungen/kurzer-fuss/',
+    exTowelHeelRaise: '/de/uebungen/fersenheben-mit-handtuch/',
+  },
+};
+
 export function alternatesArticle(
   page: EnglishPage,
   lang: 'en' | 'es' | 'ru',
