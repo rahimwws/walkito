@@ -383,14 +383,14 @@ body:has(> .pg) > .wash {
   clip-path: inset(0);
 }
 
-@supports (corner-shape: superellipse(1.5)) {
+@supports (corner-shape: superellipse(1.2)) {
   .pg .pg-sheet,
   .pg:has(+ .ft)::after,
   .pg .pg-head .byline-chip,
   .pg .pg-head .byline:not(:has(.byline-chip)),
   .pg .pg-head .reviewer-line,
   .pg .pg-head p.updated {
-    corner-shape: superellipse(1.5);
+    corner-shape: superellipse(1.2);
   }
 }
 
@@ -1516,7 +1516,7 @@ body:has(> .pg) > .wash {
   font-size: 17px;
 }
 
-@supports (corner-shape: superellipse(1.5)) {
+@supports (corner-shape: superellipse(1.2)) {
   .pg .pgfaq-item,
   .pg .pgfaq .pgfaq-q,
   .pg .pgfaq .pgfaq-num,
@@ -1549,7 +1549,7 @@ body:has(> .pg) > .wash {
   .pg .prose .printable-box,
   .pg .email-signup,
   .pg .prose .reviewer-card > div {
-    corner-shape: superellipse(1.5);
+    corner-shape: superellipse(1.2);
   }
 }
 
@@ -1722,10 +1722,10 @@ body:has(> .pg) > .wash {
   translate: 0 0;
 }
 
-@supports (corner-shape: superellipse(1.5)) {
+@supports (corner-shape: superellipse(1.2)) {
   .pg .prose .pg-app,
   .pg .prose .pg-app-get {
-    corner-shape: superellipse(1.5);
+    corner-shape: superellipse(1.2);
   }
 }
 

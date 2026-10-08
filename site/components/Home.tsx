@@ -500,6 +500,8 @@ export function Home({ lang }: { lang: Lang }) {
 
 
         <InView className="shell hero hero-glass">
+          <HeroTitle a={copy.h1a} b={copy.h1b} />
+
           <div className="hero-device">
             <div className="hero-arch" aria-hidden />
 
@@ -546,13 +548,6 @@ export function Home({ lang }: { lang: Lang }) {
           </div>
 
           <div className="hero-text">
-            {/* The longer line's length sets the size on wide screens, so each
-                line stays whole in every language (globals.css, .hero-glass h1). */}
-            <h1 style={{ '--h1-len': Math.max(copy.h1a.length, copy.h1b.length) } as React.CSSProperties}>
-              {copy.h1a}
-              <span>{copy.h1b}</span>
-            </h1>
-            <p>{copy.lead}</p>
             {/* "Get the app", not the store badge: on a laptop it opens the QR
                 dialog, on a phone it goes to that phone's store. */}
             <GetAppButton
@@ -563,7 +558,6 @@ export function Home({ lang }: { lang: Lang }) {
               <AppleGlyph />
               {c.headerButton}
             </GetAppButton>
-            <p className="hero-small">{copy.small}</p>
           </div>
         </InView>
       </div>
@@ -680,5 +674,46 @@ export function Home({ lang }: { lang: Lang }) {
 
       <Footer lang={lang} page="home" />
     </>
+  );
+}
+
+/**
+ * The hero headline, set like the closing section's: huge pale lilac capitals
+ * on the band's deep blue, the phone rising in front of its last line.
+ *
+ * Each word sits in its own clip and rises out of it as the page opens; then a
+ * blur passes through the words one after another, in reading order, and
+ * comes round again (globals.css). Both are CSS animations rather than an
+ * `InView` transition, so they start with the first paint: waiting for
+ * hydration would show the words, hide them and then raise them. Reduce Motion
+ * leaves them standing.
+ *
+ * Sized in globals.css (.hero-title): on wide screens the first line stays
+ * whole and the second takes two rows at most; on a phone the longest word
+ * fits. In every language. Words joined by a non-breaking space stay one word.
+ */
+function HeroTitle({ a, b }: { a: string; b: string }) {
+  const lines = [a, b].map((line) => line.split(' '));
+  const longest = Math.max(...lines.flat().map((word) => word.length));
+  const count = lines.flat().length;
+  let n = 0;
+  return (
+    <h1
+      className="hero-title"
+      aria-label={`${a} ${b}`}
+      style={
+        { '--h1a-len': a.length, '--h1b-len': b.length, '--h1-word': longest, '--words': count } as React.CSSProperties
+      }
+    >
+      {lines.map((line, i) => (
+        <span key={i} className="hero-line" aria-hidden>
+          {line.map((word, j) => (
+            <span key={j} className="hero-word" style={{ '--w': n } as React.CSSProperties}>
+              <span style={{ '--w': n++ } as React.CSSProperties}>{word}</span>
+            </span>
+          ))}
+        </span>
+      ))}
+    </h1>
   );
 }
