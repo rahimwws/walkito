@@ -187,6 +187,14 @@ export const PTTD_EN: Guide = {
       cites: [CITE.ling],
       a: 'Surgery is usually discussed when conservative management, meaning exercise, orthoses, and sometimes a walking boot, has not improved symptoms after several months, or when the deformity has progressed to stage III or IV, where the foot is rigidly flat or the ankle joint is affected. Most stage I and II cases respond to conservative care.',
     },
+    {
+      q: 'Is walking bad for posterior tibial tendonitis?',
+      a: 'Not automatically, but too much of it can be. Every step loads the tendon that holds the arch up, so a lot of walking on an irritated tendon tends to worsen pain. Early management cuts back the load that provokes pain, not walking altogether, alongside orthoses and the exercises above. A walk that brings on pain means scale back.',
+    },
+    {
+      q: 'What aggravates posterior tibial tendonitis?',
+      a: 'Anything that loads the tendon repeatedly while it is irritated: long stretches of standing or walking, hills, uneven ground, and worn-out shoes. Extra body weight adds more force with each step, and a sudden jump in activity is a common trigger. None of this means resting completely; it means reducing the load and adding orthoses and the exercises above.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

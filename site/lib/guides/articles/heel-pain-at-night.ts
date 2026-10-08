@@ -187,6 +187,15 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
       cites: [CITE.tuHeelPain, CITE.patelStressFracture],
       a: 'Yes. Night heel pain that wakes you, does not improve with movement, involves burning or tingling, or is in both heels with prolonged stiffness should be assessed by a clinician. These patterns can indicate a stress fracture, nerve entrapment, or inflammatory disease that exercises alone will not address.',
     },
+    {
+      q: 'What to put on my heel for pain at night?',
+      a: 'Ice is the most common first step: an ice pack or a frozen water bottle applied to the sore spot can ease surface soreness. None of these address a stress fracture, nerve entrapment, or inflammatory arthritis, the conditions most linked to true night pain, so a cold pack is not a substitute for finding the cause.',
+    },
+    {
+      q: 'What should you not do if your heel hurts at night?',
+      cites: [CITE.tuHeelPain, CITE.patelStressFracture],
+      a: 'Do not assume it is plantar fasciitis and push through activity if the pain does not fit the first-step-then-better pattern. Do not ignore pain that wakes you, worsens with continued walking, or comes with burning, tingling, or swelling. Self-treating rest pain with stretches or night splints can delay diagnosis of a stress fracture, nerve entrapment, or inflammatory arthritis.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

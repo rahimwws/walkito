@@ -199,6 +199,14 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
       cites: [CITE.patelStressFracture],
       a: 'Stress fracture pain typically builds with activity, came on after a sudden increase in walking or running volume, and does not ease much with rest. Squeezing the sides of the heel can reproduce it. Plantar fasciitis pain usually eases once you warm up and is worst on first steps after rest. If the pattern fits a fracture, see a clinician before doing exercises.',
     },
+    {
+      q: 'How do you get rid of heel pain right after a walk?',
+      a: 'Right after a walk, rest the foot, ice it for about 15 minutes, and avoid going straight back out barefoot on a hard floor. That eases the immediate ache, but it does not change the underlying cause. The exercises on this page, calf and fascia stretching plus gradual strength work, are what change how the heel handles the next walk.',
+    },
+    {
+      q: 'What causes heel pain in only one foot after walking?',
+      a: 'Heel pain after walking often shows up in just one foot because load during a walk rarely splits evenly between legs. A longer stride on one side, an old injury, worn-down shoes on one foot, or carrying a bag on one shoulder can all shift extra strain onto one heel. Both sides can still become symptomatic over time.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

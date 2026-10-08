@@ -165,6 +165,16 @@ export const PF_DURATION_EN: Guide = {
       cites: [CITE.hansen],
       a: 'Yes. In the Hansen 2018 cohort, 32 percent of the symptom-free group had at least one relapse before becoming permanently asymptomatic. The pattern of improvement, relapse, and further improvement is common. Continuing a maintenance dose of calf work and stretching after the pain is gone is one way to reduce the chance of it returning.',
     },
+    {
+      q: 'What are signs that plantar fasciitis is healing?',
+      cites: [CITE.rathleff],
+      a: 'The clearest sign is less morning pain: first steps feel stiff instead of sharp, and the ache fades faster once you start walking. Many people notice this shift before the pain is fully gone. In the Rathleff trial, heel-raise patients scored measurably better by three months, which is when this shift often appears.',
+    },
+    {
+      q: 'What should you not do if plantar fasciitis is not improving?',
+      cites: [CITE.guideline],
+      a: 'Don\'t stop exercising the moment morning pain eases, and don\'t chase a single shortcut instead of the basics. Pain easing before the fascia has adapted is a common reason symptoms return. If pain stays flat or gets worse for several months despite stretching, strengthening and supportive shoes, that calls for a clinician, not a longer wait.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

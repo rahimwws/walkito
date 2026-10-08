@@ -151,6 +151,14 @@ export const SEVERS_EN: Guide = {
       q: "Can Walkito help my child with Sever's disease?",
       a: "Walkito is designed for adults with heel and arch pain. Its exercise doses, pain thresholds and progression rules are built for adult bodies, not for a child's open growth plate. A paediatric sports medicine clinician or podiatrist is the right source for a child's exercise program.",
     },
+    {
+      q: "What can be mistaken for Sever's disease?",
+      a: "Achilles tendon irritation, a calcaneal stress fracture, and retrocalcaneal bursitis can all look similar in a growing child. A positive squeeze test (pain when the sides of the heel are pressed together), an age of 8 to 15, and a recent jump in training point toward Sever's disease instead. A single injury, swelling, or pain worsening at one specific spot needs a clinician to rule out a fracture.",
+    },
+    {
+      q: "How do you KT tape Sever's disease?",
+      a: "There's no trial testing kinesiology tape for Sever's disease, so no pattern is proven better than heel cups or load management. Some clinicians tape along the Achilles and under the heel to reduce the pull on the growth plate. If you want to try it, have a physiotherapist or athletic trainer apply it and show you the pattern.",
+    },
   ],
   redFlags: {
     h2: 'See a clinician if',

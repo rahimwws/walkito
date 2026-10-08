@@ -164,6 +164,16 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
       cites: [CITE.latt, CITE.hansen],
       a: 'A 2020 review reports that about 90 percent of people with plantar fasciitis improve with non-surgical care, often within several months (Latt and colleagues, 2020). In a longer follow-up of 174 patients, about half were still symptomatic at 5 years, though most had only minor pain by that point (Hansen and colleagues, 2018). No exercise program can promise a timeline. [How long plantar fasciitis lasts](/how-long-does-plantar-fasciitis-last/) covers the evidence in more detail.',
     },
+    {
+      q: 'What should you avoid when your heel hurts in the morning?',
+      cites: [CITE.guideline],
+      a: 'Avoid walking barefoot on a hard floor right after waking, and avoid skipping the pre-stand stretch. The fascia is stiffest at that moment, so stepping onto tile or hardwood with no cushion is a common trigger for sharp first-step pain. Put on supportive shoes or firm slippers before leaving the bedroom, and stretch while still sitting on the bed.',
+    },
+    {
+      q: 'What are some home remedies for heel pain in the morning?',
+      cites: [CITE.guideline],
+      a: 'Home remedies for morning heel pain are stretching, ice, and supportive shoes, done daily rather than once. Stretch the fascia and calf before standing, then wear supportive shoes before walking on hard floors. Rolling the sole over a frozen water bottle for a few minutes eases stiffness, though it does not replace seeing a clinician if pain does not improve.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

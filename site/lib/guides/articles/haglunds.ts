@@ -186,6 +186,16 @@ export const HAGLUNDS_EN: Guide = {
       cites: [CITE.yuenHaglund],
       a: "Retrocalcaneal bursitis is inflammation of the fluid-filled sac (bursa) between the Achilles tendon and the heel bone. Haglund's deformity makes it more likely because the prominent bone pinches the bursa during ankle movement. The pain is deep, at the back of the heel, and often worsened by shoes and dorsiflexion.",
     },
+    {
+      q: "What happens if Haglund's deformity is left untreated?",
+      cites: [CITE.chooRearfoot, CITE.yuenHaglund],
+      a: "Without changes, the bump does not shrink and the shoe friction that caused it usually continues, so pain and retrocalcaneal bursitis can keep building. Long-standing irritation also raises the risk of insertional Achilles tendinopathy. The bony growth itself does not reverse with conservative care, though symptoms often ease once footwear and loading are changed.",
+    },
+    {
+      q: "Is walking bad for Haglund's deformity?",
+      cites: [CITE.chooRearfoot],
+      a: "Walking itself is not harmful, and staying active is usually fine. What matters is the shoe: a rigid or low-cut heel counter that rubs the bump can aggravate pain and bursitis with every step. Switching to shoes with a soft or open heel is usually more useful than resting completely.",
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

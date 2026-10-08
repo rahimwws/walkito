@@ -300,6 +300,16 @@ export const SHIN_SPLINTS_EN: Guide = {
       a: 'No single exercise has trial-level evidence for preventing shin splints. The risk factors from two meta-analyses, including BMI, arch drop and running experience, point toward gradual training-load management and general lower-leg conditioning instead of one particular move. That is a less satisfying answer than a named exercise, but it is what the research supports.',
       cites: [CITE.newman, CITE.hamstraWright],
     },
+    {
+      q: 'What is commonly mistaken for shin splints?',
+      cites: [CITE.mtssReview],
+      a: 'A tibial stress fracture, chronic exertional compartment syndrome, and posterior tibial tendinopathy can all cause shin pain and get labeled shin splints. A stress fracture tends to hurt at one specific point on the bone, while compartment syndrome causes tightness and numbness that builds during a run and eases soon after stopping. Both need a clinician rather than more loading.',
+    },
+    {
+      q: 'Should you walk with shin splints?',
+      cites: [CITE.mtssReview],
+      a: 'Usually yes. Walking is lower-impact than running, and many people with medial tibial stress syndrome can keep walking without a flare, as long as pain stays mild and settles quickly afterward. If walking itself reproduces sharp pain at a single point on the bone, stop and get it checked, since that pattern fits a stress fracture more than shin splints.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

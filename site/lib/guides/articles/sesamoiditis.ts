@@ -116,6 +116,15 @@ export const SESAMOIDITIS_EN: Guide = {
       q: 'Can exercises prevent sesamoiditis from coming back?',
       a: 'No exercise has been tested for sesamoiditis prevention. Calf stretching to reduce forefoot load and intrinsic foot strengthening to share pressure more evenly are reasonable ideas but are not proven for this condition specifically. Ongoing use of a dancer\'s pad and appropriate shoes is the more established strategy.',
     },
+    {
+      q: 'What happens if sesamoiditis is left untreated?',
+      cites: [CITE.bizSesamoiditis],
+      a: 'Without changes to load, sesamoiditis often lingers or flares up with activity. A 2025 review of conservative care found pain improved in about two-thirds of cases, but recurrence was common even with treatment. Without offloading or an activity change, expect the pain to persist and keep limiting how much you can run or push off.',
+    },
+    {
+      q: 'Is it good to massage sesamoiditis?',
+      a: 'Gentle massage around the area may ease some soreness, but firm pressure right on the sesamoid bones usually makes the pain worse, not better, since that is exactly where the irritated tissue sits. If you want to work on the forefoot, stretch the calf instead, which shifts some load off the sesamoids, rather than pressing on the sore spot itself.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

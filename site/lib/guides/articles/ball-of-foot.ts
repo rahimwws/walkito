@@ -213,6 +213,14 @@ export const BALL_OF_FOOT_EN: Guide = {
       q: 'What shoes are best for ball of foot pain?',
       a: 'Shoes with a wide toe box, a cushioned sole, and a low heel. Rocker-sole shoes help by letting the foot roll through push-off without bending at the metatarsal joints. Narrow shoes and high heels do the opposite. For Morton\'s neuroma especially, switching shoes is often the most effective single step.',
     },
+    {
+      q: 'How long does a metatarsalgia flare-up last?',
+      a: 'There is no set timeline. A mild flare often settles once you reduce the triggering activity, switch to cushioned, wider shoes, and add a metatarsal pad. Flares linked to an ongoing cause, such as high heels, claw toes, or a tight calf, can persist for months, since no single timeline fits every cause.',
+    },
+    {
+      q: 'What are the complications of untreated metatarsalgia?',
+      a: 'Left unaddressed, metatarsalgia can change how you walk, since people naturally shift weight off the painful spot and onto other parts of the foot, which can create new areas of pain. Ongoing pressure on the metatarsal heads can also contribute to calluses or, less often, toe deformities like hammer toes. Early shoe changes and metatarsal pads reduce this risk.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

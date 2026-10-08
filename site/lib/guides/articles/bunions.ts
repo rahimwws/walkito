@@ -162,6 +162,14 @@ export const BUNIONS_EN: Guide = {
       q: 'What causes bunions in the first place?',
       a: 'Bunions result from a combination of genetics, foot structure, and footwear. A family history of hallux valgus is the strongest risk factor. Narrow shoes and high heels do not cause bunions on their own but can accelerate progression in someone who is predisposed.',
     },
+    {
+      q: 'Is walking barefoot better for bunions?',
+      a: 'No trial has tested barefoot walking against shoes for bunions. Going barefoot removes the pressure of a narrow toe box on the joint, which can ease symptoms for some. It does not reverse the bone angle. On hard or uneven ground, barefoot walking can strain the foot differently, so build it up gradually rather than switching all at once.',
+    },
+    {
+      q: 'At what age do most people get bunions?',
+      a: 'There is no single age. Bunions usually build gradually over years and become more noticeable from midlife onward. A less common juvenile form shows up in the teens, often with a strong family history. Narrow shoes and high heels speed up progression in anyone already prone to it, at any age.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

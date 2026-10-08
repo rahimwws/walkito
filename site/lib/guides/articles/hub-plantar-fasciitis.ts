@@ -216,6 +216,15 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       q: 'When should I see a doctor about heel pain?',
       a: 'See a clinician if pain followed an injury, if you cannot put weight on the foot, if both heels hurt and other joints are stiff, if there is numbness or tingling, if the heel is red or warm, if it wakes you at night, or if pain is not improving after several months of stretching and calf work. These patterns may point to a different condition.',
     },
+    {
+      q: 'Why do I have plantar fasciitis in only one foot?',
+      a: 'Plantar fasciitis often shows up in one foot first because load rarely splits evenly between legs. A dominant leg, an old limp, a job favoring one side, or a sudden jump in activity on one leg, like starting to run, can overload one fascia more than the other. Both feet can still be affected over time.',
+    },
+    {
+      q: 'Why did I suddenly get plantar fasciitis?',
+      cites: [CITE.guideline],
+      a: 'Sudden plantar fasciitis usually follows a sudden change in load, not a sudden injury. A fast jump in running mileage, new shoes, a new job that keeps you standing, or weight gain can overload the fascia faster than it can adapt. Prolonged standing at work is one of the recognized risk factors in the 2023 heel pain guideline.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

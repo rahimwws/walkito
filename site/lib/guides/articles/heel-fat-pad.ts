@@ -168,6 +168,16 @@ export const HEEL_FAT_PAD_EN: Guide = {
       cites: [CITE.fatPadReview, CITE.yiFatPad],
       a: 'A clinician can suspect it from the pain pattern and a physical exam. Ultrasound measures the fat pad thickness, and a pad under 1 centimetre is generally considered atrophied. MRI can show internal damage. Imaging criteria are not standardised, and it is partly a diagnosis of exclusion when plantar fasciitis treatment has not helped.',
     },
+    {
+      q: 'How long does heel fat pad syndrome take to improve?',
+      cites: [CITE.fatPadReview],
+      a: 'There is no established timeline, because fat pad atrophy is a structural thinning that exercise and rest do not reverse. A 2022 scoping review found no trial tracking recovery time for this condition. Cushioned heel cups, thicker-soled shoes, and avoiding barefoot walking on hard floors may ease pain, but the thinning itself usually remains.',
+    },
+    {
+      q: 'How do you tape for heel fat pad syndrome?',
+      cites: [CITE.fatPadReview],
+      a: 'Low-dye taping pulls the arch up and redirects pressure away from the heel, using strips run across the sole and up the sides of the foot; a clinician or physical therapist usually applies the first one to show the pattern. The 2022 scoping review found no trial testing taping specifically for fat pad syndrome, so it is a borrowed, not proven, technique.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

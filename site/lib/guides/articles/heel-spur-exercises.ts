@@ -289,6 +289,16 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
       cites: [CITE.guideline],
       a: 'Walking itself is not the problem. Walking in supportive shoes at a comfortable pace is usually fine and better than complete rest. The pain comes from the plantar fascia and calf under the spur, and moderate walking keeps the calf pump active. If walking makes your morning pain worse the next day, shorten the distance and build it back gradually.',
     },
+    {
+      q: 'What exercises should you avoid if you have a heel spur?',
+      cites: [CITE.guideline],
+      a: 'Skip high-impact moves like running, jumping and plyometrics while the heel is flared; repeated pounding on a hard surface strains the tissue next to the spur. Deep heel drops off a step edge can also overload an irritated fascia. The 2023 guideline supports adjusting load rather than banning exercises; the test is whether your heel feels worse the next morning.',
+    },
+    {
+      q: 'What flares up heel spur pain?',
+      cites: [CITE.guideline, CITE.riddle],
+      a: 'Repeated pounding on a hard surface is the most common trigger: running, jumping, or standing for hours flares the soft tissue next to the spur the same way it flares plain plantar fasciitis. A sudden jump in activity, worn shoes, and barefoot walking on tile can bring it on. Adjusting the load, not the bone, is what settles a flare.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

@@ -222,6 +222,15 @@ export const STANDING_DESK_EN: Guide = {
       a: 'Walking activates the calf pump, which pushes blood back up from the lower legs with each step. Standing still takes that pump away, so blood pools in the feet and lower legs, and the muscles hold the same static position instead of contracting and relaxing. A 2017 systematic review confirmed this mechanism and found lower-limb symptoms develop reliably during static standing in laboratory settings.',
       cites: [CITE.coenen],
     },
+    {
+      q: 'What is the 20-8-2 rule for standing desks?',
+      a: "The 20-8-2 rule is an ergonomics guideline: split each 30-minute block into 20 minutes sitting, 8 minutes standing, and 2 minutes moving. It is a general convention, not a tested formula, but it matches this page's main point: no single position for hours is ideal, and short, frequent changes in posture reduce the static load that causes foot fatigue.",
+    },
+    {
+      q: 'Does standing aggravate plantar fasciitis?',
+      a: 'It can. Standing keeps the plantar fascia and calf under sustained load without the walking breaks that pump blood and ease tension. Standing most of the workday is an independent risk factor for plantar fasciitis in research on prolonged standing. If you already have plantar fasciitis, a hard-floor standing desk without breaks or stretching can worsen symptoms.',
+      cites: [CITE.riddle],
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

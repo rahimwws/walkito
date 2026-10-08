@@ -278,6 +278,14 @@ export const FLAT_FEET_EN: Guide = {
       q: 'When should I see a doctor about flat feet?',
       a: 'See a clinician before you start if the arch stays flat when the foot is off the ground, or if one arch has flattened suddenly as an adult. The same goes for pain that followed an injury, wakes you at night, or comes with numbness, tingling, swelling or warmth. Pain that is sharp or getting worse needs a clinician, not more exercise.',
     },
+    {
+      q: 'Is walking barefoot good for flat feet?',
+      a: 'There is no trial testing barefoot walking against shoes for flat feet, so no study here settles it. Walking barefoot does work the small muscles that support the arch, which is why bare-foot arch exercises like the short foot and towel scrunch are done without shoes. If barefoot walking brings on new pain, ease up and try it on soft ground first.',
+    },
+    {
+      q: 'What aggravates flat feet?',
+      a: 'Long periods of standing or walking, worn-out or unsupportive shoes, carrying extra weight, and skipping the arch and calf work that keeps the supporting muscles strong. None of this changes the arch\u2019s shape, but it can make a flexible flat foot feel more tired or sore by evening. A rigid flat foot that stays painful needs a clinician, not just rest.',
+    },
   ],
   redFlags: {
     h2: RED_FLAGS.h2,
@@ -567,6 +575,16 @@ export const HEEL_PAIN_EN: Guide = {
     {
       q: 'Does walking help plantar fasciitis?',
       a: 'Walking is usually fine, but it is not an exercise for plantar fasciitis on its own. The 2023 guideline recommends adjusting the load rather than stopping activity. If a walk leaves your first steps the next morning clearly worse, the distance or pace was too much. Stretching before you walk, especially the [plantar fascia stretch](/exercises/plantar-fascia-stretch/) before your first steps, makes the early minutes easier.',
+    },
+    {
+      q: 'What is the worst thing you can do for plantar fasciitis?',
+      a: 'Walking barefoot on hard floors right after waking, and jumping straight back into running or jumping while the heel is still flared, are the clearest mistakes. Both load the stiffest, least-recovered fascia with sudden force. The 2023 heel pain guideline recommends adjusting your load instead of pushing through pain.',
+      cites: [CITE.guideline],
+    },
+    {
+      q: 'Can plantar fasciitis be massaged out?',
+      a: 'No single rub session massages plantar fasciitis away, but gentle self massage can ease stiffness between sessions. The 2023 guideline grades manual therapy done by a clinician, hands-on work on the joint and soft tissue, as A, its top grade, when paired with stretching. Rolling your own sole is comfort care, not a replacement for stretching and calf strength work.',
+      cites: [CITE.guideline],
     },
   ],
   redFlags: RED_FLAGS,

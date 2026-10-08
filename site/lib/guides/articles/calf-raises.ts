@@ -230,6 +230,16 @@ export const CALF_RAISES_EN: Guide = {
       q: 'Is it normal to feel the exercise in the calf and not the heel?',
       a: 'Yes. Seated and double-leg heel raises are designed to feel like calf work with little load on the heel, which is why they come before the single-leg towel version. The towel-loaded raise is the version that also puts load through the arch, so a pull near the heel at that stage is expected, as long as it stays below 6/10.',
     },
+    {
+      q: 'Do weak calves cause plantar fasciitis?',
+      cites: [CITE.riddle, CITE.patelGastrocnemius, CITE.rathleff],
+      a: 'The strongest evidence links a tight calf, not weak calves, to plantar fasciitis. A case-control study found reduced ankle flexibility was the top risk factor, and over half of one patient series had a calf contracture. Strength training still helps: in a 48-person trial, heel raises eased pain faster than stretching alone over the first three months.',
+    },
+    {
+      q: 'What is the one best exercise for plantar fasciitis?',
+      cites: [CITE.guideline, CITE.rathleff],
+      a: 'There is no single best exercise; the 2023 guideline grades stretching (A) and strength training (B) as separate, complementary approaches. The plantar fascia stretch targets first-step pain directly, while heel raises build the calf\'s long-term capacity. In a 48-person trial, the heel-raise group improved faster than the stretching group at three months, though both were similar by twelve months.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

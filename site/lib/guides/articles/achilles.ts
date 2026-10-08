@@ -247,6 +247,21 @@ export const ACHILLES_EN: Guide = {
       cites: [CITE.achillesGuideline, CITE.alfredson, CITE.beyer],
       a: 'Recovery is measured in months. The core trials ran loading programs for about three months, tracking results to 12 months. The 2024 guideline notes functional improvement can begin by 2 weeks, but fuller recovery extends well beyond. No trial promises a fixed timeline.',
     },
+    {
+      q: 'What should you not do with Achilles tendonitis?',
+      cites: [CITE.jonsson, CITE.silbernagel],
+      a: 'Avoid sudden increases in running volume or sprint intensity, deep calf stretching if your pain is at the heel-bone attachment, and pushing through pain that stays elevated the next morning or worsens week to week. A sudden pop or snap needs a clinician right away. Complete rest is not required either; pain-monitored activity is usually a better option than stopping completely.',
+    },
+    {
+      q: 'Will walking aggravate Achilles tendonitis?',
+      cites: [CITE.silbernagel],
+      a: 'Usually not. Walking is lower-impact than running, and many people with Achilles tendinopathy can keep walking without a flare. Watch for pain that stays elevated the next morning or gets worse week to week; that is the signal to cut back distance or pace, not to stop moving altogether. Steep hills and fast walking on hard surfaces are more likely to irritate it.',
+    },
+    {
+      q: 'What is mistaken for Achilles tendonitis?',
+      cites: [CITE.chooRearfoot],
+      a: "Retrocalcaneal bursitis, Haglund's deformity, and a partial Achilles tear can all cause similar pain at the back of the heel. A visible bony bump points toward Haglund's deformity, while swelling right at the back of the shoe line suggests bursitis. Any sudden sharp pain with a pop, or an inability to rise on the toes, needs urgent assessment for a tendon tear.",
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

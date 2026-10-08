@@ -168,6 +168,18 @@ export const MORTONS_EN: Guide = {
       cites: [CITE.matthewsCochrane],
       a: "Surgery is usually considered after several months of conservative management, including shoe changes, padding, and one or two rounds of injection, have not provided lasting relief. Neurectomy, removal of the thickened nerve segment, is the most common procedure. It relieves pain in many people but leaves permanent numbness between the affected toes.",
     },
+    {
+      q: "What triggers Morton's neuroma?",
+      a: "Morton's neuroma is triggered by anything that compresses the nerve between the metatarsal bones. Common triggers include narrow or pointed-toe shoes, high heels, repetitive impact activities like running, and foot shapes such as flat feet or high arches that shift extra pressure forward. It is more common in women and in middle age.",
+    },
+    {
+      q: "What is the pinch test for Morton's neuroma?",
+      a: "The pinch test, sometimes called Mulder's click, is a physical exam a clinician uses to help diagnose Morton's neuroma. They squeeze the forefoot from side to side while pressing between the metatarsal heads. A palpable click or pop, along with reproduced burning pain, supports the diagnosis, though a clinician still needs to rule out other causes.",
+    },
+    {
+      q: 'Is walking good for foot neuroma?',
+      a: "Walking itself does not harm the nerve, but tight or thin-soled shoes during walking can increase forefoot compression and worsen symptoms. Short walks in wide, cushioned shoes are usually fine. Longer walks on hard surfaces or in narrow shoes often increase burning or tingling between the toes. If walking consistently triggers symptoms, switching shoes before cutting activity usually helps more.",
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

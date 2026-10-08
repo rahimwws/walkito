@@ -180,6 +180,15 @@ export const HUB_FLAT_FEET_EN: Guide = {
       q: 'Is it safe to run with flat feet?',
       a: 'Many runners have flat feet and run without problems. A low arch may increase pronation, which some runners manage with stability shoes. If running causes pain in the arch, ankle or knee that does not settle between runs, a clinician can check whether the flat foot is contributing. Strengthening the arch and hip muscles is a reasonable approach whether or not you change shoes.',
     },
+    {
+      q: 'Is a flat foot considered a disability?',
+      a: 'Usually not. Most flat feet cause no pain and do not limit activity, so they do not meet disability criteria on their own. Severe or rigid flat feet that cause ongoing pain and limit walking or standing can sometimes support a disability claim, but that depends on the specific program, such as Social Security, and your overall function, not on having flat feet alone.',
+    },
+    {
+      q: 'What ethnicity has flat feet?',
+      cites: [CITE.salinasTorres],
+      a: 'Flat feet (pes planus) occur more often in some groups, though the research is limited. A 2023 systematic review of population studies found Asian race linked to more than twice the odds of flat feet, and White race linked to roughly half the odds, in separate subgroup comparisons. These are population patterns, not a prediction for any one person\u2019s feet.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

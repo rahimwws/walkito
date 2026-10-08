@@ -204,6 +204,16 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
       cites: [CITE.latt],
       a: 'Almost never. The guideline does not recommend spur removal for plantar fasciitis. About 90% of people with plantar fasciitis improve with non-surgical care such as stretching, calf strengthening and load management (Latt and colleagues, 2020). When surgery is considered after months of failed conservative care, it usually involves releasing the plantar fascia, not removing the spur.',
     },
+    {
+      q: 'What happens if you keep walking on a heel spur?',
+      cites: [CITE.menzSpur, CITE.guideline],
+      a: 'Walking will not drive the spur into nearby tissue. Pain that flares with walking usually comes from the irritated plantar fascia next to the spur, not the bone itself. The 2023 guideline recommends adjusting load, like distance or pace, rather than stopping, if walking makes the heel worse the next morning.',
+    },
+    {
+      q: 'Is it good to massage heel spurs?',
+      cites: [CITE.guideline],
+      a: 'Gentle massage around a heel spur can ease soft tissue tightness, but it does not change the bone itself. Rolling the sole with firm, not sharp, pressure may loosen the fascia and calf, the tissues that usually cause the pain. The guideline grades clinician manual therapy an A; self massage is comfort care, not a substitute for stretching.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

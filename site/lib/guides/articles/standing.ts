@@ -255,6 +255,16 @@ export const STANDING_EN: Guide = {
       a: 'Among the self-care options reviewed on this page, calf and plantar fascia stretching carry the top evidence grade (A) in the 2023 heel pain guideline for heel pain specifically, and compression stockings have the strongest controlled trial behind them for standing-related discomfort. Starting with daily calf stretches and trying compression stockings on your next long shift covers both.',
       cites: [CITE.guideline, CITE.garcia],
     },
+    {
+      q: 'How long is too long to stand on your feet?',
+      a: "There's no single tested safe limit. Occupational health research finds that discomfort, fatigue, and swelling increase the longer a shift involves standing, with the clearest rise over 8- to 12-hour shifts. Comfort depends more on movement than on an hour count: short seated or walking breaks every hour or so help offset the static load standing puts on your feet.",
+      cites: [CITE.waters],
+    },
+    {
+      q: 'How can I stand for 10 hours without pain?',
+      a: 'No single trick removes pain from a 10-hour shift, but combining approaches helps most: wear cushioned, supportive shoes, add a standing mat on hard floors, take short walking breaks every hour to restart circulation, and do daily calf and plantar fascia stretching. Compression stockings reduced discomfort and swelling in one trial of security guards on long shifts.',
+      cites: [CITE.garcia, CITE.waters],
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

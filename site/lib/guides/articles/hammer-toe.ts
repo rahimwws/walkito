@@ -169,6 +169,14 @@ export const HAMMER_TOE_EN: Guide = {
       q: 'Can bunions cause hammer toes?',
       a: 'Yes. When the big toe angles outward in hallux valgus, it can push the second toe upward and out of position, contributing to a hammer toe. Addressing the bunion with wider shoes and [bunion exercises](/bunion-exercises/) may help reduce pressure on the second toe.',
     },
+    {
+      q: 'Can you massage out a hammer toe?',
+      a: 'No. Massage cannot straighten a hammer toe, flexible or rigid, because the bend is a joint position, not a soft tissue knot. Gentle massage and stretching of the toe top can ease soreness and tendon tightness, and help a flexible toe keep moving. It will not undo the deformity, so pair it with wider shoes instead of expecting it to change shape.',
+    },
+    {
+      q: 'Is walking barefoot good for hammer toe?',
+      a: 'No trial has tested this directly. Walking barefoot removes the pressure and friction of a narrow shoe on the bent joint, which can ease irritation for some people. It will not straighten a hammer toe. On hard or uneven ground, going barefoot can also load the toes differently, so introduce it gradually rather than switching all at once.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

@@ -201,6 +201,15 @@ export const CALF_RAISE_TEST_EN: Guide = {
       q: 'Can a calf raise test diagnose plantar fasciitis or Achilles tendonitis?',
       a: 'No. A low score tells you the calf fatigues early, not why. Plantar fasciitis, Achilles tendonitis, deconditioning, and recent injury can all produce a low count. Clinicians combine the result with a physical exam and history. The test measures calf endurance, not a specific condition.',
     },
+    {
+      q: 'What are signs of weak calves?',
+      cites: [CITE.silbernagelHeelRise],
+      a: 'Weak calves often show up as quick fatigue on stairs or hills, a weaker push-off when walking or running, or wobbling during single-leg balance. The clearest objective sign is the single-leg calf raise test: a clear gap between your left and right leg is easier to trust than how the calf looks or feels, and rehabilitation commonly flags a gap of more than about 10 percent.',
+    },
+    {
+      q: 'Where should you feel a calf raise?',
+      a: 'You should feel the work in the calf, both the bulkier gastrocnemius higher up and the soleus lower near the Achilles, not at the heel bone, the arch, or the knee. If you feel sharp pain at the heel or Achilles instead of calf fatigue, your form or load needs adjusting before you keep counting reps.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',

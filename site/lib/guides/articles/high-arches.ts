@@ -204,6 +204,15 @@ export const HIGH_ARCHES_EN: Guide = {
       cites: [CITE.guideline],
       a: 'High arches are listed as a risk factor for plantar fasciitis. The rigid foot puts more strain on the plantar fascia with each step, and the fascia is often tight to begin with. If your high-arched foot has pain under the heel that is worst in the morning, that pattern is consistent with plantar fasciitis and the exercises in [plantar fasciitis exercises](/plantar-fasciitis-exercises/) apply.',
     },
+    {
+      q: 'How do I tell if my arches are too high?',
+      a: 'Try a wet footprint test: wet your bare sole and step onto a flat, dry surface. A high arch leaves little or no print along the outer edge, often just the heel and ball of the foot, while a flat foot leaves almost the whole sole. A big difference between your two feet is worth mentioning to a clinician.',
+    },
+    {
+      q: 'Is it better to be flat-footed or have high arches?',
+      cites: [CITE.burnsCavusPain],
+      a: 'Neither is clearly better. A flat foot spreads load wide but can overstretch the plantar fascia and posterior tibial tendon. A high arch is rigid and concentrates force at the heel and ball of the foot. About 60 percent of people with high arches report foot pain, so foot shape alone does not predict how your feet will feel.',
+    },
   ],
   redFlags: {
     h2: 'See a clinician first if',
