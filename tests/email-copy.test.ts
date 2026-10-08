@@ -68,8 +68,8 @@ describe.each([...LOCALES])('%s', (l: Locale) => {
     expect(caps).toEqual([]);
   });
 
-  test('a plain hyphen, never a long dash', () => {
-    expect(all.filter((t) => /[—–]/.test(t))).toEqual([]);
+  test('no dash as punctuation: no long dash, no spaced hyphen', () => {
+    expect(all.filter((t) => /[—–]| - /.test(t))).toEqual([]);
   });
 
   test('no diagnosis words', () => {
@@ -169,15 +169,15 @@ describe('the emails as approved in the preview', () => {
     expect(build.welcome('en', { name: 'sam', minutes: 5, runner: false })).toMatchObject({
       subject: 'welcome to walkito',
       greeting: 'hi sam,',
-      paragraphs: ['rahim and rahman here - we built walkito, just the two of us.', "your first session takes 5 minutes. start today, it's the easiest one."],
+      paragraphs: ['rahim and rahman here. we built walkito, just the two of us.', "your first session takes 5 minutes. start today, it's the easiest one."],
       button: { label: 'open walkito', path: 'today' },
       ps: 'p.s. reply to this email. we read every one.',
     });
     expect(build.welcome('ru', { name: 'аня', minutes: 5, runner: false }).paragraphs[1]).toBe(
-      'первая сессия займёт 5 минут. начните сегодня - она самая лёгкая.',
+      'первая сессия займёт 5 минут. начните сегодня, она самая лёгкая.',
     );
     expect(build.welcome('es', { name: 'lucía', minutes: 5, runner: true }).paragraphs[1]).toBe(
-      'tu primera sesión dura 5 minutos - menos que tu calentamiento.',
+      'tu primera sesión dura 5 minutos, menos que tu calentamiento.',
     );
   });
 
