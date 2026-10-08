@@ -38,20 +38,23 @@ export function ScreenshotSlot({
 }) {
   if (src) {
     const retina = src.replace(/\.webp$/, '@2x.webp');
+    // 360 px for phones: a mockup is drawn 140-200 CSS px wide there, and the
+    // 660 px file was ~3x the pixels it needed.
+    const small = src.replace(/\.webp$/, '@360w.webp');
     return (
       <div className={`slot slot-${size} phone`}>
         <div className="phone-body">
         <div className="phone-screen">
           <img
             src={src}
-            srcSet={`${src} 660w, ${retina} 1206w`}
+            srcSet={`${small} 360w, ${src} 660w, ${retina} 1206w`}
             sizes={sizes ?? (size === 'sm' ? '(max-width: 760px) 42vw, 220px' : '(max-width: 760px) 72vw, 320px')}
             width={1206}
             height={2622}
             alt={alt ?? label}
             loading={priority ? 'eager' : 'lazy'}
             fetchPriority={priority ? 'high' : 'auto'}
-            decoding="async"
+            decoding={priority ? 'auto' : 'async'}
           />
           <span className="phone-island" aria-hidden />
         </div>
