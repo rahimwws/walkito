@@ -115,6 +115,7 @@ export const EX_SHORT_FOOT: Guide = {
     },
     {
       h2: 'What does the research say about short foot exercises?',
+      keyFact: 'In a 2023 trial of 52 people with flexible flat feet, a six-week program combining short foot exercises, ankle work, hip strengthening and stretching changed arch shape more than a control group (Brijwasi and colleagues, 2023).',
       paragraphs: [
         'The strongest evidence comes from programs that combine the short foot exercise with other exercises, not from the short foot alone. In a 2023 trial of 52 people with flexible flat feet, Brijwasi and colleagues tested a six-week program of short foot exercises, ankle work, hip strengthening and stretching. The program changed two measures of arch shape more than the control group.',
         'A 2024 meta-analysis by Cheng and colleagues looked at short foot training on its own across multiple trials. The pooled results showed no significant improvement in navicular drop or foot posture index overall. But when the reviewers restricted the analysis to programs longer than six weeks, navicular drop did improve significantly. The duration of training matters.',

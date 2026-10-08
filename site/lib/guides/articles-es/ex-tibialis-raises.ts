@@ -59,6 +59,7 @@ export const EX_TIBIALIS_RAISES_ES: Guide = {
     },
     {
       h2: '¿Las elevaciones de tibial anterior ayudan con la periostitis tibial?',
+      keyFact: 'En un estudio de casos y controles de 2007, los deportistas con periostitis tibial tenían menos resistencia en elevaciones de talón que controles comparables, lo que apunta a un déficit general de fuerza, no a un músculo concreto (Madeley y colegas, 2007).',
       paragraphs: [
         'La periostitis tibial, cuyo nombre clínico es síndrome de estrés tibial medial (SETM), es dolor a lo largo del borde interno de la tibia. El tibial anterior está en la parte delantera y externa de la tibia, no en el lugar donde suele doler el SETM, así que la relación es indirecta. La idea es que un tibial anterior más fuerte ayuda a absorber el impacto al correr y caminar, y reduce la tensión sobre la tibia en general.',
         'Un estudio de casos y controles de 2007 encontró que los deportistas con SETM tenían menos resistencia en elevaciones de talón que controles comparables, lo que apunta a un déficit general de fuerza en la parte baja de la pierna, no a la debilidad de un músculo concreto. Una revisión sistemática de 2013 estudió el tratamiento del SETM ya presente, no su prevención, y no encontró ningún ensayo que mostrara que los estiramientos o los ejercicios de fuerza funcionaran, aunque en general la evidencia detrás de ese resultado era de baja calidad.',

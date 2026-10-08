@@ -54,6 +54,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
     },
     {
       h2: 'What causes plantar fasciitis, and who gets it?',
+      keyFact: 'In a case-control study of 50 people with plantar fasciitis and 100 without, reduced ankle dorsiflexion raised the odds of plantar fasciitis 23.3 times, the strongest risk factor measured (Riddle and colleagues, 2003).',
       paragraphs: [
         'Plantar fasciitis happens when the fascia is loaded beyond what it can handle and recover from. The load can be too much at once (a sudden jump in running mileage) or steady over time (standing on a hard floor all day).',
         'A matched case-control study of 50 people with plantar fasciitis and 100 controls found that reduced ankle dorsiflexion was the strongest independent risk factor, with an odds ratio of 23.3. In a separate series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius, the bigger outer calf muscle. Prolonged standing at work raised the odds 3.6 times. Higher body mass index also raised them.',
@@ -73,6 +74,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
     },
     {
       h2: 'What helps plantar fasciitis?',
+      keyFact: 'In a trial of 48 people, loaded heel raises with a towel eased pain faster than stretching alone at three months, though by twelve months both groups were even (Rathleff and colleagues, 2015).',
       paragraphs: [
         'The 2023 clinical guideline grades each approach by how strong the evidence behind it is. The strongest recommendations are stretching, taping, manual therapy from a clinician, and night splints for persistent morning pain. Strength training comes next. The table below lists the main options with their guideline grades.',
         'No single option works for everyone. Most people start with stretching and supportive shoes, add strength work once the initial pain settles, and see a clinician about the remaining options if progress stalls. In a trial of 48 people, loaded heel raises with a towel under the toes eased pain faster than stretching alone at three months, though by twelve months both groups were even. The guideline recommends against using orthotics alone as a standalone short-term approach and against adding therapeutic ultrasound to stretching.',
@@ -99,6 +101,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
     },
     {
       h2: 'How long does plantar fasciitis last?',
+      keyFact: 'In a cohort of 174 people, about half were symptom-free by five years, and 46 percent still had some pain at ten years, most only minor (Hansen and colleagues, 2018).',
       paragraphs: [
         'A 2020 review reports that about 90 percent of people improve with non-surgical care, often within several months. A longer follow-up of 174 patients gives a more detailed picture: about half were symptom-free by five years, and 46 percent still had some pain at a mean of ten years, though most of those reported only minor symptoms.',
         'Recovery depends on how long you have had it, what you do about it, and some factors you cannot control. The Hansen 2018 cohort found that being female and having bilateral heel pain were significant predictors of slower recovery. BMI, age, fascia thickness, and the presence of a heel spur were not.',

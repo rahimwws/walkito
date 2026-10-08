@@ -215,6 +215,7 @@ export const FLAT_FEET_EN: Guide = {
     },
     {
       h2: 'How long before flat feet exercises change the arch?',
+      keyFact: 'In a trial of 52 people with flexible flat feet, six weeks of short-foot, ankle, hip and stretching work improved navicular drop by 0.4 cm and arch angle by 16 degrees more than a control group (Brijwasi and Borkar, 2023).',
       paragraphs: [
         'Flat feet exercises changed the arch after six weeks or more in the research so far, and only in flexible flat feet. In a trial of 52 people with **flexible** flat feet, a six-week program of short-foot exercises, ankle work, hip strengthening and stretching changed two measures of arch shape more than in the control group.',
         'The evidence for short-foot training on its own is thinner. A 2024 review pooled studies of short-foot training on flat feet in general. Overall, it found no clear difference from control groups in arch shape or foot posture. Only programs longer than six weeks improved how far the arch sinks under your weight, and the authors say larger studies are needed. So plan for at least six weeks, and longer if you do short-foot work on its own.',
@@ -452,6 +453,7 @@ export const HEEL_PAIN_EN: Guide = {
     },
     {
       h2: 'When is the best time to do plantar fasciitis stretches?',
+      keyFact: 'In a trial of 82 people with chronic plantar fasciitis, stretching the plantar fascia before standing eased first-step morning pain more than calf stretching alone by eight weeks (DiGiovanni and colleagues, 2003).',
       paragraphs: [
         'Before your first steps in the morning and before standing after sitting for a long time. Those are the two moments when the plantar fascia is stiffest and most likely to hurt.',
         'A 2003 trial of 82 people with chronic plantar fasciitis tested a plantar fascia-specific stretch done before weight-bearing. Patients held the stretch for 10 seconds, repeated it 10 times, three times a day, with the first set before the first step of the morning. At eight weeks, the group doing this stretch had significantly less pain on their first morning steps than the group doing a calf stretch alone. By two years, after all patients received the same stretch, both groups had improved.',
@@ -479,6 +481,7 @@ export const HEEL_PAIN_EN: Guide = {
     },
     {
       h2: 'Is strength work or stretching better for plantar fasciitis?',
+      keyFact: 'In a trial of 48 people, the heel-raise group scored 29 points lower on the Foot Function Index at three months, but by twelve months the two groups were about even (Rathleff and colleagues, 2015).',
       paragraphs: [
         'Strength work and stretching both help plantar fasciitis, and strength work helps sooner.',
         'In a trial of 48 people with plantar fasciitis confirmed by ultrasound, everyone wore shoe inserts. One group added heavy heel raises every other day. The other stretched the plantar fascia every day. At three months, the heel-raise group was clearly ahead on pain and daily function. At twelve months, the two groups were even. Strength work brought the improvement forward. It did not make it bigger.',

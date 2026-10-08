@@ -42,6 +42,7 @@ export const MORTONS_EN: Guide = {
     },
     {
       h2: 'Do metatarsal pads and shoe changes help?',
+      keyFact: 'Combining two studies in a 2019 review, wider shoes and a metatarsal pad helped about 32 percent of people at an average follow-up of four and a half months (Matthews and colleagues, 2019).',
       paragraphs: [
         "Wider shoes with a low heel and a metatarsal pad are the most commonly recommended first step for Morton's neuroma. The pad is placed just behind the metatarsal heads, not directly under them, to lift the shaft of the metatarsals and spread them apart, reducing compression on the nerve.",
         'Properly fitted footwear with a wide toe box, low heel, and metatarsal pad was assessed in two studies included in a 2019 systematic review. Combining those two studies, footwear and padding were successful in about 32 percent of people at a follow-up averaging four and a half months. However, an RCT comparing footwear and padding with corticosteroid injection found the injection group had six times greater odds of success at six months.',
@@ -52,6 +53,7 @@ export const MORTONS_EN: Guide = {
     },
     {
       h2: 'What does the injection evidence say?',
+      keyFact: 'In the 2024 Cochrane review, ultrasound-guided corticosteroid injection probably improved pain more than unguided injection, with moderate-certainty evidence at 2, 6 and 12 months (Matthews and colleagues, 2024).',
       paragraphs: [
         "Corticosteroid injection is the most studied non-surgical invasive approach for Morton's neuroma. The 2024 Cochrane review included six RCTs with 373 participants. It found low-certainty evidence that adding a corticosteroid to a local anaesthetic may result in little to no difference in pain or function at three to six months compared with local anaesthetic injection alone. The Cochrane authors noted that adding a corticosteroid may increase adverse events, including fat pad atrophy and skin changes.",
         'Ultrasound-guided injection probably improves pain compared with unguided injection, with clinically meaningful differences at 2, 6, and 12 months in the included studies. The evidence was graded moderate-certainty.',

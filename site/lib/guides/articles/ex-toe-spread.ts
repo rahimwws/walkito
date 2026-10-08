@@ -59,6 +59,7 @@ export const EX_TOE_SPREAD: Guide = {
     },
     {
       h2: 'What muscles does the toe spread exercise work?',
+      keyFact: 'A 2016 MRI study found toe spreads activated the abductor hallucis at only 18.9 percent, compared with 29.7 percent during the short foot exercise, in the same small group of athletes (Gooding and colleagues, 2016).',
       paragraphs: [
         'The toe spread targets two muscles in particular. The abductor hallucis runs along the inner edge of the foot and pulls the big toe inward (toward the midline of the body). It is also one of the main supporters of the medial longitudinal arch. The abductor digiti minimi runs along the outer edge and pulls the little toe outward.',
         'A 2016 MRI study by Gooding and colleagues tested four intrinsic foot exercises and measured activation in each muscle. The toe spread exercise produced its highest activation in the abductor digiti minimi (35.2%), followed by the adductor hallucis oblique (31.5%) and the flexor digiti minimi (30.2%). Activation of the abductor hallucis during toe spreads (18.9%) was lower than during the short foot exercise (29.7%).',

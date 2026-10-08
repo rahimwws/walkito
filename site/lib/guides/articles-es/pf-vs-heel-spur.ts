@@ -45,6 +45,7 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
     },
     {
       h2: '¿Los espolones calcáneos realmente causan dolor?',
+      keyFact: 'En un estudio con 530\u00A0personas con dolor de pie, un espolón solo en la radiografía apareció en apenas el 6\u00A0% de los pies, casi siempre junto con una fascia plantar engrosada (Menz y colegas, 2019).',
       paragraphs: [
         'La mayoría de los espolones calcáneos no causan dolor. La investigación muestra de forma consistente que los espolones aparecen en personas sin síntomas de talón, y que quitar el espolón no detiene el dolor de manera confiable.',
         'En un estudio con 530\u00A0personas de 50\u00A0años o más que reportaron dolor de pie, las radiografías encontraron un espolón calcáneo en el 26,5\u00A0% de los pies y el ultrasonido encontró una fascia plantar engrosada en el 47,3\u00A0% de los pies. Los dos hallazgos casi siempre iban juntos, y un espolón solo era raro (6\u00A0% de los pies). Las personas con dolor de talón tenían el doble de probabilidades de tener los dos hallazgos juntos (Menz y colegas, 2019). Dicho de otra forma, el espolón rara vez aparece sin el cambio de tejido blando que lo acompaña.',
@@ -57,6 +58,7 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
     },
     {
       h2: '¿Qué tan común es tener un espolón calcáneo sin dolor?',
+      keyFact: 'En un estudio de resonancia magnética con 77\u00A0personas sin síntomas, el 19\u00A0% tenía un espolón calcáneo, lo que muestra que los espolones son comunes incluso sin dolor de talón (Ehrmann y colegas, 2014).',
       paragraphs: [
         'Los espolones calcáneos son comunes. La frecuencia depende del grupo de edad y del método que se use para buscarlos.',
         'El estudio de Menz de 2008 con adultos mayores cita investigaciones anteriores que reportaron una frecuencia de espolón calcáneo del 11 al 16\u00A0% en la población general, un rango muy por debajo del 55\u00A0% que los autores encontraron en su muestra de 216\u00A0personas de 62 a 94\u00A0años. Un estudio de resonancia magnética aparte, con 77\u00A0voluntarios sin síntomas (edad promedio 48, rango de 23 a 83), encontró un espolón calcáneo en 15 de ellos, el 19\u00A0% (Ehrmann y colegas, 2014).',
@@ -84,6 +86,7 @@ export const PF_VS_HEEL_SPUR_ES: Guide = {
     },
     {
       h2: 'Si el espolón no es el problema, ¿qué es?',
+      keyFact: 'En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la dorsiflexión de tobillo reducida tuvo la razón de probabilidades más alta de todos los factores medidos, y estar de pie mucho tiempo multiplicó por 3,6 las probabilidades (Riddle y colegas, 2003).',
       paragraphs: [
         'El dolor suele venir de la fascia plantar y los tejidos que la rodean, no del hueso. La fascia plantar se une a la parte inferior del hueso del talón. Cuando se sobrecarga, sobre todo en alguien con la pantorrilla tensa, un IMC alto o muchas horas de pie, ese punto de unión se irrita. Esa irritación es la fascitis plantar.',
         'Una pantorrilla tensa es uno de los factores de riesgo más fuertes. En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, una dorsiflexión de tobillo reducida, es decir, cuánto puede subir el pie hacia la tibia, tuvo la razón de probabilidades más alta de todos los factores medidos. Estar de pie la mayor parte de la jornada laboral también fue significativo, con 3,6\u00A0veces las probabilidades (Riddle y colegas, 2003).',

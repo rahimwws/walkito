@@ -32,6 +32,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
   sections: [
     {
       h2: '¿Qué mide el test de elevación de talón a una pierna?',
+      keyFact: 'En un estudio de casos y controles con 20\u00A0atletas, los que tenían síndrome de estrés tibial medial (periostitis tibial) mostraron menos resistencia de pantorrilla que los controles sanos (Madeley y colegas, 2007).',
       paragraphs: [
         'El test mide la resistencia de los flexores plantares, los músculos que empujan el pie hacia abajo y levantan el talón del piso. Los principales son el gastrocnemio (el músculo más grande y externo de la pantorrilla) y el sóleo (el más profundo, debajo de él). Juntos se unen al hueso del talón a través del tendón de Aquiles.',
         'Aquí, resistencia quiere decir cuántas repeticiones puedes hacer antes de que la pantorrilla se canse y el talón ya no suba lo suficiente o no siga el ritmo. El número muestra la capacidad de aguantar el trabajo durante decenas de repeticiones, que se parece más a lo que hace la pantorrilla al caminar y correr que un solo empujón con mucho peso.',
@@ -74,6 +75,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
     },
     {
       h2: '¿Cuántas elevaciones de talón a una pierna deberías poder hacer?',
+      keyFact: 'En 1995, un estudio con 203\u00A0adultos de 20 a 59\u00A0años propuso 25\u00A0repeticiones como referencia de un rendimiento normal en la elevación de talón a una pierna (Lunsford y Perry, 1995).',
       paragraphs: [
         'La tabla de abajo muestra la mediana de repeticiones de elevación de talón a una pierna según la edad y el sexo, de Hebert-Losier 2017. Son estimaciones del modelo para una persona con un nivel de actividad física moderado (nivel 4 en una escala de 6 puntos) y un índice de masa corporal de 24,2, con el promedio de las dos piernas.',
         'Los niveles de actividad más altos suman de cinco a nueve repeticiones a la mediana. En 1995, Lunsford y Perry evaluaron a 203 adultos de 20 a 59 años y recomendaron 25 repeticiones como criterio de un resultado normal. Los datos de Hebert-Losier respaldan esa cifra como una referencia razonable para adultos, aunque es una mediana de la población, no una línea de aprobado o reprobado. Tu propio punto de partida y hacia dónde vas importan más que cualquier número suelto.',
@@ -97,6 +99,7 @@ export const CALF_RAISE_TEST_ES: Guide = {
     },
     {
       h2: '¿Tu pierna izquierda y la derecha deberían dar lo mismo?',
+      keyFact: 'En un estudio con 78\u00A0personas tras una rotura del tendón de Aquiles, la simetría promedio a los seis meses fue del 84\u00A0% en repeticiones pero solo del 61\u00A0% en trabajo total, lo que muestra que contar repeticiones puede subestimar un déficit (Silbernagel y colegas, 2010).',
       paragraphs: [
         'Casi lo mismo, sí. En el estudio de Hebert-Losier, la mediana de la diferencia entre la derecha y la izquierda fue de una repetición, y el error de medición típico fue de unas dos repeticiones. Una diferencia tan pequeña es ruido.',
         'En la rehabilitación de la pierna, un índice de simetría entre extremidades (LSI) del 90\u00A0% o más es la referencia habitual de una función normal. El LSI es el lado más débil dividido entre el más fuerte, por 100. Menos del 90\u00A0% quiere decir que un lado es más de un 10\u00A0% más débil. Silbernagel y colegas usaron este umbral en 78 pacientes después de una rotura del tendón de Aquiles: a los 6\u00A0meses, los pacientes tenían en promedio un LSI del 84\u00A0% en repeticiones y solo del 61\u00A0% en trabajo total, lo que muestra que contar solo las repeticiones puede subestimar un déficit.',

@@ -42,6 +42,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
   sections: [
     {
       h2: 'What does the single-leg calf raise test measure?',
+      keyFact: 'In a case-control study of 20 athletes, those with medial tibial stress syndrome (shin splints) showed lower calf endurance than healthy controls (Madeley and colleagues, 2007).',
       paragraphs: [
         'The test measures the endurance of the plantar flexors, the muscles that push the foot down and lift the heel off the ground. The main muscles are the gastrocnemius (the bigger outer calf muscle) and the soleus (the deeper one underneath it). Together they connect to the heel bone through the Achilles tendon.',
         'Endurance here means how many repetitions you can complete before the calf fatigues and the heel can no longer rise high enough or keep pace. The count captures the ability to sustain work over dozens of cycles, which is closer to what the calf does during walking and running than a single heavy push.',
@@ -84,6 +85,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
     },
     {
       h2: 'How many single-leg calf raises should you be able to do?',
+      keyFact: 'In 1995, a study of 203 adults aged 20 to 59 proposed 25 repetitions as the benchmark for normal single-leg heel-rise performance (Lunsford and Perry, 1995).',
       paragraphs: [
         'The table below shows the median number of single-leg heel-rise repetitions by age and sex, from Hebert-Losier 2017. These are model estimates for a person with a moderate physical activity level (level 4 on a 6-point scale) and a body mass index of 24.2, averaged across both legs.',
         'Higher activity levels add roughly five to nine reps to the median. In 1995, Lunsford and Perry tested 203 adults aged 20 to 59 and recommended 25 repetitions as the criterion for normal performance. The Hebert-Losier data support that figure as a reasonable adult reference, though it is a population-level median, not a pass-fail line. Your own baseline and the direction of change matter more than any single number.',
@@ -107,6 +109,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
     },
     {
       h2: 'Should your left and right leg score the same?',
+      keyFact: 'In a study of 78 people after Achilles tendon rupture, average limb symmetry at six months was 84% by rep count but only 61% by total work, showing rep counts alone can underestimate a deficit (Silbernagel and colleagues, 2010).',
       paragraphs: [
         'Close to the same, yes. In the Hebert-Losier study, the median difference between right and left was one repetition, and the typical measurement error was about two reps. A gap that small is noise.',
         'In lower-limb rehabilitation, a limb symmetry index (LSI) of 90 percent or higher is the standard benchmark for normal function. LSI is the weaker side divided by the stronger side, times 100. Below 90 percent means one side is more than 10 percent weaker. Silbernagel and colleagues used this threshold in 78 patients after Achilles tendon rupture: at 6 months, patients averaged an LSI of 84 percent on repetitions and only 61 percent on total work, showing that counting reps alone can underestimate a deficit.',

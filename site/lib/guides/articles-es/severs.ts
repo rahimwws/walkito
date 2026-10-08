@@ -60,6 +60,7 @@ export const SEVERS_ES: Guide = {
     },
     {
       h2: '¿Qué ayuda en la enfermedad de Sever? La evidencia',
+      keyFact: 'En un ensayo con 101\u00A0niños, los tres enfoques mejoraron el dolor, y el grupo de la plantilla reportó más satisfacción a las seis semanas, aunque la diferencia desapareció a los tres meses (Wiegerinck y colegas, 2016).',
       paragraphs: [
         'La base de evidencia para la enfermedad de Sever es pequeña pero va creciendo. Las tres opciones principales estudiadas son el manejo de la carga (reducir la actividad que causa dolor), las taloneras o plantillas, y los estiramientos o ejercicios de fortalecimiento. Las tres han mostrado beneficio, y ninguna ha demostrado ser claramente mejor que las otras al final del seguimiento.',
         'En un ensayo de 2016 con 101\u00A0niños de 8 a 15\u00A0años, Wiegerinck y colegas compararon tres enfoques: esperar y observar con el consejo de dejar la actividad dolorosa, una plantilla con elevación de talón y ejercicios excéntricos supervisados. Los tres grupos mejoraron de forma significativa. A las seis semanas, el grupo de la plantilla estaba más satisfecho que los otros dos. A los tres meses, no quedaba una diferencia clínicamente relevante entre los tres.',
@@ -81,6 +82,7 @@ export const SEVERS_ES: Guide = {
     },
     {
       h2: 'Taloneras y plantillas',
+      keyFact: 'Un ensayo cruzado con 51\u00A0niños varones encontró que una talonera redujo el dolor en un 80\u00A0por ciento frente a una cuña de talón, lo que sugiere que la absorción del impacto importa más que el ángulo del talón (Perhamre y colegas, 2011).',
       paragraphs: [
         'Las taloneras son una de las intervenciones más prácticas para la enfermedad de Sever. Amortiguan el talón, absorben el impacto y reducen las fuerzas de pico que llegan a la placa de crecimiento. El ensayo cruzado de Perhamre encontró que una talonera redujo el dolor en un 80\u00A0por ciento en comparación con una cuña de talón en 51\u00A0niños, lo que sugiere que la absorción del impacto en el talón importa más que simplemente cambiar el ángulo del talón.',
         'En el ensayo factorial de James, las elevaciones de talón (un tipo de plantilla que levanta el talón) mostraron una pequeña ventaja a corto plazo frente a las plantillas prefabricadas a los 2\u00A0meses, pero no a los 12\u00A0meses. Las plantillas a medida no se probaron en ninguno de estos ensayos.',

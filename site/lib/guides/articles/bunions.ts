@@ -31,6 +31,7 @@ export const BUNIONS_EN: Guide = {
     },
     {
       h2: 'What does the research say about bunion exercises?',
+      keyFact: 'A trial of 60 women (120 feet) comparing one month of night splinting, exercise, or electrical stimulation found all three improved pain and function, but splinting outperformed exercise and electrotherapy (Külünkoğlu and colleagues, 2021).',
       paragraphs: [
         'The best evidence comes from a handful of small trials. None is large, and none followed participants for more than a year.',
         'Kim and colleagues (2015) randomly assigned 24 people with mild to moderate hallux valgus to either an orthosis alone or an orthosis plus toe-spread-out exercises for 8 weeks. The exercise group reduced their hallux valgus angle by an average of 3.4 degrees and increased the cross-sectional area of the abductor hallucis muscle. The orthosis-only group showed no significant change on either measure. The study was small and included mostly young adults with mild bunions.',
@@ -43,6 +44,7 @@ export const BUNIONS_EN: Guide = {
     },
     {
       h2: 'Do toe spacers work for bunions?',
+      keyFact: 'In a study of 30 women with painful hallux valgus, a toe-separator insole reduced pain significantly over three months, while a separate night-splint group did not improve (Tehraninasr and colleagues, 2008).',
       paragraphs: [
         'Toe spacers, also called toe separators, sit between the big toe and the second toe. They reduce friction, relieve pressure on the bunion, and gently push the big toe away from the second toe while worn.',
         'Tehraninasr and colleagues (2008) studied 30 women with painful hallux valgus over a 3-month period. One group wore an insole with a built-in toe separator, and a separate group wore a night splint instead. Pain dropped significantly in the toe-separator group but not in the night-splint group. Neither group had a statistically significant change in the hallux valgus angle. Abdalbary\'s trial paired a toe separator with manual therapy and exercise, so it does not isolate what the separator did on its own.',

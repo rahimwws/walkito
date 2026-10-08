@@ -59,6 +59,7 @@ export const EX_BIG_TOE_LIFT: Guide = {
     },
     {
       h2: 'What muscles does the big toe lift work?',
+      keyFact: 'A 2016 MRI study measured big toe lifts in a small group of athletes and found they activated all three intrinsic plantar muscles tested, with the flexor digitorum brevis showing the highest activation at 18.1 percent (Gooding and colleagues, 2016).',
       paragraphs: [
         'The muscles that lift the big toe are the extensor hallucis longus (which runs from the shin) and the extensor hallucis brevis (which sits on top of the foot). But the exercise also works the muscles that hold the other toes down, and that is where the real training happens.',
         'A 2016 MRI study by Gooding and colleagues found that the first-toe extension exercise activated the flexor digitorum brevis (18.1%), the abductor hallucis (16.9%) and the flexor digiti minimi (16.3%). The intrinsic plantar muscles were working to keep the smaller toes flat while the big toe lifted.',

@@ -36,6 +36,7 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
     },
     {
       h2: '¿Qué más causa dolor de talón en la mañana?',
+      keyFact: 'En una cohorte de 174\u00A0personas con fascitis plantar seguidas una media de 9,7\u00A0años, tener dolor en los dos talones predijo un peor pronóstico a largo plazo, y los autores señalaron que podría reflejar una enfermedad inflamatoria sistémica no detectada (Hansen y colegas, 2018).',
       paragraphs: [
         'La fascitis plantar es la causa más común del dolor de talón por la mañana, pero no es la única. Dónde está el dolor y cómo se comporta ayudan a distinguirlas.',
         '**Tendinitis de Aquiles.** Dolor en la parte de atrás del talón o en el tendón que está arriba, no bajo el pie. El tendón de Aquiles se pone rígido durante la noche igual que la fascia plantar, así que la rigidez en los primeros pasos es común. Suele mejorar al caminar y después empeora otra vez con la actividad larga. Si el dolor está detrás del talón y no debajo, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
@@ -49,6 +50,7 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
     },
     {
       h2: '¿Qué puedes hacer antes del primer paso?',
+      keyFact: 'En un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100\u00A0sin ella, la menor flexibilidad del tobillo tuvo la razón de probabilidades más alta de todos los factores medidos (Riddle y colegas, 2003).',
       paragraphs: [
         'Lo más útil que puedes hacer contra el dolor de talón por la mañana pasa antes de que el pie toque el piso. La guía de 2023 para el dolor de talón le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, **A**, y la mañana es el momento que más repite cuando recomienda estirar.',
         'Siéntate en la orilla de la cama. Cruza un tobillo sobre la rodilla contraria y jala los dedos hacia atrás con suavidad, con una mano, hasta sentir un estiramiento a lo largo del arco. Mantén unos 10\u00A0segundos y suelta. Hazlo 10\u00A0veces con cada pie. Así cargas la fascia despacio y con control antes de pedirle que aguante todo tu peso.',
@@ -98,6 +100,7 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
     },
     {
       h2: '¿Las férulas nocturnas ayudan con el dolor de talón por la mañana?',
+      keyFact: 'La guía de 2023 les da a las férulas nocturnas, usadas de uno a tres meses, su grado más alto, A, para quienes siguen con dolor en los primeros pasos de la mañana a pesar de estirar (Koc y colegas, 2023).',
       paragraphs: [
         'Las férulas nocturnas mantienen el pie en ángulo recto mientras duermes, para que la fascia plantar y la pantorrilla se queden suavemente estiradas en lugar de acortarse durante la noche. La idea es sencilla: si el dolor de la mañana viene de que la fascia se pone rígida en reposo, mantenerla estirada debería quitar parte del golpe de los primeros pasos.',
         'La guía de 2023 para el dolor de talón les da a las férulas nocturnas un grado **A** para las personas cuyos primeros pasos de la mañana siguen doliendo a pesar de estirar y de otros cuidados conservadores. El tiempo recomendado es de 1 a 3\u00A0meses. La mayoría de las férulas nocturnas son una bota rígida o semirrígida que mantiene el pie hacia arriba.',

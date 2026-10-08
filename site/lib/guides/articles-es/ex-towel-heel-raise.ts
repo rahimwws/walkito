@@ -95,6 +95,7 @@ export const EX_TOWEL_HEEL_RAISE_ES: Guide = {
     },
     {
       h2: '¿Qué dice la investigación sobre la elevación de talones con toalla?',
+      keyFact: 'En un ensayo con 48\u00A0personas con fascitis plantar confirmada, las elevaciones de talones con toalla puntuaron mejor en el Foot Function Index a los tres meses, pero los resultados se igualaron con solo estirar a los doce meses (Rathleff y colegas, 2015).',
       paragraphs: [
         'El ensayo de Rathleff de 2015 es el único ensayo aleatorizado que probó la elevación de talones con toalla específicamente para la fascitis plantar. En 48\u00A0personas con fascitis plantar confirmada por ultrasonido, el grupo de las elevaciones puntuó 29\u00A0puntos mejor en el Foot Function Index a los tres meses que el grupo que solo estiraba. A los doce meses, los dos grupos estaban igualados.',
         'La guía de 2023 para el dolor de talón revisó esta y otras pruebas y le dio al entrenamiento de fuerza un grado **B** y al estiramiento un grado **A**. Recomienda los dos. La guía no menciona por separado la versión con toalla, pero es el único ejercicio de fuerza probado en su propio ensayo sobre fascitis plantar.',

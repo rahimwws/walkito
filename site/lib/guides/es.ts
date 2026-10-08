@@ -219,6 +219,7 @@ export const FLAT_FEET_ES: Guide = {
     },
     {
       h2: '¿Cuánto tardan los ejercicios para pie plano en cambiar el arco?',
+      keyFact: 'En un ensayo con 52\u00A0personas con pie plano flexible, seis semanas de pie corto, tobillo, cadera y estiramientos mejoraron la caída del navicular en 0,4\u00A0cm y el ángulo del arco en 16\u00A0grados más que en el grupo de control (Brijwasi y Borkar, 2023).',
       paragraphs: [
         'En la investigación hasta ahora, los ejercicios para pie plano cambiaron el arco después de seis semanas o más, y solo en pie plano flexible. En un ensayo con 52\u00A0personas con pie plano **flexible**, un programa de seis semanas de pie corto, trabajo de tobillo, fortalecimiento de cadera y estiramientos cambió dos medidas de la forma del arco más que en el grupo de control.',
         'La evidencia sobre el pie corto por sí solo es más escasa. Una revisión de 2024 juntó estudios sobre entrenamiento de pie corto en pie plano en general. En conjunto, no encontró una diferencia clara con los grupos de control en la forma del arco ni en la postura del pie. Solo los programas de más de seis semanas mejoraron cuánto se hunde el arco bajo tu peso, y los autores dicen que hacen falta estudios más grandes. Así que cuenta con al menos seis semanas, y más si haces solo pie corto.',
@@ -431,6 +432,7 @@ export const HEEL_PAIN_ES: Guide = {
     },
     {
       h2: '¿Cuál es el mejor momento para estirar con fascitis plantar?',
+      keyFact: 'En un ensayo con 82\u00A0personas con fascitis plantar crónica, estirar la fascia plantar antes de apoyar el peso redujo el dolor en los primeros pasos de la mañana más que solo estirar la pantorrilla, a las ocho semanas (DiGiovanni y colegas, 2003).',
       paragraphs: [
         'Antes de tus primeros pasos de la mañana y antes de pararte después de estar sentado mucho rato. Esos son los dos momentos en que la fascia plantar está más rígida y es más probable que duela.',
         'Un ensayo de 2003 con 82\u00A0personas con fascitis plantar crónica probó un estiramiento específico de la fascia plantar hecho antes de apoyar el peso. Los pacientes mantenían el estiramiento 10\u00A0segundos, lo repetían 10\u00A0veces, tres veces al día, con la primera serie antes del primer paso de la mañana. A las ocho semanas, el grupo que hacía este estiramiento tenía significativamente menos dolor en sus primeros pasos de la mañana que el grupo que solo estiraba la pantorrilla. A los dos años, después de que todos los pacientes recibieron el mismo estiramiento, los dos grupos habían mejorado.',
@@ -466,6 +468,7 @@ export const HEEL_PAIN_ES: Guide = {
     },
     {
       h2: '¿Qué es mejor para la fascitis plantar, la fuerza o el estiramiento?',
+      keyFact: 'En un ensayo con 48\u00A0personas, el grupo de las elevaciones de talón anotó 29\u00A0puntos menos en el Foot Function Index a los tres meses, pero a los doce meses los dos grupos estaban casi igualados (Rathleff y colegas, 2015).',
       paragraphs: [
         'El trabajo de fuerza y el estiramiento ayudan los dos con la fascitis plantar, y la fuerza ayuda antes.',
         'En un ensayo con 48\u00A0personas con fascitis plantar confirmada por ultrasonido, todos usaron plantillas. Un grupo añadió elevaciones de talón con carga alta un día sí y un día no. El otro estiró la fascia plantar todos los días. A los tres meses, el grupo de las elevaciones iba claramente adelante en dolor y función diaria. A los doce meses, los dos grupos estaban igualados. La fuerza adelantó la mejora. No la hizo más grande.',

@@ -84,6 +84,7 @@ export const EX_SINGLE_LEG_BALANCE_ES: Guide = {
     },
     {
       h2: '¿Por qué importa el equilibrio para el dolor de pies?',
+      keyFact: 'En los esguinces de tobillo, un metanálisis de 8 estudios y 3577 deportistas encontró que el entrenamiento de equilibrio reduce el riesgo de esguince un 46 % frente a no intervenir (Bellows y colegas, 2018).',
       paragraphs: [
         'El equilibrio no está separado de la fuerza del pie. Cuando te paras en una pierna, los músculos intrínsecos del pie (los músculos pequeños dentro del pie que sostienen el arco), los músculos de la pantorrilla, el tibial anterior y los estabilizadores de la cadera trabajan juntos. Un déficit en cualquier punto de esa cadena hace que el pie compense.',
         'En la fascitis plantar y el pie plano, el entrenamiento de equilibrio aparece en los programas junto con estiramientos y fortalecimiento porque entrena toda la cadena a la vez. Un ensayo de 2023 con 52\u00A0personas con pie plano flexible encontró que un programa que combinaba ejercicios de pie corto, trabajo de tobillo, fortalecimiento de cadera, estiramientos y equilibrio cambió la forma del arco más que un grupo de control. El equilibrio no se probó por separado en ese ensayo, pero era parte del programa que funcionó.',

@@ -31,6 +31,7 @@ export const TOP_OF_FOOT_ES: Guide = {
   sections: [
     {
       h2: '¿Qué causa el dolor en el empeine del pie?',
+      keyFact: 'Una fractura por estrés de un metatarsiano puede no aparecer en una radiografía simple hasta dos o tres semanas después de empezar los síntomas, por lo que una resonancia magnética puede confirmarla antes (Patel y colegas, 2011).',
       paragraphs: [
         '**Tendinitis de los extensores** es la causa más común. Los tendones extensores recorren el empeine del pie desde la tibia hasta los dedos. Levantan los dedos y el pie al caminar. Cuando se irritan, sientes un dolor a lo largo del empeine que empeora con la actividad y muchas veces duele cuando jalas los dedos hacia arriba contra resistencia. Los detonantes habituales son cordones de zapato que presionan directo sobre los tendones, un aumento repentino en la distancia que caminas o corres, o zapatos con una lengüeta rígida.',
         '**Fractura por estrés de un metatarsiano** es una pequeña fisura en uno de los huesos largos del pie, casi siempre en el segundo o el tercero. El dolor está más localizado que el de la tendinitis, se centra en un solo punto y tiende a empeorar a lo largo del día. La hinchazón en el empeine es común. Las fracturas por estrés pueden tardar dos o tres semanas en aparecer en una radiografía simple, así que los estudios tempranos pueden necesitar una resonancia magnética. Este caso requiere reposo, no ejercicio.',

@@ -112,6 +112,7 @@ export const EX_CALF_RAISES_ES: Guide = {
     },
     {
       h2: '¿Cuántas elevaciones de talón debes hacer?',
+      keyFact: 'Un estudio de valores normales con 566\u00A0adultos sanos de 20 a 81\u00A0años encontró que el número de elevaciones a una pierna variaba con la edad, el sexo y la actividad, con una mediana de 21\u00A0repeticiones en mujeres (Hebert-Losier y colegas, 2017).',
       paragraphs: [
         'Depende de en qué paso de la escalera estés y de qué estés trabajando. Para la fuerza general de la pantorrilla, 3\u00A0series de 10 a 15\u00A0repeticiones a ritmo lento es una dosis de inicio común. En el protocolo para fascitis plantar que se probó en un ensayo, la elevación de talones con toalla empieza con 3\u00A0series a un máximo de 12\u00A0repeticiones (12RM) y sube a 5\u00A0series a 8RM en unas cinco semanas.',
         'Una referencia útil es la prueba de resistencia de elevación de talón a una pierna. Un estudio de valores normales con 566\u00A0adultos sanos encontró una mediana de 24\u00A0repeticiones en hombres y 21 en mujeres, con cambios según la edad, el sexo y la actividad. La meta de pantorrilla en la app de Walkito son 25\u00A0elevaciones de talón a una pierna. Alcanzarla no termina el trabajo. Pasa a mantenimiento.',

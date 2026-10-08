@@ -32,6 +32,7 @@ export const STANDING_DESK_EN: Guide = {
   sections: [
     {
       h2: 'Why do your feet hurt from a standing desk?',
+      keyFact: 'A 2017 systematic review of 25 studies found low-back symptoms became clinically relevant after about 71 minutes of standing in general, but only 42 minutes in people prone to standing pain (Coenen and colleagues, 2017).',
       paragraphs: [
         'Standing desk foot pain happens for the same reason any prolonged standing hurts: your feet, calves and lower legs carry a static load without the relief that walking or sitting provides. When you stand still, gravity pools blood in the lower legs, the calf muscles hold the same position without contracting and relaxing, and the plantar fascia under the arch absorbs a steady load.',
         'A 2017 systematic review of 25 laboratory studies pooled data from 591 participants and found that clinically relevant levels of low-back symptoms developed after about 71 minutes of uninterrupted standing in the general population, but only 42 minutes in people who tend to develop pain while standing. For lower-limb symptoms, the picture was similar. The authors recommended a threshold of 40 minutes as a practical limit before breaking up standing time.',
@@ -41,6 +42,7 @@ export const STANDING_DESK_EN: Guide = {
     },
     {
       h2: 'How long should you stand at a standing desk before sitting down?',
+      keyFact: 'A 2015 expert statement recommends building toward 2 hours per day of standing and light activity, progressing eventually to 4 hours, broken into shorter bouts (Buckley and colleagues, 2015).',
       paragraphs: [
         'There is no single answer that fits everyone, but the research narrows it down. A 2015 expert statement commissioned by Public Health England and the Active Working Community Interest Company recommended that desk-based workers initially build toward accumulating 2 hours per day of standing and light activity during working hours, eventually progressing to 4 hours per day. The statement specified that standing should be broken into shorter bouts, not done in one stretch.',
         'The 2017 review of laboratory studies suggests that 40 minutes of continuous standing is the point where symptoms start to become clinically relevant. Putting those together, a practical starting point is standing for 20 to 30 minutes, sitting for 20 to 30 minutes, and repeating through the day, adjusting as your body adapts.',
@@ -69,6 +71,7 @@ export const STANDING_DESK_EN: Guide = {
     },
     {
       h2: 'What exercises can you do at your desk for standing-related foot pain?',
+      keyFact: 'The 2023 heel pain guideline grades calf and plantar fascia stretching A, its top grade, and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
         'These exercises target the calf, the plantar fascia and the small muscles of the foot. Some of them can be done at your desk during a sitting break. Others are better done away from the desk at a separate time. If any exercise brings your pain to 6 out of 10 or higher, stop for the day.',
         'The 2023 heel pain guideline gives calf and plantar fascia stretching its top grade, A, and strength training a B. Both are for plantar fasciitis specifically, but the same tissues take the load during standing desk work. For the full plantar fasciitis exercise list, see [plantar fasciitis exercises and stretches](/plantar-fasciitis-exercises/).',

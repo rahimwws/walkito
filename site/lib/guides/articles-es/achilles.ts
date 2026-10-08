@@ -63,6 +63,7 @@ export const ACHILLES_ES: Guide = {
     },
     {
       h2: '¿La resistencia pesada y lenta funciona igual que los excéntricos?',
+      keyFact: 'Un ensayo de 2015 con 58\u00A0personas encontró que la resistencia pesada y lenta tres días a la semana dio resultados duraderos igual de buenos que el protocolo excéntrico clásico de dos veces al día (Beyer y colegas, 2015).',
       paragraphs: [
         'Sí, según la evidencia actual. Un ensayo de 2015 con 58\u00A0personas comparó la resistencia pesada y lenta (HSR, por sus siglas en inglés), hecha 3\u00A0días a la semana, con el protocolo excéntrico clásico de dos veces al día. La conclusión: «Tanto el ECC tradicional como el HSR dan resultados clínicos positivos, igual de buenos y duraderos en pacientes con tendinopatía de Aquiles».',
         'Un metaanálisis en red de 2021 con 29\u00A0ensayos no encontró una diferencia clínicamente relevante entre ningún tipo de ejercicio activo a los 3 ni a los 12\u00A0meses. Todos fueron mejores que no hacer nada. Ningún ensayo tenía bajo riesgo de sesgo. Los autores recomendaron empezar con un programa de ejercicios para la pantorrilla porque es barato y tiene pocos riesgos.',
@@ -166,6 +167,7 @@ export const ACHILLES_ES: Guide = {
     },
     {
       h2: '¿Cuánto dolor es normal en los ejercicios para el Aquiles?',
+      keyFact: 'En un ensayo con 38\u00A0personas, quienes siguieron corriendo bajo una regla de control del dolor, permitiendo hasta unos 5 de 10 que se calmaba para la mañana, mejoraron tanto a los doce meses como quienes descansaron primero (Silbernagel y colegas, 2007).',
       paragraphs: [
         'En Silbernagel 2007, 38\u00A0personas con dolor de Aquiles se dividieron en dos grupos. Uno siguió corriendo y saltando durante la rehabilitación, con la regla de que el dolor durante y después de la carga podía llegar a unos **5 de 10**, siempre que volviera a su nivel habitual para la mañana siguiente y no empeorara semana a semana. El otro grupo primero descansó. Los dos mejoraron de forma significativa a los 12\u00A0meses, sin diferencia entre ellos.',
         'Este límite es distinto de la regla de parar en 6/10 de la página de [fascitis plantar](/es/ejercicios-fascitis-plantar/), que viene de otra guía. La cifra de 5/10 es de un solo estudio, no un estándar universal, pero es el modelo de dolor más citado en la rehabilitación del Aquiles.',
@@ -175,6 +177,7 @@ export const ACHILLES_ES: Guide = {
     },
     {
       h2: '¿Tu dolor está en la mitad del tendón o en el hueso del talón, y por qué eso cambia el ejercicio?',
+      keyFact: 'En un estudio piloto de 27\u00A0personas con dolor insercional del Aquiles, la carga excéntrica a nivel del piso sin dorsiflexión profunda dio buenos resultados en el 67\u00A0% de los casos (Jonsson y colegas, 2008).',
       paragraphs: [
         'La tendinopatía de Aquiles en la porción media está en el cuerpo del tendón, normalmente de 2 a 6\u00A0centímetros por encima del hueso del talón. Los excéntricos clásicos y la resistencia pesada y lenta tienen su mejor evidencia aquí. Los descensos de talón desde la orilla de un escalón son adecuados para el dolor en la porción media.',
         'La tendinopatía de Aquiles insercional es dolor justo donde el tendón se une al hueso. En un estudio piloto de 2008 con 27\u00A0personas (34\u00A0tendones) con dolor insercional crónico, un protocolo modificado con carga excéntrica solo a nivel del piso, sin dorsiflexión más allá de la posición neutra, reportó buenos resultados en el 67\u00A0por ciento de los casos. Una dorsiflexión profunda aprieta el tendón contra el hueso del talón, y eso irrita la inserción.',

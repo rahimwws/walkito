@@ -63,6 +63,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
     },
     {
       h2: 'Do heel spurs actually cause pain?',
+      keyFact: 'In a study of 530 people with foot pain, a heel spur on X-ray appeared alone in only 6 percent of feet, usually alongside a thickened plantar fascia (Menz and colleagues, 2019).',
       paragraphs: [
         'Most heel spurs do not cause pain. The research consistently shows that spurs are found in people with no heel symptoms, and that removing the spur does not reliably stop the pain.',
         'In a study of 530 people aged 50 and over who reported foot pain, X-rays found a heel spur in 26.5% of feet and ultrasound found a thickened plantar fascia in 47.3% of feet. The two usually came together, and a spur on its own was rare (6% of feet). People with heel pain were about twice as likely to have both findings together (Menz and colleagues, 2019). In other words, the spur rarely shows up without the soft tissue change that goes with it.',
@@ -75,6 +76,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
     },
     {
       h2: 'How common are heel spurs in people without pain?',
+      keyFact: 'In an MRI study of 77 people with no symptoms, 19 percent had a calcaneal spur, showing spurs are common even without heel pain (Ehrmann and colleagues, 2014).',
       paragraphs: [
         'Heel spurs are common. Prevalence depends on the age group and the method used to look for them.',
         'The Menz 2008 study of older adults cites earlier research reporting heel spur prevalence of 11 to 16% in the general population, a range well below the 55% the authors found in their own sample of 216 people aged 62 to 94. A separate MRI study of 77 asymptomatic volunteers (mean age 48, range 23 to 83) found a calcaneal spur in 15 of them, 19% (Ehrmann and colleagues, 2014).',
@@ -102,6 +104,7 @@ export const PF_VS_HEEL_SPUR_EN: Guide = {
     },
     {
       h2: 'If the spur is not the problem, what is?',
+      keyFact: 'In a case-control study of 50 people with plantar fasciitis and 100 without, reduced ankle dorsiflexion had the highest odds ratio of any factor measured, and prolonged standing raised the odds 3.6 times (Riddle and colleagues, 2003).',
       paragraphs: [
         'The pain usually comes from the plantar fascia and the tissues around it, not from the bone. The plantar fascia attaches to the bottom of the heel bone. When it is overloaded, especially in someone with a tight calf, high BMI or long hours on their feet, that attachment point becomes irritated. That irritation is plantar fasciitis.',
         'A tight calf is one of the strongest risk factors. In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion, how far the foot bends up toward the shin, had the highest odds ratio of any factor measured. Standing for most of the working day was also significant, at 3.6 times the odds (Riddle and colleagues, 2003).',

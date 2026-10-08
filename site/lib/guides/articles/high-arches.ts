@@ -59,6 +59,7 @@ export const HIGH_ARCHES_EN: Guide = {
     },
     {
       h2: 'Do orthoses help pes cavus foot pain?',
+      keyFact: 'A randomized trial of 154 adults with pes cavus foot pain found custom orthoses beat a sham insole by 8.3 points on pain and 9.5 points on function at three months (Burns and colleagues, 2006).',
       paragraphs: [
         'Custom foot orthoses have the strongest evidence for pes cavus foot pain. In the only randomized trial, Burns and colleagues assigned 154 adults with chronic foot pain and bilateral pes cavus to either custom-made polypropylene foot orthoses or a flat sham insole. At three months, the custom orthoses group reported 8.3 points more improvement in foot pain on the Foot Health Status Questionnaire than the sham group. Function scores improved 9.5 points more. Plantar pressure dropped 26 percent with the custom orthoses, compared with 9 percent with the sham.',
         'The trial included people with both idiopathic and neuromuscular pes cavus (133 idiopathic, 21 neuromuscular including 16 with Charcot-Marie-Tooth disease). The orthoses were contoured to the shape of the foot with a full-length cushioned top cover.',
@@ -70,6 +71,7 @@ export const HIGH_ARCHES_EN: Guide = {
     },
     {
       h2: 'Exercises for high arches',
+      keyFact: 'The 2023 heel pain guideline grades calf and plantar fascia stretching A and strength training B for plantar heel pain, the most common pain site in pes cavus (Koc and colleagues, 2023).',
       paragraphs: [
         'No trial has tested an exercise program designed specifically for pes cavus foot pain. The exercises below target the structures that are commonly tight or unstable in a high-arched foot: the calf, the plantar fascia, the ankle, and the intrinsic foot muscles. They are borrowed from the evidence for plantar fasciitis, ankle instability, and general foot conditioning, and labeled accordingly.',
         'The 2023 heel pain guideline grades calf and plantar fascia stretching A and strength training B for plantar heel pain, which is one of the most common pain sites in pes cavus. No comparable guideline exists for pes cavus specifically.',

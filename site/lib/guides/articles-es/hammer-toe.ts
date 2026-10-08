@@ -41,6 +41,7 @@ export const HAMMER_TOE_ES: Guide = {
     },
     {
       h2: '¿Cuál es la diferencia entre un dedo en martillo flexible y uno rígido?',
+      keyFact: 'Un estudio de 2022 con 20 adultos mayores con dedo en martillo o en garra encontró que los protectores de silicón moldeados a la medida redujeron de forma significativa la presión máxima en la punta del segundo dedo, tanto en casos flexibles como rígidos (Formosa y colegas, 2022).',
       paragraphs: [
         'Un dedo en martillo flexible todavía se puede enderezar a mano. La articulación se dobla pero no está contraída de forma permanente. Si el dedo se endereza cuando lo empujas, los ejercicios, los estiramientos y el calzado más ancho pueden ayudar a mantener esa movilidad y posiblemente frenar el avance.',
         'Un dedo en martillo rígido no se puede enderezar a mano. La articulación está fija. En este punto, los ejercicios y los estiramientos no van a cambiar la forma. El enfoque se desplaza a proteger la piel de la fricción con almohadillas, fundas de gel y zapatos con suficiente espacio sobre el dedo doblado.',
@@ -127,6 +128,7 @@ export const HAMMER_TOE_ES: Guide = {
     },
     {
       h2: '¿Cuándo se habla de cirugía?',
+      keyFact: 'Una revisión de 2016 citó datos de un registro sueco que mostraron que los procedimientos de los dedos menores, incluido el dedo en martillo, representaron casi una cuarta parte de todas las cirugías de la parte delantera del pie (Malhotra y colegas, 2016).',
       paragraphs: [
         'La cirugía se considera cuando un dedo en martillo rígido causa dolor persistente, daño en la piel o dificultad para usar zapatos a pesar del manejo conservador. La decisión se basa en los síntomas y la limitación funcional, no en la apariencia del dedo.',
         'Los procedimientos más comunes incluyen la artroplastia de la articulación interfalángica proximal (retirar un pequeño trozo de hueso para enderezar la articulación) y la artrodesis (fusionar la articulación en posición recta). Existen técnicas mínimamente invasivas más nuevas, pero los datos de resultados a largo plazo todavía se están recopilando.',

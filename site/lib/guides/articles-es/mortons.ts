@@ -49,6 +49,7 @@ export const MORTONS_ES: Guide = {
     },
     {
       h2: '¿Las almohadillas metatarsales y los cambios de calzado ayudan?',
+      keyFact: 'Combinando dos estudios de una revisión de 2019, los zapatos más anchos y una almohadilla metatarsal ayudaron a cerca del 32 por ciento de las personas a un seguimiento promedio de cuatro meses y medio (Matthews y colegas, 2019).',
       paragraphs: [
         'Los zapatos más anchos con tacón bajo y una almohadilla metatarsal son el primer paso más recomendado para el neuroma de Morton. La almohadilla se coloca justo detrás de las cabezas de los metatarsianos, no directamente debajo, para levantar el cuerpo de los metatarsianos y separarlos, reduciendo la compresión sobre el nervio.',
         'El calzado bien ajustado con puntera ancha, tacón bajo y almohadilla metatarsal se evaluó en dos estudios incluidos en una revisión sistemática de 2019. Combinando esos dos estudios, el calzado y la almohadilla tuvieron éxito en cerca del 32\u00A0por ciento de las personas a un seguimiento promedio de cuatro meses y medio. Sin embargo, un ensayo aleatorizado que comparó el calzado y la almohadilla con la inyección de corticosteroides encontró que el grupo de inyección tenía seis veces más probabilidades de éxito a los seis meses.',
@@ -59,6 +60,7 @@ export const MORTONS_ES: Guide = {
     },
     {
       h2: '¿Qué dice la evidencia sobre las inyecciones?',
+      keyFact: 'En la revisión Cochrane de 2024, la inyección de corticosteroides guiada por ecografía probablemente mejoró el dolor más que la inyección sin guía, con evidencia de certeza moderada a los 2, 6 y 12 meses (Matthews y colegas, 2024).',
       paragraphs: [
         'La inyección de corticosteroides es el enfoque invasivo no quirúrgico más estudiado para el neuroma de Morton. La revisión Cochrane de 2024 incluyó seis ensayos aleatorizados con 373\u00A0participantes. Encontró evidencia de baja certeza de que agregar un corticosteroide a un anestésico local podría no hacer diferencia en el dolor o la función a los tres a seis meses, comparado con la inyección de anestésico local solo. Los autores de la Cochrane señalaron que agregar un corticosteroide podría aumentar los eventos adversos, incluyendo atrofia de la almohadilla grasa y cambios en la piel.',
         'La inyección guiada por ecografía probablemente mejora el dolor comparada con la inyección sin guía, con diferencias clínicamente significativas a los 2, 6 y 12\u00A0meses en los estudios incluidos. La evidencia se calificó como de certeza moderada.',

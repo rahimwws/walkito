@@ -146,6 +146,7 @@ export const VS_EXAKT_ES: Guide = {
     },
     {
       h2: 'Lesiones que cubre cada una',
+      keyFact: 'Los ejercicios de Walkito siguen la guía clínica de 2023 para el dolor de talón, que le da al estiramiento un grado A y al entrenamiento de fuerza un grado B (Koc y colegas, 2023).',
       paragraphs: [
         'Aquí Exakt es claramente mejor. Sus planes de rehabilitación cubren la fascitis plantar, la tendinopatía de Aquiles, los esguinces de tobillo, los desgarros de isquiotibiales, las roturas de menisco, la rodilla del corredor y más. Si el dolor está en la rodilla, la cadera o los isquiotibiales, Walkito no tiene un plan para eso.',
         'Walkito cubre la fascitis plantar, el pie plano (flexible), el dolor de talón por estar de pie y el dolor de tibia. Sus ejercicios siguen la guía clínica de 2023 para el dolor de talón (estiramiento con grado A, fuerza con grado B) y el ensayo de Rathleff de 2015 (elevaciones de talón con carga para la fascitis plantar). Para esos problemas concretos, tiene ejercicios, lógica de progresión y adaptación al dolor. Para cualquier cosa fuera de eso, Exakt o una app más amplia como Prehab es la opción correcta.',

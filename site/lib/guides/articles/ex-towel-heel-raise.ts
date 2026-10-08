@@ -94,6 +94,7 @@ export const EX_TOWEL_HEEL_RAISE: Guide = {
     },
     {
       h2: 'What does the research say about towel heel raises?',
+      keyFact: 'In a trial of 48 people with confirmed plantar fasciitis, towel heel raises scored better on the Foot Function Index at three months, but outcomes were similar to stretching alone by twelve months (Rathleff and colleagues, 2015).',
       paragraphs: [
         'The Rathleff 2015 trial is the only randomized trial that tested the towel heel raise specifically for plantar fasciitis. In 48 people with ultrasound-confirmed plantar fasciitis, the heel-raise group scored 29 points better on the Foot Function Index at three months than the stretching-only group. By twelve months, both groups had converged.',
         'The 2023 heel pain guideline reviewed this and other evidence and gave strength training a grade of **B** and stretching a grade of **A**. Both are recommended. The guideline does not single out the towel variant, but it is the only strength exercise tested in its own plantar-fasciitis trial.',

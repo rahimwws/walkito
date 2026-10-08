@@ -54,6 +54,7 @@ export const PTTD_ES: Guide = {
     },
     {
       h2: '¿Qué dice la evidencia sobre el ejercicio?',
+      keyFact: 'Al reunir tres ensayos pequeños con 93 personas en total, una revisión de 2018 encontró que el fortalecimiento excéntrico sumado a ortesis y estiramientos produjo mejorías de tamaño moderado frente a ortesis y estiramientos solos (Ross y colegas, 2018).',
       paragraphs: [
         'Una revisión sistemática de 2018 identificó tres ensayos aleatorizados controlados con 93\u00A0participantes en total. Dos probaron el fortalecimiento añadido a ortesis y estiramientos; el tercero probó fortalecimiento y entrenamiento de equilibrio contra ninguna intervención. La revisión encontró tamaños de efecto moderados (DME 0,6 a 1,2) para el fortalecimiento excéntrico en la reducción del dolor y la discapacidad, comparado con ortesis y estiramientos solos.',
         'El más grande de los tres estudios fue un ensayo aleatorizado de 2009 con 36\u00A0personas con DTTP en etapa I o II. Los participantes fueron asignados a uno de tres grupos durante tres meses: ortesis y estiramientos solos, ortesis más estiramientos más ejercicio concéntrico, u ortesis más estiramientos más ejercicio excéntrico. Los dos grupos de ejercicio mejoraron más que el grupo de solo ortesis. El grupo excéntrico alcanzó cargas 3,3\u00A0veces mayores que el grupo concéntrico al final del programa, aunque los dos tipos de ejercicio redujeron el dolor.',
@@ -151,6 +152,7 @@ export const PTTD_ES: Guide = {
     },
     {
       h2: '¿Cuánto tarda la mejoría?',
+      keyFact: 'Un pequeño estudio piloto de diez pacientes con carga excéntrica dos veces al día durante unos dos meses y medio encontró mejoría de los síntomas junto con algunos cambios del tendón en la ecografía (Kulig y colegas, 2009).',
       paragraphs: [
         'Los dos ensayos aleatorizados duraron tres meses. Los dos mostraron mejoría al final del programa, pero ninguno siguió a los participantes a largo plazo. Un pequeño estudio piloto de diez pacientes del mismo grupo también duró unos dos meses y medio de carga excéntrica dos veces al día y encontró mejoría en los síntomas junto con algunos cambios del tendón en la ecografía.',
         'En la práctica clínica, la mejoría de la DTTP en etapa I o II con ejercicio y ortesis se mide en meses, no en semanas. La degeneración del tendón no se revierte rápido. Una expectativa razonable es menos dolor y mejor función a lo largo de tres a seis meses, con ejercicio de mantenimiento después de eso. Si no hay mejoría después de tres meses de ejercicio constante y ortesis, vale la pena volver al profesional de la salud para reevaluar la etapa.',

@@ -47,6 +47,7 @@ export const PTTD_EN: Guide = {
     },
     {
       h2: 'What does the exercise evidence say?',
+      keyFact: 'Pooling three small trials with 93 people in total, a 2018 review found eccentric strengthening added to orthoses and stretching produced moderately sized improvements over orthoses and stretching alone (Ross and colleagues, 2018).',
       paragraphs: [
         'A 2018 systematic review identified three randomized controlled trials with 93 participants total. Two tested strengthening on top of orthoses and stretching; the third tested strengthening and balance training against no intervention. The review found moderate effect sizes (SMD 0.6 to 1.2) for eccentric strengthening in reducing pain and disability compared with orthoses and stretching alone.',
         'The largest of the three studies was a 2009 RCT of 36 people with stage I or II PTTD. Participants were assigned to one of three groups for three months: orthoses and stretching only, orthoses plus stretching plus concentric exercise, or orthoses plus stretching plus eccentric exercise. Both exercise groups improved more than the orthoses-only group. The eccentric group achieved loads 3.3 times higher than the concentric group by the end of the program, though both exercise types reduced pain.',
@@ -144,6 +145,7 @@ export const PTTD_EN: Guide = {
     },
     {
       h2: 'How long does improvement take?',
+      keyFact: 'A small pilot study of ten patients using twice-daily eccentric loading for about two and a half months found symptom improvement along with some tendon changes on ultrasound (Kulig and colleagues, 2009).',
       paragraphs: [
         'The two RCTs ran for three months. Both showed improvement by the end of the program, but neither tracked participants long-term. A small pilot study of ten patients by the same group also ran for about two and a half months of twice-daily eccentric loading and found symptom improvement along with some tendon changes on ultrasound.',
         'In clinical practice, improvement from stage I or II PTTD with exercise and orthoses is measured in months, not weeks. Tendon degeneration does not reverse quickly. A reasonable expectation is reduced pain and better function over three to six months, with ongoing maintenance exercise after that. If there is no improvement after three months of consistent exercise and orthoses, it is worth going back to a clinician to reassess the stage.',

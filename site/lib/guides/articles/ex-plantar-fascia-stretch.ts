@@ -78,6 +78,7 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
     },
     {
       h2: 'Does the plantar fascia stretch actually help plantar fasciitis?',
+      keyFact: 'In a trial of 82 people with chronic plantar fasciitis, pain scores were significantly better in the plantar fascia stretch group at eight weeks for worst pain and first steps in the morning (DiGiovanni and colleagues, 2003).',
       paragraphs: [
         'In the original 2003 trial, 82 people with chronic plantar fasciitis lasting more than ten months were randomly assigned to either a plantar fascia stretch or a standard Achilles tendon stretch. At eight weeks, the plantar fascia group scored significantly better on the Foot Function Index, which measures pain and activity limitations. The authors called this a clinically meaningful difference.',
         'A follow-up study tracked the same patients for two years. At the eight-week mark, all participants were switched to the plantar fascia stretch. By two years, 92% of all patients reported satisfaction with their outcome, and the group that originally did Achilles stretching improved markedly once they started the plantar fascia stretch.',

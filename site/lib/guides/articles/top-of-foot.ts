@@ -25,6 +25,7 @@ export const TOP_OF_FOOT_EN: Guide = {
   sections: [
     {
       h2: 'What causes pain on the top of the foot?',
+      keyFact: 'A metatarsal stress fracture may not show up on a plain X-ray for two to three weeks after symptoms start, so an MRI can confirm it earlier (Patel and colleagues, 2011).',
       paragraphs: [
         '**Extensor tendonitis** is the most common cause. The extensor tendons run along the top of the foot from the shin to the toes. They lift the toes and the foot during walking. When they become irritated, you feel an ache along the top of the foot that gets worse with activity and often hurts when you pull the toes upward against resistance. The usual triggers are tight shoe laces pressing directly on the tendons, a sudden increase in walking or running distance, or shoes with a rigid tongue.',
         '**Metatarsal stress fracture** is a small crack in one of the long bones of the foot, usually the second or third metatarsal. The pain is more localized than tendonitis, sits over one specific spot, and tends to get worse through the day. Swelling on the top of the foot is common. Stress fractures can take two to three weeks to show on a plain X-ray, so early imaging may need an MRI. This one needs rest, not exercise.',

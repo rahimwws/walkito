@@ -45,6 +45,7 @@ export const HEEL_FAT_PAD_ES: Guide = {
     },
     {
       h2: '¿Qué tan común es el síndrome de la almohadilla grasa del talón?',
+      keyFact: 'Un estudio transversal con 250\u00A0personas con dolor de talón encontró fascitis plantar en el 53,2\u00A0% de los casos y atrofia de la almohadilla grasa sola en alrededor del 14,8\u00A0%, con ambas presentes en el 9,2\u00A0% (Yi y colegas, 2011).',
       paragraphs: [
         'En un estudio transversal con 250\u00A0personas con dolor plantar del talón, Yi y colegas encontraron atrofia de la almohadilla grasa en el 14,8\u00A0% de los casos. La fascitis plantar fue la causa más común con un 53,2\u00A0%, y el 9,2\u00A0% tenía ambas condiciones juntas. El estudio usó mediciones por ecografía y criterios clínicos para separar las dos.',
         'La revisión exploratoria de 2022 señaló que la cifra de 14,8 % viene de dos estudios y que la verdadera prevalencia es incierta. El síndrome de la almohadilla grasa se confunde con frecuencia con la fascitis plantar porque ambos causan dolor plantar del talón y pueden coexistir. Cuando los enfoques estándar para la fascitis plantar no ayudan, la atrofia de la almohadilla grasa es una de las condiciones que vale la pena reconsiderar.',
@@ -82,6 +83,7 @@ export const HEEL_FAT_PAD_ES: Guide = {
     },
     {
       h2: 'Qué ayuda: amortiguación, vendaje y calzado',
+      keyFact: 'Un solo reporte de caso encontró alivio del dolor con taloneras de gel de silicona al mes y a los tres meses, pero ningún ensayo aleatorizado ha probado taloneras o vendaje para esta condición (Chang y colegas, 2022).',
       paragraphs: [
         'Los primeros pasos más recomendados para el síndrome de la almohadilla grasa del talón son externos: taloneras viscoelásticas, plantillas acolchadas y zapatos con suelas gruesas que absorban el impacto. Su objetivo es reemplazar la amortiguación que la almohadilla ya no proporciona.',
         'La revisión exploratoria de 2022 señaló un vacío incómodo: ningún ensayo controlado aleatorizado ha probado las taloneras o el vendaje específicamente para el síndrome de la almohadilla grasa del talón. Un solo reporte de caso describió alivio del dolor con taloneras de gel de silicona al mes y a los tres meses. Algunos ensayos pequeños de vendaje low-dye para el dolor plantar general del talón reportan una caída modesta en los puntajes de dolor comparados con el placebo o con no hacer nada, pero ninguno aísla el síndrome de la almohadilla grasa de otras causas de dolor de talón, así que la magnitud de cualquier beneficio aquí no se conoce.',
@@ -126,6 +128,7 @@ export const HEEL_FAT_PAD_ES: Guide = {
     },
     {
       h2: '¿Qué pasa con las inyecciones o la cirugía?',
+      keyFact: 'Una revisión encontró que un estudio de seguimiento a largo plazo, con media de nueve años, asoció el injerto de grasa en el talón con una mejora funcional duradera, aunque el estudio fue pequeño (Chang y colegas, 2022).',
       paragraphs: [
         'Cuando la amortiguación externa no es suficiente, algunos profesionales de la salud hablan de rellenos inyectables o de injerto autólogo de grasa, donde se toma grasa de otra parte del cuerpo y se inyecta debajo del hueso del talón. Un estudio de seguimiento a largo plazo (media de 9\u00A0años) encontró que el injerto de grasa en el talón se asoció con una mejora funcional duradera, aunque el estudio fue pequeño.',
         'Son procedimientos especializados y no opciones de primera línea. Tienen sus propios riesgos y no están ampliamente disponibles. Esta página no recomienda a favor ni en contra. Si la amortiguación externa, el cambio de calzado y la modificación de actividad no han ayudado después de varios meses, un especialista en pie y tobillo puede hablar sobre si la inyección o el injerto son adecuados.',

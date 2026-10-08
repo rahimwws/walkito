@@ -65,6 +65,7 @@ export const ARCH_PAIN_EN: Guide = {
     },
     {
       h2: 'Exercises that help arch pain',
+      keyFact: 'In the 2023 heel pain guideline, plantar fascia and calf stretching earn the top evidence grade, A, while strength training is graded one level lower, B (Koc and colleagues, 2023).',
       paragraphs: [
         'The exercises below target the arch itself and the calf muscles that pull on it. They apply best when arch pain is related to plantar fasciitis, flat feet, or general overuse. For PTTD or nerve-related arch pain, a clinician should direct the exercise plan. If any exercise takes your pain to **6/10 or more**, stop for the day.',
         'These are Walkito\'s starting doses, not research protocol doses. The 2023 heel pain guideline grades plantar fascia and calf stretching A, and strength training B. The short foot exercise and foot roll have thinner evidence on their own. [How these guides are written](/about/).',

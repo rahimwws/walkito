@@ -32,6 +32,7 @@ export const CALF_RAISES_EN: Guide = {
   sections: [
     {
       h2: 'Do calf raises actually help plantar fasciitis?',
+      keyFact: 'In a trial of 48 people, the heel-raise group scored 29 points better on the Foot Function Index at three months, though both groups had converged by twelve months (Rathleff and colleagues, 2015).',
       paragraphs: [
         'Calf raises help plantar fasciitis by strengthening the calf-Achilles-fascia chain that absorbs load every time the heel hits the ground.',
         'The only randomized trial to test this exercise for plantar fasciitis directly is Rathleff 2015. In that trial, 48 people with ultrasound-confirmed plantar fasciitis were split into two groups. Both wore shoe inserts. One group did a loaded, slow heel raise with a towel rolled under the toes. The other stretched the plantar fascia. At three months, the heel-raise group scored 29 points better on the Foot Function Index. At twelve months, both groups had converged.',
@@ -150,6 +151,7 @@ export const CALF_RAISES_EN: Guide = {
     },
     {
       h2: 'Why does a tight calf matter for heel pain?',
+      keyFact: 'In a series of 254 people with plantar fasciitis, 52 to 60% had a contracture limited to the gastrocnemius, and another 23 to 30% had a combined gastrocnemius-soleus contracture (Patel and colleagues, 2011).',
       paragraphs: [
         'A tight calf pulls on the heel through the Achilles tendon, and the plantar fascia shares the load at the other end. When the ankle cannot bend enough, every step puts more strain on the fascia.',
         'In a series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius, the outer calf muscle, and another 23 to 30 percent had a combined gastrocnemius-soleus contracture. Separately, a matched case-control study of 50 cases and 100 controls found that reduced ankle dorsiflexion, how far the foot bends up toward the shin, was the strongest independent risk factor for plantar fasciitis.',
@@ -168,6 +170,7 @@ export const CALF_RAISES_EN: Guide = {
     },
     {
       h2: 'How many single-leg calf raises should you be able to do?',
+      keyFact: 'A normative study of 566 healthy adults found a single-leg heel-raise count in the low-to-mid 20s, about 23 to 24 repetitions on average (Hebert-Losier and colleagues, 2017).',
       paragraphs: [
         'A common adult benchmark for the single-leg heel-raise endurance test is in the low-to-mid 20s, about 23-24 repetitions on average, based on normative data from 566 healthy adults. That number shifts with age, sex, BMI and activity level, so it is a reference point rather than a pass-fail line. What matters more for tracking plantar fasciitis progress is whether the number goes up week to week, and whether the two sides are roughly even.',
         'The calf goal in the app is 25 single-leg calf raises. The test is repeated every 14 days while the calf goal is active, then every 28 days after it is reached, so you can see the trend without guessing.',

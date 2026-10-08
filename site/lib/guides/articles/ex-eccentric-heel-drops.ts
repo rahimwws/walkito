@@ -86,6 +86,7 @@ export const EX_ECCENTRIC_HEEL_DROPS: Guide = {
     },
     {
       h2: 'Insertional vs. mid-portion: does it change the exercise?',
+      keyFact: 'In a 2008 pilot study of 27 people with insertional Achilles pain, floor-level eccentric loading without dropping below neutral gave good results in 67 percent of cases (Jonsson and colleagues, 2008).',
       paragraphs: [
         'Mid-portion Achilles tendinopathy sits in the body of the tendon, typically 2 to 6 centimeters above the heel bone. Standard eccentric drops over a step edge are appropriate here.',
         'Insertional Achilles tendinopathy is pain right where the tendon meets the bone. In a 2008 pilot study of 27 people with chronic insertional pain, a modified protocol using floor-level-only eccentric loading, with no drop below neutral, reported good results in 67 percent of cases. Deep dorsiflexion compresses the tendon against the heel bone, which makes standard deep drops counterproductive for insertional pain.',

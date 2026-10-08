@@ -59,6 +59,7 @@ export const EX_TIBIALIS_RAISES: Guide = {
     },
     {
       h2: 'Do tibialis raises help shin splints?',
+      keyFact: 'In a 2007 case-control study, athletes with shin splints had lower calf-raise endurance than matched controls, pointing to a general lower-leg strength deficit, not one specific muscle (Madeley and colleagues, 2007).',
       paragraphs: [
         'Shin splints, formally called medial tibial stress syndrome (MTSS), involve pain along the inner edge of the shin bone. The tibialis anterior sits on the outer front of the shin, not at the usual pain site for MTSS, so the connection is indirect. The rationale is that a stronger tibialis anterior helps absorb impact during running and walking, reducing strain on the shin as a whole.',
         'A 2007 case-control study found that athletes with MTSS had lower calf-raise endurance than matched controls, pointing to a general lower-leg strength deficit, not weakness in one specific muscle. A 2013 systematic review looked at treating MTSS that has already developed, not preventing it, and found no trial showed stretching or strengthening exercises were effective, though the evidence behind that finding was low quality overall.',

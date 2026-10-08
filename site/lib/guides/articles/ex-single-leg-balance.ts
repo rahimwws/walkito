@@ -95,6 +95,7 @@ export const EX_SINGLE_LEG_BALANCE: Guide = {
     },
     {
       h2: 'Why does balance matter for foot pain?',
+      keyFact: 'For ankle sprains, a pooled analysis of 8 studies and 3,577 athletes found that balance training lowered sprain risk by 46 percent versus no intervention (Bellows and Wong, 2018).',
       paragraphs: [
         'Balance is not separate from foot strength. When you stand on one leg, the intrinsic muscles of the foot (the small muscles inside the foot that support the arch), the calf muscles, the tibialis anterior, and the hip stabilizers all work together. A deficit anywhere in that chain makes the foot compensate.',
         'For plantar fasciitis and flat feet, balance training appears in exercise programs alongside stretching and strengthening because it trains the whole chain at once. A 2023 trial of 52 people with flexible flat feet found that a program combining short-foot exercises, ankle work, hip strengthening, stretching and balance work changed arch shape more than a control group. Balance was not isolated in that trial, but it was part of the program that worked.',

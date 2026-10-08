@@ -57,6 +57,7 @@ export const EX_BIG_TOE_LIFT_ES: Guide = {
     },
     {
       h2: '¿Qué músculos trabaja levantar el dedo gordo?',
+      keyFact: 'Un estudio de resonancia magnética de 2016 midió el levantamiento del dedo gordo en un grupo pequeño de deportistas y encontró que activó los tres músculos intrínsecos de la planta probados, con el flexor corto de los dedos mostrando la mayor activación, 18,1 % (Gooding y colegas, 2016).',
       paragraphs: [
         'Los músculos que suben el dedo gordo son el extensor largo del dedo gordo (que viene de la pierna) y el extensor corto del dedo gordo (que está sobre el pie). Pero el ejercicio también trabaja los músculos que mantienen abajo los otros dedos, y ahí es donde está el verdadero entrenamiento.',
         'Un estudio con resonancia magnética de 2016, de Gooding y colegas, encontró que el ejercicio de extensión del dedo gordo activó el flexor corto de los dedos (18,1\u00A0%), el abductor del dedo gordo (16,9\u00A0%) y el flexor corto del quinto dedo (16,3\u00A0%). Los músculos intrínsecos de la planta trabajaban para mantener planos los dedos pequeños mientras el dedo gordo subía.',

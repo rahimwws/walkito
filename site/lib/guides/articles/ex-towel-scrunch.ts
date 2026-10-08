@@ -79,6 +79,7 @@ export const EX_TOWEL_SCRUNCH: Guide = {
     },
     {
       h2: 'Who benefits most from towel scrunches?',
+      keyFact: 'In a 2020 study of 41 people (56 feet) with metatarsalgia, an eight-week toe exercise program with towel scrunches and marble pickups was followed by less pain and better toe grip, with no control group (Amaha and colleagues, 2020).',
       paragraphs: [
         'Towel scrunches suit people who are new to foot exercises and want a simple starting point. They also suit people with weak toe grip, because the exercise directly trains the ability to flex the toes under load.',
         'A 2020 study by Amaha and colleagues followed 41 people (56 feet) with primary metatarsalgia, pain under the ball of the foot, through an eight-week toe exercise program that included towel scrunches and marble pickups. Toe grip strength and pain scores both improved from before to after the program. There was no control group, so some of that change could reflect time or attention rather than the exercises themselves. Toe grip strength may also matter for older adults at risk of falls, since the toes help with balance during standing and walking.',

@@ -51,6 +51,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     },
     {
       h2: '¿Qué causa la fascitis plantar y a quién le da?',
+      keyFact: 'En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la dorsiflexión de tobillo reducida multiplicó por 23,3 las probabilidades de fascitis plantar, el factor de riesgo más fuerte medido (Riddle y colegas, 2003).',
       paragraphs: [
         'La fascitis plantar aparece cuando la fascia recibe más carga de la que puede aguantar y recuperar. La carga puede ser mucha de golpe (subir de repente los kilómetros que corres) o constante en el tiempo (estar de pie en un piso duro todo el día).',
         'Un estudio de casos y controles pareados, con 50\u00A0personas con fascitis plantar y 100\u00A0controles, encontró que una dorsiflexión de tobillo reducida era el factor de riesgo independiente más fuerte, con una razón de probabilidades de 23,3. En otra serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenía una contractura solo en el gastrocnemio, el músculo más grande y externo de la pantorrilla. Estar mucho tiempo de pie en el trabajo multiplicó por 3,6 las probabilidades. Un índice de masa corporal más alto también las aumentó.',
@@ -70,6 +71,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     },
     {
       h2: '¿Qué ayuda con la fascitis plantar?',
+      keyFact: 'En un ensayo con 48\u00A0personas, las elevaciones de talón con carga y una toalla aliviaron el dolor más rápido que solo estirar a los tres meses, aunque a los doce meses los dos grupos estaban igualados (Rathleff y colegas, 2015).',
       paragraphs: [
         'La guía clínica de 2023 califica cada opción según la fuerza de la evidencia que la respalda. Las recomendaciones más fuertes son el estiramiento, el vendaje, la terapia manual hecha por un profesional y las férulas nocturnas para el dolor de la mañana que no se va. Después viene el entrenamiento de fuerza. La tabla de abajo muestra las opciones principales con su grado en la guía.',
         'Ninguna opción le funciona a todo el mundo. La mayoría empieza con estiramientos y zapatos con buen soporte, añade trabajo de fuerza cuando el dolor inicial baja, y habla con un profesional de la salud sobre las demás opciones si el avance se frena. En un ensayo con 48\u00A0personas, las elevaciones de talón con carga y una toalla bajo los dedos aliviaron el dolor más rápido que solo estirar a los tres meses, aunque a los doce meses los dos grupos estaban igualados. La guía recomienda no usar plantillas ortopédicas solas como única opción a corto plazo, y no añadir ultrasonido terapéutico al estiramiento.',
@@ -96,6 +98,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     },
     {
       h2: '¿Cuánto dura la fascitis plantar?',
+      keyFact: 'En un seguimiento de 174 pacientes, cerca de la mitad ya no tenía síntomas a los cinco años, y el 46 % todavía tenía algo de dolor a los diez años, casi siempre leve (Hansen y colegas, 2018).',
       paragraphs: [
         'Una revisión de 2020 indica que cerca del 90\u00A0% de las personas mejora con cuidados sin cirugía, a menudo en varios meses. Un seguimiento más largo de 174\u00A0pacientes da una imagen más detallada: cerca de la mitad ya no tenía síntomas a los cinco años, y el 46\u00A0% todavía tenía algo de dolor a una media de diez años, aunque la mayoría de ellos solo tenía síntomas leves.',
         'La recuperación depende de cuánto tiempo llevas con ella, de lo que haces al respecto y de algunos factores que no puedes controlar. La cohorte de Hansen de 2018 encontró que ser mujer y tener dolor en los dos talones predecían de forma significativa una recuperación más lenta. El IMC, la edad, el grosor de la fascia y tener un espolón calcáneo no.',

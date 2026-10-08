@@ -36,6 +36,7 @@ export const HEEL_FAT_PAD_EN: Guide = {
     },
     {
       h2: 'How common is heel fat pad syndrome?',
+      keyFact: 'A cross-sectional study of 250 people with heel pain found plantar fasciitis in 53.2% of cases and fat pad atrophy alone in about 14.8%, with both present in 9.2% (Yi and colleagues, 2011).',
       paragraphs: [
         'In a cross-sectional study of 250 people with plantar heel pain, Yi and colleagues found fat pad atrophy in 14.8% of cases. Plantar fasciitis was the most common cause at 53.2%, and 9.2% had both conditions together. The study used ultrasound measurements and clinical criteria to separate the two.',
         'The 2022 scoping review noted that the 14.8% figure comes from two studies and that the true prevalence is uncertain. Fat pad syndrome is often misdiagnosed as plantar fasciitis because both cause plantar heel pain and can coexist. When the standard treatments for plantar fasciitis do not help, fat pad atrophy is one of the conditions worth reconsidering.',
@@ -73,6 +74,7 @@ export const HEEL_FAT_PAD_EN: Guide = {
     },
     {
       h2: 'What helps: cushioning, taping, and footwear',
+      keyFact: 'A single case report found pain relief from silicone gel heel cups at one and three months, but no randomised trial has tested heel cups or taping for this condition (Chang and colleagues, 2022).',
       paragraphs: [
         'The most commonly recommended first steps for heel fat pad syndrome are external: viscoelastic heel cups, cushioned insoles, and shoes with thick, shock-absorbing soles. These aim to replace the cushioning the fat pad no longer provides.',
         'The 2022 scoping review flagged an uncomfortable gap: no randomised controlled trial has tested heel cups or taping specifically for heel fat pad syndrome. A single case report described pain relief with silicone gel heel cups after one and three months. Some small trials of low-dye taping for general plantar heel pain report a modest drop in pain scores against sham or no treatment, but none of them isolate fat pad syndrome from other causes of heel pain, so the size of any benefit here is not known.',
@@ -117,6 +119,7 @@ export const HEEL_FAT_PAD_EN: Guide = {
     },
     {
       h2: 'What about injections or surgery?',
+      keyFact: 'A review found that a long-term follow-up study, averaging nine years, linked heel fat grafting to durable functional improvement, though the study was small (Chang and colleagues, 2022).',
       paragraphs: [
         'When external cushioning is not enough, some clinicians discuss injectable fillers or autologous fat grafting, where fat is harvested from another part of your body and injected under the heel bone. A long-term follow-up study (mean 9 years) found that heel fat grafting was associated with durable functional improvement, though the study was small.',
         'These are specialised procedures and not first-line options. They carry their own risks and are not widely available. This page does not recommend for or against them. If external padding, footwear changes, and activity modification have not helped after several months, a foot and ankle specialist can discuss whether injection or grafting is appropriate.',

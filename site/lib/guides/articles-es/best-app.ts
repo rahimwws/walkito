@@ -26,6 +26,7 @@ export const BEST_APP_ES: Guide = {
   sections: [
     {
       h2: '¿Qué debería hacer una app para la fascitis plantar?',
+      keyFact: 'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la fascia plantar y de la pantorrilla una A, el grado más alto, y al entrenamiento de fuerza una B (Koc y colegas, 2023).',
       paragraphs: [
         'Una app útil para la fascitis plantar debería incluir los ejercicios que respalda la investigación. La guía clínica de 2023 para el dolor de talón califica la evidencia detrás de cada opción. El estiramiento de la fascia plantar y de la pantorrilla recibe una A, el grado más alto. El entrenamiento de fuerza recibe una B. Eso quiere decir que los dos deberían estar en la app, no solo uno.',
         'Además de la lista de ejercicios, esto es lo que vale la pena revisar antes de suscribirte:',

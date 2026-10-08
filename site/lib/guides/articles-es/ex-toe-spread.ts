@@ -57,6 +57,7 @@ export const EX_TOE_SPREAD_ES: Guide = {
     },
     {
       h2: '¿Qué músculos trabaja separar los dedos?',
+      keyFact: 'Un estudio de resonancia magnética de 2016 encontró que separar los dedos activó el abductor del dedo gordo solo al 18,9 %, frente al 29,7 % con el ejercicio de pie corto, en el mismo grupo pequeño de deportistas (Gooding y colegas, 2016).',
       paragraphs: [
         'Separar los dedos trabaja sobre todo dos músculos. El abductor del dedo gordo va por el borde interno del pie y lleva el dedo gordo hacia adentro (hacia la línea media del cuerpo). También es uno de los principales sostenes del arco longitudinal medial. El abductor del quinto dedo va por el borde externo y lleva el dedo pequeño hacia afuera.',
         'Un estudio con resonancia magnética de 2016, de Gooding y colegas, probó cuatro ejercicios para los músculos intrínsecos del pie y midió la activación de cada músculo. Separar los dedos produjo su activación más alta en el abductor del quinto dedo (35,2\u00A0%), seguido del fascículo oblicuo del aductor del dedo gordo (31,5\u00A0%) y el flexor corto del quinto dedo (30,2\u00A0%). La activación del abductor del dedo gordo al separar los dedos (18,9\u00A0%) fue menor que con el ejercicio de pie corto (29,7\u00A0%).',

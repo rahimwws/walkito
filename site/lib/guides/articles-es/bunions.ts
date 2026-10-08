@@ -31,6 +31,7 @@ export const BUNIONS_ES: Guide = {
     },
     {
       h2: '¿Qué dice la investigación sobre los ejercicios para juanetes?',
+      keyFact: 'Un ensayo con 60 mujeres (120 pies) que comparó un mes de férula nocturna, ejercicio o estimulación eléctrica encontró que los tres mejoraron el dolor y la función, pero la férula superó al ejercicio y la electroterapia (Külünkoğlu y colegas, 2021).',
       paragraphs: [
         'La mejor evidencia viene de un puñado de ensayos pequeños. Ninguno es grande, y ninguno siguió a los participantes más de un año.',
         'Kim y colegas (2015) asignaron al azar a 24\u00A0personas con hallux valgus leve a moderado a una órtesis sola o a una órtesis más ejercicios de separación de dedos durante 8\u00A0semanas. El grupo de ejercicio redujo su ángulo de hallux valgus un promedio de 3,4\u00A0grados y aumentó el área transversal del músculo abductor del dedo gordo. El grupo con solo órtesis no mostró cambios significativos en ninguna de las dos medidas. El estudio fue pequeño e incluyó sobre todo adultos jóvenes con juanetes leves.',
@@ -43,6 +44,7 @@ export const BUNIONS_ES: Guide = {
     },
     {
       h2: '¿Funcionan los separadores de dedos para los juanetes?',
+      keyFact: 'En un estudio con 30 mujeres con hallux valgus doloroso, una plantilla con separador de dedos redujo el dolor de forma significativa en tres meses, mientras que un grupo separado con férula nocturna no mejoró (Tehraninasr y colegas, 2008).',
       paragraphs: [
         'Los separadores de dedos se colocan entre el dedo gordo y el segundo dedo. Reducen la fricción, alivian la presión sobre el juanete y empujan suavemente el dedo gordo lejos del segundo dedo mientras se usan.',
         'Tehraninasr y colegas (2008) estudiaron a 30\u00A0mujeres con hallux valgus doloroso durante 3\u00A0meses. Un grupo usó una plantilla con un separador de dedos integrado, y otro grupo usó una férula nocturna. El dolor bajó significativamente en el grupo del separador pero no en el grupo de la férula nocturna. Ninguno de los dos grupos tuvo un cambio estadísticamente significativo en el ángulo de hallux valgus. El ensayo de Abdalbary combinó un separador de dedos con terapia manual y ejercicio, así que no aísla lo que hizo el separador por sí solo.',

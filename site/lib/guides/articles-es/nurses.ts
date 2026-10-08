@@ -43,6 +43,7 @@ export const NURSES_ES: Guide = {
     },
     {
       h2: '¿Por qué a las enfermeras les duelen los pies en turnos de 12 horas?',
+      keyFact: 'En un estudio de casos y controles con 50 casos y 100 controles, la poca flexibilidad del tobillo multiplicó por 23,3 las probabilidades de fascitis plantar, el factor de riesgo más fuerte, y estar de pie la mayor parte del día las multiplicó por 3,6 (Riddle y colegas, 2003).',
       paragraphs: [
         'En un turno de enfermería se juntan tres cosas: estar mucho tiempo de pie, caminar largas distancias y los pisos duros. Estar de pie sin moverte carga la fascia plantar, los músculos de la pantorrilla y la almohadilla del talón sin el bombeo que da caminar. Caminar ayuda a que la sangre regrese de las piernas, pero en enfermería se alterna sin aviso entre estar de pie sin moverse junto a una cama y caminar pasillos largos, así que el bombeo de la pantorrilla nunca agarra un ritmo estable.',
         'Una revisión de 2015 sobre salud laboral encontró que estar de pie mucho tiempo en el trabajo se asocia con molestias musculares, cansancio y dolor de piernas en muchos trabajos de pie, y menciona a las enfermeras como uno de los grupos de mayor riesgo. La revisión señaló que el esfuerzo del corazón y la hinchazón de las piernas aumentan con el tiempo de pie.',
@@ -52,6 +53,7 @@ export const NURSES_ES: Guide = {
     },
     {
       h2: '¿Qué ejercicios ayudan a las enfermeras con el dolor de pies?',
+      keyFact: 'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la pantorrilla y de la fascia plantar su grado más alto, A, y al entrenamiento de fuerza una B (Koc y colegas, 2023).',
       paragraphs: [
         'Los ejercicios que ayudan son los mismos que trabajan la fascitis plantar y el dolor de pies por estar de pie: estiramientos de pantorrilla, un estiramiento plantar, elevaciones de talón para la fuerza de la pantorrilla y un ejercicio para el arco llamado pie corto. Lo distinto en enfermería es acomodarlos alrededor de los turnos rotativos, no durante el turno. Unos minutos antes o después del turno bastan para hacer los más importantes.',
         'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la pantorrilla y de la fascia plantar su grado más alto, A, y al entrenamiento de fuerza una B. Las dos notas son para la fascitis plantar, pero los tejidos son los mismos que cargan el peso durante un turno de enfermería. Si algún ejercicio sube tu dolor a 6 de 10 o más, detente por hoy.',
@@ -163,6 +165,7 @@ export const NURSES_ES: Guide = {
     },
     {
       h2: '¿Las medias de compresión ayudan a las enfermeras con el dolor de pies y piernas?',
+      keyFact: 'En un ensayo con 40 guardias de seguridad que trabajaban de pie turnos de unas 12 horas, tanto las medias de 15-20 mmHg como las de 20-30 mmHg evitaron el aumento de molestias en pies y piernas que tuvo el grupo con calcetines normales (Garcia y colegas, 2023).',
       paragraphs: [
         'Las medias de compresión tienen uno de los estudios mejor controlados sobre las molestias por estar de pie. En un ensayo aleatorizado con 40 guardias de seguridad que trabajaban de pie turnos de unas 12\u00A0horas, tanto el grupo con medias de 15-20\u00A0mmHg como el de 20-30\u00A0mmHg evitaron el aumento importante de molestias en pies y piernas, cansancio e hinchazón que tuvo el grupo con calcetines normales. Muchos participantes dijeron que la media de menor presión era más fácil de poner.',
         'Un ensayo piloto aleatorizado con 20 estudiantes de enfermería comparó medias de compresión hasta la rodilla y hasta el muslo, usadas durante turnos de práctica clínica de 9\u00A0horas. Los dos grupos reportaron mucha satisfacción, aunque la muestra fue demasiado pequeña para mostrar diferencias claras entre los dos largos.',

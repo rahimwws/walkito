@@ -57,6 +57,7 @@ export const BALL_OF_FOOT_EN: Guide = {
     },
     {
       h2: 'Does exercise help ball of foot pain?',
+      keyFact: 'In a 2020 pre-post study of 41 people with primary metatarsalgia, an 8-week toe exercise program lowered pain by an average of 2.7 points on a 10-point scale, with no control group (Amaha and colleagues, 2020).',
       paragraphs: [
         'The honest answer is that the evidence for exercise in metatarsalgia is early and limited. It is much thinner than the evidence for [plantar fasciitis](/plantar-fasciitis-exercises/) or Achilles tendonitis, where randomized trials exist.',
         'The best study so far is a 2020 pre-post study of 41 people (56 feet) with primary metatarsalgia. An 8-week toe exercise program, mainly towel scrunches and marble pickups, dropped pain scores by an average of 2.7 points on a 10-point scale and improved toe grip strength. But there was no control group, so the improvement could partly reflect natural recovery. The authors called for randomized trials.',
@@ -68,6 +69,7 @@ export const BALL_OF_FOOT_EN: Guide = {
     },
     {
       h2: 'Does a tight calf make forefoot pain worse?',
+      keyFact: 'In 254 people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture, a tight calf that is also linked to forefoot overload (Patel and DiGiovanni, 2011).',
       paragraphs: [
         'Very likely. When the gastrocnemius is tight, the ankle cannot bend enough during walking. The body lifts the heel early, which throws more weight onto the ball of the foot. The clinical term for this is functional equinus, and it is a recognized cause of metatarsalgia.',
         'The numbers come from plantar fasciitis research, but the mechanism is the same. In 254 people with plantar fasciitis, 52 to 60 percent had an isolated gastrocnemius contracture. A case-control study of 50 cases and 100 controls found that reduced ankle dorsiflexion (how far the foot bends up toward the shin) was the strongest independent risk factor, at 23.3 times the odds.',

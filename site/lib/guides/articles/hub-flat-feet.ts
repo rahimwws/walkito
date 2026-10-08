@@ -41,6 +41,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
   sections: [
     {
       h2: 'What are flat feet?',
+      keyFact: 'A 2023 systematic review pooling 12 population studies of about 16,000 people found flat feet affect roughly 15.6 percent overall, with higher rates linked to higher BMI and older age (Salinas-Torres and colleagues, 2023).',
       paragraphs: [
         'The arch of the foot, called the medial longitudinal arch, is formed by the bones, ligaments and tendons on the inside of the foot. In a flat foot, this arch is lower or absent when you stand. The medical term is pes planus.',
         'Flat feet are common. A 2023 systematic review pooled 12 population-based studies covering about 16,000 people and reported an overall prevalence of 15.6 percent. In adults alone, estimates range from about 5 to 27 percent depending on the population and the measurement method. Higher BMI and older age are associated with a higher prevalence.',
@@ -51,6 +52,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
     },
     {
       h2: 'How do you tell if flat feet are flexible or rigid?',
+      keyFact: 'In a trial of 52 people with flexible flat feet, six weeks of short-foot, ankle, hip and stretching exercises improved two measures of arch shape more than a control group (Brijwasi and Borkar, 2023).',
       paragraphs: [
         'A flexible flat foot is one where the arch flattens under your weight but comes back when the foot is off the ground. Most flat feet are this type. A rigid flat foot stays flat whether you are standing on it or not.',
         'A quick check: sit down and look at the inside of your foot. If you can see an arch, stand up on both feet. If the arch disappears when you stand but was there when you sat, the flat foot is flexible. Another way: stand on your toes. If the arch appears when you rise up, it is flexible.',
@@ -60,6 +62,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
     },
     {
       h2: 'Are flat feet actually a problem?',
+      keyFact: 'The Framingham Foot Study of about 1,900 adults found no link between flat foot posture and back pain, though a pronated walking gait showed a small link in women only (Menz and colleagues, 2013).',
       paragraphs: [
         'For most people, no. A flexible flat foot that causes no pain and does not limit what you do is a normal variation in foot shape, not a condition that needs solving.',
         'The worry people most often bring up is back pain. The largest study on the question, the Framingham Foot Study, looked at about 1,900 adults. It found no association between flat foot posture and low back pain. In women, a foot that rolled inward while walking (pronated gait) showed a small link to back pain, but the foot posture itself, flat or not, did not. In men, neither posture nor gait was linked to back pain.',

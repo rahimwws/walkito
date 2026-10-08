@@ -55,6 +55,7 @@ export const EX_ANKLE_ROCKS_ES: Guide = {
     },
     {
       h2: '¿Por qué importa la movilidad de tobillo para el dolor de talón?',
+      keyFact: 'En un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la menor dorsiflexión del tobillo pesó más que el índice de masa corporal o el tiempo de pie, con 23,3\u00A0veces más probabilidades (Riddle y colegas, 2003).',
       paragraphs: [
         'La dorsiflexión del tobillo es cuánto se puede doblar el pie hacia arriba, hacia la tibia, mientras el talón sigue en el piso. Cada paso que das necesita algo de dorsiflexión. Cuando el tobillo no se dobla lo suficiente, el cuerpo compensa. El pie puede irse hacia adentro, la pantorrilla recibe más tensión y la fascia plantar absorbe fuerzas para las que no está hecha.',
         'En el estudio de casos y controles de Riddle de 2003, la menor dorsiflexión del tobillo fue la variable con el mayor efecto independiente, con 23,3\u00A0veces más probabilidades de desarrollar fascitis plantar. Pesó más que el índice de masa corporal, el tiempo de pie o la distancia que se corría. En otra revisión, una pantorrilla tensa, en concreto el gastrocnemio, estaba presente en entre el 52 y el 60\u00A0% de 254\u00A0personas con fascitis plantar.',

@@ -109,6 +109,7 @@ export const EX_SHORT_FOOT_ES: Guide = {
     },
     {
       h2: '¿Qué dice la investigación sobre el ejercicio de pie corto?',
+      keyFact: 'En un ensayo de 2023 con 52 personas con pie plano flexible, un programa de seis semanas que combinaba pie corto, trabajo de tobillo, fortalecimiento de cadera y estiramientos cambió la forma del arco más que el grupo de control (Brijwasi y colegas, 2023).',
       paragraphs: [
         'La evidencia más fuerte viene de programas que combinan el pie corto con otros ejercicios, no del pie corto solo. En un ensayo de 2023 con 52\u00A0personas con pie plano flexible, Brijwasi y colegas probaron un programa de seis semanas con pie corto, trabajo de tobillo, fortalecimiento de cadera y estiramientos. El programa cambió dos medidas de la forma del arco más que en el grupo de control.',
         'Un metaanálisis de 2024 de Cheng y colegas revisó el entrenamiento de pie corto por sí solo en varios ensayos. Juntando los resultados, no hubo una mejora significativa en la caída del navicular ni en el Foot Posture Index en general. Pero cuando los autores analizaron solo los programas de más de seis semanas, la caída del navicular sí mejoró de forma significativa. Cuánto tiempo entrenas importa.',

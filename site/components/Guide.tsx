@@ -22,6 +22,7 @@ import { SITE_URL } from '@/lib/site';
 
 const HOME_CRUMB = { en: 'Home', ru: 'Главная', es: 'Inicio' } as const;
 const EXERCISE_LIST_HEADING = { en: 'Exercises on this page', ru: 'Упражнения на этой странице', es: 'Ejercicios de esta página' } as const;
+const KEY_FACT_LABEL = { en: 'Key finding', ru: 'Главное из исследований', es: 'Dato clave' } as const;
 const LIBRARY_CRUMB = { en: 'Exercise library', ru: 'Библиотека упражнений', es: 'Biblioteca de ejercicios' } as const;
 
 /**
@@ -255,6 +256,12 @@ export function Guide({ guide }: { guide: GuideData }) {
         {guide.sections.map((section) => (
           <section key={section.h2} id={slug(section.h2)}>
             <h2>{section.h2}</h2>
+            {section.keyFact && (
+              <p className="key-fact">
+                <strong>{KEY_FACT_LABEL[guide.lang]}</strong>
+                <Inline text={section.keyFact} />
+              </p>
+            )}
             {section.paragraphs?.map((p) => (
               <p key={p}>
                 <Inline text={p} />

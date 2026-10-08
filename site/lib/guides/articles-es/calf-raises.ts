@@ -32,6 +32,7 @@ export const CALF_RAISES_ES: Guide = {
   sections: [
     {
       h2: '¿Las elevaciones de talón de verdad ayudan con la fascitis plantar?',
+      keyFact: 'En un ensayo con 48\u00A0personas, el grupo de elevaciones de talón quedó 29\u00A0puntos mejor en el Foot Function Index a los tres meses, aunque los dos grupos se igualaron a los doce meses (Rathleff y colegas, 2015).',
       paragraphs: [
         'Las elevaciones de talón ayudan con la fascitis plantar porque fortalecen la cadena pantorrilla, tendón de Aquiles y fascia, que absorbe la carga cada vez que el talón toca el piso.',
         'El único ensayo aleatorizado que probó este ejercicio directamente en la fascitis plantar es Rathleff 2015. En ese ensayo, 48\u00A0personas con fascitis plantar confirmada por ecografía se dividieron en dos grupos. Los dos usaron plantillas. Un grupo hizo una elevación de talón lenta y con carga, con una toalla enrollada bajo los dedos. El otro estiró la fascia plantar. A los tres meses, el grupo de elevaciones de talón tenía 29\u00A0puntos mejor en el Foot Function Index. A los doce meses, los dos grupos estaban igualados.',
@@ -150,6 +151,7 @@ export const CALF_RAISES_ES: Guide = {
     },
     {
       h2: '¿Por qué importa una pantorrilla tensa en el dolor de talón?',
+      keyFact: 'En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenía una contractura limitada al gastrocnemio, y otro 23 a 30\u00A0% tenía una contractura combinada de gastrocnemio y sóleo (Patel y colegas, 2011).',
       paragraphs: [
         'Una pantorrilla tensa jala del talón a través del tendón de Aquiles, y la fascia plantar comparte la carga en el otro extremo. Cuando el tobillo no se dobla lo suficiente, cada paso pone más tensión en la fascia.',
         'En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0por ciento tenía una contractura solo del gastrocnemio, el músculo externo de la pantorrilla, y otro 23 a 30\u00A0por ciento tenía una contractura combinada de gastrocnemio y sóleo. Por otro lado, un estudio de casos y controles emparejados, con 50\u00A0casos y 100\u00A0controles, encontró que una dorsiflexión de tobillo reducida, cuánto se dobla el pie hacia arriba, hacia la tibia, era el factor de riesgo independiente más fuerte para la fascitis plantar.',
@@ -168,6 +170,7 @@ export const CALF_RAISES_ES: Guide = {
     },
     {
       h2: '¿Cuántas elevaciones de talón a una pierna deberías poder hacer?',
+      keyFact: 'Un estudio normativo con 566\u00A0adultos sanos encontró un promedio de unas 23 a 24\u00A0repeticiones en la prueba de elevación de talón a una pierna (Hebert-Losier y colegas, 2017).',
       paragraphs: [
         'Una referencia común en adultos para la prueba de resistencia de elevación de talón a una pierna está en unas 20 y pocas, en promedio unas 23-24\u00A0repeticiones, según datos normativos de 566\u00A0adultos sanos. Esa cifra cambia con la edad, el sexo, el IMC y el nivel de actividad, así que es un punto de referencia, no una línea de aprobado o reprobado. Para seguir tu avance con la fascitis plantar importa más si el número sube semana a semana y si los dos lados están más o menos parejos.',
         'La meta de pantorrilla en la app es de 25\u00A0elevaciones de talón a una pierna. La prueba se repite cada 14\u00A0días mientras la meta de pantorrilla está activa, y después cada 28\u00A0días una vez que la alcanzas, así puedes ver la tendencia sin adivinar.',

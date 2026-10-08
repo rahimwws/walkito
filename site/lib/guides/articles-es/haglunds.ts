@@ -72,6 +72,7 @@ export const HAGLUNDS_ES: Guide = {
     },
     {
       h2: '¿Qué ejercicios ayudan con la deformidad de Haglund?',
+      keyFact: 'En un estudio piloto de 27\u00A0personas con dolor insercional del Aquiles, la carga excéntrica a nivel del piso sin dorsiflexión profunda dio buenos resultados en el 67\u00A0% de los casos (Jonsson y colegas, 2008).',
       paragraphs: [
         'El ejercicio para la deformidad de Haglund tiene dos objetivos: reducir la tensión de la pantorrilla que jala del talón, y desarrollar la fuerza de la pantorrilla que ayuda al tendón a tolerar la carga. Los dos están tomados de la literatura sobre la tendinopatía de Aquiles. Ningún ensayo los ha probado para la deformidad de Haglund específicamente.',
         'La modificación clave es: solo a nivel del piso. Para el dolor insercional del Aquiles, un estudio piloto de 2008 con 27\u00A0personas probó la carga excéntrica sin dorsiflexión más allá de la posición neutra, es decir, el talón nunca bajó por debajo del piso. Se reportaron buenos resultados en el 67\u00A0% de los casos. Los descensos de talón estándar sobre la orilla de un escalón, que dejan que el talón baje por debajo y empujan el tobillo hacia una dorsiflexión profunda, pueden comprimir el tendón contra el bulto y empeorar los síntomas.',
@@ -131,6 +132,7 @@ export const HAGLUNDS_ES: Guide = {
     },
     {
       h2: '¿Cuánto dolor es aceptable durante los ejercicios?',
+      keyFact: 'El modelo de control del dolor permite hasta unos 5 de 10 durante la carga, siempre que vuelva a su nivel habitual para la mañana siguiente y no empeore semana a semana (Silbernagel y colegas, 2007).',
       paragraphs: [
         'El modelo de control del dolor de Silbernagel 2007 para la tendinopatía de Aquiles permitía un dolor de hasta unos 5 de 10 durante la carga, siempre que volviera a su nivel habitual para la mañana siguiente y no empeorara semana a semana. Este modelo se probó para el dolor de la porción media del Aquiles, no específicamente para la deformidad de Haglund ni los casos insercionales, pero es el umbral de dolor más citado en la literatura del Aquiles.',
         'Para los problemas insercionales asociados a la deformidad de Haglund, sé más cauteloso. El bulto añade un elemento mecánico que la tendinopatía de la porción media no tiene: compresión de la bursa y el tendón contra el hueso. Si los ejercicios provocan un dolor agudo en la parte de atrás del talón que no se calma rápido, baja la carga o cambia a contracciones isométricas antes de volver a intentar el trabajo excéntrico.',
@@ -139,6 +141,7 @@ export const HAGLUNDS_ES: Guide = {
     },
     {
       h2: '¿Cuándo se considera la cirugía para la deformidad de Haglund?',
+      keyFact: 'Una revisión sistemática de 2022 con 20\u00A0estudios encontró que tanto la cirugía abierta como la endoscópica mejoraron los puntajes AOFAS, con recuperaciones más cortas en las técnicas endoscópicas (Yuen y colegas, 2022).',
       paragraphs: [
         'La cirugía se habla después de al menos seis meses de manejo conservador sin mejoría suficiente. La revisión sistemática de 2022 de Yuen y colegas incluyó 20\u00A0estudios y encontró que tanto las técnicas abiertas como las endoscópicas mejoraron los puntajes AOFAS (American Orthopaedic Foot and Ankle Society). Las técnicas endoscópicas mostraron tiempos de recuperación más cortos.',
         'La cirugía normalmente implica quitar la prominencia ósea (calcaneoplastia), extirpar la bursa inflamada, y en algunos casos desbridar o reinsertar el tendón de Aquiles. Las complicaciones pueden incluir problemas de cicatrización, lesión de nervios y debilitamiento del tendón. La decisión es entre tú y tu cirujano.',

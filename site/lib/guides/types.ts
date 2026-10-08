@@ -60,6 +60,10 @@ export type GuideTable = {
 
 export type GuideSection = {
   h2: string;
+  /** One sentence with the section's key study number and who found it,
+   * printed under the heading: the line a reader or an AI answer quotes.
+   * Only a number already in this section's text and sources. */
+  keyFact?: string;
   paragraphs?: readonly string[];
   exercises?: readonly GuideExercise[];
   bullets?: readonly string[];

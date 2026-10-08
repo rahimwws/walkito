@@ -58,6 +58,7 @@ export const EX_BAND_INVERSION_ES: Guide = {
     },
     {
       h2: '¿Qué músculo trabaja este ejercicio?',
+      keyFact: 'Un estudio con resonancia magnética de 2004 con 5 adultos sanos encontró que girar el pie hacia adentro aumentó la señal del tibial posterior un 50 %, con menos del 5 % de cambio en los músculos cercanos (Kulig y colegas, 2004).',
       paragraphs: [
         'El objetivo principal es el tibial posterior. Es el músculo más profundo de la parte de atrás de la pierna, detrás de la tibia y el peroné. Su tendón pasa por detrás del maléolo medial (el hueso interno del tobillo) y luego se abre en varias bandas que se unen a casi todos los huesos de la parte media del pie.',
         'Un estudio de 2004 con resonancia magnética de Kulig y colegas probó tres ejercicios en 5\u00A0adultos sanos: aducción del pie (girar el pie hacia adentro sobre el piso), elevación de talón a una pierna y supinación del pie en cadena abierta. La aducción del pie logró la mayor activación del tibial posterior (50\u00A0% más de señal) con la menor activación de los músculos de alrededor (menos del 5\u00A0%). La elevación de talón a una pierna también activó el tibial posterior, pero activó mucho el gastrocnemio (99\u00A0%) y el sóleo (39\u00A0%), así que es un ejercicio mucho menos selectivo para el tibial posterior.',

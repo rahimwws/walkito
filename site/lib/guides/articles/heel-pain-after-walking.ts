@@ -36,6 +36,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
   sections: [
     {
       h2: 'Why does your heel hurt after walking?',
+      keyFact: 'In a case-control study of 50 people with plantar fasciitis and 100 without, reduced ankle dorsiflexion was the strongest risk factor, ahead of high body mass index and prolonged standing at work (Riddle and colleagues, 2003).',
       paragraphs: [
         'Walking loads the plantar fascia, the thick band of tissue under the foot, with every step. Each time the heel hits the ground and the foot rolls forward, the fascia stretches and absorbs force. In a healthy foot this is fine. But when the fascia is irritated or the calf is too tight to absorb its share, the load concentrates at the heel attachment.',
         'The result is pain that builds during or after a walk, especially a longer one than usual. The 2023 heel pain guideline lists two hallmark patterns for plantar fasciitis: first-step pain after rest, and pain that increases with prolonged weight-bearing activity. Walking is the most common prolonged weight-bearing activity there is.',
@@ -73,6 +74,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
     },
     {
       h2: 'The exercises that help heel pain after walking',
+      keyFact: 'A systematic review found that both plantar fascia stretching and calf stretching reduced pain in plantar fasciitis more than no stretching at all (Siriphorn and Eksakulkla, 2020).',
       paragraphs: [
         'The exercises are the same ones the 2023 guideline recommends for plantar fasciitis. The guideline gives stretching its top grade, **A**, and strength training a **B**. Both are recommended. A systematic review found that plantar fascia stretching and calf stretching both reduced pain compared with no stretching (Siriphorn and Eksakulkla, 2020).',
       ],
@@ -152,6 +154,7 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
     },
     {
       h2: 'How long before the heel stops hurting after walks?',
+      keyFact: 'In normative data on 566 healthy adults, the average single-leg heel raise count was about 23 to 24 repetitions, a benchmark for tracking calf endurance over time (Hebert-Losier and colleagues, 2017).',
       paragraphs: [
         'There is no fixed timeline. A review of the clinical evidence reports that about 90% of people with plantar fasciitis improve with non-surgical care, often within several months (Latt and colleagues, 2020). In a longer follow-up of 174 people, about half still had some symptoms at 5 years, though most were minor by that point (Hansen and colleagues, 2018).',
         'What you can measure sooner is whether the exercises are working. Morning pain on a 0 to 10 scale is the clearest daily signal. Calf endurance, measured by counting single-leg heel raises, tracks strength over weeks. A commonly cited adult benchmark is about 23 to 24 repetitions on average, from normative data on 566 healthy adults (Hebert-Losier and colleagues, 2017). What matters is whether your number is going up, not whether it matches the benchmark.',

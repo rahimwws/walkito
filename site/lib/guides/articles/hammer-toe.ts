@@ -41,6 +41,7 @@ export const HAMMER_TOE_EN: Guide = {
     },
     {
       h2: 'What is the difference between flexible and rigid hammer toes?',
+      keyFact: 'A 2022 study of 20 older adults with hammer or claw toe found custom-molded silicone toe props significantly reduced peak pressure at the tip of the second toe in both flexible and rigid cases (Formosa and colleagues, 2022).',
       paragraphs: [
         'A flexible hammer toe still has motion at the middle joint. You can straighten it with your hand. The muscles and tendons are tight, but the joint has not developed a fixed contracture. This is the stage where conservative measures have the most to offer.',
         'A rigid hammer toe has a fixed contracture at the middle joint. The joint no longer straightens. At this point, exercise cannot change the position. The goals shift to reducing friction (wider shoes, toe pads) and preventing corns, calluses, and skin breakdown.',
@@ -127,6 +128,7 @@ export const HAMMER_TOE_EN: Guide = {
     },
     {
       h2: 'When is surgery discussed?',
+      keyFact: 'A 2016 review cited Swedish registry data showing lesser toe procedures, including hammer and claw toe surgery, made up almost a quarter of all forefoot operations (Malhotra and colleagues, 2016).',
       paragraphs: [
         'Surgery is considered when a rigid hammer toe causes persistent pain, skin breakdown, or difficulty wearing shoes despite conservative care. The decision is based on symptoms and functional limitation, not on the appearance of the toe.',
         'Common procedures include proximal interphalangeal joint arthroplasty (removing a small piece of bone to straighten the joint) and arthrodesis (fusing the joint in a straight position). Newer minimally invasive techniques exist but long-term outcome data are still being collected.',

@@ -146,6 +146,7 @@ export const VS_EXAKT_EN: Guide = {
     },
     {
       h2: 'Conditions covered',
+      keyFact: 'Walkito\'s exercises follow the 2023 heel pain guideline, which grades plantar fascia and calf stretching A and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
         'This is where Exakt is clearly stronger. Its rehab plans cover plantar fasciitis, Achilles tendinopathy, ankle sprains, hamstring strains, meniscus tears, runner\'s knee and more. If your pain is in your knee, hip or hamstring, Walkito does not have a plan for it.',
         'Walkito covers plantar fasciitis, flat feet (flexible), heel pain from standing, and shin pain. Its exercises follow the 2023 heel pain guideline (stretching grade A, strength grade B) and the Rathleff 2015 trial (loaded heel raises for plantar fasciitis). For those specific conditions, it has exercises, progression logic and pain adaptation. For anything outside that scope, Exakt or a broader app like Prehab is the right choice.',

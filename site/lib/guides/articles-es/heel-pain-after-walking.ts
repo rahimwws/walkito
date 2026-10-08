@@ -36,6 +36,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
   sections: [
     {
       h2: '¿Por qué te duele el talón después de caminar?',
+      keyFact: 'En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la dorsiflexión de tobillo reducida fue el factor de riesgo más fuerte, por delante de un índice de masa corporal alto y estar de pie mucho tiempo en el trabajo (Riddle y colegas, 2003).',
       paragraphs: [
         'Caminar carga la fascia plantar, la banda gruesa de tejido bajo el pie, con cada paso. Cada vez que el talón golpea el piso y el pie rueda hacia adelante, la fascia se estira y absorbe fuerza. En un pie sano esto no es problema. Pero cuando la fascia está irritada o la pantorrilla está demasiado tensa para absorber su parte, la carga se concentra en la unión del talón.',
         'El resultado es un dolor que aumenta durante o después de una caminata, sobre todo si es más larga de lo habitual. La guía de 2023 describe dos patrones típicos de la fascitis plantar: dolor en los primeros pasos después de descansar, y dolor que aumenta con la actividad prolongada que implica apoyar el peso. Caminar es la actividad prolongada con carga de peso más común que existe.',
@@ -73,6 +74,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
     },
     {
       h2: 'Los ejercicios que ayudan con el dolor de talón al caminar',
+      keyFact: 'Una revisión sistemática encontró que tanto el estiramiento de la fascia plantar como el de la pantorrilla redujeron más el dolor de la fascitis plantar que no estirar en absoluto (Siriphorn y Eksakulkla, 2020).',
       paragraphs: [
         'Los ejercicios son los mismos que la guía de 2023 recomienda para la fascitis plantar. La guía le da al estiramiento su grado más alto, **A**, y al entrenamiento de fuerza una **B**. Se recomiendan los dos. Una revisión sistemática encontró que tanto el estiramiento de la fascia plantar como el de la pantorrilla redujeron el dolor en comparación con no estirar (Siriphorn y Eksakulkla, 2020).',
       ],
@@ -152,6 +154,7 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
     },
     {
       h2: '¿Cuánto tiempo hasta que el talón deje de doler después de caminar?',
+      keyFact: 'En datos normativos con 566\u00A0adultos sanos, el número promedio de elevaciones de talón a una pierna fue de unas 23 a 24\u00A0repeticiones, un punto de referencia para seguir la resistencia de la pantorrilla con el tiempo (Hebert-Losier y colegas, 2017).',
       paragraphs: [
         'No hay un plazo fijo. Una revisión de la evidencia clínica indica que cerca del 90\u00A0% de las personas con fascitis plantar mejora con cuidados sin cirugía, a menudo en varios meses (Latt y colegas, 2020). En un seguimiento más largo de 174\u00A0personas, cerca de la mitad todavía tenía algunos síntomas a los 5\u00A0años, aunque la mayoría eran leves para ese momento (Hansen y colegas, 2018).',
         'Lo que sí puedes medir más pronto es si los ejercicios están funcionando. El dolor de la mañana en una escala de 0 a 10 es la señal diaria más clara. La resistencia de la pantorrilla, medida contando cuántas elevaciones de talón a una pierna puedes hacer, sigue la fuerza a lo largo de semanas. Un dato normativo comúnmente citado para adultos es de unas 23 a 24\u00A0repeticiones en promedio, de datos normativos con 566\u00A0adultos sanos (Hebert-Losier y colegas, 2017). Lo que importa es si tu número está subiendo, no si coincide con ese dato.',

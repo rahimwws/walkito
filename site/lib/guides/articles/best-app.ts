@@ -26,6 +26,7 @@ export const BEST_APP_EN: Guide = {
   sections: [
     {
       h2: 'What should a plantar fasciitis app actually do?',
+      keyFact: 'The 2023 clinical guideline for heel pain grades plantar fascia and calf stretching A, the top grade, and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
         'A useful plantar fasciitis app should include exercises that match what the research supports. The 2023 clinical guideline for heel pain grades the evidence behind each approach. Plantar fascia and calf stretching earn an A, the top grade. Strength training earns a B. That means both should be in the app, not just one.',
         'Beyond the exercise list, these are the things worth checking before you subscribe:',

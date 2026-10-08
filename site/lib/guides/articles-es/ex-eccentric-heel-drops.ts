@@ -86,6 +86,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_ES: Guide = {
     },
     {
       h2: 'Insercional o de porción media: ¿cambia el ejercicio?',
+      keyFact: 'En un estudio piloto de 2008 con 27\u00A0personas con dolor insercional de Aquiles, la carga excéntrica a nivel del piso, sin bajar de la posición neutra, dio buenos resultados en el 67\u00A0% de los casos (Jonsson y colegas, 2008).',
       paragraphs: [
         'La tendinopatía de Aquiles de la porción media está en el cuerpo del tendón, normalmente de 2 a 6\u00A0centímetros por encima del hueso del talón. Aquí sirven los excéntricos normales sobre la orilla de un escalón.',
         'La tendinopatía de Aquiles insercional es dolor justo donde el tendón se une al hueso. En un estudio piloto de 2008 con 27\u00A0personas con dolor insercional crónico, un protocolo modificado con carga excéntrica solo a nivel del piso, sin bajar por debajo de la posición neutra, reportó buenos resultados en el 67\u00A0% de los casos. La dorsiflexión profunda comprime el tendón contra el hueso del talón, así que las bajadas profundas normales son contraproducentes en el dolor insercional.',

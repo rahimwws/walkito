@@ -113,6 +113,7 @@ export const EX_CALF_RAISES: Guide = {
     },
     {
       h2: 'How many calf raises should you do?',
+      keyFact: 'A normative study of 566 healthy adults aged 20 to 81 found single-leg calf-raise counts varied by age, sex and activity level, with women reaching a median of 21 reps (Hebert-Losier and colleagues, 2017).',
       paragraphs: [
         'It depends on where you are in the ladder and what you are working on. For general calf strength, 3 sets of 10 to 15 reps at a slow tempo is a common starting dose. For the research-tested plantar fasciitis protocol, the towel heel raise starts at a 12-repetition maximum for 3 sets and progresses to 8RM for 5 sets over about five weeks.',
         'A useful benchmark is the single-leg heel-raise endurance test. A normative study of 566 healthy adults found a median of 24 reps for men and 21 for women, varying with age, sex and activity. The calf goal in the Walkito app is 25 single-leg calf raises. Reaching it does not end the work. It moves to maintaining.',
