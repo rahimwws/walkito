@@ -41,21 +41,21 @@ const COPY = {
   },
   es: {
     heading: 'Recibe los ejercicios por email',
-    description: 'Te enviaremos tres PDF con ejercicios y un plan gratuito de 7 dias. Un correo al dia, luego paramos. Puedes darte de baja en cualquier momento.',
+    description: 'Te enviaremos tres PDF con ejercicios y un plan gratuito de 7 días. Un correo al día, luego paramos. Puedes darte de baja en cualquier momento.',
     placeholder: 'tu email',
     submit: 'enviarme los ejercicios',
-    privacy: 'Politica de privacidad',
+    privacy: 'Política de privacidad',
     success: 'Revisa tu bandeja de entrada y confirma tu correo.',
-    already: 'Ya estas suscrito. Revisa tu bandeja de entrada.',
-    error: 'Algo salio mal. Intentalo de nuevo o escribenos a ',
-    tooMany: 'Demasiados intentos. Intentalo manana.',
+    already: 'Ya estás suscrito. Revisa tu bandeja de entrada.',
+    error: 'Algo salió mal. Inténtalo de nuevo o escríbenos a ',
+    tooMany: 'Demasiados intentos. Inténtalo mañana.',
   },
 } as const;
 
 const PRIVACY_PATH: Record<Lang, string> = {
   en: '/privacy/',
-  ru: '/konfidentsialnost/',
-  es: '/privacidad/',
+  ru: '/ru/konfidentsialnost/',
+  es: '/es/privacidad/',
 };
 
 type State = 'idle' | 'sending' | 'success' | 'already' | 'error' | 'too-many';

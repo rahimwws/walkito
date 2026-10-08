@@ -16,7 +16,7 @@ import { SUPPORT_EMAIL } from '@/lib/site';
  */
 export const metadata: Metadata = {
   // The root template appends " | Walkito".
-  title: 'Privacy',
+  title: 'Informativa sulla privacy',
   description:
     'Cosa raccoglie Walkito e perché. Il tuo piano è salvato nel tuo account, i dati di Apple Salute e Health Connect restano sul telefono. Niente pubblicità.',
   alternates: alternatesFor('privacy', 'it'),
@@ -30,7 +30,7 @@ export default function PrivacyIt() {
       <Masthead lang="it" />
 
       <Prose className="shell prose">
-        <h1>Privacy</h1>
+        <h1>Informativa sulla privacy</h1>
 
         <p className="updated">Ultimo aggiornamento: 7 ottobre 2026</p>
         <p className="updated">
