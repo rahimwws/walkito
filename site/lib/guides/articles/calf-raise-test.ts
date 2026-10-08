@@ -85,6 +85,7 @@ export const CALF_RAISE_TEST_EN: Guide = {
     },
     {
       h2: 'How many single-leg calf raises should you be able to do?',
+      tool: 'calf-raise-calculator',
       keyFact: 'In 1995, a study of 203 adults aged 20 to 59 proposed 25 repetitions as the benchmark for normal single-leg heel-rise performance (Lunsford and Perry, 1995).',
       paragraphs: [
         'The table below shows the median number of single-leg heel-rise repetitions by age and sex, from Hebert-Losier 2017. These are model estimates for a person with a moderate physical activity level (level 4 on a 6-point scale) and a body mass index of 24.2, averaged across both legs.',

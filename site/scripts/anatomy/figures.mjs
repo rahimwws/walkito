@@ -113,8 +113,14 @@ export const FIGURES = {
   },
 };
 
+// The foot map's two neutral views (no labels: the tap points are HTML on top).
+FIGURES['map-side'] = { src: 'map-side.webp', credit: 'walkito', crop: [200, 15, 840, 925], labels: [] };
+FIGURES['map-sole'] = { src: 'map-sole.webp', credit: 'walkito', crop: [250, 30, 760, 970], labels: [] };
+
 /** Label text. Only the languages a figure is placed in are needed. */
 export const TEXT = {
+  'map-side': { en: {} },
+  'map-sole': { en: {} },
   'plantar-fascia': {
     en: { fascia: 'Plantar fascia', pain: 'Where heel pain usually starts', heel: 'Heel bone' },
     es: { fascia: 'Fascia plantar', pain: 'Donde suele empezar el dolor', heel: 'Hueso del talón' },

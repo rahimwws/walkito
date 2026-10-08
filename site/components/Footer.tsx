@@ -78,6 +78,8 @@ const TAGLINE: Record<Lang, string> = {
 /** Folds the footer sections on a phone, before first paint of the footer. */
 const FOLD_ON_PHONE = `if(matchMedia("(max-width: 760px)").matches){document.querySelectorAll(".footer details[open]").forEach(function(d){d.removeAttribute("open")})}`;
 
+const FOOT_MAP_LINK = { en: 'Where does your foot hurt?', es: '¿Dónde te duele el pie?', ru: 'Где болит стопа?' } as const;
+
 export function Footer({
   lang = 'en',
   page,
@@ -141,6 +143,12 @@ export function Footer({
     { href: TRANSLATED.terms[lang], label: c.navTerms },
   ];
 
+  // The "where does it hurt" map exists in the three full languages only.
+  const footMap =
+    lang === 'en' || lang === 'es' || lang === 'ru'
+      ? [{ href: CUSTOM_PAGES.footMap[lang], label: FOOT_MAP_LINK[lang] }]
+      : [];
+
   const extras = [
       ...(lang === 'en'
         ? [
@@ -157,6 +165,7 @@ export function Footer({
         : lang === 'ru'
         ? [
             { href: CUSTOM_PAGES.exercises.ru, label: 'Библиотека упражнений' },
+            { href: '/ru/test-podema-na-noski/', label: 'Тест подъёма на носки' },
             { href: CUSTOM_PAGES.printables.ru, label: 'Листы для печати (PDF)' },
           ]
         : []),
@@ -185,7 +194,7 @@ export function Footer({
               heading={h.heel}
               links={group(['hubPlantarFasciitis', 'morningHeelPain', 'pfDuration', 'runners', ...NAV_GROUPS.heel])}
             />
-            <Column heading={h.pain} links={group(['hubFlatFeet', 'ballOfFoot', ...NAV_GROUPS.foot])} />
+            <Column heading={h.pain} links={[...footMap, ...group(['hubFlatFeet', 'ballOfFoot', ...NAV_GROUPS.foot])]} />
             <div className="footer-stack">
               <Column heading={h.work} links={group(NAV_GROUPS.work)} />
               <Column heading={h.compare} links={group(NAV_GROUPS.compare)} />
