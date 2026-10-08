@@ -68,6 +68,8 @@ export type GuideSection = {
   /** A labelled anatomy illustration, shown after the first paragraph.
    * `caption` is one plain line under it; `alt` says what it shows. */
   figure?: { id: AnatomyId; caption: string; alt: string };
+  /** An interactive tool printed at the end of the section. */
+  tool?: 'calf-raise-calculator';
   paragraphs?: readonly string[];
   exercises?: readonly GuideExercise[];
   bullets?: readonly string[];

@@ -19,6 +19,7 @@ import { CHROME, CUSTOM_PAGES, TRANSLATED, customHref } from '@/lib/i18n';
 import { articleSchema, faqSchema } from '@/lib/schema';
 import { videoSchema, imageSchema } from '@/lib/video';
 import { AnatomyFigure } from '@/components/AnatomyFigure';
+import { CalfRaiseCalculator } from '@/components/tools/CalfRaiseCalculator';
 import { anatomySchema } from '@/lib/anatomy';
 import { SITE_URL } from '@/lib/site';
 
@@ -376,6 +377,11 @@ export function Guide({ guide }: { guide: GuideData }) {
               </p>
             )}
             {section.cites?.map((i) => <Cite key={i} index={i} />)}
+            {section.tool === 'calf-raise-calculator' && (
+              <CalfRaiseCalculator lang={guide.lang}>
+                <AppStoreBadge campaign="tool-calf-raise" lang={guide.lang} />
+              </CalfRaiseCalculator>
+            )}
           </section>
         ))}
 

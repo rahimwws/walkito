@@ -2641,3 +2641,218 @@ figcaption {
     pointer-events: none;
   }
 }
+
+/* ------------------------------------------------------------------ tools -- */
+/* Interactive tools inside guides (calf raise calculator, recovery timeline).
+   Same box as the email signup, with the app's violet for the result. */
+.tool {
+  margin: 28px 0 8px;
+  padding: 20px 20px 18px;
+  border: 1px solid var(--hairline);
+  border-radius: 18px;
+  background: #fafafb;
+}
+
+.tool-heading {
+  margin: 0 0 4px;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.tool-intro {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 14px;
+}
+
+.tool-grid > label,
+.tool-grid > fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.tool-grid > label > span,
+.tool-grid legend {
+  padding: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.tool input[inputmode='numeric'] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  background: #fff;
+  font: inherit;
+  font-size: 17px;
+  color: var(--ink);
+}
+
+.tool input[inputmode='numeric']:focus {
+  outline: 2px solid var(--violet);
+  outline-offset: 0;
+  border-color: transparent;
+}
+
+.tool-segment {
+  display: flex;
+  padding: 3px;
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.tool-segment label {
+  flex: 1;
+  padding: 7px 4px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.tool-segment label.on {
+  background: var(--ink);
+  color: #fff;
+}
+
+.tool-segment input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tool-segment label:has(input:focus-visible) {
+  outline: 2px solid var(--violet);
+}
+
+.tool form button {
+  margin-top: 16px;
+  padding: 11px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--ink);
+  color: #fff;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tool-error {
+  margin: 12px 0 0;
+  font-size: 14px;
+  color: #c33;
+}
+
+.tool-result {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--hairline);
+}
+
+.tool-result p,
+.tool-result li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.tool-result-lead {
+  margin: 0 0 10px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.tool-result ul {
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.tool-verdict {
+  margin: 0 0 6px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.tool-verdict::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--muted);
+}
+
+.tool-above::before {
+  background: var(--violet);
+}
+
+.tool-around::before {
+  background: #a78bfa;
+}
+
+.tool-below::before {
+  background: #f59e0b;
+}
+
+.tool-balance {
+  margin: 12px 0 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(139, 92, 246, 0.08);
+}
+
+.tool-balance.tool-below {
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.tool-note {
+  margin: 8px 0 0;
+  font-size: 13px !important;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.tool-cta {
+  margin: 14px 0 6px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+@media (max-width: 420px) {
+  .tool {
+    padding: 16px 14px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Sex, then age, each on their own row, so the two leg counts stay side by side. */
+  .tool-grid > fieldset,
+  .tool-grid > label:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .tool-grid > fieldset {
+    grid-row: 1;
+  }
+}
