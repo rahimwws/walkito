@@ -141,7 +141,7 @@ const COPY: Record<Lang, VisualCopy> = {
   en: {
     painTitle: 'Morning pain',
     painNow: (value) => `${value} / 10 this week`,
-    painCaption: 'Day-to-day ups and downs are normal - watch the line.',
+    painCaption: 'Day-to-day ups and downs are normal. Watch the line.',
     goalsTitle: 'Goals',
     goalName: { arch_hold: 'Stronger arch', calf_raises: 'Stronger calves', balance: 'Better balance' },
     goalLine: {
@@ -165,7 +165,7 @@ const COPY: Record<Lang, VisualCopy> = {
   ru: {
     painTitle: 'Боль по утрам',
     painNow: (value) => `${value} / 10 за неделю`,
-    painCaption: 'Скачки день ото дня - это нормально. Смотрите на линию.',
+    painCaption: 'Перепады изо дня в день нормальны. Смотрите на линию.',
     goalsTitle: 'Цели',
     goalName: { arch_hold: 'Сильный свод', calf_raises: 'Сильные икры', balance: 'Лучше баланс' },
     goalLine: {
@@ -189,7 +189,7 @@ const COPY: Record<Lang, VisualCopy> = {
   es: {
     painTitle: 'Dolor por la mañana',
     painNow: (value) => `${value} / 10 esta semana`,
-    painCaption: 'Los altibajos de cada día son normales - fíjate en la línea.',
+    painCaption: 'Los altibajos de cada día son normales. Fíjate en la línea.',
     goalsTitle: 'Objetivos',
     goalName: { arch_hold: 'Arco más fuerte', calf_raises: 'Gemelos más fuertes', balance: 'Mejor equilibrio' },
     goalLine: {
@@ -213,7 +213,7 @@ const COPY: Record<Lang, VisualCopy> = {
   pt: {
     painTitle: 'Dor de manhã',
     painNow: (value) => `${value} / 10 esta semana`,
-    painCaption: 'Altos e baixos de um dia para o outro são normais - acompanhe a linha.',
+    painCaption: 'Altos e baixos de um dia para o outro são normais. Acompanhe a linha.',
     goalsTitle: 'Objetivos',
     goalName: { arch_hold: 'Arco mais forte', calf_raises: 'Panturrilhas mais fortes', balance: 'Mais equilíbrio' },
     goalLine: {
@@ -237,7 +237,7 @@ const COPY: Record<Lang, VisualCopy> = {
   fr: {
     painTitle: 'Douleur du matin',
     painNow: (value) => `${value} / 10 cette semaine`,
-    painCaption: 'Les hauts et les bas d’un jour à l’autre sont normaux - regarde la courbe.',
+    painCaption: 'Les hauts et les bas d’un jour à l’autre sont normaux. Regarde la courbe.',
     goalsTitle: 'Objectifs',
     goalName: {
       arch_hold: 'Une voûte plus forte',
@@ -265,7 +265,7 @@ const COPY: Record<Lang, VisualCopy> = {
   it: {
     painTitle: 'Dolore al mattino',
     painNow: (value) => `${value} / 10 questa settimana`,
-    painCaption: 'Gli alti e bassi di ogni giorno sono normali - guarda la linea.',
+    painCaption: 'Gli alti e bassi di ogni giorno sono normali. Guarda la linea.',
     goalsTitle: 'Obiettivi',
     goalName: { arch_hold: 'Arco più forte', calf_raises: 'Polpacci più forti', balance: 'Equilibrio migliore' },
     goalLine: {
@@ -289,7 +289,7 @@ const COPY: Record<Lang, VisualCopy> = {
   de: {
     painTitle: 'Morgenschmerz',
     painNow: (value) => `${value} / 10 diese Woche`,
-    painCaption: 'Auf und Ab von Tag zu Tag ist normal - achte auf die Linie.',
+    painCaption: 'Auf und Ab von Tag zu Tag ist normal. Achte auf die Linie.',
     goalsTitle: 'Ziele',
     goalName: { arch_hold: 'Kräftigeres Gewölbe', calf_raises: 'Kräftigere Waden', balance: 'Bessere Balance' },
     goalLine: {

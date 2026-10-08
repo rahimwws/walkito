@@ -8,7 +8,7 @@ import { Anton } from 'next/font/google';
 export const antonNoPreload = Anton({
   weight: '400',
   subsets: ['latin'],
-  display: 'swap',
+  display: 'block', // same as lib/font-anton.ts: one @font-face family, one behaviour
   preload: false,
   variable: '--font-display',
 });

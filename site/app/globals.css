@@ -4756,3 +4756,29 @@ html[data-scrolled] .masthead-float .download {
     font-size: min(clamp(40px, 7vw, 96px), calc(min(94vw, 1300px) / (var(--h1-len, 31) * var(--h1-em))));
   }
 }
+
+/*
+ * A fallback for the hero headline that is as wide as Anton's capitals.
+ *
+ * next/font's own "Anton Fallback" (Arial at 90.69%) matches Anton's average
+ * width, which is mostly lowercase. The hero headline is all capitals, where
+ * Anton is far narrower: measured in Chrome, Anton capitals run 0.68-0.70 of
+ * Arial's. With the stock fallback the not-yet-loaded headline wrapped onto an
+ * extra line on phones and the page jumped when Anton arrived (PageSpeed CLS
+ * 0.087 on that headline). At 69.5% the lines break where Anton's do, so
+ * nothing moves. The text is invisible until Anton loads (font-display:
+ * block), so this face is never seen; it only holds the space.
+ * Russian uses Oswald, whose stock fallback is already within 4%.
+ */
+@font-face {
+  font-family: 'Anton Caps Fallback';
+  src: local('Arial'), local('Liberation Sans'), local('Helvetica');
+  size-adjust: 69.5%;
+  ascent-override: 129.7%;
+  descent-override: 36.29%;
+  line-gap-override: 0%;
+}
+
+html:not(:lang(ru)) .hero-glass h1 {
+  font-family: Anton, 'Anton Caps Fallback', var(--font-body);
+}

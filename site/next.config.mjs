@@ -14,7 +14,11 @@ const nextConfig = {
   // Three root layouts — `(en)`, `ru`, `es` — so each language can set its own
   // `<html lang>`. With no single root there is nowhere for the ordinary
   // not-found page to live, and this is the switch for `app/global-not-found`.
-  experimental: { globalNotFound: true },
+  //
+  // inlineCss: the stylesheets go into each page's <head> as <style> instead
+  // of five <link>s, so a phone can paint the hero without waiting for extra
+  // round trips (Lighthouse measured them as about 0.6 s of render blocking).
+  experimental: { globalNotFound: true, inlineCss: true },
 };
 
 export default nextConfig;

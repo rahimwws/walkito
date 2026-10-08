@@ -22,7 +22,12 @@ export const anton = Anton({
   // in the CSS (next/font includes every subset) and loads only if a headline
   // actually uses one of its letters.
   subsets: ['latin'],
-  display: 'swap',
+  // 'block', not 'swap': the CSS is inlined (next.config inlineCss), so the
+  // page paints before this font arrives. With 'swap' the headline was drawn
+  // in the fallback first and then jumped when the condensed face came in
+  // (PageSpeed CLS 0.114, 0.087 of it this headline). The file is preloaded
+  // and self-hosted, so the wait is short, and nothing else on the page waits.
+  display: 'block',
   variable: '--font-display',
 });
 
