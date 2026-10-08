@@ -15,15 +15,39 @@ import { Prose, typeset } from '@/components/Prose';
 import { guidePath, languagesOf, relatedGuides, type Guide as GuideData } from '@/lib/guides';
 import { isTranslatedPage } from '@/lib/i18n';
 import type { GuideTable } from '@/lib/guides/types';
-import { CHROME, CUSTOM_PAGES, TRANSLATED } from '@/lib/i18n';
+import { CHROME, CUSTOM_PAGES, TRANSLATED, customHref } from '@/lib/i18n';
 import { articleSchema, faqSchema } from '@/lib/schema';
 import { videoSchema } from '@/lib/video';
 import { SITE_URL } from '@/lib/site';
 
-const HOME_CRUMB = { en: 'Home', ru: 'Главная', es: 'Inicio' } as const;
-const EXERCISE_LIST_HEADING = { en: 'Exercises on this page', ru: 'Упражнения на этой странице', es: 'Ejercicios de esta página' } as const;
-const KEY_FACT_LABEL = { en: 'Key finding', ru: 'Главное из исследований', es: 'Dato clave' } as const;
-const LIBRARY_CRUMB = { en: 'Exercise library', ru: 'Библиотека упражнений', es: 'Biblioteca de ejercicios' } as const;
+const HOME_CRUMB = { en: 'Home', ru: 'Главная', es: 'Inicio', pt: 'Início', fr: 'Accueil', it: 'Home', de: 'Start' } as const;
+const EXERCISE_LIST_HEADING = {
+  en: 'Exercises on this page',
+  ru: 'Упражнения на этой странице',
+  es: 'Ejercicios de esta página',
+  pt: 'Exercícios nesta página',
+  fr: 'Exercices de cette page',
+  it: 'Esercizi in questa pagina',
+  de: 'Übungen auf dieser Seite',
+} as const;
+const KEY_FACT_LABEL = {
+  en: 'Key finding',
+  ru: 'Главное из исследований',
+  es: 'Dato clave',
+  pt: 'Dado-chave',
+  fr: 'À retenir',
+  it: 'Dato chiave',
+  de: 'Kernaussage',
+} as const;
+const LIBRARY_CRUMB = {
+  en: 'Exercise library',
+  ru: 'Библиотека упражнений',
+  es: 'Biblioteca de ejercicios',
+  pt: 'Biblioteca de exercícios',
+  fr: "Bibliothèque d'exercices",
+  it: 'Libreria di esercizi',
+  de: 'Übungsbibliothek',
+} as const;
 
 /**
  * `**bold**` and `[label](/path/)`, and nothing else.
@@ -159,7 +183,7 @@ export function Guide({ guide }: { guide: GuideData }) {
   const inLibrary = guide.page.startsWith('ex');
   const trail = [
     { name: HOME_CRUMB[guide.lang], item: `${SITE_URL}${TRANSLATED.home[guide.lang]}` },
-    ...(inLibrary ? [{ name: LIBRARY_CRUMB[guide.lang], item: `${SITE_URL}${CUSTOM_PAGES.exercises[guide.lang]}` }] : []),
+    ...(inLibrary ? [{ name: LIBRARY_CRUMB[guide.lang], item: `${SITE_URL}${customHref('exercises', guide.lang)}` }] : []),
     { name: guide.crumb, item: url },
   ];
   const breadcrumbs = {

@@ -14,7 +14,7 @@
  * Typed off English like the app's catalogue: a key missing in Russian or
  * Spanish fails `tsc`.
  */
-export const LANGS = ['en', 'ru', 'es'] as const;
+export const LANGS = ['en', 'ru', 'es', 'pt', 'fr', 'it', 'de'] as const;
 export type Lang = (typeof LANGS)[number];
 
 /** Endonyms, never translated — the switcher is read by someone who cannot yet
@@ -23,13 +23,34 @@ export const LANG_NAMES: Record<Lang, string> = {
   en: 'English',
   ru: 'Русский',
   es: 'Español',
+  pt: 'Português',
+  fr: 'Français',
+  it: 'Italiano',
+  de: 'Deutsch',
 };
+
+/**
+ * Languages that have every page (articles, exercise library, program,
+ * evidence, FAQ). Portuguese, French, Italian and German started on
+ * 8 October 2026 with the core pages only: home, the two main guides, about,
+ * support, privacy and terms. Where a page has no version in a newer
+ * language, links point at the English page.
+ */
+export const FULL_LANGS = ['en', 'ru', 'es'] as const;
+export type FullLang = (typeof FULL_LANGS)[number];
+export function isFullLang(lang: Lang): lang is FullLang {
+  return (FULL_LANGS as readonly string[]).includes(lang);
+}
 
 /** The Open Graph locale for each language. */
 export const OG_LOCALE: Record<Lang, string> = {
   en: 'en_US',
   ru: 'ru_RU',
   es: 'es_MX',
+  pt: 'pt_BR',
+  fr: 'fr_FR',
+  it: 'it_IT',
+  de: 'de_DE',
 };
 
 const en = {
@@ -115,7 +136,115 @@ const es: Chrome = {
     'Walkito es un programa de ejercicios. No diagnostica ni trata. Si el dolor es agudo, empeora o no te deja dormir, consulta a un profesional de la salud.',
 };
 
-export const CHROME: Record<Lang, Chrome> = { en, ru, es };
+const pt: Chrome = {
+  headerButton: 'Baixar o app',
+  getBadge: 'Baixar na App Store',
+  getBadgeLabel: 'Baixar o Walkito na App Store',
+  navProgram: 'Programa',
+  navEvidence: 'Evidências',
+  navQuestions: 'Perguntas',
+  navSupport: 'Suporte',
+  navPrivacy: 'Privacidade',
+  navTerms: 'Termos',
+  socialTikTok: 'Walkito no TikTok',
+  socialInstagram: 'Walkito no Instagram',
+  navFlatFeet: 'Pé chato',
+  navHeelPain: 'Dor no calcanhar',
+  language: 'Idioma',
+  sourcesHeading: 'Fontes',
+  guidesHeading: 'Guias',
+  updated: 'Atualizado',
+  keyPoints: 'Pontos principais',
+  contents: 'Nesta página',
+  faqHeading: 'Perguntas frequentes',
+  relatedHeading: 'Guias relacionados',
+  navAbout: 'Sobre o Walkito',
+  notice:
+    'O Walkito é um programa de exercícios. Ele não faz diagnóstico nem tratamento. Se a dor for aguda, estiver piorando ou atrapalhando seu sono, procure um profissional de saúde.',
+};
+
+const fr: Chrome = {
+  headerButton: "Télécharger l'app",
+  getBadge: "Télécharger dans l'App Store",
+  getBadgeLabel: "Télécharger Walkito dans l'App Store",
+  navProgram: 'Programme',
+  navEvidence: 'Données scientifiques',
+  navQuestions: 'Questions',
+  navSupport: 'Assistance',
+  navPrivacy: 'Confidentialité',
+  navTerms: 'Conditions',
+  socialTikTok: 'Walkito sur TikTok',
+  socialInstagram: 'Walkito sur Instagram',
+  navFlatFeet: 'Pieds plats',
+  navHeelPain: 'Douleur au talon',
+  language: 'Langue',
+  sourcesHeading: 'Sources',
+  guidesHeading: 'Guides',
+  updated: 'Mis à jour',
+  keyPoints: "L'essentiel",
+  contents: 'Sur cette page',
+  faqHeading: 'Questions fréquentes',
+  relatedHeading: 'Guides associés',
+  navAbout: 'À propos',
+  notice:
+    "Walkito est un programme d'exercices. Il ne pose pas de diagnostic et ne soigne pas. Si la douleur est vive, s'aggrave ou vous empêche de dormir, consultez un professionnel de santé.",
+};
+
+const it: Chrome = {
+  headerButton: "Scarica l'app",
+  getBadge: "Scarica sull'App Store",
+  getBadgeLabel: "Scarica Walkito sull'App Store",
+  navProgram: 'Programma',
+  navEvidence: 'Evidenze',
+  navQuestions: 'Domande',
+  navSupport: 'Supporto',
+  navPrivacy: 'Privacy',
+  navTerms: 'Termini',
+  socialTikTok: 'Walkito su TikTok',
+  socialInstagram: 'Walkito su Instagram',
+  navFlatFeet: 'Piede piatto',
+  navHeelPain: 'Dolore al tallone',
+  language: 'Lingua',
+  sourcesHeading: 'Fonti',
+  guidesHeading: 'Guide',
+  updated: 'Aggiornato',
+  keyPoints: 'In breve',
+  contents: 'In questa pagina',
+  faqHeading: 'Domande frequenti',
+  relatedHeading: 'Guide correlate',
+  navAbout: 'Chi siamo',
+  notice:
+    'Walkito è un programma di esercizi. Non fa diagnosi e non cura. Se il dolore è acuto, peggiora o ti impedisce di dormire, rivolgiti a un professionista sanitario.',
+};
+
+const de: Chrome = {
+  headerButton: 'App laden',
+  getBadge: 'Im App Store laden',
+  getBadgeLabel: 'Walkito im App Store laden',
+  navProgram: 'Programm',
+  navEvidence: 'Studienlage',
+  navQuestions: 'Fragen',
+  navSupport: 'Support',
+  navPrivacy: 'Datenschutz',
+  navTerms: 'Nutzungsbedingungen',
+  socialTikTok: 'Walkito auf TikTok',
+  socialInstagram: 'Walkito auf Instagram',
+  navFlatFeet: 'Plattfuß',
+  navHeelPain: 'Fersenschmerzen',
+  language: 'Sprache',
+  sourcesHeading: 'Quellen',
+  guidesHeading: 'Ratgeber',
+  updated: 'Aktualisiert',
+  keyPoints: 'Das Wichtigste',
+  contents: 'Auf dieser Seite',
+  faqHeading: 'Häufige Fragen',
+  relatedHeading: 'Weitere Ratgeber',
+  navAbout: 'Über Walkito',
+  notice:
+    'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und behandelt nicht. Wenn der Schmerz stechend ist, schlimmer wird oder dich nachts weckt, geh zu einer medizinischen Fachperson.',
+};
+
+export const CHROME: Record<Lang, Chrome> = { en, ru, es, pt, fr, it, de };
 
 /**
  * The pages that exist in more than one language, and where each one lives.
@@ -125,25 +254,37 @@ export const CHROME: Record<Lang, Chrome> = { en, ru, es };
  * ignored by Google, and a table is the only shape where that cannot happen.
  */
 export const TRANSLATED = {
-  home: { en: '/', ru: '/ru/', es: '/es/' },
+  home: { en: '/', ru: '/ru/', es: '/es/', pt: '/pt/', fr: '/fr/', it: '/it/', de: '/de/' },
   flatFeet: {
     en: '/flat-feet-exercises/',
     ru: '/ru/ploskostopie-uprazhneniya/',
     es: '/es/ejercicios-pie-plano/',
+    pt: '/pt/exercicios-pe-chato/',
+    fr: '/fr/exercices-pieds-plats/',
+    it: '/it/esercizi-piede-piatto/',
+    de: '/de/plattfuss-uebungen/',
   },
   heelPain: {
     en: '/plantar-fasciitis-exercises/',
     ru: '/ru/bol-v-pyatke-uprazhneniya/',
     es: '/es/ejercicios-fascitis-plantar/',
+    pt: '/pt/exercicios-fascite-plantar/',
+    fr: '/fr/exercices-fasciite-plantaire/',
+    it: '/it/esercizi-fascite-plantare/',
+    de: '/de/plantarfasziitis-uebungen/',
   },
   about: {
     en: '/about/',
     ru: '/ru/o-proekte/',
     es: '/es/sobre-walkito/',
+    pt: '/pt/sobre-walkito/',
+    fr: '/fr/a-propos/',
+    it: '/it/chi-siamo/',
+    de: '/de/ueber-walkito/',
   },
-  support: { en: '/support/', ru: '/ru/podderzhka/', es: '/es/soporte/' },
-  privacy: { en: '/privacy/', ru: '/ru/konfidentsialnost/', es: '/es/privacidad/' },
-  terms: { en: '/terms/', ru: '/ru/usloviya/', es: '/es/terminos/' },
+  support: { en: '/support/', ru: '/ru/podderzhka/', es: '/es/soporte/', pt: '/pt/suporte/', fr: '/fr/assistance/', it: '/it/supporto/', de: '/de/support/' },
+  privacy: { en: '/privacy/', ru: '/ru/konfidentsialnost/', es: '/es/privacidad/', pt: '/pt/privacidade/', fr: '/fr/confidentialite/', it: '/it/privacy/', de: '/de/datenschutz/' },
+  terms: { en: '/terms/', ru: '/ru/usloviya/', es: '/es/terminos/', pt: '/pt/termos/', fr: '/fr/conditions/', it: '/it/termini/', de: '/de/nutzungsbedingungen/' },
 } as const satisfies Record<string, Record<Lang, string>>;
 
 export type TranslatedPage = keyof typeof TRANSLATED;
@@ -351,12 +492,18 @@ export const CUSTOM_EN_ES = CUSTOM_PAGES;
 /** @deprecated use CustomPage instead */
 export type CustomEnEsPage = CustomPage;
 
-export function alternatesCustom(page: CustomPage, lang: Lang) {
+export function alternatesCustom(page: CustomPage, lang: FullLang) {
   const paths = CUSTOM_PAGES[page];
   return {
     canonical: paths[lang],
     languages: { en: paths.en, es: paths.es, ru: paths.ru, 'x-default': paths.en },
   };
+}
+
+/** A custom page in the reader's language, or the English page for the
+ * languages that do not have it yet. */
+export function customHref(page: CustomPage, lang: Lang): string {
+  return isFullLang(lang) ? CUSTOM_PAGES[page][lang] : CUSTOM_PAGES[page].en;
 }
 
 /** @deprecated use alternatesCustom instead */
@@ -372,6 +519,6 @@ export function alternatesFor(page: TranslatedPage, lang: Lang) {
   const paths = TRANSLATED[page];
   return {
     canonical: paths[lang],
-    languages: { en: paths.en, ru: paths.ru, es: paths.es, 'x-default': paths.en },
+    languages: { ...paths, 'x-default': paths.en },
   };
 }

@@ -33,6 +33,30 @@ const COPY: Record<Lang, { lead: string; ios: string; android: string; or: strin
     android: 'Google Play',
     or: 'o',
   },
+  pt: {
+    lead: 'O Walkito transforma estes exercícios em um plano diário curto, que se ajusta a como seus pés acordaram hoje.',
+    ios: 'Baixe o Walkito na App Store',
+    android: 'Google Play',
+    or: 'ou',
+  },
+  fr: {
+    lead: "Walkito transforme ces exercices en un court programme quotidien qui s'adapte à l'état de vos pieds ce matin.",
+    ios: "Téléchargez Walkito dans l'App Store",
+    android: 'Google Play',
+    or: 'ou',
+  },
+  it: {
+    lead: 'Walkito trasforma questi esercizi in un breve piano quotidiano che si adatta a come stavano i tuoi piedi stamattina.',
+    ios: "Scarica Walkito sull'App Store",
+    android: 'Google Play',
+    or: 'o',
+  },
+  de: {
+    lead: 'Walkito macht aus diesen Übungen einen kurzen Tagesplan, der sich danach richtet, wie sich deine Füße heute Morgen angefühlt haben.',
+    ios: 'Walkito im App Store laden',
+    android: 'Google Play',
+    or: 'oder',
+  },
 };
 
 export function AppCallout({ campaign, lang }: { campaign: string; lang: Lang }) {

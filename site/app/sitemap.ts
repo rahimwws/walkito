@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 import { ARTICLES_EN, ARTICLES_ES, ARTICLES_RU, GUIDES } from '@/lib/guides';
-import { CUSTOM_PAGES, EN_ONLY, ES_ARTICLES, RU_ARTICLES, TRANSLATED, type CustomPage, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { LANGS, CUSTOM_PAGES, EN_ONLY, ES_ARTICLES, RU_ARTICLES, TRANSLATED, type CustomPage, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
 import { PAGE_UPDATED, SITE_URL } from '@/lib/site';
 
 /**
@@ -33,12 +33,10 @@ function translated(
 ): MetadataRoute.Sitemap {
   const paths = TRANSLATED[page];
   const languages = {
-    en: `${SITE_URL}${paths.en}`,
-    ru: `${SITE_URL}${paths.ru}`,
-    es: `${SITE_URL}${paths.es}`,
+    ...Object.fromEntries(LANGS.map((l) => [l, `${SITE_URL}${paths[l]}`])),
     'x-default': `${SITE_URL}${paths.en}`,
   };
-  return (['en', 'ru', 'es'] as const).map((lang) => ({
+  return LANGS.map((lang) => ({
     url: `${SITE_URL}${paths[lang]}`,
     lastModified: updated(lang),
     changeFrequency,

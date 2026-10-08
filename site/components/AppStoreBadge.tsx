@@ -5,6 +5,10 @@ const PLAY_LABEL: Record<Lang, string> = {
   en: 'Get it on Google Play',
   ru: 'Скачать в Google Play',
   es: 'Disponible en Google Play',
+  pt: 'Disponível no Google Play',
+  fr: 'Disponible sur Google Play',
+  it: 'Disponibile su Google Play',
+  de: 'Jetzt bei Google Play',
 };
 
 function AppleGlyph() {

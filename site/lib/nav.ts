@@ -165,6 +165,10 @@ export const GROUP_HEADING: Record<Lang, Record<NavGroup | 'walkito', string>> =
   en: { exercises: 'Exercises', pain: 'Foot pain', heel: 'Heel pain', foot: 'Arch and toes', work: 'On your feet', compare: 'Compare apps', library: 'Exercise library', walkito: 'Walkito' },
   ru: { exercises: 'Упражнения', pain: 'Боль в стопе', heel: 'Боль в пятке', foot: 'Свод и пальцы', work: 'На ногах весь день', compare: 'Сравнение', library: 'Упражнения', walkito: 'Walkito' },
   es: { exercises: 'Ejercicios', pain: 'Dolor de pie', heel: 'Dolor de talón', foot: 'Arco y dedos', work: 'De pie todo el día', compare: 'Comparar', library: 'Biblioteca de ejercicios', walkito: 'Walkito' },
+  pt: { exercises: 'Exercícios', pain: 'Dor no pé', heel: 'Dor no calcanhar', foot: 'Arco e dedos', work: 'Em pé o dia todo', compare: 'Comparar apps', library: 'Biblioteca de exercícios', walkito: 'Walkito' },
+  fr: { exercises: 'Exercices', pain: 'Douleur au pied', heel: 'Douleur au talon', foot: 'Voûte et orteils', work: 'Debout toute la journée', compare: 'Comparer', library: "Bibliothèque d'exercices", walkito: 'Walkito' },
+  it: { exercises: 'Esercizi', pain: 'Dolore al piede', heel: 'Dolore al tallone', foot: 'Arco e dita', work: 'In piedi tutto il giorno', compare: 'Confronta app', library: 'Libreria di esercizi', walkito: 'Walkito' },
+  de: { exercises: 'Übungen', pain: 'Fußschmerzen', heel: 'Fersenschmerzen', foot: 'Fußgewölbe und Zehen', work: 'Den ganzen Tag stehen', compare: 'Apps vergleichen', library: 'Übungsbibliothek', walkito: 'Walkito' },
 };
 
 /** The group a guide sits in, or null for pages outside the map. */

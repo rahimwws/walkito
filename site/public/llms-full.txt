@@ -8,7 +8,7 @@
 > place.
 
 Source: https://walkito.site
-Last updated: 2026-10-07
+Last updated: 2026-10-08
 
 Walkito provides exercise programming. It does not diagnose and does not
 treat any condition. Pain that follows an injury, comes with numbness,

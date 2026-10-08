@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { CHROME, CUSTOM_PAGES, TRANSLATED, type Lang } from '@/lib/i18n';
+import { CHROME, TRANSLATED, customHref, type Lang } from '@/lib/i18n';
 import { storeHref } from '@/lib/site';
 
 /** The arrow inside the header button. Inline rather than an icon package: one
@@ -43,9 +43,9 @@ export function Masthead({ lang = 'en' }: { lang?: Lang }) {
       {/* Every language now has program, evidence and questions pages, so the
           header is the same in all three. */}
       <nav className="nav">
-        <Link href={CUSTOM_PAGES.program[lang]}>{c.navProgram}</Link>
-        <Link href={CUSTOM_PAGES.science[lang]}>{c.navEvidence}</Link>
-        <Link href={CUSTOM_PAGES.faq[lang]}>{c.navQuestions}</Link>
+        <Link href={customHref('program', lang)}>{c.navProgram}</Link>
+        <Link href={customHref('science', lang)}>{c.navEvidence}</Link>
+        <Link href={customHref('faq', lang)}>{c.navQuestions}</Link>
         <Link href={TRANSLATED.support[lang]}>{c.navSupport}</Link>
         <Link href={TRANSLATED.privacy[lang]}>{c.navPrivacy}</Link>
       </nav>

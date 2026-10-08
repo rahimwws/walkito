@@ -11,13 +11,17 @@ import { ARTICLES_RU } from './articles-ru';
 import { FLAT_FEET_EN, HEEL_PAIN_EN } from './en';
 import { FLAT_FEET_ES, HEEL_PAIN_ES } from './es';
 import { FLAT_FEET_RU, HEEL_PAIN_RU } from './ru';
+import { FLAT_FEET_PT, HEEL_PAIN_PT } from './pt';
+import { FLAT_FEET_FR, HEEL_PAIN_FR } from './fr';
+import { FLAT_FEET_IT, HEEL_PAIN_IT } from './it';
+import { FLAT_FEET_DE, HEEL_PAIN_DE } from './de';
 import type { Guide } from './types';
 
 export type { Guide } from './types';
 
 export const GUIDES = {
-  flatFeet: { en: FLAT_FEET_EN, ru: FLAT_FEET_RU, es: FLAT_FEET_ES },
-  heelPain: { en: HEEL_PAIN_EN, ru: HEEL_PAIN_RU, es: HEEL_PAIN_ES },
+  flatFeet: { en: FLAT_FEET_EN, ru: FLAT_FEET_RU, es: FLAT_FEET_ES, pt: FLAT_FEET_PT, fr: FLAT_FEET_FR, it: FLAT_FEET_IT, de: FLAT_FEET_DE },
+  heelPain: { en: HEEL_PAIN_EN, ru: HEEL_PAIN_RU, es: HEEL_PAIN_ES, pt: HEEL_PAIN_PT, fr: HEEL_PAIN_FR, it: HEEL_PAIN_IT, de: HEEL_PAIN_DE },
 } as const;
 
 /** English-only articles, keyed by page. */

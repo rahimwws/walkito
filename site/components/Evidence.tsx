@@ -16,8 +16,12 @@ const LABEL: Record<Lang, Record<EvidenceLevel, string>> = {
   en: { strong: 'Strong', moderate: 'Moderate', early: 'Early', unsupported: 'Not supported' },
   ru: { strong: 'Сильные', moderate: 'Умеренные', early: 'Ранние', unsupported: 'Не подтверждено' },
   es: { strong: 'Sólida', moderate: 'Moderada', early: 'Inicial', unsupported: 'Sin respaldo' },
+  pt: { strong: 'Forte', moderate: 'Moderada', early: 'Inicial', unsupported: 'Sem respaldo' },
+  fr: { strong: 'Solide', moderate: 'Modérée', early: 'Préliminaire', unsupported: 'Non étayé' },
+  it: { strong: 'Solida', moderate: 'Moderata', early: 'Preliminare', unsupported: 'Non supportato' },
+  de: { strong: 'Stark', moderate: 'Mittel', early: 'Vorläufig', unsupported: 'Nicht belegt' },
 };
-const WORD: Record<Lang, string> = { en: 'Evidence', ru: 'Доказательства', es: 'Evidencia' };
+const WORD: Record<Lang, string> = { en: 'Evidence', ru: 'Доказательства', es: 'Evidencia', pt: 'Evidência', fr: 'Niveau de preuve', it: 'Evidenza', de: 'Evidenz' };
 
 export function Evidence({ level, lang = 'en', children }: { level: EvidenceLevel; lang?: Lang; children?: ReactNode }) {
   return (

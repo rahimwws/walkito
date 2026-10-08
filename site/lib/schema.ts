@@ -28,7 +28,15 @@ export function howWeResearchHref(lang: Lang): string {
  */
 export const AUTHOR = {
   name: 'Rahim Hudaykylyyev',
-  role: { en: 'co-founder of Walkito', ru: 'сооснователь Walkito', es: 'cofundador de Walkito' },
+  role: {
+    en: 'co-founder of Walkito',
+    ru: 'сооснователь Walkito',
+    es: 'cofundador de Walkito',
+    pt: 'cofundador do Walkito',
+    fr: 'cofondateur de Walkito',
+    it: 'cofondatore di Walkito',
+    de: 'Mitgründer von Walkito',
+  },
   sameAs: ['https://www.linkedin.com/in/rhdklv/', 'https://x.com/rahimwws', 'https://github.com/rahimwws'],
 } as const;
 
@@ -118,7 +126,7 @@ export function faqSchema(items: readonly { q: string; a: string }[]) {
 
 /** A date as the page prints it, in the page's language. */
 export function formatDate(iso: string, lang: Lang): string {
-  const locale = { en: 'en-US', ru: 'ru-RU', es: 'es-ES' }[lang];
+  const locale = { en: 'en-US', ru: 'ru-RU', es: 'es-ES', pt: 'pt-BR', fr: 'fr-FR', it: 'it-IT', de: 'de-DE' }[lang];
   return new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(
     new Date(`${iso}T00:00:00Z`),
   );

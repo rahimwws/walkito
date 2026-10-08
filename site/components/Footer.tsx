@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 
 import { SocialLinks } from '@/components/SocialLinks';
-import { CHROME, CUSTOM_PAGES, EN_ONLY, ES_ARTICLES, RU_ARTICLES, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
+import { CHROME, CUSTOM_PAGES, isFullLang, EN_ONLY, ES_ARTICLES, RU_ARTICLES, LANG_NAMES, LANGS, TRANSLATED, type EnglishPage, type Lang, type TranslatedPage } from '@/lib/i18n';
 import { hasSpanish, hasRussian } from '@/lib/guides';
 import { playHref, storeHref } from '@/lib/site';
 import { GROUP_HEADING, NAV_GROUPS, NAV_LABEL, NAV_LABEL_ES, NAV_LABEL_RU, type GuideKey } from '@/lib/nav';
@@ -30,10 +30,14 @@ const FOOTER_APP: Record<Lang, { ios: string; android: string }> = {
   en: { ios: 'Walkito on the App Store', android: 'Walkito on Google Play' },
   ru: { ios: 'Walkito в App Store', android: 'Walkito в Google Play' },
   es: { ios: 'Walkito en el App Store', android: 'Walkito en Google Play' },
+  pt: { ios: 'Walkito na App Store', android: 'Walkito no Google Play' },
+  fr: { ios: "Walkito sur l'App Store", android: 'Walkito sur Google Play' },
+  it: { ios: "Walkito sull'App Store", android: 'Walkito su Google Play' },
+  de: { ios: 'Walkito im App Store', android: 'Walkito bei Google Play' },
 };
 
 function hrefFor(key: GuideKey, lang: Lang): string | null {
-  if (key === 'runners') return CUSTOM_PAGES.runners[lang];
+  if (key === 'runners') return isFullLang(lang) ? CUSTOM_PAGES.runners[lang] : null;
   if (key in TRANSLATED) return TRANSLATED[key as TranslatedPage][lang];
   if (lang === 'en') return EN_ONLY[key as EnglishPage];
   if (lang === 'es' && hasSpanish(key as EnglishPage)) return ES_ARTICLES[key as EnglishPage];
@@ -64,6 +68,10 @@ const TAGLINE: Record<Lang, string> = {
   en: 'Daily exercise plans for heel, foot and leg pain, built on clinical guidelines.',
   es: 'Planes diarios de ejercicios para el dolor de talón, pie y pierna, basados en guías clínicas.',
   ru: 'Ежедневные планы упражнений при боли в пятке, стопе и ногах на основе клинических рекомендаций.',
+  pt: 'Planos diários de exercícios para dor no calcanhar, no pé e na perna, baseados em diretrizes clínicas.',
+  fr: "Des programmes d'exercices quotidiens pour la douleur au talon, au pied et à la jambe, fondés sur les recommandations cliniques.",
+  it: 'Piani di esercizi quotidiani per il dolore a tallone, piede e gamba, basati sulle linee guida cliniche.',
+  de: 'Tägliche Übungspläne bei Fersen-, Fuß- und Beinschmerzen, auf Grundlage klinischer Leitlinien.',
 };
 
 /** Folds the footer sections on a phone, before first paint of the footer. */
