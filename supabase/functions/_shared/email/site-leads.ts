@@ -8,9 +8,9 @@
  * celular) to match the /es/ site, and «вы» with the site's terms in Russian
  * («занятие», not «сессия»).
  *
- * The exercises and doses come from the site's guides and the app's real
- * exercise catalogue (the "Walkito starts at" line on each exercise page),
- * not invented here. The PDFs exist only in English, and the Spanish and
+ * The exercises and doses are the app's weekly plan (src/entities/program/
+ * model/plan/dose.ts, the level each exercise starts at), the same doses as the
+ * site's /plantar-fasciitis-exercises/ guide, not invented here. The PDFs exist only in English, and the Spanish and
  * Russian emails say so, the same way the /es/ and /ru/ printables pages do.
  *
  * Locales other than en/es/ru get English: the site has no signup form in
@@ -214,8 +214,8 @@ export function day1(locale: Locale): SiteEmailContent {
       preheader: 'the first thing to do is the one you do before you stand up.',
       paragraphs: [
         'the worst moment for most people is the first few steps in the morning. two stretches, done on the edge of the bed, can take the edge off those steps.',
-        '1. plantar fascia stretch: sit on the bed, cross one foot over the other knee, and pull the toes back until you feel a stretch along the arch. hold for 10 seconds, 10 times on each foot.',
-        '2. calf stretch: stand facing a wall, one foot back, heel down, back leg straight, hips forward. hold for 30 seconds, 3 times on each leg. then bend the back knee slightly and hold again to reach the soleus, the deeper calf muscle.',
+        '1. plantar fascia stretch: sit on the bed, cross one foot over the other knee, and pull the toes back until you feel a stretch along the arch. hold for 30 seconds, twice on each foot.',
+        '2. calf stretch: stand facing a wall, one foot back, heel down, back leg straight, hips forward. hold for 30 seconds, twice on each leg. then bend the back knee slightly and hold again to reach the soleus, the deeper calf muscle.',
         'do the fascia stretch before you stand up. the calf stretch can come right after.',
         `[plantar fascia stretch, with video](${EN.fasciaStretch})`,
         `[calf stretch, with video](${EN.calfStretch})`,
@@ -229,8 +229,8 @@ export function day1(locale: Locale): SiteEmailContent {
       preheader: 'lo primero se hace antes de levantarte.',
       paragraphs: [
         'para la mayoría, el peor momento son los primeros pasos de la mañana. dos estiramientos en el borde de la cama pueden suavizar esos pasos.',
-        '1. estiramiento de la fascia plantar: siéntate en la cama, cruza un pie sobre la rodilla contraria y tira de los dedos hacia atrás hasta notar el estiramiento a lo largo del arco. mantén 10 segundos, 10 veces con cada pie.',
-        '2. estiramiento de pantorrilla: de pie frente a una pared, un pie atrás, el talón en el suelo, la pierna de atrás recta y la cadera hacia delante. mantén 30 segundos, 3 veces con cada pierna. luego dobla un poco la rodilla de atrás y mantén otra vez para llegar al sóleo, el músculo más profundo de la pantorrilla.',
+        '1. estiramiento de la fascia plantar: siéntate en la cama, cruza un pie sobre la rodilla contraria y tira de los dedos hacia atrás hasta notar el estiramiento a lo largo del arco. mantén 30 segundos, dos veces con cada pie.',
+        '2. estiramiento de pantorrilla: de pie frente a una pared, un pie atrás, el talón en el suelo, la pierna de atrás recta y la cadera hacia delante. mantén 30 segundos, dos veces con cada pierna. luego dobla un poco la rodilla de atrás y mantén otra vez para llegar al sóleo, el músculo más profundo de la pantorrilla.',
         'haz el estiramiento de la fascia antes de ponerte de pie. el de pantorrilla puede ir justo después.',
         `[estiramiento de la fascia plantar, con video](${ES.fasciaStretch})`,
         `[estiramiento de pantorrilla, con video](${ES.calfStretch})`,
@@ -244,8 +244,8 @@ export function day1(locale: Locale): SiteEmailContent {
       preheader: 'первое упражнение делается ещё до того, как вы встали.',
       paragraphs: [
         'для большинства людей тяжелее всего первые шаги утром. две растяжки на краю кровати могут сделать эти шаги мягче.',
-        '1. растяжка подошвенной фасции: сядьте на кровать, положите одну стопу на колено другой ноги и потяните пальцы на себя, пока не почувствуете растяжение вдоль свода. держите 10 секунд, 10 раз на каждую стопу.',
-        '2. растяжка икроножной мышцы: встаньте лицом к стене, одна нога сзади, пятка на полу, задняя нога прямая, таз подан вперёд. держите 30 секунд, 3 раза на каждую ногу. потом слегка согните заднее колено и задержитесь ещё раз, чтобы растянуть камбаловидную мышцу, более глубокую мышцу голени.',
+        '1. растяжка подошвенной фасции: сядьте на кровать, положите одну стопу на колено другой ноги и потяните пальцы на себя, пока не почувствуете растяжение вдоль свода. держите 30 секунд, по два раза на каждую стопу.',
+        '2. растяжка икроножной мышцы: встаньте лицом к стене, одна нога сзади, пятка на полу, задняя нога прямая, таз подан вперёд. держите 30 секунд, по два раза на каждую ногу. потом слегка согните заднее колено и задержитесь ещё раз, чтобы растянуть камбаловидную мышцу, более глубокую мышцу голени.',
         'растяжку фасции делайте ещё до того, как встали. растяжку икр можно сразу после.',
         `[растяжка подошвенной фасции, с видео](${RU.fasciaStretch})`,
         `[растяжка икроножной мышцы, с видео](${RU.calfStretch})`,
@@ -266,8 +266,8 @@ export function day2(locale: Locale): SiteEmailContent {
       preheader: 'the straight-leg version misses the deeper muscle.',
       paragraphs: [
         'the 2023 heel pain guideline gives calf and fascia stretching its highest grade. two muscles make up the calf, and a straight leg only reaches the outer one.',
-        'calf stretch (gastrocnemius): wall, back leg straight, heel down, 3 holds of 30 seconds each leg.',
-        'soleus stretch: same position, but bend the back knee until you feel the stretch lower down, near the heel. 3 holds of 30 seconds each leg.',
+        'calf stretch (gastrocnemius): wall, back leg straight, heel down, 2 holds of 30 seconds each leg.',
+        'soleus stretch: same position, but bend the back knee until you feel the stretch lower down, near the heel. 2 holds of 30 seconds each leg.',
         'the soleus only lets go with the knee bent, which is why you need both versions. a tight calf pulls on the heel all day, so these stretches matter even though you feel them higher up.',
         `[calf stretch](${EN.calfStretch})`,
         `[soleus stretch](${EN.soleusStretch})`,
@@ -280,8 +280,8 @@ export function day2(locale: Locale): SiteEmailContent {
       preheader: 'con la pierna recta no llegas al músculo más profundo.',
       paragraphs: [
         'la guía de 2023 sobre el dolor de talón da a los estiramientos de pantorrilla y de fascia su calificación más alta. la pantorrilla tiene dos músculos, y con la pierna recta solo llegas al de fuera.',
-        'estiramiento de pantorrilla (gastrocnemio): frente a la pared, la pierna de atrás recta, el talón en el suelo, 3 veces 30 segundos con cada pierna.',
-        'estiramiento de sóleo: la misma posición, pero dobla la rodilla de atrás hasta notar el estiramiento más abajo, cerca del talón. 3 veces 30 segundos con cada pierna.',
+        'estiramiento de pantorrilla (gastrocnemio): frente a la pared, la pierna de atrás recta, el talón en el suelo, 2 veces 30 segundos con cada pierna.',
+        'estiramiento de sóleo: la misma posición, pero dobla la rodilla de atrás hasta notar el estiramiento más abajo, cerca del talón. 2 veces 30 segundos con cada pierna.',
         'el sóleo solo se suelta con la rodilla doblada, por eso necesitas las dos versiones. una pantorrilla tensa tira del talón todo el día, así que estos estiramientos importan aunque los notes más arriba.',
         `[estiramiento de pantorrilla](${ES.calfStretch})`,
         `[estiramiento de sóleo](${ES.soleusStretch})`,
@@ -294,8 +294,8 @@ export function day2(locale: Locale): SiteEmailContent {
       preheader: 'с прямой ногой глубокая мышца не растягивается.',
       paragraphs: [
         'рекомендации 2023 года по боли в пятке дают растяжке икр и фасции высшую оценку. икра состоит из двух мышц, и с прямой ногой растягивается только поверхностная.',
-        'растяжка икроножной мышцы: у стены, задняя нога прямая, пятка на полу, 3 раза по 30 секунд на каждую ногу.',
-        'растяжка камбаловидной мышцы: то же положение, но согните заднее колено, пока не почувствуете растяжение ниже, ближе к пятке. 3 раза по 30 секунд на каждую ногу.',
+        'растяжка икроножной мышцы: у стены, задняя нога прямая, пятка на полу, 2 раза по 30 секунд на каждую ногу.',
+        'растяжка камбаловидной мышцы: то же положение, но согните заднее колено, пока не почувствуете растяжение ниже, ближе к пятке. 2 раза по 30 секунд на каждую ногу.',
         'камбаловидная мышца расслабляется только при согнутом колене, поэтому нужны оба варианта. напряжённая икра весь день тянет пятку, так что эти растяжки важны, хотя чувствуются они выше.',
         `[растяжка икроножной мышцы](${RU.calfStretch})`,
         `[растяжка камбаловидной мышцы](${RU.soleusStretch})`,
@@ -364,7 +364,7 @@ export function day4(locale: Locale): SiteEmailContent {
       preheader: 'pull the ball of the foot toward the heel without curling the toes.',
       paragraphs: [
         'the short foot is the core of arch work. you shorten the foot by pulling the ball of the foot toward the heel, so the arch lifts, without curling the toes.',
-        'short foot, seated: sit with your feet flat. pull the ball of the foot toward the heel so the arch lifts. keep the toes relaxed and flat. 3 sets of 10, hold 5 seconds, each foot.',
+        'short foot, seated: sit with your feet flat. pull the ball of the foot toward the heel so the arch lifts. keep the toes relaxed and flat. 3 sets of 8, hold 5 seconds, each foot.',
         'once the seated version feels natural, try it standing on both feet. then, eventually, on one foot.',
         'if your main issue is heel pain rather than flat feet, the short foot is still useful. it wakes up the small muscles of the arch that support the plantar fascia from above.',
         `[short foot exercise page](${EN.shortFoot})`,
@@ -378,7 +378,7 @@ export function day4(locale: Locale): SiteEmailContent {
       preheader: 'acerca la parte delantera del pie al talón sin encoger los dedos.',
       paragraphs: [
         'el pie corto es la base del trabajo del arco. acortas el pie acercando la parte delantera hacia el talón, así el arco se eleva, sin encoger los dedos.',
-        'pie corto, en posición sentada: siéntate con los pies planos. acerca la parte delantera del pie hacia el talón para que el arco se eleve. mantén los dedos relajados y planos. 3 series de 10, mantén 5 segundos, con cada pie.',
+        'pie corto, en posición sentada: siéntate con los pies planos. acerca la parte delantera del pie hacia el talón para que el arco se eleve. mantén los dedos relajados y planos. 3 series de 8, mantén 5 segundos, con cada pie.',
         'cuando la versión sentada te salga con naturalidad, pruébala de pie sobre los dos pies. y más adelante, sobre un pie.',
         'si tu problema principal es el dolor de talón y no el pie plano, el pie corto también sirve. activa los músculos pequeños del arco, que sostienen la fascia plantar desde arriba.',
         `[ejercicio de pie corto](${ES.shortFoot})`,
@@ -392,7 +392,7 @@ export function day4(locale: Locale): SiteEmailContent {
       preheader: 'подтяните переднюю часть стопы к пятке, не поджимая пальцы.',
       paragraphs: [
         '«короткая стопа» лежит в основе работы со сводом. вы укорачиваете стопу, подтягивая её переднюю часть к пятке, и свод поднимается. пальцы при этом не поджимаются.',
-        '«короткая стопа» сидя: сядьте, стопы ровно на полу. подтяните переднюю часть стопы к пятке, чтобы свод поднялся. пальцы расслаблены и лежат ровно. 3 подхода по 10, удержание 5 секунд, каждая стопа.',
+        '«короткая стопа» сидя: сядьте, стопы ровно на полу. подтяните переднюю часть стопы к пятке, чтобы свод поднялся. пальцы расслаблены и лежат ровно. 3 подхода по 8, удержание 5 секунд, каждая стопа.',
         'когда вариант сидя станет привычным, попробуйте стоя на двух ногах. а со временем и на одной.',
         'даже если вас больше беспокоит боль в пятке, а не плоскостопие, «короткая стопа» полезна. она включает мелкие мышцы свода, которые поддерживают подошвенную фасцию сверху.',
         `[упражнение «короткая стопа»](${RU.shortFoot})`,
@@ -459,7 +459,7 @@ export function day6(locale: Locale): SiteEmailContent {
       preheader: 'the towel under the toes is what makes this work the fascia.',
       paragraphs: [
         'the towel heel raise comes from a 48-person trial by Rathleff and colleagues. the rolled towel under the toes dorsiflexes them, which loads the plantar fascia and not just the calf.',
-        'towel heel raise: stand on one foot on a step, with a rolled towel under your toes. take 3 seconds to rise, hold for 2 at the top, and take 3 seconds to lower. 3 sets of 12, each leg.',
+        'towel heel raise: stand on one foot on a step, with a rolled towel under your toes. take 3 seconds to rise, hold for 2 at the top, and take 3 seconds to lower. 4 sets of 10, each leg.',
         'this is the hardest step in the calf strength ladder. you do not start here. work up through seated raises, double-leg standing raises, and the heel raise hold first.',
         'the stop rule: if any exercise takes your pain to 6 out of 10 or more, stop for the day. that is the point where walkito ends a session. mild discomfort during the work is fine.',
         `[towel heel raise](${EN.towelHeelRaise})`,
@@ -473,7 +473,7 @@ export function day6(locale: Locale): SiteEmailContent {
       preheader: 'la toalla bajo los dedos es lo que hace trabajar a la fascia.',
       paragraphs: [
         'la elevación de talones con toalla viene de un ensayo con 48 personas de Rathleff y colaboradores. la toalla enrollada bajo los dedos los lleva hacia arriba, y así se carga la fascia plantar y no solo la pantorrilla.',
-        'elevación de talones con toalla: de pie sobre un pie en un escalón, con una toalla enrollada bajo los dedos. sube en 3 segundos, mantén 2 arriba y baja en 3 segundos. 3 series de 12, con cada pierna.',
+        'elevación de talones con toalla: de pie sobre un pie en un escalón, con una toalla enrollada bajo los dedos. sube en 3 segundos, mantén 2 arriba y baja en 3 segundos. 4 series de 10, con cada pierna.',
         'es el paso más difícil de la escalera de fuerza de la pantorrilla. no se empieza por aquí. antes pasa por las elevaciones en posición sentada, las elevaciones de pie con las dos piernas y la elevación de talón mantenida.',
         'la regla para parar: si algún ejercicio sube tu dolor a 6 de 10 o más, detente por hoy. es el punto en el que walkito termina una sesión. una molestia leve durante el trabajo es normal.',
         `[elevación de talones con toalla](${ES.towelHeelRaise})`,
@@ -487,7 +487,7 @@ export function day6(locale: Locale): SiteEmailContent {
       preheader: 'именно полотенце под пальцами нагружает фасцию.',
       paragraphs: [
         'подъёмы на носки с полотенцем взяты из исследования Ратлеффа и коллег с участием 48 человек. свёрнутое полотенце под пальцами приподнимает их, и нагрузка приходится на подошвенную фасцию, а не только на икру.',
-        'подъём на носок с полотенцем: встаньте одной ногой на ступеньку, под пальцами свёрнутое полотенце. 3 секунды подъём, 2 секунды удержание наверху, 3 секунды опускание. 3 подхода по 12 на каждую ногу.',
+        'подъём на носок с полотенцем: встаньте одной ногой на ступеньку, под пальцами свёрнутое полотенце. 3 секунды подъём, 2 секунды удержание наверху, 3 секунды опускание. 4 подхода по 10 на каждую ногу.',
         'это самая сложная ступень в лестнице силовых упражнений для икр. с неё не начинают. сначала пройдите подъёмы сидя, подъёмы стоя на двух ногах и удержание на носках.',
         'правило остановки: если любое упражнение поднимает боль до 6 из 10 или выше, на сегодня хватит. именно в этот момент walkito завершает занятие. лёгкий дискомфорт во время работы допустим.',
         `[подъёмы на носки с полотенцем](${RU.towelHeelRaise})`,
