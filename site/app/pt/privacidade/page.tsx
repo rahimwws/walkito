@@ -33,7 +33,7 @@ export default function PrivacidadePt() {
       <Prose className="shell prose">
         <h1>Privacidade</h1>
 
-        <p className="updated">Última atualização: 7 de outubro de 2026</p>
+        <p className="updated">Última atualização: 8 de outubro de 2026</p>
         <p className="updated">
           Esta é uma tradução. Se ela for diferente da{' '}
           <a href="/privacy/">versão em inglês</a>, vale a versão em inglês.
@@ -231,7 +231,9 @@ export default function PrivacidadePt() {
           idioma e o fuso horário vão junto, e o PostHog calcula uma
           localização aproximada (país e cidade) a partir do seu endereço IP. Os
           eventos ficam ligados a um ID aleatório, o mesmo que o RevenueCat
-          usa.
+          usa. Depois que você entra na sua conta, o e-mail e o nome que a
+          Apple ou o Google nos passaram são adicionados a ele, para podermos
+          escrever para você se algo der errado.
         </p>
         <p>
           <b>Nunca enviado:</b> notas de dor, locais da dor, resultados de

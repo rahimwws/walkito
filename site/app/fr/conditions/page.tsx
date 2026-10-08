@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: `Conditions d’utilisation | ${SITE_NAME}`,
     description: 'Ce qu’est l’application, comment fonctionnent les paiements et les limites de ce qu’elle affirme.',
     url: '/fr/conditions/',
-    images: ['/opengraph-image'],
+    images: ['/share/en.jpg'],
     type: 'website',
   },
 };

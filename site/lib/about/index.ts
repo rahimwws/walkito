@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 import { OG_LOCALE, TRANSLATED, alternatesFor } from '@/lib/i18n';
+import { shareCard } from '@/lib/share';
 import { SITE_NAME } from '@/lib/site';
 
 import { ABOUT_EN } from './en';
@@ -27,8 +28,9 @@ export function aboutMetadata(about: About): Metadata {
       url: TRANSLATED.about[about.lang],
       siteName: SITE_NAME,
       locale: OG_LOCALE[about.lang],
+      // A page's openGraph replaces the layout's whole object, card included.
+      images: [shareCard(about.lang)],
       type: 'website',
-      images: ['/opengraph-image'],
     },
   };
 }

@@ -11,7 +11,7 @@ import { Cite } from '@/components/Cite';
 import { ExerciseMedia } from '@/components/ExerciseMedia';
 import { JsonLd } from '@/components/JsonLd';
 import { Masthead } from '@/components/Masthead';
-import { Prose, typeset } from '@/components/Prose';
+import { FaqRows, Prose, typeset } from '@/components/Prose';
 import { guidePath, languagesOf, relatedGuides, type Guide as GuideData } from '@/lib/guides';
 import { isTranslatedPage } from '@/lib/i18n';
 import type { GuideTable } from '@/lib/guides/types';
@@ -42,6 +42,12 @@ const KEY_FACT_LABEL = {
   fr: 'À retenir',
   it: 'Dato chiave',
   de: 'Kernaussage',
+} as const;
+/** The section chip over a guide's title: what kind of page it is. */
+const KIND_LABEL = {
+  guide: { en: 'Guide', ru: 'Гайд', es: 'Guía', pt: 'Guia', fr: 'Guide', it: 'Guida', de: 'Ratgeber' },
+  exercise: { en: 'Exercise', ru: 'Упражнение', es: 'Ejercicio', pt: 'Exercício', fr: 'Exercice', it: 'Esercizio', de: 'Übung' },
+  test: { en: 'Test', ru: 'Тест', es: 'Test', pt: 'Teste', fr: 'Test', it: 'Test', de: 'Test' },
 } as const;
 const LIBRARY_CRUMB = {
   en: 'Exercise library',
@@ -225,7 +231,13 @@ export function Guide({ guide }: { guide: GuideData }) {
       })}
       <Masthead lang={guide.lang} />
 
-      <Prose className="shell prose">
+      <Prose
+        className="shell prose"
+        kicker={{
+          label: KIND_LABEL[inLibrary ? 'exercise' : guide.page === 'calfRaiseTest' ? 'test' : 'guide'][guide.lang],
+          lang: guide.lang,
+        }}
+      >
         <h1>{guide.h1}</h1>
         <Byline lang={guide.lang} cites={cited} main={guide.mainSource} page={guide.page} />
         <p className="lede">
@@ -391,16 +403,20 @@ export function Guide({ guide }: { guide: GuideData }) {
           </section>
         ))}
 
+        {/* As the home page's questions: one open at a time, the first open. */}
         <section className="faq" id="faq">
           <h2>{c.faqHeading}</h2>
-          {guide.faq.map((item) => (
-            <div key={item.q}>
-              <h3>{item.q}</h3>
-              <p>
-                <Inline text={item.a} />
-              </p>
-            </div>
-          ))}
+          <FaqRows
+            name="guide-faq"
+            items={guide.faq.map((item) => ({
+              q: item.q,
+              a: (
+                <p>
+                  <Inline text={item.a} />
+                </p>
+              ),
+            }))}
+          />
         </section>
         <h2 id="see-a-clinician">{guide.redFlags.h2}</h2>
         <ul>

@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: `Terms of Use | ${SITE_NAME}`,
     description: 'What the app is, how payments work, and the limits of what it claims.',
     url: '/terms',
-    images: ['/opengraph-image'],
+    images: ['/share/en.jpg'],
     type: 'website',
   },
 };

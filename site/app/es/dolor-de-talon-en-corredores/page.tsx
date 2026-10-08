@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: PATH,
     locale: 'es_MX',
-    images: ['/opengraph-image'],
+    images: ['/share/es.jpg'],
     type: 'article',
   },
 };
@@ -487,7 +487,7 @@ export default function HeelPainRunnersEs() {
               un plan una semana a la vez en torno a una meta que puedes medir. Para el dolor de
               talón, la primera meta es dolor de la mañana de {PAIN_GOAL_MAX}/10 o menos durante{' '}
               {PROGRAM.painFreeDays}&nbsp;días seguidos. Las otras son mantener el arco{' '}
-              {archHoldSeconds}&nbsp;segundos, {calfRaises} elevaciones de talón a una pierna,{' '}
+              {archHoldSeconds}&nbsp;segundos, {calfRaises} elevaciones de talón a una pierna,{' '}
               {balanceSeconds}&nbsp;segundos de equilibrio a una pierna, e izquierda y derecha
               dentro del {gapPercent}&nbsp;% la una de la otra. Una meta que alcanzas pasa a
               mantenimiento con una dosis más baja, y la siguiente ocupa su lugar.

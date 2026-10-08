@@ -1,6 +1,7 @@
 import { CITATIONS, citationSchema } from '@/lib/citations';
 import { TRANSLATED, type Lang } from '@/lib/i18n';
 import { reviewFor } from '@/lib/reviewer';
+import { shareCard } from '@/lib/share';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 
 /** The author every article names: the research side of Walkito, whose rules
@@ -91,7 +92,7 @@ export function articleSchema(input: {
       logo: { '@type': 'ImageObject', url: `${SITE_URL}/icon.png` },
     },
     mainEntityOfPage: `${SITE_URL}${input.path}`,
-    image: `${SITE_URL}/opengraph-image`,
+    image: `${SITE_URL}${shareCard(input.lang)}`,
     citation: input.cites.map((i) => citationSchema(CITATIONS[i])),
     ...(review
       ? {

@@ -17,7 +17,7 @@ const DAYS = or(PROGRAM.daysPerWeek);
 const MINUTES = or(PROGRAM.sessionMinutes);
 
 const TITLE = 'Plan de ejercicios para el dolor de talón que se adapta';
-const DESCRIPTION = `Cómo Walkito arma tu plan para el dolor de talón: metas medibles, ${DAYS} días a la semana, sesiones de ${MINUTES} minutos y una prueba cada ${PROGRAM.testEveryDays} días.`;
+const DESCRIPTION = `Cómo Walkito arma tu plan para el dolor de talón: metas medibles, ${DAYS} días a la semana, sesiones de ${MINUTES} minutos y una prueba cada ${PROGRAM.testEveryDays} días.`;
 const PATH = '/es/programa/';
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-09-21',
     modifiedTime: PAGE_UPDATED.program,
-    images: ['/opengraph-image'],
+    images: ['/share/es.jpg'],
   },
 };
 
@@ -62,9 +62,9 @@ export default function ProgramEs() {
     <>
       <JsonLd data={ARTICLE} />
       <JsonLd data={BREADCRUMBS} />
-      <Masthead lang="es" />
+      <Masthead lang="es" current="program" />
 
-      <Prose className="shell prose">
+      <Prose className="shell prose" kicker={{ label: c.navProgram, lang: 'es' }}>
         <h1>Un plan de ejercicios para el dolor de talón que se adapta cada semana</h1>
         <Byline lang="es" cites={[]} />
 
@@ -135,7 +135,7 @@ export default function ProgramEs() {
               </tr>
               <tr>
                 <th scope="row">Elevaciones de talón</th>
-                <td>{PROGRAM.goals.calfRaises} elevaciones de talón a una pierna</td>
+                <td>{PROGRAM.goals.calfRaises} elevaciones de talón a una pierna</td>
                 <td>La prueba</td>
               </tr>
               <tr>

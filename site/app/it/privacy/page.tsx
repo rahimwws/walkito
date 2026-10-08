@@ -32,7 +32,7 @@ export default function PrivacyIt() {
       <Prose className="shell prose">
         <h1>Informativa sulla privacy</h1>
 
-        <p className="updated">Ultimo aggiornamento: 7 ottobre 2026</p>
+        <p className="updated">Ultimo aggiornamento: 8 ottobre 2026</p>
         <p className="updated">
           Questa è una traduzione. Se differisce dalla{' '}
           <a href="/privacy/">versione in inglese</a>, vale la versione in
@@ -222,7 +222,9 @@ export default function PrivacyIt() {
           dispositivo, la versione di iOS e dell’app, la lingua e il fuso
           orario, e PostHog ricava una posizione approssimativa (paese e città)
           dal tuo indirizzo IP. Gli eventi sono collegati a un ID casuale, lo
-          stesso che usa RevenueCat.
+          stesso che usa RevenueCat. Quando accedi, gli vengono aggiunti
+          l’indirizzo email e il nome che ci ha dato Apple o Google, così
+          possiamo scriverti se qualcosa non va.
         </p>
         <p>
           <b>Mai inviati:</b> punteggi del dolore, zone del dolore, risultati

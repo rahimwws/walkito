@@ -33,7 +33,7 @@ export default function DatenschutzDe() {
       <Prose className="shell prose">
         <h1>Datenschutz</h1>
 
-        <p className="updated">Zuletzt aktualisiert: 7. Oktober 2026</p>
+        <p className="updated">Zuletzt aktualisiert: 8. Oktober 2026</p>
         <p className="updated">
           Dies ist eine Übersetzung. Wenn sie von{' '}
           <a href="/privacy/">der englischen Fassung</a> abweicht, gilt die
@@ -234,7 +234,10 @@ export default function DatenschutzDe() {
           iOS- und App-Version, Sprache und Zeitzone werden mitgeschickt, und
           PostHog ermittelt aus deiner IP-Adresse einen ungefähren Standort (Land
           und Stadt). Ereignisse sind mit einer zufälligen ID verknüpft,
-          derselben, die RevenueCat nutzt.
+          derselben, die RevenueCat nutzt. Sobald du dich anmeldest, werden ihr
+          die E-Mail-Adresse und der Name hinzugefügt, die uns Apple oder Google
+          übermittelt hat, damit wir dir schreiben können, falls du nicht
+          weiterkommst.
         </p>
         <p>
           <b>Nie gesendet:</b> Schmerzwerte, Schmerzbereiche, Testergebnisse,

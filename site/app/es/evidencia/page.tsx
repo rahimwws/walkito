@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-09-21',
     modifiedTime: PAGE_UPDATED.science,
-    images: ['/opengraph-image'],
+    images: ['/share/es.jpg'],
   },
 };
 
@@ -96,9 +96,9 @@ export default function ScienceEs() {
     <>
       <JsonLd data={ARTICLE} />
       <JsonLd data={BREADCRUMBS} />
-      <Masthead lang="es" />
+      <Masthead lang="es" current="science" />
 
-      <Prose className="shell prose">
+      <Prose className="shell prose" kicker={{ label: c.navEvidence, lang: 'es' }}>
         <h1>Evidencia sobre el dolor de talón: fuerza vs estiramiento, y la guía de 2023</h1>
         <Byline lang="es" cites={[0, 1, 2, 3]} main={3} />
 

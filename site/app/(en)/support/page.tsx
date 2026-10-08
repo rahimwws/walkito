@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Footer } from '@/components/Footer';
 import { Masthead } from '@/components/Masthead';
 import { Prose } from '@/components/Prose';
-import { alternatesFor } from '@/lib/i18n';
+import { CHROME, alternatesFor } from '@/lib/i18n';
 import { SUPPORT_EMAIL } from '@/lib/site';
 
 /**
@@ -34,7 +34,7 @@ export default function Support() {
     <>
       <Masthead />
 
-      <Prose className="shell prose">
+      <Prose className="shell prose" kicker={{ label: CHROME.en.navSupport, lang: 'en' }}>
         <h1>Support</h1>
 
         {/* The app's own words, from the Home Screen quick action. Promising a

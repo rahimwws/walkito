@@ -1,3 +1,5 @@
+import '@/app/pages.css';
+
 import { AiReferral } from '@/components/AiReferral';
 import { JsonLd } from '@/components/JsonLd';
 import type { Lang } from '@/lib/i18n';

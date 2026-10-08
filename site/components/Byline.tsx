@@ -1,3 +1,5 @@
+import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr/ArrowRight';
+
 import { CITE } from '@/lib/citations';
 import { TRANSLATED, type Lang } from '@/lib/i18n';
 import { reviewFor } from '@/lib/reviewer';
@@ -21,49 +23,66 @@ import { AUTHOR_NAME, formatDate, howWeResearchHref } from '@/lib/schema';
 const MAIN_SOURCE: Partial<Record<number, Record<Lang, string>>> = {
   [CITE.brijwasi]: {
     en: 'a 2023 trial on flexible flat feet',
-    ru: 'клинического испытания 2023 года при гибком плоскостопии',
+    ru: 'клиническое испытание 2023 года при гибком плоскостопии',
     es: 'un ensayo de 2023 sobre pie plano flexible',
     pt: 'um ensaio de 2023 sobre pé chato flexível',
     fr: 'un essai de 2023 sur les pieds plats souples',
     it: 'uno studio clinico del 2023 sul piede piatto flessibile',
-    de: 'einer Studie von 2023 zu flexiblen Plattfüßen',
+    de: 'eine Studie von 2023 zu flexiblen Plattfüßen',
   },
   [CITE.guideline]: {
     en: 'the 2023 heel pain clinical guideline',
-    ru: 'клинических рекомендаций 2023 года по боли в пятке',
+    ru: 'клинические рекомендации 2023 года по боли в пятке',
     es: 'la guía clínica de 2023 sobre el dolor de talón',
     pt: 'a diretriz clínica de 2023 sobre dor no calcanhar',
     fr: 'la recommandation clinique de 2023 sur la douleur au talon',
     it: 'la linea guida clinica del 2023 sul dolore al tallone',
-    de: 'der klinischen Leitlinie von 2023 zu Fersenschmerzen',
+    de: 'die klinische Leitlinie von 2023 zu Fersenschmerzen',
   },
 };
 
-function studies(n: number, lang: Lang): string {
-  if (lang === 'ru') return n === 1 ? '1 опубликованного исследования' : `${n} опубликованных исследований`;
-  if (lang === 'es') return n === 1 ? '1 estudio publicado' : `${n} estudios publicados`;
-  if (lang === 'pt') return n === 1 ? '1 estudo publicado' : `${n} estudos publicados`;
-  if (lang === 'fr') return n === 1 ? '1 étude publiée' : `${n} études publiées`;
-  if (lang === 'it') return n === 1 ? '1 studio pubblicato' : `${n} studi pubblicati`;
-  if (lang === 'de') return n === 1 ? '1 veröffentlichten Studie' : `${n} veröffentlichten Studien`;
-  return n === 1 ? '1 published study' : `${n} published studies`;
+/** How many more sources, said as a count of references — never as "N studies"
+ * the app is built on. */
+function more(n: number, lang: Lang): string {
+  if (lang === 'ru') {
+    const mod10 = n % 10;
+    const mod100 = n % 100;
+    const word =
+      mod10 === 1 && mod100 !== 11
+        ? 'источник'
+        : mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)
+          ? 'источника'
+          : 'источников';
+    return `${n} ${word}`;
+  }
+  const forms: Record<Exclude<Lang, 'ru'>, [string, string]> = {
+    en: ['source', 'sources'],
+    es: ['fuente', 'fuentes'],
+    pt: ['fonte', 'fontes'],
+    fr: ['source', 'sources'],
+    it: ['fonte', 'fonti'],
+    de: ['Quelle', 'Quellen'],
+  };
+  const [one, other] = forms[lang];
+  return `${n} ${n === 1 ? one : other}`;
 }
 
-/** "Based on …", or null for a page that cites nothing. */
+/** "Sources: …", or null for a page that cites nothing. */
 export function sourceLine(lang: Lang, cites: readonly number[], main?: number): string | null {
   const unique = [...new Set(cites)];
   const named = main != null && unique.includes(main) ? MAIN_SOURCE[main]?.[lang] : undefined;
   const rest = named ? unique.length - 1 : unique.length;
   if (!named && rest === 0) return null;
-  const based = { en: 'Based on', ru: 'На основе', es: 'Basado en', pt: 'Com base em', fr: 'Fondé sur', it: 'Basato su', de: 'Auf Grundlage' }[lang];
-  const and = { en: 'and', ru: 'и', es: 'y', pt: 'e', fr: 'et', it: 'e', de: 'und' }[lang];
-  if (!named) return `${based} ${studies(rest, lang)}`;
-  return rest === 0 ? `${based} ${named}` : `${based} ${named} ${and} ${studies(rest, lang)}`;
+  const label = { en: 'Sources:', ru: 'Источники:', es: 'Fuentes:', pt: 'Fontes:', fr: 'Sources :', it: 'Fonti:', de: 'Quellen:' }[lang];
+  if (!named) return `${label} ${more(rest, lang)}`;
+  if (rest === 0) return `${{ en: 'Source:', ru: 'Источник:', es: 'Fuente:', pt: 'Fonte:', fr: 'Source :', it: 'Fonte:', de: 'Quelle:' }[lang]} ${named}`;
+  const plus = { en: `and ${rest} more`, ru: `и ещё ${rest}`, es: `y ${rest} más`, pt: `e mais ${rest}`, fr: `et ${rest} autres`, it: `e altre ${rest}`, de: `und ${rest} weitere` }[lang];
+  return `${label} ${named} ${plus}`;
 }
 
 const HOW_WE_RESEARCH: Record<Lang, string> = {
   en: 'How we research',
-  ru: 'Как мы работаем с исследованиями',
+  ru: 'Как мы работаем с исследованиями',
   es: 'Cómo investigamos',
   pt: 'Como pesquisamos',
   fr: 'Notre méthode',
@@ -87,13 +106,27 @@ export function Byline({
 }) {
   const line = sourceLine(lang, cites, main);
   const review = page ? reviewFor(page) : null;
+  // Drawn as chips under the title (app/pages.css). The separators stay in the
+  // text, visually hidden, so the line still reads as one sentence to a screen
+  // reader and to anything that reads the page as text.
   return (
     <>
     <p className="byline">
-      <strong>{AUTHOR_NAME}</strong>
-      {line ? ` · ${line}` : ''}
-      {' · '}
-      <a href={howWeResearchHref(lang)}>{HOW_WE_RESEARCH[lang]} →</a>
+      <span className="byline-chip byline-author">
+        <img src="/icon-96.webp" alt="" width={20} height={20} />
+        <strong>{AUTHOR_NAME}</strong>
+      </span>
+      {line && (
+        <>
+          <span className="byline-sep"> · </span>
+          <span className="byline-chip">{line}</span>
+        </>
+      )}
+      <span className="byline-sep"> · </span>
+      <a className="byline-chip byline-link" href={howWeResearchHref(lang)}>
+        {HOW_WE_RESEARCH[lang]}
+        <ArrowRightIcon size={14} weight="bold" aria-hidden />
+      </a>
     </p>
     {review && (
       <p className="reviewer-line">

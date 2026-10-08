@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   // The English card: `next/og` renders its default face, which has no
   // Cyrillic, so a translated card would ship as boxes. The English one is
   // honest about what the app is in any language.
-  openGraph: { siteName: SITE_NAME, locale: OG_LOCALE.es, images: ['/opengraph-image'] },
-  twitter: { card: 'summary_large_image', images: ['/opengraph-image'] },
+  openGraph: { siteName: SITE_NAME, locale: OG_LOCALE.es, images: ['/share/es.jpg'] },
+  twitter: { card: 'summary_large_image', images: ['/share/es.jpg'] },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

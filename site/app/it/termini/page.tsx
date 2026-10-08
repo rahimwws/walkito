@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: `Termini di utilizzo | ${SITE_NAME}`,
     description: 'Cos’è l’app, come funzionano i pagamenti e i limiti di ciò che afferma.',
     url: '/it/termini/',
-    images: ['/opengraph-image'],
+    images: ['/share/en.jpg'],
     type: 'website',
   },
 };

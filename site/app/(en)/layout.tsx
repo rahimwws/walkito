@@ -42,17 +42,16 @@ export const metadata: Metadata = {
     url: '/',
     siteName: SITE_NAME,
     locale: 'en_US',
-    // Named explicitly. The card is drawn by `app/opengraph-image.tsx`, which
-    // sits outside the language groups so all three roots can share it — and
-    // from there Next no longer attaches it on its own.
-    images: ['/opengraph-image'],
+    // Named explicitly: the card is a plain file built by app/share (see
+    // lib/share.ts), which Next never attaches on its own.
+    images: ['/share/en.jpg'],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Walkito: Heel Pain & Flat Feet Exercise App',
     description: 'Walkito is a personal exercise plan for heel, foot and leg pain that adjusts to how your feet feel each day.',
-    images: ['/opengraph-image'],
+    images: ['/share/en.jpg'],
   },
   // Safari's Smart App Banner: `<meta name="apple-itunes-app">`, which shows
   // "Get" to someone without the app and "Open" to someone with it. Omitted

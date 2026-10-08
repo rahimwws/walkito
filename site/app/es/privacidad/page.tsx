@@ -31,7 +31,7 @@ export default function PrivacidadEs() {
       <Prose className="shell prose">
         <h1>Privacidad</h1>
 
-        <p className="updated">Última actualización: 7 de octubre de 2026</p>
+        <p className="updated">Última actualización: 8 de octubre de 2026</p>
         <p className="updated">
           Esta es una traducción. Si difiere de{' '}
           <a href="/privacy/">la versión en inglés</a>, se aplica la versión en
@@ -212,7 +212,9 @@ export default function PrivacidadEs() {
           dispositivo, la versión de iOS y de la app, el idioma y la zona
           horaria, y PostHog deduce una ubicación aproximada (país y ciudad) a
           partir de tu dirección IP. Los eventos van unidos a un ID aleatorio,
-          el mismo que usa RevenueCat.
+          el mismo que usa RevenueCat. Cuando inicias sesión, se le añaden el
+          correo y el nombre que nos dio Apple o Google, para poder escribirte
+          si algo no te funciona.
         </p>
         <p>
           <b>Nunca se envía:</b> puntuaciones de dolor, zonas de dolor,
@@ -385,7 +387,7 @@ export default function PrivacidadEs() {
         <h2>Suscripción en el sitio web</h2>
         <p>
           Si te suscribes en el sitio web para recibir los ejercicios y el plan
-          de 7 días, guardamos tu email, el idioma, la página donde te
+          de 7 días, guardamos tu email, el idioma, la página donde te
           suscribiste y un registro de cada correo enviado.
         </p>
         <p>
@@ -403,7 +405,7 @@ export default function PrivacidadEs() {
         <p>
           <b>Darse de baja:</b> cada correo tiene un enlace para darse de baja
           con un clic. Tras darte de baja, dejamos de enviar y eliminamos tus
-          datos en un plazo de 30 días. También puedes escribir a {mail}.
+          datos en un plazo de 30 días. También puedes escribir a {mail}.
         </p>
         <p>
           <b>El sitio web no usa cookies ni carga ningún rastreador.</b>

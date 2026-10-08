@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import './footer.css';
+import './footer-fix.css';
+import { BackToTop } from '@/components/BackToTop';
+import { LangPicker } from '@/components/LangPicker';
 import { AppStoreBadge } from '@/components/AppStoreBadge';
 
 import { SocialLinks } from '@/components/SocialLinks';
@@ -28,7 +32,7 @@ import { GROUP_HEADING, NAV_GROUPS, NAV_LABEL, NAV_LABEL_ES, NAV_LABEL_RU, type 
  */
 const FOOTER_APP: Record<Lang, { ios: string; android: string }> = {
   en: { ios: 'Walkito on the App Store', android: 'Walkito on Google Play' },
-  ru: { ios: 'Walkito в App Store', android: 'Walkito в Google Play' },
+  ru: { ios: 'Walkito в App Store', android: 'Walkito в Google Play' },
   es: { ios: 'Walkito en el App Store', android: 'Walkito en Google Play' },
   pt: { ios: 'Walkito na App Store', android: 'Walkito no Google Play' },
   fr: { ios: "Walkito sur l'App Store", android: 'Walkito sur Google Play' },
@@ -46,15 +50,22 @@ function hrefFor(key: GuideKey, lang: Lang): string | null {
   return null;
 }
 
+/** Past this many links a column sets in two, so a long list does not run
+ * three times the height of its neighbours. */
+const SPLIT_AT = 9;
+
 function Column({ heading, links }: { heading: string; links: { href: string; label: string }[] }) {
   if (links.length === 0) return null;
+  const split = links.length > SPLIT_AT;
   // <details open>: every link is in the page for readers and crawlers alike.
   // On a phone the script at the end of the footer folds the sections, so the
   // footer is a short list of headings instead of sixty links.
   return (
-    <details className="footer-col" open>
-      <summary className="footer-heading">{heading}</summary>
-      <ul>
+    // suppressHydrationWarning: on a phone the inline script below closes the
+    // sections before React hydrates, so the attribute differs on purpose.
+    <details className={split ? 'ft-col ft-col-wide' : 'ft-col'} open suppressHydrationWarning>
+      <summary className="ft-heading">{heading}</summary>
+      <ul className={split ? 'ft-list ft-split' : 'ft-list'}>
         {links.map((l) => (
           <li key={l.href}>
             <Link href={l.href}>{l.label}</Link>
@@ -68,7 +79,7 @@ function Column({ heading, links }: { heading: string; links: { href: string; la
 const TAGLINE: Record<Lang, string> = {
   en: 'Daily exercise plans for heel, foot and leg pain, built on clinical guidelines.',
   es: 'Planes diarios de ejercicios para el dolor de talón, pie y pierna, basados en guías clínicas.',
-  ru: 'Ежедневные планы упражнений при боли в пятке, стопе и ногах на основе клинических рекомендаций.',
+  ru: 'Ежедневные планы упражнений при боли в пятке, стопе и ногах на основе клинических рекомендаций.',
   pt: 'Planos diários de exercícios para dor no calcanhar, no pé e na perna, baseados em diretrizes clínicas.',
   fr: "Des programmes d'exercices quotidiens pour la douleur au talon, au pied et à la jambe, fondés sur les recommandations cliniques.",
   it: 'Piani di esercizi quotidiani per il dolore a tallone, piede e gamba, basati sulle linee guida cliniche.',
@@ -76,7 +87,7 @@ const TAGLINE: Record<Lang, string> = {
 };
 
 /** Folds the footer sections on a phone, before first paint of the footer. */
-const FOLD_ON_PHONE = `if(matchMedia("(max-width: 760px)").matches){document.querySelectorAll(".footer details[open]").forEach(function(d){d.removeAttribute("open")})}`;
+const FOLD_ON_PHONE = `if(matchMedia("(max-width: 760px)").matches){document.querySelectorAll(".ft details[open]").forEach(function(d){d.removeAttribute("open")})}`;
 
 const FOOT_MAP_LINK = { en: 'Where does your foot hurt?', es: '¿Dónde te duele el pie?', ru: 'Где болит стопа?' } as const;
 
@@ -165,61 +176,73 @@ export function Footer({
         : lang === 'ru'
         ? [
             { href: CUSTOM_PAGES.exercises.ru, label: 'Библиотека упражнений' },
-            { href: '/ru/test-podema-na-noski/', label: 'Тест подъёма на носки' },
+            { href: '/ru/test-podema-na-noski/', label: 'Тест подъёма на носки' },
             { href: CUSTOM_PAGES.printables.ru, label: 'Листы для печати (PDF)' },
           ]
         : []),
   ];
 
   return (
-    <footer className="footer">
-      <div className="shell">
-        <div className="footer-panel">
-          <div className="footer-brand">
-            <div className="footer-brand-text">
-              <Link className="footer-logo" href={TRANSLATED.home[lang]}>
+    <footer className="ft">
+      <div className="ft-stage" aria-hidden>
+        <div className="ft-mark">Walkito</div>
+      </div>
+
+      <div className="ft-base">
+        <div className="ft-glow" aria-hidden />
+        {/* A sibling of the panel, not a child: the panel's backdrop-filter
+            would make it the backdrop root, and the half of the button above
+            the panel's edge would then blur nothing. */}
+        <BackToTop lang={lang} className="ft-top" />
+
+        <div className="ft-panel">
+          <div className="ft-brand">
+            <div className="ft-brand-text">
+              <Link className="ft-logo" href={TRANSLATED.home[lang]}>
                 <Image src="/icon-96.webp" alt="" width={40} height={40} />
                 Walkito
               </Link>
               <p>{TAGLINE[lang]}</p>
             </div>
-            <div className="footer-brand-actions">
+            <div className="ft-brand-actions">
               <SocialLinks lang={lang} />
               <AppStoreBadge campaign={lang === 'en' ? 'footer-badge' : `footer-badge-${lang}`} lang={lang} />
             </div>
           </div>
-          <nav aria-label={c.guidesHeading} className="footer-cols">
+
+          <nav aria-label={c.guidesHeading} className="ft-cols">
             <Column heading={h.exercises} links={[...group(NAV_GROUPS.exercises), ...extras]} />
             <Column
               heading={h.heel}
               links={group(['hubPlantarFasciitis', 'morningHeelPain', 'pfDuration', 'runners', ...NAV_GROUPS.heel])}
             />
             <Column heading={h.pain} links={[...footMap, ...group(['hubFlatFeet', 'ballOfFoot', ...NAV_GROUPS.foot])]} />
-            <div className="footer-stack">
+            <div className="ft-stack">
               <Column heading={h.work} links={group(NAV_GROUPS.work)} />
               <Column heading={h.compare} links={group(NAV_GROUPS.compare)} />
             </div>
             <Column heading={h.walkito} links={walkito} />
           </nav>
           <script dangerouslySetInnerHTML={{ __html: FOLD_ON_PHONE }} />
-        </div>
-        <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} Walkito</p>
-          {switcher && (
-            <nav aria-label={c.language} className="langs">
-              {LANGS.filter((l) => switcher[l]).map((l) =>
-                l === lang ? (
-                  <span key={l} aria-current="page">
-                    {LANG_NAMES[l]}
-                  </span>
-                ) : (
-                  <a key={l} href={switcher[l]} hrefLang={l} lang={l}>
-                    {LANG_NAMES[l]}
-                  </a>
-                ),
+
+          <div className="ft-bottom">
+            <div className="ft-meta">
+              <p className="ft-copy">© {new Date().getFullYear()} Walkito</p>
+              {switcher && (
+                <LangPicker
+                  label={c.language}
+                  current={LANG_NAMES[lang]}
+                  options={LANGS.filter((l) => switcher[l]).map((l) => ({
+                    lang: l,
+                    name: LANG_NAMES[l],
+                    href: switcher[l]!,
+                    current: l === lang,
+                  }))}
+                />
               )}
-            </nav>
-          )}
+            </div>
+            <p className="ft-notice">{c.notice}</p>
+          </div>
         </div>
       </div>
     </footer>

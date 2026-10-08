@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: alternatesCustomEnEs('exercises', 'en'),
-  openGraph: { title: `${TITLE} | ${SITE_NAME}`, description: DESCRIPTION, url: PATH, siteName: SITE_NAME, locale: 'en_US', type: 'website', images: ['/opengraph-image'] },
+  openGraph: { title: `${TITLE} | ${SITE_NAME}`, description: DESCRIPTION, url: PATH, siteName: SITE_NAME, locale: 'en_US', type: 'website', images: ['/share/en.jpg'] },
 };
 
 /** The library in three groups, in the order a plan usually adds them. */
@@ -74,7 +74,10 @@ export default function ExerciseLibrary() {
       <JsonLd data={SCHEMA} />
       <JsonLd data={BREADCRUMBS} />
       <Masthead lang="en" />
-      <Prose className="shell prose">
+      <Prose
+        className="shell prose"
+        kicker={{ label: 'Exercises', lang: 'en', num: String(GROUPS.reduce((n, g) => n + g.keys.length, 0)) }}
+      >
         <h1>Exercise library</h1>
         <p className="lede">
           Every exercise in the Walkito plan, one page each. You get how to do it, the starting dose, the mistakes people

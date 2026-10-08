@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-09-21',
     modifiedTime: PAGE_UPDATED.program,
-    images: ['/opengraph-image'],
+    images: ['/share/en.jpg'],
   },
 };
 
@@ -95,9 +95,9 @@ export default function Program() {
     <>
       <JsonLd data={ARTICLE} />
       <JsonLd data={BREADCRUMBS} />
-      <Masthead />
+      <Masthead current="program" />
 
-      <Prose className="shell prose">
+      <Prose className="shell prose" kicker={{ label: c.navProgram, lang: 'en' }}>
         <h1>A heel pain exercise plan that adapts every week</h1>
         <Byline lang="en" cites={[]} />
 

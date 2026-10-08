@@ -4,8 +4,8 @@ import { PAIN_GOAL_MAX, PROGRAM } from '@/lib/site';
 /*
  * Brazilian Portuguese home page, translated from the `en:` entry of `COPY` in
  * `components/Home.tsx` (2026-10-08). Informal «você». Every number is read
- * from `PROGRAM`, as in English. The app itself is in English, Russian and
- * Spanish only, so the FAQ answer about languages stays as in English.
+ * from `PROGRAM`, as in English. The program and evidence pages exist only in
+ * English, so their links say «(em inglês)».
  */
 const [MIN_A, MIN_B, MIN_C] = PROGRAM.sessionMinutes;
 const { archHoldSeconds, calfRaises, balanceSeconds, gapPercent } = PROGRAM.goals;
@@ -21,23 +21,18 @@ export const HOME_PT: HomeCopy = {
   h1b: 'Experimente um plano feito para os seus pés.',
   lead: 'O Walkito é um plano de exercícios personalizado para dor no calcanhar, no pé e na perna que se ajusta todo dia a como seus pés estão.',
   small: `${MIN_A}, ${MIN_B} ou ${MIN_C} minutos por dia, em casa.`,
-  chips: ['Manhã ruim? Hoje fica mais leve', `Um teste a cada ${testEveryDays} dias`, `${MIN_A}, ${MIN_B} ou ${MIN_C} min`],
   alt: {
-    heroLeft: 'Walkito depois de registrar uma manhã ruim: a sessão de hoje fica mais leve',
     heroCenter: 'A tela de hoje do Walkito: uma saudação, o registro da manhã e a sessão do dia',
-    heroRight: 'Walkito mostrando o vídeo de um exercício com a sua orientação',
-    checkin: 'Walkito: depois de uma manhã com dor, hoje são três minutos de exercícios sentado',
-    where: 'Walkito: onde costuma doer, com o calcanhar e o arco marcados em uma perna',
-    goal: 'Walkito: escolha de meta, com “ficar em pé o dia todo” selecionado',
-    week: 'Walkito: o plano desta semana, de segunda a domingo com dias de descanso, e a próxima semana',
-    exercise: 'Walkito: um alongamento plantar em vídeo com cronômetro',
-    quick: 'Walkito: rotinas rápidas para quando dói, antes e depois da corrida, no trabalho e antes do primeiro passo',
-    tests: 'Walkito: resultados dos testes, sustentação do arco 11 segundos a mais e elevações de panturrilha 4 a mais, com 19 na perna esquerda e 22 na direita',
   },
   storyH2: 'A culpa não é sua.',
   storyP:
-    'Palmilhas, tênis novo, tala noturna, cinquenta vídeos que dizem coisas diferentes. Eles podem dar aos pés uma sensação de apoio, mas nenhum treina o pé. O que falta é um plano claro: quais exercícios, quantos, em que ordem e o que fazer num dia ruim.',
+    'Palmilhas, tênis novo, cinquenta vídeos que dizem coisas diferentes. Nenhum deles treina o pé. O que falta é um plano claro, para os dias bons e para os ruins.',
+  storyChipsAfter: ['diferentes.', 'pé.', 'claro,', 'ruins.'],
+  storyAccent: 'um plano claro,',
   whoH2: 'Isso é para mim?',
+  whoKicker: 'Para você',
+  whoLead:
+    'Escolha o que mais combina com você. O plano começa por aí e muda conforme seus pés estão a cada dia.',
   who: {
     heel: {
       title: 'Dor no calcanhar e fascite plantar',
@@ -62,12 +57,6 @@ export const HOME_PT: HomeCopy = {
   },
   whoMore: 'Ler o guia',
   whoMoreEn: 'Ler (em inglês)',
-  adjustH2: 'Ele se ajusta à sua manhã.',
-  adjustP:
-    'Toda manhã você registra com um toque como seus pés estão. Numa manhã ruim, a sessão do dia fica mais curta e mais fácil. Depois de um dia longo em pé, os exercícios com carga saem. Num dia bom, ele nunca acelera.',
-  answersH2: 'Um plano feito com as suas respostas.',
-  answersP:
-    'Conte ao Walkito onde dói, de que lado, o que você faz e ao que quer voltar. Com isso ele monta seu plano, uma semana de cada vez, e não uma rotina igual para todo mundo.',
   how: [
     {
       title: 'Uma semana de cada vez, em torno de uma meta',
@@ -80,19 +69,11 @@ export const HOME_PT: HomeCopy = {
       link: 'O que os testes medem (em inglês)',
     },
     {
-      title: 'Baseado em pesquisa publicada',
-      text: 'A diretriz clínica de 2023 para dor no calcanhar dá ao alongamento o grau A e ao treino de força o grau B, e um ensaio randomizado mostrou que o treino de força com carga alta melhorou a dor e a função mais rápido que o alongamento.',
+      title: 'Escolhidos a partir de pesquisas publicadas',
+      text: 'Exercícios escolhidos a partir de pesquisas e diretrizes publicadas. O Walkito em si não foi testado em um ensaio clínico.',
       link: 'Ver as evidências (em inglês)',
     },
   ],
-  insideH2: 'Dentro do app',
-  inside: {
-    week: 'Sua semana, com dias de descanso',
-    video: 'Um vídeo para cada exercício',
-    quick: 'Rotinas rápidas para qualquer momento',
-    tests: 'Seus testes: esquerda x direita',
-  },
-  faqH2: 'Perguntas',
   faq: [
     {
       q: 'Em quanto tempo vou sentir diferença?',
@@ -112,5 +93,4 @@ export const HOME_PT: HomeCopy = {
     },
     { q: 'Em quais idiomas ele está?', a: 'Inglês, russo e espanhol.' },
   ],
-  finalH2: 'Seus pés, seu plano.',
 };

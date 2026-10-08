@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 
 import { NEW_ARTICLE_PATHS, isFullLang, type NewLang } from '@/lib/i18n';
 import { EN_ONLY, ES_ARTICLES, RU_ARTICLES, OG_LOCALE, TRANSLATED, alternatesArticle, alternatesFor, isTranslatedPage, type EnglishPage, type Lang } from '@/lib/i18n';
+import { shareCard } from '@/lib/share';
 import { SITE_NAME, smartBannerContent, type AppScreen } from '@/lib/site';
 
 import { groupOf } from '@/lib/nav';
@@ -142,15 +143,16 @@ export function guideMetadata(guide: Guide): Metadata {
       publishedTime: guide.published,
       modifiedTime: guide.updated,
       // Stated rather than inherited: a page-level `openGraph` replaces the
-      // layout's whole object, and the Russian and Spanish roots have no card
-      // file of their own.
-      images: ['/opengraph-image'],
+      // layout's whole object. Russian and Spanish have a card of their own
+      // (lib/og-card.tsx); every other language shares the English one.
+      images: [shareCard(guide.lang)],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${guide.title} | ${SITE_NAME}`,
       description: guide.description,
-      images: ['/opengraph-image'],
+      images: [shareCard(guide.lang)],
     },
   };
 }
+

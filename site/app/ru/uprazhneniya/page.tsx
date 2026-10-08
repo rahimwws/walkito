@@ -10,9 +10,9 @@ import { CHROME, alternatesCustom, type EnglishPage } from '@/lib/i18n';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 
 const PATH = '/ru/uprazhneniya/';
-const TITLE = 'Библиотека упражнений для стоп и икр';
+const TITLE = 'Библиотека упражнений для стоп и икр';
 const DESCRIPTION =
-  'Каждое упражнение из плана Walkito на отдельной странице: техника, подходы и повторения, частые ошибки, варианты и что говорят исследования.';
+  'Каждое упражнение из плана Walkito на отдельной странице: техника, подходы и повторения, частые ошибки, варианты и что говорят исследования.';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -25,24 +25,24 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: 'ru_RU',
     type: 'website',
-    images: ['/opengraph-image'],
+    images: ['/share/ru.jpg'],
   },
 };
 
 const GROUPS: readonly { h2: string; text: string; keys: readonly EnglishPage[] }[] = [
   {
-    h2: 'Растяжка и подвижность',
-    text: 'Для жёсткости в своде, икре и голеностопе. В большинстве планов выполняются почти каждый день.',
+    h2: 'Растяжка и подвижность',
+    text: 'Для жёсткости в своде, икре и голеностопе. В большинстве планов выполняются почти каждый день.',
     keys: ['exPlantarFasciaStretch', 'exCalfStretch', 'exSoleusStretch', 'exAnkleRocks', 'exFootRoll'],
   },
   {
-    h2: 'Сила икр и голени',
-    text: 'Упражнения нагружают икры и ахиллово сухожилие: от подъёмов сидя до подъёмов с полотенцем и эксцентрических опусканий.',
+    h2: 'Сила икр и голени',
+    text: 'Упражнения нагружают икры и ахиллово сухожилие: от подъёмов сидя до подъёмов с полотенцем и эксцентрических опусканий.',
     keys: ['exCalfRaises', 'exTowelHeelRaise', 'exEccentricHeelDrops', 'exTibialisRaises', 'exSingleLegBalance'],
   },
   {
-    h2: 'Сила стопы, свода и бёдер',
-    text: 'Мелкие мышцы, удерживающие свод, пальцы стопы и мышцы бедра, контролирующие приземление стопы.',
+    h2: 'Сила стопы, свода и бёдер',
+    text: 'Мелкие мышцы, удерживающие свод, пальцы стопы и мышцы бедра, контролирующие приземление стопы.',
     keys: ['exShortFoot', 'exTowelScrunch', 'exToeSpread', 'exBigToeLift', 'exBandInversion', 'exHipAbduction'],
   },
 ];
@@ -87,19 +87,22 @@ export default function ExerciseLibraryRu() {
       <JsonLd data={SCHEMA} />
       <JsonLd data={BREADCRUMBS} />
       <Masthead lang="ru" />
-      <Prose className="shell prose">
+      <Prose
+        className="shell prose"
+        kicker={{ label: 'Упражнения', lang: 'ru', num: String(GROUPS.reduce((n, g) => n + g.keys.length, 0)) }}
+      >
         <h1>Библиотека упражнений</h1>
         <p className="lede">
-          Каждое упражнение из плана Walkito на отдельной странице. Здесь описано, как
-          выполнять, стартовая дозировка, типичные ошибки, упрощённые и усложнённые
-          варианты, и что говорят исследования. На каждой странице короткое видео движения.
+          Каждое упражнение из плана Walkito на отдельной странице. Здесь описано, как
+          выполнять, стартовая дозировка, типичные ошибки, упрощённые и усложнённые
+          варианты, и что говорят исследования. На каждой странице короткое видео движения.
         </p>
         <p>
-          Не знаете, с чего начать? Гайды собирают эти упражнения для конкретной проблемы:{' '}
+          Не знаете, с чего начать? Гайды собирают эти упражнения для конкретной проблемы:{' '}
           <a href="/ru/bol-v-pyatke-uprazhneniya/">плантарный фасциит</a>,{' '}
           <a href="/ru/ploskostopie-uprazhneniya/">плоскостопие</a>,{' '}
-          <a href="/ru/bolyat-nogi-ot-stoyaniya/">на ногах весь день</a> и{' '}
-          <a href="/ru/bol-v-pyatke-u-begunov/">боль в пятке у бегунов</a>.
+          <a href="/ru/bolyat-nogi-ot-stoyaniya/">на ногах весь день</a> и{' '}
+          <a href="/ru/bol-v-pyatke-u-begunov/">боль в пятке у бегунов</a>.
         </p>
         {GROUPS.map((grp) => (
           <section key={grp.h2}>

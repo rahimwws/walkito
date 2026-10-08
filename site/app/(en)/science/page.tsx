@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-09-21',
     modifiedTime: PAGE_UPDATED.science,
-    images: ['/opengraph-image'],
+    images: ['/share/en.jpg'],
   },
 };
 
@@ -120,9 +120,9 @@ export default function Science() {
     <>
       <JsonLd data={ARTICLE} />
       <JsonLd data={BREADCRUMBS} />
-      <Masthead />
+      <Masthead current="science" />
 
-      <Prose className="shell prose">
+      <Prose className="shell prose" kicker={{ label: c.navEvidence, lang: 'en' }}>
         <h1>Heel pain research: strength vs stretching, and the 2023 guideline</h1>
         <Byline lang="en" cites={[0, 1, 2, 3]} main={3} />
 

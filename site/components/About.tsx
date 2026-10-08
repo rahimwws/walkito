@@ -63,7 +63,7 @@ export function About({ about }: { about: AboutData }) {
     <>
       <JsonLd data={schema} />
       <Masthead lang={about.lang} />
-      <Prose className="shell prose">
+      <Prose className="shell prose" kicker={{ label: c.navAbout, lang: about.lang }}>
         <h1>{about.h1}</h1>
         <p className="byline">
           {c.updated} <time dateTime={PAGE_UPDATED.about}>{formatDate(PAGE_UPDATED.about, about.lang)}</time>

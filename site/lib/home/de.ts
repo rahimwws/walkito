@@ -23,27 +23,18 @@ export const HOME_DE: HomeCopy = {
   h1b: 'Probier einen Plan, der zu deinen Füßen passt.',
   lead: 'Walkito ist ein persönlicher Übungsplan bei Schmerzen in Ferse, Fuß und Bein, der sich jeden Tag daran anpasst, wie sich deine Füße anfühlen.',
   small: `${MIN_A}, ${MIN_B} oder ${MIN_C}\u00A0Minuten am Tag, zu Hause.`,
-  chips: [
-    'Schlechter Morgen? Heute wird es leichter',
-    `Ein Test alle ${testEveryDays}\u00A0Tage`,
-    `${MIN_A}, ${MIN_B} oder ${MIN_C}\u00A0Min.`,
-  ],
   alt: {
-    heroLeft: 'Walkito nach einem schlechten Morgen: Die heutige Einheit wird leichter',
     heroCenter: 'Der Heute-Bildschirm von Walkito: eine Begrüßung, der Morgen-Check-in und die heutige Einheit',
-    heroRight: 'Walkito spielt ein Übungsvideo mit Hinweis ab',
-    checkin: 'Walkito: Nach einem schmerzhaften Morgen gibt es heute drei Minuten Übungen im Sitzen',
-    where: 'Walkito: Wo tut es meistens weh? Ferse und Fußgewölbe sind an einem Bein markiert',
-    goal: 'Walkito: Ziel auswählen, gewählt ist „den ganzen Tag auf den Beinen bleiben“',
-    week: 'Walkito: der Plan für diese Woche, Montag bis Sonntag mit Ruhetagen, und die nächste Woche',
-    exercise: 'Walkito: eine Dehnung der Plantarfaszie als Video mit Timer',
-    quick: 'Walkito: kurze Routinen für akute Schmerzen, vor und nach dem Laufen, bei der Arbeit und vor dem ersten Schritt',
-    tests: 'Walkito: Testergebnisse, Gewölbe halten 11\u00A0Sekunden länger und 4 Wadenheben mehr, links 19 und rechts 22',
   },
   storyH2: 'Es ist nicht deine Schuld.',
   storyP:
-    'Einlagen, neue Schuhe, eine Nachtschiene, fünfzig Videos, die alle etwas anderes sagen. Damit fühlen sich deine Füße vielleicht gestützt an, aber nichts davon trainiert den Fuß. Was fehlt, ist ein klarer Plan: welche Übungen, wie viele, in welcher Reihenfolge und was du an einem schlechten Tag machst.',
+    'Einlagen, neue Schuhe, fünfzig Videos, die sich alle widersprechen. Nichts davon trainiert den Fuß. Was fehlt, ist ein klarer Plan, für gute und für schlechte Tage.',
+  storyChipsAfter: ['widersprechen.', 'Fuß.', 'Plan,', 'Tage.'],
+  storyAccent: 'ein klarer Plan,',
   whoH2: 'Ist das was für mich?',
+  whoKicker: 'Für dich',
+  whoLead:
+    'Wähl, was am besten zu dir passt. Der Plan fängt dort an und passt sich jeden Tag daran an, wie sich deine Füße anfühlen.',
   who: {
     heel: {
       title: 'Fersenschmerzen und Plantarfasziitis',
@@ -68,12 +59,6 @@ export const HOME_DE: HomeCopy = {
   },
   whoMore: 'Zum Ratgeber',
   whoMoreEn: 'Lesen (auf Englisch)',
-  adjustH2: 'Er passt sich deinem Morgen an.',
-  adjustP:
-    'Jeden Morgen trägst du mit einem Tippen ein, wie sich deine Füße anfühlen. An einem schlechten Morgen wird die heutige Einheit kürzer und leichter. Nach einem langen Tag auf den Beinen fallen die belastenden Übungen weg. An einem guten Tag wird es nie schneller.',
-  answersH2: 'Ein Plan aus deinen Antworten.',
-  answersP:
-    'Sag Walkito, wo es wehtut, auf welcher Seite, was du machst und wozu du zurückwillst. Daraus baut Walkito deinen Plan, Woche für Woche, statt einer Routine für alle.',
   how: [
     {
       title: 'Woche für Woche, rund um ein Ziel',
@@ -86,19 +71,11 @@ export const HOME_DE: HomeCopy = {
       link: 'Was die Tests messen (auf Englisch)',
     },
     {
-      title: 'Auf Basis veröffentlichter Forschung',
-      text: 'Die klinische Leitlinie von 2023 zu Fersenschmerzen bewertet Dehnen mit A und Krafttraining mit B. Eine randomisierte Studie fand, dass Krafttraining mit hoher Last Schmerzen und Funktion schneller verbesserte als Dehnen.',
+      title: 'Ausgewählt anhand veröffentlichter Forschung',
+      text: 'Übungen, ausgewählt anhand veröffentlichter Forschung und Leitlinien. Walkito selbst wurde nicht in einer Studie getestet.',
       link: 'Zur Studienlage (auf Englisch)',
     },
   ],
-  insideH2: 'In der App',
-  inside: {
-    week: 'Deine Woche, mit Ruhetagen',
-    video: 'Ein Video zu jeder Übung',
-    quick: 'Kurze Routinen für jeden Moment',
-    tests: 'Deine Tests, links und rechts',
-  },
-  faqH2: 'Fragen',
   faq: [
     {
       q: 'Wann merke ich einen Unterschied?',
@@ -118,5 +95,4 @@ export const HOME_DE: HomeCopy = {
     },
     { q: 'In welchen Sprachen gibt es die App?', a: 'Auf Englisch, Russisch und Spanisch.' },
   ],
-  finalH2: 'Deine Füße, dein Plan.',
 };
