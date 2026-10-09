@@ -304,7 +304,7 @@ function guideText(g) {
   if (g.takeaways?.length) out.push('', list(g.takeaways));
   for (const s of g.sections) {
     out.push('', `### ${s.h2}`);
-    for (const p of s.paragraphs ?? []) out.push('', inline(p));
+    for (const p of s.paragraphs ?? []) out.push('', typeof p === 'string' ? inline(p) : list(p.list));
     if (s.exercises?.length) {
       out.push('', s.exercises.map((e) => `- **${e.name}** (${e.dose}): ${inline(e.how)}`).join('\n'));
     }
@@ -323,7 +323,7 @@ function aboutText(a) {
   const out = [`## ${a.h1}`, '', url(TRANSLATED.about[a.lang]), '', inline(a.lede)];
   for (const s of a.sections) {
     out.push('', `### ${s.h2}`);
-    for (const p of s.paragraphs ?? []) out.push('', inline(p));
+    for (const p of s.paragraphs ?? []) out.push('', typeof p === 'string' ? inline(p) : list(p.list));
     if (s.bullets?.length) out.push('', list(s.bullets));
   }
   return out.join('\n');

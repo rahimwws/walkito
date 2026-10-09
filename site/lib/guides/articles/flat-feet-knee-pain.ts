@@ -43,8 +43,15 @@ export const FLAT_FEET_KNEE_PAIN_EN: Guide = {
       keyFact: 'In 1,903 older adults, the flattest feet had 1.3 times the odds of frequent knee pain compared with all other feet (Gross and colleagues, 2011).',
       figure: { id: 'arches', caption: 'The same foot bones with a flat foot, a typical arch and a high arch, seen from the inner side.', alt: 'Three feet seen from the inner side on a flat floor: a flat foot whose arch rests on the floor, a typical arch with a small gap underneath, and a high arch with a large gap under the middle of the foot.' },
       paragraphs: [
-        'Flat feet are linked to knee pain in several large studies, but none of them proves that the arch causes the pain. The size of the link is small, and it shows up mostly in the flattest feet.',
-        'The best known study comes from the Framingham Studies in the United States. Gross and colleagues measured the footprints of 1,903 older adults (average age 65) and asked about knee pain. The 2011 results: the flattest feet had 1.3 times the odds of knee pain on most days, compared with all the other feet. They also had 1.4 times the odds of cartilage damage on the inner side of the knee joint on MRI. Cartilage is the smooth layer that covers the ends of the bones. There was no link with damage in any other part of the knee.',
+        'Flat feet are linked to knee pain in several large studies, but **none of them proves that the arch causes the pain.** The size of the link is small, and it shows up mostly in the flattest feet.',
+        'The best known study comes from the Framingham Studies in the United States. Gross and colleagues measured the footprints of 1,903 older adults (average age 65) and asked about knee pain. The 2011 results, for the flattest feet compared with all the other feet:',
+        {
+          list: [
+            '**Knee pain:** 1.3 times the odds of knee pain on most days.',
+            '**Cartilage:** 1.4 times the odds of cartilage damage on the inner side of the knee joint on MRI. Cartilage is the smooth layer that covers the ends of the bones.',
+            '**Rest of the knee:** no link with damage in any other part of the knee.',
+          ],
+        },
         'A second study looked at the young end of life. Kosashvili and colleagues reviewed 97,279 young military recruits in 2008. Front-of-knee pain was found in 7 percent of recruits with moderate or severe flat feet, and in 4 percent of those with mild flat feet or normal arches. Mild flat feet, which made up 74 percent of the flat-footed group, carried no extra risk.',
         'Both studies measured people once, so they cannot say whether the foot came first. The Framingham authors also noted that a footprint may not tell a flat foot from a wide, fleshy one, and body weight affects the knee on its own.',
       ],
@@ -55,9 +62,13 @@ export const FLAT_FEET_KNEE_PAIN_EN: Guide = {
     {
       h2: 'Where in the knee does flat-foot knee pain show up?',
       paragraphs: [
-        'Knee pain linked to flat feet is usually described in one of two places: around or behind the kneecap, or on the inner side of the knee. These are different problems, and they are looked after in different ways.',
-        'Pain around or behind the kneecap is called patellofemoral pain. It tends to come on slowly and gets worse with squatting, stairs, running, jumping or sitting for a long time with the knee bent. It is common in teenagers and active adults. This is the knee problem with the most research on foot posture, and most of this page is about it.',
-        'Pain on the inner side of the knee in an older adult is more often linked to osteoarthritis, the wear-related changes in a joint. The Framingham study found cartilage damage on the inner side of the knee was more common in the flattest feet, which fits this picture. But a link at one point in time is all the study shows.',
+        'Knee pain linked to flat feet is usually described in one of two places. These are different problems, and they are looked after in different ways.',
+        {
+          list: [
+            '**Around or behind the kneecap.** This is called patellofemoral pain. It tends to come on slowly and gets worse with squatting, stairs, running, jumping or sitting for a long time with the knee bent. It is common in teenagers and active adults. This is the knee problem with the most research on foot posture, and most of this page is about it.',
+            '**On the inner side of the knee, in an older adult.** This is more often linked to osteoarthritis, the wear-related changes in a joint. The Framingham study found cartilage damage on the inner side of the knee was more common in the flattest feet, which fits this picture. But a link at one point in time is all the study shows.',
+          ],
+        },
         'A knee that swells after a twist, locks or gives way is a different story. That points to the meniscus (the cartilage cushion inside the knee) or a ligament, and needs a clinician.',
       ],
       cites: [CITE.willyPfpGuideline, CITE.grossFlatFeetKnee],
@@ -66,8 +77,13 @@ export const FLAT_FEET_KNEE_PAIN_EN: Guide = {
       h2: 'How could a flat foot affect the knee?',
       paragraphs: [
         'The usual explanation is a chain: when the foot rolls in, the shin bone turns in with it, and the knee drifts inward. Rolling in is called pronation, and some of it is a normal part of every step. The idea is that too much of it changes how the kneecap tracks in its groove.',
-        'The foot and shin do turn together. Whether that explains knee pain is less clear. A 2009 review by Barton and colleagues pulled together 24 studies of how people with kneecap pain walk and run. It found some differences at the heel bone and more inward movement at the hip in runners. But the review found no forward-looking studies with usable data. The studies it could weigh compared people who already had pain with people who did not, which cannot separate cause from effect.',
-        'The forward-looking evidence is thin. A 2014 review by Neal and colleagues pooled 21 prospective studies of 6,228 people, which follow people over time to see who gets hurt. A rolled-in foot posture was a clear risk factor for shin splints. For kneecap pain, the evidence was very limited and the effects were small. The reviewers concluded that foot posture is one piece of a wider assessment, not the answer on its own.',
+        'The foot and shin do turn together. Whether that explains knee pain is less clear, and the forward-looking evidence is thin. Two reviews looked at it:',
+        {
+          list: [
+            '**Barton and colleagues, 2009:** pulled together 24 studies of how people with kneecap pain walk and run. It found some differences at the heel bone and more inward movement at the hip in runners. But it found no forward-looking studies with usable data. The studies it could weigh compared people who already had pain with people who did not, which cannot separate cause from effect.',
+            '**Neal and colleagues, 2014:** pooled 21 prospective studies of 6,228 people, which follow people over time to see who gets hurt. A rolled-in foot posture was a clear risk factor for shin splints. For kneecap pain, the evidence was very limited and the effects were small. The reviewers concluded that foot posture is one piece of a wider assessment, not the answer on its own.',
+          ],
+        },
         'The hip sits at the top of the same chain. Weak muscles on the outside of the hip let the thigh turn in, and that can pull the knee inward from above. This is one reason the exercise advice for kneecap pain starts at the hip, not the foot.',
       ],
       sourceNote:
@@ -95,9 +111,18 @@ export const FLAT_FEET_KNEE_PAIN_EN: Guide = {
       keyFact: 'In a trial of 179 adults with kneecap pain, shaped insoles beat flat inserts in the short term but were no better than physiotherapy (Collins and colleagues, 2008).',
       paragraphs: [
         'Shaped insoles can ease front-of-knee pain in the short term, but they add little once you are doing good exercise.',
-        'The clearest test is a 2008 trial in the BMJ. Collins and colleagues split 179 adults aged 18 to 40 with pain around the kneecap into four groups: ready-made shaped insoles, flat inserts, physiotherapy (exercise for the thigh muscles, taping, hands-on work and advice), or insoles plus physiotherapy. The shaped insoles did better than flat inserts after about a month and a half. They were no better than physiotherapy, and adding them to physiotherapy did not improve results. By one year, all four groups had improved by a meaningful amount.',
+        'The clearest test is a 2008 trial in the BMJ. Collins and colleagues split 179 adults aged 18 to 40 with pain around the kneecap into four groups:',
+        {
+          list: [
+            'Ready-made shaped insoles.',
+            'Flat inserts.',
+            'Physiotherapy: exercise for the thigh muscles, taping, hands-on work and advice.',
+            'Insoles plus physiotherapy.',
+          ],
+        },
+        'The shaped insoles did better than flat inserts after about a month and a half. They were no better than physiotherapy, and adding them to physiotherapy did not improve results. By one year, all four groups had improved by a meaningful amount.',
         'A smaller 2018 trial by Mølgaard and colleagues picked 40 people with kneecap pain whose heels tilted in more than usual. Adding foot exercises and custom insoles to knee exercises gave 8.9 points more pain relief on a 100-point knee scale at four months. At twelve months the difference between groups was no longer statistically clear. The trial cannot tell whether the insoles, the foot exercises or the extra sessions made the difference.',
-        'The 2019 guideline puts it together this way: ready-made insoles can be used for people whose feet roll in more than usual, only for short-term pain relief, and always alongside exercise. It found too little evidence to favour custom insoles over ready-made ones. For the wider insole debate, see [insoles vs exercises](/insoles-vs-exercises/).',
+        'The 2019 guideline puts it together this way: **ready-made insoles can be used for people whose feet roll in more than usual, only for short-term pain relief, and always alongside exercise.** It found too little evidence to favour custom insoles over ready-made ones. For the wider insole debate, see [insoles vs exercises](/insoles-vs-exercises/).',
       ],
       sourceNote:
         'Collins 2008: single-blind RCT, outcomes at about a month and a half, three months and one year; shaped insoles vs flat inserts on global improvement, number needed to benefit 4. One author had received funding from an insole maker. Mølgaard 2018: KOOS pain subscale, 8.9 points (95% CI 0.4 to 17.4). Willy 2019: grade A.',
