@@ -9,19 +9,36 @@ import { connect, on, openLink as hostOpenLink } from './bridge';
 type Clip = { src: string };
 type Card = { id: string; name: string; cue: string; dose: string; seconds?: number; clip: Clip | null };
 type Cta = { line: string; bullets: string[]; button: string; url: string; code: string };
-type Base = { cta?: Cta; footer: { disclaimer: string; evidence: string }; calm: boolean };
+type Ui = { start: string; seconds: string; done: string; code: string; copied: string; copyCode: string; video: string; restDay: string; rest: string };
+type Base = { cta?: Cta; footer: { disclaimer: string; evidence: string }; calm: boolean; lang?: string; ui?: Ui };
 type Content = Base &
   (
-    | { kind: 'routine'; title: string; intro: string; minutes: number; position: string; steps: Card[]; note?: string }
+    | { kind: 'routine'; title: string; intro: string; minutes: number; minutesLabel?: string; position: string; steps: Card[]; note?: string }
     | { kind: 'plan_week'; title: string; intro: string; days: Day[]; note?: string }
     | { kind: 'single_exercise'; title: string; exercise: Card; why?: string; evidence?: string; note?: string }
     | { kind: 'self_check'; title: string; steps: string[]; question?: string; result?: string; exercise?: Card; note?: string }
     | { kind: 'safety_card'; title: string; flags: string[]; selected: string[]; message?: string }
     | { kind: 'tips'; title: string; tips: { title: string; text: string }[] }
   );
-type Day = { weekday: string; type: string; label: string; minutes: number; exercises: Card[] };
+type Day = { weekday: string; initial?: string; type: string; label: string; minutes: number; minutesLabel?: string; exercises: Card[] };
 
 const root = document.getElementById('root') as HTMLElement;
+
+/** The widget's few words. The result brings them in its language; these are
+ * for a result from a server older than that. */
+let ui: Ui = {
+  start: 'Start {seconds}s',
+  seconds: '{seconds}s',
+  done: 'Done',
+  code: 'Code {code}',
+  copied: 'Copied',
+  copyCode: 'Copy plan code {code}',
+  video: 'Video: {name}',
+  restDay: 'Rest day.',
+  rest: 'Rest',
+};
+const say = (template: string, values: Record<string, string | number>) =>
+  template.replace(/\{(\w+)\}/g, (_, k: string) => String(values[k] ?? ''));
 
 
 // ─── DOM helpers ────────────────────────────────────────────────────────────
@@ -57,14 +74,14 @@ function video(card: Card, big = false): HTMLElement | null {
     playsinline: '',
     autoplay: '',
     preload: 'metadata',
-    'aria-label': `Video: ${card.name}`,
+    'aria-label': say(ui.video, { name: card.name }),
   });
   v.muted = true;
   return v;
 }
 
 function timer(seconds: number): HTMLElement {
-  const label = `Start ${seconds}s`;
+  const label = say(ui.start, { seconds });
   const button = el('button', { class: 'chip chip-button', type: 'button' }, label);
   let left = 0;
   let handle = 0;
@@ -76,16 +93,16 @@ function timer(seconds: number): HTMLElement {
       return;
     }
     left = seconds;
-    button.textContent = `${left}s`;
+    button.textContent = say(ui.seconds, { seconds: left });
     handle = window.setInterval(() => {
       left -= 1;
       if (left <= 0) {
         clearInterval(handle);
         handle = 0;
-        button.textContent = 'Done';
+        button.textContent = ui.done;
         return;
       }
-      button.textContent = `${left}s`;
+      button.textContent = say(ui.seconds, { seconds: left });
     }, 1000);
   };
   return button;
@@ -130,11 +147,11 @@ function single(card: Card): HTMLElement {
 }
 
 function cta(c: Cta): HTMLElement {
-  const code = el('button', { class: 'code', type: 'button', 'aria-label': `Copy plan code ${c.code}` }, `Code ${c.code}`);
+  const code = el('button', { class: 'code', type: 'button', 'aria-label': say(ui.copyCode, { code: c.code }) }, say(ui.code, { code: c.code }));
   code.onclick = async () => {
     try {
       await navigator.clipboard.writeText(c.code);
-      code.textContent = 'Copied';
+      code.textContent = ui.copied;
     } catch {
       const range = document.createRange();
       range.selectNodeContents(code);
@@ -159,8 +176,12 @@ function week(days: Day[]): HTMLElement {
     row.querySelectorAll('button').forEach((b, j) => b.setAttribute('aria-selected', String(i === j)));
     const day = days[i];
     below.replaceChildren(
-      el('p', { class: 'eyebrow' }, day.exercises.length ? `${day.weekday} · ${day.label} · ${day.minutes} min` : `${day.weekday} · Rest`),
-      day.exercises.length ? strip(day.exercises) : el('p', { class: 'muted' }, 'Rest day.'),
+      el(
+        'p',
+        { class: 'eyebrow' },
+        day.exercises.length ? `${day.weekday} · ${day.label} · ${day.minutesLabel ?? `${day.minutes} min`}` : `${day.weekday} · ${ui.rest}`,
+      ),
+      day.exercises.length ? strip(day.exercises) : el('p', { class: 'muted' }, ui.restDay),
     );
   };
   days.forEach((day, i) => {
@@ -168,7 +189,7 @@ function week(days: Day[]): HTMLElement {
       'button',
       { class: `day day-${day.type}`, type: 'button', role: 'tab', 'aria-label': `${day.weekday}, ${day.label}` },
       el('span', { class: 'dot' }),
-      el('span', { class: 'day-name' }, day.weekday.slice(0, 1)),
+      el('span', { class: 'day-name' }, day.initial ?? day.weekday.slice(0, 1)),
     );
     b.onclick = () => show(i);
     row.append(b);
@@ -181,10 +202,12 @@ function week(days: Day[]): HTMLElement {
 
 function render(c: Content) {
   document.body.classList.toggle('calm', c.calm);
+  if (c.ui) ui = c.ui;
+  if (c.lang) document.documentElement.lang = c.lang;
   const parts: (HTMLElement | null)[] = [];
   switch (c.kind) {
     case 'routine':
-      parts.push(header(c.title, `${c.minutes} min · ${c.position}`));
+      parts.push(header(c.title, `${c.minutesLabel ?? `${c.minutes} min`} · ${c.position}`));
       if (c.note) parts.push(el('p', { class: 'note' }, c.note));
       parts.push(strip(c.steps));
       break;

@@ -9,17 +9,10 @@
  */
 import { decodePlanCode, type PlanCodeParams } from '@/shared/lib/plan-code';
 
-import { DISCLAIMER } from './tools';
+import type { Lang } from './content';
+import { COPY } from './copy';
 
 const APP_STORE = 'https://apps.apple.com/app/id6813076846';
-
-const AREA: Record<PlanCodeParams['area'], string> = {
-  heel_arch: 'Heel and arch',
-  achilles: 'Achilles',
-  flat_feet: 'Flat feet',
-  shin: 'Shin',
-  general_plus: 'Stronger feet',
-};
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
@@ -52,40 +45,43 @@ p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}.small{font-size:13
 const APPLE =
   '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.36 12.73c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.61-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.75-.78-2.87-.76-1.48.02-2.84.86-3.6 2.18-1.53 2.66-.39 6.6 1.1 8.76.73 1.06 1.6 2.25 2.75 2.2 1.1-.04 1.52-.71 2.85-.71 1.33 0 1.71.71 2.87.69 1.19-.02 1.94-1.08 2.66-2.14.84-1.23 1.19-2.42 1.2-2.48-.03-.01-2.3-.88-2.33-3.5zM14.2 6.1c.6-.74 1.01-1.76.9-2.78-.87.04-1.93.58-2.56 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.58-1.21z"/></svg>';
 
-function shell(title: string, body: string): string {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${esc(title)}</title><link rel="icon" href="/favicon.png"><style>${STYLE}</style></head><body><main><div class="brand"><img src="/icon-96.webp" alt="" width="40" height="40">Walkito</div>${body}<p class="small">${esc(DISCLAIMER)}</p></main></body></html>`;
+function shell(lang: Lang, title: string, body: string): string {
+  return `<!doctype html><html lang="${COPY[lang].page.lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${esc(title)}</title><link rel="icon" href="/favicon.png"><style>${STYLE}</style></head><body><main><div class="brand"><img src="/icon-96.webp" alt="" width="40" height="40">Walkito</div>${body}<p class="small">${esc(COPY[lang].disclaimer)}</p></main></body></html>`;
 }
 
-export function planPage(raw: string): { status: number; html: string; source?: string } {
+/** The page for a code, in the chat's language (`?l=` from the button, else
+ * the browser's), English by default. */
+export function planPage(raw: string, lang: Lang = 'en'): { status: number; html: string; source?: string } {
+  const c = COPY[lang].page;
   const plan = decodePlanCode(raw);
   if (!plan) {
     return {
       status: 404,
       html: shell(
-        'Code not recognised · Walkito',
-        `<h1>Code not recognised</h1><p>Check the code and try again, or get the app and set up your plan there.</p><a class="btn btn-store" href="${esc(storeLink('other'))}">${APPLE}Get Walkito on the App Store</a>`,
+        lang,
+        `${c.notFoundTitle} · Walkito`,
+        `<h1>${esc(c.notFoundTitle)}</h1><p>${esc(c.notFoundBody)}</p><a class="btn btn-store" href="${esc(storeLink('other'))}">${APPLE}${esc(c.store)}</a>`,
       ),
     };
   }
   const code = `WK-${raw.replace(/^WK-?/i, '').toUpperCase()}`;
-  const kit = plan.equipment.length ? plan.equipment.join(', ') : 'none';
-  const side = plan.side === 'both' ? 'Both feet' : `${plan.side[0].toUpperCase()}${plan.side.slice(1)} foot`;
+  const kit = plan.equipment.length ? plan.equipment.map((e) => c.kit[e]).join(', ') : c.none;
   const body = `
-<h1>Your plan is ready to continue</h1>
+<h1>${esc(c.ready)}</h1>
 <div class="card">
-  <div class="row"><span>Area</span><span>${esc(AREA[plan.area])}</span></div>
-  <div class="row"><span>Each day</span><span>${plan.minutes} minutes</span></div>
-  <div class="row"><span>Days a week</span><span>${plan.days}</span></div>
-  <div class="row"><span>Equipment</span><span>${esc(kit)}</span></div>
-  <div class="row"><span>Side</span><span>${esc(side)}</span></div>
+  <div class="row"><span>${esc(c.areaRow)}</span><span>${esc(COPY[lang].area[plan.area])}</span></div>
+  <div class="row"><span>${esc(c.eachDay)}</span><span>${esc(c.minutes(plan.minutes))}</span></div>
+  <div class="row"><span>${esc(c.daysRow)}</span><span>${plan.days}</span></div>
+  <div class="row"><span>${esc(c.kitRow)}</span><span>${esc(kit)}</span></div>
+  <div class="row"><span>${esc(c.sideRow)}</span><span>${esc(c.side[plan.side])}</span></div>
 </div>
-<a class="btn btn-store" href="${esc(storeLink(plan.source))}">${APPLE}Get Walkito on the App Store</a>
-<a class="btn btn-open" href="walkito://plan?code=${encodeURIComponent(code)}">Open in Walkito</a>
+<a class="btn btn-store" href="${esc(storeLink(plan.source))}">${APPLE}${esc(c.store)}</a>
+<a class="btn btn-open" href="walkito://plan?code=${encodeURIComponent(code)}">${esc(c.open)}</a>
 <div class="card">
-  <div class="code"><span id="code">${esc(code)}</span><button type="button" id="copy">Copy code</button></div>
-  <p>In the app, tap “Got a code from ChatGPT or Claude?” on the first screen and enter this code. Your plan starts with these settings.</p>
+  <div class="code"><span id="code">${esc(code)}</span><button type="button" id="copy">${esc(c.copy)}</button></div>
+  <p>${esc(c.howTo)}</p>
 </div>
-<p class="small">Android is coming to Google Play soon.</p>
-<script>document.getElementById('copy').onclick=function(){var b=this;navigator.clipboard&&navigator.clipboard.writeText(${JSON.stringify(code)}).then(function(){b.textContent='Copied'})};</script>`;
-  return { status: 200, html: shell(`Your Walkito plan · ${code}`, body), source: plan.source };
+<p class="small">${esc(c.android)}</p>
+<script>document.getElementById('copy').onclick=function(){var b=this;navigator.clipboard&&navigator.clipboard.writeText(${JSON.stringify(code)}).then(function(){b.textContent=${JSON.stringify(c.copied)}})};</script>`;
+  return { status: 200, html: shell(lang, `${c.title} · ${code}`, body), source: plan.source };
 }
