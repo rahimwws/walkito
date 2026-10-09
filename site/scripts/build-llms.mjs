@@ -480,7 +480,8 @@ const RETIRED_PRODUCT = new RegExp(
 
 for (const [name, text] of OUTPUTS) {
   const lines = text.split('\n');
-  const hits = lines.filter((line) => PLAN_LENGTH.test(line));
+  // A reference line (Vancouver "2020;78") quotes a paper title such as "a 12-week ... intervention": a finding, not the plan.
+  const hits = lines.filter((line) => PLAN_LENGTH.test(line) && !/\b(?:19|20)\d{2};\d/.test(line));
   if (hits.length) {
     throw new Error(
       `llms: ${name} would describe the plan by length, which it no longer has. ` +

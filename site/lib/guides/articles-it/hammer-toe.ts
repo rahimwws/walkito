@@ -16,7 +16,7 @@ export const HAMMER_TOE_IT: Guide = {
   mainSource: CITE.malhotra,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Dito a martello: esercizi, flessibile o rigido e cosa aiuta',
+  title: 'Dito a martello: esercizi, flessibile o rigido',
   description:
     'Esercizi per il dito a martello flessibile, differenza con il dito ad artiglio, consigli sulle scarpe e quando si può parlare di chirurgia.',
   h1: 'Esercizi per il dito a martello: cosa possono fare e cosa dicono gli studi',

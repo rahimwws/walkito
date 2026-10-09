@@ -11,7 +11,7 @@ export const EX_TIBIALIS_RAISES_DE: Guide = {
   page: 'exTibialisRaises',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Zehenheben an der Wand: Tibialis-Training fürs Schienbein',
+  title: 'Zehenheben an der Wand: Training fürs Schienbein',
   description:
     'Zehenheben an der Wand (Tibialis Raises): Technik, Sätze, Wiederholungen, welche Muskeln arbeiten, Belege beim Schienbeinkantensyndrom und Steigerungen.',
   h1: 'Zehenheben an der Wand: wie es geht, was es trainiert und was die Belege sagen',

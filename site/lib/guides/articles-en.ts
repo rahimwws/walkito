@@ -1,5 +1,20 @@
 import type { EnglishPage } from '@/lib/i18n';
 
+import { BAREFOOT_EN } from './articles/barefoot-shoes';
+import { INSOLES_VS_EXERCISES_EN } from './articles/insoles-vs-exercises';
+import { MASSAGE_BALL_EN } from './articles/massage-ball-plantar-fasciitis';
+import { ICE_HEAT_EN } from './articles/ice-or-heat-for-plantar-fasciitis';
+import { PF_TAPING_EN } from './articles/plantar-fasciitis-taping';
+import { NIGHT_SPLINTS_EN } from './articles/night-splints-plantar-fasciitis';
+import { FLAT_FEET_KIDS_EN } from './articles/flat-feet-in-kids';
+import { FLAT_FEET_AGE_EN } from './articles/do-flat-feet-get-worse-with-age';
+import { FLAT_FEET_KNEE_PAIN_EN } from './articles/flat-feet-knee-pain';
+import { FLAT_FEET_BACK_PAIN_EN } from './articles/flat-feet-back-pain';
+import { FOOT_STRENGTHENING_EN } from './articles/foot-strengthening-exercises';
+import { ANKLE_STRENGTHENING_EN } from './articles/ankle-strengthening-exercises';
+import { ANKLE_MOBILITY_EN } from './articles/ankle-mobility-exercises';
+import { TIGHT_CALVES_EN } from './articles/tight-calves';
+import { TOE_STRENGTHENING_EN } from './articles/toe-strengthening-exercises';
 import { ACHILLES_EN } from './articles/achilles';
 import { BALL_OF_FOOT_EN } from './articles/ball-of-foot';
 import { BEST_APP_EN } from './articles/best-app';
@@ -98,4 +113,19 @@ export const ARTICLES_EN: Record<EnglishPage, Guide> = {
   sesamoiditis: SESAMOIDITIS_EN,
   bunions: BUNIONS_EN,
   hammerToe: HAMMER_TOE_EN,
+  toeStrengthening: TOE_STRENGTHENING_EN,
+  tightCalves: TIGHT_CALVES_EN,
+  ankleMobility: ANKLE_MOBILITY_EN,
+  ankleStrengthening: ANKLE_STRENGTHENING_EN,
+  footStrengthening: FOOT_STRENGTHENING_EN,
+  flatFeetBackPain: FLAT_FEET_BACK_PAIN_EN,
+  flatFeetKneePain: FLAT_FEET_KNEE_PAIN_EN,
+  flatFeetAge: FLAT_FEET_AGE_EN,
+  flatFeetKids: FLAT_FEET_KIDS_EN,
+  nightSplints: NIGHT_SPLINTS_EN,
+  pfTaping: PF_TAPING_EN,
+  iceHeat: ICE_HEAT_EN,
+  massageBall: MASSAGE_BALL_EN,
+  insolesVsExercises: INSOLES_VS_EXERCISES_EN,
+  barefoot: BAREFOOT_EN,
 };

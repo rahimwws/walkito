@@ -64,7 +64,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_PT: Guide = {
       h2: 'O protocolo de Alfredson: séries, repetições e progressão',
       paragraphs: [
         'O protocolo original é 3\u00A0séries de 15\u00A0repetições com o joelho esticado, mais 3\u00A0séries de 15 com o joelho dobrado, feitas duas vezes por dia, sete dias por semana, por cerca de três meses. São 180\u00A0repetições por dia. Quando o exercício fica sem dor com o peso do corpo, acrescenta-se carga com uma mochila.',
-        'O Walkito começa com um volume menor: 3\u00A0séries de 10, cada perna, nos dias de força. A dose de Alfredson é alta e o esforço para manter a rotina é real. Um ensaio de 2014 de Stevens e Tan encontrou que um protocolo excêntrico «conforme a tolerância», com menos repetições, deu melhoras iguais na dor e na função, e por isso as orientações mais recentes são menos rígidas quanto a cumprir as 180 diárias.',
+        'O Walkito começa com um volume menor: 3\u00A0séries de 10, cada perna, nos dias de força. A dose de Alfredson é alta e o esforço para manter a rotina é real. Um ensaio de 2014 de Stevens e Tan mostrou que um protocolo excêntrico “conforme a tolerância”, com menos repetições, deu melhoras iguais na dor e na função, e por isso as orientações mais recentes são menos rígidas quanto a cumprir as 180 diárias.',
       ],
       table: {
         caption: 'Protocolo de descida excêntrica do calcanhar de Alfredson (1998)',
@@ -100,7 +100,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_PT: Guide = {
         'Ficar parado embaixo como em um alongamento. O benefício está na descida lenta, não em ficar pendurado embaixo. Desça em três segundos e use logo os dois pés para voltar a subir.',
         'Descer demais. O calcanhar deve afundar até a amplitude natural dele abaixo do degrau. Forçar mais para baixo, inclinando o pé para dentro ou para fora para ganhar amplitude, sobrecarrega os tendões da parte de dentro ou de fora do tornozelo. Três a cinco centímetros abaixo do degrau bastam.',
         'Ir rápido demais. A velocidade tira a carga excêntrica, que é a base do exercício. Se você não consegue controlar a descida em uns três segundos, volte primeiro para uma versão com os dois pés.',
-        'Pular a versão com o joelho dobrado. A descida com o joelho esticado trabalha o gastrocnêmio. A versão com o joelho dobrado trabalha o sóleo. Os dois músculos fazem parte do tendão de Aquiles. O protocolo original inclui as duas.',
+        'Pular a versão com o joelho dobrado. A descida com o joelho esticado trabalha o gastrocnêmio. A versão com o joelho dobrado trabalha o sóleo. Os dois músculos se ligam ao tendão de Aquiles. O protocolo original inclui as duas.',
       ],
     },
     {

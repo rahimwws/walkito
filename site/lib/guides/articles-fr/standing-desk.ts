@@ -15,7 +15,7 @@ export const STANDING_DESK_FR: Guide = {
   mainSource: CITE.buckley,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Bureau debout et mal aux pieds\u00A0: pourquoi et que faire',
+  title: 'Bureau debout et mal aux pieds\u00A0: que faire',
   description:
     'Pourquoi on a mal aux pieds avec un bureau debout, combien de temps rester debout avant de s’asseoir, tapis anti-fatigue et exercices à faire au bureau.',
   h1: 'Bureau debout et mal aux pieds\u00A0: pourquoi ça arrive et ce qui aide',
@@ -30,7 +30,7 @@ export const STANDING_DESK_FR: Guide = {
     'Une déclaration d’experts de 2015, commandée par Public Health England, recommande d’accumuler d’abord 2\u00A0heures par jour de station debout et d’activité légère au travail, puis à terme 4\u00A0heures par jour, réparties en périodes courtes (Buckley et coll., 2015).',
     'Une revue systématique de 2014 sur 14\u00A0études a trouvé des données suffisantes pour dire que les postes assis-debout réduisent la gêne au bas du dos, sans baisse de productivité, mais n’a pas trouvé de ratio assis-debout optimal (Karakolis et Callaghan, 2014).',
     'Une revue de 2015 de la recherche en santé au travail a associé la station debout prolongée à une gêne musculo-squelettique, à la fatigue et à des douleurs dans les jambes, et a cité les tapis de sol, les bas de contention et les chaussures qui maintiennent le pied parmi les interventions qui ont des données derrière elles (Waters et Dick, 2015).',
-    'Une cheville moins souple, c’est-à-dire un mollet raide, était le plus fort prédicteur de fasciite plantaire dans une étude cas-témoins de 2003, avec un risque multiplié par 23,3. Rester debout la majeure partie de la journée de travail le multipliait par 3,6 (Riddle et coll., 2003).',
+    'Une cheville moins souple, c’est-à-dire un mollet raide, était le plus fort prédicteur de fasciite plantaire dans une étude cas-témoins de 2003, avec une cote (odds) multipliée par 23,3. Rester debout la majeure partie de la journée de travail la multipliait par 3,6 (Riddle et coll., 2003).',
   ],
   sections: [
     {
@@ -188,7 +188,7 @@ export const STANDING_DESK_FR: Guide = {
     {
       h2: 'Une douleur aux pieds au bureau debout, est-ce une fasciite plantaire ou autre chose\u00A0?',
       paragraphs: [
-        'La douleur aux pieds au bureau debout est en général une gêne générale due à la station debout statique prolongée. Mais si la douleur est vive, concentrée près du talon et pire aux premiers pas après être resté assis un moment, ce schéma oriente vers une fasciite plantaire. Rester debout la majeure partie de la journée de travail multipliait par 3,6 le risque de fasciite plantaire dans une étude cas-témoins\u00A0: le bureau debout est donc un facteur plausible.',
+        'La douleur aux pieds au bureau debout est en général une gêne générale due à la station debout statique prolongée. Mais si la douleur est vive, concentrée près du talon et pire aux premiers pas après être resté assis un moment, ce schéma oriente vers une fasciite plantaire. Rester debout la majeure partie de la journée de travail multipliait par 3,6 la cote (odds) de fasciite plantaire dans une étude cas-témoins\u00A0: le bureau debout est donc un facteur plausible.',
         'Les exercices qui aident dans les deux cas se recoupent largement. Si votre douleur suit le schéma de la fasciite plantaire, [exercices et étirements pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) est le guide le plus complet. Si vos voûtes semblent affaissées, voir [exercices pour les pieds plats](/fr/exercices-pieds-plats/). Si vous n’êtes pas sûr, consultez un professionnel de santé avant de charger le pied avec des exercices.',
       ],
       cites: [CITE.riddle],
@@ -207,7 +207,7 @@ export const STANDING_DESK_FR: Guide = {
     },
     {
       q: 'Un bureau debout peut-il donner une fasciite plantaire\u00A0?',
-      a: 'Rester debout la majeure partie de la journée de travail multipliait par 3,6 le risque de fasciite plantaire dans une étude cas-témoins sur 50\u00A0cas et 100\u00A0témoins. Un bureau debout augmente vos heures debout chaque jour\u00A0: c’est donc un facteur plausible si votre mollet est déjà raide, ce qui était le plus fort facteur de risque indépendant, avec un risque multiplié par 23,3. Les étirements du mollet sont la façon la plus directe d’agir sur les deux facteurs de risque.',
+      a: 'Rester debout la majeure partie de la journée de travail multipliait par 3,6 la cote (odds) de fasciite plantaire dans une étude cas-témoins sur 50\u00A0cas et 100\u00A0témoins. Un bureau debout augmente vos heures debout chaque jour\u00A0: c’est donc un facteur plausible si votre mollet est déjà raide, ce qui était le plus fort facteur de risque indépendant, avec une cote (odds) multipliée par 23,3. Les étirements du mollet sont la façon la plus directe d’agir sur les deux facteurs de risque.',
       cites: [CITE.riddle],
     },
     {

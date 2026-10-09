@@ -12,7 +12,7 @@ export const EX_TIBIALIS_RAISES_FR: Guide = {
   page: 'exTibialisRaises',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Relevés des orteils (tibialis raises)\u00A0: renforcer le tibia',
+  title: 'Relevés des orteils (tibialis raises)\u00A0: technique',
   description:
     'Comment faire les relevés des orteils contre un mur (tibialis raises)\u00A0: technique, séries, muscles travaillés, preuves pour la périostite tibiale.',
   h1: 'Relevés des orteils\u00A0: comment les faire, ce qu’ils travaillent et ce que disent les données',
@@ -58,7 +58,7 @@ export const EX_TIBIALIS_RAISES_FR: Guide = {
       ],
     },
     {
-      h2: 'Les relevés des orteils aident-ils la périostite tibiale\u00A0?',
+      h2: 'Les relevés des orteils sont-ils utiles en cas de périostite tibiale\u00A0?',
       keyFact: 'Dans une étude cas-témoins de 2007, des sportifs atteints de périostite tibiale avaient une endurance aux montées sur pointes plus faible que des témoins appariés, ce qui suggère un déficit de force général du bas de la jambe, pas celui d’un muscle précis (Madeley et coll., 2007).',
       paragraphs: [
         'La périostite tibiale, appelée cliniquement syndrome de stress tibial médial (en anglais MTSS), donne une douleur le long du bord interne du tibia. Le tibial antérieur se situe à l’avant et vers l’extérieur du tibia, pas à l’endroit habituel de la douleur, donc le lien est indirect. Le raisonnement est qu’un tibial antérieur plus fort aide à absorber les chocs pendant la course et la marche, ce qui réduit la contrainte sur l’ensemble du tibia.',
@@ -87,7 +87,7 @@ export const EX_TIBIALIS_RAISES_FR: Guide = {
       paragraphs: [
         'Des pieds trop loin du mur. Si les talons glissent vers l’avant, vous perdez l’appui du mur et l’exercice devient un exercice d’équilibre au lieu d’un renforcement du tibia. Environ une longueur de pied par rapport au mur convient à la plupart des gens.',
         'Enchaîner les répétitions trop vite. Une montée et une descente lentes et contrôlées font plus travailler le muscle que des répétitions rapides. Deux secondes de montée, une seconde de maintien, deux secondes de descente est un bon tempo.',
-        'Confondre brûlure musculaire et douleur osseuse. Une sensation de brûlure le long des muscles à l’avant du tibia est normale pendant la série. Une douleur vive et localisée sur l’os du tibia lui-même ne l’est pas, et peut évoquer une réaction de stress osseux. Arrêtez et faites-la examiner.',
+        'Confondre brûlure musculaire et douleur osseuse. Une sensation de brûlure le long des muscles à l’avant du tibia est normale pendant la série. Une douleur vive et localisée sur l’os du tibia lui-même ne l’est pas, et peut évoquer une réaction de stress osseux. Arrêtez et faites-vous examiner.',
       ],
     },
   ],
@@ -99,7 +99,7 @@ export const EX_TIBIALIS_RAISES_FR: Guide = {
     {
       q: 'Les relevés des orteils peuvent-ils prévenir la périostite tibiale\u00A0?',
       cites: [CITE.madeley, CITE.winters],
-      a: 'Ils figurent souvent dans les programmes contre la périostite tibiale pour des raisons biomécaniques, pas sur la base de preuves issues d’essais. Une revue systématique de 2013 s’est intéressée au traitement du MTSS, pas à sa prévention, et aucun essai n’y montrait que le renforcement marchait, même si les preuves étaient de faible qualité. Les relevés des orteils seuls n’ont pas non plus été testés pour prévenir la périostite tibiale.',
+      a: 'Ils figurent souvent dans les programmes contre la périostite tibiale pour des raisons biomécaniques, pas sur la base de preuves issues d’essais. Une revue systématique de 2013 s’est intéressée au traitement du MTSS, pas à sa prévention, et aucun essai n’y montrait que le renforcement était efficace, même si les preuves étaient de faible qualité. Les relevés des orteils seuls n’ont pas non plus été testés pour prévenir la périostite tibiale.',
     },
     {
       q: 'À quelle fréquence faire les relevés des orteils\u00A0?',

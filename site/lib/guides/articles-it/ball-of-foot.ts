@@ -14,21 +14,21 @@ export const BALL_OF_FOOT_IT: Guide = {
   mainSource: CITE.amaha,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Metatarsalgia: dolore sotto l’avampiede, cause ed esercizi',
+  title: 'Metatarsalgia, dolore all’avampiede: cause, esercizi',
   description:
     'Dolore sotto l’avampiede: cause, metatarsalgia o neuroma di Morton, esercizi per le dita, polpaccio, cuscinetti metatarsali e quando farsi vedere.',
   h1: 'Dolore sotto l’avampiede: cosa lo causa e cosa aiuta',
   lede:
-    'Spingi per fare il passo ed eccolo: un dolore acuto proprio dietro le dita, come camminare su un sassolino. L’avampiede regge tutto il peso del corpo a ogni passo, e diversi problemi possono farlo male. Questa pagina spiega quali sono, cosa dicono le prove su esercizi e scarpe, e dove la ricerca ha ancora dei vuoti, detti con onestà.',
+    'Spingi per fare il passo ed eccolo: un dolore acuto proprio dietro le dita, come camminare su un sassolino. L’avampiede regge tutto il peso del corpo a ogni passo, e diversi problemi possono renderlo doloroso. Questa pagina spiega quali sono, cosa dicono le prove su esercizi e scarpe, e dove la ricerca, onestamente, ha ancora dei vuoti.',
   intro: [
-    'Il termine clinico che li raccoglie è metatarsalgia, cioè dolore intorno alle teste metatarsali, le nocche ossee dietro le dita. Ma metatarsalgia descrive dove fa male, non è una diagnosi. Sotto quel nome ci stanno diversi problemi, e non rispondono tutti alla stessa cosa.',
+    'Il termine clinico generale è metatarsalgia, cioè dolore intorno alle teste metatarsali, le nocche ossee dietro le dita. Ma metatarsalgia descrive dove fa male, non è una diagnosi. Sotto quel nome rientrano diversi problemi, e non rispondono tutti alla stessa cosa.',
   ],
   toc: true,
   takeaways: [
     'In uno studio su 41\u00A0persone con metatarsalgia primaria, un programma di esercizi per le dita di 8\u00A0settimane ha migliorato il dolore in media di 2,7\u00A0punti su una scala da 10. Lo studio non aveva un gruppo di controllo (Amaha e colleghi, 2020).',
     'Un gastrocnemio rigido, il muscolo più grande e superficiale del polpaccio, sposta il peso in avanti sull’avampiede. In una serie di 254\u00A0persone con fascite plantare, tra il 52 e il 60% aveva una contrattura isolata del gastrocnemio (Patel e DiGiovanni, 2011).',
     'I cuscinetti metatarsali messi subito dietro le teste metatarsali sono l’approccio conservativo più studiato per il dolore all’avampiede.',
-    'Il neuroma di Morton e la metatarsalgia si somigliano nei sintomi ma cambiano di posizione: il dolore del neuroma è di solito tra il terzo e il quarto dito, con formicolio, mentre la metatarsalgia è più diffusa.',
+    'Il neuroma di Morton e la metatarsalgia si somigliano nei sintomi ma differiscono per la posizione: il dolore del neuroma è di solito tra il terzo e il quarto dito, con formicolio, mentre la metatarsalgia è più diffusa.',
   ],
   sections: [
     {
@@ -180,7 +180,7 @@ export const BALL_OF_FOOT_IT: Guide = {
     {
       h2: 'Cosa dicono le prove, e cosa non dicono',
       paragraphs: [
-        'Le prove sugli esercizi per il dolore all’avampiede sono più scarse di quelle per la [fascite plantare](/it/esercizi-fascite-plantare/) o la tendinite d’Achille, dove esistono studi randomizzati. Per la metatarsalgia c’è un solo studio pre-post con 41\u00A0persone e nessun gruppo di controllo. Il ragionamento biomeccanico regge, e il rischio di esercizi delicati per le dita e allungamenti del polpaccio è basso, ma manca una prova diretta da uno studio controllato.',
+        'Le prove sugli esercizi per il dolore all’avampiede sono più scarse di quelle per la [fascite plantare](/it/esercizi-fascite-plantare/) o la tendinite d’Achille, dove esistono studi randomizzati. Per la metatarsalgia c’è un solo studio pre-post con 41\u00A0persone e nessun gruppo di controllo. Il ragionamento biomeccanico regge, e il rischio legato a esercizi delicati per le dita e allungamenti del polpaccio è basso, ma manca una prova diretta da uno studio controllato.',
         'Gli esercizi da soli potrebbero non bastare. Cuscinetti metatarsali, scarpe con la punta larga e meno tempo sui tacchi hanno un consenso clinico più ampio. Per il neuroma di Morton, cambiare scarpe e usare imbottiture spesso funziona meglio degli esercizi. Per una frattura da stress del metatarso, gli esercizi sono la strada sbagliata finché l’osso non è guarito. Se il dolore dura da più di qualche settimana, o si accompagna a intorpidimento o gonfiore, fallo controllare prima. [Dolore al tallone nella corsa](/heel-pain-runners/) (in inglese) spiega come gestire il carico per chi corre.',
       ],
       cites: [CITE.amaha, CITE.rathleff],
@@ -202,7 +202,7 @@ export const BALL_OF_FOOT_IT: Guide = {
       a: 'Le prove sono iniziali. Uno studio su 41\u00A0persone ha trovato che 8\u00A0settimane di esercizi per le dita miglioravano dolore e forza di presa, ma non aveva un gruppo di controllo e gli autori hanno chiesto studi randomizzati (Amaha 2020). L’idea ha senso: dita più forti dovrebbero prendersi più carico nella spinta. Ma manca una prova diretta da uno studio controllato.',
     },
     {
-      q: 'Perché un polpaccio rigido fa male all’avampiede?',
+      q: 'Perché un polpaccio rigido causa dolore all’avampiede?',
       cites: [CITE.patelGastrocnemius, CITE.riddle],
       a: 'Quando il gastrocnemio, il muscolo più grande e superficiale del polpaccio, è rigido, la caviglia non si piega abbastanza camminando. Il corpo compensa alzando il tallone prima, e questo sposta più peso sull’avampiede. Nelle persone con fascite plantare, tra il 52 e il 60% aveva una contrattura isolata del gastrocnemio (Patel e DiGiovanni, 2011). Lo stesso meccanismo contribuisce al sovraccarico dell’avampiede.',
     },
@@ -224,7 +224,7 @@ export const BALL_OF_FOOT_IT: Guide = {
       a: 'Non c’è una durata fissa. Una riacutizzazione leggera spesso si calma quando riduci l’attività che la scatena, passi a scarpe più larghe e ammortizzate e aggiungi un cuscinetto metatarsale. Le riacutizzazioni legate a una causa che continua, come tacchi alti, dita ad artiglio o un polpaccio rigido, possono durare mesi, perché nessuna durata unica va bene per ogni causa.',
     },
     {
-      q: 'Cosa succede se non curi la metatarsalgia?',
+      q: 'Cosa succede se trascuri la metatarsalgia?',
       a: 'Se la lasci stare, la metatarsalgia può cambiare il modo in cui cammini, perché viene naturale spostare il peso dal punto dolorante ad altre parti del piede, e questo può creare nuove zone di dolore. Una pressione continua sulle teste metatarsali può anche favorire calli o, più di rado, deformità delle dita come le dita a martello. Cambiare scarpe presto e usare cuscinetti metatarsali riduce questo rischio.',
     },
   ],

@@ -36,7 +36,7 @@ export const EX_TOWEL_SCRUNCH_DE: Guide = {
       h2: 'Wie geht das Handtuchgreifen?',
       paragraphs: [
         'Setz dich barfuß auf einen Stuhl, die Füße stehen flach auf dem Boden. Leg ein Handtuch flach unter einen Fuß. Die Ferse bleibt fest am Boden. Greif das Handtuch mit den Zehen und zieh es zu dir heran, sodass es sich unter dem Gewölbe zusammenschiebt. Dann spreiz die Zehen, um loszulassen, und wiederhole.',
-        'Jedes Heranziehen ist eine Wiederholung. Zieh gleichmäßig, nicht mit einem schnellen Ruck. Die Ferse hebt sich nicht. Wenn das Handtuch zu sehr verrutscht, nimm ein etwas schwereres Handtuch oder leg ein kleines Gewicht auf das hintere Ende.',
+        'Jedes Heranziehen ist eine Wiederholung. Zieh gleichmäßig, nicht mit einem schnellen Ruck. Die Ferse hebt sich nicht. Wenn das Handtuch zu sehr verrutscht, nimm ein etwas schwereres Handtuch oder leg ein kleines Gewicht auf das andere Ende.',
       ],
       exercises: [
         {
@@ -67,7 +67,7 @@ export const EX_TOWEL_SCRUNCH_DE: Guide = {
       h2: 'Handtuchgreifen oder kurzer Fuß: Was ist besser?',
       paragraphs: [
         'Jede Übung hat eine andere Stärke. Das Handtuchgreifen ist leichter zu lernen, weil das Handtuch deinen Zehen ein klares Ziel gibt. Viele tun sich anfangs schwer, die Anspannung beim kurzen Fuß zu spüren. Handtuchgreifen baut Greifkraft in den Zehen auf, und die zählt fürs Gleichgewicht und fürs Abdrücken beim Gehen.',
-        'Die Kurzer-Fuß-Übung isoliert die kurzen Gewölbemuskeln besser. Eine Übersichtsarbeit von McKeon und Kollegen von 2015 hielt fest, dass der Abductor hallucis bei der Kurzer-Fuß-Übung über viermal stärker aktiviert war als beim Handtuchgreifen, und empfahl den kurzen Fuß als wichtigste Übung für das Training der kurzen Fußmuskeln.',
+        'Die Kurzer-Fuß-Übung isoliert die kurzen Gewölbemuskeln besser. Eine Übersichtsarbeit von McKeon und Kollegen von 2015 hielt fest, dass der Abductor hallucis bei der Kurzer-Fuß-Übung über viermal stärker aktiviert war als beim Handtuchgreifen, und empfahl die Kurzer-Fuß-Übung als wichtigste Übung für das Training der kurzen Fußmuskeln.',
         'In der Praxis holen Programme, die beides nutzen, das Beste aus beiden heraus. Walkito setzt das Handtuchgreifen als frühe Übung ein, die die Idee der Arbeit mit den Fußmuskeln einführt. Die [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/) kommt danach und bringt gezielteres Training für das Gewölbe. Keine ersetzt die andere.',
       ],
       cites: [CITE.mcKeon, CITE.jung],
@@ -77,7 +77,7 @@ export const EX_TOWEL_SCRUNCH_DE: Guide = {
       keyFact: 'In einer Studie von 2020 mit 41\u00A0Personen (56\u00A0Füße) mit Metatarsalgie waren nach einem achtwöchigen Zehenprogramm mit Handtuchgreifen und Murmelaufheben die Schmerzen geringer und die Greifkraft der Zehen besser, ohne Kontrollgruppe (Amaha und Kollegen, 2020).',
       paragraphs: [
         'Handtuchgreifen passt zu Menschen, die neu mit Fußübungen anfangen und einen einfachen Einstieg wollen. Es passt auch zu Menschen mit schwacher Greifkraft in den Zehen, weil die Übung direkt trainiert, die Zehen unter Last zu beugen.',
-        'Eine Studie von Amaha und Kollegen von 2020 begleitete 41\u00A0Personen (56\u00A0Füße) mit primärer Metatarsalgie, also Schmerzen unter dem Fußballen, durch ein achtwöchiges Zehenprogramm mit Handtuchgreifen und Murmelaufheben. Greifkraft der Zehen und Schmerzwerte verbesserten sich beide von vor bis nach dem Programm. Es gab keine Kontrollgruppe, deshalb könnte ein Teil der Veränderung auf die Zeit oder die Aufmerksamkeit zurückgehen statt auf die Übungen selbst. Greifkraft in den Zehen kann auch für ältere Menschen mit Sturzrisiko wichtig sein, weil die Zehen beim Stehen und Gehen beim Gleichgewicht helfen.',
+        'Eine Studie von Amaha und Kollegen von 2020 begleitete 41\u00A0Personen (56\u00A0Füße) mit primärer Metatarsalgie, also Schmerzen unter dem Fußballen, durch ein achtwöchiges Zehenprogramm mit Handtuchgreifen und Murmelaufheben. Greifkraft der Zehen und Schmerzwerte verbesserten sich beide zwischen Beginn und Ende des Programms. Es gab keine Kontrollgruppe, deshalb könnte ein Teil der Veränderung auf die Zeit oder die Aufmerksamkeit zurückgehen statt auf die Übungen selbst. Greifkraft in den Zehen kann auch für ältere Menschen mit Sturzrisiko wichtig sein, weil die Zehen beim Stehen und Gehen beim Gleichgewicht helfen.',
         'Wenn dein Hauptziel ist, ein flaches Gewölbe anzuheben, sind die [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/) und das umfassendere [Übungsprogramm bei Plattfüßen](/de/plattfuss-uebungen/) gezielter. Wenn dein Hauptziel Greifkraft in den Zehen und die allgemeine Aktivierung der Fußmuskeln ist, passt das Handtuchgreifen gut.',
       ],
       cites: [CITE.amaha],
@@ -95,7 +95,7 @@ export const EX_TOWEL_SCRUNCH_DE: Guide = {
   faq: [
     {
       q: 'Wie oft sollte man das Handtuchgreifen machen?',
-      a: 'Walkito beginnt mit 3\u00A0Sätzen à 8\u00A0Wiederholungen pro Fuß, und du hältst jedes Zusammenziehen 5\u00A0Sekunden. Das reicht, um die kleinen Fußmuskeln zu ermüden, ohne sie zu überlasten. Mach es schwerer, indem du ein kleines Gewicht auf das hintere Ende des Handtuchs legst, statt mehr Wiederholungen zu machen.',
+      a: 'Walkito beginnt mit 3\u00A0Sätzen à 8\u00A0Wiederholungen pro Fuß, und du hältst jedes Zusammenziehen 5\u00A0Sekunden. Das reicht, um die kleinen Fußmuskeln zu ermüden, ohne sie zu überlasten. Mach es schwerer, indem du ein kleines Gewicht auf das andere Ende des Handtuchs legst, statt mehr Wiederholungen zu machen.',
     },
     {
       q: 'Hilft Handtuchgreifen bei Plantarfasziitis?',

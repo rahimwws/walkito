@@ -14,7 +14,7 @@ export const STANDING_DESK_IT: Guide = {
   mainSource: CITE.buckley,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Scrivania in piedi e dolore ai piedi: perché e cosa aiuta',
+  title: 'Scrivania in piedi e dolore ai piedi: cosa aiuta',
   description:
     'Perché la scrivania in piedi fa male ai piedi, quanto stare in piedi prima di sederti, tappetini antifatica ed esercizi da fare alla scrivania.',
   h1: 'Scrivania in piedi e dolore ai piedi: perché succede e cosa aiuta',
@@ -158,7 +158,7 @@ export const STANDING_DESK_IT: Guide = {
         rows: [
           ['Allungamento del polpaccio (ginocchio teso)', '2 x 30\u00A0secondi, ogni gamba', 'Alla scrivania o al muro', 'Un allungamento nella parte alta del polpaccio'],
           ['Allungamento del soleo (ginocchio piegato)', '2 x 30\u00A0secondi, ogni gamba', 'Alla scrivania o al muro', 'Un allungamento in basso nel polpaccio, vicino al tallone'],
-          ['Sollevamenti sulle punte da seduto', '3 x 15, entrambi i piedi', 'Alla scrivania, seduto', 'I polpacci che lavorano senza sforzo'],
+          ['Sollevamenti sulle punte da seduto', '3 x 15, entrambi i piedi', 'Alla scrivania, seduto', 'I polpacci che lavorano in modo leggero'],
           ['Apertura delle dita', '3 x 10 (tenuta di 5\u00A0secondi)', 'Alla scrivania, seduto, senza scarpe', 'Le dita che si aprono, nessun dolore'],
           ['Piede corto', '3 x 10 (tenuta di 5\u00A0secondi), ogni piede', 'Alla scrivania, seduto', 'L’arco che si solleva, dita rilassate'],
           ['Sollevamenti sulle punte in piedi', '3 x 10, entrambi i piedi', 'Alla scrivania, in piedi', 'I polpacci che lavorano, non un dolore acuto'],
@@ -178,7 +178,7 @@ export const STANDING_DESK_IT: Guide = {
     {
       h2: 'Come passare alla scrivania in piedi senza male ai piedi?',
       paragraphs: [
-        'Inizia con meno tempo in piedi di quanto pensi ti serva. La dichiarazione di esperti del 2015 consiglia di arrivare a 2\u00A0ore al giorno di stazione eretta e attività leggera, non di partire da lì. Se sei nuovo allo stare in piedi, inizia con 15-20\u00A0minuti in piedi ogni ora e aumenta piano nel giro di qualche settimana.',
+        'Inizia con meno tempo in piedi di quanto pensi ti serva. La dichiarazione di esperti del 2015 consiglia di arrivare a 2\u00A0ore al giorno di stazione eretta e attività leggera, non di partire da lì. Se non sei abituato a stare in piedi, inizia con 15-20\u00A0minuti in piedi ogni ora e aumenta piano nel giro di qualche settimana.',
         'Una prima settimana pratica: 15\u00A0minuti in piedi, 45\u00A0minuti seduto, e ripeti durante la giornata. Nella seconda settimana passa a 20\u00A0minuti in piedi e 40 seduto. Verso la terza o quarta settimana prova 30 e 30. Ascolta i piedi e la parte bassa della schiena. Se il fastidio cresce, siediti prima invece di stringere i denti.',
         'Aggiungi un tappetino da subito se ce l’hai. Metti scarpe con un po’ di ammortizzazione, anche a casa. Fai gli allungamenti del polpaccio della tabella sopra almeno una volta al giorno. Se hai già male ai piedi a stare in piedi e vuoi la guida più ampia, [perché mi fanno male i piedi dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega dove si sovrappongono il dolore da scrivania in piedi e problemi come la fascite plantare. Per la versione dedicata agli infermieri, vedi [dolore ai piedi per infermieri](/it/dolore-piedi-infermieri/).',
       ],

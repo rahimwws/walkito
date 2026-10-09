@@ -49,7 +49,7 @@ export const SEVERS_IT: Guide = {
       paragraphs: [
         'La malattia di Sever colpisce i bambini tra circa 8 e 15\u00A0anni. L’apofisi calcaneare compare intorno ai 7-9\u00A0anni e di solito si salda tra i 15 e i 17. I maschi sono colpiti da due a tre volte più spesso delle femmine, con un esordio tipico intorno ai 12\u00A0anni nei maschi e agli 11 nelle femmine. Circa il 60% dei casi interessa entrambi i talloni.',
         'Rappresenta dal 2 al 16% delle visite dei bambini negli ambulatori di medicina dello sport. Gli sport più associati sono calcio, basket, atletica su pista, corsa campestre, ginnastica e tennis. Lo schema è prevedibile: tende a comparire all’inizio di una stagione sportiva o durante uno scatto di crescita, quando il carico sul tallone aumenta all’improvviso.',
-        'I fattori di rischio comprendono molta attività di corsa e salti, polpacci rigidi, una caviglia poco flessibile, un BMI alto, superfici di gioco dure e scarpe o scarpe con i tacchetti poco ammortizzate.',
+        'I fattori di rischio comprendono molta attività di corsa e salti, polpacci rigidi, una caviglia poco flessibile, un IMC alto, superfici di gioco dure e scarpe normali o con i tacchetti poco ammortizzate.',
       ],
       cites: [CITE.nietoGilSever, CITE.micheliSever, CITE.wiegerinck, CITE.jamesSever],
     },

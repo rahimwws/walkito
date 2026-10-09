@@ -7,7 +7,7 @@ export const BUNIONS_PT: Guide = {
   mainSource: CITE.kimHV,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Exercícios para joanete: o que a evidência realmente apoia',
+  title: 'Exercícios para joanete: o que a evidência apoia',
   description:
     'Exercícios para joanete reduzem a dor ou freiam o hálux valgo? Uma análise honesta de abrir os dedos, treino do abdutor do hálux e separadores de dedos.',
   h1: 'Exercícios para joanete: o que eles conseguem e o que não conseguem fazer',
@@ -16,7 +16,7 @@ export const BUNIONS_PT: Guide = {
   toc: true,
   takeaways: [
     'Em um ensaio com 24\u00A0pessoas com hálux valgo leve a moderado, 8\u00A0semanas de exercício de abrir os dedos junto com uma órtese reduziram o ângulo do hálux valgo em média 3,4\u00A0graus e aumentaram o tamanho do músculo abdutor do hálux. O grupo só com órtese não mudou (Kim e colegas, 2015).',
-    'Um ensaio com 56\u00A0mulheres com hálux valgo moderado mostrou que 3\u00A0meses de mobilização do pé e exercício, junto com um separador de dedos, melhoraram a dor e a função em 1\u00A0ano, em comparação com um grupo controle que não recebeu nenhuma intervenção (Abdalbary, 2018).',
+    'Um ensaio com 56\u00A0mulheres com hálux valgo moderado mostrou que 3\u00A0meses de mobilização do pé e exercício, junto com um separador de dedos, melhoraram a dor e a função após 1\u00A0ano, em comparação com um grupo controle que não recebeu nenhuma intervenção (Abdalbary, 2018).',
     'Separadores de dedos podem aliviar a pressão entre os dedos e talvez reduzir a dor a curto prazo, mas a evidência de que eles mudam o ângulo do hálux valgo a longo prazo é fraca.',
     'O exercício não substitui a cirurgia em joanetes moderados a graves que causam dor todo dia. Ele pode ajudar com sintomas leves e com o suporte muscular em volta da articulação.',
   ],
@@ -26,7 +26,7 @@ export const BUNIONS_PT: Guide = {
       figure: { id: 'bunion', caption: 'O joanete é um calombo ósseo na articulação do dedão, com o dedão inclinado em direção aos outros dedos.', alt: 'Vista de cima dos ossos do pé com o dedão inclinado em direção ao segundo dedo e um calombo vermelho no lado de dentro da articulação do dedão.' },
       paragraphs: [
         'Não. O joanete, chamado clinicamente de hálux valgo, é um desvio ósseo na primeira articulação metatarsofalângica (a articulação do dedão). O primeiro metatarso se desloca para dentro e o dedão inclina para fora. Depois que o osso se deslocou e a cápsula da articulação se adaptou, o exercício não consegue empurrar de volta.',
-        'O que o exercício pode fazer é fortalecer os músculos em volta da articulação. O abdutor do hálux corre ao longo da parte de dentro do arco e puxa o dedão para o alinhamento. Em pessoas com hálux valgo, esse músculo é mais fraco e menor do que em pessoas sem o problema. Fortalecê-lo não desfaz a mudança estrutural, mas pode melhorar o controle, reduzir os sintomas e talvez frear um desvio maior nos casos leves.',
+        'O que o exercício pode fazer é fortalecer os músculos em volta da articulação. O abdutor do hálux passa ao longo da parte de dentro do arco e puxa o dedão para o alinhamento. Em pessoas com hálux valgo, esse músculo é mais fraco e menor do que em pessoas sem o problema. Fortalecê-lo não desfaz a mudança estrutural, mas pode melhorar o controle, reduzir os sintomas e talvez frear um desvio maior nos casos leves.',
         'Um comentário clínico de 2016 no Journal of Orthopaedic and Sports Physical Therapy propôs uma abordagem de fortalecimento muscular baseada na biomecânica para o hálux valgo inicial, centrada nos músculos pequenos do pé. O autor argumentou que a deformidade avança em parte por causa de um desequilíbrio muscular, então recuperar a atividade muscular pode ter um efeito protetor. É um argumento plausível, mas a evidência direta a longo prazo ainda é limitada.',
       ],
     },
@@ -36,7 +36,7 @@ export const BUNIONS_PT: Guide = {
       paragraphs: [
         'A melhor evidência vem de alguns poucos ensaios pequenos. Nenhum é grande, e nenhum acompanhou os participantes por mais de um ano.',
         'Kim e colegas (2015) dividiram por sorteio 24\u00A0pessoas com hálux valgo leve a moderado entre uma órtese sozinha ou uma órtese mais exercícios de abrir os dedos por 8\u00A0semanas. O grupo do exercício reduziu o ângulo do hálux valgo em média 3,4\u00A0graus e aumentou a área de secção transversal do músculo abdutor do hálux. O grupo só com órtese não teve mudança significativa em nenhuma das duas medidas. O estudo foi pequeno e incluiu principalmente adultos jovens com joanetes leves.',
-        'Abdalbary (2018) dividiu por sorteio 56\u00A0mulheres com hálux valgo moderado entre 3\u00A0meses de mobilização do pé, exercícios de fortalecimento e um separador de dedos, ou nenhuma intervenção (lista de espera). Aos 3\u00A0meses e de novo em 1\u00A0ano, o grupo do exercício tinha dor, função e medidas do ângulo no raio-X significativamente melhores do que o grupo que não recebeu nada. O ensaio se destaca pelo acompanhamento mais longo, mas como o separador de dedos veio junto com a mobilização e o exercício, o estudo não consegue dizer quanto o separador contribuiu sozinho.',
+        'Abdalbary (2018) dividiu por sorteio 56\u00A0mulheres com hálux valgo moderado entre 3\u00A0meses de mobilização do pé, exercícios de fortalecimento e um separador de dedos, ou nenhuma intervenção (lista de espera). Aos 3\u00A0meses e de novo após 1\u00A0ano, o grupo do exercício tinha dor, função e medidas do ângulo no raio-X significativamente melhores do que o grupo que não recebeu nada. O ensaio se destaca pelo acompanhamento mais longo, mas como o separador de dedos veio junto com a mobilização e o exercício, o estudo não consegue dizer quanto o separador contribuiu sozinho.',
         'Külünkoğlu e colegas (2021) dividiram por sorteio 60\u00A0mulheres (120\u00A0pés) com hálux valgo entre um mês de tala noturna, exercício ou estimulação elétrica. Os três grupos melhoraram na dor e na função, mas a tala foi mais eficaz que o exercício e a eletroterapia, e o exercício superou a eletroterapia. O estudo não teve um grupo controle sem tratamento, então é difícil saber quanto cada uma das três abordagens acrescentou além da variação natural.',
       ],
       sourceNote:
@@ -77,7 +77,7 @@ export const BUNIONS_PT: Guide = {
           name: 'Elevação do dedão',
           dose: 'O Walkito começa com 3\u00A0séries de 8, segurando 5\u00A0segundos, cada pé',
           how: 'Sente-se ou fique em pé com o pé apoiado no chão. Levante só o dedão, mantendo os outros quatro dedos no chão. Desça devagar. Isso isola o extensor do hálux e ativa o abdutor do hálux, treinando o dedão a se mover sozinho.',
-          feel: 'Uma sensação de puxão ao longo de cima do dedão e da parte de dentro do arco',
+          feel: 'Uma sensação de puxão ao longo da parte de cima do dedão e da parte de dentro do arco',
           stop: 'Dor na articulação do joanete',
           evidence: {
             level: 'early',

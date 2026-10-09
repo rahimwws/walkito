@@ -18,7 +18,7 @@ export const ARCH_PAIN_FR: Guide = {
   updated: '2026-10-08',
   title: 'Douleur à la voûte plantaire\u00A0: causes et exercices',
   description:
-    'Mal à la voûte plantaire en marchant\u00A0: fasciite plantaire, pieds plats, tendon tibial postérieur, pied creux ou nerf. Exercices et quand consulter.',
+    'Mal à la voûte plantaire en marchant\u00A0: fasciite plantaire, pieds plats, tendon tibial postérieur, pied creux ou cause nerveuse. Exercices, quand consulter.',
   h1: 'Douleur à la voûte plantaire\u00A0: les causes et que faire',
   lede:
     'Une douleur à la voûte plantaire vient en général d’un petit nombre de problèmes\u00A0: la fasciite plantaire, les pieds plats ou la voûte affaissée, la dysfonction du tendon tibial postérieur, un pied creux qui amortit mal les chocs, la surcharge, ou une irritation nerveuse comme le syndrome du canal tarsien. La cause change ce qu’il faut faire. Cette page présente les plus fréquentes, renvoie aux guides d’exercices complets quand ils existent, et détaille les exercices qui agissent directement sur la voûte.',
@@ -26,7 +26,7 @@ export const ARCH_PAIN_FR: Guide = {
     'La fasciite plantaire est la cause unique la plus fréquente de douleur à la voûte et au talon. La recommandation de 2023 sur la douleur au talon note les étirements A et le renforcement B (Koc et coll., 2023).',
     'La dysfonction du tendon tibial postérieur, un affaiblissement du tendon qui soutient la voûte, est la cause la plus fréquente du pied plat acquis de l’adulte (Ross et coll., 2018).',
     'Les pieds plats comme le pied creux modifient la façon dont la force traverse la voûte à la marche, mais les schémas de douleur et les exercices diffèrent.',
-    'Une dorsiflexion de cheville réduite, c’est-à-dire un mollet raide, était le facteur de risque indépendant le plus fort de la fasciite plantaire dans une étude cas-témoins de 50\u00A0cas et 100\u00A0témoins (Riddle et coll., 2003).',
+    'Une flexion dorsale de cheville réduite, c’est-à-dire un mollet raide, était le facteur de risque indépendant le plus fort de la fasciite plantaire dans une étude cas-témoins de 50\u00A0cas et 100\u00A0témoins (Riddle et coll., 2003).',
     'Une douleur à la voûte accompagnée d’engourdissements, de fourmillements, de brûlures ou d’une faiblesse demande un professionnel de santé pour écarter une compression nerveuse ou une cause neurologique avant l’exercice.',
   ],
   toc: true,
@@ -51,18 +51,18 @@ export const ARCH_PAIN_FR: Guide = {
       ],
       table: {
         caption: 'Douleur à la voûte plantaire\u00A0: schémas selon la cause',
-        head: ['Cause', 'Où ça fait mal', 'Quand c’est le pire', 'Indice clé'],
+        head: ['Cause', 'Où ça fait mal', 'Quand c’est pire', 'Indice clé'],
         rows: [
           ['Fasciite plantaire', 'Sous le talon, avec extension dans la voûte', 'Premiers pas après le repos, surtout le matin', 'La douleur vive se calme après quelques minutes de marche'],
           ['Pieds plats / voûte affaissée', 'Le long de l’intérieur de la voûte, parfois à l’intérieur de la cheville', 'Après une longue station debout ou une longue marche', 'La voûte s’affaisse visiblement debout\u00A0; la douleur se calme sans charge'],
-          ['Dysfonction du tendon tibial postérieur', 'Intérieur de la cheville et voûte', 'Pendant et après l’activité', 'La montée sur pointe sur une jambe est faible ou douloureuse du côté atteint'],
+          ['Dysfonction du tendon tibial postérieur', 'Intérieur de la cheville et voûte', 'Pendant et après l’activité', 'La montée sur pointes sur une jambe est faible ou douloureuse du côté atteint'],
           ['Pied creux', 'Sous le médio-pied ou le long du bord externe', 'À la marche ou en courant, surtout sur sol dur', 'La voûte reste haute même debout\u00A0; amorti médiocre'],
           ['Surcharge', 'Douleur diffuse de la voûte', 'Après une hausse brusque de la charge', 'Pas de schéma de douleur le matin\u00A0; s’améliore au repos'],
           ['Nerf (canal tarsien)', 'Le long de la voûte, avec fourmillements ou brûlures', 'Variable, parfois au repos', 'Engourdissements, fourmillements ou brûlures que la fasciite plantaire ne donne pas'],
         ],
       },
       after: [
-        'Si votre douleur à la voûte suit le schéma de la douleur du matin et se situe près du talon, commencez par la page [fasciite plantaire](/fr/fasciite-plantaire/). Si la voûte s’affaisse quand vous êtes debout, voir [exercices pour les pieds plats](/fr/exercices-pieds-plats/). Si la douleur s’accompagne d’engourdissements ou de brûlures, ou si une montée sur pointe sur une jambe est faible ou impossible d’un côté, consultez un professionnel de santé avant de commencer les exercices.',
+        'Si votre douleur à la voûte suit le schéma de la douleur du matin et se situe près du talon, commencez par la page [fasciite plantaire](/fr/fasciite-plantaire/). Si la voûte s’affaisse quand vous êtes debout, voir [exercices pour les pieds plats](/fr/exercices-pieds-plats/). Si la douleur s’accompagne d’engourdissements ou de brûlures, ou si une montée sur pointes sur une jambe est faible ou impossible d’un côté, consultez un professionnel de santé avant de commencer les exercices.',
       ],
       cites: [CITE.guideline, CITE.posteriorTibialReview],
     },
@@ -154,7 +154,7 @@ export const ARCH_PAIN_FR: Guide = {
       paragraphs: [
         'La plupart des douleurs à la voûte répondent aux étirements, à l’ajustement de la charge et au temps. Mais certains schémas orientent vers des problèmes qui demandent un professionnel de santé avant l’exercice.',
         'Une douleur avec engourdissements, fourmillements ou brûlures peut venir d’un syndrome du canal tarsien, où le nerf tibial postérieur est comprimé derrière la malléole interne. Cela demande un diagnostic clinique, pas seulement de l’exercice.',
-        'Une douleur à la voûte accompagnée d’un aplatissement progressif du pied, surtout d’un seul côté, peut signaler une dysfonction du tendon tibial postérieur à un stade plus avancé. Le test de montée sur pointe sur une jambe est une vérification simple\u00A0: si vous ne pouvez pas monter complètement sur la pointe d’un pied, ou si cela fait nettement plus mal d’un côté, un professionnel de santé doit examiner le tendon avant que vous ne le chargiez davantage.',
+        'Une douleur à la voûte accompagnée d’un aplatissement progressif du pied, surtout d’un seul côté, peut signaler une dysfonction du tendon tibial postérieur à un stade plus avancé. Le test de montée sur pointes sur une jambe est une vérification simple\u00A0: si vous ne pouvez pas monter complètement sur la pointe d’un pied, ou si cela fait nettement plus mal d’un côté, un professionnel de santé doit examiner le tendon avant que vous ne le chargiez davantage.',
         'Une douleur à un point précis qui s’aggrave régulièrement avec l’activité et ne se calme pas avec un repos normal peut être une fracture de fatigue d’un des petits os du médio-pied. Cela demande de l’imagerie, pas des étirements.',
         'Une douleur à la voûte chez un enfant de 8 à 15\u00A0ans peut être une [apophysite calcanéenne (maladie de Sever)](/fr/maladie-de-sever/), qui touche le cartilage de croissance plutôt que le fascia. Cette page explique ce qui aide chez l’enfant. Walkito est conçu pour les adultes.',
       ],
@@ -201,11 +201,11 @@ export const ARCH_PAIN_FR: Guide = {
     },
     {
       q: 'Quand consulter un médecin pour une douleur à la voûte plantaire\u00A0?',
-      a: 'Consultez un professionnel de santé si la douleur s’accompagne d’engourdissements, de fourmillements ou de brûlures, qui peuvent évoquer une compression nerveuse. Consultez aussi si la voûte s’aplatit d’un côté, si une montée sur pointe sur une jambe est faible ou impossible d’un côté, si la douleur se situe à un point précis et s’aggrave, ou si elle ne s’est pas améliorée après plusieurs semaines d’étirements et d’ajustement de la charge.',
+      a: 'Consultez un professionnel de santé si la douleur s’accompagne d’engourdissements, de fourmillements ou de brûlures, qui peuvent évoquer une compression nerveuse. Consultez aussi si la voûte s’aplatit d’un côté, si une montée sur pointes sur une jambe est faible ou impossible d’un côté, si la douleur se situe à un point précis et s’aggrave, ou si elle ne s’est pas améliorée après plusieurs semaines d’étirements et d’ajustement de la charge.',
       cites: [CITE.posteriorTibialReview],
     },
     {
-      q: 'Les semelles orthopédiques aident-elles la douleur à la voûte plantaire\u00A0?',
+      q: 'Les semelles orthopédiques aident-elles en cas de douleur à la voûte plantaire\u00A0?',
       cites: [CITE.guideline],
       a: 'La recommandation de 2023 sur la douleur au talon donne une note B contre l’utilisation des semelles orthopédiques seules pour la fasciite plantaire. Associées aux étirements et au renforcement, elles peuvent aider à gérer les symptômes pendant que le pied gagne en capacité. Pour le pied creux, les orthèses amortissantes ou sur mesure ont de meilleures preuves, dont un essai randomisé montrant une amélioration par rapport à une fausse semelle à trois mois.',
     },
@@ -231,7 +231,7 @@ export const ARCH_PAIN_FR: Guide = {
     bullets: [
       'la douleur s’accompagne d’engourdissements, de fourmillements ou de brûlures, qui peuvent évoquer une compression nerveuse',
       'la voûte s’aplatit visiblement d’un côté, ce qui peut signaler une dysfonction évolutive du tendon tibial postérieur',
-      'vous ne pouvez pas faire une montée sur pointe sur une jambe du côté atteint, ou elle est nettement plus faible que de l’autre côté',
+      'vous ne pouvez pas faire une montée sur pointes sur une jambe du côté atteint, ou elle est nettement plus faible que de l’autre côté',
       'la douleur se situe à un point précis et s’aggrave avec l’activité, ce qui peut être une fracture de fatigue',
       'la douleur a suivi une blessure ou une chute',
       'il y a un gonflement, une rougeur ou une chaleur autour du pied ou de la cheville',

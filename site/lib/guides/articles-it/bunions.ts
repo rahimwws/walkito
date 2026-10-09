@@ -16,7 +16,7 @@ export const BUNIONS_IT: Guide = {
   mainSource: CITE.kimHV,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Alluce valgo: esercizi, cosa dicono davvero gli studi',
+  title: 'Esercizi per l’alluce valgo: cosa dicono gli studi',
   description:
     'Gli esercizi per l’alluce valgo riducono il dolore o frenano la deviazione? Uno sguardo onesto ad apertura delle dita, abduttore dell’alluce e separatori.',
   h1: 'Esercizi per l’alluce valgo: cosa possono fare e cosa no',
@@ -35,7 +35,7 @@ export const BUNIONS_IT: Guide = {
       figure: { id: 'bunion', caption: 'L’alluce valgo è una sporgenza ossea all’articolazione dell’alluce, con l’alluce che pende verso le altre dita.', alt: 'Vista dall’alto delle ossa del piede, con l’alluce inclinato verso il secondo dito e una sporgenza rossa sul lato interno dell’articolazione dell’alluce.' },
       paragraphs: [
         'No. L’alluce valgo, in termini clinici hallux valgus (in modo colloquiale anche «cipolla»), è una deviazione ossea della prima articolazione metatarso-falangea (l’articolazione dell’alluce). Il primo metatarso scivola verso l’interno e l’alluce si inclina verso l’esterno. Una volta che l’osso si è spostato e la capsula articolare si è adattata, l’esercizio non può rimetterlo a posto.',
-        'Quello che l’esercizio può fare è rinforzare i muscoli intorno all’articolazione. L’abduttore dell’alluce corre lungo l’interno dell’arco e tira l’alluce in allineamento. In chi ha l’alluce valgo questo muscolo è più debole e più piccolo che in chi non ce l’ha. Rinforzarlo non annulla il cambiamento strutturale, ma può migliorare il controllo, ridurre i sintomi e forse rallentare un’ulteriore deviazione nei casi lievi.',
+        'Quello che l’esercizio può fare è rinforzare i muscoli intorno all’articolazione. L’abduttore dell’alluce corre lungo l’interno dell’arco e riporta l’alluce in asse. In chi ha l’alluce valgo questo muscolo è più debole e più piccolo che in chi non ce l’ha. Rinforzarlo non annulla il cambiamento strutturale, ma può migliorare il controllo, ridurre i sintomi e forse rallentare un’ulteriore deviazione nei casi lievi.',
         'Un commento clinico del 2016 sul Journal of Orthopaedic and Sports Physical Therapy ha proposto per l’alluce valgo iniziale un approccio di rinforzo muscolare basato sulla biomeccanica, centrato sui muscoli intrinseci del piede. L’autore sosteneva che la deformità progredisce in parte per uno squilibrio muscolare, quindi ripristinare l’attività dei muscoli potrebbe avere un effetto protettivo. È un ragionamento plausibile, ma le prove dirette a lungo termine sono ancora limitate.',
       ],
     },
@@ -58,7 +58,7 @@ export const BUNIONS_IT: Guide = {
       paragraphs: [
         'I separatori per dita, chiamati anche distanziatori, stanno tra l’alluce e il secondo dito. Riducono lo sfregamento, alleviano la pressione sull’alluce valgo e, mentre li porti, spingono delicatamente l’alluce lontano dal secondo dito.',
         'Tehraninasr e colleghi (2008) hanno studiato 30\u00A0donne con alluce valgo doloroso per 3\u00A0mesi. Un gruppo portava una soletta con un separatore per dita integrato, e un gruppo a parte portava invece un tutore notturno. Il dolore è sceso in modo significativo nel gruppo con il separatore ma non nel gruppo con il tutore notturno. In nessuno dei due gruppi l’angolo dell’alluce valgo è cambiato in modo statisticamente significativo. Lo studio di Abdalbary abbinava un separatore per dita a terapia manuale ed esercizi, quindi non isola cosa abbia fatto il separatore da solo.',
-        'Il quadro tra gli studi è coerente: i separatori per dita possono aiutare con il comfort e i sintomi nel breve periodo, ma le prove che cambino l’angolo dell’osso nel tempo sono deboli. Non fanno male e costano poco, per questo molti clinici li consigliano insieme a esercizi e cambio di scarpe.',
+        'Il quadro tra gli studi è coerente: i separatori per dita possono aiutare con il comfort e i sintomi nel breve periodo, ma le prove che cambino l’angolo dell’osso nel tempo sono deboli. Non sono dannosi e costano poco, per questo molti clinici li consigliano insieme a esercizi e cambio di scarpe.',
       ],
       cites: [CITE.abdalbary, CITE.tehraninasr],
     },
@@ -157,7 +157,7 @@ export const BUNIONS_IT: Guide = {
     },
     {
       q: 'Vale la pena provare i separatori per dita?',
-      a: 'I separatori per dita possono ridurre lo sfregamento e il fastidio nel breve periodo. Nello studio di Tehraninasr del 2008, una soletta con separatore ha ridotto in modo significativo il dolore in un gruppo di 30\u00A0donne, mentre un gruppo a parte con tutore notturno non è migliorato. In nessuno dei due gruppi l’angolo dell’alluce valgo è cambiato in modo significativo. Costano poco e non fanno male, quindi è ragionevole provarli insieme a esercizi e scarpe più larghe.',
+      a: 'I separatori per dita possono ridurre lo sfregamento e il fastidio nel breve periodo. Nello studio di Tehraninasr del 2008, una soletta con separatore ha ridotto in modo significativo il dolore in un gruppo di 30\u00A0donne, mentre un gruppo a parte con tutore notturno non è migliorato. In nessuno dei due gruppi l’angolo dell’alluce valgo è cambiato in modo significativo. Costano poco e non sono dannosi, quindi è ragionevole provarli insieme a esercizi e scarpe più larghe.',
       cites: [CITE.tehraninasr],
     },
     {
@@ -166,7 +166,7 @@ export const BUNIONS_IT: Guide = {
     },
     {
       q: 'Si può correre con l’alluce valgo?',
-      a: 'Molte persone corrono con l’alluce valgo senza problemi. Una scarpa da corsa con la punta larga e un separatore per dita durante le corse possono aiutare. Se l’alluce valgo fa male durante o dopo la corsa, vale la pena ridurre e farti visitare prima di stringere i denti.',
+      a: 'Molte persone corrono con l’alluce valgo senza problemi. Una scarpa da corsa con la punta larga e un separatore per dita durante le corse possono aiutare. Se l’alluce valgo fa male durante o dopo la corsa, vale la pena ridurre la corsa e farti vedere da un professionista sanitario prima di stringere i denti.',
     },
     {
       q: 'Da cosa viene l’alluce valgo?',
@@ -195,7 +195,7 @@ export const BUNIONS_IT: Guide = {
   program: {
     h2: 'Farlo come un piano',
     text:
-      'Walkito include l’[apertura delle dita](/it/esercizi/apertura-dita-piede/) e il [sollevamento dell’alluce](/it/esercizi/sollevamento-alluce/) nel suo percorso di rinforzo dei muscoli intrinseci del piede. L’app è pensata per fascite plantare e piede piatto, non specificamente per l’alluce valgo, ma l’esercizio di apertura delle dita è lo stesso movimento testato nello studio di Kim del 2015 sull’alluce valgo. Se vuoi un modo strutturato per prendere l’abitudine, le sessioni quotidiane da 3 o 5\u00A0minuti rendono gli esercizi costanti.',
+      'Walkito include l’[apertura delle dita](/it/esercizi/apertura-dita-piede/) e il [sollevamento dell’alluce](/it/esercizi/sollevamento-alluce/) nel suo percorso di rinforzo dei muscoli intrinseci del piede. L’app è pensata per fascite plantare e piede piatto, non specificamente per l’alluce valgo, ma l’esercizio di apertura delle dita è lo stesso movimento testato nello studio di Kim del 2015 sull’alluce valgo. Se vuoi un modo strutturato per prendere l’abitudine, le sessioni quotidiane da 3 o 5\u00A0minuti ti aiutano a fare gli esercizi con costanza.',
     more: [
       'Per un dolore all’avampiede più ampio che coinvolge la seconda e la terza testa metatarsale, vedi [metatarsalgia e dolore alla pianta del piede](/it/metatarsalgia-dolore-pianta-piede/). Per un dolore proprio sotto l’articolazione dell’alluce, vedi [sesamoidite](/it/sesamoidite/).',
     ],

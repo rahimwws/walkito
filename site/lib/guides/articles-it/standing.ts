@@ -21,7 +21,7 @@ export const STANDING_IT: Guide = {
   page: 'standing',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Male ai piedi dopo una giornata in piedi: perché e cosa fare',
+  title: 'Male ai piedi dopo una giornata in piedi: cosa fare',
   description:
     'Perché i piedi fanno male a stare in piedi tutto il giorno, cosa aiuta (allungamenti, rinforzo del polpaccio, calze a compressione) e quando farsi vedere.',
   h1: 'Perché mi fanno male i piedi dopo una giornata in piedi?',
@@ -189,10 +189,10 @@ export const STANDING_IT: Guide = {
       keyFact: 'In uno studio su 40\u00A0guardie giurate in piedi per turni di 12\u00A0ore, sia le calze a compressione da 15-20\u00A0mmHg sia quelle da 20-30\u00A0mmHg hanno evitato l’aumento del fastidio a piedi e gambe visto con le calze normali (Garcia e colleghi, 2023).',
       paragraphs: [
         'Le calze a compressione hanno uno degli studi meglio controllati proprio sul fastidio da stazione eretta. In uno studio randomizzato su 40\u00A0guardie giurate in piedi per turni di circa 12\u00A0ore, divise in tre gruppi, sia il gruppo con calze da 15-20\u00A0mmHg sia quello con calze da 20-30\u00A0mmHg hanno evitato l’aumento significativo di fastidio, stanchezza e gonfiore a piedi e gambe visto nel gruppo con calze normali. I partecipanti dicevano spesso che la calza a pressione più bassa era più facile da infilare.',
-        'Lo studio era piccolo, tutto maschile, e ha testato un solo lavoro. Ma è uno dei pochi interventi per il fastidio da stazione eretta con un disegno randomizzato, ed è per questo che in questa pagina viene prima di consigli più popolari. Le calze a compressione non sostituiscono lo stretching o il lavoro di forza. Aiutano a gestire gonfiore e stanchezza, mentre polpaccio e fascia hanno comunque bisogno del loro lavoro.',
+        'Lo studio era piccolo, con soli uomini, e ha testato un solo lavoro. Ma è uno dei pochi interventi per il fastidio da stazione eretta con un disegno randomizzato, ed è per questo che in questa pagina viene prima di consigli più popolari. Le calze a compressione non sostituiscono lo stretching o il lavoro di forza. Aiutano a gestire gonfiore e stanchezza, mentre polpaccio e fascia hanno comunque bisogno del loro lavoro.',
       ],
       sourceNote:
-        'Garcia e colleghi (2023): disegno a gruppi paralleli, 40\u00A0guardie giurate maschi assegnate a caso a uno di tre gruppi (calze normali, 15-20\u00A0mmHg o 20-30\u00A0mmHg), ogni condizione indossata per un intero turno di lavoro da un diverso sottogruppo di guardie. Fastidio, stanchezza ed edema misurati prima e dopo il turno.',
+        'Garcia e colleghi (2023): disegno a gruppi paralleli, 40\u00A0guardie giurate di sesso maschile assegnate a caso a uno di tre gruppi (calze normali, 15-20\u00A0mmHg o 20-30\u00A0mmHg), ogni condizione indossata per un intero turno di lavoro da un diverso sottogruppo di guardie. Fastidio, stanchezza ed edema misurati prima e dopo il turno.',
       cites: [CITE.garcia],
     },
     {
@@ -200,7 +200,7 @@ export const STANDING_IT: Guide = {
       paragraphs: [
         'Il dolore ai piedi da stazione eretta può essere una stanchezza generica che passa con il riposo, oppure l’inizio di un problema con un nome preciso. Il più comune è la fascite plantare: dolore acuto vicino al tallone, di solito peggiore ai primi passi dopo il riposo. Se il tallone fa più male la mattina e di nuovo dopo che sei stato seduto, quello schema fa pensare alla fascite plantare, e gli esercizi in [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/) sono la guida più completa.',
         'Se a fine giornata senti gli archi piatti o ceduti verso l’interno, gli esercizi per l’arco in [esercizi per il piede piatto](/it/esercizi-piede-piatto/) lavorano sui muscoli che tengono su l’arco. Un piede piatto rigido, che resta piatto anche quando il piede è sollevato da terra, è strutturale e va visto da un professionista sanitario più che trattato con gli esercizi.',
-        'Se il dolore è lungo lo stinco e non sotto il piede, fa pensare alla periostite tibiale, e [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/) spiega cosa dice la ricerca. Il dolore dietro il tallone, nel tendine d’Achille, è un problema diverso. Il dolore sul lato interno della caviglia può venire dal tendine tibiale posteriore. Entrambi sono trattati dal punto di vista di chi corre in [dolore al tallone nella corsa](/heel-pain-runners/) (in inglese). Se il dolore è dietro il tallone nel tendine d’Achille, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/); se vuoi più dettagli proprio sull’esercizio dei sollevamenti sulle punte, vedi [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/). Se non sai cosa causa il dolore, senti un professionista sanitario prima di caricarlo con gli esercizi.',
+        'Se il dolore è lungo lo stinco e non sotto il piede, fa pensare alla periostite tibiale, e [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/) spiega cosa dice la ricerca. Il dolore dietro il tallone, nel tendine d’Achille, è un problema diverso. Il dolore sul lato interno della caviglia può venire dal tendine tibiale posteriore. Entrambi sono trattati dal punto di vista di chi corre in [dolore al tallone nella corsa](/heel-pain-runners/) (in inglese). Se il dolore è dietro il tallone nel tendine d’Achille, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/); se vuoi più dettagli proprio sull’esercizio dei sollevamenti sulle punte, vedi [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/). Se non sai cosa causa il dolore, senti un professionista sanitario prima di caricare il piede con gli esercizi.',
       ],
     },
     {
@@ -225,11 +225,11 @@ export const STANDING_IT: Guide = {
     },
     {
       q: 'Le calze a compressione servono per il male ai piedi da lavoro in piedi?',
-      a: 'In uno studio su 40\u00A0guardie giurate in piedi per turni di 12\u00A0ore, assegnate a caso a calze normali o a uno di due gruppi con calze a compressione, sia quelle da 15-20\u00A0mmHg sia quelle da 20-30\u00A0mmHg hanno evitato l’aumento di fastidio, stanchezza e gonfiore a piedi e gambe visto con le calze normali. È uno dei pochi interventi specifici per lo stare in piedi con uno studio controllato, anche se lo studio era piccolo e tutto maschile.',
+      a: 'In uno studio su 40\u00A0guardie giurate in piedi per turni di 12\u00A0ore, assegnate a caso a calze normali o a uno di due gruppi con calze a compressione, sia quelle da 15-20\u00A0mmHg sia quelle da 20-30\u00A0mmHg hanno evitato l’aumento di fastidio, stanchezza e gonfiore a piedi e gambe visto con le calze normali. È uno dei pochi interventi specifici per lo stare in piedi con uno studio controllato, anche se lo studio era piccolo e con soli uomini.',
       cites: [CITE.garcia],
     },
     {
-      q: 'È normale avere male ai piedi dopo un turno in piedi di 8 o 12 ore?',
+      q: 'È normale avere male ai piedi dopo un turno in piedi di 8 o 12\u00A0ore?',
       a: 'Un po’ di stanchezza e dolore dopo un lungo turno in piedi è comune e in linea con quello che riporta la ricerca di medicina del lavoro. Una revisione del 2015 ha legato lo stare in piedi a lungo a fastidi muscoloscheletrici e stanchezza in molti lavori in piedi. Comune non vuol dire da ignorare nel lungo periodo: la stessa revisione nota che tappetini, calze a compressione e scarpe migliori riducono in modo misurabile questi problemi.',
       cites: [CITE.waters],
     },
@@ -244,7 +244,7 @@ export const STANDING_IT: Guide = {
       cites: [CITE.waters],
     },
     {
-      q: 'Come stare in piedi 10 ore senza male ai piedi?',
+      q: 'Come stare in piedi 10\u00A0ore senza male ai piedi?',
       a: 'Nessun singolo trucco elimina il dolore di un turno di 10\u00A0ore, ma mettere insieme più cose aiuta di più: scarpe ammortizzate e di sostegno, un tappetino sui pavimenti duri, brevi pause camminando ogni ora per riattivare la circolazione e allungamenti del polpaccio e della fascia plantare ogni giorno. Le calze a compressione hanno ridotto fastidio e gonfiore in uno studio su guardie giurate con turni lunghi.',
       cites: [CITE.garcia, CITE.waters],
     },

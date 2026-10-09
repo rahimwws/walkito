@@ -16,7 +16,7 @@ export const MORTONS_IT: Guide = {
   mainSource: CITE.matthewsCochrane,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Neuroma di Morton: cause, scarpe, plantari e cosa aiuta',
+  title: 'Neuroma di Morton: cause, scarpe e cosa aiuta',
   description:
     'Il neuroma di Morton dà bruciore tra le dita. Cuscinetti metatarsali, scarpe, infiltrazioni, esercizi per il comfort e differenza con la metatarsalgia.',
   h1: 'Neuroma di Morton: cos’è, cosa aiuta e cosa dicono gli studi',
@@ -68,7 +68,7 @@ export const MORTONS_IT: Guide = {
         'L’infiltrazione di cortisone è l’approccio invasivo non chirurgico più studiato per il neuroma di Morton. La revisione Cochrane del 2024 includeva sei studi randomizzati con 373\u00A0partecipanti. Ha trovato prove di bassa certezza che aggiungere un cortisonico a un anestetico locale possa portare a poca o nessuna differenza su dolore o funzione a tre-sei mesi rispetto alla sola infiltrazione di anestetico locale. Gli autori Cochrane hanno notato che aggiungere un cortisonico può aumentare gli effetti avversi, tra cui atrofia del cuscinetto adiposo e alterazioni della pelle.',
         'L’infiltrazione ecoguidata probabilmente migliora il dolore rispetto a quella non guidata, con differenze clinicamente rilevanti a 2, 6 e 12\u00A0mesi negli studi inclusi. Le prove sono state classificate di certezza moderata.',
         'Sono stati studiati anche altri tipi di infiltrazione, tra cui infiltrazioni sclerosanti con alcol, ablazione con radiofrequenza e crioterapia. La revisione sistematica del 2019 ha trovato che infiltrazione di cortisone e manipolazione avevano le prove più forti per la riduzione del dolore nel breve periodo, ma ha chiesto più studi randomizzati di alta qualità. La revisione Cochrane del 2024 è arrivata alla stessa conclusione: dopo altri 20\u00A0anni di ricerca dalla prima revisione Cochrane del 2004, non ci sono ancora abbastanza prove di alta qualità per trarre conclusioni solide su qualsiasi singolo intervento.',
-        'Questo non vuol dire che le infiltrazioni siano inutili. Vuol dire che le prove non sono abbastanza forti per dichiarare un approccio chiaramente migliore di un altro. Un clinico può parlarti delle opzioni, dei rischi e di cosa aspettarti. L’infiltrazione di cortisone dà un buon sollievo nel breve periodo a molte persone, ma le infiltrazioni ripetute comportano rischi per i tessuti intorno.',
+        'Questo non vuol dire che le infiltrazioni siano inutili. Vuol dire che le prove non sono abbastanza forti per dichiarare un approccio chiaramente migliore di un altro. Un professionista sanitario può parlarti delle opzioni, dei rischi e di cosa aspettarti. L’infiltrazione di cortisone dà un buon sollievo nel breve periodo a molte persone, ma le infiltrazioni ripetute comportano rischi per i tessuti intorno.',
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],
     },
@@ -77,7 +77,7 @@ export const MORTONS_IT: Guide = {
       paragraphs: [
         'Di solito si considera la chirurgia quando la gestione conservativa, cioè cambio di scarpe, cuscinetti e uno o due cicli di infiltrazioni, non ha dato un sollievo duraturo. L’intervento più comune è la neurectomia, la rimozione chirurgica del tratto di nervo ispessito. Funziona per molte persone ma lascia un intorpidimento permanente tra le dita interessate, perché il nervo che portava la sensibilità lì non c’è più.',
         'Altre opzioni chirurgiche sono la decompressione del nervo (liberare il legamento metatarsale trasverso senza togliere il nervo) e l’osteotomia metatarsale (rimodellare l’osso per dare più spazio al nervo). La revisione Cochrane del 2024 ha trovato prove di bassa certezza per i confronti chirurgici, senza un vincitore chiaro tra neurectomia con incisione plantare e dorsale per soddisfazione dei pazienti o effetti avversi.',
-        'La chirurgia non è un approccio di prima linea. La maggior parte dei clinici consiglia di provare in modo strutturato la gestione conservativa per diversi mesi prima di prenderla in considerazione. Se sei a quel punto, uno specialista di piede e caviglia può spiegarti le opzioni chirurgiche e cosa aspettarti per il recupero.',
+        'La chirurgia non è un approccio di prima linea. La maggior parte dei professionisti sanitari consiglia di provare in modo strutturato la gestione conservativa per diversi mesi prima di prenderla in considerazione. Se sei a quel punto, uno specialista di piede e caviglia può spiegarti le opzioni chirurgiche e cosa aspettarti per il recupero.',
       ],
       cites: [CITE.matthewsCochrane],
     },
@@ -141,19 +141,19 @@ export const MORTONS_IT: Guide = {
       paragraphs: [
         'La revisione Cochrane del 2024 è la sintesi più rigorosa disponibile. Includeva sei studi randomizzati con 373\u00A0partecipanti. Le sue conclusioni: ci sono prove di certezza da bassa a moderata per la maggior parte degli interventi per il neuroma di Morton, e nessun singolo trattamento ha un sostegno forte e ad alta certezza. Dopo altri 20\u00A0anni di ricerca dalla revisione Cochrane originale del 2004, gli autori sono arrivati alla stessa conclusione di fondo.',
         'Questo non vuol dire che non funzioni niente. Cambio di scarpe e cuscinetti metatarsali aiutano circa 3\u00A0persone su 10. L’infiltrazione di cortisone ecoguidata probabilmente migliora il dolore rispetto a quella non guidata. La neurectomia toglie il dolore a molte persone, ma al prezzo di un intorpidimento permanente. Quello che manca è un chiaro trattamento di prima linea sostenuto da prove forti.',
-        'Per l’esercizio la lacuna è ancora più grande. Nessuno studio ha testato l’esercizio per il neuroma di Morton. Gli esercizi di questa pagina sono misure per il comfort e la gestione del carico, non interventi specifici per il neuroma. Se l’esercizio fa parte del tuo piano, deve stare accanto al cambio di scarpe e ai consigli del clinico, non sostituirli.',
+        'Per l’esercizio la lacuna è ancora più grande. Nessuno studio ha testato l’esercizio per il neuroma di Morton. Gli esercizi di questa pagina sono misure per il comfort e la gestione del carico, non interventi specifici per il neuroma. Se l’esercizio fa parte del tuo piano, deve stare accanto al cambio di scarpe e ai consigli del professionista sanitario, non sostituirli.',
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],
     },
   ],
   faq: [
     {
-      q: 'Come si sente il neuroma di Morton?',
+      q: 'Che sensazione dà il neuroma di Morton?',
       a: 'Il neuroma di Morton di solito dà bruciore, formicolio o intorpidimento tra il terzo e il quarto dito, o la sensazione di camminare su un sassolino o su una calza arrotolata. Il dolore peggiora con le scarpe strette e quando cammini. Togliere la scarpa e massaggiare l’avampiede spesso dà un sollievo temporaneo. A differenza della metatarsalgia generale, il dolore è di tipo nervoso, non un dolore sordo.',
     },
     {
       q: 'Che differenza c’è tra neuroma di Morton e metatarsalgia?',
-      a: 'Metatarsalgia è un termine ampio per il dolore sotto la parte anteriore della pianta del piede. Il neuroma di Morton è una causa specifica dentro quel contenitore. La metatarsalgia tende a essere un dolore da sordo ad acuto sotto le teste metatarsali. Il neuroma di Morton dà bruciore o formicolio tra le dita, di solito il terzo e il quarto, e può dare intorpidimento. Un clinico può distinguerli con un esame fisico.',
+      a: 'Metatarsalgia è un termine ampio per il dolore sotto la parte anteriore della pianta del piede. Il neuroma di Morton è una causa specifica dentro quel contenitore. La metatarsalgia tende a essere un dolore da sordo ad acuto sotto le teste metatarsali. Il neuroma di Morton dà bruciore o formicolio tra le dita, di solito il terzo e il quarto, e può dare intorpidimento. Un professionista sanitario può distinguerli con un esame fisico.',
     },
     {
       q: 'I cuscinetti metatarsali funzionano per il neuroma di Morton?',
@@ -166,7 +166,7 @@ export const MORTONS_IT: Guide = {
     },
     {
       q: 'Il neuroma di Morton passa da solo?',
-      a: 'Alcune persone trovano che passare a scarpe più larghe con tacco basso basti perché i sintomi si calmino in settimane o mesi. In altre l’ispessimento del nervo resta e i sintomi tornano ogni volta che l’avampiede viene compresso. Il problema in sé non regredisce, ma i sintomi si possono gestire. Se i passi conservativi non hanno aiutato dopo diverse settimane, un clinico può parlarti di infiltrazioni o di altre opzioni.',
+      a: 'Alcune persone trovano che passare a scarpe più larghe con tacco basso basti perché i sintomi si calmino in settimane o mesi. In altre l’ispessimento del nervo resta e i sintomi tornano ogni volta che l’avampiede viene compresso. Il problema in sé non regredisce, ma i sintomi si possono gestire. Se i passi conservativi non hanno aiutato dopo diverse settimane, un professionista sanitario può parlarti di infiltrazioni o di altre opzioni.',
     },
     {
       q: 'Le infiltrazioni di cortisone funzionano per il neuroma di Morton?',
@@ -184,7 +184,7 @@ export const MORTONS_IT: Guide = {
     },
     {
       q: 'Cos’è il test della compressione per il neuroma di Morton?',
-      a: 'Il test della compressione, a volte chiamato click di Mulder, è una manovra dell’esame fisico che un clinico usa per aiutare la diagnosi del neuroma di Morton. Stringe l’avampiede da un lato all’altro mentre preme tra le teste metatarsali. Un click o uno scatto percepibile, insieme alla ricomparsa del bruciore, sostiene la diagnosi, anche se il clinico deve comunque escludere altre cause.',
+      a: 'Il test della compressione, a volte chiamato click di Mulder, è una manovra dell’esame fisico che un professionista sanitario usa per aiutare la diagnosi del neuroma di Morton. Stringe l’avampiede da un lato all’altro mentre preme tra le teste metatarsali. Un click o uno scatto percepibile, insieme alla ricomparsa del bruciore, sostiene la diagnosi, anche se il professionista sanitario deve comunque escludere altre cause.',
     },
     {
       q: 'Camminare fa bene con il neuroma al piede?',

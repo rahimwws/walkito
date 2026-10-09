@@ -14,10 +14,10 @@ export const NURSES_IT: Guide = {
   mainSource: CITE.reedNurse,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Dolore ai piedi per infermieri: turni di 12 ore ed esercizi',
+  title: 'Dolore ai piedi per infermieri: turni di 12\u00A0ore',
   description:
-    'Perché gli infermieri hanno male ai piedi nei turni di 12 ore: scarpe, calze a compressione, esercizi e come inserirli tra i turni a rotazione.',
-  h1: 'Dolore ai piedi per infermieri: cosa aiuta nei turni di 12 ore',
+    'Perché gli infermieri hanno male ai piedi nei turni di 12\u00A0ore: scarpe, calze a compressione, esercizi e come inserirli tra i turni a rotazione.',
+  h1: 'Dolore ai piedi per infermieri: cosa aiuta nei turni di 12\u00A0ore',
   lede:
     'Gli infermieri camminano in un solo turno più di quanto molte persone camminino in un giorno, e lo fanno su pavimenti duri con scarpe che magari non calzano bene. I problemi a piede e caviglia sono tra i disturbi muscoloscheletrici più comuni nell’infermieristica: in un sondaggio li ha riferiti più della metà degli infermieri ospedalieri nell’arco di 12\u00A0mesi. Quasi tutto quello che aiuta, cioè allungamenti del polpaccio, esercizi per l’arco e calze a compressione, si fa in pochi minuti prima o dopo il turno.',
   intro: [
@@ -42,7 +42,7 @@ export const NURSES_IT: Guide = {
       cites: [CITE.changCho, CITE.reedNurse, CITE.tojo, CITE.stoltNurse],
     },
     {
-      h2: 'Perché gli infermieri hanno male ai piedi nei turni di 12 ore?',
+      h2: 'Perché gli infermieri hanno male ai piedi nei turni di 12\u00A0ore?',
       paragraphs: [
         'In un turno infermieristico si sommano tre cose: tanto tempo in piedi, lunghe distanze a piedi e pavimenti duri. Stare fermi in piedi carica la fascia plantare, i muscoli del polpaccio e il cuscinetto del tallone senza la pompa che dà la camminata. Camminare aiuta il sangue a risalire dalle gambe, ma gli infermieri passano in modo imprevedibile dallo stare fermi accanto a un letto al camminare per lunghi corridoi, quindi la pompa del polpaccio non trova mai un ritmo regolare.',
         'Una revisione del 2015 della letteratura di medicina del lavoro ha associato lo stare in piedi a lungo al lavoro a fastidi muscoloscheletrici, stanchezza e dolore alle gambe in molti lavori in piedi, citando gli infermieri tra i gruppi a rischio più alto. La revisione ha notato che lo sforzo cardiovascolare e il gonfiore delle gambe aumentano con il tempo passato in piedi.',
@@ -54,7 +54,7 @@ export const NURSES_IT: Guide = {
       h2: 'Quali esercizi aiutano gli infermieri con il dolore ai piedi?',
       keyFact: 'La linea guida del 2023 sul dolore al tallone dà all’allungamento del polpaccio e della fascia plantare una A, il suo grado più alto, e al lavoro di forza una B (Koc e colleghi, 2023).',
       paragraphs: [
-        'Gli esercizi che aiutano sono gli stessi della fascite plantare e del dolore ai piedi da stazione eretta: allungamenti del polpaccio, un allungamento della fascia plantare, sollevamenti sulle punte per la forza del polpaccio e un esercizio per l’arco chiamato piede corto. Per gli infermieri la differenza è farli stare intorno ai turni a rotazione, non durante. Pochi minuti prima o dopo il turno bastano per coprire i più importanti.',
+        'Gli esercizi che aiutano sono gli stessi della fascite plantare e del dolore ai piedi da stazione eretta: allungamenti del polpaccio, un allungamento della fascia plantare, sollevamenti sulle punte per la forza del polpaccio e un esercizio per l’arco chiamato piede corto. Per gli infermieri la differenza è farli rientrare tra i turni a rotazione, non durante il turno. Pochi minuti prima o dopo il turno bastano per coprire i più importanti.',
         'La linea guida del 2023 sul dolore al tallone dà all’allungamento del polpaccio e della fascia plantare il suo grado più alto, A, e al lavoro di forza una B. Entrambi i gradi riguardano la fascite plantare in particolare, ma i tessuti coinvolti sono gli stessi che prendono il carico durante un turno infermieristico. Se un esercizio porta il dolore a 6 su 10 o più, fermati per oggi.',
       ],
       exercises: [
@@ -168,14 +168,14 @@ export const NURSES_IT: Guide = {
       paragraphs: [
         'Le calze a compressione hanno uno degli studi meglio controllati sul fastidio da stazione eretta. In uno studio randomizzato su 40\u00A0guardie giurate in piedi per turni di circa 12\u00A0ore, sia il gruppo con calze da 15-20\u00A0mmHg sia quello con calze da 20-30\u00A0mmHg hanno evitato l’aumento significativo di fastidio, stanchezza e gonfiore a piedi e gambe visto nel gruppo con calze normali. I partecipanti dicevano spesso che la calza a pressione più bassa era più facile da infilare.',
         'Uno studio pilota randomizzato su 20\u00A0studenti di infermieristica ha confrontato calze a compressione al ginocchio e alla coscia indossate durante turni di tirocinio clinico di 9\u00A0ore. Entrambi i gruppi si sono detti molto soddisfatti, anche se il campione era troppo piccolo per mostrare differenze chiare di risultato tra le due lunghezze.',
-        'Lo studio di Garcia riguardava guardie giurate tutte maschi, non infermieri, e nessuno dei due studi era grande. Ma le calze a compressione sono uno dei pochi interventi specifici per lo stare in piedi con prove randomizzate. Una revisione di medicina del lavoro del 2015 le elenca insieme a tappetini e scarpe di sostegno tra gli interventi con qualche prova di ridurre il fastidio nel lavoro in piedi prolungato. Non sostituiscono lo stretching o il lavoro di forza. Gestiscono gonfiore e stanchezza, mentre polpaccio e fascia hanno comunque bisogno del loro lavoro.',
+        'Lo studio di Garcia riguardava guardie giurate tutte di sesso maschile, non infermieri, e nessuno dei due studi era grande. Ma le calze a compressione sono uno dei pochi interventi specifici per lo stare in piedi con prove randomizzate. Una revisione di medicina del lavoro del 2015 le elenca insieme a tappetini e scarpe di sostegno tra gli interventi con qualche prova di ridurre il fastidio nel lavoro in piedi prolungato. Non sostituiscono lo stretching o il lavoro di forza. Gestiscono gonfiore e stanchezza, mentre polpaccio e fascia hanno comunque bisogno del loro lavoro.',
       ],
       sourceNote:
-        'Garcia e colleghi (2023): disegno a gruppi paralleli, 40\u00A0guardie giurate maschi assegnate a caso a tre gruppi (calze normali, 15-20\u00A0mmHg, 20-30\u00A0mmHg), ognuna indossata per un intero turno di lavoro. Fastidio, stanchezza ed edema misurati prima e dopo il turno.',
+        'Garcia e colleghi (2023): disegno a gruppi paralleli, 40\u00A0guardie giurate di sesso maschile assegnate a caso a tre gruppi (calze normali, 15-20\u00A0mmHg, 20-30\u00A0mmHg), ognuna indossata per un intero turno di lavoro. Fastidio, stanchezza ed edema misurati prima e dopo il turno.',
       cites: [CITE.garcia, CITE.waters],
     },
     {
-      h2: 'Cosa puoi fare prima e dopo il turno in 3, 5 o 10 minuti?',
+      h2: 'Cosa puoi fare prima e dopo il turno in 3, 5 o 10\u00A0minuti?',
       paragraphs: [
         'Se hai 3\u00A0minuti: fai i due allungamenti del polpaccio (ginocchio teso e ginocchio piegato, 30\u00A0secondi per lato). Coprono il singolo fattore di rischio modificabile più forte, un polpaccio rigido, e richiedono lo stesso tempo che serve per allacciarti le scarpe.',
         'Se hai 5\u00A0minuti: aggiungi l’allungamento della fascia plantare (30\u00A0secondi per piede). È la combinazione a cui la linea guida del 2023 dà una A per la fascite plantare. Se il tallone va peggio ai primi passi della giornata, fai l’allungamento della fascia prima che i piedi tocchino terra.',
@@ -189,18 +189,18 @@ export const NURSES_IT: Guide = {
       paragraphs: [
         'Dolore e stanchezza generici dopo un turno lungo sono comuni e di solito passano con il riposo. La fascite plantare è un problema preciso: dolore acuto vicino al tallone, peggiore ai primi passi dopo il riposo (alzarsi dal letto, alzarsi dopo essere stati seduti a lungo). Se il tuo dolore segue questo schema, gli esercizi in [esercizi e allungamenti per la fascite plantare](/it/esercizi-fascite-plantare/) sono la guida più completa, e i dettagli sui sollevamenti sulle punte sono in [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/).',
         'Se a fine turno senti gli archi piatti o ceduti verso l’interno, gli esercizi per l’arco in [esercizi per il piede piatto](/it/esercizi-piede-piatto/) lavorano sui muscoli che tengono su l’arco. Un dolore lungo lo stinco potrebbe essere periostite tibiale. Un dolore nel tendine d’Achille dietro il tallone è un problema diverso.',
-        'Se la tua domanda principale è il dolore da stazione eretta e non sei infermiere, [perché mi fanno male i piedi dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) copre gli stessi esercizi per un pubblico più ampio. Per la versione di questo problema legata alla scrivania in piedi, vedi [dolore ai piedi con la scrivania in piedi](/it/scrivania-in-piedi-dolore-piedi/). Se non sai cosa causa il dolore, senti un professionista sanitario prima di caricarlo con gli esercizi.',
+        'Se la tua domanda principale è il dolore da stazione eretta e non sei infermiere, [perché mi fanno male i piedi dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) copre gli stessi esercizi per un pubblico più ampio. Per la versione di questo problema legata alla scrivania in piedi, vedi [dolore ai piedi con la scrivania in piedi](/it/scrivania-in-piedi-dolore-piedi/). Se non sai cosa causa il dolore, senti un professionista sanitario prima di caricare il piede con gli esercizi.',
       ],
     },
   ],
   faq: [
     {
-      q: 'Quanti passi fa un infermiere in un turno di 12 ore?',
+      q: 'Quanti passi fa un infermiere in un turno di 12\u00A0ore?',
       a: 'In uno studio con contapassi su infermieri ospedalieri coreani, la media era di circa 9.360\u00A0passi per turno, circa 5,8\u00A0km in 9,4\u00A0ore. È ben sopra la media di passi giornalieri della popolazione adulta, e camminare a lungo su pavimenti duri contribuisce molto al dolore ai piedi nell’infermieristica.',
       cites: [CITE.changCho, CITE.tojo],
     },
     {
-      q: 'I turni di 12 ore fanno più male ai piedi di quelli di 8 ore?',
+      q: 'I turni di 12\u00A0ore fanno più male ai piedi di quelli di 8\u00A0ore?',
       a: 'In un sondaggio su infermieri di un ospedale pediatrico, fare turni di 12\u00A0ore in terapia intensiva era l’unico fattore di lavoro che aumentava in modo indipendente la probabilità di problemi invalidanti a piede e caviglia. Il carico totale sul piede cresce con la durata del turno, e il recupero tra un turno e l’altro è più breve quando i turni sono più lunghi. Detto questo, contano anche il tipo di lavoro e il pavimento, non solo le ore.',
       cites: [CITE.reedNurse],
     },

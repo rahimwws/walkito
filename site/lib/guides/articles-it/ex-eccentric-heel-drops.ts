@@ -14,12 +14,12 @@ export const EX_ECCENTRIC_HEEL_DROPS_IT: Guide = {
   mainSource: CITE.alfredson,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Esercizi eccentrici per l’Achille: discese del tallone',
+  title: 'Discese eccentriche del tallone: come farle bene',
   description:
     'Come fare le discese eccentriche del tallone per il tendine d’Achille: il protocollo di Alfredson, serie, ripetizioni, ritmo ed errori comuni.',
   h1: 'Discese eccentriche del tallone: come farle, serie, ripetizioni e cosa dicono gli studi',
   lede:
-    'La discesa eccentrica del tallone è un esercizio di forza in cui sali su entrambi i piedi e scendi piano su uno solo, lasciando che il tallone scenda sotto il bordo di un gradino. La fase di discesa, chiamata contrazione eccentrica, è il punto dell’esercizio. È stato pensato per la tendinopatia achillea e testato per la prima volta in uno studio del 1998 di Alfredson, in cui 15\u00A0atleti sono tornati a correre dopo averlo fatto due volte al giorno per tre mesi.',
+    'La discesa eccentrica del tallone è un esercizio di forza in cui sali su entrambi i piedi e scendi piano su uno solo, lasciando che il tallone scenda sotto il bordo di un gradino. La fase di discesa, chiamata contrazione eccentrica, è il cuore dell’esercizio. È stato pensato per la tendinopatia achillea e testato per la prima volta in uno studio del 1998 di Alfredson, in cui 15\u00A0atleti sono tornati a correre dopo averlo fatto due volte al giorno per tre mesi.',
   takeaways: [
     'La linea guida del 2024 sull’Achille dà all’esercizio (tutti i tipi di carico del tendine) una **A**, il suo grado più alto, per la tendinopatia achillea della porzione media (Chimenti e colleghi, 2024).',
     'Una network meta-analisi del 2021 su 29\u00A0studi randomizzati non ha trovato nessun protocollo di esercizi chiaramente migliore degli altri; tutti erano meglio di nessun esercizio (van der Vlist e colleghi, 2021).',
@@ -153,7 +153,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_IT: Guide = {
   },
   program: {
     h2: 'Farlo come un piano',
-    text: 'Le discese eccentriche del tallone sono un passaggio della progressione per il polpaccio che Walkito inserisce in un piano settimanale. La progressione parte dai sollevamenti da seduto e sale con i sollevamenti su due piedi, la tenuta, il sollevamento con asciugamano, le discese del tallone e i saltelli pogo. Ogni passaggio si sblocca quando due sessioni al livello attuale ti sono sembrate facili.',
+    text: 'Le discese eccentriche del tallone sono un passaggio della progressione per il polpaccio che Walkito inserisce in un piano settimanale. La progressione parte dai sollevamenti da seduto e sale con i sollevamenti su due piedi, la tenuta, il sollevamento con asciugamano, le discese del tallone e i saltelli sulle punte. Ogni passaggio si sblocca quando due sessioni al livello attuale ti sono sembrate facili.',
     more: [
       'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio ed equilibrio. Se il dolore è proprio nel punto in cui il tendine si attacca all’osso del tallone, fallo controllare da un professionista sanitario prima di caricarlo forte. Walkito è un programma di esercizi. Non fa diagnosi.',
     ],

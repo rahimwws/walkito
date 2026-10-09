@@ -15,9 +15,9 @@ export const CALF_RAISE_TEST_PT: Guide = {
   mainSource: CITE.hebertLosier,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Teste de elevação de calcanhar: valores por idade e protocolo',
+  title: 'Teste de elevação de calcanhar: valores por idade',
   description:
-    'Teste de elevação de calcanhar em uma perna: protocolo, valores por idade e sexo, o que o resultado quer dizer e como melhorar a resistência da panturrilha.',
+    'Teste de elevação de calcanhar em uma perna: protocolo, valores por idade e sexo, o que o resultado indica e como melhorar a resistência da panturrilha.',
   h1: 'Teste de elevação de calcanhar: quantas você deveria fazer e o que o resultado quer dizer?',
   lede:
     'O teste de elevação de calcanhar em uma perna mede a resistência dos músculos da panturrilha. Você fica em um pé só e sobe na ponta do pé quantas vezes conseguir, num ritmo fixo. A contagem mostra quanta força resistente ao cansaço a panturrilha tem de cada lado, o que importa para caminhar, correr e se recuperar de lesões no calcanhar ou no tendão de Aquiles.',
@@ -170,7 +170,7 @@ export const CALF_RAISE_TEST_PT: Guide = {
     },
     {
       q: 'Teste de elevação de calcanhar e heel-rise test são a mesma coisa?',
-      a: 'Sim. "Heel-rise test" é o nome usado na literatura científica, em inglês. "Teste de elevação de calcanhar" é o nome mais comum em português. O movimento é o mesmo: subir na ponta de um pé só até a fadiga, num ritmo fixo.',
+      a: 'Sim. “Heel-rise test” é o nome usado na literatura científica, em inglês. “Teste de elevação de calcanhar” é o nome mais comum em português. O movimento é o mesmo: subir na ponta de um pé só até a fadiga, num ritmo fixo.',
     },
     {
       q: 'Qual é um bom resultado no teste de elevação de calcanhar por idade?',
@@ -188,7 +188,7 @@ export const CALF_RAISE_TEST_PT: Guide = {
     },
     {
       q: 'Preciso de metrônomo para fazer o teste?',
-      a: 'O protocolo da pesquisa usa um metrônomo a 60\u00A0batidas por minuto. Apps de metrônomo gratuitos funcionam bem. Sem um, conte "mil e um" na subida e na descida. A sua contagem vai ser menos comparável aos valores publicados, mas fazer o teste sempre do mesmo jeito importa mais do que copiar exatamente a montagem da pesquisa.',
+      a: 'O protocolo da pesquisa usa um metrônomo a 60\u00A0batidas por minuto. Apps de metrônomo gratuitos funcionam bem. Sem um, conte “mil e um” na subida e na descida. A sua contagem vai ser menos comparável aos valores publicados, mas fazer o teste sempre do mesmo jeito importa mais do que copiar exatamente a montagem da pesquisa.',
     },
     {
       q: 'O teste de elevação de calcanhar diagnostica fascite plantar ou tendinite de Aquiles?',
@@ -219,7 +219,7 @@ export const CALF_RAISE_TEST_PT: Guide = {
   },
   program: {
     h2: 'Fazendo isso como um plano',
-    text: 'O Walkito faz o teste de elevação de calcanhar em uma perna a cada 14\u00A0dias e acompanha as duas pernas. A meta da panturrilha é 25 elevações de calcanhar em uma perna. A meta de simetria é uma diferença entre esquerda e direita abaixo de 10\u00A0por cento. O app calcula a diferença como a diferença entre o lado mais forte e o mais fraco, dividida pelo lado mais forte. Quando as duas metas são alcançadas, o teste passa a ser a cada 28\u00A0dias e o plano muda para a próxima meta ativa.',
+    text: 'O Walkito faz o teste de elevação de calcanhar em uma perna a cada 14\u00A0dias e acompanha as duas pernas. A meta da panturrilha é 25\u00A0elevações de calcanhar em uma perna. A meta de simetria é uma diferença entre esquerda e direita abaixo de 10\u00A0por cento. O app calcula a diferença como a diferença entre o lado mais forte e o mais fraco, dividida pelo lado mais forte. Quando as duas metas são alcançadas, o teste passa a ser a cada 28\u00A0dias e o plano muda para a próxima meta ativa.',
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. O trabalho de panturrilha começa com a elevação sentado e sobe pelas versões com os dois pés, sustentada, com toalha, descidas excêntricas e saltitos curtos na ponta dos pés, no seu ritmo. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',
     ],

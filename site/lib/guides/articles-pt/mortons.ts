@@ -7,7 +7,7 @@ export const MORTONS_PT: Guide = {
   mainSource: CITE.matthewsCochrane,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Neuroma de Morton: causas, calçados, palmilhas e o que ajuda',
+  title: 'Neuroma de Morton: causas, calçados e o que ajuda',
   description:
     'Neuroma de Morton causa queimação entre os dedos. Coxim metatarsal, troca de calçado, infiltração, exercícios para conforto e diferença para metatarsalgia.',
   h1: 'Neuroma de Morton: o que é, o que ajuda e o que diz a evidência',
@@ -46,7 +46,7 @@ export const MORTONS_PT: Guide = {
       keyFact: 'Somando dois estudos em uma revisão de 2019, calçados mais largos e um coxim metatarsal ajudaram cerca de 32% das pessoas, em um acompanhamento médio de quatro meses e meio (Matthews e colegas, 2019).',
       paragraphs: [
         'Calçados mais largos com salto baixo e um coxim metatarsal são o primeiro passo mais recomendado para o neuroma de Morton. O coxim fica logo atrás das cabeças dos metatarsos, e não diretamente embaixo delas, para levantar o corpo dos metatarsos e afastar os ossos, reduzindo a compressão no nervo.',
-        'Calçado bem ajustado, com bico largo, salto baixo e coxim metatarsal, foi avaliado em dois estudos incluídos em uma revisão sistemática de 2019. Somando esses dois estudos, calçado e coxim deram certo em cerca de 32% das pessoas, em um acompanhamento médio de quatro meses e meio. Porém, um ensaio randomizado que comparou calçado e coxim com infiltração de corticoide mostrou que o grupo da infiltração teve seis vezes mais chance de sucesso em seis meses.',
+        'Calçado bem ajustado, com bico largo, salto baixo e coxim metatarsal, foi avaliado em dois estudos incluídos em uma revisão sistemática de 2019. Somando esses dois estudos, calçado e coxim deram certo em cerca de 32% das pessoas, em um acompanhamento médio de quatro meses e meio. Porém, um ensaio randomizado que comparou calçado e coxim com infiltração de corticoide mostrou que o grupo da infiltração teve chances de sucesso seis vezes maiores em seis meses.',
         'Na prática: troca de calçado e coxim têm baixo risco e valem a tentativa primeiro. Funcionam para algumas pessoas e não para outras. Se não ajudarem depois de quatro a seis semanas, o próximo passo costuma ser uma consulta com um profissional de saúde para conversar sobre infiltração ou mais exames de imagem.',
         'A posição importa. Um coxim muito para a frente, bem embaixo da cabeça do metatarso, pode aumentar a pressão em vez de aliviar. Coxins metatarsais adesivos de farmácia são baratos o bastante para testar, mas acertar a posição exige algumas tentativas. Um podólogo pode fazer uma órtese sob medida se os coxins prontos não estiverem funcionando.',
       ],

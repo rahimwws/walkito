@@ -15,7 +15,7 @@ export const CALF_RAISE_TEST_IT: Guide = {
   mainSource: CITE.hebertLosier,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Test sollevamento sulle punte: valori per età e protocollo',
+  title: 'Test del sollevamento sulle punte: valori per età',
   description:
     'Il test del sollevamento sulle punte misura la resistenza del polpaccio: protocollo, valori normali per età e sesso, cosa vuol dire il tuo punteggio.',
   h1: 'Test del sollevamento sulle punte: quanti dovresti farne e cosa vuol dire il tuo punteggio?',
@@ -183,7 +183,7 @@ export const CALF_RAISE_TEST_IT: Guide = {
     {
       q: 'Cosa vuol dire se una gamba è molto più debole dell’altra?',
       cites: [CITE.silbernagelHeelRise],
-      a: 'Nella riabilitazione, una differenza oltre il 10% viene di solito segnalata come possibile deficit. Negli adulti sani la differenza tipica è di una o due ripetizioni. Una differenza che resta, con dolore sul lato più debole, è un motivo per sentire un professionista sanitario. Senza dolore, seguila e allenala (Silbernagel 2010).',
+      a: 'Nella riabilitazione, una differenza oltre il 10% viene di solito segnalata come possibile deficit. Negli adulti sani la differenza tipica è di una o due ripetizioni. Una differenza che resta, con dolore sul lato più debole, è un motivo per rivolgerti a un professionista sanitario. Senza dolore, seguila e allenala (Silbernagel 2010).',
     },
     {
       q: 'Serve un metronomo per il test?',
@@ -220,7 +220,7 @@ export const CALF_RAISE_TEST_IT: Guide = {
     h2: 'Farlo come un piano',
     text: 'Walkito fa il test del sollevamento sulle punte su una gamba ogni 14\u00A0giorni e segue entrambe le gambe. L’obiettivo del polpaccio è 25\u00A0sollevamenti su una gamba. L’obiettivo di simmetria è una differenza tra sinistra e destra sotto il 10%. L’app calcola la differenza tra il lato più forte e quello più debole, divisa per il lato più forte. Quando entrambi gli obiettivi sono raggiunti, il test passa a ogni 28\u00A0giorni e il piano si sposta sul prossimo obiettivo attivo.',
     more: [
-      'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Il lavoro sul polpaccio parte dai sollevamenti da seduto e sale, al tuo ritmo, attraverso su due piedi, tenuta, con asciugamano, discese eccentriche e saltelli sulle punte. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',
+      'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Il lavoro sul polpaccio parte dai sollevamenti da seduto e sale, al tuo ritmo, ai sollevamenti su due piedi, alla tenuta, alla versione con asciugamano, alle discese eccentriche e ai saltelli sulle punte. Walkito è un programma di esercizi. Non fa diagnosi e non sostituisce un professionista sanitario.',
     ],
     cta: 'Inizia con una sessione da 3\u00A0minuti.',
   },

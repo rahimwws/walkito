@@ -12,7 +12,7 @@ export const EX_HIP_ABDUCTION_FR: Guide = {
   page: 'exHipAbduction',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Abduction de hanche pour soutenir le pied et la voûte',
+  title: 'Abduction de hanche\u00A0: soutenir le pied et la voûte',
   description:
     'L’abduction de hanche avec un élastique pour mieux contrôler le pied et la voûte\u00A0: technique, séries, lien hanche-pied, ce que dit la recherche.',
   h1: 'Abduction de hanche\u00A0: comment elle aide vos pieds et comment la faire',
@@ -71,7 +71,7 @@ export const EX_HIP_ABDUCTION_FR: Guide = {
       paragraphs: [
         'Les personnes avec des pieds plats ou une pronation excessive en profitent, car l’exercice agit sur une cause fréquente, située plus haut, de l’affaissement de la voûte. Si vos genoux ont tendance à rentrer vers l’intérieur quand vous vous accroupissez ou marchez, des abducteurs de hanche faibles y contribuent probablement.',
         'Les coureurs en profitent, car l’appui sur une jambe est la posture de base de la course. Chaque foulée retombe sur un pied. Un moyen fessier faible de ce côté laisse le genou et le pied s’affaisser vers l’intérieur, ce qui peut contribuer à la périostite tibiale, à la fasciite plantaire et au syndrome fémoro-patellaire (le «\u00A0genou du coureur\u00A0»). Voir [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) et [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/) pour en savoir plus.',
-        'Les personnes qui restent debout de longues heures, en particulier les infirmières et le personnel de vente, peuvent aussi en profiter. La station debout prolongée fatigue le moyen fessier, et en fin de journée de travail le contrôle de la hanche faiblit. Voir [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) pour des exercices à associer à l’abduction de hanche.',
+        'Les personnes qui restent debout de longues heures, en particulier le personnel infirmier et les vendeurs, peuvent aussi en profiter. La station debout prolongée fatigue le moyen fessier, et en fin de journée de travail le contrôle de la hanche faiblit. Voir [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) pour des exercices à associer à l’abduction de hanche.',
       ],
     },
     {
@@ -88,7 +88,7 @@ export const EX_HIP_ABDUCTION_FR: Guide = {
       paragraphs: [
         'Le raisonnement biomécanique qui justifie l’abduction de hanche dans les programmes pour le pied est bien établi\u00A0: des abducteurs de hanche faibles laissent le genou s’affaisser vers l’intérieur, ce qui augmente la pronation du pied et la charge sur la voûte. Plusieurs études d’observation confirment le lien entre faiblesse de la hanche et problèmes d’alignement du membre inférieur.',
         'Pour les résultats cliniques, les données les plus solides viennent de programmes combinés. L’essai de 2023 de Brijwasi et coll. comprenait un renforcement de la hanche dans un programme d’exercices de six semaines pour 52\u00A0personnes aux pieds plats souples. Le programme a amélioré la forme de la voûte. Le renforcement de la hanche n’a pas été isolé dans son propre essai sur les pieds plats ou la fasciite plantaire.',
-        'Un essai randomisé de 2024 sur 45\u00A0femmes aux pieds plats souples a comparé, sur six semaines, des exercices du pied court, un programme d’exercices combiné, et des exercices du pied court avec abduction de hanche isométrique. Le groupe qui ajoutait l’abduction de hanche isométrique aux exercices du pied court a eu une baisse nettement plus importante de l’affaissement du naviculaire (une mesure de l’effondrement de la voûte) que les deux autres groupes (Zarali et coll., 2024), ce qui soutient l’idée que le travail de la hanche apporte quelque chose que les exercices du pied seuls n’apportent pas.',
+        'Un essai randomisé de 2024 sur 45\u00A0femmes aux pieds plats souples a comparé, sur six semaines, des exercices du pied court, un programme d’exercices combiné, et des exercices du pied court avec abduction de hanche isométrique. Les trois groupes ont réduit l’affaissement du naviculaire (à quel point la voûte s’abaisse sous le poids du corps). Le groupe qui ajoutait l’abduction de hanche isométrique a le plus progressé, mais son affaissement du naviculaire n’était pas significativement meilleur que celui du programme combiné\u00A0; son balancement latéral, si (Zarali et coll., 2024). Cela laisse penser que le travail de la hanche pourrait apporter quelque chose aux exercices du pied, d’après un seul petit essai.',
         'Les données soutiennent l’abduction de hanche comme élément d’un programme plus large pour le pied. Ce n’est pas un exercice à lui seul contre la douleur de voûte, mais il comble un manque que laissent les exercices centrés sur le pied. Pages liées\u00A0: [exercices pour pieds plats](/fr/exercices-pieds-plats/), [inversion de cheville avec élastique](/fr/exercices/inversion-cheville-elastique/), [exercice du pied court](/fr/exercices/pied-court/).',
       ],
       cites: [CITE.zarali, CITE.brijwasi, CITE.cheng],
@@ -96,7 +96,7 @@ export const EX_HIP_ABDUCTION_FR: Guide = {
   ],
   faq: [
     {
-      q: 'L’abduction de hanche aide-t-elle les pieds plats\u00A0?',
+      q: 'L’abduction de hanche aide-t-elle en cas de pieds plats\u00A0?',
       cites: [CITE.brijwasi],
       a: 'L’abduction de hanche renforce le moyen fessier, qui contrôle l’alignement du genou et du pied par le haut. Un essai de 2023 sur 52\u00A0personnes aux pieds plats souples a utilisé un renforcement de la hanche au sein d’un programme combiné et a constaté une amélioration de la forme de la voûte en six semaines (Brijwasi 2023). Elle est surtout efficace dans un programme plus large, pas seule.',
     },

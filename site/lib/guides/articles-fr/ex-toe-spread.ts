@@ -12,7 +12,7 @@ export const EX_TOE_SPREAD_FR: Guide = {
   page: 'exToeSpread',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Écarter les orteils\u00A0: l’exercice pour renforcer le pied',
+  title: 'Écarter les orteils\u00A0: exercice pour muscler le pied',
   description:
     'Comment faire l’exercice pour écarter les orteils\u00A0: technique, séries, muscles travaillés, pour qui, et ce que montre la recherche en IRM.',
   h1: 'Écarter les orteils\u00A0: comment ouvrir les orteils pour renforcer le pied',
@@ -80,7 +80,7 @@ export const EX_TOE_SPREAD_FR: Guide = {
         'L’erreur la plus fréquente est de lever les orteils du sol au lieu de les écarter sur le côté. Le but est un écartement horizontal, pas une levée verticale. Gardez les orteils en léger contact avec le sol.',
         'Une autre erreur est de recroqueviller les orteils en essayant de les écarter. Cela arrive quand le cerveau ne sait pas encore séparer le mouvement d’écartement du mouvement de flexion. Cela s’améliore avec l’entraînement. Essayez d’écarter les orteils en les regardant, pour voir ce qui se passe vraiment.',
         'Certaines personnes constatent qu’au début seuls le gros orteil et le petit orteil bougent, pendant que les trois orteils du milieu restent collés. C’est normal. Les orteils du milieu ont moins de contrôle musculaire indépendant. Au fil de plusieurs semaines d’entraînement, l’écartement s’élargit.',
-        'Ne forcez pas l’écartement jusqu’à la crampe. Si le pied crampe, arrêtez, massez brièvement la zone, et réessayez avec moins de répétitions.',
+        'Ne forcez pas l’écartement jusqu’à la crampe. Si une crampe apparaît, arrêtez, massez brièvement la zone, et réessayez avec moins de répétitions.',
       ],
     },
     {
@@ -96,7 +96,7 @@ export const EX_TOE_SPREAD_FR: Guide = {
   faq: [
     {
       q: 'Combien de fois faut-il écarter les orteils\u00A0?',
-      a: 'Walkito commence à 3\u00A0séries de 10\u00A0répétitions avec un maintien de 5\u00A0secondes. C’est assez pour fatiguer les muscles sans provoquer de crampe. Si votre pied crampe avant la fin d’une série, réduisez le temps de maintien ou le nombre de répétitions, et progressez sur quelques séances.',
+      a: 'Walkito commence à 3\u00A0séries de 10\u00A0répétitions avec un maintien de 5\u00A0secondes. C’est assez pour fatiguer les muscles sans provoquer de crampe. Si une crampe apparaît avant la fin d’une série, réduisez le temps de maintien ou le nombre de répétitions, et progressez sur quelques séances.',
     },
     {
       q: 'Écarter les orteils aide-t-il en cas d’hallux valgus (oignon)\u00A0?',

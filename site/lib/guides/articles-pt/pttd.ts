@@ -61,7 +61,7 @@ export const PTTD_PT: Guide = {
     {
       h2: 'Quais exercícios ajudam na disfunção do tendão tibial posterior?',
       paragraphs: [
-        'Os exercícios abaixo trabalham o músculo tibial posterior e os músculos que sustentam o arco. A inversão com faixa treina o tibial posterior diretamente. A elevação de calcanhar com foco em subir o arco carrega o tendão durante um movimento funcional. O pé curto fortalece os músculos pequenos do pé que ajudam o arco. O alongamento de panturrilha trata um achado comum na DTTP: o tornozelo que dobra menos para cima.',
+        'Os exercícios abaixo trabalham o músculo tibial posterior e os músculos que sustentam o arco. A inversão com faixa treina o tibial posterior diretamente. A elevação de calcanhar com foco em subir o arco carrega o tendão durante um movimento funcional. O pé curto fortalece os músculos pequenos do pé que ajudam o arco. O alongamento de panturrilha cuida de um achado comum na DTTP: o tornozelo que dobra menos para cima.',
         'Os programas de exercício dos ensaios também incluíam alongamento de panturrilha e órteses. As órteses não eram opcionais em nenhum estudo. Se você tem DTTP, uma órtese de suporte do arco faz parte do programa, não substitui o exercício, e o exercício também não substitui a órtese.',
       ],
       exercises: [

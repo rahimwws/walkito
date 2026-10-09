@@ -207,7 +207,7 @@ export const HIGH_ARCHES_IT: Guide = {
     {
       q: 'Il piede cavo può causare la fascite plantare?',
       cites: [CITE.guideline],
-      a: 'Il piede cavo è elencato tra i fattori di rischio della fascite plantare. Il piede rigido mette più tensione sulla fascia plantare a ogni passo, e la fascia spesso è già rigida di partenza. Se il tuo piede cavo ha un dolore sotto il tallone che è peggio al mattino, quello schema è compatibile con la fascite plantare e valgono gli esercizi della pagina [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
+      a: 'Il piede cavo è elencato tra i fattori di rischio della fascite plantare. Il piede rigido mette più tensione sulla fascia plantare a ogni passo, e la fascia spesso è già rigida di partenza. Se hai il piede cavo e un dolore sotto il tallone che è peggio al mattino, quello schema è compatibile con la fascite plantare e valgono gli esercizi della pagina [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
     },
     {
       q: 'Come capisco se ho l’arco plantare troppo alto?',

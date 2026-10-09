@@ -13,7 +13,7 @@ export const EX_BAND_INVERSION_IT: Guide = {
   page: 'exBandInversion',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Inversione della caviglia con elastico: tibiale posteriore',
+  title: 'Inversione della caviglia con elastico: come farla',
   description:
     'Come fare l’inversione della caviglia con l’elastico per rinforzare il tibiale posteriore: tecnica, serie, errori comuni e cosa dicono gli studi.',
   h1: 'Inversione con elastico: come rinforzare il tibiale posteriore',

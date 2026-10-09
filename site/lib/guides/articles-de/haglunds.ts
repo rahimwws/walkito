@@ -20,7 +20,7 @@ export const HAGLUNDS_DE: Guide = {
     'Die Haglundferse ist ein Knochenvorsprung hinten an der Ferse, oft mit Schleimbeutelentzündung und Achillesschmerz. Ursachen, Übungen, wann operiert wird.',
   h1: 'Haglundferse: der Höcker hinten an der Ferse, woher er kommt und was hilft',
   lede:
-    'Die Haglundferse (Haglund-Exostose) ist ein knöcherner Vorsprung oben an der Rückseite des Fersenbeins. Sie sitzt genau dort, wo die Achillessehne ansetzt, und wenn Schuhe darauf drücken, wird der Schleimbeutel zwischen Knochen und Sehne gereizt. Die Folge sind Schmerzen hinten an der Ferse, Schwellung und manchmal ein sichtbarer Höcker. Konservative Behandlung ist der erste Schritt, aber die Belege dafür beruhen vor allem auf Expertenmeinungen, nicht auf Studien.',
+    'Die Haglundferse (Haglund-Exostose) ist ein knöcherner Vorsprung oben an der Rückseite des Fersenbeins. Sie sitzt genau dort, wo die Achillessehne ansetzt, und wenn Schuhe darauf drücken, wird der Schleimbeutel zwischen Knochen und Sehne gereizt. Die Folge sind Schmerzen hinten an der Ferse, Schwellung und manchmal ein sichtbarer Höcker, den manche „pump bump“ nennen. Konservative Behandlung ist der erste Schritt, aber die Belege dafür beruhen vor allem auf Expertenmeinungen, nicht auf Studien.',
   intro: [
     'Diese Seite erklärt die Anatomie, den Zusammenhang mit der insertionalen Achillessehnen-Tendinopathie und der Bursitis retrocalcanea, welche konservativen Schritte es gibt und wann eine Operation zur Sprache kommt. Wenn dein Schmerz weiter oben an der Sehne sitzt statt am Knochen, ist [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/) der bessere Ausgangspunkt. Wenn der Schmerz unter der Ferse sitzt, lies [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/).',
   ],
@@ -56,7 +56,7 @@ export const HAGLUNDS_DE: Guide = {
       h2: 'Was ist eine Bursitis retrocalcanea?',
       paragraphs: [
         'Der Schleimbeutel hinter dem Fersenbein liegt im Raum zwischen Calcaneus und Achillessehne. Seine Aufgabe ist es, Reibung zu verringern. Wenn die Haglundferse ausgeprägt ist, wird der Schleimbeutel bei der Dorsalflexion (wenn sich das Sprunggelenk so beugt, dass der Fuß nach oben kommt) zusammengedrückt. Die Folge sind Schwellung, Schmerzen und manchmal Rötung hinten an der Ferse.',
-        'Eine Bursitis retrocalcanea kann auch ohne Haglundferse auftreten, zum Beispiel nach einer plötzlichen Steigerung beim Laufen oder beim Bergauflaufen. Aber der Knochenvorsprung macht sie wahrscheinlicher. Schuhe mit starrer Fersenkappe, die auf den Höcker drücken, reizen ihn direkt mechanisch.',
+        'Eine Bursitis retrocalcanea kann auch ohne Haglundferse auftreten, zum Beispiel nach einer plötzlichen Steigerung beim Laufen oder beim Bergauflaufen. Aber der Knochenvorsprung macht sie wahrscheinlicher. Schuhe mit starrer Fersenkappe, die auf den Höcker drücken, sind ein direkter mechanischer Reiz.',
         'Der Schmerz bei einer Bursitis retrocalcanea sitzt hinten an der Ferse, tief zwischen Sehne und Knochen. Er unterscheidet sich von einer oberflächlichen Bursitis (eine empfindliche, weiche Schwellung direkt unter der Haut) und vom Schmerz an der Innenseite der Ferse bei Plantarfasziitis.',
       ],
       cites: [CITE.yuenHaglund, CITE.chooRearfoot],
@@ -220,7 +220,7 @@ export const HAGLUNDS_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Die Belastungssteigerung für die Wade bei Walkito geht vom Fersenheben im Sitzen über das beidbeinige Fersenheben, ein Halten und das exzentrische Fersenabsenken bis weiter. Bei Haglundferse und insertionalem Achillesschmerz bleibt jede Stufe auf Bodenhöhe, statt unter eine Stufenkante abzusinken. Walkito bringt dich eine Stufe höher, sobald sich zwei Einheiten auf einer Stufe leicht angefühlt haben, nicht nach festem Zeitplan.',
+    text: 'Die Belastungssteigerung für die Wade bei Walkito geht vom Fersenheben im Sitzen über das beidbeinige Fersenheben, das Halten und das exzentrische Fersenabsenken bis zu weiteren Stufen. Bei Haglundferse und insertionalem Achillesschmerz bleibt jede Stufe auf Bodenhöhe, statt unter eine Stufenkante abzusinken. Walkito bringt dich eine Stufe höher, sobald sich zwei Einheiten auf einer Stufe leicht angefühlt haben, nicht nach festem Zeitplan.',
     more: [
       'Die Einheiten dauern 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein Test Wadenausdauer und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose. Wenn du einen sichtbaren Höcker hinten an der Ferse hast und nicht sicher bist, woher der Schmerz kommt, lass ihn von einer medizinischen Fachperson untersuchen, bevor du anfängst zu belasten.',
     ],

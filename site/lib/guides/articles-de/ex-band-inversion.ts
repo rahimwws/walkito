@@ -11,7 +11,7 @@ export const EX_BAND_INVERSION_DE: Guide = {
   page: 'exBandInversion',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Einwärtsdrehen mit Band: Übung für den Tibialis posterior',
+  title: 'Einwärtsdrehen mit Band: Tibialis-posterior-Übung',
   description:
     'Fuß mit Theraband nach innen drehen, um den Tibialis posterior zu kräftigen: Technik, Sätze und Wiederholungen, häufige Fehler und was die Forschung zeigt.',
   h1: 'Einwärtsdrehen mit Band: wie du den Tibialis posterior kräftigst',
@@ -21,7 +21,7 @@ export const EX_BAND_INVERSION_DE: Guide = {
     'Eine MRT-Studie mit 5\u00A0gesunden Erwachsenen von 2004 fand, dass die Adduktion des Fußes (den Fuß nach innen drehen) die Signalintensität im Tibialis posterior um 50\u00A0% erhöhte, bei weniger als 5\u00A0% Anstieg in den umliegenden Muskeln. Damit war sie die gezielteste Übung für diesen Muskel (Kulig und Kollegen, 2004).',
     'Eine systematische Übersichtsarbeit von 2018 fand, dass Übungsprogramme mit Kräftigung des Tibialis posterior Schmerz und Funktion bei Menschen mit Tibialis-posterior-Dysfunktion verbesserten, wobei die Übersichtsarbeit festhielt, dass die meisten Studien klein waren (Ross und Kollegen, 2018).',
     'Der Tibialis posterior ist der wichtigste dynamische Stabilisator des inneren Längsgewölbes beim Stehen und Gehen. Wenn er schwächer wird, kann das Gewölbe mit der Zeit absinken.',
-    'Walkito nimmt diese Übung erst nach sechs Einheiten kurzer Fuß im Stehen dazu, damit die eigenen Muskeln des Gewölbes arbeiten, bevor das Band dazukommt.',
+    'Walkito nimmt diese Übung erst nach sechs Einheiten der Kurzer-Fuß-Übung im Stehen dazu, damit die kurzen Fußmuskeln des Gewölbes arbeiten, bevor das Band dazukommt.',
   ],
   toc: false,
   sections: [
@@ -46,7 +46,7 @@ export const EX_BAND_INVERSION_DE: Guide = {
           evidence: { level: 'moderate', why: 'Laut MRT aktiviert die Adduktion des Fußes gezielt den Tibialis posterior (Kulig 2004). Übungsprogramme mit Arbeit am Tibialis posterior verbesserten in einer systematischen Übersichtsarbeit von 2018 die Ergebnisse bei Sehnendysfunktion.' },
           dose: 'Walkito beginnt mit 3\u00A0Sätzen à 15, jeder Fuß',
           how: 'Setz dich hin, ein Widerstandsband liegt um den Vorfuß und ist so befestigt, dass es den Fuß nach außen zieht. Dreh die Fußsohle gegen das Band nach innen. Beweg den Fuß, nicht das Bein. Das Knie bleibt ruhig.',
-          often: 'Krafttage, nach sechs Einheiten kurzer Fuß im Stehen',
+          often: 'Krafttage, nach sechs Einheiten der Kurzer-Fuß-Übung im Stehen',
           feel: 'Arbeit an der Innenseite von Fuß und Sprunggelenk',
           stop: 'Der Schmerz 6/10 erreicht',
           media: 'band_inversion',
@@ -123,7 +123,7 @@ export const EX_BAND_INVERSION_DE: Guide = {
   },
   program: {
     h2: 'Als Plan umsetzen',
-    text: 'Walkito nimmt das Einwärtsdrehen mit Band nach sechs Einheiten kurzer Fuß im Stehen dazu. Diese Abfolge sorgt dafür, dass die kurzen Fußmuskeln aktiv sind, bevor der extrinsische Stabilisator belastet wird. Die Einheiten dauern 3, 5 oder 10\u00A0Minuten, und ein Test alle 14\u00A0Tage verfolgt die Haltezeit des Gewölbes und die Wadenausdauer.',
+    text: 'Walkito nimmt das Einwärtsdrehen mit Band nach sechs Einheiten der Kurzer-Fuß-Übung im Stehen dazu. Diese Abfolge sorgt dafür, dass die kurzen Fußmuskeln aktiv sind, bevor der extrinsische Stabilisator belastet wird. Die Einheiten dauern 3, 5 oder 10\u00A0Minuten, und ein Test alle 14\u00A0Tage verfolgt die Haltezeit des Gewölbes und die Wadenausdauer.',
     cta: 'Fang mit 3\u00A0Minuten am Tag an.',
   },
   crumb: 'Einwärtsdrehen mit Band (Tibialis posterior)',

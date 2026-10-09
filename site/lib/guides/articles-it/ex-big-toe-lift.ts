@@ -13,7 +13,7 @@ export const EX_BIG_TOE_LIFT_IT: Guide = {
   page: 'exBigToeLift',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Sollevamento dell’alluce (toe yoga): tecnica e benefici',
+  title: 'Sollevamento dell’alluce (toe yoga): come farlo',
   description:
     'Come fare il sollevamento dell’alluce (toe yoga): tecnica, muscoli coinvolti, serie, errori comuni e perché il controllo dell’alluce conta.',
   h1: 'Sollevamento dell’alluce (toe yoga): come farlo e perché conta',
@@ -104,7 +104,7 @@ export const EX_BIG_TOE_LIFT_IT: Guide = {
     },
     {
       q: 'Perché non riesco ad alzare solo l’alluce?',
-      a: 'La maggior parte delle persone non si allena a muovere l’alluce da solo dall’infanzia, se mai l’ha fatto. Il percorso nervoso è addormentato, non danneggiato. Con la pratica quotidiana, la maggior parte delle persone riesce a separare il movimento in due-quattro settimane. È un’abilità di coordinazione, non un problema di forza.',
+      a: 'La maggior parte delle persone non si allena a muovere l’alluce da solo dall’infanzia, se mai l’ha fatto. La via nervosa è solo inattiva, non danneggiata. Con la pratica quotidiana, la maggior parte delle persone riesce a separare il movimento in due-quattro settimane. È un’abilità di coordinazione, non un problema di forza.',
     },
     {
       q: 'Il sollevamento dell’alluce aiuta la fascite plantare?',

@@ -14,7 +14,7 @@ export const CALF_RAISE_TEST_DE: Guide = {
   mainSource: CITE.hebertLosier,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Fersenheben-Test: Normwerte nach Alter, Ablauf, Ergebnis',
+  title: 'Fersenheben-Test: Normwerte nach Alter und Ablauf',
   description:
     'Der Fersenheben-Test auf einem Bein misst die Wadenausdauer: Ablauf, Normwerte nach Alter und Geschlecht, was dein Ergebnis heißt, wie du es verbesserst.',
   h1: 'Fersenheben-Test: Wie oft solltest du es schaffen, und was sagt dein Ergebnis?',
@@ -33,11 +33,11 @@ export const CALF_RAISE_TEST_DE: Guide = {
   sections: [
     {
       h2: 'Was misst der Fersenheben-Test auf einem Bein?',
-      keyFact: 'In einer Fall-Kontroll-Studie mit 20\u00A0Sportlerinnen und Sportlern hatten diejenigen mit medialem Tibiakantensyndrom (Schienbeinkantensyndrom) eine geringere Wadenausdauer als gesunde Kontrollen (Madeley und Kollegen, 2007).',
+      keyFact: 'In einer Fall-Kontroll-Studie mit 20\u00A0Sportlerinnen und Sportlern hatten diejenigen mit medialem tibialem Stresssyndrom (Schienbeinkantensyndrom) eine geringere Wadenausdauer als gesunde Kontrollen (Madeley und Kollegen, 2007).',
       paragraphs: [
         'Der Test misst die Ausdauer der Plantarflexoren, der Muskeln, die den Fuß nach unten drücken und die Ferse vom Boden heben. Die wichtigsten sind der Gastrocnemius (der größere, oberflächlichere Wadenmuskel) und der Soleus (der tiefere darunter). Zusammen setzen sie über die Achillessehne am Fersenbein an.',
         'Ausdauer heißt hier, wie viele Wiederholungen du schaffst, bevor die Wade ermüdet und die Ferse nicht mehr hoch genug kommt oder den Takt nicht mehr halten kann. Die Zahl erfasst die Fähigkeit, Arbeit über Dutzende Zyklen durchzuhalten, und das liegt näher an dem, was die Wade beim Gehen und Laufen tut, als ein einzelner schwerer Stoß.',
-        'Medizinische Fachpersonen nutzen den Test, um die Erholung nach einem Achillessehnenriss zu verfolgen, um bei Menschen mit Fersenschmerzen oder Schienbeinkantensyndrom nach einer schwachen Wade zu suchen und um ein Bein mit dem anderen zu vergleichen. Sportlerinnen und Sportler mit medialem Tibiakantensyndrom (Schienbeinkantensyndrom) hatten in einer Fall-Kontroll-Studie mit 20\u00A0Sportlerinnen und Sportlern eine geringere Wadenausdauer als gesunde Kontrollen.',
+        'Medizinische Fachpersonen nutzen den Test, um die Erholung nach einem Achillessehnenriss zu verfolgen, um bei Menschen mit Fersenschmerzen oder Schienbeinkantensyndrom nach einer schwachen Wade zu suchen und um ein Bein mit dem anderen zu vergleichen. Sportlerinnen und Sportler mit medialem tibialem Stresssyndrom (Schienbeinkantensyndrom) hatten in einer Fall-Kontroll-Studie mit 20\u00A0Sportlerinnen und Sportlern eine geringere Wadenausdauer als gesunde Kontrollen.',
       ],
       cites: [CITE.hebertLosier, CITE.madeley],
     },
@@ -220,7 +220,7 @@ export const CALF_RAISE_TEST_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Walkito macht den einbeinigen Fersenheben-Test alle 14\u00A0Tage und verfolgt beide Beine. Das Wadenziel ist 25-mal einbeiniges Fersenheben. Das Symmetrieziel ist ein Unterschied zwischen links und rechts unter 10\u00A0%. Die App berechnet den Unterschied als Differenz zwischen stärkerer und schwächerer Seite, geteilt durch die stärkere Seite. Sobald beide Ziele erreicht sind, wird der Test auf alle 28\u00A0Tage ausgeweitet, und der Plan wechselt zum nächsten aktiven Ziel.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Die Wadenarbeit beginnt mit Fersenheben im Sitzen und steigt in deinem Tempo über beidbeinig, mit Halten, mit Handtuch, exzentrisches Fersenabsenken und Pogo-Sprünge auf. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Die Wadenarbeit beginnt mit Fersenheben im Sitzen und steigt in deinem Tempo über beidbeiniges Fersenheben, Halten und Fersenheben mit Handtuch bis zum exzentrischen Fersenabsenken und zu Pogo-Sprüngen auf. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
     ],
     cta: 'Fang mit einer Einheit von 3\u00A0Minuten an.',
   },

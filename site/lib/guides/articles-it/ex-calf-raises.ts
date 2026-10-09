@@ -133,7 +133,7 @@ export const EX_CALF_RAISES_IT: Guide = {
     {
       h2: 'Sollevamenti sulle punte per la fascite plantare o per la tendinite d’Achille',
       paragraphs: [
-        'Per la fascite plantare, le prove indicano il [sollevamento sulle punte con asciugamano](/it/esercizi/sollevamento-tallone-asciugamano/), in cui l’asciugamano sotto le dita carica la fascia insieme al polpaccio. La soglia del dolore è 6/10. La pagina completa sul problema è [sollevamenti sui talloni per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/).',
+        'Per la fascite plantare, le prove indicano il [sollevamento sulle punte con asciugamano](/it/esercizi/sollevamento-tallone-asciugamano/), in cui l’asciugamano sotto le dita carica la fascia insieme al polpaccio. La soglia del dolore è 6/10. La pagina completa sul problema è [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/).',
         'Per la tendinite d’Achille, l’attenzione si sposta sulle [discese eccentriche del tallone](/it/esercizi/discese-eccentriche-tallone/), dove il punto è la fase di discesa e l’asciugamano non si usa. Il modello del dolore di uno studio permette di caricare fino a circa 5/10, purché il dolore passi entro la mattina dopo. La pagina completa è [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
         'Il sollevamento su due piedi, quello da seduto e la tenuta isometrica compaiono in entrambi i percorsi come primi passi. Costruiscono la forza di base che rende possibile l’esercizio specifico con carico.',
       ],
@@ -173,7 +173,7 @@ export const EX_CALF_RAISES_IT: Guide = {
   },
   program: {
     h2: 'Farlo come un piano',
-    text: 'Walkito costruisce un piano che parte dal tuo livello e sale quando sei pronto. La progressione per il polpaccio va dai sollevamenti da seduto a quelli in piedi su due piedi, la tenuta, il sollevamento con asciugamano, le discese eccentriche del tallone e i saltelli pogo. Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti.',
+    text: 'Walkito costruisce un piano che parte dal tuo livello e sale quando sei pronto. La progressione per il polpaccio va dai sollevamenti da seduto a quelli in piedi su due piedi, poi alla tenuta, al sollevamento con asciugamano, alle discese eccentriche del tallone e ai saltelli sulle punte. Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti.',
     more: [
       'Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio ed equilibrio. L’obiettivo per il polpaccio è di 25\u00A0sollevamenti su una gamba. Raggiungerlo non chiude il lavoro: al suo posto arriva un nuovo obiettivo. Walkito è un programma di esercizi. Non fa diagnosi.',
     ],

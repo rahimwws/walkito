@@ -31,7 +31,7 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
     'Fraturas por estresse do calcâneo podem doer ou latejar à noite e normalmente pioram com o apoio contínuo do peso, em vez de melhorar com o aquecimento (Patel e colegas, 2011).',
     'A síndrome do túnel do tarso e a compressão do nervo de Baxter, ramos do nervo tibial comprimidos, causam uma dor no calcanhar com queimação ou formigamento, de característica diferente da fascite (Tu, 2018). A compressão do nervo de Baxter, especificamente, pode responder por até 20% da dor crônica no calcanhar e pode aparecer em repouso (Tedeschi, 2025).',
     'Dor nos dois calcanhares com rigidez prolongada pela manhã pode indicar artrite inflamatória, como uma espondiloartropatia. Em um grupo de 174\u00A0pessoas com fascite plantar, dor nos dois calcanhares foi um preditor significativo de sintomas mais duradouros (Hansen e colegas, 2018).',
-    'A diretriz de 2023 para dor no calcanhar dá às talas noturnas o grau **A** para fascite plantar persistente, mas o objetivo delas é evitar que a fáscia encurte durante a noite, e não tratar os tipos de dor noturna descritos nesta página (Koc e colegas, 2023).',
+    'A diretriz de 2023 para dor no calcanhar dá às talas noturnas o grau **A** para fascite plantar persistente, mas o objetivo delas é evitar que a fáscia encurte durante a noite, e não cuidar dos tipos de dor noturna descritos nesta página (Koc e colegas, 2023).',
   ],
   toc: true,
   sections: [
@@ -40,7 +40,7 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
       paragraphs: [
         'A fascite plantar dói porque a fáscia enrijece enquanto você dorme e depois estica de uma vez quando você fica em pé. Essa dor é máxima no primeiro passo e melhora conforme você se movimenta. Se o seu calcanhar dói enquanto você está deitado na cama, sem nenhum peso no pé, normalmente o mecanismo é outro.',
         'Uma revisão de 2018 na American Family Physician lista várias causas de dor no calcanhar que se comportam de um jeito diferente da fascite plantar. A diferença principal: a dor da fascite plantar melhora com a atividade, enquanto a dor de fraturas por estresse, nervos comprimidos, tumores e condições inflamatórias não segue esse padrão.',
-        'O pé também fica apontado para baixo (flexão plantar) durante o sono. Essa posição pode encurtar o tendão de Aquiles e a panturrilha, o que às vezes contribui para o desconforto no calcanhar. As talas noturnas tratam disso segurando o tornozelo num ângulo neutro. Mas a tala noturna é uma ferramenta para fascite plantar, não um substituto para investigar uma dor que realmente piora em repouso.',
+        'O pé também fica apontado para baixo (flexão plantar) durante o sono. Essa posição pode encurtar o tendão de Aquiles e a panturrilha, o que às vezes contribui para o desconforto no calcanhar. As talas noturnas agem sobre isso segurando o tornozelo num ângulo neutro. Mas a tala noturna é uma ferramenta para fascite plantar, não um substituto para investigar uma dor que realmente piora em repouso.',
       ],
       cites: [CITE.tedeschiBaxter, CITE.tuHeelPain, CITE.guideline],
     },
@@ -77,7 +77,7 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
       h2: 'A fascite plantar pode piorar à noite?',
       paragraphs: [
         'A fascite plantar às vezes incomoda à noite depois de um dia longo em pé. Essa é uma dor ligada à atividade, da carga acumulada, e não é a mesma coisa que uma dor que acorda você ou aparece quando você está deitado sem nenhum peso no pé.',
-        'Algumas pessoas também sentem desconforto no calcanhar quando o pé cai numa posição apontada durante o sono, puxando a fáscia plantar. É disso que as talas noturnas tratam. A diretriz de 2023 dá às talas noturnas o grau **A**, o seu grau de evidência mais alto, para fascite plantar persistente. Elas seguram o tornozelo num ângulo neutro para a fáscia não encurtar durante a noite.',
+        'Algumas pessoas também sentem desconforto no calcanhar quando o pé cai numa posição apontada durante o sono, puxando a fáscia plantar. É para isso que servem as talas noturnas. A diretriz de 2023 dá às talas noturnas o grau **A**, o seu grau de evidência mais alto, para fascite plantar persistente. Elas seguram o tornozelo num ângulo neutro para a fáscia não encurtar durante a noite.',
         'Se a dor é realmente pior à noite e em repouso, em vez de melhorar com o movimento na manhã seguinte, esse padrão se afasta da fascite plantar e se aproxima das condições acima. Não assuma que é fascite e siga em frente apesar da dor.',
       ],
       cites: [CITE.guideline],
@@ -87,7 +87,7 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
       keyFact: 'A diretriz de 2023 para dor no calcanhar dá às talas noturnas o grau A, o seu grau de evidência mais alto, para fascite plantar, normalmente usadas por um a três meses (Koc e colegas, 2023).',
       paragraphs: [
         'A tala noturna é uma órtese que segura o tornozelo a 90\u00A0graus enquanto você dorme. A ideia é evitar que a panturrilha e a fáscia plantar encurtem durante a noite, para o primeiro passo da manhã doer menos.',
-        'A diretriz de 2023 para dor no calcanhar dá às talas noturnas o grau **A** para fascite plantar. Normalmente elas são recomendadas por 1 a 3\u00A0meses quando a dor nos primeiros passos não melhorou só com alongamentos e exercícios de carga. Elas não tratam dor de nervo, fraturas por estresse nem condições inflamatórias.',
+        'A diretriz de 2023 para dor no calcanhar dá às talas noturnas o grau **A** para fascite plantar. Normalmente elas são recomendadas por 1 a 3\u00A0meses quando a dor nos primeiros passos não melhorou só com alongamentos e exercícios de carga. Elas não servem para dor de nervo, fraturas por estresse nem condições inflamatórias.',
         'Para a maioria das pessoas, a tala noturna não é um dispositivo de longo prazo. É desconfortável dormir com ela, e o benefício é específico para o padrão de rigidez da manhã. Se a sua dor noturna não é do tipo encurta-e-estica, é pouco provável que a tala ajude, e ela pode atrasar o diagnóstico certo.',
       ],
       cites: [CITE.guideline],
@@ -151,7 +151,7 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
     {
       q: 'Tala noturna ajuda na dor no calcanhar à noite?',
       cites: [CITE.guideline],
-      a: 'As talas noturnas seguram o tornozelo a 90\u00A0graus para evitar que a panturrilha e a fáscia encurtem. A diretriz de 2023 para dor no calcanhar dá a elas o grau **A** para fascite plantar persistente. Elas ajudam no padrão de rigidez da manhã. Não tratam dor de nervo, fraturas por estresse nem condições inflamatórias.',
+      a: 'As talas noturnas seguram o tornozelo a 90\u00A0graus para evitar que a panturrilha e a fáscia encurtem. A diretriz de 2023 para dor no calcanhar dá a elas o grau **A** para fascite plantar persistente. Elas ajudam no padrão de rigidez da manhã. Não servem para dor de nervo, fraturas por estresse nem condições inflamatórias.',
     },
     {
       q: 'Como saber se é fascite plantar ou fratura por estresse?',
@@ -175,12 +175,12 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
     },
     {
       q: 'O que passar no calcanhar para a dor à noite?',
-      a: 'Gelo é o primeiro passo mais comum: uma bolsa de gelo ou uma garrafa de água congelada no ponto dolorido pode aliviar a dor mais superficial. Nada disso trata uma fratura por estresse, um nervo comprimido ou uma artrite inflamatória, as condições mais ligadas à dor noturna de verdade, então uma compressa fria não substitui descobrir a causa.',
+      a: 'Gelo é o primeiro passo mais comum: uma bolsa de gelo ou uma garrafa de água congelada no ponto dolorido pode aliviar a dor mais superficial. Nada disso resolve uma fratura por estresse, um nervo comprimido ou uma artrite inflamatória, as condições mais ligadas à dor noturna de verdade, então uma compressa fria não substitui descobrir a causa.',
     },
     {
       q: 'O que não fazer se o calcanhar dói à noite?',
       cites: [CITE.tuHeelPain, CITE.patelStressFracture],
-      a: 'Não assuma que é fascite plantar e continue forçando se a dor não segue o padrão de doer no primeiro passo e depois melhorar. Não ignore uma dor que acorda você, piora com a caminhada contínua, ou vem com queimação, formigamento ou inchaço. Tratar sozinho uma dor em repouso com alongamentos ou talas noturnas pode atrasar o diagnóstico de uma fratura por estresse, de um nervo comprimido ou de uma artrite inflamatória.',
+      a: 'Não assuma que é fascite plantar e continue forçando se a dor não segue o padrão de doer no primeiro passo e depois melhorar. Não ignore uma dor que acorda você, piora com a caminhada contínua, ou vem com queimação, formigamento ou inchaço. Cuidar sozinho de uma dor em repouso com alongamentos ou talas noturnas pode atrasar o diagnóstico de uma fratura por estresse, de um nervo comprimido ou de uma artrite inflamatória.',
     },
   ],
   redFlags: {

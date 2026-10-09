@@ -12,7 +12,7 @@ export const HAMMER_TOE_DE: Guide = {
   mainSource: CITE.malhotra,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Übungen bei Hammerzehe: flexibel oder starr, was hilft',
+  title: 'Übungen bei Hammerzehe: flexibel, starr, was hilft',
   description:
     'Übungen bei Hammerzehe, solange sie flexibel ist, der Unterschied zur Krallenzehe, Tipps für Schuhe und wann über eine Operation gesprochen wird.',
   h1: 'Übungen bei Hammerzehe: was sie können und wie die Studienlage ist',
@@ -127,7 +127,7 @@ export const HAMMER_TOE_DE: Guide = {
       h2: 'Lässt sich eine Hammerzehe ohne Operation rückgängig machen?',
       paragraphs: [
         'Wenn die Hammerzehe noch flexibel ist, können konservative Maßnahmen wie Übungen, Dehnen, breitere Schuhe und Tapen ein Fortschreiten vielleicht verhindern und den Komfort verbessern. Die betroffene Zehe an die Nachbarzehe zu tapen, kann sie über den Tag sanft in einer neutraleren Stellung halten. Aber für keine dieser Maßnahmen wurde gezeigt, dass sie die Fehlstellung dauerhaft korrigiert.',
-        'Sobald eine Hammerzehe starr ist, ist das Gelenk kontrakt und lässt sich nicht mehr strecken. An diesem Punkt ändern Übungen und Dehnen die Form nicht. Es geht dann darum, die Haut vor Reibung zu schützen und den Druck mit Polstern und Schuhen zu steuern.',
+        'Sobald eine Hammerzehe starr ist, ist das Gelenk eingesteift und lässt sich nicht mehr strecken. An diesem Punkt ändern Übungen und Dehnen die Form nicht. Es geht dann darum, die Haut vor Reibung zu schützen und den Druck mit Polstern und Schuhen zu steuern.',
         'Wie schnell eine flexible Hammerzehe starr wird, ist unterschiedlich. Bei manchen bleibt sie jahrelang flexibel. Schuhe mit breiter Zehenbox zu tragen und die Beweglichkeit der Zehen mit täglichem Dehnen und Übungen zu erhalten, sind die am häufigsten empfohlenen Strategien, um das Fortschreiten zu bremsen.',
       ],
     },

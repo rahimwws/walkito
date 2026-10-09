@@ -15,7 +15,7 @@ export const ARCH_PAIN_DE: Guide = {
   mainSource: CITE.guideline,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Schmerzen im Fußgewölbe: Ursachen, Übungen, wann zum Arzt',
+  title: 'Schmerzen im Fußgewölbe: Ursachen und Übungen',
   description:
     'Schmerzen im Fußgewölbe beim Gehen: Plantarfasziitis, Plattfuß, Tibialis-posterior-Insuffizienz, Hohlfuß oder Nerven. Unterschiede, Übungen, wann zum Arzt.',
   h1: 'Schmerzen im Fußgewölbe: woher sie kommen und was du tun kannst',
@@ -39,7 +39,7 @@ export const ARCH_PAIN_DE: Guide = {
         '**Tibialis-posterior-Insuffizienz** ist die häufigste Ursache eines im Erwachsenenalter erworbenen Plattfußes. Die Tibialis-posterior-Sehne verläuft hinter dem Innenknöchel und unter das Gewölbe und hält es hoch. Wenn diese Sehne schwächer wird oder reißt, sinkt das Gewölbe allmählich ab. Der Schmerz ist entlang des Innenknöchels und im Gewölbe spürbar und wird bei Aktivität schlimmer. Eine systematische Übersichtsarbeit von 2018 zu Übungen bei Tibialis-posterior-Insuffizienz fand begrenzte, aber vielversprechende Belege für Kräftigen und Dehnen. Lies [Übungen bei Tibialis-posterior-Insuffizienz](/de/tibialis-posterior-insuffizienz/).',
         '**Hohlfuß (Pes cavus)** verursacht Schmerzen im Gewölbe auf andere Weise. Ein steifes, hohes Gewölbe gibt nicht genug nach, um Stöße abzufangen, deshalb konzentriert sich die Kraft unter der Ferse und dem Fußballen, statt sich über den Mittelfuß zu verteilen. Schmerz unter dem Gewölbe kommt bei einem Hohlfuß oft von einer verkürzten Plantarfaszie. Lies [Übungen bei Hohlfuß](/de/hohlfuss-uebungen/).',
         '**Überlastung** ohne eine benannte Erkrankung ist häufig bei Menschen, die plötzlich mehr gehen, laufen oder stehen. Die Gewölbemuskeln und die Plantarfaszie sind für die neue Anforderung noch nicht kräftig genug und melden sich. Meist wird das besser, wenn du schrittweise zur vorherigen Belastung zurückkehrst und dazu Wade und Gewölbe kräftigst.',
-        '**Eine Nervenreizung** wie das Tarsaltunnelsyndrom kann Brennen, Kribbeln oder Taubheit entlang des Gewölbes verursachen. Der Schienbeinnerv (Nervus tibialis) verläuft hinter dem Innenknöchel in die Fußsohle. Wenn er eingeklemmt wird, kann der Schmerz einer Plantarfasziitis ähneln, kommt aber mit Gefühlsstörungen, die eine Fasziitis nicht macht. Das gehört zu einer medizinischen Fachperson.',
+        '**Eine Nervenreizung** wie das Tarsaltunnelsyndrom kann Brennen, Kribbeln oder Taubheit entlang des Gewölbes verursachen. Der Schienbeinnerv (Nervus tibialis) verläuft hinter dem Innenknöchel in die Fußsohle. Wenn er eingeklemmt wird, kann der Schmerz einer Plantarfasziitis ähneln, geht aber mit Gefühlsstörungen einher, die eine Fasziitis nicht macht. Das sollte eine medizinische Fachperson abklären.',
       ],
       cites: [CITE.guideline, CITE.posteriorTibialReview, CITE.riddle],
     },
@@ -101,12 +101,12 @@ export const ARCH_PAIN_DE: Guide = {
           name: 'Soleusdehnung (Knie gebeugt)',
           evidence: { level: 'strong', why: 'Dieselbe Bewertung A in der Leitlinie. Zielt auf den Soleus, den tieferen Wadenmuskel.' },
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
-          how: 'Dieselbe Position an der Wand, dann beug das hintere Knie, bis du die Dehnung tiefer spürst, nahe der Ferse. Der Soleus, der tiefere Wadenmuskel, wird nur mit gebeugtem Knie gedehnt.',
+          how: 'Dieselbe Position an der Wand, dann beug das hintere Knie, bis du die Dehnung weiter unten spürst, nahe der Ferse. Der Soleus, der tiefere Wadenmuskel, wird nur mit gebeugtem Knie gedehnt.',
           often: 'Die meisten Einheiten',
           feel: 'Eine Dehnung nahe der Ferse',
           stop: 'Der Schmerz 6/10 erreicht',
           media: 'calf_stretch_bent',
-          caption: 'Soleusdehnung: Beug das hintere Knie, bis die Dehnung tiefer wandert',
+          caption: 'Soleusdehnung: Beug das hintere Knie, bis die Dehnung nach unten wandert',
           alt: 'Eine Figur in Schrittstellung mit gebeugten Knien, die untere Wade ist hervorgehoben',
         },
         {
@@ -172,7 +172,7 @@ export const ARCH_PAIN_DE: Guide = {
     {
       h2: 'Und Einlagen und Schuhe bei Schmerzen im Fußgewölbe?',
       paragraphs: [
-        'Die Leitlinie von 2023 zu Fersenschmerzen bewertet Einlagen als alleinige Maßnahme bei kurzfristigen Schmerzen durch Plantarfasziitis mit **B dagegen**. Einlagen in Kombination mit anderer Behandlung, etwa Dehnen, bekommen ein C dafür. Stützende Schuhe werden häufig empfohlen und können Beschwerden verringern, aber keine große Studie hat gezeigt, dass sie besser sind als Dehnen und Krafttraining.',
+        'Die Leitlinie von 2023 zu Fersenschmerzen bewertet Einlagen als alleinige Maßnahme bei kurzfristigen Schmerzen durch Plantarfasziitis mit B dagegen. Einlagen in Kombination mit anderer Behandlung, etwa Dehnen, bekommen ein C dafür. Stützende Schuhe werden häufig empfohlen und können Beschwerden verringern, aber keine große Studie hat gezeigt, dass sie besser sind als Dehnen und Krafttraining.',
         'Bei Plattfuß kann eine Gewölbestütze an der Innenseite das Absinken des Gewölbes beim Stehen und Gehen verringern, sodass Tibialis-posterior-Sehne und Plantarfaszie weniger Arbeit haben. Bei Hohlfuß fängt eine gedämpfte Einlage die Stöße ab, die das steife Gewölbe nicht abfängt. In einer Studie von 2006 mit 154\u00A0Menschen mit Fußschmerzen durch Hohlfuß verbesserten maßgefertigte Einlagen Schmerz und Funktion nach drei Monaten stärker als eine Schein-Einlage (Burns und Kollegen, 2006).',
         'Schuhe und Einlagen helfen, die Beschwerden in den Griff zu bekommen, während Übungen die Belastbarkeit aufbauen, die der Fuß braucht. Das eine ersetzt nicht das andere.',
       ],
@@ -242,7 +242,7 @@ export const ARCH_PAIN_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Wenn dein Schmerz im Gewölbe dem Muster der Plantarfasziitis folgt, baut Walkito einen Plan rund um jeweils ein Ziel. Das erste Ziel ist ein besserer Morgen: Schmerz bei 1/10 oder weniger an 14\u00A0Tagen am Stück. Das Gewölbe bekommt ein eigenes Ziel und eigene Übungen. Wenn dein Schmerz im Gewölbe von einem Plattfuß kommt, kann die App an Schmerz und Gewölbe als getrennten Zielen arbeiten.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn du nicht sicher bist, woher dein Schmerz im Gewölbe kommt, geh zu einer medizinischen Fachperson, bevor du es mit Übungen belastest.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson. Wenn du nicht sicher bist, woher dein Schmerz im Gewölbe kommt, geh zu einer medizinischen Fachperson, bevor du den Fuß mit Übungen belastest.',
     ],
     cta: 'Fang mit 3\u00A0Minuten am Tag an.',
   },

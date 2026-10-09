@@ -21,7 +21,7 @@ export const BALL_OF_FOOT_DE: Guide = {
   lede:
     'Du drückst dich vom Boden ab, und da ist er: ein stechender Schmerz direkt hinter den Zehen, als würdest du auf einem Kieselstein gehen. Der Fußballen trägt bei jedem Schritt dein ganzes Körpergewicht, und mehrere verschiedene Erkrankungen können ihn schmerzen lassen. Diese Seite zeigt, welche das sind, was die Studienlage zu Übungen und Schuhen sagt und wo die ehrlichen Lücken in der Forschung liegen.',
   intro: [
-    'Der klinische Oberbegriff ist Metatarsalgie, also Schmerz rund um die Mittelfußköpfchen, die knöchernen Knöchel hinter den Zehen. Aber Metatarsalgie beschreibt, wo es wehtut, sie ist keine Diagnose. Unter diesem Begriff stecken mehrere verschiedene Probleme, und nicht alle sprechen auf dasselbe an.',
+    'Der klinische Oberbegriff ist Metatarsalgie, also Schmerz rund um die Mittelfußköpfchen, die Knochenenden direkt hinter den Zehen. Aber Metatarsalgie beschreibt, wo es wehtut, sie ist keine Diagnose. Unter diesem Begriff stecken mehrere verschiedene Probleme, und nicht alle sprechen auf dasselbe an.',
   ],
   toc: true,
   takeaways: [
@@ -78,7 +78,7 @@ export const BALL_OF_FOOT_DE: Guide = {
       keyFact: 'Bei 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius, eine verkürzte Wade, die auch mit Überlastung des Vorfußes in Verbindung steht (Patel und DiGiovanni, 2011).',
       paragraphs: [
         'Sehr wahrscheinlich. Wenn der Gastrocnemius verkürzt ist, kann sich das Sprunggelenk beim Gehen nicht genug beugen. Der Körper hebt die Ferse früher an, was mehr Gewicht auf den Fußballen bringt. Der Fachbegriff dafür ist funktioneller Spitzfuß (Equinus), und er ist eine anerkannte Ursache der Metatarsalgie.',
-        'Die Zahlen stammen aus der Forschung zur Plantarfasziitis, aber der Mechanismus ist derselbe. Bei 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius. Eine Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen fand, dass eine eingeschränkte Dorsalflexion im Sprunggelenk (wie weit sich der Fuß Richtung Schienbein beugen lässt) der stärkste unabhängige Risikofaktor war, mit dem 23,3-Fachen der Wahrscheinlichkeit.',
+        'Die Zahlen stammen aus der Forschung zur Plantarfasziitis, aber der Mechanismus ist derselbe. Bei 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius. Eine Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen fand, dass eine eingeschränkte Dorsalflexion im Sprunggelenk (wie weit sich der Fuß Richtung Schienbein beugen lässt) der stärkste unabhängige Risikofaktor war, mit 23,3-fachen Odds.',
         'Keine Studie hat Wadendehnung speziell bei Metatarsalgie getestet, aber der Zusammenhang ist klinisch anerkannt. Mehr zur Verbindung von Wade und Sprunggelenk findest du unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle],
@@ -87,7 +87,7 @@ export const BALL_OF_FOOT_DE: Guide = {
       h2: 'Was ist mit Pelotten, Einlagen und Schuhen?',
       paragraphs: [
         'Mittelfußpolster, auch Pelotten genannt, sind der am weitesten verbreitete konservative Ansatz. Ein Polster direkt hinter den Mittelfußköpfchen hebt den Knochenschaft leicht an und verteilt den Druck auf eine größere Fläche. Die Position zählt. Zu weit vorn, direkt unter dem Köpfchen, kann es den Schmerz verstärken.',
-        'Schuhe mit Abrollsohle verringern den Druck auf den Vorfuß, weil der Fuß beim Abdruck abrollen kann, ohne sich in den Mittelfußgelenken zu beugen. Eine breite Zehenbox verhindert, dass die Köpfchen zusammengedrückt werden. Weg von engen Schuhen oder Absätzen ist oft der einfachste erste Schritt.',
+        'Schuhe mit Abrollsohle verringern den Druck auf den Vorfuß, weil der Fuß beim Abdruck abrollen kann, ohne sich in den Mittelfußgelenken zu beugen. Eine breite Zehenbox verhindert, dass die Köpfchen zusammengedrückt werden. Auf enge Schuhe oder Absätze zu verzichten, ist oft der einfachste erste Schritt.',
         'Polster und Schuhe verändern, wie sich die Last verteilt. Übungen bauen die Kraft und Beweglichkeit auf, um diese Last zu tragen. Wenn [langes Stehen](/de/fussschmerzen-vom-stehen/) mit dazugehört, zählt beides.',
       ],
     },
@@ -166,12 +166,12 @@ export const BALL_OF_FOOT_DE: Guide = {
         {
           name: 'Wadendehnung (gebeugtes Knie)',
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
-          how: 'Dieselbe Position wie bei der Dehnung mit gestrecktem Knie, dann beug das hintere Knie, bis die Dehnung tiefer wandert, nahe der Achillessehne. Das zielt auf den Soleus, den tieferen Wadenmuskel, der nur mit gebeugtem Knie loslässt.',
-          feel: 'Eine Dehnung tiefer in der Wade, nahe der Ferse',
+          how: 'Dieselbe Position wie bei der Dehnung mit gestrecktem Knie, dann beug das hintere Knie, bis die Dehnung nach unten wandert, nahe der Achillessehne. Das zielt auf den Soleus, den tieferen Wadenmuskel, der nur mit gebeugtem Knie loslässt.',
+          feel: 'Eine Dehnung weiter unten in der Wade, nahe der Ferse',
           stop: 'Schmerz in der Achillessehne',
           evidence: { level: 'strong', why: 'Dieselbe Bewertung A der Leitlinie. Zielt auf den Soleus, der ebenfalls zur Steifheit im Sprunggelenk beiträgt.' },
           media: 'calf_stretch_bent',
-          caption: 'Soleusdehnung: Beug das hintere Knie, bis die Dehnung tiefer wandert',
+          caption: 'Soleusdehnung: Beug das hintere Knie, bis die Dehnung nach unten wandert',
           alt: 'Eine Figur in Schrittstellung mit gebeugten Knien, der Soleus ist hervorgehoben',
         },
       ],
@@ -181,7 +181,7 @@ export const BALL_OF_FOOT_DE: Guide = {
       h2: 'Was die Studienlage sagt und was nicht',
       paragraphs: [
         'Die Belege für Übungen bei Schmerzen im Fußballen sind dünner als bei [Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder Achillessehnenentzündung, wo es randomisierte Studien gibt. Für die Metatarsalgie gibt es eine Vorher-nachher-Studie mit 41\u00A0Personen und ohne Kontrollgruppe. Die biomechanische Begründung ist schlüssig, und das Risiko sanfter Zehenübungen und Wadendehnungen ist gering, aber der direkte Beweis aus einer kontrollierten Studie fehlt.',
-        'Übungen allein reichen vielleicht nicht. Pelotten, Schuhe mit breiter Zehenbox und weniger Zeit in Absätzen haben einen breiteren klinischen Konsens. Beim Morton-Neurom sind andere Schuhe und Polster oft wirksamer als Übungen. Bei einem Ermüdungsbruch eines Mittelfußknochens sind Übungen der falsche Weg, bis der Knochen verheilt ist. Wenn der Schmerz schon mehr als ein paar Wochen anhält oder mit Taubheit oder Schwellung einhergeht, lass es zuerst abklären. [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) behandelt die Belastungssteuerung für Läuferinnen und Läufer.',
+        'Übungen allein reichen vielleicht nicht. Pelotten, Schuhe mit breiter Zehenbox und weniger Zeit in Absätzen haben einen breiteren klinischen Konsens. Beim Morton-Neurom sind andere Schuhe und Polster oft wirksamer als Übungen. Bei einem Ermüdungsbruch eines Mittelfußknochens sind Übungen der falsche Weg, bis der Knochen verheilt ist. Wenn der Schmerz schon mehr als ein paar Wochen anhält oder mit Taubheit oder Schwellung einhergeht, lass es zuerst abklären. [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) erklärt die Belastungssteuerung für Läuferinnen und Läufer.',
       ],
       cites: [CITE.amaha, CITE.rathleff],
     },
@@ -190,7 +190,7 @@ export const BALL_OF_FOOT_DE: Guide = {
     {
       q: 'Was ist eine Metatarsalgie?',
       cites: [CITE.amaha],
-      a: 'Metatarsalgie ist Schmerz und Entzündung rund um die Mittelfußköpfchen, die knöchernen Knöchel am Fußballen. Sie beschreibt, wo es wehtut, und ist keine einzelne Diagnose. Häufige Ursachen sind Überlastung, ein Hohlfuß, verkürzte Wadenmuskeln und geschwächte Zehenbeuger. In einer Studie mit 41\u00A0Personen verbesserten Zehenübungen den Schmerz im Schnitt um 2,7\u00A0Punkte auf einer 10-Punkte-Skala (Amaha 2020).',
+      a: 'Metatarsalgie ist Schmerz und Entzündung rund um die Mittelfußköpfchen, die Knochenenden am Fußballen. Sie beschreibt, wo es wehtut, und ist keine einzelne Diagnose. Häufige Ursachen sind Überlastung, ein Hohlfuß, verkürzte Wadenmuskeln und geschwächte Zehenbeuger. In einer Studie mit 41\u00A0Personen verbesserten Zehenübungen den Schmerz im Schnitt um 2,7\u00A0Punkte auf einer 10-Punkte-Skala (Amaha 2020).',
     },
     {
       q: 'Metatarsalgie oder Morton-Neurom, wie erkenne ich den Unterschied?',

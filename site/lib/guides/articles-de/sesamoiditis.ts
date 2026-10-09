@@ -12,7 +12,7 @@ export const SESAMOIDITIS_DE: Guide = {
   mainSource: CITE.bizSesamoiditis,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Sesamoiditis: Ursachen, Entlastung und wann Bildgebung hilft',
+  title: 'Sesamoiditis: Ursachen, Entlastung, Bildgebung',
   description:
     'Sesamoiditis: Schmerzen unter dem Großzehengrundgelenk. Tänzerpolster, Entlastung, Schuhe, der Unterschied zum Bruch und wann Röntgen oder MRT helfen.',
   h1: 'Sesamoiditis: was es ist, was hilft und wann Bildgebung sinnvoll ist',
@@ -71,7 +71,7 @@ export const SESAMOIDITIS_DE: Guide = {
     {
       h2: 'Spielen die Schuhe eine Rolle?',
       paragraphs: [
-        'Schuhe spielen eine unterstützende Rolle. Ein Schuh mit steifer Sohle begrenzt die Bewegung im ersten Metatarsophalangealgelenk (dem Großzehengrundgelenk), was den Stress auf die Sesambeine direkt senkt. Abrollsohlen erreichen dasselbe, indem sie den Fuß durch den Abdruck rollen, ohne dass sich die Zehe beugen muss.',
+        'Schuhe spielen eine unterstützende Rolle. Ein Schuh mit steifer Sohle begrenzt die Bewegung im ersten Metatarsophalangealgelenk (dem Großzehengrundgelenk), was die Belastung der Sesambeine direkt senkt. Abrollsohlen erreichen dasselbe, indem sie den Fuß durch den Abdruck rollen, ohne dass sich die Zehe beugen muss.',
         'Meide Schuhe, die im Vorfuß weich nachgeben, sehr flach sind oder eine dünne Sohle haben. Hohe Absätze verlagern das Gewicht nach vorn auf den Fußballen und erhöhen die Last auf die Sesambeine. Wenn Laufen das Problem ausgelöst hat, kann ein vorübergehender Wechsel zu einem Schuh mit mehr Dämpfung im Vorfuß und höherer Sohle helfen, solange die Beschwerden abklingen.',
         'Diese Änderungen allein lösen das Problem nicht, wenn die Reizung stark ist, aber sie senken die Last, die das Problem überhaupt erst verursacht hat.',
       ],
@@ -100,7 +100,7 @@ export const SESAMOIDITIS_DE: Guide = {
       cites: [CITE.bizSesamoiditis],
     },
     {
-      q: 'Kann man mit Sesamoiditis laufen?',
+      q: 'Kann man mit Sesamoiditis gehen?',
       a: 'Die meisten können weiter gehen, aber das Abdrücken tut weh. Ein Tänzerpolster im Schuh und ein Schuh mit steifer Sohle können die Last so weit senken, dass Gehen angenehmer wird. Barfußgehen auf hartem Boden zu meiden, hilft in der Phase mit Beschwerden.',
     },
     {

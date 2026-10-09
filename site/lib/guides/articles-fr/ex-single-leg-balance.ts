@@ -12,7 +12,7 @@ export const EX_SINGLE_LEG_BALANCE_FR: Guide = {
   page: 'exSingleLegBalance',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Équilibre sur une jambe\u00A0: comment le faire, et pourquoi',
+  title: 'Équilibre sur une jambe\u00A0: comment et pourquoi',
   description:
     'Tenir en équilibre sur une jambe\u00A0: technique, temps de maintien selon l’âge, progression les yeux fermés, ce que cela teste, erreurs fréquentes.',
   h1: 'Équilibre sur une jambe\u00A0: comment le faire, temps de maintien normaux et progression les yeux fermés',
@@ -87,7 +87,7 @@ export const EX_SINGLE_LEG_BALANCE_FR: Guide = {
       keyFact: 'Pour les entorses de la cheville, une analyse groupée de 8\u00A0études et 3\u00A0577\u00A0sportifs a montré que l’entraînement de l’équilibre réduisait le risque d’entorse de 46\u00A0% par rapport à l’absence d’intervention (Bellows et Wong, 2018).',
       paragraphs: [
         'L’équilibre n’est pas séparé de la force du pied. Quand vous tenez sur une jambe, les muscles intrinsèques du pied (les petits muscles à l’intérieur du pied qui soutiennent la voûte), les muscles du mollet, le tibial antérieur et les stabilisateurs de la hanche travaillent tous ensemble. Un déficit à n’importe quel endroit de cette chaîne oblige le pied à compenser.',
-        'Pour la fasciite plantaire et les pieds plats, l’entraînement de l’équilibre figure dans les programmes d’exercices avec les étirements et le renforcement, car il entraîne toute la chaîne à la fois. Un essai de 2023 sur 52\u00A0personnes aux pieds plats souples a montré qu’un programme associant pied court, travail de la cheville, renforcement de la hanche, étirements et travail d’équilibre modifiait la forme de la voûte davantage que dans un groupe témoin. L’équilibre n’était pas isolé dans cet essai, mais il faisait partie du programme qui a marché.',
+        'Pour la fasciite plantaire et les pieds plats, l’entraînement de l’équilibre figure dans les programmes d’exercices avec les étirements et le renforcement, car il entraîne toute la chaîne à la fois. Un essai de 2023 sur 52\u00A0personnes aux pieds plats souples a montré qu’un programme associant pied court, travail de la cheville, renforcement de la hanche, étirements et travail d’équilibre modifiait la forme de la voûte davantage que dans un groupe témoin. L’équilibre n’était pas isolé dans cet essai, mais il faisait partie du programme qui s’est montré efficace.',
         'Pour les entorses de la cheville en particulier, une méta-analyse de 2018 portant sur 8\u00A0études et 3\u00A0577\u00A0sportifs a montré que l’entraînement de l’équilibre réduisait le risque d’entorse de 46\u00A0% par rapport à l’absence d’intervention. C’est le résultat le plus solide qui justifie d’inclure l’équilibre dans un programme pour le pied.',
       ],
       cites: [CITE.bellows, CITE.brijwasi],
@@ -118,7 +118,7 @@ export const EX_SINGLE_LEG_BALANCE_FR: Guide = {
       a: 'Une étude de valeurs de référence de 2007 sur 549\u00A0adultes en bonne santé a montré que les 18-39\u00A0ans tenaient en moyenne 43,3\u00A0secondes les yeux ouverts et 9,4\u00A0secondes les yeux fermés. Entre 60 et 69\u00A0ans, c’était 26,9\u00A0secondes les yeux ouverts et 2,8\u00A0secondes les yeux fermés (Springer 2007). L’objectif équilibre de Walkito est de 30\u00A0secondes par côté.',
     },
     {
-      q: 'L’équilibre sur une jambe aide-t-il contre les entorses de la cheville\u00A0?',
+      q: 'L’équilibre sur une jambe aide-t-il à prévenir les entorses de la cheville\u00A0?',
       cites: [CITE.bellows],
       a: 'Une méta-analyse de 2018 portant sur 8\u00A0études et 3\u00A0577\u00A0sportifs a montré que l’entraînement de l’équilibre réduisait le risque d’entorse de la cheville de 46\u00A0% par rapport à l’absence d’intervention (Bellows et Wong, 2018). La plupart des programmes étudiés comprenaient des exercices d’équilibre comme la station sur une jambe, avec d’autres entraînements.',
     },

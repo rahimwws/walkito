@@ -21,7 +21,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
   mainSource: CITE.guideline,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Dolore al tallone dopo aver camminato: cause e rimedi',
+  title: 'Dolore al tallone dopo aver camminato: cosa fare',
   description:
     'Dolore al tallone dopo una camminata o dopo ore in piedi: perché succede, quali problemi lo causano, quando preoccuparsi e gli esercizi che aiutano.',
   h1: 'Dolore al tallone dopo aver camminato: perché il tallone fa male e cosa fare',
@@ -121,7 +121,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
         },
         {
           name: 'Sollevamenti sulle punte su due piedi',
-          evidence: { level: 'moderate', why: 'Grado B nella linea guida per il lavoro di forza. Un gradino verso il lavoro su una gamba con carico.' },
+          evidence: { level: 'moderate', why: 'Grado B nella linea guida per il lavoro di forza. Un passo intermedio verso il lavoro con carico su una gamba.' },
           dose: '3\u00A0serie da 10, entrambi i piedi',
           how: 'Stai su entrambi i piedi, sali dritto sopra gli alluci, poi scendi piano. I due piedi si dividono il carico. Tieniti a un muro o a un corrimano per l’equilibrio.',
           often: 'Giorni di forza, quando il solo stretching non basta più',
@@ -150,7 +150,7 @@ export const HEEL_PAIN_AFTER_WALKING_IT: Guide = {
       h2: 'Quanto camminare quando il tallone fa male?',
       paragraphs: [
         'L’obiettivo non è smettere di camminare. È trovare la distanza che il tallone riesce a reggere senza riacutizzarsi la mattina dopo, e poi costruire da lì.',
-        'Un approccio pratico: cammina per una distanza che mantenga il dolore del mattino dopo uguale o sotto il tuo livello di base attuale. Se il tuo punteggio abituale del mattino è 4 su 10 e una camminata di 30\u00A0minuti lo porta a 6 la mattina dopo, quella camminata era troppo. Accorciala finché il punteggio del mattino resta stabile. Poi aggiungi cinque minuti ogni una o due settimane, finché il dolore del mattino non sale di colpo.',
+        'Un approccio pratico: cammina per una distanza che mantenga il dolore del mattino dopo uguale o sotto il tuo livello di base attuale. Se il tuo punteggio abituale del mattino è 4 su 10 e una camminata di 30\u00A0minuti lo porta a 6 la mattina dopo, quella camminata era troppo. Accorciala finché il punteggio del mattino resta stabile. Poi aggiungi cinque minuti ogni una o due settimane, purché il dolore del mattino non salga di colpo.',
         'Questa è gestione del carico, non riposo. Il riposo assoluto raramente aiuta nella fascite plantare. La linea guida raccomanda di modificare l’attività, non di restare inattivi. Camminare con scarpe che sostengono il piede su una superficie più morbida è più facile per la fascia che camminare scalzo sul cemento.',
         'Se corri anche, vale lo stesso principio su un’altra scala. [Dolore al tallone nei runner](/heel-pain-runners/) (in inglese) spiega più nel dettaglio i picchi di carico e i cambi di chilometraggio.',
       ],

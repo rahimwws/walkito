@@ -12,7 +12,7 @@ export const EX_FOOT_ROLL_DE: Guide = {
   page: 'exFootRoll',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Fußrollen bei Plantarfasziitis: Ball, Flasche und Technik',
+  title: 'Fuß mit Ball rollen bei Plantarfasziitis: Technik',
   description:
     'Fuß mit Ball rollen bei Plantarfasziitis: Technik mit Ball oder gefrorener Flasche, wie lange rollen und was es bringt und was nicht.',
   h1: 'Fußrollen bei Plantarfasziitis: Ball, Flasche und Technik',
@@ -41,7 +41,7 @@ export const EX_FOOT_ROLL_DE: Guide = {
           },
           dose: 'Walkito beginnt mit 2\u00A0Minuten',
           how: 'Setz dich hin, ein Ball liegt unter dem Gewölbe. Roll ihn langsam mit festem Druck vom Fußballen zur Ferse. Wenn du zusammenzuckst, nimm Druck raus.',
-          often: 'Erholungstage oder nach jeder Einheit zum Abwärmen',
+          often: 'Erholungstage oder nach jeder Einheit als Cool-down',
           feel: 'Fester, anhaltender Druck unter dem Fuß',
           stop: 'Der Schmerz 6/10 erreicht',
           media: 'foot_roll',
@@ -55,7 +55,7 @@ export const EX_FOOT_ROLL_DE: Guide = {
       paragraphs: [
         'Physiotherapeuten und Podologen empfehlen das Rollen häufig als Teil der Versorgung bei Plantarfasziitis. Die Idee: Es wirkt wie eine Selbstmassage, übt Druck entlang der Faszie aus, kann die Durchblutung vor Ort steigern und das Gefühl von Verspannung verringern. Viele berichten nach dem Rollen von kurzfristiger Erleichterung.',
         'Trotzdem hat keine randomisierte Studie das Rollen als alleinige Maßnahme bei Plantarfasziitis getestet. Es steht in Protokollen neben Dehnen und Kräftigen, ist aber nie die Variable, die gemessen wird. Die Leitlinie von 2023 bewertet es nicht eigens. Die Belege liegen beim Dehnen und beim Krafttraining.',
-        'Rollen gehört in die Kategorie Erholung. Es ist nützlich nach einem langen Tag auf den Beinen, nach einer Einheit Fersenheben oder immer dann, wenn sich die Sohle verspannt und wund anfühlt. Es ersetzt nicht die [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/), die [Wadendehnung](/de/uebungen/wade-dehnen/) oder das [Fersenheben](/de/uebungen/fersenheben/), die die Bewertungen der Leitlinie tragen.',
+        'Rollen gehört in die Kategorie Erholung. Es ist nützlich nach einem langen Tag auf den Beinen, nach einer Einheit Fersenheben oder immer dann, wenn sich die Sohle verspannt und schmerzhaft anfühlt. Es ersetzt nicht die [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/), die [Wadendehnung](/de/uebungen/wade-dehnen/) oder das [Fersenheben](/de/uebungen/fersenheben/), die die Bewertungen der Leitlinie tragen.',
       ],
       cites: [CITE.guideline],
     },
@@ -87,7 +87,7 @@ export const EX_FOOT_ROLL_DE: Guide = {
     {
       h2: 'Wann solltest du den Fuß rollen und wann nicht?',
       paragraphs: [
-        'Roll nach einem langen Tag auf den Beinen, nach einer Einheit Fersenheben oder immer dann, wenn sich die Sohle verspannt anfühlt. In Walkito taucht das Fußrollen an Erholungstagen und am Ende der Einheiten zum Abwärmen auf.',
+        'Roll nach einem langen Tag auf den Beinen, nach einer Einheit Fersenheben oder immer dann, wenn sich die Sohle verspannt anfühlt. In Walkito taucht das Fußrollen an Erholungstagen und am Ende der Einheiten als Cool-down auf.',
         'Lass das Rollen weg, wenn die Ferse akut geschwollen, gerötet oder warm ist. Diese Zeichen können auf etwas anderes als eine Plantarfasziitis hindeuten, und Druck auf eine entzündete Stelle kann es schlimmer machen. Geh zuerst zu einer medizinischen Fachperson. Alle Übungen, die die Leitlinie empfiehlt, findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
       ],
     },
@@ -107,7 +107,7 @@ export const EX_FOOT_ROLL_DE: Guide = {
     },
     {
       q: 'Kann Fußrollen eine Plantarfasziitis verschlimmern?',
-      a: 'Ja, wenn du zu fest drückst. Aggressiv in eine schmerzende Faszie hineinzureiben, kann die Entzündung verstärken, statt sie zu beruhigen. Der Druck sollte sich wie eine tiefe Massage anfühlen, fest, aber nicht scharf. Wenn der Schmerz 6/10 erreicht oder die Sohle am nächsten Morgen wunder ist, mach sanfter.',
+      a: 'Ja, wenn du zu fest drückst. Aggressiv in eine schmerzende Faszie hineinzureiben, kann die Entzündung verstärken, statt sie zu beruhigen. Der Druck sollte sich wie eine tiefe Massage anfühlen, fest, aber nicht scharf. Wenn der Schmerz 6/10 erreicht oder die Sohle am nächsten Morgen stärker schmerzt, mach sanfter.',
     },
     {
       q: 'Ersetzt Fußrollen das Dehnen?',

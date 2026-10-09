@@ -13,7 +13,7 @@ export const EX_SOLEUS_STRETCH_IT: Guide = {
   page: 'exSoleusStretch',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Allungamento del soleo (ginocchio piegato): come farlo',
+  title: 'Allungamento del soleo a ginocchio piegato',
   description:
     'Come fare l’allungamento del soleo a ginocchio piegato per la fascite plantare e i polpacci rigidi: tecnica, perché serve a parte, serie e tempi.',
   h1: 'Allungamento del soleo (ginocchio piegato): tecnica, serie e perché conta',
@@ -47,7 +47,7 @@ export const EX_SOLEUS_STRETCH_IT: Guide = {
           stop: 'Il dolore arriva a 6/10',
           media: 'calf_stretch_bent',
           caption: 'Allungamento del soleo: piega il ginocchio dietro finché l’allungamento scende',
-          alt: 'Una figura a gambe divaricate appoggiata al muro con il ginocchio dietro piegato, la parte bassa del polpaccio evidenziata',
+          alt: 'Una figura in posizione di affondo appoggiata al muro con il ginocchio dietro piegato, la parte bassa del polpaccio evidenziata',
         },
       ],
       cites: [CITE.guideline],
@@ -56,7 +56,7 @@ export const EX_SOLEUS_STRETCH_IT: Guide = {
       h2: 'Perché il soleo ha bisogno di un allungamento tutto suo?',
       keyFact: 'In un’analisi su 254\u00A0persone con fascite plantare, circa un quarto aveva rigidi entrambi i muscoli del polpaccio, il gastrocnemio e il soleo (Patel e DiGiovanni, 2011).',
       paragraphs: [
-        'Il gastrocnemio, il muscolo più superficiale del polpaccio, passa sia sul ginocchio sia sulla caviglia. Quando tieni il ginocchio teso e ti sporgi in avanti, l’allungamento va su di lui. Il soleo sta più in profondità e passa solo sulla caviglia. Con il ginocchio teso, il gastrocnemio fa tutto il lavoro e il soleo si muove appena.',
+        'Il gastrocnemio, il muscolo più superficiale del polpaccio, passa sia sul ginocchio sia sulla caviglia. Quando tieni il ginocchio teso e ti sporgi in avanti, è il gastrocnemio ad allungarsi. Il soleo sta più in profondità e passa solo sulla caviglia. Con il ginocchio teso, il gastrocnemio fa tutto il lavoro e il soleo si muove appena.',
         'Piegare il ginocchio rilassa il gastrocnemio, che smette di fare resistenza. A quel punto la dorsiflessione della caviglia tira sul soleo. È proprio questo il senso della versione a ginocchio piegato. Non è una variante. È un esercizio diverso per un muscolo diverso.',
         'In un’analisi su 254\u00A0persone con fascite plantare, circa un quarto aveva entrambi i muscoli rigidi. L’allungamento a ginocchio teso da solo non avrebbe raggiunto la parte di rigidità che riguardava il soleo.',
       ],
@@ -83,7 +83,7 @@ export const EX_SOLEUS_STRETCH_IT: Guide = {
       h2: 'Come si inserisce l’allungamento del soleo in un programma',
       paragraphs: [
         'Walkito abbina l’allungamento del soleo all’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) e all’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) in quasi tutte le sessioni. Insieme, i tre allungamenti coprono le strutture principali che tirano sul tallone. L’ordine conta poco, ma fare l’allungamento della fascia plantare per primo, prima del primo passo della giornata, è l’indicazione che si ripete più spesso.',
-        'Per la parte di forza del polpaccio, vedi [sollevamenti sui talloni per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/) o la pagina dedicata ai [sollevamenti sulle punte](/it/esercizi/sollevamenti-sulle-punte/). La linea guida del 2023 consiglia forza e allungamenti insieme.',
+        'Per la parte di forza del polpaccio, vedi [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/) o la pagina dedicata ai [sollevamenti sulle punte](/it/esercizi/sollevamenti-sulle-punte/). La linea guida del 2023 consiglia forza e allungamenti insieme.',
       ],
       cites: [CITE.guideline],
     },
@@ -105,7 +105,7 @@ export const EX_SOLEUS_STRETCH_IT: Guide = {
     {
       q: 'Ogni quanto fare l’allungamento del soleo?',
       cites: [CITE.guideline],
-      a: 'Walkito lo mette in quasi tutte le sessioni, insieme all’allungamento del polpaccio. La linea guida del 2023 consiglia l’allungamento del polpaccio come parte della cura di sé quotidiana per la fascite plantare. Tre tenute da 30\u00A0secondi per gamba richiedono circa tre minuti. Ha poco carico ed è sicuro ripeterlo ogni giorno.',
+      a: 'Walkito lo mette in quasi tutte le sessioni, insieme all’allungamento del polpaccio. La linea guida del 2023 consiglia l’allungamento del polpaccio come parte dell’autogestione quotidiana della fascite plantare. Tre tenute da 30\u00A0secondi per gamba richiedono circa tre minuti. Ha poco carico ed è sicuro ripeterlo ogni giorno.',
     },
   ],
   redFlags: {

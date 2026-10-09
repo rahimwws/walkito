@@ -13,7 +13,7 @@ export const SESAMOIDITIS_FR: Guide = {
   mainSource: CITE.bizSesamoiditis,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Sésamoïdite\u00A0: causes, décharge et quand faire une imagerie',
+  title: 'Sésamoïdite\u00A0: causes, décharge et imagerie',
   description:
     'Sésamoïdite\u00A0: douleur sous le gros orteil. Coussinet de danseur, chaussures, différence avec une fracture du sésamoïde et quand l’imagerie aide.',
   h1: 'Sésamoïdite\u00A0: ce que c’est, ce qui aide et quand faire une imagerie',

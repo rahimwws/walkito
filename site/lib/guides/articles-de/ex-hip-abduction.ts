@@ -44,7 +44,7 @@ export const EX_HIP_ABDUCTION_DE: Guide = {
           evidence: { level: 'moderate', why: 'Teil des kombinierten Programms, das in einer randomisierten Studie von 2023 die Form des Gewölbes verbessert hat (Brijwasi 2023). Hüftkräftigung für die Ausrichtung des Fußes ist biomechanisch begründet, wurde aber nicht in einer eigenen Studie mit Ergebnissen am Fuß einzeln getestet.' },
           dose: 'Walkito beginnt mit 3\u00A0Sätzen à 15, jedes Bein',
           how: 'Stell dich hin, ein Band liegt um beide Knöchel. Halte dich zum Gleichgewicht an einer Wand fest. Heb ein Bein gerade zur Seite, die Zehen zeigen nach vorn. Drück über die Ferse. Senk langsam ab.',
-          often: 'Krafttage, wenn das Ziel links und rechts in deinem Plan ist',
+          often: 'Krafttage, wenn das Links-rechts-Ziel in deinem Plan steht',
           feel: 'Arbeit an der Außenseite der Hüfte',
           stop: 'Der Schmerz 6/10 erreicht',
           media: 'hip_abduction',
@@ -87,7 +87,7 @@ export const EX_HIP_ABDUCTION_DE: Guide = {
       paragraphs: [
         'Die biomechanische Begründung für Hüftabduktion in Fußprogrammen ist gut belegt: Schwache Hüftabduktoren lassen das Knie nach innen einknicken, was die Pronation des Fußes und die Last auf dem Gewölbe erhöht. Mehrere Beobachtungsstudien bestätigen den Zusammenhang zwischen schwacher Hüfte und Problemen bei der Ausrichtung der Beine.',
         'Für klinische Ergebnisse kommen die stärksten Belege aus kombinierten Programmen. Die Studie von Brijwasi und Kollegen von 2023 nahm Hüftkräftigung als Teil eines sechswöchigen Übungsprogramms für 52\u00A0Personen mit flexiblem Plattfuß auf. Das Programm verbesserte die Form des Gewölbes. Hüftkräftigung wurde nicht in einer eigenen Studie zu Plattfüßen oder Plantarfasziitis einzeln getestet.',
-        'Eine randomisierte Studie von 2024 mit 45\u00A0Frauen mit flexiblem Plattfuß verglich über sechs Wochen Kurzer-Fuß-Übungen, ein kombiniertes Übungsprogramm und Kurzer-Fuß-Übungen plus isometrische Hüftabduktion. Die Gruppe, die zu den Kurzer-Fuß-Übungen isometrische Hüftabduktion dazunahm, hatte einen deutlich größeren Rückgang beim Navicular Drop (einem Maß für das Absinken des Gewölbes) als die beiden anderen Gruppen (Zarali und Kollegen, 2024). Das stützt die Idee, dass Arbeit an der Hüfte etwas bringt, was Fußübungen allein nicht leisten.',
+        'Eine randomisierte Studie von 2024 mit 45\u00A0Frauen mit flexiblem Plattfuß verglich über sechs Wochen Kurzer-Fuß-Übungen, ein kombiniertes Übungsprogramm und Kurzer-Fuß-Übungen plus isometrische Hüftabduktion. Alle drei Gruppen verbesserten den Navikular-Drop (wie stark das Gewölbe unter dem Körpergewicht absinkt). Die Gruppe mit isometrischer Hüftabduktion verbesserte sich am stärksten, war beim Navikular-Drop aber nicht signifikant besser als das kombinierte Programm; beim seitlichen Schwanken schon (Zarali und Kollegen, 2024). Das deutet darauf hin, dass Arbeit an der Hüfte den Fußübungen etwas hinzufügen könnte, gestützt auf eine einzige kleine Studie.',
         'Die Belege stützen Hüftabduktion als Teil eines umfassenderen Fußprogramms. Sie ist keine alleinige Übung gegen Schmerzen im Gewölbe, schließt aber eine Lücke, die reine Fußübungen offenlassen. Verwandte Seiten: [Übungen bei Plattfüßen](/de/plattfuss-uebungen/), [Einwärtsdrehen mit Band](/de/uebungen/einwaertsdrehen-mit-band/), [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/).',
       ],
       cites: [CITE.zarali, CITE.brijwasi, CITE.cheng],

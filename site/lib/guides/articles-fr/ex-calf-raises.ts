@@ -13,7 +13,7 @@ export const EX_CALF_RAISES_FR: Guide = {
   mainSource: CITE.guideline,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Montées sur pointes (mollets)\u00A0: comment bien les faire',
+  title: 'Montées sur pointes (mollets)\u00A0: bien les faire',
   description:
     'Bien faire les montées sur pointes pour les mollets\u00A0: debout, assis, maintien isométrique, muscles travaillés, séries, erreurs fréquentes, pour qui.',
   h1: 'Montées sur pointes\u00A0: comment bien les faire, avec séries, répétitions et variantes',
@@ -40,7 +40,7 @@ export const EX_CALF_RAISES_FR: Guide = {
       h2: 'Comment faire une montée sur pointes debout\u00A0?',
       paragraphs: [
         'Tenez-vous debout, les deux pieds à plat au sol, à peu près à largeur de hanches. Tenez-vous à un mur ou à une chaise pour l’équilibre. Montez sur l’avant des pieds en poussant par les gros orteils. Marquez un temps en haut, puis redescendez lentement en environ trois secondes. Les deux pieds se partagent la charge.',
-        'Si vous avez une marche, placez l’avant des pieds sur le bord et laissez les talons descendre un peu plus bas à la descente. Cette amplitude en plus en bas étire un peu plus le mollet à chaque répétition. Au sol, l’amplitude est plus petite, mais l’exercice marche quand même.',
+        'Si vous avez une marche, placez l’avant des pieds sur le bord et laissez les talons descendre un peu plus bas à la descente. Cette amplitude en plus en bas étire un peu plus le mollet à chaque répétition. Au sol, l’amplitude est plus petite, mais l’exercice reste efficace.',
       ],
       exercises: [
         {
@@ -89,7 +89,7 @@ export const EX_CALF_RAISES_FR: Guide = {
     {
       h2: 'Comment faire un maintien sur pointes (isométrique)',
       paragraphs: [
-        'Montez sur la pointe des deux pieds, puis restez immobile en haut. Ne laissez pas les talons redescendre. Un maintien isométrique signifie que le muscle travaille sans parcourir d’amplitude. Cela charge le tendon d’Achille sans le mouvement de montée et de descente que certaines douleurs du tendon ou du talon débutantes trouvent irritant.',
+        'Montez sur la pointe des deux pieds, puis restez immobile en haut. Ne laissez pas les talons redescendre. Un maintien isométrique signifie que le muscle travaille sans parcourir d’amplitude. Cela charge le tendon d’Achille sans le mouvement de montée et de descente que certaines douleurs du tendon ou du talon supportent mal à un stade précoce.',
         'La recommandation de 2024 sur le tendon d’Achille cite la charge isométrique parmi les types de mise en charge efficaces du tendon, même si aucun essai portant uniquement sur l’isométrie pour le tendon d’Achille n’a été publié.',
       ],
       exercises: [
@@ -150,9 +150,9 @@ export const EX_CALF_RAISES_FR: Guide = {
       a: 'Elles ciblent des muscles différents. Les montées debout font surtout travailler le gastrocnémien, le plus gros muscle du mollet. Les montées assis déplacent la charge vers le soléaire, le plus profond, car le genou plié retire en grande partie le gastrocnémien du mouvement. Les deux ont leur rôle, et les faire ensemble couvre tout le mollet.',
     },
     {
-      q: 'Combien de montées sur pointes sur une jambe est normal\u00A0?',
+      q: 'Quel nombre de montées sur pointes sur une jambe est normal\u00A0?',
       cites: [CITE.hebertLosier],
-      a: 'Une étude de valeurs de référence sur 566\u00A0adultes en bonne santé a trouvé une médiane de 24\u00A0répétitions chez les hommes et de 21 chez les femmes, à ajuster selon l’âge, le sexe et le niveau d’activité (Hébert-Losier 2017). Ce nombre sert à suivre l’évolution au fil des semaines et à comparer une jambe à l’autre, pas de seuil de réussite ou d’échec.',
+      a: 'Une étude de valeurs de référence sur 566\u00A0adultes en bonne santé a trouvé une médiane de 24\u00A0répétitions chez les hommes et de 21 chez les femmes, à ajuster selon l’âge, le sexe et le niveau d’activité (Hébert-Losier 2017). Ce nombre sert à suivre l’évolution au fil des semaines et à comparer une jambe à l’autre, pas comme seuil de réussite ou d’échec.',
     },
     {
       q: 'Faut-il faire des montées sur pointes tous les jours\u00A0?',
@@ -172,7 +172,7 @@ export const EX_CALF_RAISES_FR: Guide = {
   },
   program: {
     h2: 'En faire un plan',
-    text: 'Walkito construit un plan qui commence à votre niveau et monte d’un cran quand vous êtes prêt. La progression du mollet va des montées sur pointes assis aux montées sur deux pieds debout, puis au maintien, aux montées avec serviette, aux descentes excentriques du talon et aux sauts pogo. Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes.',
+    text: 'Walkito construit un plan qui commence à votre niveau et monte d’un cran quand vous en êtes capable. La progression du mollet va des montées sur pointes assis aux montées sur deux pieds debout, puis au maintien, aux montées avec serviette, aux descentes excentriques du talon et aux sauts pogo. Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes.',
     more: [
       'Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet et l’équilibre. L’objectif mollet est de 25\u00A0montées sur une jambe. L’atteindre ne met pas fin au travail\u00A0: un nouvel objectif prend le relais. Walkito est un programme d’exercices. Il ne pose pas de diagnostic.',
     ],

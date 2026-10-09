@@ -13,7 +13,7 @@ export const EX_CALF_RAISES_PT: Guide = {
   mainSource: CITE.guideline,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Elevação de calcanhar (panturrilha): como fazer certo',
+  title: 'Elevação de calcanhar (panturrilha): como fazer',
   description:
     'Como fazer a elevação de calcanhar do jeito certo: em pé, sentado e sustentada, músculos trabalhados, séries e repetições, erros comuns e para quem serve.',
   h1: 'Elevação de calcanhar: como fazer certo, com séries, repetições e variações',
@@ -89,7 +89,7 @@ export const EX_CALF_RAISES_PT: Guide = {
     {
       h2: 'Como fazer a elevação de calcanhar sustentada (isométrica)',
       paragraphs: [
-        'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe os calcanhares afundarem. Uma contração isométrica quer dizer que o músculo trabalha sem percorrer uma amplitude. Isso coloca carga no tendão de Aquiles sem o sobe e desce que algumas dores no tendão ou no calcanhar, em fase inicial, acham irritante.',
+        'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe os calcanhares afundarem. Uma contração isométrica quer dizer que o músculo trabalha sem percorrer uma amplitude. Isso coloca carga no tendão de Aquiles sem o sobe e desce que pode irritar algumas dores no tendão ou no calcanhar em fase inicial.',
         'A diretriz de 2024 para o Aquiles cita a carga isométrica como um dos tipos eficazes de carga no tendão, embora nenhum ensaio só com isometria para o Aquiles tenha sido publicado.',
       ],
       exercises: [
@@ -113,7 +113,7 @@ export const EX_CALF_RAISES_PT: Guide = {
     },
     {
       h2: 'Quantas elevações de calcanhar fazer?',
-      keyFact: 'Um estudo normativo com 566\u00A0adultos saudáveis de 20 a 81\u00A0anos encontrou que a contagem de elevações de calcanhar em uma perna variava com idade, sexo e nível de atividade, e as mulheres chegavam a uma mediana de 21\u00A0repetições (Hebert-Losier e colegas, 2017).',
+      keyFact: 'Um estudo normativo com 566\u00A0adultos saudáveis de 20 a 81\u00A0anos mostrou que a contagem de elevações de calcanhar em uma perna variava com idade, sexo e nível de atividade, e as mulheres chegavam a uma mediana de 21\u00A0repetições (Hebert-Losier e colegas, 2017).',
       paragraphs: [
         'Depende de onde você está na sequência e do que está trabalhando. Para força geral da panturrilha, 3\u00A0séries de 10 a 15\u00A0repetições em ritmo lento é uma dose inicial comum. No protocolo testado para fascite plantar, a elevação de calcanhar com toalha começa com 12\u00A0repetições máximas (12RM) em 3\u00A0séries e avança para 8RM em 5\u00A0séries ao longo de umas cinco semanas.',
         'Uma referência útil é o teste de resistência de elevação de calcanhar em uma perna. Um estudo normativo com 566\u00A0adultos saudáveis encontrou uma mediana de 24\u00A0repetições para homens e 21 para mulheres, variando com idade, sexo e atividade. A meta de panturrilha no app Walkito é 25\u00A0elevações de calcanhar em uma perna. Chegar lá não encerra o trabalho. Ele passa para a manutenção.',

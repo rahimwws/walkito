@@ -14,7 +14,7 @@ export const NURSES_DE: Guide = {
   mainSource: CITE.reedNurse,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Fußschmerzen in der Pflege: Schichtdienst, Schuhe, Übungen',
+  title: 'Fußschmerzen in der Pflege: 12-Stunden-Schichten',
   description:
     'Warum Pflegekräfte in 12-Stunden-Schichten Fußschmerzen bekommen: Schuhe, Kompressionsstrümpfe, Übungen und wie du sie in den Schichtdienst einbaust.',
   h1: 'Fußschmerzen in der Pflege: was in 12-Stunden-Schichten hilft',
@@ -28,14 +28,14 @@ export const NURSES_DE: Guide = {
     'In einer Umfrage unter 312\u00A0Pflegekräften in Kinderkliniken in Australien berichteten 55,3\u00A0% über Probleme an Fuß oder Sprunggelenk in den letzten 12\u00A0Monaten, und der Anteil war höher bei denen, die 12-Stunden-Schichten auf der Intensivstation arbeiteten (Reed und Kollegen, 2014).',
     'In einer Studie mit Schrittzählern gingen Pflegekräfte im Schnitt 9.360\u00A0Schritte pro Schicht, etwa 5,8\u00A0km in einer Schicht von 9,4\u00A0Stunden, eine Belastung deutlich über dem Durchschnitt von Erwachsenen (Chang und Cho, 2022).',
     'In einer Querschnittstudie mit 636\u00A0japanischen Pflegekräften im Krankenhaus berichteten 51\u00A0% über Fußschmerzen oder Einschränkungen im letzten Monat, und bei 17\u00A0% störte der Schmerz den Alltag (Tojo und Kollegen, 2018).',
-    'Eine eingeschränkte Beweglichkeit im Sprunggelenk, also eine verkürzte Wade, war in einer Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen der stärkste einzelne Vorhersagefaktor für Plantarfasziitis, mit dem 23,3-Fachen der Wahrscheinlichkeit. Stehen über den größten Teil des Arbeitstags erhöhte sie um das 3,6-Fache (Riddle und Kollegen, 2003).',
+    'Eine eingeschränkte Beweglichkeit im Sprunggelenk, also eine verkürzte Wade, war in einer Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen der stärkste einzelne Vorhersagefaktor für Plantarfasziitis, mit einer 23,3-fachen Chance. Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache (Riddle und Kollegen, 2003).',
     'In einer Studie mit 40\u00A0Sicherheitskräften in 12-Stunden-Schichten im Stehen verhinderten Kompressionsstrümpfe mit 15-20\u00A0mmHg und mit 20-30\u00A0mmHg den Anstieg von Beschwerden und Schwellung, der mit normalen Socken auftrat (Garcia und Kollegen, 2023).',
   ],
   sections: [
     {
       h2: 'Wie häufig sind Fußschmerzen in der Pflege?',
       paragraphs: [
-        'Schmerzen an Fuß und Sprunggelenk gehören bei Pflegekräften zu den drei häufigsten Beschwerden am Bewegungsapparat, neben Kreuz- und Nackenschmerzen. In einer Umfrage unter 312\u00A0Pflegekräften in Kinderkliniken berichteten 55,3\u00A0% über Probleme an Fuß oder Sprunggelenk in den letzten 12\u00A0Monaten, und 43,8\u00A0% hatten allein in den letzten sieben Tagen Beschwerden. Eine von sechs Pflegekräften sagte, der Schmerz schränke ihre körperliche Aktivität ein. 12-Stunden-Schichten auf der Intensivstation waren der einzige Faktor der Arbeit, der die Wahrscheinlichkeit einschränkender Fußprobleme unabhängig erhöhte.',
+        'Schmerzen an Fuß und Sprunggelenk gehören bei Pflegekräften zu den drei häufigsten Beschwerden am Bewegungsapparat, neben Kreuz- und Nackenschmerzen. In einer Umfrage unter 312\u00A0Pflegekräften in Kinderkliniken berichteten 55,3\u00A0% über Probleme an Fuß oder Sprunggelenk in den letzten 12\u00A0Monaten, und 43,8\u00A0% hatten allein in den letzten sieben Tagen Beschwerden. Eine von sechs Pflegekräften sagte, der Schmerz schränke ihre körperliche Aktivität ein. 12-Stunden-Schichten auf der Intensivstation waren der einzige Faktor der Arbeit, der die Chance auf einschränkende Fußprobleme unabhängig erhöhte.',
         'Eine andere Studie mit 636\u00A0Pflegekräften im Krankenhaus in Japan fand, dass 51\u00A0% im letzten Monat über Fußschmerzen oder Einschränkungen berichteten, erfasst mit einem validierten Fragebogen. Der Anteil mit Schmerzen, die normales Arbeiten verhinderten, lag bei 17\u00A0%. Eine Studie mit Schrittzählern bei koreanischen Pflegekräften fand im Schnitt 5,8\u00A0km Gehstrecke pro Schicht, eine körperliche Belastung deutlich über der Allgemeinbevölkerung.',
         'Eine Querschnittstudie mit 411\u00A0finnischen Pflegekräften fand trockene Haut, Fußschmerzen und Hornhaut als häufigste Fußbeschwerden, und Fußprobleme waren mit einer geringeren Arbeitsfähigkeit verbunden. Die Autoren forderten, der Vorbeugung von Fußproblemen in der Pflege Vorrang zu geben.',
       ],
@@ -46,7 +46,7 @@ export const NURSES_DE: Guide = {
       paragraphs: [
         'In einer Pflegeschicht kommen drei Dinge zusammen: langes Stehen, weite Wege und harte Böden. Ruhiges Stehen belastet Plantarfaszie, Wadenmuskeln und Fersenpolster ohne die Pumpwirkung, die das Gehen bringt. Gehen hilft dem Blut, aus den Beinen zurückzufließen, aber Pflegekräfte wechseln unvorhersehbar zwischen ruhigem Stehen am Bett und Gehen auf langen Fluren, sodass die Wadenpumpe nie in einen gleichmäßigen Rhythmus kommt.',
         'Eine Übersichtsarbeit von 2015 zur arbeitsmedizinischen Forschung fand langes Stehen bei der Arbeit in vielen Berufen verbunden mit Beschwerden am Bewegungsapparat, Ermüdung und Beinschmerzen, und nannte Pflegekräfte als eine der Gruppen mit dem höchsten Risiko. Die Übersicht hielt fest, dass Belastung für Herz und Kreislauf und geschwollene Beine mit der Stehdauer zunehmen.',
-        'Auf der Ebene der Gewebe ist eine verkürzte Wade ein zentrales Stück. Eine Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0passenden Kontrollen fand, dass eine eingeschränkte Beweglichkeit im Sprunggelenk, also dass sich das Sprunggelenk wegen einer verkürzten Wade nicht so weit nach oben beugen lässt, wie es sollte, der stärkste einzelne unabhängige Risikofaktor für Plantarfasziitis war, mit dem 23,3-Fachen der Wahrscheinlichkeit. Stehen über den größten Teil des Arbeitstags erhöhte sie um das 3,6-Fache. Pflegekräfte haben beide Risikofaktoren gleichzeitig.',
+        'Auf der Ebene der Gewebe ist eine verkürzte Wade ein zentrales Stück. Eine Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0passenden Kontrollen fand, dass eine eingeschränkte Beweglichkeit im Sprunggelenk, also dass sich das Sprunggelenk wegen einer verkürzten Wade nicht so weit nach oben beugen lässt, wie es sollte, der stärkste einzelne unabhängige Risikofaktor für Plantarfasziitis war, mit einer 23,3-fachen Chance. Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache. Pflegekräfte haben beide Risikofaktoren gleichzeitig.',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -201,7 +201,7 @@ export const NURSES_DE: Guide = {
     },
     {
       q: 'Sind 12-Stunden-Schichten schlimmer für die Füße als 8-Stunden-Schichten?',
-      a: 'In einer Umfrage unter Pflegekräften in Kinderkliniken waren 12-Stunden-Schichten auf der Intensivstation der einzige Faktor der Arbeit, der die Wahrscheinlichkeit einschränkender Probleme an Fuß und Sprunggelenk unabhängig erhöhte. Die Gesamtlast auf dem Fuß steigt mit der Schichtlänge, und die Erholungszeit zwischen den Schichten ist kürzer, wenn die Schichten selbst länger sind. Trotzdem zählen auch die Art der Arbeit und der Boden, nicht nur die Stunden.',
+      a: 'In einer Umfrage unter Pflegekräften in Kinderkliniken waren 12-Stunden-Schichten auf der Intensivstation der einzige Faktor der Arbeit, der die Chance auf einschränkende Probleme an Fuß und Sprunggelenk unabhängig erhöhte. Die Gesamtlast auf dem Fuß steigt mit der Schichtlänge, und die Erholungszeit zwischen den Schichten ist kürzer, wenn die Schichten selbst länger sind. Trotzdem zählen auch die Art der Arbeit und der Boden, nicht nur die Stunden.',
       cites: [CITE.reedNurse],
     },
     {
@@ -220,7 +220,7 @@ export const NURSES_DE: Guide = {
     },
     {
       q: 'Kann man durch die Arbeit in der Pflege eine Plantarfasziitis bekommen?',
-      a: 'Stehen über den größten Teil des Arbeitstags erhöhte die Wahrscheinlichkeit einer Plantarfasziitis in einer Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0passenden Kontrollen um das 3,6-Fache. Eine eingeschränkte Beweglichkeit im Sprunggelenk erhöhte sie um das 23,3-Fache. Pflegekräfte haben beide Risikofaktoren, langes Stehen und wenig Pausenzeit zum Dehnen, deshalb überschneiden sich die Übungen auf dieser Seite stark mit denen im Ratgeber zur Plantarfasziitis.',
+      a: 'Stehen über den größten Teil des Arbeitstags erhöhte die Chance auf eine Plantarfasziitis in einer Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0passenden Kontrollen um das 3,6-Fache. Eine eingeschränkte Beweglichkeit im Sprunggelenk erhöhte sie um das 23,3-Fache. Pflegekräfte haben beide Risikofaktoren, langes Stehen und wenig Pausenzeit zum Dehnen, deshalb überschneiden sich die Übungen auf dieser Seite stark mit denen im Ratgeber zur Plantarfasziitis.',
       cites: [CITE.riddle],
     },
     {

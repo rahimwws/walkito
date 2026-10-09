@@ -14,7 +14,7 @@ export const EX_TOWEL_HEEL_RAISE_IT: Guide = {
   mainSource: CITE.rathleff,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Sollevamento sulle punte con asciugamano: protocollo Rathleff',
+  title: 'Sollevamento sulle punte con asciugamano: metodo Rathleff',
   description:
     'Il sollevamento sulle punte con asciugamano del protocollo Rathleff per la fascite plantare: serie, ritmo, errori comuni, versioni più facili e difficili.',
   h1: 'Sollevamento sulle punte con asciugamano: il protocollo Rathleff ad alto carico, passo per passo',

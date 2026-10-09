@@ -13,7 +13,7 @@ export const EX_TIBIALIS_RAISES_PT: Guide = {
   page: 'exTibialisRaises',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Elevação dos dedos na parede: tibial anterior e canela',
+  title: 'Elevação dos dedos (tibial anterior): como fazer',
   description:
     'Como fazer a elevação dos dedos na parede (elevação do tibial): técnica, séries, músculos, evidência para canelite e versões mais fáceis ou difíceis.',
   h1: 'Elevação dos dedos (tibial anterior): como fazer, o que trabalha e o que a evidência diz',
@@ -30,7 +30,7 @@ export const EX_TIBIALIS_RAISES_PT: Guide = {
     {
       h2: 'Quais músculos a elevação dos dedos trabalha?',
       paragraphs: [
-        'A elevação dos dedos trabalha principalmente o tibial anterior, o músculo da frente da canela. Ele é responsável pela dorsiflexão, ou seja, levantar o pé em direção à canela. Toda vez que você dá um passo, o tibial anterior levanta os dedos para o pé passar sem raspar no chão. Quando ele está fraco, o pé pode bater no chão depois que o calcanhar encosta ou tropeçar em superfícies irregulares.',
+        'A elevação dos dedos trabalha principalmente o tibial anterior, o músculo da frente da canela. Ele é responsável pela dorsiflexão, ou seja, levantar o pé em direção à canela. Toda vez que você dá um passo, o tibial anterior levanta os dedos para o pé passar sem raspar no chão. Quando ele está fraco, o pé pode bater no chão depois que o calcanhar encosta ou enganchar em superfícies irregulares.',
         'O exercício também trabalha os músculos menores que esticam os dedos, ao longo da frente da perna. Ele não coloca carga nos músculos da panturrilha, na parte de trás da perna, e por isso faz par com a [elevação de calcanhar](/pt/exercicios/elevacao-de-calcanhar/) para cobrir os dois lados da perna.',
       ],
     },
@@ -63,8 +63,8 @@ export const EX_TIBIALIS_RAISES_PT: Guide = {
       keyFact: 'Em um estudo caso-controle de 2007, atletas com canelite tinham menos resistência na elevação de calcanhar que controles pareados, o que aponta para um déficit geral de força na perna, não para um músculo específico (Madeley e colegas, 2007).',
       paragraphs: [
         'A canelite, cujo nome clínico é síndrome do estresse tibial medial (SETM), é dor ao longo da borda de dentro do osso da canela. O tibial anterior fica na frente e para fora da canela, não no lugar onde a SETM costuma doer, então a ligação é indireta. A ideia é que um tibial anterior mais forte ajuda a absorver o impacto ao correr e andar, diminuindo o esforço na canela como um todo.',
-        'Um estudo caso-controle de 2007 encontrou que atletas com SETM tinham menos resistência na elevação de calcanhar que controles pareados, o que aponta para um déficit geral de força na perna, não para fraqueza em um músculo específico. Uma revisão sistemática de 2013 olhou para o tratamento da SETM já instalada, não para a prevenção, e não encontrou nenhum ensaio mostrando que alongamento ou fortalecimento fossem eficazes, embora a evidência por trás desse achado fosse de baixa qualidade no geral.',
-        'Sendo honesto: não temos um ensaio que testou a elevação dos dedos sozinha na canelite e mostrou que ela reduziu os sintomas ou a volta da dor. O exercício está nos programas porque faz sentido biomecânico, não porque um ensaio provou. Por isso o rótulo de evidência dele diz «inicial». Para a página completa sobre canelite, veja [exercícios para canelite](/pt/canelite-exercicios/).',
+        'Um estudo caso-controle de 2007 mostrou que atletas com SETM tinham menos resistência na elevação de calcanhar que controles pareados, o que aponta para um déficit geral de força na perna, não para fraqueza em um músculo específico. Uma revisão sistemática de 2013 olhou para o tratamento da SETM já instalada, não para a prevenção, e não encontrou nenhum ensaio mostrando que alongamento ou fortalecimento fossem eficazes, embora a evidência por trás desse achado fosse de baixa qualidade no geral.',
+        'Sendo honesto: não temos um ensaio que testou a elevação dos dedos sozinha na canelite e mostrou que ela reduziu os sintomas ou a volta da dor. O exercício está nos programas porque faz sentido biomecânico, não porque um ensaio provou. Por isso o rótulo de evidência dele diz “inicial”. Para a página completa sobre canelite, veja [exercícios para canelite](/pt/canelite-exercicios/).',
       ],
       cites: [CITE.madeley, CITE.winters],
     },
@@ -73,7 +73,7 @@ export const EX_TIBIALIS_RAISES_PT: Guide = {
       paragraphs: [
         'O Walkito começa com 3\u00A0séries de 10, os dois pés, na parede. É um ponto de partida confortável para a maioria das pessoas. Se 10\u00A0repetições parecerem fáceis, sem cansaço nenhum, aumente para 15 ou acrescente uma pausa de 2\u00A0segundos lá em cima.',
         'Para deixar o exercício mais difícil, tente a elevação dos dedos em uma perna: mesma posição na parede, um pé de cada vez. Uma faixa elástica passada por cima do pé acrescenta carga. Segurar um halter leve em cima do pé é outra opção, embora desajeitada. A progressão mais simples é só fazer mais repetições, com ritmo controlado.',
-        'Em inglês, o exercício também é chamado de «tibialis raise». No app Walkito ele aparece como «Elevação dos dedos». O movimento é o mesmo: levante os dedos, os calcanhares ficam no chão.',
+        'Em inglês, o exercício também é chamado de “tibialis raise”. No app Walkito ele aparece como “Elevação dos dedos”. O movimento é o mesmo: levante os dedos, os calcanhares ficam no chão.',
       ],
     },
     {
@@ -108,7 +108,7 @@ export const EX_TIBIALIS_RAISES_PT: Guide = {
     },
     {
       q: 'Elevação do tibial e elevação dos dedos são a mesma coisa?',
-      a: 'Sim. «Elevação dos dedos» e «elevação do tibial» descrevem o mesmo movimento: levantar a parte da frente do pé enquanto o calcanhar fica no chão. O app Walkito chama de «Elevação dos dedos». Em inglês, também aparece como «tibialis raise», «tib raise» ou «toe raise». Todos se referem ao mesmo exercício.',
+      a: 'Sim. “Elevação dos dedos” e “elevação do tibial” descrevem o mesmo movimento: levantar a parte da frente do pé enquanto o calcanhar fica no chão. O app Walkito chama de “Elevação dos dedos”. Em inglês, também aparece como “tibialis raise”, “tib raise” ou “toe raise”. Todos se referem ao mesmo exercício.',
     },
   ],
   redFlags: {

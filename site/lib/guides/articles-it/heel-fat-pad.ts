@@ -17,7 +17,7 @@ export const HEEL_FAT_PAD_IT: Guide = {
   mainSource: CITE.fatPadReview,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Cuscinetto adiposo del tallone: sindrome, cause e rimedi',
+  title: 'Cuscinetto adiposo del tallone: cause e cosa aiuta',
   description:
     'Cuscinetto adiposo del tallone assottigliato: dolore profondo al centro del tallone. Come distinguerlo dalla fascite plantare e cosa aiuta.',
   h1: 'Sindrome del cuscinetto adiposo del tallone: cos’è, in cosa è diversa dalla fascite plantare e cosa dicono gli studi',
@@ -56,7 +56,7 @@ export const HEEL_FAT_PAD_IT: Guide = {
     {
       h2: 'In cosa il dolore del cuscinetto adiposo è diverso dalla fascite plantare?',
       paragraphs: [
-        'I due problemi si sovrappongono ma hanno schemi diversi. Il dolore del cuscinetto adiposo è un dolore profondo e sordo, centrato sotto l’osso del tallone. È peggiore su superfici dure, a piedi nudi e dopo essere stato a lungo in piedi. Di solito non ha la fitta acuta «del primo passo» tipica della fascite plantare e può non calmarsi con il movimento.',
+        'I due problemi si sovrappongono ma hanno schemi diversi. Il dolore del cuscinetto adiposo è un dolore profondo e sordo, centrato sotto l’osso del tallone. È peggiore su superfici dure, a piedi nudi e dopo tanto tempo in piedi. Di solito non ha la fitta acuta «del primo passo» tipica della fascite plantare e può non calmarsi con il movimento.',
         'Il dolore della fascite plantare è più acuto nella parte interna del tallone, raggiunge il picco al primo passo dopo il riposo e migliora quando cammini. Se premi al centro del tallone e ti sembra di sentire l’osso proprio sotto il dito con pochissima imbottitura, l’atrofia del cuscinetto adiposo è più probabile.',
         'Puoi avere entrambi i problemi nello stesso momento. Lo studio del 2011 li ha trovati insieme nel 9,2% del campione. Anche la fascite plantare può portare a problemi del cuscinetto adiposo: quando la fascia è lesionata cambia il modo in cui distribuisci il peso, e quella pressione in più sul cuscinetto del tallone ne accelera l’usura.',
       ],

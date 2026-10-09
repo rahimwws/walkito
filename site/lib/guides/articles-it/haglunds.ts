@@ -176,7 +176,7 @@ export const HAGLUNDS_IT: Guide = {
     {
       q: 'Il morbo di Haglund può passare senza operazione?',
       cites: [CITE.yuenHaglund, CITE.chooRearfoot],
-      a: 'La sporgenza ossea non sparisce senza chirurgia. Ma il dolore sì. Molte persone gestiscono i sintomi con cambio di scarpe, rialzi per il tallone, allungamento e rinforzo del polpaccio e modifiche dell’attività. Della chirurgia si parla dopo che almeno sei mesi di gestione conservativa non hanno dato sollievo.',
+      a: 'La sporgenza ossea non sparisce senza chirurgia. Il dolore invece può passare. Molte persone gestiscono i sintomi con cambio di scarpe, rialzi per il tallone, allungamento e rinforzo del polpaccio e modifiche dell’attività. Della chirurgia si parla dopo che almeno sei mesi di gestione conservativa non hanno dato sollievo.',
     },
     {
       q: 'Quali esercizi evitare con il morbo di Haglund?',

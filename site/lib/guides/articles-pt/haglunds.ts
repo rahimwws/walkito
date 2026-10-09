@@ -18,10 +18,10 @@ export const HAGLUNDS_PT: Guide = {
   updated: '2026-10-08',
   title: 'Deformidade de Haglund: o que é e o que fazer',
   description:
-    'A deformidade de Haglund é um calombo ósseo atrás do calcanhar ligado a bursite e dor no tendão de Aquiles. Causas, exercícios e quando se fala em cirurgia.',
+    'A deformidade de Haglund é um calombo ósseo atrás do calcanhar ligado a bursite e dor no Aquiles. Causas, exercícios e quando se fala em cirurgia.',
   h1: 'Deformidade de Haglund: o calombo atrás do calcanhar, o que causa e o que ajuda',
   lede:
-    'A deformidade de Haglund é um aumento ósseo na parte de cima e de trás do osso do calcanhar. Ela fica bem onde o tendão de Aquiles se prende, e quando o calçado aperta ali, a bursa entre o osso e o tendão fica irritada. O resultado é dor atrás do calcanhar, inchaço e às vezes um calombo visível. O tratamento conservador é a primeira escolha, mas a evidência por trás dele é quase toda opinião de especialistas, não ensaios clínicos.',
+    'A deformidade de Haglund é um aumento ósseo na parte de cima e de trás do osso do calcanhar. Ela fica bem onde o tendão de Aquiles se prende, e quando o calçado aperta ali, a bursa entre o osso e o tendão fica irritada. O resultado é dor atrás do calcanhar, inchaço e às vezes um calombo visível, que em inglês muita gente chama de “pump bump”. O tratamento conservador é a primeira escolha, mas a evidência por trás dele é quase toda opinião de especialistas, não ensaios clínicos.',
   intro: [
     'Esta página fala da anatomia, da relação com a tendinopatia insercional do Aquiles e a bursite retrocalcânea, das medidas conservadoras que existem e de quando a cirurgia entra na conversa. Se a sua dor fica mais acima no tendão, e não no osso, a página de [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/) é o melhor ponto de partida. Se a dor é embaixo do calcanhar, veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) ou [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/).',
   ],
@@ -40,7 +40,7 @@ export const HAGLUNDS_PT: Guide = {
       paragraphs: [
         'A deformidade de Haglund é um calombo ósseo na parte posterossuperior do calcâneo, o canto de cima e de trás do osso do calcanhar. Entre esse calombo e o tendão de Aquiles fica uma pequena bolsa cheia de líquido chamada bursa retrocalcânea. Quando o calombo é saliente, a bursa fica espremida entre o osso e o tendão, causando inflamação (bursite retrocalcânea) e dor atrás do calcanhar.',
         'O calombo em si é uma variação da estrutura. Algumas pessoas têm o calcâneo mais saliente que outras. Ele vira um problema quando a pressão do calçado, a carga no tendão ou as duas coisas irritam a bursa e a inserção do tendão. A combinação da proeminência óssea, da bursite e da tendinopatia insercional do Aquiles às vezes é chamada de síndrome de Haglund.',
-        'Em inglês, o calombo também é chamado de “pump bump”, por causa da associação com sapatos de calcanhar rígido, como scarpins ou sapatos sociais, que apertam direto a proeminência. Mas ele não é causado só pelo calçado. A mecânica do pé, a panturrilha tensa e a carga no tendão também têm um papel.',
+        'Em inglês, o calombo também é chamado de “pump bump”, por causa da associação com sapatos de traseira rígida, como scarpins ou sapatos sociais, que apertam direto a proeminência. Mas ele não é causado só pelo calçado. A mecânica do pé, a panturrilha tensa e a carga no tendão também têm um papel.',
       ],
       cites: [CITE.yuenHaglund],
     },
@@ -153,7 +153,7 @@ export const HAGLUNDS_PT: Guide = {
     {
       h2: 'O calçado pode causar a deformidade de Haglund?',
       paragraphs: [
-        'O calçado não cria a proeminência óssea. O formato do calcâneo é em parte genético. Mas calçados com um contraforte rígido, que não cede, podem irritar um calombo que de outra forma não doeria. Essa é a origem do nome em inglês “pump bump”, por causa do calcanhar rígido dos scarpins.',
+        'O calçado não cria a proeminência óssea. O formato do calcâneo é em parte genético. Mas calçados com um contraforte rígido, que não cede, podem irritar um calombo que de outra forma não doeria. Essa é a origem do nome em inglês “pump bump”, por causa da traseira rígida dos scarpins.',
         'Calçados a evitar: qualquer um com um contraforte duro e estreito que aperta a parte de trás do calcanhar. Calçados a procurar: gola do calcanhar macia ou acolchoada, parte de trás um pouco aberta ou flexível, e espaço suficiente para o contraforte não pressionar. Elevadores de calcanhar dentro do calçado também podem afastar um pouco o tendão de Aquiles do calombo.',
         'Mudar o calçado é a medida que dá para pôr em prática mais rápido e a mais recomendada de forma consistente na literatura de opinião de especialistas. Se você consegue tirar a pressão, muitas vezes consegue reduzir a dor.',
       ],
@@ -164,7 +164,7 @@ export const HAGLUNDS_PT: Guide = {
     {
       q: 'O que é o calombo atrás do calcanhar?',
       cites: [CITE.yuenHaglund],
-      a: 'Muitas vezes é a deformidade de Haglund, um aumento ósseo na parte de cima e de trás do osso do calcanhar, chamado em inglês de “pump bump”. O nome vem dos sapatos de calcanhar rígido (scarpins) que apertam o calombo e irritam o tecido entre o osso e o tendão de Aquiles, causando dor e inchaço.',
+      a: 'Muitas vezes é a deformidade de Haglund, um aumento ósseo na parte de cima e de trás do osso do calcanhar, chamado em inglês de “pump bump”. O nome vem dos sapatos de traseira rígida (scarpins) que apertam o calombo e irritam o tecido entre o osso e o tendão de Aquiles, causando dor e inchaço.',
     },
     {
       q: 'Deformidade de Haglund é a mesma coisa que tendinite de Aquiles?',
@@ -172,7 +172,7 @@ export const HAGLUNDS_PT: Guide = {
       a: 'Não. A deformidade de Haglund é uma proeminência óssea no osso do calcanhar. A tendinite de Aquiles é a dor no próprio tendão, normalmente por sobrecarga. Elas muitas vezes aparecem juntas porque o calombo pode irritar o tendão onde ele se prende. A diretriz de 2024 trata a tendinopatia insercional do Aquiles, que pode envolver Haglund, como diferente da doença da porção média.',
     },
     {
-      q: 'Deformidade de Haglund tem cura sem cirurgia?',
+      q: 'A deformidade de Haglund some sem cirurgia?',
       cites: [CITE.yuenHaglund, CITE.chooRearfoot],
       a: 'O calombo ósseo não some sem cirurgia. Mas a dor pode passar. Muitas pessoas controlam os sintomas com mudança de calçado, elevadores de calcanhar, alongamento e fortalecimento da panturrilha e ajustes na atividade. A cirurgia entra na conversa depois de pelo menos seis meses de tratamento conservador sem alívio.',
     },
@@ -189,7 +189,7 @@ export const HAGLUNDS_PT: Guide = {
     {
       q: 'Qual o melhor calçado para deformidade de Haglund?',
       cites: [CITE.chooRearfoot],
-      a: 'Calçados com contraforte macio, acolchoado ou flexível. Evite calçados de calcanhar rígido que apertam o calombo. Calçados abertos atrás, tamancos ou calçados com um recorte na gola do calcanhar podem reduzir a pressão direta. Elevadores de calcanhar dentro do calçado podem afastar um pouco o tendão da proeminência.',
+      a: 'Calçados com contraforte macio, acolchoado ou flexível. Evite calçados de traseira rígida que apertam o calombo. Calçados abertos atrás, tamancos ou calçados com um recorte na gola do calcanhar podem reduzir a pressão direta. Elevadores de calcanhar dentro do calçado podem afastar um pouco o tendão da proeminência.',
     },
     {
       q: 'O que é bursite retrocalcânea?',

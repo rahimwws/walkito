@@ -16,7 +16,7 @@ export const HEEL_FAT_PAD_PT: Guide = {
   mainSource: CITE.fatPadReview,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Coxim gorduroso do calcanhar: síndrome, causas e o que ajuda',
+  title: 'Síndrome do coxim gorduroso: causas e o que ajuda',
   description:
     'A síndrome do coxim gorduroso causa dor funda no centro do calcanhar quando a almofada afina. Como diferenciar da fascite plantar e o que ajuda.',
   h1: 'Síndrome do coxim gorduroso do calcanhar: o que é, como difere da fascite plantar e o que diz a evidência',

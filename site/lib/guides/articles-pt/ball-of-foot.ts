@@ -14,14 +14,14 @@ export const BALL_OF_FOOT_PT: Guide = {
   mainSource: CITE.amaha,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Metatarsalgia: dor na planta do pé, causas e exercícios',
+  title: 'Metatarsalgia: dor na planta do pé e exercícios',
   description:
     'Dor na planta do pé perto dos dedos: causas, metatarsalgia ou neuroma de Morton, exercícios, alongamento, almofada metatarsal e quando procurar ajuda.',
   h1: 'Dor na planta do pé: o que causa e o que ajuda',
   lede:
     'Você empurra o chão para dar o passo e lá está ela: uma dor aguda logo atrás dos dedos, como pisar numa pedrinha. A parte da frente da planta do pé recebe todo o peso do corpo a cada passo, e vários problemas diferentes podem fazer essa região doer. Esta página mostra quais são esses problemas, o que a evidência diz sobre exercício e calçados, e onde estão as lacunas reais da pesquisa.',
   intro: [
-    'O termo clínico geral é metatarsalgia, que quer dizer dor em volta das cabeças dos metatarsos, as "juntas" ósseas logo atrás dos dedos. Mas metatarsalgia descreve onde dói, não é um diagnóstico. Vários problemas diferentes cabem nesse nome, e nem todos respondem à mesma coisa.',
+    'O termo clínico geral é metatarsalgia, que quer dizer dor em volta das cabeças dos metatarsos, as “juntas” ósseas logo atrás dos dedos. Mas metatarsalgia descreve onde dói, não é um diagnóstico. Vários problemas diferentes cabem nesse nome, e nem todos respondem à mesma coisa.',
   ],
   toc: true,
   takeaways: [
@@ -78,7 +78,7 @@ export const BALL_OF_FOOT_PT: Guide = {
       keyFact: 'Em 254\u00A0pessoas com fascite plantar, 52 a 60\u00A0por cento tinham uma contratura isolada do gastrocnêmio, uma panturrilha tensa que também está ligada à sobrecarga da parte da frente do pé (Patel e DiGiovanni, 2011).',
       paragraphs: [
         'Muito provavelmente. Quando o gastrocnêmio está tenso, o tornozelo não consegue dobrar o suficiente durante a caminhada. O corpo tira o calcanhar do chão mais cedo, o que joga mais peso na parte da frente do pé. O termo clínico é equino funcional, e ele é uma causa reconhecida de metatarsalgia.',
-        'Os números vêm da pesquisa sobre fascite plantar, mas o mecanismo é o mesmo. Em 254\u00A0pessoas com fascite plantar, 52 a 60\u00A0por cento tinham uma contratura isolada do gastrocnêmio. Um estudo caso-controle com 50\u00A0casos e 100\u00A0controles encontrou que a dorsiflexão reduzida do tornozelo (o quanto o pé dobra para cima em direção à canela) era o fator de risco independente mais forte, com 23,3\u00A0vezes a chance.',
+        'Os números vêm da pesquisa sobre fascite plantar, mas o mecanismo é o mesmo. Em 254\u00A0pessoas com fascite plantar, 52 a 60\u00A0por cento tinham uma contratura isolada do gastrocnêmio. Um estudo caso-controle com 50\u00A0casos e 100\u00A0controles mostrou que a dorsiflexão reduzida do tornozelo (o quanto o pé dobra para cima em direção à canela) era o fator de risco independente mais forte, com razão de chances de 23,3.',
         'Nenhum ensaio testou o alongamento da panturrilha especificamente para metatarsalgia, mas a ligação é reconhecida na clínica. Veja [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/) para saber mais sobre a ligação entre panturrilha e tornozelo.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle],
@@ -190,7 +190,7 @@ export const BALL_OF_FOOT_PT: Guide = {
     {
       q: 'O que é metatarsalgia?',
       cites: [CITE.amaha],
-      a: 'Metatarsalgia é dor e inflamação em volta das cabeças dos metatarsos, as "juntas" ósseas na parte da frente da planta do pé. Ela descreve onde dói, não é um diagnóstico único. Causas comuns são excesso de uso, arco alto, panturrilhas tensas e músculos que dobram os dedos enfraquecidos. Em um estudo com 41\u00A0pessoas, exercícios para os dedos melhoraram a dor em 2,7\u00A0pontos em média numa escala de 10\u00A0pontos (Amaha 2020).',
+      a: 'Metatarsalgia é dor e inflamação em volta das cabeças dos metatarsos, as “juntas” ósseas na parte da frente da planta do pé. Ela descreve onde dói, não é um diagnóstico único. Causas comuns são excesso de uso, arco alto, panturrilhas tensas e músculos que dobram os dedos enfraquecidos. Em um estudo com 41\u00A0pessoas, exercícios para os dedos melhoraram a dor em 2,7\u00A0pontos em média numa escala de 10\u00A0pontos (Amaha 2020).',
     },
     {
       q: 'Como saber se é metatarsalgia ou neuroma de Morton?',
@@ -199,7 +199,7 @@ export const BALL_OF_FOOT_PT: Guide = {
     {
       q: 'Exercício para os dedos ajuda na dor na planta do pé?',
       cites: [CITE.amaha],
-      a: 'A evidência é inicial. Um estudo com 41\u00A0pessoas encontrou que 8\u00A0semanas de exercícios para os dedos melhoraram a dor e a força de preensão, mas ele não tinha grupo de controle e os próprios autores pediram ensaios randomizados (Amaha 2020). A ideia faz sentido: dedos mais fortes deveriam dividir mais da carga do impulso. Mas falta a prova direta de um ensaio controlado.',
+      a: 'A evidência é inicial. Um estudo com 41\u00A0pessoas mostrou que 8\u00A0semanas de exercícios para os dedos melhoraram a dor e a força de preensão, mas ele não tinha grupo de controle e os próprios autores pediram ensaios randomizados (Amaha 2020). A ideia faz sentido: dedos mais fortes deveriam dividir mais da carga do impulso. Mas falta a prova direta de um ensaio controlado.',
     },
     {
       q: 'Por que a panturrilha tensa causa dor na planta do pé?',

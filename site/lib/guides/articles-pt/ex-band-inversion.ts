@@ -13,15 +13,15 @@ export const EX_BAND_INVERSION_PT: Guide = {
   page: 'exBandInversion',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Inversão do tornozelo com faixa elástica: tibial posterior',
+  title: 'Inversão do tornozelo com faixa: tibial posterior',
   description:
     'Como fazer a inversão do tornozelo com faixa elástica para fortalecer o tibial posterior: técnica, séries, erros comuns e o que a pesquisa mostra.',
   h1: 'Inversão do tornozelo com faixa: como fortalecer o tibial posterior',
   lede:
-    'A inversão do tornozelo com faixa elástica é um exercício que fortalece o tibial posterior, o músculo profundo da panturrilha cujo tendão passa por baixo da parte de dentro do tornozelo e sustenta o arco por baixo. Você vira a sola do pé para dentro contra a resistência de uma faixa. Um estudo de ressonância magnética de 2004 encontrou que um movimento parecido, a adução do pé em cadeia fechada, produziu a maior ativação isolada do tibial posterior entre três exercícios testados.',
+    'A inversão do tornozelo com faixa elástica é um exercício que fortalece o tibial posterior, o músculo profundo da panturrilha cujo tendão passa por baixo da parte de dentro do tornozelo e sustenta o arco por baixo. Você vira a sola do pé para dentro contra a resistência de uma faixa. Um estudo de ressonância magnética de 2004 mostrou que um movimento parecido, a adução do pé em cadeia fechada, produziu a maior ativação isolada do tibial posterior entre três exercícios testados.',
   takeaways: [
-    'Um estudo de ressonância magnética de 2004 com 5\u00A0adultos saudáveis encontrou que a adução do pé (virar o pé para dentro) aumentou em 50% a intensidade do sinal do tibial posterior, com menos de 5% de aumento nos músculos em volta, o que faz dele o exercício mais seletivo para esse músculo (Kulig e colegas, 2004).',
-    'Uma revisão sistemática de 2018 encontrou que programas de exercício com fortalecimento do tibial posterior melhoraram a dor e a função em pessoas com disfunção do tendão tibial posterior, embora a revisão tenha observado que a maioria dos estudos era pequena (Ross e colegas, 2018).',
+    'Um estudo de ressonância magnética de 2004 com 5\u00A0adultos saudáveis mostrou que a adução do pé (virar o pé para dentro) aumentou em 50% a intensidade do sinal do tibial posterior, com menos de 5% de aumento nos músculos em volta, o que faz dele o exercício mais seletivo para esse músculo (Kulig e colegas, 2004).',
+    'Uma revisão sistemática de 2018 mostrou que programas de exercício com fortalecimento do tibial posterior melhoraram a dor e a função em pessoas com disfunção do tendão tibial posterior, embora a revisão tenha observado que a maioria dos estudos era pequena (Ross e colegas, 2018).',
     'O tibial posterior é o principal estabilizador dinâmico do arco longitudinal medial em pé e ao andar. Quando ele enfraquece, o arco pode cair com o tempo.',
     'O Walkito só acrescenta este exercício depois de seis sessões de pé curto em pé, para que os músculos intrínsecos do arco já estejam trabalhando antes de a faixa entrar.',
   ],
@@ -60,7 +60,7 @@ export const EX_BAND_INVERSION_PT: Guide = {
     },
     {
       h2: 'Qual músculo este exercício trabalha?',
-      keyFact: 'Um estudo de ressonância magnética de 2004 com 5\u00A0adultos saudáveis encontrou que virar o pé para dentro aumentou o sinal do tibial posterior em 50\u00A0por cento, com menos de 5\u00A0por cento de mudança nos músculos vizinhos (Kulig e colegas, 2004).',
+      keyFact: 'Um estudo de ressonância magnética de 2004 com 5\u00A0adultos saudáveis mostrou que virar o pé para dentro aumentou o sinal do tibial posterior em 50\u00A0por cento, com menos de 5\u00A0por cento de mudança nos músculos vizinhos (Kulig e colegas, 2004).',
       paragraphs: [
         'O alvo principal é o tibial posterior. Ele é o músculo mais profundo da parte de trás da perna, atrás da tíbia e da fíbula. O tendão dele passa por trás do maléolo medial (o osso de dentro do tornozelo) e depois se abre em várias faixas que se prendem a quase todos os ossos do meio do pé.',
         'Um estudo de ressonância magnética de 2004 de Kulig e colegas testou três exercícios em 5\u00A0adultos saudáveis: adução do pé (virar o pé para dentro deslizando no chão), elevação de calcanhar em uma perna e supinação do pé em cadeia aberta. A adução do pé produziu a maior ativação do tibial posterior (aumento de 50% no sinal) com a menor ativação nos músculos em volta (menos de 5%). A elevação de calcanhar em uma perna também ativou o tibial posterior, mas ativou muito o gastrocnêmio (99%) e o sóleo (39%), o que faz dela um exercício bem menos seletivo para o tibial posterior.',
@@ -71,7 +71,7 @@ export const EX_BAND_INVERSION_PT: Guide = {
       h2: 'Por que o tibial posterior importa para o arco?',
       paragraphs: [
         'O tibial posterior é o principal estabilizador dinâmico do arco longitudinal medial. Toda vez que você dá um passo, ele contrai para segurar o arco no meio do apoio, quando todo o seu peso está em um pé só. Os músculos intrínsecos do pé (treinados pelo [exercício do pé curto](/pt/exercicios/pe-curto/) e por [abrir os dedos](/pt/exercicios/abrir-os-dedos-do-pe/)) dão o apoio local ao arco, mas o tibial posterior dá a força extrínseca maior, de cima.',
-        'Quando o tendão do tibial posterior enfraquece ou se desgasta, o arco cai aos poucos e o pé faz mais pronação. Uma revisão de 2017 de Ling e Lui descreveu isso como a causa mais comum de pé chato adquirido do adulto. Uma revisão sistemática de 2018 de Ross e colegas encontrou que programas de exercício com fortalecimento do tibial posterior melhoraram a dor e a função na disfunção do tendão tibial posterior em fase inicial.',
+        'Quando o tendão do tibial posterior enfraquece ou se desgasta, o arco cai aos poucos e o pé faz mais pronação. Uma revisão de 2017 de Ling e Lui descreveu isso como a causa mais comum de pé chato adquirido do adulto. Uma revisão sistemática de 2018 de Ross e colegas mostrou que programas de exercício com fortalecimento do tibial posterior melhoraram a dor e a função na disfunção do tendão tibial posterior em fase inicial.',
         'Por isso os [programas de exercícios para pé chato](/pt/exercicios-pe-chato/) incluem exercícios intrínsecos do pé e trabalho do tibial posterior. Os músculos intrínsecos são os estabilizadores locais. O tibial posterior é o principal estabilizador extrínseco. Os dois importam.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
@@ -103,7 +103,7 @@ export const EX_BAND_INVERSION_PT: Guide = {
     {
       q: 'Inversão do tornozelo com faixa ajuda no pé chato?',
       cites: [CITE.posteriorTibialReview, CITE.ling],
-      a: 'O tibial posterior é o principal estabilizador dinâmico do arco. Uma revisão sistemática de 2018 encontrou que programas de exercício com fortalecimento do tibial posterior melhoraram a dor e a função em pessoas com disfunção do tendão tibial posterior, a causa mais comum de pé chato adquirido do adulto (Ross 2018). Fortalecer esse músculo faz parte da abordagem padrão para pé chato.',
+      a: 'O tibial posterior é o principal estabilizador dinâmico do arco. Uma revisão sistemática de 2018 mostrou que programas de exercício com fortalecimento do tibial posterior melhoraram a dor e a função em pessoas com disfunção do tendão tibial posterior, a causa mais comum de pé chato adquirido do adulto (Ross 2018). Fortalecer esse músculo faz parte da abordagem padrão para pé chato.',
     },
     {
       q: 'Qual a diferença entre inversão e eversão do tornozelo?',

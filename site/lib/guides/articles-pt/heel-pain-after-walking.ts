@@ -16,9 +16,9 @@ export const HEEL_PAIN_AFTER_WALKING_PT: Guide = {
   mainSource: CITE.guideline,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Dor no calcanhar depois de andar: causas e o que ajuda',
+  title: 'Dor no calcanhar depois de andar: o que ajuda',
   description:
-    'Dor no calcanhar depois de andar: por que o calcanhar dói após uma caminhada longa, as causas possíveis, quando se preocupar e os exercícios que mais ajudam.',
+    'Dor no calcanhar depois de andar ou ficar em pé: por que dói após uma caminhada longa, as causas, quando se preocupar e os exercícios que mais ajudam.',
   h1: 'Dor no calcanhar depois de andar: por que dói e o que fazer',
   lede:
     'O calcanhar estava bem enquanto você andava, mas agora que parou ele dói. Ou a dor começou no meio de uma caminhada longa e foi piorando a cada passo. Os dois padrões apontam para a mesma coisa: os tecidos embaixo do calcanhar receberam mais carga do que aguentavam naquele dia. A causa mais comum é a fascite plantar, e a resposta mais útil é alongamento e fortalecimento gradual da panturrilha.',

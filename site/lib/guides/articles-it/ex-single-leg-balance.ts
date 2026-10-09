@@ -30,7 +30,7 @@ export const EX_SINGLE_LEG_BALANCE_IT: Guide = {
     {
       h2: 'Come si fa l’equilibrio su una gamba?',
       paragraphs: [
-        'Mettiti vicino a un muro o a un piano di lavoro. Solleva un piede da terra piegando un po’ il ginocchio. Guarda un punto fisso davanti a te. Lascia che il piede d’appoggio oscilli. Quell’oscillazione è proprio il punto: i piccoli muscoli del piede e della caviglia stanno lavorando per tenerti in piedi.',
+        'Mettiti vicino a un muro o a un piano di lavoro. Solleva un piede da terra piegando un po’ il ginocchio. Guarda un punto fisso davanti a te. Lascia che il piede d’appoggio oscilli. Quell’oscillazione è proprio lo scopo: i piccoli muscoli del piede e della caviglia stanno lavorando per tenerti in piedi.',
         'Tieni più a lungo che puoi, fino a 30\u00A0secondi, poi cambia lato. Tre tenute per lato è una dose comune. Se non riesci a stare più di qualche secondo, tieni la punta delle dita sul muro e aumenta un po’ alla volta.',
       ],
       exercises: [
@@ -96,7 +96,7 @@ export const EX_SINGLE_LEG_BALANCE_IT: Guide = {
     {
       h2: 'Quali sono gli errori più comuni nell’equilibrio su una gamba?',
       paragraphs: [
-        'Guardare il pavimento. Gli occhi devono stare su un punto fisso all’altezza degli occhi. Guardare in basso sposta il peso in avanti e rende l’esercizio più facile, e così perde il suo scopo.',
+        'Guardare il pavimento. Lo sguardo deve restare su un punto fisso all’altezza degli occhi. Guardare in basso sposta il peso in avanti e rende l’esercizio più facile, e così perde il suo scopo.',
         'Bloccare il ginocchio d’appoggio. Una leggera flessione tiene attivi i muscoli. Un ginocchio bloccato sposta il carico sull’articolazione invece che sui muscoli intorno.',
         'Cercare di non oscillare. L’oscillazione è l’esercizio. Le piccole correzioni che fa il piede per restare in piedi sono quelle che costruiscono propriocezione e controllo della caviglia. Aggrapparsi al pavimento con le dita arricciate o irrigidirsi per eliminare ogni movimento riduce l’effetto dell’allenamento.',
         'Stare troppo lontano dal muro. Devi essere abbastanza vicino da poterti tenere se perdi l’equilibrio, soprattutto nella versione a occhi chiusi. Prima di tutto la sicurezza.',

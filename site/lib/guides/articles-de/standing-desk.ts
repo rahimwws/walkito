@@ -14,7 +14,7 @@ export const STANDING_DESK_DE: Guide = {
   mainSource: CITE.buckley,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Fußschmerzen am Stehschreibtisch: Ursachen und was hilft',
+  title: 'Fußschmerzen am Stehschreibtisch: was hilft',
   description:
     'Warum die Füße am Stehschreibtisch wehtun, wie lange du stehen solltest, bevor du dich setzt, Anti-Ermüdungsmatten und Übungen direkt am Schreibtisch.',
   h1: 'Fußschmerzen am Stehschreibtisch: woher sie kommen und was hilft',
@@ -29,7 +29,7 @@ export const STANDING_DESK_DE: Guide = {
     'Eine Expertenempfehlung von 2015 im Auftrag von Public Health England rät, bei der Arbeit zunächst 2\u00A0Stunden pro Tag Stehen und leichte Aktivität zu sammeln und später auf 4\u00A0Stunden pro Tag zu steigern, aufgeteilt in kürzere Phasen (Buckley und Kollegen, 2015).',
     'Eine systematische Übersichtsarbeit von 2014 zu 14\u00A0Studien fand ausreichende Belege, dass Sitz-Steh-Arbeitsplätze Beschwerden im unteren Rücken verringern, ohne Einbußen bei der Produktivität, fand aber kein optimales Verhältnis von Sitzen zu Stehen (Karakolis und Callaghan, 2014).',
     'Eine Übersichtsarbeit von 2015 zur arbeitsmedizinischen Forschung fand langes Stehen verbunden mit Beschwerden am Bewegungsapparat, Ermüdung und Beinschmerzen und nannte Bodenmatten, Kompressionsstrümpfe und stützende Schuhe unter den Maßnahmen mit Belegen (Waters und Dick, 2015).',
-    'Eine eingeschränkte Beweglichkeit im Sprunggelenk, also eine verkürzte Wade, war in einer Fall-Kontroll-Studie von 2003 der stärkste Vorhersagefaktor für Plantarfasziitis, mit dem 23,3-Fachen der Wahrscheinlichkeit. Stehen über den größten Teil des Arbeitstags erhöhte sie um das 3,6-Fache (Riddle und Kollegen, 2003).',
+    'Eine eingeschränkte Beweglichkeit im Sprunggelenk, also eine verkürzte Wade, war in einer Fall-Kontroll-Studie von 2003 der stärkste Vorhersagefaktor für Plantarfasziitis, mit einer 23,3-fachen Chance. Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache (Riddle und Kollegen, 2003).',
   ],
   sections: [
     {
@@ -37,7 +37,7 @@ export const STANDING_DESK_DE: Guide = {
       keyFact: 'Eine systematische Übersichtsarbeit von 2017 zu 25\u00A0Studien fand, dass Beschwerden im unteren Rücken im Allgemeinen nach etwa 71\u00A0Minuten Stehen klinisch relevant wurden, bei Menschen mit Neigung zu Schmerzen im Stehen aber schon nach 42\u00A0Minuten (Coenen und Kollegen, 2017).',
       paragraphs: [
         'Fußschmerzen am Stehschreibtisch entstehen aus demselben Grund wie bei jedem langen Stehen: Füße, Waden und Unterschenkel tragen eine statische Last ohne die Entlastung, die Gehen oder Sitzen bringt. Wenn du ruhig stehst, sammelt die Schwerkraft das Blut in den Unterschenkeln, die Wadenmuskeln halten dieselbe Position, ohne sich anzuspannen und zu entspannen, und die Plantarfaszie unter dem Gewölbe fängt eine gleichmäßige Last ab.',
-        'Eine systematische Übersichtsarbeit von 2017 zu 25\u00A0Laborstudien fasste Daten von 591\u00A0Teilnehmenden zusammen und fand, dass sich klinisch relevante Beschwerden im unteren Rücken in der Allgemeinbevölkerung nach etwa 71\u00A0Minuten ununterbrochenem Stehen entwickelten, bei Menschen, die beim Stehen leicht Schmerzen bekommen, aber schon nach 42\u00A0Minuten. Für Beschwerden in den Beinen sah das Bild ähnlich aus. Die Autoren empfahlen 40\u00A0Minuten als praktische Grenze, bevor du das Stehen unterbrichst.',
+        'Eine systematische Übersichtsarbeit von 2017 zu 25\u00A0Laborstudien fasste Daten von 591\u00A0Teilnehmenden zusammen und fand, dass sich klinisch relevante Beschwerden im unteren Rücken in der Allgemeinbevölkerung nach etwa 71\u00A0Minuten ununterbrochenem Stehen entwickelten, bei Menschen, die beim Stehen leicht Schmerzen bekommen, aber schon nach 42\u00A0Minuten. Für Beschwerden in den Beinen sah das Bild ähnlich aus. Die Autoren empfahlen 40\u00A0Minuten als praktische Grenze, nach der man das Stehen unterbrechen sollte.',
         'Eine Übersichtsarbeit von 2015 zur arbeitsmedizinischen Forschung bestätigte den Zusammenhang zwischen langem Stehen und Beschwerden am Bewegungsapparat, Ermüdung und Beinschmerzen in vielen Arten von Arbeit im Stehen. Die Übersicht fand auch, dass Belastung für Herz und Kreislauf und geschwollene Beine mit der Stehdauer zunehmen.',
       ],
       cites: [CITE.coenen, CITE.waters],
@@ -187,7 +187,7 @@ export const STANDING_DESK_DE: Guide = {
     {
       h2: 'Könnten Fußschmerzen am Stehschreibtisch eine Plantarfasziitis oder etwas anderes sein?',
       paragraphs: [
-        'Fußschmerzen am Stehschreibtisch sind meist allgemeine Beschwerden von langem, statischem Stehen. Wenn der Schmerz aber stechend ist, sich nahe der Ferse bündelt und bei den ersten Schritten nach längerem Sitzen am schlimmsten ist, deutet dieses Muster auf eine Plantarfasziitis hin. Stehen über den größten Teil des Arbeitstags erhöhte die Wahrscheinlichkeit einer Plantarfasziitis in einer Fall-Kontroll-Studie um das 3,6-Fache, der Stehschreibtisch kann also plausibel dazu beitragen.',
+        'Fußschmerzen am Stehschreibtisch sind meist allgemeine Beschwerden von langem, statischem Stehen. Wenn der Schmerz aber stechend ist, sich nahe der Ferse bündelt und bei den ersten Schritten nach längerem Sitzen am schlimmsten ist, deutet dieses Muster auf eine Plantarfasziitis hin. Stehen über den größten Teil des Arbeitstags erhöhte die Chance auf eine Plantarfasziitis in einer Fall-Kontroll-Studie um das 3,6-Fache, der Stehschreibtisch kann also plausibel dazu beitragen.',
         'Die Übungen, die bei beidem helfen, überschneiden sich stark. Wenn dein Schmerz dem Muster der Plantarfasziitis folgt, sind [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) der ausführlichere Ratgeber. Wenn sich deine Gewölbe flach anfühlen, lies [Übungen bei Plattfuß und abgesunkenem Gewölbe](/de/plattfuss-uebungen/). Wenn du nicht sicher bist, geh zu einer medizinischen Fachperson, bevor du den Fuß mit Übungen belastest.',
       ],
       cites: [CITE.riddle],
@@ -206,7 +206,7 @@ export const STANDING_DESK_DE: Guide = {
     },
     {
       q: 'Kann ein Stehschreibtisch eine Plantarfasziitis auslösen?',
-      a: 'Stehen über den größten Teil des Arbeitstags erhöhte die Wahrscheinlichkeit einer Plantarfasziitis in einer Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen um das 3,6-Fache. Ein Stehschreibtisch erhöht deine täglichen Stunden im Stehen, er kann also plausibel dazu beitragen, wenn deine Wade schon verkürzt ist, was mit dem 23,3-Fachen der Wahrscheinlichkeit der stärkste unabhängige Risikofaktor war. Wadendehnungen sind der direkteste Weg, beide Risikofaktoren anzugehen.',
+      a: 'Stehen über den größten Teil des Arbeitstags erhöhte die Chance auf eine Plantarfasziitis in einer Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen um das 3,6-Fache. Ein Stehschreibtisch erhöht deine täglichen Stunden im Stehen, er kann also plausibel dazu beitragen, wenn deine Wade schon verkürzt ist, was mit einer 23,3-fachen Chance der stärkste unabhängige Risikofaktor war. Wadendehnungen sind der direkteste Weg, beide Risikofaktoren anzugehen.',
       cites: [CITE.riddle],
     },
     {

@@ -14,7 +14,7 @@ export const BALL_OF_FOOT_FR: Guide = {
   mainSource: CITE.amaha,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Métatarsalgie, douleur à l’avant-pied\u00A0: causes et exercices',
+  title: 'Métatarsalgie et douleur à l’avant-pied\u00A0: exercices',
   description:
     'Douleur sous l’avant-pied\u00A0: causes, métatarsalgie ou névrome de Morton, exercices des orteils, étirements du mollet, coussinets et quand consulter.',
   h1: 'Douleur à l’avant-pied\u00A0: d’où elle vient et ce qui aide',
@@ -62,7 +62,7 @@ export const BALL_OF_FOOT_FR: Guide = {
       cites: [CITE.patelStressFracture],
     },
     {
-      h2: 'L’exercice aide-t-il la douleur à l’avant-pied\u00A0?',
+      h2: 'L’exercice aide-t-il en cas de douleur à l’avant-pied\u00A0?',
       keyFact: 'Dans une étude avant-après de 2020 sur 41\u00A0personnes atteintes de métatarsalgie primaire, un programme d’exercices des orteils de 8\u00A0semaines a réduit la douleur de 2,7\u00A0points en moyenne sur une échelle de 10, sans groupe témoin (Amaha et coll., 2020).',
       paragraphs: [
         'Pour être honnête, les données sur l’exercice dans la métatarsalgie sont précoces et limitées. Elles sont bien plus minces que pour la [fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou la tendinite d’Achille, où il existe des essais randomisés.',
@@ -78,7 +78,7 @@ export const BALL_OF_FOOT_FR: Guide = {
       keyFact: 'Chez 254\u00A0personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien, un mollet raide qui est aussi lié à la surcharge de l’avant-pied (Patel et DiGiovanni, 2011).',
       paragraphs: [
         'Très probablement. Quand le gastrocnémien est raide, la cheville ne peut pas assez se plier pendant la marche. Le corps lève le talon plus tôt, ce qui envoie plus de poids sur l’avant-pied. Le terme médical est équin fonctionnel, et c’est une cause reconnue de métatarsalgie.',
-        'Les chiffres viennent de la recherche sur la fasciite plantaire, mais le mécanisme est le même. Chez 254\u00A0personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien. Une étude cas-témoins sur 50\u00A0cas et 100\u00A0témoins a montré qu’une flexion dorsale de cheville réduite (la capacité du pied à remonter vers le tibia) était le plus fort facteur de risque indépendant, avec un risque multiplié par 23,3.',
+        'Les chiffres viennent de la recherche sur la fasciite plantaire, mais le mécanisme est le même. Chez 254\u00A0personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien. Une étude cas-témoins sur 50\u00A0cas et 100\u00A0témoins a montré qu’une flexion dorsale de cheville réduite (la capacité du pied à remonter vers le tibia) était le plus fort facteur de risque indépendant, avec un odds ratio de 23,3.',
         'Aucun essai n’a testé les étirements du mollet pour la métatarsalgie en particulier, mais le lien est reconnu en clinique. Voir [montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/) pour en savoir plus sur le lien entre mollet et cheville.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle],
@@ -92,7 +92,7 @@ export const BALL_OF_FOOT_FR: Guide = {
       ],
     },
     {
-      h2: 'Quels exercices aident la douleur à l’avant-pied\u00A0?',
+      h2: 'Quels exercices pour la douleur à l’avant-pied\u00A0?',
       paragraphs: [
         'Ces exercices ciblent deux côtés du problème\u00A0: la force des orteils et des muscles intrinsèques du pied (pour partager la charge pendant la poussée) et la souplesse du mollet (pour éviter de surcharger l’avant-pied). Aucun n’a été testé dans un essai randomisé pour la métatarsalgie en particulier. Quand vous touchez la zone de l’avant-pied sur la carte de la douleur de Walkito pendant un bilan, la séance de soulagement propose d’écarter les orteils et l’étirement du fascia plantaire. La zone des orteils propose d’écarter les orteils et le pied court assis.',
       ],
@@ -188,7 +188,7 @@ export const BALL_OF_FOOT_FR: Guide = {
   ],
   faq: [
     {
-      q: 'C’est quoi, une métatarsalgie\u00A0?',
+      q: 'Qu’est-ce que la métatarsalgie\u00A0?',
       cites: [CITE.amaha],
       a: 'La métatarsalgie est une douleur et une inflammation autour des têtes métatarsiennes, les bosses osseuses sous l’avant-pied. Elle décrit l’endroit qui fait mal, ce n’est pas un diagnostic unique. Les causes fréquentes sont la surutilisation, des voûtes hautes, des mollets raides et des fléchisseurs des orteils affaiblis. Dans une étude sur 41\u00A0personnes, des exercices des orteils ont réduit la douleur de 2,7\u00A0points en moyenne sur une échelle de 10 (Amaha 2020).',
     },
@@ -197,7 +197,7 @@ export const BALL_OF_FOOT_FR: Guide = {
       a: 'La métatarsalgie est une douleur sourde à vive, étendue sous l’avant-pied. Le névrome de Morton est plus précis\u00A0: des brûlures, des fourmillements ou un engourdissement entre le troisième et le quatrième orteil, parfois avec une sensation de claquement quand on serre l’avant-pied. Un professionnel de santé peut les distinguer par un examen clinique et une échographie.',
     },
     {
-      q: 'Les exercices des orteils aident-ils la douleur à l’avant-pied\u00A0?',
+      q: 'Les exercices des orteils aident-ils en cas de douleur à l’avant-pied\u00A0?',
       cites: [CITE.amaha],
       a: 'Les données sont précoces. Une étude sur 41\u00A0personnes a trouvé que 8\u00A0semaines d’exercices des orteils amélioraient la douleur et la force de préhension, mais elle n’avait pas de groupe témoin, et ses auteurs demandaient des essais randomisés (Amaha 2020). L’idée se tient\u00A0: des orteils plus forts devraient partager davantage la charge de la poussée. Mais la preuve directe d’un essai contrôlé manque.',
     },
@@ -207,7 +207,7 @@ export const BALL_OF_FOOT_FR: Guide = {
       a: 'Quand le gastrocnémien, le plus gros et le plus superficiel des deux muscles du mollet, est raide, la cheville ne peut pas assez se plier pendant la marche. Le corps compense en levant le talon plus tôt, ce qui reporte plus de poids sur l’avant-pied. Chez des personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien (Patel et DiGiovanni, 2011). Le même mécanisme contribue à la surcharge de l’avant-pied.',
     },
     {
-      q: 'Les coussinets métatarsiens marchent-ils contre la douleur à l’avant-pied\u00A0?',
+      q: 'Les coussinets métatarsiens sont-ils efficaces contre la douleur à l’avant-pied\u00A0?',
       a: 'Les coussinets métatarsiens sont l’approche conservatrice la plus utilisée pour la douleur à l’avant-pied. Ils soulèvent le métatarsien juste derrière la zone douloureuse et répartissent la pression sur une plus grande surface. L’emplacement compte\u00A0: le coussinet doit être juste derrière les têtes métatarsiennes, pas directement dessous, sinon il peut augmenter la douleur.',
     },
     {
@@ -244,7 +244,7 @@ export const BALL_OF_FOOT_FR: Guide = {
   },
   program: {
     h2: 'En faire un plan',
-    text: 'Vous pouvez faire les exercices de cette page seul, ou laisser Walkito les programmer pour vous. L’application construit un plan une semaine à la fois. Quand vous marquez l’avant-pied sur la carte de la douleur, la séance du bilan se concentre sur l’écartement des orteils et l’étirement du fascia plantaire. Le programme plus large ajoute des étirements et du renforcement du mollet au fil des semaines.',
+    text: 'Vous pouvez faire les exercices de cette page de votre côté, ou laisser Walkito les programmer pour vous. L’application construit un plan une semaine à la fois. Quand vous marquez l’avant-pied sur la carte de la douleur, la séance du bilan se concentre sur l’écartement des orteils et l’étirement du fascia plantaire. Le programme plus large ajoute des étirements et du renforcement du mollet au fil des semaines.',
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours (puis tous les 28 une fois cet objectif atteint), un court test vérifie vos progrès pour que vous voyiez ce qui change. Walkito est un programme d’exercices. Il ne pose pas de diagnostic et ne remplace pas un professionnel de santé. Si votre douleur à l’avant-pied s’accompagne d’un engourdissement, d’un gonflement ou d’une boule, consultez d’abord un professionnel de santé.',
     ],

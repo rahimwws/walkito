@@ -12,7 +12,7 @@ export const EX_ANKLE_ROCKS_FR: Guide = {
   page: 'exAnkleRocks',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Bascules de cheville\u00A0: mobilité, genou au-dessus des orteils',
+  title: 'Bascules de cheville (knee over toes)\u00A0: mobilité',
   description:
     'Comment faire les bascules de cheville, l’exercice genou au-dessus des orteils pour la mobilité\u00A0: technique, séries, pourquoi la flexion compte, test.',
   h1: 'Bascules de cheville\u00A0: comment les faire, et pourquoi la mobilité de la cheville compte',
@@ -58,7 +58,7 @@ export const EX_ANKLE_ROCKS_FR: Guide = {
       paragraphs: [
         'La flexion dorsale de la cheville, c’est jusqu’où le pied peut se plier vers le haut, vers le tibia, pendant que le talon reste au sol. Chaque pas demande un peu de flexion dorsale. Quand la cheville ne se plie pas assez, le corps compense. Le pied peut s’affaisser vers l’intérieur, le mollet subit plus de tension, et le fascia plantaire absorbe des forces pour lesquelles il n’est pas fait.',
         'Dans l’étude cas-témoins de Riddle 2003, une flexion dorsale de cheville réduite était la variable avec le plus grand effet indépendant, avec un odds ratio de 23,3 pour l’apparition d’une fasciite plantaire. C’était plus fort que l’IMC, le temps passé debout ou la distance de course. Dans une revue distincte, un mollet raide, plus précisément le gastrocnémien, était présent chez 52 à 60\u00A0% de 254\u00A0personnes atteintes de fasciite plantaire.',
-        'Étirer le mollet de façon passive (comme avec l’[étirement du mollet](/fr/exercices/etirement-mollet/) et l’[étirement du soléaire](/fr/exercices/etirement-soleaire/)) traite un côté du problème\u00A0: la longueur du muscle. Les bascules de cheville traitent l’autre côté\u00A0: le contrôle actif en fin d’amplitude. Basculer le genou au-dessus des orteils sous le poids du corps apprend à la cheville à utiliser l’amplitude qu’elle a, pas seulement à l’atteindre passivement.',
+        'Étirer le mollet de façon passive (comme avec l’[étirement du mollet](/fr/exercices/etirement-mollet/) et l’[étirement du soléaire](/fr/exercices/etirement-soleaire/)) agit sur un côté du problème\u00A0: la longueur du muscle. Les bascules de cheville agissent sur l’autre côté\u00A0: le contrôle actif en fin d’amplitude. Basculer le genou au-dessus des orteils sous le poids du corps apprend à la cheville à utiliser l’amplitude qu’elle a, pas seulement à l’atteindre passivement.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
     },
@@ -91,7 +91,7 @@ export const EX_ANKLE_ROCKS_FR: Guide = {
     {
       h2: 'Versions plus faciles et plus difficiles',
       paragraphs: [
-        'Si les bascules de cheville debout sont trop exigeantes, essayez-les assis. Asseyez-vous, le pied à plat au sol, et faites glisser le genou vers l’avant au-dessus des orteils. C’est le même mouvement avec moins de charge. Cela marche bien après une poussée aiguë, quand les exercices debout sont de trop.',
+        'Si les bascules de cheville debout sont trop exigeantes, essayez-les assis. Asseyez-vous, le pied à plat au sol, et faites glisser le genou vers l’avant au-dessus des orteils. C’est le même mouvement avec moins de charge. Cette version convient bien après une poussée aiguë, quand les exercices debout sont de trop.',
         'Une version plus difficile est la bascule de cheville lestée. Tenez un kettlebell ou un gros livre contre la poitrine en basculant vers l’avant. Le poids ajouté pousse le genou plus loin en flexion dorsale. N’ajoutez du poids que lorsque les bascules au poids du corps vous ont paru faciles deux séances de suite.',
         'Pour d’autres exercices de la cheville et du bas de la jambe, voir les [relevés des orteils](/fr/exercices/releves-orteils-mur/) (force du tibia) et l’[équilibre sur une jambe](/fr/exercices/equilibre-une-jambe/) (stabilité de la cheville). Le programme complet se trouve dans [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
       ],
@@ -103,7 +103,7 @@ export const EX_ANKLE_ROCKS_FR: Guide = {
       a: 'Walkito commence à 2\u00A0séries de 15 par jambe. Cela fait 30\u00A0répétitions par jambe et par séance. Il n’existe pas de protocole publié pour les bascules de cheville dans la fasciite plantaire en particulier, donc cette dose vient de l’application. Augmentez les séries ou ajoutez du poids une fois que la dose actuelle vous a paru facile deux séances de suite.',
     },
     {
-      q: 'Les bascules de cheville aident-elles la fasciite plantaire\u00A0?',
+      q: 'Les bascules de cheville aident-elles en cas de fasciite plantaire\u00A0?',
       cites: [CITE.riddle],
       a: 'Les bascules de cheville ciblent la flexion dorsale de la cheville, qui était le plus fort facteur de risque indépendant de fasciite plantaire dans une étude cas-témoins (odds ratio de 23,3). Aucun essai n’a testé les bascules de cheville comme exercice isolé dans la fasciite plantaire, mais améliorer l’amplitude qu’elles ciblent s’attaque au plus grand facteur de risque biomécanique identifié par la recherche.',
     },

@@ -20,30 +20,30 @@ export const STANDING_FR: Guide = {
   page: 'standing',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Mal aux pieds debout toute la journée\u00A0: pourquoi et que faire',
+  title: 'Mal aux pieds debout toute la journée\u00A0: que faire',
   description:
     'Pourquoi on a mal aux pieds après une journée debout, ce qui aide (étirements du mollet, renforcement, bas de contention) et quand consulter.',
   h1: 'Pourquoi ai-je mal aux pieds après une journée debout\u00A0?',
   lede:
     'Vos pieds font mal à la fin d’une longue journée de travail. La voûte est douloureuse, le talon sensible, et vos jambes sont lourdes. Rester debout des heures sur un sol dur charge les mêmes tissus encore et encore, sans l’effet de pompe que la marche donne aux mollets et aux veines. Étirer le mollet et le fascia plantaire, et renforcer un peu le mollet, cible les tissus qui encaissent le plus.',
   intro: [
-    'Toutes les douleurs de pied liées à la station debout ne sont pas une fasciite plantaire, mais les deux se recoupent. Une étude cas-témoins de 2003, sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins appariés, a montré que rester debout la majeure partie de la journée de travail multipliait par 3,6 le risque (odds) de fasciite plantaire. Une cheville moins souple était un facteur de risque encore plus fort, avec un risque multiplié par 23,3. Les exercices qui aident dans les deux cas sont en grande partie les mêmes\u00A0: étirements du mollet et du fascia plantaire, plus du renforcement du mollet.',
+    'Toutes les douleurs de pied liées à la station debout ne sont pas une fasciite plantaire, mais les deux se recoupent. Une étude cas-témoins de 2003, sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins appariés, a montré que rester debout la majeure partie de la journée de travail multipliait par 3,6 la cote (odds) de fasciite plantaire. Une cheville moins souple était un facteur de risque encore plus fort, avec une cote (odds) multipliée par 23,3. Les exercices qui aident dans les deux cas sont en grande partie les mêmes\u00A0: étirements du mollet et du fascia plantaire, plus du renforcement du mollet.',
   ],
   toc: true,
   takeaways: [
     'Une revue de 2015 de la littérature en santé au travail a associé la station debout prolongée au travail à une gêne musculo-squelettique, à la fatigue et à des douleurs dans les jambes. Les tapis de sol, les bas de contention et des chaussures qui maintiennent le pied font partie des interventions qui ont des données derrière elles (Waters et Dick, 2015).',
-    'Rester debout la majeure partie de la journée de travail multipliait par 3,6 le risque de fasciite plantaire dans une étude cas-témoins sur 50\u00A0cas et 100\u00A0témoins. Une cheville moins souple le multipliait par 23,3 (Riddle et coll., 2003).',
+    'Rester debout la majeure partie de la journée de travail multipliait par 3,6 la cote (odds) de fasciite plantaire dans une étude cas-témoins sur 50\u00A0cas et 100\u00A0témoins. Une cheville moins souple la multipliait par 23,3 (Riddle et coll., 2003).',
     'Dans un essai en groupes parallèles sur 40\u00A0agents de sécurité répartis au hasard entre des chaussettes classiques et deux groupes de bas de contention, les bas de 15-20\u00A0mmHg comme ceux de 20-30\u00A0mmHg ont évité la hausse de la gêne au pied et à la jambe observée avec les chaussettes classiques pendant des journées de 12\u00A0heures debout (Garcia et coll., 2023).',
     'La recommandation de 2023 sur la douleur au talon donne aux étirements du fascia plantaire et du mollet sa meilleure note, A, et au renforcement musculaire un B.',
   ],
   sections: [
     {
       h2: 'Pourquoi a-t-on mal aux pieds après une journée debout\u00A0?',
-      keyFact: 'Dans une étude cas-témoins de 2003, une cheville moins souple multipliait par 23,3 le risque de fasciite plantaire, le plus fort facteur de risque trouvé, et rester debout la majeure partie de la journée de travail le multipliait par 3,6 (Riddle et coll., 2003).',
+      keyFact: 'Dans une étude cas-témoins de 2003, une cheville moins soupla multipliait par 23,3 la cote (odds) de fasciite plantaire, le plus fort facteur de risque trouvé, et rester debout la majeure partie de la journée de travail la multipliait par 3,6 (Riddle et coll., 2003).',
       paragraphs: [
         'Les pieds font mal à force de rester debout, car la station debout immobile charge le fascia plantaire, les muscles du mollet et le talon sans leur laisser de pause. En marchant, chaque pas renvoie le sang des jambes vers le haut. Debout sans bouger, cette pompe disparaît\u00A0: le sang stagne dans le bas des jambes, et les tissus sous le pied portent la même charge statique pendant des heures.',
         'Une revue de 2015 de la recherche en santé au travail a associé la station debout prolongée à des douleurs du bas du dos, des douleurs dans les jambes, de la gêne et de la fatigue, dans de nombreux métiers où l’on reste debout. La revue notait aussi que la charge cardiovasculaire et le gonflement des jambes augmentent avec la durée de la station debout. Les auteurs demandaient des définitions plus claires de la «\u00A0station debout prolongée\u00A0» dans les futures études, car le seuil entre une durée sans risque et une durée nocive varie selon les personnes et les métiers.',
-        'Pour le mollet et le fascia en particulier, une étude cas-témoins de 2003 a trouvé deux facteurs de risque qui se détachaient nettement. Une cheville moins souple, c’est-à-dire un mollet raide, était le plus fort prédicteur de fasciite plantaire, avec un risque multiplié par 23,3. Rester debout la majeure partie de la journée de travail le multipliait par 3,6. Les deux sont liés\u00A0: un mollet raide maintient le talon sous plus de tension à chaque minute passée debout.',
+        'Pour le mollet et le fascia en particulier, une étude cas-témoins de 2003 a trouvé deux facteurs de risque qui se détachaient nettement. Une cheville moins souple, c’est-à-dire un mollet raide, était le plus fort prédicteur de fasciite plantaire, avec une cote (odds) multipliée par 23,3. Rester debout la majeure partie de la journée de travail la multipliait par 3,6. Les deux sont liés\u00A0: un mollet raide maintient le talon sous plus de tension à chaque minute passée debout.',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -219,7 +219,7 @@ export const STANDING_FR: Guide = {
     },
     {
       q: 'Avoir mal aux pieds debout toute la journée, c’est une fasciite plantaire\u00A0?',
-      a: 'Pas toujours. La douleur et la fatigue générales liées à la station debout sont fréquentes et passent en général avec le repos. La fasciite plantaire est un problème précis, avec une douleur vive au talon, souvent pire aux premiers pas après le repos. Rester debout la majeure partie de la journée de travail est un facteur de risque indépendant de fasciite plantaire, avec un risque multiplié par 3,6 dans une étude cas-témoins\u00A0: les deux sont liés, mais pas identiques.',
+      a: 'Pas toujours. La douleur et la fatigue générales liées à la station debout sont fréquentes et passent en général avec le repos. La fasciite plantaire est un problème précis, avec une douleur vive au talon, souvent pire aux premiers pas après le repos. Rester debout la majeure partie de la journée de travail est un facteur de risque indépendant de fasciite plantaire, avec une cote (odds) multipliée par 3,6 dans une étude cas-témoins\u00A0: les deux sont liés, mais pas identiques.',
       cites: [CITE.riddle],
     },
     {

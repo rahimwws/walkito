@@ -60,8 +60,8 @@ export const EX_TOWEL_SCRUNCH_IT: Guide = {
     {
       h2: 'Quali muscoli lavorano nella raccolta dell’asciugamano?',
       paragraphs: [
-        'La raccolta dell’asciugamano lavora sui muscoli flessori delle dita: il flessore breve delle dita (il flessore corto delle dita dentro il piede), il flessore breve dell’alluce e il quadrato della pianta. Sono muscoli intrinseci. Ma l’esercizio recluta anche i flessori estrinseci delle dita: il flessore lungo delle dita e il flessore lungo dell’alluce, che vanno dallo stinco attraverso la caviglia fino alle dita.',
-        'Uno studio elettromiografico di Jung e colleghi (2011) ha confrontato l’attività muscolare durante la raccolta dell’asciugamano e l’esercizio del piede corto. Ha trovato che l’abduttore dell’alluce, il muscolo che più di tutti tiene su l’arco, era più di quattro volte più attivo durante il piede corto che durante la raccolta dell’asciugamano. La raccolta dell’asciugamano produceva invece più attività nei flessori estrinseci delle dita.',
+        'La raccolta dell’asciugamano lavora sui muscoli flessori delle dita: il flessore breve delle dita (che sta dentro il piede), il flessore breve dell’alluce e il quadrato della pianta. Sono muscoli intrinseci. Ma l’esercizio recluta anche i flessori estrinseci delle dita: il flessore lungo delle dita e il flessore lungo dell’alluce, che vanno dallo stinco attraverso la caviglia fino alle dita.',
+        'Uno studio elettromiografico di Jung e colleghi (2011) ha confrontato l’attività muscolare durante la raccolta dell’asciugamano e l’esercizio del piede corto. Hanno trovato che l’abduttore dell’alluce, il muscolo che più di tutti tiene su l’arco, era più di quattro volte più attivo durante il piede corto che durante la raccolta dell’asciugamano. La raccolta dell’asciugamano produceva invece più attività nei flessori estrinseci delle dita.',
         'Questo vuol dire che la raccolta dell’asciugamano è un buon esercizio per la forza di presa delle dita, ma è meno specifica per i muscoli intrinseci dell’arco rispetto all’[esercizio del piede corto](/it/esercizi/piede-corto/).',
       ],
       cites: [CITE.jung],
