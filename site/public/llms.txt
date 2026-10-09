@@ -12,7 +12,7 @@ treat any condition. Pain that follows an injury, comes with numbness,
 tingling, swelling or warmth, wakes you at night, or is sharp or getting worse
 should be seen by a clinician.
 
-Last updated: 2026-10-08
+Last updated: 2026-10-09
 
 ## Guides
 - [Plantar fasciitis exercises and stretches for heel pain](https://walkito.site/plantar-fasciitis-exercises/): Eight plantar fasciitis exercises and stretches with doses, what to avoid, best time to stretch, and evidence grades from the 2023 guideline.
@@ -62,6 +62,21 @@ Last updated: 2026-10-08
 - [Sesamoiditis: what it is, what helps, and when to get imaging](https://walkito.site/sesamoiditis/): Sesamoiditis causes pain under the big toe joint. Dancer's pads, offloading, footwear, telling it apart from a fracture, and when imaging helps.
 - [Bunion exercises: what they can and cannot do](https://walkito.site/bunion-exercises/): Can bunion exercises reduce pain or slow hallux valgus progression? An honest look at toe-spread-out, abductor hallucis training, and toe spacers.
 - [Hammer toe exercises: what they can do and where the evidence stands](https://walkito.site/hammer-toe-exercises/): Hammer toe exercises for flexible deformities, how it differs from claw toe, footwear tips, and when surgery may be discussed.
+- [Toe strengthening exercises: how to test your toes and build real strength](https://walkito.site/toe-strengthening-exercises/): Toe strengthening exercises with a home strength test, a four-step progression, and what studies show about toe strength, balance, falls and heel pain.
+- [Tight calves: causes and stretches](https://walkito.site/tight-calves/): Tight calves: what causes them, which of your two calf muscles is tight, what stretching really changes, and why calf raises belong in the plan too.
+- [Ankle mobility exercises: how to test and improve your ankle bend](https://walkito.site/ankle-mobility-exercises/): Ankle mobility exercises with doses, the knee-to-wall test and what counts as real change, plus what research shows about stretching, strength and sprains.
+- [Ankle strengthening exercises: a progression from band to balance](https://walkito.site/ankle-strengthening-exercises/): Ankle strengthening exercises in order: band work, calf and tibialis raises, single-leg balance. Doses, re-sprain evidence and when to see a clinician.
+- [Foot strengthening exercises: what to do and how to progress](https://walkito.site/foot-strengthening-exercises/): Foot strengthening exercises for the small and large foot muscles, from seated to single leg, with starting doses and what trials found on injury.
+- [Can flat feet cause back pain? What the research shows](https://walkito.site/flat-feet-back-pain/): Can flat feet cause back pain? What the Framingham study and insole trials found, what helps a sore back, and which back symptoms need a clinician first.
+- [Flat feet and knee pain: is there a link, and what helps?](https://walkito.site/flat-feet-knee-pain/): Flat feet and knee pain: what the studies show about the link, what a clinician checks, whether insoles help, and why hip and knee exercise comes first.
+- [Do flat feet get worse with age?](https://walkito.site/do-flat-feet-get-worse-with-age/): Do flat feet get worse with age? What changes in older feet, why one arch can collapse in adulthood, pregnancy, weight, diabetes, and signs to check.
+- [Flat feet in kids: what is normal and when to worry](https://walkito.site/flat-feet-in-kids/): Flat feet in kids are usually normal and the arch forms with age. The tiptoe check, signs that need a doctor, and what trials found on insoles and shoes.
+- [Night splints for plantar fasciitis: what they do, what the trials show, and how to wear one](https://walkito.site/night-splints-plantar-fasciitis/): Night splints for plantar fasciitis: what the 2023 guideline and the trials show, boot vs sock, how long to wear one, and why so many people stop.
+- [Taping for plantar fasciitis: what it does, how to apply it, and when to stop](https://walkito.site/plantar-fasciitis-taping/): Plantar fasciitis taping: what the research shows for low-Dye and kinesiology tape, how to apply each, how long to wear it, side effects and when to stop.
+- [Ice or heat for plantar fasciitis: which helps, and when](https://walkito.site/ice-or-heat-for-plantar-fasciitis/): Ice or heat for plantar fasciitis: what each does, what the few trials found, how to use them safely, and why exercise does the real work.
+- [Massage ball, roller or frozen bottle for plantar fasciitis: what the research says](https://walkito.site/massage-ball-plantar-fasciitis/): Does a massage ball help plantar fasciitis? What trials found for balls, rollers and a frozen bottle, how hard and how long to roll, and when to skip it.
+- [Insoles vs exercises: do you need orthotics for foot pain?](https://walkito.site/insoles-vs-exercises/): Do you need orthotics or exercises? What trials found for insoles in heel pain and flat feet, custom vs store-bought, and how to combine both.
+- [Are barefoot shoes good for your feet? Strength, risks and foot pain](https://walkito.site/barefoot-shoes/): Are barefoot shoes good for your feet? What trials show on foot strength, transition injuries, plantar fasciitis, flat feet and who should avoid them.
 
 ## The app and the evidence
 - [Home](https://walkito.site/): what Walkito is and how the plan works, in brief
