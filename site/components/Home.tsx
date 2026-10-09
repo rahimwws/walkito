@@ -681,12 +681,12 @@ export function Home({ lang }: { lang: Lang }) {
  * The hero headline, set like the closing section's: huge pale lilac capitals
  * on the band's deep blue, the phone rising in front of its last line.
  *
- * Each word sits in its own clip and rises out of it as the page opens; then a
- * blur passes through the words one after another, in reading order, and
- * comes round again (globals.css). Both are CSS animations rather than an
- * `InView` transition, so they start with the first paint: waiting for
- * hydration would show the words, hide them and then raise them. Reduce Motion
- * leaves them standing.
+ * Each word sits in its own clip and rises out of it as the page opens. The
+ * motion is a CSS animation rather than an `InView` transition, so it starts
+ * with the first paint: waiting for hydration would show the words, hide them
+ * and then raise them. Reduce Motion leaves them standing. (A blur passing
+ * through the words was tried and dropped: a filter on gradient-clipped text
+ * makes Safari paint boxes round the words.)
  *
  * Sized in globals.css (.hero-title): on wide screens the first line stays
  * whole and the second takes two rows at most; on a phone the longest word
@@ -695,20 +695,19 @@ export function Home({ lang }: { lang: Lang }) {
 function HeroTitle({ a, b }: { a: string; b: string }) {
   const lines = [a, b].map((line) => line.split(' '));
   const longest = Math.max(...lines.flat().map((word) => word.length));
-  const count = lines.flat().length;
   let n = 0;
   return (
     <h1
       className="hero-title"
       aria-label={`${a} ${b}`}
       style={
-        { '--h1a-len': a.length, '--h1b-len': b.length, '--h1-word': longest, '--words': count } as React.CSSProperties
+        { '--h1a-len': a.length, '--h1b-len': b.length, '--h1-word': longest } as React.CSSProperties
       }
     >
       {lines.map((line, i) => (
         <span key={i} className="hero-line" aria-hidden>
           {line.map((word, j) => (
-            <span key={j} className="hero-word" style={{ '--w': n } as React.CSSProperties}>
+            <span key={j} className="hero-word">
               <span style={{ '--w': n++ } as React.CSSProperties}>{word}</span>
             </span>
           ))}
