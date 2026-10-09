@@ -5039,39 +5039,6 @@ html[data-scrolled] .masthead-float .download-alt {
   }
 }
 
-/*
- * After the opening, a blur passes through the words one at a time, in
- * reading order: each word softens and comes back while the next takes it
- * up, and the round starts again. The filter sits on the word's clip, so the
- * blur spreads past the letters rather than being cut by it. One round is the
- * words' count times the step plus a rest. Only while the hero is on screen
- * (`data-live`), never with Reduce Motion.
- */
-@media (prefers-reduced-motion: no-preference) {
-  .hero-glass .hero-word {
-    --step: 0.32s;
-    --round: calc(var(--words, 9) * var(--step) + 3.2s);
-    animation: hero-word-blur var(--round) ease-in-out infinite;
-    animation-delay: calc(1.9s + var(--w) * var(--step));
-  }
-
-  .hero-glass:not([data-live]) .hero-word {
-    animation-play-state: paused;
-  }
-}
-
-@keyframes hero-word-blur {
-  0%,
-  14%,
-  100% {
-    filter: blur(0);
-  }
-
-  6% {
-    filter: blur(0.07em);
-  }
-}
-
 /* ---- the header's right end: the languages, then "Get the app" ---- */
 
 /* The wrapper keeps `.download` for the floating header's measuring, and none
@@ -5142,6 +5109,14 @@ html[data-scrolled] .masthead-float .download.masthead-end {
 .masthead-end > .masthead-get {
   opacity: 0;
   visibility: hidden;
+}
+
+/* Phones: neither; the burger's menu has both, the footer the languages. */
+@media (max-width: 760px) {
+  .masthead .download.masthead-end,
+  html[data-scrolled] .masthead-float .download.masthead-end {
+    display: none;
+  }
 }
 
 /* Scrolled: "Get the app". */
