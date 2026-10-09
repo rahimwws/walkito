@@ -4,7 +4,7 @@ Checks that need a real device and a dashboard, not `bun test`.
 
 ## AppsFlyer
 
-AppsFlyer runs in **production builds only** (`APP_VARIANT=production`): TestFlight and the Play internal track qualify, a dev client or a preview build sends nothing. Everything below is on one of those.
+AppsFlyer runs in **production builds only** (`APP_VARIANT=production`) built with `EXPO_PUBLIC_APPSFLYER_DEV_KEY` in the EAS `production` environment: TestFlight and the Play internal track qualify, a dev client or a preview build sends nothing. Everything below is on one of those.
 
 ### The SDK is running and linked to RevenueCat
 

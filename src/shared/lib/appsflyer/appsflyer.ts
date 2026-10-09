@@ -66,6 +66,10 @@ function load(): Sdk | null {
     const { Platform, TurboModuleRegistry } = require('react-native') as typeof import('react-native');
     if (Platform.OS !== 'ios' && Platform.OS !== 'android') return null;
     if (variant() !== 'production') return null;
+    if (APPSFLYER.devKey.length === 0) {
+      console.warn('[appsflyer] EXPO_PUBLIC_APPSFLYER_DEV_KEY is not set; attribution is off in this build');
+      return null;
+    }
     // Looked up before the package is required: its spec calls
     // `getEnforcing`, which throws in a binary without the module.
     if (TurboModuleRegistry.get('RNAppsFlyer') == null) return null;
