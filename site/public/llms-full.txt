@@ -2047,7 +2047,7 @@ Most plantar fasciitis exercise programs, including the ones graded highest in t
 
 ## Walkito vs Exakt Health: which one fits you?
 
-Language: English · https://walkito.site/walkito-vs-exakt-health/ · published 2026-10-04 · updated 2026-10-04
+Language: English · https://walkito.site/walkito-vs-exakt-health/ · published 2026-10-04 · updated 2026-10-09
 
 Walkito and Exakt Health both offer exercise-based plans for plantar fasciitis, but they are built for different people. Exakt is a runner's app with 15+ injury rehab plans and a return-to-running program. Walkito is a narrower app focused on heel pain, flat feet and daily pain adaptation. This page compares them honestly, says where Exakt is the better choice, and explains what Walkito does differently.
 
@@ -2112,7 +2112,7 @@ If you need only heel or foot pain exercises, Walkito is significantly cheaper. 
 
 Exakt Health is on both iOS and Android. If you use an Android phone, this is the deciding factor by itself since Walkito is iOS only.
 
-Exakt supports English, French, German and Spanish. Walkito supports English, Russian and Spanish. The overlap is English and Spanish. If you need French or German, Exakt is the only option. If you need Russian, Walkito is the only option.
+Exakt supports English, French, German and Spanish. Walkito supports English, Russian, Spanish, Portuguese, French, Italian and German. Both cover English, Spanish, French and German. If you need Russian, Portuguese or Italian, Walkito is the only option of the two.
 
 ### Privacy
 
@@ -2142,7 +2142,6 @@ Pick Exakt Health if any of the following is true:
 - You use an Android phone.
 - You want a 7-day free trial to test the app before paying.
 - EU medical device certification matters to you.
-- You need the app in French or German.
 
 ### When is Walkito the better choice?
 
@@ -2153,7 +2152,7 @@ Pick Walkito if any of the following is true:
 - Daily pain adaptation from a morning check-in matters more to you than level-based progression.
 - You want progress tests every 14 days that compare left to right.
 - Price is a factor: Walkito at $44.99 per year is less than half of Exakt's lowest annual cost.
-- You need the app in Russian.
+- You need the app in Russian, Portuguese or Italian.
 - You are on your feet all day for work, not running, and want an app built for that.
 
 ### When an app is not enough, see a clinician
@@ -15133,7 +15132,7 @@ Walkito создан вокруг боли в пятке и плоскостоп
 
 ## Walkito vs Exakt Health: какое приложение подходит вам?
 
-Language: Russian (Русский) · https://walkito.site/ru/walkito-vs-exakt-health/ · published 2026-10-04 · updated 2026-10-07
+Language: Russian (Русский) · https://walkito.site/ru/walkito-vs-exakt-health/ · published 2026-10-04 · updated 2026-10-09
 
 Walkito и Exakt Health предлагают планы упражнений при плантарном фасциите, но созданы для разных людей. Exakt представляет собой приложение бегуна с 15+ планами реабилитации от травм и программой возвращения к бегу. Walkito же более узкое приложение, сфокусированное на боли в пятке, плоскостопии и ежедневной адаптации к боли. На этой странице честное сравнение, в котором видно, где Exakt оказывается лучшим выбором, и чем Walkito отличается.
 
@@ -15198,7 +15197,7 @@ Exakt стоит $19,99/мес. для планов реабилитации, с
 
 Exakt Health доступен на iOS и Android. Если у вас Android, это решающий фактор сам по себе, потому что Walkito работает только на iOS.
 
-Exakt поддерживает английский, французский, немецкий и испанский. Walkito поддерживает английский, русский и испанский. Пересечение: английский и испанский. Если нужен французский или немецкий, единственным вариантом будет Exakt. Если нужен русский, единственным вариантом будет Walkito.
+Exakt поддерживает английский, французский, немецкий и испанский. Walkito поддерживает английский, русский, испанский, португальский, французский, итальянский и немецкий. Общие языки: английский, испанский, французский и немецкий. Если нужен русский, португальский или итальянский, из этих двух подходит только Walkito.
 
 ### Конфиденциальность
 
@@ -15228,7 +15227,6 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - Вы используете Android.
 - Вам нужен 7-дневный пробный период, чтобы протестировать приложение перед оплатой.
 - Для вас важна сертификация как медицинское изделие в ЕС.
-- Вам нужно приложение на французском или немецком.
 
 ### Когда лучше выбрать Walkito вместо Exakt Health?
 
@@ -15239,7 +15237,7 @@ Source: Rathleff MS, Mølgaard CM, Fredberg U, et al. High-load strength trainin
 - Ежедневная адаптация по утреннему опросу важнее, чем прогрессия по уровням.
 - Вам нужны тесты прогресса каждые 14 дней со сравнением лево–право.
 - цена играет роль: Walkito стоит $44,99/год, что меньше половины минимальной годовой стоимости Exakt.
-- Вам нужно приложение на русском.
+- Вам нужно приложение на русском, португальском или итальянском.
 - Вы весь день на ногах по работе, а не бегаете, и хотите приложение, созданное для этого.
 
 ### Когда приложения недостаточно: обратитесь к врачу
@@ -17595,7 +17593,7 @@ You pick 3, 5 or 7 training days a week and sessions of 3, 5 or 10 minutes. Each
 
 The plan has no fixed length. When you reach a goal, it moves to maintaining at a lower dose, and the next goal takes its place. That goes on for as long as you use Walkito. [How the plan works](https://walkito.site/program/).
 
-Walkito is in English, Russian and Spanish.
+Walkito is in English, Russian, Spanish, Portuguese, French, Italian and German.
 
 ### How we research
 
@@ -17650,7 +17648,7 @@ Walkito’s [privacy policy](https://walkito.site/privacy/) explains what Walkit
 
 ### Is Walkito available on Android?
 
-Not yet. Walkito is available on iPhone now, on the App Store, and Android is planned. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian and Spanish.
+Not yet. Walkito is available on iPhone now, on the App Store, and Android is planned. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian, Spanish, Portuguese, French, Italian and German.
 
 ### Do I need an Apple Watch?
 

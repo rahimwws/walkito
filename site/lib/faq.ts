@@ -71,7 +71,7 @@ export const FAQ_GROUPS: readonly FaqGroup[] = [
     entries: [
       {
         q: 'Is Walkito available on Android?',
-        a: 'Not yet. Walkito is available on iPhone now, on the App Store, and Android is planned. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian and Spanish.',
+        a: 'Not yet. Walkito is available on iPhone now, on the App Store, and Android is planned. The iPhone app reads Apple Health for steps, sleep and walking asymmetry. It also shows a Live Activity on the Lock Screen while a session runs. Walkito comes in English, Russian, Spanish, Portuguese, French, Italian and German.',
       },
       {
         q: 'Do I need an Apple Watch?',

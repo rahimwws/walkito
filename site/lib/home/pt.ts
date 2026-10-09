@@ -91,6 +91,6 @@ export const HOME_PT: HomeCopy = {
       q: 'Isso é orientação médica?',
       a: 'Não. O Walkito é um programa de exercícios. Ele não faz diagnóstico e não substitui um profissional de saúde.',
     },
-    { q: 'Em quais idiomas ele está?', a: 'Inglês, russo e espanhol.' },
+    { q: 'Em quais idiomas ele está?', a: 'Inglês, russo, espanhol, português, francês, italiano e alemão.' },
   ],
 };

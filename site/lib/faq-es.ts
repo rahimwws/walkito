@@ -22,7 +22,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
     entries: [
       {
         q: '¿Walkito está disponible en Android?',
-        a: 'Todavía no. Walkito está disponible en iPhone, en el App Store, y Android está en los planes. La app de iPhone lee Apple Health para pasos, sueño y asimetría al caminar. También muestra una Live Activity en la pantalla de bloqueo mientras corre una sesión. Walkito viene en inglés, ruso y español.',
+        a: 'Todavía no. Walkito está disponible en iPhone, en el App Store, y Android está en los planes. La app de iPhone lee Apple Health para pasos, sueño y asimetría al caminar. También muestra una Live Activity en la pantalla de bloqueo mientras corre una sesión. Walkito viene en inglés, ruso, español, portugués, francés, italiano y alemán.',
       },
       {
         q: '¿Necesito un Apple Watch?',
