@@ -26,6 +26,7 @@ import {
 
 import {
   APP_EQUIPMENT,
+  MANNEQUIN_CLIPS,
   clipFor,
   doseLabel,
   exerciseCard,
@@ -220,7 +221,10 @@ function factsFor(area: PlanArea) {
     case 'shin':
       return { goal: null, sport: null, areas: ['shin'], rigidFoot: false };
     case 'general_plus':
-      return { goal: 'stronger', sport: null, areas: [], rigidFoot: false };
+      // The goal the app's onboarding prefills from a code for "no pain, just
+      // stronger feet" (pages/onboarding/model/plan-code.ts): the plan the
+      // chat shows is the plan the app then builds.
+      return { goal: 'injuryfree', sport: null, areas: [], rigidFoot: false };
   }
 }
 
@@ -261,7 +265,8 @@ export function starterWeek(args: PlanArgs, today: string) {
     defaultMinutes: args.minutes ?? 5,
     eligibility: {
       // The app plans only exercises with a clip; so does this, by the same test.
-      clips: new Set(Object.keys(CLIPS).filter((id) => clipFor(id) != null)),
+      // Exercises filmed with a person only; see MANNEQUIN_CLIPS.
+      clips: new Set(Object.keys(CLIPS).filter((id) => clipFor(id) != null && !MANNEQUIN_CLIPS.has(id))),
       equipmentMissing,
       cantDo: heldBack(args),
       painLast14: [],
@@ -439,7 +444,6 @@ export function feetAfterWork(source: PlanSource): ToolResult {
       minutes: r.minutes,
       position: r.position,
       steps: r.steps,
-      note: tips.map((t) => `${t.title}: ${t.text}`).join(' '),
     },
     `A ${r.minutes}-minute routine for after a shift, from the app's "${r.title}" routine:\n${list(r.steps)}\nShoe tips: ${tips.map((t) => t.text).join(' ')}`,
     { cta: cta({ source, area: 'heel_arch', minutes: 5, days: 5, equipment: [], side: 'both' }) },

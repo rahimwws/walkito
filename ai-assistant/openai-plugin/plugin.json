@@ -1,0 +1,96 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "walkito",
+  "version": "1.0.0",
+  "description": "Short foot and calf exercises with videos for heel pain, plantar fasciitis, arch pain and flat feet.",
+  "author": {
+    "name": "Walkito",
+    "email": "hello@walkito.site",
+    "url": "https://walkito.site"
+  },
+  "homepage": "https://walkito.site/ai/",
+  "keywords": ["heel pain", "plantar fasciitis", "flat feet", "foot exercises", "achilles", "shin splints"],
+  "mcpServers": "./.mcp.json",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Walkito",
+        "shortDescription": "Foot & calf exercise videos",
+        "longDescription": "Walkito shows short foot and calf exercises with videos, in English, for people with heel pain, plantar fasciitis, arch pain, flat feet, Achilles or shin pain.\n\n- Relief now: a gentle 3-minute seated routine for a foot that hurts today.\n- First-step stretch: the plantar fascia stretch done in bed before standing up.\n- Starter plan: a 7-day plan from the painful area, minutes a day and equipment.\n- Exercise demo: a short video and cues for one exercise.\n- Flat foot check: the big toe lift check and what the result usually means.\n- When to see a doctor: the warning signs that mean getting checked.\n- Feet after work: a short routine after a shift.\n- Shoes and inserts: general footwear tips, no brands.\n- Ready to run: a short check before running again.\n\nLimitations: Walkito is not a medical device and does not diagnose, treat, cure or prevent any medical condition. It does not cover medicines or other body parts, and with warning signs it points to a doctor instead of exercises. Nothing you type is stored.",
+        "developerName": "Walkito",
+        "category": "Healthcare",
+        "capabilities": ["Exercise routines", "Exercise videos", "Starter plans", "Safety checks"],
+        "websiteURL": "https://walkito.site/ai/",
+        "supportURL": "https://walkito.site/support/",
+        "privacyPolicyURL": "https://walkito.site/privacy/#ai-assistants",
+        "termsOfServiceURL": "https://walkito.site/terms/",
+        "defaultPrompt": [
+          "My heel hurts in the morning, what can I do?",
+          "Give me a 5-minute plan for flat feet",
+          "How do I do the short foot exercise?"
+        ],
+        "brandColor": "#1652FF",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "screenshots": ["./assets/screenshot-plan.png", "./assets/screenshot-demo.png", "./assets/screenshot-work.png"]
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Foot pain right now",
+              "prompt": "My foot hurts right now, what can I do?",
+              "tools_triggered": "relief_now",
+              "expected_behavior": "Shows a 3-minute seated routine (foot roll, plantar stretch, toe spread) with looping videos, a button to continue in the Walkito app and the medical disclaimer."
+            },
+            {
+              "description": "Morning heel pain",
+              "prompt": "My heel hurts in the morning when I get out of bed.",
+              "tools_triggered": "first_step_stretch",
+              "expected_behavior": "Shows the plantar fascia stretch to do in bed before standing up, 10 x 10 seconds per foot, with a video and its cue."
+            },
+            {
+              "description": "Starter plan",
+              "prompt": "Give me a 5-minute plan for flat feet.",
+              "tools_triggered": "build_starter_plan",
+              "expected_behavior": "Shows a 7-day strip; tapping a day shows that day's exercises with videos and doses. Rest days show no exercises."
+            },
+            {
+              "description": "How to do an exercise",
+              "prompt": "How do I do the short foot exercise?",
+              "tools_triggered": "exercise_demo",
+              "expected_behavior": "Shows one exercise large with its video, dose and a one-line cue, and a timer button."
+            },
+            {
+              "description": "Warning sign",
+              "prompt": "I heard a pop in my Achilles playing basketball. Is it serious?",
+              "tools_triggered": "when_to_see_doctor",
+              "expected_behavior": "Shows the warning signs with the matching one highlighted and the message to see a doctor before doing exercises. No exercises and no app button."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unrelated question",
+              "prompt": "What's the capital of Spain?"
+            },
+            {
+              "description": "Medicines are out of scope",
+              "prompt": "What dose of ibuprofen should I take for heel pain?"
+            },
+            {
+              "description": "Other body parts are out of scope",
+              "prompt": "My knee hurts when I climb stairs, what should I do?"
+            }
+          ]
+        },
+        "demo_recording_url": "https://walkito.site/ai/walkito-demo.mp4",
+        "commerce": false,
+        "commerce_description": "The plugin sells nothing and processes no payments. Its button links to the Walkito app page."
+      },
+      "publication": {
+        "countries": ["US", "GB", "CA", "AU"],
+        "release_notes": "First release: nine read-only tools for foot and calf exercises with looping videos (relief now, first-step stretch, starter plan, exercise demo, flat foot check, when to see a doctor, feet after work, shoes and inserts, ready to run)."
+      }
+    }
+  }
+}

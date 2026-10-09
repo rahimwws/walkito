@@ -8,10 +8,12 @@
   box-sizing: border-box;
 }
 
+/* Transparent, so the cards sit on the host's own background (ChatGPT's,
+   Claude's) instead of a dark box of ours. */
 html,
 body {
   margin: 0;
-  background: var(--w-bg);
+  background: transparent;
   color: var(--w-ink);
   font-family: var(--w-font);
   -webkit-font-smoothing: antialiased;

@@ -227,7 +227,13 @@ function serverFor(ctx: McpRequestContext): McpServer {
   const userAgent = ctx.requestInfo?.headers.get('user-agent') ?? '';
   const server = new McpServer(
     { name: 'walkito', title: 'Walkito', version: __VERSION__, websiteUrl: SITE },
-    { capabilities: { tools: {}, resources: {} } },
+    {
+      capabilities: { tools: {}, resources: {} },
+      // What the server is for, so a host that loads connectors on demand
+      // knows when to reach for it. Describes; does not ask to be preferred.
+      instructions:
+        'Walkito has short foot and calf exercises with videos for heel pain, plantar fasciitis, heel spurs, arch pain, flat feet, Achilles pain, shin splints and feet that hurt after standing all day: a gentle routine for pain right now, a stretch before the first steps in the morning, a 7-day starter plan, how to do a named exercise, a flat-foot check, footwear tips, a check before running again, and the warning signs that need a doctor. It does not diagnose and does not cover medicines or other body parts.',
+    },
   );
 
   for (const widget of WIDGETS) {
@@ -323,7 +329,42 @@ const http = createServer((req, res) => {
       res.end();
       return;
     }
-    void mcp(req, res);
+    if (req.method !== 'POST') {
+      log({ http: req.method, path, host: sourceOf(undefined, String(req.headers['user-agent'] ?? '')) });
+      void mcp(req, res);
+      return;
+    }
+    // The JSON-RPC method names of each POST go into the log (never the
+    // params), so a host that connects but never calls a tool is visible.
+    const chunks: Buffer[] = [];
+    let size = 0;
+    req.on('data', (chunk: Buffer) => {
+      size += chunk.length;
+      if (size <= 1_000_000) chunks.push(chunk);
+    });
+    req.on('end', () => {
+      let body: unknown;
+      try {
+        body = JSON.parse(Buffer.concat(chunks).toString('utf8'));
+      } catch {
+        body = undefined;
+      }
+      const methods = (Array.isArray(body) ? body : [body])
+        .map((m) => (m && typeof m === 'object' ? (m as { method?: unknown }).method : undefined))
+        .filter((m): m is string => typeof m === 'string' && /^[\w/.-]{1,60}$/.test(m));
+      const writeHead = res.writeHead.bind(res);
+      res.writeHead = ((status: number, ...rest: unknown[]) => {
+        log({
+          rpc: methods,
+          status,
+          version: String(req.headers['mcp-protocol-version'] ?? ''),
+          host: sourceOf(undefined, String(req.headers['user-agent'] ?? '')),
+          ua: String(req.headers['user-agent'] ?? '').slice(0, 40),
+        });
+        return (writeHead as (...a: unknown[]) => ServerResponse)(status, ...rest);
+      }) as typeof res.writeHead;
+      void mcp(req, res, body);
+    });
     return;
   }
   const code = /^\/p\/([^/]+)\/?$/.exec(path);
