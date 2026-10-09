@@ -16,7 +16,7 @@ export const EX_SHORT_FOOT_DE: Guide = {
     'So geht die Kurzer-Fuß-Übung bei Plattfuß und Senkfuß: Technik, Sätze und Wiederholungen, vom Sitzen zum Stehen, typische Fehler und was Studien zeigen.',
   h1: 'Kurzer-Fuß-Übung: wie sie geht, Sätze und Steigerung',
   lede:
-    'Die Kurzer-Fuß-Übung trainiert die kleinen Muskeln im Fuß, das Gewölbe zu halten, ohne die Zehen einzukrallen. Du ziehst den Fußballen Richtung Ferse, sodass der Fuß kürzer wird und sich das Gewölbe hebt. Eine Übersichtsarbeit von 2015 nannte sie die Grundlage des „Foot Core“-Trainings, und sie kommt in den meisten Programmen bei Plattfuß und Plantarfasziitis vor, die auf die inneren Fußmuskeln zielen.',
+    'Die Kurzer-Fuß-Übung trainiert die kleinen Fußmuskeln darin, das Gewölbe zu halten, ohne die Zehen einzukrallen. Du ziehst den Fußballen Richtung Ferse, sodass der Fuß kürzer wird und sich das Gewölbe hebt. Eine Übersichtsarbeit von 2015 nannte sie die Grundlage des „Foot Core“-Trainings, und sie kommt in den meisten Programmen bei Plattfuß und Plantarfasziitis vor, die auf die inneren Fußmuskeln zielen.',
   takeaways: [
     'Eine MRT-Studie von 2016 mit 8\u00A0Sportlern fand, dass die Kurzer-Fuß-Übung in drei von vier getesteten inneren Fußsohlenmuskeln die höchste mittlere Aktivierung erzeugte (bis zu 34,9\u00A0%), verglichen mit Zehenspreizen, Strecken der Großzehe und Strecken der zweiten bis fünften Zehe (Gooding und Kollegen, 2016).',
     'EMG-Forschung fand, dass der Abductor hallucis, der Muskel, der das innere Gewölbe stützt, bei der Kurzer-Fuß-Übung mehr als viermal so aktiv war wie beim Handtuchgreifen (Jung und Kollegen, 2011).',
@@ -37,7 +37,7 @@ export const EX_SHORT_FOOT_DE: Guide = {
       h2: 'Wie geht die Kurzer-Fuß-Übung?',
       paragraphs: [
         'Setz dich barfuß auf einen Stuhl, die Füße stehen flach auf dem Boden. Stell den Fuß so hin, dass Ferse, Fußballen und alle fünf Zehen auf dem Boden liegen. Ohne die Zehen einzukrallen oder festzukrallen, versuchst du, den Fußballen nach hinten Richtung Ferse zu ziehen. Dein Gewölbe hebt sich. Halte diese Spannung, dann lass los.',
-        'Stell dir vor, den Fuß kürzer und höher zu machen statt breiter und flacher. Die Zehen sollten nicht in den Boden drücken, sich nicht abheben und sich nicht einrollen. Wenn du siehst, dass die Zehen greifen, benutzt du die falschen Muskeln. Leg am Anfang einen Finger unter das Gewölbe, damit du spürst, wie es sich hebt.',
+        'Stell dir vor, du machst den Fuß kürzer und höher statt breiter und flacher. Die Zehen sollten nicht in den Boden drücken, sich nicht abheben und sich nicht einrollen. Wenn du siehst, dass die Zehen greifen, benutzt du die falschen Muskeln. Leg am Anfang einen Finger unter das Gewölbe, damit du spürst, wie es sich hebt.',
       ],
       exercises: [
         {
@@ -122,7 +122,7 @@ export const EX_SHORT_FOOT_DE: Guide = {
     {
       q: 'Wie lange dauert es, bis Kurzer-Fuß-Übungen wirken?',
       cites: [CITE.cheng],
-      a: 'Eine Metaanalyse von 2024 fand, dass Programme mit Kurzer-Fuß-Training unter sechs Wochen die Gewölbehöhe nicht signifikant veränderten, Programme über sechs Wochen den Navicular Drop aber verbesserten (Cheng 2024). Rechne mit mindestens sechs bis acht Wochen regelmäßigem Üben, bevor messbare Veränderungen auftreten.',
+      a: 'Eine Metaanalyse von 2024 fand, dass Programme mit Kurzer-Fuß-Training unter sechs Wochen die Gewölbehöhe nicht signifikant veränderten, Programme über sechs Wochen den Navicular Drop aber verbesserten (Cheng 2024). Rechne mit mindestens sechs bis acht Wochen regelmäßigen Übens, bevor messbare Veränderungen auftreten.',
     },
     {
       q: 'Ist die Kurzer-Fuß-Übung dasselbe wie Gewölbe-Doming?',

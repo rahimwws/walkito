@@ -83,21 +83,21 @@ export const FLAT_FEET_DE: Guide = {
         'Heb den Fuß vom Boden ab oder stell dich auf die Zehenspitzen und schau noch einmal hin.',
         'Kommt das Gewölbe zurück, ist der Plattfuß **flexibel**. Die Übungen unten sind für diese Art.',
         'Bleibt das Gewölbe auch ohne Bodenkontakt flach, ist der Fuß **starr**. Das ist ein strukturelles Problem, das Übungen nicht ändern. Lass das Ziel „Gewölbe halten“ weg und geh zu einer medizinischen Fachperson, bevor du ein Programm anfängst.',
-        '„Senkfuß“ oder „eingesunkenes Gewölbe“ meint meist einfach einen Plattfuß. Wenn sich ein Gewölbe aber **plötzlich**, auf einer Seite, im Erwachsenenalter abgeflacht hat, geh zu einer medizinischen Fachperson, bevor du es trainierst, egal was der Check zeigt.',
+        '„Senkfuß“ ist die mildere Form des Plattfußes: Das Gewölbe ist abgesenkt, aber nicht ganz flach. Kippt dazu die Ferse nach innen, spricht man vom Knick-Senkfuß. Wenn sich ein Gewölbe aber **plötzlich**, auf einer Seite, im Erwachsenenalter abgeflacht hat, geh zu einer medizinischen Fachperson, bevor du es trainierst, egal was der Check zeigt.',
       ],
     },
     {
       h2: 'Die Übungen bei Plattfuß, mit Startdosis',
       paragraphs: [
-        'Die Übungen bei Plattfuß in Walkito beginnen mit Handtuchgreifen und Großzehheben und steigern sich dann über drei Varianten des kurzen Fußes. Zehenspreizen, Einwärtsdrehen mit Band, Einbeinstand, Hüftabduktion und Wadendehnungen kommen dazu. Das sind die Startdosen von Walkito, keine Verordnung. Mach die Übungen barfuß. [Wie diese Ratgeber entstehen](/de/ueber-walkito/).',
-        'Der kurze Fuß ist der Kern der Gewölbearbeit. Du verkürzt den Fuß, indem du den Fußballen Richtung Ferse ziehst, sodass sich das Gewölbe hebt, ohne die Zehen einzukrallen. Kurzer-Fuß-Training, Hüftkräftigung und Dehnen sind das, was die Studie getestet hat. Handtuchgreifen, Großzehheben, Zehenspreizen, Einwärtsdrehen mit Band und Einbeinstand hat Walkito selbst ergänzt.',
-        'Du machst immer nur eine Gewölbeübung, die auf deinem Level. Walkito stuft dich eine Stufe höher, sobald sich die letzten zwei Einheiten damit leicht angefühlt haben. Solange das Gewölbe dein Ziel ist, steckt in jeder Einheit eine Gewölbeübung, und die anderen wechseln sich ab. Für manche Übungen brauchst du ein Handtuch oder ein Widerstandsband. Walkito fragt, was du hast, und lässt alles weg, wofür dir etwas fehlt. Wenn eine Übung deinen Schmerz auf **6/10 oder mehr** bringt, hör für heute auf. An diesem Punkt beendet Walkito eine Einheit.',
+        'Die Übungen bei Plattfuß in Walkito beginnen mit Handtuchgreifen und Großzehenheben und steigern sich dann über drei Varianten des kurzen Fußes. Zehenspreizen, Einwärtsdrehen mit Band, Einbeinstand, Hüftabduktion und Wadendehnungen kommen dazu. Das sind die Startdosen von Walkito, keine Verordnung. Mach die Übungen barfuß. [Wie diese Ratgeber entstehen](/de/ueber-walkito/).',
+        'Der kurze Fuß ist der Kern der Gewölbearbeit. Du verkürzt den Fuß, indem du den Fußballen Richtung Ferse ziehst, sodass sich das Gewölbe hebt, ohne die Zehen einzukrallen. Kurzer-Fuß-Training, Hüftkräftigung und Dehnen sind das, was die Studie getestet hat. Handtuchgreifen, Großzehenheben, Zehenspreizen, Einwärtsdrehen mit Band und Einbeinstand hat Walkito selbst ergänzt.',
+        'Du machst immer nur eine Gewölbeübung, die auf deinem Level. Walkito stuft dich hoch, sobald sich die letzten zwei Einheiten damit leicht angefühlt haben. Solange das Gewölbe dein Ziel ist, steckt in jeder Einheit eine Gewölbeübung, und die anderen wechseln sich ab. Für manche Übungen brauchst du ein Handtuch oder ein Widerstandsband. Walkito fragt, was du hast, und lässt alles weg, wofür dir etwas fehlt. Wenn eine Übung deinen Schmerz auf **6/10 oder mehr** bringt, hör für heute auf. An diesem Punkt beendet Walkito eine Einheit.',
       ],
       table: {
         head: ['Übung', 'Dosis', 'Wie oft', 'Was du spüren solltest', 'Aufhören, wenn'],
         rows: [
           ['Handtuchgreifen', '3\u00A0Sätze à 8, 5\u00A0Sekunden halten, jeder Fuß', 'Jede Einheit, solange es dein Level ist', 'Die kleinen Muskeln unter dem Gewölbe arbeiten', 'Der Schmerz 6/10 erreicht'],
-          ['Großzehheben', '3\u00A0Sätze à 8, 5\u00A0Sekunden halten, jeder Fuß', 'Jede Einheit, solange es dein Level ist', 'Der große Zeh bewegt sich allein', 'Der Schmerz 6/10 erreicht'],
+          ['Großzehenheben', '3\u00A0Sätze à 8, 5\u00A0Sekunden halten, jeder Fuß', 'Jede Einheit, solange es dein Level ist', 'Der große Zeh bewegt sich allein', 'Der Schmerz 6/10 erreicht'],
           ['Kurzer Fuß im Sitzen', '3\u00A0Sätze à 8, 5\u00A0Sekunden halten, jeder Fuß', 'Jede Einheit, solange es dein Level ist', 'Das Gewölbe hebt sich, die Zehen bleiben locker', 'Der Schmerz 6/10 erreicht'],
           ['Kurzer Fuß im Stehen', '3\u00A0Sätze à 8, 5\u00A0Sekunden halten, beide Füße', 'Jede Einheit, solange es dein Level ist', 'Das Gewölbe arbeitet, während es dein Gewicht trägt', 'Der Schmerz 6/10 erreicht'],
           ['Kurzer Fuß auf einem Bein', '3\u00A0Sätze à 10, 5\u00A0Sekunden halten, jeder Fuß', 'Jede Einheit, solange es dein Level ist', 'Mehr Arbeit im Gewölbe, der große Zeh drückt nach unten', 'Der Schmerz 6/10 erreicht'],
@@ -122,15 +122,15 @@ export const FLAT_FEET_DE: Guide = {
           alt: 'Eine sitzende Figur zieht mit den Zehen eines Fußes ein Handtuch heran',
         },
         {
-          name: 'Großzehheben',
+          name: 'Großzehenheben',
           evidence: { level: 'early', why: 'Eine Ergänzung von Walkito. Sie war nicht Teil des getesteten Programms in den Studien auf dieser Seite.' },
           dose: '3\u00A0Sätze à 8, 5\u00A0Sekunden halten, jeder Fuß',
           often: 'Jede Einheit, solange es dein Level ist',
           feel: 'Der große Zeh bewegt sich allein',
           how: 'Setz dich hin, die Füße stehen flach. Heb nur den großen Zeh an und halte. Die anderen vier Zehen bleiben flach am Boden. So lernt der große Zeh, sich allein zu bewegen, und das ist der erste Schalter für das Gewölbe.',
-          image: 'Übung: Großzehheben',
+          image: 'Übung: Großzehenheben',
           media: 'big_toe_lift',
-          caption: 'Großzehheben: Heb nur den großen Zeh, die anderen vier bleiben flach',
+          caption: 'Großzehenheben: Heb nur den großen Zeh, die anderen vier bleiben flach',
           alt: 'Ein Fuß auf dem Boden hebt nur den großen Zeh, das Gewölbe ist hervorgehoben',
         },
         {
@@ -175,10 +175,10 @@ export const FLAT_FEET_DE: Guide = {
           dose: '3\u00A0Sätze à 10, jeder Fuß',
           often: 'Krafttage',
           feel: 'Anstrengung in den kleinen Fußmuskeln',
-          how: 'Spreiz deine Zehen so weit es geht und halte. Zehen, die sich spreizen können, teilen sich die Last mit dem Gewölbe. Sie anzuheben ist nicht das Ziel.',
+          how: 'Spreiz deine Zehen, so weit es geht, und halte. Zehen, die sich spreizen können, teilen sich die Last mit dem Gewölbe. Sie anzuheben ist nicht das Ziel.',
           image: 'Übung: Zehenspreizen',
           media: 'toe_spread',
-          caption: 'Zehenspreizen: Spreiz die Zehen so weit es geht und halte',
+          caption: 'Zehenspreizen: Spreiz die Zehen, so weit es geht, und halte',
           alt: 'Ein Fuß von vorn, die kleinen Muskeln zwischen den Zehen hervorgehoben, während sie sich spreizen',
         },
         {
@@ -280,12 +280,12 @@ export const FLAT_FEET_DE: Guide = {
     },
     {
       q: 'Was ist der Unterschied zwischen Senkfuß und Plattfuß?',
-      a: 'Meist keiner: „Senkfuß“ oder „eingesunkenes Gewölbe“ sagt man im Alltag oft einfach für Plattfuß. Die meisten Plattfüße bestehen ein Leben lang und sind flexibel, das Gewölbe kommt also zurück, wenn der Fuß nicht auf dem Boden steht. Manchmal ist aber etwas anderes gemeint: ein [erworbener Plattfuß im Erwachsenenalter](https://doi.org/10.2174/1874325001711010714), oft durch eine schwächer werdende Tibialis-posterior-Sehne, die Sehne, die das Gewölbe hält. Er entsteht meist im Erwachsenenalter und kann Schmerzen oder eine Schwellung an der Innenseite des Sprunggelenks bringen. Wenn ein Gewölbe im Erwachsenenalter abgesunken ist, geh zu einer medizinischen Fachperson, bevor du es trainierst.',
+      a: 'Vor allem der Grad: Beim Senkfuß ist das Längsgewölbe abgesenkt, beim Plattfuß ist es weitgehend abgeflacht. Der Senkfuß ist also die mildere Form. Kippt dazu die Ferse nach innen, spricht man vom Knick-Senkfuß. Im Alltag werden die Begriffe aber oft gemischt. Die meisten Plattfüße bestehen ein Leben lang und sind flexibel, das Gewölbe kommt also zurück, wenn der Fuß nicht auf dem Boden steht. Manchmal ist aber etwas anderes gemeint: ein [erworbener Plattfuß im Erwachsenenalter](https://doi.org/10.2174/1874325001711010714), oft durch eine schwächer werdende Tibialis-posterior-Sehne, die Sehne, die das Gewölbe hält. Er entsteht meist im Erwachsenenalter und kann Schmerzen oder eine Schwellung an der Innenseite des Sprunggelenks bringen. Wenn ein Gewölbe im Erwachsenenalter abgesunken ist, geh zu einer medizinischen Fachperson, bevor du es trainierst.',
       cites: [CITE.ling],
     },
     {
       q: 'Welche Übungen stärken das Fußgewölbe?',
-      a: 'Die wichtigste ist die Kurzer-Fuß-Übung: Du hebst das Gewölbe, indem du den Fußballen Richtung Ferse ziehst, ohne die Zehen einzukrallen. Walkito beginnt sie im Sitzen, mit 3\u00A0Sätzen à 8 und 5\u00A0Sekunden Halten, dann im Stehen, dann auf einem Bein. Handtuchgreifen, Großzehheben, Zehenspreizen und Einwärtsdrehen mit Band trainieren die kleinen Muskeln rund um das Gewölbe. Das alles ist für flexible Plattfüße. Schritt für Schritt: [Kurzer-Fuß-Übung](/exercises/short-foot-exercise/) (auf Englisch).',
+      a: 'Die wichtigste ist die Kurzer-Fuß-Übung: Du hebst das Gewölbe, indem du den Fußballen Richtung Ferse ziehst, ohne die Zehen einzukrallen. Walkito beginnt sie im Sitzen, mit 3\u00A0Sätzen à 8 und 5\u00A0Sekunden Halten, dann im Stehen, dann auf einem Bein. Handtuchgreifen, Großzehenheben, Zehenspreizen und Einwärtsdrehen mit Band trainieren die kleinen Muskeln rund um das Gewölbe. Das alles ist für flexible Plattfüße. Schritt für Schritt: [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/).',
     },
     {
       q: 'Wie oft sollte ich Plattfuß-Übungen machen?',
@@ -339,7 +339,7 @@ export const HEEL_PAIN_DE: Guide = {
       figure: { id: 'plantar-fascia', caption: 'Die Plantarfaszie verläuft vom Fersenbein bis zu den Zehen. Der Schmerz bei Plantarfasziitis beginnt meist dort, wo sie an der Ferse ansetzt.', alt: 'Fußsohle mit der Plantarfaszie als weiße Bänder, die sich vom Fersenbein fächerförmig bis zu den Zehen ausbreiten, und einem roten Fleck an der Ferse, wo der Schmerz meist beginnt.' },
       paragraphs: [
         'Die Übungen bei Plantarfasziitis in Walkito sind Dehnungen für Plantarfaszie und Wade, Krafttraining für die Wade, das sich in kleinen Schritten steigert, und Fußrollen. Das sind die Startdosen von Walkito, keine Verordnung. Eine einseitige Zusammenfassung gibt es unter [Übungsblätter zum Ausdrucken](/printable-exercise-sheets/) (auf Englisch). [Wie diese Ratgeber entstehen](/de/ueber-walkito/).',
-        'Die Reihenfolge zählt. Solange Schmerz dein Ziel ist, hält Walkito die Wadenarbeit sanft: zuerst Fersenheben im Sitzen, dann Fersenheben beidbeinig, dann Fersenheben mit Halten, eine Stufe nach der anderen. Du gehst eine Stufe höher, sobald sich die letzten zwei Einheiten damit leicht angefühlt haben. Das [Fersenheben mit Handtuch](/exercises/towel-heel-raise/) (auf Englisch) belastet die Plantarfaszie am stärksten, deshalb kommt es erst dazu, wenn der Morgenschmerz zurückgegangen ist und das Ziel zur Wadenkraft wechselt. Wenn eine Übung deinen Schmerz auf **6/10 oder mehr** bringt, hör für heute auf. An diesem Punkt beendet Walkito eine Einheit.',
+        'Die Reihenfolge zählt. Solange Schmerz dein Ziel ist, hält Walkito die Wadenarbeit sanft: zuerst Fersenheben im Sitzen, dann Fersenheben beidbeinig, dann Fersenheben mit Halten, eine Stufe nach der anderen. Du gehst eine Stufe höher, sobald sich die letzten zwei Einheiten damit leicht angefühlt haben. Das [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/) belastet die Plantarfaszie am stärksten, deshalb kommt es erst dazu, wenn der Morgenschmerz zurückgegangen ist und das Ziel zur Wadenkraft wechselt. Wenn eine Übung deinen Schmerz auf **6/10 oder mehr** bringt, hör für heute auf. An diesem Punkt beendet Walkito eine Einheit.',
       ],
       table: {
         head: ['Übung', 'Dosis', 'Wie oft', 'Was du spüren solltest', 'Aufhören, wenn'],
@@ -458,7 +458,7 @@ export const HEEL_PAIN_DE: Guide = {
       paragraphs: [
         'Meide Aktivitäten mit harten Stößen, die die Last auf deiner Ferse in die Höhe treiben, solange der Schmerz akut ist, und geh morgens als Erstes nicht barfuß auf harten Böden.',
         'Springen, Sprinten und Sprungtraining bringen eine plötzliche Spitzenkraft auf die Plantarfaszie. Wenn das Gewebe gereizt ist, kann diese Spitze dich zurückwerfen. Die Leitlinie von 2023 empfiehlt, die Belastung deiner Füße bei der Arbeit, im Sport und im Alltag anzupassen, eine Empfehlung mit der Bewertung E. Sie verbietet keine bestimmten Übungen. Die Frage ist, ob die Last größer ist, als sich das Gewebe über Nacht erholen kann. Barfuß auf harten Böden zu gehen ist ein häufiger Auslöser, weil die Faszie nach dem Ausruhen am steifsten ist und ein harter Boden nicht dämpft.',
-        'Zwei weitere Dinge solltest du beachten. Einen Ball unter dem Fuß zu rollen sollte sich fest anfühlen, nicht stechend. Wenn es wehtut, nimm Druck raus oder lass es weg. Und wenn du zusätzlich Schmerzen an der Achillessehne hinten an der Ferse hast, meide tiefes Absenken der Ferse über eine Stufenkante, weil das den Ansatz der Achillessehne belasten kann. Mach das [Fersenheben mit Handtuch](/exercises/towel-heel-raise/) (auf Englisch) auf flachem Boden, bis eine medizinische Fachperson die Achillessehne freigibt.',
+        'Zwei weitere Dinge solltest du beachten. Einen Ball unter dem Fuß zu rollen sollte sich fest anfühlen, nicht stechend. Wenn es wehtut, nimm Druck raus oder lass es weg. Und wenn du zusätzlich Schmerzen an der Achillessehne hinten an der Ferse hast, meide tiefes Absenken der Ferse über eine Stufenkante, weil das den Ansatz der Achillessehne belasten kann. Mach das [Fersenheben mit Handtuch](/de/uebungen/fersenheben-mit-handtuch/) auf flachem Boden, bis eine medizinische Fachperson die Achillessehne freigibt.',
       ],
       cites: [CITE.guideline],
     },
@@ -467,7 +467,7 @@ export const HEEL_PAIN_DE: Guide = {
       paragraphs: [
         'Vor deinen ersten Schritten am Morgen und bevor du nach langem Sitzen aufstehst. Das sind die zwei Momente, in denen die Plantarfaszie am steifsten ist und am ehesten wehtut.',
         'Eine Studie von 2003 mit 82\u00A0Personen mit chronischer Plantarfasziitis testete eine gezielte Plantarfaszien-Dehnung vor der Belastung. Die Teilnehmenden hielten die Dehnung 10\u00A0Sekunden, wiederholten sie 10-mal, dreimal am Tag, mit der ersten Runde vor dem ersten Schritt am Morgen. Nach acht Wochen hatte die Gruppe mit dieser Dehnung deutlich weniger Schmerzen bei den ersten Schritten am Morgen als die Gruppe, die nur die Wade dehnte. Nach zwei Jahren, als alle Teilnehmenden dieselbe Dehnung bekommen hatten, hatten sich beide Gruppen verbessert.',
-        'Auf dieser Seite beginnt die [Plantarfaszien-Dehnung](/exercises/plantar-fascia-stretch/) (auf Englisch) auf der Bettkante, bevor dein Fuß den Boden berührt. Danach kommt die [Wadendehnung](/exercises/calf-stretch/) (auf Englisch). Walkito legt die erste Dehnung aus demselben Grund vor das Aufstehen wie die Studie: Dehnen, bevor das Gewebe Last aufnimmt, ist schonender als danach.',
+        'Auf dieser Seite beginnt die [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) auf der Bettkante, bevor dein Fuß den Boden berührt. Danach kommt die [Wadendehnung](/de/uebungen/wade-dehnen/). Walkito legt die erste Dehnung aus demselben Grund vor das Aufstehen wie die Studie: Dehnen, bevor das Gewebe Last aufnimmt, ist schonender als danach.',
       ],
       cites: [CITE.digiovanni2003],
     },
@@ -476,7 +476,7 @@ export const HEEL_PAIN_DE: Guide = {
       paragraphs: [
         'Fersenschmerzen bei den ersten Schritten am Morgen sind das Muster, das am häufigsten mit Plantarfasziitis in Verbindung gebracht wird. Oft lassen sie nach, sobald du in Bewegung bist, und kommen zurück, wenn du eine Weile gesessen hast.',
         'Zwei Dinge auf dieser Seite zielen darauf. Die Plantarfaszien-Dehnung machst du, **bevor du aufstehst**, auf der Bettkante mit zurückgezogenen Zehen, damit deine ersten Schritte nicht deine erste Dehnung sind. Und die Leitlinie von 2023 gibt Nachtschienen, 1 bis 3\u00A0Monate getragen, ein **A** für Menschen, die bei den ersten Schritten am Morgen immer wieder Schmerzen haben. Über Nachtschienen sprichst du am besten mit einer medizinischen Fachperson. Walkito stellt keine bereit.',
-        'Walkito fragt aus demselben Grund jeden Tag nach deinem Morgenschmerz. Der Morgenschmerz ist das klarste Zeichen dafür, wie dein Fuß den Vortag verkraftet hat, und er entscheidet, wie viel die heutige Einheit von dir verlangt. Mehr dazu, was ihn auslöst, steht unter [Fersenschmerzen am Morgen](/heel-pain-in-the-morning/) (auf Englisch).',
+        'Walkito fragt aus demselben Grund jeden Tag nach deinem Morgenschmerz. Der Morgenschmerz ist das klarste Zeichen dafür, wie dein Fuß den Vortag verkraftet hat, und er entscheidet, wie viel die heutige Einheit von dir verlangt. Mehr dazu, was ihn auslöst, steht unter [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/).',
       ],
       cites: [CITE.guideline],
     },
@@ -493,7 +493,7 @@ export const HEEL_PAIN_DE: Guide = {
       h2: 'Ist Krafttraining oder Dehnen besser bei Plantarfasziitis?',
       paragraphs: [
         'Krafttraining und Dehnen helfen beide bei Plantarfasziitis, und Krafttraining hilft früher.',
-        'In einer Studie mit 48\u00A0Personen mit per Ultraschall bestätigter Plantarfasziitis trugen alle Schuheinlagen. Eine Gruppe machte zusätzlich jeden zweiten Tag schweres Fersenheben. Die andere dehnte jeden Tag die Plantarfaszie. Nach drei Monaten lag die Fersenheben-Gruppe bei Schmerz und Alltagsfunktion klar vorn. Nach zwölf Monaten lagen beide Gruppen gleichauf. Krafttraining hat die Besserung vorgezogen. Größer gemacht hat es sie nicht.',
+        'In einer Studie mit 48\u00A0Personen mit per Ultraschall bestätigter Plantarfasziitis trugen alle Schuheinlagen. Eine Gruppe machte zusätzlich jeden zweiten Tag schweres Fersenheben. Die andere dehnte jeden Tag die Plantarfaszie. Nach drei Monaten lag die Fersenheben-Gruppe bei Schmerz und Alltagsfunktion klar vorn. Nach zwölf Monaten lagen beide Gruppen gleichauf. Krafttraining hat die Besserung beschleunigt, aber nicht verstärkt.',
         'Die Leitlinie unterstützt beides. Die Begründung Studie für Studie steht auf [der Seite zur Studienlage](/science/) (auf Englisch).',
       ],
       sourceNote:
@@ -549,7 +549,7 @@ export const HEEL_PAIN_DE: Guide = {
     },
     {
       q: 'Wie lange dauert eine Plantarfasziitis?',
-      a: 'Bei den meisten Menschen bessert sie sich innerhalb von Monaten, nicht Wochen. Den ganzen Zeitverlauf findest du unter [wie lange dauert Plantarfasziitis](/how-long-does-plantar-fasciitis-last/) (auf Englisch). Eine [Übersichtsarbeit von 2020](https://doi.org/10.1177/2473011419896763) berichtet, dass es etwa 90\u00A0% der Menschen mit nicht-operativer Behandlung wie Dehnen und Schuheinlagen besser geht, oft innerhalb von 3 bis 6\u00A0Monaten. Bei manchen dauert es länger, und eine kleinere Gruppe hat nach einem Jahr noch Schmerzen. Kein Übungsprogramm kann einen Zeitrahmen versprechen. Die Leitlinie von 2023 zu Fersenschmerzen gibt Dehnen und Wadenkraft ihre besten Bewertungen, deshalb stehen sie auf dieser Seite an erster Stelle.',
+      a: 'Bei den meisten Menschen bessert sie sich innerhalb von Monaten, nicht Wochen. Den ganzen Zeitverlauf findest du unter [wie lange dauert Plantarfasziitis](/de/wie-lange-dauert-plantarfasziitis/). Eine [Übersichtsarbeit von 2020](https://doi.org/10.1177/2473011419896763) berichtet, dass es etwa 90\u00A0% der Menschen mit nicht-operativer Behandlung wie Dehnen und Schuheinlagen besser geht, oft innerhalb von 3 bis 6\u00A0Monaten. Bei manchen dauert es länger, und eine kleinere Gruppe hat nach einem Jahr noch Schmerzen. Kein Übungsprogramm kann einen Zeitrahmen versprechen. Die Leitlinie von 2023 zu Fersenschmerzen gibt Dehnen ein A und Krafttraining ein B, deshalb stehen beide auf dieser Seite an erster Stelle.',
       cites: [CITE.latt],
     },
     {
@@ -566,7 +566,7 @@ export const HEEL_PAIN_DE: Guide = {
     },
     {
       q: 'Was sind die besten Dehnungen bei Fersenschmerzen?',
-      a: 'Die Plantarfaszien-Dehnung und die Waden- und Soleusdehnungen sind die, die die Leitlinie von 2023 zu Fersenschmerzen mit A bewertet, ihrer besten Bewertung. Leg den Fuß über dein Knie und zieh die Zehen 30\u00A0Sekunden zurück, das erste Mal, bevor du morgens aufstehst. Dann dehn die Wade an einer Wand, das hintere Knie erst gestreckt, dann gebeugt. Walkito beginnt mit 2-mal 30\u00A0Sekunden pro Dehnung. Technik: [Plantarfaszien-Dehnung](/exercises/plantar-fascia-stretch/) (auf Englisch).',
+      a: 'Die Plantarfaszien-Dehnung und die Waden- und Soleusdehnungen sind die, die die Leitlinie von 2023 zu Fersenschmerzen mit A bewertet, ihrer besten Bewertung. Leg den Fuß über dein Knie und zieh die Zehen 30\u00A0Sekunden zurück, das erste Mal, bevor du morgens aufstehst. Dann dehn die Wade an einer Wand, das hintere Knie erst gestreckt, dann gebeugt. Walkito beginnt mit 2-mal 30\u00A0Sekunden pro Dehnung. Technik: [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/).',
       cites: [CITE.guideline],
     },
     {
@@ -575,7 +575,7 @@ export const HEEL_PAIN_DE: Guide = {
     },
     {
       q: 'Hilft Gehen bei Plantarfasziitis?',
-      a: 'Gehen ist meist in Ordnung, aber für sich allein keine Übung bei Plantarfasziitis. Die Leitlinie von 2023 empfiehlt, die Belastung anzupassen, statt mit Aktivität aufzuhören. Wenn deine ersten Schritte am Morgen nach einem Spaziergang deutlich schlimmer sind, war die Strecke oder das Tempo zu viel. Dehnen vor dem Gehen, vor allem die [Plantarfaszien-Dehnung](/exercises/plantar-fascia-stretch/) (auf Englisch) vor den ersten Schritten, macht die ersten Minuten leichter.',
+      a: 'Gehen ist meist in Ordnung, aber für sich allein keine Übung bei Plantarfasziitis. Die Leitlinie von 2023 empfiehlt, die Belastung anzupassen, statt mit Aktivität aufzuhören. Wenn deine ersten Schritte am Morgen nach einem Spaziergang deutlich schlimmer sind, war die Strecke oder das Tempo zu viel. Dehnen vor dem Gehen, vor allem die [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) vor den ersten Schritten, macht die ersten Minuten leichter.',
     },
   ],
   redFlags: RED_FLAGS,

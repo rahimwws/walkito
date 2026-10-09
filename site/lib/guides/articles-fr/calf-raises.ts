@@ -24,7 +24,7 @@ export const CALF_RAISES_FR: Guide = {
   takeaways: [
     'Dans un essai sur 48\u00A0personnes, des montées sur pointes avec charge et une serviette sous les orteils ont soulagé la douleur de la fasciite plantaire plus vite que les étirements seuls à trois mois, même si les deux groupes étaient à égalité à douze mois (Rathleff et coll., 2015).',
     'La recommandation de 2023 sur la douleur au talon donne au renforcement musculaire un B, sa deuxième meilleure note, et aux étirements un A (Koc et coll., 2023).',
-    'Une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, souvent due à un gastrocnémien raide, le plus gros muscle du mollet, à l’extérieur, est un facteur de risque indépendant de fasciite plantaire (Riddle et coll., 2003).',
+    'Une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, souvent due à un gastrocnémien raide, le plus gros et le plus superficiel des deux muscles du mollet, est un facteur de risque indépendant de fasciite plantaire (Riddle et coll., 2003).',
     'La serviette sous les orteils active le mécanisme de treuil (windlass), qui charge le fascia plantaire en même temps que le mollet.',
     'Un nombre de montées sur pointes sur une jambe autour de 20 à 25, environ 23-24 en moyenne, est une référence courante chez l’adulte, utile pour suivre vos progrès au fil des semaines (Hebert-Losier et coll., 2017).',
   ],
@@ -34,9 +34,9 @@ export const CALF_RAISES_FR: Guide = {
       h2: 'Les montées sur pointes aident-elles vraiment la fasciite plantaire\u00A0?',
       keyFact: 'Dans un essai sur 48\u00A0personnes, le groupe des montées sur pointes avait un score meilleur de 29\u00A0points au Foot Function Index à trois mois, même si les deux groupes s’étaient rejoints à douze mois (Rathleff et coll., 2015).',
       paragraphs: [
-        'Les montées sur pointes aident la fasciite plantaire en renforçant la chaîne mollet-tendon d’Achille-fascia, qui absorbe la charge chaque fois que le talon touche le sol.',
+        'Les montées sur pointes sont utiles en cas de fasciite plantaire, car elles renforcent la chaîne mollet-tendon d’Achille-fascia, qui absorbe la charge chaque fois que le talon touche le sol.',
         'Le seul essai randomisé à avoir testé directement cet exercice dans la fasciite plantaire est celui de Rathleff, en 2015. Dans cet essai, 48\u00A0personnes avec une fasciite plantaire confirmée à l’échographie ont été réparties en deux groupes. Les deux portaient des semelles. Un groupe faisait une montée sur pointes lente, avec charge, une serviette roulée sous les orteils. L’autre étirait le fascia plantaire. À trois mois, le groupe des montées sur pointes avait un score meilleur de 29\u00A0points au Foot Function Index. À douze mois, les deux groupes s’étaient rejoints.',
-        'Les montées sur pointes ont donc avancé l’amélioration. Elles ne l’ont pas rendue plus grande à long terme. La recommandation clinique de 2023 donne au renforcement musculaire un B et aux étirements un A. Elle recommande les deux. Rien dans les données ne suggère de choisir l’un et de laisser tomber l’autre.',
+        'Les montées sur pointes ont donc accéléré l’amélioration. Elles ne l’ont pas rendue plus grande à long terme. La recommandation clinique de 2023 donne au renforcement musculaire un B et aux étirements un A. Elle recommande les deux. Rien dans les données ne suggère de choisir l’un et de laisser tomber l’autre.',
       ],
       sourceNote:
         'Rathleff 2015\u00A0: Foot Function Index inférieur de 29\u00A0points dans le groupe des montées sur pointes à 3\u00A0mois (IC à 95\u00A0% 6-52, p = 0,016). À 12\u00A0mois, 22 contre 16, une différence non significative.',
@@ -45,15 +45,15 @@ export const CALF_RAISES_FR: Guide = {
     {
       h2: 'Comment faire une montée sur pointes avec serviette pour la fasciite plantaire\u00A0?',
       paragraphs: [
-        'La montée sur pointes avec serviette est l’exercice de l’essai de Rathleff. C’est une montée sur pointes sur une jambe, sur une marche, avec une serviette roulée sous les orteils. En haut du mouvement, la serviette tire les orteils vers le haut, ce qui active le mécanisme de treuil\u00A0: le fascia plantaire se tend quand le gros orteil se replie vers le haut. Sans la serviette, vous entraînez le mollet mais vous chargez beaucoup moins le fascia.',
+        'La montée sur pointes avec serviette est l’exercice de l’essai de Rathleff. C’est une montée sur pointes sur une jambe, sur une marche, avec une serviette roulée sous les orteils. En haut du mouvement, la serviette tire les orteils vers le haut, ce qui active le mécanisme de treuil\u00A0: le fascia plantaire se tend quand le gros orteil se relève. Sans la serviette, vous entraînez le mollet mais vous chargez beaucoup moins le fascia.',
         'Tenez-vous sur un pied au bord d’une marche, une petite serviette roulée sous les cinq orteils. L’avant du pied reste sur la marche. Tenez-vous à un mur ou à une rampe pour l’équilibre. Montez en trois secondes, tenez deux secondes en haut, et redescendez en trois secondes. Laissez le talon descendre un peu sous le niveau de la marche à la descente. Dans l’essai, les participants ajoutaient du poids avec un sac à dos une fois que le poids du corps devenait trop facile.',
-        'Commencez sur les deux pieds si les montées sur une jambe sont trop dures pour l’instant. Les montées sur pointes sur les deux pieds, au sol, sans marche, sont le point de départ de la chaîne du mollet. La serviette et la marche arrivent plus tard, une fois que les montées sur pointes debout vous ont paru faciles deux séances de suite.',
+        'Commencez sur les deux pieds si les montées sur une jambe sont trop dures pour l’instant. Les montées sur pointes sur les deux pieds, au sol, sans marche, sont le point de départ de la progression du mollet. La serviette et la marche arrivent plus tard, une fois que les montées sur pointes debout vous ont paru faciles deux séances de suite.',
       ],
       exercises: [
         {
           name: 'Montées sur pointes avec serviette (sur une jambe)',
           evidence: { level: 'strong', why: 'C’est l’exercice du seul essai randomisé sur les montées sur pointes dans la fasciite plantaire (Rathleff 2015). Note B dans la recommandation.' },
-          dose: 'Protocole de recherche\u00A0: 12RM (la charge la plus lourde que vous pouvez soulever pour 12\u00A0répétitions contrôlées) x 3\u00A0séries, en progressant vers 8RM x 5\u00A0séries. Dose de départ\u00A0: 3\u00A0séries de 12, chaque jambe',
+          dose: 'Protocole de recherche\u00A0: 12RM (la charge la plus lourde que vous puissiez soulever pour 12\u00A0répétitions contrôlées) x 3\u00A0séries, en progressant vers 8RM x 5\u00A0séries. Dose de départ\u00A0: 3\u00A0séries de 12, chaque jambe',
           how: 'Tenez-vous sur un pied sur une marche, une serviette roulée sous les orteils. Trois secondes pour monter, deux secondes de maintien, trois secondes pour descendre. Ajoutez du poids avec un sac à dos quand la dernière répétition n’est plus difficile.',
           often: 'Un jour sur deux dans l’essai. Walkito la place les jours de renforcement, jamais deux de suite.',
           feel: 'Un travail dur dans le mollet et une traction sous la voûte',
@@ -128,7 +128,7 @@ export const CALF_RAISES_FR: Guide = {
     {
       h2: 'Combien de montées sur pointes faire, et comment ajouter de la charge\u00A0?',
       paragraphs: [
-        'Le protocole de Rathleff utilise un système de répétition maximale (RM) plutôt qu’un nombre fixe de répétitions. «\u00A012RM\u00A0» désigne la charge la plus lourde que vous pouvez soulever pour exactement 12\u00A0répétitions contrôlées. La douzième doit être la dernière que vous pouvez faire avec une bonne technique. Pour la plupart des gens qui débutent, le poids du corps sur une jambe suffit. Sinon, un sac à dos rempli de livres ou de bouteilles d’eau ajoute du poids.',
+        'Le protocole de Rathleff utilise un système de répétition maximale (RM) plutôt qu’un nombre fixe de répétitions. «\u00A012RM\u00A0» désigne la charge la plus lourde que vous puissiez soulever pour exactement 12\u00A0répétitions contrôlées. La douzième doit être la dernière que vous puissiez faire avec une bonne technique. Pour la plupart des gens qui débutent, le poids du corps sur une jambe suffit. Sinon, un sac à dos rempli de livres ou de bouteilles d’eau ajoute du poids.',
       ],
       table: {
         caption: 'Progression des montées sur pointes de Rathleff 2015',
@@ -145,7 +145,7 @@ export const CALF_RAISES_FR: Guide = {
       h2: 'Par quoi Walkito vous fait-il commencer\u00A0?',
       paragraphs: [
         'Walkito ne vous lance pas dans le protocole de Rathleff dès le premier jour. L’application commence par les montées sur pointes assis (3\u00A0séries de 10, deux pieds), passe aux montées debout sur deux pieds, puis au maintien sur pointes, et seulement ensuite à la montée sur une jambe avec serviette. Chaque étape s’ouvre une fois que deux séances au niveau actuel vous ont paru faciles. Cette échelle est le rythme propre à Walkito, pas un protocole publié. Elle existe parce que la plupart des gens qui commencent un programme d’exercices pour une douleur au talon ne sont pas prêts pour une montée sur une jambe avec charge dès la première séance.',
-        'Dans l’application, la chaîne du mollet suit cet ordre\u00A0: montées sur pointes assis, montées sur pointes sur deux pieds, maintien sur pointes, montées sur pointes avec serviette, descentes du talon (une descente excentrique depuis une marche) et sauts pogo. La montée avec serviette est le niveau 4 sur 6. Atteindre l’objectif du mollet, 25\u00A0montées sur pointes sur une jambe, ne met pas fin au travail du mollet. Il passe en entretien, et un nouvel objectif prend sa place.',
+        'Dans l’application, la progression du mollet suit cet ordre\u00A0: montées sur pointes assis, montées sur pointes sur deux pieds, maintien sur pointes, montées sur pointes avec serviette, descentes du talon (une descente excentrique depuis une marche) et sauts pogo. La montée avec serviette est le niveau 4 sur 6. Atteindre l’objectif du mollet, 25\u00A0montées sur pointes sur une jambe, ne met pas fin au travail du mollet. Il passe en entretien, et un nouvel objectif prend sa place.',
       ],
       cites: [CITE.rathleff],
     },
@@ -155,7 +155,7 @@ export const CALF_RAISES_FR: Guide = {
       keyFact: 'Dans une série de 254\u00A0personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction limitée au gastrocnémien, et 23 à 30\u00A0% de plus une rétraction combinée du gastrocnémien et du soléaire (Patel et coll., 2011).',
       paragraphs: [
         'Un mollet raide tire sur le talon par le tendon d’Achille, et le fascia plantaire partage la charge à l’autre bout. Quand la cheville ne peut pas assez se plier, chaque pas met plus de tension sur le fascia.',
-        'Dans une série de 254\u00A0personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien, le muscle externe du mollet, et 23 à 30\u00A0% de plus une rétraction combinée du gastrocnémien et du soléaire. Par ailleurs, une étude cas-témoins appariée, sur 50\u00A0cas et 100\u00A0témoins, a montré qu’une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, était le plus fort facteur de risque indépendant de fasciite plantaire.',
+        'Dans une série de 254\u00A0personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien, le muscle superficiel du mollet, et 23 à 30\u00A0% de plus une rétraction combinée du gastrocnémien et du soléaire. Par ailleurs, une étude cas-témoins appariée, sur 50\u00A0cas et 100\u00A0témoins, a montré qu’une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, était le plus fort facteur de risque indépendant de fasciite plantaire.',
         'C’est pourquoi l’étirement et le renforcement du mollet figurent tous les deux dans la liste. L’étirement donne plus d’amplitude à la cheville. Le renforcement donne au mollet assez de capacité pour ne pas se raidir sous la charge normale de la journée. La recommandation conseille les deux. Le même mécanisme du mollet raide se retrouve dans d’autres douleurs du bas de la jambe\u00A0: voir [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/) et [mal aux pieds après une journée debout](/feet-hurt-standing-all-day/) (en anglais) si votre douleur ressemble plutôt à l’une des deux.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle, CITE.guideline],
@@ -200,7 +200,7 @@ export const CALF_RAISES_FR: Guide = {
     {
       q: 'Combien de montées sur pointes faire pour une fasciite plantaire\u00A0?',
       cites: [CITE.rathleff],
-      a: 'Le seul essai qui a testé un protocole précis de montées sur pointes pour la fasciite plantaire commençait à 12\u00A0répétitions maximales sur 3\u00A0séries, passait à 10RM sur 4\u00A0séries en semaine 2, puis à 8RM sur 5\u00A0séries en semaine 4, un jour sur deux, jusqu’à 3\u00A0mois (Rathleff 2015). «\u00A012RM\u00A0» désigne la charge la plus lourde que vous pouvez soulever pour 12\u00A0répétitions contrôlées, pas un nombre fixe pour tout le monde.',
+      a: 'Le seul essai qui a testé un protocole précis de montées sur pointes pour la fasciite plantaire commençait à 12\u00A0répétitions maximales sur 3\u00A0séries, passait à 10RM sur 4\u00A0séries en semaine 3, puis à 8RM sur 5\u00A0séries en semaine 5, un jour sur deux, jusqu’à 3\u00A0mois (Rathleff 2015). «\u00A012RM\u00A0» désigne la charge la plus lourde que vous puissiez soulever pour 12\u00A0répétitions contrôlées, pas un nombre fixe pour tout le monde.',
     },
     {
       q: 'Les montées sur pointes peuvent-elles aggraver une fasciite plantaire\u00A0?',
@@ -210,7 +210,7 @@ export const CALF_RAISES_FR: Guide = {
     {
       q: 'À quoi sert la serviette dans la montée sur pointes avec serviette\u00A0?',
       cites: [CITE.rathleff],
-      a: 'La serviette roulée sous les orteils les fait se relever en haut du mouvement. Cela active le mécanisme de treuil, le lien entre le tendon d’Achille et le fascia plantaire. Sans la serviette, l’exercice entraîne surtout le mollet. Avec elle, le fascia prend une partie de la charge, et c’est pourquoi l’essai l’utilisait.',
+      a: 'La serviette roulée sous les orteils les fait se relever en haut du mouvement. Cela active le mécanisme de treuil\u00A0: quand le gros orteil se relève, le fascia plantaire se tend. Sans la serviette, l’exercice entraîne surtout le mollet. Avec elle, le fascia prend une partie de la charge, et c’est pourquoi l’essai l’utilisait.',
     },
     {
       q: 'Fasciite plantaire\u00A0: faut-il d’abord étirer ou renforcer\u00A0?',
@@ -251,7 +251,7 @@ export const CALF_RAISES_FR: Guide = {
       'le talon est rouge, ou vous avez de la fièvre ou vous ne vous sentez pas bien',
       'elle vous réveille la nuit ou est présente au repos, ce qui peut davantage évoquer une fracture de fatigue',
       'presser les côtés du talon fait mal, ou la douleur monte pendant vos courses après une hausse du kilométrage',
-      'les deux talons font mal et d’autres articulations sont gonflées ou raides, ce qui peut évoquer une arthrite inflammatoire',
+      'les deux talons font mal et d’autres articulations sont gonflées ou raides, ce qui peut évoquer un rhumatisme inflammatoire',
       'elle ne s’est pas améliorée après plusieurs semaines d’exercice et de charge réduite',
       'vous avez du diabète, une sensibilité réduite des pieds ou une mauvaise circulation',
     ],

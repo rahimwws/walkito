@@ -47,7 +47,7 @@ export const HAGLUNDS_ES: Guide = {
     {
       h2: '¿Cómo se relaciona la deformidad de Haglund con la tendinopatía insercional del Aquiles?',
       paragraphs: [
-        'La deformidad de Haglund y la tendinopatía insercional del Aquiles suelen aparecer juntas, pero no son la misma condición. La tendinopatía insercional es dolor en el punto donde el tendón de Aquiles se une al hueso del talón, normalmente por sobrecarga. La deformidad de Haglund es una forma del hueso. El bulto puede irritar el tendón desde atrás, y la inserción del tendón puede verse afectada por la misma compresión que inflama la bursa.',
+        'La deformidad de Haglund y la tendinopatía insercional del Aquiles suelen aparecer juntas, pero no son la misma afección. La tendinopatía insercional es dolor en el punto donde el tendón de Aquiles se une al hueso del talón, normalmente por sobrecarga. La deformidad de Haglund es una forma del hueso. El bulto puede irritar el tendón desde atrás, y la inserción del tendón puede verse afectada por la misma compresión que inflama la bursa.',
         'El vínculo práctico: si tienes un bulto de Haglund y dolor en la parte de atrás del talón, el dolor puede venir de la bursa, de la inserción del tendón, o de los dos. Un profesional de la salud puede distinguirlo examinando dónde está la mayor sensibilidad y si el estiramiento o la carga reproducen el dolor.',
         'La guía de 2024 para la tendinopatía de Aquiles hace una separación clara entre la enfermedad de la porción media y la insercional. Para los problemas insercionales, que incluyen los casos asociados a la deformidad de Haglund, el protocolo estándar de descensos excéntricos de talón necesita modificación. La dorsiflexión profunda, dejar que el talón baje por debajo del escalón, comprime el tendón contra el hueso y puede empeorar los síntomas.',
       ],
@@ -106,7 +106,7 @@ export const HAGLUNDS_ES: Guide = {
         },
         {
           name: 'Estiramiento de pantorrilla (rodilla estirada, suave)',
-          evidence: { level: 'early', why: 'Parte del manejo conservador de la deformidad de Haglund según la recomendación de expertos. No hay ensayo controlado aleatorizado para esta condición. Evita la dorsiflexión profunda.' },
+          evidence: { level: 'early', why: 'Parte del manejo conservador de la deformidad de Haglund según la recomendación de expertos. No hay ensayo controlado aleatorizado para esta afección. Evita la dorsiflexión profunda.' },
           dose: '2\u00A0estiramientos de 30\u00A0segundos, cada pierna',
           how: 'Manos en una pared. Lleva un pie hacia atrás, pierna estirada, talón abajo. Inclínate hacia adelante hasta sentir un estiramiento en la parte alta de la pantorrilla. Para antes de que el estiramiento llegue a la parte de atrás del hueso del talón. No fuerces una dorsiflexión profunda.',
           often: 'A diario, después del trabajo de fuerza',
@@ -214,7 +214,7 @@ export const HAGLUNDS_ES: Guide = {
       'hay mucha hinchazón, enrojecimiento o calor en la parte de atrás del talón, sobre todo con fiebre',
       'el dolor empeora poco a poco a pesar de los cambios de calzado y los pasos conservadores durante varias semanas',
       'no puedes impulsarte con los dedos ni caminar con normalidad',
-      'el dolor está presente en reposo o te despierta por la noche, lo que puede indicar una fractura por estrés u otra condición más allá de la bursitis',
+      'el dolor está presente en reposo o te despierta por la noche, lo que puede indicar una fractura por estrés u otra afección más allá de la bursitis',
       'hay entumecimiento u hormigueo junto con el dolor de talón',
       'tomaste hace poco un antibiótico del grupo de las fluoroquinolonas (como ciprofloxacino) y tienes dolor de tendón nuevo',
     ],

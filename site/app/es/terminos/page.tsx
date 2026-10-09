@@ -229,7 +229,7 @@ export default function TerminosEs() {
         <p>
           Walkito se ofrece tal cual. No prometemos que seguir el programa vaya
           a reducir tu dolor, cambiar tu arco ni producir ningún resultado
-          concreto. La <a href="/science/">página de evidencia</a> (en inglés)
+          concreto. La <a href="/es/evidencia/">página de evidencia</a>
           explica lo que encontró la investigación en la que se basa, incluido
           dónde termina esa evidencia.
         </p>

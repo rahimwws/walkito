@@ -79,7 +79,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_ES: Guide = {
     {
       h2: '¿En qué se diferencia del estiramiento de pantorrilla?',
       paragraphs: [
-        'Trabajan estructuras distintas. El [estiramiento de pantorrilla](/es/ejercicios/estiramiento-de-pantorrilla/) alarga el gastrocnemio, el músculo grande y externo de la pantorrilla, a través del tendón de Aquiles. El estiramiento de la fascia plantar jala los dedos hacia atrás para cargar la fascia directamente bajo el arco. Los dos se conectan por el hueso del talón, pero responden a posiciones distintas.',
+        'Trabajan estructuras distintas. El [estiramiento de pantorrilla](/es/ejercicios/estiramiento-de-pantorrilla/) alarga el gastrocnemio, el músculo grande y superficial de la pantorrilla, a través del tendón de Aquiles. El estiramiento de la fascia plantar jala los dedos hacia atrás para cargar la fascia directamente bajo el arco. Los dos se conectan por el hueso del talón, pero responden a posiciones distintas.',
         'Una pantorrilla tensa es por sí sola un factor de riesgo para la fascitis plantar. En un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la menor dorsiflexión del tobillo, es decir, cuánto se dobla el pie hacia arriba, hacia la tibia, fue el factor de riesgo independiente más fuerte. Por eso la guía recomienda los dos estiramientos, no uno u otro.',
         'Para el músculo más profundo de la pantorrilla, el sóleo, el estiramiento cambia: doblas la rodilla de atrás para pasar la carga del gastrocnemio al sóleo. Es otro ejercicio. Mira [estiramiento de sóleo](/es/ejercicios/estiramiento-de-soleo/).',
       ],
@@ -110,14 +110,14 @@ export const EX_PLANTAR_FASCIA_STRETCH_ES: Guide = {
       a: 'El ensayo que probó este estiramiento usó repeticiones de 10\u00A0segundos, 10\u00A0veces, al menos tres veces al día (DiGiovanni 2003). Así, cada sesión dura unos dos minutos. Walkito empieza con 10\u00A0repeticiones de 10\u00A0segundos por pie. Mantener más tiempo no es necesariamente mejor. Importa más la constancia durante el día que un solo estiramiento largo.',
     },
     {
-      q: '¿Hay que estirar la fascitis plantar antes de levantarse de la cama?',
+      q: '¿Hay que estirar la fascia plantar antes de levantarse de la cama?',
       cites: [CITE.digiovanni2003, CITE.guideline],
       a: 'Sí. Antes del primer paso del día es el momento más importante. La fascia plantar se acorta durante la noche, y los primeros pasos la jalan con fuerza. Estirarla cuando todavía estás sentado en la cama reduce ese tirón. Tanto el ensayo como la guía de 2023 señalan este momento como el clave.',
     },
     {
       q: '¿Estirar puede empeorar la fascitis plantar?',
       cites: [CITE.digiovanni2006],
-      a: 'En el ensayo de DiGiovanni, estirar mejoró los resultados, no los empeoró. Si un estiramiento sube el dolor a más de 6/10, afloja. Demasiada fuerza o los rebotes pueden irritar el tejido. Debe sentirse firme bajo el arco, nunca agudo. Si estirar te empeora el dolor una y otra vez, consulta a un profesional de la salud antes de seguir.',
+      a: 'En el ensayo de DiGiovanni, estirar mejoró los resultados, no los empeoró. Si un estiramiento sube el dolor a 6/10 o más, afloja. Demasiada fuerza o los rebotes pueden irritar el tejido. Debe sentirse firme bajo el arco, nunca agudo. Si estirar te empeora el dolor una y otra vez, consulta a un profesional de la salud antes de seguir.',
     },
     {
       q: '¿Qué es mejor para la fascitis plantar, estirar la fascia plantar o la pantorrilla?',

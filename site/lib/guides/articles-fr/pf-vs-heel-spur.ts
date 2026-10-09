@@ -24,14 +24,14 @@ export const PF_VS_HEEL_SPUR_FR: Guide = {
   lede:
     'Une épine calcanéenne est une excroissance osseuse sous l’os du talon. La fasciite plantaire est une irritation du fascia plantaire, l’épaisse bande de tissu qui va de cet os à vos orteils. Les deux apparaissent souvent ensemble, mais ce n’est pas le même problème, et ce n’est en général pas l’épine qui fait mal. Beaucoup de personnes avec une épine visible à la radio n’ont aucune douleur.',
   intro: [
-    'Si on vous a dit que vous avez une épine calcanéenne et que vous voulez savoir quoi faire, les exercices sont les mêmes que ceux qui aident la fasciite plantaire. [Épine calcanéenne\u00A0: exercices](/fr/epine-calcaneenne-exercices/) présente la routine complète. Cette page explique la différence entre les deux, ce que dit la recherche sur l’épine et la douleur, et quand l’imagerie vaut la peine.',
+    'Si on vous a dit que vous avez une épine calcanéenne et que vous voulez savoir quoi faire, les exercices sont les mêmes que ceux qui sont utiles en cas de fasciite plantaire. [Épine calcanéenne\u00A0: exercices](/fr/epine-calcaneenne-exercices/) présente la routine complète. Cette page explique la différence entre les deux, ce que dit la recherche sur l’épine et la douleur, et quand l’imagerie vaut la peine.',
   ],
   takeaways: [
     'Dans une étude sur 216\u00A0personnes âgées de 62 à 94\u00A0ans, 55\u00A0% avaient au moins une épine calcanéenne plantaire à la radio, et l’épine était liée à l’obésité et à l’arthrose mais pas à la posture du pied (Menz et coll., 2008). C’est un échantillon de personnes âgées, pas un chiffre pour la population générale.',
     'Dans une étude sur 530\u00A0personnes de 50\u00A0ans et plus ayant mal aux pieds, l’épine calcanéenne et un fascia plantaire épaissi apparaissaient en général ensemble, et une épine seule était rare (6\u00A0% des pieds). La douleur au talon était liée à la présence des deux à la fois (Menz et coll., 2019).',
     'La recommandation de 2023 sur la douleur au talon fait de la fasciite plantaire la cause la plus fréquente de douleur sous le talon et note que l’imagerie n’est en général pas nécessaire quand l’examen clinique oriente déjà vers une fasciite plantaire (Koc et coll., 2023).',
     'L’étude de Menz 2008 note elle-même que des travaux antérieurs en population générale situaient la fréquence de l’épine calcanéenne entre 11 et 16\u00A0%, bien en dessous des 55\u00A0% trouvés dans son propre échantillon de personnes âgées (Menz et coll., 2008).',
-    'Les exercices qui aident la douleur de la fasciite plantaire agissent aussi sur le tissu mou autour d’une épine calcanéenne. L’exercice ne dissout pas l’épine, mais c’est rarement elle qui demande de l’attention.',
+    'Les exercices utiles contre la douleur de la fasciite plantaire agissent aussi sur le tissu mou autour d’une épine calcanéenne. L’exercice ne dissout pas l’épine, mais c’est rarement elle qui demande de l’attention.',
   ],
   toc: true,
   sections: [
@@ -82,7 +82,7 @@ export const PF_VS_HEEL_SPUR_FR: Guide = {
       paragraphs: [
         'En général, une radio n’est pas nécessaire pour une fasciite plantaire. Le diagnostic est clinique\u00A0: il repose sur l’endroit de la douleur, le moment où elle survient et ce qui l’aggrave. Une radio peut montrer une épine calcanéenne, mais en trouver une ne change pas ce que vous faites contre la douleur, et ne pas en trouver n’écarte pas une fasciite plantaire.',
         'L’imagerie devient utile quand la douleur ne suit pas le schéma typique de la fasciite plantaire, quand elle ne s’est pas améliorée après plusieurs semaines de soins conservateurs, ou quand un professionnel de santé soupçonne autre chose, comme une fracture de fatigue, un problème nerveux ou une déchirure du fascia plantaire. L’échographie peut mesurer l’épaisseur du fascia plantaire (au-delà de 4\u00A0mm, il est en général considéré comme épaissi), et l’IRM peut montrer des détails des tissus mous que la radio ne voit pas.',
-        'Si on vous a déjà dit qu’une radio montre une épine calcanéenne, l’épine elle-même n’a presque jamais besoin d’une prise en charge à part. Les exercices et étirements qui aident la fasciite plantaire agissent aussi sur le tissu mou autour de l’épine. Voir [épine calcanéenne\u00A0: exercices](/fr/epine-calcaneenne-exercices/) pour la routine complète.',
+        'Si on vous a déjà dit qu’une radio montre une épine calcanéenne, l’épine elle-même n’a presque jamais besoin d’une prise en charge à part. Les exercices et étirements utiles en cas de fasciite plantaire agissent aussi sur le tissu mou autour de l’épine. Voir [épine calcanéenne\u00A0: exercices](/fr/epine-calcaneenne-exercices/) pour la routine complète.',
       ],
       cites: [CITE.guideline],
     },
@@ -90,7 +90,7 @@ export const PF_VS_HEEL_SPUR_FR: Guide = {
       h2: 'Si l’épine n’est pas le problème, qu’est-ce qui l’est\u00A0?',
       paragraphs: [
         'La douleur vient en général du fascia plantaire et des tissus autour, pas de l’os. Le fascia plantaire s’attache sous l’os du talon. Quand il est surchargé, surtout chez quelqu’un qui a un mollet raide, un IMC élevé ou de longues heures debout, ce point d’attache s’irrite. Cette irritation, c’est la fasciite plantaire.',
-        'Un mollet raide est l’un des facteurs de risque les plus forts. Dans une étude cas-témoins appariée sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, avait l’odds ratio le plus élevé de tous les facteurs mesurés. Rester debout la majeure partie de la journée de travail était aussi significatif, avec un risque multiplié par 3,6 (Riddle et coll., 2003).',
+        'Un mollet raide est l’un des facteurs de risque les plus forts. Dans une étude cas-témoins appariée sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, avait l’odds ratio le plus élevé de tous les facteurs mesurés. Rester debout la majeure partie de la journée de travail était aussi significatif, avec un odds ratio de 3,6 (Riddle et coll., 2003).',
         'L’épine, quand elle est là, se trouve tout près. Elle a pu se former au fil des mois ou des années en réponse au même stress mécanique qui a irrité le fascia. Mais ce sont le fascia et le mollet qui répondent aux étirements et au renforcement, pas l’os. C’est pourquoi la recommandation conseille l’exercice, pas l’ablation de l’épine.',
         'Pour une vue d’ensemble de la fasciite plantaire, avec les causes, les facteurs de risque et ce que conseille la recommandation, voir [fasciite plantaire](/fr/fasciite-plantaire/).',
       ],
@@ -193,7 +193,7 @@ export const PF_VS_HEEL_SPUR_FR: Guide = {
       a: 'Marcher ne va pas enfoncer l’épine dans les tissus voisins. Une douleur qui se réveille à la marche vient en général du fascia plantaire irrité à côté de l’épine, pas de l’os lui-même. La recommandation de 2023 conseille d’adapter la charge, comme la distance ou l’allure, plutôt que d’arrêter, si la marche aggrave le talon le lendemain matin.',
     },
     {
-      q: 'Est-ce bien de masser une épine calcanéenne\u00A0?',
+      q: 'Est-il bon de masser une épine calcanéenne\u00A0?',
       cites: [CITE.guideline],
       a: 'Un massage doux autour d’une épine calcanéenne peut détendre les tissus mous, mais il ne change pas l’os. Faire rouler la plante du pied avec une pression ferme, mais pas vive, peut assouplir le fascia et le mollet, les tissus qui causent en général la douleur. La recommandation note A la thérapie manuelle par un professionnel de santé\u00A0; l’automassage relève du confort et ne remplace pas les étirements.',
     },

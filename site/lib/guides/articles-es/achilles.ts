@@ -50,7 +50,7 @@ export const ACHILLES_ES: Guide = {
           name: 'Descensos excéntricos de talón (rodilla estirada)',
           evidence: { level: 'strong', why: 'El protocolo original de Alfredson; respaldado por la guía de 2024, que le da al ejercicio una A.' },
           dose: 'Alfredson: 3 x 15, dos veces al día, tres meses. Walkito: 3 x 10, cada pierna',
-          how: 'Párate en la orilla de un escalón. Sube con los dos pies, pasa el peso a la pierna que duele y baja despacio en tres segundos. El talón baja por debajo del escalón. Vuelve a subir con los dos pies. Con la rodilla estirada trabajas el gastrocnemio, el músculo más grande y externo de la pantorrilla.',
+          how: 'Párate en la orilla de un escalón. Sube con los dos pies, pasa el peso a la pierna que duele y baja despacio en tres segundos. El talón baja por debajo del escalón. Vuelve a subir con los dos pies. Con la rodilla estirada trabajas el gastrocnemio, el músculo más grande y superficial de la pantorrilla.',
           often: 'Dos veces al día en el protocolo de Alfredson. Walkito: días de fuerza.',
           feel: 'Trabajo fuerte en la pantorrilla durante la bajada, no un estiramiento abajo',
           stop: 'Dolor por encima de 5/10 que no se calma para la mañana siguiente, o dolor que empeora semana a semana',
@@ -170,7 +170,7 @@ export const ACHILLES_ES: Guide = {
       keyFact: 'En un ensayo con 38\u00A0personas, quienes siguieron corriendo bajo una regla de control del dolor, permitiendo hasta unos 5 de 10 que se calmaba para la mañana, mejoraron tanto a los doce meses como quienes descansaron primero (Silbernagel y colegas, 2007).',
       paragraphs: [
         'En Silbernagel 2007, 38\u00A0personas con dolor de Aquiles se dividieron en dos grupos. Uno siguió corriendo y saltando durante la rehabilitación, con la regla de que el dolor durante y después de la carga podía llegar a unos **5 de 10**, siempre que volviera a su nivel habitual para la mañana siguiente y no empeorara semana a semana. El otro grupo primero descansó. Los dos mejoraron de forma significativa a los 12\u00A0meses, sin diferencia entre ellos.',
-        'Este límite es distinto de la regla de parar en 6/10 de la página de [fascitis plantar](/es/ejercicios-fascitis-plantar/), que viene de otra guía. La cifra de 5/10 es de un solo estudio, no un estándar universal, pero es el modelo de dolor más citado en la rehabilitación del Aquiles.',
+        'Este límite es distinto de la regla de parar en 6/10 de la página de [fascitis plantar](/es/ejercicios-fascitis-plantar/), que es el límite que usa Walkito para el dolor de talón. La cifra de 5/10 es de un solo estudio, no un estándar universal, pero es el modelo de dolor más citado en la rehabilitación del Aquiles.',
         'Algo de molestia durante la carga es normal y era aceptable en el ensayo. Un dolor que no se calma en la noche, que empeora semana a semana o que llega de golpe como un dolor agudo no lo es.',
       ],
       cites: [CITE.silbernagel],
@@ -189,7 +189,7 @@ export const ACHILLES_ES: Guide = {
     {
       h2: '¿Cuántas elevaciones de talón a una pierna deberías poder hacer?',
       paragraphs: [
-        'La guía de 2024 incluye la prueba de resistencia de elevación de talón a una pierna como parte de la forma recomendada de medir la fuerza de la pantorrilla y seguir la recuperación. Un estudio normativo con 566\u00A0adultos sanos pone una cifra típica de unas 25\u00A0repeticiones, ajustada por edad, sexo y nivel de actividad. Lo que importa es la tendencia con el tiempo y la diferencia entre tus dos lados.',
+        'La guía de 2024 incluye la prueba de resistencia de elevación de talón a una pierna como parte de la forma recomendada de medir la fuerza de la pantorrilla y seguir la recuperación. Un estudio normativo con 566\u00A0adultos sanos pone una cifra típica de unas 23 a 24\u00A0repeticiones, ajustada por edad, sexo y nivel de actividad. Lo que importa es la tendencia con el tiempo y la diferencia entre tus dos lados.',
         'La meta de pantorrilla en la app es de 25\u00A0elevaciones de talón a una pierna. La prueba se hace cada 14\u00A0días mientras la meta de pantorrilla está activa, y después cada 28\u00A0días. También se sigue la diferencia entre piernas, porque una diferencia que no se va puede indicar una recuperación incompleta.',
       ],
       cites: [CITE.hebertLosier, CITE.achillesGuideline],

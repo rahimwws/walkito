@@ -52,7 +52,7 @@ export const ACHILLES_IT: Guide = {
           name: 'Discese eccentriche del tallone (ginocchio teso)',
           evidence: { level: 'strong', why: 'Il protocollo originale di Alfredson; sostenuto dalla linea guida del 2024, che dà all’esercizio una A.' },
           dose: 'Alfredson: 3 x 15, due volte al giorno, tre mesi. Walkito: 3 x 10, ogni gamba',
-          how: 'Stai sul bordo di un gradino. Sali su entrambi i piedi, sposta il peso sulla gamba dolorante, scendi piano in tre secondi. Il tallone scende sotto il gradino. Usa entrambi i piedi per risalire. Il ginocchio teso lavora sul gastrocnemio, il muscolo esterno e più grande del polpaccio.',
+          how: 'Stai sul bordo di un gradino. Sali su entrambi i piedi, sposta il peso sulla gamba dolorante, scendi piano in tre secondi. Il tallone scende sotto il gradino. Usa entrambi i piedi per risalire. Il ginocchio teso lavora sul gastrocnemio, il muscolo più grande e superficiale del polpaccio.',
           often: 'Due volte al giorno nel protocollo di Alfredson. Walkito: giorni di forza.',
           feel: 'Lavoro intenso nel polpaccio durante la discesa, non un allungamento in basso',
           stop: 'Dolore oltre 5/10 che non passa entro la mattina dopo, o dolore che peggiora di settimana in settimana',
@@ -172,7 +172,7 @@ export const ACHILLES_IT: Guide = {
       keyFact: 'In uno studio su 38\u00A0persone, chi ha continuato a correre con un dolore tenuto intorno a 5 su 10 e passato entro la mattina è migliorato a dodici mesi quanto chi si era prima fermato a riposo (Silbernagel e colleghi, 2007).',
       paragraphs: [
         'In Silbernagel 2007, 38\u00A0persone con dolore all’Achille sono state divise in due gruppi. Un gruppo ha continuato a correre e saltare durante la riabilitazione, con la regola che il dolore durante e dopo il carico poteva arrivare a circa **5 su 10**, purché tornasse al suo livello abituale entro la mattina dopo e non peggiorasse di settimana in settimana. L’altro gruppo si è prima fermato a riposo. Entrambi sono migliorati in modo significativo a 12\u00A0mesi, senza differenze tra loro.',
-        'È una soglia diversa dalla regola di stop a 6/10 della pagina sulla [fascite plantare](/it/esercizi-fascite-plantare/), che viene da un’altra linea guida. Il valore di 5/10 viene da un solo studio, non da uno standard universale, ma è il modello del dolore più citato nella riabilitazione dell’Achille.',
+        'È una soglia diversa dalla regola di stop a 6/10 della pagina sulla [fascite plantare](/it/esercizi-fascite-plantare/), che è il limite che Walkito usa per il dolore al tallone. Il valore di 5/10 viene da un solo studio, non da uno standard universale, ma è il modello del dolore più citato nella riabilitazione dell’Achille.',
         'Un po’ di fastidio durante il carico è normale ed era accettato nello studio. Un dolore che non passa durante la notte, peggiora di settimana in settimana o arriva come una fitta acuta improvvisa non lo è.',
       ],
       cites: [CITE.silbernagel],
@@ -191,7 +191,7 @@ export const ACHILLES_IT: Guide = {
     {
       h2: 'Quanti sollevamenti sulle punte su una gamba dovresti riuscire a fare?',
       paragraphs: [
-        'La linea guida del 2024 indica il test di resistenza dei sollevamenti del tallone su una gamba come parte del modo consigliato per misurare la forza del polpaccio e seguire il recupero. Uno studio con dati di riferimento su 566\u00A0adulti sani indica un valore tipico di circa 25\u00A0ripetizioni, da adattare a età, sesso e livello di attività. Quello che conta è l’andamento nel tempo e la differenza tra i due lati.',
+        'La linea guida del 2024 indica il test di resistenza dei sollevamenti del tallone su una gamba come parte del modo consigliato per misurare la forza del polpaccio e seguire il recupero. Uno studio con dati di riferimento su 566\u00A0adulti sani indica un valore tipico tra 23 e 24\u00A0ripetizioni, da adattare a età, sesso e livello di attività. Quello che conta è l’andamento nel tempo e la differenza tra i due lati.',
         'L’obiettivo del polpaccio nell’app è 25\u00A0sollevamenti sulle punte su una gamba. Il test si fa ogni 14\u00A0giorni finché l’obiettivo del polpaccio è attivo, poi ogni 28\u00A0giorni. Viene seguita anche la differenza tra le gambe, perché una differenza tra i lati che non se ne va può indicare un recupero incompleto.',
       ],
       cites: [CITE.hebertLosier, CITE.achillesGuideline],

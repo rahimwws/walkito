@@ -38,7 +38,7 @@ export const PF_DURATION_FR: Guide = {
       h2: 'Combien de temps dure en général une fasciite plantaire\u00A0?',
       keyFact: 'Dans une cohorte de 174\u00A0personnes, le risque d’avoir encore des symptômes de fasciite plantaire était de 80,5\u00A0% à un an, et descendait à 45,6\u00A0% à dix ans (Hansen et coll., 2018).',
       paragraphs: [
-        'Il n’y a pas de chiffre unique. La récupération dépend de depuis combien de temps vous l’avez, de ce que vous faites, et de facteurs que vous ne contrôlez pas.',
+        'Il n’y a pas de chiffre unique. La récupération dépend de l’ancienneté de la douleur, de ce que vous faites, et de facteurs que vous ne contrôlez pas.',
         'Une revue de la littérature de 2020 indique que les approches non chirurgicales marchent pour environ 90\u00A0% des personnes atteintes de fasciite plantaire, en général en trois à six mois (Latt et coll., 2020).',
         'Une étude de cohorte de 2018 donne une vue à plus long terme. Hansen et coll. ont suivi 174\u00A0patients dont la fasciite plantaire avait été diagnostiquée à l’échographie, en moyenne 9,7\u00A0ans après le début des symptômes. Au suivi, 54\u00A0% n’avaient plus de symptômes et 46\u00A0% avaient encore un peu mal.',
         'L’analyse de Kaplan-Meier a montré que le risque d’avoir encore une fasciite plantaire était de 80,5\u00A0% à un an, 50,0\u00A0% à cinq ans et 45,6\u00A0% à dix ans. Chez ceux qui n’avaient plus de symptômes, la durée moyenne des symptômes était de 725\u00A0jours, soit environ deux ans (Hansen et coll., 2018).',
@@ -53,8 +53,8 @@ export const PF_DURATION_FR: Guide = {
       h2: 'La fasciite plantaire part-elle toute seule\u00A0?',
       paragraphs: [
         'Parfois. Certaines personnes se réveillent un matin et la douleur a disparu, sans rien de particulier. Mais «\u00A0ça passe tout seul\u00A0» n’est pas une prédiction utile pour une personne donnée, car il n’y a aucun moyen de savoir à l’avance si vous faites partie de ce groupe.',
-        'Ce que disent les données, c’est qu’agir, en s’étirant, en renforçant le mollet et en portant des chaussures qui soutiennent le pied, a tendance à avancer l’amélioration. Dans l’essai de Rathleff, 48\u00A0personnes atteintes de fasciite plantaire ont été réparties en deux groupes\u00A0: l’un faisait des montées sur pointes avec charge et une serviette sous les orteils, l’autre étirait le fascia plantaire.',
-        'Le groupe des montées sur pointes s’est amélioré plus vite à trois mois. À un an, les deux groupes étaient à peu près à égalité (Rathleff et coll., 2015). Les exercices n’ont donc pas donné une amélioration finale plus grande, mais ils l’ont avancée. On ne sait pas si elle serait arrivée aussi vite sans aucune des deux approches.',
+        'Ce que disent les données, c’est qu’agir, en s’étirant, en renforçant le mollet et en portant des chaussures qui soutiennent le pied, a tendance à accélérer l’amélioration. Dans l’essai de Rathleff, 48\u00A0personnes atteintes de fasciite plantaire ont été réparties en deux groupes\u00A0: l’un faisait des montées sur pointes avec charge et une serviette sous les orteils, l’autre étirait le fascia plantaire.',
+        'Le groupe des montées sur pointes s’est amélioré plus vite à trois mois. À un an, les deux groupes étaient à peu près à égalité (Rathleff et coll., 2015). Les exercices n’ont donc pas donné une amélioration finale plus grande, mais ils l’ont accélérée. On ne sait pas si elle serait arrivée aussi vite sans aucune des deux approches.',
         'La recommandation de 2023 conseille les étirements (note A) et le renforcement (note B) comme premières choses à essayer, avec des conseils sur les chaussures. La recommandation ne dit pas «\u00A0attendez de voir\u00A0». Elle dit «\u00A0commencez ces exercices tout en surveillant\u00A0» (Koc et coll., 2023). Si la douleur est à l’arrière du talon plutôt que dessous, voir plutôt [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/).',
       ],
       cites: [CITE.rathleff, CITE.guideline],
@@ -109,7 +109,7 @@ export const PF_DURATION_FR: Guide = {
           ['Étirements du fascia plantaire et du mollet', '**A**', 'La meilleure note de la recommandation. Conseillés comme le cœur des soins conservateurs.'],
           ['Strapping du pied (rigide ou élastique)', '**A**', 'Meilleure note pour la douleur et la fonction à court terme, en plus d’autres soins.'],
           ['Attelles de nuit pendant 1 à 3\u00A0mois (douleur du matin qui persiste)', '**A**', 'Meilleure note pour les personnes dont les premiers pas restent douloureux. Voir [la douleur au talon au réveil](/fr/douleur-talon-au-reveil/).'],
-          ['Exercices contre résistance et renforcement (par ex. montées sur pointes avec charge)', '**B**', 'Deuxième meilleure note. A avancé l’amélioration dans un essai sur 48\u00A0personnes. Voir [montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/).'],
+          ['Exercices contre résistance et renforcement (par ex. montées sur pointes avec charge)', '**B**', 'Deuxième meilleure note. A accéléré l’amélioration dans un essai sur 48\u00A0personnes. Voir [montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/).'],
           ['Laser de basse intensité et dry needling (par un professionnel de santé)', '**B**', 'Deuxième meilleure note. Les deux se font en cabinet.'],
           ['Semelles orthopédiques seules pour soulager la douleur à court terme', '**B contre**', 'La recommandation **déconseille** les semelles orthopédiques comme approche isolée à court terme.'],
           ['Semelles orthopédiques associées à d’autres soins', '**C**', 'Preuves faibles. Peuvent aider dans le cadre d’un programme plus large.'],
@@ -130,7 +130,7 @@ export const PF_DURATION_FR: Guide = {
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },
     {
-      h2: 'Comment suivre la douleur du matin montre-t-il les progrès\u00A0?',
+      h2: 'En quoi le suivi de la douleur du matin montre-t-il les progrès\u00A0?',
       paragraphs: [
         'La douleur du matin est le signal quotidien le plus fiable de l’état du pied. Elle mesure la même chose (la raideur aux premiers pas), dans les mêmes conditions (juste au réveil, pied sans charge), à peu près à la même heure chaque jour. Elle donne donc une bien meilleure tendance que «\u00A0comment mon pied allait dans la journée\u00A0», qui varie avec l’activité, les chaussures et les surfaces.',
         'Une note quotidienne de 0 à 10 sur vos premiers pas, suivie sur plusieurs semaines, montre des tendances que vous ne remarqueriez pas autrement. Une note qui glisse de 5 à 3 en un mois est un vrai progrès, même si chaque matin fait encore un peu mal. Une note qui grimpe le lendemain d’une longue course ou d’une journée debout vous dit exactement quelle charge était de trop.',

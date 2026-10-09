@@ -54,7 +54,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
       paragraphs: [
         'La fascite plantare è la causa più comune del dolore al tallone al mattino, ma non è l’unica. La posizione e il comportamento del dolore aiutano a distinguerle.',
         '**Tendinite d’Achille.** Dolore nella parte posteriore del tallone o nel tendine sopra, non sotto il piede. Il tendine d’Achille si irrigidisce durante la notte proprio come la fascia plantare, quindi la rigidità ai primi passi è comune. Di solito migliora camminando e poi peggiora di nuovo con un’attività prolungata. Se il tuo dolore è nella parte posteriore del tallone e non sotto, vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/).',
-        '**Assottigliamento del cuscinetto adiposo del tallone.** Il cuscinetto di grasso sotto l’osso del tallone fa da ammortizzatore. Quando si assottiglia o si sposta, l’osso prende più urti direttamente.',
+        '**Assottigliamento del cuscinetto adiposo del tallone.** Il cuscinetto di grasso sotto l’osso del tallone fa da ammortizzatore. Quando si assottiglia o si sposta, l’osso assorbe più colpi.',
         'Una scoping review del 2022 ha notato che il dolore del cuscinetto adiposo tende a essere un dolore profondo al centro del tallone, peggiora su superfici dure e camminando scalzi, e può essere difficile da distinguere dalla fascite plantare senza esami di imaging (Chang e colleghi, 2022). La differenza chiave: il dolore della fascite plantare di solito è più acuto nella parte interna e anteriore del tallone, mentre quello del cuscinetto adiposo è proprio sotto il centro.',
         '**Frattura da stress del calcagno.** Un dolore che arriva piano piano, di solito dopo un aumento improvviso dell’attività. A differenza della fascite plantare, il dolore da frattura da stress tende ad aumentare con l’attività invece di calmarsi quando ti scaldi, e può fare male a riposo o di notte. Se stringere i lati del tallone riproduce il dolore, rivolgiti a un professionista sanitario prima di allenare il piede. [Dolore al tallone nei runner](/heel-pain-runners/) (in inglese) spiega come i cambi improvvisi di carico colpiscono il tallone.',
         '**Artrite infiammatoria (un campanello d’allarme).** Quando al mattino fanno male entrambi i talloni, la rigidità dura più di 30\u00A0minuti e anche altre articolazioni sono rigide o gonfie, lo schema si allontana dalla fascite plantare e va verso qualcosa che deve controllare un professionista sanitario. Problemi come l’artrite psoriasica o la spondilite anchilosante possono dare dolore nei punti in cui i tendini si attaccano all’osso, compreso il tallone.',
@@ -86,7 +86,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
         },
         {
           name: 'Allungamento del polpaccio (ginocchio teso)',
-          evidence: { level: 'strong', why: 'Stesso grado A nella linea guida. Lavora sul gastrocnemio, il muscolo del polpaccio più grande e più esterno.' },
+          evidence: { level: 'strong', why: 'Stesso grado A nella linea guida. Lavora sul gastrocnemio, il muscolo del polpaccio più grande e più superficiale.' },
           dose: '3\u00A0tenute da 30\u00A0secondi, ogni gamba',
           how: 'Mani al muro. Gamba dietro tesa, tallone giù, fianchi in avanti. Tieni finché senti l’allungamento nella parte alta del polpaccio.',
           often: 'Dopo l’allungamento della fascia, quasi tutte le mattine',
@@ -100,7 +100,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
           name: 'Allungamento del soleo (ginocchio piegato)',
           evidence: { level: 'strong', why: 'Stesso grado A nella linea guida. Lavora sul soleo, il muscolo più profondo del polpaccio.' },
           dose: '3\u00A0tenute da 30\u00A0secondi, ogni gamba',
-          how: 'Stessa posizione dell’allungamento del polpaccio, poi piega il ginocchio dietro finché senti l’allungamento più in basso, vicino al tallone. Il soleo, il muscolo più profondo del polpaccio, si rilascia solo con il ginocchio piegato.',
+          how: 'Stessa posizione dell’allungamento del polpaccio, poi piega il ginocchio dietro finché senti l’allungamento più in basso, vicino al tallone. Il soleo, il muscolo più profondo del polpaccio, si allunga davvero solo con il ginocchio piegato.',
           often: 'Dopo l’allungamento a ginocchio teso',
           feel: 'Un allungamento più in basso nel polpaccio, vicino al tallone',
           stop: 'Il dolore arriva a 6/10',
@@ -116,7 +116,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
       keyFact: 'La linea guida del 2023 dà ai tutori notturni, portati da uno a tre mesi, il grado più alto, A, per chi continua ad avere dolore ai primi passi del mattino nonostante lo stretching (Koc e colleghi, 2023).',
       paragraphs: [
         'I tutori notturni tengono il piede ad angolo retto mentre dormi, così la fascia plantare e il polpaccio restano leggermente allungati invece di accorciarsi durante la notte. L’idea è semplice: se il dolore del mattino viene dalla fascia che si irrigidisce a riposo, tenerla allungata dovrebbe togliere una parte di quel colpo ai primi passi.',
-        'La linea guida del 2023 sul dolore al tallone dà ai tutori notturni un grado **A** per chi continua ad avere dolore ai primi passi del mattino nonostante lo stretching e le altre cure conservative. La durata raccomandata è di 1-3\u00A0mesi. La maggior parte dei tutori notturni è uno stivaletto rigido o semirigido che tiene il piede sollevato.',
+        'La linea guida del 2023 sul dolore al tallone dà ai tutori notturni un grado **A** per chi continua ad avere dolore ai primi passi del mattino nonostante lo stretching e le altre cure conservative. La durata raccomandata è di 1-3\u00A0mesi. La maggior parte dei tutori notturni è uno stivaletto rigido o semirigido che tiene il piede flesso verso l’alto.',
         'Alcune persone trovano scomodo dormirci, e la linea guida non li propone come primo passo per tutti. Sono per chi fa già stretching e si sveglia ancora con il dolore.',
         'I tutori notturni sono da valutare con un professionista sanitario. Non sono un esercizio, e nessuna app può fornirli. Ma vale la pena conoscerli, perché hanno uno dei gradi di evidenza più forti della linea guida, proprio per il problema di cui parla questa pagina: il dolore ai primi passi che non si calma.',
       ],
@@ -126,7 +126,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
       h2: 'Devi portare le scarpe in casa se ti fanno male i talloni?',
       paragraphs: [
         'Camminare scalzo su un pavimento duro mette la fascia plantare sotto il massimo allungamento senza niente che ammortizzi. Per chi ha già la fascia irritata è la combinazione peggiore, e di solito succede subito dopo l’allungamento del mattino, quando il tessuto si sta ancora scaldando.',
-        'Scarpe che sostengono il piede o pantofole con la suola rigida in casa tengono l’arco leggermente sollevato e ammortizzano il tallone. La linea guida del 2023 consiglia di informarsi sulle calzature come parte dell’approccio generale, e una caviglia meno flessibile, cioè quanto il piede si piega verso lo stinco, è uno dei fattori di rischio più forti per la fascite plantare. Una scarpa con un piccolo dislivello tra tallone e punta aiuta a compensare un polpaccio rigido.',
+        'Scarpe che sostengono il piede o pantofole con la suola rigida in casa tengono l’arco leggermente sollevato e ammortizzano il tallone. La linea guida del 2023 consiglia di informarsi sulle calzature come parte dell’approccio generale, e una ridotta dorsiflessione della caviglia (quanto il piede si piega verso lo stinco) è uno dei fattori di rischio più forti per la fascite plantare. Una scarpa con un piccolo dislivello tra tallone e punta può aiutare a compensare un polpaccio rigido.',
         'Non serve una scarpa speciale. Qualsiasi scarpa da ginnastica o pantofola con la suola rigida e un po’ di supporto per l’arco è meglio dei piedi nudi su piastrelle o parquet. Se il dolore è peggio in casa che fuori, spesso il motivo è questo. Stare in piedi tutto il giorno su superfici dure dà un problema simile: [piedi doloranti dopo una giornata in piedi](/feet-hurt-standing-all-day/) (in inglese) spiega esercizi e scarpe per quel caso.',
       ],
       cites: [CITE.guideline, CITE.riddle],
@@ -134,7 +134,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
     {
       h2: 'Come fa il dolore del mattino a dirti se stai migliorando?',
       paragraphs: [
-        'Il dolore del mattino è il segnale quotidiano più chiaro di come sta il piede. Una corsa può sembrare andata bene ma lasciare la fascia sovraccarica, e non lo saprai fino alla mattina dopo. Un lungo turno in piedi può sembrare sopportabile, ma è la mattina dopo a dirti se era troppo. Lo schema è semplice: se la mattina dopo i primi passi vanno peggio del solito, il giorno prima hai chiesto al piede più di quanto potesse reggere.',
+        'Il dolore del mattino è il segnale quotidiano più chiaro di come sta il piede. Una corsa può sembrare andata bene ma lasciare la fascia sovraccarica, e non lo saprai fino alla mattina dopo. Un lungo turno in piedi può sembrare sopportabile, ma è la mattina dopo a dirti se è stato troppo impegnativo. Lo schema è semplice: se la mattina dopo i primi passi vanno peggio del solito, il giorno prima hai chiesto al piede più di quanto potesse reggere.',
         'Per questo un punteggio quotidiano del dolore del mattino, da 0 a 10, è più utile che controllare il dolore durante il giorno. Il dolore di giorno sale e scende con l’attività, la postura e le scarpe. Il dolore del mattino misura la stessa cosa, nello stesso modo, più o meno alla stessa ora ogni giorno. Quando il numero scende nel corso delle settimane, il piede sta guadagnando terreno. Quando sale di colpo, qualcosa negli ultimi uno o due giorni ha spinto troppo.',
         'Walkito ti chiede un punteggio del dolore del mattino prima di ogni sessione. Se il punteggio è 7 o più, la giornata diventa una sessione leggera: solo esercizi da seduto e a basso carico che non sforzano la fascia, al massimo 3\u00A0minuti. Se il punteggio è di 3 o più punti sopra la media degli ultimi 7\u00A0giorni, l’app abbassa ogni esercizio di un livello. Se ieri hai passato più ore del solito in piedi, una sessione di forza diventa una sessione di recupero più leggera.',
         'L’obiettivo è un dolore del mattino a 1 su 10 o meno per 14\u00A0giorni di fila. È quella tendenza, non una singola misura, a dirti che il piede è pronto per la fase successiva.',
@@ -185,7 +185,7 @@ export const MORNING_HEEL_PAIN_IT: Guide = {
     {
       q: 'Quali sono i rimedi casalinghi per il dolore al tallone al mattino?',
       cites: [CITE.guideline],
-      a: 'I rimedi casalinghi per il dolore al tallone al mattino sono stretching, ghiaccio e scarpe che sostengono il piede, ogni giorno e non una volta sola. Allunga fascia e polpaccio prima di alzarti, poi metti scarpe con un buon sostegno prima di camminare su pavimenti duri. Far rotolare la pianta su una bottiglia d’acqua ghiacciata per qualche minuto riduce la rigidità, ma non sostituisce un professionista sanitario se il dolore non migliora.',
+      a: 'I rimedi casalinghi per il dolore al tallone al mattino sono stretching, ghiaccio e scarpe che sostengono il piede, ogni giorno e non una volta sola. Allunga fascia e polpaccio prima di alzarti, poi metti scarpe con un buon sostegno prima di camminare su pavimenti duri. Far rotolare la pianta su una bottiglia d’acqua ghiacciata per qualche minuto può ridurre la rigidità, ma non sostituisce un professionista sanitario se il dolore non migliora.',
     },
   ],
   redFlags: {

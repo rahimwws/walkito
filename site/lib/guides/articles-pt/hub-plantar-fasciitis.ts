@@ -52,10 +52,10 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
     },
     {
       h2: 'O que causa fascite plantar, e quem tem?',
-      keyFact: 'Em um estudo de caso-controle com 50\u00A0pessoas com fascite plantar e 100 sem, a dorsiflexão do tornozelo reduzida aumentou 23,3\u00A0vezes as chances de fascite plantar, o fator de risco mais forte medido (Riddle e colegas, 2003).',
+      keyFact: 'Em um estudo de caso-controle com 50\u00A0pessoas com fascite plantar e 100 sem, a dorsiflexão do tornozelo reduzida teve razão de chances de 23,3 para fascite plantar, o fator de risco mais forte medido (Riddle e colegas, 2003).',
       paragraphs: [
         'A fascite plantar aparece quando a fáscia recebe mais carga do que consegue aguentar e recuperar. A carga pode ser demais de uma vez (um salto repentino na quilometragem de corrida) ou constante ao longo do tempo (ficar em pé num piso duro o dia todo).',
-        'Um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles encontrou que a dorsiflexão do tornozelo reduzida era o fator de risco independente mais forte, com razão de chances de 23,3. Em outra série, com 254\u00A0pessoas com fascite plantar, 52 a 60% tinham um encurtamento só do gastrocnêmio, o músculo maior e mais externo da panturrilha. Ficar muito tempo em pé no trabalho aumentou as chances 3,6\u00A0vezes. Um índice de massa corporal mais alto também aumentou.',
+        'Um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles encontrou que a dorsiflexão do tornozelo reduzida era o fator de risco independente mais forte, com razão de chances de 23,3. Em outra série, com 254\u00A0pessoas com fascite plantar, 52 a 60% tinham um encurtamento só do gastrocnêmio, o músculo maior e mais superficial da panturrilha. Ficar muito tempo em pé no trabalho aumentou as chances 3,6\u00A0vezes. Um índice de massa corporal mais alto também aumentou.',
         'A diretriz cita outros fatores de risco: idade entre 40 e 60\u00A0anos, atividades com corrida ou saltos, e profissões em que se passa muito tempo em pé. Pé chato ou arco alto podem mudar o caminho da carga pela fáscia, mas nenhum dos dois garante que a condição vai aparecer.',
         'A fascite plantar costuma vir de uma combinação: panturrilha tensa, uma carga para a qual o pé não estava pronto, e pouco tempo de recuperação.',
       ],
@@ -64,7 +64,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
     {
       h2: 'Como é feito o diagnóstico da fascite plantar?',
       paragraphs: [
-        'A fascite plantar costuma ser diagnosticada por um profissional de saúde a partir da sua história e de um exame físico. Os achados principais são sensibilidade na parte de dentro e da frente do calcanhar, dor nos primeiros passos da manhã, e dor que melhora com a atividade e volta depois do repouso.',
+        'A fascite plantar costuma ser diagnosticada por um profissional de saúde a partir da sua história e de um exame físico. Os achados principais são dor ao toque na parte de dentro e da frente do calcanhar, dor nos primeiros passos da manhã, e dor que melhora com a atividade e volta depois do repouso.',
         'Exame de imagem não é necessário num caso típico. A diretriz recomenda considerar exames de imagem se o padrão não se encaixa, se os sintomas não melhoram depois de várias semanas de tratamento conservador, ou se é preciso descartar outro diagnóstico (uma fratura por estresse ou um nervo comprimido, por exemplo). Ultrassom e ressonância magnética podem mostrar a fáscia espessada, mas uma fáscia espessada no exame sem o padrão de sintomas correspondente não é fascite plantar.',
         'O Walkito não faz diagnóstico. Se você não tem certeza se a sua dor no calcanhar é fascite plantar, um profissional de saúde é o lugar certo para começar.',
       ],
@@ -114,7 +114,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
         '[Exercícios e alongamentos para fascite plantar](/pt/exercicios-fascite-plantar/) tem a lista completa com doses iniciais, o que cada um deve fazer você sentir e quando parar. [Elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/) se aprofunda no exercício por trás do principal ensaio de treino de força. As páginas de cada exercício explicam cada movimento:',
       ],
       bullets: [
-        'O [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) puxa os dedos para trás para carregar a fáscia de leve antes de você ficar em pé.',
+        'O [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) puxa os dedos para trás para tensionar a fáscia de leve antes de você ficar em pé.',
         'O [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) e o [alongamento do sóleo](/exercises/soleus-stretch/) (em inglês) trabalham a panturrilha tensa que puxa o calcanhar.',
         'A [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/) é a elevação de calcanhar com carga do ensaio de Rathleff.',
         '[Rolar o pé na bolinha](/exercises/foot-roll/) (em inglês) acalma o tecido entre as sessões.',
@@ -134,7 +134,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
       h2: 'Fascite plantar no trabalho e na corrida',
       paragraphs: [
         'Ficar muito tempo em pé em superfícies duras é um dos fatores de risco do estudo de Riddle de 2003: aumentou as chances de fascite plantar 3,6\u00A0vezes. Uma revisão de 2015 da literatura de saúde ocupacional ligou ficar muito tempo em pé no trabalho a desconforto musculoesquelético, cansaço e dor nas pernas. Se os seus pés doem no fim do turno, valem os mesmos alongamentos de panturrilha e o mesmo treino de força.',
-        'Para quem corre, a diretriz de 2023 aconselha mudar a carga em vez de parar tudo. Isso significa diminuir a quilometragem ou a intensidade, não zerar. A recomendação se baseia em opinião de especialistas (grau E) porque nenhum ensaio a testou, mas ela está de acordo com o jeito como as diretrizes para Aquiles e para canelite lidam com lesões por sobrecarga.',
+        'Para quem corre, a diretriz de 2023 aconselha mudar a carga em vez de parar tudo. Isso significa diminuir a quilometragem ou a intensidade, não zerar. A recomendação se baseia em evidência teórica (grau E) porque nenhum ensaio a testou, mas ela está de acordo com o jeito como as diretrizes para Aquiles e para canelite lidam com lesões por sobrecarga.',
       ],
       bullets: [
         '[Pés doendo de ficar em pé o dia todo](/feet-hurt-standing-all-day/) (em inglês) fala dos exercícios e dos calçados para quem passa o trabalho em pé.',
@@ -188,7 +188,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
     {
       q: 'Fascite plantar passa sozinha?',
       cites: [CITE.latt, CITE.hansen],
-      a: 'Pode passar, mas costuma demorar muito. Uma revisão de 2020 relata que cerca de 90% das pessoas melhoram com tratamento conservador (Latt e colegas, 2020). Em um grupo de 174\u00A0pacientes, cerca de metade estava sem sintomas aos cinco anos (Hansen e colegas, 2018). Cuidar ativamente da dor adianta esse prazo.',
+      a: 'Pode passar, mas costuma demorar muito. Uma revisão de 2020 relata que cerca de 90% das pessoas melhoram com tratamento conservador (Latt e colegas, 2020). Em um grupo de 174\u00A0pacientes, cerca de metade estava sem sintomas aos cinco anos (Hansen e colegas, 2018). Cuidar ativamente da dor pode adiantar esse prazo.',
     },
     {
       q: 'Caminhar faz bem ou mal para fascite plantar?',
@@ -203,7 +203,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
     {
       q: 'Posso fazer exercício com fascite plantar?',
       cites: [CITE.guideline],
-      a: 'Pode, mas o tipo e a dose importam. A diretriz recomenda continuar ativo ajustando a carga, não repouso total. Exercícios que carregam a panturrilha e a fáscia (alongamentos, elevações de calcanhar) fazem parte da abordagem, não são uma contradição. Atividades de alto impacto podem precisar ser reduzidas. O teste é sempre a manhã seguinte: se está pior, o dia anterior foi demais.',
+      a: 'Pode, mas o tipo e a dose importam. A diretriz recomenda continuar ativo ajustando a carga, não repouso total. Exercícios que colocam carga na panturrilha e na fáscia (alongamentos, elevações de calcanhar) fazem parte da abordagem, não são uma contradição. Atividades de alto impacto podem precisar ser reduzidas. O teste é sempre a manhã seguinte: se está pior, o dia anterior foi demais.',
     },
     {
       q: 'Qual o melhor tênis para fascite plantar?',

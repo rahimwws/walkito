@@ -121,7 +121,7 @@ export default function ProgramEs() {
             </thead>
             <tbody>
               <tr>
-                <th scope="row">Mañanas sin dolor</th>
+                <th scope="row">Mañanas más fáciles</th>
                 <td>
                   Dolor de la mañana de {PAIN_GOAL_MAX}/10 o menos durante{' '}
                   {PROGRAM.painFreeDays}&nbsp;días seguidos
@@ -182,7 +182,7 @@ export default function ProgramEs() {
         <p>
           Eliges {DAYS}&nbsp;días de entrenamiento a la semana y sesiones de {MINUTES}{' '}
           minutos. La opción por defecto es {PROGRAM.defaultMinutes}&nbsp;minutos, y puedes
-          cambiarlo cualquier día. Cada sesión tiene de 2 a 4&nbsp;ejercicios. El ejercicio de
+          cambiarla cualquier día. Cada sesión tiene de 2 a 4&nbsp;ejercicios. El ejercicio de
           la meta de la semana va primero y nunca se quita, ni siquiera en una sesión de{' '}
           {PROGRAM.sessionMinutes[0]}&nbsp;minutos. Los demás llenan el tiempo.
         </p>
@@ -219,7 +219,7 @@ export default function ProgramEs() {
           Los ejercicios van en cadenas, como pantorrilla, arco, equilibrio y cadera, del nivel 1
           al nivel 5. La cadena de tu meta sube un nivel cuando las dos últimas sesiones con ese
           ejercicio se sintieron fáciles, y solo si tu dolor de la mañana no subió esa semana. Una
-          sesión difícil, o una semana en que el dolor de la mañana subió, lo baja un nivel.
+          sesión difícil, o una semana en que el dolor de la mañana subió, la baja un nivel.
         </p>
         <p>
           La primera semana te acomoda. No usa nada por encima del nivel 2 y nada que cargue la
@@ -262,7 +262,7 @@ export default function ProgramEs() {
           />
           <div>
             <p>
-              Los pasos y el sueño vienen de Apple Health, si lo permites. Esos datos se quedan en
+              Los pasos y el sueño vienen de la app Salud, si lo permites. Esos datos se quedan en
               tu teléfono.
             </p>
             <p>

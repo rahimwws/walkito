@@ -87,7 +87,7 @@ export const ARCH_PAIN_EN: Guide = {
           name: 'Calf stretch (straight knee)',
           evidence: { level: 'strong', why: 'The 2023 guideline grades calf stretching A. A tight calf is the strongest risk factor for plantar fasciitis (Riddle 2003).' },
           dose: '2 holds of 30 seconds, each leg',
-          how: 'Hands on a wall, back leg straight, heel down, hips forward. The gastrocnemius, the outer calf muscle, only stretches with the knee straight.',
+          how: 'Hands on a wall, back leg straight, heel down, hips forward. The gastrocnemius, the more superficial calf muscle, only stretches with the knee straight.',
           often: 'Most sessions',
           feel: 'A stretch in the upper calf',
           stop: 'Pain reaches 6/10',

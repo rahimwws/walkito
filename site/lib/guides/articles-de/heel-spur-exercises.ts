@@ -22,12 +22,12 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
     'Übungen und Dehnungen bei Fersensporn für Plantarfaszie und Wade: Routine, Dosis und Steigerung, die Schmerzen lindern, ohne den Sporn aufzulösen.',
   h1: 'Übungen bei Fersensporn: Dehnen und Kräftigen gegen den Schmerz rund um den Sporn',
   lede:
-    'Übungen lösen keinen Fersensporn auf. Der Sporn ist Knochen, und Knochen schrumpft nicht durch Dehnen. Aber der Schmerz, den Menschen mit Fersensporn spüren, kommt fast immer von der Plantarfaszie und der Wade rund um den Sporn, nicht vom Knochen selbst. Die Übungen unten zielen auf diese Weichteile. Es sind dieselben, die die Leitlinie von 2023 zu Fersenschmerzen bei Plantarfasziitis empfiehlt.',
+    'Übungen lösen keinen Fersensporn auf. Der Sporn ist Knochen, und Knochen schrumpft nicht durch Dehnen. Aber der Schmerz, den Menschen mit Fersensporn spüren, kommt fast immer von der Plantarfaszie am Sporn und von der Wade, die über die Achillessehne an der Ferse zieht, nicht vom Knochen selbst. Die Übungen unten zielen auf diese Weichteile. Es sind dieselben, die die Leitlinie von 2023 zu Fersenschmerzen bei Plantarfasziitis empfiehlt.',
   intro: [
     'Wenn du zuerst den Unterschied zwischen Fersensporn und Plantarfasziitis verstehen willst, lies [Plantarfasziitis oder Fersensporn](/de/plantarfasziitis-oder-fersensporn/). Diese Seite ist die praktische Routine: welche Übungen, wie viele, wie du steigerst und wann du aufhörst.',
   ],
   takeaways: [
-    'Übungen bei Fersensporn wirken, indem sie an der Plantarfaszie und den Wadenmuskeln rund um den Sporn ansetzen, nicht indem sie den Sporn selbst verändern.',
+    'Übungen bei Fersensporn wirken, indem sie an der Plantarfaszie am Sporn und an den Wadenmuskeln ansetzen, die über die Achillessehne an der Ferse ziehen, nicht indem sie den Sporn selbst verändern.',
     'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarfaszie und Wade ihre beste Bewertung, **A**, und Krafttraining ein **B** (Koc und Kollegen, 2023).',
     'In einer Studie mit 48\u00A0Personen mit Plantarfasziitis linderte schweres Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf (Rathleff und Kollegen, 2015).',
     'Eine verkürzte Wade, gemessen als eingeschränkte Dorsalflexion im Sprunggelenk, war in einer gematchten Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen der stärkste unabhängige Risikofaktor für Plantarfasziitis (Riddle und Kollegen, 2003).',
@@ -54,7 +54,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
       exercises: [
         {
           name: 'Plantarfaszien-Dehnung',
-          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie. Eine Studie von 2003 mit 101\u00A0Personen fand diese Dehnung nach 8\u00A0Wochen wirksamer als Wadendehnung allein.' },
+          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie. Eine Studie von 2003 mit 101\u00A0Personen (82 davon ausgewertet) fand diese Dehnung nach 8\u00A0Wochen wirksamer als Wadendehnung allein.' },
           dose: '10-mal 10\u00A0Sekunden halten, jeder Fuß',
           how: 'Setz dich hin und leg einen Knöchel über das andere Knie. Zieh die Zehen sanft zurück, bis du eine Dehnung entlang des Gewölbes spürst. Halte, dann lass los. Mach das jeden Morgen vor dem ersten Schritt und nach langem Sitzen.',
           often: 'Jeden Morgen und nach dem Sitzen',
@@ -66,9 +66,9 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
         },
         {
           name: 'Wadendehnung (Knie gestreckt)',
-          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie. Ein verkürzter Gastrocnemius war in einer Fall-Kontroll-Studie von 2003 der stärkste Risikofaktor für Plantarfasziitis.' },
+          evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie. Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie von 2003 der stärkste Risikofaktor für Plantarfasziitis.' },
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
-          how: 'Hände an die Wand. Das hintere Bein bleibt gestreckt, die Ferse am Boden, die Hüfte nach vorn. Halte, bis du die Dehnung in der oberen Wade spürst. Der Gastrocnemius, der größere, äußere Wadenmuskel, lässt sich nur mit gestrecktem Knie dehnen.',
+          how: 'Hände an die Wand. Das hintere Bein bleibt gestreckt, die Ferse am Boden, die Hüfte nach vorn. Halte, bis du die Dehnung in der oberen Wade spürst. Der Gastrocnemius, der größere, oberflächlichere Wadenmuskel, lässt sich nur mit gestrecktem Knie dehnen.',
           often: 'Die meisten Einheiten',
           feel: 'Eine Dehnung in der oberen Wade',
           stop: 'Der Schmerz 6/10 erreicht',
@@ -80,12 +80,12 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
           name: 'Soleusdehnung (Knie gebeugt)',
           evidence: { level: 'strong', why: 'Bewertung A in der Leitlinie. Zielt auf den Soleus, den tieferen Wadenmuskel, der nur mit gebeugtem Knie loslässt.' },
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
-          how: 'Dieselbe Position an der Wand wie bei der Wadendehnung, dann beug das hintere Knie, bis die Dehnung tiefer rutscht, nahe der Ferse. Der Soleus liegt unter dem Gastrocnemius und setzt näher an der Ferse an.',
+          how: 'Dieselbe Position an der Wand wie bei der Wadendehnung, dann beug das hintere Knie, bis du die Dehnung tiefer spürst, nahe der Ferse. Der Soleus liegt unter dem Gastrocnemius und setzt näher an der Ferse an.',
           often: 'Die meisten Einheiten, nach der Dehnung mit gestrecktem Knie',
           feel: 'Eine Dehnung tiefer in der Wade, nahe der Ferse',
           stop: 'Der Schmerz 6/10 erreicht',
           media: 'calf_stretch_bent',
-          caption: 'Soleusdehnung: Beug das hintere Knie, bis die Dehnung tiefer rutscht',
+          caption: 'Soleusdehnung: Beug das hintere Knie, bis du die Dehnung tiefer spürst',
           alt: 'Eine Figur in Schrittstellung mit gebeugten Knien, die untere Wade ist hervorgehoben',
         },
       ],
@@ -249,16 +249,16 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
     {
       q: 'Welche Übungen helfen bei Fersensporn?',
       cites: [CITE.guideline],
-      a: 'Bei Fersensporn-Schmerzen helfen dieselben Übungen, die die Leitlinie von 2023 zu Fersenschmerzen bei Plantarfasziitis empfiehlt: Plantarfaszien-Dehnung (Bewertung A in der Leitlinie), Wadendehnung (Bewertung A) und schrittweises Wadenkrafttraining mit Fersenheben (Bewertung B). Sie zielen auf die Plantarfaszie und die Wadenmuskeln rund um den Sporn, die meist den Schmerz verursachen.',
+      a: 'Bei Fersensporn-Schmerzen helfen dieselben Übungen, die die Leitlinie von 2023 zu Fersenschmerzen bei Plantarfasziitis empfiehlt: Plantarfaszien-Dehnung (Bewertung A in der Leitlinie), Wadendehnung (Bewertung A) und schrittweises Wadenkrafttraining mit Fersenheben (Bewertung B). Sie zielen auf die Plantarfaszie am Sporn und die Wadenmuskeln, die über die Achillessehne an der Ferse ziehen. Diese Weichteile verursachen meist den Schmerz.',
     },
     {
       q: 'Lösen Übungen den Fersensporn auf?',
-      a: 'Nein. Ein Fersensporn ist verkalkter Knochen, und Übungen lösen ihn nicht auf. Die Übungen setzen an der Plantarfaszie und der Wade an, den Weichteilen rund um den Sporn, die fast immer die Quelle des Schmerzes sind. Wenn der Schmerz mit den Übungen abklingt, ist der Sporn auf dem Röntgenbild kein Problem, das gelöst werden muss.',
+      a: 'Nein. Ein Fersensporn ist verkalkter Knochen, und Übungen lösen ihn nicht auf. Die Übungen setzen an der Plantarfaszie am Sporn und an der Wade an, die über die Achillessehne an der Ferse zieht. Diese Weichteile sind fast immer die Quelle des Schmerzes. Wenn der Schmerz mit den Übungen abklingt, ist der Sporn auf dem Röntgenbild kein Problem, das gelöst werden muss.',
     },
     {
       q: 'Wie oft sollte ich bei Fersensporn dehnen?',
       cites: [CITE.guideline, CITE.digiovanni2003],
-      a: 'Die Plantarfaszien-Dehnung wirkt am besten jeden Morgen vor dem Aufstehen und nach langem Sitzen. Wadendehnungen passen in die meisten Einheiten. In einer Studie mit 101\u00A0Personen mit chronischen Fersenschmerzen berichtete die Gruppe mit der Plantarfaszien-Dehnung nach 8\u00A0Wochen bessere Ergebnisse als die Gruppe, die nur die Wade dehnte (DiGiovanni und Kollegen, 2003).',
+      a: 'Die Plantarfaszien-Dehnung wirkt am besten jeden Morgen vor dem Aufstehen und nach langem Sitzen. Wadendehnungen passen in die meisten Einheiten. In einer Studie mit 101\u00A0Personen (82 davon ausgewertet) mit chronischen Fersenschmerzen berichtete die Gruppe mit der Plantarfaszien-Dehnung nach 8\u00A0Wochen bessere Ergebnisse als die Gruppe, die nur die Wade dehnte (DiGiovanni und Kollegen, 2003).',
     },
     {
       q: 'Wie lange dauert es, bis Fersensporn-Schmerzen weggehen?',
@@ -273,7 +273,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
     {
       q: 'Ist Gehen gut bei Fersensporn?',
       cites: [CITE.guideline],
-      a: 'Gehen an sich ist nicht das Problem. Gehen in stützenden Schuhen in angenehmem Tempo ist meist in Ordnung und besser als komplette Schonung. Der Schmerz kommt von der Plantarfaszie und der Wade unter dem Sporn, und maßvolles Gehen hält die Wadenpumpe aktiv. Wenn Gehen deinen Morgenschmerz am nächsten Tag verschlimmert, verkürze die Strecke und bau sie schrittweise wieder auf.',
+      a: 'Gehen an sich ist nicht das Problem. Gehen in stützenden Schuhen in angenehmem Tempo ist meist in Ordnung und besser als komplette Schonung. Der Schmerz kommt von der Plantarfaszie am Sporn und von der Wade, die über die Achillessehne an der Ferse zieht, und maßvolles Gehen hält die Wadenpumpe aktiv. Wenn Gehen deinen Morgenschmerz am nächsten Tag verschlimmert, verkürze die Strecke und bau sie schrittweise wieder auf.',
     },
     {
       q: 'Welche Übungen sollte man bei Fersensporn vermeiden?',
@@ -283,7 +283,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
     {
       q: 'Was lässt Fersensporn-Schmerzen aufflammen?',
       cites: [CITE.guideline, CITE.riddle],
-      a: 'Wiederholtes Aufprallen auf hartem Boden ist der häufigste Auslöser: Laufen, Springen oder stundenlanges Stehen reizt das Weichgewebe neben dem Sporn genauso wie bei einer Plantarfasziitis ohne Sporn. Ein plötzlicher Sprung bei der Aktivität, ausgetretene Schuhe und barfuß auf Fliesen können ihn auslösen. Was einen Schub beruhigt, ist angepasste Belastung, nicht der Knochen.',
+      a: 'Wiederholtes Aufprallen auf hartem Boden ist der häufigste Auslöser: Laufen, Springen oder stundenlanges Stehen reizt das Weichgewebe neben dem Sporn genauso wie bei einer Plantarfasziitis ohne Sporn. Ein plötzlicher Sprung bei der Aktivität, ausgetretene Schuhe und Barfußgehen auf Fliesen können die Schmerzen auslösen. Was einen Schub beruhigt, ist angepasste Belastung, nicht der Knochen.',
     },
   ],
   redFlags: {
@@ -296,7 +296,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
       'die Ferse gerötet, warm oder geschwollen ist oder du Fieber hast',
       'beide Fersen wehtun und die Morgensteifigkeit länger als 30\u00A0Minuten anhält, vor allem wenn andere Gelenke betroffen sind',
       'der Schmerz dich nachts wach hält oder auch in Ruhe da ist',
-      'es nach mehreren Wochen täglichem Dehnen und Wadentraining nicht besser geworden ist',
+      'es nach mehreren Wochen täglichen Dehnens und Wadentrainings nicht besser geworden ist',
       'du Diabetes, weniger Gefühl in den Füßen oder eine schlechte Durchblutung hast',
     ],
   },

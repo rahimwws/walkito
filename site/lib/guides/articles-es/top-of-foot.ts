@@ -94,7 +94,7 @@ export const TOP_OF_FOOT_ES: Guide = {
           often: 'La mayoría de las sesiones',
           feel: 'Un estiramiento en la parte alta de la pantorrilla',
           stop: 'Dolor en el tendón de Aquiles',
-          evidence: { level: 'strong', why: 'El estiramiento de pantorrilla tiene grado A en la guía para condiciones de la pierna relacionadas. No se ha probado para la tendinitis de los extensores específicamente.' },
+          evidence: { level: 'strong', why: 'El estiramiento de pantorrilla tiene grado A en la guía para afecciones de la pierna relacionadas. No se ha probado para la tendinitis de los extensores específicamente.' },
           media: 'calf_stretch_straight',
           caption: 'Estiramiento de pantorrilla: pierna de atrás estirada, talón abajo, cadera hacia adelante',
           alt: 'Una figura apoyada en una pared con la pierna de atrás estirada, con la pantorrilla resaltada',
@@ -127,7 +127,7 @@ export const TOP_OF_FOOT_ES: Guide = {
     {
       h2: '¿Y la gota en el empeine?',
       paragraphs: [
-        'La gota es una condición inflamatoria causada por cristales de ácido úrico que se depositan en una articulación. Clásicamente afecta la articulación del dedo gordo (la primera metatarsofalángica), pero puede afectar cualquier articulación del pie, incluido el pie medio.',
+        'La gota es una afección inflamatoria causada por cristales de ácido úrico que se depositan en una articulación. Clásicamente afecta la articulación del dedo gordo (la primera metatarsofalángica), pero puede afectar cualquier articulación del pie, incluido el pie medio.',
         'Un episodio de gota aparece rápido, muchas veces de la noche a la mañana. La articulación se vuelve intensamente dolorosa, roja, caliente e hinchada. Se ve y se siente diferente de la tendinitis o de una fractura por estrés. Si tienes un dolor repentino e intenso en una sola articulación con enrojecimiento y calor, es una razón para consultar a un profesional de la salud pronto. Los análisis de sangre y a veces el análisis del líquido articular confirman el diagnóstico.',
         'La gota necesita manejo médico. El ejercicio, los cambios de zapatos y los estiramientos no ayudan durante un episodio agudo. Entre episodios, mantener la movilidad del pie y el tobillo es razonable, pero el problema de fondo con el ácido úrico se maneja con medicamentos y cambios en la alimentación.',
       ],

@@ -27,14 +27,14 @@ export const SHIN_SPLINTS_DE: Guide = {
   lede:
     'Das Schienbeinkantensyndrom ist Schmerz an der Innenkante des Schienbeins, verteilt über mehrere Zentimeter statt an einer einzelnen wunden Stelle. Der medizinische Name ist mediales tibiales Stresssyndrom, kurz MTSS. Die meisten Seiten listen Übungen auf, als wäre bewiesen, dass sie die Heilung beschleunigen. Eine systematische Übersichtsarbeit von 2013 über alle Behandlungsstudien fand, dass für Dehn- und Kraftübungen nicht gezeigt ist, dass sie es verkürzen.',
   intro: [
-    'Das heißt nicht, dass Übungen nutzlos sind. Die Übungen unten zielen auf Wadenausdauer, Kraft am Schienbein und Hüftkontrolle, die Bereiche, in denen Forschende Unterschiede zwischen Menschen mit und ohne Schienbeinkantensyndrom gefunden haben. Eine Fall-Kontroll-Studie fand, dass Läufer mit Schienbeinkantensyndrom bis zur Erschöpfung weniger Fersenhebungen schafften als passende Kontrollpersonen ohne.',
-    'Ob es die Erholung verkürzt, diese Ausdauer wieder aufzubauen, ist noch offen. Der sicherste Hebel ist in jeder bisherigen Studie, die Laufbelastung zu reduzieren, die es ausgelöst hat. Das Fersenheben selbst, mit wie vielen Wiederholungen und wann du Last dazunimmst, wird ausführlicher unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) behandelt. Wenn du den ganzen Tag stehst statt zu laufen, deckt [Fußschmerzen vom langen Stehen](/feet-hurt-standing-all-day/) (auf Englisch) dieselben Übungen für Wade und Gewölbe für diese Ursache ab.',
+    'Das heißt nicht, dass Übungen nutzlos sind. Die Übungen unten zielen auf Wadenausdauer, Kraft am Schienbein und Hüftkontrolle, die Bereiche, in denen Forschende Unterschiede zwischen Menschen mit und ohne Schienbeinkantensyndrom gefunden haben. Eine Fall-Kontroll-Studie fand, dass Läufer mit Schienbeinkantensyndrom bis zur Erschöpfung weniger Wiederholungen beim einbeinigen Fersenheben schafften als passende Kontrollpersonen ohne.',
+    'Ob es die Erholung verkürzt, diese Ausdauer wieder aufzubauen, ist noch offen. Der sicherste Hebel ist in jeder bisherigen Studie, die Laufbelastung zu reduzieren, die die Beschwerden ausgelöst hat. Das Fersenheben selbst, mit wie vielen Wiederholungen und wann du Last dazunimmst, wird ausführlicher unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/) behandelt. Wenn du den ganzen Tag stehst, statt zu laufen, deckt [Fußschmerzen vom langen Stehen](/feet-hurt-standing-all-day/) (auf Englisch) dieselben Übungen für Wade und Gewölbe für diese Ursache ab.',
   ],
   toc: true,
   takeaways: [
     'Eine systematische Übersichtsarbeit von 2013 über 11\u00A0Behandlungsstudien fand, dass für Dehn- und Kraftübungen nicht bewiesen ist, dass sie die Erholung vom medialen tibialen Stresssyndrom beschleunigen (Winters und Kollegen, 2013).',
     'In der einzigen randomisierten Studie zu Übungen beim Schienbeinkantensyndrom verkürzte es die Erholung nicht, Wadendehnen und Wadenkräftigung zu einem gestuften Laufprogramm hinzuzufügen, verglichen mit dem Laufprogramm allein, in einer Studie mit 74\u00A0Sportlern (Moen und Kollegen, 2012).',
-    'Läufer mit Schienbeinkantensyndrom schafften bis zur Erschöpfung weniger Fersenhebungen als passende Kontrollpersonen, was auf eine Lücke bei der Wadenausdauer hindeutet (Madeley und Kollegen, 2007).',
+    'Läufer mit Schienbeinkantensyndrom schafften bis zur Erschöpfung weniger Wiederholungen beim einbeinigen Fersenheben als passende Kontrollpersonen, was auf eine Lücke bei der Wadenausdauer hindeutet (Madeley und Kollegen, 2007).',
     'Punktgenauer Druckschmerz an einer kleinen Stelle, statt eines Schmerzes, der sich über mehrere Zentimeter Knochen verteilt, kann ein Ermüdungsbruch sein und braucht eine medizinische Fachperson, keine weiteren Übungen.',
   ],
   sections: [
@@ -42,7 +42,7 @@ export const SHIN_SPLINTS_DE: Guide = {
       h2: 'Was ist das Schienbeinkantensyndrom, und welche Übungen helfen wirklich?',
       keyFact: 'Eine systematische Übersichtsarbeit von 2013 über 11\u00A0Behandlungsstudien zum Schienbeinkantensyndrom kam zu dem Schluss, dass kein Dehn- oder Kraftansatz klare Belege dafür hat, die Erholung zu beschleunigen (Winters und Kollegen, 2013).',
       paragraphs: [
-        'Das Schienbeinkantensyndrom, oder mediale tibiale Stresssyndrom, ist eine Überlastungsverletzung des Schienbeins und des Gewebes darum. Der Schmerz ist meist flächig, verteilt über mehrere Zentimeter entlang der Innenkante der Tibia, und beginnt in der Regel während oder nach dem Laufen. Eine Übersichtsarbeit von 2020 zu Laufanfängern und Freizeitläufern fand die klarsten Zusammenhänge in der Art, wie Läufer sich bewegen, darunter mehr Rotation in der Hüfte und ein Fuß, der stärker als üblich nach innen rollt.',
+        'Das Schienbeinkantensyndrom, oder mediales tibiales Stresssyndrom, ist eine Überlastungsverletzung des Schienbeins und des Gewebes darum. Der Schmerz ist meist flächig, verteilt über mehrere Zentimeter entlang der Innenkante der Tibia, und beginnt in der Regel während oder nach dem Laufen. Eine Übersichtsarbeit von 2020 zu Laufanfängern und Freizeitläufern fand die klarsten Zusammenhänge in der Art, wie Läufer sich bewegen, darunter mehr Rotation in der Hüfte und ein Fuß, der stärker als üblich nach innen rollt.',
         'Die ehrliche Antwort zu Übungen beim Schienbeinkantensyndrom ist, dass für kein bestimmtes Übungsprogramm in einer kontrollierten Studie gezeigt wurde, dass es die Erholung beschleunigt. Eine systematische Übersichtsarbeit von 2013 hat 11\u00A0Behandlungsstudien angesehen und kam zu dem Schluss, dass Dehnen und Kräftigen „sich bei der Behandlung von MTSS nicht als wirksam erwiesen haben“. In der einzigen randomisierten Studie mit einem Übungsarm wurden 74\u00A0Sportler in drei Gruppen aufgeteilt: ein gestuftes Laufprogramm allein, dasselbe Programm plus Wadendehnen und Wadenkräftigung, und dasselbe Programm plus Kompressionsstrümpfe. Alle drei Gruppen verbesserten sich ähnlich schnell.',
         'Die Übungen unten sind also kein eigenes Protokoll für das Schienbeinkantensyndrom. Es sind allgemeine Übungen für Unterschenkel und Hüfte aus dem Übungskatalog, die auf die Muskeln und Gelenke zielen, die Forschende bei Menschen mit Schienbeinkantensyndrom untersucht haben. Der stärkste Schritt bleibt, die Laufbelastung zu reduzieren und sie langsam wieder aufzubauen.',
       ],
@@ -102,12 +102,12 @@ export const SHIN_SPLINTS_DE: Guide = {
           name: 'Zehenheben',
           evidence: {
             level: 'early',
-            why: 'Zielt auf den Tibialis anterior, den Schienbeinmuskel selbst. Keine Studie speziell zum Schienbeinkantensyndrom, aber es ist der Muskel, der wehtut.',
+            why: 'Zielt auf den Tibialis anterior, den Muskel vorn am Schienbein. Keine Studie speziell zum Schienbeinkantensyndrom, und das Schienbeinkantensyndrom schmerzt meist entlang der Innenkante des Schienbeins, der Zusammenhang ist also indirekt.',
           },
           dose: '3\u00A0Sätze à 10, beide Füße',
           often: 'Krafttage',
           feel: 'Der Schienbeinmuskel arbeitet, während sich die Zehen heben',
-          how: 'Stell dich mit dem Rücken an eine Wand. Heb die Zehen und den vorderen Teil beider Füße vom Boden, die Fersen bleiben unten. Senk langsam ab. Das ist der Muskel vorn am Schienbein, der wehtut, wenn das Schienbeinkantensyndrom aufflammt.',
+          how: 'Stell dich mit dem Rücken an eine Wand. Heb die Zehen und den vorderen Teil beider Füße vom Boden, die Fersen bleiben unten. Senk langsam ab. Dabei arbeitet der Tibialis anterior, der Muskel vorn am Schienbein.',
           image: 'Übung: Zehenheben',
           media: 'tibialis_raise',
           caption: 'Zehenheben: Rücken an die Wand, Zehen heben, Fersen bleiben unten',
@@ -132,7 +132,7 @@ export const SHIN_SPLINTS_DE: Guide = {
           name: 'Hüftabduktion',
           evidence: {
             level: 'early',
-            why: 'Außenrotation in der Hüfte ist in zwei Metaanalysen ein bestätigter Risikofaktor. Keine Studie hat Hüftkräftigung als Behandlung des Schienbeinkantensyndroms getestet.',
+            why: 'Zwei Metaanalysen haben den Bewegungsumfang der Hüftrotation mit dem Schienbeinkantensyndrom in Verbindung gebracht. Keine Studie hat Hüftkräftigung als Behandlung des Schienbeinkantensyndroms getestet.',
           },
           dose: '3\u00A0Sätze à 15, jedes Bein',
           often: 'Krafttage',
@@ -232,7 +232,7 @@ export const SHIN_SPLINTS_DE: Guide = {
   faq: [
     {
       q: 'Was hilft am schnellsten gegen Schienbeinkantensyndrom?',
-      a: 'Keine Studie hat gezeigt, dass eine bestimmte Übung oder Dehnung die Erholung vom Schienbeinkantensyndrom beschleunigt. Die nächsten Belege kommen aus einer randomisierten Studie mit 74\u00A0Sportlern, in der Wadendehnen und Wadenkräftigung zusätzlich zu einem gestuften Laufprogramm die Erholung gegenüber dem Laufprogramm allein nicht verkürzten. Die Laufbelastung zu reduzieren, die es ausgelöst hat, bleibt der wichtigste Hebel, keine bestimmte Übung.',
+      a: 'Keine Studie hat gezeigt, dass eine bestimmte Übung oder Dehnung die Erholung vom Schienbeinkantensyndrom beschleunigt. Die am ehesten passenden Belege kommen aus einer randomisierten Studie mit 74\u00A0Sportlern, in der Wadendehnen und Wadenkräftigung zusätzlich zu einem gestuften Laufprogramm die Erholung gegenüber dem Laufprogramm allein nicht verkürzten. Die Laufbelastung zu reduzieren, die die Beschwerden ausgelöst hat, bleibt der wichtigste Hebel, keine bestimmte Übung.',
       cites: [CITE.moen],
     },
     {
@@ -251,7 +251,7 @@ export const SHIN_SPLINTS_DE: Guide = {
     },
     {
       q: 'Was verursacht ein Schienbeinkantensyndrom bei Läufern?',
-      a: 'Zwei unabhängige Metaanalysen fanden übereinstimmende Risikofaktoren: einen höheren BMI, einen stärkeren Navicular Drop (wie weit das Gewölbe unter Last absinkt), weibliches Geschlecht, weniger Jahre Lauferfahrung und ein früheres Schienbeinkantensyndrom. Eine eigene Fall-Kontroll-Studie fand, dass Läufer mit Schienbeinkantensyndrom weniger Wadenausdauer hatten, was darauf hindeutet, dass ein Defizit der Plantarflexoren Teil des Bildes sein könnte.',
+      a: 'Zwei unabhängige Metaanalysen fanden übereinstimmende Risikofaktoren: einen höheren BMI, einen stärkeren Navicular Drop (wie weit das Gewölbe unter Last absinkt), weibliches Geschlecht, weniger Jahre Lauferfahrung und ein früheres Schienbeinkantensyndrom. Eine weitere Fall-Kontroll-Studie fand, dass Läufer mit Schienbeinkantensyndrom weniger Wadenausdauer hatten, was darauf hindeutet, dass ein Defizit der Plantarflexoren Teil des Bildes sein könnte.',
       cites: [CITE.newman, CITE.hamstraWright, CITE.madeley],
     },
     {

@@ -27,7 +27,7 @@ export const HEEL_FAT_PAD_ES: Guide = {
   ],
   takeaways: [
     'En un estudio con 250\u00A0personas con dolor plantar del talón, la atrofia de la almohadilla grasa representó el 14,8\u00A0% de los casos, lo que la convierte en la segunda causa más común después de la fascitis plantar con un 53,2\u00A0% (Yi y colegas, 2011).',
-    'Una revisión exploratoria de 2022 encontró solo 7\u00A0estudios originales sobre el síndrome de la almohadilla grasa del talón y ningún ensayo controlado aleatorizado que pruebe las taloneras o el vendaje específicamente para esta condición (Chang y colegas, 2022).',
+    'Una revisión exploratoria de 2022 encontró solo 7\u00A0estudios originales sobre el síndrome de la almohadilla grasa del talón y ningún ensayo controlado aleatorizado que pruebe las taloneras o el vendaje específicamente para esta afección (Chang y colegas, 2022).',
     'La diferencia clínica clave: el dolor de la almohadilla grasa es un dolor profundo en el centro del talón que empeora en superficies duras y descalzo; el dolor de la fascitis plantar es un tirón agudo en la parte interna del talón que es peor en el primer paso y entra en calor.',
     'Las taloneras viscoelásticas, el calzado acolchado y el vendaje low-dye se recomiendan ampliamente pero carecen de evidencia de ensayos controlados aleatorizados para el síndrome de la almohadilla grasa específicamente (Chang y colegas, 2022).',
     'La atrofia de la almohadilla grasa no se revierte con ejercicio. Los ejercicios para la fuerza de la pantorrilla y el pie pueden ayudar al pie a manejar la carga, pero no reconstruyen la almohadilla.',
@@ -39,7 +39,7 @@ export const HEEL_FAT_PAD_ES: Guide = {
       paragraphs: [
         'La almohadilla grasa del talón es un cojín especializado de grasa y tejido conectivo debajo del calcáneo, el hueso del talón. Está construida en cámaras separadas por paredes fibrosas (septos) que absorben el impacto al caminar o correr. Una almohadilla sana mide entre 1 y 2\u00A0centímetros de grosor.',
         'En el síndrome de la almohadilla grasa del talón, este cojín se adelgaza, se endurece o se deteriora. Los septos pierden elasticidad, la grasa se comprime, y el hueso del talón queda más cerca del piso. El resultado es dolor al pisar superficies duras o caminar descalzo, como si caminaras sobre una piedra.',
-        'La revisión exploratoria de 2022 de Chang y colegas encontró que la investigación suele describir la condición como «atrofia de la almohadilla grasa», pero el problema también puede involucrar inflamación, fibrosis o defectos de los septos sin que haya un adelgazamiento franco. En la ecografía, una almohadilla de menos de 1\u00A0centímetro se considera generalmente atrofiada.',
+        'La revisión exploratoria de 2022 de Chang y colegas encontró que la investigación suele describir la afección como «atrofia de la almohadilla grasa», pero el problema también puede involucrar inflamación, fibrosis o defectos de los septos sin que haya un adelgazamiento franco. En la ecografía, una almohadilla de menos de 1\u00A0centímetro se considera generalmente atrofiada.',
       ],
       cites: [CITE.fatPadReview],
     },
@@ -47,17 +47,17 @@ export const HEEL_FAT_PAD_ES: Guide = {
       h2: '¿Qué tan común es el síndrome de la almohadilla grasa del talón?',
       keyFact: 'Un estudio transversal con 250\u00A0personas con dolor de talón encontró fascitis plantar en el 53,2\u00A0% de los casos y atrofia de la almohadilla grasa sola en alrededor del 14,8\u00A0%, con ambas presentes en el 9,2\u00A0% (Yi y colegas, 2011).',
       paragraphs: [
-        'En un estudio transversal con 250\u00A0personas con dolor plantar del talón, Yi y colegas encontraron atrofia de la almohadilla grasa en el 14,8\u00A0% de los casos. La fascitis plantar fue la causa más común con un 53,2\u00A0%, y el 9,2\u00A0% tenía ambas condiciones juntas. El estudio usó mediciones por ecografía y criterios clínicos para separar las dos.',
-        'La revisión exploratoria de 2022 señaló que la cifra de 14,8 % viene de dos estudios y que la verdadera prevalencia es incierta. El síndrome de la almohadilla grasa se confunde con frecuencia con la fascitis plantar porque ambos causan dolor plantar del talón y pueden coexistir. Cuando los enfoques estándar para la fascitis plantar no ayudan, la atrofia de la almohadilla grasa es una de las condiciones que vale la pena reconsiderar.',
+        'En un estudio transversal con 250\u00A0personas con dolor plantar del talón, Yi y colegas encontraron atrofia de la almohadilla grasa en el 14,8\u00A0% de los casos. La fascitis plantar fue la causa más común con un 53,2\u00A0%, y el 9,2\u00A0% tenía ambas afecciones juntas. El estudio usó mediciones por ecografía y criterios clínicos para separar las dos.',
+        'La revisión exploratoria de 2022 señaló que la cifra de 14,8 % viene de dos estudios y que la verdadera prevalencia es incierta. El síndrome de la almohadilla grasa se confunde con frecuencia con la fascitis plantar porque ambos causan dolor plantar del talón y pueden coexistir. Cuando los enfoques estándar para la fascitis plantar no ayudan, la atrofia de la almohadilla grasa es una de las afecciones que vale la pena reconsiderar.',
       ],
       cites: [CITE.yiFatPad, CITE.fatPadReview],
     },
     {
       h2: '¿En qué se diferencia el dolor de la almohadilla grasa del de la fascitis plantar?',
       paragraphs: [
-        'Las dos condiciones se superponen pero tienen patrones distintos. El dolor de la almohadilla grasa es un dolor profundo y sordo centrado debajo del hueso del talón. Es peor en superficies duras, descalzo y después de estar de pie mucho tiempo. Normalmente no tiene el carácter agudo del «primer paso» de la fascitis plantar y puede que no entre en calor con el movimiento.',
+        'Las dos afecciones se superponen pero tienen patrones distintos. El dolor de la almohadilla grasa es un dolor profundo y sordo centrado debajo del hueso del talón. Es peor en superficies duras, descalzo y después de estar de pie mucho tiempo. Normalmente no tiene el carácter agudo del «primer paso» de la fascitis plantar y puede que no entre en calor con el movimiento.',
         'El dolor de la fascitis plantar es más agudo en la parte interna del talón, llega al máximo en el primer paso después del reposo y mejora una vez que caminas. Si presionas el centro del talón y se siente como si el hueso estuviera justo debajo del dedo con muy poca amortiguación, la atrofia de la almohadilla grasa es más probable.',
-        'Se pueden tener las dos al mismo tiempo. El estudio de 2011 encontró ambas condiciones en el 9,2\u00A0% de la muestra. Tener fascitis plantar también puede llevar a problemas de la almohadilla grasa: cuando la fascia está lesionada, la forma en que repartes el peso cambia, y esa presión extra sobre la almohadilla del talón acelera el desgaste.',
+        'Se pueden tener las dos al mismo tiempo. El estudio de 2011 encontró ambas afecciones en el 9,2\u00A0% de la muestra. Tener fascitis plantar también puede llevar a problemas de la almohadilla grasa: cuando la fascia está lesionada, la forma en que repartes el peso cambia, y esa presión extra sobre la almohadilla del talón acelera el desgaste.',
       ],
       table: {
         caption: 'Comparación entre el síndrome de la almohadilla grasa del talón y la fascitis plantar',
@@ -83,7 +83,7 @@ export const HEEL_FAT_PAD_ES: Guide = {
     },
     {
       h2: '¿Qué ayuda con el dolor de la almohadilla grasa del talón?',
-      keyFact: 'Un solo reporte de caso encontró alivio del dolor con taloneras de gel de silicona al mes y a los tres meses, pero ningún ensayo aleatorizado ha probado taloneras o vendaje para esta condición (Chang y colegas, 2022).',
+      keyFact: 'Un solo reporte de caso encontró alivio del dolor con taloneras de gel de silicona al mes y a los tres meses, pero ningún ensayo aleatorizado ha probado taloneras o vendaje para esta afección (Chang y colegas, 2022).',
       paragraphs: [
         'Los primeros pasos más recomendados para el síndrome de la almohadilla grasa del talón son externos: taloneras viscoelásticas, plantillas acolchadas y zapatos con suelas gruesas que absorban el impacto. Su objetivo es reemplazar la amortiguación que la almohadilla ya no proporciona.',
         'La revisión exploratoria de 2022 señaló un vacío incómodo: ningún ensayo controlado aleatorizado ha probado las taloneras o el vendaje específicamente para el síndrome de la almohadilla grasa del talón. Un solo reporte de caso describió alivio del dolor con taloneras de gel de silicona al mes y a los tres meses. Algunos ensayos pequeños de vendaje low-dye para el dolor plantar general del talón reportan una caída modesta en los puntajes de dolor comparados con el placebo o con no hacer nada, pero ninguno aísla el síndrome de la almohadilla grasa de otras causas de dolor de talón, así que la magnitud de cualquier beneficio aquí no se conoce.',
@@ -96,7 +96,7 @@ export const HEEL_FAT_PAD_ES: Guide = {
       paragraphs: [
         'El ejercicio no puede reconstruir una almohadilla grasa adelgazada. Ese es un cambio estructural, no una debilidad muscular. Pero el ejercicio puede ayudar a manejar el pie alrededor del problema.',
         'La fuerza de la pantorrilla importa porque una pantorrilla más fuerte absorbe más de la fuerza de impacto antes de que llegue al talón. Es la misma lógica de carga detrás de los programas de elevaciones de talón para la fascitis plantar, pero para el síndrome de la almohadilla grasa el objetivo es repartir la carga, no reparar el tejido. El trabajo de los músculos intrínsecos del pie (pie corto, separación de dedos) puede ayudar al pie a manejar el contacto con el piso.',
-        'La evidencia de estos ejercicios para el síndrome de la almohadilla grasa específicamente es nula. Ningún ensayo los ha probado para esta condición. Están tomados de la literatura más amplia sobre el dolor de talón y la fuerza del pie. Los ejercicios de Walkito están diseñados para la fascitis plantar y la fuerza del pie. Son una adición razonable si un profesional de la salud ha confirmado la atrofia de la almohadilla grasa, pero no están probados específicamente para ella, y vale la pena saberlo.',
+        'La evidencia de estos ejercicios para el síndrome de la almohadilla grasa específicamente es nula. Ningún ensayo los ha probado para esta afección. Están tomados de la literatura más amplia sobre el dolor de talón y la fuerza del pie. Los ejercicios de Walkito están diseñados para la fascitis plantar y la fuerza del pie. Son una adición razonable si un profesional de la salud ha confirmado la atrofia de la almohadilla grasa, pero no están probados específicamente para ella, y vale la pena saberlo.',
       ],
       exercises: [
         {
@@ -141,7 +141,7 @@ export const HEEL_FAT_PAD_ES: Guide = {
       paragraphs: [
         'Un profesional de la salud muchas veces puede sospechar la atrofia de la almohadilla grasa a partir de la historia clínica y el examen físico. El patrón de dolor (profundo en el centro del talón, peor descalzo en superficies duras, no entra en calor) junto con un calcáneo que se palpa cerca de la superficie apuntan hacia el diagnóstico.',
         'La ecografía puede medir el grosor de la almohadilla grasa. Una almohadilla de menos de 1\u00A0centímetro se considera generalmente atrofiada. La resonancia magnética puede mostrar cambios en la estructura interna de la almohadilla, como daño de los septos, fibrosis o líquido. La revisión exploratoria de 2022 señaló que los criterios de imagen no están estandarizados y que el diagnóstico muchas veces es clínico.',
-        'El síndrome de la almohadilla grasa es en parte un diagnóstico de exclusión. Si la fascitis plantar se ha manejado de forma adecuada y el dolor persiste, y las características clínicas coinciden, el diagnóstico debe reconsiderarse. Tener ambas condiciones al mismo tiempo también es posible.',
+        'El síndrome de la almohadilla grasa es en parte un diagnóstico de exclusión. Si la fascitis plantar se ha manejado de forma adecuada y el dolor persiste, y las características clínicas coinciden, el diagnóstico debe reconsiderarse. Tener ambas afecciones al mismo tiempo también es posible.',
       ],
       cites: [CITE.fatPadReview, CITE.yiFatPad],
     },
@@ -180,7 +180,7 @@ export const HEEL_FAT_PAD_ES: Guide = {
     {
       q: '¿Cuánto tarda en mejorar el síndrome de la almohadilla grasa del talón?',
       cites: [CITE.fatPadReview],
-      a: 'No hay un tiempo establecido, porque la atrofia de la almohadilla grasa es un adelgazamiento estructural que el ejercicio y el reposo no revierten. Una revisión exploratoria de 2022 no encontró ningún ensayo que diera seguimiento al tiempo de recuperación de esta condición. Las taloneras acolchadas, los zapatos de suela más gruesa y evitar caminar descalzo sobre piso duro pueden aliviar el dolor, pero el adelgazamiento en sí suele quedarse.',
+      a: 'No hay un tiempo establecido, porque la atrofia de la almohadilla grasa es un adelgazamiento estructural que el ejercicio y el reposo no revierten. Una revisión exploratoria de 2022 no encontró ningún ensayo que diera seguimiento al tiempo de recuperación de esta afección. Las taloneras acolchadas, los zapatos de suela más gruesa y evitar caminar descalzo sobre piso duro pueden aliviar el dolor, pero el adelgazamiento en sí suele quedarse.',
     },
     {
       q: '¿Cómo se venda el síndrome de la almohadilla grasa del talón?',
@@ -202,7 +202,7 @@ export const HEEL_FAT_PAD_ES: Guide = {
   },
   program: {
     h2: 'Dónde encaja un plan de ejercicios',
-    text: 'Walkito arma sesiones diarias con elevaciones de talón, trabajo de músculos del pie y estiramientos. Estos ejercicios están diseñados para la fascitis plantar y la fuerza del pie. Pueden ayudar a un pie con atrofia de la almohadilla grasa a manejar mejor la carga, pero no están probados para esta condición específicamente y no van a reconstruir una almohadilla adelgazada. Si un profesional de la salud ha confirmado el síndrome de la almohadilla grasa, un plan de ejercicios como el de Walkito es un complemento razonable a la amortiguación y el calzado, no un sustituto.',
+    text: 'Walkito arma sesiones diarias con elevaciones de talón, trabajo de músculos del pie y estiramientos. Estos ejercicios están diseñados para la fascitis plantar y la fuerza del pie. Pueden ayudar a un pie con atrofia de la almohadilla grasa a manejar mejor la carga, pero no están probados para esta afección específicamente y no van a reconstruir una almohadilla adelgazada. Si un profesional de la salud ha confirmado el síndrome de la almohadilla grasa, un plan de ejercicios como el de Walkito es un complemento razonable a la amortiguación y el calzado, no un sustituto.',
     more: [
       'Las sesiones son de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba mide la resistencia de la pantorrilla y el equilibrio. Walkito no diagnostica. Si no estás seguro de si tu dolor de talón es atrofia de la almohadilla grasa o fascitis plantar, consulta primero a un profesional de la salud.',
     ],

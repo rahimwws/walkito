@@ -24,8 +24,8 @@ export const CALF_RAISES_PT: Guide = {
   takeaways: [
     'Em um ensaio com 48\u00A0pessoas, elevações de calcanhar com carga e uma toalha embaixo dos dedos aliviaram a dor da fascite plantar mais rápido do que só alongar aos três meses, embora os dois grupos estivessem iguais aos doze meses (Rathleff e colegas, 2015).',
     'A diretriz de 2023 para dor no calcanhar dá ao treino de força o grau B, o segundo mais alto, e ao alongamento o grau A (Koc e colegas, 2023).',
-    'A dorsiflexão reduzida do tornozelo, ou seja, o quanto o pé dobra para cima em direção à canela, muitas vezes causada por um gastrocnêmio tenso, o músculo maior e mais externo da panturrilha, é um fator de risco independente para fascite plantar (Riddle e colegas, 2003).',
-    'A toalha embaixo dos dedos ativa o mecanismo de molinete (windlass), que carrega a fáscia plantar junto com a panturrilha.',
+    'A dorsiflexão reduzida do tornozelo, ou seja, o quanto o pé dobra para cima em direção à canela, muitas vezes causada por um gastrocnêmio tenso, o músculo maior e mais superficial da panturrilha, é um fator de risco independente para fascite plantar (Riddle e colegas, 2003).',
+    'A toalha embaixo dos dedos ativa o mecanismo de molinete (windlass), que põe carga na fáscia plantar junto com a panturrilha.',
     'Uma contagem de elevações de calcanhar em uma perna na faixa dos 20 e poucos, cerca de 23-24 em média, é uma referência muito citada para adultos, útil para acompanhar o progresso ao longo das semanas (Hebert-Losier e colegas, 2017).',
   ],
   toc: true,
@@ -45,7 +45,7 @@ export const CALF_RAISES_PT: Guide = {
     {
       h2: 'Como fazer a elevação de calcanhar com toalha para fascite plantar?',
       paragraphs: [
-        'A elevação de calcanhar com toalha é o exercício do ensaio de Rathleff. É uma elevação de calcanhar em uma perna em um degrau, com uma toalha enrolada embaixo dos dedos. A toalha puxa os dedos para cima no alto da elevação, o que ativa o mecanismo de molinete (windlass): o jeito como a fáscia plantar fica tensa quando o dedão dobra para trás. Sem a toalha, você treina a panturrilha, mas carrega bem menos a fáscia.',
+        'A elevação de calcanhar com toalha é o exercício do ensaio de Rathleff. É uma elevação de calcanhar em uma perna em um degrau, com uma toalha enrolada embaixo dos dedos. A toalha puxa os dedos para cima no alto da elevação, o que ativa o mecanismo de molinete (windlass): o jeito como a fáscia plantar fica tensa quando o dedão dobra para trás. Sem a toalha, você treina a panturrilha, mas põe bem menos carga na fáscia.',
         'Fique em um pé só na beira de um degrau, com uma toalha de mão enrolada embaixo dos cinco dedos. A parte da frente do pé fica no degrau. Segure em uma parede ou corrimão para se equilibrar. Suba em três segundos, segure dois lá em cima e desça em três segundos. Deixe o calcanhar descer um pouco abaixo do degrau na descida. No ensaio, os participantes acrescentavam peso com uma mochila quando o peso do corpo ficava fácil demais.',
         'Comece com os dois pés se a elevação em uma perna estiver difícil demais agora. Elevações com os dois pés no chão, sem degrau, são onde a cadeia da panturrilha começa. A toalha e o degrau entram depois, quando as elevações em pé parecerem fáceis por duas sessões seguidas.',
       ],
@@ -90,7 +90,7 @@ export const CALF_RAISES_PT: Guide = {
           name: 'Elevação de calcanhar sentado',
           evidence: { level: 'moderate', why: 'O grau B da diretriz cobre o treino de força em geral. Este degrau mais leve não foi testado sozinho.' },
           dose: '3\u00A0séries de 10, os dois pés',
-          how: 'Sente-se com os pés apoiados no chão. Suba empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão resistência. É um jeito de começar a carregar a panturrilha com pouca carga quando a elevação em pé é demais.',
+          how: 'Sente-se com os pés apoiados no chão. Suba empurrando pela parte da frente dos dois pés. As mãos nos joelhos dão resistência. É um jeito de começar a trabalhar a panturrilha com pouca carga quando a elevação em pé é demais.',
           often: 'Dias de força, enquanto for o seu nível',
           feel: 'Trabalho leve nas panturrilhas, quase sem carga no calcanhar',
           stop: 'A dor chegar a 6/10',
@@ -114,7 +114,7 @@ export const CALF_RAISES_PT: Guide = {
           name: 'Elevação de calcanhar sustentada',
           evidence: { level: 'moderate', why: 'Grau B na diretriz. Sustentação isométrica no fim do movimento; não foi testada sozinha em um ensaio de fascite plantar.' },
           dose: '3\u00A0vezes de 20\u00A0segundos, os dois pés',
-          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar carrega o tendão sem o quique de uma repetição completa.',
+          how: 'Suba na ponta dos dois pés e fique parado lá em cima. Não deixe afundar. Segurar põe carga no tendão sem o quique de uma repetição completa.',
           often: 'Dias de força, o degrau depois da elevação com os dois pés',
           feel: 'As panturrilhas trabalhando para ficar paradas',
           stop: 'A dor chegar a 6/10',
@@ -155,7 +155,7 @@ export const CALF_RAISES_PT: Guide = {
       keyFact: 'Em uma série de 254\u00A0pessoas com fascite plantar, 52 a 60% tinham uma contratura limitada ao gastrocnêmio, e outros 23 a 30% tinham uma contratura combinada de gastrocnêmio e sóleo (Patel e colegas, 2011).',
       paragraphs: [
         'Uma panturrilha tensa puxa o calcanhar pelo tendão de Aquiles, e a fáscia plantar divide a carga na outra ponta. Quando o tornozelo não consegue dobrar o suficiente, cada passo coloca mais tensão na fáscia.',
-        'Em uma série de 254\u00A0pessoas com fascite plantar, 52 a 60\u00A0por cento tinham uma contratura só do gastrocnêmio, o músculo mais externo da panturrilha, e outros 23 a 30\u00A0por cento tinham uma contratura combinada de gastrocnêmio e sóleo. Em outro estudo, um caso-controle pareado com 50\u00A0casos e 100\u00A0controles encontrou que a dorsiflexão reduzida do tornozelo, o quanto o pé dobra para cima em direção à canela, era o fator de risco independente mais forte para fascite plantar.',
+        'Em uma série de 254\u00A0pessoas com fascite plantar, 52 a 60\u00A0por cento tinham uma contratura só do gastrocnêmio, o músculo mais superficial da panturrilha, e outros 23 a 30\u00A0por cento tinham uma contratura combinada de gastrocnêmio e sóleo. Em outro estudo, um caso-controle pareado com 50\u00A0casos e 100\u00A0controles encontrou que a dorsiflexão reduzida do tornozelo, o quanto o pé dobra para cima em direção à canela, era o fator de risco independente mais forte para fascite plantar.',
         'É por isso que o alongamento e o fortalecimento da panturrilha aparecem os dois na lista. O alongamento dá mais amplitude ao tornozelo. O fortalecimento dá à panturrilha capacidade suficiente para não ficar tensa com a carga normal do dia a dia. A diretriz recomenda os dois. O mesmo mecanismo da panturrilha tensa aparece em outras dores na parte de baixo da perna: veja [exercícios para canelite](/pt/canelite-exercicios/) e [pés doendo de ficar em pé o dia todo](/feet-hurt-standing-all-day/) (em inglês) se o seu padrão de dor se parece mais com um desses.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle, CITE.guideline],
@@ -163,8 +163,8 @@ export const CALF_RAISES_PT: Guide = {
     {
       h2: 'Qual a diferença entre a elevação de calcanhar para fascite plantar e para tendinite de Aquiles?',
       paragraphs: [
-        'O movimento é quase o mesmo, mas a intenção, a toalha e a regra da dor mudam. Na fascite plantar, a toalha embaixo dos dedos carrega a fáscia pelo mecanismo de molinete. O ritmo é 3\u00A0segundos para subir, 2\u00A0segundos parado, 3 para descer, dia sim, dia não. A regra da dor nesta página é: pare se a dor chegar a 6/10 ou mais.',
-        'Na tendinite de Aquiles, o protocolo clássico é a descida excêntrica do calcanhar (só a descida, com a subida feita com os dois pés), feita originalmente duas vezes por dia, sete dias por semana, aceitando dor de até cerca de 5/10 desde que ela passe até a manhã seguinte. A toalha não é usada porque carregar a fáscia não é o objetivo. E na dor de Aquiles insercional, bem na parte de trás do osso do calcanhar, as descidas devem ficar no nível do chão em vez de passar da beira do degrau, porque a dorsiflexão profunda comprime o tendão contra o osso.',
+        'O movimento é quase o mesmo, mas a intenção, a toalha e a regra da dor mudam. Na fascite plantar, a toalha embaixo dos dedos põe carga na fáscia pelo mecanismo de molinete. O ritmo é 3\u00A0segundos para subir, 2\u00A0segundos parado, 3 para descer, dia sim, dia não. A regra da dor nesta página é: pare se a dor chegar a 6/10 ou mais.',
+        'Na tendinite de Aquiles, o protocolo clássico é a descida excêntrica do calcanhar (só a descida, com a subida feita com os dois pés), feita originalmente duas vezes por dia, sete dias por semana, aceitando dor de até cerca de 5/10 desde que ela passe até a manhã seguinte. A toalha não é usada porque colocar carga na fáscia não é o objetivo. E na dor de Aquiles insercional, bem na parte de trás do osso do calcanhar, as descidas devem ficar no nível do chão em vez de passar da beira do degrau, porque a dorsiflexão profunda comprime o tendão contra o osso.',
         'Os dois exercícios são parentes próximos. Se a sua dor é na parte de trás do calcanhar ou no tendão acima dele, e não embaixo do pé, veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
       ],
       cites: [CITE.rathleff, CITE.alfredson],
@@ -200,7 +200,7 @@ export const CALF_RAISES_PT: Guide = {
     {
       q: 'Quantas elevações de calcanhar devo fazer para fascite plantar?',
       cites: [CITE.rathleff],
-      a: 'O único ensaio que testou um protocolo específico de elevação de calcanhar para fascite plantar começou com 12\u00A0repetições máximas em 3\u00A0séries, passou para 10RM em 4\u00A0séries na semana 2, e para 8RM em 5\u00A0séries na semana 4, feito dia sim, dia não por até 3\u00A0meses (Rathleff 2015). “12RM” quer dizer a carga mais pesada que você consegue levantar em 12\u00A0repetições controladas, não um número fixo para todo mundo.',
+      a: 'O único ensaio que testou um protocolo específico de elevação de calcanhar para fascite plantar começou com 12\u00A0repetições máximas em 3\u00A0séries, passou para 10RM em 4\u00A0séries na semana 3, e para 8RM em 5\u00A0séries na semana 5, feito dia sim, dia não por até 3\u00A0meses (Rathleff 2015). “12RM” quer dizer a carga mais pesada que você consegue levantar em 12\u00A0repetições controladas, não um número fixo para todo mundo.',
     },
     {
       q: 'Elevação de calcanhar piora a fascite plantar?',
@@ -210,7 +210,7 @@ export const CALF_RAISES_PT: Guide = {
     {
       q: 'Para que serve a toalha na elevação de calcanhar com toalha?',
       cites: [CITE.rathleff],
-      a: 'A toalha fica enrolada embaixo dos dedos para que eles dobrem para cima no alto da elevação. Isso ativa o mecanismo de molinete (windlass), a ligação entre o tendão de Aquiles e a fáscia plantar. Sem a toalha, o exercício treina principalmente a panturrilha. Com ela, a fáscia recebe parte da carga, e é por isso que o ensaio a usou.',
+      a: 'A toalha fica enrolada embaixo dos dedos para que eles dobrem para cima no alto da elevação. Isso ativa o mecanismo de molinete (windlass): quando o dedão dobra para cima, a fáscia plantar fica tensa. Sem a toalha, o exercício treina principalmente a panturrilha. Com ela, a fáscia recebe parte da carga, e é por isso que o ensaio a usou.',
     },
     {
       q: 'Devo alongar ou fortalecer primeiro na fascite plantar?',

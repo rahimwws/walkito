@@ -31,7 +31,7 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
       h2: 'O que a elevação de calcanhar com toalha trabalha?',
       paragraphs: [
         'A elevação de calcanhar com toalha trabalha o gastrocnêmio e o sóleo (os dois músculos da panturrilha), o tendão de Aquiles e a fáscia plantar. A toalha enrolada dobra os dedos para cima no alto da elevação, o que puxa a fáscia plantar pelo mecanismo de molinete. Sem a toalha, o exercício treina principalmente a panturrilha. Com ela, a fáscia recebe parte da carga.',
-        'É por isso que o ensaio de Rathleff usou a toalha especificamente para fascite plantar, em vez de uma elevação de calcanhar simples. O objetivo é carregar junta a cadeia panturrilha-Aquiles-fáscia. Se a sua dor é no tendão de Aquiles e não embaixo do pé, uma [descida excêntrica do calcanhar](/exercises/eccentric-heel-drops/) (em inglês), sem a toalha, é um ponto de partida melhor.',
+        'É por isso que o ensaio de Rathleff usou a toalha especificamente para fascite plantar, em vez de uma elevação de calcanhar simples. O objetivo é colocar carga em toda a cadeia panturrilha-Aquiles-fáscia ao mesmo tempo. Se a sua dor é no tendão de Aquiles e não embaixo do pé, uma [descida excêntrica do calcanhar](/exercises/eccentric-heel-drops/) (em inglês), sem a toalha, é um ponto de partida melhor.',
       ],
       cites: [CITE.rathleff],
     },
@@ -117,7 +117,7 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
     {
       q: 'Para que serve a toalha na elevação de calcanhar?',
       cites: [CITE.rathleff],
-      a: 'A toalha fica enrolada embaixo dos cinco dedos para que eles dobrem para cima no alto da elevação. Isso ativa o mecanismo de molinete (windlass), uma ligação entre o dedão e a fáscia plantar. Sem a toalha, o exercício carrega principalmente a panturrilha. Com ela, a fáscia divide a carga, e é por isso que o ensaio de Rathleff a usou na fascite plantar.',
+      a: 'A toalha fica enrolada embaixo dos cinco dedos para que eles dobrem para cima no alto da elevação. Isso ativa o mecanismo de molinete (windlass): quando o dedão dobra para cima, a fáscia plantar fica tensa. Sem a toalha, o exercício põe carga principalmente na panturrilha. Com ela, a fáscia divide a carga, e é por isso que o ensaio de Rathleff a usou na fascite plantar.',
     },
     {
       q: 'Quantas elevações de calcanhar com toalha devo fazer?',
@@ -126,7 +126,7 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
     },
     {
       q: 'Posso fazer a elevação de calcanhar com toalha no chão em vez de no degrau?',
-      a: 'Pode, mas você perde a amplitude extra embaixo, quando o calcanhar desce abaixo do degrau. A versão no chão ainda carrega a panturrilha e a fáscia. É um ponto de partida razoável se o degrau parecer instável ou intenso demais, e você pode passar para o degrau depois.',
+      a: 'Pode, mas você perde a amplitude extra embaixo, quando o calcanhar desce abaixo do degrau. A versão no chão ainda põe carga na panturrilha e na fáscia. É um ponto de partida razoável se o degrau parecer instável ou intenso demais, e você pode passar para o degrau depois.',
     },
     {
       q: 'A elevação de calcanhar com toalha deve doer?',
@@ -136,7 +136,7 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
     {
       q: 'A elevação de calcanhar com toalha é a mesma coisa que a descida excêntrica do calcanhar?',
       cites: [CITE.rathleff, CITE.alfredson],
-      a: 'Não. A elevação de calcanhar com toalha inclui a subida e a descida e usa uma toalha embaixo dos dedos para carregar a fáscia plantar. A descida excêntrica do calcanhar foca só na fase de descida, sem toalha, e foi criada para a tendinopatia de Aquiles. Elas miram problemas diferentes, com protocolos diferentes.',
+      a: 'Não. A elevação de calcanhar com toalha inclui a subida e a descida e usa uma toalha embaixo dos dedos para colocar carga na fáscia plantar. A descida excêntrica do calcanhar foca só na fase de descida, sem toalha, e foi criada para a tendinopatia de Aquiles. Elas miram problemas diferentes, com protocolos diferentes.',
     },
   ],
   redFlags: {

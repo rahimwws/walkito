@@ -54,7 +54,7 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
       keyFact: 'In uno studio su 530\u00A0persone con dolore al piede, una spina calcaneare ai raggi X compariva da sola solo nel 6% dei piedi, di solito insieme a una fascia plantare ispessita (Menz e colleghi, 2019).',
       paragraphs: [
         'La maggior parte delle spine calcaneari non fa male. La ricerca mostra in modo coerente che le spine si trovano in persone senza sintomi al tallone, e che togliere la spina non fa passare il dolore in modo affidabile.',
-        'In uno studio su 530\u00A0persone dai 50\u00A0anni in su con dolore al piede, le radiografie hanno trovato una spina calcaneare nel 26,5% dei piedi e l’ecografia una fascia plantare ispessita nel 47,3% dei piedi. Le due di solito comparivano insieme, e una spina da sola era rara (6% dei piedi). Le persone con dolore al tallone avevano circa il doppio delle probabilità di avere entrambe insieme (Menz e colleghi, 2019). In altre parole, la spina raramente compare senza il cambiamento del tessuto molle che la accompagna.',
+        'In uno studio su 530\u00A0persone dai 50\u00A0anni in su con dolore al piede, le radiografie hanno trovato una spina calcaneare nel 26,5% dei piedi e l’ecografia una fascia plantare ispessita nel 47,3% dei piedi. Le due di solito comparivano insieme, e una spina da sola era rara (6% dei piedi). Nelle persone con dolore al tallone, avere entrambe insieme aveva un odds ratio di circa 2 (Menz e colleghi, 2019). In altre parole, la spina raramente compare senza il cambiamento del tessuto molle che la accompagna.',
         'In un altro studio, su 216\u00A0anziani tra i 62 e i 94\u00A0anni, il 55% aveva almeno una spina calcaneare plantare ai raggi X. Le spine erano legate all’obesità, all’artrosi e a una storia di dolore al tallone, ma non alla forma del piede. Gli autori hanno ipotizzato che le spine possano essere una risposta di adattamento alla compressione verticale del tallone, non il risultato della fascia plantare che tira sull’osso (Menz e colleghi, 2008).',
         'Lo studio di Menz del 2008 nota che ricerche precedenti nella popolazione generale avevano riportato una frequenza della spina calcaneare tra l’11 e il 16%, molto sotto il 55% trovato dagli autori nel loro campione di anziani. In quello stesso campione, circa 6\u00A0persone su 10 con una spina non avevano mai avuto dolore al tallone, anche se il dolore al tallone era comunque più comune in chi aveva una spina (40%) che in chi non l’aveva (12%) (Menz e colleghi, 2008). Una spina aumenta le probabilità, ma non decide chi avrà dolore.',
       ],
@@ -94,7 +94,7 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
       h2: 'Se il problema non è la spina, cos’è?',
       paragraphs: [
         'Il dolore di solito viene dalla fascia plantare e dai tessuti intorno, non dall’osso. La fascia plantare si attacca alla parte inferiore dell’osso del tallone. Quando è sovraccaricata, soprattutto in chi ha un polpaccio rigido, un indice di massa corporea alto o passa molte ore in piedi, quel punto di attacco si irrita. Quell’irritazione è la fascite plantare.',
-        'Un polpaccio rigido è uno dei fattori di rischio più forti. In uno studio caso-controllo appaiato su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione ridotta della caviglia, cioè quanto il piede si piega verso lo stinco, aveva l’odds ratio più alto tra tutti i fattori misurati. Anche stare in piedi per gran parte della giornata di lavoro era significativo, con probabilità 3,6\u00A0volte più alte (Riddle e colleghi, 2003).',
+        'Un polpaccio rigido è uno dei fattori di rischio più forti. In uno studio caso-controllo appaiato su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione ridotta della caviglia, cioè quanto il piede si piega verso lo stinco, aveva l’odds ratio più alto tra tutti i fattori misurati. Anche stare in piedi per gran parte della giornata di lavoro era significativo, con un odds ratio di 3,6 (Riddle e colleghi, 2003).',
         'La spina, quando c’è, sta lì vicino. Potrebbe essersi formata in mesi o anni in risposta allo stesso stress meccanico che ha irritato la fascia. Ma sono la fascia e il polpaccio a rispondere a stretching e rinforzo, non l’osso. Per questo la linea guida raccomanda l’esercizio, non la rimozione della spina.',
         'Per una panoramica completa sulla fascite plantare, con cause, fattori di rischio e raccomandazioni della linea guida, vedi [fascite plantare](/it/fascite-plantare/).',
       ],
@@ -130,7 +130,7 @@ export const PF_VS_HEEL_SPUR_IT: Guide = {
         },
         {
           name: 'Allungamento del polpaccio (ginocchio teso)',
-          evidence: { level: 'strong', why: 'Stesso grado A nella linea guida. Lavora sul gastrocnemio, il muscolo del polpaccio più grande e più esterno.' },
+          evidence: { level: 'strong', why: 'Stesso grado A nella linea guida. Lavora sul gastrocnemio, il muscolo del polpaccio più grande e più superficiale.' },
           dose: '2\u00A0tenute da 30\u00A0secondi, ogni gamba',
           how: 'Mani al muro. Gamba dietro tesa, tallone giù, fianchi in avanti. Un polpaccio rigido tira il tallone attraverso il tendine d’Achille e aggiunge carico alla fascia.',
           often: 'Quasi tutte le sessioni',

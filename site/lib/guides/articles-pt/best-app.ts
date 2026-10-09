@@ -28,7 +28,7 @@ export const BEST_APP_PT: Guide = {
   ],
   takeaways: [
     'A diretriz clínica de 2023 para dor no calcanhar dá ao alongamento da fáscia plantar e da panturrilha o grau A e ao treino de força o grau B. Um bom app deve incluir os dois.',
-    'Adaptar-se à dor importa: uma rotina diária fixa não diferencia uma manhã boa de uma ruim, e carregar uma fáscia irritada do mesmo jeito todo dia pode fazer você voltar atrás.',
+    'Adaptar-se à dor importa: uma rotina diária fixa não diferencia uma manhã boa de uma ruim, e colocar a mesma carga numa fáscia irritada todo dia pode fazer você voltar atrás.',
     'O Exakt Health é a opção mais forte para corredores se recuperando de fascite plantar que também querem um plano de volta à corrida, e é certificado como dispositivo médico na União Europeia.',
     'O Hinge Health é gratuito por meio de empresas e planos de saúde e vem com uma equipe clínica completa, mas não dá para comprá-lo por conta própria.',
     'Nenhum app consegue diagnosticar a sua dor no pé. Se a dor começou depois de uma lesão, vem com inchaço ou dormência, ou acorda você à noite, procure um profissional de saúde antes de começar qualquer programa.',
@@ -49,7 +49,7 @@ export const BEST_APP_PT: Guide = {
         '**Preço e período de teste.** Saiba quanto você vai pagar e se existe um teste grátis para ver se funciona para você.',
         '**Plataformas.** Alguns apps são só para iOS. Se você usa Android, as opções são menores.',
         '**Privacidade.** Dados de dor e de saúde são sensíveis. Verifique se o app compartilha ou vende esses dados.',
-        '**Participação de profissionais.** Um app criado ou revisado por fisioterapeutas registrados é um sinal razoável. Um app que pode colocar você em contato com um profissional é um sinal mais forte.',
+        '**Participação de profissionais.** Um app criado ou revisado por fisioterapeutas habilitados é um sinal razoável. Um app que pode colocar você em contato com um profissional é um sinal mais forte.',
       ],
       cites: [CITE.guideline],
     },
@@ -120,7 +120,7 @@ export const BEST_APP_PT: Guide = {
       h2: 'Exakt Health: o app de reabilitação para corredores',
       paragraphs: [
         'O Exakt Health foi feito para corredores, e isso aparece. O app tem mais de 15 planos de reabilitação de lesões, da fascite plantar à tendinopatia de Aquiles e à lesão de menisco, além de planos de treino de corrida que vão do sedentário à maratona. Cada plano de reabilitação termina com uma fase estruturada de volta à corrida, algo que a maioria dos apps para dor no pé não oferece.',
-        'Ele é certificado como dispositivo médico na União Europeia, o que significa que passou por avaliação regulatória de segurança e de uso pretendido. Foi criado por fisioterapeutas esportivos registrados e treinadores de corrida. O app tem mais de 600 vídeos de exercícios e adapta o plano conforme você avança nos níveis.',
+        'Ele é certificado como dispositivo médico na União Europeia, o que significa que passou por avaliação regulatória de segurança e de uso pretendido. Foi criado por fisioterapeutas esportivos habilitados e treinadores de corrida. O app tem mais de 600 vídeos de exercícios e adapta o plano conforme você avança nos níveis.',
         'Por US$\u00A019,99 por mês ou US$\u00A059,99 por seis meses, o Exakt não é barato, mas a variedade de condições e a qualidade dos planos de reabilitação são difíceis de igualar entre os apps que você usa por conta própria. O teste grátis de 7\u00A0dias deixa você ver o app completo antes de pagar. Ele está disponível em inglês, francês, alemão e espanhol, no iOS e no Android.',
         'Onde o Exakt é melhor que o Walkito: cobre mais tipos de lesão (mais de 15, contra dor no calcanhar, pé chato e canela), tem um programa completo de volta à corrida, está no Android, tem certificação de dispositivo médico na UE e uma base de usuários estabelecida, com nota 4,8 em 125 avaliações no iOS.',
         'Onde o Walkito é diferente: o Walkito ajusta a sessão de cada dia a partir de um check-in de dor pela manhã, e não de um retorno no fim da sessão, testa a diferença entre esquerda e direita a cada 14\u00A0dias, e foca especificamente em dor no calcanhar e no pé, e não em toda a variedade de lesões de corrida.',

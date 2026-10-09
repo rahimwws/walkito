@@ -14,12 +14,12 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
   lede:
     'Los primeros pasos al salir de la cama son lo peor del día. Ese tirón agudo en el talón, antes de que termines de pararte derecho, es lo que describe la mayoría de la gente cuando busca dolor de talón. La causa más común es la fascitis plantar, pero no es la única, y la mañana es el momento más útil para hacer algo al respecto.',
   intro: [
-    'La página de [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/) tiene la lista completa de ejercicios, la evidencia detrás de cada uno y los grados de la guía. Esta página se enfoca en la mañana: por qué duele ese primer paso, qué otras condiciones siguen el mismo patrón, qué hacer antes de que el pie toque el piso y cómo anotar tu dolor de la mañana te dice si vas mejorando.',
+    'La página de [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/) tiene la lista completa de ejercicios, la evidencia detrás de cada uno y los grados de la guía. Esta página se enfoca en la mañana: por qué duele ese primer paso, qué otras afecciones siguen el mismo patrón, qué hacer antes de que el pie toque el piso y cómo anotar tu dolor de la mañana te dice si vas mejorando.',
   ],
   takeaways: [
     'El dolor de talón por la mañana es la señal típica de la fascitis plantar: la guía de 2023 para el dolor de talón lo describe como un dolor «más notorio al apoyar el peso a primera hora de la mañana o después de un rato de reposo» (Koc y colegas, 2023).',
-    'Estirar la fascia plantar antes de pararte tiene grado **A**, el más alto de la guía. Las férulas nocturnas, usadas de 1 a 3\u00A0meses, también tienen una **A** para el dolor en los primeros pasos que no se va (Koc y colegas, 2023).',
-    'Otras condiciones que duelen en la mañana son la tendinitis de Aquiles (parte de atrás del talón), el adelgazamiento de la almohadilla grasa del talón (dolor profundo en el centro), la fractura por estrés del calcáneo (aumenta con la actividad y puede doler en reposo) y la artritis inflamatoria (los dos talones, con rigidez larga en la mañana en otras articulaciones).',
+    'Estirar la fascia plantar tiene grado **A**, el más alto de la guía, y conviene hacerlo antes de pararte. Las férulas nocturnas, usadas de 1 a 3\u00A0meses, también tienen una **A** para el dolor en los primeros pasos que no se va (Koc y colegas, 2023).',
+    'Otras afecciones que duelen en la mañana son la tendinitis de Aquiles (parte de atrás del talón), el adelgazamiento de la almohadilla grasa del talón (dolor profundo en el centro), la fractura por estrés del calcáneo (aumenta con la actividad y puede doler en reposo) y la artritis inflamatoria (los dos talones, con rigidez larga en la mañana en otras articulaciones).',
     'En una cohorte de 174\u00A0personas con fascitis plantar, tener dolor en los dos talones predecía de forma significativa que los síntomas duraran más, y los autores señalaron que una enfermedad inflamatoria no detectada podría explicar en parte ese resultado (Hansen y colegas, 2018).',
     'El dolor de la mañana en una escala de 0 a 10 es la señal diaria más clara de si el pie está mejorando o no.',
   ],
@@ -37,15 +37,15 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
     },
     {
       h2: '¿Qué más causa dolor de talón en la mañana?',
-      keyFact: 'En una cohorte de 174\u00A0personas con fascitis plantar seguidas una media de 9,7\u00A0años, tener dolor en los dos talones predijo un peor pronóstico a largo plazo, y los autores señalaron que podría reflejar una enfermedad inflamatoria sistémica no detectada (Hansen y colegas, 2018).',
+      keyFact: 'En una cohorte de 174\u00A0personas con fascitis plantar seguidas en promedio 9,7\u00A0años, tener dolor en los dos talones predijo un peor pronóstico a largo plazo, y los autores señalaron que podría reflejar una enfermedad inflamatoria sistémica no detectada (Hansen y colegas, 2018).',
       paragraphs: [
         'La fascitis plantar es la causa más común del dolor de talón por la mañana, pero no es la única. Dónde está el dolor y cómo se comporta ayudan a distinguirlas.',
         '**Tendinitis de Aquiles.** Dolor en la parte de atrás del talón o en el tendón que está arriba, no bajo el pie. El tendón de Aquiles se pone rígido durante la noche igual que la fascia plantar, así que la rigidez en los primeros pasos es común. Suele mejorar al caminar y después empeora otra vez con la actividad larga. Si el dolor está detrás del talón y no debajo, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
         '**Adelgazamiento de la almohadilla grasa del talón.** La almohadilla de grasa bajo el hueso del talón funciona como un cojín. Cuando se adelgaza o se desplaza, el hueso recibe más impacto directo.',
         'Una revisión exploratoria de 2022 señaló que el dolor de la almohadilla grasa suele ser un dolor profundo en el centro del talón, se siente peor sobre superficies duras y al caminar descalzo, y puede ser difícil de distinguir de la fascitis plantar sin estudios de imagen (Chang y colegas, 2022). La diferencia clave: el dolor de la fascitis plantar suele ser más agudo en la parte interna y delantera del talón, y el de la almohadilla grasa está justo debajo del centro.',
         '**Fractura por estrés del calcáneo.** Un dolor que aparece poco a poco, casi siempre después de subir mucho la actividad. A diferencia de la fascitis plantar, el dolor de una fractura por estrés suele aumentar con la actividad en lugar de calmarse cuando entras en calor, y puede doler en reposo o de noche. Si apretar los lados del talón provoca el dolor, consulta a un profesional de la salud antes de ejercitar el pie. [Dolor de talón al correr](/es/dolor-de-talon-en-corredores/) explica cómo los cambios bruscos de carga afectan al talón.',
-        '**Artritis inflamatoria (una señal de alerta).** Cuando te duelen los dos talones en la mañana, la rigidez dura más de 30\u00A0minutos y otras articulaciones también están rígidas o hinchadas, el patrón se aleja de la fascitis plantar y apunta a algo que debe revisar un profesional de la salud. Condiciones como la artritis psoriásica o la espondilitis anquilosante pueden causar dolor donde los tendones se unen al hueso, incluido el talón.',
-        'En una cohorte de 174\u00A0personas con fascitis plantar seguidas una media de 9,7\u00A0años, tener dolor en los dos talones predecía de forma significativa un peor pronóstico a largo plazo, y los autores señalaron que alguna enfermedad inflamatoria no detectada podría explicar en parte ese resultado (Hansen y colegas, 2018). Si te duelen los dos talones y hay otras articulaciones afectadas, consulta primero a un profesional de la salud.',
+        '**Artritis inflamatoria (una señal de alerta).** Cuando te duelen los dos talones en la mañana, la rigidez dura más de 30\u00A0minutos y otras articulaciones también están rígidas o hinchadas, el patrón se aleja de la fascitis plantar y apunta a algo que debe revisar un profesional de la salud. Afecciones como la artritis psoriásica o la espondilitis anquilosante pueden causar dolor donde los tendones se unen al hueso, incluido el talón.',
+        'En una cohorte de 174\u00A0personas con fascitis plantar seguidas en promedio 9,7\u00A0años, tener dolor en los dos talones predecía de forma significativa un peor pronóstico a largo plazo, y los autores señalaron que alguna enfermedad inflamatoria no detectada podría explicar en parte ese resultado (Hansen y colegas, 2018). Si te duelen los dos talones y hay otras articulaciones afectadas, consulta primero a un profesional de la salud.',
       ],
       cites: [CITE.achillesGuideline, CITE.fatPadReview, CITE.patelStressFracture, CITE.hansen],
     },
@@ -73,7 +73,7 @@ export const MORNING_HEEL_PAIN_ES: Guide = {
         },
         {
           name: 'Estiramiento de pantorrilla (rodilla estirada)',
-          evidence: { level: 'strong', why: 'El mismo grado A de la guía. Trabaja el gastrocnemio, el músculo más grande y externo de la pantorrilla.' },
+          evidence: { level: 'strong', why: 'El mismo grado A de la guía. Trabaja el gastrocnemio, el músculo más grande y superficial de la pantorrilla.' },
           dose: '3\u00A0estiramientos de 30\u00A0segundos, cada pierna',
           how: 'Manos en una pared. Pierna de atrás estirada, talón abajo, cadera hacia adelante. Mantén hasta sentir el estiramiento en la parte alta de la pantorrilla.',
           often: 'Después del estiramiento plantar, casi todas las mañanas',

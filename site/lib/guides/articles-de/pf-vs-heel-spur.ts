@@ -127,7 +127,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
         },
         {
           name: 'Wadendehnung (Knie gestreckt)',
-          evidence: { level: 'strong', why: 'Dieselbe Bewertung A in der Leitlinie. Zielt auf den Gastrocnemius, den größeren, äußeren Wadenmuskel.' },
+          evidence: { level: 'strong', why: 'Dieselbe Bewertung A in der Leitlinie. Zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel.' },
           dose: '2-mal 30\u00A0Sekunden halten, jedes Bein',
           how: 'Hände an die Wand. Das hintere Bein bleibt gestreckt, die Ferse unten, die Hüfte nach vorn. Eine verkürzte Wade zieht über die Achillessehne an der Ferse und belastet so zusätzlich die Faszie.',
           often: 'Die meisten Einheiten',
@@ -189,7 +189,7 @@ export const PF_VS_HEEL_SPUR_DE: Guide = {
       a: 'Fast nie. Die Leitlinie empfiehlt bei Plantarfasziitis nicht, den Sporn zu entfernen. Etwa 90\u00A0% der Menschen mit Plantarfasziitis geht es mit nicht-operativer Behandlung wie Dehnen, Wadenkrafttraining und Belastungssteuerung besser (Latt und Kollegen, 2020). Wenn nach Monaten erfolgloser konservativer Behandlung eine Operation erwogen wird, wird meist die Plantarfaszie teilweise durchtrennt, nicht der Sporn entfernt.',
     },
     {
-      q: 'Was passiert, wenn man mit Fersensporn weiter läuft?',
+      q: 'Was passiert, wenn man mit Fersensporn weiterläuft?',
       cites: [CITE.menzSpur, CITE.guideline],
       a: 'Durch Gehen bohrt sich der Sporn nicht in das umliegende Gewebe. Schmerz, der beim Gehen aufflammt, kommt meist von der gereizten Plantarfaszie neben dem Sporn, nicht vom Knochen selbst. Die Leitlinie von 2023 empfiehlt, die Belastung anzupassen, etwa Strecke oder Tempo, statt aufzuhören, wenn Gehen die Ferse am nächsten Morgen schlimmer macht.',
     },

@@ -50,7 +50,7 @@ export const ACHILLES_DE: Guide = {
           name: 'Exzentrisches Fersenabsenken (gestrecktes Knie)',
           evidence: { level: 'strong', why: 'Das ursprüngliche Alfredson-Protokoll, gestützt durch die Leitlinie von 2024, die Übungen mit A bewertet.' },
           dose: 'Alfredson: 3 x 15, zweimal täglich, drei Monate. Walkito: 3 x 10, jedes Bein',
-          how: 'Stell dich auf eine Stufenkante. Komm auf beiden Füßen hoch, verlagere das Gewicht auf das schmerzende Bein und senk dich über drei Sekunden langsam ab. Die Ferse sinkt unter die Stufe. Mit beiden Füßen wieder hoch. Das gestreckte Knie zielt auf den Gastrocnemius, den größeren äußeren Wadenmuskel.',
+          how: 'Stell dich auf eine Stufenkante. Komm auf beiden Füßen hoch, verlagere das Gewicht auf das schmerzende Bein und senk dich über drei Sekunden langsam ab. Die Ferse sinkt unter die Stufe. Mit beiden Füßen wieder hoch. Das gestreckte Knie zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel.',
           often: 'Im Alfredson-Protokoll zweimal täglich. Walkito: Krafttage.',
           feel: 'Harte Arbeit in der Wade beim Absenken, keine Dehnung unten',
           stop: 'Schmerz über 5/10, der bis zum nächsten Morgen nicht abklingt, oder Schmerz, der von Woche zu Woche schlimmer wird',
@@ -170,7 +170,7 @@ export const ACHILLES_DE: Guide = {
       keyFact: 'In einer Studie mit 38\u00A0Personen verbesserten sich diejenigen, die mit Schmerz bis etwa 5 von 10 weiterliefen, der bis zum Morgen abklang, nach zwölf Monaten genauso wie diejenigen, die zuerst pausierten (Silbernagel und Kollegen, 2007).',
       paragraphs: [
         'In Silbernagel 2007 wurden 38\u00A0Personen mit Achillessehnenschmerzen in zwei Gruppen aufgeteilt. Eine lief und sprang während der Reha weiter, nach der Regel, dass der Schmerz während und nach der Belastung bis etwa **5 von 10** gehen durfte, solange er bis zum nächsten Morgen auf sein übliches Niveau zurückging und nicht von Woche zu Woche schlimmer wurde. Die andere Gruppe pausierte zuerst. Beide verbesserten sich nach 12\u00A0Monaten deutlich, ohne Unterschied zwischen ihnen.',
-        'Das ist eine andere Schwelle als die Stoppregel bei 6/10 auf der Seite zur [Plantarfasziitis](/de/plantarfasziitis-uebungen/), die aus einer anderen Leitlinie kommt. Die 5/10 stammen aus einer einzigen Studie und sind kein allgemeiner Standard, aber es ist das am häufigsten zitierte Schmerzmodell in der Reha der Achillessehne.',
+        'Das ist eine andere Schwelle als die Stoppregel bei 6/10 auf der Seite zur [Plantarfasziitis](/de/plantarfasziitis-uebungen/). Das ist die Grenze, die Walkito bei Fersenschmerzen verwendet. Die 5/10 stammen aus einer einzigen Studie und sind kein allgemeiner Standard, aber es ist das am häufigsten zitierte Schmerzmodell in der Reha der Achillessehne.',
         'Etwas Schmerz bei Belastung ist zu erwarten und war in der Studie in Ordnung. Schmerz, der über Nacht nicht abklingt, von Woche zu Woche schlimmer wird oder plötzlich stechend einschießt, ist es nicht.',
       ],
       cites: [CITE.silbernagel],
@@ -187,17 +187,17 @@ export const ACHILLES_DE: Guide = {
       cites: [CITE.jonsson, CITE.achillesGuideline],
     },
     {
-      h2: 'Wie viele einbeinige Fersenhebungen solltest du schaffen?',
+      h2: 'Wie oft solltest du einbeiniges Fersenheben schaffen?',
       paragraphs: [
-        'Die Leitlinie von 2024 nennt den einbeinigen Ausdauertest mit Fersenheben als Teil der empfohlenen Art, die Wadenkraft zu messen und die Erholung zu verfolgen. Eine Normwertstudie mit 566\u00A0gesunden Erwachsenen setzt eine typische Zahl bei etwa 25\u00A0Wiederholungen an, angepasst an Alter, Geschlecht und Aktivität. Wichtig sind der Trend über die Zeit und der Unterschied zwischen deinen beiden Seiten.',
-        'Das Wadenziel in der App sind 25 einbeinige Fersenhebungen. Der Test läuft alle 14\u00A0Tage, solange das Wadenziel aktiv ist, danach alle 28\u00A0Tage. Auch ein Unterschied zwischen den Beinen wird verfolgt, weil ein anhaltender Seitenunterschied auf eine unvollständige Erholung hindeuten kann.',
+        'Die Leitlinie von 2024 nennt den einbeinigen Ausdauertest mit Fersenheben als Teil der empfohlenen Art, die Wadenkraft zu messen und die Erholung zu verfolgen. Eine Normwertstudie mit 566\u00A0gesunden Erwachsenen setzt eine typische Zahl bei etwa 23 bis 24\u00A0Wiederholungen an, angepasst an Alter, Geschlecht und Aktivität. Wichtig sind der Trend über die Zeit und der Unterschied zwischen deinen beiden Seiten.',
+        'Das Wadenziel in der App ist 25-mal einbeiniges Fersenheben. Der Test läuft alle 14\u00A0Tage, solange das Wadenziel aktiv ist, danach alle 28\u00A0Tage. Auch ein Unterschied zwischen den Beinen wird verfolgt, weil ein anhaltender Seitenunterschied auf eine unvollständige Erholung hindeuten kann.',
       ],
       cites: [CITE.hebertLosier, CITE.achillesGuideline],
     },
     {
       h2: 'Kannst du während der Reha der Achillessehne weiterlaufen?',
       paragraphs: [
-        'In Silbernagel 2007 schnitten Patienten, die während der Reha mit dem Schmerz-Monitoring-Modell weiterliefen, nicht schlechter ab als die, die zuerst pausierten. Beide Gruppen verbesserten sich nach 12\u00A0Monaten. Die Studie kam zu dem Schluss, dass weitere Aktivität mit Schmerzkontrolle während der Reha „daher eine wertvolle Option sein könnte“.',
+        'In Silbernagel 2007 schnitten Patienten, die während der Reha mit dem Schmerz-Monitoring-Modell weiterliefen, nicht schlechter ab als die, die zuerst pausierten. Beide Gruppen verbesserten sich nach 12\u00A0Monaten. Die Studie kam zu dem Schluss, dass weitere Aktivität mit Schmerzüberwachung während der Reha „daher eine wertvolle Option sein könnte“.',
         'Das heißt nicht, dass Laufen in jedem Fall harmlos ist. Wenn der Schmerz über Nacht nicht abklingt oder jede Woche schlimmer ist, fahr zurück. Schmerz am Ansatz am Fersenbein braucht mehr Vorsicht als Schmerz im Mittelteil der Sehne. Ein plötzliches Knallen oder Schnappen ist ein Grund, aufzuhören und zu einer medizinischen Fachperson zu gehen.',
         'Die Seite zu [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) geht genauer auf die Belastungssteuerung beim Laufen ein.',
       ],
@@ -206,7 +206,7 @@ export const ACHILLES_DE: Guide = {
     {
       h2: 'Wie lange dauert es, bis Übungen für die Achillessehne helfen?',
       paragraphs: [
-        'Die Erholung von einer Tendinopathie der Achillessehne wird in Monaten gemessen. Die wichtigsten Belastungsstudien liefen etwa drei Monate und verfolgten die Ergebnisse bis 12\u00A0Monate. Die Leitlinie von 2024 hält fest, dass sich die Funktion schon nach 2\u00A0Wochen verbessern kann, die vollere Erholung aber deutlich länger dauert.',
+        'Die Erholung von einer Tendinopathie der Achillessehne wird in Monaten gemessen. Die wichtigsten Belastungsstudien liefen etwa drei Monate und verfolgten die Ergebnisse bis 12\u00A0Monate. Die Leitlinie von 2024 hält fest, dass sich die Funktion schon nach 2\u00A0Wochen verbessern kann, die vollständige Erholung aber deutlich länger dauert.',
         'Keine Studie verspricht einen festen Zeitrahmen. Manche sprechen schneller an, manche langsamer, und Fälle am Ansatz dauern meist länger als Fälle im Mittelteil. Gleichmäßige Belastung über die Zeit ist der gemeinsame Nenner.',
       ],
       cites: [CITE.achillesGuideline, CITE.alfredson, CITE.beyer, CITE.silbernagel],
@@ -246,12 +246,12 @@ export const ACHILLES_DE: Guide = {
     {
       q: 'Wie lange dauert es, bis Übungen bei Achillessehnenentzündung wirken?',
       cites: [CITE.achillesGuideline, CITE.alfredson, CITE.beyer],
-      a: 'Die Erholung wird in Monaten gemessen. Die wichtigsten Studien liefen mit Belastungsprogrammen über etwa drei Monate und verfolgten die Ergebnisse bis 12\u00A0Monate. Die Leitlinie von 2024 hält fest, dass sich die Funktion ab 2\u00A0Wochen verbessern kann, die vollere Erholung aber deutlich länger dauert. Keine Studie verspricht einen festen Zeitrahmen.',
+      a: 'Die Erholung wird in Monaten gemessen. Die wichtigsten Studien liefen mit Belastungsprogrammen über etwa drei Monate und verfolgten die Ergebnisse bis 12\u00A0Monate. Die Leitlinie von 2024 hält fest, dass sich die Funktion ab 2\u00A0Wochen verbessern kann, die vollständige Erholung aber deutlich länger dauert. Keine Studie verspricht einen festen Zeitrahmen.',
     },
     {
       q: 'Was sollte man bei Achillessehnenentzündung nicht machen?',
       cites: [CITE.jonsson, CITE.silbernagel],
-      a: 'Meide plötzliche Steigerungen beim Laufumfang oder bei Sprints, tiefes Wadendehnen, wenn dein Schmerz am Ansatz am Fersenbein sitzt, und das Weitermachen trotz Schmerz, der am nächsten Morgen erhöht bleibt oder von Woche zu Woche schlimmer wird. Ein plötzliches Knallen oder Schnappen braucht sofort eine medizinische Fachperson. Komplette Ruhe ist aber auch nicht nötig; Aktivität mit Schmerzkontrolle ist meist besser, als ganz aufzuhören.',
+      a: 'Meide plötzliche Steigerungen beim Laufumfang oder bei Sprints, tiefes Wadendehnen, wenn dein Schmerz am Ansatz am Fersenbein sitzt, und das Weitermachen trotz Schmerz, der am nächsten Morgen erhöht bleibt oder von Woche zu Woche schlimmer wird. Ein plötzliches Knallen oder Schnappen braucht sofort eine medizinische Fachperson. Komplette Ruhe ist aber auch nicht nötig; Aktivität mit Schmerzüberwachung ist meist besser, als ganz aufzuhören.',
     },
     {
       q: 'Verschlimmert Gehen eine Achillessehnenentzündung?',

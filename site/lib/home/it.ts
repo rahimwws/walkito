@@ -61,7 +61,7 @@ export const HOME_IT: HomeCopy = {
   how: [
     {
       title: 'Una settimana alla volta, intorno a un obiettivo',
-      text: `Ogni settimana ruota intorno a un obiettivo che puoi misurare: dolore al tallone al mattino a ${PAIN_GOAL_MAX}/10 o meno per ${painFreeDays}\u00A0giorni di fila, tenere l’arco per ${archHoldSeconds}\u00A0secondi, ${calfRaises} sollevamenti sulle punte su una gamba, ${balanceSeconds}\u00A0secondi di equilibrio su una gamba, oppure sinistra e destra entro il ${gapPercent}% l’una dall’altra. Quando ne raggiungi uno, passa al mantenimento e il successivo prende il suo posto.`,
+      text: `Ogni settimana ruota intorno a un obiettivo che puoi misurare: dolore al tallone al mattino a ${PAIN_GOAL_MAX}/10 o meno per ${painFreeDays}\u00A0giorni di fila, tenere l’arco per ${archHoldSeconds}\u00A0secondi, ${calfRaises} sollevamenti sulle punte su una gamba, ${balanceSeconds}\u00A0secondi di equilibrio su una gamba, oppure sinistra e destra entro il ${gapPercent}% l’una dall’altra. Quando ne raggiungi uno, quell’obiettivo passa al mantenimento e il successivo prende il suo posto.`,
       link: 'Come funziona il piano (in inglese)',
     },
     {

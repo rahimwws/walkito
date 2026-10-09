@@ -26,7 +26,7 @@ export const HAMMER_TOE_ES: Guide = {
       paragraphs: [
         'Un dedo en martillo es una deformidad en flexión de la articulación interfalángica proximal (la articulación del medio) de uno de los dedos menores, casi siempre el segundo. El dedo se dobla hacia abajo en esa articulación mientras que la punta puede apuntar hacia abajo o un poco hacia arriba. Es una de las deformidades más comunes de la parte delantera del pie.',
         'La deformidad se desarrolla por un desequilibrio entre los músculos que doblan y los que extienden el dedo. Los músculos extrínsecos, los flexores y extensores largos que van desde la pierna hasta el pie, dominan a los músculos intrínsecos más pequeños que están dentro del pie. Cuando los intrínsecos se debilitan, los flexores jalan la articulación del medio hacia abajo y los extensores jalan la base del dedo hacia arriba en la articulación metatarsofalángica.',
-        'Los factores que contribuyen incluyen zapatos que amontonan los dedos (puntera angosta, tacones altos), un segundo dedo más largo que el dedo gordo y condiciones como el hallux valgus ([juanetes](/es/ejercicios-juanetes/)) donde el dedo gordo empuja al segundo dedo fuera de posición. Las condiciones neuromusculares también pueden causarlo.',
+        'Los factores que contribuyen incluyen zapatos que amontonan los dedos (puntera angosta, tacones altos), un segundo dedo más largo que el dedo gordo y afecciones como el hallux valgus ([juanetes](/es/ejercicios-juanetes/)) donde el dedo gordo empuja al segundo dedo fuera de posición. Las afecciones neuromusculares también pueden causarlo.',
       ],
       cites: [CITE.malhotra],
     },
@@ -34,7 +34,7 @@ export const HAMMER_TOE_ES: Guide = {
       h2: '¿Cuál es la diferencia entre dedo en martillo, dedo en garra y dedo en mazo?',
       paragraphs: [
         'Los tres nombres describen qué articulaciones están dobladas. Un dedo en martillo se dobla en la articulación del medio (interfalángica proximal). Un dedo en mazo se dobla en la articulación de la punta (interfalángica distal), cerca del extremo del dedo. Un dedo en garra se dobla en las dos, la del medio y la de la punta, mientras que la base del dedo (articulación metatarsofalángica) se extiende hacia arriba.',
-        'Los dedos en garra tienden a ser más graves, muchas veces afectan varios dedos en los dos pies y se asocian más con condiciones neuromusculares. Los dedos en martillo suelen afectar un solo dedo, casi siempre el segundo, y se relacionan más con el calzado y la estructura del pie.',
+        'Los dedos en garra tienden a ser más graves, muchas veces afectan varios dedos en los dos pies y se asocian más con afecciones neuromusculares. Los dedos en martillo suelen afectar un solo dedo, casi siempre el segundo, y se relacionan más con el calzado y la estructura del pie.',
         'En la práctica, los tratamientos se traslapan. Zapatos más anchos, almohadillas y ejercicios que trabajan los músculos intrínsecos del pie aplican para los tres. La distinción importa más cuando se considera la cirugía, porque el enfoque quirúrgico depende de qué articulaciones están involucradas.',
       ],
       cites: [CITE.malhotra],
@@ -54,7 +54,7 @@ export const HAMMER_TOE_ES: Guide = {
       paragraphs: [
         'La respuesta honesta es que no existen ensayos controlados aleatorizados que prueben ejercicios específicamente para dedos en martillo. Los ejercicios que se recomiendan habitualmente, como recoger la toalla, la separación de dedos y el estiramiento manual, se basan en la idea de que fortalecer los músculos intrínsecos del pie y mantener la flexibilidad de la articulación puede ayudar a que una deformidad flexible no se vuelva rígida.',
         'Esa lógica es razonable. La deformidad viene de un desequilibrio muscular: intrínsecos débiles y extrínsecos relativamente más fuertes. Los ejercicios que trabajan los intrínsecos pueden restaurar algo de ese equilibrio. Pero sin ensayos directos, no sabemos cuánta diferencia hacen ni si realmente pueden prevenir el avance.',
-        'Lo que sí sabemos por estudios en otras condiciones de la parte delantera del pie es que los ejercicios intrínsecos del pie como el pie corto, la separación de dedos y recoger la toalla activan los músculos correctos. Un estudio de resonancia magnética de Gooding y colegas (2016) confirmó que el ejercicio de pie corto y el de separación de dedos activan selectivamente los músculos intrínsecos del pie. Si esa activación se traduce en mejores resultados para los dedos en martillo específicamente, no se ha probado.',
+        'Lo que sí sabemos por estudios en otras afecciones de la parte delantera del pie es que los ejercicios intrínsecos del pie como el pie corto, la separación de dedos y recoger la toalla activan los músculos correctos. Un estudio de resonancia magnética de Gooding y colegas (2016) confirmó que el ejercicio de pie corto y el de separación de dedos activan selectivamente los músculos intrínsecos del pie. Si esa activación se traduce en mejores resultados para los dedos en martillo específicamente, no se ha probado.',
       ],
       cites: [CITE.gooding],
     },
@@ -144,12 +144,12 @@ export const HAMMER_TOE_ES: Guide = {
     },
     {
       q: '¿Cuál es la diferencia entre un dedo en martillo y un dedo en garra?',
-      a: 'Un dedo en martillo se dobla en la articulación del medio del dedo. Un dedo en garra se dobla en la articulación del medio y en la de la punta, y la base del dedo se extiende hacia arriba en la articulación metatarsofalángica. Los dedos en garra se asocian más con condiciones neuromusculares, mientras que los dedos en martillo se relacionan más con el calzado y la estructura del pie.',
+      a: 'Un dedo en martillo se dobla en la articulación del medio del dedo. Un dedo en garra se dobla en la articulación del medio y en la de la punta, y la base del dedo se extiende hacia arriba en la articulación metatarsofalángica. Los dedos en garra se asocian más con afecciones neuromusculares, mientras que los dedos en martillo se relacionan más con el calzado y la estructura del pie.',
       cites: [CITE.malhotra],
     },
     {
       q: '¿Funcionan los estiramientos para el dedo en martillo?',
-      a: 'Ningún ensayo aleatorizado ha probado estiramientos o ejercicios para dedos en martillo. El estiramiento manual de un dedo en martillo flexible puede ayudar a mantener el rango de movimiento y a prevenir que se vuelva rígido. Los ejercicios de músculos intrínsecos del pie se recomiendan con base en razonamiento biomecánico, no en evidencia directa de ensayos para esta condición.',
+      a: 'Ningún ensayo aleatorizado ha probado estiramientos o ejercicios para dedos en martillo. El estiramiento manual de un dedo en martillo flexible puede ayudar a mantener el rango de movimiento y a prevenir que se vuelva rígido. Los ejercicios de músculos intrínsecos del pie se recomiendan con base en razonamiento biomecánico, no en evidencia directa de ensayos para esta afección.',
     },
     {
       q: '¿Qué zapatos son mejores para el dedo en martillo?',

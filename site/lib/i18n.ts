@@ -226,7 +226,7 @@ const fr: Chrome = {
   language: 'Langue',
   sourcesHeading: 'Sources',
   guidesHeading: 'Guides',
-  updated: 'Mis à jour',
+  updated: 'Mis à jour le',
   keyPoints: "L'essentiel",
   contents: 'Sur cette page',
   faqHeading: 'Questions fréquentes',
@@ -305,7 +305,7 @@ const de: Chrome = {
   relatedHeading: 'Weitere Ratgeber',
   navAbout: 'Über Walkito',
   notice:
-    'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und behandelt nicht. Wenn der Schmerz stechend ist, schlimmer wird oder dich nachts weckt, geh zu einer medizinischen Fachperson.',
+    'Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ist keine Behandlung. Wenn der Schmerz stechend ist, schlimmer wird oder dich nachts weckt, geh zu einer medizinischen Fachperson.',
 };
 
 export const CHROME: Record<Lang, Chrome> = { en, ru, es, pt, fr, it, de };

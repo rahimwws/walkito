@@ -25,7 +25,7 @@ export const ABOUT_DE: About = {
     {
       h2: 'Was ist Walkito?',
       paragraphs: [
-        `Walkito ist eine iPhone-App, die deinen Übungsplan Woche für Woche rund um Ziele baut, die du messen kannst. Es gibt fünf Ziele: schmerzfreie Morgen (Morgenschmerz bei ${PAIN_GOAL_MAX}/10 oder weniger an ${PROGRAM.painFreeDays}\u00A0Tagen am Stück), das Gewölbe ${PROGRAM.goals.archHoldSeconds}\u00A0Sekunden halten, ${PROGRAM.goals.calfRaises}\u00A0Wadenheben auf einem Bein, ${PROGRAM.goals.balanceSeconds}\u00A0Sekunden Gleichgewicht auf einem Bein und weniger als ${PROGRAM.goals.gapPercent}\u00A0% Unterschied zwischen deiner linken und rechten Seite. Du startest mit bis zu drei davon. Wenn etwas wehtut, kommt der Schmerz zuerst.`,
+        `Walkito ist eine iPhone-App, die deinen Übungsplan Woche für Woche rund um Ziele baut, die du messen kannst. Es gibt fünf Ziele: schmerzfreie Morgen (Morgenschmerz bei ${PAIN_GOAL_MAX}/10 oder weniger an ${PROGRAM.painFreeDays}\u00A0Tagen am Stück), das Gewölbe ${PROGRAM.goals.archHoldSeconds}\u00A0Sekunden halten, ${PROGRAM.goals.calfRaises}-mal einbeiniges Fersenheben, ${PROGRAM.goals.balanceSeconds}\u00A0Sekunden Gleichgewicht auf einem Bein und weniger als ${PROGRAM.goals.gapPercent}\u00A0% Unterschied zwischen deiner linken und rechten Seite. Du startest mit bis zu drei davon. Wenn etwas wehtut, kommt der Schmerz zuerst.`,
         `Du wählst ${either(PROGRAM.daysPerWeek)} Trainingstage pro Woche und Einheiten von ${either(PROGRAM.sessionMinutes)}\u00A0Minuten. Die Einheit jedes Tages passt sich daran an, wie dein Morgen war. Alle ${PROGRAM.testEveryDays}\u00A0Tage zeigt ein kurzer Test, ob sich deine Zahlen bewegen. Sobald du dein erstes Ziel erreichst, kommt der Test alle ${PROGRAM.testEveryDaysAfterGoal}\u00A0Tage.`,
         'Der Plan hat keine feste Dauer. Wenn du ein Ziel erreichst, geht es in geringerer Dosis in die Erhaltung über, und das nächste Ziel rückt nach. Das geht so lange weiter, wie du Walkito nutzt. [So funktioniert der Plan](/program/) (auf Englisch).',
         'Walkito gibt es auf Englisch, Russisch und Spanisch.',
@@ -51,7 +51,7 @@ export const ABOUT_DE: About = {
     {
       h2: 'Was macht Walkito nicht?',
       paragraphs: [
-        'Walkito stellt keine Diagnose, behandelt nicht und ersetzt keine medizinische Fachperson. Walkito kann dir nicht sagen, was deinen Schmerz verursacht. Geh zuerst zu einer medizinischen Fachperson, wenn:',
+        'Walkito stellt keine Diagnose, ist keine Behandlung und ersetzt keine medizinische Fachperson. Walkito kann dir nicht sagen, was deinen Schmerz verursacht. Geh zuerst zu einer medizinischen Fachperson, wenn:',
       ],
       // The guides' list (`lib/guides/de.ts`), word for word, plus the arch.
       bullets: [

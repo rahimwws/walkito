@@ -50,7 +50,7 @@ export const ACHILLES_FR: Guide = {
           name: 'Descentes excentriques du talon (genou tendu)',
           evidence: { level: 'strong', why: 'Le protocole original d’Alfredson, soutenu par la recommandation de 2024, qui donne la note A à l’exercice.' },
           dose: 'Alfredson\u00A0: 3 x 15, deux fois par jour, trois mois. Walkito\u00A0: 3 x 10, chaque jambe',
-          how: 'Tenez-vous au bord d’une marche. Montez sur les deux pieds, passez sur la jambe douloureuse, redescendez lentement en trois secondes. Le talon descend sous la marche. Remontez sur les deux pieds. Le genou tendu cible le gastrocnémien, le plus gros muscle du mollet, à l’extérieur.',
+          how: 'Tenez-vous au bord d’une marche. Montez sur les deux pieds, passez sur la jambe douloureuse, redescendez lentement en trois secondes. Le talon descend sous la marche. Remontez sur les deux pieds. Le genou tendu cible le gastrocnémien, le plus gros et le plus superficiel des deux muscles du mollet.',
           often: 'Deux fois par jour dans le protocole d’Alfredson. Walkito\u00A0: jours de renforcement.',
           feel: 'Un travail dur dans le mollet pendant la descente, pas un étirement en bas',
           stop: 'Une douleur au-dessus de 5/10 qui ne se calme pas avant le lendemain matin, ou une douleur qui s’aggrave d’une semaine à l’autre',
@@ -72,7 +72,7 @@ export const ACHILLES_FR: Guide = {
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
     {
-      h2: 'Quels exercices aident la tendinite d’Achille, et combien en faire\u00A0?',
+      h2: 'Quels exercices pour la tendinite d’Achille, et combien en faire\u00A0?',
       paragraphs: [
         'Les exercices ci-dessous vont d’une charge faible à une charge forte, en commençant par les montées sur pointes assis et en remontant l’échelle. Ce sont les doses de départ de Walkito, à côté des protocoles de recherche. [Comment ces guides sont écrits](/fr/a-propos/).',
         'Pour une douleur d’Achille d’insertion, tous les exercices qui utilisent une marche doivent se faire au sol. Cette adaptation est expliquée dans la partie sur l’insertion, plus bas.',
@@ -83,7 +83,7 @@ export const ACHILLES_FR: Guide = {
         rows: [
           ['Montées sur pointes assis', 'Silbernagel phase 1\u00A0: 3 x 10, assis', '3 x 10, deux pieds', '**Solide**\u00A0: correspond au protocole publié de la phase 1'],
           ['Montées sur pointes, deux pieds', 'Silbernagel phase 1\u00A0: 3 x 10-15, debout', '3 x 10, deux pieds', '**Solide**\u00A0: correspondance directe avec la phase 1'],
-          ['Maintien sur pointes (isométrique)', 'La recommandation de 2024 cite l’isométrique comme efficace\u00A0; 3-5 x 30-45\u00A0s proposés en pratique', '3 x 20\u00A0s, deux pieds', '**Modéré**\u00A0: la recommandation inclut la charge isométrique\u00A0; pas d’essai randomisé sur l’isométrique seul pour l’Achille'],
+          ['Maintien sur pointes (isométrique)', 'La recommandation de 2024 cite l’isométrique comme efficace\u00A0; 3-5 x 30-45\u00A0s proposés en pratique', '3 x 20\u00A0s, deux pieds', '**Modérée**\u00A0: la recommandation inclut la charge isométrique\u00A0; pas d’essai randomisé sur l’isométrique seul pour l’Achille'],
           ['Descentes excentriques du talon (genou tendu)', 'Alfredson\u00A0: 3 x 15, 2\u00A0fois par jour, 7\u00A0jours sur 7, trois mois', '3 x 10, chaque jambe', '**Solide**\u00A0: le protocole original\u00A0; note A dans la recommandation'],
           ['Étirement du mollet (genou tendu)', 'Ne fait pas partie des essais de mise en charge\u00A0; un complément de mobilité', '3 maintiens de 30\u00A0s, chaque jambe', '**Préliminaire**\u00A0: présenté comme de la mobilité, pas comme un exercice de mise en charge pour l’Achille'],
           ['Étirement du soléaire (genou plié)', 'Ne fait pas partie des essais de mise en charge\u00A0; un complément de mobilité', '3 maintiens de 30\u00A0s, chaque jambe', '**Préliminaire**\u00A0: même réserve\u00A0; évitez les étirements profonds en cas de douleur d’insertion'],
@@ -170,7 +170,7 @@ export const ACHILLES_FR: Guide = {
       keyFact: 'Dans un essai sur 38\u00A0personnes, celles qui ont continué à courir avec une douleur limitée à environ 5 sur 10 et calmée le matin se sont autant améliorées à douze mois que celles qui se sont d’abord reposées (Silbernagel et coll., 2007).',
       paragraphs: [
         'Dans Silbernagel 2007, 38\u00A0personnes avec une douleur d’Achille ont été réparties en deux groupes. L’un a continué à courir et à sauter pendant la rééducation, avec une règle\u00A0: la douleur pendant et après la mise en charge pouvait monter jusqu’à environ **5 sur 10**, à condition de revenir à son niveau habituel avant le lendemain matin et de ne pas s’aggraver d’une semaine à l’autre. L’autre groupe s’est d’abord reposé. Les deux se sont nettement améliorés à 12\u00A0mois, sans différence entre eux.',
-        'C’est un seuil différent de la règle d’arrêt à 6/10 de la page sur la [fasciite plantaire](/fr/exercices-fasciite-plantaire/), qui vient d’une autre recommandation. Le chiffre de 5/10 vient d’une seule étude, ce n’est pas une norme universelle, mais c’est le modèle de douleur le plus cité en rééducation de l’Achille.',
+        'C’est un seuil différent de la règle d’arrêt à 6/10 de la page sur la [fasciite plantaire](/fr/exercices-fasciite-plantaire/), qui est le seuil utilisé par Walkito pour la douleur au talon. Le chiffre de 5/10 vient d’une seule étude, ce n’est pas une norme universelle, mais c’est le modèle de douleur le plus cité en rééducation de l’Achille.',
         'Un certain inconfort pendant la mise en charge est normal et était accepté dans l’essai. Une douleur qui ne se calme pas pendant la nuit, qui s’aggrave d’une semaine à l’autre ou qui arrive brusquement et vive ne l’est pas.',
       ],
       cites: [CITE.silbernagel],
@@ -189,7 +189,7 @@ export const ACHILLES_FR: Guide = {
     {
       h2: 'Combien de montées sur pointes sur une jambe devriez-vous pouvoir faire\u00A0?',
       paragraphs: [
-        'La recommandation de 2024 cite le test d’endurance des montées sur pointes sur une jambe parmi les moyens conseillés pour mesurer la force du mollet et suivre la récupération. Une étude de valeurs de référence sur 566\u00A0adultes en bonne santé situe un nombre typique autour de 25\u00A0répétitions, à ajuster selon l’âge, le sexe et le niveau d’activité. Ce qui compte, c’est la tendance dans le temps et l’écart entre vos deux côtés.',
+        'La recommandation de 2024 cite le test d’endurance des montées sur pointes sur une jambe parmi les moyens conseillés pour mesurer la force du mollet et suivre la récupération. Une étude de valeurs de référence sur 566\u00A0adultes en bonne santé situe un nombre typique autour de 23 à 24\u00A0répétitions, à ajuster selon l’âge, le sexe et le niveau d’activité. Ce qui compte, c’est la tendance dans le temps et l’écart entre vos deux côtés.',
         'Dans l’application, l’objectif du mollet est de 25\u00A0montées sur pointes sur une jambe. Le test a lieu tous les 14\u00A0jours tant que l’objectif du mollet est actif, puis tous les 28\u00A0jours. L’écart entre les jambes est aussi suivi, car une différence persistante entre les deux côtés peut signaler une récupération incomplète.',
       ],
       cites: [CITE.hebertLosier, CITE.achillesGuideline],
@@ -219,7 +219,7 @@ export const ACHILLES_FR: Guide = {
       a: '«\u00A0Tendinite\u00A0» sous-entend une inflammation, alors que la plupart des douleurs chroniques du tendon d’Achille sont un problème de charge plutôt qu’un problème avant tout inflammatoire. La recommandation de 2024 dit «\u00A0tendinopathie\u00A0». Pour les exercices, le nom ne change pas ce que vous faites. Les exercices de cette page valent pour les deux termes.',
     },
     {
-      q: 'C’est quoi les descentes excentriques du talon pour la tendinite d’Achille\u00A0?',
+      q: 'Que sont les descentes excentriques du talon pour la tendinite d’Achille\u00A0?',
       cites: [CITE.alfredson],
       a: 'Les descentes excentriques du talon sont un exercice de renforcement\u00A0: montez sur les deux pieds, redescendez lentement sur un, le talon descendant sous le bord d’une marche. La phase de descente est l’essentiel. Dans un essai de 1998, 15\u00A0sportifs qui le faisaient deux fois par jour pendant trois mois ont tous retrouvé leur niveau de course d’avant. Des recherches plus récentes montrent que d’autres types de mise en charge marchent aussi bien.',
     },
@@ -279,7 +279,7 @@ export const ACHILLES_FR: Guide = {
   },
   program: {
     h2: 'En faire un plan',
-    text: 'Vous n’avez pas à deviner l’ordre, les doses ni le moment d’ajouter de la charge. Walkito construit un plan une semaine à la fois autour d’un objectif. La chaîne du mollet va des montées sur pointes assis aux montées sur deux pieds, puis au maintien, aux montées avec serviette, aux descentes excentriques du talon et aux sauts pogo. Chaque étape s’ouvre une fois que deux séances au niveau actuel vous ont paru faciles.',
+    text: 'Vous n’avez pas à deviner l’ordre, les doses ni le moment d’ajouter de la charge. Walkito construit un plan une semaine à la fois autour d’un objectif. La progression du mollet va des montées sur pointes assis aux montées sur deux pieds, puis au maintien, aux montées avec serviette, aux descentes excentriques du talon et aux sauts pogo. Chaque étape s’ouvre une fois que deux séances au niveau actuel vous ont paru faciles.',
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours (puis tous les 28 une fois l’objectif du mollet atteint), un test vérifie l’endurance du mollet et l’équilibre. Walkito est un programme d’exercices. Il ne pose pas de diagnostic. Si la douleur est juste au point d’attache sur l’os du talon, faites-la examiner par un professionnel de santé avant de la charger fort.',
     ],

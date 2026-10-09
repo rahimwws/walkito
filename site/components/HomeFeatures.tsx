@@ -157,7 +157,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
     extras: {
       itHurts: 'Сегодня болит',
       checkInAgain: 'Отметить ещё раз',
-      ackShorter: 'Записали. Сегодняшняя сессия из-за этого короче.',
+      ackShorter: 'Записали. Сегодняшнее занятие из-за этого короче.',
       reliefMeta: ['День 12', '3 мин', '2 упражнения'],
       nextUp: 'Далее',
       go: 'Старт',
@@ -329,7 +329,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
     features: [
       {
         tag: 'Check-in del mattino',
-        title: 'Digli come stanno i tuoi piedi.',
+        title: 'Dicci come stanno i tuoi piedi.',
         text: 'Un numero e un tocco sulla mappa della gamba. Dopo una brutta mattina, la sessione di oggi diventa più leggera.',
       },
       {
@@ -345,7 +345,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
       {
         tag: 'Progressi',
         title: 'Guarda cosa sta cambiando.',
-        text: `Un breve test ogni ${testEveryDays} giorni mostra cosa si sta muovendo. Check-in, sessioni, routine della libreria e giorni di riposo previsti contano tutti per la tua serie.`,
+        text: `Un breve test ogni ${testEveryDays} giorni mostra cosa sta cambiando. Check-in, sessioni, routine della libreria e giorni di riposo previsti contano tutti per la tua serie.`,
       },
     ],
     visualAlt: [
@@ -379,7 +379,7 @@ const COPY: Record<Lang, FeaturesCopy> = {
     features: [
       {
         tag: 'Check-in am Morgen',
-        title: 'Sag ihm, wie sich deine Füße anfühlen.',
+        title: 'Sag Walkito, wie sich deine Füße anfühlen.',
         text: 'Eine Zahl und ein Tippen auf die Beinkarte. Nach einem schlechten Morgen wird die heutige Einheit leichter.',
       },
       {

@@ -80,7 +80,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_IT: Guide = {
     {
       h2: 'Che differenza c’è tra allungamento della fascia plantare e del polpaccio?',
       paragraphs: [
-        'Lavorano su strutture diverse. L’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) allunga il gastrocnemio, il grande muscolo esterno del polpaccio, attraverso il tendine d’Achille. L’allungamento della fascia plantare tira indietro le dita per caricare direttamente la fascia sotto l’arco. I due sono collegati attraverso l’osso del tallone, ma rispondono a posizioni diverse.',
+        'Lavorano su strutture diverse. L’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) allunga il gastrocnemio, il muscolo più grande e superficiale del polpaccio, attraverso il tendine d’Achille. L’allungamento della fascia plantare tira indietro le dita per caricare direttamente la fascia sotto l’arco. I due sono collegati attraverso l’osso del tallone, ma rispondono a posizioni diverse.',
         'Un polpaccio rigido è di per sé un fattore di rischio per la fascite plantare. In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia ridotta, cioè quanto il piede si piega verso lo stinco, era il fattore di rischio indipendente più forte. Per questo la linea guida consiglia entrambi gli allungamenti, non uno o l’altro.',
         'Per il muscolo più profondo del polpaccio, il soleo, l’allungamento cambia: pieghi il ginocchio dietro per spostare il carico dal gastrocnemio al soleo. È un esercizio diverso. Vedi [allungamento del soleo](/exercises/soleus-stretch/) (in inglese).',
       ],

@@ -19,7 +19,7 @@ export const ARCH_PAIN_ES: Guide = {
     'Dolor en el arco del pie al caminar: fascitis plantar, pie plano, DTTP, pie cavo o nervio. Cómo distinguirlas, ejercicios y cuándo consultar.',
   h1: 'Dolor en el arco del pie: qué lo causa y qué hacer',
   lede:
-    'El dolor en el arco del pie normalmente viene de una de unas pocas condiciones: fascitis plantar, pie plano o arcos caídos, disfunción del tendón tibial posterior, arcos altos que no absorben bien el impacto, sobreuso, o irritación de un nervio como el síndrome del túnel del tarso. La causa cambia lo que conviene hacer. Esta página muestra las más comunes, enlaza a las guías completas de ejercicios donde existen, y cubre los ejercicios que le sirven al arco directamente.',
+    'El dolor en el arco del pie normalmente viene de una de unas pocas afecciones: fascitis plantar, pie plano o arcos caídos, disfunción del tendón tibial posterior, arcos altos que no absorben bien el impacto, sobreuso, o irritación de un nervio como el síndrome del túnel del tarso. La causa cambia lo que conviene hacer. Esta página muestra las más comunes, enlaza a las guías completas de ejercicios donde existen, y cubre los ejercicios que le sirven al arco directamente.',
   takeaways: [
     'La fascitis plantar es la causa individual más común del dolor de arco y de talón. La guía de 2023 para el dolor de talón le da al estiramiento una A y al entrenamiento de fuerza una B (Koc y colegas, 2023).',
     'La disfunción del tendón tibial posterior (DTTP), un debilitamiento del tendón que sostiene el arco, es la causa más común de pie plano adquirido en adultos (Ross y colegas, 2018).',
@@ -37,7 +37,7 @@ export const ARCH_PAIN_ES: Guide = {
         '**Pie plano y arcos caídos** causan dolor de arco al estirar de más la fascia plantar y el tendón tibial posterior. Cuando el arco colapsa al pararte y caminar, esas estructuras reciben una carga para la que no están diseñadas durante periodos largos. Mira [ejercicios para pie plano](/es/ejercicios-pie-plano/) y [pie plano: qué es y qué ayuda](/es/pie-plano/).',
         '**Disfunción del tendón tibial posterior (DTTP)** es la causa más común de pie plano adquirido en adultos. El tendón tibial posterior pasa detrás del tobillo interno y por debajo del arco, sosteniéndolo. Cuando este tendón se debilita o se rompe, el arco va colapsando poco a poco. El dolor se siente a lo largo del tobillo interno y hacia el arco, y empeora con la actividad. Una revisión sistemática de 2018 sobre ejercicio para la DTTP encontró evidencia limitada pero prometedora para el fortalecimiento y el estiramiento. Mira [ejercicios para la disfunción del tendón tibial posterior](/es/ejercicios-tendon-tibial-posterior/).',
         '**Pie cavo (arcos altos)** causa dolor de arco de forma diferente. Un arco rígido y alto no se flexiona lo suficiente para absorber el impacto, así que la fuerza se concentra bajo el talón y la parte delantera del pie en vez de repartirse por el mediopié. El dolor bajo el arco en un pie de arco alto muchas veces viene de una fascia plantar tensa. Mira [ejercicios para pie cavo](/es/ejercicios-pie-cavo/).',
-        '**Sobreuso** sin una condición con nombre es común en personas que suben de golpe la cantidad de caminata, carrera o tiempo de pie. Los músculos del arco y la fascia plantar todavía no son lo bastante fuertes para la nueva exigencia, y protestan. Esto suele mejorar con una vuelta gradual a la carga anterior más fortalecimiento de la pantorrilla y del arco.',
+        '**Sobreuso** sin una afección con nombre es común en personas que suben de golpe la cantidad de caminata, carrera o tiempo de pie. Los músculos del arco y la fascia plantar todavía no son lo bastante fuertes para la nueva exigencia, y protestan. Esto suele mejorar con una vuelta gradual a la carga anterior más fortalecimiento de la pantorrilla y del arco.',
         '**Irritación nerviosa** como el síndrome del túnel del tarso puede causar ardor, hormigueo o entumecimiento a lo largo del arco. El nervio tibial posterior pasa detrás del hueso interno del tobillo y entra a la planta del pie. Si se comprime, el dolor puede parecerse a la fascitis plantar pero viene con síntomas sensoriales que la fascitis no produce. Esto necesita un profesional de la salud.',
       ],
       cites: [CITE.guideline, CITE.posteriorTibialReview, CITE.riddle],
@@ -88,7 +88,7 @@ export const ARCH_PAIN_ES: Guide = {
           name: 'Estiramiento de pantorrilla (rodilla estirada)',
           evidence: { level: 'strong', why: 'La guía de 2023 le da al estiramiento de la pantorrilla una A. Una pantorrilla rígida es el factor de riesgo más fuerte de la fascitis plantar (Riddle, 2003).' },
           dose: '2\u00A0series de 30\u00A0segundos, cada pierna',
-          how: 'Manos en una pared, pierna de atrás estirada, talón abajo, cadera hacia adelante. El gastrocnemio, el músculo más grande y externo de la pantorrilla, solo se estira con la rodilla estirada.',
+          how: 'Manos en una pared, pierna de atrás estirada, talón abajo, cadera hacia adelante. El gastrocnemio, el músculo más grande y superficial de la pantorrilla, solo se estira con la rodilla estirada.',
           often: 'Casi todas las sesiones',
           feel: 'Un estiramiento en la parte alta de la pantorrilla',
           stop: 'El dolor llega a 6/10',
@@ -150,7 +150,7 @@ export const ARCH_PAIN_ES: Guide = {
     {
       h2: '¿Cuándo el dolor de arco es señal de otra cosa?',
       paragraphs: [
-        'La mayoría del dolor de arco responde al estiramiento, al ajuste de la carga y al tiempo. Pero algunos patrones apuntan a condiciones que necesitan un profesional de la salud antes de hacer ejercicio.',
+        'La mayoría del dolor de arco responde al estiramiento, al ajuste de la carga y al tiempo. Pero algunos patrones apuntan a afecciones que necesitan un profesional de la salud antes de hacer ejercicio.',
         'El dolor con entumecimiento, hormigueo o ardor puede venir del síndrome del túnel del tarso, donde el nervio tibial posterior se comprime detrás del tobillo interno. Esto necesita un diagnóstico clínico, no ejercicio solo.',
         'El dolor de arco que viene con un aplanamiento progresivo del pie, sobre todo de un solo lado, puede señalar una disfunción del tendón tibial posterior en una etapa avanzada. La prueba de elevación de talón a una pierna es un chequeo sencillo: si no puedes subir del todo sobre los dedos en un pie, o si duele mucho más de un lado, un profesional de la salud debe evaluar el tendón antes de que lo cargues más.',
         'El dolor en un punto muy específico que empeora de forma constante con la actividad y no se calma con el descanso normal puede ser una fractura por estrés de uno de los huesos pequeños del mediopié. Esto necesita estudios de imagen, no estiramientos.',

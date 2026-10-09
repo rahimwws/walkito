@@ -122,7 +122,7 @@ export const FLAT_FEET_FR: Guide = {
           dose: '3\u00A0séries de 8, tenir 5\u00A0secondes, chaque pied',
           often: 'À chaque séance, tant que c’est votre niveau',
           feel: 'Le gros orteil qui bouge tout seul',
-          how: 'Asseyez-vous, pieds à plat. Levez seulement le gros orteil et tenez. Les quatre autres orteils restent à plat au sol. Cet exercice apprend au gros orteil à bouger seul, et c’est le premier interrupteur de la voûte.',
+          how: 'Asseyez-vous, pieds à plat. Levez seulement le gros orteil et tenez. Les quatre autres orteils restent à plat au sol. Cet exercice apprend au gros orteil à bouger seul, et c’est la première étape pour activer la voûte.',
           image: 'Exercice\u00A0: lever le gros orteil',
           media: 'big_toe_lift',
           caption: 'Lever le gros orteil\u00A0: seul le gros orteil monte, les quatre autres restent à plat',
@@ -146,7 +146,7 @@ export const FLAT_FEET_FR: Guide = {
           dose: '3\u00A0séries de 8, tenir 5\u00A0secondes, deux pieds',
           often: 'À chaque séance, tant que c’est votre niveau',
           feel: 'La voûte qui travaille sous votre poids',
-          how: 'Tenez-vous debout, le poids sur les deux pieds, et faites le même mouvement. Les orteils restent à plat et allongés. Seule la voûte monte. C’est le même muscle que dans la version assise, qui porte maintenant votre poids.',
+          how: 'Tenez-vous debout, le poids sur les deux pieds, et faites le même mouvement. Les orteils restent à plat et allongés. Seule la voûte monte. Ce sont les mêmes muscles que dans la version assise, qui portent maintenant votre poids.',
           image: 'Exercice\u00A0: pied court, debout',
           media: 'short_foot_double',
           caption: 'Pied court, debout\u00A0: orteils à plat et allongés, seule la voûte monte',
@@ -280,7 +280,7 @@ export const FLAT_FEET_FR: Guide = {
     },
     {
       q: 'Quels exercices renforcent la voûte plantaire\u00A0?',
-      a: 'L’exercice du pied court est le principal\u00A0: vous soulevez la voûte en tirant la base des orteils vers le talon, sans recroqueviller les orteils. Walkito le commence assis, à 3\u00A0séries de 8 avec un maintien de 5\u00A0secondes, puis debout, puis sur une jambe. Ramasser la serviette, lever le gros orteil, écarter les orteils et l’inversion avec élastique entraînent les petits muscles autour de la voûte. Tout cela s’adresse aux pieds plats souples. Pas à pas\u00A0: [exercice du pied court](/exercises/short-foot-exercise/) (en anglais).',
+      a: 'L’exercice du pied court est le principal\u00A0: vous soulevez la voûte en tirant la base des orteils vers le talon, sans recroqueviller les orteils. Walkito le commence assis, à 3\u00A0séries de 8 avec un maintien de 5\u00A0secondes, puis debout, puis sur une jambe. Ramasser la serviette, lever le gros orteil, écarter les orteils et l’inversion avec élastique entraînent les petits muscles autour de la voûte. Tout cela s’adresse aux pieds plats souples. Pas à pas\u00A0: [exercice du pied court](/fr/exercices/pied-court/).',
     },
     {
       q: 'À quelle fréquence faire les exercices pour pieds plats\u00A0?',
@@ -317,7 +317,7 @@ export const HEEL_PAIN_FR: Guide = {
   description:
     'Huit exercices et étirements contre la fasciite plantaire et la douleur au talon\u00A0: doses, à éviter, meilleur moment et niveaux de preuve de 2023.',
   h1: 'Exercices et étirements pour la fasciite plantaire et la douleur au talon',
-  lede: 'Vos premiers pas en sortant du lit sont le pire moment de la journée. Une vive traction juste au talon, avant même votre café. Ça se calme une fois en mouvement, puis ça revient après être resté assis un moment. Ce schéma a un nom, la [fasciite plantaire](/plantar-fasciitis/) (en anglais), et la recommandation clinique de 2023 sur la douleur au talon en fait la cause la plus souvent reconnue de douleur sous le talon.',
+  lede: 'Vos premiers pas en sortant du lit sont le pire moment de la journée. Une vive traction juste au talon, avant même votre café. Ça se calme une fois en mouvement, puis ça revient après être resté assis un moment. Ce schéma a un nom, la [fasciite plantaire](/fr/fasciite-plantaire/), et la recommandation clinique de 2023 sur la douleur au talon en fait la cause la plus souvent reconnue de douleur sous le talon.',
   intro: [
     'C’est aussi déroutant à chercher en ligne, car chacun dit autre chose. Les données pointent vers deux choses\u00A0: étirer le fascia plantaire et le mollet, et renforcer le mollet. Une recommandation clinique de 2023 donne aux étirements sa meilleure note, A, et au renforcement musculaire un B. Dans un essai sur 48\u00A0personnes, qui portaient toutes des semelles, des montées sur pointes lentes avec une serviette sous les orteils ont aidé plus vite que les étirements seuls. À douze mois, les deux groupes étaient à égalité. Faire les deux, c’est ce que soutient la recommandation.',
   ],
@@ -334,7 +334,7 @@ export const HEEL_PAIN_FR: Guide = {
       figure: { id: 'plantar-fascia', caption: 'Le fascia plantaire va de l’os du talon jusqu’aux orteils. La douleur de la fasciite plantaire commence souvent là où il s’attache au talon.', alt: 'Plante d’un pied montrant le fascia plantaire en bandes blanches qui s’étalent de l’os du talon jusqu’à la base des orteils, avec une tache rouge sur le talon là où la douleur commence souvent.' },
       paragraphs: [
         'Dans Walkito, les exercices pour la fasciite plantaire sont des étirements du fascia plantaire et du mollet, un renforcement du mollet qui progresse par petites étapes, et un massage du pied avec une balle. Ce sont les doses de départ de Walkito, pas une prescription. Un résumé sur une page est disponible dans les [fiches d’exercices à imprimer](/printable-exercise-sheets/) (en anglais). [Comment ces guides sont écrits](/fr/a-propos/).',
-        'L’ordre compte. Tant que la douleur est votre objectif, Walkito garde le travail du mollet en douceur\u00A0: d’abord les montées sur pointes assis, puis les montées sur pointes sur les deux pieds, puis le maintien sur pointes, une étape à la fois. Vous montez d’une étape quand les deux dernières séances avec l’exercice vous ont paru faciles. La [montée sur pointes avec serviette](/exercises/towel-heel-raise/) (en anglais) sollicite le plus le fascia plantaire, elle n’arrive donc qu’une fois la douleur du matin redescendue, quand l’objectif passe à la force du mollet. Si un exercice fait monter votre douleur à **6/10 ou plus**, arrêtez pour aujourd’hui. C’est le seuil où Walkito met fin à une séance.',
+        'L’ordre compte. Tant que la douleur est votre objectif, Walkito garde le travail du mollet en douceur\u00A0: d’abord les montées sur pointes assis, puis les montées sur pointes sur les deux pieds, puis le maintien sur pointes, une étape à la fois. Vous montez d’une étape quand les deux dernières séances avec l’exercice vous ont paru faciles. La [montée sur pointes avec serviette](/fr/exercices/montee-sur-pointes-serviette/) sollicite le plus le fascia plantaire, elle n’arrive donc qu’une fois la douleur du matin redescendue, quand l’objectif passe à la force du mollet. Si un exercice fait monter votre douleur à **6/10 ou plus**, arrêtez pour aujourd’hui. C’est le seuil où Walkito met fin à une séance.',
       ],
       table: {
         head: ['Exercice', 'Dose', 'Fréquence', 'Ce que vous devez sentir', 'Arrêtez si'],
@@ -452,8 +452,8 @@ export const HEEL_PAIN_FR: Guide = {
       h2: 'Quels exercices éviter avec une fasciite plantaire\u00A0?',
       paragraphs: [
         'Évitez les activités à fort impact qui font grimper la charge sur le talon pendant une poussée de douleur, et évitez de marcher pieds nus sur un sol dur au réveil.',
-        'Les sauts, les sprints et la pliométrie imposent un pic de force soudain au fascia plantaire. Quand le tissu est irrité, ce pic peut le faire reculer. La recommandation de 2023 conseille d’adapter la charge sur vos pieds au travail, au sport et dans la vie quotidienne, un conseil noté E. Elle n’interdit pas d’exercices précis. La question est de savoir si la charge dépasse ce dont le tissu peut récupérer en une nuit. Marcher pieds nus sur un sol dur est un déclencheur fréquent, car le fascia est au plus raide après le repos et une surface dure n’amortit rien.',
-        'Deux autres points à surveiller. Faire rouler une balle sous le pied doit donner une sensation ferme, pas vive. Si ça fait mal, appuyez moins ou passez. Et si vous avez aussi mal au tendon d’Achille, à l’arrière du talon, évitez les descentes profondes du talon au bord d’une marche, car elles peuvent charger l’insertion du tendon d’Achille. Gardez la [montée sur pointes avec serviette](/exercises/towel-heel-raise/) (en anglais) sur sol plat jusqu’à ce qu’un professionnel de santé ait donné son feu vert pour le tendon d’Achille.',
+        'Les sauts, les sprints et la pliométrie imposent un pic de force soudain au fascia plantaire. Quand le tissu est irrité, ce pic peut retarder la récupération. La recommandation de 2023 conseille d’adapter la charge sur vos pieds au travail, au sport et dans la vie quotidienne, un conseil noté E. Elle n’interdit pas d’exercices précis. La question est de savoir si la charge dépasse ce dont le tissu peut récupérer en une nuit. Marcher pieds nus sur un sol dur est un déclencheur fréquent, car le fascia est au plus raide après le repos et une surface dure n’amortit rien.',
+        'Deux autres points à surveiller. Faire rouler une balle sous le pied doit donner une sensation ferme, pas vive. Si ça fait mal, appuyez moins fort ou passez à l’exercice suivant. Et si vous avez aussi mal au tendon d’Achille, à l’arrière du talon, évitez les descentes profondes du talon au bord d’une marche, car elles peuvent charger l’insertion du tendon d’Achille. Gardez la [montée sur pointes avec serviette](/fr/exercices/montee-sur-pointes-serviette/) sur sol plat jusqu’à ce qu’un professionnel de santé ait donné son feu vert pour le tendon d’Achille.',
       ],
       cites: [CITE.guideline],
     },
@@ -462,7 +462,7 @@ export const HEEL_PAIN_FR: Guide = {
       paragraphs: [
         'Avant vos premiers pas le matin, et avant de vous lever après être resté longtemps assis. Ce sont les deux moments où le fascia plantaire est le plus raide et le plus susceptible de faire mal.',
         'Un essai de 2003 sur 82\u00A0personnes atteintes de fasciite plantaire chronique a testé un étirement spécifique du fascia plantaire fait avant de poser le pied. Les patients tenaient l’étirement 10\u00A0secondes, le répétaient 10\u00A0fois, trois fois par jour, la première série avant le premier pas du matin. À huit semaines, le groupe qui faisait cet étirement avait nettement moins mal aux premiers pas du matin que le groupe qui faisait seulement un étirement du mollet. À deux ans, après que tous les patients ont reçu le même étirement, les deux groupes s’étaient améliorés.',
-        'Sur cette page, l’[étirement du fascia plantaire](/exercises/plantar-fascia-stretch/) (en anglais) commence assis au bord du lit, avant que votre pied touche le sol. L’[étirement du mollet](/exercises/calf-stretch/) (en anglais) suit. Walkito place le premier étirement avant de vous lever pour la même raison que l’essai\u00A0: étirer avant que le tissu prenne la charge est plus doux qu’après.',
+        'Sur cette page, l’[étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) commence assis au bord du lit, avant que votre pied touche le sol. L’[étirement du mollet](/fr/exercices/etirement-mollet/) suit. Walkito place le premier étirement avant de vous lever pour la même raison que l’essai\u00A0: étirer avant que le tissu prenne la charge est plus doux qu’après.',
       ],
       cites: [CITE.digiovanni2003],
     },
@@ -471,7 +471,7 @@ export const HEEL_PAIN_FR: Guide = {
       paragraphs: [
         'La douleur au talon aux premiers pas du matin est le schéma le plus souvent lié à la fasciite plantaire. Elle se calme souvent une fois en mouvement, et revient après être resté assis un moment.',
         'Deux choses sur cette page la visent. L’étirement du fascia plantaire se fait **avant de vous lever**, assis au bord du lit, les orteils tirés vers vous, pour que vos premiers pas ne soient pas votre premier étirement. Et la recommandation de 2023 donne aux attelles de nuit, portées 1 à 3\u00A0mois, la note **A** pour les personnes qui ont toujours mal aux premiers pas du matin. Les attelles de nuit sont à discuter avec un professionnel de santé. Walkito n’en fournit pas.',
-        'Walkito vous demande chaque jour votre douleur du matin pour la même raison. La douleur du matin est le signe le plus clair de la façon dont votre pied a encaissé la veille, et elle décide de ce que la séance du jour vous demande. Ce qui la provoque est expliqué dans [la douleur au talon le matin](/heel-pain-in-the-morning/) (en anglais).',
+        'Walkito vous demande chaque jour votre douleur du matin pour la même raison. La douleur du matin est le signe le plus clair de la façon dont votre pied a encaissé la veille, et elle décide de ce que la séance du jour vous demande. Ce qui la provoque est expliqué dans [la douleur au talon le matin](/fr/douleur-talon-au-reveil/).',
       ],
       cites: [CITE.guideline],
     },
@@ -488,7 +488,7 @@ export const HEEL_PAIN_FR: Guide = {
       h2: 'Renforcement ou étirements\u00A0: quoi de mieux pour la fasciite plantaire\u00A0?',
       paragraphs: [
         'Le renforcement et les étirements aident tous les deux contre la fasciite plantaire, et le renforcement aide plus tôt.',
-        'Dans un essai sur 48\u00A0personnes avec une fasciite plantaire confirmée à l’échographie, tout le monde portait des semelles. Un groupe a ajouté des montées sur pointes avec charge un jour sur deux. L’autre étirait le fascia plantaire tous les jours. À trois mois, le groupe des montées sur pointes était nettement devant pour la douleur et la fonction au quotidien. À douze mois, les deux groupes étaient à égalité. Le renforcement a avancé l’amélioration. Il ne l’a pas rendue plus grande.',
+        'Dans un essai sur 48\u00A0personnes avec une fasciite plantaire confirmée à l’échographie, tout le monde portait des semelles. Un groupe a ajouté des montées sur pointes avec charge un jour sur deux. L’autre étirait le fascia plantaire tous les jours. À trois mois, le groupe des montées sur pointes était nettement devant pour la douleur et la fonction au quotidien. À douze mois, les deux groupes étaient à égalité. Le renforcement a accéléré l’amélioration. Il ne l’a pas rendue plus grande.',
         'La recommandation soutient les deux. Le raisonnement étude par étude est sur [la page des données scientifiques](/science/) (en anglais).',
       ],
       sourceNote:
@@ -544,7 +544,7 @@ export const HEEL_PAIN_FR: Guide = {
     },
     {
       q: 'Combien de temps dure une fasciite plantaire\u00A0?',
-      a: 'Pour la plupart des gens, elle se calme en quelques mois, pas en quelques semaines. Le calendrier complet est dans [combien de temps dure une fasciite plantaire](/how-long-does-plantar-fasciitis-last/) (en anglais). Une [revue de 2020](https://doi.org/10.1177/2473011419896763) indique qu’environ 90\u00A0% des personnes vont mieux avec des soins non chirurgicaux comme les étirements et les semelles, souvent en 3 à 6\u00A0mois. Certaines mettent plus longtemps, et un groupe plus petit a encore mal après un an. Aucun programme d’exercices ne peut promettre un délai. La recommandation de 2023 sur la douleur au talon donne ses meilleures notes aux étirements et au renforcement du mollet, c’est pourquoi ils passent en premier sur cette page.',
+      a: 'Pour la plupart des gens, elle se calme en quelques mois, pas en quelques semaines. Le calendrier complet est dans [combien de temps dure une fasciite plantaire](/fr/combien-de-temps-dure-fasciite-plantaire/). Une [revue de 2020](https://doi.org/10.1177/2473011419896763) indique qu’environ 90\u00A0% des personnes vont mieux avec des soins non chirurgicaux comme les étirements et les semelles, souvent en 3 à 6\u00A0mois. Certaines mettent plus longtemps, et un groupe plus petit a encore mal après un an. Aucun programme d’exercices ne peut promettre un délai. La recommandation de 2023 sur la douleur au talon donne ses meilleures notes aux étirements et au renforcement du mollet, c’est pourquoi ils passent en premier sur cette page.',
       cites: [CITE.latt],
     },
     {
@@ -561,7 +561,7 @@ export const HEEL_PAIN_FR: Guide = {
     },
     {
       q: 'Quels sont les meilleurs étirements contre la douleur au talon\u00A0?',
-      a: 'L’étirement du fascia plantaire et les étirements du mollet et du soléaire sont ceux que la recommandation de 2023 sur la douleur au talon note A, sa meilleure note. Croisez le pied sur votre genou et tirez les orteils vers vous pendant 30\u00A0secondes, la première fois avant de vous lever le matin. Puis étirez le mollet contre un mur, genou arrière tendu, puis plié. Walkito commence à 2\u00A0maintiens de 30\u00A0secondes chacun. Technique\u00A0: [étirement du fascia plantaire](/exercises/plantar-fascia-stretch/) (en anglais).',
+      a: 'L’étirement du fascia plantaire et les étirements du mollet et du soléaire sont ceux que la recommandation de 2023 sur la douleur au talon note A, sa meilleure note. Croisez le pied sur votre genou et tirez les orteils vers vous pendant 30\u00A0secondes, la première fois avant de vous lever le matin. Puis étirez le mollet contre un mur, genou arrière tendu, puis plié. Walkito commence à 2\u00A0maintiens de 30\u00A0secondes chacun. Technique\u00A0: [étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/).',
       cites: [CITE.guideline],
     },
     {
@@ -569,8 +569,8 @@ export const HEEL_PAIN_FR: Guide = {
       a: 'Consultez d’abord un professionnel de santé si la douleur a suivi une blessure ou une chute, si vous ne pouvez pas poser le pied, ou si elle s’accompagne d’engourdissements, de fourmillements, d’un gonflement, de chaleur ou de fièvre. De même si elle vous réveille la nuit, si elle est vive ou s’aggrave, ou si elle fait mal quand vous pressez le talon, ce qui peut signaler une fracture de fatigue. Walkito ne pose pas de diagnostic.',
     },
     {
-      q: 'Marcher aide-t-il la fasciite plantaire\u00A0?',
-      a: 'Marcher ne pose en général pas de problème, mais ce n’est pas un exercice contre la fasciite plantaire à lui seul. La recommandation de 2023 conseille d’adapter la charge plutôt que d’arrêter l’activité. Si une marche rend vos premiers pas du lendemain matin nettement pires, la distance ou l’allure était de trop. S’étirer avant de marcher, surtout l’[étirement du fascia plantaire](/exercises/plantar-fascia-stretch/) (en anglais) avant vos premiers pas, rend les premières minutes plus faciles.',
+      q: 'Marcher aide-t-il en cas de fasciite plantaire\u00A0?',
+      a: 'Marcher ne pose en général pas de problème, mais ce n’est pas un exercice contre la fasciite plantaire à lui seul. La recommandation de 2023 conseille d’adapter la charge plutôt que d’arrêter l’activité. Si une marche rend vos premiers pas du lendemain matin nettement pires, la distance ou l’allure était de trop. S’étirer avant de marcher, surtout l’[étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) avant vos premiers pas, rend les premières minutes plus faciles.',
     },
   ],
   redFlags: RED_FLAGS,

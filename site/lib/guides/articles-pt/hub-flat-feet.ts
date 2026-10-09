@@ -120,7 +120,7 @@ export const HUB_FLAT_FEET_PT: Guide = {
         'O pé chato pode se misturar com outros problemas no pé, principalmente quando você fica em pé ou caminha por muito tempo. Se a dor é perto do calcanhar e segue o padrão da manhã (forte nos primeiros passos, melhorando depois de alguns minutos), isso combina mais com fascite plantar. Veja [fascite plantar](/pt/fascite-plantar/) para uma visão completa.',
       ],
       bullets: [
-        'A [dor na planta do pé](/ball-of-foot-pain/) (em inglês) pode vir de carga demais na parte da frente do pé quando o arco é baixo. Uma panturrilha tensa joga o peso para a frente.',
+        'A [dor no antepé](/ball-of-foot-pain/) (em inglês) pode vir de carga demais na parte da frente do pé quando o arco é baixo. Uma panturrilha tensa joga o peso para a frente.',
         '[Pés doendo de ficar em pé o dia todo](/feet-hurt-standing-all-day/) (em inglês) fala dos exercícios e dos calçados que ajudam quando um dia longo em piso duro deixa o arco doendo.',
         '[Enfermagem e dor nos pés](/nurses-foot-pain/) (em inglês) trata do peso dos plantões de 12\u00A0horas.',
       ],
@@ -133,7 +133,7 @@ export const HUB_FLAT_FEET_PT: Guide = {
         '[Puxar a toalha com os dedos](/exercises/towel-scrunch/) (em inglês) explica o exercício com a toalha para os músculos intrínsecos do pé.',
         '[Abrir os dedos](/exercises/toe-spread/) (em inglês) explica como abrir os dedos para dividir a carga com o arco.',
         '[Inversão com faixa](/exercises/ankle-inversion-band/) (em inglês) fortalece o tibial posterior.',
-        '[Dor na planta do pé](/ball-of-foot-pain/) (em inglês) fala da dor na parte da frente do pé, que se mistura com o pé chato quando a carga vai para a frente.',
+        '[Dor no antepé](/ball-of-foot-pain/) (em inglês) fala da dor na parte da frente do pé, que se mistura com o pé chato quando a carga vai para a frente.',
         '[Pés doendo de ficar em pé o dia todo](/feet-hurt-standing-all-day/) (em inglês) fala dos exercícios e dos calçados para dias longos em pé.',
         '[Enfermagem e dor nos pés](/nurses-foot-pain/) (em inglês) trata da dor nos pés de quem trabalha na área da saúde.',
       ],
@@ -180,7 +180,7 @@ export const HUB_FLAT_FEET_PT: Guide = {
     {
       q: 'Qual etnia tem mais pé chato?',
       cites: [CITE.salinasTorres],
-      a: 'O pé chato (pé plano) aparece mais em alguns grupos, embora a pesquisa seja limitada. Uma revisão sistemática de 2023 de estudos populacionais encontrou a raça asiática ligada a mais que o dobro das chances de pé chato, e a raça branca ligada a cerca de metade das chances, em comparações de subgrupos separadas. São padrões de população, não uma previsão para os pés de uma pessoa específica.',
+      a: 'O pé chato (pé plano) aparece mais em alguns grupos, embora a pesquisa seja limitada. Uma revisão sistemática de 2023 de estudos populacionais encontrou a origem asiática ligada a mais que o dobro das chances de pé chato, e pessoas brancas ligadas a cerca de metade das chances, em comparações de subgrupos separadas. São padrões de população, não uma previsão para os pés de uma pessoa específica.',
     },
   ],
   redFlags: {

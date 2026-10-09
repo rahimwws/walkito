@@ -144,7 +144,7 @@ export default function ScienceEs() {
           Así que un resultado para uno no es prueba para el otro. Los estudios del arco no
           demuestran que el entrenamiento del arco alivie el dolor. El trabajo de fuerza de
           pantorrilla no está hecho para cambiar la forma del arco. Walkito trabaja las dos cosas
-          como metas separadas: mañanas sin dolor, y mantener el arco{' '}
+          como metas separadas: mañanas más fáciles, y mantener el arco{' '}
           {PROGRAM.goals.archHoldSeconds}&nbsp;segundos. Hasta tres metas pueden estar activas a la
           vez, y el dolor va primero cuando tienes dolor.
         </p>
@@ -286,7 +286,7 @@ export default function ScienceEs() {
           puede subirlas.
         </p>
         <p>
-          Walkito también puede leer la asimetría al caminar de Apple Health: el porcentaje de
+          Walkito también puede leer la asimetría al caminar de la app Salud: el porcentaje de
           tiempo en que tus pasos con un pie son más rápidos o más lentos que con el otro. El
           iPhone la estima por su cuenta. Walkito la compara solo con <b>tu propio</b> punto de
           partida, nunca con los números de otras personas. Te va a decir cuando tu patrón de
@@ -295,7 +295,7 @@ export default function ScienceEs() {
 
         <h2 id={H.isNot.id}>{H.isNot.h2}</h2>
         <p>
-          Walkito es un programa de ejercicios. No diagnostica ni trata ninguna condición, y no
+          Walkito es un programa de ejercicios. No diagnostica ni trata ninguna afección, y no
           reemplaza a un profesional de la salud. Cómo se escriben y revisan estas páginas está en{' '}
           <a href="/es/sobre-walkito/">la página Sobre Walkito</a>. Las preguntas sobre la app se
           responden en <a href="/es/preguntas-frecuentes/">las preguntas frecuentes</a>.

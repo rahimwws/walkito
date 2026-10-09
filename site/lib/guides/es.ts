@@ -275,11 +275,11 @@ export const FLAT_FEET_ES: Guide = {
     },
     {
       q: '¿Es bueno caminar descalzo si tienes pie plano?',
-      a: 'No hay ningún ensayo que compare caminar descalzo con usar zapatos en pie plano, así que ningún estudio lo resuelve. Caminar descalzo sí trabaja los músculos pequeños que sostienen el arco, por eso ejercicios de arco como el pie corto y el recogido de toalla se hacen sin zapatos. Si caminar descalzo te provoca dolor nuevo, bájale y pruébalo primero sobre una superficie suave.',
+      a: 'No hay ningún ensayo que compare caminar descalzo con usar zapatos en pie plano, así que ningún estudio lo resuelve. Caminar descalzo sí trabaja los músculos pequeños que sostienen el arco, por eso ejercicios de arco como el pie corto y recoger la toalla se hacen sin zapatos. Si caminar descalzo te provoca dolor nuevo, bájale y pruébalo primero sobre una superficie suave.',
     },
     {
       q: '¿Qué empeora el pie plano?',
-      a: 'Pasar mucho tiempo de pie o caminando, usar zapatos gastados o sin soporte, cargar peso extra y dejar de hacer el trabajo de arco y pantorrilla que mantiene fuertes los músculos de soporte. Nada de esto cambia la forma del arco, pero puede hacer que un pie plano flexible se sienta más cansado o dolorido hacia la noche. Un pie plano rígido que sigue doliendo necesita un profesional de la salud, no solo descanso.',
+      a: 'Pasar mucho tiempo de pie o caminando, usar zapatos gastados o sin soporte, cargar peso extra y dejar de hacer el trabajo de arco y pantorrilla que mantiene fuertes los músculos de soporte. Nada de esto cambia la forma del arco, pero puede hacer que un pie plano flexible se sienta más cansado o adolorido hacia la noche. Un pie plano rígido que sigue doliendo necesita un profesional de la salud, no solo descanso.',
     },
   ],
   redFlags: {
@@ -434,7 +434,7 @@ export const HEEL_PAIN_ES: Guide = {
     {
       h2: '¿Qué ejercicios debes evitar con fascitis plantar?',
       paragraphs: [
-        'Evita la actividad de alto impacto que dispare la carga sobre el talón mientras el dolor está encendido, y evita caminar descalzo en pisos duros a primera hora de la mañana.',
+        'Evita la actividad de alto impacto que dispare la carga sobre el talón mientras el dolor esté activo, y evita caminar descalzo en pisos duros a primera hora de la mañana.',
         'Saltar, esprintar y los pliométricos ponen una fuerza pico repentina sobre la fascia plantar. Cuando el tejido está irritado, ese pico puede hacerlo retroceder. La guía de 2023 recomienda ajustar la carga sobre tus pies en el trabajo, en el deporte y en el día a día, un consejo con grado E. No prohíbe ejercicios específicos. La pregunta es si la carga es más de lo que el tejido puede recuperar de un día para otro. Caminar descalzo en pisos duros es un detonante común porque la fascia está más rígida después del reposo y un piso duro no ofrece amortiguación.',
         'Dos cosas más a tener en cuenta. Rodar una pelota bajo el pie debe sentirse firme, no agudo. Si duele, afloja o déjalo. Y si también tienes dolor de Aquiles cerca de la parte de atrás del talón, evita los descensos profundos de talón desde la orilla de un escalón, porque la bajada puede cargar la inserción del Aquiles. Mantén la [elevación de talones con toalla](/es/ejercicios/elevacion-de-talones-con-toalla/) en piso plano hasta que un profesional de la salud descarte el Aquiles.',
       ],
@@ -470,7 +470,7 @@ export const HEEL_PAIN_ES: Guide = {
     {
       h2: '¿Descansar o seguir corriendo con dolor de talón?',
       paragraphs: [
-        'Si el dolor de talón por fascitis plantar se enciende cuando corres, cambia la carga en lugar de dejarlo todo. La guía de 2023 recomienda aprender a ajustar la carga sobre tus pies en el trabajo, en el deporte y en el día a día. Ese consejo tiene grado E, lo que significa que se basa en teoría y no en ensayos. Así que sigue con los estiramientos todos los días, y reduce lo que empeore el talón.',
+        'Si el dolor de talón por fascitis plantar empeora al correr, cambia la carga en lugar de dejarlo todo. La guía de 2023 recomienda aprender a ajustar la carga sobre tus pies en el trabajo, en el deporte y en el día a día. Ese consejo tiene grado E, lo que significa que se basa en teoría y no en ensayos. Así que sigue con los estiramientos todos los días, y reduce lo que empeore el talón.',
         'En una mala mañana, mantén los estiramientos y quita las elevaciones de talón por ese día. La mañana siguiente te dice cómo te fue. Si tus primeros pasos son claramente peores después de correr, esa carrera fue más de lo que el talón podía aguantar. Walkito lo lee igual. Un día muy largo de pie convierte la siguiente sesión de fuerza en una de recuperación más ligera, y una mañana con dolor acorta la sesión sin cancelarla.',
         'Detente y consulta a un profesional de la salud si correr te duele de forma aguda o el dolor empeora semana tras semana. Lo mismo si el dolor aumenta durante tus carreras después de subir el kilometraje, o si te duele al apretar los lados del talón. Las dos cosas pueden ser señales de una fractura por estrés, una de las otras causas de dolor de talón que menciona la guía.',
       ],
@@ -492,7 +492,7 @@ export const HEEL_PAIN_ES: Guide = {
       h2: '¿Los zapatos y las plantillas ayudan con la fascitis plantar?',
       paragraphs: [
         'Los zapatos con soporte ayudan, pero las plantillas por sí solas no alcanzan para la mayoría de las personas. La guía de 2023 califica las ortesis (plantillas y soportes de arco) como opción independiente con **B en contra**, lo que significa que la evidencia dice que no debes depender solo de ellas. Combinadas con estiramiento y trabajo de fuerza, las ortesis reciben una **C**.',
-        'Las férulas nocturnas, usadas mientras duermes de 1 a 3\u00A0meses, reciben el grado más alto de la guía, **A**, en personas que siguen con dolor en los primeros pasos de cada mañana. Mantienen el tobillo para que la fascia plantar no se acorte durante la noche. Pregúntale a un profesional de la salud si vale la pena probarlas.',
+        'Las férulas nocturnas, usadas mientras duermes de 1 a 3\u00A0meses, reciben el grado más alto de la guía, **A**, en personas que siguen con dolor en los primeros pasos de cada mañana. Mantienen el tobillo en ángulo recto para que la fascia plantar no se acorte durante la noche. Pregúntale a un profesional de la salud si vale la pena probarlas.',
         'La guía no califica tipos específicos de zapatos, pero el calzado sin soporte es un factor de riesgo comúnmente reconocido. Los zapatos con soporte de arco y contrafuerte firme comparten parte de la carga que la fascia plantar cargaría sola. Si te duelen los pies después de un día largo de pie, mira [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/). Quienes trabajan por turnos pueden empezar en [dolor de pies en enfermeras](/es/dolor-de-pies-enfermeras/).',
       ],
       cites: [CITE.guideline],
@@ -572,7 +572,7 @@ export const HEEL_PAIN_ES: Guide = {
     },
     {
       q: '¿Qué es lo peor que puedes hacer con fascitis plantar?',
-      a: 'Caminar descalzo sobre piso duro justo al despertar, y volver de golpe a correr o saltar mientras el talón sigue inflamado, son los errores más claros. Las dos cosas cargan la fascia más rígida y menos recuperada con fuerza repentina. La guía de 2023 para el dolor de talón recomienda ajustar la carga en lugar de forzar el dolor.',
+      a: 'Caminar descalzo sobre piso duro justo al despertar, y volver de golpe a correr o saltar mientras el talón sigue irritado, son los errores más claros. Las dos cosas cargan la fascia más rígida y menos recuperada con fuerza repentina. La guía de 2023 para el dolor de talón recomienda ajustar la carga en lugar de forzar el dolor.',
       cites: [CITE.guideline],
     },
     {

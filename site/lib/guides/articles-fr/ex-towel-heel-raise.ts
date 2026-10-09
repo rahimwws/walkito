@@ -40,7 +40,7 @@ export const EX_TOWEL_HEEL_RAISE_FR: Guide = {
       paragraphs: [
         'Roulez une petite serviette en un cylindre à peu près de la largeur de votre poing. Posez-la au bord d’une marche. Tenez-vous sur un pied, les cinq orteils sur la serviette et l’avant du pied sur la marche. Tenez-vous à un mur ou à une rampe pour l’équilibre.',
         'Montez en trois secondes, en poussant par le gros orteil. Tenez deux secondes en haut. Redescendez en trois secondes, en laissant le talon descendre un peu sous le niveau de la marche. Ce tempo lent fait partie du protocole. Des répétitions rapides réduisent la charge sur le tendon et le fascia.',
-        'Dans l’essai de Rathleff, les participants ajoutaient du poids avec un sac à dos une fois que le poids du corps seul ne suffisait plus à rendre la dernière répétition difficile. «\u00A012RM\u00A0» désigne la charge la plus lourde que vous pouvez soulever pour exactement 12\u00A0répétitions contrôlées.',
+        'Dans l’essai de Rathleff, les participants ajoutaient du poids avec un sac à dos une fois que le poids du corps seul ne suffisait plus à rendre la dernière répétition difficile. «\u00A012RM\u00A0» désigne la charge la plus lourde que vous puissiez soulever pour exactement 12\u00A0répétitions contrôlées.',
       ],
       exercises: [
         {
@@ -88,8 +88,8 @@ export const EX_TOWEL_HEEL_RAISE_FR: Guide = {
     {
       h2: 'Versions plus faciles et plus difficiles',
       paragraphs: [
-        'Si la montée sur pointes avec serviette complète sur une marche est trop difficile, redescendez dans la chaîne du mollet. Les [montées sur pointes assis](/exercises/calf-raises/) (en anglais) sont la charge la plus faible. Les montées debout sur deux pieds viennent ensuite. Puis le maintien sur pointes en haut. Puis la montée sur une jambe avec serviette sur une marche. Chaque étape doit vous paraître gérable deux séances de suite avant de passer à la suivante.',
-        'Si le poids du corps sur une jambe est trop facile, ajoutez de la charge. L’essai de Rathleff utilisait un sac à dos rempli de livres ou de bouteilles d’eau. En salle, vous avez accès à une machine à mollets ou à un gilet lesté. Le but est que la dernière répétition de chaque série soit vraiment la dernière que vous pouvez faire avec une bonne technique.',
+        'Si la montée sur pointes avec serviette complète sur une marche est trop difficile, revenez à une étape plus facile de la progression du mollet. Les [montées sur pointes assis](/exercises/calf-raises/) (en anglais) sont la charge la plus faible. Les montées debout sur deux pieds viennent ensuite. Puis le maintien sur pointes en haut. Puis la montée sur une jambe avec serviette sur une marche. Chaque étape doit vous paraître gérable deux séances de suite avant de passer à la suivante.',
+        'Si le poids du corps sur une jambe est trop facile, ajoutez de la charge. L’essai de Rathleff utilisait un sac à dos rempli de livres ou de bouteilles d’eau. En salle, vous avez accès à une machine à mollets ou à un gilet lesté. Le but est que la dernière répétition de chaque série soit vraiment la dernière que vous puissiez faire avec une bonne technique.',
       ],
     },
     {
@@ -151,7 +151,7 @@ export const EX_TOWEL_HEEL_RAISE_FR: Guide = {
   },
   program: {
     h2: 'En faire un plan',
-    text: 'La montée sur pointes avec serviette est une étape d’une chaîne du mollet que Walkito intègre à un plan hebdomadaire. La chaîne va des montées sur pointes assis aux montées sur deux pieds, puis au maintien, à la montée avec serviette, aux descentes excentriques du talon et enfin aux sauts pogo. Chaque étape s’ouvre une fois que deux séances au niveau actuel vous ont paru faciles.',
+    text: 'La montée sur pointes avec serviette est une étape d’une progression du mollet que Walkito intègre à un plan hebdomadaire. La progression va des montées sur pointes assis aux montées sur deux pieds, puis au maintien, à la montée avec serviette, aux descentes excentriques du talon et enfin aux sauts pogo. Chaque étape s’ouvre une fois que deux séances au niveau actuel vous ont paru faciles.',
     more: [
       'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet et l’équilibre. Walkito est un programme d’exercices, pas un outil de diagnostic.',
     ],

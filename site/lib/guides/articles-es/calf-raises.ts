@@ -24,9 +24,9 @@ export const CALF_RAISES_ES: Guide = {
   takeaways: [
     'En un ensayo con 48\u00A0personas, las elevaciones de talón con carga y una toalla bajo los dedos aliviaron el dolor de la fascitis plantar más rápido que solo estirar a los tres meses, aunque a los doce meses los dos grupos estaban igualados (Rathleff y colegas, 2015).',
     'La guía de 2023 para el dolor de talón le da al entrenamiento de fuerza una B, su segundo grado más alto, y al estiramiento una A (Koc y colegas, 2023).',
-    'Una dorsiflexión de tobillo reducida, es decir, cuánto se dobla el pie hacia arriba, hacia la tibia, muchas veces por un gastrocnemio tenso, el músculo más grande y externo de la pantorrilla, es un factor de riesgo independiente para la fascitis plantar (Riddle y colegas, 2003).',
+    'Una dorsiflexión de tobillo reducida, es decir, cuánto se dobla el pie hacia arriba, hacia la tibia, muchas veces por un gastrocnemio tenso, el músculo más grande y superficial de la pantorrilla, es un factor de riesgo independiente para la fascitis plantar (Riddle y colegas, 2003).',
     'La toalla bajo los dedos activa el mecanismo de molinete (windlass), que carga la fascia plantar junto con la pantorrilla.',
-    'Una cifra de elevaciones de talón a una pierna de unas 20 y pocas, en promedio unas 23-24, es una referencia común en adultos, útil para seguir tu avance semana a semana (Hebert-Losier y colegas, 2017).',
+    'Una cifra de elevaciones de talón a una pierna de unas 20 y pocas, en promedio unas 23-24, es una referencia común en adultos, útil para seguir tu avance semana a semana (Hébert-Losier y colegas, 2017).',
   ],
   toc: true,
   sections: [
@@ -155,7 +155,7 @@ export const CALF_RAISES_ES: Guide = {
       keyFact: 'En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenía una contractura limitada al gastrocnemio, y otro 23 a 30\u00A0% tenía una contractura combinada de gastrocnemio y sóleo (Patel y colegas, 2011).',
       paragraphs: [
         'Una pantorrilla tensa jala del talón a través del tendón de Aquiles, y la fascia plantar comparte la carga en el otro extremo. Cuando el tobillo no se dobla lo suficiente, cada paso pone más tensión en la fascia.',
-        'En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0por ciento tenía una contractura solo del gastrocnemio, el músculo externo de la pantorrilla, y otro 23 a 30\u00A0por ciento tenía una contractura combinada de gastrocnemio y sóleo. Por otro lado, un estudio de casos y controles emparejados, con 50\u00A0casos y 100\u00A0controles, encontró que una dorsiflexión de tobillo reducida, cuánto se dobla el pie hacia arriba, hacia la tibia, era el factor de riesgo independiente más fuerte para la fascitis plantar.',
+        'En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0por ciento tenía una contractura solo del gastrocnemio, el músculo superficial de la pantorrilla, y otro 23 a 30\u00A0por ciento tenía una contractura combinada de gastrocnemio y sóleo. Por otro lado, un estudio de casos y controles emparejados, con 50\u00A0casos y 100\u00A0controles, encontró que una dorsiflexión de tobillo reducida, cuánto se dobla el pie hacia arriba, hacia la tibia, era el factor de riesgo independiente más fuerte para la fascitis plantar.',
         'Por eso en la lista aparecen tanto el estiramiento como el fortalecimiento de la pantorrilla. Estirar le da más rango al tobillo. Fortalecer le da a la pantorrilla suficiente capacidad para que no se tense con la carga normal del día. La guía recomienda los dos. El mismo mecanismo de la pantorrilla tensa aparece en otros dolores de la pierna: mira [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/) y [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) si tu dolor se parece más a alguno de esos.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle, CITE.guideline],
@@ -171,7 +171,7 @@ export const CALF_RAISES_ES: Guide = {
     },
     {
       h2: '¿Cuántas elevaciones de talón a una pierna deberías poder hacer?',
-      keyFact: 'Un estudio normativo con 566\u00A0adultos sanos encontró un promedio de unas 23 a 24\u00A0repeticiones en la prueba de elevación de talón a una pierna (Hebert-Losier y colegas, 2017).',
+      keyFact: 'Un estudio normativo con 566\u00A0adultos sanos encontró un promedio de unas 23 a 24\u00A0repeticiones en la prueba de elevación de talón a una pierna (Hébert-Losier y colegas, 2017).',
       paragraphs: [
         'Una referencia común en adultos para la prueba de resistencia de elevación de talón a una pierna está en unas 20 y pocas, en promedio unas 23-24\u00A0repeticiones, según datos normativos de 566\u00A0adultos sanos. Esa cifra cambia con la edad, el sexo, el IMC y el nivel de actividad, así que es un punto de referencia, no una línea de aprobado o reprobado. Para seguir tu avance con la fascitis plantar importa más si el número sube semana a semana y si los dos lados están más o menos parejos.',
         'La meta de pantorrilla en la app es de 25\u00A0elevaciones de talón a una pierna. La prueba se repite cada 14\u00A0días mientras la meta de pantorrilla está activa, y después cada 28\u00A0días una vez que la alcanzas, así puedes ver la tendencia sin adivinar.',
@@ -200,7 +200,7 @@ export const CALF_RAISES_ES: Guide = {
     {
       q: '¿Cuántas elevaciones de talón debo hacer para la fascitis plantar?',
       cites: [CITE.rathleff],
-      a: 'El único ensayo que probó un protocolo concreto de elevaciones de talón para la fascitis plantar empezó con 3\u00A0series a 12\u00A0repeticiones máximas, pasó a 4\u00A0series de 10RM en la semana 2 y a 5\u00A0series de 8RM en la semana 4, un día sí y otro no, durante hasta 3\u00A0meses (Rathleff 2015). «12RM» significa la carga más pesada que puedes levantar en 12\u00A0repeticiones controladas, no un número fijo para todos.',
+      a: 'El único ensayo que probó un protocolo concreto de elevaciones de talón para la fascitis plantar empezó con 3\u00A0series a 12\u00A0repeticiones máximas, pasó a 4\u00A0series de 10RM en la semana 3 y a 5\u00A0series de 8RM en la semana 5, un día sí y otro no, durante hasta 3\u00A0meses (Rathleff 2015). «12RM» significa la carga más pesada que puedes levantar en 12\u00A0repeticiones controladas, no un número fijo para todos.',
     },
     {
       q: '¿Las elevaciones de talón empeoran la fascitis plantar?',
@@ -210,7 +210,7 @@ export const CALF_RAISES_ES: Guide = {
     {
       q: '¿Para qué sirve la toalla en la elevación de talones con toalla?',
       cites: [CITE.rathleff],
-      a: 'La toalla va enrollada bajo los dedos para que se doblen hacia arriba al final de la subida. Eso activa el mecanismo de molinete (windlass), la conexión entre el tendón de Aquiles y la fascia plantar. Sin la toalla, el ejercicio trabaja sobre todo la pantorrilla. Con ella, la fascia recibe parte de la carga, y por eso el ensayo la usó.',
+      a: 'La toalla va enrollada bajo los dedos para que se doblen hacia arriba al final de la subida. Eso activa el mecanismo de molinete (windlass): cuando el dedo gordo se dobla hacia arriba, la fascia plantar se tensa. Sin la toalla, el ejercicio trabaja sobre todo la pantorrilla. Con ella, la fascia recibe parte de la carga, y por eso el ensayo la usó.',
     },
     {
       q: '¿Qué hago primero para la fascitis plantar, estirar o fortalecer?',
@@ -225,7 +225,7 @@ export const CALF_RAISES_ES: Guide = {
     {
       q: '¿Cuántas elevaciones de talón a una pierna son normales?',
       cites: [CITE.hebertLosier],
-      a: 'Un estudio normativo con 566\u00A0adultos sanos encontró una mediana de unas 23-24\u00A0repeticiones como cifra típica en adultos, que cambia con la edad, el sexo y el nivel de actividad (Hebert-Losier 2017). El número sirve para comparar una pierna con la otra o para ver cambios con las semanas, no como una línea estricta de aprobado o reprobado.',
+      a: 'Un estudio normativo con 566\u00A0adultos sanos encontró una mediana de unas 23-24\u00A0repeticiones como cifra típica en adultos, que cambia con la edad, el sexo y el nivel de actividad (Hébert-Losier 2017). El número sirve para comparar una pierna con la otra o para ver cambios con las semanas, no como una línea estricta de aprobado o reprobado.',
     },
     {
       q: '¿Es normal sentir el ejercicio en la pantorrilla y no en el talón?',

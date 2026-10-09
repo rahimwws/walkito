@@ -82,7 +82,7 @@ export const EX_TOWEL_HEEL_RAISE_ES: Guide = {
       h2: '¿Cuáles son los errores comunes en la elevación de talones con toalla?',
       paragraphs: [
         'Ir demasiado rápido es el error más común. Bajar en tres segundos mantiene la pantorrilla en tensión el tiempo suficiente para ganar fuerza. Subir y bajar rebotando lo convierte en un ejercicio de cardio, no de fuerza.',
-        'Si la toalla se resbala y solo quedan uno o dos dedos encima, baja la carga sobre la fascia. Los cinco dedos deben estar sobre la toalla. Si la toalla se sigue resbalando, dóblala más gruesa o usa una toalla de manos en vez de una de baño.',
+        'Si la toalla se resbala y solo quedan uno o dos dedos encima, disminuye la carga sobre la fascia. Los cinco dedos deben estar sobre la toalla. Si la toalla se sigue resbalando, dóblala más gruesa o usa una toalla de manos en vez de una de baño.',
         'Empezar con una pierna cuando las elevaciones con dos pies todavía te cuestan lleva a mala técnica y a compensar. Si una elevación a una pierna sobre un escalón es demasiado por ahora, empieza con [elevaciones de talón con dos pies](/es/ejercicios/elevaciones-de-talon/) en el piso y ve subiendo.',
       ],
     },

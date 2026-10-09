@@ -82,7 +82,7 @@ export const HEEL_SPUR_EXERCISES_EN: Guide = {
           name: 'Calf stretch (straight knee)',
           evidence: { level: 'strong', why: 'Guideline grade A. A tight gastrocnemius was the strongest risk factor for plantar fasciitis in a 2003 case-control study.' },
           dose: '2 holds of 30 seconds, each leg',
-          how: 'Hands on a wall. Back leg straight, heel on the floor, hips forward. Hold until you feel the stretch in the upper calf. The gastrocnemius, the bigger outer calf muscle, only stretches with the knee straight.',
+          how: 'Hands on a wall. Back leg straight, heel on the floor, hips forward. Hold until you feel the stretch in the upper calf. The gastrocnemius, the bigger, more superficial calf muscle, only stretches with the knee straight.',
           often: 'Most sessions',
           feel: 'A stretch in the upper calf',
           stop: 'Pain reaches 6/10',

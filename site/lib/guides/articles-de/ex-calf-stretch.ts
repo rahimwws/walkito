@@ -16,7 +16,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
     'Wade dehnen mit gestrecktem Knie bei Plantarfasziitis, Fersenschmerzen und verkürzter Wade: Technik, Sätze, wie lange halten und was die Studien sagen.',
   h1: 'Wadendehnung bei Plantarfasziitis: Technik, Sätze und Haltedauer',
   lede:
-    'Die Wadendehnung mit gestrecktem Knie zielt auf den Gastrocnemius, den großen äußeren Wadenmuskel. Ein verkürzter Gastrocnemius begrenzt, wie weit sich das Sprunggelenk beugt, und in einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor. Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Wadendehnen ihre beste Bewertung, A.',
+    'Die Wadendehnung mit gestrecktem Knie zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel. Ein verkürzter Gastrocnemius begrenzt, wie weit sich das Sprunggelenk beugt, und in einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor. Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Wadendehnen ihre beste Bewertung, A.',
   takeaways: [
     'Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie mit passenden Kontrollpersonen der stärkste unabhängige Risikofaktor für Plantarfasziitis, mit 23,3-fachen Odds (Riddle und Kollegen, 2003).',
     'In einer Fallserie mit 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius (Patel und DiGiovanni, 2011).',
@@ -37,7 +37,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
           name: 'Wadendehnung (gestrecktes Knie)',
           evidence: {
             level: 'strong',
-            why: 'Die Leitlinie von 2023 bewertet Wadendehnen mit A. Eine verkürzte Wade war in einer Fall-Kontroll-Studie von 2003 der stärkste Risikofaktor für Plantarfasziitis.',
+            why: 'Die Leitlinie von 2023 bewertet Wadendehnen mit A. Eine eingeschränkte Dorsalflexion im Sprunggelenk war in einer Fall-Kontroll-Studie von 2003 der stärkste Risikofaktor für Plantarfasziitis.',
           },
           dose: 'Walkito beginnt mit 3-mal 30\u00A0Sekunden halten, jedes Bein',
           how: 'Hände an die Wand. Geh mit einem Fuß nach hinten, das Knie bleibt gestreckt und die Ferse unten. Schieb die Hüfte nach vorn, bis du eine Dehnung in der oberen Wade spürst. 30\u00A0Sekunden halten.',
@@ -53,11 +53,11 @@ export const EX_CALF_STRETCH_DE: Guide = {
     },
     {
       h2: 'Warum verursacht eine verkürzte Wade Fersenschmerzen?',
-      keyFact: 'In einer Übersicht über 254\u00A0Personen mit Plantarfasziitis hatte etwas mehr als die Hälfte eine Kontraktur nur des Gastrocnemius, und 23 bis 30\u00A0% hatten beide Wadenmuskeln verkürzt (Patel und DiGiovanni, 2011).',
+      keyFact: 'In einer Fallserie mit 254\u00A0Personen mit Plantarfasziitis hatte etwas mehr als die Hälfte eine Kontraktur nur des Gastrocnemius, und 23 bis 30\u00A0% hatten beide Wadenmuskeln verkürzt (Patel und DiGiovanni, 2011).',
       paragraphs: [
-        'Der Gastrocnemius zieht von hinter dem Knie über die Achillessehne bis zur Ferse. Die Plantarfaszie setzt dort an, wo die Achillessehne aufhört, läuft unter dem Fersenbein herum und nach vorn bis zu den Zehen. Wenn der Gastrocnemius verkürzt ist, begrenzt er, wie weit sich das Sprunggelenk nach oben beugen kann. Dadurch muss die Plantarfaszie bei jedem Schritt mehr Spannung abfangen.',
+        'Der Gastrocnemius zieht von hinter dem Knie über die Achillessehne bis zur Ferse. Die Plantarfaszie setzt unten am Fersenbein an, demselben Knochen, an dem hinten die Achillessehne ansetzt, und läuft nach vorn bis zu den Zehen. Wenn der Gastrocnemius verkürzt ist, begrenzt er, wie weit sich das Sprunggelenk nach oben beugen kann. Dadurch muss die Plantarfaszie bei jedem Schritt mehr Spannung abfangen.',
         'In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0passenden Kontrollpersonen erhöhte eine eingeschränkte Dorsalflexion im Sprunggelenk die Odds für eine Plantarfasziitis um das 23,3-Fache. Das war stärker als BMI, Zeit im Stehen oder jede andere Variable in der Studie.',
-        'Unabhängig davon fand eine Übersicht über 254\u00A0Personen mit Plantarfasziitis, dass 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius hatten und weitere 23 bis 30\u00A0% eine kombinierte Kontraktur von Gastrocnemius und Soleus. Eine verkürzte Wade ist also keine Nebensache. Sie kommt bei den meisten Menschen mit dieser Erkrankung vor.',
+        'Unabhängig davon fand eine Fallserie mit 254\u00A0Personen mit Plantarfasziitis, dass 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius hatten und weitere 23 bis 30\u00A0% eine kombinierte Kontraktur von Gastrocnemius und Soleus. Eine verkürzte Wade ist also keine Nebensache. Sie kommt bei den meisten Menschen mit dieser Erkrankung vor.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
     },
@@ -110,7 +110,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
     {
       q: 'Was ist der Unterschied zwischen Wadendehnung und Soleusdehnung?',
       cites: [CITE.patelGastrocnemius],
-      a: 'Die Wadendehnung mit gestrecktem Knie zielt auf den Gastrocnemius, den großen äußeren Wadenmuskel. Bei der Soleusdehnung beugst du das hintere Knie, dadurch wird der Gastrocnemius locker und der tiefere Soleus isoliert. Beide Muskeln waren bei der Mehrheit der Menschen mit Plantarfasziitis verkürzt (Patel und DiGiovanni, 2011).',
+      a: 'Die Wadendehnung mit gestrecktem Knie zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel. Bei der Soleusdehnung beugst du das hintere Knie, dadurch wird der Gastrocnemius locker und der tiefere Soleus isoliert. Bei über der Hälfte der Menschen mit Plantarfasziitis war nur der Gastrocnemius verkürzt, bei 23 bis 30\u00A0% beide Wadenmuskeln (Patel und DiGiovanni, 2011).',
     },
     {
       q: 'Können verkürzte Waden Plantarfasziitis verursachen?',
@@ -126,14 +126,14 @@ export const EX_CALF_STRETCH_DE: Guide = {
       'die Wade nur auf einer Seite geschwollen, gerötet oder warm ist',
       'der Schmerz nach einer Verletzung oder einem Sturz angefangen hat',
       'Taubheit, Kribbeln oder Brennen zur verkürzten Wade dazukommen',
-      'es nach mehreren Wochen täglichem Dehnen nicht besser geworden ist',
+      'es nach mehreren Wochen täglichen Dehnens nicht besser geworden ist',
     ],
   },
   program: {
     h2: 'Als Plan umsetzen',
     text: 'Walkito plant die Wadendehnung zusammen mit der Soleusdehnung und der Plantarfaszien-Dehnung in die meisten Einheiten ein. Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Die App geht in deinem Tempo vom Dehnen zum Krafttraining über.',
     more: [
-      'Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Eine verkürzte Wade, die über Wochen lockerer wird, zeigt sich im Test als mehr Beweglichkeit im Sprunggelenk. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
+      'Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer, Gewölbehalten und Gleichgewicht. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
     ],
     cta: 'Fang mit 3\u00A0Minuten am Tag an.',
   },

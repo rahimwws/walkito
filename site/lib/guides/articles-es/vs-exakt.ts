@@ -140,7 +140,7 @@ export const VS_EXAKT_ES: Guide = {
       h2: '¿Cómo arma tu plan cada app?',
       paragraphs: [
         'Exakt te pregunta por tu lesión, tu nivel de experiencia y tu horario semanal, y después te asigna un plan de rehabilitación estructurado por niveles. Avanzas de nivel según cómo te va en cada sesión. Cuando terminas la rehabilitación, puedes pasar directo a un plan de entrenamiento para correr sin empezar de cero.',
-        'Walkito te pregunta dónde te duele, de qué lado, qué tan activo eres, cuál es tu meta y cuántos días y minutos tienes. Arma un plan semanal en torno a metas medibles: mañanas sin dolor, mantener el arco 60\u00A0segundos, 25 elevaciones de talón a una pierna, 30\u00A0segundos de equilibrio a una pierna y simetría entre izquierda y derecha. Cada semana rehace el plan según cómo te fue la semana anterior. Se enfoca en una meta a la vez. Cuando alcanzas una meta, pasa a mantenerla y empieza la siguiente.',
+        'Walkito te pregunta dónde te duele, de qué lado, qué tan activo eres, cuál es tu meta y cuántos días y minutos tienes. Arma un plan semanal en torno a metas medibles: mañanas más fáciles, mantener el arco 60\u00A0segundos, 25 elevaciones de talón a una pierna, 30\u00A0segundos de equilibrio a una pierna y simetría entre izquierda y derecha. Cada semana rehace el plan según cómo te fue la semana anterior. Se enfoca en una meta a la vez. Cuando alcanzas una meta, pasa a mantenerla y empieza la siguiente.',
         'La diferencia principal: Exakt sigue un avance estructurado por niveles. Walkito sigue un avance por metas, donde el chequeo de cada mañana ajusta la intensidad del día.',
       ],
     },
@@ -256,7 +256,7 @@ export const VS_EXAKT_ES: Guide = {
   },
   program: {
     h2: 'Hacerlo como un plan',
-    text: 'Si Walkito parece lo correcto para tu situación, así funciona. Respondes preguntas sobre dónde te duele, de qué lado, qué tan activo eres y cuál es tu meta. Walkito arma un plan semanal en torno a metas medibles, empezando por mañanas sin dolor. Cada mañana, un chequeo ajusta el día.',
+    text: 'Si Walkito parece lo correcto para tu situación, así funciona. Respondes preguntas sobre dónde te duele, de qué lado, qué tan activo eres y cuál es tu meta. Walkito arma un plan semanal en torno a metas medibles, empezando por mañanas más fáciles. Cada mañana, un chequeo ajusta el día.',
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Cada 14\u00A0días, una prueba corta mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio, y muestra la diferencia entre tu lado izquierdo y el derecho. Los ejercicios siguen la guía clínica de 2023 y el ensayo de Rathleff de 2015. Walkito es un programa de ejercicios, no un diagnóstico ni un reemplazo de un profesional de la salud.',
     ],

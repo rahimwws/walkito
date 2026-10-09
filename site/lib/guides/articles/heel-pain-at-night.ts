@@ -116,7 +116,7 @@ export const HEEL_PAIN_AT_NIGHT_EN: Guide = {
       exercises: [
         {
           name: 'Plantar fascia stretch (seated)',
-          evidence: { level: 'strong', why: 'Guideline grade A. DiGiovanni 2003 RCT of 101 people found tissue-specific stretching superior to calf stretching for first-step pain.' },
+          evidence: { level: 'strong', why: 'Guideline grade A. DiGiovanni 2003 RCT of 101 people (82 completed follow-up) found tissue-specific stretching superior to calf stretching for first-step pain.' },
           dose: '10 holds of 10 seconds, each foot',
           how: 'Sit on the edge of the bed. Cross the affected foot over the opposite knee. Pull the toes back toward the shin until you feel a stretch along the arch. Hold for 10 seconds. This is also the morning stretch the guideline recommends doing before your foot touches the floor.',
           often: 'Before bed and before standing in the morning',

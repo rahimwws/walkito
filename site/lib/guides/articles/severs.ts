@@ -96,7 +96,7 @@ export const SEVERS_EN: Guide = {
     {
       h2: 'Does calf stretching help Sever\'s disease?',
       paragraphs: [
-        'Tight calf muscles increase the pull on the growth plate, and calf tightness is one of the recognized risk factors for calcaneal apophysitis. Stretching the gastrocnemius (the outer calf muscle, stretched with the knee straight) and the soleus (the deeper calf muscle, stretched with the knee bent) is a standard recommendation.',
+        'Tight calf muscles increase the pull on the growth plate, and calf tightness is one of the recognized risk factors for calcaneal apophysitis. Stretching the gastrocnemius (the more superficial calf muscle, stretched with the knee straight) and the soleus (the deeper calf muscle, stretched with the knee bent) is a standard recommendation.',
         "In the Wiegerinck trial, the exercise group performed an eccentric calf strengthening program under physiotherapist supervision. This group improved as much as the heel raise and wait-and-see groups. Stretching and gentle strengthening are safe and may help by reducing the traction on the growth plate, but the evidence does not show them to be superior to heel cups or load management alone.",
         'Exercises for children with calcaneal apophysitis should be supervised or taught by a clinician or physiotherapist. The dose and progression depend on the child\'s age, pain level, and sport demands. A child with acute pain who is limping needs rest first, not exercises.',
       ],

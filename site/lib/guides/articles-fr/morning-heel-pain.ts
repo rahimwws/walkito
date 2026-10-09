@@ -23,7 +23,7 @@ export const MORNING_HEEL_PAIN_FR: Guide = {
   lede:
     'Vos premiers pas en sortant du lit sont le pire moment de la journée. Cette vive traction au talon, avant même de vous être redressé, est le schéma que la plupart des gens décrivent quand ils cherchent «\u00A0douleur au talon\u00A0». La cause la plus fréquente est la fasciite plantaire, mais ce n’est pas la seule, et le matin est le moment le plus utile pour agir.',
   intro: [
-    'La page [exercices et étirements pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) donne la liste complète des exercices, les preuves derrière chacun et les notes de la recommandation. Cette page s’attarde sur le matin lui-même\u00A0: pourquoi ce premier pas fait mal, quels autres problèmes ont le même schéma, que faire avant que votre pied touche le sol, et comment suivre votre douleur du matin vous dit si les choses s’améliorent.',
+    'La page [exercices et étirements pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) donne la liste complète des exercices, les preuves derrière chacun et les notes de la recommandation. Cette page s’attarde sur le matin lui-même\u00A0: pourquoi ce premier pas fait mal, quels autres problèmes ont le même schéma, que faire avant que votre pied touche le sol, et comment le suivi de votre douleur du matin vous montre si les choses s’améliorent.',
   ],
   takeaways: [
     'La douleur au talon le matin est le signe typique de la fasciite plantaire\u00A0: la recommandation de 2023 sur la douleur au talon la décrit comme une douleur «\u00A0plus marquée à la mise en charge au réveil ou après une période de repos\u00A0» (Koc et coll., 2023).',
@@ -122,7 +122,7 @@ export const MORNING_HEEL_PAIN_FR: Guide = {
       h2: 'Faut-il porter des chaussures à la maison quand les talons font mal\u00A0?',
       paragraphs: [
         'Marcher pieds nus sur un sol dur met le fascia plantaire en étirement maximal sans aucun amorti dessous. Pour un fascia déjà irrité, c’est la pire combinaison, et cela arrive en général juste après l’étirement du matin, quand le tissu est encore en train de s’échauffer.',
-        'Des chaussures qui soutiennent le pied ou des chaussons à semelle ferme à la maison gardent la voûte légèrement soulevée et amortissent le talon. La recommandation de 2023 inclut des conseils sur les chaussures dans l’approche globale, et une cheville peu souple, c’est-à-dire un pied qui remonte peu vers le tibia, est l’un des facteurs de risque les plus forts de la fasciite plantaire. Une chaussure avec un petit dénivelé talon-orteils aide à compenser un mollet raide.',
+        'Des chaussures qui soutiennent le pied ou des chaussons à semelle ferme à la maison gardent la voûte légèrement soulevée et amortissent le talon. La recommandation de 2023 inclut des conseils sur les chaussures dans l’approche globale, et une cheville peu souple, c’est-à-dire un pied qui remonte peu vers le tibia, est l’un des facteurs de risque les plus forts de la fasciite plantaire. Une chaussure avec un léger drop (différence de hauteur entre le talon et l’avant-pied) aide à compenser un mollet raide.',
         'Pas besoin d’une chaussure spéciale. N’importe quelle basket ou chaussure d’intérieur avec une semelle ferme et un peu de soutien de voûte vaut mieux que les pieds nus sur du carrelage ou du parquet. Si votre douleur est pire à la maison que dehors, c’est souvent pour cette raison. Rester debout toute la journée sur un sol dur pose un problème voisin\u00A0: [mal aux pieds après une journée debout](/feet-hurt-standing-all-day/) (en anglais) présente les exercices et les chaussures pour ce cas.',
       ],
       cites: [CITE.guideline, CITE.riddle],
@@ -140,7 +140,7 @@ export const MORNING_HEEL_PAIN_FR: Guide = {
   ],
   faq: [
     {
-      q: 'Pourquoi j’ai mal au talon seulement le matin\u00A0?',
+      q: 'Pourquoi ai-je mal au talon seulement le matin\u00A0?',
       cites: [CITE.guideline],
       a: 'Le fascia plantaire, l’épaisse bande de tissu sous le pied, se raidit et se raccourcit pendant le sommeil. Vos premiers pas l’étirent sous tout votre poids. La recommandation de 2023 sur la douleur au talon décrit une douleur «\u00A0plus marquée à la mise en charge au réveil ou après une période de repos\u00A0». Après quelques minutes de marche, le tissu s’échauffe et la douleur se calme en général.',
     },
@@ -160,7 +160,7 @@ export const MORNING_HEEL_PAIN_FR: Guide = {
       a: 'La recommandation de 2023 sur la douleur au talon donne aux attelles de nuit la note A, sa meilleure note, pour les personnes dont les premiers pas restent douloureux malgré les étirements. Les attelles de nuit maintiennent le pied à angle droit pendant la nuit, pour que le fascia reste doucement allongé au lieu de se raccourcir. La durée recommandée est de 1 à 3\u00A0mois. Elles valent la peine d’en parler à un professionnel de santé si les étirements seuls ne suffisent pas.',
     },
     {
-      q: 'Pourquoi le talon refait mal après être resté assis\u00A0?',
+      q: 'Pourquoi le talon fait-il de nouveau mal après une station assise\u00A0?',
       cites: [CITE.guideline],
       a: 'Pour la même raison qu’il fait mal le matin. Le fascia plantaire se raccourcit et se raidit quand le pied ne porte pas de charge, que vous dormiez ou que vous soyez simplement assis à un bureau. Quand vous vous levez, il s’étire d’un coup. La recommandation parle de «\u00A0douleur aux premiers pas après une période de repos\u00A0». Un court étirement du fascia avant de vous lever peut aider.',
     },

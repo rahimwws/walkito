@@ -29,7 +29,7 @@ export const STANDING_DESK_ES: Guide = {
     'Una declaración de expertos de 2015 encargada por Public Health England recomienda sumar primero 2\u00A0horas al día de estar de pie y actividad ligera durante el trabajo, y con el tiempo llegar a 4\u00A0horas al día, repartidas en ratos más cortos (Buckley y colegas, 2015).',
     'Una revisión sistemática de 2014 con 14 estudios encontró evidencia suficiente de que los escritorios para trabajar sentado o de pie reducen las molestias de espalda baja, sin bajar la productividad, pero no encontró una proporción ideal entre tiempo sentado y de pie (Karakolis y Callaghan, 2014).',
     'Una revisión de 2015 sobre salud laboral encontró que estar de pie mucho tiempo se asocia con molestias musculares, cansancio y dolor de piernas, y puso los tapetes para el piso, las medias de compresión y el calzado con soporte entre las medidas con evidencia a favor (Waters y Dick, 2015).',
-    'La poca flexibilidad del tobillo, es decir, una pantorrilla tensa, fue el factor que más predijo la fascitis plantar en un estudio de casos y controles de 2003: 23,3 veces las probabilidades. Estar de pie la mayor parte de la jornada las multiplicó por 3,6 (Riddle y colegas, 2003).',
+    'La poca flexibilidad del tobillo, es decir, una pantorrilla tensa, fue el factor que más predijo la fascitis plantar en un estudio de casos y controles de 2003: una razón de probabilidades de 23,3. Estar de pie la mayor parte de la jornada tuvo una razón de probabilidades de 3,6 (Riddle y colegas, 2003).',
   ],
   sections: [
     {
@@ -86,7 +86,7 @@ export const STANDING_DESK_ES: Guide = {
             why: 'La guía de 2023 para el dolor de talón le da al estiramiento de pantorrilla una A. Una pantorrilla tensa fue el mayor factor de riesgo de fascitis plantar en un estudio de casos y controles de 2003.',
           },
           dose: '2\u00A0series de 30\u00A0segundos, cada pierna',
-          how: 'Da un paso atrás de tu escritorio, pon las manos en el borde del escritorio o en una pared, y mantén la pierna de atrás estirada con el talón abajo. Esto trabaja el gastrocnemio, el músculo más grande y externo de la pantorrilla. Lo puedes hacer al pasar de estar de pie a sentarte.',
+          how: 'Da un paso atrás de tu escritorio, pon las manos en el borde del escritorio o en una pared, y mantén la pierna de atrás estirada con el talón abajo. Esto trabaja el gastrocnemio, el músculo más grande y superficial de la pantorrilla. Lo puedes hacer al pasar de estar de pie a sentarte.',
           media: 'calf_stretch_straight',
           caption: 'Estiramiento de pantorrilla: pierna de atrás estirada, talón abajo, manos en el escritorio o la pared',
           alt: 'Una figura apoyada en un escritorio con la pierna de atrás estirada, con la pantorrilla resaltada',
@@ -187,7 +187,7 @@ export const STANDING_DESK_ES: Guide = {
     {
       h2: '¿El dolor de pies por escritorio de pie puede ser fascitis plantar u otra cosa?',
       paragraphs: [
-        'El dolor de pies por escritorio de pie suele ser una molestia general por estar de pie quieto mucho tiempo. Pero si el dolor es agudo, se concentra cerca del talón y es peor en los primeros pasos después de estar sentado un rato, ese patrón apunta a fascitis plantar. Estar de pie la mayor parte de la jornada multiplicó por 3,6 las probabilidades de fascitis plantar en un estudio de casos y controles, así que el escritorio de pie puede estar contribuyendo.',
+        'El dolor de pies por escritorio de pie suele ser una molestia general por estar de pie quieto mucho tiempo. Pero si el dolor es agudo, se concentra cerca del talón y es peor en los primeros pasos después de estar sentado un rato, ese patrón apunta a fascitis plantar. Estar de pie la mayor parte de la jornada se asoció con una razón de probabilidades de 3,6 para la fascitis plantar en un estudio de casos y controles, así que el escritorio de pie puede estar contribuyendo.',
         'Los ejercicios que ayudan en los dos casos se parecen mucho. Si tu dolor sigue el patrón de la fascitis plantar, la guía más completa es [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/). Si sientes los arcos planos, mira [ejercicios para pie plano y arcos caídos](/es/ejercicios-pie-plano/). Si no sabes qué es, consulta a un profesional de la salud antes de cargar el pie con ejercicio.',
       ],
       cites: [CITE.riddle],
@@ -206,7 +206,7 @@ export const STANDING_DESK_ES: Guide = {
     },
     {
       q: '¿Un escritorio de pie puede causar fascitis plantar?',
-      a: 'Estar de pie la mayor parte de la jornada multiplicó por 3,6 las probabilidades de fascitis plantar en un estudio de casos y controles con 50 casos y 100 controles. Un escritorio de pie suma horas de pie a tu día, así que puede contribuir si tu pantorrilla ya está tensa, que fue el factor de riesgo independiente más fuerte, con 23,3 veces las probabilidades. Los estiramientos de pantorrilla son la forma más directa de trabajar los dos factores de riesgo.',
+      a: 'Estar de pie la mayor parte de la jornada se asoció con una razón de probabilidades de 3,6 para la fascitis plantar en un estudio de casos y controles con 50 casos y 100 controles. Un escritorio de pie suma horas de pie a tu día, así que puede contribuir si tu pantorrilla ya está tensa, que fue el factor de riesgo independiente más fuerte, con una razón de probabilidades de 23,3. Los estiramientos de pantorrilla son la forma más directa de trabajar los dos factores de riesgo.',
       cites: [CITE.riddle],
     },
     {

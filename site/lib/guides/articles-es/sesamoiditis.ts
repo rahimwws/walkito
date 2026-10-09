@@ -28,7 +28,7 @@ export const SESAMOIDITIS_ES: Guide = {
       h2: '¿Qué son los huesos sesamoideos y por qué duelen?',
       paragraphs: [
         'Los dos huesos sesamoideos están debajo de la cabeza del primer metatarsiano, el hueso largo que está detrás del dedo gordo. El sesamoideo medial, más cerca del centro del pie, es el que se lesiona con más frecuencia. Juntos ayudan al dedo gordo a impulsarte contra el piso y absorben la fuerza durante la fase de empuje al caminar.',
-        'La sesamoiditis se desarrolla cuando esos huesos o los tejidos que los rodean se inflaman. Las actividades que cargan la parte delantera del pie de forma repetida, como correr, bailar o saltar, son desencadenantes comunes. También lo es un aumento repentino del volumen de entrenamiento. Las personas con arco alto o con una cabeza del primer metatarsiano prominente son más propensas a la condición porque más presión cae en ese punto.',
+        'La sesamoiditis se desarrolla cuando esos huesos o los tejidos que los rodean se inflaman. Las actividades que cargan la parte delantera del pie de forma repetida, como correr, bailar o saltar, son desencadenantes comunes. También lo es un aumento repentino del volumen de entrenamiento. Las personas con arco alto o con una cabeza del primer metatarsiano prominente son más propensas a la afección porque más presión cae en ese punto.',
         'El término sesamoiditis se usa de forma amplia en la práctica y no tiene una definición única estricta. Puede describir inflamación de los huesos, de los tejidos blandos que los rodean, o de ambos. Una revisión sistemática de 2025 señaló que todavía no existen guías estandarizadas para su manejo conservador.',
       ],
       cites: [CITE.bizSesamoiditis],
@@ -37,7 +37,7 @@ export const SESAMOIDITIS_ES: Guide = {
       h2: '¿Cómo se diferencia la sesamoiditis de una fractura de sesamoideo?',
       keyFact: 'Cerca de 1 de cada 10 personas tiene un sesamoideo bipartito, una variante normal que puede verse como una fractura en la radiografía pero tiene bordes lisos y redondeados en vez de dentados (Yammine, 2015).',
       paragraphs: [
-        'La sesamoiditis es una condición por sobreuso. El dolor aparece poco a poco y duele durante la actividad. Una fractura de sesamoideo es una fisura en el hueso, casi siempre por un evento agudo o por estrés crónico. El dolor de la fractura tiende a ser más agudo y puede estar presente incluso en reposo.',
+        'La sesamoiditis es una afección por sobreuso. El dolor aparece poco a poco y duele durante la actividad. Una fractura de sesamoideo es una fisura en el hueso, casi siempre por un evento agudo o por estrés crónico. El dolor de la fractura tiende a ser más agudo y puede estar presente incluso en reposo.',
         'Una complicación es que cerca de 1 de cada 10 personas tiene un sesamoideo bipartito, es decir, el sesamoideo medial viene naturalmente en dos piezas. En una radiografía, un sesamoideo bipartito se ve como una fractura. La diferencia está en los bordes: los bordes del bipartito son lisos y redondeados, mientras que los bordes de una fractura son irregulares y dentados. Tu profesional de la salud también puede radiografiar el otro pie para comparar.',
         'Si las radiografías no son claras, una gammagrafía ósea o una resonancia magnética pueden confirmar el diagnóstico. La resonancia muestra edema de la médula ósea (hinchazón dentro del hueso), que está presente en la mayoría de los casos de sesamoiditis. La resonancia suele reservarse para los casos en que los síntomas persisten a pesar del manejo inicial.',
       ],
@@ -68,7 +68,7 @@ export const SESAMOIDITIS_ES: Guide = {
       paragraphs: [
         'El calzado tiene un papel de apoyo. Un zapato con suela rígida limita el movimiento de la articulación metatarsofalángica del dedo gordo, lo que reduce directamente el estrés sobre los sesamoideos. Las suelas de balancín hacen lo mismo: hacen rodar el pie en la fase de empuje sin exigir que el dedo se doble.',
         'Evita zapatos que sean flexibles en la parte delantera, muy planos o de suela delgada. Los tacones pasan el peso hacia adelante, a la planta delantera del pie, y aumentan la carga sobre los sesamoideos. Si correr desencadenó el problema, cambiar temporalmente a un zapato con más amortiguación en la parte delantera y con mayor altura de suela puede ayudar mientras los síntomas se calman.',
-        'Estos cambios por sí solos no resolverán la condición si la irritación de fondo es importante, pero reducen la carga que causó el problema en primer lugar.',
+        'Estos cambios por sí solos no resolverán la afección si la irritación de fondo es importante, pero reducen la carga que causó el problema en primer lugar.',
       ],
     },
     {
@@ -80,7 +80,7 @@ export const SESAMOIDITIS_ES: Guide = {
       ],
     },
     {
-      h2: '¿Cómo se relaciona la sesamoiditis con otras condiciones de la parte delantera del pie?',
+      h2: '¿Cómo se relaciona la sesamoiditis con otras afecciones de la parte delantera del pie?',
       paragraphs: [
         'El dolor de la sesamoiditis está debajo del dedo gordo, lo que lo separa del [dolor más amplio en la planta delantera del pie](/es/metatarsalgia-dolor-planta-del-pie/) (metatarsalgia), donde el dolor suele estar debajo de la segunda y la tercera cabeza de los metatarsianos. El [neuroma de Morton](/es/neuroma-de-morton/) produce hormigueo o ardor entre el tercer y el cuarto dedo, no debajo del dedo gordo.',
         'La gota también puede afectar la articulación del dedo gordo y al principio se siente parecida, pero la gota aparece de golpe, muchas veces de noche, con enrojecimiento, hinchazón y calor. La sesamoiditis se desarrolla poco a poco. Si el inicio fue repentino y la articulación está roja y caliente, consulta a un profesional de la salud para descartar gota o infección.',
@@ -114,7 +114,7 @@ export const SESAMOIDITIS_ES: Guide = {
     },
     {
       q: '¿Los ejercicios pueden prevenir que la sesamoiditis vuelva?',
-      a: 'Ningún ejercicio se ha probado para la prevención de la sesamoiditis. Estirar las pantorrillas para reducir la carga en la parte delantera del pie y fortalecer los músculos intrínsecos del pie para repartir la presión de forma más pareja son ideas razonables, pero no están comprobadas para esta condición en específico. El uso continuo de una almohadilla de bailarina y calzado adecuado es la estrategia con más respaldo.',
+      a: 'Ningún ejercicio se ha probado para la prevención de la sesamoiditis. Estirar las pantorrillas para reducir la carga en la parte delantera del pie y fortalecer los músculos intrínsecos del pie para repartir la presión de forma más pareja son ideas razonables, pero no están comprobadas para esta afección en específico. El uso continuo de una almohadilla de bailarina y calzado adecuado es la estrategia con más respaldo.',
     },
     {
       q: '¿Qué pasa si no se trata la sesamoiditis?',
@@ -123,7 +123,7 @@ export const SESAMOIDITIS_ES: Guide = {
     },
     {
       q: '¿Es bueno masajear la sesamoiditis?',
-      a: 'Un masaje suave alrededor de la zona puede aliviar algo de molestia, pero la presión firme justo sobre los huesos sesamoideos suele empeorar el dolor, no mejorarlo, porque es exactamente donde está el tejido irritado. Si quieres trabajar la parte delantera del pie, mejor estira la pantorrilla, lo que quita algo de carga de los sesamoideos, en lugar de presionar directamente sobre el punto dolorido.',
+      a: 'Un masaje suave alrededor de la zona puede aliviar algo de molestia, pero la presión firme justo sobre los huesos sesamoideos suele empeorar el dolor, no mejorarlo, porque es exactamente donde está el tejido irritado. Si quieres trabajar la parte delantera del pie, mejor estira la pantorrilla, lo que quita algo de carga de los sesamoideos, en lugar de presionar directamente sobre el punto adolorido.',
     },
   ],
   redFlags: {
@@ -140,7 +140,7 @@ export const SESAMOIDITIS_ES: Guide = {
   program: {
     h2: 'Hacerlo como un plan',
     text:
-      'La sesamoiditis se maneja principalmente con descarga y calzado, no con un programa de ejercicios. Walkito está diseñado para condiciones como la fascitis plantar y el pie plano, donde los programas de carga estructurados tienen respaldo en ensayos. Si tu sesamoiditis se resuelve y quieres reconstruir la fuerza del pie y de la pantorrilla como parte de tu regreso a la actividad, el trabajo de músculos intrínsecos y los estiramientos de pantorrilla de la app pueden ser un complemento útil.',
+      'La sesamoiditis se maneja principalmente con descarga y calzado, no con un programa de ejercicios. Walkito está diseñado para afecciones como la fascitis plantar y el pie plano, donde los programas de carga estructurados tienen respaldo en ensayos. Si tu sesamoiditis se resuelve y quieres reconstruir la fuerza del pie y de la pantorrilla como parte de tu regreso a la actividad, el trabajo de músculos intrínsecos y los estiramientos de pantorrilla de la app pueden ser un complemento útil.',
     more: [
       'Si el dolor en la planta delantera del pie es más amplio e involucra la segunda y la tercera cabeza de los metatarsianos, mira la página de [dolor en la planta del pie](/es/metatarsalgia-dolor-planta-del-pie/) para ejercicios con más evidencia detrás.',
     ],

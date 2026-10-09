@@ -27,7 +27,7 @@ export const CALF_RAISES_IT: Guide = {
   takeaways: [
     'In uno studio su 48\u00A0persone, sollevamenti sulle punte con carico e un asciugamano sotto le dita hanno ridotto il dolore da fascite plantare più in fretta del solo stretching a tre mesi, anche se a dodici mesi i due gruppi erano pari (Rathleff e colleghi, 2015).',
     'La linea guida del 2023 sul dolore al tallone dà al lavoro di forza una B, il suo secondo grado più alto, e allo stretching una A (Koc e colleghi, 2023).',
-    'Una dorsiflessione della caviglia ridotta, cioè quanto il piede si piega verso lo stinco, spesso dovuta a un gastrocnemio rigido, il muscolo esterno e più grande del polpaccio, è un fattore di rischio indipendente per la fascite plantare (Riddle e colleghi, 2003).',
+    'Una dorsiflessione della caviglia ridotta, cioè quanto il piede si piega verso lo stinco, spesso dovuta a un gastrocnemio rigido, il muscolo più grande e superficiale del polpaccio, è un fattore di rischio indipendente per la fascite plantare (Riddle e colleghi, 2003).',
     'L’asciugamano sotto le dita attiva il meccanismo a verricello, e così carica la fascia plantare insieme al polpaccio.',
     'Un numero di sollevamenti su una gamba intorno ai 20-25, in media circa 23-24, è un riferimento comune per gli adulti, utile per seguire i progressi nel giro di settimane (Hebert-Losier e colleghi, 2017).',
   ],
@@ -35,10 +35,10 @@ export const CALF_RAISES_IT: Guide = {
   sections: [
     {
       h2: 'I sollevamenti sulle punte aiutano davvero la fascite plantare?',
-      keyFact: 'In uno studio su 48\u00A0persone, il gruppo dei sollevamenti sulle punte aveva 29\u00A0punti in più nel Foot Function Index a tre mesi, anche se a dodici mesi i due gruppi si erano allineati (Rathleff e colleghi, 2015).',
+      keyFact: 'In uno studio su 48\u00A0persone, il gruppo dei sollevamenti sulle punte aveva un punteggio migliore di 29\u00A0punti nel Foot Function Index a tre mesi, anche se a dodici mesi i due gruppi si erano allineati (Rathleff e colleghi, 2015).',
       paragraphs: [
         'I sollevamenti sulle punte aiutano la fascite plantare perché rinforzano la catena polpaccio-Achille-fascia che assorbe il carico ogni volta che il tallone tocca terra.',
-        'L’unico studio randomizzato che ha testato direttamente questo esercizio per la fascite plantare è Rathleff 2015. In quello studio, 48\u00A0persone con fascite plantare confermata da ecografia sono state divise in due gruppi. Tutti portavano plantari. Un gruppo faceva un sollevamento sulle punte lento e con carico, con un asciugamano arrotolato sotto le dita. L’altro allungava la fascia plantare. A tre mesi, il gruppo dei sollevamenti aveva 29\u00A0punti in più nel Foot Function Index. A dodici mesi, i due gruppi si erano allineati.',
+        'L’unico studio randomizzato che ha testato direttamente questo esercizio per la fascite plantare è Rathleff 2015. In quello studio, 48\u00A0persone con fascite plantare confermata da ecografia sono state divise in due gruppi. Tutti portavano plantari. Un gruppo faceva un sollevamento sulle punte lento e con carico, con un asciugamano arrotolato sotto le dita. L’altro allungava la fascia plantare. A tre mesi, il gruppo dei sollevamenti aveva 29\u00A0punti in meno (cioè meglio) nel Foot Function Index. A dodici mesi, i due gruppi si erano allineati.',
         'Quindi i sollevamenti sulle punte hanno anticipato il miglioramento. Non hanno dato un miglioramento più grande nel lungo periodo. La linea guida clinica del 2023 dà al lavoro di forza una B e allo stretching una A. Li consiglia entrambi. Niente nelle prove suggerisce di sceglierne uno e saltare l’altro.',
       ],
       sourceNote:
@@ -93,7 +93,7 @@ export const CALF_RAISES_IT: Guide = {
           name: 'Sollevamenti sulle punte da seduto',
           evidence: { level: 'moderate', why: 'Il grado B della linea guida riguarda il lavoro di forza in generale. Questo gradino più leggero non è stato testato da solo.' },
           dose: '3\u00A0serie da 10, entrambi i piedi',
-          how: 'Siediti con i piedi appoggiati a terra. Spingi verso l’alto sugli avampiedi di entrambi i piedi. Le mani sulle ginocchia aggiungono resistenza. È un modo con poco carico per iniziare a caricare il polpaccio quando i sollevamenti in piedi sono troppo.',
+          how: 'Siediti con i piedi appoggiati a terra. Spingi verso l’alto sugli avampiedi di entrambi i piedi. Le mani sulle ginocchia aggiungono resistenza. È un modo con poco carico per iniziare a caricare il polpaccio quando i sollevamenti in piedi sono troppo impegnativi.',
           often: 'Giorni di forza, finché è il tuo livello',
           feel: 'Lavoro facile nei polpacci, quasi senza carico sul tallone',
           stop: 'Il dolore arriva a 6/10',
@@ -155,10 +155,10 @@ export const CALF_RAISES_IT: Guide = {
     {
       h2: 'Perché un polpaccio rigido conta per il dolore al tallone?',
       figure: { id: 'calf', caption: 'I due muscoli del polpaccio, il gastrocnemio e il soleo, si uniscono nel tendine d’Achille, che si attacca all’osso del tallone.', alt: 'Viste laterale e posteriore di una gamba con i muscoli gastrocnemio e soleo che si assottigliano nel tendine d’Achille, sopra il tallone.' },
-      keyFact: 'In una serie di 254\u00A0persone con fascite plantare, tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio, e un altro 23-30% una contrattura combinata di gastrocnemio e soleo (Patel e colleghi, 2011).',
+      keyFact: 'In un’analisi retrospettiva su 254\u00A0persone con fascite plantare, tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio, e un altro 23-30% una contrattura combinata di gastrocnemio e soleo (Patel e colleghi, 2011).',
       paragraphs: [
         'Un polpaccio rigido tira il tallone attraverso il tendine d’Achille, e la fascia plantare si divide il carico dall’altra parte. Quando la caviglia non riesce a piegarsi abbastanza, ogni passo mette più tensione sulla fascia.',
-        'In una serie di 254\u00A0persone con fascite plantare, tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio, il muscolo esterno del polpaccio, e un altro 23-30% una contrattura combinata di gastrocnemio e soleo. A parte, uno studio caso-controllo appaiato con 50\u00A0casi e 100\u00A0controlli ha trovato che una dorsiflessione della caviglia ridotta, cioè quanto il piede si piega verso lo stinco, era il fattore di rischio indipendente più forte per la fascite plantare.',
+        'In un’analisi retrospettiva su 254\u00A0persone con fascite plantare, tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio, il muscolo superficiale del polpaccio, e un altro 23-30% una contrattura combinata di gastrocnemio e soleo. A parte, uno studio caso-controllo appaiato con 50\u00A0casi e 100\u00A0controlli ha trovato che una dorsiflessione della caviglia ridotta, cioè quanto il piede si piega verso lo stinco, era il fattore di rischio indipendente più forte per la fascite plantare.',
         'Per questo nell’elenco ci sono sia l’allungamento sia il rinforzo del polpaccio. L’allungamento dà più movimento alla caviglia. Il rinforzo dà al polpaccio abbastanza capacità da non irrigidirsi sotto il normale carico quotidiano. La linea guida consiglia entrambi. Lo stesso meccanismo del polpaccio rigido compare anche in altri dolori della gamba: vedi [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/) e [piedi doloranti dopo una giornata in piedi](/feet-hurt-standing-all-day/) (in inglese) se il tuo dolore somiglia più a uno di questi.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle, CITE.guideline],
@@ -203,7 +203,7 @@ export const CALF_RAISES_IT: Guide = {
     {
       q: 'Quanti sollevamenti sulle punte fare per la fascite plantare?',
       cites: [CITE.rathleff],
-      a: 'L’unico studio che ha testato un protocollo specifico di sollevamenti sulle punte per la fascite plantare partiva da 12\u00A0ripetizioni massime per 3\u00A0serie, passava a 10RM per 4\u00A0serie alla settimana 2 e a 8RM per 5\u00A0serie alla settimana 4, a giorni alterni per un massimo di 3\u00A0mesi (Rathleff 2015). «12RM» vuol dire il carico più pesante con cui riesci a fare 12\u00A0ripetizioni controllate, non un numero fisso uguale per tutti.',
+      a: 'L’unico studio che ha testato un protocollo specifico di sollevamenti sulle punte per la fascite plantare partiva da 12\u00A0ripetizioni massime per 3\u00A0serie, passava a 10RM per 4\u00A0serie alla settimana 3 e a 8RM per 5\u00A0serie alla settimana 5, a giorni alterni per un massimo di 3\u00A0mesi (Rathleff 2015). «12RM» vuol dire il carico più pesante con cui riesci a fare 12\u00A0ripetizioni controllate, non un numero fisso uguale per tutti.',
     },
     {
       q: 'I sollevamenti sulle punte peggiorano la fascite plantare?',
@@ -213,7 +213,7 @@ export const CALF_RAISES_IT: Guide = {
     {
       q: 'A cosa serve l’asciugamano nel sollevamento sulle punte?',
       cites: [CITE.rathleff],
-      a: 'L’asciugamano arrotolato va sotto le dita, così si piegano verso l’alto quando sei in cima. Questo attiva il meccanismo a verricello, il collegamento tra il tendine d’Achille e la fascia plantare. Senza asciugamano, l’esercizio allena soprattutto il polpaccio. Con l’asciugamano, la fascia prende una parte del carico, ed è per questo che lo studio lo ha usato.',
+      a: 'L’asciugamano arrotolato va sotto le dita, così si piegano verso l’alto quando sei in cima. Questo attiva il meccanismo a verricello: quando l’alluce si piega verso l’alto, la fascia plantare si tende. Senza asciugamano, l’esercizio allena soprattutto il polpaccio. Con l’asciugamano, la fascia prende una parte del carico, ed è per questo che lo studio lo ha usato.',
     },
     {
       q: 'Meglio prima lo stretching o il rinforzo per la fascite plantare?',
@@ -237,7 +237,7 @@ export const CALF_RAISES_IT: Guide = {
     {
       q: 'I polpacci deboli causano la fascite plantare?',
       cites: [CITE.riddle, CITE.patelGastrocnemius, CITE.rathleff],
-      a: 'Le prove più forti legano alla fascite plantare un polpaccio rigido, non polpacci deboli. Uno studio caso-controllo ha trovato che una flessibilità della caviglia ridotta era il primo fattore di rischio, e più della metà dei pazienti di una serie aveva una contrattura del polpaccio. Il lavoro di forza aiuta comunque: in uno studio su 48\u00A0persone, i sollevamenti sulle punte hanno ridotto il dolore più in fretta del solo stretching nei primi tre mesi.',
+      a: 'Le prove più forti legano alla fascite plantare un polpaccio rigido, non polpacci deboli. Uno studio caso-controllo ha trovato che una flessibilità della caviglia ridotta era il primo fattore di rischio, e più della metà dei pazienti di un’analisi retrospettiva aveva una contrattura del polpaccio. Il lavoro di forza aiuta comunque: in uno studio su 48\u00A0persone, i sollevamenti sulle punte hanno ridotto il dolore più in fretta del solo stretching nei primi tre mesi.',
     },
     {
       q: 'Qual è il miglior esercizio in assoluto per la fascite plantare?',

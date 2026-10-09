@@ -58,7 +58,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       keyFact: 'In a case-control study of 50 people with plantar fasciitis and 100 without, reduced ankle dorsiflexion raised the odds of plantar fasciitis 23.3 times, the strongest risk factor measured (Riddle and colleagues, 2003).',
       paragraphs: [
         'Plantar fasciitis happens when the fascia is loaded beyond what it can handle and recover from. The load can be too much at once (a sudden jump in running mileage) or steady over time (standing on a hard floor all day).',
-        'A matched case-control study of 50 people with plantar fasciitis and 100 controls found that reduced ankle dorsiflexion was the strongest independent risk factor, with an odds ratio of 23.3. In a separate series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius, the bigger outer calf muscle. Prolonged standing at work raised the odds 3.6 times. Higher body mass index also raised them.',
+        'A matched case-control study of 50 people with plantar fasciitis and 100 controls found that reduced ankle dorsiflexion was the strongest independent risk factor, with an odds ratio of 23.3. In a separate series of 254 people with plantar fasciitis, 52 to 60 percent had a contracture isolated to the gastrocnemius, the bigger, more superficial calf muscle. Prolonged standing at work raised the odds 3.6 times. Higher body mass index also raised them.',
         'The guideline names other risk factors: age between 40 and 60, running or jumping activities, and occupations that involve prolonged standing. Flat feet or high arches can shift how load travels through the fascia, but neither guarantees the condition.',
         'Plantar fasciitis usually comes from a combination: a tight calf, a load the foot was not ready for, and not enough recovery time.',
       ],
@@ -137,7 +137,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
       h2: 'Plantar fasciitis at work and while running',
       paragraphs: [
         'Prolonged standing on hard surfaces is one of the risk factors in the Riddle 2003 study: it raised the odds of plantar fasciitis 3.6 times. A 2015 review of the occupational health literature found prolonged standing at work linked to musculoskeletal discomfort, fatigue and leg pain. If your feet hurt by the end of a shift, the same calf stretches and strength work apply.',
-        'For runners, the 2023 guideline advises changing the load instead of stopping altogether. That means reducing mileage or intensity, not going to zero. The recommendation rests on expert opinion (grade E) because no trial has tested it, but it is consistent with how the Achilles and shin-splints guidelines handle overload injuries too.',
+        'For runners, the 2023 guideline advises changing the load instead of stopping altogether. That means reducing mileage or intensity, not going to zero. The recommendation rests on theoretical evidence (grade E) because no trial has tested it, but it is consistent with how the Achilles and shin-splints guidelines handle overload injuries too.',
       ],
       bullets: [
         '[Feet hurt from standing all day](/feet-hurt-standing-all-day/) covers the exercises and footwear for people on their feet at work.',
@@ -191,7 +191,7 @@ export const HUB_PLANTAR_FASCIITIS_EN: Guide = {
     {
       q: 'Can plantar fasciitis go away on its own?',
       cites: [CITE.latt, CITE.hansen],
-      a: 'It can, but it usually takes a long time. A 2020 review reports about 90 percent of people improve with conservative care (Latt and colleagues, 2020). In a cohort of 174 patients, about half were symptom-free by five years (Hansen and colleagues, 2018). Active care brings that timeline forward.',
+      a: 'It can, but it usually takes a long time. A 2020 review reports about 90 percent of people improve with conservative care (Latt and colleagues, 2020). In a cohort of 174 patients, about half were symptom-free by five years (Hansen and colleagues, 2018). Active care can bring that timeline forward.',
     },
     {
       q: 'Is walking good or bad for plantar fasciitis?',

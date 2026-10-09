@@ -73,7 +73,7 @@ export const MORNING_HEEL_PAIN_EN: Guide = {
         },
         {
           name: 'Calf stretch (straight knee)',
-          evidence: { level: 'strong', why: 'Same guideline grade A. Targets the gastrocnemius, the bigger outer calf muscle.' },
+          evidence: { level: 'strong', why: 'Same guideline grade A. Targets the gastrocnemius, the bigger, more superficial calf muscle.' },
           dose: '3 holds of 30 seconds, each leg',
           how: 'Hands on a wall. Back leg straight, heel down, hips forward. Hold until you feel the stretch in the upper calf.',
           often: 'After the fascia stretch, most mornings',

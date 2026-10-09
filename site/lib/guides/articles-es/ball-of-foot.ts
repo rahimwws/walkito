@@ -25,7 +25,7 @@ export const BALL_OF_FOOT_ES: Guide = {
   toc: true,
   takeaways: [
     'En un estudio con 41\u00A0personas con metatarsalgia primaria, un programa de ejercicios de dedos de 8\u00A0semanas bajó el dolor en promedio 2,7\u00A0puntos en una escala de 10. El estudio no tenía grupo de control (Amaha y colegas, 2020).',
-    'Un gastrocnemio rígido, el músculo más grande y externo de la pantorrilla, pasa el peso hacia adelante, a la parte delantera del pie. En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenían una contractura aislada del gastrocnemio (Patel y DiGiovanni, 2011).',
+    'Un gastrocnemio rígido, el músculo más grande y superficial de la pantorrilla, pasa el peso hacia adelante, a la parte delantera del pie. En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenían una contractura aislada del gastrocnemio (Patel y DiGiovanni, 2011).',
     'Las almohadillas metatarsales, colocadas justo detrás de las cabezas de los metatarsianos, son el enfoque conservador más estudiado para el dolor en la parte delantera del pie.',
     'El neuroma de Morton y la metatarsalgia tienen síntomas parecidos, pero duelen en lugares distintos: el dolor del neuroma suele estar entre el tercer y el cuarto dedo, con hormigueo, mientras que la metatarsalgia ocupa una zona más amplia.',
   ],
@@ -48,7 +48,7 @@ export const BALL_OF_FOOT_ES: Guide = {
         '**Dedos en garra y dedos en martillo** doblan las articulaciones de los dedos hacia abajo, lo que levanta el dedo del piso y pasa su carga al impulsarte a la cabeza del metatarsiano que está detrás.',
         '**Los tacones y los zapatos angostos** llevan el peso hacia la parte delantera del pie y aprietan las cabezas de los metatarsianos entre sí. Por eso el neuroma de Morton es más común en quienes los usan.',
         '**El arco alto** (pie cavo, un pie con el arco alto y rígido) reduce la superficie de apoyo de la planta y concentra la presión en el talón y en la parte delantera del pie. En el otro extremo, el [pie plano](/es/ejercicios-pie-plano/) también puede contribuir al dolor en la parte delantera del pie, porque cambia cómo rueda el pie al impulsarte.',
-        '**La pantorrilla rígida** es una causa poco valorada. Cuando el gastrocnemio, el músculo más grande y externo de la pantorrilla, está rígido, el tobillo no se dobla lo suficiente al caminar. El cuerpo compensa levantando el talón antes de tiempo, y eso pasa más carga a la parte delantera del pie. Es el mismo mecanismo que hay detrás de la [fascitis plantar](/es/ejercicios-fascitis-plantar/) y de la [tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
+        '**La pantorrilla rígida** es una causa poco valorada. Cuando el gastrocnemio, el músculo más grande y superficial de la pantorrilla, está rígido, el tobillo no se dobla lo suficiente al caminar. El cuerpo compensa levantando el talón antes de tiempo, y eso pasa más carga a la parte delantera del pie. Es el mismo mecanismo que hay detrás de la [fascitis plantar](/es/ejercicios-fascitis-plantar/) y de la [tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
       ],
       cites: [CITE.patelGastrocnemius],
     },
@@ -77,7 +77,7 @@ export const BALL_OF_FOOT_ES: Guide = {
       keyFact: 'En 254 personas con fascitis plantar, entre el 52 y el 60 % tenía una contractura aislada del gastrocnemio, la pantorrilla rígida también vinculada a la sobrecarga de la parte delantera del pie (Patel y DiGiovanni, 2011).',
       paragraphs: [
         'Es muy probable. Cuando el gastrocnemio está rígido, el tobillo no se dobla lo suficiente al caminar. El cuerpo levanta el talón antes de tiempo, y eso carga más peso sobre la parte delantera de la planta. El término clínico es equino funcional, y es una causa reconocida de metatarsalgia.',
-        'Los números vienen de la investigación sobre la fascitis plantar, pero el mecanismo es el mismo. En 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenían una contractura aislada del gastrocnemio. Un estudio de casos y controles con 50\u00A0casos y 100\u00A0controles encontró que la menor dorsiflexión del tobillo (cuánto sube el pie hacia la tibia) era el factor de riesgo independiente más fuerte, con 23,3\u00A0veces más probabilidades.',
+        'Los números vienen de la investigación sobre la fascitis plantar, pero el mecanismo es el mismo. En 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenían una contractura aislada del gastrocnemio. Un estudio de casos y controles con 50\u00A0casos y 100\u00A0controles encontró que la menor dorsiflexión del tobillo (cuánto sube el pie hacia la tibia) era el factor de riesgo independiente más fuerte, con una razón de probabilidades de 23,3.',
         'Ningún ensayo ha probado el estiramiento de pantorrilla específicamente para la metatarsalgia, pero la relación está reconocida en la clínica. Mira [elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/) para saber más sobre la relación entre la pantorrilla y el tobillo.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle],
@@ -203,7 +203,7 @@ export const BALL_OF_FOOT_ES: Guide = {
     {
       q: '¿Por qué una pantorrilla rígida hace que me duela la planta del pie?',
       cites: [CITE.patelGastrocnemius, CITE.riddle],
-      a: 'Cuando el gastrocnemio, el músculo más grande y externo de la pantorrilla, está rígido, el tobillo no se dobla lo suficiente al caminar. El cuerpo compensa levantando el talón antes de tiempo, y eso pasa más peso a la parte delantera de la planta. En personas con fascitis plantar, entre el 52 y el 60\u00A0% tenían una contractura aislada del gastrocnemio (Patel y DiGiovanni, 2011). El mismo mecanismo contribuye a sobrecargar la parte delantera del pie.',
+      a: 'Cuando el gastrocnemio, el músculo más grande y superficial de la pantorrilla, está rígido, el tobillo no se dobla lo suficiente al caminar. El cuerpo compensa levantando el talón antes de tiempo, y eso pasa más peso a la parte delantera de la planta. En personas con fascitis plantar, entre el 52 y el 60\u00A0% tenían una contractura aislada del gastrocnemio (Patel y DiGiovanni, 2011). El mismo mecanismo contribuye a sobrecargar la parte delantera del pie.',
     },
     {
       q: '¿Las almohadillas metatarsales funcionan?',
@@ -224,7 +224,7 @@ export const BALL_OF_FOOT_ES: Guide = {
     },
     {
       q: '¿Cuáles son las complicaciones de una metatarsalgia sin tratar?',
-      a: 'Si no se atiende, la metatarsalgia puede cambiar tu forma de caminar, porque de forma natural quitas peso del punto dolorido y lo pasas a otras partes del pie, lo que puede crear dolor en zonas nuevas. La presión constante sobre las cabezas de los metatarsianos también puede contribuir a callos o, con menos frecuencia, a deformidades como el dedo en martillo. Cambiar de calzado y usar almohadillas metatarsales a tiempo reduce este riesgo.',
+      a: 'Si no se atiende, la metatarsalgia puede cambiar tu forma de caminar, porque de forma natural quitas peso del punto adolorido y lo pasas a otras partes del pie, lo que puede crear dolor en zonas nuevas. La presión constante sobre las cabezas de los metatarsianos también puede contribuir a callos o, con menos frecuencia, a deformidades como el dedo en martillo. Cambiar de calzado y usar almohadillas metatarsales a tiempo reduce este riesgo.',
     },
   ],
   redFlags: {
