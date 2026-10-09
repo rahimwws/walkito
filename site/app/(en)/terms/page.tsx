@@ -76,7 +76,7 @@ export default function Terms() {
       <Prose className="shell prose">
         <h1>Terms of use</h1>
 
-        <p className="updated">Last updated: 1 October 2026</p>
+        <p className="updated">Last updated: 9 October 2026</p>
 
         <p className="lede">
           These terms cover your use of the Walkito app, which is run by Walkito
@@ -130,7 +130,8 @@ export default function Terms() {
           Your plan, answers, check-ins, test results and sessions are saved on
           your phone and copied to your account. Sign in with the same account on
           a new phone or after reinstalling and they come back. Purchases come
-          back with Restore Purchases on the same Apple ID.
+          back with Restore Purchases on the same Apple ID on iPhone, or with the
+          same Google account in Google Play on Android.
         </p>
 
         <h2>Your license</h2>
@@ -149,7 +150,8 @@ export default function Terms() {
 
         <h2>Payments</h2>
         <p>
-          Walkito is paid for through the App Store. Apple takes the payment,
+          Walkito is paid for through the App Store on iPhone, run by Apple, or
+          Google Play on Android, run by Google LLC. The store takes the payment,
           holds the receipt, and shows the options, the price and the term before
           you buy. That price is the one that applies, not any figure quoted
           elsewhere. Today there are two subscriptions, and both renew
@@ -168,12 +170,18 @@ export default function Terms() {
         <ul>
           <li>
             A subscription renews automatically at the end of each period, and
-            your Apple ID is charged, unless you turn off renewal at least 24
+            your Apple ID or Google account is charged, unless you turn off renewal at least 24
             hours before the period ends.
           </li>
           <li>
-            Manage or cancel it in <b>Settings → your name → Subscriptions</b>.
-            Canceling stops the next renewal; you keep access until the end of
+            Manage or cancel it on iPhone in{' '}
+            <b>Settings → your name → Subscriptions</b>, or on Android in the
+            Google Play app under{' '}
+            <b>
+              profile icon → Payments &amp; subscriptions → Subscriptions →
+              Walkito → Cancel subscription
+            </b>
+            . Canceling stops the next renewal; you keep access until the end of
             the period you have paid for.
           </li>
           <li>
@@ -183,15 +191,18 @@ export default function Terms() {
           </li>
           <li>
             Deleting the app or your account does not cancel a subscription. Only
-            Apple can do that, from the screen above.
+            the store can do that, Apple or Google, from the screens above.
           </li>
         </ul>
 
         <h3>Refunds</h3>
         <p>
-          Refunds are handled only by Apple. Use{' '}
+          Refunds are handled only by the store you paid, under its own policy.
+          For the App Store, use{' '}
           <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
-          We cannot issue or reverse a charge on Apple’s behalf.
+          For Google Play, request one from your{' '}
+          <a href="https://play.google.com/store/account/orderhistory">Google Play order history</a>.
+          We cannot issue or reverse a charge on Apple’s or Google’s behalf.
         </p>
 
         <h2>Invites</h2>
@@ -234,7 +245,7 @@ export default function Terms() {
         <p>
           You can stop at any time by deleting your account in Profile → Delete
           account, which removes what you logged from the phone and from our
-          server, and cancel any subscription through Apple as above. Deleting
+          server, and cancel any subscription through Apple or Google as above. Deleting
           the app on its own removes only the copy on the phone. We may
           suspend access if the app is being used in a way these terms forbid. In
           practice that means resale or tampering, not anything you could do by

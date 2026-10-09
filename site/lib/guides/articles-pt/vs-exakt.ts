@@ -13,7 +13,7 @@ export const VS_EXAKT_PT: Guide = {
   lang: 'pt',
   page: 'vsExakt',
   published: '2026-10-08',
-  updated: '2026-10-08',
+  updated: '2026-10-09',
   title: 'Walkito vs Exakt Health: comparação lado a lado',
   description:
     'Walkito ou Exakt Health: condições, preço, plataformas, como cada um monta o seu plano, evidências, idiomas e privacidade. Conferido em outubro de 2026.',
@@ -25,7 +25,7 @@ export const VS_EXAKT_PT: Guide = {
   ],
   takeaways: [
     'O Exakt Health cobre mais de 15 lesões de corrida e inclui planos de treino de corrida dos 5\u00A0km à maratona. O Walkito cobre só dor no calcanhar, pé chato e dor na canela.',
-    'O Exakt está no iOS e no Android. O Walkito é só para iOS em outubro de 2026.',
+    'Os dois apps estão no iOS e no Android. O Walkito chegou ao Google Play em outubro de 2026.',
     'O Exakt Health é certificado como dispositivo médico na União Europeia. O Walkito não é um dispositivo médico.',
     'O Walkito ajusta cada sessão a partir de um check-in de dor pela manhã e testa a assimetria entre esquerda e direita a cada 14\u00A0dias. O Exakt adapta o plano a partir do retorno que você dá no fim da sessão.',
     'O Exakt custa US$\u00A019,99/mês ou US$\u00A059,99 por seis meses. O Walkito custa US$\u00A044,99/ano ou US$\u00A07,99/semana.',
@@ -35,7 +35,7 @@ export const VS_EXAKT_PT: Guide = {
     {
       h2: 'Comparação lado a lado',
       paragraphs: [
-        'Cada informação sobre o Exakt abaixo foi conferida na página do Exakt Health na App Store, na página no Google Play e em exakthealth.com em outubro de 2026. Cada informação sobre o Walkito vem da página do Walkito na App Store, de walkito.site e do próprio código-fonte do app.',
+        'Cada informação sobre o Exakt abaixo foi conferida na página do Exakt Health na App Store, na página no Google Play e em exakthealth.com em outubro de 2026. Cada informação sobre o Walkito vem das páginas do Walkito na App Store e no Google Play, de walkito.site e do próprio código-fonte do app.',
       ],
       table: {
         caption: 'Walkito vs Exakt Health (conferido em outubro de 2026)',
@@ -48,7 +48,7 @@ export const VS_EXAKT_PT: Guide = {
           ],
           [
             'Plataformas',
-            'Só iOS (Android planejado)',
+            'iOS e Android',
             'iOS e Android',
           ],
           [
@@ -83,7 +83,7 @@ export const VS_EXAKT_PT: Guide = {
           ],
           [
             'Volta à corrida',
-            'Não incluída (ajusta à carga de corrida pelos passos do app Saúde da Apple)',
+            'Não incluída (ajusta à carga de corrida pelos passos do app Saúde da Apple ou do Health Connect)',
             'Sim, programa de caminhada e corrida no fim de cada plano de reabilitação',
           ],
           [
@@ -103,7 +103,7 @@ export const VS_EXAKT_PT: Guide = {
           ],
           [
             'Integração com dados de saúde',
-            'App Saúde da Apple (passos, sono, assimetria da marcha, velocidade da caminhada, frequência cardíaca)',
+            'App Saúde da Apple no iPhone (passos, sono, assimetria da marcha, velocidade da caminhada, frequência cardíaca); Health Connect no Android (passos, sessões de exercício, distância, sono)',
             'Integração com smartwatch para registrar corridas',
           ],
           [
@@ -124,7 +124,7 @@ export const VS_EXAKT_PT: Guide = {
         ],
       },
       sourceNote:
-        'Fontes do Exakt: App Store (apps.apple.com/us/app/exakt-running-pt-trainer/id1638338198), Google Play (play.google.com/store/apps/details?id=exakt.mobile.android.release), exakthealth.com/en-US/pricing, exakthealth.com/en-US/about-us. Fontes do Walkito: App Store (apps.apple.com/app/id6813076846), walkito.site.',
+        'Fontes do Exakt: App Store (apps.apple.com/us/app/exakt-running-pt-trainer/id1638338198), Google Play (play.google.com/store/apps/details?id=exakt.mobile.android.release), exakthealth.com/en-US/pricing, exakthealth.com/en-US/about-us. Fontes do Walkito: App Store (apps.apple.com/app/id6813076846), Google Play (play.google.com/store/apps/details?id=com.walkito.app), walkito.site.',
     },
     {
       h2: 'Para quem o Exakt Health foi feito?',
@@ -149,9 +149,9 @@ export const VS_EXAKT_PT: Guide = {
         },
         'Ele também foi feito para quem passa o dia todo em pé: enfermagem, comércio, estoque e armazém.',
         'O app é mais focado que o Exakt. Ele não cobre lesões no joelho, lesões no posterior da coxa nem planos de corrida. O que ele faz de diferente é **ajustar a sessão de cada dia a partir de um check-in de dor pela manhã**, e não do retorno no fim da sessão.',
-        'Uma manhã com dor de 7/10 ou mais troca o dia para cerca de três minutos de trabalho sentado. Um dia puxado em pé (medido pelos passos do app Saúde da Apple) transforma a próxima sessão de força numa sessão de recuperação mais leve.',
+        'Uma manhã com dor de 7/10 ou mais troca o dia para cerca de três minutos de trabalho sentado. Um dia puxado em pé (medido pelos passos do app Saúde da Apple no iPhone ou do Health Connect no Android) transforma a próxima sessão de força numa sessão de recuperação mais leve.',
         'O Walkito testa o progresso a cada 14\u00A0dias com elevação de calcanhar, sustentação do arco e equilíbrio em uma perna, e compara o seu lado esquerdo com o direito. Essa comparação entre esquerda e direita é algo que a maioria dos apps dessa área não acompanha.',
-        'O Walkito foi lançado em 2 de outubro de 2026. Ele é novo, ainda não tem avaliações de usuários e é só para iOS. Ele não tem o histórico nem a variedade que o Exakt construiu desde 2021.',
+        'O Walkito foi lançado em 2 de outubro de 2026. Ele está no iPhone e, desde outubro de 2026, no Android. É novo e ainda não tem avaliações de usuários. Ele não tem o histórico nem a variedade que o Exakt construiu desde 2021.',
       ],
     },
     {
@@ -200,7 +200,7 @@ export const VS_EXAKT_PT: Guide = {
     {
       h2: 'Plataformas e idiomas',
       paragraphs: [
-        'O Exakt Health está no iOS e no Android. Se você usa um celular Android, isso já decide a questão, já que o Walkito é só para iOS.',
+        'Os dois apps estão no iOS e no Android, então a plataforma não decide mais entre eles. No iPhone, o Walkito lê o app Saúde da Apple. No Android, ele lê o Health Connect (passos, sessões de exercício, distância e sono); a assimetria da marcha e a velocidade da caminhada só são lidas no iPhone.',
         'O Exakt está disponível em inglês, francês, alemão e espanhol. O Walkito está disponível em inglês, russo e espanhol. Os dois têm em comum o inglês e o espanhol. Se você precisa de francês ou alemão, o Exakt é a única opção. Se você precisa de russo, o Walkito é a única opção.',
       ],
     },
@@ -245,7 +245,6 @@ export const VS_EXAKT_PT: Guide = {
       bullets: [
         'Você corre, está se recuperando de uma lesão de corrida e quer um plano estruturado de volta à corrida.',
         'A sua lesão não é fascite plantar nem pé chato. O Exakt cobre mais de 15 condições; o Walkito cobre três.',
-        'Você usa um celular Android.',
         'Você quer 7\u00A0dias grátis para testar o app antes de pagar.',
         'A certificação de dispositivo médico na União Europeia é importante para você.',
         'Você precisa do app em francês ou alemão.',
@@ -270,7 +269,7 @@ export const VS_EXAKT_PT: Guide = {
   faq: [
     {
       q: 'O Exakt Health é melhor que o Walkito?',
-      a: 'Depende do que você precisa. O Exakt Health cobre mais de 15 lesões de corrida e inclui planos de volta à corrida. Ele está no iOS e no Android e é certificado como dispositivo médico na União Europeia. O Walkito é focado em dor no calcanhar e pé chato, com adaptação diária à dor e sessões mais curtas. Para quem corre e tem vários tipos de lesão, o Exakt combina melhor. Para dor específica no calcanhar com ajuste diário, o Walkito foi feito para isso.',
+      a: 'Depende do que você precisa. O Exakt Health cobre mais de 15 lesões de corrida e inclui planos de volta à corrida. Ele é certificado como dispositivo médico na União Europeia. O Walkito é focado em dor no calcanhar e pé chato, com adaptação diária à dor e sessões mais curtas. Os dois estão no iOS e no Android. Para quem corre e tem vários tipos de lesão, o Exakt combina melhor. Para dor específica no calcanhar com ajuste diário, o Walkito foi feito para isso.',
     },
     {
       q: 'O Walkito é mais barato que o Exakt Health?',
@@ -282,7 +281,7 @@ export const VS_EXAKT_PT: Guide = {
     },
     {
       q: 'Dá para usar o Walkito no Android?',
-      a: 'Ainda não. O Walkito é só para iOS em outubro de 2026. O Android está planejado, mas nenhuma data de lançamento foi anunciada. Se você usa Android, o Exakt Health está no Google Play com um plano de reabilitação para fascite plantar, e funciona hoje tanto no Android quanto no iOS.',
+      a: 'Sim. O Walkito está no Google Play desde outubro de 2026, além da App Store no iPhone. No Android, ele lê o Health Connect (passos, sessões de exercício, distância e sono) no lugar do app Saúde da Apple; a assimetria da marcha e a velocidade da caminhada são só do iPhone. O Exakt Health também funciona no Android e no iOS.',
     },
     {
       q: 'O Exakt Health é um dispositivo médico?',
@@ -311,7 +310,7 @@ export const VS_EXAKT_PT: Guide = {
     more: [
       'Você escolhe 3, 5 ou 7\u00A0dias por semana e sessões de 3, 5 ou 10\u00A0minutos. A cada 14\u00A0dias, um teste curto mede a resistência da panturrilha, a sustentação do arco e o equilíbrio, e mostra a diferença entre o seu lado esquerdo e o direito. Os exercícios seguem a diretriz clínica de 2023 e o ensaio de Rathleff de 2015. O Walkito é um programa de exercícios, não um diagnóstico nem um substituto para um profissional de saúde.',
     ],
-    cta: 'Experimente o Walkito na App Store.',
+    cta: 'Experimente o Walkito no iPhone ou no Android.',
   },
   crumb: 'Walkito vs Exakt Health',
   campaign: 'compare-exakt-pt',

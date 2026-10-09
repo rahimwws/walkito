@@ -49,7 +49,7 @@ export default function TermosPt() {
       <Prose className="shell prose">
         <h1>Termos de uso</h1>
 
-        <p className="updated">Última atualização: 1 de outubro de 2026</p>
+        <p className="updated">Última atualização: 9 de outubro de 2026</p>
         <p className="updated">
           Esta é uma tradução. Se ela for diferente da{' '}
           <a href="/terms/">versão em inglês</a>, vale a versão em inglês.
@@ -110,7 +110,8 @@ export default function TermosPt() {
           sessões ficam salvos no seu celular e são copiados para a sua conta.
           Entre com a mesma conta em um celular novo ou depois de reinstalar e
           eles voltam. As compras voltam com Restore purchases (Restaurar
-          compras) no mesmo ID Apple.
+          compras) no mesmo ID Apple no iPhone, ou com a mesma conta Google no
+          Google Play no Android.
         </p>
 
         <h2>A sua licença</h2>
@@ -130,8 +131,9 @@ export default function TermosPt() {
 
         <h2>Pagamentos</h2>
         <p>
-          O Walkito é pago pela App Store. A Apple recebe o pagamento, guarda o
-          recibo e mostra as opções, o preço e o prazo antes de você comprar.
+          O Walkito é pago pela App Store no iPhone, operada pela Apple, ou pelo
+          Google Play no Android, operado pela Google LLC. A loja recebe o
+          pagamento, guarda o recibo e mostra as opções, o preço e o prazo antes de você comprar.
           Esse é o preço que vale, e não qualquer valor citado em outro lugar.
           Hoje existem duas assinaturas, e as duas são renovadas
           automaticamente:
@@ -149,12 +151,18 @@ export default function TermosPt() {
         <ul>
           <li>
             Uma assinatura é renovada automaticamente no fim de cada período, e
-            o seu ID Apple é cobrado, a menos que você desative a renovação pelo
+            o seu ID Apple ou a sua conta Google é cobrado, a menos que você desative a renovação pelo
             menos 24 horas antes do fim do período.
           </li>
           <li>
-            Gerencie ou cancele em <b>Ajustes → [seu nome] → Assinaturas</b>.
-            Cancelar interrompe a próxima renovação; você mantém o acesso até o
+            Gerencie ou cancele no iPhone em{' '}
+            <b>Ajustes → [seu nome] → Assinaturas</b>, ou no Android no app
+            Google Play, em{' '}
+            <b>
+              ícone do perfil → Pagamentos e assinaturas → Assinaturas → Walkito
+              → Cancelar assinatura
+            </b>
+            . Cancelar interrompe a próxima renovação; você mantém o acesso até o
             fim do período que já pagou.
           </li>
           <li>
@@ -163,16 +171,20 @@ export default function TermosPt() {
             menos 24 horas antes do fim.
           </li>
           <li>
-            Apagar o app ou a sua conta não cancela uma assinatura. Só a Apple
-            pode fazer isso, na tela acima.
+            Apagar o app ou a sua conta não cancela uma assinatura. Só a loja
+            pode fazer isso, a Apple ou o Google, nas telas acima.
           </li>
         </ul>
 
         <h3>Reembolsos</h3>
         <p>
-          Os reembolsos são feitos só pela Apple. Use{' '}
+          Os reembolsos são feitos só pela loja em que você pagou, conforme a
+          política dela. Para a App Store, use{' '}
           <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
-          Não podemos fazer nem estornar uma cobrança em nome da Apple.
+          Para o Google Play, peça pelo seu{' '}
+          <a href="https://play.google.com/store/account/orderhistory">histórico de pedidos do Google Play</a>.
+          Não podemos fazer nem estornar uma cobrança em nome da Apple ou do
+          Google.
         </p>
 
         <h2>Convites</h2>
@@ -219,7 +231,7 @@ export default function TermosPt() {
           Você pode parar a qualquer momento excluindo a sua conta em Profile →
           Delete account (Perfil → Excluir conta), o que remove o que você
           registrou do celular e do nosso servidor, e cancelando qualquer
-          assinatura pela Apple como descrito acima. Apagar só o app remove
+          assinatura pela Apple ou pelo Google como descrito acima. Apagar só o app remove
           apenas a cópia que está no celular. Podemos suspender o acesso se o
           app estiver sendo usado de um jeito que estes termos proíbem. Na
           prática, isso quer dizer revenda ou adulteração, e não algo que você

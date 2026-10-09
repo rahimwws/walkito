@@ -88,25 +88,35 @@ export default function SoporteEs() {
 
         <h2>Compras</h2>
         <p>
-          Walkito se paga con una suscripción a través del App Store, anual o
-          semanal. Las dos se renuevan automáticamente, y el App Store te
-          muestra el precio en tu moneda antes de comprar.
+          Walkito se paga con una suscripción, anual o semanal, a través del App
+          Store en iPhone o de Google Play en Android. Las dos se renuevan
+          automáticamente, y la tienda te muestra el precio en tu moneda antes
+          de comprar.
         </p>
         <ul>
           <li>
-            <b>Administra o cancela</b> tu suscripción en Ajustes → [tu nombre] →
-            Suscripciones. Si desactivas la renovación al menos 24 horas antes de
-            que termine el periodo, no se te vuelve a cobrar. Mantienes el acceso
-            hasta el final del periodo que ya pagaste.
+            <b>Administra o cancela</b> tu suscripción en iPhone en Ajustes →
+            [tu nombre] → Suscripciones. Si desactivas la renovación al menos 24
+            horas antes de que termine el periodo, no se te vuelve a cobrar. En
+            Android, abre la app de Google Play, toca tu icono de perfil y luego
+            Pagos y suscripciones → Suscripciones → Walkito → Cancelar
+            suscripción. En los dos casos mantienes el acceso hasta el final del
+            periodo que ya pagaste.
           </li>
           <li>
-            <b>Los reembolsos</b> los gestiona Apple. Usa su página{' '}
+            <b>Los reembolsos</b> los gestiona la tienda en la que pagaste. En
+            iPhone, usa la página de Apple{' '}
             <a href="https://reportaproblem.apple.com">Reportar un problema</a>.
-            No podemos tramitar reembolsos en nombre de Apple.
+            En Android, pídelo desde tu{' '}
+            <a href="https://play.google.com/store/account/orderhistory">historial de pedidos de Google Play</a>.
+            No podemos tramitar reembolsos en nombre de Apple ni de Google.
           </li>
           <li>
-            <b>¿Teléfono nuevo?</b> Inicia sesión con el mismo Apple ID y toca
-            Restaurar compras en la app. Tu plan vuelve con tu cuenta.
+            <b>¿Teléfono nuevo?</b> En iPhone, inicia sesión con el mismo Apple
+            ID y toca Restaurar compras en la app. En Android, usa la misma
+            cuenta de Google en Google Play y la suscripción vuelve. Tu plan
+            vuelve con tu cuenta. Una suscripción comprada en iPhone no pasa a
+            Android, ni al revés, porque Apple y Google cobran por separado.
           </li>
         </ul>
 

@@ -5,7 +5,7 @@ export const BEST_APP_ES: Guide = {
   lang: 'es',
   page: 'bestApp',
   published: '2026-10-07',
-  updated: '2026-10-07',
+  updated: '2026-10-09',
   title: 'Mejor app para fascitis plantar en 2026: comparación honesta',
   description:
     'Mejor app para fascitis plantar: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch y Walkito comparadas en precio y para quién sirven.',
@@ -95,7 +95,7 @@ export const BEST_APP_ES: Guide = {
           ],
           [
             '[Walkito](https://walkito.site/)',
-            'iOS. $44.99/año o $7.99/semana',
+            'iOS, Android. $44.99/año o $7.99/semana',
             'Dolor de talón, pie plano, estar de pie todo el día, corredores',
             'El chequeo de la mañana ajusta cada sesión',
             'Todavía sin calificaciones (nueva, oct. 2026)',
@@ -116,7 +116,6 @@ export const BEST_APP_ES: Guide = {
           list: [
             'Cubre más tipos de lesión (más de 15, frente a dolor de talón, pie plano y tibia).',
             'Tiene un programa completo para volver a correr.',
-            'Está en Android.',
             'Tiene certificación de dispositivo médico en la UE.',
             'Una base de usuarios establecida, con una calificación de 4.8 en 125 reseñas de iOS.',
           ],
@@ -193,7 +192,7 @@ export const BEST_APP_ES: Guide = {
     {
       h2: 'Walkito: lo que hace y lo que no hace',
       paragraphs: [
-        'Walkito es un programa de ejercicios para el dolor de talón, el pie plano y el dolor en la parte baja de la pierna. Salió en el App Store el 2 de octubre de 2026. Es nueva, todavía no tiene calificaciones y es solo para iOS.',
+        'Walkito es un programa de ejercicios para el dolor de talón, el pie plano y el dolor en la parte baja de la pierna. Salió en el App Store el 2 de octubre de 2026 y en Google Play más tarde, en octubre de 2026. Es nueva y todavía no tiene calificaciones.',
         'Lo que hace:',
         {
           list: [
@@ -202,7 +201,7 @@ export const BEST_APP_ES: Guide = {
             'Cada 14\u00A0días, unas pruebas miden elevaciones de talón, cuánto mantienes el arco y el equilibrio a una pierna, y comparan el lado izquierdo con el derecho.',
             'Las sesiones son de 3, 5 o 10\u00A0minutos.',
             'Los ejercicios siguen la guía clínica de 2023 para el dolor de talón y el ensayo de Rathleff de 2015.',
-            'Se conecta con Apple Health para leer pasos, sueño y datos de caminata, que se quedan en tu teléfono.',
+            'En iPhone lee de Apple Health pasos, sueño y datos de caminata, que se quedan en tu teléfono. En Android lee de Health Connect pasos, sesiones de ejercicio, distancia y sueño.',
           ],
         },
         'Lo que no hace:',
@@ -211,7 +210,6 @@ export const BEST_APP_ES: Guide = {
             'No diagnostica tu dolor.',
             'No es un dispositivo médico.',
             'No hay un profesional de la salud del otro lado.',
-            'No está en Android.',
           ],
         },
         'Cubre el dolor de talón, el pie plano y el dolor de tibia, no las más de 15 lesiones que cubre Exakt ni todo el cuerpo como Hinge Health o Prehab.',
@@ -246,7 +244,7 @@ export const BEST_APP_ES: Guide = {
     },
     {
       q: '¿Exakt Health es mejor que Walkito para la fascitis plantar?',
-      a: 'Exakt Health cubre más problemas, con más de 15 lesiones de corredores y planes completos de entrenamiento para correr. Está en iOS y Android y está certificada como dispositivo médico en la UE. Walkito se enfoca solo en el dolor de talón y de pies, con adaptación diaria según el dolor y pruebas de progreso cada 14\u00A0días. Exakt es mejor para corredores que necesitan rehabilitación y un plan para correr. Walkito es más limitada, pero ajusta cada sesión a cómo amaneces.',
+      a: 'Exakt Health cubre más problemas, con más de 15 lesiones de corredores y planes completos de entrenamiento para correr. Está certificada como dispositivo médico en la UE. Walkito se enfoca solo en el dolor de talón y de pies, con adaptación diaria según el dolor y pruebas de progreso cada 14\u00A0días. Exakt es mejor para corredores que necesitan rehabilitación y un plan para correr. Walkito es más limitada, pero ajusta cada sesión a cómo amaneces. Las dos están en iOS y Android.',
     },
     {
       q: '¿Una app puede reemplazar al fisioterapeuta para la fascitis plantar?',
@@ -262,7 +260,7 @@ export const BEST_APP_ES: Guide = {
     },
     {
       q: '¿Alguna de estas apps funciona en Android?',
-      a: 'Exakt Health y Hinge Health están en iOS y Android. «Plantar Fasciitis Exercises» también está en las dos, aunque muestra compras dentro de la app en cada tienda. Walkito, Prehab, PlantarCare y Arch por ahora son solo para iOS. Si usas Android, Exakt Health es la opción más completa para el dolor de pies.',
+      a: 'Exakt Health, Hinge Health y Walkito están en iOS y Android. «Plantar Fasciitis Exercises» también está en las dos, aunque muestra compras dentro de la app en cada tienda. Prehab, PlantarCare y Arch por ahora son solo para iOS. En Android, Exakt Health cubre más lesiones, y Walkito es la opción más específica, hecha para el dolor de talón y el pie plano.',
     },
     {
       q: '¿Necesito una app para hacer los ejercicios de la fascitis plantar?',
@@ -294,7 +292,7 @@ export const BEST_APP_ES: Guide = {
     more: [
       'Eliges 3, 5 o 7\u00A0días a la semana y sesiones de 3, 5 o 10\u00A0minutos. Los ejercicios siguen la guía clínica de 2023 para el dolor de talón. El plan no tiene fecha de fin: cuando alcanzas una meta, pasa a mantenerla y la siguiente meta toma su lugar. Walkito es un programa de ejercicios, no un diagnóstico ni un reemplazo de un profesional de la salud.',
     ],
-    cta: 'Prueba Walkito en el App Store.',
+    cta: 'Prueba Walkito en iPhone o Android.',
   },
   crumb: 'Mejor app para fascitis plantar',
   campaign: 'compare-best-app-es',

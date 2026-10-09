@@ -22,7 +22,7 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
     entries: [
       {
         q: '¿Walkito está disponible en Android?',
-        a: 'Todavía no. Walkito está disponible en iPhone, en el App Store, y Android está en los planes. La app de iPhone lee Apple Health para pasos, sueño y asimetría al caminar. También muestra una Live Activity en la pantalla de bloqueo mientras corre una sesión. Walkito viene en inglés, ruso y español.',
+        a: 'Sí. Walkito está en Android, en Google Play, y en iPhone, en el App Store. En Android lee Health Connect para pasos, distancia y sueño. La app de iPhone lee Apple Health para pasos, sueño y asimetría al caminar. También muestra una Live Activity en la pantalla de bloqueo mientras corre una sesión. Walkito viene en inglés, ruso y español.',
       },
       {
         q: '¿Necesito un Apple Watch?',
@@ -163,11 +163,11 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
       },
       {
         q: '¿Qué pasa con mi plan si cambio de teléfono?',
-        a: 'Tu plan vuelve cuando inicias sesión con la misma cuenta de Walkito en el teléfono nuevo, porque tu plan y lo que registras se guardan en esa cuenta. Para recuperar una compra, inicia sesión con el mismo Apple ID y toca Restaurar compras en Walkito. Las lecturas de Apple Health no son parte de esa copia, porque se quedan en el teléfono.',
+        a: 'Tu plan vuelve cuando inicias sesión con la misma cuenta de Walkito en el teléfono nuevo, porque tu plan y lo que registras se guardan en esa cuenta. Para recuperar una compra en iPhone, inicia sesión con el mismo Apple ID y toca Restaurar compras en Walkito. En Android, usa la misma cuenta de Google en Google Play y la suscripción vuelve. Una suscripción comprada en iPhone no pasa a Android, ni al revés, porque Apple y Google cobran por separado. Las lecturas de Apple Health no son parte de esa copia, porque se quedan en el teléfono.',
       },
       {
         q: '¿Cómo borro mi cuenta y mis datos de Walkito?',
-        a: `Borra tu cuenta en Walkito en Perfil, después Eliminar cuenta. Eso borra tu cuenta del servidor de Walkito con todo lo guardado, y limpia el teléfono. No se puede deshacer. Borrar solo la app deja tu cuenta en su lugar. Ninguna de las dos cancela una suscripción, eso solo lo puede hacer Apple. También puedes escribir a ${SUPPORT_EMAIL}.`,
+        a: `Borra tu cuenta en Walkito en Perfil, después Eliminar cuenta. Eso borra tu cuenta del servidor de Walkito con todo lo guardado, y limpia el teléfono. No se puede deshacer. Borrar solo la app deja tu cuenta en su lugar. Ninguna de las dos cancela una suscripción, eso solo lo pueden hacer Apple o Google. También puedes escribir a ${SUPPORT_EMAIL}.`,
       },
     ],
   },
@@ -177,11 +177,11 @@ export const FAQ_GROUPS_ES: readonly FaqGroup[] = [
     entries: [
       {
         q: '¿Cuánto cuesta Walkito?',
-        a: 'El precio de Walkito lo fija el App Store, que te lo muestra en tu moneda antes de comprar. Hay dos suscripciones, anual y semanal, y las dos se renuevan solas hasta que canceles. El código de invitación de un amigo da un descuento en la anual. El precio que muestra el App Store es el que aplica.',
+        a: 'El precio de Walkito lo fija la tienda en la que compras, el App Store en iPhone o Google Play en Android, que te lo muestra en tu moneda antes de comprar. Hay dos suscripciones, anual y semanal, y las dos se renuevan solas hasta que canceles. El código de invitación de un amigo da un descuento en la anual. El precio que muestra la tienda es el que aplica.',
       },
       {
         q: '¿Cómo cancelo mi suscripción de Walkito?',
-        a: 'Cancela una suscripción de Walkito en tu iPhone en Ajustes → tu nombre → Suscripciones, al menos 24\u00A0horas antes de que termine el período. Cancelar detiene la próxima renovación, y conservas el acceso hasta el final del período que pagaste. Borrar la app o tu cuenta no la cancela. Los reembolsos los maneja Apple.',
+        a: 'Cancela una suscripción de Walkito en tu iPhone en Ajustes → tu nombre → Suscripciones, al menos 24\u00A0horas antes de que termine el período. Cancelar detiene la próxima renovación, y conservas el acceso hasta el final del período que pagaste. En Android, abre la app de Google Play, toca tu icono de perfil y luego Pagos y suscripciones → Suscripciones → Walkito → Cancelar suscripción; también conservas el acceso hasta el final del período pagado. Borrar la app o tu cuenta no la cancela. Los reembolsos los maneja la tienda: Apple en iPhone, Google Play en Android.',
       },
     ],
   },

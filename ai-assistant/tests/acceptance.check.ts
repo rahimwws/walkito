@@ -196,6 +196,8 @@ describe('plan page', () => {
     expect(page.html).toContain('ct=ai-chatgpt');
     expect(page.html).toContain('utm_source=chatgpt');
     expect(page.html).toContain(`walkito://plan?code=${code}`);
+    expect(page.html).toContain('play.google.com/store/apps/details?id=com.walkito.app');
+    expect(page.html).toContain('utm_source%3Dchatgpt');
   });
 
   test('a bad code says so', () => {

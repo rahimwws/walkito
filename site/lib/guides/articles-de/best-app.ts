@@ -13,7 +13,7 @@ export const BEST_APP_DE: Guide = {
   lang: 'de',
   page: 'bestApp',
   published: '2026-10-08',
-  updated: '2026-10-08',
+  updated: '2026-10-09',
   title: 'Beste App bei Plantarfasziitis 2026: ehrlicher Vergleich',
   description:
     'Die beste App bei Plantarfasziitis 2026: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch und Walkito im Vergleich nach Preis, Plattform und Eignung.',
@@ -103,7 +103,7 @@ export const BEST_APP_DE: Guide = {
           ],
           [
             '[Walkito](https://walkito.site/)',
-            'iOS. 44,99\u00A0$/Jahr oder 7,99\u00A0$/Woche',
+            'iOS, Android. 44,99\u00A0$/Jahr oder 7,99\u00A0$/Woche',
             'Fersenschmerzen, Plattfüße, langes Stehen, Laufen',
             'Der Morgen-Check passt jede Einheit an',
             'Noch keine Bewertungen (neu, Okt. 2026)',
@@ -124,7 +124,6 @@ export const BEST_APP_DE: Guide = {
           list: [
             'Mehr abgedeckte Verletzungen (15+ gegenüber Fersenschmerzen, Plattfüßen und Schienbein).',
             'Ein vollständiges Programm für den Wiedereinstieg ins Laufen.',
-            'Android.',
             'Die Zertifizierung als Medizinprodukt in der EU.',
             'Eine etablierte Nutzerschaft mit einer Bewertung von 4,8 bei 125\u00A0iOS-Rezensionen.',
           ],
@@ -201,7 +200,7 @@ export const BEST_APP_DE: Guide = {
     {
       h2: 'Walkito: was es kann und was nicht',
       paragraphs: [
-        'Walkito ist ein Übungsprogramm bei Fersenschmerzen, Plattfüßen und Schmerzen im Unterschenkel. Es ist am 2. Oktober 2026 im App Store erschienen. Es ist neu, hat noch keine Bewertungen und ist nur für iOS verfügbar.',
+        'Walkito ist ein Übungsprogramm bei Fersenschmerzen, Plattfüßen und Schmerzen im Unterschenkel. Es ist am 2. Oktober 2026 im App Store erschienen, danach bei Google Play. Es ist neu und hat noch keine Bewertungen.',
         'Was es kann:',
         {
           list: [
@@ -210,7 +209,7 @@ export const BEST_APP_DE: Guide = {
             'Tests alle 14\u00A0Tage messen Fersenheben, Gewölbehalten und Einbeinstand und vergleichen links mit rechts.',
             'Die Einheiten dauern 3, 5 oder 10\u00A0Minuten.',
             'Die Übungen folgen der Leitlinie von 2023 zu Fersenschmerzen und der Studie von Rathleff 2015.',
-            'Es verbindet sich mit Apple Health für Schritte, Schlaf und Gehdaten, die auf deinem Handy bleiben.',
+            'Es verbindet sich auf dem iPhone mit Apple Health und auf Android mit Health Connect für Schritte, Schlaf und Gehdaten, die auf deinem Handy bleiben. Gangasymmetrie und Gehgeschwindigkeit gibt es nur auf dem iPhone.',
           ],
         },
         'Was es nicht kann:',
@@ -219,7 +218,6 @@ export const BEST_APP_DE: Guide = {
             'Es stellt keine Diagnose.',
             'Es ist kein Medizinprodukt.',
             'Auf der anderen Seite sitzt keine medizinische Fachperson.',
-            'Es gibt es nicht für Android.',
           ],
         },
         'Es deckt Fersenschmerzen, Plattfüße und Schienbeinschmerzen ab, nicht die über 15\u00A0Verletzungsarten von Exakt oder den Ganzkörper-Umfang von Hinge Health oder Prehab.',
@@ -270,7 +268,7 @@ export const BEST_APP_DE: Guide = {
     },
     {
       q: 'Funktionieren diese Apps auch auf Android?',
-      a: 'Exakt Health und Hinge Health gibt es für iOS und Android. „Plantar Fasciitis Exercises“ gibt es ebenfalls für beide, zeigt aber in beiden Stores In-App-Käufe. Walkito, Prehab, PlantarCare und Arch gibt es derzeit nur für iOS. Wenn du Android nutzt, ist Exakt Health die Option mit den meisten Funktionen bei Fußschmerzen.',
+      a: 'Exakt Health, Hinge Health und Walkito gibt es für iOS und Android. „Plantar Fasciitis Exercises“ gibt es ebenfalls für beide, zeigt aber in beiden Stores In-App-Käufe. Prehab, PlantarCare und Arch gibt es derzeit nur für iOS. Auf Android deckt Exakt Health die meisten Beschwerden ab, Walkito ist die gezielte Option bei Fersen- und Fußschmerzen.',
     },
     {
       q: 'Braucht man eine App für Übungen bei Plantarfasziitis?',
@@ -302,7 +300,7 @@ export const BEST_APP_DE: Guide = {
     more: [
       'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Die Übungen folgen der klinischen Leitlinie von 2023 zu Fersenschmerzen. Der Plan hat kein festes Enddatum: Wenn du ein Ziel erreichst, geht es in die Erhaltung über, und das nächste Ziel rückt nach. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose und ersetzt keine medizinische Fachperson.',
     ],
-    cta: 'Probier Walkito im App Store aus.',
+    cta: 'Probier Walkito auf dem iPhone oder unter Android aus.',
   },
   crumb: 'Beste App bei Plantarfasziitis',
   campaign: 'compare-best-app-de',

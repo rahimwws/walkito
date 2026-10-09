@@ -95,25 +95,35 @@ export default function Support() {
 
         <h2>Purchases</h2>
         <p>
-          Walkito is paid for with a subscription through the App Store, yearly
-          or weekly. Both renew automatically, and the App Store shows the price
-          in your currency before you buy.
+          Walkito is paid for with a subscription, yearly or weekly, through the
+          App Store on iPhone or Google Play on Android. Both renew
+          automatically, and the store shows the price in your currency before
+          you buy.
         </p>
         <ul>
           <li>
-            <b>Manage or cancel</b> your subscription in Settings → your name →
+            <b>Manage or cancel</b> on iPhone in Settings → your name →
             Subscriptions. Turn off renewal at least 24 hours before the period
-            ends and you are not charged again. You keep access until the end of
-            the period you paid for.
+            ends and you are not charged again. On Android, open the Google Play
+            app, tap your profile icon, then Payments &amp; subscriptions →
+            Subscriptions → Walkito → Cancel subscription. Either way you keep
+            access until the end of the period you paid for.
           </li>
           <li>
-            <b>Refunds</b> are handled by Apple. Use Apple’s{' '}
+            <b>Refunds</b> are handled by the store you paid. On iPhone, use
+            Apple’s{' '}
             <a href="https://reportaproblem.apple.com">Report a Problem</a> page.
-            We cannot process refunds on Apple’s behalf.
+            On Android, request one from your{' '}
+            <a href="https://play.google.com/store/account/orderhistory">Google Play order history</a>.
+            We cannot process refunds on Apple’s or Google’s behalf.
           </li>
           <li>
-            <b>New phone?</b> Sign in with the same Apple ID and tap Restore
-            Purchases in the app. Your plan comes back with your account.
+            <b>New phone?</b> On iPhone, sign in with the same Apple ID and tap
+            Restore Purchases in the app. On Android, use the same Google account
+            in Google Play and the subscription comes back. Your plan comes back
+            with your account. A subscription bought on iPhone does not carry
+            over to Android, or the other way round, because Apple and Google
+            bill separately.
           </li>
         </ul>
 

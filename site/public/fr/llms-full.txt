@@ -1,6 +1,6 @@
 # Walkito: full text, French (Français)
 
-> An exercise plan on iPhone for runners with heel pain (often linked to
+> An exercise plan on iPhone and Android for runners with heel pain (often linked to
 > plantar fasciitis or a heel spur), arch pain or flexible flat feet. It is built
 > one week at a time around a goal that can be measured, adapts each day to
 > the morning's pain, and checks progress with physical tests. It has no fixed
@@ -1325,7 +1325,7 @@ Oui. Dans un essai de 2019, les exercices du pied ont développé la taille et l
 
 ## Meilleure app pour la fasciite plantaire : le guide comparatif 2026
 
-Language: French (Français) · https://walkito.site/fr/meilleure-app-fasciite-plantaire/ · published 2026-10-08 · updated 2026-10-08
+Language: French (Français) · https://walkito.site/fr/meilleure-app-fasciite-plantaire/ · published 2026-10-08 · updated 2026-10-09
 
 Cette page compare sept applications qui proposent des exercices pour la fasciite plantaire, les pieds plats ou les douleurs de pied en général. Walkito en fait partie, et c’est Walkito qui publie cette page : mieux vaut que vous le sachiez d’emblée. Le but est d’être juste, de dire où les autres sont meilleures, et de vous donner assez de détails pour choisir celle qui correspond à votre situation.
 
@@ -1367,7 +1367,6 @@ Là où Exakt est plus forte que Walkito :
 
 - Plus de types de blessures couverts (plus de 15, contre la douleur au talon, les pieds plats et les tibias).
 - Un programme complet de reprise de la course.
-- La disponibilité sur Android.
 - La certification de dispositif médical dans l’UE.
 - Une base d’utilisateurs établie avec une note de 4,8 sur 125 avis iOS.
 
@@ -1437,7 +1436,7 @@ Si vous voulez une référence gratuite des étirements à essayer, vérifiez la
 
 ### Walkito : ce qu’elle fait et ce qu’elle ne fait pas
 
-Walkito est une application d’exercices pour la douleur au talon, les pieds plats et les douleurs du bas de la jambe. Elle est sortie sur l’App Store le 2 octobre 2026. Elle est nouvelle, n’a pas encore de notes et n’existe que sur iOS.
+Walkito est une application d’exercices pour la douleur au talon, les pieds plats et les douleurs du bas de la jambe. Elle est sortie sur l’App Store le 2 octobre 2026, puis sur Google Play. Elle est nouvelle et n’a pas encore de notes.
 
 Ce qu’elle fait :
 
@@ -1446,14 +1445,13 @@ Ce qu’elle fait :
 - Des tests tous les 14 jours mesurent les montées sur pointes, le maintien de la voûte et l’équilibre sur une jambe, et comparent la gauche et la droite.
 - Les séances durent 3, 5 ou 10 minutes.
 - Les exercices suivent la recommandation de 2023 sur la douleur au talon et l’essai de Rathleff 2015.
-- Elle se connecte à Apple Santé pour les pas, le sommeil et les données de marche, qui restent sur votre téléphone.
+- Elle se connecte à Apple Santé sur iPhone ou à Health Connect sur Android pour les pas, le sommeil et les données de marche, qui restent sur votre téléphone. L’asymétrie et la vitesse de marche ne sont disponibles que sur iPhone.
 
 Ce qu’elle ne fait pas :
 
 - Elle ne diagnostique pas votre douleur.
 - Ce n’est pas un dispositif médical.
 - Il n’y a pas de professionnel de santé de l’autre côté.
-- Elle n’est pas disponible sur Android.
 
 Elle couvre la douleur au talon, les pieds plats et la douleur au tibia, pas les plus de 15 types de blessures que couvre Exakt ni le corps entier comme Hinge Health ou Prehab.
 
@@ -1514,7 +1512,7 @@ Parce que ce ne serait pas honnête. Walkito est nouvelle, n’a pas encore de n
 
 #### Ces applications marchent-elles sur Android ?
 
-Exakt Health et Hinge Health sont sur iOS et Android. « Plantar Fasciitis Exercises » est aussi sur les deux, mais affiche des achats intégrés sur chaque store. Walkito, Prehab, PlantarCare et Arch ne sont pour l’instant que sur iOS. Si vous êtes sur Android, Exakt Health est l’option la plus complète pour les douleurs de pied.
+Exakt Health, Hinge Health et Walkito sont sur iOS et Android. « Plantar Fasciitis Exercises » est aussi sur les deux, mais affiche des achats intégrés sur chaque store. Prehab, PlantarCare et Arch ne sont pour l’instant que sur iOS. Sur Android, Exakt Health couvre le plus de problèmes, et Walkito est l’option ciblée sur la douleur au talon et au pied.
 
 #### Faut-il une application pour faire les exercices de la fasciite plantaire ?
 
@@ -9206,19 +9204,19 @@ Aucun essai n’a suivi la durée de récupération d’une tendinite des extens
 
 ## Walkito vs Exakt Health : laquelle vous convient ?
 
-Language: French (Français) · https://walkito.site/fr/walkito-vs-exakt-health/ · published 2026-10-08 · updated 2026-10-08
+Language: French (Français) · https://walkito.site/fr/walkito-vs-exakt-health/ · published 2026-10-08 · updated 2026-10-09
 
 Walkito et Exakt Health proposent toutes les deux des plans d’exercices pour la fasciite plantaire, mais elles sont conçues pour des personnes différentes. Exakt est une application pour coureurs, avec plus de 15 plans de rééducation de blessures et un programme de reprise de la course. Walkito est une application plus ciblée, centrée sur la douleur au talon, les pieds plats et l’adaptation quotidienne à la douleur. Cette page les compare honnêtement, dit où Exakt est le meilleur choix, et explique ce que Walkito fait différemment.
 
 - Exakt Health couvre plus de 15 blessures de course et propose des plans d’entraînement à la course du 5 km au marathon. Walkito couvre uniquement la douleur au talon, les pieds plats et la douleur au tibia.
-- Exakt est sur iOS et Android. Walkito n’est que sur iOS en octobre 2026.
+- Exakt et Walkito sont toutes les deux sur iOS et Android.
 - Exakt Health est certifiée comme dispositif médical dans l’UE. Walkito n’est pas un dispositif médical.
 - Walkito ajuste chaque séance à partir d’un bilan de douleur le matin et teste l’asymétrie gauche-droite tous les 14 jours. Exakt adapte son plan à partir d’un retour en fin de séance.
 - Exakt coûte 19,99 $/mois ou 59,99 $ pour six mois. Walkito coûte 44,99 $/an ou 7,99 $/semaine.
 
 ### Comparatif côte à côte
 
-Chaque information sur Exakt ci-dessous a été vérifiée sur la fiche App Store d’Exakt Health, sa fiche Google Play et exakthealth.com en octobre 2026. Chaque information sur Walkito vient de la fiche App Store de Walkito, de walkito.site et du code source de l’application.
+Chaque information sur Exakt ci-dessous a été vérifiée sur la fiche App Store d’Exakt Health, sa fiche Google Play et exakthealth.com en octobre 2026. Chaque information sur Walkito vient des fiches App Store et Google Play de Walkito, de walkito.site et du code source de l’application.
 
 ### Pour qui Exakt Health est-elle conçue ?
 
@@ -9244,11 +9242,11 @@ Elle est aussi conçue pour les personnes debout toute la journée : infirmière
 
 L’application est plus ciblée qu’Exakt. Elle ne couvre ni les blessures du genou, ni les lésions des ischio-jambiers, ni les plans de course. Ce qu’elle fait différemment, c’est **ajuster la séance de chaque jour à partir d’un bilan de douleur le matin** plutôt que d’un retour en fin de séance.
 
-Un matin à 7/10 ou plus fait passer la journée à environ trois minutes de travail en position assise. Une grosse journée debout (mesurée par les pas d’Apple Santé) transforme la séance de renforcement suivante en séance de récupération plus légère.
+Un matin à 7/10 ou plus fait passer la journée à environ trois minutes de travail en position assise. Une grosse journée debout (mesurée par les pas d’Apple Santé ou de Health Connect) transforme la séance de renforcement suivante en séance de récupération plus légère.
 
 Walkito teste vos progrès tous les 14 jours avec des montées sur pointes, un maintien de la voûte et l’équilibre sur une jambe, et compare votre côté gauche à votre côté droit. Cette comparaison gauche-droite n’est pas suivie par la plupart des applications de ce domaine.
 
-Walkito est sortie le 2 octobre 2026. Elle est nouvelle, n’a pas encore de notes d’utilisateurs, et n’existe que sur iOS. Elle n’a ni l’historique ni l’étendue qu’Exakt a construits depuis 2021.
+Walkito est sortie le 2 octobre 2026. Elle est nouvelle, n’a pas encore de notes d’utilisateurs et existe sur iOS comme sur Android. Elle n’a ni l’historique ni l’étendue qu’Exakt a construits depuis 2021.
 
 ### Comment chaque application construit-elle votre plan ?
 
@@ -9291,13 +9289,13 @@ Si vous avez seulement besoin d’exercices pour la douleur au talon ou au pied,
 
 ### Plateformes et langues
 
-Exakt Health est sur iOS et Android. Si vous utilisez un téléphone Android, c’est à lui seul le critère décisif, puisque Walkito n’est que sur iOS.
+Exakt Health et Walkito sont toutes les deux sur iOS et Android. La plateforme ne départage donc pas les deux applications.
 
 Exakt est disponible en anglais, en français, en allemand et en espagnol. Walkito est disponible en anglais, en russe et en espagnol. Les langues communes sont l’anglais et l’espagnol. Si vous avez besoin du français ou de l’allemand, Exakt est la seule option. Si vous avez besoin du russe, Walkito est la seule option.
 
 ### Confidentialité
 
-Walkito lit les données Apple Santé (pas, sommeil, asymétrie de la marche, vitesse de marche, fréquence cardiaque au repos) et les garde sur l’appareil. Elles ne sont jamais envoyées. Ce qui est synchronisé avec le compte Walkito, ce sont les scores de douleur, les données de séance et les résultats des tests. Il n’y a pas de pistage publicitaire.
+Sur iPhone, Walkito lit les données Apple Santé (pas, sommeil, asymétrie de la marche, vitesse de marche, fréquence cardiaque au repos) ; sur Android, elle lit Health Connect (pas, séances d’exercice, distance, sommeil). L’asymétrie et la vitesse de marche ne sont disponibles que sur iPhone. Ces données restent sur l’appareil. Elles ne sont jamais envoyées. Ce qui est synchronisé avec le compte Walkito, ce sont les scores de douleur, les données de séance et les résultats des tests. Il n’y a pas de pistage publicitaire.
 
 L’étiquette de confidentialité d’Exakt Health sur l’App Store indique les identifiants comme données utilisées pour vous pister, et les achats, les identifiants, les données d’utilisation et les diagnostics comme données collectées mais non liées à votre identité. Sa fiche Google Play indique :
 
@@ -9306,7 +9304,7 @@ L’étiquette de confidentialité d’Exakt Health sur l’App Store indique le
 - Que les données sont chiffrées en transit.
 - Que leur suppression est possible.
 
-Les deux applications collectent des données d’utilisation classiques. **Aucune ne vend de données de santé.** L’approche de Walkito, qui garde les données Apple Santé sur l’appareil, est un modèle de confidentialité plus strict.
+Les deux applications collectent des données d’utilisation classiques. **Aucune ne vend de données de santé.** L’approche de Walkito, qui garde les données de santé sur l’appareil, est un modèle de confidentialité plus strict.
 
 ### Sur quelles données scientifiques chaque application repose-t-elle ?
 
@@ -9331,7 +9329,6 @@ Choisissez Exakt Health si l’un des points suivants vous correspond :
 
 - Vous êtes coureur, vous récupérez d’une blessure de course et voulez un plan structuré de reprise de la course.
 - Votre blessure n’est ni une fasciite plantaire ni des pieds plats. Exakt couvre plus de 15 problèmes ; Walkito en couvre trois.
-- Vous utilisez un téléphone Android.
 - Vous voulez un essai gratuit de 7 jours pour tester l’application avant de payer.
 - La certification de dispositif médical dans l’UE compte pour vous.
 - Vous avez besoin de l’application en français ou en allemand.
@@ -9376,7 +9373,7 @@ Oui. Exakt Health a un plan de rééducation propre à la fasciite plantaire, ai
 
 #### Peut-on utiliser Walkito sur Android ?
 
-Pas encore. Walkito n’est que sur iOS en octobre 2026. Android est prévu, mais aucune date de sortie n’a été annoncée. Si vous êtes sur Android, Exakt Health est disponible sur Google Play avec un plan de rééducation pour la fasciite plantaire, et elle fonctionne dès aujourd’hui sur Android comme sur iOS.
+Oui. Walkito est disponible sur Google Play depuis octobre 2026, en plus de l’App Store. Sur Android, elle lit Health Connect (pas, séances d’exercice, distance, sommeil) ; l’asymétrie et la vitesse de marche ne sont mesurées que sur iPhone. Exakt Health est elle aussi sur Android comme sur iOS.
 
 #### Exakt Health est-elle un dispositif médical ?
 
