@@ -705,7 +705,7 @@
 
 /* ------------------------------------------------------------- shapes -- */
 
-@supports (corner-shape: superellipse(1.2)) {
+@supports (corner-shape: superellipse(1.35)) {
   .ap-pain,
   .ap-pair .ap-pain::before,
   .ap-pair .ap-pain::after,
@@ -718,7 +718,7 @@
   .ap-result-tile,
   .ap-today,
   .ap-primary {
-    corner-shape: superellipse(1.2);
+    corner-shape: superellipse(1.35);
   }
 }
 

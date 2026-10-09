@@ -147,7 +147,7 @@ function Tile({
     height: side,
     overflow: 'hidden',
     borderRadius: 'var(--brand-radius, 23%)',
-    cornerShape: 'superellipse(1.2)',
+    cornerShape: 'superellipse(1.35)',
     background: ground,
     boxShadow: 'var(--brand-ring, inset 0 0 0 1px rgba(120, 120, 128, 0.2))',
   } as CSSProperties;
