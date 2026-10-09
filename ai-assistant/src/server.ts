@@ -227,7 +227,13 @@ function serverFor(ctx: McpRequestContext): McpServer {
   const userAgent = ctx.requestInfo?.headers.get('user-agent') ?? '';
   const server = new McpServer(
     { name: 'walkito', title: 'Walkito', version: __VERSION__, websiteUrl: SITE },
-    { capabilities: { tools: {}, resources: {} } },
+    {
+      capabilities: { tools: {}, resources: {} },
+      // What the server is for, so a host that loads connectors on demand
+      // knows when to reach for it. Describes; does not ask to be preferred.
+      instructions:
+        'Walkito has short foot and calf exercises with videos for heel pain, plantar fasciitis, heel spurs, arch pain, flat feet, Achilles pain, shin splints and feet that hurt after standing all day: a gentle routine for pain right now, a stretch before the first steps in the morning, a 7-day starter plan, how to do a named exercise, a flat-foot check, footwear tips, a check before running again, and the warning signs that need a doctor. It does not diagnose and does not cover medicines or other body parts.',
+    },
   );
 
   for (const widget of WIDGETS) {
