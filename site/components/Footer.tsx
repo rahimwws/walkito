@@ -217,7 +217,14 @@ export function Footer({
               links={group(['hubPlantarFasciitis', 'morningHeelPain', 'pfDuration', 'runners', ...NAV_GROUPS.heel])}
             />
             <Column heading={h.pain} links={[...footMap, ...group(['hubFlatFeet', 'ballOfFoot', ...NAV_GROUPS.foot])]} />
+            {group([...NAV_GROUPS.ankle, ...NAV_GROUPS.flat]).length > 0 && (
+              <div className="ft-stack">
+                <Column heading={h.ankle} links={group(NAV_GROUPS.ankle)} />
+                <Column heading={h.flat} links={group(NAV_GROUPS.flat)} />
+              </div>
+            )}
             <div className="ft-stack">
+              <Column heading={h.tools} links={group(NAV_GROUPS.tools)} />
               <Column heading={h.work} links={group(NAV_GROUPS.work)} />
               <Column heading={h.compare} links={group(NAV_GROUPS.compare)} />
             </div>

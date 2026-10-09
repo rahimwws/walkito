@@ -9,7 +9,7 @@ import type { EnglishPage, Lang, TranslatedPage } from '@/lib/i18n';
  */
 export type GuideKey = TranslatedPage | EnglishPage | 'runners';
 
-export type NavGroup = 'exercises' | 'pain' | 'heel' | 'foot' | 'work' | 'compare' | 'library';
+export type NavGroup = 'exercises' | 'pain' | 'heel' | 'foot' | 'ankle' | 'flat' | 'tools' | 'work' | 'compare' | 'library';
 
 /** Footer label for each guide: shorter than the H1, read in a column. */
 export const NAV_LABEL: Partial<Record<GuideKey, string>> = {
@@ -45,6 +45,21 @@ export const NAV_LABEL: Partial<Record<GuideKey, string>> = {
   sesamoiditis: 'Sesamoiditis',
   bunions: 'Bunion exercises',
   hammerToe: 'Hammer toe exercises',
+  toeStrengthening: 'Toe strengthening',
+  tightCalves: 'Tight calves',
+  ankleMobility: 'Ankle mobility',
+  ankleStrengthening: 'Ankle strengthening',
+  footStrengthening: 'Foot strengthening',
+  flatFeetBackPain: 'Flat feet and back pain',
+  flatFeetKneePain: 'Flat feet and knee pain',
+  flatFeetAge: 'Flat feet with age',
+  flatFeetKids: 'Flat feet in kids',
+  nightSplints: 'Night splints',
+  pfTaping: 'Taping for heel pain',
+  iceHeat: 'Ice or heat for heel pain',
+  massageBall: 'Massage ball and frozen bottle',
+  insolesVsExercises: 'Insoles vs exercises',
+  barefoot: 'Barefoot shoes',
 };
 
 /** Spanish footer labels, for the articles that exist in Spanish. */
@@ -151,7 +166,10 @@ export const NAV_GROUPS: Record<NavGroup, readonly GuideKey[]> = {
   exercises: ['heelPain', 'flatFeet', 'calfRaises', 'achilles', 'shinSplints'],
   pain: ['hubPlantarFasciitis', 'hubFlatFeet', 'morningHeelPain', 'pfDuration', 'ballOfFoot', 'runners'],
   heel: ['pfVsHeelSpur', 'heelSpurExercises', 'heelPainAfterWalking', 'heelPainAtNight', 'heelFatPad', 'haglunds', 'severs'],
-  foot: ['archPain', 'highArches', 'pttd', 'topOfFoot', 'mortons', 'sesamoiditis', 'bunions', 'hammerToe'],
+  foot: ['archPain', 'highArches', 'pttd', 'topOfFoot', 'mortons', 'sesamoiditis', 'bunions', 'hammerToe', 'toeStrengthening'],
+  ankle: ['tightCalves', 'ankleMobility', 'ankleStrengthening', 'footStrengthening'],
+  flat: ['flatFeetBackPain', 'flatFeetKneePain', 'flatFeetAge', 'flatFeetKids'],
+  tools: ['nightSplints', 'pfTaping', 'iceHeat', 'massageBall', 'insolesVsExercises', 'barefoot'],
   work: ['standing', 'nurses', 'standingDesk'],
   compare: ['bestApp', 'vsExakt'],
   library: [
@@ -162,13 +180,13 @@ export const NAV_GROUPS: Record<NavGroup, readonly GuideKey[]> = {
 };
 
 export const GROUP_HEADING: Record<Lang, Record<NavGroup | 'walkito', string>> = {
-  en: { exercises: 'Exercises', pain: 'Foot pain', heel: 'Heel pain', foot: 'Arch and toes', work: 'On your feet', compare: 'Compare apps', library: 'Exercise library', walkito: 'Walkito' },
-  ru: { exercises: 'Упражнения', pain: 'Боль в стопе', heel: 'Боль в пятке', foot: 'Свод и пальцы', work: 'На ногах весь день', compare: 'Сравнение', library: 'Упражнения', walkito: 'Walkito' },
-  es: { exercises: 'Ejercicios', pain: 'Dolor de pie', heel: 'Dolor de talón', foot: 'Arco y dedos', work: 'De pie todo el día', compare: 'Comparar', library: 'Biblioteca de ejercicios', walkito: 'Walkito' },
-  pt: { exercises: 'Exercícios', pain: 'Dor no pé', heel: 'Dor no calcanhar', foot: 'Arco e dedos', work: 'Em pé o dia todo', compare: 'Comparar apps', library: 'Biblioteca de exercícios', walkito: 'Walkito' },
-  fr: { exercises: 'Exercices', pain: 'Douleur au pied', heel: 'Douleur au talon', foot: 'Voûte et orteils', work: 'Debout toute la journée', compare: 'Comparer', library: "Bibliothèque d'exercices", walkito: 'Walkito' },
-  it: { exercises: 'Esercizi', pain: 'Dolore al piede', heel: 'Dolore al tallone', foot: 'Arco e dita', work: 'In piedi tutto il giorno', compare: 'Confronta app', library: 'Libreria di esercizi', walkito: 'Walkito' },
-  de: { exercises: 'Übungen', pain: 'Fußschmerzen', heel: 'Fersenschmerzen', foot: 'Fußgewölbe und Zehen', work: 'Den ganzen Tag stehen', compare: 'Apps vergleichen', library: 'Übungsbibliothek', walkito: 'Walkito' },
+  en: { exercises: 'Exercises', pain: 'Foot pain', heel: 'Heel pain', foot: 'Arch and toes', ankle: 'Calf and ankle', flat: 'Flat feet', tools: 'Insoles, tape and tools', work: 'On your feet', compare: 'Compare apps', library: 'Exercise library', walkito: 'Walkito' },
+  ru: { exercises: 'Упражнения', pain: 'Боль в стопе', heel: 'Боль в пятке', foot: 'Свод и пальцы', ankle: 'Икры и голеностоп', flat: 'Плоскостопие', tools: 'Стельки, тейп и другое', work: 'На ногах весь день', compare: 'Сравнение', library: 'Упражнения', walkito: 'Walkito' },
+  es: { exercises: 'Ejercicios', pain: 'Dolor de pie', heel: 'Dolor de talón', foot: 'Arco y dedos', ankle: 'Pantorrilla y tobillo', flat: 'Pie plano', tools: 'Plantillas, vendaje y más', work: 'De pie todo el día', compare: 'Comparar', library: 'Biblioteca de ejercicios', walkito: 'Walkito' },
+  pt: { exercises: 'Exercícios', pain: 'Dor no pé', heel: 'Dor no calcanhar', foot: 'Arco e dedos', ankle: 'Panturrilha e tornozelo', flat: 'Pé chato', tools: 'Palmilhas, fita e mais', work: 'Em pé o dia todo', compare: 'Comparar apps', library: 'Biblioteca de exercícios', walkito: 'Walkito' },
+  fr: { exercises: 'Exercices', pain: 'Douleur au pied', heel: 'Douleur au talon', foot: 'Voûte et orteils', ankle: 'Mollet et cheville', flat: 'Pieds plats', tools: 'Semelles, strapping et plus', work: 'Debout toute la journée', compare: 'Comparer', library: "Bibliothèque d'exercices", walkito: 'Walkito' },
+  it: { exercises: 'Esercizi', pain: 'Dolore al piede', heel: 'Dolore al tallone', foot: 'Arco e dita', ankle: 'Polpaccio e caviglia', flat: 'Piede piatto', tools: 'Plantari, taping e altro', work: 'In piedi tutto il giorno', compare: 'Confronta app', library: 'Libreria di esercizi', walkito: 'Walkito' },
+  de: { exercises: 'Übungen', pain: 'Fußschmerzen', heel: 'Fersenschmerzen', foot: 'Fußgewölbe und Zehen', ankle: 'Wade und Sprunggelenk', flat: 'Plattfuß', tools: 'Einlagen, Tape und mehr', work: 'Den ganzen Tag stehen', compare: 'Apps vergleichen', library: 'Übungsbibliothek', walkito: 'Walkito' },
 };
 
 /** The group a guide sits in, or null for pages outside the map. */
