@@ -444,7 +444,6 @@ export function feetAfterWork(source: PlanSource): ToolResult {
       minutes: r.minutes,
       position: r.position,
       steps: r.steps,
-      note: tips.map((t) => `${t.title}: ${t.text}`).join(' '),
     },
     `A ${r.minutes}-minute routine for after a shift, from the app's "${r.title}" routine:\n${list(r.steps)}\nShoe tips: ${tips.map((t) => t.text).join(' ')}`,
     { cta: cta({ source, area: 'heel_arch', minutes: 5, days: 5, equipment: [], side: 'both' }) },
