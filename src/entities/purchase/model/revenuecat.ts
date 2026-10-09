@@ -1,4 +1,10 @@
 import { identify, setPerson, track, type PlanTier, type PurchaseProps } from '@/shared/lib/analytics';
+import {
+  getAppsFlyerUID,
+  logAppsFlyerEvent,
+  onConversionData,
+  setAppsFlyerCustomerUserId,
+} from '@/shared/lib/appsflyer';
 import { getLanguage, translatorFor } from '@/shared/lib/i18n';
 import { kv } from '@/shared/lib/storage';
 import { currentUserId, supabase } from '@/shared/lib/supabase';
@@ -16,6 +22,7 @@ import Purchases, {
 } from 'react-native-purchases';
 
 import { decideAccess, hadAccess as hadAccessOf, passEnd as passEndOf } from './access';
+import { campaignAttributes } from './attribution';
 import {
   ENTITLEMENT,
   PACKAGES,
@@ -45,6 +52,10 @@ const BONUS_KEY = 'purchase/bonus-days';
 /** Whether this customer has ever held access, so the first frame can tell a
  * lapsed subscriber from a new one — see `hadAccess` on the contract. */
 const HAD_ACCESS_KEY = 'purchase/had-access';
+/** Set once AppsFlyer has reported this install as paid (non-organic): from
+ * then on its media source outranks the onboarding survey's answer — see
+ * `setAcquisitionSource`. */
+const PAID_SOURCE_KEY = 'purchase/paid-media-source';
 
 /**
  * Whether the subscription is live, cached from the last thing the store said.
@@ -103,6 +114,7 @@ let flaggedSandbox = false;
 function announce(info: CustomerInfo) {
   lastInfo = info;
   flagSandbox(info);
+  void relinkAppsFlyer();
   const end = passEndOf(info, bonusDays);
   // A moved end date is news even when access did not flip: the pass expiry
   // reminder is scheduled from it, and a friend's free days have to push that
@@ -345,23 +357,110 @@ export async function startRevenueCat(apiKey: string, verbose: boolean): Promise
 }
 
 /**
- * Hands RevenueCat the Apple Ads attribution token, on iOS.
+ * Hands RevenueCat what it needs to say where a subscriber came from.
  *
- * AdServices (iOS 14.3+) says whether this install came from an Apple Ads tap,
- * and RevenueCat resolves the token to the campaign, ad group and keyword —
- * which is what lets its charts say which search term brought a paying
- * subscriber, not only an install. Standard attribution needs no App Tracking
- * Transparency prompt, and the app shows none. The keyword level also needs the
- * Apple AdServices integration in the RevenueCat dashboard, signed in to the
- * Apple Ads account. Android has no equivalent; the call is iOS-only.
+ * **Apple Ads, on iOS.** AdServices (iOS 14.3+) says whether this install came
+ * from an Apple Ads tap, and RevenueCat resolves the token to the campaign, ad
+ * group and keyword — which is what lets its charts say which search term
+ * brought a paying subscriber, not only an install. Standard attribution needs
+ * no App Tracking Transparency prompt, and the app shows none. The keyword
+ * level also needs the Apple AdServices integration in the RevenueCat
+ * dashboard, signed in to the Apple Ads account. Android has no equivalent.
+ *
+ * **AppsFlyer, on both.** Then the AppsFlyer link (`linkAppsFlyer`) and the
+ * install's campaign (`recordCampaign`). Both are no-ops in a build where
+ * AppsFlyer does not run, which is every build but production.
  */
 async function collectAdAttribution(): Promise<void> {
-  if (Platform.OS !== 'ios') return;
-  try {
-    await Purchases.enableAdServicesAttributionTokenCollection();
-  } catch {
-    // Attribution is never worth failing a store start over.
+  if (Platform.OS === 'ios') {
+    try {
+      await Purchases.enableAdServicesAttributionTokenCollection();
+    } catch {
+      // Attribution is never worth failing a store start over.
+    }
   }
+  onConversionData(recordCampaign);
+  await linkAppsFlyer();
+}
+
+/** The RevenueCat id last handed to AppsFlyer, so a relink only runs when it changed. */
+let linkedId: string | null = null;
+
+/**
+ * RevenueCat and AppsFlyer, told about each other.
+ *
+ * RevenueCat sends AppsFlyer every purchase, renewal, refund and cancellation
+ * from its server (the `rc_*` events), and matches them to an install only by
+ * the `$appsflyerId` attribute set here — without it AppsFlyer sees installs
+ * and never the money. `collectDeviceIdentifiers` adds the IDFV (iOS) and the
+ * other device ids the integration forwards; with no ATT prompt the IDFA it
+ * reads is all zeros, and with `AD_ID` removed from the Android manifest there
+ * is no advertising id either.
+ *
+ * AppsFlyer, the other way, files the install under the RevenueCat app user
+ * id, the one PostHog and Superwall are keyed on too. The app never logs
+ * RevenueCat in, so that id changes only when RevenueCat aliases the customer
+ * (a restore onto another anonymous id); `announce` calls `relinkAppsFlyer` on
+ * every customer update so the two stay matched when it does.
+ */
+async function linkAppsFlyer(): Promise<void> {
+  try {
+    const afId = await getAppsFlyerUID();
+    if (afId == null) return;
+    await Purchases.collectDeviceIdentifiers();
+    await Purchases.setAppsflyerID(afId);
+    const rcId = await Purchases.getAppUserID();
+    setAppsFlyerCustomerUserId(rcId);
+    linkedId = rcId;
+  } catch {
+    // The next launch links again.
+  }
+}
+
+async function relinkAppsFlyer(): Promise<void> {
+  if (linkedId == null) return;
+  try {
+    const rcId = await Purchases.getAppUserID();
+    if (rcId !== linkedId) await linkAppsFlyer();
+  } catch {
+    // As above.
+  }
+}
+
+/**
+ * The campaign behind a paid install, written where revenue is counted.
+ *
+ * RevenueCat's reserved attributes (`$mediaSource`, `$campaign`, `$adGroup`,
+ * `$ad`, `$keyword`, `$creative`), so its charts split revenue by them, and
+ * `af_media_source` / `af_campaign` on the PostHog person, so the funnel can.
+ * Only a non-organic first launch writes anything (`campaignAttributes`).
+ */
+function recordCampaign(data: Parameters<typeof campaignAttributes>[0]): void {
+  const attributes = campaignAttributes(data);
+  if (attributes == null) return;
+  kv.set(PAID_SOURCE_KEY, true);
+  void Purchases.setAttributes(attributes).catch(() => {});
+  const person: Record<string, string> = {};
+  if (attributes.$mediaSource != null) person.af_media_source = attributes.$mediaSource;
+  if (attributes.$campaign != null) person.af_campaign = attributes.$campaign;
+  if (Object.keys(person).length > 0) setPerson(person);
+}
+
+/**
+ * What an ad network may count, sent from the phone.
+ *
+ * SKAdNetwork conversion values and the networks' own on-device optimisation
+ * only see events the SDK logs on the device. `af_start_trial` or
+ * `af_subscribe`, with the product and the plan.
+ *
+ * **No `af_revenue`, no `af_currency`.** The money reaches AppsFlyer from
+ * RevenueCat's server (`linkAppsFlyer`), with renewals and refunds the phone
+ * never sees. Revenue on these events as well would count every first payment
+ * twice.
+ */
+function logStoreConversion(info: CustomerInfo, productId: string, plan: PlanTier): void {
+  const trial = info.entitlements.active[ENTITLEMENT]?.periodType?.toUpperCase() === 'TRIAL';
+  logAppsFlyerEvent(trial ? 'af_start_trial' : 'af_subscribe', { af_content_id: productId, plan });
 }
 
 /**
@@ -413,8 +512,18 @@ async function linkBackend(rcId: string): Promise<void> {
  * The reserved attribute rather than a custom one, because it is the one
  * RevenueCat's own charts can split revenue and conversion by — "which channel
  * pays" answered in the dashboard that holds the money, with no export.
+ *
+ * **Second to a paid install.** When AppsFlyer has reported this install as
+ * non-organic, its media source is the record of what actually sent the person
+ * (an ad they tapped) and the survey answer does not replace it; the answer is
+ * still on the PostHog person as `acquisition_source`. An organic install has
+ * nothing better than the answer, so the answer is written. The order the two
+ * arrive in does not matter: a paid report landing after the answer overwrites
+ * it (`recordCampaign`), and an answer landing after a paid report is skipped
+ * here.
  */
 export async function setAcquisitionSource(source: string): Promise<void> {
+  if (kv.getBoolean(PAID_SOURCE_KEY) === true) return;
   try {
     await Purchases.setMediaSource(source);
   } catch {
@@ -484,6 +593,7 @@ export const revenueCatStore: Store = {
       // the user paid-up and still looking at the paywall.
       if (entitledIn(customerInfo)) {
         track('purchase_completed', props);
+        logStoreConversion(customerInfo, pkg.product.identifier, period);
         return { status: 'purchased' };
       }
       track('purchase_failed', { ...props, reason: 'no-entitlement' });
@@ -550,6 +660,7 @@ export const revenueCatStore: Store = {
       announce(customerInfo);
       if (entitledIn(customerInfo)) {
         track('purchase_completed', props);
+        logStoreConversion(customerInfo, product.identifier, props.plan);
         return { status: 'purchased' };
       }
       track('purchase_failed', { ...props, reason: 'no-entitlement' });

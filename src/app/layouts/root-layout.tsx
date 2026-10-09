@@ -26,6 +26,8 @@ import {
   useScreenTracking,
   useReferralSync,
   useQuickActions,
+  useOneLinks,
+  usePendingLink,
 } from '@/app/providers';
 import { AppUpdateHost, updateRestartHoldMs } from '@/features/app-update';
 import { useHomeWidget } from '@/features/home-widget';
@@ -163,6 +165,13 @@ function RootLayoutInner() {
   // there — so the paywall is reachable in development rather than bypassed. See
   // the note in `entities/purchase/model/store.ts`.
   usePurchases();
+  // OneLinks (AppsFlyer, production builds): opened on arrival when the tabs
+  // are reachable — the same condition as the tabs' own guard below — and
+  // otherwise kept and opened once they are. Email links tapped before the
+  // onboarding was done open through the second hook too.
+  const tabsReachable = onboarded && ((entitled && !setupPending) || (lapsed && browsing));
+  useOneLinks(tabsReachable);
+  usePendingLink(tabsReachable);
   // Clears a Live Activity left pinned to the Dynamic Island by a crash. At the
   // root because the earliest moment is the point — the player swept these too,
   // but only when a new session began.

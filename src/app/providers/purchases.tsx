@@ -3,6 +3,7 @@ import { AppState } from 'react-native';
 
 import { syncExpiryNotice } from '@/entities/notifications';
 import { purchases, startCompAccess, startPurchases } from '@/entities/purchase';
+import { startAppsFlyer } from '@/shared/lib/appsflyer';
 
 /**
  * Starts the store once, and re-checks the subscription on the way back in.
@@ -18,6 +19,11 @@ export function usePurchases(): void {
     // that fails to start leaves the app not-entitled, which is the same state
     // it was in a moment earlier — there is nothing for a user to do about it
     // and nothing worth interrupting launch for.
+    //
+    // AppsFlyer first, alongside rather than before: RevenueCat's start asks
+    // it for the install's AppsFlyer id (`linkAppsFlyer`) and waits a few
+    // seconds at most. Production builds only; a no-op everywhere else.
+    void startAppsFlyer();
     void startPurchases();
     // Access granted by account, read now and after every sign-in.
     startCompAccess();

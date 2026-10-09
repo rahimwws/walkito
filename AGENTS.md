@@ -169,6 +169,18 @@ track('session_completed', { day, block, kind, checkpoint });
 - **Onboarding step keys and `AcquisitionSource` values are analytics identifiers.** Renaming one splits every chart at the day it shipped.
 - Dev builds are tagged `app_variant = development`, which the PostHog project treats as a test account. Dashboards: PostHog project 626472 (org "Walkito").
 
+# Attribution: AppsFlyer
+
+Which ad, campaign or link brought an install, and what it went on to pay. Through `@/shared/lib/appsflyer`, never the SDK directly. Testing it: `TESTING.md`.
+
+- **Production builds only.** AppsFlyer knows `com.walkito.app` (iOS `id6813076846`, Android) and nothing else; the `.dev` / `.preview` builds never load the SDK. TestFlight and the Play internal track are production builds, so they do run it. Keys and the OneLink domain are in `shared/config/appsflyer.ts`.
+- **No ATT, no advertising id.** The app never shows the tracking prompt and `NSUserTrackingUsageDescription` must not appear (`scripts/verify-config` fails if it does). iOS attributes through Apple Ads (AdServices) and SKAdNetwork (`NSAdvertisingAttributionReportEndpoint`); Android through the Play Install Referrer. `plugins/with-appsflyer-android.js` removes the SDK's `AD_ID` permission, because the Play declaration says the app uses no advertising id. Strict mode is off; `app.config.ts` says why.
+- **Revenue comes from RevenueCat's server, as in PostHog.** RevenueCat sends AppsFlyer the `rc_*` purchase, renewal and refund events, matched by the `$appsflyerId` attribute that `linkAppsFlyer` (`entities/purchase/model/revenuecat.ts`) sets after every store start, with the device ids from `collectDeviceIdentifiers`. AppsFlyer files the install under the RevenueCat app user id (`setCustomerUserId`), the id PostHog and Superwall use too.
+- **On-device events are for SKAdNetwork only:** `af_start_trial` / `af_subscribe` with the product and plan, logged when a purchase grants the entitlement. Never `af_revenue` or `af_currency` on them: the money already arrives from RevenueCat, and would count twice. Never health data, by the analytics rule.
+- **The campaign goes where revenue is counted.** A non-organic first launch writes RevenueCat's `$mediaSource`, `$campaign`, `$adGroup`, `$ad`, `$keyword`, `$creative` and the PostHog person's `af_media_source` / `af_campaign` (`campaignAttributes`, tested). It outranks the onboarding's "where did you hear about us", which writes `$mediaSource` only for an organic install; see `setAcquisitionSource` for the order.
+- **OneLink** (`https://walkito.onelink.me/2L97/…`, in `ios.associatedDomains` and an `autoVerify` intent filter). The SDK resolves direct and deferred links to `deep_link_value`; `deepLinkPath` (`pages/open`) makes it an `/open/…` path: `paywall`, `exercise_<id>` (the plan, with that exercise's card), `guide_<slug>` (`walkito.site/<slug>/` in the browser), the email paths as they are, anything else Home. `+native-intent` never routes the raw OneLink URL. Until the tabs are reachable (onboarding, paywall, setup) a OneLink is kept (`savePendingLink`) and opened once they are; an email link tapped before the onboarding is done is kept the same way.
+- **It is native.** The SDK, the plugins and the domains change the fingerprint: they ship in a store build, never over the air. If the app moves to another Apple team, the OneLink template's Team ID moves with it.
+
 # Performance: EAS Insights + Observe
 
 - `expo-insights` has no API: linked into the binary, it reports cold starts to EAS → Insights → App usage.

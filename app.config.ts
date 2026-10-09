@@ -177,6 +177,24 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       // (`shared/lib/i18n/store.ts`), поэтому бинарник, собранный до установки
       // пакета, откатится на английский, а не упадёт на старте.
       'expo-localization',
+      // AppsFlyer (`shared/lib/appsflyer`). The plugin links the native SDK,
+      // routes the AppDelegate's launch options, URL opens and universal links
+      // through `AppsFlyerAttribution`, and writes `$RNAppsFlyerStrictMode`
+      // into the Podfile.
+      //
+      // Strict mode stays off. It swaps in AppsFlyer's build without AdSupport
+      // (no IDFA code at all), which AppsFlyer documents for apps directed at
+      // children and nowhere else — and what this app measures with is Apple
+      // Ads (AdServices) and SKAdNetwork, neither of which AppsFlyer documents
+      // for the strict build. The standard build gains nothing over it here
+      // anyway: the app never shows the App Tracking Transparency prompt, so
+      // iOS hands the SDK an all-zero IDFA. If the app is ever opened to
+      // children, turn it on (and expect Apple Ads to need re-verifying).
+      ['react-native-appsflyer', { shouldUseStrictMode: false }],
+      // What AppsFlyer's plugin leaves out on Android: AD_ID removed from the
+      // merged manifest, and `setIntent` in `onNewIntent` so a OneLink opened
+      // from the background reaches the SDK. See the plugin.
+      './plugins/with-appsflyer-android',
     ],
   };
 };

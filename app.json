@@ -11,11 +11,12 @@
       "supportsTablet": false,
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
-        "CFBundleAllowMixedLocalizations": true
+        "CFBundleAllowMixedLocalizations": true,
+        "NSAdvertisingAttributionReportEndpoint": "https://appsflyer-skadnetwork.com/"
       },
       "bundleIdentifier": "com.walkito.app",
       "appleTeamId": "HWGBXV8W4Z",
-      "associatedDomains": ["applinks:walkito.site"]
+      "associatedDomains": ["applinks:walkito.site", "applinks:walkito.onelink.me"]
     },
     "android": {
       "adaptiveIcon": {
@@ -32,6 +33,14 @@
         "android.permission.health.READ_EXERCISE",
         "android.permission.health.READ_DISTANCE",
         "android.permission.health.WRITE_EXERCISE"
+      ],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [{ "scheme": "https", "host": "walkito.onelink.me", "pathPrefix": "/2L97" }],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
       ]
     },
     "web": {
