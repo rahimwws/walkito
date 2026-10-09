@@ -19,6 +19,7 @@ export {
 } from './theme';
 export { APPLE_APP_ID, APP_STORE_REVIEW_URL, LEGAL, PLAY_STORE_URL, SUPPORT_EMAIL } from './legal';
 export { SUPERWALL_KEYS } from './superwall';
+export { APPSFLYER } from './appsflyer';
 export {
   CLIPS,
   CLIPS_TOTAL_BYTES,

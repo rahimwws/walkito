@@ -1,5 +1,6 @@
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useRef } from 'react';
+import { Linking } from 'react-native';
 
 import { unlockBoost } from '@/entities/offer';
 import { recordEmailLinkOpened } from '@/entities/profile';
@@ -9,10 +10,11 @@ import { useOnboarded } from '@/entities/session';
 import { track } from '@/shared/lib/analytics';
 import { requestProgram } from '@/shared/lib/program';
 
+import { savePendingLink } from '../model/pending';
 import { linkTarget } from '../model/route';
 
 /**
- * `/open/{path}` — where every email button lands.
+ * `/open/{path}` — where every email button and OneLink lands.
  *
  * Renders nothing and stays for one frame: it records the click against the
  * email it came from (`src=email&e=<key>`), then hands the user to the screen
@@ -23,6 +25,11 @@ import { linkTarget } from '../model/route';
  * The plan, today's session and the test cannot be opened by route: the
  * program overlay lives inside the tabs. They are asked for through
  * `requestProgram`, which the plan acts on once it has mounted.
+ *
+ * Before the onboarding is done the link is kept, not followed
+ * (`savePendingLink`): the onboarding builds the plan the link points into,
+ * and nobody skips it by arriving from an ad. The root layout opens the kept
+ * link once the app proper is reachable.
  */
 export function OpenLinkPage() {
   const router = useRouter();
@@ -44,6 +51,13 @@ export function OpenLinkPage() {
     }
 
     if (!onboarded) {
+      if (path.length > 0) {
+        const query = new URLSearchParams();
+        if (params.minutes != null) query.set('minutes', params.minutes);
+        if (params.offering != null) query.set('offering', params.offering);
+        const rest = query.toString();
+        savePendingLink(`/open/${path}${rest ? `?${rest}` : ''}`);
+      }
       router.replace('/');
       return;
     }
@@ -84,6 +98,11 @@ export function OpenLinkPage() {
       case 'settings':
         router.replace('/');
         setTimeout(() => router.push('/settings'), 0);
+        return;
+      case 'guide':
+        // A page on the site, in the browser; the app stays on Home under it.
+        router.replace('/');
+        void Linking.openURL(target.url).catch(() => {});
         return;
       case 'home':
         router.replace('/');
