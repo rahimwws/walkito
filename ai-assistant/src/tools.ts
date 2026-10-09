@@ -5,15 +5,28 @@
  * Each result carries `structuredContent` for the widget and a short `text`
  * for the model to talk from. Exercises, doses, routines and the week come
  * from the app (content.ts). The copy that is not the app's — the red flags,
- * the call to action, the footer, the footwear tips — is the spec's
- * (`walkito-ai-assistant-spec` v1.1, §4–§5), written once here.
+ * the call to action, the footer, the footwear tips - is the spec's
+ * (`walkito-ai-assistant-spec` v1.1, §4-§5), in the app's seven languages in
+ * copy.ts. Every tool takes the language last; English when it is left out.
  */
 import { CHAINS, PLAN_META_BY_ID, type Equipment } from '@/entities/program/model/plan/catalogue-meta';
 import { goalsForOutcome, outcomeFor } from '@/entities/program/model/plan/outcome';
 import { DEFAULT_LEVELS, buildWeek, weekStartOf, type PlanDay } from '@/entities/program/model/plan/week';
 import { CLIPS } from '@/shared/config/clip-manifest';
+import { JOURNEY_DE } from '@/shared/lib/i18n/catalogue/de/journey';
+import { PAGES_DE } from '@/shared/lib/i18n/catalogue/de/pages';
 import { JOURNEY_EN } from '@/shared/lib/i18n/catalogue/en/journey';
 import { PAGES_EN } from '@/shared/lib/i18n/catalogue/en/pages';
+import { JOURNEY_ES } from '@/shared/lib/i18n/catalogue/es/journey';
+import { PAGES_ES } from '@/shared/lib/i18n/catalogue/es/pages';
+import { JOURNEY_FR } from '@/shared/lib/i18n/catalogue/fr/journey';
+import { PAGES_FR } from '@/shared/lib/i18n/catalogue/fr/pages';
+import { JOURNEY_IT } from '@/shared/lib/i18n/catalogue/it/journey';
+import { PAGES_IT } from '@/shared/lib/i18n/catalogue/it/pages';
+import { JOURNEY_PT } from '@/shared/lib/i18n/catalogue/pt/journey';
+import { PAGES_PT } from '@/shared/lib/i18n/catalogue/pt/pages';
+import { JOURNEY_RU } from '@/shared/lib/i18n/catalogue/ru/journey';
+import { PAGES_RU } from '@/shared/lib/i18n/catalogue/ru/pages';
 import {
   encodePlanCode,
   type PlanArea,
@@ -31,63 +44,36 @@ import {
   doseLabel,
   exerciseCard,
   exerciseName,
+  minutesLabel,
   routine,
   startingDose,
   type ExerciseCard,
+  type Lang,
 } from './content';
+import { COPY, weekdays } from './copy';
 
-// ─── Shared copy (spec §1.2, §5.1, §5.2, §5.5) ─────────────────────────────
+// ─── Shared copy ────────────────────────────────────────────────────────────
 
-export const DISCLAIMER =
-  'Walkito is not a medical device and does not diagnose, treat, cure or prevent any medical condition.';
-export const EVIDENCE_LINE =
-  'Exercises chosen from published research and guidelines; Walkito itself hasn’t been tested in a trial.';
-
-export const RED_FLAGS = {
-  injury: 'An injury or fall, and you can’t put weight on it',
-  numbness: 'Numbness, tingling or burning',
-  swelling: 'Swelling or warmth',
-  night_pain: 'Pain at night or at rest',
-  arch_flattened: 'One arch suddenly flattened',
-  fever: 'Fever',
-  diabetes_hot_foot: 'A hot, red or swollen foot with diabetes',
-  achilles_pop: 'A sudden pop at the back of the ankle',
-  calf_swollen: 'A swollen, warm calf',
-} as const;
+export const DISCLAIMER = COPY.en.disclaimer;
+export const EVIDENCE_LINE = COPY.en.evidence;
+export const RED_FLAGS = COPY.en.redFlags;
 export type RedFlag = keyof typeof RED_FLAGS;
 export const RED_FLAG_IDS = Object.keys(RED_FLAGS) as RedFlag[];
 
-const RED_FLAG_TITLE = 'See a doctor if';
-const SEE_DOCTOR_FIRST = 'Please see a doctor before doing exercises.';
+type Table = Record<string, string>;
+const JOURNEY: Record<Lang, Table> = {
+  en: JOURNEY_EN, ru: JOURNEY_RU, es: JOURNEY_ES, pt: JOURNEY_PT, fr: JOURNEY_FR, it: JOURNEY_IT, de: JOURNEY_DE,
+} as unknown as Record<Lang, Table>;
+const PAGES: Record<Lang, Table> = {
+  en: PAGES_EN, ru: PAGES_RU, es: PAGES_ES, pt: PAGES_PT, fr: PAGES_FR, it: PAGES_IT, de: PAGES_DE,
+} as unknown as Record<Lang, Table>;
 
-const CTA_LINE = 'In the app, the plan adapts to your foot every day.';
-const CTA_BULLETS = [
-  'Reminder before your first step',
-  'Plan changes with your pain check-in',
-  'Progress test every 14 days',
-];
-const CTA_BUTTON = 'Continue this plan in Walkito';
-const APP_CHANGES =
-  'In the app the plan changes every day with your pain check-in, gets harder when it feels easy, reminds you before your first step, and tests your progress every 14 days.';
-
-const AREA_LABEL: Record<PlanArea, string> = {
-  heel_arch: 'Heel and arch',
-  achilles: 'Achilles',
-  flat_feet: 'Flat feet',
-  shin: 'Shin',
-  general_plus: 'Stronger feet',
-};
-
-const KIND_LABEL: Record<string, string> = {
-  strength: PAGES_EN['pages.program.kindStrength'],
-  mobility: PAGES_EN['pages.program.kindMobility'],
-  balance: PAGES_EN['pages.program.kindBalance'],
-  recovery: PAGES_EN['pages.program.kindRecovery'],
-  test: PAGES_EN['pages.program.retest'],
-  rest: 'Rest',
-};
-
-const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+/** The app's names for a day's kind (the Plan screen's), in a language. */
+function kindLabel(type: string, lang: Lang): string {
+  const pages = PAGES[lang];
+  const key = { strength: 'pages.program.kindStrength', mobility: 'pages.program.kindMobility', balance: 'pages.program.kindBalance', recovery: 'pages.program.kindRecovery', test: 'pages.program.retest' }[type];
+  return key ? pages[key] : COPY[lang].rest;
+}
 
 // ─── Result shapes ──────────────────────────────────────────────────────────
 
@@ -101,8 +87,11 @@ export type Cta = {
 
 export type Footer = { disclaimer: string; evidence: string };
 
+/** The widget's own few words, so it speaks the result's language. */
+export type Ui = (typeof COPY)['en']['ui'] & { restDay: string; rest: string };
+
 export type Widget =
-  | { kind: 'routine'; title: string; intro: string; minutes: number; position: string; steps: ExerciseCard[]; note?: string }
+  | { kind: 'routine'; title: string; intro: string; minutes: number; minutesLabel: string; position: string; steps: ExerciseCard[]; note?: string }
   | { kind: 'plan_week'; title: string; intro: string; days: WeekDay[]; note?: string }
   | { kind: 'single_exercise'; title: string; exercise: ExerciseCard; why?: string; evidence?: string; note?: string }
   | { kind: 'self_check'; title: string; steps: string[]; question?: string; result?: string; exercise?: ExerciseCard; note?: string }
@@ -111,18 +100,18 @@ export type Widget =
 
 export type WeekDay = {
   weekday: string;
+  initial: string;
   type: string;
   label: string;
   minutes: number;
+  minutesLabel: string;
   exercises: ExerciseCard[];
 };
 
 export type ToolResult = {
-  structuredContent: Widget & { cta?: Cta; footer: Footer; calm: boolean };
+  structuredContent: Widget & { cta?: Cta; footer: Footer; calm: boolean; lang: Lang; ui: Ui };
   text: string;
 };
-
-const footer: Footer = { disclaimer: DISCLAIMER, evidence: EVIDENCE_LINE };
 
 export type CodeParts = {
   source: PlanSource;
@@ -133,45 +122,59 @@ export type CodeParts = {
   side: PlanSide;
 };
 
-export function cta(parts: CodeParts): Cta {
+export function cta(parts: CodeParts, lang: Lang = 'en'): Cta {
   const code = encodePlanCode(parts);
-  return { line: CTA_LINE, bullets: CTA_BULLETS, button: CTA_BUTTON, url: `https://walkito.site/p/${code}/`, code };
+  const c = COPY[lang];
+  // The /p/ page speaks the chat's language too; English needs no parameter.
+  const url = `https://walkito.site/p/${code}/${lang === 'en' ? '' : `?l=${lang}`}`;
+  return { line: c.ctaLine, bullets: c.ctaBullets, button: c.ctaButton, url, code };
 }
 
 /** Pain of 5 or more: no cheerful wording anywhere (spec §5.3). The copy here
  * is plain throughout; the flag lets the widget drop its one warm accent. */
 const calm = (pain?: number) => pain != null && pain >= 5;
 
-function result(widget: Widget, text: string, opts: { cta?: Cta; pain?: number } = {}): ToolResult {
+function result(widget: Widget, text: string, lang: Lang, opts: { cta?: Cta; pain?: number } = {}): ToolResult {
+  const c = COPY[lang];
   return {
-    structuredContent: { ...widget, ...(opts.cta ? { cta: opts.cta } : {}), footer, calm: calm(opts.pain) },
-    text: `${text}\n\n${DISCLAIMER}`,
+    structuredContent: {
+      ...widget,
+      ...(opts.cta ? { cta: opts.cta } : {}),
+      footer: { disclaimer: c.disclaimer, evidence: c.evidence },
+      calm: calm(opts.pain),
+      lang,
+      ui: { ...c.ui, restDay: c.restDay, rest: c.rest },
+    },
+    text: `${text}\n\n${c.disclaimer}`,
   };
 }
+
+const flagLine = (lang: Lang) => `${COPY[lang].redFlagTitle}: ${Object.values(COPY[lang].redFlags).join('; ')}.`;
 
 const list = (cards: ExerciseCard[]) => cards.map((c) => `- ${c.name} (${c.dose}): ${c.cue}`).join('\n');
 
 // ─── 4.1 relief_now ─────────────────────────────────────────────────────────
 
-export function reliefNow(args: { area?: PlanArea; pain_today?: number }, source: PlanSource): ToolResult {
-  const r = routine('flare');
+export function reliefNow(args: { area?: PlanArea; pain_today?: number }, source: PlanSource, lang: Lang = 'en'): ToolResult {
+  const c = COPY[lang];
+  const r = routine('flare', lang);
   const high = args.pain_today != null && args.pain_today >= 7;
-  const note = high
-    ? 'With pain this high today, keep to this seated routine and nothing else on your feet.'
-    : undefined;
+  const note = high ? c.reliefHigh : undefined;
   return result(
     {
       kind: 'routine',
       title: r.title,
       intro: r.cue,
       minutes: r.minutes,
+      minutesLabel: r.minutesLabel,
       position: r.position,
       steps: r.steps,
       ...(note ? { note } : {}),
     },
-    `${r.title}: a ${r.minutes}-minute ${r.position} routine. ${r.cue}\n${list(r.steps)}${note ? `\n${note}` : ''}\n${RED_FLAG_TITLE}: ${Object.values(RED_FLAGS).join('; ')}.`,
+    `${r.title}: ${c.routineLine(r.minutes, r.position)}. ${r.cue}\n${list(r.steps)}${note ? `\n${note}` : ''}\n${flagLine(lang)}`,
+    lang,
     {
-      cta: cta({ source, area: args.area ?? 'heel_arch', minutes: 3, days: 5, equipment: [], side: 'both' }),
+      cta: cta({ source, area: args.area ?? 'heel_arch', minutes: 3, days: 5, equipment: [], side: 'both' }, lang),
       pain: args.pain_today,
     },
   );
@@ -179,21 +182,23 @@ export function reliefNow(args: { area?: PlanArea; pain_today?: number }, source
 
 // ─── 4.2 first_step_stretch ─────────────────────────────────────────────────
 
-export function firstStepStretch(args: { side?: PlanSide }, source: PlanSource): ToolResult {
-  const r = routine('morning');
-  const card = exerciseCard('fascia_stretch', '10 × 10s per foot');
+export function firstStepStretch(args: { side?: PlanSide }, source: PlanSource, lang: Lang = 'en'): ToolResult {
+  const c = COPY[lang];
+  const r = routine('morning', lang);
+  const card = exerciseCard('fascia_stretch', c.stretchDose, undefined, lang);
   const side = args.side ?? 'both';
-  const sideLine = side === 'both' ? 'Do both feet.' : `Do your ${side} foot.`;
+  const sideLine = c.side[side];
   return result(
     {
       kind: 'single_exercise',
       title: r.title,
       exercise: card,
-      why: `${r.cue} Pull your toes back, 10 seconds, 10 times. ${sideLine}`,
-      evidence: 'A stretch studied in published research (DiGiovanni 2003).',
+      why: `${r.cue} ${c.stretchHow} ${sideLine}`,
+      evidence: c.stretchEvidence,
     },
-    `${r.title}: ${card.name}, ${card.dose}, before standing up. ${card.cue} ${sideLine} A stretch studied in published research (DiGiovanni 2003).`,
-    { cta: cta({ source, area: 'heel_arch', minutes: 3, days: 7, equipment: [], side }) },
+    `${r.title}: ${card.name}, ${card.dose}, ${c.stretchWhen}. ${card.cue} ${sideLine} ${c.stretchEvidence}`,
+    lang,
+    { cta: cta({ source, area: 'heel_arch', minutes: 3, days: 7, equipment: [], side }, lang) },
   );
 }
 
@@ -284,47 +289,52 @@ export function starterWeek(args: PlanArgs, today: string) {
   });
 }
 
-function weekDay(day: PlanDay): WeekDay {
+function weekDay(day: PlanDay, lang: Lang): WeekDay {
+  const names = weekdays(lang)[day.weekday] ?? { short: '', initial: '' };
   return {
-    weekday: WEEKDAYS[day.weekday] ?? '',
+    weekday: names.short,
+    initial: names.initial,
     type: day.type,
-    label: KIND_LABEL[day.type] ?? day.type,
+    label: kindLabel(day.type, lang),
     minutes: day.minutes,
-    exercises: day.exercises.map((e) => exerciseCard(e.id, doseLabel(e.dose))),
+    minutesLabel: minutesLabel(day.minutes, lang),
+    exercises: day.exercises.map((e) => exerciseCard(e.id, doseLabel(e.dose, lang), undefined, lang)),
   };
 }
 
-export function buildStarterPlan(args: PlanArgs, source: PlanSource, today: string): ToolResult {
+export function buildStarterPlan(args: PlanArgs, source: PlanSource, today: string, lang: Lang = 'en'): ToolResult {
+  const c = COPY[lang];
   const minutes = args.minutes ?? 5;
   const days = args.days_per_week ?? 5;
   const side = args.side ?? 'both';
-  const code = cta({ source, area: args.area, minutes, days, equipment: args.equipment ?? [], side });
+  const code = cta({ source, area: args.area, minutes, days, equipment: args.equipment ?? [], side }, lang);
 
   // Pain of 7 or more today: the seated three minutes only, nothing that loads
   // the fascia (spec §1.4). The week waits for a calmer morning.
   if ((args.pain_today ?? 0) >= 7) {
-    const relief = reliefNow({ area: args.area, pain_today: args.pain_today }, source);
-    const note = 'With pain this high today, start with this seated routine. Ask for the week again on a calmer morning.';
-    const w = relief.structuredContent as Extract<Widget, { kind: 'routine' }>;
-    return result({ ...w, note }, `${note}\n${relief.text}`, { cta: code, pain: args.pain_today });
+    const relief = reliefNow({ area: args.area, pain_today: args.pain_today }, source, lang);
+    const note = c.planHigh;
+    const { cta: _cta, footer: _footer, calm: _calm, lang: _lang, ui: _ui, ...w } = relief.structuredContent;
+    return result({ ...(w as Extract<Widget, { kind: 'routine' }>), note }, `${note}\n${relief.text}`, lang, { cta: code, pain: args.pain_today });
   }
 
   const plan = starterWeek(args, today);
-  const week = plan.days.map(weekDay);
+  const week = plan.days.map((d) => weekDay(d, lang));
   const active = week.filter((d) => d.exercises.length > 0);
-  const title = `${AREA_LABEL[args.area]} plan`;
-  const intro = `${minutes} min a day · ${days} days a week`;
+  const title = c.planTitle[args.area];
+  const intro = c.planIntro(minutes, days);
   const textDays = week
     .map((d) =>
       d.exercises.length === 0
         ? `${d.weekday}: ${d.label}`
-        : `${d.weekday}: ${d.label}, ${d.minutes} min. ${d.exercises.map((e) => `${e.name} (${e.dose})`).join(', ')}`,
+        : `${d.weekday}: ${d.label}, ${d.minutesLabel}. ${d.exercises.map((e) => `${e.name} (${e.dose})`).join(', ')}`,
     )
     .join('\n');
   if (active.length === 0) throw new Error('starter plan: a week with no exercises');
   return result(
     { kind: 'plan_week', title, intro, days: week },
-    `${title}. ${intro}\n${textDays}\n${APP_CHANGES}\nPlan code: ${code.code} (${code.url})`,
+    `${title}. ${intro}\n${textDays}\n${c.appChanges}\n${c.planCode}: ${code.code} (${code.url})`,
+    lang,
     { cta: code, pain: args.pain_today },
   );
 }
@@ -366,96 +376,97 @@ export function resolveExercise(input: string): string | null {
   return EXERCISE_SYNONYMS[key] ?? null;
 }
 
-export function exerciseDemo(args: { exercise: string }, source: PlanSource): ToolResult {
+export function exerciseDemo(args: { exercise: string }, source: PlanSource, lang: Lang = 'en'): ToolResult {
   const id = resolveExercise(args.exercise);
   if (!id) throw new Error(`exercise_demo: unknown exercise ${args.exercise}`);
-  const card = exerciseCard(id, doseLabel(startingDose(id)));
-  const note = card.clip ? undefined : 'Video coming soon.';
+  const card = exerciseCard(id, doseLabel(startingDose(id), lang), undefined, lang);
+  const note = card.clip ? undefined : COPY[lang].videoSoon;
   const meta = PLAN_META_BY_ID[id as keyof typeof PLAN_META_BY_ID];
   const area: PlanArea =
     meta?.chain === 'arch' ? 'flat_feet' : meta?.chain === 'calf' ? 'heel_arch' : 'heel_arch';
   return result(
     { kind: 'single_exercise', title: card.name, exercise: card, ...(note ? { note } : {}) },
     `${card.name}, ${card.dose}. ${card.cue}${note ? ` ${note}` : ''}`,
-    { cta: cta({ source, area, minutes: 5, days: 5, equipment: [], side: 'both' }) },
+    lang,
+    { cta: cta({ source, area, minutes: 5, days: 5, equipment: [], side: 'both' }, lang) },
   );
 }
 
 // ─── 4.5 flat_foot_check ────────────────────────────────────────────────────
 
-export function flatFootCheck(args: { arch_appears?: 'yes' | 'no' | 'not_sure' }, source: PlanSource): ToolResult {
-  const steps = [JOURNEY_EN['onboarding.test.toeStep1'], JOURNEY_EN['onboarding.test.toeStep2']];
-  const question = JOURNEY_EN['onboarding.test.toeQuestion'];
-  const card = exerciseCard('big_toe_lift', doseLabel(startingDose('big_toe_lift')));
-  const title = 'Flat foot check';
+export function flatFootCheck(args: { arch_appears?: 'yes' | 'no' | 'not_sure' }, source: PlanSource, lang: Lang = 'en'): ToolResult {
+  const c = COPY[lang];
+  const journey = JOURNEY[lang];
+  const steps = [journey['onboarding.test.toeStep1'], journey['onboarding.test.toeStep2']];
+  const question = journey['onboarding.test.toeQuestion'];
+  const card = exerciseCard('big_toe_lift', doseLabel(startingDose('big_toe_lift'), lang), undefined, lang);
+  const title = c.flatTitle;
   if (args.arch_appears == null) {
     return result(
       { kind: 'self_check', title, steps, question, exercise: card },
-      `${title}: ${steps.join(' ')} ${question} This check does not diagnose.`,
+      `${title}: ${steps.join(' ')} ${question} ${c.notDiagnose}`,
+      lang,
     );
   }
-  const outcome = {
-    yes: 'An arch appears, so the flat foot is flexible. That is common, and arch exercises are an option.',
-    no: 'Your arch didn’t change - worth showing a physio or podiatrist. Exercises may still help strength, but may not change the shape.',
-    not_sure: 'Hard to tell. Watch the video and try again, standing with your weight on both feet.',
-  }[args.arch_appears];
-  const code = args.arch_appears === 'yes' ? cta({ source, area: 'flat_feet', minutes: 5, days: 5, equipment: [], side: 'both' }) : undefined;
+  const outcome = c.flatOutcome[args.arch_appears];
+  const code = args.arch_appears === 'yes' ? cta({ source, area: 'flat_feet', minutes: 5, days: 5, equipment: [], side: 'both' }, lang) : undefined;
   return result(
     { kind: 'self_check', title, steps, question, result: outcome, ...(args.arch_appears === 'not_sure' ? { exercise: card } : {}) },
-    `${title}: ${outcome} This check does not diagnose.`,
+    `${title}: ${outcome} ${c.notDiagnose}`,
+    lang,
     code ? { cta: code } : {},
   );
 }
 
 // ─── 4.6 when_to_see_doctor ─────────────────────────────────────────────────
 
-export function whenToSeeDoctor(args: { symptoms?: RedFlag[] }): ToolResult {
-  const selected = (args.symptoms ?? []).filter((s) => s in RED_FLAGS);
-  const message = selected.length > 0 ? SEE_DOCTOR_FIRST : undefined;
+export function whenToSeeDoctor(args: { symptoms?: RedFlag[] }, lang: Lang = 'en'): ToolResult {
+  const c = COPY[lang];
+  const selected = (args.symptoms ?? []).filter((s) => s in c.redFlags);
+  const message = selected.length > 0 ? c.seeDoctorFirst : undefined;
   return result(
     {
       kind: 'safety_card',
-      title: RED_FLAG_TITLE,
-      flags: Object.values(RED_FLAGS),
-      selected: selected.map((s) => RED_FLAGS[s]),
+      title: c.redFlagTitle,
+      flags: Object.values(c.redFlags),
+      selected: selected.map((s) => c.redFlags[s]),
       ...(message ? { message } : {}),
     },
-    `${message ? `${message}\n` : ''}${RED_FLAG_TITLE}: ${Object.values(RED_FLAGS).join('; ')}.`,
+    `${message ? `${message}\n` : ''}${flagLine(lang)}`,
+    lang,
   );
 }
 
 // ─── 4.7 feet_after_work ────────────────────────────────────────────────────
 
-const SHOE_TIPS = [
-  { title: 'Supportive shoes', text: 'A firm heel counter and some cushioning under the heel. Swap out shoes whose soles have worn flat.' },
-  { title: 'Heel cups', text: 'A soft heel cup can make long days on hard floors easier while the foot gets stronger.' },
-  { title: 'Hard floors', text: 'While it hurts, avoid going barefoot on hard floors; wear shoes or supportive slippers at home.' },
-  { title: 'Wide feet', text: 'Shop late in the day when feet are largest, check the widest part of the foot has room, and look for shoes sold in wide fittings.' },
-];
-
-export function feetAfterWork(source: PlanSource): ToolResult {
-  const r = routine('at_work');
-  const tips = SHOE_TIPS.slice(0, 3);
+export function feetAfterWork(source: PlanSource, lang: Lang = 'en'): ToolResult {
+  const c = COPY[lang];
+  const r = routine('at_work', lang);
+  const tips = c.shoeTips.slice(0, 3);
   return result(
     {
       kind: 'routine',
-      title: 'After a long day on your feet',
+      title: c.afterWorkTitle,
       intro: r.cue,
       minutes: r.minutes,
+      minutesLabel: r.minutesLabel,
       position: r.position,
       steps: r.steps,
     },
-    `A ${r.minutes}-minute routine for after a shift, from the app's "${r.title}" routine:\n${list(r.steps)}\nShoe tips: ${tips.map((t) => t.text).join(' ')}`,
-    { cta: cta({ source, area: 'heel_arch', minutes: 5, days: 5, equipment: [], side: 'both' }) },
+    `${c.afterWorkLine(r.minutes, r.title)}\n${list(r.steps)}\n${c.shoeTipsLabel}: ${tips.map((t) => t.text).join(' ')}`,
+    lang,
+    { cta: cta({ source, area: 'heel_arch', minutes: 5, days: 5, equipment: [], side: 'both' }, lang) },
   );
 }
 
 // ─── 4.8 shoes_and_inserts ──────────────────────────────────────────────────
 
-export function shoesAndInserts(): ToolResult {
+export function shoesAndInserts(lang: Lang = 'en'): ToolResult {
+  const c = COPY[lang];
   return result(
-    { kind: 'tips', title: 'Footwear tips', tips: SHOE_TIPS },
-    `Footwear tips (no brands):\n${SHOE_TIPS.map((t) => `- ${t.title}: ${t.text}`).join('\n')}`,
+    { kind: 'tips', title: c.footwearTitle, tips: c.shoeTips },
+    `${c.footwearNoBrands}:\n${c.shoeTips.map((t) => `- ${t.title}: ${t.text}`).join('\n')}`,
+    lang,
   );
 }
 
@@ -463,27 +474,27 @@ export function shoesAndInserts(): ToolResult {
 
 /** The run-walk check (spec §4.9): first-step pain averaging 3 or under over
  * two weeks, and 20 single-leg calf raises on the painful side. */
-export function readyToRun(args: { morning_pain_avg_2w: number; single_leg_calf_raises?: number }, source: PlanSource): ToolResult {
+export function readyToRun(
+  args: { morning_pain_avg_2w: number; single_leg_calf_raises?: number },
+  source: PlanSource,
+  lang: Lang = 'en',
+): ToolResult {
+  const c = COPY[lang];
   const painOk = args.morning_pain_avg_2w <= 3;
   const calfKnown = args.single_leg_calf_raises != null;
   const calfOk = (args.single_leg_calf_raises ?? 0) >= 20;
   const ready = painOk && calfOk;
   const steps = [
-    `First-step pain over the last two weeks: ${args.morning_pain_avg_2w}/10 (3 or under to start).`,
-    calfKnown
-      ? `Single-leg calf raises on the painful side: ${args.single_leg_calf_raises} (20 or more to start).`
-      : 'Single-leg calf raises on the painful side: count how many you can do in a row (20 or more to start).',
+    c.readyPain(args.morning_pain_avg_2w),
+    calfKnown ? c.readyCalf(args.single_leg_calf_raises ?? 0) : c.readyCalfAsk,
   ];
-  const outcome = ready
-    ? 'You meet the check. Start with short, easy run-walks: at most 3 runs a week, never on consecutive days.'
-    : !calfKnown && painOk
-      ? 'Your mornings look ready. Count your single-leg calf raises before the first run.'
-      : 'Not yet. Build strength first; the starter plan below works on the calf and the arch.';
-  const card = exerciseCard('heel_raise_plain', doseLabel(startingDose('heel_raise_plain')));
+  const outcome = ready ? c.readyYes : !calfKnown && painOk ? c.readyMornings : c.readyNotYet;
+  const card = exerciseCard('heel_raise_plain', doseLabel(startingDose('heel_raise_plain'), lang), undefined, lang);
   return result(
-    { kind: 'self_check', title: 'Ready to run?', steps, result: outcome, ...(calfKnown ? {} : { exercise: card }) },
-    `Ready to run? ${steps.join(' ')} ${outcome}`,
-    { cta: cta({ source, area: 'heel_arch', minutes: 5, days: 5, equipment: [], side: 'both' }), pain: args.morning_pain_avg_2w },
+    { kind: 'self_check', title: c.readyTitle, steps, result: outcome, ...(calfKnown ? {} : { exercise: card }) },
+    `${c.readyTitle} ${steps.join(' ')} ${outcome}`,
+    lang,
+    { cta: cta({ source, area: 'heel_arch', minutes: 5, days: 5, equipment: [], side: 'both' }, lang), pain: args.morning_pain_avg_2w },
   );
 }
 
