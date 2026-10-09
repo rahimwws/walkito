@@ -38,7 +38,8 @@ export const EX_TOE_SPREAD_IT: Guide = {
       h2: 'Come si fa l’esercizio di apertura delle dita?',
       paragraphs: [
         'Siediti scalzo con i piedi appoggiati a terra. Apri tutte e cinque le dita più che puoi, come se volessi creare spazio tra ogni dito. Tieni la posizione più aperta, poi rilassa. Questa è una ripetizione.',
-        'Lo scopo non è sollevare le dita. Tieni le dita a terra e concentrati sull’aprirle verso l’esterno. Non premere le dita a terra e non arricciarle. Se si muovono solo alcune dita, all’inizio è normale. Di solito si muovono per primi l’alluce e il mignolo. Le tre dita centrali spesso seguono quando i muscoli diventano più forti.',
+        'Lo scopo non è sollevare le dita. Tieni le dita a terra e concentrati sull’aprirle verso l’esterno. Non premere le dita a terra e non arricciarle.',
+        'Se si muovono solo alcune dita, all’inizio è normale. Di solito si muovono per primi l’alluce e il mignolo. Le tre dita centrali spesso seguono quando i muscoli diventano più forti.',
       ],
       exercises: [
         {
@@ -61,7 +62,15 @@ export const EX_TOE_SPREAD_IT: Guide = {
       keyFact: 'Uno studio del 2016 con risonanza magnetica ha trovato che l’apertura delle dita attivava l’abduttore dell’alluce solo al 18,9%, contro il 29,7% durante l’esercizio del piede corto, nello stesso piccolo gruppo di atleti (Gooding e colleghi, 2016).',
       paragraphs: [
         'L’apertura delle dita lavora in particolare su due muscoli. L’abduttore dell’alluce corre lungo il bordo interno del piede e tira l’alluce verso l’interno (verso la linea centrale del corpo). È anche uno dei principali sostegni dell’arco longitudinale mediale. L’abduttore del quinto dito corre lungo il bordo esterno e tira il mignolo verso l’esterno.',
-        'Uno studio del 2016 con risonanza magnetica di Gooding e colleghi ha testato quattro esercizi per i muscoli intrinseci del piede e misurato l’attivazione di ogni muscolo. L’apertura delle dita dava l’attivazione più alta nell’abduttore del quinto dito (35,2%), seguito dal capo obliquo dell’adduttore dell’alluce (31,5%) e dal flessore del quinto dito (30,2%). L’attivazione dell’abduttore dell’alluce durante l’apertura delle dita (18,9%) era più bassa che durante l’esercizio del piede corto (29,7%).',
+        'Uno studio del 2016 con risonanza magnetica di Gooding e colleghi ha testato quattro esercizi per i muscoli intrinseci del piede e misurato l’attivazione di ogni muscolo. L’apertura delle dita dava l’attivazione più alta in questi muscoli:',
+        {
+          list: [
+            'L’abduttore del quinto dito (35,2%).',
+            'Il capo obliquo dell’adduttore dell’alluce (31,5%).',
+            'Il flessore del quinto dito (30,2%).',
+          ],
+        },
+        'L’attivazione dell’abduttore dell’alluce durante l’apertura delle dita (18,9%) era più bassa che durante l’esercizio del piede corto (29,7%).',
         'Questo vuol dire che l’apertura delle dita e l’[esercizio del piede corto](/it/esercizi/piede-corto/) si completano. Il piede corto lavora sui muscoli che corrono lungo l’arco. L’apertura delle dita lavora sui muscoli ai bordi. Insieme coprono una parte più ampia del gruppo dei muscoli intrinseci del piede.',
       ],
       cites: [CITE.gooding],
@@ -69,8 +78,13 @@ export const EX_TOE_SPREAD_IT: Guide = {
     {
       h2: 'A chi servono gli esercizi di apertura delle dita?',
       paragraphs: [
-        'Chi ha il piede piatto ne trae beneficio perché l’apertura delle dita attiva diversi piccoli muscoli che, insieme all’abduttore dell’alluce, si dividono il compito di tenere su l’arco. Chi ha l’alluce valgo può trarne beneficio perché l’esercizio allena i muscoli che allontanano l’alluce dalle altre dita, in senso opposto allo spostamento verso l’interno tipico dell’alluce valgo. Uno studio elettromiografico separato su persone con alluce valgo lieve ha trovato un’attività dell’abduttore dell’alluce più alta durante l’apertura delle dita che durante il piede corto, anche se quello studio non è ancora nell’elenco delle fonti di questo sito.',
-        'Chi corre e chi passa tante ore in piedi può usare l’apertura delle dita come parte di una routine di rinforzo del piede. Dita che riescono ad aprirsi distribuiscono il carico in modo più uniforme sull’avampiede durante la spinta. Se le dita sono compresse da scarpe strette, l’esercizio aiuta a recuperare movimento.',
+        {
+          list: [
+            '**Piede piatto.** Chi ha il piede piatto ne trae beneficio perché l’apertura delle dita attiva diversi piccoli muscoli che, insieme all’abduttore dell’alluce, si dividono il compito di tenere su l’arco.',
+            '**Alluce valgo.** Chi ha l’alluce valgo può trarne beneficio perché l’esercizio allena i muscoli che allontanano l’alluce dalle altre dita, in senso opposto allo spostamento verso l’interno tipico dell’alluce valgo. Uno studio elettromiografico separato su persone con alluce valgo lieve ha trovato un’attività dell’abduttore dell’alluce più alta durante l’apertura delle dita che durante il piede corto, anche se quello studio non è ancora nell’elenco delle fonti di questo sito.',
+            '**Corsa e tante ore in piedi.** Chi corre e chi passa tante ore in piedi può usare l’apertura delle dita come parte di una routine di rinforzo del piede. Dita che riescono ad aprirsi distribuiscono il carico in modo più uniforme sull’avampiede durante la spinta. Se le dita sono compresse da scarpe strette, l’esercizio aiuta a recuperare movimento.',
+          ],
+        },
         'Per un programma più ampio, vedi [esercizi per il piede piatto](/it/esercizi-piede-piatto/) o [dolore sotto l’avampiede](/it/metatarsalgia-dolore-pianta-piede/).',
       ],
       cites: [CITE.gooding],
@@ -78,10 +92,14 @@ export const EX_TOE_SPREAD_IT: Guide = {
     {
       h2: 'Quali sono gli errori più comuni nell’apertura delle dita?',
       paragraphs: [
-        'L’errore più comune è sollevare le dita da terra invece di aprirle di lato. L’obiettivo è un’apertura orizzontale, non un sollevamento verticale. Tieni le dita che toccano appena il pavimento.',
-        'Un altro errore è arricciare le dita mentre provi ad aprirle. Succede quando il cervello non riesce ancora a separare il movimento di apertura da quello di flessione. Migliora con la pratica. Prova ad aprire le dita guardandole, così vedi cosa succede davvero.',
-        'Alcune persone notano che all’inizio si muovono solo l’alluce e il mignolo, mentre le tre dita centrali restano attaccate. È normale. Le dita centrali hanno meno controllo muscolare indipendente. Con qualche settimana di pratica, l’apertura si allarga.',
-        'Non forzare l’apertura fino al crampo. Se il piede ha un crampo, fermati, massaggia la zona per un attimo e riprova con meno ripetizioni.',
+        {
+          list: [
+            '**Sollevare le dita.** L’errore più comune è sollevare le dita da terra invece di aprirle di lato. L’obiettivo è un’apertura orizzontale, non un sollevamento verticale. Tieni le dita che toccano appena il pavimento.',
+            '**Arricciare le dita.** Un altro errore è arricciare le dita mentre provi ad aprirle. Succede quando il cervello non riesce ancora a separare il movimento di apertura da quello di flessione. Migliora con la pratica. Prova ad aprire le dita guardandole, così vedi cosa succede davvero.',
+            '**Dita centrali bloccate.** Alcune persone notano che all’inizio si muovono solo l’alluce e il mignolo, mentre le tre dita centrali restano attaccate. È normale. Le dita centrali hanno meno controllo muscolare indipendente. Con qualche settimana di pratica, l’apertura si allarga.',
+            '**Forzare.** Non forzare l’apertura fino al crampo. Se il piede ha un crampo, fermati, massaggia la zona per un attimo e riprova con meno ripetizioni.',
+          ],
+        },
       ],
     },
     {
@@ -89,7 +107,7 @@ export const EX_TOE_SPREAD_IT: Guide = {
       paragraphs: [
         'L’apertura delle dita è stata studiata soprattutto con risonanza magnetica ed elettromiografia, che misurano l’attivazione muscolare durante l’esercizio. Uno studio del 2016 con risonanza magnetica di Gooding e colleghi ha confermato che attiva tutti e quattro i muscoli plantari intrinseci testati. Il livello di attivazione era paragonabile a quello del piede corto per la maggior parte dei muscoli e più alto per l’abduttore del quinto dito.',
         'Quello che la ricerca non ha ancora fatto è testare l’apertura delle dita come trattamento a sé in uno studio randomizzato che misuri esiti per il paziente come dolore o altezza dell’arco nel corso di settimane o mesi. Compare come parte di programmi combinati negli studi sul piede piatto, ma il contributo della sola apertura delle dita non si può separare dagli altri esercizi di quegli studi.',
-        'Le prove la sostengono come esercizio utile per attivare i muscoli intrinseci del piede. Se da sola cambi la struttura del piede non si sa ancora. Pagine di esercizi collegate: [esercizio del piede corto](/it/esercizi/piede-corto/), [sollevamento dell’alluce](/it/esercizi/sollevamento-alluce/), [raccolta dell’asciugamano](/it/esercizi/raccolta-asciugamano-dita/).',
+        '**Le prove la sostengono come esercizio utile per attivare i muscoli intrinseci del piede.** Se da sola cambi la struttura del piede non si sa ancora. Pagine di esercizi collegate: [esercizio del piede corto](/it/esercizi/piede-corto/), [sollevamento dell’alluce](/it/esercizi/sollevamento-alluce/), [raccolta dell’asciugamano](/it/esercizi/raccolta-asciugamano-dita/).',
       ],
       cites: [CITE.gooding, CITE.brijwasi],
     },

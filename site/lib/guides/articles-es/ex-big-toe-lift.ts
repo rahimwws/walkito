@@ -30,7 +30,7 @@ export const EX_BIG_TOE_LIFT_ES: Guide = {
       h2: '¿Qué es el ejercicio de levantar el dedo gordo?',
       paragraphs: [
         'Levantar el dedo gordo es un ejercicio de aislamiento. Subes solo el dedo gordo mientras los otros cuatro dedos se quedan apoyados contra el piso. Luego lo inviertes: apoyas el dedo gordo y subes los otros cuatro. Ese ir y venir es lo que le da su nombre popular, toe yoga.',
-        'El objetivo no es la fuerza en el sentido de siempre. Es control motor. El dedo gordo tiene sus propios músculos (el extensor corto y el extensor largo del dedo gordo para subirlo, el flexor corto y el flexor largo del dedo gordo para apoyarlo), pero la mayoría de la gente perdió la capacidad de moverlo por separado de los otros dedos. El ejercicio recupera ese control independiente.',
+        'El objetivo no es la fuerza en el sentido de siempre. **Es control motor.** El dedo gordo tiene sus propios músculos (el extensor corto y el extensor largo del dedo gordo para subirlo, el flexor corto y el flexor largo del dedo gordo para apoyarlo), pero la mayoría de la gente perdió la capacidad de moverlo por separado de los otros dedos. El ejercicio recupera ese control independiente.',
       ],
     },
     {
@@ -60,8 +60,16 @@ export const EX_BIG_TOE_LIFT_ES: Guide = {
       keyFact: 'En un estudio de resonancia magnética con un grupo pequeño de deportistas, levantar el dedo gordo activó los tres músculos intrínsecos de la planta medidos, sobre todo el flexor corto de los dedos, con un 18,1 % (Gooding y colegas, 2016).',
       paragraphs: [
         'Los músculos que suben el dedo gordo son el extensor largo del dedo gordo (que viene de la pierna) y el extensor corto del dedo gordo (que está sobre el pie). Pero el ejercicio también trabaja los músculos que mantienen abajo los otros dedos, y ahí es donde está el verdadero entrenamiento.',
-        'Un estudio con resonancia magnética de 2016, de Gooding y colegas, encontró que el ejercicio de extensión del dedo gordo activó el flexor corto de los dedos (18,1\u00A0%), el abductor del dedo gordo (16,9\u00A0%) y el flexor corto del quinto dedo (16,3\u00A0%). Los músculos intrínsecos de la planta trabajaban para mantener planos los dedos pequeños mientras el dedo gordo subía.',
-        'Eso hace que levantar el dedo gordo sea un ejercicio dos en uno. El lado que sube entrena los extensores. El lado que apoya entrena los músculos intrínsecos de la planta, los mismos que trabaja el [ejercicio de pie corto](/es/ejercicios/pie-corto/).',
+        'Un estudio con resonancia magnética de 2016, de Gooding y colegas, encontró que el ejercicio de extensión del dedo gordo activó:',
+        {
+          list: [
+            'El flexor corto de los dedos (18,1\u00A0%).',
+            'El abductor del dedo gordo (16,9\u00A0%).',
+            'El flexor corto del quinto dedo (16,3\u00A0%).',
+          ],
+        },
+        'Los músculos intrínsecos de la planta trabajaban para mantener planos los dedos pequeños mientras el dedo gordo subía.',
+        '**Eso hace que levantar el dedo gordo sea un ejercicio dos en uno.** El lado que sube entrena los extensores. El lado que apoya entrena los músculos intrínsecos de la planta, los mismos que trabaja el [ejercicio de pie corto](/es/ejercicios/pie-corto/).',
       ],
       cites: [CITE.gooding],
     },
@@ -70,15 +78,19 @@ export const EX_BIG_TOE_LIFT_ES: Guide = {
       paragraphs: [
         'El dedo gordo es el interruptor del mecanismo de molinete. Cuando el dedo gordo se extiende (se dobla hacia arriba) en la fase de impulso al caminar, tensa la fascia plantar y sube el arco. Esa firmeza convierte al pie de una base flexible que absorbe el impacto en una palanca rígida que te impulsa hacia adelante.',
         'Si el dedo gordo no puede extenderse por separado, el molinete no se activa del todo. El arco queda más plano durante el impulso, y el pie tiene que compensar cargando más otras estructuras. Con el tiempo, eso puede contribuir al cansancio del arco, al [dolor en la planta del pie](/es/metatarsalgia-dolor-planta-del-pie/) y a la tensión en la fascia plantar.',
-        'Levantar el dedo gordo no carga el molinete como lo hace la elevación de talones con toalla. Lo que hace es enseñar al cerebro a activar el dedo gordo por sí solo, para que el molinete pueda hacer su trabajo al caminar normal. Es un ejercicio de coordinación, no de fuerza.',
+        'Levantar el dedo gordo no carga el molinete como lo hace la elevación de talones con toalla. Lo que hace es enseñar al cerebro a activar el dedo gordo por sí solo, para que el molinete pueda hacer su trabajo al caminar normal. **Es un ejercicio de coordinación, no de fuerza.**',
       ],
     },
     {
       h2: '¿Cuáles son los errores comunes al levantar el dedo gordo?',
       paragraphs: [
-        'El error más común es subir los cinco dedos juntos. Si todos los dedos suben a la vez, el ejercicio se vuelve una extensión general de los dedos y se pierde el control independiente. Si hace falta, sostén los dedos pequeños con los dedos de la mano hasta que aparezca la separación.',
-        'Otro error es usar el músculo de la tibia (tibial anterior) para subir el dedo gordo, levantando todo el pie. Mantén el pie apoyado. Solo se mueve el dedo gordo.',
-        'Un tercer problema es hacer las repeticiones con prisa. Es un ejercicio de control motor. La velocidad le quita el sentido. Mantén cada elevación los cinco segundos completos y enfócate en la calidad más que en la cantidad. Si solo te salen tres repeticiones limpias, tres repeticiones limpias son mejores que ocho descuidadas.',
+        {
+          list: [
+            '**El error más común es subir los cinco dedos juntos.** Si todos los dedos suben a la vez, el ejercicio se vuelve una extensión general de los dedos y se pierde el control independiente. Si hace falta, sostén los dedos pequeños con los dedos de la mano hasta que aparezca la separación.',
+            '**Otro error es usar el músculo de la tibia (tibial anterior) para subir el dedo gordo, levantando todo el pie.** Mantén el pie apoyado. Solo se mueve el dedo gordo.',
+            '**Un tercer problema es hacer las repeticiones con prisa.** Es un ejercicio de control motor. La velocidad le quita el sentido. Mantén cada elevación los cinco segundos completos y enfócate en la calidad más que en la cantidad. Si solo te salen tres repeticiones limpias, tres repeticiones limpias son mejores que ocho descuidadas.',
+          ],
+        },
         'Los calambres en el arco o bajo el pie son comunes en las primeras sesiones. Por lo general significan que los músculos intrínsecos están débiles y se cansan rápido. Detente, date un masaje en la zona y vuelve a intentarlo la siguiente sesión.',
       ],
     },
@@ -87,7 +99,7 @@ export const EX_BIG_TOE_LIFT_ES: Guide = {
       paragraphs: [
         'Levantar el dedo gordo (extensión del dedo gordo) fue uno de los cuatro ejercicios probados en el estudio con resonancia magnética de 2016 de Gooding y colegas. Los cuatro ejercicios activaron todos los músculos intrínsecos de la planta. Levantar el dedo gordo no fue el que más activó ningún músculo en particular, pero produjo una activación importante en todos, sobre todo en el flexor corto de los dedos.',
         'Un estudio de 2020 de Amaha y colegas siguió a 41\u00A0personas (56\u00A0pies) con metatarsalgia primaria, dolor bajo la parte delantera de la planta del pie, durante ocho semanas de ejercicios de dedos que incluían trabajo del dedo gordo, recoger la toalla y levantar canicas. La fuerza de agarre de los dedos subió y el dolor en la parte delantera del pie bajó de antes a después del programa. El estudio no tuvo grupo de control, así que parte del cambio puede no deberse solo a los ejercicios.',
-        'Ningún estudio ha probado levantar el dedo gordo por sí solo en un ensayo controlado de resultados. La evidencia lo respalda como parte de un enfoque más amplio para fortalecer el pie. Otros ejercicios: [ejercicio de pie corto](/es/ejercicios/pie-corto/), [separar los dedos del pie](/es/ejercicios/separar-los-dedos-del-pie/), [recoger la toalla con los dedos](/es/ejercicios/recoger-toalla-con-los-dedos/).',
+        '**Ningún estudio ha probado levantar el dedo gordo por sí solo en un ensayo controlado de resultados.** La evidencia lo respalda como parte de un enfoque más amplio para fortalecer el pie. Otros ejercicios: [ejercicio de pie corto](/es/ejercicios/pie-corto/), [separar los dedos del pie](/es/ejercicios/separar-los-dedos-del-pie/), [recoger la toalla con los dedos](/es/ejercicios/recoger-toalla-con-los-dedos/).',
       ],
       cites: [CITE.gooding, CITE.amaha],
     },

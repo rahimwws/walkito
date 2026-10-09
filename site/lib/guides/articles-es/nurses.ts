@@ -21,7 +21,8 @@ export const NURSES_ES: Guide = {
   lede:
     'Las enfermeras caminan más en un solo turno que la mayoría de la gente en un día, y lo hacen sobre pisos duros con zapatos que quizá no les quedan bien. Los problemas de pie y tobillo son de las molestias musculares más comunes en enfermería: en una encuesta, más de la mitad de las enfermeras de hospital los reportaron en un periodo de 12\u00A0meses. Casi todo lo que ayuda, como estirar la pantorrilla, hacer ejercicios para el arco y usar medias de compresión, se puede hacer en unos minutos antes o después del turno.',
   intro: [
-    'Esta página trata el dolor de pies que viene de las exigencias del trabajo de enfermería: estar mucho tiempo de pie, caminar largas distancias y los turnos rotativos. Si tu dolor es agudo y peor en los primeros pasos después de descansar, ese patrón apunta a fascitis plantar, y la guía más completa es [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/). Si tienes dudas, [por qué me duelen los pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) explica en qué se cruzan el dolor general por estar de pie y los problemas con nombre.',
+    'Esta página trata el dolor de pies que viene de las exigencias del trabajo de enfermería: estar mucho tiempo de pie, caminar largas distancias y los turnos rotativos. Si tu dolor es agudo y peor en los primeros pasos después de descansar, ese patrón apunta a fascitis plantar, y la guía más completa es [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
+    'Si tienes dudas, [por qué me duelen los pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) explica en qué se cruzan el dolor general por estar de pie y los problemas con nombre.',
   ],
   toc: true,
   takeaways: [
@@ -35,7 +36,8 @@ export const NURSES_ES: Guide = {
     {
       h2: '¿Qué tan común es el dolor de pies en enfermeras?',
       paragraphs: [
-        'El dolor de pie y tobillo es una de las tres molestias musculares más comunes en enfermería, junto con el dolor lumbar y el de cuello. En una encuesta a 312 enfermeras de un hospital pediátrico, el 55,3\u00A0% reportó problemas musculares de pie o tobillo en los últimos 12\u00A0meses, y el 43,8\u00A0% tuvo síntomas solo en los últimos siete días. Una de cada seis dijo que el dolor limitaba su actividad física. Trabajar turnos de 12\u00A0horas en la unidad de cuidados intensivos fue el único factor laboral que, por sí solo, aumentó las probabilidades de problemas de pie que limitan la vida diaria.',
+        '**El dolor de pie y tobillo es una de las tres molestias musculares más comunes en enfermería**, junto con el dolor lumbar y el de cuello. En una encuesta a 312 enfermeras de un hospital pediátrico, el 55,3\u00A0% reportó problemas musculares de pie o tobillo en los últimos 12\u00A0meses, y el 43,8\u00A0% tuvo síntomas solo en los últimos siete días.',
+        'Una de cada seis dijo que el dolor limitaba su actividad física. Trabajar turnos de 12\u00A0horas en la unidad de cuidados intensivos fue el único factor laboral que, por sí solo, aumentó las probabilidades de problemas de pie que limitan la vida diaria.',
         'Otro estudio con 636 enfermeras de hospitales en Japón encontró que el 51\u00A0% reportó dolor o discapacidad en los pies en el último mes, medido con un cuestionario validado. El dolor que impedía trabajar con normalidad llegó al 17\u00A0%. Un estudio con podómetros en enfermeras de Corea encontró un promedio de 5,8\u00A0km caminados por turno, una exigencia física muy por encima de la población general.',
         'Un estudio transversal con 411 enfermeras en Finlandia encontró que la piel seca, el dolor de pies y los callos eran las molestias de pies más comunes, y que los problemas de pies se asociaban con menor capacidad para trabajar. Los autores pidieron que se diera prioridad a prevenir los problemas de pies en enfermería.',
       ],
@@ -46,7 +48,7 @@ export const NURSES_ES: Guide = {
       paragraphs: [
         'En un turno de enfermería se juntan tres cosas: estar mucho tiempo de pie, caminar largas distancias y los pisos duros. Estar de pie sin moverte carga la fascia plantar, los músculos de la pantorrilla y la almohadilla del talón sin el bombeo que da caminar. Caminar ayuda a que la sangre regrese de las piernas, pero en enfermería se alterna sin aviso entre estar de pie sin moverse junto a una cama y caminar pasillos largos, así que el bombeo de la pantorrilla nunca agarra un ritmo estable.',
         'Una revisión de 2015 sobre salud laboral encontró que estar de pie mucho tiempo en el trabajo se asocia con molestias musculares, cansancio y dolor de piernas en muchos trabajos de pie, y menciona a las enfermeras como uno de los grupos de mayor riesgo. La revisión señaló que el esfuerzo del corazón y la hinchazón de las piernas aumentan con el tiempo de pie.',
-        'En los tejidos, una pantorrilla tensa es una pieza clave. Un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100 controles emparejados encontró que la poca flexibilidad del tobillo, es decir, que el tobillo no se dobla hacia arriba lo que debería porque la pantorrilla está tensa, fue el factor de riesgo independiente más fuerte para la fascitis plantar: una razón de probabilidades de 23,3. Estar de pie la mayor parte de la jornada tuvo una razón de probabilidades de 3,6. Las enfermeras tienen los dos factores de riesgo a la vez.',
+        'En los tejidos, una pantorrilla tensa es una pieza clave. Un estudio de casos y controles con 50\u00A0personas con fascitis plantar y 100 controles emparejados encontró que la poca flexibilidad del tobillo, es decir, que el tobillo no se dobla hacia arriba lo que debería porque la pantorrilla está tensa, fue el factor de riesgo independiente más fuerte para la fascitis plantar: una razón de probabilidades de 23,3. Estar de pie la mayor parte de la jornada tuvo una razón de probabilidades de 3,6. **Las enfermeras tienen los dos factores de riesgo a la vez.**',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -54,7 +56,7 @@ export const NURSES_ES: Guide = {
       h2: '¿Qué ejercicios ayudan a las enfermeras con el dolor de pies?',
       keyFact: 'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la pantorrilla y de la fascia plantar su grado más alto, A, y al entrenamiento de fuerza una B (Koc y colegas, 2023).',
       paragraphs: [
-        'Los ejercicios que ayudan son los mismos que trabajan la fascitis plantar y el dolor de pies por estar de pie: estiramientos de pantorrilla, un estiramiento plantar, elevaciones de talón para la fuerza de la pantorrilla y un ejercicio para el arco llamado pie corto. Lo distinto en enfermería es acomodarlos alrededor de los turnos rotativos, no durante el turno. Unos minutos antes o después del turno bastan para hacer los más importantes.',
+        'Los ejercicios que ayudan son los mismos que trabajan la fascitis plantar y el dolor de pies por estar de pie: estiramientos de pantorrilla, un estiramiento plantar, elevaciones de talón para la fuerza de la pantorrilla y un ejercicio para el arco llamado pie corto. Lo distinto en enfermería es acomodarlos alrededor de los turnos rotativos, no durante el turno. **Unos minutos antes o después del turno bastan para hacer los más importantes.**',
         'La guía clínica de 2023 para el dolor de talón le da al estiramiento de la pantorrilla y de la fascia plantar su grado más alto, A, y al entrenamiento de fuerza una B. Las dos notas son para la fascitis plantar, pero los tejidos son los mismos que cargan el peso durante un turno de enfermería. Si algún ejercicio sube tu dolor a 6 de 10 o más, detente por hoy.',
       ],
       exercises: [
@@ -150,7 +152,7 @@ export const NURSES_ES: Guide = {
       paragraphs: [
         'Un turno de 12\u00A0horas deja poco tiempo para una rutina aparte, y rotar entre turnos de día y de noche lo complica todavía más. Los estiramientos de esta página toman unos 3\u00A0minutos, así que lo más simple es hacerlos justo antes o justo después del turno, siempre en el mismo momento de tu rutina. Por ejemplo, hazlos después de ponerte o quitarte los zapatos de trabajo.',
         'En los días libres, agrega los ejercicios de fuerza: elevaciones de talón y pie corto. Toman de 5 a 10\u00A0minutos. Hacer el trabajo de fuerza en los días libres, y no después de un turno pesado, le da a la pantorrilla y al arco tiempo para recuperarse antes de volver a estar de pie.',
-        'Tres sesiones por semana es un buen punto de partida. Si trabajas tres turnos de 12\u00A0horas con cuatro días libres, puedes hacer fuerza en cada día libre. Si rotas entre turnos de día y de noche, la hora no importa. Lo que importa es la constancia, no el reloj.',
+        'Tres sesiones por semana es un buen punto de partida. Si trabajas tres turnos de 12\u00A0horas con cuatro días libres, puedes hacer fuerza en cada día libre. Si rotas entre turnos de día y de noche, la hora no importa. **Lo que importa es la constancia, no el reloj.**',
       ],
     },
     {
@@ -158,7 +160,7 @@ export const NURSES_ES: Guide = {
       paragraphs: [
         'El calzado es uno de los temas que más se hablan en enfermería, pero la evidencia a favor de un tipo sobre otro es limitada. Una evaluación de 2007 de tres marcas de zapatos profesionales de enfermería encontró que el zapato con plantilla más acolchada y mejor soporte del arco redujo el esfuerzo muscular de las piernas comparado con los otros dos, pero el estudio fue pequeño y específico de esas marcas.',
         'Lo que la investigación sí respalda de forma más general es que la comodidad del calzado importa. En una encuesta a 125 enfermeras de urgencias y consulta externa, el 72\u00A0% de quienes reportaron poca comodidad en el calzado también reportó dolor de pies y de talón, frente al 28\u00A0% de quienes reportaron mucha comodidad. La guía clínica de 2023 para el dolor de talón les da a las plantillas ortopédicas por sí solas una B en contra para aliviar la fascitis plantar a corto plazo, es decir, la evidencia se inclina a no usarlas como única opción.',
-        'Algo práctico: elige un zapato que te quede bien, que tenga algo de amortiguación y que no te apriete los dedos. Si ya tienes dolor de talón o de arco, los ejercicios de esta página trabajan los tejidos directamente. Los zapatos y las plantillas pueden ayudar con la comodidad durante el turno, pero no reemplazan los estiramientos ni el trabajo de fuerza.',
+        'Algo práctico: elige un zapato que te quede bien, que tenga algo de amortiguación y que no te apriete los dedos. Si ya tienes dolor de talón o de arco, los ejercicios de esta página trabajan los tejidos directamente. **Los zapatos y las plantillas pueden ayudar con la comodidad durante el turno, pero no reemplazan los estiramientos ni el trabajo de fuerza.**',
       ],
       cites: [CITE.guideline],
     },
@@ -168,7 +170,8 @@ export const NURSES_ES: Guide = {
       paragraphs: [
         'Las medias de compresión tienen uno de los estudios mejor controlados sobre las molestias por estar de pie. En un ensayo aleatorizado con 40 guardias de seguridad que trabajaban de pie turnos de unas 12\u00A0horas, tanto el grupo con medias de 15-20\u00A0mmHg como el de 20-30\u00A0mmHg evitaron el aumento importante de molestias en pies y piernas, cansancio e hinchazón que tuvo el grupo con calcetines normales. Muchos participantes dijeron que la media de menor presión era más fácil de poner.',
         'Un ensayo piloto aleatorizado con 20 estudiantes de enfermería comparó medias de compresión hasta la rodilla y hasta el muslo, usadas durante turnos de práctica clínica de 9\u00A0horas. Los dos grupos reportaron mucha satisfacción, aunque la muestra fue demasiado pequeña para mostrar diferencias claras entre los dos largos.',
-        'El ensayo de Garcia se hizo solo con guardias de seguridad hombres, no con enfermeras, y ninguno de los dos estudios fue grande. Pero las medias de compresión son de las pocas medidas específicas para estar de pie con evidencia aleatorizada. Una revisión de salud laboral de 2015 las incluye junto con los tapetes para el piso y el calzado con soporte entre las medidas con algo de evidencia para reducir las molestias en trabajos de pie. No reemplazan los estiramientos ni el trabajo de fuerza. Ayudan con la hinchazón y el cansancio, mientras la pantorrilla y la fascia siguen necesitando su propio trabajo.',
+        'El ensayo de Garcia se hizo solo con guardias de seguridad hombres, no con enfermeras, y ninguno de los dos estudios fue grande. Pero las medias de compresión son de las pocas medidas específicas para estar de pie con evidencia aleatorizada.',
+        'Una revisión de salud laboral de 2015 las incluye junto con los tapetes para el piso y el calzado con soporte entre las medidas con algo de evidencia para reducir las molestias en trabajos de pie. **No reemplazan los estiramientos ni el trabajo de fuerza.** Ayudan con la hinchazón y el cansancio, mientras la pantorrilla y la fascia siguen necesitando su propio trabajo.',
       ],
       sourceNote:
         'Garcia y colegas (2023): diseño de grupos paralelos, 40 guardias de seguridad hombres asignados al azar a tres grupos (calcetines normales, 15-20\u00A0mmHg, 20-30\u00A0mmHg), cada uno usado durante un turno completo. Se midieron molestias, cansancio y edema antes y después del turno.',
@@ -177,10 +180,14 @@ export const NURSES_ES: Guide = {
     {
       h2: '¿Qué puedes hacer antes y después del turno en 3, 5 o 10 minutos?',
       paragraphs: [
-        'Si tienes 3\u00A0minutos: haz los dos estiramientos de pantorrilla (rodilla estirada y rodilla doblada, 30\u00A0segundos de cada lado). Eso cubre el factor de riesgo modificable más fuerte, una pantorrilla tensa, y toma lo mismo que amarrarte los zapatos.',
-        'Si tienes 5\u00A0minutos: agrega el estiramiento plantar (30\u00A0segundos cada pie). Esta es la combinación a la que la guía de 2023 le da una A para la fascitis plantar. Si el talón te duele más en los primeros pasos del día, haz el estiramiento plantar antes de que los pies toquen el piso.',
-        'Si tienes 10\u00A0minutos: agrega las elevaciones de talón (3\u00A0series de 10) y el pie corto (3\u00A0series de 10, manteniendo 5\u00A0segundos). Eso cubre la parte de fuerza, con una B en la guía. En los días libres, 10\u00A0minutos alcanzan para todo lo de esta página.',
-        'La constancia importa más que la duración. Tres minutos de estiramiento de pantorrilla cada día de turno, siempre en el mismo momento de tu rutina, sirven más que una sesión larga que te saltas cuando cambia el horario.',
+        {
+          list: [
+            '**Si tienes 3\u00A0minutos:** haz los dos estiramientos de pantorrilla (rodilla estirada y rodilla doblada, 30\u00A0segundos de cada lado). Eso cubre el factor de riesgo modificable más fuerte, una pantorrilla tensa, y toma lo mismo que amarrarte los zapatos.',
+            '**Si tienes 5\u00A0minutos:** agrega el estiramiento plantar (30\u00A0segundos cada pie). Esta es la combinación a la que la guía de 2023 le da una A para la fascitis plantar. Si el talón te duele más en los primeros pasos del día, haz el estiramiento plantar antes de que los pies toquen el piso.',
+            '**Si tienes 10\u00A0minutos:** agrega las elevaciones de talón (3\u00A0series de 10) y el pie corto (3\u00A0series de 10, manteniendo 5\u00A0segundos). Eso cubre la parte de fuerza, con una B en la guía. En los días libres, 10\u00A0minutos alcanzan para todo lo de esta página.',
+          ],
+        },
+        '**La constancia importa más que la duración.** Tres minutos de estiramiento de pantorrilla cada día de turno, siempre en el mismo momento de tu rutina, sirven más que una sesión larga que te saltas cuando cambia el horario.',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
@@ -189,7 +196,7 @@ export const NURSES_ES: Guide = {
       paragraphs: [
         'El dolor y el cansancio general después de un turno largo son comunes y suelen quitarse con descanso. La fascitis plantar es un problema específico: dolor agudo cerca del talón, peor en los primeros pasos después de descansar (al levantarte de la cama o al pararte después de pasar mucho rato en una silla). Si tu dolor sigue ese patrón, la guía más completa es [ejercicios y estiramientos para la fascitis plantar](/es/ejercicios-fascitis-plantar/), y el detalle de las elevaciones de talón está en [elevaciones de talón para la fascitis plantar](/es/elevaciones-de-talon-fascitis-plantar/).',
         'Si al final del turno sientes los arcos planos o hundidos hacia adentro, los ejercicios de [ejercicios para pie plano y arcos caídos](/es/ejercicios-pie-plano/) trabajan los músculos que sostienen el arco. El dolor a lo largo de la tibia podría ser periostitis tibial. El dolor en el tendón de Aquiles, en la parte de atrás del talón, es otro problema.',
-        'Si tu pregunta principal es el dolor por estar de pie y no trabajas en enfermería, [por qué me duelen los pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) cubre los mismos ejercicios para cualquier persona. Para la versión de este problema con escritorio de pie, mira [dolor de pies por escritorio de pie](/es/escritorio-de-pie-dolor-de-pies/). Si no sabes qué está causando el dolor, consulta a un profesional de la salud antes de cargarlo con ejercicio.',
+        'Si tu pregunta principal es el dolor por estar de pie y no trabajas en enfermería, [por qué me duelen los pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) cubre los mismos ejercicios para cualquier persona. Para la versión de este problema con escritorio de pie, mira [dolor de pies por escritorio de pie](/es/escritorio-de-pie-dolor-de-pies/). **Si no sabes qué está causando el dolor, consulta a un profesional de la salud antes de cargarlo con ejercicio.**',
       ],
     },
   ],

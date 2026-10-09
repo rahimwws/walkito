@@ -29,8 +29,9 @@ export const MASSAGE_BALL_IT: Guide = {
       h2: 'La pallina da massaggio aiuta la fascite plantare?',
       keyFact: 'In un piccolo studio su 14\u00A0persone a cui era stato chiesto di usare una pallina da massaggio almeno tre volte al giorno, i punteggi del piede non sono migliorati in modo significativo in tre mesi (Ryu e colleghi, 2024).',
       paragraphs: [
-        'Una pallina da massaggio aiuta alcune persone con fascite plantare a sentirsi più sciolte e meno doloranti per un breve periodo, ma ci sono poche prove che il solo rotolamento cambi il dolore nel giro di mesi. La fascite plantare è un’irritazione della fascia plantare, la spessa banda sotto la pianta che va dal tallone alle dita. Far rotolare la pallina preme su quella banda e sui piccoli muscoli intorno.',
-        'Le prove dirette sono scarse. In uno studio coreano del 2024, a 14\u00A0persone con dolore al tallone da almeno sei mesi è stato chiesto di far rotolare una pallina da massaggio sotto la pianta almeno tre volte al giorno, per più di cinque minuti ogni volta. In tre mesi, il gruppo nel suo insieme non è migliorato in modo significativo in un questionario sul dolore al piede. Lo studio era minuscolo e non aveva un gruppo senza pallina, quindi non può dimostrare che la pallina non faccia nulla, solo che nessuno ha dimostrato che faccia molto.',
+        'Una pallina da massaggio aiuta alcune persone con fascite plantare a sentirsi più sciolte e meno doloranti per un breve periodo, ma **ci sono poche prove che il solo rotolamento cambi il dolore nel giro di mesi.** La fascite plantare è un’irritazione della fascia plantare, la spessa banda sotto la pianta che va dal tallone alle dita. Far rotolare la pallina preme su quella banda e sui piccoli muscoli intorno.',
+        'Le prove dirette sono scarse. In uno studio coreano del 2024, a 14\u00A0persone con dolore al tallone da almeno sei mesi è stato chiesto di far rotolare una pallina da massaggio sotto la pianta almeno tre volte al giorno, per più di cinque minuti ogni volta. In tre mesi, il gruppo nel suo insieme non è migliorato in modo significativo in un questionario sul dolore al piede.',
+        'Lo studio era minuscolo e non aveva un gruppo senza pallina, quindi non può dimostrare che la pallina non faccia nulla, solo che nessuno ha dimostrato che faccia molto.',
         'Per questo su questo sito il rotolamento sta tra i passi di recupero, accanto agli esercizi con prove più solide: allungamento della fascia plantare e del polpaccio (grado A nella linea guida) e rinforzo del polpaccio (grado B).',
       ],
       figure: {
@@ -45,9 +46,16 @@ export const MASSAGE_BALL_IT: Guide = {
       keyFact: 'In uno studio su 66\u00A0persone, il rilascio miofasciale fatto da un terapista ha ridotto i punteggi del Foot Function Index del 72,4% dopo un mese, contro il 7,4% con una finta terapia, e del 60,6% a tre mesi (Ajimsha e colleghi, 2014).',
       paragraphs: [
         'Il massaggio fatto da un professionista esperto ha prove discrete per la fascite plantare. Quello che fai da solo con una pallina ne ha pochissime.',
-        '**Lavoro manuale di un professionista.** La linea guida del 2023 sul dolore al tallone dà alla terapia manuale il grado **A**, il suo più alto. La definisce come un lavoro esperto su articolazioni e tessuti molli di gamba e piede, come il rilascio miofasciale (pressione e allungamento lenti e prolungati sul tessuto). In uno studio del 2014 su 66\u00A0persone, un terapista ha fatto 12\u00A0sedute di rilascio miofasciale su polpaccio e pianta nell’arco di un mese. I punteggi del Foot Function Index, un questionario su dolore e funzione quotidiana, sono scesi del 72,4%, contro il 7,4% in un gruppo che ha ricevuto finti ultrasuoni. A tre mesi il calo era ancora del 60,6%. Uno studio pilota del 2014 sul massaggio del polpaccio ha trovato un beneficio più piccolo e a breve termine (ne parliamo nella sezione sul polpaccio più sotto).',
+        '**Lavoro manuale di un professionista.** La linea guida del 2023 sul dolore al tallone dà alla terapia manuale il grado **A**, il suo più alto. La definisce come un lavoro esperto su articolazioni e tessuti molli di gamba e piede, come il rilascio miofasciale (pressione e allungamento lenti e prolungati sul tessuto).',
+        'In uno studio del 2014 su 66\u00A0persone, un terapista ha fatto 12\u00A0sedute di rilascio miofasciale su polpaccio e pianta nell’arco di un mese. I punteggi del Foot Function Index, un questionario su dolore e funzione quotidiana, sono scesi del 72,4%, contro il 7,4% in un gruppo che ha ricevuto finti ultrasuoni. A tre mesi il calo era ancora del 60,6%. Uno studio pilota del 2014 sul massaggio del polpaccio ha trovato un beneficio più piccolo e a breve termine (ne parliamo nella sezione sul polpaccio più sotto).',
         'Una revisione del 2018 di 7\u00A0studi ha trovato che aggiungere la terapia manuale migliorava la funzione in 6 di essi, ma batteva chiaramente il confronto sul dolore solo in 2 su 6. Gli autori suggeriscono di usarla insieme a stretching e rinforzo.',
-        '**Massaggio fatto da te.** Solo pochi studi testano l’automassaggio, e ognuno lo abbina all’esercizio o lo misura nel giro di minuti. In uno studio del 2021 su 50\u00A0persone, una sola seduta con il foam roller su polpaccio e pianta ha ridotto il dolore di circa 3\u00A0punti su una scala di 10\u00A0cm, contro circa 2,6 con una sola seduta di stretching, e la differenza tra i gruppi non era statisticamente significativa. È stato misurato subito dopo la seduta, senza controlli successivi. In uno studio del 2025 su 64\u00A0persone, un programma supervisionato di rinforzo, stretching e 10\u00A0minuti di automassaggio con un bastoncino, tre giorni a settimana per un mese, ha ridotto il dolore di 2,5\u00A0punti in più rispetto a un opuscolo di autogestione, e il beneficio teneva un mese dopo. Dato che il massaggio era abbinato all’esercizio, il suo contributo da solo non è noto.',
+        '**Massaggio fatto da te.** Solo pochi studi testano l’automassaggio, e ognuno lo abbina all’esercizio o lo misura nel giro di minuti:',
+        {
+          list: [
+            '**Studio del 2021 su 50\u00A0persone:** una sola seduta con il foam roller su polpaccio e pianta ha ridotto il dolore di circa 3\u00A0punti su una scala di 10\u00A0cm, contro circa 2,6 con una sola seduta di stretching, e la differenza tra i gruppi non era statisticamente significativa. È stato misurato subito dopo la seduta, senza controlli successivi.',
+            '**Studio del 2025 su 64\u00A0persone:** un programma supervisionato di rinforzo, stretching e 10\u00A0minuti di automassaggio con un bastoncino, tre giorni a settimana per un mese, ha ridotto il dolore di 2,5\u00A0punti in più rispetto a un opuscolo di autogestione, e il beneficio teneva un mese dopo. Dato che il massaggio era abbinato all’esercizio, il suo contributo da solo non è noto.',
+          ],
+        },
       ],
       table: {
         caption: 'Massaggio per la fascite plantare: chi lo faceva e cosa si è trovato',
@@ -67,7 +75,7 @@ export const MASSAGE_BALL_IT: Guide = {
       h2: 'Pallina da tennis, da lacrosse, chiodata, rullo o bottiglia: cosa è meglio?',
       paragraphs: [
         'Nessuno studio ha confrontato gli strumenti da massaggio per la fascite plantare, quindi il migliore è quello che ti dà una pressione decisa senza una fitta di dolore acuto. La tabella qui sotto è un’indicazione pratica, non dati di studi.',
-        'Inizia con qualcosa di morbido. Una pallina da tennis distribuisce la pressione ed è adatta a un piede dolorante. Passa a una pallina da lacrosse solo se dopo qualche seduta quella da tennis non ti fa più niente. Una pallina da golf spesso affonda proprio nel punto dolente vicino al tallone. Una pallina chiodata aggiunge una sensazione sulla pelle, ma non ci sono prove che le punte lavorino più in profondità.',
+        '**Inizia con qualcosa di morbido.** Una pallina da tennis distribuisce la pressione ed è adatta a un piede dolorante. Passa a una pallina da lacrosse solo se dopo qualche seduta quella da tennis non ti fa più niente. Una pallina da golf spesso affonda proprio nel punto dolente vicino al tallone. Una pallina chiodata aggiunge una sensazione sulla pelle, ma non ci sono prove che le punte lavorino più in profondità.',
       ],
       table: {
         caption: 'Strumenti da massaggio per la fascite plantare a confronto (indicazioni pratiche, non dati di studi)',
@@ -88,17 +96,34 @@ export const MASSAGE_BALL_IT: Guide = {
       h2: 'La bottiglia d’acqua congelata aiuta la fascite plantare?',
       keyFact: 'In un piccolo studio su 30\u00A0persone, aggiungere una pallina da tennis congelata allo stretching per due mesi ha ridotto il dolore più del solo stretching, ma non era chiaro come le persone fossero state assegnate ai gruppi (Shinde e Patil, 2026).',
       paragraphs: [
-        'Una bottiglia d’acqua congelata può dare sollievo a una pianta dolorante, ma nessuno studio ha dimostrato che il freddo aggiunga qualcosa rispetto a una bottiglia o a una pallina a temperatura ambiente. Preme lungo l’arco come un rullo e intorpidisce la pelle per un po’.',
-        'L’unico studio trovato che aggiunge il rotolamento a freddo a un programma di esercizi è piccolo e debole. In uno studio del 2026 su 30\u00A0persone, un gruppo ha fatto stretching statico e l’altro stretching più una pallina da tennis congelata, per due mesi. Il dolore è sceso da circa 7,7 a 3,5 su 10 nel gruppo con la pallina congelata e da 7,6 a 6,7 con il solo stretching. Il resoconto non chiarisce come le persone siano state divise nei gruppi, e il gruppo dello stretching è migliorato molto meno che negli studi più grandi, quindi leggi questa differenza con cautela. La linea guida del 2023 sul dolore al tallone non dà raccomandazioni sul ghiaccio.',
-        'Se il freddo ti piace, usalo con attenzione. Limitati a circa 10\u00A0minuti, avvolgi la bottiglia in un calzino sottile se la pelle brucia, ed evita il freddo se hai poca sensibilità ai piedi o il fenomeno di Raynaud. Le affermazioni secondo cui una bottiglia congelata «riduce l’infiammazione» non sono sostenute dagli studi sulla fascite plantare. Per la questione più ampia di freddo o caldo, vedi [ghiaccio o caldo per la fascite plantare](/it/ghiaccio-o-caldo-fascite-plantare/).',
+        'Una bottiglia d’acqua congelata può dare sollievo a una pianta dolorante, ma **nessuno studio ha dimostrato che il freddo aggiunga qualcosa rispetto a una bottiglia o a una pallina a temperatura ambiente.** Preme lungo l’arco come un rullo e intorpidisce la pelle per un po’.',
+        'L’unico studio trovato che aggiunge il rotolamento a freddo a un programma di esercizi è piccolo e debole. In uno studio del 2026 su 30\u00A0persone, un gruppo ha fatto stretching statico e l’altro stretching più una pallina da tennis congelata, per due mesi. Il dolore è sceso da circa 7,7 a 3,5 su 10 nel gruppo con la pallina congelata e da 7,6 a 6,7 con il solo stretching.',
+        'Il resoconto non chiarisce come le persone siano state divise nei gruppi, e il gruppo dello stretching è migliorato molto meno che negli studi più grandi, quindi leggi questa differenza con cautela. La linea guida del 2023 sul dolore al tallone non dà raccomandazioni sul ghiaccio.',
+        'Se il freddo ti piace, usalo con attenzione:',
+        {
+          list: [
+            'Limitati a circa 10\u00A0minuti.',
+            'Avvolgi la bottiglia in un calzino sottile se la pelle brucia.',
+            'Evita il freddo se hai poca sensibilità ai piedi o il fenomeno di Raynaud.',
+          ],
+        },
+        'Le affermazioni secondo cui una bottiglia congelata «riduce l’infiammazione» non sono sostenute dagli studi sulla fascite plantare. Per la questione più ampia di freddo o caldo, vedi [ghiaccio o caldo per la fascite plantare](/it/ghiaccio-o-caldo-fascite-plantare/).',
       ],
       cites: [CITE.shindeFrozenBall, CITE.guideline],
     },
     {
       h2: 'Quanto premere e per quanto tempo far rotolare il piede?',
       paragraphs: [
-        'Fai rotolare il piede con una pressione decisa e costante che resti intorno a 3-5 su 10 o meno su una scala del dolore, per circa un minuto per piede. Non esiste una dose migliore testata, quindi inizia breve e aggiungi tempo solo se dopo il piede sta meglio.',
-        'Gli studi hanno usato quantità molto diverse. Nello studio del 2021 con il foam roller, le persone facevano rotolare per 45\u00A0secondi, riposavano 15\u00A0secondi e ripetevano cinque volte. Nello studio del 2024 con la pallina da massaggio, era stato chiesto di usarla almeno tre volte al giorno per più di cinque minuti ogni volta, e il gruppo non è migliorato in modo significativo. Nello studio del 2025, l’automassaggio durava 10\u00A0minuti all’interno di una seduta di esercizi più lunga. In questi studi, più rotolamento non sembrava chiaramente meglio.',
+        '**Fai rotolare il piede con una pressione decisa e costante che resti intorno a 3-5 su 10 o meno su una scala del dolore, per circa un minuto per piede.** Non esiste una dose migliore testata, quindi inizia breve e aggiungi tempo solo se dopo il piede sta meglio.',
+        'Gli studi hanno usato quantità molto diverse:',
+        {
+          list: [
+            '**Studio del 2021 con il foam roller:** le persone facevano rotolare per 45\u00A0secondi, riposavano 15\u00A0secondi e ripetevano cinque volte.',
+            '**Studio del 2024 con la pallina da massaggio:** era stato chiesto di usarla almeno tre volte al giorno per più di cinque minuti ogni volta, e il gruppo non è migliorato in modo significativo.',
+            '**Studio del 2025:** l’automassaggio durava 10\u00A0minuti all’interno di una seduta di esercizi più lunga.',
+          ],
+        },
+        'In questi studi, più rotolamento non sembrava chiaramente meglio.',
         'Walkito fa partire il massaggio con la pallina da 1 x 60\u00A0secondi, come breve esercizio di recupero nei giorni più leggeri. Stai seduto e lascia che sia soprattutto il peso della gamba a fare il lavoro.',
       ],
       exercises: [
@@ -121,8 +146,9 @@ export const MASSAGE_BALL_IT: Guide = {
       h2: 'Conviene massaggiare anche il polpaccio per la fascite plantare?',
       keyFact: 'In uno studio pilota su 69\u00A0persone, il massaggio profondo del polpaccio con esercizi di scorrimento dei nervi e auto-stretching ha migliorato la funzione più degli ultrasuoni sul tallone con gli stessi allungamenti (Saban e colleghi, 2014).',
       paragraphs: [
-        'Lavorare sul polpaccio è un’aggiunta ragionevole per la fascite plantare, perché un polpaccio rigido tira sul tallone e gli studi che hanno aiutato di più lavoravano sul polpaccio oltre che sulla pianta. I muscoli del polpaccio confluiscono nel tendine d’Achille, che si attacca all’osso del tallone vicino al punto in cui parte la fascia plantare.',
-        'Nello studio pilota del 2014 su 69\u00A0persone, il massaggio profondo del polpaccio, più esercizi di scorrimento dei nervi e auto-stretching, ha migliorato la funzione più degli ultrasuoni sul tallone con gli stessi allungamenti. Nello studio del 2021 con il foam roller, le persone facevano rotolare anche il polpaccio, dal retro del ginocchio fino all’Achille, e i loro polpacci sono diventati meno sensibili alla pressione rispetto al gruppo dello stretching. L’allungamento del polpaccio ha prove più solide del rullo sul polpaccio: la linea guida del 2023 gli dà il grado **A**, e una revisione del 2020 ha trovato prove di qualità moderata che l’allungamento della fascia plantare allevia il dolore più di quello del polpaccio, e prove di qualità molto bassa che l’allungamento del polpaccio batte un finto stretching.',
+        '**Lavorare sul polpaccio è un’aggiunta ragionevole per la fascite plantare**, perché un polpaccio rigido tira sul tallone e gli studi che hanno aiutato di più lavoravano sul polpaccio oltre che sulla pianta. I muscoli del polpaccio confluiscono nel tendine d’Achille, che si attacca all’osso del tallone vicino al punto in cui parte la fascia plantare.',
+        'Nello studio pilota del 2014 su 69\u00A0persone, il massaggio profondo del polpaccio, più esercizi di scorrimento dei nervi e auto-stretching, ha migliorato la funzione più degli ultrasuoni sul tallone con gli stessi allungamenti. Nello studio del 2021 con il foam roller, le persone facevano rotolare anche il polpaccio, dal retro del ginocchio fino all’Achille, e i loro polpacci sono diventati meno sensibili alla pressione rispetto al gruppo dello stretching.',
+        'L’allungamento del polpaccio ha prove più solide del rullo sul polpaccio: la linea guida del 2023 gli dà il grado **A**, e una revisione del 2020 ha trovato prove di qualità moderata che l’allungamento della fascia plantare allevia il dolore più di quello del polpaccio, e prove di qualità molto bassa che l’allungamento del polpaccio batte un finto stretching.',
         'Se ti piace, passa il polpaccio sul foam roller per un minuto, poi fai i due allungamenti qui sotto. Di più in [polpacci rigidi](/it/polpacci-rigidi/).',
       ],
       exercises: [
@@ -157,7 +183,15 @@ export const MASSAGE_BALL_IT: Guide = {
       h2: 'Perché massaggiare la fascite plantare fa male, e può peggiorarla?',
       paragraphs: [
         'Massaggiare la fascite plantare spesso fa male perché il tessuto vicino al tallone è già sensibile, e la pressione su un punto sensibile si sente come una fitta. Un leggero fastidio mentre fai rotolare il piede, che passa in pochi minuti, è comune. Un dolore acuto, che dura fino al mattino dopo o lascia un livido, vuol dire che hai premuto troppo forte o troppo a lungo.',
-        'Usa come test i primi passi del mattino dopo. Se dopo una seduta con la pallina quei passi vanno peggio, dimezza il tempo, passa a una pallina più morbida e stai lontano dal tallone. Se vanno ancora peggio, smetti per un po’: gli allungamenti e il rinforzo contano di più. Di più su questo schema in [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/).',
+        '**Usa come test i primi passi del mattino dopo.** Se dopo una seduta con la pallina quei passi vanno peggio:',
+        {
+          list: [
+            'Dimezza il tempo.',
+            'Passa a una pallina più morbida.',
+            'Stai lontano dal tallone.',
+          ],
+        },
+        'Se vanno ancora peggio, smetti per un po’: gli allungamenti e il rinforzo contano di più. Di più su questo schema in [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/).',
         'Gli strumenti duri sono i più rischiosi. Le palline da golf e i rulli con rilievi concentrano la forza su una zona piccola, e stare in piedi su una pallina ci mette sopra tutto il peso del corpo. Meglio stare seduti. Se il dolore è al centro del cuscinetto del tallone e sembra un livido, potrebbe essere la [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/), e premerci sopra di solito non aiuta.',
       ],
       cites: [],
@@ -179,8 +213,17 @@ export const MASSAGE_BALL_IT: Guide = {
     {
       h2: 'Dove si inserisce il rotolamento in una routine per la fascite plantare?',
       paragraphs: [
-        'Il rotolamento funziona meglio come breve extra intorno agli esercizi che hanno le prove: un minuto con la pallina, l’allungamento della fascia plantare prima dei primi passi, gli allungamenti del polpaccio durante il giorno e il rinforzo del polpaccio qualche volta a settimana. In uno studio su 48\u00A0persone, i sollevamenti sulle punte lenti con un asciugamano sotto le dita hanno dato punteggi di funzione del piede migliori dell’allungamento della fascia plantare a tre mesi, anche se a sei e a dodici mesi i gruppi erano pari.',
-        'Se puoi andare da un fisioterapista, il lavoro manuale sui tessuti molli è la forma di massaggio che la linea guida sostiene di più. A casa, tieni la pallina, ma non lasciare che prenda il posto dell’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) o dei [sollevamenti sulle punte](/it/sollevamenti-tallone-fascite-plantare/).',
+        'Il rotolamento funziona meglio come breve extra intorno agli esercizi che hanno le prove:',
+        {
+          list: [
+            'Un minuto con la pallina.',
+            'L’allungamento della fascia plantare prima dei primi passi.',
+            'Gli allungamenti del polpaccio durante il giorno.',
+            'Il rinforzo del polpaccio qualche volta a settimana.',
+          ],
+        },
+        'In uno studio su 48\u00A0persone, i sollevamenti sulle punte lenti con un asciugamano sotto le dita hanno dato punteggi di funzione del piede migliori dell’allungamento della fascia plantare a tre mesi, anche se a sei e a dodici mesi i gruppi erano pari.',
+        'Se puoi andare da un fisioterapista, **il lavoro manuale sui tessuti molli è la forma di massaggio che la linea guida sostiene di più.** A casa, tieni la pallina, ma non lasciare che prenda il posto dell’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) o dei [sollevamenti sulle punte](/it/sollevamenti-tallone-fascite-plantare/).',
       ],
       cites: [CITE.rathleff, CITE.guideline],
     },

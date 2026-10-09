@@ -38,7 +38,7 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
     {
       h2: 'Por que o calcanhar dói à noite ou em repouso?',
       paragraphs: [
-        'A fascite plantar dói porque a fáscia enrijece enquanto você dorme e depois estica de uma vez quando você fica em pé. Essa dor é máxima no primeiro passo e melhora conforme você se movimenta. Se o seu calcanhar dói enquanto você está deitado na cama, sem nenhum peso no pé, normalmente o mecanismo é outro.',
+        'A fascite plantar dói porque a fáscia enrijece enquanto você dorme e depois estica de uma vez quando você fica em pé. Essa dor é máxima no primeiro passo e melhora conforme você se movimenta. **Se o seu calcanhar dói enquanto você está deitado na cama, sem nenhum peso no pé, normalmente o mecanismo é outro.**',
         'Uma revisão de 2018 na American Family Physician lista várias causas de dor no calcanhar que se comportam de um jeito diferente da fascite plantar. A diferença principal: a dor da fascite plantar melhora com a atividade, enquanto a dor de fraturas por estresse, nervos comprimidos, tumores e condições inflamatórias não segue esse padrão.',
         'O pé também fica apontado para baixo (flexão plantar) durante o sono. Essa posição pode encurtar o tendão de Aquiles e a panturrilha, o que às vezes contribui para o desconforto no calcanhar. As talas noturnas agem sobre isso segurando o tornozelo num ângulo neutro. Mas a tala noturna é uma ferramenta para fascite plantar, não um substituto para investigar uma dor que realmente piora em repouso.',
       ],
@@ -48,7 +48,7 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
       h2: 'Pode ser uma fratura por estresse do calcâneo?',
       paragraphs: [
         'Uma fratura por estresse do calcâneo, uma trinca fina no osso do calcanhar causada por carga repetida, pode provocar uma dor funda que lateja à noite. Ao contrário da fascite plantar, a dor normalmente piora com a atividade e não melhora com o aquecimento. Muitas vezes vem depois de um aumento repentino de corrida, caminhada ou tempo em pé em superfícies duras.',
-        'O “teste de compressão”, apertar os dois lados do osso do calcanhar ao mesmo tempo, é o sinal clínico clássico. Dor ao apertar é incomum na fascite plantar e comum nas fraturas por estresse. O raio-X simples muitas vezes não mostra fraturas por estresse no início. Normalmente é preciso ressonância magnética ou cintilografia óssea para confirmar.',
+        'O “teste de compressão”, apertar os dois lados do osso do calcanhar ao mesmo tempo, é o sinal clínico clássico. **Dor ao apertar é incomum na fascite plantar e comum nas fraturas por estresse.** O raio-X simples muitas vezes não mostra fraturas por estresse no início. Normalmente é preciso ressonância magnética ou cintilografia óssea para confirmar.',
         'Uma revisão de 2011 na American Family Physician observou que as fraturas por estresse do calcâneo causam uma dor que piora aos poucos depois de um aumento de atividade ou de uma troca para superfícies mais duras. Dor à noite e em repouso estavam entre as características que diferenciam a fratura por estresse da fascite.',
       ],
       cites: [CITE.patelStressFracture, CITE.tuHeelPain],
@@ -59,7 +59,7 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
       paragraphs: [
         'O nervo tibial passa por um espaço atrás do tornozelo, do lado de dentro, chamado túnel do tarso. A compressão ali, a síndrome do túnel do tarso, causa queimação, formigamento ou dormência na sola e no calcanhar. Tu (2018) descreve a dor do túnel do tarso como normalmente pior ao ficar em pé, andar ou correr, e aliviada com repouso e elevação do pé. Esse padrão é diferente da fascite plantar, mas não é o mesmo que uma dor em repouso de verdade, então o túnel do tarso nem sempre se encaixa no padrão de que esta página trata.',
         'O nervo de Baxter é o primeiro ramo do nervo plantar lateral, um nervo menor perto da parte de dentro do calcanhar. Quando ele é comprimido, causa uma dor aguda ou em queimação na parte interna do calcanhar. A dor muitas vezes piora com a atividade ao longo do dia, mas também pode aparecer em repouso. Uma revisão de 2025 afirma que a compressão do nervo de Baxter pode responder por até 20% dos casos de dor crônica no calcanhar (Tedeschi, 2025).',
-        'O nervo comprimido muitas vezes é confundido com fascite plantar, porque os dois causam dor na parte de dentro do calcanhar. A diferença está no tipo de dor: queimação, formigamento ou dormência são sinais de nervo. Exames de imagem e estudos de condução nervosa podem ajudar um profissional de saúde a confirmar o diagnóstico.',
+        'O nervo comprimido muitas vezes é confundido com fascite plantar, porque os dois causam dor na parte de dentro do calcanhar. A diferença está no tipo de dor: **queimação, formigamento ou dormência são sinais de nervo.** Exames de imagem e estudos de condução nervosa podem ajudar um profissional de saúde a confirmar o diagnóstico.',
       ],
       cites: [CITE.tedeschiBaxter, CITE.tuHeelPain],
     },
@@ -69,7 +69,7 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
       paragraphs: [
         'As espondiloartropatias, um grupo de condições inflamatórias que inclui a espondilite anquilosante e a artrite psoriásica, podem causar entesite, uma inflamação onde um tendão ou ligamento se prende ao osso. O calcanhar é um local comum. A dor muitas vezes aparece nos dois lados, pode estar na inserção do tendão de Aquiles ou embaixo do calcanhar, e vem com rigidez prolongada pela manhã (mais de 30\u00A0minutos) que melhora com o movimento.',
         'Em um acompanhamento de 5 a 15\u00A0anos de 174\u00A0pessoas com fascite plantar, dor nos dois calcanhares foi um preditor significativo de sintomas mais duradouros. Os autores observaram que uma doença inflamatória sistêmica não reconhecida poderia explicar em parte esse achado.',
-        'A artrite reumatoide e a gota também podem causar dor no calcanhar. Se a dor é nos dois calcanhares, se a rigidez dura mais de 30\u00A0minutos toda manhã, ou se outras articulações estão envolvidas, um profissional de saúde deve avaliar se há uma causa inflamatória.',
+        'A artrite reumatoide e a gota também podem causar dor no calcanhar. **Se a dor é nos dois calcanhares, se a rigidez dura mais de 30\u00A0minutos toda manhã, ou se outras articulações estão envolvidas, um profissional de saúde deve avaliar se há uma causa inflamatória.**',
       ],
       cites: [CITE.hansen, CITE.tuHeelPain],
     },
@@ -131,8 +131,16 @@ export const HEEL_PAIN_AT_NIGHT_PT: Guide = {
       h2: 'Qual a diferença entre dor no calcanhar à noite e ao acordar?',
       paragraphs: [
         'Dor no calcanhar de manhã e dor no calcanhar à noite parecem parecidas, mas apontam para direções diferentes. A dor da manhã, aquela fisgada forte no primeiro passo que passa depois de alguns minutos andando, é o quadro clássico da fascite plantar. O tecido enrijeceu durante a noite e estica de uma vez quando recebe carga.',
-        'A dor noturna, ou seja, a dor que aparece ou piora quando você está na cama sem apoiar o peso, sugere algo além de uma simples rigidez da fáscia. As condições mais ligadas à dor em repouso de verdade são fraturas por estresse, nervos comprimidos, artrite inflamatória e, raramente, tumores ósseos ou infecção.',
-        'Se você não tem certeza de qual é o seu padrão, um teste simples: a dor melhora depois de 5 a 10\u00A0minutos andando? Se sim, o padrão da fascite plantar é mais provável, e a página [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) é o melhor ponto de partida. Se não, continue lendo aqui e considere procurar um profissional de saúde.',
+        'A dor noturna, ou seja, a dor que aparece ou piora quando você está na cama sem apoiar o peso, sugere algo além de uma simples rigidez da fáscia. As condições mais ligadas à dor em repouso de verdade são:',
+        {
+          list: [
+            'Fraturas por estresse.',
+            'Nervos comprimidos.',
+            'Artrite inflamatória.',
+            'Raramente, tumores ósseos ou infecção.',
+          ],
+        },
+        'Se você não tem certeza de qual é o seu padrão, um teste simples: **a dor melhora depois de 5 a 10\u00A0minutos andando?** Se sim, o padrão da fascite plantar é mais provável, e a página [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) é o melhor ponto de partida. Se não, continue lendo aqui e considere procurar um profissional de saúde.',
       ],
       cites: [CITE.guideline, CITE.tuHeelPain],
     },

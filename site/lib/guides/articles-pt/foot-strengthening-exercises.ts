@@ -28,9 +28,23 @@ export const FOOT_STRENGTHENING_PT: Guide = {
     {
       h2: 'Quais são os músculos do pé e por que fortalecê-los?',
       paragraphs: [
-        'O pé tem dois grupos de músculos. Os músculos **intrínsecos** (os pequenos músculos que começam e terminam dentro do pé) ficam embaixo do arco e entre os ossos. Eles sustentam o arco, abrem os dedos e fazem as pequenas correções que mantêm você em equilíbrio. Os músculos **extrínsecos** (os músculos maiores que começam na parte de baixo da perna e chegam ao pé por tendões longos) incluem a panturrilha, que levanta o calcanhar, e os músculos que viram e levantam o pé.',
-        'Um artigo de 2015 de McKeon e colegas chamou os músculos intrínsecos de “core do pé”. A ideia é a mesma dos músculos profundos do tronco: pequenos estabilizadores que mantêm os músculos maiores funcionando bem. Na visão deles, os cuidados com o pé mais frequentemente dão suporte ao pé por fora do que treinam esses músculos, então muita gente nunca os treina. Isso é um modelo, não uma causa comprovada de dor, mas explica por que os programas para os pés treinam primeiro os músculos pequenos e depois acrescentam a panturrilha e o equilíbrio.',
-        'Um bom trabalho de força do pé cobre os dois grupos. O exercício de pé curto, o abrir os dedos e a elevação do dedão treinam os músculos intrínsecos, a elevação de calcanhar treina a panturrilha, e ficar em uma perna só faz os dois trabalharem juntos.',
+        'O pé tem dois grupos de músculos:',
+        {
+          list: [
+            'Os músculos **intrínsecos** (os pequenos músculos que começam e terminam dentro do pé) ficam embaixo do arco e entre os ossos. Eles sustentam o arco, abrem os dedos e fazem as pequenas correções que mantêm você em equilíbrio.',
+            'Os músculos **extrínsecos** (os músculos maiores que começam na parte de baixo da perna e chegam ao pé por tendões longos) incluem a panturrilha, que levanta o calcanhar, e os músculos que viram e levantam o pé.',
+          ],
+        },
+        'Um artigo de 2015 de McKeon e colegas chamou os músculos intrínsecos de “core do pé”. A ideia é a mesma dos músculos profundos do tronco: pequenos estabilizadores que mantêm os músculos maiores funcionando bem.',
+        'Na visão deles, os cuidados com o pé mais frequentemente dão suporte ao pé por fora do que treinam esses músculos, então muita gente nunca os treina. Isso é um modelo, não uma causa comprovada de dor, mas explica por que os programas para os pés treinam primeiro os músculos pequenos e depois acrescentam a panturrilha e o equilíbrio.',
+        'Um bom trabalho de força do pé cobre os dois grupos:',
+        {
+          list: [
+            'O exercício de pé curto, o abrir os dedos e a elevação do dedão treinam os músculos intrínsecos.',
+            'A elevação de calcanhar treina a panturrilha.',
+            'Ficar em uma perna só faz os dois trabalharem juntos.',
+          ],
+        },
       ],
       cites: [CITE.mcKeon],
     },
@@ -161,7 +175,8 @@ export const FOOT_STRENGTHENING_PT: Guide = {
       h2: 'Exercícios para fortalecer os pés previnem lesões de corrida?',
       keyFact: 'Num ensaio de 2020 com 118\u00A0corredores, quem não fez o treino de core do pé teve 2,42\u00A0vezes mais chance de se lesionar ao longo de 12\u00A0meses (Taddei e colegas).',
       paragraphs: [
-        'Os exercícios para fortalecer os pés reduziram as lesões de corrida num bom ensaio, mas só num. Em 2020, Taddei e colegas dividiram por sorteio 118\u00A0corredores amadores de longa distância num grupo de core do pé (57\u00A0corredores) e num grupo de controle (61\u00A0corredores). O grupo de core do pé fez um curso supervisionado de cerca de dois meses para os músculos do pé e do tornozelo e depois continuou treinando com supervisão a distância. Ao longo de 12\u00A0meses, o grupo de controle teve 2,42\u00A0vezes mais chance de ter uma lesão de corrida. Os autores viram o efeito aparecer depois de cerca de quatro a oito meses de treino.',
+        'Os exercícios para fortalecer os pés **reduziram as lesões de corrida num bom ensaio, mas só num.** Em 2020, Taddei e colegas dividiram por sorteio 118\u00A0corredores amadores de longa distância num grupo de core do pé (57\u00A0corredores) e num grupo de controle (61\u00A0corredores). O grupo de core do pé fez um curso supervisionado de cerca de dois meses para os músculos do pé e do tornozelo e depois continuou treinando com supervisão a distância.',
+        'Ao longo de 12\u00A0meses, o grupo de controle teve 2,42\u00A0vezes mais chance de ter uma lesão de corrida. Os autores viram o efeito aparecer depois de cerca de quatro a oito meses de treino.',
         'Um ensaio anterior e menor da mesma equipe, com 28\u00A0corredores, concluiu que cerca de dois meses de treino dos pés aumentaram o tamanho de cada músculo do pé medido, em comparação com o grupo de controle. Os corredores também passaram a empurrar o chão com mais força.',
         'Os dois ensaios vêm de um único grupo de pesquisa no Brasil, com corredores amadores que não estavam lesionados no início. Ainda não sabemos se o programa ajuda iniciantes ou pessoas que já têm dor. Para corredores que estão com dor no calcanhar agora, comece por [dor no calcanhar em corredores](/heel-pain-runners/) (em inglês).',
       ],
@@ -172,8 +187,17 @@ export const FOOT_STRENGTHENING_PT: Guide = {
       h2: 'Quanto tempo leva para fortalecer os pés?',
       keyFact: 'Num ensaio de 2019 com 57\u00A0corredores, os músculos do pé cresceram e ficaram mais fortes ao longo de cerca de dois meses, com alguns músculos já maiores depois de um mês (Ridge e colegas).',
       paragraphs: [
-        'Nos ensaios, os músculos do pé ficaram mensuravelmente mais fortes em cerca de dois meses de treino regular. Em 2019, Ridge e colegas sortearam 57\u00A0corredores entre exercícios para fortalecer os pés, andar com calçados minimalistas ou não mudar nada. O grupo dos exercícios fez exercícios progressivos com resistência pelo menos cinco vezes por semana. Depois de cerca de dois meses, cada músculo do pé medido estava maior e mais forte nos dois grupos ativos, sem mudança no grupo de controle. Alguns músculos já estavam maiores na avaliação de um mês.',
-        'O formato do arco muda mais devagar, e menos. Uma revisão de 2023 com quatro ensaios concluiu que o fortalecimento intrínseco do pé não mudou o quanto o arco se move depois de um mês, mas mudou depois de dois meses, com evidência de baixa qualidade. Num estudo pequeno de Mulligan e Cook com 21\u00A0pessoas e sem grupo de controle, a queda do navicular (o quanto o arco interno afunda quando você fica em pé) diminuiu em média 1,8\u00A0mm depois de um mês de treino de pé curto. É uma mudança real, mas pequena.',
+        'Nos ensaios, os músculos do pé ficaram mensuravelmente mais fortes em **cerca de dois meses de treino regular**. Em 2019, Ridge e colegas sortearam 57\u00A0corredores entre:',
+        {
+          list: [
+            'Exercícios para fortalecer os pés.',
+            'Andar com calçados minimalistas.',
+            'Não mudar nada.',
+          ],
+        },
+        'O grupo dos exercícios fez exercícios progressivos com resistência pelo menos cinco vezes por semana. Depois de cerca de dois meses, cada músculo do pé medido estava maior e mais forte nos dois grupos ativos, sem mudança no grupo de controle. Alguns músculos já estavam maiores na avaliação de um mês.',
+        'O formato do arco muda mais devagar, e menos. Uma revisão de 2023 com quatro ensaios concluiu que o fortalecimento intrínseco do pé não mudou o quanto o arco se move depois de um mês, mas mudou depois de dois meses, com evidência de baixa qualidade.',
+        'Num estudo pequeno de Mulligan e Cook com 21\u00A0pessoas e sem grupo de controle, a queda do navicular (o quanto o arco interno afunda quando você fica em pé) diminuiu em média 1,8\u00A0mm depois de um mês de treino de pé curto. É uma mudança real, mas pequena.',
       ],
       cites: [CITE.ridgeMinimalist, CITE.deSouzaIFM, CITE.mulliganCook],
     },
@@ -189,16 +213,25 @@ export const FOOT_STRENGTHENING_PT: Guide = {
       h2: 'Idosos conseguem fortalecer os pés?',
       keyFact: 'Num ensaio de 2016 com adultos de 60 a 90\u00A0anos, o treino supervisionado e progressivo dos pés aumentou a força dos dedos em até 36%, enquanto um programa em casa não mudou a força (Mickle e colegas).',
       paragraphs: [
-        'Idosos conseguem fortalecer os pés, e num ensaio a versão supervisionada com cargas cada vez mais pesadas foi a que funcionou. Num ensaio de 2016, Mickle e colegas dividiram 85\u00A0pessoas de 60 a 90\u00A0anos entre uma aula supervisionada com exercícios para os pés cada vez mais pesados e um programa de exercícios em casa, além de um grupo separado de 32\u00A0controles. Depois de três meses, o grupo supervisionado aumentou a força dos dedos em até 36% e conseguiu ficar mais tempo em uma perna. O grupo de casa e o grupo de controle não mostraram mudança na força dos dedos.',
+        'Idosos conseguem fortalecer os pés, e num ensaio a versão supervisionada com cargas cada vez mais pesadas foi a que funcionou. Num ensaio de 2016, Mickle e colegas dividiram 85\u00A0pessoas de 60 a 90\u00A0anos entre uma aula supervisionada com exercícios para os pés cada vez mais pesados e um programa de exercícios em casa, além de um grupo separado de 32\u00A0controles.',
+        'Depois de três meses, o grupo supervisionado aumentou a força dos dedos em até 36% e conseguiu ficar mais tempo em uma perna. O grupo de casa e o grupo de controle não mostraram mudança na força dos dedos.',
         'Uma revisão de 2022 com nove estudos em adultos de 65\u00A0anos ou mais concluiu que o fortalecimento intrínseco do pé ajudou a força, o equilíbrio e a mobilidade, e possivelmente reduziu o risco de quedas, com pouco efeito no padrão de marcha. Os autores classificaram a qualidade da evidência como razoável.',
-        'Então suba para versões mais difíceis conforme elas ficam fáceis e mantenha uma parede ou bancada por perto no trabalho de equilíbrio. Se quedas são uma preocupação, um fisioterapeuta pode montar um programa seguro.',
+        'Então suba para versões mais difíceis conforme elas ficam fáceis e **mantenha uma parede ou bancada por perto no trabalho de equilíbrio.** Se quedas são uma preocupação, um fisioterapeuta pode montar um programa seguro.',
       ],
       cites: [CITE.mickleToe, CITE.futrellOlder],
     },
     {
       h2: 'Fortalecer os pés ajuda na fascite plantar ou no pé chato?',
       paragraphs: [
-        'Na fascite plantar, o fortalecimento do pé somado ao alongamento não foi melhor que o alongamento sozinho num ensaio que comparou os dois. Em 2016, Kamonseki e colegas dividiram 83\u00A0pessoas com fascite plantar em três grupos por dois meses: fortalecimento do pé mais alongamento, fortalecimento do pé e do quadril mais alongamento, ou só alongamento. Os três grupos melhoraram na dor e na função, e nenhum grupo se saiu melhor que os outros. Para dor no calcanhar, veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
+        'Na fascite plantar, o fortalecimento do pé somado ao alongamento não foi melhor que o alongamento sozinho num ensaio que comparou os dois. Em 2016, Kamonseki e colegas dividiram 83\u00A0pessoas com fascite plantar em três grupos por dois meses:',
+        {
+          list: [
+            'Fortalecimento do pé mais alongamento.',
+            'Fortalecimento do pé e do quadril mais alongamento.',
+            'Só alongamento.',
+          ],
+        },
+        'Os três grupos melhoraram na dor e na função, e nenhum grupo se saiu melhor que os outros. Para dor no calcanhar, veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
         'No pé chato flexível, um ensaio de 2023 com 52\u00A0pessoas concluiu que um programa misto que incluía o exercício de pé curto mudou o formato do arco mais do que no grupo de controle. Os detalhes, e os limites do treino de pé curto sozinho, estão na página de [exercícios para pé chato](/pt/exercicios-pe-chato/). Se a sua dor fica principalmente nos dedos, o guia de [exercícios para fortalecer os dedos dos pés](/pt/exercicios-para-fortalecer-os-dedos-do-pe/) vai mais fundo, e para o tornozelo há [exercícios para fortalecer o tornozelo](/pt/exercicios-para-fortalecer-tornozelo/).',
       ],
       cites: [CITE.kamonseki, CITE.brijwasi],
@@ -207,7 +240,7 @@ export const FOOT_STRENGTHENING_PT: Guide = {
       h2: 'Qual é a força da evidência sobre o fortalecimento dos pés?',
       paragraphs: [
         'A evidência de que os exercícios para os pés deixam os músculos do pé mais fortes aponta na mesma direção, mas os estudos são pequenos. Uma revisão de 2025 de Peters-Dickie e colegas incluiu 28\u00A0ensaios randomizados com 1.399\u00A0pessoas. Ela apoiou os exercícios para os pés como forma de aumentar a força do pé, mas classificou a certeza como baixa a muito baixa, principalmente porque havia poucos estudos por pergunta e muitos tinham alto risco de viés. Os resultados sobre o tamanho dos músculos foram mistos.',
-        'A evidência de que pés mais fortes significam menos lesões é ainda mais fraca e se apoia principalmente no único ensaio com corredores citado acima. O fortalecimento dos pés é barato e de baixo risco, e de fato aumenta a força. Se ele previne a sua próxima lesão ainda é uma questão em aberto. Mais sobre como estes guias classificam a pesquisa está na página de [evidência científica](/science/) (em inglês).',
+        'A evidência de que pés mais fortes significam menos lesões é ainda mais fraca e se apoia principalmente no único ensaio com corredores citado acima. **O fortalecimento dos pés é barato e de baixo risco, e de fato aumenta a força.** Se ele previne a sua próxima lesão ainda é uma questão em aberto. Mais sobre como estes guias classificam a pesquisa está na página de [evidência científica](/science/) (em inglês).',
       ],
       sourceNote: 'Peters-Dickie 2025: as metanálises mostraram que calçados minimalistas aumentaram a força dos dedos 2 a 5, e que os exercícios para os pés reduziram o movimento do arco durante a corrida; certeza baixa a muito baixa.',
       cites: [CITE.petersDickie],

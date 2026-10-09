@@ -36,7 +36,14 @@ export const STANDING_DESK_IT: Guide = {
       h2: 'Perché la scrivania in piedi fa male ai piedi?',
       keyFact: 'Una revisione sistematica del 2017 di 25\u00A0studi ha trovato che i sintomi alla parte bassa della schiena diventavano clinicamente rilevanti dopo circa 71\u00A0minuti in piedi in generale, ma dopo soli 42\u00A0minuti nelle persone inclini al dolore da stazione eretta (Coenen e colleghi, 2017).',
       paragraphs: [
-        'Il dolore ai piedi con la scrivania in piedi nasce per lo stesso motivo per cui fa male qualsiasi stazione eretta prolungata: piedi, polpacci e parte bassa delle gambe reggono un carico statico senza il sollievo che danno la camminata o lo stare seduti. Quando stai fermo in piedi, la gravità fa ristagnare il sangue nella parte bassa delle gambe, i muscoli del polpaccio tengono la stessa posizione senza contrarsi e rilassarsi, e la fascia plantare sotto l’arco assorbe un carico costante.',
+        'Il dolore ai piedi con la scrivania in piedi nasce per lo stesso motivo per cui fa male qualsiasi stazione eretta prolungata: piedi, polpacci e parte bassa delle gambe reggono un carico statico senza il sollievo che danno la camminata o lo stare seduti. Quando stai fermo in piedi:',
+        {
+          list: [
+            'La gravità fa ristagnare il sangue nella parte bassa delle gambe.',
+            'I muscoli del polpaccio tengono la stessa posizione senza contrarsi e rilassarsi.',
+            'La fascia plantare sotto l’arco assorbe un carico costante.',
+          ],
+        },
         'Una revisione sistematica del 2017 di 25\u00A0studi di laboratorio ha messo insieme i dati di 591\u00A0partecipanti e ha trovato che livelli clinicamente rilevanti di sintomi alla parte bassa della schiena comparivano dopo circa 71\u00A0minuti in piedi senza interruzioni nella popolazione generale, ma dopo soli 42\u00A0minuti nelle persone che tendono ad avere dolore stando in piedi. Per i sintomi agli arti inferiori il quadro era simile. Gli autori hanno indicato 40\u00A0minuti come limite pratico prima di interrompere il tempo in piedi.',
         'Una revisione del 2015 della letteratura di medicina del lavoro ha confermato il legame tra stare in piedi a lungo e fastidi muscoloscheletrici, stanchezza e dolore alle gambe in molti tipi di lavoro in piedi. La revisione ha anche trovato che lo sforzo cardiovascolare e il gonfiore delle gambe aumentano con il tempo passato in piedi.',
       ],
@@ -47,7 +54,7 @@ export const STANDING_DESK_IT: Guide = {
       keyFact: 'Una dichiarazione di esperti del 2015 consiglia di arrivare a 2\u00A0ore al giorno di stazione eretta e attività leggera, per poi salire a 4\u00A0ore, divise in periodi più brevi (Buckley e colleghi, 2015).',
       paragraphs: [
         'Non c’è una risposta unica che vada bene per tutti, ma la ricerca restringe il campo. Una dichiarazione di esperti del 2015 commissionata da Public Health England e dalla Active Working Community Interest Company ha consigliato a chi lavora alla scrivania di arrivare all’inizio ad accumulare 2\u00A0ore al giorno di stazione eretta e attività leggera durante l’orario di lavoro, per poi salire a 4\u00A0ore al giorno. La dichiarazione precisava che il tempo in piedi va diviso in periodi più brevi, non fatto tutto di fila.',
-        'La revisione del 2017 di studi di laboratorio indica che 40\u00A0minuti in piedi di continuo sono il punto in cui i sintomi iniziano a diventare clinicamente rilevanti. Mettendo insieme le due cose, un punto di partenza pratico è stare in piedi 20-30\u00A0minuti, sedersi 20-30\u00A0minuti e ripetere durante la giornata, aggiustando man mano che il corpo si adatta.',
+        'La revisione del 2017 di studi di laboratorio indica che 40\u00A0minuti in piedi di continuo sono il punto in cui i sintomi iniziano a diventare clinicamente rilevanti. Mettendo insieme le due cose, **un punto di partenza pratico è stare in piedi 20-30\u00A0minuti, sedersi 20-30\u00A0minuti e ripetere durante la giornata**, aggiustando man mano che il corpo si adatta.',
         'Una revisione sistematica del 2014 di 14\u00A0studi sulle postazioni seduto-in piedi ha trovato prove sufficienti che riducono il fastidio alla parte bassa della schiena, senza calo di produttività. La revisione non ha trovato un rapporto ideale tra seduti e in piedi, e gli autori hanno notato che il rapporto migliore probabilmente cambia da persona a persona e da lavoro a lavoro. Quello che le prove sostengono è alternare, non una regola fissa.',
       ],
       sourceNote:
@@ -59,7 +66,7 @@ export const STANDING_DESK_IT: Guide = {
       paragraphs: [
         'I tappetini antifatica hanno qualche prova a favore. La revisione di medicina del lavoro del 2015 elenca i tappetini tra gli interventi con prove di ridurre il fastidio durante la stazione eretta prolungata. Uno studio crossover su 38\u00A0membri di équipe chirurgiche ha trovato che stare su un tappetino antifatica di gomma da 15\u00A0mm durante gli interventi dava punteggi di dolore e stanchezza nettamente più bassi rispetto al pavimento normale.',
         'Il meccanismo è semplice: una superficie più morbida permette ai piedi di fare piccoli aggiustamenti e toglie parte del carico che un pavimento duro concentra su tallone e avampiede. Una revisione sistematica del 2018 sui materiali ammortizzanti durante la stazione eretta prolungata ha notato risultati coerenti di minore fastidio, anche se gli studi erano piccoli e il beneficio riguardava il comfort, non la prevenzione di un problema specifico.',
-        'Un tappetino da solo non risolverà il dolore ai piedi, ma è una delle cose più semplici da provare. Se hai già una scrivania in piedi e ti fanno male i piedi, un tappetino insieme a periodi in piedi più brevi e agli esercizi di questa pagina copre le basi principali.',
+        '**Un tappetino da solo non risolverà il dolore ai piedi, ma è una delle cose più semplici da provare.** Se hai già una scrivania in piedi e ti fanno male i piedi, un tappetino insieme a periodi in piedi più brevi e agli esercizi di questa pagina copre le basi principali.',
       ],
       cites: [CITE.waters],
     },
@@ -67,7 +74,8 @@ export const STANDING_DESK_IT: Guide = {
       h2: 'Che scarpe mettere alla scrivania in piedi?',
       paragraphs: [
         'Se lavori da casa, magari stai alla scrivania in calzini o in pantofole. Sono tante ore senza ammortizzazione né sostegno dell’arco. La linea guida del 2023 sul dolore al tallone dà ai plantari da soli una B contro per la fascite plantare, cioè le prove fanno propendere per non usarli come unica soluzione, ma questo riguarda i plantari da soli, non se una scarpa qualsiasi sia meglio di nessuna scarpa.',
-        'Un approccio ragionevole: metti una scarpa con un po’ di ammortizzazione e un plantare interno di sostegno quando stai in piedi, anche a casa. Non ti serve una scarpa speciale per la scrivania in piedi. Se alterni in piedi e seduto, puoi toglierti le scarpe nei periodi seduti. Gli esercizi di questa pagina lavorano direttamente sui tessuti. Scarpe e tappetini aiutano il comfort in piedi, ma non sostituiscono lo stretching e il lavoro di forza.',
+        'Un approccio ragionevole: **metti una scarpa con un po’ di ammortizzazione e un plantare interno di sostegno quando stai in piedi, anche a casa.** Non ti serve una scarpa speciale per la scrivania in piedi. Se alterni in piedi e seduto, puoi toglierti le scarpe nei periodi seduti.',
+        'Gli esercizi di questa pagina lavorano direttamente sui tessuti. Scarpe e tappetini aiutano il comfort in piedi, ma non sostituiscono lo stretching e il lavoro di forza.',
       ],
       cites: [CITE.guideline],
     },
@@ -178,9 +186,17 @@ export const STANDING_DESK_IT: Guide = {
     {
       h2: 'Come passare alla scrivania in piedi senza male ai piedi?',
       paragraphs: [
-        'Inizia con meno tempo in piedi di quanto pensi ti serva. La dichiarazione di esperti del 2015 consiglia di arrivare a 2\u00A0ore al giorno di stazione eretta e attività leggera, non di partire da lì. Se non sei abituato a stare in piedi, inizia con 15-20\u00A0minuti in piedi ogni ora e aumenta piano nel giro di qualche settimana.',
-        'Una prima settimana pratica: 15\u00A0minuti in piedi, 45\u00A0minuti seduto, e ripeti durante la giornata. Nella seconda settimana passa a 20\u00A0minuti in piedi e 40 seduto. Verso la terza o quarta settimana prova 30 e 30. Ascolta i piedi e la parte bassa della schiena. Se il fastidio cresce, siediti prima invece di stringere i denti.',
-        'Aggiungi un tappetino da subito se ce l’hai. Metti scarpe con un po’ di ammortizzazione, anche a casa. Fai gli allungamenti del polpaccio della tabella sopra almeno una volta al giorno. Se hai già male ai piedi a stare in piedi e vuoi la guida più ampia, [perché mi fanno male i piedi dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega dove si sovrappongono il dolore da scrivania in piedi e problemi come la fascite plantare. Per la versione dedicata agli infermieri, vedi [dolore ai piedi per infermieri](/it/dolore-piedi-infermieri/).',
+        '**Inizia con meno tempo in piedi di quanto pensi ti serva.** La dichiarazione di esperti del 2015 consiglia di arrivare a 2\u00A0ore al giorno di stazione eretta e attività leggera, non di partire da lì. Se non sei abituato a stare in piedi, inizia con 15-20\u00A0minuti in piedi ogni ora e aumenta piano nel giro di qualche settimana:',
+        {
+          list: [
+            '**Una prima settimana pratica:** 15\u00A0minuti in piedi, 45\u00A0minuti seduto, e ripeti durante la giornata.',
+            '**Nella seconda settimana:** passa a 20\u00A0minuti in piedi e 40 seduto.',
+            '**Verso la terza o quarta settimana:** prova 30 e 30.',
+          ],
+        },
+        'Ascolta i piedi e la parte bassa della schiena. Se il fastidio cresce, siediti prima invece di stringere i denti.',
+        'Aggiungi un tappetino da subito se ce l’hai. Metti scarpe con un po’ di ammortizzazione, anche a casa. Fai gli allungamenti del polpaccio della tabella sopra almeno una volta al giorno.',
+        'Se hai già male ai piedi a stare in piedi e vuoi la guida più ampia, [perché mi fanno male i piedi dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) spiega dove si sovrappongono il dolore da scrivania in piedi e problemi come la fascite plantare. Per la versione dedicata agli infermieri, vedi [dolore ai piedi per infermieri](/it/dolore-piedi-infermieri/).',
       ],
       cites: [CITE.buckley],
     },

@@ -28,9 +28,23 @@ export const FOOT_STRENGTHENING_FR: Guide = {
     {
       h2: 'Quels sont les muscles du pied, et pourquoi les renforcer\u00A0?',
       paragraphs: [
-        'Le pied a deux groupes de muscles. Les muscles **intrinsèques** (les petits muscles qui commencent et se terminent dans le pied) se trouvent sous la voûte et entre les os. Ils soutiennent la voûte, écartent les orteils et font les minuscules corrections qui vous maintiennent en équilibre. Les muscles **extrinsèques** (les muscles plus grands qui partent du bas de la jambe et rejoignent le pied par de longs tendons) comprennent le mollet, qui soulève le talon, et les muscles qui tournent et relèvent le pied.',
-        'Un article de 2015 de McKeon et coll. a appelé les muscles intrinsèques le «\u00A0foot core\u00A0» (le gainage du pied). L’idée est la même que pour les muscles profonds du tronc\u00A0: de petits stabilisateurs qui permettent aux grands muscles moteurs de bien fonctionner. Selon eux, la prise en charge du pied consiste plus souvent à le soutenir de l’extérieur qu’à entraîner ces muscles, si bien que beaucoup de gens ne les entraînent jamais. C’est un modèle, pas une cause établie de douleur, mais il explique pourquoi les programmes pour le pied entraînent d’abord les petits muscles, puis ajoutent le mollet et l’équilibre.',
-        'Un bon travail de force du pied couvre les deux groupes. L’exercice du pied court, l’écartement des orteils et le lever du gros orteil entraînent les muscles intrinsèques, les montées sur pointes entraînent le mollet, et l’équilibre sur une jambe fait travailler les deux ensemble.',
+        'Le pied a deux groupes de muscles\u00A0:',
+        {
+          list: [
+            'Les muscles **intrinsèques** (les petits muscles qui commencent et se terminent dans le pied) se trouvent sous la voûte et entre les os. Ils soutiennent la voûte, écartent les orteils et font les minuscules corrections qui vous maintiennent en équilibre.',
+            'Les muscles **extrinsèques** (les muscles plus grands qui partent du bas de la jambe et rejoignent le pied par de longs tendons) comprennent le mollet, qui soulève le talon, et les muscles qui tournent et relèvent le pied.',
+          ],
+        },
+        'Un article de 2015 de McKeon et coll. a appelé les muscles intrinsèques le «\u00A0foot core\u00A0» (le gainage du pied). L’idée est la même que pour les muscles profonds du tronc\u00A0: de petits stabilisateurs qui permettent aux grands muscles moteurs de bien fonctionner.',
+        'Selon eux, la prise en charge du pied consiste plus souvent à le soutenir de l’extérieur qu’à entraîner ces muscles, si bien que beaucoup de gens ne les entraînent jamais. C’est un modèle, pas une cause établie de douleur, mais il explique pourquoi les programmes pour le pied entraînent d’abord les petits muscles, puis ajoutent le mollet et l’équilibre.',
+        'Un bon travail de force du pied couvre les deux groupes\u00A0:',
+        {
+          list: [
+            'L’exercice du pied court, l’écartement des orteils et le lever du gros orteil entraînent les muscles intrinsèques.',
+            'Les montées sur pointes entraînent le mollet.',
+            'L’équilibre sur une jambe fait travailler les deux ensemble.',
+          ],
+        },
       ],
       cites: [CITE.mcKeon],
     },
@@ -161,7 +175,8 @@ export const FOOT_STRENGTHENING_FR: Guide = {
       h2: 'Les exercices de renforcement du pied préviennent-ils les blessures de course\u00A0?',
       keyFact: 'Dans un essai de 2020 sur 118\u00A0coureurs, ceux qui ne faisaient pas d’entraînement de gainage du pied étaient 2,42\u00A0fois plus susceptibles de se blesser sur 12\u00A0mois (Taddei et coll.).',
       paragraphs: [
-        'Les exercices de renforcement du pied ont réduit les blessures de course dans un essai de bonne qualité, mais un seul. En 2020, Taddei et coll. ont réparti au hasard 118\u00A0coureurs amateurs de longue distance entre un groupe gainage du pied (57\u00A0coureurs) et un groupe témoin (61\u00A0coureurs). Le groupe gainage du pied a suivi un cycle supervisé d’environ deux mois sur les muscles du pied et de la cheville, puis a continué l’entraînement avec une supervision à distance. Sur 12\u00A0mois, le groupe témoin était 2,42\u00A0fois plus susceptible de se blesser en courant. Les auteurs ont vu l’effet apparaître après environ quatre à huit mois d’entraînement.',
+        'Les exercices de renforcement du pied **ont réduit les blessures de course dans un essai de bonne qualité, mais un seul.** En 2020, Taddei et coll. ont réparti au hasard 118\u00A0coureurs amateurs de longue distance entre un groupe gainage du pied (57\u00A0coureurs) et un groupe témoin (61\u00A0coureurs). Le groupe gainage du pied a suivi un cycle supervisé d’environ deux mois sur les muscles du pied et de la cheville, puis a continué l’entraînement avec une supervision à distance.',
+        'Sur 12\u00A0mois, le groupe témoin était 2,42\u00A0fois plus susceptible de se blesser en courant. Les auteurs ont vu l’effet apparaître après environ quatre à huit mois d’entraînement.',
         'Un essai antérieur plus petit de la même équipe, sur 28\u00A0coureurs, a trouvé qu’environ deux mois d’entraînement du pied augmentaient la taille de chaque muscle du pied mesuré, par rapport au groupe témoin. Les coureurs poussaient aussi plus fort sur le sol.',
         'Les deux essais viennent d’un même groupe de recherche au Brésil, chez des coureurs amateurs qui n’étaient pas blessés au départ. On ne sait pas encore si le programme aide les débutants ou les personnes qui ont déjà mal. Pour les coureurs qui ont actuellement mal au talon, commencez par [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais).',
       ],
@@ -172,8 +187,17 @@ export const FOOT_STRENGTHENING_FR: Guide = {
       h2: 'Combien de temps faut-il pour renforcer ses pieds\u00A0?',
       keyFact: 'Dans un essai de 2019 sur 57\u00A0coureurs, les muscles du pied ont grossi et gagné en force en environ deux mois, certains muscles étant plus gros après un mois (Ridge et coll.).',
       paragraphs: [
-        'Dans les essais, les muscles du pied sont devenus mesurablement plus forts en environ deux mois d’entraînement régulier. En 2019, Ridge et coll. ont réparti au hasard 57\u00A0coureurs entre des exercices de renforcement du pied, la marche en chaussures minimalistes ou aucun changement. Le groupe exercices faisait des exercices contre résistance progressive au moins cinq fois par semaine. Après environ deux mois, chaque muscle du pied mesuré était plus gros et plus fort dans les deux groupes actifs, sans changement dans le groupe témoin. Certains muscles étaient déjà plus gros au contrôle à un mois.',
-        'La forme de la voûte change plus lentement, et moins. Une revue de 2023 portant sur quatre essais a constaté que le renforcement des muscles intrinsèques du pied ne modifiait pas l’amplitude de mouvement de la voûte après un mois, mais la modifiait après deux mois, avec des preuves de faible qualité. Dans une petite étude de Mulligan et Cook sur 21\u00A0personnes, sans groupe témoin, la chute du naviculaire (de combien la voûte interne s’affaisse quand vous êtes debout) a diminué en moyenne de 1,8\u00A0mm après un mois d’entraînement du pied court. C’est un changement réel, mais petit.',
+        'Dans les essais, les muscles du pied sont devenus mesurablement plus forts en **environ deux mois d’entraînement régulier**. En 2019, Ridge et coll. ont réparti au hasard 57\u00A0coureurs entre\u00A0:',
+        {
+          list: [
+            'Des exercices de renforcement du pied.',
+            'La marche en chaussures minimalistes.',
+            'Aucun changement.',
+          ],
+        },
+        'Le groupe exercices faisait des exercices contre résistance progressive au moins cinq fois par semaine. Après environ deux mois, chaque muscle du pied mesuré était plus gros et plus fort dans les deux groupes actifs, sans changement dans le groupe témoin. Certains muscles étaient déjà plus gros au contrôle à un mois.',
+        'La forme de la voûte change plus lentement, et moins. Une revue de 2023 portant sur quatre essais a constaté que le renforcement des muscles intrinsèques du pied ne modifiait pas l’amplitude de mouvement de la voûte après un mois, mais la modifiait après deux mois, avec des preuves de faible qualité.',
+        'Dans une petite étude de Mulligan et Cook sur 21\u00A0personnes, sans groupe témoin, la chute du naviculaire (de combien la voûte interne s’affaisse quand vous êtes debout) a diminué en moyenne de 1,8\u00A0mm après un mois d’entraînement du pied court. C’est un changement réel, mais petit.',
       ],
       cites: [CITE.ridgeMinimalist, CITE.deSouzaIFM, CITE.mulliganCook],
     },
@@ -189,16 +213,25 @@ export const FOOT_STRENGTHENING_FR: Guide = {
       h2: 'Les personnes âgées peuvent-elles renforcer leurs pieds\u00A0?',
       keyFact: 'Dans un essai de 2016 chez des adultes de 60 à 90\u00A0ans, un entraînement du pied supervisé et progressif a augmenté la force des orteils jusqu’à 36\u00A0%, alors qu’un programme à domicile ne l’a pas modifiée (Mickle et coll.).',
       paragraphs: [
-        'Les personnes âgées peuvent renforcer leurs pieds, et dans un essai, c’est la version supervisée avec des charges de plus en plus lourdes qui a fonctionné. Dans un essai de 2016, Mickle et coll. ont réparti 85\u00A0personnes de 60 à 90\u00A0ans entre un cours supervisé avec des exercices du pied de plus en plus lourds et un programme d’exercices à domicile, avec en plus un groupe distinct de 32\u00A0témoins. Après trois mois, le groupe supervisé avait augmenté sa force des orteils jusqu’à 36\u00A0% et tenait plus longtemps sur une jambe. Le groupe à domicile et le groupe témoin n’ont montré aucun changement de la force des orteils.',
+        'Les personnes âgées peuvent renforcer leurs pieds, et dans un essai, c’est la version supervisée avec des charges de plus en plus lourdes qui a fonctionné. Dans un essai de 2016, Mickle et coll. ont réparti 85\u00A0personnes de 60 à 90\u00A0ans entre un cours supervisé avec des exercices du pied de plus en plus lourds et un programme d’exercices à domicile, avec en plus un groupe distinct de 32\u00A0témoins.',
+        'Après trois mois, le groupe supervisé avait augmenté sa force des orteils jusqu’à 36\u00A0% et tenait plus longtemps sur une jambe. Le groupe à domicile et le groupe témoin n’ont montré aucun changement de la force des orteils.',
         'Une revue de 2022 portant sur neuf études chez des adultes de 65\u00A0ans et plus a constaté que le renforcement des muscles intrinsèques du pied aidait la force, l’équilibre et la mobilité, et réduisait peut-être le risque de chute, avec peu d’effet sur la façon de marcher. Les auteurs ont jugé la qualité des preuves moyenne.',
-        'Passez donc à des versions plus difficiles quand elles deviennent faciles, et gardez un mur ou un plan de travail à portée pour le travail d’équilibre. Si les chutes vous inquiètent, un kinésithérapeute peut mettre en place un programme sûr.',
+        'Passez donc à des versions plus difficiles quand elles deviennent faciles, et **gardez un mur ou un plan de travail à portée pour le travail d’équilibre.** Si les chutes vous inquiètent, un kinésithérapeute peut mettre en place un programme sûr.',
       ],
       cites: [CITE.mickleToe, CITE.futrellOlder],
     },
     {
       h2: 'Le renforcement du pied aide-t-il en cas de fasciite plantaire ou de pieds plats\u00A0?',
       paragraphs: [
-        'Pour la fasciite plantaire, le renforcement du pied ajouté aux étirements n’a pas fait mieux que les étirements seuls dans un essai qui les comparait. En 2016, Kamonseki et coll. ont réparti 83\u00A0personnes atteintes de fasciite plantaire en trois groupes pendant deux mois\u00A0: renforcement du pied plus étirements, renforcement du pied et de la hanche plus étirements, ou étirements seuls. Les trois groupes se sont améliorés en douleur et en fonction, et aucun n’a fait mieux que les autres. Pour la douleur au talon, voir les [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
+        'Pour la fasciite plantaire, le renforcement du pied ajouté aux étirements n’a pas fait mieux que les étirements seuls dans un essai qui les comparait. En 2016, Kamonseki et coll. ont réparti 83\u00A0personnes atteintes de fasciite plantaire en trois groupes pendant deux mois\u00A0:',
+        {
+          list: [
+            'Renforcement du pied plus étirements.',
+            'Renforcement du pied et de la hanche plus étirements.',
+            'Étirements seuls.',
+          ],
+        },
+        'Les trois groupes se sont améliorés en douleur et en fonction, et aucun n’a fait mieux que les autres. Pour la douleur au talon, voir les [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
         'Pour les pieds plats souples, un essai de 2023 sur 52\u00A0personnes a trouvé qu’un programme mixte incluant l’exercice du pied court modifiait davantage la forme de la voûte que dans le groupe témoin. Les détails, et les limites de l’exercice du pied court seul, sont sur la page [exercices pour pieds plats](/fr/exercices-pieds-plats/). Si votre douleur se situe surtout aux orteils, le guide des [exercices de renforcement des orteils](/fr/exercices-renforcement-orteils/) va plus loin, et pour la cheville il y a les [exercices de renforcement de la cheville](/fr/exercices-renforcement-cheville/).',
       ],
       cites: [CITE.kamonseki, CITE.brijwasi],
@@ -207,7 +240,7 @@ export const FOOT_STRENGTHENING_FR: Guide = {
       h2: 'Quel est le niveau de preuve du renforcement du pied\u00A0?',
       paragraphs: [
         'Les preuves que les exercices du pied rendent les muscles du pied plus forts vont dans le même sens, mais les études sont petites. Une revue de 2025 de Peters-Dickie et coll. a inclus 28\u00A0essais randomisés et 1\u00A0399\u00A0personnes. Elle a soutenu les exercices du pied pour augmenter la force du pied, mais a jugé la certitude faible à très faible, surtout parce qu’il y avait peu d’études par question et que beaucoup présentaient un risque de biais élevé. Les résultats sur la taille des muscles étaient partagés.',
-        'Les preuves que des pieds plus forts signifient moins de blessures sont encore plus minces et reposent surtout sur l’unique essai chez des coureurs présenté plus haut. Le renforcement du pied présente peu de risque, coûte peu et développe bien la force. Savoir s’il préviendra votre prochaine blessure reste une question ouverte. La façon dont ces guides évaluent la recherche est expliquée sur la page [science](/science/) (en anglais).',
+        'Les preuves que des pieds plus forts signifient moins de blessures sont encore plus minces et reposent surtout sur l’unique essai chez des coureurs présenté plus haut. **Le renforcement du pied présente peu de risque, coûte peu et développe bien la force.** Savoir s’il préviendra votre prochaine blessure reste une question ouverte. La façon dont ces guides évaluent la recherche est expliquée sur la page [science](/science/) (en anglais).',
       ],
       sourceNote: 'Peters-Dickie 2025\u00A0: les méta-analyses ont montré que les chaussures minimalistes augmentaient la force des orteils 2 à 5, et que les exercices du pied réduisaient le mouvement de la voûte pendant la course\u00A0; certitude faible à très faible.',
       cites: [CITE.petersDickie],

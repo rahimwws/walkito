@@ -59,9 +59,17 @@ export const EX_TOWEL_SCRUNCH_PT: Guide = {
     {
       h2: 'Quais músculos o exercício de puxar a toalha trabalha?',
       paragraphs: [
-        'Puxar a toalha trabalha os músculos flexores dos dedos: o flexor curto dos dedos (dentro do pé), o flexor curto do hálux (o flexor curto do dedão) e o quadrado plantar. Esses são músculos intrínsecos. Mas o exercício também recruta os flexores extrínsecos dos dedos: o flexor longo dos dedos e o flexor longo do hálux, que vão da canela, passam pelo tornozelo e chegam aos dedos.',
+        'Puxar a toalha trabalha os músculos flexores dos dedos:',
+        {
+          list: [
+            'O flexor curto dos dedos (dentro do pé).',
+            'O flexor curto do hálux (o flexor curto do dedão).',
+            'O quadrado plantar.',
+          ],
+        },
+        'Esses são músculos intrínsecos. Mas o exercício também recruta os flexores extrínsecos dos dedos: o flexor longo dos dedos e o flexor longo do hálux, que vão da canela, passam pelo tornozelo e chegam aos dedos.',
         'Um estudo de EMG de Jung e colegas (2011) comparou a atividade muscular ao puxar a toalha e no exercício do pé curto. Eles viram que o abdutor do hálux, o músculo que mais sustenta o arco, ficou mais de quatro vezes mais ativo no pé curto do que ao puxar a toalha. Puxar a toalha gerou mais atividade nos flexores extrínsecos dos dedos.',
-        'Isso quer dizer que puxar a toalha é um bom exercício para a força de preensão dos dedos, mas é menos específico para os músculos intrínsecos do arco que o [exercício do pé curto](/pt/exercicios/pe-curto/).',
+        'Isso quer dizer que **puxar a toalha é um bom exercício para a força de preensão dos dedos**, mas é menos específico para os músculos intrínsecos do arco que o [exercício do pé curto](/pt/exercicios/pe-curto/).',
       ],
       cites: [CITE.jung],
     },
@@ -79,7 +87,8 @@ export const EX_TOWEL_SCRUNCH_PT: Guide = {
       keyFact: 'Em um estudo de 2020 com 41\u00A0pessoas (56\u00A0pés) com metatarsalgia, um programa de oito semanas de exercícios para os dedos com toalha e bolinhas de gude foi seguido de menos dor e melhor preensão dos dedos, sem grupo controle (Amaha e colegas, 2020).',
       paragraphs: [
         'Puxar a toalha serve para quem está começando com exercícios para os pés e quer um ponto de partida simples. Também serve para quem tem pouca força de preensão nos dedos, porque o exercício treina diretamente a capacidade de dobrar os dedos com carga.',
-        'Um estudo de 2020 de Amaha e colegas acompanhou 41\u00A0pessoas (56\u00A0pés) com metatarsalgia primária, dor embaixo da parte da frente do pé, durante um programa de oito semanas de exercícios para os dedos que incluía puxar a toalha e pegar bolinhas de gude. A força de preensão dos dedos e a dor melhoraram do início ao fim do programa. Não houve grupo controle, então parte dessa mudança pode refletir o tempo ou a atenção recebida, e não os exercícios em si. A força de preensão dos dedos também pode importar para idosos com risco de queda, já que os dedos ajudam no equilíbrio em pé e ao andar.',
+        'Um estudo de 2020 de Amaha e colegas acompanhou 41\u00A0pessoas (56\u00A0pés) com metatarsalgia primária, dor embaixo da parte da frente do pé, durante um programa de oito semanas de exercícios para os dedos que incluía puxar a toalha e pegar bolinhas de gude. A força de preensão dos dedos e a dor melhoraram do início ao fim do programa. Não houve grupo controle, então parte dessa mudança pode refletir o tempo ou a atenção recebida, e não os exercícios em si.',
+        'A força de preensão dos dedos também pode importar para idosos com risco de queda, já que os dedos ajudam no equilíbrio em pé e ao andar.',
         'Se o seu objetivo principal é levantar um arco caído, o [exercício do pé curto](/pt/exercicios/pe-curto/) e o [programa de exercícios para pé chato](/pt/exercicios-pe-chato/) são mais direcionados. Se o seu objetivo principal é a preensão dos dedos e a ativação geral dos músculos do pé, puxar a toalha é uma boa escolha.',
       ],
       cites: [CITE.amaha],
@@ -87,10 +96,14 @@ export const EX_TOWEL_SCRUNCH_PT: Guide = {
     {
       h2: 'Quais são os erros comuns ao puxar a toalha com os dedos?',
       paragraphs: [
-        'O erro mais comum é tirar o calcanhar do chão. Quando o calcanhar levanta, a panturrilha assume e os músculos do pé trabalham menos. Pressione o calcanhar no chão durante cada repetição.',
-        'Outro erro é puxar rápido demais. Um puxão rápido na toalha usa o embalo em vez da contração muscular. Puxe devagar e segure a toalha juntada pelos cinco segundos inteiros antes de soltar.',
-        'Algumas pessoas agarram só com o dedão e esquecem os dedos menores. Tente usar os cinco dedos juntos. Se os dedos menores não colaborarem no começo, é normal. A coordenação melhora com a prática.',
-        'Por fim, não deixe o pé deslizar de lado sobre a toalha. A puxada deve ser reta para trás, dos dedos em direção ao calcanhar. Se a toalha for para um lado, reposicione e foque em usar os dedos por igual.',
+        {
+          list: [
+            '**O erro mais comum é tirar o calcanhar do chão.** Quando o calcanhar levanta, a panturrilha assume e os músculos do pé trabalham menos. Pressione o calcanhar no chão durante cada repetição.',
+            '**Outro erro é puxar rápido demais.** Um puxão rápido na toalha usa o embalo em vez da contração muscular. Puxe devagar e segure a toalha juntada pelos cinco segundos inteiros antes de soltar.',
+            '**Algumas pessoas agarram só com o dedão e esquecem os dedos menores.** Tente usar os cinco dedos juntos. Se os dedos menores não colaborarem no começo, é normal. A coordenação melhora com a prática.',
+            '**Por fim, não deixe o pé deslizar de lado sobre a toalha.** A puxada deve ser reta para trás, dos dedos em direção ao calcanhar. Se a toalha for para um lado, reposicione e foque em usar os dedos por igual.',
+          ],
+        },
       ],
     },
   ],

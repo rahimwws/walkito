@@ -21,7 +21,8 @@ export const ACHILLES_IT: Guide = {
   lede:
     'Gli esercizi per la tendinite d’Achille funzionano meglio quando la discesa del tallone è intesa come lavoro di forza, non come allungamento. La linea guida clinica del 2024 dà all’esercizio il grado più alto, **A**, e una meta-analisi a rete del 2021 su 29\u00A0studi non ha trovato un protocollo chiaramente migliore di un altro. Quello che conta è caricare il tendine con costanza per settimane.',
   intro: [
-    'Questa pagina approfondisce quegli esercizi. Se il dolore è sotto il piede e non dietro il tallone, ti servono invece gli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/). La pagina sul [dolore al tallone per chi corre](/heel-pain-runners/) (in inglese) riassume entrambi. Se il dolore è lungo lo stinco invece che al tallone, vedi [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/); se compare solo dopo una lunga giornata in piedi e non quando corri, vedi [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/). La maggior parte delle persone usa «tendinite» e «tendinopatia» come sinonimi. Le linee guida attuali usano «tendinopatia» perché di solito il problema è di carico, non un’infiammazione pura. Questa pagina usa «tendinite» nei titoli e «tendinopatia» dove la usa la linea guida.',
+    'Questa pagina approfondisce quegli esercizi. Se il dolore è sotto il piede e non dietro il tallone, ti servono invece gli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/). La pagina sul [dolore al tallone per chi corre](/heel-pain-runners/) (in inglese) riassume entrambi. Se il dolore è lungo lo stinco invece che al tallone, vedi [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/); se compare solo dopo una lunga giornata in piedi e non quando corri, vedi [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/).',
+    'La maggior parte delle persone usa «tendinite» e «tendinopatia» come sinonimi. Le linee guida attuali usano «tendinopatia» perché di solito il problema è di carico, non un’infiammazione pura. Questa pagina usa «tendinite» nei titoli e «tendinopatia» dove la usa la linea guida.',
   ],
   takeaways: [
     'La linea guida clinica del 2024 dà all’esercizio (qualsiasi tipo che carichi il tendine) una **A**, il suo grado più alto, per la tendinopatia achillea della porzione media (Chimenti e colleghi, 2024).',
@@ -44,7 +45,7 @@ export const ACHILLES_IT: Guide = {
       h2: 'Cos’è la discesa eccentrica del tallone, e perché non è un allungamento?',
       paragraphs: [
         'La discesa eccentrica del tallone è un esercizio di forza, non un allungamento per la flessibilità. Sali su entrambi i piedi, sposti il peso sul lato dolorante e scendi piano su un piede solo, lasciando il tallone scendere sotto il bordo del gradino. La fase di discesa è la contrazione eccentrica: il muscolo del polpaccio che si allunga sotto carico. È quella discesa controllata che costruisce la capacità del tendine nel giro di settimane.',
-        'L’errore più comune è restare fermi in basso come in un allungamento del polpaccio. Così diventa un allungamento statico, che è uno stimolo diverso. Il punto è la discesa lenta e con carico. Tre secondi giù, con il muscolo che lavora per tutto il tempo.',
+        'L’errore più comune è restare fermi in basso come in un allungamento del polpaccio. Così diventa un allungamento statico, che è uno stimolo diverso. **Il punto è la discesa lenta e con carico.** Tre secondi giù, con il muscolo che lavora per tutto il tempo.',
         'Nello studio di Alfredson del 1998, 15\u00A0atleti con dolore di lunga data nella parte media del tendine d’Achille hanno fatto discese eccentriche del tallone due volte al giorno, 7\u00A0giorni su 7, per tre mesi, a ginocchio teso e piegato. Tutti e 15 sono tornati al livello di corsa di prima. Era uno studio piccolo, senza gruppo di controllo, ma ha dato il via a un intero filone di ricerca.',
       ],
       exercises: [
@@ -69,7 +70,7 @@ export const ACHILLES_IT: Guide = {
       paragraphs: [
         'Sì, secondo le prove attuali. Uno studio del 2015 su 58\u00A0persone ha confrontato il carico pesante e lento (heavy slow resistance, HSR), fatto 3\u00A0giorni a settimana, con il classico protocollo eccentrico due volte al giorno. La conclusione: «Sia l’ECC tradizionale sia l’HSR danno risultati clinici positivi, ugualmente buoni e duraturi nei pazienti con tendinopatia achillea».',
         'Una meta-analisi a rete del 2021 su 29\u00A0studi non ha trovato differenze clinicamente rilevanti tra nessuno degli approcci di esercizio attivo a 3 o 12\u00A0mesi. Erano tutti meglio del non fare nulla. Nessuno studio aveva un basso rischio di bias. Gli autori consigliavano di iniziare con un programma di esercizi per il polpaccio perché costa poco e ha pochi effetti negativi.',
-        'La forma del protocollo conta meno del caricare il tendine con costanza. Le discese eccentriche sono le più studiate, l’HSR è altrettanto efficace e richiede meno sessioni a settimana, ed entrambi sono punti di partenza validi. Per la versione per la fascite plantare della stessa logica di rinforzo del polpaccio, vedi [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/).',
+        '**La forma del protocollo conta meno del caricare il tendine con costanza.** Le discese eccentriche sono le più studiate, l’HSR è altrettanto efficace e richiede meno sessioni a settimana, ed entrambi sono punti di partenza validi. Per la versione per la fascite plantare della stessa logica di rinforzo del polpaccio, vedi [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/).',
       ],
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
@@ -171,7 +172,14 @@ export const ACHILLES_IT: Guide = {
       h2: 'Quanto dolore va bene durante gli esercizi per l’Achille?',
       keyFact: 'In uno studio su 38\u00A0persone, chi ha continuato a correre con un dolore tenuto intorno a 5 su 10 e passato entro la mattina è migliorato a dodici mesi quanto chi si era prima fermato a riposo (Silbernagel e colleghi, 2007).',
       paragraphs: [
-        'In Silbernagel 2007, 38\u00A0persone con dolore all’Achille sono state divise in due gruppi. Un gruppo ha continuato a correre e saltare durante la riabilitazione, con la regola che il dolore durante e dopo il carico poteva arrivare a circa **5 su 10**, purché tornasse al suo livello abituale entro la mattina dopo e non peggiorasse di settimana in settimana. L’altro gruppo si è prima fermato a riposo. Entrambi sono migliorati in modo significativo a 12\u00A0mesi, senza differenze tra loro.',
+        'In Silbernagel 2007, 38\u00A0persone con dolore all’Achille sono state divise in due gruppi:',
+        {
+          list: [
+            'Un gruppo ha continuato a correre e saltare durante la riabilitazione, con la regola che il dolore durante e dopo il carico poteva arrivare a circa **5 su 10**, purché tornasse al suo livello abituale entro la mattina dopo e non peggiorasse di settimana in settimana.',
+            'L’altro gruppo si è prima fermato a riposo.',
+          ],
+        },
+        'Entrambi sono migliorati in modo significativo a 12\u00A0mesi, senza differenze tra loro.',
         'È una soglia diversa dalla regola di stop a 6/10 della pagina sulla [fascite plantare](/it/esercizi-fascite-plantare/), che è il limite che Walkito usa per il dolore al tallone. Il valore di 5/10 viene da un solo studio, non da uno standard universale, ma è il modello del dolore più citato nella riabilitazione dell’Achille.',
         'Un po’ di fastidio durante il carico è normale ed era accettato nello studio. Un dolore che non passa durante la notte, peggiora di settimana in settimana o arriva come una fitta acuta improvvisa non lo è.',
       ],
@@ -184,7 +192,7 @@ export const ACHILLES_IT: Guide = {
       paragraphs: [
         'La tendinopatia achillea della porzione media si trova nel corpo del tendine, di solito da 2 a 6\u00A0centimetri sopra l’osso del tallone. Le discese eccentriche standard e il carico pesante e lento hanno qui le prove migliori. Le discese del tallone oltre il bordo del gradino vanno bene per il dolore nella porzione media.',
         'La tendinopatia achillea inserzionale è un dolore proprio nel punto in cui il tendine si attacca all’osso. In uno studio pilota del 2008 su 27\u00A0persone (34\u00A0tendini) con dolore inserzionale cronico, un protocollo modificato con carico eccentrico solo a terra in piano, senza dorsiflessione oltre la posizione neutra, ha riportato buoni risultati nel 67% dei casi. Una dorsiflessione profonda schiaccia il tendine contro l’osso del tallone, e questo irrita l’inserzione.',
-        'Se il dolore è dietro l’osso del tallone e non più in alto nel tendine, fai tutti i sollevamenti sulle punte e le discese del tallone a terra in piano. Non scendere sotto il bordo del gradino. Evita allungamenti aggressivi per lo stesso motivo. È la modifica più importante nei programmi per l’Achille, e quella che si dimentica più spesso.',
+        'Se il dolore è dietro l’osso del tallone e non più in alto nel tendine, **fai tutti i sollevamenti sulle punte e le discese del tallone a terra in piano.** Non scendere sotto il bordo del gradino. Evita allungamenti aggressivi per lo stesso motivo. È la modifica più importante nei programmi per l’Achille, e quella che si dimentica più spesso.',
       ],
       cites: [CITE.jonsson, CITE.achillesGuideline],
     },
@@ -200,7 +208,7 @@ export const ACHILLES_IT: Guide = {
       h2: 'Si può continuare a correre durante la riabilitazione dell’Achille?',
       paragraphs: [
         'In Silbernagel 2007, i pazienti che hanno continuato a correre durante la riabilitazione seguendo il modello di controllo del dolore non sono andati peggio di quelli che si erano prima fermati a riposo. Entrambi i gruppi sono migliorati a 12\u00A0mesi. Lo studio concludeva che un’attività continuata e guidata dal dolore «potrebbe quindi rappresentare un’opzione valida» durante la riabilitazione.',
-        'Questo non vuol dire che correre sia innocuo in ogni caso. Se il dolore non passa durante la notte, o se ogni settimana va peggio, riduci. Il dolore all’attaccatura sull’osso del tallone richiede più cautela di quello nella parte media del tendine. Qualsiasi schiocco o scatto improvviso è un motivo per fermarti e rivolgerti a un professionista sanitario.',
+        'Questo non vuol dire che correre sia innocuo in ogni caso. **Se il dolore non passa durante la notte, o se ogni settimana va peggio, riduci.** Il dolore all’attaccatura sull’osso del tallone richiede più cautela di quello nella parte media del tendine. Qualsiasi schiocco o scatto improvviso è un motivo per fermarti e rivolgerti a un professionista sanitario.',
         'La pagina sul [dolore al tallone per chi corre](/heel-pain-runners/) (in inglese) spiega più nel dettaglio come gestire il carico nella corsa.',
       ],
       cites: [CITE.silbernagel],

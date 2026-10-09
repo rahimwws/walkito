@@ -75,8 +75,17 @@ export const HEEL_FAT_PAD_ES: Guide = {
     {
       h2: '¿Qué causa que la almohadilla grasa se adelgace?',
       paragraphs: [
-        'La edad es el factor más importante. Después de los 40 años aproximadamente, la almohadilla grasa pierde agua, colágeno y elasticidad de forma natural. Años de actividad de alto impacto, estar de pie mucho tiempo sobre superficies duras y caminar descalzo aceleran el proceso.',
-        'Otros factores de riesgo incluyen un peso corporal más alto (más fuerza por paso), inyecciones repetidas de corticoides en el talón (la cortisona puede descomponer el tejido graso), la diabetes, el pie cavo (que concentra la carga en el talón y la parte delantera del pie) y antecedentes familiares de problemas del tejido conectivo.',
+        '**La edad es el factor más importante.** Después de los 40 años aproximadamente, la almohadilla grasa pierde agua, colágeno y elasticidad de forma natural. Años de actividad de alto impacto, estar de pie mucho tiempo sobre superficies duras y caminar descalzo aceleran el proceso.',
+        'Otros factores de riesgo incluyen:',
+        {
+          list: [
+            'Un peso corporal más alto (más fuerza por paso).',
+            'Inyecciones repetidas de corticoides en el talón (la cortisona puede descomponer el tejido graso).',
+            'La diabetes.',
+            'El pie cavo (que concentra la carga en el talón y la parte delantera del pie).',
+            'Antecedentes familiares de problemas del tejido conectivo.',
+          ],
+        },
         'A diferencia de un músculo o un tendón, la almohadilla grasa no se reconstruye con ejercicio ni con reposo. Una vez que se ha adelgazado, el objetivo práctico es proteger lo que queda y reducir el impacto que llega al hueso del talón.',
       ],
       cites: [CITE.fatPadReview, CITE.yiFatPad],
@@ -85,18 +94,28 @@ export const HEEL_FAT_PAD_ES: Guide = {
       h2: '¿Qué ayuda con el dolor de la almohadilla grasa del talón?',
       keyFact: 'Un solo reporte de caso encontró alivio del dolor con taloneras de gel de silicona al mes y a los tres meses, pero ningún ensayo aleatorizado ha probado taloneras o vendaje para esta afección (Chang y colegas, 2022).',
       paragraphs: [
-        'Los primeros pasos más recomendados para el síndrome de la almohadilla grasa del talón son externos: taloneras viscoelásticas, plantillas acolchadas y zapatos con suelas gruesas que absorban el impacto. Su objetivo es reemplazar la amortiguación que la almohadilla ya no proporciona.',
-        'La revisión exploratoria de 2022 señaló un vacío incómodo: ningún ensayo controlado aleatorizado ha probado las taloneras o el vendaje específicamente para el síndrome de la almohadilla grasa del talón. Un solo reporte de caso describió alivio del dolor con taloneras de gel de silicona al mes y a los tres meses. Algunos ensayos pequeños de vendaje low-dye para el dolor plantar general del talón reportan una caída modesta en los puntajes de dolor comparados con el placebo o con no hacer nada, pero ninguno aísla el síndrome de la almohadilla grasa de otras causas de dolor de talón, así que la magnitud de cualquier beneficio aquí no se conoce.',
-        'A pesar de la base de evidencia débil, la lógica es directa: si el cojín se fue, agregar uno por fuera es un paso razonable. Evita caminar descalzo sobre superficies duras. Elige zapatos con talones bien acolchados y evita los zapatos planos de suela delgada. Estas son recomendaciones por consenso, no probadas en ensayos, y esta página lo dice abiertamente.',
+        'Los primeros pasos más recomendados para el síndrome de la almohadilla grasa del talón son externos:',
+        {
+          list: [
+            'Taloneras viscoelásticas.',
+            'Plantillas acolchadas.',
+            'Zapatos con suelas gruesas que absorban el impacto.',
+          ],
+        },
+        'Su objetivo es reemplazar la amortiguación que la almohadilla ya no proporciona.',
+        'La revisión exploratoria de 2022 señaló un vacío incómodo: ningún ensayo controlado aleatorizado ha probado las taloneras o el vendaje específicamente para el síndrome de la almohadilla grasa del talón. Un solo reporte de caso describió alivio del dolor con taloneras de gel de silicona al mes y a los tres meses.',
+        'Algunos ensayos pequeños de vendaje low-dye para el dolor plantar general del talón reportan una caída modesta en los puntajes de dolor comparados con el placebo o con no hacer nada, pero ninguno aísla el síndrome de la almohadilla grasa de otras causas de dolor de talón, así que la magnitud de cualquier beneficio aquí no se conoce.',
+        'A pesar de la base de evidencia débil, la lógica es directa: **si el cojín se fue, agregar uno por fuera es un paso razonable.** Evita caminar descalzo sobre superficies duras. Elige zapatos con talones bien acolchados y evita los zapatos planos de suela delgada. Estas son recomendaciones por consenso, no probadas en ensayos, y esta página lo dice abiertamente.',
       ],
       cites: [CITE.fatPadReview],
     },
     {
       h2: '¿El ejercicio ayuda con el síndrome de la almohadilla grasa del talón?',
       paragraphs: [
-        'El ejercicio no puede reconstruir una almohadilla grasa adelgazada. Ese es un cambio estructural, no una debilidad muscular. Pero el ejercicio puede ayudar a manejar el pie alrededor del problema.',
+        '**El ejercicio no puede reconstruir una almohadilla grasa adelgazada.** Ese es un cambio estructural, no una debilidad muscular. Pero el ejercicio puede ayudar a manejar el pie alrededor del problema.',
         'La fuerza de la pantorrilla importa porque una pantorrilla más fuerte absorbe más de la fuerza de impacto antes de que llegue al talón. Es la misma lógica de carga detrás de los programas de elevaciones de talón para la fascitis plantar, pero para el síndrome de la almohadilla grasa el objetivo es repartir la carga, no reparar el tejido. El trabajo de los músculos intrínsecos del pie (pie corto, separación de dedos) puede ayudar al pie a manejar el contacto con el piso.',
-        'La evidencia de estos ejercicios para el síndrome de la almohadilla grasa específicamente es nula. Ningún ensayo los ha probado para esta afección. Están tomados de la literatura más amplia sobre el dolor de talón y la fuerza del pie. Los ejercicios de Walkito están diseñados para la fascitis plantar y la fuerza del pie. Son una adición razonable si un profesional de la salud ha confirmado la atrofia de la almohadilla grasa, pero no están probados específicamente para ella, y vale la pena saberlo.',
+        'La evidencia de estos ejercicios para el síndrome de la almohadilla grasa específicamente es nula. Ningún ensayo los ha probado para esta afección. Están tomados de la literatura más amplia sobre el dolor de talón y la fuerza del pie.',
+        'Los ejercicios de Walkito están diseñados para la fascitis plantar y la fuerza del pie. Son una adición razonable si un profesional de la salud ha confirmado la atrofia de la almohadilla grasa, pero no están probados específicamente para ella, y vale la pena saberlo.',
       ],
       exercises: [
         {

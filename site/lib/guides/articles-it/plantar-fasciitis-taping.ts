@@ -39,7 +39,9 @@ export const PF_TAPING_IT: Guide = {
       h2: 'Quanto aiuta il taping, e quanto dura l’effetto?',
       keyFact: 'In uno studio in cieco su 92\u00A0persone, il tape low-Dye ha ridotto il dolore ai primi passi di circa 1,2\u00A0punti su 10 in più rispetto a una finta terapia dopo una settimana (Radford e colleghi, 2006).',
       paragraphs: [
-        'Il sollievo del tape è reale ma modesto, e svanisce in fretta quando il tape viene tolto. Il test più pulito è uno studio australiano del 2006 su 92\u00A0persone con dolore al tallone. Metà ha portato il tape rigido low-Dye per una settimana più un finto ultrasuono, metà ha ricevuto solo il finto ultrasuono. Ai partecipanti era stato detto che una delle due opzioni poteva essere finta, anche se la maggior parte del gruppo con il tape ha intuito di avere quella vera. Il gruppo con il tape aveva circa 1,2\u00A0punti in meno di dolore ai primi passi su una scala da 0 a 10 rispetto al gruppo con la finta terapia. Altre misure, come la funzione del piede, non erano diverse (Radford e colleghi, 2006).',
+        '**Il sollievo del tape è reale ma modesto, e svanisce in fretta quando il tape viene tolto.**',
+        'Il test più pulito è uno studio australiano del 2006 su 92\u00A0persone con dolore al tallone. Metà ha portato il tape rigido low-Dye per una settimana più un finto ultrasuono, metà ha ricevuto solo il finto ultrasuono. Ai partecipanti era stato detto che una delle due opzioni poteva essere finta, anche se la maggior parte del gruppo con il tape ha intuito di avere quella vera.',
+        'Il gruppo con il tape aveva circa 1,2\u00A0punti in meno di dolore ai primi passi su una scala da 0 a 10 rispetto al gruppo con la finta terapia. Altre misure, come la funzione del piede, non erano diverse (Radford e colleghi, 2006).',
         'Anche il gruppo con la finta terapia è migliorato, di quasi 2\u00A0punti, solo per il fatto di essere in uno studio e di aspettarsi un aiuto. Uno studio precedente dello stesso gruppo di ricerca, senza gruppi assegnati a caso, aveva riportato una differenza più che doppia (Landorf e colleghi, 2005). Quando manca un gruppo di confronto equo, il tape sembra più efficace di quanto sia.',
         'Il kinesio tape mostra lo stesso andamento breve. In uno studio del 2024 su 34\u00A0persone, il kinesio tape ha battuto un finto tape fino a 3,5\u00A0punti su 10 il secondo giorno, poi la differenza si è ridotta giorno dopo giorno fino alla rimozione del tape (García-Gomariz e colleghi, 2024). La linea guida del 2023 non ha trovato studi sul taping che guardassero oltre circa un mese e mezzo.',
       ],
@@ -51,9 +53,16 @@ export const PF_TAPING_IT: Guide = {
       h2: 'Taping low-Dye o kinesio tape: qual è il migliore?',
       keyFact: 'In uno studio su 40\u00A0persone, il kinesio tape ha alleviato il dolore di 2\u00A0punti su 10 in più rispetto al tape low-Dye il primo giorno, con una differenza che si riduceva ogni giorno (García-Gomariz e colleghi, 2024).',
       paragraphs: [
-        'Entrambi i tipi di tape hanno il sostegno di qualche studio, e per ora non c’è un vincitore chiaro. Il taping low-Dye usa un nastro sportivo rigido, non elastico (spesso un tape all’ossido di zinco), per tenere su l’arco e limitare quanto si appiattisce. Il kinesio tape, spesso venduto come KT tape, è sottile ed elastico. Si muove con te e non blocca il piede.',
-        'Solo un piccolo studio li ha confrontati direttamente. Su 40\u00A0persone, il kinesio tape ha alleviato di più il dolore il primo giorno, di 2\u00A0punti su 10, e i partecipanti lo hanno giudicato più comodo, meno sudato e più duraturo. La differenza sul dolore si è ridotta ogni giorno successivo (García-Gomariz e colleghi, 2024). Una terza opzione, il taping calcaneare (quattro strisce intorno all’osso del tallone e all’Achille, senza toccare l’arco), ha ridotto il dolore più dello stretching o di un finto tape dopo una settimana in uno studio su 41\u00A0persone (Hyland e colleghi, 2006).',
-        'Due revisioni del 2026, ciascuna su 11\u00A0studi, vanno nella stessa direzione. Il kinesio tape aggiunto alla riabilitazione ha ridotto il dolore un po’ più della sola riabilitazione, un risultato che gli autori hanno definito preliminare (Song e colleghi, 2026). Il tape low-Dye ha battuto un placebo ma non è risultato migliore di altre opzioni (Zhang e colleghi, 2026).',
+        'Entrambi i tipi di tape hanno il sostegno di qualche studio, e **per ora non c’è un vincitore chiaro.** Il taping low-Dye usa un nastro sportivo rigido, non elastico (spesso un tape all’ossido di zinco), per tenere su l’arco e limitare quanto si appiattisce. Il kinesio tape, spesso venduto come KT tape, è sottile ed elastico. Si muove con te e non blocca il piede.',
+        'Solo un piccolo studio li ha confrontati direttamente. Su 40\u00A0persone, il kinesio tape ha alleviato di più il dolore il primo giorno, di 2\u00A0punti su 10, e i partecipanti lo hanno giudicato più comodo, meno sudato e più duraturo. La differenza sul dolore si è ridotta ogni giorno successivo (García-Gomariz e colleghi, 2024).',
+        'Una terza opzione, il taping calcaneare (quattro strisce intorno all’osso del tallone e all’Achille, senza toccare l’arco), ha ridotto il dolore più dello stretching o di un finto tape dopo una settimana in uno studio su 41\u00A0persone (Hyland e colleghi, 2006).',
+        'Due revisioni del 2026, ciascuna su 11\u00A0studi, vanno nella stessa direzione:',
+        {
+          list: [
+            'Il kinesio tape aggiunto alla riabilitazione ha ridotto il dolore un po’ più della sola riabilitazione, un risultato che gli autori hanno definito preliminare (Song e colleghi, 2026).',
+            'Il tape low-Dye ha battuto un placebo ma non è risultato migliore di altre opzioni (Zhang e colleghi, 2026).',
+          ],
+        },
       ],
       table: {
         caption: 'Tape rigido low-Dye e kinesio tape per la fascite plantare a confronto',
@@ -71,7 +80,7 @@ export const PF_TAPING_IT: Guide = {
     {
       h2: 'Come fare il taping del piede per la fascite plantare (metodo low-Dye)?',
       paragraphs: [
-        'Con un po’ di pratica, il taping low-Dye richiede circa cinque minuti. Se puoi, fatti mostrare la prima volta da un fisioterapista o da un podologo. I passaggi qui sotto seguono la versione più comune.',
+        'Con un po’ di pratica, il taping low-Dye richiede circa cinque minuti. **Se puoi, fatti mostrare la prima volta da un fisioterapista o da un podologo.** I passaggi qui sotto seguono la versione più comune.',
         'Prima di iniziare, lava il piede con un sapone semplice, asciugalo bene e non mettere creme. Prepara le strisce in anticipo da un nastro sportivo rigido largo circa 2,5\u00A0cm. Siediti con il piede appoggiato ad angolo retto rispetto alla gamba, non a punta.',
       ],
       bullets: [
@@ -102,7 +111,7 @@ export const PF_TAPING_IT: Guide = {
     {
       h2: 'Quanto tenere il tape per la fascite plantare, e si può dormire con il tape?',
       paragraphs: [
-        'La maggior parte delle persone tiene il tape da due a cinque giorni, poi fa riposare la pelle. Corrisponde agli studi: il tape low-Dye è rimasto addosso 3-5\u00A0giorni in uno studio e una settimana in un altro, e il kinesio tape è stato portato per 5\u00A0giorni negli studi del 2024 (Landorf e colleghi, 2005; Radford e colleghi, 2006; García-Gomariz e colleghi, 2024).',
+        '**La maggior parte delle persone tiene il tape da due a cinque giorni, poi fa riposare la pelle.** Corrisponde agli studi: il tape low-Dye è rimasto addosso 3-5\u00A0giorni in uno studio e una settimana in un altro, e il kinesio tape è stato portato per 5\u00A0giorni negli studi del 2024 (Landorf e colleghi, 2005; Radford e colleghi, 2006; García-Gomariz e colleghi, 2024).',
         'Il tape rigido si allenta camminando, quindi spesso serve una striscia nuova prima. Il kinesio tape è fatto per durare diversi giorni e si può bagnare. Asciugalo tamponando dopo la doccia, e non usare il phon.',
         'Puoi dormire con il tape se la pelle è a posto, ma non abbiamo trovato studi che abbiano testato il tape portato solo di notte. Per il dolore del mattino, l’opzione sostenuta dalla linea guida è il tutore notturno, spiegato in [tutore notturno per la fascite plantare](/it/tutore-notturno-fascite-plantare/), insieme agli allungamenti di [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/).',
       ],
@@ -112,8 +121,23 @@ export const PF_TAPING_IT: Guide = {
       h2: 'Quali sono gli effetti collaterali del taping?',
       keyFact: 'In uno studio su 92\u00A0persone, 13 delle 46 che portavano il tape low-Dye (28%) hanno avuto un effetto collaterale, e tutti sono spariti una volta tolto il tape (Radford e colleghi, 2006).',
       paragraphs: [
-        'I principali effetti collaterali del taping sono l’irritazione della pelle e un tape che stringe troppo. La linea guida del 2023 indica una lieve irritazione della pelle come unico danno riportato. Lo studio in cieco del 2006 dà i numeri più chiari. Delle 46\u00A0persone che hanno portato il tape rigido per una settimana, 13 (28%) hanno avuto un effetto collaterale: 4 lo trovavano troppo stretto, 4 hanno avuto una reazione allergica della pelle e 5 hanno notato un nuovo dolore altrove nella gamba. In cinque hanno tolto il tape prima del previsto. Tutti questi effetti sono spariti una volta rimosso il tape (Radford e colleghi, 2006).',
-        'Per ridurre il rischio, usa un tape ipoallergenico o un sottobendaggio sottile sulla pelle sensibile, non tirare mai stretto il tape rigido intorno al piede e stacca il tape piano, meglio dopo averlo ammorbidito con un po’ di olio per bambini.',
+        '**I principali effetti collaterali del taping sono l’irritazione della pelle e un tape che stringe troppo.** La linea guida del 2023 indica una lieve irritazione della pelle come unico danno riportato. Lo studio in cieco del 2006 dà i numeri più chiari. Delle 46\u00A0persone che hanno portato il tape rigido per una settimana, 13 (28%) hanno avuto un effetto collaterale:',
+        {
+          list: [
+            '4 lo trovavano troppo stretto.',
+            '4 hanno avuto una reazione allergica della pelle.',
+            '5 hanno notato un nuovo dolore altrove nella gamba.',
+          ],
+        },
+        'In cinque hanno tolto il tape prima del previsto. Tutti questi effetti sono spariti una volta rimosso il tape (Radford e colleghi, 2006).',
+        'Per ridurre il rischio:',
+        {
+          list: [
+            'Usa un tape ipoallergenico o un sottobendaggio sottile sulla pelle sensibile.',
+            'Non tirare mai stretto il tape rigido intorno al piede.',
+            'Stacca il tape piano, meglio dopo averlo ammorbidito con un po’ di olio per bambini.',
+          ],
+        },
       ],
       cites: [CITE.guideline, CITE.radfordTaping],
     },
@@ -122,7 +146,9 @@ export const PF_TAPING_IT: Guide = {
       keyFact: 'In uno studio su 48\u00A0persone, i sollevamenti sulle punte lenti con un asciugamano sotto le dita hanno ridotto il dolore più in fretta del solo stretching a tre mesi, e a dodici mesi i due gruppi erano pari (Rathleff e colleghi, 2015).',
       paragraphs: [
         'Abbina il tape allo stretching e al rinforzo del polpaccio, perché sono le parti con prove oltre il breve termine. La linea guida del 2023 dà all’allungamento della fascia plantare e del polpaccio il grado **A** sia per il dolore a breve sia per quello a lungo termine. Il rinforzo riceve una **B**. In uno studio su 48\u00A0persone, i sollevamenti sulle punte lenti con un asciugamano sotto le dita hanno ridotto il dolore più in fretta del solo stretching a tre mesi, anche se a dodici mesi i due gruppi erano pari (Rathleff e colleghi, 2015).',
-        'Il tape può rendere più facile camminare questa settimana, così continui a muoverti e a fare gli esercizi. Se è proprio il camminare a scatenare il dolore, [dolore al tallone dopo una camminata](/it/dolore-tallone-dopo-camminata/) spiega come regolare il carico. I tre esercizi qui sotto sono la base. In Walkito, gli allungamenti partono da 2\u00A0tenute da 30\u00A0secondi, e il sollevamento sulle punte con asciugamano, quando il tuo piano ci arriva, è impostato a 4\u00A0serie da 10 con lo stesso ritmo lento 3-2-3 (uno zaino aggiunge peso quando hai un gradino). Una volta a settimana, l’esercizio del tuo obiettivo principale sale di un gradino se le ultime due sessioni con quell’esercizio ti sono sembrate facili e il dolore del mattino non è aumentato, e scende di un gradino se una sessione è stata pesante o il dolore del mattino è salito di 2 o più punti.',
+        'Il tape può rendere più facile camminare questa settimana, così continui a muoverti e a fare gli esercizi. Se è proprio il camminare a scatenare il dolore, [dolore al tallone dopo una camminata](/it/dolore-tallone-dopo-camminata/) spiega come regolare il carico.',
+        'I tre esercizi qui sotto sono la base. In Walkito, gli allungamenti partono da 2\u00A0tenute da 30\u00A0secondi, e il sollevamento sulle punte con asciugamano, quando il tuo piano ci arriva, è impostato a 4\u00A0serie da 10 con lo stesso ritmo lento 3-2-3 (uno zaino aggiunge peso quando hai un gradino).',
+        'Una volta a settimana, l’esercizio del tuo obiettivo principale sale di un gradino se le ultime due sessioni con quell’esercizio ti sono sembrate facili e il dolore del mattino non è aumentato, e scende di un gradino se una sessione è stata pesante o il dolore del mattino è salito di 2 o più punti.',
       ],
       exercises: [
         {
@@ -167,7 +193,15 @@ export const PF_TAPING_IT: Guide = {
     {
       h2: 'Quando smettere con il taping?',
       paragraphs: [
-        'Smetti con il taping quando non senti più una differenza, quando la pelle reagisce, o quando il dolore si è calmato abbastanza da farti camminare normalmente senza. Il tape non è fatto per essere portato per mesi. Gli studi arrivano fino a circa un mese e mezzo, e la linea guida lo raccomanda solo a breve termine.',
+        'Smetti con il taping:',
+        {
+          list: [
+            'Quando non senti più una differenza.',
+            'Quando la pelle reagisce.',
+            'Quando il dolore si è calmato abbastanza da farti camminare normalmente senza.',
+          ],
+        },
+        '**Il tape non è fatto per essere portato per mesi.** Gli studi arrivano fino a circa un mese e mezzo, e la linea guida lo raccomanda solo a breve termine.',
         'Un test semplice: passa un giorno senza tape e dai un voto da 0 a 10 al dolore dei primi passi. Se è uguale a quello dei giorni con il tape, il tape non sta più facendo molto. Se dopo un mese di esercizi regolari hai ancora bisogno del tape ogni giorno, rivolgiti a un professionista sanitario per escludere altre cause e valutare altre opzioni, come i plantari (vedi [plantari o esercizi](/it/plantari-o-esercizi/)).',
       ],
       cites: [CITE.guideline],

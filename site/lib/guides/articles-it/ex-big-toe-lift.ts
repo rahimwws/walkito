@@ -31,7 +31,7 @@ export const EX_BIG_TOE_LIFT_IT: Guide = {
       h2: 'Cos’è l’esercizio di sollevamento dell’alluce?',
       paragraphs: [
         'Il sollevamento dell’alluce è un esercizio di isolamento. Alzi solo l’alluce mentre le altre quattro dita restano premute a terra. Poi inverti: premi l’alluce a terra e alza le altre quattro. È questo avanti e indietro che dà all’esercizio il suo nome popolare, toe yoga.',
-        'Lo scopo non è la forza nel senso solito. È il controllo motorio. L’alluce ha i suoi muscoli (l’estensore breve e lungo dell’alluce per alzarlo, il flessore breve e lungo dell’alluce per premerlo giù), ma la maggior parte delle persone ha perso la capacità di muoverlo separatamente dalle altre dita. L’esercizio fa recuperare questo controllo indipendente.',
+        'Lo scopo non è la forza nel senso solito. **È il controllo motorio.** L’alluce ha i suoi muscoli (l’estensore breve e lungo dell’alluce per alzarlo, il flessore breve e lungo dell’alluce per premerlo giù), ma la maggior parte delle persone ha perso la capacità di muoverlo separatamente dalle altre dita. L’esercizio fa recuperare questo controllo indipendente.',
       ],
     },
     {
@@ -61,8 +61,16 @@ export const EX_BIG_TOE_LIFT_IT: Guide = {
       keyFact: 'Uno studio del 2016 con risonanza magnetica ha misurato il sollevamento dell’alluce in un piccolo gruppo di atleti e ha trovato che attivava tutti e tre i muscoli plantari intrinseci testati, con l’attivazione più alta nel flessore breve delle dita, al 18,1% (Gooding e colleghi, 2016).',
       paragraphs: [
         'I muscoli che alzano l’alluce sono l’estensore lungo dell’alluce (che parte dallo stinco) e l’estensore breve dell’alluce (che sta sul dorso del piede). Ma l’esercizio lavora anche sui muscoli che tengono giù le altre dita, ed è lì che avviene il vero allenamento.',
-        'Uno studio del 2016 con risonanza magnetica di Gooding e colleghi ha trovato che l’esercizio di estensione dell’alluce attivava il flessore breve delle dita (18,1%), l’abduttore dell’alluce (16,9%) e il flessore del quinto dito (16,3%). I muscoli plantari intrinseci lavoravano per tenere a terra le dita più piccole mentre l’alluce si alzava.',
-        'Questo rende il sollevamento dell’alluce un esercizio due in uno. Il lato che si alza allena gli estensori. Il lato che preme giù allena i muscoli plantari intrinseci, gli stessi su cui lavora l’[esercizio del piede corto](/it/esercizi/piede-corto/).',
+        'Uno studio del 2016 con risonanza magnetica di Gooding e colleghi ha trovato che l’esercizio di estensione dell’alluce attivava:',
+        {
+          list: [
+            'Il flessore breve delle dita (18,1%).',
+            'L’abduttore dell’alluce (16,9%).',
+            'Il flessore del quinto dito (16,3%).',
+          ],
+        },
+        'I muscoli plantari intrinseci lavoravano per tenere a terra le dita più piccole mentre l’alluce si alzava.',
+        '**Questo rende il sollevamento dell’alluce un esercizio due in uno.** Il lato che si alza allena gli estensori. Il lato che preme giù allena i muscoli plantari intrinseci, gli stessi su cui lavora l’[esercizio del piede corto](/it/esercizi/piede-corto/).',
       ],
       cites: [CITE.gooding],
     },
@@ -71,15 +79,19 @@ export const EX_BIG_TOE_LIFT_IT: Guide = {
       paragraphs: [
         'L’alluce è l’interruttore del meccanismo a verricello. Quando l’alluce si estende (si piega verso l’alto) nella fase di spinta del passo, tende la fascia plantare e alza l’arco. Questo irrigidimento trasforma il piede da una base flessibile che assorbe gli urti in una leva rigida che ti spinge in avanti.',
         'Se l’alluce non riesce a estendersi in modo indipendente, il verricello non si attiva del tutto. L’arco resta più piatto durante la spinta, e il piede deve compensare caricando di più altre strutture. Col tempo, questo può contribuire ad affaticamento dell’arco, [dolore sotto l’avampiede](/it/metatarsalgia-dolore-pianta-piede/) e tensione sulla fascia plantare.',
-        'L’esercizio di sollevamento dell’alluce non carica il verricello come fa il sollevamento sulle punte con asciugamano. Quello che fa è insegnare al cervello ad attivare l’alluce da solo, così il verricello può fare il suo lavoro quando cammini normalmente. È un esercizio di coordinazione, non di forza.',
+        'L’esercizio di sollevamento dell’alluce non carica il verricello come fa il sollevamento sulle punte con asciugamano. Quello che fa è insegnare al cervello ad attivare l’alluce da solo, così il verricello può fare il suo lavoro quando cammini normalmente. **È un esercizio di coordinazione, non di forza.**',
       ],
     },
     {
       h2: 'Quali sono gli errori più comuni nel sollevamento dell’alluce?',
       paragraphs: [
-        'L’errore più comune è alzare tutte e cinque le dita insieme. Se tutte le dita salgono insieme, l’esercizio diventa un’estensione generale delle dita e il controllo indipendente si perde. Se serve, premi giù le dita più piccole con le dita della mano finché la separazione non si sviluppa.',
-        'Un altro errore è usare il muscolo dello stinco (tibiale anteriore) per alzare l’alluce tirando su tutto il piede. Tieni il piede appoggiato. Si muove solo l’alluce.',
-        'Fare le ripetizioni di fretta è un terzo problema. È un esercizio di controllo motorio. La velocità ne vanifica lo scopo. Tieni ogni sollevamento per tutti i cinque secondi e punta sulla qualità più che sulla quantità. Se riesci a fare solo tre ripetizioni pulite, tre ripetizioni pulite sono meglio di otto fatte male.',
+        {
+          list: [
+            '**L’errore più comune è alzare tutte e cinque le dita insieme.** Se tutte le dita salgono insieme, l’esercizio diventa un’estensione generale delle dita e il controllo indipendente si perde. Se serve, premi giù le dita più piccole con le dita della mano finché la separazione non si sviluppa.',
+            '**Un altro errore è usare il muscolo dello stinco (tibiale anteriore) per alzare l’alluce tirando su tutto il piede.** Tieni il piede appoggiato. Si muove solo l’alluce.',
+            '**Fare le ripetizioni di fretta è un terzo problema.** È un esercizio di controllo motorio. La velocità ne vanifica lo scopo. Tieni ogni sollevamento per tutti i cinque secondi e punta sulla qualità più che sulla quantità. Se riesci a fare solo tre ripetizioni pulite, tre ripetizioni pulite sono meglio di otto fatte male.',
+          ],
+        },
         'I crampi nell’arco o sotto il piede sono comuni nelle prime sessioni. Di solito vuol dire che i muscoli intrinseci sono deboli e si affaticano in fretta. Fermati, massaggia la zona e riprova alla sessione successiva.',
       ],
     },
@@ -88,7 +100,7 @@ export const EX_BIG_TOE_LIFT_IT: Guide = {
       paragraphs: [
         'Il sollevamento dell’alluce (estensione dell’alluce) era uno dei quattro esercizi testati nello studio del 2016 con risonanza magnetica di Gooding e colleghi. Tutti e quattro gli esercizi attivavano tutti i muscoli plantari intrinseci. Il sollevamento dell’alluce non era l’esercizio che attivava di più nessun singolo muscolo, ma produceva un’attivazione significativa in tutti, in particolare nel flessore breve delle dita.',
         'Uno studio del 2020 di Amaha e colleghi ha seguito 41\u00A0persone (56\u00A0piedi) con metatarsalgia primaria, cioè dolore sotto l’avampiede, durante otto settimane di esercizi per le dita che includevano il lavoro sull’alluce, la raccolta dell’asciugamano e la raccolta di biglie. Dal prima al dopo il programma, la forza di presa delle dita è aumentata e il dolore all’avampiede è diminuito. Lo studio non aveva un gruppo di controllo, quindi parte del cambiamento potrebbe non dipendere solo dagli esercizi.',
-        'Nessuno studio ha isolato il sollevamento dell’alluce da solo in uno studio controllato sugli esiti. Le prove lo sostengono come parte di un approccio più ampio di rinforzo del piede. Pagine di esercizi collegate: [esercizio del piede corto](/it/esercizi/piede-corto/), [apertura delle dita](/it/esercizi/apertura-dita-piede/), [raccolta dell’asciugamano](/it/esercizi/raccolta-asciugamano-dita/).',
+        '**Nessuno studio ha isolato il sollevamento dell’alluce da solo in uno studio controllato sugli esiti.** Le prove lo sostengono come parte di un approccio più ampio di rinforzo del piede. Pagine di esercizi collegate: [esercizio del piede corto](/it/esercizi/piede-corto/), [apertura delle dita](/it/esercizi/apertura-dita-piede/), [raccolta dell’asciugamano](/it/esercizi/raccolta-asciugamano-dita/).',
       ],
       cites: [CITE.gooding, CITE.amaha],
     },

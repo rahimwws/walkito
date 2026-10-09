@@ -39,18 +39,22 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
       paragraphs: [
         'Caminar carga la fascia plantar, la banda gruesa de tejido bajo el pie, con cada paso. Cada vez que el talón golpea el piso y el pie rueda hacia adelante, la fascia se estira y absorbe fuerza. En un pie sano esto no es problema. Pero cuando la fascia está irritada o la pantorrilla está demasiado tensa para absorber su parte, la carga se concentra en la unión del talón.',
         'El resultado es un dolor que aumenta durante o después de una caminata, sobre todo si es más larga de lo habitual. La guía de 2023 describe dos patrones típicos de la fascitis plantar: dolor en los primeros pasos después de descansar, y dolor que aumenta con la actividad prolongada que implica apoyar el peso. Caminar es la actividad prolongada con carga de peso más común que existe.',
-        'Una pantorrilla tensa es una parte importante del problema. En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la dorsiflexión de tobillo reducida tuvo la razón de probabilidades más alta de todos los factores de riesgo medidos. Cuando el tobillo no puede doblarse lo suficiente, cada paso le pide a la fascia que compense la diferencia.',
+        'Una pantorrilla tensa es una parte importante del problema. En un estudio de casos y controles pareados con 50\u00A0personas con fascitis plantar y 100\u00A0controles, la dorsiflexión de tobillo reducida tuvo la razón de probabilidades más alta de todos los factores de riesgo medidos. **Cuando el tobillo no puede doblarse lo suficiente, cada paso le pide a la fascia que compense la diferencia.**',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
     {
       h2: '¿El dolor de talón al caminar siempre es fascitis plantar?',
       paragraphs: [
-        'La fascitis plantar es la causa más común, pero no es la única. La ubicación y el momento del dolor ayudan a distinguirlas.',
-        '**Atrofia de la almohadilla grasa del talón.** La almohadilla grasa bajo el hueso del talón amortigua cada paso. Cuando se adelgaza o se desplaza, el hueso recibe más impacto directo. Una revisión exploratoria de 2022 señaló que el dolor de la almohadilla grasa tiende a ser un dolor profundo y sordo en el centro del talón, peor sobre superficies duras y al caminar descalzo (Chang y colegas, 2022). El dolor de la fascitis plantar suele estar en la parte interna y delantera del talón. El dolor de la almohadilla grasa está justo en el centro. Si caminar descalzo sobre azulejo o concreto es claramente peor que caminar con zapatos amortiguados, la atrofia de la almohadilla grasa vale la pena considerarla. Mira [síndrome de la almohadilla grasa del talón](/es/sindrome-almohadilla-grasa-talon/) para más información.',
-        '**Tendinitis de Aquiles.** Dolor en la parte de atrás del talón o en el tendón que está arriba, no bajo el pie. El tendón de Aquiles puede doler después de una caminata larga, sobre todo cuesta arriba. Si tu dolor está en la parte de atrás del talón y no debajo, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
-        '**Fractura por estrés del calcáneo.** Un dolor que aparece poco a poco después de un salto en la distancia o intensidad de las caminatas. A diferencia de la fascitis plantar, el dolor de la fractura por estrés tiende a aumentar con la actividad y no aliviarse mucho con el descanso. Apretar los lados del talón puede reproducir el dolor. Si eso encaja con tu patrón, consulta a un profesional de la salud antes de ejercitar el pie.',
-        '**Dolor referido de la espalda baja o atrapamiento nervioso.** Un dolor de talón que viene con entumecimiento, hormigueo o ardor puede apuntar a un problema nervioso, no a un problema de carga del tejido. Esta es una razón para consultar a un profesional de la salud primero.',
+        'La fascitis plantar es la causa más común, pero no es la única. La ubicación y el momento del dolor ayudan a distinguirlas:',
+        {
+          list: [
+            '**Atrofia de la almohadilla grasa del talón.** La almohadilla grasa bajo el hueso del talón amortigua cada paso. Cuando se adelgaza o se desplaza, el hueso recibe más impacto directo. Una revisión exploratoria de 2022 señaló que el dolor de la almohadilla grasa tiende a ser un dolor profundo y sordo en el centro del talón, peor sobre superficies duras y al caminar descalzo (Chang y colegas, 2022). El dolor de la fascitis plantar suele estar en la parte interna y delantera del talón. El dolor de la almohadilla grasa está justo en el centro. Si caminar descalzo sobre azulejo o concreto es claramente peor que caminar con zapatos amortiguados, la atrofia de la almohadilla grasa vale la pena considerarla. Mira [síndrome de la almohadilla grasa del talón](/es/sindrome-almohadilla-grasa-talon/) para más información.',
+            '**Tendinitis de Aquiles.** Dolor en la parte de atrás del talón o en el tendón que está arriba, no bajo el pie. El tendón de Aquiles puede doler después de una caminata larga, sobre todo cuesta arriba. Si tu dolor está en la parte de atrás del talón y no debajo, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
+            '**Fractura por estrés del calcáneo.** Un dolor que aparece poco a poco después de un salto en la distancia o intensidad de las caminatas. A diferencia de la fascitis plantar, el dolor de la fractura por estrés tiende a aumentar con la actividad y no aliviarse mucho con el descanso. Apretar los lados del talón puede reproducir el dolor. Si eso encaja con tu patrón, consulta a un profesional de la salud antes de ejercitar el pie.',
+            '**Dolor referido de la espalda baja o atrapamiento nervioso.** Un dolor de talón que viene con entumecimiento, hormigueo o ardor puede apuntar a un problema nervioso, no a un problema de carga del tejido. Esta es una razón para consultar a un profesional de la salud primero.',
+          ],
+        },
       ],
       cites: [CITE.fatPadReview, CITE.achillesGuideline, CITE.patelStressFracture],
     },
@@ -58,7 +62,15 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
       h2: '¿En qué se diferencia el dolor de talón al caminar del dolor de talón en la mañana?',
       paragraphs: [
         'El dolor de talón en la mañana y el dolor después de caminar son dos caras de la misma afección en la mayoría de los casos. El dolor de la mañana ocurre porque la fascia se pone rígida y se acorta durante la noche, y luego se estira de golpe cuando te paras. El dolor después de caminar ocurre porque la fascia recibió carga repetitiva durante la caminata y el tejido te está diciendo que fue suficiente.',
-        'La diferencia importa para el momento de los ejercicios. El dolor de la mañana responde mejor a un estiramiento de la fascia plantar hecho antes del primer paso. El dolor después de caminar responde a manejar la carga: caminar una distancia que el pie pueda aguantar, aumentar esa distancia poco a poco, y usar estiramientos y trabajo de pantorrilla para subir el umbral. En [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) están los estiramientos de la mañana y las férulas nocturnas con detalle.',
+        'La diferencia importa para el momento de los ejercicios. El dolor de la mañana responde mejor a un estiramiento de la fascia plantar hecho antes del primer paso. El dolor después de caminar responde a manejar la carga:',
+        {
+          list: [
+            'Caminar una distancia que el pie pueda aguantar.',
+            'Aumentar esa distancia poco a poco.',
+            'Usar estiramientos y trabajo de pantorrilla para subir el umbral.',
+          ],
+        },
+        'En [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) están los estiramientos de la mañana y las férulas nocturnas con detalle.',
         'Si tienes tanto dolor en la mañana como dolor después de caminar, ese es el patrón típico de la fascitis plantar. Los ejercicios se cruzan. El estiramiento de la mañana y los estiramientos de pantorrilla ayudan con los dos. El fortalecimiento de la pantorrilla sube la capacidad de toda la cadena para que la carga de caminar cada día quede dentro de lo que los tejidos pueden manejar.',
       ],
       cites: [CITE.guideline],
@@ -145,8 +157,15 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
       h2: '¿Cuánto deberías caminar si te duele el talón?',
       paragraphs: [
         'La meta no es dejar de caminar. Es encontrar la distancia que tu talón puede aguantar sin que empeore a la mañana siguiente, y después construir desde ahí.',
-        'Un enfoque práctico: camina una distancia que mantenga el dolor de la mañana del día siguiente igual o por debajo de su nivel habitual. Si tu puntuación normal de la mañana es 4 de 10 y una caminata de 30\u00A0minutos la sube a 6 a la mañana siguiente, esa caminata fue demasiado. Acórtala hasta que la puntuación de la mañana se mantenga estable. Después añade cinco minutos cada una o dos semanas, siempre que el dolor de la mañana no se dispare.',
-        'Esto es manejo de la carga, no descanso. El descanso total rara vez ayuda con la fascitis plantar. La guía recomienda modificar la actividad, no dejar de moverse. Caminar con zapatos de buen soporte sobre una superficie más suave es más fácil para la fascia que caminar descalzo sobre concreto.',
+        'Un enfoque práctico:',
+        {
+          list: [
+            'Camina una distancia que mantenga el dolor de la mañana del día siguiente igual o por debajo de su nivel habitual. Si tu puntuación normal de la mañana es 4 de 10 y una caminata de 30\u00A0minutos la sube a 6 a la mañana siguiente, esa caminata fue demasiado.',
+            'Acórtala hasta que la puntuación de la mañana se mantenga estable.',
+            'Después añade cinco minutos cada una o dos semanas, siempre que el dolor de la mañana no se dispare.',
+          ],
+        },
+        '**Esto es manejo de la carga, no descanso.** El descanso total rara vez ayuda con la fascitis plantar. La guía recomienda modificar la actividad, no dejar de moverse. Caminar con zapatos de buen soporte sobre una superficie más suave es más fácil para la fascia que caminar descalzo sobre concreto.',
         'Si también corres, el mismo principio aplica a otra escala. [Dolor de talón al correr](/es/dolor-de-talon-en-corredores/) cubre los picos de carga y los cambios de kilometraje con más detalle.',
       ],
       cites: [CITE.guideline],
@@ -156,7 +175,8 @@ export const HEEL_PAIN_AFTER_WALKING_ES: Guide = {
       keyFact: 'En datos normativos con 566\u00A0adultos sanos, el número promedio de elevaciones de talón a una pierna fue de unas 23 a 24\u00A0repeticiones, un punto de referencia para seguir la resistencia de la pantorrilla con el tiempo (Hébert-Losier y colegas, 2017).',
       paragraphs: [
         'No hay un plazo fijo. Una revisión de la evidencia clínica indica que cerca del 90\u00A0% de las personas con fascitis plantar mejora con cuidados sin cirugía, a menudo en varios meses (Latt y colegas, 2020). En un seguimiento más largo de 174\u00A0personas, cerca de la mitad todavía tenía algunos síntomas a los 5\u00A0años, aunque la mayoría eran leves para ese momento (Hansen y colegas, 2018).',
-        'Lo que sí puedes medir más pronto es si los ejercicios están funcionando. El dolor de la mañana en una escala de 0 a 10 es la señal diaria más clara. La resistencia de la pantorrilla, medida contando cuántas elevaciones de talón a una pierna puedes hacer, sigue la fuerza a lo largo de semanas. Un dato normativo comúnmente citado para adultos es de unas 23 a 24\u00A0repeticiones en promedio, de datos normativos con 566\u00A0adultos sanos (Hébert-Losier y colegas, 2017). Lo que importa es si tu número está subiendo, no si coincide con ese dato.',
+        'Lo que sí puedes medir más pronto es si los ejercicios están funcionando. El dolor de la mañana en una escala de 0 a 10 es la señal diaria más clara.',
+        'La resistencia de la pantorrilla, medida contando cuántas elevaciones de talón a una pierna puedes hacer, sigue la fuerza a lo largo de semanas. Un dato normativo comúnmente citado para adultos es de unas 23 a 24\u00A0repeticiones en promedio, de datos normativos con 566\u00A0adultos sanos (Hébert-Losier y colegas, 2017). **Lo que importa es si tu número está subiendo, no si coincide con ese dato.**',
         'Para más información sobre el plazo general, mira [¿cuánto dura la fascitis plantar?](/es/cuanto-dura-la-fascitis-plantar/).',
       ],
       cites: [CITE.latt, CITE.hansen, CITE.hebertLosier],

@@ -33,7 +33,14 @@ export const TOP_OF_FOOT_FR: Guide = {
       h2: 'Qu’est-ce qui cause une douleur sur le dessus du pied\u00A0?',
       keyFact: 'Une fracture de fatigue d’un métatarsien peut ne pas apparaître sur une radio simple pendant deux à trois semaines après le début des symptômes, et une IRM peut la confirmer plus tôt (Patel et coll., 2011).',
       paragraphs: [
-        '**La tendinite des extenseurs** est la cause la plus fréquente. Les tendons extenseurs courent sur le dessus du pied, du tibia jusqu’aux orteils. Ils relèvent les orteils et le pied pendant la marche. Quand ils sont irrités, vous sentez une douleur sourde le long du dessus du pied, qui s’aggrave avec l’activité et fait souvent mal quand vous relevez les orteils contre une résistance. Les déclencheurs habituels sont des lacets serrés qui appuient directement sur les tendons, une hausse brutale de la distance de marche ou de course, ou des chaussures avec une languette rigide.',
+        '**La tendinite des extenseurs** est la cause la plus fréquente. Les tendons extenseurs courent sur le dessus du pied, du tibia jusqu’aux orteils. Ils relèvent les orteils et le pied pendant la marche. Quand ils sont irrités, vous sentez une douleur sourde le long du dessus du pied, qui s’aggrave avec l’activité et fait souvent mal quand vous relevez les orteils contre une résistance. Les déclencheurs habituels sont\u00A0:',
+        {
+          list: [
+            'Des lacets serrés qui appuient directement sur les tendons.',
+            'Une hausse brutale de la distance de marche ou de course.',
+            'Des chaussures avec une languette rigide.',
+          ],
+        },
         '**La fracture de fatigue d’un métatarsien** est une petite fissure dans l’un des longs os du pied, en général le deuxième ou le troisième métatarsien. La douleur est plus localisée que dans une tendinite, se situe sur un point précis et tend à s’aggraver au fil de la journée. Un gonflement sur le dessus du pied est fréquent. Une fracture de fatigue peut mettre deux à trois semaines à apparaître sur une radio simple, donc l’imagerie précoce peut demander une IRM. Celle-ci demande du repos, pas de l’exercice.',
         '**L’excroissance osseuse dorsale** (aussi appelée exostose métatarsienne) est une bosse osseuse qui se forme sur le dessus des articulations du milieu du pied, en général là où les métatarsiens rejoignent les os cunéiformes. Elle se développe peu à peu, après des années de compression de ces articulations. L’excroissance elle-même peut ne pas faire mal, mais elle peut appuyer contre la languette de la chaussure ou irriter un nerf qui passe dessus.',
         '**La goutte** peut causer une douleur brutale et intense sur le dessus du pied, le plus souvent à l’articulation du gros orteil. L’articulation devient rouge, gonflée, chaude et extrêmement sensible. La goutte est due à des dépôts de cristaux d’acide urique et demande une prise en charge médicale. L’exercice n’aide pas pendant une crise de goutte.',
@@ -45,15 +52,23 @@ export const TOP_OF_FOOT_FR: Guide = {
     {
       h2: 'Comment distinguer ces causes\u00A0?',
       paragraphs: [
-        'L’endroit et le schéma de la douleur sont les premiers indices. Une tendinite des extenseurs donne une douleur sourde étendue le long des tendons, qui s’aggrave quand vous relevez les orteils. Une fracture de fatigue fait mal en un point précis et s’aggrave au fil de la journée. La goutte arrive brutalement, en général à l’articulation du gros orteil, avec rougeur et chaleur. Une douleur nerveuse tend à être une brûlure ou des fourmillements, pas une douleur sourde et profonde.',
+        'L’endroit et le schéma de la douleur sont les premiers indices\u00A0:',
+        {
+          list: [
+            '**Une tendinite des extenseurs** donne une douleur sourde étendue le long des tendons, qui s’aggrave quand vous relevez les orteils.',
+            '**Une fracture de fatigue** fait mal en un point précis et s’aggrave au fil de la journée.',
+            '**La goutte** arrive brutalement, en général à l’articulation du gros orteil, avec rougeur et chaleur.',
+            '**Une douleur nerveuse** tend à être une brûlure ou des fourmillements, pas une douleur sourde et profonde.',
+          ],
+        },
         'Un professionnel de santé peut souvent faire la différence par l’examen clinique. Relever les orteils contre une résistance reproduit la douleur d’une tendinite. Une sensibilité en un point sur un seul os, avec un gonflement localisé, évoque une fracture de fatigue. Si une fracture de fatigue est suspectée, l’imagerie compte, car continuer à charger un os fracturé peut l’aggraver.',
-        'Si la douleur n’apparaît qu’en chaussures et disparaît pieds nus, la pression de la chaussure est le facteur le plus probable. Si elle persiste au repos ou vous réveille la nuit, cela vaut la peine de chercher autre chose qu’une simple tendinite.',
+        'Si la douleur n’apparaît qu’en chaussures et disparaît pieds nus, **la pression de la chaussure est le facteur le plus probable.** Si elle persiste au repos ou vous réveille la nuit, cela vaut la peine de chercher autre chose qu’une simple tendinite.',
       ],
     },
     {
       h2: 'Qu’est-ce qui aide une tendinite des extenseurs\u00A0?',
       paragraphs: [
-        'La première mesure la plus rapide est en général de changer le laçage. Sautez l’œillet situé juste au-dessus du point douloureux. Beaucoup de chaussures de sport ont assez d’œillets pour faire passer le lacet autour de la zone sensible sans perdre de maintien ailleurs. Cela supprime la pression directe qui a déclenché le problème.',
+        '**La première mesure la plus rapide est en général de changer le laçage.** Sautez l’œillet situé juste au-dessus du point douloureux. Beaucoup de chaussures de sport ont assez d’œillets pour faire passer le lacet autour de la zone sensible sans perdre de maintien ailleurs. Cela supprime la pression directe qui a déclenché le problème.',
         'Les chaussures avec une languette rembourrée ou souple compriment moins les tendons. Si vous portez des bottes, des chaussures à crampons ou des chaussures de ville avec un dessus rigide, la pression du dessus de la chaussure explique souvent tout.',
         'Réduire temporairement l’activité qui a déclenché la douleur aide. Si la douleur a commencé quand vous avez augmenté votre distance de marche ou de course, revenez au niveau précédent pendant une ou deux semaines, puis remontez progressivement.',
         'De la glace sur les tendons douloureux pendant 10 à 15\u00A0minutes après l’activité peut aider à calmer l’irritation les premiers jours. Un anti-inflammatoire est une option de courte durée si la douleur gêne la vie quotidienne, mais il n’accélère pas la récupération de fond.',
@@ -62,8 +77,9 @@ export const TOP_OF_FOOT_FR: Guide = {
     {
       h2: 'L’exercice aide-t-il la douleur sur le dessus du pied\u00A0?',
       paragraphs: [
-        'Aucun essai randomisé n’a testé l’exercice spécifiquement pour la douleur du dessus du pied ou la tendinite des extenseurs. Les preuves sont ici claires\u00A0: on ne sait pas si l’exercice accélère la récupération d’une tendinite des extenseurs par rapport à un changement de laçage et au repos seuls.',
-        'Ce que l’exercice peut viser, ce sont les facteurs favorisants. Le tibial antérieur, le muscle à l’avant du tibia qui relève le pied, est lui aussi un extenseur. Quand il est faible par rapport au mollet, les petits tendons extenseurs du dessus du pied prennent plus de charge pendant la marche. Renforcer le tibial antérieur avec des relevés des orteils (relever l’avant du pied, debout dos contre un mur) est une façon de réduire ce déséquilibre. Voir les [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/) pour en savoir plus sur le tibial antérieur.',
+        'Aucun essai randomisé n’a testé l’exercice spécifiquement pour la douleur du dessus du pied ou la tendinite des extenseurs. Les preuves sont ici claires\u00A0: **on ne sait pas si l’exercice accélère la récupération d’une tendinite des extenseurs** par rapport à un changement de laçage et au repos seuls.',
+        'Ce que l’exercice peut viser, ce sont les facteurs favorisants. Le tibial antérieur, le muscle à l’avant du tibia qui relève le pied, est lui aussi un extenseur. Quand il est faible par rapport au mollet, les petits tendons extenseurs du dessus du pied prennent plus de charge pendant la marche.',
+        'Renforcer le tibial antérieur avec des relevés des orteils (relever l’avant du pied, debout dos contre un mur) est une façon de réduire ce déséquilibre. Voir les [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/) pour en savoir plus sur le tibial antérieur.',
         'L’étirement du mollet est utile si la cheville se plie mal vers le haut. Quand la cheville ne se plie pas assez, le pied compense d’une façon qui peut augmenter la contrainte sur les structures du dessus du pied. Un mollet raide est aussi un facteur de risque commun à la [fasciite plantaire](/fr/exercices-fasciite-plantaire/) et à la surcharge de l’avant-pied.',
         'Pour les excroissances osseuses dorsales et l’arthrose du milieu du pied, l’exercice ne change pas l’anatomie osseuse. Le travail de mobilité de la cheville peut aider à garder l’amplitude, et le renforcement peut réduire les symptômes, mais l’excroissance ou l’usure articulaire restent. Pour les fractures de fatigue, l’exercice n’est pas la bonne approche tant que l’os n’a pas récupéré.',
       ],
@@ -118,9 +134,17 @@ export const TOP_OF_FOOT_FR: Guide = {
       h2: 'Quand une douleur sur le dessus du pied est-elle une fracture de fatigue\u00A0?',
       paragraphs: [
         'La fracture de fatigue d’un métatarsien est la cause qu’il faut le plus écarter, car continuer à charger un os fracturé peut transformer une petite fissure en fracture complète.',
-        'Les fractures de fatigue apparaissent en général peu à peu, à force d’impacts répétés. Elles sont plus fréquentes chez les coureurs, les recrues militaires et les personnes qui ont brutalement augmenté leur activité. La douleur est localisée en un point, s’aggrave quand vous mettez du poids sur le pied et peut faire mal la nuit. Un gonflement sur le dessus du pied, au-dessus de l’os douloureux, est fréquent.',
+        'Les fractures de fatigue apparaissent en général peu à peu, à force d’impacts répétés. Elles sont plus fréquentes chez\u00A0:',
+        {
+          list: [
+            'Les coureurs.',
+            'Les recrues militaires.',
+            'Les personnes qui ont brutalement augmenté leur activité.',
+          ],
+        },
+        'La douleur est localisée en un point, s’aggrave quand vous mettez du poids sur le pied et peut faire mal la nuit. Un gonflement sur le dessus du pied, au-dessus de l’os douloureux, est fréquent.',
         'Une radio simple peut ne pas montrer une fracture de fatigue pendant les deux à trois premières semaines. Si un professionnel de santé en suspecte une, une IRM ou une scintigraphie osseuse peut la confirmer plus tôt. La prise en charge repose sur le repos et un appui protégé, pas sur l’exercice. Reprendre l’activité trop tôt expose à une fracture complète.',
-        'Si la douleur est apparue après une hausse du volume d’entraînement, se situe en un point et s’aggrave au fil de la journée, consultez un professionnel de santé avant de faire l’un des exercices de cette page.',
+        'Si la douleur est apparue après une hausse du volume d’entraînement, se situe en un point et s’aggrave au fil de la journée, **consultez un professionnel de santé avant de faire l’un des exercices de cette page.**',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -129,7 +153,7 @@ export const TOP_OF_FOOT_FR: Guide = {
       paragraphs: [
         'La goutte est une maladie inflammatoire due à des dépôts de cristaux d’acide urique dans une articulation. Elle touche classiquement l’articulation du gros orteil (la première articulation métatarso-phalangienne), mais peut atteindre n’importe quelle articulation du pied, y compris au milieu du pied.',
         'Une crise de goutte arrive vite, souvent en une nuit. L’articulation devient très douloureuse, rouge, chaude et gonflée. Elle ne ressemble pas à une tendinite ou à une fracture de fatigue, ni à l’œil ni au ressenti. Une douleur brutale et intense dans une seule articulation, avec rougeur et chaleur, est une raison de consulter rapidement. Des analyses de sang, et parfois l’analyse du liquide articulaire, confirment le diagnostic.',
-        'La goutte demande une prise en charge médicale. L’exercice, le changement de chaussures et les étirements n’aident pas pendant une crise. Entre les crises, entretenir la mobilité du pied et de la cheville est raisonnable, mais le problème d’acide urique de fond se gère avec des médicaments et des changements alimentaires.',
+        '**La goutte demande une prise en charge médicale.** L’exercice, le changement de chaussures et les étirements n’aident pas pendant une crise. Entre les crises, entretenir la mobilité du pied et de la cheville est raisonnable, mais le problème d’acide urique de fond se gère avec des médicaments et des changements alimentaires.',
       ],
     },
   ],

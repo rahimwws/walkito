@@ -25,7 +25,7 @@ export const BUNIONS_PT: Guide = {
       h2: 'Exercícios conseguem corrigir um joanete?',
       figure: { id: 'bunion', caption: 'O joanete é um calombo ósseo na articulação do dedão, com o dedão inclinado em direção aos outros dedos.', alt: 'Vista de cima dos ossos do pé com o dedão inclinado em direção ao segundo dedo e um calombo vermelho no lado de dentro da articulação do dedão.' },
       paragraphs: [
-        'Não. O joanete, chamado clinicamente de hálux valgo, é um desvio ósseo na primeira articulação metatarsofalângica (a articulação do dedão). O primeiro metatarso se desloca para dentro e o dedão inclina para fora. Depois que o osso se deslocou e a cápsula da articulação se adaptou, o exercício não consegue empurrar de volta.',
+        'Não. O joanete, chamado clinicamente de hálux valgo, é um desvio ósseo na primeira articulação metatarsofalângica (a articulação do dedão). O primeiro metatarso se desloca para dentro e o dedão inclina para fora. Depois que o osso se deslocou e a cápsula da articulação se adaptou, **o exercício não consegue empurrar de volta.**',
         'O que o exercício pode fazer é fortalecer os músculos em volta da articulação. O abdutor do hálux passa ao longo da parte de dentro do arco e puxa o dedão para o alinhamento. Em pessoas com hálux valgo, esse músculo é mais fraco e menor do que em pessoas sem o problema. Fortalecê-lo não desfaz a mudança estrutural, mas pode melhorar o controle, reduzir os sintomas e talvez frear um desvio maior nos casos leves.',
         'Um comentário clínico de 2016 no Journal of Orthopaedic and Sports Physical Therapy propôs uma abordagem de fortalecimento muscular baseada na biomecânica para o hálux valgo inicial, centrada nos músculos pequenos do pé. O autor argumentou que a deformidade avança em parte por causa de um desequilíbrio muscular, então recuperar a atividade muscular pode ter um efeito protetor. É um argumento plausível, mas a evidência direta a longo prazo ainda é limitada.',
       ],
@@ -37,7 +37,15 @@ export const BUNIONS_PT: Guide = {
         'A melhor evidência vem de alguns poucos ensaios pequenos. Nenhum é grande, e nenhum acompanhou os participantes por mais de um ano.',
         'Kim e colegas (2015) dividiram por sorteio 24\u00A0pessoas com hálux valgo leve a moderado entre uma órtese sozinha ou uma órtese mais exercícios de abrir os dedos por 8\u00A0semanas. O grupo do exercício reduziu o ângulo do hálux valgo em média 3,4\u00A0graus e aumentou a área de secção transversal do músculo abdutor do hálux. O grupo só com órtese não teve mudança significativa em nenhuma das duas medidas. O estudo foi pequeno e incluiu principalmente adultos jovens com joanetes leves.',
         'Abdalbary (2018) dividiu por sorteio 56\u00A0mulheres com hálux valgo moderado entre 3\u00A0meses de mobilização do pé, exercícios de fortalecimento e um separador de dedos, ou nenhuma intervenção (lista de espera). Aos 3\u00A0meses e de novo após 1\u00A0ano, o grupo do exercício tinha dor, função e medidas do ângulo no raio-X significativamente melhores do que o grupo que não recebeu nada. O ensaio se destaca pelo acompanhamento mais longo, mas como o separador de dedos veio junto com a mobilização e o exercício, o estudo não consegue dizer quanto o separador contribuiu sozinho.',
-        'Külünkoğlu e colegas (2021) dividiram por sorteio 60\u00A0mulheres (120\u00A0pés) com hálux valgo entre um mês de tala noturna, exercício ou estimulação elétrica. Os três grupos melhoraram na dor e na função, mas a tala foi mais eficaz que o exercício e a eletroterapia, e o exercício superou a eletroterapia. O estudo não teve um grupo controle sem tratamento, então é difícil saber quanto cada uma das três abordagens acrescentou além da variação natural.',
+        'Külünkoğlu e colegas (2021) dividiram por sorteio 60\u00A0mulheres (120\u00A0pés) com hálux valgo entre um mês de:',
+        {
+          list: [
+            'Tala noturna.',
+            'Exercício.',
+            'Estimulação elétrica.',
+          ],
+        },
+        'Os três grupos melhoraram na dor e na função, mas a tala foi mais eficaz que o exercício e a eletroterapia, e o exercício superou a eletroterapia. O estudo não teve um grupo controle sem tratamento, então é difícil saber quanto cada uma das três abordagens acrescentou além da variação natural.',
       ],
       sourceNote:
         'Kim 2015: 24\u00A0participantes, ensaio randomizado de 8\u00A0semanas. Mudança no ângulo do HV: grupo do exercício -3,41 ± 3,17\u00A0graus, grupo da órtese -0,5 ± 2,07\u00A0graus (p < 0,05). Mudança na área de secção transversal do AbdH: grupo do exercício +0,48\u00A0cm², grupo da órtese -0,11\u00A0cm². Abdalbary 2018: 56\u00A0mulheres, sorteadas entre 3\u00A0meses de mobilização + exercício + separador de dedos (36\u00A0sessões) e nenhuma intervenção, ensaio randomizado com acompanhamento de 1\u00A0ano. Külünkoğlu 2021: 60\u00A0mulheres (120\u00A0pés), ensaio randomizado com 3\u00A0braços (tala, exercício, eletroterapia), 1\u00A0mês de tratamento, sem grupo controle sem tratamento; a tala foi a mais eficaz das três.',
@@ -48,8 +56,9 @@ export const BUNIONS_PT: Guide = {
       keyFact: 'Em um estudo com 30\u00A0mulheres com hálux valgo doloroso, uma palmilha com separador de dedos reduziu a dor de forma significativa ao longo de três meses, enquanto um grupo separado com tala noturna não melhorou (Tehraninasr e colegas, 2008).',
       paragraphs: [
         'Os separadores de dedos, também chamados de espaçadores, ficam entre o dedão e o segundo dedo. Eles reduzem o atrito, aliviam a pressão sobre o joanete e empurram de leve o dedão para longe do segundo dedo enquanto estão no pé.',
-        'Tehraninasr e colegas (2008) estudaram 30\u00A0mulheres com hálux valgo doloroso por 3\u00A0meses. Um grupo usou uma palmilha com separador de dedos embutido, e um grupo separado usou uma tala noturna. A dor caiu de forma significativa no grupo do separador, mas não no grupo da tala noturna. Nenhum dos dois grupos teve mudança estatisticamente significativa no ângulo do hálux valgo. O ensaio de Abdalbary juntou um separador de dedos com terapia manual e exercício, então não isola o que o separador fez sozinho.',
-        'O padrão entre os estudos é consistente: os separadores de dedos podem ajudar no conforto e nos sintomas a curto prazo, mas a evidência de que eles mudam o ângulo do osso com o tempo é fraca. Eles não fazem mal e são baratos, então muitos profissionais recomendam junto com exercícios e troca de calçado.',
+        'Tehraninasr e colegas (2008) estudaram 30\u00A0mulheres com hálux valgo doloroso por 3\u00A0meses. Um grupo usou uma palmilha com separador de dedos embutido, e um grupo separado usou uma tala noturna. A dor caiu de forma significativa no grupo do separador, mas não no grupo da tala noturna. Nenhum dos dois grupos teve mudança estatisticamente significativa no ângulo do hálux valgo.',
+        'O ensaio de Abdalbary juntou um separador de dedos com terapia manual e exercício, então não isola o que o separador fez sozinho.',
+        'O padrão entre os estudos é consistente: **os separadores de dedos podem ajudar no conforto e nos sintomas a curto prazo, mas a evidência de que eles mudam o ângulo do osso com o tempo é fraca.** Eles não fazem mal e são baratos, então muitos profissionais recomendam junto com exercícios e troca de calçado.',
       ],
       cites: [CITE.abdalbary, CITE.tehraninasr],
     },
@@ -121,7 +130,7 @@ export const BUNIONS_PT: Guide = {
     {
       h2: 'O calçado faz diferença no joanete?',
       paragraphs: [
-        'O calçado é uma das mudanças de maior impacto que você pode fazer. Um bico largo dá espaço para o dedão ficar em uma posição mais neutra e impede o sapato de pressionar o joanete. Sapatos estreitos e de bico fino empurram o dedão ainda mais para o valgo e comprimem a articulação.',
+        'O calçado é uma das mudanças de maior impacto que você pode fazer. **Um bico largo dá espaço para o dedão ficar em uma posição mais neutra** e impede o sapato de pressionar o joanete. Sapatos estreitos e de bico fino empurram o dedão ainda mais para o valgo e comprimem a articulação.',
         'O salto alto joga o peso para a parte da frente do pé e aumenta a pressão na primeira articulação metatarsofalângica. Se a dor do joanete é um problema, baixar a altura do salto é um primeiro passo simples.',
         'O calçado sozinho não reverte a deformidade, mas pode reduzir os sintomas e frear a progressão ao tirar a força externa que empurra o dedão ainda mais para fora do alinhamento.',
       ],
@@ -129,7 +138,7 @@ export const BUNIONS_PT: Guide = {
     {
       h2: 'Quando se pensa em cirurgia?',
       paragraphs: [
-        'A cirurgia é considerada quando a dor e a limitação funcional continuam apesar das medidas conservadoras, como troca de calçado, exercícios, separadores e palmilhas. A decisão depende do quanto o joanete afeta o dia a dia, não só do ângulo.',
+        'A cirurgia é considerada quando a dor e a limitação funcional continuam apesar das medidas conservadoras, como troca de calçado, exercícios, separadores e palmilhas. **A decisão depende do quanto o joanete afeta o dia a dia, não só do ângulo.**',
         'Existem mais de 150 procedimentos cirúrgicos para hálux valgo, que vão do realinhamento de tecidos moles à osteotomia (cortar e reposicionar o osso). A escolha depende da gravidade e da anatomia específica. A recuperação varia de semanas a meses.',
         'Exercício e tratamento conservador costumam ser tentados primeiro por vários meses. Se você está controlando bem os sintomas com as abordagens desta página, a cirurgia não é urgente. Se a dor limita a caminhada, a escolha de calçados ou a atividade apesar dessas medidas, um especialista em pé e tornozelo pode conversar sobre as opções.',
       ],

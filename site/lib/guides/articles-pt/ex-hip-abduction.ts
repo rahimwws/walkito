@@ -37,8 +37,9 @@ export const EX_HIP_ABDUCTION_PT: Guide = {
     {
       h2: 'Como fazer a abdução de quadril em pé com faixa?',
       paragraphs: [
-        'Fique em pé com uma faixa elástica em volta dos dois tornozelos ou logo acima dos joelhos. Segure em uma parede ou cadeira para se equilibrar. Passe o peso para a perna de apoio. Levante a outra perna reta para o lado, com os dedos apontando para a frente e o corpo reto. Não incline para o lado oposto. Desça devagar e repita.',
-        'Empurre pelo calcanhar da perna que trabalha, não pelos dedos. O movimento é no quadril, não na cintura. A perna não precisa subir muito. Uns 30 a 45\u00A0graus do chão bastam, se a técnica continuar limpa. Subir mais com o corpo inclinando para o lado faz menos pelo glúteo médio.',
+        'Fique em pé com uma faixa elástica em volta dos dois tornozelos ou logo acima dos joelhos. Segure em uma parede ou cadeira para se equilibrar. Passe o peso para a perna de apoio.',
+        'Levante a outra perna reta para o lado, com os dedos apontando para a frente e o corpo reto. Não incline para o lado oposto. Desça devagar e repita.',
+        'Empurre pelo calcanhar da perna que trabalha, não pelos dedos. **O movimento é no quadril, não na cintura.** A perna não precisa subir muito. Uns 30 a 45\u00A0graus do chão bastam, se a técnica continuar limpa. Subir mais com o corpo inclinando para o lado faz menos pelo glúteo médio.',
       ],
       exercises: [
         {
@@ -60,8 +61,15 @@ export const EX_HIP_ABDUCTION_PT: Guide = {
       h2: 'Como o quadril afeta o pé e o arco?',
       keyFact: 'Um estudo de 2013 com cerca de 1.900\u00A0adultos do Framingham Foot Study não encontrou ligação entre pé chato e dor lombar, mas encontrou uma pequena ligação entre o pé girando para dentro e dor nas costas em mulheres (Menz e colegas, 2013).',
       paragraphs: [
-        'A ligação passa por uma cadeia biomecânica: quadril, joelho, tornozelo, pé. Quando o glúteo médio não consegue manter a pelve nivelada com você em uma perna, a coxa gira para dentro. O joelho vai junto, caindo em direção ao meio do corpo. Essa rotação obriga o pé a fazer pronação, virando o tornozelo para dentro e achatando o arco.',
-        'É por isso que muita gente com pé chato ou dor no arco também tem o quadril fraco. O arco não está falhando sozinho. Ele está recebendo carga demais de cima. Fortalecer o quadril diminui essa carga que vem de cima para baixo.',
+        'A ligação passa por uma cadeia biomecânica: quadril, joelho, tornozelo, pé. Quando o glúteo médio não consegue manter a pelve nivelada com você em uma perna:',
+        {
+          list: [
+            'A coxa gira para dentro.',
+            'O joelho vai junto, caindo em direção ao meio do corpo.',
+            'Essa rotação obriga o pé a fazer pronação, virando o tornozelo para dentro e achatando o arco.',
+          ],
+        },
+        'É por isso que muita gente com pé chato ou dor no arco também tem o quadril fraco. O arco não está falhando sozinho. **Ele está recebendo carga demais de cima.** Fortalecer o quadril diminui essa carga que vem de cima para baixo.',
         'Um estudo transversal de 2013 do Framingham Foot Study analisou cerca de 1.900\u00A0adultos da comunidade. A postura de pé chato em si não estava ligada a dor lombar, mas um pé que girava para dentro ao andar mostrou uma pequena ligação com dor lombar em mulheres, sugerindo que a cadeia pé, quadril e costas pode funcionar nos dois sentidos.',
         'O ensaio de pé chato de Brijwasi e colegas (2023) incluiu fortalecimento do quadril junto com exercícios de pé curto, trabalho de tornozelo e alongamento. O programa combinado melhorou o formato do arco em seis semanas. O estudo não separou quanto o fortalecimento do quadril contribuiu sozinho, mas a inclusão reflete o raciocínio biomecânico.',
       ],
@@ -78,10 +86,14 @@ export const EX_HIP_ABDUCTION_PT: Guide = {
     {
       h2: 'Quais são os erros comuns na abdução de quadril em pé?',
       paragraphs: [
-        'Inclinar o corpo para o lado oposto é o erro mais comum. Quando você inclina, o corpo usa o embalo e a inclinação lateral em vez do glúteo médio. Fique reto. Uma subida menor com o corpo reto é melhor que uma subida alta com inclinação.',
-        'Girar o pé para fora, com os dedos apontando para o teto, é outro erro. Isso passa o trabalho para os flexores do quadril e o tensor da fáscia lata em vez do glúteo médio. Mantenha os dedos apontando para a frente ou um pouco para baixo.',
-        'Balançar a perna é um terceiro problema. O exercício deve ser lento e controlado, principalmente na descida. A fase de descida (excêntrica) é onde acontece boa parte do fortalecimento. Se a perna cai rápido, o músculo não está fazendo o trabalho.',
-        'Por fim, deixar o quadril de apoio cair é sinal de que a faixa está forte demais ou de que o glúteo médio do lado de apoio está cansando. A pelve deve ficar nivelada o tempo todo. Use uma faixa mais leve ou descanse entre as séries.',
+        {
+          list: [
+            '**Inclinar o corpo para o lado oposto** é o erro mais comum. Quando você inclina, o corpo usa o embalo e a inclinação lateral em vez do glúteo médio. Fique reto. Uma subida menor com o corpo reto é melhor que uma subida alta com inclinação.',
+            '**Girar o pé para fora**, com os dedos apontando para o teto, é outro erro. Isso passa o trabalho para os flexores do quadril e o tensor da fáscia lata em vez do glúteo médio. Mantenha os dedos apontando para a frente ou um pouco para baixo.',
+            '**Balançar a perna** é um terceiro problema. O exercício deve ser lento e controlado, principalmente na descida. A fase de descida (excêntrica) é onde acontece boa parte do fortalecimento. Se a perna cai rápido, o músculo não está fazendo o trabalho.',
+            '**Por fim, deixar o quadril de apoio cair** é sinal de que a faixa está forte demais ou de que o glúteo médio do lado de apoio está cansando. A pelve deve ficar nivelada o tempo todo. Use uma faixa mais leve ou descanse entre as séries.',
+          ],
+        },
       ],
     },
     {
@@ -89,8 +101,16 @@ export const EX_HIP_ABDUCTION_PT: Guide = {
       paragraphs: [
         'O raciocínio biomecânico para a abdução de quadril em programas para os pés está bem estabelecido: abdutores do quadril fracos deixam o joelho cair para dentro, aumentando a pronação do pé e a carga no arco. Vários estudos observacionais confirmam a ligação entre fraqueza no quadril e problemas de alinhamento das pernas.',
         'Para resultados clínicos, a evidência mais forte vem de programas combinados. O ensaio de 2023 de Brijwasi e colegas incluiu fortalecimento do quadril como parte de um programa de exercícios de seis semanas para 52\u00A0pessoas com pé chato flexível. O programa melhorou o formato do arco. O fortalecimento do quadril não foi isolado em um ensaio próprio de pé chato ou de fascite plantar.',
-        'Um ensaio randomizado de 2024 com 45\u00A0mulheres com pé chato flexível comparou exercícios de pé curto, um programa de exercícios combinado e exercícios de pé curto com abdução de quadril isométrica, por seis semanas. Os três grupos melhoraram a queda do navicular (o quanto o arco cede sob o peso do corpo). O grupo que acrescentou a abdução de quadril isométrica melhorou mais, mas sua queda do navicular não foi significativamente melhor que a do programa combinado; a oscilação lateral foi (Zarali e colegas, 2024). Isso sugere que o trabalho de quadril pode acrescentar algo aos exercícios para o pé, segundo um único estudo pequeno.',
-        'A evidência apoia a abdução de quadril como parte de um programa mais amplo para os pés. Ela não é um exercício isolado para dor no arco, mas preenche uma lacuna que os exercícios só para o pé deixam aberta. Páginas relacionadas: [exercícios para pé chato](/pt/exercicios-pe-chato/), [inversão do tornozelo com faixa](/pt/exercicios/inversao-tornozelo-faixa/), [exercício do pé curto](/pt/exercicios/pe-curto/).',
+        'Um ensaio randomizado de 2024 com 45\u00A0mulheres com pé chato flexível comparou, por seis semanas:',
+        {
+          list: [
+            'Exercícios de pé curto.',
+            'Um programa de exercícios combinado.',
+            'Exercícios de pé curto com abdução de quadril isométrica.',
+          ],
+        },
+        'Os três grupos melhoraram a queda do navicular (o quanto o arco cede sob o peso do corpo). O grupo que acrescentou a abdução de quadril isométrica melhorou mais, mas sua queda do navicular não foi significativamente melhor que a do programa combinado; a oscilação lateral foi (Zarali e colegas, 2024). Isso sugere que o trabalho de quadril pode acrescentar algo aos exercícios para o pé, segundo um único estudo pequeno.',
+        '**A evidência apoia a abdução de quadril como parte de um programa mais amplo para os pés.** Ela não é um exercício isolado para dor no arco, mas preenche uma lacuna que os exercícios só para o pé deixam aberta. Páginas relacionadas: [exercícios para pé chato](/pt/exercicios-pe-chato/), [inversão do tornozelo com faixa](/pt/exercicios/inversao-tornozelo-faixa/), [exercício do pé curto](/pt/exercicios/pe-curto/).',
       ],
       cites: [CITE.zarali, CITE.brijwasi, CITE.cheng],
     },

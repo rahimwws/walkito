@@ -58,9 +58,17 @@ export const EX_TOWEL_SCRUNCH_ES: Guide = {
     {
       h2: '¿Qué músculos trabaja recoger la toalla?',
       paragraphs: [
-        'Recoger la toalla trabaja los flexores de los dedos: el flexor corto de los dedos (dentro del pie), el flexor corto del dedo gordo y el cuadrado plantar. Estos son músculos intrínsecos. Pero el ejercicio también usa los flexores extrínsecos de los dedos: el flexor largo de los dedos y el flexor largo del dedo gordo, que van desde la pierna, pasan por el tobillo y llegan a los dedos.',
+        'Recoger la toalla trabaja los flexores de los dedos:',
+        {
+          list: [
+            'El flexor corto de los dedos (dentro del pie).',
+            'El flexor corto del dedo gordo.',
+            'El cuadrado plantar.',
+          ],
+        },
+        'Estos son músculos intrínsecos. Pero el ejercicio también usa los flexores extrínsecos de los dedos: el flexor largo de los dedos y el flexor largo del dedo gordo, que van desde la pierna, pasan por el tobillo y llegan a los dedos.',
         'Un estudio de electromiografía de Jung y colegas (2011) comparó la actividad muscular al recoger la toalla y al hacer pie corto. Encontró que el abductor del dedo gordo, el músculo que más ayuda a sostener el arco, trabajó más de cuatro veces más durante el pie corto que al recoger la toalla. Recoger la toalla, en cambio, activó más los flexores extrínsecos de los dedos.',
-        'Esto quiere decir que recoger la toalla es un buen ejercicio para la fuerza de agarre de los dedos, pero es menos específico para los músculos intrínsecos del arco que el [ejercicio de pie corto](/es/ejercicios/pie-corto/).',
+        'Esto quiere decir que **recoger la toalla es un buen ejercicio para la fuerza de agarre de los dedos**, pero es menos específico para los músculos intrínsecos del arco que el [ejercicio de pie corto](/es/ejercicios/pie-corto/).',
       ],
       cites: [CITE.jung],
     },
@@ -78,7 +86,8 @@ export const EX_TOWEL_SCRUNCH_ES: Guide = {
       keyFact: 'En un estudio de 2020 con 41 personas (56 pies) con metatarsalgia, un programa de ocho semanas con recoger la toalla y levantar canicas estuvo seguido de menos dolor y más fuerza de agarre, sin grupo de control (Amaha y colegas, 2020).',
       paragraphs: [
         'Recoger la toalla les queda bien a quienes empiezan con ejercicios para el pie y quieren un punto de partida sencillo. También a quienes tienen poca fuerza de agarre en los dedos, porque el ejercicio entrena directamente la capacidad de doblar los dedos con carga.',
-        'Un estudio de 2020 de Amaha y colegas siguió a 41\u00A0personas (56\u00A0pies) con metatarsalgia primaria, dolor bajo la parte delantera de la planta del pie, durante un programa de ocho semanas de ejercicios de dedos que incluía recoger la toalla y levantar canicas. La fuerza de agarre de los dedos y el dolor mejoraron de antes a después del programa. No hubo grupo de control, así que parte del cambio podría deberse al tiempo o a la atención y no a los ejercicios en sí. La fuerza de agarre de los dedos también puede importar en adultos mayores con riesgo de caídas, porque los dedos ayudan al equilibrio al estar de pie y al caminar.',
+        'Un estudio de 2020 de Amaha y colegas siguió a 41\u00A0personas (56\u00A0pies) con metatarsalgia primaria, dolor bajo la parte delantera de la planta del pie, durante un programa de ocho semanas de ejercicios de dedos que incluía recoger la toalla y levantar canicas. La fuerza de agarre de los dedos y el dolor mejoraron de antes a después del programa. No hubo grupo de control, así que parte del cambio podría deberse al tiempo o a la atención y no a los ejercicios en sí.',
+        'La fuerza de agarre de los dedos también puede importar en adultos mayores con riesgo de caídas, porque los dedos ayudan al equilibrio al estar de pie y al caminar.',
         'Si tu meta principal es subir un arco plano, el [ejercicio de pie corto](/es/ejercicios/pie-corto/) y el [programa completo de ejercicios para pie plano](/es/ejercicios-pie-plano/) son más específicos. Si tu meta principal es la fuerza de agarre de los dedos y activar los músculos del pie en general, recoger la toalla te queda bien.',
       ],
       cites: [CITE.amaha],
@@ -86,10 +95,14 @@ export const EX_TOWEL_SCRUNCH_ES: Guide = {
     {
       h2: '¿Cuáles son los errores comunes al recoger la toalla?',
       paragraphs: [
-        'El error más común es levantar el talón del piso. Cuando el talón se levanta, la pantorrilla toma el control y los músculos del pie trabajan menos. Mantén el talón apoyado en cada repetición.',
-        'Otro error es jalar demasiado rápido. Un tirón rápido de la toalla usa el impulso en lugar de la contracción del músculo. Jala despacio y mantén la toalla recogida los cinco segundos completos antes de soltar.',
-        'Algunas personas agarran solo con el dedo gordo y se olvidan de los dedos pequeños. Intenta usar los cinco dedos juntos. Si al principio los dedos pequeños no responden, es normal. La coordinación mejora con la práctica.',
-        'Por último, no dejes que el pie se deslice de lado sobre la toalla. El jalón va derecho hacia atrás, de los dedos hacia el talón. Si la toalla se va hacia un lado, acomódala y concéntrate en usar todos los dedos por igual.',
+        {
+          list: [
+            '**El error más común es levantar el talón del piso.** Cuando el talón se levanta, la pantorrilla toma el control y los músculos del pie trabajan menos. Mantén el talón apoyado en cada repetición.',
+            '**Otro error es jalar demasiado rápido.** Un tirón rápido de la toalla usa el impulso en lugar de la contracción del músculo. Jala despacio y mantén la toalla recogida los cinco segundos completos antes de soltar.',
+            '**Algunas personas agarran solo con el dedo gordo y se olvidan de los dedos pequeños.** Intenta usar los cinco dedos juntos. Si al principio los dedos pequeños no responden, es normal. La coordinación mejora con la práctica.',
+            '**Por último, no dejes que el pie se deslice de lado sobre la toalla.** El jalón va derecho hacia atrás, de los dedos hacia el talón. Si la toalla se va hacia un lado, acomódala y concéntrate en usar todos los dedos por igual.',
+          ],
+        },
       ],
     },
   ],

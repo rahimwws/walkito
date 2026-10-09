@@ -40,18 +40,22 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
       paragraphs: [
         'La marche charge le fascia plantaire, l’épaisse bande de tissu sous le pied, à chaque pas. Chaque fois que le talon touche le sol et que le pied se déroule vers l’avant, le fascia s’étire et absorbe la force. Sur un pied en bonne santé, cela ne pose pas de problème. Mais quand le fascia est irrité ou que le mollet est trop raide pour absorber sa part, la charge se concentre à l’attache du talon.',
         'Résultat\u00A0: une douleur qui monte pendant ou après une marche, surtout si elle est plus longue que d’habitude. La recommandation de 2023 sur la douleur au talon cite deux schémas typiques de la fasciite plantaire\u00A0: la douleur aux premiers pas après le repos, et la douleur qui augmente avec une activité prolongée en charge. La marche est l’activité prolongée en charge la plus courante qui soit.',
-        'Un mollet raide joue un grand rôle. Dans une étude cas-témoins appariée de 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une dorsiflexion de cheville réduite avait l’odds ratio le plus élevé de tous les facteurs de risque mesurés. Quand la cheville ne plie pas assez, chaque pas demande au fascia de compenser.',
+        'Un mollet raide joue un grand rôle. Dans une étude cas-témoins appariée de 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une dorsiflexion de cheville réduite avait l’odds ratio le plus élevé de tous les facteurs de risque mesurés. **Quand la cheville ne plie pas assez, chaque pas demande au fascia de compenser.**',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
     {
       h2: 'Une douleur au talon après la marche, est-ce toujours une fasciite plantaire\u00A0?',
       paragraphs: [
-        'La fasciite plantaire est la cause la plus fréquente, mais ce n’est pas la seule. L’endroit de la douleur et le moment où elle apparaît aident à les distinguer.',
-        '**Amincissement du coussinet graisseux du talon.** Le coussinet graisseux sous l’os du talon amortit chaque pas. Quand il s’amincit ou se déplace, l’os encaisse plus directement les chocs. Une revue exploratoire de 2022 a noté que la douleur du coussinet graisseux est plutôt une douleur sourde et profonde au centre du talon, pire sur sol dur et pieds nus (Chang et coll., 2022). La douleur de la fasciite plantaire se situe en général à l’avant et à l’intérieur du talon. Celle du coussinet se situe juste sous le centre. Si marcher pieds nus sur du carrelage ou du béton est nettement pire qu’avec des chaussures amortissantes, l’amincissement du coussinet mérite d’être envisagé. Voir [syndrome du coussinet graisseux du talon](/fr/syndrome-coussinet-graisseux-talon/) pour en savoir plus.',
-        '**Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. Le tendon d’Achille peut être douloureux après une longue marche, surtout en montée. Si votre douleur est à l’arrière du talon plutôt que dessous, voir [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/).',
-        '**Fracture de fatigue du calcanéum.** Une douleur qui s’installe progressivement après une hausse de la distance ou de l’intensité de marche. Contrairement à la fasciite plantaire, la douleur d’une fracture de fatigue a tendance à monter avec l’activité et à peu se calmer au repos. Presser les côtés du talon peut reproduire la douleur. Si cela correspond à votre cas, consultez un professionnel de santé avant de faire travailler le pied.',
-        '**Douleur projetée depuis le bas du dos ou compression nerveuse.** Une douleur au talon accompagnée d’engourdissements, de fourmillements ou de brûlures peut évoquer un problème de nerf, pas un problème de charge des tissus. C’est une raison de consulter d’abord un professionnel de santé.',
+        'La fasciite plantaire est la cause la plus fréquente, mais ce n’est pas la seule. L’endroit de la douleur et le moment où elle apparaît aident à les distinguer\u00A0:',
+        {
+          list: [
+            '**Amincissement du coussinet graisseux du talon.** Le coussinet graisseux sous l’os du talon amortit chaque pas. Quand il s’amincit ou se déplace, l’os encaisse plus directement les chocs. Une revue exploratoire de 2022 a noté que la douleur du coussinet graisseux est plutôt une douleur sourde et profonde au centre du talon, pire sur sol dur et pieds nus (Chang et coll., 2022). La douleur de la fasciite plantaire se situe en général à l’avant et à l’intérieur du talon. Celle du coussinet se situe juste sous le centre. Si marcher pieds nus sur du carrelage ou du béton est nettement pire qu’avec des chaussures amortissantes, l’amincissement du coussinet mérite d’être envisagé. Voir [syndrome du coussinet graisseux du talon](/fr/syndrome-coussinet-graisseux-talon/) pour en savoir plus.',
+            '**Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. Le tendon d’Achille peut être douloureux après une longue marche, surtout en montée. Si votre douleur est à l’arrière du talon plutôt que dessous, voir [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/).',
+            '**Fracture de fatigue du calcanéum.** Une douleur qui s’installe progressivement après une hausse de la distance ou de l’intensité de marche. Contrairement à la fasciite plantaire, la douleur d’une fracture de fatigue a tendance à monter avec l’activité et à peu se calmer au repos. Presser les côtés du talon peut reproduire la douleur. Si cela correspond à votre cas, consultez un professionnel de santé avant de faire travailler le pied.',
+            '**Douleur projetée depuis le bas du dos ou compression nerveuse.** Une douleur au talon accompagnée d’engourdissements, de fourmillements ou de brûlures peut évoquer un problème de nerf, pas un problème de charge des tissus. C’est une raison de consulter d’abord un professionnel de santé.',
+          ],
+        },
       ],
       cites: [CITE.fatPadReview, CITE.achillesGuideline, CITE.patelStressFracture],
     },
@@ -59,7 +63,15 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
       h2: 'Qu’est-ce qui distingue la douleur après la marche de la douleur au réveil\u00A0?',
       paragraphs: [
         'La douleur au talon du matin et la douleur après la marche sont, dans la plupart des cas, deux faces du même problème. La douleur du matin vient du fascia qui se raidit et se raccourcit pendant la nuit, puis s’étire d’un coup quand vous vous levez. La douleur après la marche vient du fascia chargé de façon répétée pendant la marche\u00A0: le tissu vous dit qu’il en a assez.',
-        'La différence compte pour placer vos exercices. La douleur du matin répond le mieux à un étirement du fascia plantaire fait avant le premier pas. La douleur après la marche répond à la gestion de la charge\u00A0: marcher une distance que le pied supporte, l’augmenter progressivement, et utiliser les étirements et le travail du mollet pour relever le seuil. [Douleur au talon au réveil](/fr/douleur-talon-au-reveil/) détaille les étirements du matin et les attelles de nuit.',
+        'La différence compte pour placer vos exercices. La douleur du matin répond le mieux à un étirement du fascia plantaire fait avant le premier pas. La douleur après la marche répond à la gestion de la charge\u00A0:',
+        {
+          list: [
+            'Marcher une distance que le pied supporte.',
+            'L’augmenter progressivement.',
+            'Utiliser les étirements et le travail du mollet pour relever le seuil.',
+          ],
+        },
+        '[Douleur au talon au réveil](/fr/douleur-talon-au-reveil/) détaille les étirements du matin et les attelles de nuit.',
         'Si vous avez à la fois une douleur le matin et une douleur après la marche, c’est le schéma typique de la fasciite plantaire. Les exercices se recoupent. L’étirement du matin et les étirements du mollet aident dans les deux cas. Le renforcement du mollet augmente la capacité de toute la chaîne, pour que votre charge de marche quotidienne reste dans ce que les tissus peuvent encaisser.',
       ],
       cites: [CITE.guideline],
@@ -146,8 +158,15 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
       h2: 'Combien marcher quand le talon fait mal\u00A0?',
       paragraphs: [
         'Le but n’est pas d’arrêter de marcher. C’est de trouver la distance que votre talon supporte sans s’enflammer le lendemain matin, puis de construire à partir de là.',
-        'Une approche pratique\u00A0: marchez une distance qui garde la douleur du lendemain matin au niveau de votre base actuelle ou en dessous. Si votre note habituelle le matin est de 4 sur 10 et qu’une marche de 30\u00A0minutes la fait monter à 6 le lendemain matin, cette marche était de trop. Raccourcissez-la jusqu’à ce que la note du matin reste stable. Puis ajoutez cinq minutes chaque semaine ou toutes les deux semaines, tant que la douleur du matin ne grimpe pas.',
-        'C’est de la gestion de la charge, pas du repos. Le repos complet aide rarement en cas de fasciite plantaire. La recommandation conseille d’adapter l’activité, pas de devenir inactif. Marcher avec des chaussures qui soutiennent le pied sur une surface plus souple ménage davantage le fascia que marcher pieds nus sur du béton.',
+        'Une approche pratique\u00A0:',
+        {
+          list: [
+            'Marchez une distance qui garde la douleur du lendemain matin au niveau de votre base actuelle ou en dessous. Si votre note habituelle le matin est de 4 sur 10 et qu’une marche de 30\u00A0minutes la fait monter à 6 le lendemain matin, cette marche était de trop.',
+            'Raccourcissez-la jusqu’à ce que la note du matin reste stable.',
+            'Puis ajoutez cinq minutes chaque semaine ou toutes les deux semaines, tant que la douleur du matin ne grimpe pas.',
+          ],
+        },
+        '**C’est de la gestion de la charge, pas du repos.** Le repos complet aide rarement en cas de fasciite plantaire. La recommandation conseille d’adapter l’activité, pas de devenir inactif. Marcher avec des chaussures qui soutiennent le pied sur une surface plus souple ménage davantage le fascia que marcher pieds nus sur du béton.',
         'Si vous courez aussi, le même principe s’applique à une autre échelle. [Douleur au talon en course à pied](/heel-pain-runners/) (en anglais) détaille les pics de charge et les changements de kilométrage.',
       ],
       cites: [CITE.guideline],
@@ -157,7 +176,8 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
       keyFact: 'Dans des données de référence sur 566\u00A0adultes en bonne santé, le nombre moyen de montées sur pointe sur une jambe était d’environ 23 à 24\u00A0répétitions, un repère pour suivre l’endurance du mollet dans le temps (Hebert-Losier et coll., 2017).',
       paragraphs: [
         'Il n’y a pas de délai fixe. Une revue des données cliniques indique qu’environ 90\u00A0% des personnes atteintes de fasciite plantaire vont mieux avec des soins non chirurgicaux, souvent en quelques mois (Latt et coll., 2020). Dans un suivi plus long de 174\u00A0personnes, environ la moitié avait encore quelques symptômes à 5\u00A0ans, même si la plupart étaient alors légers (Hansen et coll., 2018).',
-        'Ce que vous pouvez mesurer plus tôt, c’est si les exercices font effet. La douleur du matin sur une échelle de 0 à 10 est le signal quotidien le plus clair. L’endurance du mollet, mesurée en comptant les montées sur pointe sur une jambe, suit la force au fil des semaines. Un repère souvent cité chez l’adulte est d’environ 23 à 24\u00A0répétitions en moyenne, d’après des données de référence sur 566\u00A0adultes en bonne santé (Hebert-Losier et coll., 2017). Ce qui compte, c’est que votre chiffre augmente, pas qu’il atteigne le repère.',
+        'Ce que vous pouvez mesurer plus tôt, c’est si les exercices font effet. La douleur du matin sur une échelle de 0 à 10 est le signal quotidien le plus clair.',
+        'L’endurance du mollet, mesurée en comptant les montées sur pointe sur une jambe, suit la force au fil des semaines. Un repère souvent cité chez l’adulte est d’environ 23 à 24\u00A0répétitions en moyenne, d’après des données de référence sur 566\u00A0adultes en bonne santé (Hebert-Losier et coll., 2017). **Ce qui compte, c’est que votre chiffre augmente, pas qu’il atteigne le repère.**',
         'Pour le délai global, voir [combien de temps dure une fasciite plantaire](/fr/combien-de-temps-dure-fasciite-plantaire/).',
       ],
       cites: [CITE.latt, CITE.hansen, CITE.hebertLosier],

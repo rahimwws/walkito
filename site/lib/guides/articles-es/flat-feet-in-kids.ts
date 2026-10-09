@@ -31,8 +31,9 @@ export const FLAT_FEET_KIDS_ES: Guide = {
       figure: { id: 'arches', caption: 'Los mismos huesos del pie con pie plano, arco típico y arco alto, vistos desde el lado interior.', alt: 'Tres pies vistos desde el lado interno sobre un piso plano: un pie plano con el arco apoyado en el piso, un arco típico con un pequeño espacio debajo y un arco alto con un gran espacio bajo el centro del pie.' },
       paragraphs: [
         'El pie plano es normal en bebés y niños pequeños, y común durante la primera infancia. El pie de un niño pequeño tiene una almohadilla de grasa debajo del arco, y los ligamentos (las bandas que unen los huesos) están flojos y elásticos. Cuando el niño se para, el arco baja hacia el piso. Eso es normal en un pie joven.',
-        'Las cifras lo dejan claro. En un estudio de 2006 en Viena, los investigadores escanearon los pies de 835\u00A0niños de 3 a 6\u00A0años. En total, el 44\u00A0% tenía pie plano flexible. Menos del 1\u00A0% tenía un pie plano que fuera un problema médico real. Uno de cada diez niños ya usaba soportes para el arco, y los autores consideraron que más del 90\u00A0% de ellos no los necesitaba. Una encuesta más antigua a 441\u00A0personas de 1 a 80\u00A0años llegó a la misma conclusión: el pie plano es lo habitual en bebés, es común en niños y sigue dentro de lo normal en adultos.',
-        'Así que si tu hijo de 2 o de 4\u00A0años tiene pie plano y corre feliz, eso es lo esperado.',
+        'Las cifras lo dejan claro. En un estudio de 2006 en Viena, los investigadores escanearon los pies de 835\u00A0niños de 3 a 6\u00A0años. En total, el 44\u00A0% tenía pie plano flexible. Menos del 1\u00A0% tenía un pie plano que fuera un problema médico real.',
+        'Uno de cada diez niños ya usaba soportes para el arco, y los autores consideraron que más del 90\u00A0% de ellos no los necesitaba. Una encuesta más antigua a 441\u00A0personas de 1 a 80\u00A0años llegó a la misma conclusión: el pie plano es lo habitual en bebés, es común en niños y sigue dentro de lo normal en adultos.',
+        'Así que si tu hijo de 2 o de 4\u00A0años tiene pie plano y corre feliz, **eso es lo esperado.**',
       ],
       cites: [CITE.pfeifferPreschool, CITE.staheliArch],
     },
@@ -41,8 +42,16 @@ export const FLAT_FEET_KIDS_ES: Guide = {
       keyFact: 'El pie plano bajó del 54\u00A0% en niños de 3\u00A0años al 24\u00A0% en niños de 6\u00A0años en un estudio con 835\u00A0niños (Pfeiffer y colegas, 2006).',
       paragraphs: [
         'La mayoría de los niños desarrollan un arco visible poco a poco entre los 3 y los 6\u00A0años más o menos, y algunos más tarde. En el estudio de Viena, el 54\u00A0% de los niños de 3\u00A0años tenía pie plano, frente al 24\u00A0% de los de 6\u00A0años. Los niños tenían pie plano con más frecuencia que las niñas, 52\u00A0% frente a 36\u00A0%, y su arco tendía a formarse más tarde. Los niños con sobrepeso u obesidad también tenían pie plano más seguido.',
-        'Algunos niños nunca desarrollan mucho arco, y muchas veces no pasa nada. Una revisión de 2023 de 12\u00A0estudios de población, con unas 16\u00A0000\u00A0personas de todas las edades, encontró pie plano en el 15,6\u00A0% en general. Los niños de 3 a 5\u00A0años y los de 11 a 17 tenían alrededor del doble de probabilidades de tener pie plano que otros grupos de edad. Muchos adultos con pie plano flexible no tienen ningún dolor. Si el pie plano cambia más adelante en la vida se explica en [¿el pie plano empeora con la edad?](/es/pie-plano-con-la-edad/)',
-        'No hay un cumpleaños exacto para el que deba aparecer el arco. Más que la edad, importa cómo se comporta el pie: si es flexible, si duele y si los dos pies se ven iguales.',
+        'Algunos niños nunca desarrollan mucho arco, y muchas veces no pasa nada. Una revisión de 2023 de 12\u00A0estudios de población, con unas 16\u00A0000\u00A0personas de todas las edades, encontró pie plano en el 15,6\u00A0% en general. Los niños de 3 a 5\u00A0años y los de 11 a 17 tenían alrededor del doble de probabilidades de tener pie plano que otros grupos de edad.',
+        'Muchos adultos con pie plano flexible no tienen ningún dolor. Si el pie plano cambia más adelante en la vida se explica en [¿el pie plano empeora con la edad?](/es/pie-plano-con-la-edad/)',
+        'No hay un cumpleaños exacto para el que deba aparecer el arco. **Más que la edad, importa cómo se comporta el pie:**',
+        {
+          list: [
+            'Si es flexible.',
+            'Si duele.',
+            'Si los dos pies se ven iguales.',
+          ],
+        },
       ],
       cites: [CITE.pfeifferPreschool, CITE.salinasTorres],
     },
@@ -64,8 +73,22 @@ export const FLAT_FEET_KIDS_ES: Guide = {
     {
       h2: '¿Cuándo preocuparse por el pie plano en un niño?',
       paragraphs: [
-        'Preocúpate por el pie plano en un niño cuando hay dolor, rigidez, una diferencia entre los dos pies o un problema en cómo se mueve el niño. El pie plano por sí solo, en un niño que corre y juega sin problemas, no es motivo de preocupación. Una ruta de atención de 2008 de la podóloga Angela Evans lo divide en tres grupos: el pie plano que duele necesita atención, el pie plano que se ve diferente pero no duele se vigila con el tiempo, y el pie plano que simplemente es parte del crecimiento solo necesita tranquilidad.',
-        'Vale la pena conocer por su nombre algunas causas específicas. Una **coalición tarsiana** es un puente de hueso o de tejido duro entre dos huesos de la parte trasera del pie. Los niños nacen con ella, pero suele empezar a doler al final de la infancia o en la adolescencia, muchas veces con un pie rígido y esguinces de tobillo repetidos. Un **tendón de Aquiles tenso** puede llevar el pie a una posición más plana y causar molestias. Y el pie plano puede ser parte de una condición más amplia que afecta los nervios, los músculos o las articulaciones, como la parálisis cerebral o la artritis juvenil (artritis que empieza en la infancia). Esos niños necesitan la atención de un especialista, sin importar el arco.',
+        'Preocúpate por el pie plano en un niño cuando hay dolor, rigidez, una diferencia entre los dos pies o un problema en cómo se mueve el niño. El pie plano por sí solo, en un niño que corre y juega sin problemas, no es motivo de preocupación. Una ruta de atención de 2008 de la podóloga Angela Evans lo divide en tres grupos:',
+        {
+          list: [
+            'El pie plano que duele necesita atención.',
+            'El pie plano que se ve diferente pero no duele se vigila con el tiempo.',
+            'El pie plano que simplemente es parte del crecimiento solo necesita tranquilidad.',
+          ],
+        },
+        'Vale la pena conocer por su nombre algunas causas específicas:',
+        {
+          list: [
+            'Una **coalición tarsiana** es un puente de hueso o de tejido duro entre dos huesos de la parte trasera del pie. Los niños nacen con ella, pero suele empezar a doler al final de la infancia o en la adolescencia, muchas veces con un pie rígido y esguinces de tobillo repetidos.',
+            'Un **tendón de Aquiles tenso** puede llevar el pie a una posición más plana y causar molestias.',
+            'El pie plano puede ser parte de una condición más amplia que afecta los nervios, los músculos o las articulaciones, como la parálisis cerebral o la artritis juvenil (artritis que empieza en la infancia). Esos niños necesitan la atención de un especialista, sin importar el arco.',
+          ],
+        },
       ],
       cites: [CITE.evansTrafficLight, CITE.harrisPediatricFlatfoot],
     },
@@ -73,10 +96,29 @@ export const FLAT_FEET_KIDS_ES: Guide = {
       h2: '¿Las plantillas o los zapatos especiales ayudan a los niños con pie plano?',
       keyFact: 'En un ensayo con 129\u00A0niños, los zapatos correctivos o las plantillas usados durante al menos tres años no cambiaron el pie plano flexible comparado con no usar plantillas (Wenger y colegas, 1989).',
       paragraphs: [
-        'Las plantillas y los zapatos especiales no hacen que se forme el arco de un niño. La prueba más clara es un ensayo de 1989 en un hospital infantil de Dallas. Los investigadores dividieron al azar a 129\u00A0niños con pie plano flexible en cuatro grupos: sin plantillas, zapatos ortopédicos correctivos, una talonera rígida o una plantilla de plástico moldeada a medida. Los niños las usaron durante al menos tres años, y 98 terminaron. Las radiografías mostraron que el arco mejoró en los cuatro grupos, incluidos los niños que no usaron nada, y no hubo una diferencia real entre ellos.',
-        'Un ensayo australiano de 2007 encontró lo mismo. Los 178\u00A0niños, de 7 a 11\u00A0años, se dividieron en tres grupos: plantillas a medida, plantillas compradas en tienda o ninguna. A los tres meses y al año, ninguna de las comparaciones mostró una diferencia real, tampoco en los niños que tenían dolor al principio.',
+        '**Las plantillas y los zapatos especiales no hacen que se forme el arco de un niño.** La prueba más clara es un ensayo de 1989 en un hospital infantil de Dallas. Los investigadores dividieron al azar a 129\u00A0niños con pie plano flexible en cuatro grupos:',
+        {
+          list: [
+            'Sin plantillas.',
+            'Zapatos ortopédicos correctivos.',
+            'Una talonera rígida.',
+            'Una plantilla de plástico moldeada a medida.',
+          ],
+        },
+        'Los niños las usaron durante al menos tres años, y 98 terminaron. Las radiografías mostraron que el arco mejoró en los cuatro grupos, incluidos los niños que no usaron nada, y no hubo una diferencia real entre ellos.',
+        'Un ensayo australiano de 2007 encontró lo mismo. Los 178\u00A0niños, de 7 a 11\u00A0años, se dividieron en tres grupos:',
+        {
+          list: [
+            'Plantillas a medida.',
+            'Plantillas compradas en tienda.',
+            'Ninguna.',
+          ],
+        },
+        'A los tres meses y al año, ninguna de las comparaciones mostró una diferencia real, tampoco en los niños que tenían dolor al principio.',
         'La revisión Cochrane de 2022 juntó la evidencia de los ensayos: 16\u00A0ensayos con 1058\u00A0niños. La certeza de la evidencia fue baja a muy baja. Su conclusión fue directa: en niños cuyo pie plano no duele, no hay evidencia que respalde las plantillas a medida, que son caras. En niños con artritis juvenil, las plantillas podrían ayudar con el dolor y la función.',
-        'Para el pie plano que sí duele, el panorama está menos claro. Un metaanálisis en red de 2026 (una revisión que compara muchas opciones a la vez) de 11\u00A0ensayos y 761\u00A0niños encontró que las plantillas comunes con soporte de arco bajaron más las puntuaciones de dolor que las plantillas planas, pero la certeza de ese resultado fue muy baja. Un ensayo grande del Reino Unido sobre plantillas para niños con pie plano doloroso, llamado OSTRICH, tuvo que detenerse antes de tiempo durante la pandemia de COVID-19. Con 134 de los 478\u00A0niños planeados, no pudo responder la pregunta. Para un niño con los pies adoloridos, un profesional de la salud igual podría sugerir una plantilla sencilla comprada en tienda para la comodidad, pero no va a formar un arco. Cómo se comparan las plantillas con el ejercicio se explica en [plantillas o ejercicios](/es/plantillas-o-ejercicios/).',
+        'Para el pie plano que sí duele, el panorama está menos claro. Un metaanálisis en red de 2026 (una revisión que compara muchas opciones a la vez) de 11\u00A0ensayos y 761\u00A0niños encontró que las plantillas comunes con soporte de arco bajaron más las puntuaciones de dolor que las plantillas planas, pero la certeza de ese resultado fue muy baja.',
+        'Un ensayo grande del Reino Unido sobre plantillas para niños con pie plano doloroso, llamado OSTRICH, tuvo que detenerse antes de tiempo durante la pandemia de COVID-19. Con 134 de los 478\u00A0niños planeados, no pudo responder la pregunta.',
+        'Para un niño con los pies adoloridos, un profesional de la salud igual podría sugerir una plantilla sencilla comprada en tienda para la comodidad, pero no va a formar un arco. Cómo se comparan las plantillas con el ejercicio se explica en [plantillas o ejercicios](/es/plantillas-o-ejercicios/).',
       ],
       cites: [CITE.wengerShoes, CITE.whitfordOrthoses, CITE.evansCochrane2022, CITE.linFlatfootNMA, CITE.cockayneOstrich],
       sourceNote: 'Lin y colegas, 2026: plantillas tradicionales frente a plantillas planas, diferencia de medias de −2,92\u00A0puntos (IC del 95\u00A0%: −3,73 a −2,11), certeza de la evidencia muy baja. Los ensayos de ejercicio de esa revisión no midieron el dolor.',
@@ -86,7 +128,8 @@ export const FLAT_FEET_KIDS_ES: Guide = {
       paragraphs: [
         'Los ejercicios de pie podrían ayudar a los niños cuyo pie plano duele o se cansa fácil, pero los ensayos son pequeños y sus resultados, mixtos. Una revisión de 2024 analizó 11\u00A0ensayos con 419\u00A0niños de 6 a 14\u00A0años. Encontró que los programas de ejercicio mejoraron los síntomas y la función del pie, y que los ejercicios para los músculos pequeños dentro del pie funcionaron mejor. Los ensayos variaron mucho en ejercicios, pruebas y duración, y la revisión sugirió al menos unos dos meses.',
         'Un ensayo turco de 2025 con 36\u00A0niños de 4 a 7\u00A0años comparó dos programas de ejercicio durante unos dos meses. Los dos grupos mejoraron en las medidas del arco y en el equilibrio, y el programa que sumaba trabajo de los músculos de la parte baja de la pierna funcionó mejor. No hubo un grupo sin ejercicio, así que no se puede saber cuánto del cambio fue crecimiento normal.',
-        'En entrevistas del ensayo OSTRICH, casi ningún niño disfrutaba sus ejercicios, y muchos no los siguieron haciendo. Un niño sin dolor con pie plano flexible no necesita ningún ejercicio. Si a tu hijo le duelen los pies, un fisioterapeuta o un podólogo puede armar un programa. Las ideas de abajo son versiones suaves, en forma de juego, de movimientos usados en esos ensayos. Las cantidades son sugerencias prudentes para empezar con niños, no dosis probadas en los ensayos, ni las dosis para adultos que usa Walkito.',
+        'En entrevistas del ensayo OSTRICH, casi ningún niño disfrutaba sus ejercicios, y muchos no los siguieron haciendo. **Un niño sin dolor con pie plano flexible no necesita ningún ejercicio.** Si a tu hijo le duelen los pies, un fisioterapeuta o un podólogo puede armar un programa.',
+        'Las ideas de abajo son versiones suaves, en forma de juego, de movimientos usados en esos ensayos. Las cantidades son sugerencias prudentes para empezar con niños, no dosis probadas en los ensayos, ni las dosis para adultos que usa Walkito.',
       ],
       exercises: [
         {
@@ -132,16 +175,17 @@ export const FLAT_FEET_KIDS_ES: Guide = {
       h2: '¿Andar descalzo o el peso corporal afectan el arco de un niño?',
       keyFact: 'En una encuesta a 2300\u00A0niños en la India, el 8,6\u00A0% de los que usaban zapatos tenía pie plano, frente al 2,8\u00A0% de los que no usaban (Rao y Joseph, 1992).',
       paragraphs: [
-        'Jugar descalzo y tener un peso corporal dentro de lo habitual van de la mano con menos pie plano, aunque ninguna de las dos cosas se ha probado como forma de cambiar el pie plano. En una encuesta de 1992 a 2300\u00A0niños de 4 a 13\u00A0años en la India, el 8,6\u00A0% de los niños que usaban zapatos tenía pie plano, frente al 2,8\u00A0% de los que andaban descalzos. El pie plano era más común en los niños que usaban zapatos cerrados y menos común en los que no usaban zapatos. Fue una encuesta en un solo momento, así que muestra una relación, no una prueba de que los zapatos causaran el pie plano.',
+        'Jugar descalzo y tener un peso corporal dentro de lo habitual van de la mano con menos pie plano, aunque ninguna de las dos cosas se ha probado como forma de cambiar el pie plano. En una encuesta de 1992 a 2300\u00A0niños de 4 a 13\u00A0años en la India, el 8,6\u00A0% de los niños que usaban zapatos tenía pie plano, frente al 2,8\u00A0% de los que andaban descalzos.',
+        'El pie plano era más común en los niños que usaban zapatos cerrados y menos común en los que no usaban zapatos. Fue una encuesta en un solo momento, así que muestra una relación, no una prueba de que los zapatos causaran el pie plano.',
         'El peso muestra una relación parecida. Una revisión de 2021 de 73\u00A0estudios con más de 1,7\u00A0millones de niños y adolescentes encontró que los que tenían sobrepeso u obesidad tenían alrededor de 1,5\u00A0veces más probabilidades de tener pie plano. La mayoría también fueron fotografías de un solo momento.',
-        'Dejar que un niño ande descalzo en superficies seguras en casa, en el pasto o en la arena les da trabajo a los músculos del pie. Los zapatos deben quedar bien y doblarse a la altura de los dedos. No hacen falta zapatos «correctivos» rígidos. Para saber más sobre zapatos flexibles de suela delgada, mira [zapatos barefoot](/es/zapatos-barefoot/).',
+        'Dejar que un niño ande descalzo en superficies seguras en casa, en el pasto o en la arena les da trabajo a los músculos del pie. Los zapatos deben quedar bien y doblarse a la altura de los dedos. **No hacen falta zapatos «correctivos» rígidos.** Para saber más sobre zapatos flexibles de suela delgada, mira [zapatos barefoot](/es/zapatos-barefoot/).',
       ],
       cites: [CITE.raoFootwear, CITE.molinaGarciaObesity],
     },
     {
       h2: '¿Mi hijo tendrá problemas en los pies de adulto?',
       paragraphs: [
-        'La mayoría de los niños con pie plano flexible y sin dolor llegan a la edad adulta sin problemas en los pies. La revisión Cochrane de 2022 llegó a decir que lo que se sabe sobre cómo se desarrollan los pies de los niños deja atrás la mayoría de las preocupaciones por el pie plano, y que el dinero para investigar debería ir más bien a los niños con problemas reales de los pies. La encuesta de 1987 a 441\u00A0personas encontró que el pie plano de los adultos seguía dentro de lo normal.',
+        '**La mayoría de los niños con pie plano flexible y sin dolor llegan a la edad adulta sin problemas en los pies.** La revisión Cochrane de 2022 llegó a decir que lo que se sabe sobre cómo se desarrollan los pies de los niños deja atrás la mayoría de las preocupaciones por el pie plano, y que el dinero para investigar debería ir más bien a los niños con problemas reales de los pies. La encuesta de 1987 a 441\u00A0personas encontró que el pie plano de los adultos seguía dentro de lo normal.',
         'Aquí hay un vacío, y hay que decirlo. Ningún ensayo ha seguido a un grupo grande de niños con pie plano sin dolor hasta la mediana edad para ver quién tiene dolor más adelante. Algunos adultos con pie plano sí tienen dolor de arco, de talón o de rodilla, y la [guía de pie plano](/es/pie-plano/) explica qué les ayuda.',
         'Muchos papás y mamás que buscan esto también tienen pie plano. Si a ti te duelen los pies al final del día, esa es una pregunta aparte de la de tu hijo. Walkito es una app de ejercicios para adultos con dolor de talón, de arco y de piernas, y su plan para el pie plano está hecho para pies adultos, no para los de los niños.',
       ],

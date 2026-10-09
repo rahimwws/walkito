@@ -30,14 +30,15 @@ export const EX_ECCENTRIC_HEEL_DROPS_DE: Guide = {
       h2: 'Was ist exzentrisches Fersenabsenken?',
       paragraphs: [
         'Bei einer exzentrischen Muskelarbeit wird der Muskel unter Last länger. Beim Fersenabsenken wird die Wade länger, während du die Ferse unter die Stufe senkst. Dieses kontrollierte Absenken baut über Wochen die Belastbarkeit der Sehne auf. Die Aufwärtsphase machst du auf beiden Füßen, damit die betroffene Seite nicht konzentrisch arbeiten muss.',
-        'Am häufigsten wird Fersenabsenken mit Wadendehnen verwechselt. Bei einer Dehnung hältst du die untere Position. Beim Fersenabsenken bewegst du dich langsam durch sie hindurch, und der Muskel arbeitet den ganzen Weg. Wenn du unten hältst wie bei einer Dehnung, fällt der Belastungsreiz weg, der die Übung wirksam macht. Der Nutzen liegt im langsamen, kontrollierten Absenken.',
+        'Am häufigsten wird Fersenabsenken mit Wadendehnen verwechselt. Bei einer Dehnung hältst du die untere Position. Beim Fersenabsenken bewegst du dich langsam durch sie hindurch, und der Muskel arbeitet den ganzen Weg. Wenn du unten hältst wie bei einer Dehnung, fällt der Belastungsreiz weg, der die Übung wirksam macht. **Der Nutzen liegt im langsamen, kontrollierten Absenken.**',
       ],
       cites: [CITE.alfredson],
     },
     {
       h2: 'Wie geht exzentrisches Fersenabsenken?',
       paragraphs: [
-        'Stell dich mit den Fußballen auf die Kante einer Stufe, die Fersen ragen über die Kante. Komm auf beiden Füßen hoch. Verlager dein Gewicht auf das Arbeitsbein. Senk diese Ferse langsam ab, über etwa drei Sekunden, und lass sie unter die Stufe sinken. Das Knie bleibt gestreckt. Geh mit beiden Füßen wieder nach oben.',
+        'Stell dich mit den Fußballen auf die Kante einer Stufe, die Fersen ragen über die Kante. Komm auf beiden Füßen hoch. Verlager dein Gewicht auf das Arbeitsbein.',
+        'Senk diese Ferse langsam ab, über etwa drei Sekunden, und lass sie unter die Stufe sinken. Das Knie bleibt gestreckt. Geh mit beiden Füßen wieder nach oben.',
         'Fersenabsenken mit gestrecktem Knie zielt auf den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel. Alfredson verschrieb auch eine Variante mit gebeugtem Knie für den Soleus, den tieferen Wadenmuskel. Die Variante mit gebeugtem Knie ist dieselbe Bewegung, nur ist das Knie beim Absenken etwa 30 bis 45\u00A0Grad gebeugt.',
       ],
       exercises: [
@@ -89,17 +90,29 @@ export const EX_ECCENTRIC_HEEL_DROPS_DE: Guide = {
       paragraphs: [
         'Eine Tendinopathie im Mittelteil der Achillessehne sitzt im Körper der Sehne, meist 2 bis 6\u00A0Zentimeter über dem Fersenbein. Normales exzentrisches Absenken über eine Stufenkante passt hier.',
         'Eine Ansatz-Tendinopathie der Achillessehne ist Schmerz genau dort, wo die Sehne am Knochen ansetzt. In einer Pilotstudie von 2008 mit 27\u00A0Personen mit lange bestehenden Schmerzen am Ansatz brachte ein angepasstes Protokoll mit exzentrischer Belastung nur auf Bodenhöhe, ohne Absenken unter die Neutralstellung, in 67\u00A0% der Fälle gute Ergebnisse. Eine tiefe Dorsalflexion drückt die Sehne gegen das Fersenbein, deshalb ist das normale tiefe Absenken bei Schmerzen am Ansatz kontraproduktiv.',
-        'Wenn dein Schmerz direkt hinten am Fersenbein sitzt, mach jedes Fersenabsenken auf dem Boden. Geh nicht unter die Stufenkante. Dehn nicht aggressiv. Das ist die Anpassung, die in Programmen für die Achillessehne am häufigsten fehlt. Die ganze Seite zum Beschwerdebild findest du unter [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
+        'Wenn dein Schmerz direkt hinten am Fersenbein sitzt:',
+        {
+          list: [
+            'Mach jedes Fersenabsenken auf dem Boden.',
+            'Geh nicht unter die Stufenkante.',
+            'Dehn nicht aggressiv.',
+          ],
+        },
+        'Das ist die Anpassung, die in Programmen für die Achillessehne am häufigsten fehlt. Die ganze Seite zum Beschwerdebild findest du unter [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
       ],
       cites: [CITE.jonsson, CITE.achillesGuideline],
     },
     {
       h2: 'Was sind die häufigsten Fehler beim exzentrischen Fersenabsenken?',
       paragraphs: [
-        'Unten halten wie bei einer Dehnung. Der Nutzen liegt im langsamen Absenken, nicht darin, unten zu hängen. Senk dich über drei Sekunden ab und geh dann sofort mit beiden Füßen wieder hoch.',
-        'Zu tief absenken. Die Ferse sollte bis zu ihrem natürlichen Umfang unter die Stufe sinken. Sie tiefer zu zwingen oder den Fuß nach innen oder außen zu kippen, um mehr Umfang zu bekommen, belastet die Sehnen an der Innen- oder Außenseite des Sprunggelenks. Drei bis fünf Zentimeter unter der Stufe reichen.',
-        'Zu schnell sein. Tempo nimmt die exzentrische Last weg, auf der die Übung aufbaut. Wenn du das Absenken nicht über etwa drei Sekunden kontrollieren kannst, geh zuerst zu einer beidbeinigen Variante zurück.',
-        'Die Variante mit gebeugtem Knie auslassen. Das Absenken mit gestrecktem Knie zielt auf den Gastrocnemius. Die Variante mit gebeugtem Knie zielt auf den Soleus. Beide Muskeln tragen zur Achillessehne bei. Das ursprüngliche Protokoll enthält beide.',
+        {
+          list: [
+            '**Unten halten wie bei einer Dehnung.** Der Nutzen liegt im langsamen Absenken, nicht darin, unten zu hängen. Senk dich über drei Sekunden ab und geh dann sofort mit beiden Füßen wieder hoch.',
+            '**Zu tief absenken.** Die Ferse sollte bis zu ihrem natürlichen Umfang unter die Stufe sinken. Sie tiefer zu zwingen oder den Fuß nach innen oder außen zu kippen, um mehr Umfang zu bekommen, belastet die Sehnen an der Innen- oder Außenseite des Sprunggelenks. Drei bis fünf Zentimeter unter der Stufe reichen.',
+            '**Zu schnell sein.** Tempo nimmt die exzentrische Last weg, auf der die Übung aufbaut. Wenn du das Absenken nicht über etwa drei Sekunden kontrollieren kannst, geh zuerst zu einer beidbeinigen Variante zurück.',
+            '**Die Variante mit gebeugtem Knie auslassen.** Das Absenken mit gestrecktem Knie zielt auf den Gastrocnemius. Die Variante mit gebeugtem Knie zielt auf den Soleus. Beide Muskeln tragen zur Achillessehne bei. Das ursprüngliche Protokoll enthält beide.',
+          ],
+        },
       ],
     },
     {

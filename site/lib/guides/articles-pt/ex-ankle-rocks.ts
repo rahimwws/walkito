@@ -32,7 +32,7 @@ export const EX_ANKLE_ROCKS_PT: Guide = {
       paragraphs: [
         'Fique com uma perna à frente e a outra atrás, com as mãos em uma parede ou no batente da porta para se equilibrar. Com o calcanhar da frente apoiado no chão, leve devagar o joelho da frente para a frente, por cima dos dedos. Deixe o joelho ir o mais longe que conseguir enquanto o calcanhar fica no chão. Depois volte para o início. Isso é uma repetição.',
         'O movimento é lento e controlado. Você não está quicando. Cada balanço leva uns dois segundos para a frente e dois segundos para trás. A perna de trás serve só para o equilíbrio. Todo o trabalho do tornozelo acontece na perna da frente.',
-        'Mantenha o pé da frente apontando reto para a frente. Se o pé gira para fora, o tornozelo acha um atalho e você perde a amplitude que está tentando ganhar.',
+        '**Mantenha o pé da frente apontando reto para a frente.** Se o pé gira para fora, o tornozelo acha um atalho e você perde a amplitude que está tentando ganhar.',
       ],
       exercises: [
         {
@@ -57,8 +57,15 @@ export const EX_ANKLE_ROCKS_PT: Guide = {
       h2: 'Por que a mobilidade do tornozelo importa para a dor no calcanhar?',
       keyFact: 'Em um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a dorsiflexão limitada do tornozelo foi um fator de risco mais forte que o IMC ou o tempo em pé, com razão de chances de 23,3 (Riddle e colegas, 2003).',
       paragraphs: [
-        'A dorsiflexão do tornozelo é o quanto o pé consegue dobrar para cima, em direção à canela, enquanto o calcanhar fica no chão. Todo passo que você dá precisa de um pouco de dorsiflexão. Quando o tornozelo não dobra o bastante, o corpo compensa. O pé pode girar para dentro, a panturrilha leva mais esforço e a fáscia plantar absorve forças para as quais não foi feita.',
-        'No estudo caso-controle de Riddle de 2003, a dorsiflexão reduzida do tornozelo foi a variável com o maior efeito independente, com razão de chances de 23,3 para fascite plantar. Foi mais forte que o IMC, o tempo em pé ou a distância corrida. Uma panturrilha tensa, especificamente o gastrocnêmio, estava presente em 52 a 60\u00A0por cento de 254\u00A0pessoas com fascite plantar em outra revisão.',
+        'A dorsiflexão do tornozelo é o quanto o pé consegue dobrar para cima, em direção à canela, enquanto o calcanhar fica no chão. Todo passo que você dá precisa de um pouco de dorsiflexão. Quando o tornozelo não dobra o bastante, o corpo compensa:',
+        {
+          list: [
+            'O pé pode girar para dentro.',
+            'A panturrilha leva mais esforço.',
+            'A fáscia plantar absorve forças para as quais não foi feita.',
+          ],
+        },
+        'No estudo caso-controle de Riddle de 2003, **a dorsiflexão reduzida do tornozelo foi a variável com o maior efeito independente**, com razão de chances de 23,3 para fascite plantar. Foi mais forte que o IMC, o tempo em pé ou a distância corrida. Uma panturrilha tensa, especificamente o gastrocnêmio, estava presente em 52 a 60\u00A0por cento de 254\u00A0pessoas com fascite plantar em outra revisão.',
         'Alongar a panturrilha de forma passiva (como no [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) e no [alongamento do sóleo](/pt/exercicios/alongamento-soleo/)) atua sobre um lado do problema: o comprimento do músculo. O balanço do tornozelo atua sobre o outro lado: o controle ativo no fim da amplitude. Levar o joelho por cima dos dedos com o peso do corpo ensina o tornozelo a usar a amplitude que tem, e não só alcançá-la de forma passiva.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -68,14 +75,15 @@ export const EX_ANKLE_ROCKS_PT: Guide = {
       paragraphs: [
         'O [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) é uma posição parada. Você inclina para a parede e espera o músculo alongar. A perna de trás fica esticada, o que trabalha o gastrocnêmio. O [alongamento do sóleo](/pt/exercicios/alongamento-soleo/) faz o mesmo com o joelho dobrado.',
         'O balanço do tornozelo é um movimento ativo e repetido. Você leva o joelho para a frente, volta, leva de novo. Você coloca carga no tornozelo ao longo da amplitude em vez de ficar parado no fim dela. O balanço do tornozelo desenvolve a capacidade de usar a dorsiflexão com carga, que é o que andar e correr realmente exigem.',
-        'Os dois são úteis. O alongamento abre a amplitude. O balanço do tornozelo ensina você a usá-la. A diretriz dá ao alongamento de panturrilha o grau A. O balanço do tornozelo faz parte do trabalho de mobilidade que o Walkito coloca junto com esses alongamentos.',
+        'Os dois são úteis. **O alongamento abre a amplitude. O balanço do tornozelo ensina você a usá-la.** A diretriz dá ao alongamento de panturrilha o grau A. O balanço do tornozelo faz parte do trabalho de mobilidade que o Walkito coloca junto com esses alongamentos.',
       ],
       cites: [CITE.guideline],
     },
     {
       h2: 'O teste do joelho na parede e como ele se conecta',
       paragraphs: [
-        'O teste do joelho na parede, também chamado de teste de avanço com carga, é um jeito simples de medir a dorsiflexão do tornozelo. Você fica de frente para uma parede, com um pé alguns centímetros para trás, e leva o joelho para a frente até encostar na parede. Se o calcanhar levantar antes de o joelho chegar na parede, aproxime o pé. A distância do dedão até a parede no ponto em que o joelho mal encosta, com o calcanhar ainda apoiado, é o seu resultado.',
+        'O teste do joelho na parede, também chamado de teste de avanço com carga, é um jeito simples de medir a dorsiflexão do tornozelo.',
+        'Você fica de frente para uma parede, com um pé alguns centímetros para trás, e leva o joelho para a frente até encostar na parede. Se o calcanhar levantar antes de o joelho chegar na parede, aproxime o pé. A distância do dedão até a parede no ponto em que o joelho mal encosta, com o calcanhar ainda apoiado, é o seu resultado.',
         'O Walkito inclui um exercício de joelho na parede no app (2\u00A0vezes de 30\u00A0segundos, cada perna). Acompanhar essa distância ao longo das semanas mostra se a amplitude do seu tornozelo está melhorando de verdade. Um aumento de um ou dois centímetros em algumas semanas é significativo.',
         'O balanço do tornozelo e o exercício de joelho na parede trabalham a mesma amplitude de ângulos diferentes. O balanço é repetição ao longo da amplitude. O joelho na parede é uma carga sustentada no fim da amplitude. Os dois ajudam. O Walkito coloca os dois nos dias de mobilidade.',
       ],
@@ -83,10 +91,14 @@ export const EX_ANKLE_ROCKS_PT: Guide = {
     {
       h2: 'Quais são os erros comuns no balanço do tornozelo?',
       paragraphs: [
-        'Deixar o calcanhar levantar. O calcanhar precisa ficar apoiado em todas as repetições. Se ele levanta, você passou do fim da sua amplitude e o exercício perde o sentido. Vá só até onde o calcanhar deixa.',
-        'Virar o pé para fora. O pé deve apontar reto para a frente. Girar para fora deixa o tornozelo desviar do ponto tenso. Mantenha o segundo dedo apontado para a parede.',
-        'Ir rápido demais. Quicar ou correr com as repetições não desenvolve uma amplitude controlada. Dois segundos para a frente, dois para trás. Deixe o tornozelo sentir o fim da amplitude em cada repetição.',
-        'Esquecer a perna de trás. Algumas pessoas tentam fazer o balanço do tornozelo com as duas pernas ao mesmo tempo, só agachando. Isso divide a carga e diminui a amplitude que o tornozelo da frente precisa percorrer. Use uma perna à frente da outra para um tornozelo fazer o trabalho.',
+        {
+          list: [
+            '**Deixar o calcanhar levantar.** O calcanhar precisa ficar apoiado em todas as repetições. Se ele levanta, você passou do fim da sua amplitude e o exercício perde o sentido. Vá só até onde o calcanhar deixa.',
+            '**Virar o pé para fora.** O pé deve apontar reto para a frente. Girar para fora deixa o tornozelo desviar do ponto tenso. Mantenha o segundo dedo apontado para a parede.',
+            '**Ir rápido demais.** Quicar ou correr com as repetições não desenvolve uma amplitude controlada. Dois segundos para a frente, dois para trás. Deixe o tornozelo sentir o fim da amplitude em cada repetição.',
+            '**Esquecer a perna de trás.** Algumas pessoas tentam fazer o balanço do tornozelo com as duas pernas ao mesmo tempo, só agachando. Isso divide a carga e diminui a amplitude que o tornozelo da frente precisa percorrer. Use uma perna à frente da outra para um tornozelo fazer o trabalho.',
+          ],
+        },
       ],
     },
     {

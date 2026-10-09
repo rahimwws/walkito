@@ -35,8 +35,9 @@ export const CALF_RAISES_FR: Guide = {
       keyFact: 'Dans un essai sur 48\u00A0personnes, le groupe des montées sur pointes avait un score meilleur de 29\u00A0points au Foot Function Index à trois mois, même si les deux groupes s’étaient rejoints à douze mois (Rathleff et coll., 2015).',
       paragraphs: [
         'Les montées sur pointes sont utiles en cas de fasciite plantaire, car elles renforcent la chaîne mollet-tendon d’Achille-fascia, qui absorbe la charge chaque fois que le talon touche le sol.',
-        'Le seul essai randomisé à avoir testé directement cet exercice dans la fasciite plantaire est celui de Rathleff, en 2015. Dans cet essai, 48\u00A0personnes avec une fasciite plantaire confirmée à l’échographie ont été réparties en deux groupes. Les deux portaient des semelles. Un groupe faisait une montée sur pointes lente, avec charge, une serviette roulée sous les orteils. L’autre étirait le fascia plantaire. À trois mois, le groupe des montées sur pointes avait un score meilleur de 29\u00A0points au Foot Function Index. À douze mois, les deux groupes s’étaient rejoints.',
-        'Les montées sur pointes ont donc accéléré l’amélioration. Elles ne l’ont pas rendue plus grande à long terme. La recommandation clinique de 2023 donne au renforcement musculaire un B et aux étirements un A. Elle recommande les deux. Rien dans les données ne suggère de choisir l’un et de laisser tomber l’autre.',
+        'Le seul essai randomisé à avoir testé directement cet exercice dans la fasciite plantaire est celui de Rathleff, en 2015. Dans cet essai, 48\u00A0personnes avec une fasciite plantaire confirmée à l’échographie ont été réparties en deux groupes. Les deux portaient des semelles. Un groupe faisait une montée sur pointes lente, avec charge, une serviette roulée sous les orteils. L’autre étirait le fascia plantaire.',
+        'À trois mois, le groupe des montées sur pointes avait un score meilleur de 29\u00A0points au Foot Function Index. À douze mois, les deux groupes s’étaient rejoints.',
+        '**Les montées sur pointes ont donc accéléré l’amélioration.** Elles ne l’ont pas rendue plus grande à long terme. La recommandation clinique de 2023 donne au renforcement musculaire un B et aux étirements un A. Elle recommande les deux. Rien dans les données ne suggère de choisir l’un et de laisser tomber l’autre.',
       ],
       sourceNote:
         'Rathleff 2015\u00A0: Foot Function Index inférieur de 29\u00A0points dans le groupe des montées sur pointes à 3\u00A0mois (IC à 95\u00A0% 6-52, p = 0,016). À 12\u00A0mois, 22 contre 16, une différence non significative.',
@@ -45,8 +46,9 @@ export const CALF_RAISES_FR: Guide = {
     {
       h2: 'Comment faire une montée sur pointes avec serviette pour la fasciite plantaire\u00A0?',
       paragraphs: [
-        'La montée sur pointes avec serviette est l’exercice de l’essai de Rathleff. C’est une montée sur pointes sur une jambe, sur une marche, avec une serviette roulée sous les orteils. En haut du mouvement, la serviette tire les orteils vers le haut, ce qui active le mécanisme de treuil\u00A0: le fascia plantaire se tend quand le gros orteil se relève. Sans la serviette, vous entraînez le mollet mais vous chargez beaucoup moins le fascia.',
-        'Tenez-vous sur un pied au bord d’une marche, une petite serviette roulée sous les cinq orteils. L’avant du pied reste sur la marche. Tenez-vous à un mur ou à une rampe pour l’équilibre. Montez en trois secondes, tenez deux secondes en haut, et redescendez en trois secondes. Laissez le talon descendre un peu sous le niveau de la marche à la descente. Dans l’essai, les participants ajoutaient du poids avec un sac à dos une fois que le poids du corps devenait trop facile.',
+        'La montée sur pointes avec serviette est l’exercice de l’essai de Rathleff. C’est une montée sur pointes sur une jambe, sur une marche, avec une serviette roulée sous les orteils. En haut du mouvement, la serviette tire les orteils vers le haut, ce qui active le mécanisme de treuil\u00A0: le fascia plantaire se tend quand le gros orteil se relève. **Sans la serviette, vous entraînez le mollet mais vous chargez beaucoup moins le fascia.**',
+        'Tenez-vous sur un pied au bord d’une marche, une petite serviette roulée sous les cinq orteils. L’avant du pied reste sur la marche. Tenez-vous à un mur ou à une rampe pour l’équilibre.',
+        'Montez en trois secondes, tenez deux secondes en haut, et redescendez en trois secondes. Laissez le talon descendre un peu sous le niveau de la marche à la descente. Dans l’essai, les participants ajoutaient du poids avec un sac à dos une fois que le poids du corps devenait trop facile.',
         'Commencez sur les deux pieds si les montées sur une jambe sont trop dures pour l’instant. Les montées sur pointes sur les deux pieds, au sol, sans marche, sont le point de départ de la progression du mollet. La serviette et la marche arrivent plus tard, une fois que les montées sur pointes debout vous ont paru faciles deux séances de suite.',
       ],
       exercises: [
@@ -144,8 +146,20 @@ export const CALF_RAISES_FR: Guide = {
     {
       h2: 'Par quoi Walkito vous fait-il commencer\u00A0?',
       paragraphs: [
-        'Walkito ne vous lance pas dans le protocole de Rathleff dès le premier jour. L’application commence par les montées sur pointes assis (3\u00A0séries de 10, deux pieds), passe aux montées debout sur deux pieds, puis au maintien sur pointes, et seulement ensuite à la montée sur une jambe avec serviette. Chaque étape s’ouvre une fois que deux séances au niveau actuel vous ont paru faciles. Cette échelle est le rythme propre à Walkito, pas un protocole publié. Elle existe parce que la plupart des gens qui commencent un programme d’exercices pour une douleur au talon ne sont pas prêts pour une montée sur une jambe avec charge dès la première séance.',
-        'Dans l’application, la progression du mollet suit cet ordre\u00A0: montées sur pointes assis, montées sur pointes sur deux pieds, maintien sur pointes, montées sur pointes avec serviette, descentes du talon (une descente excentrique depuis une marche) et sauts pogo. La montée avec serviette est le niveau 4 sur 6. Atteindre l’objectif du mollet, 25\u00A0montées sur pointes sur une jambe, ne met pas fin au travail du mollet. Il passe en entretien, et un nouvel objectif prend sa place.',
+        'Walkito ne vous lance pas dans le protocole de Rathleff dès le premier jour. L’application commence par les montées sur pointes assis (3\u00A0séries de 10, deux pieds), passe aux montées debout sur deux pieds, puis au maintien sur pointes, et seulement ensuite à la montée sur une jambe avec serviette. Chaque étape s’ouvre une fois que deux séances au niveau actuel vous ont paru faciles.',
+        'Cette échelle est le rythme propre à Walkito, pas un protocole publié. Elle existe parce que la plupart des gens qui commencent un programme d’exercices pour une douleur au talon ne sont pas prêts pour une montée sur une jambe avec charge dès la première séance.',
+        'Dans l’application, la progression du mollet suit cet ordre\u00A0:',
+        {
+          list: [
+            'Montées sur pointes assis.',
+            'Montées sur pointes sur deux pieds.',
+            'Maintien sur pointes.',
+            'Montées sur pointes avec serviette.',
+            'Descentes du talon (une descente excentrique depuis une marche).',
+            'Sauts pogo.',
+          ],
+        },
+        'La montée avec serviette est le niveau 4 sur 6. Atteindre l’objectif du mollet, 25\u00A0montées sur pointes sur une jambe, ne met pas fin au travail du mollet. Il passe en entretien, et un nouvel objectif prend sa place.',
       ],
       cites: [CITE.rathleff],
     },
@@ -154,8 +168,9 @@ export const CALF_RAISES_FR: Guide = {
       figure: { id: 'calf', caption: 'Les deux muscles du mollet, le gastrocnémien et le soléaire, se rejoignent dans le tendon d’Achille, qui s’attache à l’os du talon.', alt: 'Vues de côté et de dos d’une jambe montrant le gastrocnémien et le soléaire qui s’affinent jusqu’au tendon d’Achille, au-dessus du talon.' },
       keyFact: 'Dans une série de 254\u00A0personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction limitée au gastrocnémien, et 23 à 30\u00A0% de plus une rétraction combinée du gastrocnémien et du soléaire (Patel et coll., 2011).',
       paragraphs: [
-        'Un mollet raide tire sur le talon par le tendon d’Achille, et le fascia plantaire partage la charge à l’autre bout. Quand la cheville ne peut pas assez se plier, chaque pas met plus de tension sur le fascia.',
-        'Dans une série de 254\u00A0personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien, le muscle superficiel du mollet, et 23 à 30\u00A0% de plus une rétraction combinée du gastrocnémien et du soléaire. Par ailleurs, une étude cas-témoins appariée, sur 50\u00A0cas et 100\u00A0témoins, a montré qu’une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, était le plus fort facteur de risque indépendant de fasciite plantaire.',
+        'Un mollet raide tire sur le talon par le tendon d’Achille, et le fascia plantaire partage la charge à l’autre bout. **Quand la cheville ne peut pas assez se plier, chaque pas met plus de tension sur le fascia.**',
+        'Dans une série de 254\u00A0personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien, le muscle superficiel du mollet, et 23 à 30\u00A0% de plus une rétraction combinée du gastrocnémien et du soléaire.',
+        'Par ailleurs, une étude cas-témoins appariée, sur 50\u00A0cas et 100\u00A0témoins, a montré qu’une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, était le plus fort facteur de risque indépendant de fasciite plantaire.',
         'C’est pourquoi l’étirement et le renforcement du mollet figurent tous les deux dans la liste. L’étirement donne plus d’amplitude à la cheville. Le renforcement donne au mollet assez de capacité pour ne pas se raidir sous la charge normale de la journée. La recommandation conseille les deux. Le même mécanisme du mollet raide se retrouve dans d’autres douleurs du bas de la jambe\u00A0: voir [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/) et [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) si votre douleur ressemble plutôt à l’une des deux.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle, CITE.guideline],
@@ -163,8 +178,9 @@ export const CALF_RAISES_FR: Guide = {
     {
       h2: 'En quoi la montée sur pointes pour la fasciite plantaire diffère-t-elle de celle pour la tendinite d’Achille\u00A0?',
       paragraphs: [
-        'Le mouvement est presque le même, mais l’intention, la serviette et la règle de douleur diffèrent. Pour la fasciite plantaire, la serviette sous les orteils charge le fascia par le mécanisme de treuil. Le tempo est de 3\u00A0secondes pour monter, 2\u00A0secondes de maintien, 3 pour descendre, un jour sur deux. La règle de douleur de cette page\u00A0: arrêtez si la douleur atteint 6/10 ou plus.',
-        'Pour la tendinite d’Achille, le protocole classique est une descente excentrique du talon (seulement la descente, la montée se faisant sur les deux pieds), faite à l’origine deux fois par jour, sept jours sur sept, avec une douleur acceptée jusqu’à environ 5/10 tant qu’elle se calme avant le lendemain matin. La serviette n’est pas utilisée, car charger le fascia n’est pas le but. Et pour une douleur d’Achille d’insertion, juste à l’arrière de l’os du talon, les descentes du talon doivent rester au niveau du sol au lieu de passer sous le bord de la marche, car une flexion dorsale profonde comprime le tendon contre l’os.',
+        '**Le mouvement est presque le même, mais l’intention, la serviette et la règle de douleur diffèrent.** Pour la fasciite plantaire, la serviette sous les orteils charge le fascia par le mécanisme de treuil. Le tempo est de 3\u00A0secondes pour monter, 2\u00A0secondes de maintien, 3 pour descendre, un jour sur deux. La règle de douleur de cette page\u00A0: arrêtez si la douleur atteint 6/10 ou plus.',
+        'Pour la tendinite d’Achille, le protocole classique est une descente excentrique du talon (seulement la descente, la montée se faisant sur les deux pieds), faite à l’origine deux fois par jour, sept jours sur sept, avec une douleur acceptée jusqu’à environ 5/10 tant qu’elle se calme avant le lendemain matin.',
+        'La serviette n’est pas utilisée, car charger le fascia n’est pas le but. Et pour une douleur d’Achille d’insertion, juste à l’arrière de l’os du talon, les descentes du talon doivent rester au niveau du sol au lieu de passer sous le bord de la marche, car une flexion dorsale profonde comprime le tendon contre l’os.',
         'Les deux exercices sont proches. Si votre douleur est à l’arrière du talon ou dans le tendon au-dessus, plutôt que sous le pied, voir [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/).',
       ],
       cites: [CITE.rathleff, CITE.alfredson],
@@ -173,7 +189,7 @@ export const CALF_RAISES_FR: Guide = {
       h2: 'Combien de montées sur pointes sur une jambe devriez-vous pouvoir faire\u00A0?',
       keyFact: 'Une étude de valeurs de référence sur 566\u00A0adultes en bonne santé a trouvé un nombre de montées sur pointes sur une jambe autour de 20 à 25, environ 23 à 24\u00A0répétitions en moyenne (Hebert-Losier et coll., 2017).',
       paragraphs: [
-        'Une référence courante chez l’adulte pour le test d’endurance des montées sur pointes sur une jambe se situe autour de 20 à 25, environ 23-24\u00A0répétitions en moyenne, d’après les valeurs de référence de 566\u00A0adultes en bonne santé. Ce chiffre varie selon l’âge, le sexe, l’IMC et le niveau d’activité. C’est donc un repère, pas une note de réussite ou d’échec. Pour suivre les progrès d’une fasciite plantaire, ce qui compte le plus est que le chiffre monte d’une semaine à l’autre, et que les deux côtés soient à peu près égaux.',
+        'Une référence courante chez l’adulte pour le test d’endurance des montées sur pointes sur une jambe se situe autour de 20 à 25, environ 23-24\u00A0répétitions en moyenne, d’après les valeurs de référence de 566\u00A0adultes en bonne santé. Ce chiffre varie selon l’âge, le sexe, l’IMC et le niveau d’activité. C’est donc un repère, pas une note de réussite ou d’échec. Pour suivre les progrès d’une fasciite plantaire, ce qui compte le plus est **que le chiffre monte d’une semaine à l’autre, et que les deux côtés soient à peu près égaux.**',
         'Dans l’application, l’objectif du mollet est de 25\u00A0montées sur pointes sur une jambe. Le test est refait tous les 14\u00A0jours tant que l’objectif du mollet est actif, puis tous les 28\u00A0jours une fois atteint, pour que vous voyiez la tendance sans deviner.',
       ],
       cites: [CITE.hebertLosier],

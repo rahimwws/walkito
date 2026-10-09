@@ -30,10 +30,12 @@ export const TOE_STRENGTHENING_FR: Guide = {
       keyFact:
         'Dans une étude d’un an sur 312\u00A0adultes de 60 à 90\u00A0ans, les personnes qui sont tombées avaient un gros orteil plus faible (11,6 contre 14,8\u00A0% du poids du corps) que celles qui ne sont pas tombées (Mickle et coll., 2009).',
       paragraphs: [
-        'La force des orteils compte surtout pour l’équilibre et pour la poussée quand vous marchez. Les orteils sont la dernière partie du pied à quitter le sol à chaque pas, et quand vous êtes immobile, ils appuient sur le sol pour corriger les petites oscillations.',
-        'Les données les plus claires concernent les personnes âgées. Une équipe australienne a mesuré la force des orteils chez 312\u00A0personnes de 60 à 90\u00A0ans, puis a suivi qui tombait au cours des 12\u00A0mois suivants. 107 d’entre elles (35\u00A0%) ont fait une chute. En moyenne, les personnes qui sont tombées appuyaient avec le gros orteil à 11,6\u00A0% de leur poids du corps, contre 14,8\u00A0% pour celles qui ne sont pas tombées. Les petits orteils suivaient le même schéma. Une étude plus ancienne sur 176\u00A0personnes d’un âge moyen de 80\u00A0ans a constaté que des fléchisseurs plantaires des orteils faibles (les muscles qui appuient les orteils vers le sol) étaient associés aux chutes, même en tenant compte d’autres facteurs de risque de chute comme la vue, le temps de réaction, la force et l’âge.',
+        '**La force des orteils compte surtout pour l’équilibre et pour la poussée quand vous marchez.** Les orteils sont la dernière partie du pied à quitter le sol à chaque pas, et quand vous êtes immobile, ils appuient sur le sol pour corriger les petites oscillations.',
+        'Les données les plus claires concernent les personnes âgées. Une équipe australienne a mesuré la force des orteils chez 312\u00A0personnes de 60 à 90\u00A0ans, puis a suivi qui tombait au cours des 12\u00A0mois suivants. 107 d’entre elles (35\u00A0%) ont fait une chute. En moyenne, les personnes qui sont tombées appuyaient avec le gros orteil à 11,6\u00A0% de leur poids du corps, contre 14,8\u00A0% pour celles qui ne sont pas tombées. Les petits orteils suivaient le même schéma.',
+        'Une étude plus ancienne sur 176\u00A0personnes d’un âge moyen de 80\u00A0ans a constaté que des fléchisseurs plantaires des orteils faibles (les muscles qui appuient les orteils vers le sol) étaient associés aux chutes, même en tenant compte d’autres facteurs de risque de chute comme la vue, le temps de réaction, la force et l’âge.',
         'Une revue de 2026 portant sur 14\u00A0études de cohorte chez des adultes de 60\u00A0ans et plus a regroupé les données et constaté que des muscles du gros orteil faibles allaient de pair avec une probabilité de chute future environ 1,65\u00A0fois plus élevée. Les auteurs ont pris soin de préciser que beaucoup d’études ne tenaient pas compte des autres causes, si bien que des orteils faibles peuvent en partie refléter une fragilité générale.',
-        'Pour l’équilibre lui-même, une revue de 2020 portant sur neuf études a constaté que des fléchisseurs des orteils plus forts allaient de pair avec un meilleur équilibre dans toutes les études incluses. Toutes portaient sur des personnes de plus de 60\u00A0ans, donc ce lien n’a pas été testé de la même façon chez les adultes plus jeunes. Dans une autre étude sur 305\u00A0personnes de 65 à 93\u00A0ans, la force du gros orteil faisait partie des deux facteurs qui prédisaient le plus régulièrement les résultats aux tests d’équilibre et de marche.',
+        'Pour l’équilibre lui-même, une revue de 2020 portant sur neuf études a constaté que des fléchisseurs des orteils plus forts allaient de pair avec un meilleur équilibre dans toutes les études incluses. Toutes portaient sur des personnes de plus de 60\u00A0ans, donc ce lien n’a pas été testé de la même façon chez les adultes plus jeunes.',
+        'Dans une autre étude sur 305\u00A0personnes de 65 à 93\u00A0ans, la force du gros orteil faisait partie des deux facteurs qui prédisaient le plus régulièrement les résultats aux tests d’équilibre et de marche.',
       ],
       sourceNote:
         'Mickle 2009\u00A0: force mesurée sur une plateforme de pression en pourcentage du poids du corps, moyennes avec écart-type de 6,9 et 7,8. Valeriani 2026\u00A0: faiblesse des fléchisseurs plantaires de l’hallux, odds ratio regroupé de 1,65 (IC à 95\u00A0% 1,14 à 2,38). Quinlan 2020\u00A0: 7\u00A0études transversales, 2\u00A0essais randomisés, 1\u00A0étude cas-témoins, pas de méta-analyse.',
@@ -42,17 +44,32 @@ export const TOE_STRENGTHENING_FR: Guide = {
     {
       h2: 'Des orteils faibles sont-ils liés à la douleur au talon\u00A0?',
       paragraphs: [
-        'Des orteils faibles se retrouvent bien chez les personnes atteintes de fasciite plantaire (douleur sous le talon, à l’endroit où s’attache le fascia plantaire, une bande épaisse qui longe la plante du pied). Dans une étude de 2003 sur 20\u00A0personnes ayant une fasciite plantaire d’un seul pied, le pied douloureux avait des fléchisseurs des orteils plus faibles que l’autre pied et que ceux de 20\u00A0personnes comparables sans douleur. Une étude plus large de 2015 a comparé 202\u00A0personnes souffrant d’une douleur sous le talon et 70 sans douleur. Le groupe avec douleur au talon avait en moyenne des fléchisseurs des orteils plus faibles, des chevilles plus raides et un indice de masse corporelle (le poids rapporté à la taille) plus élevé.',
-        'Aucune des deux études ne peut dire ce qui est venu en premier. Les auteurs des deux articles le disent clairement\u00A0: la faiblesse pourrait contribuer à la douleur, ou la douleur pourrait pousser les gens à moins utiliser leurs orteils. Renforcer les orteils est une partie raisonnable d’un plan contre la douleur au talon, mais les exercices les mieux étudiés pour la fasciite plantaire restent les étirements du mollet et du fascia plantaire et les montées sur pointes présentés dans les [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/). Une revue de 2017 sur le renforcement musculaire dans la fasciite plantaire n’a pas pu dire dans quelle mesure l’entraînement des muscles du pied, à lui seul, aide les personnes qui ont mal au talon.',
+        'Des orteils faibles se retrouvent bien chez les personnes atteintes de fasciite plantaire (douleur sous le talon, à l’endroit où s’attache le fascia plantaire, une bande épaisse qui longe la plante du pied). Dans une étude de 2003 sur 20\u00A0personnes ayant une fasciite plantaire d’un seul pied, le pied douloureux avait des fléchisseurs des orteils plus faibles que l’autre pied et que ceux de 20\u00A0personnes comparables sans douleur.',
+        'Une étude plus large de 2015 a comparé 202\u00A0personnes souffrant d’une douleur sous le talon et 70 sans douleur. Le groupe avec douleur au talon avait en moyenne\u00A0:',
+        {
+          list: [
+            'Des fléchisseurs des orteils plus faibles.',
+            'Des chevilles plus raides.',
+            'Un indice de masse corporelle (le poids rapporté à la taille) plus élevé.',
+          ],
+        },
+        '**Aucune des deux études ne peut dire ce qui est venu en premier.** Les auteurs des deux articles le disent clairement\u00A0: la faiblesse pourrait contribuer à la douleur, ou la douleur pourrait pousser les gens à moins utiliser leurs orteils.',
+        'Renforcer les orteils est une partie raisonnable d’un plan contre la douleur au talon, mais les exercices les mieux étudiés pour la fasciite plantaire restent les étirements du mollet et du fascia plantaire et les montées sur pointes présentés dans les [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/). Une revue de 2017 sur le renforcement musculaire dans la fasciite plantaire n’a pas pu dire dans quelle mesure l’entraînement des muscles du pied, à lui seul, aide les personnes qui ont mal au talon.',
       ],
       cites: [CITE.allenGross, CITE.sullivanHeel, CITE.guideline, CITE.hufferReview],
     },
     {
       h2: 'Quels muscles font bouger vos orteils\u00A0?',
       paragraphs: [
-        'Deux groupes de muscles font bouger vos orteils. Les muscles intrinsèques commencent et se terminent dans le pied. Ils sont disposés en couches sous la plante, et les plus connus sont l’abducteur de l’hallux (qui écarte le gros orteil des autres) et les courts fléchisseurs des orteils. Les muscles extrinsèques partent du bas de la jambe et rejoignent les orteils par de longs tendons qui passent le long de la cheville.',
+        'Deux groupes de muscles font bouger vos orteils\u00A0:',
+        {
+          list: [
+            '**Muscles intrinsèques\u00A0:** ils commencent et se terminent dans le pied. Ils sont disposés en couches sous la plante, et les plus connus sont l’abducteur de l’hallux (qui écarte le gros orteil des autres) et les courts fléchisseurs des orteils.',
+            '**Muscles extrinsèques\u00A0:** ils partent du bas de la jambe et rejoignent les orteils par de longs tendons qui passent le long de la cheville.',
+          ],
+        },
         'Quand vous recroquevillez fort les orteils, les deux groupes travaillent ensemble. C’est pour cela que les chercheurs ont tant de mal à mesurer la force intrinsèque seule\u00A0: une revue de 2012 a conclu qu’on ne sait pas si une méthode peut vraiment séparer les deux. Un article de médecine du sport de 2015 appelle les muscles intrinsèques le «\u00A0foot core\u00A0» (le gainage du pied), car, comme les muscles profonds du tronc, ils font de petits ajustements constants plus que de grands mouvements.',
-        'Un bon programme pour les orteils mélange donc un travail de contrôle (écarter les orteils, lever le gros orteil) et un travail de force (ramasser la serviette, pressions des orteils avec charge) qui sollicite les deux groupes.',
+        '**Un bon programme pour les orteils mélange donc un travail de contrôle (écarter les orteils, lever le gros orteil) et un travail de force (ramasser la serviette, pressions des orteils avec charge)** qui sollicite les deux groupes.',
       ],
       cites: [CITE.soysaFootStrength, CITE.mcKeon, CITE.gooding],
     },
@@ -166,10 +183,17 @@ export const TOE_STRENGTHENING_FR: Guide = {
       keyFact:
         'Dans un essai sur 118\u00A0coureurs amateurs, ceux qui ne faisaient pas le programme pour le pied étaient 2,42\u00A0fois plus susceptibles de se blesser sur un an (Taddei et coll., 2020).',
       paragraphs: [
-        'Les exercices pour renforcer les orteils peuvent développer leur force, mais seulement si le travail devient plus difficile avec le temps. Dans un essai de 2016, 85\u00A0adultes de 60 à 90\u00A0ans ont été répartis entre un programme supervisé avec une résistance qui augmentait sur trois mois et un programme d’exercices à domicile. Le groupe supervisé a gagné jusqu’à 36\u00A0% de force des orteils et tenait plus longtemps sur une jambe. Le groupe à domicile, ainsi qu’un groupe témoin distinct de 32\u00A0personnes, n’a montré aucun changement de la force des orteils. Les auteurs ont précisé qu’un essai comptant les chutes restait nécessaire.',
+        'Les exercices pour renforcer les orteils peuvent développer leur force, mais **seulement si le travail devient plus difficile avec le temps.**',
+        'Dans un essai de 2016, 85\u00A0adultes de 60 à 90\u00A0ans ont été répartis entre un programme supervisé avec une résistance qui augmentait sur trois mois et un programme d’exercices à domicile. Le groupe supervisé a gagné jusqu’à 36\u00A0% de force des orteils et tenait plus longtemps sur une jambe. Le groupe à domicile, ainsi qu’un groupe témoin distinct de 32\u00A0personnes, n’a montré aucun changement de la force des orteils. Les auteurs ont précisé qu’un essai comptant les chutes restait nécessaire.',
         'Les coureurs réagissent aussi. Dans un essai de 2019 sur 57\u00A0coureurs, un programme de renforcement du pied fait au moins cinq fois par semaine, tout comme le passage à la marche en chaussures minimalistes (fines, plates et souples), a augmenté la taille et la force des muscles du pied en deux mois, alors que le groupe témoin n’a pas changé. Certains muscles étaient déjà plus gros au bout d’un mois. Si la piste des chaussures vous intéresse, voir [chaussures minimalistes](/fr/chaussures-minimalistes/).',
         'Pour les blessures, le résultat isolé le plus solide vient d’un essai de 2020 sur 118\u00A0coureurs amateurs. Ceux qui n’ont pas suivi le programme pour le pied et la cheville étaient 2,42\u00A0fois plus susceptibles d’avoir une blessure liée à la course sur 12\u00A0mois que ceux qui l’ont suivi. C’est un seul essai, et le programme entraînait tout le pied et la cheville, pas seulement les orteils. Les coureurs trouveront plus d’informations dans [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais).',
-        'Le tableau d’ensemble est moins sûr. Une revue de 2022 a jugé de très faible certitude les preuves selon lesquelles l’entraînement des muscles du pied améliore l’équilibre dynamique. Une revue de 2025 portant sur 16\u00A0essais chez des personnes âgées a constaté que les exercices du pied et de la cheville amélioraient la force de la cheville et l’équilibre les yeux ouverts, mais les deux essais qui comptaient les chutes n’ont pas trouvé d’effet net. Cette revue notait tout de même que les exercices de renforcement des orteils et un entraînement trois fois par semaine semblaient tous deux compter pour l’équilibre.',
+        'Le tableau d’ensemble est moins sûr\u00A0:',
+        {
+          list: [
+            '**Une revue de 2022** a jugé de très faible certitude les preuves selon lesquelles l’entraînement des muscles du pied améliore l’équilibre dynamique.',
+            '**Une revue de 2025** portant sur 16\u00A0essais chez des personnes âgées a constaté que les exercices du pied et de la cheville amélioraient la force de la cheville et l’équilibre les yeux ouverts, mais les deux essais qui comptaient les chutes n’ont pas trouvé d’effet net. Cette revue notait tout de même que les exercices de renforcement des orteils et un entraînement trois fois par semaine semblaient tous deux compter pour l’équilibre.',
+          ],
+        },
       ],
       sourceNote:
         'Mickle 2016\u00A0: 43 supervisés, 42 à domicile, 32 témoins non randomisés\u00A0; 80\u00A0% des participants des groupes d’intervention ont terminé le suivi. Ridge 2019\u00A0: taille des muscles du pied mesurée par échographie, force par des dynamomètres sur mesure. Taddei 2020\u00A0: le groupe témoin était 2,42\u00A0fois (IC à 95\u00A0% 1,98 à 3,62) plus susceptible d’avoir une blessure liée à la course dans les 12\u00A0mois. Liang 2025\u00A0: 16\u00A0articles, 651\u00A0participants, GRADE faible à très faible.',
@@ -178,8 +202,17 @@ export const TOE_STRENGTHENING_FR: Guide = {
     {
       h2: 'Les exercices des orteils aident-ils à prévenir les chutes\u00A0?',
       paragraphs: [
-        'Il n’a pas été démontré que les exercices des orteils préviennent les chutes à eux seuls. Dans les études de cohorte, des orteils faibles vont de pair avec les chutes, et l’entraînement peut augmenter la force des orteils, mais nous n’avons trouvé aucun essai ayant testé un programme centré uniquement sur les orteils avec les chutes comme critère de jugement.',
-        'Le test le plus proche est un essai de 2011 sur 305\u00A0personnes âgées souffrant de douleurs au pied invalidantes. La moitié a reçu un ensemble comprenant des orthèses plantaires, des conseils de chaussage avec un bon d’achat pour des chaussures, un programme d’exercices du pied et de la cheville à domicile et une brochure sur les chutes. Ces personnes ont fait 36\u00A0% de chutes en moins sur 12\u00A0mois que celles qui ont reçu les soins de podologie habituels. La proportion de personnes tombées au moins une fois ne différait pas nettement. Comme l’exercice n’était qu’une partie de l’ensemble, l’essai ne peut pas dire quelle part revient aux exercices eux-mêmes.',
+        '**Il n’a pas été démontré que les exercices des orteils préviennent les chutes à eux seuls.** Dans les études de cohorte, des orteils faibles vont de pair avec les chutes, et l’entraînement peut augmenter la force des orteils, mais nous n’avons trouvé aucun essai ayant testé un programme centré uniquement sur les orteils avec les chutes comme critère de jugement.',
+        'Le test le plus proche est un essai de 2011 sur 305\u00A0personnes âgées souffrant de douleurs au pied invalidantes. La moitié a reçu un ensemble comprenant\u00A0:',
+        {
+          list: [
+            'Des orthèses plantaires.',
+            'Des conseils de chaussage avec un bon d’achat pour des chaussures.',
+            'Un programme d’exercices du pied et de la cheville à domicile.',
+            'Une brochure sur les chutes.',
+          ],
+        },
+        'Ces personnes ont fait 36\u00A0% de chutes en moins sur 12\u00A0mois que celles qui ont reçu les soins de podologie habituels. La proportion de personnes tombées au moins une fois ne différait pas nettement. Comme l’exercice n’était qu’une partie de l’ensemble, l’essai ne peut pas dire quelle part revient aux exercices eux-mêmes.',
         'Si vous êtes déjà tombé ou si vous vous sentez instable, le travail des orteils est un complément raisonnable, mais une évaluation du risque de chute avec un professionnel de santé doit passer en premier. Les exercices de cette page ne constituent pas un programme de prévention des chutes.',
       ],
       sourceNote: 'Spink 2011\u00A0: rapport des taux d’incidence 0,64 (IC à 95\u00A0% 0,45 à 0,91)\u00A0; proportion de personnes tombées RR 0,85 (0,66 à 1,08).',
@@ -189,7 +222,7 @@ export const TOE_STRENGTHENING_FR: Guide = {
       h2: 'À quelle fréquence faire les exercices pour renforcer les orteils\u00A0?',
       paragraphs: [
         'Les exercices pour renforcer les orteils se font en général trois à cinq fois par semaine. La revue de 2025 sur les essais chez les personnes âgées a trouvé qu’un entraînement trois fois par semaine semblait compter pour l’équilibre, et l’essai de 2019 chez les coureurs utilisait au moins cinq séances par semaine. Les séances peuvent être courtes\u00A0: cinq à dix minutes suffisent largement pour le travail des orteils et de la voûte.',
-        'Comptez quelques mois, pas quelques séances\u00A0: les études ci-dessus ont mesuré leurs principaux progrès après deux à trois mois. Refaites les tests maison ci-dessus environ une fois par mois pour voir ce qui change.',
+        '**Comptez quelques mois, pas quelques séances**\u00A0: les études ci-dessus ont mesuré leurs principaux progrès après deux à trois mois. Refaites les tests maison ci-dessus environ une fois par mois pour voir ce qui change.',
         'Si vos orteils sont déformés ou raides, commencez par les [exercices pour orteil en marteau](/fr/orteil-en-marteau-exercices/) ou les [exercices pour l’hallux valgus](/fr/hallux-valgus-exercices/), qui portent sur ces formes. Pour un plan plus large qui ajoute le mollet et la cheville, voir les [exercices de renforcement du pied](/fr/exercices-renforcement-pied/).',
       ],
       cites: [CITE.liangFootAnkle, CITE.ridgeMinimalist, CITE.mickleToe],

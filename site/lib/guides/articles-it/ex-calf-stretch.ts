@@ -32,7 +32,7 @@ export const EX_CALF_STRETCH_IT: Guide = {
       h2: 'Come si fa l’allungamento del polpaccio a ginocchio teso?',
       paragraphs: [
         'Mettiti di fronte a un muro con le mani appoggiate più o meno all’altezza delle spalle. Porta un piede indietro di circa 60\u00A0cm. Tieni la gamba dietro tesa, il tallone premuto a terra e le dita rivolte in avanti. Porta i fianchi verso il muro finché senti un allungamento nella parte alta del polpaccio dietro. Tieni 30\u00A0secondi, poi cambia gamba.',
-        'La chiave è tenere il ginocchio dietro bloccato e teso. Così isoli il gastrocnemio, che passa sia sul ginocchio sia sulla caviglia. Se pieghi il ginocchio, l’allungamento si sposta sul soleo, il muscolo più profondo del polpaccio, ed è un esercizio diverso. Per quella versione vedi [allungamento del soleo](/it/esercizi/allungamento-soleo/).',
+        '**La chiave è tenere il ginocchio dietro bloccato e teso.** Così isoli il gastrocnemio, che passa sia sul ginocchio sia sulla caviglia. Se pieghi il ginocchio, l’allungamento si sposta sul soleo, il muscolo più profondo del polpaccio, ed è un esercizio diverso. Per quella versione vedi [allungamento del soleo](/it/esercizi/allungamento-soleo/).',
       ],
       exercises: [
         {
@@ -59,7 +59,7 @@ export const EX_CALF_STRETCH_IT: Guide = {
       paragraphs: [
         'Il gastrocnemio va da dietro il ginocchio fino al tallone, attraverso il tendine d’Achille. La fascia plantare è collegata al tendine d’Achille attraverso l’osso del tallone: passa sotto il calcagno e corre in avanti fino alle dita. Quando il gastrocnemio è rigido, limita quanto la caviglia può piegarsi verso l’alto. Così la fascia plantare deve assorbire più tensione a ogni passo.',
         'In uno studio caso-controllo appaiato su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia ridotta era associata a un rischio molto più alto di fascite plantare (odds ratio 23,3). Era un fattore più forte dell’IMC, del tempo passato in piedi o di qualsiasi altra variabile dello studio.',
-        'A parte, un’analisi retrospettiva su 254\u00A0persone con fascite plantare ha trovato che tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio, e un altro 23-30% una contrattura combinata di gastrocnemio e soleo. In altre parole, un polpaccio rigido non è un dettaglio. C’è nella maggior parte delle persone con questo problema.',
+        'A parte, un’analisi retrospettiva su 254\u00A0persone con fascite plantare ha trovato che tra il 52 e il 60% aveva una contrattura limitata al gastrocnemio, e un altro 23-30% una contrattura combinata di gastrocnemio e soleo. In altre parole, **un polpaccio rigido non è un dettaglio.** C’è nella maggior parte delle persone con questo problema.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
     },
@@ -75,10 +75,14 @@ export const EX_CALF_STRETCH_IT: Guide = {
     {
       h2: 'Quali sono gli errori più comuni nell’allungamento del polpaccio?',
       paragraphs: [
-        'Piegare il ginocchio dietro. Appena il ginocchio si piega, il gastrocnemio si rilassa e l’allungamento passa al soleo. Tieni il ginocchio dietro bloccato e teso per tutta la tenuta.',
-        'Lasciare che il tallone dietro si sollevi. Se il tallone si stacca da terra, il polpaccio non si sta allungando. Prima premi il tallone a terra, poi porta il peso in avanti finché compare l’allungamento.',
-        'Ruotare in fuori il piede dietro. Quando il piede ruota verso l’esterno, l’allungamento si concentra sul lato esterno del polpaccio invece di tutto il muscolo. Tieni le dita puntate dritte verso il muro.',
-        'Tenere troppo poco. Una tenuta da 10\u00A0secondi non basta perché un allungamento prolungato agisca sulla lunghezza del tessuto. Tieni almeno 30\u00A0secondi per ripetizione.',
+        {
+          list: [
+            '**Piegare il ginocchio dietro.** Appena il ginocchio si piega, il gastrocnemio si rilassa e l’allungamento passa al soleo. Tieni il ginocchio dietro bloccato e teso per tutta la tenuta.',
+            '**Lasciare che il tallone dietro si sollevi.** Se il tallone si stacca da terra, il polpaccio non si sta allungando. Prima premi il tallone a terra, poi porta il peso in avanti finché compare l’allungamento.',
+            '**Ruotare in fuori il piede dietro.** Quando il piede ruota verso l’esterno, l’allungamento si concentra sul lato esterno del polpaccio invece di tutto il muscolo. Tieni le dita puntate dritte verso il muro.',
+            '**Tenere troppo poco.** Una tenuta da 10\u00A0secondi non basta perché un allungamento prolungato agisca sulla lunghezza del tessuto. Tieni almeno 30\u00A0secondi per ripetizione.',
+          ],
+        },
       ],
     },
     {
@@ -93,7 +97,8 @@ export const EX_CALF_STRETCH_IT: Guide = {
       h2: 'Come si abbina l’allungamento del polpaccio a quello del soleo',
       paragraphs: [
         'Il gastrocnemio e il soleo insieme formano il polpaccio. La versione a ginocchio teso allunga il gastrocnemio. La versione a ginocchio piegato allunga il soleo. Sono due esercizi, non due versioni dello stesso.',
-        'La maggior parte dei programmi per la fascite plantare li include entrambi, perché un polpaccio può essere rigido in uno dei due muscoli o in tutti e due. La linea guida non li separa. Walkito li mette entrambi nella stessa sessione quando nel piano ci sono gli allungamenti. La pagina sull’[allungamento del soleo](/it/esercizi/allungamento-soleo/) spiega la versione a ginocchio piegato. Per il programma completo di allungamenti e forza, vedi [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
+        'La maggior parte dei programmi per la fascite plantare li include entrambi, perché un polpaccio può essere rigido in uno dei due muscoli o in tutti e due. La linea guida non li separa. Walkito li mette entrambi nella stessa sessione quando nel piano ci sono gli allungamenti.',
+        'La pagina sull’[allungamento del soleo](/it/esercizi/allungamento-soleo/) spiega la versione a ginocchio piegato. Per il programma completo di allungamenti e forza, vedi [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
       ],
       cites: [CITE.guideline],
     },

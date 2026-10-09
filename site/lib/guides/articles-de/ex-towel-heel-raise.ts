@@ -29,7 +29,15 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
     {
       h2: 'Was trainiert das Fersenheben mit Handtuch?',
       paragraphs: [
-        'Das Fersenheben mit Handtuch trainiert Gastrocnemius und Soleus (die beiden Wadenmuskeln), die Achillessehne und die Plantarfaszie. Das zusammengerollte Handtuch beugt die Zehen oben in der Bewegung nach oben, und das zieht über den Windlass-Mechanismus an der Plantarfaszie. Ohne Handtuch trainiert die Übung vor allem die Wade. Mit Handtuch übernimmt die Faszie einen Teil der Last.',
+        'Das Fersenheben mit Handtuch trainiert:',
+        {
+          list: [
+            'Gastrocnemius und Soleus (die beiden Wadenmuskeln).',
+            'Die Achillessehne.',
+            'Die Plantarfaszie.',
+          ],
+        },
+        'Das zusammengerollte Handtuch beugt die Zehen oben in der Bewegung nach oben, und das zieht über den Windlass-Mechanismus an der Plantarfaszie. Ohne Handtuch trainiert die Übung vor allem die Wade. Mit Handtuch **übernimmt die Faszie einen Teil der Last.**',
         'Deshalb hat die Rathleff-Studie bei Plantarfasziitis gezielt das Handtuch benutzt statt eines einfachen Fersenhebens. Das Ziel ist, die Kette aus Wade, Achillessehne und Faszie gemeinsam zu belasten. Wenn dein Schmerz in der Achillessehne sitzt und nicht unter dem Fuß, ist [exzentrisches Fersenabsenken](/de/uebungen/exzentrisches-fersenabsenken/) ohne Handtuch der bessere Startpunkt.',
       ],
       cites: [CITE.rathleff],
@@ -38,7 +46,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
       h2: 'Wie geht Fersenheben mit Handtuch?',
       paragraphs: [
         'Roll ein kleines Handtuch zu einer Rolle, etwa so dick wie deine Faust. Leg es an die Kante einer Stufe. Stell dich mit einem Fuß so hin, dass alle fünf Zehen auf dem Handtuch liegen und der Fußballen auf der Stufe. Halt dich zum Ausbalancieren an einer Wand oder einem Geländer fest.',
-        'Nimm dir drei Sekunden zum Hochkommen und drück dabei über den großen Zeh. Halte oben zwei Sekunden. Nimm dir drei Sekunden zum Absenken und lass die Ferse leicht unter die Stufe sinken. Dieses langsame Tempo ist Teil des Protokolls. Schnelle Wiederholungen verringern die Last auf Sehne und Faszie.',
+        'Nimm dir drei Sekunden zum Hochkommen und drück dabei über den großen Zeh. Halte oben zwei Sekunden. Nimm dir drei Sekunden zum Absenken und lass die Ferse leicht unter die Stufe sinken. **Dieses langsame Tempo ist Teil des Protokolls.** Schnelle Wiederholungen verringern die Last auf Sehne und Faszie.',
         'In der Rathleff-Studie nahmen die Teilnehmenden einen Rucksack als Zusatzgewicht dazu, sobald das eigene Körpergewicht nicht mehr reichte, um die letzte Wiederholung schwer zu machen. „12RM“ heißt das schwerste Gewicht, das du genau 12-mal kontrolliert heben kannst.',
       ],
       exercises: [
@@ -79,7 +87,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
     {
       h2: 'Was sind die häufigsten Fehler beim Fersenheben mit Handtuch?',
       paragraphs: [
-        'Zu schnell zu werden ist der häufigste Fehler. Drei Sekunden Absenken halten die Wade lange genug unter Spannung, um Kraft aufzubauen. Hoch- und Runterfedern macht daraus eine Ausdauerübung, keine Kraftübung.',
+        '**Zu schnell zu werden ist der häufigste Fehler.** Drei Sekunden Absenken halten die Wade lange genug unter Spannung, um Kraft aufzubauen. Hoch- und Runterfedern macht daraus eine Ausdauerübung, keine Kraftübung.',
         'Wenn das Handtuch verrutscht und nur noch ein oder zwei Zehen darauf liegen, sinkt die Last auf der Faszie. Alle fünf Zehen sollten auf dem Handtuch liegen. Wenn das Handtuch immer wieder rutscht, falte es dicker oder nimm ein Handtuch statt eines Badetuchs.',
         'Auf einem Bein anzufangen, wenn beidbeiniges Fersenheben noch schwerfällt, führt zu schlechter Technik und Ausweichbewegungen. Wenn einbeiniges Fersenheben auf einer Stufe gerade noch zu viel ist, fang mit [beidbeinigem Fersenheben](/de/uebungen/fersenheben/) auf dem Boden an und steigere dich.',
       ],
@@ -87,7 +95,16 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
     {
       h2: 'Leichtere und schwerere Varianten',
       paragraphs: [
-        'Wenn das volle Fersenheben mit Handtuch auf einer Stufe zu schwer ist, geh in der Wadenkette zurück. [Fersenheben im Sitzen](/de/uebungen/fersenheben/) hat die geringste Last. Danach kommt Fersenheben beidbeinig im Stehen. Dann Fersenheben mit Halten oben. Dann das einbeinige Fersenheben mit Handtuch auf einer Stufe. Jede Stufe sollte sich zwei Einheiten lang machbar anfühlen, bevor du weitergehst.',
+        'Wenn das volle Fersenheben mit Handtuch auf einer Stufe zu schwer ist, geh in der Wadenkette zurück:',
+        {
+          list: [
+            '[Fersenheben im Sitzen](/de/uebungen/fersenheben/) hat die geringste Last.',
+            'Danach kommt Fersenheben beidbeinig im Stehen.',
+            'Dann Fersenheben mit Halten oben.',
+            'Dann das einbeinige Fersenheben mit Handtuch auf einer Stufe.',
+          ],
+        },
+        'Jede Stufe sollte sich zwei Einheiten lang machbar anfühlen, bevor du weitergehst.',
         'Wenn dein Körpergewicht auf einem Bein zu leicht ist, nimm Last dazu. Die Rathleff-Studie nutzte einen Rucksack mit Büchern oder Wasserflaschen. Im Fitnessstudio gehen auch eine Wadenmaschine oder eine Gewichtsweste. Das Ziel ist, dass die letzte Wiederholung jedes Satzes wirklich die letzte ist, die du noch sauber schaffst.',
       ],
     },
@@ -97,7 +114,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
       paragraphs: [
         'Die Rathleff-Studie von 2015 ist die einzige randomisierte Studie, die das Fersenheben mit Handtuch gezielt bei Plantarfasziitis getestet hat. Bei 48\u00A0Personen mit per Ultraschall bestätigter Plantarfasziitis schnitt die Fersenheben-Gruppe nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab als die Gruppe, die nur dehnte. Nach zwölf Monaten lagen beide Gruppen gleichauf.',
         'Die Leitlinie von 2023 zu Fersenschmerzen hat diese und andere Belege geprüft und Krafttraining die Bewertung **B** gegeben, Dehnen die Bewertung **A**. Beides wird empfohlen. Die Leitlinie hebt die Variante mit Handtuch nicht eigens hervor, aber sie ist die einzige Kraftübung, die in einer eigenen Studie zur Plantarfasziitis getestet wurde.',
-        'Nichts in der Studienlage sagt, dass diese Übung das Dehnen ersetzen sollte. Am stärksten ist beides: eine [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) gegen die Steifigkeit am Morgen und das Fersenheben mit Last, um Kapazität aufzubauen. Die ganze Liste der Übungen und wie sie zusammenpassen findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
+        'Nichts in der Studienlage sagt, dass diese Übung das Dehnen ersetzen sollte. **Am stärksten ist beides:** eine [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) gegen die Steifigkeit am Morgen und das Fersenheben mit Last, um Kapazität aufzubauen. Die ganze Liste der Übungen und wie sie zusammenpassen findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
       ],
       sourceNote:
         'Rathleff 2015: Unterschied im FFI von 29\u00A0Punkten nach 3\u00A0Monaten (95-%-KI 6-52, p = 0,016). Nach 12\u00A0Monaten: 22 gegenüber 16, kein signifikanter Unterschied.',

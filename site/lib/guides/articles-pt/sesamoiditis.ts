@@ -38,7 +38,7 @@ export const SESAMOIDITIS_PT: Guide = {
       keyFact: 'Cerca de 1 em cada 10\u00A0pessoas tem um sesamoide bipartido, uma variação normal que pode parecer uma fratura no raio-X, mas tem bordas lisas e arredondadas em vez de irregulares (Yammine, 2015).',
       paragraphs: [
         'A sesamoidite é um problema de uso excessivo. A dor aparece aos poucos e incomoda durante a atividade. Uma fratura do sesamoide é uma trinca no osso, normalmente por um evento agudo único ou por estresse crônico. A dor da fratura tende a ser mais aguda e pode aparecer até em repouso.',
-        'Uma complicação é que cerca de 1 em cada 10\u00A0pessoas tem um sesamoide bipartido, ou seja, o sesamoide medial vem naturalmente em duas partes. No raio-X, um sesamoide bipartido parece uma fratura. A diferença está nas bordas: as bordas de um bipartido são lisas e arredondadas, enquanto as de uma fratura são irregulares e serrilhadas. O profissional de saúde também pode pedir um raio-X do outro pé para comparar.',
+        'Uma complicação é que cerca de 1 em cada 10\u00A0pessoas tem um sesamoide bipartido, ou seja, o sesamoide medial vem naturalmente em duas partes. No raio-X, um sesamoide bipartido parece uma fratura. A diferença está nas bordas: **as bordas de um bipartido são lisas e arredondadas, enquanto as de uma fratura são irregulares e serrilhadas.** O profissional de saúde também pode pedir um raio-X do outro pé para comparar.',
         'Se o raio-X não for conclusivo, uma cintilografia óssea ou uma ressonância pode confirmar o diagnóstico. A ressonância mostra edema da medula óssea, um inchaço dentro do osso, presente na maioria dos casos de sesamoidite. A ressonância costuma ficar reservada para os casos em que os sintomas continuam apesar do tratamento inicial.',
       ],
       cites: [CITE.yammineSesamoid],
@@ -47,7 +47,15 @@ export const SESAMOIDITIS_PT: Guide = {
       h2: 'Como é o tratamento conservador?',
       keyFact: 'Uma revisão de 2025 que reuniu 11\u00A0estudos e 59\u00A0pacientes encontrou melhora nas notas de dor em cerca de 66% dos casos tratados de forma conservadora, embora a volta dos sintomas fosse comum (Biz e colegas, 2025).',
       paragraphs: [
-        'A revisão sistemática de 2025 de Biz e colegas reuniu dados individuais de 11\u00A0estudos com 59\u00A0pacientes. Os tratamentos mais comuns foram palmilhas, ajuste de atividade e infiltrações de corticoide. As notas de dor melhoraram em cerca de 66% dos casos, mas a volta dos sintomas era comum e alguns pacientes continuaram com sintomas.',
+        'A revisão sistemática de 2025 de Biz e colegas reuniu dados individuais de 11\u00A0estudos com 59\u00A0pacientes. Os tratamentos mais comuns foram:',
+        {
+          list: [
+            'Palmilhas.',
+            'Ajuste de atividade.',
+            'Infiltrações de corticoide.',
+          ],
+        },
+        '**As notas de dor melhoraram em cerca de 66% dos casos, mas a volta dos sintomas era comum** e alguns pacientes continuaram com sintomas.',
         'A revisão concluiu que palmilhas e alívio de carga foram usados em quase todos os casos. As infiltrações de corticoide deram alívio a curto prazo, mas traziam risco de os sintomas voltarem. Nenhum tratamento foi comparado diretamente com outro em um ensaio randomizado. Os autores concluíram que são necessários protocolos padronizados e estudos de melhor qualidade.',
         'A cirurgia, normalmente a sesamoidectomia parcial ou total (retirada do osso), só é considerada quando vários meses de tratamento conservador não ajudaram. A maioria dos profissionais tenta pelo menos três a seis meses de tratamento sem cirurgia antes.',
       ],
@@ -59,7 +67,7 @@ export const SESAMOIDITIS_PT: Guide = {
       h2: 'O que é a almofada de bailarina e como ela funciona?',
       paragraphs: [
         'A almofada de bailarina é uma almofada plana de feltro ou espuma com um recorte em forma de U embaixo da cabeça do primeiro metatarso. O recorte fica bem em cima da região dos sesamoides, de modo que a almofada levanta a parte da frente do pé em volta e alivia a pressão direta no ponto dolorido. O nome vem do balé, em que a carga na parte da frente do pé é extrema.',
-        'Você pode comprar almofadas de bailarina já recortadas ou pedir para um profissional de saúde recortar uma no formato do seu pé. A posição importa: o recorte precisa ficar bem embaixo dos ossos sesamoides, nem muito para a frente nem muito para trás. Algumas pessoas usam a almofada dentro do sapato; outras colocam ela em uma palmilha sob medida.',
+        'Você pode comprar almofadas de bailarina já recortadas ou pedir para um profissional de saúde recortar uma no formato do seu pé. A posição importa: **o recorte precisa ficar bem embaixo dos ossos sesamoides**, nem muito para a frente nem muito para trás. Algumas pessoas usam a almofada dentro do sapato; outras colocam ela em uma palmilha sob medida.',
         'Um sapato de sola rígida ou com sola em mata-borrão (rocker) reduz o quanto a articulação do dedão dobra no impulso, o que limita a carga nos sesamoides. Evitar sapatos flexíveis, de sola fina, e salto alto durante o período com sintomas ajuda pelo mesmo motivo.',
       ],
     },
@@ -67,7 +75,15 @@ export const SESAMOIDITIS_PT: Guide = {
       h2: 'O calçado faz diferença?',
       paragraphs: [
         'O calçado tem um papel de apoio. Um sapato de sola rígida limita o movimento da primeira articulação metatarsofalângica (a articulação do dedão), o que reduz diretamente o estresse nos sesamoides. Solas em mata-borrão fazem o mesmo, rolando o pé pelo impulso sem que o dedão precise dobrar.',
-        'Evite sapatos flexíveis na parte da frente, muito retos ou de sola fina. O salto alto joga o peso para a frente, na planta da parte da frente do pé, e aumenta a carga nos sesamoides. Se a corrida desencadeou o problema, trocar por um tempo para um tênis com mais amortecimento na frente e sola mais alta pode ajudar enquanto os sintomas acalmam.',
+        'Evite sapatos que:',
+        {
+          list: [
+            'Sejam flexíveis na parte da frente.',
+            'Sejam muito retos.',
+            'Tenham sola fina.',
+          ],
+        },
+        'O salto alto joga o peso para a frente, na planta da parte da frente do pé, e aumenta a carga nos sesamoides. Se a corrida desencadeou o problema, trocar por um tempo para um tênis com mais amortecimento na frente e sola mais alta pode ajudar enquanto os sintomas acalmam.',
         'Essas mudanças sozinhas não resolvem o problema se a irritação de fundo for grande, mas elas reduzem a carga que causou o problema no começo.',
       ],
     },
@@ -76,14 +92,14 @@ export const SESAMOIDITIS_PT: Guide = {
       paragraphs: [
         'A resposta honesta é que o exercício tem um papel limitado no tratamento da sesamoidite em si. Diferente da [fascite plantar](/pt/exercicios-fascite-plantar/) ou da [tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/), em que programas de carga têm bom apoio de ensaios, não existem ensaios de exercício para sesamoidite. A revisão sistemática de 2025 não encontrou nenhum estudo que testasse um protocolo de exercícios específico.',
         'O que o exercício pode ajudar é o quadro em volta. Uma panturrilha tensa joga o peso para a parte da frente do pé durante a caminhada. Alongar o gastrocnêmio e o sóleo pode reduzir essa carga para a frente. Músculos pequenos do pé fracos também podem contribuir para uma distribuição desigual da pressão na parte da frente do pé. Abrir os dedos e o pé curto podem ajudar a dividir a carga de forma mais equilibrada entre as cabeças dos metatarsos, embora isso não tenha sido testado especificamente para sesamoidite.',
-        'Se você está se recuperando de uma sesamoidite e perdeu força nos dedos ou flexibilidade na panturrilha durante o período de descanso, exercícios leves para a região da [planta da parte da frente do pé](/pt/metatarsalgia-dor-na-planta-do-pe/) podem fazer parte de um plano de volta à atividade. Mas alívio de carga e ajuste de atividade são as ferramentas principais, não o exercício.',
+        'Se você está se recuperando de uma sesamoidite e perdeu força nos dedos ou flexibilidade na panturrilha durante o período de descanso, exercícios leves para a região da [planta da parte da frente do pé](/pt/metatarsalgia-dor-na-planta-do-pe/) podem fazer parte de um plano de volta à atividade. Mas **alívio de carga e ajuste de atividade são as ferramentas principais, não o exercício.**',
       ],
     },
     {
       h2: 'Qual a relação da sesamoidite com outros problemas da parte da frente do pé?',
       paragraphs: [
         'A dor da sesamoidite fica embaixo do dedão, o que a separa da [dor na planta do pé](/pt/metatarsalgia-dor-na-planta-do-pe/) mais geral (metatarsalgia), em que a dor costuma ficar sob a segunda e a terceira cabeça dos metatarsos. O [neuroma de Morton](/pt/neuroma-de-morton/) causa formigamento ou queimação entre o terceiro e o quarto dedo, não embaixo do dedão.',
-        'A gota também pode afetar a articulação do dedão e no começo parece parecida, mas a gota aparece de repente, muitas vezes de um dia para o outro, com vermelhidão, inchaço e calor. A sesamoidite aparece aos poucos. Se o início foi repentino e a articulação está vermelha e quente, procure um profissional de saúde para descartar gota ou infecção.',
+        'A gota também pode afetar a articulação do dedão e no começo parece parecida, mas a gota aparece de repente, muitas vezes de um dia para o outro, com vermelhidão, inchaço e calor. A sesamoidite aparece aos poucos. **Se o início foi repentino e a articulação está vermelha e quente, procure um profissional de saúde para descartar gota ou infecção.**',
         'O hálux rígido, rigidez e artrose da articulação do dedão, também pode causar dor em um lugar parecido, mas envolve a própria articulação, e não os ossos sesamoides embaixo dela.',
       ],
     },

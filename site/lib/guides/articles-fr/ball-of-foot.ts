@@ -56,8 +56,16 @@ export const BALL_OF_FOOT_FR: Guide = {
     {
       h2: 'Comment faire la différence entre ces problèmes\u00A0?',
       paragraphs: [
-        'L’emplacement est le premier indice. Une douleur étendue sous les deuxième et troisième têtes métatarsiennes oriente vers une métatarsalgie. Une douleur entre le troisième et le quatrième orteil, avec des fourmillements, évoque un névrome de Morton. Une douleur juste sous l’articulation du gros orteil correspond plutôt à une sésamoïdite. Un point localisé sur le dessus du pied avec un gonflement pose la question d’une fracture de fatigue.',
-        'Les fractures de fatigue ne se voient souvent pas sur une radiographie simple pendant les deux à trois premières semaines et peuvent demander une IRM. Une consultation vaut la peine quand la douleur dure plus de deux semaines malgré le repos et le changement de chaussures, ou quand il y a des fourmillements, une douleur la nuit ou un gonflement visible.',
+        'L’emplacement est le premier indice\u00A0:',
+        {
+          list: [
+            'Une douleur étendue sous les deuxième et troisième têtes métatarsiennes oriente vers une métatarsalgie.',
+            'Une douleur entre le troisième et le quatrième orteil, avec des fourmillements, évoque un névrome de Morton.',
+            'Une douleur juste sous l’articulation du gros orteil correspond plutôt à une sésamoïdite.',
+            'Un point localisé sur le dessus du pied avec un gonflement pose la question d’une fracture de fatigue.',
+          ],
+        },
+        'Les fractures de fatigue ne se voient souvent pas sur une radiographie simple pendant les deux à trois premières semaines et peuvent demander une IRM. **Une consultation vaut la peine** quand la douleur dure plus de deux semaines malgré le repos et le changement de chaussures, ou quand il y a des fourmillements, une douleur la nuit ou un gonflement visible.',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -65,7 +73,7 @@ export const BALL_OF_FOOT_FR: Guide = {
       h2: 'L’exercice aide-t-il en cas de douleur à l’avant-pied\u00A0?',
       keyFact: 'Dans une étude avant-après de 2020 sur 41\u00A0personnes atteintes de métatarsalgie primaire, un programme d’exercices des orteils de 8\u00A0semaines a réduit la douleur de 2,7\u00A0points en moyenne sur une échelle de 10, sans groupe témoin (Amaha et coll., 2020).',
       paragraphs: [
-        'Pour être honnête, les données sur l’exercice dans la métatarsalgie sont précoces et limitées. Elles sont bien plus minces que pour la [fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou la tendinite d’Achille, où il existe des essais randomisés.',
+        'Pour être honnête, **les données sur l’exercice dans la métatarsalgie sont précoces et limitées.** Elles sont bien plus minces que pour la [fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou la tendinite d’Achille, où il existe des essais randomisés.',
         'La meilleure étude à ce jour est une étude avant-après de 2020 sur 41\u00A0personnes (56\u00A0pieds) atteintes de métatarsalgie primaire. Un programme d’exercices des orteils de 8\u00A0semaines, surtout ramasser une serviette et attraper des billes avec les orteils, a fait baisser les scores de douleur de 2,7\u00A0points en moyenne sur une échelle de 10 et amélioré la force de préhension des orteils. Mais il n’y avait pas de groupe témoin\u00A0: l’amélioration pourrait donc en partie refléter une récupération naturelle. Les auteurs demandaient des essais randomisés.',
         'La logique est simple\u00A0: pendant la poussée, les orteils aident à partager la charge avec les têtes métatarsiennes. Quand les muscles fléchisseurs des orteils sont faibles, plus de force arrive sur les métatarsiens. L’étude de 2020 va dans ce sens, mais une seule étude non contrôlée n’est pas une preuve. Les personnes qui avaient des symptômes depuis plus d’un an se sont moins améliorées, tout comme celles qui avaient un IMC plus élevé.',
       ],
@@ -87,14 +95,15 @@ export const BALL_OF_FOOT_FR: Guide = {
       h2: 'Et les coussinets métatarsiens, les semelles et les chaussures\u00A0?',
       paragraphs: [
         'Les coussinets métatarsiens sont l’approche conservatrice la plus utilisée. Un coussinet placé juste derrière les têtes métatarsiennes soulève légèrement le corps de l’os et répartit la pression sur une plus grande surface. L’emplacement compte. Trop en avant, juste sous la tête, il peut aggraver la douleur.',
-        'Les chaussures à semelle en bascule (rocker) réduisent la pression sur l’avant-pied en laissant le pied se dérouler pendant la poussée sans plier au niveau des articulations métatarsiennes. Un avant de chaussure large évite que les têtes soient serrées les unes contre les autres. Abandonner les chaussures étroites ou à talons est souvent la première étape la plus simple.',
+        'Les chaussures à semelle en bascule (rocker) réduisent la pression sur l’avant-pied en laissant le pied se dérouler pendant la poussée sans plier au niveau des articulations métatarsiennes. Un avant de chaussure large évite que les têtes soient serrées les unes contre les autres. **Abandonner les chaussures étroites ou à talons est souvent la première étape la plus simple.**',
         'Les coussinets et les chaussures changent la répartition de la charge. L’exercice construit la force et la souplesse pour supporter cette charge. Quand le fait de [rester debout toute la journée](/fr/mal-aux-pieds-debout-toute-la-journee/) fait partie du problème, les deux comptent.',
       ],
     },
     {
       h2: 'Quels exercices pour la douleur à l’avant-pied\u00A0?',
       paragraphs: [
-        'Ces exercices ciblent deux côtés du problème\u00A0: la force des orteils et des muscles intrinsèques du pied (pour partager la charge pendant la poussée) et la souplesse du mollet (pour éviter de surcharger l’avant-pied). Aucun n’a été testé dans un essai randomisé pour la métatarsalgie en particulier. Quand vous touchez la zone de l’avant-pied sur la carte de la douleur de Walkito pendant un bilan, la séance de soulagement propose d’écarter les orteils et l’étirement du fascia plantaire. La zone des orteils propose d’écarter les orteils et le pied court assis.',
+        'Ces exercices ciblent deux côtés du problème\u00A0: la force des orteils et des muscles intrinsèques du pied (pour partager la charge pendant la poussée) et la souplesse du mollet (pour éviter de surcharger l’avant-pied). Aucun n’a été testé dans un essai randomisé pour la métatarsalgie en particulier.',
+        'Quand vous touchez la zone de l’avant-pied sur la carte de la douleur de Walkito pendant un bilan, la séance de soulagement propose d’écarter les orteils et l’étirement du fascia plantaire. La zone des orteils propose d’écarter les orteils et le pied court assis.',
       ],
       exercises: [
         {
@@ -181,7 +190,8 @@ export const BALL_OF_FOOT_FR: Guide = {
       h2: 'Ce que les données disent, et ce qu’elles ne disent pas',
       paragraphs: [
         'Les données sur l’exercice dans la douleur à l’avant-pied sont plus minces que pour la [fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou la tendinite d’Achille, où il existe des essais randomisés. Pour la métatarsalgie, il y a une seule étude avant-après sur 41\u00A0personnes, sans groupe témoin. Le raisonnement mécanique tient, et le risque d’exercices doux des orteils et d’étirements du mollet est faible, mais la preuve directe d’un essai contrôlé manque.',
-        'L’exercice seul peut ne pas suffire. Les coussinets métatarsiens, les chaussures à l’avant large et moins de temps en talons font l’objet d’un consensus clinique plus large. Pour le névrome de Morton, changer de chaussures et ajouter un coussinet est souvent plus efficace que l’exercice. Pour une fracture de fatigue d’un métatarsien, l’exercice n’est pas la bonne approche tant que l’os n’a pas récupéré. Si la douleur dure depuis plus de quelques semaines, ou s’accompagne d’un engourdissement ou d’un gonflement, faites-la d’abord examiner. [Douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) traite de la gestion de la charge chez les coureurs.',
+        '**L’exercice seul peut ne pas suffire.** Les coussinets métatarsiens, les chaussures à l’avant large et moins de temps en talons font l’objet d’un consensus clinique plus large.',
+        'Pour le névrome de Morton, changer de chaussures et ajouter un coussinet est souvent plus efficace que l’exercice. Pour une fracture de fatigue d’un métatarsien, l’exercice n’est pas la bonne approche tant que l’os n’a pas récupéré. Si la douleur dure depuis plus de quelques semaines, ou s’accompagne d’un engourdissement ou d’un gonflement, faites-la d’abord examiner. [Douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) traite de la gestion de la charge chez les coureurs.',
       ],
       cites: [CITE.amaha, CITE.rathleff],
     },

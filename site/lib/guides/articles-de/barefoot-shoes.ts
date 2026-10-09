@@ -25,7 +25,16 @@ export const BAREFOOT_DE: Guide = {
     {
       h2: 'Was sind Barfußschuhe?',
       paragraphs: [
-        'Barfußschuhe sind Schuhe, die deinem Fuß so wenig wie möglich im Weg sein sollen. Die meisten haben vier Merkmale gemeinsam: eine dünne Sohle, durch die du den Boden spürst, eine Sohle, die sich leicht biegen und verdrehen lässt, null Sprengung (die Ferse liegt auf derselben Höhe wie die Zehen) und eine breite Zehenbox, damit sich die Zehen spreizen können. Sie haben keine Gewölbestütze und kaum Dämpfung.',
+        'Barfußschuhe sind Schuhe, die deinem Fuß so wenig wie möglich im Weg sein sollen. Die meisten haben vier Merkmale gemeinsam:',
+        {
+          list: [
+            'Eine dünne Sohle, durch die du den Boden spürst.',
+            'Eine Sohle, die sich leicht biegen und verdrehen lässt.',
+            'Null Sprengung (die Ferse liegt auf derselben Höhe wie die Zehen).',
+            'Eine breite Zehenbox, damit sich die Zehen spreizen können.',
+          ],
+        },
+        'Sie haben keine Gewölbestütze und kaum Dämpfung.',
         'Forschende nennen sie minimalistische Schuhe oder Minimalschuhe. Die Idee ist einfach: Ein Schuh, der den Fuß stützt und dämpft, übernimmt einen Teil der Arbeit, die sonst die kleinen Fußmuskeln leisten würden. Nimm diese Stütze weg, und die Muskeln arbeiten mehr. Für alle mit Fußschmerzen ist die Frage, ob diese Mehrarbeit hilft oder schadet.',
       ],
     },
@@ -33,10 +42,18 @@ export const BAREFOOT_DE: Guide = {
       h2: 'Machen Barfußschuhe die Füße stärker?',
       keyFact: 'Erwachsene, die sechs Monate lang im Alltag Minimalschuhe trugen, gewannen im Schnitt 57,4\u00A0% an Zehenkraft (Curtis und Kollegen, 2021).',
       paragraphs: [
-        'Ja, bei Erwachsenen ohne Fußschmerzen weisen die Belege in diese Richtung. In einer randomisierten Studie von 2019 teilten Ridge und Kollegen 57\u00A0Läuferinnen und Läufer in drei Gruppen auf: in Minimalschuhen gehen, Fußkräftigungsübungen machen oder nichts ändern. Die Gehgruppe steigerte langsam, wie viele Schritte pro Tag sie in den neuen Schuhen machte. Nach etwa zwei Monaten war jeder gemessene Fußmuskel in beiden aktiven Gruppen größer und kräftiger, in der Kontrollgruppe unverändert. Gehen in den Schuhen wirkte etwa so gut wie die Übungen.',
+        'Ja, bei Erwachsenen ohne Fußschmerzen weisen die Belege in diese Richtung. In einer randomisierten Studie von 2019 teilten Ridge und Kollegen 57\u00A0Läuferinnen und Läufer in drei Gruppen auf:',
+        {
+          list: [
+            'In Minimalschuhen gehen.',
+            'Fußkräftigungsübungen machen.',
+            'Nichts ändern.',
+          ],
+        },
+        'Die Gehgruppe steigerte langsam, wie viele Schritte pro Tag sie in den neuen Schuhen machte. Nach etwa zwei Monaten war jeder gemessene Fußmuskel in beiden aktiven Gruppen größer und kräftiger, in der Kontrollgruppe unverändert. Gehen in den Schuhen wirkte etwa so gut wie die Übungen.',
         'Curtis und Kollegen machten 2021 eine längere Studie. Zweiundzwanzig Erwachsene trugen sechs Monate lang im Alltag Minimalschuhe (nicht zum Laufen), und 24 behielten ihre üblichen Schuhe. Die Zehenkraft stieg bei denen, die umgestiegen waren, im Schnitt um 57,4\u00A0%. Die Studie war nicht randomisiert und nahm nur Menschen ohne kürzliche Probleme an Bein oder Fuß auf.',
         'Eine Übersichtsarbeit von 2025 über 28\u00A0Studien von Peters-Dickie und Kollegen fand, dass Minimalschuhe die Kraft der kleineren Zehen steigerten. Sie bewertete die Vertrauenswürdigkeit der Belege als gering bis sehr gering.',
-        'Kräftigere Fußmuskeln sind nicht dasselbe wie weniger Fußschmerzen. Keine dieser Studien hat Schmerz gemessen oder Menschen mit einer Fußerkrankung eingeschlossen. Ein komplettes Set an Übungen, die dieselben Muskeln aufbauen, findest du unter [Übungen zum Kräftigen der Füße](/de/fuss-kraeftigen-uebungen/).',
+        '**Kräftigere Fußmuskeln sind nicht dasselbe wie weniger Fußschmerzen.** Keine dieser Studien hat Schmerz gemessen oder Menschen mit einer Fußerkrankung eingeschlossen. Ein komplettes Set an Übungen, die dieselben Muskeln aufbauen, findest du unter [Übungen zum Kräftigen der Füße](/de/fuss-kraeftigen-uebungen/).',
       ],
       sourceNote:
         'Curtis 2021: Fußkraft gemessen als maximale isometrische Plantarflexionskraft an den Zehengelenken, p < 0,001. Peters-Dickie 2025: 28\u00A0Studien, 1.399\u00A0Teilnehmende.',
@@ -46,9 +63,16 @@ export const BAREFOOT_DE: Guide = {
       h2: 'Sind Barfußschuhe schlecht? Das Risiko liegt im Umstieg',
       keyFact: 'Nach etwa zweieinhalb Monaten Umstieg auf minimalistische Laufschuhe zeigten 10 von 19\u00A0Läuferinnen und Läufern im MRT neuen oder stärkeren Knochenstress (Ridge und Kollegen, 2013).',
       paragraphs: [
-        'Das Hauptrisiko sind nicht die Schuhe. Es ist das Tempo des Umstiegs. Deine Fußknochen, Muskeln, Wade und Achillessehne haben sich an deine jetzigen Schuhe angepasst und brauchen Zeit, um mehr Last zu tragen.',
-        'Ridge und Kollegen haben das 2013 gezeigt. Sie untersuchten die Füße von 36\u00A0erfahrenen Läuferinnen und Läufern im MRT. Neunzehn stiegen über etwa zweieinhalb Monate schrittweise auf minimalistische Laufschuhe um, und 17 behielten ihre normalen Schuhe. Danach hatten 10 der 19, die umgestiegen waren, in mindestens einem Fußknochen ein neues oder stärkeres Knochenmarködem (Flüssigkeit im Knochen, ein frühes Zeichen für Knochenstress), signifikant mehr als die, die nicht umgestiegen waren. Die Autoren rieten, den Umstieg „sehr langsam und schrittweise“ zu machen.',
-        'Zwei randomisierte Studien weisen in dieselbe Richtung. In der Studie von Ryan und Kollegen mit 103\u00A0Läuferinnen und Läufern, die drei Monate lang für einen 10-km-Lauf trainierten, gab es in der Gruppe mit teilweise minimalistischen Schuhen 12\u00A0Verletzungen gegenüber 4 in der Gruppe mit normalen Schuhen, und die Gruppe mit voll minimalistischen Schuhen berichtete mehr Schmerzen an Schienbein und Wade. In der sechsmonatigen Studie von Fuller und Kollegen mit 61\u00A0Läuferinnen und Läufern waren die Laufschmerzen in Minimalschuhen höher, deutlich ab etwa 35\u00A0km pro Woche, und das Verletzungsrisiko stieg mit dem Körpergewicht. Der Unterschied bei den Verletzungen insgesamt (16 von 31 gegenüber 11 von 30) könnte Zufall gewesen sein.',
+        'Das Hauptrisiko sind nicht die Schuhe. **Es ist das Tempo des Umstiegs.** Deine Fußknochen, Muskeln, Wade und Achillessehne haben sich an deine jetzigen Schuhe angepasst und brauchen Zeit, um mehr Last zu tragen.',
+        'Ridge und Kollegen haben das 2013 gezeigt. Sie untersuchten die Füße von 36\u00A0erfahrenen Läuferinnen und Läufern im MRT. Neunzehn stiegen über etwa zweieinhalb Monate schrittweise auf minimalistische Laufschuhe um, und 17 behielten ihre normalen Schuhe.',
+        'Danach hatten 10 der 19, die umgestiegen waren, in mindestens einem Fußknochen ein neues oder stärkeres Knochenmarködem (Flüssigkeit im Knochen, ein frühes Zeichen für Knochenstress), signifikant mehr als die, die nicht umgestiegen waren. Die Autoren rieten, den Umstieg „sehr langsam und schrittweise“ zu machen.',
+        'Zwei randomisierte Studien weisen in dieselbe Richtung:',
+        {
+          list: [
+            'In der Studie von Ryan und Kollegen mit 103\u00A0Läuferinnen und Läufern, die drei Monate lang für einen 10-km-Lauf trainierten, gab es in der Gruppe mit teilweise minimalistischen Schuhen 12\u00A0Verletzungen gegenüber 4 in der Gruppe mit normalen Schuhen, und die Gruppe mit voll minimalistischen Schuhen berichtete mehr Schmerzen an Schienbein und Wade.',
+            'In der sechsmonatigen Studie von Fuller und Kollegen mit 61\u00A0Läuferinnen und Läufern waren die Laufschmerzen in Minimalschuhen höher, deutlich ab etwa 35\u00A0km pro Woche, und das Verletzungsrisiko stieg mit dem Körpergewicht. Der Unterschied bei den Verletzungen insgesamt (16 von 31 gegenüber 11 von 30) könnte Zufall gewesen sein.',
+          ],
+        },
         'Das waren Läuferinnen und Läufer. Gehen belastet den Fuß viel weniger, und das ist ein Grund, warum die Kraftstudien Gehen genutzt haben. Wenn du läufst und [Fersenschmerzen](/heel-pain-runners/) (auf Englisch) hast, ist ein plötzlicher Schuhwechsel eine weitere Belastungsänderung, die dein Fuß nicht braucht.',
       ],
       sourceNote:
@@ -64,9 +88,15 @@ export const BAREFOOT_DE: Guide = {
         alt: 'Ein Fuß von der Innenseite, die Plantarfaszie ist als Band von der Ferse bis zum Fußballen hervorgehoben.',
       },
       paragraphs: [
-        'Es gibt keine guten Belege, dass Barfußschuhe eine Plantarfasziitis lindern (Schmerz dort, wo das kräftige Band unter deinem Fuß an der Ferse ansetzt). Es gibt aber auch keine Studie, die zeigt, dass sie sie auslösen. Starke Behauptungen in die eine oder andere Richtung im Netz stammen meist von Herstellern von Schuhen und Einlagen.',
-        'Das wurde getestet. In einer randomisierten Studie von 2026 gaben Xu und Kollegen Erwachsenen mit Plantarfasziitis etwa zwei Monate lang Fußübungen, 34 schlossen ab. Etwa die Hälfte trug zusätzlich Minimalschuhe. Die Zehenkraft stieg in beiden Gruppen, und die Schuhe brachten nicht klar etwas dazu. Das Gleichgewicht änderte sich in keiner Gruppe. Dieser Bericht hat den Schmerz nicht erfasst, und der Schuhhersteller stellte die Schuhe.',
-        'In einer kleinen Studie von 2022 mit 36\u00A0Frauen mit Plantarfasziitis verglichen Ribeiro und Kollegen über sechs Monate flexible Minimalschuhe allein, dieselben Schuhe plus eine maßgefertigte Einlage und übliche Schuhberatung. Nur die Gruppe mit Einlage hatte klar weniger Fersenschmerz als die Gruppe mit üblicher Beratung. Eine Fallserie von 2022 mit 20\u00A0Läuferinnen und Läufern berichtete weniger Schmerz nach etwa anderthalb Monaten Barfußlaufen auf Gras, hatte aber keine Vergleichsgruppe, und ein Autor wird von einer Barfußschuh-Marke finanziert.',
+        '**Es gibt keine guten Belege, dass Barfußschuhe eine Plantarfasziitis lindern** (Schmerz dort, wo das kräftige Band unter deinem Fuß an der Ferse ansetzt). Es gibt aber auch keine Studie, die zeigt, dass sie sie auslösen. Starke Behauptungen in die eine oder andere Richtung im Netz stammen meist von Herstellern von Schuhen und Einlagen.',
+        'Das wurde getestet:',
+        {
+          list: [
+            'In einer randomisierten Studie von 2026 gaben Xu und Kollegen Erwachsenen mit Plantarfasziitis etwa zwei Monate lang Fußübungen, 34 schlossen ab. Etwa die Hälfte trug zusätzlich Minimalschuhe. Die Zehenkraft stieg in beiden Gruppen, und die Schuhe brachten nicht klar etwas dazu. Das Gleichgewicht änderte sich in keiner Gruppe. Dieser Bericht hat den Schmerz nicht erfasst, und der Schuhhersteller stellte die Schuhe.',
+            'In einer kleinen Studie von 2022 mit 36\u00A0Frauen mit Plantarfasziitis verglichen Ribeiro und Kollegen über sechs Monate flexible Minimalschuhe allein, dieselben Schuhe plus eine maßgefertigte Einlage und übliche Schuhberatung. Nur die Gruppe mit Einlage hatte klar weniger Fersenschmerz als die Gruppe mit üblicher Beratung.',
+            'Eine Fallserie von 2022 mit 20\u00A0Läuferinnen und Läufern berichtete weniger Schmerz nach etwa anderthalb Monaten Barfußlaufen auf Gras, hatte aber keine Vergleichsgruppe, und ein Autor wird von einer Barfußschuh-Marke finanziert.',
+          ],
+        },
         'Die US-Leitlinie von 2023 zu Fersenschmerzen empfiehlt Dehnen von Wade und Plantarfaszie (Bewertung A) und Krafttraining (Bewertung B). Minimalschuhe empfiehlt sie nicht, und sie nennt Schuhwerk, das die Belastung senkt, als Teil der Beratung für Betroffene. Wenn deine Ferse jetzt wehtut, fang mit den [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) an, und unter [Einlagen oder Übungen](/de/einlagen-oder-uebungen/) liest du, was eine Stütze unter dem Fuß kann und was nicht.',
       ],
       cites: [CITE.xuFrames, CITE.ribeiroShoes, CITE.macgabhannGrass, CITE.guideline],
@@ -74,7 +104,8 @@ export const BAREFOOT_DE: Guide = {
     {
       h2: 'Ist Barfußgehen zu Hause okay, wenn die Ferse wehtut?',
       paragraphs: [
-        'Sei vorsichtig mit harten Böden, vor allem gleich am Morgen. Keine Studie hat Barfußgehen zu Hause bei Fersenschmerzen getestet, das ist also ein vorsichtiger Rat, keine getestete Regel. Fliesen oder Holz geben der Ferse keine Dämpfung, und die ersten Schritte nach einer Ruhepause sind der Moment, in dem eine Plantarfasziitis meist am stärksten wehtut. Unsere Seite zu [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) schlägt eine Dehnung vor dem Aufstehen vor und etwas an den Füßen für diese ersten Schritte.',
+        '**Sei vorsichtig mit harten Böden, vor allem gleich am Morgen.** Keine Studie hat Barfußgehen zu Hause bei Fersenschmerzen getestet, das ist also ein vorsichtiger Rat, keine getestete Regel.',
+        'Fliesen oder Holz geben der Ferse keine Dämpfung, und die ersten Schritte nach einer Ruhepause sind der Moment, in dem eine Plantarfasziitis meist am stärksten wehtut. Unsere Seite zu [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) schlägt eine Dehnung vor dem Aufstehen vor und etwas an den Füßen für diese ersten Schritte.',
         'Dämpfung unter der Ferse spielt womöglich eine Rolle. In einer Studie von 2023 verglichen Landorf und Kollegen 50\u00A0Menschen mit Fersenschmerzen mit 25 passenden Menschen ohne. Die mit Fersenschmerzen standen am Tag 3,4\u00A0Stunden länger und trugen Schuhe mit härteren Absätzen. Das zeigt einen Zusammenhang, keine Ursache.',
         'Ein tiefer Schmerz mitten in der Ferse, der barfuß auf hartem Boden schlimmer ist, kann auch vom Fersenfettpolster kommen (dem Fettpolster unter dem Fersenbein). Zu diesem Muster siehe [Fersenfettpolster-Syndrom](/de/fersenfettpolster-syndrom/).',
         'Kurze Zeiten barfuß auf Gras oder Sand sind schonender. Wenn sie deinen Fersenschmerz am nächsten Morgen verstärken, war es zu viel.',
@@ -90,10 +121,17 @@ export const BAREFOOT_DE: Guide = {
         alt: 'Drei Füße von der Innenseite: ein Plattfuß mit dem Gewölbe am Boden, ein typisches Gewölbe mit kleinem Spalt und ein Hohlfuß mit großem Spalt.',
       },
       paragraphs: [
-        'Es gibt Hinweise, aber keine Studie. Holowka und Kollegen verglichen 75\u00A0Tarahumara-Männer in Mexiko, die die meiste Zeit ihres Lebens dünne Sandalen tragen, mit 26\u00A0Männern aus den USA, die normale Schuhe tragen. Die Sandalenträger hatten höhere, steifere Gewölbe und größere Muskeln entlang des inneren und äußeren Fußrands. Nur einer der 75 hatte ein flaches Gewölbe, gegenüber 8 der 26 US-Männer (31\u00A0%).',
+        '**Es gibt Hinweise, aber keine Studie.** Holowka und Kollegen verglichen 75\u00A0Tarahumara-Männer in Mexiko, die die meiste Zeit ihres Lebens dünne Sandalen tragen, mit 26\u00A0Männern aus den USA, die normale Schuhe tragen. Die Sandalenträger hatten höhere, steifere Gewölbe und größere Muskeln entlang des inneren und äußeren Fußrands. Nur einer der 75 hatte ein flaches Gewölbe, gegenüber 8 der 26 US-Männer (31\u00A0%).',
         'Eine ältere Erhebung an 2.300\u00A0Kindern in Indien von Rao und Joseph aus dem Jahr 1992 fand Plattfüße bei 8,6\u00A0% der Kinder, die Schuhe trugen, und bei 2,8\u00A0% derer, die keine trugen. Am häufigsten waren Plattfüße bei Kindern, die geschlossene Schuhe trugen.',
         'Beide Studien vergleichen Gruppen, die sich in vielem unterscheiden. Sie können also nicht zeigen, dass Schuhe Plattfüße verursachen oder dass neue Schuhe das Gewölbe bei Erwachsenen anheben. Das hat keine Studie getestet.',
-        'Wichtiger ist die Art des Plattfußes. Ein flexibler Plattfuß (das Gewölbe kommt zurück, wenn du sitzt oder auf die Zehen gehst) lässt sich meist gut belasten und kräftigen, und ein schrittweiser Umstieg auf flachere Schuhe ist vernünftig, wenn sich deine Füße gut anfühlen. Ein steifer Plattfuß oder einer, der schmerzt, flacher wird oder auf einer Seite schlimmer ist, gehört zuerst zu einer medizinischen Fachperson. Unsere Seite zum [Plattfuß](/de/plattfuss/) erklärt den Unterschied.',
+        'Wichtiger ist die Art des Plattfußes:',
+        {
+          list: [
+            'Ein flexibler Plattfuß (das Gewölbe kommt zurück, wenn du sitzt oder auf die Zehen gehst) lässt sich meist gut belasten und kräftigen, und ein schrittweiser Umstieg auf flachere Schuhe ist vernünftig, wenn sich deine Füße gut anfühlen.',
+            'Ein steifer Plattfuß oder einer, der schmerzt, flacher wird oder auf einer Seite schlimmer ist, gehört zuerst zu einer medizinischen Fachperson.',
+          ],
+        },
+        'Unsere Seite zum [Plattfuß](/de/plattfuss/) erklärt den Unterschied.',
       ],
       cites: [CITE.holowkaShod, CITE.raoFootwear],
     },
@@ -117,7 +155,7 @@ export const BAREFOOT_DE: Guide = {
     {
       h2: 'Wie steigst du sicher auf Barfußschuhe um?',
       paragraphs: [
-        'Langsam, und danach, wie deine Füße reagieren, nicht nach Kalender. Keine Studie hat einen Zeitplan gefunden, der für alle passt. Die Kraftstudien steigerten die Schrittzahl schrittweise und ließen die Teilnehmenden in den neuen Schuhen nicht laufen. Die Laufstudien sahen selbst mit schrittweisen Plänen mehr Schmerzen und Knochenstress.',
+        '**Langsam, und danach, wie deine Füße reagieren, nicht nach Kalender.** Keine Studie hat einen Zeitplan gefunden, der für alle passt. Die Kraftstudien steigerten die Schrittzahl schrittweise und ließen die Teilnehmenden in den neuen Schuhen nicht laufen. Die Laufstudien sahen selbst mit schrittweisen Plänen mehr Schmerzen und Knochenstress.',
       ],
       bullets: [
         'Erst gehen, dann laufen. Fang mit kurzen Zeiten im Alltag an und trag den Rest des Tages deine üblichen Schuhe.',

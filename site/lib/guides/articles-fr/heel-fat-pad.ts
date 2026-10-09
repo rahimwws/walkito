@@ -76,8 +76,17 @@ export const HEEL_FAT_PAD_FR: Guide = {
     {
       h2: 'Pourquoi le coussinet graisseux du talon s’amincit-il\u00A0?',
       paragraphs: [
-        'L’âge est le facteur principal. À partir de 40\u00A0ans environ, le coussinet perd naturellement de l’eau, du collagène et de l’élasticité. Des années d’activité à fort impact, de longues stations debout sur sol dur et la marche pieds nus accélèrent le processus.',
-        'Les autres facteurs de risque comprennent un poids plus élevé (plus de force à chaque pas), des infiltrations de corticoïdes répétées dans le talon (la cortisone peut dégrader le tissu graisseux), le diabète, le pied creux (qui concentre la charge sur le talon et l’avant-pied) et des antécédents familiaux de problèmes du tissu conjonctif.',
+        '**L’âge est le facteur principal.** À partir de 40\u00A0ans environ, le coussinet perd naturellement de l’eau, du collagène et de l’élasticité. Des années d’activité à fort impact, de longues stations debout sur sol dur et la marche pieds nus accélèrent le processus.',
+        'Les autres facteurs de risque comprennent\u00A0:',
+        {
+          list: [
+            'Un poids plus élevé (plus de force à chaque pas).',
+            'Des infiltrations de corticoïdes répétées dans le talon (la cortisone peut dégrader le tissu graisseux).',
+            'Le diabète.',
+            'Le pied creux (qui concentre la charge sur le talon et l’avant-pied).',
+            'Des antécédents familiaux de problèmes du tissu conjonctif.',
+          ],
+        },
         'Contrairement à un muscle ou à un tendon, le coussinet graisseux ne se reconstruit pas avec l’exercice ou le repos. Une fois aminci, l’objectif pratique est de protéger ce qui reste et de réduire les chocs qui arrivent jusqu’à l’os du talon.',
       ],
       cites: [CITE.fatPadReview, CITE.yiFatPad],
@@ -86,18 +95,28 @@ export const HEEL_FAT_PAD_FR: Guide = {
       h2: 'Qu’est-ce qui aide la douleur du coussinet graisseux du talon\u00A0?',
       keyFact: 'Un seul cas clinique a rapporté un soulagement de la douleur avec des talonnettes en gel de silicone à un et trois mois, mais aucun essai randomisé n’a testé les talonnettes ou le strapping pour ce problème (Chang et coll., 2022).',
       paragraphs: [
-        'Les premières mesures les plus souvent conseillées pour le syndrome du coussinet graisseux du talon sont externes\u00A0: talonnettes viscoélastiques, semelles amortissantes et chaussures à semelle épaisse qui absorbe les chocs. Elles visent à remplacer l’amorti que le coussinet n’assure plus.',
-        'La revue exploratoire de 2022 a relevé un manque gênant\u00A0: aucun essai contrôlé randomisé n’a testé les talonnettes ou le strapping spécifiquement pour le syndrome du coussinet graisseux du talon. Un seul cas clinique a décrit un soulagement de la douleur avec des talonnettes en gel de silicone après un et trois mois. Quelques petits essais du strapping low-dye pour la douleur sous le talon en général rapportent une baisse modeste des scores de douleur par rapport à un faux traitement ou à l’absence de traitement, mais aucun ne distingue le syndrome du coussinet graisseux des autres causes de douleur au talon, donc l’ampleur d’un éventuel bénéfice ici n’est pas connue.',
-        'Malgré des preuves faibles, la logique est simple\u00A0: si le coussin a disparu, en ajouter un de l’extérieur est une démarche raisonnable. Évitez de marcher pieds nus sur un sol dur. Choisissez des chaussures au talon bien amorti et évitez les chaussures plates à semelle fine. Ce sont des recommandations de consensus, pas des mesures testées par des essais, et cette page le dit clairement.',
+        'Les premières mesures les plus souvent conseillées pour le syndrome du coussinet graisseux du talon sont externes\u00A0:',
+        {
+          list: [
+            'Talonnettes viscoélastiques.',
+            'Semelles amortissantes.',
+            'Chaussures à semelle épaisse qui absorbe les chocs.',
+          ],
+        },
+        'Elles visent à remplacer l’amorti que le coussinet n’assure plus.',
+        'La revue exploratoire de 2022 a relevé un manque gênant\u00A0: aucun essai contrôlé randomisé n’a testé les talonnettes ou le strapping spécifiquement pour le syndrome du coussinet graisseux du talon. Un seul cas clinique a décrit un soulagement de la douleur avec des talonnettes en gel de silicone après un et trois mois.',
+        'Quelques petits essais du strapping low-dye pour la douleur sous le talon en général rapportent une baisse modeste des scores de douleur par rapport à un faux traitement ou à l’absence de traitement, mais aucun ne distingue le syndrome du coussinet graisseux des autres causes de douleur au talon, donc l’ampleur d’un éventuel bénéfice ici n’est pas connue.',
+        'Malgré des preuves faibles, la logique est simple\u00A0: **si le coussin a disparu, en ajouter un de l’extérieur est une démarche raisonnable.** Évitez de marcher pieds nus sur un sol dur. Choisissez des chaussures au talon bien amorti et évitez les chaussures plates à semelle fine. Ce sont des recommandations de consensus, pas des mesures testées par des essais, et cette page le dit clairement.',
       ],
       cites: [CITE.fatPadReview],
     },
     {
       h2: 'Les exercices aident-ils le syndrome du coussinet graisseux du talon\u00A0?',
       paragraphs: [
-        'Les exercices ne peuvent pas reconstruire un coussinet graisseux aminci. C’est un changement de structure, pas une faiblesse musculaire. Mais l’exercice peut quand même jouer un rôle pour aider le pied à faire avec le problème.',
+        '**Les exercices ne peuvent pas reconstruire un coussinet graisseux aminci.** C’est un changement de structure, pas une faiblesse musculaire. Mais l’exercice peut quand même jouer un rôle pour aider le pied à faire avec le problème.',
         'La force du mollet compte, car un mollet plus fort absorbe une plus grande part de la force de réception avant qu’elle n’atteigne le talon. C’est la même logique de charge que celle des programmes de montées sur pointes pour la fasciite plantaire, mais pour le syndrome du coussinet graisseux, le but est de mieux répartir la charge, pas de réparer un tissu. Le travail des muscles intrinsèques du pied (exercice du pied court, écarter les orteils) peut aider le pied à gérer le contact avec le sol.',
-        'Les preuves pour ces exercices dans le syndrome du coussinet graisseux en particulier sont absentes. Aucun essai ne les a testés pour ce problème. Ils sont empruntés à la littérature plus large sur la douleur au talon et la force du pied. Les exercices de Walkito sont conçus autour de la fasciite plantaire et de la force du pied. Ils sont un complément raisonnable si votre professionnel de santé a confirmé une atrophie du coussinet graisseux, mais ils n’ont pas été testés spécifiquement pour elle, et il vaut mieux le savoir.',
+        'Les preuves pour ces exercices dans le syndrome du coussinet graisseux en particulier sont absentes. Aucun essai ne les a testés pour ce problème. Ils sont empruntés à la littérature plus large sur la douleur au talon et la force du pied.',
+        'Les exercices de Walkito sont conçus autour de la fasciite plantaire et de la force du pied. Ils sont un complément raisonnable si votre professionnel de santé a confirmé une atrophie du coussinet graisseux, mais ils n’ont pas été testés spécifiquement pour elle, et il vaut mieux le savoir.',
       ],
       exercises: [
         {

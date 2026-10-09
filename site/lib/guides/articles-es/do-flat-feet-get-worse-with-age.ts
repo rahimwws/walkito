@@ -30,7 +30,18 @@ export const FLAT_FEET_AGE_ES: Guide = {
       keyFact: 'En una comparación entre 50 adultos jóvenes (edad promedio de 20,9) y 50 adultos mayores (edad promedio de 80,2) sin problemas de pie, los pies mayores eran más planos y más pronados (Scott y colegas, 2007).',
       figure: { id: 'arches', caption: 'Los mismos huesos del pie con pie plano, arco típico y arco alto, vistos desde el lado interno.', alt: 'Tres pies vistos desde el lado interno sobre un piso plano: un pie plano con el arco apoyado en el piso, un arco típico con un pequeño espacio debajo y un arco alto con un gran espacio bajo el centro del pie.' },
       paragraphs: [
-        'El pie plano tiende a aplanarse un poco más con la edad, igual que la mayoría de los pies. En un estudio de 2007 de la Universidad La Trobe, los investigadores compararon a 50\u00A0adultos jóvenes (edad promedio de 20,9\u00A0años) con 50\u00A0adultos mayores (edad promedio de 80,2\u00A0años). Nadie en ninguno de los dos grupos tenía problemas de pie. El grupo mayor tenía pies más planos y más pronados (pronado quiere decir que el pie se va hacia adentro), tobillos y articulaciones del dedo gordo más rígidos, músculos de los dedos más débiles, más juanetes y menos sensibilidad en las plantas. Al caminar, la parte media del pie se quedaba en el piso durante una parte de cada paso un 14\u00A0% mayor.',
+        '**El pie plano tiende a aplanarse un poco más con la edad, igual que la mayoría de los pies.** En un estudio de 2007 de la Universidad La Trobe, los investigadores compararon a 50\u00A0adultos jóvenes (edad promedio de 20,9\u00A0años) con 50\u00A0adultos mayores (edad promedio de 80,2\u00A0años). Nadie en ninguno de los dos grupos tenía problemas de pie.',
+        'El grupo mayor tenía:',
+        {
+          list: [
+            'Pies más planos y más pronados (pronado quiere decir que el pie se va hacia adentro).',
+            'Tobillos y articulaciones del dedo gordo más rígidos.',
+            'Músculos de los dedos más débiles.',
+            'Más juanetes.',
+            'Menos sensibilidad en las plantas.',
+          ],
+        },
+        'Al caminar, la parte media del pie se quedaba en el piso durante una parte de cada paso un 14\u00A0% mayor.',
         'Esto tiene un límite importante. El estudio comparó a dos grupos distintos de personas en un solo momento. No siguió a los mismos pies durante 60\u00A0años. Así que muestra que los pies mayores son más planos en promedio, pero no qué tan rápido cambia un pie en particular, ni si un pie que ya era plano cambia más o menos que uno típico. No encontramos ningún estudio que haya seguido el pie plano de toda la vida durante décadas.',
         'En la mayoría de las personas, el cambio lento pasa en los dos pies, sin una fecha clara de inicio y muchas veces sin dolor. Un cambio rápido y de un solo lado es otra historia, y se explica más abajo.',
       ],
@@ -39,8 +50,18 @@ export const FLAT_FEET_AGE_ES: Guide = {
     {
       h2: '¿Por qué baja el arco con los años?',
       paragraphs: [
-        'El arco se sostiene gracias a los huesos, los ligamentos (las bandas resistentes que unen los huesos), la fascia plantar debajo del pie y los músculos. El músculo principal es el tibial posterior, un músculo profundo de la pantorrilla cuyo tendón pasa por detrás del hueso interno del tobillo y jala el arco hacia arriba en cada paso. Los músculos pequeños dentro del pie también ayudan.',
-        'Varios de estos cambian con la edad. En la comparación de 2007, el grupo mayor también tenía músculos de los dedos más débiles y tobillos más rígidos, aunque el estudio no probó si eso causaba los pies más planos. El peso también importa. Una revisión de 2023 de 12\u00A0estudios de población, con unas 16\u00A0000\u00A0personas, encontró que el pie plano era más común en personas con obesidad, con probabilidades unas 2,6\u00A0veces más altas. Esa revisión midió qué tan común era el pie plano en un solo momento. No probó si subir de peso hace que un arco baje.',
+        'El arco se sostiene gracias a:',
+        {
+          list: [
+            'Los huesos.',
+            'Los ligamentos (las bandas resistentes que unen los huesos).',
+            'La fascia plantar debajo del pie.',
+            'Los músculos.',
+          ],
+        },
+        'El músculo principal es el tibial posterior, un músculo profundo de la pantorrilla cuyo tendón pasa por detrás del hueso interno del tobillo y jala el arco hacia arriba en cada paso. Los músculos pequeños dentro del pie también ayudan.',
+        'Varios de estos cambian con la edad. En la comparación de 2007, el grupo mayor también tenía músculos de los dedos más débiles y tobillos más rígidos, aunque el estudio no probó si eso causaba los pies más planos.',
+        'El peso también importa. Una revisión de 2023 de 12\u00A0estudios de población, con unas 16\u00A0000\u00A0personas, encontró que el pie plano era más común en personas con obesidad, con probabilidades unas 2,6\u00A0veces más altas. Esa revisión midió qué tan común era el pie plano en un solo momento. No probó si subir de peso hace que un arco baje.',
       ],
       cites: [CITE.scottAgeFoot, CITE.salinasTorres],
     },
@@ -48,7 +69,7 @@ export const FLAT_FEET_AGE_ES: Guide = {
       h2: '¿Se puede tener pie plano de adulto?',
       keyFact: 'En una encuesta a 582 mujeres de más de 40\u00A0años, el 3,3\u00A0% tenía una disfunción del tendón tibial posterior en etapa I o II, y ninguna estaba diagnosticada a pesar de tener síntomas desde hacía mucho (Kohls-Gatzoulis y colegas, 2009).',
       paragraphs: [
-        'Sí, puedes desarrollar pie plano de adulto, y la causa más común es la disfunción del tendón tibial posterior (DTTP), en la que el tendón que sostiene el arco se debilita, se estira o se rompe. Al resultado antes se le llamaba pie plano adquirido del adulto. En 2020, un grupo de cirujanos de pie y tobillo acordó un nombre nuevo, deformidad progresiva por colapso del pie, porque la deformidad puede seguir avanzando y no siempre la causa solo el tendón.',
+        '**Sí, puedes desarrollar pie plano de adulto**, y la causa más común es la disfunción del tendón tibial posterior (DTTP), en la que el tendón que sostiene el arco se debilita, se estira o se rompe. Al resultado antes se le llamaba pie plano adquirido del adulto. En 2020, un grupo de cirujanos de pie y tobillo acordó un nombre nuevo, deformidad progresiva por colapso del pie, porque la deformidad puede seguir avanzando y no siempre la causa solo el tendón.',
         'No es raro. En una encuesta de 2009 a mujeres de más de 40\u00A0años en un consultorio de medicina familiar en Inglaterra, 582 devolvieron un cuestionario útil. Después de llamadas y exploraciones, el 3,3\u00A0% tenía DTTP en etapa temprana (etapa I o II). Ninguna había sido diagnosticada, aunque sus síntomas eran típicos y llevaban mucho tiempo.',
         'A diferencia del pie plano de toda la vida, suele empezar de un solo lado, con dolor y a veces hinchazón detrás o debajo del hueso interno del tobillo. Subir en puntas solo con ese pie se vuelve difícil o doloroso. Las etapas y los ensayos con ejercicio se explican en la [guía del tendón tibial posterior](/es/ejercicios-tendon-tibial-posterior/).',
       ],
@@ -57,7 +78,17 @@ export const FLAT_FEET_AGE_ES: Guide = {
     {
       h2: '¿Qué hace que el pie plano empeore?',
       paragraphs: [
-        'Los factores relacionados con un arco que se hunde en adultos son, en su mayoría, los mismos que se relacionan con el desgaste del tendón. En una revisión de 1992 de 67\u00A0personas con rotura del tendón tibial posterior (edad promedio de 57\u00A0años), el 60\u00A0% tenía al menos uno de estos: presión arterial alta, obesidad, diabetes, cirugía o lesión previa en el lado interno del pie, o exposición a esteroides. La obesidad mostró la relación más clara. Fue una revisión de casos pasados, no un estudio controlado, así que señala factores probables sin demostrar una causa.',
+        'Los factores relacionados con un arco que se hunde en adultos son, en su mayoría, los mismos que se relacionan con el desgaste del tendón. En una revisión de 1992 de 67\u00A0personas con rotura del tendón tibial posterior (edad promedio de 57\u00A0años), el 60\u00A0% tenía al menos uno de estos:',
+        {
+          list: [
+            'Presión arterial alta.',
+            'Obesidad.',
+            'Diabetes.',
+            'Cirugía o lesión previa en el lado interno del pie.',
+            'Exposición a esteroides.',
+          ],
+        },
+        'La obesidad mostró la relación más clara. Fue una revisión de casos pasados, no un estudio controlado, así que señala factores probables sin demostrar una causa.',
       ],
       bullets: [
         '**Peso corporal.** La obesidad se relaciona tanto con el pie plano en general como con la rotura del tendón.',
@@ -67,7 +98,8 @@ export const FLAT_FEET_AGE_ES: Guide = {
         '**Embarazo**, que se explica a continuación.',
       ],
       after: [
-        'El **pie de Charcot** necesita su propia advertencia. En personas con diabetes y daño en los nervios (neuropatía, cuando los pies pierden sensibilidad), los huesos y las articulaciones de la parte media del pie pueden debilitarse y hundirse, a veces rápido. Un grupo de expertos de 2011 describió el cuadro inicial típico como un pie muy hinchado, caliente, muchas veces rojo, con un dolor apenas leve o moderado. Muchas veces se confunde con una infección, un coágulo o gota. Si tienes diabetes y un pie se pone caliente e hinchado, haz que lo revisen el mismo día.',
+        'El **pie de Charcot** necesita su propia advertencia. En personas con diabetes y daño en los nervios (neuropatía, cuando los pies pierden sensibilidad), los huesos y las articulaciones de la parte media del pie pueden debilitarse y hundirse, a veces rápido.',
+        'Un grupo de expertos de 2011 describió el cuadro inicial típico como un pie muy hinchado, caliente, muchas veces rojo, con un dolor apenas leve o moderado. Muchas veces se confunde con una infección, un coágulo o gota. Si tienes diabetes y un pie se pone caliente e hinchado, haz que lo revisen el mismo día.',
       ],
       cites: [CITE.holmesMannPTT, CITE.salinasTorres, CITE.rogersCharcot],
     },
@@ -75,7 +107,8 @@ export const FLAT_FEET_AGE_ES: Guide = {
       h2: '¿El embarazo puede dejar los pies más planos para siempre?',
       keyFact: 'En 49\u00A0mujeres medidas al inicio del embarazo y otra vez unos cuatro meses y medio después del parto, la altura del arco bajó y el largo del pie aumentó, sobre todo en el primer embarazo (Segal y colegas, 2013).',
       paragraphs: [
-        'El embarazo puede bajar un poco el arco, y el cambio puede durar después del parto. En un estudio de 2013, a 49\u00A0mujeres les midieron los pies en el primer trimestre y otra vez unos cuatro meses y medio después de dar a luz. La altura y la rigidez del arco bajaron, y el largo del pie y la caída del arco aumentaron. El primer embarazo explicó la mayor parte del cambio. En las mamás primerizas, el largo del pie aumentó alrededor de 1,4\u00A0milímetros y la caída del arco alrededor de 1,0\u00A0milímetro en promedio.',
+        '**El embarazo puede bajar un poco el arco, y el cambio puede durar después del parto.** En un estudio de 2013, a 49\u00A0mujeres les midieron los pies en el primer trimestre y otra vez unos cuatro meses y medio después de dar a luz. La altura y la rigidez del arco bajaron, y el largo del pie y la caída del arco aumentaron.',
+        'El primer embarazo explicó la mayor parte del cambio. En las mamás primerizas, el largo del pie aumentó alrededor de 1,4\u00A0milímetros y la caída del arco alrededor de 1,0\u00A0milímetro en promedio.',
         'Dos cosas ponen esto en proporción. Los autores dijeron que los cambios promedio fueron pequeños, y el estudio no encontró cambios en una medida de cómo se iba el pie hacia adentro al caminar. «Duradero» en este estudio quiere decir que seguía ahí en la visita de seguimiento unos meses después del parto. A nadie se le siguió durante años.',
         'Si tu talla de zapato subió después de un embarazo y tus pies se sienten bien, ese cambio es común. Si un arco sigue bajando, o la parte interna del tobillo empieza a doler, haz que lo revisen.',
       ],
@@ -84,7 +117,7 @@ export const FLAT_FEET_AGE_ES: Guide = {
     {
       h2: '¿Cuándo es un problema que el pie se aplane?',
       paragraphs: [
-        'Que el pie se aplane es un problema cuando cambia rápido, de un solo lado, o con dolor o hinchazón. Un cambio lento en los dos pies sin dolor es común con la edad. La tabla ordena los patrones más comunes.',
+        '**Que el pie se aplane es un problema cuando cambia rápido, de un solo lado, o con dolor o hinchazón.** Un cambio lento en los dos pies sin dolor es común con la edad. La tabla ordena los patrones más comunes.',
       ],
       table: {
         caption: 'Patrones de cambio del arco en adultos y lo que suelen significar',
@@ -108,9 +141,10 @@ export const FLAT_FEET_AGE_ES: Guide = {
       keyFact: 'Una revisión de 2018 encontró solo tres ensayos, con 93\u00A0personas en total, que probaron el ejercicio para la disfunción del tendón tibial posterior, con efectos moderados del trabajo de fuerza de bajada lenta (excéntrico) sumado a plantillas ortopédicas y estiramientos (Ross y colegas, 2018).',
       paragraphs: [
         'Ningún ensayo ha probado si el ejercicio o las plantillas evitan que el pie plano cambie con la edad. Lo que existe es evidencia sobre dos preguntas cercanas, y es poca.',
-        'Para el problema de tendón que hay detrás del hundimiento del arco en adultos, una revisión de 2018 encontró tres ensayos con 93\u00A0personas en total. El trabajo de fuerza de bajada lenta (excéntrico) sumado a plantillas ortopédicas (plantillas que sostienen el arco) y estiramientos alivió el dolor y la discapacidad de forma moderadamente mayor que las plantillas y los estiramientos solos. En un ensayo, 36\u00A0adultos en etapas tempranas hicieron su programa durante tres meses. Todos los grupos mejoraron, y el grupo de fuerza excéntrica fue el que más mejoró. En otro ensayo con 39\u00A0personas, agregar trabajo de fuerza hizo solo una diferencia pequeña. Los autores de la revisión dijeron que la investigación es escasa.',
+        'Para el problema de tendón que hay detrás del hundimiento del arco en adultos, una revisión de 2018 encontró tres ensayos con 93\u00A0personas en total. El trabajo de fuerza de bajada lenta (excéntrico) sumado a plantillas ortopédicas (plantillas que sostienen el arco) y estiramientos alivió el dolor y la discapacidad de forma moderadamente mayor que las plantillas y los estiramientos solos.',
+        'En un ensayo, 36\u00A0adultos en etapas tempranas hicieron su programa durante tres meses. Todos los grupos mejoraron, y el grupo de fuerza excéntrica fue el que más mejoró. En otro ensayo con 39\u00A0personas, agregar trabajo de fuerza hizo solo una diferencia pequeña. Los autores de la revisión dijeron que la investigación es escasa.',
         'Para el pie plano flexible de toda la vida, un ensayo con 52\u00A0personas encontró que un programa corto de ejercicios de pie, tobillo y cadera cambió la forma del arco más que en un grupo de control. Midió la forma, no el dolor, y durante poco tiempo. No se sabe si ese tipo de entrenamiento hace más lento el cambio por la edad a lo largo de décadas.',
-        'Así que mantener fuertes los músculos que sostienen el arco es razonable y de bajo riesgo, pero nadie puede prometer que mantenga tu arco donde está. Walkito empieza cada ejercicio de abajo con una dosis baja y mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio con una prueba corta, al principio cada dos semanas (cada cuatro una vez que alcanzas una meta), para que veas si estos músculos se están fortaleciendo.',
+        'Así que mantener fuertes los músculos que sostienen el arco es razonable y de bajo riesgo, pero **nadie puede prometer que mantenga tu arco donde está.** Walkito empieza cada ejercicio de abajo con una dosis baja y mide la resistencia de la pantorrilla, cuánto mantienes el arco y el equilibrio con una prueba corta, al principio cada dos semanas (cada cuatro una vez que alcanzas una meta), para que veas si estos músculos se están fortaleciendo.',
       ],
       exercises: [
         {

@@ -56,8 +56,16 @@ export const BALL_OF_FOOT_IT: Guide = {
     {
       h2: 'Come distinguere questi problemi?',
       paragraphs: [
-        'La posizione è il primo indizio. Un dolore diffuso sotto la seconda e la terza testa metatarsale fa pensare alla metatarsalgia. Un dolore tra il terzo e il quarto dito, con formicolio, fa pensare al neuroma di Morton. Un dolore proprio sotto l’articolazione dell’alluce è più compatibile con la sesamoidite. Un punto preciso sul dorso del piede con gonfiore fa sorgere il dubbio di una frattura da stress.',
-        'Le fratture da stress spesso non si vedono in una radiografia normale nelle prime due o tre settimane e possono richiedere una risonanza magnetica. Vale la pena farsi vedere da un professionista sanitario quando il dolore dura oltre due settimane nonostante riposo e cambio di scarpe, o quando ci sono formicolio, dolore notturno o gonfiore visibile.',
+        'La posizione è il primo indizio:',
+        {
+          list: [
+            'Un dolore diffuso sotto la seconda e la terza testa metatarsale fa pensare alla metatarsalgia.',
+            'Un dolore tra il terzo e il quarto dito, con formicolio, fa pensare al neuroma di Morton.',
+            'Un dolore proprio sotto l’articolazione dell’alluce è più compatibile con la sesamoidite.',
+            'Un punto preciso sul dorso del piede con gonfiore fa sorgere il dubbio di una frattura da stress.',
+          ],
+        },
+        'Le fratture da stress spesso non si vedono in una radiografia normale nelle prime due o tre settimane e possono richiedere una risonanza magnetica. **Vale la pena farsi vedere da un professionista sanitario** quando il dolore dura oltre due settimane nonostante riposo e cambio di scarpe, o quando ci sono formicolio, dolore notturno o gonfiore visibile.',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -65,7 +73,7 @@ export const BALL_OF_FOOT_IT: Guide = {
       h2: 'Gli esercizi aiutano il dolore sotto l’avampiede?',
       keyFact: 'In uno studio pre-post del 2020 su 41\u00A0persone con metatarsalgia primaria, un programma di esercizi per le dita di 8\u00A0settimane ha abbassato il dolore in media di 2,7\u00A0punti su una scala da 10, senza gruppo di controllo (Amaha e colleghi, 2020).',
       paragraphs: [
-        'La risposta onesta è che le prove sugli esercizi per la metatarsalgia sono iniziali e limitate. Sono molto più scarse di quelle per la [fascite plantare](/it/esercizi-fascite-plantare/) o la tendinite d’Achille, dove esistono studi randomizzati.',
+        'La risposta onesta è che **le prove sugli esercizi per la metatarsalgia sono iniziali e limitate.** Sono molto più scarse di quelle per la [fascite plantare](/it/esercizi-fascite-plantare/) o la tendinite d’Achille, dove esistono studi randomizzati.',
         'Lo studio migliore finora è uno studio pre-post del 2020 su 41\u00A0persone (56\u00A0piedi) con metatarsalgia primaria. Un programma di esercizi per le dita di 8\u00A0settimane, soprattutto raccolta dell’asciugamano e raccolta di biglie, ha abbassato il punteggio del dolore in media di 2,7\u00A0punti su una scala da 10 e ha migliorato la forza di presa delle dita. Ma non c’era un gruppo di controllo, quindi il miglioramento potrebbe in parte riflettere un recupero naturale. Gli autori hanno chiesto studi randomizzati.',
         'La logica è semplice: durante la spinta, le dita aiutano a dividere il carico con le teste metatarsali. Quando i muscoli flessori delle dita sono deboli, più forza arriva sui metatarsi. Lo studio del 2020 sostiene questa idea, ma un solo studio senza controllo non è una prova. Chi aveva sintomi da più di un anno è migliorato meno, e così chi aveva un IMC più alto.',
       ],
@@ -87,14 +95,15 @@ export const BALL_OF_FOOT_IT: Guide = {
       h2: 'E cuscinetti metatarsali, plantari e scarpe?',
       paragraphs: [
         'I cuscinetti metatarsali sono l’approccio conservativo più usato. Un cuscinetto messo subito dietro le teste metatarsali solleva un po’ il corpo dell’osso e distribuisce la pressione su una superficie più ampia. La posizione conta. Troppo avanti, proprio sotto la testa, può peggiorare il dolore.',
-        'Le scarpe con suola a dondolo riducono la pressione sull’avampiede perché fanno rullare il piede nella spinta senza piegarsi alle articolazioni metatarsali. Una punta larga evita che le teste vengano schiacciate insieme. Lasciare le scarpe strette o con il tacco è spesso il primo passo più semplice.',
+        'Le scarpe con suola a dondolo riducono la pressione sull’avampiede perché fanno rullare il piede nella spinta senza piegarsi alle articolazioni metatarsali. Una punta larga evita che le teste vengano schiacciate insieme. **Lasciare le scarpe strette o con il tacco è spesso il primo passo più semplice.**',
         'Cuscinetti e scarpe cambiano come si distribuisce il carico. Gli esercizi costruiscono la forza e la flessibilità per reggerlo. Quando c’entra anche lo [stare in piedi tutto il giorno](/it/dolore-piedi-stare-in-piedi/), contano entrambe le cose.',
       ],
     },
     {
       h2: 'Quali esercizi aiutano il dolore sotto l’avampiede?',
       paragraphs: [
-        'Questi esercizi lavorano su due lati del problema: la forza delle dita e dei muscoli intrinseci del piede (per dividere il carico nella spinta) e la flessibilità del polpaccio (per non sovraccaricare l’avampiede). Nessuno è stato testato in uno studio randomizzato proprio per la metatarsalgia. Quando tocchi la zona dell’avampiede sulla mappa del dolore di Walkito durante un check-in, la sessione di sollievo ti dà apertura delle dita e allungamento della fascia plantare. La zona delle dita ti dà apertura delle dita e piede corto da seduto.',
+        'Questi esercizi lavorano su due lati del problema: la forza delle dita e dei muscoli intrinseci del piede (per dividere il carico nella spinta) e la flessibilità del polpaccio (per non sovraccaricare l’avampiede). Nessuno è stato testato in uno studio randomizzato proprio per la metatarsalgia.',
+        'Quando tocchi la zona dell’avampiede sulla mappa del dolore di Walkito durante un check-in, la sessione di sollievo ti dà apertura delle dita e allungamento della fascia plantare. La zona delle dita ti dà apertura delle dita e piede corto da seduto.',
       ],
       exercises: [
         {
@@ -181,7 +190,8 @@ export const BALL_OF_FOOT_IT: Guide = {
       h2: 'Cosa dicono le prove, e cosa non dicono',
       paragraphs: [
         'Le prove sugli esercizi per il dolore all’avampiede sono più scarse di quelle per la [fascite plantare](/it/esercizi-fascite-plantare/) o la tendinite d’Achille, dove esistono studi randomizzati. Per la metatarsalgia c’è un solo studio pre-post con 41\u00A0persone e nessun gruppo di controllo. Il ragionamento biomeccanico regge, e il rischio legato a esercizi delicati per le dita e allungamenti del polpaccio è basso, ma manca una prova diretta da uno studio controllato.',
-        'Gli esercizi da soli potrebbero non bastare. Cuscinetti metatarsali, scarpe con la punta larga e meno tempo sui tacchi hanno un consenso clinico più ampio. Per il neuroma di Morton, cambiare scarpe e usare imbottiture spesso funziona meglio degli esercizi. Per una frattura da stress del metatarso, gli esercizi sono la strada sbagliata finché l’osso non è guarito. Se il dolore dura da più di qualche settimana, o si accompagna a intorpidimento o gonfiore, fallo controllare prima. [Dolore al tallone nella corsa](/heel-pain-runners/) (in inglese) spiega come gestire il carico per chi corre.',
+        '**Gli esercizi da soli potrebbero non bastare.** Cuscinetti metatarsali, scarpe con la punta larga e meno tempo sui tacchi hanno un consenso clinico più ampio.',
+        'Per il neuroma di Morton, cambiare scarpe e usare imbottiture spesso funziona meglio degli esercizi. Per una frattura da stress del metatarso, gli esercizi sono la strada sbagliata finché l’osso non è guarito. Se il dolore dura da più di qualche settimana, o si accompagna a intorpidimento o gonfiore, fallo controllare prima. [Dolore al tallone nella corsa](/heel-pain-runners/) (in inglese) spiega come gestire il carico per chi corre.',
       ],
       cites: [CITE.amaha, CITE.rathleff],
     },

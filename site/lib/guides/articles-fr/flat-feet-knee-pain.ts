@@ -30,8 +30,15 @@ export const FLAT_FEET_KNEE_PAIN_FR: Guide = {
       keyFact: 'Chez 1\u00A0903\u00A0adultes âgés, les pieds les plus plats avaient une probabilité 1,3\u00A0fois plus élevée de douleur fréquente au genou que tous les autres pieds (Gross et coll., 2011).',
       figure: { id: 'arches', caption: 'Les mêmes os du pied avec un pied plat, une voûte normale et une voûte haute, vus du côté intérieur.', alt: 'Trois pieds vus du côté intérieur sur un sol plat\u00A0: un pied plat dont la voûte repose au sol, une voûte normale avec un petit espace dessous et une voûte haute avec un grand espace sous le milieu du pied.' },
       paragraphs: [
-        'Plusieurs grandes études relient les pieds plats à la douleur au genou, mais aucune ne prouve que la voûte cause la douleur. Le lien est faible, et il apparaît surtout pour les pieds les plus plats.',
-        'L’étude la plus connue vient des Framingham Studies, aux États-Unis. Gross et ses collègues ont mesuré les empreintes de 1\u00A0903\u00A0adultes âgés (65\u00A0ans en moyenne) et les ont interrogés sur leurs douleurs au genou. Résultats de 2011\u00A0: les pieds les plus plats avaient une probabilité 1,3\u00A0fois plus élevée de douleur au genou la plupart des jours, par rapport à tous les autres pieds. Ils avaient aussi une probabilité 1,4\u00A0fois plus élevée de lésion du cartilage du côté intérieur de l’articulation du genou à l’IRM. Le cartilage est la couche lisse qui recouvre l’extrémité des os. Il n’y avait aucun lien avec des lésions dans les autres parties du genou.',
+        'Plusieurs grandes études relient les pieds plats à la douleur au genou, mais **aucune ne prouve que la voûte cause la douleur.** Le lien est faible, et il apparaît surtout pour les pieds les plus plats.',
+        'L’étude la plus connue vient des Framingham Studies, aux États-Unis. Gross et ses collègues ont mesuré les empreintes de 1\u00A0903\u00A0adultes âgés (65\u00A0ans en moyenne) et les ont interrogés sur leurs douleurs au genou. Résultats de 2011, pour les pieds les plus plats par rapport à tous les autres pieds\u00A0:',
+        {
+          list: [
+            '**Douleur au genou\u00A0:** une probabilité 1,3\u00A0fois plus élevée de douleur au genou la plupart des jours.',
+            '**Cartilage\u00A0:** une probabilité 1,4\u00A0fois plus élevée de lésion du cartilage du côté intérieur de l’articulation du genou à l’IRM. Le cartilage est la couche lisse qui recouvre l’extrémité des os.',
+            '**Reste du genou\u00A0:** aucun lien avec des lésions dans les autres parties du genou.',
+          ],
+        },
         'Une deuxième étude s’est intéressée aux plus jeunes. Kosashvili et ses collègues ont examiné en 2008 les dossiers de 97\u00A0279 jeunes recrues militaires. Une douleur à l’avant du genou a été trouvée chez 7\u00A0% des recrues aux pieds plats modérés ou sévères, et chez 4\u00A0% de celles aux pieds plats légers ou aux voûtes normales. Les pieds plats légers, qui représentaient 74\u00A0% du groupe aux pieds plats, n’entraînaient aucun risque supplémentaire.',
         'Les deux études ont mesuré chaque personne une seule fois, elles ne peuvent donc pas dire si le pied est venu en premier. Les auteurs de Framingham notent aussi qu’une empreinte ne permet pas toujours de distinguer un pied plat d’un pied large et charnu, et que le poids du corps agit à lui seul sur le genou.',
       ],
@@ -42,9 +49,13 @@ export const FLAT_FEET_KNEE_PAIN_FR: Guide = {
     {
       h2: 'Où se situe la douleur au genou liée aux pieds plats\u00A0?',
       paragraphs: [
-        'La douleur au genou liée aux pieds plats est en général décrite à l’un de deux endroits\u00A0: autour ou derrière la rotule, ou du côté intérieur du genou. Ce sont des problèmes différents, qui se prennent en charge de façons différentes.',
-        'La douleur autour ou derrière la rotule s’appelle syndrome fémoro-patellaire. Elle s’installe en général lentement et s’aggrave en position accroupie, dans les escaliers, en courant, en sautant ou en restant assis longtemps genou plié. Elle est fréquente chez les adolescents et les adultes actifs. C’est le problème de genou le plus étudié en lien avec la posture du pied, et l’essentiel de cette page lui est consacré.',
-        'Chez une personne âgée, une douleur du côté intérieur du genou est plus souvent liée à l’arthrose, les changements d’une articulation liés à l’usure. L’étude de Framingham a constaté que les lésions du cartilage du côté intérieur du genou étaient plus fréquentes avec les pieds les plus plats, ce qui va dans ce sens. Mais l’étude ne montre qu’un lien à un moment donné.',
+        'La douleur au genou liée aux pieds plats est en général décrite à l’un de deux endroits. Ce sont des problèmes différents, qui se prennent en charge de façons différentes.',
+        {
+          list: [
+            '**Autour ou derrière la rotule.** Cette douleur s’appelle syndrome fémoro-patellaire. Elle s’installe en général lentement et s’aggrave en position accroupie, dans les escaliers, en courant, en sautant ou en restant assis longtemps genou plié. Elle est fréquente chez les adolescents et les adultes actifs. C’est le problème de genou le plus étudié en lien avec la posture du pied, et l’essentiel de cette page lui est consacré.',
+            '**Du côté intérieur du genou, chez une personne âgée.** Cette douleur est plus souvent liée à l’arthrose, les changements d’une articulation liés à l’usure. L’étude de Framingham a constaté que les lésions du cartilage du côté intérieur du genou étaient plus fréquentes avec les pieds les plus plats, ce qui va dans ce sens. Mais l’étude ne montre qu’un lien à un moment donné.',
+          ],
+        },
         'Un genou qui gonfle après une torsion, qui se bloque ou qui se dérobe, c’est une autre histoire. Cela oriente vers le ménisque (le coussin de cartilage à l’intérieur du genou) ou un ligament, et demande un professionnel de santé.',
       ],
       cites: [CITE.willyPfpGuideline, CITE.grossFlatFeetKnee],
@@ -53,8 +64,13 @@ export const FLAT_FEET_KNEE_PAIN_FR: Guide = {
       h2: 'Comment un pied plat pourrait-il agir sur le genou\u00A0?',
       paragraphs: [
         'L’explication habituelle est une chaîne\u00A0: quand le pied s’affaisse vers l’intérieur, le tibia tourne avec lui vers l’intérieur, et le genou part vers l’intérieur. Cet affaissement s’appelle la pronation, et une part de pronation est normale à chaque pas. L’idée est qu’un excès de pronation modifie la façon dont la rotule glisse dans sa gouttière.',
-        'Le pied et le tibia tournent bien ensemble. Que cela explique la douleur au genou est moins clair. Une revue de 2009 de Barton et ses collègues a rassemblé 24\u00A0études sur la façon dont marchent et courent les personnes souffrant de douleur rotulienne. Elle a constaté quelques différences au niveau de l’os du talon et davantage de mouvement de la hanche vers l’intérieur chez les coureurs. Mais la revue n’a trouvé aucune étude prospective avec des données exploitables. Les études qu’elle a pu évaluer comparaient des personnes qui avaient déjà mal à des personnes sans douleur, ce qui ne permet pas de distinguer la cause de la conséquence.',
-        'Les preuves prospectives sont minces. Une revue de 2014 de Neal et ses collègues a regroupé 21\u00A0études prospectives portant sur 6\u00A0228\u00A0personnes, des études qui suivent les gens dans le temps pour voir qui se blesse. Un pied affaissé vers l’intérieur était un facteur de risque net de périostite tibiale. Pour la douleur rotulienne, les preuves étaient très limitées et les effets faibles. Les auteurs ont conclu que la posture du pied est un élément d’une évaluation plus large, pas la réponse à elle seule.',
+        'Le pied et le tibia tournent bien ensemble. Que cela explique la douleur au genou est moins clair, et les preuves prospectives sont minces. Deux revues se sont penchées sur la question\u00A0:',
+        {
+          list: [
+            '**Barton et ses collègues, 2009\u00A0:** a rassemblé 24\u00A0études sur la façon dont marchent et courent les personnes souffrant de douleur rotulienne. Elle a constaté quelques différences au niveau de l’os du talon et davantage de mouvement de la hanche vers l’intérieur chez les coureurs. Mais elle n’a trouvé aucune étude prospective avec des données exploitables. Les études qu’elle a pu évaluer comparaient des personnes qui avaient déjà mal à des personnes sans douleur, ce qui ne permet pas de distinguer la cause de la conséquence.',
+            '**Neal et ses collègues, 2014\u00A0:** a regroupé 21\u00A0études prospectives portant sur 6\u00A0228\u00A0personnes, des études qui suivent les gens dans le temps pour voir qui se blesse. Un pied affaissé vers l’intérieur était un facteur de risque net de périostite tibiale. Pour la douleur rotulienne, les preuves étaient très limitées et les effets faibles. Les auteurs ont conclu que la posture du pied est un élément d’une évaluation plus large, pas la réponse à elle seule.',
+          ],
+        },
         'La hanche se trouve en haut de la même chaîne. Des muscles faibles à l’extérieur de la hanche laissent la cuisse tourner vers l’intérieur, ce qui peut tirer le genou vers l’intérieur par le haut. C’est l’une des raisons pour lesquelles les conseils d’exercice contre la douleur rotulienne commencent par la hanche, pas par le pied.',
       ],
       sourceNote:
@@ -82,9 +98,18 @@ export const FLAT_FEET_KNEE_PAIN_FR: Guide = {
       keyFact: 'Dans un essai sur 179\u00A0adultes souffrant de douleur rotulienne, des semelles formées ont fait mieux que des semelles plates à court terme, mais pas mieux que la kinésithérapie (Collins et coll., 2008).',
       paragraphs: [
         'Des semelles formées peuvent soulager la douleur à l’avant du genou à court terme, mais elles apportent peu une fois que vous faites de bons exercices.',
-        'Le test le plus clair est un essai de 2008 publié dans le BMJ. Collins et ses collègues ont réparti 179\u00A0adultes de 18 à 40\u00A0ans souffrant de douleur autour de la rotule en quatre groupes\u00A0: semelles formées toutes faites, semelles plates, kinésithérapie (exercices des muscles de la cuisse, strapping, techniques manuelles et conseils), ou semelles plus kinésithérapie. Les semelles formées ont fait mieux que les semelles plates après environ un mois et demi. Elles n’ont pas fait mieux que la kinésithérapie, et les ajouter à la kinésithérapie n’a pas amélioré les résultats. À un an, les quatre groupes s’étaient nettement améliorés.',
+        'Le test le plus clair est un essai de 2008 publié dans le BMJ. Collins et ses collègues ont réparti 179\u00A0adultes de 18 à 40\u00A0ans souffrant de douleur autour de la rotule en quatre groupes\u00A0:',
+        {
+          list: [
+            'Semelles formées toutes faites.',
+            'Semelles plates.',
+            'Kinésithérapie\u00A0: exercices des muscles de la cuisse, strapping, techniques manuelles et conseils.',
+            'Semelles plus kinésithérapie.',
+          ],
+        },
+        'Les semelles formées ont fait mieux que les semelles plates après environ un mois et demi. Elles n’ont pas fait mieux que la kinésithérapie, et les ajouter à la kinésithérapie n’a pas amélioré les résultats. À un an, les quatre groupes s’étaient nettement améliorés.',
         'Un essai plus petit de 2018, de Mølgaard et ses collègues, a sélectionné 40\u00A0personnes souffrant de douleur rotulienne dont le talon basculait vers l’intérieur plus que la normale. Ajouter des exercices du pied et des semelles sur mesure aux exercices du genou a apporté 8,9\u00A0points de soulagement de plus sur une échelle du genou de 100\u00A0points à quatre mois. À douze mois, la différence entre les groupes n’était plus statistiquement nette. L’essai ne permet pas de dire si ce sont les semelles, les exercices du pied ou les séances en plus qui ont fait la différence.',
-        'La recommandation de 2019 résume ainsi\u00A0: des semelles toutes faites peuvent être utilisées chez les personnes dont le pied s’affaisse vers l’intérieur plus que la normale, uniquement pour soulager la douleur à court terme, et toujours avec de l’exercice. Elle a trouvé trop peu de preuves pour préférer des semelles sur mesure aux semelles toutes faites. Pour le débat plus large sur les semelles, voir [semelles ou exercices](/fr/semelles-ou-exercices/).',
+        'La recommandation de 2019 résume ainsi\u00A0: **des semelles toutes faites peuvent être utilisées chez les personnes dont le pied s’affaisse vers l’intérieur plus que la normale, uniquement pour soulager la douleur à court terme, et toujours avec de l’exercice.** Elle a trouvé trop peu de preuves pour préférer des semelles sur mesure aux semelles toutes faites. Pour le débat plus large sur les semelles, voir [semelles ou exercices](/fr/semelles-ou-exercices/).',
       ],
       sourceNote:
         'Collins 2008\u00A0: essai randomisé en simple aveugle, résultats à environ un mois et demi, trois mois et un an\u00A0; semelles formées contre semelles plates sur l’amélioration globale, nombre de sujets à équiper pour un bénéfice de 4. L’un des auteurs avait reçu un financement d’un fabricant de semelles. Mølgaard 2018\u00A0: sous-échelle douleur du KOOS, 8,9\u00A0points (IC à 95\u00A0% 0,4 à 17,4). Willy 2019\u00A0: note A.',

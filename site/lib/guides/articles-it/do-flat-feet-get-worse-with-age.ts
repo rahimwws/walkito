@@ -30,7 +30,18 @@ export const FLAT_FEET_AGE_IT: Guide = {
       keyFact: 'In un confronto tra 50\u00A0adulti giovani (età media 20,9\u00A0anni) e 50\u00A0adulti anziani (età media 80,2\u00A0anni) senza problemi ai piedi, i piedi più anziani erano più piatti e più pronati (Scott e colleghi, 2007).',
       figure: { id: 'arches', caption: 'Le stesse ossa del piede con piede piatto, arco normale e arco alto, viste dal lato interno.', alt: 'Tre piedi visti dal lato interno su un pavimento piano: un piede piatto con l’arco appoggiato a terra, un arco normale con un piccolo spazio sotto e un arco alto con un grande spazio sotto la parte centrale del piede.' },
       paragraphs: [
-        'Con l’età il piede piatto tende a diventare un po’ più piatto, come succede alla maggior parte dei piedi. In uno studio del 2007 dell’Università La Trobe, i ricercatori hanno confrontato 50\u00A0adulti giovani (età media 20,9\u00A0anni) con 50\u00A0adulti anziani (età media 80,2\u00A0anni). Nessuno dei due gruppi aveva problemi ai piedi. Il gruppo più anziano aveva piedi più piatti e più pronati (pronato vuol dire che il piede cede verso l’interno), caviglie e articolazioni dell’alluce più rigide, muscoli delle dita più deboli, più alluce valgo e meno sensibilità sotto la pianta. Camminando, il loro mesopiede restava a terra per una parte di ogni passo più lunga del 14%.',
+        '**Con l’età il piede piatto tende a diventare un po’ più piatto, come succede alla maggior parte dei piedi.** In uno studio del 2007 dell’Università La Trobe, i ricercatori hanno confrontato 50\u00A0adulti giovani (età media 20,9\u00A0anni) con 50\u00A0adulti anziani (età media 80,2\u00A0anni). Nessuno dei due gruppi aveva problemi ai piedi.',
+        'Il gruppo più anziano aveva:',
+        {
+          list: [
+            'Piedi più piatti e più pronati (pronato vuol dire che il piede cede verso l’interno).',
+            'Caviglie e articolazioni dell’alluce più rigide.',
+            'Muscoli delle dita più deboli.',
+            'Più alluce valgo.',
+            'Meno sensibilità sotto la pianta.',
+          ],
+        },
+        'Camminando, il loro mesopiede restava a terra per una parte di ogni passo più lunga del 14%.',
         'C’è un limite importante. Lo studio ha confrontato due gruppi diversi di persone in un solo momento. Non ha seguito gli stessi piedi per 60\u00A0anni. Quindi mostra che in media i piedi più anziani sono più piatti, non quanto in fretta cambia un singolo piede, né se un piede che era già piatto cambia più o meno di uno tipico. Non abbiamo trovato studi che abbiano seguito il piede piatto di una vita per decenni.',
         'Per la maggior parte delle persone, il cambiamento lento riguarda entrambi i piedi, senza un inizio preciso e spesso senza dolore. Un cambiamento rapido e da un solo lato è un’altra storia, spiegata più sotto.',
       ],
@@ -39,8 +50,18 @@ export const FLAT_FEET_AGE_IT: Guide = {
     {
       h2: 'Perché l’arco si abbassa con l’età?',
       paragraphs: [
-        'L’arco è sostenuto da ossa, legamenti (le fasce robuste che tengono unite le ossa), la fascia plantare sotto il piede e i muscoli. Il muscolo principale è il tibiale posteriore, un muscolo profondo del polpaccio il cui tendine passa dietro il malleolo interno e tira su l’arco a ogni passo. Aiutano anche i piccoli muscoli dentro il piede.',
-        'Diversi di questi elementi cambiano con l’età. Nel confronto del 2007, il gruppo più anziano aveva anche muscoli delle dita più deboli e caviglie più rigide, anche se lo studio non ha verificato se fossero questi a rendere i piedi più piatti. Conta anche il peso. Una revisione del 2023 su 12\u00A0studi di popolazione, circa 16.000\u00A0persone, ha trovato che il piede piatto era più comune nelle persone con obesità, con una probabilità circa 2,6\u00A0volte più alta. Quella revisione ha misurato quanto fosse comune il piede piatto in un solo momento. Non ha verificato se aumentare di peso faccia abbassare l’arco.',
+        'L’arco è sostenuto da:',
+        {
+          list: [
+            'Ossa.',
+            'Legamenti (le fasce robuste che tengono unite le ossa).',
+            'La fascia plantare sotto il piede.',
+            'I muscoli.',
+          ],
+        },
+        'Il muscolo principale è il tibiale posteriore, un muscolo profondo del polpaccio il cui tendine passa dietro il malleolo interno e tira su l’arco a ogni passo. Aiutano anche i piccoli muscoli dentro il piede.',
+        'Diversi di questi elementi cambiano con l’età. Nel confronto del 2007, il gruppo più anziano aveva anche muscoli delle dita più deboli e caviglie più rigide, anche se lo studio non ha verificato se fossero questi a rendere i piedi più piatti.',
+        'Conta anche il peso. Una revisione del 2023 su 12\u00A0studi di popolazione, circa 16.000\u00A0persone, ha trovato che il piede piatto era più comune nelle persone con obesità, con una probabilità circa 2,6\u00A0volte più alta. Quella revisione ha misurato quanto fosse comune il piede piatto in un solo momento. Non ha verificato se aumentare di peso faccia abbassare l’arco.',
       ],
       cites: [CITE.scottAgeFoot, CITE.salinasTorres],
     },
@@ -48,7 +69,7 @@ export const FLAT_FEET_AGE_IT: Guide = {
       h2: 'Si può avere il piede piatto da adulti?',
       keyFact: 'In un sondaggio su 582\u00A0donne sopra i 40\u00A0anni, il 3,3% aveva una disfunzione del tendine tibiale posteriore allo stadio I o II, e nessuna aveva una diagnosi nonostante sintomi di lunga data (Kohls-Gatzoulis e colleghi, 2009).',
       paragraphs: [
-        'Il piede piatto può comparire anche da adulti, e la causa più comune è la disfunzione del tendine tibiale posteriore, in cui il tendine che sostiene l’arco si indebolisce, si allunga o si lesiona. Il risultato si chiamava piede piatto acquisito dell’adulto. Nel 2020 un gruppo di chirurghi del piede e della caviglia ha concordato un nuovo nome, deformità progressiva da collasso del piede, perché la deformità può continuare a peggiorare e non dipende sempre solo dal tendine.',
+        '**Il piede piatto può comparire anche da adulti**, e la causa più comune è la disfunzione del tendine tibiale posteriore, in cui il tendine che sostiene l’arco si indebolisce, si allunga o si lesiona. Il risultato si chiamava piede piatto acquisito dell’adulto. Nel 2020 un gruppo di chirurghi del piede e della caviglia ha concordato un nuovo nome, deformità progressiva da collasso del piede, perché la deformità può continuare a peggiorare e non dipende sempre solo dal tendine.',
         'Non è raro. In un sondaggio del 2009 su donne sopra i 40\u00A0anni seguite da uno studio di medicina generale in Inghilterra, 582 hanno restituito un questionario utilizzabile. Dopo telefonate e visite, il 3,3% aveva una disfunzione del tendine tibiale posteriore in fase iniziale (stadio I o II). A nessuna era stata diagnosticata, anche se i sintomi erano tipici e duravano da tempo.',
         'A differenza del piede piatto di una vita, di solito inizia da un lato solo, con dolore e a volte gonfiore dietro o sotto il malleolo interno. Salire sulle punte solo su quel piede diventa difficile o doloroso. Gli stadi e gli studi sugli esercizi sono spiegati nella guida sulla [disfunzione del tendine tibiale posteriore](/it/disfunzione-tendine-tibiale-posteriore/).',
       ],
@@ -57,7 +78,17 @@ export const FLAT_FEET_AGE_IT: Guide = {
     {
       h2: 'Cosa fa peggiorare il piede piatto?',
       paragraphs: [
-        'I fattori legati al cedimento dell’arco negli adulti sono soprattutto quelli legati all’usura del tendine. In una revisione del 1992 su 67\u00A0persone con rottura del tendine tibiale posteriore (età media 57\u00A0anni), il 60% aveva almeno uno di questi fattori: pressione alta, obesità, diabete, un intervento chirurgico o un infortunio precedente sul lato interno del piede, o un’esposizione al cortisone. L’obesità mostrava il legame più chiaro. Era un’analisi di casi passati, non uno studio controllato, quindi indica fattori probabili senza dimostrare una causa.',
+        'I fattori legati al cedimento dell’arco negli adulti sono soprattutto quelli legati all’usura del tendine. In una revisione del 1992 su 67\u00A0persone con rottura del tendine tibiale posteriore (età media 57\u00A0anni), il 60% aveva almeno uno di questi fattori:',
+        {
+          list: [
+            'Pressione alta.',
+            'Obesità.',
+            'Diabete.',
+            'Un intervento chirurgico o un infortunio precedente sul lato interno del piede.',
+            'Un’esposizione al cortisone.',
+          ],
+        },
+        'L’obesità mostrava il legame più chiaro. Era un’analisi di casi passati, non uno studio controllato, quindi indica fattori probabili senza dimostrare una causa.',
       ],
       bullets: [
         '**Peso corporeo.** L’obesità è legata sia al piede piatto in generale sia alla rottura del tendine.',
@@ -67,7 +98,8 @@ export const FLAT_FEET_AGE_IT: Guide = {
         '**Gravidanza**, spiegata qui sotto.',
       ],
       after: [
-        'Il **piede di Charcot** merita un avvertimento a parte. Nelle persone con diabete e danno ai nervi (neuropatia, in cui i piedi perdono sensibilità), le ossa e le articolazioni del mesopiede possono indebolirsi e cedere, a volte in fretta. Un gruppo di esperti nel 2011 ha descritto il quadro iniziale tipico come un piede molto gonfio, caldo, spesso arrossato, con un dolore solo da lieve a moderato. Viene spesso scambiato per un’infezione, un coagulo o la gotta. Se hai il diabete e un piede diventa caldo e gonfio, fatti visitare in giornata.',
+        'Il **piede di Charcot** merita un avvertimento a parte. Nelle persone con diabete e danno ai nervi (neuropatia, in cui i piedi perdono sensibilità), le ossa e le articolazioni del mesopiede possono indebolirsi e cedere, a volte in fretta.',
+        'Un gruppo di esperti nel 2011 ha descritto il quadro iniziale tipico come un piede molto gonfio, caldo, spesso arrossato, con un dolore solo da lieve a moderato. Viene spesso scambiato per un’infezione, un coagulo o la gotta. Se hai il diabete e un piede diventa caldo e gonfio, fatti visitare in giornata.',
       ],
       cites: [CITE.holmesMannPTT, CITE.salinasTorres, CITE.rogersCharcot],
     },
@@ -75,7 +107,8 @@ export const FLAT_FEET_AGE_IT: Guide = {
       h2: 'La gravidanza può rendere i piedi più piatti per sempre?',
       keyFact: 'In 49\u00A0donne misurate all’inizio della gravidanza e di nuovo circa quattro mesi e mezzo dopo il parto, l’altezza dell’arco è scesa e la lunghezza del piede è aumentata, soprattutto alla prima gravidanza (Segal e colleghi, 2013).',
       paragraphs: [
-        'La gravidanza può abbassare un po’ l’arco, e il cambiamento può restare dopo il parto. In uno studio del 2013, a 49\u00A0donne sono stati misurati i piedi nel primo trimestre e di nuovo circa quattro mesi e mezzo dopo il parto. Altezza e rigidità dell’arco sono diminuite, mentre lunghezza del piede e abbassamento dell’arco sono aumentati. La prima gravidanza spiegava la maggior parte del cambiamento. Nelle mamme al primo figlio, la lunghezza del piede è aumentata in media di circa 1,4\u00A0millimetri e l’abbassamento dell’arco di circa 1,0\u00A0millimetro.',
+        '**La gravidanza può abbassare un po’ l’arco, e il cambiamento può restare dopo il parto.** In uno studio del 2013, a 49\u00A0donne sono stati misurati i piedi nel primo trimestre e di nuovo circa quattro mesi e mezzo dopo il parto. Altezza e rigidità dell’arco sono diminuite, mentre lunghezza del piede e abbassamento dell’arco sono aumentati.',
+        'La prima gravidanza spiegava la maggior parte del cambiamento. Nelle mamme al primo figlio, la lunghezza del piede è aumentata in media di circa 1,4\u00A0millimetri e l’abbassamento dell’arco di circa 1,0\u00A0millimetro.',
         'Due cose aiutano a ridimensionare il dato. Gli autori hanno detto che i cambiamenti medi erano piccoli, e lo studio non ha trovato cambiamenti in una misura di come il piede cedeva camminando. «Duraturo» in questo studio vuol dire ancora presente alla visita di controllo qualche mese dopo il parto. Nessuna è stata seguita per anni.',
         'Se dopo una gravidanza il tuo numero di scarpe è aumentato e i piedi stanno bene, è un cambiamento comune. Se un arco continua ad abbassarsi, o l’interno della caviglia inizia a fare male, fallo controllare.',
       ],
@@ -84,7 +117,7 @@ export const FLAT_FEET_AGE_IT: Guide = {
     {
       h2: 'Quando un piede che si appiattisce è un problema?',
       paragraphs: [
-        'Un piede che si appiattisce è un problema quando cambia in fretta, da un solo lato, o con dolore o gonfiore. Un cambiamento lento in entrambi i piedi senza dolore è comune con l’età. La tabella mette in ordine gli schemi più comuni.',
+        '**Un piede che si appiattisce è un problema quando cambia in fretta, da un solo lato, o con dolore o gonfiore.** Un cambiamento lento in entrambi i piedi senza dolore è comune con l’età. La tabella mette in ordine gli schemi più comuni.',
       ],
       table: {
         caption: 'Come cambia l’arco negli adulti e cosa vuol dire di solito',
@@ -108,9 +141,10 @@ export const FLAT_FEET_AGE_IT: Guide = {
       keyFact: 'Una revisione del 2018 ha trovato solo tre studi, 93\u00A0persone in tutto, sull’esercizio per la disfunzione del tendine tibiale posteriore, con effetti moderati per il rinforzo in discesa lenta (eccentrico) aggiunto a ortesi e allungamenti (Ross e colleghi, 2018).',
       paragraphs: [
         'Nessuno studio ha verificato se esercizio o plantari impediscano al piede piatto di cambiare con l’età. Ci sono prove su due domande vicine, e sono poche.',
-        'Per il problema al tendine che sta dietro il cedimento dell’arco da adulti, una revisione del 2018 ha trovato tre studi con 93\u00A0persone in tutto. Il rinforzo in discesa lenta (eccentrico) aggiunto alle ortesi (plantari che sostengono l’arco) e agli allungamenti riduceva dolore e disabilità un po’ di più, in misura moderata, rispetto alle sole ortesi con allungamenti. In uno studio, 36\u00A0adulti negli stadi iniziali hanno seguito il loro programma per tre mesi. Tutti i gruppi sono migliorati, e il gruppo del rinforzo eccentrico è migliorato di più. In un altro studio su 39\u00A0persone, aggiungere il rinforzo ha fatto solo una piccola differenza. Gli autori della revisione hanno definito la ricerca scarsa.',
+        'Per il problema al tendine che sta dietro il cedimento dell’arco da adulti, una revisione del 2018 ha trovato tre studi con 93\u00A0persone in tutto. Il rinforzo in discesa lenta (eccentrico) aggiunto alle ortesi (plantari che sostengono l’arco) e agli allungamenti riduceva dolore e disabilità un po’ di più, in misura moderata, rispetto alle sole ortesi con allungamenti.',
+        'In uno studio, 36\u00A0adulti negli stadi iniziali hanno seguito il loro programma per tre mesi. Tutti i gruppi sono migliorati, e il gruppo del rinforzo eccentrico è migliorato di più. In un altro studio su 39\u00A0persone, aggiungere il rinforzo ha fatto solo una piccola differenza. Gli autori della revisione hanno definito la ricerca scarsa.',
         'Per il piede piatto flessibile di una vita, uno studio su 52\u00A0persone ha trovato che un breve programma di esercizi per piede, caviglia e anca cambiava la forma dell’arco più che in un gruppo di controllo. Ha misurato la forma, non il dolore, e per un periodo breve. Non si sa se questo tipo di allenamento rallenti il cambiamento legato all’età nel corso dei decenni.',
-        'Quindi mantenere forti i muscoli che sostengono l’arco è ragionevole e a basso rischio, ma nessuno può promettere che tenga il tuo arco dov’è. Walkito fa partire ogni esercizio qui sotto da una dose bassa e controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio con un breve test ogni due settimane all’inizio (ogni quattro quando raggiungi un obiettivo), così puoi vedere se questi muscoli si stanno rinforzando.',
+        'Quindi mantenere forti i muscoli che sostengono l’arco è ragionevole e a basso rischio, ma **nessuno può promettere che tenga il tuo arco dov’è.** Walkito fa partire ogni esercizio qui sotto da una dose bassa e controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio con un breve test ogni due settimane all’inizio (ogni quattro quando raggiungi un obiettivo), così puoi vedere se questi muscoli si stanno rinforzando.',
       ],
       exercises: [
         {

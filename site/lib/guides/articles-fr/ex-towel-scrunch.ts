@@ -58,9 +58,17 @@ export const EX_TOWEL_SCRUNCH_FR: Guide = {
     {
       h2: 'Quels muscles l’exercice de la serviette fait-il travailler\u00A0?',
       paragraphs: [
-        'Ramasser la serviette fait travailler les muscles fléchisseurs des orteils\u00A0: le court fléchisseur des orteils (dans le pied), le court fléchisseur de l’hallux (le court fléchisseur du gros orteil) et le carré plantaire. Ce sont des muscles intrinsèques. Mais l’exercice sollicite aussi les fléchisseurs extrinsèques des orteils\u00A0: le long fléchisseur des orteils et le long fléchisseur de l’hallux, qui partent de la jambe et passent par la cheville jusqu’aux orteils.',
+        'Ramasser la serviette fait travailler les muscles fléchisseurs des orteils\u00A0:',
+        {
+          list: [
+            'Le court fléchisseur des orteils (dans le pied).',
+            'Le court fléchisseur de l’hallux (le court fléchisseur du gros orteil).',
+            'Le carré plantaire.',
+          ],
+        },
+        'Ce sont des muscles intrinsèques. Mais l’exercice sollicite aussi les fléchisseurs extrinsèques des orteils\u00A0: le long fléchisseur des orteils et le long fléchisseur de l’hallux, qui partent de la jambe et passent par la cheville jusqu’aux orteils.',
         'Une étude EMG de Jung et coll. (2011) a comparé l’activité musculaire pendant le ramassage de serviette et l’exercice du pied court. Elle a montré que l’abducteur de l’hallux, le muscle qui contribue le plus à tenir la voûte, était plus de quatre fois plus actif pendant l’exercice du pied court que pendant le ramassage de serviette. Le ramassage de serviette produisait plutôt plus d’activité dans les fléchisseurs extrinsèques des orteils.',
-        'Ramasser la serviette est donc un bon exercice pour la force de préhension des orteils, mais il cible moins précisément les muscles intrinsèques de la voûte que l’[exercice du pied court](/fr/exercices/pied-court/).',
+        'Ramasser la serviette est donc **un bon exercice pour la force de préhension des orteils**, mais il cible moins précisément les muscles intrinsèques de la voûte que l’[exercice du pied court](/fr/exercices/pied-court/).',
       ],
       cites: [CITE.jung],
     },
@@ -78,7 +86,8 @@ export const EX_TOWEL_SCRUNCH_FR: Guide = {
       keyFact: 'Dans une étude de 2020 sur 41\u00A0personnes (56\u00A0pieds) atteintes de métatarsalgie, un programme de huit semaines d’exercices des orteils avec ramassage de serviette et de billes a été suivi d’une baisse de la douleur et d’une meilleure préhension des orteils, sans groupe témoin (Amaha et coll., 2020).',
       paragraphs: [
         'Ramasser la serviette convient aux personnes qui débutent les exercices du pied et veulent un point de départ simple. Il convient aussi aux personnes dont la préhension des orteils est faible, car l’exercice entraîne directement la capacité à fléchir les orteils sous charge.',
-        'Une étude de 2020 d’Amaha et coll. a suivi 41\u00A0personnes (56\u00A0pieds) atteintes de métatarsalgie primaire, une douleur sous l’avant du pied, pendant un programme de huit semaines d’exercices des orteils qui comprenait le ramassage de serviette et de billes. La force de préhension des orteils et les scores de douleur se sont tous deux améliorés entre le début et la fin du programme. Il n’y avait pas de groupe témoin, donc une partie de ce changement peut refléter le temps ou l’attention reçue plutôt que les exercices eux-mêmes. La force de préhension des orteils peut aussi compter chez les personnes âgées exposées aux chutes, car les orteils aident à l’équilibre debout et pendant la marche.',
+        'Une étude de 2020 d’Amaha et coll. a suivi 41\u00A0personnes (56\u00A0pieds) atteintes de métatarsalgie primaire, une douleur sous l’avant du pied, pendant un programme de huit semaines d’exercices des orteils qui comprenait le ramassage de serviette et de billes. La force de préhension des orteils et les scores de douleur se sont tous deux améliorés entre le début et la fin du programme. Il n’y avait pas de groupe témoin, donc une partie de ce changement peut refléter le temps ou l’attention reçue plutôt que les exercices eux-mêmes.',
+        'La force de préhension des orteils peut aussi compter chez les personnes âgées exposées aux chutes, car les orteils aident à l’équilibre debout et pendant la marche.',
         'Si votre objectif principal est de relever une voûte plate, l’[exercice du pied court](/fr/exercices/pied-court/) et le [programme d’exercices pour pieds plats](/fr/exercices-pieds-plats/) plus complet sont plus ciblés. Si votre objectif principal est la préhension des orteils et l’activation générale des muscles du pied, ramasser la serviette convient bien.',
       ],
       cites: [CITE.amaha],
@@ -86,10 +95,14 @@ export const EX_TOWEL_SCRUNCH_FR: Guide = {
     {
       h2: 'Quelles sont les erreurs fréquentes avec l’exercice de la serviette\u00A0?',
       paragraphs: [
-        'L’erreur la plus fréquente est de décoller le talon du sol. Quand le talon se soulève, le mollet prend le relais et les muscles du pied travaillent moins. Appuyez le talon au sol pendant chaque répétition.',
-        'Une autre erreur est de tirer trop vite. Arracher la serviette d’un coup utilise l’élan au lieu de la contraction musculaire. Tirez lentement et tenez la serviette froissée les cinq secondes complètes avant de relâcher.',
-        'Certaines personnes ne saisissent qu’avec le gros orteil et oublient les petits orteils. Essayez d’utiliser les cinq orteils ensemble. Si les petits orteils ne suivent pas au début, c’est normal. La coordination s’améliore avec l’entraînement.',
-        'Enfin, ne laissez pas le pied glisser sur le côté de la serviette. La traction doit aller droit vers l’arrière, des orteils vers le talon. Si la serviette part d’un côté, replacez-la et concentrez-vous sur un travail égal des orteils.',
+        {
+          list: [
+            '**L’erreur la plus fréquente est de décoller le talon du sol.** Quand le talon se soulève, le mollet prend le relais et les muscles du pied travaillent moins. Appuyez le talon au sol pendant chaque répétition.',
+            '**Une autre erreur est de tirer trop vite.** Arracher la serviette d’un coup utilise l’élan au lieu de la contraction musculaire. Tirez lentement et tenez la serviette froissée les cinq secondes complètes avant de relâcher.',
+            '**Certaines personnes ne saisissent qu’avec le gros orteil et oublient les petits orteils.** Essayez d’utiliser les cinq orteils ensemble. Si les petits orteils ne suivent pas au début, c’est normal. La coordination s’améliore avec l’entraînement.',
+            '**Enfin, ne laissez pas le pied glisser sur le côté de la serviette.** La traction doit aller droit vers l’arrière, des orteils vers le talon. Si la serviette part d’un côté, replacez-la et concentrez-vous sur un travail égal des orteils.',
+          ],
+        },
       ],
     },
   ],

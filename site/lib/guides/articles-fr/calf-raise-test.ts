@@ -38,7 +38,15 @@ export const CALF_RAISE_TEST_FR: Guide = {
       paragraphs: [
         'Le test mesure l’endurance des fléchisseurs plantaires, les muscles qui poussent le pied vers le bas et décollent le talon du sol. Les principaux sont le gastrocnémien (le plus gros et le plus superficiel des deux muscles du mollet) et le soléaire (le muscle profond, en dessous). Ensemble, ils s’attachent à l’os du talon par le tendon d’Achille.',
         'L’endurance, ici, c’est le nombre de répétitions que vous pouvez faire avant que le mollet se fatigue et que le talon ne puisse plus monter assez haut ou suivre le rythme. Ce nombre reflète la capacité à soutenir un effort sur des dizaines de cycles, ce qui est plus proche de ce que fait le mollet pendant la marche et la course qu’une seule poussée lourde.',
-        'Les professionnels de santé utilisent ce test pour suivre la récupération après une rupture du tendon d’Achille, pour repérer une faiblesse du mollet chez les personnes qui ont mal au talon ou une périostite tibiale, et pour comparer une jambe à l’autre. Dans une étude cas-témoins sur 20\u00A0sportifs, ceux qui avaient un syndrome de stress tibial médial (périostite tibiale) avaient une endurance du mollet plus faible que les témoins en bonne santé.',
+        'Les professionnels de santé utilisent ce test\u00A0:',
+        {
+          list: [
+            'Pour suivre la récupération après une rupture du tendon d’Achille.',
+            'Pour repérer une faiblesse du mollet chez les personnes qui ont mal au talon ou une périostite tibiale.',
+            'Pour comparer une jambe à l’autre.',
+          ],
+        },
+        'Dans une étude cas-témoins sur 20\u00A0sportifs, ceux qui avaient un syndrome de stress tibial médial (périostite tibiale) avaient une endurance du mollet plus faible que les témoins en bonne santé.',
       ],
       cites: [CITE.hebertLosier, CITE.madeley],
     },
@@ -47,7 +55,16 @@ export const CALF_RAISE_TEST_FR: Guide = {
       paragraphs: [
         'Le protocole d’Hébert-Losier 2017 est la version la plus citée et la source des valeurs de référence de cette page. Dans cette étude, 566\u00A0adultes en bonne santé de 20 à 81\u00A0ans ont fait des montées sur pointes sur une jambe jusqu’à la fatigue, de chaque côté.',
         'La personne se tient pieds nus ou en chaussures plates sur une planche inclinée à 10\u00A0degrés, un pied à la fois. Un appui du bout des doigts sur un mur, à hauteur d’épaules, est autorisé, uniquement pour l’équilibre. Un métronome est réglé à 60\u00A0battements par minute\u00A0: un battement pour monter, un pour descendre, soit deux secondes par répétition complète. La consigne est de monter le talon le plus haut possible, genou tendu et buste droit.',
-        'Le test s’arrête quand le talon ne décolle plus de la planche, quand le rythme du métronome ne peut plus être suivi, quand le genou se plie ou que le buste penche, ou quand la personne s’appuie sur le mur au lieu de le toucher du bout des doigts. Un rappel oral est donné avant l’arrêt. L’échauffement comprend 10\u00A0minutes de marche rapide puis 10\u00A0montées sur pointes sur les deux pieds. Deux minutes de repos séparent les deux jambes.',
+        'Le test s’arrête quand\u00A0:',
+        {
+          list: [
+            'Le talon ne décolle plus de la planche.',
+            'Le rythme du métronome ne peut plus être suivi.',
+            'Le genou se plie ou le buste penche.',
+            'La personne s’appuie sur le mur au lieu de le toucher du bout des doigts.',
+          ],
+        },
+        'Un rappel oral est donné avant l’arrêt. L’échauffement comprend 10\u00A0minutes de marche rapide puis 10\u00A0montées sur pointes sur les deux pieds. Deux minutes de repos séparent les deux jambes.',
       ],
       sourceNote:
         'Hébert-Losier 2017\u00A0: ICC de 0,96 (droite) et 0,96 (gauche)\u00A0; différence moyenne entre deux jours de 0,2\u00A0répétition (limites d’agrément à 95\u00A0% de -6,2 à 6,5) à droite et de 0,1\u00A0répétition (limites d’agrément à 95\u00A0% de -6,1 à 6,2) à gauche.',
@@ -57,8 +74,9 @@ export const CALF_RAISE_TEST_FR: Guide = {
       h2: 'Comment faire le test de montée sur pointes chez soi\u00A0?',
       paragraphs: [
         'Vous n’avez pas besoin de planche inclinée. Sur un sol plat, le test est un peu plus facile, donc votre nombre peut dépasser de quelques répétitions les normes publiées. Ce n’est pas grave pour suivre l’évolution dans le temps et comparer la gauche et la droite.',
-        'Tenez-vous près d’un mur, le bout des doigts posé dessus à hauteur d’épaules. Levez un pied. Réglez une application de métronome à 60\u00A0battements par minute. Au premier battement, montez sur la pointe le plus haut possible. Au deuxième, redescendez le talon jusqu’au sol. Continuez jusqu’à ne plus pouvoir suivre le rythme, jusqu’à ce que le talon décolle à peine, ou jusqu’à ce que le genou se plie.',
-        'Comptez le nombre total de répétitions. Reposez-vous deux minutes, puis recommencez sur l’autre jambe. Notez les deux nombres et la date. L’erreur de mesure typique est d’environ deux répétitions\u00A0: un petit écart d’un test à l’autre, c’est du bruit. Ce qui compte, c’est la tendance sur plusieurs semaines.',
+        'Tenez-vous près d’un mur, le bout des doigts posé dessus à hauteur d’épaules. Levez un pied. Réglez une application de métronome à 60\u00A0battements par minute.',
+        'Au premier battement, montez sur la pointe le plus haut possible. Au deuxième, redescendez le talon jusqu’au sol. Continuez jusqu’à ne plus pouvoir suivre le rythme, jusqu’à ce que le talon décolle à peine, ou jusqu’à ce que le genou se plie.',
+        'Comptez le nombre total de répétitions. Reposez-vous deux minutes, puis recommencez sur l’autre jambe. Notez les deux nombres et la date. L’erreur de mesure typique est d’environ deux répétitions\u00A0: un petit écart d’un test à l’autre, c’est du bruit. **Ce qui compte, c’est la tendance sur plusieurs semaines.**',
       ],
       exercises: [
         {
@@ -81,7 +99,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
       keyFact: 'En 1995, une étude sur 203\u00A0adultes de 20 à 59\u00A0ans a proposé 25\u00A0répétitions comme repère d’une performance normale au test de montée sur pointes sur une jambe (Lunsford et Perry, 1995).',
       paragraphs: [
         'Le tableau ci-dessous donne le nombre médian de montées sur pointes sur une jambe par âge et par sexe, d’après Hébert-Losier 2017. Ce sont des estimations du modèle pour une personne d’un niveau d’activité physique modéré (niveau 4 sur une échelle de 6) et d’un indice de masse corporelle de 24,2, en moyenne sur les deux jambes.',
-        'Un niveau d’activité plus élevé ajoute environ cinq à neuf répétitions à la médiane. En 1995, Lunsford et Perry ont testé 203\u00A0adultes de 20 à 59\u00A0ans et ont recommandé 25\u00A0répétitions comme critère d’une performance normale. Les données d’Hébert-Losier confirment ce chiffre comme une référence raisonnable chez l’adulte, même s’il s’agit d’une médiane de population, pas d’un seuil de réussite ou d’échec. Votre propre point de départ et le sens de l’évolution comptent plus que n’importe quel chiffre isolé.',
+        'Un niveau d’activité plus élevé ajoute environ cinq à neuf répétitions à la médiane. En 1995, Lunsford et Perry ont testé 203\u00A0adultes de 20 à 59\u00A0ans et ont recommandé 25\u00A0répétitions comme critère d’une performance normale. Les données d’Hébert-Losier confirment ce chiffre comme une référence raisonnable chez l’adulte, même s’il s’agit d’une médiane de population, pas d’un seuil de réussite ou d’échec. **Votre propre point de départ et le sens de l’évolution comptent plus que n’importe quel chiffre isolé.**',
       ],
       table: {
         caption: 'Nombre médian de montées sur pointes sur une jambe par âge et par sexe (Hébert-Losier 2017)',
@@ -105,23 +123,34 @@ export const CALF_RAISE_TEST_FR: Guide = {
       keyFact: 'Dans une étude sur 78\u00A0personnes après une rupture du tendon d’Achille, la symétrie moyenne entre les membres à six mois était de 84\u00A0% en nombre de répétitions mais seulement de 61\u00A0% en travail total, ce qui montre que le seul nombre de répétitions peut sous-estimer un déficit (Silbernagel et coll., 2010).',
       paragraphs: [
         'À peu près le même, oui. Dans l’étude d’Hébert-Losier, la différence médiane entre droite et gauche était d’une répétition, et l’erreur de mesure typique d’environ deux répétitions. Un écart aussi petit, c’est du bruit.',
-        'En rééducation du membre inférieur, un indice de symétrie des membres (LSI) de 90\u00A0% ou plus est le repère habituel d’une fonction normale. Le LSI, c’est le côté le plus faible divisé par le côté le plus fort, multiplié par 100. En dessous de 90\u00A0%, un côté est plus de 10\u00A0% plus faible. Silbernagel et coll. ont utilisé ce seuil chez 78\u00A0patients après une rupture du tendon d’Achille\u00A0: à 6\u00A0mois, les patients avaient en moyenne un LSI de 84\u00A0% en répétitions et seulement de 61\u00A0% en travail total, ce qui montre que compter les répétitions seules peut sous-estimer un déficit.',
-        'Sans blessure, un écart de plus de 10\u00A0% vaut la peine d’être noté et suivi. Cela ne veut pas dire que quelque chose ne va pas. Mais si l’écart persiste sur plusieurs tests et que vous avez aussi mal du côté le plus faible, c’est une information utile pour un professionnel de santé.',
+        'En rééducation du membre inférieur, un indice de symétrie des membres (LSI) de 90\u00A0% ou plus est le repère habituel d’une fonction normale. Le LSI, c’est le côté le plus faible divisé par le côté le plus fort, multiplié par 100. En dessous de 90\u00A0%, un côté est plus de 10\u00A0% plus faible.',
+        'Silbernagel et coll. ont utilisé ce seuil chez 78\u00A0patients après une rupture du tendon d’Achille\u00A0: à 6\u00A0mois, les patients avaient en moyenne un LSI de 84\u00A0% en répétitions et seulement de 61\u00A0% en travail total, ce qui montre que compter les répétitions seules peut sous-estimer un déficit.',
+        'Sans blessure, **un écart de plus de 10\u00A0% vaut la peine d’être noté et suivi.** Cela ne veut pas dire que quelque chose ne va pas. Mais si l’écart persiste sur plusieurs tests et que vous avez aussi mal du côté le plus faible, c’est une information utile pour un professionnel de santé.',
       ],
       cites: [CITE.hebertLosier, CITE.silbernagelHeelRise],
     },
     {
       h2: 'Que veut dire un score bas, et que ne veut-il pas dire\u00A0?',
       paragraphs: [
-        'Un nombre bas de montées sur pointes vous dit que le mollet de ce côté se fatigue plus tôt que la médiane de la population pour votre âge, votre sexe et votre niveau d’activité. Il ne vous dit pas pourquoi. Un déconditionnement, une blessure récente, un problème du tendon d’Achille, l’évitement de la douleur ou le manque d’habitude du test peuvent tous donner un nombre bas.',
-        'Le test n’est pas un diagnostic. Un score de 15 chez un homme de 30\u00A0ans ne veut pas dire qu’il a une fasciite plantaire ou une tendinite d’Achille. Cela veut dire que l’endurance de son mollet est sous la médiane de 33 pour ce groupe. Un professionnel de santé combine ce nombre avec d’autres éléments pour décider s’il explique un symptôme. Le test est plus parlant comme tendance que comme mesure isolée\u00A0: passer de 14 à 22 en deux mois est un signal plus clair que n’importe quel chiffre comparé à un tableau.',
+        'Un nombre bas de montées sur pointes vous dit que le mollet de ce côté se fatigue plus tôt que la médiane de la population pour votre âge, votre sexe et votre niveau d’activité. Il ne vous dit pas pourquoi. Tout cela peut donner un nombre bas\u00A0:',
+        {
+          list: [
+            'Un déconditionnement.',
+            'Une blessure récente.',
+            'Un problème du tendon d’Achille.',
+            'L’évitement de la douleur.',
+            'Le manque d’habitude du test.',
+          ],
+        },
+        '**Le test n’est pas un diagnostic.** Un score de 15 chez un homme de 30\u00A0ans ne veut pas dire qu’il a une fasciite plantaire ou une tendinite d’Achille. Cela veut dire que l’endurance de son mollet est sous la médiane de 33 pour ce groupe.',
+        'Un professionnel de santé combine ce nombre avec d’autres éléments pour décider s’il explique un symptôme. Le test est plus parlant comme tendance que comme mesure isolée\u00A0: passer de 14 à 22 en deux mois est un signal plus clair que n’importe quel chiffre comparé à un tableau.',
       ],
       cites: [CITE.hebertLosier],
     },
     {
       h2: 'Quel lien entre l’endurance du mollet, la douleur au talon, l’Achille et la course\u00A0?',
       paragraphs: [
-        'Le mollet et le fascia plantaire sont reliés par l’os du talon. Le tendon d’Achille tire à l’arrière\u00A0; le fascia tire par en dessous. Des mollets faibles ou qui se fatiguent vite mettent plus de tension sur les deux à chaque pas.',
+        'Le mollet et le fascia plantaire sont reliés par l’os du talon. Le tendon d’Achille tire à l’arrière\u00A0; le fascia tire par en dessous. **Des mollets faibles ou qui se fatiguent vite mettent plus de tension sur les deux à chaque pas.**',
         'La recommandation de 2023 sur la douleur au talon donne aux étirements du mollet et du fascia plantaire sa meilleure note, A, et au renforcement musculaire la note B. L’essai de Rathleff, qui a testé les montées sur pointes avec charge dans la fasciite plantaire, utilisait une montée sur pointes comme exercice principal, et les participants ont vu leur douleur baisser plus vite qu’avec les étirements seuls sur trois mois. Voir [montées sur pointes et fasciite plantaire](/fr/montees-sur-pointes-fasciite-plantaire/) pour le protocole complet.',
         'Pour la tendinite d’Achille, le heel-rise test est l’une des mesures de résultat habituelles. Les personnes qui ont une tendinopathie d’Achille du corps du tendon (une douleur au milieu du tendon, pas à l’os du talon) ont en général une endurance du mollet réduite du côté atteint. Voir [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/) pour le travail excentrique.',
         'En course, le mollet encaisse deux à trois fois le poids du corps à chaque foulée. Un mollet qui se fatigue tôt reporte la charge sur le genou, le tibia et le pied. Faire progresser son score peut faire partie d’un plan de reprise de la course. Voir [douleur au talon et course](/heel-pain-runners/) (en anglais) pour une vue d’ensemble.',
@@ -131,8 +160,9 @@ export const CALF_RAISE_TEST_FR: Guide = {
     {
       h2: 'Comment améliorer un score bas au test de montée sur pointes\u00A0?',
       paragraphs: [
-        'Les exercices qui construisent l’endurance du mollet en rééducation sont les mêmes que ceux qui font monter votre score au test. Commencez au niveau qui correspond à votre état actuel, et passez au suivant une fois que deux séances de suite vous ont paru faciles.',
-        'Si vous faites moins de 10\u00A0montées sur une jambe, commencez par les montées sur pointes assis ou debout sur deux pieds. Passez au maintien sur pointes pour construire l’endurance isométrique, puis aux montées sur une jambe au sol. Une marche augmente l’amplitude. Un sac à dos augmente la charge. Voir [montées sur pointes](/fr/exercices/montees-sur-pointes/) pour le mouvement de base, [montée sur pointes avec serviette](/fr/exercices/montee-sur-pointes-serviette/) pour la version qui charge aussi le fascia plantaire, et [descentes excentriques du talon](/fr/exercices/descentes-excentriques-talon/) pour la variante centrée sur l’Achille.',
+        'Les exercices qui construisent l’endurance du mollet en rééducation sont les mêmes que ceux qui font monter votre score au test. Commencez au niveau qui correspond à votre état actuel, et **passez au suivant une fois que deux séances de suite vous ont paru faciles.**',
+        'Si vous faites moins de 10\u00A0montées sur une jambe, commencez par les montées sur pointes assis ou debout sur deux pieds. Passez au maintien sur pointes pour construire l’endurance isométrique, puis aux montées sur une jambe au sol. Une marche augmente l’amplitude. Un sac à dos augmente la charge.',
+        'Voir [montées sur pointes](/fr/exercices/montees-sur-pointes/) pour le mouvement de base, [montée sur pointes avec serviette](/fr/exercices/montee-sur-pointes-serviette/) pour la version qui charge aussi le fascia plantaire, et [descentes excentriques du talon](/fr/exercices/descentes-excentriques-talon/) pour la variante centrée sur l’Achille.',
       ],
       exercises: [
         {

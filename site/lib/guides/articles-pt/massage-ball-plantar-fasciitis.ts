@@ -29,8 +29,9 @@ export const MASSAGE_BALL_PT: Guide = {
       h2: 'A bolinha de massagem ajuda na fascite plantar?',
       keyFact: 'Em um ensaio pequeno com 14\u00A0pessoas orientadas a rolar uma bolinha de massagem pelo menos três vezes por dia, as pontuações do pé não melhoraram de forma significativa em três meses (Ryu e colegas, 2024).',
       paragraphs: [
-        'A bolinha de massagem ajuda algumas pessoas com fascite plantar a sentir o pé mais solto e menos dolorido por um tempo curto, mas há pouca prova de que rolar sozinho mude a dor ao longo dos meses. A fascite plantar é uma irritação da fáscia plantar, a faixa grossa embaixo da sola que vai do calcanhar até os dedos. Rolar o pé pressiona essa faixa e os pequenos músculos em volta dela.',
-        'A evidência direta é pouca. Em um ensaio de 2024 da Coreia, 14\u00A0pessoas com dor no calcanhar havia pelo menos seis meses foram orientadas a rolar uma bolinha de massagem embaixo da sola pelo menos três vezes por dia, por mais de cinco minutos cada vez. Em três meses, o grupo como um todo não melhorou de forma significativa num questionário de dor no pé. O ensaio era minúsculo e não tinha um grupo sem bolinha, então não prova que a bolinha não faz nada, só que ninguém mostrou que ela faz muito.',
+        'A bolinha de massagem ajuda algumas pessoas com fascite plantar a sentir o pé mais solto e menos dolorido por um tempo curto, mas **há pouca prova de que rolar sozinho mude a dor ao longo dos meses.** A fascite plantar é uma irritação da fáscia plantar, a faixa grossa embaixo da sola que vai do calcanhar até os dedos. Rolar o pé pressiona essa faixa e os pequenos músculos em volta dela.',
+        'A evidência direta é pouca. Em um ensaio de 2024 da Coreia, 14\u00A0pessoas com dor no calcanhar havia pelo menos seis meses foram orientadas a rolar uma bolinha de massagem embaixo da sola pelo menos três vezes por dia, por mais de cinco minutos cada vez. Em três meses, o grupo como um todo não melhorou de forma significativa num questionário de dor no pé.',
+        'O ensaio era minúsculo e não tinha um grupo sem bolinha, então não prova que a bolinha não faz nada, só que ninguém mostrou que ela faz muito.',
         'É por isso que rolar o pé fica no espaço da recuperação neste site, ao lado dos exercícios com apoio mais forte: o alongamento da fáscia plantar e da panturrilha (grau A na diretriz) e o fortalecimento da panturrilha (grau B).',
       ],
       figure: {
@@ -45,9 +46,16 @@ export const MASSAGE_BALL_PT: Guide = {
       keyFact: 'Em um ensaio com 66\u00A0pessoas, a liberação miofascial feita por terapeuta reduziu as pontuações do Foot Function Index em 72,4% depois de um mês, contra 7,4% com um procedimento falso, e em 60,6% aos três meses (Ajimsha e colegas, 2014).',
       paragraphs: [
         'A massagem feita por um profissional treinado tem evidência razoável para fascite plantar. A massagem que você faz sozinho com uma bolinha tem muito pouca.',
-        '**Trabalho manual feito por um profissional.** A diretriz de 2023 para dor no calcanhar dá à terapia manual o grau **A**, o mais alto. Ela a define como um trabalho especializado nas articulações e nos tecidos moles da perna e do pé, como a liberação miofascial (pressão e alongamento lentos e sustentados no tecido). Em um ensaio de 2014 com 66\u00A0pessoas, um terapeuta fez 12\u00A0sessões de liberação miofascial na panturrilha e na sola ao longo de um mês. As pontuações no Foot Function Index, um questionário sobre dor e função no dia a dia, caíram 72,4%, contra 7,4% em um grupo que recebeu um ultrassom falso. Aos três meses, a queda ainda era de 60,6%. Um ensaio piloto de 2014 com massagem na panturrilha encontrou um ganho menor e de curto prazo (mais sobre isso na seção da panturrilha, abaixo).',
+        '**Trabalho manual feito por um profissional.** A diretriz de 2023 para dor no calcanhar dá à terapia manual o grau **A**, o mais alto. Ela a define como um trabalho especializado nas articulações e nos tecidos moles da perna e do pé, como a liberação miofascial (pressão e alongamento lentos e sustentados no tecido).',
+        'Em um ensaio de 2014 com 66\u00A0pessoas, um terapeuta fez 12\u00A0sessões de liberação miofascial na panturrilha e na sola ao longo de um mês. As pontuações no Foot Function Index, um questionário sobre dor e função no dia a dia, caíram 72,4%, contra 7,4% em um grupo que recebeu um ultrassom falso. Aos três meses, a queda ainda era de 60,6%. Um ensaio piloto de 2014 com massagem na panturrilha encontrou um ganho menor e de curto prazo (mais sobre isso na seção da panturrilha, abaixo).',
         'Uma revisão de 2018 com 7\u00A0ensaios encontrou que somar terapia manual melhorou a função em 6 deles, mas ela só foi claramente melhor que a comparação para a dor em 2 de 6. Os autores sugerem usá-la junto com alongamento e fortalecimento.',
-        '**Massagem que você faz sozinho.** Só alguns ensaios testam a automassagem, e cada um a junta com exercício ou a mede por minutos. Em um ensaio de 2021 com 50\u00A0pessoas, uma sessão de rolo de espuma na panturrilha e na sola reduziu a dor em cerca de 3\u00A0pontos numa escala de 10\u00A0cm, contra cerca de 2,6 com uma sessão de alongamento, e a diferença entre os grupos não foi estatisticamente significativa. Isso foi medido logo depois da sessão, sem acompanhamento. Em um ensaio de 2025 com 64\u00A0pessoas, um programa supervisionado de fortalecimento, alongamento e 10\u00A0minutos de automassagem com um bastão, três dias por semana durante um mês, reduziu a dor em 2,5\u00A0pontos a mais que um folheto de autocuidado, e o ganho se manteve um mês depois. Como a massagem veio junto com o exercício, a parte dela no resultado é desconhecida.',
+        '**Massagem que você faz sozinho.** Só alguns ensaios testam a automassagem, e cada um a junta com exercício ou a mede por minutos:',
+        {
+          list: [
+            '**Ensaio de 2021 com 50\u00A0pessoas:** uma sessão de rolo de espuma na panturrilha e na sola reduziu a dor em cerca de 3\u00A0pontos numa escala de 10\u00A0cm, contra cerca de 2,6 com uma sessão de alongamento, e a diferença entre os grupos não foi estatisticamente significativa. Isso foi medido logo depois da sessão, sem acompanhamento.',
+            '**Ensaio de 2025 com 64\u00A0pessoas:** um programa supervisionado de fortalecimento, alongamento e 10\u00A0minutos de automassagem com um bastão, três dias por semana durante um mês, reduziu a dor em 2,5\u00A0pontos a mais que um folheto de autocuidado, e o ganho se manteve um mês depois. Como a massagem veio junto com o exercício, a parte dela no resultado é desconhecida.',
+          ],
+        },
       ],
       table: {
         caption: 'Massagem para fascite plantar: quem fez e o que foi encontrado',
@@ -67,7 +75,7 @@ export const MASSAGE_BALL_PT: Guide = {
       h2: 'Bolinha de tênis, de lacrosse, cravo, rolo ou garrafa: qual é melhor?',
       paragraphs: [
         'Nenhum estudo comparou ferramentas de massagem para fascite plantar, então a melhor é a que dá uma pressão firme sem uma pontada de dor. A tabela abaixo é uma orientação prática, não dados de ensaios.',
-        'Comece pela mais macia. Uma bolinha de tênis espalha a pressão e combina com um pé dolorido. Passe para uma bolinha de lacrosse só se a de tênis parecer não fazer nada depois de algumas sessões. Uma bolinha de golfe muitas vezes afunda direto no ponto dolorido do calcanhar. Uma bolinha com cravos acrescenta uma sensação na pele, mas não há evidência de que os cravos atuem mais fundo.',
+        '**Comece pela mais macia.** Uma bolinha de tênis espalha a pressão e combina com um pé dolorido. Passe para uma bolinha de lacrosse só se a de tênis parecer não fazer nada depois de algumas sessões. Uma bolinha de golfe muitas vezes afunda direto no ponto dolorido do calcanhar. Uma bolinha com cravos acrescenta uma sensação na pele, mas não há evidência de que os cravos atuem mais fundo.',
       ],
       table: {
         caption: 'Ferramentas de massagem para fascite plantar comparadas (orientação prática, não dados de ensaios)',
@@ -88,17 +96,34 @@ export const MASSAGE_BALL_PT: Guide = {
       h2: 'A garrafa de água congelada ajuda na fascite plantar?',
       keyFact: 'Em um estudo pequeno com 30\u00A0pessoas, acrescentar uma bolinha de tênis congelada ao alongamento por dois meses reduziu a dor mais que só alongar, mas não ficou claro como as pessoas foram divididas nos grupos (Shinde e Patil, 2026).',
       paragraphs: [
-        'Uma garrafa de água congelada pode dar uma sensação de alívio numa sola dolorida, mas nenhum ensaio mostrou que o frio acrescenta algo em relação a uma garrafa ou bolinha em temperatura ambiente. Ela pressiona ao longo do arco como um rolo e deixa a pele dormente por um tempo.',
-        'O único estudo encontrado que soma a rolagem com algo congelado a um programa de exercícios é pequeno e fraco. Em um estudo de 2026 com 30\u00A0pessoas, um grupo fez alongamento estático e o outro fez alongamento mais uma bolinha de tênis congelada, por dois meses. A dor caiu de cerca de 7,7 para 3,5 de 10 no grupo da bolinha congelada e de 7,6 para 6,7 só com alongamento. O artigo não deixa claro como as pessoas foram colocadas nos grupos, e o grupo do alongamento melhorou bem menos que em ensaios maiores, então olhe essa diferença com cautela. A diretriz de 2023 para dor no calcanhar não faz recomendação sobre gelo.',
-        'Se você gosta do frio, use com cuidado. Limite a cerca de 10\u00A0minutos, enrole uma meia fina na garrafa se a pele arder e evite o frio se você tem pouca sensibilidade nos pés ou fenômeno de Raynaud. As promessas de que a garrafa congelada “reduz a inflamação” não têm apoio em ensaios sobre fascite plantar. Para a questão mais ampla de frio ou calor, veja [gelo ou calor na fascite plantar](/pt/gelo-ou-calor-fascite-plantar/).',
+        'Uma garrafa de água congelada pode dar uma sensação de alívio numa sola dolorida, mas **nenhum ensaio mostrou que o frio acrescenta algo em relação a uma garrafa ou bolinha em temperatura ambiente.** Ela pressiona ao longo do arco como um rolo e deixa a pele dormente por um tempo.',
+        'O único estudo encontrado que soma a rolagem com algo congelado a um programa de exercícios é pequeno e fraco. Em um estudo de 2026 com 30\u00A0pessoas, um grupo fez alongamento estático e o outro fez alongamento mais uma bolinha de tênis congelada, por dois meses. A dor caiu de cerca de 7,7 para 3,5 de 10 no grupo da bolinha congelada e de 7,6 para 6,7 só com alongamento.',
+        'O artigo não deixa claro como as pessoas foram colocadas nos grupos, e o grupo do alongamento melhorou bem menos que em ensaios maiores, então olhe essa diferença com cautela. A diretriz de 2023 para dor no calcanhar não faz recomendação sobre gelo.',
+        'Se você gosta do frio, use com cuidado:',
+        {
+          list: [
+            'Limite a cerca de 10\u00A0minutos.',
+            'Enrole uma meia fina na garrafa se a pele arder.',
+            'Evite o frio se você tem pouca sensibilidade nos pés ou fenômeno de Raynaud.',
+          ],
+        },
+        'As promessas de que a garrafa congelada “reduz a inflamação” não têm apoio em ensaios sobre fascite plantar. Para a questão mais ampla de frio ou calor, veja [gelo ou calor na fascite plantar](/pt/gelo-ou-calor-fascite-plantar/).',
       ],
       cites: [CITE.shindeFrozenBall, CITE.guideline],
     },
     {
       h2: 'Com quanta força e por quanto tempo rolar o pé?',
       paragraphs: [
-        'Role com uma pressão firme e constante, que fique em cerca de 3 a 5 de 10 numa escala de dor ou abaixo disso, por mais ou menos um minuto em cada pé. Não existe uma dose ideal testada, então comece com pouco tempo e só aumente se o pé se sentir melhor depois.',
-        'Os estudos usaram quantidades bem diferentes. No ensaio de 2021 com rolo de espuma, as pessoas rolavam por 45\u00A0segundos, descansavam 15\u00A0segundos e repetiam isso cinco vezes. No ensaio de 2024 com bolinha de massagem, as pessoas foram orientadas a rolar pelo menos três vezes por dia, por mais de cinco minutos cada vez, e o grupo não melhorou de forma significativa. No ensaio de 2025, a automassagem levava 10\u00A0minutos dentro de uma sessão de exercícios mais longa. Nesses estudos, rolar mais não pareceu claramente melhor.',
+        '**Role com uma pressão firme e constante, que fique em cerca de 3 a 5 de 10 numa escala de dor ou abaixo disso, por mais ou menos um minuto em cada pé.** Não existe uma dose ideal testada, então comece com pouco tempo e só aumente se o pé se sentir melhor depois.',
+        'Os estudos usaram quantidades bem diferentes:',
+        {
+          list: [
+            '**Ensaio de 2021 com rolo de espuma:** as pessoas rolavam por 45\u00A0segundos, descansavam 15\u00A0segundos e repetiam isso cinco vezes.',
+            '**Ensaio de 2024 com bolinha de massagem:** as pessoas foram orientadas a rolar pelo menos três vezes por dia, por mais de cinco minutos cada vez, e o grupo não melhorou de forma significativa.',
+            '**Ensaio de 2025:** a automassagem levava 10\u00A0minutos dentro de uma sessão de exercícios mais longa.',
+          ],
+        },
+        'Nesses estudos, rolar mais não pareceu claramente melhor.',
         'O Walkito começa o exercício de rolar o pé na bolinha com 1 x 60\u00A0segundos, como um exercício curto de recuperação nos dias mais leves. Fique sentado e deixe o peso da perna fazer a maior parte do trabalho.',
       ],
       exercises: [
@@ -121,8 +146,9 @@ export const MASSAGE_BALL_PT: Guide = {
       h2: 'Vale rolar ou massagear a panturrilha na fascite plantar?',
       keyFact: 'Em um ensaio piloto com 69\u00A0pessoas, massagem profunda na panturrilha com exercícios de deslizamento neural e alongamento por conta própria melhorou a função mais que ultrassom no calcanhar com os mesmos alongamentos (Saban e colegas, 2014).',
       paragraphs: [
-        'Trabalhar a panturrilha é um acréscimo razoável na fascite plantar, porque uma panturrilha tensa puxa o calcanhar, e os ensaios que mais ajudaram trabalharam a panturrilha além da sola. Os músculos da panturrilha se juntam no tendão de Aquiles, que se prende ao osso do calcanhar perto de onde a fáscia plantar começa.',
-        'No ensaio piloto de 2014 com 69\u00A0pessoas, massagem profunda na panturrilha, mais exercícios de deslizamento neural e alongamento por conta própria, melhorou a função mais que ultrassom no calcanhar com os mesmos alongamentos. No ensaio de 2021 com rolo de espuma, as pessoas também rolavam a panturrilha da parte de trás do joelho até o tendão de Aquiles, e a panturrilha delas ficou menos sensível à pressão que no grupo do alongamento. O alongamento de panturrilha tem apoio mais forte que rolar a panturrilha: a diretriz de 2023 dá a ele o grau **A**, e uma revisão de 2020 encontrou evidência de qualidade moderada de que o alongamento da fáscia plantar aliviou a dor mais que o alongamento de panturrilha, e evidência de qualidade muito baixa de que o alongamento de panturrilha foi melhor que um alongamento falso.',
+        '**Trabalhar a panturrilha é um acréscimo razoável na fascite plantar**, porque uma panturrilha tensa puxa o calcanhar, e os ensaios que mais ajudaram trabalharam a panturrilha além da sola. Os músculos da panturrilha se juntam no tendão de Aquiles, que se prende ao osso do calcanhar perto de onde a fáscia plantar começa.',
+        'No ensaio piloto de 2014 com 69\u00A0pessoas, massagem profunda na panturrilha, mais exercícios de deslizamento neural e alongamento por conta própria, melhorou a função mais que ultrassom no calcanhar com os mesmos alongamentos. No ensaio de 2021 com rolo de espuma, as pessoas também rolavam a panturrilha da parte de trás do joelho até o tendão de Aquiles, e a panturrilha delas ficou menos sensível à pressão que no grupo do alongamento.',
+        'O alongamento de panturrilha tem apoio mais forte que rolar a panturrilha: a diretriz de 2023 dá a ele o grau **A**, e uma revisão de 2020 encontrou evidência de qualidade moderada de que o alongamento da fáscia plantar aliviou a dor mais que o alongamento de panturrilha, e evidência de qualidade muito baixa de que o alongamento de panturrilha foi melhor que um alongamento falso.',
         'Role a panturrilha num rolo de espuma por um minuto se você gostar, e depois faça os dois alongamentos abaixo. Mais em [panturrilha tensa](/pt/panturrilha-tensa/).',
       ],
       exercises: [
@@ -157,7 +183,15 @@ export const MASSAGE_BALL_PT: Guide = {
       h2: 'Por que massagear a fascite plantar dói, e isso pode piorar?',
       paragraphs: [
         'Massagear a fascite plantar muitas vezes dói porque o tecido perto do calcanhar já está sensível, e pressionar um ponto sensível dá uma sensação aguda. Uma sensibilidade leve enquanto você rola, que passa em poucos minutos, é comum. Dor aguda, que dura até a manhã seguinte ou deixa um roxo, quer dizer que você apertou demais ou por tempo demais.',
-        'Use os primeiros passos da manhã seguinte como teste. Se esses passos estiverem piores depois de uma sessão de rolagem, corte o tempo pela metade, troque por uma bolinha mais macia e fique longe do calcanhar em si. Se continuarem piores, pare de rolar por um tempo: os alongamentos e o fortalecimento importam mais. Mais sobre esse padrão em [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/).',
+        '**Use os primeiros passos da manhã seguinte como teste.** Se esses passos estiverem piores depois de uma sessão de rolagem:',
+        {
+          list: [
+            'Corte o tempo pela metade.',
+            'Troque por uma bolinha mais macia.',
+            'Fique longe do calcanhar em si.',
+          ],
+        },
+        'Se continuarem piores, pare de rolar por um tempo: os alongamentos e o fortalecimento importam mais. Mais sobre esse padrão em [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/).',
         'As ferramentas duras são as de maior risco. Bolinhas de golfe e rolos com relevo concentram a força numa área pequena, e pisar em pé sobre uma bolinha põe todo o peso do corpo nela. Fique sentado. Se a dor fica no meio da almofada do calcanhar e parece um machucado, pode ser [síndrome do coxim gorduroso do calcanhar](/pt/sindrome-coxim-gorduroso-calcanhar/), e pressionar ali normalmente não ajuda.',
       ],
       cites: [],
@@ -179,8 +213,17 @@ export const MASSAGE_BALL_PT: Guide = {
     {
       h2: 'Onde a rolagem entra numa rotina para fascite plantar?',
       paragraphs: [
-        'A rolagem funciona melhor como um extra curto em volta dos exercícios que têm a evidência: um minuto rolando o pé, o alongamento da fáscia plantar antes dos primeiros passos, alongamentos de panturrilha durante o dia e fortalecimento da panturrilha algumas vezes por semana. Em um ensaio com 48\u00A0pessoas, elevações de calcanhar lentas com uma toalha embaixo dos dedos deram pontuações de função do pé melhores que o alongamento da fáscia plantar aos três meses, embora os grupos estivessem empatados aos seis e aos doze meses.',
-        'Se você puder ir a um fisioterapeuta, o trabalho manual nos tecidos moles é a versão de massagem que a diretriz apoia com mais firmeza. Em casa, fique com a bolinha, mas não deixe que ela substitua o [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) ou a [elevação de calcanhar](/pt/elevacao-de-calcanhar-fascite-plantar/).',
+        'A rolagem funciona melhor como um extra curto em volta dos exercícios que têm a evidência:',
+        {
+          list: [
+            'Um minuto rolando o pé.',
+            'O alongamento da fáscia plantar antes dos primeiros passos.',
+            'Alongamentos de panturrilha durante o dia.',
+            'Fortalecimento da panturrilha algumas vezes por semana.',
+          ],
+        },
+        'Em um ensaio com 48\u00A0pessoas, elevações de calcanhar lentas com uma toalha embaixo dos dedos deram pontuações de função do pé melhores que o alongamento da fáscia plantar aos três meses, embora os grupos estivessem empatados aos seis e aos doze meses.',
+        'Se você puder ir a um fisioterapeuta, **o trabalho manual nos tecidos moles é a versão de massagem que a diretriz apoia com mais firmeza.** Em casa, fique com a bolinha, mas não deixe que ela substitua o [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) ou a [elevação de calcanhar](/pt/elevacao-de-calcanhar-fascite-plantar/).',
       ],
       cites: [CITE.rathleff, CITE.guideline],
     },

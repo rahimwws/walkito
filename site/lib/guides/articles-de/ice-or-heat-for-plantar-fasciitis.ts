@@ -29,7 +29,7 @@ export const ICE_HEAT_DE: Guide = {
       h2: 'Ist Kühlen oder Wärmen besser bei Plantarfasziitis?',
       keyFact: 'Die Leitlinie von 2023 zu Fersenschmerzen fand 1 kleine Studie zu Wärme und sagte, dass eine Empfehlung zu oberflächlichen Wärme- und Kälteanwendungen nicht ausgesprochen werden kann (Koc und Kollegen, 2023).',
       paragraphs: [
-        'Weder Kühlen noch Wärmen ist bei Plantarfasziitis klar besser, weil keins von beiden gut genug untersucht ist, um einen Sieger zu küren. Die Leitlinie von 2023 zu Fersenschmerzen der American Physical Therapy Association hat die Forschung zu „thermischen Anwendungen“ gesichtet, also zu Wärme- und Kältepackungen und Ähnlichem. Sie fand eine kleine Studie von geringerer Qualität zu Wärme und kam zu dem Schluss, dass eine Empfehlung „nicht ausgesprochen werden kann“.',
+        '**Weder Kühlen noch Wärmen ist bei Plantarfasziitis klar besser**, weil keins von beiden gut genug untersucht ist, um einen Sieger zu küren. Die Leitlinie von 2023 zu Fersenschmerzen der American Physical Therapy Association hat die Forschung zu „thermischen Anwendungen“ gesichtet, also zu Wärme- und Kältepackungen und Ähnlichem. Sie fand eine kleine Studie von geringerer Qualität zu Wärme und kam zu dem Schluss, dass eine Empfehlung „nicht ausgesprochen werden kann“.',
         'Das heißt nicht, dass beides nutzlos ist. Es heißt, dass es Hilfsmittel fürs Wohlbefinden sind und du danach wählen kannst, wie sich dein Fuß gerade anfühlt. Die Tabelle unten ist eine praktische Orientierung, keine Regel aus einer Studie.',
       ],
       table: {
@@ -54,7 +54,7 @@ export const ICE_HEAT_DE: Guide = {
         alt: 'Ein Fuß von der Innenseite, die Plantarfaszie ist als Band von der Ferse bis zu den Zehen hervorgehoben.',
       },
       paragraphs: [
-        'Eine lang bestehende Plantarfasziitis ist meist kein entzündetes Gewebe, so wie es eine frische Verstauchung ist. Die Endung „-itis“ im Namen bedeutet Entzündung, und deshalb raten dir so viele Seiten zum Kühlen. Als Lemont und Kollegen 2003 aber Gewebe aus 50\u00A0Operationen bei chronischer Plantarfasziitis untersuchten, fanden sie abgenutzte, ausgefranste und degenerierte Faszie und keine Anzeichen einer Entzündung. Sie schlugen vor, von Fasziose zu sprechen, also von einem abgenutzten Band, nicht von einem entzündeten.',
+        '**Eine lang bestehende Plantarfasziitis ist meist kein entzündetes Gewebe, so wie es eine frische Verstauchung ist.** Die Endung „-itis“ im Namen bedeutet Entzündung, und deshalb raten dir so viele Seiten zum Kühlen. Als Lemont und Kollegen 2003 aber Gewebe aus 50\u00A0Operationen bei chronischer Plantarfasziitis untersuchten, fanden sie abgenutzte, ausgefranste und degenerierte Faszie und keine Anzeichen einer Entzündung. Sie schlugen vor, von Fasziose zu sprechen, also von einem abgenutzten Band, nicht von einem entzündeten.',
         'Zu diesem Befund gehören zwei Einschränkungen. Es waren die schwersten Fälle, so schlimm, dass operiert werden musste, frühe Fersenschmerzen sehen also womöglich anders aus. Und die Studie hat nur das Gewebe beschrieben. Kühlen hat sie nicht getestet.',
         'Sie ändert aber den Grund fürs Kühlen. Wenn die Faszie vor allem abgenutzt und überlastet ist, „löscht“ Kälte kein Feuer. Sie dämpft den Schmerz für eine Weile, und das ist trotzdem nützlich. Was einem abgenutzten Gewebe hilft, sich anzupassen, ist schrittweise Belastung: Dehnen und Krafttraining.',
       ],
@@ -64,9 +64,14 @@ export const ICE_HEAT_DE: Guide = {
       h2: 'Hilft Kühlen bei Plantarfasziitis? Was die Studien gefunden haben',
       keyFact: 'In einer Studie mit 30\u00A0Personen sank der Schmerz mit einem gefrorenen Tennisball plus Dehnen von 7,7 auf 3,5 von 10, mit Dehnen allein von 7,6 auf 6,7 (Shinde und Patil, 2026).',
       paragraphs: [
-        'Kälte lindert die Schmerzen bei Plantarfasziitis wahrscheinlich für kurze Zeit, aber nur sehr wenige Studien haben das getestet, und keine hat Kälte mit gar nichts verglichen. Das gibt es.',
-        'In einer Studie von 2014 mit 102\u00A0Personen, deren Plantarfasziitis länger als sechs Monate bestand, bekamen beide Gruppen 10\u00A0tägliche Sitzungen von 20\u00A0Minuten an einem Gerät in der Praxis: Kälte allein oder Kälte plus Ultraschall. Beiden ging es besser, und die kombinierte Gruppe schnitt bis zu 18\u00A0Monate lang besser ab (Costantino und Kollegen). Kälte war die Vergleichsgruppe, die Studie kann also nicht sagen, wie viel die Kälte selbst bewirkt hat. Eine Studie von 2023 mit 36\u00A0Personen hatte dieselbe Lücke: Einer „Cryostretch“-Gruppe, die den Fuß auf einem gefrorenen Tennisball rollte, ging es über 7\u00A0Tage besser, den beiden Gruppen ohne Kälte aber auch (Jadhav und Gurudut).',
-        'Der direkteste Test ist klein. In einer Studie von 2026 mit 30\u00A0Personen ging die Gruppe, die zwei Monate lang zusätzlich zum Dehnen einen gefrorenen Tennisball nutzte, auf einer Schmerzskala von 0 bis 10 von 7,7 auf 3,5 zurück, die Gruppe mit Dehnen allein von 7,6 auf 6,7 (Shinde und Patil). Das sieht nach einem großen Unterschied aus, aber die Arbeit sagt nicht klar, wie die Teilnehmenden auf die Gruppen verteilt wurden, und die Gruppe mit dem gefrorenen Ball bekam auch den Druck beim Rollen ab. Kälte und Massage lassen sich also nicht trennen.',
+        '**Kälte lindert die Schmerzen bei Plantarfasziitis wahrscheinlich für kurze Zeit**, aber nur sehr wenige Studien haben das getestet, und keine hat Kälte mit gar nichts verglichen. Das gibt es:',
+        {
+          list: [
+            'In einer Studie von 2014 mit 102\u00A0Personen, deren Plantarfasziitis länger als sechs Monate bestand, bekamen beide Gruppen 10\u00A0tägliche Sitzungen von 20\u00A0Minuten an einem Gerät in der Praxis: Kälte allein oder Kälte plus Ultraschall. Beiden ging es besser, und die kombinierte Gruppe schnitt bis zu 18\u00A0Monate lang besser ab (Costantino und Kollegen). Kälte war die Vergleichsgruppe, die Studie kann also nicht sagen, wie viel die Kälte selbst bewirkt hat.',
+            'Eine Studie von 2023 mit 36\u00A0Personen hatte dieselbe Lücke: Einer „Cryostretch“-Gruppe, die den Fuß auf einem gefrorenen Tennisball rollte, ging es über 7\u00A0Tage besser, den beiden Gruppen ohne Kälte aber auch (Jadhav und Gurudut).',
+            'Der direkteste Test ist klein. In einer Studie von 2026 mit 30\u00A0Personen ging die Gruppe, die zwei Monate lang zusätzlich zum Dehnen einen gefrorenen Tennisball nutzte, auf einer Schmerzskala von 0 bis 10 von 7,7 auf 3,5 zurück, die Gruppe mit Dehnen allein von 7,6 auf 6,7 (Shinde und Patil). Das sieht nach einem großen Unterschied aus, aber die Arbeit sagt nicht klar, wie die Teilnehmenden auf die Gruppen verteilt wurden, und die Gruppe mit dem gefrorenen Ball bekam auch den Druck beim Rollen ab. Kälte und Massage lassen sich also nicht trennen.',
+          ],
+        },
         'Abseits des Fußes sieht es ähnlich aus. Eine Übersichtsarbeit von 2004 über 22\u00A0Studien zu Kälte bei frischen Verletzungen wie Sprunggelenksverstauchungen bewertete deren Qualität im Schnitt mit 3,4 von 10 und fand keine beste Methode oder Dauer des Kühlens. Das einzige, schwache Signal sprach für Kälte plus Übungen nach Sprunggelenksverstauchungen und Operationen (Bleakley und Kollegen).',
       ],
       sourceNote: 'Costantino 2014: einfach verblindete RCT, Kryo-Ultraschall gegenüber Kryotherapie, Schmerz auf einer visuellen Analogskala. Jadhav 2023: RCT, 12 pro Gruppe, Numerical Pain Rating Scale und Foot Function Index an Tag 7. Shinde 2026: 15 pro Gruppe, NPRS und Foot Function Index, Zuteilung beschrieben als „random sampling technique“. Bleakley 2004: mittlerer PEDro-Score 3,4/10.',
@@ -76,7 +81,8 @@ export const ICE_HEAT_DE: Guide = {
       h2: 'Ist Wärme gut bei Plantarfasziitis?',
       keyFact: 'Ein Cochrane-Review über 9\u00A0Studien mit 1.117\u00A0Personen fand mäßige Belege, aus einigen dieser Studien, für einen kleinen kurzfristigen Nutzen von Wärmeauflagen bei Kreuzschmerzen und zu wenig Belege, um Kälte zu beurteilen (French und Kollegen, 2006).',
       paragraphs: [
-        'Wärme ist bei Plantarfasziitis in Ordnung, wenn sie sich gut anfühlt, und für die Vorstellung, dass sie „die Entzündung verschlimmert“, gibt es keine Studie. Die einzige Wärme-Studie, die die Leitlinie von 2023 gefunden hat, war klein: 20\u00A0Personen mit Schmerzen an der Fußsohle bekamen per Zufall ein Wärmepflaster oder ein Scheinpflaster auf Triggerpunkte (druckempfindliche Stellen im Muskel). Der Schmerz sank in der Wärmegruppe, aber nicht in der Gruppe mit dem Scheinpflaster (Petrofsky und Kollegen, 2020). Das Pflaster blieb etwa vier Stunden drauf, und der Schmerz wurde direkt danach gemessen. Die Studie sagt also nur etwas über kurzfristige Linderung.',
+        '**Wärme ist bei Plantarfasziitis in Ordnung, wenn sie sich gut anfühlt**, und für die Vorstellung, dass sie „die Entzündung verschlimmert“, gibt es keine Studie.',
+        'Die einzige Wärme-Studie, die die Leitlinie von 2023 gefunden hat, war klein: 20\u00A0Personen mit Schmerzen an der Fußsohle bekamen per Zufall ein Wärmepflaster oder ein Scheinpflaster auf Triggerpunkte (druckempfindliche Stellen im Muskel). Der Schmerz sank in der Wärmegruppe, aber nicht in der Gruppe mit dem Scheinpflaster (Petrofsky und Kollegen, 2020). Das Pflaster blieb etwa vier Stunden drauf, und der Schmerz wurde direkt danach gemessen. Die Studie sagt also nur etwas über kurzfristige Linderung.',
         'Die besten allgemeinen Belege zu Wärme stammen von Rückenschmerzen, nicht von Füßen. Ein Cochrane-Review (eine sorgfältige Zusammenfassung von Studien) über 9\u00A0Studien mit 1.117\u00A0Personen fand mäßige Belege, aus einigen dieser Studien, dass Wärmeauflagen frische Kreuzschmerzen kurzfristig etwas senken und dass zusätzliche Übungen mehr halfen. Zu Kälte fand sie nur drei Studien von schlechter Qualität und zog keine Schlüsse (French und Kollegen, 2006).',
         'Wärme bringt mehr Blut in die Region und macht Gewebe etwas nachgiebiger. Kälte verlangsamt die Durchblutung und dämpft den Schmerz. Eine Übersichtsarbeit von 2015 merkte an, dass die meisten Ratschläge zu beidem auf Erfahrung beruhen, mit begrenzten Studienbelegen (Malanga und Kollegen).',
       ],
@@ -86,8 +92,9 @@ export const ICE_HEAT_DE: Guide = {
       h2: 'Solltest du vor dem Dehnen wärmen?',
       keyFact: 'In 36\u00A0Studien mit 1.301\u00A0Personen ohne Verletzung verbesserte Wärme plus Dehnen die Beweglichkeit stärker als Dehnen allein (Bleakley und Costello, 2013).',
       paragraphs: [
-        'Den Fuß vor dem Dehnen zu wärmen ist eine vernünftige Wahl, und dafür gibt es mehr Rückhalt als für Kühlen vor dem Dehnen. Eine Übersichtsarbeit von 2013 über 36\u00A0Studien mit 1.301\u00A0Personen ohne Verletzung fand, dass Wärme die Beweglichkeit erhöhte und dass Wärme plus Dehnen besser wirkte als Dehnen allein. Die Daten zu Kälte waren widersprüchlich. Jede Studie hatte ein hohes Verzerrungsrisiko, und keine schloss Menschen mit Fersenschmerzen ein. Sieh das also als sinnvolle Idee, nicht als getesteten Plan für Plantarfasziitis.',
-        'Aufwärmen kann einfach sein. Eine warme Dusche oder ein paar Minuten mit den Füßen in warmem Wasser, vor der Plantarfaszien-Dehnung und der Wadendehnung. Am Morgen solltest du mit dem Dehnen aber nicht auf ein Aufwärmen warten. Die Dehnung vor dem ersten Schritt ist dafür gedacht, auf der Bettkante zu passieren, bevor dein Fuß Gewicht trägt. [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) führt dich durch diese Routine.',
+        '**Den Fuß vor dem Dehnen zu wärmen ist eine vernünftige Wahl**, und dafür gibt es mehr Rückhalt als für Kühlen vor dem Dehnen. Eine Übersichtsarbeit von 2013 über 36\u00A0Studien mit 1.301\u00A0Personen ohne Verletzung fand, dass Wärme die Beweglichkeit erhöhte und dass Wärme plus Dehnen besser wirkte als Dehnen allein. Die Daten zu Kälte waren widersprüchlich. Jede Studie hatte ein hohes Verzerrungsrisiko, und keine schloss Menschen mit Fersenschmerzen ein. Sieh das also als sinnvolle Idee, nicht als getesteten Plan für Plantarfasziitis.',
+        'Aufwärmen kann einfach sein. Eine warme Dusche oder ein paar Minuten mit den Füßen in warmem Wasser, vor der Plantarfaszien-Dehnung und der Wadendehnung.',
+        'Am Morgen solltest du mit dem Dehnen aber nicht auf ein Aufwärmen warten. Die Dehnung vor dem ersten Schritt ist dafür gedacht, auf der Bettkante zu passieren, bevor dein Fuß Gewicht trägt. [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) führt dich durch diese Routine.',
       ],
       cites: [CITE.bleakleyThermal],
     },
@@ -95,7 +102,15 @@ export const ICE_HEAT_DE: Guide = {
       h2: 'Helfen Wechselbäder bei Plantarfasziitis?',
       paragraphs: [
         'Für Wechselbäder, bei denen der Fuß abwechselnd in warmes und kaltes Wasser kommt, haben wir keine Studie zur Plantarfasziitis gefunden. Eine systematische Übersichtsarbeit von 2009 zu Wechselbädern schloss 10\u00A0Studien ein, an Freiwilligen ohne Verletzung und an Menschen mit rheumatoider Arthritis, Diabetes oder Verletzungen an Fuß und Sprunggelenk. Sie fand, dass der Temperaturwechsel die Durchblutung der Haut steigern kann, ein Zusammenhang mit besserer Funktion wurde aber nicht gezeigt (Breger Stanton und Kollegen).',
-        'Online findest du viele verschiedene Rezepte: zwei Minuten kalt und 30\u00A0Sekunden warm, eine Minute kalt und drei Minuten warm, immer mit kalt aufhören. Keine dieser Zeitangaben stammt aus einer Studie. Wenn du Wechselbäder magst, sind sie für die meisten Menschen mit normalem Gefühl in den Füßen risikoarm. Erwarte nur nicht mehr davon als von einfacher Wärme oder Kälte.',
+        'Online findest du viele verschiedene Rezepte:',
+        {
+          list: [
+            'Zwei Minuten kalt und 30\u00A0Sekunden warm.',
+            'Eine Minute kalt und drei Minuten warm.',
+            'Immer mit kalt aufhören.',
+          ],
+        },
+        '**Keine dieser Zeitangaben stammt aus einer Studie.** Wenn du Wechselbäder magst, sind sie für die meisten Menschen mit normalem Gefühl in den Füßen risikoarm. Erwarte nur nicht mehr davon als von einfacher Wärme oder Kälte.',
       ],
       cites: [CITE.bregerContrast],
     },
@@ -123,7 +138,8 @@ export const ICE_HEAT_DE: Guide = {
       h2: 'Was hilft bei Plantarfasziitis wirklich auf lange Sicht?',
       keyFact: 'In einer Studie mit 48\u00A0Personen linderte langsames Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen gleichauf (Rathleff und Kollegen, 2015).',
       paragraphs: [
-        'Der Teil der Versorgung bei Plantarfasziitis mit den stärksten Belegen sind Übungen, nicht Temperatur. Die Leitlinie von 2023 gibt dem Dehnen von Plantarfaszie und Wade ihre beste Bewertung, **A**, und Krafttraining für Fuß und Sprunggelenk ein **B**. In einer Studie von 2003 mit 101\u00A0Personen half eine Plantarfaszien-Dehnung nach etwa zwei Monaten mehr als eine Wadendehnung allein (DiGiovanni und Kollegen). In einer Studie von 2015 mit 48\u00A0Personen linderte langsames Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber etwa gleichauf (Rathleff und Kollegen).',
+        'Der Teil der Versorgung bei Plantarfasziitis mit den stärksten Belegen sind Übungen, nicht Temperatur. Die Leitlinie von 2023 gibt dem Dehnen von Plantarfaszie und Wade ihre beste Bewertung, **A**, und Krafttraining für Fuß und Sprunggelenk ein **B**.',
+        'In einer Studie von 2003 mit 101\u00A0Personen half eine Plantarfaszien-Dehnung nach etwa zwei Monaten mehr als eine Wadendehnung allein (DiGiovanni und Kollegen). In einer Studie von 2015 mit 48\u00A0Personen linderte langsames Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber etwa gleichauf (Rathleff und Kollegen).',
         'Nutz Kälte oder Wärme rund um diese Übungen: Wärme vor dem Dehnen, Kälte nach einem langen Tag, wenn dir eins davon hilft. Walkito funktioniert genauso: Dehnungen und Wadentraining sind der Plan, und das Fußrollen ist ein Erholungsschritt von 60\u00A0Sekunden, nicht die Hauptsache. Die komplette Liste findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
       ],
       exercises: [

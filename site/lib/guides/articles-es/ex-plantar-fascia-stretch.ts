@@ -58,7 +58,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_ES: Guide = {
     {
       h2: '¿Cuándo estirar la fascia plantar?',
       paragraphs: [
-        'Antes de tu primer paso en la mañana. Es la indicación que más se repite, tanto en el ensayo como en la guía de 2023. La fascia plantar se acorta durante la noche mientras el pie está relajado. Los primeros pasos del día la jalan de golpe y con fuerza, y por eso el dolor de talón al levantarte es la señal típica de la fascitis plantar.',
+        '**Antes de tu primer paso en la mañana.** Es la indicación que más se repite, tanto en el ensayo como en la guía de 2023. La fascia plantar se acorta durante la noche mientras el pie está relajado. Los primeros pasos del día la jalan de golpe y con fuerza, y por eso el dolor de talón al levantarte es la señal típica de la fascitis plantar.',
         'El segundo momento más importante es antes de pararte después de estar mucho tiempo sentado. En reposo pasa el mismo acortamiento. Estirar la fascia antes de cargarla reduce ese tirón.',
         'En el ensayo, a los participantes se les pidió hacer 10\u00A0repeticiones de 10\u00A0segundos, tres veces al día, durante al menos ocho semanas. Las sesiones clave eran la de la mañana y la de después de estar sentado mucho rato. Si se podía, se animaba a hacer más sesiones durante el día.',
       ],
@@ -88,10 +88,14 @@ export const EX_PLANTAR_FASCIA_STRETCH_ES: Guide = {
     {
       h2: '¿Cuáles son los errores comunes en el estiramiento de la fascia plantar?',
       paragraphs: [
-        'Jalar los dedos con demasiada fuerza. El estiramiento debe sentirse firme bajo el arco, no doloroso. Si haces muecas de dolor, ya te pasaste del rango útil. Afloja hasta sentir un tirón sin filo.',
-        'Sentirlo en la pantorrilla en vez del arco. Si el estiramiento se siente sobre todo en la pantorrilla, la rodilla está demasiado estirada o estás jalando muy fuerte. Cruza el pie más arriba sobre la otra rodilla para que el tobillo se relaje, y concéntrate en doblar los dedos hacia atrás, no todo el pie.',
-        'Saltarte el estiramiento de la mañana. Es la sesión que más efecto tiene sobre el peor momento del día. Deja una nota en la mesa de noche o pon un recordatorio. El estiramiento toma unos dos minutos, y vale la pena hacerlo antes de que el pie toque el piso.',
-        'Rebotar. Quédate quieto los 10\u00A0segundos completos. Rebotar no le da tiempo a la fascia para alargarse y puede irritar más el tejido.',
+        {
+          list: [
+            '**Jalar los dedos con demasiada fuerza.** El estiramiento debe sentirse firme bajo el arco, no doloroso. Si haces muecas de dolor, ya te pasaste del rango útil. Afloja hasta sentir un tirón sin filo.',
+            '**Sentirlo en la pantorrilla en vez del arco.** Si el estiramiento se siente sobre todo en la pantorrilla, la rodilla está demasiado estirada o estás jalando muy fuerte. Cruza el pie más arriba sobre la otra rodilla para que el tobillo se relaje, y concéntrate en doblar los dedos hacia atrás, no todo el pie.',
+            '**Saltarte el estiramiento de la mañana.** Es la sesión que más efecto tiene sobre el peor momento del día. Deja una nota en la mesa de noche o pon un recordatorio. El estiramiento toma unos dos minutos, y vale la pena hacerlo antes de que el pie toque el piso.',
+            '**Rebotar.** Quédate quieto los 10\u00A0segundos completos. Rebotar no le da tiempo a la fascia para alargarse y puede irritar más el tejido.',
+          ],
+        },
       ],
     },
     {
@@ -99,7 +103,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_ES: Guide = {
       paragraphs: [
         'Si cruzar la pierna te incomoda, deja los dos pies en el piso y pasa una toalla o un cinturón por la parte delantera del pie. Jala la toalla hacia ti para que los dedos se doblen hacia atrás. Es el mismo estiramiento, solo desde otro ángulo.',
         'Una versión más difícil es el estiramiento de la fascia plantar de pie: apoya la parte delantera del pie contra una pared, con el talón en el piso, e inclínate con suavidad. Así sumas el peso del cuerpo al estiramiento, y es más difícil medir bien la dosis. Funciona cuando la versión sentada ya se siente fácil y no te provoca dolor.',
-        'La versión sentada del ensayo es la que tiene la evidencia detrás. Empieza por ahí. Todos los estiramientos y ejercicios de fuerza para el dolor de talón están en [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/). Para rodar la planta del pie después de estirar, mira [masaje plantar con pelota](/es/ejercicios/masaje-plantar-con-pelota/).',
+        '**La versión sentada del ensayo es la que tiene la evidencia detrás.** Empieza por ahí. Todos los estiramientos y ejercicios de fuerza para el dolor de talón están en [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/). Para rodar la planta del pie después de estirar, mira [masaje plantar con pelota](/es/ejercicios/masaje-plantar-con-pelota/).',
       ],
     },
   ],

@@ -47,7 +47,7 @@ export const HAGLUNDS_FR: Guide = {
     {
       h2: 'Quel lien entre la maladie de Haglund et la tendinopathie d’Achille d’insertion\u00A0?',
       paragraphs: [
-        'La déformation de Haglund et la tendinopathie d’Achille d’insertion apparaissent souvent ensemble, mais ce n’est pas le même problème. La tendinopathie d’insertion est une douleur à l’endroit où le tendon d’Achille s’attache à l’os du talon, en général due à une surcharge. La déformation de Haglund est une forme osseuse. La bosse peut irriter le tendon par l’arrière, et l’insertion du tendon peut subir la même compression que celle qui enflamme la bourse.',
+        'La déformation de Haglund et la tendinopathie d’Achille d’insertion apparaissent souvent ensemble, mais **ce n’est pas le même problème.** La tendinopathie d’insertion est une douleur à l’endroit où le tendon d’Achille s’attache à l’os du talon, en général due à une surcharge. La déformation de Haglund est une forme osseuse. La bosse peut irriter le tendon par l’arrière, et l’insertion du tendon peut subir la même compression que celle qui enflamme la bourse.',
         'Le lien pratique\u00A0: si vous avez une bosse de Haglund et une douleur à l’arrière du talon, la douleur peut venir de la bourse, de l’insertion du tendon, ou des deux. Un professionnel de santé peut faire la différence en cherchant où la sensibilité est la plus forte et si l’étirement ou la mise en charge reproduit la douleur.',
         'La recommandation de 2024 sur la tendinopathie d’Achille sépare nettement l’atteinte du corps du tendon et l’atteinte d’insertion. Pour les problèmes d’insertion, dont les cas associés à une maladie de Haglund, le protocole classique de descentes excentriques du talon doit être adapté. Une flexion dorsale profonde, où l’on laisse le talon descendre sous le bord de la marche, comprime le tendon contre l’os et peut réveiller les symptômes.',
       ],
@@ -65,9 +65,18 @@ export const HAGLUNDS_FR: Guide = {
     {
       h2: 'Quelles options conservatrices pour la maladie de Haglund\u00A0?',
       paragraphs: [
-        'Une revue narrative de 2020 cite les premières mesures conservatrices\u00A0: adapter les chaussures (éviter les contreforts rigides, porter des chaussures ouvertes à l’arrière ou rembourrer la zone du talon), des talonnettes pour réduire la tension sur le tendon d’Achille, l’étirement du gastrocnémien et du soléaire, le renforcement du mollet et l’adaptation de l’activité.',
+        'Une revue narrative de 2020 cite les premières mesures conservatrices\u00A0:',
+        {
+          list: [
+            '**Adapter les chaussures\u00A0:** éviter les contreforts rigides, porter des chaussures ouvertes à l’arrière ou rembourrer la zone du talon.',
+            '**Des talonnettes\u00A0:** pour réduire la tension sur le tendon d’Achille.',
+            '**L’étirement\u00A0:** du gastrocnémien et du soléaire.',
+            '**Le renforcement\u00A0:** du mollet.',
+            '**L’adaptation de l’activité.**',
+          ],
+        },
         'Aucun essai contrôlé randomisé n’a testé l’une de ces mesures spécifiquement pour la déformation de Haglund. Les preuves reposent sur l’avis d’experts et des séries de cas. La revue chirurgicale de 2022 a noté que la plupart des auteurs conseillent au moins six mois de traitement conservateur avant d’envisager la chirurgie.',
-        'Le changement le plus immédiat est souvent la chaussure. Si un contrefort rigide appuie sur la bosse, supprimer cette pression peut réduire vite les symptômes. Des chaussures ouvertes à l’arrière, des chaussures au contrefort souple, ou un rembourrage placé dans la chaussure autour de la bosse (pas dessus) sont des options pratiques.',
+        '**Le changement le plus immédiat est souvent la chaussure.** Si un contrefort rigide appuie sur la bosse, supprimer cette pression peut réduire vite les symptômes. Des chaussures ouvertes à l’arrière, des chaussures au contrefort souple, ou un rembourrage placé dans la chaussure autour de la bosse (pas dessus) sont des options pratiques.',
       ],
       cites: [CITE.chooRearfoot, CITE.yuenHaglund],
     },
@@ -145,7 +154,15 @@ export const HAGLUNDS_FR: Guide = {
       keyFact: 'Une revue systématique de 2022 portant sur 20\u00A0études a trouvé que la chirurgie ouverte comme endoscopique améliorait les scores de fonction AOFAS, avec une récupération plus courte pour les techniques endoscopiques (Yuen et coll., 2022).',
       paragraphs: [
         'La chirurgie est discutée quand au moins six mois de prise en charge conservatrice n’ont pas apporté de soulagement suffisant. La revue systématique de 2022 de Yuen et coll. a inclus 20\u00A0études et a trouvé que les techniques ouvertes comme endoscopiques amélioraient les scores AOFAS (American Orthopaedic Foot and Ankle Society). Les approches endoscopiques montraient des temps de récupération plus courts.',
-        'L’opération consiste en général à retirer la saillie osseuse (calcanéoplastie), à enlever la bourse enflammée et, dans certains cas, à nettoyer ou à réinsérer le tendon d’Achille. Les complications peuvent comprendre des problèmes de cicatrisation, une lésion nerveuse et un affaiblissement du tendon. La décision se prend entre vous et votre chirurgien.',
+        'L’opération consiste en général à\u00A0:',
+        {
+          list: [
+            'Retirer la saillie osseuse (calcanéoplastie).',
+            'Enlever la bourse enflammée.',
+            'Dans certains cas, nettoyer ou réinsérer le tendon d’Achille.',
+          ],
+        },
+        'Les complications peuvent comprendre des problèmes de cicatrisation, une lésion nerveuse et un affaiblissement du tendon. La décision se prend entre vous et votre chirurgien.',
         'Cette page ne conseille ni ne déconseille la chirurgie. Les mesures conservatrices ci-dessus sont le point de départ de la plupart des gens, et beaucoup y répondent assez bien pour éviter une opération. Si six mois d’adaptation des chaussures, d’exercices et de changements d’activité n’ont pas aidé, un spécialiste du pied et de la cheville peut discuter des options chirurgicales.',
       ],
       cites: [CITE.yuenHaglund],
@@ -155,7 +172,7 @@ export const HAGLUNDS_FR: Guide = {
       paragraphs: [
         'Les chaussures ne créent pas la saillie osseuse. La forme du calcanéum est en partie génétique. Mais des chaussures au contrefort rigide et inflexible peuvent irriter une bosse qui serait sinon indolore. C’est l’origine du nom anglais «\u00A0pump bump\u00A0», d’après l’arrière rigide des escarpins.',
         'Les chaussures à éviter\u00A0: tout ce qui a un contrefort raide et étroit qui appuie sur l’arrière du talon. Les chaussures à rechercher\u00A0: un col de talon souple ou rembourré, un arrière légèrement ouvert ou souple, et assez de place pour que le contrefort ne s’enfonce pas. Des talonnettes dans la chaussure peuvent aussi éloigner légèrement le tendon d’Achille de la bosse.',
-        'L’adaptation des chaussures est la mesure la plus immédiatement applicable et la plus régulièrement conseillée dans la littérature fondée sur l’avis d’experts. Si vous pouvez supprimer la pression, vous pouvez souvent réduire la douleur.',
+        'L’adaptation des chaussures est la mesure la plus immédiatement applicable et la plus régulièrement conseillée dans la littérature fondée sur l’avis d’experts. **Si vous pouvez supprimer la pression, vous pouvez souvent réduire la douleur.**',
       ],
       cites: [CITE.chooRearfoot, CITE.yuenHaglund],
     },

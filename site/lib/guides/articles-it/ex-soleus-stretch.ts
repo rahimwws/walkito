@@ -57,7 +57,7 @@ export const EX_SOLEUS_STRETCH_IT: Guide = {
       keyFact: 'In un’analisi su 254\u00A0persone con fascite plantare, circa un quarto aveva rigidi entrambi i muscoli del polpaccio, il gastrocnemio e il soleo (Patel e DiGiovanni, 2011).',
       paragraphs: [
         'Il gastrocnemio, il muscolo più superficiale del polpaccio, passa sia sul ginocchio sia sulla caviglia. Quando tieni il ginocchio teso e ti sporgi in avanti, è il gastrocnemio ad allungarsi. Il soleo sta più in profondità e passa solo sulla caviglia. Con il ginocchio teso, il gastrocnemio fa tutto il lavoro e il soleo si muove appena.',
-        'Piegare il ginocchio rilassa il gastrocnemio, che smette di fare resistenza. A quel punto la dorsiflessione della caviglia tira sul soleo. È proprio questo il senso della versione a ginocchio piegato. Non è una variante. È un esercizio diverso per un muscolo diverso.',
+        'Piegare il ginocchio rilassa il gastrocnemio, che smette di fare resistenza. A quel punto la dorsiflessione della caviglia tira sul soleo. È proprio questo il senso della versione a ginocchio piegato. Non è una variante. **È un esercizio diverso per un muscolo diverso.**',
         'In un’analisi su 254\u00A0persone con fascite plantare, circa un quarto aveva entrambi i muscoli rigidi. L’allungamento a ginocchio teso da solo non avrebbe raggiunto la parte di rigidità che riguardava il soleo.',
       ],
       cites: [CITE.patelGastrocnemius],
@@ -67,16 +67,20 @@ export const EX_SOLEUS_STRETCH_IT: Guide = {
       paragraphs: [
         'Se senti l’allungamento in alto nel polpaccio, dietro il ginocchio, il ginocchio è troppo teso e sta lavorando il gastrocnemio. Piega di più il ginocchio. L’allungamento dovrebbe scendere al terzo inferiore del polpaccio o appena sopra il tallone.',
         'Se non senti niente, prova ad avvicinare al muro il piede dietro e a piegare di più il ginocchio. Ad alcune persone serve un passo più corto per caricare il soleo.',
-        'Se l’allungamento è proprio nel tendine d’Achille e lo senti come una fitta più che come una tensione, alleggerisci. Un allungamento deve essere deciso e continuo, non doloroso. Il dolore al tendine durante l’allungamento è diverso dalla rigidità del polpaccio e può far pensare a una [tendinite d’Achille](/it/tendinite-achille-esercizi/).',
+        'Se l’allungamento è proprio nel tendine d’Achille e lo senti come una fitta più che come una tensione, alleggerisci. **Un allungamento deve essere deciso e continuo, non doloroso.** Il dolore al tendine durante l’allungamento è diverso dalla rigidità del polpaccio e può far pensare a una [tendinite d’Achille](/it/tendinite-achille-esercizi/).',
       ],
     },
     {
       h2: 'Quali sono gli errori più comuni nell’allungamento del soleo?',
       paragraphs: [
-        'Non piegare abbastanza il ginocchio. Una piccola flessione non basta a rilassare il gastrocnemio. Serve una flessione vera, tanto da vedere il ginocchio dietro che avanza sopra le dita.',
-        'Lasciare che il tallone si alzi. Appena il tallone si stacca da terra, l’allungamento sparisce. Premi il tallone a terra e lascia che il ginocchio vada avanti sopra il piede.',
-        'Andare di fretta. Una tenuta da 5\u00A0secondi è troppo breve perché un allungamento prolungato agisca sulla lunghezza del tessuto. Tieni 30\u00A0secondi e prova a rilassarti nell’allungamento invece di spingere più forte.',
-        'Saltarlo perché l’allungamento a ginocchio teso sembrava sufficiente. Sono muscoli diversi. Se sono rigidi entrambi, ti servono entrambi gli allungamenti.',
+        {
+          list: [
+            '**Non piegare abbastanza il ginocchio.** Una piccola flessione non basta a rilassare il gastrocnemio. Serve una flessione vera, tanto da vedere il ginocchio dietro che avanza sopra le dita.',
+            '**Lasciare che il tallone si alzi.** Appena il tallone si stacca da terra, l’allungamento sparisce. Premi il tallone a terra e lascia che il ginocchio vada avanti sopra il piede.',
+            '**Andare di fretta.** Una tenuta da 5\u00A0secondi è troppo breve perché un allungamento prolungato agisca sulla lunghezza del tessuto. Tieni 30\u00A0secondi e prova a rilassarti nell’allungamento invece di spingere più forte.',
+            '**Saltarlo perché l’allungamento a ginocchio teso sembrava sufficiente.** Sono muscoli diversi. Se sono rigidi entrambi, ti servono entrambi gli allungamenti.',
+          ],
+        },
       ],
     },
     {

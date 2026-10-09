@@ -40,7 +40,15 @@ export const HIGH_ARCHES_PT: Guide = {
       paragraphs: [
         'O pé cavo é um pé com o arco longitudinal medial alto demais. O arco continua alto mesmo quando o pé está apoiando o peso. Ao contrário do pé chato, que desaba sob carga e espalha o impacto por uma área grande, o pé cavo é rígido e concentra a força numa superfície menor: o calcanhar e a parte da frente do pé.',
         'A fáscia plantar num pé cavo normalmente é curta e tensa, o que segura o arco na posição alta, mas reduz a capacidade do pé de flexionar e absorver o impacto. A parte da frente do pé muitas vezes fica mais baixa que a de trás (primeiro metatarso em flexão plantar), e os dedos podem ficar em garra. Essas mudanças jogam a pressão para as cabeças dos metatarsos e para o calcanhar, e tiram do meio do pé.',
-        'A dor no pé cavo costuma aparecer como metatarsalgia (dor na planta do pé, na parte da frente), dor embaixo do calcanhar ou dor ao longo da fáscia plantar tensa. As entorses de tornozelo também são mais comuns, porque o pé rígido e virado para dentro é menos estável em terreno irregular.',
+        'A dor no pé cavo costuma aparecer como:',
+        {
+          list: [
+            'Metatarsalgia (dor na planta do pé, na parte da frente).',
+            'Dor embaixo do calcanhar.',
+            'Dor ao longo da fáscia plantar tensa.',
+          ],
+        },
+        'As entorses de tornozelo também são mais comuns, porque o pé rígido e virado para dentro é menos estável em terreno irregular.',
       ],
       cites: [CITE.burnsCavusCochrane, CITE.burnsCavusPain, CITE.burnsCavus],
     },
@@ -49,15 +57,34 @@ export const HIGH_ARCHES_PT: Guide = {
       paragraphs: [
         'A maioria dos pés cavos é idiopática, ou seja, não se encontra uma causa específica. Eles normalmente aparecem nos dois pés, ficam estáveis ao longo do tempo e existem desde a infância.',
         'Um grupo menor, mas clinicamente importante, é causado por condições neurológicas. A mais comum é a doença de Charcot-Marie-Tooth (CMT), uma neuropatia motora e sensitiva hereditária que causa fraqueza e perda muscular progressivas, começando nos pés e na parte de baixo das pernas. O pé cavovaro na CMT se forma porque alguns músculos enfraquecem mais rápido que outros, puxando o pé para uma posição de arco alto e virada para dentro.',
-        'Outras causas neurológicas incluem alterações da medula espinhal, poliomielite, espinha bífida, paralisia cerebral e outras neuropatias periféricas. O pé cavo também pode aparecer depois de um AVC ou de uma lesão na medula.',
-        'A diferença importa para os exercícios. O pé cavo idiopático normalmente é estável: o pé tem esse formato e continua assim. O pé cavo neurológico pode ser progressivo: o arco fica mais alto, a fraqueza piora e o pé fica menos estável com o tempo. Os exercícios podem manter a mobilidade e a estabilidade num pé cavo neurológico, mas não conseguem reverter a condição de base, e um profissional de saúde precisa estar envolvido.',
+        'Outras causas neurológicas incluem:',
+        {
+          list: [
+            'Alterações da medula espinhal.',
+            'Poliomielite.',
+            'Espinha bífida.',
+            'Paralisia cerebral.',
+            'Outras neuropatias periféricas.',
+          ],
+        },
+        'O pé cavo também pode aparecer depois de um AVC ou de uma lesão na medula.',
+        'A diferença importa para os exercícios. O pé cavo idiopático normalmente é estável: o pé tem esse formato e continua assim. **O pé cavo neurológico pode ser progressivo**: o arco fica mais alto, a fraqueza piora e o pé fica menos estável com o tempo. Os exercícios podem manter a mobilidade e a estabilidade num pé cavo neurológico, mas não conseguem reverter a condição de base, e um profissional de saúde precisa estar envolvido.',
       ],
     },
     {
       h2: 'Quando o pé cavo deve ser avaliado por um profissional de saúde?',
       paragraphs: [
         'Nem todo pé cavo precisa de uma investigação neurológica. Mas alguns padrões sempre devem ser avaliados.',
-        'Um pé cavo progressivo, ou seja, um arco que fica mais alto ao longo de meses ou anos, é um sinal de alerta para uma causa neurológica. Um pé cavo de um lado só, em que um pé tem o arco bem mais alto que o outro, é outro. Fraqueza no pé ou na parte de baixo da perna, dificuldade para levantar o pé ao andar (pé caído), dedos em garra que estão piorando ou histórico familiar de CMT ou outra neuropatia são motivos para procurar um neurologista ou um especialista em pé e tornozelo.',
+        'Um pé cavo progressivo, ou seja, um arco que fica mais alto ao longo de meses ou anos, **é um sinal de alerta para uma causa neurológica.** Um pé cavo de um lado só, em que um pé tem o arco bem mais alto que o outro, é outro.',
+        'Motivos para procurar um neurologista ou um especialista em pé e tornozelo:',
+        {
+          list: [
+            'Fraqueza no pé ou na parte de baixo da perna.',
+            'Dificuldade para levantar o pé ao andar (pé caído).',
+            'Dedos em garra que estão piorando.',
+            'Histórico familiar de CMT ou outra neuropatia.',
+          ],
+        },
         'Se o seu pé cavo aparece nos dois pés, está estável e é assim desde a infância, e você não tem fraqueza nem alterações de sensibilidade, o mais provável é que seja idiopático. Os exercícios abaixo e uma conversa com um podólogo sobre palmilhas são um ponto de partida razoável.',
       ],
     },
@@ -65,7 +92,8 @@ export const HIGH_ARCHES_PT: Guide = {
       h2: 'Palmilhas ajudam na dor do pé cavo?',
       keyFact: 'Um ensaio randomizado com 154\u00A0adultos com dor de pé cavo concluiu que as palmilhas sob medida superaram uma palmilha placebo em 8,3\u00A0pontos na dor e 9,5\u00A0pontos na função aos três meses (Burns e colegas, 2006).',
       paragraphs: [
-        'As palmilhas sob medida têm a evidência mais forte para a dor do pé cavo. No único ensaio randomizado, Burns e colegas dividiram 154\u00A0adultos com dor crônica no pé e pé cavo nos dois lados entre palmilhas de polipropileno feitas sob medida e uma palmilha placebo plana. Aos três meses, o grupo das palmilhas sob medida relatou 8,3\u00A0pontos a mais de melhora na dor no pé, no Foot Health Status Questionnaire, que o grupo placebo. As notas de função melhoraram 9,5\u00A0pontos a mais. A pressão plantar caiu 26% com as palmilhas sob medida, contra 9% com a placebo.',
+        '**As palmilhas sob medida têm a evidência mais forte para a dor do pé cavo.** No único ensaio randomizado, Burns e colegas dividiram 154\u00A0adultos com dor crônica no pé e pé cavo nos dois lados entre palmilhas de polipropileno feitas sob medida e uma palmilha placebo plana.',
+        'Aos três meses, o grupo das palmilhas sob medida relatou 8,3\u00A0pontos a mais de melhora na dor no pé, no Foot Health Status Questionnaire, que o grupo placebo. As notas de função melhoraram 9,5\u00A0pontos a mais. A pressão plantar caiu 26% com as palmilhas sob medida, contra 9% com a placebo.',
         'O ensaio incluiu pessoas com pé cavo idiopático e neuromuscular (133 idiopáticos, 21 neuromusculares, incluindo 16 com doença de Charcot-Marie-Tooth). As palmilhas eram moldadas ao formato do pé, com uma cobertura amortecida em todo o comprimento.',
         'Palmilhas amortecidas compradas prontas são um primeiro passo razoável antes de investir em palmilhas sob medida, que são mais caras. O que o ensaio mostrou ser eficaz foi moldar a base da palmilha ao formato exato do pé, e não só acrescentar um amortecimento plano.',
       ],
@@ -160,8 +188,16 @@ export const HIGH_ARCHES_PT: Guide = {
     {
       h2: 'E o calçado para pé cavo?',
       paragraphs: [
-        'O calçado para pé cavo deve amortecer, não controlar. Ao contrário do pé chato, em que um reforço firme na parte de dentro evita o desabamento, o pé cavo precisa do oposto: um calçado que absorva o impacto, porque o próprio pé não absorve.',
-        'Procure uma sola amortecida, uma biqueira espaçosa (dedos em garra precisam de espaço) e nada de suporte de arco agressivo. Um suporte de arco rígido feito para um pé normal empurra o arco do pé cavo no lugar errado. Tênis de corrida neutros com bom amortecimento no calcanhar e na parte da frente são uma recomendação comum.',
+        '**O calçado para pé cavo deve amortecer, não controlar.** Ao contrário do pé chato, em que um reforço firme na parte de dentro evita o desabamento, o pé cavo precisa do oposto: um calçado que absorva o impacto, porque o próprio pé não absorve.',
+        'Procure:',
+        {
+          list: [
+            'Uma sola amortecida.',
+            'Uma biqueira espaçosa (dedos em garra precisam de espaço).',
+            'Nada de suporte de arco agressivo. Um suporte de arco rígido feito para um pé normal empurra o arco do pé cavo no lugar errado.',
+          ],
+        },
+        'Tênis de corrida neutros com bom amortecimento no calcanhar e na parte da frente são uma recomendação comum.',
         'Se calçados e palmilhas comprados prontos não bastam, um podólogo pode avaliar se palmilhas sob medida valem o investimento. O ensaio de Burns de 2006 concluiu que o segredo de uma palmilha eficaz para pé cavo era uma base moldada ao pé com cobertura amortecida, e não um dispositivo corretivo rígido.',
       ],
       cites: [CITE.burnsCavus],
@@ -170,7 +206,8 @@ export const HIGH_ARCHES_PT: Guide = {
       h2: 'O Walkito ajuda no pé cavo?',
       paragraphs: [
         'O Walkito é feito em torno da dor embaixo do calcanhar e da dor no arco em adultos. Ele inclui alongamento de panturrilha, alongamento da fáscia plantar, rolar o pé na bolinha e trabalho de estabilidade do tornozelo, tudo relevante para um pé cavo. Quando você aponta para o arco no mapa do corpo do app, a sessão de alívio oferece o pé curto, o alongamento da fáscia plantar e o rolar o pé na bolinha.',
-        'O que o app não tem é uma meta específica para pé cavo ou um programa para pé cavo. Os exercícios que aparecem são os mesmos indicados para fascite plantar e pé chato. Para quem tem pé cavo e dor embaixo do calcanhar, esses exercícios se sobrepõem ao que esta página recomenda. Para quem tem a dor do pé cavo principalmente na parte da frente do pé, ou tem uma causa neurológica, o app não é uma boa escolha e quem deve orientar o plano de exercícios é um profissional de saúde.',
+        'O que o app não tem é uma meta específica para pé cavo ou um programa para pé cavo. Os exercícios que aparecem são os mesmos indicados para fascite plantar e pé chato.',
+        'Para quem tem pé cavo e dor embaixo do calcanhar, esses exercícios se sobrepõem ao que esta página recomenda. Para quem tem a dor do pé cavo principalmente na parte da frente do pé, ou tem uma causa neurológica, o app não é uma boa escolha e quem deve orientar o plano de exercícios é um profissional de saúde.',
       ],
     },
   ],

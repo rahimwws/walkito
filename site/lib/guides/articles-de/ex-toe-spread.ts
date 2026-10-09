@@ -36,7 +36,8 @@ export const EX_TOE_SPREAD_DE: Guide = {
       h2: 'Wie geht das Zehenspreizen?',
       paragraphs: [
         'Setz dich barfuß hin, die Füße stehen flach auf dem Boden. Spreiz alle fünf Zehen so weit du kannst, als wolltest du zwischen allen Zehen Platz schaffen. Halte die weiteste Position, dann lass locker. Das ist eine Wiederholung.',
-        'Anheben ist nicht das Ziel. Lass die Zehen auf dem Boden und konzentrier dich darauf, sie nach außen zu spreizen. Drück die Zehen nicht nach unten und krall sie nicht ein. Wenn sich anfangs nur ein paar Zehen bewegen, ist das normal. Meist bewegen sich zuerst der große und der kleine Zeh. Die drei mittleren folgen oft, sobald die Muskeln kräftiger werden.',
+        'Anheben ist nicht das Ziel. Lass die Zehen auf dem Boden und konzentrier dich darauf, sie nach außen zu spreizen. Drück die Zehen nicht nach unten und krall sie nicht ein.',
+        'Wenn sich anfangs nur ein paar Zehen bewegen, ist das normal. Meist bewegen sich zuerst der große und der kleine Zeh. Die drei mittleren folgen oft, sobald die Muskeln kräftiger werden.',
       ],
       exercises: [
         {
@@ -59,7 +60,15 @@ export const EX_TOE_SPREAD_DE: Guide = {
       keyFact: 'Eine MRT-Studie von 2016 fand, dass das Zehenspreizen den Abductor hallucis in derselben kleinen Gruppe von Sportlern nur zu 18,9\u00A0% aktivierte, verglichen mit 29,7\u00A0% bei der Kurzer-Fuß-Übung (Gooding und Kollegen, 2016).',
       paragraphs: [
         'Das Zehenspreizen zielt vor allem auf zwei Muskeln. Der Abductor hallucis läuft am Innenrand des Fußes entlang und zieht den großen Zeh nach innen (Richtung Körpermitte). Er ist auch eine der wichtigsten Stützen des inneren Längsgewölbes. Der Abductor digiti minimi läuft am Außenrand entlang und zieht den kleinen Zeh nach außen.',
-        'Eine MRT-Studie von Gooding und Kollegen von 2016 testete vier Übungen für die kurzen Fußmuskeln und maß die Aktivierung in jedem Muskel. Das Zehenspreizen erzeugte seine höchste Aktivierung im Abductor digiti minimi (35,2\u00A0%), gefolgt vom Adductor hallucis obliquus (31,5\u00A0%) und dem Flexor digiti minimi (30,2\u00A0%). Die Aktivierung des Abductor hallucis beim Zehenspreizen (18,9\u00A0%) war niedriger als bei der Kurzer-Fuß-Übung (29,7\u00A0%).',
+        'Eine MRT-Studie von Gooding und Kollegen von 2016 testete vier Übungen für die kurzen Fußmuskeln und maß die Aktivierung in jedem Muskel. Das Zehenspreizen erzeugte seine höchste Aktivierung in diesen Muskeln:',
+        {
+          list: [
+            'Im Abductor digiti minimi (35,2\u00A0%).',
+            'Im Adductor hallucis obliquus (31,5\u00A0%).',
+            'Im Flexor digiti minimi (30,2\u00A0%).',
+          ],
+        },
+        'Die Aktivierung des Abductor hallucis beim Zehenspreizen (18,9\u00A0%) war niedriger als bei der Kurzer-Fuß-Übung (29,7\u00A0%).',
         'Das heißt: Zehenspreizen und [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/) ergänzen sich. Die Kurzer-Fuß-Übung zielt auf die Muskeln, die entlang des Gewölbes laufen. Das Zehenspreizen zielt auf die Muskeln an den Rändern. Zusammen decken sie mehr von der Gruppe der kurzen Fußmuskeln ab.',
       ],
       cites: [CITE.gooding],
@@ -67,8 +76,13 @@ export const EX_TOE_SPREAD_DE: Guide = {
     {
       h2: 'Wem hilft das Zehenspreizen?',
       paragraphs: [
-        'Menschen mit Plattfüßen profitieren, weil das Zehenspreizen mehrere der kleinen Muskeln aktiviert, die sich die Aufgabe, das Gewölbe zu halten, mit dem Abductor hallucis teilen. Menschen mit Hallux valgus (Ballenzeh) profitieren vielleicht, weil die Übung Muskeln trainiert, die den großen Zeh von den anderen Zehen wegziehen, entgegen der Abweichung nach innen beim Hallux valgus. Eine andere EMG-Studie bei Menschen mit leichtem Hallux valgus fand beim Zehenspreizen mehr Aktivität im Abductor hallucis als bei der Kurzer-Fuß-Übung, auch wenn diese Studie noch nicht in der Quellenliste dieser Website steht.',
-        'Läufer und Menschen, die viele Stunden auf den Beinen sind, können das Zehenspreizen in ihre Routine zur Fußkräftigung aufnehmen. Zehen, die sich spreizen können, verteilen die Last beim Abdrücken gleichmäßiger über den Vorfuß. Wenn deine Zehen von engen Schuhen eingeengt sind, hilft die Übung, die Beweglichkeit zurückzuholen.',
+        {
+          list: [
+            '**Plattfüße.** Menschen mit Plattfüßen profitieren, weil das Zehenspreizen mehrere der kleinen Muskeln aktiviert, die sich die Aufgabe, das Gewölbe zu halten, mit dem Abductor hallucis teilen.',
+            '**Hallux valgus.** Menschen mit Hallux valgus (Ballenzeh) profitieren vielleicht, weil die Übung Muskeln trainiert, die den großen Zeh von den anderen Zehen wegziehen, entgegen der Abweichung nach innen beim Hallux valgus. Eine andere EMG-Studie bei Menschen mit leichtem Hallux valgus fand beim Zehenspreizen mehr Aktivität im Abductor hallucis als bei der Kurzer-Fuß-Übung, auch wenn diese Studie noch nicht in der Quellenliste dieser Website steht.',
+            '**Läufer und viele Stunden auf den Beinen.** Läufer und Menschen, die viele Stunden auf den Beinen sind, können das Zehenspreizen in ihre Routine zur Fußkräftigung aufnehmen. Zehen, die sich spreizen können, verteilen die Last beim Abdrücken gleichmäßiger über den Vorfuß. Wenn deine Zehen von engen Schuhen eingeengt sind, hilft die Übung, die Beweglichkeit zurückzuholen.',
+          ],
+        },
         'Für ein umfassenderes Programm siehe [Übungen bei Plattfüßen](/de/plattfuss-uebungen/) oder [Schmerzen am Fußballen](/de/metatarsalgie-vorfussschmerzen/).',
       ],
       cites: [CITE.gooding],
@@ -76,10 +90,14 @@ export const EX_TOE_SPREAD_DE: Guide = {
     {
       h2: 'Was sind die häufigsten Fehler beim Zehenspreizen?',
       paragraphs: [
-        'Der häufigste Fehler ist, die Zehen vom Boden zu heben, statt sie seitlich zu spreizen. Das Ziel ist eine waagerechte Spreizung, kein Anheben nach oben. Lass die Zehen den Boden leicht berühren.',
-        'Ein weiterer Fehler ist, die Zehen beim Spreizen einzukrallen. Das passiert, wenn das Gehirn die Spreizbewegung noch nicht von der Beugebewegung trennen kann. Mit Übung wird es besser. Schau beim Spreizen auf deine Zehen, damit du siehst, was wirklich passiert.',
-        'Bei manchen bewegen sich anfangs nur der große und der kleine Zeh, während die drei mittleren zusammenkleben. Das ist normal. Die mittleren Zehen haben weniger eigene Muskelsteuerung. Über mehrere Wochen Übung wird die Spreizung weiter.',
-        'Erzwing die Spreizung nicht bis zum Krampf. Wenn der Fuß krampft, hör auf, massier die Stelle kurz und versuch es mit weniger Wiederholungen noch einmal.',
+        {
+          list: [
+            '**Zehen anheben.** Der häufigste Fehler ist, die Zehen vom Boden zu heben, statt sie seitlich zu spreizen. Das Ziel ist eine waagerechte Spreizung, kein Anheben nach oben. Lass die Zehen den Boden leicht berühren.',
+            '**Zehen einkrallen.** Ein weiterer Fehler ist, die Zehen beim Spreizen einzukrallen. Das passiert, wenn das Gehirn die Spreizbewegung noch nicht von der Beugebewegung trennen kann. Mit Übung wird es besser. Schau beim Spreizen auf deine Zehen, damit du siehst, was wirklich passiert.',
+            '**Mittlere Zehen kleben zusammen.** Bei manchen bewegen sich anfangs nur der große und der kleine Zeh, während die drei mittleren zusammenkleben. Das ist normal. Die mittleren Zehen haben weniger eigene Muskelsteuerung. Über mehrere Wochen Übung wird die Spreizung weiter.',
+            '**Erzwingen.** Erzwing die Spreizung nicht bis zum Krampf. Wenn der Fuß krampft, hör auf, massier die Stelle kurz und versuch es mit weniger Wiederholungen noch einmal.',
+          ],
+        },
       ],
     },
     {
@@ -87,7 +105,7 @@ export const EX_TOE_SPREAD_DE: Guide = {
       paragraphs: [
         'Das Zehenspreizen wurde vor allem mit MRT und EMG untersucht, die die Muskelaktivierung während der Übung messen. Eine MRT-Studie von Gooding und Kollegen von 2016 bestätigte, dass es alle vier getesteten kurzen Muskeln der Fußsohle aktiviert. Die Aktivierung war bei den meisten Muskeln mit der Kurzer-Fuß-Übung vergleichbar und beim Abductor digiti minimi höher.',
         'Was die Forschung noch nicht gemacht hat: das Zehenspreizen als alleinige Behandlung in einer randomisierten Studie zu testen, die Ergebnisse für Patienten wie Schmerz oder Höhe des Gewölbes über Wochen oder Monate misst. Es taucht als Teil kombinierter Programme in Studien zu Plattfüßen auf, aber der Beitrag des Zehenspreizens lässt sich in diesen Studien nicht von den anderen Übungen trennen.',
-        'Die Belege stützen es als nützliche Übung, um die kurzen Fußmuskeln zu aktivieren. Ob es allein die Struktur des Fußes verändert, ist noch nicht bekannt. Verwandte Übungsseiten: [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/), [Großzehenheben](/de/uebungen/grosszehe-heben/), [Handtuchgreifen](/de/uebungen/handtuchgreifen/).',
+        '**Die Belege stützen es als nützliche Übung, um die kurzen Fußmuskeln zu aktivieren.** Ob es allein die Struktur des Fußes verändert, ist noch nicht bekannt. Verwandte Übungsseiten: [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/), [Großzehenheben](/de/uebungen/grosszehe-heben/), [Handtuchgreifen](/de/uebungen/handtuchgreifen/).',
       ],
       cites: [CITE.gooding, CITE.brijwasi],
     },

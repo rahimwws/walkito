@@ -34,7 +34,7 @@ export const BUNIONS_IT: Guide = {
       h2: 'Gli esercizi possono correggere l’alluce valgo?',
       figure: { id: 'bunion', caption: 'L’alluce valgo è una sporgenza ossea all’articolazione dell’alluce, con l’alluce che pende verso le altre dita.', alt: 'Vista dall’alto delle ossa del piede, con l’alluce inclinato verso il secondo dito e una sporgenza rossa sul lato interno dell’articolazione dell’alluce.' },
       paragraphs: [
-        'No. L’alluce valgo, in termini clinici hallux valgus (in modo colloquiale anche «cipolla»), è una deviazione ossea della prima articolazione metatarso-falangea (l’articolazione dell’alluce). Il primo metatarso scivola verso l’interno e l’alluce si inclina verso l’esterno. Una volta che l’osso si è spostato e la capsula articolare si è adattata, l’esercizio non può rimetterlo a posto.',
+        'No. L’alluce valgo, in termini clinici hallux valgus (in modo colloquiale anche «cipolla»), è una deviazione ossea della prima articolazione metatarso-falangea (l’articolazione dell’alluce). Il primo metatarso scivola verso l’interno e l’alluce si inclina verso l’esterno. Una volta che l’osso si è spostato e la capsula articolare si è adattata, **l’esercizio non può rimetterlo a posto.**',
         'Quello che l’esercizio può fare è rinforzare i muscoli intorno all’articolazione. L’abduttore dell’alluce corre lungo l’interno dell’arco e riporta l’alluce in asse. In chi ha l’alluce valgo questo muscolo è più debole e più piccolo che in chi non ce l’ha. Rinforzarlo non annulla il cambiamento strutturale, ma può migliorare il controllo, ridurre i sintomi e forse rallentare un’ulteriore deviazione nei casi lievi.',
         'Un commento clinico del 2016 sul Journal of Orthopaedic and Sports Physical Therapy ha proposto per l’alluce valgo iniziale un approccio di rinforzo muscolare basato sulla biomeccanica, centrato sui muscoli intrinseci del piede. L’autore sosteneva che la deformità progredisce in parte per uno squilibrio muscolare, quindi ripristinare l’attività dei muscoli potrebbe avere un effetto protettivo. È un ragionamento plausibile, ma le prove dirette a lungo termine sono ancora limitate.',
       ],
@@ -46,7 +46,15 @@ export const BUNIONS_IT: Guide = {
         'Le prove migliori vengono da una manciata di piccoli studi. Nessuno è grande, e nessuno ha seguito i partecipanti per più di un anno.',
         'Kim e colleghi (2015) hanno assegnato a caso 24\u00A0persone con alluce valgo da lieve a moderato alla sola ortesi o a un’ortesi più esercizi di apertura delle dita per 8\u00A0settimane. Il gruppo con gli esercizi ha ridotto l’angolo dell’alluce valgo in media di 3,4\u00A0gradi e aumentato l’area di sezione dell’abduttore dell’alluce. Il gruppo con la sola ortesi non ha mostrato cambiamenti significativi su nessuna delle due misure. Lo studio era piccolo e includeva soprattutto giovani adulti con alluce valgo lieve.',
         'Abdalbary (2018) ha assegnato a caso 56\u00A0donne con alluce valgo moderato a 3\u00A0mesi di mobilizzazione del piede, esercizi di rinforzo e un separatore per dita, oppure a nessun intervento (una lista d’attesa). A 3\u00A0mesi e di nuovo a 1\u00A0anno, il gruppo con gli esercizi aveva dolore, funzione e misure radiografiche dell’angolo significativamente migliori del gruppo che non aveva ricevuto niente. Lo studio si distingue per il controllo più lungo, ma dato che il separatore era messo insieme a mobilizzazione ed esercizi, non può dirci quanto abbia contribuito il separatore da solo.',
-        'Külünkoğlu e colleghi (2021) hanno assegnato a caso 60\u00A0donne (120\u00A0piedi) con alluce valgo a un mese di tutore notturno, esercizi o elettrostimolazione. Tutti e tre i gruppi sono migliorati in dolore e funzione, ma il tutore è stato più efficace di esercizi ed elettroterapia, e gli esercizi hanno funzionato meglio dell’elettroterapia. Lo studio non aveva un gruppo di controllo non trattato, quindi è difficile sapere quanto ciascuno dei tre approcci abbia aggiunto oltre alla variazione naturale.',
+        'Külünkoğlu e colleghi (2021) hanno assegnato a caso 60\u00A0donne (120\u00A0piedi) con alluce valgo a un mese di:',
+        {
+          list: [
+            'Tutore notturno.',
+            'Esercizi.',
+            'Elettrostimolazione.',
+          ],
+        },
+        'Tutti e tre i gruppi sono migliorati in dolore e funzione, ma il tutore è stato più efficace di esercizi ed elettroterapia, e gli esercizi hanno funzionato meglio dell’elettroterapia. Lo studio non aveva un gruppo di controllo non trattato, quindi è difficile sapere quanto ciascuno dei tre approcci abbia aggiunto oltre alla variazione naturale.',
       ],
       sourceNote:
         'Kim 2015: 24\u00A0soggetti, studio randomizzato di 8\u00A0settimane. Variazione dell’angolo HV: gruppo esercizi -3,41 ± 3,17\u00A0gradi, gruppo ortesi -0,5 ± 2,07\u00A0gradi (p < 0,05). Variazione della CSA dell’AbdH: gruppo esercizi +0,48\u00A0cm², gruppo ortesi -0,11\u00A0cm². Abdalbary 2018: 56\u00A0donne, assegnate a caso a 3\u00A0mesi di mobilizzazione + esercizi + separatore per dita (36\u00A0sedute) o a nessun intervento, studio randomizzato con controllo a 1\u00A0anno. Külünkoğlu 2021: 60\u00A0donne (120\u00A0piedi), studio randomizzato a 3\u00A0gruppi (tutore, esercizi, elettroterapia), trattamento di 1\u00A0mese, nessun controllo non trattato; il tutore è stato il più efficace dei tre.',
@@ -57,8 +65,9 @@ export const BUNIONS_IT: Guide = {
       keyFact: 'In uno studio su 30\u00A0donne con alluce valgo doloroso, una soletta con separatore per dita ha ridotto in modo significativo il dolore in tre mesi, mentre un gruppo a parte con tutore notturno non è migliorato (Tehraninasr e colleghi, 2008).',
       paragraphs: [
         'I separatori per dita, chiamati anche distanziatori, stanno tra l’alluce e il secondo dito. Riducono lo sfregamento, alleviano la pressione sull’alluce valgo e, mentre li porti, spingono delicatamente l’alluce lontano dal secondo dito.',
-        'Tehraninasr e colleghi (2008) hanno studiato 30\u00A0donne con alluce valgo doloroso per 3\u00A0mesi. Un gruppo portava una soletta con un separatore per dita integrato, e un gruppo a parte portava invece un tutore notturno. Il dolore è sceso in modo significativo nel gruppo con il separatore ma non nel gruppo con il tutore notturno. In nessuno dei due gruppi l’angolo dell’alluce valgo è cambiato in modo statisticamente significativo. Lo studio di Abdalbary abbinava un separatore per dita a terapia manuale ed esercizi, quindi non isola cosa abbia fatto il separatore da solo.',
-        'Il quadro tra gli studi è coerente: i separatori per dita possono aiutare con il comfort e i sintomi nel breve periodo, ma le prove che cambino l’angolo dell’osso nel tempo sono deboli. Non sono dannosi e costano poco, per questo molti clinici li consigliano insieme a esercizi e cambio di scarpe.',
+        'Tehraninasr e colleghi (2008) hanno studiato 30\u00A0donne con alluce valgo doloroso per 3\u00A0mesi. Un gruppo portava una soletta con un separatore per dita integrato, e un gruppo a parte portava invece un tutore notturno. Il dolore è sceso in modo significativo nel gruppo con il separatore ma non nel gruppo con il tutore notturno. In nessuno dei due gruppi l’angolo dell’alluce valgo è cambiato in modo statisticamente significativo.',
+        'Lo studio di Abdalbary abbinava un separatore per dita a terapia manuale ed esercizi, quindi non isola cosa abbia fatto il separatore da solo.',
+        'Il quadro tra gli studi è coerente: **i separatori per dita possono aiutare con il comfort e i sintomi nel breve periodo, ma le prove che cambino l’angolo dell’osso nel tempo sono deboli.** Non sono dannosi e costano poco, per questo molti clinici li consigliano insieme a esercizi e cambio di scarpe.',
       ],
       cites: [CITE.abdalbary, CITE.tehraninasr],
     },
@@ -130,7 +139,7 @@ export const BUNIONS_IT: Guide = {
     {
       h2: 'Le scarpe contano per l’alluce valgo?',
       paragraphs: [
-        'Le scarpe sono uno dei cambiamenti con più effetto che puoi fare. Una punta larga dà all’alluce lo spazio per stare in una posizione più neutra ed evita che la scarpa prema sull’alluce valgo. Le scarpe strette e a punta spingono l’alluce ancora più in valgo e comprimono l’articolazione.',
+        'Le scarpe sono uno dei cambiamenti con più effetto che puoi fare. **Una punta larga dà all’alluce lo spazio per stare in una posizione più neutra** ed evita che la scarpa prema sull’alluce valgo. Le scarpe strette e a punta spingono l’alluce ancora più in valgo e comprimono l’articolazione.',
         'I tacchi alti spostano il peso sull’avampiede e aumentano la pressione sulla prima articolazione metatarso-falangea. Se il dolore all’alluce valgo è un problema, abbassare il tacco è un primo passo semplice.',
         'Le scarpe da sole non correggono la deformità, ma possono ridurre i sintomi e rallentare la progressione togliendo la forza esterna che spinge l’alluce ancora più fuori asse.',
       ],
@@ -138,7 +147,7 @@ export const BUNIONS_IT: Guide = {
     {
       h2: 'Quando si considera la chirurgia?',
       paragraphs: [
-        'Si considera la chirurgia quando dolore e limitazioni nelle attività continuano nonostante le misure conservative come cambio di scarpe, esercizi, separatori e plantari. La decisione dipende da quanto l’alluce valgo pesa sulla vita di tutti i giorni, non solo dall’angolo.',
+        'Si considera la chirurgia quando dolore e limitazioni nelle attività continuano nonostante le misure conservative come cambio di scarpe, esercizi, separatori e plantari. **La decisione dipende da quanto l’alluce valgo pesa sulla vita di tutti i giorni, non solo dall’angolo.**',
         'Per l’alluce valgo esistono più di 150\u00A0procedure chirurgiche, dal riallineamento dei tessuti molli all’osteotomia (tagliare e riposizionare l’osso). La scelta dipende dalla gravità e dall’anatomia specifica. Il recupero va da settimane a mesi.',
         'Di solito si provano prima per diversi mesi esercizi e gestione conservativa. Se stai gestendo bene i sintomi con gli approcci di questa pagina, la chirurgia non è urgente. Se il dolore limita le camminate, la scelta delle scarpe o le attività nonostante queste misure, uno specialista di piede e caviglia può parlarti delle opzioni.',
       ],

@@ -30,10 +30,12 @@ export const TOE_STRENGTHENING_IT: Guide = {
       keyFact:
         'In uno studio di un anno su 312\u00A0adulti tra 60 e 90\u00A0anni, chi è caduto aveva l’alluce più debole (11,6% contro 14,8% del peso corporeo) rispetto a chi non è caduto (Mickle e colleghi, 2009).',
       paragraphs: [
-        'La forza delle dita conta soprattutto per l’equilibrio e per la spinta quando cammini. Le dita sono l’ultima parte del piede a staccarsi da terra a ogni passo, e quando stai fermo in piedi premono verso il basso per fermare le piccole oscillazioni.',
-        'Le prove più chiare vengono dagli anziani. Un gruppo australiano ha misurato la forza delle dita in 312\u00A0persone tra 60 e 90\u00A0anni e poi ha registrato chi è caduto nei 12\u00A0mesi successivi. In 107 (il 35%) sono caduti. In media, chi è caduto riusciva a premere con l’alluce all’11,6% del proprio peso corporeo, contro il 14,8% di chi non è caduto. Le dita più piccole mostravano lo stesso schema. Uno studio precedente su 176\u00A0persone con un’età media di 80\u00A0anni ha trovato che i flessori plantari delle dita deboli (i muscoli che spingono le dita verso il basso) erano legati alle cadute anche dopo aver tenuto conto di altri fattori di rischio di caduta, come vista, tempo di reazione e forza, e dell’età.',
+        '**La forza delle dita conta soprattutto per l’equilibrio e per la spinta quando cammini.** Le dita sono l’ultima parte del piede a staccarsi da terra a ogni passo, e quando stai fermo in piedi premono verso il basso per fermare le piccole oscillazioni.',
+        'Le prove più chiare vengono dagli anziani. Un gruppo australiano ha misurato la forza delle dita in 312\u00A0persone tra 60 e 90\u00A0anni e poi ha registrato chi è caduto nei 12\u00A0mesi successivi. In 107 (il 35%) sono caduti. In media, chi è caduto riusciva a premere con l’alluce all’11,6% del proprio peso corporeo, contro il 14,8% di chi non è caduto. Le dita più piccole mostravano lo stesso schema.',
+        'Uno studio precedente su 176\u00A0persone con un’età media di 80\u00A0anni ha trovato che i flessori plantari delle dita deboli (i muscoli che spingono le dita verso il basso) erano legati alle cadute anche dopo aver tenuto conto di altri fattori di rischio di caduta, come vista, tempo di reazione e forza, e dell’età.',
         'Una revisione del 2026 su 14\u00A0studi di coorte in adulti dai 60\u00A0anni in su ha messo insieme i dati e ha trovato che muscoli dell’alluce deboli si associavano a una probabilità di una caduta futura circa 1,65\u00A0volte più alta. Gli autori hanno precisato che molti studi non tenevano conto di altre cause, quindi le dita deboli potrebbero essere in parte un segno di fragilità generale.',
-        'Per l’equilibrio in sé, una revisione del 2020 su nove studi ha trovato che flessori delle dita più forti andavano insieme a un equilibrio migliore in tutti gli studi inclusi. Tutti quegli studi riguardavano persone sopra i 60\u00A0anni, quindi il legame negli adulti più giovani non è stato testato allo stesso modo. In un altro studio su 305\u00A0persone tra 65 e 93\u00A0anni, la forza dell’alluce era uno dei due fattori più costanti nel prevedere come andavano i test di equilibrio e di cammino.',
+        'Per l’equilibrio in sé, una revisione del 2020 su nove studi ha trovato che flessori delle dita più forti andavano insieme a un equilibrio migliore in tutti gli studi inclusi. Tutti quegli studi riguardavano persone sopra i 60\u00A0anni, quindi il legame negli adulti più giovani non è stato testato allo stesso modo.',
+        'In un altro studio su 305\u00A0persone tra 65 e 93\u00A0anni, la forza dell’alluce era uno dei due fattori più costanti nel prevedere come andavano i test di equilibrio e di cammino.',
       ],
       sourceNote:
         'Mickle 2009: forza misurata su una pedana di pressione come percentuale del peso corporeo, medie con DS 6,9 e 7,8. Valeriani 2026: debolezza dei flessori plantari dell’alluce, OR aggregato 1,65 (IC 95% da 1,14 a 2,38). Quinlan 2020: 7\u00A0studi trasversali, 2\u00A0studi randomizzati, 1\u00A0studio caso-controllo, nessuna meta-analisi.',
@@ -42,17 +44,32 @@ export const TOE_STRENGTHENING_IT: Guide = {
     {
       h2: 'Le dita deboli sono legate al dolore al tallone?',
       paragraphs: [
-        'Le dita deboli si ritrovano nelle persone con fascite plantare (dolore sotto il tallone, dove si attacca la fascia plantare, una banda spessa che corre lungo la pianta). In uno studio del 2003 su 20\u00A0persone con fascite plantare a un piede, il piede dolorante aveva i flessori delle dita più deboli dell’altro piede e più deboli di 20\u00A0persone simili senza dolore. Uno studio più grande del 2015 ha confrontato 202\u00A0persone con dolore sotto il tallone e 70 senza. In media, il gruppo con dolore al tallone aveva flessori delle dita più deboli, caviglie più rigide e un indice di massa corporea (il peso in rapporto all’altezza) più alto.',
-        'Nessuno dei due studi può dire cosa sia venuto prima. Gli autori di entrambi lo scrivono chiaramente: la debolezza potrebbe contribuire al dolore, oppure il dolore potrebbe far usare meno le dita. Rinforzare le dita è una parte ragionevole di un piano per il dolore al tallone, ma gli esercizi più studiati per la fascite plantare restano gli allungamenti del polpaccio e della fascia plantare e i sollevamenti sulle punte degli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/). Una revisione del 2017 sul lavoro di forza per la fascite plantare non ha potuto dire quanto aiuti da solo l’allenamento dei muscoli del piede nelle persone con dolore al tallone.',
+        'Le dita deboli si ritrovano nelle persone con fascite plantare (dolore sotto il tallone, dove si attacca la fascia plantare, una banda spessa che corre lungo la pianta). In uno studio del 2003 su 20\u00A0persone con fascite plantare a un piede, il piede dolorante aveva i flessori delle dita più deboli dell’altro piede e più deboli di 20\u00A0persone simili senza dolore.',
+        'Uno studio più grande del 2015 ha confrontato 202\u00A0persone con dolore sotto il tallone e 70 senza. In media, il gruppo con dolore al tallone aveva:',
+        {
+          list: [
+            'Flessori delle dita più deboli.',
+            'Caviglie più rigide.',
+            'Un indice di massa corporea (il peso in rapporto all’altezza) più alto.',
+          ],
+        },
+        '**Nessuno dei due studi può dire cosa sia venuto prima.** Gli autori di entrambi lo scrivono chiaramente: la debolezza potrebbe contribuire al dolore, oppure il dolore potrebbe far usare meno le dita.',
+        'Rinforzare le dita è una parte ragionevole di un piano per il dolore al tallone, ma gli esercizi più studiati per la fascite plantare restano gli allungamenti del polpaccio e della fascia plantare e i sollevamenti sulle punte degli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/). Una revisione del 2017 sul lavoro di forza per la fascite plantare non ha potuto dire quanto aiuti da solo l’allenamento dei muscoli del piede nelle persone con dolore al tallone.',
       ],
       cites: [CITE.allenGross, CITE.sullivanHeel, CITE.guideline, CITE.hufferReview],
     },
     {
       h2: 'Quali muscoli muovono le dita dei piedi?',
       paragraphs: [
-        'Le dita dei piedi sono mosse da due gruppi di muscoli. I muscoli intrinseci iniziano e finiscono dentro il piede. Stanno a strati sotto la pianta, e i più noti sono l’abduttore dell’alluce (che allontana l’alluce dalle altre dita) e i flessori brevi delle dita. I muscoli estrinseci partono dalla gamba e arrivano alle dita con lunghi tendini che scorrono oltre la caviglia.',
+        'Le dita dei piedi sono mosse da due gruppi di muscoli:',
+        {
+          list: [
+            '**Muscoli intrinseci:** iniziano e finiscono dentro il piede. Stanno a strati sotto la pianta, e i più noti sono l’abduttore dell’alluce (che allontana l’alluce dalle altre dita) e i flessori brevi delle dita.',
+            '**Muscoli estrinseci:** partono dalla gamba e arrivano alle dita con lunghi tendini che scorrono oltre la caviglia.',
+          ],
+        },
         'Quando pieghi le dita con forza, i due gruppi lavorano insieme. Per questo i ricercatori fanno così fatica a misurare da sola la forza degli intrinseci: una revisione del 2012 ha concluso che non è chiaro se esista un metodo capace di separare del tutto i due gruppi. Un articolo di medicina dello sport del 2015 chiama i muscoli intrinseci il «core del piede» perché, come i muscoli profondi del tronco, fanno più piccoli aggiustamenti continui che grandi movimenti.',
-        'Quindi un buon programma per le dita mescola lavoro di controllo (apertura delle dita, sollevamento dell’alluce) e lavoro di forza (raccolta dell’asciugamano, pressioni delle dita con carico) che usa entrambi i gruppi.',
+        'Quindi **un buon programma per le dita mescola lavoro di controllo (apertura delle dita, sollevamento dell’alluce) e lavoro di forza (raccolta dell’asciugamano, pressioni delle dita con carico)** che usa entrambi i gruppi.',
       ],
       cites: [CITE.soysaFootStrength, CITE.mcKeon, CITE.gooding],
     },
@@ -166,10 +183,17 @@ export const TOE_STRENGTHENING_IT: Guide = {
       keyFact:
         'In uno studio su 118\u00A0runner amatoriali, chi non faceva il programma per il piede aveva una probabilità 2,42\u00A0volte più alta di infortunarsi nell’arco di un anno (Taddei e colleghi, 2020).',
       paragraphs: [
-        'Gli esercizi per rinforzare le dita possono aumentarne la forza, ma solo quando il lavoro diventa più difficile nel tempo. In uno studio del 2016, 85\u00A0adulti tra 60 e 90\u00A0anni sono stati divisi tra un programma supervisionato con una resistenza che cresceva nel corso di tre mesi e un programma di esercizi a casa. Il gruppo supervisionato ha guadagnato fino al 36% di forza delle dita e restava più a lungo su una gamba. Il gruppo a casa, e un gruppo di controllo separato di 32\u00A0persone, non hanno mostrato cambiamenti nella forza delle dita. Gli autori hanno scritto che serviva ancora uno studio che contasse le cadute.',
+        'Gli esercizi per rinforzare le dita possono aumentarne la forza, ma **solo quando il lavoro diventa più difficile nel tempo.**',
+        'In uno studio del 2016, 85\u00A0adulti tra 60 e 90\u00A0anni sono stati divisi tra un programma supervisionato con una resistenza che cresceva nel corso di tre mesi e un programma di esercizi a casa. Il gruppo supervisionato ha guadagnato fino al 36% di forza delle dita e restava più a lungo su una gamba. Il gruppo a casa, e un gruppo di controllo separato di 32\u00A0persone, non hanno mostrato cambiamenti nella forza delle dita. Gli autori hanno scritto che serviva ancora uno studio che contasse le cadute.',
         'Anche chi corre risponde. In uno studio del 2019 su 57\u00A0runner, sia un programma di rinforzo del piede fatto almeno cinque volte a settimana sia il passaggio a camminare con scarpe minimaliste (scarpe sottili, piatte e flessibili) hanno aumentato dimensioni e forza dei muscoli del piede in due mesi, mentre il gruppo di controllo è rimasto uguale. Alcuni muscoli erano già più grandi entro un mese. Se ti incuriosisce la strada delle scarpe, vedi [scarpe barefoot](/it/scarpe-barefoot/).',
         'Per gli infortuni, il risultato singolo più forte viene da uno studio del 2020 su 118\u00A0runner amatoriali. Chi non ha ricevuto il programma per piede e caviglia aveva una probabilità 2,42\u00A0volte più alta di un infortunio da corsa nei 12\u00A0mesi rispetto a chi l’ha ricevuto. È un solo studio, e il programma allenava tutto il piede e la caviglia, non solo le dita. Chi corre può leggere di più in [dolore al tallone nei runner](/heel-pain-runners/) (in inglese).',
-        'Il quadro generale è meno certo. Una revisione del 2022 ha valutato come di certezza molto bassa le prove che l’allenamento dei muscoli del piede migliori l’equilibrio dinamico. Una revisione del 2025 su 16\u00A0studi negli anziani ha trovato che gli esercizi per piede e caviglia miglioravano la forza della caviglia e l’equilibrio a occhi aperti, ma i due studi che contavano le cadute non hanno trovato un effetto chiaro. Quella revisione ha comunque notato che sia gli esercizi di rinforzo delle dita sia l’allenamento tre volte a settimana sembravano contare per l’equilibrio.',
+        'Il quadro generale è meno certo:',
+        {
+          list: [
+            '**Una revisione del 2022** ha valutato come di certezza molto bassa le prove che l’allenamento dei muscoli del piede migliori l’equilibrio dinamico.',
+            '**Una revisione del 2025** su 16\u00A0studi negli anziani ha trovato che gli esercizi per piede e caviglia miglioravano la forza della caviglia e l’equilibrio a occhi aperti, ma i due studi che contavano le cadute non hanno trovato un effetto chiaro. Quella revisione ha comunque notato che sia gli esercizi di rinforzo delle dita sia l’allenamento tre volte a settimana sembravano contare per l’equilibrio.',
+          ],
+        },
       ],
       sourceNote:
         'Mickle 2016: 43 supervisionati, 42 a casa, 32 controlli non randomizzati; l’80% dei partecipanti ai gruppi di intervento ha completato il follow-up. Ridge 2019: dimensioni dei muscoli del piede con ecografia, forza con dinamometri costruiti su misura. Taddei 2020: il gruppo di controllo aveva una probabilità 2,42\u00A0volte più alta (IC 95% da 1,98 a 3,62) di un infortunio legato alla corsa entro 12\u00A0mesi. Liang 2025: 16\u00A0articoli, 651\u00A0partecipanti, GRADE da bassa a molto bassa.',
@@ -178,8 +202,17 @@ export const TOE_STRENGTHENING_IT: Guide = {
     {
       h2: 'Gli esercizi per le dita aiutano a prevenire le cadute?',
       paragraphs: [
-        'Non è stato dimostrato che gli esercizi per le dita prevengano le cadute da soli. Negli studi di coorte le dita deboli vanno insieme alle cadute, e l’allenamento può aumentare la forza delle dita, ma non abbiamo trovato nessuno studio che abbia testato un programma solo per le dita usando le cadute come risultato.',
-        'Il test più vicino è uno studio del 2011 su 305\u00A0anziani con un dolore al piede invalidante. Metà ha ricevuto un pacchetto con plantari, consigli sulle calzature con un buono per le scarpe, un programma di esercizi per piede e caviglia da fare a casa e un opuscolo sulle cadute. Nei 12\u00A0mesi hanno avuto il 36% di cadute in meno rispetto a chi ha ricevuto le normali cure podologiche. La quota di persone cadute almeno una volta non era chiaramente diversa. Visto che l’esercizio era solo una parte del pacchetto, lo studio non può dire quanto abbiano fatto gli esercizi da soli.',
+        '**Non è stato dimostrato che gli esercizi per le dita prevengano le cadute da soli.** Negli studi di coorte le dita deboli vanno insieme alle cadute, e l’allenamento può aumentare la forza delle dita, ma non abbiamo trovato nessuno studio che abbia testato un programma solo per le dita usando le cadute come risultato.',
+        'Il test più vicino è uno studio del 2011 su 305\u00A0anziani con un dolore al piede invalidante. Metà ha ricevuto un pacchetto con:',
+        {
+          list: [
+            'Plantari.',
+            'Consigli sulle calzature con un buono per le scarpe.',
+            'Un programma di esercizi per piede e caviglia da fare a casa.',
+            'Un opuscolo sulle cadute.',
+          ],
+        },
+        'Nei 12\u00A0mesi hanno avuto il 36% di cadute in meno rispetto a chi ha ricevuto le normali cure podologiche. La quota di persone cadute almeno una volta non era chiaramente diversa. Visto che l’esercizio era solo una parte del pacchetto, lo studio non può dire quanto abbiano fatto gli esercizi da soli.',
         'Se sei già caduto o ti senti instabile, il lavoro sulle dita è un’aggiunta sensata, ma prima dovrebbe venire una valutazione del rischio di caduta con un professionista sanitario. Gli esercizi di questa pagina non sono un programma di prevenzione delle cadute.',
       ],
       sourceNote: 'Spink 2011: rapporto tra tassi di incidenza 0,64 (IC 95% da 0,45 a 0,91); quota di persone cadute RR 0,85 (da 0,66 a 1,08).',
@@ -189,7 +222,7 @@ export const TOE_STRENGTHENING_IT: Guide = {
       h2: 'Quanto spesso fare gli esercizi per rinforzare le dita?',
       paragraphs: [
         'Gli esercizi per rinforzare le dita si fanno di solito da tre a cinque volte a settimana. La revisione del 2025 sugli studi negli anziani ha trovato che allenarsi tre volte a settimana sembrava contare per l’equilibrio, e lo studio del 2019 sui runner usava almeno cinque sessioni a settimana. Le sessioni possono essere brevi: da cinque a dieci minuti bastano e avanzano per il lavoro su dita e arco.',
-        'Metti in conto qualche mese, non qualche sessione: gli studi qui sopra hanno misurato i guadagni principali dopo due o tre mesi. Ripeti i controlli a casa più o meno una volta al mese, così vedi cosa sta cambiando.',
+        '**Metti in conto qualche mese, non qualche sessione**: gli studi qui sopra hanno misurato i guadagni principali dopo due o tre mesi. Ripeti i controlli a casa più o meno una volta al mese, così vedi cosa sta cambiando.',
         'Se le dita sono piegate o rigide, comincia dagli [esercizi per il dito a martello](/it/dito-a-martello-esercizi/) o dagli [esercizi per l’alluce valgo](/it/alluce-valgo-esercizi/), che riguardano quelle forme. Per un piano più ampio che aggiunge polpaccio e caviglia, vedi gli [esercizi per rinforzare il piede](/it/esercizi-rinforzo-piede/).',
       ],
       cites: [CITE.liangFootAnkle, CITE.ridgeMinimalist, CITE.mickleToe],

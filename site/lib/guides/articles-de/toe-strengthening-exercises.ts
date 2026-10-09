@@ -30,10 +30,12 @@ export const TOE_STRENGTHENING_DE: Guide = {
       keyFact:
         'In einer einjährigen Studie mit 312\u00A0Erwachsenen im Alter von 60 bis 90\u00A0Jahren hatten die Menschen, die stürzten, schwächere Großzehen (11,6 gegenüber 14,8\u00A0% des Körpergewichts) als diejenigen, die nicht stürzten (Mickle und Kollegen, 2009).',
       paragraphs: [
-        'Zehenkraft zählt vor allem für das Gleichgewicht und für das Abdrücken beim Gehen. Die Zehen verlassen bei jedem Schritt als letzter Teil des Fußes den Boden, und wenn du still stehst, drücken sie nach unten, um kleine Schwankungen abzufangen.',
-        'Die klarsten Belege kommen von älteren Erwachsenen. Ein australisches Team maß die Zehenkraft bei 312\u00A0Menschen im Alter von 60 bis 90\u00A0Jahren und verfolgte dann, wer in den nächsten 12\u00A0Monaten stürzte. 107 von ihnen (35\u00A0%) stürzten. Im Durchschnitt konnten die Gestürzten mit der Großzehe 11,6\u00A0% ihres Körpergewichts nach unten drücken, gegenüber 14,8\u00A0% bei denen, die nicht stürzten. Die kleineren Zehen zeigten dasselbe Muster. Eine frühere Studie mit 176\u00A0Menschen mit einem Durchschnittsalter von 80\u00A0Jahren fand, dass schwache Zehenplantarflexoren (die Muskeln, die die Zehen nach unten drücken) mit Stürzen zusammenhingen, auch nachdem andere Sturzrisikofaktoren wie Sehvermögen, Reaktionszeit und Kraft sowie das Alter berücksichtigt wurden.',
+        '**Zehenkraft zählt vor allem für das Gleichgewicht und für das Abdrücken beim Gehen.** Die Zehen verlassen bei jedem Schritt als letzter Teil des Fußes den Boden, und wenn du still stehst, drücken sie nach unten, um kleine Schwankungen abzufangen.',
+        'Die klarsten Belege kommen von älteren Erwachsenen. Ein australisches Team maß die Zehenkraft bei 312\u00A0Menschen im Alter von 60 bis 90\u00A0Jahren und verfolgte dann, wer in den nächsten 12\u00A0Monaten stürzte. 107 von ihnen (35\u00A0%) stürzten. Im Durchschnitt konnten die Gestürzten mit der Großzehe 11,6\u00A0% ihres Körpergewichts nach unten drücken, gegenüber 14,8\u00A0% bei denen, die nicht stürzten. Die kleineren Zehen zeigten dasselbe Muster.',
+        'Eine frühere Studie mit 176\u00A0Menschen mit einem Durchschnittsalter von 80\u00A0Jahren fand, dass schwache Zehenplantarflexoren (die Muskeln, die die Zehen nach unten drücken) mit Stürzen zusammenhingen, auch nachdem andere Sturzrisikofaktoren wie Sehvermögen, Reaktionszeit und Kraft sowie das Alter berücksichtigt wurden.',
         'Eine Übersichtsarbeit von 2026 mit 14\u00A0Kohortenstudien bei Erwachsenen ab 60 fasste die Daten zusammen und fand, dass schwache Großzehenmuskeln mit einer etwa 1,65-fachen Chance auf einen späteren Sturz einhergingen. Die Autorinnen und Autoren betonten, dass viele der Studien andere Ursachen nicht herausrechneten, schwache Zehen also teilweise ein Zeichen allgemeiner Gebrechlichkeit sein könnten.',
-        'Beim Gleichgewicht selbst fand eine Übersichtsarbeit von 2020 mit neun Studien, dass kräftigere Zehenbeuger in jeder eingeschlossenen Studie mit besserem Gleichgewicht einhergingen. Alle diese Studien waren bei Menschen über 60, der Zusammenhang bei jüngeren Erwachsenen ist also nicht auf dieselbe Weise getestet. In einer separaten Studie mit 305\u00A0Menschen im Alter von 65 bis 93\u00A0Jahren war die Kraft der Großzehe einer der zwei beständigsten Vorhersagewerte dafür, wie gut sie bei Gleichgewichts- und Gehtests abschnitten.',
+        'Beim Gleichgewicht selbst fand eine Übersichtsarbeit von 2020 mit neun Studien, dass kräftigere Zehenbeuger in jeder eingeschlossenen Studie mit besserem Gleichgewicht einhergingen. Alle diese Studien waren bei Menschen über 60, der Zusammenhang bei jüngeren Erwachsenen ist also nicht auf dieselbe Weise getestet.',
+        'In einer separaten Studie mit 305\u00A0Menschen im Alter von 65 bis 93\u00A0Jahren war die Kraft der Großzehe einer der zwei beständigsten Vorhersagewerte dafür, wie gut sie bei Gleichgewichts- und Gehtests abschnitten.',
       ],
       sourceNote:
         'Mickle 2009: Kraft auf einer Druckmessplatte in Prozent des Körpergewichts gemessen, Mittelwerte mit SD 6,9 und 7,8. Valeriani 2026: Schwäche der Großzehen-Plantarflexoren, gepoolte OR 1,65 (95-%-KI 1,14 bis 2,38). Quinlan 2020: 7\u00A0Querschnittstudien, 2\u00A0RCTs, 1\u00A0Fall-Kontroll-Studie, keine Metaanalyse.',
@@ -42,17 +44,32 @@ export const TOE_STRENGTHENING_DE: Guide = {
     {
       h2: 'Hängen schwache Zehen mit Fersenschmerzen zusammen?',
       paragraphs: [
-        'Schwache Zehen kommen bei Menschen mit Plantarfasziitis tatsächlich vor (Schmerz unter der Ferse, dort, wo die Plantarfaszie ansetzt, ein dickes Band entlang der Fußsohle). In einer Studie von 2003 mit 20\u00A0Menschen mit Plantarfasziitis an einem Fuß hatte der schmerzende Fuß schwächere Zehenbeuger als der andere Fuß und als 20 passende Personen ohne Schmerzen. Eine größere Studie von 2015 verglich 202\u00A0Menschen mit Schmerzen unter der Ferse und 70 ohne. Die Gruppe mit Fersenschmerzen hatte im Durchschnitt schwächere Zehenbeuger, steifere Sprunggelenke und einen höheren Body-Mass-Index (Gewicht im Verhältnis zur Größe).',
-        'Keine der beiden Studien kann sagen, was zuerst da war. Die Autorinnen und Autoren beider Arbeiten sagen das offen: Die Schwäche könnte zum Schmerz beitragen, oder der Schmerz könnte dazu führen, dass Menschen ihre Zehen weniger einsetzen. Die Zehen zu kräftigen ist ein vernünftiger Teil eines Plans bei Fersenschmerzen, aber die am besten untersuchten Übungen bei Plantarfasziitis sind weiterhin das Dehnen von Wade und Plantarfaszie und das Fersenheben unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Eine Übersichtsarbeit von 2017 zu Krafttraining bei Plantarfasziitis konnte nicht sagen, wie viel Training der Fußmuskeln allein Menschen mit Fersenschmerzen hilft.',
+        'Schwache Zehen kommen bei Menschen mit Plantarfasziitis tatsächlich vor (Schmerz unter der Ferse, dort, wo die Plantarfaszie ansetzt, ein dickes Band entlang der Fußsohle). In einer Studie von 2003 mit 20\u00A0Menschen mit Plantarfasziitis an einem Fuß hatte der schmerzende Fuß schwächere Zehenbeuger als der andere Fuß und als 20 passende Personen ohne Schmerzen.',
+        'Eine größere Studie von 2015 verglich 202\u00A0Menschen mit Schmerzen unter der Ferse und 70 ohne. Die Gruppe mit Fersenschmerzen hatte im Durchschnitt:',
+        {
+          list: [
+            'Schwächere Zehenbeuger.',
+            'Steifere Sprunggelenke.',
+            'Einen höheren Body-Mass-Index (Gewicht im Verhältnis zur Größe).',
+          ],
+        },
+        '**Keine der beiden Studien kann sagen, was zuerst da war.** Die Autorinnen und Autoren beider Arbeiten sagen das offen: Die Schwäche könnte zum Schmerz beitragen, oder der Schmerz könnte dazu führen, dass Menschen ihre Zehen weniger einsetzen.',
+        'Die Zehen zu kräftigen ist ein vernünftiger Teil eines Plans bei Fersenschmerzen, aber die am besten untersuchten Übungen bei Plantarfasziitis sind weiterhin das Dehnen von Wade und Plantarfaszie und das Fersenheben unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Eine Übersichtsarbeit von 2017 zu Krafttraining bei Plantarfasziitis konnte nicht sagen, wie viel Training der Fußmuskeln allein Menschen mit Fersenschmerzen hilft.',
       ],
       cites: [CITE.allenGross, CITE.sullivanHeel, CITE.guideline, CITE.hufferReview],
     },
     {
       h2: 'Welche Muskeln bewegen deine Zehen?',
       paragraphs: [
-        'Zwei Muskelgruppen bewegen deine Zehen. Die inneren (intrinsischen) Fußmuskeln beginnen und enden im Fuß. Sie liegen in Schichten unter der Sohle, und die bekanntesten sind der Abductor hallucis (der die Großzehe von den anderen wegzieht) und die kurzen Zehenbeuger. Die äußeren (extrinsischen) Muskeln beginnen im Unterschenkel und erreichen die Zehen über lange Sehnen, die am Sprunggelenk vorbeilaufen.',
+        'Zwei Muskelgruppen bewegen deine Zehen:',
+        {
+          list: [
+            '**Innere (intrinsische) Fußmuskeln:** beginnen und enden im Fuß. Sie liegen in Schichten unter der Sohle, und die bekanntesten sind der Abductor hallucis (der die Großzehe von den anderen wegzieht) und die kurzen Zehenbeuger.',
+            '**Äußere (extrinsische) Muskeln:** beginnen im Unterschenkel und erreichen die Zehen über lange Sehnen, die am Sprunggelenk vorbeilaufen.',
+          ],
+        },
         'Wenn du die Zehen kräftig einkrallst, arbeiten beide Gruppen zusammen. Deshalb ist es für Forschende so schwierig, die Kraft der inneren Fußmuskeln allein zu messen: Eine Übersichtsarbeit von 2012 kam zu dem Schluss, dass unklar ist, ob irgendeine Methode die beiden vollständig trennen kann. Eine sportmedizinische Arbeit von 2015 nennt die inneren Fußmuskeln den „Foot Core“, weil sie, wie die tiefe Rumpfmuskulatur, eher kleine, ständige Anpassungen machen als große Bewegungen.',
-        'Ein gutes Zehenprogramm mischt deshalb Kontrollübungen (Zehenspreizen, Großzehenheben) mit Kraftübungen (Handtuchgreifen, Zehendrücken mit Last), die beide Gruppen einsetzen.',
+        '**Ein gutes Zehenprogramm mischt deshalb Kontrollübungen (Zehenspreizen, Großzehenheben) mit Kraftübungen (Handtuchgreifen, Zehendrücken mit Last)**, die beide Gruppen einsetzen.',
       ],
       cites: [CITE.soysaFootStrength, CITE.mcKeon, CITE.gooding],
     },
@@ -166,10 +183,17 @@ export const TOE_STRENGTHENING_DE: Guide = {
       keyFact:
         'In einer Studie mit 118\u00A0Freizeitläuferinnen und -läufern hatten diejenigen ohne das Fußprogramm innerhalb eines Jahres eine 2,42-mal so hohe Verletzungswahrscheinlichkeit (Taddei und Kollegen, 2020).',
       paragraphs: [
-        'Übungen zum Zehenkräftigen können Zehenkraft aufbauen, aber nur, wenn sie mit der Zeit schwerer werden. In einer Studie von 2016 wurden 85\u00A0Erwachsene im Alter von 60 bis 90\u00A0Jahren auf ein betreutes Programm mit einem Widerstand, der über drei Monate wuchs, und ein Übungsprogramm für zu Hause aufgeteilt. Die betreute Gruppe gewann bis zu 36\u00A0% Zehenkraft und konnte länger auf einem Bein stehen. Die Heimgruppe und eine separate Kontrollgruppe mit 32\u00A0Personen zeigten keine Veränderung der Zehenkraft. Die Autorinnen und Autoren schrieben, dass noch eine Studie nötig sei, die Stürze zählt.',
+        'Übungen zum Zehenkräftigen können Zehenkraft aufbauen, aber **nur, wenn sie mit der Zeit schwerer werden.**',
+        'In einer Studie von 2016 wurden 85\u00A0Erwachsene im Alter von 60 bis 90\u00A0Jahren auf ein betreutes Programm mit einem Widerstand, der über drei Monate wuchs, und ein Übungsprogramm für zu Hause aufgeteilt. Die betreute Gruppe gewann bis zu 36\u00A0% Zehenkraft und konnte länger auf einem Bein stehen. Die Heimgruppe und eine separate Kontrollgruppe mit 32\u00A0Personen zeigten keine Veränderung der Zehenkraft. Die Autorinnen und Autoren schrieben, dass noch eine Studie nötig sei, die Stürze zählt.',
         'Auch Läuferinnen und Läufer sprechen darauf an. In einer Studie von 2019 mit 57\u00A0Läuferinnen und Läufern vergrößerten sowohl ein Fußkräftigungsprogramm an mindestens fünf Tagen pro Woche als auch der Wechsel zum Gehen in Minimalschuhen (dünne, flache, flexible Schuhe) über zwei Monate Größe und Kraft der Fußmuskeln, während die Kontrollgruppe gleich blieb. Manche Muskeln waren schon innerhalb eines Monats größer. Wenn dich der Weg über die Schuhe interessiert, lies [Barfußschuhe](/de/barfussschuhe/).',
         'Bei Verletzungen kommt das stärkste einzelne Ergebnis aus einer Studie von 2020 mit 118\u00A0Freizeitläuferinnen und -läufern. Wer das Fuß- und Sprunggelenkprogramm nicht bekam, hatte innerhalb von 12\u00A0Monaten eine 2,42-mal so hohe Wahrscheinlichkeit für eine Laufverletzung wie die Gruppe mit Programm. Es ist eine einzelne Studie, und das Programm trainierte den ganzen Fuß und das Sprunggelenk, nicht nur die Zehen. Wenn du läufst, findest du mehr unter [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch).',
-        'Das Gesamtbild ist weniger sicher. Eine Übersichtsarbeit von 2022 bewertete die Belege dafür, dass Fußmuskeltraining das dynamische Gleichgewicht verbessert, mit sehr niedriger Sicherheit. Eine Übersichtsarbeit von 2025 mit 16\u00A0Studien bei älteren Menschen fand, dass Fuß- und Sprunggelenkübungen die Kraft im Sprunggelenk und das Gleichgewicht mit offenen Augen verbesserten, aber die zwei Studien, die Stürze zählten, fanden keinen klaren Effekt. Diese Übersichtsarbeit stellte aber fest, dass Übungen zum Zehenkräftigen und Training dreimal pro Woche beide für das Gleichgewicht eine Rolle zu spielen schienen.',
+        'Das Gesamtbild ist weniger sicher:',
+        {
+          list: [
+            '**Eine Übersichtsarbeit von 2022** bewertete die Belege dafür, dass Fußmuskeltraining das dynamische Gleichgewicht verbessert, mit sehr niedriger Sicherheit.',
+            '**Eine Übersichtsarbeit von 2025** mit 16\u00A0Studien bei älteren Menschen fand, dass Fuß- und Sprunggelenkübungen die Kraft im Sprunggelenk und das Gleichgewicht mit offenen Augen verbesserten, aber die zwei Studien, die Stürze zählten, fanden keinen klaren Effekt. Diese Übersichtsarbeit stellte aber fest, dass Übungen zum Zehenkräftigen und Training dreimal pro Woche beide für das Gleichgewicht eine Rolle zu spielen schienen.',
+          ],
+        },
       ],
       sourceNote:
         'Mickle 2016: 43 betreut, 42 zu Hause, 32\u00A0nicht randomisierte Kontrollpersonen; 80\u00A0% der Teilnehmenden in den Übungsgruppen schlossen die Nachbeobachtung ab. Ridge 2019: Größe der Fußmuskeln per Ultraschall, Kraft mit eigens gebauten Dynamometern. Taddei 2020: Kontrollgruppe mit 2,42-fach (95-%-KI 1,98 bis 3,62) höherer Wahrscheinlichkeit einer Laufverletzung innerhalb von 12\u00A0Monaten. Liang 2025: 16\u00A0Arbeiten, 651\u00A0Teilnehmende, GRADE niedrig bis sehr niedrig.',
@@ -178,8 +202,17 @@ export const TOE_STRENGTHENING_DE: Guide = {
     {
       h2: 'Können Zehenübungen Stürzen vorbeugen?',
       paragraphs: [
-        'Es ist nicht belegt, dass Zehenübungen allein Stürzen vorbeugen. Schwache Zehen gehen in Kohortenstudien mit Stürzen einher, und Training kann die Zehenkraft steigern, aber wir haben keine Studie gefunden, die ein reines Zehenprogramm mit Stürzen als Ergebnis getestet hat.',
-        'Am nächsten kommt eine Studie von 2011 mit 305\u00A0älteren Menschen mit stark einschränkenden Fußschmerzen. Die Hälfte bekam ein Paket aus Einlagen, Schuhberatung mit einem Gutschein für Schuhe, einem Fuß- und Sprunggelenk-Übungsprogramm für zu Hause und einer Broschüre zu Stürzen. Sie hatten über 12\u00A0Monate 36\u00A0% weniger Stürze als Menschen mit der üblichen podologischen Versorgung. Der Anteil der Menschen, die mindestens einmal stürzten, unterschied sich nicht klar. Weil die Übungen nur ein Teil des Pakets waren, kann die Studie nicht sagen, wie viel die Übungen selbst bewirkt haben.',
+        '**Es ist nicht belegt, dass Zehenübungen allein Stürzen vorbeugen.** Schwache Zehen gehen in Kohortenstudien mit Stürzen einher, und Training kann die Zehenkraft steigern, aber wir haben keine Studie gefunden, die ein reines Zehenprogramm mit Stürzen als Ergebnis getestet hat.',
+        'Am nächsten kommt eine Studie von 2011 mit 305\u00A0älteren Menschen mit stark einschränkenden Fußschmerzen. Die Hälfte bekam ein Paket aus:',
+        {
+          list: [
+            'Einlagen.',
+            'Schuhberatung mit einem Gutschein für Schuhe.',
+            'Einem Fuß- und Sprunggelenk-Übungsprogramm für zu Hause.',
+            'Einer Broschüre zu Stürzen.',
+          ],
+        },
+        'Sie hatten über 12\u00A0Monate 36\u00A0% weniger Stürze als Menschen mit der üblichen podologischen Versorgung. Der Anteil der Menschen, die mindestens einmal stürzten, unterschied sich nicht klar. Weil die Übungen nur ein Teil des Pakets waren, kann die Studie nicht sagen, wie viel die Übungen selbst bewirkt haben.',
         'Wenn du schon einmal gestürzt bist oder dich unsicher fühlst, sind Zehenübungen eine sinnvolle Ergänzung, aber zuerst sollte eine medizinische Fachperson dein Sturzrisiko einschätzen. Die Übungen auf dieser Seite sind kein Programm zur Sturzprävention.',
       ],
       sourceNote: 'Spink 2011: Inzidenzratenverhältnis 0,64 (95-%-KI 0,45 bis 0,91); Anteil der Gestürzten RR 0,85 (0,66 bis 1,08).',
@@ -189,7 +222,7 @@ export const TOE_STRENGTHENING_DE: Guide = {
       h2: 'Wie oft solltest du Übungen zum Zehenkräftigen machen?',
       paragraphs: [
         'Übungen zum Zehenkräftigen macht man meist an drei bis fünf Tagen pro Woche. Die Übersichtsarbeit von 2025 zu Studien bei älteren Menschen fand, dass Training dreimal pro Woche für das Gleichgewicht eine Rolle zu spielen schien, und die Läuferstudie von 2019 nutzte mindestens fünf Einheiten pro Woche. Die Einheiten können kurz sein, fünf bis zehn Minuten reichen für die Zehen- und Gewölbeübungen völlig.',
-        'Rechne mit einigen Monaten, nicht mit einigen Einheiten: Die Studien oben haben ihre wichtigsten Zuwächse nach zwei bis drei Monaten gemessen. Wiederhole die Tests für zu Hause von oben etwa einmal im Monat, damit du siehst, was sich verändert.',
+        '**Rechne mit einigen Monaten, nicht mit einigen Einheiten**: Die Studien oben haben ihre wichtigsten Zuwächse nach zwei bis drei Monaten gemessen. Wiederhole die Tests für zu Hause von oben etwa einmal im Monat, damit du siehst, was sich verändert.',
         'Wenn deine Zehen gekrümmt oder steif sind, fang mit [Übungen bei Hammerzehen](/de/hammerzehe-uebungen/) oder [Übungen bei Hallux valgus](/de/hallux-valgus-uebungen/) an, die diese Formen abdecken. Für einen umfassenderen Plan, der Wade und Sprunggelenk dazunimmt, lies [Fuß kräftigen: Übungen](/de/fuss-kraeftigen-uebungen/).',
       ],
       cites: [CITE.liangFootAnkle, CITE.ridgeMinimalist, CITE.mickleToe],

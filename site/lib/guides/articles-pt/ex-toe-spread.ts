@@ -38,7 +38,8 @@ export const EX_TOE_SPREAD_PT: Guide = {
       h2: 'Como fazer o exercício de abrir os dedos?',
       paragraphs: [
         'Sente-se descalço com os pés apoiados no chão. Abra os cinco dedos o máximo que conseguir, como se estivesse tentando colocar espaço entre cada dedo. Segure na posição mais aberta e relaxe. Isso é uma repetição.',
-        'Levantar os dedos não é o objetivo. Mantenha os dedos no chão e foque em abrir para os lados. Não aperte os dedos contra o chão nem dobre. Se só alguns dedos se mexem, é normal no começo. O dedão e o dedo mínimo costumam se mexer primeiro. Os três do meio muitas vezes vêm depois, quando os músculos ficam mais fortes.',
+        'Levantar os dedos não é o objetivo. Mantenha os dedos no chão e foque em abrir para os lados. Não aperte os dedos contra o chão nem dobre.',
+        'Se só alguns dedos se mexem, é normal no começo. O dedão e o dedo mínimo costumam se mexer primeiro. Os três do meio muitas vezes vêm depois, quando os músculos ficam mais fortes.',
       ],
       exercises: [
         {
@@ -61,7 +62,15 @@ export const EX_TOE_SPREAD_PT: Guide = {
       keyFact: 'Um estudo de ressonância magnética de 2016 mostrou que abrir os dedos ativou o abdutor do hálux em só 18,9\u00A0por cento, contra 29,7\u00A0por cento no exercício do pé curto, no mesmo pequeno grupo de atletas (Gooding e colegas, 2016).',
       paragraphs: [
         'Abrir os dedos trabalha dois músculos em especial. O abdutor do hálux passa ao longo da borda de dentro do pé e puxa o dedão para dentro (em direção ao meio do corpo). Ele também é um dos principais músculos que sustentam o arco longitudinal medial. O abdutor do dedo mínimo passa ao longo da borda de fora e puxa o dedo mínimo para fora.',
-        'Um estudo de ressonância magnética de 2016 de Gooding e colegas testou quatro exercícios para os músculos intrínsecos do pé e mediu a ativação de cada músculo. Abrir os dedos produziu a maior ativação no abdutor do dedo mínimo (35,2%), seguido do adutor do hálux oblíquo (31,5%) e do flexor do dedo mínimo (30,2%). A ativação do abdutor do hálux ao abrir os dedos (18,9%) foi menor que no exercício do pé curto (29,7%).',
+        'Um estudo de ressonância magnética de 2016 de Gooding e colegas testou quatro exercícios para os músculos intrínsecos do pé e mediu a ativação de cada músculo. Abrir os dedos produziu a maior ativação nestes músculos:',
+        {
+          list: [
+            'Abdutor do dedo mínimo (35,2%).',
+            'Adutor do hálux oblíquo (31,5%).',
+            'Flexor do dedo mínimo (30,2%).',
+          ],
+        },
+        'A ativação do abdutor do hálux ao abrir os dedos (18,9%) foi menor que no exercício do pé curto (29,7%).',
         'Isso quer dizer que abrir os dedos e o [exercício do pé curto](/pt/exercicios/pe-curto/) se complementam. O pé curto trabalha os músculos que ficam ao longo do arco. Abrir os dedos trabalha os músculos das bordas. Juntos, eles cobrem uma parte maior do grupo de músculos intrínsecos do pé.',
       ],
       cites: [CITE.gooding],
@@ -69,8 +78,13 @@ export const EX_TOE_SPREAD_PT: Guide = {
     {
       h2: 'Quem se beneficia do exercício de abrir os dedos?',
       paragraphs: [
-        'Quem tem pé chato se beneficia porque abrir os dedos ativa vários dos músculos pequenos que dividem com o abdutor do hálux o trabalho de sustentar o arco. Quem tem joanete (hálux valgo) pode se beneficiar porque o exercício treina músculos que afastam o dedão dos outros dedos, o contrário do desvio para dentro do joanete. Um outro estudo de eletromiografia em pessoas com joanete leve encontrou mais atividade do abdutor do hálux ao abrir os dedos do que no pé curto, embora esse estudo ainda não faça parte da lista de referências deste site.',
-        'Corredores e pessoas que passam muitas horas em pé podem usar o exercício de abrir os dedos como parte de uma rotina de fortalecimento do pé. Dedos que conseguem se abrir dividem a carga de forma mais igual pela parte da frente do pé no impulso. Se os seus dedos estão apertados por sapatos estreitos, o exercício ajuda a recuperar a amplitude de movimento.',
+        {
+          list: [
+            '**Pé chato.** Quem tem pé chato se beneficia porque abrir os dedos ativa vários dos músculos pequenos que dividem com o abdutor do hálux o trabalho de sustentar o arco.',
+            '**Joanete.** Quem tem joanete (hálux valgo) pode se beneficiar porque o exercício treina músculos que afastam o dedão dos outros dedos, o contrário do desvio para dentro do joanete. Um outro estudo de eletromiografia em pessoas com joanete leve encontrou mais atividade do abdutor do hálux ao abrir os dedos do que no pé curto, embora esse estudo ainda não faça parte da lista de referências deste site.',
+            '**Corredores e muitas horas em pé.** Corredores e pessoas que passam muitas horas em pé podem usar o exercício de abrir os dedos como parte de uma rotina de fortalecimento do pé. Dedos que conseguem se abrir dividem a carga de forma mais igual pela parte da frente do pé no impulso. Se os seus dedos estão apertados por sapatos estreitos, o exercício ajuda a recuperar a amplitude de movimento.',
+          ],
+        },
         'Para um programa mais amplo, veja [exercícios para pé chato](/pt/exercicios-pe-chato/) ou [dor na planta do pé](/pt/metatarsalgia-dor-na-planta-do-pe/).',
       ],
       cites: [CITE.gooding],
@@ -78,10 +92,14 @@ export const EX_TOE_SPREAD_PT: Guide = {
     {
       h2: 'Quais são os erros comuns ao abrir os dedos?',
       paragraphs: [
-        'Levantar os dedos do chão em vez de abri-los para os lados é o erro mais comum. O objetivo é abrir na horizontal, não levantar na vertical. Mantenha os dedos encostando de leve no chão.',
-        'Outro erro é dobrar os dedos enquanto tenta abri-los. Isso acontece quando o cérebro ainda não consegue separar o movimento de abrir do movimento de dobrar. Melhora com a prática. Tente abrir os dedos olhando para eles, para ver o que realmente está acontecendo.',
-        'Algumas pessoas percebem que no começo só o dedão e o dedo mínimo se mexem, enquanto os três do meio ficam grudados. É normal. Os dedos do meio têm menos controle muscular independente. Ao longo de algumas semanas de prática, a abertura fica maior.',
-        'Não force a abertura até dar cãibra. Se o pé tiver cãibra, pare, massageie a região um pouco e tente de novo com menos repetições.',
+        {
+          list: [
+            '**Levantar os dedos.** Levantar os dedos do chão em vez de abri-los para os lados é o erro mais comum. O objetivo é abrir na horizontal, não levantar na vertical. Mantenha os dedos encostando de leve no chão.',
+            '**Dobrar os dedos.** Outro erro é dobrar os dedos enquanto tenta abri-los. Isso acontece quando o cérebro ainda não consegue separar o movimento de abrir do movimento de dobrar. Melhora com a prática. Tente abrir os dedos olhando para eles, para ver o que realmente está acontecendo.',
+            '**Dedos do meio grudados.** Algumas pessoas percebem que no começo só o dedão e o dedo mínimo se mexem, enquanto os três do meio ficam grudados. É normal. Os dedos do meio têm menos controle muscular independente. Ao longo de algumas semanas de prática, a abertura fica maior.',
+            '**Forçar demais.** Não force a abertura até dar cãibra. Se o pé tiver cãibra, pare, massageie a região um pouco e tente de novo com menos repetições.',
+          ],
+        },
       ],
     },
     {
@@ -89,7 +107,7 @@ export const EX_TOE_SPREAD_PT: Guide = {
       paragraphs: [
         'O exercício de abrir os dedos foi estudado principalmente com ressonância magnética e eletromiografia, que medem a ativação muscular durante o exercício. Um estudo de ressonância magnética de 2016 de Gooding e colegas confirmou que ele ativa os quatro músculos intrínsecos plantares testados. O nível de ativação foi comparável ao do pé curto na maioria dos músculos e maior no abdutor do dedo mínimo.',
         'O que a pesquisa ainda não fez foi testar abrir os dedos como tratamento isolado em um ensaio randomizado que medisse desfechos do paciente, como dor ou altura do arco, ao longo de semanas ou meses. O exercício aparece como parte de programas combinados em ensaios de pé chato, mas a contribuição de abrir os dedos não pode ser separada dos outros exercícios nesses estudos.',
-        'A evidência apoia o exercício como útil para ativar os músculos intrínsecos do pé. Se ele muda a estrutura do pé sozinho ainda não se sabe. Páginas de exercícios relacionados: [exercício do pé curto](/pt/exercicios/pe-curto/), [elevação do dedão](/pt/exercicios/elevacao-do-dedao/), [puxar a toalha com os dedos](/pt/exercicios/puxar-toalha-dedos/).',
+        '**A evidência apoia o exercício como útil para ativar os músculos intrínsecos do pé.** Se ele muda a estrutura do pé sozinho ainda não se sabe. Páginas de exercícios relacionados: [exercício do pé curto](/pt/exercicios/pe-curto/), [elevação do dedão](/pt/exercicios/elevacao-do-dedao/), [puxar a toalha com os dedos](/pt/exercicios/puxar-toalha-dedos/).',
       ],
       cites: [CITE.gooding, CITE.brijwasi],
     },

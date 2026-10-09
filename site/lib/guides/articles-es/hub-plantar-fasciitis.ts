@@ -44,7 +44,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     {
       h2: '¿Cómo se siente la fascitis plantar?',
       paragraphs: [
-        'El síntoma típico es dolor bajo el talón en los primeros pasos de la mañana. La guía lo describe como un dolor «más notorio al apoyar el peso a primera hora de la mañana o después de un rato de reposo». Suele calmarse cuando caminas unos minutos, y vuelve cuando te sientas un rato y te vuelves a parar.',
+        '**El síntoma típico es dolor bajo el talón en los primeros pasos de la mañana.** La guía lo describe como un dolor «más notorio al apoyar el peso a primera hora de la mañana o después de un rato de reposo». Suele calmarse cuando caminas unos minutos, y vuelve cuando te sientas un rato y te vuelves a parar.',
         'El dolor suele estar en la parte interna y delantera del talón, donde la fascia se une al hueso. Puede extenderse por el arco. Suele ser peor después de descansar, no durante la actividad, que es lo contrario de lo que la mayoría espera.',
         'El dolor se nota más claro a la mañana siguiente. Si la mañana siguiente es peor, el día anterior le pidió demasiado al pie. Por eso anotar el dolor de la mañana es la forma más útil de saber si vas mejorando. En [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) está el patrón de la mañana con detalle.',
       ],
@@ -56,16 +56,46 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
       paragraphs: [
         'La fascitis plantar aparece cuando la fascia recibe más carga de la que puede aguantar y recuperar. La carga puede ser mucha de golpe (subir de repente los kilómetros que corres) o constante en el tiempo (estar de pie en un piso duro todo el día).',
         'Un estudio de casos y controles pareados, con 50\u00A0personas con fascitis plantar y 100\u00A0controles, encontró que una dorsiflexión de tobillo reducida era el factor de riesgo independiente más fuerte, con una razón de probabilidades de 23,3. En otra serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenía una contractura solo en el gastrocnemio, el músculo más grande y superficial de la pantorrilla. Estar mucho tiempo de pie en el trabajo se asoció con una razón de probabilidades de 3,6. Un índice de masa corporal más alto también se asoció con más riesgo.',
-        'La guía menciona otros factores de riesgo: tener entre 40 y 60\u00A0años, correr o hacer actividades con saltos, y trabajos en los que pasas mucho tiempo de pie. El pie plano o el arco alto pueden cambiar cómo viaja la carga por la fascia, pero ninguno de los dos garantiza que aparezca.',
-        'La fascitis plantar suele venir de una combinación: una pantorrilla tensa, una carga para la que el pie no estaba listo y poco tiempo de recuperación.',
+        'La guía menciona otros factores de riesgo:',
+        {
+          list: [
+            'Tener entre 40 y 60\u00A0años.',
+            'Correr o hacer actividades con saltos.',
+            'Trabajos en los que pasas mucho tiempo de pie.',
+          ],
+        },
+        'El pie plano o el arco alto pueden cambiar cómo viaja la carga por la fascia, pero ninguno de los dos garantiza que aparezca.',
+        '**La fascitis plantar suele venir de una combinación**:',
+        {
+          list: [
+            'Una pantorrilla tensa.',
+            'Una carga para la que el pie no estaba listo.',
+            'Poco tiempo de recuperación.',
+          ],
+        },
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius, CITE.guideline],
     },
     {
       h2: '¿Cómo se diagnostica la fascitis plantar?',
       paragraphs: [
-        'La fascitis plantar la suele diagnosticar un profesional de la salud a partir de tu historia y una exploración física. Lo más importante es el dolor al presionar la parte interna y delantera del talón, el dolor en los primeros pasos de la mañana, y un dolor que se calma con la actividad y vuelve después de descansar.',
-        'En un caso típico no hacen falta estudios de imagen. La guía recomienda pensar en ellos si el patrón no encaja, si los síntomas no mejoran después de varias semanas de cuidados conservadores, o si hay que descartar otro diagnóstico (por ejemplo, una fractura por estrés o un nervio atrapado). El ultrasonido y la resonancia magnética pueden mostrar una fascia engrosada, pero una fascia engrosada en un estudio, sin el patrón de síntomas que la acompaña, no es fascitis plantar.',
+        'La fascitis plantar la suele diagnosticar un profesional de la salud a partir de tu historia y una exploración física. Lo más importante es:',
+        {
+          list: [
+            'El dolor al presionar la parte interna y delantera del talón.',
+            'El dolor en los primeros pasos de la mañana.',
+            'Un dolor que se calma con la actividad y vuelve después de descansar.',
+          ],
+        },
+        '**En un caso típico no hacen falta estudios de imagen.** La guía recomienda pensar en ellos:',
+        {
+          list: [
+            'Si el patrón no encaja.',
+            'Si los síntomas no mejoran después de varias semanas de cuidados conservadores.',
+            'Si hay que descartar otro diagnóstico (por ejemplo, una fractura por estrés o un nervio atrapado).',
+          ],
+        },
+        'El ultrasonido y la resonancia magnética pueden mostrar una fascia engrosada, pero una fascia engrosada en un estudio, sin el patrón de síntomas que la acompaña, no es fascitis plantar.',
         'Walkito no diagnostica. Si no sabes si tu dolor de talón es fascitis plantar, lo mejor es empezar con un profesional de la salud.',
       ],
       cites: [CITE.guideline],
@@ -75,7 +105,8 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
       keyFact: 'En un ensayo con 48\u00A0personas, las elevaciones de talón con carga y una toalla aliviaron el dolor más rápido que solo estirar a los tres meses, aunque a los doce meses los dos grupos estaban igualados (Rathleff y colegas, 2015).',
       paragraphs: [
         'La guía clínica de 2023 califica cada opción según la fuerza de la evidencia que la respalda. Las recomendaciones más fuertes son el estiramiento, el vendaje, la terapia manual hecha por un profesional y las férulas nocturnas para el dolor de la mañana que no se va. Después viene el entrenamiento de fuerza. La tabla de abajo muestra las opciones principales con su grado en la guía.',
-        'Ninguna opción le funciona a todo el mundo. La mayoría empieza con estiramientos y zapatos con buen soporte, añade trabajo de fuerza cuando el dolor inicial baja, y habla con un profesional de la salud sobre las demás opciones si el avance se frena. En un ensayo con 48\u00A0personas, las elevaciones de talón con carga y una toalla bajo los dedos aliviaron el dolor más rápido que solo estirar a los tres meses, aunque a los doce meses los dos grupos estaban igualados. La guía recomienda no usar plantillas ortopédicas solas como única opción a corto plazo, y no añadir ultrasonido terapéutico al estiramiento.',
+        '**Ninguna opción le funciona a todo el mundo.** La mayoría empieza con estiramientos y zapatos con buen soporte, añade trabajo de fuerza cuando el dolor inicial baja, y habla con un profesional de la salud sobre las demás opciones si el avance se frena.',
+        'En un ensayo con 48\u00A0personas, las elevaciones de talón con carga y una toalla bajo los dedos aliviaron el dolor más rápido que solo estirar a los tres meses, aunque a los doce meses los dos grupos estaban igualados. La guía recomienda no usar plantillas ortopédicas solas como única opción a corto plazo, y no añadir ultrasonido terapéutico al estiramiento.',
       ],
       table: {
         caption: 'Grados de la guía de 2023 para el dolor de talón bajo el pie',
@@ -103,7 +134,7 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
       paragraphs: [
         'Una revisión de 2020 indica que cerca del 90\u00A0% de las personas mejora con cuidados sin cirugía, a menudo en varios meses. Un seguimiento más largo de 174\u00A0pacientes da una imagen más detallada: cerca de la mitad ya no tenía síntomas a los cinco años, y el 46\u00A0% todavía tenía algo de dolor a los diez años en promedio, aunque la mayoría de ellos solo tenía síntomas leves.',
         'La recuperación depende de cuánto tiempo llevas con ella, de lo que haces al respecto y de algunos factores que no puedes controlar. La cohorte de Hansen de 2018 encontró que ser mujer y tener dolor en los dos talones predecían de forma significativa una recuperación más lenta. El IMC, la edad, el grosor de la fascia y tener un espolón calcáneo no.',
-        'La pregunta útil no es «cuántas semanas faltan para que se acabe», sino «¿mi dolor de la mañana está más bajo este mes que el mes pasado?». Esa tendencia es la verdadera señal de avance. En [¿cuánto dura la fascitis plantar?](/es/cuanto-dura-la-fascitis-plantar/) está toda la evidencia sobre los tiempos.',
+        'La pregunta útil no es «cuántas semanas faltan para que se acabe», sino «¿mi dolor de la mañana está más bajo este mes que el mes pasado?». **Esa tendencia es la verdadera señal de avance.** En [¿cuánto dura la fascitis plantar?](/es/cuanto-dura-la-fascitis-plantar/) está toda la evidencia sobre los tiempos.',
       ],
       cites: [CITE.latt, CITE.hansen],
     },
@@ -147,12 +178,16 @@ export const HUB_PLANTAR_FASCIITIS_ES: Guide = {
     {
       h2: '¿El dolor podría ser otra cosa y no fascitis plantar?',
       paragraphs: [
-        'Varias afecciones duelen en el mismo lugar o siguen el mismo patrón de la mañana. Dónde está el dolor y cómo se comporta ayudan a distinguirlas.',
+        'Varias afecciones duelen en el mismo lugar o siguen el mismo patrón de la mañana. Dónde está el dolor y cómo se comporta ayudan a distinguirlas:',
+        {
+          list: [
         '**Tendinitis de Aquiles.** Dolor en la parte de atrás del talón o en el tendón que está arriba, no bajo el pie. La rigidez en los primeros pasos es común, pero el dolor está más arriba. Mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
         '**Síndrome de la almohadilla grasa del talón.** Un dolor profundo en el centro del talón, peor sobre superficies duras y descalzo. Una revisión exploratoria de 2022 señaló que puede ser difícil de distinguir de la fascitis plantar sin estudios de imagen. El dolor de la almohadilla grasa está justo en el centro, y el de la fascitis en la parte interna y delantera.',
         '**Espolón calcáneo.** Un crecimiento de hueso en la parte de abajo del hueso del talón. Mucha gente tiene uno sin ningún dolor. En la cohorte de Hansen de 2018, con 174\u00A0pacientes, tener un espolón al inicio no cambió de forma significativa cuánto duraron los síntomas. El espolón suele estar ahí, pero no es lo que causa el dolor.',
         '**Fractura por estrés del calcáneo.** Un dolor que aumenta con la actividad en lugar de calmarse cuando entras en calor. Puede doler en reposo o de noche. Apretar los lados del talón suele provocar el dolor. Consulta a un profesional de la salud antes de ejercitar el pie.',
         '**Artritis inflamatoria.** Cuando duelen los dos talones, la rigidez de la mañana dura más de 30\u00A0minutos y otras articulaciones están rígidas o hinchadas, el patrón apunta a algo que afecta a todo el cuerpo. Debe revisarlo un profesional de la salud.',
+          ],
+        },
         'Si no estás seguro, un profesional de la salud puede distinguirlas por la ubicación, el comportamiento del dolor y, si hace falta, estudios de imagen.',
       ],
       cites: [CITE.achillesGuideline, CITE.fatPadReview, CITE.hansen],

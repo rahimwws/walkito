@@ -35,8 +35,9 @@ export const CALF_RAISES_ES: Guide = {
       keyFact: 'En un ensayo con 48\u00A0personas, el grupo de elevaciones de talón quedó 29\u00A0puntos mejor en el Foot Function Index a los tres meses, aunque los dos grupos se igualaron a los doce meses (Rathleff y colegas, 2015).',
       paragraphs: [
         'Las elevaciones de talón ayudan con la fascitis plantar porque fortalecen la cadena pantorrilla, tendón de Aquiles y fascia, que absorbe la carga cada vez que el talón toca el piso.',
-        'El único ensayo aleatorizado que probó este ejercicio directamente en la fascitis plantar es Rathleff 2015. En ese ensayo, 48\u00A0personas con fascitis plantar confirmada por ecografía se dividieron en dos grupos. Los dos usaron plantillas. Un grupo hizo una elevación de talón lenta y con carga, con una toalla enrollada bajo los dedos. El otro estiró la fascia plantar. A los tres meses, el grupo de elevaciones de talón tenía 29\u00A0puntos mejor en el Foot Function Index. A los doce meses, los dos grupos estaban igualados.',
-        'O sea, las elevaciones de talón adelantaron la mejora. No dieron una mejora más grande a largo plazo. La guía clínica de 2023 le da al entrenamiento de fuerza una B y al estiramiento una A. Recomienda los dos. Nada en la evidencia sugiere que debas elegir uno y saltarte el otro.',
+        'El único ensayo aleatorizado que probó este ejercicio directamente en la fascitis plantar es Rathleff 2015. En ese ensayo, 48\u00A0personas con fascitis plantar confirmada por ecografía se dividieron en dos grupos. Los dos usaron plantillas. Un grupo hizo una elevación de talón lenta y con carga, con una toalla enrollada bajo los dedos. El otro estiró la fascia plantar.',
+        'A los tres meses, el grupo de elevaciones de talón tenía 29\u00A0puntos mejor en el Foot Function Index. A los doce meses, los dos grupos estaban igualados.',
+        '**O sea, las elevaciones de talón adelantaron la mejora.** No dieron una mejora más grande a largo plazo. La guía clínica de 2023 le da al entrenamiento de fuerza una B y al estiramiento una A. Recomienda los dos. Nada en la evidencia sugiere que debas elegir uno y saltarte el otro.',
       ],
       sourceNote:
         'Rathleff 2015: Foot Function Index 29\u00A0puntos más bajo en el grupo de elevaciones de talón a los 3\u00A0meses (IC del 95\u00A0%: 6-52, p = 0,016). A los 12\u00A0meses, 22 frente a 16, sin diferencia significativa.',
@@ -45,8 +46,9 @@ export const CALF_RAISES_ES: Guide = {
     {
       h2: '¿Cómo se hace la elevación de talones con toalla para la fascitis plantar?',
       paragraphs: [
-        'La elevación de talones con toalla es el ejercicio del ensayo de Rathleff. Es una elevación de talón a una pierna sobre un escalón, con una toalla enrollada bajo los dedos. La toalla lleva los dedos hacia arriba al final de la subida, y eso activa el mecanismo de molinete (windlass): la forma en que la fascia plantar se tensa cuando el dedo gordo se dobla hacia atrás. Sin la toalla, entrenas la pantorrilla pero cargas mucho menos la fascia.',
-        'Párate en un pie en la orilla de un escalón, con una toalla de mano enrollada bajo los cinco dedos. La parte delantera del pie se queda sobre el escalón. Apóyate en una pared o un barandal para el equilibrio. Sube en tres segundos, mantén arriba dos y baja en tres segundos. Al bajar, deja que el talón quede un poco por debajo del escalón. En el ensayo, los participantes añadían peso con una mochila cuando su propio peso ya se volvía demasiado fácil.',
+        'La elevación de talones con toalla es el ejercicio del ensayo de Rathleff. Es una elevación de talón a una pierna sobre un escalón, con una toalla enrollada bajo los dedos. La toalla lleva los dedos hacia arriba al final de la subida, y eso activa el mecanismo de molinete (windlass): la forma en que la fascia plantar se tensa cuando el dedo gordo se dobla hacia atrás. **Sin la toalla, entrenas la pantorrilla pero cargas mucho menos la fascia.**',
+        'Párate en un pie en la orilla de un escalón, con una toalla de mano enrollada bajo los cinco dedos. La parte delantera del pie se queda sobre el escalón. Apóyate en una pared o un barandal para el equilibrio.',
+        'Sube en tres segundos, mantén arriba dos y baja en tres segundos. Al bajar, deja que el talón quede un poco por debajo del escalón. En el ensayo, los participantes añadían peso con una mochila cuando su propio peso ya se volvía demasiado fácil.',
         'Empieza con los dos pies si ahora mismo las elevaciones a una pierna son demasiado difíciles. Las elevaciones con los dos pies en el piso, sin escalón, son donde empieza la cadena de la pantorrilla. La toalla y el escalón llegan después, cuando las elevaciones de pie se sienten fáciles dos sesiones seguidas.',
       ],
       exercises: [
@@ -144,8 +146,20 @@ export const CALF_RAISES_ES: Guide = {
     {
       h2: '¿Con qué empieza Walkito?',
       paragraphs: [
-        'Walkito no te mete en el protocolo de Rathleff el primer día. La app empieza con elevaciones de talón sentado (3\u00A0series de 10, los dos pies), después pasa a elevaciones de pie con los dos pies, después a una elevación de talón sostenida, y solo entonces a la elevación a una pierna con toalla. Cada paso se abre cuando dos sesiones en el nivel actual se sintieron fáciles. Esa escalera es el ritmo propio de la app, no un protocolo publicado, y existe porque la mayoría de las personas que empiezan un plan de ejercicios para el dolor de talón no están listas para una elevación a una pierna con peso en la primera sesión.',
-        'La cadena de pantorrilla en la app va así: elevaciones de talón sentado, elevaciones de talón con dos pies, elevación de talón sostenida, elevación de talones con toalla, descensos de talón (bajar despacio desde un escalón, en excéntrico) y saltos pogo. La elevación con toalla es el nivel 4 de 6. Llegar a la meta de pantorrilla de 25\u00A0elevaciones de talón a una pierna no termina el trabajo de pantorrilla. Pasa a mantenimiento, y una meta nueva ocupa su lugar.',
+        'Walkito no te mete en el protocolo de Rathleff el primer día. La app empieza con elevaciones de talón sentado (3\u00A0series de 10, los dos pies), después pasa a elevaciones de pie con los dos pies, después a una elevación de talón sostenida, y solo entonces a la elevación a una pierna con toalla. Cada paso se abre cuando dos sesiones en el nivel actual se sintieron fáciles.',
+        'Esa escalera es el ritmo propio de la app, no un protocolo publicado, y existe porque la mayoría de las personas que empiezan un plan de ejercicios para el dolor de talón no están listas para una elevación a una pierna con peso en la primera sesión.',
+        'La cadena de pantorrilla en la app va así:',
+        {
+          list: [
+            'Elevaciones de talón sentado.',
+            'Elevaciones de talón con dos pies.',
+            'Elevación de talón sostenida.',
+            'Elevación de talones con toalla.',
+            'Descensos de talón (bajar despacio desde un escalón, en excéntrico).',
+            'Saltos pogo.',
+          ],
+        },
+        'La elevación con toalla es el nivel 4 de 6. Llegar a la meta de pantorrilla de 25\u00A0elevaciones de talón a una pierna no termina el trabajo de pantorrilla. Pasa a mantenimiento, y una meta nueva ocupa su lugar.',
       ],
       cites: [CITE.rathleff],
     },
@@ -154,8 +168,9 @@ export const CALF_RAISES_ES: Guide = {
       figure: { id: 'calf', caption: 'Los dos músculos de la pantorrilla, el gastrocnemio y el sóleo, se unen en el tendón de Aquiles, que se inserta en el hueso del talón.', alt: 'Vistas lateral y posterior de una pierna con los músculos gastrocnemio y sóleo que se estrechan hasta el tendón de Aquiles por encima del talón.' },
       keyFact: 'En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0% tenía una contractura limitada al gastrocnemio, y otro 23 a 30\u00A0% tenía una contractura combinada de gastrocnemio y sóleo (Patel y colegas, 2011).',
       paragraphs: [
-        'Una pantorrilla tensa jala del talón a través del tendón de Aquiles, y la fascia plantar comparte la carga en el otro extremo. Cuando el tobillo no se dobla lo suficiente, cada paso pone más tensión en la fascia.',
-        'En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0por ciento tenía una contractura solo del gastrocnemio, el músculo superficial de la pantorrilla, y otro 23 a 30\u00A0por ciento tenía una contractura combinada de gastrocnemio y sóleo. Por otro lado, un estudio de casos y controles emparejados, con 50\u00A0casos y 100\u00A0controles, encontró que una dorsiflexión de tobillo reducida, cuánto se dobla el pie hacia arriba, hacia la tibia, era el factor de riesgo independiente más fuerte para la fascitis plantar.',
+        'Una pantorrilla tensa jala del talón a través del tendón de Aquiles, y la fascia plantar comparte la carga en el otro extremo. **Cuando el tobillo no se dobla lo suficiente, cada paso pone más tensión en la fascia.**',
+        'En una serie de 254\u00A0personas con fascitis plantar, entre el 52 y el 60\u00A0por ciento tenía una contractura solo del gastrocnemio, el músculo superficial de la pantorrilla, y otro 23 a 30\u00A0por ciento tenía una contractura combinada de gastrocnemio y sóleo.',
+        'Por otro lado, un estudio de casos y controles emparejados, con 50\u00A0casos y 100\u00A0controles, encontró que una dorsiflexión de tobillo reducida, cuánto se dobla el pie hacia arriba, hacia la tibia, era el factor de riesgo independiente más fuerte para la fascitis plantar.',
         'Por eso en la lista aparecen tanto el estiramiento como el fortalecimiento de la pantorrilla. Estirar le da más rango al tobillo. Fortalecer le da a la pantorrilla suficiente capacidad para que no se tense con la carga normal del día. La guía recomienda los dos. El mismo mecanismo de la pantorrilla tensa aparece en otros dolores de la pierna: mira [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/) y [dolor de pies por estar de pie todo el día](/es/dolor-de-pies-por-estar-de-pie/) si tu dolor se parece más a alguno de esos.',
       ],
       cites: [CITE.patelGastrocnemius, CITE.riddle, CITE.guideline],
@@ -163,8 +178,9 @@ export const CALF_RAISES_ES: Guide = {
     {
       h2: '¿En qué se diferencia la elevación de talón para la fascitis plantar de la de la tendinitis de Aquiles?',
       paragraphs: [
-        'El movimiento es casi el mismo, pero cambian la intención, la toalla y la regla del dolor. Para la fascitis plantar, la toalla bajo los dedos carga la fascia a través del mecanismo de molinete. El ritmo es 3\u00A0segundos arriba, 2\u00A0segundos sostenido y 3 abajo, un día sí y otro no. La regla del dolor en esta página es: detente si el dolor llega a 6/10 o más.',
-        'Para la tendinitis de Aquiles, el protocolo clásico es un descenso excéntrico de talón (solo la bajada, y la subida se hace con los dos pies), que originalmente se hacía dos veces al día, siete días a la semana, y con dolor de hasta unos 5/10 siempre que se calme para la mañana siguiente. No se usa la toalla, porque cargar la fascia no es el objetivo. Y para el dolor de Aquiles insercional, justo en la parte de atrás del hueso del talón, los descensos de talón deben quedarse a nivel del piso en lugar de bajar por debajo de la orilla del escalón, porque una dorsiflexión profunda aprieta el tendón contra el hueso.',
+        '**El movimiento es casi el mismo, pero cambian la intención, la toalla y la regla del dolor.** Para la fascitis plantar, la toalla bajo los dedos carga la fascia a través del mecanismo de molinete. El ritmo es 3\u00A0segundos arriba, 2\u00A0segundos sostenido y 3 abajo, un día sí y otro no. La regla del dolor en esta página es: detente si el dolor llega a 6/10 o más.',
+        'Para la tendinitis de Aquiles, el protocolo clásico es un descenso excéntrico de talón (solo la bajada, y la subida se hace con los dos pies), que originalmente se hacía dos veces al día, siete días a la semana, y con dolor de hasta unos 5/10 siempre que se calme para la mañana siguiente.',
+        'No se usa la toalla, porque cargar la fascia no es el objetivo. Y para el dolor de Aquiles insercional, justo en la parte de atrás del hueso del talón, los descensos de talón deben quedarse a nivel del piso en lugar de bajar por debajo de la orilla del escalón, porque una dorsiflexión profunda aprieta el tendón contra el hueso.',
         'Los dos ejercicios son parientes cercanos. Si tu dolor está en la parte de atrás del talón o en el tendón por encima, y no bajo el pie, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
       ],
       cites: [CITE.rathleff, CITE.alfredson],
@@ -173,7 +189,7 @@ export const CALF_RAISES_ES: Guide = {
       h2: '¿Cuántas elevaciones de talón a una pierna deberías poder hacer?',
       keyFact: 'Un estudio normativo con 566\u00A0adultos sanos encontró un promedio de unas 23 a 24\u00A0repeticiones en la prueba de elevación de talón a una pierna (Hébert-Losier y colegas, 2017).',
       paragraphs: [
-        'Una referencia común en adultos para la prueba de resistencia de elevación de talón a una pierna está en unas 20 y pocas, en promedio unas 23-24\u00A0repeticiones, según datos normativos de 566\u00A0adultos sanos. Esa cifra cambia con la edad, el sexo, el IMC y el nivel de actividad, así que es un punto de referencia, no una línea de aprobado o reprobado. Para seguir tu avance con la fascitis plantar importa más si el número sube semana a semana y si los dos lados están más o menos parejos.',
+        'Una referencia común en adultos para la prueba de resistencia de elevación de talón a una pierna está en unas 20 y pocas, en promedio unas 23-24\u00A0repeticiones, según datos normativos de 566\u00A0adultos sanos. Esa cifra cambia con la edad, el sexo, el IMC y el nivel de actividad, así que es un punto de referencia, no una línea de aprobado o reprobado. Para seguir tu avance con la fascitis plantar importa más **si el número sube semana a semana y si los dos lados están más o menos parejos.**',
         'La meta de pantorrilla en la app es de 25\u00A0elevaciones de talón a una pierna. La prueba se repite cada 14\u00A0días mientras la meta de pantorrilla está activa, y después cada 28\u00A0días una vez que la alcanzas, así puedes ver la tendencia sin adivinar.',
       ],
       cites: [CITE.hebertLosier],

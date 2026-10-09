@@ -32,7 +32,7 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
       paragraphs: [
         'Mettiti in posizione di affondo, un piede avanti e uno indietro, con le mani su un muro o sullo stipite di una porta per l’equilibrio. Tenendo il tallone davanti appoggiato a terra, porta piano il ginocchio davanti in avanti oltre le dita. Lascia andare il ginocchio il più avanti possibile mentre il tallone resta giù. Poi torna indietro alla posizione di partenza. Questa è una ripetizione.',
         'Il movimento è lento e controllato. Non devi molleggiare. Ogni oscillazione dura circa due secondi in avanti e due secondi indietro. La gamba dietro serve solo per l’equilibrio. Tutto il lavoro della caviglia avviene nella gamba davanti.',
-        'Tieni il piede davanti puntato dritto in avanti. Se il piede ruota verso l’esterno, la caviglia trova una scorciatoia e perdi proprio il movimento che vuoi allenare.',
+        '**Tieni il piede davanti puntato dritto in avanti.** Se il piede ruota verso l’esterno, la caviglia trova una scorciatoia e perdi proprio il movimento che vuoi allenare.',
       ],
       exercises: [
         {
@@ -57,8 +57,15 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
       h2: 'Perché la mobilità della caviglia conta per il dolore al tallone?',
       keyFact: 'In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia limitata era un fattore di rischio più forte dell’IMC o del tempo passato in piedi, e rendeva la probabilità 23,3\u00A0volte più alta (Riddle e colleghi, 2003).',
       paragraphs: [
-        'La dorsiflessione della caviglia è quanto il piede riesce a piegarsi verso l’alto, verso lo stinco, mentre il tallone resta a terra. Ogni passo che fai richiede un po’ di dorsiflessione. Quando la caviglia non si piega abbastanza, il corpo compensa. Il piede può ruotare verso l’interno, il polpaccio prende più tensione e la fascia plantare assorbe forze per cui non è fatta.',
-        'Nello studio caso-controllo di Riddle del 2003, la dorsiflessione della caviglia ridotta era la variabile con l’effetto indipendente più grande, con una probabilità di sviluppare la fascite plantare 23,3\u00A0volte più alta. Era più forte dell’IMC, del tempo passato in piedi o della distanza di corsa. In un’analisi separata, un polpaccio rigido, in particolare il gastrocnemio, era presente nel 52-60% di 254\u00A0persone con fascite plantare.',
+        'La dorsiflessione della caviglia è quanto il piede riesce a piegarsi verso l’alto, verso lo stinco, mentre il tallone resta a terra. Ogni passo che fai richiede un po’ di dorsiflessione. Quando la caviglia non si piega abbastanza, il corpo compensa:',
+        {
+          list: [
+            'Il piede può ruotare verso l’interno.',
+            'Il polpaccio prende più tensione.',
+            'La fascia plantare assorbe forze per cui non è fatta.',
+          ],
+        },
+        'Nello studio caso-controllo di Riddle del 2003, **la dorsiflessione della caviglia ridotta era la variabile con l’effetto indipendente più grande**, con una probabilità di sviluppare la fascite plantare 23,3\u00A0volte più alta. Era più forte dell’IMC, del tempo passato in piedi o della distanza di corsa. In un’analisi separata, un polpaccio rigido, in particolare il gastrocnemio, era presente nel 52-60% di 254\u00A0persone con fascite plantare.',
         'Allungare il polpaccio in modo passivo (come nell’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) e nell’[allungamento del soleo](/it/esercizi/allungamento-soleo/)) affronta un lato del problema: la lunghezza del muscolo. Le oscillazioni della caviglia affrontano l’altro lato: il controllo attivo a fine movimento. Portare il ginocchio oltre le dita con il peso del corpo insegna alla caviglia a usare il movimento che ha, non solo a raggiungerlo in modo passivo.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
@@ -68,14 +75,15 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
       paragraphs: [
         'L’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) è una tenuta passiva. Ti appoggi al muro e aspetti che il muscolo si allunghi. La gamba dietro è tesa, così lavori sul gastrocnemio. L’[allungamento del soleo](/it/esercizi/allungamento-soleo/) fa lo stesso con il ginocchio piegato.',
         'Le oscillazioni della caviglia sono un movimento attivo e ripetuto. Spingi il ginocchio in avanti, torni indietro, spingi di nuovo. Carichi la caviglia lungo tutto il movimento invece di stare fermo a fine corsa. Le oscillazioni allenano la capacità di usare la dorsiflessione sotto carico, che è proprio ciò che richiedono camminata e corsa.',
-        'Sono utili tutti e due. L’allungamento apre il movimento. Le oscillazioni ti allenano a usarlo. La linea guida dà all’allungamento del polpaccio una A. Le oscillazioni della caviglia fanno parte del lavoro di mobilità che Walkito mette insieme a quegli allungamenti.',
+        'Sono utili tutti e due. **L’allungamento apre il movimento. Le oscillazioni ti allenano a usarlo.** La linea guida dà all’allungamento del polpaccio una A. Le oscillazioni della caviglia fanno parte del lavoro di mobilità che Walkito mette insieme a quegli allungamenti.',
       ],
       cites: [CITE.guideline],
     },
     {
       h2: 'Il test ginocchio-muro e il legame con l’esercizio',
       paragraphs: [
-        'Il test ginocchio-muro, chiamato anche weight-bearing lunge test, è un modo semplice per misurare la dorsiflessione della caviglia. Ti metti di fronte a un muro, con un piede qualche centimetro indietro, e porti il ginocchio in avanti in affondo finché tocca il muro. Se il tallone si alza prima che il ginocchio arrivi al muro, avvicina il piede. Il tuo punteggio è la distanza tra l’alluce e il muro nel punto in cui il ginocchio tocca appena, con il tallone ancora appoggiato.',
+        'Il test ginocchio-muro, chiamato anche weight-bearing lunge test, è un modo semplice per misurare la dorsiflessione della caviglia.',
+        'Ti metti di fronte a un muro, con un piede qualche centimetro indietro, e porti il ginocchio in avanti in affondo finché tocca il muro. Se il tallone si alza prima che il ginocchio arrivi al muro, avvicina il piede. Il tuo punteggio è la distanza tra l’alluce e il muro nel punto in cui il ginocchio tocca appena, con il tallone ancora appoggiato.',
         'Walkito include nell’app un esercizio ginocchio-muro (2\u00A0tenute da 30\u00A0secondi, ogni gamba). Seguire questa distanza nel corso delle settimane ti dice se il movimento della caviglia sta davvero migliorando. Un aumento di un centimetro o due in qualche settimana è significativo.',
         'Le oscillazioni della caviglia e l’esercizio ginocchio-muro lavorano sullo stesso movimento da angoli diversi. Le oscillazioni sono ripetizioni lungo il movimento. La tenuta ginocchio-muro è un carico prolungato a fine movimento. Aiutano entrambi. Walkito li mette nei giorni di mobilità.',
       ],
@@ -83,10 +91,14 @@ export const EX_ANKLE_ROCKS_IT: Guide = {
     {
       h2: 'Quali sono gli errori più comuni nelle oscillazioni della caviglia?',
       paragraphs: [
-        'Lasciare che il tallone si alzi. Il tallone deve restare appoggiato in ogni ripetizione. Se si alza, hai superato la fine del tuo movimento e l’esercizio perde senso. Oscilla solo fin dove il tallone te lo permette.',
-        'Ruotare il piede verso l’esterno. Il piede deve puntare dritto in avanti. La rotazione esterna permette alla caviglia di aggirare il punto rigido. Tieni il secondo dito puntato verso il muro.',
-        'Andare troppo veloce. Molleggiare o fare le ripetizioni di fretta non allena un movimento controllato. Due secondi in avanti, due secondi indietro. Lascia che la caviglia senta la fine del suo movimento a ogni ripetizione.',
-        'Fare a meno della gamba dietro. Alcune persone provano a fare le oscillazioni su entrambe le gambe insieme, semplicemente accovacciandosi. Così il carico si divide e il movimento che la caviglia davanti deve fare si riduce. Usa la posizione di affondo così lavora una caviglia alla volta.',
+        {
+          list: [
+            '**Lasciare che il tallone si alzi.** Il tallone deve restare appoggiato in ogni ripetizione. Se si alza, hai superato la fine del tuo movimento e l’esercizio perde senso. Oscilla solo fin dove il tallone te lo permette.',
+            '**Ruotare il piede verso l’esterno.** Il piede deve puntare dritto in avanti. La rotazione esterna permette alla caviglia di aggirare il punto rigido. Tieni il secondo dito puntato verso il muro.',
+            '**Andare troppo veloce.** Molleggiare o fare le ripetizioni di fretta non allena un movimento controllato. Due secondi in avanti, due secondi indietro. Lascia che la caviglia senta la fine del suo movimento a ogni ripetizione.',
+            '**Fare a meno della gamba dietro.** Alcune persone provano a fare le oscillazioni su entrambe le gambe insieme, semplicemente accovacciandosi. Così il carico si divide e il movimento che la caviglia davanti deve fare si riduce. Usa la posizione di affondo così lavora una caviglia alla volta.',
+          ],
+        },
       ],
     },
     {

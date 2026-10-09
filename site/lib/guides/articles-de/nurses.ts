@@ -21,7 +21,8 @@ export const NURSES_DE: Guide = {
   lede:
     'Pflegekräfte gehen in einer einzigen Schicht mehr als die meisten Menschen an einem ganzen Tag, und das auf harten Böden in Schuhen, die vielleicht nicht gut passen. Probleme an Fuß und Sprunggelenk gehören zu den häufigsten Beschwerden am Bewegungsapparat in der Pflege: In einer Umfrage berichtete mehr als die Hälfte der Pflegekräfte im Krankenhaus über einen Zeitraum von 12\u00A0Monaten davon. Das meiste, was hilft, Wadendehnungen, Übungen fürs Gewölbe und Kompressionsstrümpfe, geht in ein paar Minuten vor oder nach einer Schicht.',
   intro: [
-    'Diese Seite behandelt Fußschmerzen, die aus den Anforderungen der Pflegearbeit kommen: langes Stehen, weite Wege und wechselnde Schichten. Wenn dein Schmerz stechend ist und bei den ersten Schritten nach einer Pause am schlimmsten, deutet dieses Muster auf eine Plantarfasziitis hin, und die Übungen unter [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) sind der ausführlichere Ratgeber. Wenn du nicht sicher bist, zeigt [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/), wo sich allgemeine Schmerzen vom Stehen und bestimmte Erkrankungen überschneiden.',
+    'Diese Seite behandelt Fußschmerzen, die aus den Anforderungen der Pflegearbeit kommen: langes Stehen, weite Wege und wechselnde Schichten. Wenn dein Schmerz stechend ist und bei den ersten Schritten nach einer Pause am schlimmsten, deutet dieses Muster auf eine Plantarfasziitis hin, und die Übungen unter [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) sind der ausführlichere Ratgeber.',
+    'Wenn du nicht sicher bist, zeigt [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/), wo sich allgemeine Schmerzen vom Stehen und bestimmte Erkrankungen überschneiden.',
   ],
   toc: true,
   takeaways: [
@@ -35,7 +36,8 @@ export const NURSES_DE: Guide = {
     {
       h2: 'Wie häufig sind Fußschmerzen in der Pflege?',
       paragraphs: [
-        'Schmerzen an Fuß und Sprunggelenk gehören bei Pflegekräften zu den drei häufigsten Beschwerden am Bewegungsapparat, neben Kreuz- und Nackenschmerzen. In einer Umfrage unter 312\u00A0Pflegekräften in Kinderkliniken berichteten 55,3\u00A0% über Probleme an Fuß oder Sprunggelenk in den letzten 12\u00A0Monaten, und 43,8\u00A0% hatten allein in den letzten sieben Tagen Beschwerden. Eine von sechs Pflegekräften sagte, der Schmerz schränke ihre körperliche Aktivität ein. 12-Stunden-Schichten auf der Intensivstation waren der einzige Faktor der Arbeit, der die Chance auf einschränkende Fußprobleme unabhängig erhöhte.',
+        '**Schmerzen an Fuß und Sprunggelenk gehören bei Pflegekräften zu den drei häufigsten Beschwerden am Bewegungsapparat**, neben Kreuz- und Nackenschmerzen. In einer Umfrage unter 312\u00A0Pflegekräften in Kinderkliniken berichteten 55,3\u00A0% über Probleme an Fuß oder Sprunggelenk in den letzten 12\u00A0Monaten, und 43,8\u00A0% hatten allein in den letzten sieben Tagen Beschwerden.',
+        'Eine von sechs Pflegekräften sagte, der Schmerz schränke ihre körperliche Aktivität ein. 12-Stunden-Schichten auf der Intensivstation waren der einzige Faktor der Arbeit, der die Chance auf einschränkende Fußprobleme unabhängig erhöhte.',
         'Eine andere Studie mit 636\u00A0Pflegekräften im Krankenhaus in Japan fand, dass 51\u00A0% im letzten Monat über Fußschmerzen oder Einschränkungen berichteten, erfasst mit einem validierten Fragebogen. Der Anteil mit Schmerzen, die normales Arbeiten verhinderten, lag bei 17\u00A0%. Eine Studie mit Schrittzählern bei koreanischen Pflegekräften fand im Schnitt 5,8\u00A0km Gehstrecke pro Schicht, eine körperliche Belastung deutlich über der Allgemeinbevölkerung.',
         'Eine Querschnittstudie mit 411\u00A0finnischen Pflegekräften fand trockene Haut, Fußschmerzen und Hornhaut als häufigste Fußbeschwerden, und Fußprobleme waren mit einer geringeren Arbeitsfähigkeit verbunden. Die Autoren forderten, der Vorbeugung von Fußproblemen in der Pflege Vorrang zu geben.',
       ],
@@ -46,7 +48,7 @@ export const NURSES_DE: Guide = {
       paragraphs: [
         'In einer Pflegeschicht kommen drei Dinge zusammen: langes Stehen, weite Wege und harte Böden. Ruhiges Stehen belastet Plantarfaszie, Wadenmuskeln und Fersenpolster ohne die Pumpwirkung, die das Gehen bringt. Gehen hilft dem Blut, aus den Beinen zurückzufließen, aber Pflegekräfte wechseln unvorhersehbar zwischen ruhigem Stehen am Bett und Gehen auf langen Fluren, sodass die Wadenpumpe nie in einen gleichmäßigen Rhythmus kommt.',
         'Eine Übersichtsarbeit von 2015 zur arbeitsmedizinischen Forschung fand langes Stehen bei der Arbeit in vielen Berufen verbunden mit Beschwerden am Bewegungsapparat, Ermüdung und Beinschmerzen, und nannte Pflegekräfte als eine der Gruppen mit dem höchsten Risiko. Die Übersicht hielt fest, dass Belastung für Herz und Kreislauf und geschwollene Beine mit der Stehdauer zunehmen.',
-        'Auf der Ebene der Gewebe ist eine verkürzte Wade ein zentrales Stück. Eine Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0passenden Kontrollen fand, dass eine eingeschränkte Beweglichkeit im Sprunggelenk, also dass sich das Sprunggelenk wegen einer verkürzten Wade nicht so weit nach oben beugen lässt, wie es sollte, der stärkste einzelne unabhängige Risikofaktor für Plantarfasziitis war, mit einer 23,3-fachen Chance. Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache. Pflegekräfte haben beide Risikofaktoren gleichzeitig.',
+        'Auf der Ebene der Gewebe ist eine verkürzte Wade ein zentrales Stück. Eine Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0passenden Kontrollen fand, dass eine eingeschränkte Beweglichkeit im Sprunggelenk, also dass sich das Sprunggelenk wegen einer verkürzten Wade nicht so weit nach oben beugen lässt, wie es sollte, der stärkste einzelne unabhängige Risikofaktor für Plantarfasziitis war, mit einer 23,3-fachen Chance. Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache. **Pflegekräfte haben beide Risikofaktoren gleichzeitig.**',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -54,7 +56,7 @@ export const NURSES_DE: Guide = {
       h2: 'Welche Übungen helfen Pflegekräften bei Fußschmerzen?',
       keyFact: 'Die Leitlinie von 2023 zu Fersenschmerzen bewertet das Dehnen von Wade und Plantarfaszie mit A, ihrer besten Bewertung, und Krafttraining mit B (Koc und Kollegen, 2023).',
       paragraphs: [
-        'Die Übungen, die helfen, sind dieselben, die bei Plantarfasziitis und Fußschmerzen vom Stehen ansetzen: Wadendehnungen, eine Plantarfaszien-Dehnung, Fersenheben für die Kraft der Wade und eine Übung fürs Gewölbe, der kurze Fuß. Der Unterschied in der Pflege ist, sie rund um die wechselnden Schichten einzubauen, nicht während der Schicht. Ein paar Minuten vor oder nach einer Schicht reichen für die wichtigsten.',
+        'Die Übungen, die helfen, sind dieselben, die bei Plantarfasziitis und Fußschmerzen vom Stehen ansetzen: Wadendehnungen, eine Plantarfaszien-Dehnung, Fersenheben für die Kraft der Wade und eine Übung fürs Gewölbe, der kurze Fuß. Der Unterschied in der Pflege ist, sie rund um die wechselnden Schichten einzubauen, nicht während der Schicht. **Ein paar Minuten vor oder nach einer Schicht reichen für die wichtigsten.**',
         'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Wade und Plantarfaszie ihre beste Bewertung, A, und Krafttraining ein B. Beide Bewertungen gelten speziell für Plantarfasziitis, aber die beteiligten Gewebe sind dieselben, die in einer Pflegeschicht die Last tragen. Wenn eine Übung deinen Schmerz auf 6 von 10 oder mehr bringt, hör für heute auf.',
       ],
       exercises: [
@@ -150,7 +152,7 @@ export const NURSES_DE: Guide = {
       paragraphs: [
         'Eine 12-Stunden-Schicht lässt wenig Zeit für ein eigenes Übungsprogramm, und der Wechsel zwischen Tag- und Nachtschicht macht die Planung noch schwerer. Die Dehnungen auf dieser Seite dauern etwa 3\u00A0Minuten, am einfachsten machst du sie also direkt vor oder direkt nach einer Schicht, jedes Mal an derselben Stelle in deiner Routine. Zum Beispiel, nachdem du in deine Arbeitsschuhe geschlüpft bist oder sie ausgezogen hast.',
         'An freien Tagen kommen die Kraftübungen dazu: Fersenheben und kurzer Fuß. Das dauert etwa 5 bis 10\u00A0Minuten. Wenn du das Krafttraining an freien Tagen machst statt nach einer anstrengenden Schicht, haben Wade und Gewölbe Zeit zur Erholung vor dem nächsten Einsatz auf den Beinen.',
-        'Drei Einheiten pro Woche sind ein vernünftiger Anfang. Wenn du drei 12-Stunden-Schichten mit vier freien Tagen arbeitest, passt das Krafttraining auf jeden freien Tag. Wenn du zwischen Tag- und Nachtschicht wechselst, spielt die Tageszeit keine Rolle. Es zählt die Regelmäßigkeit, nicht die Uhrzeit.',
+        'Drei Einheiten pro Woche sind ein vernünftiger Anfang. Wenn du drei 12-Stunden-Schichten mit vier freien Tagen arbeitest, passt das Krafttraining auf jeden freien Tag. Wenn du zwischen Tag- und Nachtschicht wechselst, spielt die Tageszeit keine Rolle. **Es zählt die Regelmäßigkeit, nicht die Uhrzeit.**',
       ],
     },
     {
@@ -158,7 +160,7 @@ export const NURSES_DE: Guide = {
       paragraphs: [
         'Schuhe sind eines der meistdiskutierten Themen unter Pflegekräften, aber die Belege für einen Typ gegenüber einem anderen sind begrenzt. Eine Untersuchung von 2007 zu drei Marken professioneller Pflegeschuhe fand, dass der Schuh mit der stärker gedämpften Innensohle und besserer Gewölbestütze die Muskelarbeit in den Beinen im Vergleich zu den anderen beiden verringerte, aber die Studie war klein und auf bestimmte Marken bezogen.',
         'Was die Forschung breiter stützt: Bequeme Schuhe zählen. In einer Umfrage unter 125\u00A0Pflegekräften in Notaufnahme und Ambulanz berichteten 72\u00A0% derer, die ihre Schuhe als wenig bequem empfanden, auch über Fuß- und Fersenschmerzen, verglichen mit 28\u00A0% derer, die sie als sehr bequem empfanden. Die Leitlinie von 2023 zu Fersenschmerzen bewertet Einlagen allein mit B dagegen für die kurzfristige Linderung bei Plantarfasziitis, die Belege sprechen also eher dagegen, sie als alleinige Maßnahme zu nutzen.',
-        'Ein praktischer Weg: Wähl einen Schuh, der gut passt, etwas Dämpfung hat und die Zehen nicht einklemmt. Wenn du schon Schmerzen an Ferse oder Gewölbe hast, setzen die Übungen auf dieser Seite direkt an den Geweben an. Schuhe und Einlagen können den Komfort während einer Schicht verbessern, aber sie ersetzen weder Dehnen noch Krafttraining.',
+        'Ein praktischer Weg: Wähl einen Schuh, der gut passt, etwas Dämpfung hat und die Zehen nicht einklemmt. Wenn du schon Schmerzen an Ferse oder Gewölbe hast, setzen die Übungen auf dieser Seite direkt an den Geweben an. **Schuhe und Einlagen können den Komfort während einer Schicht verbessern, aber sie ersetzen weder Dehnen noch Krafttraining.**',
       ],
       cites: [CITE.guideline],
     },
@@ -168,7 +170,8 @@ export const NURSES_DE: Guide = {
       paragraphs: [
         'Kompressionsstrümpfe haben eine der besser kontrollierten Studien zu Beschwerden vom Stehen. In einer randomisierten Studie mit 40\u00A0Sicherheitskräften in Schichten von etwa 12\u00A0Stunden im Stehen blieb in beiden Gruppen mit Kompressionsstrümpfen, 15-20\u00A0mmHg und 20-30\u00A0mmHg, der deutliche Anstieg von Beschwerden, Ermüdung und Schwellung in Fuß und Bein aus, den die Gruppe mit normalen Socken hatte. Viele Teilnehmer sagten, der Strumpf mit dem niedrigeren Druck sei leichter anzuziehen.',
         'Eine randomisierte Pilotstudie mit 20\u00A0Pflegeschülerinnen und Pflegeschülern verglich knielange und oberschenkellange Kompressionsstrümpfe, getragen in klinischen Ausbildungsschichten von 9\u00A0Stunden. Beide Gruppen waren sehr zufrieden, aber die Stichprobe war zu klein, um klare Unterschiede zwischen den beiden Längen zu zeigen.',
-        'Die Garcia-Studie umfasste nur männliche Sicherheitskräfte, keine Pflegekräfte, und keine der beiden Studien war groß. Aber Kompressionsstrümpfe sind eine der wenigen Maßnahmen speziell gegen Beschwerden vom Stehen mit randomisierten Belegen. Eine arbeitsmedizinische Übersichtsarbeit von 2015 nennt sie neben Bodenmatten und stützenden Schuhen als Maßnahmen mit gewissen Belegen dafür, Beschwerden bei langer Arbeit im Stehen zu verringern. Sie ersetzen weder Dehnen noch Krafttraining. Sie helfen gegen Schwellung und Ermüdung, während Wade und Faszie trotzdem ihre eigene Aufmerksamkeit brauchen.',
+        'Die Garcia-Studie umfasste nur männliche Sicherheitskräfte, keine Pflegekräfte, und keine der beiden Studien war groß. Aber Kompressionsstrümpfe sind eine der wenigen Maßnahmen speziell gegen Beschwerden vom Stehen mit randomisierten Belegen.',
+        'Eine arbeitsmedizinische Übersichtsarbeit von 2015 nennt sie neben Bodenmatten und stützenden Schuhen als Maßnahmen mit gewissen Belegen dafür, Beschwerden bei langer Arbeit im Stehen zu verringern. **Sie ersetzen weder Dehnen noch Krafttraining.** Sie helfen gegen Schwellung und Ermüdung, während Wade und Faszie trotzdem ihre eigene Aufmerksamkeit brauchen.',
       ],
       sourceNote:
         'Garcia und Kollegen (2023): Parallelgruppen-Design, 40\u00A0männliche Sicherheitskräfte, zufällig drei Gruppen zugeteilt (normale Socken, 15-20\u00A0mmHg, 20-30\u00A0mmHg), jeweils über eine ganze Arbeitsschicht getragen. Beschwerden, Ermüdung und Ödeme vor und nach der Schicht gemessen.',
@@ -177,10 +180,14 @@ export const NURSES_DE: Guide = {
     {
       h2: 'Was kannst du vor und nach einer Schicht in 3, 5 oder 10\u00A0Minuten tun?',
       paragraphs: [
-        'Wenn du 3\u00A0Minuten hast: Mach die beiden Wadendehnungen (gestrecktes und gebeugtes Knie, je 30\u00A0Sekunden pro Seite). Das deckt den stärksten einzelnen beeinflussbaren Risikofaktor ab, eine verkürzte Wade, und dauert so lange wie Schuhe binden.',
-        'Wenn du 5\u00A0Minuten hast: Nimm die Plantarfaszien-Dehnung dazu (30\u00A0Sekunden pro Fuß). Das ist die Kombination, die die Leitlinie von 2023 bei Plantarfasziitis mit A bewertet. Wenn deine Ferse bei den ersten Schritten des Tages am schlimmsten ist, mach die Faszien-Dehnung, bevor deine Füße den Boden berühren.',
-        'Wenn du 10\u00A0Minuten hast: Nimm das Fersenheben (3\u00A0Sätze à 10) und den kurzen Fuß (3\u00A0Sätze à 10 mit 5\u00A0Sekunden Halten) dazu. Das deckt die Kraftseite ab, in der Leitlinie mit B bewertet. An freien Tagen reichen 10\u00A0Minuten für alles auf dieser Seite.',
-        'Regelmäßigkeit zählt mehr als Länge. Drei Minuten Wadendehnung an jedem Schichttag, immer an derselben Stelle in deiner Routine, bringen mehr als eine längere Einheit, die du ausfallen lässt, wenn sich der Dienstplan ändert.',
+        {
+          list: [
+            '**Wenn du 3\u00A0Minuten hast:** Mach die beiden Wadendehnungen (gestrecktes und gebeugtes Knie, je 30\u00A0Sekunden pro Seite). Das deckt den stärksten einzelnen beeinflussbaren Risikofaktor ab, eine verkürzte Wade, und dauert so lange wie Schuhe binden.',
+            '**Wenn du 5\u00A0Minuten hast:** Nimm die Plantarfaszien-Dehnung dazu (30\u00A0Sekunden pro Fuß). Das ist die Kombination, die die Leitlinie von 2023 bei Plantarfasziitis mit A bewertet. Wenn deine Ferse bei den ersten Schritten des Tages am schlimmsten ist, mach die Faszien-Dehnung, bevor deine Füße den Boden berühren.',
+            '**Wenn du 10\u00A0Minuten hast:** Nimm das Fersenheben (3\u00A0Sätze à 10) und den kurzen Fuß (3\u00A0Sätze à 10 mit 5\u00A0Sekunden Halten) dazu. Das deckt die Kraftseite ab, in der Leitlinie mit B bewertet. An freien Tagen reichen 10\u00A0Minuten für alles auf dieser Seite.',
+          ],
+        },
+        '**Regelmäßigkeit zählt mehr als Länge.** Drei Minuten Wadendehnung an jedem Schichttag, immer an derselben Stelle in deiner Routine, bringen mehr als eine längere Einheit, die du ausfallen lässt, wenn sich der Dienstplan ändert.',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
@@ -189,7 +196,7 @@ export const NURSES_DE: Guide = {
       paragraphs: [
         'Allgemeine Schmerzen und Müdigkeit nach einer langen Schicht sind häufig und vergehen meist mit Ruhe. Plantarfasziitis ist eine bestimmte Erkrankung: ein stechender Schmerz nahe der Ferse, am schlimmsten bei den ersten Schritten nach einer Pause (beim Aufstehen aus dem Bett oder nach langem Sitzen). Wenn dein Schmerz diesem Muster folgt, sind die Übungen unter [Übungen und Dehnungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) der ausführlichere Ratgeber, und die Details zum Fersenheben stehen unter [Wadenheben bei Plantarfasziitis](/de/wadenheben-plantarfasziitis/).',
         'Wenn sich deine Gewölbe am Ende einer Schicht flach oder nach innen gekippt anfühlen, zielen die Übungen unter [Übungen bei Plattfuß und abgesunkenem Gewölbe](/de/plattfuss-uebungen/) auf die Muskeln, die das Gewölbe oben halten. Schmerz am Schienbein entlang könnte ein Schienbeinkantensyndrom sein. Schmerz in der Achillessehne hinten an der Ferse ist ein anderes Problem.',
-        'Wenn Schmerzen vom Stehen deine Hauptfrage sind und du nicht in der Pflege arbeitest, behandelt [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/) dieselben Übungen für alle. Für die Version dieses Problems am Stehschreibtisch lies [Fußschmerzen am Stehschreibtisch](/de/stehschreibtisch-fussschmerzen/). Wenn du nicht sicher bist, woher der Schmerz kommt, geh zu einer medizinischen Fachperson, bevor du ihn mit Übungen belastest.',
+        'Wenn Schmerzen vom Stehen deine Hauptfrage sind und du nicht in der Pflege arbeitest, behandelt [Fußschmerzen vom Stehen](/de/fussschmerzen-vom-stehen/) dieselben Übungen für alle. Für die Version dieses Problems am Stehschreibtisch lies [Fußschmerzen am Stehschreibtisch](/de/stehschreibtisch-fussschmerzen/). **Wenn du nicht sicher bist, woher der Schmerz kommt, geh zu einer medizinischen Fachperson, bevor du ihn mit Übungen belastest.**',
       ],
     },
   ],

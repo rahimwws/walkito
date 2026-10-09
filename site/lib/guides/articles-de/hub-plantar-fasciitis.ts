@@ -45,7 +45,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     {
       h2: 'Wie fühlt sich Plantarfasziitis an?',
       paragraphs: [
-        'Das typische Symptom ist Schmerz unter der Ferse bei den ersten Schritten am Morgen. Die Leitlinie beschreibt ihn als Schmerz, der „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“ auffällt. Meist lässt er nach, wenn du ein paar Minuten gehst, und kommt zurück, wenn du eine Weile gesessen hast und wieder aufstehst.',
+        '**Das typische Symptom ist Schmerz unter der Ferse bei den ersten Schritten am Morgen.** Die Leitlinie beschreibt ihn als Schmerz, der „am stärksten bei Belastung direkt am Morgen oder nach einer Ruhephase“ auffällt. Meist lässt er nach, wenn du ein paar Minuten gehst, und kommt zurück, wenn du eine Weile gesessen hast und wieder aufstehst.',
         'Der Schmerz sitzt meist vorn an der Innenseite der Ferse, dort, wo die Faszie am Knochen ansetzt. Er kann ins Fußgewölbe ausstrahlen. Am schlimmsten ist er meist nach dem Ausruhen, nicht während der Belastung, also genau umgekehrt, als die meisten erwarten.',
         'Am deutlichsten zeigt sich der Schmerz am nächsten Morgen. Ist der nächste Morgen schlimmer, hat der Vortag dem Fuß zu viel abverlangt. Deshalb ist der Morgenschmerz der nützlichste Maßstab für deinen Fortschritt. [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) erklärt dieses Muster im Detail.',
       ],
@@ -57,16 +57,46 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
       paragraphs: [
         'Plantarfasziitis entsteht, wenn die Faszie stärker belastet wird, als sie verkraften und sich davon erholen kann. Die Last kann auf einmal zu groß sein (ein plötzlicher Sprung bei den Laufkilometern) oder über lange Zeit gleichmäßig wirken (den ganzen Tag auf hartem Boden stehen).',
         'Eine gematchte Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollen fand, dass eine eingeschränkte Dorsalflexion im Sprunggelenk der stärkste unabhängige Risikofaktor war, mit einer Odds Ratio von 23,3. In einer anderen Serie von 254\u00A0Personen mit Plantarfasziitis hatten 52 bis 60\u00A0% eine Verkürzung, die nur den Gastrocnemius betraf, den größeren, oberflächlicheren Wadenmuskel. Langes Stehen bei der Arbeit erhöhte die Odds um das 3,6-Fache. Ein höherer Body-Mass-Index erhöhte sie ebenfalls.',
-        'Die Leitlinie nennt weitere Risikofaktoren: ein Alter zwischen 40 und 60, Laufen oder Springen und Berufe mit langem Stehen. Plattfüße oder ein Hohlfuß können verändern, wie die Last durch die Faszie läuft, aber keins von beiden führt zwangsläufig dazu.',
-        'Meist kommt Plantarfasziitis aus einer Kombination: eine verkürzte Wade, eine Belastung, auf die der Fuß nicht vorbereitet war, und zu wenig Erholungszeit.',
+        'Die Leitlinie nennt weitere Risikofaktoren:',
+        {
+          list: [
+            'Ein Alter zwischen 40 und 60.',
+            'Laufen oder Springen.',
+            'Berufe mit langem Stehen.',
+          ],
+        },
+        'Plattfüße oder ein Hohlfuß können verändern, wie die Last durch die Faszie läuft, aber keins von beiden führt zwangsläufig dazu.',
+        '**Meist kommt Plantarfasziitis aus einer Kombination**:',
+        {
+          list: [
+            'Eine verkürzte Wade.',
+            'Eine Belastung, auf die der Fuß nicht vorbereitet war.',
+            'Zu wenig Erholungszeit.',
+          ],
+        },
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius, CITE.guideline],
     },
     {
       h2: 'Wie wird Plantarfasziitis diagnostiziert?',
       paragraphs: [
-        'Plantarfasziitis wird meist von einer medizinischen Fachperson anhand deiner Vorgeschichte und einer körperlichen Untersuchung diagnostiziert. Die wichtigsten Befunde sind Druckschmerz vorn an der Innenseite der Ferse, Schmerz bei den ersten Schritten am Morgen und Schmerz, der bei Bewegung nachlässt und nach dem Ausruhen zurückkommt.',
-        'Bildgebung ist im typischen Fall nicht nötig. Die Leitlinie empfiehlt, Bildgebung in Betracht zu ziehen, wenn das Muster nicht passt, wenn die Beschwerden nach mehreren Wochen konservativer Behandlung nicht besser werden oder wenn eine andere Diagnose ausgeschlossen werden muss (zum Beispiel ein Ermüdungsbruch oder ein eingeklemmter Nerv). Ultraschall und MRT können eine verdickte Faszie zeigen, aber eine verdickte Faszie auf dem Bild ohne das passende Beschwerdemuster ist keine Plantarfasziitis.',
+        'Plantarfasziitis wird meist von einer medizinischen Fachperson anhand deiner Vorgeschichte und einer körperlichen Untersuchung diagnostiziert. Die wichtigsten Befunde sind:',
+        {
+          list: [
+            'Druckschmerz vorn an der Innenseite der Ferse.',
+            'Schmerz bei den ersten Schritten am Morgen.',
+            'Schmerz, der bei Bewegung nachlässt und nach dem Ausruhen zurückkommt.',
+          ],
+        },
+        '**Bildgebung ist im typischen Fall nicht nötig.** Die Leitlinie empfiehlt, Bildgebung in Betracht zu ziehen:',
+        {
+          list: [
+            'Wenn das Muster nicht passt.',
+            'Wenn die Beschwerden nach mehreren Wochen konservativer Behandlung nicht besser werden.',
+            'Wenn eine andere Diagnose ausgeschlossen werden muss (zum Beispiel ein Ermüdungsbruch oder ein eingeklemmter Nerv).',
+          ],
+        },
+        'Ultraschall und MRT können eine verdickte Faszie zeigen, aber eine verdickte Faszie auf dem Bild ohne das passende Beschwerdemuster ist keine Plantarfasziitis.',
         'Walkito stellt keine Diagnose. Wenn du nicht sicher bist, ob deine Fersenschmerzen von einer Plantarfasziitis kommen, ist eine medizinische Fachperson der richtige Startpunkt.',
       ],
       cites: [CITE.guideline],
@@ -76,7 +106,8 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
       keyFact: 'In einer Studie mit 48\u00A0Personen linderte belastetes Fersenheben mit Handtuch die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf (Rathleff und Kollegen, 2015).',
       paragraphs: [
         'Die klinische Leitlinie von 2023 bewertet jede Option danach, wie stark die Belege dafür sind. Die stärksten Empfehlungen sind Dehnen, Tapen, manuelle Therapie durch eine Fachperson und Nachtschienen bei anhaltendem Morgenschmerz. Danach kommt Krafttraining. Die Tabelle unten zeigt die wichtigsten Optionen mit ihren Bewertungen.',
-        'Keine einzelne Option hilft allen. Die meisten fangen mit Dehnen und stützenden Schuhen an, nehmen Krafttraining dazu, sobald der erste Schmerz abklingt, und sprechen mit einer medizinischen Fachperson über die übrigen Optionen, wenn der Fortschritt stockt. In einer Studie mit 48\u00A0Personen linderte belastetes Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf. Die Leitlinie rät davon ab, Einlagen allein als kurzfristige Lösung einzusetzen, und davon, therapeutischen Ultraschall zusätzlich zum Dehnen zu nutzen.',
+        '**Keine einzelne Option hilft allen.** Die meisten fangen mit Dehnen und stützenden Schuhen an, nehmen Krafttraining dazu, sobald der erste Schmerz abklingt, und sprechen mit einer medizinischen Fachperson über die übrigen Optionen, wenn der Fortschritt stockt.',
+        'In einer Studie mit 48\u00A0Personen linderte belastetes Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf. Die Leitlinie rät davon ab, Einlagen allein als kurzfristige Lösung einzusetzen, und davon, therapeutischen Ultraschall zusätzlich zum Dehnen zu nutzen.',
       ],
       table: {
         caption: 'Bewertungen der Leitlinie von 2023 bei Fersenschmerzen unter dem Fuß',
@@ -104,7 +135,7 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
       paragraphs: [
         'Eine Übersichtsarbeit von 2020 berichtet, dass es etwa 90\u00A0% der Menschen mit nicht-operativer Behandlung besser geht, oft innerhalb einiger Monate. Eine längere Beobachtung von 174\u00A0Patientinnen und Patienten zeichnet ein genaueres Bild: Nach fünf Jahren war etwa die Hälfte beschwerdefrei, und 46\u00A0% hatten nach durchschnittlich zehn Jahren noch etwas Schmerz, wobei die meisten davon nur leichte Beschwerden angaben.',
         'Die Erholung hängt davon ab, wie lange du die Beschwerden schon hast, was du dagegen tust, und von einigen Faktoren, die du nicht beeinflussen kannst. In der Kohorte von Hansen 2018 sagten weibliches Geschlecht und Fersenschmerzen auf beiden Seiten eine langsamere Erholung signifikant voraus. BMI, Alter, Dicke der Faszie und ein Fersensporn taten es nicht.',
-        'Die nützliche Frage ist nicht „wie viele Wochen noch“, sondern „ist mein Morgenschmerz diesen Monat niedriger als letzten Monat?“ Dieser Trend ist der eigentliche Meilenstein. [Wie lange dauert Plantarfasziitis?](/de/wie-lange-dauert-plantarfasziitis/) fasst die Studien zum Zeitverlauf vollständig zusammen.',
+        'Die nützliche Frage ist nicht „wie viele Wochen noch“, sondern „ist mein Morgenschmerz diesen Monat niedriger als letzten Monat?“ **Dieser Trend ist der eigentliche Meilenstein.** [Wie lange dauert Plantarfasziitis?](/de/wie-lange-dauert-plantarfasziitis/) fasst die Studien zum Zeitverlauf vollständig zusammen.',
       ],
       cites: [CITE.latt, CITE.hansen],
     },
@@ -148,12 +179,16 @@ export const HUB_PLANTAR_FASCIITIS_DE: Guide = {
     {
       h2: 'Kann der Schmerz etwas anderes als Plantarfasziitis sein?',
       paragraphs: [
-        'Mehrere Erkrankungen teilen dieselbe Stelle oder dasselbe Morgenmuster. Wo der Schmerz sitzt und wie er sich verhält, hilft, sie auseinanderzuhalten.',
-        '**Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Steifheit bei den ersten Schritten ist häufig, aber der Schmerz sitzt höher. Siehe [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
-        '**Fersenpolster-Syndrom.** Ein tiefer, dumpfer Schmerz mitten in der Ferse, schlimmer auf hartem Boden und barfuß. Ein Scoping Review von 2022 stellte fest, dass es sich ohne Bildgebung schwer von einer Plantarfasziitis unterscheiden lässt. Schmerz durch das Fettpolster sitzt genau in der Mitte unter der Ferse, Schmerz durch die Faszie vorn an der Innenseite.',
-        '**Fersensporn.** Ein knöcherner Auswuchs an der Unterseite des Fersenbeins. Viele Menschen haben einen, ganz ohne Schmerzen. In der Kohorte von Hansen 2018 mit 174\u00A0Patientinnen und Patienten hatte ein Fersensporn zu Beginn keinen signifikanten Einfluss darauf, wie lange die Beschwerden anhielten. Der Sporn ist oft da, aber er treibt den Schmerz nicht an.',
-        '**Ermüdungsbruch des Fersenbeins.** Schmerz, der bei Belastung zunimmt, statt nach dem Aufwärmen nachzulassen. Er kann in Ruhe oder nachts wehtun. Wenn du die Seiten der Ferse zusammendrückst, löst das oft den Schmerz aus. Geh zu einer medizinischen Fachperson, bevor du den Fuß trainierst.',
-        '**Entzündliche Gelenkerkrankung.** Wenn beide Fersen wehtun, die Morgensteifigkeit länger als 30\u00A0Minuten anhält und andere Gelenke steif oder geschwollen sind, deutet das Muster eher auf etwas Systemisches. Eine medizinische Fachperson sollte das abklären.',
+        'Mehrere Erkrankungen teilen dieselbe Stelle oder dasselbe Morgenmuster. Wo der Schmerz sitzt und wie er sich verhält, hilft, sie auseinanderzuhalten:',
+        {
+          list: [
+            '**Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Steifheit bei den ersten Schritten ist häufig, aber der Schmerz sitzt höher. Siehe [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
+            '**Fersenpolster-Syndrom.** Ein tiefer, dumpfer Schmerz mitten in der Ferse, schlimmer auf hartem Boden und barfuß. Ein Scoping Review von 2022 stellte fest, dass es sich ohne Bildgebung schwer von einer Plantarfasziitis unterscheiden lässt. Schmerz durch das Fettpolster sitzt genau in der Mitte unter der Ferse, Schmerz durch die Faszie vorn an der Innenseite.',
+            '**Fersensporn.** Ein knöcherner Auswuchs an der Unterseite des Fersenbeins. Viele Menschen haben einen, ganz ohne Schmerzen. In der Kohorte von Hansen 2018 mit 174\u00A0Patientinnen und Patienten hatte ein Fersensporn zu Beginn keinen signifikanten Einfluss darauf, wie lange die Beschwerden anhielten. Der Sporn ist oft da, aber er treibt den Schmerz nicht an.',
+            '**Ermüdungsbruch des Fersenbeins.** Schmerz, der bei Belastung zunimmt, statt nach dem Aufwärmen nachzulassen. Er kann in Ruhe oder nachts wehtun. Wenn du die Seiten der Ferse zusammendrückst, löst das oft den Schmerz aus. Geh zu einer medizinischen Fachperson, bevor du den Fuß trainierst.',
+            '**Entzündliche Gelenkerkrankung.** Wenn beide Fersen wehtun, die Morgensteifigkeit länger als 30\u00A0Minuten anhält und andere Gelenke steif oder geschwollen sind, deutet das Muster eher auf etwas Systemisches. Eine medizinische Fachperson sollte das abklären.',
+          ],
+        },
         'Wenn du unsicher bist, kann eine medizinische Fachperson diese Ursachen anhand von Ort, Verhalten und bei Bedarf Bildgebung unterscheiden.',
       ],
       cites: [CITE.achillesGuideline, CITE.fatPadReview, CITE.hansen],

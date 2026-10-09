@@ -30,7 +30,7 @@ export const BUNIONS_DE: Guide = {
       h2: 'Können Übungen einen Hallux valgus korrigieren?',
       figure: { id: 'bunion', caption: 'Ein Hallux valgus ist ein knöcherner Höcker am Großzehengrundgelenk, die große Zehe neigt sich zu den anderen Zehen.', alt: 'Die Fußknochen von oben, die große Zehe ist zur zweiten Zehe hin abgewinkelt, an der Innenseite des Großzehengrundgelenks sitzt ein roter Höcker.' },
       paragraphs: [
-        'Nein. Ein Ballenzeh, medizinisch Hallux valgus, ist eine knöcherne Fehlstellung im ersten Metatarsophalangealgelenk (dem Großzehengrundgelenk). Der erste Mittelfußknochen weicht nach innen ab, und die große Zehe winkelt sich nach außen ab. Wenn sich der Knochen einmal verschoben und die Gelenkkapsel sich angepasst hat, können Übungen ihn nicht zurückdrücken.',
+        'Nein. Ein Ballenzeh, medizinisch Hallux valgus, ist eine knöcherne Fehlstellung im ersten Metatarsophalangealgelenk (dem Großzehengrundgelenk). Der erste Mittelfußknochen weicht nach innen ab, und die große Zehe winkelt sich nach außen ab. Wenn sich der Knochen einmal verschoben und die Gelenkkapsel sich angepasst hat, **können Übungen ihn nicht zurückdrücken.**',
         'Was Übungen können, ist die Muskeln rund um das Gelenk zu kräftigen. Der Abductor hallucis verläuft entlang des inneren Gewölbes und zieht die große Zehe in eine gerade Stellung. Bei Menschen mit Hallux valgus ist dieser Muskel schwächer und kleiner als bei Menschen ohne. Ihn zu kräftigen, macht die strukturelle Veränderung nicht rückgängig, kann aber die Kontrolle verbessern, Beschwerden verringern und in leichten Fällen vielleicht ein weiteres Abweichen bremsen.',
         'Ein klinischer Kommentar von 2016 im Journal of Orthopaedic and Sports Physical Therapy schlug für einen frühen Hallux valgus ein biomechanisch begründetes Muskelkräftigungsprogramm vor, mit Schwerpunkt auf den kurzen Fußmuskeln. Der Autor argumentierte, dass die Fehlstellung zum Teil durch ein muskuläres Ungleichgewicht fortschreitet, und dass es deshalb schützend wirken könnte, die Muskelaktivität wiederherzustellen. Das ist ein plausibles Argument, aber direkte Langzeitbelege sind noch begrenzt.',
       ],
@@ -42,7 +42,15 @@ export const BUNIONS_DE: Guide = {
         'Die besten Belege kommen aus einer Handvoll kleiner Studien. Keine ist groß, und keine hat die Teilnehmenden länger als ein Jahr begleitet.',
         'Kim und Kollegen (2015) teilten 24\u00A0Personen mit leichtem bis mittlerem Hallux valgus zufällig 8\u00A0Wochen lang entweder nur einer Einlage oder einer Einlage plus Zehenspreizen (Toe-Spread-Out) zu. Die Übungsgruppe senkte ihren Hallux-valgus-Winkel im Schnitt um 3,4\u00A0Grad und vergrößerte die Querschnittsfläche des Abductor hallucis. Die Gruppe nur mit Einlage zeigte bei keinem der beiden Maße eine signifikante Veränderung. Die Studie war klein und umfasste vor allem junge Erwachsene mit leichtem Hallux valgus.',
         'Abdalbary (2018) teilte 56\u00A0Frauen mit mittlerem Hallux valgus zufällig entweder 3\u00A0Monaten Mobilisation des Fußes, Kraftübungen und einem Zehenspreizer zu oder keiner Behandlung (einer Warteliste). Nach 3\u00A0Monaten und erneut nach 1\u00A0Jahr hatte die Übungsgruppe signifikant bessere Werte bei Schmerz, Funktion und dem Winkel im Röntgenbild als die Gruppe ohne Behandlung. Diese Studie fällt durch ihre längere Nachbeobachtung auf, aber weil der Zehenspreizer mit Mobilisation und Übungen kombiniert war, kann sie nicht sagen, wie viel der Zehenspreizer allein beigetragen hat.',
-        'Külünkoğlu und Kollegen (2021) teilten 60\u00A0Frauen (120\u00A0Füße) mit Hallux valgus zufällig einen Monat lang Nachtschiene, Übungen oder Elektrostimulation zu. Alle drei Gruppen verbesserten sich bei Schmerz und Funktion, aber die Schiene wirkte besser als Übungen und Elektrotherapie, und Übungen schnitten besser ab als Elektrotherapie. Die Studie hatte keine unbehandelte Kontrollgruppe, deshalb ist schwer zu sagen, wie viel jeder der drei Ansätze über natürliche Schwankungen hinaus gebracht hat.',
+        'Külünkoğlu und Kollegen (2021) teilten 60\u00A0Frauen (120\u00A0Füße) mit Hallux valgus zufällig einen Monat lang einer dieser Behandlungen zu:',
+        {
+          list: [
+            'Nachtschiene.',
+            'Übungen.',
+            'Elektrostimulation.',
+          ],
+        },
+        'Alle drei Gruppen verbesserten sich bei Schmerz und Funktion, aber die Schiene wirkte besser als Übungen und Elektrotherapie, und Übungen schnitten besser ab als Elektrotherapie. Die Studie hatte keine unbehandelte Kontrollgruppe, deshalb ist schwer zu sagen, wie viel jeder der drei Ansätze über natürliche Schwankungen hinaus gebracht hat.',
       ],
       sourceNote:
         'Kim 2015: 24\u00A0Teilnehmende, randomisierte Studie über 8\u00A0Wochen. Änderung des HV-Winkels: Übungsgruppe -3,41 ± 3,17\u00A0Grad, Einlagengruppe -0,5 ± 2,07\u00A0Grad (p < 0,05). Änderung der Querschnittsfläche des AbdH: Übungsgruppe +0,48\u00A0cm², Einlagengruppe -0,11\u00A0cm². Abdalbary 2018: 56\u00A0Frauen, randomisiert auf 3\u00A0Monate Mobilisation + Übungen + Zehenspreizer (36\u00A0Einheiten) gegen keine Behandlung, randomisierte Studie mit 1\u00A0Jahr Nachbeobachtung. Külünkoğlu 2021: 60\u00A0Frauen (120\u00A0Füße), randomisierte Studie mit 3\u00A0Gruppen (Schiene, Übungen, Elektrotherapie), 1\u00A0Monat Behandlung, keine unbehandelte Kontrollgruppe; die Schiene war die wirksamste der drei.',
@@ -53,8 +61,9 @@ export const BUNIONS_DE: Guide = {
       keyFact: 'In einer Studie mit 30\u00A0Frauen mit schmerzhaftem Hallux valgus senkte eine Einlage mit Zehenspreizer den Schmerz über drei Monate signifikant, während eine separate Gruppe mit Nachtschiene sich nicht verbesserte (Tehraninasr und Kollegen, 2008).',
       paragraphs: [
         'Zehenspreizer, auch Zehentrenner genannt, sitzen zwischen der großen und der zweiten Zehe. Sie verringern Reibung, nehmen Druck vom Ballen und schieben die große Zehe sanft von der zweiten Zehe weg, solange sie getragen werden.',
-        'Tehraninasr und Kollegen (2008) untersuchten 30\u00A0Frauen mit schmerzhaftem Hallux valgus über 3\u00A0Monate. Eine Gruppe trug eine Einlage mit eingebautem Zehenspreizer, eine separate Gruppe stattdessen eine Nachtschiene. Der Schmerz sank in der Gruppe mit Zehenspreizer signifikant, in der Gruppe mit Nachtschiene nicht. Keine der beiden Gruppen hatte eine statistisch signifikante Veränderung des Hallux-valgus-Winkels. Die Studie von Abdalbary kombinierte einen Zehenspreizer mit manueller Therapie und Übungen und kann deshalb nicht zeigen, was der Zehenspreizer allein bewirkt hat.',
-        'Das Muster über die Studien ist einheitlich: Zehenspreizer können beim Komfort und bei kurzfristigen Beschwerden helfen, aber die Belege, dass sie den Knochenwinkel über die Zeit verändern, sind schwach. Sie schaden nicht und sind günstig, deshalb empfehlen viele Fachleute sie zusammen mit Übungen und anderen Schuhen.',
+        'Tehraninasr und Kollegen (2008) untersuchten 30\u00A0Frauen mit schmerzhaftem Hallux valgus über 3\u00A0Monate. Eine Gruppe trug eine Einlage mit eingebautem Zehenspreizer, eine separate Gruppe stattdessen eine Nachtschiene. Der Schmerz sank in der Gruppe mit Zehenspreizer signifikant, in der Gruppe mit Nachtschiene nicht. Keine der beiden Gruppen hatte eine statistisch signifikante Veränderung des Hallux-valgus-Winkels.',
+        'Die Studie von Abdalbary kombinierte einen Zehenspreizer mit manueller Therapie und Übungen und kann deshalb nicht zeigen, was der Zehenspreizer allein bewirkt hat.',
+        'Das Muster über die Studien ist einheitlich: **Zehenspreizer können beim Komfort und bei kurzfristigen Beschwerden helfen, aber die Belege, dass sie den Knochenwinkel über die Zeit verändern, sind schwach.** Sie schaden nicht und sind günstig, deshalb empfehlen viele Fachleute sie zusammen mit Übungen und anderen Schuhen.',
       ],
       cites: [CITE.abdalbary, CITE.tehraninasr],
     },
@@ -126,7 +135,7 @@ export const BUNIONS_DE: Guide = {
     {
       h2: 'Spielen die Schuhe bei Hallux valgus eine Rolle?',
       paragraphs: [
-        'Schuhe gehören zu den wirksamsten Änderungen, die du machen kannst. Eine breite Zehenbox gibt der großen Zehe Platz, in einer neutraleren Stellung zu liegen, und verhindert, dass der Schuh auf den Ballen drückt. Schmale und spitze Schuhe drücken die große Zehe weiter in die Valgusstellung und pressen das Gelenk zusammen.',
+        'Schuhe gehören zu den wirksamsten Änderungen, die du machen kannst. **Eine breite Zehenbox gibt der großen Zehe Platz, in einer neutraleren Stellung zu liegen,** und verhindert, dass der Schuh auf den Ballen drückt. Schmale und spitze Schuhe drücken die große Zehe weiter in die Valgusstellung und pressen das Gelenk zusammen.',
         'Hohe Absätze verlagern das Gewicht auf den Vorfuß und erhöhen den Druck auf das erste Metatarsophalangealgelenk. Wenn Schmerzen am Ballen ein Problem sind, ist ein niedrigerer Absatz ein einfacher erster Schritt.',
         'Schuhe allein machen die Fehlstellung nicht rückgängig, aber sie können Beschwerden verringern und das Fortschreiten bremsen, weil sie die äußere Kraft wegnehmen, die die Zehe weiter aus der Achse drückt.',
       ],
@@ -134,7 +143,7 @@ export const BUNIONS_DE: Guide = {
     {
       h2: 'Wann wird über eine Operation nachgedacht?',
       paragraphs: [
-        'Über eine Operation wird nachgedacht, wenn Schmerz und Einschränkungen trotz konservativer Maßnahmen wie anderer Schuhe, Übungen, Zehenspreizer und Einlagen bleiben. Die Entscheidung hängt davon ab, wie stark der Hallux valgus den Alltag beeinträchtigt, nicht vom Winkel allein.',
+        'Über eine Operation wird nachgedacht, wenn Schmerz und Einschränkungen trotz konservativer Maßnahmen wie anderer Schuhe, Übungen, Zehenspreizer und Einlagen bleiben. **Die Entscheidung hängt davon ab, wie stark der Hallux valgus den Alltag beeinträchtigt, nicht vom Winkel allein.**',
         'Es gibt mehr als 150 Operationsverfahren bei Hallux valgus, von der Korrektur der Weichteile bis zur Osteotomie (der Knochen wird durchtrennt und neu ausgerichtet). Die Wahl hängt vom Schweregrad und von der genauen Anatomie ab. Die Erholung dauert Wochen bis Monate.',
         'Übungen und konservative Behandlung werden meist zuerst über mehrere Monate versucht. Wenn du deine Beschwerden mit den Ansätzen auf dieser Seite gut im Griff hast, ist eine Operation nicht dringend. Wenn der Schmerz trotz dieser Maßnahmen das Gehen, die Schuhwahl oder deine Aktivität einschränkt, kann eine Fachperson für Fuß und Sprunggelenk mit dir die Möglichkeiten besprechen.',
       ],

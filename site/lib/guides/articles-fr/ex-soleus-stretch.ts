@@ -56,7 +56,7 @@ export const EX_SOLEUS_STRETCH_FR: Guide = {
       keyFact: 'Dans une revue de 254\u00A0personnes atteintes de fasciite plantaire, environ un quart avaient les deux muscles du mollet raides, le gastrocnémien et le soléaire (Patel et DiGiovanni, 2011).',
       paragraphs: [
         'Le gastrocnémien, le muscle superficiel du mollet, passe à la fois par le genou et par la cheville. Quand vous tendez le genou et vous penchez vers l’avant, c’est lui qui prend l’étirement. Le soléaire est plus profond et ne passe que par la cheville. Genou tendu, le gastrocnémien fait tout le travail et le soléaire bouge à peine.',
-        'Plier le genou détend le gastrocnémien, qui cesse de résister. La flexion dorsale de la cheville tire alors sur le soléaire. C’est tout l’intérêt de la version genou plié. Ce n’est pas une variante. C’est un exercice à part pour un muscle à part.',
+        'Plier le genou détend le gastrocnémien, qui cesse de résister. La flexion dorsale de la cheville tire alors sur le soléaire. C’est tout l’intérêt de la version genou plié. Ce n’est pas une variante. **C’est un exercice à part pour un muscle à part.**',
         'Dans une revue de 254\u00A0personnes atteintes de fasciite plantaire, environ un quart avaient les deux muscles raides. L’étirement genou tendu seul n’aurait pas atteint la part de cette raideur qui touche le soléaire.',
       ],
       cites: [CITE.patelGastrocnemius],
@@ -66,16 +66,20 @@ export const EX_SOLEUS_STRETCH_FR: Guide = {
       paragraphs: [
         'Si vous sentez l’étirement en haut du mollet, derrière le genou, le genou est trop tendu et le gastrocnémien prend le dessus. Pliez davantage le genou. L’étirement doit descendre dans le tiers inférieur du mollet ou juste au-dessus du talon.',
         'Si vous ne sentez rien, rapprochez le pied arrière du mur et pliez le genou plus profondément. Certaines personnes ont besoin d’un écart plus court pour charger le soléaire.',
-        'Si l’étirement se situe dans le tendon d’Achille lui-même et ressemble à une douleur vive plutôt qu’à une traction, relâchez. Un étirement doit être ferme et soutenu, pas douloureux. Une douleur dans le tendon pendant l’étirement n’est pas la même chose qu’un mollet raide et peut évoquer une [tendinite d’Achille](/fr/tendinite-achille-exercices/).',
+        'Si l’étirement se situe dans le tendon d’Achille lui-même et ressemble à une douleur vive plutôt qu’à une traction, relâchez. **Un étirement doit être ferme et soutenu, pas douloureux.** Une douleur dans le tendon pendant l’étirement n’est pas la même chose qu’un mollet raide et peut évoquer une [tendinite d’Achille](/fr/tendinite-achille-exercices/).',
       ],
     },
     {
       h2: 'Quelles sont les erreurs fréquentes avec l’étirement du soléaire\u00A0?',
       paragraphs: [
-        'Ne pas assez plier le genou. Une légère flexion ne suffit pas à détendre le gastrocnémien. Il faut une vraie flexion, assez pour voir le genou arrière avancer au-dessus des orteils.',
-        'Laisser le talon se soulever. Dès que le talon décolle du sol, l’étirement disparaît. Appuyez le talon au sol et laissez le genou avancer au-dessus du pied.',
-        'Aller trop vite. Un maintien de 5\u00A0secondes est trop court pour qu’un étirement soutenu agisse sur la longueur du tissu. Tenez 30\u00A0secondes, et essayez de vous relâcher dans l’étirement plutôt que de pousser plus fort.',
-        'Le sauter parce que l’étirement genou tendu semblait suffire. Ce sont deux muscles différents. Si les deux sont raides, il vous faut les deux étirements.',
+        {
+          list: [
+            '**Ne pas assez plier le genou.** Une légère flexion ne suffit pas à détendre le gastrocnémien. Il faut une vraie flexion, assez pour voir le genou arrière avancer au-dessus des orteils.',
+            '**Laisser le talon se soulever.** Dès que le talon décolle du sol, l’étirement disparaît. Appuyez le talon au sol et laissez le genou avancer au-dessus du pied.',
+            '**Aller trop vite.** Un maintien de 5\u00A0secondes est trop court pour qu’un étirement soutenu agisse sur la longueur du tissu. Tenez 30\u00A0secondes, et essayez de vous relâcher dans l’étirement plutôt que de pousser plus fort.',
+            '**Le sauter parce que l’étirement genou tendu semblait suffire.** Ce sont deux muscles différents. Si les deux sont raides, il vous faut les deux étirements.',
+          ],
+        },
       ],
     },
     {

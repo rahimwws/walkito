@@ -44,7 +44,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
     {
       h2: 'Como é a dor da fascite plantar?',
       paragraphs: [
-        'O sintoma típico é dor embaixo do calcanhar nos primeiros passos da manhã. A diretriz descreve essa dor como “mais perceptível ao apoiar o peso logo cedo pela manhã ou depois de um período de repouso”. Ela costuma melhorar depois de alguns minutos caminhando, e volta quando você fica um tempo sentado e levanta de novo.',
+        '**O sintoma típico é dor embaixo do calcanhar nos primeiros passos da manhã.** A diretriz descreve essa dor como “mais perceptível ao apoiar o peso logo cedo pela manhã ou depois de um período de repouso”. Ela costuma melhorar depois de alguns minutos caminhando, e volta quando você fica um tempo sentado e levanta de novo.',
         'A dor costuma ficar na parte de dentro e da frente do calcanhar, onde a fáscia se prende ao osso. Ela pode se espalhar pelo arco. Costuma ser pior depois do repouso, não durante a atividade, o contrário do que a maioria das pessoas espera.',
         'A dor aparece com mais clareza na manhã seguinte. Se a manhã seguinte está pior, o dia anterior pediu demais do pé. É por isso que acompanhar a dor da manhã é o jeito mais útil de avaliar a evolução. [Dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) explica o padrão da manhã em detalhes.',
       ],
@@ -56,16 +56,46 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
       paragraphs: [
         'A fascite plantar aparece quando a fáscia recebe mais carga do que consegue aguentar e recuperar. A carga pode ser demais de uma vez (um salto repentino na quilometragem de corrida) ou constante ao longo do tempo (ficar em pé num piso duro o dia todo).',
         'Um estudo de caso-controle pareado com 50\u00A0pessoas com fascite plantar e 100\u00A0controles encontrou que a dorsiflexão do tornozelo reduzida era o fator de risco independente mais forte, com razão de chances de 23,3. Em outra série, com 254\u00A0pessoas com fascite plantar, 52 a 60% tinham um encurtamento só do gastrocnêmio, o músculo maior e mais superficial da panturrilha. Ficar muito tempo em pé no trabalho aumentou as chances 3,6\u00A0vezes. Um índice de massa corporal mais alto também aumentou.',
-        'A diretriz cita outros fatores de risco: idade entre 40 e 60\u00A0anos, atividades com corrida ou saltos, e profissões em que se passa muito tempo em pé. Pé chato ou arco alto podem mudar o caminho da carga pela fáscia, mas nenhum dos dois garante que a condição vai aparecer.',
-        'A fascite plantar costuma vir de uma combinação: panturrilha tensa, uma carga para a qual o pé não estava pronto, e pouco tempo de recuperação.',
+        'A diretriz cita outros fatores de risco:',
+        {
+          list: [
+            'Idade entre 40 e 60\u00A0anos.',
+            'Atividades com corrida ou saltos.',
+            'Profissões em que se passa muito tempo em pé.',
+          ],
+        },
+        'Pé chato ou arco alto podem mudar o caminho da carga pela fáscia, mas nenhum dos dois garante que a condição vai aparecer.',
+        '**A fascite plantar costuma vir de uma combinação**:',
+        {
+          list: [
+            'Panturrilha tensa.',
+            'Uma carga para a qual o pé não estava pronto.',
+            'Pouco tempo de recuperação.',
+          ],
+        },
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius, CITE.guideline],
     },
     {
       h2: 'Como é feito o diagnóstico da fascite plantar?',
       paragraphs: [
-        'A fascite plantar costuma ser diagnosticada por um profissional de saúde a partir da sua história e de um exame físico. Os achados principais são dor ao toque na parte de dentro e da frente do calcanhar, dor nos primeiros passos da manhã, e dor que melhora com a atividade e volta depois do repouso.',
-        'Exame de imagem não é necessário num caso típico. A diretriz recomenda considerar exames de imagem se o padrão não se encaixa, se os sintomas não melhoram depois de várias semanas de tratamento conservador, ou se é preciso descartar outro diagnóstico (uma fratura por estresse ou um nervo comprimido, por exemplo). Ultrassom e ressonância magnética podem mostrar a fáscia espessada, mas uma fáscia espessada no exame sem o padrão de sintomas correspondente não é fascite plantar.',
+        'A fascite plantar costuma ser diagnosticada por um profissional de saúde a partir da sua história e de um exame físico. Os achados principais são:',
+        {
+          list: [
+            'Dor ao toque na parte de dentro e da frente do calcanhar.',
+            'Dor nos primeiros passos da manhã.',
+            'Dor que melhora com a atividade e volta depois do repouso.',
+          ],
+        },
+        '**Exame de imagem não é necessário num caso típico.** A diretriz recomenda considerar exames de imagem:',
+        {
+          list: [
+            'Se o padrão não se encaixa.',
+            'Se os sintomas não melhoram depois de várias semanas de tratamento conservador.',
+            'Se é preciso descartar outro diagnóstico (uma fratura por estresse ou um nervo comprimido, por exemplo).',
+          ],
+        },
+        'Ultrassom e ressonância magnética podem mostrar a fáscia espessada, mas uma fáscia espessada no exame sem o padrão de sintomas correspondente não é fascite plantar.',
         'O Walkito não faz diagnóstico. Se você não tem certeza se a sua dor no calcanhar é fascite plantar, um profissional de saúde é o lugar certo para começar.',
       ],
       cites: [CITE.guideline],
@@ -75,7 +105,8 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
       keyFact: 'Em um ensaio com 48\u00A0pessoas, elevações de calcanhar com carga e uma toalha aliviaram a dor mais rápido que só alongar aos três meses, mas aos doze meses os dois grupos estavam iguais (Rathleff e colegas, 2015).',
       paragraphs: [
         'A diretriz clínica de 2023 dá a cada abordagem um grau conforme a força da evidência por trás dela. As recomendações mais fortes são alongamento, bandagem, terapia manual feita por um profissional e talas noturnas para dor da manhã que não passa. O treino de força vem em seguida. A tabela abaixo lista as principais opções com os graus da diretriz.',
-        'Nenhuma opção funciona para todo mundo. A maioria das pessoas começa com alongamento e calçados com bom suporte, acrescenta treino de força quando a dor inicial diminui, e procura um profissional de saúde para as outras opções se a evolução travar. Em um ensaio com 48\u00A0pessoas, elevações de calcanhar com carga e uma toalha embaixo dos dedos aliviaram a dor mais rápido que só alongar aos três meses, mas aos doze meses os dois grupos estavam iguais. A diretriz recomenda não usar palmilhas sozinhas como abordagem isolada de curto prazo e não somar ultrassom terapêutico ao alongamento.',
+        '**Nenhuma opção funciona para todo mundo.** A maioria das pessoas começa com alongamento e calçados com bom suporte, acrescenta treino de força quando a dor inicial diminui, e procura um profissional de saúde para as outras opções se a evolução travar.',
+        'Em um ensaio com 48\u00A0pessoas, elevações de calcanhar com carga e uma toalha embaixo dos dedos aliviaram a dor mais rápido que só alongar aos três meses, mas aos doze meses os dois grupos estavam iguais. A diretriz recomenda não usar palmilhas sozinhas como abordagem isolada de curto prazo e não somar ultrassom terapêutico ao alongamento.',
       ],
       table: {
         caption: 'Graus da diretriz de 2023 para dor no calcanhar embaixo do pé',
@@ -103,7 +134,7 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
       paragraphs: [
         'Uma revisão de 2020 relata que cerca de 90% das pessoas melhoram com tratamento sem cirurgia, muitas vezes em alguns meses. Um acompanhamento mais longo de 174\u00A0pacientes dá um quadro mais detalhado: cerca de metade estava sem sintomas aos cinco anos, e 46% ainda tinham alguma dor depois de dez anos em média, embora a maioria deles relatasse só sintomas leves.',
         'A recuperação depende de há quanto tempo você tem a dor, do que você faz a respeito, e de alguns fatores que você não controla. O grupo de Hansen 2018 encontrou que ser mulher e ter dor nos dois calcanhares eram preditores significativos de recuperação mais lenta. IMC, idade, espessura da fáscia e presença de esporão não eram.',
-        'A pergunta útil não é “quantas semanas até acabar”, e sim “a minha dor da manhã está menor este mês do que no mês passado?”. Essa tendência é o marco de verdade. [Quanto tempo dura a fascite plantar?](/pt/quanto-tempo-dura-fascite-plantar/) traz toda a evidência sobre o tempo de recuperação.',
+        'A pergunta útil não é “quantas semanas até acabar”, e sim “a minha dor da manhã está menor este mês do que no mês passado?”. **Essa tendência é o marco de verdade.** [Quanto tempo dura a fascite plantar?](/pt/quanto-tempo-dura-fascite-plantar/) traz toda a evidência sobre o tempo de recuperação.',
       ],
       cites: [CITE.latt, CITE.hansen],
     },
@@ -147,12 +178,16 @@ export const HUB_PLANTAR_FASCIITIS_PT: Guide = {
     {
       h2: 'A dor pode ser outra coisa e não fascite plantar?',
       paragraphs: [
-        'Várias condições têm o mesmo local ou o mesmo padrão da manhã. Onde a dor fica e como ela se comporta ajudam a diferenciar.',
-        '**Tendinite de Aquiles.** Dor na parte de trás do calcanhar ou no tendão logo acima, não embaixo do pé. Rigidez nos primeiros passos é comum, mas a dor fica mais em cima. Veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
-        '**Síndrome do coxim gorduroso do calcanhar.** Uma dor funda no centro do calcanhar, pior em superfícies duras e descalço. Uma revisão de escopo de 2022 observou que pode ser difícil diferenciá-la da fascite plantar sem exame de imagem. A dor do coxim gorduroso fica bem embaixo, no centro, enquanto a dor da fascite fica na parte de dentro e da frente.',
-        '**Esporão no calcanhar.** Um crescimento de osso na parte de baixo do osso do calcanhar. Muita gente tem um sem sentir dor nenhuma. No grupo de Hansen 2018, com 174\u00A0pacientes, ter esporão no início não teve efeito significativo em quanto tempo os sintomas duraram. O esporão muitas vezes está lá, mas não é ele que causa a dor.',
-        '**Fratura por estresse do calcâneo.** Dor que aumenta com a atividade em vez de melhorar depois do aquecimento. Pode doer em repouso ou à noite. Apertar as laterais do calcanhar muitas vezes reproduz a dor. Procure um profissional de saúde antes de exercitar o pé.',
-        '**Artrite inflamatória.** Quando os dois calcanhares doem, a rigidez da manhã dura mais de 30\u00A0minutos e outras articulações estão rígidas ou inchadas, o padrão aponta para algo sistêmico. Um profissional de saúde deve avaliar.',
+        'Várias condições têm o mesmo local ou o mesmo padrão da manhã. Onde a dor fica e como ela se comporta ajudam a diferenciar:',
+        {
+          list: [
+            '**Tendinite de Aquiles.** Dor na parte de trás do calcanhar ou no tendão logo acima, não embaixo do pé. Rigidez nos primeiros passos é comum, mas a dor fica mais em cima. Veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
+            '**Síndrome do coxim gorduroso do calcanhar.** Uma dor funda no centro do calcanhar, pior em superfícies duras e descalço. Uma revisão de escopo de 2022 observou que pode ser difícil diferenciá-la da fascite plantar sem exame de imagem. A dor do coxim gorduroso fica bem embaixo, no centro, enquanto a dor da fascite fica na parte de dentro e da frente.',
+            '**Esporão no calcanhar.** Um crescimento de osso na parte de baixo do osso do calcanhar. Muita gente tem um sem sentir dor nenhuma. No grupo de Hansen 2018, com 174\u00A0pacientes, ter esporão no início não teve efeito significativo em quanto tempo os sintomas duraram. O esporão muitas vezes está lá, mas não é ele que causa a dor.',
+            '**Fratura por estresse do calcâneo.** Dor que aumenta com a atividade em vez de melhorar depois do aquecimento. Pode doer em repouso ou à noite. Apertar as laterais do calcanhar muitas vezes reproduz a dor. Procure um profissional de saúde antes de exercitar o pé.',
+            '**Artrite inflamatória.** Quando os dois calcanhares doem, a rigidez da manhã dura mais de 30\u00A0minutos e outras articulações estão rígidas ou inchadas, o padrão aponta para algo sistêmico. Um profissional de saúde deve avaliar.',
+          ],
+        },
         'Se você estiver em dúvida, um profissional de saúde consegue diferenciar essas condições pelo local, pelo comportamento da dor e por exame de imagem se for preciso.',
       ],
       cites: [CITE.achillesGuideline, CITE.fatPadReview, CITE.hansen],

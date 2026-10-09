@@ -23,7 +23,8 @@ export const SEVERS_FR: Guide = {
   lede:
     'La maladie de Sever, aussi appelée apophysite calcanéenne, est la cause la plus fréquente de douleur au talon chez l’enfant. Elle survient quand le cartilage de croissance à l’arrière de l’os du talon est irrité par la traction répétée du tendon d’Achille, en général pendant une poussée de croissance et un sport avec de la course ou des sauts. Ce n’est pas une maladie au sens habituel. Elle disparaît d’elle-même une fois le cartilage de croissance fermé.',
   intro: [
-    'Cette page s’adresse aux parents. Elle explique ce qui se passe dans le talon, ce que dit la recherche sur les talonnettes, les étirements et la gestion de la charge, et quand la douleur demande un professionnel de santé plutôt que du repos. Walkito est une application d’exercices conçue pour les adultes souffrant du talon et de la voûte plantaire. Elle n’est pas conçue pour les enfants, et rien sur cette page ne recommande de l’utiliser avec un enfant. Si la douleur au talon de votre enfant ne s’améliore pas avec les mesures ci-dessous, un médecin du sport pédiatrique ou un podologue est la bonne prochaine étape.',
+    'Cette page s’adresse aux parents. Elle explique ce qui se passe dans le talon, ce que dit la recherche sur les talonnettes, les étirements et la gestion de la charge, et quand la douleur demande un professionnel de santé plutôt que du repos.',
+    'Walkito est une application d’exercices conçue pour les adultes souffrant du talon et de la voûte plantaire. Elle n’est pas conçue pour les enfants, et rien sur cette page ne recommande de l’utiliser avec un enfant. Si la douleur au talon de votre enfant ne s’améliore pas avec les mesures ci-dessous, un médecin du sport pédiatrique ou un podologue est la bonne prochaine étape.',
   ],
   takeaways: [
     'La maladie de Sever touche les enfants de 8 à 15\u00A0ans, le plus souvent pendant une poussée de croissance, et disparaît une fois le cartilage de croissance du calcanéum fermé, en général entre 12 et 17\u00A0ans (revue StatPearls, 2024).',
@@ -48,14 +49,24 @@ export const SEVERS_FR: Guide = {
       paragraphs: [
         'La maladie de Sever touche les enfants d’environ 8 à 15\u00A0ans. L’apophyse calcanéenne apparaît vers 7 à 9\u00A0ans et se soude en général entre 15 et 17\u00A0ans. Les garçons sont touchés deux à trois fois plus souvent que les filles, avec un début typique vers 12\u00A0ans chez les garçons et 11\u00A0ans chez les filles. Environ 60\u00A0% des cas touchent les deux talons.',
         'Elle représente 2 à 16\u00A0% des consultations d’enfants dans les cliniques du sport. Les sports les plus associés sont le football, le basket, l’athlétisme, le cross-country, la gymnastique et le tennis. Le schéma est prévisible\u00A0: elle apparaît souvent en début de saison sportive ou pendant une poussée de croissance, quand la charge sur le talon augmente d’un coup.',
-        'Les facteurs de risque comprennent beaucoup de course et de sauts, des mollets raides, une cheville peu souple, un IMC élevé, des surfaces de jeu dures et des chaussures ou crampons mal amortis.',
+        'Les facteurs de risque comprennent\u00A0:',
+        {
+          list: [
+            'Beaucoup de course et de sauts.',
+            'Des mollets raides.',
+            'Une cheville peu souple.',
+            'Un IMC élevé.',
+            'Des surfaces de jeu dures.',
+            'Des chaussures ou crampons mal amortis.',
+          ],
+        },
       ],
       cites: [CITE.nietoGilSever, CITE.micheliSever, CITE.wiegerinck, CITE.jamesSever],
     },
     {
       h2: 'Quels sont les symptômes de la maladie de Sever\u00A0?',
       paragraphs: [
-        'Le symptôme principal est une douleur à l’arrière ou sur les côtés du talon, en général pendant ou après l’activité, surtout après la course ou les sauts. La douleur est souvent décrite comme un bleu. Il y a rarement un gonflement ou un hématome visible. Presser ou serrer les côtés du talon reproduit en général la douleur. Ce test de compression est la vérification clinique habituelle.',
+        'Le symptôme principal est une douleur à l’arrière ou sur les côtés du talon, en général pendant ou après l’activité, surtout après la course ou les sauts. La douleur est souvent décrite comme un bleu. Il y a rarement un gonflement ou un hématome visible. **Presser ou serrer les côtés du talon reproduit en général la douleur.** Ce test de compression est la vérification clinique habituelle.',
         'Contrairement à la fasciite plantaire de l’adulte, pire aux premiers pas après le repos, la douleur de la maladie de Sever a tendance à s’aggraver avec l’activité et ne s’améliore pas à la marche. Certains enfants se mettent à boiter ou à marcher sur la pointe des pieds pour éviter de mettre du poids sur le talon.',
         'La douleur peut aller de légère, seulement remarquée pendant le sport, à assez forte pour empêcher complètement l’enfant de jouer.',
       ],
@@ -64,8 +75,16 @@ export const SEVERS_FR: Guide = {
       h2: 'Qu’est-ce qui aide la maladie de Sever\u00A0? Les preuves',
       keyFact: 'Dans un essai sur 101\u00A0enfants, les trois approches ont amélioré la douleur, et le groupe talonnette était plus satisfait à six semaines, même si la différence avait disparu à trois mois (Wiegerinck et coll., 2016).',
       paragraphs: [
-        'Les preuves sur la maladie de Sever sont peu nombreuses mais augmentent. Les trois principales options étudiées sont la gestion de la charge (réduire l’activité douloureuse), les talonnettes ou semelles, et les exercices d’étirement ou de renforcement. Les trois ont montré un bénéfice, et aucune ne s’est montrée nettement meilleure que les autres au dernier suivi.',
-        'Dans un essai de 2016 sur 101\u00A0enfants de 8 à 15\u00A0ans, Wiegerinck et coll. ont comparé trois approches\u00A0: l’attente surveillée avec le conseil d’arrêter l’activité douloureuse, une talonnette, et des exercices excentriques supervisés. Les trois groupes se sont nettement améliorés. À six semaines, le groupe talonnette était plus satisfait que les deux autres. À trois mois, il ne restait aucune différence cliniquement pertinente entre les trois.',
+        'Les preuves sur la maladie de Sever sont peu nombreuses mais augmentent. Les trois principales options étudiées sont la gestion de la charge (réduire l’activité douloureuse), les talonnettes ou semelles, et les exercices d’étirement ou de renforcement. Les trois ont montré un bénéfice, et **aucune ne s’est montrée nettement meilleure que les autres au dernier suivi.**',
+        'Dans un essai de 2016 sur 101\u00A0enfants de 8 à 15\u00A0ans, Wiegerinck et coll. ont comparé trois approches\u00A0:',
+        {
+          list: [
+            'L’attente surveillée avec le conseil d’arrêter l’activité douloureuse.',
+            'Une talonnette.',
+            'Des exercices excentriques supervisés.',
+          ],
+        },
+        'Les trois groupes se sont nettement améliorés. À six semaines, le groupe talonnette était plus satisfait que les deux autres. À trois mois, il ne restait aucune différence cliniquement pertinente entre les trois.',
         'Dans un autre essai factoriel de 2016 sur 124\u00A0enfants, James et coll. ont comparé les talonnettes aux orthèses préfabriquées, et le remplacement des chaussures à l’absence de remplacement. Les talonnettes avaient un petit avantage sur les orthèses préfabriquées à 2\u00A0mois dans le domaine physique de l’Oxford Ankle Foot Questionnaire. À 6 et 12\u00A0mois, il ne restait aucune différence entre les combinaisons.',
         'Dans un essai croisé sur 51\u00A0garçons, Perhamre et coll. ont comparé une coque talonnière de 3\u00A0mm à une cale de talon de 5\u00A0mm. La coque talonnière a réduit la douleur d’environ 80\u00A0% sur l’échelle Borg CR-10, ce qui suggère que l’amorti et l’absorption des chocs comptent peut-être plus que le simple fait de surélever le talon.',
       ],
@@ -76,8 +95,17 @@ export const SEVERS_FR: Guide = {
     {
       h2: 'Gestion de la charge et adaptation de l’activité',
       paragraphs: [
-        'La gestion de la charge est la base de la prise en charge de la maladie de Sever. Cela ne veut pas dire arrêter tout sport. Cela veut dire réduire les activités qui font mal, surtout la course et les sauts sur sol dur, jusqu’à ce que la douleur se calme. La plupart des enfants peuvent reprendre le sport en deux à huit semaines si la charge est gérée tôt.',
-        'Concrètement\u00A0: réduire les entraînements plutôt que d’arrêter complètement, éviter si possible les crampons sur terrain dur, passer à des chaussures bien amorties, et sauter les parties de l’entraînement qui comportent le plus de course et de sauts. Certains entraîneurs laissent l’enfant participer aux exercices techniques en le dispensant des sprints et de la préparation physique.',
+        'La gestion de la charge est la base de la prise en charge de la maladie de Sever. **Cela ne veut pas dire arrêter tout sport.** Cela veut dire réduire les activités qui font mal, surtout la course et les sauts sur sol dur, jusqu’à ce que la douleur se calme. La plupart des enfants peuvent reprendre le sport en deux à huit semaines si la charge est gérée tôt.',
+        'Concrètement\u00A0:',
+        {
+          list: [
+            'Réduire les entraînements plutôt que d’arrêter complètement.',
+            'Éviter si possible les crampons sur terrain dur.',
+            'Passer à des chaussures bien amorties.',
+            'Sauter les parties de l’entraînement qui comportent le plus de course et de sauts.',
+          ],
+        },
+        'Certains entraîneurs laissent l’enfant participer aux exercices techniques en le dispensant des sprints et de la préparation physique.',
         'Le plus difficile dans la gestion de la charge, c’est que la maladie de Sever a tendance à récidiver. Un enfant peut aller mieux après deux semaines de repos, reprendre pleinement l’activité, et voir la douleur revenir. Cela ne veut pas dire que le premier repos a échoué. Cela veut dire que le cartilage de croissance est encore ouvert et encore vulnérable. Les récidives sont fréquentes jusqu’à la fin de la croissance osseuse.',
       ],
       cites: [CITE.wiegerinck],
@@ -88,7 +116,7 @@ export const SEVERS_FR: Guide = {
       paragraphs: [
         'Les coques talonnières font partie des mesures les plus pratiques contre la maladie de Sever. Elles amortissent le talon, absorbent les chocs et réduisent les pics de force qui atteignent le cartilage de croissance. L’essai croisé de Perhamre a trouvé qu’une coque talonnière réduisait la douleur d’environ 80\u00A0% par rapport à une cale de talon chez 51\u00A0garçons, ce qui suggère que l’absorption des chocs au talon compte plus que le simple changement d’angle du talon.',
         'Dans l’essai factoriel de James, les talonnettes (un type de semelle qui surélève le talon) ont montré un petit avantage à court terme sur les orthèses préfabriquées à 2\u00A0mois, mais aucun avantage à 12\u00A0mois. Les orthèses sur mesure n’ont été testées dans aucun de ces essais.',
-        'Un point de départ raisonnable est une coque talonnière peu coûteuse vendue sans ordonnance, portée dans les deux chaussures et pendant le sport. Si cela n’aide pas, un professionnel de santé peut évaluer si une orthèse sur mesure vaut le coût.',
+        '**Un point de départ raisonnable est une coque talonnière peu coûteuse vendue sans ordonnance, portée dans les deux chaussures et pendant le sport.** Si cela n’aide pas, un professionnel de santé peut évaluer si une orthèse sur mesure vaut le coût.',
       ],
       cites: [CITE.perhamreHeelCup, CITE.jamesSever],
     },
@@ -96,7 +124,7 @@ export const SEVERS_FR: Guide = {
       h2: 'L’étirement du mollet aide-t-il la maladie de Sever\u00A0?',
       paragraphs: [
         'Des mollets raides augmentent la traction sur le cartilage de croissance, et la raideur du mollet est l’un des facteurs de risque reconnus de l’apophysite calcanéenne. Étirer le gastrocnémien (le muscle superficiel du mollet, étiré genou tendu) et le soléaire (le muscle profond du mollet, étiré genou plié) est une recommandation habituelle.',
-        'Dans l’essai de Wiegerinck, le groupe exercices a suivi un programme de renforcement excentrique du mollet supervisé par un kinésithérapeute. Ce groupe s’est autant amélioré que les groupes talonnette et attente surveillée. Les étirements et un renforcement doux sont sans danger et peuvent aider en réduisant la traction sur le cartilage de croissance, mais les preuves ne montrent pas qu’ils soient supérieurs aux talonnettes ou à la seule gestion de la charge.',
+        'Dans l’essai de Wiegerinck, le groupe exercices a suivi un programme de renforcement excentrique du mollet supervisé par un kinésithérapeute. Ce groupe s’est autant amélioré que les groupes talonnette et attente surveillée. Les étirements et un renforcement doux sont sans danger et peuvent aider en réduisant la traction sur le cartilage de croissance, mais **les preuves ne montrent pas qu’ils soient supérieurs aux talonnettes ou à la seule gestion de la charge.**',
         'Les exercices pour un enfant atteint d’apophysite calcanéenne doivent être supervisés ou enseignés par un professionnel de santé ou un kinésithérapeute. La dose et la progression dépendent de l’âge de l’enfant, de son niveau de douleur et des exigences de son sport. Un enfant qui a une douleur aiguë et qui boite a d’abord besoin de repos, pas d’exercices.',
       ],
       cites: [CITE.wiegerinck],
@@ -112,7 +140,7 @@ export const SEVERS_FR: Guide = {
       h2: 'Combien de temps dure-t-elle, et revient-elle\u00A0?',
       paragraphs: [
         'La maladie de Sever disparaît en général en quelques semaines à quelques mois avec la gestion de la charge et des soins de soutien. La plupart des enfants peuvent reprendre le sport en deux à huit semaines. La douleur disparaît en général pour de bon une fois que le cartilage de croissance s’est soudé en os solide, le plus souvent entre 12 et 17\u00A0ans selon le sexe et le rythme de maturation de l’enfant (revue StatPearls, 2024).',
-        'Les récidives sont fréquentes et attendues. Chaque poussée de croissance et chaque nouvelle saison sportive peut ramener la douleur. Une récidive n’est pas le signe d’une prise en charge ratée. C’est le signe que le cartilage de croissance est encore ouvert. Continuer les coques talonnières, de bonnes chaussures et les étirements du mollet pendant les saisons sportives peut réduire l’intensité et la fréquence des poussées.',
+        'Les récidives sont fréquentes et attendues. Chaque poussée de croissance et chaque nouvelle saison sportive peut ramener la douleur. **Une récidive n’est pas le signe d’une prise en charge ratée.** C’est le signe que le cartilage de croissance est encore ouvert. Continuer les coques talonnières, de bonnes chaussures et les étirements du mollet pendant les saisons sportives peut réduire l’intensité et la fréquence des poussées.',
         'Aucun problème à long terme n’a été associé à la maladie de Sever. Elle n’abîme pas le cartilage de croissance et ne modifie pas la forme finale de l’os.',
       ],
       cites: [CITE.wiegerinck, CITE.jamesSever],

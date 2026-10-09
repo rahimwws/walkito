@@ -29,8 +29,9 @@ export const MASSAGE_BALL_FR: Guide = {
       h2: 'Une balle de massage aide-t-elle la fasciite plantaire\u00A0?',
       keyFact: 'Dans un petit essai sur 14\u00A0personnes à qui l’on demandait de rouler une balle de massage au moins trois fois par jour, les scores du pied ne se sont pas améliorés de façon significative en trois mois (Ryu et coll., 2024).',
       paragraphs: [
-        'Une balle de massage aide certaines personnes atteintes de fasciite plantaire à se sentir plus souples et moins douloureuses pendant un temps court, mais rien ne prouve vraiment que le roulement seul change la douleur sur plusieurs mois. La fasciite plantaire est une irritation du fascia plantaire, l’épaisse bande sous la plante qui va du talon aux orteils. Le roulement appuie sur cette bande et sur les petits muscles qui l’entourent.',
-        'Les données directes sont minces. Dans un essai coréen de 2024, 14\u00A0personnes dont la douleur au talon durait depuis au moins six mois devaient faire rouler une balle de massage sous la plante au moins trois fois par jour, plus de cinq minutes à chaque fois. En trois mois, le groupe dans son ensemble ne s’est pas amélioré de façon significative sur un questionnaire de douleur du pied. L’essai était minuscule et n’avait pas de groupe sans balle\u00A0: il ne peut pas prouver que la balle ne sert à rien, seulement que personne n’a montré qu’elle sert à grand-chose.',
+        'Une balle de massage aide certaines personnes atteintes de fasciite plantaire à se sentir plus souples et moins douloureuses pendant un temps court, mais **rien ne prouve vraiment que le roulement seul change la douleur sur plusieurs mois.** La fasciite plantaire est une irritation du fascia plantaire, l’épaisse bande sous la plante qui va du talon aux orteils. Le roulement appuie sur cette bande et sur les petits muscles qui l’entourent.',
+        'Les données directes sont minces. Dans un essai coréen de 2024, 14\u00A0personnes dont la douleur au talon durait depuis au moins six mois devaient faire rouler une balle de massage sous la plante au moins trois fois par jour, plus de cinq minutes à chaque fois. En trois mois, le groupe dans son ensemble ne s’est pas amélioré de façon significative sur un questionnaire de douleur du pied.',
+        'L’essai était minuscule et n’avait pas de groupe sans balle\u00A0: il ne peut pas prouver que la balle ne sert à rien, seulement que personne n’a montré qu’elle sert à grand-chose.',
         'C’est pourquoi le roulement occupe la place de la récupération sur ce site, à côté des exercices mieux étayés\u00A0: les étirements du fascia plantaire et du mollet (note A de la recommandation) et le renforcement du mollet (note B).',
       ],
       figure: {
@@ -45,9 +46,16 @@ export const MASSAGE_BALL_FR: Guide = {
       keyFact: 'Dans un essai sur 66\u00A0personnes, le relâchement myofascial par un thérapeute a réduit les scores du Foot Function Index de 72,4\u00A0% après un mois, contre 7,4\u00A0% avec un placebo, et de 60,6\u00A0% à trois mois (Ajimsha et coll., 2014).',
       paragraphs: [
         'Le massage par un professionnel formé a des données correctes pour la fasciite plantaire. Le massage que vous faites vous-même avec une balle en a très peu.',
-        '**Le travail manuel d’un professionnel.** La recommandation de 2023 sur la douleur au talon donne à la thérapie manuelle la note **A**, sa meilleure note. Elle la définit comme un travail qualifié sur les articulations et les tissus mous de la jambe et du pied, comme le relâchement myofascial (une pression et un étirement lents et soutenus sur le tissu). Dans un essai de 2014 sur 66\u00A0personnes, un thérapeute a fait 12\u00A0séances de relâchement myofascial sur le mollet et la plante en un mois. Les scores au Foot Function Index, un questionnaire sur la douleur et la fonction au quotidien, ont baissé de 72,4\u00A0%, contre 7,4\u00A0% dans un groupe ayant reçu de faux ultrasons (placebo). À trois mois, la baisse était encore de 60,6\u00A0%. Un essai pilote de 2014 sur le massage du mollet a trouvé un gain plus faible et à court terme (plus de détails dans la partie sur le mollet ci-dessous).',
+        '**Le travail manuel d’un professionnel.** La recommandation de 2023 sur la douleur au talon donne à la thérapie manuelle la note **A**, sa meilleure note. Elle la définit comme un travail qualifié sur les articulations et les tissus mous de la jambe et du pied, comme le relâchement myofascial (une pression et un étirement lents et soutenus sur le tissu).',
+        'Dans un essai de 2014 sur 66\u00A0personnes, un thérapeute a fait 12\u00A0séances de relâchement myofascial sur le mollet et la plante en un mois. Les scores au Foot Function Index, un questionnaire sur la douleur et la fonction au quotidien, ont baissé de 72,4\u00A0%, contre 7,4\u00A0% dans un groupe ayant reçu de faux ultrasons (placebo). À trois mois, la baisse était encore de 60,6\u00A0%. Un essai pilote de 2014 sur le massage du mollet a trouvé un gain plus faible et à court terme (plus de détails dans la partie sur le mollet ci-dessous).',
         'Une revue de 2018 portant sur 7\u00A0essais a montré qu’ajouter la thérapie manuelle améliorait la fonction dans 6 d’entre eux, mais qu’elle ne faisait clairement mieux que la comparaison sur la douleur que dans 2 sur 6. Les auteurs proposent de l’utiliser en complément des étirements et du renforcement.',
-        '**Le massage que vous faites vous-même.** Seuls quelques essais testent l’automassage, et chacun l’associe à des exercices ou le mesure sur quelques minutes. Dans un essai de 2021 sur 50\u00A0personnes, une seule séance de rouleau en mousse sur le mollet et la plante a réduit la douleur d’environ 3\u00A0points sur une échelle de 10\u00A0cm, contre environ 2,6 pour une séance d’étirements, et l’écart entre les groupes n’était pas statistiquement significatif. La mesure a été faite juste après la séance, sans suivi. Dans un essai de 2025 sur 64\u00A0personnes, un programme encadré de renforcement, d’étirements et de 10\u00A0minutes d’automassage avec un bâton, trois jours par semaine pendant un mois, a réduit la douleur de 2,5\u00A0points de plus qu’une brochure d’autosoins, et le gain se maintenait un mois plus tard. Comme le massage était associé aux exercices, sa part propre est inconnue.',
+        '**Le massage que vous faites vous-même.** Seuls quelques essais testent l’automassage, et chacun l’associe à des exercices ou le mesure sur quelques minutes\u00A0:',
+        {
+          list: [
+            '**Essai de 2021 sur 50\u00A0personnes\u00A0:** une seule séance de rouleau en mousse sur le mollet et la plante a réduit la douleur d’environ 3\u00A0points sur une échelle de 10\u00A0cm, contre environ 2,6 pour une séance d’étirements, et l’écart entre les groupes n’était pas statistiquement significatif. La mesure a été faite juste après la séance, sans suivi.',
+            '**Essai de 2025 sur 64\u00A0personnes\u00A0:** un programme encadré de renforcement, d’étirements et de 10\u00A0minutes d’automassage avec un bâton, trois jours par semaine pendant un mois, a réduit la douleur de 2,5\u00A0points de plus qu’une brochure d’autosoins, et le gain se maintenait un mois plus tard. Comme le massage était associé aux exercices, sa part propre est inconnue.',
+          ],
+        },
       ],
       table: {
         caption: 'Massage et fasciite plantaire\u00A0: qui a massé et ce qui a été trouvé',
@@ -67,7 +75,7 @@ export const MASSAGE_BALL_FR: Guide = {
       h2: 'Balle de tennis, de lacrosse, à picots, rouleau ou bouteille\u00A0: que choisir\u00A0?',
       paragraphs: [
         'Aucune étude n’a comparé les outils de massage pour la fasciite plantaire\u00A0: le meilleur est donc celui qui vous donne une pression ferme sans pic de douleur vive. Le tableau ci-dessous est un guide pratique, pas des données d’essais.',
-        'Commencez en douceur. Une balle de tennis répartit la pression et convient à un pied douloureux. Passez à une balle de lacrosse seulement si la balle de tennis ne vous fait plus rien après quelques séances. Une balle de golf s’enfonce souvent directement dans le point douloureux du talon. Une balle à picots ajoute une sensation sur la peau, mais rien n’indique que les picots agissent plus en profondeur.',
+        '**Commencez en douceur.** Une balle de tennis répartit la pression et convient à un pied douloureux. Passez à une balle de lacrosse seulement si la balle de tennis ne vous fait plus rien après quelques séances. Une balle de golf s’enfonce souvent directement dans le point douloureux du talon. Une balle à picots ajoute une sensation sur la peau, mais rien n’indique que les picots agissent plus en profondeur.',
       ],
       table: {
         caption: 'Outils de massage pour la fasciite plantaire comparés (guide pratique, pas des données d’essais)',
@@ -88,17 +96,34 @@ export const MASSAGE_BALL_FR: Guide = {
       h2: 'Une bouteille d’eau congelée aide-t-elle la fasciite plantaire\u00A0?',
       keyFact: 'Dans une petite étude sur 30\u00A0personnes, ajouter une balle de tennis congelée aux étirements pendant deux mois a réduit la douleur plus que les étirements seuls, mais la façon dont les personnes ont été réparties entre les groupes n’était pas claire (Shinde et Patil, 2026).',
       paragraphs: [
-        'Une bouteille d’eau congelée peut apaiser une plante douloureuse, mais aucun essai n’a montré que le froid apporte quoi que ce soit de plus qu’une bouteille ou une balle à température ambiante. Elle appuie le long de la voûte comme un rouleau et engourdit la peau pendant un moment.',
-        'La seule étude trouvée qui ajoute un roulement à froid à un programme d’exercices est petite et fragile. Dans une étude de 2026 sur 30\u00A0personnes, un groupe faisait des étirements statiques et l’autre des étirements plus une balle de tennis congelée, pendant deux mois. La douleur est passée d’environ 7,7 à 3,5 sur 10 dans le groupe de la balle congelée et de 7,6 à 6,7 avec les étirements seuls. L’article ne précise pas clairement comment les personnes ont été réparties, et le groupe des étirements s’est bien moins amélioré que dans des essais plus grands\u00A0: interprétez l’écart avec prudence. La recommandation de 2023 sur la douleur au talon ne se prononce pas sur la glace.',
-        'Si vous aimez le froid, utilisez-le avec précaution. Limitez-vous à environ 10\u00A0minutes, enveloppez la bouteille dans une chaussette fine si la peau brûle, et évitez le froid si la sensibilité de vos pieds est réduite ou si vous avez un syndrome de Raynaud. L’idée qu’une bouteille congelée «\u00A0réduit l’inflammation\u00A0» n’est pas soutenue par les essais sur la fasciite plantaire. Pour la question plus large du froid et du chaud, voir [glace ou chaleur pour la fasciite plantaire](/fr/glace-ou-chaleur-fasciite-plantaire/).',
+        'Une bouteille d’eau congelée peut apaiser une plante douloureuse, mais **aucun essai n’a montré que le froid apporte quoi que ce soit de plus qu’une bouteille ou une balle à température ambiante.** Elle appuie le long de la voûte comme un rouleau et engourdit la peau pendant un moment.',
+        'La seule étude trouvée qui ajoute un roulement à froid à un programme d’exercices est petite et fragile. Dans une étude de 2026 sur 30\u00A0personnes, un groupe faisait des étirements statiques et l’autre des étirements plus une balle de tennis congelée, pendant deux mois. La douleur est passée d’environ 7,7 à 3,5 sur 10 dans le groupe de la balle congelée et de 7,6 à 6,7 avec les étirements seuls.',
+        'L’article ne précise pas clairement comment les personnes ont été réparties, et le groupe des étirements s’est bien moins amélioré que dans des essais plus grands\u00A0: interprétez l’écart avec prudence. La recommandation de 2023 sur la douleur au talon ne se prononce pas sur la glace.',
+        'Si vous aimez le froid, utilisez-le avec précaution\u00A0:',
+        {
+          list: [
+            'Limitez-vous à environ 10\u00A0minutes.',
+            'Enveloppez la bouteille dans une chaussette fine si la peau brûle.',
+            'Évitez le froid si la sensibilité de vos pieds est réduite ou si vous avez un syndrome de Raynaud.',
+          ],
+        },
+        'L’idée qu’une bouteille congelée «\u00A0réduit l’inflammation\u00A0» n’est pas soutenue par les essais sur la fasciite plantaire. Pour la question plus large du froid et du chaud, voir [glace ou chaleur pour la fasciite plantaire](/fr/glace-ou-chaleur-fasciite-plantaire/).',
       ],
       cites: [CITE.shindeFrozenBall, CITE.guideline],
     },
     {
       h2: 'Avec quelle force et combien de temps rouler le pied\u00A0?',
       paragraphs: [
-        'Roulez avec une pression ferme et régulière qui reste à environ 3 à 5 sur 10 ou moins sur une échelle de douleur, pendant environ une minute par pied. Il n’existe pas de dose idéale testée\u00A0: commencez court et n’allongez que si votre pied se sent mieux après.',
-        'Les études ont utilisé des quantités très différentes. Dans l’essai de 2021 sur le rouleau en mousse, les participants roulaient 45\u00A0secondes, se reposaient 15\u00A0secondes et répétaient cela cinq fois. Dans l’essai de 2024 sur la balle de massage, ils devaient rouler au moins trois fois par jour, plus de cinq minutes à chaque fois, et le groupe ne s’est pas amélioré de façon significative. Dans l’essai de 2025, l’automassage durait 10\u00A0minutes au sein d’une séance d’exercices plus longue. D’une étude à l’autre, rouler plus ne semblait pas clairement mieux.',
+        '**Roulez avec une pression ferme et régulière qui reste à environ 3 à 5 sur 10 ou moins sur une échelle de douleur, pendant environ une minute par pied.** Il n’existe pas de dose idéale testée\u00A0: commencez court et n’allongez que si votre pied se sent mieux après.',
+        'Les études ont utilisé des quantités très différentes\u00A0:',
+        {
+          list: [
+            '**Essai de 2021 sur le rouleau en mousse\u00A0:** les participants roulaient 45\u00A0secondes, se reposaient 15\u00A0secondes et répétaient cela cinq fois.',
+            '**Essai de 2024 sur la balle de massage\u00A0:** les participants devaient rouler au moins trois fois par jour, plus de cinq minutes à chaque fois, et le groupe ne s’est pas amélioré de façon significative.',
+            '**Essai de 2025\u00A0:** l’automassage durait 10\u00A0minutes au sein d’une séance d’exercices plus longue.',
+          ],
+        },
+        'D’une étude à l’autre, rouler plus ne semblait pas clairement mieux.',
         'Walkito commence le massage avec une balle à 1 x 60\u00A0secondes, comme court exercice de récupération les jours plus légers. Asseyez-vous et laissez le poids de la jambe faire l’essentiel du travail.',
       ],
       exercises: [
@@ -121,8 +146,9 @@ export const MASSAGE_BALL_FR: Guide = {
       h2: 'Faut-il masser ou rouler le mollet en cas de fasciite plantaire\u00A0?',
       keyFact: 'Dans un essai pilote sur 69\u00A0personnes, un massage profond du mollet avec des exercices de glissement nerveux et des auto-étirements a davantage amélioré la fonction que des ultrasons sur le talon avec les mêmes étirements (Saban et coll., 2014).',
       paragraphs: [
-        'Travailler le mollet est un ajout raisonnable en cas de fasciite plantaire, car un mollet raide tire sur le talon, et les essais qui ont le plus aidé visaient le mollet en plus de la plante. Les muscles du mollet se prolongent par le tendon d’Achille, qui s’attache à l’os du talon près de l’endroit où naît le fascia plantaire.',
-        'Dans l’essai pilote de 2014 sur 69\u00A0personnes, un massage profond du mollet, avec des exercices de glissement nerveux et des auto-étirements, a davantage amélioré la fonction que des ultrasons sur le talon avec les mêmes étirements. Dans l’essai de 2021 sur le rouleau en mousse, les participants roulaient aussi le mollet, de l’arrière du genou jusqu’au tendon d’Achille, et leurs mollets sont devenus moins sensibles à la pression que dans le groupe des étirements. Les étirements du mollet sont mieux étayés que le roulement du mollet\u00A0: la recommandation de 2023 leur donne la note **A**, et une revue de 2020 a trouvé des preuves de qualité modérée que l’étirement du fascia plantaire soulageait davantage la douleur que l’étirement du mollet, et des preuves de très faible qualité que l’étirement du mollet faisait mieux qu’un faux étirement.',
+        '**Travailler le mollet est un ajout raisonnable en cas de fasciite plantaire**, car un mollet raide tire sur le talon, et les essais qui ont le plus aidé visaient le mollet en plus de la plante. Les muscles du mollet se prolongent par le tendon d’Achille, qui s’attache à l’os du talon près de l’endroit où naît le fascia plantaire.',
+        'Dans l’essai pilote de 2014 sur 69\u00A0personnes, un massage profond du mollet, avec des exercices de glissement nerveux et des auto-étirements, a davantage amélioré la fonction que des ultrasons sur le talon avec les mêmes étirements. Dans l’essai de 2021 sur le rouleau en mousse, les participants roulaient aussi le mollet, de l’arrière du genou jusqu’au tendon d’Achille, et leurs mollets sont devenus moins sensibles à la pression que dans le groupe des étirements.',
+        'Les étirements du mollet sont mieux étayés que le roulement du mollet\u00A0: la recommandation de 2023 leur donne la note **A**, et une revue de 2020 a trouvé des preuves de qualité modérée que l’étirement du fascia plantaire soulageait davantage la douleur que l’étirement du mollet, et des preuves de très faible qualité que l’étirement du mollet faisait mieux qu’un faux étirement.',
         'Roulez le mollet sur un rouleau en mousse pendant une minute si vous aimez cela, puis faites les deux étirements ci-dessous. Plus de détails dans [mollets tendus](/fr/mollets-tendus/).',
       ],
       exercises: [
@@ -157,7 +183,15 @@ export const MASSAGE_BALL_FR: Guide = {
       h2: 'Pourquoi masser une fasciite plantaire fait-il mal, et peut-on l’aggraver\u00A0?',
       paragraphs: [
         'Masser une fasciite plantaire fait souvent mal parce que le tissu près du talon est déjà sensible, et qu’une pression sur un point sensible donne une sensation vive. Une légère sensibilité pendant le roulement, qui passe en quelques minutes, est courante. Une douleur vive, qui dure jusqu’au lendemain matin ou laisse un bleu, signifie que vous avez appuyé trop fort ou trop longtemps.',
-        'Servez-vous de vos premiers pas le lendemain matin comme test. S’ils sont pires après une séance de roulement, divisez le temps par deux, passez à une balle plus douce et évitez le talon lui-même. S’ils restent pires, arrêtez le roulement un moment\u00A0: les étirements et le renforcement comptent davantage. Plus de détails sur ce schéma dans [douleur au talon au réveil](/fr/douleur-talon-au-reveil/).',
+        '**Servez-vous de vos premiers pas le lendemain matin comme test.** S’ils sont pires après une séance de roulement\u00A0:',
+        {
+          list: [
+            'Divisez le temps par deux.',
+            'Passez à une balle plus douce.',
+            'Évitez le talon lui-même.',
+          ],
+        },
+        'S’ils restent pires, arrêtez le roulement un moment\u00A0: les étirements et le renforcement comptent davantage. Plus de détails sur ce schéma dans [douleur au talon au réveil](/fr/douleur-talon-au-reveil/).',
         'Les outils durs sont les plus risqués. Les balles de golf et les rouleaux striés concentrent la force sur une petite surface, et se tenir debout sur une balle y met tout le poids du corps. Asseyez-vous plutôt. Si la douleur se situe au milieu du coussinet du talon et donne une sensation de bleu, il peut s’agir d’un [syndrome du coussinet graisseux du talon](/fr/syndrome-coussinet-graisseux-talon/), et appuyer dessus n’aide en général pas.',
       ],
       cites: [],
@@ -179,8 +213,17 @@ export const MASSAGE_BALL_FR: Guide = {
     {
       h2: 'Quelle place pour le roulement dans une routine contre la fasciite plantaire\u00A0?',
       paragraphs: [
-        'Le roulement trouve sa meilleure place comme court complément autour des exercices qui ont les preuves pour eux\u00A0: une minute de roulement, l’étirement du fascia plantaire avant les premiers pas, des étirements du mollet dans la journée et du renforcement du mollet quelques fois par semaine. Dans un essai sur 48\u00A0personnes, des montées sur pointes lentes avec une serviette sous les orteils ont donné de meilleurs scores de fonction du pied que l’étirement du fascia plantaire à trois mois, même si les groupes étaient à égalité à six et douze mois.',
-        'Si vous pouvez voir un kinésithérapeute, le travail manuel des tissus mous est la forme de massage que la recommandation soutient le plus fermement. À la maison, gardez la balle, mais ne la laissez pas remplacer l’[étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) ni les [montées sur pointes](/fr/montees-sur-pointes-fasciite-plantaire/).',
+        'Le roulement trouve sa meilleure place comme court complément autour des exercices qui ont les preuves pour eux\u00A0:',
+        {
+          list: [
+            'Une minute de roulement.',
+            'L’étirement du fascia plantaire avant les premiers pas.',
+            'Des étirements du mollet dans la journée.',
+            'Du renforcement du mollet quelques fois par semaine.',
+          ],
+        },
+        'Dans un essai sur 48\u00A0personnes, des montées sur pointes lentes avec une serviette sous les orteils ont donné de meilleurs scores de fonction du pied que l’étirement du fascia plantaire à trois mois, même si les groupes étaient à égalité à six et douze mois.',
+        'Si vous pouvez voir un kinésithérapeute, **le travail manuel des tissus mous est la forme de massage que la recommandation soutient le plus fermement.** À la maison, gardez la balle, mais ne la laissez pas remplacer l’[étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) ni les [montées sur pointes](/fr/montees-sur-pointes-fasciite-plantaire/).',
       ],
       cites: [CITE.rathleff, CITE.guideline],
     },

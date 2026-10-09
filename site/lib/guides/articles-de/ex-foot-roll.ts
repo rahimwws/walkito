@@ -29,7 +29,8 @@ export const EX_FOOT_ROLL_DE: Guide = {
     {
       h2: 'Wie geht das Fußrollen?',
       paragraphs: [
-        'Setz dich auf einen Stuhl, ein Fuß steht auf einem Ball. Ein Tennisball, ein Lacrosseball oder ein Massageball, alles geht. Leg den Ball unter das Gewölbe und roll ihn langsam vom Fußballen nach hinten zur Ferse und wieder nach vorn. Mit festem Druck, nicht leicht. Der Ball sollte so ins Gewebe drücken, dass du einen tiefen, anhaltenden Druck spürst.',
+        'Setz dich auf einen Stuhl, ein Fuß steht auf einem Ball. Ein Tennisball, ein Lacrosseball oder ein Massageball, alles geht. Leg den Ball unter das Gewölbe und roll ihn langsam vom Fußballen nach hinten zur Ferse und wieder nach vorn.',
+        'Mit festem Druck, nicht leicht. Der Ball sollte so ins Gewebe drücken, dass du einen tiefen, anhaltenden Druck spürst.',
         'Roll etwa 2\u00A0Minuten pro Fuß. Halte den Druck gleichmäßig und meide Stellen, die sich scharf anfühlen. Wenn du an einer Stelle zusammenzuckst, nimm Druck raus oder lass sie aus. Das Ziel ist eine feste Massage, kein Schmerz.',
       ],
       exercises: [
@@ -54,7 +55,7 @@ export const EX_FOOT_ROLL_DE: Guide = {
       h2: 'Hilft es bei Plantarfasziitis, einen Ball unter dem Fuß zu rollen?',
       paragraphs: [
         'Physiotherapeuten und Podologen empfehlen das Rollen häufig als Teil der Versorgung bei Plantarfasziitis. Die Idee: Es wirkt wie eine Selbstmassage, übt Druck entlang der Faszie aus, kann die Durchblutung vor Ort steigern und das Gefühl von Verspannung verringern. Viele berichten nach dem Rollen von kurzfristiger Erleichterung.',
-        'Trotzdem hat keine randomisierte Studie das Rollen als alleinige Maßnahme bei Plantarfasziitis getestet. Es steht in Protokollen neben Dehnen und Kräftigen, ist aber nie die Variable, die gemessen wird. Die Leitlinie von 2023 bewertet es nicht eigens. Die Belege liegen beim Dehnen und beim Krafttraining.',
+        'Trotzdem hat **keine randomisierte Studie das Rollen als alleinige Maßnahme bei Plantarfasziitis getestet.** Es steht in Protokollen neben Dehnen und Kräftigen, ist aber nie die Variable, die gemessen wird. Die Leitlinie von 2023 bewertet es nicht eigens. Die Belege liegen beim Dehnen und beim Krafttraining.',
         'Rollen gehört in die Kategorie Erholung. Es ist nützlich nach einem langen Tag auf den Beinen, nach einer Einheit Fersenheben oder immer dann, wenn sich die Sohle verspannt und schmerzhaft anfühlt. Es ersetzt nicht die [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/), die [Wadendehnung](/de/uebungen/wade-dehnen/) oder das [Fersenheben](/de/uebungen/fersenheben/), die die Bewertungen der Leitlinie tragen.',
       ],
       cites: [CITE.guideline],
@@ -63,14 +64,21 @@ export const EX_FOOT_ROLL_DE: Guide = {
       h2: 'Solltest du eine gefrorene Wasserflasche nehmen?',
       paragraphs: [
         'Eine gefrorene Wasserflasche ist eines der beliebtesten Hausmittel bei Plantarfasziitis. Durch ihre Form kannst du die ganze Länge der Sohle rollen, und die Kälte betäubt die Stelle gleichzeitig. Fachleute empfehlen sie oft, und sie fühlt sich gut an.',
-        'Das sagen die Belege tatsächlich. Kältetherapie (Eis, gefrorene Flaschen) ist ein allgemeines Mittel gegen Schmerzen. Sie lindert Beschwerden, indem sie Nervenenden betäubt, und kann Schwellungen vorübergehend verringern. Aber keine randomisierte Studie hat bei Plantarfasziitis eine gefrorene Flasche mit einer Flasche bei Raumtemperatur verglichen. Die Erleichterung, die du spürst, ist wahrscheinlich eine Mischung aus dem Rollen (Druck auf die Faszie) und dem Betäuben (Kälte auf die Nervenenden). Ob die Kälte die Erholung stärker beschleunigt als Rollen allein, ist eine offene Frage.',
-        'Wenn dir eine gefrorene Flasche Erleichterung bringt, nimm sie. Verlass dich nur nicht darauf, dass die Kälte Dehnen und Krafttraining ersetzt. Und kühl nicht länger als 15 bis 20\u00A0Minuten am Stück. Lange Kälte kann die Haut reizen.',
+        'Das sagen die Belege tatsächlich. Kältetherapie (Eis, gefrorene Flaschen) ist ein allgemeines Mittel gegen Schmerzen. Sie lindert Beschwerden, indem sie Nervenenden betäubt, und kann Schwellungen vorübergehend verringern.',
+        'Aber keine randomisierte Studie hat bei Plantarfasziitis eine gefrorene Flasche mit einer Flasche bei Raumtemperatur verglichen. Die Erleichterung, die du spürst, ist wahrscheinlich eine Mischung aus dem Rollen (Druck auf die Faszie) und dem Betäuben (Kälte auf die Nervenenden). Ob die Kälte die Erholung stärker beschleunigt als Rollen allein, ist eine offene Frage.',
+        'Wenn dir eine gefrorene Flasche Erleichterung bringt, nimm sie. **Verlass dich nur nicht darauf, dass die Kälte Dehnen und Krafttraining ersetzt.** Und kühl nicht länger als 15 bis 20\u00A0Minuten am Stück. Lange Kälte kann die Haut reizen.',
       ],
     },
     {
       h2: 'Welchen Ball solltest du nehmen?',
       paragraphs: [
-        'Ein Tennisball ist der häufigste Einstieg. Er ist weich genug, um ins Gewölbe zu drücken, ohne scharf zu sein. Ein Lacrosseball ist fester und gibt mehr Druck. Ein Golfball ist klein und sehr hart und kann für eine schmerzende Ferse zu viel sein.',
+        {
+          list: [
+            'Ein Tennisball ist der häufigste Einstieg. Er ist weich genug, um ins Gewölbe zu drücken, ohne scharf zu sein.',
+            'Ein Lacrosseball ist fester und gibt mehr Druck.',
+            'Ein Golfball ist klein und sehr hart und kann für eine schmerzende Ferse zu viel sein.',
+          ],
+        },
         'Fang mit dem an, was du hast. Wenn sich ein Tennisball nach ein paar Einheiten zu weich anfühlt, probier einen Lacrosseball. Wenn du bei jedem Ball zusammenzuckst, ist er zu fest oder du drückst zu stark. Die Übung sollte sich wie eine tiefe Massage anfühlen, nie so, als würdest du in eine Verletzung hineinreiben.',
         'Eine gefrorene Wasserflasche geht statt eines Balls und bringt Kälte dazu. Eine Faszienrolle unter dem Fuß ist noch sanfter. Eine spezielle Fußrolle aus dem Sportgeschäft macht dasselbe. Für keine davon ist belegt, dass sie besser wirkt als die anderen.',
       ],
@@ -78,9 +86,13 @@ export const EX_FOOT_ROLL_DE: Guide = {
     {
       h2: 'Was sind die häufigsten Fehler beim Fußrollen?',
       paragraphs: [
-        'Zu fest drücken. Fester ist nicht besser. Wenn du drückst, bis der Schmerz 6/10 erreicht oder du das Gesicht verziehst, reizt du die Faszie vielleicht, statt sie zu beruhigen. Geh zurück auf festen, gleichmäßigen Druck.',
-        'Zu schnell rollen. Schnelles Hin und Her springt über das Gewebe hinweg. Roll langsam, etwa eine ganze Bahn pro Sekunde, damit jede Stelle anhaltenden Druck bekommt.',
-        'Es als einzige Übung machen. Rollen fühlt sich produktiv an und geht leicht am Schreibtisch. Aber es kräftigt die Wade nicht und dehnt die Faszie nicht so, wie es die von der Leitlinie bewerteten Übungen tun. Kombinier es mit der [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) und [Wadenheben](/de/wadenheben-plantarfasziitis/) für das ganze Bild.',
+        {
+          list: [
+            '**Zu fest drücken.** Fester ist nicht besser. Wenn du drückst, bis der Schmerz 6/10 erreicht oder du das Gesicht verziehst, reizt du die Faszie vielleicht, statt sie zu beruhigen. Geh zurück auf festen, gleichmäßigen Druck.',
+            '**Zu schnell rollen.** Schnelles Hin und Her springt über das Gewebe hinweg. Roll langsam, etwa eine ganze Bahn pro Sekunde, damit jede Stelle anhaltenden Druck bekommt.',
+            '**Es als einzige Übung machen.** Rollen fühlt sich produktiv an und geht leicht am Schreibtisch. Aber es kräftigt die Wade nicht und dehnt die Faszie nicht so, wie es die von der Leitlinie bewerteten Übungen tun. Kombinier es mit der [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) und [Wadenheben](/de/wadenheben-plantarfasziitis/) für das ganze Bild.',
+          ],
+        },
       ],
       cites: [CITE.guideline],
     },
@@ -88,7 +100,7 @@ export const EX_FOOT_ROLL_DE: Guide = {
       h2: 'Wann solltest du den Fuß rollen und wann nicht?',
       paragraphs: [
         'Roll nach einem langen Tag auf den Beinen, nach einer Einheit Fersenheben oder immer dann, wenn sich die Sohle verspannt anfühlt. In Walkito taucht das Fußrollen an Erholungstagen und am Ende der Einheiten als Cool-down auf.',
-        'Lass das Rollen weg, wenn die Ferse akut geschwollen, gerötet oder warm ist. Diese Zeichen können auf etwas anderes als eine Plantarfasziitis hindeuten, und Druck auf eine entzündete Stelle kann es schlimmer machen. Geh zuerst zu einer medizinischen Fachperson. Alle Übungen, die die Leitlinie empfiehlt, findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
+        '**Lass das Rollen weg, wenn die Ferse akut geschwollen, gerötet oder warm ist.** Diese Zeichen können auf etwas anderes als eine Plantarfasziitis hindeuten, und Druck auf eine entzündete Stelle kann es schlimmer machen. Geh zuerst zu einer medizinischen Fachperson. Alle Übungen, die die Leitlinie empfiehlt, findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
       ],
     },
   ],

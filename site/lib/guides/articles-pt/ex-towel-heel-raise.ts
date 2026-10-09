@@ -30,7 +30,15 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
     {
       h2: 'O que a elevação de calcanhar com toalha trabalha?',
       paragraphs: [
-        'A elevação de calcanhar com toalha trabalha o gastrocnêmio e o sóleo (os dois músculos da panturrilha), o tendão de Aquiles e a fáscia plantar. A toalha enrolada dobra os dedos para cima no alto da elevação, o que puxa a fáscia plantar pelo mecanismo de molinete. Sem a toalha, o exercício treina principalmente a panturrilha. Com ela, a fáscia recebe parte da carga.',
+        'A elevação de calcanhar com toalha trabalha:',
+        {
+          list: [
+            'O gastrocnêmio e o sóleo (os dois músculos da panturrilha).',
+            'O tendão de Aquiles.',
+            'A fáscia plantar.',
+          ],
+        },
+        'A toalha enrolada dobra os dedos para cima no alto da elevação, o que puxa a fáscia plantar pelo mecanismo de molinete. Sem a toalha, o exercício treina principalmente a panturrilha. Com ela, **a fáscia recebe parte da carga.**',
         'É por isso que o ensaio de Rathleff usou a toalha especificamente para fascite plantar, em vez de uma elevação de calcanhar simples. O objetivo é colocar carga em toda a cadeia panturrilha-Aquiles-fáscia ao mesmo tempo. Se a sua dor é no tendão de Aquiles e não embaixo do pé, uma [descida excêntrica do calcanhar](/pt/exercicios/excentrico-calcanhar/), sem a toalha, é um ponto de partida melhor.',
       ],
       cites: [CITE.rathleff],
@@ -39,7 +47,7 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
       h2: 'Como fazer a elevação de calcanhar com toalha?',
       paragraphs: [
         'Enrole uma toalha de mão pequena até formar um rolo da largura do seu punho, mais ou menos. Coloque-a na beira de um degrau. Fique em um pé só com os cinco dedos sobre a toalha e a parte da frente do pé no degrau. Segure em uma parede ou corrimão para se equilibrar.',
-        'Suba em três segundos, empurrando pelo dedão. Segure lá em cima por dois segundos. Desça em três segundos, deixando o calcanhar descer um pouco abaixo do degrau. Esse ritmo lento faz parte do protocolo. Repetições rápidas diminuem a carga no tendão e na fáscia.',
+        'Suba em três segundos, empurrando pelo dedão. Segure lá em cima por dois segundos. Desça em três segundos, deixando o calcanhar descer um pouco abaixo do degrau. **Esse ritmo lento faz parte do protocolo.** Repetições rápidas diminuem a carga no tendão e na fáscia.',
         'No ensaio de Rathleff, os participantes acrescentavam peso com uma mochila quando o peso do corpo sozinho já não deixava a última repetição difícil. “12RM” quer dizer a carga mais pesada que você consegue levantar em exatamente 12\u00A0repetições controladas.',
       ],
       exercises: [
@@ -80,7 +88,7 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
     {
       h2: 'Quais são os erros comuns na elevação de calcanhar com toalha?',
       paragraphs: [
-        'Ir rápido demais é o erro mais comum. Uma descida de três segundos mantém a panturrilha sob tensão por tempo suficiente para ganhar força. Subir e descer quicando transforma o exercício em aeróbico, não em força.',
+        '**Ir rápido demais é o erro mais comum.** Uma descida de três segundos mantém a panturrilha sob tensão por tempo suficiente para ganhar força. Subir e descer quicando transforma o exercício em aeróbico, não em força.',
         'Deixar a toalha escorregar, de modo que só um ou dois dedos fiquem sobre ela, diminui a carga na fáscia. Os cinco dedos devem ficar sobre a toalha. Se a toalha continua escorregando, dobre mais grosso ou use uma toalha de mão em vez de uma toalha de banho.',
         'Começar em uma perna quando a elevação com os dois pés ainda é difícil leva a uma técnica ruim e a compensações. Se a elevação em uma perna no degrau é demais agora, comece com a [elevação de calcanhar com os dois pés](/pt/exercicios/elevacao-de-calcanhar/) no chão e vá subindo.',
       ],
@@ -88,7 +96,16 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
     {
       h2: 'Versões mais fáceis e mais difíceis',
       paragraphs: [
-        'Se a elevação de calcanhar com toalha completa no degrau é difícil demais, volte pela cadeia da panturrilha. A [elevação de calcanhar sentado](/pt/exercicios/elevacao-de-calcanhar/) é a de menor carga. A elevação em pé com os dois pés vem depois. Depois, a elevação de calcanhar sustentada lá em cima. Depois, a elevação em uma perna com toalha no degrau. Cada degrau deve parecer tranquilo por duas sessões antes de você subir.',
+        'Se a elevação de calcanhar com toalha completa no degrau é difícil demais, volte pela cadeia da panturrilha:',
+        {
+          list: [
+            'A [elevação de calcanhar sentado](/pt/exercicios/elevacao-de-calcanhar/) é a de menor carga.',
+            'A elevação em pé com os dois pés vem depois.',
+            'Depois, a elevação de calcanhar sustentada lá em cima.',
+            'Depois, a elevação em uma perna com toalha no degrau.',
+          ],
+        },
+        'Cada degrau deve parecer tranquilo por duas sessões antes de você subir.',
         'Se o peso do corpo em uma perna for fácil demais, acrescente carga. O ensaio de Rathleff usou uma mochila com livros ou garrafas de água. Quem tem acesso a academia pode usar uma máquina de panturrilha ou um colete com peso. O objetivo é que a última repetição de cada série seja de verdade a última que você consegue fazer com boa técnica.',
       ],
     },
@@ -98,7 +115,7 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
       paragraphs: [
         'O ensaio de Rathleff de 2015 é o único ensaio randomizado que testou a elevação de calcanhar com toalha especificamente na fascite plantar. Em 48\u00A0pessoas com fascite plantar confirmada por ultrassom, o grupo da elevação teve 29\u00A0pontos a mais de melhora no Foot Function Index aos três meses do que o grupo que só alongava. Aos doze meses, os dois grupos tinham se igualado.',
         'A diretriz de 2023 para dor no calcanhar revisou essa e outras evidências e deu ao treino de força o grau **B** e ao alongamento o grau **A**. Os dois são recomendados. A diretriz não destaca a variante com toalha, mas ela é o único exercício de força testado em um ensaio próprio de fascite plantar.',
-        'Nada na evidência diz que esse exercício deve substituir o alongamento. A abordagem mais forte são os dois: um [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) para a rigidez da manhã e a elevação com carga para construir capacidade. Para a lista completa de exercícios e como eles se encaixam, veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
+        'Nada na evidência diz que esse exercício deve substituir o alongamento. **A abordagem mais forte são os dois:** um [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) para a rigidez da manhã e a elevação com carga para construir capacidade. Para a lista completa de exercícios e como eles se encaixam, veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
       ],
       sourceNote:
         'Rathleff 2015: diferença de 29\u00A0pontos no FFI aos 3\u00A0meses (IC 95%: 6-52, p = 0,016). Aos 12\u00A0meses: 22 contra 16, sem diferença significativa.',

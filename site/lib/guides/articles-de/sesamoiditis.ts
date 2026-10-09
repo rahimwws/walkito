@@ -43,7 +43,7 @@ export const SESAMOIDITIS_DE: Guide = {
       keyFact: 'Etwa 1 von 10\u00A0Menschen hat ein zweigeteiltes Sesambein, eine normale Variante, die auf dem Röntgenbild wie ein Bruch aussehen kann, aber glatte, abgerundete Kanten hat statt gezackter (Yammine, 2015).',
       paragraphs: [
         'Die Sesamoiditis ist eine Überlastungsbeschwerde. Der Schmerz kommt langsam und tut bei Belastung weh. Ein Bruch des Sesambeins ist ein Riss im Knochen, meist durch ein einzelnes akutes Ereignis oder durch dauerhafte Überlastung. Der Schmerz bei einem Bruch ist eher stechend und kann auch in Ruhe da sein.',
-        'Eine Schwierigkeit: Etwa 1 von 10\u00A0Menschen hat ein zweigeteiltes Sesambein, das innere Sesambein besteht also von Natur aus aus zwei Teilen. Auf dem Röntgenbild sieht ein zweigeteiltes Sesambein wie ein Bruch aus. Der Unterschied liegt in den Kanten: Beim zweigeteilten Sesambein sind sie glatt und abgerundet, bei einem Bruch gezackt und unregelmäßig. Deine Fachperson röntgt vielleicht auch den anderen Fuß zum Vergleich.',
+        'Eine Schwierigkeit: Etwa 1 von 10\u00A0Menschen hat ein zweigeteiltes Sesambein, das innere Sesambein besteht also von Natur aus aus zwei Teilen. Auf dem Röntgenbild sieht ein zweigeteiltes Sesambein wie ein Bruch aus. Der Unterschied liegt in den Kanten: **Beim zweigeteilten Sesambein sind sie glatt und abgerundet, bei einem Bruch gezackt und unregelmäßig.** Deine Fachperson röntgt vielleicht auch den anderen Fuß zum Vergleich.',
         'Wenn das Röntgenbild unklar ist, können eine Knochenszintigrafie oder ein MRT die Diagnose bestätigen. Ein MRT zeigt ein Knochenmarködem, also eine Schwellung im Inneren des Knochens, die in den meisten Fällen von Sesamoiditis vorliegt. Ein MRT bleibt meist Fällen vorbehalten, in denen die Beschwerden trotz erster Behandlung anhalten.',
       ],
       cites: [CITE.yammineSesamoid],
@@ -52,7 +52,15 @@ export const SESAMOIDITIS_DE: Guide = {
       h2: 'Wie sieht die konservative Behandlung aus?',
       keyFact: 'Eine Übersichtsarbeit von 2025, die 11\u00A0Studien mit 59\u00A0Patienten zusammenfasste, fand, dass sich die Schmerzwerte in etwa 66\u00A0% der konservativ behandelten Fälle verbesserten, Rückfälle aber häufig waren (Biz und Kollegen, 2025).',
       paragraphs: [
-        'Die systematische Übersichtsarbeit von Biz und Kollegen von 2025 fasste Einzeldaten aus 11\u00A0Studien mit 59\u00A0Patienten zusammen. Die häufigsten Behandlungen waren Einlagen, angepasste Aktivität und Kortisonspritzen. Die Schmerzwerte verbesserten sich in etwa 66\u00A0% der Fälle, aber Rückfälle waren häufig, und einige Patienten hatten weiter Beschwerden.',
+        'Die systematische Übersichtsarbeit von Biz und Kollegen von 2025 fasste Einzeldaten aus 11\u00A0Studien mit 59\u00A0Patienten zusammen. Die häufigsten Behandlungen waren:',
+        {
+          list: [
+            'Einlagen.',
+            'Angepasste Aktivität.',
+            'Kortisonspritzen.',
+          ],
+        },
+        '**Die Schmerzwerte verbesserten sich in etwa 66\u00A0% der Fälle, aber Rückfälle waren häufig,** und einige Patienten hatten weiter Beschwerden.',
         'Die Übersichtsarbeit fand, dass Einlagen und Entlastung in fast jedem Fall genutzt wurden. Kortisonspritzen brachten eine kurzfristige Linderung, aber mit Rückfallrisiko. Keine Behandlung wurde in einer randomisierten Studie direkt mit einer anderen verglichen. Die Autoren kamen zu dem Schluss, dass einheitliche Protokolle und hochwertigere Studien nötig sind.',
         'Eine Operation, meist die teilweise oder vollständige Entfernung des Sesambeins (Sesamoidektomie), wird erst erwogen, wenn mehrere Monate konservativer Behandlung nicht geholfen haben. Die meisten Fachleute versuchen zuerst mindestens drei bis sechs Monate ohne Operation.',
       ],
@@ -64,7 +72,7 @@ export const SESAMOIDITIS_DE: Guide = {
       h2: 'Was ist ein Tänzerpolster, und wie wirkt es?',
       paragraphs: [
         'Ein Tänzerpolster (englisch „dancer\'s pad“) ist ein flaches Polster aus Filz oder Schaumstoff mit einer U-förmigen Aussparung unter dem ersten Mittelfußköpfchen. Die Aussparung sitzt genau über dem Bereich der Sesambeine, sodass das Polster den umliegenden Vorfuß anhebt und den direkten Druck von der schmerzenden Stelle nimmt. Der Name kommt aus dem Ballett, wo der Vorfuß extrem belastet wird.',
-        'Du kannst fertig zugeschnittene Tänzerpolster kaufen oder dir eines von einer Fachperson passend für deinen Fuß zuschneiden lassen. Die Position zählt: Die Aussparung muss direkt unter den Sesambeinen sitzen, nicht zu weit vorn oder hinten. Manche nutzen das Polster lose im Schuh, andere lassen es in eine Maßeinlage einarbeiten.',
+        'Du kannst fertig zugeschnittene Tänzerpolster kaufen oder dir eines von einer Fachperson passend für deinen Fuß zuschneiden lassen. Die Position zählt: **Die Aussparung muss direkt unter den Sesambeinen sitzen**, nicht zu weit vorn oder hinten. Manche nutzen das Polster lose im Schuh, andere lassen es in eine Maßeinlage einarbeiten.',
         'Ein Schuh mit steifer Sohle oder Abrollsohle verringert, wie stark sich das Großzehengrundgelenk beim Abdrücken beugt, und begrenzt so die Last auf die Sesambeine. Aus demselben Grund hilft es, in der Phase mit Beschwerden weiche Schuhe mit dünner Sohle und hohe Absätze zu meiden.',
       ],
     },
@@ -72,7 +80,15 @@ export const SESAMOIDITIS_DE: Guide = {
       h2: 'Spielen die Schuhe eine Rolle?',
       paragraphs: [
         'Schuhe spielen eine unterstützende Rolle. Ein Schuh mit steifer Sohle begrenzt die Bewegung im ersten Metatarsophalangealgelenk (dem Großzehengrundgelenk), was die Belastung der Sesambeine direkt senkt. Abrollsohlen erreichen dasselbe, indem sie den Fuß durch den Abdruck rollen, ohne dass sich die Zehe beugen muss.',
-        'Meide Schuhe, die im Vorfuß weich nachgeben, sehr flach sind oder eine dünne Sohle haben. Hohe Absätze verlagern das Gewicht nach vorn auf den Fußballen und erhöhen die Last auf die Sesambeine. Wenn Laufen das Problem ausgelöst hat, kann ein vorübergehender Wechsel zu einem Schuh mit mehr Dämpfung im Vorfuß und höherer Sohle helfen, solange die Beschwerden abklingen.',
+        'Meide Schuhe, die:',
+        {
+          list: [
+            'Im Vorfuß weich nachgeben.',
+            'Sehr flach sind.',
+            'Eine dünne Sohle haben.',
+          ],
+        },
+        'Hohe Absätze verlagern das Gewicht nach vorn auf den Fußballen und erhöhen die Last auf die Sesambeine. Wenn Laufen das Problem ausgelöst hat, kann ein vorübergehender Wechsel zu einem Schuh mit mehr Dämpfung im Vorfuß und höherer Sohle helfen, solange die Beschwerden abklingen.',
         'Diese Änderungen allein lösen das Problem nicht, wenn die Reizung stark ist, aber sie senken die Last, die das Problem überhaupt erst verursacht hat.',
       ],
     },
@@ -81,14 +97,14 @@ export const SESAMOIDITIS_DE: Guide = {
       paragraphs: [
         'Die ehrliche Antwort: Übungen spielen bei der Behandlung der Sesamoiditis selbst eine begrenzte Rolle. Anders als bei [Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder [Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/), wo Belastungsprogramme gut durch Studien gestützt sind, gibt es keine Übungsstudien zur Sesamoiditis. Die systematische Übersichtsarbeit von 2025 fand keine Studie, die ein bestimmtes Übungsprotokoll getestet hat.',
         'Wobei Übungen helfen können, ist das Drumherum. Eine verkürzte Wade verlagert beim Gehen Gewicht auf den Vorfuß. Den Gastrocnemius und den Soleus zu dehnen, kann diese Last nach vorn verringern. Schwache innere Fußmuskeln können ebenfalls zu einer ungleichmäßigen Druckverteilung im Vorfuß beitragen. Zehenspreizen und die Kurzer-Fuß-Übung können helfen, die Last gleichmäßiger auf die Mittelfußköpfchen zu verteilen, auch wenn das nicht speziell bei Sesamoiditis getestet wurde.',
-        'Wenn du dich von einer Sesamoiditis erholst und in der Ruhephase Kraft in den Zehen oder Beweglichkeit in der Wade verloren hast, können sanfte Übungen für den [Fußballen](/de/metatarsalgie-vorfussschmerzen/) Teil eines Plans für die Rückkehr zur Aktivität sein. Aber Entlastung und angepasste Aktivität sind die wichtigsten Werkzeuge, nicht Übungen.',
+        'Wenn du dich von einer Sesamoiditis erholst und in der Ruhephase Kraft in den Zehen oder Beweglichkeit in der Wade verloren hast, können sanfte Übungen für den [Fußballen](/de/metatarsalgie-vorfussschmerzen/) Teil eines Plans für die Rückkehr zur Aktivität sein. Aber **Entlastung und angepasste Aktivität sind die wichtigsten Werkzeuge, nicht Übungen.**',
       ],
     },
     {
       h2: 'Wie hängt die Sesamoiditis mit anderen Vorfußbeschwerden zusammen?',
       paragraphs: [
         'Der Schmerz bei Sesamoiditis sitzt unter der großen Zehe. Das unterscheidet ihn von allgemeineren [Schmerzen im Fußballen](/de/metatarsalgie-vorfussschmerzen/) (Metatarsalgie), bei denen der Schmerz meist unter dem zweiten und dritten Mittelfußköpfchen sitzt. Ein [Morton-Neurom](/de/morton-neurom/) verursacht Kribbeln oder Brennen zwischen der dritten und vierten Zehe, nicht unter der großen Zehe.',
-        'Auch Gicht kann das Großzehengrundgelenk betreffen und fühlt sich anfangs ähnlich an, aber Gicht kommt plötzlich, oft über Nacht, mit Rötung, Schwellung und Wärme. Eine Sesamoiditis entwickelt sich langsam. Wenn der Beginn plötzlich war und das Gelenk rot und warm ist, geh zu einer Fachperson, um Gicht oder eine Infektion auszuschließen.',
+        'Auch Gicht kann das Großzehengrundgelenk betreffen und fühlt sich anfangs ähnlich an, aber Gicht kommt plötzlich, oft über Nacht, mit Rötung, Schwellung und Wärme. Eine Sesamoiditis entwickelt sich langsam. **Wenn der Beginn plötzlich war und das Gelenk rot und warm ist, geh zu einer Fachperson, um Gicht oder eine Infektion auszuschließen.**',
         'Ein Hallux rigidus, also Steifigkeit und Arthrose im Großzehengrundgelenk, kann ebenfalls an einer ähnlichen Stelle Schmerzen verursachen, betrifft aber das Gelenk selbst und nicht die Sesambeine darunter.',
       ],
     },

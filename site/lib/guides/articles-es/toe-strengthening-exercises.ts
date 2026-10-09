@@ -30,10 +30,12 @@ export const TOE_STRENGTHENING_ES: Guide = {
       keyFact:
         'En un estudio de un año con 312\u00A0adultos de 60 a 90\u00A0años, quienes se cayeron tenían el dedo gordo más débil (11,6 frente a 14,8\u00A0por ciento del peso corporal) que quienes no se cayeron (Mickle y colegas, 2009).',
       paragraphs: [
-        'La fuerza de los dedos importa sobre todo para el equilibrio y para impulsarte al caminar. Los dedos son la última parte del pie que se despega del piso en cada paso, y cuando estás parado presionan hacia abajo para frenar pequeños balanceos.',
-        'La evidencia más clara viene de adultos mayores. Un equipo australiano midió la fuerza de los dedos en 312\u00A0personas de 60 a 90\u00A0años y después registró quién se cayó durante los siguientes 12\u00A0meses. 107 de ellas (35\u00A0por ciento) tuvieron una caída. En promedio, quienes se cayeron podían presionar con el dedo gordo con el 11,6\u00A0por ciento de su peso corporal, frente al 14,8\u00A0por ciento de quienes no se cayeron. Los dedos pequeños mostraron el mismo patrón. Un estudio anterior con 176\u00A0personas con una edad media de 80\u00A0años encontró que la debilidad de los flexores plantares de los dedos (los músculos que presionan los dedos hacia abajo) se asociaba con caídas incluso después de tomar en cuenta otros factores de riesgo de caídas, como la vista, el tiempo de reacción, la fuerza y la edad.',
+        '**La fuerza de los dedos importa sobre todo para el equilibrio y para impulsarte al caminar.** Los dedos son la última parte del pie que se despega del piso en cada paso, y cuando estás parado presionan hacia abajo para frenar pequeños balanceos.',
+        'La evidencia más clara viene de adultos mayores. Un equipo australiano midió la fuerza de los dedos en 312\u00A0personas de 60 a 90\u00A0años y después registró quién se cayó durante los siguientes 12\u00A0meses. 107 de ellas (35\u00A0por ciento) tuvieron una caída. En promedio, quienes se cayeron podían presionar con el dedo gordo con el 11,6\u00A0por ciento de su peso corporal, frente al 14,8\u00A0por ciento de quienes no se cayeron. Los dedos pequeños mostraron el mismo patrón.',
+        'Un estudio anterior con 176\u00A0personas con una edad media de 80\u00A0años encontró que la debilidad de los flexores plantares de los dedos (los músculos que presionan los dedos hacia abajo) se asociaba con caídas incluso después de tomar en cuenta otros factores de riesgo de caídas, como la vista, el tiempo de reacción, la fuerza y la edad.',
         'Una revisión de 2026 de 14\u00A0estudios de cohorte en adultos de 60\u00A0años o más combinó los datos y encontró que tener débiles los músculos del dedo gordo se asociaba con cerca de 1,65\u00A0veces más probabilidades de una caída futura. Los autores aclararon con cuidado que muchos de los estudios no ajustaron por otras causas, así que los dedos débiles pueden ser en parte una señal de fragilidad general.',
-        'En cuanto al equilibrio, una revisión de 2020 de nueve estudios encontró que unos flexores de los dedos más fuertes iban de la mano con un mejor equilibrio en todos los estudios incluidos. Todos esos estudios fueron en personas mayores de 60\u00A0años, así que la relación en adultos más jóvenes no se ha probado de la misma forma. En otro estudio con 305\u00A0personas de 65 a 93\u00A0años, la fuerza del dedo gordo fue uno de los dos predictores más constantes de cómo les fue en las pruebas de equilibrio y de marcha.',
+        'En cuanto al equilibrio, una revisión de 2020 de nueve estudios encontró que unos flexores de los dedos más fuertes iban de la mano con un mejor equilibrio en todos los estudios incluidos. Todos esos estudios fueron en personas mayores de 60\u00A0años, así que la relación en adultos más jóvenes no se ha probado de la misma forma.',
+        'En otro estudio con 305\u00A0personas de 65 a 93\u00A0años, la fuerza del dedo gordo fue uno de los dos predictores más constantes de cómo les fue en las pruebas de equilibrio y de marcha.',
       ],
       sourceNote:
         'Mickle 2009: fuerza medida en una plataforma de presión como porcentaje del peso corporal, medias con DE de 6,9 y 7,8. Valeriani 2026: debilidad de los flexores plantares del dedo gordo, OR combinado 1,65 (IC 95\u00A0% 1,14 a 2,38). Quinlan 2020: 7\u00A0estudios transversales, 2\u00A0ensayos aleatorizados, 1\u00A0estudio de casos y controles, sin metaanálisis.',
@@ -42,17 +44,32 @@ export const TOE_STRENGTHENING_ES: Guide = {
     {
       h2: '¿Los dedos débiles tienen relación con el dolor de talón?',
       paragraphs: [
-        'Los dedos débiles sí aparecen en personas con fascitis plantar (dolor bajo el talón, donde se inserta la fascia plantar, una banda gruesa que recorre la planta). En un estudio de 2003 con 20\u00A0personas con fascitis plantar en un pie, el pie con dolor tenía los flexores de los dedos más débiles que el otro pie y que 20\u00A0personas comparables sin dolor. Un estudio más grande de 2015 comparó a 202\u00A0personas con dolor plantar de talón con 70 sin ese dolor. En promedio, el grupo con dolor de talón tenía los flexores de los dedos más débiles, los tobillos más rígidos y un índice de masa corporal (peso en relación con la estatura) más alto.',
-        'Ninguno de los dos estudios puede decir qué llegó primero, y los autores de ambos lo dicen claramente: la debilidad podría contribuir al dolor, o el dolor podría hacer que la gente use menos los dedos. Fortalecer los dedos es una parte razonable de un plan para el dolor de talón, pero los ejercicios mejor probados para la fascitis plantar siguen siendo los estiramientos de pantorrilla y de fascia plantar y las elevaciones de talón de [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/). Una revisión de 2017 sobre entrenamiento de fuerza para la fascitis plantar no pudo determinar cuánto ayuda por sí solo el entrenamiento de los músculos del pie a las personas con dolor de talón.',
+        'Los dedos débiles sí aparecen en personas con fascitis plantar (dolor bajo el talón, donde se inserta la fascia plantar, una banda gruesa que recorre la planta). En un estudio de 2003 con 20\u00A0personas con fascitis plantar en un pie, el pie con dolor tenía los flexores de los dedos más débiles que el otro pie y que 20\u00A0personas comparables sin dolor.',
+        'Un estudio más grande de 2015 comparó a 202\u00A0personas con dolor plantar de talón con 70 sin ese dolor. En promedio, el grupo con dolor de talón tenía:',
+        {
+          list: [
+            'Los flexores de los dedos más débiles.',
+            'Los tobillos más rígidos.',
+            'Un índice de masa corporal (peso en relación con la estatura) más alto.',
+          ],
+        },
+        '**Ninguno de los dos estudios puede decir qué llegó primero**, y los autores de ambos lo dicen claramente: la debilidad podría contribuir al dolor, o el dolor podría hacer que la gente use menos los dedos.',
+        'Fortalecer los dedos es una parte razonable de un plan para el dolor de talón, pero los ejercicios mejor probados para la fascitis plantar siguen siendo los estiramientos de pantorrilla y de fascia plantar y las elevaciones de talón de [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/). Una revisión de 2017 sobre entrenamiento de fuerza para la fascitis plantar no pudo determinar cuánto ayuda por sí solo el entrenamiento de los músculos del pie a las personas con dolor de talón.',
       ],
       cites: [CITE.allenGross, CITE.sullivanHeel, CITE.guideline, CITE.hufferReview],
     },
     {
       h2: '¿Qué músculos mueven los dedos de los pies?',
       paragraphs: [
-        'Dos grupos de músculos mueven los dedos. Los músculos intrínsecos empiezan y terminan dentro del pie. Están en capas bajo la planta, y los más conocidos son el abductor del dedo gordo (que separa el dedo gordo de los demás) y los flexores cortos de los dedos. Los músculos extrínsecos empiezan en la pierna y llegan a los dedos por tendones largos que pasan junto al tobillo.',
+        'Dos grupos de músculos mueven los dedos:',
+        {
+          list: [
+            '**Músculos intrínsecos:** empiezan y terminan dentro del pie. Están en capas bajo la planta, y los más conocidos son el abductor del dedo gordo (que separa el dedo gordo de los demás) y los flexores cortos de los dedos.',
+            '**Músculos extrínsecos:** empiezan en la pierna y llegan a los dedos por tendones largos que pasan junto al tobillo.',
+          ],
+        },
         'Cuando encoges los dedos con fuerza, los dos grupos trabajan juntos. Por eso a los investigadores les cuesta tanto medir la fuerza intrínseca por separado: una revisión de 2012 concluyó que no está claro si algún método puede separar del todo los dos grupos. Un artículo de medicina deportiva de 2015 llama a los músculos intrínsecos el core del pie porque, igual que los músculos profundos del tronco, hacen ajustes pequeños y constantes más que grandes movimientos.',
-        'Por eso un buen programa para los dedos combina trabajo de control (separar los dedos, levantar el dedo gordo) con trabajo de fuerza (recoger la toalla, presionar los dedos con carga) que usa los dos grupos.',
+        'Por eso **un buen programa para los dedos combina trabajo de control (separar los dedos, levantar el dedo gordo) con trabajo de fuerza (recoger la toalla, presionar los dedos con carga)** que usa los dos grupos.',
       ],
       cites: [CITE.soysaFootStrength, CITE.mcKeon, CITE.gooding],
     },
@@ -166,10 +183,17 @@ export const TOE_STRENGTHENING_ES: Guide = {
       keyFact:
         'En un ensayo con 118\u00A0corredores recreativos, quienes no hicieron el programa para el pie tuvieron 2,42\u00A0veces más probabilidades de lesionarse en un año (Taddei y colegas, 2020).',
       paragraphs: [
-        'Los ejercicios para fortalecer los dedos pueden aumentar su fuerza, pero solo cuando el trabajo se vuelve más difícil con el tiempo. En un ensayo de 2016, 85\u00A0adultos de 60 a 90\u00A0años se dividieron entre un programa supervisado con resistencia que aumentaba a lo largo de tres meses y un programa de ejercicio en casa. El grupo supervisado ganó hasta un 36\u00A0por ciento de fuerza en los dedos y aguantó más tiempo parado en una pierna. El grupo en casa, y un grupo control aparte de 32\u00A0personas, no mostraron cambios en la fuerza de los dedos. Los autores señalaron que todavía hacía falta un ensayo que contara caídas.',
+        'Los ejercicios para fortalecer los dedos pueden aumentar su fuerza, pero **solo cuando el trabajo se vuelve más difícil con el tiempo.**',
+        'En un ensayo de 2016, 85\u00A0adultos de 60 a 90\u00A0años se dividieron entre un programa supervisado con resistencia que aumentaba a lo largo de tres meses y un programa de ejercicio en casa. El grupo supervisado ganó hasta un 36\u00A0por ciento de fuerza en los dedos y aguantó más tiempo parado en una pierna. El grupo en casa, y un grupo control aparte de 32\u00A0personas, no mostraron cambios en la fuerza de los dedos. Los autores señalaron que todavía hacía falta un ensayo que contara caídas.',
         'Los corredores también responden. En un ensayo de 2019 con 57\u00A0corredores, tanto un programa para fortalecer el pie hecho al menos cinco veces por semana como cambiar a caminar con zapatos minimalistas (zapatos delgados, planos y flexibles) aumentaron el tamaño y la fuerza de los músculos del pie en dos meses, mientras que el grupo control se quedó igual. Algunos músculos ya eran más grandes en un mes. Si te interesa la opción del calzado, mira [zapatos barefoot](/es/zapatos-barefoot/).',
         'En lesiones, el resultado individual más fuerte viene de un ensayo de 2020 con 118\u00A0corredores recreativos. Quienes no recibieron el programa de pie y tobillo tuvieron 2,42\u00A0veces más probabilidades de sufrir una lesión por correr en 12\u00A0meses que quienes sí lo hicieron. Es un solo ensayo, y el programa entrenaba todo el pie y el tobillo, no solo los dedos. Los corredores pueden leer más en [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/).',
-        'El panorama general es menos seguro. Una revisión de 2022 calificó con certeza muy baja la evidencia de que entrenar los músculos del pie mejore el equilibrio dinámico. Una revisión de 2025 de 16\u00A0ensayos en personas mayores encontró que los ejercicios de pie y tobillo mejoraron la fuerza del tobillo y el equilibrio con los ojos abiertos, pero los dos ensayos que contaron caídas no encontraron un efecto claro. Esa revisión sí notó que los ejercicios para fortalecer los dedos y entrenar tres veces por semana parecían importar para el equilibrio.',
+        'El panorama general es menos seguro:',
+        {
+          list: [
+            '**Una revisión de 2022** calificó con certeza muy baja la evidencia de que entrenar los músculos del pie mejore el equilibrio dinámico.',
+            '**Una revisión de 2025** de 16\u00A0ensayos en personas mayores encontró que los ejercicios de pie y tobillo mejoraron la fuerza del tobillo y el equilibrio con los ojos abiertos, pero los dos ensayos que contaron caídas no encontraron un efecto claro. Esa revisión sí notó que los ejercicios para fortalecer los dedos y entrenar tres veces por semana parecían importar para el equilibrio.',
+          ],
+        },
       ],
       sourceNote:
         'Mickle 2016: 43 supervisados, 42 en casa, 32 controles no aleatorizados; el 80\u00A0por ciento de los participantes de intervención completó el seguimiento. Ridge 2019: tamaño muscular del pie por ecografía, fuerza con dinamómetros hechos a medida. Taddei 2020: el grupo control tuvo 2,42\u00A0veces (IC 95\u00A0% 1,98 a 3,62) más probabilidades de una lesión relacionada con correr en 12\u00A0meses. Liang 2025: 16 artículos, 651 participantes, GRADE de bajo a muy bajo.',
@@ -178,8 +202,17 @@ export const TOE_STRENGTHENING_ES: Guide = {
     {
       h2: '¿Los ejercicios de dedos ayudan a prevenir caídas?',
       paragraphs: [
-        'No se ha demostrado que los ejercicios de dedos prevengan caídas por sí solos. Los dedos débiles se asocian con caídas en estudios de cohorte, y el entrenamiento puede aumentar la fuerza de los dedos, pero no encontramos ningún ensayo que probara un programa solo de dedos con las caídas como resultado.',
-        'La prueba más cercana es un ensayo de 2011 con 305\u00A0personas mayores con dolor de pie incapacitante. La mitad recibió un paquete con plantillas ortopédicas, consejos de calzado con un vale para zapatos, un programa de ejercicios de pie y tobillo en casa y un folleto sobre caídas. Tuvieron un 36\u00A0por ciento menos caídas en 12\u00A0meses que las personas que recibieron la atención podológica de rutina. La proporción de personas que se cayeron al menos una vez no fue claramente distinta. Como el ejercicio era solo una parte del paquete, el ensayo no puede decir cuánto aportaron los ejercicios por sí mismos.',
+        '**No se ha demostrado que los ejercicios de dedos prevengan caídas por sí solos.** Los dedos débiles se asocian con caídas en estudios de cohorte, y el entrenamiento puede aumentar la fuerza de los dedos, pero no encontramos ningún ensayo que probara un programa solo de dedos con las caídas como resultado.',
+        'La prueba más cercana es un ensayo de 2011 con 305\u00A0personas mayores con dolor de pie incapacitante. La mitad recibió un paquete con:',
+        {
+          list: [
+            'Plantillas ortopédicas.',
+            'Consejos de calzado con un vale para zapatos.',
+            'Un programa de ejercicios de pie y tobillo en casa.',
+            'Un folleto sobre caídas.',
+          ],
+        },
+        'Tuvieron un 36\u00A0por ciento menos caídas en 12\u00A0meses que las personas que recibieron la atención podológica de rutina. La proporción de personas que se cayeron al menos una vez no fue claramente distinta. Como el ejercicio era solo una parte del paquete, el ensayo no puede decir cuánto aportaron los ejercicios por sí mismos.',
         'Si ya tuviste una caída o te sientes inestable, el trabajo de dedos es un complemento sensato, pero primero debe venir una evaluación de riesgo de caídas con un profesional de la salud. Los ejercicios de esta página no son un programa de prevención de caídas.',
       ],
       sourceNote: 'Spink 2011: razón de tasas de incidencia 0,64 (IC 95\u00A0% 0,45 a 0,91); proporción de personas que se cayeron RR 0,85 (0,66 a 1,08).',
@@ -189,7 +222,7 @@ export const TOE_STRENGTHENING_ES: Guide = {
       h2: '¿Con qué frecuencia hacer ejercicios para fortalecer los dedos?',
       paragraphs: [
         'Los ejercicios para fortalecer los dedos se suelen hacer de tres a cinco veces por semana. La revisión de 2025 de ensayos en personas mayores encontró que entrenar tres veces por semana parecía importar para el equilibrio, y el ensayo de 2019 con corredores usó al menos cinco sesiones por semana. Las sesiones pueden ser cortas: de cinco a diez minutos es más que suficiente para el trabajo de dedos y arco.',
-        'Cuenta con unos meses, no unas cuantas sesiones: los estudios de arriba midieron sus principales mejoras después de dos a tres meses. Vuelve a hacerte las pruebas caseras de arriba más o menos una vez al mes para ver qué está cambiando.',
+        '**Cuenta con unos meses, no unas cuantas sesiones**: los estudios de arriba midieron sus principales mejoras después de dos a tres meses. Vuelve a hacerte las pruebas caseras de arriba más o menos una vez al mes para ver qué está cambiando.',
         'Si tus dedos están doblados o rígidos, empieza con [ejercicios para dedo en martillo](/es/ejercicios-dedo-en-martillo/) o [ejercicios para juanetes](/es/ejercicios-juanetes/), que cubren esas formas. Para un plan más amplio que agrega la pantorrilla y el tobillo, mira [ejercicios para fortalecer los pies](/es/ejercicios-para-fortalecer-los-pies/).',
       ],
       cites: [CITE.liangFootAnkle, CITE.ridgeMinimalist, CITE.mickleToe],

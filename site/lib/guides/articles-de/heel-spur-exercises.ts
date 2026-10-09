@@ -39,7 +39,7 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
       h2: 'Warum helfen Übungen bei Fersensporn?',
       keyFact: 'In einer Studie mit 530\u00A0Menschen mit Fußschmerzen kam ein Fersensporn nur an 6\u00A0% der Füße allein vor, meist zusammen mit einer verdickten Plantarfaszie (Menz und Kollegen, 2019).',
       paragraphs: [
-        'Der Fersensporn ist ein knöcherner Auswuchs an der Unterseite des Fersenbeins. In einer Studie mit 530\u00A0Menschen ab 50 mit Fußschmerzen war ein Fersensporn allein selten (6\u00A0% der Füße), und Fersenschmerzen hingen mit einem Sporn zusammen mit einer verdickten Plantarfaszie zusammen, dem Gewebeband unter dem Fuß (Menz und Kollegen, 2019). Der Schmerz kommt aus dem Weichgewebe, und genau das können Übungen erreichen.',
+        'Der Fersensporn ist ein knöcherner Auswuchs an der Unterseite des Fersenbeins. In einer Studie mit 530\u00A0Menschen ab 50 mit Fußschmerzen war ein Fersensporn allein selten (6\u00A0% der Füße), und Fersenschmerzen hingen mit einem Sporn zusammen mit einer verdickten Plantarfaszie zusammen, dem Gewebeband unter dem Fuß (Menz und Kollegen, 2019). **Der Schmerz kommt aus dem Weichgewebe, und genau das können Übungen erreichen.**',
         'Dehnen von Plantarfaszie und Wade senkt die Spannung am Ansatz an der Ferse. Kräftigen der Wade baut die Belastbarkeit der Kette auf, die bei jedem Fersenaufsatz die Last abfängt. Zusammen senken sie die tägliche Belastung des Gewebes rund um den Sporn.',
         'Kein Übungsprogramm lässt einen Sporn auf dem Röntgenbild verschwinden. Aber die meisten Menschen mit Fersensporn brauchen das auch nicht. Sie brauchen, dass der Schmerz abklingt, und das kommt daher, dass Faszie und Wade kräftiger und beweglicher werden.',
       ],
@@ -95,7 +95,8 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
       h2: 'Welche Kräftigungsübungen helfen bei Fersensporn-Schmerzen?',
       keyFact: 'In einer Studie mit 48\u00A0Personen schnitt die Fersenheben-Gruppe nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab als die Gruppe, die nur dehnte (Rathleff und Kollegen, 2015).',
       paragraphs: [
-        'In den ersten Wochen reicht Dehnen allein oft aus. Sobald der Morgenschmerz nachlässt, baut Wadenkrafttraining die Belastbarkeit auf, die die Kette rund um die Ferse braucht. Die Leitlinie bewertet Krafttraining mit **B**, ihrer zweitbesten Bewertung. In der einzigen Studie, die gezielt Fersenheben bei Plantarfasziitis getestet hat, wurden 48\u00A0Personen in eine Gruppe mit belastetem Fersenheben und eine Gruppe nur mit Dehnen aufgeteilt. Die Fersenheben-Gruppe schnitt nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab (Rathleff und Kollegen, 2015).',
+        'In den ersten Wochen reicht Dehnen allein oft aus. Sobald der Morgenschmerz nachlässt, baut Wadenkrafttraining die Belastbarkeit auf, die die Kette rund um die Ferse braucht. Die Leitlinie bewertet Krafttraining mit **B**, ihrer zweitbesten Bewertung.',
+        'In der einzigen Studie, die gezielt Fersenheben bei Plantarfasziitis getestet hat, wurden 48\u00A0Personen in eine Gruppe mit belastetem Fersenheben und eine Gruppe nur mit Dehnen aufgeteilt. Die Fersenheben-Gruppe schnitt nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab (Rathleff und Kollegen, 2015).',
         'Fang auf der leichtesten Stufe an und geh erst eine Stufe höher, wenn sie sich zwei Einheiten hintereinander leicht angefühlt hat. Die Steigerung unten reicht von der Übung im Sitzen bis zum belasteten Fersenheben mit Handtuch aus der Studie.',
       ],
       exercises: [
@@ -222,7 +223,8 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
       paragraphs: [
         'Dehnen soll sich wie ein Ziehen anfühlen, nicht wie ein Stechen. Eine Wadendehnung mit angenehmer Spannung in der oberen oder unteren Wade sitzt richtig. Eine Plantarfaszien-Dehnung, die sanft entlang des Gewölbes zieht, sitzt richtig. Wenn das Dehnen den stechenden Schmerz der ersten Schritte auslöst, nimm Spannung raus.',
         'Fersenheben soll sich wie Wadenarbeit anfühlen. Die Variante mit Handtuch bringt zusätzlich einen Zug unter dem Gewölbe, das ist die Belastung der Faszie. Dieser Zug ist erwünscht und der Sinn des Handtuchs.',
-        'Hör für heute auf, wenn der Schmerz bei einer Übung **6/10 oder mehr** erreicht oder deine ersten Schritte am nächsten Morgen deutlich schlimmer sind als sonst. Nach dieser Regel, aufhören und eine Stufe zurück, arbeitet auch die App. Leichter Muskelkater, der innerhalb eines Tages abklingt, ist normal, vor allem in den ersten zwei Wochen. Schmerz, der tagelang erhöht bleibt oder von Woche zu Woche schlimmer wird, ist ein Grund, eine Stufe zurückzugehen oder zu einer medizinischen Fachperson zu gehen.',
+        'Hör für heute auf, wenn der Schmerz bei einer Übung **6/10 oder mehr** erreicht oder deine ersten Schritte am nächsten Morgen deutlich schlimmer sind als sonst. Nach dieser Regel, aufhören und eine Stufe zurück, arbeitet auch die App.',
+        'Leichter Muskelkater, der innerhalb eines Tages abklingt, ist normal, vor allem in den ersten zwei Wochen. Schmerz, der tagelang erhöht bleibt oder von Woche zu Woche schlimmer wird, ist ein Grund, eine Stufe zurückzugehen oder zu einer medizinischen Fachperson zu gehen.',
       ],
       cites: [CITE.guideline],
     },
@@ -231,14 +233,21 @@ export const HEEL_SPUR_EXERCISES_DE: Guide = {
       paragraphs: [
         'Es gibt keine Studie, die Übungsergebnisse speziell bei Menschen mit Fersensporn misst. Die Zeiträume unten stammen aus Studien zur Plantarfasziitis, der Erkrankung, die in den meisten Fällen den Schmerz rund um den Sporn verursacht.',
         'Eine Übersicht über die klinischen Belege berichtet, dass es etwa 90\u00A0% der Menschen mit Plantarfasziitis mit nicht-operativer Behandlung wie Dehnen und Schuheinlagen besser geht, oft innerhalb einiger Monate (Latt und Kollegen, 2020). In der Studie von Rathleff 2015 lag die Gruppe mit belastetem Fersenheben nach drei Monaten signifikant vor der Gruppe, die nur dehnte.',
-        'Kein Übungsprogramm kann einem einzelnen Menschen einen Zeitrahmen versprechen. Was du messen kannst, ist, ob sich etwas verändert. Der Morgenschmerz auf einer Skala von 0 bis 10, vor dem ersten Schritt eingeschätzt, ist das klarste Signal von Tag zu Tag. Die Wadenausdauer, gemessen daran, wie viele einbeinige Fersenheben du schaffst, zeigt die Kraft über Wochen. Beides ist nützlicher als Raten.',
+        'Kein Übungsprogramm kann einem einzelnen Menschen einen Zeitrahmen versprechen. **Was du messen kannst, ist, ob sich etwas verändert**:',
+        {
+          list: [
+            'Der Morgenschmerz auf einer Skala von 0 bis 10, vor dem ersten Schritt eingeschätzt, ist das klarste Signal von Tag zu Tag.',
+            'Die Wadenausdauer, gemessen daran, wie viele einbeinige Fersenheben du schaffst, zeigt die Kraft über Wochen.',
+          ],
+        },
+        'Beides ist nützlicher als Raten.',
       ],
       cites: [CITE.latt, CITE.rathleff],
     },
     {
       h2: 'Kann man einen Fersensporn auf natürliche Weise loswerden?',
       paragraphs: [
-        'Übungen, Dehnen und eine andere Ernährung lösen keinen Fersensporn auf. Der Sporn ist verkalkter Knochen. Er bleibt auf dem Röntgenbild, ob du dehnst oder nicht.',
+        '**Übungen, Dehnen und eine andere Ernährung lösen keinen Fersensporn auf.** Der Sporn ist verkalkter Knochen. Er bleibt auf dem Röntgenbild, ob du dehnst oder nicht.',
         'Aber „den Sporn loswerden“ ist selten das richtige Ziel. In der Studie von 2019 kam der Sporn fast immer zusammen mit einer verdickten Plantarfaszie vor, und das Weichgewebe ist der Teil, den Übungen verändern können. Der Schmerz kommt aus dem Weichgewebe. Die Übungen auf dieser Seite zielen auf das Weichgewebe. Wenn der Schmerz abklingt, ist der Sporn kein Problem, das gelöst werden muss.',
         'Wenn dir jemand ein Nahrungsergänzungsmittel, eine Creme oder ein Gerät versprochen hat, das Fersensporne auflöst, sei skeptisch. Keine veröffentlichten Belege stützen diese Behauptung. Das von der Leitlinie empfohlene Vorgehen ist Dehnen, Wadenkrafttraining und Belastungssteuerung.',
       ],

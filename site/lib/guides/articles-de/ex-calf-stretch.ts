@@ -30,7 +30,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
       h2: 'Wie dehnst du die Wade mit gestrecktem Knie?',
       paragraphs: [
         'Stell dich mit dem Gesicht zu einer Wand und leg die Hände etwa auf Schulterhöhe flach dagegen. Geh mit einem Fuß etwa 60\u00A0cm nach hinten. Das hintere Bein bleibt gestreckt, die Ferse drückt in den Boden und die Zehen zeigen nach vorn. Schieb die Hüfte Richtung Wand, bis du eine Dehnung im oberen Teil der hinteren Wade spürst. Halte 30\u00A0Sekunden, dann wechsle das Bein.',
-        'Entscheidend ist, dass das hintere Knie gestreckt bleibt. So isolierst du den Gastrocnemius, der über Knie und Sprunggelenk zieht. Wenn du das Knie beugst, wandert die Dehnung zum Soleus, dem tieferen Wadenmuskel, und das ist eine andere Übung. Diese Variante findest du unter [Soleusdehnung](/de/uebungen/soleus-dehnen/).',
+        '**Entscheidend ist, dass das hintere Knie gestreckt bleibt.** So isolierst du den Gastrocnemius, der über Knie und Sprunggelenk zieht. Wenn du das Knie beugst, wandert die Dehnung zum Soleus, dem tieferen Wadenmuskel, und das ist eine andere Übung. Diese Variante findest du unter [Soleusdehnung](/de/uebungen/soleus-dehnen/).',
       ],
       exercises: [
         {
@@ -57,7 +57,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
       paragraphs: [
         'Der Gastrocnemius zieht von hinter dem Knie über die Achillessehne bis zur Ferse. Die Plantarfaszie setzt unten am Fersenbein an, demselben Knochen, an dem hinten die Achillessehne ansetzt, und läuft nach vorn bis zu den Zehen. Wenn der Gastrocnemius verkürzt ist, begrenzt er, wie weit sich das Sprunggelenk nach oben beugen kann. Dadurch muss die Plantarfaszie bei jedem Schritt mehr Spannung abfangen.',
         'In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0passenden Kontrollpersonen erhöhte eine eingeschränkte Dorsalflexion im Sprunggelenk die Odds für eine Plantarfasziitis um das 23,3-Fache. Das war stärker als BMI, Zeit im Stehen oder jede andere Variable in der Studie.',
-        'Unabhängig davon fand eine Fallserie mit 254\u00A0Personen mit Plantarfasziitis, dass 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius hatten und weitere 23 bis 30\u00A0% eine kombinierte Kontraktur von Gastrocnemius und Soleus. Eine verkürzte Wade ist also keine Nebensache. Sie kommt bei den meisten Menschen mit dieser Erkrankung vor.',
+        'Unabhängig davon fand eine Fallserie mit 254\u00A0Personen mit Plantarfasziitis, dass 52 bis 60\u00A0% eine Kontraktur nur des Gastrocnemius hatten und weitere 23 bis 30\u00A0% eine kombinierte Kontraktur von Gastrocnemius und Soleus. **Eine verkürzte Wade ist also keine Nebensache.** Sie kommt bei den meisten Menschen mit dieser Erkrankung vor.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
     },
@@ -73,10 +73,14 @@ export const EX_CALF_STRETCH_DE: Guide = {
     {
       h2: 'Was sind die häufigsten Fehler bei der Wadendehnung?',
       paragraphs: [
-        'Das hintere Knie beugen. Sobald sich das Knie beugt, wird der Gastrocnemius locker und die Dehnung wandert zum Soleus. Halte das hintere Knie während der ganzen Dehnung gestreckt.',
-        'Die hintere Ferse abheben. Wenn die Ferse vom Boden kommt, wird die Wade nicht gedehnt. Drück zuerst die Ferse nach unten und lehn dich dann nach vorn, bis die Dehnung kommt.',
-        'Den hinteren Fuß nach außen drehen. Wenn der Fuß nach außen rotiert, trifft die Dehnung die Außenseite der Wade statt den ganzen Muskel. Lass die Zehen gerade zur Wand zeigen.',
-        'Zu kurz halten. 10\u00A0Sekunden reichen nicht, damit eine anhaltende Dehnung die Länge des Gewebes beeinflusst. Halte mindestens 30\u00A0Sekunden pro Wiederholung.',
+        {
+          list: [
+            '**Das hintere Knie beugen.** Sobald sich das Knie beugt, wird der Gastrocnemius locker und die Dehnung wandert zum Soleus. Halte das hintere Knie während der ganzen Dehnung gestreckt.',
+            '**Die hintere Ferse abheben.** Wenn die Ferse vom Boden kommt, wird die Wade nicht gedehnt. Drück zuerst die Ferse nach unten und lehn dich dann nach vorn, bis die Dehnung kommt.',
+            '**Den hinteren Fuß nach außen drehen.** Wenn der Fuß nach außen rotiert, trifft die Dehnung die Außenseite der Wade statt den ganzen Muskel. Lass die Zehen gerade zur Wand zeigen.',
+            '**Zu kurz halten.** 10\u00A0Sekunden reichen nicht, damit eine anhaltende Dehnung die Länge des Gewebes beeinflusst. Halte mindestens 30\u00A0Sekunden pro Wiederholung.',
+          ],
+        },
       ],
     },
     {
@@ -91,7 +95,8 @@ export const EX_CALF_STRETCH_DE: Guide = {
       h2: 'Wie die Wadendehnung und die Soleusdehnung zusammenpassen',
       paragraphs: [
         'Gastrocnemius und Soleus bilden zusammen die Wade. Die Variante mit gestrecktem Knie dehnt den Gastrocnemius. Die Variante mit gebeugtem Knie dehnt den Soleus. Es sind zwei Übungen, nicht zwei Versionen derselben.',
-        'Die meisten Programme bei Plantarfasziitis enthalten beide, weil eine verkürzte Wade in einem der beiden Muskeln oder in beiden verkürzt sein kann. Die Leitlinie trennt sie nicht. Walkito plant beide in dieselbe Einheit ein, wenn Dehnen auf dem Plan steht. Die Seite zur [Soleusdehnung](/de/uebungen/soleus-dehnen/) erklärt die Variante mit gebeugtem Knie. Das ganze Programm aus Dehnen und Kraft findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
+        'Die meisten Programme bei Plantarfasziitis enthalten beide, weil eine verkürzte Wade in einem der beiden Muskeln oder in beiden verkürzt sein kann. Die Leitlinie trennt sie nicht. Walkito plant beide in dieselbe Einheit ein, wenn Dehnen auf dem Plan steht.',
+        'Die Seite zur [Soleusdehnung](/de/uebungen/soleus-dehnen/) erklärt die Variante mit gebeugtem Knie. Das ganze Programm aus Dehnen und Kraft findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
       ],
       cites: [CITE.guideline],
     },

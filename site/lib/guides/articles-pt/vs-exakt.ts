@@ -131,15 +131,25 @@ export const VS_EXAKT_PT: Guide = {
       paragraphs: [
         'O Exakt Health foi feito para corredores. Essa é a identidade central dele, e tudo no app reflete isso. Se você corre e está se recuperando de fascite plantar, tendinopatia de Aquiles, entorse de tornozelo, lesão no posterior da coxa ou lesão de menisco, o Exakt tem um plano de reabilitação específico para a sua lesão. Ele cobre mais de 15 condições diferentes.',
         'Cada plano de reabilitação termina com um programa de caminhada e corrida para voltar a correr, uma das partes da recuperação mais difíceis de acertar sozinho. O app também tem planos de treino de corrida para todas as distâncias, do sedentário aos 5\u00A0km até a maratona.',
-        'O Exakt foi fundado em 2021 por Philip Billaudelle, Lucia Payo e Maryke Louw. Ele é feito por fisioterapeutas esportivos habilitados e treinadores de corrida, e captou cerca de 2,2\u00A0milhões de euros em investimento seed em setembro de 2024. A equipe fica em Berlim. O app é certificado como dispositivo médico na União Europeia, o que significa que passou por avaliação regulatória para o uso pretendido.',
-        'Se você corre e precisa tanto de reabilitação de lesão quanto de um plano de treino estruturado, é difícil competir com o Exakt. A nota 4,8 em 125 avaliações no iOS e os mais de 100\u00A0mil downloads no Android mostram que ele funciona para o público dele.',
+        'O Exakt foi fundado em 2021 por Philip Billaudelle, Lucia Payo e Maryke Louw. Ele é feito por fisioterapeutas esportivos habilitados e treinadores de corrida, e captou cerca de 2,2\u00A0milhões de euros em investimento seed em setembro de 2024. A equipe fica em Berlim.',
+        'O app é certificado como dispositivo médico na União Europeia, o que significa que passou por avaliação regulatória para o uso pretendido.',
+        '**Se você corre e precisa tanto de reabilitação de lesão quanto de um plano de treino estruturado, é difícil competir com o Exakt.** A nota 4,8 em 125 avaliações no iOS e os mais de 100\u00A0mil downloads no Android mostram que ele funciona para o público dele.',
       ],
     },
     {
       h2: 'Para quem o Walkito foi feito?',
       paragraphs: [
-        'O Walkito foi feito para quem tem dor nos pés e quer um plano de exercícios diário e curto que se ajuste a como a pessoa acorda cada manhã. Isso inclui fascite plantar, pé chato flexível e dor na canela. Ele também foi feito para quem passa o dia todo em pé: enfermagem, comércio, estoque e armazém.',
-        'O app é mais focado que o Exakt. Ele não cobre lesões no joelho, lesões no posterior da coxa nem planos de corrida. O que ele faz de diferente é ajustar a sessão de cada dia a partir de um check-in de dor pela manhã, e não do retorno no fim da sessão. Uma manhã com dor de 7/10 ou mais troca o dia para cerca de três minutos de trabalho sentado. Um dia puxado em pé (medido pelos passos do app Saúde da Apple) transforma a próxima sessão de força numa sessão de recuperação mais leve.',
+        'O Walkito foi feito para quem tem dor nos pés e quer um plano de exercícios diário e curto que se ajuste a como a pessoa acorda cada manhã. Isso inclui:',
+        {
+          list: [
+            'Fascite plantar.',
+            'Pé chato flexível.',
+            'Dor na canela.',
+          ],
+        },
+        'Ele também foi feito para quem passa o dia todo em pé: enfermagem, comércio, estoque e armazém.',
+        'O app é mais focado que o Exakt. Ele não cobre lesões no joelho, lesões no posterior da coxa nem planos de corrida. O que ele faz de diferente é **ajustar a sessão de cada dia a partir de um check-in de dor pela manhã**, e não do retorno no fim da sessão.',
+        'Uma manhã com dor de 7/10 ou mais troca o dia para cerca de três minutos de trabalho sentado. Um dia puxado em pé (medido pelos passos do app Saúde da Apple) transforma a próxima sessão de força numa sessão de recuperação mais leve.',
         'O Walkito testa o progresso a cada 14\u00A0dias com elevação de calcanhar, sustentação do arco e equilíbrio em uma perna, e compara o seu lado esquerdo com o direito. Essa comparação entre esquerda e direita é algo que a maioria dos apps dessa área não acompanha.',
         'O Walkito foi lançado em 2 de outubro de 2026. Ele é novo, ainda não tem avaliações de usuários e é só para iOS. Ele não tem o histórico nem a variedade que o Exakt construiu desde 2021.',
       ],
@@ -148,7 +158,17 @@ export const VS_EXAKT_PT: Guide = {
       h2: 'Como cada app monta o seu plano?',
       paragraphs: [
         'O Exakt pergunta sobre a sua lesão, o seu nível de experiência e a sua agenda da semana, e depois passa um plano de reabilitação estruturado em níveis. Você avança pelos níveis conforme cada sessão vai. Quando a reabilitação termina, você pode passar direto para um plano de treino de corrida sem começar do zero.',
-        'O Walkito pergunta onde dói, de que lado, o seu nível de atividade, o seu objetivo e quantos dias e minutos você tem. Ele monta um plano semanal em torno de metas medidas: manhãs sem dor, sustentação do arco por 60\u00A0segundos, 25 elevações de calcanhar em uma perna, equilíbrio em uma perna por 30\u00A0segundos e simetria entre esquerda e direita. A cada semana, ele refaz o plano a partir de como foi a semana anterior. Uma meta é o foco de cada vez. Quando uma meta é alcançada, ela passa para manutenção e a próxima meta começa.',
+        'O Walkito pergunta onde dói, de que lado, o seu nível de atividade, o seu objetivo e quantos dias e minutos você tem. Ele monta um plano semanal em torno de metas medidas:',
+        {
+          list: [
+            'Manhãs sem dor.',
+            'Sustentação do arco por 60\u00A0segundos.',
+            '25 elevações de calcanhar em uma perna.',
+            'Equilíbrio em uma perna por 30\u00A0segundos.',
+            'Simetria entre esquerda e direita.',
+          ],
+        },
+        'A cada semana, ele refaz o plano a partir de como foi a semana anterior. Uma meta é o foco de cada vez. Quando uma meta é alcançada, ela passa para manutenção e a próxima meta começa.',
         'A principal diferença: o Exakt segue uma progressão estruturada por níveis. O Walkito segue uma progressão por metas, em que o check-in de cada manhã ajusta a intensidade do dia.',
       ],
     },
@@ -156,7 +176,7 @@ export const VS_EXAKT_PT: Guide = {
       h2: 'Quais condições cada app cobre?',
       keyFact: 'Os exercícios do Walkito seguem a diretriz de 2023 para dor no calcanhar, que dá ao alongamento da fáscia plantar e da panturrilha o grau A e ao treino de força o grau B (Koc e colegas, 2023).',
       paragraphs: [
-        'Aqui o Exakt é claramente mais forte. Os planos de reabilitação dele cobrem fascite plantar, tendinopatia de Aquiles, entorse de tornozelo, lesão no posterior da coxa, lesão de menisco, joelho de corredor e mais. Se a sua dor é no joelho, no quadril ou no posterior da coxa, o Walkito não tem um plano para isso.',
+        '**Aqui o Exakt é claramente mais forte.** Os planos de reabilitação dele cobrem fascite plantar, tendinopatia de Aquiles, entorse de tornozelo, lesão no posterior da coxa, lesão de menisco, joelho de corredor e mais. Se a sua dor é no joelho, no quadril ou no posterior da coxa, o Walkito não tem um plano para isso.',
         'O Walkito cobre fascite plantar, pé chato (flexível), dor no calcanhar de ficar em pé e dor na canela. Os exercícios dele seguem a diretriz de 2023 para dor no calcanhar (alongamento com grau A, força com grau B) e o ensaio de Rathleff de 2015 (elevação de calcanhar com carga para fascite plantar). Para essas condições específicas, ele tem exercícios, lógica de progressão e adaptação à dor. Para qualquer coisa fora disso, o Exakt ou um app mais amplo como o Prehab é a escolha certa.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
@@ -166,8 +186,15 @@ export const VS_EXAKT_PT: Guide = {
       paragraphs: [
         'O Walkito custa US$\u00A044,99 por ano ou US$\u00A07,99 por semana. O preço anual dá cerca de US$\u00A00,87 por semana. Nenhum teste grátis aparece na App Store, embora os termos de uso permitam ofertas introdutórias.',
         'O Exakt custa US$\u00A019,99 por mês nos planos de reabilitação, com opções de 3\u00A0meses (US$\u00A039,99) e 6\u00A0meses (US$\u00A059,99). Os planos de treino de corrida vão até US$\u00A099,99 por ano. Toda assinatura começa com 7\u00A0dias grátis.',
-        'Em um ano inteiro: o plano anual do Walkito custa US$\u00A044,99. A opção de reabilitação mais barata do Exakt (o plano de 6\u00A0meses renovado duas vezes) fica em cerca de US$\u00A0120. Se você incluir um plano de corrida, o Exakt pode passar de US$\u00A0200 por ano.',
-        'Se você precisa só de exercícios para dor no calcanhar ou no pé, o Walkito é bem mais barato. Se você precisa de reabilitação de lesão de corrida mais um plano de treino, o preço maior do Exakt cobre mais coisas.',
+        'Em um ano inteiro:',
+        {
+          list: [
+            'O plano anual do Walkito custa US$\u00A044,99.',
+            'A opção de reabilitação mais barata do Exakt (o plano de 6\u00A0meses renovado duas vezes) fica em cerca de US$\u00A0120.',
+            'Se você incluir um plano de corrida, o Exakt pode passar de US$\u00A0200 por ano.',
+          ],
+        },
+        'Se você precisa só de exercícios para dor no calcanhar ou no pé, **o Walkito é bem mais barato.** Se você precisa de reabilitação de lesão de corrida mais um plano de treino, o preço maior do Exakt cobre mais coisas.',
       ],
     },
     {
@@ -181,16 +208,32 @@ export const VS_EXAKT_PT: Guide = {
       h2: 'Privacidade',
       paragraphs: [
         'O Walkito lê dados do app Saúde da Apple (passos, sono, assimetria da marcha, velocidade da caminhada, frequência cardíaca em repouso) e os mantém no aparelho. Eles nunca são enviados. O que é sincronizado com a conta do Walkito são as notas de dor, os dados das sessões e os resultados dos testes. Não há rastreamento para anúncios.',
-        'O rótulo de privacidade do Exakt Health na App Store lista Identificadores como dados usados para rastrear você, e Compras, Identificadores, Dados de uso e Diagnóstico como dados coletados, mas não vinculados à sua identidade. A página no Google Play informa que nenhum dado é compartilhado com terceiros, que dados financeiros podem ser coletados, que os dados são criptografados em trânsito e que a exclusão está disponível.',
-        'Os dois apps coletam dados de uso comuns. Nenhum dos dois vende dados de saúde. O jeito do Walkito de manter os dados do app Saúde da Apple no aparelho é um modelo de privacidade mais rígido.',
+        'O rótulo de privacidade do Exakt Health na App Store lista Identificadores como dados usados para rastrear você, e Compras, Identificadores, Dados de uso e Diagnóstico como dados coletados, mas não vinculados à sua identidade. A página no Google Play informa que:',
+        {
+          list: [
+            'Nenhum dado é compartilhado com terceiros.',
+            'Dados financeiros podem ser coletados.',
+            'Os dados são criptografados em trânsito.',
+            'A exclusão está disponível.',
+          ],
+        },
+        'Os dois apps coletam dados de uso comuns. **Nenhum dos dois vende dados de saúde.** O jeito do Walkito de manter os dados do app Saúde da Apple no aparelho é um modelo de privacidade mais rígido.',
       ],
     },
     {
       h2: 'Em que evidências cada app se baseia?',
       paragraphs: [
         'O Exakt Health é certificado como dispositivo médico na União Europeia (Alemanha), o que exige evidências de segurança e de finalidade de uso. O app é feito por fisioterapeutas esportivos habilitados. Ele afirma que os seus métodos são baseados em evidências, mas não lista estudos específicos na página da App Store nem na página de preços.',
-        'O Walkito lista as suas fontes de evidência no site. Os exercícios seguem a diretriz clínica de 2023 para dor no calcanhar (Koc e colegas, JOSPT), o ensaio de Rathleff de 2015 sobre elevação de calcanhar com carga alta, o ensaio de Brijwasi de 2023 sobre exercícios para pé chato, entre outros. Cada exercício no app traz um nível de evidência (Forte, Moderada ou Inicial) com uma explicação de uma linha.',
-        'Nenhum dos dois apps publicou um ensaio clínico próprio. Os dois se apoiam em pesquisas existentes, aplicadas nos seus respectivos programas.',
+        'O Walkito lista as suas fontes de evidência no site. Os exercícios seguem:',
+        {
+          list: [
+            'A diretriz clínica de 2023 para dor no calcanhar (Koc e colegas, JOSPT).',
+            'O ensaio de Rathleff de 2015 sobre elevação de calcanhar com carga alta.',
+            'O ensaio de Brijwasi de 2023 sobre exercícios para pé chato, entre outros.',
+          ],
+        },
+        'Cada exercício no app traz um nível de evidência (Forte, Moderada ou Inicial) com uma explicação de uma linha.',
+        '**Nenhum dos dois apps publicou um ensaio clínico próprio.** Os dois se apoiam em pesquisas existentes, aplicadas nos seus respectivos programas.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
     },

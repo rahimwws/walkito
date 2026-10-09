@@ -72,7 +72,7 @@ export const EX_TOE_SPREAD: Guide = {
           ],
         },
         'Activation of the abductor hallucis during toe spreads (18.9%) was lower than during the short foot exercise (29.7%).',
-        'This means **the toe spread and the [short foot exercise](/exercises/short-foot-exercise/) complement each other.** The short foot targets the muscles that run along the arch. The toe spread targets the muscles at the edges. Together they cover more of the intrinsic foot muscle group.',
+        'This means the toe spread and the [short foot exercise](/exercises/short-foot-exercise/) complement each other. The short foot targets the muscles that run along the arch. The toe spread targets the muscles at the edges. Together they cover more of the intrinsic foot muscle group.',
       ],
       cites: [CITE.gooding],
     },

@@ -33,7 +33,7 @@ export const NIGHT_SPLINTS_ES: Guide = {
         alt: 'Vista lateral de un pie con la fascia plantar resaltada desde el hueso del talón hasta los dedos',
       },
       paragraphs: [
-        'Una férula nocturna para la fascitis plantar es un soporte que usas en la cama y que evita que el pie apunte hacia abajo mientras duermes. Cuando estás acostado sin moverte, el pie suele irse a flexión plantar (con los dedos apuntando lejos de ti). En esa posición, la fascia plantar, la banda gruesa de tejido debajo del pie, y la pantorrilla descansan acortadas durante horas.',
+        'Una férula nocturna para la fascitis plantar es un soporte que usas en la cama y que **evita que el pie apunte hacia abajo mientras duermes.** Cuando estás acostado sin moverte, el pie suele irse a flexión plantar (con los dedos apuntando lejos de ti). En esa posición, la fascia plantar, la banda gruesa de tejido debajo del pie, y la pantorrilla descansan acortadas durante horas.',
         'La férula mantiene el tobillo en posición neutra o en una ligera flexión dorsal (con los dedos un poco jalados hacia la espinilla). La idea es que el tejido se quede con un largo suave durante la noche, para que tus primeros pasos no sean un estirón repentino sobre una fascia rígida y acortada. Ese estirón repentino es la explicación habitual del dolor agudo en los primeros pasos que hace tan reconocible a la fascitis plantar.',
         'La guía de 2023 para el dolor de talón define las férulas nocturnas como «órtesis prefabricadas de plástico que se usan para evitar la flexión plantar del tobillo mientras se duerme». Las versiones más blandas, como las correas y los calcetines, buscan la misma posición con menos estructura.',
       ],
@@ -45,7 +45,13 @@ export const NIGHT_SPLINTS_ES: Guide = {
       paragraphs: [
         'La férula nocturna le funciona a algunas personas con fascitis plantar, sobre todo para el dolor de los primeros pasos de la mañana, pero la investigación que la respalda es más escasa de lo que sugiere su grado. La guía de 2023 para el dolor de talón de la American Physical Therapy Association dice que los profesionales de la salud «deberían indicar un programa de férulas nocturnas de 1 a 3\u00A0meses» a las personas que tienen dolor constante en el primer paso de la mañana. Es un grado **A**, el más alto de la guía.',
         'Pero hay que leer la letra chica. La actualización de la evidencia de la guía dice que no se encontraron estudios nuevos sobre férulas nocturnas desde 2014, así que la recomendación se mantuvo sin cambios. El grado se apoya en unos cuantos ensayos de los años 1990 y 2000.',
-        'Dos revisiones dan un panorama más prudente. Una revisión sistemática de 2023 encontró solo tres ensayos aleatorizados que cumplían sus criterios, y consideró que los tres tenían un riesgo alto de sesgo, es decir, que su diseño podía inclinar los resultados. Concluyó que las férulas parecen mejorar el dolor y la función, pero que hacen falta más estudios. Una revisión de 2020 sobre opciones mecánicas encontró que las férulas combinadas con plantillas funcionaron mejor que cualquiera de las dos por separado.',
+        'Dos revisiones dan un panorama más prudente:',
+        {
+          list: [
+            '**Una revisión sistemática de 2023** encontró solo tres ensayos aleatorizados que cumplían sus criterios, y consideró que los tres tenían un riesgo alto de sesgo, es decir, que su diseño podía inclinar los resultados. Concluyó que las férulas parecen mejorar el dolor y la función, pero que hacen falta más estudios.',
+            '**Una revisión de 2020 sobre opciones mecánicas** encontró que las férulas combinadas con plantillas funcionaron mejor que cualquiera de las dos por separado.',
+          ],
+        },
         'Un resumen justo sería este: la férula nocturna es una opción razonable si tus mañanas siguen siendo malas a pesar de estirar, pero no es algo seguro, y los ensayos que existen son pequeños.',
       ],
       cites: [CITE.guideline, CITE.bendoSplintReview, CITE.schuitemaMechanical],
@@ -87,7 +93,7 @@ export const NIGHT_SPLINTS_ES: Guide = {
       ],
       after: [
         'La única comparación directa que encontramos es un estudio preliminar pequeño de 2012. Dos tercios de las personas dijeron que el dolor y la rigidez de la mañana fueron menores después de usar una férula. El tipo bota fue más incómodo y alteró el sueño, y el tipo de frente de espinilla bajó más el dolor de talón en promedio. Los autores dijeron que las férulas nocturnas en general se «toleran mal».',
-        'Si vas a elegir tú, la indicada probablemente es la que de verdad vas a mantener puesta toda la noche. Un médico o un fisioterapeuta puede ayudarte con el ajuste.',
+        'Si vas a elegir tú, **la indicada probablemente es la que de verdad vas a mantener puesta toda la noche.** Un médico o un fisioterapeuta puede ayudarte con el ajuste.',
       ],
       cites: [CITE.attardSplint, CITE.guideline],
     },
@@ -95,7 +101,7 @@ export const NIGHT_SPLINTS_ES: Guide = {
       h2: '¿Cuánto tiempo hay que usar la férula nocturna para la fascitis plantar?',
       keyFact: 'La guía de 2023 para el dolor de talón recomienda un programa de férula nocturna de uno a tres meses (Koc y colegas, 2023).',
       paragraphs: [
-        'La guía de 2023 recomienda usar una férula nocturna de uno a tres meses. En los ensayos, las personas la usaron de noche durante un mes (Powell) o tres meses (Probe, Martin).',
+        '**La guía de 2023 recomienda usar una férula nocturna de uno a tres meses.** En los ensayos, las personas la usaron de noche durante un mes (Powell) o tres meses (Probe, Martin).',
         'Cuántas horas por noche está menos claro. No encontramos ningún ensayo que comparara horas de uso. Los fabricantes y las clínicas suelen sugerir empezar con unas horas e ir subiendo hasta toda la noche, lo cual es sensato pero no está probado. Si te despiertas y la férula es insoportable, es mejor quitártela y volver a ponértela la noche siguiente que rendirte la primera noche.',
       ],
       bullets: [
@@ -112,7 +118,7 @@ export const NIGHT_SPLINTS_ES: Guide = {
       keyFact: 'Al año, 1 de las 28\u00A0personas que recibieron una férula nocturna la seguía usando, frente a 19 de 23 que seguían usando plantillas (Roos y colegas, 2006).',
       paragraphs: [
         'La mayoría de las personas dejan de usar la férula nocturna porque es incómodo dormir con ella. En el ensayo de 2006 de Roos y colegas, solo 1 de las 28\u00A0personas que recibieron una férula la seguía usando al año, mientras que 19 de 23 seguían usando sus plantillas. Ese ensayo también encontró menos efectos secundarios y mejor constancia con las plantillas. En el ensayo de Martin de 2001 con 255\u00A0personas, algunas abandonaron al principio porque no toleraban su aparato o seguían con dolor fuerte.',
-        'Que cueste ser constante es normal, no un fracaso personal. La férula es para uno a tres meses, no para siempre. Algunas cosas prácticas lo hacen más fácil:',
+        '**Que cueste ser constante es normal, no un fracaso personal.** La férula es para uno a tres meses, no para siempre. Algunas cosas prácticas lo hacen más fácil:',
       ],
       bullets: [
         'Si duermes de lado o boca abajo, un tipo calcetín o una férula dorsal pequeña suele acomodarse mejor que una bota.',
@@ -127,8 +133,16 @@ export const NIGHT_SPLINTS_ES: Guide = {
       h2: 'Férula nocturna, plantillas o estiramientos: ¿qué probar primero?',
       keyFact: 'En un ensayo con 43\u00A0personas, al año el dolor bajó un 62\u00A0% en los grupos con plantillas y un 48\u00A0% con solo la férula nocturna (Roos y colegas, 2006).',
       paragraphs: [
-        'Por lo general, primero van los estiramientos de la mañana, porque tienen el mismo grado **A** que la férula nocturna, no cuestan nada y no alteran el sueño. La guía de 2023 le da un grado **A** al estiramiento de la fascia plantar y de la pantorrilla, y un grado **B** al trabajo de fuerza para los músculos del pie y del tobillo. Un metaanálisis de 2020 de ocho ensayos encontró que los estiramientos aliviaron el dolor, con evidencia de calidad moderada de que el estiramiento de la fascia plantar lo alivió más que un estiramiento de pantorrilla.',
-        'La férula nocturna y las plantillas parecen funcionar mejor juntas que por separado. En el ensayo de Roos, los dos grupos con plantillas tuvieron más alivio del dolor al año que el grupo de solo férula. El estudio pequeño de Lee de 2012 encontró que plantillas más férula funcionaron mejor que solo plantillas. La revisión de 2020 sobre opciones mecánicas llegó a la misma conclusión. La guía también recomienda no usar plantillas como lo único que haces para aliviar el dolor a corto plazo. Para más sobre esa pregunta, mira [plantillas o ejercicios](/es/plantillas-o-ejercicios/).',
+        '**Por lo general, primero van los estiramientos de la mañana**, porque tienen el mismo grado **A** que la férula nocturna, no cuestan nada y no alteran el sueño. La guía de 2023 le da un grado **A** al estiramiento de la fascia plantar y de la pantorrilla, y un grado **B** al trabajo de fuerza para los músculos del pie y del tobillo. Un metaanálisis de 2020 de ocho ensayos encontró que los estiramientos aliviaron el dolor, con evidencia de calidad moderada de que el estiramiento de la fascia plantar lo alivió más que un estiramiento de pantorrilla.',
+        'La férula nocturna y las plantillas parecen funcionar mejor juntas que por separado:',
+        {
+          list: [
+            'En el ensayo de Roos, los dos grupos con plantillas tuvieron más alivio del dolor al año que el grupo de solo férula.',
+            'El estudio pequeño de Lee de 2012 encontró que plantillas más férula funcionaron mejor que solo plantillas.',
+            'La revisión de 2020 sobre opciones mecánicas llegó a la misma conclusión.',
+          ],
+        },
+        'La guía también recomienda no usar plantillas como lo único que haces para aliviar el dolor a corto plazo. Para más sobre esa pregunta, mira [plantillas o ejercicios](/es/plantillas-o-ejercicios/).',
         'Un orden común es empezar con estiramientos y trabajo de pantorrilla. Si después de un mes más o menos tus primeros pasos siguen siendo malos, agrega una férula de uno a tres meses. Mucha gente usa plantillas al mismo tiempo. Ese orden es una lectura razonable de la guía, no algo que un ensayo haya probado.',
       ],
       cites: [CITE.guideline, CITE.siriphorn, CITE.roosOrthoses, CITE.leeSplint, CITE.schuitemaMechanical],
@@ -170,7 +184,7 @@ export const NIGHT_SPLINTS_ES: Guide = {
     {
       h2: '¿A quién le puede servir una férula nocturna y quién debería evitarla?',
       paragraphs: [
-        'Una férula nocturna encaja mejor si tu fascitis plantar sigue el patrón clásico: los primeros pasos al salir de la cama son lo peor del día, y eso sigue pasando a pesar de estirar con regularidad. Es justo el grupo que menciona la guía. En el ensayo de Powell, la respuesta a la férula no dependió del tipo de pie, del peso corporal ni de si se veía un espolón en la radiografía.',
+        '**Una férula nocturna encaja mejor si tu fascitis plantar sigue el patrón clásico**: los primeros pasos al salir de la cama son lo peor del día, y eso sigue pasando a pesar de estirar con regularidad. Es justo el grupo que menciona la guía. En el ensayo de Powell, la respuesta a la férula no dependió del tipo de pie, del peso corporal ni de si se veía un espolón en la radiografía.',
         'Una férula tiene menos sentido si el talón te duele sobre todo mientras estás acostado en la cama, o si te despierta. Es otro patrón, y [dolor de talón por la noche](/es/dolor-de-talon-por-la-noche/) explica las causas que vale la pena descartar. Una férula tampoco es buena idea si tienes poca sensibilidad o mala circulación en los pies, porque las correas y las carcasas pueden rozar piel que no sientes.',
         'La fascitis plantar muchas veces se calma con los meses, uses lo que uses, y es una de las razones por las que los ensayos con férulas son difíciles de interpretar. Para tiempos realistas, mira [cuánto dura la fascitis plantar](/es/cuanto-dura-la-fascitis-plantar/).',
       ],

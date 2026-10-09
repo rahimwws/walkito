@@ -29,8 +29,9 @@ export const MASSAGE_BALL_ES: Guide = {
       h2: '¿Una pelota de masaje ayuda con la fascitis plantar?',
       keyFact: 'En un ensayo pequeño con 14\u00A0personas a las que se les pidió rodar una pelota de masaje al menos tres veces al día, las puntuaciones del pie no mejoraron de forma significativa en tres meses (Ryu y colegas, 2024).',
       paragraphs: [
-        'Una pelota de masaje ayuda a algunas personas con fascitis plantar a sentir el pie más suelto y menos adolorido por un tiempo corto, pero hay poca prueba de que rodar por sí solo cambie el dolor a lo largo de los meses. La fascitis plantar es la irritación de la fascia plantar, la banda gruesa bajo la planta que va del talón a los dedos. Rodar presiona esa banda y los músculos pequeños a su alrededor.',
-        'La evidencia directa es escasa. En un ensayo de 2024 en Corea, a 14\u00A0personas cuyo dolor de talón llevaba al menos seis meses se les pidió rodar una pelota de masaje bajo la planta al menos tres veces al día, más de cinco minutos cada vez. En tres meses, el grupo en conjunto no mejoró de forma significativa en un cuestionario de dolor del pie. El ensayo era muy pequeño y no tenía un grupo sin pelota, así que no puede probar que la pelota no sirve, solo que nadie ha demostrado que sirva mucho.',
+        'Una pelota de masaje ayuda a algunas personas con fascitis plantar a sentir el pie más suelto y menos adolorido por un tiempo corto, pero **hay poca prueba de que rodar por sí solo cambie el dolor a lo largo de los meses.** La fascitis plantar es la irritación de la fascia plantar, la banda gruesa bajo la planta que va del talón a los dedos. Rodar presiona esa banda y los músculos pequeños a su alrededor.',
+        'La evidencia directa es escasa. En un ensayo de 2024 en Corea, a 14\u00A0personas cuyo dolor de talón llevaba al menos seis meses se les pidió rodar una pelota de masaje bajo la planta al menos tres veces al día, más de cinco minutos cada vez. En tres meses, el grupo en conjunto no mejoró de forma significativa en un cuestionario de dolor del pie.',
+        'El ensayo era muy pequeño y no tenía un grupo sin pelota, así que no puede probar que la pelota no sirve, solo que nadie ha demostrado que sirva mucho.',
         'Por eso, en este sitio, rodar el pie ocupa el lugar de la recuperación, junto a los ejercicios con mejor respaldo: el estiramiento de la fascia plantar y de la pantorrilla (grado A en la guía) y el trabajo de fuerza de pantorrilla (grado B).',
       ],
       figure: {
@@ -45,9 +46,16 @@ export const MASSAGE_BALL_ES: Guide = {
       keyFact: 'En un ensayo con 66\u00A0personas, la liberación miofascial hecha por un terapeuta bajó las puntuaciones del Foot Function Index un 72,4\u00A0% después de un mes, frente a un 7,4\u00A0% con un procedimiento simulado, y un 60,6\u00A0% a los tres meses (Ajimsha y colegas, 2014).',
       paragraphs: [
         'El masaje hecho por un profesional capacitado tiene evidencia razonable para la fascitis plantar. El masaje que te haces tú mismo con una pelota tiene muy poca.',
-        '**Trabajo manual de un profesional.** La guía de 2023 para el dolor de talón le da a la terapia manual un grado **A**, su grado más alto. La define como trabajo especializado sobre las articulaciones y los tejidos blandos de la pierna y el pie, como la liberación miofascial (presión y estiramiento lentos y sostenidos sobre el tejido). En un ensayo de 2014 con 66\u00A0personas, un terapeuta dio 12\u00A0sesiones de liberación miofascial en la pantorrilla y la planta durante un mes. Las puntuaciones del Foot Function Index, un cuestionario sobre dolor y función diaria, bajaron un 72,4\u00A0%, frente a un 7,4\u00A0% en un grupo que recibió ultrasonido simulado (falso). A los tres meses, la baja seguía siendo del 60,6\u00A0%. Un ensayo piloto de 2014 de masaje de pantorrilla encontró un beneficio más pequeño y de corto plazo (más sobre eso en la sección de la pantorrilla, abajo).',
+        '**Trabajo manual de un profesional.** La guía de 2023 para el dolor de talón le da a la terapia manual un grado **A**, su grado más alto. La define como trabajo especializado sobre las articulaciones y los tejidos blandos de la pierna y el pie, como la liberación miofascial (presión y estiramiento lentos y sostenidos sobre el tejido).',
+        'En un ensayo de 2014 con 66\u00A0personas, un terapeuta dio 12\u00A0sesiones de liberación miofascial en la pantorrilla y la planta durante un mes. Las puntuaciones del Foot Function Index, un cuestionario sobre dolor y función diaria, bajaron un 72,4\u00A0%, frente a un 7,4\u00A0% en un grupo que recibió ultrasonido simulado (falso). A los tres meses, la baja seguía siendo del 60,6\u00A0%. Un ensayo piloto de 2014 de masaje de pantorrilla encontró un beneficio más pequeño y de corto plazo (más sobre eso en la sección de la pantorrilla, abajo).',
         'Una revisión de 2018 de 7\u00A0ensayos encontró que añadir terapia manual mejoró la función en 6 de ellos, pero superó con claridad a la comparación en el dolor solo en 2 de 6. Los autores sugieren usarla junto con estiramientos y fortalecimiento.',
-        '**Masaje que te haces tú mismo.** Solo unos pocos ensayos prueban el automasaje, y cada uno lo combina con ejercicio o lo mide durante minutos. En un ensayo de 2021 con 50\u00A0personas, una sola sesión de rodillo de espuma en la pantorrilla y la planta bajó el dolor unos 3\u00A0puntos en una escala de 10\u00A0cm, frente a unos 2,6 con una sola sesión de estiramiento, y la diferencia entre grupos no fue estadísticamente significativa. Eso se midió justo después de la sesión, sin seguimiento. En un ensayo de 2025 con 64\u00A0personas, un programa supervisado de fortalecimiento, estiramiento y 10\u00A0minutos de automasaje con un bastón, tres días a la semana durante un mes, bajó el dolor 2,5\u00A0puntos más que un folleto de autocuidado, y el beneficio se mantuvo un mes después. Como el masaje venía junto con el ejercicio, no se sabe cuánto aportó por sí solo.',
+        '**Masaje que te haces tú mismo.** Solo unos pocos ensayos prueban el automasaje, y cada uno lo combina con ejercicio o lo mide durante minutos:',
+        {
+          list: [
+            '**Ensayo de 2021 con 50\u00A0personas:** una sola sesión de rodillo de espuma en la pantorrilla y la planta bajó el dolor unos 3\u00A0puntos en una escala de 10\u00A0cm, frente a unos 2,6 con una sola sesión de estiramiento, y la diferencia entre grupos no fue estadísticamente significativa. Eso se midió justo después de la sesión, sin seguimiento.',
+            '**Ensayo de 2025 con 64\u00A0personas:** un programa supervisado de fortalecimiento, estiramiento y 10\u00A0minutos de automasaje con un bastón, tres días a la semana durante un mes, bajó el dolor 2,5\u00A0puntos más que un folleto de autocuidado, y el beneficio se mantuvo un mes después. Como el masaje venía junto con el ejercicio, no se sabe cuánto aportó por sí solo.',
+          ],
+        },
       ],
       table: {
         caption: 'Masaje para la fascitis plantar: quién lo hizo y qué se encontró',
@@ -67,7 +75,7 @@ export const MASSAGE_BALL_ES: Guide = {
       h2: 'Pelota de tenis, de lacrosse, de picos, rodillo o botella: ¿cuál es mejor?',
       paragraphs: [
         'Ningún estudio ha comparado herramientas de masaje para la fascitis plantar, así que la mejor es la que te da una presión firme sin un pico de dolor agudo. La tabla de abajo es una guía práctica, no datos de ensayos.',
-        'Empieza con algo suave. Una pelota de tenis reparte la presión y va bien con un pie adolorido. Pasa a una pelota de lacrosse solo si la de tenis ya no se siente después de unas sesiones. Una pelota de golf a menudo se clava justo en el punto adolorido del talón. Una pelota de picos añade una sensación en la piel, pero no hay evidencia de que los picos trabajen más profundo.',
+        '**Empieza con algo suave.** Una pelota de tenis reparte la presión y va bien con un pie adolorido. Pasa a una pelota de lacrosse solo si la de tenis ya no se siente después de unas sesiones. Una pelota de golf a menudo se clava justo en el punto adolorido del talón. Una pelota de picos añade una sensación en la piel, pero no hay evidencia de que los picos trabajen más profundo.',
       ],
       table: {
         caption: 'Herramientas de masaje para la fascitis plantar comparadas (guía práctica, no datos de ensayos)',
@@ -88,17 +96,34 @@ export const MASSAGE_BALL_ES: Guide = {
       h2: '¿Una botella de agua congelada ayuda con la fascitis plantar?',
       keyFact: 'En un estudio pequeño con 30\u00A0personas, añadir una pelota de tenis congelada a los estiramientos durante dos meses bajó el dolor más que solo estirar, pero no quedó claro cómo se asignó a las personas a los grupos (Shinde y Patil, 2026).',
       paragraphs: [
-        'Una botella de agua congelada puede sentirse calmante en una planta adolorida, pero ningún ensayo ha demostrado que el frío añada algo frente a una botella o pelota a temperatura ambiente. Presiona a lo largo del arco como un rodillo y adormece la piel por un rato.',
-        'El único estudio que encontramos que añade rodar algo congelado a un programa de ejercicios es pequeño y débil. En un estudio de 2026 con 30\u00A0personas, un grupo hizo estiramiento estático y el otro estiramiento más una pelota de tenis congelada, durante dos meses. El dolor bajó de cerca de 7,7 a 3,5 de 10 en el grupo de la pelota congelada y de 7,6 a 6,7 con solo estiramiento. El reporte no deja claro cómo se repartió a las personas en los grupos, y el grupo de estiramiento mejoró mucho menos que en ensayos más grandes, así que toma la diferencia con cautela. La guía de 2023 para el dolor de talón no hace ninguna recomendación sobre el hielo.',
-        'Si te gusta el frío, úsalo con cuidado. Limítalo a unos 10\u00A0minutos, envuelve la botella en un calcetín delgado si te arde la piel, y evita el frío si tienes poca sensibilidad en los pies o Raynaud. Lo de que una botella congelada «reduce la inflamación» no tiene respaldo en ensayos de fascitis plantar. Para la pregunta más amplia de frío o calor, mira [hielo o calor para la fascitis plantar](/es/hielo-o-calor-fascitis-plantar/).',
+        'Una botella de agua congelada puede sentirse calmante en una planta adolorida, pero **ningún ensayo ha demostrado que el frío añada algo frente a una botella o pelota a temperatura ambiente.** Presiona a lo largo del arco como un rodillo y adormece la piel por un rato.',
+        'El único estudio que encontramos que añade rodar algo congelado a un programa de ejercicios es pequeño y débil. En un estudio de 2026 con 30\u00A0personas, un grupo hizo estiramiento estático y el otro estiramiento más una pelota de tenis congelada, durante dos meses. El dolor bajó de cerca de 7,7 a 3,5 de 10 en el grupo de la pelota congelada y de 7,6 a 6,7 con solo estiramiento.',
+        'El reporte no deja claro cómo se repartió a las personas en los grupos, y el grupo de estiramiento mejoró mucho menos que en ensayos más grandes, así que toma la diferencia con cautela. La guía de 2023 para el dolor de talón no hace ninguna recomendación sobre el hielo.',
+        'Si te gusta el frío, úsalo con cuidado:',
+        {
+          list: [
+            'Limítalo a unos 10\u00A0minutos.',
+            'Envuelve la botella en un calcetín delgado si te arde la piel.',
+            'Evita el frío si tienes poca sensibilidad en los pies o Raynaud.',
+          ],
+        },
+        'Lo de que una botella congelada «reduce la inflamación» no tiene respaldo en ensayos de fascitis plantar. Para la pregunta más amplia de frío o calor, mira [hielo o calor para la fascitis plantar](/es/hielo-o-calor-fascitis-plantar/).',
       ],
       cites: [CITE.shindeFrozenBall, CITE.guideline],
     },
     {
       h2: '¿Con cuánta fuerza y por cuánto tiempo debes rodar el pie?',
       paragraphs: [
-        'Rueda con una presión firme y constante que se quede en unos 3 a 5 de 10 en una escala de dolor o menos, durante cerca de un minuto por pie. No hay una dosis ideal probada, así que empieza corto y añade tiempo solo si tu pie se siente mejor después.',
-        'Los estudios usaron cantidades muy distintas. En el ensayo de 2021 con rodillo de espuma, las personas rodaron 45\u00A0segundos, descansaron 15\u00A0segundos y repitieron eso cinco veces. En el ensayo de 2024 con pelota de masaje, se les pidió rodar al menos tres veces al día por más de cinco minutos cada vez, y el grupo no mejoró de forma significativa. En el ensayo de 2025, el automasaje duraba 10\u00A0minutos dentro de una sesión de ejercicio más larga. Entre estos estudios, rodar más no se vio claramente mejor.',
+        '**Rueda con una presión firme y constante que se quede en unos 3 a 5 de 10 en una escala de dolor o menos, durante cerca de un minuto por pie.** No hay una dosis ideal probada, así que empieza corto y añade tiempo solo si tu pie se siente mejor después.',
+        'Los estudios usaron cantidades muy distintas:',
+        {
+          list: [
+            '**Ensayo de 2021 con rodillo de espuma:** las personas rodaron 45\u00A0segundos, descansaron 15\u00A0segundos y repitieron eso cinco veces.',
+            '**Ensayo de 2024 con pelota de masaje:** se les pidió rodar al menos tres veces al día por más de cinco minutos cada vez, y el grupo no mejoró de forma significativa.',
+            '**Ensayo de 2025:** el automasaje duraba 10\u00A0minutos dentro de una sesión de ejercicio más larga.',
+          ],
+        },
+        'Entre estos estudios, rodar más no se vio claramente mejor.',
         'Walkito empieza el masaje plantar con 1 x 60\u00A0segundos, como un ejercicio corto de recuperación en los días más ligeros. Siéntate y deja que el peso de la pierna haga la mayor parte del trabajo.',
       ],
       exercises: [
@@ -121,8 +146,9 @@ export const MASSAGE_BALL_ES: Guide = {
       h2: '¿Conviene rodar o masajear la pantorrilla para la fascitis plantar?',
       keyFact: 'En un ensayo piloto con 69\u00A0personas, el masaje profundo de pantorrilla con ejercicios de deslizamiento neural y autoestiramientos mejoró la función más que el ultrasonido en el talón con los mismos estiramientos (Saban y colegas, 2014).',
       paragraphs: [
-        'Trabajar la pantorrilla es un añadido razonable para la fascitis plantar, porque una pantorrilla tensa jala del talón, y los ensayos que más ayudaron trabajaron la pantorrilla además de la planta. Los músculos de la pantorrilla se unen al tendón de Aquiles, que se inserta en el hueso del talón cerca de donde empieza la fascia plantar.',
-        'En el ensayo piloto de 2014 con 69\u00A0personas, el masaje profundo de pantorrilla, más ejercicios de deslizamiento neural (movimientos suaves que hacen deslizar el nervio) y autoestiramientos, mejoró la función más que el ultrasonido en el talón con los mismos estiramientos. En el ensayo de 2021 con rodillo de espuma, las personas también rodaron la pantorrilla desde la parte de atrás de la rodilla hasta el Aquiles, y sus pantorrillas quedaron menos sensibles a la presión que en el grupo de estiramiento. El estiramiento de pantorrilla tiene mejor respaldo que rodarla: la guía de 2023 le da un grado **A**, y una revisión de 2020 encontró evidencia de calidad moderada de que el estiramiento de la fascia plantar alivió el dolor más que el de pantorrilla, y evidencia de muy baja calidad de que el estiramiento de pantorrilla superó a un estiramiento simulado.',
+        '**Trabajar la pantorrilla es un añadido razonable para la fascitis plantar**, porque una pantorrilla tensa jala del talón, y los ensayos que más ayudaron trabajaron la pantorrilla además de la planta. Los músculos de la pantorrilla se unen al tendón de Aquiles, que se inserta en el hueso del talón cerca de donde empieza la fascia plantar.',
+        'En el ensayo piloto de 2014 con 69\u00A0personas, el masaje profundo de pantorrilla, más ejercicios de deslizamiento neural (movimientos suaves que hacen deslizar el nervio) y autoestiramientos, mejoró la función más que el ultrasonido en el talón con los mismos estiramientos. En el ensayo de 2021 con rodillo de espuma, las personas también rodaron la pantorrilla desde la parte de atrás de la rodilla hasta el Aquiles, y sus pantorrillas quedaron menos sensibles a la presión que en el grupo de estiramiento.',
+        'El estiramiento de pantorrilla tiene mejor respaldo que rodarla: la guía de 2023 le da un grado **A**, y una revisión de 2020 encontró evidencia de calidad moderada de que el estiramiento de la fascia plantar alivió el dolor más que el de pantorrilla, y evidencia de muy baja calidad de que el estiramiento de pantorrilla superó a un estiramiento simulado.',
         'Rueda la pantorrilla sobre un rodillo de espuma durante un minuto si te gusta, y luego haz los dos estiramientos de abajo. Más en [pantorrillas tensas](/es/pantorrillas-tensas/).',
       ],
       exercises: [
@@ -157,7 +183,15 @@ export const MASSAGE_BALL_ES: Guide = {
       h2: '¿Por qué duele masajear la fascitis plantar, y puede empeorarla?',
       paragraphs: [
         'Masajear la fascitis plantar a menudo duele porque el tejido cerca del talón ya está sensible, y la presión sobre un punto sensible se siente aguda. Es común sentir una molestia leve mientras ruedas que se quita en unos minutos. Un dolor agudo, que dura hasta la mañana siguiente o que deja un moretón, significa que presionaste demasiado fuerte o demasiado tiempo.',
-        'Usa tus primeros pasos de la mañana siguiente como prueba. Si esos pasos están peor después de una sesión de rodar, corta el tiempo a la mitad, cambia a una pelota más suave y no presiones el talón en sí. Si siguen peor, deja de rodar por un tiempo: los estiramientos y el trabajo de fuerza importan más. Más sobre ese patrón en [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/).',
+        '**Usa tus primeros pasos de la mañana siguiente como prueba.** Si esos pasos están peor después de una sesión de rodar:',
+        {
+          list: [
+            'Corta el tiempo a la mitad.',
+            'Cambia a una pelota más suave.',
+            'No presiones el talón en sí.',
+          ],
+        },
+        'Si siguen peor, deja de rodar por un tiempo: los estiramientos y el trabajo de fuerza importan más. Más sobre ese patrón en [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/).',
         'Las herramientas duras son las de más riesgo. Las pelotas de golf y los rodillos con relieve concentran la fuerza en un área pequeña, y pararte sobre una pelota pone todo tu peso encima. Mejor siéntate. Si el dolor está en el centro de la almohadilla del talón y se siente como un golpe, puede ser [síndrome de la almohadilla grasa del talón](/es/sindrome-almohadilla-grasa-talon/), y presionarlo por lo general no ayuda.',
       ],
       cites: [],
@@ -179,8 +213,17 @@ export const MASSAGE_BALL_ES: Guide = {
     {
       h2: '¿Dónde encaja rodar el pie en una rutina para la fascitis plantar?',
       paragraphs: [
-        'Rodar el pie encaja mejor como un extra corto alrededor de los ejercicios que tienen la evidencia: un minuto de masaje con pelota, el estiramiento de la fascia plantar antes de tus primeros pasos, estiramientos de pantorrilla durante el día y trabajo de fuerza de pantorrilla algunas veces por semana. En un ensayo con 48\u00A0personas, las elevaciones de talón lentas con una toalla bajo los dedos dieron mejores puntuaciones de función del pie que el estiramiento de la fascia plantar a los tres meses, aunque los grupos estaban igualados a los seis y a los doce meses.',
-        'Si puedes ir con un fisioterapeuta, el trabajo manual de tejidos blandos es la versión del masaje que la guía respalda con más firmeza. En casa, quédate con la pelota, pero no dejes que reemplace el [estiramiento de la fascia plantar](/es/ejercicios/estiramiento-fascia-plantar/) ni las [elevaciones de talón](/es/elevaciones-de-talon-fascitis-plantar/).',
+        'Rodar el pie encaja mejor como un extra corto alrededor de los ejercicios que tienen la evidencia:',
+        {
+          list: [
+            'Un minuto de masaje con pelota.',
+            'El estiramiento de la fascia plantar antes de tus primeros pasos.',
+            'Estiramientos de pantorrilla durante el día.',
+            'Trabajo de fuerza de pantorrilla algunas veces por semana.',
+          ],
+        },
+        'En un ensayo con 48\u00A0personas, las elevaciones de talón lentas con una toalla bajo los dedos dieron mejores puntuaciones de función del pie que el estiramiento de la fascia plantar a los tres meses, aunque los grupos estaban igualados a los seis y a los doce meses.',
+        'Si puedes ir con un fisioterapeuta, **el trabajo manual de tejidos blandos es la versión del masaje que la guía respalda con más firmeza.** En casa, quédate con la pelota, pero no dejes que reemplace el [estiramiento de la fascia plantar](/es/ejercicios/estiramiento-fascia-plantar/) ni las [elevaciones de talón](/es/elevaciones-de-talon-fascitis-plantar/).',
       ],
       cites: [CITE.rathleff, CITE.guideline],
     },

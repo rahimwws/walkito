@@ -69,7 +69,10 @@ export default function SoporteEs() {
           asimetría al caminar, los pisos subidos, la frecuencia
           cardiaca, la frecuencia cardiaca en reposo, la energía activa, el
           sueño y los entrenamientos, y guarda allí las sesiones que terminas.
-          Todo es opcional. Estos datos se quedan en tu teléfono y nunca se
+          Todo es opcional.
+        </p>
+        <p>
+          Estos datos se quedan en tu teléfono y nunca se
           suben ni se guardan en tu cuenta. Desactiva lo que quieras en Ajustes
           → Apps → Salud → Acceso a datos y dispositivos → Walkito, y las partes
           que lo usaban simplemente dejan de mostrarse. El plan sigue

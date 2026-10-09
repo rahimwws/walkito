@@ -29,7 +29,7 @@ export const EX_SINGLE_LEG_BALANCE_PT: Guide = {
     {
       h2: 'Como fazer o equilíbrio em uma perna?',
       paragraphs: [
-        'Fique perto de uma parede ou bancada. Tire um pé do chão dobrando um pouco o joelho. Olhe para um ponto fixo à sua frente. Deixe o pé de apoio balançar. Esse balanço é o objetivo: os músculos pequenos do pé e do tornozelo estão trabalhando para manter você de pé.',
+        'Fique perto de uma parede ou bancada. Tire um pé do chão dobrando um pouco o joelho. Olhe para um ponto fixo à sua frente. Deixe o pé de apoio balançar. **Esse balanço é o objetivo:** os músculos pequenos do pé e do tornozelo estão trabalhando para manter você de pé.',
         'Segure o quanto conseguir, até 30\u00A0segundos, e troque de lado. Três vezes de cada lado é uma dose comum. Se você não consegue segurar mais que alguns segundos, mantenha as pontas dos dedos na parede e vá aumentando aos poucos.',
       ],
       exercises: [
@@ -70,14 +70,14 @@ export const EX_SINGLE_LEG_BALANCE_PT: Guide = {
       },
       after: [
         'Os números caem bastante quando os olhos fecham, principalmente depois dos 50. Isso faz da versão de olhos fechados um teste muito mais sensível do controle do tornozelo e do pé. Também é por isso que o app Walkito inclui uma progressão de olhos fechados depois do equilíbrio de olhos abertos.',
-        'Mais importante que bater com a tabela é ver se o seu tempo está melhorando ao longo das semanas e se os dois lados estão mais ou menos iguais. Uma diferença grande entre as pernas pode indicar um déficit de força ou de estabilidade de um lado.',
+        '**Mais importante que bater com a tabela é ver se o seu tempo está melhorando ao longo das semanas e se os dois lados estão mais ou menos iguais.** Uma diferença grande entre as pernas pode indicar um déficit de força ou de estabilidade de um lado.',
       ],
       cites: [CITE.springer],
     },
     {
       h2: 'A progressão de olhos fechados',
       paragraphs: [
-        'Fechar os olhos tira a informação visual que o cérebro normalmente usa para ajudar no equilíbrio. Isso obriga os proprioceptores do pé e do tornozelo, os sensores que percebem posição e movimento, a fazer mais do trabalho. É uma versão mais difícil do mesmo exercício, não um exercício diferente.',
+        'Fechar os olhos tira a informação visual que o cérebro normalmente usa para ajudar no equilíbrio. Isso obriga os proprioceptores do pé e do tornozelo, os sensores que percebem posição e movimento, a fazer mais do trabalho. **É uma versão mais difícil do mesmo exercício, não um exercício diferente.**',
         'Fique perto de uma parede por segurança. Feche os olhos e segure o quanto conseguir. A maioria das pessoas vê o tempo cair para uma fração do tempo de olhos abertos. Essa diferença diminui com a prática.',
         'O app Walkito inclui ficar em pé de olhos fechados como um exercício separado: 3\u00A0vezes de 20\u00A0segundos, os dois pés (alternando). Ele abre como progressão quando a meta de equilíbrio de olhos abertos está firme.',
       ],
@@ -86,7 +86,16 @@ export const EX_SINGLE_LEG_BALANCE_PT: Guide = {
       h2: 'Por que o equilíbrio importa para a dor no pé?',
       keyFact: 'Nas entorses de tornozelo, uma análise conjunta de 8\u00A0estudos e 3.577\u00A0atletas mostrou que o treino de equilíbrio reduziu o risco de entorse em 46\u00A0por cento comparado a nenhuma intervenção (Bellows e Wong, 2018).',
       paragraphs: [
-        'O equilíbrio não é separado da força do pé. Quando você fica em uma perna, os músculos intrínsecos do pé (os músculos pequenos dentro do pé que sustentam o arco), os músculos da panturrilha, o tibial anterior e os estabilizadores do quadril trabalham juntos. Um déficit em qualquer ponto dessa cadeia faz o pé compensar.',
+        '**O equilíbrio não é separado da força do pé.** Quando você fica em uma perna, trabalham juntos:',
+        {
+          list: [
+            'Os músculos intrínsecos do pé (os músculos pequenos dentro do pé que sustentam o arco).',
+            'Os músculos da panturrilha.',
+            'O tibial anterior.',
+            'Os estabilizadores do quadril.',
+          ],
+        },
+        'Um déficit em qualquer ponto dessa cadeia faz o pé compensar.',
         'Na fascite plantar e no pé chato, o treino de equilíbrio aparece nos programas de exercício junto com alongamento e fortalecimento, porque treina a cadeia inteira de uma vez. Um ensaio de 2023 com 52\u00A0pessoas com pé chato flexível mostrou que um programa que juntava exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril, alongamento e equilíbrio mudou o formato do arco mais que um grupo controle. O equilíbrio não foi isolado nesse ensaio, mas fazia parte do programa que funcionou.',
         'Especificamente nas entorses de tornozelo, uma metanálise de 2018 com 8\u00A0estudos e 3.577\u00A0atletas mostrou que o treino de equilíbrio reduziu o risco de entorse de tornozelo em 46\u00A0por cento comparado a nenhuma intervenção. Esse é o achado isolado mais forte por trás de incluir equilíbrio em um programa para os pés.',
       ],
@@ -95,18 +104,26 @@ export const EX_SINGLE_LEG_BALANCE_PT: Guide = {
     {
       h2: 'Quais são os erros comuns no equilíbrio em uma perna?',
       paragraphs: [
-        'Olhar para o chão. Os olhos devem ficar em um ponto fixo na altura dos olhos. Olhar para baixo joga o peso para a frente e deixa o exercício mais fácil, o que tira o sentido dele.',
-        'Travar o joelho de apoio. Uma leve dobra mantém os músculos ativos. Um joelho travado passa a carga para a articulação em vez dos músculos em volta dela.',
-        'Tentar não balançar. O balanço é o exercício. As pequenas correções que o pé faz para ficar de pé são o que desenvolve a propriocepção e o controle do tornozelo. Agarrar o chão com os dedos dobrados ou ficar todo tenso para eliminar qualquer movimento diminui o efeito do treino.',
-        'Ficar longe demais da parede. Você precisa estar perto o bastante para se segurar se perder o equilíbrio, principalmente na versão de olhos fechados. Segurança primeiro.',
+        {
+          list: [
+            '**Olhar para o chão.** Os olhos devem ficar em um ponto fixo na altura dos olhos. Olhar para baixo joga o peso para a frente e deixa o exercício mais fácil, o que tira o sentido dele.',
+            '**Travar o joelho de apoio.** Uma leve dobra mantém os músculos ativos. Um joelho travado passa a carga para a articulação em vez dos músculos em volta dela.',
+            '**Tentar não balançar.** O balanço é o exercício. As pequenas correções que o pé faz para ficar de pé são o que desenvolve a propriocepção e o controle do tornozelo. Agarrar o chão com os dedos dobrados ou ficar todo tenso para eliminar qualquer movimento diminui o efeito do treino.',
+            '**Ficar longe demais da parede.** Você precisa estar perto o bastante para se segurar se perder o equilíbrio, principalmente na versão de olhos fechados. Segurança primeiro.',
+          ],
+        },
       ],
     },
     {
       h2: 'Versões mais fáceis e mais difíceis',
       paragraphs: [
-        'Se você não consegue ficar em uma perna por mais que alguns segundos, mantenha as pontas dos dedos em uma parede e vá subindo. Mesmo um toque leve dá ao cérebro uma informação extra de equilíbrio. Tire um dedo de cada vez conforme for melhorando.',
-        'Se 30\u00A0segundos em um chão firme parecerem fáceis, tente ficar em cima de uma toalha dobrada ou de um travesseiro. A superfície macia faz o tornozelo trabalhar mais a cada balanço. O app inclui um exercício de equilíbrio no travesseiro como progressão seguinte.',
-        'A progressão mais difícil é o equilíbrio em uma perna de olhos fechados em uma superfície macia. Isso tira a informação visual e o chão estável ao mesmo tempo, e deixa quase todo o trabalho para o pé e o tornozelo.',
+        {
+          list: [
+            '**Mais fácil:** Se você não consegue ficar em uma perna por mais que alguns segundos, mantenha as pontas dos dedos em uma parede e vá subindo. Mesmo um toque leve dá ao cérebro uma informação extra de equilíbrio. Tire um dedo de cada vez conforme for melhorando.',
+            '**Mais difícil:** Se 30\u00A0segundos em um chão firme parecerem fáceis, tente ficar em cima de uma toalha dobrada ou de um travesseiro. A superfície macia faz o tornozelo trabalhar mais a cada balanço. O app inclui um exercício de equilíbrio no travesseiro como progressão seguinte.',
+            '**O mais difícil:** A progressão mais difícil é o equilíbrio em uma perna de olhos fechados em uma superfície macia. Isso tira a informação visual e o chão estável ao mesmo tempo, e deixa quase todo o trabalho para o pé e o tornozelo.',
+          ],
+        },
         'Para exercícios relacionados que fortalecem a cadeia, veja a [elevação de calcanhar](/pt/exercicios/elevacao-de-calcanhar/), a [elevação dos dedos](/pt/exercicios/elevacao-dos-dedos-parede/) e o [exercício do pé curto](/pt/exercicios/pe-curto/).',
       ],
     },

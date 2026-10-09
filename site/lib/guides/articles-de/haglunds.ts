@@ -46,7 +46,7 @@ export const HAGLUNDS_DE: Guide = {
     {
       h2: 'Wie hängt die Haglundferse mit der insertionalen Achillessehnen-Tendinopathie zusammen?',
       paragraphs: [
-        'Haglundferse und insertionale Achillessehnen-Tendinopathie treten oft zusammen auf, sind aber nicht dasselbe. Die insertionale Tendinopathie ist Schmerz an der Stelle, wo die Achillessehne am Fersenbein ansetzt, meist durch Überlastung. Die Haglundferse ist eine Form des Knochens. Der Höcker kann die Sehne von hinten reizen, und der Sehnenansatz kann durch denselben Druck betroffen sein, der auch den Schleimbeutel entzündet.',
+        'Haglundferse und insertionale Achillessehnen-Tendinopathie treten oft zusammen auf, **sind aber nicht dasselbe.** Die insertionale Tendinopathie ist Schmerz an der Stelle, wo die Achillessehne am Fersenbein ansetzt, meist durch Überlastung. Die Haglundferse ist eine Form des Knochens. Der Höcker kann die Sehne von hinten reizen, und der Sehnenansatz kann durch denselben Druck betroffen sein, der auch den Schleimbeutel entzündet.',
         'Der praktische Zusammenhang: Wenn du eine Haglundferse und Schmerzen hinten an der Ferse hast, kann der Schmerz vom Schleimbeutel, vom Sehnenansatz oder von beidem kommen. Eine medizinische Fachperson kann das unterscheiden, indem sie prüft, wo der Druckschmerz am stärksten ist und ob Dehnen oder Belasten den Schmerz auslöst.',
         'Die Leitlinie von 2024 zur Achillessehnen-Tendinopathie trennt klar zwischen Beschwerden im mittleren Sehnenabschnitt und am Ansatz. Bei Problemen am Ansatz, zu denen auch Fälle mit Haglundferse gehören, muss das übliche Protokoll mit exzentrischem Fersenabsenken angepasst werden. Eine tiefe Dorsalflexion, bei der die Ferse unter die Stufenkante sinkt, drückt die Sehne gegen den Knochen und kann die Beschwerden verschlimmern.',
       ],
@@ -64,9 +64,18 @@ export const HAGLUNDS_DE: Guide = {
     {
       h2: 'Welche konservativen Möglichkeiten gibt es bei der Haglundferse?',
       paragraphs: [
-        'Eine narrative Übersichtsarbeit von 2020 nennt die ersten konservativen Schritte: andere Schuhe (keine Schuhe mit starrer Fersenkappe, Schuhe ohne Rückseite oder eine Polsterung im Fersenbereich), Fersenkeile, um die Spannung auf die Achillessehne zu verringern, Dehnen von Gastrocnemius und Soleus, Krafttraining der Wade und angepasste Aktivität.',
+        'Eine narrative Übersichtsarbeit von 2020 nennt die ersten konservativen Schritte:',
+        {
+          list: [
+            '**Andere Schuhe:** keine Schuhe mit starrer Fersenkappe, Schuhe ohne Rückseite oder eine Polsterung im Fersenbereich.',
+            '**Fersenkeile:** um die Spannung auf die Achillessehne zu verringern.',
+            '**Dehnen:** von Gastrocnemius und Soleus.',
+            '**Krafttraining:** der Wade.',
+            '**Angepasste Aktivität.**',
+          ],
+        },
         'Keine randomisierte kontrollierte Studie hat eine dieser Maßnahmen speziell bei der Haglundferse getestet. Die Belege sind Expertenmeinungen und Fallserien. Die Übersichtsarbeit von 2022 zur Operation merkte an, dass die meisten Autoren mindestens sechs Monate konservative Behandlung empfehlen, bevor eine Operation erwogen wird.',
-        'Die schnellste Änderung ist oft der Schuh. Wenn eine starre Fersenkappe auf den Höcker drückt, kann es die Beschwerden rasch verringern, diesen Druck wegzunehmen. Schuhe ohne Rückseite, Schuhe mit weicher oder flexibler Fersenkappe oder eine Polsterung im Schuh rund um den Höcker (nicht darüber) sind praktische Möglichkeiten.',
+        '**Die schnellste Änderung ist oft der Schuh.** Wenn eine starre Fersenkappe auf den Höcker drückt, kann es die Beschwerden rasch verringern, diesen Druck wegzunehmen. Schuhe ohne Rückseite, Schuhe mit weicher oder flexibler Fersenkappe oder eine Polsterung im Schuh rund um den Höcker (nicht darüber) sind praktische Möglichkeiten.',
       ],
       cites: [CITE.chooRearfoot, CITE.yuenHaglund],
     },
@@ -144,7 +153,15 @@ export const HAGLUNDS_DE: Guide = {
       keyFact: 'Eine systematische Übersichtsarbeit von 2022 mit 20\u00A0Studien fand, dass sowohl offene als auch endoskopische Operationen die AOFAS-Funktionswerte verbesserten, wobei die endoskopischen Techniken eine kürzere Erholung zeigten (Yuen und Kollegen, 2022).',
       paragraphs: [
         'Über eine Operation wird gesprochen, wenn mindestens sechs Monate konservative Behandlung keine ausreichende Linderung gebracht haben. Die systematische Übersichtsarbeit von 2022 von Yuen und Kollegen umfasste 20\u00A0Studien und fand, dass sowohl offene als auch endoskopische Techniken die AOFAS-Werte (American Orthopaedic Foot and Ankle Society) verbesserten. Endoskopische Verfahren zeigten kürzere Erholungszeiten.',
-        'Bei der Operation wird meist der Knochenvorsprung entfernt (Kalkaneoplastik), der entzündete Schleimbeutel herausgenommen und in manchen Fällen die Achillessehne gereinigt oder neu befestigt. Zu den Komplikationen können Wundheilungsstörungen, Nervenverletzungen und eine geschwächte Sehne gehören. Die Entscheidung triffst du gemeinsam mit deiner Chirurgin oder deinem Chirurgen.',
+        'Bei der Operation wird meist:',
+        {
+          list: [
+            'Der Knochenvorsprung entfernt (Kalkaneoplastik).',
+            'Der entzündete Schleimbeutel herausgenommen.',
+            'In manchen Fällen die Achillessehne gereinigt oder neu befestigt.',
+          ],
+        },
+        'Zu den Komplikationen können Wundheilungsstörungen, Nervenverletzungen und eine geschwächte Sehne gehören. Die Entscheidung triffst du gemeinsam mit deiner Chirurgin oder deinem Chirurgen.',
         'Diese Seite empfiehlt eine Operation weder noch rät sie davon ab. Die konservativen Schritte oben sind der Anfang für die meisten, und viele sprechen gut genug darauf an, um eine Operation zu vermeiden. Wenn sechs Monate mit anderen Schuhen, Übungen und angepasster Aktivität nicht geholfen haben, kann eine Fachärztin oder ein Facharzt für Fuß und Sprunggelenk operative Möglichkeiten besprechen.',
       ],
       cites: [CITE.yuenHaglund],
@@ -154,7 +171,7 @@ export const HAGLUNDS_DE: Guide = {
       paragraphs: [
         'Schuhe erzeugen den Knochenvorsprung nicht. Die Form des Fersenbeins ist teilweise genetisch bedingt. Aber Schuhe mit starrer, unnachgiebiger Fersenkappe können einen Höcker reizen, der sonst schmerzlos wäre. Daher kommt der englische Name „pump bump“, nach der starren Rückseite von Pumps.',
         'Schuhe, die du meiden solltest: alles mit einer steifen, engen Fersenkappe, die hinten auf die Ferse drückt. Schuhe, nach denen du suchen solltest: weiche oder gepolsterte Fersenränder, leicht offene oder flexible Rückseiten und genug Platz, damit die Fersenkappe nicht einschneidet. Fersenkeile im Schuh können die Achillessehne auch ein wenig vom Höcker wegbewegen.',
-        'Andere Schuhe sind der Schritt, den du am schnellsten umsetzen kannst, und der, der in den Expertenmeinungen am einheitlichsten empfohlen wird. Wenn du den Druck wegnehmen kannst, kannst du den Schmerz oft verringern.',
+        'Andere Schuhe sind der Schritt, den du am schnellsten umsetzen kannst, und der, der in den Expertenmeinungen am einheitlichsten empfohlen wird. **Wenn du den Druck wegnehmen kannst, kannst du den Schmerz oft verringern.**',
       ],
       cites: [CITE.chooRearfoot, CITE.yuenHaglund],
     },

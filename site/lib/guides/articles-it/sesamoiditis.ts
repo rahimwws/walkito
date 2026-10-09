@@ -46,7 +46,7 @@ export const SESAMOIDITIS_IT: Guide = {
       keyFact: 'Circa 1\u00A0persona su 10 ha un sesamoide bipartito, una variante normale che in radiografia può sembrare una frattura ma ha bordi lisci e arrotondati invece che frastagliati (Yammine, 2015).',
       paragraphs: [
         'La sesamoidite è un problema da sovraccarico. Il dolore arriva piano piano e si fa sentire durante l’attività. Una frattura di un sesamoide è una crepa nell’osso, di solito per un singolo evento acuto o per uno stress cronico. Il dolore da frattura tende a essere più acuto e può esserci anche a riposo.',
-        'Una complicazione è che circa 1\u00A0persona su 10 ha un sesamoide bipartito, cioè il sesamoide mediale è naturalmente in due pezzi. In radiografia un sesamoide bipartito sembra una frattura. La differenza sta nei bordi: quelli di un sesamoide bipartito sono lisci e arrotondati, quelli di una frattura sono frastagliati e irregolari. Il medico può anche chiedere una radiografia dell’altro piede per confronto.',
+        'Una complicazione è che circa 1\u00A0persona su 10 ha un sesamoide bipartito, cioè il sesamoide mediale è naturalmente in due pezzi. In radiografia un sesamoide bipartito sembra una frattura. La differenza sta nei bordi: **quelli di un sesamoide bipartito sono lisci e arrotondati, quelli di una frattura sono frastagliati e irregolari.** Il medico può anche chiedere una radiografia dell’altro piede per confronto.',
         'Se la radiografia non è chiara, una scintigrafia ossea o una risonanza magnetica possono confermare la diagnosi. La risonanza mostra l’edema osseo, un gonfiore dentro l’osso, presente nella maggior parte dei casi di sesamoidite. Di solito la risonanza si riserva ai casi in cui i sintomi continuano nonostante la gestione iniziale.',
       ],
       cites: [CITE.yammineSesamoid],
@@ -55,7 +55,15 @@ export const SESAMOIDITIS_IT: Guide = {
       h2: 'Com’è la gestione conservativa?',
       keyFact: 'Una revisione del 2025 che ha riunito 11\u00A0studi e 59\u00A0pazienti ha trovato che i punteggi del dolore miglioravano in circa il 66% dei casi trattati in modo conservativo, anche se le ricadute erano frequenti (Biz e colleghi, 2025).',
       paragraphs: [
-        'La revisione sistematica del 2025 di Biz e colleghi ha riunito i dati dei singoli pazienti di 11\u00A0studi, per un totale di 59\u00A0pazienti. I trattamenti più comuni erano plantari, modifica delle attività e infiltrazioni di cortisone. I punteggi del dolore miglioravano in circa il 66% dei casi, ma le ricadute erano frequenti e alcuni pazienti restavano sintomatici.',
+        'La revisione sistematica del 2025 di Biz e colleghi ha riunito i dati dei singoli pazienti di 11\u00A0studi, per un totale di 59\u00A0pazienti. I trattamenti più comuni erano:',
+        {
+          list: [
+            'Plantari.',
+            'Modifica delle attività.',
+            'Infiltrazioni di cortisone.',
+          ],
+        },
+        '**I punteggi del dolore miglioravano in circa il 66% dei casi, ma le ricadute erano frequenti** e alcuni pazienti restavano sintomatici.',
         'La revisione ha trovato che plantari e scarico erano usati in quasi tutti i casi. Le infiltrazioni di cortisone davano sollievo nel breve periodo ma comportavano un rischio di ricaduta. Nessun trattamento è stato confrontato direttamente con un altro in uno studio randomizzato. Gli autori hanno concluso che servono protocolli standard e studi di qualità più alta.',
         'La chirurgia, di solito una sesamoidectomia parziale o totale (rimozione dell’osso), si considera solo quando diversi mesi di cure conservative non hanno aiutato. La maggior parte dei professionisti sanitari prova prima almeno tre-sei mesi di gestione non chirurgica.',
       ],
@@ -67,7 +75,7 @@ export const SESAMOIDITIS_IT: Guide = {
       h2: 'Cos’è il cuscinetto da ballerino e come funziona?',
       paragraphs: [
         'Il cuscinetto da ballerino (in inglese «dancer’s pad») è un cuscinetto piatto di feltro o di schiuma con un incavo a U sotto la testa del primo metatarso. L’incavo sta proprio sopra la zona dei sesamoidi, così il cuscinetto solleva l’avampiede intorno e toglie la pressione diretta dal punto dolente. Il nome viene dalla danza classica, dove il carico sull’avampiede è estremo.',
-        'Puoi comprare cuscinetti da ballerino già tagliati o farne tagliare uno su misura da un professionista sanitario. La posizione conta: l’incavo deve stare direttamente sotto le ossa sesamoidi, né troppo avanti né troppo indietro. Alcune persone usano il cuscinetto dentro la scarpa; altre lo fanno integrare in un plantare su misura.',
+        'Puoi comprare cuscinetti da ballerino già tagliati o farne tagliare uno su misura da un professionista sanitario. La posizione conta: **l’incavo deve stare direttamente sotto le ossa sesamoidi**, né troppo avanti né troppo indietro. Alcune persone usano il cuscinetto dentro la scarpa; altre lo fanno integrare in un plantare su misura.',
         'Una scarpa con suola rigida o a dondolo riduce quanto si piega l’articolazione dell’alluce nella spinta, e questo limita il carico sui sesamoidi. Evitare scarpe flessibili con suola sottile e tacchi alti nel periodo con sintomi aiuta per lo stesso motivo.',
       ],
     },
@@ -75,7 +83,15 @@ export const SESAMOIDITIS_IT: Guide = {
       h2: 'Le scarpe contano?',
       paragraphs: [
         'Le scarpe hanno un ruolo di supporto. Una scarpa con la suola rigida limita il movimento della prima articolazione metatarso-falangea (l’articolazione dell’alluce), e questo riduce direttamente lo stress sui sesamoidi. Le suole a dondolo fanno la stessa cosa facendo rotolare il piede nella spinta senza che l’alluce debba piegarsi.',
-        'Evita scarpe flessibili sull’avampiede, molto piatte o con la suola sottile. I tacchi alti spostano il peso in avanti sulla parte anteriore della pianta, aumentando il carico sui sesamoidi. Se il problema è partito con la corsa, passare per un periodo a una scarpa con più ammortizzazione sull’avampiede e una suola più alta può aiutare mentre i sintomi si calmano.',
+        'Evita scarpe:',
+        {
+          list: [
+            'Flessibili sull’avampiede.',
+            'Molto piatte.',
+            'Con la suola sottile.',
+          ],
+        },
+        'I tacchi alti spostano il peso in avanti sulla parte anteriore della pianta, aumentando il carico sui sesamoidi. Se il problema è partito con la corsa, passare per un periodo a una scarpa con più ammortizzazione sull’avampiede e una suola più alta può aiutare mentre i sintomi si calmano.',
         'Questi cambiamenti da soli non risolvono il problema se l’irritazione di fondo è importante, ma riducono il carico che l’ha causato.',
       ],
     },
@@ -84,14 +100,14 @@ export const SESAMOIDITIS_IT: Guide = {
       paragraphs: [
         'La risposta onesta è che l’esercizio ha un ruolo limitato nella gestione della sesamoidite in sé. A differenza della [fascite plantare](/it/esercizi-fascite-plantare/) o della [tendinite d’Achille](/it/tendinite-achille-esercizi/), dove i programmi di carico hanno un buon sostegno dagli studi, per la sesamoidite non ci sono studi sull’esercizio. La revisione sistematica del 2025 non ha individuato nessuno studio che testasse un protocollo di esercizi specifico.',
         'Quello su cui l’esercizio può aiutare è il quadro intorno. Un polpaccio rigido sposta il peso sull’avampiede mentre cammini. Allungare gastrocnemio e soleo può ridurre quel carico in avanti. Anche dei muscoli intrinseci del piede deboli possono contribuire a una distribuzione irregolare della pressione sull’avampiede. Apertura delle dita e piede corto possono aiutare a dividere il carico in modo più uniforme tra le teste metatarsali, anche se non è stato testato specificamente per la sesamoidite.',
-        'Se stai recuperando da una sesamoidite e nel periodo di riposo hai perso forza nelle dita o flessibilità nel polpaccio, esercizi delicati per la [parte anteriore della pianta del piede](/it/metatarsalgia-dolore-pianta-piede/) possono far parte di un piano di ritorno all’attività. Ma gli strumenti principali sono lo scarico e la modifica delle attività, non l’esercizio.',
+        'Se stai recuperando da una sesamoidite e nel periodo di riposo hai perso forza nelle dita o flessibilità nel polpaccio, esercizi delicati per la [parte anteriore della pianta del piede](/it/metatarsalgia-dolore-pianta-piede/) possono far parte di un piano di ritorno all’attività. Ma **gli strumenti principali sono lo scarico e la modifica delle attività, non l’esercizio.**',
       ],
     },
     {
       h2: 'Che legame c’è tra la sesamoidite e altri problemi dell’avampiede?',
       paragraphs: [
         'Il dolore da sesamoidite sta sotto l’alluce, e questo lo separa dal più ampio [dolore alla pianta del piede](/it/metatarsalgia-dolore-pianta-piede/) (metatarsalgia), dove il dolore di solito è sotto la seconda e la terza testa metatarsale. Il [neuroma di Morton](/it/neuroma-di-morton/) dà formicolio o bruciore tra il terzo e il quarto dito, non sotto l’alluce.',
-        'Anche la gotta può colpire l’articolazione dell’alluce e all’inizio dà sensazioni simili, ma la gotta arriva all’improvviso, spesso nel giro di una notte, con arrossamento, gonfiore e calore. La sesamoidite compare piano piano. Se l’inizio è stato improvviso e l’articolazione è rossa e calda, rivolgiti a un professionista sanitario per escludere gotta o infezione.',
+        'Anche la gotta può colpire l’articolazione dell’alluce e all’inizio dà sensazioni simili, ma la gotta arriva all’improvviso, spesso nel giro di una notte, con arrossamento, gonfiore e calore. La sesamoidite compare piano piano. **Se l’inizio è stato improvviso e l’articolazione è rossa e calda, rivolgiti a un professionista sanitario per escludere gotta o infezione.**',
         'Anche l’alluce rigido, rigidità e artrosi dell’articolazione dell’alluce, può dare dolore in un punto simile, ma riguarda l’articolazione stessa invece delle ossa sesamoidi sotto.',
       ],
     },

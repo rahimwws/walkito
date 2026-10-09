@@ -34,7 +34,7 @@ export const MORTONS_FR: Guide = {
       h2: 'Qu’est-ce que le névrome de Morton\u00A0?',
       figure: { id: 'mortons', caption: 'Le névrome de Morton est un nerf épaissi entre les têtes des métatarsiens, le plus souvent entre le troisième et le quatrième orteil.', alt: 'Les os du pied vus de dessus, avec des nerfs jaunes qui vont vers les orteils et un ovale gonflé sur le nerf entre le troisième et le quatrième orteil.' },
       paragraphs: [
-        'Le névrome de Morton est un épaississement bénin du nerf digital plantaire commun, en général dans le troisième espace intermétatarsien (entre le troisième et le quatrième orteil). Plus rarement, il se trouve dans le deuxième espace. Ce n’est pas un cancer, ni une excroissance sur l’os.',
+        'Le névrome de Morton est un épaississement bénin du nerf digital plantaire commun, en général dans le troisième espace intermétatarsien (entre le troisième et le quatrième orteil). Plus rarement, il se trouve dans le deuxième espace. **Ce n’est pas un cancer, ni une excroissance sur l’os.**',
         'Le nerf passe sous le ligament métatarsien transverse, une bande de tissu qui maintient ensemble les têtes des métatarsiens. Quand les têtes se serrent, le nerf est pincé. Avec le temps, la gaine du nerf s’épaissit, et le nerf lui-même peut grossir. Il en résulte une douleur, une brûlure, des fourmillements ou un engourdissement entre les orteils, qui irradient dans les orteils concernés.',
         'Il est plus fréquent chez les femmes, en partie à cause du choix des chaussures. Les chaussures à bout étroit et les talons hauts serrent les têtes des métatarsiens et augmentent la pression sur le nerf. La course, les sports de raquette et de salle, et les métiers où l’on reste longtemps debout dans des chaussures serrées sont aussi des facteurs de risque.',
       ],
@@ -43,8 +43,15 @@ export const MORTONS_FR: Guide = {
       h2: 'Quelle différence entre névrome de Morton et métatarsalgie\u00A0?',
       paragraphs: [
         'La métatarsalgie est un terme plus large qui désigne une douleur autour des têtes des métatarsiens, les bosses osseuses sous l’[avant-pied](/fr/metatarsalgie-douleur-avant-pied/). Le névrome de Morton est une cause précise de douleur de l’avant-pied, qui entre dans ce cadre plus large de la métatarsalgie.',
-        'La différence clé, c’est ce qui fait mal et comment. La métatarsalgie est en général une douleur, sourde à vive, sous l’avant-pied, souvent sous les têtes du deuxième et du troisième métatarsien. Le névrome de Morton donne une brûlure, des fourmillements ou un engourdissement entre les orteils, le plus souvent le troisième et le quatrième. Serrer l’avant-pied d’un côté à l’autre, le test du clic de Mulder, peut reproduire les symptômes du névrome et produit parfois un clic audible quand le nerf ressaute entre les métatarsiens.',
-        'La distinction compte, car les approches diffèrent. La métatarsalgie répond à la décharge des têtes des métatarsiens et au renforcement des orteils. Le névrome de Morton répond à la décompression du nerf, ce qui veut dire des chaussures plus larges, des coussinets, et parfois des infiltrations ou une chirurgie. Les exercices aident au confort de l’avant-pied dans les deux cas, mais aucun des deux n’a de preuves solides issues d’essais sur l’exercice. Voir [douleur sous l’avant-pied](/fr/metatarsalgie-douleur-avant-pied/) pour le tableau plus large de la métatarsalgie.',
+        'La différence clé, c’est ce qui fait mal et comment\u00A0:',
+        {
+          list: [
+            '**La métatarsalgie** est en général une douleur, sourde à vive, sous l’avant-pied, souvent sous les têtes du deuxième et du troisième métatarsien.',
+            '**Le névrome de Morton** donne une brûlure, des fourmillements ou un engourdissement entre les orteils, le plus souvent le troisième et le quatrième. Serrer l’avant-pied d’un côté à l’autre, le test du clic de Mulder, peut reproduire les symptômes du névrome et produit parfois un clic audible quand le nerf ressaute entre les métatarsiens.',
+          ],
+        },
+        'La distinction compte, car les approches diffèrent. La métatarsalgie répond à la décharge des têtes des métatarsiens et au renforcement des orteils. Le névrome de Morton répond à la décompression du nerf, ce qui veut dire des chaussures plus larges, des coussinets, et parfois des infiltrations ou une chirurgie.',
+        'Les exercices aident au confort de l’avant-pied dans les deux cas, mais aucun des deux n’a de preuves solides issues d’essais sur l’exercice. Voir [douleur sous l’avant-pied](/fr/metatarsalgie-douleur-avant-pied/) pour le tableau plus large de la métatarsalgie.',
       ],
     },
     {
@@ -53,7 +60,7 @@ export const MORTONS_FR: Guide = {
       paragraphs: [
         'Des chaussures plus larges à talon bas et un coussinet métatarsien sont la première mesure la plus souvent conseillée dans le névrome de Morton. Le coussinet se place juste derrière les têtes des métatarsiens, pas directement dessous, pour soulever le corps des métatarsiens et les écarter, ce qui réduit la compression sur le nerf.',
         'Des chaussures bien ajustées avec un avant large, un talon bas et un coussinet métatarsien ont été évaluées dans deux études incluses dans une revue systématique de 2019. En combinant ces deux études, chaussures et coussinet ont réussi chez environ 32\u00A0% des personnes, avec un suivi de quatre mois et demi en moyenne. Cependant, un essai randomisé comparant chaussures et coussinet à une infiltration de corticoïde a montré que le groupe infiltration avait six fois plus de chances de succès à six mois.',
-        'En pratique\u00A0: changer de chaussures et utiliser un coussinet comporte peu de risques et vaut la peine d’être essayé en premier. Cela marche chez certaines personnes et pas chez d’autres. Si rien n’a aidé après quatre à six semaines, l’étape suivante est en général une consultation pour discuter d’une infiltration ou d’une imagerie complémentaire.',
+        'En pratique\u00A0: **changer de chaussures et utiliser un coussinet comporte peu de risques et vaut la peine d’être essayé en premier.** Cela marche chez certaines personnes et pas chez d’autres. Si rien n’a aidé après quatre à six semaines, l’étape suivante est en général une consultation pour discuter d’une infiltration ou d’une imagerie complémentaire.',
         'L’emplacement compte. Un coussinet trop en avant, directement sous la tête du métatarsien, peut augmenter la pression au lieu de la soulager. Les coussinets métatarsiens autocollants de pharmacie sont assez bon marché pour être essayés, mais trouver la bonne position demande quelques essais. Un podologue peut réaliser une orthèse sur mesure si les coussinets du commerce ne marchent pas.',
       ],
       cites: [CITE.matthewsSR],
@@ -62,9 +69,18 @@ export const MORTONS_FR: Guide = {
       h2: 'Que disent les études sur les infiltrations\u00A0?',
       keyFact: 'Dans la revue Cochrane de 2024, l’infiltration de corticoïde guidée par échographie améliorait probablement davantage la douleur que l’infiltration sans guidage, avec des preuves de certitude modérée à 2, 6 et 12\u00A0mois (Matthews et coll., 2024).',
       paragraphs: [
-        'L’infiltration de corticoïde est l’approche invasive non chirurgicale la plus étudiée dans le névrome de Morton. La revue Cochrane de 2024 comprenait six essais randomisés et 373\u00A0participants. Elle a trouvé des preuves de faible certitude qu’ajouter un corticoïde à un anesthésique local pourrait faire peu ou pas de différence sur la douleur ou la fonction à trois à six mois, par rapport à une infiltration d’anesthésique local seul. Les auteurs Cochrane ont noté que l’ajout d’un corticoïde pourrait augmenter les effets indésirables, dont l’atrophie du coussinet graisseux et des modifications de la peau.',
+        'L’infiltration de corticoïde est l’approche invasive non chirurgicale la plus étudiée dans le névrome de Morton.',
+        'La revue Cochrane de 2024 comprenait six essais randomisés et 373\u00A0participants. Elle a trouvé des preuves de faible certitude qu’ajouter un corticoïde à un anesthésique local pourrait faire peu ou pas de différence sur la douleur ou la fonction à trois à six mois, par rapport à une infiltration d’anesthésique local seul. Les auteurs Cochrane ont noté que l’ajout d’un corticoïde pourrait augmenter les effets indésirables, dont l’atrophie du coussinet graisseux et des modifications de la peau.',
         'L’infiltration guidée par échographie améliore probablement la douleur par rapport à l’infiltration sans guidage, avec des différences cliniquement significatives à 2, 6 et 12\u00A0mois dans les études incluses. Les preuves ont été jugées de certitude modérée.',
-        'D’autres types d’infiltration ont été étudiés, dont les infiltrations sclérosantes à l’alcool, l’ablation par radiofréquence et la cryothérapie. La revue systématique de 2019 a montré que l’infiltration de corticoïde et la manipulation avaient les preuves les plus solides pour réduire la douleur à court terme, mais elle demandait davantage d’essais randomisés de bonne qualité. La revue Cochrane de 2024 a conclu la même chose\u00A0: après 20\u00A0ans de recherche supplémentaire depuis la première revue Cochrane de 2004, il n’y a toujours pas assez de preuves de bonne qualité pour conclure fermement sur une intervention en particulier.',
+        'D’autres types d’infiltration ont été étudiés, dont\u00A0:',
+        {
+          list: [
+            'Les infiltrations sclérosantes à l’alcool.',
+            'L’ablation par radiofréquence.',
+            'La cryothérapie.',
+          ],
+        },
+        'La revue systématique de 2019 a montré que l’infiltration de corticoïde et la manipulation avaient les preuves les plus solides pour réduire la douleur à court terme, mais elle demandait davantage d’essais randomisés de bonne qualité. La revue Cochrane de 2024 a conclu la même chose\u00A0: après 20\u00A0ans de recherche supplémentaire depuis la première revue Cochrane de 2004, **il n’y a toujours pas assez de preuves de bonne qualité pour conclure fermement sur une intervention en particulier.**',
         'Cela ne veut pas dire que les infiltrations sont inutiles. Cela veut dire que les preuves ne sont pas assez solides pour déclarer une approche nettement meilleure qu’une autre. Un professionnel de santé peut discuter des options, des risques et de ce qu’il faut en attendre. L’infiltration de corticoïde soulage bien à court terme beaucoup de personnes, mais des infiltrations répétées comportent des risques pour les tissus voisins.',
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],
@@ -74,15 +90,16 @@ export const MORTONS_FR: Guide = {
       paragraphs: [
         'La chirurgie est en général envisagée quand la prise en charge conservatrice, c’est-à-dire changement de chaussures, coussinets et une ou deux séries d’infiltrations, n’a pas apporté de soulagement durable. L’intervention la plus courante est la neurectomie, l’ablation chirurgicale du segment de nerf épaissi. Elle est efficace chez beaucoup de personnes, mais laisse un engourdissement permanent entre les orteils concernés, car le nerf qui portait la sensibilité de cette zone a été retiré.',
         'D’autres options chirurgicales sont la décompression du nerf (libérer le ligament métatarsien transverse sans retirer le nerf) et l’ostéotomie métatarsienne (remodeler l’os pour donner plus de place au nerf). La revue Cochrane de 2024 a trouvé des preuves de faible certitude pour les comparaisons chirurgicales, sans vainqueur net entre la neurectomie par incision plantaire et par incision dorsale pour la satisfaction des patients ou les effets indésirables.',
-        'La chirurgie n’est pas une approche de première intention. La plupart des professionnels de santé conseillent un essai structuré de prise en charge conservatrice pendant plusieurs mois avant de l’envisager. Si vous en êtes là, un spécialiste du pied et de la cheville peut vous présenter les options chirurgicales et ce qu’il faut attendre de la récupération.',
+        '**La chirurgie n’est pas une approche de première intention.** La plupart des professionnels de santé conseillent un essai structuré de prise en charge conservatrice pendant plusieurs mois avant de l’envisager. Si vous en êtes là, un spécialiste du pied et de la cheville peut vous présenter les options chirurgicales et ce qu’il faut attendre de la récupération.',
       ],
       cites: [CITE.matthewsCochrane],
     },
     {
       h2: 'Les exercices aident-ils le névrome de Morton\u00A0?',
       paragraphs: [
-        'La réponse honnête est qu’aucun essai n’a testé l’exercice dans le névrome de Morton. L’exercice n’agit pas directement sur le nerf. Il ne peut pas réduire un névrome ni décomprimer l’espace intermétatarsien comme le font une chaussure plus large ou un coussinet métatarsien.',
-        'Ce que l’exercice peut faire, c’est améliorer le confort général de l’avant-pied et la répartition de la charge. Renforcer les muscles propres au pied, les petits muscles situés entre et sous les métatarsiens, peut aider les têtes des métatarsiens à rester plus écartées pendant la marche. L’étirement du mollet réduit la surcharge de l’avant-pied en améliorant la flexion de la cheville vers le haut. Ce sont des exercices de confort et de gestion de la charge, pas des interventions propres au névrome. Nous le disons clairement, car exagérer le rôle de l’exercice ici ne serait pas honnête.',
+        'La réponse honnête est qu’**aucun essai n’a testé l’exercice dans le névrome de Morton.** L’exercice n’agit pas directement sur le nerf. Il ne peut pas réduire un névrome ni décomprimer l’espace intermétatarsien comme le font une chaussure plus large ou un coussinet métatarsien.',
+        'Ce que l’exercice peut faire, c’est améliorer le confort général de l’avant-pied et la répartition de la charge. Renforcer les muscles propres au pied, les petits muscles situés entre et sous les métatarsiens, peut aider les têtes des métatarsiens à rester plus écartées pendant la marche. L’étirement du mollet réduit la surcharge de l’avant-pied en améliorant la flexion de la cheville vers le haut.',
+        'Ce sont des exercices de confort et de gestion de la charge, pas des interventions propres au névrome. Nous le disons clairement, car exagérer le rôle de l’exercice ici ne serait pas honnête.',
         'Si votre douleur de l’avant-pied dépasse le névrome, c’est-à-dire si vous avez aussi une métatarsalgie plus générale ou un mollet raide, les exercices de la page [douleur sous l’avant-pied](/fr/metatarsalgie-douleur-avant-pied/) vous concernent. Les exercices ci-dessous viennent du même ensemble, mais sont repris ici pour plus de commodité.',
       ],
       exercises: [
@@ -137,7 +154,15 @@ export const MORTONS_FR: Guide = {
       h2: 'Ce que les études disent et ne disent pas',
       paragraphs: [
         'La revue Cochrane de 2024 est la synthèse la plus rigoureuse disponible. Elle comprenait six essais randomisés et 373\u00A0participants. Ses conclusions\u00A0: les preuves sont de certitude faible à modérée pour la plupart des interventions dans le névrome de Morton, et aucun traitement n’a un appui solide de certitude élevée. Après 20\u00A0ans de recherche supplémentaire depuis la revue Cochrane d’origine de 2004, les auteurs sont arrivés à la même conclusion de base.',
-        'Cela ne veut pas dire que rien ne marche. Changer de chaussures et utiliser un coussinet métatarsien aide environ 3\u00A0personnes sur 10. L’infiltration de corticoïde guidée par échographie améliore probablement la douleur par rapport à l’infiltration sans guidage. La neurectomie soulage beaucoup de personnes, au prix d’un engourdissement permanent. Ce qui manque, c’est un traitement de première intention clair, appuyé par des preuves solides.',
+        'Cela ne veut pas dire que rien ne marche\u00A0:',
+        {
+          list: [
+            'Changer de chaussures et utiliser un coussinet métatarsien aide environ 3\u00A0personnes sur 10.',
+            'L’infiltration de corticoïde guidée par échographie améliore probablement la douleur par rapport à l’infiltration sans guidage.',
+            'La neurectomie soulage beaucoup de personnes, au prix d’un engourdissement permanent.',
+          ],
+        },
+        '**Ce qui manque, c’est un traitement de première intention clair, appuyé par des preuves solides.**',
         'Pour l’exercice, le manque est encore plus grand. Aucun essai n’a testé l’exercice dans le névrome de Morton. Les exercices de cette page sont des mesures de confort et de gestion de la charge, pas des interventions propres au névrome. Si l’exercice fait partie de votre plan, il doit venir en plus du changement de chaussures et des conseils d’un professionnel de santé, pas les remplacer.',
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],

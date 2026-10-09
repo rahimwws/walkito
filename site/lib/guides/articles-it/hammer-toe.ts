@@ -35,14 +35,29 @@ export const HAMMER_TOE_IT: Guide = {
       paragraphs: [
         'Il dito a martello è una deformità in flessione dell’articolazione interfalangea prossimale (l’articolazione centrale) di una delle dita minori, più spesso il secondo. Il dito si piega verso il basso in quell’articolazione, mentre la punta può guardare in giù o un po’ in su. È una delle deformità più comuni dell’avampiede.',
         'La deformità nasce da uno squilibrio tra i muscoli che flettono ed estendono il dito. I muscoli estrinseci, i lunghi flessori ed estensori che vanno dalla gamba attraverso il piede, prevalgono sui muscoli intrinseci più piccoli dentro il piede. Quando gli intrinseci si indeboliscono, i flessori tirano giù l’articolazione centrale e gli estensori tirano su la base del dito all’articolazione metatarso-falangea.',
-        'Tra le cause che contribuiscono più spesso ci sono scarpe che stringono le dita (punte strette, tacchi alti), un secondo dito più lungo dell’alluce e problemi come l’alluce valgo, in cui l’alluce spinge il secondo dito fuori posizione. Anche le malattie neuromuscolari possono causarlo.',
+        'Tra le cause che contribuiscono più spesso ci sono:',
+        {
+          list: [
+            'Scarpe che stringono le dita (punte strette, tacchi alti).',
+            'Un secondo dito più lungo dell’alluce.',
+            'Problemi come l’alluce valgo, in cui l’alluce spinge il secondo dito fuori posizione.',
+          ],
+        },
+        'Anche le malattie neuromuscolari possono causarlo.',
       ],
       cites: [CITE.malhotra],
     },
     {
       h2: 'Che differenza c’è tra dito a martello, dito ad artiglio e dito a maglio?',
       paragraphs: [
-        'I tre nomi descrivono quali articolazioni sono piegate. Il dito a martello si piega all’articolazione centrale (articolazione interfalangea prossimale). Il dito a maglio si piega all’ultima articolazione (articolazione interfalangea distale), vicino alla punta del dito. Il dito ad artiglio si piega sia all’articolazione centrale sia all’ultima, mentre la base del dito (articolazione metatarso-falangea) si estende verso l’alto.',
+        'I tre nomi descrivono quali articolazioni sono piegate:',
+        {
+          list: [
+            'Il dito a martello si piega all’articolazione centrale (articolazione interfalangea prossimale).',
+            'Il dito a maglio si piega all’ultima articolazione (articolazione interfalangea distale), vicino alla punta del dito.',
+            'Il dito ad artiglio si piega sia all’articolazione centrale sia all’ultima, mentre la base del dito (articolazione metatarso-falangea) si estende verso l’alto.',
+          ],
+        },
         'Le dita ad artiglio tendono a essere più gravi, spesso colpiscono più dita su entrambi i piedi e sono più spesso legate a malattie neuromuscolari. Il dito a martello di solito colpisce un solo dito, più spesso il secondo, ed è più spesso legato alle scarpe e alla struttura del piede.',
         'Nella pratica i trattamenti si sovrappongono. Scarpe più larghe, cuscinetti ed esercizi per i muscoli intrinseci del piede valgono per tutti e tre. La distinzione conta soprattutto quando si considera la chirurgia, perché l’approccio chirurgico dipende da quali articolazioni sono coinvolte.',
       ],
@@ -52,7 +67,7 @@ export const HAMMER_TOE_IT: Guide = {
       h2: 'Che differenza c’è tra dito a martello flessibile e rigido?',
       keyFact: 'Uno studio del 2022 su 20\u00A0anziani con dito a martello o ad artiglio ha trovato che dei supporti per dita in silicone modellati su misura riducevano in modo significativo la pressione di picco sulla punta del secondo dito, sia nei casi flessibili sia in quelli rigidi (Formosa e colleghi, 2022).',
       paragraphs: [
-        'Un dito a martello flessibile ha ancora movimento all’articolazione centrale. Riesci a raddrizzarlo con la mano. Muscoli e tendini sono tesi, ma l’articolazione non ha sviluppato una retrazione fissa. È la fase in cui le misure conservative hanno di più da offrire.',
+        'Un dito a martello flessibile ha ancora movimento all’articolazione centrale. Riesci a raddrizzarlo con la mano. Muscoli e tendini sono tesi, ma l’articolazione non ha sviluppato una retrazione fissa. **È la fase in cui le misure conservative hanno di più da offrire.**',
         'Un dito a martello rigido ha una retrazione fissa all’articolazione centrale. L’articolazione non si raddrizza più. A questo punto l’esercizio non può cambiare la posizione. Gli obiettivi diventano ridurre lo sfregamento (scarpe più larghe, cuscinetti per dita) ed evitare calli, duroni e lesioni della pelle.',
         'Uno studio quasi sperimentale del 2022 su 20\u00A0anziani con deformità a martello o ad artiglio ha trovato che dei supporti per dita in silicone modellati su misura riducevano in modo significativo la pressione di picco sulla punta del secondo dito, sia nei casi flessibili sia in quelli rigidi. All’articolazione metatarso-falangea, la riduzione della pressione era significativa solo nel gruppo rigido.',
       ],
@@ -61,7 +76,7 @@ export const HAMMER_TOE_IT: Guide = {
     {
       h2: 'Gli esercizi aiutano il dito a martello?',
       paragraphs: [
-        'La risposta onesta è che non ci sono studi randomizzati controllati che testino esercizi specificamente per il dito a martello. Gli esercizi consigliati di solito, come raccolta dell’asciugamano, apertura delle dita e allungamento manuale, si basano sull’idea che rinforzare i muscoli intrinseci del piede e mantenere flessibile l’articolazione possa aiutare a evitare che una deformità flessibile diventi rigida.',
+        'La risposta onesta è che **non ci sono studi randomizzati controllati che testino esercizi specificamente per il dito a martello.** Gli esercizi consigliati di solito, come raccolta dell’asciugamano, apertura delle dita e allungamento manuale, si basano sull’idea che rinforzare i muscoli intrinseci del piede e mantenere flessibile l’articolazione possa aiutare a evitare che una deformità flessibile diventi rigida.',
         'Il ragionamento è sensato. La deformità viene da uno squilibrio muscolare: intrinseci deboli ed estrinseci relativamente più forti. Esercizi che lavorano sugli intrinseci possono ripristinare un po’ di quell’equilibrio. Ma senza studi diretti, non sappiamo quanta differenza facciano né se possano davvero evitare la progressione.',
         'Quello che sappiamo da studi su altri problemi dell’avampiede è che esercizi per i muscoli intrinseci del piede come piede corto, apertura delle dita e raccolta dell’asciugamano attivano i muscoli giusti. Uno studio con risonanza magnetica di Gooding e colleghi (2016) ha confermato che l’esercizio del piede corto e l’apertura delle dita attivano in modo selettivo i muscoli intrinseci del piede. Se questa attivazione porti a risultati migliori specificamente nel dito a martello non è stato testato.',
       ],
@@ -121,7 +136,14 @@ export const HAMMER_TOE_IT: Guide = {
     {
       h2: 'Le scarpe fanno differenza?',
       paragraphs: [
-        'Le scarpe sono l’approccio conservativo più consigliato per il dito a martello. Una revisione sulla gestione delle deformità delle dita minori su EFORT Open Reviews (Malhotra e colleghi, 2016) metteva il cambio di scarpe al primo posto nell’elenco dei trattamenti conservativi: una punta larga per dare spazio alle dita, una punta alta per evitare lo sfregamento sull’articolazione piegata, ed evitare i tacchi alti.',
+        '**Le scarpe sono l’approccio conservativo più consigliato per il dito a martello.** Una revisione sulla gestione delle deformità delle dita minori su EFORT Open Reviews (Malhotra e colleghi, 2016) metteva il cambio di scarpe al primo posto nell’elenco dei trattamenti conservativi:',
+        {
+          list: [
+            'Una punta larga per dare spazio alle dita.',
+            'Una punta alta per evitare lo sfregamento sull’articolazione piegata.',
+            'Evitare i tacchi alti.',
+          ],
+        },
         'Le scarpe strette comprimono le dita tra loro e spingono l’articolazione piegata contro la parte alta della scarpa, causando calli e duroni. I tacchi alti fanno scivolare il piede in avanti, schiacciando le dita sul davanti. Cambiare scarpe non raddrizza un dito a martello rigido, ma riduce lo sfregamento e la pressione di ogni giorno che causano la maggior parte del dolore.',
         'Cuscinetti per dita, tubolari in gel e supporti in silicone possono ammortizzare l’articolazione piegata e ridistribuire la pressione sulla punta del dito. Lo studio di Formosa del 2022 ha mostrato che dei supporti per dita in silicone modellati riducevano la pressione di picco sulla punta del secondo dito sia nelle deformità flessibili sia in quelle rigide.',
       ],
@@ -130,7 +152,7 @@ export const HAMMER_TOE_IT: Guide = {
     {
       h2: 'Il dito a martello si può correggere senza operazione?',
       paragraphs: [
-        'Se il dito a martello è ancora flessibile, le misure conservative, tra cui esercizi, allungamenti, scarpe più larghe e bendaggio delle dita, possono evitare che progredisca e migliorare il comfort. Fissare con un cerotto il dito colpito a quello vicino può tenerlo delicatamente in una posizione più neutra durante il giorno. Ma nessuna di queste misure ha dimostrato di correggere in modo permanente la deformità.',
+        'Se il dito a martello è ancora flessibile, le misure conservative, tra cui esercizi, allungamenti, scarpe più larghe e bendaggio delle dita, possono evitare che progredisca e migliorare il comfort. Fissare con un cerotto il dito colpito a quello vicino può tenerlo delicatamente in una posizione più neutra durante il giorno. **Ma nessuna di queste misure ha dimostrato di correggere in modo permanente la deformità.**',
         'Una volta che il dito a martello diventa rigido, l’articolazione è retratta e non si può raddrizzare. A quel punto esercizi e allungamenti non ne cambiano la forma. L’attenzione si sposta sul proteggere la pelle dallo sfregamento e sul gestire la pressione con cuscinetti e scarpe.',
         'Quanto velocemente un dito a martello flessibile diventa rigido varia. In alcune persone resta flessibile per anni. Portare scarpe con una punta larga e mantenere la mobilità delle dita con allungamenti ed esercizi quotidiani sono le strategie consigliate più spesso per rallentare la progressione.',
       ],
@@ -140,7 +162,14 @@ export const HAMMER_TOE_IT: Guide = {
       keyFact: 'Una revisione del 2016 citava dati del registro svedese secondo cui gli interventi sulle dita minori, compresa la chirurgia per dito a martello e ad artiglio, erano quasi un quarto di tutte le operazioni all’avampiede (Malhotra e colleghi, 2016).',
       paragraphs: [
         'Si considera la chirurgia quando un dito a martello rigido causa dolore persistente, lesioni della pelle o difficoltà a portare le scarpe nonostante le cure conservative. La decisione si basa sui sintomi e sulle limitazioni nelle attività, non sull’aspetto del dito.',
-        'Gli interventi comuni includono l’artroplastica dell’articolazione interfalangea prossimale (togliere un piccolo pezzo di osso per raddrizzare l’articolazione) e l’artrodesi (fondere l’articolazione in posizione dritta). Esistono tecniche mininvasive più recenti, ma i dati sui risultati a lungo termine sono ancora in raccolta.',
+        'Gli interventi comuni includono:',
+        {
+          list: [
+            'L’artroplastica dell’articolazione interfalangea prossimale (togliere un piccolo pezzo di osso per raddrizzare l’articolazione).',
+            'L’artrodesi (fondere l’articolazione in posizione dritta).',
+          ],
+        },
+        'Esistono tecniche mininvasive più recenti, ma i dati sui risultati a lungo termine sono ancora in raccolta.',
         'Il recupero dopo un intervento per dito a martello di solito richiede da tre a sei settimane con una scarpa postoperatoria. Un po’ di rigidità nel dito è prevista. Una revisione del 2016 citava dati del registro svedese secondo cui gli interventi sulle dita minori, che includono dito a martello, dito ad artiglio e deformità collegate, erano quasi un quarto di tutti gli interventi all’avampiede.',
       ],
       cites: [CITE.malhotra],

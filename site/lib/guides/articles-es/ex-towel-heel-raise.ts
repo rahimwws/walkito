@@ -31,7 +31,15 @@ export const EX_TOWEL_HEEL_RAISE_ES: Guide = {
     {
       h2: '¿Qué trabaja la elevación de talones con toalla?',
       paragraphs: [
-        'La elevación de talones con toalla trabaja el gastrocnemio y el sóleo (los dos músculos de la pantorrilla), el tendón de Aquiles y la fascia plantar. La toalla enrollada dobla los dedos hacia arriba cuando estás arriba, y eso jala de la fascia plantar a través del mecanismo de molinete. Sin la toalla, el ejercicio entrena sobre todo la pantorrilla. Con ella, la fascia recibe parte de la carga.',
+        'La elevación de talones con toalla trabaja:',
+        {
+          list: [
+            'El gastrocnemio y el sóleo (los dos músculos de la pantorrilla).',
+            'El tendón de Aquiles.',
+            'La fascia plantar.',
+          ],
+        },
+        'La toalla enrollada dobla los dedos hacia arriba cuando estás arriba, y eso jala de la fascia plantar a través del mecanismo de molinete. Sin la toalla, el ejercicio entrena sobre todo la pantorrilla. Con ella, **la fascia recibe parte de la carga.**',
         'Por eso el ensayo de Rathleff usó la toalla para la fascitis plantar en lugar de una elevación de talón simple. La meta es cargar juntos la pantorrilla, el Aquiles y la fascia. Si te duele el tendón de Aquiles y no la planta del pie, un [excéntrico de talón](/es/ejercicios/excentricos-de-talon/) sin toalla es mejor punto de partida.',
       ],
       cites: [CITE.rathleff],
@@ -40,7 +48,7 @@ export const EX_TOWEL_HEEL_RAISE_ES: Guide = {
       h2: '¿Cómo hacer la elevación de talones con toalla?',
       paragraphs: [
         'Enrolla una toalla de manos pequeña en forma de cilindro, más o menos del ancho de tu puño. Ponla en la orilla de un escalón. Párate en un pie con los cinco dedos sobre la toalla y la parte delantera del pie sobre el escalón. Agárrate de una pared o un pasamanos para el equilibrio.',
-        'Sube en tres segundos, empujando con el dedo gordo. Quédate arriba dos segundos. Baja en tres segundos y deja que el talón baje un poco por debajo del escalón. Ese ritmo lento es parte del protocolo. Las repeticiones rápidas bajan la carga sobre el tendón y la fascia.',
+        'Sube en tres segundos, empujando con el dedo gordo. Quédate arriba dos segundos. Baja en tres segundos y deja que el talón baje un poco por debajo del escalón. **Ese ritmo lento es parte del protocolo.** Las repeticiones rápidas bajan la carga sobre el tendón y la fascia.',
         'En el ensayo de Rathleff, los participantes añadían peso con una mochila cuando su propio peso ya no bastaba para que la última repetición costara. «12RM» significa la carga más pesada que puedes levantar exactamente 12\u00A0veces con control.',
       ],
       exercises: [
@@ -81,7 +89,7 @@ export const EX_TOWEL_HEEL_RAISE_ES: Guide = {
     {
       h2: '¿Cuáles son los errores comunes en la elevación de talones con toalla?',
       paragraphs: [
-        'Ir demasiado rápido es el error más común. Bajar en tres segundos mantiene la pantorrilla en tensión el tiempo suficiente para ganar fuerza. Subir y bajar rebotando lo convierte en un ejercicio de cardio, no de fuerza.',
+        '**Ir demasiado rápido es el error más común.** Bajar en tres segundos mantiene la pantorrilla en tensión el tiempo suficiente para ganar fuerza. Subir y bajar rebotando lo convierte en un ejercicio de cardio, no de fuerza.',
         'Si la toalla se resbala y solo quedan uno o dos dedos encima, disminuye la carga sobre la fascia. Los cinco dedos deben estar sobre la toalla. Si la toalla se sigue resbalando, dóblala más gruesa o usa una toalla de manos en vez de una de baño.',
         'Empezar con una pierna cuando las elevaciones con dos pies todavía te cuestan lleva a mala técnica y a compensar. Si una elevación a una pierna sobre un escalón es demasiado por ahora, empieza con [elevaciones de talón con dos pies](/es/ejercicios/elevaciones-de-talon/) en el piso y ve subiendo.',
       ],
@@ -89,7 +97,16 @@ export const EX_TOWEL_HEEL_RAISE_ES: Guide = {
     {
       h2: 'Versiones más fáciles y más difíciles',
       paragraphs: [
-        'Si la elevación de talones con toalla completa sobre un escalón es demasiado difícil, retrocede por la cadena de pantorrilla. Las [elevaciones de talón sentado](/es/ejercicios/elevaciones-de-talon/) son las de menor carga. Después vienen las elevaciones de pie con dos pies. Después, la elevación de talón sostenida arriba. Después, la elevación a una pierna con toalla sobre un escalón. Cada paso debe sentirse manejable durante dos sesiones antes de subir.',
+        'Si la elevación de talones con toalla completa sobre un escalón es demasiado difícil, retrocede por la cadena de pantorrilla:',
+        {
+          list: [
+            'Las [elevaciones de talón sentado](/es/ejercicios/elevaciones-de-talon/) son las de menor carga.',
+            'Después vienen las elevaciones de pie con dos pies.',
+            'Después, la elevación de talón sostenida arriba.',
+            'Después, la elevación a una pierna con toalla sobre un escalón.',
+          ],
+        },
+        'Cada paso debe sentirse manejable durante dos sesiones antes de subir.',
         'Si tu peso en una pierna es demasiado fácil, añade carga. El ensayo de Rathleff usó una mochila con libros o botellas de agua. En un gimnasio puedes usar una máquina de pantorrilla o un chaleco con peso. La meta es que la última repetición de cada serie sea de verdad la última que puedes hacer con buena técnica.',
       ],
     },
@@ -99,7 +116,7 @@ export const EX_TOWEL_HEEL_RAISE_ES: Guide = {
       paragraphs: [
         'El ensayo de Rathleff de 2015 es el único ensayo aleatorizado que probó la elevación de talones con toalla específicamente para la fascitis plantar. En 48\u00A0personas con fascitis plantar confirmada por ultrasonido, el grupo de las elevaciones puntuó 29\u00A0puntos mejor en el Foot Function Index a los tres meses que el grupo que solo estiraba. A los doce meses, los dos grupos estaban igualados.',
         'La guía de 2023 para el dolor de talón revisó esta y otras pruebas y le dio al entrenamiento de fuerza un grado **B** y al estiramiento un grado **A**. Recomienda los dos. La guía no menciona por separado la versión con toalla, pero es el único ejercicio de fuerza probado en su propio ensayo sobre fascitis plantar.',
-        'Nada en la evidencia dice que este ejercicio deba reemplazar los estiramientos. Lo más sólido es hacer las dos cosas: un [estiramiento de la fascia plantar](/es/ejercicios/estiramiento-fascia-plantar/) para la rigidez de la mañana y la elevación con carga para ganar capacidad. Para la lista completa de ejercicios y cómo encajan, mira [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
+        'Nada en la evidencia dice que este ejercicio deba reemplazar los estiramientos. **Lo más sólido es hacer las dos cosas:** un [estiramiento de la fascia plantar](/es/ejercicios/estiramiento-fascia-plantar/) para la rigidez de la mañana y la elevación con carga para ganar capacidad. Para la lista completa de ejercicios y cómo encajan, mira [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
       ],
       sourceNote:
         'Rathleff 2015: diferencia en el Foot Function Index de 29\u00A0puntos a los 3\u00A0meses (IC 95\u00A0%: 6-52, p = 0,016). A los 12\u00A0meses: 22 frente a 16, sin diferencia significativa.',

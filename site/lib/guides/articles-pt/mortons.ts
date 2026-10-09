@@ -28,7 +28,7 @@ export const MORTONS_PT: Guide = {
       h2: 'O que é o neuroma de Morton?',
       figure: { id: 'mortons', caption: 'O neuroma de Morton é um nervo espessado entre as cabeças dos metatarsos, na maioria das vezes entre o terceiro e o quarto dedo.', alt: 'Vista de cima dos ossos do pé com nervos amarelos indo até os dedos e um oval inchado no nervo entre o terceiro e o quarto dedo.' },
       paragraphs: [
-        'O neuroma de Morton é um espessamento benigno do nervo digital plantar comum, normalmente no terceiro espaço intermetatarsal (entre o terceiro e o quarto dedo). Com menos frequência, ele aparece no segundo espaço. Não é câncer e não é um crescimento no osso.',
+        'O neuroma de Morton é um espessamento benigno do nervo digital plantar comum, normalmente no terceiro espaço intermetatarsal (entre o terceiro e o quarto dedo). Com menos frequência, ele aparece no segundo espaço. **Não é câncer e não é um crescimento no osso.**',
         'O nervo passa por baixo do ligamento metatarsal transverso, uma faixa de tecido que mantém as cabeças dos metatarsos juntas. Quando as cabeças se apertam, o nervo fica pinçado. Com o tempo, a bainha do nervo engrossa, e o próprio nervo pode aumentar de tamanho. O resultado é dor, queimação, formigamento ou dormência no espaço entre os dedos, que irradia para os dedos afetados.',
         'É mais comum em mulheres, em parte por causa da escolha do calçado. Sapatos de bico fino e salto alto empurram as cabeças dos metatarsos umas contra as outras e aumentam a pressão no nervo. Corrida, esportes de quadra e profissões com muito tempo em pé usando calçado apertado também são fatores de risco.',
       ],
@@ -37,8 +37,15 @@ export const MORTONS_PT: Guide = {
       h2: 'Qual a diferença entre neuroma de Morton e metatarsalgia?',
       paragraphs: [
         'Metatarsalgia é um termo mais amplo que quer dizer dor em volta das cabeças dos metatarsos, as juntas ósseas na [planta da parte da frente do pé](/pt/metatarsalgia-dor-na-planta-do-pe/). O neuroma de Morton é uma causa específica de dor na parte da frente do pé, e fica dentro do guarda-chuva da metatarsalgia.',
-        'A diferença principal é o que dói e como dói. A metatarsalgia costuma ser uma dor de surda a aguda embaixo da parte da frente do pé, muitas vezes sob a segunda e a terceira cabeça dos metatarsos. O neuroma de Morton causa queimação, formigamento ou dormência entre os dedos, na maioria das vezes entre o terceiro e o quarto. Apertar a parte da frente do pé de lado a lado, o chamado teste do clique de Mulder, pode reproduzir os sintomas do neuroma e às vezes produz um clique audível quando o nervo escapa entre os metatarsos.',
-        'A diferença importa porque as abordagens são diferentes. A metatarsalgia responde a tirar carga das cabeças dos metatarsos e fortalecer os dedos. O neuroma de Morton responde a descomprimir o nervo, o que quer dizer calçados mais largos, coxins e às vezes infiltrações ou cirurgia. Os exercícios ajudam no conforto da parte da frente do pé nos dois casos, mas nenhum dos dois tem evidência forte de ensaios específicos de exercício. Veja [dor na planta do pé](/pt/metatarsalgia-dor-na-planta-do-pe/) para entender melhor o quadro geral da metatarsalgia.',
+        'A diferença principal é o que dói e como dói:',
+        {
+          list: [
+            'A **metatarsalgia** costuma ser uma dor de surda a aguda embaixo da parte da frente do pé, muitas vezes sob a segunda e a terceira cabeça dos metatarsos.',
+            'O **neuroma de Morton** causa queimação, formigamento ou dormência entre os dedos, na maioria das vezes entre o terceiro e o quarto. Apertar a parte da frente do pé de lado a lado, o chamado teste do clique de Mulder, pode reproduzir os sintomas do neuroma e às vezes produz um clique audível quando o nervo escapa entre os metatarsos.',
+          ],
+        },
+        'A diferença importa porque as abordagens são diferentes. A metatarsalgia responde a tirar carga das cabeças dos metatarsos e fortalecer os dedos. O neuroma de Morton responde a descomprimir o nervo, o que quer dizer calçados mais largos, coxins e às vezes infiltrações ou cirurgia.',
+        'Os exercícios ajudam no conforto da parte da frente do pé nos dois casos, mas nenhum dos dois tem evidência forte de ensaios específicos de exercício. Veja [dor na planta do pé](/pt/metatarsalgia-dor-na-planta-do-pe/) para entender melhor o quadro geral da metatarsalgia.',
       ],
     },
     {
@@ -47,7 +54,7 @@ export const MORTONS_PT: Guide = {
       paragraphs: [
         'Calçados mais largos com salto baixo e um coxim metatarsal são o primeiro passo mais recomendado para o neuroma de Morton. O coxim fica logo atrás das cabeças dos metatarsos, e não diretamente embaixo delas, para levantar o corpo dos metatarsos e afastar os ossos, reduzindo a compressão no nervo.',
         'Calçado bem ajustado, com bico largo, salto baixo e coxim metatarsal, foi avaliado em dois estudos incluídos em uma revisão sistemática de 2019. Somando esses dois estudos, calçado e coxim deram certo em cerca de 32% das pessoas, em um acompanhamento médio de quatro meses e meio. Porém, um ensaio randomizado que comparou calçado e coxim com infiltração de corticoide mostrou que o grupo da infiltração teve chances de sucesso seis vezes maiores em seis meses.',
-        'Na prática: troca de calçado e coxim têm baixo risco e valem a tentativa primeiro. Funcionam para algumas pessoas e não para outras. Se não ajudarem depois de quatro a seis semanas, o próximo passo costuma ser uma consulta com um profissional de saúde para conversar sobre infiltração ou mais exames de imagem.',
+        'Na prática: **troca de calçado e coxim têm baixo risco e valem a tentativa primeiro.** Funcionam para algumas pessoas e não para outras. Se não ajudarem depois de quatro a seis semanas, o próximo passo costuma ser uma consulta com um profissional de saúde para conversar sobre infiltração ou mais exames de imagem.',
         'A posição importa. Um coxim muito para a frente, bem embaixo da cabeça do metatarso, pode aumentar a pressão em vez de aliviar. Coxins metatarsais adesivos de farmácia são baratos o bastante para testar, mas acertar a posição exige algumas tentativas. Um podólogo pode fazer uma órtese sob medida se os coxins prontos não estiverem funcionando.',
       ],
       cites: [CITE.matthewsSR],
@@ -56,9 +63,18 @@ export const MORTONS_PT: Guide = {
       h2: 'O que a evidência diz sobre infiltração?',
       keyFact: 'Na revisão Cochrane de 2024, a infiltração de corticoide guiada por ultrassom provavelmente melhorou a dor mais do que a infiltração sem guia, com evidência de certeza moderada aos 2, 6 e 12\u00A0meses (Matthews e colegas, 2024).',
       paragraphs: [
-        'A infiltração de corticoide é a abordagem invasiva não cirúrgica mais estudada no neuroma de Morton. A revisão Cochrane de 2024 incluiu seis ensaios randomizados com 373\u00A0participantes. Ela encontrou evidência de baixa certeza de que acrescentar um corticoide a um anestésico local pode fazer pouca ou nenhuma diferença na dor ou na função em três a seis meses, em comparação com a infiltração só de anestésico local. Os autores da Cochrane observaram que acrescentar um corticoide pode aumentar os efeitos adversos, incluindo atrofia do coxim de gordura e alterações na pele.',
+        'A infiltração de corticoide é a abordagem invasiva não cirúrgica mais estudada no neuroma de Morton.',
+        'A revisão Cochrane de 2024 incluiu seis ensaios randomizados com 373\u00A0participantes. Ela encontrou evidência de baixa certeza de que acrescentar um corticoide a um anestésico local pode fazer pouca ou nenhuma diferença na dor ou na função em três a seis meses, em comparação com a infiltração só de anestésico local. Os autores da Cochrane observaram que acrescentar um corticoide pode aumentar os efeitos adversos, incluindo atrofia do coxim de gordura e alterações na pele.',
         'A infiltração guiada por ultrassom provavelmente melhora a dor em comparação com a infiltração sem guia, com diferenças clinicamente relevantes aos 2, 6 e 12\u00A0meses nos estudos incluídos. A evidência foi classificada como de certeza moderada.',
-        'Outros tipos de infiltração já foram estudados, incluindo infiltrações esclerosantes com álcool, ablação por radiofrequência e crioterapia. A revisão sistemática de 2019 concluiu que a infiltração de corticoide e a manipulação tinham a evidência mais forte para reduzir a dor a curto prazo, mas pediu mais ensaios randomizados de alta qualidade. A revisão Cochrane de 2024 chegou à mesma conclusão: depois de 20\u00A0anos a mais de pesquisa desde a primeira revisão Cochrane, em 2004, ainda não há evidência de alta qualidade suficiente para conclusões firmes sobre qualquer intervenção isolada.',
+        'Outros tipos de infiltração já foram estudados, incluindo:',
+        {
+          list: [
+            'Infiltrações esclerosantes com álcool.',
+            'Ablação por radiofrequência.',
+            'Crioterapia.',
+          ],
+        },
+        'A revisão sistemática de 2019 concluiu que a infiltração de corticoide e a manipulação tinham a evidência mais forte para reduzir a dor a curto prazo, mas pediu mais ensaios randomizados de alta qualidade. A revisão Cochrane de 2024 chegou à mesma conclusão: depois de 20\u00A0anos a mais de pesquisa desde a primeira revisão Cochrane, em 2004, **ainda não há evidência de alta qualidade suficiente para conclusões firmes sobre qualquer intervenção isolada.**',
         'Isso não quer dizer que as infiltrações sejam inúteis. Quer dizer que a evidência não é forte o bastante para declarar uma abordagem claramente melhor que outra. Um profissional de saúde pode explicar as opções, os riscos e o que esperar. A infiltração de corticoide traz um bom alívio a curto prazo para muita gente, mas infiltrações repetidas trazem riscos para o tecido em volta.',
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],
@@ -68,15 +84,16 @@ export const MORTONS_PT: Guide = {
       paragraphs: [
         'A cirurgia costuma ser considerada quando o tratamento conservador, ou seja, troca de calçado, coxins e uma ou duas rodadas de infiltração, não trouxe alívio duradouro. O procedimento mais comum é a neurectomia, a retirada cirúrgica do trecho espessado do nervo. Ela funciona para muita gente, mas deixa uma dormência permanente entre os dedos afetados, porque o nervo que levava a sensibilidade para ali deixa de existir.',
         'Outras opções cirúrgicas incluem a descompressão do nervo (liberar o ligamento metatarsal transverso sem retirar o nervo) e a osteotomia do metatarso (remodelar o osso para dar mais espaço ao nervo). A revisão Cochrane de 2024 encontrou evidência de baixa certeza nas comparações cirúrgicas, sem um vencedor claro entre a neurectomia por incisão plantar ou dorsal em satisfação do paciente ou efeitos adversos.',
-        'A cirurgia não é a primeira opção. A maioria dos profissionais recomenda uma tentativa estruturada de tratamento conservador por vários meses antes de pensar nela. Se você chegou nesse ponto, um especialista em pé e tornozelo pode explicar as opções cirúrgicas e o que esperar da recuperação.',
+        '**A cirurgia não é a primeira opção.** A maioria dos profissionais recomenda uma tentativa estruturada de tratamento conservador por vários meses antes de pensar nela. Se você chegou nesse ponto, um especialista em pé e tornozelo pode explicar as opções cirúrgicas e o que esperar da recuperação.',
       ],
       cites: [CITE.matthewsCochrane],
     },
     {
       h2: 'Exercícios ajudam no neuroma de Morton?',
       paragraphs: [
-        'A resposta honesta é que nenhum ensaio testou exercício para o neuroma de Morton. O exercício não age diretamente no nervo. Ele não consegue diminuir um neuroma nem descomprimir o espaço entre os metatarsos como um calçado mais largo ou um coxim metatarsal conseguem.',
-        'O que o exercício pode fazer é melhorar o conforto geral da parte da frente do pé e a distribuição da carga. Fortalecer os músculos pequenos do pé, os que ficam entre e embaixo dos metatarsos, pode ajudar as cabeças dos metatarsos a ficarem mais afastadas durante a caminhada. O alongamento de panturrilha reduz a sobrecarga na parte da frente do pé ao melhorar o quanto o tornozelo dobra para cima. São exercícios de conforto e de controle de carga, não intervenções específicas para o neuroma. Dizemos isso com clareza porque exagerar o papel do exercício aqui não seria honesto.',
+        'A resposta honesta é que **nenhum ensaio testou exercício para o neuroma de Morton.** O exercício não age diretamente no nervo. Ele não consegue diminuir um neuroma nem descomprimir o espaço entre os metatarsos como um calçado mais largo ou um coxim metatarsal conseguem.',
+        'O que o exercício pode fazer é melhorar o conforto geral da parte da frente do pé e a distribuição da carga. Fortalecer os músculos pequenos do pé, os que ficam entre e embaixo dos metatarsos, pode ajudar as cabeças dos metatarsos a ficarem mais afastadas durante a caminhada. O alongamento de panturrilha reduz a sobrecarga na parte da frente do pé ao melhorar o quanto o tornozelo dobra para cima.',
+        'São exercícios de conforto e de controle de carga, não intervenções específicas para o neuroma. Dizemos isso com clareza porque exagerar o papel do exercício aqui não seria honesto.',
         'Se a sua dor na parte da frente do pé é mais ampla do que o neuroma, ou seja, se você também tem metatarsalgia geral ou panturrilha tensa, os exercícios da página [dor na planta do pé](/pt/metatarsalgia-dor-na-planta-do-pe/) também servem. Os exercícios abaixo saem do mesmo catálogo, mas estão listados aqui para facilitar.',
       ],
       exercises: [
@@ -131,7 +148,15 @@ export const MORTONS_PT: Guide = {
       h2: 'O que a evidência diz e o que ela não diz',
       paragraphs: [
         'A revisão Cochrane de 2024 é o resumo mais rigoroso disponível. Ela incluiu seis ensaios randomizados com 373\u00A0participantes. As conclusões: há evidência de certeza baixa a moderada para a maioria das intervenções no neuroma de Morton, e nenhum tratamento isolado tem apoio forte, de alta certeza. Depois de 20\u00A0anos a mais de pesquisa desde a revisão Cochrane original de 2004, os autores chegaram à mesma conclusão básica.',
-        'Isso não quer dizer que nada funcione. Troca de calçado e coxim metatarsal ajudam cerca de 3 em cada 10\u00A0pessoas. A infiltração de corticoide guiada por ultrassom provavelmente melhora a dor em comparação com a infiltração sem guia. A neurectomia alivia a dor em muita gente, mas tem o custo de uma dormência permanente. O que falta é um tratamento de primeira linha claro, apoiado por evidência forte.',
+        'Isso não quer dizer que nada funcione:',
+        {
+          list: [
+            'Troca de calçado e coxim metatarsal ajudam cerca de 3 em cada 10\u00A0pessoas.',
+            'A infiltração de corticoide guiada por ultrassom provavelmente melhora a dor em comparação com a infiltração sem guia.',
+            'A neurectomia alivia a dor em muita gente, mas tem o custo de uma dormência permanente.',
+          ],
+        },
+        '**O que falta é um tratamento de primeira linha claro, apoiado por evidência forte.**',
         'No exercício, a lacuna é ainda maior. Nenhum ensaio testou exercício para o neuroma de Morton. Os exercícios desta página são medidas de conforto e de controle de carga, não intervenções específicas para o neuroma. Se o exercício faz parte do seu plano, ele deve vir junto com a troca de calçado e a orientação de um profissional de saúde, não no lugar delas.',
       ],
       cites: [CITE.matthewsCochrane, CITE.matthewsSR],

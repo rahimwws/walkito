@@ -39,7 +39,9 @@ export const PF_TAPING_DE: Guide = {
       h2: 'Wie viel bringt Tapen, und wie lange hält die Wirkung?',
       keyFact: 'In einer verblindeten Studie mit 92\u00A0Personen senkte Low-Dye-Tape den Schmerz bei den ersten Schritten nach einer Woche um etwa 1,2\u00A0Punkte von 10 stärker als ein Placebo (Radford und Kollegen, 2006).',
       paragraphs: [
-        'Die Linderung durch Tape ist echt, aber bescheiden, und sie lässt schnell nach, sobald das Tape ab ist. Der sauberste Test ist eine australische Studie von 2006 mit 92\u00A0Menschen mit Fersenschmerzen. Die Hälfte trug eine Woche lang starres Low-Dye-Tape und bekam zusätzlich einen Schein-Ultraschall, die andere Hälfte bekam nur den Schein-Ultraschall. Den Teilnehmenden wurde gesagt, dass eine der beiden Varianten unecht sein könnte, auch wenn die meisten in der Tape-Gruppe annahmen, die echte bekommen zu haben. Die Tape-Gruppe hatte auf einer Skala von 0 bis 10 etwa 1,2\u00A0Punkte weniger Schmerz bei den ersten Schritten als die Scheingruppe. Andere Werte, etwa die Fußfunktion, unterschieden sich nicht (Radford und Kollegen, 2006).',
+        '**Die Linderung durch Tape ist echt, aber bescheiden, und sie lässt schnell nach, sobald das Tape ab ist.**',
+        'Der sauberste Test ist eine australische Studie von 2006 mit 92\u00A0Menschen mit Fersenschmerzen. Die Hälfte trug eine Woche lang starres Low-Dye-Tape und bekam zusätzlich einen Schein-Ultraschall, die andere Hälfte bekam nur den Schein-Ultraschall. Den Teilnehmenden wurde gesagt, dass eine der beiden Varianten unecht sein könnte, auch wenn die meisten in der Tape-Gruppe annahmen, die echte bekommen zu haben.',
+        'Die Tape-Gruppe hatte auf einer Skala von 0 bis 10 etwa 1,2\u00A0Punkte weniger Schmerz bei den ersten Schritten als die Scheingruppe. Andere Werte, etwa die Fußfunktion, unterschieden sich nicht (Radford und Kollegen, 2006).',
         'Auch der Scheingruppe ging es besser, um fast 2\u00A0Punkte, allein weil sie an einer Studie teilnahm und Hilfe erwartete. Eine frühere Studie desselben Teams ohne zufällig gebildete Gruppen berichtete einen mehr als doppelt so großen Unterschied (Landorf und Kollegen, 2005). Ohne faire Vergleichsgruppe wirkt Tape stärker, als es ist.',
         'Kinesio-Tape zeigt dasselbe kurzlebige Muster. In einer Studie von 2024 mit 34\u00A0Personen lag Kinesio-Tape am zweiten Tag um bis zu 3,5\u00A0Punkte von 10 vor einem Schein-Tape, danach schrumpfte der Unterschied Tag für Tag, bis das Tape abgenommen wurde (García-Gomariz und Kollegen, 2024). Die Leitlinie von 2023 fand keine Tape-Studien, die länger als etwa anderthalb Monate nachbeobachtet haben.',
       ],
@@ -51,9 +53,16 @@ export const PF_TAPING_DE: Guide = {
       h2: 'Low-Dye-Tape oder Kinesio-Tape: Was ist besser?',
       keyFact: 'In einer Studie mit 40\u00A0Personen linderte Kinesio-Tape den Schmerz am ersten Tag um 2\u00A0Punkte von 10 stärker als Low-Dye-Tape, danach wurde der Abstand jeden Tag kleiner (García-Gomariz und Kollegen, 2024).',
       paragraphs: [
-        'Für beide Tape-Arten gibt es Studien, und einen klaren Sieger gibt es noch nicht. Beim Low-Dye-Tapen kommt steifes, nicht dehnbares Sporttape zum Einsatz (oft Zinkoxid-Tape), das das Fußgewölbe stützt und begrenzt, wie weit es absinkt. Kinesio-Tape, oft als KT-Tape verkauft, ist dünn und dehnbar. Es bewegt sich mit und hält den Fuß nicht in Position.',
-        'Nur eine kleine Studie hat die beiden direkt verglichen. Bei 40\u00A0Personen linderte Kinesio-Tape den Schmerz am ersten Tag stärker, um 2\u00A0Punkte von 10, und die Teilnehmenden fanden es bequemer, weniger schweißtreibend und haltbarer. Der Unterschied beim Schmerz wurde danach jeden Tag kleiner (García-Gomariz und Kollegen, 2024). Eine dritte Variante, das Kalkaneus-Tapen (vier Streifen um Fersenbein und Achillessehne, ohne das Gewölbe zu berühren), senkte den Schmerz in einer Studie mit 41\u00A0Personen nach einer Woche stärker als Dehnen oder Schein-Tape (Hyland und Kollegen, 2006).',
-        'Zwei Übersichtsarbeiten von 2026 über jeweils 11\u00A0Studien weisen in dieselbe Richtung. Kinesio-Tape zusätzlich zur Reha senkte den Schmerz etwas stärker als Reha allein, ein Ergebnis, das die Autoren vorläufig nannten (Song und Kollegen, 2026). Low-Dye-Tape schnitt besser ab als ein Placebo, aber nicht besser als andere Optionen (Zhang und Kollegen, 2026).',
+        'Für beide Tape-Arten gibt es Studien, und **einen klaren Sieger gibt es noch nicht.** Beim Low-Dye-Tapen kommt steifes, nicht dehnbares Sporttape zum Einsatz (oft Zinkoxid-Tape), das das Fußgewölbe stützt und begrenzt, wie weit es absinkt. Kinesio-Tape, oft als KT-Tape verkauft, ist dünn und dehnbar. Es bewegt sich mit und hält den Fuß nicht in Position.',
+        'Nur eine kleine Studie hat die beiden direkt verglichen. Bei 40\u00A0Personen linderte Kinesio-Tape den Schmerz am ersten Tag stärker, um 2\u00A0Punkte von 10, und die Teilnehmenden fanden es bequemer, weniger schweißtreibend und haltbarer. Der Unterschied beim Schmerz wurde danach jeden Tag kleiner (García-Gomariz und Kollegen, 2024).',
+        'Eine dritte Variante, das Kalkaneus-Tapen (vier Streifen um Fersenbein und Achillessehne, ohne das Gewölbe zu berühren), senkte den Schmerz in einer Studie mit 41\u00A0Personen nach einer Woche stärker als Dehnen oder Schein-Tape (Hyland und Kollegen, 2006).',
+        'Zwei Übersichtsarbeiten von 2026 über jeweils 11\u00A0Studien weisen in dieselbe Richtung:',
+        {
+          list: [
+            'Kinesio-Tape zusätzlich zur Reha senkte den Schmerz etwas stärker als Reha allein, ein Ergebnis, das die Autoren vorläufig nannten (Song und Kollegen, 2026).',
+            'Low-Dye-Tape schnitt besser ab als ein Placebo, aber nicht besser als andere Optionen (Zhang und Kollegen, 2026).',
+          ],
+        },
       ],
       table: {
         caption: 'Starres Low-Dye-Tape oder Kinesio-Tape bei Plantarfasziitis',
@@ -71,7 +80,7 @@ export const PF_TAPING_DE: Guide = {
     {
       h2: 'Wie tapest du deinen Fuß bei Plantarfasziitis (Low-Dye-Methode)?',
       paragraphs: [
-        'Mit etwas Übung dauert Low-Dye-Tapen etwa fünf Minuten. Wenn möglich, lass es dir beim ersten Mal von einer Physiotherapeutin, einem Physiotherapeuten oder in der Podologie zeigen. Die Schritte unten folgen der gängigen Variante.',
+        'Mit etwas Übung dauert Low-Dye-Tapen etwa fünf Minuten. **Wenn möglich, lass es dir beim ersten Mal von einer Physiotherapeutin, einem Physiotherapeuten oder in der Podologie zeigen.** Die Schritte unten folgen der gängigen Variante.',
         'Wasch den Fuß vorher mit einfacher Seife, trockne ihn gut ab und lass Creme weg. Schneid die Streifen vorab aus starrem Sporttape von etwa 2,5\u00A0cm Breite zu. Setz dich so hin, dass der Fuß im rechten Winkel zum Bein steht, nicht gestreckt.',
       ],
       bullets: [
@@ -102,7 +111,7 @@ export const PF_TAPING_DE: Guide = {
     {
       h2: 'Wie lange kannst du das Tape bei Plantarfasziitis drauflassen, und kannst du damit schlafen?',
       paragraphs: [
-        'Die meisten lassen das Tape zwei bis fünf Tage drauf und gönnen der Haut dann eine Pause. Das passt zu den Studien: Low-Dye-Tape blieb in einer Studie 3 bis 5\u00A0Tage drauf, in einer anderen eine Woche, und Kinesio-Tape wurde in den Studien von 2024 5\u00A0Tage getragen (Landorf und Kollegen, 2005; Radford und Kollegen, 2006; García-Gomariz und Kollegen, 2024).',
+        '**Die meisten lassen das Tape zwei bis fünf Tage drauf und gönnen der Haut dann eine Pause.** Das passt zu den Studien: Low-Dye-Tape blieb in einer Studie 3 bis 5\u00A0Tage drauf, in einer anderen eine Woche, und Kinesio-Tape wurde in den Studien von 2024 5\u00A0Tage getragen (Landorf und Kollegen, 2005; Radford und Kollegen, 2006; García-Gomariz und Kollegen, 2024).',
         'Starres Tape lockert sich beim Gehen und braucht deshalb oft früher einen neuen Streifen. Kinesio-Tape ist dafür gemacht, mehrere Tage zu halten, und darf nass werden. Tupf es nach dem Duschen trocken und föhn es nicht.',
         'Du kannst mit Tape schlafen, wenn sich die Haut normal anfühlt, aber wir haben keine Studie gefunden, die Tape nur in der Nacht getestet hat. Bei Morgenschmerzen ist die Option mit Rückhalt in der Leitlinie eine Nachtschiene, beschrieben unter [Nachtschiene bei Plantarfasziitis](/de/nachtschiene-plantarfasziitis/), zusammen mit den Dehnungen unter [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/).',
       ],
@@ -112,8 +121,23 @@ export const PF_TAPING_DE: Guide = {
       h2: 'Welche Nebenwirkungen hat Tapen?',
       keyFact: 'In einer Studie mit 92\u00A0Personen hatten 13 von 46\u00A0Personen mit Low-Dye-Tape (28\u00A0%) eine Nebenwirkung, und alle verschwanden, sobald das Tape ab war (Radford und Kollegen, 2006).',
       paragraphs: [
-        'Die wichtigsten Nebenwirkungen beim Tapen sind Hautreizungen und ein Tape, das sich zu eng anfühlt. Die Leitlinie von 2023 nennt leichte Hautreizung als einzigen berichteten Schaden. Die verblindete Studie von 2006 liefert die klarsten Zahlen. Von 46\u00A0Personen, die eine Woche lang starres Tape trugen, hatten 13 (28\u00A0%) eine Nebenwirkung: 4 fanden es zu eng, 4 hatten eine allergische Hautreaktion, und 5 bemerkten einen neuen Schmerz an einer anderen Stelle im Bein. Fünf nahmen das Tape vorzeitig ab. Alle diese Beschwerden verschwanden, sobald das Tape entfernt war (Radford und Kollegen, 2006).',
-        'Um das Risiko zu senken, nimm bei empfindlicher Haut hypoallergenes Tape oder einen dünnen Unterzug, zieh starres Tape nie stramm um den Fuß und zieh das Tape langsam ab, am besten nachdem du es mit etwas Babyöl gelöst hast.',
+        '**Die wichtigsten Nebenwirkungen beim Tapen sind Hautreizungen und ein Tape, das sich zu eng anfühlt.** Die Leitlinie von 2023 nennt leichte Hautreizung als einzigen berichteten Schaden. Die verblindete Studie von 2006 liefert die klarsten Zahlen. Von 46\u00A0Personen, die eine Woche lang starres Tape trugen, hatten 13 (28\u00A0%) eine Nebenwirkung:',
+        {
+          list: [
+            '4 fanden es zu eng.',
+            '4 hatten eine allergische Hautreaktion.',
+            '5 bemerkten einen neuen Schmerz an einer anderen Stelle im Bein.',
+          ],
+        },
+        'Fünf nahmen das Tape vorzeitig ab. Alle diese Beschwerden verschwanden, sobald das Tape entfernt war (Radford und Kollegen, 2006).',
+        'Um das Risiko zu senken:',
+        {
+          list: [
+            'Nimm bei empfindlicher Haut hypoallergenes Tape oder einen dünnen Unterzug.',
+            'Zieh starres Tape nie stramm um den Fuß.',
+            'Zieh das Tape langsam ab, am besten nachdem du es mit etwas Babyöl gelöst hast.',
+          ],
+        },
       ],
       cites: [CITE.guideline, CITE.radfordTaping],
     },
@@ -122,7 +146,9 @@ export const PF_TAPING_DE: Guide = {
       keyFact: 'In einer Studie mit 48\u00A0Personen linderte langsames Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen gleichauf (Rathleff und Kollegen, 2015).',
       paragraphs: [
         'Kombinier Tape mit Dehnen und Wadenkrafttraining, denn für diese Teile gibt es Belege über die kurze Frist hinaus. Die Leitlinie von 2023 bewertet das Dehnen von Plantarfaszie und Wade mit **A**, für kurz- und langfristige Schmerzen. Krafttraining bekommt ein **B**. In einer Studie mit 48\u00A0Personen linderte langsames Fersenheben mit einem Handtuch unter den Zehen die Schmerzen nach drei Monaten schneller als Dehnen allein, nach zwölf Monaten lagen beide Gruppen aber gleichauf (Rathleff und Kollegen, 2015).',
-        'Tape kann dir das Gehen in dieser Woche erleichtern, sodass du in Bewegung bleibst und die Übungen weitermachst. Wenn schon das Gehen den Schmerz auslöst, zeigt [Fersenschmerzen nach dem Gehen](/de/fersenschmerzen-nach-dem-gehen/), wie du die Belastung anpasst. Die drei Übungen unten sind der Kern. In Walkito beginnen die Dehnungen mit 2-mal 30\u00A0Sekunden Halten, und dieses Fersenheben mit Handtuch ist, sobald dein Plan dort ankommt, auf 4\u00A0Sätze à 10 im selben langsamen 3-2-3-Takt eingestellt (mit einem Rucksack kommt Gewicht dazu, wenn du eine Stufe hast). Einmal pro Woche geht die Übung für dein Fokusziel eine Stufe höher, wenn sich deine letzten zwei Einheiten damit leicht angefühlt haben und der Morgenschmerz nicht gestiegen ist, und eine Stufe zurück, wenn sich eine Einheit schwer angefühlt hat oder der Morgenschmerz um 2 oder mehr gestiegen ist.',
+        'Tape kann dir das Gehen in dieser Woche erleichtern, sodass du in Bewegung bleibst und die Übungen weitermachst. Wenn schon das Gehen den Schmerz auslöst, zeigt [Fersenschmerzen nach dem Gehen](/de/fersenschmerzen-nach-dem-gehen/), wie du die Belastung anpasst.',
+        'Die drei Übungen unten sind der Kern. In Walkito beginnen die Dehnungen mit 2-mal 30\u00A0Sekunden Halten, und dieses Fersenheben mit Handtuch ist, sobald dein Plan dort ankommt, auf 4\u00A0Sätze à 10 im selben langsamen 3-2-3-Takt eingestellt (mit einem Rucksack kommt Gewicht dazu, wenn du eine Stufe hast).',
+        'Einmal pro Woche geht die Übung für dein Fokusziel eine Stufe höher, wenn sich deine letzten zwei Einheiten damit leicht angefühlt haben und der Morgenschmerz nicht gestiegen ist, und eine Stufe zurück, wenn sich eine Einheit schwer angefühlt hat oder der Morgenschmerz um 2 oder mehr gestiegen ist.',
       ],
       exercises: [
         {
@@ -167,7 +193,15 @@ export const PF_TAPING_DE: Guide = {
     {
       h2: 'Wann solltest du mit dem Tapen aufhören?',
       paragraphs: [
-        'Hör mit dem Tapen auf, wenn es keinen spürbaren Unterschied mehr macht, wenn deine Haut reagiert oder sobald sich der Schmerz so weit beruhigt hat, dass du ohne Tape normal gehst. Tape ist nicht dafür gedacht, monatelang getragen zu werden. Die Forschung reicht bis etwa anderthalb Monate, und die Leitlinie empfiehlt es nur kurzfristig.',
+        'Hör mit dem Tapen auf:',
+        {
+          list: [
+            'Wenn es keinen spürbaren Unterschied mehr macht.',
+            'Wenn deine Haut reagiert.',
+            'Sobald sich der Schmerz so weit beruhigt hat, dass du ohne Tape normal gehst.',
+          ],
+        },
+        '**Tape ist nicht dafür gedacht, monatelang getragen zu werden.** Die Forschung reicht bis etwa anderthalb Monate, und die Leitlinie empfiehlt es nur kurzfristig.',
         'Ein einfacher Test: Lass das Tape einen Tag weg und schätz deinen Schmerz bei den ersten Schritten von 0 bis 10 ein. Wenn er so ist wie an den Tagen mit Tape, bringt das Tape nicht mehr viel. Wenn du nach einem Monat regelmäßiger Übungen immer noch jeden Tag Tape brauchst, geh zu einer medizinischen Fachperson, um andere Ursachen abklären zu lassen und über weitere Optionen zu sprechen, etwa Schuheinlagen (siehe [Einlagen oder Übungen](/de/einlagen-oder-uebungen/)).',
       ],
       cites: [CITE.guideline],

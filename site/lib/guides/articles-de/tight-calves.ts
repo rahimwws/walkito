@@ -14,7 +14,8 @@ export const TIGHT_CALVES_DE: Guide = {
   lede:
     'Verspannte Waden heißt meist, dass sich die Wadenmuskeln steif anfühlen oder dein Sprunggelenk sich nicht weit genug beugt. Häufige Ursachen: plötzlich mehr Laufen oder Gehen, lange Tage auf den Beinen, Schuhe mit Absatz. Beide Wadenmuskeln zu dehnen hilft ein wenig: In einer Übersicht über fünf Studien wuchs die Beweglichkeit im Sprunggelenk um etwa 2 bis 3\u00A0Grad. Fersenheben hilft ebenfalls.',
   intro: [
-    'Du spürst es bei den ersten Schritten aus dem Bett, am Berg oder wenn du in die Hocke gehst und die Fersen abheben wollen. Die Rückseite des Unterschenkels fühlt sich kurz und hart an. Das ist sehr häufig und meistens kein Zeichen für eine Verletzung. Diese Seite erklärt, warum Waden fest werden, welcher Teil der Wade fest ist und was Dehnen und Krafttraining laut Forschung verändern können und was nicht. Die Dehnungen Schritt für Schritt findest du unter [Wade dehnen](/de/uebungen/wade-dehnen/) und [Soleus dehnen](/de/uebungen/soleus-dehnen/).',
+    'Du spürst es bei den ersten Schritten aus dem Bett, am Berg oder wenn du in die Hocke gehst und die Fersen abheben wollen. Die Rückseite des Unterschenkels fühlt sich kurz und hart an. Das ist sehr häufig und meistens kein Zeichen für eine Verletzung.',
+    'Diese Seite erklärt, warum Waden fest werden, welcher Teil der Wade fest ist und was Dehnen und Krafttraining laut Forschung verändern können und was nicht. Die Dehnungen Schritt für Schritt findest du unter [Wade dehnen](/de/uebungen/wade-dehnen/) und [Soleus dehnen](/de/uebungen/soleus-dehnen/).',
   ],
   takeaways: [
     'In einer Übersichtsarbeit von 2006 über fünf randomisierte Studien steigerte statisches Wadendehnen die Beugung im Sprunggelenk nur um etwa 2 bis 3\u00A0Grad, und die Autorinnen und Autoren waren nicht sicher, ob diese Veränderung für die Betroffenen spürbar zählt (Radford und Kollegen).',
@@ -57,7 +58,8 @@ export const TIGHT_CALVES_DE: Guide = {
         'Verspannte Waden hängen mit Plantarfasziitis zusammen, der häufigsten Ursache für Fersenschmerzen unter dem Fuß. Wenn sich das Sprunggelenk nicht weit genug beugen kann, muss der Fuß das bei jedem Schritt ausgleichen, und mehr Zug geht durch die Achillessehne, die Ferse und die Plantarfaszie (das dicke Band unter dem Gewölbe).',
         'In einer Fall-Kontroll-Studie von 2003 verglichen Riddle und Kollegen 50\u00A0Personen mit Plantarfasziitis mit 100 passenden Personen ohne. Menschen, deren Sprunggelenk sich nicht über 0\u00A0Grad hinaus beugen ließ, hatten eine 23,3-fache Chance auf eine Plantarfasziitis im Vergleich zu Menschen, die es über 10\u00A0Grad hinaus beugen konnten. Eine eingeschränkte Beugung im Sprunggelenk war der stärkste Risikofaktor, den sie gemessen haben, vor Körpergewicht und Stehen bei der Arbeit.',
         'In einer späteren Studie mit 254\u00A0Personen mit Plantarfasziitis hatten 83\u00A0% eine eingeschränkte Beugung im Sprunggelenk, und 57\u00A0% aller Patientinnen und Patienten hatten allein einen verkürzten Gastrocnemius (Patel und DiGiovanni, 2011).',
-        'Beide Studien zeigen einen Zusammenhang, nicht, dass verspannte Waden eine Plantarfasziitis verursachen. Die große Spanne um den Wert von 23,3 bedeutet auch, dass die wahre Zahl viel kleiner sein könnte. Trotzdem ist das ein Grund, warum die Leitlinie von 2023 zu Fersenschmerzen das Wadendehnen bei Schmerzen unter der Ferse mit A bewertet, ihrer besten Note. Wenn Fersenschmerzen dein Hauptproblem sind, fang bei [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder [Fersenschmerzen morgens](/de/fersenschmerzen-morgens/) an. Verspannte Waden zeigen sich auch rund um die Achillessehne und das Schienbein: Siehe [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/) und [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/).',
+        '**Beide Studien zeigen einen Zusammenhang, nicht, dass verspannte Waden eine Plantarfasziitis verursachen.** Die große Spanne um den Wert von 23,3 bedeutet auch, dass die wahre Zahl viel kleiner sein könnte. Trotzdem ist das ein Grund, warum die Leitlinie von 2023 zu Fersenschmerzen das Wadendehnen bei Schmerzen unter der Ferse mit A bewertet, ihrer besten Note.',
+        'Wenn Fersenschmerzen dein Hauptproblem sind, fang bei [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/) oder [Fersenschmerzen morgens](/de/fersenschmerzen-morgens/) an. Verspannte Waden zeigen sich auch rund um die Achillessehne und das Schienbein: Siehe [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/) und [Übungen beim Schienbeinkantensyndrom](/de/schienbeinkantensyndrom-uebungen/).',
       ],
       sourceNote:
         'Riddle 2003: Odds Ratio 23,3 (95-%-KI 4,3 bis 124,4) für eine Dorsalflexion von 0\u00A0Grad oder weniger gegenüber mehr als 10\u00A0Grad, adjustiert. Patel 2011: 211 von 254 mit eingeschränkter Dorsalflexion, 145 von 254 mit isolierter Gastrocnemius-Kontraktur, 66 von 254 mit Gastrocnemius-Soleus-Kontraktur.',
@@ -67,7 +69,15 @@ export const TIGHT_CALVES_DE: Guide = {
       h2: 'Lockert Dehnen verspannte Waden wirklich?',
       keyFact: 'Eine Übersichtsarbeit von 2006 über fünf randomisierte Studien fand, dass Wadendehnen die Beugung im Sprunggelenk um etwa 2 bis 3\u00A0Grad steigerte, und die Autorinnen und Autoren waren unsicher, ob diese Veränderung klinisch bedeutsam ist (Radford und Kollegen).',
       paragraphs: [
-        'Dehnen lockert verspannte Waden tatsächlich, aber weniger, als die meisten erwarten. 2006 fassten Radford und Kollegen fünf randomisierte Studien zusammen, die statisches Wadendehnen (eine Dehnung ruhig halten) mit keinem Dehnen verglichen. Die Beugung im Sprunggelenk nahm nach insgesamt 15\u00A0Minuten Dehnen oder weniger um etwa 2\u00A0Grad zu, nach 15 bis 30\u00A0Minuten um etwa 3\u00A0Grad und nach mehr als 30\u00A0Minuten um etwa 2,5\u00A0Grad. Diese Minuten sind die gesamte Dehnzeit über die ganze Studie zusammengezählt, nicht eine lange Haltezeit.',
+        'Dehnen lockert verspannte Waden tatsächlich, aber **weniger, als die meisten erwarten.** 2006 fassten Radford und Kollegen fünf randomisierte Studien zusammen, die statisches Wadendehnen (eine Dehnung ruhig halten) mit keinem Dehnen verglichen. Die Beugung im Sprunggelenk nahm zu:',
+        {
+          list: [
+            'Um etwa 2\u00A0Grad nach insgesamt 15\u00A0Minuten Dehnen oder weniger.',
+            'Um etwa 3\u00A0Grad nach 15 bis 30\u00A0Minuten.',
+            'Um etwa 2,5\u00A0Grad nach mehr als 30\u00A0Minuten.',
+          ],
+        },
+        'Diese Minuten sind die gesamte Dehnzeit über die ganze Studie zusammengezählt, nicht eine lange Haltezeit.',
         'Die Autorinnen und Autoren nannten den Zuwachs klein und sagten, es sei unklar, ob er für die Betroffenen zählt. Daraus folgen zwei Dinge. Erstens wird ein kurzes Dehnen dein Sprunggelenk nicht verwandeln. Zweitens ist das Gefühl von Lockerheit nach einer Dehnung echt, aber ein Teil davon kann daher kommen, dass du die Dehnung besser tolerierst, und nicht daher, dass der Muskel länger wird.',
         'Auch in anderer Hinsicht bringt Dehnen weniger, als viele hoffen. In einer Studie mit 1.538\u00A0Rekruten über drei Monate Ausbildung senkte eine 20-sekündige Dehnung von sechs Muskelgruppen der Beine in jedem Aufwärmen die Verletzungen nicht nennenswert (Pope und Kollegen, 2000). Ein Cochrane-Review über 12\u00A0Studien fand, dass Dehnen vor oder nach dem Sport den Muskelkater am nächsten Tag nur um etwa einen halben bis 1\u00A0Punkt auf einer 100-Punkte-Skala verringerte (Herbert und Kollegen, 2011).',
         'Dehn dich also, weil es sich gut anfühlt, weil es einem steifen Sprunggelenk ein wenig hilft und weil die Leitlinie zu Fersenschmerzen es bei Schmerzen unter der Ferse unterstützt. Erwarte nicht, dass es jeder Verletzung vorbeugt oder den Muskelkater verschwinden lässt.',
@@ -80,9 +90,18 @@ export const TIGHT_CALVES_DE: Guide = {
       h2: 'Solltest du verspannte Waden kräftigen statt dehnen?',
       keyFact: 'Eine Übersichtsarbeit von 2021 über 11 randomisierte Studien mit 452\u00A0Personen fand keinen signifikanten Unterschied im Zuwachs an Bewegungsumfang zwischen Krafttraining und Dehnen (Afonso und Kollegen).',
       paragraphs: [
-        'Verspannte Waden zu kräftigen ist eine gute Idee, und du musst dich nicht für das eine oder das andere entscheiden. 2021 fassten Afonso und Kollegen 11 randomisierte Studien mit 452\u00A0Personen zusammen, die Krafttraining mit Dehnen verglichen. Der Bewegungsumfang verbesserte sich mit beidem etwa gleich. Die Studien unterschieden sich stark voneinander und betrafen viele Gelenke, nicht nur das Sprunggelenk. Lies das also als starken Hinweis, nicht als endgültige Antwort.',
-        'Kraft zählt noch aus einem anderen Grund. Eine Wade, die früh ermüdet, fühlt sich früher fest an. Fersenheben über den vollen Bewegungsumfang, bei dem du die Fersen ganz absenkst und ganz nach oben kommst, belastet den Muskel über seine ganze Länge. Wenn sich deine Waden jedes Mal fest anfühlen, wenn du mehr gehst oder läufst als sonst, ist es langfristig oft sinnvoller, ihre Belastbarkeit aufzubauen. Deine Wadenausdauer kannst du mit dem [Fersenheben-Test](/de/fersenheben-test/) prüfen.',
-        'Eine sinnvolle Mischung für die meisten: beide Wadenmuskeln dehnen, das Sprunggelenk mit Sprunggelenk-Wippen (Knie über die Zehen) öffnen und ein paarmal pro Woche Fersenheben dazunehmen. Walkito startet mit 2-mal 30\u00A0Sekunden Halten für jede Dehnung und 3\u00A0Sätzen à 10 für das beidbeinige Fersenheben.',
+        'Verspannte Waden zu kräftigen ist eine gute Idee, und **du musst dich nicht für das eine oder das andere entscheiden.** 2021 fassten Afonso und Kollegen 11 randomisierte Studien mit 452\u00A0Personen zusammen, die Krafttraining mit Dehnen verglichen. Der Bewegungsumfang verbesserte sich mit beidem etwa gleich. Die Studien unterschieden sich stark voneinander und betrafen viele Gelenke, nicht nur das Sprunggelenk. Lies das also als starken Hinweis, nicht als endgültige Antwort.',
+        'Kraft zählt noch aus einem anderen Grund. Eine Wade, die früh ermüdet, fühlt sich früher fest an. Fersenheben über den vollen Bewegungsumfang, bei dem du die Fersen ganz absenkst und ganz nach oben kommst, belastet den Muskel über seine ganze Länge.',
+        'Wenn sich deine Waden jedes Mal fest anfühlen, wenn du mehr gehst oder läufst als sonst, ist es langfristig oft sinnvoller, ihre Belastbarkeit aufzubauen. Deine Wadenausdauer kannst du mit dem [Fersenheben-Test](/de/fersenheben-test/) prüfen.',
+        'Eine sinnvolle Mischung für die meisten:',
+        {
+          list: [
+            'Beide Wadenmuskeln dehnen.',
+            'Das Sprunggelenk mit Sprunggelenk-Wippen (Knie über die Zehen) öffnen.',
+            'Ein paarmal pro Woche Fersenheben dazunehmen.',
+          ],
+        },
+        'Walkito startet mit 2-mal 30\u00A0Sekunden Halten für jede Dehnung und 3\u00A0Sätzen à 10 für das beidbeinige Fersenheben.',
       ],
       sourceNote:
         'Afonso 2021: gepoolte Effektstärke -0,22 (95-%-KI -0,55 bis 0,12), kein signifikanter Unterschied zwischen Krafttraining und Dehnen beim Bewegungsumfang.',
@@ -148,8 +167,16 @@ export const TIGHT_CALVES_DE: Guide = {
     {
       h2: 'Kommen verspannte Waden von Flüssigkeitsmangel oder Krämpfen?',
       paragraphs: [
-        'Flüssigkeitsmangel wird oft für verspannte Waden und Krämpfe verantwortlich gemacht, aber die Belege, die wir gefunden haben, stützen das kaum. 2011 begleiteten Schwellnus und Kollegen 210\u00A0Ironman-Triathletinnen und -Triathleten. Die 43 mit Krämpfen hatten keine anderen Veränderungen bei Körpergewicht oder Salzwerten im Blut als diejenigen ohne. Die zwei Dinge, die Krämpfe vorhersagten, waren schnelleres Rennen und frühere Krämpfe. Das deutet auf müde, hart arbeitende Muskeln hin, nicht auf zu wenig Wasser oder Salz. Es war eine einzelne Gruppe von Ausdauersportlerinnen und -sportlern, die Frage ist damit also nicht für alle geklärt, aber diese Studie ist belastbarer als die Behauptungen auf Produktseiten.',
-        'Nächtliche Wadenkrämpfe sind eine andere Situation, und die Forschung widerspricht sich. In einer Studie von 2012 mit 80\u00A0Erwachsenen über 55 senkte allabendliches Dehnen von Waden und hinterer Oberschenkelmuskulatur vor dem Schlafengehen über etwa anderthalb Monate die Krämpfe um 1,2 pro Nacht mehr als Nichtstun und machte sie weniger schmerzhaft (Hallegraeff und Kollegen). Eine frühere Studie von 2005 mit 191\u00A0Personen, die bereits Chinin nahmen, fand, dass Ratschläge zum Dehnen nach drei Monaten keinen Unterschied bei den Krämpfen machten (Coppin und Kollegen). Eine sanfte Wadendehnung vor dem Schlafengehen kostet nichts und ist risikoarm, ein Versuch ist also vernünftig, aber bei dir wirkt sie vielleicht nicht.',
+        'Flüssigkeitsmangel wird oft für verspannte Waden und Krämpfe verantwortlich gemacht, aber **die Belege, die wir gefunden haben, stützen das kaum.** 2011 begleiteten Schwellnus und Kollegen 210\u00A0Ironman-Triathletinnen und -Triathleten. Die 43 mit Krämpfen hatten keine anderen Veränderungen bei Körpergewicht oder Salzwerten im Blut als diejenigen ohne. Die zwei Dinge, die Krämpfe vorhersagten, waren schnelleres Rennen und frühere Krämpfe.',
+        'Das deutet auf müde, hart arbeitende Muskeln hin, nicht auf zu wenig Wasser oder Salz. Es war eine einzelne Gruppe von Ausdauersportlerinnen und -sportlern, die Frage ist damit also nicht für alle geklärt, aber diese Studie ist belastbarer als die Behauptungen auf Produktseiten.',
+        'Nächtliche Wadenkrämpfe sind eine andere Situation, und die Forschung widerspricht sich:',
+        {
+          list: [
+            'In einer Studie von 2012 mit 80\u00A0Erwachsenen über 55 senkte allabendliches Dehnen von Waden und hinterer Oberschenkelmuskulatur vor dem Schlafengehen über etwa anderthalb Monate die Krämpfe um 1,2 pro Nacht mehr als Nichtstun und machte sie weniger schmerzhaft (Hallegraeff und Kollegen).',
+            'Eine frühere Studie von 2005 mit 191\u00A0Personen, die bereits Chinin nahmen, fand, dass Ratschläge zum Dehnen nach drei Monaten keinen Unterschied bei den Krämpfen machten (Coppin und Kollegen).',
+          ],
+        },
+        'Eine sanfte Wadendehnung vor dem Schlafengehen kostet nichts und ist risikoarm, ein Versuch ist also vernünftig, aber bei dir wirkt sie vielleicht nicht.',
         'Wenn Krämpfe häufig oder neu sind oder mit anderen Beschwerden einhergehen, sprich mit einer Ärztin oder einem Arzt. Manche Medikamente und manche Erkrankungen können sie auslösen.',
       ],
       sourceNote:
@@ -159,8 +186,24 @@ export const TIGHT_CALVES_DE: Guide = {
     {
       h2: 'Wie verhinderst du, dass die Waden vom Laufen oder Stehen fest werden?',
       paragraphs: [
-        'Waden, die vom Laufen oder Stehen fest werden, brauchen meist eine veränderte Belastung, nicht nur mehr Dehnen. Wenn du läufst, steigere deinen Wochenumfang schrittweise, nimm Steigungen langsam dazu und gib einem neuen Paar Schuhe mit geringerer Sprengung Zeit, bevor du lange Läufe darin machst. Die Seite zu [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) geht genauer auf die Belastung ein.',
-        'Wenn du den ganzen Tag stehst, verlagere oft dein Gewicht, mach kurze Gehpausen und in deiner Pause ein paar Wiederholungen Fersenheben und eine Dehnung. Siehe [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
+        'Waden, die vom Laufen oder Stehen fest werden, **brauchen meist eine veränderte Belastung, nicht nur mehr Dehnen.** Wenn du läufst:',
+        {
+          list: [
+            'Steigere deinen Wochenumfang schrittweise.',
+            'Nimm Steigungen langsam dazu.',
+            'Gib einem neuen Paar Schuhe mit geringerer Sprengung Zeit, bevor du lange Läufe darin machst.',
+          ],
+        },
+        'Die Seite zu [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) geht genauer auf die Belastung ein.',
+        'Wenn du den ganzen Tag stehst:',
+        {
+          list: [
+            'Verlagere oft dein Gewicht.',
+            'Mach kurze Gehpausen.',
+            'Mach in deiner Pause ein paar Wiederholungen Fersenheben und eine Dehnung.',
+          ],
+        },
+        'Siehe [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/).',
         'Wenn du an den meisten Tagen Absätze trägst, musst du nicht darauf verzichten. Bau flache Tage ein und dehn abends beide Wadenmuskeln. Wenn du mit der Zeit Wadenkraft aufbaust, kommen deine Waden leichter mit allem zurecht, was du von ihnen verlangst.',
       ],
     },

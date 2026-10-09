@@ -29,7 +29,7 @@ export const EX_SINGLE_LEG_BALANCE_ES: Guide = {
     {
       h2: '¿Cómo hacer el equilibrio a una pierna?',
       paragraphs: [
-        'Párate cerca de una pared o una barra de cocina. Levanta un pie del piso doblando un poco la rodilla. Mira un punto fijo al frente. Deja que el pie de apoyo se tambalee. Ese tambaleo es justo el ejercicio: los músculos pequeños del pie y del tobillo están trabajando para mantenerte de pie.',
+        'Párate cerca de una pared o una barra de cocina. Levanta un pie del piso doblando un poco la rodilla. Mira un punto fijo al frente. Deja que el pie de apoyo se tambalee. **Ese tambaleo es justo el ejercicio:** los músculos pequeños del pie y del tobillo están trabajando para mantenerte de pie.',
         'Aguanta todo lo que puedas, hasta 30\u00A0segundos, y cambia de lado. Tres veces por lado es una dosis común. Si no aguantas más de unos segundos, deja las puntas de los dedos en la pared y ve subiendo poco a poco.',
       ],
       exercises: [
@@ -70,14 +70,14 @@ export const EX_SINGLE_LEG_BALANCE_ES: Guide = {
       },
       after: [
         'Los números bajan mucho al cerrar los ojos, sobre todo después de los 50. Por eso la versión con ojos cerrados es una prueba mucho más sensible del control del tobillo y del pie. También es la razón por la que la app de Walkito incluye la versión con ojos cerrados después de la de ojos abiertos.',
-        'Más que igualar una tabla, importa si tu tiempo mejora con las semanas y si los dos lados están más o menos parejos. Una diferencia grande entre piernas puede indicar un déficit de fuerza o de estabilidad en un lado.',
+        '**Más que igualar una tabla, importa si tu tiempo mejora con las semanas y si los dos lados están más o menos parejos.** Una diferencia grande entre piernas puede indicar un déficit de fuerza o de estabilidad en un lado.',
       ],
       cites: [CITE.springer],
     },
     {
       h2: 'La versión con ojos cerrados',
       paragraphs: [
-        'Cerrar los ojos quita la información visual que el cerebro normalmente usa para el equilibrio. Eso obliga a los propioceptores del pie y del tobillo, los sensores que detectan la posición y el movimiento, a hacer más trabajo. Es una versión más difícil del mismo ejercicio, no un ejercicio distinto.',
+        'Cerrar los ojos quita la información visual que el cerebro normalmente usa para el equilibrio. Eso obliga a los propioceptores del pie y del tobillo, los sensores que detectan la posición y el movimiento, a hacer más trabajo. **Es una versión más difícil del mismo ejercicio, no un ejercicio distinto.**',
         'Párate cerca de una pared por seguridad. Cierra los ojos y aguanta todo lo que puedas. A la mayoría el tiempo le baja a una pequeña parte de lo que aguanta con ojos abiertos. Esa diferencia se acorta con la práctica.',
         'La app de Walkito incluye el equilibrio con ojos cerrados como un ejercicio aparte: 3\u00A0series de 20\u00A0segundos, los dos pies (alternando). Se abre como progresión cuando la meta de equilibrio con ojos abiertos ya está firme.',
       ],
@@ -86,7 +86,16 @@ export const EX_SINGLE_LEG_BALANCE_ES: Guide = {
       h2: '¿Por qué importa el equilibrio para el dolor de pies?',
       keyFact: 'En los esguinces de tobillo, un metanálisis de 8 estudios y 3577 deportistas encontró que el entrenamiento de equilibrio reduce el riesgo de esguince un 46 % frente a no intervenir (Bellows y colegas, 2018).',
       paragraphs: [
-        'El equilibrio no está separado de la fuerza del pie. Cuando te paras en una pierna, los músculos intrínsecos del pie (los músculos pequeños dentro del pie que sostienen el arco), los músculos de la pantorrilla, el tibial anterior y los estabilizadores de la cadera trabajan juntos. Un déficit en cualquier punto de esa cadena hace que el pie compense.',
+        '**El equilibrio no está separado de la fuerza del pie.** Cuando te paras en una pierna, trabajan juntos:',
+        {
+          list: [
+            'Los músculos intrínsecos del pie (los músculos pequeños dentro del pie que sostienen el arco).',
+            'Los músculos de la pantorrilla.',
+            'El tibial anterior.',
+            'Los estabilizadores de la cadera.',
+          ],
+        },
+        'Un déficit en cualquier punto de esa cadena hace que el pie compense.',
         'En la fascitis plantar y el pie plano, el entrenamiento de equilibrio aparece en los programas junto con estiramientos y fortalecimiento porque entrena toda la cadena a la vez. Un ensayo de 2023 con 52\u00A0personas con pie plano flexible encontró que un programa que combinaba ejercicios de pie corto, trabajo de tobillo, fortalecimiento de cadera, estiramientos y equilibrio cambió la forma del arco más que un grupo de control. El equilibrio no se probó por separado en ese ensayo, pero era parte del programa que funcionó.',
         'Para los esguinces de tobillo en concreto, un metanálisis de 2018 con 8\u00A0estudios y 3577\u00A0deportistas encontró que el entrenamiento de equilibrio redujo el riesgo de esguince de tobillo un 46\u00A0% frente a no hacer nada. Es el resultado individual más fuerte detrás de incluir el equilibrio en un programa para los pies.',
       ],
@@ -95,18 +104,26 @@ export const EX_SINGLE_LEG_BALANCE_ES: Guide = {
     {
       h2: '¿Cuáles son los errores comunes en el equilibrio a una pierna?',
       paragraphs: [
-        'Mirar al piso. Tus ojos deben estar en un punto fijo a la altura de la vista. Mirar hacia abajo lleva tu peso hacia adelante y hace el ejercicio más fácil, y así pierde su sentido.',
-        'Bloquear la rodilla de apoyo. Una ligera flexión mantiene activos los músculos. Con la rodilla bloqueada, la carga pasa a la articulación en lugar de a los músculos que la rodean.',
-        'Intentar no tambalearte. El tambaleo es el ejercicio. Las pequeñas correcciones que hace tu pie para mantenerte de pie son las que entrenan la propiocepción y el control del tobillo. Agarrarte al piso encogiendo los dedos o ponerte tenso para eliminar todo movimiento reduce el efecto del entrenamiento.',
-        'Pararte demasiado lejos de la pared. Tienes que estar lo bastante cerca para sostenerte si pierdes el equilibrio, sobre todo en la versión con ojos cerrados. La seguridad va primero.',
+        {
+          list: [
+            '**Mirar al piso.** Tus ojos deben estar en un punto fijo a la altura de la vista. Mirar hacia abajo lleva tu peso hacia adelante y hace el ejercicio más fácil, y así pierde su sentido.',
+            '**Bloquear la rodilla de apoyo.** Una ligera flexión mantiene activos los músculos. Con la rodilla bloqueada, la carga pasa a la articulación en lugar de a los músculos que la rodean.',
+            '**Intentar no tambalearte.** El tambaleo es el ejercicio. Las pequeñas correcciones que hace tu pie para mantenerte de pie son las que entrenan la propiocepción y el control del tobillo. Agarrarte al piso encogiendo los dedos o ponerte tenso para eliminar todo movimiento reduce el efecto del entrenamiento.',
+            '**Pararte demasiado lejos de la pared.** Tienes que estar lo bastante cerca para sostenerte si pierdes el equilibrio, sobre todo en la versión con ojos cerrados. La seguridad va primero.',
+          ],
+        },
       ],
     },
     {
       h2: 'Versiones más fáciles y más difíciles',
       paragraphs: [
-        'Si no aguantas más de unos segundos en una pierna, deja las puntas de los dedos en una pared y ve subiendo. Incluso un toque ligero le da al cerebro más información para el equilibrio. Quita un dedo a la vez a medida que mejoras.',
-        'Si 30\u00A0segundos sobre un piso duro se sienten fáciles, prueba pararte sobre una toalla doblada o una almohada. La superficie blanda hace que el tobillo trabaje más con cada tambaleo. La app incluye el equilibrio sobre almohada como una progresión más.',
-        'La progresión más difícil es el equilibrio a una pierna con ojos cerrados sobre una superficie blanda. Quita la información visual y también el piso estable, así que el pie y el tobillo hacen casi todo el trabajo.',
+        {
+          list: [
+            '**Más fácil:** Si no aguantas más de unos segundos en una pierna, deja las puntas de los dedos en una pared y ve subiendo. Incluso un toque ligero le da al cerebro más información para el equilibrio. Quita un dedo a la vez a medida que mejoras.',
+            '**Más difícil:** Si 30\u00A0segundos sobre un piso duro se sienten fáciles, prueba pararte sobre una toalla doblada o una almohada. La superficie blanda hace que el tobillo trabaje más con cada tambaleo. La app incluye el equilibrio sobre almohada como una progresión más.',
+            '**Lo más difícil:** La progresión más difícil es el equilibrio a una pierna con ojos cerrados sobre una superficie blanda. Quita la información visual y también el piso estable, así que el pie y el tobillo hacen casi todo el trabajo.',
+          ],
+        },
         'Para ejercicios relacionados que fortalecen la cadena, mira las [elevaciones de talón](/es/ejercicios/elevaciones-de-talon/), las [elevaciones de tibial anterior](/es/ejercicios/elevaciones-de-tibial-anterior/) y el [ejercicio de pie corto](/es/ejercicios/pie-corto/).',
       ],
     },

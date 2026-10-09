@@ -31,14 +31,15 @@ export const EX_ECCENTRIC_HEEL_DROPS_ES: Guide = {
       h2: '¿Qué es un excéntrico de talón?',
       paragraphs: [
         'Una contracción excéntrica es cuando el músculo se alarga bajo carga. En un excéntrico de talón, la pantorrilla se alarga mientras bajas el talón por debajo del escalón. Esa bajada controlada es lo que, con las semanas, aumenta la capacidad del tendón. La subida se hace con los dos pies para quitarle el esfuerzo concéntrico al lado lesionado.',
-        'La confusión más común es entre un excéntrico de talón y un estiramiento de pantorrilla. Un estiramiento se queda abajo. Un excéntrico de talón pasa por esa posición despacio, con el músculo trabajando todo el tiempo. Quedarte abajo como en un estiramiento quita el estímulo de carga que hace que el ejercicio funcione. El beneficio está en la bajada lenta y controlada.',
+        'La confusión más común es entre un excéntrico de talón y un estiramiento de pantorrilla. Un estiramiento se queda abajo. Un excéntrico de talón pasa por esa posición despacio, con el músculo trabajando todo el tiempo. Quedarte abajo como en un estiramiento quita el estímulo de carga que hace que el ejercicio funcione. **El beneficio está en la bajada lenta y controlada.**',
       ],
       cites: [CITE.alfredson],
     },
     {
       h2: '¿Cómo hacer excéntricos de talón (rodilla estirada)?',
       paragraphs: [
-        'Párate en la orilla de un escalón, con la parte delantera de los pies sobre el escalón y los talones afuera. Sube con los dos pies. Pasa el peso a la pierna que trabaja. Baja ese talón despacio, en unos tres segundos, dejando que baje por debajo del escalón. Mantén la rodilla estirada. Usa los dos pies para volver arriba.',
+        'Párate en la orilla de un escalón, con la parte delantera de los pies sobre el escalón y los talones afuera. Sube con los dos pies. Pasa el peso a la pierna que trabaja.',
+        'Baja ese talón despacio, en unos tres segundos, dejando que baje por debajo del escalón. Mantén la rodilla estirada. Usa los dos pies para volver arriba.',
         'El excéntrico de talón con la rodilla estirada trabaja el gastrocnemio, el músculo más grande y superficial de la pantorrilla. Alfredson también indicó una versión con la rodilla doblada para trabajar el sóleo, el músculo más profundo de la pantorrilla. Es el mismo movimiento, con la rodilla doblada a unos 30 a 45\u00A0grados durante la bajada.',
       ],
       exercises: [
@@ -90,17 +91,29 @@ export const EX_ECCENTRIC_HEEL_DROPS_ES: Guide = {
       paragraphs: [
         'La tendinopatía de Aquiles de la porción media está en el cuerpo del tendón, normalmente de 2 a 6\u00A0centímetros por encima del hueso del talón. Aquí sirven los excéntricos normales sobre la orilla de un escalón.',
         'La tendinopatía de Aquiles insercional es dolor justo donde el tendón se une al hueso. En un estudio piloto de 2008 con 27\u00A0personas con dolor insercional crónico, un protocolo modificado con carga excéntrica solo a nivel del piso, sin bajar por debajo de la posición neutra, reportó buenos resultados en el 67\u00A0% de los casos. La dorsiflexión profunda comprime el tendón contra el hueso del talón, así que las bajadas profundas normales son contraproducentes en el dolor insercional.',
-        'Si tu dolor está justo en la parte de atrás del hueso del talón, haz todos los excéntricos de talón en el piso. No bajes por debajo de la orilla del escalón. No estires con fuerza. Es el ajuste que más se pasa por alto en los programas para el Aquiles. Para la página completa, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
+        'Si tu dolor está justo en la parte de atrás del hueso del talón:',
+        {
+          list: [
+            'Haz todos los excéntricos de talón en el piso.',
+            'No bajes por debajo de la orilla del escalón.',
+            'No estires con fuerza.',
+          ],
+        },
+        'Es el ajuste que más se pasa por alto en los programas para el Aquiles. Para la página completa, mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/).',
       ],
       cites: [CITE.jonsson, CITE.achillesGuideline],
     },
     {
       h2: '¿Cuáles son los errores comunes en los excéntricos de talón?',
       paragraphs: [
-        'Quedarte abajo como en un estiramiento. El beneficio está en la bajada lenta, no en quedarte colgado abajo. Baja en tres segundos y vuelve arriba enseguida con los dos pies.',
-        'Bajar demasiado. El talón debe bajar hasta su rango natural por debajo del escalón. Forzarlo más, inclinando el pie hacia adentro o hacia afuera para ganar rango, tensa los tendones de la parte interna o externa del tobillo. De 3 a 5\u00A0centímetros por debajo del escalón es suficiente.',
-        'Ir demasiado rápido. La velocidad quita la carga excéntrica en la que se basa el ejercicio. Si no puedes controlar la bajada en unos tres segundos, pasa primero a la versión con dos pies.',
-        'Saltarte la versión con la rodilla doblada. El excéntrico con la rodilla estirada trabaja el gastrocnemio. La versión con la rodilla doblada trabaja el sóleo. Los dos músculos llegan al tendón de Aquiles. El protocolo original incluye los dos.',
+        {
+          list: [
+            '**Quedarte abajo como en un estiramiento.** El beneficio está en la bajada lenta, no en quedarte colgado abajo. Baja en tres segundos y vuelve arriba enseguida con los dos pies.',
+            '**Bajar demasiado.** El talón debe bajar hasta su rango natural por debajo del escalón. Forzarlo más, inclinando el pie hacia adentro o hacia afuera para ganar rango, tensa los tendones de la parte interna o externa del tobillo. De 3 a 5\u00A0centímetros por debajo del escalón es suficiente.',
+            '**Ir demasiado rápido.** La velocidad quita la carga excéntrica en la que se basa el ejercicio. Si no puedes controlar la bajada en unos tres segundos, pasa primero a la versión con dos pies.',
+            '**Saltarte la versión con la rodilla doblada.** El excéntrico con la rodilla estirada trabaja el gastrocnemio. La versión con la rodilla doblada trabaja el sóleo. Los dos músculos llegan al tendón de Aquiles. El protocolo original incluye los dos.',
+          ],
+        },
       ],
     },
     {

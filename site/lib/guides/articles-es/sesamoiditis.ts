@@ -38,7 +38,7 @@ export const SESAMOIDITIS_ES: Guide = {
       keyFact: 'Cerca de 1 de cada 10 personas tiene un sesamoideo bipartito, una variante normal que puede verse como una fractura en la radiografía pero tiene bordes lisos y redondeados en vez de dentados (Yammine, 2015).',
       paragraphs: [
         'La sesamoiditis es una afección por sobreuso. El dolor aparece poco a poco y duele durante la actividad. Una fractura de sesamoideo es una fisura en el hueso, casi siempre por un evento agudo o por estrés crónico. El dolor de la fractura tiende a ser más agudo y puede estar presente incluso en reposo.',
-        'Una complicación es que cerca de 1 de cada 10 personas tiene un sesamoideo bipartito, es decir, el sesamoideo medial viene naturalmente en dos piezas. En una radiografía, un sesamoideo bipartito se ve como una fractura. La diferencia está en los bordes: los bordes del bipartito son lisos y redondeados, mientras que los bordes de una fractura son irregulares y dentados. Tu profesional de la salud también puede radiografiar el otro pie para comparar.',
+        'Una complicación es que cerca de 1 de cada 10 personas tiene un sesamoideo bipartito, es decir, el sesamoideo medial viene naturalmente en dos piezas. En una radiografía, un sesamoideo bipartito se ve como una fractura. La diferencia está en los bordes: **los bordes del bipartito son lisos y redondeados, mientras que los bordes de una fractura son irregulares y dentados.** Tu profesional de la salud también puede radiografiar el otro pie para comparar.',
         'Si las radiografías no son claras, una gammagrafía ósea o una resonancia magnética pueden confirmar el diagnóstico. La resonancia muestra edema de la médula ósea (hinchazón dentro del hueso), que está presente en la mayoría de los casos de sesamoiditis. La resonancia suele reservarse para los casos en que los síntomas persisten a pesar del manejo inicial.',
       ],
       cites: [CITE.yammineSesamoid],
@@ -47,7 +47,15 @@ export const SESAMOIDITIS_ES: Guide = {
       h2: '¿Cómo es el manejo conservador?',
       keyFact: 'Una revisión de 2025 que reunió 11 estudios y 59 pacientes encontró que las puntuaciones de dolor mejoraron en cerca del 66 por ciento de los casos tratados de forma conservadora, aunque la recurrencia fue común (Biz y colegas, 2025).',
       paragraphs: [
-        'La revisión sistemática de 2025 de Biz y colegas reunió datos individuales de 11\u00A0estudios con 59\u00A0pacientes. Los tratamientos más comunes fueron órtesis, modificación de actividad e inyecciones de corticosteroides. Las puntuaciones de dolor mejoraron en cerca del 66\u00A0por ciento de los casos, pero la recurrencia fue común y algunos pacientes seguían con síntomas.',
+        'La revisión sistemática de 2025 de Biz y colegas reunió datos individuales de 11\u00A0estudios con 59\u00A0pacientes. Los tratamientos más comunes fueron:',
+        {
+          list: [
+            'Órtesis.',
+            'Modificación de actividad.',
+            'Inyecciones de corticosteroides.',
+          ],
+        },
+        '**Las puntuaciones de dolor mejoraron en cerca del 66\u00A0por ciento de los casos, pero la recurrencia fue común** y algunos pacientes seguían con síntomas.',
         'La revisión encontró que las órtesis y la descarga se usaron en casi todos los casos. Las inyecciones de corticosteroides dieron alivio a corto plazo pero tenían riesgo de recurrencia. Ningún tratamiento se comparó directamente en un ensayo aleatorizado. Los autores concluyeron que se necesitan protocolos estandarizados y estudios de mayor calidad.',
         'La cirugía, por lo general una sesamoidectomía parcial o total (extracción del hueso), se considera solo cuando varios meses de cuidados conservadores no han ayudado. La mayoría de los profesionales de la salud intentan al menos de tres a seis meses de manejo no quirúrgico primero.',
       ],
@@ -59,7 +67,7 @@ export const SESAMOIDITIS_ES: Guide = {
       h2: '¿Qué es la almohadilla de bailarina y cómo funciona?',
       paragraphs: [
         'La almohadilla de bailarina es una almohadilla plana de fieltro o espuma con un recorte en forma de U debajo de la cabeza del primer metatarsiano. El recorte se coloca justo sobre la zona de los sesamoideos para que la almohadilla levante la parte delantera del pie que la rodea y al mismo tiempo alivie la presión directa en el punto que duele. El nombre viene del ballet, donde la carga en la parte delantera del pie es extrema.',
-        'Puedes comprar almohadillas de bailarina ya recortadas o pedir a un profesional de la salud que recorte una a la medida de tu pie. La colocación importa: el recorte tiene que quedar justo debajo de los huesos sesamoideos, no muy adelante ni muy atrás. Algunas personas usan la almohadilla dentro del zapato; otras la integran en una plantilla a la medida.',
+        'Puedes comprar almohadillas de bailarina ya recortadas o pedir a un profesional de la salud que recorte una a la medida de tu pie. La colocación importa: **el recorte tiene que quedar justo debajo de los huesos sesamoideos**, no muy adelante ni muy atrás. Algunas personas usan la almohadilla dentro del zapato; otras la integran en una plantilla a la medida.',
         'Un zapato con suela rígida o con suela de balancín reduce cuánto se dobla la articulación del dedo gordo al impulsarte, lo que limita la carga sobre los sesamoideos. Evitar zapatos flexibles, de suela delgada y tacones altos durante el periodo con síntomas ayuda por la misma razón.',
       ],
     },
@@ -67,7 +75,15 @@ export const SESAMOIDITIS_ES: Guide = {
       h2: '¿Importa el calzado?',
       paragraphs: [
         'El calzado tiene un papel de apoyo. Un zapato con suela rígida limita el movimiento de la articulación metatarsofalángica del dedo gordo, lo que reduce directamente el estrés sobre los sesamoideos. Las suelas de balancín hacen lo mismo: hacen rodar el pie en la fase de empuje sin exigir que el dedo se doble.',
-        'Evita zapatos que sean flexibles en la parte delantera, muy planos o de suela delgada. Los tacones pasan el peso hacia adelante, a la planta delantera del pie, y aumentan la carga sobre los sesamoideos. Si correr desencadenó el problema, cambiar temporalmente a un zapato con más amortiguación en la parte delantera y con mayor altura de suela puede ayudar mientras los síntomas se calman.',
+        'Evita zapatos que:',
+        {
+          list: [
+            'Sean flexibles en la parte delantera.',
+            'Sean muy planos.',
+            'Tengan suela delgada.',
+          ],
+        },
+        'Los tacones pasan el peso hacia adelante, a la planta delantera del pie, y aumentan la carga sobre los sesamoideos. Si correr desencadenó el problema, cambiar temporalmente a un zapato con más amortiguación en la parte delantera y con mayor altura de suela puede ayudar mientras los síntomas se calman.',
         'Estos cambios por sí solos no resolverán la afección si la irritación de fondo es importante, pero reducen la carga que causó el problema en primer lugar.',
       ],
     },
@@ -76,14 +92,14 @@ export const SESAMOIDITIS_ES: Guide = {
       paragraphs: [
         'La respuesta honesta es que el ejercicio tiene un papel limitado en el manejo de la sesamoiditis como tal. A diferencia de la [fascitis plantar](/es/ejercicios-fascitis-plantar/) o la [tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/), donde los programas de carga tienen buen respaldo en ensayos, no existen ensayos de ejercicio para la sesamoiditis. La revisión sistemática de 2025 no identificó ningún estudio que probara un protocolo de ejercicio específico.',
         'En lo que el ejercicio sí puede ayudar es en el contexto general. Una pantorrilla rígida pasa el peso hacia la parte delantera del pie al caminar. Estirar el gastrocnemio y el sóleo puede reducir esa carga hacia adelante. Los músculos intrínsecos del pie débiles también pueden contribuir a una distribución desigual de la presión en la parte delantera del pie. La separación de dedos y el pie corto pueden ayudar a repartir la carga de forma más pareja entre las cabezas de los metatarsianos, aunque esto no se ha probado específicamente para la sesamoiditis.',
-        'Si te estás recuperando de sesamoiditis y perdiste fuerza en los dedos o flexibilidad en la pantorrilla durante el periodo de reposo, los ejercicios suaves para la zona de la [planta delantera del pie](/es/metatarsalgia-dolor-planta-del-pie/) pueden formar parte de un plan de regreso a la actividad. Pero la descarga y la modificación de actividad son las herramientas principales, no el ejercicio.',
+        'Si te estás recuperando de sesamoiditis y perdiste fuerza en los dedos o flexibilidad en la pantorrilla durante el periodo de reposo, los ejercicios suaves para la zona de la [planta delantera del pie](/es/metatarsalgia-dolor-planta-del-pie/) pueden formar parte de un plan de regreso a la actividad. Pero **la descarga y la modificación de actividad son las herramientas principales, no el ejercicio.**',
       ],
     },
     {
       h2: '¿Cómo se relaciona la sesamoiditis con otras afecciones de la parte delantera del pie?',
       paragraphs: [
         'El dolor de la sesamoiditis está debajo del dedo gordo, lo que lo separa del [dolor más amplio en la planta delantera del pie](/es/metatarsalgia-dolor-planta-del-pie/) (metatarsalgia), donde el dolor suele estar debajo de la segunda y la tercera cabeza de los metatarsianos. El [neuroma de Morton](/es/neuroma-de-morton/) produce hormigueo o ardor entre el tercer y el cuarto dedo, no debajo del dedo gordo.',
-        'La gota también puede afectar la articulación del dedo gordo y al principio se siente parecida, pero la gota aparece de golpe, muchas veces de noche, con enrojecimiento, hinchazón y calor. La sesamoiditis se desarrolla poco a poco. Si el inicio fue repentino y la articulación está roja y caliente, consulta a un profesional de la salud para descartar gota o infección.',
+        'La gota también puede afectar la articulación del dedo gordo y al principio se siente parecida, pero la gota aparece de golpe, muchas veces de noche, con enrojecimiento, hinchazón y calor. La sesamoiditis se desarrolla poco a poco. **Si el inicio fue repentino y la articulación está roja y caliente, consulta a un profesional de la salud para descartar gota o infección.**',
         'El hallux rigidus (rigidez y artrosis de la articulación del dedo gordo) también puede causar dolor en una zona parecida, pero involucra la articulación en sí y no los huesos sesamoideos que están debajo.',
       ],
     },

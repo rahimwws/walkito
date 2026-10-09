@@ -29,7 +29,7 @@ export const ICE_HEAT_ES: Guide = {
       h2: '¿Qué es mejor para la fascitis plantar, hielo o calor?',
       keyFact: 'La guía de 2023 para el dolor de talón encontró 1\u00A0ensayo pequeño sobre calor y dijo que no se puede hacer una recomendación sobre los agentes térmicos superficiales (Koc y colegas, 2023).',
       paragraphs: [
-        'Ni el hielo ni el calor es claramente mejor para la fascitis plantar, porque ninguno se ha probado lo suficiente como para elegir un ganador. La guía de 2023 para el dolor de talón de la American Physical Therapy Association (la asociación de fisioterapia de Estados Unidos) revisó la investigación sobre los «agentes térmicos», es decir, compresas frías y calientes y similares. Encontró un solo ensayo pequeño y de menor calidad sobre calor y concluyó que una recomendación «no se puede hacer».',
+        '**Ni el hielo ni el calor es claramente mejor para la fascitis plantar**, porque ninguno se ha probado lo suficiente como para elegir un ganador. La guía de 2023 para el dolor de talón de la American Physical Therapy Association (la asociación de fisioterapia de Estados Unidos) revisó la investigación sobre los «agentes térmicos», es decir, compresas frías y calientes y similares. Encontró un solo ensayo pequeño y de menor calidad sobre calor y concluyó que una recomendación «no se puede hacer».',
         'Eso no significa que no sirvan. Significa que son herramientas de alivio, y puedes elegir según cómo sientas el pie en ese momento. La tabla de abajo es una guía práctica, no una regla salida de un ensayo.',
       ],
       table: {
@@ -54,7 +54,7 @@ export const ICE_HEAT_ES: Guide = {
         alt: 'Un pie visto desde el lado interno, con la fascia plantar resaltada como una banda del talón a los dedos.',
       },
       paragraphs: [
-        'La fascitis plantar de larga duración por lo general no es un tejido inflamado como lo es un esguince reciente. El «-itis» del nombre significa inflamación, y por eso tantas páginas te dicen que le pongas hielo. Pero cuando Lemont y colegas analizaron en 2003 tejido de 50\u00A0casos de cirugía por fascitis plantar crónica, encontraron una fascia desgastada, deshilachada y degenerada, y ningún signo de inflamación. Propusieron llamarla fasciosis, es decir, una banda degenerada, no inflamada.',
+        '**La fascitis plantar de larga duración por lo general no es un tejido inflamado como lo es un esguince reciente.** El «-itis» del nombre significa inflamación, y por eso tantas páginas te dicen que le pongas hielo. Pero cuando Lemont y colegas analizaron en 2003 tejido de 50\u00A0casos de cirugía por fascitis plantar crónica, encontraron una fascia desgastada, deshilachada y degenerada, y ningún signo de inflamación. Propusieron llamarla fasciosis, es decir, una banda degenerada, no inflamada.',
         'Ese hallazgo viene con dos matices. Eran los casos más difíciles, tan graves que necesitaron cirugía, así que el dolor de talón en etapas tempranas puede verse distinto. Y el estudio solo describió el tejido. No probó el hielo.',
         'Lo que sí cambia es la razón para poner hielo. Si la fascia está sobre todo desgastada y sobrecargada, el frío no está «apagando un incendio». Adormece el dolor por un rato, lo cual sigue siendo útil. Lo que ayuda a que un tejido desgastado se adapte es la carga gradual: estiramientos y trabajo de fuerza.',
       ],
@@ -64,9 +64,14 @@ export const ICE_HEAT_ES: Guide = {
       h2: '¿El hielo ayuda con la fascitis plantar? Lo que encontraron los ensayos',
       keyFact: 'En un ensayo con 30\u00A0personas, el dolor bajó de 7,7 a 3,5 de 10 con una pelota de tenis congelada más estiramientos, frente a 7,6 a 6,7 con solo estiramientos (Shinde y Patil, 2026).',
       paragraphs: [
-        'El hielo probablemente alivia el dolor de la fascitis plantar por un tiempo corto, pero muy pocos ensayos lo han probado, y ninguno comparó el hielo con no hacer nada. Esto es lo que existe.',
-        'En un ensayo de 2014 con 102\u00A0personas con fascitis plantar de más de seis meses, los dos grupos recibieron 10\u00A0sesiones diarias de 20\u00A0minutos con un aparato de clínica: frío solo, o frío más ultrasonido. Los dos mejoraron, y el grupo combinado salió mejor hasta los 18\u00A0meses (Costantino y colegas). El frío era la comparación, así que el ensayo no puede decir cuánto hizo el frío en sí. Un ensayo de 2023 con 36\u00A0personas tuvo la misma limitación: un grupo de «crioestiramiento», que rodaba el pie sobre una pelota de tenis congelada, mejoró en 7\u00A0días, pero también los dos grupos sin frío (Jadhav y Gurudut).',
+        '**El hielo probablemente alivia el dolor de la fascitis plantar por un tiempo corto**, pero muy pocos ensayos lo han probado, y ninguno comparó el hielo con no hacer nada. Esto es lo que existe:',
+        {
+          list: [
+        'En un ensayo de 2014 con 102\u00A0personas con fascitis plantar de más de seis meses, los dos grupos recibieron 10\u00A0sesiones diarias de 20\u00A0minutos con un aparato de clínica: frío solo, o frío más ultrasonido. Los dos mejoraron, y el grupo combinado salió mejor hasta los 18\u00A0meses (Costantino y colegas). El frío era la comparación, así que el ensayo no puede decir cuánto hizo el frío en sí.',
+        'Un ensayo de 2023 con 36\u00A0personas tuvo la misma limitación: un grupo de «crioestiramiento», que rodaba el pie sobre una pelota de tenis congelada, mejoró en 7\u00A0días, pero también los dos grupos sin frío (Jadhav y Gurudut).',
         'La prueba más directa es pequeña. En un estudio de 2026 con 30\u00A0personas, el grupo que añadió una pelota de tenis congelada a los estiramientos durante dos meses pasó de 7,7 a 3,5 en una escala de dolor de 0 a 10, mientras que el grupo de solo estiramientos pasó de 7,6 a 6,7 (Shinde y Patil). Parece una gran diferencia, pero el artículo no explica con claridad cómo se asignó a las personas a los grupos, y el grupo de la pelota congelada también recibió presión al rodar, así que no se pueden separar el frío y el masaje.',
+          ],
+        },
         'Fuera del pie, el panorama es parecido. Una revisión de 2004 de 22\u00A0ensayos de hielo para lesiones recientes, como los esguinces de tobillo, calificó su calidad promedio en 3,4 de 10 y no encontró un mejor método ni un mejor tiempo para aplicar hielo. La única señal, apenas marginal, favoreció el hielo más ejercicio después de esguinces de tobillo y cirugías (Bleakley y colegas).',
       ],
       sourceNote: 'Costantino 2014: ensayo aleatorizado simple ciego, crioultrasonido frente a crioterapia, dolor en una escala visual analógica. Jadhav 2023: ensayo aleatorizado, 12 por grupo, Numerical Pain Rating Scale y Foot Function Index al día 7. Shinde 2026: 15 por grupo, NPRS y Foot Function Index, asignación descrita como «random sampling technique» (técnica de muestreo aleatorio). Bleakley 2004: puntuación PEDro media de 3,4/10.',
@@ -76,7 +81,8 @@ export const ICE_HEAT_ES: Guide = {
       h2: '¿El calor es bueno para la fascitis plantar?',
       keyFact: 'Una revisión Cochrane de 9\u00A0ensayos con 1\u00A0117\u00A0personas encontró evidencia moderada, a partir de algunos de esos ensayos, de un pequeño beneficio a corto plazo en el dolor con compresas térmicas para el dolor lumbar, y muy poca evidencia para juzgar el frío (French y colegas, 2006).',
       paragraphs: [
-        'El calor está bien para la fascitis plantar si se siente bien, y la idea de que «empeora la inflamación» no tiene ningún ensayo detrás. El único ensayo de calor que encontró la guía de 2023 fue pequeño: 20\u00A0personas con dolor en la planta del pie recibieron al azar un parche de calor o un parche falso sobre puntos gatillo (zonas sensibles dentro del músculo). El dolor bajó en el grupo con calor, pero no en el del parche falso (Petrofsky y colegas, 2020). El parche se dejó puesto unas cuatro horas y el dolor se midió justo después, así que solo habla del alivio a corto plazo.',
+        '**El calor está bien para la fascitis plantar si se siente bien**, y la idea de que «empeora la inflamación» no tiene ningún ensayo detrás.',
+        'El único ensayo de calor que encontró la guía de 2023 fue pequeño: 20\u00A0personas con dolor en la planta del pie recibieron al azar un parche de calor o un parche falso sobre puntos gatillo (zonas sensibles dentro del músculo). El dolor bajó en el grupo con calor, pero no en el del parche falso (Petrofsky y colegas, 2020). El parche se dejó puesto unas cuatro horas y el dolor se midió justo después, así que solo habla del alivio a corto plazo.',
         'La mejor evidencia general sobre el calor viene del dolor de espalda, no de los pies. Una revisión Cochrane (un resumen cuidadoso de ensayos) de 9\u00A0ensayos con 1\u00A0117\u00A0personas encontró evidencia moderada, a partir de algunos de esos ensayos, de que las compresas térmicas dan una baja pequeña y de corto plazo en el dolor lumbar reciente, y de que añadir ejercicio ayudó más. Para el frío solo encontró tres estudios de baja calidad y no sacó conclusiones (French y colegas, 2006).',
         'El calor lleva más sangre a la zona y hace el tejido un poco más flexible. El frío reduce el flujo de sangre y adormece el dolor. Una revisión de 2015 señaló que la mayoría de los consejos sobre los dos se basan en la experiencia, con evidencia limitada de ensayos (Malanga y colegas).',
       ],
@@ -86,8 +92,9 @@ export const ICE_HEAT_ES: Guide = {
       h2: '¿Conviene aplicar calor antes de estirar?',
       keyFact: 'En 36\u00A0estudios con 1\u00A0301\u00A0personas sin lesiones, el calor más estiramiento mejoró el rango de movimiento más que solo estirar (Bleakley y Costello, 2013).',
       paragraphs: [
-        'Calentar el pie antes de estirar es una opción razonable, y tiene más respaldo que ponerle hielo antes de estirar. Una revisión de 2013 de 36\u00A0estudios con 1\u00A0301\u00A0personas sin lesiones encontró que el calor aumentó el rango de movimiento, y que el calor más estiramiento funcionó mejor que solo estirar. Los datos sobre el frío fueron contradictorios. Todos los estudios tenían un alto riesgo de sesgo y ninguno incluyó a personas con dolor de talón, así que tómalo como una idea sensata, no como un plan probado para la fascitis plantar.',
-        'Calentar puede ser sencillo. Un baño caliente, o unos minutos con los pies en agua tibia, antes del estiramiento de la fascia plantar y el estiramiento de pantorrilla. En la mañana, eso sí, no esperes a calentar para estirar. El estiramiento de los primeros pasos se hace antes de que el pie cargue peso, sentado en la orilla de la cama. [Dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) explica esa rutina paso a paso.',
+        '**Calentar el pie antes de estirar es una opción razonable**, y tiene más respaldo que ponerle hielo antes de estirar. Una revisión de 2013 de 36\u00A0estudios con 1\u00A0301\u00A0personas sin lesiones encontró que el calor aumentó el rango de movimiento, y que el calor más estiramiento funcionó mejor que solo estirar. Los datos sobre el frío fueron contradictorios. Todos los estudios tenían un alto riesgo de sesgo y ninguno incluyó a personas con dolor de talón, así que tómalo como una idea sensata, no como un plan probado para la fascitis plantar.',
+        'Calentar puede ser sencillo. Un baño caliente, o unos minutos con los pies en agua tibia, antes del estiramiento de la fascia plantar y el estiramiento de pantorrilla.',
+        'En la mañana, eso sí, no esperes a calentar para estirar. El estiramiento de los primeros pasos se hace antes de que el pie cargue peso, sentado en la orilla de la cama. [Dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/) explica esa rutina paso a paso.',
       ],
       cites: [CITE.bleakleyThermal],
     },
@@ -95,7 +102,15 @@ export const ICE_HEAT_ES: Guide = {
       h2: '¿Los baños de contraste ayudan con la fascitis plantar?',
       paragraphs: [
         'Los baños de contraste, es decir, pasar el pie de agua tibia a agua fría y al revés, no tienen ningún ensayo para la fascitis plantar que hayamos podido encontrar. Una revisión sistemática de 2009 sobre baños de contraste incluyó 10\u00A0estudios en voluntarios sin lesiones y en personas con artritis reumatoide, diabetes o lesiones de pie y tobillo. Encontró que alternar temperaturas puede aumentar el flujo de sangre en la piel, pero no se demostró ninguna relación con una mejor función (Breger Stanton y colegas).',
-        'En internet vas a ver muchas recetas distintas: dos minutos de frío y 30\u00A0segundos de calor, un minuto de frío y tres minutos de calor, terminar siempre con frío. Ninguno de esos tiempos viene de un estudio. Si te gustan los baños de contraste, son de bajo riesgo para la mayoría de las personas con sensibilidad normal en los pies. Solo no esperes más de ellos que del calor o el frío solos.',
+        'En internet vas a ver muchas recetas distintas:',
+        {
+          list: [
+            'Dos minutos de frío y 30\u00A0segundos de calor.',
+            'Un minuto de frío y tres minutos de calor.',
+            'Terminar siempre con frío.',
+          ],
+        },
+        '**Ninguno de esos tiempos viene de un estudio.** Si te gustan los baños de contraste, son de bajo riesgo para la mayoría de las personas con sensibilidad normal en los pies. Solo no esperes más de ellos que del calor o el frío solos.',
       ],
       cites: [CITE.bregerContrast],
     },
@@ -123,7 +138,8 @@ export const ICE_HEAT_ES: Guide = {
       h2: '¿Qué ayuda de verdad con la fascitis plantar a largo plazo?',
       keyFact: 'En un ensayo con 48\u00A0personas, las elevaciones de talón lentas con una toalla bajo los dedos aliviaron el dolor más rápido que solo estirar a los tres meses, y a los doce meses los dos grupos estaban igualados (Rathleff y colegas, 2015).',
       paragraphs: [
-        'La parte del manejo de la fascitis plantar con la evidencia más fuerte es el ejercicio, no la temperatura. La guía de 2023 le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, **A**, y al entrenamiento de fuerza del pie y el tobillo una **B**. En un ensayo de 2003 con 101\u00A0personas, un estiramiento de la fascia plantar ayudó más que solo un estiramiento de pantorrilla después de unos dos meses (DiGiovanni y colegas). En un ensayo de 2015 con 48\u00A0personas, las elevaciones de talón lentas con una toalla bajo los dedos aliviaron el dolor más rápido que solo estirar a los tres meses, aunque a los doce meses los dos grupos estaban más o menos igualados (Rathleff y colegas).',
+        'La parte del manejo de la fascitis plantar con la evidencia más fuerte es el ejercicio, no la temperatura. La guía de 2023 le da al estiramiento de la fascia plantar y de la pantorrilla su grado más alto, **A**, y al entrenamiento de fuerza del pie y el tobillo una **B**.',
+        'En un ensayo de 2003 con 101\u00A0personas, un estiramiento de la fascia plantar ayudó más que solo un estiramiento de pantorrilla después de unos dos meses (DiGiovanni y colegas). En un ensayo de 2015 con 48\u00A0personas, las elevaciones de talón lentas con una toalla bajo los dedos aliviaron el dolor más rápido que solo estirar a los tres meses, aunque a los doce meses los dos grupos estaban más o menos igualados (Rathleff y colegas).',
         'Usa el hielo o el calor alrededor de estos ejercicios: calor antes de estirar, hielo después de un día largo, si alguno te ayuda. Walkito funciona igual: los estiramientos y el trabajo de pantorrilla son el plan, y el masaje con pelota es un paso de recuperación de 60\u00A0segundos, no lo principal. La lista completa está en [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/).',
       ],
       exercises: [

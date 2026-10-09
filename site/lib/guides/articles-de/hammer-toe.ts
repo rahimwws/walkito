@@ -31,14 +31,29 @@ export const HAMMER_TOE_DE: Guide = {
       paragraphs: [
         'Eine Hammerzehe ist eine Beugefehlstellung im proximalen Interphalangealgelenk (dem mittleren Gelenk) einer der kleineren Zehen, am häufigsten der zweiten. Die Zehe knickt in diesem Gelenk nach unten ab, während die Spitze nach unten oder leicht nach oben zeigen kann. Sie gehört zu den häufigsten Fehlstellungen des Vorfußes.',
         'Die Fehlstellung entsteht durch ein Ungleichgewicht zwischen den Muskeln, die die Zehe beugen und strecken. Die äußeren Muskeln, die langen Beuger und Strecker, die vom Unterschenkel durch den Fuß laufen, sind stärker als die kleineren inneren Muskeln im Fuß. Wenn die inneren Muskeln schwächer werden, ziehen die Beuger das mittlere Gelenk nach unten, und die Strecker ziehen die Basis der Zehe im Grundgelenk nach oben.',
-        'Häufige Faktoren sind Schuhe, die die Zehen einengen (schmale Zehenbox, hohe Absätze), eine zweite Zehe, die länger ist als die große Zehe, und Beschwerden wie ein Hallux valgus (Ballenzeh), bei dem die große Zehe die zweite Zehe aus ihrer Position drückt. Auch neuromuskuläre Erkrankungen können sie verursachen.',
+        'Häufige Faktoren sind:',
+        {
+          list: [
+            'Schuhe, die die Zehen einengen (schmale Zehenbox, hohe Absätze).',
+            'Eine zweite Zehe, die länger ist als die große Zehe.',
+            'Beschwerden wie ein Hallux valgus (Ballenzeh), bei dem die große Zehe die zweite Zehe aus ihrer Position drückt.',
+          ],
+        },
+        'Auch neuromuskuläre Erkrankungen können sie verursachen.',
       ],
       cites: [CITE.malhotra],
     },
     {
       h2: 'Was ist der Unterschied zwischen Hammerzehe, Krallenzehe und Klöppelzehe?',
       paragraphs: [
-        'Die drei Namen beschreiben, welche Gelenke gebeugt sind. Eine Hammerzehe ist im mittleren Gelenk (proximales Interphalangealgelenk) gebeugt. Eine Klöppelzehe ist im Endgelenk (distales Interphalangealgelenk) gebeugt, nahe der Zehenspitze. Eine Krallenzehe ist im mittleren und im Endgelenk gebeugt, während die Basis der Zehe (das Grundgelenk) nach oben gestreckt ist.',
+        'Die drei Namen beschreiben, welche Gelenke gebeugt sind:',
+        {
+          list: [
+            'Eine Hammerzehe ist im mittleren Gelenk (proximales Interphalangealgelenk) gebeugt.',
+            'Eine Klöppelzehe ist im Endgelenk (distales Interphalangealgelenk) gebeugt, nahe der Zehenspitze.',
+            'Eine Krallenzehe ist im mittleren und im Endgelenk gebeugt, während die Basis der Zehe (das Grundgelenk) nach oben gestreckt ist.',
+          ],
+        },
         'Krallenzehen sind meist ausgeprägter, betreffen oft mehrere Zehen an beiden Füßen und hängen häufiger mit neuromuskulären Erkrankungen zusammen. Hammerzehen betreffen meist eine einzelne Zehe, am häufigsten die zweite, und hängen häufiger mit Schuhen und der Fußform zusammen.',
         'In der Praxis überschneiden sich die Behandlungen. Breitere Schuhe, Polster und Übungen für die inneren Fußmuskeln gelten für alle drei. Die Unterscheidung ist vor allem wichtig, wenn über eine Operation nachgedacht wird, weil das Vorgehen davon abhängt, welche Gelenke betroffen sind.',
       ],
@@ -48,7 +63,7 @@ export const HAMMER_TOE_DE: Guide = {
       h2: 'Was ist der Unterschied zwischen flexibler und starrer Hammerzehe?',
       keyFact: 'Eine Studie von 2022 mit 20\u00A0älteren Erwachsenen mit Hammer- oder Krallenzehe fand, dass individuell geformte Zehenstützen aus Silikon den Spitzendruck an der Spitze der zweiten Zehe sowohl bei flexiblen als auch bei starren Fällen signifikant senkten (Formosa und Kollegen, 2022).',
       paragraphs: [
-        'Eine flexible Hammerzehe hat im mittleren Gelenk noch Bewegung. Du kannst sie mit der Hand strecken. Muskeln und Sehnen sind verkürzt, aber das Gelenk hat noch keine feste Kontraktur entwickelt. In diesem Stadium haben konservative Maßnahmen am meisten zu bieten.',
+        'Eine flexible Hammerzehe hat im mittleren Gelenk noch Bewegung. Du kannst sie mit der Hand strecken. Muskeln und Sehnen sind verkürzt, aber das Gelenk hat noch keine feste Kontraktur entwickelt. **In diesem Stadium haben konservative Maßnahmen am meisten zu bieten.**',
         'Eine starre Hammerzehe hat im mittleren Gelenk eine feste Kontraktur. Das Gelenk lässt sich nicht mehr strecken. An diesem Punkt können Übungen die Stellung nicht ändern. Das Ziel ist dann, Reibung zu verringern (breitere Schuhe, Zehenpolster) und Hühneraugen, Hornhaut und offene Haut zu vermeiden.',
         'Eine quasi-experimentelle Studie von 2022 mit 20\u00A0älteren Erwachsenen mit Hammer- oder Krallenzehen fand, dass individuell geformte Zehenstützen aus Silikon den Spitzendruck an der Spitze der zweiten Zehe sowohl bei flexiblen als auch bei starren Fällen signifikant senkten. Am Grundgelenk war die Druckminderung nur in der Gruppe mit starren Zehen signifikant.',
       ],
@@ -57,7 +72,7 @@ export const HAMMER_TOE_DE: Guide = {
     {
       h2: 'Helfen Übungen bei Hammerzehen?',
       paragraphs: [
-        'Die ehrliche Antwort: Es gibt keine randomisierten kontrollierten Studien, die Übungen speziell bei Hammerzehen getestet haben. Die häufig empfohlenen Übungen wie Handtuchgreifen, Zehenspreizen und Dehnen mit der Hand beruhen auf der Idee, dass die Kräftigung der inneren Fußmuskeln und der Erhalt der Gelenkbeweglichkeit helfen können, dass eine flexible Fehlstellung nicht starr wird.',
+        'Die ehrliche Antwort: **Es gibt keine randomisierten kontrollierten Studien, die Übungen speziell bei Hammerzehen getestet haben.** Die häufig empfohlenen Übungen wie Handtuchgreifen, Zehenspreizen und Dehnen mit der Hand beruhen auf der Idee, dass die Kräftigung der inneren Fußmuskeln und der Erhalt der Gelenkbeweglichkeit helfen können, dass eine flexible Fehlstellung nicht starr wird.',
         'Diese Logik ist nachvollziehbar. Die Fehlstellung entsteht durch ein muskuläres Ungleichgewicht: schwache innere Muskeln und verhältnismäßig stärkere äußere Muskeln. Übungen für die inneren Muskeln können einen Teil dieses Gleichgewichts wiederherstellen. Aber ohne direkte Studien wissen wir nicht, wie viel sie bewirken oder ob sie ein Fortschreiten tatsächlich verhindern können.',
         'Aus Studien zu anderen Vorfußbeschwerden wissen wir, dass Übungen für die inneren Fußmuskeln wie der kurze Fuß, Zehenspreizen und Handtuchgreifen die richtigen Muskeln aktivieren. Eine MRT-Studie von Gooding und Kollegen (2016) bestätigte, dass die Kurzer-Fuß-Übung und Zehenspreizen (Toe-Spread-Out) gezielt die inneren Fußmuskeln aktivieren. Ob diese Aktivierung speziell bei Hammerzehen zu besseren Ergebnissen führt, wurde nicht getestet.',
       ],
@@ -117,7 +132,14 @@ export const HAMMER_TOE_DE: Guide = {
     {
       h2: 'Machen die Schuhe einen Unterschied?',
       paragraphs: [
-        'Schuhe sind der am häufigsten empfohlene konservative Ansatz bei Hammerzehen. Eine Übersichtsarbeit zur Behandlung von Fehlstellungen der kleineren Zehen in EFORT Open Reviews (Malhotra und Kollegen, 2016) stellte angepasste Schuhe an die erste Stelle der konservativen Behandlung: eine breite Zehenbox, damit die Zehen Platz haben, eine hohe Zehenbox, damit das gebeugte Gelenk nicht reibt, und keine hohen Absätze.',
+        '**Schuhe sind der am häufigsten empfohlene konservative Ansatz bei Hammerzehen.** Eine Übersichtsarbeit zur Behandlung von Fehlstellungen der kleineren Zehen in EFORT Open Reviews (Malhotra und Kollegen, 2016) stellte angepasste Schuhe an die erste Stelle der konservativen Behandlung:',
+        {
+          list: [
+            'Eine breite Zehenbox, damit die Zehen Platz haben.',
+            'Eine hohe Zehenbox, damit das gebeugte Gelenk nicht reibt.',
+            'Keine hohen Absätze.',
+          ],
+        },
         'Schmale Schuhe drücken die Zehen zusammen und pressen das gebeugte Gelenk gegen die Oberseite des Schuhs, was Hühneraugen und Hornhaut verursacht. Hohe Absätze lassen den Fuß nach vorn rutschen und quetschen die Zehen vorn zusammen. Andere Schuhe strecken keine starre Hammerzehe, aber sie verringern die tägliche Reibung und den Druck, die den größten Teil des Schmerzes verursachen.',
         'Zehenpolster, Gelschläuche und Zehenstützen aus Silikon können das gebeugte Gelenk polstern und den Druck an der Zehenspitze verteilen. Die Studie Formosa 2022 zeigte, dass geformte Zehenstützen aus Silikon den Spitzendruck an der Spitze der zweiten Zehe sowohl bei flexiblen als auch bei starren Fehlstellungen senkten.',
       ],
@@ -126,7 +148,7 @@ export const HAMMER_TOE_DE: Guide = {
     {
       h2: 'Lässt sich eine Hammerzehe ohne Operation rückgängig machen?',
       paragraphs: [
-        'Wenn die Hammerzehe noch flexibel ist, können konservative Maßnahmen wie Übungen, Dehnen, breitere Schuhe und Tapen ein Fortschreiten vielleicht verhindern und den Komfort verbessern. Die betroffene Zehe an die Nachbarzehe zu tapen, kann sie über den Tag sanft in einer neutraleren Stellung halten. Aber für keine dieser Maßnahmen wurde gezeigt, dass sie die Fehlstellung dauerhaft korrigiert.',
+        'Wenn die Hammerzehe noch flexibel ist, können konservative Maßnahmen wie Übungen, Dehnen, breitere Schuhe und Tapen ein Fortschreiten vielleicht verhindern und den Komfort verbessern. Die betroffene Zehe an die Nachbarzehe zu tapen, kann sie über den Tag sanft in einer neutraleren Stellung halten. **Aber für keine dieser Maßnahmen wurde gezeigt, dass sie die Fehlstellung dauerhaft korrigiert.**',
         'Sobald eine Hammerzehe starr ist, ist das Gelenk eingesteift und lässt sich nicht mehr strecken. An diesem Punkt ändern Übungen und Dehnen die Form nicht. Es geht dann darum, die Haut vor Reibung zu schützen und den Druck mit Polstern und Schuhen zu steuern.',
         'Wie schnell eine flexible Hammerzehe starr wird, ist unterschiedlich. Bei manchen bleibt sie jahrelang flexibel. Schuhe mit breiter Zehenbox zu tragen und die Beweglichkeit der Zehen mit täglichem Dehnen und Übungen zu erhalten, sind die am häufigsten empfohlenen Strategien, um das Fortschreiten zu bremsen.',
       ],
@@ -136,7 +158,14 @@ export const HAMMER_TOE_DE: Guide = {
       keyFact: 'Eine Übersichtsarbeit von 2016 zitierte Daten aus einem schwedischen Register, nach denen Eingriffe an den kleineren Zehen, darunter Operationen bei Hammer- und Krallenzehen, fast ein Viertel aller Vorfußoperationen ausmachten (Malhotra und Kollegen, 2016).',
       paragraphs: [
         'Über eine Operation wird nachgedacht, wenn eine starre Hammerzehe trotz konservativer Behandlung anhaltende Schmerzen, offene Haut oder Probleme beim Tragen von Schuhen verursacht. Die Entscheidung beruht auf Beschwerden und Einschränkungen, nicht auf dem Aussehen der Zehe.',
-        'Häufige Eingriffe sind die Arthroplastik des proximalen Interphalangealgelenks (ein kleines Stück Knochen wird entfernt, um das Gelenk zu strecken) und die Arthrodese (das Gelenk wird in gestreckter Stellung versteift). Es gibt neuere minimalinvasive Techniken, aber Langzeitdaten zu den Ergebnissen werden noch gesammelt.',
+        'Häufige Eingriffe sind:',
+        {
+          list: [
+            'Die Arthroplastik des proximalen Interphalangealgelenks (ein kleines Stück Knochen wird entfernt, um das Gelenk zu strecken).',
+            'Die Arthrodese (das Gelenk wird in gestreckter Stellung versteift).',
+          ],
+        },
+        'Es gibt neuere minimalinvasive Techniken, aber Langzeitdaten zu den Ergebnissen werden noch gesammelt.',
         'Die Erholung nach einer Operation an der Hammerzehe dauert meist drei bis sechs Wochen in einem Verbandschuh. Etwas Steifigkeit in der Zehe ist zu erwarten. Eine Übersichtsarbeit von 2016 zitierte Daten aus einem schwedischen Register, nach denen Eingriffe an den kleineren Zehen, darunter Hammerzehe, Krallenzehe und verwandte Fehlstellungen, fast ein Viertel aller Vorfußoperationen ausmachten.',
       ],
       cites: [CITE.malhotra],

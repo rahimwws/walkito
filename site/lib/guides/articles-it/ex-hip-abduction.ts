@@ -37,8 +37,9 @@ export const EX_HIP_ABDUCTION_IT: Guide = {
     {
       h2: 'Come si fa l’abduzione dell’anca in piedi con l’elastico?',
       paragraphs: [
-        'Stai in piedi con un elastico ad anello intorno a entrambe le caviglie o appena sopra le ginocchia. Tieniti a un muro o a una sedia per l’equilibrio. Sposta il peso sulla gamba d’appoggio. Solleva l’altra gamba dritta di lato, tenendo le dita puntate in avanti e il busto dritto. Non inclinarti dal lato opposto. Scendi piano e ripeti.',
-        'Spingi attraverso il tallone della gamba che lavora, non attraverso le dita. Il movimento avviene all’anca, non in vita. Non serve sollevare molto. Circa 30-45\u00A0gradi da terra bastano se la tecnica resta pulita. Un sollevamento più alto con il busto che si inclina di lato fa lavorare meno il medio gluteo.',
+        'Stai in piedi con un elastico ad anello intorno a entrambe le caviglie o appena sopra le ginocchia. Tieniti a un muro o a una sedia per l’equilibrio. Sposta il peso sulla gamba d’appoggio.',
+        'Solleva l’altra gamba dritta di lato, tenendo le dita puntate in avanti e il busto dritto. Non inclinarti dal lato opposto. Scendi piano e ripeti.',
+        'Spingi attraverso il tallone della gamba che lavora, non attraverso le dita. **Il movimento avviene all’anca, non in vita.** Non serve sollevare molto. Circa 30-45\u00A0gradi da terra bastano se la tecnica resta pulita. Un sollevamento più alto con il busto che si inclina di lato fa lavorare meno il medio gluteo.',
       ],
       exercises: [
         {
@@ -60,8 +61,15 @@ export const EX_HIP_ABDUCTION_IT: Guide = {
       h2: 'Come influisce l’anca sul piede e sull’arco?',
       keyFact: 'Uno studio del 2013 su circa 1.900\u00A0adulti del Framingham Foot Study non ha trovato un legame tra piede piatto e mal di schiena, ma un piccolo legame tra la rotazione del piede verso l’interno e il mal di schiena nelle donne (Menz e colleghi, 2013).',
       paragraphs: [
-        'Il legame passa per una catena biomeccanica: anca, ginocchio, caviglia, piede. Quando il medio gluteo non riesce a tenere il bacino orizzontale mentre stai su una gamba, la coscia ruota verso l’interno. Il ginocchio la segue e cede verso la linea centrale. Questa rotazione costringe il piede a pronare, ruotando la caviglia verso l’interno e appiattendo l’arco.',
-        'Per questo molte persone con piede piatto o dolore all’arco hanno anche le anche deboli. L’arco non sta cedendo da solo. Viene sovraccaricato dall’alto. Rinforzare l’anca riduce questo carico che arriva dall’alto.',
+        'Il legame passa per una catena biomeccanica: anca, ginocchio, caviglia, piede. Quando il medio gluteo non riesce a tenere il bacino orizzontale mentre stai su una gamba:',
+        {
+          list: [
+            'La coscia ruota verso l’interno.',
+            'Il ginocchio la segue e cede verso la linea centrale.',
+            'Questa rotazione costringe il piede a pronare, ruotando la caviglia verso l’interno e appiattendo l’arco.',
+          ],
+        },
+        'Per questo molte persone con piede piatto o dolore all’arco hanno anche le anche deboli. L’arco non sta cedendo da solo. **Viene sovraccaricato dall’alto.** Rinforzare l’anca riduce questo carico che arriva dall’alto.',
         'Uno studio trasversale del 2013 del Framingham Foot Study ha esaminato circa 1.900\u00A0adulti della popolazione generale. La postura a piede piatto in sé non era legata al mal di schiena, ma un piede che ruotava verso l’interno durante il cammino mostrava un piccolo legame con il mal di schiena nelle donne, segno che la catena piede-anca-schiena può funzionare in entrambe le direzioni.',
         'Lo studio sul piede piatto di Brijwasi e colleghi (2023) includeva il rinforzo dell’anca insieme agli esercizi del piede corto, al lavoro sulla caviglia e agli allungamenti. Il programma combinato ha migliorato la forma dell’arco in sei settimane. Lo studio non ha separato quanto abbia contribuito da solo il rinforzo dell’anca, ma la sua inclusione riflette il ragionamento biomeccanico.',
       ],
@@ -78,10 +86,14 @@ export const EX_HIP_ABDUCTION_IT: Guide = {
     {
       h2: 'Quali sono gli errori più comuni nell’abduzione dell’anca in piedi?',
       paragraphs: [
-        'Inclinare il busto dal lato opposto è l’errore più comune. Quando ti inclini, il corpo usa lo slancio e la flessione laterale invece del medio gluteo. Resta dritto. Un sollevamento più piccolo con il busto dritto è meglio di uno alto con il busto inclinato.',
-        'Ruotare il piede verso l’esterno, con le dita che puntano al soffitto, è un altro errore. Così il lavoro passa ai flessori dell’anca e al tensore della fascia lata invece che al medio gluteo. Tieni le dita puntate in avanti o un po’ verso il basso.',
-        'Far oscillare la gamba è un terzo problema. L’esercizio deve essere lento e controllato, soprattutto in discesa. La fase di discesa (eccentrica) è quella in cui avviene buona parte del rinforzo. Se la gamba cade veloce, il muscolo non sta lavorando.',
-        'Infine, se l’anca della gamba d’appoggio si abbassa, vuol dire che l’elastico è troppo duro o che il medio gluteo dal lato d’appoggio si sta affaticando. Il bacino deve restare orizzontale per tutto il tempo. Usa un elastico più leggero o riposa tra una serie e l’altra.',
+        {
+          list: [
+            '**Inclinare il busto dal lato opposto** è l’errore più comune. Quando ti inclini, il corpo usa lo slancio e la flessione laterale invece del medio gluteo. Resta dritto. Un sollevamento più piccolo con il busto dritto è meglio di uno alto con il busto inclinato.',
+            '**Ruotare il piede verso l’esterno**, con le dita che puntano al soffitto, è un altro errore. Così il lavoro passa ai flessori dell’anca e al tensore della fascia lata invece che al medio gluteo. Tieni le dita puntate in avanti o un po’ verso il basso.',
+            '**Far oscillare la gamba** è un terzo problema. L’esercizio deve essere lento e controllato, soprattutto in discesa. La fase di discesa (eccentrica) è quella in cui avviene buona parte del rinforzo. Se la gamba cade veloce, il muscolo non sta lavorando.',
+            '**Infine, se l’anca della gamba d’appoggio si abbassa**, vuol dire che l’elastico è troppo duro o che il medio gluteo dal lato d’appoggio si sta affaticando. Il bacino deve restare orizzontale per tutto il tempo. Usa un elastico più leggero o riposa tra una serie e l’altra.',
+          ],
+        },
       ],
     },
     {
@@ -89,8 +101,16 @@ export const EX_HIP_ABDUCTION_IT: Guide = {
       paragraphs: [
         'Il ragionamento biomeccanico a favore dell’abduzione dell’anca nei programmi per il piede è ben consolidato: abduttori dell’anca deboli lasciano cedere il ginocchio verso l’interno, aumentando la pronazione del piede e il carico sull’arco. Diversi studi osservazionali confermano il legame tra debolezza dell’anca e problemi di allineamento dell’arto inferiore.',
         'Per gli esiti clinici, le prove più forti vengono dai programmi combinati. Lo studio del 2023 di Brijwasi e colleghi includeva il rinforzo dell’anca in un programma di esercizi di sei settimane per 52\u00A0persone con piede piatto flessibile. Il programma ha migliorato la forma dell’arco. Il rinforzo dell’anca non è stato isolato in un suo studio sul piede piatto o sulla fascite plantare.',
-        'Uno studio randomizzato del 2024 su 45\u00A0donne con piede piatto flessibile ha confrontato per sei settimane gli esercizi del piede corto, un programma di esercizi combinato e il piede corto più l’abduzione isometrica dell’anca. Tutti e tre i gruppi hanno migliorato il navicular drop (quanto l’arco cede sotto il peso del corpo). Il gruppo che aggiungeva l’abduzione isometrica dell’anca è migliorato di più, ma il suo navicular drop non era significativamente migliore rispetto al programma combinato; l’oscillazione laterale sì (Zarali e colleghi, 2024). Questo suggerisce che il lavoro sull’anca possa aggiungere qualcosa agli esercizi per il piede, in base a un solo piccolo studio.',
-        'Le prove sostengono l’abduzione dell’anca come parte di un programma più ampio per il piede. Non è un esercizio a sé per il dolore all’arco, ma copre un vuoto che gli esercizi solo per il piede lasciano aperto. Pagine collegate: [esercizi per il piede piatto](/it/esercizi-piede-piatto/), [inversione della caviglia con elastico](/it/esercizi/inversione-caviglia-elastico/), [esercizio del piede corto](/it/esercizi/piede-corto/).',
+        'Uno studio randomizzato del 2024 su 45\u00A0donne con piede piatto flessibile ha confrontato per sei settimane:',
+        {
+          list: [
+            'Gli esercizi del piede corto.',
+            'Un programma di esercizi combinato.',
+            'Il piede corto più l’abduzione isometrica dell’anca.',
+          ],
+        },
+        'Tutti e tre i gruppi hanno migliorato il navicular drop (quanto l’arco cede sotto il peso del corpo). Il gruppo che aggiungeva l’abduzione isometrica dell’anca è migliorato di più, ma il suo navicular drop non era significativamente migliore rispetto al programma combinato; l’oscillazione laterale sì (Zarali e colleghi, 2024). Questo suggerisce che il lavoro sull’anca possa aggiungere qualcosa agli esercizi per il piede, in base a un solo piccolo studio.',
+        '**Le prove sostengono l’abduzione dell’anca come parte di un programma più ampio per il piede.** Non è un esercizio a sé per il dolore all’arco, ma copre un vuoto che gli esercizi solo per il piede lasciano aperto. Pagine collegate: [esercizi per il piede piatto](/it/esercizi-piede-piatto/), [inversione della caviglia con elastico](/it/esercizi/inversione-caviglia-elastico/), [esercizio del piede corto](/it/esercizi/piede-corto/).',
       ],
       cites: [CITE.zarali, CITE.brijwasi, CITE.cheng],
     },

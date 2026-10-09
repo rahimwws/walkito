@@ -36,7 +36,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
         'El arco del pie, llamado arco longitudinal medial, lo forman los huesos, ligamentos y tendones de la parte interna del pie. En un pie plano, este arco queda bajo o desaparece cuando te paras. El término médico es pes planus.',
         'El pie plano es común. Una revisión sistemática de 2023 juntó 12\u00A0estudios de población con unas 16\u00A0000\u00A0personas y encontró una frecuencia general del 15,6\u00A0%. Solo en adultos, las cifras van de alrededor del 5 al 27\u00A0%, según la población y el método de medición. Un IMC más alto y una edad mayor se asocian con más casos.',
         '«Arcos caídos» es un nombre común para el pie plano. Casi siempre las dos frases significan lo mismo. A veces «arcos caídos» se usa para un arco que bajó en la edad adulta, que tiene otra causa y se explica más abajo.',
-        'Tener pie plano no significa que algo esté mal. Mucha gente con arcos bajos camina, corre y pasa horas de pie sin ningún síntoma. Las preguntas que importan son si el pie plano es flexible o rígido, y si te causa dolor.',
+        '**Tener pie plano no significa que algo esté mal.** Mucha gente con arcos bajos camina, corre y pasa horas de pie sin ningún síntoma. Las preguntas que importan son si el pie plano es flexible o rígido, y si te causa dolor.',
       ],
       cites: [CITE.salinasTorres],
     },
@@ -46,7 +46,8 @@ export const HUB_FLAT_FEET_ES: Guide = {
       paragraphs: [
         'Un pie plano flexible es el que se aplana con tu peso pero recupera el arco cuando el pie no toca el piso. La mayoría de los pies planos son de este tipo. Un pie plano rígido sigue plano estés parado sobre él o no.',
         'Una prueba rápida: siéntate y mira la parte interna del pie. Si ves un arco, párate sobre los dos pies. Si el arco desaparece al pararte pero estaba ahí sentado, el pie plano es flexible. Otra forma: sube en puntas. Si el arco aparece al subir, es flexible.',
-        'La diferencia importa porque el ejercicio puede influir en un arco flexible. En un ensayo con 52\u00A0personas con pie plano flexible, seis semanas de ejercicios de pie corto, trabajo de tobillo, fortalecimiento de cadera y estiramientos cambiaron dos medidas de la forma del arco más que en un grupo de control. Un pie plano rígido es estructural (muchas veces por una coalición tarsiana, un puente de hueso entre dos huesos del pie) y el ejercicio no va a cambiar su forma. Un pie plano rígido que duele por lo general necesita que lo revise un profesional de la salud.',
+        '**La diferencia importa porque el ejercicio puede influir en un arco flexible.** En un ensayo con 52\u00A0personas con pie plano flexible, seis semanas de ejercicios de pie corto, trabajo de tobillo, fortalecimiento de cadera y estiramientos cambiaron dos medidas de la forma del arco más que en un grupo de control.',
+        'Un pie plano rígido es estructural (muchas veces por una coalición tarsiana, un puente de hueso entre dos huesos del pie) y el ejercicio no va a cambiar su forma. Un pie plano rígido que duele por lo general necesita que lo revise un profesional de la salud.',
       ],
       cites: [CITE.brijwasi],
     },
@@ -54,9 +55,17 @@ export const HUB_FLAT_FEET_ES: Guide = {
       h2: '¿El pie plano es realmente un problema?',
       keyFact: 'El Framingham Foot Study, con unos 1900 adultos, no encontró relación entre el pie plano y el dolor de espalda, aunque una marcha en pronación mostró una relación pequeña solo en mujeres (Menz y colegas, 2013).',
       paragraphs: [
-        'Para la mayoría de las personas, no. Un pie plano flexible que no duele y no te limita es una variación normal en la forma del pie, no algo que haya que arreglar.',
-        'La duda más común es el dolor de espalda. El estudio más grande sobre el tema, el Framingham Foot Study, analizó a unos 1900\u00A0adultos. No encontró relación entre el pie plano y el dolor de espalda baja. En mujeres, un pie que se iba hacia adentro al caminar (marcha en pronación) mostró una relación pequeña con el dolor de espalda, pero la forma del pie en sí, plano o no, no. En hombres, ni la forma del pie ni la marcha se relacionaron con el dolor de espalda.',
-        'El pie plano puede cambiar cómo viaja la carga por la pierna. Algunos corredores con pies muy pronados desarrollan lesiones por sobrecarga en el tobillo o la rodilla, pero la relación entre la forma del pie y las lesiones es más débil de lo que mucha gente cree. Una revisión de 2024 sobre el entrenamiento de pie corto en pie plano no encontró un cambio claro en la postura del pie en general, y solo un cambio en una medida de cuánto baja el arco en programas de más de seis semanas. El ensayo y la revisión midieron la forma del arco, no el dolor ni las lesiones.',
+        '**Para la mayoría de las personas, no.** Un pie plano flexible que no duele y no te limita es una variación normal en la forma del pie, no algo que haya que arreglar.',
+        'La duda más común es el dolor de espalda. El estudio más grande sobre el tema, el Framingham Foot Study, analizó a unos 1900\u00A0adultos. Lo que encontró:',
+        {
+          list: [
+            '**En general:** no encontró relación entre el pie plano y el dolor de espalda baja.',
+            '**En mujeres:** un pie que se iba hacia adentro al caminar (marcha en pronación) mostró una relación pequeña con el dolor de espalda, pero la forma del pie en sí, plano o no, no.',
+            '**En hombres:** ni la forma del pie ni la marcha se relacionaron con el dolor de espalda.',
+          ],
+        },
+        'El pie plano puede cambiar cómo viaja la carga por la pierna. Algunos corredores con pies muy pronados desarrollan lesiones por sobrecarga en el tobillo o la rodilla, pero la relación entre la forma del pie y las lesiones es más débil de lo que mucha gente cree.',
+        'Una revisión de 2024 sobre el entrenamiento de pie corto en pie plano no encontró un cambio claro en la postura del pie en general, y solo un cambio en una medida de cuánto baja el arco en programas de más de seis semanas. El ensayo y la revisión midieron la forma del arco, no el dolor ni las lesiones.',
         'Los casos en los que el pie plano sí importa se explican abajo: el pie plano adquirido del adulto por un tendón que se debilita, y el pie plano que viene con dolor, hinchazón o un cambio repentino en la altura del arco.',
       ],
       cites: [CITE.menz, CITE.cheng],
@@ -65,10 +74,19 @@ export const HUB_FLAT_FEET_ES: Guide = {
       h2: '¿Qué es el pie plano adquirido del adulto?',
       paragraphs: [
         'El pie plano adquirido del adulto es cuando un arco que era normal se hunde en la edad adulta, casi siempre porque el tendón tibial posterior (el tendón que sostiene el arco desde la parte interna del tobillo) se debilita y ya no puede hacer su trabajo. El nombre clínico del problema del tendón es disfunción del tendón tibial posterior.',
-        'El tendón tibial posterior pasa por detrás del hueso interno del tobillo y se une a los huesos que forman el arco. Cuando se estira o se rompe, el arco baja, el talón se inclina hacia afuera y la parte delantera del pie puede empezar a apuntar hacia afuera. El dolor y la hinchazón en la parte interna del tobillo son señales tempranas comunes. La prueba de elevación de talón a una pierna, en la que intentas pararte en un pie y subir en puntas, puede costar o doler del lado afectado.',
-        'Una revisión en The Open Orthopaedics Journal describe cuatro etapas: en la etapa I hay inflamación del tendón pero no hay deformidad visible, en la etapa II hay un pie plano flexible que todavía se puede corregir con la mano, en la etapa III la deformidad es rígida y no se corrige con la mano, y en la etapa IV además hay cambios en la articulación del tobillo.',
+        'El tendón tibial posterior pasa por detrás del hueso interno del tobillo y se une a los huesos que forman el arco. Cuando se estira o se rompe, el arco baja, el talón se inclina hacia afuera y la parte delantera del pie puede empezar a apuntar hacia afuera.',
+        'El dolor y la hinchazón en la parte interna del tobillo son señales tempranas comunes. La prueba de elevación de talón a una pierna, en la que intentas pararte en un pie y subir en puntas, puede costar o doler del lado afectado.',
+        'Una revisión en The Open Orthopaedics Journal describe cuatro etapas:',
+        {
+          list: [
+            '**Etapa I:** hay inflamación del tendón pero no hay deformidad visible.',
+            '**Etapa II:** hay un pie plano flexible que todavía se puede corregir con la mano.',
+            '**Etapa III:** la deformidad es rígida y no se corrige con la mano.',
+            '**Etapa IV:** además hay cambios en la articulación del tobillo.',
+          ],
+        },
         'Una revisión sistemática sobre el ejercicio para la disfunción del tendón tibial posterior encontró poca evidencia de ensayos aleatorizados. La revisión señaló que las guías clínicas recomiendan un manejo sin cirugía, con ejercicio, plantillas ortopédicas y cambios en la actividad, para las primeras etapas (I y II), pero hay pocos ensayos de alta calidad. Las etapas avanzadas muchas veces necesitan la evaluación de un profesional de la salud y pueden requerir una férula o cirugía.',
-        'Si un arco se te bajó de adulto, con dolor o hinchazón en la parte interna del tobillo, consulta a un profesional de la salud antes de empezar un programa de ejercicio. No es lo mismo que un pie plano flexible de toda la vida.',
+        'Si un arco se te bajó de adulto, con dolor o hinchazón en la parte interna del tobillo, **consulta a un profesional de la salud antes de empezar un programa de ejercicio.** No es lo mismo que un pie plano flexible de toda la vida.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
@@ -91,8 +109,9 @@ export const HUB_FLAT_FEET_ES: Guide = {
       h2: '¿Los zapatos y las plantillas ayudan con el pie plano?',
       paragraphs: [
         'Un zapato con buen soporte, con una suela intermedia firme y algo de soporte para el arco, puede hacer más cómodo estar de pie y caminar si tienes pie plano. No cambia el arco con el tiempo, pero reduce el trabajo que tienen que hacer los músculos del arco durante el día.',
-        'Las plantillas para el arco que venden en tiendas son fáciles de conseguir y baratas. Las plantillas ortopédicas a medida, hechas con un molde de tu pie, cuestan más y a veces se recomiendan para la disfunción del tendón tibial posterior. La evidencia sobre plantillas para el pie plano en sí es más escasa de lo que mucha gente cree. Para la fascitis plantar, la guía clínica de 2023 para el dolor de talón recomienda no usar plantillas solas como enfoque a corto plazo (una B en contra), pero le da una C a un tratamiento combinado que incluye plantillas.',
-        'Si tu pie plano no duele, no necesitas zapatos especiales. Si estar de pie o caminar te hace doler el arco o el tobillo, un zapato con suela firme y un soporte de arco suave es un primer paso razonable, y vale la pena probarlo antes de gastar más en plantillas a medida. Los zapatos con suela muy plana y sin soporte (sandalias delgadas, tenis gastados) suelen empeorar el cansancio del arco en los días largos.',
+        'Las plantillas para el arco que venden en tiendas son fáciles de conseguir y baratas. Las plantillas ortopédicas a medida, hechas con un molde de tu pie, cuestan más y a veces se recomiendan para la disfunción del tendón tibial posterior.',
+        'La evidencia sobre plantillas para el pie plano en sí es más escasa de lo que mucha gente cree. Para la fascitis plantar, la guía clínica de 2023 para el dolor de talón recomienda no usar plantillas solas como enfoque a corto plazo (una B en contra), pero le da una C a un tratamiento combinado que incluye plantillas.',
+        '**Si tu pie plano no duele, no necesitas zapatos especiales.** Si estar de pie o caminar te hace doler el arco o el tobillo, un zapato con suela firme y un soporte de arco suave es un primer paso razonable, y vale la pena probarlo antes de gastar más en plantillas a medida. Los zapatos con suela muy plana y sin soporte (sandalias delgadas, tenis gastados) suelen empeorar el cansancio del arco en los días largos.',
       ],
       cites: [CITE.guideline],
     },
@@ -100,7 +119,7 @@ export const HUB_FLAT_FEET_ES: Guide = {
       h2: '¿Qué ejercicios ayudan con el pie plano?',
       paragraphs: [
         'Los ejercicios para el pie plano se enfocan en los músculos que sostienen el arco desde abajo (los músculos intrínsecos del pie) y en los músculos más arriba que controlan cómo apoya el pie (la pantorrilla, la cadera). La mejor evidencia hasta ahora viene de un ensayo con 52\u00A0personas con pie plano flexible, en el que seis semanas de ejercicios combinados cambiaron la forma del arco más que en un grupo de control. Ese ensayo incluyó pie corto, ejercicios de tobillo, fortalecimiento de cadera y estiramientos, hechos juntos.',
-        'Una revisión de 2024 sobre el pie corto por sí solo fue menos alentadora: no encontró un cambio claro en general, y solo una mejora en una medida del arco en programas de más de seis semanas. Esto sugiere que un programa combinado podría funcionar mejor que un solo ejercicio, y que la paciencia importa.',
+        'Una revisión de 2024 sobre el pie corto por sí solo fue menos alentadora: no encontró un cambio claro en general, y solo una mejora en una medida del arco en programas de más de seis semanas. Esto sugiere que **un programa combinado podría funcionar mejor que un solo ejercicio, y que la paciencia importa.**',
         'En [ejercicios para pie plano](/es/ejercicios-pie-plano/) está la lista completa, con dosis, qué debes sentir en cada uno y la evidencia detrás. Walkito arma un plan semanal en torno a una meta de mantener el arco: empieza con pie corto sentado, pasa a las versiones de pie y a una pierna, y después suma la banda elástica y el fortalecimiento de cadera. Cada ejercicio tiene su propia página:',
       ],
       bullets: [

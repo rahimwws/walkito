@@ -77,7 +77,10 @@ export default function Support() {
           Walkito reads steps, walking speed, walking asymmetry, flights climbed,
           heart rate, resting heart rate, active energy, sleep and workouts from
           Apple Health, and writes the sessions you finish back. Every one of
-          those is optional. These readings stay on your phone and are never
+          those is optional.
+        </p>
+        <p>
+          These readings stay on your phone and are never
           uploaded or saved to your account. Turn any of them off in Settings →
           Apps → Health → Data Access &amp; Devices → Walkito and the parts that
           needed it simply go quiet. The plan still works.
@@ -119,7 +122,10 @@ export default function Support() {
           In the app, go to <b>Profile → Delete account</b>. That deletes your
           account on our server with everything saved to it (your plan,
           check-ins, test results, sessions, email and invite code) and clears
-          the phone. It cannot be undone. Deleting the app on its own removes
+          the phone. It cannot be undone.
+        </p>
+        <p>
+          Deleting the app on its own removes
           only the copy on the phone: your account stays and comes back when you
           sign in again. You can also write to {mail} and we will delete it for
           you.

@@ -31,8 +31,9 @@ export const FLAT_FEET_KIDS_FR: Guide = {
       figure: { id: 'arches', caption: 'Les mêmes os du pied avec un pied plat, une voûte normale et une voûte haute, vus du côté intérieur.', alt: 'Trois pieds vus du côté intérieur sur un sol plat\u00A0: un pied plat dont la voûte repose au sol, une voûte normale avec un petit espace dessous et une voûte haute avec un grand espace sous le milieu du pied.' },
       paragraphs: [
         'Les pieds plats sont normaux chez les bébés et les tout-petits, et fréquents pendant la petite enfance. Le pied d’un jeune enfant a un coussinet de graisse sous la voûte, et ses ligaments (les bandes qui relient les os entre eux) sont lâches et souples. Quand l’enfant est debout, la voûte s’abaisse vers le sol. C’est normal pour un jeune pied.',
-        'Les chiffres sont clairs. Dans une étude de 2006 menée à Vienne, des chercheurs ont scanné les pieds de 835\u00A0enfants de 3 à 6\u00A0ans. Au total, 44\u00A0% avaient des pieds plats souples. Moins de 1\u00A0% avaient un pied plat qui posait un vrai problème médical. Un enfant sur dix portait déjà des semelles de soutien de la voûte, et les auteurs ont estimé que plus de 90\u00A0% d’entre elles n’étaient pas nécessaires. Une enquête plus ancienne auprès de 441\u00A0personnes de 1 à 80\u00A0ans arrivait à la même conclusion\u00A0: les pieds plats sont habituels chez le nourrisson, fréquents chez l’enfant, et restent dans les limites de la normale chez l’adulte.',
-        'Donc si votre enfant de 2 ou 4\u00A0ans a les pieds plats et court partout sans problème, c’est exactement ce qu’on s’attend à voir.',
+        'Les chiffres sont clairs. Dans une étude de 2006 menée à Vienne, des chercheurs ont scanné les pieds de 835\u00A0enfants de 3 à 6\u00A0ans. Au total, 44\u00A0% avaient des pieds plats souples. Moins de 1\u00A0% avaient un pied plat qui posait un vrai problème médical.',
+        'Un enfant sur dix portait déjà des semelles de soutien de la voûte, et les auteurs ont estimé que plus de 90\u00A0% d’entre elles n’étaient pas nécessaires. Une enquête plus ancienne auprès de 441\u00A0personnes de 1 à 80\u00A0ans arrivait à la même conclusion\u00A0: les pieds plats sont habituels chez le nourrisson, fréquents chez l’enfant, et restent dans les limites de la normale chez l’adulte.',
+        'Donc si votre enfant de 2 ou 4\u00A0ans a les pieds plats et court partout sans problème, **c’est exactement ce qu’on s’attend à voir.**',
       ],
       cites: [CITE.pfeifferPreschool, CITE.staheliArch],
     },
@@ -41,8 +42,16 @@ export const FLAT_FEET_KIDS_FR: Guide = {
       keyFact: 'Dans une étude sur 835\u00A0enfants, la part d’enfants aux pieds plats passait de 54\u00A0% à 3\u00A0ans à 24\u00A0% à 6\u00A0ans (Pfeiffer et coll., 2006).',
       paragraphs: [
         'La plupart des enfants développent une voûte visible lentement, entre environ 3 et 6\u00A0ans, et certains plus tard. Dans l’étude de Vienne, 54\u00A0% des enfants de 3\u00A0ans avaient les pieds plats, contre 24\u00A0% des enfants de 6\u00A0ans. Les garçons avaient plus souvent les pieds plats que les filles, 52\u00A0% contre 36\u00A0%, et leur voûte avait tendance à se former plus tard. Les enfants en surpoids ou en situation d’obésité avaient aussi plus souvent les pieds plats.',
-        'Certains enfants ne développent jamais une voûte bien marquée, et c’est souvent sans conséquence. Une revue de 2023 portant sur 12\u00A0études de population, environ 16\u00A0000\u00A0personnes de tous âges, a trouvé des pieds plats chez 15,6\u00A0% des personnes au total. Les enfants de 3 à 5\u00A0ans et les jeunes de 11 à 17\u00A0ans avaient une probabilité environ deux fois plus élevée d’avoir les pieds plats que les autres tranches d’âge. Beaucoup d’adultes aux pieds plats souples n’ont aucune douleur. La question de l’évolution des pieds plats plus tard dans la vie est abordée dans [les pieds plats s’aggravent-ils avec l’âge\u00A0?](/fr/pieds-plats-avec-l-age/)',
-        'Il n’y a pas d’anniversaire précis auquel la voûte doit apparaître. Plus que l’âge, ce qui compte est le comportement du pied\u00A0: est-il souple, fait-il mal, et les deux pieds se ressemblent-ils\u00A0?',
+        'Certains enfants ne développent jamais une voûte bien marquée, et c’est souvent sans conséquence. Une revue de 2023 portant sur 12\u00A0études de population, environ 16\u00A0000\u00A0personnes de tous âges, a trouvé des pieds plats chez 15,6\u00A0% des personnes au total. Les enfants de 3 à 5\u00A0ans et les jeunes de 11 à 17\u00A0ans avaient une probabilité environ deux fois plus élevée d’avoir les pieds plats que les autres tranches d’âge.',
+        'Beaucoup d’adultes aux pieds plats souples n’ont aucune douleur. La question de l’évolution des pieds plats plus tard dans la vie est abordée dans [les pieds plats s’aggravent-ils avec l’âge\u00A0?](/fr/pieds-plats-avec-l-age/)',
+        'Il n’y a pas d’anniversaire précis auquel la voûte doit apparaître. **Plus que l’âge, ce qui compte est le comportement du pied\u00A0:**',
+        {
+          list: [
+            'Est-il souple\u00A0?',
+            'Fait-il mal\u00A0?',
+            'Les deux pieds se ressemblent-ils\u00A0?',
+          ],
+        },
       ],
       cites: [CITE.pfeifferPreschool, CITE.salinasTorres],
     },
@@ -64,8 +73,22 @@ export const FLAT_FEET_KIDS_FR: Guide = {
     {
       h2: 'Quand s’inquiéter des pieds plats d’un enfant\u00A0?',
       paragraphs: [
-        'Inquiétez-vous des pieds plats d’un enfant en cas de douleur, de raideur, de différence entre les deux pieds, ou de problème dans sa façon de bouger. Les pieds plats seuls, chez un enfant qui court et joue sans difficulté, ne sont pas une raison de s’inquiéter. Un parcours de prise en charge proposé en 2008 par la podologue Angela Evans les classe en trois groupes\u00A0: les pieds plats douloureux doivent être pris en charge, les pieds plats d’aspect inhabituel mais indolores sont surveillés dans le temps, et les pieds plats qui font simplement partie de la croissance demandent seulement d’être rassuré.',
-        'Quelques causes précises méritent d’être connues par leur nom. Une **synostose du tarse** (ou coalition tarsienne) est un pont d’os ou de tissu résistant entre deux os de l’arrière du pied. L’enfant naît avec, mais elle commence en général à faire mal à la fin de l’enfance ou à l’adolescence, souvent avec un pied raide et des entorses de cheville à répétition. Un **tendon d’Achille raide** peut pousser le pied dans une position plus plate et provoquer des douleurs. Enfin, les pieds plats peuvent faire partie d’une maladie plus large touchant les nerfs, les muscles ou les articulations, comme la paralysie cérébrale ou l’arthrite juvénile (une arthrite qui commence pendant l’enfance). Ces enfants doivent être suivis par un spécialiste, quelle que soit leur voûte.',
+        'Inquiétez-vous des pieds plats d’un enfant en cas de douleur, de raideur, de différence entre les deux pieds, ou de problème dans sa façon de bouger. Les pieds plats seuls, chez un enfant qui court et joue sans difficulté, ne sont pas une raison de s’inquiéter. Un parcours de prise en charge proposé en 2008 par la podologue Angela Evans les classe en trois groupes\u00A0:',
+        {
+          list: [
+            'Les pieds plats douloureux doivent être pris en charge.',
+            'Les pieds plats d’aspect inhabituel mais indolores sont surveillés dans le temps.',
+            'Les pieds plats qui font simplement partie de la croissance demandent seulement d’être rassuré.',
+          ],
+        },
+        'Quelques causes précises méritent d’être connues par leur nom\u00A0:',
+        {
+          list: [
+            'Une **synostose du tarse** (ou coalition tarsienne) est un pont d’os ou de tissu résistant entre deux os de l’arrière du pied. L’enfant naît avec, mais elle commence en général à faire mal à la fin de l’enfance ou à l’adolescence, souvent avec un pied raide et des entorses de cheville à répétition.',
+            'Un **tendon d’Achille raide** peut pousser le pied dans une position plus plate et provoquer des douleurs.',
+            'Enfin, les pieds plats peuvent faire partie d’une maladie plus large touchant les nerfs, les muscles ou les articulations, comme la paralysie cérébrale ou l’arthrite juvénile (une arthrite qui commence pendant l’enfance). Ces enfants doivent être suivis par un spécialiste, quelle que soit leur voûte.',
+          ],
+        },
       ],
       cites: [CITE.evansTrafficLight, CITE.harrisPediatricFlatfoot],
     },
@@ -73,10 +96,29 @@ export const FLAT_FEET_KIDS_FR: Guide = {
       h2: 'Les semelles ou les chaussures spéciales aident-elles les enfants aux pieds plats\u00A0?',
       keyFact: 'Dans un essai sur 129\u00A0enfants, des chaussures orthopédiques ou des semelles portées pendant au moins trois ans n’ont pas changé les pieds plats souples par rapport à l’absence de semelles (Wenger et coll., 1989).',
       paragraphs: [
-        'Les semelles et les chaussures spéciales ne font pas se former la voûte d’un enfant. Le test le plus clair est un essai de 1989 mené dans un hôpital pour enfants de Dallas. Les chercheurs ont réparti au hasard 129\u00A0enfants aux pieds plats souples en quatre groupes\u00A0: pas de semelles, chaussures orthopédiques correctrices, talonnette en coque, ou semelle en plastique moulée sur mesure. Les enfants les ont portées pendant au moins trois ans, et 98 sont allés au bout. Les radios ont montré que la voûte s’améliorait dans les quatre groupes, y compris chez les enfants sans rien, sans vraie différence entre eux.',
-        'Un essai australien de 2007 a trouvé la même chose. Les 178\u00A0enfants, de 7 à 11\u00A0ans, ont été répartis en trois groupes\u00A0: semelles sur mesure, semelles toutes faites, ou rien. À trois mois et à un an, aucune des comparaisons n’a montré de vraie différence, y compris chez les enfants qui avaient mal au départ.',
+        '**Les semelles et les chaussures spéciales ne font pas se former la voûte d’un enfant.** Le test le plus clair est un essai de 1989 mené dans un hôpital pour enfants de Dallas. Les chercheurs ont réparti au hasard 129\u00A0enfants aux pieds plats souples en quatre groupes\u00A0:',
+        {
+          list: [
+            'Pas de semelles.',
+            'Chaussures orthopédiques correctrices.',
+            'Talonnette en coque.',
+            'Semelle en plastique moulée sur mesure.',
+          ],
+        },
+        'Les enfants les ont portées pendant au moins trois ans, et 98 sont allés au bout. Les radios ont montré que la voûte s’améliorait dans les quatre groupes, y compris chez les enfants sans rien, sans vraie différence entre eux.',
+        'Un essai australien de 2007 a trouvé la même chose. Les 178\u00A0enfants, de 7 à 11\u00A0ans, ont été répartis en trois groupes\u00A0:',
+        {
+          list: [
+            'Semelles sur mesure.',
+            'Semelles toutes faites.',
+            'Rien.',
+          ],
+        },
+        'À trois mois et à un an, aucune des comparaisons n’a montré de vraie différence, y compris chez les enfants qui avaient mal au départ.',
         'La revue Cochrane de 2022 a rassemblé les preuves issues des essais\u00A0: 16\u00A0essais et 1\u00A0058\u00A0enfants. Le niveau de certitude des preuves était faible à très faible. Sa conclusion était nette\u00A0: chez les enfants dont les pieds plats ne font pas mal, rien ne soutient l’usage de semelles sur mesure coûteuses. Chez les enfants atteints d’arthrite juvénile, les semelles peuvent aider la douleur et la fonction.',
-        'Pour les pieds plats douloureux, la situation est moins tranchée. Une méta-analyse en réseau de 2026 (une revue qui compare plusieurs options à la fois) portant sur 11\u00A0essais et 761\u00A0enfants a constaté que des semelles classiques de soutien de la voûte réduisaient davantage les scores de douleur que des semelles plates, mais avec un niveau de certitude très faible. Un grand essai britannique sur les semelles chez les enfants aux pieds plats douloureux, appelé OSTRICH, a dû s’arrêter tôt pendant la pandémie de COVID-19. Avec 134\u00A0enfants sur les 478 prévus, il n’a pas pu répondre à la question. Pour un enfant qui a mal aux pieds, un professionnel de santé peut tout de même proposer une simple semelle toute faite pour le confort, mais elle ne créera pas de voûte. Pour comparer semelles et exercices, voir [semelles ou exercices](/fr/semelles-ou-exercices/).',
+        'Pour les pieds plats douloureux, la situation est moins tranchée. Une méta-analyse en réseau de 2026 (une revue qui compare plusieurs options à la fois) portant sur 11\u00A0essais et 761\u00A0enfants a constaté que des semelles classiques de soutien de la voûte réduisaient davantage les scores de douleur que des semelles plates, mais avec un niveau de certitude très faible.',
+        'Un grand essai britannique sur les semelles chez les enfants aux pieds plats douloureux, appelé OSTRICH, a dû s’arrêter tôt pendant la pandémie de COVID-19. Avec 134\u00A0enfants sur les 478 prévus, il n’a pas pu répondre à la question.',
+        'Pour un enfant qui a mal aux pieds, un professionnel de santé peut tout de même proposer une simple semelle toute faite pour le confort, mais elle ne créera pas de voûte. Pour comparer semelles et exercices, voir [semelles ou exercices](/fr/semelles-ou-exercices/).',
       ],
       cites: [CITE.wengerShoes, CITE.whitfordOrthoses, CITE.evansCochrane2022, CITE.linFlatfootNMA, CITE.cockayneOstrich],
       sourceNote: 'Lin et coll., 2026\u00A0: semelles classiques contre semelles plates, différence moyenne de −2,92\u00A0points (IC à 95\u00A0% −3,73 à −2,11), niveau de certitude des preuves très faible. La douleur n’était pas mesurée dans les essais d’exercices de cette revue.',
@@ -86,7 +128,8 @@ export const FLAT_FEET_KIDS_FR: Guide = {
       paragraphs: [
         'Les exercices du pied peuvent aider les enfants dont les pieds plats font mal ou se fatiguent vite, mais les essais sont petits et leurs résultats contrastés. Une revue de 2024 a examiné 11\u00A0essais portant sur 419\u00A0enfants de 6 à 14\u00A0ans. Elle a constaté que les programmes d’exercices amélioraient les symptômes et la fonction du pied, les exercices des petits muscles à l’intérieur du pied donnant les meilleurs résultats. Les essais variaient beaucoup par les exercices, les tests et la durée, et la revue suggérait au moins deux mois environ.',
         'Un essai turc de 2025 sur 36\u00A0enfants de 4 à 7\u00A0ans a comparé deux programmes d’exercices sur environ deux mois. Les deux groupes se sont améliorés sur les mesures de la voûte et l’équilibre, et le programme qui ajoutait un travail des muscles du bas de la jambe a fait mieux. Il n’y avait pas de groupe sans exercice, on ne peut donc pas savoir quelle part du changement venait de la croissance normale.',
-        'Dans les entretiens menés pendant l’essai OSTRICH, presque aucun enfant n’aimait ses exercices, et beaucoup ne les ont pas poursuivis. Un enfant sans douleur aux pieds plats souples n’a besoin d’aucun exercice. Si les pieds de votre enfant font mal, un kinésithérapeute ou un podologue peut établir un programme. Les idées ci-dessous sont des versions douces, sous forme de jeu, de mouvements utilisés dans ces essais. Les quantités indiquées sont des suggestions de départ prudentes pour les enfants, pas des doses testées dans les essais, ni les doses pour adultes qu’utilise Walkito.',
+        'Dans les entretiens menés pendant l’essai OSTRICH, presque aucun enfant n’aimait ses exercices, et beaucoup ne les ont pas poursuivis. **Un enfant sans douleur aux pieds plats souples n’a besoin d’aucun exercice.** Si les pieds de votre enfant font mal, un kinésithérapeute ou un podologue peut établir un programme.',
+        'Les idées ci-dessous sont des versions douces, sous forme de jeu, de mouvements utilisés dans ces essais. Les quantités indiquées sont des suggestions de départ prudentes pour les enfants, pas des doses testées dans les essais, ni les doses pour adultes qu’utilise Walkito.',
       ],
       exercises: [
         {
@@ -132,16 +175,17 @@ export const FLAT_FEET_KIDS_FR: Guide = {
       h2: 'Marcher pieds nus ou le poids influencent-ils la voûte de l’enfant\u00A0?',
       keyFact: 'Dans une enquête auprès de 2\u00A0300\u00A0enfants en Inde, 8,6\u00A0% de ceux qui portaient des chaussures avaient les pieds plats, contre 2,8\u00A0% de ceux qui n’en portaient pas (Rao et Joseph, 1992).',
       paragraphs: [
-        'Le jeu pieds nus et un poids dans la fourchette habituelle vont tous deux avec moins de pieds plats, même si aucun des deux n’a été testé comme moyen de modifier des pieds plats. Dans une enquête de 1992 auprès de 2\u00A0300\u00A0enfants de 4 à 13\u00A0ans en Inde, 8,6\u00A0% des enfants qui portaient des chaussures avaient les pieds plats, contre 2,8\u00A0% de ceux qui marchaient pieds nus. Les pieds plats étaient les plus fréquents chez les enfants qui portaient des chaussures fermées et les moins fréquents chez ceux qui n’en portaient pas. C’était une enquête à un moment donné\u00A0: elle montre un lien, pas la preuve que les chaussures ont causé les pieds plats.',
+        'Le jeu pieds nus et un poids dans la fourchette habituelle vont tous deux avec moins de pieds plats, même si aucun des deux n’a été testé comme moyen de modifier des pieds plats. Dans une enquête de 1992 auprès de 2\u00A0300\u00A0enfants de 4 à 13\u00A0ans en Inde, 8,6\u00A0% des enfants qui portaient des chaussures avaient les pieds plats, contre 2,8\u00A0% de ceux qui marchaient pieds nus.',
+        'Les pieds plats étaient les plus fréquents chez les enfants qui portaient des chaussures fermées et les moins fréquents chez ceux qui n’en portaient pas. C’était une enquête à un moment donné\u00A0: elle montre un lien, pas la preuve que les chaussures ont causé les pieds plats.',
         'Le poids montre un lien semblable. Une revue de 2021 portant sur 73\u00A0études et plus de 1,7\u00A0million d’enfants et d’adolescents a constaté que ceux en surpoids ou en situation d’obésité avaient une probabilité environ 1,5\u00A0fois plus élevée d’avoir les pieds plats. La plupart de ces études étaient aussi des photographies à un instant donné.',
-        'Laisser un enfant marcher pieds nus sur des surfaces sûres à la maison, sur l’herbe ou sur le sable donne du travail aux muscles du pied. Les chaussures doivent bien chausser et plier au niveau des orteils. Inutile de prendre des chaussures «\u00A0correctrices\u00A0» rigides. Pour en savoir plus sur les chaussures souples à semelle fine, voir [chaussures minimalistes](/fr/chaussures-minimalistes/).',
+        'Laisser un enfant marcher pieds nus sur des surfaces sûres à la maison, sur l’herbe ou sur le sable donne du travail aux muscles du pied. Les chaussures doivent bien chausser et plier au niveau des orteils. **Inutile de prendre des chaussures «\u00A0correctrices\u00A0» rigides.** Pour en savoir plus sur les chaussures souples à semelle fine, voir [chaussures minimalistes](/fr/chaussures-minimalistes/).',
       ],
       cites: [CITE.raoFootwear, CITE.molinaGarciaObesity],
     },
     {
       h2: 'Mon enfant aura-t-il des problèmes de pieds à l’âge adulte\u00A0?',
       paragraphs: [
-        'La plupart des enfants aux pieds plats souples et indolores deviennent des adultes sans problème de pieds. La revue Cochrane de 2022 est allée jusqu’à dire que ce que l’on sait du développement du pied de l’enfant devrait apaiser la plupart des inquiétudes sur les pieds plats, et que l’argent de la recherche devrait plutôt aller aux enfants qui ont de vrais problèmes de pieds. L’enquête de 1987 auprès de 441\u00A0personnes a constaté que les pieds plats des adultes restaient dans les limites de la normale.',
+        '**La plupart des enfants aux pieds plats souples et indolores deviennent des adultes sans problème de pieds.** La revue Cochrane de 2022 est allée jusqu’à dire que ce que l’on sait du développement du pied de l’enfant devrait apaiser la plupart des inquiétudes sur les pieds plats, et que l’argent de la recherche devrait plutôt aller aux enfants qui ont de vrais problèmes de pieds. L’enquête de 1987 auprès de 441\u00A0personnes a constaté que les pieds plats des adultes restaient dans les limites de la normale.',
         'Il y a ici une lacune qu’il faut reconnaître. Aucun essai n’a suivi un grand groupe d’enfants aux pieds plats indolores jusqu’à l’âge mûr pour voir qui a mal plus tard. Certains adultes aux pieds plats ont bien des douleurs à la voûte, au talon ou au genou, et le [guide des pieds plats](/fr/pieds-plats/) présente ce qui peut les aider.',
         'Beaucoup de parents qui cherchent ces informations ont eux-mêmes les pieds plats. Si vos propres pieds font mal en fin de journée, c’est une question distincte de celle de votre enfant. Walkito est une application d’exercices pour les adultes qui ont mal au talon, à la voûte ou aux jambes, et son plan pour les pieds plats est conçu pour des pieds d’adulte, pas d’enfant.',
       ],

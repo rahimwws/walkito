@@ -39,7 +39,7 @@ export const EX_BAND_INVERSION_IT: Guide = {
       h2: 'Come si fa l’inversione della caviglia con l’elastico?',
       paragraphs: [
         'Siediti con le gambe distese davanti a te o sul bordo di una sedia. Passa un elastico intorno al lato interno dell’avampiede della gamba che lavora. Fissa l’altra estremità sotto il piede opposto o intorno alla gamba di un tavolo, così l’elastico tira il piede verso l’esterno.',
-        'Parti con il piede un po’ ruotato verso l’esterno (in eversione). Ruota la pianta del piede verso l’interno contro l’elastico, portando l’avampiede verso la linea centrale. Muovi il piede, non tutta la gamba. Il ginocchio punta dritto in avanti per tutto il tempo. Torna piano e ripeti.',
+        'Parti con il piede un po’ ruotato verso l’esterno (in eversione). Ruota la pianta del piede verso l’interno contro l’elastico, portando l’avampiede verso la linea centrale. **Muovi il piede, non tutta la gamba.** Il ginocchio punta dritto in avanti per tutto il tempo. Torna piano e ripeti.',
         'Inizia con un elastico leggero. Il movimento è piccolo. Se il ginocchio si gira o l’anca ruota, l’elastico è troppo duro o la gamba sta compensando.',
       ],
       exercises: [
@@ -63,14 +63,22 @@ export const EX_BAND_INVERSION_IT: Guide = {
       keyFact: 'Uno studio del 2004 con risonanza magnetica su 5\u00A0adulti sani ha trovato che ruotare il piede verso l’interno aumentava del 50% il segnale del tibiale posteriore, con meno del 5% di variazione nei muscoli vicini (Kulig e colleghi, 2004).',
       paragraphs: [
         'Il bersaglio principale è il tibiale posteriore. È il muscolo più profondo della parte dietro della gamba, e sta dietro tibia e perone. Il suo tendine passa dietro il malleolo mediale (l’osso interno della caviglia), poi si apre in più fasci che si attaccano a quasi tutte le ossa del mesopiede.',
-        'Uno studio del 2004 con risonanza magnetica di Kulig e colleghi ha testato tre esercizi su 5\u00A0adulti sani: l’adduzione del piede (ruotare il piede verso l’interno strisciando sul pavimento), il sollevamento sulle punte su una gamba e la supinazione del piede a catena aperta. L’adduzione del piede dava l’attivazione più alta del tibiale posteriore (aumento del segnale del 50%) con l’attivazione più bassa nei muscoli intorno (meno del 5%). Anche il sollevamento sulle punte su una gamba attivava il tibiale posteriore, ma attivava molto anche il gastrocnemio (99%) e il soleo (39%), e quindi era un esercizio molto meno selettivo per il tibiale posteriore.',
+        'Uno studio del 2004 con risonanza magnetica di Kulig e colleghi ha testato tre esercizi su 5\u00A0adulti sani:',
+        {
+          list: [
+            'L’adduzione del piede (ruotare il piede verso l’interno strisciando sul pavimento).',
+            'Il sollevamento sulle punte su una gamba.',
+            'La supinazione del piede a catena aperta.',
+          ],
+        },
+        'L’adduzione del piede dava l’attivazione più alta del tibiale posteriore (aumento del segnale del 50%) con l’attivazione più bassa nei muscoli intorno (meno del 5%). Anche il sollevamento sulle punte su una gamba attivava il tibiale posteriore, ma attivava molto anche il gastrocnemio (99%) e il soleo (39%), e quindi era un esercizio molto meno selettivo per il tibiale posteriore.',
       ],
       cites: [CITE.kulig],
     },
     {
       h2: 'Perché il tibiale posteriore conta per l’arco?',
       paragraphs: [
-        'Il tibiale posteriore è il principale stabilizzatore dinamico dell’arco longitudinale mediale. A ogni passo si contrae per tenere su l’arco nella fase di appoggio intermedio, quando tutto il tuo peso è su un piede. I muscoli intrinseci del piede (allenati dall’[esercizio del piede corto](/it/esercizi/piede-corto/) e dall’[apertura delle dita](/it/esercizi/apertura-dita-piede/)) danno un sostegno locale all’arco, ma il tibiale posteriore dà la forza estrinseca più grande, dall’alto.',
+        'Il tibiale posteriore è **il principale stabilizzatore dinamico dell’arco longitudinale mediale.** A ogni passo si contrae per tenere su l’arco nella fase di appoggio intermedio, quando tutto il tuo peso è su un piede. I muscoli intrinseci del piede (allenati dall’[esercizio del piede corto](/it/esercizi/piede-corto/) e dall’[apertura delle dita](/it/esercizi/apertura-dita-piede/)) danno un sostegno locale all’arco, ma il tibiale posteriore dà la forza estrinseca più grande, dall’alto.',
         'Quando il tendine del tibiale posteriore si indebolisce o degenera, l’arco cede progressivamente e il piede va in pronazione. Una revisione del 2017 di Ling e Lui l’ha descritta come la causa più comune di piede piatto acquisito dell’adulto. Una revisione sistematica del 2018 di Ross e colleghi ha trovato che i programmi di esercizi con rinforzo del tibiale posteriore miglioravano dolore e funzione nella disfunzione del tendine tibiale posteriore in fase iniziale.',
         'Per questo i [programmi di esercizi per il piede piatto](/it/esercizi-piede-piatto/) includono sia esercizi per i muscoli intrinseci del piede sia lavoro sul tibiale posteriore. I muscoli intrinseci sono gli stabilizzatori locali. Il tibiale posteriore è il principale stabilizzatore estrinseco. Contano entrambi.',
       ],
@@ -79,10 +87,14 @@ export const EX_BAND_INVERSION_IT: Guide = {
     {
       h2: 'Quali sono gli errori più comuni nell’inversione con elastico?',
       paragraphs: [
-        'L’errore più comune è ruotare tutta la gamba invece del solo piede. Quando l’anca ruota verso l’interno per girare il piede, il tibiale posteriore non fa quasi niente. Tieni il ginocchio puntato dritto in avanti. Si muove solo il piede, alla caviglia.',
-        'Un altro errore è usare un elastico troppo duro. Il tibiale posteriore è un muscolo piccolo e profondo. Un elastico pesante costringe i muscoli più grandi a prendere il comando. Inizia con un elastico leggero e concentrati sul sentire il lavoro lungo la caviglia interna e l’arco.',
-        'Lasciare che il piede torni indietro di scatto tra una ripetizione e l’altra è un terzo problema. Controlla il ritorno. La fase eccentrica, il ritorno lento, carica il tendine in un modo che lo aiuta ad adattarsi. Un ritorno lento vale più di una tirata veloce.',
-        'Infine, alcune persone mettono l’elastico troppo in alto sul piede, vicino all’articolazione della caviglia. L’elastico deve stare intorno all’avampiede, vicino alla base delle dita, così la leva lavora con l’angolo giusto.',
+        {
+          list: [
+            '**L’errore più comune è ruotare tutta la gamba invece del solo piede.** Quando l’anca ruota verso l’interno per girare il piede, il tibiale posteriore non fa quasi niente. Tieni il ginocchio puntato dritto in avanti. Si muove solo il piede, alla caviglia.',
+            '**Un altro errore è usare un elastico troppo duro.** Il tibiale posteriore è un muscolo piccolo e profondo. Un elastico pesante costringe i muscoli più grandi a prendere il comando. Inizia con un elastico leggero e concentrati sul sentire il lavoro lungo la caviglia interna e l’arco.',
+            '**Lasciare che il piede torni indietro di scatto tra una ripetizione e l’altra è un terzo problema.** Controlla il ritorno. La fase eccentrica, il ritorno lento, carica il tendine in un modo che lo aiuta ad adattarsi. Un ritorno lento vale più di una tirata veloce.',
+            '**Infine, alcune persone mettono l’elastico troppo in alto sul piede, vicino all’articolazione della caviglia.** L’elastico deve stare intorno all’avampiede, vicino alla base delle dita, così la leva lavora con l’angolo giusto.',
+          ],
+        },
       ],
     },
     {
@@ -90,7 +102,7 @@ export const EX_BAND_INVERSION_IT: Guide = {
       paragraphs: [
         'La prova più diretta sul movimento viene dallo studio del 2004 con risonanza magnetica di Kulig e colleghi. Ha confermato che l’adduzione del piede attiva in modo selettivo il tibiale posteriore, con un’attivazione minima dei muscoli intorno. Per questo l’inversione contro un elastico è l’esercizio da scegliere quando l’obiettivo è rinforzare proprio quel muscolo.',
         'Per gli esiti clinici, una revisione sistematica del 2018 di Ross e colleghi ha esaminato i programmi di esercizi per la disfunzione del tendine tibiale posteriore. La maggior parte degli studi era piccola, ma la revisione ha concluso che i programmi con esercizi eccentrici e concentrici per il tibiale posteriore, spesso uniti al rinforzo del polpaccio e a plantari, miglioravano dolore e funzione.',
-        'L’esercizio non è stato testato da solo in un grande studio sulla fascite plantare. Il suo ruolo nel programma Walkito è sostenere l’arco rinforzando lo stabilizzatore estrinseco che lavora insieme ai muscoli intrinseci. Pagine collegate: [esercizi per il piede piatto](/it/esercizi-piede-piatto/), [esercizio del piede corto](/it/esercizi/piede-corto/), [abduzione dell’anca](/it/esercizi/abduzione-anca/).',
+        '**L’esercizio non è stato testato da solo in un grande studio sulla fascite plantare.** Il suo ruolo nel programma Walkito è sostenere l’arco rinforzando lo stabilizzatore estrinseco che lavora insieme ai muscoli intrinseci. Pagine collegate: [esercizi per il piede piatto](/it/esercizi-piede-piatto/), [esercizio del piede corto](/it/esercizi/piede-corto/), [abduzione dell’anca](/it/esercizi/abduzione-anca/).',
       ],
       cites: [CITE.kulig, CITE.posteriorTibialReview],
     },

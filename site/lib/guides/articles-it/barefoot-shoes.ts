@@ -25,7 +25,16 @@ export const BAREFOOT_IT: Guide = {
     {
       h2: 'Cosa sono le scarpe barefoot?',
       paragraphs: [
-        'Le scarpe barefoot sono scarpe costruite per ostacolare il piede il meno possibile. La maggior parte ha quattro caratteristiche in comune: una suola sottile attraverso cui senti il terreno, una suola che si piega e si torce facilmente, drop zero (il tallone sta alla stessa altezza delle dita) e una punta larga che lascia allargare le dita. Non hanno supporto per l’arco e hanno poca ammortizzazione.',
+        'Le scarpe barefoot sono scarpe costruite per ostacolare il piede il meno possibile. La maggior parte ha quattro caratteristiche in comune:',
+        {
+          list: [
+            'Una suola sottile attraverso cui senti il terreno.',
+            'Una suola che si piega e si torce facilmente.',
+            'Drop zero (il tallone sta alla stessa altezza delle dita).',
+            'Una punta larga che lascia allargare le dita.',
+          ],
+        },
+        'Non hanno supporto per l’arco e hanno poca ammortizzazione.',
         'I ricercatori le chiamano scarpe minimaliste. L’idea è semplice: una scarpa che sostiene e ammortizza il piede fa una parte del lavoro che altrimenti farebbero i piccoli muscoli del piede. Togli quel sostegno e i muscoli lavorano di più. Per chi ha dolore al piede, la domanda è se quel lavoro in più aiuta o fa male.',
       ],
     },
@@ -33,10 +42,18 @@ export const BAREFOOT_IT: Guide = {
       h2: 'Le scarpe barefoot rendono i piedi più forti?',
       keyFact: 'Gli adulti che hanno portato scarpe minimaliste nella vita di tutti i giorni per sei mesi hanno guadagnato in media il 57,4% di forza delle dita (Curtis e colleghi, 2021).',
       paragraphs: [
-        'Sì, negli adulti senza dolore al piede le prove vanno in questa direzione. In uno studio randomizzato del 2019, Ridge e colleghi hanno diviso 57\u00A0runner in tre gruppi: camminare con scarpe minimaliste, fare esercizi di rinforzo del piede, o non cambiare nulla. Il gruppo che camminava ha aumentato piano piano quanti passi al giorno faceva con le scarpe nuove. Dopo circa due mesi, ogni muscolo del piede misurato dai ricercatori era più grande e più forte in entrambi i gruppi attivi, e invariato nel gruppo di controllo. Camminare con le scarpe ha funzionato più o meno come gli esercizi.',
+        'Sì, negli adulti senza dolore al piede le prove vanno in questa direzione. In uno studio randomizzato del 2019, Ridge e colleghi hanno diviso 57\u00A0runner in tre gruppi:',
+        {
+          list: [
+            'Camminare con scarpe minimaliste.',
+            'Fare esercizi di rinforzo del piede.',
+            'Non cambiare nulla.',
+          ],
+        },
+        'Il gruppo che camminava ha aumentato piano piano quanti passi al giorno faceva con le scarpe nuove. Dopo circa due mesi, ogni muscolo del piede misurato dai ricercatori era più grande e più forte in entrambi i gruppi attivi, e invariato nel gruppo di controllo. Camminare con le scarpe ha funzionato più o meno come gli esercizi.',
         'Curtis e colleghi hanno fatto uno studio più lungo nel 2021. Ventidue adulti hanno portato scarpe minimaliste nella vita di tutti i giorni (non per correre) per sei mesi, e 24 hanno tenuto le scarpe di sempre. In chi ha cambiato scarpe, la forza delle dita è salita in media del 57,4%. Lo studio non era randomizzato e includeva solo persone senza problemi recenti a gambe o piedi.',
         'Una revisione del 2025 di 28\u00A0studi, di Peters-Dickie e colleghi, ha trovato che le scarpe minimaliste aumentavano la forza delle dita più piccole. Ha giudicato la certezza delle prove da bassa a molto bassa.',
-        'Muscoli del piede più forti non vogliono dire meno dolore al piede. Nessuno di questi studi ha misurato il dolore o incluso persone con un disturbo al piede. Per una serie completa di esercizi che allenano gli stessi muscoli, vedi [esercizi di rinforzo del piede](/it/esercizi-rinforzo-piede/).',
+        '**Muscoli del piede più forti non vogliono dire meno dolore al piede.** Nessuno di questi studi ha misurato il dolore o incluso persone con un disturbo al piede. Per una serie completa di esercizi che allenano gli stessi muscoli, vedi [esercizi di rinforzo del piede](/it/esercizi-rinforzo-piede/).',
       ],
       sourceNote:
         'Curtis 2021: forza del piede misurata come forza isometrica massima di flessione plantare alle articolazioni delle dita, p < 0,001. Peters-Dickie 2025: 28\u00A0studi, 1.399\u00A0partecipanti.',
@@ -46,9 +63,16 @@ export const BAREFOOT_IT: Guide = {
       h2: 'Le scarpe barefoot fanno male? Il rischio sta nel passaggio',
       keyFact: 'Dopo circa due mesi e mezzo di passaggio a scarpe da corsa minimaliste, 10 runner su 19 mostravano alla risonanza magnetica uno stress osseo nuovo o peggiorato (Ridge e colleghi, 2013).',
       paragraphs: [
-        'Il rischio principale non sono le scarpe. È la velocità del passaggio. Ossa, muscoli del piede, polpaccio e tendine d’Achille si sono adattati alle scarpe che porti ora e hanno bisogno di tempo per reggere più carico.',
-        'Ridge e colleghi lo hanno mostrato nel 2013. Hanno fatto una risonanza ai piedi di 36\u00A0runner esperti. Diciannove sono passati gradualmente a scarpe da corsa minimaliste in circa due mesi e mezzo e 17 hanno tenuto le scarpe normali. Alla fine, 10 dei 19 che avevano cambiato avevano un edema osseo nuovo o peggiorato (liquido dentro l’osso, un primo segno di stress osseo) in almeno un osso del piede, molto più dei runner che non avevano cambiato. Gli autori hanno consigliato ai runner di fare il passaggio «molto lentamente e gradualmente».',
-        'Due studi randomizzati vanno nella stessa direzione. Nello studio di Ryan e colleghi su 103\u00A0runner che si allenavano per una gara di 10\u00A0km in tre mesi, il gruppo con scarpe in parte minimaliste ha avuto 12\u00A0infortuni contro 4 nel gruppo con scarpe normali, e il gruppo con scarpe del tutto minimaliste ha riferito più dolore a tibia e polpaccio. Nello studio di sei mesi di Fuller e colleghi su 61\u00A0runner, il dolore durante la corsa era più alto con le scarpe minimaliste, in modo netto sopra circa 35\u00A0km a settimana, e il rischio di infortunio saliva con il peso corporeo. La differenza complessiva negli infortuni (16 su 31 contro 11 su 30) poteva essere dovuta al caso.',
+        'Il rischio principale non sono le scarpe. **È la velocità del passaggio.** Ossa, muscoli del piede, polpaccio e tendine d’Achille si sono adattati alle scarpe che porti ora e hanno bisogno di tempo per reggere più carico.',
+        'Ridge e colleghi lo hanno mostrato nel 2013. Hanno fatto una risonanza ai piedi di 36\u00A0runner esperti. Diciannove sono passati gradualmente a scarpe da corsa minimaliste in circa due mesi e mezzo e 17 hanno tenuto le scarpe normali.',
+        'Alla fine, 10 dei 19 che avevano cambiato avevano un edema osseo nuovo o peggiorato (liquido dentro l’osso, un primo segno di stress osseo) in almeno un osso del piede, molto più dei runner che non avevano cambiato. Gli autori hanno consigliato ai runner di fare il passaggio «molto lentamente e gradualmente».',
+        'Due studi randomizzati vanno nella stessa direzione:',
+        {
+          list: [
+            'Nello studio di Ryan e colleghi su 103\u00A0runner che si allenavano per una gara di 10\u00A0km in tre mesi, il gruppo con scarpe in parte minimaliste ha avuto 12\u00A0infortuni contro 4 nel gruppo con scarpe normali, e il gruppo con scarpe del tutto minimaliste ha riferito più dolore a tibia e polpaccio.',
+            'Nello studio di sei mesi di Fuller e colleghi su 61\u00A0runner, il dolore durante la corsa era più alto con le scarpe minimaliste, in modo netto sopra circa 35\u00A0km a settimana, e il rischio di infortunio saliva con il peso corporeo. La differenza complessiva negli infortuni (16 su 31 contro 11 su 30) poteva essere dovuta al caso.',
+          ],
+        },
         'Questi erano runner. Camminare carica il piede molto meno, ed è uno dei motivi per cui gli studi sulla forza hanno usato la camminata. Se corri e hai [dolore al tallone](/heel-pain-runners/) (in inglese), un cambio improvviso di scarpe è un cambio di carico in più di cui il tuo piede non ha bisogno.',
       ],
       sourceNote:
@@ -64,9 +88,15 @@ export const BAREFOOT_IT: Guide = {
         alt: 'Un piede visto dal lato interno con la fascia plantare evidenziata come una banda dal tallone all’avampiede.',
       },
       paragraphs: [
-        'Non ci sono buone prove che le scarpe barefoot allevino la fascite plantare (dolore nel punto in cui la spessa banda sotto il piede si attacca al tallone). Non c’è nemmeno uno studio che mostri che la causino. Le affermazioni nette in un senso o nell’altro che trovi online vengono per lo più da chi vende scarpe e plantari.',
-        'Ecco cosa è stato testato. In uno studio randomizzato del 2026, Xu e colleghi hanno fatto fare circa due mesi di esercizi per il piede ad adulti con fascite plantare, e 34 hanno completato lo studio. Circa metà ha portato anche scarpe minimaliste. La forza delle dita è salita in entrambi i gruppi, e aggiungere le scarpe non ha aggiunto chiaramente qualcosa. L’equilibrio non è cambiato in nessuno dei due gruppi. Questo resoconto non riguardava il dolore, e le scarpe erano fornite dal produttore.',
-        'In un piccolo studio del 2022 su 36\u00A0donne con fascite plantare, Ribeiro e colleghi hanno confrontato per sei mesi scarpe minimaliste flessibili da sole, le stesse scarpe più un plantare su misura, e i soliti consigli sulle scarpe. Solo il gruppo con il plantare aveva chiaramente meno dolore al tallone rispetto al gruppo dei soliti consigli. Una serie di casi del 2022 su 20\u00A0runner ha riportato meno dolore dopo circa un mese e mezzo di corsa a piedi nudi sull’erba, ma non aveva un gruppo di confronto e uno degli autori è finanziato da un marchio di scarpe barefoot.',
+        '**Non ci sono buone prove che le scarpe barefoot allevino la fascite plantare** (dolore nel punto in cui la spessa banda sotto il piede si attacca al tallone). Non c’è nemmeno uno studio che mostri che la causino. Le affermazioni nette in un senso o nell’altro che trovi online vengono per lo più da chi vende scarpe e plantari.',
+        'Ecco cosa è stato testato:',
+        {
+          list: [
+            'In uno studio randomizzato del 2026, Xu e colleghi hanno fatto fare circa due mesi di esercizi per il piede ad adulti con fascite plantare, e 34 hanno completato lo studio. Circa metà ha portato anche scarpe minimaliste. La forza delle dita è salita in entrambi i gruppi, e aggiungere le scarpe non ha aggiunto chiaramente qualcosa. L’equilibrio non è cambiato in nessuno dei due gruppi. Questo resoconto non riguardava il dolore, e le scarpe erano fornite dal produttore.',
+            'In un piccolo studio del 2022 su 36\u00A0donne con fascite plantare, Ribeiro e colleghi hanno confrontato per sei mesi scarpe minimaliste flessibili da sole, le stesse scarpe più un plantare su misura, e i soliti consigli sulle scarpe. Solo il gruppo con il plantare aveva chiaramente meno dolore al tallone rispetto al gruppo dei soliti consigli.',
+            'Una serie di casi del 2022 su 20\u00A0runner ha riportato meno dolore dopo circa un mese e mezzo di corsa a piedi nudi sull’erba, ma non aveva un gruppo di confronto e uno degli autori è finanziato da un marchio di scarpe barefoot.',
+          ],
+        },
         'La linea guida statunitense del 2023 sul dolore al tallone raccomanda l’allungamento del polpaccio e della fascia plantare (grado A) e il rinforzo (grado B). Non raccomanda le scarpe minimaliste, e tra i consigli per i pazienti indica calzature che riducono il carico. Se ora ti fa male il tallone, inizia dagli [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/), e vedi [plantari o esercizi](/it/plantari-o-esercizi/) per cosa può e non può fare un sostegno sotto il piede.',
       ],
       cites: [CITE.xuFrames, CITE.ribeiroShoes, CITE.macgabhannGrass, CITE.guideline],
@@ -74,7 +104,8 @@ export const BAREFOOT_IT: Guide = {
     {
       h2: 'Camminare scalzi in casa va bene se ti fa male il tallone?',
       paragraphs: [
-        'Attenzione ai pavimenti duri, soprattutto appena ti alzi al mattino. Nessuno studio ha testato il camminare scalzi in casa con il dolore al tallone, quindi questo è un consiglio prudente, non una regola testata. Piastrelle o parquet non danno ammortizzazione al tallone, e i primi passi dopo il riposo sono il momento in cui di solito la fascite plantare fa più male. La nostra pagina sul [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) suggerisce un allungamento prima di alzarti e qualcosa ai piedi per quei primi passi.',
+        '**Attenzione ai pavimenti duri, soprattutto appena ti alzi al mattino.** Nessuno studio ha testato il camminare scalzi in casa con il dolore al tallone, quindi questo è un consiglio prudente, non una regola testata.',
+        'Piastrelle o parquet non danno ammortizzazione al tallone, e i primi passi dopo il riposo sono il momento in cui di solito la fascite plantare fa più male. La nostra pagina sul [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) suggerisce un allungamento prima di alzarti e qualcosa ai piedi per quei primi passi.',
         'L’ammortizzazione sotto il tallone può contare. In uno studio del 2023, Landorf e colleghi hanno confrontato 50\u00A0persone con dolore sotto il tallone con 25\u00A0persone simili senza dolore. Chi aveva dolore al tallone stava in piedi 3,4\u00A0ore in più al giorno e portava scarpe con talloni più duri. Questo mostra un legame, non una causa.',
         'Un dolore profondo al centro del tallone, che peggiora a piedi nudi su un pavimento duro, può venire anche dal cuscinetto adiposo del tallone (il cuscinetto di grasso sotto l’osso del tallone). Vedi [sindrome del cuscinetto adiposo del tallone](/it/sindrome-cuscinetto-adiposo-tallone/) per questo schema.',
         'Brevi momenti a piedi nudi su erba o sabbia sono più delicati. Se la mattina dopo il dolore al tallone è aumentato, era troppo.',
@@ -90,10 +121,17 @@ export const BAREFOOT_IT: Guide = {
         alt: 'Tre piedi visti dal lato interno: un piede piatto con l’arco a terra, un arco tipico con un piccolo spazio e un arco alto con un grande spazio.',
       },
       paragraphs: [
-        'Ci sono indizi, ma nessuno studio sperimentale. Holowka e colleghi hanno confrontato 75\u00A0uomini tarahumara in Messico, che portano sandali sottili per quasi tutta la vita, con 26\u00A0uomini statunitensi che portano scarpe normali. Chi portava i sandali aveva archi più alti e più rigidi e muscoli più grandi lungo i bordi interno ed esterno del piede. Solo uno dei 75 aveva l’arco basso, contro 8 dei 26 uomini statunitensi (31%).',
+        '**Ci sono indizi, ma nessuno studio sperimentale.** Holowka e colleghi hanno confrontato 75\u00A0uomini tarahumara in Messico, che portano sandali sottili per quasi tutta la vita, con 26\u00A0uomini statunitensi che portano scarpe normali. Chi portava i sandali aveva archi più alti e più rigidi e muscoli più grandi lungo i bordi interno ed esterno del piede. Solo uno dei 75 aveva l’arco basso, contro 8 dei 26 uomini statunitensi (31%).',
         'Un’indagine più vecchia su 2.300\u00A0bambini in India, di Rao e Joseph nel 1992, ha trovato il piede piatto nell’8,6% dei bambini che portavano scarpe e nel 2,8% di quelli che non le portavano. Il piede piatto era più comune nei bambini che portavano scarpe chiuse.',
         'Entrambi gli studi confrontano gruppi diversi sotto molti aspetti, quindi non possono dimostrare che le scarpe causino il piede piatto, o che scarpe nuove alzino l’arco di un adulto. Nessuno studio lo ha testato.',
-        'Conta di più il tipo di piede piatto. Un piede piatto flessibile (l’arco ricompare quando ti siedi o sali sulle punte) di solito si può caricare e rinforzare senza problemi, e un passaggio graduale a scarpe più piatte è ragionevole se i piedi stanno bene. Un piede piatto rigido, o uno che fa male, si sta appiattendo o è peggio da un lato, va prima visto da un professionista sanitario. La nostra pagina sul [piede piatto](/it/piede-piatto/) spiega la differenza.',
+        'Conta di più il tipo di piede piatto:',
+        {
+          list: [
+            'Un piede piatto flessibile (l’arco ricompare quando ti siedi o sali sulle punte) di solito si può caricare e rinforzare senza problemi, e un passaggio graduale a scarpe più piatte è ragionevole se i piedi stanno bene.',
+            'Un piede piatto rigido, o uno che fa male, si sta appiattendo o è peggio da un lato, va prima visto da un professionista sanitario.',
+          ],
+        },
+        'La nostra pagina sul [piede piatto](/it/piede-piatto/) spiega la differenza.',
       ],
       cites: [CITE.holowkaShod, CITE.raoFootwear],
     },
@@ -117,7 +155,7 @@ export const BAREFOOT_IT: Guide = {
     {
       h2: 'Come passare alle scarpe barefoot in sicurezza?',
       paragraphs: [
-        'Piano, e in base a come rispondono i piedi, non al calendario. Nessuno studio ha trovato un programma di tempi adatto a tutti. Gli studi sulla forza hanno aumentato gradualmente il numero di passi e non facevano correre le persone con le scarpe nuove. Gli studi sulla corsa hanno visto più dolore e stress osseo anche con piani graduali.',
+        '**Piano, e in base a come rispondono i piedi, non al calendario.** Nessuno studio ha trovato un programma di tempi adatto a tutti. Gli studi sulla forza hanno aumentato gradualmente il numero di passi e non facevano correre le persone con le scarpe nuove. Gli studi sulla corsa hanno visto più dolore e stress osseo anche con piani graduali.',
       ],
       bullets: [
         'Cammina prima di correre. Inizia con brevi momenti di camminata quotidiana, con le scarpe di sempre per il resto della giornata.',

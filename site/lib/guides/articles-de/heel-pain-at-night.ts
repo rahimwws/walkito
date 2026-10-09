@@ -37,7 +37,7 @@ export const HEEL_PAIN_AT_NIGHT_DE: Guide = {
     {
       h2: 'Warum tut die Ferse nachts oder in Ruhe weh?',
       paragraphs: [
-        'Plantarfasziitis tut weh, weil die Faszie im Schlaf steif wird und sich beim Aufstehen dann abrupt dehnt. Dieser Schmerz ist beim ersten Schritt am stärksten und wird besser, wenn du dich bewegst. Wenn deine Ferse wehtut, während du im Bett liegst und sie gar nicht belastest, steckt meist ein anderer Mechanismus dahinter.',
+        'Plantarfasziitis tut weh, weil die Faszie im Schlaf steif wird und sich beim Aufstehen dann abrupt dehnt. Dieser Schmerz ist beim ersten Schritt am stärksten und wird besser, wenn du dich bewegst. **Wenn deine Ferse wehtut, während du im Bett liegst und sie gar nicht belastest, steckt meist ein anderer Mechanismus dahinter.**',
         'Eine Übersichtsarbeit von 2018 in American Family Physician nennt mehrere Ursachen für Fersenschmerzen, die sich anders verhalten als eine Plantarfasziitis. Der wichtigste Unterschied: Der Schmerz bei Plantarfasziitis wird mit Aktivität besser, Schmerzen durch Ermüdungsbrüche, eingeklemmte Nerven, Tumoren und Entzündungen folgen diesem Muster nicht.',
         'Im Schlaf zeigt der Fuß außerdem nach unten (Plantarflexion). In dieser Position können sich Achillessehne und Wade verkürzen, was manchmal zu Beschwerden an der Ferse beiträgt. Nachtschienen setzen hier an, indem sie das Sprunggelenk im rechten Winkel halten. Eine Nachtschiene ist aber ein Hilfsmittel bei Plantarfasziitis und kein Ersatz dafür, Schmerzen abzuklären, die in Ruhe wirklich schlimmer werden.',
       ],
@@ -47,7 +47,7 @@ export const HEEL_PAIN_AT_NIGHT_DE: Guide = {
       h2: 'Könnte es ein Ermüdungsbruch des Fersenbeins sein?',
       paragraphs: [
         'Ein Ermüdungsbruch des Fersenbeins, ein feiner Riss im Knochen durch wiederholte Belastung, kann einen tiefen Schmerz verursachen, der nachts pocht. Anders als bei der Plantarfasziitis wird der Schmerz bei Aktivität meist schlimmer und läuft sich nicht ein. Oft geht ihm eine plötzliche Steigerung beim Laufen, Gehen oder Stehen auf hartem Boden voraus.',
-        'Der „Squeeze-Test“, bei dem beide Seiten des Fersenbeins zusammengedrückt werden, ist das klassische klinische Zeichen. Schmerz beim Zusammendrücken ist bei Plantarfasziitis ungewöhnlich und bei Ermüdungsbrüchen häufig. Normale Röntgenbilder übersehen frühe Ermüdungsbrüche oft. Zur Bestätigung braucht es meist ein MRT oder eine Knochenszintigrafie.',
+        'Der „Squeeze-Test“, bei dem beide Seiten des Fersenbeins zusammengedrückt werden, ist das klassische klinische Zeichen. **Schmerz beim Zusammendrücken ist bei Plantarfasziitis ungewöhnlich und bei Ermüdungsbrüchen häufig.** Normale Röntgenbilder übersehen frühe Ermüdungsbrüche oft. Zur Bestätigung braucht es meist ein MRT oder eine Knochenszintigrafie.',
         'Eine Übersichtsarbeit von 2011 in American Family Physician stellte fest, dass Ermüdungsbrüche des Fersenbeins nach einer Steigerung der Aktivität oder einem Wechsel auf härteren Boden zunehmend schlimmere Schmerzen verursachen. Schmerz nachts und in Ruhe wurde zu den Merkmalen gezählt, die Ermüdungsbrüche von einer Fasziitis unterscheiden.',
       ],
       cites: [CITE.patelStressFracture, CITE.tuHeelPain],
@@ -58,7 +58,7 @@ export const HEEL_PAIN_AT_NIGHT_DE: Guide = {
       paragraphs: [
         'Der Schienbeinnerv (Nervus tibialis) verläuft durch einen Raum hinter dem Innenknöchel, den Tarsaltunnel. Druck dort, das Tarsaltunnelsyndrom, verursacht Brennen, Kribbeln oder Taubheit an der Fußsohle und der Ferse. Tu (2018) beschreibt den Schmerz beim Tarsaltunnelsyndrom als typischerweise schlimmer beim Stehen, Gehen oder Laufen und besser durch Ruhe und Hochlagern. Dieses Muster unterscheidet sich von der Plantarfasziitis, ist aber nicht dasselbe wie echter Ruheschmerz. Das Tarsaltunnelsyndrom passt also nicht immer zu dem Muster, um das es auf dieser Seite geht.',
         'Der Baxter-Nerv ist der erste Ast des seitlichen Fußsohlennervs (Nervus plantaris lateralis), ein kleinerer Nerv nahe der Innenseite der Ferse. Wenn er eingeklemmt ist, verursacht er stechende oder brennende Schmerzen an der Innenseite der Ferse. Der Schmerz wird im Lauf des Tages bei Aktivität oft schlimmer, kann aber auch in Ruhe auftreten. Laut einer Übersichtsarbeit von 2025 könnte die Einklemmung des Baxter-Nervs für bis zu 20\u00A0% der chronischen Fersenschmerzen verantwortlich sein (Tedeschi, 2025).',
-        'Ein eingeklemmter Nerv wird häufig fälschlich als Plantarfasziitis diagnostiziert, weil beide Schmerzen an der Innenseite der Ferse verursachen. Der Unterschied liegt in der Art des Schmerzes: Brennen, Kribbeln oder Taubheit sind Nervenzeichen. Bildgebung und Messungen der Nervenleitgeschwindigkeit können einer medizinischen Fachperson helfen, die Diagnose zu bestätigen.',
+        'Ein eingeklemmter Nerv wird häufig fälschlich als Plantarfasziitis diagnostiziert, weil beide Schmerzen an der Innenseite der Ferse verursachen. Der Unterschied liegt in der Art des Schmerzes: **Brennen, Kribbeln oder Taubheit sind Nervenzeichen.** Bildgebung und Messungen der Nervenleitgeschwindigkeit können einer medizinischen Fachperson helfen, die Diagnose zu bestätigen.',
       ],
       cites: [CITE.tedeschiBaxter, CITE.tuHeelPain],
     },
@@ -68,7 +68,7 @@ export const HEEL_PAIN_AT_NIGHT_DE: Guide = {
       paragraphs: [
         'Spondyloarthritiden, eine Gruppe entzündlicher Erkrankungen, zu denen Morbus Bechterew und Psoriasis-Arthritis gehören, können eine Enthesitis verursachen, also eine Entzündung dort, wo eine Sehne oder ein Band am Knochen ansetzt. Die Ferse ist eine häufige Stelle. Der Schmerz tritt oft auf beiden Seiten auf, kann am Ansatz der Achillessehne oder unter der Ferse sitzen und geht mit einer langen Morgensteifigkeit (über 30\u00A0Minuten) einher, die mit Bewegung besser wird.',
         'In einer Beobachtung über 5 bis 15\u00A0Jahre von 174\u00A0Menschen mit Plantarfasziitis sagten Fersenschmerzen auf beiden Seiten eine längere Beschwerdedauer signifikant voraus. Die Autoren merkten an, dass unerkannte systemische Entzündungserkrankungen diesen Befund teilweise erklären könnten.',
-        'Auch rheumatoide Arthritis und Gicht können Fersenschmerzen verursachen. Wenn deine Fersenschmerzen auf beiden Seiten auftreten, die Steifigkeit jeden Morgen länger als 30\u00A0Minuten anhält oder andere Gelenke betroffen sind, sollte eine medizinische Fachperson nach einer entzündlichen Ursache suchen.',
+        'Auch rheumatoide Arthritis und Gicht können Fersenschmerzen verursachen. **Wenn deine Fersenschmerzen auf beiden Seiten auftreten, die Steifigkeit jeden Morgen länger als 30\u00A0Minuten anhält oder andere Gelenke betroffen sind, sollte eine medizinische Fachperson nach einer entzündlichen Ursache suchen.**',
       ],
       cites: [CITE.hansen, CITE.tuHeelPain],
     },
@@ -130,8 +130,16 @@ export const HEEL_PAIN_AT_NIGHT_DE: Guide = {
       h2: 'Was unterscheidet Fersenschmerzen nachts von Fersenschmerzen am Morgen?',
       paragraphs: [
         'Fersenschmerzen am Morgen und nachts klingen ähnlich, deuten aber in verschiedene Richtungen. Der Morgenschmerz, das stechende Ziehen beim ersten Schritt, das nach ein paar Minuten Gehen nachlässt, ist das Lehrbuchbild der Plantarfasziitis. Das Gewebe ist über Nacht steif geworden und wird unter Last abrupt gedehnt.',
-        'Nachtschmerz, also Schmerz, der kommt oder schlimmer wird, wenn du im Bett liegst und den Fuß nicht belastest, spricht für mehr als eine einfache Steifheit der Faszie. Die Erkrankungen, die am häufigsten mit echtem Ruheschmerz zusammenhängen, sind Ermüdungsbrüche, eingeklemmte Nerven, entzündliche Gelenkerkrankungen und selten Knochentumoren oder Infektionen.',
-        'Wenn du nicht sicher bist, welches Muster du hast, ein einfacher Test: Wird der Schmerz besser, nachdem du 5 bis 10\u00A0Minuten gegangen bist? Wenn ja, ist das Muster der Plantarfasziitis wahrscheinlicher, und die Seite [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) ist der bessere Ausgangspunkt. Wenn nein, lies hier weiter und denk darüber nach, zu einer medizinischen Fachperson zu gehen.',
+        'Nachtschmerz, also Schmerz, der kommt oder schlimmer wird, wenn du im Bett liegst und den Fuß nicht belastest, spricht für mehr als eine einfache Steifheit der Faszie. Die Erkrankungen, die am häufigsten mit echtem Ruheschmerz zusammenhängen, sind:',
+        {
+          list: [
+            'Ermüdungsbrüche.',
+            'Eingeklemmte Nerven.',
+            'Entzündliche Gelenkerkrankungen.',
+            'Selten Knochentumoren oder Infektionen.',
+          ],
+        },
+        'Wenn du nicht sicher bist, welches Muster du hast, ein einfacher Test: **Wird der Schmerz besser, nachdem du 5 bis 10\u00A0Minuten gegangen bist?** Wenn ja, ist das Muster der Plantarfasziitis wahrscheinlicher, und die Seite [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) ist der bessere Ausgangspunkt. Wenn nein, lies hier weiter und denk darüber nach, zu einer medizinischen Fachperson zu gehen.',
       ],
       cites: [CITE.guideline, CITE.tuHeelPain],
     },

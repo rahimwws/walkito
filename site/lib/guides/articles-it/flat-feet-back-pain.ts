@@ -29,8 +29,17 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
       h2: 'Il piede piatto può causare mal di schiena?',
       keyFact: 'Il Framingham Foot Study su 1.930\u00A0adulti non ha trovato un legame tra la forma piatta del piede e il mal di schiena lombare (Menz e colleghi, 2013).',
       paragraphs: [
-        'Non è stato dimostrato che il piede piatto causi mal di schiena. Alcuni studi trovano che le persone con piedi più piatti o che cedono verso l’interno riferiscono mal di schiena un po’ più spesso, altri non trovano alcun legame. Nessuno di questi studi può dimostrare che prima vengano i piedi e poi il mal di schiena.',
-        'Questa differenza conta perché il mal di schiena lombare è molto comune e di solito non ha una causa unica. Una revisione del 2018 su The Lancet lo dice chiaramente: in quasi tutte le persone con mal di schiena lombare non si riesce a identificare una fonte specifica del dolore. Solo una piccola parte ha una causa medica chiara, come una frattura, un’infezione o un tumore. Secondo quella revisione, le persone più a rischio includono chi fa lavori fisicamente pesanti, i fumatori, le persone con obesità e chi ha altri problemi di salute fisica o mentale. Con così tanti fattori in gioco, una storia semplice che va dal piede alla schiena è difficile da dimostrare.',
+        '**Non è stato dimostrato che il piede piatto causi mal di schiena.** Alcuni studi trovano che le persone con piedi più piatti o che cedono verso l’interno riferiscono mal di schiena un po’ più spesso, altri non trovano alcun legame. Nessuno di questi studi può dimostrare che prima vengano i piedi e poi il mal di schiena.',
+        'Questa differenza conta perché il mal di schiena lombare è molto comune e di solito non ha una causa unica. Una revisione del 2018 su The Lancet lo dice chiaramente: in quasi tutte le persone con mal di schiena lombare non si riesce a identificare una fonte specifica del dolore. Solo una piccola parte ha una causa medica chiara, come una frattura, un’infezione o un tumore. Secondo quella revisione, le persone più a rischio includono:',
+        {
+          list: [
+            'Chi fa lavori fisicamente pesanti.',
+            'I fumatori.',
+            'Le persone con obesità.',
+            'Chi ha altri problemi di salute fisica o mentale.',
+          ],
+        },
+        'Con così tanti fattori in gioco, una storia semplice che va dal piede alla schiena è difficile da dimostrare.',
         'Quindi la risposta onesta è «probabilmente non da solo, per la maggior parte delle persone». Il tuo mal di schiena merita di essere valutato come un problema a sé.',
       ],
       cites: [CITE.menz, CITE.hartvigsen],
@@ -40,8 +49,17 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
       keyFact: 'Nel Framingham Foot Study, le donne il cui piede cedeva verso l’interno camminando avevano circa 1,5\u00A0volte la probabilità di mal di schiena lombare, mentre la forma del piede in piedi non mostrava alcun legame (Menz e colleghi, 2013).',
       paragraphs: [
         'Il Framingham Foot Study è uno dei più grandi studi che hanno misurato direttamente i piedi, e non ha trovato un legame tra piede piatto e mal di schiena lombare. I ricercatori hanno esaminato 1.930\u00A0adulti della città di Framingham, in Massachusetts, tra il 2002 e il 2005. Hanno misurato l’arco in piedi di ogni persona da un’impronta e hanno diviso i piedi in piatti, normali o cavi. La forma del piede, piatta o no, non mostrava alcuna associazione con il mal di schiena lombare.',
-        'Lo studio ha misurato anche la funzione del piede, cioè come si spostava la pressione sotto il piede mentre ogni persona camminava. Un piede che cede verso l’interno camminando si dice pronato. Nelle donne, un modo di camminare pronato era legato al mal di schiena lombare, con circa 1,5\u00A0volte la probabilità rispetto alle donne con un movimento del piede normale. Il legame restava anche dopo aver tenuto conto di età, peso, fumo e sintomi depressivi. Negli uomini non c’era alcun legame.',
-        'Molti siti riportano questo studio come «chi ha il piede piatto ha il 50% di probabilità in più di avere mal di schiena». Non è quello che ha trovato. La forma dell’arco che vedi quando sei in piedi non contava. Contava, solo nelle donne, come si muoveva il piede camminando. E dato che lo studio ha misurato tutti una sola volta, non può dire se il movimento del piede abbia portato al mal di schiena, se il mal di schiena abbia cambiato il modo di camminare o se qualcos’altro abbia causato entrambi.',
+        'Lo studio ha misurato anche la funzione del piede, cioè come si spostava la pressione sotto il piede mentre ogni persona camminava. Un piede che cede verso l’interno camminando si dice pronato.',
+        'Nelle donne, un modo di camminare pronato era legato al mal di schiena lombare, con circa 1,5\u00A0volte la probabilità rispetto alle donne con un movimento del piede normale. Il legame restava anche dopo aver tenuto conto di età, peso, fumo e sintomi depressivi. Negli uomini non c’era alcun legame.',
+        'Molti siti riportano questo studio come «chi ha il piede piatto ha il 50% di probabilità in più di avere mal di schiena». Non è quello che ha trovato. **La forma dell’arco che vedi quando sei in piedi non contava.** Contava, solo nelle donne, come si muoveva il piede camminando.',
+        'E dato che lo studio ha misurato tutti una sola volta, non può dire se:',
+        {
+          list: [
+            'Il movimento del piede abbia portato al mal di schiena.',
+            'Il mal di schiena abbia cambiato il modo di camminare.',
+            'Qualcos’altro abbia causato entrambi.',
+          ],
+        },
       ],
       sourceNote:
         'Menz 2013: studio trasversale, n = 1.930. Funzione del piede pronata e mal di schiena lombare nelle donne, odds ratio 1,51 (IC al 95%: da 1,1 a 2,07); 1,48 (IC al 95%: da 1,07 a 2,05) dopo aggiustamento per età, peso, fumo e sintomi depressivi.',
@@ -52,8 +70,9 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
       keyFact: 'Su 97.279 reclute militari, il 5% di chi aveva il piede piatto lieve aveva mal di schiena lombare intermittente, come le reclute con piedi normali, contro il 10% di chi aveva il piede piatto moderato o grave (Kosashvili e colleghi, 2008).',
       paragraphs: [
         'In alcuni studi chi ha un piede piatto marcato riferisce mal di schiena un po’ più spesso, ma chi ha un piede piatto lieve no. La raccolta di dati più grande viene da 97.279 giovani reclute militari, in cui un medico ortopedico ha classificato il piede piatto di ogni recluta. Il 16% aveva il piede piatto, e nella maggior parte dei casi (74%) era lieve.',
-        'Il mal di schiena lombare intermittente, cioè un mal di schiena senza reperti alla visita o alla radiografia, compariva nel 5% delle reclute con piedi normali e nel 5% di quelle con piede piatto lieve. Era il 10% in chi aveva il piede piatto moderato o grave. Quindi per la maggior parte dei piedi piatti, quelli lievi, non c’era alcuna differenza.',
-        'Un sondaggio del 2021 su 1.798\u00A0adulti intervistati durante un festival in Arabia Saudita ha riportato numeri molto più alti: il 65,9% delle persone con piede piatto diceva di avere mal di schiena lombare, e il piede piatto si accompagnava a una probabilità 3,3\u00A0volte più alta di mal di schiena di breve durata e 4,5\u00A0volte più alta di mal di schiena di lunga durata. Un sondaggio come questo guarda piedi e schiena in un solo momento, in chi per caso si è fermato a partecipare, e le persone dicevano da sole se avevano il piede piatto. Non può escludere altre spiegazioni, e gli stessi ricercatori hanno trovato che anche sesso, età, lavoro e attività fisica erano legati al mal di schiena.',
+        'Il mal di schiena lombare intermittente, cioè un mal di schiena senza reperti alla visita o alla radiografia, compariva nel 5% delle reclute con piedi normali e nel 5% di quelle con piede piatto lieve. Era il 10% in chi aveva il piede piatto moderato o grave. **Quindi per la maggior parte dei piedi piatti, quelli lievi, non c’era alcuna differenza.**',
+        'Un sondaggio del 2021 su 1.798\u00A0adulti intervistati durante un festival in Arabia Saudita ha riportato numeri molto più alti: il 65,9% delle persone con piede piatto diceva di avere mal di schiena lombare, e il piede piatto si accompagnava a una probabilità 3,3\u00A0volte più alta di mal di schiena di breve durata e 4,5\u00A0volte più alta di mal di schiena di lunga durata.',
+        'Un sondaggio come questo guarda piedi e schiena in un solo momento, in chi per caso si è fermato a partecipare, e le persone dicevano da sole se avevano il piede piatto. Non può escludere altre spiegazioni, e gli stessi ricercatori hanno trovato che anche sesso, età, lavoro e attività fisica erano legati al mal di schiena.',
       ],
       cites: [CITE.kosashvili, CITE.almutairi],
     },
@@ -61,7 +80,7 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
       h2: 'In che modo il piede piatto potrebbe influire sulla schiena?',
       keyFact: 'In uno studio di laboratorio su 20\u00A0persone, plantari che facevano cedere i piedi verso l’interno inclinavano il bacino in media di circa mezzo grado camminando (Hornestam e colleghi, 2021).',
       paragraphs: [
-        'La spiegazione più comune è la catena cinetica: l’idea che le articolazioni dal piede alla colonna si muovano come un sistema collegato, per cui un piede che cede verso l’interno fa ruotare verso l’interno tibia e coscia, inclina il bacino e carica la parte bassa della schiena in modo diverso. La meccanica è reale, ma l’entità dell’effetto sembra piccola.',
+        'La spiegazione più comune è la catena cinetica: l’idea che le articolazioni dal piede alla colonna si muovano come un sistema collegato, per cui un piede che cede verso l’interno fa ruotare verso l’interno tibia e coscia, inclina il bacino e carica la parte bassa della schiena in modo diverso. **La meccanica è reale, ma l’entità dell’effetto sembra piccola.**',
         'In uno studio di laboratorio del 2021, 20\u00A0persone hanno camminato con plantari a cuneo che facevano cedere i piedi verso l’interno. Il bacino si inclinava un po’ di più da un lato (in media circa mezzo grado) e l’anca ruotava verso l’interno di circa 1,4\u00A0gradi. Questo dimostra che il piede può spostare un po’ il bacino. Non dimostra che mezzo grado causi dolore, e lo studio non ha misurato il dolore.',
         'La catena cinetica è un’idea ragionevole che un professionista sanitario può verificare nella singola persona. Non è un motivo per dare per scontato che i tuoi archi siano dietro il tuo mal di schiena.',
       ],
@@ -73,9 +92,18 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
       paragraphs: [
         'Per il mal di schiena, plantari e ortesi hanno prove contrastanti e di bassa qualità, e i benefici visti finora sono durati poco. Le ortesi sono inserti sagomati per le scarpe, e quelle su misura si fanno da un calco o da una scansione del piede.',
         'Una revisione del 2014 ha messo insieme cinque studi sui plantari in persone che avevano già mal di schiena lombare (293\u00A0persone) e non ha trovato un effetto significativo. Altri sei studi (2.379\u00A0persone) hanno provato i plantari per prevenire il mal di schiena e anche loro non hanno trovato un effetto significativo.',
-        'Lo studio singolo più noto, del 2017, ha assegnato 225\u00A0adulti con mal di schiena da almeno tre mesi a ortesi su misura, a ortesi più sedute dal chiropratico o a nulla (una lista d’attesa). Dopo circa un mese e mezzo, il gruppo con le sole ortesi aveva meno dolore e una funzione migliore della lista d’attesa. A tre mesi e più avanti, i gruppi non erano più diversi. Le persone dello studio non erano state scelte perché avevano il piede piatto, e il confronto era con nessun intervento, non con un plantare finto.',
-        'Due filoni di ricerca più piccoli hanno studiato persone con piedi che cedono verso l’interno. Uno studio del 2013 su 51\u00A0persone con mal di schiena cronico e piedi molto pronati ha trovato che le ortesi su misura riducevano il mal di schiena più dei plantari placebo nell’arco di circa un mese. Una revisione del 2025 ha messo insieme quattro piccoli studi in questo gruppo e ha trovato meno dolore e disabilità. Una revisione del 2026 su sette studi (423\u00A0persone) ha trovato che le ortesi aiutavano il dolore nel complesso, ma ha giudicato le prove di bassa qualità e non ha trovato un effetto chiaro dei plantari già pronti.',
-        'I plantari per il comfort del piede sono ragionevoli e a basso rischio. Non aspettarti che risolvano da soli un problema alla schiena. [Plantari o esercizi](/it/plantari-o-esercizi/) spiega questa scelta dal lato del piede.',
+        'Lo studio singolo più noto, del 2017, ha assegnato 225\u00A0adulti con mal di schiena da almeno tre mesi a:',
+        {
+          list: [
+            'Ortesi su misura.',
+            'Ortesi più sedute dal chiropratico.',
+            'Nulla (una lista d’attesa).',
+          ],
+        },
+        'Dopo circa un mese e mezzo, il gruppo con le sole ortesi aveva meno dolore e una funzione migliore della lista d’attesa. A tre mesi e più avanti, i gruppi non erano più diversi. Le persone dello studio non erano state scelte perché avevano il piede piatto, e il confronto era con nessun intervento, non con un plantare finto.',
+        'Due filoni di ricerca più piccoli hanno studiato persone con piedi che cedono verso l’interno. Uno studio del 2013 su 51\u00A0persone con mal di schiena cronico e piedi molto pronati ha trovato che le ortesi su misura riducevano il mal di schiena più dei plantari placebo nell’arco di circa un mese. Una revisione del 2025 ha messo insieme quattro piccoli studi in questo gruppo e ha trovato meno dolore e disabilità.',
+        'Una revisione del 2026 su sette studi (423\u00A0persone) ha trovato che le ortesi aiutavano il dolore nel complesso, ma ha giudicato le prove di bassa qualità e non ha trovato un effetto chiaro dei plantari già pronti.',
+        'I plantari per il comfort del piede sono ragionevoli e a basso rischio. **Non aspettarti che risolvano da soli un problema alla schiena.** [Plantari o esercizi](/it/plantari-o-esercizi/) spiega questa scelta dal lato del piede.',
       ],
       table: {
         caption: 'Studi su plantari e ortesi per il mal di schiena lombare',
@@ -97,7 +125,7 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
       keyFact: 'Una revisione Cochrane del 2021 su 249\u00A0studi ha trovato che l’esercizio riduceva il mal di schiena lombare cronico di circa 15\u00A0punti su una scala da 100, rispetto a nessun esercizio, all’assistenza abituale o al placebo (Hayden e colleghi, 2021).',
       paragraphs: [
         'Per il mal di schiena, l’esercizio in generale ha prove molto più solide di qualsiasi cosa rivolta ai piedi. Una revisione Cochrane del 2021, un’ampia sintesi degli studi, ha messo insieme 249\u00A0studi sull’esercizio per il mal di schiena lombare cronico. Ha trovato prove di certezza moderata che l’esercizio riduceva il dolore di circa 15\u00A0punti su una scala da 100, rispetto a nessun esercizio, all’assistenza abituale o al placebo. L’effetto sulla funzione quotidiana era più piccolo, circa 7\u00A0punti.',
-        'Gli studi includevano molti tipi di esercizio, e 151 di loro hanno provato due o più tipi insieme. L’esercizio ha anche ridotto il dolore più dei soli consigli o della sola informazione. Per la maggior parte delle persone, la cosa pratica è scegliere un’attività regolare che riesci a mantenere, meglio se all’inizio con l’aiuto di un fisioterapista.',
+        'Gli studi includevano molti tipi di esercizio, e 151 di loro hanno provato due o più tipi insieme. L’esercizio ha anche ridotto il dolore più dei soli consigli o della sola informazione. Per la maggior parte delle persone, la cosa pratica è **scegliere un’attività regolare che riesci a mantenere**, meglio se all’inizio con l’aiuto di un fisioterapista.',
         'La revisione del 2018 su The Lancet aggiunge qualcosa di rassicurante: la maggior parte dei nuovi episodi di mal di schiena lombare si calma in fretta, anche se il mal di schiena spesso ritorna. Se il problema principale è la schiena, un fisioterapista o un medico può costruire un piano per la schiena su misura per te. Il lavoro sui piedi può affiancarlo, non sostituirlo.',
       ],
       sourceNote:
@@ -109,7 +137,8 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
       keyFact: 'In uno studio su 52\u00A0persone con piede piatto flessibile, un programma di piede corto, esercizi per caviglia e anca e allungamenti ha cambiato due misure della forma dell’arco più che in un gruppo di controllo (Brijwasi e Borkar, 2023).',
       paragraphs: [
         'Lavorare sul piede piatto ha senso se sono i piedi stessi a farti male, a stancarsi in fretta o a sembrarti instabili. Non è un programma per la schiena, e nessuno studio ha dimostrato che gli esercizi per i piedi da soli riducano il mal di schiena.',
-        'Nel piede piatto flessibile, in cui l’arco torna quando sollevi il piede, uno studio su 52\u00A0persone ha trovato che esercizi del piede corto, lavoro sulla caviglia, rinforzo dell’anca e allungamenti, fatti insieme, cambiavano la forma dell’arco più che in un gruppo di controllo. Quello studio ha misurato la forma dell’arco, non il dolore. Una revisione del 2024 sull’allenamento del piede corto da solo non ha trovato un cambiamento chiaro nella postura del piede nel complesso. Il programma completo, con dosi e progressioni, è in [esercizi per il piede piatto](/it/esercizi-piede-piatto/). Tre degli esercizi principali sono qui sotto.',
+        'Nel piede piatto flessibile, in cui l’arco torna quando sollevi il piede, uno studio su 52\u00A0persone ha trovato che esercizi del piede corto, lavoro sulla caviglia, rinforzo dell’anca e allungamenti, fatti insieme, cambiavano la forma dell’arco più che in un gruppo di controllo. Quello studio ha misurato la forma dell’arco, non il dolore. Una revisione del 2024 sull’allenamento del piede corto da solo non ha trovato un cambiamento chiaro nella postura del piede nel complesso.',
+        'Il programma completo, con dosi e progressioni, è in [esercizi per il piede piatto](/it/esercizi-piede-piatto/). Tre degli esercizi principali sono qui sotto.',
         'Walkito li inserisce in un piano settimanale per i piedi e fa partire il piede corto da 3\u00A0serie da 8 con tenute di 5\u00A0secondi. Non agisce direttamente sulla schiena, e non dice di farlo.',
         'Se un esercizio porta il dolore al piede a **6/10 o più**, o fa partire mal di schiena o dolore lungo la gamba, fermati per quel giorno.',
       ],
@@ -157,9 +186,19 @@ export const FLAT_FEET_BACK_PAIN_IT: Guide = {
       h2: 'Cosa deve controllare il medico o il fisioterapista?',
       keyFact: 'I problemi gravi della colonna sono rari, e un quadro di riferimento internazionale per i professionisti sanitari elenca i segnali d’allarme da escludere per primi (Finucane e colleghi, 2020).',
       paragraphs: [
-        'Un professionista sanitario guarda la schiena e i piedi come due domande separate, e parte dalla schiena. Il primo compito è escludere le rare cause gravi di mal di schiena: compressione di un nervo, frattura, infezione o tumore. Un quadro di riferimento internazionale per i professionisti sanitari elenca i segnali d’allarme da cercare, e li trovi nell’elenco alla fine di questa pagina.',
+        'Un professionista sanitario guarda la schiena e i piedi come due domande separate, e **parte dalla schiena**. Il primo compito è escludere le rare cause gravi di mal di schiena:',
+        {
+          list: [
+            'Compressione di un nervo.',
+            'Frattura.',
+            'Infezione.',
+            'Tumore.',
+          ],
+        },
+        'Un quadro di riferimento internazionale per i professionisti sanitari elenca i segnali d’allarme da cercare, e li trovi nell’elenco alla fine di questa pagina.',
         'Per la schiena, aspettati domande su come è iniziato il dolore, cosa lo calma e se si irradia lungo una gamba. La visita di solito controlla come si muove la schiena, più forza, riflessi e sensibilità di gambe e piedi. Di solito non servono esami di imaging, a meno che qualcosa non faccia pensare a una causa grave.',
-        'Per i piedi, il professionista controlla se il piede piatto è flessibile (l’arco torna quando sali sulle punte o sollevi il piede) o rigido (resta piatto). Un piede piatto rigido, o un arco che si è abbassato da adulti con dolore all’interno della caviglia, richiede una valutazione a parte. Il secondo caso è spesso un tendine che si indebolisce, spiegato in [disfunzione del tendine tibiale posteriore](/it/disfunzione-tendine-tibiale-posteriore/). Il professionista può anche guardarti camminare per vedere quanto cedono i tuoi piedi verso l’interno.',
+        'Per i piedi, il professionista controlla se il piede piatto è flessibile (l’arco torna quando sali sulle punte o sollevi il piede) o rigido (resta piatto).',
+        'Un piede piatto rigido, o un arco che si è abbassato da adulti con dolore all’interno della caviglia, richiede una valutazione a parte. Il secondo caso è spesso un tendine che si indebolisce, spiegato in [disfunzione del tendine tibiale posteriore](/it/disfunzione-tendine-tibiale-posteriore/). Il professionista può anche guardarti camminare per vedere quanto cedono i tuoi piedi verso l’interno.',
         'Anche i problemi alla schiena possono dare sintomi al piede. Un nervo schiacciato nella parte bassa della schiena può dare intorpidimento, formicolio o debolezza al piede, e un piede debole può sembrare un problema del piede quando la causa è più in alto.',
       ],
       cites: [CITE.finucaneRedFlags, CITE.hartvigsen],

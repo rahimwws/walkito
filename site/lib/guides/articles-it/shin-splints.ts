@@ -31,7 +31,8 @@ export const SHIN_SPLINTS_IT: Guide = {
     'La periostite tibiale è un dolore lungo il bordo interno della tibia, distribuito su diversi centimetri invece che in un solo punto. Il nome clinico è sindrome da stress tibiale mediale, o MTSS. La maggior parte delle pagine elenca esercizi come se fosse provato che accelerano il recupero. Una revisione sistematica del 2013 su tutti gli studi sui trattamenti ha trovato che non è stato dimostrato che allungamenti ed esercizi di rinforzo lo accorcino.',
   intro: [
     'Questo non vuol dire che l’esercizio sia inutile. Gli esercizi qui sotto lavorano su resistenza del polpaccio, forza della tibia e controllo dell’anca, le aree in cui i ricercatori hanno trovato differenze tra chi ha la periostite tibiale e chi no. Uno studio caso-controllo ha trovato che i runner con periostite tibiale riuscivano a fare meno sollevamenti sulle punte fino all’esaurimento rispetto a controlli appaiati senza il problema.',
-    'Se ricostruire quella resistenza accorci il recupero è ancora una domanda aperta. La leva più sicura, in tutti gli studi finora, è ridurre il carico di corsa che l’ha causata. Il sollevamento sulle punte in sé, con quante ripetizioni fare e quando aggiungere carico, è spiegato più a fondo in [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/). Se passi la giornata in piedi invece di correre, [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) tratta gli stessi esercizi per polpaccio e arco per quella causa.',
+    'Se ricostruire quella resistenza accorci il recupero è ancora una domanda aperta. La leva più sicura, in tutti gli studi finora, è ridurre il carico di corsa che l’ha causata.',
+    'Il sollevamento sulle punte in sé, con quante ripetizioni fare e quando aggiungere carico, è spiegato più a fondo in [sollevamenti sulle punte per la fascite plantare](/it/sollevamenti-tallone-fascite-plantare/). Se passi la giornata in piedi invece di correre, [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) tratta gli stessi esercizi per polpaccio e arco per quella causa.',
   ],
   toc: true,
   takeaways: [
@@ -46,7 +47,16 @@ export const SHIN_SPLINTS_IT: Guide = {
       keyFact: 'Una revisione sistematica del 2013 su 11\u00A0studi sui trattamenti per la periostite tibiale ha concluso che nessun approccio di allungamento o rinforzo aveva prove chiare di accelerare il recupero (Winters e colleghi, 2013).',
       paragraphs: [
         'La periostite tibiale, o sindrome da stress tibiale mediale, è un infortunio da sovraccarico della tibia e dei tessuti intorno. Il dolore di solito è diffuso, distribuito lungo il bordo interno della tibia per diversi centimetri, e in genere inizia durante o dopo la corsa. Una revisione del 2020 su runner principianti e amatoriali ha trovato che i legami più chiari riguardavano il modo in cui i runner si muovono, tra cui più rotazione dell’anca e un piede che ruota verso l’interno più del solito.',
-        'La risposta onesta sugli esercizi per la periostite tibiale è che nessun programma di esercizi specifico ha dimostrato di accelerare il recupero in uno studio controllato. Una revisione sistematica del 2013 ha esaminato 11\u00A0studi sui trattamenti e ha concluso che allungamenti e rinforzo «non si sono dimostrati efficaci nel trattamento della MTSS». Nell’unico studio randomizzato con un gruppo di esercizio, 74\u00A0atleti sono stati divisi in tre gruppi: un programma di corsa graduale da solo, lo stesso programma più allungamenti e rinforzo del polpaccio, e lo stesso programma più calze a compressione. Tutti e tre i gruppi sono migliorati a un ritmo simile.',
+        'La risposta onesta sugli esercizi per la periostite tibiale è che **nessun programma di esercizi specifico ha dimostrato di accelerare il recupero in uno studio controllato.** Una revisione sistematica del 2013 ha esaminato 11\u00A0studi sui trattamenti e ha concluso che allungamenti e rinforzo «non si sono dimostrati efficaci nel trattamento della MTSS».',
+        'Nell’unico studio randomizzato con un gruppo di esercizio, 74\u00A0atleti sono stati divisi in tre gruppi:',
+        {
+          list: [
+            'Un programma di corsa graduale da solo.',
+            'Lo stesso programma più allungamenti e rinforzo del polpaccio.',
+            'Lo stesso programma più calze a compressione.',
+          ],
+        },
+        'Tutti e tre i gruppi sono migliorati a un ritmo simile.',
         'Quindi gli esercizi qui sotto non sono un protocollo dedicato alla periostite tibiale. Sono esercizi generali per la gamba e l’anca già presenti nel catalogo, che lavorano sui muscoli e sulle articolazioni studiati dai ricercatori in chi ha la periostite tibiale. L’approccio più sensato resta ridurre il carico di corsa e ricostruirlo piano.',
       ],
       cites: [CITE.mtssReview, CITE.winters, CITE.moen],
@@ -198,8 +208,9 @@ export const SHIN_SPLINTS_IT: Guide = {
       h2: 'Che differenza c’è tra periostite tibiale e frattura da stress?',
       paragraphs: [
         'Distinguere la periostite tibiale da una frattura da stress conta, perché le due richiedono risposte diverse. La sindrome da stress tibiale mediale e le fratture da stress della tibia stanno sulla stessa linea continua di lesioni ossee da stress. Sotto un carico continuo, la periostite tibiale può evolvere verso una frattura da stress, ed è il motivo principale per cambiare presto il carico di allenamento invece di continuare a correre con un dolore diffuso alla tibia.',
-        'La periostite tibiale di solito dà una dolorabilità diffusa, distribuita lungo diversi centimetri della parte interna della tibia. Una frattura da stress dà una dolorabilità localizzata in un piccolo punto, spesso con gonfiore. Un dolore che si calma con il riscaldamento fa pensare più alla periostite tibiale. Un dolore che continua ad aumentare durante la corsa, o che compare a riposo o di notte, fa pensare più a una frattura da stress. Un dolore dietro il tallone invece che alla tibia è un altro problema, di solito il tendine d’Achille; vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) se il tuo è lì.',
-        'Una verifica casalinga spesso citata è un saltello su una gamba che riproduce un dolore acuto e localizzato, che farebbe pensare a una frattura. Ma una revisione del 2011 su American Family Physician non ha trovato prove recenti che ne confermino l’accuratezza, e un test del saltello positivo si vedeva anche in quasi metà dei pazienti con periostite tibiale confermata. Quindi un saltello positivo è un motivo per farti visitare, non un modo affidabile per confermare o escludere da solo una frattura.',
+        'La periostite tibiale di solito dà una dolorabilità diffusa, distribuita lungo diversi centimetri della parte interna della tibia. Una frattura da stress dà una dolorabilità localizzata in un piccolo punto, spesso con gonfiore. Un dolore che si calma con il riscaldamento fa pensare più alla periostite tibiale. Un dolore che continua ad aumentare durante la corsa, o che compare a riposo o di notte, fa pensare più a una frattura da stress.',
+        'Un dolore dietro il tallone invece che alla tibia è un altro problema, di solito il tendine d’Achille; vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) se il tuo è lì.',
+        'Una verifica casalinga spesso citata è un saltello su una gamba che riproduce un dolore acuto e localizzato, che farebbe pensare a una frattura. Ma una revisione del 2011 su American Family Physician non ha trovato prove recenti che ne confermino l’accuratezza, e un test del saltello positivo si vedeva anche in quasi metà dei pazienti con periostite tibiale confermata. **Quindi un saltello positivo è un motivo per farti visitare, non un modo affidabile per confermare o escludere da solo una frattura.**',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -208,16 +219,42 @@ export const SHIN_SPLINTS_IT: Guide = {
       keyFact: 'Uno studio del 2008 su 532\u00A0runner principianti non ha trovato differenze nei tassi di infortunio tra un aumento settimanale dei chilometri del 10% e una progressione più rapida, quindi quella regola resta non dimostrata (Buist e colleghi, 2008).',
       paragraphs: [
         'Nessuno studio ti dice esattamente di quanto ridurre. Quello che ha un certo sostegno è la forma di un programma di corsa graduale: nell’unico studio randomizzato, tutti e tre i gruppi seguivano un ritorno progressivo alla corsa, e tutti e tre sono migliorati più o meno allo stesso ritmo. La costante era il programma di corsa, non gli esercizi aggiunti o la compressione.',
-        'Un dolore acuto durante la corsa, un dolore che peggiora mentre corri o un dolore a riposo sono motivi per fermarti e farti controllare invece di continuare. Se il dolore si calma con il riscaldamento e resta gestibile, una corsa più breve o più facile e meno frequente è una via di mezzo ragionevole mentre la tibia si adatta. I giorni di riposo tra una corsa e l’altra danno all’osso il tempo di rispondere al carico.',
-        'La regola del 10%, cioè non aggiungere più del 10% ai chilometri settimanali, è un criterio spesso citato ma non dimostrato. Uno studio del 2008 su 532\u00A0runner principianti non ha trovato differenze nei tassi di infortunio tra un programma basato sulla regola del 10% e uno più rapido. Quello che ha mostrato uno studio del 2014 su 874\u00A0runner è che grandi aumenti improvvisi della distanza portano più infortuni. Graduale è meglio di improvviso, ma una percentuale precisa non ha il sostegno degli studi. [Dolore al tallone quando corri](/heel-pain-runners/) (in inglese) spiega più nel dettaglio lo stesso modo di gestire il carico.',
+        'Motivi per fermarti e farti controllare invece di continuare:',
+        {
+          list: [
+            'Un dolore acuto durante la corsa.',
+            'Un dolore che peggiora mentre corri.',
+            'Un dolore a riposo.',
+          ],
+        },
+        'Se il dolore si calma con il riscaldamento e resta gestibile, una corsa più breve o più facile e meno frequente è una via di mezzo ragionevole mentre la tibia si adatta. I giorni di riposo tra una corsa e l’altra danno all’osso il tempo di rispondere al carico.',
+        'La regola del 10%, cioè non aggiungere più del 10% ai chilometri settimanali, è un criterio spesso citato ma non dimostrato. Uno studio del 2008 su 532\u00A0runner principianti non ha trovato differenze nei tassi di infortunio tra un programma basato sulla regola del 10% e uno più rapido.',
+        'Quello che ha mostrato uno studio del 2014 su 874\u00A0runner è che grandi aumenti improvvisi della distanza portano più infortuni. **Graduale è meglio di improvviso, ma una percentuale precisa non ha il sostegno degli studi.** [Dolore al tallone quando corri](/heel-pain-runners/) (in inglese) spiega più nel dettaglio lo stesso modo di gestire il carico.',
       ],
       cites: [CITE.moen, CITE.buist, CITE.nielsen],
     },
     {
       h2: 'Quali cambiamenti nell’allenamento evitano davvero che la periostite tibiale torni?',
       paragraphs: [
-        'Nessun singolo esercizio ha dimostrato in uno studio di prevenire la periostite tibiale. I fattori di rischio individuati da due meta-analisi indipendenti indicano una gestione generale del carico di allenamento e una progressione graduale, non un allungamento o un esercizio di rinforzo in particolare. I fattori di rischio costanti in entrambe le revisioni erano un IMC più alto, un navicular drop maggiore (quanto l’arco si abbassa sotto carico), il sesso femminile, meno anni di esperienza nella corsa e una storia precedente di periostite tibiale.',
-        'Uno schema generale per tornare a correre: prima camminare senza dolore, poi corsa leggera su superfici morbide con giorni di riposo in mezzo, poi corse via via più lunghe finché le mattine restano senza dolore. Ogni giorno che riproduce un dolore acuto o localizzato, o un dolore che aumenta durante la corsa invece di calmarsi con il riscaldamento, è un segnale per fermarti, non per stringere i denti.',
+        'Nessun singolo esercizio ha dimostrato in uno studio di prevenire la periostite tibiale. I fattori di rischio individuati da due meta-analisi indipendenti indicano una gestione generale del carico di allenamento e una progressione graduale, non un allungamento o un esercizio di rinforzo in particolare. I fattori di rischio costanti in entrambe le revisioni erano:',
+        {
+          list: [
+            'Un IMC più alto.',
+            'Un navicular drop maggiore (quanto l’arco si abbassa sotto carico).',
+            'Il sesso femminile.',
+            'Meno anni di esperienza nella corsa.',
+            'Una storia precedente di periostite tibiale.',
+          ],
+        },
+        'Uno schema generale per tornare a correre:',
+        {
+          list: [
+            'Prima camminare senza dolore.',
+            'Poi corsa leggera su superfici morbide con giorni di riposo in mezzo.',
+            'Poi corse via via più lunghe finché le mattine restano senza dolore.',
+          ],
+        },
+        'Ogni giorno che riproduce un dolore acuto o localizzato, o un dolore che aumenta durante la corsa invece di calmarsi con il riscaldamento, **è un segnale per fermarti, non per stringere i denti.**',
       ],
       cites: [CITE.newman, CITE.hamstraWright],
     },
@@ -227,7 +264,7 @@ export const SHIN_SPLINTS_IT: Guide = {
       paragraphs: [
         'Le fonti variano e nessuna indica un unico numero sostenuto dagli studi. Le indicazioni generali sugli infortuni da sovraccarico dicono che i casi lievi si calmano in poche settimane di attività ridotta, mentre i casi legati a errori di allenamento ricorrenti possono richiedere più tempo se lo stesso carico torna prima che il tessuto si sia adattato.',
         'Nello studio randomizzato su 74\u00A0atleti con periostite tibiale, il tempo medio per completare il programma di corsa era di circa 102-118\u00A0giorni nei tre gruppi (media complessiva 105\u00A0giorni), anche se l’intervallo era ampio.',
-        'Visto che la periostite tibiale e le fratture da stress della tibia stanno sulla stessa linea continua, un dolore che non migliora dopo qualche settimana di corsa più leggera e giorni di riposo è un motivo per farlo controllare invece di aspettare ancora. Il segno più chiaro di recupero è camminare senza dolore e poi correre piano senza dolore, in quest’ordine, prima che i chilometri tornino a salire.',
+        'Visto che la periostite tibiale e le fratture da stress della tibia stanno sulla stessa linea continua, un dolore che non migliora dopo qualche settimana di corsa più leggera e giorni di riposo è un motivo per farlo controllare invece di aspettare ancora. **Il segno più chiaro di recupero è camminare senza dolore e poi correre piano senza dolore, in quest’ordine, prima che i chilometri tornino a salire.**',
       ],
       cites: [CITE.moen],
     },

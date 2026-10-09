@@ -21,7 +21,8 @@ export const NURSES_PT: Guide = {
   lede:
     'Quem trabalha na enfermagem anda mais em um único plantão do que a maioria das pessoas anda em um dia, e faz isso em chão duro, com calçados que nem sempre servem bem. Problemas nos pés e nos tornozelos estão entre as queixas musculoesqueléticas mais comuns na enfermagem, relatados por mais da metade das enfermeiras de hospital em um período de 12\u00A0meses em uma pesquisa. A maior parte do que ajuda, como alongar a panturrilha, exercícios para o arco e meias de compressão, cabe em poucos minutos antes ou depois do plantão.',
   intro: [
-    'Esta página trata da dor nos pés que vem das exigências do trabalho na enfermagem: ficar muito tempo em pé, andar longas distâncias e turnos que mudam. Se a sua dor é aguda e pior nos primeiros passos depois de descansar, esse padrão aponta para fascite plantar, e os exercícios em [exercícios e alongamentos para fascite plantar](/pt/exercicios-fascite-plantar/) são o guia mais completo. Se você não tem certeza, [por que os pés doem depois de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) mostra onde a dor geral de ficar em pé e os problemas com nome se sobrepõem.',
+    'Esta página trata da dor nos pés que vem das exigências do trabalho na enfermagem: ficar muito tempo em pé, andar longas distâncias e turnos que mudam. Se a sua dor é aguda e pior nos primeiros passos depois de descansar, esse padrão aponta para fascite plantar, e os exercícios em [exercícios e alongamentos para fascite plantar](/pt/exercicios-fascite-plantar/) são o guia mais completo.',
+    'Se você não tem certeza, [por que os pés doem depois de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) mostra onde a dor geral de ficar em pé e os problemas com nome se sobrepõem.',
   ],
   toc: true,
   takeaways: [
@@ -35,7 +36,8 @@ export const NURSES_PT: Guide = {
     {
       h2: 'Dor nos pés é comum na enfermagem?',
       paragraphs: [
-        'A dor nos pés e nos tornozelos está entre as três queixas musculoesqueléticas mais comuns na enfermagem, junto com a dor lombar e a dor no pescoço. Em uma pesquisa com 312\u00A0enfermeiras de um hospital pediátrico, 55,3% relataram problemas musculoesqueléticos nos pés ou nos tornozelos nos últimos 12\u00A0meses, e 43,8% tiveram sintomas só nos últimos sete dias. Uma em cada seis disse que a dor limitava a sua atividade física. Fazer plantões de 12\u00A0horas na UTI foi o único fator do trabalho que aumentou de forma independente as chances de problemas nos pés que incapacitam.',
+        '**A dor nos pés e nos tornozelos está entre as três queixas musculoesqueléticas mais comuns na enfermagem**, junto com a dor lombar e a dor no pescoço. Em uma pesquisa com 312\u00A0enfermeiras de um hospital pediátrico, 55,3% relataram problemas musculoesqueléticos nos pés ou nos tornozelos nos últimos 12\u00A0meses, e 43,8% tiveram sintomas só nos últimos sete dias.',
+        'Uma em cada seis disse que a dor limitava a sua atividade física. Fazer plantões de 12\u00A0horas na UTI foi o único fator do trabalho que aumentou de forma independente as chances de problemas nos pés que incapacitam.',
         'Outro estudo, com 636\u00A0enfermeiras de hospital no Japão, encontrou que 51% relataram dor ou incapacidade nos pés no último mês, avaliadas com um questionário validado. A prevalência de dor que impedia o trabalho normal foi de 17%. Um estudo com rastreadores em enfermeiras coreanas encontrou uma média de 5,8\u00A0km andados por plantão, uma exigência física bem acima da população em geral.',
         'Um estudo transversal com 411\u00A0enfermeiras finlandesas encontrou que pele ressecada, dor nos pés e calos eram as queixas mais comuns nos pés, e que os problemas nos pés estavam associados a uma menor capacidade para o trabalho. Os autores pediram que a prevenção de problemas nos pés na enfermagem fosse uma prioridade.',
       ],
@@ -46,7 +48,7 @@ export const NURSES_PT: Guide = {
       paragraphs: [
         'Três coisas se somam em um plantão: ficar muito tempo em pé, andar longas distâncias e chão duro. Ficar parado em pé põe carga na fáscia plantar, nos músculos da panturrilha e no coxim do calcanhar sem o bombeamento que a caminhada dá. Caminhar ajuda o sangue a voltar das pernas, mas na enfermagem você alterna sem previsão entre ficar parado ao lado de um leito e andar por corredores longos, então a bomba da panturrilha nunca entra num ritmo constante.',
         'Uma revisão de 2015 da literatura de saúde ocupacional associou ficar muito tempo em pé no trabalho a desconforto musculoesquelético, cansaço e dor nas pernas em muitas profissões em pé, e citou a enfermagem como um dos grupos de maior risco. A revisão observou que o esforço cardiovascular e o inchaço nas pernas aumentam com o tempo em pé.',
-        'No nível dos tecidos, uma panturrilha tensa é uma peça-chave. Um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100\u00A0controles pareados encontrou que a flexibilidade reduzida do tornozelo, ou seja, o tornozelo não consegue dobrar para cima tanto quanto deveria porque a panturrilha está tensa, foi o fator de risco independente mais forte para fascite plantar, com chances 23,3\u00A0vezes maiores. Ficar em pé a maior parte do dia de trabalho multiplicou as chances por 3,6. Na enfermagem, os dois fatores de risco aparecem juntos.',
+        'No nível dos tecidos, uma panturrilha tensa é uma peça-chave. Um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100\u00A0controles pareados encontrou que a flexibilidade reduzida do tornozelo, ou seja, o tornozelo não consegue dobrar para cima tanto quanto deveria porque a panturrilha está tensa, foi o fator de risco independente mais forte para fascite plantar, com chances 23,3\u00A0vezes maiores. Ficar em pé a maior parte do dia de trabalho multiplicou as chances por 3,6. **Na enfermagem, os dois fatores de risco aparecem juntos.**',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -54,7 +56,7 @@ export const NURSES_PT: Guide = {
       h2: 'Quais exercícios ajudam a dor nos pés na enfermagem?',
       keyFact: 'A diretriz de 2023 para dor no calcanhar dá ao alongamento da panturrilha e da fáscia plantar o grau A, o mais alto, e ao treino de força o grau B (Koc e colegas, 2023).',
       paragraphs: [
-        'Os exercícios que ajudam são os mesmos que miram a fascite plantar e a dor nos pés de ficar em pé: alongamentos da panturrilha, um alongamento da fáscia plantar, elevação de calcanhar para a força da panturrilha e um exercício para o arco chamado pé curto. A diferença na enfermagem é encaixar tudo em volta dos turnos que mudam, não durante o plantão. Alguns minutos antes ou depois do plantão bastam para cobrir os mais importantes.',
+        'Os exercícios que ajudam são os mesmos que miram a fascite plantar e a dor nos pés de ficar em pé: alongamentos da panturrilha, um alongamento da fáscia plantar, elevação de calcanhar para a força da panturrilha e um exercício para o arco chamado pé curto. A diferença na enfermagem é encaixar tudo em volta dos turnos que mudam, não durante o plantão. **Alguns minutos antes ou depois do plantão bastam para cobrir os mais importantes.**',
         'A diretriz de 2023 para dor no calcanhar dá ao alongamento da panturrilha e da fáscia plantar o grau máximo, A, e ao treino de força um B. Os dois graus são para fascite plantar especificamente, mas os tecidos envolvidos são os mesmos que recebem a carga durante um plantão. Se algum exercício levar a sua dor a 6 de 10 ou mais, pare por hoje.',
       ],
       exercises: [
@@ -150,7 +152,7 @@ export const NURSES_PT: Guide = {
       paragraphs: [
         'Um plantão de 12\u00A0horas deixa pouco tempo para uma rotina de exercícios à parte, e alternar entre plantão diurno e noturno deixa a organização ainda mais difícil. Os alongamentos desta página levam cerca de 3\u00A0minutos, então o caminho mais simples é fazê-los logo antes ou logo depois do plantão, no mesmo ponto da sua rotina toda vez. Por exemplo, faça depois de calçar ou tirar o calçado de trabalho.',
         'Nas folgas, acrescente os exercícios de força: elevação de calcanhar e pé curto. Eles levam cerca de 5 a 10\u00A0minutos. Fazer o treino de força nas folgas, e não depois de um plantão puxado, dá à panturrilha e ao arco tempo de recuperação antes do próximo período em pé.',
-        'Três sessões por semana é um bom ponto de partida. Se você faz três plantões de 12\u00A0horas com quatro dias de folga, dá para encaixar o treino de força em cada folga. Se você alterna entre plantão diurno e noturno, a hora do dia não importa. O que importa é a regularidade, não o relógio.',
+        'Três sessões por semana é um bom ponto de partida. Se você faz três plantões de 12\u00A0horas com quatro dias de folga, dá para encaixar o treino de força em cada folga. Se você alterna entre plantão diurno e noturno, a hora do dia não importa. **O que importa é a regularidade, não o relógio.**',
       ],
     },
     {
@@ -158,7 +160,7 @@ export const NURSES_PT: Guide = {
       paragraphs: [
         'Calçado é um dos assuntos mais discutidos na enfermagem, mas a evidência a favor de um tipo em vez de outro é limitada. Uma avaliação de 2007 de três marcas de calçados profissionais para enfermagem encontrou que o calçado com palmilha mais amortecida e melhor apoio do arco reduziu o esforço muscular das pernas em comparação com os outros dois, mas o estudo era pequeno e específico dessas marcas.',
         'O que a pesquisa apoia de forma mais ampla é que o conforto do calçado importa. Em uma pesquisa com 125\u00A0enfermeiras de pronto-socorro e ambulatório, 72% das que relatavam pouco conforto no calçado também relatavam dor nos pés e no calcanhar, contra 28% das que relatavam muito conforto. A diretriz de 2023 para dor no calcanhar dá às órteses sozinhas um B contra para alívio da fascite plantar a curto prazo, o que significa que a evidência pende para não usá-las como opção isolada.',
-        'Um caminho prático: escolha um calçado que sirva bem, tenha algum amortecimento e não aperte os dedos. Se você já tem dor no calcanhar ou no arco, os exercícios desta página miram os tecidos diretamente. Calçados e palmilhas podem ajudar no conforto durante o plantão, mas não substituem o alongamento e o treino de força.',
+        'Um caminho prático: escolha um calçado que sirva bem, tenha algum amortecimento e não aperte os dedos. Se você já tem dor no calcanhar ou no arco, os exercícios desta página miram os tecidos diretamente. **Calçados e palmilhas podem ajudar no conforto durante o plantão, mas não substituem o alongamento e o treino de força.**',
       ],
       cites: [CITE.guideline],
     },
@@ -168,7 +170,8 @@ export const NURSES_PT: Guide = {
       paragraphs: [
         'As meias de compressão têm um dos estudos mais bem controlados por trás delas para o desconforto de ficar em pé. Em um ensaio randomizado com 40\u00A0seguranças em turnos de cerca de 12\u00A0horas em pé, os grupos das meias de compressão de 15-20\u00A0mmHg e de 20-30\u00A0mmHg evitaram o aumento significativo do desconforto, do cansaço e do inchaço nos pés e nas pernas visto no grupo que usou meias comuns. Os participantes muitas vezes disseram que a meia de pressão mais baixa era mais fácil de vestir.',
         'Um ensaio randomizado piloto com 20\u00A0estudantes de enfermagem comparou meias de compressão até o joelho e até a coxa, usadas em turnos de estágio clínico de 9\u00A0horas. Os dois grupos relataram alta satisfação, mas a amostra era pequena demais para mostrar diferenças claras de resultado entre os dois comprimentos.',
-        'O ensaio de Garcia foi feito só com seguranças homens, não com profissionais de enfermagem, e nenhum dos dois estudos era grande. Mas as meias de compressão são uma das poucas intervenções específicas para quem fica em pé com evidência randomizada por trás. Uma revisão de saúde ocupacional de 2015 as coloca ao lado dos tapetes antifadiga e dos calçados com bom suporte como intervenções com alguma evidência para reduzir o desconforto no trabalho em pé prolongado. Elas não substituem o alongamento nem o treino de força. Elas controlam o inchaço e o cansaço, enquanto a panturrilha e a fáscia ainda precisam da sua própria atenção.',
+        'O ensaio de Garcia foi feito só com seguranças homens, não com profissionais de enfermagem, e nenhum dos dois estudos era grande. Mas as meias de compressão são uma das poucas intervenções específicas para quem fica em pé com evidência randomizada por trás.',
+        'Uma revisão de saúde ocupacional de 2015 as coloca ao lado dos tapetes antifadiga e dos calçados com bom suporte como intervenções com alguma evidência para reduzir o desconforto no trabalho em pé prolongado. **Elas não substituem o alongamento nem o treino de força.** Elas controlam o inchaço e o cansaço, enquanto a panturrilha e a fáscia ainda precisam da sua própria atenção.',
       ],
       sourceNote:
         'Garcia e colegas (2023): desenho de grupos paralelos, 40\u00A0seguranças homens sorteados para três grupos (meias comuns, 15-20\u00A0mmHg, 20-30\u00A0mmHg), cada uma usada durante um turno de trabalho completo. Desconforto, cansaço e edema medidos antes e depois do turno.',
@@ -177,10 +180,14 @@ export const NURSES_PT: Guide = {
     {
       h2: 'O que fazer antes e depois do plantão em 3, 5 ou 10 minutos?',
       paragraphs: [
-        'Se você tem 3\u00A0minutos: faça os dois alongamentos da panturrilha (joelho esticado e joelho dobrado, 30\u00A0segundos de cada lado). Isso cobre o fator de risco modificável mais forte, uma panturrilha tensa, e leva o mesmo tempo que amarrar o tênis.',
-        'Se você tem 5\u00A0minutos: acrescente o alongamento da fáscia plantar (30\u00A0segundos em cada pé). Essa é a combinação que a diretriz de 2023 classifica com grau A para fascite plantar. Se o seu calcanhar fica pior nos primeiros passos do dia, faça o alongamento da fáscia antes de os pés tocarem o chão.',
-        'Se você tem 10\u00A0minutos: acrescente a elevação de calcanhar (3\u00A0séries de 10) e o pé curto (3\u00A0séries de 10, segurando 5\u00A0segundos). Isso cobre o lado da força, com grau B na diretriz. Nas folgas, 10\u00A0minutos cobrem tudo o que está nesta página.',
-        'A regularidade importa mais do que a duração. Três minutos de alongamento da panturrilha em todo dia de plantão, sempre no mesmo ponto da rotina, são mais úteis do que uma sessão mais longa que você pula quando a escala muda.',
+        {
+          list: [
+            '**Se você tem 3\u00A0minutos:** faça os dois alongamentos da panturrilha (joelho esticado e joelho dobrado, 30\u00A0segundos de cada lado). Isso cobre o fator de risco modificável mais forte, uma panturrilha tensa, e leva o mesmo tempo que amarrar o tênis.',
+            '**Se você tem 5\u00A0minutos:** acrescente o alongamento da fáscia plantar (30\u00A0segundos em cada pé). Essa é a combinação que a diretriz de 2023 classifica com grau A para fascite plantar. Se o seu calcanhar fica pior nos primeiros passos do dia, faça o alongamento da fáscia antes de os pés tocarem o chão.',
+            '**Se você tem 10\u00A0minutos:** acrescente a elevação de calcanhar (3\u00A0séries de 10) e o pé curto (3\u00A0séries de 10, segurando 5\u00A0segundos). Isso cobre o lado da força, com grau B na diretriz. Nas folgas, 10\u00A0minutos cobrem tudo o que está nesta página.',
+          ],
+        },
+        '**A regularidade importa mais do que a duração.** Três minutos de alongamento da panturrilha em todo dia de plantão, sempre no mesmo ponto da rotina, são mais úteis do que uma sessão mais longa que você pula quando a escala muda.',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
@@ -189,7 +196,7 @@ export const NURSES_PT: Guide = {
       paragraphs: [
         'Dor e cansaço gerais depois de um plantão longo são comuns e costumam passar com descanso. A fascite plantar é um problema específico: dor aguda perto do calcanhar, pior nos primeiros passos depois de descansar (ao sair da cama, ao levantar depois de ficar muito tempo sentado). Se a sua dor segue esse padrão, os exercícios em [exercícios e alongamentos para fascite plantar](/pt/exercicios-fascite-plantar/) são o guia mais completo, e os detalhes da elevação de calcanhar estão em [elevação de calcanhar para fascite plantar](/pt/elevacao-de-calcanhar-fascite-plantar/).',
         'Se os seus arcos parecem achatados ou caídos para dentro no fim do plantão, os exercícios para o arco em [exercícios para pé chato](/pt/exercicios-pe-chato/) miram os músculos que sustentam o arco. Dor ao longo da canela pode ser canelite. Dor no tendão de Aquiles, na parte de trás do calcanhar, é outro problema.',
-        'Se a dor de ficar em pé é a sua principal dúvida e você não trabalha na enfermagem, [por que os pés doem depois de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) traz os mesmos exercícios para um público mais amplo. Para a versão deste problema com mesa em pé, veja [dor nos pés com mesa em pé](/pt/mesa-em-pe-dor-nos-pes/). Se você não tem certeza do que está causando a dor, procure um profissional de saúde antes de pôr carga com exercício.',
+        'Se a dor de ficar em pé é a sua principal dúvida e você não trabalha na enfermagem, [por que os pés doem depois de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) traz os mesmos exercícios para um público mais amplo. Para a versão deste problema com mesa em pé, veja [dor nos pés com mesa em pé](/pt/mesa-em-pe-dor-nos-pes/). **Se você não tem certeza do que está causando a dor, procure um profissional de saúde antes de pôr carga com exercício.**',
       ],
     },
   ],

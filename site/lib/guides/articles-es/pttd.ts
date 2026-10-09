@@ -21,7 +21,8 @@ export const PTTD_ES: Guide = {
   lede:
     'La disfunción del tendón tibial posterior, conocida como DTTP, ocurre cuando el tendón que sostiene el arco en la cara interna del tobillo se debilita o se inflama. Es la causa más común de pie plano adquirido del adulto. El ejercicio puede ayudar en las etapas iniciales, pero no todas las etapas responden igual, y la evidencia todavía es limitada. Esta página cubre las etapas, los ejercicios con mejor respaldo y cuándo entran una bota o la cirugía.',
   intro: [
-    'El tendón tibial posterior pasa por detrás del hueso del tobillo interno y se une bajo el pie. Sostiene el arco al caminar. Cuando degenera, el arco se aplana, el talón se inclina hacia afuera y el dolor se instala a lo largo de la cara interna del tobillo o de la parte media del pie. Una revisión sistemática de 2018 encontró solo tres ensayos aleatorizados o controlados con 93\u00A0personas en total, así que la evidencia sobre el ejercicio aquí es mucho más escasa que para la [fascitis plantar](/es/ejercicios-fascitis-plantar/) o la tendinitis de Aquiles.',
+    'El tendón tibial posterior pasa por detrás del hueso del tobillo interno y se une bajo el pie. Sostiene el arco al caminar. Cuando degenera, el arco se aplana, el talón se inclina hacia afuera y el dolor se instala a lo largo de la cara interna del tobillo o de la parte media del pie.',
+    'Una revisión sistemática de 2018 encontró solo tres ensayos aleatorizados o controlados con 93\u00A0personas en total, así que la evidencia sobre el ejercicio aquí es mucho más escasa que para la [fascitis plantar](/es/ejercicios-fascitis-plantar/) o la tendinitis de Aquiles.',
   ],
   toc: true,
   takeaways: [
@@ -34,7 +35,7 @@ export const PTTD_ES: Guide = {
     {
       h2: '¿Qué es la disfunción del tendón tibial posterior?',
       paragraphs: [
-        'El tibial posterior es un músculo en la parte profunda de la pantorrilla. Su tendón pasa por detrás del hueso del tobillo interno, el maléolo medial, y se abre en abanico debajo del pie para unirse a varios huesos de la parte media del pie. Al caminar, levanta el arco y controla cuánto rueda el pie hacia adentro. Cuando el tendón degenera o se rompe, ese soporte se pierde.',
+        'El tibial posterior es un músculo en la parte profunda de la pantorrilla. Su tendón pasa por detrás del hueso del tobillo interno, el maléolo medial, y se abre en abanico debajo del pie para unirse a varios huesos de la parte media del pie. Al caminar, levanta el arco y controla cuánto rueda el pie hacia adentro. **Cuando el tendón degenera o se rompe, ese soporte se pierde.**',
         'La DTTP es la causa más común de pie plano adquirido del adulto. Es más frecuente en mujeres, en personas mayores de 40\u00A0años y en quienes tienen un IMC más alto. Los factores de riesgo incluyen la hipertensión, la diabetes y las inyecciones previas de corticosteroides cerca del tendón. El dolor suele situarse detrás o debajo del hueso del tobillo interno y empeora con la actividad, sobre todo al caminar cuesta arriba o en superficies irregulares.',
         'El nombre clínico que puedes ver es tendinopatía del tibial posterior. Fuentes más antiguas a veces dicen tendinitis del tibial posterior cuando el problema es sobre todo inflamación, o insuficiencia del tendón tibial posterior cuando el tendón se ha alargado y el arco ha empezado a caer. Los tres términos describen el mismo espectro.',
       ],
@@ -44,11 +45,15 @@ export const PTTD_ES: Guide = {
       h2: '¿Cuáles son las etapas de la DTTP?',
       paragraphs: [
         'Los profesionales de la salud clasifican la DTTP en cuatro etapas. La etapa determina si el ejercicio y las ortesis probablemente ayuden, o si conviene hablar de una bota, una tobillera o cirugía.',
+        {
+          list: [
         '**Etapa I** significa que el tendón está inflamado pero todavía intacto. El arco se ve normal. Hay dolor y a veces una hinchazón leve detrás del tobillo interno. La fuerza en una elevación de talón a una pierna suele estar reducida en comparación con el otro lado, pero la forma del pie no ha cambiado. El ejercicio y las ortesis de soporte son el enfoque principal.',
         '**Etapa II** significa que el tendón se ha alargado o roto parcialmente. El arco se ha aplanado y el talón se inclina hacia afuera, pero la deformidad todavía es flexible, lo que quiere decir que un profesional de la salud puede empujar el pie de vuelta a su posición. Esta es la etapa que cubre la mayor parte de la investigación sobre ejercicio. Ortesis, estiramientos y fortalecimiento progresivo son el programa conservador estándar.',
         '**Etapa III** significa que la deformidad se ha vuelto rígida. El pie no puede llevarse de vuelta a una posición corregida, y muchas veces hay cambios artríticos en las articulaciones debajo del tobillo. El ejercicio solo difícilmente cambiará la forma del pie en esta etapa. La evaluación quirúrgica suele discutirse.',
         '**Etapa IV** agrega la afectación de la articulación del tobillo. El tobillo se inclina en valgo, es decir, se va hacia afuera. Es la etapa más avanzada y normalmente requiere intervención quirúrgica.',
-        'La mayoría de las personas que buscan ejercicios para la DTTP están en la etapa I o II. Si no sabes cuál etapa aplica en tu caso, un profesional de la salud puede decírtelo con un examen físico y, si es necesario, estudios de imagen. La prueba de elevación de talón a una pierna, donde intentas subir en puntas con un solo pie, es una herramienta rápida: si te cuesta subir, si duele al hacerlo, o si el talón no gira hacia adentro arriba, todo eso apunta a debilidad del tibial posterior.',
+          ],
+        },
+        '**La mayoría de las personas que buscan ejercicios para la DTTP están en la etapa I o II.** Si no sabes cuál etapa aplica en tu caso, un profesional de la salud puede decírtelo con un examen físico y, si es necesario, estudios de imagen. La prueba de elevación de talón a una pierna, donde intentas subir en puntas con un solo pie, es una herramienta rápida: si te cuesta subir, si duele al hacerlo, o si el talón no gira hacia adentro arriba, todo eso apunta a debilidad del tibial posterior.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
@@ -57,9 +62,17 @@ export const PTTD_ES: Guide = {
       keyFact: 'Al reunir tres ensayos pequeños con 93 personas en total, una revisión de 2018 encontró que el fortalecimiento excéntrico sumado a ortesis y estiramientos produjo mejorías de tamaño moderado frente a ortesis y estiramientos solos (Ross y colegas, 2018).',
       paragraphs: [
         'Una revisión sistemática de 2018 identificó tres ensayos aleatorizados controlados con 93\u00A0participantes en total. Dos probaron el fortalecimiento añadido a ortesis y estiramientos; el tercero probó fortalecimiento y entrenamiento de equilibrio contra ninguna intervención. La revisión encontró tamaños de efecto moderados (DME 0,6 a 1,2) para el fortalecimiento excéntrico en la reducción del dolor y la discapacidad, comparado con ortesis y estiramientos solos.',
-        'El más grande de los tres estudios fue un ensayo aleatorizado de 2009 con 36\u00A0personas con DTTP en etapa I o II. Los participantes fueron asignados a uno de tres grupos durante tres meses: ortesis y estiramientos solos, ortesis más estiramientos más ejercicio concéntrico, u ortesis más estiramientos más ejercicio excéntrico. Los dos grupos de ejercicio mejoraron más que el grupo de solo ortesis. El grupo excéntrico alcanzó cargas 3,3\u00A0veces mayores que el grupo concéntrico al final del programa, aunque los dos tipos de ejercicio redujeron el dolor.',
+        'El más grande de los tres estudios fue un ensayo aleatorizado de 2009 con 36\u00A0personas con DTTP en etapa I o II. Los participantes fueron asignados a uno de tres grupos durante tres meses:',
+        {
+          list: [
+            'Ortesis y estiramientos solos.',
+            'Ortesis más estiramientos más ejercicio concéntrico.',
+            'Ortesis más estiramientos más ejercicio excéntrico.',
+          ],
+        },
+        'Los dos grupos de ejercicio mejoraron más que el grupo de solo ortesis. El grupo excéntrico alcanzó cargas 3,3\u00A0veces mayores que el grupo concéntrico al final del programa, aunque los dos tipos de ejercicio redujeron el dolor.',
         'Un segundo ensayo aleatorizado, publicado en 2015, asignó a 39\u00A0personas con DTTP en etapa II a ortesis más estiramientos o a ortesis más estiramientos más fortalecimiento (incluyendo ejercicios con banda y elevaciones de talón). Los dos grupos mejoraron, pero el grupo de fortalecimiento no se separó de forma significativa del grupo de estiramientos en el desenlace principal. Los autores sugirieron que la dosis de fortalecimiento pudo no haber sido suficiente.',
-        'Los autores de la revisión concluyeron que la evidencia respalda añadir ejercicio de resistencia progresiva a las ortesis para la DTTP en las etapas iniciales, pero pidieron ensayos más grandes. Esta es un área donde la investigación todavía va por detrás de la práctica clínica.',
+        'Los autores de la revisión concluyeron que **la evidencia respalda añadir ejercicio de resistencia progresiva a las ortesis para la DTTP en las etapas iniciales**, pero pidieron ensayos más grandes. Esta es un área donde la investigación todavía va por detrás de la práctica clínica.',
       ],
       sourceNote:
         'Ross 2018: 3\u00A0estudios, n\u00A0=\u00A093. Kulig 2009: n\u00A0=\u00A036, 3\u00A0brazos, 3\u00A0meses, Foot Function Index, EVA de dolor. Houck 2015: n\u00A0=\u00A039, 2\u00A0brazos, 3\u00A0meses, FAAM.',
@@ -69,7 +82,7 @@ export const PTTD_ES: Guide = {
       h2: '¿Qué ejercicios ayudan con la disfunción del tendón tibial posterior?',
       paragraphs: [
         'Los ejercicios de abajo trabajan el músculo tibial posterior y los músculos que sostienen el arco. La inversión con banda entrena el tibial posterior directamente. Las elevaciones de talón con énfasis en el arco cargan el tendón durante un movimiento funcional. El pie corto fortalece los músculos intrínsecos del pie que ayudan al arco. El estiramiento de pantorrilla aborda el hallazgo común de dorsiflexión reducida en personas con DTTP.',
-        'Los programas de ejercicio de los ensayos también incluían estiramiento de pantorrilla y ortesis. Las ortesis no eran opcionales en ningún estudio. Si tienes DTTP, una ortesis con soporte de arco es parte del programa, no un sustituto del ejercicio ni al revés.',
+        'Los programas de ejercicio de los ensayos también incluían estiramiento de pantorrilla y ortesis. Las ortesis no eran opcionales en ningún estudio. Si tienes DTTP, **una ortesis con soporte de arco es parte del programa, no un sustituto del ejercicio ni al revés.**',
       ],
       exercises: [
         {
@@ -126,7 +139,7 @@ export const PTTD_ES: Guide = {
     {
       h2: '¿Las ortesis ayudan, y hay que usarlas durante el ejercicio?',
       paragraphs: [
-        'Todos los ensayos de ejercicio para la DTTP usaron ortesis como parte de la intervención de base. Las ortesis no se compararon contra el ejercicio; se probó el ejercicio añadido a las ortesis. El ensayo de 2009 encontró que las ortesis y los estiramientos solos mejoraban la función, y que añadir ejercicio la mejoraba más.',
+        'Todos los ensayos de ejercicio para la DTTP usaron ortesis como parte de la intervención de base. **Las ortesis no se compararon contra el ejercicio; se probó el ejercicio añadido a las ortesis.** El ensayo de 2009 encontró que las ortesis y los estiramientos solos mejoraban la función, y que añadir ejercicio la mejoraba más.',
         'Una ortesis rígida o semirrígida con soporte de arco evita que el arco se desplome al estar de pie y al caminar. Para los ejercicios de esta página, puedes hacer la inversión con banda y el pie corto sin zapatos, pero las elevaciones de talón conviene hacerlas con los mismos zapatos de soporte con los que caminas, porque el arco necesita soporte bajo carga.',
         'Las plantillas de soporte de arco de venta libre pueden ser suficientes para la etapa I. Las ortesis a la medida son más comunes para la etapa II, donde la deformidad es mayor. Un profesional de la salud o un podólogo puede ayudarte a decidir cuál es la adecuada.',
       ],
@@ -135,7 +148,7 @@ export const PTTD_ES: Guide = {
     {
       h2: '¿Cuándo se habla de una bota o de cirugía?',
       paragraphs: [
-        'Una bota ortopédica o una tobillera a veces se usa en la etapa I o II de la DTTP cuando el dolor es demasiado alto para hacer ejercicio. La bota inmoviliza el tendón para dejar que la inflamación aguda ceda. Es una medida a corto plazo, no un programa a largo plazo. Cuando el dolor baja lo suficiente, el ejercicio y las ortesis toman el lugar.',
+        'Una bota ortopédica o una tobillera a veces se usa en la etapa I o II de la DTTP cuando el dolor es demasiado alto para hacer ejercicio. La bota inmoviliza el tendón para dejar que la inflamación aguda ceda. **Es una medida a corto plazo, no un programa a largo plazo.** Cuando el dolor baja lo suficiente, el ejercicio y las ortesis toman el lugar.',
         'La cirugía suele discutirse cuando el manejo conservador no ha mejorado los síntomas después de varios meses, o cuando la deformidad ha progresado a la etapa III o IV. Las opciones quirúrgicas van desde la reparación y la transferencia del tendón en etapas más tempranas hasta la fusión articular en etapas más avanzadas. La decisión depende de la etapa, el grado de la deformidad y la persona.',
         'Esta página no cubre las opciones quirúrgicas a detalle. Si estás en la etapa III o IV, o si los síntomas de la etapa II no han respondido al ejercicio y a las ortesis después de varios meses, un especialista en pie y tobillo puede discutir los siguientes pasos.',
       ],
@@ -144,7 +157,7 @@ export const PTTD_ES: Guide = {
     {
       h2: '¿Cómo se relaciona la DTTP con el pie plano?',
       paragraphs: [
-        'La DTTP es la causa más común de pie plano adquirido del adulto, es decir, un pie plano que se desarrolla en la edad adulta en vez de estar presente desde la infancia. Si tenías arcos normales y han empezado a caer de un lado, con dolor detrás del tobillo interno, la DTTP es la explicación más probable.',
+        'La DTTP es la causa más común de pie plano adquirido del adulto, es decir, un pie plano que se desarrolla en la edad adulta en vez de estar presente desde la infancia. **Si tenías arcos normales y han empezado a caer de un lado, con dolor detrás del tobillo interno, la DTTP es la explicación más probable.**',
         'El pie plano flexible congénito, el que está presente desde la infancia, es una situación diferente. Puede que nunca cause síntomas. Los ejercicios se superponen: el pie corto, la inversión con banda y las elevaciones de talón aparecen tanto en los [ejercicios para el pie plano](/es/ejercicios-pie-plano/) como en los programas para la DTTP. Pero el contexto clínico es diferente, y la DTTP normalmente necesita ortesis y un seguimiento más cercano porque el tendón está degenerando, no simplemente laxo.',
         'Si no estás seguro de si tu pie plano es de toda la vida o nuevo, un profesional de la salud puede comparar los dos pies, revisar el tendón y mirar la alineación del talón cuando estás de pie.',
       ],
@@ -155,7 +168,7 @@ export const PTTD_ES: Guide = {
       keyFact: 'Un pequeño estudio piloto de diez pacientes con carga excéntrica dos veces al día durante unos dos meses y medio encontró mejoría de los síntomas junto con algunos cambios del tendón en la ecografía (Kulig y colegas, 2009).',
       paragraphs: [
         'Los dos ensayos aleatorizados duraron tres meses. Los dos mostraron mejoría al final del programa, pero ninguno siguió a los participantes a largo plazo. Un pequeño estudio piloto de diez pacientes del mismo grupo también duró unos dos meses y medio de carga excéntrica dos veces al día y encontró mejoría en los síntomas junto con algunos cambios del tendón en la ecografía.',
-        'En la práctica clínica, la mejoría de la DTTP en etapa I o II con ejercicio y ortesis se mide en meses, no en semanas. La degeneración del tendón no se revierte rápido. Una expectativa razonable es menos dolor y mejor función a lo largo de tres a seis meses, con ejercicio de mantenimiento después de eso. Si no hay mejoría después de tres meses de ejercicio constante y ortesis, vale la pena volver al profesional de la salud para reevaluar la etapa.',
+        'En la práctica clínica, **la mejoría de la DTTP en etapa I o II con ejercicio y ortesis se mide en meses, no en semanas.** La degeneración del tendón no se revierte rápido. Una expectativa razonable es menos dolor y mejor función a lo largo de tres a seis meses, con ejercicio de mantenimiento después de eso. Si no hay mejoría después de tres meses de ejercicio constante y ortesis, vale la pena volver al profesional de la salud para reevaluar la etapa.',
       ],
       cites: [CITE.kuligRCT, CITE.kuligEccentric],
     },

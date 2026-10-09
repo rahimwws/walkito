@@ -14,7 +14,8 @@ export const TIGHT_CALVES_FR: Guide = {
   lede:
     'Des mollets tendus, c’est en général des muscles du mollet qui paraissent raides, ou une cheville qui ne se plie pas assez. Causes fréquentes\u00A0: une hausse brutale de la course ou de la marche, de longues journées debout, des chaussures à talons. Étirer les deux muscles du mollet aide un peu\u00A0: dans une revue de cinq essais, l’amplitude de la cheville a augmenté d’environ 2 à 3\u00A0degrés. Les montées sur pointes aident aussi.',
   intro: [
-    'Vous le sentez aux premiers pas en sortant du lit, dans une côte, ou quand vous vous accroupissez et que vos talons veulent décoller. L’arrière du bas de la jambe paraît court et dur. C’est très fréquent, et la plupart du temps ce n’est pas le signe d’une lésion. Cette page explique pourquoi les mollets se raidissent, quelle partie du mollet est raide et ce que la recherche dit de ce que les étirements et le renforcement peuvent changer, ou non. Pour les étirements pas à pas, voir [étirement du mollet](/fr/exercices/etirement-mollet/) et [étirement du soléaire](/fr/exercices/etirement-soleaire/).',
+    'Vous le sentez aux premiers pas en sortant du lit, dans une côte, ou quand vous vous accroupissez et que vos talons veulent décoller. L’arrière du bas de la jambe paraît court et dur. C’est très fréquent, et la plupart du temps ce n’est pas le signe d’une lésion.',
+    'Cette page explique pourquoi les mollets se raidissent, quelle partie du mollet est raide et ce que la recherche dit de ce que les étirements et le renforcement peuvent changer, ou non. Pour les étirements pas à pas, voir [étirement du mollet](/fr/exercices/etirement-mollet/) et [étirement du soléaire](/fr/exercices/etirement-soleaire/).',
   ],
   takeaways: [
     'Dans une revue de 2006 portant sur cinq essais randomisés, l’étirement statique du mollet n’a augmenté la flexion de la cheville que d’environ 2 à 3\u00A0degrés, et les auteurs n’étaient pas sûrs que ce changement compte pour les personnes (Radford et coll.).',
@@ -57,7 +58,8 @@ export const TIGHT_CALVES_FR: Guide = {
         'Des mollets tendus sont associés à la fasciite plantaire, la cause la plus fréquente de douleur sous le talon. Quand la cheville ne se plie pas assez, le pied doit compenser à chaque pas, et une traction plus forte passe par le tendon d’Achille, le talon et le fascia plantaire (la bande épaisse sous la voûte).',
         'Dans une étude cas-témoins de 2003, Riddle et coll. ont comparé 50\u00A0personnes atteintes de fasciite plantaire à 100\u00A0personnes comparables qui n’en avaient pas. Les personnes dont la cheville ne se pliait pas au-delà de 0\u00A0degré avaient une probabilité de fasciite plantaire 23,3\u00A0fois plus élevée que celles qui pouvaient dépasser 10\u00A0degrés. Une flexion réduite de la cheville était le facteur de risque le plus fort qu’ils aient mesuré, devant le poids corporel et le travail debout.',
         'Dans une étude ultérieure sur 254\u00A0personnes atteintes de fasciite plantaire, 83\u00A0% avaient une flexion de la cheville limitée, et 57\u00A0% de l’ensemble des patients avaient un gastrocnémien raide isolé (Patel et DiGiovanni, 2011).',
-        'Les deux études montrent un lien, pas que des mollets tendus causent la fasciite plantaire. La large fourchette autour du chiffre de 23,3 signifie aussi que la vraie valeur pourrait être bien plus faible. C’est tout de même une des raisons pour lesquelles la recommandation de 2023 sur la douleur au talon donne à l’étirement du mollet la note A, sa meilleure note, pour la douleur sous le talon. Si la douleur au talon est votre problème principal, commencez par les [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou la [douleur au talon au réveil](/fr/douleur-talon-au-reveil/). Des mollets tendus se retrouvent aussi autour du tendon d’Achille et des tibias\u00A0: voir les [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/) et les [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/).',
+        '**Les deux études montrent un lien, pas que des mollets tendus causent la fasciite plantaire.** La large fourchette autour du chiffre de 23,3 signifie aussi que la vraie valeur pourrait être bien plus faible. C’est tout de même une des raisons pour lesquelles la recommandation de 2023 sur la douleur au talon donne à l’étirement du mollet la note A, sa meilleure note, pour la douleur sous le talon.',
+        'Si la douleur au talon est votre problème principal, commencez par les [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou la [douleur au talon au réveil](/fr/douleur-talon-au-reveil/). Des mollets tendus se retrouvent aussi autour du tendon d’Achille et des tibias\u00A0: voir les [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/) et les [exercices pour la périostite tibiale](/fr/periostite-tibiale-exercices/).',
       ],
       sourceNote:
         'Riddle 2003\u00A0: odds ratio de 23,3 (IC à 95\u00A0% 4,3 à 124,4) pour une flexion dorsale de 0\u00A0degré ou moins contre plus de 10\u00A0degrés, ajusté. Patel 2011\u00A0: 211 sur 254 avaient une flexion dorsale limitée, 145 sur 254 une rétraction isolée du gastrocnémien, 66 sur 254 une rétraction gastrocnémien-soléaire.',
@@ -67,7 +69,15 @@ export const TIGHT_CALVES_FR: Guide = {
       h2: 'L’étirement assouplit-il vraiment les mollets tendus\u00A0?',
       keyFact: 'Une revue de 2006 portant sur cinq essais randomisés a constaté que l’étirement du mollet augmentait la flexion de la cheville d’environ 2 à 3\u00A0degrés, et les auteurs n’étaient pas sûrs que ce changement ait une importance clinique (Radford et coll.).',
       paragraphs: [
-        'L’étirement assouplit bien les mollets tendus, mais moins que ce que la plupart des gens imaginent. En 2006, Radford et coll. ont regroupé cinq essais randomisés comparant l’étirement statique du mollet (tenir un étirement sans bouger) à l’absence d’étirement. La flexion de la cheville a augmenté d’environ 2\u00A0degrés après 15\u00A0minutes d’étirement au total ou moins, d’environ 3\u00A0degrés après 15 à 30\u00A0minutes, et d’environ 2,5\u00A0degrés après plus de 30\u00A0minutes. Ces minutes correspondent au temps d’étirement total cumulé sur la durée de l’essai, pas à un seul long maintien.',
+        'L’étirement assouplit bien les mollets tendus, mais **moins que ce que la plupart des gens imaginent.** En 2006, Radford et coll. ont regroupé cinq essais randomisés comparant l’étirement statique du mollet (tenir un étirement sans bouger) à l’absence d’étirement. La flexion de la cheville a augmenté\u00A0:',
+        {
+          list: [
+            'D’environ 2\u00A0degrés après 15\u00A0minutes d’étirement au total ou moins.',
+            'D’environ 3\u00A0degrés après 15 à 30\u00A0minutes.',
+            'D’environ 2,5\u00A0degrés après plus de 30\u00A0minutes.',
+          ],
+        },
+        'Ces minutes correspondent au temps d’étirement total cumulé sur la durée de l’essai, pas à un seul long maintien.',
         'Les auteurs ont qualifié ce gain de faible et dit qu’on ne savait pas s’il comptait pour les personnes. Deux conclusions en découlent. D’abord, une courte période d’étirements ne transformera pas votre cheville. Ensuite, la sensation de souplesse après un étirement est réelle, mais elle vient peut-être en partie d’une meilleure tolérance à l’étirement plutôt que d’un muscle plus long.',
         'L’étirement fait aussi moins que ce que beaucoup espèrent sur d’autres points. Dans un essai sur 1\u00A0538\u00A0recrues de l’armée suivies pendant trois mois d’entraînement, un étirement de 20\u00A0secondes de six groupes musculaires des jambes à chaque échauffement n’a pas réduit les blessures de façon notable (Pope et coll., 2000). Une revue Cochrane de 12\u00A0études a constaté que s’étirer avant ou après l’effort ne réduisait les courbatures du lendemain que d’environ un demi-point à 1\u00A0point sur une échelle de 100\u00A0points (Herbert et coll., 2011).',
         'Étirez-vous donc parce que ça fait du bien, parce que ça aide un peu une cheville raide, et parce que la recommandation sur la douleur au talon le soutient pour la douleur sous le talon. N’attendez pas de l’étirement qu’il prévienne toutes les blessures ou efface les courbatures.',
@@ -80,9 +90,18 @@ export const TIGHT_CALVES_FR: Guide = {
       h2: 'Faut-il renforcer des mollets tendus plutôt que les étirer\u00A0?',
       keyFact: 'Une revue de 2021 portant sur 11\u00A0essais randomisés et 452\u00A0personnes n’a trouvé aucune différence significative de gain d’amplitude entre le renforcement musculaire et l’étirement (Afonso et coll.).',
       paragraphs: [
-        'Renforcer des mollets tendus est une bonne idée, et vous n’avez pas à choisir l’un ou l’autre. En 2021, Afonso et coll. ont regroupé 11\u00A0essais randomisés sur 452\u00A0personnes comparant le renforcement musculaire à l’étirement. L’amplitude articulaire s’est améliorée à peu près autant avec les deux. Les essais étaient très différents les uns des autres et portaient sur de nombreuses articulations, pas seulement la cheville\u00A0: voyez-y une forte indication, pas une réponse définitive.',
-        'La force compte pour une autre raison. Un mollet qui se fatigue vite paraît tendu plus tôt. Les montées sur pointes en pleine amplitude, où vous descendez les talons tout en bas puis montez tout en haut, sollicitent le muscle sur toute sa longueur. Si vos mollets se tendent chaque fois que vous marchez ou courez plus que d’habitude, développer leur capacité est souvent l’étape la plus utile à long terme. Vous pouvez évaluer l’endurance de vos mollets avec le [test de montée sur pointes](/fr/test-montee-sur-pointes/).',
-        'Un mélange raisonnable pour la plupart des gens\u00A0: étirer les deux muscles du mollet, assouplir la cheville avec des bascules genou au-dessus des orteils, et ajouter des montées sur pointes quelques fois par semaine. Walkito commence à 2\u00A0maintiens de 30\u00A0secondes pour chaque étirement et à 3\u00A0séries de 10 pour les montées sur pointes sur deux pieds.',
+        'Renforcer des mollets tendus est une bonne idée, et **vous n’avez pas à choisir l’un ou l’autre.** En 2021, Afonso et coll. ont regroupé 11\u00A0essais randomisés sur 452\u00A0personnes comparant le renforcement musculaire à l’étirement. L’amplitude articulaire s’est améliorée à peu près autant avec les deux. Les essais étaient très différents les uns des autres et portaient sur de nombreuses articulations, pas seulement la cheville\u00A0: voyez-y une forte indication, pas une réponse définitive.',
+        'La force compte pour une autre raison. Un mollet qui se fatigue vite paraît tendu plus tôt. Les montées sur pointes en pleine amplitude, où vous descendez les talons tout en bas puis montez tout en haut, sollicitent le muscle sur toute sa longueur.',
+        'Si vos mollets se tendent chaque fois que vous marchez ou courez plus que d’habitude, développer leur capacité est souvent l’étape la plus utile à long terme. Vous pouvez évaluer l’endurance de vos mollets avec le [test de montée sur pointes](/fr/test-montee-sur-pointes/).',
+        'Un mélange raisonnable pour la plupart des gens\u00A0:',
+        {
+          list: [
+            'Étirer les deux muscles du mollet.',
+            'Assouplir la cheville avec des bascules genou au-dessus des orteils.',
+            'Ajouter des montées sur pointes quelques fois par semaine.',
+          ],
+        },
+        'Walkito commence à 2\u00A0maintiens de 30\u00A0secondes pour chaque étirement et à 3\u00A0séries de 10 pour les montées sur pointes sur deux pieds.',
       ],
       sourceNote:
         'Afonso 2021\u00A0: taille d’effet regroupée de -0,22 (IC à 95\u00A0% -0,55 à 0,12), pas de différence significative entre renforcement musculaire et étirement sur l’amplitude articulaire.',
@@ -148,8 +167,16 @@ export const TIGHT_CALVES_FR: Guide = {
     {
       h2: 'Les mollets tendus viennent-ils de la déshydratation ou des crampes\u00A0?',
       paragraphs: [
-        'La déshydratation est souvent accusée de causer mollets tendus et crampes, mais les données que nous avons trouvées ne l’étayent pas bien. En 2011, Schwellnus et coll. ont suivi 210\u00A0triathlètes Ironman. Les 43 qui ont eu des crampes n’avaient pas de variations différentes du poids corporel ni du taux de sel dans le sang par rapport aux autres. Les deux éléments qui prédisaient les crampes étaient une course plus rapide et des crampes déjà survenues. Cela oriente vers des muscles fatigués qui ont beaucoup travaillé, pas vers un manque d’eau ou de sel. Il s’agissait d’un seul groupe de sportifs d’endurance, ce qui ne règle pas la question pour tout le monde, mais c’est plus solide que les affirmations des pages produits.',
-        'Les crampes nocturnes sont une autre situation, et la recherche se contredit. Dans un essai de 2012 sur 80\u00A0adultes de plus de 55\u00A0ans, étirer les mollets et les ischio-jambiers chaque soir avant le coucher pendant environ un mois et demi a réduit les crampes de 1,2 par nuit de plus que ne rien faire, et les a rendues moins douloureuses (Hallegraeff et coll.). Un essai plus ancien de 2005 sur 191\u00A0personnes qui prenaient déjà de la quinine n’a trouvé aucune différence sur les crampes à trois mois avec des conseils d’étirement (Coppin et coll.). Un étirement doux du mollet avant le coucher ne coûte rien et présente peu de risque, il est donc raisonnable de l’essayer, mais il peut ne pas marcher pour vous.',
+        'La déshydratation est souvent accusée de causer mollets tendus et crampes, mais **les données que nous avons trouvées ne l’étayent pas bien.** En 2011, Schwellnus et coll. ont suivi 210\u00A0triathlètes Ironman. Les 43 qui ont eu des crampes n’avaient pas de variations différentes du poids corporel ni du taux de sel dans le sang par rapport aux autres. Les deux éléments qui prédisaient les crampes étaient une course plus rapide et des crampes déjà survenues.',
+        'Cela oriente vers des muscles fatigués qui ont beaucoup travaillé, pas vers un manque d’eau ou de sel. Il s’agissait d’un seul groupe de sportifs d’endurance, ce qui ne règle pas la question pour tout le monde, mais c’est plus solide que les affirmations des pages produits.',
+        'Les crampes nocturnes sont une autre situation, et la recherche se contredit\u00A0:',
+        {
+          list: [
+            'Dans un essai de 2012 sur 80\u00A0adultes de plus de 55\u00A0ans, étirer les mollets et les ischio-jambiers chaque soir avant le coucher pendant environ un mois et demi a réduit les crampes de 1,2 par nuit de plus que ne rien faire, et les a rendues moins douloureuses (Hallegraeff et coll.).',
+            'Un essai plus ancien de 2005 sur 191\u00A0personnes qui prenaient déjà de la quinine n’a trouvé aucune différence sur les crampes à trois mois avec des conseils d’étirement (Coppin et coll.).',
+          ],
+        },
+        'Un étirement doux du mollet avant le coucher ne coûte rien et présente peu de risque, il est donc raisonnable de l’essayer, mais il peut ne pas marcher pour vous.',
         'Si les crampes sont fréquentes, nouvelles ou s’accompagnent d’autres symptômes, parlez-en à un médecin. Certains médicaments et certaines maladies peuvent en provoquer.',
       ],
       sourceNote:
@@ -159,8 +186,24 @@ export const TIGHT_CALVES_FR: Guide = {
     {
       h2: 'Comment éviter que les mollets se tendent en courant ou en restant debout\u00A0?',
       paragraphs: [
-        'Des mollets qui se tendent à la course ou en position debout ont en général besoin d’un changement de charge, pas seulement de plus d’étirements. Si vous courez, augmentez votre distance hebdomadaire progressivement, ajoutez les côtes lentement, et laissez du temps à une nouvelle paire de chaussures à faible drop avant les sorties longues. La page sur la [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) détaille la gestion de la charge.',
-        'Si vous êtes debout toute la journée, changez souvent d’appui, faites de courtes pauses en marchant, et profitez de vos pauses pour quelques montées sur pointes et un étirement. Voir [mal aux pieds debout toute la journée](/fr/mal-aux-pieds-debout-toute-la-journee/).',
+        'Des mollets qui se tendent à la course ou en position debout **ont en général besoin d’un changement de charge, pas seulement de plus d’étirements.** Si vous courez\u00A0:',
+        {
+          list: [
+            'Augmentez votre distance hebdomadaire progressivement.',
+            'Ajoutez les côtes lentement.',
+            'Laissez du temps à une nouvelle paire de chaussures à faible drop avant les sorties longues.',
+          ],
+        },
+        'La page sur la [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais) détaille la gestion de la charge.',
+        'Si vous êtes debout toute la journée\u00A0:',
+        {
+          list: [
+            'Changez souvent d’appui.',
+            'Faites de courtes pauses en marchant.',
+            'Profitez de vos pauses pour quelques montées sur pointes et un étirement.',
+          ],
+        },
+        'Voir [mal aux pieds debout toute la journée](/fr/mal-aux-pieds-debout-toute-la-journee/).',
         'Si vous portez des talons la plupart des jours, rien ne vous oblige à y renoncer. Alternez avec des jours à plat et étirez les deux muscles du mollet le soir. Développer la force du mollet avec le temps aide vos mollets à encaisser ce que vous leur demandez.',
       ],
     },

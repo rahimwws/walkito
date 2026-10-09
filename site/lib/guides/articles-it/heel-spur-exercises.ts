@@ -43,7 +43,7 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
       h2: 'Perché gli esercizi aiutano la spina calcaneare?',
       keyFact: 'In uno studio su 530\u00A0persone con dolore al piede, la spina calcaneare compariva da sola solo nel 6% dei piedi, di solito insieme a una fascia plantare ispessita (Menz e colleghi, 2019).',
       paragraphs: [
-        'La spina calcaneare è una crescita ossea sulla parte inferiore dell’osso del tallone. In uno studio su 530\u00A0persone dai 50\u00A0anni in su con dolore al piede, una spina calcaneare da sola era rara (6% dei piedi), e il dolore al tallone era legato a una spina insieme a una fascia plantare ispessita, la banda di tessuto sotto il piede (Menz e colleghi, 2019). Di solito il dolore viene dal tessuto molle, ed è lì che l’esercizio può arrivare.',
+        'La spina calcaneare è una crescita ossea sulla parte inferiore dell’osso del tallone. In uno studio su 530\u00A0persone dai 50\u00A0anni in su con dolore al piede, una spina calcaneare da sola era rara (6% dei piedi), e il dolore al tallone era legato a una spina insieme a una fascia plantare ispessita, la banda di tessuto sotto il piede (Menz e colleghi, 2019). **Di solito il dolore viene dal tessuto molle, ed è lì che l’esercizio può arrivare.**',
         'Allungare la fascia plantare e il polpaccio riduce la tensione sul punto in cui si attaccano al tallone. Rinforzare il polpaccio aumenta la capacità della catena che assorbe il carico ogni volta che il tallone tocca terra. Insieme, riducono lo stress quotidiano sul tessuto intorno alla spina.',
         'Nessun programma di esercizi farà sparire una spina dalla radiografia. Ma la maggior parte delle persone con una spina calcaneare non ha bisogno che la spina sparisca. Ha bisogno che il dolore si calmi, e questo viene da una fascia e un polpaccio più forti e più flessibili.',
       ],
@@ -99,7 +99,8 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
       h2: 'Quali esercizi di rinforzo aiutano il dolore da spina calcaneare?',
       keyFact: 'In uno studio su 48\u00A0persone, il gruppo dei sollevamenti sulle punte aveva 29\u00A0punti in meno sul Foot Function Index rispetto al gruppo del solo stretching a tre mesi (Rathleff e colleghi, 2015).',
       paragraphs: [
-        'Nelle prime settimane spesso basta lo stretching. Quando il dolore del mattino inizia a calmarsi, aggiungere il rinforzo del polpaccio aumenta la capacità di cui ha bisogno la catena del tallone. La linea guida dà al lavoro di forza una **B**, il suo secondo grado più alto. Nell’unico studio costruito per testare i sollevamenti sulle punte nella fascite plantare, 48\u00A0persone sono state divise tra un gruppo di sollevamenti con carico e un gruppo di solo stretching. Il gruppo dei sollevamenti aveva 29\u00A0punti in meno (cioè meglio) sul Foot Function Index a tre mesi (Rathleff e colleghi, 2015).',
+        'Nelle prime settimane spesso basta lo stretching. Quando il dolore del mattino inizia a calmarsi, aggiungere il rinforzo del polpaccio aumenta la capacità di cui ha bisogno la catena del tallone. La linea guida dà al lavoro di forza una **B**, il suo secondo grado più alto.',
+        'Nell’unico studio costruito per testare i sollevamenti sulle punte nella fascite plantare, 48\u00A0persone sono state divise tra un gruppo di sollevamenti con carico e un gruppo di solo stretching. Il gruppo dei sollevamenti aveva 29\u00A0punti in meno (cioè meglio) sul Foot Function Index a tre mesi (Rathleff e colleghi, 2015).',
         'Inizia dal livello più facile e sali solo quando ti sembra facile per due sessioni di fila. La progressione qui sotto va dal lavoro da seduto fino al sollevamento con asciugamano e carico dello studio.',
       ],
       exercises: [
@@ -226,7 +227,8 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
       paragraphs: [
         'Lo stretching deve dare una sensazione di tensione, non una fitta. Un allungamento del polpaccio che dà una tensione comoda nella parte alta o bassa del polpaccio va bene. Un allungamento della fascia plantare che tira con delicatezza lungo l’arco va bene. Se lo stretching riproduce la fitta che senti ai primi passi, alleggerisci.',
         'I sollevamenti sulle punte devono dare la sensazione di lavoro nel polpaccio. La versione con asciugamano dà anche una tensione sotto l’arco, che è la fascia che viene caricata. Quella tensione è normale ed è proprio lo scopo dell’asciugamano.',
-        'Fermati per oggi se durante un esercizio il dolore arriva a **6/10 o più**, o se la mattina dopo i primi passi sono chiaramente peggiori del solito. È la regola di fermarsi e scendere di un livello che usa l’app. Un leggero indolenzimento che passa in un giorno è normale, soprattutto nelle prime due settimane. Un dolore che resta alto per giorni o peggiora di settimana in settimana è un motivo per tornare indietro di un livello o rivolgerti a un professionista sanitario.',
+        'Fermati per oggi se durante un esercizio il dolore arriva a **6/10 o più**, o se la mattina dopo i primi passi sono chiaramente peggiori del solito. È la regola di fermarsi e scendere di un livello che usa l’app.',
+        'Un leggero indolenzimento che passa in un giorno è normale, soprattutto nelle prime due settimane. Un dolore che resta alto per giorni o peggiora di settimana in settimana è un motivo per tornare indietro di un livello o rivolgerti a un professionista sanitario.',
       ],
       cites: [CITE.guideline],
     },
@@ -235,14 +237,21 @@ export const HEEL_SPUR_EXERCISES_IT: Guide = {
       paragraphs: [
         'Non esiste uno studio che misuri i risultati degli esercizi proprio nelle persone con spina calcaneare. I tempi qui sotto vengono dagli studi sulla fascite plantare, che nella maggior parte dei casi è il problema che dà il dolore intorno alla spina.',
         'Una revisione delle prove cliniche riporta che circa il 90% delle persone con fascite plantare migliora con cure non chirurgiche come stretching e plantari, spesso nel giro di alcuni mesi (Latt e colleghi, 2020). Nello studio di Rathleff del 2015, il gruppo dei sollevamenti sulle punte con carico era nettamente avanti rispetto al gruppo del solo stretching a tre mesi.',
-        'Nessun programma di esercizi può promettere dei tempi a una singola persona. Quello che puoi misurare è se le cose stanno cambiando. Il dolore del mattino su una scala da 0 a 10, misurato prima del primo passo, è il segnale quotidiano più chiaro. La resistenza del polpaccio, misurata da quanti sollevamenti sulle punte su una gamba riesci a fare, segue la forza nel corso delle settimane. Entrambi sono più utili che tirare a indovinare.',
+        'Nessun programma di esercizi può promettere dei tempi a una singola persona. **Quello che puoi misurare è se le cose stanno cambiando**:',
+        {
+          list: [
+            'Il dolore del mattino su una scala da 0 a 10, misurato prima del primo passo, è il segnale quotidiano più chiaro.',
+            'La resistenza del polpaccio, misurata da quanti sollevamenti sulle punte su una gamba riesci a fare, segue la forza nel corso delle settimane.',
+          ],
+        },
+        'Entrambi sono più utili che tirare a indovinare.',
       ],
       cites: [CITE.latt, CITE.rathleff],
     },
     {
       h2: 'Si può eliminare la spina calcaneare in modo naturale?',
       paragraphs: [
-        'Esercizi, stretching e cambi nella dieta non sciolgono una spina calcaneare. La spina è tessuto osseo. Resta nella radiografia che tu faccia stretching o no.',
+        '**Esercizi, stretching e cambi nella dieta non sciolgono una spina calcaneare.** La spina è tessuto osseo. Resta nella radiografia che tu faccia stretching o no.',
         'Ma «eliminare la spina» è raramente l’obiettivo giusto. Nello studio del 2019, la spina c’era quasi sempre insieme a una fascia plantare ispessita, e il tessuto molle è la parte che l’esercizio può cambiare. Di solito il dolore viene dal tessuto molle. Gli esercizi di questa pagina lavorano sul tessuto molle. Se il dolore si calma, la spina non è un problema da risolvere.',
         'Se qualcuno ti ha promesso un integratore, una crema o un dispositivo che scioglie le spine calcaneari, sii scettico. Nessuna prova pubblicata sostiene questa affermazione. L’approccio raccomandato dalla linea guida è stretching, rinforzo del polpaccio e gestione del carico.',
       ],

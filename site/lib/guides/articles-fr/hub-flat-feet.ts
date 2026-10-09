@@ -39,7 +39,7 @@ export const HUB_FLAT_FEET_FR: Guide = {
         'La voûte du pied, appelée voûte longitudinale interne (médiale), est formée par les os, les ligaments et les tendons de l’intérieur du pied. Sur un pied plat, cette voûte est plus basse ou absente quand vous êtes debout. Le terme médical est pes planus.',
         'Les pieds plats sont fréquents. Une revue systématique de 2023 a regroupé 12\u00A0études de population portant sur environ 16\u00A0000\u00A0personnes et a rapporté une fréquence globale de 15,6\u00A0%. Chez les adultes seuls, les estimations vont d’environ 5 à 27\u00A0% selon la population et la méthode de mesure. Un IMC plus élevé et un âge plus avancé sont associés à une fréquence plus élevée.',
         '«\u00A0Voûte affaissée\u00A0» est un nom courant pour les pieds plats. La plupart du temps, les deux expressions veulent dire la même chose. Parfois, «\u00A0voûte affaissée\u00A0» désigne plus précisément une voûte qui est descendue à l’âge adulte, ce qui a une autre cause, présentée plus bas.',
-        'Avoir les pieds plats ne veut pas dire automatiquement que quelque chose ne va pas. Beaucoup de personnes avec une voûte basse marchent, courent et restent debout sans aucun symptôme. Les questions qui comptent sont de savoir si le pied plat est souple ou rigide, et s’il fait mal.',
+        '**Avoir les pieds plats ne veut pas dire automatiquement que quelque chose ne va pas.** Beaucoup de personnes avec une voûte basse marchent, courent et restent debout sans aucun symptôme. Les questions qui comptent sont de savoir si le pied plat est souple ou rigide, et s’il fait mal.',
       ],
       cites: [CITE.salinasTorres],
     },
@@ -49,7 +49,8 @@ export const HUB_FLAT_FEET_FR: Guide = {
       paragraphs: [
         'Un pied plat souple est un pied dont la voûte s’aplatit sous votre poids mais revient quand le pied ne touche plus le sol. La plupart des pieds plats sont de ce type. Un pied plat rigide reste plat, que vous soyez debout dessus ou non.',
         'Une vérification rapide\u00A0: asseyez-vous et regardez l’intérieur de votre pied. Si vous voyez une voûte, mettez-vous debout sur les deux pieds. Si la voûte disparaît debout alors qu’elle était là assis, le pied plat est souple. Autre façon\u00A0: montez sur la pointe des pieds. Si la voûte apparaît quand vous montez, il est souple.',
-        'La différence compte, car l’exercice peut agir sur une voûte souple. Dans un essai sur 52\u00A0personnes aux pieds plats souples, six semaines d’exercices du pied court, de travail de la cheville, de renforcement de la hanche et d’étirements ont modifié deux mesures de la forme de la voûte davantage que dans un groupe témoin. Un pied plat rigide est structurel (souvent à cause d’une coalition tarsienne, un pont osseux entre des os du pied) et l’exercice ne changera pas sa forme. Un pied plat rigide qui fait mal demande en général l’avis d’un professionnel de santé.',
+        '**La différence compte, car l’exercice peut agir sur une voûte souple.** Dans un essai sur 52\u00A0personnes aux pieds plats souples, six semaines d’exercices du pied court, de travail de la cheville, de renforcement de la hanche et d’étirements ont modifié deux mesures de la forme de la voûte davantage que dans un groupe témoin.',
+        'Un pied plat rigide est structurel (souvent à cause d’une coalition tarsienne, un pont osseux entre des os du pied) et l’exercice ne changera pas sa forme. Un pied plat rigide qui fait mal demande en général l’avis d’un professionnel de santé.',
       ],
       cites: [CITE.brijwasi],
     },
@@ -57,9 +58,17 @@ export const HUB_FLAT_FEET_FR: Guide = {
       h2: 'Les pieds plats sont-ils vraiment un problème\u00A0?',
       keyFact: 'La Framingham Foot Study, sur environ 1\u00A0900\u00A0adultes, n’a trouvé aucun lien entre une posture de pied plat et le mal de dos, mais une marche en pronation montrait un petit lien chez les femmes seulement (Menz et coll., 2013).',
       paragraphs: [
-        'Pour la plupart des gens, non. Un pied plat souple qui ne fait pas mal et ne limite pas ce que vous faites est une variation normale de la forme du pied, pas un problème à régler.',
-        'L’inquiétude la plus fréquente concerne le mal de dos. La plus grande étude sur le sujet, la Framingham Foot Study, a porté sur environ 1\u00A0900\u00A0adultes. Elle n’a trouvé aucune association entre une posture de pied plat et le mal de bas du dos. Chez les femmes, un pied qui s’affaissait vers l’intérieur à la marche (marche en pronation) montrait un petit lien avec le mal de dos, mais la posture du pied elle-même, plat ou non, n’en montrait pas. Chez les hommes, ni la posture ni la marche n’étaient liées au mal de dos.',
-        'Les pieds plats peuvent modifier la façon dont la charge traverse la jambe. Certains coureurs aux pieds très en pronation développent des blessures de surcharge à la cheville ou au genou, mais le lien entre posture du pied et blessure est plus faible que beaucoup ne le pensent. Une revue de 2024 sur l’entraînement du pied court chez les personnes aux pieds plats n’a trouvé aucun changement net de la posture du pied dans l’ensemble, et un changement sur une mesure de l’affaissement de la voûte seulement dans les programmes de plus de six semaines. L’essai comme la revue ont mesuré la forme de la voûte, pas la douleur ni le taux de blessures.',
+        '**Pour la plupart des gens, non.** Un pied plat souple qui ne fait pas mal et ne limite pas ce que vous faites est une variation normale de la forme du pied, pas un problème à régler.',
+        'L’inquiétude la plus fréquente concerne le mal de dos. La plus grande étude sur le sujet, la Framingham Foot Study, a porté sur environ 1\u00A0900\u00A0adultes. Ce qu’elle a trouvé\u00A0:',
+        {
+          list: [
+            '**Dans l’ensemble\u00A0:** aucune association entre une posture de pied plat et le mal de bas du dos.',
+            '**Chez les femmes\u00A0:** un pied qui s’affaissait vers l’intérieur à la marche (marche en pronation) montrait un petit lien avec le mal de dos, mais la posture du pied elle-même, plat ou non, n’en montrait pas.',
+            '**Chez les hommes\u00A0:** ni la posture ni la marche n’étaient liées au mal de dos.',
+          ],
+        },
+        'Les pieds plats peuvent modifier la façon dont la charge traverse la jambe. Certains coureurs aux pieds très en pronation développent des blessures de surcharge à la cheville ou au genou, mais le lien entre posture du pied et blessure est plus faible que beaucoup ne le pensent.',
+        'Une revue de 2024 sur l’entraînement du pied court chez les personnes aux pieds plats n’a trouvé aucun changement net de la posture du pied dans l’ensemble, et un changement sur une mesure de l’affaissement de la voûte seulement dans les programmes de plus de six semaines. L’essai comme la revue ont mesuré la forme de la voûte, pas la douleur ni le taux de blessures.',
         'Les cas où les pieds plats comptent vraiment sont présentés plus bas\u00A0: le pied plat acquis de l’adulte dû à un tendon qui s’affaiblit, et les pieds plats qui s’accompagnent de douleur, de gonflement ou d’un changement soudain de la hauteur de la voûte.',
       ],
       cites: [CITE.menz, CITE.cheng],
@@ -68,10 +77,19 @@ export const HUB_FLAT_FEET_FR: Guide = {
       h2: 'Qu’est-ce que le pied plat acquis de l’adulte\u00A0?',
       paragraphs: [
         'Le pied plat acquis de l’adulte est un problème où une voûte jusque-là normale s’affaisse à l’âge adulte, en général parce que le tendon tibial postérieur (le tendon qui soutient la voûte depuis l’intérieur de la cheville) s’affaiblit et ne peut plus faire son travail. Le nom clinique de ce problème de tendon est la dysfonction du tendon tibial postérieur.',
-        'Le tendon tibial postérieur passe derrière la malléole interne et s’attache aux os qui forment la voûte. Quand il s’étire ou se déchire, la voûte descend, le talon bascule vers l’extérieur, et l’avant du pied peut commencer à s’écarter vers l’extérieur. Une douleur et un gonflement le long de l’intérieur de la cheville sont des signes précoces fréquents. Un test de montée sur pointe sur un pied, où vous essayez de vous tenir sur un pied et de monter sur la pointe, peut être difficile ou douloureux du côté atteint.',
-        'Une synthèse publiée dans The Open Orthopaedics Journal décrit quatre stades\u00A0: au stade I, le tendon est enflammé mais il n’y a pas de déformation visible\u00A0; au stade II, il y a un pied plat souple qu’on peut encore corriger à la main\u00A0; au stade III, la déformation est rigide et ne se corrige plus à la main\u00A0; et au stade IV, l’articulation de la cheville est atteinte en plus de la déformation rigide.',
+        'Le tendon tibial postérieur passe derrière la malléole interne et s’attache aux os qui forment la voûte. Quand il s’étire ou se déchire, la voûte descend, le talon bascule vers l’extérieur, et l’avant du pied peut commencer à s’écarter vers l’extérieur.',
+        'Une douleur et un gonflement le long de l’intérieur de la cheville sont des signes précoces fréquents. Un test de montée sur pointe sur un pied, où vous essayez de vous tenir sur un pied et de monter sur la pointe, peut être difficile ou douloureux du côté atteint.',
+        'Une synthèse publiée dans The Open Orthopaedics Journal décrit quatre stades\u00A0:',
+        {
+          list: [
+            '**Stade I\u00A0:** le tendon est enflammé mais il n’y a pas de déformation visible.',
+            '**Stade II\u00A0:** il y a un pied plat souple qu’on peut encore corriger à la main.',
+            '**Stade III\u00A0:** la déformation est rigide et ne se corrige plus à la main.',
+            '**Stade IV\u00A0:** l’articulation de la cheville est atteinte en plus de la déformation rigide.',
+          ],
+        },
         'Une revue systématique sur l’exercice dans la dysfonction du tendon tibial postérieur a trouvé peu de preuves issues d’essais randomisés. Elle a noté que les recommandations cliniques conseillent une prise en charge non chirurgicale, avec exercices, orthèses et adaptation de l’activité, pour les premiers stades (stades I et II), mais que les essais de bonne qualité sont peu nombreux. Les stades plus avancés demandent souvent l’avis d’un professionnel de santé et peuvent passer par une orthèse de cheville ou la chirurgie.',
-        'Si une voûte est descendue à l’âge adulte, avec une douleur ou un gonflement à l’intérieur de la cheville, consultez un professionnel de santé avant de commencer un programme d’exercices. Ce n’est pas la même chose qu’un pied plat souple présent depuis toujours.',
+        'Si une voûte est descendue à l’âge adulte, avec une douleur ou un gonflement à l’intérieur de la cheville, **consultez un professionnel de santé avant de commencer un programme d’exercices.** Ce n’est pas la même chose qu’un pied plat souple présent depuis toujours.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
@@ -94,8 +112,9 @@ export const HUB_FLAT_FEET_FR: Guide = {
       h2: 'Les chaussures et les semelles aident-elles les pieds plats\u00A0?',
       paragraphs: [
         'Des chaussures qui soutiennent le pied, avec une semelle intermédiaire ferme et un peu de soutien de voûte, peuvent rendre la station debout et la marche plus confortables pour les personnes aux pieds plats. Elles ne changent pas la voûte avec le temps, mais elles réduisent le travail que les muscles de la voûte doivent fournir dans la journée.',
-        'Les semelles de soutien de voûte du commerce sont faciles à trouver et peu chères. Les semelles orthopédiques sur mesure, faites à partir d’un moulage de votre pied, coûtent plus cher et sont parfois conseillées en cas de dysfonction du tendon tibial postérieur. Les preuves en faveur des semelles pour les pieds plats en particulier sont plus minces que ce que la plupart des gens pensent. Pour la fasciite plantaire, la recommandation de 2023 sur la douleur au talon déconseille les semelles orthopédiques seules comme approche à court terme (B contre), mais donne un C aux soins combinés qui les incluent.',
-        'Si vos pieds plats ne font pas mal, vous n’avez pas besoin de chaussures spéciales. Si la station debout ou la marche fait mal à la voûte ou à la cheville, une chaussure avec une semelle ferme et un léger soutien de voûte est un premier pas raisonnable, à essayer avant de dépenser plus pour des semelles sur mesure. Les chaussures aux semelles très plates et sans soutien (sandales fines, baskets usées) ont tendance à aggraver la fatigue de la voûte lors des longues journées.',
+        'Les semelles de soutien de voûte du commerce sont faciles à trouver et peu chères. Les semelles orthopédiques sur mesure, faites à partir d’un moulage de votre pied, coûtent plus cher et sont parfois conseillées en cas de dysfonction du tendon tibial postérieur.',
+        'Les preuves en faveur des semelles pour les pieds plats en particulier sont plus minces que ce que la plupart des gens pensent. Pour la fasciite plantaire, la recommandation de 2023 sur la douleur au talon déconseille les semelles orthopédiques seules comme approche à court terme (B contre), mais donne un C aux soins combinés qui les incluent.',
+        '**Si vos pieds plats ne font pas mal, vous n’avez pas besoin de chaussures spéciales.** Si la station debout ou la marche fait mal à la voûte ou à la cheville, une chaussure avec une semelle ferme et un léger soutien de voûte est un premier pas raisonnable, à essayer avant de dépenser plus pour des semelles sur mesure. Les chaussures aux semelles très plates et sans soutien (sandales fines, baskets usées) ont tendance à aggraver la fatigue de la voûte lors des longues journées.',
       ],
       cites: [CITE.guideline],
     },
@@ -103,7 +122,7 @@ export const HUB_FLAT_FEET_FR: Guide = {
       h2: 'Quels exercices pour les pieds plats\u00A0?',
       paragraphs: [
         'L’exercice pour les pieds plats vise les muscles qui soutiennent la voûte par en dessous (les muscles intrinsèques du pied) et les muscles plus haut qui contrôlent la façon dont le pied se pose (le mollet, la hanche). Les meilleures preuves à ce jour viennent d’un essai sur 52\u00A0personnes aux pieds plats souples, où six semaines d’exercices combinés ont modifié la forme de la voûte davantage que dans un groupe témoin. Cet essai comprenait le pied court, des exercices de cheville, le renforcement de la hanche et des étirements, faits ensemble.',
-        'Une revue de 2024 sur le pied court seul était moins encourageante\u00A0: elle n’a trouvé aucun changement net dans l’ensemble, et une amélioration sur une mesure de la voûte seulement dans les programmes de plus de six semaines. À retenir\u00A0: un programme combiné marche mieux qu’un exercice isolé, et la patience compte.',
+        'Une revue de 2024 sur le pied court seul était moins encourageante\u00A0: elle n’a trouvé aucun changement net dans l’ensemble, et une amélioration sur une mesure de la voûte seulement dans les programmes de plus de six semaines. À retenir\u00A0: **un programme combiné marche mieux qu’un exercice isolé, et la patience compte.**',
         '[Exercices pour pieds plats](/fr/exercices-pieds-plats/) donne la liste complète des exercices, les doses, ce que chacun doit faire sentir et les preuves derrière chacun. Walkito construit un plan hebdomadaire autour d’un objectif de maintien de la voûte, du pied court assis aux versions debout et sur une jambe, puis ajoute la résistance d’un élastique et le renforcement de la hanche. Chaque exercice a sa propre page\u00A0:',
       ],
       bullets: [

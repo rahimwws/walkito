@@ -47,7 +47,7 @@ export const HAGLUNDS_ES: Guide = {
     {
       h2: '¿Cómo se relaciona la deformidad de Haglund con la tendinopatía insercional del Aquiles?',
       paragraphs: [
-        'La deformidad de Haglund y la tendinopatía insercional del Aquiles suelen aparecer juntas, pero no son la misma afección. La tendinopatía insercional es dolor en el punto donde el tendón de Aquiles se une al hueso del talón, normalmente por sobrecarga. La deformidad de Haglund es una forma del hueso. El bulto puede irritar el tendón desde atrás, y la inserción del tendón puede verse afectada por la misma compresión que inflama la bursa.',
+        'La deformidad de Haglund y la tendinopatía insercional del Aquiles suelen aparecer juntas, pero **no son la misma afección.** La tendinopatía insercional es dolor en el punto donde el tendón de Aquiles se une al hueso del talón, normalmente por sobrecarga. La deformidad de Haglund es una forma del hueso. El bulto puede irritar el tendón desde atrás, y la inserción del tendón puede verse afectada por la misma compresión que inflama la bursa.',
         'El vínculo práctico: si tienes un bulto de Haglund y dolor en la parte de atrás del talón, el dolor puede venir de la bursa, de la inserción del tendón, o de los dos. Un profesional de la salud puede distinguirlo examinando dónde está la mayor sensibilidad y si el estiramiento o la carga reproducen el dolor.',
         'La guía de 2024 para la tendinopatía de Aquiles hace una separación clara entre la enfermedad de la porción media y la insercional. Para los problemas insercionales, que incluyen los casos asociados a la deformidad de Haglund, el protocolo estándar de descensos excéntricos de talón necesita modificación. La dorsiflexión profunda, dejar que el talón baje por debajo del escalón, comprime el tendón contra el hueso y puede empeorar los síntomas.',
       ],
@@ -65,9 +65,18 @@ export const HAGLUNDS_ES: Guide = {
     {
       h2: '¿Cuáles son las opciones conservadoras para la deformidad de Haglund?',
       paragraphs: [
-        'Una revisión narrativa de 2020 lista los pasos conservadores de primera línea: modificación del calzado (evitar zapatos con contrafuertes rígidos, usar zapatos abiertos por atrás o acolchar la zona del talón), alzas de talón para reducir la tensión del Aquiles, estiramiento del gastrocnemio y del sóleo, fortalecimiento de la pantorrilla y modificación de la actividad.',
+        'Una revisión narrativa de 2020 lista los pasos conservadores de primera línea:',
+        {
+          list: [
+            '**Modificación del calzado:** evitar zapatos con contrafuertes rígidos, usar zapatos abiertos por atrás o acolchar la zona del talón.',
+            '**Alzas de talón:** para reducir la tensión del Aquiles.',
+            '**Estiramiento:** del gastrocnemio y del sóleo.',
+            '**Fortalecimiento:** de la pantorrilla.',
+            '**Modificación de la actividad.**',
+          ],
+        },
         'Ningún ensayo controlado aleatorizado ha probado ninguna de estas intervenciones específicamente para la deformidad de Haglund. La evidencia es opinión de expertos y series de casos. La revisión quirúrgica de 2022 señaló que la mayoría de los autores recomienda al menos seis meses de manejo conservador antes de considerar la cirugía.',
-        'El cambio más inmediato suele ser el zapato. Si un contrafuerte rígido está presionando sobre el bulto, quitar esa presión puede reducir los síntomas rápidamente. Los zapatos abiertos por atrás, los zapatos con contrafuerte blando o flexible, o una almohadilla colocada dentro del zapato alrededor (no encima) del bulto son opciones prácticas.',
+        '**El cambio más inmediato suele ser el zapato.** Si un contrafuerte rígido está presionando sobre el bulto, quitar esa presión puede reducir los síntomas rápidamente. Los zapatos abiertos por atrás, los zapatos con contrafuerte blando o flexible, o una almohadilla colocada dentro del zapato alrededor (no encima) del bulto son opciones prácticas.',
       ],
       cites: [CITE.chooRearfoot, CITE.yuenHaglund],
     },
@@ -145,7 +154,15 @@ export const HAGLUNDS_ES: Guide = {
       keyFact: 'Una revisión sistemática de 2022 con 20\u00A0estudios encontró que tanto la cirugía abierta como la endoscópica mejoraron los puntajes AOFAS, con recuperaciones más cortas en las técnicas endoscópicas (Yuen y colegas, 2022).',
       paragraphs: [
         'La cirugía se habla después de al menos seis meses de manejo conservador sin mejoría suficiente. La revisión sistemática de 2022 de Yuen y colegas incluyó 20\u00A0estudios y encontró que tanto las técnicas abiertas como las endoscópicas mejoraron los puntajes AOFAS (American Orthopaedic Foot and Ankle Society). Las técnicas endoscópicas mostraron tiempos de recuperación más cortos.',
-        'La cirugía normalmente implica quitar la prominencia ósea (calcaneoplastia), extirpar la bursa inflamada, y en algunos casos desbridar o reinsertar el tendón de Aquiles. Las complicaciones pueden incluir problemas de cicatrización, lesión de nervios y debilitamiento del tendón. La decisión es entre tú y tu cirujano.',
+        'La cirugía normalmente implica:',
+        {
+          list: [
+            'Quitar la prominencia ósea (calcaneoplastia).',
+            'Extirpar la bursa inflamada.',
+            'En algunos casos, desbridar o reinsertar el tendón de Aquiles.',
+          ],
+        },
+        'Las complicaciones pueden incluir problemas de cicatrización, lesión de nervios y debilitamiento del tendón. La decisión es entre tú y tu cirujano.',
         'Esta página no recomienda a favor ni en contra de la cirugía. Los pasos conservadores de arriba son donde empieza la mayoría de las personas, y muchas responden lo suficiente como para evitar una operación. Si seis meses de modificación de calzado, ejercicio y cambios de actividad no han ayudado, un especialista en pie y tobillo puede hablar sobre las opciones quirúrgicas.',
       ],
       cites: [CITE.yuenHaglund],
@@ -155,7 +172,7 @@ export const HAGLUNDS_ES: Guide = {
       paragraphs: [
         'Los zapatos no crean la prominencia ósea. La forma del calcáneo es en parte genética. Pero los zapatos con un contrafuerte rígido e inflexible pueden irritar un bulto que de otra forma sería indoloro. Este es el origen del nombre «pump bump», por las partes traseras rígidas de los zapatos tipo pump.',
         'Zapatos a evitar: cualquiera con un contrafuerte rígido y angosto que presione la parte de atrás del talón. Zapatos a buscar: cuello del talón blando o acolchado, parte trasera ligeramente abierta o flexible, y suficiente espacio para que el contrafuerte no se clave. Las alzas de talón dentro del zapato también pueden desplazar el tendón de Aquiles ligeramente lejos del bulto.',
-        'La modificación del calzado es el paso más inmediato y el más recomendado de forma consistente en la literatura basada en opinión de expertos. Si quitas la presión, muchas veces puedes reducir el dolor.',
+        'La modificación del calzado es el paso más inmediato y el más recomendado de forma consistente en la literatura basada en opinión de expertos. **Si quitas la presión, muchas veces puedes reducir el dolor.**',
       ],
       cites: [CITE.chooRearfoot, CITE.yuenHaglund],
     },

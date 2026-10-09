@@ -82,18 +82,20 @@ function Inline({ text }: { text: string }) {
   );
 }
 
-/** A paragraph, or a list that sits between paragraphs. */
-function Block({ block }: { block: GuideBlock }) {
-  if (typeof block === 'string') {
+/** A paragraph, or a list that sits between paragraphs. A function, not a
+ * component: the reading time counts words through `text` props, so the
+ * paragraphs must reach the tree as <Inline text> directly. */
+function block(b: GuideBlock, key: number) {
+  if (typeof b === 'string') {
     return (
-      <p>
-        <Inline text={block} />
+      <p key={key}>
+        <Inline text={b} />
       </p>
     );
   }
   return (
-    <ul>
-      {block.list.map((item) => (
+    <ul key={key}>
+      {b.list.map((item) => (
         <li key={item}>
           <Inline text={item} />
         </li>
@@ -344,7 +346,7 @@ export function Guide({ guide }: { guide: GuideData }) {
             )}
             {section.paragraphs?.map((p, i) => (
               <Fragment key={i}>
-                <Block block={p} />
+                {block(p, i)}
                 {i === 0 && section.figure && !figureAtEnd(section) && (
                   <AnatomyFigure lang={guide.lang} {...section.figure} />
                 )}
@@ -354,7 +356,7 @@ export function Guide({ guide }: { guide: GuideData }) {
               <AnatomyFigure lang={guide.lang} {...section.figure} />
             )}
             {section.table && <Table table={section.table} />}
-            {section.after?.map((p, i) => <Block key={i} block={p} />)}
+            {section.after?.map((p, i) => block(p, i))}
             {section.exercises?.some((e) => e.feel != null) ? (
               section.exercises.map((e) => (
                 // An exercise without a clip is text only: no empty box.

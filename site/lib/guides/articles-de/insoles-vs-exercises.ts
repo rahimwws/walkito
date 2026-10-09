@@ -24,7 +24,8 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
     {
       h2: 'Was ist der Unterschied zwischen Einlagen, orthopädischen Einlagen und Übungen?',
       paragraphs: [
-        'Eine **Einlage** ist alles, was du in einen Schuh legst. Eine **orthopädische Einlage** (Fußorthese) ist eine Einlage, die so geformt ist, dass sie das Gewölbe stützt und die Ferse entlastet. **Fertige** Einlagen kaufst du von der Stange. **Maßgefertigte** werden nach einem Scan oder Abdruck deines Fußes gemacht, meist von einer Fachperson für Füße wie einem Orthopädieschuhtechniker oder einer Podologin, und kosten deutlich mehr. Beide verändern die Belastung des Fußes, solange du sie trägst. Übungen verändern das Gewebe selbst, sodass Fuß und Wade mehr Last tragen können, mit oder ohne Einlage.',
+        'Eine **Einlage** ist alles, was du in einen Schuh legst. Eine **orthopädische Einlage** (Fußorthese) ist eine Einlage, die so geformt ist, dass sie das Gewölbe stützt und die Ferse entlastet. **Fertige** Einlagen kaufst du von der Stange. **Maßgefertigte** werden nach einem Scan oder Abdruck deines Fußes gemacht, meist von einer Fachperson für Füße wie einem Orthopädieschuhtechniker oder einer Podologin, und kosten deutlich mehr.',
+        'Beide verändern die Belastung des Fußes, solange du sie trägst. Übungen verändern das Gewebe selbst, sodass Fuß und Wade mehr Last tragen können, mit oder ohne Einlage.',
       ],
     },
     {
@@ -48,7 +49,15 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
       keyFact: 'In einer Studie mit 185\u00A0Personen mit Fersenschmerzen schnitten maßgefertigte Einlagen nach drei Monaten nicht besser ab als Schein-Einlagen, und Menschen in hausärztlicher Versorgung berichteten 1,48\u00A0Punkte weniger Schmerz bei den ersten Schritten als die mit maßgefertigten Einlagen (Rasenberg und Kollegen, 2021).',
       paragraphs: [
         'Bei gewöhnlichen Fersenschmerzen sagt die Forschung: meist nicht. Die Übersichtsarbeit von Whittaker fand **zu keinem Zeitpunkt einen Unterschied zwischen maßgefertigten und fertigen Einlagen**, und die Leitlinie von 2023 stellt „eine Ähnlichkeit der Ergebnisse zwischen maßgefertigten und fertigen Orthesen“ fest.',
-        'Die niederländische STAP-Studie teilte 185\u00A0Erwachsene mit Fersenschmerzen zufällig drei Gruppen zu: hausärztliche Versorgung, eine von einer Podologin oder einem Podologen maßgefertigte Einlage oder eine Schein-Einlage (Rasenberg und Kollegen, 2021). **Jede Gruppe bekam zusätzlich ein Heft mit Übungen.** Nach drei Monaten schnitten maßgefertigte Einlagen nicht besser ab als die Schein-Einlage. Die Gruppe mit hausärztlicher Versorgung schnitt besser ab als die Gruppe mit maßgefertigten Einlagen: etwa 1\u00A0Punkt weniger Schmerz bei Aktivität und 1,5\u00A0Punkte weniger Schmerz bei den ersten Schritten, auf einer Skala von 0 bis 10. Eine Kostenanalyse derselben Studie über etwa sechs Monate fand maßgefertigte Einlagen im Vergleich zur hausärztlichen Versorgung „nicht kosteneffektiv“.',
+        'Die niederländische STAP-Studie teilte 185\u00A0Erwachsene mit Fersenschmerzen (Rasenberg und Kollegen, 2021) zufällig drei Gruppen zu:',
+        {
+          list: [
+            'Hausärztliche Versorgung.',
+            'Eine von einer Podologin oder einem Podologen maßgefertigte Einlage.',
+            'Eine Schein-Einlage.',
+          ],
+        },
+        '**Jede Gruppe bekam zusätzlich ein Heft mit Übungen.** Nach drei Monaten schnitten maßgefertigte Einlagen nicht besser ab als die Schein-Einlage. Die Gruppe mit hausärztlicher Versorgung schnitt besser ab als die Gruppe mit maßgefertigten Einlagen: etwa 1\u00A0Punkt weniger Schmerz bei Aktivität und 1,5\u00A0Punkte weniger Schmerz bei den ersten Schritten, auf einer Skala von 0 bis 10. Eine Kostenanalyse derselben Studie über etwa sechs Monate fand maßgefertigte Einlagen im Vergleich zur hausärztlichen Versorgung „nicht kosteneffektiv“.',
         'Maßgefertigte Einlagen können manchen Menschen trotzdem helfen (siehe unten). Aber wenn du eine Einlage für Fersenschmerzen willst, ist eine gut sitzende fertige Gewölbestütze der vernünftige erste Versuch.',
       ],
       cites: [CITE.whittakerOrthoses, CITE.guideline, CITE.rasenbergStap, CITE.rasenbergCost],
@@ -58,7 +67,8 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
       keyFact: 'In einer Studie mit 48\u00A0Personen, die alle Schuheinlagen trugen, schnitt die Gruppe mit zusätzlichem schwerem Fersenheben nach drei Monaten im Foot Function Index um 29\u00A0Punkte besser ab als die Gruppe mit zusätzlichem Dehnen (Rathleff und Kollegen, 2015).',
       paragraphs: [
         'Übungen verändern das Gewebe, deshalb hält die Veränderung über die Einheit hinaus an. Die Leitlinie von 2023 bewertet das Dehnen von Plantarfaszie und Wade mit **A** und Krafttraining mit **B**.',
-        'In einer Studie bekamen alle 48\u00A0Personen mit Plantarfasziitis eine Schuheinlage (Rathleff und Kollegen, 2015). Die Hälfte dehnte zusätzlich täglich, die andere Hälfte machte zusätzlich jeden zweiten Tag schweres Fersenheben mit einem Handtuch unter den Zehen. Nach drei Monaten schnitt die Fersenheben-Gruppe im Foot Function Index (ein Wert von 0 bis 100 für Fußschmerz und Einschränkung) um 29\u00A0Punkte besser ab. Nach sechs und zwölf Monaten lagen die Gruppen gleichauf. Die Einlage war in beiden Gruppen dieselbe, den frühen Unterschied machte die Übung. Die komplette Routine findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
+        'In einer Studie bekamen alle 48\u00A0Personen mit Plantarfasziitis eine Schuheinlage (Rathleff und Kollegen, 2015). Die Hälfte dehnte zusätzlich täglich, die andere Hälfte machte zusätzlich jeden zweiten Tag schweres Fersenheben mit einem Handtuch unter den Zehen.',
+        'Nach drei Monaten schnitt die Fersenheben-Gruppe im Foot Function Index (ein Wert von 0 bis 100 für Fußschmerz und Einschränkung) um 29\u00A0Punkte besser ab. Nach sechs und zwölf Monaten lagen die Gruppen gleichauf. Die Einlage war in beiden Gruppen dieselbe, den frühen Unterschied machte die Übung. Die komplette Routine findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
       ],
       exercises: [
         {
@@ -91,8 +101,9 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
     {
       h2: 'Helfen Einlagen bei Plattfuß?',
       paragraphs: [
-        'Die Belege sind für beides dünn. Ein Plattfuß (ein flaches Fußgewölbe) macht oft gar keine Beschwerden, und dann gibt es nichts zu korrigieren. Siehe [Plattfuß](/de/plattfuss/).',
-        'Für Erwachsene mit flexiblem Plattfuß fand eine Übersichtsarbeit 13\u00A0Studien, davon nur zwei randomisiert (Banwell und Kollegen, 2014). Sie fand „keine hochwertigen Belege“ für Einlagen und nur schwache Belege, dass sie Schmerzen lindern. Auf der Seite der Übungen verbesserten in einer Studie mit 45\u00A0Erwachsenen etwa anderthalb Monate Fußübungen die Fußhaltung stärker als maßgefertigte Gewölbe-Einlagen, und Übungen plus Einlagen schnitten ebenfalls besser ab als Einlagen allein (Kirmizi und Kollegen, 2024). In einer weiteren Studie mit 52\u00A0Personen veränderte ein Übungsprogramm die Gewölbeform stärker als in einer Kontrollgruppe (Brijwasi und Borkar, 2023). Keine der beiden hatte den Schmerz als Hauptergebnis.',
+        '**Die Belege sind für beides dünn.** Ein Plattfuß (ein flaches Fußgewölbe) macht oft gar keine Beschwerden, und dann gibt es nichts zu korrigieren. Siehe [Plattfuß](/de/plattfuss/).',
+        'Für Erwachsene mit flexiblem Plattfuß fand eine Übersichtsarbeit 13\u00A0Studien, davon nur zwei randomisiert (Banwell und Kollegen, 2014). Sie fand „keine hochwertigen Belege“ für Einlagen und nur schwache Belege, dass sie Schmerzen lindern.',
+        'Auf der Seite der Übungen verbesserten in einer Studie mit 45\u00A0Erwachsenen etwa anderthalb Monate Fußübungen die Fußhaltung stärker als maßgefertigte Gewölbe-Einlagen, und Übungen plus Einlagen schnitten ebenfalls besser ab als Einlagen allein (Kirmizi und Kollegen, 2024). In einer weiteren Studie mit 52\u00A0Personen veränderte ein Übungsprogramm die Gewölbeform stärker als in einer Kontrollgruppe (Brijwasi und Borkar, 2023). Keine der beiden hatte den Schmerz als Hauptergebnis.',
         'Für Kinder fand ein Cochrane-Review über 16\u00A0Studien (1.058\u00A0Kinder) Belege mit geringer bis sehr geringer Vertrauenswürdigkeit und kam zu dem Schluss, dass es für teure maßgefertigte Einlagen bei Kindern mit schmerzfreiem flexiblem Plattfuß keine stützenden Belege gibt (Evans und Kollegen, 2022). Siehe [Plattfuß bei Kindern](/de/plattfuss-bei-kindern/). Die Übungen hier und die Walkito-App sind für Erwachsene.',
       ],
       exercises: [
@@ -114,7 +125,7 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
     {
       h2: 'Machen Einlagen die Füße schwächer?',
       paragraphs: [
-        'Möglicherweise ein wenig. In einer Studie mit 18\u00A0jungen Erwachsenen mit Plattfuß schrumpften drei kleine Muskeln im Fuß nach drei Monaten mit maßgefertigten Einlagen um 9,6 bis 17,4\u00A0% (Protopapas und Perry, 2020). Die Gruppen waren nicht randomisiert und die Studie war klein. Lies das also als Signal, nicht als gesicherte Tatsache.',
+        '**Möglicherweise ein wenig.** In einer Studie mit 18\u00A0jungen Erwachsenen mit Plattfuß schrumpften drei kleine Muskeln im Fuß nach drei Monaten mit maßgefertigten Einlagen um 9,6 bis 17,4\u00A0% (Protopapas und Perry, 2020). Die Gruppen waren nicht randomisiert und die Studie war klein. Lies das also als Signal, nicht als gesicherte Tatsache.',
         'Übungen scheinen das auszugleichen. In einer randomisierten Studie mit 28\u00A0Personen mit Plattfuß trugen alle zwei Monate lang Einlagen, und die Hälfte machte zusätzlich die Kurzer-Fuß-Übung (Jung und Kollegen, 2011). Der Muskel entlang des inneren Gewölbes wuchs in beiden Gruppen, mit der Übung aber stärker, und auch die Kraft der Großzehe nahm stärker zu. Wenn du den ganzen Tag Einlagen trägst, halt den Fuß mit ein paar Minuten [Übungen zum Kräftigen der Füße](/de/fuss-kraeftigen-uebungen/) in Arbeit.',
       ],
       cites: [CITE.protopapasOrthotic, CITE.jungOrthosesShortFoot],
@@ -150,7 +161,8 @@ export const INSOLES_VS_EXERCISES_DE: Guide = {
     {
       h2: 'Wie kombinierst du Einlagen und Übungen?',
       paragraphs: [
-        'Nutz die Einlage für den Komfort und die Übungen für die Veränderung. In der Studie von Rathleff und in der STAP-Studie bekamen alle Übungsempfehlungen, egal was in ihrem Schuh lag. Trag an den Tagen, an denen es wehtut, eine fertige Gewölbestütze und fang gleichzeitig mit den Dehnungen und dem Fersenheben an. Wenn der Morgenschmerz nachlässt, probier kurze Zeiten ohne Einlage, dann längere. Walkito kann die Übungsseite als Wochenplan aufstellen: Einmal pro Woche setzt es deine Hauptübung eine Stufe höher, wenn du deine letzten zwei Einheiten damit als leicht bewertet hast und der Morgenschmerz nicht gestiegen ist.',
+        '**Nutz die Einlage für den Komfort und die Übungen für die Veränderung.** In der Studie von Rathleff und in der STAP-Studie bekamen alle Übungsempfehlungen, egal was in ihrem Schuh lag. Trag an den Tagen, an denen es wehtut, eine fertige Gewölbestütze und fang gleichzeitig mit den Dehnungen und dem Fersenheben an. Wenn der Morgenschmerz nachlässt, probier kurze Zeiten ohne Einlage, dann längere.',
+        'Walkito kann die Übungsseite als Wochenplan aufstellen: Einmal pro Woche setzt es deine Hauptübung eine Stufe höher, wenn du deine letzten zwei Einheiten damit als leicht bewertet hast und der Morgenschmerz nicht gestiegen ist.',
         'Wenn ein paar Monate tägliches Dehnen und Krafttraining nicht geholfen haben, geh zu einer medizinischen Fachperson. Dann lohnt es sich, unter anderem über eine maßgefertigte Einlage mit jemandem zu sprechen, der deinen Fuß untersucht hat.',
       ],
       cites: [CITE.rathleff, CITE.rasenbergStap],

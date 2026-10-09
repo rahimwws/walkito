@@ -56,8 +56,16 @@ export const BALL_OF_FOOT_PT: Guide = {
     {
       h2: 'Como diferenciar esses problemas?',
       paragraphs: [
-        'O lugar da dor é a primeira pista. Dor espalhada embaixo da segunda e da terceira cabeças dos metatarsos aponta para metatarsalgia. Dor entre o terceiro e o quarto dedos, com formigamento, sugere neuroma de Morton. Dor bem embaixo da articulação do dedão combina mais com sesamoidite. Um ponto localizado no peito do pé, com inchaço, levanta a suspeita de fratura por estresse.',
-        'Fraturas por estresse muitas vezes não aparecem num raio-X simples nas primeiras duas a três semanas e podem precisar de ressonância magnética. Vale a pena procurar um profissional de saúde quando a dor continua depois de duas semanas mesmo com repouso e troca de calçado, ou quando há formigamento, dor à noite ou inchaço visível.',
+        'O lugar da dor é a primeira pista:',
+        {
+          list: [
+            'Dor espalhada embaixo da segunda e da terceira cabeças dos metatarsos aponta para metatarsalgia.',
+            'Dor entre o terceiro e o quarto dedos, com formigamento, sugere neuroma de Morton.',
+            'Dor bem embaixo da articulação do dedão combina mais com sesamoidite.',
+            'Um ponto localizado no peito do pé, com inchaço, levanta a suspeita de fratura por estresse.',
+          ],
+        },
+        'Fraturas por estresse muitas vezes não aparecem num raio-X simples nas primeiras duas a três semanas e podem precisar de ressonância magnética. **Vale a pena procurar um profissional de saúde** quando a dor continua depois de duas semanas mesmo com repouso e troca de calçado, ou quando há formigamento, dor à noite ou inchaço visível.',
       ],
       cites: [CITE.patelStressFracture],
     },
@@ -65,7 +73,7 @@ export const BALL_OF_FOOT_PT: Guide = {
       h2: 'Exercício ajuda na dor na planta do pé?',
       keyFact: 'Em um estudo antes e depois de 2020 com 41\u00A0pessoas com metatarsalgia primária, um programa de 8\u00A0semanas de exercícios para os dedos baixou a dor em 2,7\u00A0pontos em média, numa escala de 10\u00A0pontos, sem grupo de controle (Amaha e colegas, 2020).',
       paragraphs: [
-        'A resposta honesta é que a evidência de exercício na metatarsalgia é inicial e limitada. Ela é bem mais fraca do que a evidência para [fascite plantar](/pt/exercicios-fascite-plantar/) ou tendinite de Aquiles, em que existem ensaios randomizados.',
+        'A resposta honesta é que **a evidência de exercício na metatarsalgia é inicial e limitada.** Ela é bem mais fraca do que a evidência para [fascite plantar](/pt/exercicios-fascite-plantar/) ou tendinite de Aquiles, em que existem ensaios randomizados.',
         'O melhor estudo até agora é um estudo antes e depois de 2020 com 41\u00A0pessoas (56\u00A0pés) com metatarsalgia primária. Um programa de 8\u00A0semanas de exercícios para os dedos, principalmente puxar a toalha com os dedos e pegar bolinhas de gude, baixou a nota da dor em 2,7\u00A0pontos em média numa escala de 10\u00A0pontos e melhorou a força de preensão dos dedos. Mas não havia grupo de controle, então parte da melhora pode ser recuperação natural. Os autores pediram ensaios randomizados.',
         'A lógica é simples: quando o pé empurra o chão, os dedos ajudam a dividir a carga com as cabeças dos metatarsos. Quando os músculos que dobram os dedos estão fracos, mais força cai sobre os metatarsos. O estudo de 2020 apoia essa ideia, mas um único estudo sem controle não é prova. Quem tinha sintomas havia mais de um ano melhorou menos, assim como quem tinha IMC mais alto.',
       ],
@@ -87,14 +95,15 @@ export const BALL_OF_FOOT_PT: Guide = {
       h2: 'E as almofadas metatarsais, as palmilhas e os calçados?',
       paragraphs: [
         'As almofadas metatarsais são a abordagem conservadora mais usada. Uma almofada colocada logo atrás das cabeças dos metatarsos levanta um pouco o corpo do osso e espalha a pressão por uma área maior. A posição importa. Muito para a frente, bem embaixo da cabeça, ela pode piorar a dor.',
-        'Calçados com solado em mata-borrão (rocker) reduzem a pressão na parte da frente do pé porque deixam o pé rolar no impulso sem dobrar nas articulações dos metatarsos. Um bico largo evita que as cabeças sejam apertadas umas contra as outras. Deixar de lado sapatos apertados ou de salto costuma ser o primeiro passo mais simples.',
+        'Calçados com solado em mata-borrão (rocker) reduzem a pressão na parte da frente do pé porque deixam o pé rolar no impulso sem dobrar nas articulações dos metatarsos. Um bico largo evita que as cabeças sejam apertadas umas contra as outras. **Deixar de lado sapatos apertados ou de salto costuma ser o primeiro passo mais simples.**',
         'Almofadas e calçados mudam como a carga se distribui. O exercício constrói a força e a flexibilidade para lidar com essa carga. Quando [ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) faz parte do quadro, os dois importam.',
       ],
     },
     {
       h2: 'Quais exercícios ajudam na dor na planta do pé?',
       paragraphs: [
-        'Estes exercícios miram dois lados do problema: a força dos dedos e dos músculos intrínsecos do pé (para dividir a carga no impulso) e a flexibilidade da panturrilha (para a parte da frente do pé não ficar sobrecarregada). Nenhum foi testado em um ensaio randomizado especificamente para metatarsalgia. Quando você toca na região da planta do pé, perto dos dedos, no mapa de dor do Walkito durante um check-in, a sessão de alívio traz abrir os dedos e o alongamento da fáscia plantar. A região dos dedos traz abrir os dedos e o pé curto sentado.',
+        'Estes exercícios miram dois lados do problema: a força dos dedos e dos músculos intrínsecos do pé (para dividir a carga no impulso) e a flexibilidade da panturrilha (para a parte da frente do pé não ficar sobrecarregada). Nenhum foi testado em um ensaio randomizado especificamente para metatarsalgia.',
+        'Quando você toca na região da planta do pé, perto dos dedos, no mapa de dor do Walkito durante um check-in, a sessão de alívio traz abrir os dedos e o alongamento da fáscia plantar. A região dos dedos traz abrir os dedos e o pé curto sentado.',
       ],
       exercises: [
         {
@@ -181,7 +190,8 @@ export const BALL_OF_FOOT_PT: Guide = {
       h2: 'O que a evidência diz e o que ela não diz',
       paragraphs: [
         'A evidência de exercício na dor na planta do pé é mais fraca do que para [fascite plantar](/pt/exercicios-fascite-plantar/) ou tendinite de Aquiles, em que existem ensaios randomizados. Para metatarsalgia, há um estudo antes e depois com 41\u00A0pessoas e sem grupo de controle. O raciocínio biomecânico faz sentido, e o risco de exercícios leves para os dedos e alongamentos da panturrilha é baixo, mas falta a prova direta de um ensaio controlado.',
-        'Só o exercício pode não bastar. Almofadas metatarsais, calçados com bico largo e menos tempo de salto têm um consenso clínico mais amplo. No neuroma de Morton, trocar de calçado e usar almofadas muitas vezes funciona melhor do que exercício. Numa fratura por estresse do metatarso, exercício é o caminho errado até o osso se recuperar. Se a dor dura mais de algumas semanas, ou vem com dormência ou inchaço, faça uma avaliação primeiro. [Dor no calcanhar na corrida](/heel-pain-runners/) (em inglês) fala do controle de carga para quem corre.',
+        '**Só o exercício pode não bastar.** Almofadas metatarsais, calçados com bico largo e menos tempo de salto têm um consenso clínico mais amplo.',
+        'No neuroma de Morton, trocar de calçado e usar almofadas muitas vezes funciona melhor do que exercício. Numa fratura por estresse do metatarso, exercício é o caminho errado até o osso se recuperar. Se a dor dura mais de algumas semanas, ou vem com dormência ou inchaço, faça uma avaliação primeiro. [Dor no calcanhar na corrida](/heel-pain-runners/) (em inglês) fala do controle de carga para quem corre.',
       ],
       cites: [CITE.amaha, CITE.rathleff],
     },

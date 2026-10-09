@@ -31,8 +31,9 @@ export const FLAT_FEET_KIDS_PT: Guide = {
       figure: { id: 'arches', caption: 'Os mesmos ossos do pé com pé chato, arco típico e arco alto, vistos pelo lado de dentro.', alt: 'Três pés vistos pelo lado de dentro sobre um chão plano: um pé chato com o arco apoiado no chão, um arco típico com um pequeno espaço embaixo e um arco alto com um grande espaço sob o meio do pé.' },
       paragraphs: [
         'O pé chato é normal em bebês e crianças pequenas e comum durante toda a primeira infância. O pé de uma criança pequena tem uma almofada de gordura embaixo do arco, e os ligamentos (as faixas que ligam um osso ao outro) são frouxos e elásticos. Quando a criança fica em pé, o arco desce em direção ao chão. Isso é normal num pé jovem.',
-        'Os números são claros. Em um estudo de 2006 em Viena, pesquisadores escanearam os pés de 835\u00A0crianças de 3 a 6\u00A0anos. No total, 44% tinham pé chato flexível. Menos de 1% tinha um pé chato que era um problema médico de verdade. Uma em cada dez crianças já usava palmilha para o arco, e os autores avaliaram que mais de 90% dessas palmilhas não eram necessárias. Uma pesquisa mais antiga, com 441\u00A0pessoas de 1 a 80\u00A0anos, chegou à mesma conclusão: o pé chato é o normal em bebês, comum em crianças e ainda dentro da faixa normal em adultos.',
-        'Então, se o seu filho de 2 ou de 4\u00A0anos tem pé chato e corre por aí feliz, esse é o quadro esperado.',
+        'Os números são claros. Em um estudo de 2006 em Viena, pesquisadores escanearam os pés de 835\u00A0crianças de 3 a 6\u00A0anos. No total, 44% tinham pé chato flexível. Menos de 1% tinha um pé chato que era um problema médico de verdade.',
+        'Uma em cada dez crianças já usava palmilha para o arco, e os autores avaliaram que mais de 90% dessas palmilhas não eram necessárias. Uma pesquisa mais antiga, com 441\u00A0pessoas de 1 a 80\u00A0anos, chegou à mesma conclusão: o pé chato é o normal em bebês, comum em crianças e ainda dentro da faixa normal em adultos.',
+        'Então, se o seu filho de 2 ou de 4\u00A0anos tem pé chato e corre por aí feliz, **esse é o quadro esperado.**',
       ],
       cites: [CITE.pfeifferPreschool, CITE.staheliArch],
     },
@@ -41,8 +42,16 @@ export const FLAT_FEET_KIDS_PT: Guide = {
       keyFact: 'O pé chato caiu de 54% aos 3\u00A0anos para 24% aos 6\u00A0anos em um estudo com 835\u00A0crianças (Pfeiffer e colegas, 2006).',
       paragraphs: [
         'A maioria das crianças forma um arco visível devagar, mais ou menos entre os 3 e os 6\u00A0anos, e algumas mais tarde. No estudo de Viena, 54% das crianças de 3\u00A0anos tinham pé chato, contra 24% das de 6\u00A0anos. Os meninos tinham pé chato com mais frequência que as meninas, 52% contra 36%, e o arco deles costumava se formar mais tarde. Crianças com sobrepeso ou obesidade também tinham pé chato com mais frequência.',
-        'Algumas crianças nunca chegam a ter muito arco, e muitas vezes isso não é problema. Uma revisão de 2023 de 12\u00A0estudos populacionais, com cerca de 16.000\u00A0pessoas de todas as idades, encontrou pé chato em 15,6% no geral. Crianças de 3 a 5\u00A0anos e de 11 a 17\u00A0anos tinham chances cerca de duas vezes maiores de pé chato em comparação com outras faixas etárias. Muitos adultos com pé chato flexível não têm dor nenhuma. Se o pé chato muda mais tarde na vida é assunto de [pé chato piora com a idade?](/pt/pe-chato-piora-com-a-idade/)',
-        'Não existe uma idade exata em que o arco tem que aparecer. Mais importante que a idade é como o pé se comporta: se é flexível, se dói e se os dois pés são parecidos.',
+        'Algumas crianças nunca chegam a ter muito arco, e muitas vezes isso não é problema. Uma revisão de 2023 de 12\u00A0estudos populacionais, com cerca de 16.000\u00A0pessoas de todas as idades, encontrou pé chato em 15,6% no geral. Crianças de 3 a 5\u00A0anos e de 11 a 17\u00A0anos tinham chances cerca de duas vezes maiores de pé chato em comparação com outras faixas etárias.',
+        'Muitos adultos com pé chato flexível não têm dor nenhuma. Se o pé chato muda mais tarde na vida é assunto de [pé chato piora com a idade?](/pt/pe-chato-piora-com-a-idade/)',
+        'Não existe uma idade exata em que o arco tem que aparecer. **Mais importante que a idade é como o pé se comporta:**',
+        {
+          list: [
+            'Se é flexível.',
+            'Se dói.',
+            'Se os dois pés são parecidos.',
+          ],
+        },
       ],
       cites: [CITE.pfeifferPreschool, CITE.salinasTorres],
     },
@@ -64,8 +73,22 @@ export const FLAT_FEET_KIDS_PT: Guide = {
     {
       h2: 'Quando se preocupar com o pé chato da criança?',
       paragraphs: [
-        'Preocupe-se com o pé chato da criança quando há dor, rigidez, diferença entre os dois pés ou algum problema no jeito como a criança se movimenta. O pé chato sozinho, numa criança que corre e brinca sem dificuldade, não é motivo de preocupação. Um protocolo de cuidados de 2008 da podóloga Angela Evans divide os casos em três grupos: o pé chato que dói precisa de cuidados, o pé chato que parece diferente mas não dói é acompanhado ao longo do tempo, e o pé chato que é só parte do crescimento precisa apenas de tranquilização.',
-        'Vale conhecer algumas causas específicas pelo nome. A **coalizão tarsal** é uma ponte de osso ou de tecido duro entre dois ossos da parte de trás do pé. A criança já nasce com ela, mas normalmente ela começa a doer no fim da infância ou na adolescência, muitas vezes com o pé rígido e entorses de tornozelo repetidas. Um **tendão de Aquiles encurtado** pode empurrar o pé para uma posição mais plana e causar dor. E o pé chato pode fazer parte de uma condição mais ampla que afeta os nervos, os músculos ou as articulações, como a paralisia cerebral ou a artrite idiopática juvenil (artrite que começa na infância). Essas crianças precisam do acompanhamento de um especialista, seja qual for o arco.',
+        'Preocupe-se com o pé chato da criança quando há dor, rigidez, diferença entre os dois pés ou algum problema no jeito como a criança se movimenta. O pé chato sozinho, numa criança que corre e brinca sem dificuldade, não é motivo de preocupação. Um protocolo de cuidados de 2008 da podóloga Angela Evans divide os casos em três grupos:',
+        {
+          list: [
+            'O pé chato que dói precisa de cuidados.',
+            'O pé chato que parece diferente mas não dói é acompanhado ao longo do tempo.',
+            'O pé chato que é só parte do crescimento precisa apenas de tranquilização.',
+          ],
+        },
+        'Vale conhecer algumas causas específicas pelo nome:',
+        {
+          list: [
+            'A **coalizão tarsal** é uma ponte de osso ou de tecido duro entre dois ossos da parte de trás do pé. A criança já nasce com ela, mas normalmente ela começa a doer no fim da infância ou na adolescência, muitas vezes com o pé rígido e entorses de tornozelo repetidas.',
+            'Um **tendão de Aquiles encurtado** pode empurrar o pé para uma posição mais plana e causar dor.',
+            'O pé chato pode fazer parte de uma condição mais ampla que afeta os nervos, os músculos ou as articulações, como a paralisia cerebral ou a artrite idiopática juvenil (artrite que começa na infância). Essas crianças precisam do acompanhamento de um especialista, seja qual for o arco.',
+          ],
+        },
       ],
       cites: [CITE.evansTrafficLight, CITE.harrisPediatricFlatfoot],
     },
@@ -73,10 +96,29 @@ export const FLAT_FEET_KIDS_PT: Guide = {
       h2: 'Palmilhas ou calçados especiais ajudam no pé chato infantil?',
       keyFact: 'Em um ensaio com 129\u00A0crianças, sapatos corretivos ou palmilhas usados por pelo menos três anos não mudaram o pé chato flexível em comparação com não usar palmilha (Wenger e colegas, 1989).',
       paragraphs: [
-        'Palmilhas e calçados especiais não fazem o arco da criança se formar. O teste mais claro é um ensaio de 1989 em um hospital infantil de Dallas. Os pesquisadores dividiram por sorteio 129\u00A0crianças com pé chato flexível em quatro grupos: sem palmilha, sapatos ortopédicos corretivos, uma calcanheira ou uma palmilha de plástico moldada sob medida. As crianças usaram por pelo menos três anos, e 98 terminaram o estudo. Os raios-X mostraram que o arco melhorou nos quatro grupos, inclusive nas crianças que não usaram nada, e não houve diferença real entre eles.',
-        'Um ensaio australiano de 2007 encontrou o mesmo. As 178\u00A0crianças, de 7 a 11\u00A0anos, foram divididas em três grupos: palmilhas sob medida, palmilhas prontas ou nenhuma. Aos três meses e em um ano, nenhuma das comparações mostrou diferença real, inclusive nas crianças que tinham dor no começo.',
+        '**Palmilhas e calçados especiais não fazem o arco da criança se formar.** O teste mais claro é um ensaio de 1989 em um hospital infantil de Dallas. Os pesquisadores dividiram por sorteio 129\u00A0crianças com pé chato flexível em quatro grupos:',
+        {
+          list: [
+            'Sem palmilha.',
+            'Sapatos ortopédicos corretivos.',
+            'Uma calcanheira.',
+            'Uma palmilha de plástico moldada sob medida.',
+          ],
+        },
+        'As crianças usaram por pelo menos três anos, e 98 terminaram o estudo. Os raios-X mostraram que o arco melhorou nos quatro grupos, inclusive nas crianças que não usaram nada, e não houve diferença real entre eles.',
+        'Um ensaio australiano de 2007 encontrou o mesmo. As 178\u00A0crianças, de 7 a 11\u00A0anos, foram divididas em três grupos:',
+        {
+          list: [
+            'Palmilhas sob medida.',
+            'Palmilhas prontas.',
+            'Nenhuma.',
+          ],
+        },
+        'Aos três meses e em um ano, nenhuma das comparações mostrou diferença real, inclusive nas crianças que tinham dor no começo.',
         'A revisão Cochrane de 2022 reuniu a evidência dos ensaios: 16\u00A0ensaios com 1.058\u00A0crianças. A certeza da evidência foi de baixa a muito baixa. A conclusão foi direta: em crianças cujo pé chato não dói, palmilhas sob medida, que são caras, não têm evidência que as apoie. Em crianças com artrite idiopática juvenil, as palmilhas podem ajudar na dor e na função.',
-        'Para o pé chato que dói, o quadro é menos definido. Uma metanálise em rede de 2026 (uma revisão que compara várias opções ao mesmo tempo) com 11\u00A0ensaios e 761\u00A0crianças viu que palmilhas comuns com suporte para o arco reduziram as notas de dor mais que palmilhas planas, mas a certeza desse resultado foi muito baixa. Um grande ensaio britânico sobre palmilhas para crianças com pé chato doloroso, chamado OSTRICH, teve que parar antes da hora durante a pandemia de COVID-19. Com 134 das 478\u00A0crianças planejadas, ele não conseguiu responder à pergunta. Para uma criança com os pés doloridos, um profissional de saúde ainda pode sugerir uma palmilha pronta simples para conforto, mas ela não vai formar um arco. Mais sobre como as palmilhas se comparam aos exercícios está em [palmilhas ou exercícios](/pt/palmilhas-ou-exercicios/).',
+        'Para o pé chato que dói, o quadro é menos definido. Uma metanálise em rede de 2026 (uma revisão que compara várias opções ao mesmo tempo) com 11\u00A0ensaios e 761\u00A0crianças viu que palmilhas comuns com suporte para o arco reduziram as notas de dor mais que palmilhas planas, mas a certeza desse resultado foi muito baixa.',
+        'Um grande ensaio britânico sobre palmilhas para crianças com pé chato doloroso, chamado OSTRICH, teve que parar antes da hora durante a pandemia de COVID-19. Com 134 das 478\u00A0crianças planejadas, ele não conseguiu responder à pergunta.',
+        'Para uma criança com os pés doloridos, um profissional de saúde ainda pode sugerir uma palmilha pronta simples para conforto, mas ela não vai formar um arco. Mais sobre como as palmilhas se comparam aos exercícios está em [palmilhas ou exercícios](/pt/palmilhas-ou-exercicios/).',
       ],
       cites: [CITE.wengerShoes, CITE.whitfordOrthoses, CITE.evansCochrane2022, CITE.linFlatfootNMA, CITE.cockayneOstrich],
       sourceNote: 'Lin e colegas, 2026: palmilhas tradicionais vs. palmilhas planas, diferença média de −2,92\u00A0pontos (IC 95% −3,73 a −2,11), certeza da evidência muito baixa. A dor não foi medida nos ensaios com exercício dessa revisão.',
@@ -86,7 +128,8 @@ export const FLAT_FEET_KIDS_PT: Guide = {
       paragraphs: [
         'Exercícios para os pés podem ajudar crianças cujo pé chato dói ou cansa fácil, mas os ensaios são pequenos e os resultados, mistos. Uma revisão de 2024 analisou 11\u00A0ensaios com 419\u00A0crianças de 6 a 14\u00A0anos. Ela viu que os programas de exercício melhoraram os sintomas e a função do pé, e que os exercícios para os músculos pequenos de dentro do pé se saíram melhor. Os ensaios variaram muito nos exercícios, nos testes e na duração, e a revisão sugeriu pelo menos cerca de dois meses.',
         'Um ensaio turco de 2025 com 36\u00A0crianças de 4 a 7\u00A0anos comparou dois programas de exercício ao longo de cerca de dois meses. Os dois grupos melhoraram nas medidas do arco e no equilíbrio, e o programa que acrescentou trabalho para os músculos da perna se saiu melhor. Não havia um grupo sem exercício, então não dá para saber quanto da mudança foi crescimento normal.',
-        'Em entrevistas do ensaio OSTRICH, quase nenhuma criança gostou dos exercícios, e muitas não continuaram fazendo. Uma criança sem dor e com pé chato flexível não precisa de exercício nenhum. Se os pés do seu filho doem, um fisioterapeuta ou um podólogo pode montar um programa. As ideias abaixo são versões leves, em forma de brincadeira, de movimentos usados nesses ensaios. As quantidades são sugestões cautelosas de começo para crianças, não doses testadas nos ensaios, nem as doses para adultos que o Walkito usa.',
+        'Em entrevistas do ensaio OSTRICH, quase nenhuma criança gostou dos exercícios, e muitas não continuaram fazendo. **Uma criança sem dor e com pé chato flexível não precisa de exercício nenhum.** Se os pés do seu filho doem, um fisioterapeuta ou um podólogo pode montar um programa.',
+        'As ideias abaixo são versões leves, em forma de brincadeira, de movimentos usados nesses ensaios. As quantidades são sugestões cautelosas de começo para crianças, não doses testadas nos ensaios, nem as doses para adultos que o Walkito usa.',
       ],
       exercises: [
         {
@@ -132,16 +175,17 @@ export const FLAT_FEET_KIDS_PT: Guide = {
       h2: 'Andar descalço ou o peso influenciam o arco da criança?',
       keyFact: 'Em uma pesquisa com 2.300\u00A0crianças na Índia, 8,6% das que usavam calçado tinham pé chato, contra 2,8% das que não usavam (Rao e Joseph, 1992).',
       paragraphs: [
-        'Brincar descalço e ter um peso dentro da faixa habitual estão associados a menos pé chato, embora nenhum dos dois tenha sido testado como forma de mudar o pé chato. Em uma pesquisa de 1992 com 2.300\u00A0crianças de 4 a 13\u00A0anos na Índia, 8,6% das crianças que usavam calçado tinham pé chato, contra 2,8% das que andavam descalças. O pé chato era mais comum nas crianças que usavam calçado fechado na frente e menos comum nas que não usavam calçado. Foi uma pesquisa num único momento, então ela mostra uma relação, não uma prova de que o calçado causou o pé chato.',
+        'Brincar descalço e ter um peso dentro da faixa habitual estão associados a menos pé chato, embora nenhum dos dois tenha sido testado como forma de mudar o pé chato. Em uma pesquisa de 1992 com 2.300\u00A0crianças de 4 a 13\u00A0anos na Índia, 8,6% das crianças que usavam calçado tinham pé chato, contra 2,8% das que andavam descalças.',
+        'O pé chato era mais comum nas crianças que usavam calçado fechado na frente e menos comum nas que não usavam calçado. Foi uma pesquisa num único momento, então ela mostra uma relação, não uma prova de que o calçado causou o pé chato.',
         'O peso mostra uma relação parecida. Uma revisão de 2021 de 73\u00A0estudos, com mais de 1,7\u00A0milhão de crianças e adolescentes, viu que os que tinham sobrepeso ou obesidade tinham cerca de 1,5\u00A0vez mais chance de ter pé chato. A maioria desses estudos também foi um retrato de um único momento.',
-        'Deixar a criança andar descalça em superfícies seguras em casa, na grama ou na areia dá trabalho para os músculos do pé. O calçado deve servir bem e dobrar na altura dos dedos. Não há necessidade de sapatos “corretivos” duros. Para saber mais sobre calçados flexíveis e de sola fina, veja [calçados barefoot](/pt/calcados-barefoot/).',
+        'Deixar a criança andar descalça em superfícies seguras em casa, na grama ou na areia dá trabalho para os músculos do pé. O calçado deve servir bem e dobrar na altura dos dedos. **Não há necessidade de sapatos “corretivos” duros.** Para saber mais sobre calçados flexíveis e de sola fina, veja [calçados barefoot](/pt/calcados-barefoot/).',
       ],
       cites: [CITE.raoFootwear, CITE.molinaGarciaObesity],
     },
     {
       h2: 'O meu filho vai ter problemas nos pés quando for adulto?',
       paragraphs: [
-        'A maioria das crianças com pé chato flexível e sem dor chega à vida adulta sem problemas nos pés. A revisão Cochrane de 2022 chegou a dizer que o que se sabe sobre o desenvolvimento do pé infantil põe fim à maioria das preocupações com pé chato, e que o dinheiro de pesquisa deveria ir para crianças com problemas reais nos pés. A pesquisa de 1987 com 441\u00A0pessoas viu que o pé chato dos adultos ainda ficava dentro da faixa normal.',
+        '**A maioria das crianças com pé chato flexível e sem dor chega à vida adulta sem problemas nos pés.** A revisão Cochrane de 2022 chegou a dizer que o que se sabe sobre o desenvolvimento do pé infantil põe fim à maioria das preocupações com pé chato, e que o dinheiro de pesquisa deveria ir para crianças com problemas reais nos pés. A pesquisa de 1987 com 441\u00A0pessoas viu que o pé chato dos adultos ainda ficava dentro da faixa normal.',
         'Aqui existe uma lacuna, e é honesto dizer. Nenhum ensaio acompanhou um grande grupo de crianças com pé chato sem dor até a meia-idade para ver quem depois teve dor. Alguns adultos com pé chato têm dor no arco, no calcanhar ou no joelho, e o [guia de pé chato](/pt/pe-chato/) fala do que ajuda nesses casos.',
         'Muitos pais e mães que pesquisam isso têm pé chato. Se os seus próprios pés doem no fim do dia, essa é uma questão separada da do seu filho. O Walkito é um app de exercícios para adultos com dor no calcanhar, no arco e nas pernas, e o plano dele para pé chato foi feito para pés adultos, não para pés de criança.',
       ],

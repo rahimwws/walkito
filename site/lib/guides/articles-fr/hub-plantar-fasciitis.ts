@@ -44,7 +44,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
     {
       h2: 'Quels sont les symptômes de la fasciite plantaire\u00A0?',
       paragraphs: [
-        'Le symptôme typique est une douleur sous le talon aux premiers pas du matin. La recommandation la décrit comme une douleur «\u00A0plus marquée à la mise en charge au réveil ou après une période de repos\u00A0». Elle se calme en général après quelques minutes de marche, puis revient quand vous restez assis un moment et vous relevez.',
+        '**Le symptôme typique est une douleur sous le talon aux premiers pas du matin.** La recommandation la décrit comme une douleur «\u00A0plus marquée à la mise en charge au réveil ou après une période de repos\u00A0». Elle se calme en général après quelques minutes de marche, puis revient quand vous restez assis un moment et vous relevez.',
         'La douleur se situe en général à l’avant et à l’intérieur du talon, là où le fascia s’attache à l’os. Elle peut s’étendre le long de la voûte. Elle est souvent pire après le repos que pendant l’activité, ce qui est l’inverse de ce que la plupart des gens imaginent.',
         'La douleur se voit le plus clairement le lendemain matin. Si le lendemain matin est pire, la veille en a trop demandé au pied. C’est pourquoi suivre la douleur du matin est la façon la plus utile de juger vos progrès. [La douleur au talon au réveil](/fr/douleur-talon-au-reveil/) détaille ce schéma du matin.',
       ],
@@ -56,16 +56,46 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
       paragraphs: [
         'La fasciite plantaire apparaît quand le fascia reçoit plus de charge qu’il ne peut en supporter et en récupérer. La charge peut être trop forte d’un coup (une hausse soudaine du kilométrage en course à pied) ou constante dans le temps (rester debout sur un sol dur toute la journée).',
         'Une étude cas-témoins appariée sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins a montré qu’une flexion dorsale de cheville réduite était le facteur de risque indépendant le plus fort, avec un odds ratio de 23,3. Dans une autre série de 254\u00A0personnes atteintes de fasciite plantaire, 52 à 60\u00A0% avaient une rétraction isolée du gastrocnémien, le gros muscle superficiel du mollet. Rester longtemps debout au travail avait un odds ratio de 3,6. Un indice de masse corporelle plus élevé était aussi associé à un risque accru.',
-        'La recommandation cite d’autres facteurs de risque\u00A0: un âge entre 40 et 60\u00A0ans, la course ou les sauts, et les métiers où l’on reste longtemps debout. Les pieds plats ou les pieds creux peuvent modifier la façon dont la charge traverse le fascia, mais aucun des deux ne garantit la fasciite.',
-        'La fasciite plantaire vient en général d’une combinaison\u00A0: un mollet raide, une charge à laquelle le pied n’était pas prêt, et pas assez de temps de récupération.',
+        'La recommandation cite d’autres facteurs de risque\u00A0:',
+        {
+          list: [
+            'Un âge entre 40 et 60\u00A0ans.',
+            'La course ou les sauts.',
+            'Les métiers où l’on reste longtemps debout.',
+          ],
+        },
+        'Les pieds plats ou les pieds creux peuvent modifier la façon dont la charge traverse le fascia, mais aucun des deux ne garantit la fasciite.',
+        '**La fasciite plantaire vient en général d’une combinaison**\u00A0:',
+        {
+          list: [
+            'Un mollet raide.',
+            'Une charge à laquelle le pied n’était pas prêt.',
+            'Pas assez de temps de récupération.',
+          ],
+        },
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius, CITE.guideline],
     },
     {
       h2: 'Comment diagnostique-t-on une fasciite plantaire\u00A0?',
       paragraphs: [
-        'La fasciite plantaire est en général diagnostiquée par un professionnel de santé à partir de vos antécédents, de l’interrogatoire et d’un examen clinique. Les signes clés sont une sensibilité à l’avant et à l’intérieur du talon, une douleur aux premiers pas du matin, et une douleur qui se calme avec l’activité et revient après le repos.',
-        'L’imagerie n’est pas nécessaire dans un cas typique. La recommandation conseille d’y penser si le tableau ne correspond pas, si les symptômes ne s’améliorent pas après plusieurs semaines de soins conservateurs, ou s’il faut écarter un autre diagnostic (une fracture de fatigue ou une compression nerveuse, par exemple). L’échographie et l’IRM peuvent montrer un épaississement du fascia, mais un fascia épaissi à l’imagerie sans le schéma de symptômes correspondant n’est pas une fasciite plantaire.',
+        'La fasciite plantaire est en général diagnostiquée par un professionnel de santé à partir de vos antécédents, de l’interrogatoire et d’un examen clinique. Les signes clés sont\u00A0:',
+        {
+          list: [
+            'Une sensibilité à l’avant et à l’intérieur du talon.',
+            'Une douleur aux premiers pas du matin.',
+            'Une douleur qui se calme avec l’activité et revient après le repos.',
+          ],
+        },
+        '**L’imagerie n’est pas nécessaire dans un cas typique.** La recommandation conseille d’y penser\u00A0:',
+        {
+          list: [
+            'Si le tableau ne correspond pas.',
+            'Si les symptômes ne s’améliorent pas après plusieurs semaines de soins conservateurs.',
+            'S’il faut écarter un autre diagnostic (une fracture de fatigue ou une compression nerveuse, par exemple).',
+          ],
+        },
+        'L’échographie et l’IRM peuvent montrer un épaississement du fascia, mais un fascia épaissi à l’imagerie sans le schéma de symptômes correspondant n’est pas une fasciite plantaire.',
         'Walkito ne pose pas de diagnostic. Si vous ne savez pas si votre douleur au talon est une fasciite plantaire, un professionnel de santé est le bon point de départ.',
       ],
       cites: [CITE.guideline],
@@ -75,7 +105,8 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
       keyFact: 'Dans un essai sur 48\u00A0personnes, des montées sur pointes avec charge et une serviette ont réduit la douleur plus vite que les étirements seuls à trois mois, mais à douze mois les deux groupes étaient à égalité (Rathleff et coll., 2015).',
       paragraphs: [
         'La recommandation clinique de 2023 note chaque approche selon la force des preuves qui la soutiennent. Les recommandations les plus fortes concernent les étirements, le strapping, la thérapie manuelle par un professionnel de santé, et les attelles de nuit pour une douleur du matin qui persiste. Le renforcement musculaire vient ensuite. Le tableau ci-dessous liste les principales options avec leur note.',
-        'Aucune option ne marche pour tout le monde. La plupart des gens commencent par les étirements et des chaussures qui soutiennent le pied, ajoutent le renforcement une fois la douleur initiale calmée, et voient un professionnel de santé pour les autres options si les progrès stagnent. Dans un essai sur 48\u00A0personnes, des montées sur pointes avec charge et une serviette sous les orteils ont réduit la douleur plus vite que les étirements seuls à trois mois, mais à douze mois les deux groupes étaient à égalité. La recommandation déconseille les semelles orthopédiques seules comme approche isolée à court terme, et l’ajout d’ultrasons thérapeutiques aux étirements.',
+        '**Aucune option ne marche pour tout le monde.** La plupart des gens commencent par les étirements et des chaussures qui soutiennent le pied, ajoutent le renforcement une fois la douleur initiale calmée, et voient un professionnel de santé pour les autres options si les progrès stagnent.',
+        'Dans un essai sur 48\u00A0personnes, des montées sur pointes avec charge et une serviette sous les orteils ont réduit la douleur plus vite que les étirements seuls à trois mois, mais à douze mois les deux groupes étaient à égalité. La recommandation déconseille les semelles orthopédiques seules comme approche isolée à court terme, et l’ajout d’ultrasons thérapeutiques aux étirements.',
       ],
       table: {
         caption: 'Notes de la recommandation de 2023 pour la douleur sous le talon',
@@ -103,7 +134,7 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
       paragraphs: [
         'Une revue de 2020 indique qu’environ 90\u00A0% des personnes vont mieux avec des soins non chirurgicaux, souvent en quelques mois. Un suivi plus long de 174\u00A0patients donne une image plus détaillée\u00A0: environ la moitié n’avait plus de symptômes à cinq ans, et 46\u00A0% avaient encore un peu mal après dix ans en moyenne, même si la plupart d’entre eux ne signalaient que des symptômes légers.',
         'La récupération dépend de l’ancienneté de la douleur, de ce que vous faites, et de facteurs que vous ne contrôlez pas. La cohorte de Hansen 2018 a montré qu’être une femme et avoir mal aux deux talons prédisaient nettement une récupération plus lente. L’IMC, l’âge, l’épaisseur du fascia et la présence d’une épine calcanéenne, non.',
-        'La question utile n’est pas «\u00A0dans combien de semaines ce sera fini\u00A0?» mais «\u00A0ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier\u00A0?». Cette tendance est le vrai repère. [Combien de temps dure une fasciite plantaire\u00A0?](/fr/combien-de-temps-dure-fasciite-plantaire/) présente toutes les données sur les délais.',
+        'La question utile n’est pas «\u00A0dans combien de semaines ce sera fini\u00A0?» mais «\u00A0ma douleur du matin est-elle plus basse ce mois-ci que le mois dernier\u00A0?». **Cette tendance est le vrai repère.** [Combien de temps dure une fasciite plantaire\u00A0?](/fr/combien-de-temps-dure-fasciite-plantaire/) présente toutes les données sur les délais.',
       ],
       cites: [CITE.latt, CITE.hansen],
     },
@@ -147,12 +178,16 @@ export const HUB_PLANTAR_FASCIITIS_FR: Guide = {
     {
       h2: 'La douleur peut-elle venir d’autre chose qu’une fasciite plantaire\u00A0?',
       paragraphs: [
-        'Plusieurs problèmes ont le même emplacement ou le même schéma du matin. L’endroit de la douleur et son comportement aident à les distinguer.',
-        '**Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. La raideur aux premiers pas est fréquente, mais la douleur est plus haute. Voir [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/).',
-        '**Syndrome du coussinet graisseux du talon.** Une douleur sourde et profonde au centre du talon, pire sur sol dur et pieds nus. Une revue exploratoire de 2022 a noté qu’il peut être difficile à distinguer de la fasciite plantaire sans imagerie. La douleur du coussinet est juste sous le centre du talon, celle de la fasciite à l’avant et à l’intérieur.',
-        '**Épine calcanéenne.** Une excroissance osseuse sous l’os du talon. Beaucoup de gens en ont une sans aucune douleur. Dans la cohorte de Hansen 2018 sur 174\u00A0patients, une épine calcanéenne au départ n’avait pas d’effet significatif sur la durée des symptômes. L’épine est souvent là, mais ce n’est pas elle qui entretient la douleur.',
-        '**Fracture de fatigue du calcanéum.** Une douleur qui monte avec l’activité au lieu de se calmer une fois échauffé. Elle peut faire mal au repos ou la nuit. Presser les côtés du talon la reproduit souvent. Consultez un professionnel de santé avant de faire travailler le pied.',
-        '**Rhumatisme inflammatoire.** Quand les deux talons font mal, que la raideur du matin dure plus de 30\u00A0minutes et que d’autres articulations sont raides ou gonflées, le tableau oriente vers une cause générale. Un professionnel de santé doit vérifier.',
+        'Plusieurs problèmes ont le même emplacement ou le même schéma du matin. L’endroit de la douleur et son comportement aident à les distinguer\u00A0:',
+        {
+          list: [
+            '**Tendinite d’Achille.** Une douleur à l’arrière du talon ou dans le tendon au-dessus, pas sous le pied. La raideur aux premiers pas est fréquente, mais la douleur est plus haute. Voir [tendinite d’Achille\u00A0: exercices](/fr/tendinite-achille-exercices/).',
+            '**Syndrome du coussinet graisseux du talon.** Une douleur sourde et profonde au centre du talon, pire sur sol dur et pieds nus. Une revue exploratoire de 2022 a noté qu’il peut être difficile à distinguer de la fasciite plantaire sans imagerie. La douleur du coussinet est juste sous le centre du talon, celle de la fasciite à l’avant et à l’intérieur.',
+            '**Épine calcanéenne.** Une excroissance osseuse sous l’os du talon. Beaucoup de gens en ont une sans aucune douleur. Dans la cohorte de Hansen 2018 sur 174\u00A0patients, une épine calcanéenne au départ n’avait pas d’effet significatif sur la durée des symptômes. L’épine est souvent là, mais ce n’est pas elle qui entretient la douleur.',
+            '**Fracture de fatigue du calcanéum.** Une douleur qui monte avec l’activité au lieu de se calmer une fois échauffé. Elle peut faire mal au repos ou la nuit. Presser les côtés du talon la reproduit souvent. Consultez un professionnel de santé avant de faire travailler le pied.',
+            '**Rhumatisme inflammatoire.** Quand les deux talons font mal, que la raideur du matin dure plus de 30\u00A0minutes et que d’autres articulations sont raides ou gonflées, le tableau oriente vers une cause générale. Un professionnel de santé doit vérifier.',
+          ],
+        },
         'Dans le doute, un professionnel de santé peut les distinguer d’après l’emplacement, le comportement de la douleur et, si besoin, l’imagerie.',
       ],
       cites: [CITE.achillesGuideline, CITE.fatPadReview, CITE.hansen],

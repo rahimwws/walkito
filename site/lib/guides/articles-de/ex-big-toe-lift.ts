@@ -29,7 +29,7 @@ export const EX_BIG_TOE_LIFT_DE: Guide = {
       h2: 'Was ist die Übung Großzehenheben?',
       paragraphs: [
         'Das Großzehenheben ist eine Isolationsübung. Du hebst nur den großen Zeh, während die anderen vier Zehen in den Boden gedrückt bleiben. Dann drehst du es um: Du drückst den großen Zeh nach unten und hebst die anderen vier. Von diesem Hin und Her hat die Übung ihren bekannten Namen, Zehen-Yoga.',
-        'Es geht nicht um Kraft im üblichen Sinn. Es geht um motorische Kontrolle. Der große Zeh hat seine eigenen Muskeln (Extensor hallucis brevis und longus zum Heben, Flexor hallucis brevis und longus zum Herunterdrücken), aber die meisten haben die Fähigkeit verloren, ihn getrennt von den anderen Zehen zu bewegen. Die Übung holt diese unabhängige Kontrolle zurück.',
+        'Es geht nicht um Kraft im üblichen Sinn. **Es geht um motorische Kontrolle.** Der große Zeh hat seine eigenen Muskeln (Extensor hallucis brevis und longus zum Heben, Flexor hallucis brevis und longus zum Herunterdrücken), aber die meisten haben die Fähigkeit verloren, ihn getrennt von den anderen Zehen zu bewegen. Die Übung holt diese unabhängige Kontrolle zurück.',
       ],
     },
     {
@@ -59,8 +59,16 @@ export const EX_BIG_TOE_LIFT_DE: Guide = {
       keyFact: 'Eine MRT-Studie von 2016 maß das Großzehenheben in einer kleinen Gruppe von Sportlern und fand, dass es alle drei getesteten kurzen Muskeln der Fußsohle aktivierte, mit der höchsten Aktivierung im Flexor digitorum brevis bei 18,1\u00A0% (Gooding und Kollegen, 2016).',
       paragraphs: [
         'Die Muskeln, die den großen Zeh heben, sind der Extensor hallucis longus (der vom Schienbein kommt) und der Extensor hallucis brevis (der oben auf dem Fuß liegt). Die Übung trainiert aber auch die Muskeln, die die anderen Zehen unten halten, und dort passiert das eigentliche Training.',
-        'Eine MRT-Studie von Gooding und Kollegen von 2016 fand, dass das Strecken des großen Zehs den Flexor digitorum brevis (18,1\u00A0%), den Abductor hallucis (16,9\u00A0%) und den Flexor digiti minimi (16,3\u00A0%) aktivierte. Die kurzen Muskeln der Fußsohle arbeiteten, um die kleineren Zehen flach zu halten, während sich der große Zeh hob.',
-        'Damit ist das Großzehenheben eine Übung mit doppeltem Nutzen. Die hebende Seite trainiert die Strecker. Die herunterdrückende Seite trainiert die kurzen Muskeln der Fußsohle, dieselben, auf die die [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/) zielt.',
+        'Eine MRT-Studie von Gooding und Kollegen von 2016 fand, dass das Strecken des großen Zehs Folgendes aktivierte:',
+        {
+          list: [
+            'Den Flexor digitorum brevis (18,1\u00A0%).',
+            'Den Abductor hallucis (16,9\u00A0%).',
+            'Den Flexor digiti minimi (16,3\u00A0%).',
+          ],
+        },
+        'Die kurzen Muskeln der Fußsohle arbeiteten, um die kleineren Zehen flach zu halten, während sich der große Zeh hob.',
+        '**Damit ist das Großzehenheben eine Übung mit doppeltem Nutzen.** Die hebende Seite trainiert die Strecker. Die herunterdrückende Seite trainiert die kurzen Muskeln der Fußsohle, dieselben, auf die die [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/) zielt.',
       ],
       cites: [CITE.gooding],
     },
@@ -69,15 +77,19 @@ export const EX_BIG_TOE_LIFT_DE: Guide = {
       paragraphs: [
         'Der große Zeh ist der Einschalter für den Windlass-Mechanismus. Wenn sich der große Zeh in der Abdruckphase beim Gehen streckt (nach oben biegt), zieht er die Plantarfaszie straff und hebt das Gewölbe. Diese Versteifung macht aus dem Fuß, einer flexiblen Plattform, die Stöße abfängt, einen starren Hebel, der dich nach vorn bringt.',
         'Wenn sich der große Zeh nicht unabhängig strecken kann, greift der Windlass nicht voll. Das Gewölbe bleibt beim Abdrücken flacher, und der Fuß muss ausgleichen, indem er andere Strukturen stärker belastet. Mit der Zeit kann das zu Ermüdung im Gewölbe, [Schmerzen am Fußballen](/de/metatarsalgie-vorfussschmerzen/) und Spannung auf der Plantarfaszie beitragen.',
-        'Das Großzehenheben belastet den Windlass nicht so, wie es das Fersenheben mit Handtuch tut. Es bringt dem Gehirn bei, den großen Zeh allein zu aktivieren, damit der Windlass beim normalen Gehen seine Arbeit machen kann. Es ist eine Koordinationsübung, keine Kraftübung.',
+        'Das Großzehenheben belastet den Windlass nicht so, wie es das Fersenheben mit Handtuch tut. Es bringt dem Gehirn bei, den großen Zeh allein zu aktivieren, damit der Windlass beim normalen Gehen seine Arbeit machen kann. **Es ist eine Koordinationsübung, keine Kraftübung.**',
       ],
     },
     {
       h2: 'Was sind die häufigsten Fehler beim Großzehenheben?',
       paragraphs: [
-        'Der häufigste Fehler ist, alle fünf Zehen zusammen zu heben. Wenn alle Zehen gleichzeitig hochgehen, wird die Übung zu einem allgemeinen Strecken der Zehen, und die unabhängige Kontrolle geht verloren. Drück die kleineren Zehen bei Bedarf mit den Fingern nach unten, bis sich die Trennung entwickelt.',
-        'Ein weiterer Fehler ist, den Schienbeinmuskel (Tibialis anterior) zu nutzen und den großen Zeh zu heben, indem du den ganzen Fuß nach oben ziehst. Lass den Fuß flach. Nur der große Zeh bewegt sich.',
-        'Ein drittes Problem ist, durch die Wiederholungen zu hetzen. Das ist eine Übung für die motorische Kontrolle. Tempo verfehlt den Zweck. Halte jedes Heben die vollen fünf Sekunden und achte auf Qualität statt Menge. Wenn nur drei saubere Wiederholungen gehen, sind drei saubere besser als acht schlampige.',
+        {
+          list: [
+            '**Der häufigste Fehler ist, alle fünf Zehen zusammen zu heben.** Wenn alle Zehen gleichzeitig hochgehen, wird die Übung zu einem allgemeinen Strecken der Zehen, und die unabhängige Kontrolle geht verloren. Drück die kleineren Zehen bei Bedarf mit den Fingern nach unten, bis sich die Trennung entwickelt.',
+            '**Ein weiterer Fehler ist, den Schienbeinmuskel (Tibialis anterior) zu nutzen und den großen Zeh zu heben, indem du den ganzen Fuß nach oben ziehst.** Lass den Fuß flach. Nur der große Zeh bewegt sich.',
+            '**Ein drittes Problem ist, durch die Wiederholungen zu hetzen.** Das ist eine Übung für die motorische Kontrolle. Tempo verfehlt den Zweck. Halte jedes Heben die vollen fünf Sekunden und achte auf Qualität statt Menge. Wenn nur drei saubere Wiederholungen gehen, sind drei saubere besser als acht schlampige.',
+          ],
+        },
         'Krämpfe im Gewölbe oder unter dem Fuß sind in den ersten Einheiten häufig. Meist heißt das, die kurzen Fußmuskeln sind schwach und ermüden schnell. Hör auf, massier die Stelle und versuch es in der nächsten Einheit wieder.',
       ],
     },
@@ -86,7 +98,7 @@ export const EX_BIG_TOE_LIFT_DE: Guide = {
       paragraphs: [
         'Das Großzehenheben (Strecken des großen Zehs) war eine der vier Übungen, die die MRT-Studie von Gooding und Kollegen von 2016 getestet hat. Alle vier Übungen aktivierten alle kurzen Muskeln der Fußsohle. Das Großzehenheben war bei keinem einzelnen Muskel der stärkste Aktivator, erzeugte aber in allen eine nennenswerte Aktivierung, besonders im Flexor digitorum brevis.',
         'Eine Studie von Amaha und Kollegen von 2020 begleitete 41\u00A0Personen (56\u00A0Füße) mit primärer Metatarsalgie, also Schmerzen unter dem Fußballen, durch acht Wochen Zehenübungen mit Arbeit am großen Zeh, Handtuchgreifen und Murmelaufheben. Die Greifkraft der Zehen stieg und die Schmerzen im Vorfuß sanken zwischen Beginn und Ende des Programms. Die Studie hatte keine Kontrollgruppe, deshalb kommt ein Teil der Veränderung vielleicht nicht allein von den Übungen.',
-        'Keine Studie hat das Großzehenheben allein in einer kontrollierten Studie mit Ergebnissen für Patienten getestet. Die Belege stützen es als Teil eines umfassenderen Ansatzes zur Fußkräftigung. Verwandte Übungsseiten: [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/), [Zehenspreizen](/de/uebungen/zehen-spreizen/), [Handtuchgreifen](/de/uebungen/handtuchgreifen/).',
+        '**Keine Studie hat das Großzehenheben allein in einer kontrollierten Studie mit Ergebnissen für Patienten getestet.** Die Belege stützen es als Teil eines umfassenderen Ansatzes zur Fußkräftigung. Verwandte Übungsseiten: [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/), [Zehenspreizen](/de/uebungen/zehen-spreizen/), [Handtuchgreifen](/de/uebungen/handtuchgreifen/).',
       ],
       cites: [CITE.gooding, CITE.amaha],
     },

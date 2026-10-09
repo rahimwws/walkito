@@ -29,8 +29,17 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       h2: 'Können Plattfüße Rückenschmerzen verursachen?',
       keyFact: 'Die Framingham Foot Study mit 1.930\u00A0Erwachsenen fand keinen Zusammenhang zwischen flacher Fußhaltung und Schmerzen im unteren Rücken (Menz und Kollegen, 2013).',
       paragraphs: [
-        'Dass Plattfüße Rückenschmerzen verursachen, ist nicht belegt. Manche Studien finden, dass Menschen mit flacheren oder nach innen rollenden Füßen etwas häufiger von Rückenschmerzen berichten, andere finden überhaupt keinen Zusammenhang. Keine davon kann zeigen, dass zuerst die Füße da waren und die Rückenschmerzen danach kamen.',
-        'Diese Lücke ist wichtig, weil Kreuzschmerzen sehr häufig sind und meist keine einzelne Ursache haben. Ein Review im Lancet von 2018 sagt es deutlich: Bei fast allen Menschen mit Schmerzen im unteren Rücken lässt sich keine bestimmte Quelle des Schmerzes finden. Nur ein kleiner Teil hat eine klare medizinische Ursache wie einen Bruch, eine Infektion oder einen Tumor. Am stärksten gefährdet sind laut diesem Review unter anderem Menschen mit körperlich schwerer Arbeit, Raucherinnen und Raucher, Menschen mit Adipositas und Menschen mit anderen körperlichen oder psychischen Erkrankungen. Bei so vielen Einflüssen ist eine einfache Geschichte vom Fuß zum Rücken schwer zu beweisen.',
+        '**Dass Plattfüße Rückenschmerzen verursachen, ist nicht belegt.** Manche Studien finden, dass Menschen mit flacheren oder nach innen rollenden Füßen etwas häufiger von Rückenschmerzen berichten, andere finden überhaupt keinen Zusammenhang. Keine davon kann zeigen, dass zuerst die Füße da waren und die Rückenschmerzen danach kamen.',
+        'Diese Lücke ist wichtig, weil Kreuzschmerzen sehr häufig sind und meist keine einzelne Ursache haben. Ein Review im Lancet von 2018 sagt es deutlich: Bei fast allen Menschen mit Schmerzen im unteren Rücken lässt sich keine bestimmte Quelle des Schmerzes finden. Nur ein kleiner Teil hat eine klare medizinische Ursache wie einen Bruch, eine Infektion oder einen Tumor. Am stärksten gefährdet sind laut diesem Review unter anderem:',
+        {
+          list: [
+            'Menschen mit körperlich schwerer Arbeit.',
+            'Raucherinnen und Raucher.',
+            'Menschen mit Adipositas.',
+            'Menschen mit anderen körperlichen oder psychischen Erkrankungen.',
+          ],
+        },
+        'Bei so vielen Einflüssen ist eine einfache Geschichte vom Fuß zum Rücken schwer zu beweisen.',
         'Die ehrliche Antwort lautet also: „Für sich allein wahrscheinlich nicht, bei den meisten Menschen.“ Deine Rückenschmerzen verdienen es, als eigenes Problem angeschaut zu werden.',
       ],
       cites: [CITE.menz, CITE.hartvigsen],
@@ -40,8 +49,17 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       keyFact: 'In der Framingham Foot Study hatten Frauen, deren Füße beim Gehen nach innen rollten, eine etwa 1,5-fache Chance auf Schmerzen im unteren Rücken, während die Fußhaltung im Stehen keinen Zusammenhang zeigte (Menz und Kollegen, 2013).',
       paragraphs: [
         'Die Framingham Foot Study gehört zu den größten Studien, die Füße direkt vermessen haben, und sie fand keinen Zusammenhang zwischen Plattfüßen und Schmerzen im unteren Rücken. Die Forschenden untersuchten zwischen 2002 und 2005 insgesamt 1.930\u00A0Erwachsene aus der Stadt Framingham in Massachusetts. Sie bestimmten das Gewölbe im Stehen anhand eines Fußabdrucks und teilten die Füße in flach, normal oder hoch gewölbt ein. Die Fußhaltung, ob flach oder nicht, hing nicht mit Schmerzen im unteren Rücken zusammen.',
-        'Die Studie maß auch die Fußfunktion, also wie sich der Druck unter dem Fuß beim Gehen verlagerte. Ein Fuß, der beim Gehen nach innen rollt, heißt proniert. Bei Frauen hing ein pronierendes Gangmuster mit Schmerzen im unteren Rücken zusammen, mit einer etwa 1,5-fachen Chance im Vergleich zu Frauen, deren Füße sich normal bewegten. Der Zusammenhang blieb bestehen, nachdem die Forschenden Alter, Gewicht, Rauchen und depressive Symptome berücksichtigt hatten. Bei Männern gab es keinen Zusammenhang.',
-        'Viele Websites geben diese Studie so wieder: „Menschen mit Plattfüßen haben 50\u00A0% häufiger Rückenschmerzen.“ Das hat sie nicht gefunden. Die Form des Gewölbes, die du im Stehen siehst, spielte keine Rolle. Wichtig war, und nur bei Frauen, wie sich der Fuß beim Gehen bewegte. Und weil die Studie alle nur einmal gemessen hat, kann sie nicht sagen, ob die Fußbewegung zu den Rückenschmerzen führte, ob die Rückenschmerzen den Gang veränderten oder ob etwas anderes beides auslöste.',
+        'Die Studie maß auch die Fußfunktion, also wie sich der Druck unter dem Fuß beim Gehen verlagerte. Ein Fuß, der beim Gehen nach innen rollt, heißt proniert.',
+        'Bei Frauen hing ein pronierendes Gangmuster mit Schmerzen im unteren Rücken zusammen, mit einer etwa 1,5-fachen Chance im Vergleich zu Frauen, deren Füße sich normal bewegten. Der Zusammenhang blieb bestehen, nachdem die Forschenden Alter, Gewicht, Rauchen und depressive Symptome berücksichtigt hatten. Bei Männern gab es keinen Zusammenhang.',
+        'Viele Websites geben diese Studie so wieder: „Menschen mit Plattfüßen haben 50\u00A0% häufiger Rückenschmerzen.“ Das hat sie nicht gefunden. **Die Form des Gewölbes, die du im Stehen siehst, spielte keine Rolle.** Wichtig war, und nur bei Frauen, wie sich der Fuß beim Gehen bewegte.',
+        'Und weil die Studie alle nur einmal gemessen hat, kann sie nicht sagen, ob:',
+        {
+          list: [
+            'Die Fußbewegung zu den Rückenschmerzen führte.',
+            'Die Rückenschmerzen den Gang veränderten.',
+            'Etwas anderes beides auslöste.',
+          ],
+        },
       ],
       sourceNote:
         'Menz 2013: Querschnittsstudie, n = 1.930. Pronierende Fußfunktion und Schmerzen im unteren Rücken bei Frauen, Odds Ratio 1,51 (95-%-KI 1,1 bis 2,07); 1,48 (95-%-KI 1,07 bis 2,05) nach Adjustierung für Alter, Gewicht, Rauchen und depressive Symptome.',
@@ -52,8 +70,9 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       keyFact: 'Unter 97.279\u00A0Rekrutinnen und Rekruten hatten 5\u00A0% mit leichtem Plattfuß immer wieder auftretende Kreuzschmerzen, genauso viele wie mit normalen Füßen, gegenüber 10\u00A0% mit mittlerem oder starkem Plattfuß (Kosashvili und Kollegen, 2008).',
       paragraphs: [
         'Menschen mit ausgeprägtem Plattfuß berichten in manchen Studien etwas häufiger von Rückenschmerzen, Menschen mit leichtem Plattfuß nicht. Die größte Datenbasis stammt von 97.279 jungen Rekrutinnen und Rekruten, bei denen ein Orthopäde den Plattfuß jeder Person einstufte. Insgesamt hatten 16\u00A0% Plattfüße, und die meisten davon (74\u00A0%) waren leicht.',
-        'Immer wieder auftretende Kreuzschmerzen, also Rückenschmerzen ohne Befund in der Untersuchung oder im Röntgenbild, hatten 5\u00A0% der Rekrutinnen und Rekruten mit normalen Füßen und 5\u00A0% mit leichtem Plattfuß. Bei mittlerem oder starkem Plattfuß waren es 10\u00A0%. Bei den meisten Plattfüßen, den leichten, gab es also überhaupt keinen Unterschied.',
-        'Eine Befragung von 2021 mit 1.798\u00A0Erwachsenen, die auf einem Festival in Saudi-Arabien interviewt wurden, berichtete viel größere Zahlen: 65,9\u00A0% der Menschen mit Plattfüßen gaben Schmerzen im unteren Rücken an, und Plattfüße gingen mit einer 3,3-fachen Chance auf kurzzeitige und einer 4,5-fachen Chance auf langanhaltende Rückenschmerzen einher. Eine solche Befragung betrachtet Füße und Rücken zu einem einzigen Zeitpunkt, bei den Menschen, die zufällig stehen blieben und mitmachten, und die Teilnehmenden gaben selbst an, ob sie Plattfüße hatten. Andere Erklärungen kann sie nicht ausschließen, und die Forschenden fanden selbst, dass auch Geschlecht, Alter, Beruf und körperliche Aktivität mit Rückenschmerzen zusammenhingen.',
+        'Immer wieder auftretende Kreuzschmerzen, also Rückenschmerzen ohne Befund in der Untersuchung oder im Röntgenbild, hatten 5\u00A0% der Rekrutinnen und Rekruten mit normalen Füßen und 5\u00A0% mit leichtem Plattfuß. Bei mittlerem oder starkem Plattfuß waren es 10\u00A0%. **Bei den meisten Plattfüßen, den leichten, gab es also überhaupt keinen Unterschied.**',
+        'Eine Befragung von 2021 mit 1.798\u00A0Erwachsenen, die auf einem Festival in Saudi-Arabien interviewt wurden, berichtete viel größere Zahlen: 65,9\u00A0% der Menschen mit Plattfüßen gaben Schmerzen im unteren Rücken an, und Plattfüße gingen mit einer 3,3-fachen Chance auf kurzzeitige und einer 4,5-fachen Chance auf langanhaltende Rückenschmerzen einher.',
+        'Eine solche Befragung betrachtet Füße und Rücken zu einem einzigen Zeitpunkt, bei den Menschen, die zufällig stehen blieben und mitmachten, und die Teilnehmenden gaben selbst an, ob sie Plattfüße hatten. Andere Erklärungen kann sie nicht ausschließen, und die Forschenden fanden selbst, dass auch Geschlecht, Alter, Beruf und körperliche Aktivität mit Rückenschmerzen zusammenhingen.',
       ],
       cites: [CITE.kosashvili, CITE.almutairi],
     },
@@ -61,7 +80,7 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       h2: 'Wie könnten Plattfüße den Rücken beeinflussen?',
       keyFact: 'In einer Laborstudie mit 20\u00A0Personen kippten Einlagen, die die Füße nach innen rollen ließen, das Becken beim Gehen im Schnitt um etwa ein halbes Grad (Hornestam und Kollegen, 2021).',
       paragraphs: [
-        'Die übliche Erklärung ist die kinetische Kette: die Vorstellung, dass sich die Gelenke vom Fuß bis zur Wirbelsäule als verbundenes System bewegen. Ein Fuß, der nach innen rollt, dreht demnach Schienbein und Oberschenkel nach innen, kippt das Becken und belastet den unteren Rücken anders. Die Mechanik gibt es wirklich, aber der Effekt scheint klein zu sein.',
+        'Die übliche Erklärung ist die kinetische Kette: die Vorstellung, dass sich die Gelenke vom Fuß bis zur Wirbelsäule als verbundenes System bewegen. Ein Fuß, der nach innen rollt, dreht demnach Schienbein und Oberschenkel nach innen, kippt das Becken und belastet den unteren Rücken anders. **Die Mechanik gibt es wirklich, aber der Effekt scheint klein zu sein.**',
         'In einer Laborstudie von 2021 gingen 20\u00A0Personen mit keilförmigen Einlagen, die ihre Füße nach innen rollen ließen. Ihr Becken kippte etwas stärker zu einer Seite (im Schnitt um etwa ein halbes Grad), und die Hüfte drehte sich um etwa 1,4\u00A0Grad nach innen. Das zeigt, dass der Fuß das Becken ein wenig verschieben kann. Es zeigt nicht, dass ein halbes Grad Schmerzen auslöst, und die Studie hat Schmerzen gar nicht gemessen.',
         'Die kinetische Kette ist eine vernünftige Idee, die eine Fachperson bei einem einzelnen Menschen prüfen kann. Sie ist kein Grund, davon auszugehen, dass deine Gewölbe hinter deinen Rückenschmerzen stecken.',
       ],
@@ -73,9 +92,18 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       paragraphs: [
         'Für Einlagen bei Rückenschmerzen gibt es gemischte Belege von geringer Qualität, und jeder bisher gesehene Nutzen war nur von kurzer Dauer. Orthopädische Einlagen sind geformte Schuheinlagen, maßgefertigte werden nach einem Abdruck oder Scan deines Fußes hergestellt.',
         'Eine Übersichtsarbeit von 2014 fasste fünf Studien mit Einlagen bei Menschen zusammen, die bereits Schmerzen im unteren Rücken hatten (293\u00A0Personen), und fand keinen deutlichen Effekt. Sechs weitere Studien (2.379\u00A0Personen) testeten Einlagen zur Vorbeugung von Rückenschmerzen und fanden ebenfalls keinen deutlichen Effekt.',
-        'Die bekannteste Einzelstudie von 2017 teilte 225\u00A0Erwachsene mit Rückenschmerzen seit mindestens drei Monaten in drei Gruppen ein: maßgefertigte Einlagen, Einlagen plus chiropraktische Betreuung oder nichts (eine Warteliste). Nach etwa anderthalb Monaten hatte die Gruppe mit Einlagen allein weniger Schmerzen und eine bessere Funktion als die Warteliste. Nach drei Monaten und später unterschieden sich die Gruppen nicht mehr. Die Teilnehmenden wurden nicht nach Plattfüßen ausgewählt, und verglichen wurde mit gar keiner Versorgung, nicht mit einer Schein-Einlage.',
-        'Zwei kleinere Forschungsstränge betrachteten Menschen, deren Füße nach innen rollen. Eine Studie von 2013 mit 51\u00A0Personen mit chronischen Rückenschmerzen und stark pronierten Füßen fand, dass maßgefertigte Einlagen die Rückenschmerzen über etwa einen Monat stärker linderten als Placebo-Einlagen. Eine Übersichtsarbeit von 2025 fasste vier kleine Studien in dieser Gruppe zusammen und fand weniger Schmerzen und Einschränkungen. Eine Übersichtsarbeit von 2026 über sieben Studien (423\u00A0Personen) fand, dass Einlagen insgesamt gegen Schmerzen halfen, bewertete die Belege aber als gering und fand keinen klaren Effekt von Einlagen von der Stange.',
-        'Einlagen für mehr Komfort am Fuß sind vernünftig und risikoarm. Erwarte nicht, dass sie allein ein Rückenproblem lösen. [Einlagen oder Übungen](/de/einlagen-oder-uebungen/) zeigt die Fußseite dieser Entscheidung.',
+        'Die bekannteste Einzelstudie von 2017 teilte 225\u00A0Erwachsene mit Rückenschmerzen seit mindestens drei Monaten in drei Gruppen ein:',
+        {
+          list: [
+            'Maßgefertigte Einlagen.',
+            'Einlagen plus chiropraktische Betreuung.',
+            'Nichts (eine Warteliste).',
+          ],
+        },
+        'Nach etwa anderthalb Monaten hatte die Gruppe mit Einlagen allein weniger Schmerzen und eine bessere Funktion als die Warteliste. Nach drei Monaten und später unterschieden sich die Gruppen nicht mehr. Die Teilnehmenden wurden nicht nach Plattfüßen ausgewählt, und verglichen wurde mit gar keiner Versorgung, nicht mit einer Schein-Einlage.',
+        'Zwei kleinere Forschungsstränge betrachteten Menschen, deren Füße nach innen rollen. Eine Studie von 2013 mit 51\u00A0Personen mit chronischen Rückenschmerzen und stark pronierten Füßen fand, dass maßgefertigte Einlagen die Rückenschmerzen über etwa einen Monat stärker linderten als Placebo-Einlagen. Eine Übersichtsarbeit von 2025 fasste vier kleine Studien in dieser Gruppe zusammen und fand weniger Schmerzen und Einschränkungen.',
+        'Eine Übersichtsarbeit von 2026 über sieben Studien (423\u00A0Personen) fand, dass Einlagen insgesamt gegen Schmerzen halfen, bewertete die Belege aber als gering und fand keinen klaren Effekt von Einlagen von der Stange.',
+        'Einlagen für mehr Komfort am Fuß sind vernünftig und risikoarm. **Erwarte nicht, dass sie allein ein Rückenproblem lösen.** [Einlagen oder Übungen](/de/einlagen-oder-uebungen/) zeigt die Fußseite dieser Entscheidung.',
       ],
       table: {
         caption: 'Studien zu Einlagen bei Schmerzen im unteren Rücken',
@@ -97,7 +125,7 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       keyFact: 'Ein Cochrane-Review von 2021 über 249\u00A0Studien fand, dass Bewegungstraining chronische Kreuzschmerzen um etwa 15\u00A0Punkte auf einer 100-Punkte-Skala senkte, im Vergleich zu keinem Training, üblicher Versorgung oder Placebo (Hayden und Kollegen, 2021).',
       paragraphs: [
         'Allgemeines Bewegungstraining hat bei Rückenschmerzen viel stärkere Belege als alles, was auf die Füße zielt. Ein Cochrane-Review von 2021, eine große Zusammenfassung von Studien, wertete 249\u00A0Studien zu Bewegungstraining bei chronischen Kreuzschmerzen aus. Es fand Belege mittlerer Sicherheit, dass Training den Schmerz um etwa 15\u00A0Punkte auf einer 100-Punkte-Skala senkte, im Vergleich zu keinem Training, üblicher Versorgung oder Placebo. Der Effekt auf die Funktion im Alltag war kleiner, etwa 7\u00A0Punkte.',
-        'Die Studien deckten viele Arten von Training ab, und 151 davon testeten zwei oder mehr Trainingsarten. Beim Schmerz schnitt Training auch besser ab als Beratung oder Aufklärung allein. Für die meisten Menschen heißt das praktisch: Such dir etwas Regelmäßiges, das du durchhalten kannst, am besten am Anfang mit Hilfe einer Physiotherapeutin oder eines Physiotherapeuten.',
+        'Die Studien deckten viele Arten von Training ab, und 151 davon testeten zwei oder mehr Trainingsarten. Beim Schmerz schnitt Training auch besser ab als Beratung oder Aufklärung allein. Für die meisten Menschen heißt das praktisch: **Such dir etwas Regelmäßiges, das du durchhalten kannst**, am besten am Anfang mit Hilfe einer Physiotherapeutin oder eines Physiotherapeuten.',
         'Das Lancet-Review von 2018 beruhigt zusätzlich: Die meisten neuen Episoden von Kreuzschmerzen klingen schnell ab, auch wenn Rückenschmerzen oft wiederkommen. Wenn dein Rücken das Hauptproblem ist, kann eine Physiotherapeutin, ein Physiotherapeut oder eine Ärztin oder ein Arzt einen Rückenplan für dich erstellen. Fußübungen können daneben laufen, ihn aber nicht ersetzen.',
       ],
       sourceNote:
@@ -109,7 +137,8 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       keyFact: 'In einer Studie mit 52\u00A0Personen mit flexiblem Plattfuß veränderte ein Programm aus Kurzer-Fuß-Übung, Sprunggelenk- und Hüftübungen und Dehnen zwei Maße der Gewölbeform stärker als in einer Kontrollgruppe (Brijwasi und Borkar, 2023).',
       paragraphs: [
         'An deinen Plattfüßen zu arbeiten ist sinnvoll, wenn deine Füße selbst wehtun, schnell ermüden oder sich instabil anfühlen. Ein Rückenprogramm ist das nicht, und keine Studie hat gezeigt, dass Fußübungen allein Rückenschmerzen lindern.',
-        'Bei flexiblem Plattfuß, bei dem das Gewölbe zurückkommt, wenn du den Fuß anhebst, fand eine Studie mit 52\u00A0Personen, dass Kurzer-Fuß-Übungen, Sprunggelenkübungen, Hüftkräftigung und Dehnen zusammen die Gewölbeform stärker veränderten als in einer Kontrollgruppe. Diese Studie hat die Gewölbeform gemessen, nicht Schmerzen. Eine Übersichtsarbeit von 2024 zum Kurzer-Fuß-Training allein fand insgesamt keine klare Veränderung der Fußhaltung. Das vollständige Programm mit Dosis und Steigerungen findest du unter [Plattfuß-Übungen](/de/plattfuss-uebungen/). Drei der Kernübungen stehen unten.',
+        'Bei flexiblem Plattfuß, bei dem das Gewölbe zurückkommt, wenn du den Fuß anhebst, fand eine Studie mit 52\u00A0Personen, dass Kurzer-Fuß-Übungen, Sprunggelenkübungen, Hüftkräftigung und Dehnen zusammen die Gewölbeform stärker veränderten als in einer Kontrollgruppe. Diese Studie hat die Gewölbeform gemessen, nicht Schmerzen. Eine Übersichtsarbeit von 2024 zum Kurzer-Fuß-Training allein fand insgesamt keine klare Veränderung der Fußhaltung.',
+        'Das vollständige Programm mit Dosis und Steigerungen findest du unter [Plattfuß-Übungen](/de/plattfuss-uebungen/). Drei der Kernübungen stehen unten.',
         'Walkito baut sie in einen Wochenplan für die Füße ein und beginnt die Kurzer-Fuß-Übung mit 3\u00A0Sätzen à 8, jeweils 5\u00A0Sekunden halten. Für den Rücken direkt tut es nichts, und es behauptet das auch nicht.',
         'Wenn eine Übung deinen Fußschmerz auf **6/10 oder mehr** bringt oder Rückenschmerzen oder Schmerzen ins Bein auslöst, hör für heute auf.',
       ],
@@ -157,9 +186,19 @@ export const FLAT_FEET_BACK_PAIN_DE: Guide = {
       h2: 'Was muss eine medizinische Fachperson prüfen?',
       keyFact: 'Ernsthafte Probleme an der Wirbelsäule sind selten, und ein internationaler Leitfaden für Fachleute listet die Warnzeichen auf, nach denen zuerst gesucht werden sollte (Finucane und Kollegen, 2020).',
       paragraphs: [
-        'Eine Fachperson betrachtet Rücken und Füße als zwei getrennte Fragen und fängt mit dem Rücken an. Zuerst geht es darum, die seltenen ernsten Ursachen von Rückenschmerzen auszuschließen: einen eingeklemmten Nerv, einen Bruch, eine Infektion oder Krebs. Ein internationaler Leitfaden für Fachleute listet die Warnzeichen auf, nach denen sie suchen, und du findest sie in der Liste am Ende dieser Seite.',
+        'Eine Fachperson betrachtet Rücken und Füße als zwei getrennte Fragen und **fängt mit dem Rücken an**. Zuerst geht es darum, die seltenen ernsten Ursachen von Rückenschmerzen auszuschließen:',
+        {
+          list: [
+            'Einen eingeklemmten Nerv.',
+            'Einen Bruch.',
+            'Eine Infektion.',
+            'Krebs.',
+          ],
+        },
+        'Ein internationaler Leitfaden für Fachleute listet die Warnzeichen auf, nach denen sie suchen, und du findest sie in der Liste am Ende dieser Seite.',
         'Zum Rücken kannst du Fragen erwarten, wie der Schmerz angefangen hat, was ihn lindert und ob er ins Bein ausstrahlt. Die Untersuchung prüft meist, wie sich der Rücken bewegt, dazu Kraft, Reflexe und Gefühl in Beinen und Füßen. Bildgebung ist meist nicht nötig, außer wenn etwas auf eine ernste Ursache hindeutet.',
-        'Bei den Füßen prüft die Fachperson, ob der Plattfuß flexibel ist (das Gewölbe kommt zurück, wenn du auf die Zehen gehst oder den Fuß anhebst) oder starr (er bleibt flach). Ein starrer Plattfuß oder ein Gewölbe, das im Erwachsenenalter abgesunken ist und mit Schmerzen an der Innenseite des Sprunggelenks einhergeht, braucht eine eigene Abklärung. Hinter dem zweiten Muster steckt oft eine schwächer werdende Sehne, mehr dazu unter [Tibialis-posterior-Insuffizienz](/de/tibialis-posterior-insuffizienz/). Die Fachperson schaut dir vielleicht auch beim Gehen zu, um zu sehen, wie stark deine Füße nach innen rollen.',
+        'Bei den Füßen prüft die Fachperson, ob der Plattfuß flexibel ist (das Gewölbe kommt zurück, wenn du auf die Zehen gehst oder den Fuß anhebst) oder starr (er bleibt flach).',
+        'Ein starrer Plattfuß oder ein Gewölbe, das im Erwachsenenalter abgesunken ist und mit Schmerzen an der Innenseite des Sprunggelenks einhergeht, braucht eine eigene Abklärung. Hinter dem zweiten Muster steckt oft eine schwächer werdende Sehne, mehr dazu unter [Tibialis-posterior-Insuffizienz](/de/tibialis-posterior-insuffizienz/). Die Fachperson schaut dir vielleicht auch beim Gehen zu, um zu sehen, wie stark deine Füße nach innen rollen.',
         'Rückenprobleme können auch Beschwerden am Fuß auslösen. Ein eingeklemmter Nerv im unteren Rücken kann Taubheit, Kribbeln oder Schwäche im Fuß bringen, und ein schwacher Fuß kann wie ein Fußproblem aussehen, obwohl die Ursache weiter oben liegt.',
       ],
       cites: [CITE.finucaneRedFlags, CITE.hartvigsen],

@@ -38,7 +38,8 @@ export const EX_TIBIALIS_RAISES_IT: Guide = {
     {
       h2: 'Come si fa il sollevamento dell’avampiede?',
       paragraphs: [
-        'Stai in piedi con la schiena appoggiata al muro. Porta i piedi in avanti di circa 30\u00A0cm dal muro (più o meno la lunghezza di un piede). Tieni i talloni a terra. Solleva la parte anteriore di entrambi i piedi più in alto che puoi, tirando le dita verso lo stinco. Fermati un attimo in alto. Scendi piano.',
+        'Stai in piedi con la schiena appoggiata al muro. Porta i piedi in avanti di circa 30\u00A0cm dal muro (più o meno la lunghezza di un piede). Tieni i talloni a terra.',
+        'Solleva la parte anteriore di entrambi i piedi più in alto che puoi, tirando le dita verso lo stinco. Fermati un attimo in alto. Scendi piano.',
         'Il muro sostiene il tuo peso così puoi concentrarti sulla contrazione dello stinco. Se scivoli via dal muro, i piedi sono troppo avanti.',
       ],
       exercises: [
@@ -64,8 +65,9 @@ export const EX_TIBIALIS_RAISES_IT: Guide = {
       keyFact: 'In uno studio caso-controllo del 2007, gli atleti con periostite tibiale avevano una resistenza nei sollevamenti sulle punte più bassa dei controlli appaiati, il che indica un deficit di forza generale della gamba, non di un singolo muscolo (Madeley e colleghi, 2007).',
       paragraphs: [
         'La periostite tibiale, il cui nome clinico è sindrome da stress tibiale mediale (MTSS), dà dolore lungo il bordo interno della tibia. Il tibiale anteriore sta sulla parte anteriore esterna dello stinco, non nel punto in cui di solito fa male la MTSS, quindi il legame è indiretto. Il ragionamento è che un tibiale anteriore più forte aiuta ad assorbire l’impatto quando corri e cammini, riducendo la tensione sullo stinco nel suo insieme.',
-        'Uno studio caso-controllo del 2007 ha trovato che gli atleti con MTSS avevano una resistenza nei sollevamenti sulle punte più bassa dei controlli appaiati, il che indica un deficit di forza generale della gamba, non la debolezza di un singolo muscolo. Una revisione sistematica del 2013 ha esaminato il trattamento della MTSS già presente, non la prevenzione, e non ha trovato studi che mostrassero l’efficacia di esercizi di allungamento o di rinforzo, anche se nel complesso le prove dietro questa conclusione erano di bassa qualità.',
-        'Onestamente, non abbiamo uno studio che abbia testato i sollevamenti dell’avampiede da soli per la periostite tibiale e mostrato che riducono i sintomi o le ricadute. L’esercizio è nei programmi perché ha senso dal punto di vista biomeccanico, non perché uno studio lo abbia dimostrato. Per questo la sua etichetta di evidenza è «iniziale». Per la pagina completa sulla periostite tibiale, vedi [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/).',
+        'Uno studio caso-controllo del 2007 ha trovato che gli atleti con MTSS avevano una resistenza nei sollevamenti sulle punte più bassa dei controlli appaiati, il che indica un deficit di forza generale della gamba, non la debolezza di un singolo muscolo.',
+        'Una revisione sistematica del 2013 ha esaminato il trattamento della MTSS già presente, non la prevenzione, e non ha trovato studi che mostrassero l’efficacia di esercizi di allungamento o di rinforzo, anche se nel complesso le prove dietro questa conclusione erano di bassa qualità.',
+        'Onestamente, non abbiamo uno studio che abbia testato i sollevamenti dell’avampiede da soli per la periostite tibiale e mostrato che riducono i sintomi o le ricadute. **L’esercizio è nei programmi perché ha senso dal punto di vista biomeccanico, non perché uno studio lo abbia dimostrato.** Per questo la sua etichetta di evidenza è «iniziale». Per la pagina completa sulla periostite tibiale, vedi [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/).',
       ],
       cites: [CITE.madeley, CITE.winters],
     },
@@ -73,7 +75,15 @@ export const EX_TIBIALIS_RAISES_IT: Guide = {
       h2: 'Serie, ripetizioni e come progredire',
       paragraphs: [
         'Walkito parte da 3\u00A0serie da 10, entrambi i piedi, con la schiena al muro. Per la maggior parte delle persone è un punto di partenza comodo. Se 10\u00A0ripetizioni ti sembrano facili senza nessuna fatica, sali a 15 o aggiungi una pausa di 2\u00A0secondi in alto.',
-        'Per rendere l’esercizio più difficile, prova i sollevamenti dell’avampiede su una gamba: stessa posizione al muro, un piede alla volta. Un elastico passato sopra il piede aggiunge carico. Tenere un manubrio leggero sopra il dorso del piede è un’altra opzione, anche se scomoda. La progressione più semplice è fare più ripetizioni con un ritmo controllato.',
+        'Per rendere l’esercizio più difficile:',
+        {
+          list: [
+            'Prova i sollevamenti dell’avampiede su una gamba: stessa posizione al muro, un piede alla volta.',
+            'Un elastico passato sopra il piede aggiunge carico.',
+            'Tenere un manubrio leggero sopra il dorso del piede è un’altra opzione, anche se scomoda.',
+          ],
+        },
+        'La progressione più semplice è fare più ripetizioni con un ritmo controllato.',
         'Nell’app questo esercizio si chiama «Sollevamenti delle punte». Il movimento è lo stesso: alzi le dita, i talloni restano giù.',
       ],
     },
@@ -81,15 +91,19 @@ export const EX_TIBIALIS_RAISES_IT: Guide = {
       h2: 'Sollevamenti dell’avampiede o sollevamenti sulle punte',
       paragraphs: [
         'I sollevamenti dell’avampiede e i [sollevamenti sulle punte](/it/esercizi/sollevamenti-sulle-punte/) sono movimenti opposti. Il sollevamento sulle punte spinge il piede verso il basso (flessione plantare). Il sollevamento dell’avampiede solleva il piede verso l’alto (dorsiflessione). I muscoli del polpaccio e il tibiale anteriore lavorano insieme per controllare ogni passo, assorbendo l’impatto all’appoggio e spingendo nella fase di stacco.',
-        'Rinforzare un lato senza l’altro può creare uno squilibrio. Chi corre e fa solo sollevamenti sulle punte può comunque avere dolore allo stinco, perché il tibiale anteriore non riesce a stare al passo con il polpaccio quando i chilometri sono tanti. Un programma equilibrato include entrambi.',
+        'Rinforzare un lato senza l’altro può creare uno squilibrio. Chi corre e fa solo sollevamenti sulle punte può comunque avere dolore allo stinco, perché il tibiale anteriore non riesce a stare al passo con il polpaccio quando i chilometri sono tanti. **Un programma equilibrato include entrambi.**',
       ],
     },
     {
       h2: 'Quali sono gli errori più comuni nei sollevamenti dell’avampiede?',
       paragraphs: [
-        'Piedi troppo lontani dal muro. Se i talloni scivolano in avanti, perdi il sostegno del muro e l’esercizio diventa una prova di equilibrio invece che un rinforzo dello stinco. Circa la lunghezza di un piede dal muro va bene per la maggior parte delle persone.',
-        'Fare le ripetizioni di fretta. Una salita e una discesa lente e controllate fanno lavorare di più il muscolo rispetto a ripetizioni veloci. Due secondi su, un secondo fermo, due secondi giù è un buon ritmo.',
-        'Confondere il bruciore muscolare con il dolore all’osso. Un bruciore lungo i muscoli sul davanti dello stinco è normale durante la serie. Un dolore acuto e localizzato sull’osso della tibia no, e potrebbe indicare una reazione da stress. Fermati e fallo controllare.',
+        {
+          list: [
+            '**Piedi troppo lontani dal muro.** Se i talloni scivolano in avanti, perdi il sostegno del muro e l’esercizio diventa una prova di equilibrio invece che un rinforzo dello stinco. Circa la lunghezza di un piede dal muro va bene per la maggior parte delle persone.',
+            '**Fare le ripetizioni di fretta.** Una salita e una discesa lente e controllate fanno lavorare di più il muscolo rispetto a ripetizioni veloci. Due secondi su, un secondo fermo, due secondi giù è un buon ritmo.',
+            '**Confondere il bruciore muscolare con il dolore all’osso.** Un bruciore lungo i muscoli sul davanti dello stinco è normale durante la serie. Un dolore acuto e localizzato sull’osso della tibia no, e potrebbe indicare una reazione da stress. Fermati e fallo controllare.',
+          ],
+        },
       ],
     },
   ],

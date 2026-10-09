@@ -57,7 +57,8 @@ export const FLAT_FEET_PT: Guide = {
   h1: 'Exercícios para pé chato, arco caído e dor no arco do pé',
   lede: 'No fim do dia seus pés estão cansados e os arcos doem. Quando você fica em pé, os pés parecem virar para dentro e os arcos afundam em direção ao chão. Talvez já tenham dito que pé chato é só o jeito que você é e que não vale a pena pensar nisso. Querer fazer alguma coisa faz sentido, e existe pesquisa de verdade sobre treinar o arco.',
   intro: [
-    'Comece com um teste: veja se o seu pé chato é flexível, ou seja, se o arco volta quando você levanta o pé. No pé chato flexível, um ensaio com 52\u00A0pessoas mostrou que seis semanas de exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril e alongamentos, feitos juntos, mudaram o formato do arco mais do que em um grupo controle. A evidência sobre o pé curto sozinho é mais fraca. Uma revisão de 2024 não encontrou mudança clara no geral, e viu mudança em uma medida do arco só em programas com mais de seis semanas. Os dois estudos mediram o formato do arco, não a dor. Se a sua dor é perto do calcanhar, a pesquisa sobre dor no calcanhar é o melhor guia.',
+    'Comece com um teste: veja se o seu pé chato é flexível, ou seja, se o arco volta quando você levanta o pé. No pé chato flexível, um ensaio com 52\u00A0pessoas mostrou que seis semanas de exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril e alongamentos, feitos juntos, mudaram o formato do arco mais do que em um grupo controle.',
+    'A evidência sobre o pé curto sozinho é mais fraca. Uma revisão de 2024 não encontrou mudança clara no geral, e viu mudança em uma medida do arco só em programas com mais de seis semanas. Os dois estudos mediram o formato do arco, não a dor. Se a sua dor é perto do calcanhar, a pesquisa sobre dor no calcanhar é o melhor guia.',
   ],
   takeaways: [
     'O ensaio randomizado desta página foi feito com pé chato flexível, em que o arco volta quando o pé sai do chão (Brijwasi e Borkar, 2023).',
@@ -87,7 +88,8 @@ export const FLAT_FEET_PT: Guide = {
       paragraphs: [
         'Os exercícios para pé chato no Walkito começam com puxar a toalha com os dedos e a elevação do dedão, e depois sobem por três versões do pé curto. Abrir os dedos, a inversão com faixa, o equilíbrio em uma perna, a abdução de quadril e os alongamentos de panturrilha completam o resto. Essas são as doses iniciais do Walkito, não uma prescrição. Faça descalço. [Como estes guias são escritos](/pt/sobre-walkito/).',
         'O pé curto é a base do trabalho do arco. Você encurta o pé puxando a parte da frente do pé em direção ao calcanhar, para o arco subir, sem dobrar os dedos. Pé curto, fortalecimento de quadril e alongamentos são o que o ensaio testou. Puxar a toalha, a elevação do dedão, abrir os dedos, a inversão com faixa e o equilíbrio em uma perna são acréscimos do próprio Walkito.',
-        'Você faz um exercício de arco por vez, o do seu nível. O Walkito sobe você um degrau quando as duas últimas sessões com ele pareceram fáceis. Enquanto o arco for a sua meta, toda sessão tem um exercício de arco, e os outros se revezam. Alguns exercícios precisam de uma toalha ou de uma faixa elástica. O Walkito pergunta o que você tem e deixa de fora o que você não tem. Se algum exercício levar a sua dor a **6/10 ou mais**, pare por hoje. É nesse ponto que o Walkito encerra uma sessão.',
+        'Você faz um exercício de arco por vez, o do seu nível. O Walkito sobe você um degrau quando as duas últimas sessões com ele pareceram fáceis. Enquanto o arco for a sua meta, toda sessão tem um exercício de arco, e os outros se revezam.',
+        'Alguns exercícios precisam de uma toalha ou de uma faixa elástica. O Walkito pergunta o que você tem e deixa de fora o que você não tem. Se algum exercício levar a sua dor a **6/10 ou mais**, pare por hoje. É nesse ponto que o Walkito encerra uma sessão.',
       ],
       table: {
         head: ['Exercício', 'Dose', 'Com que frequência', 'O que você deve sentir', 'Pare se'],
@@ -250,7 +252,7 @@ export const FLAT_FEET_PT: Guide = {
     {
       h2: 'O que acontece quando você alcança a meta do arco?',
       paragraphs: [
-        `Quando você alcança a meta do arco, sustentar o arco por ${PROGRAM.goals.archHoldSeconds}\u00A0segundos, o Walkito mantém o trabalho do arco no plano com uma dose menor. A meta passa para manutenção, e a próxima meta entra no lugar. Alcançar a meta não significa que o trabalho do arco acaba.`,
+        `Quando você alcança a meta do arco, sustentar o arco por ${PROGRAM.goals.archHoldSeconds}\u00A0segundos, **o Walkito mantém o trabalho do arco no plano com uma dose menor.** A meta passa para manutenção, e a próxima meta entra no lugar. Alcançar a meta não significa que o trabalho do arco acaba.`,
         `Os testes também continuam, a cada ${PROGRAM.testEveryDaysAfterGoal}\u00A0dias depois que você alcança a primeira meta. Se a sustentação do arco começar a cair, você vê nos números em vez de adivinhar.`,
         'Se o seu calcanhar também dói, o calcanhar tem os próprios exercícios e a própria meta: veja [exercícios e alongamentos para fascite plantar](/pt/exercicios-fascite-plantar/). Dúvidas sobre o app estão respondidas nas [perguntas frequentes](/faq/) (em inglês).',
       ],
@@ -320,7 +322,8 @@ export const HEEL_PAIN_PT: Guide = {
   h1: 'Exercícios e alongamentos para fascite plantar e dor no calcanhar',
   lede: 'Os primeiros passos ao sair da cama são a pior parte do dia. Uma fisgada forte bem no calcanhar, antes mesmo do café. Melhora quando você começa a se mexer, e volta depois que você fica um tempo sentado. Esse padrão tem nome, [fascite plantar](/pt/fascite-plantar/), e a diretriz clínica de 2023 para dor no calcanhar diz que ela é a causa mais reconhecida de dor no calcanhar embaixo do pé.',
   intro: [
-    'Também é confuso pesquisar sobre isso, porque cada um diz uma coisa. A evidência aponta para duas coisas: alongar a fáscia plantar e a panturrilha, e fazer treino de força para a panturrilha. Uma diretriz clínica de 2023 dá ao alongamento o grau máximo, A, e ao treino de força um B. Em um ensaio com 48\u00A0pessoas, todas usando palmilhas, elevações de calcanhar lentas com uma toalha embaixo dos dedos ajudaram mais rápido do que só alongar. Aos doze meses, os dois grupos estavam iguais. Fazer as duas coisas é o que a diretriz apoia.',
+    'Também é confuso pesquisar sobre isso, porque cada um diz uma coisa. A evidência aponta para duas coisas: alongar a fáscia plantar e a panturrilha, e fazer treino de força para a panturrilha. Uma diretriz clínica de 2023 dá ao alongamento o grau máximo, A, e ao treino de força um B.',
+    'Em um ensaio com 48\u00A0pessoas, todas usando palmilhas, elevações de calcanhar lentas com uma toalha embaixo dos dedos ajudaram mais rápido do que só alongar. Aos doze meses, os dois grupos estavam iguais. Fazer as duas coisas é o que a diretriz apoia.',
   ],
   takeaways: [
     'A diretriz de 2023 para dor no calcanhar do Journal of Orthopaedic & Sports Physical Therapy dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, A, e ao treino de força um B.',
@@ -335,7 +338,15 @@ export const HEEL_PAIN_PT: Guide = {
       figure: { id: 'plantar-fascia', caption: 'A fáscia plantar vai do osso do calcanhar até os dedos. A dor da fascite plantar costuma começar onde ela se prende ao calcanhar.', alt: 'Sola de um pé com a fáscia plantar em faixas brancas que se abrem do osso do calcanhar até a base dos dedos, e uma mancha vermelha no calcanhar onde a dor costuma começar.' },
       paragraphs: [
         'Os exercícios para fascite plantar no Walkito são alongamentos da fáscia plantar e da panturrilha, treino de força para a panturrilha que sobe aos poucos, e rolar o pé na bolinha. Essas são as doses iniciais do Walkito, não uma prescrição. Um resumo de uma página está nas [fichas de exercícios para imprimir](/printable-exercise-sheets/) (em inglês). [Como estes guias são escritos](/pt/sobre-walkito/).',
-        'A ordem importa. Enquanto a dor for a sua meta, o Walkito mantém o trabalho de panturrilha leve: primeiro elevação de calcanhar sentado, depois elevação de calcanhar com os dois pés, depois uma elevação de calcanhar sustentada, um degrau de cada vez. Você sobe um degrau quando as duas últimas sessões com ele pareceram fáceis. A [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/) é a que mais põe carga na fáscia plantar, então ela só entra quando a dor da manhã já diminuiu e a meta passa para a força da panturrilha. Se algum exercício levar a sua dor a **6/10 ou mais**, pare por hoje. É nesse ponto que o Walkito encerra uma sessão.',
+        'A ordem importa. Enquanto a dor for a sua meta, o Walkito mantém o trabalho de panturrilha leve, um degrau de cada vez:',
+        {
+          list: [
+            'Primeiro elevação de calcanhar sentado.',
+            'Depois elevação de calcanhar com os dois pés.',
+            'Depois uma elevação de calcanhar sustentada.',
+          ],
+        },
+        'Você sobe um degrau quando as duas últimas sessões com ele pareceram fáceis. A [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/) é a que mais põe carga na fáscia plantar, então ela só entra quando a dor da manhã já diminuiu e a meta passa para a força da panturrilha. Se algum exercício levar a sua dor a **6/10 ou mais**, pare por hoje. É nesse ponto que o Walkito encerra uma sessão.',
       ],
       table: {
         head: ['Exercício', 'Dose', 'Com que frequência', 'O que você deve sentir', 'Pare se'],
@@ -453,16 +464,24 @@ export const HEEL_PAIN_PT: Guide = {
       h2: 'Quais exercícios evitar com fascite plantar?',
       paragraphs: [
         'Evite atividades de alto impacto que aumentam de repente a carga no calcanhar enquanto a dor está em crise, e evite andar descalço em piso duro logo cedo.',
-        'Saltos, tiros de corrida e pliometria jogam um pico de força repentino na fáscia plantar. Quando o tecido está irritado, esse pico pode fazer você voltar atrás. A diretriz de 2023 recomenda ajustar a carga nos pés no trabalho, no esporte e no dia a dia, uma recomendação com grau E. Ela não proíbe exercícios específicos. A questão é se a carga é maior do que o tecido consegue recuperar de um dia para o outro. Andar descalço em piso duro é um gatilho comum porque a fáscia está mais rígida depois do repouso e uma superfície dura não amortece nada.',
-        'Mais duas coisas para observar. Rolar uma bolinha embaixo do pé deve dar uma sensação firme, não aguda. Se doer, alivie ou pule. E se você também tem dor no tendão de Aquiles, perto da parte de trás do calcanhar, evite descer o calcanhar fundo da beira de um degrau, porque essa descida pode sobrecarregar a inserção do Aquiles. Faça a [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/) no chão plano até um profissional de saúde liberar o lado do Aquiles.',
+        'Saltos, tiros de corrida e pliometria jogam um pico de força repentino na fáscia plantar. Quando o tecido está irritado, esse pico pode fazer você voltar atrás. A diretriz de 2023 recomenda ajustar a carga nos pés no trabalho, no esporte e no dia a dia, uma recomendação com grau E. Ela não proíbe exercícios específicos. **A questão é se a carga é maior do que o tecido consegue recuperar de um dia para o outro.**',
+        'Andar descalço em piso duro é um gatilho comum porque a fáscia está mais rígida depois do repouso e uma superfície dura não amortece nada.',
+        'Mais duas coisas para observar:',
+        {
+          list: [
+            '**Rolar uma bolinha** embaixo do pé deve dar uma sensação firme, não aguda. Se doer, alivie ou pule.',
+            'Se você também tem **dor no tendão de Aquiles**, perto da parte de trás do calcanhar, evite descer o calcanhar fundo da beira de um degrau, porque essa descida pode sobrecarregar a inserção do Aquiles. Faça a [elevação de calcanhar com toalha](/pt/exercicios/elevacao-calcanhar-toalha/) no chão plano até um profissional de saúde liberar o lado do Aquiles.',
+          ],
+        },
       ],
       cites: [CITE.guideline],
     },
     {
       h2: 'Qual a melhor hora para fazer os alongamentos para fascite plantar?',
       paragraphs: [
-        'Antes dos primeiros passos da manhã e antes de levantar depois de ficar muito tempo sentado. São os dois momentos em que a fáscia plantar está mais rígida e com mais chance de doer.',
-        'Um ensaio de 2003 com 82\u00A0pessoas com fascite plantar crônica testou um alongamento específico da fáscia plantar feito antes de apoiar o peso. Os pacientes seguravam o alongamento por 10\u00A0segundos, repetiam 10\u00A0vezes, três vezes por dia, com a primeira série antes do primeiro passo da manhã. Com oito semanas, o grupo que fazia esse alongamento tinha bem menos dor nos primeiros passos da manhã do que o grupo que fazia só alongamento de panturrilha. Em dois anos, depois que todos os pacientes passaram a fazer o mesmo alongamento, os dois grupos tinham melhorado.',
+        '**Antes dos primeiros passos da manhã e antes de levantar depois de ficar muito tempo sentado.** São os dois momentos em que a fáscia plantar está mais rígida e com mais chance de doer.',
+        'Um ensaio de 2003 com 82\u00A0pessoas com fascite plantar crônica testou um alongamento específico da fáscia plantar feito antes de apoiar o peso. Os pacientes seguravam o alongamento por 10\u00A0segundos, repetiam 10\u00A0vezes, três vezes por dia, com a primeira série antes do primeiro passo da manhã.',
+        'Com oito semanas, o grupo que fazia esse alongamento tinha bem menos dor nos primeiros passos da manhã do que o grupo que fazia só alongamento de panturrilha. Em dois anos, depois que todos os pacientes passaram a fazer o mesmo alongamento, os dois grupos tinham melhorado.',
         'Nesta página, o [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) começa na beira da cama, antes de o pé tocar o chão. O [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) vem depois. O Walkito coloca o primeiro alongamento antes de você ficar em pé pelo mesmo motivo do ensaio: alongar antes de o tecido receber carga é mais suave do que alongar depois.',
       ],
       cites: [CITE.digiovanni2003],
@@ -471,7 +490,13 @@ export const HEEL_PAIN_PT: Guide = {
       h2: 'O que ajuda na dor no calcanhar pela manhã?',
       paragraphs: [
         'A dor no calcanhar nos primeiros passos da manhã é o padrão mais ligado à fascite plantar. Muitas vezes ela melhora quando você começa a se mexer, e volta depois que você fica um tempo sentado.',
-        'Duas coisas desta página miram nela. O alongamento da fáscia plantar é feito **antes de você levantar**, na beira da cama, com os dedos puxados para trás, para que os primeiros passos não sejam o seu primeiro alongamento. E a diretriz de 2023 dá às talas noturnas, usadas por 1 a 3\u00A0meses, um **A** para quem continua tendo dor nos primeiros passos da manhã. Talas noturnas são algo para conversar com um profissional de saúde. O Walkito não fornece talas.',
+        'Duas coisas desta página miram nela:',
+        {
+          list: [
+            'O alongamento da fáscia plantar é feito **antes de você levantar**, na beira da cama, com os dedos puxados para trás, para que os primeiros passos não sejam o seu primeiro alongamento.',
+            'A diretriz de 2023 dá às talas noturnas, usadas por 1 a 3\u00A0meses, um **A** para quem continua tendo dor nos primeiros passos da manhã. Talas noturnas são algo para conversar com um profissional de saúde. O Walkito não fornece talas.',
+          ],
+        },
         'O Walkito pergunta todo dia sobre a sua dor da manhã pelo mesmo motivo. A dor da manhã é o sinal mais claro de como o seu pé lidou com o dia anterior, e ela decide o quanto a sessão de hoje vai pedir de você. Mais sobre o que causa essa dor está em [dor no calcanhar pela manhã](/pt/dor-no-calcanhar-ao-acordar/).',
       ],
       cites: [CITE.guideline],
@@ -479,8 +504,9 @@ export const HEEL_PAIN_PT: Guide = {
     {
       h2: 'Descansar ou continuar correndo com dor no calcanhar?',
       paragraphs: [
-        'Se a dor no calcanhar da fascite plantar piora quando você corre, mude a carga em vez de parar tudo. A diretriz de 2023 recomenda aprender a ajustar a carga nos pés no trabalho, no esporte e no dia a dia. Essa recomendação tem grau E, o que significa que se baseia em teoria e não em ensaios. Então mantenha os alongamentos todo dia, e diminua o que deixa o calcanhar pior.',
-        'Numa manhã ruim, mantenha os alongamentos e tire as elevações de calcanhar naquele dia. A manhã seguinte mostra como foi. Se os seus primeiros passos estão claramente piores depois de uma corrida, essa corrida foi mais do que o calcanhar aguentava. O Walkito lê isso do mesmo jeito. Um dia puxado em pé transforma a próxima sessão de força em uma sessão de recuperação mais leve, e uma manhã com dor deixa a sessão mais curta sem cancelá-la.',
+        'Se a dor no calcanhar da fascite plantar piora quando você corre, **mude a carga em vez de parar tudo.** A diretriz de 2023 recomenda aprender a ajustar a carga nos pés no trabalho, no esporte e no dia a dia. Essa recomendação tem grau E, o que significa que se baseia em teoria e não em ensaios. Então mantenha os alongamentos todo dia, e diminua o que deixa o calcanhar pior.',
+        'Numa manhã ruim, mantenha os alongamentos e tire as elevações de calcanhar naquele dia. A manhã seguinte mostra como foi. Se os seus primeiros passos estão claramente piores depois de uma corrida, essa corrida foi mais do que o calcanhar aguentava.',
+        'O Walkito lê isso do mesmo jeito. Um dia puxado em pé transforma a próxima sessão de força em uma sessão de recuperação mais leve, e uma manhã com dor deixa a sessão mais curta sem cancelá-la.',
         'Pare e procure um profissional de saúde se correr dói de forma aguda ou se a dor piora semana após semana. Vale o mesmo para dor que aumenta durante as corridas depois que você aumentou a quilometragem, ou dor quando você aperta as laterais do calcanhar. As duas podem ser sinais de uma fratura por estresse, uma das outras causas de dor no calcanhar que a diretriz cita.',
       ],
       cites: [CITE.guideline],
@@ -488,8 +514,9 @@ export const HEEL_PAIN_PT: Guide = {
     {
       h2: 'Força ou alongamento: o que é melhor para fascite plantar?',
       paragraphs: [
-        'Treino de força e alongamento ajudam na fascite plantar, e o treino de força ajuda mais cedo.',
-        'Em um ensaio com 48\u00A0pessoas com fascite plantar confirmada por ultrassom, todos usaram palmilhas. Um grupo acrescentou elevações de calcanhar com carga alta dia sim, dia não. O outro alongou a fáscia plantar todo dia. Aos três meses, o grupo das elevações estava claramente à frente em dor e em função no dia a dia. Aos doze meses, os dois grupos estavam iguais. O treino de força adiantou a melhora. Não a deixou maior.',
+        'Treino de força e alongamento ajudam na fascite plantar, e **o treino de força ajuda mais cedo.**',
+        'Em um ensaio com 48\u00A0pessoas com fascite plantar confirmada por ultrassom, todos usaram palmilhas. Um grupo acrescentou elevações de calcanhar com carga alta dia sim, dia não. O outro alongou a fáscia plantar todo dia.',
+        'Aos três meses, o grupo das elevações estava claramente à frente em dor e em função no dia a dia. Aos doze meses, os dois grupos estavam iguais. O treino de força adiantou a melhora. Não a deixou maior.',
         'A diretriz apoia fazer os dois. O raciocínio estudo por estudo está na [página de evidências](/science/) (em inglês).',
       ],
       sourceNote:

@@ -25,7 +25,16 @@ export const BAREFOOT_PT: Guide = {
     {
       h2: 'O que são calçados barefoot?',
       paragraphs: [
-        'Calçados barefoot são feitos para atrapalhar o pé o mínimo possível. A maioria tem quatro características: uma sola fina, que deixa você sentir o chão, uma sola que dobra e torce com facilidade, drop zero (o calcanhar fica na mesma altura que os dedos) e uma área dos dedos larga, para os dedos poderem se abrir. Eles não têm suporte de arco e têm pouco amortecimento.',
+        'Calçados barefoot são feitos para atrapalhar o pé o mínimo possível. A maioria tem quatro características:',
+        {
+          list: [
+            'Uma sola fina, que deixa você sentir o chão.',
+            'Uma sola que dobra e torce com facilidade.',
+            'Drop zero (o calcanhar fica na mesma altura que os dedos).',
+            'Uma área dos dedos larga, para os dedos poderem se abrir.',
+          ],
+        },
+        'Eles não têm suporte de arco e têm pouco amortecimento.',
         'Os pesquisadores os chamam de calçados minimalistas. A ideia é simples: um calçado que sustenta e amortece o pé faz parte do trabalho que os pequenos músculos do pé fariam. Tire esse suporte e os músculos trabalham mais. Para quem tem dor no pé, a pergunta é se esse trabalho extra ajuda ou atrapalha.',
       ],
     },
@@ -33,10 +42,18 @@ export const BAREFOOT_PT: Guide = {
       h2: 'Calçados barefoot deixam os pés mais fortes?',
       keyFact: 'Adultos que usaram calçados minimalistas no dia a dia por seis meses ganharam em média 57,4% de força nos dedos (Curtis e colegas, 2021).',
       paragraphs: [
-        'Sim, em adultos sem dor no pé, a evidência aponta nessa direção. Em um ensaio randomizado de 2019, Ridge e colegas dividiram 57\u00A0corredores em três grupos: caminhar com calçados minimalistas, fazer exercícios de fortalecimento para os pés ou não mudar nada. O grupo da caminhada aumentou aos poucos quantos passos por dia dava com os calçados novos. Depois de cerca de dois meses, todos os músculos do pé que os pesquisadores mediram estavam maiores e mais fortes nos dois grupos ativos, e sem mudança no grupo de controle. Caminhar com os calçados funcionou mais ou menos tão bem quanto os exercícios.',
+        'Sim, em adultos sem dor no pé, a evidência aponta nessa direção. Em um ensaio randomizado de 2019, Ridge e colegas dividiram 57\u00A0corredores em três grupos:',
+        {
+          list: [
+            'Caminhar com calçados minimalistas.',
+            'Fazer exercícios de fortalecimento para os pés.',
+            'Não mudar nada.',
+          ],
+        },
+        'O grupo da caminhada aumentou aos poucos quantos passos por dia dava com os calçados novos. Depois de cerca de dois meses, todos os músculos do pé que os pesquisadores mediram estavam maiores e mais fortes nos dois grupos ativos, e sem mudança no grupo de controle. Caminhar com os calçados funcionou mais ou menos tão bem quanto os exercícios.',
         'Curtis e colegas fizeram um estudo mais longo em 2021. Vinte e dois adultos usaram calçados minimalistas no dia a dia (não para correr) por seis meses, e 24 mantiveram os calçados de sempre. A força dos dedos aumentou em média 57,4% em quem fez a troca. O estudo não foi randomizado e só incluiu pessoas sem problemas recentes na perna ou no pé.',
         'Uma revisão de 2025 com 28\u00A0ensaios, de Peters-Dickie e colegas, encontrou que os calçados minimalistas aumentaram a força dos dedos menores. Ela classificou a certeza da evidência como baixa a muito baixa.',
-        'Músculos do pé mais fortes não são a mesma coisa que menos dor no pé. Nenhum desses estudos mediu dor ou incluiu pessoas com algum problema no pé. Para uma série completa de exercícios que fortalecem os mesmos músculos, veja [exercícios para fortalecer os pés](/pt/exercicios-para-fortalecer-os-pes/).',
+        '**Músculos do pé mais fortes não são a mesma coisa que menos dor no pé.** Nenhum desses estudos mediu dor ou incluiu pessoas com algum problema no pé. Para uma série completa de exercícios que fortalecem os mesmos músculos, veja [exercícios para fortalecer os pés](/pt/exercicios-para-fortalecer-os-pes/).',
       ],
       sourceNote:
         'Curtis 2021: força do pé medida como força isométrica máxima de flexão plantar nas articulações dos dedos, p < 0,001. Peters-Dickie 2025: 28\u00A0ensaios, 1.399\u00A0participantes.',
@@ -46,9 +63,16 @@ export const BAREFOOT_PT: Guide = {
       h2: 'Calçado barefoot faz mal? O risco está na transição',
       keyFact: 'Depois de cerca de dois meses e meio de transição para tênis de corrida minimalistas, 10 de 19 corredores mostraram estresse ósseo novo ou pior na ressonância magnética (Ridge e colegas, 2013).',
       paragraphs: [
-        'O principal risco não é o calçado. É a velocidade da troca. Os ossos e os músculos do pé, a panturrilha e o tendão de Aquiles se adaptaram aos calçados que você usa hoje e precisam de tempo para aguentar mais carga.',
-        'Ridge e colegas mostraram isso em 2013. Eles fizeram exames de imagem dos pés de 36\u00A0corredores experientes. Dezenove passaram aos poucos para tênis de corrida minimalistas ao longo de cerca de dois meses e meio, e 17 mantiveram o tênis normal. Depois, 10 dos 19 que trocaram tinham edema ósseo novo ou pior (líquido dentro do osso, um sinal inicial de estresse ósseo) em pelo menos um osso do pé, significativamente mais que os corredores que não trocaram. Os autores recomendaram que os corredores façam a transição “muito devagar e de forma gradual”.',
-        'Dois ensaios randomizados apontam para o mesmo lado. No ensaio de Ryan e colegas, com 103\u00A0corredores treinando para uma prova de 10\u00A0km ao longo de três meses, o grupo do tênis parcialmente minimalista teve 12\u00A0lesões, contra 4 no grupo do tênis normal, e o grupo do tênis totalmente minimalista relatou mais dor na canela e na panturrilha. No ensaio de seis meses de Fuller e colegas, com 61\u00A0corredores, a dor ao correr foi maior com os tênis minimalistas, claramente acima de cerca de 35\u00A0km por semana, e o risco de lesão aumentou com o peso corporal. A diferença geral de lesões (16 de 31 contra 11 de 30) pode ter sido acaso.',
+        'O principal risco não é o calçado. **É a velocidade da troca.** Os ossos e os músculos do pé, a panturrilha e o tendão de Aquiles se adaptaram aos calçados que você usa hoje e precisam de tempo para aguentar mais carga.',
+        'Ridge e colegas mostraram isso em 2013. Eles fizeram exames de imagem dos pés de 36\u00A0corredores experientes. Dezenove passaram aos poucos para tênis de corrida minimalistas ao longo de cerca de dois meses e meio, e 17 mantiveram o tênis normal.',
+        'Depois, 10 dos 19 que trocaram tinham edema ósseo novo ou pior (líquido dentro do osso, um sinal inicial de estresse ósseo) em pelo menos um osso do pé, significativamente mais que os corredores que não trocaram. Os autores recomendaram que os corredores façam a transição “muito devagar e de forma gradual”.',
+        'Dois ensaios randomizados apontam para o mesmo lado:',
+        {
+          list: [
+            'No ensaio de Ryan e colegas, com 103\u00A0corredores treinando para uma prova de 10\u00A0km ao longo de três meses, o grupo do tênis parcialmente minimalista teve 12\u00A0lesões, contra 4 no grupo do tênis normal, e o grupo do tênis totalmente minimalista relatou mais dor na canela e na panturrilha.',
+            'No ensaio de seis meses de Fuller e colegas, com 61\u00A0corredores, a dor ao correr foi maior com os tênis minimalistas, claramente acima de cerca de 35\u00A0km por semana, e o risco de lesão aumentou com o peso corporal. A diferença geral de lesões (16 de 31 contra 11 de 30) pode ter sido acaso.',
+          ],
+        },
         'Eram corredores. Caminhar põe muito menos carga no pé, e esse é um dos motivos de os estudos de força terem usado a caminhada. Se você corre e tem [dor no calcanhar](/heel-pain-runners/) (em inglês), uma troca repentina de calçado é mais uma mudança de carga de que o seu pé não precisa.',
       ],
       sourceNote:
@@ -64,9 +88,15 @@ export const BAREFOOT_PT: Guide = {
         alt: 'Um pé visto pelo lado de dentro, com a fáscia plantar destacada como uma faixa do calcanhar até a parte da frente da sola.',
       },
       paragraphs: [
-        'Não há boa evidência de que calçados barefoot aliviem a fascite plantar (dor onde a faixa grossa embaixo do pé se prende no calcanhar). Também não há ensaio mostrando que eles a causem. As afirmações fortes, para um lado ou para o outro, que circulam na internet vêm na maioria de vendedores de calçados e de palmilhas.',
-        'Veja o que já foi testado. Em um ensaio randomizado de 2026, Xu e colegas deram a adultos com fascite plantar cerca de dois meses de exercícios para os pés, e 34 chegaram ao fim. Cerca de metade também usou calçados minimalistas. A força dos dedos aumentou nos dois grupos, e acrescentar os calçados não aumentou isso de forma clara. O equilíbrio não mudou em nenhum dos grupos. Este artigo não avaliou a dor, e o fabricante forneceu os calçados.',
-        'Em um ensaio pequeno de 2022 com 36\u00A0mulheres com fascite plantar, Ribeiro e colegas compararam calçados minimalistas flexíveis sozinhos, os mesmos calçados mais uma palmilha sob medida e a orientação habitual sobre calçados, ao longo de seis meses. Só o grupo da palmilha teve claramente menos dor no calcanhar que o grupo da orientação habitual. Uma série de casos de 2022 com 20\u00A0corredores relatou menos dor depois de cerca de um mês e meio correndo descalço na grama, mas não tinha grupo de comparação, e um dos autores é financiado por uma marca de calçados barefoot.',
+        '**Não há boa evidência de que calçados barefoot aliviem a fascite plantar** (dor onde a faixa grossa embaixo do pé se prende no calcanhar). Também não há ensaio mostrando que eles a causem. As afirmações fortes, para um lado ou para o outro, que circulam na internet vêm na maioria de vendedores de calçados e de palmilhas.',
+        'Veja o que já foi testado:',
+        {
+          list: [
+            'Em um ensaio randomizado de 2026, Xu e colegas deram a adultos com fascite plantar cerca de dois meses de exercícios para os pés, e 34 chegaram ao fim. Cerca de metade também usou calçados minimalistas. A força dos dedos aumentou nos dois grupos, e acrescentar os calçados não aumentou isso de forma clara. O equilíbrio não mudou em nenhum dos grupos. Este artigo não avaliou a dor, e o fabricante forneceu os calçados.',
+            'Em um ensaio pequeno de 2022 com 36\u00A0mulheres com fascite plantar, Ribeiro e colegas compararam calçados minimalistas flexíveis sozinhos, os mesmos calçados mais uma palmilha sob medida e a orientação habitual sobre calçados, ao longo de seis meses. Só o grupo da palmilha teve claramente menos dor no calcanhar que o grupo da orientação habitual.',
+            'Uma série de casos de 2022 com 20\u00A0corredores relatou menos dor depois de cerca de um mês e meio correndo descalço na grama, mas não tinha grupo de comparação, e um dos autores é financiado por uma marca de calçados barefoot.',
+          ],
+        },
         'A diretriz americana de 2023 para dor no calcanhar recomenda o alongamento da panturrilha e da fáscia plantar (grau A) e o treino de força (grau B). Ela não recomenda calçados minimalistas e inclui calçados que reduzem a carga entre as orientações para os pacientes. Se o seu calcanhar dói agora, comece pelos [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) e veja [palmilhas ou exercícios](/pt/palmilhas-ou-exercicios/) para entender o que um suporte embaixo do pé pode e não pode fazer.',
       ],
       cites: [CITE.xuFrames, CITE.ribeiroShoes, CITE.macgabhannGrass, CITE.guideline],
@@ -74,7 +104,8 @@ export const BAREFOOT_PT: Guide = {
     {
       h2: 'Andar descalço em casa tem problema se o calcanhar dói?',
       paragraphs: [
-        'Cuidado com pisos duros, principalmente logo de manhã. Nenhum ensaio testou andar descalço em casa para dor no calcanhar, então este é um conselho de cautela, não uma regra testada. Porcelanato ou madeira não amortecem nada o calcanhar, e os primeiros passos depois do repouso são quando a fascite plantar costuma doer mais. A nossa página [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) sugere um alongamento antes de ficar em pé e algo nos pés para esses primeiros passos.',
+        '**Cuidado com pisos duros, principalmente logo de manhã.** Nenhum ensaio testou andar descalço em casa para dor no calcanhar, então este é um conselho de cautela, não uma regra testada.',
+        'Porcelanato ou madeira não amortecem nada o calcanhar, e os primeiros passos depois do repouso são quando a fascite plantar costuma doer mais. A nossa página [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) sugere um alongamento antes de ficar em pé e algo nos pés para esses primeiros passos.',
         'O amortecimento embaixo do calcanhar pode fazer diferença. Em um estudo de 2023, Landorf e colegas compararam 50\u00A0pessoas com dor na sola do calcanhar com 25\u00A0pessoas parecidas sem essa dor. As que tinham dor no calcanhar ficavam em pé 3,4\u00A0horas a mais por dia e usavam calçados com o calcanhar mais duro. Isso mostra uma associação, não uma causa.',
         'Uma dor profunda no centro do calcanhar, que piora descalço em chão duro, também pode vir do coxim gorduroso do calcanhar (a almofada de gordura embaixo do osso do calcanhar). Veja [síndrome do coxim gorduroso do calcanhar](/pt/sindrome-coxim-gorduroso-calcanhar/) para esse padrão.',
         'Períodos curtos descalço na grama ou na areia são mais suaves. Se eles aumentam a dor no calcanhar na manhã seguinte, foi demais.',
@@ -90,10 +121,17 @@ export const BAREFOOT_PT: Guide = {
         alt: 'Três pés vistos pelo lado de dentro: um pé chato com o arco encostado no chão, um arco típico com um pequeno vão e um arco alto com um vão grande.',
       },
       paragraphs: [
-        'Há indícios, mas nenhum ensaio. Holowka e colegas compararam 75\u00A0homens tarahumaras, no México, que usam sandálias finas a maior parte da vida, com 26\u00A0homens dos Estados Unidos que usam calçados comuns. Os que usavam sandálias tinham arcos mais altos e mais rígidos e músculos maiores ao longo das bordas de dentro e de fora do pé. Só um dos 75 tinha arco baixo, contra 8 dos 26 americanos (31%).',
+        '**Há indícios, mas nenhum ensaio.** Holowka e colegas compararam 75\u00A0homens tarahumaras, no México, que usam sandálias finas a maior parte da vida, com 26\u00A0homens dos Estados Unidos que usam calçados comuns. Os que usavam sandálias tinham arcos mais altos e mais rígidos e músculos maiores ao longo das bordas de dentro e de fora do pé. Só um dos 75 tinha arco baixo, contra 8 dos 26 americanos (31%).',
         'Um levantamento mais antigo com 2.300\u00A0crianças na Índia, feito por Rao e Joseph em 1992, encontrou pé chato em 8,6% das crianças que usavam calçados e em 2,8% das que não usavam. O pé chato era mais comum nas crianças que usavam calçados fechados.',
         'Os dois estudos comparam grupos que são diferentes em muitos aspectos, então não conseguem mostrar que calçados causam pé chato, nem que calçados novos vão levantar o arco de um adulto. Nenhum ensaio testou isso.',
-        'O que importa mais é o tipo de pé chato. Um pé chato flexível (o arco volta quando você senta ou fica na ponta dos pés) normalmente pode receber carga e ser fortalecido, e uma transição gradual para calçados mais baixos é razoável se os seus pés se sentem bem. Um pé chato rígido, ou um que dói, que está ficando mais chato ou que é pior de um lado, precisa primeiro de um profissional de saúde. A nossa página [pé chato](/pt/pe-chato/) explica a diferença.',
+        'O que importa mais é o tipo de pé chato:',
+        {
+          list: [
+            'Um pé chato flexível (o arco volta quando você senta ou fica na ponta dos pés) normalmente pode receber carga e ser fortalecido, e uma transição gradual para calçados mais baixos é razoável se os seus pés se sentem bem.',
+            'Um pé chato rígido, ou um que dói, que está ficando mais chato ou que é pior de um lado, precisa primeiro de um profissional de saúde.',
+          ],
+        },
+        'A nossa página [pé chato](/pt/pe-chato/) explica a diferença.',
       ],
       cites: [CITE.holowkaShod, CITE.raoFootwear],
     },
@@ -117,7 +155,7 @@ export const BAREFOOT_PT: Guide = {
     {
       h2: 'Como fazer a transição para calçado barefoot com segurança?',
       paragraphs: [
-        'Devagar, e guiado pela resposta dos seus pés, não pelo calendário. Nenhum estudo encontrou um cronograma que sirva para todo mundo. Os estudos de força aumentaram o número de passos aos poucos e não deixaram as pessoas correr com os calçados novos. Os ensaios de corrida viram mais dor e mais estresse ósseo mesmo com planos graduais.',
+        '**Devagar, e guiado pela resposta dos seus pés, não pelo calendário.** Nenhum estudo encontrou um cronograma que sirva para todo mundo. Os estudos de força aumentaram o número de passos aos poucos e não deixaram as pessoas correr com os calçados novos. Os ensaios de corrida viram mais dor e mais estresse ósseo mesmo com planos graduais.',
       ],
       bullets: [
         'Caminhe antes de correr. Comece com períodos curtos de caminhada do dia a dia, usando os calçados de sempre no resto do dia.',

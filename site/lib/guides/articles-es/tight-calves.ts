@@ -14,7 +14,8 @@ export const TIGHT_CALVES_ES: Guide = {
   lede:
     'Tener las pantorrillas tensas suele significar que los músculos se sienten rígidos o que el tobillo no se dobla lo suficiente. Causas comunes: un aumento brusco de carrera o caminata, días largos de pie, zapatos con tacón. Estirar los dos músculos de la pantorrilla ayuda un poco: en una revisión de cinco ensayos, el rango del tobillo aumentó unos 2 a 3\u00A0grados. Las elevaciones de talón también ayudan.',
   intro: [
-    'Lo sientes en los primeros pasos al levantarte, en una subida o cuando te pones en cuclillas y los talones se quieren despegar. La parte de atrás de la pierna se siente corta y dura. Es muy común, y la mayoría de las veces no es señal de una lesión. Esta página explica por qué se tensan las pantorrillas, qué parte de la pantorrilla está tensa y qué dice la investigación sobre lo que el estiramiento y el trabajo de fuerza pueden y no pueden cambiar. Para los estiramientos paso a paso, mira [estiramiento de pantorrilla](/es/ejercicios/estiramiento-de-pantorrilla/) y [estiramiento de sóleo](/es/ejercicios/estiramiento-de-soleo/).',
+    'Lo sientes en los primeros pasos al levantarte, en una subida o cuando te pones en cuclillas y los talones se quieren despegar. La parte de atrás de la pierna se siente corta y dura. Es muy común, y la mayoría de las veces no es señal de una lesión.',
+    'Esta página explica por qué se tensan las pantorrillas, qué parte de la pantorrilla está tensa y qué dice la investigación sobre lo que el estiramiento y el trabajo de fuerza pueden y no pueden cambiar. Para los estiramientos paso a paso, mira [estiramiento de pantorrilla](/es/ejercicios/estiramiento-de-pantorrilla/) y [estiramiento de sóleo](/es/ejercicios/estiramiento-de-soleo/).',
   ],
   takeaways: [
     'En una revisión de 2006 de cinco ensayos aleatorizados, el estiramiento estático de pantorrilla aumentó la flexión del tobillo solo unos 2 a 3\u00A0grados, y los autores no estaban seguros de que ese cambio importe a las personas (Radford y colegas).',
@@ -57,7 +58,8 @@ export const TIGHT_CALVES_ES: Guide = {
         'Las pantorrillas tensas se asocian con la fascitis plantar, la causa más común de dolor de talón bajo el pie. Cuando el tobillo no se dobla lo suficiente, el pie tiene que compensar en cada paso, y pasa más tensión por el tendón de Aquiles, el talón y la fascia plantar (la banda gruesa bajo el arco).',
         'En un estudio de casos y controles de 2003, Riddle y colegas compararon a 50\u00A0personas con fascitis plantar con 100\u00A0personas comparables sin ella. Quienes no podían doblar el tobillo más allá de 0\u00A0grados tenían 23,3\u00A0veces más probabilidades de fascitis plantar que quienes podían doblarlo más de 10\u00A0grados. La flexión reducida del tobillo fue el factor de riesgo más fuerte que midieron, por encima del peso corporal y de trabajar de pie.',
         'En un estudio posterior con 254\u00A0personas con fascitis plantar, el 83\u00A0por ciento tenía la flexión del tobillo limitada, y el 57\u00A0por ciento de todos los pacientes tenía tenso solo el gastrocnemio (Patel y DiGiovanni, 2011).',
-        'Los dos estudios muestran una asociación, no que las pantorrillas tensas causen fascitis plantar. El rango tan amplio alrededor de la cifra de 23,3 también significa que el número real podría ser mucho menor. Aun así, es una de las razones por las que la guía de 2023 para el dolor de talón le da al estiramiento de pantorrilla una A, su grado más alto, para el dolor plantar de talón. Si el dolor de talón es tu problema principal, empieza en [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/) o [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/). Las pantorrillas tensas también aparecen en problemas del Aquiles y de las espinillas: mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/) y [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/).',
+        '**Los dos estudios muestran una asociación, no que las pantorrillas tensas causen fascitis plantar.** El rango tan amplio alrededor de la cifra de 23,3 también significa que el número real podría ser mucho menor. Aun así, es una de las razones por las que la guía de 2023 para el dolor de talón le da al estiramiento de pantorrilla una A, su grado más alto, para el dolor plantar de talón.',
+        'Si el dolor de talón es tu problema principal, empieza en [ejercicios para la fascitis plantar](/es/ejercicios-fascitis-plantar/) o [dolor de talón al levantarse](/es/dolor-de-talon-al-levantarse/). Las pantorrillas tensas también aparecen en problemas del Aquiles y de las espinillas: mira [ejercicios para la tendinitis de Aquiles](/es/ejercicios-tendinitis-aquiles/) y [ejercicios para la periostitis tibial](/es/ejercicios-periostitis-tibial/).',
       ],
       sourceNote:
         'Riddle 2003: razón de probabilidades 23,3 (IC 95\u00A0% 4,3 a 124,4) para una dorsiflexión de 0\u00A0grados o menos frente a más de 10\u00A0grados, ajustada. Patel 2011: 211 de 254 tenían dorsiflexión limitada, 145 de 254 contractura aislada del gastrocnemio, 66 de 254 contractura de gastrocnemio y sóleo.',
@@ -67,7 +69,15 @@ export const TIGHT_CALVES_ES: Guide = {
       h2: '¿El estiramiento de verdad afloja las pantorrillas tensas?',
       keyFact: 'Una revisión de 2006 de cinco ensayos aleatorizados encontró que estirar la pantorrilla aumentó la flexión del tobillo unos 2 a 3\u00A0grados, y los autores no estaban seguros de si ese cambio es clínicamente importante (Radford y colegas).',
       paragraphs: [
-        'El estiramiento sí afloja las pantorrillas tensas, pero menos de lo que la mayoría espera. En 2006, Radford y colegas combinaron cinco ensayos aleatorizados que compararon el estiramiento estático de pantorrilla (sostener un estiramiento sin moverse) con no estirar. La flexión del tobillo aumentó unos 2\u00A0grados después de un total de 15\u00A0minutos de estiramiento o menos, unos 3\u00A0grados después de 15 a 30\u00A0minutos y unos 2,5\u00A0grados después de más de 30\u00A0minutos. Esos minutos son el tiempo total de estiramiento sumado a lo largo del ensayo, no un solo estiramiento largo.',
+        'El estiramiento sí afloja las pantorrillas tensas, pero **menos de lo que la mayoría espera.** En 2006, Radford y colegas combinaron cinco ensayos aleatorizados que compararon el estiramiento estático de pantorrilla (sostener un estiramiento sin moverse) con no estirar. La flexión del tobillo aumentó:',
+        {
+          list: [
+            'Unos 2\u00A0grados después de un total de 15\u00A0minutos de estiramiento o menos.',
+            'Unos 3\u00A0grados después de 15 a 30\u00A0minutos.',
+            'Unos 2,5\u00A0grados después de más de 30\u00A0minutos.',
+          ],
+        },
+        'Esos minutos son el tiempo total de estiramiento sumado a lo largo del ensayo, no un solo estiramiento largo.',
         'Los autores calificaron la ganancia de pequeña y dijeron que no estaba claro si importa a las personas. De eso salen dos cosas. Primero, estirar durante poco tiempo no va a transformar tu tobillo. Segundo, la sensación de soltura después de estirar es real, pero en parte puede deberse a que toleras mejor el estiramiento, no a que el músculo se alargue.',
         'El estiramiento también hace menos de lo que mucha gente espera en otros aspectos. En un ensayo con 1538\u00A0reclutas del ejército durante tres meses de entrenamiento, un estiramiento de 20\u00A0segundos de seis grupos musculares de las piernas en cada calentamiento no redujo las lesiones de forma relevante (Pope y colegas, 2000). Una revisión Cochrane de 12\u00A0estudios encontró que estirar antes o después del ejercicio redujo el dolor muscular del día siguiente solo entre medio punto y 1\u00A0punto en una escala de 100\u00A0puntos (Herbert y colegas, 2011).',
         'Así que estira porque se siente bien, porque ayuda un poco a un tobillo rígido y porque la guía de dolor de talón lo respalda para el dolor plantar de talón. No esperes que prevenga todas las lesiones ni que borre el dolor muscular.',
@@ -80,9 +90,18 @@ export const TIGHT_CALVES_ES: Guide = {
       h2: '¿Conviene fortalecer las pantorrillas tensas en vez de estirarlas?',
       keyFact: 'Una revisión de 2021 de 11\u00A0ensayos aleatorizados con 452\u00A0personas no encontró una diferencia significativa en la mejora del rango de movimiento entre el entrenamiento de fuerza y el estiramiento (Afonso y colegas).',
       paragraphs: [
-        'Fortalecer las pantorrillas tensas es buena idea, y no tienes que elegir entre una cosa y la otra. En 2021, Afonso y colegas combinaron 11\u00A0ensayos aleatorizados con 452\u00A0personas que compararon el entrenamiento de fuerza con el estiramiento. El rango de movimiento mejoró más o menos igual con los dos. Los ensayos eran muy distintos entre sí y abarcaban muchas articulaciones, no solo el tobillo, así que tómalo como una pista fuerte, no como una respuesta final.',
-        'La fuerza importa por otra razón. Una pantorrilla que se cansa pronto se siente tensa antes. Las elevaciones de talón con recorrido completo, en las que bajas los talones hasta abajo y subes hasta arriba, cargan el músculo en toda su longitud. Si tus pantorrillas se sienten tensas cada vez que caminas o corres más de lo normal, aumentar su capacidad suele ser el paso más útil a largo plazo. Puedes revisar la resistencia de tu pantorrilla con el [test de elevación de talón](/es/test-de-elevacion-de-talon/).',
-        'Una combinación sensata para la mayoría: estira los dos músculos de la pantorrilla, abre el tobillo con el balanceo de rodilla sobre los dedos y agrega elevaciones de talón unas cuantas veces por semana. Walkito empieza con 2\u00A0series de 30\u00A0segundos para cada estiramiento y 3\u00A0series de 10 para las elevaciones de talón con dos pies.',
+        'Fortalecer las pantorrillas tensas es buena idea, y **no tienes que elegir entre una cosa y la otra.** En 2021, Afonso y colegas combinaron 11\u00A0ensayos aleatorizados con 452\u00A0personas que compararon el entrenamiento de fuerza con el estiramiento. El rango de movimiento mejoró más o menos igual con los dos. Los ensayos eran muy distintos entre sí y abarcaban muchas articulaciones, no solo el tobillo, así que tómalo como una pista fuerte, no como una respuesta final.',
+        'La fuerza importa por otra razón. Una pantorrilla que se cansa pronto se siente tensa antes. Las elevaciones de talón con recorrido completo, en las que bajas los talones hasta abajo y subes hasta arriba, cargan el músculo en toda su longitud.',
+        'Si tus pantorrillas se sienten tensas cada vez que caminas o corres más de lo normal, aumentar su capacidad suele ser el paso más útil a largo plazo. Puedes revisar la resistencia de tu pantorrilla con el [test de elevación de talón](/es/test-de-elevacion-de-talon/).',
+        'Una combinación sensata para la mayoría:',
+        {
+          list: [
+            'Estira los dos músculos de la pantorrilla.',
+            'Abre el tobillo con el balanceo de rodilla sobre los dedos.',
+            'Agrega elevaciones de talón unas cuantas veces por semana.',
+          ],
+        },
+        'Walkito empieza con 2\u00A0series de 30\u00A0segundos para cada estiramiento y 3\u00A0series de 10 para las elevaciones de talón con dos pies.',
       ],
       sourceNote:
         'Afonso 2021: tamaño del efecto combinado -0,22 (IC 95\u00A0% -0,55 a 0,12), sin diferencia significativa entre entrenamiento de fuerza y estiramiento en el rango de movimiento.',
@@ -148,8 +167,16 @@ export const TIGHT_CALVES_ES: Guide = {
     {
       h2: '¿Las pantorrillas tensas se deben a deshidratación o calambres?',
       paragraphs: [
-        'A la deshidratación se le culpa mucho de las pantorrillas tensas y los calambres, pero la evidencia que encontramos no lo respalda bien. En 2011, Schwellnus y colegas siguieron a 210\u00A0triatletas de Ironman. Los 43 que tuvieron calambres no mostraron cambios distintos en el peso corporal ni en los niveles de sales en la sangre frente a quienes no los tuvieron. Las dos cosas que predijeron los calambres fueron competir más rápido y haber tenido calambres antes. Eso apunta a músculos cansados y muy exigidos, no a falta de agua o de sal. Fue un solo grupo de atletas de resistencia, así que no resuelve la pregunta para todos, pero es más sólido que lo que se afirma en las páginas de productos.',
-        'Los calambres nocturnos son otra situación, y la investigación se contradice. En un ensayo de 2012 con 80\u00A0adultos mayores de 55\u00A0años, estirar las pantorrillas y los isquiotibiales cada noche antes de dormir durante cerca de mes y medio redujo los calambres en 1,2 por noche más que no hacer nada, y los hizo menos dolorosos (Hallegraeff y colegas). Un ensayo anterior de 2005 con 191\u00A0personas que ya tomaban quinina encontró que el consejo de estirar no cambió los calambres a los tres meses (Coppin y colegas). Un estiramiento suave de pantorrilla antes de dormir es barato y de bajo riesgo, así que es razonable probarlo, pero puede que no te funcione.',
+        'A la deshidratación se le culpa mucho de las pantorrillas tensas y los calambres, pero **la evidencia que encontramos no lo respalda bien.** En 2011, Schwellnus y colegas siguieron a 210\u00A0triatletas de Ironman. Los 43 que tuvieron calambres no mostraron cambios distintos en el peso corporal ni en los niveles de sales en la sangre frente a quienes no los tuvieron. Las dos cosas que predijeron los calambres fueron competir más rápido y haber tenido calambres antes.',
+        'Eso apunta a músculos cansados y muy exigidos, no a falta de agua o de sal. Fue un solo grupo de atletas de resistencia, así que no resuelve la pregunta para todos, pero es más sólido que lo que se afirma en las páginas de productos.',
+        'Los calambres nocturnos son otra situación, y la investigación se contradice:',
+        {
+          list: [
+            'En un ensayo de 2012 con 80\u00A0adultos mayores de 55\u00A0años, estirar las pantorrillas y los isquiotibiales cada noche antes de dormir durante cerca de mes y medio redujo los calambres en 1,2 por noche más que no hacer nada, y los hizo menos dolorosos (Hallegraeff y colegas).',
+            'Un ensayo anterior de 2005 con 191\u00A0personas que ya tomaban quinina encontró que el consejo de estirar no cambió los calambres a los tres meses (Coppin y colegas).',
+          ],
+        },
+        'Un estiramiento suave de pantorrilla antes de dormir es barato y de bajo riesgo, así que es razonable probarlo, pero puede que no te funcione.',
         'Si los calambres son frecuentes, nuevos o vienen con otros síntomas, habla con un médico. Algunos medicamentos y algunas enfermedades pueden causarlos.',
       ],
       sourceNote:
@@ -159,8 +186,24 @@ export const TIGHT_CALVES_ES: Guide = {
     {
       h2: '¿Cómo evitar que las pantorrillas se tensen al correr o estar de pie?',
       paragraphs: [
-        'Las pantorrillas que se tensan al correr o al estar de pie suelen necesitar un cambio en la carga, no solo más estiramiento. Si corres, aumenta tu distancia semanal poco a poco, agrega subidas despacio y dale tiempo a un par nuevo de tenis con menos drop antes de hacer carreras largas. La página de [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) explica la carga con más detalle.',
-        'Si estás de pie todo el día, cambia el peso de pierna seguido, toma pausas cortas para caminar y haz unas elevaciones de talón y un estiramiento en tu descanso. Mira [dolor de pies por estar de pie](/es/dolor-de-pies-por-estar-de-pie/).',
+        'Las pantorrillas que se tensan al correr o al estar de pie **suelen necesitar un cambio en la carga, no solo más estiramiento.** Si corres:',
+        {
+          list: [
+            'Aumenta tu distancia semanal poco a poco.',
+            'Agrega subidas despacio.',
+            'Dale tiempo a un par nuevo de tenis con menos drop antes de hacer carreras largas.',
+          ],
+        },
+        'La página de [dolor de talón en corredores](/es/dolor-de-talon-en-corredores/) explica la carga con más detalle.',
+        'Si estás de pie todo el día:',
+        {
+          list: [
+            'Cambia el peso de pierna seguido.',
+            'Toma pausas cortas para caminar.',
+            'Haz unas elevaciones de talón y un estiramiento en tu descanso.',
+          ],
+        },
+        'Mira [dolor de pies por estar de pie](/es/dolor-de-pies-por-estar-de-pie/).',
         'Si usas tacones casi todos los días, no tienes que dejarlos. Alterna con días de zapato plano y estira los dos músculos de la pantorrilla en la noche. Ganar fuerza en la pantorrilla con el tiempo le facilita aguantar lo que le pidas.',
       ],
     },

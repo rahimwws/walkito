@@ -54,7 +54,7 @@ export const ICE_HEAT_PT: Guide = {
         alt: 'Um pé visto pelo lado de dentro, com a fáscia plantar destacada como uma faixa do calcanhar até os dedos.',
       },
       paragraphs: [
-        'A fascite plantar de longa duração normalmente não é um tecido inflamado do jeito que uma torção recente é. O “-ite” do nome quer dizer inflamação, e é por isso que tantas páginas mandam pôr gelo. Mas quando Lemont e colegas analisaram, em 2003, o tecido de 50\u00A0casos de cirurgia por fascite plantar crônica, encontraram fáscia desgastada, esfiapada e degenerada, e nenhum sinal de inflamação. Eles sugeriram chamar a condição de fasciose, ou seja, uma faixa degenerada, não inflamada.',
+        '**A fascite plantar de longa duração normalmente não é um tecido inflamado do jeito que uma torção recente é.** O “-ite” do nome quer dizer inflamação, e é por isso que tantas páginas mandam pôr gelo. Mas quando Lemont e colegas analisaram, em 2003, o tecido de 50\u00A0casos de cirurgia por fascite plantar crônica, encontraram fáscia desgastada, esfiapada e degenerada, e nenhum sinal de inflamação. Eles sugeriram chamar a condição de fasciose, ou seja, uma faixa degenerada, não inflamada.',
         'Duas ressalvas acompanham esse achado. Eram os casos mais difíceis, graves o bastante para precisar de cirurgia, então a dor no calcanhar no começo pode ser diferente. E o estudo só descreveu o tecido. Ele não testou o gelo.',
         'Mas isso muda o motivo para usar gelo. Se a fáscia está principalmente desgastada e sobrecarregada, o frio não está “apagando um incêndio”. Ele diminui a dor por um tempo, o que continua sendo útil. O que ajuda um tecido desgastado a se adaptar é a carga gradual: alongamento e fortalecimento.',
       ],
@@ -64,9 +64,14 @@ export const ICE_HEAT_PT: Guide = {
       h2: 'Gelo ajuda na fascite plantar? O que os ensaios encontraram',
       keyFact: 'Em um ensaio com 30\u00A0pessoas, a dor caiu de 7,7 para 3,5 de 10 com uma bolinha de tênis congelada mais alongamento, contra 7,6 para 6,7 só com alongamento (Shinde e Patil, 2026).',
       paragraphs: [
-        'O gelo provavelmente alivia a dor da fascite plantar por um tempo curto, mas pouquíssimos ensaios o testaram, e nenhum comparou gelo com não fazer nada. Veja o que existe.',
-        'Em um ensaio de 2014 com 102\u00A0pessoas com fascite plantar havia mais de seis meses, os dois grupos fizeram 10\u00A0sessões diárias de 20\u00A0minutos com um aparelho de clínica: só frio, ou frio mais ultrassom. Os dois melhoraram, e o grupo combinado foi melhor até os 18\u00A0meses (Costantino e colegas). O frio era a comparação, então o ensaio não consegue dizer quanto o frio em si fez. Um ensaio de 2023 com 36\u00A0pessoas tinha a mesma lacuna: um grupo de “crioalongamento”, rolando o pé numa bolinha de tênis congelada, melhorou em 7\u00A0dias, mas os dois grupos sem frio também melhoraram (Jadhav e Gurudut).',
-        'O teste mais direto é pequeno. Em um estudo de 2026 com 30\u00A0pessoas, o grupo que acrescentou uma bolinha de tênis congelada ao alongamento por dois meses foi de 7,7 para 3,5 numa escala de dor de 0 a 10, enquanto o grupo que só alongava foi de 7,6 para 6,7 (Shinde e Patil). Parece uma diferença grande, mas o artigo não diz claramente como as pessoas foram divididas nos grupos, e o grupo da bolinha congelada também recebeu a pressão da rolagem, então não dá para separar o frio da massagem.',
+        '**O gelo provavelmente alivia a dor da fascite plantar por um tempo curto**, mas pouquíssimos ensaios o testaram, e nenhum comparou gelo com não fazer nada. Veja o que existe:',
+        {
+          list: [
+            'Em um ensaio de 2014 com 102\u00A0pessoas com fascite plantar havia mais de seis meses, os dois grupos fizeram 10\u00A0sessões diárias de 20\u00A0minutos com um aparelho de clínica: só frio, ou frio mais ultrassom. Os dois melhoraram, e o grupo combinado foi melhor até os 18\u00A0meses (Costantino e colegas). O frio era a comparação, então o ensaio não consegue dizer quanto o frio em si fez.',
+            'Um ensaio de 2023 com 36\u00A0pessoas tinha a mesma lacuna: um grupo de “crioalongamento”, rolando o pé numa bolinha de tênis congelada, melhorou em 7\u00A0dias, mas os dois grupos sem frio também melhoraram (Jadhav e Gurudut).',
+            'O teste mais direto é pequeno. Em um estudo de 2026 com 30\u00A0pessoas, o grupo que acrescentou uma bolinha de tênis congelada ao alongamento por dois meses foi de 7,7 para 3,5 numa escala de dor de 0 a 10, enquanto o grupo que só alongava foi de 7,6 para 6,7 (Shinde e Patil). Parece uma diferença grande, mas o artigo não diz claramente como as pessoas foram divididas nos grupos, e o grupo da bolinha congelada também recebeu a pressão da rolagem, então não dá para separar o frio da massagem.',
+          ],
+        },
         'Fora do pé, o quadro é parecido. Uma revisão de 2004 com 22\u00A0ensaios sobre gelo em lesões recentes, como torções de tornozelo, deu a eles uma qualidade média de 3,4 de 10 e não encontrou um melhor método nem um melhor tempo para aplicar gelo. O único sinal, e bem fraco, favoreceu gelo mais exercício depois de torções de tornozelo e cirurgias (Bleakley e colegas).',
       ],
       sourceNote: 'Costantino 2014: ensaio randomizado simples-cego, crioultrassom contra crioterapia, dor numa escala visual analógica. Jadhav 2023: ensaio randomizado, 12 por grupo, Numerical Pain Rating Scale e Foot Function Index no dia 7. Shinde 2026: 15 por grupo, NPRS e Foot Function Index, alocação descrita como “técnica de amostragem aleatória”. Bleakley 2004: escore PEDro médio de 3,4/10.',
@@ -76,7 +81,8 @@ export const ICE_HEAT_PT: Guide = {
       h2: 'Calor é bom para fascite plantar?',
       keyFact: 'Uma revisão Cochrane de 9\u00A0ensaios e 1.117\u00A0pessoas encontrou evidência moderada, vinda de alguns desses ensaios, de um pequeno alívio da dor no curto prazo com faixas térmicas para dor lombar, e evidência insuficiente para avaliar o frio (French e colegas, 2006).',
       paragraphs: [
-        'O calor não tem problema na fascite plantar se fizer você se sentir bem, e a ideia de que ele “piora a inflamação” não tem nenhum ensaio por trás. O único ensaio sobre calor que a diretriz de 2023 encontrou foi pequeno: 20\u00A0pessoas com dor na sola do pé receberam, por sorteio, um adesivo térmico ou um adesivo falso sobre pontos-gatilho (pontos sensíveis no músculo). A dor caiu no grupo do calor, mas não no grupo do adesivo falso (Petrofsky e colegas, 2020). O adesivo ficou cerca de quatro horas, e a dor foi medida logo depois, então o estudo só fala de alívio de curto prazo.',
+        '**O calor não tem problema na fascite plantar se fizer você se sentir bem**, e a ideia de que ele “piora a inflamação” não tem nenhum ensaio por trás.',
+        'O único ensaio sobre calor que a diretriz de 2023 encontrou foi pequeno: 20\u00A0pessoas com dor na sola do pé receberam, por sorteio, um adesivo térmico ou um adesivo falso sobre pontos-gatilho (pontos sensíveis no músculo). A dor caiu no grupo do calor, mas não no grupo do adesivo falso (Petrofsky e colegas, 2020). O adesivo ficou cerca de quatro horas, e a dor foi medida logo depois, então o estudo só fala de alívio de curto prazo.',
         'A melhor evidência geral sobre calor vem da dor nas costas, não dos pés. Uma revisão Cochrane (um resumo cuidadoso de ensaios) de 9\u00A0ensaios e 1.117\u00A0pessoas encontrou evidência moderada, vinda de alguns desses ensaios, de que faixas térmicas dão uma queda pequena e de curto prazo na dor lombar recente, e de que somar exercício ajudou mais. Para o frio, ela encontrou só três estudos de baixa qualidade e não tirou conclusões (French e colegas, 2006).',
         'O calor leva mais sangue para a região e deixa o tecido um pouco mais maleável. O frio diminui o fluxo de sangue e reduz a dor. Uma revisão de 2015 observou que a maioria das orientações sobre os dois se baseia na experiência, com pouca evidência de ensaios (Malanga e colegas).',
       ],
@@ -86,8 +92,9 @@ export const ICE_HEAT_PT: Guide = {
       h2: 'Vale usar calor antes de alongar?',
       keyFact: 'Em 36\u00A0estudos com 1.301\u00A0pessoas sem lesão, calor mais alongamento melhorou a amplitude de movimento mais que só alongar (Bleakley e Costello, 2013).',
       paragraphs: [
-        'Aquecer o pé antes de alongar é uma escolha razoável, e tem mais apoio que pôr gelo antes de alongar. Uma revisão de 2013 com 36\u00A0estudos em 1.301\u00A0pessoas sem lesão encontrou que o calor aumentou a amplitude de movimento, e que calor mais alongamento funcionou melhor que só alongar. Os dados sobre o frio foram conflitantes. Todos os estudos tinham alto risco de viés, e nenhum incluiu pessoas com dor no calcanhar, então veja isso como uma ideia sensata, não como um plano testado para fascite plantar.',
-        'Aquecer pode ser simples. Um banho quente, ou alguns minutos com os pés na água morna, antes do alongamento da fáscia plantar e do alongamento de panturrilha. De manhã, porém, não espere aquecer para alongar. O alongamento dos primeiros passos é para ser feito antes de o pé receber peso, na beira da cama. [Dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) mostra essa rotina passo a passo.',
+        '**Aquecer o pé antes de alongar é uma escolha razoável**, e tem mais apoio que pôr gelo antes de alongar. Uma revisão de 2013 com 36\u00A0estudos em 1.301\u00A0pessoas sem lesão encontrou que o calor aumentou a amplitude de movimento, e que calor mais alongamento funcionou melhor que só alongar. Os dados sobre o frio foram conflitantes. Todos os estudos tinham alto risco de viés, e nenhum incluiu pessoas com dor no calcanhar, então veja isso como uma ideia sensata, não como um plano testado para fascite plantar.',
+        'Aquecer pode ser simples. Um banho quente, ou alguns minutos com os pés na água morna, antes do alongamento da fáscia plantar e do alongamento de panturrilha.',
+        'De manhã, porém, não espere aquecer para alongar. O alongamento dos primeiros passos é para ser feito antes de o pé receber peso, na beira da cama. [Dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) mostra essa rotina passo a passo.',
       ],
       cites: [CITE.bleakleyThermal],
     },
@@ -95,7 +102,15 @@ export const ICE_HEAT_PT: Guide = {
       h2: 'Banho de contraste ajuda na fascite plantar?',
       paragraphs: [
         'O banho de contraste, alternar o pé entre água morna e fria, não tem nenhum ensaio por trás para fascite plantar que a gente tenha encontrado. Uma revisão sistemática de 2009 sobre banho de contraste incluiu 10\u00A0estudos em voluntários sem lesão e em pessoas com artrite reumatoide, diabetes ou lesões no pé e no tornozelo. Ela encontrou que alternar a temperatura pode aumentar o fluxo de sangue na pele, mas nenhuma ligação com melhor função foi mostrada (Breger Stanton e colegas).',
-        'Você vai ver muitas receitas diferentes na internet: dois minutos no frio e 30\u00A0segundos no morno, um minuto no frio e três minutos no morno, sempre terminar no frio. Nenhum desses tempos vem de um estudo. Se você gosta do banho de contraste, ele tem baixo risco para a maioria das pessoas com sensibilidade normal nos pés. Só não espere mais dele do que de água morna ou fria comum.',
+        'Você vai ver muitas receitas diferentes na internet:',
+        {
+          list: [
+            'Dois minutos no frio e 30\u00A0segundos no morno.',
+            'Um minuto no frio e três minutos no morno.',
+            'Sempre terminar no frio.',
+          ],
+        },
+        '**Nenhum desses tempos vem de um estudo.** Se você gosta do banho de contraste, ele tem baixo risco para a maioria das pessoas com sensibilidade normal nos pés. Só não espere mais dele do que de água morna ou fria comum.',
       ],
       cites: [CITE.bregerContrast],
     },
@@ -123,7 +138,8 @@ export const ICE_HEAT_PT: Guide = {
       h2: 'O que realmente ajuda a fascite plantar no longo prazo?',
       keyFact: 'Em um ensaio com 48\u00A0pessoas, elevações de calcanhar lentas com uma toalha embaixo dos dedos aliviaram a dor mais rápido que só alongar aos três meses, e os dois grupos estavam iguais aos doze meses (Rathleff e colegas, 2015).',
       paragraphs: [
-        'A parte dos cuidados com a fascite plantar com a evidência mais forte é o exercício, não a temperatura. A diretriz de 2023 dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, **A**, e ao treino de força para o pé e o tornozelo um **B**. Em um ensaio de 2003 com 101\u00A0pessoas, um alongamento da fáscia plantar ajudou mais que só alongar a panturrilha depois de cerca de dois meses (DiGiovanni e colegas). Em um ensaio de 2015 com 48\u00A0pessoas, elevações de calcanhar lentas com uma toalha embaixo dos dedos aliviaram a dor mais rápido que só alongar aos três meses, embora aos doze meses os dois grupos estivessem mais ou menos iguais (Rathleff e colegas).',
+        'A parte dos cuidados com a fascite plantar com a evidência mais forte é o exercício, não a temperatura. A diretriz de 2023 dá ao alongamento da fáscia plantar e da panturrilha o grau máximo, **A**, e ao treino de força para o pé e o tornozelo um **B**.',
+        'Em um ensaio de 2003 com 101\u00A0pessoas, um alongamento da fáscia plantar ajudou mais que só alongar a panturrilha depois de cerca de dois meses (DiGiovanni e colegas). Em um ensaio de 2015 com 48\u00A0pessoas, elevações de calcanhar lentas com uma toalha embaixo dos dedos aliviaram a dor mais rápido que só alongar aos três meses, embora aos doze meses os dois grupos estivessem mais ou menos iguais (Rathleff e colegas).',
         'Use gelo ou calor em volta desses exercícios: calor antes de alongar, gelo depois de um dia longo, se algum deles ajudar. O Walkito funciona do mesmo jeito: os alongamentos e o trabalho de panturrilha são o plano, e rolar o pé na bolinha é um passo de recuperação de 60\u00A0segundos, não a atração principal. A lista completa está em [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
       ],
       exercises: [

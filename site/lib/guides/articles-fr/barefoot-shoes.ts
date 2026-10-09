@@ -25,7 +25,16 @@ export const BAREFOOT_FR: Guide = {
     {
       h2: 'Qu’est-ce qu’une chaussure minimaliste\u00A0?',
       paragraphs: [
-        'Les chaussures minimalistes (ou barefoot) sont conçues pour gêner le pied le moins possible. La plupart ont quatre points communs\u00A0: une semelle fine à travers laquelle vous sentez le sol, une semelle qui se plie et se tord facilement, un drop zéro (le talon est à la même hauteur que les orteils) et un avant-pied large pour que les orteils puissent s’écarter. Elles n’ont ni soutien de voûte ni beaucoup d’amorti.',
+        'Les chaussures minimalistes (ou barefoot) sont conçues pour gêner le pied le moins possible. La plupart ont quatre points communs\u00A0:',
+        {
+          list: [
+            'Une semelle fine à travers laquelle vous sentez le sol.',
+            'Une semelle qui se plie et se tord facilement.',
+            'Un drop zéro (le talon est à la même hauteur que les orteils).',
+            'Un avant-pied large pour que les orteils puissent s’écarter.',
+          ],
+        },
+        'Elles n’ont ni soutien de voûte ni beaucoup d’amorti.',
         'Les chercheurs parlent de chaussures minimalistes. L’idée est simple\u00A0: une chaussure qui soutient et amortit le pied fait une partie du travail que feraient sinon les petits muscles du pied. Retirez ce soutien et les muscles travaillent davantage. Pour qui a mal au pied, la question est de savoir si ce travail supplémentaire aide ou fait du tort.',
       ],
     },
@@ -33,10 +42,18 @@ export const BAREFOOT_FR: Guide = {
       h2: 'Les chaussures minimalistes renforcent-elles les pieds\u00A0?',
       keyFact: 'Des adultes qui ont porté des chaussures minimalistes au quotidien pendant six mois ont gagné en moyenne 57,4\u00A0% de force des orteils (Curtis et coll., 2021).',
       paragraphs: [
-        'Oui, chez l’adulte sans douleur au pied, les données vont dans ce sens. Dans un essai randomisé de 2019, Ridge et ses collègues ont réparti 57\u00A0coureurs en trois groupes\u00A0: marcher en chaussures minimalistes, faire des exercices de renforcement du pied, ou ne rien changer. Le groupe marche a augmenté progressivement le nombre de pas quotidiens faits avec les nouvelles chaussures. Après environ deux mois, chaque muscle du pied mesuré par les chercheurs était plus gros et plus fort dans les deux groupes actifs, et inchangé dans le groupe témoin. Marcher avec ces chaussures a fonctionné à peu près aussi bien que les exercices.',
+        'Oui, chez l’adulte sans douleur au pied, les données vont dans ce sens. Dans un essai randomisé de 2019, Ridge et ses collègues ont réparti 57\u00A0coureurs en trois groupes\u00A0:',
+        {
+          list: [
+            'Marcher en chaussures minimalistes.',
+            'Faire des exercices de renforcement du pied.',
+            'Ne rien changer.',
+          ],
+        },
+        'Le groupe marche a augmenté progressivement le nombre de pas quotidiens faits avec les nouvelles chaussures. Après environ deux mois, chaque muscle du pied mesuré par les chercheurs était plus gros et plus fort dans les deux groupes actifs, et inchangé dans le groupe témoin. Marcher avec ces chaussures a fonctionné à peu près aussi bien que les exercices.',
         'Curtis et ses collègues ont mené une étude plus longue en 2021. Vingt-deux adultes ont porté des chaussures minimalistes au quotidien (pas pour courir) pendant six mois, et 24 ont gardé leurs chaussures habituelles. La force des orteils a augmenté de 57,4\u00A0% en moyenne chez ceux qui ont changé. L’étude n’était pas randomisée et n’incluait que des personnes sans problème récent de jambe ou de pied.',
         'Une revue de 2025 portant sur 28\u00A0essais, par Peters-Dickie et ses collègues, a montré que les chaussures minimalistes augmentaient la force des petits orteils. Elle a jugé la certitude des preuves faible à très faible.',
-        'Des muscles du pied plus forts ne veulent pas dire moins de douleur au pied. Aucune de ces études n’a mesuré la douleur ni inclus de personnes ayant un problème au pied. Pour une série complète d’exercices qui développent les mêmes muscles, voir [exercices de renforcement du pied](/fr/exercices-renforcement-pied/).',
+        '**Des muscles du pied plus forts ne veulent pas dire moins de douleur au pied.** Aucune de ces études n’a mesuré la douleur ni inclus de personnes ayant un problème au pied. Pour une série complète d’exercices qui développent les mêmes muscles, voir [exercices de renforcement du pied](/fr/exercices-renforcement-pied/).',
       ],
       sourceNote:
         'Curtis 2021\u00A0: force du pied mesurée comme la force isométrique maximale de flexion plantaire aux articulations des orteils, p < 0,001. Peters-Dickie 2025\u00A0: 28\u00A0essais, 1\u00A0399\u00A0participants.',
@@ -46,9 +63,16 @@ export const BAREFOOT_FR: Guide = {
       h2: 'Les chaussures minimalistes sont-elles dangereuses\u00A0? Le risque est dans la transition',
       keyFact: 'Après environ deux mois et demi de passage à des chaussures de course minimalistes, 10 coureurs sur 19 présentaient à l’IRM un stress osseux nouveau ou aggravé (Ridge et coll., 2013).',
       paragraphs: [
-        'Les chaussures ne sont pas le principal risque. C’est la vitesse de la transition qui l’est. Les os du pied, les muscles, le mollet et le tendon d’Achille se sont adaptés à vos chaussures actuelles et ont besoin de temps pour supporter plus de charge.',
-        'Ridge et ses collègues l’ont montré en 2013. Ils ont fait passer une IRM des pieds à 36\u00A0coureurs expérimentés. Dix-neuf sont passés progressivement à des chaussures de course minimalistes en environ deux mois et demi, et 17 ont gardé leurs chaussures habituelles. Ensuite, 10 des 19 qui avaient changé présentaient un œdème osseux nouveau ou aggravé (du liquide à l’intérieur de l’os, signe précoce de stress osseux) dans au moins un os du pied, nettement plus que les coureurs qui n’avaient pas changé. Les auteurs conseillaient aux coureurs de faire la transition «\u00A0très lentement et progressivement\u00A0».',
-        'Deux essais randomisés vont dans le même sens. Dans l’essai de Ryan et ses collègues sur 103\u00A0coureurs qui préparaient une course de 10\u00A0km sur trois mois, le groupe en chaussures partiellement minimalistes a eu 12\u00A0blessures contre 4 dans le groupe en chaussures classiques, et le groupe entièrement minimaliste a signalé plus de douleurs au tibia et au mollet. Dans l’essai de six mois de Fuller et ses collègues sur 61\u00A0coureurs, la douleur à la course était plus élevée en chaussures minimalistes, nettement au-delà d’environ 35\u00A0km par semaine, et le risque de blessure augmentait avec le poids. La différence globale de blessures (16 sur 31 contre 11 sur 30) pouvait être due au hasard.',
+        'Les chaussures ne sont pas le principal risque. **C’est la vitesse de la transition qui l’est.** Les os du pied, les muscles, le mollet et le tendon d’Achille se sont adaptés à vos chaussures actuelles et ont besoin de temps pour supporter plus de charge.',
+        'Ridge et ses collègues l’ont montré en 2013. Ils ont fait passer une IRM des pieds à 36\u00A0coureurs expérimentés. Dix-neuf sont passés progressivement à des chaussures de course minimalistes en environ deux mois et demi, et 17 ont gardé leurs chaussures habituelles.',
+        'Ensuite, 10 des 19 qui avaient changé présentaient un œdème osseux nouveau ou aggravé (du liquide à l’intérieur de l’os, signe précoce de stress osseux) dans au moins un os du pied, nettement plus que les coureurs qui n’avaient pas changé. Les auteurs conseillaient aux coureurs de faire la transition «\u00A0très lentement et progressivement\u00A0».',
+        'Deux essais randomisés vont dans le même sens\u00A0:',
+        {
+          list: [
+            'Dans l’essai de Ryan et ses collègues sur 103\u00A0coureurs qui préparaient une course de 10\u00A0km sur trois mois, le groupe en chaussures partiellement minimalistes a eu 12\u00A0blessures contre 4 dans le groupe en chaussures classiques, et le groupe entièrement minimaliste a signalé plus de douleurs au tibia et au mollet.',
+            'Dans l’essai de six mois de Fuller et ses collègues sur 61\u00A0coureurs, la douleur à la course était plus élevée en chaussures minimalistes, nettement au-delà d’environ 35\u00A0km par semaine, et le risque de blessure augmentait avec le poids. La différence globale de blessures (16 sur 31 contre 11 sur 30) pouvait être due au hasard.',
+          ],
+        },
         'Il s’agissait de coureurs. La marche charge beaucoup moins le pied, ce qui explique en partie pourquoi les études sur la force utilisaient la marche. Si vous courez et avez [mal au talon](/heel-pain-runners/) (en anglais), un changement brutal de chaussures est un changement de charge de plus dont votre pied n’a pas besoin.',
       ],
       sourceNote:
@@ -64,9 +88,15 @@ export const BAREFOOT_FR: Guide = {
         alt: 'Un pied vu du côté interne, le fascia plantaire mis en évidence comme une bande allant du talon à l’avant-pied.',
       },
       paragraphs: [
-        'Il n’existe pas de bonnes preuves que les chaussures minimalistes soulagent la fasciite plantaire (une douleur là où l’épaisse bande sous le pied s’attache au talon). Aucun essai ne montre non plus qu’elles la provoquent. Les affirmations tranchées que l’on trouve en ligne, dans un sens comme dans l’autre, viennent surtout de vendeurs de chaussures et de semelles.',
-        'Voici ce qui a été testé. Dans un essai randomisé de 2026, Xu et ses collègues ont proposé à des adultes atteints de fasciite plantaire environ deux mois d’exercices du pied, et 34 sont allés au bout. Environ la moitié portait aussi des chaussures minimalistes. La force des orteils a augmenté dans les deux groupes, et l’ajout des chaussures n’a pas apporté de gain net. L’équilibre n’a changé dans aucun groupe. Cet article ne portait pas sur la douleur, et le fabricant des chaussures les avait fournies.',
-        'Dans un petit essai de 2022 sur 36\u00A0femmes atteintes de fasciite plantaire, Ribeiro et ses collègues ont comparé des chaussures minimalistes souples seules, les mêmes chaussures plus une semelle sur mesure, et des conseils de chaussage habituels, sur six mois. Seul le groupe avec semelle avait nettement moins mal au talon que le groupe des conseils habituels. Une série de cas de 2022 sur 20\u00A0coureurs a rapporté moins de douleur après environ un mois et demi de course pieds nus sur l’herbe, mais elle n’avait pas de groupe de comparaison et l’un des auteurs est financé par une marque de chaussures minimalistes.',
+        '**Il n’existe pas de bonnes preuves que les chaussures minimalistes soulagent la fasciite plantaire** (une douleur là où l’épaisse bande sous le pied s’attache au talon). Aucun essai ne montre non plus qu’elles la provoquent. Les affirmations tranchées que l’on trouve en ligne, dans un sens comme dans l’autre, viennent surtout de vendeurs de chaussures et de semelles.',
+        'Voici ce qui a été testé\u00A0:',
+        {
+          list: [
+            'Dans un essai randomisé de 2026, Xu et ses collègues ont proposé à des adultes atteints de fasciite plantaire environ deux mois d’exercices du pied, et 34 sont allés au bout. Environ la moitié portait aussi des chaussures minimalistes. La force des orteils a augmenté dans les deux groupes, et l’ajout des chaussures n’a pas apporté de gain net. L’équilibre n’a changé dans aucun groupe. Cet article ne portait pas sur la douleur, et le fabricant des chaussures les avait fournies.',
+            'Dans un petit essai de 2022 sur 36\u00A0femmes atteintes de fasciite plantaire, Ribeiro et ses collègues ont comparé des chaussures minimalistes souples seules, les mêmes chaussures plus une semelle sur mesure, et des conseils de chaussage habituels, sur six mois. Seul le groupe avec semelle avait nettement moins mal au talon que le groupe des conseils habituels.',
+            'Une série de cas de 2022 sur 20\u00A0coureurs a rapporté moins de douleur après environ un mois et demi de course pieds nus sur l’herbe, mais elle n’avait pas de groupe de comparaison et l’un des auteurs est financé par une marque de chaussures minimalistes.',
+          ],
+        },
         'La recommandation américaine de 2023 sur la douleur au talon conseille les étirements du mollet et du fascia plantaire (note A) et le renforcement musculaire (note B). Elle ne conseille pas les chaussures minimalistes, et elle cite des chaussures qui réduisent la charge dans les conseils aux patients. Si votre talon vous fait mal en ce moment, commencez par les [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/), et voyez [semelles ou exercices](/fr/semelles-ou-exercices/) pour ce qu’un soutien sous le pied peut faire ou non.',
       ],
       cites: [CITE.xuFrames, CITE.ribeiroShoes, CITE.macgabhannGrass, CITE.guideline],
@@ -74,7 +104,8 @@ export const BAREFOOT_FR: Guide = {
     {
       h2: 'Marcher pieds nus à la maison quand on a mal au talon, est-ce un problème\u00A0?',
       paragraphs: [
-        'Méfiez-vous des sols durs, surtout au lever. Aucun essai n’a testé la marche pieds nus à la maison en cas de douleur au talon\u00A0: il s’agit d’un conseil de prudence, pas d’une règle testée. Le carrelage ou le parquet n’offrent aucun amorti au talon, et les premiers pas après le repos sont le moment où la fasciite plantaire fait en général le plus mal. Notre page [douleur au talon au réveil](/fr/douleur-talon-au-reveil/) propose un étirement avant de vous lever et quelque chose aux pieds pour ces premiers pas.',
+        '**Méfiez-vous des sols durs, surtout au lever.** Aucun essai n’a testé la marche pieds nus à la maison en cas de douleur au talon\u00A0: il s’agit d’un conseil de prudence, pas d’une règle testée.',
+        'Le carrelage ou le parquet n’offrent aucun amorti au talon, et les premiers pas après le repos sont le moment où la fasciite plantaire fait en général le plus mal. Notre page [douleur au talon au réveil](/fr/douleur-talon-au-reveil/) propose un étirement avant de vous lever et quelque chose aux pieds pour ces premiers pas.',
         'L’amorti sous le talon pourrait compter. Dans une étude de 2023, Landorf et ses collègues ont comparé 50\u00A0personnes ayant mal sous le talon à 25\u00A0personnes comparables sans douleur. Celles qui avaient mal restaient debout 3,4\u00A0heures de plus par jour et portaient des chaussures au talon plus dur. Cela montre un lien, pas une cause.',
         'Une douleur profonde au centre du talon, pire pieds nus sur un sol dur, peut aussi venir du coussinet graisseux du talon (le coussin de graisse sous l’os du talon). Voir [syndrome du coussinet graisseux du talon](/fr/syndrome-coussinet-graisseux-talon/) pour ce cas de figure.',
         'De courts moments pieds nus sur l’herbe ou le sable sont plus doux. S’ils augmentent votre douleur au talon le lendemain matin, c’était trop.',
@@ -90,10 +121,17 @@ export const BAREFOOT_FR: Guide = {
         alt: 'Trois pieds vus du côté interne\u00A0: un pied plat dont la voûte touche le sol, une voûte normale avec un petit espace, et une voûte creuse avec un grand espace.',
       },
       paragraphs: [
-        'Il y a des indices, mais aucun essai. Holowka et ses collègues ont comparé 75\u00A0hommes tarahumaras du Mexique, qui portent des sandales fines presque toute leur vie, à 26\u00A0hommes des États-Unis qui portent des chaussures classiques. Les porteurs de sandales avaient des voûtes plus hautes et plus rigides et des muscles plus gros le long des bords interne et externe du pied. Un seul des 75 avait une voûte basse, contre 8 des 26\u00A0Américains (31\u00A0%).',
+        '**Il y a des indices, mais aucun essai.** Holowka et ses collègues ont comparé 75\u00A0hommes tarahumaras du Mexique, qui portent des sandales fines presque toute leur vie, à 26\u00A0hommes des États-Unis qui portent des chaussures classiques. Les porteurs de sandales avaient des voûtes plus hautes et plus rigides et des muscles plus gros le long des bords interne et externe du pied. Un seul des 75 avait une voûte basse, contre 8 des 26\u00A0Américains (31\u00A0%).',
         'Une enquête plus ancienne sur 2\u00A0300\u00A0enfants en Inde, menée par Rao et Joseph en 1992, a trouvé des pieds plats chez 8,6\u00A0% des enfants qui portaient des chaussures et 2,8\u00A0% de ceux qui n’en portaient pas. Les pieds plats étaient les plus fréquents chez les enfants qui portaient des chaussures fermées.',
         'Les deux études comparent des groupes qui diffèrent de bien des façons\u00A0: elles ne peuvent donc pas montrer que les chaussures causent les pieds plats, ni que de nouvelles chaussures relèveront la voûte d’un adulte. Aucun essai ne l’a testé.',
-        'Ce qui compte davantage, c’est le type de pied plat. Un pied plat souple (la voûte réapparaît quand vous êtes assis ou sur la pointe des pieds) supporte en général bien la charge et le renforcement, et une transition progressive vers des chaussures plus plates est raisonnable si vos pieds vont bien. Un pied plat rigide, ou un pied plat douloureux, qui s’affaisse ou qui est plus marqué d’un côté, demande d’abord un avis médical. Notre page [pieds plats](/fr/pieds-plats/) explique la différence.',
+        'Ce qui compte davantage, c’est le type de pied plat\u00A0:',
+        {
+          list: [
+            'Un pied plat souple (la voûte réapparaît quand vous êtes assis ou sur la pointe des pieds) supporte en général bien la charge et le renforcement, et une transition progressive vers des chaussures plus plates est raisonnable si vos pieds vont bien.',
+            'Un pied plat rigide, ou un pied plat douloureux, qui s’affaisse ou qui est plus marqué d’un côté, demande d’abord un avis médical.',
+          ],
+        },
+        'Notre page [pieds plats](/fr/pieds-plats/) explique la différence.',
       ],
       cites: [CITE.holowkaShod, CITE.raoFootwear],
     },
@@ -117,7 +155,7 @@ export const BAREFOOT_FR: Guide = {
     {
       h2: 'Comment passer aux chaussures minimalistes sans risque\u00A0?',
       paragraphs: [
-        'Lentement, et selon la réaction de vos pieds, pas selon un calendrier. Aucune étude n’a trouvé de calendrier qui convienne à tout le monde. Les études sur la force augmentaient progressivement le nombre de pas et interdisaient de courir avec les nouvelles chaussures. Les essais sur la course ont observé plus de douleur et de stress osseux, même avec des plans progressifs.',
+        '**Lentement, et selon la réaction de vos pieds, pas selon un calendrier.** Aucune étude n’a trouvé de calendrier qui convienne à tout le monde. Les études sur la force augmentaient progressivement le nombre de pas et interdisaient de courir avec les nouvelles chaussures. Les essais sur la course ont observé plus de douleur et de stress osseux, même avec des plans progressifs.',
       ],
       bullets: [
         'Marchez avant de courir. Commencez par de courts moments de marche au quotidien, avec vos chaussures habituelles le reste de la journée.',

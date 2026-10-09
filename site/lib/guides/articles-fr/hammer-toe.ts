@@ -32,14 +32,29 @@ export const HAMMER_TOE_FR: Guide = {
       paragraphs: [
         'Un orteil en marteau est une déformation en flexion de l’articulation interphalangienne proximale (l’articulation du milieu) de l’un des petits orteils, le plus souvent le deuxième. L’orteil se plie vers le bas à cette articulation, tandis que le bout peut pointer vers le bas ou légèrement vers le haut. C’est l’une des déformations de l’avant-pied les plus fréquentes.',
         'La déformation vient d’un déséquilibre entre les muscles qui plient et ceux qui étendent l’orteil. Les muscles extrinsèques, les longs fléchisseurs et extenseurs qui vont de la jambe au pied, prennent le dessus sur les petits muscles intrinsèques situés dans le pied. Quand les intrinsèques s’affaiblissent, les fléchisseurs tirent l’articulation du milieu vers le bas, et les extenseurs tirent la base de l’orteil vers le haut au niveau de l’articulation métatarso-phalangienne.',
-        'Les facteurs fréquents sont les chaussures qui serrent les orteils (avant étroit, talons hauts), un deuxième orteil plus long que le gros orteil, et des problèmes comme l’hallux valgus (oignon), où le gros orteil pousse le deuxième orteil hors de sa place. Des maladies neuromusculaires peuvent aussi en être la cause.',
+        'Les facteurs fréquents sont\u00A0:',
+        {
+          list: [
+            'Les chaussures qui serrent les orteils (avant étroit, talons hauts).',
+            'Un deuxième orteil plus long que le gros orteil.',
+            'Des problèmes comme l’hallux valgus (oignon), où le gros orteil pousse le deuxième orteil hors de sa place.',
+          ],
+        },
+        'Des maladies neuromusculaires peuvent aussi en être la cause.',
       ],
       cites: [CITE.malhotra],
     },
     {
       h2: 'Quelle différence entre orteil en marteau, orteil en griffe et orteil en maillet\u00A0?',
       paragraphs: [
-        'Les trois noms décrivent quelles articulations sont pliées. Un orteil en marteau se plie à l’articulation du milieu (articulation interphalangienne proximale). Un orteil en maillet se plie à la dernière articulation (articulation interphalangienne distale), près du bout de l’orteil. Un orteil en griffe se plie à la fois à l’articulation du milieu et à la dernière, tandis que la base de l’orteil (articulation métatarso-phalangienne) se relève.',
+        'Les trois noms décrivent quelles articulations sont pliées\u00A0:',
+        {
+          list: [
+            'Un orteil en marteau se plie à l’articulation du milieu (articulation interphalangienne proximale).',
+            'Un orteil en maillet se plie à la dernière articulation (articulation interphalangienne distale), près du bout de l’orteil.',
+            'Un orteil en griffe se plie à la fois à l’articulation du milieu et à la dernière, tandis que la base de l’orteil (articulation métatarso-phalangienne) se relève.',
+          ],
+        },
         'Les orteils en griffe tendent à être plus sévères, touchent souvent plusieurs orteils des deux pieds et sont plus souvent liés à des maladies neuromusculaires. Les orteils en marteau touchent en général un seul orteil, le plus souvent le deuxième, et sont plus souvent liés aux chaussures et à la forme du pied.',
         'En pratique, les traitements se recoupent. Des chaussures plus larges, des protections et des exercices qui visent les muscles propres au pied valent pour les trois. La distinction compte surtout quand une chirurgie est envisagée, car la technique dépend des articulations touchées.',
       ],
@@ -49,7 +64,7 @@ export const HAMMER_TOE_FR: Guide = {
       h2: 'Quelle différence entre orteil en marteau souple et rigide\u00A0?',
       keyFact: 'Une étude de 2022 sur 20\u00A0personnes âgées avec un orteil en marteau ou en griffe a montré que des orthèses d’orteil en silicone moulées sur mesure réduisaient nettement la pression maximale au bout du deuxième orteil, dans les cas souples comme rigides (Formosa et coll., 2022).',
       paragraphs: [
-        'Un orteil en marteau souple garde du mouvement à l’articulation du milieu. Vous pouvez le redresser à la main. Les muscles et les tendons sont tendus, mais l’articulation n’a pas développé de rétraction fixée. C’est le stade où les mesures conservatrices ont le plus à offrir.',
+        'Un orteil en marteau souple garde du mouvement à l’articulation du milieu. Vous pouvez le redresser à la main. Les muscles et les tendons sont tendus, mais l’articulation n’a pas développé de rétraction fixée. **C’est le stade où les mesures conservatrices ont le plus à offrir.**',
         'Un orteil en marteau rigide a une rétraction fixée à l’articulation du milieu. L’articulation ne se redresse plus. À ce stade, l’exercice ne peut pas changer la position. Les objectifs deviennent de réduire les frottements (chaussures plus larges, protections d’orteil) et de prévenir cors, durillons et lésions de la peau.',
         'Une étude quasi expérimentale de 2022 sur 20\u00A0personnes âgées avec un orteil en marteau ou en griffe a montré que des orthèses d’orteil en silicone moulées sur mesure réduisaient nettement la pression maximale au bout du deuxième orteil, dans les cas souples comme rigides. À l’articulation métatarso-phalangienne, la baisse de pression n’était significative que dans le groupe rigide.',
       ],
@@ -58,7 +73,7 @@ export const HAMMER_TOE_FR: Guide = {
     {
       h2: 'L’exercice aide-t-il l’orteil en marteau\u00A0?',
       paragraphs: [
-        'La réponse honnête est qu’il n’existe aucun essai contrôlé randomisé testant des exercices spécifiquement pour l’orteil en marteau. Les exercices souvent conseillés, comme ramasser la serviette, écarter les orteils et les étirements à la main, reposent sur l’idée que renforcer les muscles propres au pied et entretenir la souplesse de l’articulation peut aider à éviter qu’une déformation souple devienne rigide.',
+        'La réponse honnête est qu’**il n’existe aucun essai contrôlé randomisé testant des exercices spécifiquement pour l’orteil en marteau.** Les exercices souvent conseillés, comme ramasser la serviette, écarter les orteils et les étirements à la main, reposent sur l’idée que renforcer les muscles propres au pied et entretenir la souplesse de l’articulation peut aider à éviter qu’une déformation souple devienne rigide.',
         'Cette logique est raisonnable. La déformation vient d’un déséquilibre musculaire\u00A0: des intrinsèques faibles et des extrinsèques relativement plus forts. Des exercices qui visent les intrinsèques peuvent rétablir une partie de cet équilibre. Mais sans essais directs, on ne sait pas quelle différence ils font ni s’ils peuvent vraiment empêcher l’évolution.',
         'Ce que l’on sait, grâce à des études sur d’autres problèmes de l’avant-pied, c’est que des exercices des muscles propres au pied comme le pied court, écarter les orteils et ramasser la serviette activent les bons muscles. Une étude IRM de Gooding et coll. (2016) a confirmé que l’exercice du pied court et l’exercice d’écartement des orteils activent de façon sélective les muscles propres au pied. Reste à savoir si cette activation se traduit par de meilleurs résultats pour l’orteil en marteau, ce qui n’a pas été testé.',
       ],
@@ -118,7 +133,14 @@ export const HAMMER_TOE_FR: Guide = {
     {
       h2: 'Les chaussures font-elles une différence\u00A0?',
       paragraphs: [
-        'Les chaussures sont l’approche conservatrice la plus conseillée pour l’orteil en marteau. Une revue sur la prise en charge des déformations des petits orteils dans EFORT Open Reviews (Malhotra et coll., 2016) plaçait l’adaptation des chaussures en tête des traitements conservateurs\u00A0: un avant large pour laisser de la place aux orteils, un avant haut pour éviter les frottements sur l’articulation pliée, et éviter les talons hauts.',
+        '**Les chaussures sont l’approche conservatrice la plus conseillée pour l’orteil en marteau.** Une revue sur la prise en charge des déformations des petits orteils dans EFORT Open Reviews (Malhotra et coll., 2016) plaçait l’adaptation des chaussures en tête des traitements conservateurs\u00A0:',
+        {
+          list: [
+            'Un avant large pour laisser de la place aux orteils.',
+            'Un avant haut pour éviter les frottements sur l’articulation pliée.',
+            'Éviter les talons hauts.',
+          ],
+        },
         'Les chaussures étroites serrent les orteils entre eux et poussent l’articulation pliée contre le dessus de la chaussure, ce qui cause cors et durillons. Les talons hauts font glisser le pied vers l’avant et tassent les orteils au bout de la chaussure. Changer de chaussures ne redressera pas un orteil en marteau rigide, mais cela réduit les frottements et la pression de chaque jour qui causent l’essentiel de la douleur.',
         'Les protections d’orteil, les manchons en gel et les orthèses en silicone peuvent amortir l’articulation pliée et répartir la pression au bout de l’orteil. L’étude de Formosa 2022 a montré que des orthèses d’orteil en silicone moulées réduisaient la pression maximale au bout du deuxième orteil, dans les déformations souples comme rigides.',
       ],
@@ -127,7 +149,7 @@ export const HAMMER_TOE_FR: Guide = {
     {
       h2: 'Peut-on corriger un orteil en marteau sans chirurgie\u00A0?',
       paragraphs: [
-        'Si l’orteil en marteau est encore souple, les mesures conservatrices, dont les exercices, les étirements, des chaussures plus larges et le strapping de l’orteil, peuvent l’empêcher d’évoluer et améliorer le confort. Attacher l’orteil atteint à son voisin avec du ruban adhésif peut le maintenir doucement dans une position plus neutre au fil de la journée. Mais aucune de ces mesures n’a montré qu’elle corrige la déformation de façon permanente.',
+        'Si l’orteil en marteau est encore souple, les mesures conservatrices, dont les exercices, les étirements, des chaussures plus larges et le strapping de l’orteil, peuvent l’empêcher d’évoluer et améliorer le confort. Attacher l’orteil atteint à son voisin avec du ruban adhésif peut le maintenir doucement dans une position plus neutre au fil de la journée. **Mais aucune de ces mesures n’a montré qu’elle corrige la déformation de façon permanente.**',
         'Une fois qu’un orteil en marteau est devenu rigide, l’articulation est rétractée et ne peut plus être redressée. À ce stade, l’exercice et les étirements ne changeront pas sa forme. L’objectif devient de protéger la peau des frottements et de gérer la pression avec des protections et des chaussures adaptées.',
         'La vitesse à laquelle un orteil en marteau souple devient rigide varie. Chez certaines personnes, il reste souple pendant des années. Porter des chaussures à l’avant large et entretenir la mobilité des orteils avec des étirements et des exercices quotidiens sont les stratégies les plus souvent conseillées pour ralentir l’évolution.',
       ],
@@ -137,7 +159,14 @@ export const HAMMER_TOE_FR: Guide = {
       keyFact: 'Une revue de 2016 citait des données de registre suédoises montrant que les interventions sur les petits orteils, dont la chirurgie de l’orteil en marteau et en griffe, représentaient près d’un quart de toutes les opérations de l’avant-pied (Malhotra et coll., 2016).',
       paragraphs: [
         'La chirurgie est envisagée quand un orteil en marteau rigide cause une douleur persistante, des lésions de la peau ou une difficulté à se chausser malgré les soins conservateurs. La décision repose sur les symptômes et la gêne au quotidien, pas sur l’aspect de l’orteil.',
-        'Les interventions courantes sont l’arthroplastie de l’articulation interphalangienne proximale (retirer un petit morceau d’os pour redresser l’articulation) et l’arthrodèse (fusionner l’articulation en position droite). Des techniques mini-invasives plus récentes existent, mais les données de résultats à long terme sont encore en cours de recueil.',
+        'Les interventions courantes sont\u00A0:',
+        {
+          list: [
+            'L’arthroplastie de l’articulation interphalangienne proximale (retirer un petit morceau d’os pour redresser l’articulation).',
+            'L’arthrodèse (fusionner l’articulation en position droite).',
+          ],
+        },
+        'Des techniques mini-invasives plus récentes existent, mais les données de résultats à long terme sont encore en cours de recueil.',
         'La récupération après une chirurgie de l’orteil en marteau prend en général trois à six semaines avec une chaussure postopératoire. Une certaine raideur de l’orteil est attendue. Une revue de 2016 citait des données de registre suédoises montrant que les interventions sur les petits orteils, qui comprennent l’orteil en marteau, l’orteil en griffe et les déformations voisines, représentaient près d’un quart de toutes les chirurgies de l’avant-pied.',
       ],
       cites: [CITE.malhotra],

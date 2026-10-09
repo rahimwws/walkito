@@ -29,7 +29,7 @@ export const ICE_HEAT_IT: Guide = {
       h2: 'Per la fascite plantare è meglio il ghiaccio o il caldo?',
       keyFact: 'La linea guida del 2023 sul dolore al tallone ha trovato 1 piccolo studio sul caldo e ha detto che una raccomandazione sulle applicazioni superficiali di caldo e freddo non può essere formulata (Koc e colleghi, 2023).',
       paragraphs: [
-        'Né il ghiaccio né il caldo sono chiaramente migliori per la fascite plantare, perché nessuno dei due è stato studiato abbastanza bene da scegliere un vincitore. La linea guida del 2023 sul dolore al tallone dell’American Physical Therapy Association ha esaminato la ricerca sulle «terapie termiche», cioè impacchi caldi e freddi e simili. Ha trovato un solo piccolo studio di qualità più bassa sul caldo e ha concluso che una raccomandazione «non può essere formulata».',
+        '**Né il ghiaccio né il caldo sono chiaramente migliori per la fascite plantare**, perché nessuno dei due è stato studiato abbastanza bene da scegliere un vincitore. La linea guida del 2023 sul dolore al tallone dell’American Physical Therapy Association ha esaminato la ricerca sulle «terapie termiche», cioè impacchi caldi e freddi e simili. Ha trovato un solo piccolo studio di qualità più bassa sul caldo e ha concluso che una raccomandazione «non può essere formulata».',
         'Questo non vuol dire che siano inutili. Vuol dire che sono strumenti di sollievo, e puoi scegliere in base a come senti il piede in questo momento. La tabella qui sotto è una guida pratica, non una regola presa da uno studio.',
       ],
       table: {
@@ -54,7 +54,7 @@ export const ICE_HEAT_IT: Guide = {
         alt: 'Un piede visto dal lato interno, con la fascia plantare evidenziata come una banda dal tallone alle dita.',
       },
       paragraphs: [
-        'Una fascite plantare di lunga durata di solito non è un tessuto infiammato come lo è una distorsione recente. Il suffisso «-ite» nel nome indica un’infiammazione, ed è per questo che tante pagine ti dicono di metterci il ghiaccio. Ma quando nel 2003 Lemont e colleghi hanno esaminato il tessuto di 50\u00A0casi di intervento chirurgico per fascite plantare cronica, hanno trovato una fascia usurata, sfilacciata e degenerata, e nessun segno di infiammazione. Hanno proposto di chiamarla fasciosi, cioè una banda degenerata, non infiammata.',
+        '**Una fascite plantare di lunga durata di solito non è un tessuto infiammato come lo è una distorsione recente.** Il suffisso «-ite» nel nome indica un’infiammazione, ed è per questo che tante pagine ti dicono di metterci il ghiaccio. Ma quando nel 2003 Lemont e colleghi hanno esaminato il tessuto di 50\u00A0casi di intervento chirurgico per fascite plantare cronica, hanno trovato una fascia usurata, sfilacciata e degenerata, e nessun segno di infiammazione. Hanno proposto di chiamarla fasciosi, cioè una banda degenerata, non infiammata.',
         'Questo risultato va preso con due cautele. Erano i casi più difficili, abbastanza gravi da richiedere un intervento, quindi un dolore al tallone iniziale può essere diverso. E lo studio ha solo descritto il tessuto. Non ha testato il ghiaccio.',
         'Cambia però il motivo per cui si usa il ghiaccio. Se la fascia è soprattutto usurata e sovraccaricata, il freddo non sta «spegnendo un incendio». Attenua il dolore per un po’, e questo resta utile. Quello che aiuta un tessuto usurato ad adattarsi è un carico graduale: stretching e rinforzo.',
       ],
@@ -64,9 +64,14 @@ export const ICE_HEAT_IT: Guide = {
       h2: 'Il ghiaccio aiuta la fascite plantare? Cosa hanno trovato gli studi',
       keyFact: 'In uno studio su 30\u00A0persone, il dolore è sceso da 7,7 a 3,5 su 10 con una pallina da tennis congelata più stretching, contro un calo da 7,6 a 6,7 con il solo stretching (Shinde e Patil, 2026).',
       paragraphs: [
-        'Il ghiaccio probabilmente allevia per poco tempo il dolore da fascite plantare, ma pochissimi studi lo hanno testato, e nessuno lo ha confrontato con il non fare nulla. Ecco cosa c’è.',
-        'In uno studio del 2014 su 102\u00A0persone con fascite plantare da più di sei mesi, entrambi i gruppi hanno fatto 10\u00A0sedute quotidiane da 20\u00A0minuti con un apparecchio in ambulatorio: solo freddo, oppure freddo più ultrasuoni. Entrambi sono migliorati, e il gruppo combinato è andato meglio fino a 18\u00A0mesi (Costantino e colleghi). Il freddo era il termine di confronto, quindi lo studio non può dire quanto abbia fatto il freddo in sé. Uno studio del 2023 su 36\u00A0persone aveva lo stesso limite: un gruppo di «crio-stretching», che faceva rotolare il piede su una pallina da tennis congelata, è migliorato in 7\u00A0giorni, ma sono migliorati anche i due gruppi senza freddo (Jadhav e Gurudut).',
+        '**Il ghiaccio probabilmente allevia per poco tempo il dolore da fascite plantare**, ma pochissimi studi lo hanno testato, e nessuno lo ha confrontato con il non fare nulla. Ecco cosa c’è:',
+        {
+          list: [
+            'In uno studio del 2014 su 102\u00A0persone con fascite plantare da più di sei mesi, entrambi i gruppi hanno fatto 10\u00A0sedute quotidiane da 20\u00A0minuti con un apparecchio in ambulatorio: solo freddo, oppure freddo più ultrasuoni. Entrambi sono migliorati, e il gruppo combinato è andato meglio fino a 18\u00A0mesi (Costantino e colleghi). Il freddo era il termine di confronto, quindi lo studio non può dire quanto abbia fatto il freddo in sé.',
+            'Uno studio del 2023 su 36\u00A0persone aveva lo stesso limite: un gruppo di «crio-stretching», che faceva rotolare il piede su una pallina da tennis congelata, è migliorato in 7\u00A0giorni, ma sono migliorati anche i due gruppi senza freddo (Jadhav e Gurudut).',
         'Il test più diretto è piccolo. In uno studio del 2026 su 30\u00A0persone, il gruppo che per due mesi ha aggiunto allo stretching una pallina da tennis congelata è passato da 7,7 a 3,5 su una scala del dolore da 0 a 10, mentre il gruppo del solo stretching è passato da 7,6 a 6,7 (Shinde e Patil). Sembra una grande differenza, ma l’articolo non spiega con chiarezza come le persone siano state divise nei gruppi, e il gruppo con la pallina congelata riceveva anche la pressione del rotolamento, quindi freddo e massaggio non si possono separare.',
+          ],
+        },
         'Fuori dal piede il quadro è simile. Una revisione del 2004 su 22\u00A0studi sul ghiaccio nelle lesioni recenti, come le distorsioni di caviglia, ha valutato la loro qualità media 3,4 su 10 e non ha trovato un metodo o una durata migliori per il ghiaccio. L’unico segnale, marginale, era a favore di ghiaccio più esercizio dopo distorsioni di caviglia e interventi chirurgici (Bleakley e colleghi).',
       ],
       sourceNote: 'Costantino 2014: studio randomizzato in singolo cieco, crioultrasuoni contro crioterapia, dolore su scala analogica visiva. Jadhav 2023: studio randomizzato, 12\u00A0persone per gruppo, Numerical Pain Rating Scale e Foot Function Index al giorno 7. Shinde 2026: 15\u00A0persone per gruppo, NPRS e Foot Function Index, assegnazione descritta come «random sampling technique». Bleakley 2004: punteggio PEDro medio 3,4/10.',
@@ -76,7 +81,8 @@ export const ICE_HEAT_IT: Guide = {
       h2: 'Il caldo fa bene alla fascite plantare?',
       keyFact: 'Una revisione Cochrane di 9\u00A0studi e 1.117\u00A0persone ha trovato prove moderate, da alcuni di quegli studi, di un piccolo beneficio a breve termine sul dolore con le fasce termiche per il mal di schiena lombare, e prove troppo scarse per giudicare il freddo (French e colleghi, 2006).',
       paragraphs: [
-        'Il caldo va bene per la fascite plantare se ti fa stare meglio, e l’idea che «peggiori l’infiammazione» non ha alcuno studio alle spalle. L’unico studio sul caldo trovato dalla linea guida del 2023 era piccolo: 20\u00A0persone con dolore alla pianta del piede hanno ricevuto a caso un cerotto termico o un finto cerotto sui punti trigger (punti dolenti nel muscolo). Il dolore è sceso nel gruppo del caldo ma non in quello del finto cerotto (Petrofsky e colleghi, 2020). Il cerotto è rimasto addosso circa quattro ore e il dolore è stato misurato subito dopo, quindi dice qualcosa solo sul sollievo a breve termine.',
+        '**Il caldo va bene per la fascite plantare se ti fa stare meglio**, e l’idea che «peggiori l’infiammazione» non ha alcuno studio alle spalle.',
+        'L’unico studio sul caldo trovato dalla linea guida del 2023 era piccolo: 20\u00A0persone con dolore alla pianta del piede hanno ricevuto a caso un cerotto termico o un finto cerotto sui punti trigger (punti dolenti nel muscolo). Il dolore è sceso nel gruppo del caldo ma non in quello del finto cerotto (Petrofsky e colleghi, 2020). Il cerotto è rimasto addosso circa quattro ore e il dolore è stato misurato subito dopo, quindi dice qualcosa solo sul sollievo a breve termine.',
         'Le migliori prove generali sul caldo vengono dal mal di schiena, non dai piedi. Una revisione Cochrane (una sintesi accurata degli studi) di 9\u00A0studi e 1.117\u00A0persone ha trovato prove moderate, da alcuni di quegli studi, che le fasce termiche danno un piccolo calo a breve termine del mal di schiena lombare recente, e che aggiungere l’esercizio aiutava di più. Sul freddo ha trovato solo tre studi di scarsa qualità e non è arrivata a conclusioni (French e colleghi, 2006).',
         'Il caldo porta più sangue nella zona e rende il tessuto un po’ più elastico. Il freddo rallenta il flusso di sangue e attenua il dolore. Una revisione del 2015 ha osservato che la maggior parte dei consigli su entrambi si basa sull’esperienza, con prove limitate dagli studi (Malanga e colleghi).',
       ],
@@ -86,8 +92,9 @@ export const ICE_HEAT_IT: Guide = {
       h2: 'Conviene usare il caldo prima dello stretching?',
       keyFact: 'In 36\u00A0studi su 1.301\u00A0persone senza lesioni, caldo più stretching ha migliorato l’ampiezza di movimento più del solo stretching (Bleakley e Costello, 2013).',
       paragraphs: [
-        'Scaldare il piede prima dello stretching è una scelta ragionevole, ed è più sostenuta che mettere il ghiaccio prima dello stretching. Una revisione del 2013 di 36\u00A0studi su 1.301\u00A0persone senza lesioni ha trovato che il caldo aumentava l’ampiezza di movimento, e che caldo più stretching funzionava meglio del solo stretching. I dati sul freddo erano contrastanti. Ogni studio aveva un alto rischio di bias, e nessuno riguardava persone con dolore al tallone, quindi prendilo come un’idea sensata, non come un piano testato per la fascite plantare.',
-        'Scaldarsi può essere semplice. Una doccia calda, o qualche minuto con i piedi in acqua tiepida, prima dell’allungamento della fascia plantare e del polpaccio. Al mattino, però, non aspettare di esserti scaldato per fare stretching. L’allungamento dei primi passi va fatto prima che il piede prenda carico, sul bordo del letto. [Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega questa routine passo per passo.',
+        '**Scaldare il piede prima dello stretching è una scelta ragionevole**, ed è più sostenuta che mettere il ghiaccio prima dello stretching. Una revisione del 2013 di 36\u00A0studi su 1.301\u00A0persone senza lesioni ha trovato che il caldo aumentava l’ampiezza di movimento, e che caldo più stretching funzionava meglio del solo stretching. I dati sul freddo erano contrastanti. Ogni studio aveva un alto rischio di bias, e nessuno riguardava persone con dolore al tallone, quindi prendilo come un’idea sensata, non come un piano testato per la fascite plantare.',
+        'Scaldarsi può essere semplice. Una doccia calda, o qualche minuto con i piedi in acqua tiepida, prima dell’allungamento della fascia plantare e del polpaccio.',
+        'Al mattino, però, non aspettare di esserti scaldato per fare stretching. L’allungamento dei primi passi va fatto prima che il piede prenda carico, sul bordo del letto. [Dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) spiega questa routine passo per passo.',
       ],
       cites: [CITE.bleakleyThermal],
     },
@@ -95,7 +102,15 @@ export const ICE_HEAT_IT: Guide = {
       h2: 'I bagni alternati caldo-freddo aiutano la fascite plantare?',
       paragraphs: [
         'Per i bagni alternati, cioè passare il piede dall’acqua calda a quella fredda, non abbiamo trovato studi sulla fascite plantare. Una revisione sistematica del 2009 sui bagni alternati ha incluso 10\u00A0studi su volontari senza lesioni e su persone con artrite reumatoide, diabete o lesioni di piede e caviglia. Ha trovato che alternare le temperature può aumentare il flusso di sangue nella pelle, ma non è stato dimostrato alcun legame con una funzione migliore (Breger Stanton e colleghi).',
-        'Online troverai tante ricette diverse: due minuti al freddo e 30\u00A0secondi al caldo, un minuto al freddo e tre minuti al caldo, finire sempre con il freddo. Nessuno di questi tempi viene da uno studio. Se ti piacciono i bagni alternati, sono a basso rischio per la maggior parte delle persone con una sensibilità normale ai piedi. Solo, non aspettarti da loro più che dal semplice caldo o freddo.',
+        'Online troverai tante ricette diverse:',
+        {
+          list: [
+            'Due minuti al freddo e 30\u00A0secondi al caldo.',
+            'Un minuto al freddo e tre minuti al caldo.',
+            'Finire sempre con il freddo.',
+          ],
+        },
+        '**Nessuno di questi tempi viene da uno studio.** Se ti piacciono i bagni alternati, sono a basso rischio per la maggior parte delle persone con una sensibilità normale ai piedi. Solo, non aspettarti da loro più che dal semplice caldo o freddo.',
       ],
       cites: [CITE.bregerContrast],
     },
@@ -123,7 +138,8 @@ export const ICE_HEAT_IT: Guide = {
       h2: 'Cosa aiuta davvero la fascite plantare a lungo termine?',
       keyFact: 'In uno studio su 48\u00A0persone, i sollevamenti sulle punte lenti con un asciugamano sotto le dita hanno ridotto il dolore più in fretta del solo stretching a tre mesi, e a dodici mesi i due gruppi erano pari (Rathleff e colleghi, 2015).',
       paragraphs: [
-        'La parte della gestione della fascite plantare con le prove più solide è l’esercizio, non la temperatura. La linea guida del 2023 dà all’allungamento della fascia plantare e del polpaccio il suo grado più alto, **A**, e al rinforzo di piede e caviglia una **B**. In uno studio del 2003 su 101\u00A0persone, l’allungamento della fascia plantare ha aiutato più del solo allungamento del polpaccio dopo circa due mesi (DiGiovanni e colleghi). In uno studio del 2015 su 48\u00A0persone, i sollevamenti sulle punte lenti con un asciugamano sotto le dita hanno ridotto il dolore più in fretta del solo stretching a tre mesi, anche se a dodici mesi i due gruppi erano più o meno pari (Rathleff e colleghi).',
+        'La parte della gestione della fascite plantare con le prove più solide è l’esercizio, non la temperatura. La linea guida del 2023 dà all’allungamento della fascia plantare e del polpaccio il suo grado più alto, **A**, e al rinforzo di piede e caviglia una **B**.',
+        'In uno studio del 2003 su 101\u00A0persone, l’allungamento della fascia plantare ha aiutato più del solo allungamento del polpaccio dopo circa due mesi (DiGiovanni e colleghi). In uno studio del 2015 su 48\u00A0persone, i sollevamenti sulle punte lenti con un asciugamano sotto le dita hanno ridotto il dolore più in fretta del solo stretching a tre mesi, anche se a dodici mesi i due gruppi erano più o meno pari (Rathleff e colleghi).',
         'Usa ghiaccio o caldo intorno a questi esercizi: il caldo prima dello stretching, il ghiaccio dopo una lunga giornata, se l’uno o l’altro ti aiuta. Walkito funziona allo stesso modo: allungamenti e lavoro sul polpaccio sono il piano, e il massaggio con la pallina è un passo di recupero da 60\u00A0secondi, non il piatto forte. L’elenco completo è in [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
       ],
       exercises: [

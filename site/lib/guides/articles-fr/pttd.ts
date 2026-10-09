@@ -20,7 +20,8 @@ export const PTTD_FR: Guide = {
   lede:
     'La dysfonction du tendon tibial postérieur (souvent abrégée PTTD en anglais) survient quand le tendon qui soutient la voûte, à l’intérieur de la cheville, s’affaiblit ou s’enflamme. C’est la cause la plus fréquente de pied plat acquis de l’adulte. L’exercice peut aider aux premiers stades, mais tous les stades ne répondent pas de la même façon, et les preuves restent limitées. Cette page présente les stades, les exercices les mieux appuyés, et le moment où une botte ou la chirurgie entrent en jeu.',
   intro: [
-    'Le tendon tibial postérieur passe derrière l’os saillant à l’intérieur de la cheville et s’attache sous le pied. Il maintient la voûte pendant la marche. Quand il dégénère, la voûte s’aplatit, le talon bascule vers l’extérieur et la douleur s’installe le long de l’intérieur de la cheville ou du milieu du pied. Une revue systématique de 2018 n’a trouvé que trois essais randomisés ou contrôlés, avec 93\u00A0personnes au total, donc les preuves sur l’exercice sont ici bien plus minces que pour la [fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou la tendinite d’Achille.',
+    'Le tendon tibial postérieur passe derrière l’os saillant à l’intérieur de la cheville et s’attache sous le pied. Il maintient la voûte pendant la marche. Quand il dégénère, la voûte s’aplatit, le talon bascule vers l’extérieur et la douleur s’installe le long de l’intérieur de la cheville ou du milieu du pied.',
+    'Une revue systématique de 2018 n’a trouvé que trois essais randomisés ou contrôlés, avec 93\u00A0personnes au total, donc les preuves sur l’exercice sont ici bien plus minces que pour la [fasciite plantaire](/fr/exercices-fasciite-plantaire/) ou la tendinite d’Achille.',
   ],
   toc: true,
   takeaways: [
@@ -33,7 +34,7 @@ export const PTTD_FR: Guide = {
     {
       h2: 'Qu’est-ce que la dysfonction du tendon tibial postérieur\u00A0?',
       paragraphs: [
-        'Le tibial postérieur est un muscle profond du mollet. Son tendon passe derrière l’os saillant à l’intérieur de la cheville, la malléole interne, puis s’étale sous le pied pour s’attacher à plusieurs os du milieu du pied. Pendant la marche, il soulève la voûte et contrôle à quel point le pied s’affaisse vers l’intérieur. Quand le tendon dégénère ou se déchire, ce soutien disparaît.',
+        'Le tibial postérieur est un muscle profond du mollet. Son tendon passe derrière l’os saillant à l’intérieur de la cheville, la malléole interne, puis s’étale sous le pied pour s’attacher à plusieurs os du milieu du pied. Pendant la marche, il soulève la voûte et contrôle à quel point le pied s’affaisse vers l’intérieur. **Quand le tendon dégénère ou se déchire, ce soutien disparaît.**',
         'Cette dysfonction est la cause la plus fréquente de pied plat acquis de l’adulte. Elle touche plus souvent les femmes, les plus de 40\u00A0ans et les personnes avec un IMC plus élevé. Les facteurs de risque comprennent l’hypertension, le diabète et des injections de corticoïdes antérieures près du tendon. La douleur se situe en général derrière ou sous la malléole interne et s’aggrave avec l’activité, surtout en montée ou sur un terrain irrégulier.',
         'Le nom clinique que vous pouvez rencontrer est tendinopathie du tibial postérieur. Des sources plus anciennes parlent parfois de tendinite du tibial postérieur quand le problème est surtout inflammatoire, ou d’insuffisance du tendon tibial postérieur quand le tendon s’est allongé et que la voûte a commencé à s’affaisser. Les trois termes décrivent le même continuum.',
       ],
@@ -43,11 +44,15 @@ export const PTTD_FR: Guide = {
       h2: 'Quels sont les stades de la dysfonction du tendon tibial postérieur\u00A0?',
       paragraphs: [
         'Les professionnels de santé classent cette dysfonction en quatre stades. Le stade détermine si l’exercice et les orthèses ont des chances d’aider, ou s’il faut envisager une botte, une attelle ou la chirurgie.',
-        '**Stade I**\u00A0: le tendon est enflammé mais encore intact. La voûte paraît normale. Il y a une douleur, et parfois un léger gonflement, derrière la malléole interne. La force lors d’une montée sur pointes sur une jambe est en général plus faible que de l’autre côté, mais la forme du pied n’a pas changé. L’exercice et des orthèses de soutien sont l’approche principale.',
-        '**Stade II**\u00A0: le tendon s’est allongé ou s’est déchiré en partie. La voûte s’est affaissée et le talon bascule vers l’extérieur, mais la déformation est encore souple, c’est-à-dire qu’un professionnel de santé peut ramener le pied en position. C’est le stade que couvre la plupart des recherches sur l’exercice. Orthèses, étirements et renforcement progressif forment le programme conservateur habituel.',
-        '**Stade III**\u00A0: la déformation est devenue rigide. Le pied ne peut plus être ramené en position corrigée, et il y a souvent de l’arthrose dans les articulations sous la cheville. À ce stade, l’exercice seul a peu de chances de changer la forme du pied. Un avis chirurgical est en général envisagé.',
-        '**Stade IV**\u00A0: l’articulation de la cheville est atteinte à son tour. La cheville bascule en valgus, c’est-à-dire qu’elle penche vers l’extérieur. C’est le stade le plus avancé, qui demande en général une intervention chirurgicale.',
-        'La plupart des personnes qui cherchent des exercices pour ce tendon sont au stade I ou II. Si vous ne savez pas quel stade vous concerne, un professionnel de santé peut le dire avec un examen clinique et, si besoin, une imagerie. Le test de montée sur pointes sur une jambe, où vous essayez de monter sur la pointe d’un seul pied, est un dépistage rapide\u00A0: une difficulté à monter, une douleur pendant la montée ou un talon qui ne bascule pas vers l’intérieur en haut du mouvement évoquent tous une faiblesse du tibial postérieur.',
+        {
+          list: [
+            '**Stade I**\u00A0: le tendon est enflammé mais encore intact. La voûte paraît normale. Il y a une douleur, et parfois un léger gonflement, derrière la malléole interne. La force lors d’une montée sur pointes sur une jambe est en général plus faible que de l’autre côté, mais la forme du pied n’a pas changé. L’exercice et des orthèses de soutien sont l’approche principale.',
+            '**Stade II**\u00A0: le tendon s’est allongé ou s’est déchiré en partie. La voûte s’est affaissée et le talon bascule vers l’extérieur, mais la déformation est encore souple, c’est-à-dire qu’un professionnel de santé peut ramener le pied en position. C’est le stade que couvre la plupart des recherches sur l’exercice. Orthèses, étirements et renforcement progressif forment le programme conservateur habituel.',
+            '**Stade III**\u00A0: la déformation est devenue rigide. Le pied ne peut plus être ramené en position corrigée, et il y a souvent de l’arthrose dans les articulations sous la cheville. À ce stade, l’exercice seul a peu de chances de changer la forme du pied. Un avis chirurgical est en général envisagé.',
+            '**Stade IV**\u00A0: l’articulation de la cheville est atteinte à son tour. La cheville bascule en valgus, c’est-à-dire qu’elle penche vers l’extérieur. C’est le stade le plus avancé, qui demande en général une intervention chirurgicale.',
+          ],
+        },
+        '**La plupart des personnes qui cherchent des exercices pour ce tendon sont au stade I ou II.** Si vous ne savez pas quel stade vous concerne, un professionnel de santé peut le dire avec un examen clinique et, si besoin, une imagerie. Le test de montée sur pointes sur une jambe, où vous essayez de monter sur la pointe d’un seul pied, est un dépistage rapide\u00A0: une difficulté à monter, une douleur pendant la montée ou un talon qui ne bascule pas vers l’intérieur en haut du mouvement évoquent tous une faiblesse du tibial postérieur.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
@@ -56,9 +61,17 @@ export const PTTD_FR: Guide = {
       keyFact: 'En regroupant trois petits essais avec 93\u00A0personnes au total, une revue de 2018 a montré que le renforcement excentrique ajouté aux orthèses et aux étirements apportait des améliorations d’ampleur modérée par rapport aux orthèses et aux étirements seuls (Ross et coll., 2018).',
       paragraphs: [
         'Une revue systématique de 2018 a recensé trois essais contrôlés randomisés avec 93\u00A0participants au total. Deux testaient le renforcement en plus des orthèses et des étirements\u00A0; le troisième comparait renforcement et travail d’équilibre à l’absence d’intervention. La revue a trouvé des tailles d’effet modérées (SMD de 0,6 à 1,2) pour le renforcement excentrique sur la douleur et l’incapacité, par rapport aux orthèses et aux étirements seuls.',
-        'La plus grande des trois études était un essai randomisé de 2009 sur 36\u00A0personnes au stade I ou II. Les participants ont été répartis pendant trois mois dans l’un de trois groupes\u00A0: orthèses et étirements seuls, orthèses et étirements plus exercice concentrique, ou orthèses et étirements plus exercice excentrique. Les deux groupes avec exercice se sont davantage améliorés que le groupe orthèses seules. À la fin du programme, le groupe excentrique travaillait avec des charges 3,3\u00A0fois plus élevées que le groupe concentrique, mais les deux types d’exercice ont réduit la douleur.',
+        'La plus grande des trois études était un essai randomisé de 2009 sur 36\u00A0personnes au stade I ou II. Les participants ont été répartis pendant trois mois dans l’un de trois groupes\u00A0:',
+        {
+          list: [
+            'Orthèses et étirements seuls.',
+            'Orthèses et étirements plus exercice concentrique.',
+            'Orthèses et étirements plus exercice excentrique.',
+          ],
+        },
+        'Les deux groupes avec exercice se sont davantage améliorés que le groupe orthèses seules. À la fin du programme, le groupe excentrique travaillait avec des charges 3,3\u00A0fois plus élevées que le groupe concentrique, mais les deux types d’exercice ont réduit la douleur.',
         'Un second essai randomisé, publié en 2015, a réparti 39\u00A0personnes au stade II entre orthèses plus étirements, et orthèses plus étirements plus renforcement (dont des exercices avec élastique et des montées sur pointes). Les deux groupes se sont améliorés, mais le groupe renforcement ne s’est pas nettement distingué du groupe étirements sur le critère principal. Les auteurs ont suggéré que la dose de renforcement n’était peut-être pas assez élevée.',
-        'Les auteurs de la revue ont conclu que les preuves soutiennent l’ajout d’exercices progressifs contre résistance aux orthèses au début de la maladie, tout en demandant des essais plus grands. C’est un domaine où la recherche rattrape encore la pratique clinique.',
+        'Les auteurs de la revue ont conclu que **les preuves soutiennent l’ajout d’exercices progressifs contre résistance aux orthèses au début de la maladie**, tout en demandant des essais plus grands. C’est un domaine où la recherche rattrape encore la pratique clinique.',
       ],
       sourceNote:
         'Ross 2018\u00A0: 3\u00A0études, n = 93. Kulig 2009\u00A0: n = 36, 3\u00A0bras, 3\u00A0mois, Foot Function Index, EVA douleur. Houck 2015\u00A0: n = 39, 2\u00A0bras, 3\u00A0mois, FAAM.',
@@ -68,7 +81,7 @@ export const PTTD_FR: Guide = {
       h2: 'Quels exercices pour la dysfonction du tendon tibial postérieur\u00A0?',
       paragraphs: [
         'Les exercices ci-dessous visent le muscle tibial postérieur et les muscles qui soutiennent la voûte. L’inversion avec élastique entraîne directement le tibial postérieur. Les montées sur pointes en soulevant la voûte chargent le tendon dans un mouvement de la vie courante. Le pied court renforce les petits muscles propres au pied qui aident la voûte. L’étirement du mollet répond au constat fréquent d’une cheville qui se plie moins bien vers le haut chez les personnes atteintes.',
-        'Les programmes d’exercices des essais comprenaient aussi des étirements du mollet et des orthèses. Les orthèses n’étaient facultatives dans aucune étude. Si vous avez cette dysfonction, une orthèse qui soutient la voûte fait partie du programme\u00A0: elle ne remplace pas l’exercice, et l’exercice ne la remplace pas.',
+        'Les programmes d’exercices des essais comprenaient aussi des étirements du mollet et des orthèses. Les orthèses n’étaient facultatives dans aucune étude. Si vous avez cette dysfonction, **une orthèse qui soutient la voûte fait partie du programme\u00A0: elle ne remplace pas l’exercice, et l’exercice ne la remplace pas.**',
       ],
       exercises: [
         {
@@ -125,7 +138,7 @@ export const PTTD_FR: Guide = {
     {
       h2: 'Les orthèses aident-elles, et faut-il les porter pendant l’exercice\u00A0?',
       paragraphs: [
-        'Chaque essai sur l’exercice dans cette dysfonction utilisait des orthèses comme intervention de base. Les orthèses n’ont pas été comparées à l’exercice\u00A0; elles ont été testées avec l’exercice en plus. L’essai randomisé de 2009 a montré que les orthèses et les étirements seuls amélioraient la fonction, et que l’ajout d’exercice l’améliorait davantage.',
+        'Chaque essai sur l’exercice dans cette dysfonction utilisait des orthèses comme intervention de base. **Les orthèses n’ont pas été comparées à l’exercice\u00A0; elles ont été testées avec l’exercice en plus.** L’essai randomisé de 2009 a montré que les orthèses et les étirements seuls amélioraient la fonction, et que l’ajout d’exercice l’améliorait davantage.',
         'Une orthèse rigide ou semi-rigide qui soutient la voûte l’empêche de s’effondrer debout et à la marche. Pour les exercices de cette page, vous pouvez faire l’inversion avec élastique et le pied court sans chaussures, mais faites les montées sur pointes dans les chaussures de soutien avec lesquelles vous marchez, car la voûte a besoin de soutien sous la charge.',
         'Des soutiens de voûte du commerce peuvent suffire au stade I. Les orthèses sur mesure sont plus courantes au stade II, où la déformation est plus marquée. Un professionnel de santé ou un podologue peut vous aider à choisir.',
       ],
@@ -134,7 +147,7 @@ export const PTTD_FR: Guide = {
     {
       h2: 'Quand parle-t-on d’une botte ou de chirurgie\u00A0?',
       paragraphs: [
-        'Une botte de marche ou une chevillère est parfois utilisée aux stades I ou II quand la douleur est trop forte pour faire de l’exercice. La botte immobilise le tendon pour laisser l’inflammation aiguë se calmer. C’est une mesure de courte durée, pas un programme à long terme. Une fois que la douleur a assez baissé, l’exercice et les orthèses prennent le relais.',
+        'Une botte de marche ou une chevillère est parfois utilisée aux stades I ou II quand la douleur est trop forte pour faire de l’exercice. La botte immobilise le tendon pour laisser l’inflammation aiguë se calmer. **C’est une mesure de courte durée, pas un programme à long terme.** Une fois que la douleur a assez baissé, l’exercice et les orthèses prennent le relais.',
         'La chirurgie est en général envisagée quand la prise en charge conservatrice n’a pas amélioré les symptômes après plusieurs mois, ou quand la déformation a évolué vers le stade III ou IV. Les options chirurgicales vont de la réparation et du transfert de tendon aux premiers stades jusqu’à la fusion articulaire (arthrodèse) aux stades avancés. La décision dépend du stade, de l’importance de la déformation et de la personne.',
         'Cette page ne détaille pas les options chirurgicales. Si vous êtes au stade III ou IV, ou si des symptômes de stade II n’ont pas répondu à l’exercice et aux orthèses après plusieurs mois, un spécialiste du pied et de la cheville peut discuter de la suite.',
       ],
@@ -143,7 +156,7 @@ export const PTTD_FR: Guide = {
     {
       h2: 'Quel est le lien avec les pieds plats\u00A0?',
       paragraphs: [
-        'Cette dysfonction est la cause la plus fréquente de pied plat acquis de l’adulte, c’est-à-dire un pied plat qui apparaît à l’âge adulte au lieu d’être présent depuis l’enfance. Si vous aviez des voûtes normales et que l’une d’elles a commencé à s’affaisser, avec une douleur derrière la malléole interne, le tendon tibial postérieur est l’explication la plus probable.',
+        'Cette dysfonction est la cause la plus fréquente de pied plat acquis de l’adulte, c’est-à-dire un pied plat qui apparaît à l’âge adulte au lieu d’être présent depuis l’enfance. **Si vous aviez des voûtes normales et que l’une d’elles a commencé à s’affaisser, avec une douleur derrière la malléole interne, le tendon tibial postérieur est l’explication la plus probable.**',
         'Les pieds plats souples congénitaux, présents depuis l’enfance, sont une autre situation. Ils peuvent ne jamais donner de symptômes. Les exercices se recoupent\u00A0: pied court, inversion avec élastique et montées sur pointes figurent à la fois dans les [exercices pour pieds plats](/fr/exercices-pieds-plats/) et dans les programmes pour ce tendon. Mais le contexte clinique diffère, et cette dysfonction demande en général des orthèses et un suivi plus étroit, car le tendon dégénère au lieu d’être simplement lâche.',
         'Si vous ne savez pas si votre pied plat est ancien ou récent, un professionnel de santé peut comparer les deux pieds, examiner le tendon et regarder l’alignement du talon quand vous êtes debout.',
       ],
@@ -154,7 +167,7 @@ export const PTTD_FR: Guide = {
       keyFact: 'Une petite étude pilote sur dix patients, avec une charge excentrique deux fois par jour pendant environ deux mois et demi, a montré une amélioration des symptômes et certains changements du tendon à l’échographie (Kulig et coll., 2009).',
       paragraphs: [
         'Les deux essais randomisés duraient trois mois. Les deux ont montré une amélioration à la fin du programme, mais aucun n’a suivi les participants à long terme. Une petite étude pilote sur dix patients, menée par la même équipe, a aussi duré environ deux mois et demi de charge excentrique deux fois par jour, et a montré une amélioration des symptômes avec certains changements du tendon à l’échographie.',
-        'En pratique, l’amélioration d’un stade I ou II avec exercice et orthèses se compte en mois, pas en semaines. La dégénérescence d’un tendon ne s’inverse pas vite. Une attente raisonnable est une douleur plus faible et une meilleure fonction sur trois à six mois, avec ensuite des exercices d’entretien. S’il n’y a aucune amélioration après trois mois d’exercice régulier et d’orthèses, il vaut la peine de retourner voir un professionnel de santé pour réévaluer le stade.',
+        'En pratique, **l’amélioration d’un stade I ou II avec exercice et orthèses se compte en mois, pas en semaines.** La dégénérescence d’un tendon ne s’inverse pas vite. Une attente raisonnable est une douleur plus faible et une meilleure fonction sur trois à six mois, avec ensuite des exercices d’entretien. S’il n’y a aucune amélioration après trois mois d’exercice régulier et d’orthèses, il vaut la peine de retourner voir un professionnel de santé pour réévaluer le stade.',
       ],
       cites: [CITE.kuligRCT, CITE.kuligEccentric],
     },

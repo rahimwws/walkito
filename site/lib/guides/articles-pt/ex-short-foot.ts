@@ -39,7 +39,7 @@ export const EX_SHORT_FOOT_PT: Guide = {
       h2: 'Como fazer o exercício de pé curto?',
       paragraphs: [
         'Sente-se em uma cadeira com os pés apoiados no chão, descalço. Posicione o pé de forma que o calcanhar, a parte da frente do pé e os cinco dedos fiquem no chão. Sem dobrar nem agarrar com os dedos, tente puxar a parte da frente do pé para trás, em direção ao calcanhar. O arco vai subir. Segure essa contração e solte.',
-        'Pense em deixar o pé mais curto e mais alto, e não mais largo e mais achatado. Os dedos não devem pressionar o chão, sair do chão nem se dobrar para baixo. Se você vê os dedos agarrando, está usando os músculos errados. Comece colocando um dedo da mão embaixo do arco para sentir ele subir.',
+        'Pense em deixar o pé mais curto e mais alto, e não mais largo e mais achatado. Os dedos não devem pressionar o chão, sair do chão nem se dobrar para baixo. **Se você vê os dedos agarrando, está usando os músculos errados.** Comece colocando um dedo da mão embaixo do arco para sentir ele subir.',
       ],
       exercises: [
         {
@@ -61,8 +61,16 @@ export const EX_SHORT_FOOT_PT: Guide = {
       h2: 'Quais músculos o exercício de pé curto trabalha?',
       paragraphs: [
         'O exercício de pé curto trabalha os músculos plantares intrínsecos: o abdutor do hálux, o flexor curto dos dedos, o quadrado plantar e o abdutor do dedo mínimo. Esses músculos ficam inteiramente dentro do pé e sustentam o arco longitudinal medial por baixo.',
-        'Um estudo de ressonância magnética de 2016, de Gooding e colegas, mediu a ativação muscular depois de 40\u00A0repetições de quatro exercícios diferentes para o pé em 8\u00A0atletas universitários. O pé curto produziu a maior ativação média no abdutor do dedo mínimo (34,9%), no abdutor do hálux (29,7%) e no flexor curto dos dedos (24,8%). Um estudo anterior de eletromiografia, de Jung e colegas (2011), mostrou que a atividade do abdutor do hálux era mais de quatro vezes maior no pé curto do que ao puxar a toalha com os dedos.',
-        'É por isso que o pé curto é considerado um exercício melhor do que puxar a toalha para trabalhar especificamente os músculos intrínsecos. Puxar a toalha recruta os flexores longos dos dedos, os músculos extrínsecos que vão da canela até os dedos. O exercício de pé curto deixa esses músculos extrínsecos mais quietos.',
+        'Um estudo de ressonância magnética de 2016, de Gooding e colegas, mediu a ativação muscular depois de 40\u00A0repetições de quatro exercícios diferentes para o pé em 8\u00A0atletas universitários. O pé curto produziu a maior ativação média em:',
+        {
+          list: [
+            'Abdutor do dedo mínimo (34,9%).',
+            'Abdutor do hálux (29,7%).',
+            'Flexor curto dos dedos (24,8%).',
+          ],
+        },
+        'Um estudo anterior de eletromiografia, de Jung e colegas (2011), mostrou que a atividade do abdutor do hálux era mais de quatro vezes maior no pé curto do que ao puxar a toalha com os dedos.',
+        'É por isso que **o pé curto é considerado um exercício melhor do que puxar a toalha para trabalhar especificamente os músculos intrínsecos.** Puxar a toalha recruta os flexores longos dos dedos, os músculos extrínsecos que vão da canela até os dedos. O exercício de pé curto deixa esses músculos extrínsecos mais quietos.',
       ],
       cites: [CITE.gooding, CITE.jung],
     },
@@ -70,7 +78,7 @@ export const EX_SHORT_FOOT_PT: Guide = {
       h2: 'Como progredir de sentado para em pé e para uma perna só?',
       paragraphs: [
         'Quando o pé curto sentado parecer fácil por duas sessões seguidas, o próximo passo é fazer em pé, sobre os dois pés. A mesma contração agora precisa sustentar o peso do corpo. Depois disso, o pé curto em uma perna acrescenta a exigência de equilíbrio e mostra qualquer diferença entre o seu lado esquerdo e o direito.',
-        'Cada versão é o mesmo movimento. A única coisa que muda é a carga. Ficar em pé dobra a exigência sobre os músculos do arco. Em uma perna, ela mais ou menos dobra de novo, e você ainda precisa estabilizar o tornozelo.',
+        'Cada versão é o mesmo movimento. **A única coisa que muda é a carga.** Ficar em pé dobra a exigência sobre os músculos do arco. Em uma perna, ela mais ou menos dobra de novo, e você ainda precisa estabilizar o tornozelo.',
       ],
       exercises: [
         {
@@ -103,8 +111,13 @@ export const EX_SHORT_FOOT_PT: Guide = {
     {
       h2: 'Quais erros deixam o exercício de pé curto menos eficaz?',
       paragraphs: [
-        'O erro mais comum é dobrar os dedos. Se os dedos flexionam e agarram o chão, o exercício vira uma flexão dos dedos e os flexores extrínsecos assumem. Mantenha os dedos esticados e relaxados. Algumas pessoas acham mais fácil levantar os dedos rapidinho, contrair o arco e depois apoiar os dedos de volta.',
-        'O segundo erro é empurrar o pé para fora em vez de encurtá-lo. O movimento deve ser reto para trás, da parte da frente do pé em direção ao calcanhar, não de um lado para o outro. O terceiro é prender a respiração. Respire normalmente durante cada contração.',
+        {
+          list: [
+            'O erro mais comum é dobrar os dedos. Se os dedos flexionam e agarram o chão, o exercício vira uma flexão dos dedos e os flexores extrínsecos assumem. **Mantenha os dedos esticados e relaxados.** Algumas pessoas acham mais fácil levantar os dedos rapidinho, contrair o arco e depois apoiar os dedos de volta.',
+            'O segundo erro é empurrar o pé para fora em vez de encurtá-lo. O movimento deve ser reto para trás, da parte da frente do pé em direção ao calcanhar, não de um lado para o outro.',
+            'O terceiro é prender a respiração. Respire normalmente durante cada contração.',
+          ],
+        },
         'Se você não consegue sentir o arco subir, tente colocar um dedo ou uma caneta embaixo do arco. O objetivo é sentir o arco pressionar esse objeto. Pode levar várias sessões até o cérebro aprender a ativar esses músculos sob comando. Essa curva de aprendizado é normal.',
       ],
     },
@@ -112,10 +125,19 @@ export const EX_SHORT_FOOT_PT: Guide = {
       h2: 'O que a pesquisa diz sobre os exercícios de pé curto?',
       keyFact: 'Em um ensaio de 2023 com 52\u00A0pessoas com pé chato flexível, um programa de seis semanas que juntava exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril e alongamentos mudou o formato do arco mais do que em um grupo controle (Brijwasi e Borkar, 2023).',
       paragraphs: [
-        'A evidência mais forte vem de programas que juntam o exercício de pé curto com outros exercícios, não do pé curto sozinho. Em um ensaio de 2023 com 52\u00A0pessoas com pé chato flexível, Brijwasi e Borkar testaram um programa de seis semanas com exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril e alongamentos. O programa mudou duas medidas do formato do arco mais do que no grupo controle.',
+        'A evidência mais forte vem de programas que juntam o exercício de pé curto com outros exercícios, não do pé curto sozinho. Em um ensaio de 2023 com 52\u00A0pessoas com pé chato flexível, Brijwasi e Borkar testaram um programa de seis semanas com:',
+        {
+          list: [
+            'Exercícios de pé curto.',
+            'Trabalho de tornozelo.',
+            'Fortalecimento de quadril.',
+            'Alongamentos.',
+          ],
+        },
+        'O programa mudou duas medidas do formato do arco mais do que no grupo controle.',
         'Uma metanálise de 2024, de Cheng e colegas, analisou o treino de pé curto sozinho em vários ensaios. Os resultados combinados não mostraram melhora significativa na queda do navicular nem no índice de postura do pé no geral. Mas quando os revisores limitaram a análise a programas com mais de seis semanas, a queda do navicular melhorou de forma significativa. A duração do treino importa.',
         'Sobre equilíbrio, um ensaio randomizado de 2012, de Lynn e colegas, comparou quatro semanas de treino de pé curto com quatro semanas de puxar a toalha com os dedos em adultos saudáveis. O grupo do pé curto melhorou o equilíbrio dinâmico mais do que o grupo da toalha.',
-        'Nenhum desses estudos é grande. A evidência apoia o exercício de pé curto como parte de um programa mais amplo de fortalecimento do pé, principalmente para pé chato e dor no arco. Ele não é uma solução isolada, e não foi testado sozinho como tratamento principal para fascite plantar. Para a lista completa de exercícios, veja [exercícios para pé chato](/pt/exercicios-pe-chato/) ou [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
+        'Nenhum desses estudos é grande. **A evidência apoia o exercício de pé curto como parte de um programa mais amplo de fortalecimento do pé, principalmente para pé chato e dor no arco.** Ele não é uma solução isolada, e não foi testado sozinho como tratamento principal para fascite plantar. Para a lista completa de exercícios, veja [exercícios para pé chato](/pt/exercicios-pe-chato/) ou [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
       ],
       cites: [CITE.brijwasi, CITE.cheng, CITE.lynn],
     },

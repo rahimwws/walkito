@@ -38,7 +38,7 @@ export const EX_BAND_INVERSION_FR: Guide = {
       h2: 'Comment faire l’inversion de cheville avec un élastique\u00A0?',
       paragraphs: [
         'Asseyez-vous les jambes allongées devant vous, ou au bord d’une chaise. Passez un élastique de résistance autour de l’intérieur de l’avant du pied de la jambe qui travaille. Fixez l’autre extrémité sous le pied opposé ou autour d’un pied de table, pour que l’élastique tire le pied vers l’extérieur.',
-        'Commencez avec le pied légèrement tourné vers l’extérieur (en éversion). Tournez la plante du pied vers l’intérieur contre l’élastique, en ramenant l’avant du pied vers l’axe du corps. Bougez le pied, pas toute la jambe. Le genou pointe droit devant pendant tout le mouvement. Revenez lentement et recommencez.',
+        'Commencez avec le pied légèrement tourné vers l’extérieur (en éversion). Tournez la plante du pied vers l’intérieur contre l’élastique, en ramenant l’avant du pied vers l’axe du corps. **Bougez le pied, pas toute la jambe.** Le genou pointe droit devant pendant tout le mouvement. Revenez lentement et recommencez.',
         'Commencez avec un élastique léger. Le mouvement est petit. Si le genou tourne ou si la hanche pivote, l’élastique est trop fort ou la jambe compense.',
       ],
       exercises: [
@@ -62,14 +62,22 @@ export const EX_BAND_INVERSION_FR: Guide = {
       keyFact: 'Une étude IRM de 2004 sur 5\u00A0adultes en bonne santé a montré que tourner le pied vers l’intérieur augmentait le signal du tibial postérieur de 50\u00A0%, avec moins de 5\u00A0% de changement dans les muscles voisins (Kulig et coll., 2004).',
       paragraphs: [
         'La cible principale est le tibial postérieur. C’est le muscle le plus profond de l’arrière de la jambe, situé derrière le tibia et la fibula. Son tendon passe derrière la malléole interne (l’os interne de la cheville), puis s’étale en plusieurs expansions qui s’attachent à presque tous les os du milieu du pied.',
-        'Une étude IRM de 2004 de Kulig et coll. a testé trois exercices chez 5\u00A0adultes en bonne santé\u00A0: l’adduction du pied (tourner le pied vers l’intérieur en glissant au sol), la montée sur pointes sur une jambe et la supination du pied en chaîne ouverte. L’adduction du pied a produit l’activation la plus forte du tibial postérieur (50\u00A0% d’augmentation du signal) avec la plus faible activation des muscles voisins (moins de 5\u00A0%). La montée sur pointes sur une jambe activait aussi le tibial postérieur, mais activait fortement le gastrocnémien (99\u00A0%) et le soléaire (39\u00A0%), ce qui en fait un exercice beaucoup moins sélectif pour le tibial postérieur.',
+        'Une étude IRM de 2004 de Kulig et coll. a testé trois exercices chez 5\u00A0adultes en bonne santé\u00A0:',
+        {
+          list: [
+            'L’adduction du pied (tourner le pied vers l’intérieur en glissant au sol).',
+            'La montée sur pointes sur une jambe.',
+            'La supination du pied en chaîne ouverte.',
+          ],
+        },
+        'L’adduction du pied a produit l’activation la plus forte du tibial postérieur (50\u00A0% d’augmentation du signal) avec la plus faible activation des muscles voisins (moins de 5\u00A0%). La montée sur pointes sur une jambe activait aussi le tibial postérieur, mais activait fortement le gastrocnémien (99\u00A0%) et le soléaire (39\u00A0%), ce qui en fait un exercice beaucoup moins sélectif pour le tibial postérieur.',
       ],
       cites: [CITE.kulig],
     },
     {
       h2: 'Pourquoi le tibial postérieur compte-t-il pour la voûte\u00A0?',
       paragraphs: [
-        'Le tibial postérieur est le principal stabilisateur dynamique de la voûte longitudinale interne. À chaque pas, il se contracte pour tenir la voûte pendant la phase d’appui intermédiaire, quand tout votre poids repose sur un pied. Les muscles intrinsèques du pied (entraînés par l’[exercice du pied court](/fr/exercices/pied-court/) et l’exercice pour [écarter les orteils](/fr/exercices/ecarter-orteils/)) assurent un soutien local de la voûte, mais le tibial postérieur fournit la force extrinsèque, plus grande, venue d’en haut.',
+        'Le tibial postérieur est **le principal stabilisateur dynamique de la voûte longitudinale interne.** À chaque pas, il se contracte pour tenir la voûte pendant la phase d’appui intermédiaire, quand tout votre poids repose sur un pied. Les muscles intrinsèques du pied (entraînés par l’[exercice du pied court](/fr/exercices/pied-court/) et l’exercice pour [écarter les orteils](/fr/exercices/ecarter-orteils/)) assurent un soutien local de la voûte, mais le tibial postérieur fournit la force extrinsèque, plus grande, venue d’en haut.',
         'Quand le tendon du tibial postérieur s’affaiblit ou dégénère, la voûte s’affaisse progressivement et le pied part en pronation. Une revue de 2017 de Ling et Lui l’a décrite comme la cause la plus fréquente du pied plat acquis de l’adulte. Une revue systématique de 2018 de Ross et coll. a montré que des programmes d’exercices comprenant un renforcement du tibial postérieur amélioraient la douleur et la fonction dans la dysfonction du tendon tibial postérieur à un stade précoce.',
         'C’est pourquoi les [programmes d’exercices pour pieds plats](/fr/exercices-pieds-plats/) comprennent à la fois des exercices des muscles intrinsèques du pied et un travail du tibial postérieur. Les muscles intrinsèques sont les stabilisateurs locaux. Le tibial postérieur est le principal stabilisateur extrinsèque. Les deux comptent.',
       ],
@@ -78,10 +86,14 @@ export const EX_BAND_INVERSION_FR: Guide = {
     {
       h2: 'Quelles sont les erreurs fréquentes avec l’inversion avec élastique\u00A0?',
       paragraphs: [
-        'L’erreur la plus fréquente est de tourner toute la jambe au lieu du seul pied. Quand la hanche tourne vers l’intérieur pour orienter le pied, le tibial postérieur ne fait presque rien. Gardez le genou pointé droit devant. Seul le pied bouge, au niveau de la cheville.',
-        'Une autre erreur est d’utiliser un élastique trop fort. Le tibial postérieur est un petit muscle profond. Un élastique lourd oblige les plus gros muscles à prendre le relais. Commencez avec un élastique léger et concentrez-vous sur la sensation de travail le long de la malléole interne et de la voûte.',
-        'Laisser le pied revenir brusquement entre les répétitions est un troisième problème. Contrôlez le retour. La phase excentrique, le retour lent, charge le tendon d’une façon qui l’aide à s’adapter. Un retour lent vaut plus qu’une traction rapide.',
-        'Enfin, certaines personnes placent l’élastique trop haut sur le pied, près de l’articulation de la cheville elle-même. L’élastique doit se trouver autour de l’avant du pied, près de la base des orteils, pour que le bras de levier agisse sous le bon angle.',
+        {
+          list: [
+            '**L’erreur la plus fréquente est de tourner toute la jambe au lieu du seul pied.** Quand la hanche tourne vers l’intérieur pour orienter le pied, le tibial postérieur ne fait presque rien. Gardez le genou pointé droit devant. Seul le pied bouge, au niveau de la cheville.',
+            '**Une autre erreur est d’utiliser un élastique trop fort.** Le tibial postérieur est un petit muscle profond. Un élastique lourd oblige les plus gros muscles à prendre le relais. Commencez avec un élastique léger et concentrez-vous sur la sensation de travail le long de la malléole interne et de la voûte.',
+            '**Laisser le pied revenir brusquement entre les répétitions est un troisième problème.** Contrôlez le retour. La phase excentrique, le retour lent, charge le tendon d’une façon qui l’aide à s’adapter. Un retour lent vaut plus qu’une traction rapide.',
+            '**Enfin, certaines personnes placent l’élastique trop haut sur le pied, près de l’articulation de la cheville elle-même.** L’élastique doit se trouver autour de l’avant du pied, près de la base des orteils, pour que le bras de levier agisse sous le bon angle.',
+          ],
+        },
       ],
     },
     {
@@ -89,7 +101,7 @@ export const EX_BAND_INVERSION_FR: Guide = {
       paragraphs: [
         'Les données les plus directes sur le mouvement viennent de l’étude IRM de 2004 de Kulig et coll. Elle a confirmé que l’adduction du pied active sélectivement le tibial postérieur, avec une activation minimale des muscles voisins. L’inversion contre un élastique est donc l’exercice de choix quand le but est de renforcer ce muscle en particulier.',
         'Pour les résultats cliniques, une revue systématique de 2018 de Ross et coll. a étudié les programmes d’exercices pour la dysfonction du tendon tibial postérieur. La plupart des études étaient petites, mais la revue a conclu que les programmes comprenant des exercices excentriques et concentriques du tibial postérieur, souvent associés à un renforcement du mollet et à des orthèses, amélioraient la douleur et la fonction.',
-        'L’exercice n’a pas été testé seul dans un grand essai sur la fasciite plantaire. Son rôle dans le programme Walkito est de soutenir la voûte en renforçant le stabilisateur extrinsèque qui travaille avec les muscles intrinsèques. Pages liées\u00A0: [exercices pour pieds plats](/fr/exercices-pieds-plats/), [exercice du pied court](/fr/exercices/pied-court/), [abduction de hanche](/fr/exercices/abduction-hanche/).',
+        '**L’exercice n’a pas été testé seul dans un grand essai sur la fasciite plantaire.** Son rôle dans le programme Walkito est de soutenir la voûte en renforçant le stabilisateur extrinsèque qui travaille avec les muscles intrinsèques. Pages liées\u00A0: [exercices pour pieds plats](/fr/exercices-pieds-plats/), [exercice du pied court](/fr/exercices/pied-court/), [abduction de hanche](/fr/exercices/abduction-hanche/).',
       ],
       cites: [CITE.kulig, CITE.posteriorTibialReview],
     },

@@ -30,7 +30,7 @@ export const EX_BIG_TOE_LIFT_FR: Guide = {
       h2: 'Qu’est-ce que l’exercice pour lever le gros orteil\u00A0?',
       paragraphs: [
         'Lever le gros orteil est un exercice d’isolation. Vous levez seulement le gros orteil pendant que les quatre autres orteils restent appuyés au sol. Puis vous inversez\u00A0: appuyez le gros orteil au sol et levez les quatre autres. C’est ce va-et-vient qui donne à l’exercice son nom populaire, le yoga des orteils.',
-        'Le but n’est pas la force au sens habituel. C’est le contrôle moteur. Le gros orteil a ses propres muscles (le court et le long extenseur de l’hallux pour le lever, le court et le long fléchisseur de l’hallux pour l’appuyer au sol), mais la plupart des gens ont perdu la capacité de le bouger séparément des autres orteils. L’exercice rétablit ce contrôle indépendant.',
+        'Le but n’est pas la force au sens habituel. **C’est le contrôle moteur.** Le gros orteil a ses propres muscles (le court et le long extenseur de l’hallux pour le lever, le court et le long fléchisseur de l’hallux pour l’appuyer au sol), mais la plupart des gens ont perdu la capacité de le bouger séparément des autres orteils. L’exercice rétablit ce contrôle indépendant.',
       ],
     },
     {
@@ -60,8 +60,16 @@ export const EX_BIG_TOE_LIFT_FR: Guide = {
       keyFact: 'Une étude IRM de 2016 a mesuré l’exercice de lever du gros orteil dans un petit groupe de sportifs et a montré qu’il activait les trois muscles plantaires intrinsèques testés, le court fléchisseur des orteils montrant l’activation la plus élevée, à 18,1\u00A0% (Gooding et coll., 2016).',
       paragraphs: [
         'Les muscles qui lèvent le gros orteil sont le long extenseur de l’hallux (qui part de la jambe) et le court extenseur de l’hallux (situé sur le dessus du pied). Mais l’exercice fait aussi travailler les muscles qui maintiennent les autres orteils au sol, et c’est là que se fait le vrai entraînement.',
-        'Une étude IRM de 2016 de Gooding et coll. a montré que l’exercice d’extension du gros orteil activait le court fléchisseur des orteils (18,1\u00A0%), l’abducteur de l’hallux (16,9\u00A0%) et le court fléchisseur du petit orteil (16,3\u00A0%). Les muscles plantaires intrinsèques travaillaient pour garder les petits orteils à plat pendant que le gros orteil se levait.',
-        'Lever le gros orteil est donc un exercice deux en un. Le côté qui se lève entraîne les extenseurs. Le côté qui appuie au sol entraîne les muscles plantaires intrinsèques, ceux-là mêmes que cible l’[exercice du pied court](/fr/exercices/pied-court/).',
+        'Une étude IRM de 2016 de Gooding et coll. a montré que l’exercice d’extension du gros orteil activait\u00A0:',
+        {
+          list: [
+            'Le court fléchisseur des orteils (18,1\u00A0%).',
+            'L’abducteur de l’hallux (16,9\u00A0%).',
+            'Le court fléchisseur du petit orteil (16,3\u00A0%).',
+          ],
+        },
+        'Les muscles plantaires intrinsèques travaillaient pour garder les petits orteils à plat pendant que le gros orteil se levait.',
+        '**Lever le gros orteil est donc un exercice deux en un.** Le côté qui se lève entraîne les extenseurs. Le côté qui appuie au sol entraîne les muscles plantaires intrinsèques, ceux-là mêmes que cible l’[exercice du pied court](/fr/exercices/pied-court/).',
       ],
       cites: [CITE.gooding],
     },
@@ -70,15 +78,19 @@ export const EX_BIG_TOE_LIFT_FR: Guide = {
       paragraphs: [
         'Le gros orteil est l’interrupteur du mécanisme de treuil. Quand le gros orteil se relève (se plie vers le haut) pendant la phase de poussée de la marche, il tend le fascia plantaire et soulève la voûte. Cette rigidification transforme le pied, d’une plateforme souple qui absorbe les chocs, en un levier rigide qui vous propulse vers l’avant.',
         'Si le gros orteil ne peut pas se relever de façon indépendante, le mécanisme de treuil ne s’enclenche pas complètement. La voûte reste plus plate pendant la poussée, et le pied doit compenser en chargeant davantage d’autres structures. Avec le temps, cela peut contribuer à une fatigue de la voûte, à une [douleur de l’avant du pied](/fr/metatarsalgie-douleur-avant-pied/) et à une tension sur le fascia plantaire.',
-        'Lever le gros orteil ne charge pas le mécanisme de treuil comme le fait une montée sur pointes avec serviette. Ce que l’exercice fait, c’est apprendre au cerveau à activer le gros orteil seul, pour que le treuil puisse faire son travail pendant la marche normale. C’est un exercice de coordination, pas un exercice de force.',
+        'Lever le gros orteil ne charge pas le mécanisme de treuil comme le fait une montée sur pointes avec serviette. Ce que l’exercice fait, c’est apprendre au cerveau à activer le gros orteil seul, pour que le treuil puisse faire son travail pendant la marche normale. **C’est un exercice de coordination, pas un exercice de force.**',
       ],
     },
     {
       h2: 'Quelles sont les erreurs fréquentes quand on lève le gros orteil\u00A0?',
       paragraphs: [
-        'L’erreur la plus fréquente est de lever les cinq orteils ensemble. Si tous les orteils montent en même temps, l’exercice devient une extension générale des orteils et le contrôle indépendant est perdu. Maintenez les petits orteils au sol avec vos doigts si besoin, jusqu’à ce que la séparation se mette en place.',
-        'Une autre erreur est d’utiliser le muscle du tibia (tibial antérieur) pour lever le gros orteil en tirant tout le pied vers le haut. Gardez le pied à plat. Seul le gros orteil bouge.',
-        'Enchaîner les répétitions trop vite est un troisième problème. C’est un exercice de contrôle moteur. La vitesse lui fait perdre son intérêt. Tenez chaque levée les cinq secondes complètes et privilégiez la qualité à la quantité. Si vous ne pouvez faire que trois répétitions propres, trois répétitions propres valent mieux que huit bâclées.',
+        {
+          list: [
+            '**L’erreur la plus fréquente est de lever les cinq orteils ensemble.** Si tous les orteils montent en même temps, l’exercice devient une extension générale des orteils et le contrôle indépendant est perdu. Maintenez les petits orteils au sol avec vos doigts si besoin, jusqu’à ce que la séparation se mette en place.',
+            '**Une autre erreur est d’utiliser le muscle du tibia (tibial antérieur) pour lever le gros orteil en tirant tout le pied vers le haut.** Gardez le pied à plat. Seul le gros orteil bouge.',
+            '**Enchaîner les répétitions trop vite est un troisième problème.** C’est un exercice de contrôle moteur. La vitesse lui fait perdre son intérêt. Tenez chaque levée les cinq secondes complètes et privilégiez la qualité à la quantité. Si vous ne pouvez faire que trois répétitions propres, trois répétitions propres valent mieux que huit bâclées.',
+          ],
+        },
         'Les crampes dans la voûte ou sous le pied sont fréquentes pendant les premières séances. Elles signifient en général que les muscles intrinsèques sont faibles et se fatiguent vite. Arrêtez, massez la zone, et réessayez à la séance suivante.',
       ],
     },
@@ -87,7 +99,7 @@ export const EX_BIG_TOE_LIFT_FR: Guide = {
       paragraphs: [
         'Lever le gros orteil (extension du gros orteil) était l’un des quatre exercices testés dans l’étude IRM de 2016 de Gooding et coll. Les quatre exercices activaient tous les muscles plantaires intrinsèques. Lever le gros orteil n’était l’activateur principal d’aucun muscle en particulier, mais il produisait une activation notable dans tous, en particulier le court fléchisseur des orteils.',
         'Une étude de 2020 d’Amaha et coll. a suivi 41\u00A0personnes (56\u00A0pieds) atteintes de métatarsalgie primaire, une douleur sous l’avant du pied, pendant huit semaines d’exercices des orteils qui comprenaient un travail du gros orteil, le ramassage de serviette et le ramassage de billes. La force de préhension des orteils a augmenté et la douleur de l’avant du pied a baissé entre le début et la fin du programme. L’étude n’avait pas de groupe témoin, donc une partie du changement peut ne pas venir des seuls exercices.',
-        'Aucune étude n’a isolé l’exercice pour lever le gros orteil dans un essai contrôlé sur les résultats. Les données le soutiennent comme élément d’une approche plus large de renforcement du pied. Pages d’exercices liées\u00A0: [exercice du pied court](/fr/exercices/pied-court/), [écarter les orteils](/fr/exercices/ecarter-orteils/), [ramasser la serviette](/fr/exercices/ramasser-serviette-orteils/).',
+        '**Aucune étude n’a isolé l’exercice pour lever le gros orteil dans un essai contrôlé sur les résultats.** Les données le soutiennent comme élément d’une approche plus large de renforcement du pied. Pages d’exercices liées\u00A0: [exercice du pied court](/fr/exercices/pied-court/), [écarter les orteils](/fr/exercices/ecarter-orteils/), [ramasser la serviette](/fr/exercices/ramasser-serviette-orteils/).',
       ],
       cites: [CITE.gooding, CITE.amaha],
     },

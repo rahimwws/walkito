@@ -34,13 +34,17 @@ export const ARCH_PAIN_PT: Guide = {
     {
       h2: 'O que causa dor no arco do pé?',
       paragraphs: [
-        'O arco é sustentado pela fáscia plantar, pelo tendão tibial posterior, pelos músculos intrínsecos do pé e pelos ossos e ligamentos do meio do pé. Dor no arco quer dizer que uma ou mais dessas estruturas está sob mais estresse do que aguenta. As causas mais comuns se dividem em alguns padrões.',
-        '**Fascite plantar** é a principal causa isolada. A fáscia plantar, uma faixa grossa de tecido que vai do calcanhar até a base dos dedos, fica irritada com a carga repetida. A dor normalmente é pior perto do calcanhar, mas muitas vezes se estende para o arco, principalmente quando a parte da fáscia do lado do arco está envolvida. A marca registrada é uma dor forte nos primeiros passos depois do repouso. Veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) e o [guia geral de fascite plantar](/pt/fascite-plantar/) para o guia completo.',
-        '**Pé chato e arco caído** causam dor no arco ao esticar demais a fáscia plantar e o tendão tibial posterior. Quando o arco desaba ao ficar em pé e ao andar, essas estruturas recebem uma carga que elas não têm formato para aguentar por muito tempo. Veja [exercícios para pé chato](/pt/exercicios-pe-chato/) e o [guia geral de pé chato](/pt/pe-chato/).',
-        '**A disfunção do tendão tibial posterior** é a causa mais comum de pé chato adquirido do adulto. O tendão tibial posterior passa por trás do tornozelo, do lado de dentro, e por baixo do arco, segurando-o. Quando esse tendão enfraquece ou rompe, o arco cai aos poucos. A dor aparece na parte de dentro do tornozelo e no arco, e piora com a atividade. Uma revisão sistemática de 2018 sobre exercício para essa disfunção encontrou evidência limitada, mas promissora, para fortalecimento e alongamento. Veja [disfunção do tendão tibial posterior](/pt/disfuncao-tendao-tibial-posterior/).',
-        '**O pé cavo** causa dor no arco de outro jeito. Um arco alto e rígido não flexiona o suficiente para absorver o impacto, então a força se concentra embaixo do calcanhar e na parte da frente do pé, em vez de se espalhar pelo meio do pé. A dor embaixo do arco num pé cavo muitas vezes vem de uma fáscia plantar tensa. Veja [exercícios para pé cavo](/pt/pe-cavo-exercicios/).',
-        '**A sobrecarga** sem uma condição com nome é comum em quem aumenta de repente o quanto anda, corre ou fica em pé. Os músculos do arco e a fáscia plantar ainda não estão fortes o bastante para a nova exigência, e reclamam. Isso normalmente melhora com uma volta gradual à carga anterior mais fortalecimento da panturrilha e do arco.',
-        '**A irritação de nervo**, como a síndrome do túnel do tarso, pode causar queimação, formigamento ou dormência ao longo do arco. O nervo tibial posterior passa por trás do osso de dentro do tornozelo e entra na sola do pé. Se ele é comprimido, a dor pode imitar a fascite plantar, mas vem com sintomas sensitivos (de sensibilidade) que a fascite não causa. Isso precisa de um profissional de saúde.',
+        'O arco é sustentado pela fáscia plantar, pelo tendão tibial posterior, pelos músculos intrínsecos do pé e pelos ossos e ligamentos do meio do pé. Dor no arco quer dizer que uma ou mais dessas estruturas está sob mais estresse do que aguenta. As causas mais comuns se dividem em alguns padrões:',
+        {
+          list: [
+            '**Fascite plantar** é a principal causa isolada. A fáscia plantar, uma faixa grossa de tecido que vai do calcanhar até a base dos dedos, fica irritada com a carga repetida. A dor normalmente é pior perto do calcanhar, mas muitas vezes se estende para o arco, principalmente quando a parte da fáscia do lado do arco está envolvida. A marca registrada é uma dor forte nos primeiros passos depois do repouso. Veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) e o [guia geral de fascite plantar](/pt/fascite-plantar/) para o guia completo.',
+            '**Pé chato e arco caído** causam dor no arco ao esticar demais a fáscia plantar e o tendão tibial posterior. Quando o arco desaba ao ficar em pé e ao andar, essas estruturas recebem uma carga que elas não têm formato para aguentar por muito tempo. Veja [exercícios para pé chato](/pt/exercicios-pe-chato/) e o [guia geral de pé chato](/pt/pe-chato/).',
+            '**A disfunção do tendão tibial posterior** é a causa mais comum de pé chato adquirido do adulto. O tendão tibial posterior passa por trás do tornozelo, do lado de dentro, e por baixo do arco, segurando-o. Quando esse tendão enfraquece ou rompe, o arco cai aos poucos. A dor aparece na parte de dentro do tornozelo e no arco, e piora com a atividade. Uma revisão sistemática de 2018 sobre exercício para essa disfunção encontrou evidência limitada, mas promissora, para fortalecimento e alongamento. Veja [disfunção do tendão tibial posterior](/pt/disfuncao-tendao-tibial-posterior/).',
+            '**O pé cavo** causa dor no arco de outro jeito. Um arco alto e rígido não flexiona o suficiente para absorver o impacto, então a força se concentra embaixo do calcanhar e na parte da frente do pé, em vez de se espalhar pelo meio do pé. A dor embaixo do arco num pé cavo muitas vezes vem de uma fáscia plantar tensa. Veja [exercícios para pé cavo](/pt/pe-cavo-exercicios/).',
+            '**A sobrecarga** sem uma condição com nome é comum em quem aumenta de repente o quanto anda, corre ou fica em pé. Os músculos do arco e a fáscia plantar ainda não estão fortes o bastante para a nova exigência, e reclamam. Isso normalmente melhora com uma volta gradual à carga anterior mais fortalecimento da panturrilha e do arco.',
+            '**A irritação de nervo**, como a síndrome do túnel do tarso, pode causar queimação, formigamento ou dormência ao longo do arco. O nervo tibial posterior passa por trás do osso de dentro do tornozelo e entra na sola do pé. Se ele é comprimido, a dor pode imitar a fascite plantar, mas vem com sintomas sensitivos (de sensibilidade) que a fascite não causa. Isso precisa de um profissional de saúde.',
+          ],
+        },
       ],
       cites: [CITE.guideline, CITE.posteriorTibialReview, CITE.riddle],
     },
@@ -152,11 +156,15 @@ export const ARCH_PAIN_PT: Guide = {
     {
       h2: 'Quando a dor no arco é sinal de outra coisa?',
       paragraphs: [
-        'A maior parte da dor no arco responde a alongamento, ajuste de carga e tempo. Mas alguns padrões apontam para condições que precisam de um profissional de saúde antes dos exercícios.',
-        'Dor com dormência, formigamento ou queimação pode vir da síndrome do túnel do tarso, em que o nervo tibial posterior é comprimido atrás do tornozelo, do lado de dentro. Isso precisa de um diagnóstico clínico, não só de exercícios.',
-        'Dor no arco que vem junto com um achatamento progressivo do pé, principalmente de um lado, pode indicar uma disfunção do tendão tibial posterior numa fase mais avançada. O teste de elevação de calcanhar em uma perna é uma checagem simples: se você não consegue subir totalmente na ponta de um pé, ou se dói bem mais de um lado, um profissional de saúde deve avaliar o tendão antes de você pôr mais carga nele.',
-        'Dor num ponto específico que piora sem parar com a atividade e não alivia com o repouso normal pode ser uma fratura por estresse de um dos ossinhos do meio do pé. Isso precisa de exame de imagem, não de alongamento.',
-        'Dor no arco em crianças de 8 a 15\u00A0anos pode ser [apofisite do calcâneo (doença de Sever)](/pt/doenca-de-sever/), que envolve a placa de crescimento e não a fáscia. Essa página explica o que ajuda nas crianças. O Walkito é feito para adultos.',
+        'A maior parte da dor no arco responde a alongamento, ajuste de carga e tempo. Mas alguns padrões apontam para condições que precisam de um profissional de saúde antes dos exercícios:',
+        {
+          list: [
+            '**Sintomas de nervo:** Dor com dormência, formigamento ou queimação pode vir da síndrome do túnel do tarso, em que o nervo tibial posterior é comprimido atrás do tornozelo, do lado de dentro. Isso precisa de um diagnóstico clínico, não só de exercícios.',
+            '**Achatamento de um lado:** Dor no arco que vem junto com um achatamento progressivo do pé, principalmente de um lado, pode indicar uma disfunção do tendão tibial posterior numa fase mais avançada. O teste de elevação de calcanhar em uma perna é uma checagem simples: se você não consegue subir totalmente na ponta de um pé, ou se dói bem mais de um lado, um profissional de saúde deve avaliar o tendão antes de você pôr mais carga nele.',
+            '**Um ponto doloroso:** Dor num ponto específico que piora sem parar com a atividade e não alivia com o repouso normal pode ser uma fratura por estresse de um dos ossinhos do meio do pé. Isso precisa de exame de imagem, não de alongamento.',
+            '**Crianças:** Dor no arco em crianças de 8 a 15\u00A0anos pode ser [apofisite do calcâneo (doença de Sever)](/pt/doenca-de-sever/), que envolve a placa de crescimento e não a fáscia. Essa página explica o que ajuda nas crianças. O Walkito é feito para adultos.',
+          ],
+        },
       ],
       cites: [CITE.posteriorTibialReview],
     },
@@ -175,7 +183,7 @@ export const ARCH_PAIN_PT: Guide = {
       paragraphs: [
         'A diretriz de 2023 para dor no calcanhar dá grau B contra usar palmilhas sozinhas para a dor da fascite plantar no curto prazo. Palmilhas combinadas com outros cuidados, como alongamento, recebem um C a favor. Calçados com bom suporte são muito recomendados e podem reduzir o desconforto, mas nenhum ensaio grande mostrou que eles sejam melhores que alongamento e trabalho de força.',
         'No pé chato, um suporte para o arco medial pode reduzir o desabamento do arco ao ficar em pé e ao andar, dando menos trabalho ao tendão tibial posterior e à fáscia plantar. No pé cavo, uma palmilha amortecida absorve o impacto que o arco rígido não absorve. Em um ensaio de 2006 com 154\u00A0pessoas com dor de pé cavo, palmilhas sob medida melhoraram a dor e a função mais que uma palmilha placebo aos três meses (Burns e colegas, 2006).',
-        'Calçados e palmilhas ajudam a controlar os sintomas enquanto o exercício constrói a capacidade de que o pé precisa. Um não substitui o outro.',
+        '**Calçados e palmilhas ajudam a controlar os sintomas enquanto o exercício constrói a capacidade de que o pé precisa.** Um não substitui o outro.',
       ],
       cites: [CITE.guideline],
     },

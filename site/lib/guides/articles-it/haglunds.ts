@@ -49,7 +49,7 @@ export const HAGLUNDS_IT: Guide = {
     {
       h2: 'Che legame c’è tra il morbo di Haglund e la tendinopatia achillea inserzionale?',
       paragraphs: [
-        'Il morbo di Haglund e la tendinopatia achillea inserzionale compaiono spesso insieme, ma non sono lo stesso problema. La tendinopatia inserzionale è un dolore nel punto in cui il tendine d’Achille si attacca all’osso del tallone, di solito da sovraccarico. Il morbo di Haglund è una forma particolare dell’osso. La sporgenza può irritare il tendine da dietro, e l’inserzione del tendine può risentire della stessa compressione che infiamma la borsa.',
+        'Il morbo di Haglund e la tendinopatia achillea inserzionale compaiono spesso insieme, ma **non sono lo stesso problema.** La tendinopatia inserzionale è un dolore nel punto in cui il tendine d’Achille si attacca all’osso del tallone, di solito da sovraccarico. Il morbo di Haglund è una forma particolare dell’osso. La sporgenza può irritare il tendine da dietro, e l’inserzione del tendine può risentire della stessa compressione che infiamma la borsa.',
         'Il legame pratico: se hai una sporgenza di Haglund e dolore dietro il tallone, il dolore può venire dalla borsa, dall’inserzione del tendine o da entrambe. Un professionista sanitario può distinguerle controllando dove il punto dolente è più forte e se lo stretching o il carico riproducono il dolore.',
         'La linea guida del 2024 sulla tendinopatia achillea separa chiaramente la forma della porzione media da quella inserzionale. Per i problemi inserzionali, che comprendono i casi legati al morbo di Haglund, il protocollo standard delle discese eccentriche del tallone va modificato. Una dorsiflessione profonda, cioè lasciar scendere il tallone sotto il bordo del gradino, schiaccia il tendine contro l’osso e può riaccendere i sintomi.',
       ],
@@ -67,9 +67,18 @@ export const HAGLUNDS_IT: Guide = {
     {
       h2: 'Quali sono le opzioni conservative per il morbo di Haglund?',
       paragraphs: [
-        'Una revisione narrativa del 2020 elenca i primi passi conservativi: cambiare scarpe (evitare quelle con contrafforte del tallone rigido, usare scarpe aperte dietro o imbottire la zona del tallone), rialzi per il tallone per ridurre la tensione sull’Achille, allungare gastrocnemio e soleo, rinforzare il polpaccio e modificare l’attività.',
+        'Una revisione narrativa del 2020 elenca i primi passi conservativi:',
+        {
+          list: [
+            '**Cambiare scarpe:** evitare quelle con contrafforte del tallone rigido, usare scarpe aperte dietro o imbottire la zona del tallone.',
+            '**Rialzi per il tallone:** per ridurre la tensione sull’Achille.',
+            '**Allungamento:** gastrocnemio e soleo.',
+            '**Rinforzo:** il polpaccio.',
+            '**Modificare l’attività.**',
+          ],
+        },
         'Nessuno studio randomizzato controllato ha testato uno di questi interventi proprio per il morbo di Haglund. Le prove sono opinioni di esperti e serie di casi. La revisione chirurgica del 2022 ha notato che la maggior parte degli autori raccomanda almeno sei mesi di cure conservative prima di valutare la chirurgia.',
-        'Il cambiamento più immediato spesso riguarda la scarpa. Se un contrafforte rigido preme sulla sporgenza, togliere quella pressione può ridurre in fretta i sintomi. Scarpe aperte dietro, scarpe con un contrafforte morbido o flessibile, o un’imbottitura messa dentro la scarpa intorno (non sopra) alla sporgenza sono opzioni pratiche.',
+        '**Il cambiamento più immediato spesso riguarda la scarpa.** Se un contrafforte rigido preme sulla sporgenza, togliere quella pressione può ridurre in fretta i sintomi. Scarpe aperte dietro, scarpe con un contrafforte morbido o flessibile, o un’imbottitura messa dentro la scarpa intorno (non sopra) alla sporgenza sono opzioni pratiche.',
       ],
       cites: [CITE.chooRearfoot, CITE.yuenHaglund],
     },
@@ -147,7 +156,15 @@ export const HAGLUNDS_IT: Guide = {
       keyFact: 'Una revisione sistematica del 2022 su 20\u00A0studi ha trovato che sia la chirurgia aperta sia quella endoscopica miglioravano i punteggi di funzionalità AOFAS, con un recupero più breve per le tecniche endoscopiche (Yuen e colleghi, 2022).',
       paragraphs: [
         'Della chirurgia si parla dopo che almeno sei mesi di gestione conservativa non hanno dato un sollievo sufficiente. La revisione sistematica del 2022 di Yuen e colleghi ha incluso 20\u00A0studi e ha trovato che sia le tecniche aperte sia quelle endoscopiche miglioravano i punteggi AOFAS (American Orthopaedic Foot and Ankle Society). Gli approcci endoscopici mostravano tempi di recupero più brevi.',
-        'L’intervento di solito consiste nel rimuovere la sporgenza ossea (calcaneoplastica), asportare la borsa infiammata e in alcuni casi pulire o riattaccare il tendine d’Achille. Le complicazioni possono includere problemi di guarigione della ferita, lesioni ai nervi e indebolimento del tendine. La decisione spetta a te e al tuo chirurgo.',
+        'L’intervento di solito consiste nel:',
+        {
+          list: [
+            'Rimuovere la sporgenza ossea (calcaneoplastica).',
+            'Asportare la borsa infiammata.',
+            'In alcuni casi, pulire o riattaccare il tendine d’Achille.',
+          ],
+        },
+        'Le complicazioni possono includere problemi di guarigione della ferita, lesioni ai nervi e indebolimento del tendine. La decisione spetta a te e al tuo chirurgo.',
         'Questa pagina non consiglia né sconsiglia la chirurgia. Le misure conservative descritte sopra sono il punto da cui parte la maggior parte delle persone, e molte rispondono abbastanza bene da evitare l’operazione. Se sei mesi di cambio di scarpe, esercizi e modifiche dell’attività non hanno aiutato, uno specialista di piede e caviglia può parlarti delle opzioni chirurgiche.',
       ],
       cites: [CITE.yuenHaglund],
@@ -157,7 +174,7 @@ export const HAGLUNDS_IT: Guide = {
       paragraphs: [
         'Le scarpe non creano la sporgenza ossea. La forma del calcagno dipende in parte dalla genetica. Ma le scarpe con un contrafforte del tallone rigido e duro possono irritare una sporgenza che altrimenti non farebbe male. Da qui viene il nome inglese «pump bump», per il retro rigido delle scarpe tipo décolleté.',
         'Scarpe da evitare: qualsiasi scarpa con un contrafforte del tallone duro e stretto che preme dietro il tallone. Scarpe da cercare: bordi del tallone morbidi o imbottiti, retro leggermente aperto o flessibile e abbastanza spazio perché il contrafforte non affondi. Anche i rialzi per il tallone dentro la scarpa possono spostare leggermente il tendine d’Achille lontano dalla sporgenza.',
-        'Cambiare scarpe è il passo più immediato da mettere in pratica e quello raccomandato in modo più costante dalle opinioni degli esperti. Se riesci a togliere la pressione, spesso riesci a ridurre il dolore.',
+        'Cambiare scarpe è il passo più immediato da mettere in pratica e quello raccomandato in modo più costante dalle opinioni degli esperti. **Se riesci a togliere la pressione, spesso riesci a ridurre il dolore.**',
       ],
       cites: [CITE.chooRearfoot, CITE.yuenHaglund],
     },

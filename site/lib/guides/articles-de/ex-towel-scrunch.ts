@@ -57,9 +57,17 @@ export const EX_TOWEL_SCRUNCH_DE: Guide = {
     {
       h2: 'Welche Muskeln trainiert das Handtuchgreifen?',
       paragraphs: [
-        'Handtuchgreifen trainiert die Zehenbeuger: den Flexor digitorum brevis (den kurzen Zehenbeuger im Fuß), den Flexor hallucis brevis (den kurzen Beuger des großen Zehs) und den Quadratus plantae. Das sind kurze, intrinsische Fußmuskeln. Die Übung bezieht aber auch die extrinsischen Zehenbeuger ein: den Flexor digitorum longus und den Flexor hallucis longus, die vom Schienbein über das Sprunggelenk bis zu den Zehen laufen.',
+        'Handtuchgreifen trainiert die Zehenbeuger:',
+        {
+          list: [
+            'Den Flexor digitorum brevis (den kurzen Zehenbeuger im Fuß).',
+            'Den Flexor hallucis brevis (den kurzen Beuger des großen Zehs).',
+            'Den Quadratus plantae.',
+          ],
+        },
+        'Das sind kurze, intrinsische Fußmuskeln. Die Übung bezieht aber auch die extrinsischen Zehenbeuger ein: den Flexor digitorum longus und den Flexor hallucis longus, die vom Schienbein über das Sprunggelenk bis zu den Zehen laufen.',
         'Eine EMG-Studie von Jung und Kollegen (2011) verglich die Muskelaktivität beim Handtuchgreifen und bei der Kurzer-Fuß-Übung. Sie fand, dass der Abductor hallucis, der Muskel, der am meisten dafür sorgt, dass das Gewölbe oben bleibt, bei der Kurzer-Fuß-Übung über viermal aktiver war als beim Handtuchgreifen. Das Handtuchgreifen brachte stattdessen mehr Aktivität in den extrinsischen Zehenbeugern.',
-        'Das heißt: Handtuchgreifen ist eine gute Übung für die Greifkraft der Zehen, zielt aber weniger gezielt auf die kurzen Gewölbemuskeln als die [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/).',
+        'Das heißt: **Handtuchgreifen ist eine gute Übung für die Greifkraft der Zehen**, zielt aber weniger gezielt auf die kurzen Gewölbemuskeln als die [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/).',
       ],
       cites: [CITE.jung],
     },
@@ -77,7 +85,8 @@ export const EX_TOWEL_SCRUNCH_DE: Guide = {
       keyFact: 'In einer Studie von 2020 mit 41\u00A0Personen (56\u00A0Füße) mit Metatarsalgie waren nach einem achtwöchigen Zehenprogramm mit Handtuchgreifen und Murmelaufheben die Schmerzen geringer und die Greifkraft der Zehen besser, ohne Kontrollgruppe (Amaha und Kollegen, 2020).',
       paragraphs: [
         'Handtuchgreifen passt zu Menschen, die neu mit Fußübungen anfangen und einen einfachen Einstieg wollen. Es passt auch zu Menschen mit schwacher Greifkraft in den Zehen, weil die Übung direkt trainiert, die Zehen unter Last zu beugen.',
-        'Eine Studie von Amaha und Kollegen von 2020 begleitete 41\u00A0Personen (56\u00A0Füße) mit primärer Metatarsalgie, also Schmerzen unter dem Fußballen, durch ein achtwöchiges Zehenprogramm mit Handtuchgreifen und Murmelaufheben. Greifkraft der Zehen und Schmerzwerte verbesserten sich beide zwischen Beginn und Ende des Programms. Es gab keine Kontrollgruppe, deshalb könnte ein Teil der Veränderung auf die Zeit oder die Aufmerksamkeit zurückgehen statt auf die Übungen selbst. Greifkraft in den Zehen kann auch für ältere Menschen mit Sturzrisiko wichtig sein, weil die Zehen beim Stehen und Gehen beim Gleichgewicht helfen.',
+        'Eine Studie von Amaha und Kollegen von 2020 begleitete 41\u00A0Personen (56\u00A0Füße) mit primärer Metatarsalgie, also Schmerzen unter dem Fußballen, durch ein achtwöchiges Zehenprogramm mit Handtuchgreifen und Murmelaufheben. Greifkraft der Zehen und Schmerzwerte verbesserten sich beide zwischen Beginn und Ende des Programms. Es gab keine Kontrollgruppe, deshalb könnte ein Teil der Veränderung auf die Zeit oder die Aufmerksamkeit zurückgehen statt auf die Übungen selbst.',
+        'Greifkraft in den Zehen kann auch für ältere Menschen mit Sturzrisiko wichtig sein, weil die Zehen beim Stehen und Gehen beim Gleichgewicht helfen.',
         'Wenn dein Hauptziel ist, ein flaches Gewölbe anzuheben, sind die [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/) und das umfassendere [Übungsprogramm bei Plattfüßen](/de/plattfuss-uebungen/) gezielter. Wenn dein Hauptziel Greifkraft in den Zehen und die allgemeine Aktivierung der Fußmuskeln ist, passt das Handtuchgreifen gut.',
       ],
       cites: [CITE.amaha],
@@ -85,10 +94,14 @@ export const EX_TOWEL_SCRUNCH_DE: Guide = {
     {
       h2: 'Was sind die häufigsten Fehler beim Handtuchgreifen?',
       paragraphs: [
-        'Der häufigste Fehler ist, die Ferse vom Boden zu heben. Wenn sich die Ferse hebt, übernimmt die Wade, und die Fußmuskeln machen weniger. Drück die Ferse bei jeder Wiederholung nach unten.',
-        'Ein weiterer Fehler ist, zu schnell zu ziehen. Ein schnelles Wegreißen des Handtuchs nutzt Schwung statt Muskelkraft. Zieh langsam und halte das Zusammenziehen die vollen fünf Sekunden, bevor du loslässt.',
-        'Manche greifen nur mit dem großen Zeh und vergessen die kleineren Zehen. Versuch, alle fünf Zehen zusammen einzusetzen. Wenn die kleinen Zehen anfangs nicht mitmachen, ist das normal. Die Koordination wird mit Übung besser.',
-        'Und lass den Fuß nicht seitlich über das Handtuch rutschen. Der Zug sollte gerade nach hinten gehen, von den Zehen Richtung Ferse. Wenn das Handtuch zur Seite wandert, leg es neu hin und achte darauf, dass alle Zehen gleichmäßig mitarbeiten.',
+        {
+          list: [
+            '**Der häufigste Fehler ist, die Ferse vom Boden zu heben.** Wenn sich die Ferse hebt, übernimmt die Wade, und die Fußmuskeln machen weniger. Drück die Ferse bei jeder Wiederholung nach unten.',
+            '**Ein weiterer Fehler ist, zu schnell zu ziehen.** Ein schnelles Wegreißen des Handtuchs nutzt Schwung statt Muskelkraft. Zieh langsam und halte das Zusammenziehen die vollen fünf Sekunden, bevor du loslässt.',
+            '**Manche greifen nur mit dem großen Zeh und vergessen die kleineren Zehen.** Versuch, alle fünf Zehen zusammen einzusetzen. Wenn die kleinen Zehen anfangs nicht mitmachen, ist das normal. Die Koordination wird mit Übung besser.',
+            '**Und lass den Fuß nicht seitlich über das Handtuch rutschen.** Der Zug sollte gerade nach hinten gehen, von den Zehen Richtung Ferse. Wenn das Handtuch zur Seite wandert, leg es neu hin und achte darauf, dass alle Zehen gleichmäßig mitarbeiten.',
+          ],
+        },
       ],
     },
   ],
