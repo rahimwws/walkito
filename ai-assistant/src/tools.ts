@@ -221,7 +221,10 @@ function factsFor(area: PlanArea) {
     case 'shin':
       return { goal: null, sport: null, areas: ['shin'], rigidFoot: false };
     case 'general_plus':
-      return { goal: 'stronger', sport: null, areas: [], rigidFoot: false };
+      // The goal the app's onboarding prefills from a code for "no pain, just
+      // stronger feet" (pages/onboarding/model/plan-code.ts): the plan the
+      // chat shows is the plan the app then builds.
+      return { goal: 'injuryfree', sport: null, areas: [], rigidFoot: false };
   }
 }
 
