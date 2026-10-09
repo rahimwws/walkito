@@ -526,7 +526,7 @@ export const HEEL_PAIN_DE: Guide = {
       paragraphs: [
         'Stützende Schuhe helfen, aber Einlagen allein reichen für die meisten Menschen nicht. Die Leitlinie von 2023 bewertet Orthesen (Einlagen und Gewölbestützen) als alleinige Option mit **B dagegen**, das heißt, die Belege sprechen dagegen, sich allein auf sie zu verlassen. In Kombination mit Dehnen und Krafttraining bekommen Orthesen ein **C**.',
         'Nachtschienen, 1 bis 3\u00A0Monate im Schlaf getragen, bekommen die beste Bewertung der Leitlinie, **A**, für Menschen, die bei den ersten Schritten jeden Morgen immer wieder Schmerzen haben. Sie halten das Sprunggelenk so, dass sich die Plantarfaszie über Nacht nicht verkürzt. Frag eine medizinische Fachperson, ob sie für dich einen Versuch wert sind.',
-        'Die Leitlinie bewertet keine bestimmten Schuhtypen, aber Schuhe ohne Halt gelten allgemein als Risikofaktor. Schuhe mit Gewölbestütze und fester Fersenkappe übernehmen einen Teil der Last, die die Plantarfaszie sonst allein tragen würde. Wenn deine Füße nach einem langen Tag auf den Beinen wehtun, lies [Fußschmerzen vom langen Stehen](/feet-hurt-standing-all-day/) (auf Englisch). Wer im Schichtdienst arbeitet, kann mit [Fußschmerzen in der Pflege](/nurses-foot-pain/) (auf Englisch) anfangen.',
+        'Die Leitlinie bewertet keine bestimmten Schuhtypen, aber Schuhe ohne Halt gelten allgemein als Risikofaktor. Schuhe mit Gewölbestütze und fester Fersenkappe übernehmen einen Teil der Last, die die Plantarfaszie sonst allein tragen würde. Wenn deine Füße nach einem langen Tag auf den Beinen wehtun, lies [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/). Wer im Schichtdienst arbeitet, kann mit [Fußschmerzen in der Pflege](/de/fussschmerzen-pflege/) anfangen.',
       ],
       cites: [CITE.guideline],
     },
@@ -583,7 +583,7 @@ export const HEEL_PAIN_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: `Du musst dir Reihenfolge, Dosis und die Dauer jeder Übung nicht selbst überlegen. Walkito baut einen Plan, Woche für Woche, rund um ein Ziel. Bei Fersenschmerzen ist das erste Ziel ein besserer Morgen: Schmerz bei oder unter 1/10 an ${PROGRAM.painFreeDays}\u00A0Tagen am Stück.`,
     more: [
-      `Du wählst ${DAYS} Tage pro Woche und Einheiten von ${MINUTES}\u00A0Minuten. Alle ${PROGRAM.testEveryDays}\u00A0Tage (alle ${PROGRAM.testEveryDaysAfterGoal}, sobald dieses Ziel erreicht ist) prüft ein kurzer Test [Wadenausdauer](/calf-raise-test/) (auf Englisch), Gewölbehalten und Gleichgewicht, sodass du siehst, was sich verändert.`,
+      `Du wählst ${DAYS} Tage pro Woche und Einheiten von ${MINUTES}\u00A0Minuten. Alle ${PROGRAM.testEveryDays}\u00A0Tage (alle ${PROGRAM.testEveryDaysAfterGoal}, sobald dieses Ziel erreicht ist) prüft ein kurzer Test [Wadenausdauer](/de/fersenheben-test/), Gewölbehalten und Gleichgewicht, sodass du siehst, was sich verändert.`,
     ],
     cta: `Fang mit ${PROGRAM.sessionMinutes[0]}\u00A0Minuten am Tag an.`,
   },

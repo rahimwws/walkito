@@ -125,7 +125,7 @@ export const PF_DURATION_FR: Guide = {
       paragraphs: [
         'Le tableau ci-dessus est clair\u00A0: les étirements et le renforcement ont le soutien le plus large. Les options en cabinet (laser, dry needling, ondes de choc) ont quelques preuves, mais passent après l’exercice dans le classement de la recommandation. La chirurgie est réservée au petit pourcentage de cas qui ne répondent à rien d’autre, et la recommandation ne lui donne pas une place importante.',
         'Si vous faites les exercices régulièrement depuis plusieurs mois et que la douleur du matin ne s’améliore pas, c’est un bon moment pour consulter un professionnel de santé et parler des options ci-dessus. C’est aussi un bon moment pour vérifier que le diagnostic est le bon\u00A0: voir [la douleur au talon au réveil](/fr/douleur-talon-au-reveil/) pour les autres problèmes qui partagent le même schéma.',
-        'Pour les coureurs, les changements de charge font souvent partie du tableau\u00A0: [douleur au talon en course à pied](/heel-pain-runners/) (en anglais) et [mal aux pieds après une journée debout](/feet-hurt-standing-all-day/) (en anglais) traitent de cet aspect.',
+        'Pour les coureurs, les changements de charge font souvent partie du tableau\u00A0: [douleur au talon en course à pied](/heel-pain-runners/) (en anglais) et [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) traitent de cet aspect.',
       ],
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },

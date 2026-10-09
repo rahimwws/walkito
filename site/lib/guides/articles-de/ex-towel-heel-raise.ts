@@ -30,7 +30,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
       h2: 'Was trainiert das Fersenheben mit Handtuch?',
       paragraphs: [
         'Das Fersenheben mit Handtuch trainiert Gastrocnemius und Soleus (die beiden Wadenmuskeln), die Achillessehne und die Plantarfaszie. Das zusammengerollte Handtuch beugt die Zehen oben in der Bewegung nach oben, und das zieht über den Windlass-Mechanismus an der Plantarfaszie. Ohne Handtuch trainiert die Übung vor allem die Wade. Mit Handtuch übernimmt die Faszie einen Teil der Last.',
-        'Deshalb hat die Rathleff-Studie bei Plantarfasziitis gezielt das Handtuch benutzt statt eines einfachen Fersenhebens. Das Ziel ist, die Kette aus Wade, Achillessehne und Faszie gemeinsam zu belasten. Wenn dein Schmerz in der Achillessehne sitzt und nicht unter dem Fuß, ist [exzentrisches Fersenabsenken](/exercises/eccentric-heel-drops/) (auf Englisch) ohne Handtuch der bessere Startpunkt.',
+        'Deshalb hat die Rathleff-Studie bei Plantarfasziitis gezielt das Handtuch benutzt statt eines einfachen Fersenhebens. Das Ziel ist, die Kette aus Wade, Achillessehne und Faszie gemeinsam zu belasten. Wenn dein Schmerz in der Achillessehne sitzt und nicht unter dem Fuß, ist [exzentrisches Fersenabsenken](/de/uebungen/exzentrisches-fersenabsenken/) ohne Handtuch der bessere Startpunkt.',
       ],
       cites: [CITE.rathleff],
     },
@@ -81,13 +81,13 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
       paragraphs: [
         'Zu schnell zu werden ist der häufigste Fehler. Drei Sekunden Absenken halten die Wade lange genug unter Spannung, um Kraft aufzubauen. Hoch- und Runterfedern macht daraus eine Ausdauerübung, keine Kraftübung.',
         'Wenn das Handtuch verrutscht und nur noch ein oder zwei Zehen darauf liegen, sinkt die Last auf der Faszie. Alle fünf Zehen sollten auf dem Handtuch liegen. Wenn das Handtuch immer wieder rutscht, falte es dicker oder nimm ein Handtuch statt eines Badetuchs.',
-        'Auf einem Bein anzufangen, wenn beidbeiniges Fersenheben noch schwerfällt, führt zu schlechter Technik und Ausweichbewegungen. Wenn einbeiniges Fersenheben auf einer Stufe gerade noch zu viel ist, fang mit [beidbeinigem Fersenheben](/exercises/calf-raises/) (auf Englisch) auf dem Boden an und steigere dich.',
+        'Auf einem Bein anzufangen, wenn beidbeiniges Fersenheben noch schwerfällt, führt zu schlechter Technik und Ausweichbewegungen. Wenn einbeiniges Fersenheben auf einer Stufe gerade noch zu viel ist, fang mit [beidbeinigem Fersenheben](/de/uebungen/fersenheben/) auf dem Boden an und steigere dich.',
       ],
     },
     {
       h2: 'Leichtere und schwerere Varianten',
       paragraphs: [
-        'Wenn das volle Fersenheben mit Handtuch auf einer Stufe zu schwer ist, geh in der Wadenkette zurück. [Fersenheben im Sitzen](/exercises/calf-raises/) (auf Englisch) hat die geringste Last. Danach kommt Fersenheben beidbeinig im Stehen. Dann Fersenheben mit Halten oben. Dann das einbeinige Fersenheben mit Handtuch auf einer Stufe. Jede Stufe sollte sich zwei Einheiten lang machbar anfühlen, bevor du weitergehst.',
+        'Wenn das volle Fersenheben mit Handtuch auf einer Stufe zu schwer ist, geh in der Wadenkette zurück. [Fersenheben im Sitzen](/de/uebungen/fersenheben/) hat die geringste Last. Danach kommt Fersenheben beidbeinig im Stehen. Dann Fersenheben mit Halten oben. Dann das einbeinige Fersenheben mit Handtuch auf einer Stufe. Jede Stufe sollte sich zwei Einheiten lang machbar anfühlen, bevor du weitergehst.',
         'Wenn dein Körpergewicht auf einem Bein zu leicht ist, nimm Last dazu. Die Rathleff-Studie nutzte einen Rucksack mit Büchern oder Wasserflaschen. Im Fitnessstudio gehen auch eine Wadenmaschine oder eine Gewichtsweste. Das Ziel ist, dass die letzte Wiederholung jedes Satzes wirklich die letzte ist, die du noch sauber schaffst.',
       ],
     },
@@ -107,7 +107,7 @@ export const EX_TOWEL_HEEL_RAISE_DE: Guide = {
       h2: 'Für wen ist das Fersenheben mit Handtuch?',
       paragraphs: [
         'Für alle mit Plantarfasziitis, die genug Wadenkraft für ein einbeiniges Fersenheben auf einer Stufe haben. Die Studie nahm Erwachsene auf, deren Schmerz seit mindestens drei Monaten bestand und die Belastung vertrugen.',
-        'Wenn dein Schmerz frisch ist und du nicht bequem auf einem Bein stehen kannst, fang weiter unten auf der Leiter an: zuerst Fersenheben im Sitzen oder beidbeinig. Wenn dein Schmerz in der Achillessehne sitzt und nicht in der Plantarfaszie, ist der Ansatz mit Belastung ähnlich, aber das Handtuch wird nicht benutzt und das Protokoll ist anders. Für diesen Weg lies [exzentrisches Fersenabsenken](/exercises/eccentric-heel-drops/) (auf Englisch) oder [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
+        'Wenn dein Schmerz frisch ist und du nicht bequem auf einem Bein stehen kannst, fang weiter unten auf der Leiter an: zuerst Fersenheben im Sitzen oder beidbeinig. Wenn dein Schmerz in der Achillessehne sitzt und nicht in der Plantarfaszie, ist der Ansatz mit Belastung ähnlich, aber das Handtuch wird nicht benutzt und das Protokoll ist anders. Für diesen Weg lies [exzentrisches Fersenabsenken](/de/uebungen/exzentrisches-fersenabsenken/) oder [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
       ],
       cites: [CITE.rathleff],
     },

@@ -522,7 +522,7 @@ export const HEEL_PAIN_PT: Guide = {
       paragraphs: [
         'Calçados com bom suporte ajudam, mas palmilhas sozinhas não bastam para a maioria das pessoas. A diretriz de 2023 dá às órteses (palmilhas e suportes de arco) como opção isolada um **B contra**, o que significa que a evidência diz para não depender só delas. Junto com alongamento e treino de força, as órteses recebem um **C**.',
         'As talas noturnas, usadas durante o sono por 1 a 3\u00A0meses, recebem o grau máximo da diretriz, **A**, para quem continua tendo dor nos primeiros passos de toda manhã. Elas seguram o tornozelo para que a fáscia plantar não encurte durante a noite. Pergunte a um profissional de saúde se vale a pena tentar.',
-        'A diretriz não avalia tipos específicos de calçado, mas calçado sem suporte é um fator de risco bem reconhecido. Calçados com suporte para o arco e um contraforte firme no calcanhar dividem parte da carga que a fáscia plantar carregaria sozinha. Se seus pés doem depois de um dia longo em pé, veja [pés doendo de ficar em pé o dia todo](/feet-hurt-standing-all-day/) (em inglês). Quem trabalha em turnos pode começar por [enfermagem e dor nos pés](/nurses-foot-pain/) (em inglês).',
+        'A diretriz não avalia tipos específicos de calçado, mas calçado sem suporte é um fator de risco bem reconhecido. Calçados com suporte para o arco e um contraforte firme no calcanhar dividem parte da carga que a fáscia plantar carregaria sozinha. Se seus pés doem depois de um dia longo em pé, veja [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/). Quem trabalha em turnos pode começar por [enfermagem e dor nos pés](/pt/dor-nos-pes-enfermagem/).',
       ],
       cites: [CITE.guideline],
     },
@@ -579,7 +579,7 @@ export const HEEL_PAIN_PT: Guide = {
     h2: 'Fazendo isso como um plano',
     text: `Você não precisa descobrir a ordem, as doses nem quanto tempo ficar em cada exercício. O Walkito monta um plano uma semana de cada vez em torno de uma meta. Para dor no calcanhar, a primeira meta é uma manhã melhor: dor em 1/10 ou menos por ${PROGRAM.painFreeDays}\u00A0dias seguidos.`,
     more: [
-      `Você escolhe ${DAYS} dias por semana e sessões de ${MINUTES}\u00A0minutos. A cada ${PROGRAM.testEveryDays}\u00A0dias (e depois a cada ${PROGRAM.testEveryDaysAfterGoal} quando essa meta for alcançada), um teste curto mede a [resistência da panturrilha](/calf-raise-test/) (em inglês), a sustentação do arco e o equilíbrio, para você ver o que está mudando.`,
+      `Você escolhe ${DAYS} dias por semana e sessões de ${MINUTES}\u00A0minutos. A cada ${PROGRAM.testEveryDays}\u00A0dias (e depois a cada ${PROGRAM.testEveryDaysAfterGoal} quando essa meta for alcançada), um teste curto mede a [resistência da panturrilha](/pt/teste-elevacao-calcanhar/), a sustentação do arco e o equilíbrio, para você ver o que está mudando.`,
     ],
     cta: `Comece com ${PROGRAM.sessionMinutes[0]}\u00A0minutos por dia.`,
   },

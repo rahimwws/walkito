@@ -30,7 +30,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
       h2: 'Wie dehnst du die Wade mit gestrecktem Knie?',
       paragraphs: [
         'Stell dich mit dem Gesicht zu einer Wand und leg die Hände etwa auf Schulterhöhe flach dagegen. Geh mit einem Fuß etwa 60\u00A0cm nach hinten. Das hintere Bein bleibt gestreckt, die Ferse drückt in den Boden und die Zehen zeigen nach vorn. Schieb die Hüfte Richtung Wand, bis du eine Dehnung im oberen Teil der hinteren Wade spürst. Halte 30\u00A0Sekunden, dann wechsle das Bein.',
-        'Entscheidend ist, dass das hintere Knie gestreckt bleibt. So isolierst du den Gastrocnemius, der über Knie und Sprunggelenk zieht. Wenn du das Knie beugst, wandert die Dehnung zum Soleus, dem tieferen Wadenmuskel, und das ist eine andere Übung. Diese Variante findest du unter [Soleusdehnung](/exercises/soleus-stretch/) (auf Englisch).',
+        'Entscheidend ist, dass das hintere Knie gestreckt bleibt. So isolierst du den Gastrocnemius, der über Knie und Sprunggelenk zieht. Wenn du das Knie beugst, wandert die Dehnung zum Soleus, dem tieferen Wadenmuskel, und das ist eine andere Übung. Diese Variante findest du unter [Soleusdehnung](/de/uebungen/soleus-dehnen/).',
       ],
       exercises: [
         {
@@ -66,7 +66,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
       paragraphs: [
         'Die Leitlinie von 2023 zu Fersenschmerzen hat die verfügbaren Studien zum Dehnen geprüft und dem Dehnen von Plantarfaszie und Wade die Bewertung **A** gegeben, ihre höchste. Diese Bewertung gilt für Plantarfaszien-Dehnung und Wadendehnung zusammen, weil die meisten Protokolle beides enthalten.',
         'Eine systematische Übersichtsarbeit mit Metaanalyse von 2020 fasste die Studien zum Dehnen zusammen und fand einen großen Behandlungseffekt für Wadendehnung und Plantarfaszien-Dehnung. Die Autoren bewerteten die Qualität der Belege als mittel bis sehr niedrig und forderten bessere Studien. Trotzdem war die Effektstärke groß und mit anderen Maßnahmen vergleichbar.',
-        'Keine einzelne Studie testet die Wadendehnung mit gestrecktem Knie allein bei Plantarfasziitis. Sie wird immer als Teil eines Programms getestet. Die Leitlinie empfiehlt sie zusammen mit der [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) und Krafttraining wie [Fersenheben](/exercises/calf-raises/) (auf Englisch).',
+        'Keine einzelne Studie testet die Wadendehnung mit gestrecktem Knie allein bei Plantarfasziitis. Sie wird immer als Teil eines Programms getestet. Die Leitlinie empfiehlt sie zusammen mit der [Plantarfaszien-Dehnung](/de/uebungen/plantarfaszie-dehnen/) und Krafttraining wie [Fersenheben](/de/uebungen/fersenheben/).',
       ],
       cites: [CITE.guideline, CITE.siriphorn],
     },
@@ -82,7 +82,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
     {
       h2: 'Wer sollte diese Dehnung machen und wer sie lassen?',
       paragraphs: [
-        'Diese Dehnung ist für alle relevant mit Fersenschmerzen, Plantarfasziitis oder verkürzten Waden vom ganztägigen Stehen oder von einem Sport, der die Wade belastet, wie Laufen. Sie steht in den Übungslisten zu [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), zu [Fußschmerzen vom langen Stehen](/feet-hurt-standing-all-day/) (auf Englisch) und zu [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch).',
+        'Diese Dehnung ist für alle relevant mit Fersenschmerzen, Plantarfasziitis oder verkürzten Waden vom ganztägigen Stehen oder von einem Sport, der die Wade belastet, wie Laufen. Sie steht in den Übungslisten zu [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), zu [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) und zu [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch).',
         'Lass sie weg oder pass sie an, wenn du ein Problem mit der Achillessehne hast, das beim Dehnen akut wehtut. Dann kommt der Schmerz von einer anderen Struktur, und die Achillessehne über eine Dehnung an der Wand zu belasten, ist vielleicht nicht der richtige Anfang. Den Ansatz speziell für die Achillessehne findest du unter [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
         'Wenn du die Wand nicht erreichst oder nicht bequem stehen kannst, gibt eine Dehnung im Sitzen mit Handtuch einen ähnlichen Zug an der Wade. Leg ein Handtuch um den Fußballen, halte das Knie gestreckt und zieh die Zehen zu dir.',
       ],
@@ -91,7 +91,7 @@ export const EX_CALF_STRETCH_DE: Guide = {
       h2: 'Wie die Wadendehnung und die Soleusdehnung zusammenpassen',
       paragraphs: [
         'Gastrocnemius und Soleus bilden zusammen die Wade. Die Variante mit gestrecktem Knie dehnt den Gastrocnemius. Die Variante mit gebeugtem Knie dehnt den Soleus. Es sind zwei Übungen, nicht zwei Versionen derselben.',
-        'Die meisten Programme bei Plantarfasziitis enthalten beide, weil eine verkürzte Wade in einem der beiden Muskeln oder in beiden verkürzt sein kann. Die Leitlinie trennt sie nicht. Walkito plant beide in dieselbe Einheit ein, wenn Dehnen auf dem Plan steht. Die Seite zur [Soleusdehnung](/exercises/soleus-stretch/) (auf Englisch) erklärt die Variante mit gebeugtem Knie. Das ganze Programm aus Dehnen und Kraft findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
+        'Die meisten Programme bei Plantarfasziitis enthalten beide, weil eine verkürzte Wade in einem der beiden Muskeln oder in beiden verkürzt sein kann. Die Leitlinie trennt sie nicht. Walkito plant beide in dieselbe Einheit ein, wenn Dehnen auf dem Plan steht. Die Seite zur [Soleusdehnung](/de/uebungen/soleus-dehnen/) erklärt die Variante mit gebeugtem Knie. Das ganze Programm aus Dehnen und Kraft findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/).',
       ],
       cites: [CITE.guideline],
     },

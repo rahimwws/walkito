@@ -82,7 +82,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_IT: Guide = {
       paragraphs: [
         'Lavorano su strutture diverse. L’[allungamento del polpaccio](/it/esercizi/stretching-polpaccio/) allunga il gastrocnemio, il muscolo più grande e superficiale del polpaccio, attraverso il tendine d’Achille. L’allungamento della fascia plantare tira indietro le dita per caricare direttamente la fascia sotto l’arco. I due sono collegati attraverso l’osso del tallone, ma rispondono a posizioni diverse.',
         'Un polpaccio rigido è di per sé un fattore di rischio per la fascite plantare. In uno studio caso-controllo su 50\u00A0persone con fascite plantare e 100\u00A0controlli, una dorsiflessione della caviglia ridotta, cioè quanto il piede si piega verso lo stinco, era il fattore di rischio indipendente più forte. Per questo la linea guida consiglia entrambi gli allungamenti, non uno o l’altro.',
-        'Per il muscolo più profondo del polpaccio, il soleo, l’allungamento cambia: pieghi il ginocchio dietro per spostare il carico dal gastrocnemio al soleo. È un esercizio diverso. Vedi [allungamento del soleo](/exercises/soleus-stretch/) (in inglese).',
+        'Per il muscolo più profondo del polpaccio, il soleo, l’allungamento cambia: pieghi il ginocchio dietro per spostare il carico dal gastrocnemio al soleo. È un esercizio diverso. Vedi [allungamento del soleo](/it/esercizi/allungamento-soleo/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
     },
@@ -100,7 +100,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_IT: Guide = {
       paragraphs: [
         'Se accavallare la gamba è scomodo, tieni entrambi i piedi a terra e usa un asciugamano o una cintura passata intorno all’avampiede. Tira l’asciugamano verso di te così le dita si piegano indietro. L’allungamento è lo stesso, solo da un’altra angolazione.',
         'Una versione più difficile è l’allungamento della fascia plantare in piedi: appoggia l’avampiede contro il muro con il tallone a terra e sporgiti piano in avanti. Così aggiungi il peso del corpo all’allungamento ed è più difficile dosarlo con precisione. Va bene quando la versione da seduto ti sembra facile e non provoca dolore.',
-        'La versione da seduto dello studio è quella sostenuta dalle prove. Inizia da lì. Tutti gli allungamenti e gli esercizi di forza per il dolore al tallone sono in [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/). Per far rotolare la pianta del piede dopo gli allungamenti, vedi [massaggio con la pallina](/exercises/foot-roll/) (in inglese).',
+        'La versione da seduto dello studio è quella sostenuta dalle prove. Inizia da lì. Tutti gli allungamenti e gli esercizi di forza per il dolore al tallone sono in [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/). Per far rotolare la pianta del piede dopo gli allungamenti, vedi [massaggio con la pallina](/it/esercizi/massaggio-pallina-piede/).',
       ],
     },
   ],

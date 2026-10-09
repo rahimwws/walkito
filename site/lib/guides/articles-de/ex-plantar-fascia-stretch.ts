@@ -79,7 +79,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_DE: Guide = {
       paragraphs: [
         'Sie zielen auf verschiedene Strukturen. Die [Wadendehnung](/de/uebungen/wade-dehnen/) verlängert den Gastrocnemius, den größeren, oberflächlicheren Wadenmuskel, über die Achillessehne. Die Plantarfaszien-Dehnung zieht die Zehen zurück und belastet die Faszie direkt unter dem Gewölbe. Beide sind über das Fersenbein verbunden, reagieren aber auf unterschiedliche Positionen.',
         'Eine verkürzte Wade ist für sich allein ein Risikofaktor für Plantarfasziitis. In einer Fall-Kontroll-Studie mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0Kontrollpersonen war eine eingeschränkte Dorsalflexion im Sprunggelenk, also wie weit sich der Fuß Richtung Schienbein beugen lässt, der stärkste unabhängige Risikofaktor. Deshalb empfiehlt die Leitlinie beide Dehnungen, nicht nur eine davon.',
-        'Für den tieferen Wadenmuskel, den Soleus, ändert sich die Dehnung: Du beugst das hintere Knie, um die Last vom Gastrocnemius auf den Soleus zu verlagern. Das ist eine eigene Übung. Siehe [Soleusdehnung](/exercises/soleus-stretch/) (auf Englisch).',
+        'Für den tieferen Wadenmuskel, den Soleus, ändert sich die Dehnung: Du beugst das hintere Knie, um die Last vom Gastrocnemius auf den Soleus zu verlagern. Das ist eine eigene Übung. Siehe [Soleusdehnung](/de/uebungen/soleus-dehnen/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
     },
@@ -97,7 +97,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_DE: Guide = {
       paragraphs: [
         'Wenn das Übereinanderschlagen des Beins unbequem ist, lass beide Füße auf dem Boden und leg ein Handtuch oder einen Gürtel um den Fußballen. Zieh das Handtuch zu dir, sodass sich die Zehen zurückbeugen. Die Dehnung ist dieselbe, nur aus einem anderen Winkel.',
         'Eine schwerere Variante ist die Plantarfaszien-Dehnung im Stehen: Stell den Fußballen gegen eine Wand, die Ferse bleibt auf dem Boden, und lehn dich sanft nach vorn. Das bringt Körpergewicht in die Dehnung und lässt sich schwerer genau dosieren. Sie passt, sobald sich die Variante im Sitzen leicht anfühlt und keine Schmerzen auslöst.',
-        'Hinter der Variante im Sitzen aus der Studie stehen die Belege. Fang dort an. Alle Dehnungen und Kraftübungen bei Fersenschmerzen findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Zum Rollen der Fußsohle nach dem Dehnen siehe [Fußrollen](/exercises/foot-roll/) (auf Englisch).',
+        'Hinter der Variante im Sitzen aus der Studie stehen die Belege. Fang dort an. Alle Dehnungen und Kraftübungen bei Fersenschmerzen findest du unter [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/). Zum Rollen der Fußsohle nach dem Dehnen siehe [Fußrollen](/de/uebungen/fuss-mit-ball-rollen/).',
       ],
     },
   ],

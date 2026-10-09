@@ -129,7 +129,7 @@ export const PF_DURATION_IT: Guide = {
       paragraphs: [
         'Lo schema della tabella qui sopra è chiaro: stretching e lavoro di forza hanno il sostegno più ampio. Le opzioni in ambulatorio (laser, dry needling, onde d’urto) hanno qualche prova ma vengono dopo l’esercizio nella classifica della linea guida. La chirurgia è riservata alla piccola percentuale di casi che non risponde a nient’altro, e la linea guida non le dà un ruolo di primo piano.',
         'Se fai gli esercizi con costanza da diversi mesi e il dolore del mattino non migliora, è un buon momento per rivolgerti a un professionista sanitario e parlare delle opzioni qui sopra. È anche un buon momento per verificare che la diagnosi sia giusta: vedi [dolore al tallone al mattino](/it/dolore-tallone-al-mattino/) per gli altri problemi con lo stesso schema.',
-        'Per chi corre, i cambi di carico spesso fanno parte del quadro: [dolore al tallone nei runner](/heel-pain-runners/) (in inglese) e [piedi doloranti dopo una giornata in piedi](/feet-hurt-standing-all-day/) (in inglese) affrontano questo aspetto.',
+        'Per chi corre, i cambi di carico spesso fanno parte del quadro: [dolore al tallone nei runner](/heel-pain-runners/) (in inglese) e [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) affrontano questo aspetto.',
       ],
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },

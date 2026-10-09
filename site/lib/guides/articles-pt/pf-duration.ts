@@ -125,7 +125,7 @@ export const PF_DURATION_PT: Guide = {
       paragraphs: [
         'O padrão na tabela acima é claro: alongamento e treino de força têm o apoio mais amplo. As opções feitas em consultório (laser, agulhamento seco, ondas de choque) têm alguma evidência, mas ficam atrás do exercício na classificação da diretriz. A cirurgia fica reservada para a pequena porcentagem de casos que não respondem a mais nada, e a diretriz não dá a ela um papel de destaque.',
         'Se você está fazendo os exercícios com constância há vários meses e a dor da manhã não está melhorando, esse é um momento razoável para procurar um profissional de saúde e conversar sobre as opções acima. Também é um momento razoável para confirmar se o diagnóstico está certo: veja [dor no calcanhar ao acordar](/pt/dor-no-calcanhar-ao-acordar/) para outras condições com o mesmo padrão.',
-        'Para quem corre, mudanças na carga muitas vezes fazem parte do quadro: [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) e [pés doendo de ficar em pé o dia todo](/feet-hurt-standing-all-day/) (em inglês) tratam desse lado.',
+        'Para quem corre, mudanças na carga muitas vezes fazem parte do quadro: [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês) e [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/) tratam desse lado.',
       ],
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },

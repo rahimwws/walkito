@@ -1,0 +1,10 @@
+import { Guide } from '@/components/Guide';
+import { ARTICLES_NEW, guideMetadata } from '@/lib/guides';
+
+const guide = ARTICLES_NEW.de.archPain!;
+
+export const metadata = guideMetadata(guide);
+
+export default function ArchPainDePage() {
+  return <Guide guide={guide} />;
+}

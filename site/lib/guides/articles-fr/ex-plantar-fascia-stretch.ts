@@ -80,7 +80,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_FR: Guide = {
       paragraphs: [
         'Ils visent des structures différentes. L’[étirement du mollet](/fr/exercices/etirement-mollet/) allonge le gastrocnémien, le gros muscle superficiel du mollet, par l’intermédiaire du tendon d’Achille. L’étirement du fascia plantaire tire les orteils vers l’arrière pour charger directement le fascia sous la voûte. Les deux sont reliés par l’os du talon, mais réagissent à des positions différentes.',
         'Un mollet raide est à lui seul un facteur de risque de fasciite plantaire. Dans une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins, une flexion dorsale de cheville réduite, c’est-à-dire la capacité du pied à remonter vers le tibia, était le plus fort facteur de risque indépendant. C’est pourquoi la recommandation conseille les deux étirements, pas l’un ou l’autre.',
-        'Pour le muscle profond du mollet, le soléaire, l’étirement change\u00A0: vous pliez le genou arrière pour faire passer la charge du gastrocnémien au soléaire. C’est un exercice à part. Voir [étirement du soléaire](/exercises/soleus-stretch/) (en anglais).',
+        'Pour le muscle profond du mollet, le soléaire, l’étirement change\u00A0: vous pliez le genou arrière pour faire passer la charge du gastrocnémien au soléaire. C’est un exercice à part. Voir [étirement du soléaire](/fr/exercices/etirement-soleaire/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
     },
@@ -98,7 +98,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_FR: Guide = {
       paragraphs: [
         'Si croiser la jambe est inconfortable, gardez les deux pieds au sol et passez une serviette ou une ceinture autour de l’avant du pied. Tirez la serviette vers vous pour que les orteils se replient vers l’arrière. L’étirement est le même, sous un autre angle.',
         'Une version plus difficile est l’étirement du fascia plantaire debout\u00A0: placez l’avant du pied contre un mur, le talon au sol, et penchez-vous doucement vers l’avant. Cela ajoute le poids du corps à l’étirement, et il est plus difficile à doser précisément. Il convient une fois que la version assise est devenue facile et ne réveille pas la douleur.',
-        'C’est la version assise de l’essai que les données soutiennent. Commencez par elle. L’ensemble des étirements et des exercices de renforcement pour la douleur au talon est dans [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/). Pour faire rouler la plante du pied après une séance d’étirements, voir [massage avec une balle](/exercises/foot-roll/) (en anglais).',
+        'C’est la version assise de l’essai que les données soutiennent. Commencez par elle. L’ensemble des étirements et des exercices de renforcement pour la douleur au talon est dans [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/). Pour faire rouler la plante du pied après une séance d’étirements, voir [massage avec une balle](/fr/exercices/massage-pied-balle/).',
       ],
     },
   ],

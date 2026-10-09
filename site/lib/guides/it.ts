@@ -522,7 +522,7 @@ export const HEEL_PAIN_IT: Guide = {
       paragraphs: [
         'Le scarpe con un buon sostegno aiutano, ma i plantari da soli non bastano per la maggior parte delle persone. La linea guida del 2023 dà alle ortesi (plantari e supporti per l’arco) come opzione a sé un **B contro**, cioè le prove dicono di non contare solo su di loro. Insieme a stretching e lavoro di forza, le ortesi prendono una **C**.',
         'I tutori notturni, portati mentre dormi per 1-3\u00A0mesi, ricevono il grado più alto della linea guida, **A**, per chi continua ad avere dolore ai primi passi di ogni mattina. Tengono ferma la caviglia così la fascia plantare non si accorcia durante la notte. Chiedi a un professionista sanitario se vale la pena provarli.',
-        'La linea guida non valuta tipi specifici di scarpe, ma le calzature senza sostegno sono un fattore di rischio comunemente riconosciuto. Scarpe con supporto per l’arco e un contrafforte del tallone rigido si prendono una parte del carico che la fascia plantare porterebbe da sola. Se ti fanno male i piedi dopo una lunga giornata in piedi, vedi [piedi doloranti dopo una giornata in piedi](/feet-hurt-standing-all-day/) (in inglese). Chi lavora a turni può iniziare da [infermieri e dolore ai piedi](/nurses-foot-pain/) (in inglese).',
+        'La linea guida non valuta tipi specifici di scarpe, ma le calzature senza sostegno sono un fattore di rischio comunemente riconosciuto. Scarpe con supporto per l’arco e un contrafforte del tallone rigido si prendono una parte del carico che la fascia plantare porterebbe da sola. Se ti fanno male i piedi dopo una lunga giornata in piedi, vedi [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/). Chi lavora a turni può iniziare da [infermieri e dolore ai piedi](/it/dolore-piedi-infermieri/).',
       ],
       cites: [CITE.guideline],
     },
@@ -579,7 +579,7 @@ export const HEEL_PAIN_IT: Guide = {
     h2: 'Farlo come un piano',
     text: `Non devi capire da solo l’ordine, le dosi o per quanto restare su ogni esercizio. Walkito costruisce un piano una settimana alla volta intorno a un obiettivo. Per il dolore al tallone, il primo obiettivo è una mattina migliore: dolore a 1/10 o meno per ${PROGRAM.painFreeDays}\u00A0giorni di fila.`,
     more: [
-      `Scegli ${DAYS} giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto quell’obiettivo), un breve test controlla la [resistenza del polpaccio](/calf-raise-test/) (in inglese), la tenuta dell’arco e l’equilibrio, così vedi cosa sta cambiando.`,
+      `Scegli ${DAYS} giorni a settimana e sessioni da ${MINUTES}\u00A0minuti. Ogni ${PROGRAM.testEveryDays}\u00A0giorni (poi ogni ${PROGRAM.testEveryDaysAfterGoal} quando hai raggiunto quell’obiettivo), un breve test controlla la [resistenza del polpaccio](/it/test-sollevamento-punte/), la tenuta dell’arco e l’equilibrio, così vedi cosa sta cambiando.`,
     ],
     cta: `Inizia con ${PROGRAM.sessionMinutes[0]}\u00A0minuti al giorno.`,
   },

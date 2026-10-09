@@ -31,7 +31,7 @@ export const EX_CALF_STRETCH_FR: Guide = {
       h2: 'Comment faire un étirement du mollet genou tendu\u00A0?',
       paragraphs: [
         'Tenez-vous face à un mur, les mains à plat contre lui à peu près à hauteur d’épaules. Reculez un pied d’environ 60\u00A0centimètres. Gardez la jambe arrière tendue, le talon appuyé au sol et les orteils pointés vers l’avant. Avancez les hanches vers le mur jusqu’à sentir un étirement dans le haut du mollet arrière. Tenez 30\u00A0secondes, puis changez de jambe.',
-        'L’essentiel est de garder le genou arrière bien tendu. Cela isole le gastrocnémien, qui passe à la fois par le genou et par la cheville. Si vous pliez le genou, l’étirement passe au soléaire, le muscle profond du mollet, et c’est un autre exercice. Voir [étirement du soléaire](/exercises/soleus-stretch/) (en anglais) pour cette version.',
+        'L’essentiel est de garder le genou arrière bien tendu. Cela isole le gastrocnémien, qui passe à la fois par le genou et par la cheville. Si vous pliez le genou, l’étirement passe au soléaire, le muscle profond du mollet, et c’est un autre exercice. Voir [étirement du soléaire](/fr/exercices/etirement-soleaire/) pour cette version.',
       ],
       exercises: [
         {
@@ -67,7 +67,7 @@ export const EX_CALF_STRETCH_FR: Guide = {
       paragraphs: [
         'La recommandation de 2023 sur la douleur au talon a examiné les études disponibles sur les étirements et a donné aux étirements du fascia plantaire et du mollet la note **A**, sa meilleure. Cette note couvre ensemble l’étirement du fascia plantaire et l’étirement du mollet, car la plupart des protocoles comprennent les deux.',
         'Une revue systématique et méta-analyse de 2020 a regroupé les essais sur les étirements et a trouvé un effet important pour l’étirement du mollet comme pour l’étirement du fascia plantaire. Les auteurs ont jugé la qualité des preuves de modérée à très faible et ont appelé à des essais de meilleure qualité. L’effet restait malgré tout important, et comparable à celui d’autres traitements.',
-        'Aucun essai n’isole l’étirement du mollet genou tendu seul dans la fasciite plantaire. Il est toujours testé au sein d’un programme. La recommandation le conseille avec l’[étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) et un travail de renforcement comme les [montées sur pointes](/exercises/calf-raises/) (en anglais).',
+        'Aucun essai n’isole l’étirement du mollet genou tendu seul dans la fasciite plantaire. Il est toujours testé au sein d’un programme. La recommandation le conseille avec l’[étirement du fascia plantaire](/fr/exercices/etirement-fascia-plantaire/) et un travail de renforcement comme les [montées sur pointes](/fr/exercices/montees-sur-pointes/).',
       ],
       cites: [CITE.guideline, CITE.siriphorn],
     },
@@ -83,7 +83,7 @@ export const EX_CALF_STRETCH_FR: Guide = {
     {
       h2: 'Qui devrait faire cet étirement, et qui devrait s’en passer\u00A0?',
       paragraphs: [
-        'Cet étirement concerne toute personne avec une douleur au talon, une fasciite plantaire, des mollets raides à force d’être debout toute la journée ou à cause d’un sport qui charge le mollet, comme la course. Il figure dans les listes d’exercices des pages [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/), [mal aux pieds après une journée debout](/feet-hurt-standing-all-day/) (en anglais) et [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais).',
+        'Cet étirement concerne toute personne avec une douleur au talon, une fasciite plantaire, des mollets raides à force d’être debout toute la journée ou à cause d’un sport qui charge le mollet, comme la course. Il figure dans les listes d’exercices des pages [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/), [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/) et [douleur au talon chez les coureurs](/heel-pain-runners/) (en anglais).',
         'Passez-vous-en ou adaptez-le si vous avez un problème de tendon d’Achille qui fait mal pendant l’étirement. Dans ce cas, la douleur vient d’une autre structure, et charger le tendon d’Achille avec un étirement contre le mur n’est peut-être pas le bon point de départ. Voir [exercices pour la tendinite d’Achille](/fr/tendinite-achille-exercices/) pour l’approche propre au tendon d’Achille.',
         'Si vous ne pouvez pas atteindre le mur ou rester debout confortablement, un étirement assis avec une serviette donne une traction semblable sur le mollet. Passez une serviette autour de l’avant du pied, gardez le genou tendu et tirez les orteils vers vous.',
       ],
@@ -92,7 +92,7 @@ export const EX_CALF_STRETCH_FR: Guide = {
       h2: 'Comment l’étirement du mollet s’associe à l’étirement du soléaire',
       paragraphs: [
         'Le gastrocnémien et le soléaire forment ensemble le mollet. La version genou tendu étire le gastrocnémien. La version genou plié étire le soléaire. Ce sont deux exercices, pas deux versions du même.',
-        'La plupart des programmes pour la fasciite plantaire comprennent les deux, car un mollet peut être raide dans l’un des muscles ou dans les deux. La recommandation ne les sépare pas. Walkito programme les deux dans la même séance quand les étirements sont au programme. La page [étirement du soléaire](/exercises/soleus-stretch/) (en anglais) couvre la version genou plié. Pour le programme complet d’étirements et de renforcement, voir [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
+        'La plupart des programmes pour la fasciite plantaire comprennent les deux, car un mollet peut être raide dans l’un des muscles ou dans les deux. La recommandation ne les sépare pas. Walkito programme les deux dans la même séance quand les étirements sont au programme. La page [étirement du soléaire](/fr/exercices/etirement-soleaire/) couvre la version genou plié. Pour le programme complet d’étirements et de renforcement, voir [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/).',
       ],
       cites: [CITE.guideline],
     },

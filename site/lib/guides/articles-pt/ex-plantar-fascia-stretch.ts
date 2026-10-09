@@ -80,7 +80,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_PT: Guide = {
       paragraphs: [
         'Eles miram estruturas diferentes. O [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) alonga o gastrocnêmio, o músculo grande e mais superficial da panturrilha, pelo tendão de Aquiles. O alongamento da fáscia plantar puxa os dedos para trás para tensionar a fáscia diretamente, embaixo do arco. Os dois estão ligados pelo osso do calcanhar, mas respondem a posições diferentes.',
         'Uma panturrilha tensa é por si só um fator de risco para fascite plantar. Em um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100\u00A0controles, a dorsiflexão reduzida do tornozelo, o quanto o pé dobra para cima em direção à canela, foi o fator de risco independente mais forte. É por isso que a diretriz recomenda os dois alongamentos, e não um ou outro.',
-        'Para o músculo mais profundo da panturrilha, o sóleo, o alongamento muda: você dobra o joelho de trás para passar a carga do gastrocnêmio para o sóleo. É outro exercício. Veja [alongamento do sóleo](/exercises/soleus-stretch/) (em inglês).',
+        'Para o músculo mais profundo da panturrilha, o sóleo, o alongamento muda: você dobra o joelho de trás para passar a carga do gastrocnêmio para o sóleo. É outro exercício. Veja [alongamento do sóleo](/pt/exercicios/alongamento-soleo/).',
       ],
       cites: [CITE.riddle, CITE.guideline],
     },
@@ -98,7 +98,7 @@ export const EX_PLANTAR_FASCIA_STRETCH_PT: Guide = {
       paragraphs: [
         'Se cruzar a perna for desconfortável, mantenha os dois pés no chão e passe uma toalha ou um cinto em volta da parte da frente do pé. Puxe a toalha em sua direção para os dedos dobrarem para trás. O alongamento é o mesmo, só de outro ângulo.',
         'Uma versão mais difícil é o alongamento da fáscia plantar em pé: apoie a parte da frente do pé na parede, com o calcanhar no chão, e incline o corpo para a frente com cuidado. Isso coloca o peso do corpo no alongamento e é mais difícil de dosar com precisão. Funciona quando a versão sentada fica fácil e não provoca dor.',
-        'A versão sentada, do ensaio, é a que tem evidência por trás. Comece por ela. O conjunto completo de alongamentos e exercícios de força para dor no calcanhar está em [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Para rolar a sola do pé depois de uma sessão de alongamento, veja [rolar o pé na bolinha](/exercises/foot-roll/) (em inglês).',
+        'A versão sentada, do ensaio, é a que tem evidência por trás. Comece por ela. O conjunto completo de alongamentos e exercícios de força para dor no calcanhar está em [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/). Para rolar a sola do pé depois de uma sessão de alongamento, veja [rolar o pé na bolinha](/pt/exercicios/massagem-pe-bolinha/).',
       ],
     },
   ],

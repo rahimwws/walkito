@@ -32,7 +32,7 @@ export const EX_TOWEL_HEEL_RAISE_IT: Guide = {
       h2: 'Cosa lavora il sollevamento sulle punte con asciugamano?',
       paragraphs: [
         'Il sollevamento sulle punte con asciugamano lavora su gastrocnemio e soleo (i due muscoli del polpaccio), tendine d’Achille e fascia plantare. L’asciugamano arrotolato piega le dita verso l’alto quando sei in cima, e questo tira la fascia plantare attraverso il meccanismo a verricello. Senza asciugamano, l’esercizio allena soprattutto il polpaccio. Con l’asciugamano, la fascia prende una parte del carico.',
-        'Per questo lo studio di Rathleff ha usato proprio l’asciugamano per la fascite plantare invece di un semplice sollevamento sulle punte. Lo scopo è caricare insieme la catena polpaccio-Achille-fascia. Se il dolore è nel tendine d’Achille e non sotto il piede, una [discesa eccentrica del tallone](/exercises/eccentric-heel-drops/) (in inglese) senza asciugamano è un punto di partenza migliore.',
+        'Per questo lo studio di Rathleff ha usato proprio l’asciugamano per la fascite plantare invece di un semplice sollevamento sulle punte. Lo scopo è caricare insieme la catena polpaccio-Achille-fascia. Se il dolore è nel tendine d’Achille e non sotto il piede, una [discesa eccentrica del tallone](/it/esercizi/discese-eccentriche-tallone/) senza asciugamano è un punto di partenza migliore.',
       ],
       cites: [CITE.rathleff],
     },
@@ -83,13 +83,13 @@ export const EX_TOWEL_HEEL_RAISE_IT: Guide = {
       paragraphs: [
         'Andare troppo veloce è l’errore più comune. Una discesa di tre secondi tiene il polpaccio sotto tensione abbastanza a lungo da costruire forza. Rimbalzare su e giù lo trasforma in un esercizio cardio, non di forza.',
         'Se l’asciugamano scivola e ci restano sopra solo una o due dita, il carico sulla fascia si riduce. Tutte e cinque le dita devono stare sull’asciugamano. Se continua a scivolare, piegalo più spesso o usa un asciugamano da mani invece di un telo da bagno.',
-        'Partire su una gamba quando i sollevamenti su due piedi sono ancora duri porta a una tecnica scadente e a compensazioni. Se per ora un sollevamento su una gamba sul gradino è troppo, inizia con i [sollevamenti sulle punte su due piedi](/exercises/calf-raises/) (in inglese) a terra e costruisci da lì.',
+        'Partire su una gamba quando i sollevamenti su due piedi sono ancora duri porta a una tecnica scadente e a compensazioni. Se per ora un sollevamento su una gamba sul gradino è troppo, inizia con i [sollevamenti sulle punte su due piedi](/it/esercizi/sollevamenti-sulle-punte/) a terra e costruisci da lì.',
       ],
     },
     {
       h2: 'Versioni più facili e più difficili',
       paragraphs: [
-        'Se il sollevamento sulle punte con asciugamano completo sul gradino è troppo difficile, torna indietro lungo la catena del polpaccio. I [sollevamenti sulle punte da seduto](/exercises/calf-raises/) (in inglese) sono il carico più basso. Poi vengono i sollevamenti in piedi su due piedi. Poi la tenuta sulle punte in alto. Poi il sollevamento con asciugamano su una gamba sul gradino. Ogni gradino deve sembrarti gestibile per due sessioni prima di salire.',
+        'Se il sollevamento sulle punte con asciugamano completo sul gradino è troppo difficile, torna indietro lungo la catena del polpaccio. I [sollevamenti sulle punte da seduto](/it/esercizi/sollevamenti-sulle-punte/) sono il carico più basso. Poi vengono i sollevamenti in piedi su due piedi. Poi la tenuta sulle punte in alto. Poi il sollevamento con asciugamano su una gamba sul gradino. Ogni gradino deve sembrarti gestibile per due sessioni prima di salire.',
         'Se il peso del corpo su una gamba è troppo facile, aggiungi carico. Lo studio di Rathleff usava uno zaino con libri o bottiglie d’acqua. In palestra puoi usare una macchina per i polpacci o un giubbotto zavorrato. Lo scopo è che l’ultima ripetizione di ogni serie sia davvero l’ultima che riesci a fare con una buona tecnica.',
       ],
     },
@@ -109,7 +109,7 @@ export const EX_TOWEL_HEEL_RAISE_IT: Guide = {
       h2: 'Per chi è il sollevamento sulle punte con asciugamano?',
       paragraphs: [
         'Per chiunque abbia la fascite plantare e abbia abbastanza forza nel polpaccio per fare un sollevamento su una gamba su un gradino. Lo studio ha incluso adulti con dolore da almeno tre mesi che riuscivano a tollerare il carico.',
-        'Se il dolore è recente e non riesci a stare comodamente su una gamba, parti più in basso nella scala: prima i sollevamenti da seduto o su due piedi. Se il dolore è nel tendine d’Achille e non nella fascia plantare, l’approccio con il carico è simile, ma l’asciugamano non si usa e il protocollo è diverso. Vedi [discese eccentriche del tallone](/exercises/eccentric-heel-drops/) (in inglese) o [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) per quella strada.',
+        'Se il dolore è recente e non riesci a stare comodamente su una gamba, parti più in basso nella scala: prima i sollevamenti da seduto o su due piedi. Se il dolore è nel tendine d’Achille e non nella fascia plantare, l’approccio con il carico è simile, ma l’asciugamano non si usa e il protocollo è diverso. Vedi [discese eccentriche del tallone](/it/esercizi/discese-eccentriche-tallone/) o [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) per quella strada.',
       ],
       cites: [CITE.rathleff],
     },

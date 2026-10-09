@@ -124,7 +124,7 @@ export const PF_DURATION_DE: Guide = {
       paragraphs: [
         'Das Muster in der Tabelle oben ist klar: Dehnen und Krafttraining haben die breiteste Unterstützung. Die Behandlungen in der Praxis (Laser, Dry Needling, Stoßwelle) haben einige Belege, stehen in der Rangfolge der Leitlinie aber hinter den Übungen. Eine Operation bleibt dem kleinen Teil der Fälle vorbehalten, die auf nichts anderes ansprechen, und die Leitlinie gibt ihr keine prominente Rolle.',
         'Wenn du die Übungen mehrere Monate regelmäßig gemacht hast und der Morgenschmerz nicht besser wird, ist das ein vernünftiger Zeitpunkt, mit einer medizinischen Fachperson über die Optionen oben zu sprechen. Es ist auch ein vernünftiger Zeitpunkt, zu prüfen, ob die Diagnose stimmt: Unter [Fersenschmerzen am Morgen](/de/fersenschmerzen-morgens/) findest du andere Ursachen mit demselben Muster.',
-        'Beim Laufen ist die Belastung oft ein Teil des Bildes: [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) und [Fußschmerzen vom langen Stehen](/feet-hurt-standing-all-day/) (auf Englisch) behandeln diesen Blickwinkel.',
+        'Beim Laufen ist die Belastung oft ein Teil des Bildes: [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) und [Fußschmerzen vom langen Stehen](/de/fussschmerzen-vom-stehen/) behandeln diesen Blickwinkel.',
       ],
       cites: [CITE.guideline, CITE.hansen, CITE.rathleff],
     },

@@ -31,7 +31,7 @@ export const EX_CALF_STRETCH_PT: Guide = {
       h2: 'Como fazer o alongamento de panturrilha com o joelho esticado?',
       paragraphs: [
         'Fique de frente para uma parede com as mãos apoiadas nela, mais ou menos na altura dos ombros. Leve um pé para trás, cerca de 60\u00A0cm. Mantenha a perna de trás esticada, o calcanhar pressionando o chão e os dedos apontando para a frente. Incline o quadril em direção à parede até sentir um alongamento na parte de cima da panturrilha de trás. Segure por 30\u00A0segundos e troque de perna.',
-        'O segredo é manter o joelho de trás travado e esticado. Isso isola o gastrocnêmio, que cruza o joelho e o tornozelo. Se você dobra o joelho, o alongamento passa para o sóleo, o músculo mais profundo da panturrilha, e esse é outro exercício. Veja [alongamento do sóleo](/exercises/soleus-stretch/) (em inglês) para essa versão.',
+        'O segredo é manter o joelho de trás travado e esticado. Isso isola o gastrocnêmio, que cruza o joelho e o tornozelo. Se você dobra o joelho, o alongamento passa para o sóleo, o músculo mais profundo da panturrilha, e esse é outro exercício. Veja [alongamento do sóleo](/pt/exercicios/alongamento-soleo/) para essa versão.',
       ],
       exercises: [
         {
@@ -67,7 +67,7 @@ export const EX_CALF_STRETCH_PT: Guide = {
       paragraphs: [
         'A diretriz de 2023 para dor no calcanhar revisou os estudos de alongamento disponíveis e deu ao alongamento da fáscia plantar e da panturrilha o grau **A**, o mais alto. Esse grau cobre o alongamento da fáscia plantar e o de panturrilha juntos, porque a maioria dos protocolos inclui os dois.',
         'Uma revisão sistemática com metanálise de 2020 juntou os ensaios de alongamento e encontrou um efeito grande tanto do alongamento de panturrilha quanto do alongamento da fáscia plantar. Os autores classificaram a qualidade da evidência como de moderada a muito baixa e pediram ensaios de melhor qualidade. Mesmo assim, o tamanho do efeito foi grande e comparável ao de outros tratamentos.',
-        'Nenhum ensaio isola o alongamento de panturrilha com o joelho esticado sozinho na fascite plantar. Ele sempre é testado como parte de um programa. A diretriz o recomenda junto com o [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) e o trabalho de força, como a [elevação de calcanhar](/exercises/calf-raises/) (em inglês).',
+        'Nenhum ensaio isola o alongamento de panturrilha com o joelho esticado sozinho na fascite plantar. Ele sempre é testado como parte de um programa. A diretriz o recomenda junto com o [alongamento da fáscia plantar](/pt/exercicios/alongamento-fascia-plantar/) e o trabalho de força, como a [elevação de calcanhar](/pt/exercicios/elevacao-de-calcanhar/).',
       ],
       cites: [CITE.guideline, CITE.siriphorn],
     },
@@ -83,7 +83,7 @@ export const EX_CALF_STRETCH_PT: Guide = {
     {
       h2: 'Quem deve fazer este alongamento e quem deve pular?',
       paragraphs: [
-        'Este alongamento serve para quem tem dor no calcanhar, fascite plantar, ou panturrilha tensa de ficar em pé o dia todo ou de um esporte que exige muito da panturrilha, como a corrida. Ele aparece nas listas de exercícios de [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/), [pés doendo de ficar em pé](/feet-hurt-standing-all-day/) (em inglês) e [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês).',
+        'Este alongamento serve para quem tem dor no calcanhar, fascite plantar, ou panturrilha tensa de ficar em pé o dia todo ou de um esporte que exige muito da panturrilha, como a corrida. Ele aparece nas listas de exercícios de [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/), [pés doendo de ficar em pé](/pt/dor-nos-pes-ficar-em-pe/) e [dor no calcanhar de quem corre](/heel-pain-runners/) (em inglês).',
         'Pule ou adapte se você tem um problema no tendão de Aquiles que dói durante o alongamento. Nesse caso, a dor vem de outra estrutura, e tensionar o Aquiles com um alongamento na parede pode não ser o melhor ponto de partida. Veja [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/) para a abordagem específica do Aquiles.',
         'Se você não alcança a parede ou não fica em pé com conforto, um alongamento sentado com toalha dá um puxão parecido na panturrilha. Passe uma toalha em volta da parte da frente do pé, mantenha o joelho esticado e puxe os dedos em sua direção.',
       ],
@@ -92,7 +92,7 @@ export const EX_CALF_STRETCH_PT: Guide = {
       h2: 'Como o alongamento de panturrilha se encaixa com o alongamento do sóleo',
       paragraphs: [
         'O gastrocnêmio e o sóleo juntos formam a panturrilha. A versão com o joelho esticado alonga o gastrocnêmio. A versão com o joelho dobrado alonga o sóleo. São dois exercícios, não duas versões do mesmo.',
-        'A maioria dos programas para fascite plantar inclui os dois, porque a panturrilha pode estar tensa em um dos músculos ou nos dois. A diretriz não os separa. O Walkito coloca os dois na mesma sessão quando há alongamento no plano. A página do [alongamento do sóleo](/exercises/soleus-stretch/) (em inglês) explica a versão com o joelho dobrado. Para o programa completo de alongamento e força, veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
+        'A maioria dos programas para fascite plantar inclui os dois, porque a panturrilha pode estar tensa em um dos músculos ou nos dois. A diretriz não os separa. O Walkito coloca os dois na mesma sessão quando há alongamento no plano. A página do [alongamento do sóleo](/pt/exercicios/alongamento-soleo/) explica a versão com o joelho dobrado. Para o programa completo de alongamento e força, veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/).',
       ],
       cites: [CITE.guideline],
     },

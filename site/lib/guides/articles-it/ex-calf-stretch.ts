@@ -32,7 +32,7 @@ export const EX_CALF_STRETCH_IT: Guide = {
       h2: 'Come si fa l’allungamento del polpaccio a ginocchio teso?',
       paragraphs: [
         'Mettiti di fronte a un muro con le mani appoggiate più o meno all’altezza delle spalle. Porta un piede indietro di circa 60\u00A0cm. Tieni la gamba dietro tesa, il tallone premuto a terra e le dita rivolte in avanti. Porta i fianchi verso il muro finché senti un allungamento nella parte alta del polpaccio dietro. Tieni 30\u00A0secondi, poi cambia gamba.',
-        'La chiave è tenere il ginocchio dietro bloccato e teso. Così isoli il gastrocnemio, che passa sia sul ginocchio sia sulla caviglia. Se pieghi il ginocchio, l’allungamento si sposta sul soleo, il muscolo più profondo del polpaccio, ed è un esercizio diverso. Per quella versione vedi [allungamento del soleo](/exercises/soleus-stretch/) (in inglese).',
+        'La chiave è tenere il ginocchio dietro bloccato e teso. Così isoli il gastrocnemio, che passa sia sul ginocchio sia sulla caviglia. Se pieghi il ginocchio, l’allungamento si sposta sul soleo, il muscolo più profondo del polpaccio, ed è un esercizio diverso. Per quella versione vedi [allungamento del soleo](/it/esercizi/allungamento-soleo/).',
       ],
       exercises: [
         {
@@ -68,7 +68,7 @@ export const EX_CALF_STRETCH_IT: Guide = {
       paragraphs: [
         'La linea guida del 2023 sul dolore al tallone ha esaminato gli studi disponibili sullo stretching e ha dato all’allungamento della fascia plantare e del polpaccio una **A**, il suo grado più alto. Quel grado vale per l’allungamento della fascia plantare e quello del polpaccio insieme, perché la maggior parte dei protocolli li include entrambi.',
         'Una revisione sistematica con meta-analisi del 2020 ha messo insieme gli studi sullo stretching e ha trovato un effetto ampio sia per l’allungamento del polpaccio sia per quello della fascia plantare. Gli autori hanno giudicato la qualità delle prove da moderata a molto bassa e hanno chiesto studi di qualità più alta. Anche così, l’effetto era ampio e paragonabile ad altri interventi.',
-        'Nessuno studio isola l’allungamento del polpaccio a ginocchio teso da solo per la fascite plantare. Viene sempre testato come parte di un programma. La linea guida lo consiglia insieme all’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) e al lavoro di forza come i [sollevamenti sulle punte](/exercises/calf-raises/) (in inglese).',
+        'Nessuno studio isola l’allungamento del polpaccio a ginocchio teso da solo per la fascite plantare. Viene sempre testato come parte di un programma. La linea guida lo consiglia insieme all’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) e al lavoro di forza come i [sollevamenti sulle punte](/it/esercizi/sollevamenti-sulle-punte/).',
       ],
       cites: [CITE.guideline, CITE.siriphorn],
     },
@@ -84,7 +84,7 @@ export const EX_CALF_STRETCH_IT: Guide = {
     {
       h2: 'Chi dovrebbe fare questo allungamento e chi dovrebbe saltarlo?',
       paragraphs: [
-        'Questo allungamento è utile per chi ha dolore al tallone, fascite plantare, polpacci rigidi per le tante ore in piedi o per uno sport che carica il polpaccio, come la corsa. Fa parte delle pagine [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/), [piedi doloranti dopo una giornata in piedi](/feet-hurt-standing-all-day/) (in inglese) e [dolore al tallone quando corri](/heel-pain-runners/) (in inglese).',
+        'Questo allungamento è utile per chi ha dolore al tallone, fascite plantare, polpacci rigidi per le tante ore in piedi o per uno sport che carica il polpaccio, come la corsa. Fa parte delle pagine [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/), [piedi doloranti dopo una giornata in piedi](/it/dolore-piedi-stare-in-piedi/) e [dolore al tallone quando corri](/heel-pain-runners/) (in inglese).',
         'Saltalo o modificalo se hai un problema al tendine d’Achille che fa male durante l’allungamento. In quel caso il dolore viene da un’altra struttura, e caricare l’Achille con un allungamento al muro potrebbe non essere il punto di partenza giusto. Vedi [esercizi per la tendinite d’Achille](/it/tendinite-achille-esercizi/) per l’approccio specifico per l’Achille.',
         'Se non riesci ad arrivare al muro o a stare in piedi comodamente, un allungamento da seduto con un asciugamano dà una tensione simile sul polpaccio. Passa un asciugamano intorno all’avampiede, tieni il ginocchio teso e tira le dita verso di te.',
       ],
@@ -93,7 +93,7 @@ export const EX_CALF_STRETCH_IT: Guide = {
       h2: 'Come si abbina l’allungamento del polpaccio a quello del soleo',
       paragraphs: [
         'Il gastrocnemio e il soleo insieme formano il polpaccio. La versione a ginocchio teso allunga il gastrocnemio. La versione a ginocchio piegato allunga il soleo. Sono due esercizi, non due versioni dello stesso.',
-        'La maggior parte dei programmi per la fascite plantare li include entrambi, perché un polpaccio può essere rigido in uno dei due muscoli o in tutti e due. La linea guida non li separa. Walkito li mette entrambi nella stessa sessione quando nel piano ci sono gli allungamenti. La pagina sull’[allungamento del soleo](/exercises/soleus-stretch/) (in inglese) spiega la versione a ginocchio piegato. Per il programma completo di allungamenti e forza, vedi [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
+        'La maggior parte dei programmi per la fascite plantare li include entrambi, perché un polpaccio può essere rigido in uno dei due muscoli o in tutti e due. La linea guida non li separa. Walkito li mette entrambi nella stessa sessione quando nel piano ci sono gli allungamenti. La pagina sull’[allungamento del soleo](/it/esercizi/allungamento-soleo/) spiega la versione a ginocchio piegato. Per il programma completo di allungamenti e forza, vedi [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/).',
       ],
       cites: [CITE.guideline],
     },

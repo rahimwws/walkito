@@ -521,7 +521,7 @@ export const HEEL_PAIN_FR: Guide = {
       paragraphs: [
         'Des chaussures qui soutiennent le pied aident, mais les semelles seules ne suffisent pas pour la plupart des gens. La recommandation de 2023 note les orthèses (semelles et soutiens de voûte) utilisées seules **B contre**, ce qui veut dire que les preuves conseillent de ne pas compter uniquement sur elles. Associées aux étirements et au renforcement, les orthèses obtiennent un **C**.',
         'Les attelles de nuit, portées pendant le sommeil pendant 1 à 3\u00A0mois, obtiennent la meilleure note de la recommandation, **A**, pour les personnes qui ont toujours mal aux premiers pas du matin. Elles maintiennent la cheville pour que le fascia plantaire ne se raccourcisse pas pendant la nuit. Demandez à un professionnel de santé si elles valent la peine d’être essayées.',
-        'La recommandation ne note pas de types de chaussures précis, mais des chaussures qui ne soutiennent pas le pied sont un facteur de risque couramment reconnu. Des chaussures avec un soutien de voûte et un contrefort de talon ferme prennent une partie de la charge que le fascia plantaire porterait seul. Si vos pieds font mal après une longue journée debout, voir [mal aux pieds après une journée debout](/feet-hurt-standing-all-day/) (en anglais). Les personnes qui travaillent en horaires postés peuvent commencer par [infirmières et douleur aux pieds](/nurses-foot-pain/) (en anglais).',
+        'La recommandation ne note pas de types de chaussures précis, mais des chaussures qui ne soutiennent pas le pied sont un facteur de risque couramment reconnu. Des chaussures avec un soutien de voûte et un contrefort de talon ferme prennent une partie de la charge que le fascia plantaire porterait seul. Si vos pieds font mal après une longue journée debout, voir [mal aux pieds après une journée debout](/fr/mal-aux-pieds-debout-toute-la-journee/). Les personnes qui travaillent en horaires postés peuvent commencer par [infirmières et douleur aux pieds](/fr/mal-aux-pieds-infirmieres/).',
       ],
       cites: [CITE.guideline],
     },
@@ -578,7 +578,7 @@ export const HEEL_PAIN_FR: Guide = {
     h2: 'En faire un plan',
     text: `Vous n’avez pas à trouver l’ordre, les doses ni combien de temps rester sur chaque exercice. Walkito construit un plan une semaine à la fois autour d’un objectif. Pour la douleur au talon, le premier objectif est un meilleur matin\u00A0: une douleur à 1/10 ou moins pendant ${PROGRAM.painFreeDays}\u00A0jours de suite.`,
     more: [
-      `Vous choisissez ${DAYS}\u00A0jours par semaine et des séances de ${MINUTES}\u00A0minutes. Tous les ${PROGRAM.testEveryDays}\u00A0jours (puis tous les ${PROGRAM.testEveryDaysAfterGoal} une fois cet objectif atteint), un court test vérifie l’[endurance du mollet](/calf-raise-test/) (en anglais), le maintien de la voûte et l’équilibre, pour que vous voyiez ce qui change.`,
+      `Vous choisissez ${DAYS}\u00A0jours par semaine et des séances de ${MINUTES}\u00A0minutes. Tous les ${PROGRAM.testEveryDays}\u00A0jours (puis tous les ${PROGRAM.testEveryDaysAfterGoal} une fois cet objectif atteint), un court test vérifie l’[endurance du mollet](/fr/test-montee-sur-pointes/), le maintien de la voûte et l’équilibre, pour que vous voyiez ce qui change.`,
     ],
     cta: `Commencez avec ${PROGRAM.sessionMinutes[0]}\u00A0minutes par jour.`,
   },

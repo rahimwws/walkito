@@ -31,7 +31,7 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
       h2: 'O que a elevação de calcanhar com toalha trabalha?',
       paragraphs: [
         'A elevação de calcanhar com toalha trabalha o gastrocnêmio e o sóleo (os dois músculos da panturrilha), o tendão de Aquiles e a fáscia plantar. A toalha enrolada dobra os dedos para cima no alto da elevação, o que puxa a fáscia plantar pelo mecanismo de molinete. Sem a toalha, o exercício treina principalmente a panturrilha. Com ela, a fáscia recebe parte da carga.',
-        'É por isso que o ensaio de Rathleff usou a toalha especificamente para fascite plantar, em vez de uma elevação de calcanhar simples. O objetivo é colocar carga em toda a cadeia panturrilha-Aquiles-fáscia ao mesmo tempo. Se a sua dor é no tendão de Aquiles e não embaixo do pé, uma [descida excêntrica do calcanhar](/exercises/eccentric-heel-drops/) (em inglês), sem a toalha, é um ponto de partida melhor.',
+        'É por isso que o ensaio de Rathleff usou a toalha especificamente para fascite plantar, em vez de uma elevação de calcanhar simples. O objetivo é colocar carga em toda a cadeia panturrilha-Aquiles-fáscia ao mesmo tempo. Se a sua dor é no tendão de Aquiles e não embaixo do pé, uma [descida excêntrica do calcanhar](/pt/exercicios/excentrico-calcanhar/), sem a toalha, é um ponto de partida melhor.',
       ],
       cites: [CITE.rathleff],
     },
@@ -82,13 +82,13 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
       paragraphs: [
         'Ir rápido demais é o erro mais comum. Uma descida de três segundos mantém a panturrilha sob tensão por tempo suficiente para ganhar força. Subir e descer quicando transforma o exercício em aeróbico, não em força.',
         'Deixar a toalha escorregar, de modo que só um ou dois dedos fiquem sobre ela, diminui a carga na fáscia. Os cinco dedos devem ficar sobre a toalha. Se a toalha continua escorregando, dobre mais grosso ou use uma toalha de mão em vez de uma toalha de banho.',
-        'Começar em uma perna quando a elevação com os dois pés ainda é difícil leva a uma técnica ruim e a compensações. Se a elevação em uma perna no degrau é demais agora, comece com a [elevação de calcanhar com os dois pés](/exercises/calf-raises/) (em inglês) no chão e vá subindo.',
+        'Começar em uma perna quando a elevação com os dois pés ainda é difícil leva a uma técnica ruim e a compensações. Se a elevação em uma perna no degrau é demais agora, comece com a [elevação de calcanhar com os dois pés](/pt/exercicios/elevacao-de-calcanhar/) no chão e vá subindo.',
       ],
     },
     {
       h2: 'Versões mais fáceis e mais difíceis',
       paragraphs: [
-        'Se a elevação de calcanhar com toalha completa no degrau é difícil demais, volte pela cadeia da panturrilha. A [elevação de calcanhar sentado](/exercises/calf-raises/) (em inglês) é a de menor carga. A elevação em pé com os dois pés vem depois. Depois, a elevação de calcanhar sustentada lá em cima. Depois, a elevação em uma perna com toalha no degrau. Cada degrau deve parecer tranquilo por duas sessões antes de você subir.',
+        'Se a elevação de calcanhar com toalha completa no degrau é difícil demais, volte pela cadeia da panturrilha. A [elevação de calcanhar sentado](/pt/exercicios/elevacao-de-calcanhar/) é a de menor carga. A elevação em pé com os dois pés vem depois. Depois, a elevação de calcanhar sustentada lá em cima. Depois, a elevação em uma perna com toalha no degrau. Cada degrau deve parecer tranquilo por duas sessões antes de você subir.',
         'Se o peso do corpo em uma perna for fácil demais, acrescente carga. O ensaio de Rathleff usou uma mochila com livros ou garrafas de água. Quem tem acesso a academia pode usar uma máquina de panturrilha ou um colete com peso. O objetivo é que a última repetição de cada série seja de verdade a última que você consegue fazer com boa técnica.',
       ],
     },
@@ -108,7 +108,7 @@ export const EX_TOWEL_HEEL_RAISE_PT: Guide = {
       h2: 'Para quem é a elevação de calcanhar com toalha?',
       paragraphs: [
         'Para qualquer pessoa com fascite plantar que tenha força de panturrilha suficiente para fazer uma elevação em uma perna em um degrau. O ensaio incluiu adultos com dor havia pelo menos três meses e que toleravam carga.',
-        'Se a sua dor é recente e você não consegue ficar em uma perna com conforto, comece mais embaixo na escada: elevação sentado ou com os dois pés primeiro. Se a sua dor é no tendão de Aquiles e não na fáscia plantar, a lógica de carga é parecida, mas a toalha não é usada e o protocolo é outro. Veja [descidas excêntricas do calcanhar](/exercises/eccentric-heel-drops/) (em inglês) ou [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/) para esse caminho.',
+        'Se a sua dor é recente e você não consegue ficar em uma perna com conforto, comece mais embaixo na escada: elevação sentado ou com os dois pés primeiro. Se a sua dor é no tendão de Aquiles e não na fáscia plantar, a lógica de carga é parecida, mas a toalha não é usada e o protocolo é outro. Veja [descidas excêntricas do calcanhar](/pt/exercicios/excentrico-calcanhar/) ou [exercícios para tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/) para esse caminho.',
       ],
       cites: [CITE.rathleff],
     },
