@@ -31,7 +31,7 @@ export default function PrivacidadEs() {
       <Prose className="shell prose">
         <h1>Privacidad</h1>
 
-        <p className="updated">Última actualización: 8 de octubre de 2026</p>
+        <p className="updated">Última actualización: 9 de octubre de 2026</p>
         <p className="updated">
           Esta es una traducción. Si difiere de{' '}
           <a href="/privacy/">la versión en inglés</a>, se aplica la versión en
@@ -410,6 +410,17 @@ export default function PrivacidadEs() {
         <p>
           <b>El sitio web no usa cookies ni carga ningún rastreador.</b>
         </p>
+
+        <h2 id="ai-assistants">Asistentes de IA (ChatGPT y Claude)</h2>
+        <p>
+          Walkito se puede usar dentro de ChatGPT y Claude. Cuando preguntas ahí, el asistente puede llamar a una de nuestras herramientas y enviar a nuestro servidor los ajustes que eligió: por ejemplo la zona que duele, los minutos al día, los días a la semana, el material y el lado y, si los mencionaste, el dolor de hoy o el resultado de una prueba, que deciden qué se muestra. Nuestro servidor los usa para armar los ejercicios y el plan, y no guarda nada.
+        </p>
+        <ul>
+          <li>No se guardan mensajes, nombres, correos, valores de dolor ni direcciones IP.</li>
+          <li>De cada llamada solo se registra el nombre de la herramienta, el asistente (ChatGPT o Claude), los ajustes del plan (zona, minutos, días, material, lado), cuánto tardó y si funcionó.</li>
+          <li>Un código de plan (WK-…) solo contiene los ajustes del plan y qué asistente lo creó, nada sobre ti.</li>
+          <li>Lo que escribes en ChatGPT o Claude lo procesan OpenAI o Anthropic según sus propias políticas de privacidad.</li>
+        </ul>
 
         <h2>No es consejo médico</h2>
         <p>

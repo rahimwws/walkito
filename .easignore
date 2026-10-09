@@ -90,6 +90,7 @@ assets/exercises/
 # the website; neither is read by the build, and both were being uploaded.
 /.claude/
 /site/
+/ai-assistant/
 /.agents/
 /.expo-code-review/
 /supabase/
