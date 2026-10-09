@@ -293,11 +293,11 @@
   font-weight: 700;
 }
 
-@supports (corner-shape: superellipse(1.45)) {
+@supports (corner-shape: superellipse(1.5)) {
   .lp-button,
   .lp-menu,
   .lp-item {
-    corner-shape: superellipse(1.45);
+    corner-shape: superellipse(1.5);
   }
 }
 

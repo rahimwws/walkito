@@ -28,8 +28,8 @@
    * corner on a 76pt button (0.42 of the height), with the continuous curve
    * iOS draws (`borderCurve: 'continuous'`). The web's version of that curve is
    * `corner-shape: superellipse()`, applied below where a browser has it;
-   * elsewhere the same radius is a plain arc. Everywhere at 1.45, between a
-   * 60% Figma smoothing (1.2) and the squarer 1.5 the site started with.
+   * elsewhere the same radius is a plain arc. Everywhere at 1.5 (1.2, 1.35
+   * and 1.45 were tried and read too round).
    */
   --radius-button: 18px;
   --radius-button-lg: 24px;
@@ -2094,12 +2094,12 @@ figcaption {
 }
 
 /* The continuous corner, where the browser draws one. */
-@supports (corner-shape: superellipse(1.45)) {
+@supports (corner-shape: superellipse(1.5)) {
   .download,
   .store a,
   .masthead-float .nav,
   .masthead-float .nav a {
-    corner-shape: superellipse(1.45);
+    corner-shape: superellipse(1.5);
   }
 }
 
@@ -2142,12 +2142,12 @@ figcaption {
   transform: none;
 }
 
-@supports (corner-shape: superellipse(1.45)) {
+@supports (corner-shape: superellipse(1.5)) {
   .hero-get,
   .get-card,
   .get-qr,
   .get-store {
-    corner-shape: superellipse(1.45);
+    corner-shape: superellipse(1.5);
   }
 }
 
@@ -2557,9 +2557,9 @@ html[data-scrolled] .masthead-float .download {
   text-align: center;
 }
 
-@supports (corner-shape: superellipse(1.45)) {
+@supports (corner-shape: superellipse(1.5)) {
   .home > .who-sheet {
-    corner-shape: superellipse(1.45);
+    corner-shape: superellipse(1.5);
   }
 }
 
@@ -2680,11 +2680,11 @@ html[data-scrolled] .masthead-float .download {
   text-decoration: none;
 }
 
-@supports (corner-shape: superellipse(1.45)) {
+@supports (corner-shape: superellipse(1.5)) {
   .who-tile,
   .kick-num,
   .kick-label {
-    corner-shape: superellipse(1.45);
+    corner-shape: superellipse(1.5);
   }
 }
 
@@ -3141,10 +3141,10 @@ html[data-scrolled] .masthead-float .download {
   height: 2.1em;
 }
 
-@supports (corner-shape: superellipse(1.45)) {
+@supports (corner-shape: superellipse(1.5)) {
   .fchip,
   .ftile {
-    corner-shape: superellipse(1.45);
+    corner-shape: superellipse(1.5);
   }
 }
 
@@ -3401,12 +3401,12 @@ html[data-scrolled] .masthead-float .download {
     margin-top: -2px;
   }
 
-  @supports (corner-shape: superellipse(1.45)) {
+  @supports (corner-shape: superellipse(1.5)) {
     .menu-toggle,
     .menu-panel,
     .menu-panel nav a,
     .menu-get {
-      corner-shape: superellipse(1.45);
+      corner-shape: superellipse(1.5);
     }
   }
 
@@ -3471,10 +3471,10 @@ html[data-scrolled] .masthead-float .download {
   border-radius: 0 0 72px 72px;
 }
 
-@supports (corner-shape: superellipse(1.45)) {
+@supports (corner-shape: superellipse(1.5)) {
   .home > .story-flow,
   .feat-dark {
-    corner-shape: superellipse(1.45);
+    corner-shape: superellipse(1.5);
   }
 }
 
@@ -3594,11 +3594,11 @@ html[data-scrolled] .masthead-float .download {
   border-radius: 40px;
 }
 
-@supports (corner-shape: superellipse(1.45)) {
+@supports (corner-shape: superellipse(1.5)) {
   .feat-shot-card,
   .feat-list-card,
   .feat-item {
-    corner-shape: superellipse(1.45);
+    corner-shape: superellipse(1.5);
   }
 }
 
@@ -5130,9 +5130,9 @@ html[data-scrolled] .masthead-end > .masthead-get {
   visibility: visible;
 }
 
-@supports (corner-shape: superellipse(1.45)) {
+@supports (corner-shape: superellipse(1.5)) {
   .masthead-get {
-    corner-shape: superellipse(1.45);
+    corner-shape: superellipse(1.5);
   }
 }
 

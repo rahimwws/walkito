@@ -319,7 +319,7 @@
 }
 
 
-@supports (corner-shape: superellipse(1.45)) {
+@supports (corner-shape: superellipse(1.5)) {
   .gd-art,
   .gd-feature,
   .gd-read,
@@ -332,7 +332,7 @@
   .gd-rc,
   .gd-rc-tile,
   .gd-sc {
-    corner-shape: superellipse(1.45);
+    corner-shape: superellipse(1.5);
   }
 }
 

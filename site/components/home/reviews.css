@@ -24,14 +24,14 @@
   color: #fff;
 }
 
-@supports (corner-shape: superellipse(1.45)) {
+@supports (corner-shape: superellipse(1.5)) {
   .rev-box,
   .rev-card,
   .rev-chip,
   .rev-chip-tile,
   .rev-chip-go,
   .rev-q {
-    corner-shape: superellipse(1.45);
+    corner-shape: superellipse(1.5);
   }
 }
 

@@ -542,7 +542,7 @@
   line-height: calc(var(--fx-pt) * 21);
 }
 
-@supports (corner-shape: superellipse(1.45)) {
+@supports (corner-shape: superellipse(1.5)) {
   .fx-pain,
   .fx-ack,
   .fx-primary,
@@ -552,7 +552,7 @@
   .fx-daycard,
   .fx-nextcard,
   .fx-chip {
-    corner-shape: superellipse(1.45);
+    corner-shape: superellipse(1.5);
   }
 }
 
