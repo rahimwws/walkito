@@ -18,7 +18,6 @@ import type { Leg, MeasuredGoal, TestKind } from '../../model/test-day';
 export const TEST_META = {
   calf: {
     name: 'testday.test.calf.name',
-    measures: 'testday.test.calf.measures',
     steps: ['testday.calf.step1', 'testday.calf.step2', 'testday.calf.step3'],
     stopHint: 'testday.calf.stopHint',
     clip: 'retest_calf_raise',
@@ -26,7 +25,6 @@ export const TEST_META = {
   },
   arch: {
     name: 'testday.test.arch.name',
-    measures: 'testday.test.arch.measures',
     steps: ['testday.arch.step1', 'testday.arch.step2', 'testday.arch.step3'],
     stopHint: 'testday.arch.stopHint',
     clip: 'short_foot_double',
@@ -34,7 +32,6 @@ export const TEST_META = {
   },
   balance: {
     name: 'testday.test.balance.name',
-    measures: 'testday.test.balance.measures',
     steps: ['testday.balance.step1', 'testday.balance.step2', 'testday.balance.step3'],
     stopHint: 'testday.balance.stopHint',
     clip: 'single_leg_hold',
@@ -44,7 +41,6 @@ export const TEST_META = {
   TestKind,
   {
     name: Key;
-    measures: Key;
     steps: readonly [Key, Key, Key];
     stopHint: Key;
     clip: string;

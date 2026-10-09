@@ -50,8 +50,9 @@ export const PLAYER_EN = {
   'player.painRule.body': '0-3 is fine. 4-5 is OK if it settles by next morning. 6 or more - stop.',
   'player.painRule.ok': 'Got it',
   'player.painRule.a11y': 'How much pain is OK',
-  'player.tempo.on': 'Tempo sounds on',
-  'player.tempo.off': 'Tempo sounds off',
+  'player.tempo.on': 'Sound on',
+  'player.tempo.off': 'Sound off',
+  'player.voice.replay': 'Play the instruction again',
 
   // ── The player's own chrome ───────────────────────────────────────────────
   // The second line of the centred header title, under "Day 1". Both halves

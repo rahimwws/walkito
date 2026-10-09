@@ -26,6 +26,7 @@ export {
   useClipCache,
   type ClipCacheState,
 } from './model/clip-cache';
+export { prefetchVoice, surveyVoice } from './model/voice-cache';
 /** One exercise's clip, looping — the plan screen's preview sheet. */
 export { ExercisePreview } from './ui/exercise-preview';
 /** The test day, whole: intro, the three tests, results.
@@ -34,3 +35,6 @@ export { ExercisePreview } from './ui/exercise-preview';
  * session pane — so a test taken from either screen is the same test, finished
  * by the same `finishTestDay`, and the two can no longer disagree about it. */
 export { TestDayFlow, type TestDayFlowProps } from './ui/test-day/test-day-flow';
+// The test's picture in its goal ring, and every test so far as bars: the
+// results screen's drawings, also used by the Progress tab's strength card.
+export { TestHistoryBars, TestRing } from './ui/test-day/test-visuals';

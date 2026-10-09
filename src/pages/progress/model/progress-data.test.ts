@@ -8,7 +8,6 @@ import {
   painSummary,
   readingsToGo,
   shiftKey,
-  sparkPoints,
   strengthTrends,
   tickIndices,
 } from './progress-data';
@@ -99,26 +98,27 @@ describe('strengthTrends', () => {
 
   test('every test on file, the change since the first', () => {
     const [calf, balance, arch] = strengthTrends([result(8, 9, 15), result(12, 14, 25), result(16, 20, 34)]);
-    expect(calf).toEqual({ key: 'calf', values: [8, 12, 16], latest: 16, delta: 8 });
+    expect(calf).toEqual({
+      key: 'calf',
+      values: [8, 12, 16],
+      dates: ['2026-01-01', '2026-01-01', '2026-01-01'],
+      latest: 16,
+      delta: 8,
+    });
     expect(balance.delta).toBe(11);
     expect(arch.values).toEqual([15, 25, 34]);
   });
   test('one test is a baseline', () => {
-    expect(strengthTrends([result(11, 8, 20)])[0]).toEqual({ key: 'calf', values: [11], latest: 11, delta: null });
+    expect(strengthTrends([result(11, 8, 20)])[0]).toEqual({
+      key: 'calf',
+      values: [11],
+      dates: ['2026-01-01'],
+      latest: 11,
+      delta: null,
+    });
   });
   test('no tests still gives three rows', () => {
     expect(strengthTrends([]).map((t) => t.latest)).toEqual([null, null, null]);
-  });
-});
-
-describe('sparkPoints', () => {
-  test('lowest at the bottom, highest at the top, inset', () => {
-    const pts = sparkPoints([1, 3], 100, 20, 4);
-    expect(pts[0]).toEqual({ x: 4, y: 16 });
-    expect(pts[1]).toEqual({ x: 96, y: 4 });
-  });
-  test('a single test sits in the middle', () => {
-    expect(sparkPoints([5], 100, 20)).toEqual([{ x: 50, y: 10 }]);
   });
 });
 

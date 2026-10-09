@@ -44,7 +44,6 @@ export const ONBOARDING_ES = {
   'onboarding.intro.headline': 'Vamos a ver por qué todavía te duele.',
   'onboarding.intro.cta': 'Continuar con Apple',
   'onboarding.intro.ctaGoogle': 'Continuar con Google',
-  'onboarding.intro.footnote': 'Unos 3 minutos',
   'onboarding.intro.signInFailed': 'El inicio de sesión no se completó. Inténtalo otra vez.',
   'onboarding.intro.emailCta': 'Iniciar sesión con correo',
 
@@ -58,16 +57,49 @@ export const ONBOARDING_ES = {
 
   // ── Name ─────────────────────────────────────────────────────────────────
   'onboarding.name.title': '¿Cómo quieres\nque te llamemos?',
-  'onboarding.name.blurb':
-    'Todo lo que viene después se escribe para ti, no para corredores en general.',
+  'onboarding.name.blurb': 'Va en tu pasaporte del pie.',
   'onboarding.name.placeholder': 'p. ej. Alex',
+  // The Foot Passport: a stamp per answer, folded above the questions and
+  // open on the halfway screen. Labels are short: each sits beside its value.
+  'onboarding.passport.title': 'Pasaporte del pie',
+  'onboarding.passport.owner': 'Pasaporte del pie de {name}',
+  'onboarding.passport.empty': 'Aquí aparecerán tus respuestas',
+  'onboarding.passport.issued': 'Emitido el {date}',
+  'onboarding.passport.edit': '¿Algo que corregir? Toca para editar.',
+  'onboarding.passport.heading': 'Tu pasaporte del pie, {name}',
+  // Who they are, in the passport's words: the role question's own
+  // answers ("Both") mean nothing out of it.
+  'onboarding.passport.role.running': 'Corredor',
+  'onboarding.passport.role.feet': 'De pie en el trabajo',
+  'onboarding.passport.role.both': 'Corredor, de pie en el trabajo',
+  'onboarding.passport.role.walking': 'Caminar a diario',
+  'onboarding.passport.who': 'Quién',
+  'onboarding.passport.toe': 'Levantar el dedo gordo',
+  'onboarding.passport.bunion': 'Juanete',
+  'onboarding.passport.where': 'Dónde duele',
+  'onboarding.passport.since': 'Desde',
+  'onboarding.passport.mornings': 'Primeros pasos',
+  'onboarding.passport.goal': 'Meta',
+  'onboarding.passport.load': 'Carga',
+  'onboarding.passport.habit': 'Junto a',
+  'onboarding.passport.plan': 'Plan',
+  'onboarding.passport.morningsValue': '{score}/10',
+  'onboarding.passport.planValue': '{days} · {minutes}',
 
-  // ── Sex ──────────────────────────────────────────────────────────────────
-  'onboarding.sex.title': '¿Hombre o mujer, {name}?',
-  'onboarding.sex.blurb':
-    'La tolerancia a la carga y las lesiones típicas cambian, y el plan también.',
-  'onboarding.sex.female': 'Mujer',
-  'onboarding.sex.male': 'Hombre',
+  'onboarding.toe.title': '¿Puedes levantar solo el dedo gordo?',
+  'onboarding.toe.blurb': 'De pie, deja los otros cuatro dedos en el suelo e inténtalo.',
+  'onboarding.toe.yes': 'Sí, sin problema',
+  'onboarding.toe.little': 'Un poco',
+  'onboarding.toe.no': 'No, no se levanta',
+  'onboarding.bunion.title': '¿Tienes juanete?',
+  'onboarding.bunion.blurb': 'Un bulto óseo donde el dedo gordo se une al pie, a menudo con el dedo inclinado hacia dentro.',
+  'onboarding.bunion.straight': 'Dedo gordo recto',
+  'onboarding.bunion.example': 'Con juanete',
+  'onboarding.bunion.no': 'No',
+  'onboarding.bunion.little': 'Uno leve',
+  'onboarding.bunion.yes': 'Sí',
+  'onboarding.bunion.unsure': 'No estoy seguro',
+  'onboarding.bunion.note': 'Una imagen para comparar, no un diagnóstico.',
 
   // ── Runner ───────────────────────────────────────────────────────────────
   'onboarding.runner.title': '¿Qué tipo de atleta eres, {name}?',
@@ -78,12 +110,6 @@ export const ONBOARDING_ES = {
   'onboarding.runner.regular': 'Regular',
   'onboarding.runner.racing': 'Preparo una carrera',
   'onboarding.runner.serious': 'Me lo tomo en serio',
-
-  // ── Age ──────────────────────────────────────────────────────────────────
-  'onboarding.age.title': '¿Cuántos años tienes?',
-  'onboarding.age.blurb':
-    'Los tendones se adaptan más despacio con la edad. Esto marca el ritmo al que crece el plan.',
-  'onboarding.age.years': 'años',
 
   // ── Body ─────────────────────────────────────────────────────────────────
   'onboarding.body.title': 'Un poco más sobre ti, {name}',
@@ -110,15 +136,19 @@ export const ONBOARDING_ES = {
   'onboarding.goal.allday': 'Aguantar de pie todo el día',
   'onboarding.goal.comeback': 'Volver tras una lesión',
   'onboarding.goal.steady': 'Caminar con seguridad',
-  'onboarding.days.title': '¿Cuántos días a la semana, {name}?',
-  'onboarding.days.blurb': 'Sesiones cortas. Los días de descanso son parte del plan, no un hueco.',
+  // Days and minutes, one screen: a heading over two short lists.
+  'onboarding.schedule.title': '¿Cuánto tiempo tienes, {name}?',
+  'onboarding.schedule.days': 'Días por semana',
+  'onboarding.schedule.minutes': 'Minutos por sesión',
+  'onboarding.schedule.kit': '¿Qué tienes en casa?',
+  // Under the kit: the exercises it brings into the plan, as they are picked.
+  'onboarding.schedule.adds': 'Se suma a tu plan',
   'onboarding.days.days3': '3 días',
   'onboarding.days.days3Caption': 'Un comienzo tranquilo',
   'onboarding.days.days5': '5 días',
   'onboarding.days.days5Caption': 'Recomendado',
   'onboarding.days.days7': 'Cada día',
   'onboarding.days.days7Caption': 'Corto y diario',
-  'onboarding.minutes.title': '¿Cuánto por sesión?',
   'onboarding.minutes.blurb': 'Cámbialo cualquier día: los días ocupados también cuentan.',
   'onboarding.minutes.min3': '3 minutos',
   'onboarding.minutes.min3Caption': 'Incluso en días ocupados',
@@ -299,7 +329,6 @@ export const ONBOARDING_ES = {
     'El volumen adelantó a tus piernas. El plan da un paso atrás y luego construye.',
   'onboarding.pattern.calf': 'La pantorrilla tira de todo lo que hay debajo. Suéltala y lo demás la sigue.',
   'onboarding.pattern.none': 'Estás aquí antes de que duela. Esta es la forma barata de hacerlo.',
-  'onboarding.building.promise': 'Primeros cambios: del día 12 al 16.',
 
   // ── Reflection parts ─────────────────────────────────────────────────────
   'onboarding.reflection.painHeel': 'Dolor de talón',

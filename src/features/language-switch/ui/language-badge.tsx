@@ -1,22 +1,20 @@
+import LanguageCircleIcon from '@hugeicons/core-free-icons/LanguageCircleIcon';
+import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useState } from 'react';
-import { Pressable, StyleSheet, Text } from 'react-native';
+import { Pressable } from 'react-native';
 
-import { fonts, meterColors } from '@/shared/config';
+import { meterColors } from '@/shared/config';
 import { LANGUAGE_META, useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
 import { LanguageSheet } from './language-sheet';
 
 /**
- * The two-letter control that sits in the onboarding header.
- *
- * **Why a bare code and not an icon.** A globe glyph says "something about
- * languages is available here" and nothing about which one is active. "EN"
- * says both at once, in less width — and width is the constraint: the header
- * is back arrow, progress bar, close, and the bar is the only child that
- * flexes, so every point this control takes comes out of the progress
- * indicator. A globe plus a label would take roughly twice as much.
+ * The language control that sits in the onboarding header: a language icon,
+ * the same width as the two-letter code it replaced, so the progress bar
+ * beside it keeps its length. Which language is active is the screen itself;
+ * the icon only says where to change it, and VoiceOver names the language.
  *
  * Tinted like the close control rather than the back arrow. Both are things
  * you may never touch; the back arrow is the one people reach for, and three
@@ -46,7 +44,7 @@ export function LanguageBadge() {
         }}
         hitSlop={12}
         style={({ pressed }) => pressed && { opacity: 0.5 }}>
-        <Text style={[styles.badge, { color: meter.unit }]}>{LANGUAGE_META[language].badge}</Text>
+        <HugeiconsIcon icon={LanguageCircleIcon} size={24} color={meter.unit} strokeWidth={1.8} />
       </Pressable>
 
       <LanguageSheet visible={open} onClose={() => setOpen(false)} />
@@ -54,7 +52,3 @@ export function LanguageBadge() {
   );
 }
 
-const styles = StyleSheet.create({
-  // Tracked out a little: two capitals set tight read as one glyph.
-  badge: fonts.bold(15, 0.4),
-});

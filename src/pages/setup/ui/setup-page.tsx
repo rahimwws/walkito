@@ -7,7 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { requestWidgetPin } from '@/features/home-widget';
 import { SignInOptions } from '@/features/sign-in';
 import { healthAvailable, type HealthSummary } from '@/entities/health';
-import { firstName, getIntake, saveIntake, setProfileEmail, useProfileName } from '@/entities/profile';
+import { firstName, getIntake, profileEmail, saveIntake, setProfileEmail, useProfileName } from '@/entities/profile';
 import { accountSaved, finishSetup } from '@/entities/session';
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
@@ -18,13 +18,14 @@ import { Glow } from '@/shared/ui/glow';
 import { NoteSheet } from '@/shared/ui/note-sheet';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
+import { EmailStep } from './email-step';
 import { HealthStep } from './health-step';
 import { WatchSyncStep } from './watch-sync-step';
 import { WidgetGuideArt, WidgetPreview, type GuideStep } from './widget-guide';
 
-type SetupStep = 'save' | 'health' | 'watch' | 'watch-sync' | 'note' | 'widget' | GuideStep;
+type SetupStep = 'save' | 'email' | 'health' | 'watch' | 'watch-sync' | 'note' | 'widget' | GuideStep;
 
-const ORDER: readonly SetupStep[] = ['save', 'health', 'watch', 'watch-sync', 'note', 'widget', 'hold', 'edit', 'search'];
+const ORDER: readonly SetupStep[] = ['save', 'email', 'health', 'watch', 'watch-sync', 'note', 'widget', 'hold', 'edit', 'search'];
 
 const WATCH: readonly { value: string; label: Key; caption: Key }[] = [
   { value: 'apple', label: 'onboarding.watch.apple', caption: 'onboarding.watch.appleCaption' },
@@ -41,8 +42,8 @@ const GUIDE: Readonly<Record<GuideStep, { title: Key; body: Key; n: number }>> =
 
 /**
  * What comes after the first purchase, in order: save the plan to an account,
- * Health, the watch, the note from the two of us, the widget, and the first
- * session.
+ * an email address for anyone who has none on file yet, Health, the watch,
+ * the note from the two of us, the widget, and the first session.
  *
  * All of it used to sit in front of the paywall, where each was a reason to
  * stop. After it, each has a reason: signing in protects what was just paid
@@ -66,6 +67,10 @@ export function SetupPage() {
     switch (candidate) {
       case 'save':
         return saved;
+      // Somebody whose address came with Apple or Google sign-in, or who gave
+      // it before, is not asked twice.
+      case 'email':
+        return profileEmail() !== '';
       case 'health':
         return !healthAvailable();
       case 'watch':
@@ -146,6 +151,8 @@ export function SetupPage() {
             <Text style={[styles.blurb, styles.centerText, { color: meter.caption }]}>{t('setup.save.blurb')}</Text>
           </View>
         )}
+
+        {step === 'email' && <EmailStep onDone={next} />}
 
         {step === 'health' && (
           <HealthStep name={name} summary={health} onConnected={setHealth} onNext={next} />

@@ -1,26 +1,21 @@
 import type { ImageSourcePropType } from 'react-native';
 
 /**
- * The photograph behind the plan screen, full bleed.
+ * The photograph behind the plan screen, full bleed. One for everybody since
+ * onboarding stopped asking for sex: a woman, because the people with heel
+ * pain and bunions who find the app are mostly women between 35 and 60.
  *
- * Separate assets from `SEX_PHOTOS` even though they are the same shoot. Those
- * are cropped close for a half-height card, and a card crop stretched over a
- * whole phone is a 2× enlargement of somebody's forearm — the runner falls
- * outside the frame entirely. These are the uncropped portraits, tall enough
- * that `cover` on a 19.5:9 screen only trims the sides and leaves the runner
- * where the photographer put her.
+ * The uncropped portrait, tall enough that `cover` on a 19.5:9 screen only
+ * trims the sides and leaves the runner where the photographer put her.
  *
  * At the photographs' own resolution, never downsized. The building step draws
  * them full bleed, and `cover` on a 440×956 pt phone wants 2868 px of height,
  * more than either has. Only the encoding had slack.
  *
- * Baseline JPEG, re-encoded (q82 and q85, luma SSIM >= 0.99 against the
- * originals), and deliberately not WebP, for the reason in `sex-photos.ts`:
- * the image is decoded on the main thread as the building step fades it in,
- * and WebP took about 63 ms per photograph there against 13-15 ms for JPEG.
+ * Baseline JPEG, re-encoded to luma SSIM >= 0.99 against the original,
+ * and deliberately not WebP: React Native hands a bundled image to UIImageView
+ * undecoded, so it is decoded on the main thread as the building step fades it
+ * in, and WebP took about 63 ms per photograph there against 13-15 ms for JPEG.
  */
-export const PLAN_PHOTOS: Record<string, ImageSourcePropType> = {
-  female: require('@assets/onboarding/plan-female.jpg'),
-  male: require('@assets/onboarding/plan-male.jpg'),
-};
+export const PLAN_PHOTO: ImageSourcePropType = require('@assets/onboarding/plan-female.jpg');
 

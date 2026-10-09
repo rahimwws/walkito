@@ -19,8 +19,8 @@ export const TESTDAY_EN = {
   'testday.intro.eyebrow': 'Test day',
   'testday.intro.title': 'Three short tests',
   'testday.intro.body': {
-    one: 'About {count} minute. The numbers show how far each goal has come and set your plan for the next two weeks.',
-    other: 'About {count} minutes. The numbers show how far each goal has come and set your plan for the next two weeks.',
+    one: 'About {count} minute.',
+    other: 'About {count} minutes.',
   },
   // Each test's line under its name: where the last test left it, and the aim.
   'testday.intro.nowSeconds': 'Now {now} s · goal {goal} s',
@@ -54,11 +54,8 @@ export const TESTDAY_EN = {
   // ── The three tests ───────────────────────────────────────────────────────
   'testday.test.eyebrow': 'Test {current} of {total}',
   'testday.test.calf.name': 'Calf raises',
-  'testday.test.calf.measures': 'How many raises each leg manages at a steady pace',
   'testday.test.arch.name': 'Arch hold',
-  'testday.test.arch.measures': 'How long your arch stays lifted',
   'testday.test.balance.name': 'Balance',
-  'testday.test.balance.measures': 'How long you stand on one leg with your eyes closed',
 
   'testday.side.left': 'Left leg',
   'testday.side.right': 'Right leg',
@@ -66,25 +63,27 @@ export const TESTDAY_EN = {
   'testday.side.rightSore': 'Right leg - the sore one',
 
   // Calf raises: paced, so the count is the app's and not the user's.
-  'testday.calf.step1': 'Stand on one leg, fingertips on the wall for balance.',
-  'testday.calf.step2': 'Rise all the way up and lower again, one raise every 2 seconds. A tick keeps the pace.',
-  'testday.calf.step3': 'Tap Stop when you can’t keep the pace or the full height. Then the other leg.',
+  // The button on the picture before a test: opens the clip at full size.
+  'testday.watch': 'Watch the video',
+  'testday.calf.step1': 'One leg, fingertips on the wall.',
+  'testday.calf.step2': 'All the way up and down, with the tick.',
+  'testday.calf.step3': 'Stop when you lose the pace or the height.',
   'testday.calf.stopHint': 'Tap when you can’t keep the pace or full height',
   'testday.calf.up': 'Up',
   'testday.calf.down': 'Down',
   'testday.calf.otherTitle': 'Now the other leg',
   'testday.calf.otherBody': 'Same pace, same full height, fingertips on the wall.',
 
-  'testday.arch.step1': 'Stand on both feet, weight spread evenly.',
-  'testday.arch.step2': 'Draw the ball of the foot toward the heel so the arch lifts. Toes stay long and relaxed.',
-  'testday.arch.step3': 'Hold it. Tap Stop the moment the arch drops.',
+  'testday.arch.step1': 'Stand on both feet.',
+  'testday.arch.step2': 'Pull the ball of the foot toward the heel.',
+  'testday.arch.step3': 'Stop when the arch drops.',
   'testday.arch.stopHint': 'Tap the moment the arch drops',
 
   // Eyes closed, as the plan screen describes this test. The end is heard, not
   // seen, for the same reason.
-  'testday.balance.step1': 'Stand on one leg next to the wall, hands on your hips.',
-  'testday.balance.step2': 'Close your eyes on go. A sound tells you when the time is up.',
-  'testday.balance.step3': 'Open your eyes and tap Stop as soon as the other foot touches down.',
+  'testday.balance.step1': 'One leg, hands on your hips.',
+  'testday.balance.step2': 'Eyes closed on go.',
+  'testday.balance.step3': 'Stop when the other foot touches down.',
   'testday.balance.stopHint': 'Tap when the other foot touches down',
 
   'testday.start': 'Start',
@@ -122,9 +121,7 @@ export const TESTDAY_EN = {
   'testday.confirm.finish': 'See results',
 
   // ── Results ───────────────────────────────────────────────────────────────
-  'testday.results.title': 'Your results',
-  'testday.results.blurb': 'Compared with your last test, never with anyone else.',
-  'testday.results.firstBlurb': 'This is your starting point. The next test shows what changed.',
+  'testday.results.firstBlurb': 'The next test shows how far you have come.',
   'testday.results.name.arch_hold': 'Arch hold',
   'testday.results.name.calf_raises': 'Calf raises',
   'testday.results.name.balance': 'Balance',
@@ -136,8 +133,6 @@ export const TESTDAY_EN = {
   'testday.results.gapUnit': 'between legs',
   /** Under calf raises, whose figure is the weaker leg. */
   'testday.results.legs': 'Left {left} · right {right}',
-  'testday.results.goalSeconds': 'Goal {n} s',
-  'testday.results.goalRaises': { one: 'Goal {count} raise', other: 'Goal {count} raises' },
   'testday.results.goalGap': 'Goal under {n}%',
   'testday.results.toGoSeconds': { one: '{count} s to go', other: '{count} s to go' },
   'testday.results.toGoRaises': { one: '{count} raise to go', other: '{count} raises to go' },
@@ -177,13 +172,31 @@ export const TESTDAY_EN = {
 
   // The headline over the cards. It names what went up and never what went
   // down; with nothing up it only says the tests are done.
-  'testday.results.verdictFirst': 'Three tests done. These are your starting numbers.',
-  'testday.results.verdictSteady': 'Three tests done. Here is how each one compares.',
-  'testday.results.verdictUp.calf_raises': 'Three tests done. Calf raises went up.',
-  'testday.results.verdictUp.arch_hold': 'Three tests done. Your arch hold got longer.',
-  'testday.results.verdictUp.balance': 'Three tests done. You balanced for longer.',
-  'testday.results.verdictUpTwo': 'Three tests done. Two of them went up.',
-  'testday.results.verdictUpAll': 'Three tests done. All three went up.',
+  'testday.results.verdictFirst': 'Three numbers to beat',
+  'testday.results.verdictSteady': 'All three held steady',
+  'testday.results.verdictUp.calf_raises': 'More calf raises than last time',
+  'testday.results.verdictUp.arch_hold': 'Your arch held longer',
+  'testday.results.verdictUp.balance': 'You balanced for longer',
+  'testday.results.verdictUpTwo': 'Two of three went up',
+  'testday.results.verdictUpAll': 'All three went up',
+  // The line over the headline, and the headline when a goal was reached.
+  'testday.results.heroEyebrowUp': 'New best',
+  'testday.results.heroEyebrowFirst': 'Your starting point',
+  'testday.results.heroEyebrowSteady': 'Test day done',
+  'testday.results.verdictGoal.calf_raises': 'You hit your calf raise goal',
+  'testday.results.verdictGoal.arch_hold': 'You hit your arch hold goal',
+  'testday.results.verdictGoal.balance': 'You hit your balance goal',
+  // A test's row opened: every test so far, and the share card.
+  'testday.results.history': 'Every test so far',
+  'testday.results.showDetails': 'Show details',
+  'testday.results.hideDetails': 'Hide details',
+  'testday.results.share': 'Share',
+  'testday.results.shareTitle': 'My foot test',
+  'testday.results.shareBrand': 'Walkito',
+  'testday.results.shareMessage': 'My Walkito foot test: calf raises {calf} · arch hold {arch} s · balance {balance} s',
+  // A figure in seconds on its own: the unit beside the big number, and the share card.
+  'testday.results.secondsShort': 's',
+  'testday.results.valueSeconds': '{n} s',
   // Under the headline: the test's date, and how far back the comparison goes.
   'testday.results.dateVs': {
     one: '{date} · compared with {count} day ago',
@@ -195,13 +208,7 @@ export const TESTDAY_EN = {
   'testday.results.chipSame': 'Same',
   'testday.results.chipSeconds': '{delta} s',
   'testday.results.chipRaises': { one: '{delta} raise', other: '{delta} raises' },
-  // Under the comparison track, at last time's dot.
-  'testday.results.lastSeconds': 'Last time {n} s',
-  'testday.results.lastRaises': 'Last time {n}',
-  // The calf card's two legs, and the gap between them.
-  'testday.results.legLeft': 'Left',
-  'testday.results.legRight': 'Right',
-  'testday.results.weakerLeg': 'The big number is your weaker leg.',
+  // In the calf test's details: the gap its two legs leave.
   'testday.results.gapBetween': 'Gap between legs {n}%',
   // What each test shows, and what a higher number means on your feet. No
   // diagnosis, no promise.

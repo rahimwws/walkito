@@ -191,6 +191,16 @@ describe('the week', () => {
     );
   });
 
+  test('a big toe that will not lift, or a bunion, puts toe work on strength days', () => {
+    const calf = { goals: [goal('calf_raises', 12)], previousFocus: 'calf_raises' as const };
+    const toe = (plan: WeekPlan) =>
+      plan.days
+        .filter((d) => d.type === 'strength')
+        .map((d) => d.exercises.some((e) => e.id === 'big_toe_lift' || e.id === 'toe_spread'));
+    expect(toe(buildWeek(input({ ...calf, toeWork: true }))).every(Boolean)).toBe(true);
+    expect(toe(buildWeek(input(calf))).some(Boolean)).toBe(false);
+  });
+
   test('new exercises are named once', () => {
     const plan = buildWeek(input({ seenBefore: new Set(['short_foot_seated']) }));
     expect(plan.newThisWeek).not.toContain('short_foot_seated');

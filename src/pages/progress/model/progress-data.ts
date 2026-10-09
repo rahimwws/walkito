@@ -158,6 +158,8 @@ export type StrengthTrend = {
   key: StrengthKey;
   /** Every result on file, oldest first. */
   values: number[];
+  /** Each result's `YYYY-MM-DD`, in the same order. */
+  dates: string[];
   latest: number | null;
   /** Latest against the first test. Null with fewer than two tests. */
   delta: number | null;
@@ -184,31 +186,11 @@ export function strengthTrends(results: readonly RetestResult[]): StrengthTrend[
     return {
       key,
       values,
+      dates: results.map((r) => r.date),
       latest,
       delta: values.length > 1 && latest != null ? round1(latest - values[0]) : null,
     };
   });
-}
-
-/**
- * The sparkline's points in a `width` × `height` box, inset by `pad` so the
- * end dot is never clipped. A flat series sits on the middle line.
- */
-export function sparkPoints(
-  values: readonly number[],
-  width: number,
-  height: number,
-  pad = 4,
-): { x: number; y: number }[] {
-  if (values.length === 0) return [];
-  const min = Math.min(...values);
-  const max = Math.max(...values);
-  const spanX = width - pad * 2;
-  const spanY = height - pad * 2;
-  return values.map((v, i) => ({
-    x: values.length === 1 ? width / 2 : pad + (i / (values.length - 1)) * spanX,
-    y: max === min ? height / 2 : pad + (1 - (v - min) / (max - min)) * spanY,
-  }));
 }
 
 // ── Consistency ──────────────────────────────────────────────────────────────

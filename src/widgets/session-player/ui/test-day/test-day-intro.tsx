@@ -5,7 +5,7 @@ import SmartPhone01Icon from '@hugeicons/core-free-icons/SmartPhone01Icon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import {
@@ -26,6 +26,7 @@ import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
+import { TEST_PICTURES } from '../../config/test-pictures';
 import { GOAL_OF_TEST, TEST_ORDER, goalValuesOf, type TestKind } from '../../model/test-day';
 import { TEST_META } from './test-meta';
 
@@ -155,13 +156,15 @@ export function TestDayIntro({ onStart, onTomorrow }: TestDayIntroProps) {
               <View key={row.kind}>
                 {index > 0 && <View style={[styles.divider, { backgroundColor: meter.divider }]} />}
                 <View style={styles.test}>
+                  {/* The test's own picture on its accent, large enough to
+                      read: what you will be doing, seen before any of it is
+                      read. The name and where it stands are all the text. */}
                   <View style={[styles.tile, { backgroundColor: tone.track }]}>
-                    <HugeiconsIcon icon={zone.icon} size={22} color={tone.fill} strokeWidth={2} />
+                    <Image source={TEST_PICTURES[row.kind].thumb} style={styles.thumb} resizeMode="cover" />
                   </View>
                   <View style={styles.testCopy}>
                     <Text style={[styles.testName, { color: colors.foreground }]}>{t(meta.name)}</Text>
-                    <Text style={[styles.testMeasures, { color: meter.caption }]}>{t(meta.measures)}</Text>
-                    <Text style={[styles.testGoal, { color: meter.label }]}>
+                    <Text style={[styles.testGoal, { color: meter.caption }]}>
                       {goalLine(row.kind, row.now, row.target)}
                     </Text>
                   </View>
@@ -280,33 +283,32 @@ const styles = StyleSheet.create({
   },
   divider: {
     height: StyleSheet.hairlineWidth,
-    marginLeft: 60,
+    marginLeft: 120,
   },
   test: {
     flexDirection: 'row',
-    alignItems: 'flex-start',
-    gap: 14,
-    paddingVertical: 12,
+    alignItems: 'center',
+    gap: 16,
+    paddingVertical: 10,
   },
   tile: {
-    width: 46,
-    height: 46,
-    borderRadius: 15,
+    width: 104,
+    height: 104,
+    borderRadius: 24,
     borderCurve: 'continuous',
-    alignItems: 'center',
-    justifyContent: 'center',
+    overflow: 'hidden',
+  },
+  thumb: {
+    width: '100%',
+    height: '100%',
   },
   testCopy: {
     flex: 1,
     gap: 2,
   },
-  testName: fonts.bold(17, -0.2),
-  testMeasures: {
-    ...fonts.medium(14),
-    lineHeight: 19,
-  },
+  testName: fonts.heavy(20, -0.4),
   testGoal: {
-    ...fonts.semibold(13),
+    ...fonts.semibold(15),
     marginTop: 4,
     fontVariant: ['tabular-nums'],
   },

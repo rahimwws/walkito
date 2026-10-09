@@ -81,6 +81,8 @@ export const OFFER_IT = {
   'offer.next': 'Avanti',
   'offer.introTitle': 'Ecco come inizia il tuo piano',
   'offer.introTitleNamed': '{name}, ecco come inizia il tuo piano',
+  // Under the title: the goal they picked in onboarding, quoted back as theirs.
+  'offer.introWhy': '«{why}».',
   'offer.introTodayWhen': 'Oggi',
   'offer.introTodayTitle': { one: 'Un test di {count} minuto', other: 'Un test di {count} minuti' },
   'offer.introTodayBody': 'Polpacci, arco ed equilibrio. Il tuo piano parte da questi numeri.',

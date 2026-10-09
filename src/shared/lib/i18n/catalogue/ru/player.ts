@@ -39,8 +39,9 @@ export const PLAYER_RU = {
   'player.painRule.body': '0-3 - нормально. 4-5 - допустимо, если к следующему утру проходит. 6 и выше - остановитесь.',
   'player.painRule.ok': 'Понятно',
   'player.painRule.a11y': 'Какая боль допустима',
-  'player.tempo.on': 'Звуки темпа включены',
-  'player.tempo.off': 'Звуки темпа выключены',
+  'player.tempo.on': 'Звук включён',
+  'player.tempo.off': 'Звук выключен',
+  'player.voice.replay': 'Повторить подсказку',
 
   // ── The player's own chrome ───────────────────────────────────────────────
   'player.header.meta': '{minutes} · {moves}',

@@ -39,8 +39,9 @@ export const PLAYER_FR = {
   'player.painRule.body': '0-3, c’est bon. 4-5, ça va si ça se calme le lendemain matin. 6 ou plus : arrête.',
   'player.painRule.ok': 'Compris',
   'player.painRule.a11y': 'Quelle douleur est acceptable',
-  'player.tempo.on': 'Sons de tempo activés',
-  'player.tempo.off': 'Sons de tempo désactivés',
+  'player.tempo.on': 'Son activé',
+  'player.tempo.off': 'Son désactivé',
+  'player.voice.replay': 'Réécouter la consigne',
 
   // ── The player's own chrome ───────────────────────────────────────────────
   'player.header.meta': '{minutes} · {moves}',

@@ -90,6 +90,14 @@ export type AnalyticsEvents = {
   /** "Test tomorrow" on the test day's intro: the test moved a day. The plan
    * day it was due on, never the check-in score that prompted it. */
   retest_postponed: { day: number };
+  /** A test's row opened on the results screen: which test, never its figure. */
+  test_results_detail: { test: 'calf_raises' | 'arch_hold' | 'balance' };
+  /** The results screen's share card went to the share sheet. Never the numbers on it. */
+  test_results_shared: Record<string, never>;
+  /** A test's row opened on the Progress tab: which test, never its figure. */
+  progress_strength_detail: { test: 'calf' | 'balance' | 'arch' };
+  /** "Start" on the Progress tab's next-test line, on the day the test is due. */
+  progress_test_started: Record<string, never>;
   // ── The weekly plan ──────────────────────────────────────────────────────
   /** A goal hit its target. The goal's name, never its measurement. */
   goal_reached: { goal: 'pain_free_mornings' | 'arch_hold' | 'calf_raises' | 'balance' | 'symmetry' };
@@ -116,6 +124,9 @@ export type AnalyticsEvents = {
   email_link_opened: { email_key: string; path: string };
   /** An address was given to the app, and by which door. Never the address. */
   email_captured: { source: 'apple' | 'google' | 'onboarding' };
+  /** The email screen after the first purchase: an address given, or passed. */
+  setup_email_saved: Record<string, never>;
+  setup_email_skipped: Record<string, never>;
   /** Settings → Email changed. The toggles' new state, nothing else. */
   email_prefs_changed: { tips: boolean; weekly: boolean };
   /** Settings → Email → Unsubscribe from all. */

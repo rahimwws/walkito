@@ -26,3 +26,4 @@ export {
   clipEntry,
   type ClipEntry,
 } from './clip-manifest';
+export { VOICE, VOICE_TOTAL_BYTES, voiceEntry, type VoiceEntry } from './voice-manifest';

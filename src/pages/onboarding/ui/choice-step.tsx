@@ -1,9 +1,10 @@
 import * as Haptics from 'expo-haptics';
 import { CheckCircleIcon as CheckCircle } from 'phosphor-react-native/src/icons/CheckCircle';
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState, type ReactNode } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   Easing,
+  LinearTransition,
   ReduceMotion,
   interpolateColor,
   useAnimatedStyle,
@@ -16,7 +17,7 @@ import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 
-import { OPTION_ICONS, SPORT_ICONS } from '../config/option-icons';
+import { OPTION_ICONS, SPORT_ICONS, VERDICT_ICONS } from '../config/option-icons';
 import { FeetGlyph, type FeetSide } from './feet-glyph';
 import type { ResolvedOption } from '../model/steps';
 
@@ -56,8 +57,13 @@ export type ChoiceStepProps = {
   max?: number;
   /** Which artwork map to read. The sport question uses its own so the glyph
    * that follows the answer through the flow is the sport's, not an answer's. */
-  art?: 'option' | 'sport' | 'side';
+  art?: 'option' | 'sport' | 'side' | 'verdict';
   onChange: (next: string[]) => void;
+  /** Something said back about an answer, drawn straight under that answer
+   * (`reactAfter`) rather than under the whole list, where on a long list it
+   * landed below the fold and was never seen. */
+  reaction?: ReactNode;
+  reactAfter?: string | null;
 };
 
 /**
@@ -69,7 +75,16 @@ export type ChoiceStepProps = {
  * entirely by that disc turning violet, which is why the list stays calm as
  * you tap down it instead of lighting up like a control panel.
  */
-export function ChoiceStep({ options, selected, multi, max, art = 'option', onChange }: ChoiceStepProps) {
+export function ChoiceStep({
+  options,
+  selected,
+  multi,
+  max,
+  art = 'option',
+  onChange,
+  reaction,
+  reactAfter,
+}: ChoiceStepProps) {
   const scheme = useColorScheme();
   const meter = meterColors[scheme];
   const t = useT();
@@ -149,13 +164,19 @@ export function ChoiceStep({ options, selected, multi, max, art = 'option', onCh
   return (
     <View style={styles.list}>
       {options.map((option) => (
-        <ChoiceRow
-          key={option.value}
-          option={option}
-          selected={selected.includes(option.value)}
-          art={art}
-          onPress={() => toggle(option.value)}
-        />
+        <Fragment key={option.value}>
+          {/* The rows under an arriving reaction slide down to make room
+              rather than jumping. */}
+          <Animated.View layout={LinearTransition.duration(240).reduceMotion(ReduceMotion.System)}>
+            <ChoiceRow
+              option={option}
+              selected={selected.includes(option.value)}
+              art={art}
+              onPress={() => toggle(option.value)}
+            />
+          </Animated.View>
+          {reaction != null && reactAfter === option.value && reaction}
+        </Fragment>
       ))}
 
       {/* Under the list, in the caption colour: it reports what happened, it
@@ -239,7 +260,7 @@ function ChoiceChip({
         });
       }}
       style={[styles.chip, chipStyle]}>
-      <Glyph size={CHIP_ICON} color={art.color} weight="fill" />
+      <Glyph size={CHIP_ICON} color={art.color} weight={art.weight ?? 'fill'} />
       <Text style={[styles.chipLabel, { color: colors.foreground }]} numberOfLines={1}>
         {option.label}
       </Text>
@@ -258,14 +279,14 @@ function ChoiceRow({
 }: {
   option: ResolvedOption;
   selected: boolean;
-  art: 'option' | 'sport' | 'side';
+  art: 'option' | 'sport' | 'side' | 'verdict';
   onPress: () => void;
 }) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
 
-  const map = artKind === 'sport' ? SPORT_ICONS : OPTION_ICONS;
+  const map = artKind === 'sport' ? SPORT_ICONS : artKind === 'verdict' ? VERDICT_ICONS : OPTION_ICONS;
   const art = map[option.value] ?? map.default;
   const side = artKind === 'side' ? (option.value as FeetSide) : null;
   const Glyph = art.icon;
@@ -317,7 +338,7 @@ function ChoiceRow({
         {side != null ? (
           <FeetGlyph side={side} size={ICON + 4} active={PRIMARY} idle={IDLE_CHECK[scheme]} />
         ) : (
-          <Glyph size={ICON} color={art.color} weight="fill" />
+          <Glyph size={ICON} color={art.color} weight={art.weight ?? 'fill'} />
         )}
 
         {option.caption == null ? (

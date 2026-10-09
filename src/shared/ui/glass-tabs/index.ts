@@ -12,7 +12,7 @@ export {
   TabBarMinimizeProvider,
   useMinimizeOnScroll,
   useTabBarMinimized,
-  MINIMIZE_SPRING,
+  MINIMIZE_MS,
 } from './minimize-context';
 export { CHROME_BLUR_BLEED, ProgressiveBlur } from './progressive-blur';
 export { renderFadingTabScreen } from './fading-tab-slot';

@@ -39,8 +39,9 @@ export const PLAYER_ES = {
   'player.painRule.body': '0-3 está bien. 4-5 vale si se calma a la mañana siguiente. 6 o más: para.',
   'player.painRule.ok': 'Entendido',
   'player.painRule.a11y': 'Cuánto dolor es aceptable',
-  'player.tempo.on': 'Sonidos de ritmo activados',
-  'player.tempo.off': 'Sonidos de ritmo desactivados',
+  'player.tempo.on': 'Sonido activado',
+  'player.tempo.off': 'Sonido desactivado',
+  'player.voice.replay': 'Repetir la explicación',
 
   // ── The player's own chrome ───────────────────────────────────────────────
   'player.header.meta': '{minutes} · {moves}',

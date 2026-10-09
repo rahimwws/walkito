@@ -1,17 +1,15 @@
 import { FireIcon } from 'phosphor-react-native/src/icons/Fire';
 import { StyleSheet, Text, View } from 'react-native';
 import Animated, {
-  Easing,
-  ReduceMotion,
   useAnimatedStyle,
   useDerivedValue,
   withDelay,
-  withSpring,
 } from 'react-native-reanimated';
 
 import { accents, fonts, meterColors, palette } from '@/shared/config';
 import { useLanguage, type Language } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { settle } from '@/shared/lib/motion';
 
 /**
  * Weekday names, from the platform rather than from a catalogue.
@@ -130,15 +128,7 @@ function Cell({
   const flame = accents[scheme].orange;
 
   const landed = useDerivedValue(() =>
-    withDelay(
-      index * STAGGER_MS,
-      withSpring(1, {
-        damping: 15,
-        stiffness: 180,
-        mass: 0.7,
-        reduceMotion: ReduceMotion.System,
-      }),
-    ),
+    withDelay(index * STAGGER_MS, settle(1, 380)),
   );
 
   const style = useAnimatedStyle(() => ({

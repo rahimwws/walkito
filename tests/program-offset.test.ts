@@ -13,6 +13,10 @@ import { logPain, programState, setProgramState } from '@/entities/program/model
 
 // Far past any plan, so these logs cannot collide with another file's.
 const D = 300;
+// Every check-in at eight in the morning, local time. The week's average only
+// counts first-step readings, those made before noon, so logs stamped with the
+// clock passed this file before midday and failed it after.
+const MORNING = new Date(2026, 0, 5, 8, 0).getTime();
 
 afterAll(() => {
   setProgramState({ progressionOffset: 0 });
@@ -21,19 +25,19 @@ afterAll(() => {
 describe('the progression offset', () => {
   test('two calm mornings take a step back off', () => {
     setProgramState({ progressionOffset: -1 });
-    for (let day = D; day < D + 6; day += 1) logPain(day, 3);
+    for (let day = D; day < D + 6; day += 1) logPain(day, 3, [], MORNING);
     expect(settleOffset(D + 5)).toBe(0);
     expect(programState().progressionOffset).toBe(0);
   });
 
   test('a spike puts it back on, and it is stored', () => {
-    logPain(D + 6, 7);
+    logPain(D + 6, 7, [], MORNING);
     expect(settleOffset(D + 6)).toBe(-1);
     expect(programState().progressionOffset).toBe(-1);
   });
 
   test('one calm morning after a spike is not enough', () => {
-    logPain(D + 7, 2);
+    logPain(D + 7, 2, [], MORNING);
     expect(settleOffset(D + 7)).toBe(-1);
   });
 

@@ -7,7 +7,6 @@ import Animated, {
   useAnimatedReaction,
   useAnimatedStyle,
   useSharedValue,
-  withSpring,
 } from 'react-native-reanimated';
 import Svg, {
   Defs,
@@ -21,6 +20,8 @@ import Svg, {
 import { accents, fonts, meterColors, palette, primaryButton } from '@/shared/config';
 import { useT, type Key } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+// Aliased: `settle` here already names the release handler.
+import { settle as glideTo } from '@/shared/lib/motion';
 
 export const PAIN_MIN = 0;
 export const PAIN_MAX = 10;
@@ -185,10 +186,7 @@ export function PainScale({ score, onChange, usual }: PainScaleProps) {
     // Snapped to whole points on release. A pain score is an integer — leaving
     // the knob between two of them would imply a precision the question does
     // not have.
-    at.value = withSpring(Math.round(raw * PAIN_MAX) / PAIN_MAX, {
-      damping: 18,
-      stiffness: 220,
-    });
+    at.value = glideTo(Math.round(raw * PAIN_MAX) / PAIN_MAX, 220);
   };
 
   /**

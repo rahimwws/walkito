@@ -87,7 +87,9 @@ export const JOURNEY_RU = {
   'onboarding.react.painZero': 'Так и оставим.',
   'onboarding.react.painMild': 'Немного, но каждое утро.',
   'onboarding.react.painMiddle': 'Достаточно, чтобы испортить день.',
-  'onboarding.react.painHard': 'Начнём мягко.',
+  'onboarding.react.painHard': 'Тяжёлое начало дня. Первые занятия сделаем мягкими.',
+  // Under the morning reaction: the same date the first progress check is on.
+  'onboarding.react.painRecheck': 'Это точка отсчёта. Проверим снова {date}.',
 
   // ── Safety check ─────────────────────────────────────────────────────────
   'onboarding.safety.title': 'Есть что-то из этого сейчас?',
@@ -141,11 +143,6 @@ export const JOURNEY_RU = {
   'onboarding.reflection.feetDaily': 'На ногах {band} в день',
 
   // ── Halfway ──────────────────────────────────────────────────────────────
-  'onboarding.midway.title': 'Что мы уже знаем, {name}',
-  'onboarding.midway.body': 'Ещё пара вопросов, и план готов.',
-  'onboarding.midway.mornings': 'По утрам: {score} из 10',
-  'onboarding.midway.since': 'Сколько: {duration}',
-  'onboarding.midway.tried': 'Пробовали: {items}',
   'onboarding.midway.nothing': 'Сейчас ничего не болит',
 
   // ── Why it still hurts ───────────────────────────────────────────────────
@@ -221,6 +218,8 @@ export const JOURNEY_RU = {
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.heading': 'Собираем ваш план',
   'onboarding.building.where': '{where} · по утрам {score}/10',
+  // Under the place, on the building screen's first card.
+  'onboarding.building.mornings': 'Первые шаги {score}/10',
   'onboarding.building.safety': 'Проверка безопасности пройдена',
   'onboarding.building.seated': 'Первая неделя - сидя',
   'onboarding.building.kitAll': 'Всё нужное есть дома',
@@ -240,6 +239,12 @@ export const JOURNEY_RU = {
   'setup.save.title': 'Вы с нами',
   'setup.save.blurb': 'Чтобы не потерять при смене телефона.',
   'setup.save.later': 'Не сейчас',
+  // After the purchase, for anyone with no address on file: the welcome and
+  // the first fortnight's emails go to it.
+  'setup.email.title': 'Отправить план вам на почту?',
+  'setup.email.placeholder': 'you@example.com',
+  'setup.email.note': 'Необязательно. Несколько коротких писем в первые две недели.',
+  'setup.email.send': 'Отправить',
   'setup.widget.title': 'Отметка на экране «Домой»',
   'setup.widget.blurb': 'Одно касание, до того как встать.',
   'setup.widget.add': 'Добавить виджет',

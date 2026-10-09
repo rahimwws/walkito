@@ -9,7 +9,6 @@ import Animated, {
   useSharedValue,
   withDelay,
   withSequence,
-  withSpring,
   withTiming,
 } from 'react-native-reanimated';
 
@@ -18,6 +17,7 @@ import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
+import { settle } from '@/shared/lib/motion';
 
 /** The app's own icon, so the mock banner is the real thing at notification
  * size rather than an illustration of one. The 150 px copy, not `icon.png`:
@@ -142,10 +142,7 @@ function Banner() {
   const pulse = useSharedValue(0);
 
   useEffect(() => {
-    drop.value = withDelay(
-      260,
-      withSpring(1, { damping: 13, stiffness: 150, mass: 0.9, reduceMotion: ReduceMotion.System }),
-    );
+    drop.value = withDelay(260, settle(1, 480));
     pulse.value = withDelay(
       1200,
       withSequence(

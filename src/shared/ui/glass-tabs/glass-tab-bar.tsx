@@ -19,7 +19,6 @@ import Animated, {
   runOnJS,
   useAnimatedStyle,
   useSharedValue,
-  withSpring,
   type AnimatedStyle,
   type SharedValue,
 } from 'react-native-reanimated';
@@ -27,8 +26,9 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import type { TabListProps, TabTriggerSlotProps } from 'expo-router/ui';
 import { fonts } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
+import { settle } from '@/shared/lib/motion';
 
-import { MINIMIZE_SPRING, setMinimized, useMinimizeState } from './minimize-context';
+import { setMinimized, useMinimizeState } from './minimize-context';
 import { CHROME_BLUR_BLEED, ProgressiveBlur } from './progressive-blur';
 
 const AnimatedGlassView = Animated.createAnimatedComponent(GlassView);
@@ -56,11 +56,11 @@ const ITEM_PAD_V = 7;
 const HIGHLIGHT_EXPANDED = ICON_SIZE + LABEL_BLOCK + ITEM_PAD_V * 2;
 const HIGHLIGHT_MINIMIZED = ICON_SIZE + ITEM_PAD_V * 2;
 /**
- * Slide spring: interruptible by design — rapid tab-hopping retargets with
- * preserved velocity. Slight under-damping gives the pill a tiny settle,
- * safe here because it's transform-only (no layout involved).
+ * The pill's slide between tabs. Interruptible: rapid tab-hopping retargets
+ * it from where it is. It comes to rest without overshooting
+ * (`shared/lib/motion`).
  */
-const SLIDE_SPRING = { duration: 420, dampingRatio: 0.82 };
+const SLIDE_MS = 360;
 
 export type GlassTabBarTheme = {
   activeTint: string;
@@ -224,7 +224,7 @@ export function GlassTabBar({
           return;
         }
         const rounded = Math.round(slideIndex.value);
-        slideIndex.value = withSpring(rounded, SLIDE_SPRING);
+        slideIndex.value = settle(rounded, SLIDE_MS);
         runOnJS(selectIndex)(rounded);
         isDragging.value = false;
       });
@@ -239,7 +239,7 @@ export function GlassTabBar({
           return;
         }
         const index = Math.round(indexAtX(event.x, progress.value));
-        slideIndex.value = withSpring(index, SLIDE_SPRING);
+        slideIndex.value = settle(index, SLIDE_MS);
         setMinimized(minimized, 0);
         runOnJS(selectIndex)(index);
       });
@@ -465,7 +465,7 @@ export function GlassTabButton({
   // scrubbing, the finger owns the highlight — never fight it with a spring.
   useEffect(() => {
     if (isFocused && bar && !bar.isDragging.value) {
-      bar.slideIndex.value = withSpring(index, SLIDE_SPRING);
+      bar.slideIndex.value = settle(index, SLIDE_MS);
     }
   }, [isFocused, index, bar]);
 
@@ -517,7 +517,7 @@ export function GlassTabButton({
       onPress={(event) => {
         // The GestureDetector normally consumes touches; this still fires
         // for accessibility activation (VoiceOver) and keyboard focus.
-        if (bar) bar.slideIndex.value = withSpring(index, SLIDE_SPRING);
+        if (bar) bar.slideIndex.value = settle(index, SLIDE_MS);
         setMinimized(minimized, 0);
         onPress?.(event);
       }}

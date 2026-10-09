@@ -24,7 +24,6 @@ import Animated, {
   useSharedValue,
   withDelay,
   withSequence,
-  withSpring,
   withTiming,
   type SharedValue,
 } from 'react-native-reanimated';
@@ -34,6 +33,7 @@ import { scheduleOnRN } from 'react-native-worklets';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { settle } from '@/shared/lib/motion';
 
 import {
   HANDOFF_SIZE,
@@ -223,13 +223,10 @@ export const UpdateSheet = memo(function UpdateSheet({
       easing: Easing.out(Easing.quad),
       reduceMotion: motion,
     });
-    // Barely under-damped: the card settles with a hint of give, not a bounce.
-    rise.value = withSpring(1, { damping: 26, stiffness: 260, mass: 1, reduceMotion: motion });
-    // A beat after the card, and springier: he pops up out of it.
-    enter.value = withDelay(
-      170,
-      withSpring(1, { damping: 12, stiffness: 190, mass: 1, reduceMotion: motion }),
-    );
+    // The card rises and comes to rest; no overshoot (`shared/lib/motion`).
+    rise.value = settle(1, 420, motion);
+    // A beat after the card, he rises out of it.
+    enter.value = withDelay(170, settle(1, 460, motion));
     reveal.value = withDelay(
       220,
       withTiming(1, { duration: 640, easing: Easing.out(Easing.cubic), reduceMotion: motion }),
@@ -463,7 +460,7 @@ export const UpdateSheet = memo(function UpdateSheet({
         withTiming(1, { duration: 70, easing: Easing.out(Easing.quad), reduceMotion: motion }),
         withTiming(0, {
           duration: 220,
-          easing: Easing.out(Easing.back(2.2)),
+          easing: Easing.out(Easing.cubic),
           reduceMotion: motion,
         }),
       ),

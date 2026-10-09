@@ -84,6 +84,8 @@ export type WeekInput = {
   steps?: readonly GoalType[];
   daysPerWeek: DaysPerWeek;
   defaultMinutes: SessionMinutes;
+  /** Big-toe work on strength days (`PlanSettings.toeWork`). */
+  toeWork?: boolean;
   /** Everything except `settling`, which the builder sets from the week index. */
   eligibility: Omit<EligibilityContext, 'settling'>;
   levels: ChainLevels;
@@ -320,6 +322,10 @@ export function buildWeek(input: WeekInput): WeekPlan {
       }
       if (focus === 'arch_hold') {
         for (const id of rotate(['toe_spread', 'band_inversion'], seed, 1, ctx)) candidates.push(planned(id, false, hasStep));
+      } else if (input.toeWork === true) {
+        // A big toe that will not lift, or a bunion: the toe's own strength,
+        // seated and level one. The arch focus above already carries it.
+        for (const id of rotate(['big_toe_lift', 'toe_spread'], seed, 1, ctx)) candidates.push(planned(id, false, hasStep));
       }
       for (const id of rotate(MOBILITY_POOL, seed, 1, ctx)) candidates.push(planned(id, false, hasStep));
     } else if (slot === 'mobility') {

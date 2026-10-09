@@ -12,9 +12,9 @@ export const TESTDAY_RU = {
   'testday.intro.eyebrow': 'День тестов',
   'testday.intro.title': 'Три коротких теста',
   'testday.intro.body': {
-    one: 'Около {count} минуты. Цифры покажут, насколько продвинулась каждая цель, и по ним строится план на следующие две недели.',
-    few: 'Около {count} минут. Цифры покажут, насколько продвинулась каждая цель, и по ним строится план на следующие две недели.',
-    many: 'Около {count} минут. Цифры покажут, насколько продвинулась каждая цель, и по ним строится план на следующие две недели.',
+    one: 'Около {count} минуты.',
+    few: 'Около {count} минут.',
+    many: 'Около {count} минут.',
   },
   'testday.intro.nowSeconds': 'Сейчас {now} с · цель {goal} с',
   'testday.intro.nowRaises': {
@@ -46,34 +46,35 @@ export const TESTDAY_RU = {
   // ── The three tests ───────────────────────────────────────────────────────
   'testday.test.eyebrow': 'Тест {current} из {total}',
   'testday.test.calf.name': 'Подъёмы на носок',
-  'testday.test.calf.measures': 'Сколько подъёмов делает каждая нога в ровном темпе',
   'testday.test.arch.name': 'Удержание свода',
-  'testday.test.arch.measures': 'Как долго свод стопы остаётся поднятым',
   'testday.test.balance.name': 'Баланс',
-  'testday.test.balance.measures': 'Как долго вы стоите на одной ноге с закрытыми глазами',
 
   'testday.side.left': 'Левая нога',
   'testday.side.right': 'Правая нога',
   'testday.side.leftSore': 'Левая нога - та, что болит',
   'testday.side.rightSore': 'Правая нога - та, что болит',
 
-  'testday.calf.step1': 'Встаньте на одну ногу, кончиками пальцев касаясь стены для равновесия.',
-  'testday.calf.step2': 'Поднимайтесь до конца и опускайтесь, один подъём каждые 2 секунды. Темп задаёт щелчок.',
-  'testday.calf.step3': 'Нажмите «Стоп», когда не сможете держать темп или полную высоту. Затем другая нога.',
+  // The button on the picture before a test: opens the clip at full size.
+
+  'testday.watch': 'Смотреть видео',
+
+  'testday.calf.step1': 'На одной ноге, пальцы касаются стены.',
+  'testday.calf.step2': 'Вверх до конца и вниз, под щелчок.',
+  'testday.calf.step3': 'Стоп, когда теряете темп или высоту.',
   'testday.calf.stopHint': 'Нажмите, когда не сможете держать темп или полную высоту',
   'testday.calf.up': 'Вверх',
   'testday.calf.down': 'Вниз',
   'testday.calf.otherTitle': 'Теперь другая нога',
   'testday.calf.otherBody': 'Тот же темп, та же полная высота, пальцы на стене.',
 
-  'testday.arch.step1': 'Встаньте на обе ноги, вес распределён поровну.',
-  'testday.arch.step2': 'Подтяните подушечку стопы к пятке, чтобы свод поднялся. Пальцы длинные и расслабленные.',
-  'testday.arch.step3': 'Держите. Нажмите «Стоп», как только свод опустится.',
+  'testday.arch.step1': 'Встаньте на обе ноги.',
+  'testday.arch.step2': 'Подтяните подушечку стопы к пятке.',
+  'testday.arch.step3': 'Стоп, когда свод опускается.',
   'testday.arch.stopHint': 'Нажмите, как только свод опустится',
 
-  'testday.balance.step1': 'Встаньте на одну ногу рядом со стеной, руки на поясе.',
-  'testday.balance.step2': 'Закройте глаза, когда закончится отсчёт. Звук сообщит, что время вышло.',
-  'testday.balance.step3': 'Откройте глаза и нажмите «Стоп», как только другая нога коснётся пола.',
+  'testday.balance.step1': 'На одной ноге, руки на поясе.',
+  'testday.balance.step2': 'По сигналу закройте глаза.',
+  'testday.balance.step3': 'Стоп, когда вторая нога коснётся пола.',
   'testday.balance.stopHint': 'Нажмите, когда другая нога коснётся пола',
 
   'testday.start': 'Начать',
@@ -106,9 +107,7 @@ export const TESTDAY_RU = {
   'testday.confirm.finish': 'Посмотреть результаты',
 
   // ── Results ───────────────────────────────────────────────────────────────
-  'testday.results.title': 'Ваши результаты',
-  'testday.results.blurb': 'В сравнении с вашим прошлым тестом, а не с кем-то ещё.',
-  'testday.results.firstBlurb': 'Это ваша точка отсчёта. Следующий тест покажет, что изменилось.',
+  'testday.results.firstBlurb': 'Следующий тест покажет, насколько вы продвинулись.',
   'testday.results.name.arch_hold': 'Удержание свода',
   'testday.results.name.calf_raises': 'Подъёмы на носок',
   'testday.results.name.balance': 'Баланс',
@@ -119,12 +118,6 @@ export const TESTDAY_RU = {
   // Genitive: it follows the figure, «17 % разницы между ногами».
   'testday.results.gapUnit': 'разницы между ногами',
   'testday.results.legs': 'Левая {left} · правая {right}',
-  'testday.results.goalSeconds': 'Цель {n} с',
-  'testday.results.goalRaises': {
-    one: 'Цель {count} подъём',
-    few: 'Цель {count} подъёма',
-    many: 'Цель {count} подъёмов',
-  },
   'testday.results.goalGap': 'Цель - меньше {n} %',
   'testday.results.toGoSeconds': { one: 'Ещё {count} с', few: 'Ещё {count} с', many: 'Ещё {count} с' },
   'testday.results.toGoRaises': {
@@ -174,13 +167,31 @@ export const TESTDAY_RU = {
   'testday.results.planUpdated': 'План на следующие две недели обновлён.',
   'testday.results.done': 'Готово',
 
-  'testday.results.verdictFirst': 'Три теста позади. Это ваши стартовые цифры.',
-  'testday.results.verdictSteady': 'Три теста позади. Вот как каждый выглядит рядом с прошлым.',
-  'testday.results.verdictUp.calf_raises': 'Три теста позади. Подъёмов на носок стало больше.',
-  'testday.results.verdictUp.arch_hold': 'Три теста позади. Свод держится дольше.',
-  'testday.results.verdictUp.balance': 'Три теста позади. Баланс держится дольше.',
-  'testday.results.verdictUpTwo': 'Три теста позади. Два из них выросли.',
-  'testday.results.verdictUpAll': 'Три теста позади. Выросли все три.',
+  'testday.results.verdictFirst': 'Три числа, которые предстоит побить',
+  'testday.results.verdictSteady': 'Все три результата держатся',
+  'testday.results.verdictUp.calf_raises': 'Больше подъёмов, чем в прошлый раз',
+  'testday.results.verdictUp.arch_hold': 'Свод держится дольше',
+  'testday.results.verdictUp.balance': 'Вы дольше держите баланс',
+  'testday.results.verdictUpTwo': 'Два из трёх выросли',
+  'testday.results.verdictUpAll': 'Все три выросли',
+  // The line over the headline, and the headline when a goal was reached.
+  'testday.results.heroEyebrowUp': 'Новый рекорд',
+  'testday.results.heroEyebrowFirst': 'Ваша точка отсчёта',
+  'testday.results.heroEyebrowSteady': 'Тесты пройдены',
+  'testday.results.verdictGoal.calf_raises': 'Цель по подъёмам на носок достигнута',
+  'testday.results.verdictGoal.arch_hold': 'Цель по удержанию свода достигнута',
+  'testday.results.verdictGoal.balance': 'Цель по балансу достигнута',
+  // A test's row opened: every test so far, and the share card.
+  'testday.results.history': 'Все тесты',
+  'testday.results.showDetails': 'Подробнее',
+  'testday.results.hideDetails': 'Скрыть подробности',
+  'testday.results.share': 'Поделиться',
+  'testday.results.shareTitle': 'Мой тест стопы',
+  'testday.results.shareBrand': 'Walkito',
+  'testday.results.shareMessage': 'Мой тест стопы в Walkito: подъёмы на носок {calf} · свод {arch} с · баланс {balance} с',
+  // A figure in seconds on its own: the unit beside the big number, and the share card.
+  'testday.results.secondsShort': 'с',
+  'testday.results.valueSeconds': '{n} с',
   'testday.results.dateVs': {
     one: '{date} · в сравнении с тестом {count} день назад',
     few: '{date} · в сравнении с тестом {count} дня назад',
@@ -191,11 +202,6 @@ export const TESTDAY_RU = {
   'testday.results.chipSame': 'Без изменений',
   'testday.results.chipSeconds': '{delta} с',
   'testday.results.chipRaises': { one: '{delta} подъём', few: '{delta} подъёма', many: '{delta} подъёмов' },
-  'testday.results.lastSeconds': 'В прошлый раз {n} с',
-  'testday.results.lastRaises': 'В прошлый раз {n}',
-  'testday.results.legLeft': 'Левая',
-  'testday.results.legRight': 'Правая',
-  'testday.results.weakerLeg': 'Большая цифра - это более слабая нога.',
   'testday.results.gapBetween': 'Разница между ногами {n} %',
   'testday.results.explain.calf_raises':
     'Подъёмы на носок показывают, сколько работы икра и ахиллово сухожилие выдерживают, пока не устанут. Больше подъёмов - значит, икра берёт на себя больше каждого шага на долгой прогулке или пробежке.',

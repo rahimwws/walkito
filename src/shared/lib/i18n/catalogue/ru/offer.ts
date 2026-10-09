@@ -80,6 +80,8 @@ export const OFFER_RU = {
   'offer.next': 'Далее',
   'offer.introTitle': 'Вот как начнётся ваш план',
   'offer.introTitleNamed': '{name}, вот как начнётся ваш план',
+  // Under the title: the goal they picked in onboarding, quoted back as theirs.
+  'offer.introWhy': '«{why}».',
   'offer.introTodayWhen': 'Сегодня',
   'offer.introTodayTitle': { one: 'Тест на {count} минуту', few: 'Тест на {count} минуты', many: 'Тест на {count} минут' },
   'offer.introTodayBody': 'Икры, свод стопы и баланс. План начнётся с этих цифр.',

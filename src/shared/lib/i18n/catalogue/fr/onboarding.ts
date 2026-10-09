@@ -37,7 +37,6 @@ export const ONBOARDING_FR = {
   'onboarding.intro.headline': 'Voyons pourquoi ça fait encore mal.',
   'onboarding.intro.cta': 'Continuer avec Apple',
   'onboarding.intro.ctaGoogle': 'Continuer avec Google',
-  'onboarding.intro.footnote': 'Environ 3 minutes',
   'onboarding.intro.signInFailed': 'La connexion n’a pas abouti. Réessaie.',
   'onboarding.intro.emailCta': 'Se connecter par e-mail',
 
@@ -51,16 +50,49 @@ export const ONBOARDING_FR = {
 
   // ── Name ─────────────────────────────────────────────────────────────────
   'onboarding.name.title': 'Comment veux-tu\nqu’on t’appelle ?',
-  'onboarding.name.blurb':
-    'Tout ce qui suit est écrit pour toi, pas pour les coureurs en général.',
+  'onboarding.name.blurb': 'Il ira sur ton passeport du pied.',
   'onboarding.name.placeholder': 'ex. Alex',
+  // The Foot Passport: a stamp per answer, folded above the questions and
+  // open on the halfway screen. Labels are short: each sits beside its value.
+  'onboarding.passport.title': 'Passeport du pied',
+  'onboarding.passport.owner': 'Passeport du pied de {name}',
+  'onboarding.passport.empty': 'Tes réponses s’afficheront ici',
+  'onboarding.passport.issued': 'Délivré le {date}',
+  'onboarding.passport.edit': 'Quelque chose à corriger ? Touche pour modifier.',
+  'onboarding.passport.heading': 'Ton passeport du pied, {name}',
+  // Who they are, in the passport's words: the role question's own
+  // answers ("Both") mean nothing out of it.
+  'onboarding.passport.role.running': 'Coureur',
+  'onboarding.passport.role.feet': 'Debout au travail',
+  'onboarding.passport.role.both': 'Coureur, debout au travail',
+  'onboarding.passport.role.walking': 'Marche au quotidien',
+  'onboarding.passport.who': 'Qui',
+  'onboarding.passport.toe': 'Lever le gros orteil',
+  'onboarding.passport.bunion': 'Oignon',
+  'onboarding.passport.where': 'Où ça fait mal',
+  'onboarding.passport.since': 'Depuis',
+  'onboarding.passport.mornings': 'Premiers pas',
+  'onboarding.passport.goal': 'Objectif',
+  'onboarding.passport.load': 'Charge',
+  'onboarding.passport.habit': 'Avec',
+  'onboarding.passport.plan': 'Plan',
+  'onboarding.passport.morningsValue': '{score}/10',
+  'onboarding.passport.planValue': '{days} · {minutes}',
 
-  // ── Sex ──────────────────────────────────────────────────────────────────
-  'onboarding.sex.title': 'Homme ou femme, {name} ?',
-  'onboarding.sex.blurb':
-    'La tolérance à la charge et les blessures typiques diffèrent, alors le plan aussi.',
-  'onboarding.sex.female': 'Femme',
-  'onboarding.sex.male': 'Homme',
+  'onboarding.toe.title': 'Arrives-tu à lever seulement le gros orteil ?',
+  'onboarding.toe.blurb': 'Debout, garde les quatre autres orteils au sol et essaie.',
+  'onboarding.toe.yes': 'Oui, facilement',
+  'onboarding.toe.little': 'Un peu',
+  'onboarding.toe.no': 'Non, il ne se lève pas',
+  'onboarding.bunion.title': 'As-tu un oignon (hallux valgus) ?',
+  'onboarding.bunion.blurb': 'Une bosse osseuse à la base du gros orteil, souvent avec l’orteil qui penche vers les autres.',
+  'onboarding.bunion.straight': 'Gros orteil droit',
+  'onboarding.bunion.example': 'Avec un oignon',
+  'onboarding.bunion.no': 'Non',
+  'onboarding.bunion.little': 'Un léger',
+  'onboarding.bunion.yes': 'Oui',
+  'onboarding.bunion.unsure': 'Je ne sais pas',
+  'onboarding.bunion.note': 'Une image pour comparer, pas un diagnostic.',
 
   // ── Runner ───────────────────────────────────────────────────────────────
   'onboarding.runner.title': 'Quel est ton profil sportif, {name} ?',
@@ -71,12 +103,6 @@ export const ONBOARDING_FR = {
   'onboarding.runner.regular': 'Régulièrement',
   'onboarding.runner.racing': 'Je prépare un objectif',
   'onboarding.runner.serious': 'Je m’y mets à fond',
-
-  // ── Age ──────────────────────────────────────────────────────────────────
-  'onboarding.age.title': 'Quel âge as-tu ?',
-  'onboarding.age.blurb':
-    'Les tendons s’adaptent plus lentement avec l’âge. Ça règle la vitesse à laquelle le plan monte.',
-  'onboarding.age.years': 'ans',
 
   // ── Body ─────────────────────────────────────────────────────────────────
   'onboarding.body.title': 'Encore un peu sur toi, {name}',
@@ -103,15 +129,19 @@ export const ONBOARDING_FR = {
   'onboarding.goal.allday': 'Tenir debout toute la journée',
   'onboarding.goal.comeback': 'Reprendre après une blessure',
   'onboarding.goal.steady': 'Marcher avec assurance',
-  'onboarding.days.title': 'Combien de jours par semaine, {name} ?',
-  'onboarding.days.blurb': 'Des séances courtes. Les jours de repos font partie du plan, ce ne sont pas des trous.',
+  // Days and minutes, one screen: a heading over two short lists.
+  'onboarding.schedule.title': 'Combien de temps as-tu, {name} ?',
+  'onboarding.schedule.days': 'Jours par semaine',
+  'onboarding.schedule.minutes': 'Minutes par séance',
+  'onboarding.schedule.kit': 'Chez toi ?',
+  // Under the kit: the exercises it brings into the plan, as they are picked.
+  'onboarding.schedule.adds': 'S’ajoute à ton plan',
   'onboarding.days.days3': '3 jours',
   'onboarding.days.days3Caption': 'Un départ en douceur',
   'onboarding.days.days5': '5 jours',
   'onboarding.days.days5Caption': 'Recommandé',
   'onboarding.days.days7': 'Tous les jours',
   'onboarding.days.days7Caption': 'Court et quotidien',
-  'onboarding.minutes.title': 'Combien de temps par séance ?',
   'onboarding.minutes.blurb': 'Change-le quand tu veux - les jours chargés comptent aussi.',
   'onboarding.minutes.min3': '3 minutes',
   'onboarding.minutes.min3Caption': 'Même les jours chargés',
@@ -292,7 +322,6 @@ export const ONBOARDING_FR = {
     'Le volume est allé plus vite que tes jambes. Le plan revient un peu en arrière, puis construit.',
   'onboarding.pattern.calf': 'Le mollet tire sur tout ce qui est en dessous. Assouplis-le et le reste suit.',
   'onboarding.pattern.none': 'Tu es là avant que ça fasse mal. C’est la façon la plus simple de s’y prendre.',
-  'onboarding.building.promise': 'Premiers changements : du jour 12 au jour 16.',
 
   // ── Reflection parts ─────────────────────────────────────────────────────
   'onboarding.reflection.painHeel': 'Douleur au talon',

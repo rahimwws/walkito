@@ -51,6 +51,17 @@ import { introSeen, markIntroSeen } from '../model/intro';
 import { CodeSheet } from './code-sheet';
 import { IntroHow, IntroPlan, StepBar } from './offer-intro';
 
+/** The goal they picked, in the words onboarding offered it in. */
+const GOAL_WORDS: Readonly<Record<string, Key>> = {
+  mornings: 'onboarding.goal.mornings',
+  comeback: 'onboarding.goal.backToRunning',
+  race: 'onboarding.goal.race',
+  flatfeet: 'onboarding.goal.flatfeet',
+  allday: 'onboarding.goal.allday',
+  steady: 'onboarding.goal.steady',
+  injuryfree: 'onboarding.goal.injuryfree',
+};
+
 const DURATION: Readonly<Record<string, Key>> = {
   weeks: 'onboarding.duration.weeks',
   months: 'onboarding.duration.months',
@@ -227,6 +238,17 @@ export function OfferPage() {
     const duration = intake.painDuration != null ? DURATION[intake.painDuration] : undefined;
     if (duration != null) out.push(t(duration));
     return out;
+  })();
+
+  /** What they came for, in their words from onboarding, said back under the
+   * title as theirs. Our paywall only, like the strip. */
+  const why = (() => {
+    const intake = getIntake();
+    const key = intake?.goal != null ? GOAL_WORDS[intake.goal] : undefined;
+    if (key == null) return null;
+    if (intake?.goal === 'allday' && (intake.role === 'feet' || intake.role === 'both'))
+      return t('onboarding.goal.shift');
+    return t(key);
   })();
 
   /**
@@ -690,6 +712,7 @@ export function OfferPage() {
               <IntroPlan
                 name={profileName}
                 strip={strip}
+                why={why}
                 minutes={settings.defaultMinutes}
                 daysPerWeek={settings.daysPerWeek}
                 checkOn={Date.now() + FIRST_CHECK_DAYS * 86_400_000}

@@ -56,7 +56,6 @@ export const ONBOARDING_EN = {
   'onboarding.intro.headline': 'Let’s find out why it still hurts.',
   'onboarding.intro.cta': 'Continue with Apple',
   'onboarding.intro.ctaGoogle': 'Continue with Google',
-  'onboarding.intro.footnote': 'About 3 minutes',
   /** A genuine failure, not a cancel. No blame and no error code — there is
    * nothing here the user did wrong. */
   'onboarding.intro.signInFailed': 'Sign-in didn’t complete. Try again.',
@@ -74,15 +73,51 @@ export const ONBOARDING_EN = {
   // The newline is a deliberate break in the heading, not a wrap — each
   // language chooses where its own two lines divide.
   'onboarding.name.title': 'What should we\ncall you?',
-  'onboarding.name.blurb':
-    'Everything after this gets written for you, not for runners in general.',
+  'onboarding.name.blurb': 'It goes on your Foot Passport.',
   'onboarding.name.placeholder': 'e.g. Alex',
+  // The Foot Passport: a stamp per answer, folded above the questions and
+  // open on the halfway screen. Labels are short: each sits beside its value.
+  'onboarding.passport.title': 'Foot Passport',
+  'onboarding.passport.owner': '{name}’s Foot Passport',
+  'onboarding.passport.empty': 'Your answers will show up here',
+  'onboarding.passport.issued': 'Issued {date}',
+  'onboarding.passport.edit': 'Anything to fix? Tap to edit.',
+  'onboarding.passport.heading': 'Your Foot Passport, {name}',
+  // Who they are, in the passport's words: the role question's own
+  // answers ("Both") mean nothing out of it.
+  'onboarding.passport.role.running': 'Runner',
+  'onboarding.passport.role.feet': 'On my feet at work',
+  'onboarding.passport.role.both': 'Runner, on my feet at work',
+  'onboarding.passport.role.walking': 'Everyday walking',
+  'onboarding.passport.who': 'Who',
+  'onboarding.passport.toe': 'Big toe lift',
+  'onboarding.passport.bunion': 'Bunion',
+  'onboarding.passport.where': 'Where it hurts',
+  'onboarding.passport.since': 'Since',
+  'onboarding.passport.mornings': 'First steps',
+  'onboarding.passport.goal': 'Goal',
+  'onboarding.passport.load': 'Load',
+  'onboarding.passport.habit': 'Tied to',
+  'onboarding.passport.plan': 'Plan',
+  'onboarding.passport.morningsValue': '{score}/10',
+  'onboarding.passport.planValue': '{days} · {minutes}',
 
-  // ── Sex ──────────────────────────────────────────────────────────────────
-  'onboarding.sex.title': 'Male or female, {name}?',
-  'onboarding.sex.blurb': 'Load tolerance and injury patterns differ, so the plan does too.',
-  'onboarding.sex.female': 'Female',
-  'onboarding.sex.male': 'Male',
+  // The two foot checks with a photograph: each answer changes the plan
+  // (`toeWork` in `planSettingsFrom`), so neither is a question for show.
+  'onboarding.toe.title': 'Can you lift your big toe on its own?',
+  'onboarding.toe.blurb': 'Stand up, keep the other four toes on the floor, and try.',
+  'onboarding.toe.yes': 'Yes, easily',
+  'onboarding.toe.little': 'A little',
+  'onboarding.toe.no': 'No, it won’t lift',
+  'onboarding.bunion.title': 'Do you have a bunion?',
+  'onboarding.bunion.blurb': 'A bony bump where the big toe meets the foot, often with the toe leaning in.',
+  'onboarding.bunion.straight': 'Straight big toe',
+  'onboarding.bunion.example': 'With a bunion',
+  'onboarding.bunion.no': 'No',
+  'onboarding.bunion.little': 'A slight one',
+  'onboarding.bunion.yes': 'Yes',
+  'onboarding.bunion.unsure': 'Not sure',
+  'onboarding.bunion.note': 'A picture to compare with, not a diagnosis.',
 
   // ── Runner ───────────────────────────────────────────────────────────────
   'onboarding.runner.title': 'What kind of athlete are you, {name}?',
@@ -93,12 +128,6 @@ export const ONBOARDING_EN = {
   'onboarding.runner.regular': 'Regular',
   'onboarding.runner.racing': 'Training for something',
   'onboarding.runner.serious': 'Serious about it',
-
-  // ── Age ──────────────────────────────────────────────────────────────────
-  'onboarding.age.title': 'How old are you?',
-  'onboarding.age.blurb': 'Tendons adapt more slowly with age. This paces how fast the plan builds.',
-  /** Both the unit toggle's label and the suffix riding the number. */
-  'onboarding.age.years': 'years',
 
   // ── Body ─────────────────────────────────────────────────────────────────
   'onboarding.body.title': 'A little more about you, {name}',
@@ -125,15 +154,19 @@ export const ONBOARDING_EN = {
   'onboarding.goal.allday': 'Stay on my feet all day',
   'onboarding.goal.comeback': 'Come back after an injury',
   'onboarding.goal.steady': 'Walk with confidence',
-  'onboarding.days.title': 'How many days a week, {name}?',
-  'onboarding.days.blurb': 'Short sessions. Rest days are part of the plan, not a gap in it.',
+  // Days and minutes, one screen: a heading over two short lists.
+  'onboarding.schedule.title': 'How much time do you have, {name}?',
+  'onboarding.schedule.days': 'Days a week',
+  'onboarding.schedule.minutes': 'Minutes per session',
+  'onboarding.schedule.kit': 'At home?',
+  // Under the kit: the exercises it brings into the plan, as they are picked.
+  'onboarding.schedule.adds': 'Adds to your plan',
   'onboarding.days.days3': '3 days',
   'onboarding.days.days3Caption': 'An easy start',
   'onboarding.days.days5': '5 days',
   'onboarding.days.days5Caption': 'Recommended',
   'onboarding.days.days7': 'Every day',
   'onboarding.days.days7Caption': 'Short and daily',
-  'onboarding.minutes.title': 'How long per session?',
   'onboarding.minutes.blurb': 'Change it any day - busy days still count.',
   'onboarding.minutes.min3': '3 minutes',
   'onboarding.minutes.min3Caption': 'Even on busy days',
@@ -338,9 +371,6 @@ export const ONBOARDING_EN = {
   'onboarding.pattern.shin': 'Volume outran your legs. The plan walks that back, then builds.',
   'onboarding.pattern.calf': 'The calf pulls on everything below it. Loosen it and the rest follows.',
   'onboarding.pattern.none': 'You’re here before it hurts. That’s the cheap way to do this.',
-  /** Day 12–16 is the subjective-relief window from the strength arm of
-   * Rathleff's trial, not the programme's length. */
-  'onboarding.building.promise': 'First changes: day 12 to 16.',
 
   // ── Reflection parts ─────────────────────────────────────────────────────
   // The nouns and the volume line the two reflection screens are assembled

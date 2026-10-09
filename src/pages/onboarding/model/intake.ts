@@ -30,13 +30,6 @@ function first(answers: Answers, key: string): string | null {
   return typeof value === 'string' ? value : null;
 }
 
-/** A measure step's number, or null when it is missing or nonsense. */
-function measured(answers: Answers, key: string, field: string): number | null {
-  const value = answers[key] as { unit?: string; fields?: Record<string, string> } | undefined;
-  const raw = value?.fields?.[field];
-  const n = raw == null ? NaN : Number.parseFloat(raw);
-  return Number.isFinite(n) && n > 0 ? n : null;
-}
 
 function strings(answers: Answers, key: string): string[] {
   const value = answers[key];
@@ -71,8 +64,10 @@ export function intakeFrom(
     challenge: null,
     load: first(answers, 'load'),
     sessionsPerWeek: null,
-    sex: first(answers, 'sex'),
-    age: measured(answers, 'age', 'years'),
+    // No longer asked either: sex only chose a photograph, and age only
+    // started anyone 55 or over a step lighter, which settling does anyway.
+    sex: null,
+    age: null,
     weightKg: null,
     shoe: null,
     // Asked after the purchase now, and written there.
@@ -87,9 +82,6 @@ export function intakeFrom(
     completedAt: now,
   };
 }
-
-/** Starting a step lighter than the plan as written. */
-export const EASY_START_AGE = 55;
 
 /**
  * Where the plan leans, from where it hurts.
@@ -118,7 +110,7 @@ export type StartingPlan = {
  * Length from the same `recommendedIndex` the summary screen uses — the two
  * must never disagree, since one is a promise and the other is what is kept.
  *
- * One step lighter for a new runner or anyone 55 and over. Not a judgement: the
+ * One step lighter for a new runner. Not a judgement: the
  * offset clears itself after two calm mornings (`settleOffset`), so the cost of
  * starting gently is a couple of days and the cost of starting too hard is a
  * flare in week one.
@@ -129,7 +121,6 @@ export function startingPlan(intake: Intake, answers: Answers = {}): StartingPla
   // for a week one that starts seated after the safety check.
   const gentle =
     intake.runner === 'new' ||
-    (intake.age != null && intake.age >= EASY_START_AGE) ||
     recentStart(answers) ||
     safetyPlan(answers).seated;
   return {
@@ -137,6 +128,16 @@ export function startingPlan(intake: Intake, answers: Answers = {}): StartingPla
     progressionOffset: gentle ? -1 : 0,
     focus: focusFor(intake.pain),
   };
+}
+
+/**
+ * The photo questions: a big toe that lifts only a little or not at all, or a
+ * bunion, slight or not. "Not sure" changes nothing.
+ */
+export function toeWorkFrom(answers: Answers): boolean {
+  const toe = first(answers, 'toe');
+  const bunion = first(answers, 'bunion');
+  return toe === 'little' || toe === 'no' || bunion === 'little' || bunion === 'yes';
 }
 
 const DAYS: Readonly<Record<string, DaysPerWeek>> = { days3: 3, days5: 5, days7: 7 };
@@ -154,6 +155,7 @@ export function planSettingsFrom(
 ): Partial<PlanSettings> {
   const out: Partial<PlanSettings> = {};
   if (safetyPlan(answers).seated) out.seatedStart = true;
+  if (toeWorkFrom(answers)) out.toeWork = true;
   const foot = footTypeFor(miniTest?.arch ?? null);
   if (foot !== 'unknown') out.footType = foot;
   const days = DAYS[first(answers, 'planDays') ?? ''];

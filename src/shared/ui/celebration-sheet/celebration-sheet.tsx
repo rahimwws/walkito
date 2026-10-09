@@ -9,8 +9,6 @@ import Animated, {
   useAnimatedStyle,
   useSharedValue,
   withDelay,
-  withSequence,
-  withSpring,
   withTiming,
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -21,6 +19,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { CORNERS, Confetti } from '@/shared/ui/confetti';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 import { TypedText } from '@/shared/ui/typed-text';
+import { settle } from '@/shared/lib/motion';
 
 /** The one emblem the app celebrates with. One badge for one idea: whatever
  * screen it appears over, it means something was earned. */
@@ -122,17 +121,7 @@ export function CelebrationSheet({
           easing: Easing.out(Easing.cubic),
           reduceMotion: ReduceMotion.System,
         });
-        pop.value = withDelay(
-          IN_MS - 80,
-          withSequence(
-            withSpring(1.14, { damping: 9, stiffness: 220, reduceMotion: ReduceMotion.System }),
-            withTiming(1, {
-              duration: 200,
-              easing: Easing.out(Easing.quad),
-              reduceMotion: ReduceMotion.System,
-            }),
-          ),
-        );
+        pop.value = withDelay(IN_MS - 80, settle(1, 420));
       });
       return () => cancelAnimationFrame(frame);
     }

@@ -71,6 +71,12 @@ export type PlanSettings = {
    * settings saved before it, and the server's copy, read as false.
    */
   seatedStart?: boolean;
+  /**
+   * The big toe gets its own work on strength days: it would not lift on its
+   * own, or there is a bunion (the photo questions in onboarding). Optional
+   * for the same reason as `seatedStart`.
+   */
+  toeWork?: boolean;
 };
 
 const SETTINGS_KEY = 'plan/settings';
@@ -159,7 +165,7 @@ export function setPlanSettings(patch: Partial<PlanSettings>, now: number = Date
   write(SETTINGS_KEY, next);
   for (const field of Object.keys(patch) as (keyof PlanSettings)[]) {
     // Set once by onboarding, never from Settings; nothing to chart.
-    if (field !== 'seatedStart') track('plan_settings_changed', { field });
+    if (field !== 'seatedStart' && field !== 'toeWork') track('plan_settings_changed', { field });
   }
   // A rigid foot drops the arch step; a flexible one gets it back.
   const set = outcome();
@@ -697,6 +703,7 @@ function build(weekStart: string, now: number, keepBefore?: string): WeekPlan {
     steps: outcome()?.steps ?? [],
     daysPerWeek: settings.daysPerWeek,
     defaultMinutes: settings.defaultMinutes,
+    toeWork: settings.toeWork === true,
     eligibility: withSkips(eligibilityFor(today)),
     levels: previous?.levels ?? store[weekStart]?.levels ?? { ...DEFAULT_LEVELS },
     lastWeekFeedback: feedbackBetween(previousStart, lastDay),

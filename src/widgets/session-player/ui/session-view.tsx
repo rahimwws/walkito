@@ -4,6 +4,7 @@ import ArrowLeft02Icon from '@hugeicons/core-free-icons/ArrowLeft02Icon';
 import Backpack03Icon from '@hugeicons/core-free-icons/Backpack03Icon';
 import BandageIcon from '@hugeicons/core-free-icons/BandageIcon';
 import InformationCircleIcon from '@hugeicons/core-free-icons/InformationCircleIcon';
+import ReplayIcon from '@hugeicons/core-free-icons/ReplayIcon';
 import PauseIcon from '@hugeicons/core-free-icons/PauseIcon';
 import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
 import VolumeHighIcon from '@hugeicons/core-free-icons/VolumeHighIcon';
@@ -73,6 +74,7 @@ import { SessionDoneSheet } from './session-done-sheet';
 import { SessionPainSheet } from './session-pain-sheet';
 import { CantDoSheet, PainRuleSheet } from './session-sheets';
 import { playTempoCue, preloadTempoSounds } from '../model/tempo-sound';
+import { hasInstruction, instructionSpeaking, playInstruction, stopInstruction } from '../model/exercise-voice';
 import { clearResume, readResume, writeResume } from '../model/session-resume';
 import {
   doseSeconds,
@@ -278,6 +280,9 @@ type MovePlan = {
   /** Heel raises at the top of the calf chain: load with a backpack. */
   addWeight?: boolean;
 };
+
+/** Moves at least this long hear their instruction a second time, halfway. */
+const REPEAT_FROM_SECONDS = 40;
 
 /** Seen the pain rule once — the first session shows it before it starts. */
 const PAIN_RULE_SEEN_KEY = 'player/pain-rule-seen';
@@ -1228,6 +1233,57 @@ function SessionRun({
     if (sound.tempo) preloadTempoSounds(language, sound.voice);
   }, [sound.tempo, sound.voice, language]);
   const cueKey = useRef<string | null>(null);
+
+  /**
+   * The spoken instruction: as a move starts, once more halfway through a long
+   * one, and whenever the replay chip on the video is pressed.
+   *
+   * Halfway is where attention drifts and, on a per-side move, where the foot
+   * changes — the same moment the switch buzzes. Only moves of at least
+   * `REPEAT_FROM_SECONDS`, and never on a tempo move, where it would talk over
+   * the count. Nothing loops: a ten-second explanation every ten seconds is
+   * the app talking at someone who already knows what to do.
+   *
+   * The spoken instruction, once per move, as it starts — after the count-in's
+   * "go", not over it. Paused or interrupted, it stops; a move resumed after
+   * the pain question is not explained twice. The speaker button in the header
+   * turns it off along with the tempo.
+   */
+  const spokenFor = useRef<string | null>(null);
+  const repeatedFor = useRef<string | null>(null);
+  const exerciseId = current?.exercise?.id ?? null;
+  useEffect(() => {
+    if (!sound.tempo) {
+      stopInstruction();
+      return;
+    }
+    if (!running || exerciseId == null) return;
+    const key = `${step}:${exerciseId}`;
+    if (spokenFor.current === key) return;
+    spokenFor.current = key;
+    // A move picked up past its middle has already had its second telling.
+    if (elapsed >= Math.floor(moveSeconds / 2)) repeatedFor.current = key;
+    playInstruction(exerciseId, language);
+  }, [sound.tempo, running, step, exerciseId, language]);
+  useEffect(() => {
+    if (!sound.tempo || !running || exerciseId == null || current?.cadence != null) return;
+    if (moveSeconds < REPEAT_FROM_SECONDS || elapsed < Math.floor(moveSeconds / 2)) return;
+    const key = `${step}:${exerciseId}`;
+    if (repeatedFor.current === key) return;
+    repeatedFor.current = key;
+    playInstruction(exerciseId, language);
+  }, [sound.tempo, running, exerciseId, current?.cadence, moveSeconds, elapsed, step, language]);
+  const canReplay = sound.tempo && exerciseId != null && hasInstruction(exerciseId, language) && !finished;
+  const replayInstruction = useCallback(() => {
+    if (exerciseId == null) return;
+    Haptics.selectionAsync();
+    playInstruction(exerciseId, language);
+  }, [exerciseId, language]);
+  // A new move, a pause for a question, or leaving: whatever was being said stops.
+  useEffect(() => {
+    if (!running) stopInstruction();
+  }, [running]);
+  useEffect(() => stopInstruction, [step]);
   useEffect(() => {
     if (!sound.tempo || !running || phase == null || phase.done || current?.cadence == null) {
       cueKey.current = null;
@@ -1236,6 +1292,8 @@ function SessionRun({
     const key = `${step}:${elapsed}`;
     if (cueKey.current === key) return;
     cueKey.current = key;
+    // Quiet under the spoken instruction: one voice at a time.
+    if (instructionSpeaking()) return;
     const length = current.cadence.tempo[phase.phase];
     const second = Math.max(1, Math.round(length) - phase.secondsLeft + 1);
     playTempoCue(phase.phase, second, language, sound.voice);
@@ -1929,6 +1987,21 @@ function SessionRun({
           </Animated.View>
         </View>
 
+        {/* Say it again: the instruction, replayed on demand. Bottom-left,
+            clear of the position chips and of the expand control. */}
+        {canReplay && (
+          <Animated.View style={[styles.replay, expandStyle]} pointerEvents={expanded ? 'none' : 'auto'}>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={t('player.voice.replay')}
+              onPress={replayInstruction}
+              hitSlop={10}
+              style={({ pressed }) => [styles.chip, pressed && { opacity: 0.7 }]}>
+              <HugeiconsIcon icon={ReplayIcon} size={19} color={CHIP_INK} strokeWidth={2.2} />
+            </Pressable>
+          </Animated.View>
+        )}
+
         {/* Black on white, because the clip behind it is a pale studio render
             and a white glyph would vanish into it. The chip is what makes that
             safe on the frames where it is not — it carries its own background
@@ -2177,6 +2250,11 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 8,
     right: 8,
+  },
+  replay: {
+    position: 'absolute',
+    bottom: 8,
+    left: 8,
   },
   chip: {
     width: EXPAND_CHIP,

@@ -16,6 +16,7 @@ import { StatusBar } from 'expo-status-bar';
 
 import { fonts } from '@/shared/config';
 import { PRIMARY_BUTTON_HEIGHT, PrimaryButton } from '@/shared/ui/primary-button';
+import { settle } from '@/shared/lib/motion';
 import React from 'react';
 import {
   Image,
@@ -38,7 +39,6 @@ import Animated, {
   useFrameCallback,
   useReducedMotion,
   useSharedValue,
-  withSpring,
   withTiming,
 } from 'react-native-reanimated';
 import { scheduleOnRN } from 'react-native-worklets';
@@ -83,10 +83,9 @@ export function LiquidGlassScreen({ theme, copy, initialState = 'gate', onAction
   const RF = 32 * sx;                            // the floor above the rest point
   const CX = width / 2;
   const TRAVEL = CY0 - CY1;                      // 1:1 with the finger
-  // a small bounce on landing; none when the system asks for less motion
-  const SPRING = reduceMotion
-    ? { damping: 30, stiffness: 160, mass: 1 }
-    : { damping: 15, stiffness: 120, mass: 1.05 };
+  // how long the drop takes to come to rest after the finger lets go: no
+  // bounce on landing (`shared/lib/motion`), and quicker with less motion
+  const LAND_MS = reduceMotion ? 260 : 520;
 
   // ── the scene, drawn inside the canvas so the lens bends it ──────────────
   const background = theme.background;
@@ -271,8 +270,8 @@ export function LiquidGlassScreen({ theme, copy, initialState = 'gate', onAction
     .onEnd((e) => {
       const vy = -e.velocityY / TRAVEL;
       const target = (p.value + vy * 0.18) > 0.5 ? 1 : 0;
-      p.value = withSpring(target, { ...SPRING, velocity: vy });
-      cxOff.value = withSpring(0, { ...SPRING, velocity: e.velocityX });
+      p.value = settle(target, LAND_MS);
+      cxOff.value = settle(0, LAND_MS);
     })
     .onFinalize(() => { touchOn.value = 0; });
 

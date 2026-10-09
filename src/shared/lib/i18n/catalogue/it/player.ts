@@ -39,8 +39,9 @@ export const PLAYER_IT = {
   'player.painRule.body': '0-3 va bene. 4-5 va bene se passa entro la mattina dopo. 6 o più: fermati.',
   'player.painRule.ok': 'Ho capito',
   'player.painRule.a11y': 'Quanto dolore va bene',
-  'player.tempo.on': 'Suoni del ritmo attivi',
-  'player.tempo.off': 'Suoni del ritmo disattivati',
+  'player.tempo.on': 'Audio attivo',
+  'player.tempo.off': 'Audio disattivato',
+  'player.voice.replay': 'Riascolta la spiegazione',
 
   // ── The player's own chrome ───────────────────────────────────────────────
   'player.header.meta': '{minutes} · {moves}',

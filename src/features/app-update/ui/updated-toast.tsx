@@ -7,7 +7,6 @@ import Animated, {
   useReducedMotion,
   useSharedValue,
   withDelay,
-  withSpring,
   withTiming,
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -16,6 +15,7 @@ import { scheduleOnRN } from 'react-native-worklets';
 import { fonts, meterColors, palette } from '@/shared/config';
 import { useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { settle } from '@/shared/lib/motion';
 
 import { MASCOT_STILL } from '../config/mascot';
 
@@ -96,12 +96,9 @@ export function UpdatedToast({ visible, onHidden }: UpdatedToastProps) {
       show.value = withTiming(1, { duration: 220, reduceMotion: ReduceMotion.Never });
       pop.value = 1;
     } else {
-      show.value = withSpring(1, { damping: 18, stiffness: 220, mass: 1, reduceMotion: motion });
-      // He lands a beat after the pill, with a wobble.
-      pop.value = withDelay(
-        120,
-        withSpring(1, { damping: 9, stiffness: 200, mass: 0.8, reduceMotion: motion }),
-      );
+      show.value = settle(1, 380, motion);
+      // He lands a beat after the pill.
+      pop.value = withDelay(120, settle(1, 420, motion));
     }
     AccessibilityInfo.announceForAccessibility(t('update.appliedNote'));
     const id = setTimeout(leave, HOLD_MS);

@@ -7,7 +7,7 @@ import TiktokIcon from '@hugeicons/core-free-icons/TiktokIcon';
 import UserMultipleIcon from '@hugeicons/core-free-icons/UserMultipleIcon';
 import YoutubeIcon from '@hugeicons/core-free-icons/YoutubeIcon';
 import type { IconSvgElement } from '@hugeicons/react-native';
-import { Platform, type ImageSourcePropType } from 'react-native';
+import { Platform } from 'react-native';
 
 import { MAX_ZONES } from '@/entities/leg-zone';
 
@@ -33,7 +33,7 @@ export type Phrase = (t: Translate) => string;
  * The name, held back from `t()` on purpose.
  *
  * Passing the real name here would substitute the empty string for anyone who
- * skipped the name step and leave "Male or female, ?" on screen. `withName`
+ * skipped the name step and leave "How many days a week, ?" on screen. `withName`
  * needs the slot intact so it can remove the slot *and* the punctuation
  * stranded around it, which is a decision only it has the name to make.
  */
@@ -45,12 +45,9 @@ export type OnboardingOption = {
   label: Phrase;
   /** Second line, for options that need a qualifier. */
   caption?: Phrase;
-  /** Cards lead with a glyph on a tinted tile… */
+  /** Cards lead with a glyph on a tinted tile. */
   icon?: IconSvgElement;
   accent?: AccentName;
-  /** …or with a photograph, for the few questions where a face reads faster
-   * than a symbol. A card takes one or the other, never both. */
-  photo?: ImageSourcePropType;
 };
 
 /** The same option once the page has resolved its text for this render. The
@@ -58,25 +55,6 @@ export type OnboardingOption = {
 export type ResolvedOption = Omit<OnboardingOption, 'label' | 'caption'> & {
   label: string;
   caption?: string;
-};
-
-/** One number the user types, with the unit that trails it. */
-export type MeasureField = {
-  key: string;
-  /** Small label riding the number's baseline, e.g. "ft". */
-  suffix: Phrase;
-  /** Digits the field accepts. */
-  maxDigits: number;
-  /** Prefilled so the screen never opens on an empty line — the reference
-   * shows a plausible figure and lets the user correct it, which is far less
-   * work than starting from nothing. */
-  initial: string;
-};
-
-export type MeasureUnit = {
-  value: string;
-  label: Phrase;
-  fields: readonly MeasureField[];
 };
 
 /** One rep-or-seconds micro test. */
@@ -121,10 +99,23 @@ export type OnboardingStep = StepBase &
         /** Selecting more than one. `max` caps it. */
         multi?: boolean;
         max?: number;
+        /** The answer glyphs for an observation about the foot: how full a
+         * circle is, in place of the per-answer art. */
+        art?: 'verdict';
+        /** A photograph above the answers (`QUESTION_PHOTOS`, by step key),
+         * with an optional caption under each half and a line under the list. */
+        hero?: { captions?: readonly Phrase[]; note?: Phrase };
       }
-    | { kind: 'measure'; units: readonly MeasureUnit[] }
-    /** Two full-bleed photo cards. */
-    | { kind: 'sex'; options: readonly OnboardingOption[] }
+    /** Days a week, minutes a session and what is at home, on one screen.
+     * The days are the step's own answer (its key is `planDays`); the minutes
+     * go to `planMinutes`, the kit to `equipment`. */
+    | {
+        kind: 'schedule';
+        days: readonly OnboardingOption[];
+        minutes: readonly OnboardingOption[];
+        /** What is at home, written to `equipment`. */
+        kit: readonly OnboardingOption[];
+      }
     /** A full-screen answer to the question before it: mascot, a heading, a
      * line, tap anywhere. `of` names the question it reacts to. */
     | { kind: 'reaction'; of: 'role' | 'duration' | 'tried' }
@@ -187,7 +178,10 @@ function testing(answers: Readonly<Record<string, unknown>>): boolean {
  * options, or a whole screen when the answer deserves one. The flow should
  * read as a conversation with something that is listening, not a form.
  *
- * Gone from here: weight and shoe size (nothing the user could see used them),
+ * Gone from here: sex (it chose the photograph on the building screen and
+ * nothing else), age (it only started anyone 55 or over a step lighter, which
+ * the plan's own settling does after two calm mornings), weight and shoe size
+ * (nothing the user could see used them),
  * the sport list (who they are says it), the challenge (it repeated the goal),
  * the reviews and the referral screen (the paywall has both now). Health, the
  * watch and signing in come after the first purchase, in `pages/setup`.
@@ -210,31 +204,6 @@ export const STEPS: readonly OnboardingStep[] = [
     title: (t) => t('onboarding.name.title'),
     blurb: (t) => t('onboarding.name.blurb'),
     placeholder: (t) => t('onboarding.name.placeholder'),
-  },
-  {
-    kind: 'sex',
-    key: 'sex',
-    act: 0,
-    title: (t) => t('onboarding.sex.title', NAME_SLOT),
-    blurb: (t) => t('onboarding.sex.blurb'),
-    options: [
-      { value: 'female', label: (t) => t('onboarding.sex.female') },
-      { value: 'male', label: (t) => t('onboarding.sex.male') },
-    ],
-  },
-  {
-    kind: 'measure',
-    key: 'age',
-    act: 0,
-    title: (t) => t('onboarding.age.title'),
-    blurb: (t) => t('onboarding.age.blurb'),
-    units: [
-      {
-        value: 'years',
-        label: (t) => t('onboarding.age.years'),
-        fields: [{ key: 'years', suffix: (t) => t('onboarding.age.years'), maxDigits: 2, initial: '28' }],
-      },
-    ],
   },
   {
     // Who they are, before anything about running: half the people with
@@ -268,6 +237,43 @@ export const STEPS: readonly OnboardingStep[] = [
       { value: 'serious', label: (t) => t('onboarding.runner.serious') },
     ],
     skipWhen: (a) => !runs(a),
+  },
+  {
+    // A check to try rather than a field to fill, near the start, where most
+    // people leave. "A little" or "No" gives the big toe its own work
+    // (`toeWork` in `planSettingsFrom`). The values are analytics identifiers.
+    kind: 'choice',
+    key: 'toe',
+    act: 0,
+    title: (t) => t('onboarding.toe.title'),
+    blurb: (t) => t('onboarding.toe.blurb'),
+    art: 'verdict',
+    hero: {},
+    options: [
+      { value: 'yes', label: (t) => t('onboarding.toe.yes') },
+      { value: 'little', label: (t) => t('onboarding.toe.little') },
+      { value: 'no', label: (t) => t('onboarding.toe.no') },
+    ],
+  },
+  {
+    // The same, with a picture to compare against. "Yes" or "a slight one"
+    // adds the big toe and toe-spread work, by the same `toeWork`.
+    kind: 'choice',
+    key: 'bunion',
+    act: 0,
+    title: (t) => t('onboarding.bunion.title'),
+    blurb: (t) => t('onboarding.bunion.blurb'),
+    art: 'verdict',
+    hero: {
+      captions: [(t) => t('onboarding.bunion.straight'), (t) => t('onboarding.bunion.example')],
+      note: (t) => t('onboarding.bunion.note'),
+    },
+    options: [
+      { value: 'no', label: (t) => t('onboarding.bunion.no') },
+      { value: 'little', label: (t) => t('onboarding.bunion.little') },
+      { value: 'yes', label: (t) => t('onboarding.bunion.yes') },
+      { value: 'unsure', label: (t) => t('onboarding.bunion.unsure') },
+    ],
   },
   {
     kind: 'pain-map',
@@ -418,37 +424,27 @@ export const STEPS: readonly OnboardingStep[] = [
     ],
   },
   {
-    kind: 'choice',
+    // One screen for all three: two picks from three with a recommended
+    // middle, and the kit, whose answer visibly changes the plan. Keyed
+    // `planDays`, the first of the screens it replaced, so the step funnel
+    // runs on unbroken.
+    kind: 'schedule',
     key: 'planDays',
     act: 3,
-    title: (t) => t('onboarding.days.title', NAME_SLOT),
-    blurb: (t) => t('onboarding.days.blurb'),
-    options: (['days3', 'days5', 'days7'] as const).map((value) => ({
+    title: (t) => t('onboarding.schedule.title', NAME_SLOT),
+    // Not drawn on this screen; kept for anything that reads a step's blurb.
+    blurb: (t) => t('onboarding.minutes.blurb'),
+    days: (['days3', 'days5', 'days7'] as const).map((value) => ({
       value,
       label: (t: Translate) => t(`onboarding.days.${value}`),
       caption: (t: Translate) => t(`onboarding.days.${value}Caption`),
     })),
-  },
-  {
-    kind: 'choice',
-    key: 'planMinutes',
-    act: 3,
-    title: (t) => t('onboarding.minutes.title'),
-    blurb: (t) => t('onboarding.minutes.blurb'),
-    options: (['min3', 'min5', 'min10'] as const).map((value) => ({
+    minutes: (['min3', 'min5', 'min10'] as const).map((value) => ({
       value,
       label: (t: Translate) => t(`onboarding.minutes.${value}`),
       caption: (t: Translate) => t(`onboarding.minutes.${value}Caption`),
     })),
-  },
-  {
-    kind: 'choice',
-    key: 'equipment',
-    act: 3,
-    title: (t) => t('onboarding.equipment.title'),
-    blurb: (t) => t('onboarding.equipment.blurb'),
-    multi: true,
-    options: (['step', 'band', 'towel', 'pillow', 'ball', 'none'] as const).map((value) => ({
+    kit: (['towel', 'step', 'band', 'ball', 'pillow', 'none'] as const).map((value) => ({
       value,
       label: (t: Translate) => t(`onboarding.equipment.${value}`),
     })),

@@ -101,7 +101,9 @@ export const JOURNEY_EN = {
   'onboarding.react.painZero': 'Let’s keep it that way.',
   'onboarding.react.painMild': 'Small, but every morning.',
   'onboarding.react.painMiddle': 'Enough to change your day.',
-  'onboarding.react.painHard': 'We’ll start gently.',
+  'onboarding.react.painHard': 'That’s a hard way to start the day. We’ll keep the first sessions gentle.',
+  // Under the morning reaction: the same date the first progress check is on.
+  'onboarding.react.painRecheck': 'Your starting point. We check it again on {date}.',
 
   // ── Safety check ─────────────────────────────────────────────────────────
   'onboarding.safety.title': 'Any of these right now?',
@@ -156,12 +158,6 @@ export const JOURNEY_EN = {
   'onboarding.reflection.feetDaily': '{band} a day on your feet',
 
   // ── Halfway ──────────────────────────────────────────────────────────────
-  'onboarding.midway.title': 'What we know, {name}',
-  'onboarding.midway.body': 'A few more, then your plan.',
-  'onboarding.midway.mornings': 'Mornings: {score} out of 10',
-  'onboarding.midway.since': 'For: {duration}',
-  /** `{items}` is the answers they picked, separated by commas. */
-  'onboarding.midway.tried': 'Tried: {items}',
   'onboarding.midway.nothing': 'Nothing hurts right now',
 
   // ── Why it still hurts ───────────────────────────────────────────────────
@@ -237,6 +233,8 @@ export const JOURNEY_EN = {
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.heading': 'Building your plan',
   'onboarding.building.where': '{where} · mornings {score}/10',
+  // Under the place, on the building screen's first card.
+  'onboarding.building.mornings': 'First steps {score}/10',
   'onboarding.building.safety': 'Safety check passed',
   'onboarding.building.seated': 'Week one starts seated',
   'onboarding.building.kitAll': 'Everything you need at home',
@@ -256,6 +254,12 @@ export const JOURNEY_EN = {
   'setup.save.title': 'You’re in',
   'setup.save.blurb': 'So it’s safe on a new phone.',
   'setup.save.later': 'Not now',
+  // After the purchase, for anyone with no address on file: the welcome and
+  // the first fortnight's emails go to it.
+  'setup.email.title': 'Send your plan to your email?',
+  'setup.email.placeholder': 'you@example.com',
+  'setup.email.note': 'Optional. A few short emails in the first two weeks.',
+  'setup.email.send': 'Send it',
   'setup.widget.title': 'Your check-in on the Home Screen',
   'setup.widget.blurb': 'One tap before you stand.',
   'setup.widget.add': 'Add widget',

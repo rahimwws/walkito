@@ -3,16 +3,15 @@ import { Pressable, StyleSheet, Text, View, type StyleProp, type ViewStyle } fro
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
-  withSpring,
 } from 'react-native-reanimated';
 
 import { fonts } from '@/shared/config';
 import { useColorScheme } from '@/shared/lib/theme';
+import { settle } from '@/shared/lib/motion';
 
 const TRACK_PADDING = 3;
 const HEIGHT = 44;
 /** Snappy but settled; interruptible when the user taps quickly. */
-const SPRING = { damping: 32, stiffness: 420, mass: 0.9 } as const;
 
 const THEME = {
   light: {
@@ -37,8 +36,8 @@ export type SegmentedControlProps = {
 };
 
 /** Custom segmented control in the app's pill language: inverted sliding
- * thumb (same colors as the Start buttons), Inter labels, spring
- * slide between segments. */
+ * thumb (same colors as the Start buttons), Inter labels, a slide that
+ * settles between segments. */
 export function SegmentedControl({
   segments,
   selectedIndex,
@@ -53,7 +52,7 @@ export function SegmentedControl({
 
   const offset = useSharedValue(selectedIndex);
   useEffect(() => {
-    offset.value = withSpring(selectedIndex, SPRING);
+    offset.value = settle(selectedIndex, 300);
   }, [selectedIndex, offset]);
 
   const thumbStyle = useAnimatedStyle(() => ({

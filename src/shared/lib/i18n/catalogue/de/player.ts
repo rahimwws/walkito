@@ -39,8 +39,9 @@ export const PLAYER_DE = {
   'player.painRule.body': '0-3 ist in Ordnung. 4-5 ist okay, wenn es bis zum nächsten Morgen abklingt. Ab 6 - aufhören.',
   'player.painRule.ok': 'Verstanden',
   'player.painRule.a11y': 'Wie viel Schmerz ist okay',
-  'player.tempo.on': 'Tempo-Töne an',
-  'player.tempo.off': 'Tempo-Töne aus',
+  'player.tempo.on': 'Ton an',
+  'player.tempo.off': 'Ton aus',
+  'player.voice.replay': 'Anleitung noch einmal abspielen',
 
   // ── The player's own chrome ───────────────────────────────────────────────
   'player.header.meta': '{minutes} · {moves}',

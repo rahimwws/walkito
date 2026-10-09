@@ -19,6 +19,9 @@ import { REPLAY_MASK } from '@/shared/ui/replay-mask';
  */
 
 const WAVE = require('@assets/update/mascot-handoff.png');
+/** The Foot Passport's cover art, the same 3D foot onboarding built it with. */
+const FOOT = require('@assets/onboarding/building/foot.webp');
+const COVER = 'linear-gradient(135deg, #9B7BFF 0%, #7C5CFF 45%, #5B3FD6 100%)';
 const MOBILITY = require('@assets/program/mascot-mobility.png');
 const STRENGTH = require('@assets/program/mascot-strength.png');
 const BALANCE = require('@assets/program/mascot-balance.png');
@@ -55,6 +58,8 @@ export type IntroPlanProps = {
   name: string;
   /** Their own numbers, across the top: where, this morning, how long. */
   strip: readonly string[];
+  /** What they came for, in their words from onboarding. */
+  why: string | null;
   minutes: number;
   daysPerWeek: number;
   /** The first progress check, epoch ms. */
@@ -62,7 +67,7 @@ export type IntroPlanProps = {
 };
 
 /** Step one: how the plan starts. */
-export function IntroPlan({ name, strip, minutes, daysPerWeek, checkOn }: IntroPlanProps) {
+export function IntroPlan({ name, strip, why, minutes, daysPerWeek, checkOn }: IntroPlanProps) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
   const meter = meterColors[scheme];
@@ -93,23 +98,35 @@ export function IntroPlan({ name, strip, minutes, daysPerWeek, checkOn }: IntroP
 
   return (
     <View style={styles.page}>
-      {strip.length > 0 && (
+      {/* The passport they built in onboarding, as the paywall's header:
+          what the plan is for, before anything about the plan. */}
+      {strip.length > 0 ? (
         <Animated.View
           {...REPLAY_MASK}
           entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)}
-          style={styles.strip}>
-          {strip.map((item) => (
-            <View key={item} style={[styles.stripChip, { backgroundColor: colors.card }]}>
-              <Text style={[styles.stripText, { color: colors.foreground }]}>{item}</Text>
-            </View>
-          ))}
+          style={[styles.passport, { experimental_backgroundImage: COVER }]}>
+          <View style={styles.passportCopy}>
+            <Text style={styles.passportEyebrow}>{t('onboarding.passport.title')}</Text>
+            <Text style={styles.passportLine} numberOfLines={2}>
+              {strip.join('  ·  ')}
+            </Text>
+          </View>
+          <Image source={FOOT} style={styles.passportArt} resizeMode="contain" />
+        </Animated.View>
+      ) : (
+        <Animated.View entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)}>
+          <Image source={WAVE} style={styles.wave} resizeMode="contain" />
         </Animated.View>
       )}
-      <Animated.View entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)} style={styles.heading}>
-        <Image source={WAVE} style={styles.wave} resizeMode="contain" />
-        <Text style={[styles.title, styles.headingTitle, { color: colors.foreground }]}>
+      <Animated.View entering={FadeIn.delay(60).duration(320).reduceMotion(ReduceMotion.System)} style={styles.heading}>
+        <Text style={[styles.title, { color: colors.foreground }]}>
           {name !== '' ? t('offer.introTitleNamed', { name }) : t('offer.introTitle')}
         </Text>
+        {why != null && (
+          <View style={[styles.why, { borderLeftColor: PRIMARY }]}>
+            <Text style={[styles.quoteWhy, { color: colors.foreground }]}>{t('offer.introWhy', { why })}</Text>
+          </View>
+        )}
       </Animated.View>
 
       <View>
@@ -208,16 +225,34 @@ const styles = StyleSheet.create({
     gap: 22,
   },
   heading: {
+    gap: 12,
+  },
+  passport: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 14,
+    gap: 12,
+    paddingVertical: 14,
+    paddingLeft: 16,
+    paddingRight: 10,
+    borderRadius: 22,
+    borderCurve: 'continuous',
+    overflow: 'hidden',
   },
+  passportCopy: { flex: 1, gap: 4 },
+  passportEyebrow: { ...fonts.bold(11, 1.4), textTransform: 'uppercase', color: 'rgba(255,255,255,0.72)' },
+  passportLine: { ...fonts.bold(16, -0.2), lineHeight: 21, color: '#FFFFFF' },
+  passportArt: { width: 56, height: 56 },
+  why: {
+    borderLeftWidth: 3,
+    paddingLeft: 12,
+    paddingVertical: 2,
+  },
+  quoteWhy: { ...fonts.semibold(17, -0.2), lineHeight: 23 },
   wave: { width: 78, height: 78 },
   title: {
     ...fonts.heavy(28, -0.7),
     lineHeight: 32,
   },
-  headingTitle: { flex: 1 },
   row: {
     flexDirection: 'row',
     gap: 14,
@@ -261,18 +296,6 @@ const styles = StyleSheet.create({
   cards: { gap: 10 },
   cardCopy: { flex: 1, gap: 2 },
   cardTitle: fonts.heavy(16, -0.2),
-  strip: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 8,
-  },
-  stripChip: {
-    paddingHorizontal: 12,
-    paddingVertical: 7,
-    borderRadius: 999,
-    borderCurve: 'continuous',
-  },
-  stripText: fonts.bold(14),
   clip: { aspectRatio: 16 / 10 },
   howRow: {
     flexDirection: 'row',

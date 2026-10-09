@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, type StyleProp, type ViewStyle } from 'react-native';
 import Animated, { Easing, FadeIn, FadeInDown, FadeOut, ReduceMotion } from 'react-native-reanimated';
 
-import { fonts, palette } from '@/shared/config';
+import { fonts, meterColors, palette } from '@/shared/config';
 import { track } from '@/shared/lib/analytics';
 import { useColorScheme } from '@/shared/lib/theme';
 
@@ -17,7 +17,18 @@ const EASE = Easing.bezier(0.23, 1, 0.32, 1).factory();
  * The same moving mascot as every other reaction in the flow. Nothing moves
  * the options above it: the line takes its own room under the list.
  */
-export function InlineReaction({ id, text }: { id: string; text: string }) {
+export function InlineReaction({
+  id,
+  text,
+  sub,
+  style,
+}: {
+  id: string;
+  text: string;
+  /** A second, quieter line. */
+  sub?: string;
+  style?: StyleProp<ViewStyle>;
+}) {
   const scheme = useColorScheme();
   const colors = palette[scheme];
 
@@ -30,7 +41,7 @@ export function InlineReaction({ id, text }: { id: string; text: string }) {
       accessibilityLiveRegion="polite"
       entering={FadeInDown.duration(360).easing(EASE).reduceMotion(ReduceMotion.System)}
       exiting={FadeOut.duration(140).reduceMotion(ReduceMotion.System)}
-      style={[styles.row, { backgroundColor: colors.card }]}>
+      style={[styles.row, { backgroundColor: colors.card }, style]}>
       <View style={styles.art}>
         <LottieMascot size={52} />
       </View>
@@ -41,6 +52,7 @@ export function InlineReaction({ id, text }: { id: string; text: string }) {
         entering={FadeIn.duration(220).reduceMotion(ReduceMotion.System)}
         style={styles.copy}>
         <Text style={[styles.text, { color: colors.foreground }]}>{text}</Text>
+        {sub != null && <Text style={[styles.sub, { color: meterColors[scheme].caption }]}>{sub}</Text>}
       </Animated.View>
     </Animated.View>
   );
@@ -63,5 +75,10 @@ const styles = StyleSheet.create({
   text: {
     ...fonts.semibold(15),
     lineHeight: 20,
+  },
+  sub: {
+    ...fonts.medium(13),
+    lineHeight: 18,
+    marginTop: 2,
   },
 });

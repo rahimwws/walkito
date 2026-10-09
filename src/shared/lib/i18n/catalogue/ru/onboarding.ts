@@ -45,7 +45,6 @@ export const ONBOARDING_RU = {
   'onboarding.intro.headline': 'Давайте разберёмся, почему всё ещё болит.',
   'onboarding.intro.cta': 'Продолжить с Apple',
   'onboarding.intro.ctaGoogle': 'Продолжить с Google',
-  'onboarding.intro.footnote': 'Около 3 минут',
   'onboarding.intro.signInFailed': 'Вход не завершился. Попробуйте ещё раз.',
   'onboarding.intro.emailCta': 'Войти по почте',
 
@@ -59,15 +58,49 @@ export const ONBOARDING_RU = {
 
   // ── Name ─────────────────────────────────────────────────────────────────
   'onboarding.name.title': 'Как к вам\nобращаться?',
-  'onboarding.name.blurb': 'Всё дальше будет написано для вас, а не для бегунов вообще.',
+  'onboarding.name.blurb': 'Это имя пойдёт в ваш паспорт стопы.',
   'onboarding.name.placeholder': 'например, Алекс',
+  // The Foot Passport: a stamp per answer, folded above the questions and
+  // open on the halfway screen. Labels are short: each sits beside its value.
+  'onboarding.passport.title': 'Паспорт стопы',
+  'onboarding.passport.owner': 'Паспорт стопы · {name}',
+  'onboarding.passport.empty': 'Здесь появятся ваши ответы',
+  'onboarding.passport.issued': 'Выдан {date}',
+  'onboarding.passport.edit': 'Что-то не так? Нажмите, чтобы исправить.',
+  'onboarding.passport.heading': 'Ваш паспорт стопы, {name}',
+  // Who they are, in the passport's words: the role question's own
+  // answers ("Both") mean nothing out of it.
+  'onboarding.passport.role.running': 'Бегаю',
+  'onboarding.passport.role.feet': 'Весь день на ногах',
+  'onboarding.passport.role.both': 'Бегаю и весь день на ногах',
+  'onboarding.passport.role.walking': 'Обычная ходьба',
+  'onboarding.passport.who': 'Кто',
+  'onboarding.passport.toe': 'Подъём большого пальца',
+  'onboarding.passport.bunion': 'Косточка',
+  'onboarding.passport.where': 'Где болит',
+  'onboarding.passport.since': 'Как давно',
+  'onboarding.passport.mornings': 'Первые шаги',
+  'onboarding.passport.goal': 'Цель',
+  'onboarding.passport.load': 'Нагрузка',
+  'onboarding.passport.habit': 'Привязка',
+  'onboarding.passport.plan': 'План',
+  'onboarding.passport.morningsValue': '{score}/10',
+  'onboarding.passport.planValue': '{days} · {minutes}',
 
-  // ── Sex ──────────────────────────────────────────────────────────────────
-  'onboarding.sex.title': 'Мужчина или женщина, {name}?',
-  'onboarding.sex.blurb':
-    'Переносимость нагрузки и типичные травмы разные - план тоже получится разным.',
-  'onboarding.sex.female': 'Женщина',
-  'onboarding.sex.male': 'Мужчина',
+  'onboarding.toe.title': 'Можете поднять один большой палец?',
+  'onboarding.toe.blurb': 'Встаньте, прижмите остальные четыре пальца к полу и попробуйте.',
+  'onboarding.toe.yes': 'Да, легко',
+  'onboarding.toe.little': 'Чуть-чуть',
+  'onboarding.toe.no': 'Нет, не поднимается',
+  'onboarding.bunion.title': 'Есть косточка на большом пальце?',
+  'onboarding.bunion.blurb': 'Выпирающая косточка у основания большого пальца, часто палец заваливается к остальным.',
+  'onboarding.bunion.straight': 'Прямой палец',
+  'onboarding.bunion.example': 'С косточкой',
+  'onboarding.bunion.no': 'Нет',
+  'onboarding.bunion.little': 'Небольшая',
+  'onboarding.bunion.yes': 'Да',
+  'onboarding.bunion.unsure': 'Не уверен(а)',
+  'onboarding.bunion.note': 'Картинка для сравнения, а не диагноз.',
 
   // ── Runner ───────────────────────────────────────────────────────────────
   'onboarding.runner.title': 'Какой вы спортсмен, {name}?',
@@ -78,12 +111,6 @@ export const ONBOARDING_RU = {
   'onboarding.runner.regular': 'Регулярно',
   'onboarding.runner.racing': 'Готовлюсь к старту',
   'onboarding.runner.serious': 'Отношусь серьёзно',
-
-  // ── Age ──────────────────────────────────────────────────────────────────
-  'onboarding.age.title': 'Сколько вам лет?',
-  'onboarding.age.blurb':
-    'С возрастом сухожилия адаптируются медленнее. Это задаёт темп, с которым растёт план.',
-  'onboarding.age.years': 'лет',
 
   // ── Body ─────────────────────────────────────────────────────────────────
   'onboarding.body.title': 'Ещё немного о вас, {name}',
@@ -110,15 +137,19 @@ export const ONBOARDING_RU = {
   'onboarding.goal.allday': 'Весь день на ногах без усталости',
   'onboarding.goal.comeback': 'Вернуться после травмы',
   'onboarding.goal.steady': 'Уверенно ходить',
-  'onboarding.days.title': 'Сколько дней в неделю, {name}?',
-  'onboarding.days.blurb': 'Короткие занятия. Дни отдыха - часть плана, а не пропуск.',
+  // Days and minutes, one screen: a heading over two short lists.
+  'onboarding.schedule.title': 'Сколько у вас времени, {name}?',
+  'onboarding.schedule.days': 'Дней в неделю',
+  'onboarding.schedule.minutes': 'Минут на занятие',
+  'onboarding.schedule.kit': 'Что есть дома?',
+  // Under the kit: the exercises it brings into the plan, as they are picked.
+  'onboarding.schedule.adds': 'Добавится в план',
   'onboarding.days.days3': '3 дня',
   'onboarding.days.days3Caption': 'Спокойный старт',
   'onboarding.days.days5': '5 дней',
   'onboarding.days.days5Caption': 'Рекомендуем',
   'onboarding.days.days7': 'Каждый день',
   'onboarding.days.days7Caption': 'Коротко и каждый день',
-  'onboarding.minutes.title': 'Сколько минут на занятие?',
   'onboarding.minutes.blurb': 'Можно менять в любой день - занятые дни тоже считаются.',
   'onboarding.minutes.min3': '3 минуты',
   'onboarding.minutes.min3Caption': 'Даже в загруженный день',
@@ -298,7 +329,6 @@ export const ONBOARDING_RU = {
   'onboarding.pattern.shin': 'Объём обогнал ваши ноги. План отматывает назад, а потом наращивает.',
   'onboarding.pattern.calf': 'Икра тянет за собой всё, что ниже. Отпустите её - и остальное пойдёт следом.',
   'onboarding.pattern.none': 'Вы здесь до того, как заболело. Это самый дешёвый путь.',
-  'onboarding.building.promise': 'Первые изменения: с 12-го по 16-й день.',
 
   // ── Reflection parts ─────────────────────────────────────────────────────
   'onboarding.reflection.painHeel': 'Боль в пятке',

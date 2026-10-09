@@ -1,18 +1,18 @@
 import * as Haptics from 'expo-haptics';
 import { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, {
   runOnJS,
   useAnimatedReaction,
   useAnimatedStyle,
   useSharedValue,
-  withSpring,
 } from 'react-native-reanimated';
 
 import { PRIMARY, fonts, meterColors, palette } from '@/shared/config';
-import { useT } from '@/shared/lib/i18n';
+import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
+import { settle } from '@/shared/lib/motion';
 
 import { painBandReaction } from '../model/journey';
 import { InlineReaction } from './inline-reaction';
@@ -20,6 +20,13 @@ import { InlineReaction } from './inline-reaction';
 const MAX = 10;
 const KNOB = 32;
 const PAD = KNOB / 2;
+/** The numbers under the slider: a tap lands exactly where a thumb on a
+ * slider lands only roughly, which matters most to the people over 35 this
+ * question is mostly asked of. */
+const CELL = 28;
+/** The first progress check, a fortnight from today: the same date the
+ * paywall and the plan name. */
+const RECHECK_DAYS = 14;
 
 export type MorningPainStepProps = {
   score: number;
@@ -65,7 +72,7 @@ export function MorningPainStep({ score, onChange }: MorningPainStepProps) {
     .onEnd(() => {
       'worklet';
       // Whole points only: a pain score has no decimals.
-      at.value = withSpring(Math.round(at.value * MAX) / MAX, { damping: 18, stiffness: 220 });
+      at.value = settle(Math.round(at.value * MAX) / MAX, 220);
     });
 
   const knob = useAnimatedStyle(() => ({ transform: [{ translateX: at.value * span }] }));
@@ -77,6 +84,14 @@ export function MorningPainStep({ score, onChange }: MorningPainStepProps) {
   };
 
   const reaction = painBandReaction(score);
+  const language = useLanguage();
+  const recheck = new Intl.DateTimeFormat(language, { month: 'long', day: 'numeric' }).format(
+    new Date(Date.now() + RECHECK_DAYS * 86_400_000),
+  );
+  const pick = (n: number) => {
+    if (n === score) return;
+    at.value = settle(n / MAX, 280);
+  };
 
   return (
     <View style={styles.root}>
@@ -104,18 +119,29 @@ export function MorningPainStep({ score, onChange }: MorningPainStepProps) {
         </View>
       </GestureDetector>
 
+      <View style={styles.cells}>
+        {Array.from({ length: MAX + 1 }, (_, n) => {
+          const on = n === score;
+          return (
+            <Pressable
+              key={n}
+              accessibilityRole="button"
+              accessibilityState={{ selected: on }}
+              accessibilityLabel={t('onboarding.morning.a11y', { score: n })}
+              hitSlop={{ top: 8, bottom: 8, left: 2, right: 2 }}
+              onPress={() => pick(n)}
+              style={[styles.cell, { backgroundColor: on ? PRIMARY : meter.track }]}>
+              <Text style={[styles.cellText, { color: on ? '#FFFFFF' : colors.foreground }]}>{n}</Text>
+            </Pressable>
+          );
+        })}
+      </View>
       <View style={styles.ends}>
-        <View>
-          <Text style={[styles.endNumber, { color: colors.foreground }]}>0</Text>
-          <Text style={[styles.endLabel, { color: meter.caption }]}>{t('onboarding.morning.min')}</Text>
-        </View>
-        <View style={styles.endRight}>
-          <Text style={[styles.endNumber, { color: colors.foreground }]}>{MAX}</Text>
-          <Text style={[styles.endLabel, { color: meter.caption }]}>{t('onboarding.morning.max')}</Text>
-        </View>
+        <Text style={[styles.endLabel, { color: meter.caption }]}>{t('onboarding.morning.min')}</Text>
+        <Text style={[styles.endLabel, { color: meter.caption }]}>{t('onboarding.morning.max')}</Text>
       </View>
 
-      <InlineReaction id={reaction.key} text={t(reaction.text)} />
+      <InlineReaction id={reaction.key} text={t(reaction.text)} sub={t('onboarding.react.painRecheck', { date: recheck })} />
     </View>
   );
 }
@@ -159,12 +185,23 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     elevation: 4,
   },
+  cells: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 14,
+  },
+  cell: {
+    width: CELL,
+    height: CELL,
+    borderRadius: CELL / 2,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  cellText: { ...fonts.bold(13), fontVariant: ['tabular-nums'] },
   ends: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: 8,
+    marginTop: 6,
   },
-  endRight: { alignItems: 'flex-end' },
-  endNumber: fonts.bold(16),
   endLabel: fonts.medium(14),
 });

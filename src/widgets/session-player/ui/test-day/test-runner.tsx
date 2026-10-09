@@ -1,10 +1,12 @@
 import ArrowExpandDiagonal01Icon from '@hugeicons/core-free-icons/ArrowExpandDiagonal01Icon';
+import PlayIcon from '@hugeicons/core-free-icons/PlayIcon';
 import { HugeiconsIcon } from '@hugeicons/react-native';
 import * as Haptics from 'expo-haptics';
 import { useVideoPlayer, VideoView, type VideoPlayer } from 'expo-video';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   AppState,
+  Image,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -14,8 +16,9 @@ import {
   type StyleProp,
   type ViewStyle,
 } from 'react-native';
-import {
+import Animated, {
   Easing,
+  FadeIn,
   ReduceMotion,
   cancelAnimation,
   useSharedValue,
@@ -31,6 +34,7 @@ import { useColorScheme } from '@/shared/lib/theme';
 import { PrimaryButton } from '@/shared/ui/primary-button';
 
 import { clipFor } from '../../config/exercise-clips';
+import { TEST_PICTURES } from '../../config/test-pictures';
 import { ClipViewer } from '../clip-viewer';
 import { playCountInCue } from '../../model/count-in-sound';
 import {
@@ -176,16 +180,17 @@ export function TestRunner({
   }, [player]);
 
   /**
-   * The demonstration plays while there is something to follow — before the
-   * test and during it — and is held on its first frame for the count, so it
-   * begins with the test. Playing, it also keeps the screen awake, which is
-   * exactly when a screen that dimmed would lose somebody their place.
+   * The demonstration plays while the test runs, in the corner, and is held
+   * on its first frame for the count, so it begins with the test. Playing, it
+   * also keeps the screen awake, which is exactly when a screen that dimmed
+   * would lose somebody their place. Before the test the picture stands in
+   * for it, and the full-size viewer plays its own copy.
    */
   useEffect(() => {
     player.loop = true;
     player.muted = true;
     player.audioMixingMode = 'mixWithOthers';
-    if (active && (stage === 'ready' || stage === 'measuring')) {
+    if (active && stage === 'measuring') {
       player.play();
       return;
     }
@@ -326,7 +331,6 @@ export function TestRunner({
   const name = t(meta.name);
 
   if (stage === 'ready' || stage === 'confirm') {
-    const clipHeight = Math.min(width - 40, height * 0.34);
     return (
       <View style={styles.root}>
         <ClipViewer clip={meta.clip} mirrored={mirrored} visible={viewing} onClose={() => setViewing(false)} />
@@ -335,12 +339,12 @@ export function TestRunner({
 
           {stage === 'ready' ? (
             <>
-              <ClipCard
-                player={player}
+              <TestPicture
+                kind={kind}
                 mirrored={mirrored}
-                failed={clipFailed}
-                onExpand={() => setViewing(true)}
-                style={{ height: clipHeight, marginTop: 16 }}
+                canPlay={!clipFailed}
+                onPlay={() => setViewing(true)}
+                height={Math.min(width - 40, height * 0.4)}
               />
               <View style={styles.steps}>
                 {meta.steps.map((key, index) => (
@@ -546,6 +550,57 @@ function TextButton({ label, onPress }: { label: string; onPress: () => void }) 
   );
 }
 
+/**
+ * The test before it starts: the position to take, as a picture, rather than a
+ * clip of somebody doing it. A still shows the one thing to watch, with its
+ * arrow or ring, and is there at once; the clip shows the movement, so it is
+ * one tap away, at full size. Mirrored with the clip, so the picture stands on
+ * the leg being tested.
+ */
+function TestPicture({
+  kind,
+  mirrored,
+  canPlay,
+  onPlay,
+  height,
+}: {
+  kind: keyof typeof TEST_PICTURES;
+  mirrored: boolean;
+  canPlay: boolean;
+  onPlay: () => void;
+  /** The frame's height. The pictures are trimmed to their figure, so a tall
+   * one (the balance test) fills it and a wide one fills the width. */
+  height: number;
+}) {
+  const scheme = useColorScheme();
+  const colors = palette[scheme];
+  const t = useT();
+  return (
+    <Animated.View entering={FadeIn.duration(320).reduceMotion(ReduceMotion.System)} style={styles.picture}>
+      <Image
+        source={TEST_PICTURES[kind].full}
+        style={[styles.pictureImage, { height }, mirrored && styles.mirrored]}
+        resizeMode="contain"
+        accessibilityIgnoresInvertColors
+      />
+      {canPlay && (
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={t('testday.watch')}
+          onPress={() => {
+            Haptics.selectionAsync();
+            onPlay();
+          }}
+          hitSlop={8}
+          style={({ pressed }) => [styles.watch, { backgroundColor: colors.card }, pressed && styles.pressed]}>
+          <HugeiconsIcon icon={PlayIcon} size={15} color={colors.foreground} strokeWidth={2.2} />
+          <Text style={[styles.watchLabel, { color: colors.foreground }]}>{t('testday.watch')}</Text>
+        </Pressable>
+      )}
+    </Animated.View>
+  );
+}
+
 /** The demonstration in a rounded card: the full width before the test, a
  * thumbnail in the corner during it. Either one opens it at full size, so the
  * movement can actually be followed, not just glimpsed. */
@@ -620,6 +675,26 @@ const styles = StyleSheet.create({
     ...fonts.semibold(17),
     marginTop: 2,
   },
+  picture: {
+    marginTop: 16,
+    alignItems: 'center',
+    gap: 12,
+  },
+  pictureImage: {
+    width: '100%',
+  },
+  // Under the picture rather than on it: the figures are trimmed to their
+  // edges, so there is no corner of a picture that is always empty.
+  watch: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    height: 34,
+    paddingHorizontal: 13,
+    borderRadius: 17,
+    borderCurve: 'continuous',
+  },
+  watchLabel: fonts.semibold(14, -0.1),
   clipFrame: {
     borderRadius: 28,
     borderCurve: 'continuous',

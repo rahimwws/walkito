@@ -10,12 +10,11 @@ import { describe, expect, test } from 'bun:test';
 import { withFocus } from '@/entities/program/model/catalogue';
 import { resolveDay } from '@/entities/program/model/adapt';
 import { blocksFor } from '@/entities/program/model/blocks';
-import { focusFor, intakeFrom, startingPlan } from '@/pages/onboarding/model/intake';
+import { focusFor, intakeFrom, planSettingsFrom, startingPlan, toeWorkFrom } from '@/pages/onboarding/model/intake';
 
-const measure = (unit: string, field: string, value: string) => ({ unit, fields: { [field]: value } });
 
 describe('reading the answers', () => {
-  test('choices and measures survive, and the new questions with them', () => {
+  test('choices survive, and the new questions with them', () => {
     const intake = intakeFrom(
       {
         pain: ['heel', 'achilles'],
@@ -23,7 +22,6 @@ describe('reading the answers', () => {
         role: ['both'],
         runner: ['casual'],
         goal: ['mornings'],
-        age: measure('years', 'years', '41'),
         duration: ['year'],
         morningPain: '7',
         safety: ['none'],
@@ -38,12 +36,13 @@ describe('reading the answers', () => {
     // Who they are says the sport now: anybody who runs is a runner.
     expect(intake.sport).toBe('running');
     expect(intake.role).toBe('both');
-    expect(intake.age).toBe(41);
     expect(intake.painDuration).toBe('year');
     expect(intake.morningPain).toBe(7);
     expect(intake.tried).toEqual(['insoles', 'rest']);
     expect(intake.habit).toBe('coffee');
     // No longer asked.
+    expect(intake.sex).toBeNull();
+    expect(intake.age).toBeNull();
     expect(intake.weightKg).toBeNull();
     expect(intake.shoe).toBeNull();
     expect(intake.completedAt).toBe(1000);
@@ -71,10 +70,9 @@ describe('the starting plan', () => {
     expect(startingPlan(base).planLength).toBe(84);
   });
 
-  test('a new runner or anyone 55+ starts a step lighter', () => {
+  test('a new runner starts a step lighter', () => {
     expect(startingPlan({ ...base, runner: 'new' }).progressionOffset).toBe(-1);
-    expect(startingPlan({ ...base, runner: 'regular', age: 60 }).progressionOffset).toBe(-1);
-    expect(startingPlan({ ...base, runner: 'regular', age: 30 }).progressionOffset).toBe(0);
+    expect(startingPlan({ ...base, runner: 'regular' }).progressionOffset).toBe(0);
     // A pain only weeks old, or a week one that starts seated.
     expect(startingPlan({ ...base, runner: 'regular' }, { duration: ['weeks'] }).progressionOffset).toBe(-1);
     expect(startingPlan({ ...base, runner: 'regular' }, { safety: ['fall'] }).progressionOffset).toBe(-1);
@@ -123,5 +121,22 @@ describe('the focus in the plan', () => {
     });
     expect(day.reason).toBe('flare');
     expect(day.exercises.map((e) => e.exercise.id)).not.toContain('calf_stretch_bent');
+  });
+});
+
+describe('the photo questions', () => {
+  test('a toe that lifts a little or not at all, or a bunion, asks for toe work', () => {
+    expect(toeWorkFrom({ toe: ['no'] })).toBe(true);
+    expect(toeWorkFrom({ toe: ['little'] })).toBe(true);
+    expect(toeWorkFrom({ bunion: ['yes'] })).toBe(true);
+    expect(toeWorkFrom({ bunion: ['little'] })).toBe(true);
+    expect(planSettingsFrom({ toe: ['no'] }, null).toeWork).toBe(true);
+  });
+
+  test('an easy lift, no bunion, "not sure" or a skipped question changes nothing', () => {
+    expect(toeWorkFrom({ toe: ['yes'], bunion: ['no'] })).toBe(false);
+    expect(toeWorkFrom({ bunion: ['unsure'] })).toBe(false);
+    expect(toeWorkFrom({})).toBe(false);
+    expect('toeWork' in planSettingsFrom({ toe: ['yes'] }, null)).toBe(false);
   });
 });

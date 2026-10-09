@@ -92,7 +92,9 @@ export const JOURNEY_PT = {
   'onboarding.react.painZero': 'Vamos manter assim.',
   'onboarding.react.painMild': 'Pouca, mas toda manhã.',
   'onboarding.react.painMiddle': 'O bastante para mudar o seu dia.',
-  'onboarding.react.painHard': 'A gente começa com calma.',
+  'onboarding.react.painHard': 'É um jeito difícil de começar o dia. As primeiras sessões vão ser leves.',
+  // Under the morning reaction: the same date the first progress check is on.
+  'onboarding.react.painRecheck': 'Seu ponto de partida. A gente mede de novo em {date}.',
 
   // ── Safety check ─────────────────────────────────────────────────────────
   'onboarding.safety.title': 'Algum destes agora?',
@@ -146,11 +148,6 @@ export const JOURNEY_PT = {
   'onboarding.reflection.feetDaily': '{band} em pé por dia',
 
   // ── Halfway ──────────────────────────────────────────────────────────────
-  'onboarding.midway.title': 'O que já sabemos, {name}',
-  'onboarding.midway.body': 'Mais algumas, e aí vem seu plano.',
-  'onboarding.midway.mornings': 'Manhãs: {score} de 10',
-  'onboarding.midway.since': 'Há: {duration}',
-  'onboarding.midway.tried': 'Já tentou: {items}',
   'onboarding.midway.nothing': 'Nada dói agora',
 
   // ── Why it still hurts ───────────────────────────────────────────────────
@@ -226,6 +223,8 @@ export const JOURNEY_PT = {
   // ── Building ─────────────────────────────────────────────────────────────
   'onboarding.building.heading': 'Montando seu plano',
   'onboarding.building.where': '{where} · manhãs {score}/10',
+  // Under the place, on the building screen's first card.
+  'onboarding.building.mornings': 'Primeiros passos {score}/10',
   'onboarding.building.safety': 'Checagem de segurança concluída',
   'onboarding.building.seated': 'A primeira semana é feita na cadeira',
   'onboarding.building.kitAll': 'Tudo o que você precisa em casa',
@@ -245,6 +244,12 @@ export const JOURNEY_PT = {
   'setup.save.title': 'Tudo pronto',
   'setup.save.blurb': 'Para ficar seguro se você trocar de celular.',
   'setup.save.later': 'Agora não',
+  // After the purchase, for anyone with no address on file: the welcome and
+  // the first fortnight's emails go to it.
+  'setup.email.title': 'Enviar seu plano para o seu email?',
+  'setup.email.placeholder': 'voce@exemplo.com',
+  'setup.email.note': 'Opcional. Alguns emails curtos nas duas primeiras semanas.',
+  'setup.email.send': 'Enviar',
   'setup.widget.title': 'Seu check-in na Tela de Início',
   'setup.widget.blurb': 'Um toque antes de levantar.',
   'setup.widget.add': 'Adicionar widget',

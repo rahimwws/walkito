@@ -1,7 +1,7 @@
 // Phosphor v3 exports every glyph with an `Icon` suffix (`Path` would
 // otherwise collide with react-native-svg's `Path`), so each one is
 // aliased back to its plain name here rather than at every use site.
-import type { Icon } from 'phosphor-react-native';
+import type { Icon, IconWeight } from 'phosphor-react-native';
 import { ScalesIcon as Scales } from 'phosphor-react-native/src/icons/Scales';
 import { ArrowFatLineUpIcon as ArrowFatLineUp } from 'phosphor-react-native/src/icons/ArrowFatLineUp';
 import { PersonSimpleWalkIcon as PersonSimpleWalk } from 'phosphor-react-native/src/icons/PersonSimpleWalk';
@@ -40,6 +40,8 @@ import { SunHorizonIcon as SunHorizon } from 'phosphor-react-native/src/icons/Su
 import { TennisBallIcon as TennisBall } from 'phosphor-react-native/src/icons/TennisBall';
 import { TimerIcon as Timer } from 'phosphor-react-native/src/icons/Timer';
 import { TrophyIcon as Trophy } from 'phosphor-react-native/src/icons/Trophy';
+import { CircleHalfIcon as CircleHalf } from 'phosphor-react-native/src/icons/CircleHalf';
+import { QuestionIcon as Question } from 'phosphor-react-native/src/icons/Question';
 
 /**
  * The glyph and hue for each answer.
@@ -54,7 +56,7 @@ import { TrophyIcon as Trophy } from 'phosphor-react-native/src/icons/Trophy';
  * step data: the questions are content, this is presentation, and keeping
  * them apart means rewording a question never risks losing its icon.
  */
-export type OptionArt = { icon: Icon; color: string };
+export type OptionArt = { icon: Icon; color: string; /** `fill` unless set. */ weight?: IconWeight };
 
 /** A small, fixed spread. More hues than this and the list stops reading as
  * one set; fewer and the rows stop being distinguishable. */
@@ -204,4 +206,18 @@ export const SPORT_ICONS: Record<string, OptionArt> = {
   basketball: { icon: Basketball, color: HUE.rose },
   cycling: { icon: PersonSimpleBike, color: HUE.teal },
   hiking: { icon: Mountains, color: HUE.pink },
+};
+
+/**
+ * Yes, a little, no, not sure: the foot checks with a photograph. How much,
+ * drawn as how full a circle is (whole, half, an empty ring), in the brand's
+ * one hue: the answer is an observation about a foot, and a tick or a cross
+ * would read as right and wrong, the more so beside the row's own check.
+ */
+export const VERDICT_ICONS: Record<string, OptionArt> = {
+  default: { icon: Question, color: HUE.violet, weight: 'bold' },
+  yes: { icon: Circle, color: HUE.violet },
+  little: { icon: CircleHalf, color: HUE.violet },
+  no: { icon: Circle, color: HUE.violet, weight: 'bold' },
+  unsure: { icon: Question, color: HUE.violet, weight: 'bold' },
 };

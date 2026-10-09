@@ -40,7 +40,6 @@ export const ONBOARDING_DE = {
   'onboarding.intro.headline': 'Finden wir heraus, warum es noch wehtut.',
   'onboarding.intro.cta': 'Mit Apple fortfahren',
   'onboarding.intro.ctaGoogle': 'Mit Google fortfahren',
-  'onboarding.intro.footnote': 'Etwa 3 Minuten',
   'onboarding.intro.signInFailed': 'Die Anmeldung wurde nicht abgeschlossen. Versuch es noch einmal.',
   'onboarding.intro.emailCta': 'Mit E-Mail anmelden',
 
@@ -54,15 +53,49 @@ export const ONBOARDING_DE = {
 
   // ── Name ─────────────────────────────────────────────────────────────────
   'onboarding.name.title': 'Wie sollen wir\ndich nennen?',
-  'onboarding.name.blurb':
-    'Alles danach wird für dich geschrieben, nicht für Läuferinnen und Läufer im Allgemeinen.',
+  'onboarding.name.blurb': 'Er kommt in deinen Fußpass.',
   'onboarding.name.placeholder': 'z. B. Alex',
+  // The Foot Passport: a stamp per answer, folded above the questions and
+  // open on the halfway screen. Labels are short: each sits beside its value.
+  'onboarding.passport.title': 'Fußpass',
+  'onboarding.passport.owner': 'Fußpass von {name}',
+  'onboarding.passport.empty': 'Hier erscheinen deine Antworten',
+  'onboarding.passport.issued': 'Ausgestellt am {date}',
+  'onboarding.passport.edit': 'Etwas falsch? Tippe zum Ändern.',
+  'onboarding.passport.heading': 'Dein Fußpass, {name}',
+  // Who they are, in the passport's words: the role question's own
+  // answers ("Both") mean nothing out of it.
+  'onboarding.passport.role.running': 'Läufer',
+  'onboarding.passport.role.feet': 'Bei der Arbeit auf den Beinen',
+  'onboarding.passport.role.both': 'Läufer, bei der Arbeit auf den Beinen',
+  'onboarding.passport.role.walking': 'Gehen im Alltag',
+  'onboarding.passport.who': 'Wer',
+  'onboarding.passport.toe': 'Großzeh heben',
+  'onboarding.passport.bunion': 'Ballenzeh',
+  'onboarding.passport.where': 'Wo es wehtut',
+  'onboarding.passport.since': 'Seit',
+  'onboarding.passport.mornings': 'Erste Schritte',
+  'onboarding.passport.goal': 'Ziel',
+  'onboarding.passport.load': 'Belastung',
+  'onboarding.passport.habit': 'Verknüpft mit',
+  'onboarding.passport.plan': 'Plan',
+  'onboarding.passport.morningsValue': '{score}/10',
+  'onboarding.passport.planValue': '{days} · {minutes}',
 
-  // ── Sex ──────────────────────────────────────────────────────────────────
-  'onboarding.sex.title': 'Männlich oder weiblich, {name}?',
-  'onboarding.sex.blurb': 'Belastbarkeit und typische Verletzungen unterscheiden sich, also auch der Plan.',
-  'onboarding.sex.female': 'Weiblich',
-  'onboarding.sex.male': 'Männlich',
+  'onboarding.toe.title': 'Kannst du nur den großen Zeh anheben?',
+  'onboarding.toe.blurb': 'Stell dich hin, lass die anderen vier Zehen am Boden und probier es.',
+  'onboarding.toe.yes': 'Ja, problemlos',
+  'onboarding.toe.little': 'Ein bisschen',
+  'onboarding.toe.no': 'Nein, er hebt sich nicht',
+  'onboarding.bunion.title': 'Hast du einen Ballenzeh (Hallux valgus)?',
+  'onboarding.bunion.blurb': 'Ein knöcherner Höcker am Grundgelenk des großen Zehs, oft neigt sich der Zeh nach innen.',
+  'onboarding.bunion.straight': 'Gerader großer Zeh',
+  'onboarding.bunion.example': 'Mit Ballenzeh',
+  'onboarding.bunion.no': 'Nein',
+  'onboarding.bunion.little': 'Leicht',
+  'onboarding.bunion.yes': 'Ja',
+  'onboarding.bunion.unsure': 'Weiß nicht',
+  'onboarding.bunion.note': 'Ein Bild zum Vergleichen, keine Diagnose.',
 
   // ── Runner ───────────────────────────────────────────────────────────────
   'onboarding.runner.title': 'Was für ein Sporttyp bist du, {name}?',
@@ -73,11 +106,6 @@ export const ONBOARDING_DE = {
   'onboarding.runner.regular': 'Regelmäßig',
   'onboarding.runner.racing': 'Ich trainiere auf etwas hin',
   'onboarding.runner.serious': 'Mit vollem Ernst',
-
-  // ── Age ──────────────────────────────────────────────────────────────────
-  'onboarding.age.title': 'Wie alt bist du?',
-  'onboarding.age.blurb': 'Sehnen passen sich mit dem Alter langsamer an. Das bestimmt, wie schnell der Plan aufbaut.',
-  'onboarding.age.years': 'Jahre',
 
   // ── Body ─────────────────────────────────────────────────────────────────
   'onboarding.body.title': 'Noch ein bisschen mehr über dich, {name}',
@@ -104,15 +132,19 @@ export const ONBOARDING_DE = {
   'onboarding.goal.allday': 'Den ganzen Tag auf den Beinen',
   'onboarding.goal.comeback': 'Comeback nach Verletzung',
   'onboarding.goal.steady': 'Sicher gehen',
-  'onboarding.days.title': 'Wie viele Tage pro Woche, {name}?',
-  'onboarding.days.blurb': 'Kurze Einheiten. Ruhetage gehören zum Plan, sie sind keine Lücke.',
+  // Days and minutes, one screen: a heading over two short lists.
+  'onboarding.schedule.title': 'Wie viel Zeit hast du, {name}?',
+  'onboarding.schedule.days': 'Tage pro Woche',
+  'onboarding.schedule.minutes': 'Minuten pro Einheit',
+  'onboarding.schedule.kit': 'Zu Hause?',
+  // Under the kit: the exercises it brings into the plan, as they are picked.
+  'onboarding.schedule.adds': 'Kommt in deinen Plan',
   'onboarding.days.days3': '3 Tage',
   'onboarding.days.days3Caption': 'Ein leichter Einstieg',
   'onboarding.days.days5': '5 Tage',
   'onboarding.days.days5Caption': 'Empfohlen',
   'onboarding.days.days7': 'Jeden Tag',
   'onboarding.days.days7Caption': 'Kurz und täglich',
-  'onboarding.minutes.title': 'Wie lange pro Einheit?',
   'onboarding.minutes.blurb': 'Jeden Tag änderbar - auch volle Tage zählen.',
   'onboarding.minutes.min3': '3 Minuten',
   'onboarding.minutes.min3Caption': 'Auch an vollen Tagen',
@@ -290,7 +322,6 @@ export const ONBOARDING_DE = {
   'onboarding.pattern.shin': 'Der Umfang war deinen Beinen voraus. Der Plan nimmt das zurück und baut dann auf.',
   'onboarding.pattern.calf': 'Die Wade zieht an allem darunter. Lockere sie, und der Rest folgt.',
   'onboarding.pattern.none': 'Du bist hier, bevor es wehtut. Das ist der einfache Weg.',
-  'onboarding.building.promise': 'Erste Veränderungen: Tag 12 bis 16.',
 
   // ── Reflection parts ─────────────────────────────────────────────────────
   'onboarding.reflection.painHeel': 'Fersenschmerz',

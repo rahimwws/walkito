@@ -47,6 +47,7 @@ import {
 import { wakeMinutes } from "@/entities/notifications";
 import {
   EQUIPMENT,
+  PLAN_META,
   exerciseById,
   logPain,
   seedPlanSettings,
@@ -62,6 +63,7 @@ import { REPLAY_MASK } from "@/shared/ui/replay-mask";
 import { Glow } from "@/shared/ui/glow";
 import { WelcomePage } from "@/pages/welcome";
 
+import { QUESTION_PHOTOS } from "../config/question-photos";
 import { chose } from "../model/answers";
 import {
   intakeFrom,
@@ -111,14 +113,15 @@ import {
   type Phrase,
   type ResolvedOption,
 } from "../model/steps";
-import { BuildingStep } from "./building-step";
+import { BuildingStep, type BuildingRow } from "./building-step";
 import { ChoiceStep } from "./choice-step";
+import { ScheduleStep } from "./schedule-step";
 import { ContractStep } from "./contract-step";
 import { FirstWeekStep, type WeekMove } from "./first-week-step";
 import { HabitStep } from "./habit-step";
 import { InlineReaction } from "./inline-reaction";
 import { IntroStep } from "./intro-step";
-import { MeasureStep } from "./measure-step";
+import { PassportCard, PassportStrip, type PassportStamp } from "./foot-passport";
 import { MidwayStep } from "./midway-step";
 import { TestBalance, TestIntro, TestResult, TestToe } from "./mini-test";
 import { MorningPainStep } from "./morning-pain-step";
@@ -126,8 +129,8 @@ import { NameStep } from "./name-step";
 import { NotifyStep } from "./notify-step";
 import { OutlookStep } from "./outlook-step";
 import { PainMapStep } from "./pain-map-step";
+import { QuestionNote, QuestionPhoto } from "./question-photo";
 import { ReactionStep } from "./reaction-step";
-import { SexStep } from "./sex-step";
 import { StepProgress } from "./step-progress";
 import { WhyStep } from "./why-step";
 
@@ -142,9 +145,15 @@ const SLIDE = 28;
 /** The sub-line trails the question rather than landing with it. */
 const BLURB_DELAY_MS = 220;
 
-type MeasureAnswer = { unit: string; fields: Record<string, string> };
-type Answer = string | string[] | MeasureAnswer;
+type Answer = string | string[];
 type Answers = Record<string, Answer>;
+
+/** Where each part of the flow after the first begins on the progress bar:
+ * the bar's fill at that part's first step. */
+const CHECKPOINTS: readonly number[] = [1, 2, 3]
+  .map((act) => STEPS.findIndex((step) => step.act === act))
+  .filter((at) => at > 0)
+  .map((at) => (at + 1) / STEP_COUNT);
 
 /**
  * Steps hidden from session recordings: they ask about the body or the pain,
@@ -153,8 +162,8 @@ type Answers = Record<string, Answer>;
  * never changes whether the view exists natively.
  */
 const UNRECORDED_STEPS: ReadonlySet<string> = new Set([
-  "sex",
-  "age",
+  "toe",
+  "bunion",
   "pain",
   "side",
   "duration",
@@ -179,10 +188,11 @@ const UNRECORDED_STEPS: ReadonlySet<string> = new Set([
  * screen is.
  */
 const BLURB_STEPS: ReadonlySet<string> = new Set([
+  "toe",
+  "bunion",
   "pain",
   "safety",
   "tried",
-  "equipment",
   "contract",
 ]);
 
@@ -220,19 +230,19 @@ function whereLabel(
   return key != null ? t(key) : null;
 }
 
+/** Who they are, as the passport says it: "Both" alone means nothing. */
+const ROLE_PASSPORT: Readonly<Record<string, Key>> = {
+  running: "onboarding.passport.role.running",
+  feet: "onboarding.passport.role.feet",
+  both: "onboarding.passport.role.both",
+  walking: "onboarding.passport.role.walking",
+};
+
 const DURATION_LABEL: Readonly<Record<string, Key>> = {
   weeks: "onboarding.duration.weeks",
   months: "onboarding.duration.months",
   year: "onboarding.duration.year",
   longer: "onboarding.duration.longer",
-};
-
-const TRIED_LABEL: Readonly<Record<string, Key>> = {
-  insoles: "onboarding.tried.insoles",
-  stretching: "onboarding.tried.stretching",
-  shoes: "onboarding.tried.shoes",
-  rest: "onboarding.tried.rest",
-  physio: "onboarding.tried.physio",
 };
 
 const EQUIPMENT_LABEL: Readonly<Record<string, Key>> = {
@@ -243,16 +253,14 @@ const EQUIPMENT_LABEL: Readonly<Record<string, Key>> = {
   ball: "onboarding.equipment.ball",
 };
 
+/** The morning seed, and the recommended middle of each time pick, so the
+ * schedule screen only asks for a tap where the default is not wanted. */
 function seedAnswers(): Answers {
-  const seed: Answers = { morningPain: String(MORNING_PAIN_SEED) };
-  for (const step of STEPS) {
-    if (step.kind !== "measure") continue;
-    const unit = step.units[0];
-    const fields: Record<string, string> = {};
-    for (const field of unit.fields) fields[field.key] = field.initial;
-    seed[step.key] = { unit: unit.value, fields };
-  }
-  return seed;
+  return {
+    morningPain: String(MORNING_PAIN_SEED),
+    planDays: ["days5"],
+    planMinutes: ["min5"],
+  };
 }
 
 function list(answer: Answer | undefined): string[] {
@@ -307,7 +315,6 @@ export function OnboardingPage() {
   const answer = answers[step.key];
 
   const name = typeof answers.name === "string" ? answers.name : "";
-  const sex = list(answers.sex)[0] ?? null;
   const role = roleOf(answers);
   const painZones = zonesIn(answers.pain);
   const pain = painAreasFor(answers.pain);
@@ -331,7 +338,6 @@ export function OnboardingPage() {
       caption: option.caption?.(t),
       icon: option.icon,
       accent: option.accent,
-      photo: option.photo,
     }));
 
   const goalValues = goalValuesFor(role, painless);
@@ -363,66 +369,165 @@ export function OnboardingPage() {
     return null;
   })();
 
-  const midwayRows = (() => {
-    if (painless)
-      return [
-        t("onboarding.midway.nothing"),
-        ...(loadLine != null ? [loadLine] : []),
-      ];
-    const rows: string[] = [];
-    if (where != null) rows.push(where);
-    rows.push(t("onboarding.midway.mornings", { score }));
-    const duration = durationOf(answers);
-    if (duration != null)
-      rows.push(
-        t("onboarding.midway.since", { duration: t(DURATION_LABEL[duration]) }),
-      );
-    const tried = list(answers.tried).filter(
-      (value) => TRIED_LABEL[value] != null,
+  // ── The Foot Passport ────────────────────────────────────────────────────
+  // One stamp per question already answered and passed, in the order asked.
+  // A step stepped over has no answer and leaves no stamp; going back takes
+  // the later stamps off until they are answered again.
+  const passed = (key: string) => {
+    const at = STEPS.findIndex((candidate) => candidate.key === key);
+    return at >= 0 && at < index;
+  };
+  const choiceLabel = (key: string): string | null => {
+    const value = list(answers[key])[0];
+    const choice = STEPS.find((candidate) => candidate.key === key);
+    if (value == null || choice == null || !("options" in choice)) return null;
+    const option = choice.options.find((candidate) => candidate.value === value);
+    return option == null ? null : say(option.label);
+  };
+  const passportStamps: PassportStamp[] = (() => {
+    const out: PassportStamp[] = [];
+    const add = (key: string, label: string, value: string | null) => {
+      if (passed(key) && value != null && value !== "")
+        out.push({
+          key,
+          label,
+          value,
+          order: STEPS.findIndex((candidate) => candidate.key === key),
+        });
+    };
+    const roleValue = list(answers.role)[0];
+    add(
+      "role",
+      t("onboarding.passport.who"),
+      roleValue != null && ROLE_PASSPORT[roleValue] != null
+        ? t(ROLE_PASSPORT[roleValue])
+        : null,
     );
-    if (tried.length > 0) {
-      // Lower-cased: the labels open a sentence on their own and sit mid-line here.
-      rows.push(
-        t("onboarding.midway.tried", {
-          items: tried
-            .map((value) => t(TRIED_LABEL[value]).toLocaleLowerCase())
-            .join(", "),
-        }),
+    if (list(answers.pain).length > 0)
+      add(
+        "pain",
+        t("onboarding.passport.where"),
+        painless ? t("onboarding.midway.nothing") : where,
       );
-    }
-    if (loadLine != null) rows.push(loadLine);
+    const duration = durationOf(answers);
+    add(
+      "duration",
+      t("onboarding.passport.since"),
+      duration == null ? null : t(DURATION_LABEL[duration]),
+    );
+    if (!painless)
+      add(
+        "morningPain",
+        t("onboarding.passport.mornings"),
+        t("onboarding.passport.morningsValue", { score }),
+      );
+    add("toe", t("onboarding.passport.toe"), choiceLabel("toe"));
+    add("bunion", t("onboarding.passport.bunion"), choiceLabel("bunion"));
+    const goal = list(answers.goal)[0];
+    add(
+      "goal",
+      t("onboarding.passport.goal"),
+      goalOptions.find((option) => option.value === goal)?.label ?? null,
+    );
+    const loadValue = list(answers.load)[0];
+    const loadOption = load.options.find((option) => option.value === loadValue);
+    add(
+      "load",
+      t("onboarding.passport.load"),
+      loadOption == null ? null : say(loadOption.label),
+    );
+    add("habit", t("onboarding.passport.habit"), choiceLabel("habit"));
+    const days = choiceLabelFrom("planDays", list(answers.planDays)[0]);
+    const minutes = choiceLabelFrom("planMinutes", list(answers.planMinutes)[0]);
+    add(
+      "planDays",
+      t("onboarding.passport.plan"),
+      days != null && minutes != null
+        ? t("onboarding.passport.planValue", { days, minutes })
+        : null,
+    );
+    return out;
+  })();
+  /** The schedule step keeps its two lists apart from `options`. */
+  function choiceLabelFrom(key: "planDays" | "planMinutes", value: string | undefined): string | null {
+    const schedule = STEPS.find((candidate) => candidate.kind === "schedule");
+    if (value == null || schedule == null || schedule.kind !== "schedule") return null;
+    const options = key === "planDays" ? schedule.days : schedule.minutes;
+    const option = options.find((candidate) => candidate.value === value);
+    return option == null ? null : say(option.label);
+  }
+  /** Folded above the questions themselves, never over a screen of its own. */
+  const showPassport =
+    passed("name") &&
+    name !== "" &&
+    (step.kind === "choice" ||
+      step.kind === "pain-map" ||
+      step.kind === "morning-pain" ||
+      step.kind === "habit" ||
+      step.kind === "schedule");
+
+
+  // What is at home, said back: nothing, everything, or what the plan goes
+  // without.
+  const kitLine = (() => {
+    const have = list(answers.equipment);
+    if (have.includes("none")) return t("onboarding.building.kitNone");
+    if (have.length === 0) return null;
+    const missing = EQUIPMENT.filter((item) => !have.includes(item));
+    return missing.length === 0
+      ? t("onboarding.building.kitAll")
+      : t("onboarding.building.kitWithout", {
+          items: missing
+            .map((item) => t(EQUIPMENT_LABEL[item]).toLocaleLowerCase())
+            .join(", "),
+        });
+  })();
+
+  const buildingRows: BuildingRow[] = (() => {
+    const rows: BuildingRow[] = [];
+    if (painless)
+      rows.push({
+        art: "foot",
+        title: t("onboarding.midway.nothing"),
+        ...(loadLine != null ? { caption: loadLine } : {}),
+      });
+    else if (where != null)
+      rows.push({
+        art: "foot",
+        title: where,
+        caption: t("onboarding.building.mornings", { score }),
+      });
+    if (!painless)
+      rows.push({
+        art: "shield",
+        title: safetyPlan(answers).seated
+          ? t("onboarding.building.seated")
+          : t("onboarding.building.safety"),
+      });
+    const days = choiceLabelFrom("planDays", list(answers.planDays)[0]);
+    const minutes = choiceLabelFrom("planMinutes", list(answers.planMinutes)[0]);
+    if (days != null && minutes != null)
+      rows.push({
+        art: "calendar",
+        title: t("onboarding.passport.planValue", { days, minutes }),
+        ...(kitLine != null ? { caption: kitLine } : {}),
+      });
+    rows.push({ art: "clipboard", title: t("onboarding.building.choosing") });
     return rows;
   })();
 
-  const buildingLines = (() => {
-    const lines: string[] = [];
-    if (painless) lines.push(t("onboarding.midway.nothing"));
-    else if (where != null)
-      lines.push(t("onboarding.building.where", { where, score }));
-    if (!painless) {
-      lines.push(
-        safetyPlan(answers).seated
-          ? t("onboarding.building.seated")
-          : t("onboarding.building.safety"),
-      );
-    }
-    if (loadLine != null) lines.push(loadLine);
-    const have = list(answers.equipment);
-    if (have.includes("none")) lines.push(t("onboarding.building.kitNone"));
-    else if (have.length > 0) {
-      const missing = EQUIPMENT.filter((item) => !have.includes(item));
-      lines.push(
-        missing.length === 0
-          ? t("onboarding.building.kitAll")
-          : t("onboarding.building.kitWithout", {
-              items: missing
-                .map((item) => t(EQUIPMENT_LABEL[item]).toLocaleLowerCase())
-                .join(", "),
-            }),
-      );
-    }
-    lines.push(t("onboarding.building.choosing"));
-    return lines;
+  /** The exercises the kit picked so far brings into the plan: each one whose
+   * every piece of equipment is at home. */
+  const kitAdds = (() => {
+    const have = list(answers.equipment).filter((item) => item !== "none");
+    if (have.length === 0) return [];
+    return PLAN_META.filter(
+      (meta) =>
+        meta.equipment.length > 0 &&
+        meta.equipment.every((item) => have.includes(item)),
+    )
+      .slice(0, 4)
+      .map((meta) => t(exerciseById(meta.id).titleKey));
   })();
 
   const why = whyLines(area, answers);
@@ -485,7 +590,7 @@ export function OnboardingPage() {
       const found = safetyReaction(answers);
       return found != null ? { id: found.key, text: t(found.text) } : null;
     }
-    if (step.key === "equipment") {
+    if (step.key === "planDays") {
       const found = equipmentReaction(answers);
       return found != null ? { id: found.key, text: t(found.text) } : null;
     }
@@ -531,7 +636,11 @@ export function OnboardingPage() {
         if (step.key === "load")
           return load.options.some((o) => o.value === list(answer)[0]);
         return list(answer).length > 0;
-      case "sex":
+      case "schedule":
+        return (
+          list(answers.planDays).length > 0 &&
+          list(answers.planMinutes).length > 0
+        );
       case "pain-map":
         return list(answer).length > 0;
       case "habit":
@@ -565,6 +674,19 @@ export function OnboardingPage() {
     transform: [{ translateX: (1 - settled.value) * SLIDE * direction.value }],
   }));
 
+  /**
+   * Set while a question is being changed from the passport: the next step
+   * forward goes straight back to the passport rather than through every
+   * screen in between.
+   */
+  const [returnTo, setReturnTo] = useState<number | null>(null);
+  const editFromPassport = (key: string) => {
+    const at = STEPS.findIndex((candidate) => candidate.key === key);
+    if (at < 0) return;
+    setReturnTo(index);
+    go(at, false);
+  };
+
   const enterFrom = useRef(1);
   const mounted = useRef(false);
 
@@ -574,8 +696,7 @@ export function OnboardingPage() {
    */
   const go = useCallback(
     (next: number, forward: boolean) => {
-      if (STEPS[next].kind !== "name" && STEPS[next].kind !== "measure")
-        Keyboard.dismiss();
+      if (STEPS[next].kind !== "name") Keyboard.dismiss();
       enterFrom.current = forward ? 1 : -1;
       direction.value = forward ? -1 : 1;
       settled.value = withTiming(
@@ -620,7 +741,7 @@ export function OnboardingPage() {
     });
   }, [index, direction, settled]);
 
-  /** The few answers worth a chart. Pain, age, the safety answers, what they
+  /** The few answers worth a chart. Pain, the safety answers, what they
    * tried and the check's results never leave the device. */
   const reportAnswer = () => {
     if (!ANSWERS_TRACKED.includes(step.key as TrackedAnswer)) return;
@@ -646,6 +767,13 @@ export function OnboardingPage() {
    */
   const move = (forward: boolean, patch?: Answers) => {
     if (forward) reportAnswer();
+    if (forward && returnTo != null) {
+      if (patch != null) setAnswers({ ...answers, ...patch });
+      const back = returnTo;
+      setReturnTo(null);
+      go(back, true);
+      return;
+    }
     const nextAnswers = patch != null ? { ...answers, ...patch } : answers;
     if (patch != null) setAnswers(nextAnswers);
     const next = stepAfter(index, forward, nextAnswers);
@@ -702,7 +830,7 @@ export function OnboardingPage() {
     // it, and only for somebody it is for: reading the flag records the
     // exposure, and an ineligible person must not count in either arm.
     if (
-      step.key === "equipment" &&
+      step.key === "planDays" &&
       answers.miniTest == null &&
       miniTestEligible(answers, painless)
     ) {
@@ -770,7 +898,7 @@ export function OnboardingPage() {
     >
       <Glow />
       {!bare && (
-        <View style={styles.header}>
+        <View style={[styles.header, showPassport && styles.headerTight]}>
           <Pressable
             accessibilityRole="button"
             accessibilityLabel={t("common.back")}
@@ -785,9 +913,12 @@ export function OnboardingPage() {
               strokeWidth={2}
             />
           </Pressable>
-          <StepProgress index={index} count={STEP_COUNT} />
+          <StepProgress index={index} count={STEP_COUNT} checkpoints={CHECKPOINTS} />
           <LanguageBadge />
         </View>
+      )}
+      {!bare && showPassport && (
+        <PassportStrip name={name} stamps={passportStamps} />
       )}
 
       <Animated.View
@@ -847,73 +978,63 @@ export function OnboardingPage() {
               </View>
             )}
 
-            {step.kind === "measure" && (
-              <MeasureStep
-                key={step.key}
-                units={step.units}
-                unit={
-                  answer != null &&
-                  !Array.isArray(answer) &&
-                  typeof answer === "object"
-                    ? answer.unit
-                    : step.units[0].value
-                }
-                values={
-                  answer != null &&
-                  !Array.isArray(answer) &&
-                  typeof answer === "object"
-                    ? answer.fields
-                    : {}
-                }
-                onChangeUnit={(next) => {
-                  const unit = step.units.find((u) => u.value === next);
-                  if (unit == null) return;
-                  const fields: Record<string, string> = {};
-                  for (const field of unit.fields)
-                    fields[field.key] = field.initial;
-                  Haptics.selectionAsync();
-                  setAnswer({ unit: next, fields });
-                }}
-                onChangeField={(fieldKey, next) => {
-                  if (
-                    answer == null ||
-                    Array.isArray(answer) ||
-                    typeof answer !== "object"
-                  )
-                    return;
-                  setAnswer({
-                    ...answer,
-                    fields: { ...answer.fields, [fieldKey]: next },
-                  });
-                }}
-              />
-            )}
-
             {step.kind === "choice" && (
               <ScrollView
                 style={styles.scroll}
                 contentContainerStyle={styles.scrollContent}
                 showsVerticalScrollIndicator={false}
               >
+                {step.hero != null && QUESTION_PHOTOS[step.key] != null && (
+                  <QuestionPhoto
+                    image={QUESTION_PHOTOS[step.key]}
+                    captions={step.hero.captions?.map((caption) => say(caption))}
+                  />
+                )}
                 <ChoiceStep
-                  art={step.key === "side" ? "side" : "option"}
+                  art={step.key === "side" ? "side" : (step.art ?? "option")}
                   options={optionsFor(step)}
                   selected={list(answer)}
                   multi={step.multi ?? false}
                   max={step.max}
                   onChange={setAnswer}
+                  // Under the answer just picked: the last in the list is
+                  // the latest tap.
+                  reactAfter={list(answer)[list(answer).length - 1] ?? null}
+                  reaction={
+                    inline != null ? (
+                      <InlineReaction
+                        id={inline.id}
+                        text={inline.text}
+                        style={styles.reactionInList}
+                      />
+                    ) : undefined
+                  }
                 />
-                {inline != null && (
-                  <InlineReaction id={inline.id} text={inline.text} />
+                {step.hero?.note != null && (
+                  <QuestionNote text={say(step.hero.note)} />
                 )}
               </ScrollView>
             )}
 
-            {step.kind === "sex" && (
-              <SexStep
-                options={resolve(step.options)}
-                selected={list(answer)[0] ?? null}
-                onChange={(next) => setAnswer([next])}
+            {step.kind === "schedule" && (
+              <ScheduleStep
+                days={resolve(step.days)}
+                minutes={resolve(step.minutes)}
+                kit={resolve(step.kit)}
+                picked={{
+                  days: list(answers.planDays)[0] ?? null,
+                  minutes: list(answers.planMinutes)[0] ?? null,
+                  kit: list(answers.equipment),
+                }}
+                onPick={(key, next) =>
+                  setAnswers((prev) => ({ ...prev, [key]: next }))
+                }
+                adds={kitAdds}
+                reaction={
+                  inline != null ? (
+                    <InlineReaction id={inline.id} text={inline.text} />
+                  ) : undefined
+                }
               />
             )}
 
@@ -946,11 +1067,16 @@ export function OnboardingPage() {
             {step.kind === "midway" && (
               <MidwayStep
                 title={say(() =>
-                  t("onboarding.midway.title", { name: "{name}" }),
+                  t("onboarding.passport.heading", { name: "{name}" }),
                 )}
-                body={t("onboarding.midway.body")}
-                rows={midwayRows}
-              />
+              >
+                <PassportCard
+                  name={name}
+                  stamps={passportStamps}
+                  zones={painless ? [] : painZones}
+                  onEdit={editFromPassport}
+                />
+              </MidwayStep>
             )}
 
             {step.kind === "why" && (
@@ -1059,8 +1185,7 @@ export function OnboardingPage() {
       {/* Pinned over the whole page rather than carried by the step slide. */}
       {step.kind === "building" && (
         <BuildingStep
-          sex={sex}
-          lines={buildingLines}
+          rows={buildingRows}
           onDone={onNext}
           insets={insets}
         />
@@ -1090,8 +1215,8 @@ export function OnboardingPage() {
             )}
           </Animated.View>
 
-          {/* Under the intro's button: how long this takes, honestly, and the
-              way back in for somebody who already has an account. No sign-in
+          {/* Under the intro's button: the way back in for somebody who
+              already has an account. No sign-in
               before the plan: the anonymous account from first launch holds
               everything until the screen after the first purchase saves it. */}
           {step.kind === "intro" && introReady && (
@@ -1101,9 +1226,6 @@ export function OnboardingPage() {
                 .reduceMotion(ReduceMotion.System)}
               style={styles.introFoot}
             >
-              <Text style={[styles.footnote, { color: meter.caption }]}>
-                {t("onboarding.intro.footnote")}
-              </Text>
               <Pressable
                 accessibilityRole="button"
                 onPress={() => {
@@ -1154,6 +1276,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 2,
     marginBottom: 26,
   },
+  /** Inside the answer list, whose own gap already spaces it. */
+  reactionInList: { marginTop: 0 },
+  /** With the passport folded under it, which brings its own gap. */
+  headerTight: { marginBottom: 12 },
   body: {
     flex: 1,
   },
@@ -1176,6 +1302,14 @@ const styles = StyleSheet.create({
   scrollContent: {
     paddingBottom: 8,
   },
+  /** A label over each list on the schedule step. */
+  section: {
+    ...fonts.bold(15, -0.2),
+    marginBottom: 10,
+  },
+  sectionNext: {
+    marginTop: 22,
+  },
   bar: {
     paddingTop: 16,
   },
@@ -1191,6 +1325,5 @@ const styles = StyleSheet.create({
     paddingTop: 14,
     paddingBottom: 2,
   },
-  footnote: fonts.medium(13),
   haveAccount: fonts.semibold(15, -0.2),
 });

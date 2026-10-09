@@ -10,7 +10,6 @@ import Animated, {
   useSharedValue,
   withDelay,
   withSequence,
-  withSpring,
   withTiming,
 } from 'react-native-reanimated';
 import Svg, { Defs, Path, RadialGradient, Rect, Stop } from 'react-native-svg';
@@ -29,6 +28,7 @@ import { useLanguage, useT } from '@/shared/lib/i18n';
 import { useColorScheme } from '@/shared/lib/theme';
 import { waitPhrase } from '@/shared/lib/wait';
 import { useSplashRevealed } from '@/shared/ui/splash';
+import { settle } from '@/shared/lib/motion';
 
 /**
  * The mascot laughing and waving: the same still the update handoff and the
@@ -131,10 +131,10 @@ export function DoneCard({ next, active, date, plannedMinutes, tickedMoves, rete
       120,
       withSequence(
         withTiming(-14, { duration: 190, easing: Easing.out(Easing.quad), reduceMotion: ReduceMotion.System }),
-        withSpring(0, { damping: 9, stiffness: 260, reduceMotion: ReduceMotion.System }),
+        settle(0, 360),
       ),
     );
-    pop.value = withDelay(260, withSpring(1, { damping: 11, stiffness: 240, reduceMotion: ReduceMotion.System }));
+    pop.value = withDelay(260, settle(1, 380));
     draw.value = withDelay(
       380,
       withTiming(1, { duration: 350, easing: Easing.out(Easing.cubic), reduceMotion: ReduceMotion.System }),

@@ -2,7 +2,8 @@ import { useEffect } from 'react';
 import { AppState } from 'react-native';
 
 import { todayKey, weekPlan } from '@/entities/program';
-import { prefetchClips, surveyClips } from '@/widgets/session-player';
+import { getLanguage } from '@/shared/lib/i18n';
+import { prefetchClips, prefetchVoice, surveyClips, surveyVoice } from '@/widgets/session-player';
 
 /**
  * Has every demonstration clip on the device before anybody asks for one.
@@ -22,6 +23,7 @@ import { prefetchClips, surveyClips } from '@/widgets/session-player';
 export function useClipPrefetch(): void {
   useEffect(() => {
     surveyClips();
+    surveyVoice();
 
     /**
      * The order to fetch in: today's session, then tomorrow's, then the rest.
@@ -40,7 +42,9 @@ export function useClipPrefetch(): void {
       for (const exercise of day.exercises) if (!soon.includes(exercise.id)) soon.push(exercise.id);
     }
 
-    void prefetchClips(soon);
+    // The spoken instructions after the clips, today's first, in the app's
+    // language. Small (a few hundred KB a language), so they finish quickly.
+    void prefetchClips(soon).then(() => prefetchVoice(getLanguage(), soon));
   }, []);
 
   useEffect(() => {
@@ -53,7 +57,7 @@ export function useClipPrefetch(): void {
      * ordinary case and is the only thing that ever completes a partial cache.
      */
     const sub = AppState.addEventListener('change', (next) => {
-      if (next === 'active') void prefetchClips();
+      if (next === 'active') void prefetchClips().then(() => prefetchVoice(getLanguage()));
     });
     return () => sub.remove();
   }, []);

@@ -97,6 +97,10 @@ export const PROGRESS_IT = {
   'progress.strengthDeltaCaption': 'I cambiamenti contano dal tuo primo test.',
   'progress.nextTest': 'Prossimo test il {date}',
   'progress.nextTestToday': 'Il tuo prossimo test è oggi',
+  // Under the next test's date: how far off it is.
+  'progress.nextTestIn': { one: 'tra {count} giorno', other: 'tra {count} giorni' },
+  // On the day the test is due: the button that starts it from the Progress tab.
+  'progress.startTest': 'Inizia',
   'progress.strengthRowA11y': '{name}: {value} {unit}, {change}',
   'progress.goalPercent': '{pct}%',
   'progress.goalA11y': '{goal}, al {pct}%',

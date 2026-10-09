@@ -40,8 +40,9 @@ export const PLAYER_PT = {
   'player.painRule.body': '0-3 tudo bem. 4-5 tudo bem se passar até a manhã seguinte. 6 ou mais - pare.',
   'player.painRule.ok': 'Entendi',
   'player.painRule.a11y': 'Quanta dor é aceitável',
-  'player.tempo.on': 'Sons de ritmo ligados',
-  'player.tempo.off': 'Sons de ritmo desligados',
+  'player.tempo.on': 'Som ligado',
+  'player.tempo.off': 'Som desligado',
+  'player.voice.replay': 'Repetir a explicação',
 
   // ── The player's own chrome ───────────────────────────────────────────────
   'player.header.meta': '{minutes} · {moves}',

@@ -2,9 +2,9 @@ import { createContext, use, useMemo, type PropsWithChildren } from 'react';
 import {
   useAnimatedScrollHandler,
   useSharedValue,
-  withSpring,
   type SharedValue,
 } from 'react-native-reanimated';
+import { settle } from '@/shared/lib/motion';
 
 /**
  * Spring, not timing: scroll direction flips mid-animation constantly, and a
@@ -12,7 +12,8 @@ import {
  * from zero and feel mechanical. Critically damped (ratio 1): no overshoot
  * and no long settling tail, which matters because the bar animates layout.
  */
-export const MINIMIZE_SPRING = { duration: 380, dampingRatio: 1 };
+/** How long the bar takes to fold or unfold. */
+export const MINIMIZE_MS = 380;
 
 export type MinimizeState = {
   /** 0 = expanded (icons + labels), 1 = minimized (icons only). */
@@ -55,7 +56,7 @@ export function setMinimized(state: MinimizeState, next: 0 | 1) {
   'worklet';
   if (state.target.value !== next) {
     state.target.value = next;
-    state.progress.value = withSpring(next, MINIMIZE_SPRING);
+    state.progress.value = settle(next, MINIMIZE_MS);
   }
 }
 
