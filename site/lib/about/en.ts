@@ -32,7 +32,7 @@ export const ABOUT_EN: About = {
       h2: 'How we research',
       id: 'how-we-research',
       paragraphs: [
-        'Walkito Research writes the guides on this site: [plantar fasciitis exercises](/plantar-fasciitis-exercises/), [flat feet exercises](/flat-feet-exercises/), [heel pain from running](/heel-pain-runners/) and [the evidence page](/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study.',
+        'Rahim Hudaykylyyev and Rahman Bazarov, Walkito’s two co-founders, write the guides on this site: [plantar fasciitis exercises](/plantar-fasciitis-exercises/), [flat feet exercises](/flat-feet-exercises/), [heel pain from running](/heel-pain-runners/) and [the evidence page](/science/). We build them from clinical practice guidelines, randomized trials and systematic reviews. We don’t use blog posts, forums or other sites’ summaries as a source. When a summary cites a study, we go to the study.',
         'We read the full paper, not just the abstract, before a number from it goes on a page. Every dose, grade and figure links to the study behind it, so you can open it and check.',
         'Exercises and claims carry one of three evidence labels. **Strong** means a clinical guideline grades it highly, or several good trials agree. **Moderate** means at least one well-designed trial supports it. **Early** means the research is small or just starting: worth trying, and the label may change as more comes out. A popular rule that a trial tested and did not back is marked **Not supported**.',
         'Walkito has no sponsors, no affiliate links and no paid placement. Nothing is on a page because someone paid for it. We recheck a page when new research on its topic comes out. Every guide follows five rules:',
@@ -70,7 +70,7 @@ export const ABOUT_EN: About = {
       h2: 'Has a clinician reviewed Walkito’s guides?',
       id: 'clinician',
       paragraphs: [
-        'No licensed clinician has reviewed Walkito’s guides yet. Walkito Research writes them from the published research cited on each page.',
+        'No licensed clinician has reviewed Walkito’s guides yet. Rahim and Rahman write them from the published research cited on each page.',
         'When a clinician does review them, this page will list their name, their credentials and what they checked. Until then, no page on this site claims a medical reviewer.',
       ],
     },

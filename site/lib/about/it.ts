@@ -34,7 +34,7 @@ export const ABOUT_IT: About = {
       h2: 'Come facciamo ricerca',
       id: 'how-we-research',
       paragraphs: [
-        'Le guide di questo sito le scrive Walkito Research: [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/), [esercizi per il piede piatto](/it/esercizi-piede-piatto/), [dolore al tallone nella corsa](/heel-pain-runners/) (in inglese) e [la pagina delle evidenze](/science/) (in inglese). Le costruiamo a partire da linee guida di pratica clinica, studi randomizzati e revisioni sistematiche. Non usiamo come fonte articoli di blog, forum o riassunti di altri siti. Quando un riassunto cita uno studio, andiamo allo studio.',
+        'Le guide di questo sito le scrivono Rahim Hudaykylyyev e Rahman Bazarov, i due cofondatori di Walkito: [esercizi per la fascite plantare](/it/esercizi-fascite-plantare/), [esercizi per il piede piatto](/it/esercizi-piede-piatto/), [dolore al tallone nella corsa](/heel-pain-runners/) (in inglese) e [la pagina delle evidenze](/science/) (in inglese). Le costruiamo a partire da linee guida di pratica clinica, studi randomizzati e revisioni sistematiche. Non usiamo come fonte articoli di blog, forum o riassunti di altri siti. Quando un riassunto cita uno studio, andiamo allo studio.',
         'Leggiamo l’articolo completo, non solo l’abstract, prima che un suo numero finisca su una pagina. Ogni dose, grado e cifra rimanda allo studio da cui viene, così puoi aprirlo e controllare.',
         'Esercizi e affermazioni hanno una di tre etichette di evidenza. **Solida** vuol dire che una linea guida clinica gli dà un grado alto, o che diversi buoni studi sono d’accordo. **Moderata** vuol dire che almeno uno studio ben fatto lo sostiene. **Preliminare** vuol dire che la ricerca è piccola o appena iniziata: vale la pena provare, e l’etichetta può cambiare quando escono nuovi studi. Una regola popolare che uno studio ha testato senza trovarle conferma è segnata **Non supportato**.',
         'Walkito non ha sponsor, link di affiliazione o contenuti a pagamento. Niente è su una pagina perché qualcuno ha pagato. Ricontrolliamo una pagina quando esce nuova ricerca sul suo argomento. Ogni guida segue cinque regole:',
@@ -72,7 +72,7 @@ export const ABOUT_IT: About = {
       h2: 'Un professionista sanitario ha rivisto le guide di Walkito?',
       id: 'clinician',
       paragraphs: [
-        'Nessun professionista sanitario abilitato ha ancora rivisto le guide di Walkito. Le scrive Walkito Research a partire dalla ricerca pubblicata citata in ogni pagina.',
+        'Nessun professionista sanitario abilitato ha ancora rivisto le guide di Walkito. Le scrivono Rahim e Rahman a partire dalla ricerca pubblicata citata in ogni pagina.',
         'Quando un professionista le rivedrà, questa pagina riporterà il suo nome, le sue qualifiche e cosa ha controllato. Fino ad allora, nessuna pagina di questo sito dichiara una revisione medica.',
       ],
     },

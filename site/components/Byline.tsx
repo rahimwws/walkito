@@ -3,10 +3,10 @@ import { ArrowRightIcon } from '@phosphor-icons/react/dist/ssr/ArrowRight';
 import { CITE } from '@/lib/citations';
 import { TRANSLATED, type Lang } from '@/lib/i18n';
 import { reviewFor } from '@/lib/reviewer';
-import { AUTHOR_NAME, formatDate, howWeResearchHref } from '@/lib/schema';
+import { AUTHOR_NAMES, authorHref, formatDate, howWeResearchHref } from '@/lib/schema';
 
 /**
- * "Walkito Research · Based on <main source> and <N> published studies · How
+ * "Rahim Hudaykylyyev & Rahman Bazarov · Based on <main source> and <N> published studies · How
  * we research →", near the top of every article.
  *
  * The credibility comes from the sources, not from a name: a stranger does not
@@ -112,10 +112,10 @@ export function Byline({
   return (
     <>
     <p className="byline">
-      <span className="byline-chip byline-author">
+      <a className="byline-chip byline-author" href={authorHref(lang)}>
         <img src="/icon-96.webp" alt="" width={20} height={20} />
-        <strong>{AUTHOR_NAME}</strong>
-      </span>
+        <strong>{AUTHOR_NAMES}</strong>
+      </a>
       {line && (
         <>
           <span className="byline-sep"> · </span>

@@ -21,7 +21,7 @@
  * stops the build. Silently shipping any of those is the staleness this script
  * exists to prevent.
  */
-import { existsSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import * as nodeModule from 'node:module';
 import { dirname, join, resolve as resolvePath } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -69,12 +69,27 @@ async function load(path) {
 }
 
 const { SITE_URL, SITE_NAME, PROGRAM, PAGE_UPDATED, SUPPORT_EMAIL } = await load('lib/site.ts');
-const { TRANSLATED, EN_ONLY, ES_ARTICLES, RU_ARTICLES } = await load('lib/i18n.ts');
-const { GUIDES, ARTICLES_EN, ARTICLES_ES, ARTICLES_RU } = await load('lib/guides/index.ts');
+const { TRANSLATED, CUSTOM_PAGES, EN_ONLY, ES_ARTICLES, RU_ARTICLES, NEW_ARTICLE_PATHS, NEW_LANGS } = await load('lib/i18n.ts');
+const { GUIDES, ARTICLES_EN, ARTICLES_ES, ARTICLES_RU, ARTICLES_NEW } = await load('lib/guides/index.ts');
+const { AUTHORS, HOW_WE_RESEARCH_ID, FOUNDERS_ID } = await load('lib/schema.ts');
 const ARTICLES = Object.values(ARTICLES_EN);
-/** A guide's path, translated or English-only. */
-const pathOf = (g) =>
-  TRANSLATED[g.page] ? TRANSLATED[g.page][g.lang] : g.lang === 'es' ? ES_ARTICLES[g.page] : g.lang === 'ru' ? RU_ARTICLES[g.page] : EN_ONLY[g.page];
+/** A guide's path, translated or English-only, in any of the seven languages. */
+const pathOf = (g) => {
+  if (TRANSLATED[g.page]) return TRANSLATED[g.page][g.lang];
+  if (g.lang === 'es') return ES_ARTICLES[g.page];
+  if (g.lang === 'ru') return RU_ARTICLES[g.page];
+  if (NEW_LANGS.includes(g.lang)) return NEW_ARTICLE_PATHS[g.lang][g.page];
+  return EN_ONLY[g.page];
+};
+/** Every guide written in a language other than English: both main guides,
+ * then that language's articles. */
+const ARTICLES_IN = {
+  ru: Object.values(ARTICLES_RU).filter(Boolean),
+  es: Object.values(ARTICLES_ES).filter(Boolean),
+  ...Object.fromEntries(NEW_LANGS.map((l) => [l, Object.values(ARTICLES_NEW[l] ?? {}).filter(Boolean)])),
+};
+const OTHER_LANGS = ['ru', 'es', ...NEW_LANGS];
+const guidesIn = (lang) => [GUIDES.heelPain[lang], GUIDES.flatFeet[lang], ...ARTICLES_IN[lang]];
 const { ABOUT } = await load('lib/about/index.ts');
 const { FAQ } = await load('lib/faq.ts');
 const { CITATIONS } = await load('lib/citations.ts');
@@ -97,7 +112,17 @@ const list = (items) => items.map((item) => `- ${inline(item)}`).join('\n');
 const isPlaceholder = (page) =>
   !page || /^\s*TODO\s*$/i.test(page.title ?? '') || /^\s*TODO\s*$/i.test(page.lede ?? '');
 
-const LANG_LABEL = { en: 'English', ru: 'Russian (Русский)', es: 'Spanish (Español)' };
+const LANG_LABEL = {
+  en: 'English',
+  ru: 'Russian (Русский)',
+  es: 'Spanish (Español)',
+  pt: 'Portuguese, Brazil (Português)',
+  fr: 'French (Français)',
+  it: 'Italian (Italiano)',
+  de: 'German (Deutsch)',
+};
+/** The home page's own name in its language. */
+const HOME_LABEL = { ru: 'Главная', es: 'Inicio', pt: 'Início', fr: 'Accueil', it: 'Home', de: 'Startseite' };
 
 const { archHoldSeconds, calfRaises, balanceSeconds, gapPercent } = PROGRAM.goals;
 const minutes = PROGRAM.sessionMinutes;
@@ -115,10 +140,7 @@ const newest = [
 
 // ─── Checks on the sources ──────────────────────────────────────────────────
 
-const guides = [
-  ...Object.values(GUIDES).flatMap((byLang) => ['en', 'ru', 'es'].map((lang) => byLang[lang])),
-  ...ARTICLES,
-];
+const guides = [GUIDES.heelPain.en, GUIDES.flatFeet.en, ...ARTICLES, ...OTHER_LANGS.flatMap(guidesIn)];
 for (const g of guides) {
   if (isPlaceholder(g) || !g.lede || !g.sections?.length) {
     throw new Error(`llms: guide ${g?.page}/${g?.lang} has no text — refusing to write a short file`);
@@ -153,7 +175,7 @@ const KEY_FACTS = [
   'Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.',
   'Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal\'s chain moves up one level at a time.',
   `Tests: ${PROGRAM.retestTests} physical measurements (calf raises to failure, arch hold, single-leg balance) in about ${PROGRAM.retestMinutes} minutes, every ${PROGRAM.testEveryDays} days until the first goal is reached, then every ${PROGRAM.testEveryDaysAfterGoal} days.`,
-  'Available on iPhone now, on the App Store (https://apps.apple.com/app/id6813076846); Android is planned. In English, Russian and Spanish.',
+  'Available on iPhone now, on the App Store (https://apps.apple.com/app/id6813076846); Android is planned. The app is in English, Russian and Spanish; this site is in seven languages (English, Russian, Spanish, Portuguese, French, Italian, German).',
   `Contact: ${SUPPORT_EMAIL}`,
 ];
 
@@ -164,24 +186,34 @@ const FINDINGS = [
   'The 2023 JOSPT heel pain guideline, written for physical therapists, grades among its recommendations: manual therapy A, plantar fascia and calf stretching A, taping alongside other physical therapy A, night splints A, and resistance training B. It recommends against orthotics as a stand-alone treatment (grade B; alongside other treatment they may be used, grade C) and against adding therapeutic ultrasound to stretching (grade A). Its education advice (grade E, expert opinion) is to modify weight-bearing load.',
 ];
 
+/** Who writes the site: the two co-founders, by name (lib/schema.ts). */
+const WHO = [
+  `The guides on this site are written by ${AUTHORS.map((a) => `${a.name} (${a.sameAs.join(', ')})`).join(' and ')}, the two co-founders of Walkito. About them: ${url(`${TRANSLATED.about.en}#${FOUNDERS_ID}`)}`,
+  'Neither is a clinician. Every exercise dose comes from the app\'s exercise catalogue and every claim from a published study cited on the page.',
+  `No licensed clinician has reviewed the guides yet; when one does, the reviewer, credentials and the pages reviewed will be named on the About page. How the guides are researched: ${url(`${TRANSLATED.about.en}#${HOW_WE_RESEARCH_ID}`)}`,
+];
+
 // ─── llms.txt ───────────────────────────────────────────────────────────────
 
 const guideLine = (g) => `- [${g.h1}](${url(pathOf(g))}): ${plain(g.description)}`;
 
 const otherLanguage = (lang) => {
-  const heel = GUIDES.heelPain[lang];
-  const flat = GUIDES.flatFeet[lang];
   const about = ABOUT[lang];
-  const aboutLabel = isPlaceholder(about) ? (lang === 'ru' ? 'О проекте' : 'Sobre Walkito') : about.h1;
-  const home = lang === 'ru' ? 'Главная' : 'Inicio';
+  const full = ['ru', 'es'].includes(lang);
   return [
     `### ${LANG_LABEL[lang]}`,
-    `- [${home}](${url(TRANSLATED.home[lang])})`,
-    guideLine(heel),
-    guideLine(flat),
-    ...(lang === 'es' ? Object.values(ARTICLES_ES).map(guideLine) : []),
-    ...(lang === 'ru' ? Object.values(ARTICLES_RU).map(guideLine) : []),
-    `- [${aboutLabel}](${url(TRANSLATED.about[lang])})`,
+    `- [${HOME_LABEL[lang]}](${url(TRANSLATED.home[lang])})`,
+    ...(full
+      ? [
+          `- [How the plan works](${url(CUSTOM_PAGES.program[lang])})`,
+          `- [Evidence](${url(CUSTOM_PAGES.science[lang])})`,
+          `- [Questions](${url(CUSTOM_PAGES.faq[lang])})`,
+        ]
+      : []),
+    ...guidesIn(lang).map(guideLine),
+    `- [${isPlaceholder(about) ? 'About Walkito' : about.h1}](${url(TRANSLATED.about[lang])})`,
+    `- [Support](${url(TRANSLATED.support[lang])}) · [Privacy](${url(TRANSLATED.privacy[lang])}) · [Terms of use](${url(TRANSLATED.terms[lang])})`,
+    `- Full text in ${LANG_LABEL[lang].split(' (')[0]}: ${url(`/${lang}/llms-full.txt`)}`,
   ].join('\n');
 };
 
@@ -192,6 +224,9 @@ ${SUMMARY}
 ${NOTICE}
 
 Last updated: ${newest}
+
+## Who writes this
+${list(WHO)}
 
 ## Guides
 ${guideLine(GUIDES.heelPain.en)}
@@ -220,12 +255,12 @@ ${ARTICLES.map(guideLine).join('\n')}
   cancellation, health and safety, and what the app does not promise
 
 ## Other languages
-The home page, both guides and the About page are written in Russian and
-Spanish as well. The plan, evidence, FAQ and legal pages are English only.
+The site is in seven languages. Russian and Spanish have the plan, the
+evidence and the questions pages as well; every language has the home page,
+both main guides, its translated articles, the About page and the support,
+privacy and terms pages. Each language has its own full-text file.
 
-${otherLanguage('ru')}
-
-${otherLanguage('es')}
+${OTHER_LANGS.map(otherLanguage).join('\n\n')}
 
 ## Key facts
 ${list(KEY_FACTS)}
@@ -234,8 +269,9 @@ ${list(KEY_FACTS)}
 ${list(FINDINGS)}
 
 ## Full text
-The text of every guide in all three languages, the plan, the evidence and
-the FAQ is at ${url('/llms-full.txt')}
+The English text of every guide, the plan, the evidence, the About page and
+the FAQ is at ${url('/llms-full.txt')}. The other languages:
+${OTHER_LANGS.map((l) => `- ${LANG_LABEL[l]}: ${url(`/${l}/llms-full.txt`)}`).join('\n')}
 
 ## Not published
 There is no aggregate user-outcome data on this site. It does not exist
@@ -293,14 +329,7 @@ function aboutText(a) {
   return out.join('\n');
 }
 
-const ARTICLES_RU_ALL = Object.values(ARTICLES_RU).filter(Boolean);
-const guideOrder = [
-  GUIDES.heelPain.en,
-  GUIDES.flatFeet.en,
-  ...ARTICLES,
-  ...['ru', 'es'].flatMap((lang) => [GUIDES.heelPain[lang], GUIDES.flatFeet[lang]]),
-  ...ARTICLES_RU_ALL,
-];
+const guideOrder = [GUIDES.heelPain.en, GUIDES.flatFeet.en, ...ARTICLES];
 
 const full = `# ${SITE_NAME}: full text
 
@@ -310,6 +339,10 @@ Source: ${SITE_URL}
 Last updated: ${newest}
 
 ${NOTICE}
+
+## Who writes this
+
+${list(WHO)}
 
 ## How the plan works
 
@@ -328,11 +361,37 @@ ${aboutReady ? `\n${aboutText(aboutEn)}\n` : ''}
 
 ${FAQ.map((e) => `### ${e.q}\n\n${inline(e.a)}`).join('\n\n')}
 
+## Other languages
+
+${OTHER_LANGS.map((l) => `- ${LANG_LABEL[l]}: ${url(`/${l}/llms-full.txt`)}`).join('\n')}
+
 ## Not published
 
 There is no aggregate user-outcome data on this site. It does not exist
 rather than being withheld.
 `;
+
+/** One language's full text: its guides and its About page, in its words. */
+const fullIn = (lang) => {
+  const about = ABOUT[lang];
+  return `# ${SITE_NAME}: full text, ${LANG_LABEL[lang]}
+
+${SUMMARY}
+
+Source: ${url(TRANSLATED.home[lang])}
+Last updated: ${newest}
+The English full text, with the plan, the evidence and the FAQ: ${url('/llms-full.txt')}
+
+${NOTICE}
+
+## Who writes this
+
+${list(WHO)}
+
+${guidesIn(lang).map(guideText).join('\n\n')}
+${!isPlaceholder(about) && about.sections?.length ? `\n${aboutText(about)}\n` : ''}`;
+};
+const FULL_BY_LANG = Object.fromEntries(OTHER_LANGS.map((l) => [l, fullIn(l)]));
 
 // ─── Guards: no holes, and no plan length, anywhere ─────────────────────────
 
@@ -341,7 +400,13 @@ rather than being withheld.
  * rather than failing — which is how "a undefined-week plan" would reach an AI
  * engine the day a `PROGRAM` field is renamed.
  */
-for (const [name, text] of [['llms.txt', llms], ['llms-full.txt', full]]) {
+const OUTPUTS = [
+  ['llms.txt', llms],
+  ['llms-full.txt', full],
+  ...OTHER_LANGS.map((l) => [`${l}/llms-full.txt`, FULL_BY_LANG[l]]),
+];
+
+for (const [name, text] of OUTPUTS) {
   const holes = text.split('\n').filter((line) => /\bundefined\b|\bNaN\b|\[object Object\]/.test(line));
   if (holes.length) {
     throw new Error(
@@ -413,7 +478,7 @@ const RETIRED_PRODUCT = new RegExp(
   'i',
 );
 
-for (const [name, text] of [['llms.txt', llms], ['llms-full.txt', full]]) {
+for (const [name, text] of OUTPUTS) {
   const lines = text.split('\n');
   const hits = lines.filter((line) => PLAN_LENGTH.test(line));
   if (hits.length) {
@@ -434,9 +499,12 @@ for (const [name, text] of [['llms.txt', llms], ['llms-full.txt', full]]) {
 // Plain text for machines: the non-breaking spaces that hold Russian and
 // Spanish lines together on a page (scripts/typeset.mjs) are ordinary spaces here.
 const spaces = (text) => text.replaceAll('\u00a0', ' ');
-writeFileSync(join(ROOT, 'public/llms.txt'), spaces(llms));
-writeFileSync(join(ROOT, 'public/llms-full.txt'), spaces(full));
+for (const [name, text] of OUTPUTS) {
+  mkdirSync(dirname(join(ROOT, 'public', name)), { recursive: true });
+  writeFileSync(join(ROOT, 'public', name), spaces(text));
+}
 console.log(
   `llms.txt: ${llms.length} chars · llms-full.txt: ${full.length} chars, ` +
-    `${guides.length} guides, ${FAQ.length} FAQ answers${aboutReady ? ', About' : ''}`,
+    `${guides.length} guides in 7 languages, ${FAQ.length} FAQ answers${aboutReady ? ', About' : ''} · ` +
+    OTHER_LANGS.map((l) => `${l}: ${FULL_BY_LANG[l].length}`).join(', '),
 );

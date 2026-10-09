@@ -4,42 +4,41 @@ import { reviewFor } from '@/lib/reviewer';
 import { shareCard } from '@/lib/share';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 
-/** The author every article names: the research side of Walkito, whose rules
- * are the About page section `#how-we-research`. */
-export const AUTHOR_NAME = 'Walkito Research';
 export const HOW_WE_RESEARCH_ID = 'how-we-research';
 export function howWeResearchHref(lang: Lang): string {
   return `${TRANSLATED.about[lang]}#${HOW_WE_RESEARCH_ID}`;
 }
 
 /**
- * Who stands behind the pages, as structured data.
+ * Who writes the guides: the two co-founders, by name. Decided by Rahim on
+ * 2026-10-09, replacing the "Walkito Research" byline of 2026-10-07. Neither
+ * is a clinician, and the pages say so; a clinician reviewer goes in
+ * `lib/reviewer.ts` as `reviewedBy` the day there is a real one, not before.
  *
- * The organisation, with its About page as the place that says who writes the
- * content, how it is checked and what the app does not do. A named medical
- * reviewer goes here as `reviewedBy` the day there is a real one — and not a
- * day before: a reviewer in schema who never reviewed the page is a claim a
- * health site cannot afford to have caught.
+ * The same names and profiles as the Organization's `founder` in
+ * components/RootDocument.tsx. Their bios are the About page's founders
+ * section (`#founders`), which is where each byline links.
  */
-/**
- * The co-founder profile, kept for the About page's founders section. The
- * guides themselves are signed "Walkito Research" (decided with Rahman,
- * 2026-10-07): the trust comes from the cited sources and the How-we-research
- * rules, and from a clinician reviewer once there is one (`lib/reviewer.ts`).
- */
-export const AUTHOR = {
-  name: 'Rahim Hudaykylyyev',
-  role: {
-    en: 'co-founder of Walkito',
-    ru: 'сооснователь Walkito',
-    es: 'cofundador de Walkito',
-    pt: 'cofundador do Walkito',
-    fr: 'cofondateur de Walkito',
-    it: 'cofondatore di Walkito',
-    de: 'Mitgründer von Walkito',
+export const AUTHORS = [
+  {
+    name: 'Rahim Hudaykylyyev',
+    sameAs: ['https://www.linkedin.com/in/rhdklv/', 'https://x.com/rahimwws', 'https://github.com/rahimwws'],
   },
-  sameAs: ['https://www.linkedin.com/in/rhdklv/', 'https://x.com/rahimwws', 'https://github.com/rahimwws'],
-} as const;
+  { name: 'Rahman Bazarov', sameAs: ['https://www.linkedin.com/in/rahman-bazarov/'] },
+] as const;
+
+export const AUTHOR_ROLE: Record<Lang, string> = {
+  en: 'Co-founder of Walkito',
+  ru: 'Сооснователь Walkito',
+  es: 'Cofundador de Walkito',
+  pt: 'Cofundador do Walkito',
+  fr: 'Cofondateur de Walkito',
+  it: 'Cofondatore di Walkito',
+  de: 'Mitgründer von Walkito',
+};
+
+/** Both names for a byline: "Rahim Hudaykylyyev & Rahman Bazarov". */
+export const AUTHOR_NAMES = AUTHORS.map((a) => a.name).join(' & ');
 
 export const FOUNDERS_ID = 'founders';
 export function authorHref(lang: Lang): string {
@@ -47,12 +46,14 @@ export function authorHref(lang: Lang): string {
 }
 
 export function authorFor(lang: Lang) {
-  return {
-    '@type': 'Organization',
-    name: AUTHOR_NAME,
-    url: `${SITE_URL}${howWeResearchHref(lang)}`,
-    parentOrganization: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-  };
+  return AUTHORS.map((a) => ({
+    '@type': 'Person',
+    name: a.name,
+    jobTitle: AUTHOR_ROLE[lang],
+    url: `${SITE_URL}${authorHref(lang)}`,
+    sameAs: a.sameAs,
+    worksFor: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+  }));
 }
 
 /**
