@@ -26,6 +26,8 @@ config.resolver.blockList = [
   new RegExp(`^${root}/site/node_modules/.*`),
   new RegExp(`^${root}/site/\\.next/.*`),
   new RegExp(`^${root}/assets-src/.*`),
+  // The AI assistant server (ai-assistant/): Node-only, its own node_modules.
+  new RegExp(`^${root}/ai-assistant/.*`),
 ];
 
 // RevenueCat's browser SDK, kept out of the phone bundles.

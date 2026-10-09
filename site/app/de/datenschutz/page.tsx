@@ -33,7 +33,7 @@ export default function DatenschutzDe() {
       <Prose className="shell prose">
         <h1>Datenschutz</h1>
 
-        <p className="updated">Zuletzt aktualisiert: 8. Oktober 2026</p>
+        <p className="updated">Zuletzt aktualisiert: 9. Oktober 2026</p>
         <p className="updated">
           Dies ist eine Übersetzung. Wenn sie von{' '}
           <a href="/privacy/">der englischen Fassung</a> abweicht, gilt die
@@ -445,6 +445,17 @@ export default function DatenschutzDe() {
           <b>Keine Cookies, keine Tracker.</b> Die Website setzt keine Cookies
           und lädt kein Analyse- oder Tracking-Skript.
         </p>
+
+        <h2 id="ai-assistants">KI-Assistenten (ChatGPT und Claude)</h2>
+        <p>
+          Walkito lässt sich in ChatGPT und Claude nutzen. Wenn du dort fragst, kann der Assistent eines unserer Werkzeuge aufrufen und unserem Server die gewählten Einstellungen schicken: zum Beispiel die schmerzende Stelle, Minuten pro Tag, Tage pro Woche, Ausrüstung und Seite und, falls du sie genannt hast, die heutigen Schmerzen oder ein Testergebnis, die bestimmen, was angezeigt wird. Unser Server stellt daraus die Übungen und den Plan zusammen und speichert nichts.
+        </p>
+        <ul>
+          <li>Nachrichten, Namen, E-Mail-Adressen, Schmerzwerte und IP-Adressen werden nicht gespeichert.</li>
+          <li>Von jedem Aufruf wird nur der Name des Werkzeugs, der Assistent (ChatGPT oder Claude), die Planeinstellungen (Bereich, Minuten, Tage, Ausrüstung, Seite), die Dauer und ob er funktioniert hat protokolliert.</li>
+          <li>Ein Plancode (WK-…) enthält nur die Einstellungen des Plans und welcher Assistent ihn erstellt hat, nichts über dich.</li>
+          <li>Was du in ChatGPT oder Claude schreibst, verarbeiten OpenAI oder Anthropic nach ihren eigenen Datenschutzrichtlinien.</li>
+        </ul>
 
         <h2>Keine medizinische Beratung</h2>
         <p>

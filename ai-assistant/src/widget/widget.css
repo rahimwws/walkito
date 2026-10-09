@@ -1,0 +1,413 @@
+/*
+ * The widget's look, from the app: exercise cards, the Plan screen's week
+ * circles, glass chips, the primary button. Every colour, radius and font is a
+ * token from tokens.css (generated from the app's theme by scripts/build.ts).
+ * Short and scannable on purpose: exercises first, as a strip of cards.
+ */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--w-bg);
+  color: var(--w-ink);
+  font-family: var(--w-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  display: grid;
+  gap: 14px;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px 0 14px;
+}
+
+#root > * {
+  margin-inline: 16px;
+}
+
+/* The strip runs to the edges so a card peeks in from the right. */
+#root > .strip,
+#root > .week-wrap {
+  margin-inline: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+}
+
+.eyebrow {
+  margin-bottom: 6px;
+  color: var(--w-label);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.muted,
+.cue {
+  color: var(--w-caption);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* ---- the strip of exercise cards ---- */
+
+.strip {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 0 16px 4px;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 16px;
+  scrollbar-width: none;
+}
+
+.strip::-webkit-scrollbar {
+  display: none;
+}
+
+.tile {
+  flex: 0 0 216px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  border-radius: var(--w-radius-panel);
+  background: var(--w-card);
+  scroll-snap-align: start;
+}
+
+.clip {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: #fff;
+  object-fit: cover;
+}
+
+.tile-body {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: 8px;
+  padding: 12px 14px 14px;
+}
+
+.tile-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.num {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--w-violet);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.tile .cue {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* No clip of a person yet: the instruction takes the video's place. */
+.tile-cue-big {
+  display: flex;
+  align-items: flex-end;
+  aspect-ratio: 3 / 4;
+  padding: 16px;
+  background: var(--w-icon-tile);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* ---- one exercise, large ---- */
+
+.single {
+  overflow: hidden;
+  border-radius: var(--w-radius-panel);
+  background: var(--w-card);
+}
+
+.clip-big {
+  aspect-ratio: 4 / 5;
+  max-height: 420px;
+}
+
+.single-body {
+  display: grid;
+  gap: 10px;
+  padding: 14px 16px 16px;
+}
+
+.single-body h3 {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+/* The app's glass chip. */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--w-glass);
+  box-shadow: inset 0 0 0 1px var(--w-divider);
+  color: var(--w-ink);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.chip-button {
+  min-height: 44px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+/* ---- week ---- */
+
+.week-wrap {
+  display: grid;
+  gap: 12px;
+}
+
+.week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin: 0 16px;
+  padding: 8px;
+  border-radius: var(--w-radius-panel);
+  background: var(--w-card);
+}
+
+.day {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  min-height: 52px;
+  padding: 6px 0;
+  border: 0;
+  border-radius: var(--w-radius-item);
+  background: transparent;
+  color: var(--w-caption);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.day[aria-selected='true'] {
+  background: var(--w-icon-tile);
+  color: var(--w-ink);
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--w-track);
+}
+
+.day-strength .dot {
+  background: var(--w-violet);
+}
+
+.day-mobility .dot {
+  background: var(--w-teal);
+}
+
+.day-balance .dot {
+  background: var(--w-blue);
+}
+
+.day-recovery .dot {
+  background: var(--w-teal-track);
+  box-shadow: inset 0 0 0 2px var(--w-teal);
+}
+
+.day-test .dot {
+  background: var(--w-amber);
+}
+
+.day-below {
+  display: grid;
+  gap: 8px;
+}
+
+.day-below > .eyebrow,
+.day-below > .muted {
+  margin: 0 16px;
+}
+
+/* ---- notes, checks, tips ---- */
+
+.note,
+.question,
+.result {
+  padding: 12px 14px;
+  border-radius: var(--w-radius-item);
+  background: var(--w-card);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.note {
+  background: var(--w-focus-bg);
+  color: var(--w-focus);
+  font-weight: 600;
+}
+
+.result {
+  font-weight: 700;
+}
+
+.warning {
+  padding: 12px 14px;
+  border-radius: var(--w-radius-item);
+  background: var(--w-focus-bg);
+  color: var(--w-focus);
+  font-weight: 700;
+}
+
+.steps,
+.flag-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 14px 14px 14px 34px;
+  border-radius: var(--w-radius-panel);
+  background: var(--w-card);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.flag-list .selected {
+  color: var(--w-focus);
+  font-weight: 700;
+}
+
+.tips {
+  display: grid;
+  gap: 8px;
+}
+
+.tip {
+  display: grid;
+  gap: 4px;
+  padding: 14px;
+  border-radius: var(--w-radius-panel);
+  background: var(--w-card);
+}
+
+.tip p {
+  color: var(--w-caption);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* ---- call to action ---- */
+
+.cta {
+  display: grid;
+  gap: 8px;
+}
+
+.cta-line {
+  color: var(--w-caption);
+  font-size: 14px;
+  text-align: center;
+}
+
+/* The app's primary button. */
+.primary {
+  min-height: 52px;
+  border: 0;
+  border-radius: var(--w-radius-button);
+  background: var(--w-button);
+  color: var(--w-button-label);
+  font: inherit;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.code {
+  justify-self: center;
+  min-height: 32px;
+  border: 0;
+  background: transparent;
+  color: var(--w-unit);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+footer {
+  color: var(--w-unit);
+  font-size: 11px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--w-violet);
+  outline-offset: 2px;
+}
+
+@supports (corner-shape: superellipse(1.5)) {
+  .tile,
+  .tile-cue-big,
+  .single,
+  .week,
+  .day,
+  .note,
+  .question,
+  .result,
+  .warning,
+  .steps,
+  .flag-list,
+  .tip,
+  .primary {
+    corner-shape: superellipse(1.5);
+  }
+}
