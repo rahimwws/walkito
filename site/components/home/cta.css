@@ -375,12 +375,12 @@
   color: rgba(255, 255, 255, 0.56);
 }
 
-@supports (corner-shape: superellipse(1.45)) {
+@supports (corner-shape: superellipse(1.5)) {
   .hcta .hcta-card,
   .hcta .hcta-store,
   .hcta .hcta-social,
   .hcta .hcta-face {
-    corner-shape: superellipse(1.45);
+    corner-shape: superellipse(1.5);
   }
 }
 
