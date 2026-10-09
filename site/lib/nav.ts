@@ -110,6 +110,21 @@ export const NAV_LABEL_ES: Partial<Record<GuideKey, string>> = {
   sesamoiditis: 'Sesamoiditis',
   bunions: 'Ejercicios para juanetes',
   hammerToe: 'Dedo en martillo',
+  pfTaping: 'Vendaje',
+  flatFeetKneePain: 'Pie plano y dolor de rodilla',
+  massageBall: 'Pelota de masaje y botella congelada',
+  toeStrengthening: 'Fortalecer los dedos de los pies',
+  insolesVsExercises: 'Plantillas o ejercicios',
+  nightSplints: 'Férula nocturna',
+  ankleStrengthening: 'Fortalecer el tobillo',
+  flatFeetAge: 'Pie plano con la edad',
+  iceHeat: 'Hielo o calor',
+  ankleMobility: 'Movilidad de tobillo',
+  footStrengthening: 'Fortalecer los pies',
+  barefoot: 'Zapatos barefoot',
+  flatFeetBackPain: 'Pie plano y dolor de espalda',
+  flatFeetKids: 'Pie plano en niños',
+  tightCalves: 'Pantorrillas tensas',
 };
 
 /** Russian footer labels, for the articles that exist in Russian. */
@@ -160,6 +175,21 @@ export const NAV_LABEL_RU: Partial<Record<GuideKey, string>> = {
   sesamoiditis: 'Сезамоидит',
   bunions: 'Косточка на ноге',
   hammerToe: 'Молоткообразные пальцы',
+  pfTaping: 'Тейпирование',
+  flatFeetKneePain: 'Плоскостопие и боль в колене',
+  massageBall: 'Массажный мяч и замороженная бутылка',
+  toeStrengthening: 'Укрепление пальцев ног',
+  insolesVsExercises: 'Стельки или упражнения',
+  nightSplints: 'Ночные шины',
+  ankleStrengthening: 'Укрепление голеностопа',
+  flatFeetAge: 'Плоскостопие с возрастом',
+  iceHeat: 'Лёд или тепло',
+  ankleMobility: 'Подвижность голеностопа',
+  footStrengthening: 'Укрепление стопы',
+  barefoot: 'Босоногая обувь',
+  flatFeetBackPain: 'Плоскостопие и боль в спине',
+  flatFeetKids: 'Плоскостопие у детей',
+  tightCalves: 'Забитые икры',
 };
 
 export const NAV_GROUPS: Record<NavGroup, readonly GuideKey[]> = {
