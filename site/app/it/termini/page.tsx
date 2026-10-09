@@ -49,7 +49,7 @@ export default function TerminiIt() {
       <Prose className="shell prose">
         <h1>Termini di utilizzo</h1>
 
-        <p className="updated">Ultimo aggiornamento: 1 ottobre 2026</p>
+        <p className="updated">Ultimo aggiornamento: 9 ottobre 2026</p>
         <p className="updated">
           Questa è una traduzione. Se differisce dalla{' '}
           <a href="/terms/">versione in inglese</a>, vale la versione in
@@ -112,7 +112,8 @@ export default function TerminiIt() {
           sessioni sono salvati sul tuo telefono e copiati nel tuo account.
           Accedi con lo stesso account su un telefono nuovo o dopo una
           reinstallazione e tornano. Gli acquisti tornano con Restore Purchases
-          (Ripristina acquisti) sullo stesso ID Apple.
+          (Ripristina acquisti) sullo stesso ID Apple su iPhone, o con lo stesso
+          account Google in Google Play su Android.
         </p>
 
         <h2>La tua licenza</h2>
@@ -132,8 +133,9 @@ export default function TerminiIt() {
 
         <h2>Pagamenti</h2>
         <p>
-          Walkito si paga tramite l’App Store. Apple riceve il pagamento,
-          conserva la ricevuta e mostra le opzioni, il prezzo e la durata prima
+          Walkito si paga tramite l’App Store su iPhone, gestito da Apple, o
+          Google Play su Android, gestito da Google LLC. Lo store riceve il
+          pagamento, conserva la ricevuta e mostra le opzioni, il prezzo e la durata prima
           dell’acquisto. Vale quel prezzo, non una cifra indicata altrove. Oggi
           ci sono due abbonamenti, ed entrambi si rinnovano automaticamente:
         </p>
@@ -150,12 +152,18 @@ export default function TerminiIt() {
         <ul>
           <li>
             Un abbonamento si rinnova automaticamente alla fine di ogni periodo, e
-            l’importo viene addebitato sul tuo ID Apple, a meno che tu non
+            l’importo viene addebitato sul tuo ID Apple o sul tuo account Google, a meno che tu non
             disattivi il rinnovo almeno 24 ore prima della fine del periodo.
           </li>
           <li>
-            Gestiscilo o annullalo in <b>Impostazioni → [il tuo nome] →
-            Abbonamenti</b>. Annullare ferma il rinnovo successivo; mantieni
+            Gestiscilo o annullalo su iPhone in{' '}
+            <b>Impostazioni → [il tuo nome] → Abbonamenti</b>, o su Android
+            nell’app Google Play, in{' '}
+            <b>
+              icona del profilo → Pagamenti e abbonamenti → Abbonamenti → Walkito
+              → Annulla abbonamento
+            </b>
+            . Annullare ferma il rinnovo successivo; mantieni
             l’accesso fino alla fine del periodo che hai pagato.
           </li>
           <li>
@@ -165,15 +173,19 @@ export default function TerminiIt() {
           </li>
           <li>
             Eliminare l’app o il tuo account non annulla un abbonamento. Può
-            farlo solo Apple, dalla schermata indicata sopra.
+            farlo solo lo store, Apple o Google, dalle schermate indicate sopra.
           </li>
         </ul>
 
         <h3>Rimborsi</h3>
         <p>
-          I rimborsi sono gestiti solo da Apple. Usa{' '}
+          I rimborsi sono gestiti solo dallo store in cui hai pagato, secondo la
+          sua politica. Per l’App Store, usa{' '}
           <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
-          Non possiamo emettere o stornare un addebito per conto di Apple.
+          Per Google Play, richiedilo dalla tua{' '}
+          <a href="https://play.google.com/store/account/orderhistory">cronologia ordini di Google Play</a>.
+          Non possiamo emettere o stornare un addebito per conto di Apple o di
+          Google.
         </p>
 
         <h2>Inviti</h2>
@@ -221,7 +233,7 @@ export default function TerminiIt() {
           Puoi smettere in qualsiasi momento eliminando il tuo account in Profile
           → Delete account, che rimuove quello che hai registrato dal telefono e
           dal nostro server, e annullando eventuali abbonamenti tramite Apple
-          come indicato sopra. Eliminare solo l’app rimuove soltanto la copia sul
+          o Google come indicato sopra. Eliminare solo l’app rimuove soltanto la copia sul
           telefono. Possiamo sospendere l’accesso se l’app viene usata in un modo
           che questi termini vietano. In pratica significa rivendita o
           manomissione, non qualcosa che potresti fare usandola normalmente.

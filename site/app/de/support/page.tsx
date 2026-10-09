@@ -91,27 +91,37 @@ export default function SupportDe() {
 
         <h2>Käufe</h2>
         <p>
-          Walkito bezahlst du mit einem Abo über den App Store, jährlich oder
-          wöchentlich. Beide verlängern sich automatisch, und der App Store
-          zeigt dir den Preis in deiner Währung, bevor du kaufst.
+          Walkito bezahlst du mit einem Abo, jährlich oder wöchentlich, über den
+          App Store auf dem iPhone oder Google Play auf Android. Beide
+          verlängern sich automatisch, und der Store zeigt dir den Preis in
+          deiner Währung, bevor du kaufst.
         </p>
         <ul>
           <li>
-            <b>Verwalten oder kündigen</b> kannst du dein Abo unter Einstellungen
-            → [dein Name] → Abonnements. Schalte die Verlängerung mindestens 24
-            Stunden vor Ende des Zeitraums aus, dann wird dir nichts mehr
-            berechnet. Du behältst den Zugang bis zum Ende des Zeitraums, für den
-            du bezahlt hast.
+            <b>Verwalten oder kündigen</b> kannst du dein Abo auf dem iPhone
+            unter Einstellungen → [dein Name] → Abonnements. Schalte die
+            Verlängerung mindestens 24 Stunden vor Ende des Zeitraums aus, dann
+            wird dir nichts mehr berechnet. Auf Android öffnest du die Google
+            Play App, tippst auf dein Profilbild und dann auf Zahlungen und Abos
+            → Abos → Walkito → Abo kündigen. In beiden Fällen behältst du den
+            Zugang bis zum Ende des Zeitraums, für den du bezahlt hast.
           </li>
           <li>
-            <b>Erstattungen</b> laufen über Apple. Nutze Apples Seite{' '}
-            <a href="https://reportaproblem.apple.com">Problem melden</a>. Wir
-            können keine Erstattungen im Namen von Apple bearbeiten.
+            <b>Erstattungen</b> laufen über den Store, in dem du bezahlt hast.
+            Auf dem iPhone nutzt du Apples Seite{' '}
+            <a href="https://reportaproblem.apple.com">Problem melden</a>. Auf
+            Android beantragst du sie in deinem{' '}
+            <a href="https://play.google.com/store/account/orderhistory">Bestellverlauf bei Google Play</a>.
+            Wir können keine Erstattungen im Namen von Apple oder Google
+            bearbeiten.
           </li>
           <li>
-            <b>Neues Handy?</b> Melde dich mit derselben Apple-ID an und tippe
-            in der App auf „Restore Purchases“. Dein Plan kommt mit deinem Konto
-            zurück.
+            <b>Neues Handy?</b> Auf dem iPhone meldest du dich mit derselben
+            Apple-ID an und tippst in der App auf „Restore Purchases“. Auf
+            Android nutzt du in Google Play dasselbe Google-Konto, und das Abo
+            ist wieder da. Dein Plan kommt mit deinem Konto zurück. Ein auf dem
+            iPhone gekauftes Abo gilt nicht auf Android und umgekehrt, weil Apple
+            und Google getrennt abrechnen.
           </li>
         </ul>
 

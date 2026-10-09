@@ -89,26 +89,36 @@ export default function SupportoIt() {
 
         <h2>Acquisti</h2>
         <p>
-          Walkito si paga con un abbonamento tramite l’App Store, annuale o
-          settimanale. Entrambi si rinnovano automaticamente, e l’App Store ti
-          mostra il prezzo nella tua valuta prima dell’acquisto.
+          Walkito si paga con un abbonamento, annuale o settimanale, tramite
+          l’App Store su iPhone o Google Play su Android. Entrambi si rinnovano
+          automaticamente, e lo store ti mostra il prezzo nella tua valuta prima
+          dell’acquisto.
         </p>
         <ul>
           <li>
-            <b>Gestisci o annulla</b> l’abbonamento in Impostazioni → [il tuo
-            nome] → Abbonamenti. Disattiva il rinnovo almeno 24 ore prima della
-            fine del periodo e non ti verrà addebitato altro. Mantieni l’accesso
-            fino alla fine del periodo che hai pagato.
+            <b>Gestisci o annulla</b> l’abbonamento su iPhone in Impostazioni →
+            [il tuo nome] → Abbonamenti. Disattiva il rinnovo almeno 24 ore
+            prima della fine del periodo e non ti verrà addebitato altro. Su
+            Android, apri l’app Google Play, tocca l’icona del profilo, poi
+            Pagamenti e abbonamenti → Abbonamenti → Walkito → Annulla
+            abbonamento. In entrambi i casi mantieni l’accesso fino alla fine
+            del periodo che hai pagato.
           </li>
           <li>
-            <b>I rimborsi</b> li gestisce Apple. Usa la pagina{' '}
+            <b>I rimborsi</b> li gestisce lo store in cui hai pagato. Su iPhone,
+            usa la pagina{' '}
             <a href="https://reportaproblem.apple.com">Segnala un problema</a> di
-            Apple. Non possiamo gestire rimborsi per conto di Apple.
+            Apple. Su Android, richiedilo dalla tua{' '}
+            <a href="https://play.google.com/store/account/orderhistory">cronologia ordini di Google Play</a>.
+            Non possiamo gestire rimborsi per conto di Apple o di Google.
           </li>
           <li>
-            <b>Telefono nuovo?</b> Accedi con lo stesso ID Apple e tocca Restore
-            Purchases (Ripristina acquisti) nell’app. Il tuo piano torna con il
-            tuo account.
+            <b>Telefono nuovo?</b> Su iPhone, accedi con lo stesso ID Apple e
+            tocca Restore Purchases (Ripristina acquisti) nell’app. Su Android,
+            usa lo stesso account Google in Google Play e l’abbonamento torna.
+            Il tuo piano torna con il tuo account. Un abbonamento acquistato su
+            iPhone non passa ad Android, né il contrario, perché Apple e Google
+            fatturano separatamente.
           </li>
         </ul>
 

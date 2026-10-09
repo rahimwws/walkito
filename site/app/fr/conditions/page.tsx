@@ -49,7 +49,7 @@ export default function ConditionsFr() {
       <Prose className="shell prose">
         <h1>Conditions d’utilisation</h1>
 
-        <p className="updated">Dernière mise à jour : 1er octobre 2026</p>
+        <p className="updated">Dernière mise à jour : 9 octobre 2026</p>
         <p className="updated">
           Ceci est une traduction. Si elle diffère de{' '}
           <a href="/terms/">la version anglaise</a>, c’est la version anglaise
@@ -114,7 +114,8 @@ export default function ConditionsFr() {
           séances sont enregistrés sur votre téléphone et copiés dans votre
           compte. Connectez-vous avec le même compte sur un nouveau téléphone ou
           après une réinstallation et ils reviennent. Les achats reviennent avec
-          Restore Purchases sur le même identifiant Apple.
+          Restore Purchases sur le même identifiant Apple sur iPhone, ou avec le
+          même compte Google dans Google Play sur Android.
         </p>
 
         <h2>Votre licence</h2>
@@ -135,8 +136,9 @@ export default function ConditionsFr() {
 
         <h2>Paiements</h2>
         <p>
-          Walkito se paie via l’App Store. Apple encaisse le paiement, conserve
-          le reçu, et affiche les options, le prix et la durée avant l’achat.
+          Walkito se paie via l’App Store sur iPhone, exploité par Apple, ou via
+          Google Play sur Android, exploité par Google LLC. La boutique encaisse
+          le paiement, conserve le reçu, et affiche les options, le prix et la durée avant l’achat.
           C’est ce prix qui s’applique, et non un chiffre indiqué ailleurs. Il
           existe aujourd’hui deux abonnements, et les deux se renouvellent
           automatiquement :
@@ -154,13 +156,19 @@ export default function ConditionsFr() {
         <ul>
           <li>
             Un abonnement se renouvelle automatiquement à la fin de chaque
-            période, et votre identifiant Apple est débité, sauf si vous
+            période, et votre identifiant Apple ou votre compte Google est débité, sauf si vous
             désactivez le renouvellement au moins 24 heures avant la fin de la
             période.
           </li>
           <li>
-            Gérez-le ou résiliez-le dans <b>Réglages → [votre nom] → Abonnements</b>.
-            La résiliation arrête le prochain renouvellement ; vous gardez
+            Gérez-le ou résiliez-le sur iPhone dans{' '}
+            <b>Réglages → [votre nom] → Abonnements</b>, ou sur Android dans
+            l’application Google Play, sous{' '}
+            <b>
+              icône du profil → Paiements et abonnements → Abonnements → Walkito
+              → Résilier l’abonnement
+            </b>
+            . La résiliation arrête le prochain renouvellement ; vous gardez
             l’accès jusqu’à la fin de la période payée.
           </li>
           <li>
@@ -170,15 +178,20 @@ export default function ConditionsFr() {
           </li>
           <li>
             Supprimer l’application ou votre compte ne résilie pas un
-            abonnement. Seul Apple peut le faire, depuis l’écran ci-dessus.
+            abonnement. Seule la boutique peut le faire, Apple ou Google, depuis les écrans
+            ci-dessus.
           </li>
         </ul>
 
         <h3>Remboursements</h3>
         <p>
-          Les remboursements sont gérés uniquement par Apple. Utilisez{' '}
+          Les remboursements sont gérés uniquement par la boutique où vous avez
+          payé, selon sa propre politique. Pour l’App Store, utilisez{' '}
           <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
-          Nous ne pouvons ni effectuer ni annuler un débit à la place d’Apple.
+          Pour Google Play, faites la demande depuis votre{' '}
+          <a href="https://play.google.com/store/account/orderhistory">historique des commandes Google Play</a>.
+          Nous ne pouvons ni effectuer ni annuler un débit à la place d’Apple ou
+          de Google.
         </p>
 
         <h2>Invitations</h2>
@@ -228,7 +241,7 @@ export default function ConditionsFr() {
           Vous pouvez arrêter à tout moment en supprimant votre compte dans
           Profile → Delete account, ce qui efface ce que vous avez noté du
           téléphone et de notre serveur, et résilier tout abonnement via Apple
-          comme indiqué ci-dessus. Supprimer seulement l’application n’efface
+          ou Google comme indiqué ci-dessus. Supprimer seulement l’application n’efface
           que la copie sur le téléphone. Nous pouvons suspendre l’accès si
           l’application est utilisée d’une façon que ces conditions
           interdisent. En pratique, cela veut dire la revente ou la

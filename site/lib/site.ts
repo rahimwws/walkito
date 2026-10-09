@@ -130,15 +130,11 @@ export function storeHref(campaign: string): string | null {
 }
 
 /**
- * The Google Play listing, null until the Android build is live in production.
- *
- * The Android app (`com.walkito.app`) was submitted to Play review on
- * 30 September 2026 with managed publishing on, so the listing 404s until it
- * is published. The day it is, set this and every app call-out and badge on
- * the site gains a Google Play link next to the App Store one. A link to a
- * listing that 404s would be worse than no link.
+ * The Google Play listing (`com.walkito.app`), live since 9 October 2026. Every
+ * app call-out and badge on the site shows it next to the App Store one, and
+ * an Android phone is sent here instead of to the App Store.
  */
-export const PLAY_STORE_URL: string | null = null;
+export const PLAY_STORE_URL: string | null = 'https://play.google.com/store/apps/details?id=com.walkito.app';
 
 /** The Play link for one placement, tagged so Play Console's acquisition
  * report can tell placements apart (`utm_source=walkito.site`). */

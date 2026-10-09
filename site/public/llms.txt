@@ -1,6 +1,6 @@
 # Walkito
 
-> An exercise plan on iPhone for runners with heel pain (often linked to
+> An exercise plan on iPhone and Android for runners with heel pain (often linked to
 > plantar fasciitis or a heel spur), arch pain or flexible flat feet. It is built
 > one week at a time around a goal that can be measured, adapts each day to
 > the morning's pain, and checks progress with physical tests. It has no fixed
@@ -529,7 +529,7 @@ privacy and terms pages. Each language has its own full-text file.
 - Each morning the day adapts: a high-pain morning, a big step day yesterday or a short night shrinks or softens the session. Pain of 6/10 or more during a session ends it and steps the next two sessions back.
 - Progression: exercises sit on chains (calf, arch, balance, hip, mobility) at levels 1 to 5, and the focus goal's chain moves up one level at a time.
 - Tests: 3 physical measurements (calf raises to failure, arch hold, single-leg balance) in about 4 minutes, every 14 days until the first goal is reached, then every 28 days.
-- Available on iPhone now, on the App Store (https://apps.apple.com/app/id6813076846); Android is planned. The app is in English, Russian and Spanish; this site is in seven languages (English, Russian, Spanish, Portuguese, French, Italian, German).
+- Available on iPhone, on the App Store (https://apps.apple.com/app/id6813076846), and on Android, on Google Play (https://play.google.com/store/apps/details?id=com.walkito.app). The app is in English, Russian and Spanish; this site is in seven languages (English, Russian, Spanish, Portuguese, French, Italian, German).
 - Contact: hello@walkito.site
 
 ## Key findings the plan follows

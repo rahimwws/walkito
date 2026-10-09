@@ -119,7 +119,7 @@ const en = {
     copy: 'Copy code',
     copied: 'Copied',
     howTo: 'In the app, tap “Got a code from ChatGPT or Claude?” on the first screen and enter this code. Your plan starts with these settings.',
-    android: 'Android is coming to Google Play soon.',
+    play: 'Get it on Google Play',
   },
 };
 
@@ -224,7 +224,7 @@ const ru: Copy = {
     copy: 'Скопировать код',
     copied: 'Скопировано',
     howTo: 'В приложении нажмите «Есть код от ChatGPT или Claude?» на первом экране и введите этот код. План начнётся с этими настройками.',
-    android: 'Скоро и в Google Play для Android.',
+    play: 'Скачать в Google Play',
   },
 };
 
@@ -325,7 +325,7 @@ const es: Copy = {
     copy: 'Copiar código',
     copied: 'Copiado',
     howTo: 'En la app, toca «¿Tienes un código de ChatGPT o Claude?» en la primera pantalla e introduce este código. Tu plan empieza con estos ajustes.',
-    android: 'Pronto en Google Play para Android.',
+    play: 'Disponible en Google Play',
   },
 };
 
@@ -426,7 +426,7 @@ const pt: Copy = {
     copy: 'Copiar código',
     copied: 'Copiado',
     howTo: 'No app, toque em "Recebeu um código do ChatGPT ou do Claude?" na primeira tela e digite este código. O seu plano começa com estas configurações.',
-    android: 'Em breve no Google Play para Android.',
+    play: 'Disponível no Google Play',
   },
 };
 
@@ -527,7 +527,7 @@ const fr: Copy = {
     copy: 'Copier le code',
     copied: 'Copié',
     howTo: 'Dans l’app, touche « Tu as un code de ChatGPT ou Claude ? » sur le premier écran et saisis ce code. Ton plan démarre avec ces réglages.',
-    android: 'Bientôt sur Google Play pour Android.',
+    play: 'Disponible sur Google Play',
   },
 };
 
@@ -628,7 +628,7 @@ const it: Copy = {
     copy: 'Copia il codice',
     copied: 'Copiato',
     howTo: 'Nell’app, tocca «Hai un codice da ChatGPT o Claude?» nella prima schermata e inserisci questo codice. Il tuo piano parte con queste impostazioni.',
-    android: 'Presto su Google Play per Android.',
+    play: 'Disponibile su Google Play',
   },
 };
 
@@ -729,7 +729,7 @@ const de: Copy = {
     copy: 'Code kopieren',
     copied: 'Kopiert',
     howTo: 'Tipp in der App auf dem ersten Bildschirm auf „Hast du einen Code von ChatGPT oder Claude?“ und gib diesen Code ein. Dein Plan startet mit diesen Einstellungen.',
-    android: 'Bald auch bei Google Play für Android.',
+    play: 'Jetzt bei Google Play',
   },
 };
 

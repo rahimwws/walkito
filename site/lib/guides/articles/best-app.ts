@@ -5,7 +5,7 @@ export const BEST_APP_EN: Guide = {
   lang: 'en',
   page: 'bestApp',
   published: '2026-10-04',
-  updated: '2026-10-04',
+  updated: '2026-10-09',
   title: 'Best App for Plantar Fasciitis in 2026: Honest Comparison',
   description:
     'Best app for plantar fasciitis in 2026: Exakt Health, Hinge Health, Prehab, PlantarCare, Arch and Walkito compared on price, platforms and fit.',
@@ -95,7 +95,7 @@ export const BEST_APP_EN: Guide = {
           ],
           [
             '[Walkito](https://walkito.site/)',
-            'iOS. $44.99/yr or $7.99/wk',
+            'iOS, Android. $44.99/yr or $7.99/wk',
             'Heel pain, flat feet, standing all day, runners',
             'Morning check-in adjusts every session',
             'Not rated yet (new, Oct 2026)',
@@ -116,7 +116,6 @@ export const BEST_APP_EN: Guide = {
           list: [
             'More injury types covered (15+ versus heel pain, flat feet and shins).',
             'A full return-to-running program.',
-            'Android availability.',
             'EU medical device certification.',
             'An established user base with a 4.8 rating across 125 iOS reviews.',
           ],
@@ -193,7 +192,7 @@ export const BEST_APP_EN: Guide = {
     {
       h2: 'Walkito: what it does and what it does not',
       paragraphs: [
-        'Walkito is an exercise program for heel pain, flat feet and lower-leg pain. It was released on the App Store on October 2, 2026. It is new, has no ratings yet, and is iOS only.',
+        'Walkito is an exercise program for heel pain, flat feet and lower-leg pain. It was released on the App Store on October 2, 2026, and on Google Play later in October 2026. It is new and has no ratings yet.',
         'What it does:',
         {
           list: [
@@ -202,7 +201,7 @@ export const BEST_APP_EN: Guide = {
             'Tests every 14 days measure calf raises, arch hold and single-leg balance, and compare left to right.',
             'Sessions are 3, 5 or 10 minutes.',
             'Exercises follow the 2023 heel pain guideline and the Rathleff 2015 trial.',
-            'It connects to Apple Health for steps, sleep and walking data, which stay on your phone.',
+            'On iPhone it reads steps, sleep and walking data from Apple Health, which stay on your phone. On Android it reads steps, exercise sessions, distance and sleep from Health Connect.',
           ],
         },
         'What it does not:',
@@ -211,7 +210,6 @@ export const BEST_APP_EN: Guide = {
             'It does not diagnose your pain.',
             'It is not a medical device.',
             'It has no clinician on the other end.',
-            'It is not available on Android.',
           ],
         },
         'It covers heel pain, flat feet and shin pain, not the 15+ injury types Exakt covers or the full-body scope of Hinge Health or Prehab.',
@@ -246,7 +244,7 @@ export const BEST_APP_EN: Guide = {
     },
     {
       q: 'Is Exakt Health better than Walkito for plantar fasciitis?',
-      a: 'Exakt Health covers more conditions, including 15+ running injuries and full run training plans. It is on both iOS and Android and is certified as a medical device in the EU. Walkito focuses specifically on heel and foot pain with daily pain-based adaptation and 14-day progress tests. Exakt is the stronger choice for runners who need rehab plus a running plan. Walkito is narrower but adjusts each session to your morning.',
+      a: 'Exakt Health covers more conditions, including 15+ running injuries and full run training plans. It is certified as a medical device in the EU. Walkito focuses specifically on heel and foot pain with daily pain-based adaptation and 14-day progress tests. Exakt is the stronger choice for runners who need rehab plus a running plan. Walkito is narrower but adjusts each session to your morning. Both are on iOS and Android.',
     },
     {
       q: 'Can an app replace seeing a physical therapist for plantar fasciitis?',
@@ -262,7 +260,7 @@ export const BEST_APP_EN: Guide = {
     },
     {
       q: 'Do any of these apps work on Android?',
-      a: 'Exakt Health and Hinge Health are on both iOS and Android. "Plantar Fasciitis Exercises" is also on both, though it shows in-app purchases on each store. Walkito, Prehab, PlantarCare and Arch are currently iOS only. If you use Android, Exakt Health is the most feature-complete option for foot pain.',
+      a: 'Exakt Health, Hinge Health and Walkito are on both iOS and Android. "Plantar Fasciitis Exercises" is also on both, though it shows in-app purchases on each store. Prehab, PlantarCare and Arch are currently iOS only. On Android, Exakt Health covers the most conditions, and Walkito is the narrower option built around heel pain and flat feet.',
     },
     {
       q: 'Do you need an app to do plantar fasciitis exercises?',
@@ -294,7 +292,7 @@ export const BEST_APP_EN: Guide = {
     more: [
       'You pick 3, 5 or 7 days a week and sessions of 3, 5 or 10 minutes. Exercises follow the 2023 clinical guideline for heel pain. The plan has no fixed end date: when you reach a goal, it moves to maintaining and the next goal takes its place. Walkito is an exercise program, not a diagnosis or a substitute for a clinician.',
     ],
-    cta: 'Try Walkito on the App Store.',
+    cta: 'Try Walkito on iPhone or Android.',
   },
   crumb: 'Best app for plantar fasciitis',
   campaign: 'compare-best-app',

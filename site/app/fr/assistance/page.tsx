@@ -92,27 +92,37 @@ export default function AssistanceFr() {
 
         <h2>Achats</h2>
         <p>
-          Walkito se paie par un abonnement via l’App Store, annuel ou
-          hebdomadaire. Les deux se renouvellent automatiquement, et l’App Store
-          affiche le prix dans votre devise avant l’achat.
+          Walkito se paie par un abonnement, annuel ou hebdomadaire, via l’App
+          Store sur iPhone ou Google Play sur Android. Les deux se renouvellent
+          automatiquement, et la boutique affiche le prix dans votre devise
+          avant l’achat.
         </p>
         <ul>
           <li>
-            <b>Gérez ou résiliez</b> votre abonnement dans Réglages → [votre
-            nom] → Abonnements. Désactivez le renouvellement au moins 24 heures
-            avant la fin de la période et vous ne serez pas débité à nouveau.
-            Vous gardez l’accès jusqu’à la fin de la période déjà payée.
+            <b>Gérez ou résiliez</b> votre abonnement sur iPhone dans Réglages →
+            [votre nom] → Abonnements. Désactivez le renouvellement au moins 24
+            heures avant la fin de la période et vous ne serez pas débité à
+            nouveau. Sur Android, ouvrez l’application Google Play, touchez
+            l’icône de votre profil, puis Paiements et abonnements → Abonnements
+            → Walkito → Résilier l’abonnement. Dans les deux cas, vous gardez
+            l’accès jusqu’à la fin de la période déjà payée.
           </li>
           <li>
-            <b>Les remboursements</b> sont gérés par Apple. Utilisez la page{' '}
+            <b>Les remboursements</b> sont gérés par la boutique où vous avez
+            payé. Sur iPhone, utilisez la page{' '}
             <a href="https://reportaproblem.apple.com">Signaler un problème</a>{' '}
-            d’Apple. Nous ne pouvons pas traiter de remboursements à la place
-            d’Apple.
+            d’Apple. Sur Android, faites la demande depuis votre{' '}
+            <a href="https://play.google.com/store/account/orderhistory">historique des commandes Google Play</a>.
+            Nous ne pouvons pas traiter de remboursements à la place d’Apple ou
+            de Google.
           </li>
           <li>
-            <b>Nouveau téléphone ?</b> Connectez-vous avec le même identifiant
-            Apple et touchez Restore Purchases dans l’application. Votre plan
-            revient avec votre compte.
+            <b>Nouveau téléphone ?</b> Sur iPhone, connectez-vous avec le
+            même identifiant Apple et touchez Restore Purchases dans
+            l’application. Sur Android, utilisez le même compte Google dans
+            Google Play et l’abonnement revient. Votre plan revient avec votre
+            compte. Un abonnement acheté sur iPhone ne passe pas sur Android, ni
+            l’inverse, car Apple et Google facturent séparément.
           </li>
         </ul>
 
