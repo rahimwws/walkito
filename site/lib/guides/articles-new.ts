@@ -181,12 +181,16 @@ import { TOE_STRENGTHENING_IT } from './articles-it/toe-strengthening-exercises'
 import { TOP_OF_FOOT_IT } from './articles-it/top-of-foot';
 import { VS_EXAKT_IT } from './articles-it/vs-exakt';
 import { ACHILLES_DE } from './articles-de/achilles';
+import { ANKLE_MOBILITY_DE } from './articles-de/ankle-mobility-exercises';
+import { ANKLE_STRENGTHENING_DE } from './articles-de/ankle-strengthening-exercises';
 import { ARCH_PAIN_DE } from './articles-de/arch-pain';
 import { BALL_OF_FOOT_DE } from './articles-de/ball-of-foot';
+import { BAREFOOT_DE } from './articles-de/barefoot-shoes';
 import { BEST_APP_DE } from './articles-de/best-app';
 import { BUNIONS_DE } from './articles-de/bunions';
 import { CALF_RAISE_TEST_DE } from './articles-de/calf-raise-test';
 import { CALF_RAISES_DE } from './articles-de/calf-raises';
+import { FLAT_FEET_AGE_DE } from './articles-de/do-flat-feet-get-worse-with-age';
 import { EX_ANKLE_ROCKS_DE } from './articles-de/ex-ankle-rocks';
 import { EX_BAND_INVERSION_DE } from './articles-de/ex-band-inversion';
 import { EX_BIG_TOE_LIFT_DE } from './articles-de/ex-big-toe-lift';
@@ -203,6 +207,10 @@ import { EX_TIBIALIS_RAISES_DE } from './articles-de/ex-tibialis-raises';
 import { EX_TOE_SPREAD_DE } from './articles-de/ex-toe-spread';
 import { EX_TOWEL_HEEL_RAISE_DE } from './articles-de/ex-towel-heel-raise';
 import { EX_TOWEL_SCRUNCH_DE } from './articles-de/ex-towel-scrunch';
+import { FLAT_FEET_BACK_PAIN_DE } from './articles-de/flat-feet-back-pain';
+import { FLAT_FEET_KIDS_DE } from './articles-de/flat-feet-in-kids';
+import { FLAT_FEET_KNEE_PAIN_DE } from './articles-de/flat-feet-knee-pain';
+import { FOOT_STRENGTHENING_DE } from './articles-de/foot-strengthening-exercises';
 import { HAGLUNDS_DE } from './articles-de/haglunds';
 import { HAMMER_TOE_DE } from './articles-de/hammer-toe';
 import { HEEL_FAT_PAD_DE } from './articles-de/heel-fat-pad';
@@ -212,17 +220,24 @@ import { HEEL_SPUR_EXERCISES_DE } from './articles-de/heel-spur-exercises';
 import { HIGH_ARCHES_DE } from './articles-de/high-arches';
 import { HUB_FLAT_FEET_DE } from './articles-de/hub-flat-feet';
 import { HUB_PLANTAR_FASCIITIS_DE } from './articles-de/hub-plantar-fasciitis';
+import { ICE_HEAT_DE } from './articles-de/ice-or-heat-for-plantar-fasciitis';
+import { INSOLES_VS_EXERCISES_DE } from './articles-de/insoles-vs-exercises';
+import { MASSAGE_BALL_DE } from './articles-de/massage-ball-plantar-fasciitis';
 import { MORNING_HEEL_PAIN_DE } from './articles-de/morning-heel-pain';
 import { MORTONS_DE } from './articles-de/mortons';
+import { NIGHT_SPLINTS_DE } from './articles-de/night-splints-plantar-fasciitis';
 import { NURSES_DE } from './articles-de/nurses';
 import { PF_DURATION_DE } from './articles-de/pf-duration';
 import { PF_VS_HEEL_SPUR_DE } from './articles-de/pf-vs-heel-spur';
+import { PF_TAPING_DE } from './articles-de/plantar-fasciitis-taping';
 import { PTTD_DE } from './articles-de/pttd';
 import { SESAMOIDITIS_DE } from './articles-de/sesamoiditis';
 import { SEVERS_DE } from './articles-de/severs';
 import { SHIN_SPLINTS_DE } from './articles-de/shin-splints';
 import { STANDING_DESK_DE } from './articles-de/standing-desk';
 import { STANDING_DE } from './articles-de/standing';
+import { TIGHT_CALVES_DE } from './articles-de/tight-calves';
+import { TOE_STRENGTHENING_DE } from './articles-de/toe-strengthening-exercises';
 import { TOP_OF_FOOT_DE } from './articles-de/top-of-foot';
 import { VS_EXAKT_DE } from './articles-de/vs-exakt';
 import type { Guide } from './types';
@@ -418,12 +433,16 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
   },
   de: {
     achilles: ACHILLES_DE,
+    ankleMobility: ANKLE_MOBILITY_DE,
+    ankleStrengthening: ANKLE_STRENGTHENING_DE,
     archPain: ARCH_PAIN_DE,
     ballOfFoot: BALL_OF_FOOT_DE,
+    barefoot: BAREFOOT_DE,
     bestApp: BEST_APP_DE,
     bunions: BUNIONS_DE,
     calfRaiseTest: CALF_RAISE_TEST_DE,
     calfRaises: CALF_RAISES_DE,
+    flatFeetAge: FLAT_FEET_AGE_DE,
     exAnkleRocks: EX_ANKLE_ROCKS_DE,
     exBandInversion: EX_BAND_INVERSION_DE,
     exBigToeLift: EX_BIG_TOE_LIFT_DE,
@@ -440,6 +459,10 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     exToeSpread: EX_TOE_SPREAD_DE,
     exTowelHeelRaise: EX_TOWEL_HEEL_RAISE_DE,
     exTowelScrunch: EX_TOWEL_SCRUNCH_DE,
+    flatFeetBackPain: FLAT_FEET_BACK_PAIN_DE,
+    flatFeetKids: FLAT_FEET_KIDS_DE,
+    flatFeetKneePain: FLAT_FEET_KNEE_PAIN_DE,
+    footStrengthening: FOOT_STRENGTHENING_DE,
     haglunds: HAGLUNDS_DE,
     hammerToe: HAMMER_TOE_DE,
     heelFatPad: HEEL_FAT_PAD_DE,
@@ -449,17 +472,24 @@ export const ARTICLES_NEW: Record<NewLang, Partial<Record<EnglishPage, Guide>>> 
     highArches: HIGH_ARCHES_DE,
     hubFlatFeet: HUB_FLAT_FEET_DE,
     hubPlantarFasciitis: HUB_PLANTAR_FASCIITIS_DE,
+    iceHeat: ICE_HEAT_DE,
+    insolesVsExercises: INSOLES_VS_EXERCISES_DE,
+    massageBall: MASSAGE_BALL_DE,
     morningHeelPain: MORNING_HEEL_PAIN_DE,
     mortons: MORTONS_DE,
+    nightSplints: NIGHT_SPLINTS_DE,
     nurses: NURSES_DE,
     pfDuration: PF_DURATION_DE,
     pfVsHeelSpur: PF_VS_HEEL_SPUR_DE,
+    pfTaping: PF_TAPING_DE,
     pttd: PTTD_DE,
     sesamoiditis: SESAMOIDITIS_DE,
     severs: SEVERS_DE,
     shinSplints: SHIN_SPLINTS_DE,
     standingDesk: STANDING_DESK_DE,
     standing: STANDING_DE,
+    tightCalves: TIGHT_CALVES_DE,
+    toeStrengthening: TOE_STRENGTHENING_DE,
     topOfFoot: TOP_OF_FOOT_DE,
     vsExakt: VS_EXAKT_DE,
   },
