@@ -59,7 +59,7 @@ export const RED_FLAG_IDS = Object.keys(RED_FLAGS) as RedFlag[];
 const RED_FLAG_TITLE = 'See a doctor if';
 const SEE_DOCTOR_FIRST = 'Please see a doctor before doing exercises.';
 
-const CTA_LINE = 'Want this to adapt to your foot every day?';
+const CTA_LINE = 'In the app, the plan adapts to your foot every day.';
 const CTA_BULLETS = [
   'Reminder before your first step',
   'Plan changes with your pain check-in',
@@ -101,14 +101,12 @@ export type Cta = {
 export type Footer = { disclaimer: string; evidence: string };
 
 export type Widget =
-  | { kind: 'routine'; title: string; intro: string; minutes: number; position: string; steps: ExerciseCard[]; note?: string; redFlags: RedFlagBlock }
-  | { kind: 'plan_week'; title: string; intro: string; days: WeekDay[]; appChanges: string; note?: string; redFlags: RedFlagBlock }
+  | { kind: 'routine'; title: string; intro: string; minutes: number; position: string; steps: ExerciseCard[]; note?: string }
+  | { kind: 'plan_week'; title: string; intro: string; days: WeekDay[]; note?: string }
   | { kind: 'single_exercise'; title: string; exercise: ExerciseCard; why?: string; evidence?: string; note?: string }
   | { kind: 'self_check'; title: string; steps: string[]; question?: string; result?: string; exercise?: ExerciseCard; note?: string }
   | { kind: 'safety_card'; title: string; flags: string[]; selected: string[]; message?: string }
   | { kind: 'tips'; title: string; tips: { title: string; text: string }[] };
-
-export type RedFlagBlock = { title: string; flags: string[] };
 
 export type WeekDay = {
   weekday: string;
@@ -124,7 +122,6 @@ export type ToolResult = {
 };
 
 const footer: Footer = { disclaimer: DISCLAIMER, evidence: EVIDENCE_LINE };
-const redFlagBlock = (): RedFlagBlock => ({ title: RED_FLAG_TITLE, flags: Object.values(RED_FLAGS) });
 
 export type CodeParts = {
   source: PlanSource;
@@ -170,7 +167,6 @@ export function reliefNow(args: { area?: PlanArea; pain_today?: number }, source
       position: r.position,
       steps: r.steps,
       ...(note ? { note } : {}),
-      redFlags: redFlagBlock(),
     },
     `${r.title}: a ${r.minutes}-minute ${r.position} routine. ${r.cue}\n${list(r.steps)}${note ? `\n${note}` : ''}\n${RED_FLAG_TITLE}: ${Object.values(RED_FLAGS).join('; ')}.`,
     {
@@ -311,8 +307,8 @@ export function buildStarterPlan(args: PlanArgs, source: PlanSource, today: stri
   const plan = starterWeek(args, today);
   const week = plan.days.map(weekDay);
   const active = week.filter((d) => d.exercises.length > 0);
-  const title = `${AREA_LABEL[args.area]}: your first week`;
-  const intro = `${minutes} minutes, ${days} days a week. Week one starts gently.`;
+  const title = `${AREA_LABEL[args.area]} plan`;
+  const intro = `${minutes} min a day · ${days} days a week`;
   const textDays = week
     .map((d) =>
       d.exercises.length === 0
@@ -322,7 +318,7 @@ export function buildStarterPlan(args: PlanArgs, source: PlanSource, today: stri
     .join('\n');
   if (active.length === 0) throw new Error('starter plan: a week with no exercises');
   return result(
-    { kind: 'plan_week', title, intro, days: week, appChanges: APP_CHANGES, redFlags: redFlagBlock() },
+    { kind: 'plan_week', title, intro, days: week },
     `${title}. ${intro}\n${textDays}\n${APP_CHANGES}\nPlan code: ${code.code} (${code.url})`,
     { cta: code, pain: args.pain_today },
   );
@@ -444,7 +440,6 @@ export function feetAfterWork(source: PlanSource): ToolResult {
       position: r.position,
       steps: r.steps,
       note: tips.map((t) => `${t.title}: ${t.text}`).join(' '),
-      redFlags: redFlagBlock(),
     },
     `A ${r.minutes}-minute routine for after a shift, from the app's "${r.title}" routine:\n${list(r.steps)}\nShoe tips: ${tips.map((t) => t.text).join(' ')}`,
     { cta: cta({ source, area: 'heel_arch', minutes: 5, days: 5, equipment: [], side: 'both' }) },

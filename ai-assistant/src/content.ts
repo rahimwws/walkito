@@ -14,9 +14,7 @@ import { EXERCISES_EN } from '@/shared/lib/i18n/catalogue/en/exercises';
 import { QUICK_EN } from '@/shared/lib/i18n/catalogue/en/quick';
 
 declare const __SUPABASE_URL__: string;
-declare const __POSTER_IDS__: string[];
 
-const SITE = 'https://walkito.site';
 const COPY = EXERCISES_EN as Record<string, string | { one: string; other: string }>;
 const QUICK = QUICK_EN as Record<string, string | { one: string; other: string }>;
 
@@ -76,9 +74,25 @@ export type Clip = { src: string; poster?: string };
 export function clipFor(id: string, manifest: Record<string, { file: string; hash: string }> = CLIPS): Clip | null {
   const entry = manifest[id];
   if (!entry || !/^[0-9a-f]{16}$/.test(entry.hash)) return null;
-  const src = `${__SUPABASE_URL__}/storage/v1/object/public/${CLIP_BUCKET}/${entry.file}`;
-  return __POSTER_IDS__.includes(id) ? { src, poster: `${SITE}/exercises/${id}.webp` } : { src };
+  if (MANNEQUIN_CLIPS.has(id)) return null;
+  // `#t=0.1`: the first frame of the clip itself as the still, not the site's
+  // older posters, which are a different recording.
+  return { src: `${__SUPABASE_URL__}/storage/v1/object/public/${CLIP_BUCKET}/${entry.file}#t=0.1` };
 }
+
+/**
+ * Clips still drawn with a grey mannequin rather than filmed with a person
+ * (checked frame by frame, 2026-10-09). The assistant shows people only: these
+ * exercises get no video here, so a plan picks the next exercise that has one.
+ * Take an id off once its clip is re-recorded.
+ */
+export const MANNEQUIN_CLIPS: ReadonlySet<string> = new Set([
+  'fascia_stretch',
+  'ankle_rocks',
+  'towel_scrunch',
+  'knee_to_wall',
+  'heel_drop_straight',
+]);
 
 export type ExerciseCard = {
   id: string;
