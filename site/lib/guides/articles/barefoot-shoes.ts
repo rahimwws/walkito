@@ -44,7 +44,16 @@ export const BAREFOOT_EN: Guide = {
     {
       h2: 'What are barefoot shoes?',
       paragraphs: [
-        'Barefoot shoes are shoes built to get in the way of your foot as little as possible. Most share four features: a thin sole you can feel the ground through, a sole that bends and twists easily, zero drop (the heel sits at the same height as the toes), and a wide toe box so the toes can spread. They have no arch support and little cushioning.',
+        'Barefoot shoes are shoes built to get in the way of your foot as little as possible. Most share four features:',
+        {
+          list: [
+            'A thin sole you can feel the ground through.',
+            'A sole that bends and twists easily.',
+            'Zero drop (the heel sits at the same height as the toes).',
+            'A wide toe box so the toes can spread.',
+          ],
+        },
+        'They have no arch support and little cushioning.',
         'Researchers call them minimalist or minimal shoes. The idea is simple: a shoe that supports and cushions the foot does some of the work the small foot muscles would otherwise do. Take that support away and the muscles work harder. For anyone with foot pain, the question is whether that extra work helps or hurts.',
       ],
     },
@@ -52,10 +61,18 @@ export const BAREFOOT_EN: Guide = {
       h2: 'Do barefoot shoes make your feet stronger?',
       keyFact: 'Adults who wore minimal shoes for daily life for six months gained 57.4 percent in toe strength on average (Curtis and colleagues, 2021).',
       paragraphs: [
-        'Yes, in adults without foot pain, the evidence points that way. In a 2019 randomized trial, Ridge and colleagues split 57 runners into three groups: walk in minimalist shoes, do foot strengthening exercises, or change nothing. The walking group slowly increased how many steps a day they took in the new shoes. After about two months, every foot muscle the researchers measured was bigger and stronger in both active groups, and unchanged in the control group. Walking in the shoes worked about as well as the exercises.',
+        'Yes, in adults without foot pain, the evidence points that way. In a 2019 randomized trial, Ridge and colleagues split 57 runners into three groups:',
+        {
+          list: [
+            'Walk in minimalist shoes.',
+            'Do foot strengthening exercises.',
+            'Change nothing.',
+          ],
+        },
+        'The walking group slowly increased how many steps a day they took in the new shoes. After about two months, every foot muscle the researchers measured was bigger and stronger in both active groups, and unchanged in the control group. Walking in the shoes worked about as well as the exercises.',
         'Curtis and colleagues ran a longer study in 2021. Twenty-two adults wore minimal shoes for daily life (not for running) for six months, and 24 kept their usual shoes. Toe strength rose by 57.4 percent on average in the people who switched. The study was not randomized and only took people with no recent leg or foot problems.',
         'A 2025 review of 28 trials by Peters-Dickie and colleagues found that minimalist shoes increased the strength of the smaller toes. It rated the certainty of the evidence as low to very low.',
-        'Stronger foot muscles are not the same as less foot pain. None of these studies measured pain or included people with a foot condition. For a full set of exercises that build the same muscles, see [foot strengthening exercises](/foot-strengthening-exercises/).',
+        '**Stronger foot muscles are not the same as less foot pain.** None of these studies measured pain or included people with a foot condition. For a full set of exercises that build the same muscles, see [foot strengthening exercises](/foot-strengthening-exercises/).',
       ],
       sourceNote:
         'Curtis 2021: foot strength measured as maximum isometric plantarflexion strength at the toe joints, p < 0.001. Peters-Dickie 2025: 28 trials, 1,399 participants.',
@@ -65,9 +82,16 @@ export const BAREFOOT_EN: Guide = {
       h2: 'Are barefoot shoes bad for you? The risk is in the switch',
       keyFact: 'After about two and a half months of moving to minimalist running shoes, 10 of 19 runners showed new or worse bone stress on MRI (Ridge and colleagues, 2013).',
       paragraphs: [
-        'The shoes are not the main risk. The speed of the switch is. Your foot bones, muscles, calf and Achilles tendon have adapted to your current shoes and need time to take more load.',
-        'Ridge and colleagues showed this in 2013. They scanned the feet of 36 experienced runners. Nineteen moved gradually to minimalist running shoes over about two and a half months and 17 kept their normal shoes. Afterwards, 10 of the 19 who switched had new or worse bone marrow edema (fluid inside the bone, an early sign of bone stress) in at least one foot bone, significantly more than the runners who did not switch. The authors advised that runners should transition "very slowly and gradually".',
-        'Two randomized trials point the same way. In Ryan and colleagues\' trial of 103 runners training for a 10 km race over three months, the partly minimalist shoe group had 12 injuries against 4 in the normal shoe group, and the full minimalist group reported more shin and calf pain. In Fuller and colleagues\' six-month trial of 61 runners, running pain was higher in minimalist shoes, clearly so above about 35 km a week, and injury risk rose with body weight. The overall injury difference (16 of 31 against 11 of 30) could have been chance.',
+        'The shoes are not the main risk. **The speed of the switch is.** Your foot bones, muscles, calf and Achilles tendon have adapted to your current shoes and need time to take more load.',
+        'Ridge and colleagues showed this in 2013. They scanned the feet of 36 experienced runners. Nineteen moved gradually to minimalist running shoes over about two and a half months and 17 kept their normal shoes.',
+        'Afterwards, 10 of the 19 who switched had new or worse bone marrow edema (fluid inside the bone, an early sign of bone stress) in at least one foot bone, significantly more than the runners who did not switch. The authors advised that runners should transition "very slowly and gradually".',
+        'Two randomized trials point the same way:',
+        {
+          list: [
+            'In Ryan and colleagues\' trial of 103 runners training for a 10 km race over three months, the partly minimalist shoe group had 12 injuries against 4 in the normal shoe group, and the full minimalist group reported more shin and calf pain.',
+            'In Fuller and colleagues\' six-month trial of 61 runners, running pain was higher in minimalist shoes, clearly so above about 35 km a week, and injury risk rose with body weight. The overall injury difference (16 of 31 against 11 of 30) could have been chance.',
+          ],
+        },
         'These were runners. Walking loads the foot far less, which is one reason the strength studies used walking. If you run and have [heel pain](/heel-pain-runners/), a sudden shoe change is one more load change your foot does not need.',
       ],
       sourceNote:
@@ -83,9 +107,15 @@ export const BAREFOOT_EN: Guide = {
         alt: 'A foot seen from the inner side with the plantar fascia highlighted as a band from the heel to the ball of the foot.',
       },
       paragraphs: [
-        'There is no good evidence that barefoot shoes ease plantar fasciitis (pain where the thick band under your foot attaches to the heel). There is also no trial showing they cause it. Strong claims either way online mostly come from shoe and insole sellers.',
-        'Here is what has been tested. In a 2026 randomized trial, Xu and colleagues gave adults with plantar fasciitis about two months of foot exercises, and 34 finished. About half also wore minimalist shoes. Toe strength went up in both groups, and adding the shoes did not clearly add to it. Balance did not change in either group. This report did not cover pain, and the shoe maker supplied the shoes.',
-        'In a small 2022 trial of 36 women with plantar fasciitis, Ribeiro and colleagues compared flexible minimalist shoes alone, the same shoes plus a custom insole, and usual shoe advice, over six months. Only the insole group had clearly less heel pain than the usual advice group. A 2022 case series of 20 runners reported less pain after about a month and a half of barefoot running on grass, but it had no comparison group and one author is funded by a barefoot shoe brand.',
+        '**There is no good evidence that barefoot shoes ease plantar fasciitis** (pain where the thick band under your foot attaches to the heel). There is also no trial showing they cause it. Strong claims either way online mostly come from shoe and insole sellers.',
+        'Here is what has been tested:',
+        {
+          list: [
+            'In a 2026 randomized trial, Xu and colleagues gave adults with plantar fasciitis about two months of foot exercises, and 34 finished. About half also wore minimalist shoes. Toe strength went up in both groups, and adding the shoes did not clearly add to it. Balance did not change in either group. This report did not cover pain, and the shoe maker supplied the shoes.',
+            'In a small 2022 trial of 36 women with plantar fasciitis, Ribeiro and colleagues compared flexible minimalist shoes alone, the same shoes plus a custom insole, and usual shoe advice, over six months. Only the insole group had clearly less heel pain than the usual advice group.',
+            'A 2022 case series of 20 runners reported less pain after about a month and a half of barefoot running on grass, but it had no comparison group and one author is funded by a barefoot shoe brand.',
+          ],
+        },
         'The 2023 US heel pain guideline recommends calf and plantar fascia stretching (grade A) and strength training (grade B). It does not recommend minimalist shoes, and it lists footwear that reduces load as part of advice for patients. If your heel hurts now, start with the [plantar fasciitis exercises](/plantar-fasciitis-exercises/), and see [insoles vs exercises](/insoles-vs-exercises/) for what support under the foot can and cannot do.',
       ],
       cites: [CITE.xuFrames, CITE.ribeiroShoes, CITE.macgabhannGrass, CITE.guideline],
@@ -93,7 +123,8 @@ export const BAREFOOT_EN: Guide = {
     {
       h2: 'Is walking barefoot at home OK if your heel hurts?',
       paragraphs: [
-        'Be careful with hard floors, especially first thing in the morning. No trial has tested barefoot walking at home for heel pain, so this is cautious advice, not a tested rule. Tile or wood gives the heel no cushion, and the first steps after rest are when plantar fasciitis usually hurts most. Our [morning heel pain](/heel-pain-in-the-morning/) page suggests a stretch before you stand and something on your feet for those first steps.',
+        '**Be careful with hard floors, especially first thing in the morning.** No trial has tested barefoot walking at home for heel pain, so this is cautious advice, not a tested rule.',
+        'Tile or wood gives the heel no cushion, and the first steps after rest are when plantar fasciitis usually hurts most. Our [morning heel pain](/heel-pain-in-the-morning/) page suggests a stretch before you stand and something on your feet for those first steps.',
         'Cushioning under the heel may matter. In a 2023 study, Landorf and colleagues compared 50 people with plantar heel pain to 25 matched people without it. Those with heel pain stood for 3.4 hours a day longer and wore shoes with harder heels. That shows a link, not a cause.',
         'A deep, central heel ache that is worse barefoot on hard ground can also come from the heel fat pad (the cushion of fat under the heel bone). See [heel fat pad syndrome](/heel-fat-pad-syndrome/) for that pattern.',
         'Short spells barefoot on grass or sand are gentler. If they raise your heel pain the next morning, it was too much.',
@@ -109,10 +140,17 @@ export const BAREFOOT_EN: Guide = {
         alt: 'Three feet seen from the inner side: a flat foot with the arch on the floor, a typical arch with a small gap, and a high arch with a large gap.',
       },
       paragraphs: [
-        'There are hints, but no trial. Holowka and colleagues compared 75 Tarahumara men in Mexico, who wear thin sandals most of their lives, with 26 men from the US who wear regular shoes. The sandal wearers had higher, stiffer arches and bigger muscles along the inner and outer edges of the foot. Only one of the 75 had low arches, against 8 of the 26 US men (31 percent).',
+        '**There are hints, but no trial.** Holowka and colleagues compared 75 Tarahumara men in Mexico, who wear thin sandals most of their lives, with 26 men from the US who wear regular shoes. The sandal wearers had higher, stiffer arches and bigger muscles along the inner and outer edges of the foot. Only one of the 75 had low arches, against 8 of the 26 US men (31 percent).',
         'An older survey of 2,300 children in India, by Rao and Joseph in 1992, found flat feet in 8.6 percent of children who wore shoes and 2.8 percent of those who did not. Flat feet were most common in children who wore closed shoes.',
         'Both studies compare groups who differ in many ways, so they cannot show that shoes cause flat feet, or that new shoes will raise an adult arch. No trial has tested that.',
-        'What matters more is the type of flat foot. A flexible flat foot (the arch comes back when you sit or stand on your toes) is usually fine to load and strengthen, and a gradual move to flatter shoes is reasonable if your feet feel good. A rigid flat foot, or one that is painful, getting flatter or worse on one side, needs a clinician first. Our [flat feet](/flat-feet/) page explains the difference.',
+        'What matters more is the type of flat foot:',
+        {
+          list: [
+            'A flexible flat foot (the arch comes back when you sit or stand on your toes) is usually fine to load and strengthen, and a gradual move to flatter shoes is reasonable if your feet feel good.',
+            'A rigid flat foot, or one that is painful, getting flatter or worse on one side, needs a clinician first.',
+          ],
+        },
+        'Our [flat feet](/flat-feet/) page explains the difference.',
       ],
       cites: [CITE.holowkaShod, CITE.raoFootwear],
     },
@@ -136,7 +174,7 @@ export const BAREFOOT_EN: Guide = {
     {
       h2: 'How do you switch to barefoot shoes safely?',
       paragraphs: [
-        'Slowly, and by how your feet respond, not by a calendar. No study has found a timetable that suits everyone. The strength studies built up step counts gradually and kept people from running in the new shoes. The running trials saw more pain and bone stress even with gradual plans.',
+        '**Slowly, and by how your feet respond, not by a calendar.** No study has found a timetable that suits everyone. The strength studies built up step counts gradually and kept people from running in the new shoes. The running trials saw more pain and bone stress even with gradual plans.',
       ],
       bullets: [
         'Walk before you run. Start with short spells of everyday walking, in your usual shoes the rest of the day.',

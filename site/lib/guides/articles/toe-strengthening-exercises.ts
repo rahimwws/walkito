@@ -50,10 +50,12 @@ export const TOE_STRENGTHENING_EN: Guide = {
       keyFact:
         'In a year-long study of 312 adults aged 60 to 90, the people who fell had weaker big toes (11.6 versus 14.8 percent of body weight) than those who did not (Mickle and colleagues, 2009).',
       paragraphs: [
-        'Toe strength matters most for balance and for pushing off when you walk. Your toes are the last part of the foot to leave the ground with each step, and when you stand still they press down to stop small sways.',
-        'The clearest evidence comes from older adults. An Australian team measured toe strength in 312 people aged 60 to 90 and then tracked who fell over the next 12 months. 107 of them (35 percent) had a fall. On average, the fallers could press down with their big toe at 11.6 percent of their body weight, against 14.8 percent for those who did not fall. The smaller toes showed the same pattern. An earlier study of 176 people with a mean age of 80 found that weak toe plantarflexors (the muscles that press the toes down) were linked to falls even after accounting for other falls risk factors, such as vision, reaction time and strength, and age.',
+        '**Toe strength matters most for balance and for pushing off when you walk.** Your toes are the last part of the foot to leave the ground with each step, and when you stand still they press down to stop small sways.',
+        'The clearest evidence comes from older adults. An Australian team measured toe strength in 312 people aged 60 to 90 and then tracked who fell over the next 12 months. 107 of them (35 percent) had a fall. On average, the fallers could press down with their big toe at 11.6 percent of their body weight, against 14.8 percent for those who did not fall. The smaller toes showed the same pattern.',
+        'An earlier study of 176 people with a mean age of 80 found that weak toe plantarflexors (the muscles that press the toes down) were linked to falls even after accounting for other falls risk factors, such as vision, reaction time and strength, and age.',
         'A 2026 review of 14 cohort studies in adults aged 60 and over pooled the data and found that weak big toe muscles went with about 1.65 times the odds of a future fall. The authors were careful to say that many of the studies did not adjust for other causes, so weak toes may partly be a marker of general frailty.',
-        'For balance itself, a 2020 review of nine studies found that stronger toe flexors went with better balance in every study it included. All of those studies were in people over 60, so the link in younger adults has not been tested in the same way. In a separate study of 305 people aged 65 to 93, big toe strength was one of the two most consistent predictors of how well they did on balance and walking tests.',
+        'For balance itself, a 2020 review of nine studies found that stronger toe flexors went with better balance in every study it included. All of those studies were in people over 60, so the link in younger adults has not been tested in the same way.',
+        'In a separate study of 305 people aged 65 to 93, big toe strength was one of the two most consistent predictors of how well they did on balance and walking tests.',
       ],
       sourceNote:
         'Mickle 2009: strength measured on a pressure platform as percent of body weight, means with SD 6.9 and 7.8. Valeriani 2026: hallux plantarflexor weakness pooled OR 1.65 (95% CI 1.14 to 2.38). Quinlan 2020: 7 cross-sectional studies, 2 RCTs, 1 case-control, no meta-analysis.',
@@ -62,17 +64,32 @@ export const TOE_STRENGTHENING_EN: Guide = {
     {
       h2: 'Are weak toes linked to heel pain?',
       paragraphs: [
-        'Weak toes do show up in people with plantar fasciitis (pain under the heel where the plantar fascia, a thick band along the sole, attaches). In a 2003 study of 20 people with plantar fasciitis in one foot, the painful foot had weaker toe flexors than the other foot and weaker than 20 matched people without pain. A larger 2015 study compared 202 people with plantar heel pain and 70 without it. The heel pain group had weaker toe flexors, stiffer ankles and a higher body mass index (weight relative to height) on average.',
-        'Neither study can say which came first. The authors of both papers say so plainly: weakness could help cause the pain, or pain could make people use their toes less. Strengthening the toes is a reasonable part of a heel pain plan, but the best tested exercises for plantar fasciitis are still the calf and plantar fascia stretches and heel raises in [plantar fasciitis exercises](/plantar-fasciitis-exercises/). A 2017 review of strength training for plantar fasciitis could not say how much foot muscle training on its own helps people with heel pain.',
+        'Weak toes do show up in people with plantar fasciitis (pain under the heel where the plantar fascia, a thick band along the sole, attaches). In a 2003 study of 20 people with plantar fasciitis in one foot, the painful foot had weaker toe flexors than the other foot and weaker than 20 matched people without pain.',
+        'A larger 2015 study compared 202 people with plantar heel pain and 70 without it. The heel pain group had, on average:',
+        {
+          list: [
+            'Weaker toe flexors.',
+            'Stiffer ankles.',
+            'A higher body mass index (weight relative to height).',
+          ],
+        },
+        '**Neither study can say which came first.** The authors of both papers say so plainly: weakness could help cause the pain, or pain could make people use their toes less.',
+        'Strengthening the toes is a reasonable part of a heel pain plan, but the best tested exercises for plantar fasciitis are still the calf and plantar fascia stretches and heel raises in [plantar fasciitis exercises](/plantar-fasciitis-exercises/). A 2017 review of strength training for plantar fasciitis could not say how much foot muscle training on its own helps people with heel pain.',
       ],
       cites: [CITE.allenGross, CITE.sullivanHeel, CITE.guideline, CITE.hufferReview],
     },
     {
       h2: 'Which muscles move your toes?',
       paragraphs: [
-        'Two groups of muscles move your toes. The intrinsic muscles start and end inside the foot. They sit in layers under the sole, and the best known are the abductor hallucis (which pulls the big toe away from the others) and the short toe flexors. The extrinsic muscles start in the lower leg and reach the toes through long tendons that run past the ankle.',
+        'Two groups of muscles move your toes:',
+        {
+          list: [
+            '**Intrinsic muscles:** start and end inside the foot. They sit in layers under the sole, and the best known are the abductor hallucis (which pulls the big toe away from the others) and the short toe flexors.',
+            '**Extrinsic muscles:** start in the lower leg and reach the toes through long tendons that run past the ankle.',
+          ],
+        },
         'When you curl your toes hard, both groups work together. That is why researchers find intrinsic strength so hard to measure on its own: a 2012 review concluded it is unclear whether any method can fully separate the two. A sports medicine paper from 2015 calls the intrinsic muscles the foot core, because, like the deep muscles of the trunk, they make small, constant adjustments more than big movements.',
-        'So a good toe program mixes control work (toe spread, big toe lift) with force work (towel scrunch, loaded toe presses) that uses both groups.',
+        'So **a good toe program mixes control work (toe spread, big toe lift) with force work (towel scrunch, loaded toe presses)** that uses both groups.',
       ],
       cites: [CITE.soysaFootStrength, CITE.mcKeon, CITE.gooding],
     },
@@ -186,10 +203,17 @@ export const TOE_STRENGTHENING_EN: Guide = {
       keyFact:
         'In a trial of 118 recreational runners, those who did not do the foot program were 2.42 times as likely to be injured over a year (Taddei and colleagues, 2020).',
       paragraphs: [
-        'Toe strengthening exercises can build toe strength, but only when the work gets harder over time. In a 2016 trial, 85 adults aged 60 to 90 were split between a supervised program with resistance that grew over three months and a home exercise program. The supervised group gained up to 36 percent in toe strength and stood longer on one leg. The home group, and a separate control group of 32 people, showed no change in toe strength. The authors said a trial counting falls was still needed.',
+        'Toe strengthening exercises can build toe strength, but **only when the work gets harder over time.**',
+        'In a 2016 trial, 85 adults aged 60 to 90 were split between a supervised program with resistance that grew over three months and a home exercise program. The supervised group gained up to 36 percent in toe strength and stood longer on one leg. The home group, and a separate control group of 32 people, showed no change in toe strength. The authors said a trial counting falls was still needed.',
         'Runners respond too. In a 2019 trial of 57 runners, both a foot strengthening program done at least five times a week and a switch to walking in minimalist shoes (thin, flat, flexible shoes) increased foot muscle size and strength over two months, while the control group stayed the same. Some muscles were already larger within a month. If you are curious about the shoe route, see [barefoot shoes](/barefoot-shoes/).',
         'For injuries, the strongest single result comes from a 2020 trial of 118 recreational runners. Those who did not get the foot and ankle program were 2.42 times as likely to have a running injury over 12 months as those who did. It is one trial, and the program trained the whole foot and ankle, not only the toes. Runners can read more in [heel pain in runners](/heel-pain-runners/).',
-        'The wider picture is less certain. A 2022 review rated the evidence that foot muscle training improves dynamic balance as very low certainty. A 2025 review of 16 trials in older people found that foot and ankle exercises improved ankle strength and balance with the eyes open, but the two trials that counted falls found no clear effect. That review did note that toe strengthening exercises and training three times a week both seemed to matter for balance.',
+        'The wider picture is less certain:',
+        {
+          list: [
+            '**A 2022 review** rated the evidence that foot muscle training improves dynamic balance as very low certainty.',
+            '**A 2025 review** of 16 trials in older people found that foot and ankle exercises improved ankle strength and balance with the eyes open, but the two trials that counted falls found no clear effect. That review did note that toe strengthening exercises and training three times a week both seemed to matter for balance.',
+          ],
+        },
       ],
       sourceNote:
         'Mickle 2016: 43 supervised, 42 home, 32 non-randomized controls; 80 percent of intervention participants completed follow-up. Ridge 2019: foot muscle size by ultrasound, strength by custom dynamometers. Taddei 2020: control group 2.42 times (95% CI 1.98 to 3.62) more likely to have a running-related injury within 12 months. Liang 2025: 16 papers, 651 participants, GRADE low to very low.',
@@ -198,8 +222,17 @@ export const TOE_STRENGTHENING_EN: Guide = {
     {
       h2: 'Can toe exercises help prevent falls?',
       paragraphs: [
-        'Toe exercises have not been shown to prevent falls on their own. Weak toes go with falls in cohort studies, and training can raise toe strength, but we found no trial that tested a toe-only program with falls as the outcome.',
-        'The closest test is a 2011 trial of 305 older people with disabling foot pain. Half got a package of foot orthoses, footwear advice with a shoe voucher, a home foot and ankle exercise program and a falls booklet. They had 36 percent fewer falls over 12 months than people who got routine podiatry care. The share of people who fell at least once did not differ clearly. Because exercise was only one part of the package, the trial cannot say how much the exercises themselves did.',
+        '**Toe exercises have not been shown to prevent falls on their own.** Weak toes go with falls in cohort studies, and training can raise toe strength, but we found no trial that tested a toe-only program with falls as the outcome.',
+        'The closest test is a 2011 trial of 305 older people with disabling foot pain. Half got a package of:',
+        {
+          list: [
+            'Foot orthoses.',
+            'Footwear advice with a shoe voucher.',
+            'A home foot and ankle exercise program.',
+            'A falls booklet.',
+          ],
+        },
+        'They had 36 percent fewer falls over 12 months than people who got routine podiatry care. The share of people who fell at least once did not differ clearly. Because exercise was only one part of the package, the trial cannot say how much the exercises themselves did.',
         'If you have already had a fall or feel unsteady, toe work is a sensible add-on, but a falls assessment with a clinician should come first. The exercises on this page are not a falls prevention program.',
       ],
       sourceNote: 'Spink 2011: incidence rate ratio 0.64 (95% CI 0.45 to 0.91); proportion of fallers RR 0.85 (0.66 to 1.08).',
@@ -209,7 +242,7 @@ export const TOE_STRENGTHENING_EN: Guide = {
       h2: 'How often should you do toe strengthening exercises?',
       paragraphs: [
         'Toe strengthening exercises are usually done three to five times a week. The 2025 review of trials in older people found that training three times a week seemed to matter for balance, and the 2019 runners trial used at least five sessions a week. Sessions can be short, five to ten minutes is plenty for the toe and arch work.',
-        'Expect a few months, not a few sessions: the studies above measured their main gains after two to three months. Retest yourself with the home checks above about once a month so you can see what is changing.',
+        '**Expect a few months, not a few sessions**: the studies above measured their main gains after two to three months. Retest yourself with the home checks above about once a month so you can see what is changing.',
         'If your toes are bent or stiff, start with [hammer toe exercises](/hammer-toe-exercises/) or [bunion exercises](/bunion-exercises/), which cover those shapes. For a wider plan that adds the calf and ankle, see [foot strengthening exercises](/foot-strengthening-exercises/).',
       ],
       cites: [CITE.liangFootAnkle, CITE.ridgeMinimalist, CITE.mickleToe],

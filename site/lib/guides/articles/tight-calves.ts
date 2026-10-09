@@ -29,7 +29,8 @@ export const TIGHT_CALVES_EN: Guide = {
   lede:
     'Tight calves usually mean your calf muscles feel stiff or your ankle does not bend far enough. Common causes: a jump in running or walking, long days on your feet, heeled shoes. Stretching both calf muscles helps a little: in a review of five trials, ankle range grew by about 2 to 3 degrees. Calf raises help too.',
   intro: [
-    'You feel it on the first steps out of bed, on a hill, or when you squat and your heels want to lift. The back of the lower leg feels short and hard. This is very common, and most of the time it is not a sign of damage. This page covers why calves get tight, which part of the calf is tight, and what the research says stretching and strength work can and cannot change. For the step-by-step stretches, see [calf stretch](/exercises/calf-stretch/) and [soleus stretch](/exercises/soleus-stretch/).',
+    'You feel it on the first steps out of bed, on a hill, or when you squat and your heels want to lift. The back of the lower leg feels short and hard. This is very common, and most of the time it is not a sign of damage.',
+    'This page covers why calves get tight, which part of the calf is tight, and what the research says stretching and strength work can and cannot change. For the step-by-step stretches, see [calf stretch](/exercises/calf-stretch/) and [soleus stretch](/exercises/soleus-stretch/).',
   ],
   takeaways: [
     'In a 2006 review of five randomised trials, static calf stretching increased ankle bend by only about 2 to 3 degrees, and the authors were not sure the change matters to people (Radford and colleagues).',
@@ -72,7 +73,8 @@ export const TIGHT_CALVES_EN: Guide = {
         'Tight calves are linked with plantar fasciitis, the most common cause of heel pain under the foot. When the ankle cannot bend far enough, the foot has to make up for it with each step, and more pull goes through the Achilles tendon, the heel and the plantar fascia (the thick band under the arch).',
         'In a 2003 case-control study, Riddle and colleagues compared 50 people with plantar fasciitis to 100 matched people without it. People whose ankle could not bend past 0 degrees had 23.3 times the odds of plantar fasciitis compared with people who could bend past 10 degrees. Reduced ankle bend was the strongest risk factor they measured, ahead of body weight and standing at work.',
         'In a later study of 254 people with plantar fasciitis, 83 percent had limited ankle bend, and 57 percent of all the patients had a tight gastrocnemius alone (Patel and DiGiovanni, 2011).',
-        'Both studies show a link, not that tight calves cause plantar fasciitis. The wide range around the 23.3 figure also means the true number could be much smaller. Still, it is one reason the 2023 heel pain guideline gives calf stretching a grade A, its top grade, for plantar heel pain. If heel pain is your main problem, start at [plantar fasciitis exercises](/plantar-fasciitis-exercises/) or [heel pain in the morning](/heel-pain-in-the-morning/). Tight calves also show up around the Achilles and the shins: see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/) and [shin splints exercises](/shin-splints-exercises/).',
+        '**Both studies show a link, not that tight calves cause plantar fasciitis.** The wide range around the 23.3 figure also means the true number could be much smaller. Still, it is one reason the 2023 heel pain guideline gives calf stretching a grade A, its top grade, for plantar heel pain.',
+        'If heel pain is your main problem, start at [plantar fasciitis exercises](/plantar-fasciitis-exercises/) or [heel pain in the morning](/heel-pain-in-the-morning/). Tight calves also show up around the Achilles and the shins: see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/) and [shin splints exercises](/shin-splints-exercises/).',
       ],
       sourceNote:
         'Riddle 2003: odds ratio 23.3 (95% CI 4.3 to 124.4) for dorsiflexion of 0 degrees or less vs more than 10 degrees, adjusted. Patel 2011: 211 of 254 had limited dorsiflexion, 145 of 254 isolated gastrocnemius contracture, 66 of 254 gastrocnemius-soleus contracture.',
@@ -82,7 +84,15 @@ export const TIGHT_CALVES_EN: Guide = {
       h2: 'Does stretching really loosen tight calves?',
       keyFact: 'A 2006 review of five randomised trials found calf stretching increased ankle bend by about 2 to 3 degrees, and the authors were unsure whether that change is clinically important (Radford and colleagues).',
       paragraphs: [
-        'Stretching does loosen tight calves, but by less than most people expect. In 2006, Radford and colleagues pooled five randomised trials that compared static calf stretching (holding a stretch still) with no stretching. Ankle bend went up by about 2 degrees after a total of 15 minutes of stretching or less, about 3 degrees after 15 to 30 minutes, and about 2.5 degrees after more than 30 minutes. Those minutes are the total stretch time added up over the trial, not one long hold.',
+        'Stretching does loosen tight calves, but **by less than most people expect.** In 2006, Radford and colleagues pooled five randomised trials that compared static calf stretching (holding a stretch still) with no stretching. Ankle bend went up by:',
+        {
+          list: [
+            'About 2 degrees after a total of 15 minutes of stretching or less.',
+            'About 3 degrees after 15 to 30 minutes.',
+            'About 2.5 degrees after more than 30 minutes.',
+          ],
+        },
+        'Those minutes are the total stretch time added up over the trial, not one long hold.',
         'The authors called the gain small and said it was unclear whether it matters to people. Two things follow. First, a short spell of stretching will not transform your ankle. Second, the feeling of looseness after a stretch is real, but part of it may be your tolerance to the stretch going up, not the muscle getting longer.',
         'Stretching also does less than many people hope in other ways. In a trial of 1,538 army recruits over three months of training, a 20-second stretch of six leg muscle groups in every warm-up did not meaningfully cut injuries (Pope and colleagues, 2000). A Cochrane review of 12 studies found stretching before or after exercise reduced next-day soreness by only about half a point to 1 point on a 100-point scale (Herbert and colleagues, 2011).',
         'So stretch because it feels good, because it helps a stiff ankle a little, and because the heel pain guideline supports it for plantar heel pain. Do not expect it to prevent every injury or wipe out soreness.',
@@ -95,9 +105,18 @@ export const TIGHT_CALVES_EN: Guide = {
       h2: 'Should you strengthen tight calves instead of stretching them?',
       keyFact: 'A 2021 review of 11 randomised trials with 452 people found no significant difference in range of motion gains between strength training and stretching (Afonso and colleagues).',
       paragraphs: [
-        'Strengthening tight calves is a good idea, and you do not have to pick one or the other. In 2021, Afonso and colleagues pooled 11 randomised trials with 452 people that compared strength training with stretching. Range of motion improved about the same with both. The trials were very different from each other and covered many joints, not just the ankle, so read this as a strong hint, not a final answer.',
-        'Strength matters for another reason. A calf that tires early feels tight sooner. Full-range calf raises, where you lower your heels all the way down and rise all the way up, load the muscle through its whole length. If your calves feel tight every time you walk or run more than usual, building their capacity is often the more useful long-term step. You can check your calf endurance with the [calf raise test](/calf-raise-test/).',
-        'A sensible mix for most people: stretch both calf muscles, open up the ankle with knee-over-toe rocks, and add calf raises a few times a week. Walkito starts at 2 holds of 30 seconds for each stretch and 3 sets of 10 for two-foot calf raises.',
+        'Strengthening tight calves is a good idea, and **you do not have to pick one or the other.** In 2021, Afonso and colleagues pooled 11 randomised trials with 452 people that compared strength training with stretching. Range of motion improved about the same with both. The trials were very different from each other and covered many joints, not just the ankle, so read this as a strong hint, not a final answer.',
+        'Strength matters for another reason. A calf that tires early feels tight sooner. Full-range calf raises, where you lower your heels all the way down and rise all the way up, load the muscle through its whole length.',
+        'If your calves feel tight every time you walk or run more than usual, building their capacity is often the more useful long-term step. You can check your calf endurance with the [calf raise test](/calf-raise-test/).',
+        'A sensible mix for most people:',
+        {
+          list: [
+            'Stretch both calf muscles.',
+            'Open up the ankle with knee-over-toe rocks.',
+            'Add calf raises a few times a week.',
+          ],
+        },
+        'Walkito starts at 2 holds of 30 seconds for each stretch and 3 sets of 10 for two-foot calf raises.',
       ],
       sourceNote:
         'Afonso 2021: pooled effect size -0.22 (95% CI -0.55 to 0.12), no significant difference between strength training and stretching on range of motion.',
@@ -163,8 +182,16 @@ export const TIGHT_CALVES_EN: Guide = {
     {
       h2: 'Are tight calves caused by dehydration or cramps?',
       paragraphs: [
-        'Dehydration is often blamed for tight calves and cramps, but the evidence we found does not back it well. In 2011, Schwellnus and colleagues followed 210 Ironman triathletes. The 43 who cramped had no different changes in body weight or blood salt levels from those who did not. The two things that predicted cramping were racing faster and having cramped before. That points to tired, hard-working muscles, not low water or salt. This was one group of endurance athletes, so it does not settle the question for everyone, but it is stronger than the claims you see on product pages.',
-        'Night cramps are a different situation, and the research disagrees with itself. In a 2012 trial of 80 adults over 55, stretching the calves and hamstrings every night before bed for about a month and a half cut cramps by 1.2 per night more than doing nothing, and made them less painful (Hallegraeff and colleagues). An earlier 2005 trial of 191 people already on quinine found stretching advice made no difference to cramps at three months (Coppin and colleagues). A gentle calf stretch before bed is cheap and low-risk, so it is reasonable to try, but it may not work for you.',
+        'Dehydration is often blamed for tight calves and cramps, but **the evidence we found does not back it well.** In 2011, Schwellnus and colleagues followed 210 Ironman triathletes. The 43 who cramped had no different changes in body weight or blood salt levels from those who did not. The two things that predicted cramping were racing faster and having cramped before.',
+        'That points to tired, hard-working muscles, not low water or salt. This was one group of endurance athletes, so it does not settle the question for everyone, but it is stronger than the claims you see on product pages.',
+        'Night cramps are a different situation, and the research disagrees with itself:',
+        {
+          list: [
+            'In a 2012 trial of 80 adults over 55, stretching the calves and hamstrings every night before bed for about a month and a half cut cramps by 1.2 per night more than doing nothing, and made them less painful (Hallegraeff and colleagues).',
+            'An earlier 2005 trial of 191 people already on quinine found stretching advice made no difference to cramps at three months (Coppin and colleagues).',
+          ],
+        },
+        'A gentle calf stretch before bed is cheap and low-risk, so it is reasonable to try, but it may not work for you.',
         'If cramps are frequent, new, or come with other symptoms, talk to a doctor. Some medicines and some medical conditions can cause them.',
       ],
       sourceNote:
@@ -174,8 +201,24 @@ export const TIGHT_CALVES_EN: Guide = {
     {
       h2: 'How do you stop calves getting tight from running or standing?',
       paragraphs: [
-        'Calves that get tight from running or standing usually need their load changed, not just more stretching. If you run, raise your weekly distance gradually, add hills slowly, and give a new pair of lower-drop shoes time before long runs. The page on [heel pain in runners](/heel-pain-runners/) covers load in more detail.',
-        'If you stand all day, shift your weight often, take short walking breaks, and do a few calf raises and a stretch at your break. See [feet hurt from standing all day](/feet-hurt-standing-all-day/).',
+        'Calves that get tight from running or standing **usually need their load changed, not just more stretching.** If you run:',
+        {
+          list: [
+            'Raise your weekly distance gradually.',
+            'Add hills slowly.',
+            'Give a new pair of lower-drop shoes time before long runs.',
+          ],
+        },
+        'The page on [heel pain in runners](/heel-pain-runners/) covers load in more detail.',
+        'If you stand all day:',
+        {
+          list: [
+            'Shift your weight often.',
+            'Take short walking breaks.',
+            'Do a few calf raises and a stretch at your break.',
+          ],
+        },
+        'See [feet hurt from standing all day](/feet-hurt-standing-all-day/).',
         'If you wear heels most days, you do not have to give them up. Mix in flat days and stretch both calf muscles in the evening. Building calf strength over time makes it easier for your calves to handle whatever you ask of them.',
       ],
     },

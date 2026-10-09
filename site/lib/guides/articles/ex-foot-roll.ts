@@ -32,7 +32,8 @@ export const EX_FOOT_ROLL: Guide = {
     {
       h2: 'How do you do a foot roll?',
       paragraphs: [
-        'Sit in a chair with one foot on a ball. A tennis ball, lacrosse ball or massage ball all work. Place the ball under the arch and roll it slowly from the ball of the foot back toward the heel and forward again. Use firm pressure, not light. The ball should press into the tissue enough that you feel a deep, sustained pressure.',
+        'Sit in a chair with one foot on a ball. A tennis ball, lacrosse ball or massage ball all work. Place the ball under the arch and roll it slowly from the ball of the foot back toward the heel and forward again.',
+        'Use firm pressure, not light. The ball should press into the tissue enough that you feel a deep, sustained pressure.',
         'Roll for about 2 minutes per foot. Keep the pressure steady and avoid spots that feel sharp. If a spot makes you wince, ease off or skip over it. The goal is a firm massage, not pain.',
       ],
       exercises: [
@@ -57,7 +58,7 @@ export const EX_FOOT_ROLL: Guide = {
       h2: 'Does rolling a ball under your foot help plantar fasciitis?',
       paragraphs: [
         'Rolling is widely recommended by physical therapists and podiatrists as part of plantar fasciitis care. The idea is that it works as a self-massage: it applies pressure along the fascia, may increase blood flow locally and can reduce perceived tightness. Patients commonly report short-term relief after rolling.',
-        'That said, no randomized trial has tested rolling as a standalone intervention for plantar fasciitis. It appears in protocols alongside stretching and strengthening, but it is never the variable being measured. The 2023 guideline does not grade it separately. Stretching and strength training carry the evidence.',
+        'That said, **no randomized trial has tested rolling as a standalone intervention for plantar fasciitis.** It appears in protocols alongside stretching and strengthening, but it is never the variable being measured. The 2023 guideline does not grade it separately. Stretching and strength training carry the evidence.',
         'Rolling sits in the recovery category. It is useful after a long day on your feet, after a session of calf raises, or any time the sole feels tight and sore. It is not a replacement for the [plantar fascia stretch](/exercises/plantar-fascia-stretch/), [calf stretch](/exercises/calf-stretch/) or [calf raises](/exercises/calf-raises/) that carry the guideline grades.',
       ],
       cites: [CITE.guideline],
@@ -66,14 +67,21 @@ export const EX_FOOT_ROLL: Guide = {
       h2: 'Should you use a frozen water bottle?',
       paragraphs: [
         'A frozen water bottle is one of the most popular home remedies for plantar fasciitis. The shape lets you roll the full length of the sole, and the cold numbs the area at the same time. Clinicians often recommend it, and it does feel good.',
-        'Here is what the evidence actually says. Cold therapy (ice, frozen bottles) is a general pain management tool. It reduces discomfort by numbing nerve endings and may temporarily reduce swelling. But no randomized trial has compared a frozen bottle to a room-temperature bottle for plantar fasciitis. The benefit you feel is likely a mix of the rolling (pressure on the fascia) and the numbing (cold on the nerve endings). Whether the cold speeds recovery beyond what rolling alone does is an open question.',
-        'If a frozen bottle gives you relief, use it. Just do not count on the cold as a replacement for stretching and strength work. And avoid icing for longer than 15 to 20 minutes at a time. Prolonged cold can irritate the skin.',
+        'Here is what the evidence actually says. Cold therapy (ice, frozen bottles) is a general pain management tool. It reduces discomfort by numbing nerve endings and may temporarily reduce swelling.',
+        'But no randomized trial has compared a frozen bottle to a room-temperature bottle for plantar fasciitis. The benefit you feel is likely a mix of the rolling (pressure on the fascia) and the numbing (cold on the nerve endings). Whether the cold speeds recovery beyond what rolling alone does is an open question.',
+        'If a frozen bottle gives you relief, use it. **Just do not count on the cold as a replacement for stretching and strength work.** And avoid icing for longer than 15 to 20 minutes at a time. Prolonged cold can irritate the skin.',
       ],
     },
     {
       h2: 'What kind of ball should you use?',
       paragraphs: [
-        'A tennis ball is the most common starting point. It is soft enough to press into the arch without being sharp. A lacrosse ball is firmer and delivers more pressure. A golf ball is small and very hard, and can be too much for a sore heel.',
+        {
+          list: [
+            'A tennis ball is the most common starting point. It is soft enough to press into the arch without being sharp.',
+            'A lacrosse ball is firmer and delivers more pressure.',
+            'A golf ball is small and very hard, and can be too much for a sore heel.',
+          ],
+        },
         'Start with whatever you have. If a tennis ball feels too soft after a few sessions, try a lacrosse ball. If you are wincing on any ball, it is too firm or you are pressing too hard. The exercise should feel like a deep massage, never like you are grinding into an injury.',
         'A frozen water bottle works in place of a ball and adds cold. A foam roller under the foot is gentler still. A specialized foot roller from a sports store does the same job. None of these is proven to work better than the others.',
       ],
@@ -81,9 +89,13 @@ export const EX_FOOT_ROLL: Guide = {
     {
       h2: 'What are the common mistakes with the foot roll?',
       paragraphs: [
-        'Pressing too hard. Harder is not better. If you push until the pain hits 6/10 or you are grimacing, you may be irritating the fascia rather than settling it. Back off to firm, steady pressure.',
-        'Rolling too fast. Quick back-and-forth movement skips over the tissue. Roll slowly, about one full pass per second, so each spot gets sustained pressure.',
-        'Using it as the only exercise. Rolling feels productive, and it is easy to do at a desk. But it does not strengthen the calf or stretch the fascia in the way the guideline-graded exercises do. Pair it with the [plantar fascia stretch](/exercises/plantar-fascia-stretch/) and [calf raises](/calf-raises-plantar-fasciitis/) for the full picture.',
+        {
+          list: [
+            '**Pressing too hard.** Harder is not better. If you push until the pain hits 6/10 or you are grimacing, you may be irritating the fascia rather than settling it. Back off to firm, steady pressure.',
+            '**Rolling too fast.** Quick back-and-forth movement skips over the tissue. Roll slowly, about one full pass per second, so each spot gets sustained pressure.',
+            '**Using it as the only exercise.** Rolling feels productive, and it is easy to do at a desk. But it does not strengthen the calf or stretch the fascia in the way the guideline-graded exercises do. Pair it with the [plantar fascia stretch](/exercises/plantar-fascia-stretch/) and [calf raises](/calf-raises-plantar-fasciitis/) for the full picture.',
+          ],
+        },
       ],
       cites: [CITE.guideline],
     },
@@ -91,7 +103,7 @@ export const EX_FOOT_ROLL: Guide = {
       h2: 'When should you roll your foot, and when should you skip it?',
       paragraphs: [
         'Roll after a long day on your feet, after a session of calf raises, or any time the sole feels tight. In Walkito, the foot roll appears on recovery days and at the end of sessions as a cooldown.',
-        'Skip rolling if the heel is acutely swollen, red or warm. Those signs can point to something other than plantar fasciitis, and pressing into an inflamed area can make it worse. See a clinician first. For the full set of exercises the guideline recommends, see [plantar fasciitis exercises](/plantar-fasciitis-exercises/) or [feet that hurt from standing all day](/feet-hurt-standing-all-day/).',
+        '**Skip rolling if the heel is acutely swollen, red or warm.** Those signs can point to something other than plantar fasciitis, and pressing into an inflamed area can make it worse. See a clinician first. For the full set of exercises the guideline recommends, see [plantar fasciitis exercises](/plantar-fasciitis-exercises/) or [feet that hurt from standing all day](/feet-hurt-standing-all-day/).',
       ],
     },
   ],

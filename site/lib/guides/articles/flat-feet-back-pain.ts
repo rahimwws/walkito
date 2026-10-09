@@ -47,8 +47,17 @@ export const FLAT_FEET_BACK_PAIN_EN: Guide = {
       h2: 'Can flat feet cause back pain?',
       keyFact: 'The Framingham Foot Study of 1,930 adults found no link between flat foot posture and low back pain (Menz and colleagues, 2013).',
       paragraphs: [
-        'Flat feet have not been shown to cause back pain. Some studies find that people with flatter or inward-rolling feet report back pain a bit more often, and others find no link at all. None of them can show that the feet came first and the back pain followed.',
-        'That gap matters because low back pain is very common and usually has no single cause. A 2018 Lancet review put it plainly: for nearly all people with low back pain, no specific source of the pain can be identified. Only a small share have a clear medical cause such as a fracture, an infection or a tumour. The people at greatest risk, according to that review, include those with physically demanding jobs, smokers, people with obesity and people with other physical or mental conditions. With that many contributors, a simple foot-to-back story is hard to prove.',
+        '**Flat feet have not been shown to cause back pain.** Some studies find that people with flatter or inward-rolling feet report back pain a bit more often, and others find no link at all. None of them can show that the feet came first and the back pain followed.',
+        'That gap matters because low back pain is very common and usually has no single cause. A 2018 Lancet review put it plainly: for nearly all people with low back pain, no specific source of the pain can be identified. Only a small share have a clear medical cause such as a fracture, an infection or a tumour. The people at greatest risk, according to that review, include:',
+        {
+          list: [
+            'Those with physically demanding jobs.',
+            'Smokers.',
+            'People with obesity.',
+            'People with other physical or mental conditions.',
+          ],
+        },
+        'With that many contributors, a simple foot-to-back story is hard to prove.',
         'So the honest answer is "probably not on its own, for most people". Your back pain is worth looking at as its own problem.',
       ],
       cites: [CITE.menz, CITE.hartvigsen],
@@ -58,8 +67,17 @@ export const FLAT_FEET_BACK_PAIN_EN: Guide = {
       keyFact: 'In the Framingham Foot Study, women whose feet rolled inward while walking had about 1.5 times the odds of low back pain, while standing foot posture showed no link (Menz and colleagues, 2013).',
       paragraphs: [
         'The Framingham Foot Study is one of the largest studies to measure feet directly, and it found no link between flat feet and low back pain. Researchers looked at 1,930 adults from the town of Framingham, Massachusetts, between 2002 and 2005. They measured each person\'s standing arch from a footprint and sorted feet into flat, normal or high-arched. Foot posture, flat or not, showed no association with low back pain.',
-        'The study also measured foot function: how pressure moved under the foot while each person walked. A foot that rolled inward during walking is called pronated. In women, a pronated walking pattern was linked with low back pain, with about 1.5 times the odds compared with women whose feet moved normally. The link held after the researchers allowed for age, weight, smoking and depressive symptoms. In men, there was no link.',
-        'Many websites report this study as "people with flat feet are 50 percent more likely to have back pain". That is not what it found. The arch shape you see when you stand did not matter. What mattered, in women only, was how the foot moved during walking. And because the study measured everyone once, it cannot say whether the foot motion led to the back pain, the back pain changed how people walked, or something else drove both.',
+        'The study also measured foot function: how pressure moved under the foot while each person walked. A foot that rolled inward during walking is called pronated.',
+        'In women, a pronated walking pattern was linked with low back pain, with about 1.5 times the odds compared with women whose feet moved normally. The link held after the researchers allowed for age, weight, smoking and depressive symptoms. In men, there was no link.',
+        'Many websites report this study as "people with flat feet are 50 percent more likely to have back pain". That is not what it found. **The arch shape you see when you stand did not matter.** What mattered, in women only, was how the foot moved during walking.',
+        'And because the study measured everyone once, it cannot say whether:',
+        {
+          list: [
+            'The foot motion led to the back pain.',
+            'The back pain changed how people walked.',
+            'Something else drove both.',
+          ],
+        },
       ],
       sourceNote:
         'Menz 2013: cross-sectional, n = 1,930. Pronated foot function and low back pain in women, odds ratio 1.51 (95% CI 1.1 to 2.07); 1.48 (95% CI 1.07 to 2.05) after adjusting for age, weight, smoking and depressive symptoms.',
@@ -70,8 +88,9 @@ export const FLAT_FEET_BACK_PAIN_EN: Guide = {
       keyFact: 'Among 97,279 military recruits, 5 percent with mild flat feet had intermittent low back pain, the same as recruits with normal feet, against 10 percent with moderate or severe flat feet (Kosashvili and colleagues, 2008).',
       paragraphs: [
         'People with marked flat feet report back pain somewhat more often in some studies, but people with mild flat feet do not. The biggest dataset comes from 97,279 young military recruits, where an orthopedic doctor graded each recruit\'s flat feet. Sixteen percent had flat feet, and most of those (74 percent) were mild.',
-        'Intermittent low back pain, meaning back pain with no findings on exam or X-ray, showed up in 5 percent of recruits with normal feet and 5 percent with mild flat feet. It was 10 percent in those with moderate or severe flat feet. So for most flat feet, the mild kind, there was no difference at all.',
-        'A 2021 survey of 1,798 adults interviewed at a festival in Saudi Arabia reported much bigger numbers: 65.9 percent of people with flat feet said they had low back pain, and flat feet came with 3.3 times the odds of short-term back pain and 4.5 times the odds of long-term back pain. A survey like this looks at feet and backs at one moment, in whoever happened to stop and take part, and people said themselves whether they had flat feet. It cannot rule out other explanations, and the researchers themselves found that sex, age, job and physical activity were also linked with back pain.',
+        'Intermittent low back pain, meaning back pain with no findings on exam or X-ray, showed up in 5 percent of recruits with normal feet and 5 percent with mild flat feet. It was 10 percent in those with moderate or severe flat feet. **So for most flat feet, the mild kind, there was no difference at all.**',
+        'A 2021 survey of 1,798 adults interviewed at a festival in Saudi Arabia reported much bigger numbers: 65.9 percent of people with flat feet said they had low back pain, and flat feet came with 3.3 times the odds of short-term back pain and 4.5 times the odds of long-term back pain.',
+        'A survey like this looks at feet and backs at one moment, in whoever happened to stop and take part, and people said themselves whether they had flat feet. It cannot rule out other explanations, and the researchers themselves found that sex, age, job and physical activity were also linked with back pain.',
       ],
       cites: [CITE.kosashvili, CITE.almutairi],
     },
@@ -79,7 +98,7 @@ export const FLAT_FEET_BACK_PAIN_EN: Guide = {
       h2: 'How could flat feet affect the back?',
       keyFact: 'In a lab study of 20 people, insoles that made the feet roll inward tilted the pelvis by about half a degree on average while walking (Hornestam and colleagues, 2021).',
       paragraphs: [
-        'The usual explanation is the kinetic chain: the idea that the joints from foot to spine move as a linked system, so a foot that rolls inward turns the shin and thigh inward, tilts the pelvis and loads the lower back differently. The mechanics are real, but the size of the effect looks small.',
+        'The usual explanation is the kinetic chain: the idea that the joints from foot to spine move as a linked system, so a foot that rolls inward turns the shin and thigh inward, tilts the pelvis and loads the lower back differently. **The mechanics are real, but the size of the effect looks small.**',
         'In a 2021 lab study, 20 people walked with wedged insoles that made their feet roll inward. Their pelvis tilted a little more to one side (about half a degree on average) and the hip turned in by about 1.4 degrees. That shows the foot can nudge the pelvis. It does not show that half a degree causes pain, and the study did not measure pain.',
         'The kinetic chain is a reasonable idea for a clinician to check in one person. It is not a reason to assume your arches are behind your back pain.',
       ],
@@ -91,9 +110,18 @@ export const FLAT_FEET_BACK_PAIN_EN: Guide = {
       paragraphs: [
         'Insoles and orthotics for back pain have mixed, low-quality evidence, and any benefit seen so far has been short-lived. Orthotics are shaped shoe inserts, and custom ones are made from a cast or scan of your foot.',
         'A 2014 review pooled five trials of insoles for people who already had low back pain (293 people) and found no significant effect. Six more trials (2,379 people) tested insoles to prevent back pain and also found no significant effect.',
-        'The best-known single trial, from 2017, gave 225 adults with back pain of at least three months either custom orthotics, orthotics plus chiropractic care, or nothing (a waiting list). After about a month and a half, the orthotics-only group had less pain and better function than the waiting list. By three months and later, the groups were no longer different. People in the trial were not chosen for flat feet, and the comparison was with no care at all, not with a fake insole.',
-        'Two smaller lines of research looked at people whose feet roll inward. A 2013 trial of 51 people with chronic back pain and strongly pronated feet found custom orthoses eased back pain more than placebo insoles over about a month. A 2025 review pooled four small trials in this group and found less pain and disability. A 2026 review of seven trials (423 people) found orthoses helped pain overall, but rated the evidence low quality and found no clear effect from ready-made insoles.',
-        'Insoles for foot comfort are reasonable and low risk. Do not expect them to sort out a back problem on their own. [Insoles vs exercises](/insoles-vs-exercises/) covers the foot side of that choice.',
+        'The best-known single trial, from 2017, gave 225 adults with back pain of at least three months:',
+        {
+          list: [
+            'Custom orthotics.',
+            'Orthotics plus chiropractic care.',
+            'Nothing (a waiting list).',
+          ],
+        },
+        'After about a month and a half, the orthotics-only group had less pain and better function than the waiting list. By three months and later, the groups were no longer different. People in the trial were not chosen for flat feet, and the comparison was with no care at all, not with a fake insole.',
+        'Two smaller lines of research looked at people whose feet roll inward. A 2013 trial of 51 people with chronic back pain and strongly pronated feet found custom orthoses eased back pain more than placebo insoles over about a month. A 2025 review pooled four small trials in this group and found less pain and disability.',
+        'A 2026 review of seven trials (423 people) found orthoses helped pain overall, but rated the evidence low quality and found no clear effect from ready-made insoles.',
+        'Insoles for foot comfort are reasonable and low risk. **Do not expect them to sort out a back problem on their own.** [Insoles vs exercises](/insoles-vs-exercises/) covers the foot side of that choice.',
       ],
       table: {
         caption: 'Insole and orthotic studies for low back pain',
@@ -115,7 +143,7 @@ export const FLAT_FEET_BACK_PAIN_EN: Guide = {
       keyFact: 'A 2021 Cochrane review of 249 trials found exercise lowered chronic low back pain by about 15 points on a 100-point scale compared with no exercise, usual care or placebo (Hayden and colleagues, 2021).',
       paragraphs: [
         'General exercise has much stronger evidence for back pain than anything aimed at the feet. A 2021 Cochrane review, a large summary of trials, pooled 249 trials of exercise for chronic low back pain. It found moderate-certainty evidence that exercise lowered pain by about 15 points on a 100-point scale compared with no exercise, usual care or placebo. The effect on daily function was smaller, about 7 points.',
-        'The trials covered many kinds of exercise, and 151 of them tested two or more types of exercise. Exercise also beat advice or education alone for pain. For most people, the practical point is to pick something regular that you can keep up, ideally with a physical therapist\'s help at the start.',
+        'The trials covered many kinds of exercise, and 151 of them tested two or more types of exercise. Exercise also beat advice or education alone for pain. For most people, the practical point is to **pick something regular that you can keep up**, ideally with a physical therapist\'s help at the start.',
         'The 2018 Lancet review adds some reassurance: most new episodes of low back pain settle quickly, although back pain often comes back. If your back is the main problem, a physical therapist or doctor can build a back plan around you. Foot work can sit alongside it, not replace it.',
       ],
       sourceNote:
@@ -127,7 +155,8 @@ export const FLAT_FEET_BACK_PAIN_EN: Guide = {
       keyFact: 'In a trial of 52 people with flexible flat feet, a program of short-foot, ankle, hip and stretching work changed two measures of arch shape more than in a control group (Brijwasi and Borkar, 2023).',
       paragraphs: [
         'Working on your flat feet makes sense if your feet themselves ache, tire quickly or feel unstable. It is not a back program, and no trial has shown that foot exercises on their own ease back pain.',
-        'For flexible flat feet, where the arch comes back when you lift the foot, one trial of 52 people found that short-foot exercises, ankle work, hip strengthening and stretching, done together, changed arch shape more than in a control group. That trial measured arch shape, not pain. A 2024 review of short-foot training on its own found no clear change in foot posture overall. The full program, with doses and progressions, is in [flat feet exercises](/flat-feet-exercises/). Three of the core moves are below.',
+        'For flexible flat feet, where the arch comes back when you lift the foot, one trial of 52 people found that short-foot exercises, ankle work, hip strengthening and stretching, done together, changed arch shape more than in a control group. That trial measured arch shape, not pain. A 2024 review of short-foot training on its own found no clear change in foot posture overall.',
+        'The full program, with doses and progressions, is in [flat feet exercises](/flat-feet-exercises/). Three of the core moves are below.',
         'Walkito builds these into a weekly plan for the feet and starts the short foot exercise at 3 sets of 8 with 5-second holds. It does nothing for the back directly, and it does not claim to.',
         'If any exercise takes your foot pain to **6/10 or more**, or sets off back pain or pain down the leg, stop for the day.',
       ],
@@ -175,9 +204,19 @@ export const FLAT_FEET_BACK_PAIN_EN: Guide = {
       h2: 'What does a clinician need to check?',
       keyFact: 'Serious spinal problems are rare, and an international framework for clinicians lists the warning signs to screen for first (Finucane and colleagues, 2020).',
       paragraphs: [
-        'A clinician looks at the back and the feet as two separate questions, and starts with the back. The first job is to rule out the rare serious causes of back pain: nerve compression, fracture, infection or cancer. An international framework for clinicians lists the warning signs they screen for, and they are in the list at the end of this page.',
+        'A clinician looks at the back and the feet as two separate questions, and **starts with the back**. The first job is to rule out the rare serious causes of back pain:',
+        {
+          list: [
+            'Nerve compression.',
+            'Fracture.',
+            'Infection.',
+            'Cancer.',
+          ],
+        },
+        'An international framework for clinicians lists the warning signs they screen for, and they are in the list at the end of this page.',
         'For the back, expect questions about how the pain started, what eases it and whether it spreads down a leg. The exam usually checks how the back moves, plus strength, reflexes and feeling in the legs and feet. Scans are not usually needed unless something points to a serious cause.',
-        'For the feet, a clinician checks whether the flat foot is flexible (the arch returns when you rise onto your toes or lift the foot) or rigid (it stays flat). A rigid flat foot, or one arch that has dropped in adulthood with pain on the inside of the ankle, needs its own assessment. The second pattern is often a weakening tendon, covered in [posterior tibial tendon dysfunction exercises](/posterior-tibial-tendon-dysfunction-exercises/). A clinician may also watch you walk to see how much your feet roll in.',
+        'For the feet, a clinician checks whether the flat foot is flexible (the arch returns when you rise onto your toes or lift the foot) or rigid (it stays flat).',
+        'A rigid flat foot, or one arch that has dropped in adulthood with pain on the inside of the ankle, needs its own assessment. The second pattern is often a weakening tendon, covered in [posterior tibial tendon dysfunction exercises](/posterior-tibial-tendon-dysfunction-exercises/). A clinician may also watch you walk to see how much your feet roll in.',
         'Back problems can cause foot symptoms too. A pinched nerve in the lower back can bring numbness, tingling or weakness in the foot, and a weak foot can look like a foot problem when the cause is higher up.',
       ],
       cites: [CITE.finucaneRedFlags, CITE.hartvigsen],

@@ -47,7 +47,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
         'The arch of the foot, called the medial longitudinal arch, is formed by the bones, ligaments and tendons on the inside of the foot. In a flat foot, this arch is lower or absent when you stand. The medical term is pes planus.',
         'Flat feet are common. A 2023 systematic review pooled 12 population-based studies covering about 16,000 people and reported an overall prevalence of 15.6 percent. In adults alone, estimates range from about 5 to 27 percent depending on the population and the measurement method. Higher BMI and older age are associated with a higher prevalence.',
         '"Fallen arches" is a common name for flat feet. Most of the time the two phrases mean the same thing. Sometimes "fallen arches" is used more specifically for an arch that has dropped in adulthood, which has a different cause covered below.',
-        'Having flat feet does not automatically mean something is wrong. Many people with low arches walk, run and stand without any symptoms. The questions that matter are whether the flat foot is flexible or rigid, and whether it is causing pain.',
+        '**Having flat feet does not automatically mean something is wrong.** Many people with low arches walk, run and stand without any symptoms. The questions that matter are whether the flat foot is flexible or rigid, and whether it is causing pain.',
       ],
       cites: [CITE.salinasTorres],
     },
@@ -57,7 +57,8 @@ export const HUB_FLAT_FEET_EN: Guide = {
       paragraphs: [
         'A flexible flat foot is one where the arch flattens under your weight but comes back when the foot is off the ground. Most flat feet are this type. A rigid flat foot stays flat whether you are standing on it or not.',
         'A quick check: sit down and look at the inside of your foot. If you can see an arch, stand up on both feet. If the arch disappears when you stand but was there when you sat, the flat foot is flexible. Another way: stand on your toes. If the arch appears when you rise up, it is flexible.',
-        'The difference matters because exercise can influence a flexible arch. In a trial of 52 people with flexible flat feet, six weeks of short-foot exercises, ankle work, hip strengthening and stretching changed two measures of arch shape more than in a control group. A rigid flat foot is structural (often from a tarsal coalition, a bony bridge between bones in the foot) and exercise will not change its shape. A rigid flat foot that causes pain usually needs a clinician\'s assessment.',
+        '**The difference matters because exercise can influence a flexible arch.** In a trial of 52 people with flexible flat feet, six weeks of short-foot exercises, ankle work, hip strengthening and stretching changed two measures of arch shape more than in a control group.',
+        'A rigid flat foot is structural (often from a tarsal coalition, a bony bridge between bones in the foot) and exercise will not change its shape. A rigid flat foot that causes pain usually needs a clinician\'s assessment.',
       ],
       cites: [CITE.brijwasi],
     },
@@ -65,9 +66,17 @@ export const HUB_FLAT_FEET_EN: Guide = {
       h2: 'Are flat feet actually a problem?',
       keyFact: 'The Framingham Foot Study of about 1,900 adults found no link between flat foot posture and back pain, though a pronated walking gait showed a small link in women only (Menz and colleagues, 2013).',
       paragraphs: [
-        'For most people, no. A flexible flat foot that causes no pain and does not limit what you do is a normal variation in foot shape, not a condition that needs solving.',
-        'The worry people most often bring up is back pain. The largest study on the question, the Framingham Foot Study, looked at about 1,900 adults. It found no association between flat foot posture and low back pain. In women, a foot that rolled inward while walking (pronated gait) showed a small link to back pain, but the foot posture itself, flat or not, did not. In men, neither posture nor gait was linked to back pain.',
-        'Flat feet can shift how load travels through the leg. Some runners with very pronated feet develop overuse injuries at the ankle or knee, but the link between foot posture and injury is weaker than many people assume. A 2024 review of short-foot training on flat feet found no clear change in foot posture overall, and a change in one measure of arch drop only in programs that ran longer than six weeks. Both the trial and the review measured arch shape, not pain or injury rates.',
+        '**For most people, no.** A flexible flat foot that causes no pain and does not limit what you do is a normal variation in foot shape, not a condition that needs solving.',
+        'The worry people most often bring up is back pain. The largest study on the question, the Framingham Foot Study, looked at about 1,900 adults. What it found:',
+        {
+          list: [
+            '**Overall:** no association between flat foot posture and low back pain.',
+            '**In women:** a foot that rolled inward while walking (pronated gait) showed a small link to back pain, but the foot posture itself, flat or not, did not.',
+            '**In men:** neither posture nor gait was linked to back pain.',
+          ],
+        },
+        'Flat feet can shift how load travels through the leg. Some runners with very pronated feet develop overuse injuries at the ankle or knee, but the link between foot posture and injury is weaker than many people assume.',
+        'A 2024 review of short-foot training on flat feet found no clear change in foot posture overall, and a change in one measure of arch drop only in programs that ran longer than six weeks. Both the trial and the review measured arch shape, not pain or injury rates.',
         'The cases where flat feet do matter are covered below: adult-acquired flatfoot from a weakening tendon, and flat feet that come with pain, swelling, or a sudden change in arch height.',
       ],
       cites: [CITE.menz, CITE.cheng],
@@ -76,10 +85,19 @@ export const HUB_FLAT_FEET_EN: Guide = {
       h2: 'What is adult-acquired flatfoot?',
       paragraphs: [
         'Adult-acquired flatfoot deformity is a condition where an arch that was normal collapses in adulthood, usually because the posterior tibial tendon (the tendon that holds up the arch from the inside of the ankle) weakens and can no longer do its job. The clinical name for the tendon problem is posterior tibial tendon dysfunction.',
-        'The posterior tibial tendon runs behind the inside ankle bone and attaches to the bones that form the arch. When it stretches or tears, the arch drops, the heel tilts outward, and the forefoot can start to point away from the midline. Pain and swelling along the inside of the ankle are common early signs. A single-heel rise test, where you try to stand on one foot and rise onto your toes, may be difficult or painful on the affected side.',
-        'An overview in The Open Orthopaedics Journal describes four stages: stage I has tendon inflammation but no visible deformity, stage II shows a flexible flatfoot deformity that can still be corrected by hand, stage III is a rigid deformity that cannot be corrected manually, and stage IV involves ankle joint changes on top of the rigid deformity.',
+        'The posterior tibial tendon runs behind the inside ankle bone and attaches to the bones that form the arch. When it stretches or tears, the arch drops, the heel tilts outward, and the forefoot can start to point away from the midline.',
+        'Pain and swelling along the inside of the ankle are common early signs. A single-heel rise test, where you try to stand on one foot and rise onto your toes, may be difficult or painful on the affected side.',
+        'An overview in The Open Orthopaedics Journal describes four stages:',
+        {
+          list: [
+            '**Stage I:** tendon inflammation but no visible deformity.',
+            '**Stage II:** a flexible flatfoot deformity that can still be corrected by hand.',
+            '**Stage III:** a rigid deformity that cannot be corrected manually.',
+            '**Stage IV:** ankle joint changes on top of the rigid deformity.',
+          ],
+        },
         'A systematic review of exercise for posterior tibial tendon dysfunction found limited randomized evidence. The review noted that clinical guidelines recommend non-surgical management including exercise, orthoses and activity modification for early stages (stages I and II), but the number of high-quality trials is small. Later stages often require a clinician\'s assessment and may involve bracing or surgery.',
-        'If one arch has dropped as an adult, with pain or swelling on the inside of the ankle, see a clinician before starting an exercise program. This is not the same as a lifelong flexible flat foot.',
+        'If one arch has dropped as an adult, with pain or swelling on the inside of the ankle, **see a clinician before starting an exercise program.** This is not the same as a lifelong flexible flat foot.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
@@ -102,8 +120,9 @@ export const HUB_FLAT_FEET_EN: Guide = {
       h2: 'Do shoes and insoles help flat feet?',
       paragraphs: [
         'Supportive shoes with a firm midsole and some arch support can make standing and walking more comfortable for people with flat feet. They do not change the arch over time, but they reduce the work the arch muscles have to do during the day.',
-        'Off-the-shelf arch insoles are widely available and inexpensive. Custom orthotics, made from a mold of your foot, cost more and are sometimes recommended for posterior tibial tendon dysfunction. The evidence behind orthotics for flat feet specifically is thinner than most people assume. For plantar fasciitis, the 2023 heel pain guideline recommends against using orthotics as a standalone short-term approach (grade B against) but gives combined care including orthotics a C.',
-        'If your flat feet cause no pain, you do not need special shoes. If standing or walking makes the arch or ankle ache, a shoe with a firm sole and mild arch support is a reasonable first step, and worth trying before spending more on custom inserts. Shoes with very flat, unsupportive soles (thin sandals, worn-out sneakers) tend to make arch fatigue worse on long days.',
+        'Off-the-shelf arch insoles are widely available and inexpensive. Custom orthotics, made from a mold of your foot, cost more and are sometimes recommended for posterior tibial tendon dysfunction.',
+        'The evidence behind orthotics for flat feet specifically is thinner than most people assume. For plantar fasciitis, the 2023 heel pain guideline recommends against using orthotics as a standalone short-term approach (grade B against) but gives combined care including orthotics a C.',
+        '**If your flat feet cause no pain, you do not need special shoes.** If standing or walking makes the arch or ankle ache, a shoe with a firm sole and mild arch support is a reasonable first step, and worth trying before spending more on custom inserts. Shoes with very flat, unsupportive soles (thin sandals, worn-out sneakers) tend to make arch fatigue worse on long days.',
       ],
       cites: [CITE.guideline],
     },
@@ -111,7 +130,7 @@ export const HUB_FLAT_FEET_EN: Guide = {
       h2: 'Which exercises help flat feet?',
       paragraphs: [
         'Exercise for flat feet focuses on the muscles that support the arch from below (the intrinsic foot muscles) and the muscles higher up that control how the foot lands (the calf, the hip). The best evidence so far comes from a trial of 52 people with flexible flat feet where six weeks of combined exercise changed arch shape more than in a control group. That trial included short-foot work, ankle exercises, hip strengthening and stretching, done together.',
-        'A 2024 review of short-foot training on its own was less encouraging: it found no clear change overall, and an improvement in one arch measure only in programs longer than six weeks. The takeaway is that a combined program works better than one exercise in isolation, and patience matters.',
+        'A 2024 review of short-foot training on its own was less encouraging: it found no clear change overall, and an improvement in one arch measure only in programs longer than six weeks. The takeaway is that **a combined program works better than one exercise in isolation, and patience matters.**',
         '[Flat feet exercises](/flat-feet-exercises/) has the full exercise list, doses, what each should feel like, and the evidence behind each one. Walkito builds a weekly plan around an arch-hold goal, progressing from seated short-foot work through standing and single-leg versions, then adding band resistance and hip strengthening. Individual exercise pages go deeper:',
       ],
       bullets: [

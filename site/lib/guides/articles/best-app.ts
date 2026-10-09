@@ -28,7 +28,7 @@ export const BEST_APP_EN: Guide = {
       h2: 'What should a plantar fasciitis app actually do?',
       keyFact: 'The 2023 clinical guideline for heel pain grades plantar fascia and calf stretching A, the top grade, and strength training B (Koc and colleagues, 2023).',
       paragraphs: [
-        'A useful plantar fasciitis app should include exercises that match what the research supports. The 2023 clinical guideline for heel pain grades the evidence behind each approach. Plantar fascia and calf stretching earn an A, the top grade. Strength training earns a B. That means both should be in the app, not just one.',
+        'A useful plantar fasciitis app should include exercises that match what the research supports. The 2023 clinical guideline for heel pain grades the evidence behind each approach. Plantar fascia and calf stretching earn an A, the top grade. Strength training earns a B. That means **both should be in the app, not just one.**',
         'Beyond the exercise list, these are the things worth checking before you subscribe:',
       ],
       bullets: [
@@ -111,8 +111,24 @@ export const BEST_APP_EN: Guide = {
         'Exakt Health is built for runners, and it shows. The app has over 15 injury rehab plans, from plantar fasciitis to Achilles tendinopathy to meniscus tears, plus running training plans from couch to marathon. Each rehab plan ends with a structured return-to-running phase, which is something most foot pain apps do not offer.',
         'It is certified as a medical device in the EU, which means it has passed regulatory review for safety and intended use. It was built by licensed sports physiotherapists and running coaches. The app has 600+ exercise videos and adapts its plan as you progress through levels.',
         'At $19.99 a month or $59.99 for six months, Exakt is not cheap, but the breadth of conditions and the quality of its rehab plans are hard to match in the self-serve app market. The 7-day free trial lets you see the full app before paying. It is available in English, French, German and Spanish, on both iOS and Android.',
-        'Where Exakt is stronger than Walkito: more injury types covered (15+ versus heel pain, flat feet and shins), a full return-to-running program, Android availability, EU medical device certification, and an established user base with a 4.8 rating across 125 iOS reviews.',
-        'Where Walkito differs: Walkito adjusts each day\'s session from a morning pain check-in rather than end-of-session feedback, tests left-right asymmetry every 14 days, and focuses specifically on heel and foot pain rather than the full range of running injuries.',
+        'Where Exakt is stronger than Walkito:',
+        {
+          list: [
+            'More injury types covered (15+ versus heel pain, flat feet and shins).',
+            'A full return-to-running program.',
+            'Android availability.',
+            'EU medical device certification.',
+            'An established user base with a 4.8 rating across 125 iOS reviews.',
+          ],
+        },
+        'Where Walkito differs:',
+        {
+          list: [
+            'Walkito adjusts each day\'s session from a morning pain check-in rather than end-of-session feedback.',
+            'It tests left-right asymmetry every 14 days.',
+            'It focuses specifically on heel and foot pain rather than the full range of running injuries.',
+          ],
+        },
       ],
     },
     {
@@ -120,14 +136,23 @@ export const BEST_APP_EN: Guide = {
       paragraphs: [
         'Hinge Health is the largest digital MSK platform in the United States, with over 2 million members. If your employer or health plan covers it, it is free to you and comes with something no self-serve app can match: a dedicated care team that includes physical therapists, orthopedic doctors and other specialists.',
         'The app covers a wide range of joint and muscle conditions, not just feet. It also includes the Enso wearable device for acute pain relief. The 4.9 rating across 168,000 iOS reviews reflects the combination of guided exercises, human coaching and zero cost.',
-        'The catch is access. You cannot buy Hinge Health from the App Store. You need coverage through one of the 2,800+ employers or health plans that offer it. If you have access, it is likely the most complete option on this list. If you do not, it is not an option at all.',
+        '**The catch is access.** You cannot buy Hinge Health from the App Store. You need coverage through one of the 2,800+ employers or health plans that offer it.',
+        'If you have access, it is likely the most complete option on this list. If you do not, it is not an option at all.',
         'Hinge Health is not foot-specific. It covers back, knee, hip and neck pain as its primary use cases. For plantar fasciitis specifically, a more focused app may be a better starting point.',
       ],
     },
     {
       h2: 'Prehab: the broadest exercise library',
       paragraphs: [
-        'The Prehab Guys app is built by Doctors of Physical Therapy and has the widest exercise library in this comparison: 55+ programs, 170+ workouts and 4,000+ exercise videos. It has a specific plantar fasciitis rehab program. The Body Scan feature asks about your pain, goals and movement needs, then recommends a program.',
+        'The Prehab Guys app is built by Doctors of Physical Therapy and has the widest exercise library in this comparison:',
+        {
+          list: [
+            '55+ programs.',
+            '170+ workouts.',
+            '4,000+ exercise videos.',
+          ],
+        },
+        'It has a specific plantar fasciitis rehab program. The Body Scan feature asks about your pain, goals and movement needs, then recommends a program.',
         'At $49 a month or about $200 a year, it is the most expensive self-serve option here. The 7-day free trial is on the annual plan only. Sessions run about 20 minutes, which is longer than the 3-to-10-minute range of foot-focused apps. The quality of the video instruction is consistently praised in reviews.',
         'Prehab is a good fit if you have pain in multiple areas and want a single app that covers everything from shoulders to feet. It is less focused than apps built specifically for plantar fasciitis, and it does not adapt daily sessions based on your morning pain.',
         'It is iOS only and English only.',
@@ -137,7 +162,15 @@ export const BEST_APP_EN: Guide = {
       h2: 'PlantarCare: the free tracker',
       paragraphs: [
         'PlantarCare is free, has no in-app purchases, and does not require an account. It focuses entirely on heel pain and plantar fasciitis. You log your morning first-step pain and worst daytime pain, and the app moves you through recovery stages with guided stretches, calf work, heel raises and icing reminders matched to your stage.',
-        'For a free app, it does a surprising amount right: pain trending over time, footwear and load logging, and red-flag reminders that tell you when to see a clinician. The trade-off is that it is new, has no ratings yet, and does not describe the research behind its exercise selection.',
+        'For a free app, it does a surprising amount right:',
+        {
+          list: [
+            'Pain trending over time.',
+            'Footwear and load logging.',
+            'Red-flag reminders that tell you when to see a clinician.',
+          ],
+        },
+        'The trade-off is that it is new, has no ratings yet, and does not describe the research behind its exercise selection.',
         'PlantarCare is a reasonable starting point if you want to track your pain for free and follow basic stretches without committing to a subscription. It is iOS only.',
       ],
     },
@@ -161,8 +194,27 @@ export const BEST_APP_EN: Guide = {
       h2: 'Walkito: what it does and what it does not',
       paragraphs: [
         'Walkito is an exercise program for heel pain, flat feet and lower-leg pain. It was released on the App Store on October 2, 2026. It is new, has no ratings yet, and is iOS only.',
-        'What it does: builds a weekly plan from your answers about pain, goals and schedule. Each morning, a check-in adjusts that day\'s session to how your foot feels. Tests every 14 days measure calf raises, arch hold and single-leg balance, and compare left to right. Sessions are 3, 5 or 10 minutes. Exercises follow the 2023 heel pain guideline and the Rathleff 2015 trial. It connects to Apple Health for steps, sleep and walking data, which stay on your phone.',
-        'What it does not: it does not diagnose your pain, it is not a medical device, it has no clinician on the other end and it is not available on Android. It covers heel pain, flat feet and shin pain, not the 15+ injury types Exakt covers or the full-body scope of Hinge Health or Prehab.',
+        'What it does:',
+        {
+          list: [
+            'Builds a weekly plan from your answers about pain, goals and schedule.',
+            'Each morning, a check-in adjusts that day\'s session to how your foot feels.',
+            'Tests every 14 days measure calf raises, arch hold and single-leg balance, and compare left to right.',
+            'Sessions are 3, 5 or 10 minutes.',
+            'Exercises follow the 2023 heel pain guideline and the Rathleff 2015 trial.',
+            'It connects to Apple Health for steps, sleep and walking data, which stay on your phone.',
+          ],
+        },
+        'What it does not:',
+        {
+          list: [
+            'It does not diagnose your pain.',
+            'It is not a medical device.',
+            'It has no clinician on the other end.',
+            'It is not available on Android.',
+          ],
+        },
+        'It covers heel pain, flat feet and shin pain, not the 15+ injury types Exakt covers or the full-body scope of Hinge Health or Prehab.',
         'At $44.99 a year or $7.99 a week, the annual price is lower than most competitors. The weekly price is higher relative to the annual, which is standard subscription pricing.',
       ],
       cites: [CITE.guideline, CITE.rathleff],

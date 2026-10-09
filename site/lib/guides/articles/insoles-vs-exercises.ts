@@ -40,7 +40,8 @@ export const INSOLES_VS_EXERCISES_EN: Guide = {
     {
       h2: 'What is the difference between insoles, orthotics and exercises?',
       paragraphs: [
-        'An **insole** is anything you slip into a shoe. An **orthotic** (foot orthosis) is an insole shaped to support the arch and take load off the heel. **Prefabricated** ones are bought off the shelf. **Custom** ones are made from a scan or cast of your foot, usually by a podiatrist (a foot specialist), and cost much more. Both change the load on the foot while you wear them. Exercise changes the tissue itself, so the foot and calf can take more load with or without an insert.',
+        'An **insole** is anything you slip into a shoe. An **orthotic** (foot orthosis) is an insole shaped to support the arch and take load off the heel. **Prefabricated** ones are bought off the shelf. **Custom** ones are made from a scan or cast of your foot, usually by a podiatrist (a foot specialist), and cost much more.',
+        'Both change the load on the foot while you wear them. Exercise changes the tissue itself, so the foot and calf can take more load with or without an insert.',
       ],
     },
     {
@@ -64,7 +65,15 @@ export const INSOLES_VS_EXERCISES_EN: Guide = {
       keyFact: 'In a trial of 185 people with heel pain, custom insoles did no better than sham insoles at three months, and people in GP-led care reported first-step pain 1.48 points lower than those with custom insoles (Rasenberg and colleagues, 2021).',
       paragraphs: [
         'For ordinary heel pain, the research says usually not. The Whittaker review found **no difference between custom and prefabricated insoles at any time point**, and the 2023 guideline notes "a similarity in outcomes between custom and prefabricated orthoses."',
-        'The Dutch STAP trial randomised 185 adults with heel pain to GP (general practitioner) care, a podiatrist-made custom insole, or a sham insole (Rasenberg and colleagues, 2021). **Every group also got a booklet with exercises.** At three months, custom insoles did no better than sham. The GP care group did better than the custom group: about 1 point less pain during activity and 1.5 points less first-step pain, on a 0 to 10 scale. A cost analysis of the same trial over about six months found custom insoles "not cost-effective" compared with GP care.',
+        'The Dutch STAP trial randomised 185 adults with heel pain (Rasenberg and colleagues, 2021) to:',
+        {
+          list: [
+            'GP (general practitioner) care.',
+            'A podiatrist-made custom insole.',
+            'A sham insole.',
+          ],
+        },
+        '**Every group also got a booklet with exercises.** At three months, custom insoles did no better than sham. The GP care group did better than the custom group: about 1 point less pain during activity and 1.5 points less first-step pain, on a 0 to 10 scale. A cost analysis of the same trial over about six months found custom insoles "not cost-effective" compared with GP care.',
         'Custom orthotics can still help some people (see below). But if you want an insole for heel pain, a well-fitting off-the-shelf arch support is the reasonable first try.',
       ],
       cites: [CITE.whittakerOrthoses, CITE.guideline, CITE.rasenbergStap, CITE.rasenbergCost],
@@ -74,7 +83,8 @@ export const INSOLES_VS_EXERCISES_EN: Guide = {
       keyFact: 'In a trial of 48 people who all wore shoe inserts, the group that added heavy heel raises scored 29 points better on the Foot Function Index at three months than the group that added stretching (Rathleff and colleagues, 2015).',
       paragraphs: [
         'Exercise changes the tissue, so the change lasts after the session. The 2023 guideline grades plantar fascia and calf stretching **A** and strength training **B**.',
-        'In one trial, all 48 people with plantar fasciitis got a shoe insert (Rathleff and colleagues, 2015). Half added daily stretching; half added a heavy heel raise with a towel under the toes, every second day. At three months, the heel raise group scored 29 points better on the Foot Function Index (a 0 to 100 score of foot pain and disability). By six and twelve months the groups were even. The insert was the same in both groups; the exercise made the early difference. The full routine is on [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
+        'In one trial, all 48 people with plantar fasciitis got a shoe insert (Rathleff and colleagues, 2015). Half added daily stretching; half added a heavy heel raise with a towel under the toes, every second day.',
+        'At three months, the heel raise group scored 29 points better on the Foot Function Index (a 0 to 100 score of foot pain and disability). By six and twelve months the groups were even. The insert was the same in both groups; the exercise made the early difference. The full routine is on [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
       ],
       exercises: [
         {
@@ -107,8 +117,9 @@ export const INSOLES_VS_EXERCISES_EN: Guide = {
     {
       h2: 'Do insoles help flat feet?',
       paragraphs: [
-        'The evidence is thin for both. Flat feet (a low arch) often cause no pain at all, and then there is nothing to correct. See [flat feet](/flat-feet/).',
-        'For adults with flexible flat feet, a review found 13 studies, only two randomised (Banwell and colleagues, 2014). It found "no high level evidence" for orthoses and only low-level evidence that they ease pain. On the exercise side, in a trial of 45 adults, about a month and a half of foot exercises improved foot posture more than custom arch insoles, and exercise plus insoles also beat insoles alone (Kirmizi and colleagues, 2024). In another trial of 52 people, an exercise program changed arch shape more than a control group (Brijwasi and Borkar, 2023). Neither reported pain as its main result.',
+        '**The evidence is thin for both.** Flat feet (a low arch) often cause no pain at all, and then there is nothing to correct. See [flat feet](/flat-feet/).',
+        'For adults with flexible flat feet, a review found 13 studies, only two randomised (Banwell and colleagues, 2014). It found "no high level evidence" for orthoses and only low-level evidence that they ease pain.',
+        'On the exercise side, in a trial of 45 adults, about a month and a half of foot exercises improved foot posture more than custom arch insoles, and exercise plus insoles also beat insoles alone (Kirmizi and colleagues, 2024). In another trial of 52 people, an exercise program changed arch shape more than a control group (Brijwasi and Borkar, 2023). Neither reported pain as its main result.',
         'For children, a Cochrane review of 16 trials (1,058 children) found low to very low certainty evidence, and concluded that costly custom orthoses for children with painless flexible flat feet have no supporting evidence (Evans and colleagues, 2022). See [flat feet in kids](/flat-feet-in-kids/). The exercises here and the Walkito app are for adults.',
       ],
       exercises: [
@@ -130,7 +141,7 @@ export const INSOLES_VS_EXERCISES_EN: Guide = {
     {
       h2: 'Do orthotics weaken your feet?',
       paragraphs: [
-        'Possibly a little. In a study of 18 young adults with flat feet, three small muscles inside the foot shrank by 9.6 to 17.4 percent after three months of wearing custom orthoses (Protopapas and Perry, 2020). The groups were not randomised and the study was small, so read this as a signal, not a settled fact.',
+        '**Possibly a little.** In a study of 18 young adults with flat feet, three small muscles inside the foot shrank by 9.6 to 17.4 percent after three months of wearing custom orthoses (Protopapas and Perry, 2020). The groups were not randomised and the study was small, so read this as a signal, not a settled fact.',
         'Exercise appears to offset it. In a randomised trial of 28 people with flat feet, everyone wore orthoses for two months and half also did the short-foot exercise (Jung and colleagues, 2011). The muscle along the inner arch grew in both groups, but more with the exercise, and big-toe strength rose more too. If you wear insoles all day, keep the foot working with a few minutes of [foot strengthening exercises](/foot-strengthening-exercises/).',
       ],
       cites: [CITE.protopapasOrthotic, CITE.jungOrthosesShortFoot],
@@ -166,7 +177,8 @@ export const INSOLES_VS_EXERCISES_EN: Guide = {
     {
       h2: 'How do you combine insoles and exercises?',
       paragraphs: [
-        'Use the insole for comfort and the exercises for change. In both the Rathleff and STAP trials, everyone had exercise advice alongside whatever went in their shoe. Wear an off-the-shelf arch support on the days that hurt, and start the stretches and heel raises at the same time. As morning pain settles, try short spells without the insole, then longer ones. Walkito can set out the exercise side as a weekly plan: once a week it moves your main exercise up a step when you rated your last two sessions with it easy and morning pain has not risen.',
+        '**Use the insole for comfort and the exercises for change.** In both the Rathleff and STAP trials, everyone had exercise advice alongside whatever went in their shoe. Wear an off-the-shelf arch support on the days that hurt, and start the stretches and heel raises at the same time. As morning pain settles, try short spells without the insole, then longer ones.',
+        'Walkito can set out the exercise side as a weekly plan: once a week it moves your main exercise up a step when you rated your last two sessions with it easy and morning pain has not risen.',
         'If a few months of daily stretching and strength work have not helped, see a clinician. That is when a custom orthosis, among other options, is worth discussing with someone who has examined your foot.',
       ],
       cites: [CITE.rathleff, CITE.rasenbergStap],

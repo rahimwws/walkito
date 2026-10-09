@@ -19,7 +19,8 @@ export const ACHILLES_EN: Guide = {
   lede:
     'Achilles tendonitis exercises work best when the heel drop is understood as strength training, not a stretch. The 2024 clinical guideline gives exercise its top grade, **A**, and a 2021 network meta-analysis of 29 trials found no single protocol clearly better than another. What matters is loading the tendon steadily for weeks.',
   intro: [
-    'This page is the deep dive on those exercises. If your pain is under the foot rather than at the back of the heel, you are looking for [plantar fasciitis exercises](/plantar-fasciitis-exercises/) instead. The [heel pain for runners](/heel-pain-runners/) page covers both at a summary level. If the pain is along the shin instead of the heel, see [shin splints exercises](/shin-splints-exercises/); if it only shows up after a long day on your feet rather than running, see [feet hurt from standing all day](/feet-hurt-standing-all-day/). "Tendonitis" and "tendinopathy" are used interchangeably by most people. Current guidelines use "tendinopathy" because the problem is usually a loading issue, not pure inflammation. This page uses "tendonitis" in headings and "tendinopathy" where the guideline does.',
+    'This page is the deep dive on those exercises. If your pain is under the foot rather than at the back of the heel, you are looking for [plantar fasciitis exercises](/plantar-fasciitis-exercises/) instead. The [heel pain for runners](/heel-pain-runners/) page covers both at a summary level. If the pain is along the shin instead of the heel, see [shin splints exercises](/shin-splints-exercises/); if it only shows up after a long day on your feet rather than running, see [feet hurt from standing all day](/feet-hurt-standing-all-day/).',
+    '"Tendonitis" and "tendinopathy" are used interchangeably by most people. Current guidelines use "tendinopathy" because the problem is usually a loading issue, not pure inflammation. This page uses "tendonitis" in headings and "tendinopathy" where the guideline does.',
   ],
   takeaways: [
     'The 2024 clinical guideline grades exercise (any tendon-loading type) **A**, its top grade, for midportion Achilles tendinopathy (Chimenti and colleagues, 2024).',
@@ -42,7 +43,7 @@ export const ACHILLES_EN: Guide = {
       h2: 'What is the eccentric heel drop, and why is it not a stretch?',
       paragraphs: [
         'The eccentric heel drop is a strength exercise, not a flexibility stretch. You rise on both feet, shift to the painful side, and lower slowly on one foot, letting the heel sink below the step edge. The lowering phase is the eccentric contraction: the calf muscle lengthening under load. That controlled descent is what builds tendon capacity over weeks.',
-        'The most common mistake is holding the bottom position like a calf stretch. That turns it into a static stretch, which is a different stimulus. The point is the slow, loaded descent. Three seconds down, with the muscle working the whole way.',
+        'The most common mistake is holding the bottom position like a calf stretch. That turns it into a static stretch, which is a different stimulus. **The point is the slow, loaded descent.** Three seconds down, with the muscle working the whole way.',
         'The 1998 Alfredson trial had 15 athletes with long-standing mid-tendon Achilles pain do eccentric heel drops twice a day, 7 days a week, for three months, straight and bent knee. All 15 returned to their prior running level. A small trial with no control group, but it launched a whole line of research.',
       ],
       exercises: [
@@ -67,7 +68,7 @@ export const ACHILLES_EN: Guide = {
       paragraphs: [
         'Yes, based on current evidence. A 2015 trial of 58 people compared heavy slow resistance (HSR), done 3 days a week, against the classic twice-daily eccentric protocol. The conclusion: "Both traditional ECC and HSR yield positive, equally good, lasting clinical results in patients with Achilles tendinopathy."',
         'A 2021 network meta-analysis of 29 trials found no clinically relevant difference between any active exercise approach at 3 or 12 months. All were better than doing nothing. No trial was at low risk of bias. The authors recommended starting with a calf-muscle exercise program because it is low-cost and has few harms.',
-        'The protocol shape matters less than loading the tendon consistently. Eccentric drops are the most studied, HSR is equally effective and requires fewer weekly sessions, and both are valid starting points. For the plantar fasciitis version of this same calf-strengthening logic, see [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/).',
+        '**The protocol shape matters less than loading the tendon consistently.** Eccentric drops are the most studied, HSR is equally effective and requires fewer weekly sessions, and both are valid starting points. For the plantar fasciitis version of this same calf-strengthening logic, see [calf raises for plantar fasciitis](/calf-raises-plantar-fasciitis/).',
       ],
       cites: [CITE.beyer, CITE.vanDerVlist],
     },
@@ -169,7 +170,14 @@ export const ACHILLES_EN: Guide = {
       h2: 'How much pain is okay during Achilles exercises?',
       keyFact: 'In a trial of 38 people, those who kept running with pain held to about 5 out of 10 and settled by morning improved as much at twelve months as those who rested first (Silbernagel and colleagues, 2007).',
       paragraphs: [
-        'In Silbernagel 2007, 38 people with Achilles pain were split into two groups. One continued running and jumping during rehab, guided by the rule that pain during and after loading could go up to about **5 out of 10**, as long as it returned to its usual level by the next morning and did not worsen week over week. The other group rested first. Both improved significantly at 12 months, with no difference between them.',
+        'In Silbernagel 2007, 38 people with Achilles pain were split into two groups:',
+        {
+          list: [
+            'One continued running and jumping during rehab, guided by the rule that pain during and after loading could go up to about **5 out of 10**, as long as it returned to its usual level by the next morning and did not worsen week over week.',
+            'The other group rested first.',
+          ],
+        },
+        'Both improved significantly at 12 months, with no difference between them.',
         'This is a different threshold from the 6/10 stop rule on the [plantar fasciitis](/plantar-fasciitis-exercises/) page, which is the limit Walkito uses for heel pain. The 5/10 figure is from one study, not a universal standard, but it is the most cited pain model in Achilles rehab.',
         'Some discomfort during loading is expected and was acceptable in the trial. Pain that does not settle overnight, worsens week to week, or arrives as a sudden sharp episode is not.',
       ],
@@ -182,7 +190,7 @@ export const ACHILLES_EN: Guide = {
       paragraphs: [
         'Mid-portion Achilles tendinopathy sits in the body of the tendon, typically 2 to 6 centimeters above the heel bone. Standard eccentric drops and heavy slow resistance have their best evidence here. Heel drops over a step edge are appropriate for mid-portion pain.',
         'Insertional Achilles tendinopathy is pain right at the tendon-bone attachment. In a 2008 pilot study of 27 people (34 tendons) with chronic insertional pain, a modified protocol using floor-level-only eccentric loading, with no dorsiflexion past neutral, reported good results in 67 percent of cases. Deep dorsiflexion compresses the tendon against the heel bone, which irritates the insertion.',
-        'If your pain is at the back of the heel bone rather than higher in the tendon, do all heel raises and heel drops at floor level. Do not drop below the step edge. Avoid aggressive stretching for the same reason. This is the most important modification in Achilles programs, and the one most commonly missed.',
+        'If your pain is at the back of the heel bone rather than higher in the tendon, **do all heel raises and heel drops at floor level.** Do not drop below the step edge. Avoid aggressive stretching for the same reason. This is the most important modification in Achilles programs, and the one most commonly missed.',
       ],
       cites: [CITE.jonsson, CITE.achillesGuideline],
     },
@@ -198,7 +206,7 @@ export const ACHILLES_EN: Guide = {
       h2: 'Can you keep running while doing Achilles rehab?',
       paragraphs: [
         'In Silbernagel 2007, patients who continued running during rehab under the pain-monitoring model did not do worse than those who rested first. Both groups improved at 12 months. The trial concluded that continued, pain-monitored activity "might therefore represent a valuable option" during rehab.',
-        'This does not mean running is harmless in every case. If pain does not settle overnight, or if each week is worse, back off. Pain at the heel-bone attachment needs more caution than mid-tendon pain. Any sudden pop or snap is a reason to stop and see a clinician.',
+        'This does not mean running is harmless in every case. **If pain does not settle overnight, or if each week is worse, back off.** Pain at the heel-bone attachment needs more caution than mid-tendon pain. Any sudden pop or snap is a reason to stop and see a clinician.',
         'The [heel pain for runners](/heel-pain-runners/) page covers running-specific load management in more detail.',
       ],
       cites: [CITE.silbernagel],

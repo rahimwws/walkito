@@ -66,8 +66,17 @@ export const HEEL_FAT_PAD_EN: Guide = {
     {
       h2: 'What causes the heel fat pad to thin?',
       paragraphs: [
-        'Age is the biggest factor. After about 40, the fat pad naturally loses water, collagen, and elasticity. Years of high-impact activity, prolonged standing on hard surfaces, and walking barefoot accelerate the process.',
-        'Other risk factors include higher body weight (more force per step), repeated corticosteroid injections into the heel (cortisone can break down fat tissue), diabetes, high-arched feet (which concentrate load on the heel and forefoot), and a family history of connective tissue problems.',
+        '**Age is the biggest factor.** After about 40, the fat pad naturally loses water, collagen, and elasticity. Years of high-impact activity, prolonged standing on hard surfaces, and walking barefoot accelerate the process.',
+        'Other risk factors include:',
+        {
+          list: [
+            'Higher body weight (more force per step).',
+            'Repeated corticosteroid injections into the heel (cortisone can break down fat tissue).',
+            'Diabetes.',
+            'High-arched feet (which concentrate load on the heel and forefoot).',
+            'A family history of connective tissue problems.',
+          ],
+        },
         'Unlike a muscle or tendon, the fat pad does not rebuild itself with exercise or rest. Once it has thinned, the practical goal is to protect what remains and reduce the impact reaching the heel bone.',
       ],
       cites: [CITE.fatPadReview, CITE.yiFatPad],
@@ -76,18 +85,28 @@ export const HEEL_FAT_PAD_EN: Guide = {
       h2: 'What helps heel fat pad pain?',
       keyFact: 'A single case report found pain relief from silicone gel heel cups at one and three months, but no randomised trial has tested heel cups or taping for this condition (Chang and colleagues, 2022).',
       paragraphs: [
-        'The most commonly recommended first steps for heel fat pad syndrome are external: viscoelastic heel cups, cushioned insoles, and shoes with thick, shock-absorbing soles. These aim to replace the cushioning the fat pad no longer provides.',
-        'The 2022 scoping review flagged an uncomfortable gap: no randomised controlled trial has tested heel cups or taping specifically for heel fat pad syndrome. A single case report described pain relief with silicone gel heel cups after one and three months. Some small trials of low-dye taping for general plantar heel pain report a modest drop in pain scores against sham or no treatment, but none of them isolate fat pad syndrome from other causes of heel pain, so the size of any benefit here is not known.',
-        'Despite the weak evidence base, the logic is straightforward: if the cushion is gone, adding one externally is a reasonable step. Avoid walking barefoot on hard surfaces. Choose shoes with well-cushioned heels and avoid flat, thin-soled shoes. These are consensus recommendations, not trial-tested ones, and this page says so plainly.',
+        'The most commonly recommended first steps for heel fat pad syndrome are external:',
+        {
+          list: [
+            'Viscoelastic heel cups.',
+            'Cushioned insoles.',
+            'Shoes with thick, shock-absorbing soles.',
+          ],
+        },
+        'These aim to replace the cushioning the fat pad no longer provides.',
+        'The 2022 scoping review flagged an uncomfortable gap: no randomised controlled trial has tested heel cups or taping specifically for heel fat pad syndrome. A single case report described pain relief with silicone gel heel cups after one and three months.',
+        'Some small trials of low-dye taping for general plantar heel pain report a modest drop in pain scores against sham or no treatment, but none of them isolate fat pad syndrome from other causes of heel pain, so the size of any benefit here is not known.',
+        'Despite the weak evidence base, the logic is straightforward: **if the cushion is gone, adding one externally is a reasonable step.** Avoid walking barefoot on hard surfaces. Choose shoes with well-cushioned heels and avoid flat, thin-soled shoes. These are consensus recommendations, not trial-tested ones, and this page says so plainly.',
       ],
       cites: [CITE.fatPadReview],
     },
     {
       h2: 'Do exercises help heel fat pad syndrome?',
       paragraphs: [
-        'Exercises cannot rebuild a thinned fat pad. That is a structural change, not a muscle weakness. But exercise may still play a role in managing the foot around the problem.',
+        '**Exercises cannot rebuild a thinned fat pad.** That is a structural change, not a muscle weakness. But exercise may still play a role in managing the foot around the problem.',
         'Calf strength matters because a stronger calf absorbs more of the landing force before it reaches the heel. This is the same loading logic behind the calf raise programs for plantar fasciitis, but for fat pad syndrome the goal is load distribution, not tissue repair. Intrinsic foot muscle work (short foot exercise, toe spreads) may help the foot manage ground contact.',
-        'The evidence for these exercises in fat pad syndrome specifically is absent. No trial has tested them for this condition. They are borrowed from the broader heel pain and foot strength literature. Walkito\'s exercises are designed around plantar fasciitis and foot strength. They are a reasonable addition if your clinician has confirmed fat pad atrophy, but they are not specifically tested for it, and this is worth knowing.',
+        'The evidence for these exercises in fat pad syndrome specifically is absent. No trial has tested them for this condition. They are borrowed from the broader heel pain and foot strength literature.',
+        'Walkito\'s exercises are designed around plantar fasciitis and foot strength. They are a reasonable addition if your clinician has confirmed fat pad atrophy, but they are not specifically tested for it, and this is worth knowing.',
       ],
       exercises: [
         {

@@ -25,7 +25,7 @@ export const BUNIONS_EN: Guide = {
       h2: 'Can exercises fix a bunion?',
       figure: { id: 'bunion', caption: 'A bunion is a bony bump at the big toe joint, with the big toe leaning toward the other toes.', alt: 'Top view of the foot bones with the big toe angled toward the second toe and a red bump on the inner side of the big toe joint.' },
       paragraphs: [
-        'No. A bunion, clinically called hallux valgus, is a bony deviation at the first metatarsophalangeal joint (the big toe joint). The first metatarsal drifts inward and the big toe angles outward. Once the bone has shifted and the joint capsule has adapted, exercise cannot push it back.',
+        'No. A bunion, clinically called hallux valgus, is a bony deviation at the first metatarsophalangeal joint (the big toe joint). The first metatarsal drifts inward and the big toe angles outward. Once the bone has shifted and the joint capsule has adapted, **exercise cannot push it back.**',
         'What exercise can do is strengthen the muscles around the joint. The abductor hallucis muscle runs along the inner arch and pulls the big toe into alignment. In people with hallux valgus, this muscle is weaker and smaller than in people without it. Strengthening it will not undo the structural change, but it may improve control, reduce symptoms, and possibly slow further drift in mild cases.',
         'A 2016 clinical commentary in the Journal of Orthopaedic and Sports Physical Therapy proposed a biomechanically based muscle-strengthening approach for early hallux valgus, centered on intrinsic foot muscles. The author argued that the deformity progresses partly because of muscle imbalance, so restoring muscle activity may have a protective effect. This is a plausible argument, but direct long-term evidence is still limited.',
       ],
@@ -37,7 +37,15 @@ export const BUNIONS_EN: Guide = {
         'The best evidence comes from a handful of small trials. None is large, and none followed participants for more than a year.',
         'Kim and colleagues (2015) randomly assigned 24 people with mild to moderate hallux valgus to either an orthosis alone or an orthosis plus toe-spread-out exercises for 8 weeks. The exercise group reduced their hallux valgus angle by an average of 3.4 degrees and increased the cross-sectional area of the abductor hallucis muscle. The orthosis-only group showed no significant change on either measure. The study was small and included mostly young adults with mild bunions.',
         'Abdalbary (2018) randomly assigned 56 women with moderate hallux valgus to 3 months of foot mobilization, strengthening exercises, and a toe separator, or to no intervention (a waiting list). At 3 months and again at 1 year, the exercise group had significantly better pain, function, and radiographic angle measurements than the group that received nothing. This trial is notable for its longer follow-up, but because the toe separator was bundled with mobilization and exercise, the study cannot tell us how much the separator alone contributed.',
-        'Külünkoğlu and colleagues (2021) randomly assigned 60 women (120 feet) with hallux valgus to one month of night splinting, exercise, or electrical stimulation. All three groups improved in pain and function, but splinting was more effective than exercise and electrotherapy, and exercise outperformed electrotherapy. The study did not include an untreated control, so it is hard to know how much any of the three approaches added beyond natural variation.',
+        'Külünkoğlu and colleagues (2021) randomly assigned 60 women (120 feet) with hallux valgus to one month of:',
+        {
+          list: [
+            'Night splinting.',
+            'Exercise.',
+            'Electrical stimulation.',
+          ],
+        },
+        'All three groups improved in pain and function, but splinting was more effective than exercise and electrotherapy, and exercise outperformed electrotherapy. The study did not include an untreated control, so it is hard to know how much any of the three approaches added beyond natural variation.',
       ],
       sourceNote:
         'Kim 2015: 24 subjects, 8-week RCT. HV angle change: exercise group -3.41 ± 3.17 degrees, orthosis group -0.5 ± 2.07 degrees (p < 0.05). AbdH CSA change: exercise group +0.48 cm², orthosis group -0.11 cm². Abdalbary 2018: 56 women, randomized to 3 months of mobilization + exercise + toe separator (36 sessions) vs no intervention, 1-year follow-up RCT. Külünkoğlu 2021: 60 women (120 feet), 3-arm RCT (splint, exercise, electrotherapy), 1-month treatment, no untreated control; splinting was the most effective of the three.',
@@ -48,8 +56,9 @@ export const BUNIONS_EN: Guide = {
       keyFact: 'In a study of 30 women with painful hallux valgus, a toe-separator insole reduced pain significantly over three months, while a separate night-splint group did not improve (Tehraninasr and colleagues, 2008).',
       paragraphs: [
         'Toe spacers, also called toe separators, sit between the big toe and the second toe. They reduce friction, relieve pressure on the bunion, and gently push the big toe away from the second toe while worn.',
-        'Tehraninasr and colleagues (2008) studied 30 women with painful hallux valgus over a 3-month period. One group wore an insole with a built-in toe separator, and a separate group wore a night splint instead. Pain dropped significantly in the toe-separator group but not in the night-splint group. Neither group had a statistically significant change in the hallux valgus angle. Abdalbary\'s trial paired a toe separator with manual therapy and exercise, so it does not isolate what the separator did on its own.',
-        'The pattern across studies is consistent: toe spacers may help with comfort and short-term symptoms, but the evidence that they change the bone angle over time is weak. They are not harmful and are inexpensive, so many clinicians recommend them alongside exercises and footwear changes.',
+        'Tehraninasr and colleagues (2008) studied 30 women with painful hallux valgus over a 3-month period. One group wore an insole with a built-in toe separator, and a separate group wore a night splint instead. Pain dropped significantly in the toe-separator group but not in the night-splint group. Neither group had a statistically significant change in the hallux valgus angle.',
+        'Abdalbary\'s trial paired a toe separator with manual therapy and exercise, so it does not isolate what the separator did on its own.',
+        'The pattern across studies is consistent: **toe spacers may help with comfort and short-term symptoms, but the evidence that they change the bone angle over time is weak.** They are not harmful and are inexpensive, so many clinicians recommend them alongside exercises and footwear changes.',
       ],
       cites: [CITE.abdalbary, CITE.tehraninasr],
     },
@@ -121,7 +130,7 @@ export const BUNIONS_EN: Guide = {
     {
       h2: 'Does footwear matter for bunions?',
       paragraphs: [
-        'Footwear is one of the most impactful changes you can make. A wide toe box gives the big toe room to sit in a more neutral position and stops the shoe from pressing on the bunion. Narrow and pointed shoes push the big toe further into valgus and compress the joint.',
+        'Footwear is one of the most impactful changes you can make. **A wide toe box gives the big toe room to sit in a more neutral position** and stops the shoe from pressing on the bunion. Narrow and pointed shoes push the big toe further into valgus and compress the joint.',
         'High heels shift weight onto the forefoot and increase pressure on the first metatarsophalangeal joint. If bunion pain is a problem, reducing heel height is a straightforward first step.',
         'Shoes alone will not reverse the deformity, but they can reduce symptoms and slow progression by removing the external force that pushes the toe further out of alignment.',
       ],
@@ -129,7 +138,7 @@ export const BUNIONS_EN: Guide = {
     {
       h2: 'When is surgery considered?',
       paragraphs: [
-        'Surgery is considered when pain and functional limitation persist despite conservative measures like footwear changes, exercises, spacers, and orthotics. The decision depends on how much the bunion affects daily life, not on the angle alone.',
+        'Surgery is considered when pain and functional limitation persist despite conservative measures like footwear changes, exercises, spacers, and orthotics. **The decision depends on how much the bunion affects daily life, not on the angle alone.**',
         'More than 150 surgical procedures exist for hallux valgus, ranging from soft tissue realignment to osteotomy (cutting and repositioning the bone). The choice depends on the severity and the specific anatomy. Recovery varies from weeks to months.',
         'Exercise and conservative management are usually tried for several months first. If you are managing symptoms well with the approaches on this page, surgery is not urgent. If pain limits walking, shoe choices, or activity despite those measures, a foot and ankle specialist can discuss the options.',
       ],

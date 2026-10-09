@@ -39,18 +39,22 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
       paragraphs: [
         'Walking loads the plantar fascia, the thick band of tissue under the foot, with every step. Each time the heel hits the ground and the foot rolls forward, the fascia stretches and absorbs force. In a healthy foot this is fine. But when the fascia is irritated or the calf is too tight to absorb its share, the load concentrates at the heel attachment.',
         'The result is pain that builds during or after a walk, especially a longer one than usual. The 2023 heel pain guideline lists two hallmark patterns for plantar fasciitis: first-step pain after rest, and pain that increases with prolonged weight-bearing activity. Walking is the most common prolonged weight-bearing activity there is.',
-        'A tight calf is a big part of the picture. In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion had the highest odds ratio of any measured risk factor. When the ankle cannot bend enough, every step asks the fascia to make up the difference.',
+        'A tight calf is a big part of the picture. In a matched case-control study of 50 people with plantar fasciitis and 100 controls, reduced ankle dorsiflexion had the highest odds ratio of any measured risk factor. **When the ankle cannot bend enough, every step asks the fascia to make up the difference.**',
       ],
       cites: [CITE.guideline, CITE.riddle],
     },
     {
       h2: 'Is heel pain after walking always plantar fasciitis?',
       paragraphs: [
-        'Plantar fasciitis is the most common cause, but it is not the only one. The location and timing of the pain help tell them apart.',
-        '**Heel fat pad thinning.** The fat pad under the heel bone cushions every step. When it thins or shifts, the bone takes more direct impact. A 2022 scoping review noted that fat pad pain tends to be a deep ache in the center of the heel, worse on hard surfaces and with barefoot walking (Chang and colleagues, 2022). Plantar fasciitis pain usually sits at the inside front of the heel. Fat pad pain sits right under the center. If barefoot walking on tile or concrete is clearly worse than walking in cushioned shoes, fat pad thinning is worth considering. See [heel fat pad syndrome](/heel-fat-pad-syndrome/) for more.',
-        '**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon can be sore after a long walk, especially uphill. If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
-        '**Calcaneal stress fracture.** Pain that comes on gradually after a jump in walking distance or intensity. Unlike plantar fasciitis, stress fracture pain tends to build with activity and not ease much with rest. Squeezing the sides of the heel can reproduce the pain. If that matches your pattern, see a clinician before exercising the foot.',
-        '**Referred pain from the lower back or nerve entrapment.** Heel pain that comes with numbness, tingling or burning can point to a nerve issue, not a tissue-loading problem. This is a reason to see a clinician first.',
+        'Plantar fasciitis is the most common cause, but it is not the only one. The location and timing of the pain help tell them apart:',
+        {
+          list: [
+            '**Heel fat pad thinning.** The fat pad under the heel bone cushions every step. When it thins or shifts, the bone takes more direct impact. A 2022 scoping review noted that fat pad pain tends to be a deep ache in the center of the heel, worse on hard surfaces and with barefoot walking (Chang and colleagues, 2022). Plantar fasciitis pain usually sits at the inside front of the heel. Fat pad pain sits right under the center. If barefoot walking on tile or concrete is clearly worse than walking in cushioned shoes, fat pad thinning is worth considering. See [heel fat pad syndrome](/heel-fat-pad-syndrome/) for more.',
+            '**Achilles tendonitis.** Pain at the back of the heel or in the tendon above it, not under the foot. The Achilles tendon can be sore after a long walk, especially uphill. If your pain is at the back of the heel rather than under it, see [Achilles tendonitis exercises](/achilles-tendonitis-exercises/).',
+            '**Calcaneal stress fracture.** Pain that comes on gradually after a jump in walking distance or intensity. Unlike plantar fasciitis, stress fracture pain tends to build with activity and not ease much with rest. Squeezing the sides of the heel can reproduce the pain. If that matches your pattern, see a clinician before exercising the foot.',
+            '**Referred pain from the lower back or nerve entrapment.** Heel pain that comes with numbness, tingling or burning can point to a nerve issue, not a tissue-loading problem. This is a reason to see a clinician first.',
+          ],
+        },
       ],
       cites: [CITE.fatPadReview, CITE.achillesGuideline, CITE.patelStressFracture],
     },
@@ -58,7 +62,15 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
       h2: 'What makes heel pain after walking different from morning heel pain?',
       paragraphs: [
         'Morning heel pain and post-walking heel pain are two sides of the same condition in most cases. Morning pain happens because the fascia stiffens and shortens overnight, then gets stretched suddenly when you stand. Post-walking pain happens because the fascia was loaded repetitively during the walk and the tissue is telling you it has had enough.',
-        'The difference matters for timing your exercises. Morning pain responds best to a plantar fascia stretch done before your first step. Post-walking pain responds to managing the load: walking a distance the foot can handle, building that distance gradually, and using stretching and calf work to raise the threshold. [Heel pain in the morning](/heel-pain-in-the-morning/) covers the morning stretches and night splints in detail.',
+        'The difference matters for timing your exercises. Morning pain responds best to a plantar fascia stretch done before your first step. Post-walking pain responds to managing the load:',
+        {
+          list: [
+            'Walking a distance the foot can handle.',
+            'Building that distance gradually.',
+            'Using stretching and calf work to raise the threshold.',
+          ],
+        },
+        '[Heel pain in the morning](/heel-pain-in-the-morning/) covers the morning stretches and night splints in detail.',
         'If you have both morning pain and pain after walking, that is the typical plantar fasciitis pattern. The exercises overlap. The morning stretch and the calf stretches help both. The calf strengthening raises the capacity of the whole chain so that your daily walking load falls inside what the tissues can handle.',
       ],
       cites: [CITE.guideline],
@@ -145,8 +157,15 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
       h2: 'How far should you walk when your heel hurts?',
       paragraphs: [
         'The goal is not to stop walking. It is to find the distance your heel can handle without flaring the next morning, and then build from there.',
-        'A practical approach: walk a distance that keeps morning pain the next day at or below its current baseline. If your usual morning score is 4 out of 10 and a 30-minute walk pushes it to 6 the following morning, that walk was too much. Shorten it until the morning score stays stable. Then add five minutes every week or two, as long as morning pain does not spike.',
-        'This is load management, not rest. Complete rest is rarely helpful for plantar fasciitis. The guideline recommends activity modification, not inactivity. Walking in supportive shoes on a softer surface is easier on the fascia than walking barefoot on concrete.',
+        'A practical approach:',
+        {
+          list: [
+            'Walk a distance that keeps morning pain the next day at or below its current baseline. If your usual morning score is 4 out of 10 and a 30-minute walk pushes it to 6 the following morning, that walk was too much.',
+            'Shorten it until the morning score stays stable.',
+            'Then add five minutes every week or two, as long as morning pain does not spike.',
+          ],
+        },
+        '**This is load management, not rest.** Complete rest is rarely helpful for plantar fasciitis. The guideline recommends activity modification, not inactivity. Walking in supportive shoes on a softer surface is easier on the fascia than walking barefoot on concrete.',
         'If you also run, the same principle applies at a different scale. [Heel pain from running](/heel-pain-runners/) covers load spikes and mileage changes in more detail.',
       ],
       cites: [CITE.guideline],
@@ -156,7 +175,8 @@ export const HEEL_PAIN_AFTER_WALKING_EN: Guide = {
       keyFact: 'In normative data on 566 healthy adults, the average single-leg heel raise count was about 23 to 24 repetitions, a benchmark for tracking calf endurance over time (Hebert-Losier and colleagues, 2017).',
       paragraphs: [
         'There is no fixed timeline. A review of the clinical evidence reports that about 90% of people with plantar fasciitis improve with non-surgical care, often within several months (Latt and colleagues, 2020). In a longer follow-up of 174 people, about half still had some symptoms at 5 years, though most were minor by that point (Hansen and colleagues, 2018).',
-        'What you can measure sooner is whether the exercises are working. Morning pain on a 0 to 10 scale is the clearest daily signal. Calf endurance, measured by counting single-leg heel raises, tracks strength over weeks. A commonly cited adult benchmark is about 23 to 24 repetitions on average, from normative data on 566 healthy adults (Hebert-Losier and colleagues, 2017). What matters is whether your number is going up, not whether it matches the benchmark.',
+        'What you can measure sooner is whether the exercises are working. Morning pain on a 0 to 10 scale is the clearest daily signal.',
+        'Calf endurance, measured by counting single-leg heel raises, tracks strength over weeks. A commonly cited adult benchmark is about 23 to 24 repetitions on average, from normative data on 566 healthy adults (Hebert-Losier and colleagues, 2017). **What matters is whether your number is going up, not whether it matches the benchmark.**',
         'For more on the overall timeline, see [how long plantar fasciitis lasts](/how-long-does-plantar-fasciitis-last/).',
       ],
       cites: [CITE.latt, CITE.hansen, CITE.hebertLosier],

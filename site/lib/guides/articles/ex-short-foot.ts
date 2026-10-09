@@ -44,7 +44,7 @@ export const EX_SHORT_FOOT: Guide = {
       h2: 'How do you do the short foot exercise?',
       paragraphs: [
         'Sit in a chair with your feet flat on the floor, barefoot. Place your foot so the heel, the ball and all five toes rest on the ground. Without curling or gripping the toes, try to pull the ball of your foot backward toward your heel. Your arch will rise. Hold that contraction, then release.',
-        'Think of it as making the foot shorter and taller rather than wider and flatter. The toes should not press into the floor, lift off the floor, or curl under. If you see the toes gripping, you are using the wrong muscles. Start by placing a finger under the arch so you can feel it lift.',
+        'Think of it as making the foot shorter and taller rather than wider and flatter. The toes should not press into the floor, lift off the floor, or curl under. **If you see the toes gripping, you are using the wrong muscles.** Start by placing a finger under the arch so you can feel it lift.',
       ],
       exercises: [
         {
@@ -66,8 +66,16 @@ export const EX_SHORT_FOOT: Guide = {
       h2: 'What muscles does the short foot exercise work?',
       paragraphs: [
         'The short foot exercise targets the intrinsic plantar muscles: the abductor hallucis, flexor digitorum brevis, quadratus plantae, and abductor digiti minimi. These muscles sit entirely inside the foot and support the medial longitudinal arch from below.',
-        'A 2016 MRI study by Gooding and colleagues measured muscle activation after 40 repetitions of four different foot exercises in 8 collegiate athletes. The short foot exercise produced the highest mean activation in the abductor digiti minimi (34.9%), the abductor hallucis (29.7%), and the flexor digitorum brevis (24.8%). An earlier EMG study by Jung and colleagues (2011) found that abductor hallucis activity was over four times greater during the short foot exercise than during towel curls.',
-        'This is why the short foot is considered a better exercise than towel curls for targeting the intrinsic muscles specifically. Towel curls recruit the long toe flexors, the extrinsic muscles that run from the shin to the toes. The short foot exercise keeps those extrinsic muscles quieter.',
+        'A 2016 MRI study by Gooding and colleagues measured muscle activation after 40 repetitions of four different foot exercises in 8 collegiate athletes. The short foot exercise produced the highest mean activation in:',
+        {
+          list: [
+            'The abductor digiti minimi (34.9%).',
+            'The abductor hallucis (29.7%).',
+            'The flexor digitorum brevis (24.8%).',
+          ],
+        },
+        'An earlier EMG study by Jung and colleagues (2011) found that abductor hallucis activity was over four times greater during the short foot exercise than during towel curls.',
+        'This is why **the short foot is considered a better exercise than towel curls for targeting the intrinsic muscles specifically.** Towel curls recruit the long toe flexors, the extrinsic muscles that run from the shin to the toes. The short foot exercise keeps those extrinsic muscles quieter.',
       ],
       cites: [CITE.gooding, CITE.jung],
     },
@@ -75,7 +83,7 @@ export const EX_SHORT_FOOT: Guide = {
       h2: 'How do you progress from seated to standing to single-leg?',
       paragraphs: [
         'Once seated short foot holds feel easy for two sessions in a row, the next step is standing on both feet. The same contraction now has to hold your body weight. After that, single-leg short foot adds balance demand and exposes any difference between your left and right side.',
-        'Each version is the same movement. The only change is the load. Standing doubles the demand on the arch muscles. Single-leg roughly doubles it again and adds the need to stabilize the ankle.',
+        'Each version is the same movement. **The only change is the load.** Standing doubles the demand on the arch muscles. Single-leg roughly doubles it again and adds the need to stabilize the ankle.',
       ],
       exercises: [
         {
@@ -108,8 +116,13 @@ export const EX_SHORT_FOOT: Guide = {
     {
       h2: 'What mistakes make the short foot exercise less effective?',
       paragraphs: [
-        'The most common mistake is curling the toes. If the toes flex and grip the floor, the exercise becomes a toe curl and the extrinsic flexors take over. Keep the toes long and relaxed. Some people find it helps to lift the toes briefly, contract the arch, then lay the toes back down.',
-        'The second mistake is pushing the foot outward instead of shortening it. The movement should be straight back, ball toward heel, not side to side. The third is holding your breath. Breathe normally through each hold.',
+        {
+          list: [
+            'The most common mistake is curling the toes. If the toes flex and grip the floor, the exercise becomes a toe curl and the extrinsic flexors take over. **Keep the toes long and relaxed.** Some people find it helps to lift the toes briefly, contract the arch, then lay the toes back down.',
+            'The second mistake is pushing the foot outward instead of shortening it. The movement should be straight back, ball toward heel, not side to side.',
+            'The third is holding your breath. Breathe normally through each hold.',
+          ],
+        },
         'If you cannot feel the arch lift at all, try placing a finger or a pen under the arch. The goal is to feel the arch press into that object. It can take several sessions before the brain learns to activate these muscles on command. That learning curve is normal.',
       ],
     },
@@ -117,10 +130,19 @@ export const EX_SHORT_FOOT: Guide = {
       h2: 'What does the research say about short foot exercises?',
       keyFact: 'In a 2023 trial of 52 people with flexible flat feet, a six-week program combining short foot exercises, ankle work, hip strengthening and stretching changed arch shape more than a control group (Brijwasi and colleagues, 2023).',
       paragraphs: [
-        'The strongest evidence comes from programs that combine the short foot exercise with other exercises, not from the short foot alone. In a 2023 trial of 52 people with flexible flat feet, Brijwasi and colleagues tested a six-week program of short foot exercises, ankle work, hip strengthening and stretching. The program changed two measures of arch shape more than the control group.',
+        'The strongest evidence comes from programs that combine the short foot exercise with other exercises, not from the short foot alone. In a 2023 trial of 52 people with flexible flat feet, Brijwasi and colleagues tested a six-week program of:',
+        {
+          list: [
+            'Short foot exercises.',
+            'Ankle work.',
+            'Hip strengthening.',
+            'Stretching.',
+          ],
+        },
+        'The program changed two measures of arch shape more than the control group.',
         'A 2024 meta-analysis by Cheng and colleagues looked at short foot training on its own across multiple trials. The pooled results showed no significant improvement in navicular drop or foot posture index overall. But when the reviewers restricted the analysis to programs longer than six weeks, navicular drop did improve significantly. The duration of training matters.',
         'For balance, a 2012 RCT by Lynn and colleagues compared four weeks of short foot training to four weeks of towel curls in healthy adults. The short foot group improved dynamic balance more than the towel curl group.',
-        'None of these studies are large. The evidence supports the short foot exercise as part of a broader foot-strengthening program, especially for flat feet and arch pain. It is not a standalone solution, and it has not been tested as a primary treatment for plantar fasciitis on its own. For the full exercise list, see [flat feet exercises](/flat-feet-exercises/) or [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
+        'None of these studies are large. **The evidence supports the short foot exercise as part of a broader foot-strengthening program, especially for flat feet and arch pain.** It is not a standalone solution, and it has not been tested as a primary treatment for plantar fasciitis on its own. For the full exercise list, see [flat feet exercises](/flat-feet-exercises/) or [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
       ],
       cites: [CITE.brijwasi, CITE.cheng, CITE.lynn],
     },

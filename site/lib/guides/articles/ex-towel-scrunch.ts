@@ -62,9 +62,17 @@ export const EX_TOWEL_SCRUNCH: Guide = {
     {
       h2: 'What muscles do towel scrunches work?',
       paragraphs: [
-        'Towel scrunches work the toe flexor muscles: the flexor digitorum brevis (the short toe flexor inside the foot), the flexor hallucis brevis (the short big-toe flexor), and the quadratus plantae. These are intrinsic muscles. But the exercise also recruits the extrinsic toe flexors: the flexor digitorum longus and the flexor hallucis longus, which run from the shin through the ankle to the toes.',
+        'Towel scrunches work the toe flexor muscles:',
+        {
+          list: [
+            'The flexor digitorum brevis (the short toe flexor inside the foot).',
+            'The flexor hallucis brevis (the short big-toe flexor).',
+            'The quadratus plantae.',
+          ],
+        },
+        'These are intrinsic muscles. But the exercise also recruits the extrinsic toe flexors: the flexor digitorum longus and the flexor hallucis longus, which run from the shin through the ankle to the toes.',
         'An EMG study by Jung and colleagues (2011) compared muscle activity during towel curls and short foot exercises. They found the abductor hallucis, the muscle most responsible for holding the arch up, was over four times more active during the short foot exercise than during towel curls. The towel curl produced more activity in the extrinsic toe flexors instead.',
-        'This means towel scrunches are a good exercise for toe grip strength, but they are less specific for the intrinsic arch muscles than the [short foot exercise](/exercises/short-foot-exercise/).',
+        'This means **towel scrunches are a good exercise for toe grip strength**, but they are less specific for the intrinsic arch muscles than the [short foot exercise](/exercises/short-foot-exercise/).',
       ],
       cites: [CITE.jung],
     },
@@ -82,7 +90,8 @@ export const EX_TOWEL_SCRUNCH: Guide = {
       keyFact: 'In a 2020 study of 41 people (56 feet) with metatarsalgia, an eight-week toe exercise program with towel scrunches and marble pickups was followed by less pain and better toe grip, with no control group (Amaha and colleagues, 2020).',
       paragraphs: [
         'Towel scrunches suit people who are new to foot exercises and want a simple starting point. They also suit people with weak toe grip, because the exercise directly trains the ability to flex the toes under load.',
-        'A 2020 study by Amaha and colleagues followed 41 people (56 feet) with primary metatarsalgia, pain under the ball of the foot, through an eight-week toe exercise program that included towel scrunches and marble pickups. Toe grip strength and pain scores both improved from before to after the program. There was no control group, so some of that change could reflect time or attention rather than the exercises themselves. Toe grip strength may also matter for older adults at risk of falls, since the toes help with balance during standing and walking.',
+        'A 2020 study by Amaha and colleagues followed 41 people (56 feet) with primary metatarsalgia, pain under the ball of the foot, through an eight-week toe exercise program that included towel scrunches and marble pickups. Toe grip strength and pain scores both improved from before to after the program. There was no control group, so some of that change could reflect time or attention rather than the exercises themselves.',
+        'Toe grip strength may also matter for older adults at risk of falls, since the toes help with balance during standing and walking.',
         'If your main goal is to raise a flat arch, the [short foot exercise](/exercises/short-foot-exercise/) and the broader [flat feet exercise program](/flat-feet-exercises/) are more targeted. If your main goal is toe grip and general foot muscle activation, towel scrunches are a good fit.',
       ],
       cites: [CITE.amaha],
@@ -90,10 +99,14 @@ export const EX_TOWEL_SCRUNCH: Guide = {
     {
       h2: 'What are the common mistakes with towel scrunches?',
       paragraphs: [
-        'The most common mistake is lifting the heel off the floor. When the heel lifts, the calf takes over and the foot muscles do less. Press the heel down throughout each rep.',
-        'Another mistake is pulling too fast. A quick snatch of the towel uses momentum instead of muscle contraction. Pull slowly and hold the scrunch for the full five seconds before releasing.',
-        'Some people grip only with the big toe and ignore the smaller toes. Try to use all five toes together. If the little toes will not cooperate at first, that is normal. The coordination improves with practice.',
-        'Finally, do not let the foot slide sideways across the towel. The pull should be straight back, toes toward the heel. If the towel moves to one side, reposition and focus on even toe engagement.',
+        {
+          list: [
+            '**The most common mistake is lifting the heel off the floor.** When the heel lifts, the calf takes over and the foot muscles do less. Press the heel down throughout each rep.',
+            '**Another mistake is pulling too fast.** A quick snatch of the towel uses momentum instead of muscle contraction. Pull slowly and hold the scrunch for the full five seconds before releasing.',
+            '**Some people grip only with the big toe and ignore the smaller toes.** Try to use all five toes together. If the little toes will not cooperate at first, that is normal. The coordination improves with practice.',
+            '**Finally, do not let the foot slide sideways across the towel.** The pull should be straight back, toes toward the heel. If the towel moves to one side, reposition and focus on even toe engagement.',
+          ],
+        },
       ],
     },
   ],

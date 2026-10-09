@@ -42,9 +42,23 @@ export const FOOT_STRENGTHENING_EN: Guide = {
     {
       h2: 'What are the foot muscles, and why strengthen them?',
       paragraphs: [
-        'The foot has two groups of muscles. The **intrinsic** muscles (the small muscles that start and end inside the foot) sit under the arch and between the bones. They hold the arch up, spread the toes and make the tiny corrections that keep you balanced. The **extrinsic** muscles (the bigger muscles that start in the lower leg and reach the foot through long tendons) include the calf, which lifts the heel, and the muscles that turn and lift the foot.',
-        'A 2015 paper by McKeon and colleagues called the intrinsic muscles the "foot core". The idea is the same as the deep muscles of your trunk: small stabilizers that keep the larger movers working well. Their view was that foot care more often supports the foot from the outside than trains these muscles, so many people never train them. That is a model, not an established cause of pain, but it explains why foot programs train the small muscles first and then add the calf and balance.',
-        'Good foot strength work covers both groups. The short foot exercise, toe spreads and big toe lifts train the intrinsic muscles, heel raises train the calf, and standing on one leg makes both work together.',
+        'The foot has two groups of muscles:',
+        {
+          list: [
+            'The **intrinsic** muscles (the small muscles that start and end inside the foot) sit under the arch and between the bones. They hold the arch up, spread the toes and make the tiny corrections that keep you balanced.',
+            'The **extrinsic** muscles (the bigger muscles that start in the lower leg and reach the foot through long tendons) include the calf, which lifts the heel, and the muscles that turn and lift the foot.',
+          ],
+        },
+        'A 2015 paper by McKeon and colleagues called the intrinsic muscles the "foot core". The idea is the same as the deep muscles of your trunk: small stabilizers that keep the larger movers working well.',
+        'Their view was that foot care more often supports the foot from the outside than trains these muscles, so many people never train them. That is a model, not an established cause of pain, but it explains why foot programs train the small muscles first and then add the calf and balance.',
+        'Good foot strength work covers both groups:',
+        {
+          list: [
+            'The short foot exercise, toe spreads and big toe lifts train the intrinsic muscles.',
+            'Heel raises train the calf.',
+            'Standing on one leg makes both work together.',
+          ],
+        },
       ],
       cites: [CITE.mcKeon],
     },
@@ -175,7 +189,8 @@ export const FOOT_STRENGTHENING_EN: Guide = {
       h2: 'Do foot strengthening exercises prevent running injuries?',
       keyFact: 'In a 2020 trial of 118 runners, those without foot core training were 2.42 times more likely to be injured over 12 months (Taddei and colleagues).',
       paragraphs: [
-        'Foot strengthening exercises lowered running injuries in one good trial, but only one. In 2020, Taddei and colleagues randomly split 118 recreational long-distance runners into a foot core group (57 runners) and a control group (61 runners). The foot core group did a supervised course of about two months on the foot and ankle muscles, then kept training with remote supervision. Over 12 months, the control group was 2.42 times more likely to get a running injury. The authors saw the effect appear after about four to eight months of training.',
+        'Foot strengthening exercises **lowered running injuries in one good trial, but only one.** In 2020, Taddei and colleagues randomly split 118 recreational long-distance runners into a foot core group (57 runners) and a control group (61 runners). The foot core group did a supervised course of about two months on the foot and ankle muscles, then kept training with remote supervision.',
+        'Over 12 months, the control group was 2.42 times more likely to get a running injury. The authors saw the effect appear after about four to eight months of training.',
         'An earlier, smaller trial from the same team, with 28 runners, found that about two months of foot training increased the size of every foot muscle they measured, compared with the control group. Runners also pushed off the ground with more force.',
         'Both trials come from one research group in Brazil, in recreational runners who were not injured at the start. We do not know yet whether the program helps beginners or people who already have pain. For runners with heel pain now, start with [heel pain in runners](/heel-pain-runners/).',
       ],
@@ -186,8 +201,17 @@ export const FOOT_STRENGTHENING_EN: Guide = {
       h2: 'How long does it take to strengthen your feet?',
       keyFact: 'In a 2019 trial of 57 runners, foot muscles grew and got stronger over about two months, with some muscles bigger after one month (Ridge and colleagues).',
       paragraphs: [
-        'Foot muscles got measurably stronger in about two months of regular training in the trials. In 2019, Ridge and colleagues randomly assigned 57 runners to foot strengthening exercises, walking in minimalist shoes, or no change. The exercise group did progressive resistance exercises at least five times a week. After about two months, every foot muscle they measured was bigger and stronger in both active groups, with no change in the control group. Some muscles were already bigger at the one-month check.',
-        'Arch shape changes more slowly, and by less. A 2023 review of four trials found that intrinsic foot strengthening did not change how much the arch moves after one month, but did after two months, with low-quality evidence. In a small study by Mulligan and Cook with 21 people and no control group, navicular drop (how far the inner arch sinks when you stand) fell by an average of 1.8 mm after one month of short foot training. That is a real but small change.',
+        'Foot muscles got measurably stronger in **about two months of regular training** in the trials. In 2019, Ridge and colleagues randomly assigned 57 runners to:',
+        {
+          list: [
+            'Foot strengthening exercises.',
+            'Walking in minimalist shoes.',
+            'No change.',
+          ],
+        },
+        'The exercise group did progressive resistance exercises at least five times a week. After about two months, every foot muscle they measured was bigger and stronger in both active groups, with no change in the control group. Some muscles were already bigger at the one-month check.',
+        'Arch shape changes more slowly, and by less. A 2023 review of four trials found that intrinsic foot strengthening did not change how much the arch moves after one month, but did after two months, with low-quality evidence.',
+        'In a small study by Mulligan and Cook with 21 people and no control group, navicular drop (how far the inner arch sinks when you stand) fell by an average of 1.8 mm after one month of short foot training. That is a real but small change.',
       ],
       cites: [CITE.ridgeMinimalist, CITE.deSouzaIFM, CITE.mulliganCook],
     },
@@ -203,16 +227,25 @@ export const FOOT_STRENGTHENING_EN: Guide = {
       h2: 'Can older adults strengthen their feet?',
       keyFact: 'In a 2016 trial of adults aged 60 to 90, supervised progressive foot training raised toe strength by up to 36 percent, while a home program did not change it (Mickle and colleagues).',
       paragraphs: [
-        'Older adults can strengthen their feet, and in one trial the supervised version with gradually heavier loads was the one that worked. In a 2016 trial, Mickle and colleagues assigned 85 people aged 60 to 90 to either a supervised class with gradually heavier foot exercises or a home exercise program, plus a separate group of 32 controls. After three months, the supervised group raised their toe strength by up to 36 percent and stood longer on one leg. The home group and the control group showed no change in toe strength.',
+        'Older adults can strengthen their feet, and in one trial the supervised version with gradually heavier loads was the one that worked. In a 2016 trial, Mickle and colleagues assigned 85 people aged 60 to 90 to either a supervised class with gradually heavier foot exercises or a home exercise program, plus a separate group of 32 controls.',
+        'After three months, the supervised group raised their toe strength by up to 36 percent and stood longer on one leg. The home group and the control group showed no change in toe strength.',
         'A 2022 review of nine studies in adults aged 65 and over found that intrinsic foot strengthening helped strength, balance and mobility, and possibly lowered fall risk, with little effect on walking pattern. The authors rated the quality of the evidence fair.',
-        'So move up to harder versions as they get easy, and keep a wall or counter close for balance work. If falls are a concern, a physical therapist can set up a safe program.',
+        'So move up to harder versions as they get easy, and **keep a wall or counter close for balance work.** If falls are a concern, a physical therapist can set up a safe program.',
       ],
       cites: [CITE.mickleToe, CITE.futrellOlder],
     },
     {
       h2: 'Does foot strengthening help plantar fasciitis or flat feet?',
       paragraphs: [
-        'For plantar fasciitis, foot strengthening on top of stretching did not do better than stretching alone in a trial that compared them. In 2016, Kamonseki and colleagues split 83 people with plantar fasciitis into three groups for two months: foot strengthening plus stretching, foot and hip strengthening plus stretching, or stretching alone. All three groups improved in pain and function, and no group did better than the others. For heel pain, see [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
+        'For plantar fasciitis, foot strengthening on top of stretching did not do better than stretching alone in a trial that compared them. In 2016, Kamonseki and colleagues split 83 people with plantar fasciitis into three groups for two months:',
+        {
+          list: [
+            'Foot strengthening plus stretching.',
+            'Foot and hip strengthening plus stretching.',
+            'Stretching alone.',
+          ],
+        },
+        'All three groups improved in pain and function, and no group did better than the others. For heel pain, see [plantar fasciitis exercises](/plantar-fasciitis-exercises/).',
         'For flexible flat feet, a 2023 trial of 52 people found that a mixed program including the short foot exercise changed arch shape more than in the control group. The details, and the limits of short foot training alone, are on the [flat feet exercises](/flat-feet-exercises/) page. If your pain is mainly in the toes, the [toe strengthening exercises](/toe-strengthening-exercises/) guide goes deeper, and for the ankle there is [ankle strengthening exercises](/ankle-strengthening-exercises/).',
       ],
       cites: [CITE.kamonseki, CITE.brijwasi],
@@ -221,7 +254,7 @@ export const FOOT_STRENGTHENING_EN: Guide = {
       h2: 'How strong is the evidence for foot strengthening?',
       paragraphs: [
         'The evidence that foot exercises make foot muscles stronger points the same way, but the studies are small. A 2025 review by Peters-Dickie and colleagues included 28 randomized trials with 1,399 people. It supported foot exercises for increasing foot strength, but rated the certainty low to very low, mostly because there were few studies per question and many had a high risk of bias. Results on muscle size were mixed.',
-        'The evidence that stronger feet mean fewer injuries is thinner still and rests mainly on the single runner trial above. Foot strengthening is low risk and cheap, and it does build strength. Whether it prevents your next injury is still open. More on how these guides grade research is on the [science](/science/) page.',
+        'The evidence that stronger feet mean fewer injuries is thinner still and rests mainly on the single runner trial above. **Foot strengthening is low risk and cheap, and it does build strength.** Whether it prevents your next injury is still open. More on how these guides grade research is on the [science](/science/) page.',
       ],
       sourceNote: 'Peters-Dickie 2025: meta-analyses showed minimalist shoes increased strength of toes 2 to 5, and foot exercises reduced arch motion during running; certainty low to very low.',
       cites: [CITE.petersDickie],

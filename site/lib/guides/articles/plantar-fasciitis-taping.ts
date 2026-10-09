@@ -59,7 +59,9 @@ export const PF_TAPING_EN: Guide = {
       h2: 'How much does taping help, and how long does it last?',
       keyFact: 'In a blinded trial of 92 people, low-Dye tape lowered first-step pain by about 1.2 points out of 10 more than a sham after one week (Radford and colleagues, 2006).',
       paragraphs: [
-        'The relief from tape is real but modest, and it fades fast once the tape comes off. The cleanest test is a 2006 Australian trial of 92 people with heel pain. Half wore rigid low-Dye tape for a week plus a fake ultrasound, and half got only the fake ultrasound. People were told one of the two options might be fake, though most in the tape group guessed they had the real one. The taped group had about 1.2 points less first-step pain on a 0 to 10 scale than the sham group. Other measures, like foot function, did not differ (Radford and colleagues, 2006).',
+        '**The relief from tape is real but modest, and it fades fast once the tape comes off.**',
+        'The cleanest test is a 2006 Australian trial of 92 people with heel pain. Half wore rigid low-Dye tape for a week plus a fake ultrasound, and half got only the fake ultrasound. People were told one of the two options might be fake, though most in the tape group guessed they had the real one.',
+        'The taped group had about 1.2 points less first-step pain on a 0 to 10 scale than the sham group. Other measures, like foot function, did not differ (Radford and colleagues, 2006).',
         'The sham group improved too, by close to 2 points, just from being in a study and expecting help. An earlier study by the same team, without random groups, reported a gap more than twice as large (Landorf and colleagues, 2005). When there is no fair comparison group, tape looks stronger than it is.',
         'Kinesiology tape shows the same short pattern. In a 2024 trial of 34 people, kinesiology tape beat a sham tape by up to 3.5 points out of 10 on day two, and the difference then shrank day by day until the tape came off (García-Gomariz and colleagues, 2024). The 2023 guideline found no taping studies that looked past about a month and a half.',
       ],
@@ -71,9 +73,16 @@ export const PF_TAPING_EN: Guide = {
       h2: 'Low-Dye taping or kinesiology tape: which is better?',
       keyFact: 'In a trial of 40 people, kinesiology tape eased pain 2 points out of 10 more than low-Dye tape on day one, with the gap shrinking each day (García-Gomariz and colleagues, 2024).',
       paragraphs: [
-        'Both kinds of tape have trial support, and there is no clear winner yet. Low-Dye taping uses stiff, non-stretch sports tape (often zinc oxide tape) to hold the arch up and limit how far it flattens. Kinesiology tape, often sold as KT tape, is thin and stretchy. It moves with you and does not hold the foot in place.',
-        'Only one small trial has compared them head to head. In 40 people, kinesiology tape eased pain more on the first day, by 2 points out of 10, and people rated it more comfortable, less sweaty and longer-lasting. The pain gap got smaller every day after that (García-Gomariz and colleagues, 2024). A third option, calcaneal taping (four strips around the heel bone and Achilles, not touching the arch), cut pain more than stretching or sham tape after one week in a 41-person trial (Hyland and colleagues, 2006).',
-        'Two 2026 reviews of 11 trials each point the same way. Kinesiology tape added to rehab lowered pain a little more than rehab alone, a result the authors called preliminary (Song and colleagues, 2026). Low-Dye tape beat a placebo but was no better than other options (Zhang and colleagues, 2026).',
+        'Both kinds of tape have trial support, and **there is no clear winner yet.** Low-Dye taping uses stiff, non-stretch sports tape (often zinc oxide tape) to hold the arch up and limit how far it flattens. Kinesiology tape, often sold as KT tape, is thin and stretchy. It moves with you and does not hold the foot in place.',
+        'Only one small trial has compared them head to head. In 40 people, kinesiology tape eased pain more on the first day, by 2 points out of 10, and people rated it more comfortable, less sweaty and longer-lasting. The pain gap got smaller every day after that (García-Gomariz and colleagues, 2024).',
+        'A third option, calcaneal taping (four strips around the heel bone and Achilles, not touching the arch), cut pain more than stretching or sham tape after one week in a 41-person trial (Hyland and colleagues, 2006).',
+        'Two 2026 reviews of 11 trials each point the same way:',
+        {
+          list: [
+            'Kinesiology tape added to rehab lowered pain a little more than rehab alone, a result the authors called preliminary (Song and colleagues, 2026).',
+            'Low-Dye tape beat a placebo but was no better than other options (Zhang and colleagues, 2026).',
+          ],
+        },
       ],
       table: {
         caption: 'Rigid low-Dye tape vs kinesiology tape for plantar fasciitis',
@@ -91,7 +100,7 @@ export const PF_TAPING_EN: Guide = {
     {
       h2: 'How do you tape your foot for plantar fasciitis (low-Dye method)?',
       paragraphs: [
-        'Low-Dye taping takes about five minutes once you have practiced. If you can, have a physiotherapist or podiatrist show you the first time. The steps below follow the common version.',
+        'Low-Dye taping takes about five minutes once you have practiced. **If you can, have a physiotherapist or podiatrist show you the first time.** The steps below follow the common version.',
         'Before you start, wash the foot with plain soap, dry it well, and skip any lotion. Trim strips in advance from rigid sports tape about 2.5 cm wide. Sit with the foot resting at a right angle to the leg, not pointed.',
       ],
       bullets: [
@@ -122,7 +131,7 @@ export const PF_TAPING_EN: Guide = {
     {
       h2: 'How long can you leave plantar fasciitis tape on, and can you sleep in it?',
       paragraphs: [
-        'Most people leave tape on for two to five days, then give the skin a rest. That matches the trials: low-Dye tape stayed on for 3 to 5 days in one study and for a week in another, and kinesiology tape was worn for 5 days in the 2024 trials (Landorf and colleagues, 2005; Radford and colleagues, 2006; García-Gomariz and colleagues, 2024).',
+        '**Most people leave tape on for two to five days, then give the skin a rest.** That matches the trials: low-Dye tape stayed on for 3 to 5 days in one study and for a week in another, and kinesiology tape was worn for 5 days in the 2024 trials (Landorf and colleagues, 2005; Radford and colleagues, 2006; García-Gomariz and colleagues, 2024).',
         'Rigid tape loosens as you walk, so it often needs a fresh strip sooner. Kinesiology tape is made to last several days and can get wet. Pat it dry after a shower, and do not use a hair dryer on it.',
         'You can sleep in tape if the skin feels normal, but we found no trial that tested tape worn only at night. For morning pain, the option with guideline support is a night splint, covered in [night splints for plantar fasciitis](/night-splints-plantar-fasciitis/), along with the stretches in [heel pain in the morning](/heel-pain-in-the-morning/).',
       ],
@@ -132,8 +141,23 @@ export const PF_TAPING_EN: Guide = {
       h2: 'What are the side effects of taping?',
       keyFact: 'In a 92-person trial, 13 of 46 people who wore low-Dye tape (28%) had a side effect, and all of them cleared once the tape came off (Radford and colleagues, 2006).',
       paragraphs: [
-        'The main side effects of taping are skin irritation and tape that feels too tight. The 2023 guideline calls mild skin irritation the only harm reported. The 2006 blinded trial gives the clearest numbers. Of 46 people who wore rigid tape for a week, 13 (28%) had a side effect: 4 said it was too tight, 4 had an allergic skin reaction, and 5 noticed a new ache elsewhere in the leg. Five took the tape off early. Every one of these cleared once the tape was removed (Radford and colleagues, 2006).',
-        'To lower the risk, use hypoallergenic tape or a thin underwrap on sensitive skin, never pull rigid tape tight around the foot, and peel tape off slowly, ideally after loosening it with a little baby oil.',
+        '**The main side effects of taping are skin irritation and tape that feels too tight.** The 2023 guideline calls mild skin irritation the only harm reported. The 2006 blinded trial gives the clearest numbers. Of 46 people who wore rigid tape for a week, 13 (28%) had a side effect:',
+        {
+          list: [
+            '4 said it was too tight.',
+            '4 had an allergic skin reaction.',
+            '5 noticed a new ache elsewhere in the leg.',
+          ],
+        },
+        'Five took the tape off early. Every one of these cleared once the tape was removed (Radford and colleagues, 2006).',
+        'To lower the risk:',
+        {
+          list: [
+            'Use hypoallergenic tape or a thin underwrap on sensitive skin.',
+            'Never pull rigid tape tight around the foot.',
+            'Peel tape off slowly, ideally after loosening it with a little baby oil.',
+          ],
+        },
       ],
       cites: [CITE.guideline, CITE.radfordTaping],
     },
@@ -142,7 +166,9 @@ export const PF_TAPING_EN: Guide = {
       keyFact: 'In a trial of 48 people, slow heel raises with a towel under the toes eased pain faster than stretching alone at three months, and both groups were even by twelve months (Rathleff and colleagues, 2015).',
       paragraphs: [
         'Pair tape with stretching and calf strength work, because those are the parts with evidence beyond the short term. The 2023 guideline grades plantar fascia and calf stretching **A** for both short-term and long-term pain. Strength training gets a **B**. In a trial of 48 people, slow heel raises with a towel under the toes eased pain faster than stretching alone at three months, though both groups were even by twelve months (Rathleff and colleagues, 2015).',
-        'Tape can make walking easier this week so you keep moving and keep doing the exercises. If walking itself sets off the pain, [heel pain after walking](/heel-pain-after-walking/) covers how to adjust the load. The three exercises below are the core. In Walkito, the stretches start at 2 holds of 30 seconds, and this towel heel raise, once your plan reaches it, is set at 4 sets of 10 with the same slow 3-2-3 count (a backpack adds weight when you have a step). Once a week, the exercise for your focus goal moves up a step if your last two sessions with it felt easy and morning pain did not rise, and down a step if a session felt hard or morning pain rose by 2 or more.',
+        'Tape can make walking easier this week so you keep moving and keep doing the exercises. If walking itself sets off the pain, [heel pain after walking](/heel-pain-after-walking/) covers how to adjust the load.',
+        'The three exercises below are the core. In Walkito, the stretches start at 2 holds of 30 seconds, and this towel heel raise, once your plan reaches it, is set at 4 sets of 10 with the same slow 3-2-3 count (a backpack adds weight when you have a step).',
+        'Once a week, the exercise for your focus goal moves up a step if your last two sessions with it felt easy and morning pain did not rise, and down a step if a session felt hard or morning pain rose by 2 or more.',
       ],
       exercises: [
         {
@@ -187,7 +213,15 @@ export const PF_TAPING_EN: Guide = {
     {
       h2: 'When should you stop taping?',
       paragraphs: [
-        'Stop taping when it no longer makes a difference you can feel, when your skin reacts, or once the pain has settled enough that you walk normally without it. Tape is not meant to be worn for months. The research covers up to about a month and a half, and the guideline only recommends it for the short term.',
+        'Stop taping:',
+        {
+          list: [
+            'When it no longer makes a difference you can feel.',
+            'When your skin reacts.',
+            'Once the pain has settled enough that you walk normally without it.',
+          ],
+        },
+        '**Tape is not meant to be worn for months.** The research covers up to about a month and a half, and the guideline only recommends it for the short term.',
         'A simple test: go a day without tape and rate your first-step pain from 0 to 10. If it matches your taped days, the tape is no longer doing much. If you still need tape every day after a month of regular exercises, see a clinician to check for something else and talk through other options, such as shoe inserts (see [insoles vs exercises](/insoles-vs-exercises/)).',
       ],
       cites: [CITE.guideline],

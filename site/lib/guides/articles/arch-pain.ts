@@ -31,13 +31,17 @@ export const ARCH_PAIN_EN: Guide = {
     {
       h2: 'What causes arch pain?',
       paragraphs: [
-        'The arch is supported by the plantar fascia, the posterior tibial tendon, the intrinsic foot muscles, and the bones and ligaments of the midfoot. Pain in the arch means one or more of these structures is under more stress than it can handle. The most common causes break down into a few patterns.',
-        '**Plantar fasciitis** is the leading single cause. The plantar fascia, a thick band of tissue running from the heel to the base of the toes, gets irritated by repeated loading. Pain is usually worst near the heel but often extends into the arch, especially when the arch side of the fascia is involved. The hallmark is sharp pain on the first steps after rest. See [plantar fasciitis exercises](/plantar-fasciitis-exercises/) and [plantar fasciitis overview](/plantar-fasciitis/) for the full guide.',
-        '**Flat feet and fallen arches** cause arch pain by overstretching the plantar fascia and the posterior tibial tendon. When the arch collapses during standing and walking, those structures take on a load they are not shaped to carry for long periods. See [flat feet exercises](/flat-feet-exercises/) and [flat feet overview](/flat-feet/).',
-        '**Posterior tibial tendon dysfunction (PTTD)** is the most common cause of adult-acquired flat foot. The posterior tibial tendon runs behind the inner ankle and under the arch, holding it up. When this tendon weakens or tears, the arch gradually collapses. Pain is felt along the inner ankle and into the arch, and it worsens with activity. A 2018 systematic review of exercise for PTTD found limited but promising evidence for strengthening and stretching. See [posterior tibial tendon dysfunction exercises](/posterior-tibial-tendon-dysfunction-exercises/).',
-        '**High arches (pes cavus)** cause arch pain differently. A rigid, high arch does not flex enough to absorb shock, so the force concentrates under the heel and the ball of the foot rather than spreading across the midfoot. Pain under the arch in a high-arched foot often comes from a tight plantar fascia. See [high arches exercises](/high-arches-exercises/).',
-        '**Overuse** without a named condition is common in people who suddenly increase their walking, running or standing load. The arch muscles and plantar fascia are not yet strong enough for the new demand, and they protest. This usually improves with a gradual return to the previous load plus calf and arch strengthening.',
-        '**Nerve irritation** such as tarsal tunnel syndrome can cause burning, tingling or numbness along the arch. The posterior tibial nerve runs behind the inner ankle bone and into the sole of the foot. If it gets compressed, the pain can mimic plantar fasciitis but comes with sensory symptoms that fasciitis does not. This needs a clinician.',
+        'The arch is supported by the plantar fascia, the posterior tibial tendon, the intrinsic foot muscles, and the bones and ligaments of the midfoot. Pain in the arch means one or more of these structures is under more stress than it can handle. The most common causes break down into a few patterns:',
+        {
+          list: [
+            '**Plantar fasciitis** is the leading single cause. The plantar fascia, a thick band of tissue running from the heel to the base of the toes, gets irritated by repeated loading. Pain is usually worst near the heel but often extends into the arch, especially when the arch side of the fascia is involved. The hallmark is sharp pain on the first steps after rest. See [plantar fasciitis exercises](/plantar-fasciitis-exercises/) and [plantar fasciitis overview](/plantar-fasciitis/) for the full guide.',
+            '**Flat feet and fallen arches** cause arch pain by overstretching the plantar fascia and the posterior tibial tendon. When the arch collapses during standing and walking, those structures take on a load they are not shaped to carry for long periods. See [flat feet exercises](/flat-feet-exercises/) and [flat feet overview](/flat-feet/).',
+            '**Posterior tibial tendon dysfunction (PTTD)** is the most common cause of adult-acquired flat foot. The posterior tibial tendon runs behind the inner ankle and under the arch, holding it up. When this tendon weakens or tears, the arch gradually collapses. Pain is felt along the inner ankle and into the arch, and it worsens with activity. A 2018 systematic review of exercise for PTTD found limited but promising evidence for strengthening and stretching. See [posterior tibial tendon dysfunction exercises](/posterior-tibial-tendon-dysfunction-exercises/).',
+            '**High arches (pes cavus)** cause arch pain differently. A rigid, high arch does not flex enough to absorb shock, so the force concentrates under the heel and the ball of the foot rather than spreading across the midfoot. Pain under the arch in a high-arched foot often comes from a tight plantar fascia. See [high arches exercises](/high-arches-exercises/).',
+            '**Overuse** without a named condition is common in people who suddenly increase their walking, running or standing load. The arch muscles and plantar fascia are not yet strong enough for the new demand, and they protest. This usually improves with a gradual return to the previous load plus calf and arch strengthening.',
+            '**Nerve irritation** such as tarsal tunnel syndrome can cause burning, tingling or numbness along the arch. The posterior tibial nerve runs behind the inner ankle bone and into the sole of the foot. If it gets compressed, the pain can mimic plantar fasciitis but comes with sensory symptoms that fasciitis does not. This needs a clinician.',
+          ],
+        },
       ],
       cites: [CITE.guideline, CITE.posteriorTibialReview, CITE.riddle],
     },
@@ -149,11 +153,15 @@ export const ARCH_PAIN_EN: Guide = {
     {
       h2: 'When is arch pain a sign of something else?',
       paragraphs: [
-        'Most arch pain responds to stretching, load adjustment and time. But some patterns point to conditions that need a clinician before exercise.',
-        'Pain with numbness, tingling or burning can come from tarsal tunnel syndrome, where the posterior tibial nerve is compressed behind the inner ankle. This needs a clinical diagnosis, not exercise alone.',
-        'Arch pain that comes with progressive flattening of the foot, especially on one side, can signal posterior tibial tendon dysfunction in a later stage. A single-leg heel raise test is a simple check: if you cannot rise fully onto your toes on one foot, or it hurts significantly more on one side, a clinician should assess the tendon before you load it further.',
-        'Pain at one specific spot that worsens steadily with activity and does not ease with normal rest can be a stress fracture of one of the small bones in the midfoot. This needs imaging, not stretching.',
-        'Arch pain in children aged 8 to 15 can be [calcaneal apophysitis (Sever\'s disease)](/severs-disease/), which involves the growth plate rather than the fascia. That page covers what helps for children. Walkito is designed for adults.',
+        'Most arch pain responds to stretching, load adjustment and time. But some patterns point to conditions that need a clinician before exercise:',
+        {
+          list: [
+            '**Nerve symptoms:** Pain with numbness, tingling or burning can come from tarsal tunnel syndrome, where the posterior tibial nerve is compressed behind the inner ankle. This needs a clinical diagnosis, not exercise alone.',
+            '**One-sided flattening:** Arch pain that comes with progressive flattening of the foot, especially on one side, can signal posterior tibial tendon dysfunction in a later stage. A single-leg heel raise test is a simple check: if you cannot rise fully onto your toes on one foot, or it hurts significantly more on one side, a clinician should assess the tendon before you load it further.',
+            '**One painful spot:** Pain at one specific spot that worsens steadily with activity and does not ease with normal rest can be a stress fracture of one of the small bones in the midfoot. This needs imaging, not stretching.',
+            '**Children:** Arch pain in children aged 8 to 15 can be [calcaneal apophysitis (Sever\'s disease)](/severs-disease/), which involves the growth plate rather than the fascia. That page covers what helps for children. Walkito is designed for adults.',
+          ],
+        },
       ],
       cites: [CITE.posteriorTibialReview],
     },
@@ -172,7 +180,7 @@ export const ARCH_PAIN_EN: Guide = {
       paragraphs: [
         "The 2023 heel pain guideline grades orthotics B against using them alone for short-term plantar fasciitis pain. Orthotics combined with other care, such as stretching, get a C in favor. Supportive shoes are commonly recommended and can reduce discomfort, but no large trial has shown them to be better than stretching and strength work.",
         'For flat feet, a medial arch support can reduce the collapse of the arch during standing and walking, giving the posterior tibial tendon and plantar fascia less work to do. For high arches, a cushioned orthotic absorbs the shock that the rigid arch does not. In a 2006 trial of 154 people with pes cavus foot pain, custom foot orthoses improved pain and function more than a sham insert at three months (Burns and colleagues, 2006).',
-        'Shoes and inserts help manage symptoms while exercise builds the capacity the foot needs. They are not a substitute for each other.',
+        '**Shoes and inserts help manage symptoms while exercise builds the capacity the foot needs.** They are not a substitute for each other.',
       ],
       cites: [CITE.guideline],
     },

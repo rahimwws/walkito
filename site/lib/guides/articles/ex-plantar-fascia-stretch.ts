@@ -70,7 +70,7 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
     {
       h2: 'When should you stretch the plantar fascia?',
       paragraphs: [
-        'Before your first step in the morning. That is the single most repeated instruction across both the trial and the 2023 guideline. The plantar fascia shortens overnight while the foot is relaxed. The first steps of the day pull it suddenly and sharply, which is why morning heel pain is the hallmark of plantar fasciitis.',
+        '**Before your first step in the morning.** That is the single most repeated instruction across both the trial and the 2023 guideline. The plantar fascia shortens overnight while the foot is relaxed. The first steps of the day pull it suddenly and sharply, which is why morning heel pain is the hallmark of plantar fasciitis.',
         'The second most important time is before standing after any long period of sitting. The same shortening happens during rest. Stretching the fascia before loading it reduces that jolt.',
         'In the trial, participants were asked to do 10 holds of 10 seconds, three times a day, for at least eight weeks. The most critical sessions were the morning one and the one after prolonged sitting. More sessions throughout the day were encouraged if possible.',
       ],
@@ -100,10 +100,14 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
     {
       h2: 'What are the common mistakes with the plantar fascia stretch?',
       paragraphs: [
-        'Pulling the toes too hard. The stretch should feel firm under the arch, not painful. If you are wincing, you are past the useful range. Ease back until you feel a pull without a sharp edge.',
-        'Feeling it in the calf instead of the arch. If the stretch is mostly in the calf, the knee is too straight or the pull is too aggressive. Cross the foot higher on the opposite knee so the ankle relaxes, and focus on the toes bending back rather than the whole foot.',
-        'Skipping the morning stretch. This is the single session that has the most effect on the worst moment of the day. Keep a note on the nightstand or set a reminder. The stretch takes about two minutes, and it is worth doing before the foot hits the floor.',
-        'Bouncing. Hold still for the full 10 seconds. Bouncing does not give the fascia time to lengthen and can irritate the tissue further.',
+        {
+          list: [
+            '**Pulling the toes too hard.** The stretch should feel firm under the arch, not painful. If you are wincing, you are past the useful range. Ease back until you feel a pull without a sharp edge.',
+            '**Feeling it in the calf instead of the arch.** If the stretch is mostly in the calf, the knee is too straight or the pull is too aggressive. Cross the foot higher on the opposite knee so the ankle relaxes, and focus on the toes bending back rather than the whole foot.',
+            '**Skipping the morning stretch.** This is the single session that has the most effect on the worst moment of the day. Keep a note on the nightstand or set a reminder. The stretch takes about two minutes, and it is worth doing before the foot hits the floor.',
+            '**Bouncing.** Hold still for the full 10 seconds. Bouncing does not give the fascia time to lengthen and can irritate the tissue further.',
+          ],
+        },
       ],
     },
     {
@@ -111,7 +115,7 @@ export const EX_PLANTAR_FASCIA_STRETCH: Guide = {
       paragraphs: [
         'If crossing the leg is uncomfortable, keep both feet on the floor and use a towel or belt looped around the ball of the foot. Pull the towel toward you so the toes bend back. The stretch is the same, just from a different angle.',
         'A harder version is a standing plantar fascia stretch: place the ball of the foot against a wall with the heel on the ground and lean in gently. This adds bodyweight into the stretch and is harder to dose precisely. It works once the seated version feels easy and does not provoke pain.',
-        'The seated version from the trial is the one the evidence is behind. Start there. The full set of stretches and strength exercises for heel pain is in [plantar fasciitis exercises](/plantar-fasciitis-exercises/). For rolling the sole after a stretch session, see [foot roll](/exercises/foot-roll/).',
+        '**The seated version from the trial is the one the evidence is behind.** Start there. The full set of stretches and strength exercises for heel pain is in [plantar fasciitis exercises](/plantar-fasciitis-exercises/). For rolling the sole after a stretch session, see [foot roll](/exercises/foot-roll/).',
       ],
     },
   ],
