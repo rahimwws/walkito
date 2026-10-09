@@ -26,6 +26,7 @@ import {
 
 import {
   APP_EQUIPMENT,
+  MANNEQUIN_CLIPS,
   clipFor,
   doseLabel,
   exerciseCard,
@@ -261,7 +262,8 @@ export function starterWeek(args: PlanArgs, today: string) {
     defaultMinutes: args.minutes ?? 5,
     eligibility: {
       // The app plans only exercises with a clip; so does this, by the same test.
-      clips: new Set(Object.keys(CLIPS).filter((id) => clipFor(id) != null)),
+      // Exercises filmed with a person only; see MANNEQUIN_CLIPS.
+      clips: new Set(Object.keys(CLIPS).filter((id) => clipFor(id) != null && !MANNEQUIN_CLIPS.has(id))),
       equipmentMissing,
       cantDo: heldBack(args),
       painLast14: [],

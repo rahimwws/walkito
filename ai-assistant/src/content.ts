@@ -74,7 +74,6 @@ export type Clip = { src: string; poster?: string };
 export function clipFor(id: string, manifest: Record<string, { file: string; hash: string }> = CLIPS): Clip | null {
   const entry = manifest[id];
   if (!entry || !/^[0-9a-f]{16}$/.test(entry.hash)) return null;
-  if (MANNEQUIN_CLIPS.has(id)) return null;
   // `#t=0.1`: the first frame of the clip itself as the still, not the site's
   // older posters, which are a different recording.
   return { src: `${__SUPABASE_URL__}/storage/v1/object/public/${CLIP_BUCKET}/${entry.file}#t=0.1` };
@@ -82,9 +81,11 @@ export function clipFor(id: string, manifest: Record<string, { file: string; has
 
 /**
  * Clips still drawn with a grey mannequin rather than filmed with a person
- * (checked frame by frame, 2026-10-09). The assistant shows people only: these
- * exercises get no video here, so a plan picks the next exercise that has one.
- * Take an id off once its clip is re-recorded.
+ * (checked frame by frame, 2026-10-09). A plan leaves these out and picks an
+ * exercise filmed with a person; where an exercise cannot be swapped (the
+ * plantar stretch in the fixed routines, a demo asked for by name) its
+ * mannequin clip is shown, a video being better than none. Take an id off once
+ * its clip is re-recorded.
  */
 export const MANNEQUIN_CLIPS: ReadonlySet<string> = new Set([
   'fascia_stretch',

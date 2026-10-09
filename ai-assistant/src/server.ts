@@ -323,7 +323,42 @@ const http = createServer((req, res) => {
       res.end();
       return;
     }
-    void mcp(req, res);
+    if (req.method !== 'POST') {
+      log({ http: req.method, path, host: sourceOf(undefined, String(req.headers['user-agent'] ?? '')) });
+      void mcp(req, res);
+      return;
+    }
+    // The JSON-RPC method names of each POST go into the log (never the
+    // params), so a host that connects but never calls a tool is visible.
+    const chunks: Buffer[] = [];
+    let size = 0;
+    req.on('data', (chunk: Buffer) => {
+      size += chunk.length;
+      if (size <= 1_000_000) chunks.push(chunk);
+    });
+    req.on('end', () => {
+      let body: unknown;
+      try {
+        body = JSON.parse(Buffer.concat(chunks).toString('utf8'));
+      } catch {
+        body = undefined;
+      }
+      const methods = (Array.isArray(body) ? body : [body])
+        .map((m) => (m && typeof m === 'object' ? (m as { method?: unknown }).method : undefined))
+        .filter((m): m is string => typeof m === 'string' && /^[\w/.-]{1,60}$/.test(m));
+      const writeHead = res.writeHead.bind(res);
+      res.writeHead = ((status: number, ...rest: unknown[]) => {
+        log({
+          rpc: methods,
+          status,
+          version: String(req.headers['mcp-protocol-version'] ?? ''),
+          host: sourceOf(undefined, String(req.headers['user-agent'] ?? '')),
+          ua: String(req.headers['user-agent'] ?? '').slice(0, 40),
+        });
+        return (writeHead as (...a: unknown[]) => ServerResponse)(status, ...rest);
+      }) as typeof res.writeHead;
+      void mcp(req, res, body);
+    });
     return;
   }
   const code = /^\/p\/([^/]+)\/?$/.exec(path);
