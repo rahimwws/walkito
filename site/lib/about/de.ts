@@ -35,7 +35,7 @@ export const ABOUT_DE: About = {
       h2: 'Wie wir recherchieren',
       id: 'how-we-research',
       paragraphs: [
-        'Walkito Research schreibt die Ratgeber auf dieser Website: [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), [Übungen bei Plattfuß](/de/plattfuss-uebungen/), [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) und [die Seite zur Studienlage](/science/) (auf Englisch). Wir stützen sie auf klinische Leitlinien, randomisierte Studien und systematische Übersichtsarbeiten. Blogbeiträge, Foren oder Zusammenfassungen anderer Websites nutzen wir nicht als Quelle. Wenn eine Zusammenfassung eine Studie zitiert, gehen wir zur Studie.',
+        'Rahim Hudaykylyyev und Rahman Bazarov, die beiden Gründer von Walkito, schreiben die Ratgeber auf dieser Website: [Übungen bei Plantarfasziitis](/de/plantarfasziitis-uebungen/), [Übungen bei Plattfuß](/de/plattfuss-uebungen/), [Fersenschmerzen beim Laufen](/heel-pain-runners/) (auf Englisch) und [die Seite zur Studienlage](/science/) (auf Englisch). Wir stützen sie auf klinische Leitlinien, randomisierte Studien und systematische Übersichtsarbeiten. Blogbeiträge, Foren oder Zusammenfassungen anderer Websites nutzen wir nicht als Quelle. Wenn eine Zusammenfassung eine Studie zitiert, gehen wir zur Studie.',
         'Wir lesen die ganze Arbeit, nicht nur die Zusammenfassung, bevor eine Zahl daraus auf eine Seite kommt. Jede Dosis, jede Bewertung und jede Zahl ist mit der Studie dahinter verlinkt, sodass du sie öffnen und prüfen kannst.',
         'Übungen und Aussagen tragen eines von drei Labels zur Studienlage. **Stark** heißt, dass eine klinische Leitlinie sie hoch bewertet oder mehrere gute Studien übereinstimmen. **Mittel** heißt, dass mindestens eine gut angelegte Studie sie stützt. **Vorläufig** heißt, dass die Forschung klein ist oder gerade erst anfängt: einen Versuch wert, und das Label kann sich ändern, wenn mehr dazu erscheint. Eine verbreitete Regel, die eine Studie getestet und nicht bestätigt hat, ist als **Nicht belegt** markiert.',
         'Walkito hat keine Sponsoren, keine Affiliate-Links und keine bezahlten Platzierungen. Nichts steht auf einer Seite, weil jemand dafür bezahlt hat. Wir prüfen eine Seite erneut, wenn neue Forschung zu ihrem Thema erscheint. Jeder Ratgeber folgt fünf Regeln:',
@@ -73,7 +73,7 @@ export const ABOUT_DE: About = {
       h2: 'Hat eine medizinische Fachperson die Ratgeber von Walkito geprüft?',
       id: 'clinician',
       paragraphs: [
-        'Bisher hat keine approbierte medizinische Fachperson die Ratgeber von Walkito geprüft. Walkito Research schreibt sie auf Grundlage der veröffentlichten Forschung, die auf jeder Seite zitiert ist.',
+        'Bisher hat keine approbierte medizinische Fachperson die Ratgeber von Walkito geprüft. Rahim und Rahman schreiben sie auf Grundlage der veröffentlichten Forschung, die auf jeder Seite zitiert ist.',
         'Wenn eine medizinische Fachperson sie prüft, nennt diese Seite ihren Namen, ihre Qualifikation und was sie geprüft hat. Bis dahin behauptet keine Seite auf dieser Website eine medizinische Prüfung.',
       ],
     },
