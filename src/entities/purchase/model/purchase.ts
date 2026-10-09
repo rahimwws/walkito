@@ -209,6 +209,21 @@ export type Purchases = {
   buyProduct(request: { productId: string; basePlanId?: string; offerId?: string; source: string }): Promise<PurchaseResult>;
   restore(): Promise<RestoreResult>;
   /**
+   * Whether the store has its own sheet for an offer code: Apple's, on iOS.
+   * Google Play redeems promo codes in the Play Store app, not in ours.
+   */
+  readonly canRedeemCode: boolean;
+  /**
+   * Open the store's sheet for an App Store offer code (set up in App Store
+   * Connect on a subscription). The store redeems it; the subscription it
+   * starts reaches `entitled()` through the same listener as a purchase.
+   *
+   * The only way a code may give anything in this app. A field of our own
+   * that unlocked access or a price is what App Review rejected 1.0.3 (35)
+   * for, under Guideline 3.1.1.
+   */
+  redeemCode(): Promise<void>;
+  /**
    * The store's id for this customer: RevenueCat's app user id. PostHog and
    * Superwall are identified as it, so a purchase RevenueCat reports from its
    * server lands on the same person in both. Null with no store.
@@ -280,6 +295,8 @@ export const unconfigured: Purchases = {
   buy: async () => ({ status: 'unavailable' }),
   buyProduct: async () => ({ status: 'unavailable' }),
   restore: async () => ({ status: 'unavailable' }),
+  canRedeemCode: false,
+  redeemCode: async () => {},
   appUserId: async () => null,
   // Not entitled, rather than entitled. An unconfigured build is a build whose
   // store was never reached, and the safe reading of "we don't know" is the one

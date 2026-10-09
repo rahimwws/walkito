@@ -569,6 +569,18 @@ export const revenueCatStore: Store = {
     }
   },
 
+  canRedeemCode: Platform.OS === 'ios',
+
+  async redeemCode(): Promise<void> {
+    if (Platform.OS !== 'ios') return;
+    try {
+      await Purchases.presentCodeRedemptionSheet();
+    } catch {
+      // Nothing to say: the sheet is Apple's, and so is any message about the
+      // code. A redeemed code arrives through the customer-info listener.
+    }
+  },
+
   async appUserId(): Promise<string | null> {
     try {
       return await Purchases.getAppUserID();

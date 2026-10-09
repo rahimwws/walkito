@@ -46,27 +46,39 @@ export function EmailStep({ onDone }: { onDone: () => void }) {
     <KeyboardAvoidingView behavior="padding" keyboardVerticalOffset={0} style={styles.root}>
       <View style={styles.top}>
         <Animated.View
-          entering={FadeInDown.duration(380).easing(Easing.bezier(0.23, 1, 0.32, 1).factory()).reduceMotion(ReduceMotion.System)}
+          entering={FadeInDown.duration(380)
+            .easing(Easing.bezier(0.23, 1, 0.32, 1).factory())
+            .reduceMotion(ReduceMotion.System)}
           style={[styles.badge, { backgroundColor: 'rgba(139,92,246,0.18)' }]}>
           <HugeiconsIcon icon={Mail01Icon} size={26} color={PRIMARY} strokeWidth={2} />
         </Animated.View>
         <Text style={[styles.title, { color: colors.foreground }]}>{t('setup.email.title')}</Text>
-        <View style={[styles.field, { backgroundColor: colors.card, borderColor: valid ? PRIMARY : 'transparent' }]}>
-          <TextInput
-            value={value}
-            onChangeText={setValue}
-            placeholder={t('setup.email.placeholder')}
-            placeholderTextColor={meter.unit}
-            keyboardType="email-address"
-            textContentType="emailAddress"
-            autoComplete="email"
-            autoCapitalize="none"
-            autoCorrect={false}
-            returnKeyType="send"
-            onSubmitEditing={send}
-            style={[styles.input, { color: colors.foreground }]}
-          />
-        </View>
+        {/* The input is the field itself, padding and border included, with no
+            wrapper of the same height around it: a fixed-height input inside
+            a bordered box one border taller than its inside sat its text low on
+            a phone. A bare UITextField centres its own text. */}
+        <TextInput
+          value={value}
+          onChangeText={setValue}
+          placeholder={t('setup.email.placeholder')}
+          placeholderTextColor={meter.unit}
+          keyboardType="email-address"
+          textContentType="emailAddress"
+          autoComplete="email"
+          autoCapitalize="none"
+          autoCorrect={false}
+          returnKeyType="send"
+          onSubmitEditing={send}
+          selectionColor={PRIMARY}
+          style={[
+            styles.field,
+            {
+              color: colors.foreground,
+              backgroundColor: colors.card,
+              borderColor: valid ? PRIMARY : 'transparent',
+            },
+          ]}
+        />
         <Text style={[styles.note, { color: meter.caption }]}>{t('setup.email.note')}</Text>
       </View>
 
@@ -101,14 +113,14 @@ const styles = StyleSheet.create({
   },
   title: { ...fonts.heavy(28, -0.7), lineHeight: 33 },
   field: {
+    ...fonts.semibold(18, -0.2),
     height: 58,
     borderRadius: 18,
     borderCurve: 'continuous',
     borderWidth: 1.5,
     paddingHorizontal: 16,
-    justifyContent: 'center',
+    paddingVertical: 0,
   },
-  input: { ...fonts.semibold(18, -0.2), height: 58 },
   note: { ...fonts.medium(14), lineHeight: 19 },
   bar: { paddingTop: 12, gap: 4 },
   later: { alignItems: 'center', paddingTop: 12, paddingBottom: 4 },
