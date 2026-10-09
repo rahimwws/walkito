@@ -15,7 +15,9 @@ import { asLocale, type GoalType, type Locale, type Metric } from './types.ts';
  *
  * - **All lowercase.** Subjects, body, buttons, footer and names. No capital
  *   letter appears anywhere.
- * - **A plain hyphen, never a long dash.** " - " where English would put "—".
+ * - **No dashes as punctuation.** No long dash and no spaced hyphen (" - "):
+ *   use a period, colon or comma instead (Rahman's rule for everything Walkito
+ *   writes). A hyphen inside a word ("60-second", "7-day") is fine.
  * - **No pain number in a subject.** Subjects show on lock screens. Pain is
  *   only ever in a body, and only in `day10_keep`, `pain_up` and `weekly`.
  *
@@ -154,9 +156,9 @@ const EN: Copy = {
 
   welcome: {
     subject: 'welcome to walkito',
-    intro: 'rahim and rahman here - we built walkito, just the two of us.',
+    intro: 'rahim and rahman here. we built walkito, just the two of us.',
     first: (m) => `your first session takes ${minutesEn(m)}. start today, it's the easiest one.`,
-    firstRunner: (m) => `your first session takes ${minutesEn(m)} - less than your warm-up.`,
+    firstRunner: (m) => `your first session takes ${minutesEn(m)}, less than your warm-up.`,
     button: 'open walkito',
     ps: 'p.s. reply to this email. we read every one.',
   },
@@ -189,14 +191,14 @@ const EN: Copy = {
     button: (m) => `start with ${minutesEn(m)}`,
   },
   day10Keep: {
-    subject: 'most people quit in week 4',
-    notBecause: "most people quit too early. don't.",
-    painDrop: (s, l) => `your mornings went from ${s} to ${l}. that's the part people quit on.`,
+    subject: 'pick it back up today',
+    notBecause: "this is the point where it's easy to stop. don't.",
+    painDrop: (s, l) => `your mornings went from ${s} to ${l}. don't stop now.`,
     daysIn: (d) => `${d} ${two(d, 'day', 'days')} in. keep going.`,
     button: (m) => `do today's ${minutesEn(m)}`,
   },
   day14Test: {
-    subject: 'test day - see what changed',
+    subject: 'test day: see what changed',
     before: (metric, n, shown) => {
       switch (metric) {
         case 'calf':
@@ -221,7 +223,7 @@ const EN: Copy = {
     button: 'see your progress',
   },
   goalReached: {
-    subject: (goal) => `${goal} - done`,
+    subject: (goal) => `${goal}: done`,
     reached: (goal, t) => {
       switch (goal) {
         case 'calf_raises':
@@ -241,7 +243,7 @@ const EN: Copy = {
     buttonPlan: 'see your plan',
   },
   painUp: {
-    subject: "a rougher week - here's the plan",
+    subject: "a rougher week. here's the plan",
     lines: [
       'pain went up a bit this week. that happens. your plan already got lighter.',
       'if you notice swelling, numbness or pain at night, check with a doctor.',
@@ -250,7 +252,7 @@ const EN: Copy = {
   },
   winback7: {
     subject: 'your plan is still here',
-    lines: ['no catching up needed - it picks up where you are.', '3 minutes today?'],
+    lines: ['no catching up needed. it picks up where you are.', '3 minutes today?'],
     button: 'start with 3 minutes',
   },
   winback21: {
@@ -260,7 +262,7 @@ const EN: Copy = {
     button: 'open walkito',
   },
   offer: {
-    subject: (p) => (p != null ? `your plan is saved - ${p}% off` : 'your plan is saved - at a lower price'),
+    subject: (p) => (p != null ? `your plan is saved, ${p}% off` : 'your plan is saved, now at a lower price'),
     ready: (goal, current, target) => `your plan for ${goal} is ready: ${current} now, ${target} is the goal.`,
     readyPlain: (goal) => `your plan for ${goal} is ready and waiting.`,
     price: (price, standard) => `the annual subscription is ${price} instead of ${standard}.`,
@@ -312,38 +314,38 @@ const RU: Copy = {
 
   welcome: {
     subject: 'добро пожаловать в walkito',
-    intro: 'это рахим и рахман - мы сделали walkito вдвоём.',
+    intro: 'это рахим и рахман. мы сделали walkito вдвоём.',
     first: (m) =>
       three(
         m,
-        `первая сессия займёт ${m} минуту. начните сегодня - она самая лёгкая.`,
-        `первая сессия займёт ${m} минуты. начните сегодня - она самая лёгкая.`,
-        `первая сессия займёт ${m} минут. начните сегодня - она самая лёгкая.`,
+        `первая сессия займёт ${m} минуту. начните сегодня, она самая лёгкая.`,
+        `первая сессия займёт ${m} минуты. начните сегодня, она самая лёгкая.`,
+        `первая сессия займёт ${m} минут. начните сегодня, она самая лёгкая.`,
       ),
     firstRunner: (m) =>
       three(
         m,
-        `первая сессия займёт ${m} минуту - меньше, чем ваша разминка.`,
-        `первая сессия займёт ${m} минуты - меньше, чем ваша разминка.`,
-        `первая сессия займёт ${m} минут - меньше, чем ваша разминка.`,
+        `первая сессия займёт ${m} минуту, это меньше, чем ваша разминка.`,
+        `первая сессия займёт ${m} минуты, это меньше, чем ваша разминка.`,
+        `первая сессия займёт ${m} минут, это меньше, чем ваша разминка.`,
       ),
     button: 'открыть walkito',
     ps: 'p.s. ответьте на это письмо. мы читаем каждое.',
   },
   day2Morning: {
     subject: 'сделайте это, прежде чем встать с кровати',
-    lines: ['первый шаг утром - самый болезненный.', '60 секунд растяжки прямо в кровати это меняют. попробуйте завтра.'],
+    lines: ['утром больнее всего первый шаг.', '60 секунд растяжки прямо в кровати это меняют. попробуйте завтра.'],
     button: 'посмотреть растяжку на 60 секунд',
   },
   day2Focus: {
     subject: {
-      pain_free_mornings: 'эта неделя - про лёгкие утра',
-      arch_hold: 'эта неделя - про свод стопы',
-      calf_raises: 'эта неделя - про ваши икры',
-      balance: 'эта неделя - про баланс',
-      symmetry: 'эта неделя - про ровную нагрузку на обе ноги',
+      pain_free_mornings: 'на этой неделе: лёгкие утра',
+      arch_hold: 'на этой неделе: свод стопы',
+      calf_raises: 'на этой неделе: ваши икры',
+      balance: 'на этой неделе: баланс',
+      symmetry: 'на этой неделе: ровная нагрузка на обе ноги',
     },
-    numbers: (name, current, target) => `${name}: сейчас ${current}. цель - ${target}.`,
+    numbers: (name, current, target) => `${name}: сейчас ${current}. цель: ${target}.`,
     moves: 'каждая сессия на этой неделе двигает это число.',
     noNumbers: (goal) => `каждая сессия на этой неделе работает на цель «${goal}».`,
     button: 'посмотреть неделю',
@@ -358,14 +360,14 @@ const RU: Copy = {
   },
   day5Start: {
     subject: (m) =>
-      three(m, `первая сессия - ${m} минута`, `первая сессия - ${m} минуты`, `первая сессия - ${m} минут`),
+      three(m, `первая сессия: ${m} минута`, `первая сессия: ${m} минуты`, `первая сессия: ${m} минут`),
     line: 'без зала и без инвентаря. можно сидя.',
     button: (m) => three(m, `начать с ${m} минуты`, `начать с ${m} минут`, `начать с ${m} минут`),
   },
   day10Keep: {
-    subject: 'большинство бросает на 4-й неделе',
-    notBecause: 'большинство бросают слишком рано. не бросайте.',
-    painDrop: (s, l) => `утром было ${s} из 10, теперь ${l}. именно на этом месте люди и бросают.`,
+    subject: 'вернитесь к плану сегодня',
+    notBecause: 'именно здесь легко остановиться. не останавливайтесь.',
+    painDrop: (s, l) => `утром было ${s} из 10, теперь ${l}. не останавливайтесь сейчас.`,
     daysIn: (d) => three(d, `уже ${d} день. продолжайте.`, `уже ${d} дня. продолжайте.`, `уже ${d} дней. продолжайте.`),
     button: (m) =>
       three(
@@ -376,7 +378,7 @@ const RU: Copy = {
       ),
   },
   day14Test: {
-    subject: 'день теста - посмотрим, что изменилось',
+    subject: 'день теста: посмотрим, что изменилось',
     before: (metric, n, shown) => {
       switch (metric) {
         case 'calf':
@@ -416,11 +418,11 @@ const RU: Copy = {
         : w === 2
           ? 'это две недели работы в цифрах.'
           : three(w, `это ${w} неделя работы в цифрах.`, `это ${w} недели работы в цифрах.`, `это ${w} недель работы в цифрах.`),
-    goal: (target) => `цель - ${target}.`,
+    goal: (target) => `цель: ${target}.`,
     button: 'посмотреть прогресс',
   },
   goalReached: {
-    subject: (goal) => `${goal} - готово`,
+    subject: (goal) => `${goal}: готово`,
     reached: (goal, t) => {
       switch (goal) {
         case 'calf_raises':
@@ -455,7 +457,7 @@ const RU: Copy = {
     buttonPlan: 'посмотреть план',
   },
   painUp: {
-    subject: 'неделя потяжелее - вот план',
+    subject: 'неделя потяжелее. вот план',
     lines: [
       'на этой неделе боль немного усилилась. так бывает. план уже стал легче.',
       'если появятся отёк, онемение или боль по ночам, покажитесь врачу.',
@@ -464,20 +466,20 @@ const RU: Copy = {
   },
   winback7: {
     subject: 'ваш план на месте',
-    lines: ['ничего не нужно навёрстывать - план продолжится с того места, где вы сейчас.', '3 минуты сегодня?'],
+    lines: ['ничего не нужно навёрстывать: план продолжится с того места, где вы сейчас.', '3 минуты сегодня?'],
     button: 'начать с 3 минут',
   },
   winback21: {
     subject: 'мы на месте, если ногам понадобится помощь',
-    saved: (name, value) => `ваши результаты сохранены: ${name} - ${value}.`,
+    saved: (name, value) => `ваши результаты сохранены: ${name}, ${value}.`,
     savedPlain: 'ваш план и прогресс сохранены.',
     button: 'открыть walkito',
   },
   offer: {
-    subject: (p) => (p != null ? `ваш план сохранён - скидка ${p}%` : 'ваш план сохранён - и стал дешевле'),
-    ready: (goal, current, target) => `ваш план «${goal}» готов: сейчас ${current}, цель - ${target}.`,
+    subject: (p) => (p != null ? `ваш план сохранён, скидка ${p} %` : 'ваш план сохранён и стал дешевле'),
+    ready: (goal, current, target) => `ваш план «${goal}» готов: сейчас ${current}, цель ${target}.`,
     readyPlain: (goal) => `ваш план «${goal}» готов и ждёт вас.`,
-    price: (price, standard) => `годовая подписка - ${price} вместо ${standard}.`,
+    price: (price, standard) => `годовая подписка за ${price} вместо ${standard}.`,
     priceUnknown: 'сейчас годовая подписка стоит дешевле.',
     button: (p) => (p != null ? `получить скидку ${p}%` : 'посмотреть предложение'),
   },
@@ -492,9 +494,9 @@ const RU: Copy = {
     subjectWithMetric: (s, name, value) =>
       three(
         s,
-        `ваша неделя: ${s} сессия, ${name} - ${value}`,
-        `ваша неделя: ${s} сессии, ${name} - ${value}`,
-        `ваша неделя: ${s} сессий, ${name} - ${value}`,
+        `ваша неделя: ${s} сессия, ${name} ${value}`,
+        `ваша неделя: ${s} сессии, ${name} ${value}`,
+        `ваша неделя: ${s} сессий, ${name} ${value}`,
       ),
     mornings: (avg) => `утром в среднем ${avg} из 10.`,
     next: (goal) => `на следующей неделе: ${goal}.`,
@@ -547,7 +549,7 @@ const ES: Copy = {
     subject: 'te damos la bienvenida a walkito',
     intro: 'somos rahim y rahman. hicimos walkito entre los dos.',
     first: (m) => `tu primera sesión dura ${minutesEs(m)}. empieza hoy, es la más fácil.`,
-    firstRunner: (m) => `tu primera sesión dura ${minutesEs(m)} - menos que tu calentamiento.`,
+    firstRunner: (m) => `tu primera sesión dura ${minutesEs(m)}, menos que tu calentamiento.`,
     button: 'abrir walkito',
     ps: 'p. d. responde a este correo. leemos todos.',
   },
@@ -583,14 +585,14 @@ const ES: Copy = {
     button: (m) => `empezar con ${minutesEs(m)}`,
   },
   day10Keep: {
-    subject: 'la mayoría lo deja en la semana 4',
-    notBecause: 'la mayoría lo deja demasiado pronto. tú no lo dejes.',
-    painDrop: (s, l) => `tus mañanas pasaron de ${s} a ${l}. justo ahí es donde la gente lo deja.`,
+    subject: 'retómalo hoy',
+    notBecause: 'este es el punto en el que es fácil dejarlo. no lo dejes.',
+    painDrop: (s, l) => `tus mañanas pasaron de ${s} a ${l}. no pares ahora.`,
     daysIn: (d) => `llevas ${d} ${two(d, 'día', 'días')}. sigue así.`,
     button: (m) => (m === 1 ? 'hacer el minuto de hoy' : `hacer los ${m} minutos de hoy`),
   },
   day14Test: {
-    subject: 'día de pruebas - mira qué cambió',
+    subject: 'día de pruebas: mira qué cambió',
     before: (metric, n, shown) => {
       switch (metric) {
         case 'calf':
@@ -619,7 +621,7 @@ const ES: Copy = {
     button: 'ver tu progreso',
   },
   goalReached: {
-    subject: (goal) => `${goal} - conseguido`,
+    subject: (goal) => `${goal}: conseguido`,
     reached: (goal, t) => {
       switch (goal) {
         case 'calf_raises':
@@ -639,7 +641,7 @@ const ES: Copy = {
     buttonPlan: 'ver tu plan',
   },
   painUp: {
-    subject: 'una semana más dura - este es el plan',
+    subject: 'una semana más dura. este es el plan',
     lines: [
       'el dolor subió un poco esta semana. a veces pasa. tu plan ya se aligeró.',
       'si notas hinchazón, entumecimiento o dolor por la noche, consulta a un médico.',
@@ -658,7 +660,7 @@ const ES: Copy = {
     button: 'abrir walkito',
   },
   offer: {
-    subject: (p) => (p != null ? `tu plan está guardado - ${p}% de descuento` : 'tu plan está guardado - ahora más barato'),
+    subject: (p) => (p != null ? `tu plan está guardado, ${p} % de descuento` : 'tu plan está guardado y ahora es más barato'),
     ready: (goal, current, target) => `tu plan para ${goal} está listo: ${current} ahora, meta ${target}.`,
     readyPlain: (goal) => `tu plan para ${goal} está listo y te espera.`,
     price: (price, standard) => `la suscripción anual cuesta ${price} en lugar de ${standard}.`,

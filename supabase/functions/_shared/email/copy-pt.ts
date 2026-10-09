@@ -42,9 +42,9 @@ export const PT: Copy = {
 
   welcome: {
     subject: 'boas-vindas ao walkito',
-    intro: 'aqui é o rahim e o rahman - fizemos o walkito só nós dois.',
+    intro: 'aqui é o rahim e o rahman. fizemos o walkito, só nós dois.',
     first: (m) => `sua primeira sessão leva ${minutesPt(m)}. comece hoje, é a mais fácil.`,
-    firstRunner: (m) => `sua primeira sessão leva ${minutesPt(m)} - menos que o seu aquecimento.`,
+    firstRunner: (m) => `sua primeira sessão leva ${minutesPt(m)}, menos que o seu aquecimento.`,
     button: 'abrir o walkito',
     ps: 'p.s. responda a este e-mail. a gente lê todos.',
   },
@@ -80,14 +80,14 @@ export const PT: Copy = {
     button: (m) => `começar com ${minutesPt(m)}`,
   },
   day10Keep: {
-    subject: 'a maioria desiste na semana 4',
-    notBecause: 'a maioria desiste cedo demais. não desista.',
-    painDrop: (s, l) => `suas manhãs foram de ${s} para ${l}. é exatamente aí que as pessoas desistem.`,
+    subject: 'retome hoje',
+    notBecause: 'este é o ponto em que é fácil parar. não pare.',
+    painDrop: (s, l) => `suas manhãs foram de ${s} para ${l}. não pare agora.`,
     daysIn: (d) => (d === 1 ? 'já é 1 dia. continue.' : `já são ${d} dias. continue.`),
     button: (m) => (m === 1 ? 'fazer o minuto de hoje' : `fazer os ${m} minutos de hoje`),
   },
   day14Test: {
-    subject: 'dia de reavaliação - veja o que mudou',
+    subject: 'dia de reavaliação: veja o que mudou',
     before: (metric, n, shown) => {
       switch (metric) {
         case 'calf':
@@ -116,7 +116,7 @@ export const PT: Copy = {
     button: 'ver o seu progresso',
   },
   goalReached: {
-    subject: (goal) => `${goal} - conseguiu`,
+    subject: (goal) => `${goal}: conseguiu`,
     reached: (goal, t) => {
       switch (goal) {
         case 'calf_raises':
@@ -136,7 +136,7 @@ export const PT: Copy = {
     buttonPlan: 'ver o seu plano',
   },
   painUp: {
-    subject: 'uma semana mais pesada - este é o plano',
+    subject: 'uma semana mais pesada. este é o plano',
     lines: [
       'a dor subiu um pouco esta semana. acontece. o seu plano já ficou mais leve.',
       'se notar inchaço, dormência ou dor à noite, procure um médico.',
@@ -145,7 +145,7 @@ export const PT: Copy = {
   },
   winback7: {
     subject: 'o seu plano continua aqui',
-    lines: ['não precisa correr atrás do atraso - ele continua de onde você está.', '3 minutos hoje?'],
+    lines: ['não precisa correr atrás do atraso. ele continua de onde você está.', '3 minutos hoje?'],
     button: 'começar com 3 minutos',
   },
   winback21: {
@@ -155,7 +155,7 @@ export const PT: Copy = {
     button: 'abrir o walkito',
   },
   offer: {
-    subject: (p) => (p != null ? `seu plano está salvo - ${p}% de desconto` : 'seu plano está salvo - agora por menos'),
+    subject: (p) => (p != null ? `seu plano está salvo, ${p}% de desconto` : 'seu plano está salvo, agora por um preço menor'),
     ready: (goal, current, target) => `seu plano para ${goal} está pronto: ${current} agora, meta ${target}.`,
     readyPlain: (goal) => `seu plano para ${goal} está pronto e esperando por você.`,
     price: (price, standard) => `a assinatura anual sai por ${price} em vez de ${standard}.`,

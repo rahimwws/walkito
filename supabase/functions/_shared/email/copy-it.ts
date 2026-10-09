@@ -5,7 +5,7 @@ import { two } from './plural.ts';
 //
 // «tu» throughout, as in the app. The app's own words: «sessione», «test»,
 // «sollevamenti sui talloni», «tenuta dell’arco», «equilibrio», «abbonamento
-// annuale». Same rules as `copy.ts`: all lowercase, " - " never a long dash,
+// annuale». Same rules as `copy.ts`: all lowercase, no dash as punctuation,
 // no pain figure in a subject, no diagnosis words (curare, trattare, guarire).
 
 const minutesIt = (m: number) => `${m} ${two(m, 'minuto', 'minuti')}`;
@@ -42,9 +42,9 @@ export const IT: Copy = {
 
   welcome: {
     subject: 'ti diamo il benvenuto su walkito',
-    intro: 'siamo rahim e rahman - abbiamo creato walkito noi due, da soli.',
+    intro: 'siamo rahim e rahman. abbiamo creato walkito noi due, da soli.',
     first: (m) => `la tua prima sessione dura ${minutesIt(m)}. inizia oggi, è la più facile.`,
-    firstRunner: (m) => `la tua prima sessione dura ${minutesIt(m)} - meno del tuo riscaldamento.`,
+    firstRunner: (m) => `la tua prima sessione dura ${minutesIt(m)}: meno del tuo riscaldamento.`,
     button: 'apri walkito',
     ps: 'p.s. rispondi a questa email. le leggiamo tutte.',
   },
@@ -83,14 +83,14 @@ export const IT: Copy = {
     button: (m) => `inizia con ${minutesIt(m)}`,
   },
   day10Keep: {
-    subject: 'quasi tutti mollano alla settimana 4',
-    notBecause: 'quasi tutti mollano troppo presto. tu no.',
-    painDrop: (s, l) => `le tue mattine sono passate da ${s} a ${l}. è proprio qui che la gente molla.`,
+    subject: 'riprendi oggi',
+    notBecause: 'è il momento in cui è facile mollare. non farlo.',
+    painDrop: (s, l) => `le tue mattine sono passate da ${s} a ${l}. non fermarti adesso.`,
     daysIn: (d) => (d === 1 ? 'sei al primo giorno. continua così.' : `sei a ${d} giorni. continua così.`),
     button: (m) => (m === 1 ? 'fai il minuto di oggi' : `fai i ${m} minuti di oggi`),
   },
   day14Test: {
-    subject: 'giorno di test - guarda cosa è cambiato',
+    subject: 'giorno di test: guarda cosa è cambiato',
     before: (metric, n, shown) => {
       switch (metric) {
         case 'calf':
@@ -119,7 +119,7 @@ export const IT: Copy = {
     button: 'guarda i tuoi progressi',
   },
   goalReached: {
-    subject: (goal) => `${goal} - fatto`,
+    subject: (goal) => `${goal}: fatto`,
     reached: (goal, t) => {
       switch (goal) {
         case 'calf_raises':
@@ -139,7 +139,7 @@ export const IT: Copy = {
     buttonPlan: 'guarda il tuo piano',
   },
   painUp: {
-    subject: 'una settimana più dura - ecco il piano',
+    subject: 'una settimana più dura. ecco il piano',
     lines: [
       'questa settimana il dolore è salito un po’. succede. il tuo piano è già diventato più leggero.',
       'se noti gonfiore, intorpidimento o dolore di notte, senti un medico.',
@@ -148,7 +148,7 @@ export const IT: Copy = {
   },
   winback7: {
     subject: 'il tuo piano è ancora qui',
-    lines: ['non serve recuperare - riparte da dove sei.', '3 minuti oggi?'],
+    lines: ['non serve recuperare. si riparte da dove sei.', '3 minuti oggi?'],
     button: 'inizia con 3 minuti',
   },
   winback21: {
@@ -158,12 +158,12 @@ export const IT: Copy = {
     button: 'apri walkito',
   },
   offer: {
-    subject: (p) => (p != null ? `il tuo piano è salvato - ${p}% di sconto` : 'il tuo piano è salvato - a un prezzo più basso'),
+    subject: (p) => (p != null ? `il tuo piano è salvato, ${p} % di sconto` : 'il tuo piano è salvato, ora a un prezzo più basso'),
     ready: (goal, current, target) => `il tuo piano per ${goal} è pronto: ${current} adesso, l’obiettivo è ${target}.`,
     readyPlain: (goal) => `il tuo piano per ${goal} è pronto e ti aspetta.`,
     price: (price, standard) => `l’abbonamento annuale costa ${price} invece di ${standard}.`,
     priceUnknown: 'in questo momento l’abbonamento annuale costa meno.',
-    button: (p) => (p != null ? `ottieni il ${p}% di sconto` : 'guarda l’offerta'),
+    button: (p) => (p != null ? `ottieni il ${p} % di sconto` : 'guarda l’offerta'),
   },
   offerFinal: {
     subject: 'l’ultima da parte nostra',

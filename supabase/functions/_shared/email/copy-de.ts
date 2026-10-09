@@ -36,9 +36,9 @@ export const DE: Copy = {
 
   welcome: {
     subject: 'willkommen bei walkito',
-    intro: 'hier sind rahim und rahman - wir haben walkito gebaut, nur wir zwei.',
+    intro: 'hier sind rahim und rahman. wir haben walkito gebaut, nur wir zwei.',
     first: (m) => `deine erste einheit dauert ${minutesDe(m)}. fang heute an, sie ist die leichteste.`,
-    firstRunner: (m) => `deine erste einheit dauert ${minutesDe(m)} - kürzer als dein aufwärmen.`,
+    firstRunner: (m) => `deine erste einheit dauert ${minutesDe(m)}, kürzer als dein aufwärmen.`,
     button: 'walkito öffnen',
     ps: 'p.s. antworte einfach auf diese mail. wir lesen jede.',
   },
@@ -71,14 +71,14 @@ export const DE: Copy = {
     button: (m) => `mit ${minutesDe(m)} starten`,
   },
   day10Keep: {
-    subject: 'die meisten hören in woche 4 auf',
-    notBecause: 'die meisten hören zu früh auf. du nicht.',
-    painDrop: (s, l) => `deine morgen sind von ${s} auf ${l} gegangen. genau an dieser stelle hören viele auf.`,
+    subject: 'mach heute weiter',
+    notBecause: 'genau hier fällt das aufhören leicht. tu es nicht.',
+    painDrop: (s, l) => `deine morgen sind von ${s} auf ${l} gegangen. hör jetzt nicht auf.`,
     daysIn: (d) => two(d, `${d} tag geschafft. mach weiter.`, `${d} tage geschafft. mach weiter.`),
     button: (m) => two(m, `die heutige ${m} minute machen`, `die heutigen ${m} minuten machen`),
   },
   day14Test: {
-    subject: 'testtag - schau, was sich getan hat',
+    subject: 'testtag: schau, was sich getan hat',
     before: (metric, n, shown) => {
       switch (metric) {
         case 'calf':
@@ -107,7 +107,7 @@ export const DE: Copy = {
     button: 'deinen fortschritt ansehen',
   },
   goalReached: {
-    subject: (goal) => `${goal} - geschafft`,
+    subject: (goal) => `${goal}: geschafft`,
     reached: (goal, t) => {
       switch (goal) {
         case 'calf_raises':
@@ -127,7 +127,7 @@ export const DE: Copy = {
     buttonPlan: 'deinen plan ansehen',
   },
   painUp: {
-    subject: 'eine härtere woche - so geht es weiter',
+    subject: 'eine härtere woche. so geht es weiter',
     lines: [
       'der schmerz ist diese woche etwas gestiegen. das kommt vor. dein plan ist schon leichter geworden.',
       'wenn du schwellungen, taubheit oder schmerzen in der nacht bemerkst, lass das ärztlich abklären.',
@@ -136,7 +136,7 @@ export const DE: Copy = {
   },
   winback7: {
     subject: 'dein plan ist noch da',
-    lines: ['nichts nachzuholen - es geht da weiter, wo du gerade stehst.', '3 minuten heute?'],
+    lines: ['nichts nachzuholen. es geht da weiter, wo du gerade stehst.', '3 minuten heute?'],
     button: 'mit 3 minuten starten',
   },
   winback21: {
@@ -146,7 +146,7 @@ export const DE: Copy = {
     button: 'walkito öffnen',
   },
   offer: {
-    subject: (p) => (p != null ? `dein plan ist gespeichert - ${p} % rabatt` : 'dein plan ist gespeichert - jetzt günstiger'),
+    subject: (p) => (p != null ? `dein plan ist gespeichert, ${p} % rabatt` : 'dein plan ist gespeichert, jetzt günstiger'),
     ready: (goal, current, target) => `dein plan ist bereit: ${goal}. jetzt ${current}, das ziel ist ${target}.`,
     readyPlain: (goal) => `dein plan ist bereit und wartet auf dich: ${goal}.`,
     price: (price, standard) => `das jahresabo kostet ${price} statt ${standard}.`,
