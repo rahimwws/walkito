@@ -358,12 +358,12 @@
   letter-spacing: calc(var(--pv-pt) * -0.1);
 }
 
-@supports (corner-shape: superellipse(1.35)) {
+@supports (corner-shape: superellipse(1.45)) {
   .pv-card,
   .pv-sheet-card,
   .pv-cell,
   .pv-button {
-    corner-shape: superellipse(1.35);
+    corner-shape: superellipse(1.45);
   }
 }
 
