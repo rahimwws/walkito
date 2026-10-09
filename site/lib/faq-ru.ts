@@ -22,7 +22,7 @@ export const FAQ_GROUPS_RU: readonly FaqGroup[] = [
     entries: [
       {
         q: 'Есть ли Walkito на Android?',
-        a: 'Пока нет. Walkito доступен на iPhone, в App Store, и Android в планах. Приложение для iPhone читает Apple Health: шаги, сон и асимметрию ходьбы. Во время занятия на экране блокировки отображается Live Activity. Walkito доступен на английском, русском, испанском, португальском, французском, итальянском и немецком.',
+        a: 'Пока нет. Walkito доступен на iPhone, в App Store, и Android в планах. Приложение для iPhone читает Apple Health: шаги, сон и асимметрию ходьбы. Во время занятия на экране блокировки отображается Live Activity. Walkito доступен на английском, русском и испанском.',
       },
       {
         q: 'Нужен ли Apple Watch?',

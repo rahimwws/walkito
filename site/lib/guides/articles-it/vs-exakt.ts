@@ -13,7 +13,7 @@ export const VS_EXAKT_IT: Guide = {
   lang: 'it',
   page: 'vsExakt',
   published: '2026-10-08',
-  updated: '2026-10-09',
+  updated: '2026-10-08',
   title: 'Walkito vs Exakt Health: confronto completo (2026)',
   description:
     'Walkito o Exakt Health? Confronto su problemi coperti, prezzo, piattaforme, come creano il piano, prove, lingue e privacy. Verificato a ottobre 2026.',
@@ -88,7 +88,7 @@ export const VS_EXAKT_IT: Guide = {
           ],
           [
             'Lingue',
-            'Inglese, russo, spagnolo, portoghese, francese, italiano, tedesco',
+            'Inglese, russo, spagnolo',
             'Inglese, francese, tedesco, spagnolo',
           ],
           [
@@ -174,7 +174,7 @@ export const VS_EXAKT_IT: Guide = {
       h2: 'Piattaforme e lingue',
       paragraphs: [
         'Exakt Health è sia su iOS sia su Android. Se usi un telefono Android, questo da solo decide la scelta, perché Walkito è solo per iOS.',
-        'Exakt è disponibile in inglese, francese, tedesco e spagnolo. Walkito è disponibile in inglese, russo, spagnolo, portoghese, francese, italiano e tedesco. In comune ci sono inglese, spagnolo, francese e tedesco. Se ti serve il russo, il portoghese o l’italiano, tra le due solo Walkito è un’opzione.',
+        'Exakt è disponibile in inglese, francese, tedesco e spagnolo. Walkito è disponibile in inglese, russo e spagnolo. In comune ci sono inglese e spagnolo. Se ti serve il francese o il tedesco, Exakt è l’unica opzione. Se ti serve il russo, Walkito è l’unica opzione.',
       ],
     },
     {
@@ -205,6 +205,7 @@ export const VS_EXAKT_IT: Guide = {
         'Usi un telefono Android.',
         'Vuoi una prova gratuita di 7\u00A0giorni per testare l’app prima di pagare.',
         'Per te conta la certificazione come dispositivo medico nell’UE.',
+        'Ti serve l’app in francese o in tedesco.',
       ],
     },
     {
@@ -218,7 +219,7 @@ export const VS_EXAKT_IT: Guide = {
         'Per te conta più l’adattamento quotidiano al dolore con un check-in al mattino che la progressione a livelli.',
         'Vuoi test dei progressi ogni 14\u00A0giorni che confrontino sinistra e destra.',
         'Il prezzo conta: Walkito a 44,99\u00A0$ all’anno costa meno della metà del costo annuale più basso di Exakt.',
-        'Ti serve l’app in russo, portoghese o italiano.',
+        'Ti serve l’app in russo.',
         'Stai in piedi tutto il giorno per lavoro, non corri, e vuoi un’app fatta per questo.',
       ],
     },

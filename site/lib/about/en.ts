@@ -25,7 +25,7 @@ export const ABOUT_EN: About = {
         `Walkito is an iPhone app that builds your exercise plan one week at a time around goals you can measure. There are five goals: pain-free mornings (morning pain at ${PAIN_GOAL_MAX}/10 or less for ${PROGRAM.painFreeDays} days in a row), a ${PROGRAM.goals.archHoldSeconds}-second arch hold, ${PROGRAM.goals.calfRaises} single-leg calf raises, ${PROGRAM.goals.balanceSeconds} seconds of balance on one leg, and a gap of less than ${PROGRAM.goals.gapPercent}% between your left and right sides. You start with up to three of them. If something hurts, pain comes first.`,
         `You pick ${or(PROGRAM.daysPerWeek)} training days a week and sessions of ${or(PROGRAM.sessionMinutes)} minutes. Each day's session adapts to how your morning went. Every ${PROGRAM.testEveryDays} days, a short test shows whether your numbers are moving. Once you reach your first goal, the test comes every ${PROGRAM.testEveryDaysAfterGoal} days.`,
         'The plan has no fixed length. When you reach a goal, it moves to maintaining at a lower dose, and the next goal takes its place. That goes on for as long as you use Walkito. [How the plan works](/program/).',
-        'Walkito is in English, Russian, Spanish, Portuguese, French, Italian and German.',
+        'Walkito is in English, Russian and Spanish.',
       ],
     },
     {

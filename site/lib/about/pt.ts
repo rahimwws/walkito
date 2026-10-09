@@ -28,7 +28,7 @@ export const ABOUT_PT: About = {
         `O Walkito é um app para iPhone que monta o seu plano de exercícios uma semana de cada vez, em torno de metas que dá para medir. São cinco metas: manhãs sem dor (dor da manhã em ${PAIN_GOAL_MAX}/10 ou menos por ${PROGRAM.painFreeDays}\u00A0dias seguidos), sustentar o arco por ${PROGRAM.goals.archHoldSeconds}\u00A0segundos, ${PROGRAM.goals.calfRaises} elevações de panturrilha em uma perna só, ${PROGRAM.goals.balanceSeconds}\u00A0segundos de equilíbrio em uma perna, e uma diferença menor que ${PROGRAM.goals.gapPercent}% entre o lado esquerdo e o direito. Você começa com até três delas. Se algo dói, a dor vem primeiro.`,
         `Você escolhe ${either(PROGRAM.daysPerWeek)} dias de treino por semana e sessões de ${either(PROGRAM.sessionMinutes)}\u00A0minutos. A sessão de cada dia se adapta a como foi a sua manhã. A cada ${PROGRAM.testEveryDays}\u00A0dias, um teste curto mostra se os seus números estão mudando. Depois que você alcança a primeira meta, o teste passa a ser a cada ${PROGRAM.testEveryDaysAfterGoal}\u00A0dias.`,
         'O plano não tem duração fixa. Quando você alcança uma meta, ela passa para manutenção com uma dose menor, e a próxima meta entra no lugar. Isso continua enquanto você usar o Walkito. [Como o plano funciona](/program/) (em inglês).',
-        'O Walkito está em inglês, russo, espanhol, português, francês, italiano e alemão.',
+        'O Walkito está em inglês, russo e espanhol.',
       ],
     },
     {

@@ -13,7 +13,7 @@ export const VS_EXAKT_DE: Guide = {
   lang: 'de',
   page: 'vsExakt',
   published: '2026-10-08',
-  updated: '2026-10-09',
+  updated: '2026-10-08',
   title: 'Walkito vs Exakt Health: direkter Vergleich (2026)',
   description:
     'Walkito und Exakt Health im Vergleich: Beschwerden, Preise, Plattformen, wie dein Plan entsteht, Studienlage, Sprachen, Datenschutz. Stand Oktober 2026.',
@@ -88,7 +88,7 @@ export const VS_EXAKT_DE: Guide = {
           ],
           [
             'Sprachen',
-            'Englisch, Russisch, Spanisch, Portugiesisch, Französisch, Italienisch, Deutsch',
+            'Englisch, Russisch, Spanisch',
             'Englisch, Französisch, Deutsch, Spanisch',
           ],
           [
@@ -174,7 +174,7 @@ export const VS_EXAKT_DE: Guide = {
       h2: 'Plattformen und Sprachen',
       paragraphs: [
         'Exakt Health gibt es für iOS und Android. Wenn du ein Android-Handy nutzt, ist das allein schon der entscheidende Punkt, weil es Walkito nur für iOS gibt.',
-        'Exakt unterstützt Englisch, Französisch, Deutsch und Spanisch. Walkito unterstützt Englisch, Russisch, Spanisch, Portugiesisch, Französisch, Italienisch und Deutsch. Gemeinsam sind Englisch, Spanisch, Französisch und Deutsch. Wenn du Russisch, Portugiesisch oder Italienisch brauchst, ist von den beiden nur Walkito eine Option.',
+        'Exakt unterstützt Englisch, Französisch, Deutsch und Spanisch. Walkito unterstützt Englisch, Russisch und Spanisch. Die Überschneidung sind Englisch und Spanisch. Wenn du Französisch oder Deutsch brauchst, ist Exakt die einzige Option. Wenn du Russisch brauchst, ist Walkito die einzige Option.',
       ],
     },
     {
@@ -205,6 +205,7 @@ export const VS_EXAKT_DE: Guide = {
         'Du nutzt ein Android-Handy.',
         'Du willst die App 7\u00A0Tage kostenlos testen, bevor du zahlst.',
         'Die Zertifizierung als Medizinprodukt in der EU ist dir wichtig.',
+        'Du brauchst die App auf Französisch oder Deutsch.',
       ],
     },
     {
@@ -218,7 +219,7 @@ export const VS_EXAKT_DE: Guide = {
         'Die tägliche Anpassung an den Schmerz über einen Check-in am Morgen ist dir wichtiger als ein Fortschritt über Level.',
         'Du willst alle 14\u00A0Tage Fortschrittstests, die links und rechts vergleichen.',
         'Der Preis zählt: Walkito ist mit 44,99\u00A0$ pro Jahr weniger als halb so teuer wie die günstigsten Jahreskosten von Exakt.',
-        'Du brauchst die App auf Russisch, Portugiesisch oder Italienisch.',
+        'Du brauchst die App auf Russisch.',
         'Du bist für die Arbeit den ganzen Tag auf den Beinen, läufst aber nicht, und willst eine App, die dafür gemacht ist.',
       ],
     },

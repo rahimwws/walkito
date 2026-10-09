@@ -226,7 +226,7 @@ const COPY: Record<Lang, HomeCopy> = {
         q: 'Is it medical advice?',
         a: 'No. Walkito is an exercise program. It doesn’t diagnose, and it isn’t a substitute for a clinician.',
       },
-      { q: 'What languages is it in?', a: 'English, Russian, Spanish, Portuguese, French, Italian and German.' },
+      { q: 'What languages is it in?', a: 'English, Russian and Spanish.' },
     ],
   },
 
@@ -309,7 +309,7 @@ const COPY: Record<Lang, HomeCopy> = {
         q: 'Это медицинская консультация?',
         a: 'Нет. Walkito даёт программу упражнений. Он не ставит диагноз и не заменяет врача.',
       },
-      { q: 'На каких языках приложение?', a: 'На английском, русском, испанском, португальском, французском, итальянском и немецком.' },
+      { q: 'На каких языках приложение?', a: 'На английском, русском и испанском.' },
     ],
   },
 
@@ -392,7 +392,7 @@ const COPY: Record<Lang, HomeCopy> = {
         q: '¿Es un consejo médico?',
         a: 'No. Walkito es un programa de ejercicios. No diagnostica y no sustituye a un profesional de la salud.',
       },
-      { q: '¿En qué idiomas está?', a: 'En inglés, ruso, español, portugués, francés, italiano y alemán.' },
+      { q: '¿En qué idiomas está?', a: 'En inglés, ruso y español.' },
     ],
   },
 };
