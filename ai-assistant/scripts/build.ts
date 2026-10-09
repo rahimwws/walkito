@@ -13,7 +13,7 @@
  *    them reach React Native through one import each; those two imports point
  *    at src/shims (see the files there).
  */
-import { readFileSync, readdirSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 
 import { build, type Plugin } from 'esbuild';
@@ -133,9 +133,6 @@ if (!supabaseUrl) {
   }
 }
 if (!supabaseUrl) throw new Error('build: set EXPO_PUBLIC_SUPABASE_URL (or have it in ../.env)');
-const posterIds = readdirSync(join(APP, 'site/public/exercises'))
-  .filter((f) => /^[a-z_]+\.webp$/.test(f))
-  .map((f) => f.replace('.webp', ''));
 
 for (const [entry, out] of [
   ['src/server.ts', 'dist/server.mjs'],
@@ -156,7 +153,6 @@ for (const [entry, out] of [
       __WIDGET_HTML__: JSON.stringify(widgetHtml),
       __VERSION__: JSON.stringify(pkg.version),
       __SUPABASE_URL__: JSON.stringify(supabaseUrl),
-      __POSTER_IDS__: JSON.stringify(posterIds),
     },
     banner: { js: "import { createRequire as __cr } from 'node:module'; const require = __cr(import.meta.url);" },
   });

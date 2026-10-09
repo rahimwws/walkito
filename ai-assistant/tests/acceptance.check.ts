@@ -141,11 +141,19 @@ describe('clips', () => {
     expect(core.clipFor('missing', manifest)).toBeNull();
   });
 
-  test('every exercise the assistant shows has a clip from the bucket', () => {
+  test('every exercise filmed with a person has its clip; mannequin clips are never shown', () => {
     for (const id of core.EXERCISE_IDS) {
       const clip = core.clipFor(id);
-      expect(clip?.src).toMatch(/^https:\/\/[a-z0-9]+\.supabase\.co\/storage\/v1\/object\/public\/exercise-clips\/.+\.mp4$/);
+      if (core.MANNEQUIN_CLIPS.has(id)) expect(clip).toBeNull();
+      else expect(clip?.src).toMatch(/^https:\/\/[a-z0-9]+\.supabase\.co\/storage\/v1\/object\/public\/exercise-clips\/.+\.mp4#t=0\.1$/);
     }
+  });
+
+  test('a plan never includes an exercise without a clip of a person', () => {
+    for (const area of AREAS)
+      for (const minutes of MINUTES)
+        for (const day of core.starterWeek({ area, minutes }, TODAY).days)
+          for (const e of day.exercises) expect(core.MANNEQUIN_CLIPS.has(e.id)).toBe(false);
   });
 });
 
