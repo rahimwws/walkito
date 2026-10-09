@@ -12,7 +12,7 @@ export const EX_BAND_INVERSION_FR: Guide = {
   page: 'exBandInversion',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Inversion de cheville avec élastique\u00A0: tibial postérieur',
+  title: 'Inversion de cheville avec élastique\u00A0: la technique',
   description:
     'Inversion de cheville avec un élastique pour renforcer le tibial postérieur\u00A0: technique, séries, erreurs fréquentes, ce que montre la recherche.',
   h1: 'Inversion de cheville avec élastique\u00A0: comment renforcer le tibial postérieur',
@@ -100,7 +100,7 @@ export const EX_BAND_INVERSION_FR: Guide = {
       a: 'Commencez avec un élastique de résistance léger. Le tibial postérieur est un petit muscle profond et n’a pas besoin d’une charge lourde pour se fatiguer. Vous devez sentir un travail le long de la malléole interne et de la voûte. Si le genou tourne ou si la hanche pivote pour terminer le mouvement, l’élastique est trop fort.',
     },
     {
-      q: 'L’inversion de cheville avec élastique aide-t-elle les pieds plats\u00A0?',
+      q: 'L’inversion de cheville avec élastique aide-t-elle en cas de pieds plats\u00A0?',
       cites: [CITE.posteriorTibialReview, CITE.ling],
       a: 'Le tibial postérieur est le principal stabilisateur dynamique de la voûte. Une revue systématique de 2018 a montré que des programmes d’exercices comprenant un renforcement du tibial postérieur amélioraient la douleur et la fonction chez les personnes atteintes de dysfonction du tendon tibial postérieur, la cause la plus fréquente du pied plat acquis de l’adulte (Ross 2018). Le renforcer fait partie de l’approche classique des pieds plats.',
     },
@@ -119,12 +119,12 @@ export const EX_BAND_INVERSION_FR: Guide = {
       'vous avez une douleur ou un gonflement le long de la malléole interne qui s’aggrave avec l’activité',
       'vous ne pouvez pas monter sur la pointe d’un pied, ce qui peut évoquer une faiblesse du tendon tibial postérieur',
       'la voûte s’est affaissée récemment et le pied est devenu nettement plus plat',
-      'vous vous êtes blessé à la cheville et l’intérieur de la cheville reste sensible',
+      'vous avez eu une blessure à la cheville et l’intérieur de la cheville reste sensible',
     ],
   },
   program: {
     h2: 'En faire un plan',
-    text: 'Walkito ajoute l’inversion de cheville avec élastique après six séances de pied court debout. Cette progression garantit que les muscles intrinsèques du pied sont actifs avant que le stabilisateur extrinsèque soit chargé. Les séances durent 3, 5 ou 10\u00A0minutes, et un test tous les 14\u00A0jours suit votre temps de maintien de la voûte et l’endurance du mollet.',
+    text: 'Walkito ajoute l’inversion de cheville avec élastique après six séances de pied court debout. Cette progression fait en sorte que les muscles intrinsèques du pied soient actifs avant que le stabilisateur extrinsèque soit chargé. Les séances durent 3, 5 ou 10\u00A0minutes, et un test tous les 14\u00A0jours suit votre temps de maintien de la voûte et l’endurance du mollet.',
     cta: 'Commencez avec 3\u00A0minutes par jour.',
   },
   crumb: 'Inversion de cheville avec élastique (tibial postérieur)',

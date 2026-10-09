@@ -44,12 +44,12 @@ export const PTTD_IT: Guide = {
     {
       h2: 'Quali sono gli stadi della PTTD?',
       paragraphs: [
-        'I clinici classificano la PTTD in quattro stadi. Lo stadio decide se esercizio e plantari hanno buone probabilità di aiutare, o se conviene parlare di tutore, ortesi o chirurgia.',
+        'Gli specialisti classificano la PTTD in quattro stadi. Lo stadio decide se esercizio e plantari hanno buone probabilità di aiutare, o se conviene parlare di tutore, ortesi o chirurgia.',
         '**Stadio I** vuol dire che il tendine è infiammato ma ancora integro. L’arco sembra normale. C’è dolore e a volte un lieve gonfiore dietro il malleolo interno. La forza nel sollevamento sulle punte su una gamba di solito è ridotta rispetto all’altro lato, ma la forma del piede non è cambiata. Esercizio e plantari di sostegno sono l’approccio principale.',
-        '**Stadio II** vuol dire che il tendine si è allungato o si è lesionato in parte. L’arco si è abbassato e il tallone si inclina verso l’esterno, ma la deformità è ancora flessibile, cioè un clinico riesce a riportare il piede in posizione con le mani. È lo stadio coperto dalla maggior parte della ricerca sull’esercizio. Plantari, stretching e rinforzo progressivo sono il programma conservativo standard.',
+        '**Stadio II** vuol dire che il tendine si è allungato o si è lesionato in parte. L’arco si è abbassato e il tallone si inclina verso l’esterno, ma la deformità è ancora flessibile, cioè un professionista sanitario riesce a riportare il piede in posizione con le mani. È lo stadio coperto dalla maggior parte della ricerca sull’esercizio. Plantari, stretching e rinforzo progressivo sono il programma conservativo standard.',
         '**Stadio III** vuol dire che la deformità è diventata rigida. Il piede non si riesce più a riportare in una posizione corretta, e spesso ci sono alterazioni artrosiche nelle articolazioni sotto la caviglia. A questo stadio è poco probabile che l’esercizio da solo cambi la forma del piede. Di solito si discute una valutazione chirurgica.',
         '**Stadio IV** aggiunge il coinvolgimento dell’articolazione della caviglia. La caviglia si inclina in valgo, cioè pende verso l’esterno. È lo stadio più avanzato e di solito richiede un intervento chirurgico.',
-        'La maggior parte delle persone che cercano esercizi per la PTTD è allo stadio I o II. Se non sai quale stadio ti riguarda, un clinico può dirtelo con un esame fisico e, se serve, con gli esami di imaging. Il test del sollevamento sulle punte su un solo piede, in cui provi a salire sulle punte di un piede, è un rapido strumento di screening: fatica a salire, dolore durante la salita o un tallone che in cima non si inclina verso l’interno fanno tutti pensare a una debolezza del tibiale posteriore.',
+        'La maggior parte delle persone che cercano esercizi per la PTTD è allo stadio I o II. Se non sai quale stadio ti riguarda, un professionista sanitario può dirtelo con un esame fisico e, se serve, con gli esami di imaging. Il test del sollevamento sulle punte su un solo piede, in cui provi a salire sulle punte di un piede, è un rapido strumento di screening: fatica a salire, dolore durante la salita o un tallone che in cima non si inclina verso l’interno fanno tutti pensare a una debolezza del tibiale posteriore.',
       ],
       cites: [CITE.ling, CITE.posteriorTibialReview],
     },
@@ -129,7 +129,7 @@ export const PTTD_IT: Guide = {
       paragraphs: [
         'Tutti gli studi sull’esercizio per la PTTD usavano i plantari come parte dell’intervento di base. I plantari non sono stati confrontati con l’esercizio; sono stati testati con l’esercizio in aggiunta. Lo studio randomizzato del 2009 ha trovato che plantari e stretching da soli miglioravano la funzione, e che aggiungere l’esercizio la migliorava ancora di più.',
         'Un plantare rigido o semirigido che sostiene l’arco evita che l’arco ceda quando stai in piedi e cammini. Per gli esercizi di questa pagina, inversione con elastico e piede corto si possono fare senza scarpe, ma i sollevamenti sulle punte vanno fatti con le stesse scarpe di sostegno con cui cammini, perché sotto carico l’arco ha bisogno di sostegno.',
-        'Per lo stadio I possono bastare dei supporti per l’arco già pronti. Nello stadio II, dove la deformità è maggiore, sono più comuni i plantari su misura. Un clinico o un podologo può aiutarti a capire quale fa al caso tuo.',
+        'Per lo stadio I possono bastare dei supporti per l’arco già pronti. Nello stadio II, dove la deformità è maggiore, sono più comuni i plantari su misura. Un medico o un podologo può aiutarti a capire quale fa al caso tuo.',
       ],
       cites: [CITE.kuligRCT, CITE.posteriorTibialReview],
     },
@@ -147,7 +147,7 @@ export const PTTD_IT: Guide = {
       paragraphs: [
         'La PTTD è la causa più comune di piede piatto acquisito dell’adulto, cioè un piede piatto che compare da adulti invece di esserci fin dall’infanzia. Se avevi archi normali e da un lato hanno iniziato ad abbassarsi, con dolore dietro il malleolo interno, la PTTD è la spiegazione più probabile.',
         'Il piede piatto flessibile congenito, quello presente fin dall’infanzia, è una situazione diversa. Può non dare mai sintomi. Gli esercizi si sovrappongono: piede corto, inversione con elastico e sollevamenti sulle punte compaiono sia negli [esercizi per il piede piatto](/it/esercizi-piede-piatto/) sia nei programmi per la PTTD. Ma il contesto clinico è diverso, e la PTTD di solito richiede plantari e un controllo più attento, perché il tendine sta degenerando, non è semplicemente lasso.',
-        'Se non sai se il tuo piede piatto c’è da sempre o è nuovo, un clinico può confrontare i due piedi, controllare il tendine e guardare l’allineamento del tallone quando stai in piedi.',
+        'Se non sai se il tuo piede piatto c’è da sempre o è nuovo, un professionista sanitario può confrontare i due piedi, controllare il tendine e guardare l’allineamento del tallone quando stai in piedi.',
       ],
       cites: [CITE.ling, CITE.zarali],
     },
@@ -156,7 +156,7 @@ export const PTTD_IT: Guide = {
       keyFact: 'Un piccolo studio pilota su dieci pazienti, con carico eccentrico due volte al giorno per circa due mesi e mezzo, ha trovato un miglioramento dei sintomi insieme ad alcuni cambiamenti del tendine all’ecografia (Kulig e colleghi, 2009).',
       paragraphs: [
         'I due studi randomizzati duravano tre mesi. Entrambi hanno mostrato un miglioramento a fine programma, ma nessuno dei due ha seguito i partecipanti nel lungo periodo. Un piccolo studio pilota su dieci pazienti dello stesso gruppo è durato anch’esso circa due mesi e mezzo di carico eccentrico due volte al giorno, e ha trovato un miglioramento dei sintomi insieme ad alcuni cambiamenti del tendine all’ecografia.',
-        'Nella pratica clinica, il miglioramento della PTTD allo stadio I o II con esercizio e plantari si misura in mesi, non in settimane. La degenerazione del tendine non regredisce in fretta. Un’aspettativa ragionevole è meno dolore e una funzione migliore in tre-sei mesi, con esercizi di mantenimento anche dopo. Se non c’è miglioramento dopo tre mesi di esercizio e plantari costanti, vale la pena tornare da un clinico per rivalutare lo stadio.',
+        'Nella pratica clinica, il miglioramento della PTTD allo stadio I o II con esercizio e plantari si misura in mesi, non in settimane. La degenerazione del tendine non regredisce in fretta. Un’aspettativa ragionevole è meno dolore e una funzione migliore in tre-sei mesi, con esercizi di mantenimento anche dopo. Se non c’è miglioramento dopo tre mesi di esercizio e plantari costanti, vale la pena tornare da un professionista sanitario per rivalutare lo stadio.',
       ],
       cites: [CITE.kuligRCT, CITE.kuligEccentric],
     },
@@ -177,7 +177,7 @@ export const PTTD_IT: Guide = {
       a: 'La PTTD è la causa più comune di piede piatto acquisito dell’adulto, un piede piatto che compare da adulti perché il tendine del tibiale posteriore si indebolisce. Il piede piatto congenito, presente fin dall’infanzia, è una situazione diversa. Può non fare mai male. La PTTD di solito colpisce un solo lato, peggiora nel tempo e si accompagna a dolore dietro il malleolo interno.',
     },
     {
-      q: 'Come si sente il dolore al tendine tibiale posteriore?',
+      q: 'Che sensazione dà il dolore al tendine tibiale posteriore?',
       cites: [CITE.ling],
       a: 'Il dolore di solito si trova dietro o sotto il malleolo interno. Può estendersi lungo l’interno dell’arco. Peggiora con l’attività, soprattutto camminando in salita, su terreni irregolari o stando in equilibrio su una gamba. La zona può gonfiarsi. Un segno precoce comune è la difficoltà a fare un sollevamento sulle punte su una gamba dal lato colpito.',
     },
@@ -188,7 +188,7 @@ export const PTTD_IT: Guide = {
     },
     {
       q: 'La PTTD è la stessa cosa del dolore all’interno della caviglia?',
-      a: 'La PTTD è una delle cause più comuni di dolore sul lato interno della caviglia, ma non l’unica. Altre possibilità sono una distorsione del legamento deltoideo, una frattura da stress dello scafoide o la sindrome del tunnel tarsale (compressione di un nervo). Un clinico può distinguerle con un esame fisico. La PTTD di solito si accompagna a un arco che si abbassa e a difficoltà nei sollevamenti sulle punte su una gamba.',
+      a: 'La PTTD è una delle cause più comuni di dolore sul lato interno della caviglia, ma non l’unica. Altre possibilità sono una distorsione del legamento deltoideo, una frattura da stress dello scafoide o la sindrome del tunnel tarsale (compressione di un nervo). Un professionista sanitario può distinguerle con un esame fisico. La PTTD di solito si accompagna a un arco che si abbassa e a difficoltà nei sollevamenti sulle punte su una gamba.',
     },
     {
       q: 'Quando la PTTD va operata?',
@@ -221,7 +221,7 @@ export const PTTD_IT: Guide = {
     h2: 'Farlo come un piano',
     text: 'Walkito include inversione con elastico, piede corto e sollevamenti sulle punte nella sua libreria di esercizi, e li mette nei giorni di forza come parte di un programma per arco ed equilibrio. Quando nel check-in segni l’interno della caviglia o l’arco sulla mappa del dolore, la sessione si adatta a quella risposta. L’app è pensata per fascite plantare e piede piatto. La PTTD si sovrappone a entrambi, ma l’app non fa diagnosi di PTTD e non sostituisce i plantari né la stadiazione clinica.',
     more: [
-      'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Se ti è stata diagnosticata una PTTD, usa l’app insieme ai plantari e verifica con il tuo clinico che lo stadio sia adatto all’esercizio.',
+      'Scegli 3, 5 o 7\u00A0giorni a settimana e sessioni da 3, 5 o 10\u00A0minuti. Ogni 14\u00A0giorni, un breve test controlla resistenza del polpaccio, tenuta dell’arco ed equilibrio, così vedi cosa sta cambiando. Se ti è stata diagnosticata una PTTD, usa l’app insieme ai plantari e chiedi al professionista sanitario che ti segue se lo stadio è adatto all’esercizio.',
     ],
     cta: 'Inizia con 3\u00A0minuti al giorno.',
   },

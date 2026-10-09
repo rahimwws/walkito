@@ -20,7 +20,7 @@ export const EX_BIG_TOE_LIFT_FR: Guide = {
     'Lever le gros orteil est un exercice où vous levez le gros orteil seul pendant que les quatre autres orteils restent à plat au sol. Certains l’appellent yoga des orteils. Il apprend au cerveau à contrôler le gros orteil indépendamment, ce qui compte, car le gros orteil est le principal levier de la voûte pendant la marche. Quand le gros orteil se relève, il tend le fascia plantaire par le mécanisme de treuil (windlass) et rigidifie le pied pour la poussée.',
   takeaways: [
     'Une étude IRM de 2016 a montré que l’extension du gros orteil activait le court fléchisseur des orteils (18,1\u00A0%), l’abducteur de l’hallux (16,9\u00A0%) et le court fléchisseur du petit orteil (16,3\u00A0%), car les autres orteils doivent appuyer vers le bas pour rester à plat pendant que le gros orteil se lève (Gooding et coll., 2016).',
-    'Le gros orteil actionne le mécanisme de treuil\u00A0: quand il se replie vers le haut, le fascia plantaire se tend et la voûte se rigidifie pour la poussée. Un mauvais contrôle indépendant du gros orteil peut réduire cette rigidification.',
+    'Le gros orteil actionne le mécanisme de treuil\u00A0: quand il se relève, le fascia plantaire se tend et la voûte se rigidifie pour la poussée. Un mauvais contrôle indépendant du gros orteil peut réduire cette rigidification.',
     'Une étude de 2020 sur 41\u00A0personnes (56\u00A0pieds) atteintes de métatarsalgie a montré que huit semaines d’exercices des orteils, dont un travail du gros orteil, étaient suivies d’une meilleure force de préhension des orteils et d’une baisse de la douleur de l’avant du pied. L’étude n’avait pas de groupe de comparaison (Amaha et coll., 2020).',
     'La plupart des gens trouvent le mouvement inverse (lever seulement les petits orteils pendant que le gros orteil reste au sol) plus difficile. S’entraîner dans les deux sens est parfois appelé yoga des orteils.',
   ],
@@ -94,7 +94,7 @@ export const EX_BIG_TOE_LIFT_FR: Guide = {
   ],
   faq: [
     {
-      q: 'C’est quoi le yoga des orteils\u00A0?',
+      q: 'Qu’est-ce que le yoga des orteils\u00A0?',
       a: 'Le yoga des orteils est le nom courant des exercices où l’on bouge le gros orteil indépendamment des petits orteils, et inversement. La version de base consiste à lever seulement le gros orteil pendant que les quatre autres restent au sol, puis à inverser. Il apprend au cerveau à contrôler chaque groupe séparément.',
     },
     {
@@ -106,7 +106,7 @@ export const EX_BIG_TOE_LIFT_FR: Guide = {
       a: 'La plupart des gens ne se sont pas entraînés à bouger le gros orteil seul depuis l’enfance, voire jamais. Le circuit nerveux est en sommeil, pas abîmé. Avec un entraînement quotidien, la plupart des gens arrivent à séparer le mouvement en deux à quatre semaines. C’est une question de coordination, pas de force.',
     },
     {
-      q: 'Lever le gros orteil aide-t-il la fasciite plantaire\u00A0?',
+      q: 'Lever le gros orteil aide-t-il en cas de fasciite plantaire\u00A0?',
       cites: [CITE.guideline],
       a: 'Lever le gros orteil ne fait pas partie de la principale recommandation sur la fasciite plantaire, centrée sur les étirements et les montées sur pointes avec charge. Il peut aider au sein d’un programme plus large en améliorant le contrôle du mécanisme de treuil. Voir [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) pour les exercices principaux.',
     },

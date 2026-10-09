@@ -28,7 +28,7 @@ export const EX_SOLEUS_STRETCH_DE: Guide = {
     {
       h2: 'Wie dehnst du den Soleus?',
       paragraphs: [
-        'Fang in derselben Position an der Wand an wie bei der [Wadendehnung](/de/uebungen/wade-dehnen/): Hände an der Wand, ein Fuß nach hinten gesetzt, Ferse auf dem Boden. Dann beug das hintere Knie. Beug es weiter, bis du spürst, wie die Dehnung tiefer in die Wade wandert, nach unten in die Nähe der Achillessehne und der Ferse. Dieser tiefere Zug ist der Soleus.',
+        'Fang in derselben Position an der Wand an wie bei der [Wadendehnung](/de/uebungen/wade-dehnen/): Hände an der Wand, ein Fuß nach hinten gesetzt, Ferse auf dem Boden. Dann beug das hintere Knie. Beug es weiter, bis du spürst, wie die Dehnung in der Wade weiter nach unten wandert, in die Nähe der Achillessehne und der Ferse. Dieser Zug weiter unten ist der Soleus.',
         'Die Ferse bleibt die ganze Zeit auf dem Boden. Wenn sie sich hebt, verschwindet die Dehnung. Du spürst diese Dehnung nicht so weit oben in der Wade wie die Variante mit gestrecktem Knie. Das Gefühl sitzt näher an der Ferse, manchmal direkt oberhalb der Rückseite des Sprunggelenks. Halte 30\u00A0Sekunden, dann wechsle.',
       ],
       exercises: [
@@ -39,12 +39,12 @@ export const EX_SOLEUS_STRETCH_DE: Guide = {
             why: 'Die Leitlinie von 2023 bewertet Wadendehnen mit A. Zielt auf den tieferen Muskel, den die Wadendehnung mit gestrecktem Knie nicht erreicht.',
           },
           dose: 'Walkito beginnt mit 3-mal 30\u00A0Sekunden halten, jedes Bein',
-          how: 'Hände an die Wand, ein Fuß nach hinten, Ferse unten. Beug das hintere Knie, bis du eine Dehnung tief in der Wade spürst, nahe der Ferse. 30\u00A0Sekunden halten.',
+          how: 'Hände an die Wand, ein Fuß nach hinten, Ferse unten. Beug das hintere Knie, bis du eine Dehnung weit unten in der Wade spürst, nahe der Ferse. 30\u00A0Sekunden halten.',
           often: 'Die meisten Einheiten, zusammen mit der Wadendehnung mit gestrecktem Knie',
-          feel: 'Eine Dehnung tief in der Wade, nahe der Achillessehne',
+          feel: 'Eine Dehnung weit unten in der Wade, nahe der Achillessehne',
           stop: 'Der Schmerz 6/10 erreicht',
           media: 'calf_stretch_bent',
-          caption: 'Soleusdehnung: Beug das hintere Knie, bis die Dehnung tiefer wandert',
+          caption: 'Soleusdehnung: Beug das hintere Knie, bis die Dehnung nach unten wandert',
           alt: 'Eine Figur in Schrittstellung lehnt sich an eine Wand, das hintere Knie gebeugt, die untere Wade ist hervorgehoben',
         },
       ],
@@ -89,7 +89,7 @@ export const EX_SOLEUS_STRETCH_DE: Guide = {
   faq: [
     {
       q: 'Wie fühlt sich die Soleusdehnung an?',
-      a: 'Wie ein Zug tief in der Wade, nahe der Achillessehne, manchmal direkt oberhalb der Rückseite des Sprunggelenks. Sie fühlt sich anders an als die Wadendehnung mit gestrecktem Knie, die weiter oben in der Wade sitzt. Wenn die Dehnung weit oben sitzt, ist das Knie nicht genug gebeugt, und der Gastrocnemius macht noch die Arbeit.',
+      a: 'Wie ein Zug weit unten in der Wade, nahe der Achillessehne, manchmal direkt oberhalb der Rückseite des Sprunggelenks. Sie fühlt sich anders an als die Wadendehnung mit gestrecktem Knie, die weiter oben in der Wade sitzt. Wenn die Dehnung weit oben sitzt, ist das Knie nicht genug gebeugt, und der Gastrocnemius macht noch die Arbeit.',
     },
     {
       q: 'Ist die Soleusdehnung dasselbe wie Wade dehnen mit gebeugtem Knie?',
@@ -103,7 +103,7 @@ export const EX_SOLEUS_STRETCH_DE: Guide = {
     {
       q: 'Wie oft sollte man den Soleus dehnen?',
       cites: [CITE.guideline],
-      a: 'Walkito plant sie in die meisten Einheiten ein, zusammen mit der Wadendehnung. Die Leitlinie von 2023 empfiehlt Wadendehnen als Teil der täglichen Selbstversorgung bei Plantarfasziitis. 3-mal 30\u00A0Sekunden pro Bein dauern etwa drei Minuten. Die Dehnung belastet wenig und lässt sich sicher täglich wiederholen.',
+      a: 'Walkito plant die Soleusdehnung in die meisten Einheiten ein, zusammen mit der Wadendehnung. Die Leitlinie von 2023 empfiehlt Wadendehnen als Teil der täglichen Selbstversorgung bei Plantarfasziitis. 3-mal 30\u00A0Sekunden pro Bein dauern etwa drei Minuten. Die Dehnung belastet wenig und lässt sich sicher täglich wiederholen.',
     },
   ],
   redFlags: {

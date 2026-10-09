@@ -12,7 +12,7 @@ export const BUNIONS_DE: Guide = {
   mainSource: CITE.kimHV,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Hallux-valgus-Übungen (Ballenzeh): was wirklich hilft',
+  title: 'Hallux-valgus-Übungen: was die Studien zeigen',
   description:
     'Helfen Übungen bei Hallux valgus gegen Schmerzen oder bremsen sie den Ballenzeh? Ehrlich erklärt: Zehenspreizen, Abductor hallucis, Zehenspreizer.',
   h1: 'Übungen bei Hallux valgus: was sie können und was nicht',
@@ -32,7 +32,7 @@ export const BUNIONS_DE: Guide = {
       paragraphs: [
         'Nein. Ein Ballenzeh, medizinisch Hallux valgus, ist eine knöcherne Fehlstellung im ersten Metatarsophalangealgelenk (dem Großzehengrundgelenk). Der erste Mittelfußknochen weicht nach innen ab, und die große Zehe winkelt sich nach außen ab. Wenn sich der Knochen einmal verschoben und die Gelenkkapsel sich angepasst hat, können Übungen ihn nicht zurückdrücken.',
         'Was Übungen können, ist die Muskeln rund um das Gelenk zu kräftigen. Der Abductor hallucis verläuft entlang des inneren Gewölbes und zieht die große Zehe in eine gerade Stellung. Bei Menschen mit Hallux valgus ist dieser Muskel schwächer und kleiner als bei Menschen ohne. Ihn zu kräftigen, macht die strukturelle Veränderung nicht rückgängig, kann aber die Kontrolle verbessern, Beschwerden verringern und in leichten Fällen vielleicht ein weiteres Abweichen bremsen.',
-        'Ein klinischer Kommentar von 2016 im Journal of Orthopaedic and Sports Physical Therapy schlug für einen frühen Hallux valgus ein biomechanisch begründetes Muskelkräftigungsprogramm vor, mit Schwerpunkt auf den inneren Fußmuskeln. Der Autor argumentierte, dass die Fehlstellung zum Teil durch ein muskuläres Ungleichgewicht fortschreitet, und dass es deshalb schützend wirken könnte, die Muskelaktivität wiederherzustellen. Das ist ein plausibles Argument, aber direkte Langzeitbelege sind noch begrenzt.',
+        'Ein klinischer Kommentar von 2016 im Journal of Orthopaedic and Sports Physical Therapy schlug für einen frühen Hallux valgus ein biomechanisch begründetes Muskelkräftigungsprogramm vor, mit Schwerpunkt auf den kurzen Fußmuskeln. Der Autor argumentierte, dass die Fehlstellung zum Teil durch ein muskuläres Ungleichgewicht fortschreitet, und dass es deshalb schützend wirken könnte, die Muskelaktivität wiederherzustellen. Das ist ein plausibles Argument, aber direkte Langzeitbelege sind noch begrenzt.',
       ],
     },
     {
@@ -61,7 +61,7 @@ export const BUNIONS_DE: Guide = {
     {
       h2: 'Welche Übungen helfen bei Hallux valgus?',
       paragraphs: [
-        'Diese Übungen zielen auf den Abductor hallucis und die kleineren inneren Fußmuskeln. Das Ziel ist, die muskuläre Stütze rund um das erste Metatarsophalangealgelenk wiederherzustellen. Keine davon macht die knöcherne Fehlstellung rückgängig, aber für zwei davon gibt es Studien, die eine Zunahme der Muskelgröße und weniger Beschwerden bei leichtem Hallux valgus zeigen.',
+        'Diese Übungen zielen auf den Abductor hallucis und die kleineren kurzen Fußmuskeln. Das Ziel ist, die muskuläre Stütze rund um das erste Metatarsophalangealgelenk wiederherzustellen. Keine davon macht die knöcherne Fehlstellung rückgängig, aber für zwei davon gibt es Studien, die eine Zunahme der Muskelgröße und weniger Beschwerden bei leichtem Hallux valgus zeigen.',
       ],
       exercises: [
         {
@@ -95,7 +95,7 @@ export const BUNIONS_DE: Guide = {
         {
           name: 'Kurzer Fuß im Sitzen',
           dose: 'Walkito beginnt mit 3\u00A0Sätzen à 10, 5\u00A0Sekunden halten, jeder Fuß',
-          how: 'Setz dich hin, der Fuß steht flach auf dem Boden. Versuch, ohne die Zehen einzukrallen, den Fuß zu verkürzen, indem du den Fußballen Richtung Ferse ziehst. Das Gewölbe hebt sich leicht. Das setzt die inneren Fußmuskeln ein, darunter den Abductor hallucis.',
+          how: 'Setz dich hin, der Fuß steht flach auf dem Boden. Versuch, ohne die Zehen einzukrallen, den Fuß zu verkürzen, indem du den Fußballen Richtung Ferse ziehst. Das Gewölbe hebt sich leicht. Das setzt die kurzen Fußmuskeln ein, darunter den Abductor hallucis.',
           feel: 'Eine Anspannung unter dem Gewölbe',
           stop: 'Schmerz am Ballen oder ein Krampf, der nicht nachlässt',
           evidence: {
@@ -114,7 +114,7 @@ export const BUNIONS_DE: Guide = {
           stop: 'Schmerz am Großzehengrundgelenk',
           evidence: {
             level: 'early',
-            why: 'Eine Ergänzung von Walkito. Handtuchgreifen zielt auf die inneren Fußmuskeln, wurde aber nicht speziell in einer Studie zum Hallux valgus getestet.',
+            why: 'Eine Ergänzung von Walkito. Handtuchgreifen zielt auf die kurzen Fußmuskeln, wurde aber nicht speziell in einer Studie zum Hallux valgus getestet.',
           },
           media: 'towel_scrunch',
           caption: 'Handtuchgreifen: Krall die Zehen ein, um das Handtuch heranzuziehen',
@@ -191,7 +191,7 @@ export const BUNIONS_DE: Guide = {
   program: {
     h2: 'Als Plan umsetzen',
     text:
-      'Walkito enthält [Zehenspreizen](/de/uebungen/zehen-spreizen/) und [Großzehenheben](/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die inneren Fußmuskeln. Die App ist für Plantarfasziitis und Plattfüße gebaut, nicht speziell für Hallux valgus, aber das Zehenspreizen ist dieselbe Bewegung, die in der Studie Kim 2015 zum Hallux valgus getestet wurde. Wenn du eine feste Struktur suchst, um die Gewohnheit aufzubauen, halten die täglichen Einheiten von 3 oder 5\u00A0Minuten die Übungen regelmäßig.',
+      'Walkito enthält [Zehenspreizen](/de/uebungen/zehen-spreizen/) und [Großzehenheben](/de/uebungen/grosszehe-heben/) als Teil seines Kräftigungsprogramms für die kurzen Fußmuskeln. Die App ist für Plantarfasziitis und Plattfüße gebaut, nicht speziell für Hallux valgus, aber das Zehenspreizen ist dieselbe Bewegung, die in der Studie Kim 2015 zum Hallux valgus getestet wurde. Wenn du eine feste Struktur suchst, um die Gewohnheit aufzubauen, halten die täglichen Einheiten von 3 oder 5\u00A0Minuten die Übungen regelmäßig.',
     more: [
       'Bei breiteren Vorfußschmerzen am zweiten und dritten Mittelfußköpfchen lies [Schmerzen im Fußballen](/de/metatarsalgie-vorfussschmerzen/). Bei Schmerzen direkt unter dem Großzehengrundgelenk lies [Sesamoiditis](/de/sesamoiditis/).',
     ],

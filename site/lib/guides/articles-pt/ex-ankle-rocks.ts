@@ -13,7 +13,7 @@ export const EX_ANKLE_ROCKS_PT: Guide = {
   page: 'exAnkleRocks',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Balanço do tornozelo: exercício de mobilidade do tornozelo',
+  title: 'Balanço do tornozelo: exercício de mobilidade',
   description:
     'Como fazer o balanço do tornozelo (joelho por cima dos dedos) para mobilidade: técnica, séries, por que a dobra do tornozelo importa e como testar.',
   h1: 'Balanço do tornozelo: como fazer e por que a mobilidade do tornozelo importa',
@@ -59,7 +59,7 @@ export const EX_ANKLE_ROCKS_PT: Guide = {
       paragraphs: [
         'A dorsiflexão do tornozelo é o quanto o pé consegue dobrar para cima, em direção à canela, enquanto o calcanhar fica no chão. Todo passo que você dá precisa de um pouco de dorsiflexão. Quando o tornozelo não dobra o bastante, o corpo compensa. O pé pode girar para dentro, a panturrilha leva mais esforço e a fáscia plantar absorve forças para as quais não foi feita.',
         'No estudo caso-controle de Riddle de 2003, a dorsiflexão reduzida do tornozelo foi a variável com o maior efeito independente, com razão de chances de 23,3 para fascite plantar. Foi mais forte que o IMC, o tempo em pé ou a distância corrida. Uma panturrilha tensa, especificamente o gastrocnêmio, estava presente em 52 a 60\u00A0por cento de 254\u00A0pessoas com fascite plantar em outra revisão.',
-        'Alongar a panturrilha de forma passiva (como no [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) e no [alongamento do sóleo](/pt/exercicios/alongamento-soleo/)) resolve um lado do problema: o comprimento do músculo. O balanço do tornozelo resolve o outro lado: o controle ativo no fim da amplitude. Levar o joelho por cima dos dedos com o peso do corpo ensina o tornozelo a usar a amplitude que tem, e não só alcançá-la de forma passiva.',
+        'Alongar a panturrilha de forma passiva (como no [alongamento de panturrilha](/pt/exercicios/alongamento-panturrilha/) e no [alongamento do sóleo](/pt/exercicios/alongamento-soleo/)) atua sobre um lado do problema: o comprimento do músculo. O balanço do tornozelo atua sobre o outro lado: o controle ativo no fim da amplitude. Levar o joelho por cima dos dedos com o peso do corpo ensina o tornozelo a usar a amplitude que tem, e não só alcançá-la de forma passiva.',
       ],
       cites: [CITE.riddle, CITE.patelGastrocnemius],
     },
@@ -114,7 +114,7 @@ export const EX_ANKLE_ROCKS_PT: Guide = {
     },
     {
       q: 'Balanço do tornozelo é o mesmo que levar o joelho por cima dos dedos?',
-      a: 'Sim. «Balanço do tornozelo», «joelho por cima dos dedos» e «balanço de dorsiflexão» são nomes para o mesmo movimento. O joelho vai para a frente por cima dos dedos enquanto o calcanhar fica apoiado. O exercício desenvolve a amplitude do tornozelo de que você precisa para andar, agachar e correr.',
+      a: 'Sim. “Balanço do tornozelo”, “joelho por cima dos dedos” e “balanço de dorsiflexão” são nomes para o mesmo movimento. O joelho vai para a frente por cima dos dedos enquanto o calcanhar fica apoiado. O exercício desenvolve a amplitude do tornozelo de que você precisa para andar, agachar e correr.',
     },
     {
       q: 'O joelho pode passar da ponta do pé?',

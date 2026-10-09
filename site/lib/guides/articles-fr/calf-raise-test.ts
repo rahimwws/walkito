@@ -15,7 +15,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
   mainSource: CITE.hebertLosier,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Test de montée sur pointes\u00A0: normes par âge, protocole',
+  title: 'Test de montée sur pointes\u00A0: normes et protocole',
   description:
     'Le test de montée sur pointes sur une jambe mesure l’endurance du mollet\u00A0: protocole, normes par âge et sexe, sens du score, comment progresser.',
   h1: 'Test de montée sur pointes\u00A0: combien devriez-vous en faire, et que veut dire votre score\u00A0?',
@@ -25,10 +25,10 @@ export const CALF_RAISE_TEST_FR: Guide = {
     'Une étude de 2017 sur 566\u00A0adultes en bonne santé a trouvé une médiane globale d’environ 23 à 24\u00A0répétitions par jambe, qui varie selon l’âge, le sexe et le niveau d’activité. Cette page présente le protocole de recherche, une version à faire chez soi, les valeurs de référence par âge, le sens d’un écart gauche-droite et le lien entre ce test, la douleur au talon et la course.',
   ],
   takeaways: [
-    'La médiane globale chez l’adulte en bonne santé est de 24\u00A0répétitions sur la jambe droite et 23 sur la gauche, d’après une étude sur 566\u00A0personnes de 20 à 81\u00A0ans (Hebert-Losier et coll., 2017).',
-    'Les hommes faisaient plus de répétitions que les femmes au total (médiane de 24 contre 21), mais après 60\u00A0ans, les femmes faisaient mieux que les hommes du même âge (Hebert-Losier et coll., 2017).',
-    'Une différence gauche-droite de plus de 10\u00A0% est le seuil habituel d’une asymétrie significative en rééducation du membre inférieur (Silbernagel et coll., 2010).',
-    'Le test a une excellente fiabilité\u00A0: ICC de 0,96, avec une erreur de mesure typique d’environ deux répétitions (Hebert-Losier et coll., 2017).',
+    'La médiane globale chez l’adulte en bonne santé est de 24\u00A0répétitions sur la jambe droite et 23 sur la gauche, d’après une étude sur 566\u00A0personnes de 20 à 81\u00A0ans (Hébert-Losier et coll., 2017).',
+    'Les hommes faisaient plus de répétitions que les femmes au total (médiane de 24 contre 21), mais après 60\u00A0ans, les femmes faisaient mieux que les hommes du même âge (Hébert-Losier et coll., 2017).',
+    'Une différence gauche-droite de plus de 10\u00A0% est le seuil habituel d’une asymétrie notable en rééducation du membre inférieur (Silbernagel et coll., 2010).',
+    'Le test a une excellente fiabilité\u00A0: ICC de 0,96, avec une erreur de mesure typique d’environ deux répétitions (Hébert-Losier et coll., 2017).',
   ],
   toc: true,
   sections: [
@@ -45,12 +45,12 @@ export const CALF_RAISE_TEST_FR: Guide = {
     {
       h2: 'Comment se fait le heel-rise test\u00A0? Le protocole de recherche',
       paragraphs: [
-        'Le protocole d’Hebert-Losier 2017 est la version la plus citée et la source des valeurs de référence de cette page. Dans cette étude, 566\u00A0adultes en bonne santé de 20 à 81\u00A0ans ont fait des montées sur pointes sur une jambe jusqu’à la fatigue, de chaque côté.',
+        'Le protocole d’Hébert-Losier 2017 est la version la plus citée et la source des valeurs de référence de cette page. Dans cette étude, 566\u00A0adultes en bonne santé de 20 à 81\u00A0ans ont fait des montées sur pointes sur une jambe jusqu’à la fatigue, de chaque côté.',
         'La personne se tient pieds nus ou en chaussures plates sur une planche inclinée à 10\u00A0degrés, un pied à la fois. Un appui du bout des doigts sur un mur, à hauteur d’épaules, est autorisé, uniquement pour l’équilibre. Un métronome est réglé à 60\u00A0battements par minute\u00A0: un battement pour monter, un pour descendre, soit deux secondes par répétition complète. La consigne est de monter le talon le plus haut possible, genou tendu et buste droit.',
         'Le test s’arrête quand le talon ne décolle plus de la planche, quand le rythme du métronome ne peut plus être suivi, quand le genou se plie ou que le buste penche, ou quand la personne s’appuie sur le mur au lieu de le toucher du bout des doigts. Un rappel oral est donné avant l’arrêt. L’échauffement comprend 10\u00A0minutes de marche rapide puis 10\u00A0montées sur pointes sur les deux pieds. Deux minutes de repos séparent les deux jambes.',
       ],
       sourceNote:
-        'Hebert-Losier 2017\u00A0: ICC de 0,96 (droite) et 0,96 (gauche)\u00A0; différence moyenne entre deux jours de 0,2\u00A0répétition (limites d’agrément à 95\u00A0% de -6,2 à 6,5) à droite et de 0,1\u00A0répétition (limites d’agrément à 95\u00A0% de -6,1 à 6,2) à gauche.',
+        'Hébert-Losier 2017\u00A0: ICC de 0,96 (droite) et 0,96 (gauche)\u00A0; différence moyenne entre deux jours de 0,2\u00A0répétition (limites d’agrément à 95\u00A0% de -6,2 à 6,5) à droite et de 0,1\u00A0répétition (limites d’agrément à 95\u00A0% de -6,1 à 6,2) à gauche.',
       cites: [CITE.hebertLosier],
     },
     {
@@ -80,11 +80,11 @@ export const CALF_RAISE_TEST_FR: Guide = {
       tool: 'calf-raise-calculator',
       keyFact: 'En 1995, une étude sur 203\u00A0adultes de 20 à 59\u00A0ans a proposé 25\u00A0répétitions comme repère d’une performance normale au test de montée sur pointes sur une jambe (Lunsford et Perry, 1995).',
       paragraphs: [
-        'Le tableau ci-dessous donne le nombre médian de montées sur pointes sur une jambe par âge et par sexe, d’après Hebert-Losier 2017. Ce sont des estimations du modèle pour une personne d’un niveau d’activité physique modéré (niveau 4 sur une échelle de 6) et d’un indice de masse corporelle de 24,2, en moyenne sur les deux jambes.',
-        'Un niveau d’activité plus élevé ajoute environ cinq à neuf répétitions à la médiane. En 1995, Lunsford et Perry ont testé 203\u00A0adultes de 20 à 59\u00A0ans et ont recommandé 25\u00A0répétitions comme critère d’une performance normale. Les données d’Hebert-Losier confirment ce chiffre comme une référence raisonnable chez l’adulte, même s’il s’agit d’une médiane de population, pas d’un seuil de réussite ou d’échec. Votre propre point de départ et le sens de l’évolution comptent plus que n’importe quel chiffre isolé.',
+        'Le tableau ci-dessous donne le nombre médian de montées sur pointes sur une jambe par âge et par sexe, d’après Hébert-Losier 2017. Ce sont des estimations du modèle pour une personne d’un niveau d’activité physique modéré (niveau 4 sur une échelle de 6) et d’un indice de masse corporelle de 24,2, en moyenne sur les deux jambes.',
+        'Un niveau d’activité plus élevé ajoute environ cinq à neuf répétitions à la médiane. En 1995, Lunsford et Perry ont testé 203\u00A0adultes de 20 à 59\u00A0ans et ont recommandé 25\u00A0répétitions comme critère d’une performance normale. Les données d’Hébert-Losier confirment ce chiffre comme une référence raisonnable chez l’adulte, même s’il s’agit d’une médiane de population, pas d’un seuil de réussite ou d’échec. Votre propre point de départ et le sens de l’évolution comptent plus que n’importe quel chiffre isolé.',
       ],
       table: {
-        caption: 'Nombre médian de montées sur pointes sur une jambe par âge et par sexe (Hebert-Losier 2017)',
+        caption: 'Nombre médian de montées sur pointes sur une jambe par âge et par sexe (Hébert-Losier 2017)',
         head: ['Âge', 'Hommes', 'Femmes'],
         rows: [
           ['20', '37', '30'],
@@ -97,14 +97,14 @@ export const CALF_RAISE_TEST_FR: Guide = {
         ],
       },
       sourceNote:
-        'Estimations du modèle pour un IMC de 24,2 et un niveau d’activité physique de 4. Valeurs moyennes des côtés gauche et droit, arrondies à l’entier le plus proche. D’après le tableau 4 d’Hebert-Losier 2017 (n = 566).',
+        'Estimations du modèle pour un IMC de 24,2 et un niveau d’activité physique de 4. Valeurs moyennes des côtés gauche et droit, arrondies à l’entier le plus proche. D’après le tableau 4 d’Hébert-Losier 2017 (n = 566).',
       cites: [CITE.lunsfordPerry, CITE.hebertLosier],
     },
     {
       h2: 'Vos jambes gauche et droite doivent-elles avoir le même score\u00A0?',
       keyFact: 'Dans une étude sur 78\u00A0personnes après une rupture du tendon d’Achille, la symétrie moyenne entre les membres à six mois était de 84\u00A0% en nombre de répétitions mais seulement de 61\u00A0% en travail total, ce qui montre que le seul nombre de répétitions peut sous-estimer un déficit (Silbernagel et coll., 2010).',
       paragraphs: [
-        'À peu près le même, oui. Dans l’étude d’Hebert-Losier, la différence médiane entre droite et gauche était d’une répétition, et l’erreur de mesure typique d’environ deux répétitions. Un écart aussi petit, c’est du bruit.',
+        'À peu près le même, oui. Dans l’étude d’Hébert-Losier, la différence médiane entre droite et gauche était d’une répétition, et l’erreur de mesure typique d’environ deux répétitions. Un écart aussi petit, c’est du bruit.',
         'En rééducation du membre inférieur, un indice de symétrie des membres (LSI) de 90\u00A0% ou plus est le repère habituel d’une fonction normale. Le LSI, c’est le côté le plus faible divisé par le côté le plus fort, multiplié par 100. En dessous de 90\u00A0%, un côté est plus de 10\u00A0% plus faible. Silbernagel et coll. ont utilisé ce seuil chez 78\u00A0patients après une rupture du tendon d’Achille\u00A0: à 6\u00A0mois, les patients avaient en moyenne un LSI de 84\u00A0% en répétitions et seulement de 61\u00A0% en travail total, ce qui montre que compter les répétitions seules peut sous-estimer un déficit.',
         'Sans blessure, un écart de plus de 10\u00A0% vaut la peine d’être noté et suivi. Cela ne veut pas dire que quelque chose ne va pas. Mais si l’écart persiste sur plusieurs tests et que vous avez aussi mal du côté le plus faible, c’est une information utile pour un professionnel de santé.',
       ],
@@ -166,7 +166,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
     {
       q: 'Combien de montées sur pointes devrais-je pouvoir faire\u00A0?',
       cites: [CITE.hebertLosier],
-      a: 'La médiane globale dans une étude sur 566\u00A0adultes en bonne santé était d’environ 23 à 24\u00A0répétitions par jambe. Les hommes avaient une médiane de 24, les femmes de 21. Le nombre baisse d’environ quatre à cinq répétitions par décennie d’âge. Un niveau d’activité plus élevé ajoute cinq à neuf répétitions. Servez-vous-en comme repères pour suivre vos progrès, pas comme un seuil de réussite ou d’échec (Hebert-Losier 2017).',
+      a: 'La médiane globale dans une étude sur 566\u00A0adultes en bonne santé était d’environ 23 à 24\u00A0répétitions par jambe. Les hommes avaient une médiane de 24, les femmes de 21. Le nombre baisse d’environ quatre à cinq répétitions par décennie d’âge. Un niveau d’activité plus élevé ajoute cinq à neuf répétitions. Servez-vous-en comme repères pour suivre vos progrès, pas comme un seuil de réussite ou d’échec (Hébert-Losier 2017).',
     },
     {
       q: 'Le test de montée sur pointes, c’est la même chose que le heel-rise test\u00A0?',
@@ -175,11 +175,11 @@ export const CALF_RAISE_TEST_FR: Guide = {
     {
       q: 'Quel est un bon score au test de montée sur pointes selon l’âge\u00A0?',
       cites: [CITE.hebertLosier],
-      a: 'Pour une personne modérément active\u00A0: environ 37 pour un homme de 20\u00A0ans (30 pour une femme), 28 pour un homme de 40\u00A0ans (25 pour une femme), et 19 à 60\u00A0ans quel que soit le sexe. Le niveau d’activité décale ces médianes de cinq à neuf répétitions (Hebert-Losier 2017).',
+      a: 'Pour une personne modérément active\u00A0: environ 37 pour un homme de 20\u00A0ans (30 pour une femme), 28 pour un homme de 40\u00A0ans (25 pour une femme), et 19 à 60\u00A0ans quel que soit le sexe. Le niveau d’activité décale ces médianes de cinq à neuf répétitions (Hébert-Losier 2017).',
     },
     {
       q: 'À quelle fréquence refaire le test\u00A0?',
-      a: 'Toutes les deux à quatre semaines suffit pour voir un vrai changement sans trop tester. Dans la recherche, le test a été refait à une semaine d’intervalle, avec une excellente fiabilité. Walkito refait le test tous les 14\u00A0jours tant que l’objectif du mollet est actif, puis tous les 28\u00A0jours une fois atteint.',
+      a: 'Un nouveau test toutes les deux à quatre semaines suffit pour voir un vrai changement sans trop tester. Dans la recherche, le test a été refait à une semaine d’intervalle, avec une excellente fiabilité. Walkito refait le test tous les 14\u00A0jours tant que l’objectif du mollet est actif, puis tous les 28\u00A0jours une fois atteint.',
     },
     {
       q: 'Que veut dire une jambe beaucoup plus faible que l’autre\u00A0?',
@@ -188,7 +188,7 @@ export const CALF_RAISE_TEST_FR: Guide = {
     },
     {
       q: 'Faut-il un métronome pour le test\u00A0?',
-      a: 'Le protocole de recherche utilise un métronome à 60\u00A0battements par minute. Les applications de métronome gratuites marchent bien. Sans métronome, comptez «\u00A0un et\u00A0» en montant et en descendant. Votre nombre sera moins comparable aux normes publiées, mais faire le test toujours de la même façon compte plus que reproduire exactement le cadre de la recherche.',
+      a: 'Le protocole de recherche utilise un métronome à 60\u00A0battements par minute. Les applications de métronome gratuites conviennent bien. Sans métronome, comptez «\u00A0mille un\u00A0» en montant et en descendant. Votre nombre sera moins comparable aux normes publiées, mais faire le test toujours de la même façon compte plus que reproduire exactement le cadre de la recherche.',
     },
     {
       q: 'Le test de montée sur pointes peut-il diagnostiquer une fasciite plantaire ou une tendinite d’Achille\u00A0?',

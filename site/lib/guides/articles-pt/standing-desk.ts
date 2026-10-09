@@ -15,7 +15,7 @@ export const STANDING_DESK_PT: Guide = {
   mainSource: CITE.buckley,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Dor nos pés com mesa em pé (standing desk): o que ajuda',
+  title: 'Dor nos pés com mesa em pé: causas e o que ajuda',
   description:
     'Por que os pés doem com a mesa em pé, quanto tempo ficar em pé antes de sentar, tapete antifadiga e exercícios para fazer na própria mesa.',
   h1: 'Dor nos pés com mesa em pé: por que acontece e o que ajuda',
@@ -30,7 +30,7 @@ export const STANDING_DESK_PT: Guide = {
     'Uma declaração de especialistas de 2015 encomendada pela Public Health England recomenda acumular no início 2\u00A0horas por dia em pé e em atividade leve durante o trabalho, e com o tempo progredir para 4\u00A0horas por dia, divididas em períodos mais curtos (Buckley e colegas, 2015).',
     'Uma revisão sistemática de 2014 de 14\u00A0estudos encontrou evidência suficiente de que as estações de trabalho que alternam sentado e em pé reduzem o desconforto lombar, sem queda de produtividade, mas não encontrou uma proporção ideal entre tempo sentado e em pé (Karakolis e Callaghan, 2014).',
     'Uma revisão de 2015 da pesquisa em saúde ocupacional associou ficar muito tempo em pé a desconforto musculoesquelético, cansaço e dor nas pernas, e colocou tapetes antifadiga, meias de compressão e calçados com bom suporte entre as intervenções com alguma evidência (Waters e Dick, 2015).',
-    'A flexibilidade reduzida do tornozelo, ou seja, uma panturrilha tensa, foi o preditor mais forte de fascite plantar em um estudo caso-controle de 2003, com 23,3\u00A0vezes a chance. Ficar em pé a maior parte do dia de trabalho aumentou a chance em 3,6\u00A0vezes (Riddle e colegas, 2003).',
+    'A flexibilidade reduzida do tornozelo, ou seja, uma panturrilha tensa, foi o preditor mais forte de fascite plantar em um estudo caso-controle de 2003, com chances 23,3\u00A0vezes maiores. Ficar em pé a maior parte do dia de trabalho multiplicou as chances por 3,6 (Riddle e colegas, 2003).',
   ],
   sections: [
     {
@@ -188,7 +188,7 @@ export const STANDING_DESK_PT: Guide = {
     {
       h2: 'A dor nos pés com mesa em pé pode ser fascite plantar ou outra coisa?',
       paragraphs: [
-        'A dor nos pés com mesa em pé normalmente é um desconforto geral de ficar muito tempo parado em pé. Mas se a dor é aguda, concentrada perto do calcanhar e pior nos primeiros passos depois de ficar um tempo sentado, esse padrão aponta para fascite plantar. Ficar em pé a maior parte do dia de trabalho aumentou em 3,6\u00A0vezes a chance de fascite plantar em um estudo caso-controle, então a mesa em pé pode, sim, contribuir.',
+        'A dor nos pés com mesa em pé normalmente é um desconforto geral de ficar muito tempo parado em pé. Mas se a dor é aguda, concentrada perto do calcanhar e pior nos primeiros passos depois de ficar um tempo sentado, esse padrão aponta para fascite plantar. Ficar em pé a maior parte do dia de trabalho multiplicou por 3,6 as chances de fascite plantar em um estudo caso-controle, então a mesa em pé pode, sim, contribuir.',
         'Os exercícios que ajudam nos dois casos se sobrepõem muito. Se a sua dor segue o padrão da fascite plantar, [exercícios e alongamentos para fascite plantar](/pt/exercicios-fascite-plantar/) é o guia mais completo. Se os seus arcos parecem baixos, veja [exercícios para pé chato](/pt/exercicios-pe-chato/). Se você não tem certeza, procure um profissional de saúde antes de pôr carga no pé com exercício.',
       ],
       cites: [CITE.riddle],
@@ -207,7 +207,7 @@ export const STANDING_DESK_PT: Guide = {
     },
     {
       q: 'Mesa em pé pode causar fascite plantar?',
-      a: 'Ficar em pé a maior parte do dia de trabalho aumentou em 3,6\u00A0vezes a chance de fascite plantar em um estudo caso-controle com 50\u00A0casos e 100\u00A0controles. A mesa em pé aumenta as suas horas diárias em pé, então ela pode contribuir se a sua panturrilha já for tensa, o que foi o fator de risco independente mais forte, com 23,3\u00A0vezes a chance. Os alongamentos da panturrilha são o jeito mais direto de cuidar dos dois fatores de risco.',
+      a: 'Ficar em pé a maior parte do dia de trabalho multiplicou por 3,6 as chances de fascite plantar em um estudo caso-controle com 50\u00A0casos e 100\u00A0controles. A mesa em pé aumenta as suas horas diárias em pé, então ela pode contribuir se a sua panturrilha já for tensa, o que foi o fator de risco independente mais forte, com chances 23,3\u00A0vezes maiores. Os alongamentos da panturrilha são o jeito mais direto de cuidar dos dois fatores de risco.',
       cites: [CITE.riddle],
     },
     {

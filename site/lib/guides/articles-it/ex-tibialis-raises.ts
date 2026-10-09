@@ -31,7 +31,7 @@ export const EX_TIBIALIS_RAISES_IT: Guide = {
     {
       h2: 'Quali muscoli lavorano nei sollevamenti dell’avampiede?',
       paragraphs: [
-        'I sollevamenti dell’avampiede lavorano soprattutto sul tibiale anteriore, il muscolo sul davanti dello stinco. È responsabile della dorsiflessione, cioè del sollevare il piede verso lo stinco. A ogni passo, il tibiale anteriore alza le dita così il piede non tocca terra. Quando è debole, il piede può sbattere a terra dopo l’appoggio del tallone o inciampare sulle superfici irregolari.',
+        'I sollevamenti dell’avampiede lavorano soprattutto sul tibiale anteriore, il muscolo sul davanti dello stinco. È responsabile della dorsiflessione, cioè del sollevare il piede verso lo stinco. A ogni passo, il tibiale anteriore alza le dita così il piede non striscia a terra. Quando è debole, il piede può sbattere a terra dopo l’appoggio del tallone o inciampare sulle superfici irregolari.',
         'L’esercizio lavora anche sui piccoli muscoli estensori delle dita lungo il davanti della gamba. Non carica i muscoli del polpaccio sul retro della gamba, ed è per questo che si abbina ai [sollevamenti sulle punte](/it/esercizi/sollevamenti-sulle-punte/) per coprire entrambi i lati della gamba.',
       ],
     },
@@ -63,7 +63,7 @@ export const EX_TIBIALIS_RAISES_IT: Guide = {
       h2: 'I sollevamenti dell’avampiede aiutano la periostite tibiale?',
       keyFact: 'In uno studio caso-controllo del 2007, gli atleti con periostite tibiale avevano una resistenza nei sollevamenti sulle punte più bassa dei controlli appaiati, il che indica un deficit di forza generale della gamba, non di un singolo muscolo (Madeley e colleghi, 2007).',
       paragraphs: [
-        'La periostite tibiale, il cui nome clinico è sindrome da stress tibiale mediale (MTSS), dà dolore lungo il bordo interno della tibia. Il tibiale anteriore sta sul davanti esterno dello stinco, non nel punto in cui di solito fa male la MTSS, quindi il legame è indiretto. Il ragionamento è che un tibiale anteriore più forte aiuta ad assorbire l’impatto quando corri e cammini, riducendo la tensione sullo stinco nel suo insieme.',
+        'La periostite tibiale, il cui nome clinico è sindrome da stress tibiale mediale (MTSS), dà dolore lungo il bordo interno della tibia. Il tibiale anteriore sta sulla parte anteriore esterna dello stinco, non nel punto in cui di solito fa male la MTSS, quindi il legame è indiretto. Il ragionamento è che un tibiale anteriore più forte aiuta ad assorbire l’impatto quando corri e cammini, riducendo la tensione sullo stinco nel suo insieme.',
         'Uno studio caso-controllo del 2007 ha trovato che gli atleti con MTSS avevano una resistenza nei sollevamenti sulle punte più bassa dei controlli appaiati, il che indica un deficit di forza generale della gamba, non la debolezza di un singolo muscolo. Una revisione sistematica del 2013 ha esaminato il trattamento della MTSS già presente, non la prevenzione, e non ha trovato studi che mostrassero l’efficacia di esercizi di allungamento o di rinforzo, anche se nel complesso le prove dietro questa conclusione erano di bassa qualità.',
         'Onestamente, non abbiamo uno studio che abbia testato i sollevamenti dell’avampiede da soli per la periostite tibiale e mostrato che riducono i sintomi o le ricadute. L’esercizio è nei programmi perché ha senso dal punto di vista biomeccanico, non perché uno studio lo abbia dimostrato. Per questo la sua etichetta di evidenza è «iniziale». Per la pagina completa sulla periostite tibiale, vedi [esercizi per la periostite tibiale](/it/periostite-tibiale-esercizi/).',
       ],
@@ -80,7 +80,7 @@ export const EX_TIBIALIS_RAISES_IT: Guide = {
     {
       h2: 'Sollevamenti dell’avampiede o sollevamenti sulle punte',
       paragraphs: [
-        'I sollevamenti dell’avampiede e i [sollevamenti sulle punte](/it/esercizi/sollevamenti-sulle-punte/) sono movimenti opposti. Il sollevamento sulle punte spinge il piede verso il basso (flessione plantare). Il sollevamento dell’avampiede solleva il piede verso l’alto (dorsiflessione). I muscoli del polpaccio e il tibiale anteriore lavorano insieme per controllare ogni passo, assorbendo l’impatto all’appoggio e spingendo alla staccata.',
+        'I sollevamenti dell’avampiede e i [sollevamenti sulle punte](/it/esercizi/sollevamenti-sulle-punte/) sono movimenti opposti. Il sollevamento sulle punte spinge il piede verso il basso (flessione plantare). Il sollevamento dell’avampiede solleva il piede verso l’alto (dorsiflessione). I muscoli del polpaccio e il tibiale anteriore lavorano insieme per controllare ogni passo, assorbendo l’impatto all’appoggio e spingendo nella fase di stacco.',
         'Rinforzare un lato senza l’altro può creare uno squilibrio. Chi corre e fa solo sollevamenti sulle punte può comunque avere dolore allo stinco, perché il tibiale anteriore non riesce a stare al passo con il polpaccio quando i chilometri sono tanti. Un programma equilibrato include entrambi.',
       ],
     },

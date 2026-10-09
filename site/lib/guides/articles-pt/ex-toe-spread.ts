@@ -13,15 +13,15 @@ export const EX_TOE_SPREAD_PT: Guide = {
   page: 'exToeSpread',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Abrir os dedos do pé: exercício para afastar os dedos',
+  title: 'Exercício de abrir os dedos do pé: como fazer',
   description:
     'Como fazer o exercício de abrir os dedos do pé: técnica, séries e repetições, músculos trabalhados, para quem serve e o que a ressonância magnética mostra.',
   h1: 'Abrir os dedos do pé: como afastar os dedos para fortalecer o pé',
   lede:
     'O exercício de abrir os dedos treina os músculos que afastam os dedos do pé um do outro. Você abre os cinco dedos o máximo que der, segura e solta. Ele trabalha o abdutor do hálux, na parte de dentro, e o abdutor do dedo mínimo, na parte de fora, os mesmos músculos que sustentam as duas bordas do arco. Aparece em programas para pé chato, joanete e força geral do pé.',
   takeaways: [
-    'Um estudo de ressonância magnética de 2016 encontrou que abrir os dedos produziu a maior ativação média (35,2%) no abdutor do dedo mínimo, o músculo que sustenta o arco do lado de fora, entre quatro exercícios para os músculos intrínsecos do pé testados (Gooding e colegas, 2016).',
-    'Um estudo de ressonância magnética de 2016 encontrou que abrir os dedos produziu a segunda maior ativação média (31,5%) no adutor do hálux oblíquo, um músculo do lado de dentro da articulação do dedão (Gooding e colegas, 2016).',
+    'Um estudo de ressonância magnética de 2016 mostrou que abrir os dedos produziu a maior ativação média (35,2%) no abdutor do dedo mínimo, o músculo que sustenta o arco do lado de fora, entre quatro exercícios para os músculos intrínsecos do pé testados (Gooding e colegas, 2016).',
+    'Um estudo de ressonância magnética de 2016 mostrou que abrir os dedos produziu a segunda maior ativação média (31,5%) no adutor do hálux oblíquo, um músculo do lado de dentro da articulação do dedão (Gooding e colegas, 2016).',
     'Abrir os dedos faz parte do modelo mais amplo de treino dos músculos intrínsecos do pé descrito em uma revisão narrativa de 2015, junto com o exercício do pé curto e a extensão do dedão (McKeon e colegas, 2015).',
     'A maioria das pessoas não consegue abrir bem os dedos no começo. A capacidade melhora com a prática ao longo de algumas semanas.',
   ],
@@ -58,11 +58,11 @@ export const EX_TOE_SPREAD_PT: Guide = {
     },
     {
       h2: 'Quais músculos o exercício de abrir os dedos trabalha?',
-      keyFact: 'Um estudo de ressonância magnética de 2016 encontrou que abrir os dedos ativou o abdutor do hálux em só 18,9\u00A0por cento, contra 29,7\u00A0por cento no exercício do pé curto, no mesmo pequeno grupo de atletas (Gooding e colegas, 2016).',
+      keyFact: 'Um estudo de ressonância magnética de 2016 mostrou que abrir os dedos ativou o abdutor do hálux em só 18,9\u00A0por cento, contra 29,7\u00A0por cento no exercício do pé curto, no mesmo pequeno grupo de atletas (Gooding e colegas, 2016).',
       paragraphs: [
-        'Abrir os dedos trabalha dois músculos em especial. O abdutor do hálux corre ao longo da borda de dentro do pé e puxa o dedão para dentro (em direção ao meio do corpo). Ele também é um dos principais músculos que sustentam o arco longitudinal medial. O abdutor do dedo mínimo corre ao longo da borda de fora e puxa o dedo mínimo para fora.',
+        'Abrir os dedos trabalha dois músculos em especial. O abdutor do hálux passa ao longo da borda de dentro do pé e puxa o dedão para dentro (em direção ao meio do corpo). Ele também é um dos principais músculos que sustentam o arco longitudinal medial. O abdutor do dedo mínimo passa ao longo da borda de fora e puxa o dedo mínimo para fora.',
         'Um estudo de ressonância magnética de 2016 de Gooding e colegas testou quatro exercícios para os músculos intrínsecos do pé e mediu a ativação de cada músculo. Abrir os dedos produziu a maior ativação no abdutor do dedo mínimo (35,2%), seguido do adutor do hálux oblíquo (31,5%) e do flexor do dedo mínimo (30,2%). A ativação do abdutor do hálux ao abrir os dedos (18,9%) foi menor que no exercício do pé curto (29,7%).',
-        'Isso quer dizer que abrir os dedos e o [exercício do pé curto](/pt/exercicios/pe-curto/) se complementam. O pé curto trabalha os músculos que correm ao longo do arco. Abrir os dedos trabalha os músculos das bordas. Juntos, eles cobrem uma parte maior do grupo de músculos intrínsecos do pé.',
+        'Isso quer dizer que abrir os dedos e o [exercício do pé curto](/pt/exercicios/pe-curto/) se complementam. O pé curto trabalha os músculos que ficam ao longo do arco. Abrir os dedos trabalha os músculos das bordas. Juntos, eles cobrem uma parte maior do grupo de músculos intrínsecos do pé.',
       ],
       cites: [CITE.gooding],
     },

@@ -16,7 +16,7 @@ export const HEEL_PAIN_AT_NIGHT_FR: Guide = {
   mainSource: CITE.guideline,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Douleur au talon la nuit\u00A0: causes et signaux d’alerte',
+  title: 'Douleur au talon la nuit\u00A0: causes, signaux d’alerte',
   description:
     'Douleur au talon la nuit ou au repos\u00A0: fracture de fatigue, compression nerveuse ou rhumatisme. Signaux d’alerte et quand consulter.',
   h1: 'Douleur au talon la nuit\u00A0: les causes et quand c’est un signal d’alerte',

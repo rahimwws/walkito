@@ -15,10 +15,10 @@ export const HIGH_ARCHES_DE: Guide = {
   mainSource: CITE.burnsCavus,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Hohlfuß-Übungen: was bei Schmerzen durch Hohlfuß hilft',
+  title: 'Hohlfuß-Übungen: was bei Hohlfuß-Schmerzen hilft',
   description:
     'Übungen bei Hohlfuß (Pes cavus) mit Fußschmerzen: Waden- und Faszien-Dehnen, Stabilität im Sprunggelenk, Belege zu Einlagen und neurologische Warnzeichen.',
-  h1: 'Übungen bei Hohlfuß: was hilft und was eine medizinische Fachperson braucht',
+  h1: 'Übungen bei Hohlfuß: was hilft und was ärztlich abgeklärt werden sollte',
   lede:
     'Ein Hohlfuß, medizinisch Pes cavus, ist steif und gibt nicht genug nach, um Stöße abzufangen. Die Kraft konzentriert sich an der Ferse und am Fußballen, und die Plantarfaszie ist oft verkürzt. Etwa 60\u00A0% der Menschen mit Hohlfuß berichten von Fußschmerzen. Die stärksten Belege gibt es für gedämpfte oder maßgefertigte Einlagen. Die Übungen setzen auf das Dehnen von Wade und Plantarfaszie, mehr Beweglichkeit im Sprunggelenk und den Aufbau von Stabilität.',
   intro: [

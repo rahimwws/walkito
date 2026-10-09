@@ -12,7 +12,7 @@ export const EX_FOOT_ROLL_FR: Guide = {
   page: 'exFootRoll',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Fasciite plantaire\u00A0: massage avec une balle ou bouteille',
+  title: 'Massage à la balle pour la fasciite plantaire',
   description:
     'Comment masser la plante du pied avec une balle ou une bouteille congelée contre la fasciite plantaire\u00A0: technique, durée, ce que cela fait ou non.',
   h1: 'Massage avec une balle pour la fasciite plantaire\u00A0: balle, bouteille et technique',
@@ -29,7 +29,7 @@ export const EX_FOOT_ROLL_FR: Guide = {
     {
       h2: 'Comment faire un massage du pied avec une balle\u00A0?',
       paragraphs: [
-        'Asseyez-vous sur une chaise, un pied posé sur une balle. Une balle de tennis, une balle de crosse ou une balle de massage conviennent. Placez la balle sous la voûte et faites-la rouler lentement de l’avant du pied vers le talon, puis de nouveau vers l’avant. Appuyez fermement, pas légèrement. La balle doit s’enfoncer assez dans le tissu pour que vous sentiez une pression profonde et soutenue.',
+        'Asseyez-vous sur une chaise, un pied posé sur une balle. Une balle de tennis, une balle de lacrosse ou une balle de massage conviennent. Placez la balle sous la voûte et faites-la rouler lentement de l’avant du pied vers le talon, puis de nouveau vers l’avant. Appuyez fermement, pas légèrement. La balle doit s’enfoncer assez dans le tissu pour que vous sentiez une pression profonde et soutenue.',
         'Faites rouler environ 2\u00A0minutes par pied. Gardez une pression régulière et évitez les points qui font mal de façon vive. Si un point vous fait grimacer, appuyez moins ou passez-le. Le but est un massage ferme, pas la douleur.',
       ],
       exercises: [
@@ -51,7 +51,7 @@ export const EX_FOOT_ROLL_FR: Guide = {
       ],
     },
     {
-      h2: 'Faire rouler une balle sous le pied aide-t-il la fasciite plantaire\u00A0?',
+      h2: 'Faire rouler une balle sous le pied aide-t-il en cas de fasciite plantaire\u00A0?',
       paragraphs: [
         'Les kinésithérapeutes et les podologues conseillent largement ce massage dans la prise en charge de la fasciite plantaire. L’idée est qu’il agit comme un automassage\u00A0: il applique une pression le long du fascia, peut augmenter localement la circulation sanguine et peut réduire la sensation de raideur. Les patients rapportent souvent un soulagement à court terme après le massage.',
         'Cela dit, aucun essai randomisé n’a testé ce massage comme intervention seule dans la fasciite plantaire. Il figure dans des protocoles avec les étirements et le renforcement, mais ce n’est jamais lui qui est mesuré. La recommandation de 2023 ne lui donne pas de note à part. Ce sont les étirements et le renforcement qui portent les preuves.',
@@ -70,9 +70,9 @@ export const EX_FOOT_ROLL_FR: Guide = {
     {
       h2: 'Quelle balle utiliser\u00A0?',
       paragraphs: [
-        'La balle de tennis est le point de départ le plus courant. Elle est assez souple pour s’enfoncer dans la voûte sans faire mal de façon vive. Une balle de crosse est plus ferme et appuie davantage. Une balle de golf est petite et très dure, et peut être trop forte pour un talon douloureux.',
-        'Commencez avec ce que vous avez. Si une balle de tennis vous paraît trop souple après quelques séances, essayez une balle de crosse. Si vous grimacez avec n’importe quelle balle, elle est trop dure ou vous appuyez trop fort. L’exercice doit ressembler à un massage profond, jamais à une friction sur une blessure.',
-        'Une bouteille d’eau congelée remplace la balle et ajoute du froid. Un rouleau en mousse sous le pied est encore plus doux. Un rouleau de massage pour le pied acheté en magasin de sport fait le même travail. Aucun n’a fait la preuve qu’il marche mieux que les autres.',
+        'La balle de tennis est le point de départ le plus courant. Elle est assez souple pour s’enfoncer dans la voûte sans faire mal de façon vive. Une balle de lacrosse est plus ferme et appuie davantage. Une balle de golf est petite et très dure, et peut être trop forte pour un talon douloureux.',
+        'Commencez avec ce que vous avez. Si une balle de tennis vous paraît trop souple après quelques séances, essayez une balle de lacrosse. Si vous grimacez avec n’importe quelle balle, elle est trop dure ou vous appuyez trop fort. L’exercice doit ressembler à un massage profond, jamais à une friction sur une blessure.',
+        'Une bouteille d’eau congelée remplace la balle et ajoute du froid. Un rouleau en mousse sous le pied est encore plus doux. Un rouleau de massage pour le pied acheté en magasin de sport fait le même travail. Aucun n’a fait la preuve qu’il soit plus efficace que les autres.',
       ],
     },
     {
@@ -94,7 +94,7 @@ export const EX_FOOT_ROLL_FR: Guide = {
   ],
   faq: [
     {
-      q: 'Faire rouler une bouteille d’eau congelée sous le pied aide-t-il la fasciite plantaire\u00A0?',
+      q: 'Faire rouler une bouteille d’eau congelée sous le pied aide-t-il en cas de fasciite plantaire\u00A0?',
       a: 'Une bouteille d’eau congelée associe le roulement (pression sur le fascia) et le froid (qui engourdit les terminaisons nerveuses). Les deux peuvent réduire l’inconfort à court terme. Aucun essai n’a comparé une bouteille congelée à une bouteille à température ambiante dans la fasciite plantaire, donc on ne sait pas si le froid ajoute un bénéfice de récupération au-delà du roulement. Vous pouvez l’essayer sans risque, et beaucoup de gens la trouvent apaisante.',
     },
     {
@@ -102,12 +102,12 @@ export const EX_FOOT_ROLL_FR: Guide = {
       a: 'Environ 2\u00A0minutes par pied est une dose de départ raisonnable. C’est ce qu’utilise Walkito. Vous pouvez le répéter plusieurs fois par jour si cela vous soulage. Il n’existe pas de dose issue de la recherche, car le massage n’a pas été testé comme intervention seule.',
     },
     {
-      q: 'Balle de tennis ou balle de crosse pour la fasciite plantaire\u00A0?',
-      a: 'Commencez par une balle de tennis. Elle est plus souple et risque moins de provoquer une douleur vive sur un talon douloureux. Une balle de crosse appuie plus fermement et peut être plus agréable une fois la douleur aiguë calmée. Aucune n’a fait la preuve de sa supériorité. Prenez celle qui donne une pression ferme sans vous faire grimacer.',
+      q: 'Balle de tennis ou balle de lacrosse pour la fasciite plantaire\u00A0?',
+      a: 'Commencez par une balle de tennis. Elle est plus souple et risque moins de provoquer une douleur vive sur un talon douloureux. Une balle de lacrosse appuie plus fermement et peut être plus agréable une fois la douleur aiguë calmée. Aucune n’a fait la preuve de sa supériorité. Prenez celle qui donne une pression ferme sans vous faire grimacer.',
     },
     {
       q: 'Masser son pied avec une balle peut-il aggraver une fasciite plantaire\u00A0?',
-      a: 'Oui, si vous appuyez trop fort. Frotter énergiquement un fascia douloureux peut augmenter l’inflammation au lieu de l’apaiser. La pression doit ressembler à un massage profond, ferme mais pas vive. Si la douleur atteint 6/10 ou si la plante est plus douloureuse le lendemain matin, appuyez moins.',
+      a: 'Oui, si vous appuyez trop fort. Frotter énergiquement un fascia douloureux peut augmenter l’inflammation au lieu de l’apaiser. La pression doit ressembler à un massage profond, ferme mais sans douleur vive. Si la douleur atteint 6/10 ou si la plante est plus douloureuse le lendemain matin, appuyez moins.',
     },
     {
       q: 'Le massage avec une balle remplace-t-il les étirements\u00A0?',

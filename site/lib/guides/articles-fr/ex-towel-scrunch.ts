@@ -12,7 +12,7 @@ export const EX_TOWEL_SCRUNCH_FR: Guide = {
   page: 'exTowelScrunch',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Ramasser une serviette avec les orteils\u00A0: comment faire',
+  title: 'Ramasser une serviette avec les orteils\u00A0: technique',
   description:
     'Comment ramasser une serviette avec les orteils pour renforcer le pied\u00A0: technique, séries, muscles travaillés, erreurs, comparaison avec le pied court.',
   h1: 'Ramasser la serviette\u00A0: comment renforcer le pied avec une serviette et les orteils',
@@ -99,7 +99,7 @@ export const EX_TOWEL_SCRUNCH_FR: Guide = {
       a: 'Walkito commence à 3\u00A0séries de 8\u00A0répétitions par pied, en tenant chaque prise 5\u00A0secondes. C’est assez pour fatiguer les petits muscles du pied sans les surcharger. Augmentez la difficulté en ajoutant un petit poids à l’autre bout de la serviette plutôt qu’en faisant plus de répétitions.',
     },
     {
-      q: 'Ramasser une serviette avec les orteils aide-t-il la fasciite plantaire\u00A0?',
+      q: 'Ramasser une serviette avec les orteils aide-t-il en cas de fasciite plantaire\u00A0?',
       cites: [CITE.guideline],
       a: 'Ramasser la serviette ne fait pas partie de la principale recommandation sur la fasciite plantaire, centrée sur les étirements du mollet et les montées sur pointes avec charge. L’exercice peut aider à développer la force générale des muscles du pied au sein d’un programme plus large. Voir [exercices pour la fasciite plantaire](/fr/exercices-fasciite-plantaire/) pour les exercices soutenus par la recommandation.',
     },
@@ -110,7 +110,7 @@ export const EX_TOWEL_SCRUNCH_FR: Guide = {
     },
     {
       q: 'Peut-on utiliser une chaussette à la place d’une serviette\u00A0?',
-      a: 'Une chaussette fine marche, mais une serviette à mains offre plus de résistance et une meilleure prise. La serviette doit rester à plat et être assez longue pour que vous puissiez la ramener sur plusieurs répétitions avant d’arriver au bout du tissu. Un torchon ou une petite serviette de bain est idéal.',
+      a: 'Une chaussette fine convient, mais une serviette à mains offre plus de résistance et une meilleure prise. La serviette doit rester à plat et être assez longue pour que vous puissiez la ramener sur plusieurs répétitions avant d’arriver au bout du tissu. Un torchon ou une petite serviette de bain est idéal.',
     },
   ],
   redFlags: {

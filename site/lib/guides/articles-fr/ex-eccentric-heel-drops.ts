@@ -31,7 +31,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_FR: Guide = {
       h2: 'Qu’est-ce qu’une descente excentrique du talon\u00A0?',
       paragraphs: [
         'Une contraction musculaire excentrique est une contraction où le muscle s’allonge sous charge. Dans une descente du talon, le mollet s’allonge pendant que vous descendez le talon sous la marche. Cette descente contrôlée est ce qui développe la capacité du tendon au fil des semaines. La phase de montée se fait sur les deux pieds, pour retirer l’effort concentrique du côté blessé.',
-        'La confusion la plus fréquente est entre une descente du talon et un étirement du mollet. Un étirement tient la position basse. Une descente du talon la traverse lentement, avec le muscle qui travaille tout du long. Rester en bas comme pour un étirement supprime la stimulation par la charge qui fait marcher l’exercice. Le bénéfice est dans la descente lente et contrôlée.',
+        'La confusion la plus fréquente est entre une descente du talon et un étirement du mollet. Un étirement tient la position basse. Une descente du talon la traverse lentement, avec le muscle qui travaille tout du long. Rester en bas comme pour un étirement supprime la stimulation par la charge qui rend l’exercice efficace. Le bénéfice est dans la descente lente et contrôlée.',
       ],
       cites: [CITE.alfredson],
     },
@@ -51,7 +51,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_FR: Guide = {
           dose: 'Alfredson\u00A0: 3 x 15, deux fois par jour, environ trois mois. Walkito commence à 3 x 10, chaque jambe',
           how: 'Tenez-vous au bord d’une marche. Montez sur les deux pieds, passez sur une jambe, redescendez lentement en trois secondes. Le talon descend sous la marche. Remontez sur les deux pieds. Genou tendu.',
           often: 'Deux fois par jour dans le protocole d’Alfredson. Walkito\u00A0: jours de renforcement.',
-          feel: 'Un travail dur dans le mollet pendant la descente, pas un étirement en bas',
+          feel: 'Un effort intense dans le mollet pendant la descente, pas un étirement en bas',
           stop: 'Une douleur au-dessus de 5/10 qui ne se calme pas avant le lendemain matin',
           media: 'heel_drop_straight',
           caption: 'Descente excentrique du talon\u00A0: montée sur les deux pieds, descente lente sur un',
@@ -129,12 +129,12 @@ export const EX_ECCENTRIC_HEEL_DROPS_FR: Guide = {
       a: 'Une certaine gêne est normale. Un essai autorisait une douleur jusqu’à environ 5 sur 10 pendant la mise en charge, à condition qu’elle se calme avant le lendemain matin et ne s’aggrave pas d’une semaine à l’autre (Silbernagel 2007). Une douleur qui reste élevée pendant la nuit ou qui augmente chaque semaine est le signal pour réduire la charge.',
     },
     {
-      q: 'Combien de temps faut-il pour que les descentes excentriques du talon marchent\u00A0?',
+      q: 'Combien de temps faut-il pour que les descentes excentriques du talon fassent effet\u00A0?',
       cites: [CITE.achillesGuideline, CITE.alfredson],
       a: 'La récupération d’une tendinopathie d’Achille se compte en mois. L’essai original a appliqué le protocole pendant environ trois mois. La recommandation de 2024 note qu’une amélioration de la fonction peut apparaître dès deux semaines, mais qu’une récupération plus complète prend bien plus longtemps. Aucun essai ne promet un délai fixe.',
     },
     {
-      q: 'Les descentes excentriques du talon aident-elles la fasciite plantaire\u00A0?',
+      q: 'Les descentes excentriques du talon aident-elles en cas de fasciite plantaire\u00A0?',
       cites: [CITE.rathleff],
       a: 'Les descentes excentriques ont été conçues pour le tendon d’Achille, pas pour le fascia plantaire. Pour la fasciite plantaire, l’exercice testé est la [montée sur pointes avec serviette](/fr/exercices/montee-sur-pointes-serviette/), qui ajoute une serviette sous les orteils pour solliciter le fascia. Les descentes du talon arrivent plus tard dans la progression du mollet de Walkito, après la montée avec serviette.',
     },
@@ -154,7 +154,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_FR: Guide = {
     h2: 'En faire un plan',
     text: 'Les descentes excentriques du talon sont une étape de la progression du mollet que Walkito intègre dans un plan hebdomadaire. La progression commence par les montées sur pointes assis et passe par les montées sur deux pieds, le maintien, la montée avec serviette, les descentes du talon et les sauts pogo. Chaque étape s’ouvre une fois que deux séances au niveau actuel vous ont paru faciles.',
     more: [
-      'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet et l’équilibre. Si la douleur se situe juste au point d’attache sur l’os du talon, faites-la examiner par un professionnel de santé avant de la charger fortement. Walkito est un programme d’exercices. Il ne pose pas de diagnostic.',
+      'Vous choisissez 3, 5 ou 7\u00A0jours par semaine et des séances de 3, 5 ou 10\u00A0minutes. Tous les 14\u00A0jours, un court test vérifie l’endurance du mollet et l’équilibre. Si la douleur se situe juste au point d’attache sur l’os du talon, faites examiner la zone par un professionnel de santé avant de la solliciter fortement. Walkito est un programme d’exercices. Il ne pose pas de diagnostic.',
     ],
     cta: 'Commencez avec 3\u00A0minutes par jour.',
   },

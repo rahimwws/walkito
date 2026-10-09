@@ -12,15 +12,15 @@ export const EX_SINGLE_LEG_BALANCE_PT: Guide = {
   page: 'exSingleLegBalance',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Equilíbrio em uma perna: como fazer e por que importa',
+  title: 'Equilíbrio em uma perna: como fazer e para que serve',
   description:
     'Como fazer o equilíbrio em uma perna: técnica, tempo normal por idade, a progressão de olhos fechados, o que o teste mostra e os erros comuns.',
   h1: 'Equilíbrio em uma perna: como fazer, tempos normais e a progressão de olhos fechados',
   lede:
-    'Ficar em pé em uma perna só é um dos testes mais simples de controle do tornozelo e do pé. Também é um exercício. A cada segundo que você segura a posição, os músculos pequenos do pé e do tornozelo trabalham para manter você de pé. Um estudo de 2007 com 549\u00A0adultos saudáveis encontrou que a capacidade de ficar em uma perna, com os olhos abertos e fechados, cai de forma constante com a idade, e uma metanálise de 2018 encontrou que o treino de equilíbrio reduziu em 46\u00A0por cento o risco de entorse de tornozelo em atletas.',
+    'Ficar em pé em uma perna só é um dos testes mais simples de controle do tornozelo e do pé. Também é um exercício. A cada segundo que você segura a posição, os músculos pequenos do pé e do tornozelo trabalham para manter você de pé. Um estudo de 2007 com 549\u00A0adultos saudáveis mostrou que a capacidade de ficar em uma perna, com os olhos abertos e fechados, cai de forma constante com a idade, e uma metanálise de 2018 mostrou que o treino de equilíbrio reduziu em 46\u00A0por cento o risco de entorse de tornozelo em atletas.',
   takeaways: [
     'Adultos saudáveis de 18 a 39\u00A0anos ficaram em média 43,3\u00A0segundos em uma perna com os olhos abertos e 9,4\u00A0segundos com os olhos fechados. Entre 60 e 69\u00A0anos, a média de olhos abertos foi de 26,9\u00A0segundos, e a de olhos fechados tinha caído para 2,8\u00A0segundos (Springer e colegas, 2007).',
-    'Uma metanálise com 3.577\u00A0atletas encontrou que o treino de equilíbrio reduziu o risco de entorse de tornozelo em 46\u00A0por cento comparado a nenhuma intervenção (Bellows e Wong, 2018).',
+    'Uma metanálise com 3.577\u00A0atletas mostrou que o treino de equilíbrio reduziu o risco de entorse de tornozelo em 46\u00A0por cento comparado a nenhuma intervenção (Bellows e Wong, 2018).',
     'A meta de equilíbrio do Walkito é 30\u00A0segundos em uma perna. O teste acontece a cada 14\u00A0dias enquanto a meta de equilíbrio está ativa.',
     'Fechar os olhos tira a visão como fonte de equilíbrio e obriga o pé e o tornozelo a fazer mais do trabalho. O app inclui ficar em pé de olhos fechados como o passo seguinte depois do equilíbrio de olhos abertos.',
   ],
@@ -84,11 +84,11 @@ export const EX_SINGLE_LEG_BALANCE_PT: Guide = {
     },
     {
       h2: 'Por que o equilíbrio importa para a dor no pé?',
-      keyFact: 'Nas entorses de tornozelo, uma análise conjunta de 8\u00A0estudos e 3.577\u00A0atletas encontrou que o treino de equilíbrio reduziu o risco de entorse em 46\u00A0por cento comparado a nenhuma intervenção (Bellows e Wong, 2018).',
+      keyFact: 'Nas entorses de tornozelo, uma análise conjunta de 8\u00A0estudos e 3.577\u00A0atletas mostrou que o treino de equilíbrio reduziu o risco de entorse em 46\u00A0por cento comparado a nenhuma intervenção (Bellows e Wong, 2018).',
       paragraphs: [
         'O equilíbrio não é separado da força do pé. Quando você fica em uma perna, os músculos intrínsecos do pé (os músculos pequenos dentro do pé que sustentam o arco), os músculos da panturrilha, o tibial anterior e os estabilizadores do quadril trabalham juntos. Um déficit em qualquer ponto dessa cadeia faz o pé compensar.',
-        'Na fascite plantar e no pé chato, o treino de equilíbrio aparece nos programas de exercício junto com alongamento e fortalecimento, porque treina a cadeia inteira de uma vez. Um ensaio de 2023 com 52\u00A0pessoas com pé chato flexível encontrou que um programa que juntava exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril, alongamento e equilíbrio mudou o formato do arco mais que um grupo controle. O equilíbrio não foi isolado nesse ensaio, mas fazia parte do programa que funcionou.',
-        'Especificamente nas entorses de tornozelo, uma metanálise de 2018 com 8\u00A0estudos e 3.577\u00A0atletas encontrou que o treino de equilíbrio reduziu o risco de entorse de tornozelo em 46\u00A0por cento comparado a nenhuma intervenção. Esse é o achado isolado mais forte por trás de incluir equilíbrio em um programa para os pés.',
+        'Na fascite plantar e no pé chato, o treino de equilíbrio aparece nos programas de exercício junto com alongamento e fortalecimento, porque treina a cadeia inteira de uma vez. Um ensaio de 2023 com 52\u00A0pessoas com pé chato flexível mostrou que um programa que juntava exercícios de pé curto, trabalho de tornozelo, fortalecimento de quadril, alongamento e equilíbrio mudou o formato do arco mais que um grupo controle. O equilíbrio não foi isolado nesse ensaio, mas fazia parte do programa que funcionou.',
+        'Especificamente nas entorses de tornozelo, uma metanálise de 2018 com 8\u00A0estudos e 3.577\u00A0atletas mostrou que o treino de equilíbrio reduziu o risco de entorse de tornozelo em 46\u00A0por cento comparado a nenhuma intervenção. Esse é o achado isolado mais forte por trás de incluir equilíbrio em um programa para os pés.',
       ],
       cites: [CITE.bellows, CITE.brijwasi],
     },
@@ -115,12 +115,12 @@ export const EX_SINGLE_LEG_BALANCE_PT: Guide = {
     {
       q: 'Quanto tempo uma pessoa deve conseguir ficar em uma perna só?',
       cites: [CITE.springer],
-      a: 'Um estudo normativo de 2007 com 549\u00A0adultos saudáveis encontrou que pessoas de 18 a 39\u00A0anos ficaram em média 43,3\u00A0segundos com os olhos abertos e 9,4\u00A0segundos com os olhos fechados. Entre 60 e 69\u00A0anos, foram 26,9\u00A0segundos de olhos abertos e 2,8\u00A0segundos de olhos fechados (Springer 2007). A meta de equilíbrio do Walkito é 30\u00A0segundos de cada lado.',
+      a: 'Um estudo normativo de 2007 com 549\u00A0adultos saudáveis mostrou que pessoas de 18 a 39\u00A0anos ficaram em média 43,3\u00A0segundos com os olhos abertos e 9,4\u00A0segundos com os olhos fechados. Entre 60 e 69\u00A0anos, foram 26,9\u00A0segundos de olhos abertos e 2,8\u00A0segundos de olhos fechados (Springer 2007). A meta de equilíbrio do Walkito é 30\u00A0segundos de cada lado.',
     },
     {
       q: 'Equilíbrio em uma perna ajuda a evitar entorse de tornozelo?',
       cites: [CITE.bellows],
-      a: 'Uma metanálise de 2018 com 8\u00A0estudos e 3.577\u00A0atletas encontrou que o treino de equilíbrio reduziu o risco de entorse de tornozelo em 46\u00A0por cento comparado a nenhuma intervenção (Bellows e Wong, 2018). A maioria dos programas estudados incluía exercícios de equilíbrio, como ficar em uma perna, junto com outros treinos.',
+      a: 'Uma metanálise de 2018 com 8\u00A0estudos e 3.577\u00A0atletas mostrou que o treino de equilíbrio reduziu o risco de entorse de tornozelo em 46\u00A0por cento comparado a nenhuma intervenção (Bellows e Wong, 2018). A maioria dos programas estudados incluía exercícios de equilíbrio, como ficar em uma perna, junto com outros treinos.',
     },
     {
       q: 'Por que é mais difícil ficar em uma perna de olhos fechados?',

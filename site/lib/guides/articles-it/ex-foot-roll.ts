@@ -16,12 +16,12 @@ export const EX_FOOT_ROLL_IT: Guide = {
   page: 'exFootRoll',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Pallina sotto il piede per la fascite plantare: come fare',
+  title: 'Massaggio con la pallina per la fascite plantare',
   description:
     'Come fare il massaggio con la pallina o con la bottiglia ghiacciata per la fascite plantare: tecnica, per quanto tempo, cosa fa e cosa non fa.',
   h1: 'Massaggio con la pallina per la fascite plantare: pallina, bottiglia e tecnica',
   lede:
-    'Far rotolare la pianta del piede su una pallina o una bottiglia è una delle cose più comuni che si fanno da soli per la fascite plantare. Fa stare bene, e i professionisti lo consigliano per calmare il tessuto tra una sessione e l’altra. Però nessuno studio randomizzato ha testato il massaggio con la pallina da solo per la fascite plantare. Questa pagina spiega cosa fa, cosa non fa e dove si colloca onestamente la bottiglia ghiacciata.',
+    'Far rotolare la pianta del piede su una pallina o una bottiglia è una delle cose più comuni che si fanno da soli per la fascite plantare. È piacevole, e i professionisti lo consigliano per calmare il tessuto tra una sessione e l’altra. Però nessuno studio randomizzato ha testato il massaggio con la pallina da solo per la fascite plantare. Questa pagina spiega cosa fa, cosa non fa e dove si colloca onestamente la bottiglia ghiacciata.',
   takeaways: [
     'Nessuno studio randomizzato ha testato il massaggio con la pallina come intervento a sé per la fascite plantare. È molto consigliato come gesto di sollievo e recupero, non come intervento principale.',
     'La linea guida del 2023 sul dolore al tallone indica allungamenti (grado A) e allenamento di forza (grado B) come pilastri dell’esercizio. Il massaggio con la pallina non ha un grado a parte.',
@@ -66,7 +66,7 @@ export const EX_FOOT_ROLL_IT: Guide = {
     {
       h2: 'Conviene usare una bottiglia d’acqua ghiacciata?',
       paragraphs: [
-        'La bottiglia d’acqua ghiacciata è uno dei rimedi casalinghi più diffusi per la fascite plantare. La forma ti permette di far rotolare tutta la pianta del piede, e intanto il freddo intorpidisce la zona. I professionisti la consigliano spesso, e in effetti fa stare bene.',
+        'La bottiglia d’acqua ghiacciata è uno dei rimedi casalinghi più diffusi per la fascite plantare. La forma ti permette di far rotolare tutta la pianta del piede, e intanto il freddo intorpidisce la zona. I professionisti la consigliano spesso, e in effetti dà sollievo.',
         'Ecco cosa dicono davvero le prove. Il freddo (ghiaccio, bottiglie ghiacciate) è uno strumento generico contro il dolore. Riduce il fastidio intorpidendo le terminazioni nervose e può ridurre per un po’ il gonfiore. Ma nessuno studio randomizzato ha confrontato una bottiglia ghiacciata con una a temperatura ambiente per la fascite plantare. Il beneficio che senti è probabilmente un mix del massaggio (pressione sulla fascia) e dell’intorpidimento (freddo sulle terminazioni nervose). Se il freddo acceleri il recupero più del solo massaggio è una domanda ancora aperta.',
         'Se la bottiglia ghiacciata ti dà sollievo, usala. Solo non contare sul freddo come sostituto degli allungamenti e del lavoro di forza. Ed evita di tenere il ghiaccio per più di 15-20\u00A0minuti di fila. Il freddo prolungato può irritare la pelle.',
       ],
@@ -76,7 +76,7 @@ export const EX_FOOT_ROLL_IT: Guide = {
       paragraphs: [
         'La pallina da tennis è il punto di partenza più comune. È abbastanza morbida da premere nell’arco senza dare fitte. La pallina da lacrosse è più dura e dà più pressione. La pallina da golf è piccola e molto dura, e può essere troppo per un tallone dolorante.',
         'Parti da quello che hai. Se dopo qualche sessione la pallina da tennis ti sembra troppo morbida, prova quella da lacrosse. Se fai una smorfia con qualsiasi pallina, è troppo dura o stai premendo troppo. L’esercizio deve sembrare un massaggio profondo, mai come se stessi schiacciando una lesione.',
-        'Una bottiglia d’acqua ghiacciata funziona al posto della pallina e aggiunge il freddo. Un rullo di gommapiuma sotto il piede è ancora più delicato. Un rullo per piedi specifico da negozio sportivo fa lo stesso lavoro. Nessuno di questi è dimostrato funzionare meglio degli altri.',
+        'Una bottiglia d’acqua ghiacciata funziona al posto della pallina e aggiunge il freddo. Un rullo di gommapiuma sotto il piede è ancora più delicato. Un rullo per piedi specifico da negozio sportivo fa lo stesso lavoro. Per nessuno di questi è dimostrato che funzioni meglio degli altri.',
       ],
     },
     {
@@ -84,7 +84,7 @@ export const EX_FOOT_ROLL_IT: Guide = {
       paragraphs: [
         'Premere troppo. Più forte non vuol dire meglio. Se spingi finché il dolore arriva a 6/10 o fai smorfie, rischi di irritare la fascia invece di calmarla. Torna a una pressione decisa e costante.',
         'Andare troppo veloce. Un avanti e indietro rapido salta il tessuto. Fai rotolare piano, circa un passaggio completo al secondo, così ogni punto riceve una pressione continua.',
-        'Usarlo come unico esercizio. Il massaggio con la pallina dà l’idea di fare qualcosa, ed è facile da fare alla scrivania. Ma non rinforza il polpaccio e non allunga la fascia come fanno gli esercizi con un grado della linea guida. Abbinalo all’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) e ai [sollevamenti sui talloni](/it/sollevamenti-tallone-fascite-plantare/) per avere il quadro completo.',
+        'Usarlo come unico esercizio. Il massaggio con la pallina dà l’idea di fare qualcosa, ed è facile da fare alla scrivania. Ma non rinforza il polpaccio e non allunga la fascia come fanno gli esercizi con un grado della linea guida. Abbinalo all’[allungamento della fascia plantare](/it/esercizi/stretching-fascia-plantare/) e ai [sollevamenti sulle punte](/it/sollevamenti-tallone-fascite-plantare/) per avere il quadro completo.',
       ],
       cites: [CITE.guideline],
     },
@@ -107,7 +107,7 @@ export const EX_FOOT_ROLL_IT: Guide = {
     },
     {
       q: 'Meglio la pallina da tennis o da lacrosse per la fascite plantare?',
-      a: 'Parti dalla pallina da tennis. È più morbida e dà meno facilmente fitte su un tallone dolorante. La pallina da lacrosse dà una pressione più decisa e può andare meglio quando il dolore acuto si è calmato. Nessuna delle due è dimostrata superiore. Usa quella che ti dà una pressione decisa senza farti fare smorfie.',
+      a: 'Parti dalla pallina da tennis. È più morbida e dà meno facilmente fitte su un tallone dolorante. La pallina da lacrosse dà una pressione più decisa e può andare meglio quando il dolore acuto si è calmato. Non è dimostrato che una delle due sia superiore. Usa quella che ti dà una pressione decisa senza farti fare smorfie.',
     },
     {
       q: 'La pallina sotto il piede può peggiorare la fascite plantare?',

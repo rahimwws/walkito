@@ -14,7 +14,7 @@ export const NURSES_FR: Guide = {
   mainSource: CITE.reedNurse,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Mal aux pieds des infirmières\u00A0: postes de 12\u00A0h, exercices',
+  title: 'Mal aux pieds des infirmières\u00A0: postes de 12\u00A0h',
   description:
     'Pourquoi les infirmières ont mal aux pieds sur des postes de 12\u00A0heures\u00A0: chaussures, bas de contention, exercices, et une routine qui suit les horaires.',
   h1: 'Mal aux pieds chez les infirmières\u00A0: ce qui aide sur des postes de 12\u00A0heures',
@@ -28,14 +28,14 @@ export const NURSES_FR: Guide = {
     'Dans une enquête sur 312\u00A0infirmières d’un hôpital pédiatrique en Australie, 55,3\u00A0% signalaient des problèmes de pied ou de cheville sur les 12\u00A0derniers mois, et le taux était plus élevé chez celles qui travaillaient en postes de 12\u00A0heures en soins intensifs (Reed et coll., 2014).',
     'Dans une étude avec podomètre, les infirmières marchaient en moyenne 9\u00A0360\u00A0pas par poste, soit environ 5,8\u00A0km sur un poste de 9,4\u00A0heures, une charge bien au-dessus de la moyenne des adultes (Chang et Cho, 2022).',
     'Dans une étude transversale sur 636\u00A0infirmières hospitalières au Japon, 51\u00A0% signalaient une douleur ou une gêne au pied le mois précédent, et 17\u00A0% avaient une douleur qui gênait leurs activités quotidiennes (Tojo et coll., 2018).',
-    'Une cheville moins souple, c’est-à-dire un mollet raide, était le plus fort prédicteur de fasciite plantaire dans une étude cas-témoins sur 50\u00A0cas et 100\u00A0témoins, avec un risque multiplié par 23,3. Rester debout la majeure partie de la journée de travail le multipliait par 3,6 (Riddle et coll., 2003).',
+    'Une cheville moins souple, c’est-à-dire un mollet raide, était le plus fort prédicteur de fasciite plantaire dans une étude cas-témoins sur 50\u00A0cas et 100\u00A0témoins, avec une cote (odds) multipliée par 23,3. Rester debout la majeure partie de la journée de travail la multipliait par 3,6 (Riddle et coll., 2003).',
     'Dans un essai sur 40\u00A0agents de sécurité travaillant debout 12\u00A0heures par jour, les bas de contention de 15-20\u00A0mmHg comme ceux de 20-30\u00A0mmHg ont évité la hausse de la gêne et du gonflement observée avec des chaussettes classiques (Garcia et coll., 2023).',
   ],
   sections: [
     {
       h2: 'La douleur aux pieds est-elle fréquente chez les infirmières\u00A0?',
       paragraphs: [
-        'La douleur au pied et à la cheville fait partie des trois plaintes musculo-squelettiques les plus fréquentes chez les infirmières, avec le bas du dos et le cou. Dans une enquête sur 312\u00A0infirmières d’un hôpital pédiatrique, 55,3\u00A0% signalaient des problèmes musculo-squelettiques du pied ou de la cheville sur les 12\u00A0derniers mois, et 43,8\u00A0% avaient des symptômes sur les sept derniers jours seulement. Une infirmière sur six disait que la douleur limitait son activité physique. Travailler en postes de 12\u00A0heures en soins intensifs était le seul facteur lié au travail qui augmentait de façon indépendante le risque de problèmes de pied invalidants.',
+        'La douleur au pied et à la cheville fait partie des trois plaintes musculo-squelettiques les plus fréquentes chez les infirmières, avec le bas du dos et le cou. Dans une enquête sur 312\u00A0infirmières d’un hôpital pédiatrique, 55,3\u00A0% signalaient des problèmes musculo-squelettiques du pied ou de la cheville sur les 12\u00A0derniers mois, et 43,8\u00A0% avaient des symptômes sur les sept derniers jours seulement. Une infirmière sur six disait que la douleur limitait son activité physique. Travailler en postes de 12\u00A0heures en soins intensifs était le seul facteur lié au travail qui augmentait de façon indépendante la probabilité de problèmes de pied invalidants.',
         'Une autre étude sur 636\u00A0infirmières hospitalières au Japon a montré que 51\u00A0% signalaient une douleur ou une gêne au pied le mois précédent, évaluée avec un questionnaire validé. La douleur qui empêchait de travailler normalement touchait 17\u00A0%. Une étude avec podomètre sur des infirmières coréennes a trouvé en moyenne 5,8\u00A0km parcourus par poste, une charge physique bien au-dessus de celle de la population générale.',
         'Une étude transversale sur 411\u00A0infirmières finlandaises a montré que la peau sèche, la douleur au pied et les callosités étaient les plaintes les plus fréquentes, et que les problèmes de pied étaient associés à une baisse de la capacité de travail. Les auteurs demandaient que la prévention des problèmes de pied chez les infirmières devienne une priorité.',
       ],
@@ -46,7 +46,7 @@ export const NURSES_FR: Guide = {
       paragraphs: [
         'Trois choses se cumulent pendant un poste\u00A0: la station debout prolongée, les longues distances à pied et les sols durs. Rester debout immobile charge le fascia plantaire, les muscles du mollet et le coussinet du talon sans l’effet de pompe que donne la marche. La marche aide le sang à remonter des jambes, mais les infirmières alternent sans prévenir entre rester immobiles au chevet d’un patient et parcourir de longs couloirs\u00A0: la pompe du mollet ne trouve jamais un rythme régulier.',
         'Une revue de 2015 de la littérature en santé au travail a associé la station debout prolongée au travail à une gêne musculo-squelettique, à la fatigue et à des douleurs dans les jambes dans de nombreux métiers debout, en citant les infirmières parmi les groupes les plus exposés. La revue notait que la charge cardiovasculaire et le gonflement des jambes augmentent avec la durée de la station debout.',
-        'Au niveau des tissus, un mollet raide est un élément clé. Une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins appariés a montré qu’une cheville moins souple, c’est-à-dire une cheville qui ne peut pas se plier vers le haut autant qu’elle le devrait parce que le mollet est raide, était le plus fort facteur de risque indépendant de fasciite plantaire, avec un risque multiplié par 23,3. Rester debout la majeure partie de la journée de travail le multipliait par 3,6. Les infirmières cumulent les deux facteurs de risque.',
+        'Au niveau des tissus, un mollet raide est un élément clé. Une étude cas-témoins sur 50\u00A0personnes atteintes de fasciite plantaire et 100\u00A0témoins appariés a montré qu’une cheville moins souple, c’est-à-dire une cheville qui ne peut pas se plier vers le haut autant qu’elle le devrait parce que le mollet est raide, était le plus fort facteur de risque indépendant de fasciite plantaire, avec une cote (odds) multipliée par 23,3. Rester debout la majeure partie de la journée de travail la multipliait par 3,6. Les infirmières cumulent les deux facteurs de risque.',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -201,7 +201,7 @@ export const NURSES_FR: Guide = {
     },
     {
       q: 'Les postes de 12\u00A0heures sont-ils pires pour les pieds que les postes de 8\u00A0heures\u00A0?',
-      a: 'Dans une enquête sur des infirmières d’un hôpital pédiatrique, travailler en postes de 12\u00A0heures en soins intensifs était le seul facteur lié au travail qui augmentait de façon indépendante le risque de problèmes invalidants du pied et de la cheville. La charge totale sur le pied augmente avec la durée du poste, et le temps de récupération entre deux postes est plus court quand les postes sont plus longs. Cela dit, le type de travail et le sol comptent aussi, pas seulement les heures.',
+      a: 'Dans une enquête sur des infirmières d’un hôpital pédiatrique, travailler en postes de 12\u00A0heures en soins intensifs était le seul facteur lié au travail qui augmentait de façon indépendante la probabilité de problèmes invalidants du pied et de la cheville. La charge totale sur le pied augmente avec la durée du poste, et le temps de récupération entre deux postes est plus court quand les postes sont plus longs. Cela dit, le type de travail et le sol comptent aussi, pas seulement les heures.',
       cites: [CITE.reedNurse],
     },
     {
@@ -220,7 +220,7 @@ export const NURSES_FR: Guide = {
     },
     {
       q: 'Le métier d’infirmière peut-il donner une fasciite plantaire\u00A0?',
-      a: 'Rester debout la majeure partie de la journée de travail multipliait par 3,6 le risque de fasciite plantaire dans une étude cas-témoins appariée sur 50\u00A0cas et 100\u00A0témoins. Une cheville moins souple le multipliait par 23,3. Les infirmières cumulent les deux facteurs de risque, la station debout prolongée et peu de pauses pour s’étirer, et c’est pourquoi les exercices de cette page recoupent largement ceux du guide sur la fasciite plantaire.',
+      a: 'Rester debout la majeure partie de la journée de travail multipliait par 3,6 la cote (odds) de fasciite plantaire dans une étude cas-témoins appariée sur 50\u00A0cas et 100\u00A0témoins. Une cheville moins souple la multipliait par 23,3. Les infirmières cumulent les deux facteurs de risque, la station debout prolongée et peu de pauses pour s’étirer, et c’est pourquoi les exercices de cette page recoupent largement ceux du guide sur la fasciite plantaire.',
       cites: [CITE.riddle],
     },
     {

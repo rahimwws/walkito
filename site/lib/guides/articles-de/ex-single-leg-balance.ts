@@ -94,7 +94,7 @@ export const EX_SINGLE_LEG_BALANCE_DE: Guide = {
     {
       h2: 'Was sind die häufigsten Fehler beim Einbeinstand?',
       paragraphs: [
-        'Auf den Boden schauen. Deine Augen sollten auf einem festen Punkt auf Augenhöhe liegen. Wenn du nach unten schaust, verlagert sich dein Gewicht nach vorn, und die Übung wird leichter, was den Zweck verfehlt.',
+        'Auf den Boden schauen. Dein Blick sollte auf einem festen Punkt auf Augenhöhe ruhen. Wenn du nach unten schaust, verlagert sich dein Gewicht nach vorn, und die Übung wird leichter, was den Zweck verfehlt.',
         'Das Standknie durchdrücken. Eine leichte Beugung hält die Muskeln aktiv. Ein durchgedrücktes Knie schiebt die Last aufs Gelenk statt auf die Muskeln drumherum.',
         'Versuchen, nicht zu wackeln. Das Wackeln ist die Übung. Die kleinen Korrekturen, die dein Fuß macht, um dich aufrecht zu halten, bauen Propriozeption und Kontrolle im Sprunggelenk auf. Wenn du dich mit eingekrallten Zehen am Boden festhältst oder dich anspannst, um jede Bewegung zu unterdrücken, sinkt der Trainingseffekt.',
         'Zu weit von der Wand weg stehen. Du musst nah genug dran sein, um dich abzufangen, wenn du das Gleichgewicht verlierst, vor allem bei der Variante mit geschlossenen Augen. Sicherheit geht vor.',

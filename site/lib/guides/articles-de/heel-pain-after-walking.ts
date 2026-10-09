@@ -15,9 +15,9 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
   mainSource: CITE.guideline,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Fersenschmerzen nach dem Gehen: Ursachen und was hilft',
+  title: 'Fersenschmerzen nach dem Gehen: Gründe und Hilfe',
   description:
-    'Fersenschmerzen nach dem Gehen oder Stehen: warum die Ferse nach einem langen Spaziergang wehtut, welche Ursachen es gibt und welche Übungen helfen.',
+    'Fersenschmerzen nach dem Gehen oder Stehen: warum die Ferse nach einem langen Spaziergang wehtut, Ursachen, Warnzeichen und die hilfreichsten Übungen.',
   h1: 'Fersenschmerzen nach dem Gehen: warum deine Ferse wehtut und was du tun kannst',
   lede:
     'Beim Gehen war mit deiner Ferse alles in Ordnung, aber jetzt, wo du stehen geblieben bist, schmerzt sie. Oder der Schmerz kam mitten auf einem langen Spaziergang und wurde mit jedem Schritt schlimmer. Beide Muster deuten auf dasselbe hin: Das Gewebe unter deiner Ferse wurde an diesem Tag stärker belastet, als es verkraften konnte. Die häufigste Ursache ist Plantarfasziitis, und am nützlichsten sind Dehnen und schrittweises Wadentraining.',
@@ -48,7 +48,7 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
         'Plantarfasziitis ist die häufigste Ursache, aber nicht die einzige. Wo der Schmerz sitzt und wann er auftritt, hilft, die Ursachen auseinanderzuhalten.',
         '**Dünner werdendes Fersenpolster.** Das Fettpolster unter deinem Fersenbein dämpft jeden Schritt. Wenn es dünner wird oder sich verschiebt, bekommt der Knochen mehr Stöße direkt ab. Ein Scoping Review von 2022 stellte fest, dass Schmerz durch das Fersenpolster eher ein tiefer, dumpfer Schmerz mitten in der Ferse ist, schlimmer auf hartem Boden und barfuß (Chang und Kollegen, 2022). Der Schmerz bei Plantarfasziitis sitzt meist vorn an der Innenseite der Ferse, der Schmerz durch das Fersenpolster genau in der Mitte darunter. Wenn Barfußgehen auf Fliesen oder Beton deutlich schlimmer ist als Gehen in gedämpften Schuhen, kommt ein dünner werdendes Fersenpolster infrage. Mehr dazu unter [Fersenfettpolster-Syndrom](/de/fersenfettpolster-syndrom/).',
         '**Achillessehnenentzündung.** Schmerz hinten an der Ferse oder in der Sehne darüber, nicht unter dem Fuß. Die Achillessehne kann nach einem langen Spaziergang wehtun, vor allem bergauf. Wenn dein Schmerz hinten an der Ferse sitzt und nicht darunter, lies [Übungen bei Achillessehnenentzündung](/de/achillessehnenentzuendung-uebungen/).',
-        '**Ermüdungsbruch des Fersenbeins.** Schmerz, der allmählich kommt, nach einem Sprung bei Gehstrecke oder Intensität. Anders als bei der Plantarfasziitis nimmt der Schmerz bei einem Ermüdungsbruch eher bei Belastung zu und lässt in Ruhe kaum nach. Das Zusammendrücken der Fersenseiten kann den Schmerz auslösen. Wenn das zu deinem Muster passt, geh zu einer medizinischen Fachperson, bevor du den Fuß trainierst.',
+        '**Ermüdungsbruch des Fersenbeins.** Schmerz, der allmählich kommt, nach einer plötzlichen Steigerung von Gehstrecke oder Intensität. Anders als bei der Plantarfasziitis nimmt der Schmerz bei einem Ermüdungsbruch eher bei Belastung zu und lässt in Ruhe kaum nach. Das Zusammendrücken der Fersenseiten kann den Schmerz auslösen. Wenn das zu deinem Muster passt, geh zu einer medizinischen Fachperson, bevor du den Fuß trainierst.',
         '**Ausstrahlender Schmerz aus dem unteren Rücken oder ein eingeklemmter Nerv.** Fersenschmerzen mit Taubheit, Kribbeln oder Brennen können auf ein Nervenproblem hindeuten, nicht auf ein Belastungsproblem des Gewebes. Das ist ein Grund, zuerst zu einer medizinischen Fachperson zu gehen.',
       ],
       cites: [CITE.fatPadReview, CITE.achillesGuideline, CITE.patelStressFracture],
@@ -175,7 +175,7 @@ export const HEEL_PAIN_AFTER_WALKING_DE: Guide = {
     {
       q: 'Sind Fersenschmerzen nach dem Gehen eine Plantarfasziitis?',
       cites: [CITE.guideline, CITE.fatPadReview],
-      a: 'Sie sind die häufigste Ursache, aber nicht die einzige. Der Schmerz bei Plantarfasziitis sitzt vorn an der Innenseite der Ferse und ist auch bei den ersten Schritten nach einer Ruhephase schlimmer. Ein dünner werdendes Fersenpolster macht einen tiefen Schmerz in der Mitte, schlimmer auf hartem Boden. Eine Achillessehnenentzündung tut hinten an der Ferse weh. Ein Ermüdungsbruch nimmt bei Belastung zu und kann auch in Ruhe wehtun. Wenn du unsicher bist, geh zu einer medizinischen Fachperson.',
+      a: 'Plantarfasziitis ist die häufigste Ursache, aber nicht die einzige. Der Schmerz bei Plantarfasziitis sitzt vorn an der Innenseite der Ferse und ist auch bei den ersten Schritten nach einer Ruhephase schlimmer. Ein dünner werdendes Fersenpolster macht einen tiefen Schmerz in der Mitte, schlimmer auf hartem Boden. Eine Achillessehnenentzündung tut hinten an der Ferse weh. Ein Ermüdungsbruch nimmt bei Belastung zu und kann auch in Ruhe wehtun. Wenn du unsicher bist, geh zu einer medizinischen Fachperson.',
     },
     {
       q: 'Was ist die beste Übung bei Fersenschmerzen nach dem Gehen?',

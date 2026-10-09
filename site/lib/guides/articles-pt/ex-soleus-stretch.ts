@@ -13,7 +13,7 @@ export const EX_SOLEUS_STRETCH_PT: Guide = {
   page: 'exSoleusStretch',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Alongamento do sóleo (joelho dobrado): como fazer certo',
+  title: 'Alongamento do sóleo (joelho dobrado): como fazer',
   description:
     'Como fazer o alongamento do sóleo (joelho dobrado) para fascite plantar e panturrilha tensa: técnica, por que é um alongamento à parte, séries e tempo.',
   h1: 'Alongamento do sóleo (joelho dobrado): técnica, séries e por que importa',
@@ -66,7 +66,7 @@ export const EX_SOLEUS_STRETCH_PT: Guide = {
       h2: 'Como saber se o alongamento está no lugar certo?',
       paragraphs: [
         'Se você sente o alongamento em cima na panturrilha, atrás do joelho, o joelho está esticado demais e o gastrocnêmio está assumindo. Dobre mais o joelho. O alongamento deve descer para o terço de baixo da panturrilha ou logo acima do calcanhar.',
-        'Se você não sente nada, tente aproximar o pé de trás da parede e dobrar mais o joelho. Algumas pessoas precisam de uma passada menor para colocar carga no sóleo.',
+        'Se você não sente nada, tente aproximar o pé de trás da parede e dobrar mais o joelho. Algumas pessoas precisam de uma distância menor entre os pés para colocar carga no sóleo.',
         'Se o alongamento fica no próprio tendão de Aquiles e parece uma dor aguda em vez de um puxão, alivie. Um alongamento deve ser firme e constante, não dolorido. Dor no tendão durante o alongamento é diferente de panturrilha tensa e pode indicar [tendinite de Aquiles](/pt/tendinite-de-aquiles-exercicios/).',
       ],
     },
@@ -95,7 +95,7 @@ export const EX_SOLEUS_STRETCH_PT: Guide = {
     },
     {
       q: 'Alongamento do sóleo é o mesmo que alongar a panturrilha com o joelho dobrado?',
-      a: 'Sim. «Alongamento do sóleo» e «alongamento de panturrilha com o joelho dobrado» são dois nomes para o mesmo exercício. Dobrar o joelho tira o gastrocnêmio do alongamento, e o sóleo, o músculo mais profundo da panturrilha, recebe a carga. A técnica é a mesma.',
+      a: 'Sim. “Alongamento do sóleo” e “alongamento de panturrilha com o joelho dobrado” são dois nomes para o mesmo exercício. Dobrar o joelho tira o gastrocnêmio do alongamento, e o sóleo, o músculo mais profundo da panturrilha, recebe a carga. A técnica é a mesma.',
     },
     {
       q: 'Preciso alongar os dois músculos da panturrilha na fascite plantar?',

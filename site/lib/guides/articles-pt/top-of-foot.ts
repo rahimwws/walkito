@@ -6,7 +6,7 @@ export const TOP_OF_FOOT_PT: Guide = {
   page: 'topOfFoot',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Dor no peito do pé: causas, o que ajuda e quando se preocupar',
+  title: 'Dor no peito do pé: causas e quando se preocupar',
   description:
     'Dor no peito do pé: tendinite dos extensores por cadarço apertado, fratura por estresse, esporão ósseo, gota e irritação de nervo. Quando procurar ajuda.',
   h1: 'Dor no peito do pé: o que causa e quando procurar um profissional de saúde',

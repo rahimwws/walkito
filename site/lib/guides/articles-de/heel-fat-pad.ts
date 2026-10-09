@@ -15,7 +15,7 @@ export const HEEL_FAT_PAD_DE: Guide = {
   mainSource: CITE.fatPadReview,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Fersenfettpolster-Syndrom: Ursachen, Diagnose, was hilft',
+  title: 'Fersenfettpolster-Syndrom: Ursachen und was hilft',
   description:
     'Das Fersenfettpolster-Syndrom macht tiefe Schmerzen mitten in der Ferse, wenn das Polster dünner wird. Unterschied zur Plantarfasziitis und was hilft.',
   h1: 'Fersenfettpolster-Syndrom: was es ist, wie es sich von Plantarfasziitis unterscheidet und was die Belege sagen',
@@ -164,7 +164,7 @@ export const HEEL_FAT_PAD_DE: Guide = {
     {
       q: 'Welche Schuhe sind beim Fersenfettpolster-Syndrom am besten?',
       cites: [CITE.fatPadReview],
-      a: 'Schuhe mit dicken, gedämpften Sohlen und eingebauter Fersenpolsterung. Meide flache Schuhe mit dünner Sohle und barfuß auf hartem Boden. Viskoelastische Fersenschalen im Schuh bringen eine weitere Dämpfungsschicht. Keine randomisierte Studie hat bestimmte Schuhtypen beim Fersenfettpolster-Syndrom getestet, aber das Prinzip, verlorene Dämpfung zu ersetzen, ist weit akzeptiert.',
+      a: 'Schuhe mit dicken, gedämpften Sohlen und eingebauter Fersenpolsterung. Meide flache Schuhe mit dünner Sohle und geh nicht barfuß auf hartem Boden. Viskoelastische Fersenschalen im Schuh bringen eine weitere Dämpfungsschicht. Keine randomisierte Studie hat bestimmte Schuhtypen beim Fersenfettpolster-Syndrom getestet, aber das Prinzip, verlorene Dämpfung zu ersetzen, ist weit akzeptiert.',
     },
     {
       q: 'Helfen Kortisonspritzen beim Fersenfettpolster-Syndrom?',

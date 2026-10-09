@@ -15,12 +15,12 @@ export const SEVERS_DE: Guide = {
   mainSource: CITE.wiegerinck,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Morbus Sever: Fersenschmerzen bei Kindern und was hilft',
+  title: 'Morbus Sever: Fersenschmerzen bei Kindern',
   description:
     'Morbus Sever verursacht Fersenschmerzen bei Kindern von 8 bis 15 Jahren. Was Studien zu Fersenschalen, Dehnen und Belastung sagen und wann zum Arzt.',
   h1: 'Morbus Sever: was es ist, was hilft und wann dein Kind zum Arzt sollte',
   lede:
-    'Morbus Sever, auch Apophysitis calcanei genannt, ist die häufigste Ursache für Fersenschmerzen bei Kindern. Er entsteht, wenn die Wachstumsfuge hinten am Fersenbein durch wiederholten Zug der Achillessehne gereizt wird, meist während eines Wachstumsschubs und bei einem Sport mit viel Laufen oder Springen. Es ist keine Krankheit im üblichen Sinn. Er verschwindet von selbst, sobald sich die Wachstumsfuge schließt.',
+    'Morbus Sever, auch Apophysitis calcanei genannt, ist die häufigste Ursache für Fersenschmerzen bei Kindern. Er entsteht, wenn die Wachstumsfuge hinten am Fersenbein durch wiederholten Zug der Achillessehne gereizt wird, meist während eines Wachstumsschubs und bei einem Sport mit viel Laufen oder Springen. Er ist keine Krankheit im üblichen Sinn. Er verschwindet von selbst, sobald sich die Wachstumsfuge schließt.',
   intro: [
     'Diese Seite ist für Eltern geschrieben. Sie erklärt, was in der Ferse passiert, was die Forschung zu Fersenschalen, Dehnen und Belastungssteuerung sagt und wann der Schmerz eine medizinische Fachperson braucht statt Ruhe. Walkito ist eine Übungs-App für Erwachsene mit Schmerzen an Ferse und Fußgewölbe. Sie ist nicht für Kinder gemacht, und nichts auf dieser Seite ist eine Empfehlung, sie mit einem Kind zu nutzen. Wenn die Fersenschmerzen deines Kindes mit den Schritten unten nicht besser werden, ist eine Kinder-Sportmedizinerin, ein Kinder-Sportmediziner oder eine Podologin bzw. ein Podologe der richtige nächste Schritt.',
   ],
@@ -65,7 +65,7 @@ export const SEVERS_DE: Guide = {
       paragraphs: [
         'Die Belege zu Morbus Sever sind spärlich, wachsen aber. Die drei wichtigsten untersuchten Möglichkeiten sind Belastungssteuerung (weniger schmerzhafte Aktivität), Fersenschalen oder Einlagen sowie Dehn- oder Kraftübungen. Alle drei haben einen Nutzen gezeigt, und für keine wurde bei der letzten Nachuntersuchung gezeigt, dass sie den anderen klar überlegen ist.',
         'In einer Studie von 2016 mit 101\u00A0Kindern im Alter von 8 bis 15\u00A0Jahren verglichen Wiegerinck und Kollegen drei Ansätze: Abwarten mit dem Rat, schmerzhafte Aktivität einzustellen, eine Fersenerhöhung im Schuh und angeleitete exzentrische Übungen. Alle drei Gruppen verbesserten sich signifikant. Nach sechs Wochen war die Gruppe mit Fersenerhöhung zufriedener als die anderen beiden. Nach drei Monaten blieb kein klinisch relevanter Unterschied zwischen den dreien.',
-        'In einer weiteren faktoriellen Studie von 2016 mit 124\u00A0Kindern verglichen James und Kollegen Fersenerhöhungen mit vorgefertigten Einlagen sowie neue Schuhe mit keinen neuen Schuhen. Fersenerhöhungen hatten nach 2\u00A0Monaten im körperlichen Bereich des Oxford Ankle Foot Questionnaire einen kleinen Vorteil gegenüber vorgefertigten Einlagen. Nach 6 und 12\u00A0Monaten blieb zwischen keiner Kombination ein Unterschied.',
+        'In einer weiteren faktoriellen Studie von 2016 mit 124\u00A0Kindern verglichen James und Kollegen Fersenerhöhungen mit vorgefertigten Einlagen sowie neue Schuhe mit keinen neuen Schuhen. Fersenerhöhungen hatten nach 2\u00A0Monaten im körperlichen Bereich des Oxford Ankle Foot Questionnaire einen kleinen Vorteil gegenüber vorgefertigten Einlagen. Nach 6 und 12\u00A0Monaten gab es zwischen den Kombinationen keinen Unterschied mehr.',
         'In einer Crossover-Studie mit 51\u00A0Jungen verglichen Perhamre und Kollegen eine Fersenschale von 3\u00A0mm mit einem Fersenkeil von 5\u00A0mm. Die Fersenschale verringerte den Schmerz auf der Borg-CR-10-Skala um etwa 80\u00A0%, was darauf hindeutet, dass Dämpfung und Stoßabsorption wichtiger sein könnten als ein bloßes Anheben der Ferse.',
       ],
       sourceNote:
@@ -120,7 +120,7 @@ export const SEVERS_DE: Guide = {
   faq: [
     {
       q: 'Was ist Morbus Sever?',
-      a: 'Morbus Sever, auch Apophysitis calcanei genannt, ist eine Entzündung der Wachstumsfuge hinten am Fersenbein. Er ist die häufigste Ursache für Fersenschmerzen bei Kindern von 8 bis 15\u00A0Jahren und entsteht durch wiederholten Zug der Achillessehne beim Laufen, Springen und in Wachstumsschüben. Es ist keine echte Krankheit und verschwindet, sobald sich die Wachstumsfuge schließt.',
+      a: 'Morbus Sever, auch Apophysitis calcanei genannt, ist eine Entzündung der Wachstumsfuge hinten am Fersenbein. Er ist die häufigste Ursache für Fersenschmerzen bei Kindern von 8 bis 15\u00A0Jahren und entsteht durch wiederholten Zug der Achillessehne beim Laufen, Springen und in Wachstumsschüben. Er ist keine echte Krankheit und verschwindet, sobald sich die Wachstumsfuge schließt.',
     },
     {
       q: 'Helfen Fersenschalen bei Morbus Sever?',

@@ -189,7 +189,7 @@ export const VS_EXAKT_IT: Guide = {
       h2: 'Su quali prove si basa ciascuna app?',
       paragraphs: [
         'Exakt Health è certificata come dispositivo medico nell’UE (Germania), cosa che richiede prove di sicurezza e dello scopo previsto. L’app è creata da fisioterapisti sportivi abilitati. Dice che i suoi metodi sono basati sulle prove, ma non elenca studi specifici nella scheda dell’App Store o nella pagina dei prezzi.',
-        'Walkito elenca le sue fonti sul sito. I suoi esercizi seguono la linea guida clinica del 2023 sul dolore al tallone (Koc e colleghi, JOSPT), lo studio di Rathleff del 2015 sui sollevamenti sulle punte pesanti, lo studio di Brijwasi del 2023 sugli esercizi per il piede piatto, e altri. Ogni esercizio nell’app ha un livello di prova (Forte, Moderato o Iniziale) con una spiegazione di una riga.',
+        'Walkito elenca le sue fonti sul sito. I suoi esercizi seguono la linea guida clinica del 2023 sul dolore al tallone (Koc e colleghi, JOSPT), lo studio di Rathleff del 2015 sui sollevamenti sulle punte con carico pesante, lo studio di Brijwasi del 2023 sugli esercizi per il piede piatto, e altri. Ogni esercizio nell’app ha un livello di prova (Forte, Moderato o Iniziale) con una spiegazione di una riga.',
         'Nessuna delle due app ha pubblicato un proprio studio clinico. Entrambe si basano sulla ricerca esistente, applicata attraverso i rispettivi programmi.',
       ],
       cites: [CITE.guideline, CITE.rathleff],
@@ -257,7 +257,7 @@ export const VS_EXAKT_IT: Guide = {
       'non riesci a caricare il peso sul piede o zoppichi',
       'il dolore si accompagna a intorpidimento, formicolio, bruciore, gonfiore o calore',
       'il dolore ti sveglia di notte o c’è anche a riposo',
-      'stringere i lati del tallone fa male, che può indicare una frattura da stress più che una fascite plantare',
+      'stringere i lati del tallone fa male, il che può indicare una frattura da stress più che una fascite plantare',
       'il dolore peggiora di settimana in settimana nonostante esercizi costanti',
       'hai il diabete, meno sensibilità ai piedi o una cattiva circolazione',
     ],

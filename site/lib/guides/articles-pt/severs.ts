@@ -16,7 +16,7 @@ export const SEVERS_PT: Guide = {
   mainSource: CITE.wiegerinck,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Doença de Sever: dor no calcanhar em criança e o que ajuda',
+  title: 'Doença de Sever: dor no calcanhar em crianças',
   description:
     'A doença de Sever causa dor no calcanhar em crianças de 8 a 15 anos. O que diz a evidência sobre calcanheiras, alongamento, carga e quando ir ao médico.',
   h1: 'Doença de Sever: o que é, o que ajuda e quando procurar um profissional de saúde',

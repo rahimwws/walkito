@@ -16,7 +16,7 @@ export const HAGLUNDS_FR: Guide = {
   mainSource: CITE.achillesGuideline,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Maladie de Haglund\u00A0: bosse derrière le talon, que faire',
+  title: 'Maladie de Haglund\u00A0: bosse derrière le talon',
   description:
     'Maladie de Haglund\u00A0: bosse osseuse derrière le talon, bursite et douleur d’Achille. Causes, exercices et quand la chirurgie est discutée.',
   h1: 'Maladie de Haglund\u00A0: la bosse derrière le talon, ses causes et ce qui aide',

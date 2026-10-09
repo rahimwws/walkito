@@ -22,7 +22,7 @@ export const EX_TOWEL_SCRUNCH_PT: Guide = {
   takeaways: [
     'Puxar a toalha ativa os músculos intrínsecos do pé, mas estudos de eletromiografia (EMG) mostram que o exercício também recruta os flexores longos dos dedos (músculos extrínsecos) mais do que o exercício do pé curto (Jung e colegas, 2011).',
     'Em um ensaio randomizado de 2012 com adultos saudáveis, o grupo que puxou a toalha por quatro semanas melhorou menos o equilíbrio que um grupo de pé curto, embora os dois tenham melhorado em relação ao início (Lynn e colegas, 2012).',
-    'Um estudo de 2020 com 41\u00A0pessoas (56\u00A0pés) com metatarsalgia primária encontrou que, depois de um programa de oito semanas de exercícios para os dedos com toalha e bolinhas de gude, houve menos dor e mais força de preensão dos dedos. O estudo não teve grupo controle, então a melhora não pode ser atribuída só aos exercícios (Amaha e colegas, 2020).',
+    'Um estudo de 2020 com 41\u00A0pessoas (56\u00A0pés) com metatarsalgia primária mostrou que, depois de um programa de oito semanas de exercícios para os dedos com toalha e bolinhas de gude, houve menos dor e mais força de preensão dos dedos. O estudo não teve grupo controle, então a melhora não pode ser atribuída só aos exercícios (Amaha e colegas, 2020).',
     'Puxar a toalha é mais fácil de aprender que o pé curto, porque a toalha dá aos dedos um alvo claro para agarrar.',
   ],
   toc: false,
@@ -60,7 +60,7 @@ export const EX_TOWEL_SCRUNCH_PT: Guide = {
       h2: 'Quais músculos o exercício de puxar a toalha trabalha?',
       paragraphs: [
         'Puxar a toalha trabalha os músculos flexores dos dedos: o flexor curto dos dedos (dentro do pé), o flexor curto do hálux (o flexor curto do dedão) e o quadrado plantar. Esses são músculos intrínsecos. Mas o exercício também recruta os flexores extrínsecos dos dedos: o flexor longo dos dedos e o flexor longo do hálux, que vão da canela, passam pelo tornozelo e chegam aos dedos.',
-        'Um estudo de EMG de Jung e colegas (2011) comparou a atividade muscular ao puxar a toalha e no exercício do pé curto. Eles encontraram que o abdutor do hálux, o músculo que mais sustenta o arco, ficou mais de quatro vezes mais ativo no pé curto do que ao puxar a toalha. Puxar a toalha gerou mais atividade nos flexores extrínsecos dos dedos.',
+        'Um estudo de EMG de Jung e colegas (2011) comparou a atividade muscular ao puxar a toalha e no exercício do pé curto. Eles viram que o abdutor do hálux, o músculo que mais sustenta o arco, ficou mais de quatro vezes mais ativo no pé curto do que ao puxar a toalha. Puxar a toalha gerou mais atividade nos flexores extrínsecos dos dedos.',
         'Isso quer dizer que puxar a toalha é um bom exercício para a força de preensão dos dedos, mas é menos específico para os músculos intrínsecos do arco que o [exercício do pé curto](/pt/exercicios/pe-curto/).',
       ],
       cites: [CITE.jung],
@@ -107,7 +107,7 @@ export const EX_TOWEL_SCRUNCH_PT: Guide = {
     {
       q: 'Puxar a toalha com os dedos é bom para pé chato?',
       cites: [CITE.brijwasi],
-      a: 'Puxar a toalha aparece em programas de exercícios para pé chato junto com o pé curto, o fortalecimento do quadril e o alongamento. Um ensaio de 2023 com 52\u00A0pessoas encontrou que um programa combinado melhorou as medidas do arco em seis semanas (Brijwasi 2023). Puxar a toalha sozinho não foi testado para pé chato em um ensaio controlado.',
+      a: 'Puxar a toalha aparece em programas de exercícios para pé chato junto com o pé curto, o fortalecimento do quadril e o alongamento. Um ensaio de 2023 com 52\u00A0pessoas mostrou que um programa combinado melhorou as medidas do arco em seis semanas (Brijwasi 2023). Puxar a toalha sozinho não foi testado para pé chato em um ensaio controlado.',
     },
     {
       q: 'Posso usar uma meia em vez de uma toalha?',

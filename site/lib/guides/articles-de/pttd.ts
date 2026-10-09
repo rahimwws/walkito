@@ -126,7 +126,7 @@ export const PTTD_DE: Guide = {
       paragraphs: [
         'Jede Übungsstudie zur Tibialis-posterior-Insuffizienz nutzte Einlagen als Teil der Grundbehandlung. Einlagen wurden nicht gegen Übungen getestet, sondern Übungen kamen zusätzlich dazu. Die randomisierte Studie von 2009 fand, dass schon Einlagen und Dehnen allein die Funktion verbesserten und dass zusätzliche Übungen sie weiter verbesserten.',
         'Eine feste oder halbfeste gewölbestützende Einlage verhindert, dass das Gewölbe beim Stehen und Gehen einsinkt. Bei den Übungen auf dieser Seite kannst du Einwärtsdrehen mit Band und den kurzen Fuß ohne Schuhe machen. Fersenheben solltest du aber in denselben stützenden Schuhen machen, in denen du gehst, weil das Gewölbe unter Last Unterstützung braucht.',
-        'Einlagen von der Stange können im Stadium I reichen. Maßeinlagen sind im Stadium II häufiger, weil die Fehlstellung dort größer ist. Eine medizinische Fachperson oder ein Podologe kann dir helfen zu entscheiden, was passt.',
+        'Einlagen von der Stange können im Stadium I reichen. Maßeinlagen sind im Stadium II häufiger, weil die Fehlstellung dort größer ist. Eine medizinische Fachperson oder eine Podologin bzw. ein Podologe kann dir helfen zu entscheiden, was passt.',
       ],
       cites: [CITE.kuligRCT, CITE.posteriorTibialReview],
     },
@@ -194,7 +194,7 @@ export const PTTD_DE: Guide = {
     },
     {
       q: 'Ist Gehen schlecht bei einer Sehnenentzündung des Tibialis posterior?',
-      a: 'Nicht automatisch, aber zu viel davon kann es sein. Jeder Schritt belastet die Sehne, die das Gewölbe hält, deshalb verschlimmert viel Gehen auf einer gereizten Sehne oft den Schmerz. Am Anfang wird die Last reduziert, die Schmerzen auslöst, nicht das Gehen insgesamt, zusammen mit Einlagen und den Übungen oben. Wenn ein Spaziergang Schmerzen auslöst, fahr zurück.',
+      a: 'Nicht automatisch, aber zu viel davon kann es sein. Jeder Schritt belastet die Sehne, die das Gewölbe hält, deshalb verschlimmert viel Gehen auf einer gereizten Sehne oft den Schmerz. Am Anfang wird die Last reduziert, die Schmerzen auslöst, nicht das Gehen insgesamt, zusammen mit Einlagen und den Übungen oben. Wenn ein Spaziergang Schmerzen auslöst, schalte einen Gang zurück.',
     },
     {
       q: 'Was verschlimmert eine Sehnenentzündung des Tibialis posterior?',

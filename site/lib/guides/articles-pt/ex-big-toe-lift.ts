@@ -20,9 +20,9 @@ export const EX_BIG_TOE_LIFT_PT: Guide = {
   lede:
     'A elevação do dedão é um exercício em que você levanta o dedão sozinho enquanto os outros quatro dedos ficam apoiados no chão. Algumas pessoas chamam de toe yoga, ou ioga dos dedos. Ela treina o cérebro a controlar o dedão de forma independente, o que importa porque o dedão é a principal alavanca do arco ao andar. Quando o dedão dobra para cima, ele estica a fáscia plantar pelo mecanismo de molinete e deixa o pé firme para o impulso.',
   takeaways: [
-    'Um estudo de ressonância magnética de 2016 encontrou que a extensão do dedão ativou o flexor curto dos dedos (18,1%), o abdutor do hálux (16,9%) e o flexor do dedo mínimo (16,3%), porque os outros dedos precisam pressionar o chão para ficar apoiados enquanto o dedão sobe (Gooding e colegas, 2016).',
+    'Um estudo de ressonância magnética de 2016 mostrou que a extensão do dedão ativou o flexor curto dos dedos (18,1%), o abdutor do hálux (16,9%) e o flexor do dedo mínimo (16,3%), porque os outros dedos precisam pressionar o chão para ficar apoiados enquanto o dedão sobe (Gooding e colegas, 2016).',
     'O dedão aciona o mecanismo de molinete: quando ele dobra para trás, a fáscia plantar estica e o arco fica firme para o impulso. Pouco controle independente do dedão pode diminuir esse enrijecimento.',
-    'Um estudo de 2020 com 41\u00A0pessoas (56\u00A0pés) com metatarsalgia encontrou que oito semanas de exercícios para os dedos, incluindo trabalho do dedão, foram seguidas de mais força de preensão dos dedos e menos dor na parte da frente do pé. O estudo não teve grupo de comparação (Amaha e colegas, 2020).',
+    'Um estudo de 2020 com 41\u00A0pessoas (56\u00A0pés) com metatarsalgia mostrou que oito semanas de exercícios para os dedos, incluindo trabalho do dedão, foram seguidas de mais força de preensão dos dedos e menos dor na parte da frente do pé. O estudo não teve grupo de comparação (Amaha e colegas, 2020).',
     'A maioria das pessoas acha o movimento inverso (levantar só os dedos menores enquanto o dedão fica no chão) mais difícil. Praticar as duas direções às vezes é chamado de toe yoga.',
   ],
   toc: false,
@@ -58,10 +58,10 @@ export const EX_BIG_TOE_LIFT_PT: Guide = {
     },
     {
       h2: 'Quais músculos a elevação do dedão trabalha?',
-      keyFact: 'Um estudo de ressonância magnética de 2016 mediu a elevação do dedão em um pequeno grupo de atletas e encontrou que ela ativou os três músculos intrínsecos plantares testados, com o flexor curto dos dedos mostrando a maior ativação, de 18,1\u00A0por cento (Gooding e colegas, 2016).',
+      keyFact: 'Um estudo de ressonância magnética de 2016 mediu a elevação do dedão em um pequeno grupo de atletas e mostrou que ela ativou os três músculos intrínsecos plantares testados, com o flexor curto dos dedos mostrando a maior ativação, de 18,1\u00A0por cento (Gooding e colegas, 2016).',
       paragraphs: [
         'Os músculos que levantam o dedão são o extensor longo do hálux (que vem da canela) e o extensor curto do hálux (que fica em cima do pé). Mas o exercício também trabalha os músculos que seguram os outros dedos no chão, e é aí que o treino de verdade acontece.',
-        'Um estudo de ressonância magnética de 2016 de Gooding e colegas encontrou que o exercício de extensão do dedão ativou o flexor curto dos dedos (18,1%), o abdutor do hálux (16,9%) e o flexor do dedo mínimo (16,3%). Os músculos intrínsecos plantares estavam trabalhando para manter os dedos menores apoiados enquanto o dedão subia.',
+        'Um estudo de ressonância magnética de 2016 de Gooding e colegas mostrou que o exercício de extensão do dedão ativou o flexor curto dos dedos (18,1%), o abdutor do hálux (16,9%) e o flexor do dedo mínimo (16,3%). Os músculos intrínsecos plantares estavam trabalhando para manter os dedos menores apoiados enquanto o dedão subia.',
         'Isso faz da elevação do dedão um exercício dois em um. O lado que levanta treina os extensores. O lado que pressiona treina os músculos intrínsecos plantares, os mesmos que o [exercício do pé curto](/pt/exercicios/pe-curto/) trabalha.',
       ],
       cites: [CITE.gooding],

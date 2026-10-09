@@ -14,7 +14,7 @@ export const NURSES_PT: Guide = {
   mainSource: CITE.reedNurse,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Dor nos pés na enfermagem: plantão de 12 horas e exercícios',
+  title: 'Dor nos pés na enfermagem: plantão de 12 horas',
   description:
     'Por que quem trabalha na enfermagem sente dor nos pés no plantão de 12 horas: calçados, meias de compressão, exercícios e como encaixar tudo nos turnos.',
   h1: 'Dor nos pés na enfermagem: o que ajuda no plantão de 12 horas',
@@ -28,14 +28,14 @@ export const NURSES_PT: Guide = {
     'Em uma pesquisa com 312\u00A0enfermeiras de um hospital pediátrico na Austrália, 55,3% relataram problemas nos pés ou nos tornozelos nos últimos 12\u00A0meses, e a taxa era maior entre quem fazia plantões de 12\u00A0horas na terapia intensiva (Reed e colegas, 2014).',
     'As enfermeiras andaram em média 9.360\u00A0passos por plantão em um estudo com rastreadores, cerca de 5,8\u00A0km em um turno de 9,4\u00A0horas, uma carga bem acima da média dos adultos em geral (Chang e Cho, 2022).',
     'Em um estudo transversal com 636\u00A0enfermeiras de hospital no Japão, 51% relataram dor ou incapacidade nos pés no último mês, e 17% tinham dor que atrapalhava as atividades do dia a dia (Tojo e colegas, 2018).',
-    'A flexibilidade reduzida do tornozelo, ou seja, uma panturrilha tensa, foi o preditor mais forte de fascite plantar em um estudo caso-controle com 50\u00A0casos e 100\u00A0controles, com 23,3\u00A0vezes a chance. Ficar em pé a maior parte do dia de trabalho aumentou a chance em 3,6\u00A0vezes (Riddle e colegas, 2003).',
+    'A flexibilidade reduzida do tornozelo, ou seja, uma panturrilha tensa, foi o preditor mais forte de fascite plantar em um estudo caso-controle com 50\u00A0casos e 100\u00A0controles, com chances 23,3\u00A0vezes maiores. Ficar em pé a maior parte do dia de trabalho multiplicou as chances por 3,6 (Riddle e colegas, 2003).',
     'Em um ensaio com 40\u00A0seguranças em turnos de 12\u00A0horas em pé, as meias de compressão de 15-20\u00A0mmHg e de 20-30\u00A0mmHg evitaram o aumento do desconforto e do inchaço visto com meias comuns (Garcia e colegas, 2023).',
   ],
   sections: [
     {
       h2: 'Dor nos pés é comum na enfermagem?',
       paragraphs: [
-        'A dor nos pés e nos tornozelos está entre as três queixas musculoesqueléticas mais comuns na enfermagem, junto com a dor lombar e a dor no pescoço. Em uma pesquisa com 312\u00A0enfermeiras de um hospital pediátrico, 55,3% relataram problemas musculoesqueléticos nos pés ou nos tornozelos nos últimos 12\u00A0meses, e 43,8% tiveram sintomas só nos últimos sete dias. Uma em cada seis disse que a dor limitava a sua atividade física. Fazer plantões de 12\u00A0horas na UTI foi o único fator do trabalho que aumentou de forma independente a chance de problemas nos pés que incapacitam.',
+        'A dor nos pés e nos tornozelos está entre as três queixas musculoesqueléticas mais comuns na enfermagem, junto com a dor lombar e a dor no pescoço. Em uma pesquisa com 312\u00A0enfermeiras de um hospital pediátrico, 55,3% relataram problemas musculoesqueléticos nos pés ou nos tornozelos nos últimos 12\u00A0meses, e 43,8% tiveram sintomas só nos últimos sete dias. Uma em cada seis disse que a dor limitava a sua atividade física. Fazer plantões de 12\u00A0horas na UTI foi o único fator do trabalho que aumentou de forma independente as chances de problemas nos pés que incapacitam.',
         'Outro estudo, com 636\u00A0enfermeiras de hospital no Japão, encontrou que 51% relataram dor ou incapacidade nos pés no último mês, avaliadas com um questionário validado. A prevalência de dor que impedia o trabalho normal foi de 17%. Um estudo com rastreadores em enfermeiras coreanas encontrou uma média de 5,8\u00A0km andados por plantão, uma exigência física bem acima da população em geral.',
         'Um estudo transversal com 411\u00A0enfermeiras finlandesas encontrou que pele ressecada, dor nos pés e calos eram as queixas mais comuns nos pés, e que os problemas nos pés estavam associados a uma menor capacidade para o trabalho. Os autores pediram que a prevenção de problemas nos pés na enfermagem fosse uma prioridade.',
       ],
@@ -46,7 +46,7 @@ export const NURSES_PT: Guide = {
       paragraphs: [
         'Três coisas se somam em um plantão: ficar muito tempo em pé, andar longas distâncias e chão duro. Ficar parado em pé põe carga na fáscia plantar, nos músculos da panturrilha e no coxim do calcanhar sem o bombeamento que a caminhada dá. Caminhar ajuda o sangue a voltar das pernas, mas na enfermagem você alterna sem previsão entre ficar parado ao lado de um leito e andar por corredores longos, então a bomba da panturrilha nunca entra num ritmo constante.',
         'Uma revisão de 2015 da literatura de saúde ocupacional associou ficar muito tempo em pé no trabalho a desconforto musculoesquelético, cansaço e dor nas pernas em muitas profissões em pé, e citou a enfermagem como um dos grupos de maior risco. A revisão observou que o esforço cardiovascular e o inchaço nas pernas aumentam com o tempo em pé.',
-        'No nível dos tecidos, uma panturrilha tensa é uma peça-chave. Um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100\u00A0controles pareados encontrou que a flexibilidade reduzida do tornozelo, ou seja, o tornozelo não consegue dobrar para cima tanto quanto deveria porque a panturrilha está tensa, foi o fator de risco independente mais forte para fascite plantar, com 23,3\u00A0vezes a chance. Ficar em pé a maior parte do dia de trabalho aumentou a chance em 3,6\u00A0vezes. Na enfermagem, os dois fatores de risco aparecem juntos.',
+        'No nível dos tecidos, uma panturrilha tensa é uma peça-chave. Um estudo caso-controle com 50\u00A0pessoas com fascite plantar e 100\u00A0controles pareados encontrou que a flexibilidade reduzida do tornozelo, ou seja, o tornozelo não consegue dobrar para cima tanto quanto deveria porque a panturrilha está tensa, foi o fator de risco independente mais forte para fascite plantar, com chances 23,3\u00A0vezes maiores. Ficar em pé a maior parte do dia de trabalho multiplicou as chances por 3,6. Na enfermagem, os dois fatores de risco aparecem juntos.',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -201,7 +201,7 @@ export const NURSES_PT: Guide = {
     },
     {
       q: 'Plantão de 12 horas é pior para os pés do que turno de 8 horas?',
-      a: 'Em uma pesquisa com enfermeiras de um hospital pediátrico, fazer plantões de 12\u00A0horas na UTI foi o único fator do trabalho que aumentou de forma independente a chance de problemas nos pés e nos tornozelos que incapacitam. A carga total no pé aumenta com a duração do turno, e o tempo de recuperação entre os turnos é menor quando os próprios turnos são mais longos. Mesmo assim, o tipo de trabalho e o tipo de chão também importam, não só as horas.',
+      a: 'Em uma pesquisa com enfermeiras de um hospital pediátrico, fazer plantões de 12\u00A0horas na UTI foi o único fator do trabalho que aumentou de forma independente as chances de problemas nos pés e nos tornozelos que incapacitam. A carga total no pé aumenta com a duração do turno, e o tempo de recuperação entre os turnos é menor quando os próprios turnos são mais longos. Mesmo assim, o tipo de trabalho e o tipo de chão também importam, não só as horas.',
       cites: [CITE.reedNurse],
     },
     {
@@ -215,12 +215,12 @@ export const NURSES_PT: Guide = {
     },
     {
       q: 'Dor nos pés na enfermagem é algo com que você tem que conviver?',
-      a: 'A dor nos pés de ficar em pé e andar é comum na enfermagem, mas "comum" não quer dizer inevitável. A diretriz de 2023 para dor no calcanhar dá ao alongamento da panturrilha e da fáscia o grau A e ao treino de força o grau B. As meias de compressão têm evidência randomizada para o desconforto de ficar em pé. Alguns minutos de alongamento da panturrilha antes ou depois de cada plantão, junto com treino de força nas folgas, miram os tecidos que mais sofrem.',
+      a: 'A dor nos pés de ficar em pé e andar é comum na enfermagem, mas “comum” não quer dizer inevitável. A diretriz de 2023 para dor no calcanhar dá ao alongamento da panturrilha e da fáscia o grau A e ao treino de força o grau B. As meias de compressão têm evidência randomizada para o desconforto de ficar em pé. Alguns minutos de alongamento da panturrilha antes ou depois de cada plantão, junto com treino de força nas folgas, miram os tecidos que mais sofrem.',
       cites: [CITE.guideline, CITE.garcia],
     },
     {
       q: 'O trabalho na enfermagem pode causar fascite plantar?',
-      a: 'Ficar em pé a maior parte do dia de trabalho aumentou em 3,6\u00A0vezes a chance de fascite plantar em um estudo caso-controle pareado com 50\u00A0casos e 100\u00A0controles. A flexibilidade reduzida do tornozelo aumentou em 23,3\u00A0vezes. Na enfermagem, os dois fatores de risco aparecem, muito tempo em pé e pouco tempo de pausa para alongar, e é por isso que os exercícios desta página se sobrepõem tanto aos do guia de fascite plantar.',
+      a: 'Ficar em pé a maior parte do dia de trabalho multiplicou por 3,6 as chances de fascite plantar em um estudo caso-controle pareado com 50\u00A0casos e 100\u00A0controles. A flexibilidade reduzida do tornozelo multiplicou essas chances por 23,3. Na enfermagem, os dois fatores de risco aparecem, muito tempo em pé e pouco tempo de pausa para alongar, e é por isso que os exercícios desta página se sobrepõem tanto aos do guia de fascite plantar.',
       cites: [CITE.riddle],
     },
     {

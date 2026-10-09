@@ -12,7 +12,7 @@ export const MORTONS_DE: Guide = {
   mainSource: CITE.matthewsCochrane,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Morton-Neurom: Ursachen, Schuhe, Pelotten und was hilft',
+  title: 'Morton-Neurom: Schuhe, Pelotten und was hilft',
   description:
     'Morton-Neurom: Brennen zwischen den Zehen. Pelotten, andere Schuhe, Spritzen, Übungen für mehr Komfort und der Unterschied zur Metatarsalgie.',
   h1: 'Morton-Neurom: was es ist, was hilft und was die Forschung sagt',
@@ -35,7 +35,7 @@ export const MORTONS_DE: Guide = {
       paragraphs: [
         'Ein Morton-Neurom ist eine gutartige Verdickung des gemeinsamen Zehennervs an der Fußsohle, meist im dritten Zwischenraum der Mittelfußknochen (zwischen der dritten und vierten Zehe). Seltener tritt es im zweiten Zwischenraum auf. Es ist kein Krebs und keine Wucherung am Knochen.',
         'Der Nerv läuft unter dem queren Mittelfußband hindurch, einem Gewebeband, das die Mittelfußköpfchen zusammenhält. Wenn die Köpfchen zusammengedrückt werden, wird der Nerv eingeklemmt. Mit der Zeit verdickt sich die Nervenscheide, und der Nerv selbst kann sich vergrößern. Die Folge sind Schmerz, Brennen, Kribbeln oder Taubheit im Zehenzwischenraum, die in die betroffenen Zehen ausstrahlen.',
-        'Es ist bei Frauen häufiger, zum Teil wegen der Schuhwahl. Schuhe mit schmaler Spitze und hohe Absätze drücken die Mittelfußköpfchen zusammen und erhöhen den Druck auf den Nerv. Laufen, Ballsportarten in der Halle und Berufe mit langem Stehen in engen Schuhen sind ebenfalls Risikofaktoren.',
+        'Es ist bei Frauen häufiger, zum Teil wegen der Schuhwahl. Schuhe mit schmaler Spitze und hohe Absätze drücken die Mittelfußköpfchen zusammen und erhöhen den Druck auf den Nerv. Laufen, Sportarten wie Tennis oder Squash und Berufe mit langem Stehen in engen Schuhen sind ebenfalls Risikofaktoren.',
       ],
     },
     {
@@ -53,7 +53,7 @@ export const MORTONS_DE: Guide = {
         'Breitere Schuhe mit niedrigem Absatz und eine Mittelfußpelotte sind der am häufigsten empfohlene erste Schritt beim Morton-Neurom. Die Pelotte sitzt direkt hinter den Mittelfußköpfchen, nicht direkt darunter, damit sie die Schäfte der Mittelfußknochen anhebt und spreizt und so den Druck auf den Nerv senkt.',
         'Gut sitzende Schuhe mit breiter Zehenbox, niedrigem Absatz und Mittelfußpelotte wurden in zwei Studien einer systematischen Übersichtsarbeit von 2019 untersucht. Beide Studien zusammengenommen waren Schuhe und Pelotte bei etwa 32\u00A0% der Menschen erfolgreich, bei einer Nachbeobachtung von durchschnittlich viereinhalb Monaten. Eine randomisierte Studie, die Schuhe und Pelotte mit einer Kortisonspritze verglich, fand aber, dass die Gruppe mit Spritze nach sechs Monaten eine sechsmal höhere Erfolgschance hatte.',
         'Für die Praxis heißt das: Andere Schuhe und Pelotten haben wenig Risiko und sind einen ersten Versuch wert. Bei manchen wirken sie, bei anderen nicht. Wenn sie nach vier bis sechs Wochen nicht geholfen haben, ist der nächste Schritt meist ein Termin bei einer Fachperson, um über Spritzen oder weitere Bildgebung zu sprechen.',
-        'Die Position zählt. Eine Pelotte, die zu weit vorn sitzt, direkt unter dem Mittelfußköpfchen, kann den Druck erhöhen statt senken. Selbstklebende Mittelfußpelotten aus der Apotheke sind günstig genug zum Ausprobieren, aber die richtige Position braucht etwas Herumprobieren. Ein Podologe kann eine Maßeinlage anpassen, wenn Pelotten von der Stange nicht helfen.',
+        'Die Position zählt. Eine Pelotte, die zu weit vorn sitzt, direkt unter dem Mittelfußköpfchen, kann den Druck erhöhen statt senken. Selbstklebende Mittelfußpelotten aus der Apotheke sind günstig genug zum Ausprobieren, aber die richtige Position braucht etwas Herumprobieren. Eine Podologin oder ein Podologe kann eine Maßeinlage anpassen, wenn Pelotten von der Stange nicht helfen.',
       ],
       cites: [CITE.matthewsSR],
     },
@@ -167,7 +167,7 @@ export const MORTONS_DE: Guide = {
     {
       q: 'Helfen Kortisonspritzen beim Morton-Neurom?',
       cites: [CITE.matthewsCochrane],
-      a: 'Ein Cochrane-Review von 2024 mit sechs randomisierten Studien fand Belege mit niedriger Vertrauenswürdigkeit, dass Kortison zusätzlich zu einem örtlichen Betäubungsmittel Schmerz oder Funktion im Vergleich zum Betäubungsmittel allein vielleicht nicht verbessert (Matthews 2024). Eine ultraschallgesteuerte Spritze wirkt wahrscheinlich besser als eine ohne Ultraschall. Kortison bringt vielen eine kurzfristige Linderung, aber wiederholte Spritzen bergen Risiken, darunter ein Schwund des Fettpolsters.',
+      a: 'Ein Cochrane-Review von 2024 mit sechs randomisierten Studien fand Belege mit niedriger Vertrauenswürdigkeit, dass Kortison zusätzlich zu einem örtlichen Betäubungsmittel Schmerz oder Funktion im Vergleich zum Betäubungsmittel allein vielleicht nicht verbessert (Matthews 2024). Eine ultraschallgesteuerte Spritze wirkt wahrscheinlich besser als eine ohne Ultraschall. Kortison bringt vielen eine kurzfristige Linderung, aber wiederholte Spritzen bergen Risiken, darunter einen Schwund des Fettpolsters.',
     },
     {
       q: 'Wann muss ein Morton-Neurom operiert werden?',

@@ -17,7 +17,7 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
   mainSource: CITE.guideline,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Douleur au talon après la marche\u00A0: pourquoi et que faire',
+  title: 'Douleur au talon après la marche\u00A0: que faire',
   description:
     'Mal au talon après avoir marché ou être resté debout\u00A0: pourquoi, quelles causes, quand s’inquiéter et les exercices qui aident le plus.',
   h1: 'Douleur au talon après la marche\u00A0: pourquoi le talon fait mal et que faire',
@@ -146,7 +146,7 @@ export const HEEL_PAIN_AFTER_WALKING_FR: Guide = {
       h2: 'Combien marcher quand le talon fait mal\u00A0?',
       paragraphs: [
         'Le but n’est pas d’arrêter de marcher. C’est de trouver la distance que votre talon supporte sans s’enflammer le lendemain matin, puis de construire à partir de là.',
-        'Une approche pratique\u00A0: marchez une distance qui garde la douleur du lendemain matin au niveau de votre base actuelle ou en dessous. Si votre note habituelle le matin est de 4 sur 10 et qu’une marche de 30\u00A0minutes la fait monter à 6 le lendemain matin, cette marche était de trop. Raccourcissez-la jusqu’à ce que la note du matin reste stable. Puis ajoutez cinq minutes toutes les une à deux semaines, tant que la douleur du matin ne grimpe pas.',
+        'Une approche pratique\u00A0: marchez une distance qui garde la douleur du lendemain matin au niveau de votre base actuelle ou en dessous. Si votre note habituelle le matin est de 4 sur 10 et qu’une marche de 30\u00A0minutes la fait monter à 6 le lendemain matin, cette marche était de trop. Raccourcissez-la jusqu’à ce que la note du matin reste stable. Puis ajoutez cinq minutes chaque semaine ou toutes les deux semaines, tant que la douleur du matin ne grimpe pas.',
         'C’est de la gestion de la charge, pas du repos. Le repos complet aide rarement en cas de fasciite plantaire. La recommandation conseille d’adapter l’activité, pas de devenir inactif. Marcher avec des chaussures qui soutiennent le pied sur une surface plus souple ménage davantage le fascia que marcher pieds nus sur du béton.',
         'Si vous courez aussi, le même principe s’applique à une autre échelle. [Douleur au talon en course à pied](/heel-pain-runners/) (en anglais) détaille les pics de charge et les changements de kilométrage.',
       ],

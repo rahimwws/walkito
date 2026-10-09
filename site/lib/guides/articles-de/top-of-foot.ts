@@ -11,7 +11,7 @@ export const TOP_OF_FOOT_DE: Guide = {
   page: 'topOfFoot',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Schmerzen am Fußrücken: Ursachen, Hilfe und Warnzeichen',
+  title: 'Schmerzen am Fußrücken: Ursachen und Warnzeichen',
   description:
     'Schmerzen am Fußrücken: Strecksehnenentzündung durch enge Schnürung, Ermüdungsbruch, Knochensporn, Gicht und Nervenreizung. Und wann du zum Arzt solltest.',
   h1: 'Schmerzen am Fußrücken: Ursachen und wann du zu einer Fachperson solltest',

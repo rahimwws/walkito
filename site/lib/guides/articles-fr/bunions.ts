@@ -14,7 +14,7 @@ export const BUNIONS_FR: Guide = {
   mainSource: CITE.kimHV,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Hallux valgus (oignon)\u00A0: exercices, ce que dit la recherche',
+  title: 'Exercices hallux valgus\u00A0: ce que dit la recherche',
   description:
     'Les exercices pour hallux valgus (oignon) réduisent-ils la douleur ou l’évolution\u00A0? Écartement des orteils, abducteur de l’hallux et écarteurs d’orteils.',
   h1: 'Exercices pour hallux valgus\u00A0: ce qu’ils peuvent faire et ce qu’ils ne peuvent pas faire',
@@ -34,7 +34,7 @@ export const BUNIONS_FR: Guide = {
       paragraphs: [
         'Non. Un oignon, appelé cliniquement hallux valgus, est une déviation osseuse de la première articulation métatarso-phalangienne (l’articulation du gros orteil). Le premier métatarsien dérive vers l’intérieur et le gros orteil s’incline vers l’extérieur. Une fois que l’os s’est déplacé et que la capsule articulaire s’est adaptée, l’exercice ne peut pas le remettre en place.',
         'Ce que l’exercice peut faire, c’est renforcer les muscles autour de l’articulation. L’abducteur de l’hallux longe l’intérieur de la voûte et ramène le gros orteil dans l’alignement. Chez les personnes avec un hallux valgus, ce muscle est plus faible et plus petit que chez les personnes sans. Le renforcer ne défera pas le changement de structure, mais cela peut améliorer le contrôle, réduire les symptômes et peut-être ralentir la dérive dans les cas légers.',
-        'Un commentaire clinique de 2016 dans le Journal of Orthopaedic and Sports Physical Therapy a proposé une approche de renforcement musculaire fondée sur la biomécanique pour l’hallux valgus débutant, centrée sur les muscles propres au pied. L’auteur soutenait que la déformation progresse en partie à cause d’un déséquilibre musculaire, et que rétablir l’activité musculaire pourrait donc avoir un effet protecteur. C’est un argument plausible, mais les preuves directes à long terme restent limitées.',
+        'Un commentaire clinique de 2016 dans le Journal of Orthopaedic and Sports Physical Therapy a proposé une approche de renforcement musculaire fondée sur la biomécanique pour l’hallux valgus débutant, centrée sur les muscles intrinsèques du pied. L’auteur soutenait que la déformation progresse en partie à cause d’un déséquilibre musculaire, et que rétablir l’activité musculaire pourrait donc avoir un effet protecteur. C’est un argument plausible, mais les preuves directes à long terme restent limitées.',
       ],
     },
     {
@@ -43,7 +43,7 @@ export const BUNIONS_FR: Guide = {
       paragraphs: [
         'Les meilleures preuves viennent d’une poignée de petits essais. Aucun n’est grand, et aucun n’a suivi les participants plus d’un an.',
         'Kim et coll. (2015) ont réparti au hasard 24\u00A0personnes avec un hallux valgus léger à modéré entre une orthèse seule et une orthèse plus des exercices d’écartement des orteils pendant 8\u00A0semaines. Le groupe exercice a réduit son angle d’hallux valgus de 3,4\u00A0degrés en moyenne et augmenté la section transversale de l’abducteur de l’hallux. Le groupe orthèse seule n’a montré aucun changement significatif sur ces deux mesures. L’étude était petite et portait surtout sur de jeunes adultes avec un hallux valgus léger.',
-        'Abdalbary (2018) a réparti au hasard 56\u00A0femmes avec un hallux valgus modéré entre 3\u00A0mois de mobilisation du pied, d’exercices de renforcement et d’écarteur d’orteils, et l’absence d’intervention (liste d’attente). À 3\u00A0mois puis à 1\u00A0an, le groupe exercice avait une douleur, une fonction et des mesures d’angle à la radio nettement meilleures que le groupe sans intervention. Cet essai se distingue par son suivi plus long, mais comme l’écarteur d’orteils était associé à la mobilisation et aux exercices, l’étude ne peut pas dire ce que l’écarteur seul a apporté.',
+        'Abdalbary (2018) a réparti au hasard 56\u00A0femmes avec un hallux valgus modéré entre 3\u00A0mois de mobilisation du pied, d’exercices de renforcement et d’écarteur d’orteils, et l’absence d’intervention (liste d’attente). À 3\u00A0mois puis à 1\u00A0an, le groupe exercice avait une douleur, une fonction et des mesures d’angle à la radio significativement meilleures que le groupe sans intervention. Cet essai se distingue par son suivi plus long, mais comme l’écarteur d’orteils était associé à la mobilisation et aux exercices, l’étude ne peut pas dire ce que l’écarteur seul a apporté.',
         'Külünkoğlu et coll. (2021) ont réparti au hasard 60\u00A0femmes (120\u00A0pieds) avec un hallux valgus entre un mois d’orthèse de nuit, d’exercices ou d’électrostimulation. Les trois groupes se sont améliorés en douleur et en fonction, mais l’orthèse de nuit était plus efficace que l’exercice et l’électrothérapie, et l’exercice faisait mieux que l’électrothérapie. L’étude n’avait pas de groupe témoin sans traitement, il est donc difficile de savoir ce que chacune des trois approches a apporté au-delà de la variation naturelle.',
       ],
       sourceNote:
@@ -51,19 +51,19 @@ export const BUNIONS_FR: Guide = {
       cites: [CITE.kimHV, CITE.abdalbary, CITE.kulunkoglu],
     },
     {
-      h2: 'Les écarteurs d’orteils marchent-ils pour l’hallux valgus\u00A0?',
-      keyFact: 'Dans une étude sur 30\u00A0femmes avec un hallux valgus douloureux, une semelle avec écarteur d’orteils a nettement réduit la douleur sur trois mois, alors qu’un autre groupe avec orthèse de nuit ne s’est pas amélioré (Tehraninasr et coll., 2008).',
+      h2: 'Les écarteurs d’orteils sont-ils efficaces en cas d’hallux valgus\u00A0?',
+      keyFact: 'Dans une étude sur 30\u00A0femmes avec un hallux valgus douloureux, une semelle avec écarteur d’orteils a réduit significativement la douleur sur trois mois, alors qu’un autre groupe avec orthèse de nuit ne s’est pas amélioré (Tehraninasr et coll., 2008).',
       paragraphs: [
         'Les écarteurs d’orteils, aussi appelés séparateurs d’orteils, se placent entre le gros orteil et le deuxième orteil. Ils réduisent les frottements, soulagent la pression sur l’oignon et éloignent doucement le gros orteil du deuxième orteil tant qu’ils sont portés.',
-        'Tehraninasr et coll. (2008) ont étudié 30\u00A0femmes avec un hallux valgus douloureux sur 3\u00A0mois. Un groupe portait une semelle avec un écarteur d’orteils intégré, et un autre groupe portait une orthèse de nuit à la place. La douleur a nettement baissé dans le groupe écarteur, mais pas dans le groupe orthèse de nuit. Aucun des deux groupes n’a eu de changement statistiquement significatif de l’angle de l’hallux valgus. L’essai d’Abdalbary associait un écarteur d’orteils à de la thérapie manuelle et des exercices, il ne permet donc pas d’isoler ce que l’écarteur a fait seul.',
-        'Le schéma est le même d’une étude à l’autre\u00A0: les écarteurs d’orteils peuvent aider le confort et les symptômes à court terme, mais les preuves qu’ils changent l’angle osseux avec le temps sont faibles. Ils ne sont pas nocifs et coûtent peu, donc beaucoup de professionnels de santé les conseillent en plus des exercices et du changement de chaussures.',
+        'Tehraninasr et coll. (2008) ont étudié 30\u00A0femmes avec un hallux valgus douloureux sur 3\u00A0mois. Un groupe portait une semelle avec un écarteur d’orteils intégré, et un autre groupe portait une orthèse de nuit à la place. La douleur a baissé de façon significative dans le groupe écarteur, mais pas dans le groupe orthèse de nuit. Aucun des deux groupes n’a eu de changement statistiquement significatif de l’angle de l’hallux valgus. L’essai d’Abdalbary associait un écarteur d’orteils à de la thérapie manuelle et des exercices, il ne permet donc pas d’isoler ce que l’écarteur a fait seul.',
+        'Le schéma est le même d’une étude à l’autre\u00A0: les écarteurs d’orteils peuvent améliorer le confort et les symptômes à court terme, mais les preuves qu’ils changent l’angle osseux avec le temps sont faibles. Ils ne sont pas nocifs et coûtent peu, donc beaucoup de professionnels de santé les conseillent en plus des exercices et du changement de chaussures.',
       ],
       cites: [CITE.abdalbary, CITE.tehraninasr],
     },
     {
       h2: 'Quels exercices pour l’hallux valgus\u00A0?',
       paragraphs: [
-        'Ces exercices visent l’abducteur de l’hallux et les petits muscles propres au pied. Le but est de rétablir le soutien musculaire autour de la première articulation métatarso-phalangienne. Aucun ne corrigera la déformation osseuse, mais deux d’entre eux ont un appui dans des essais pour augmenter la taille du muscle et réduire les symptômes dans l’hallux valgus léger.',
+        'Ces exercices visent l’abducteur de l’hallux et les petits muscles intrinsèques du pied. Le but est de rétablir le soutien musculaire autour de la première articulation métatarso-phalangienne. Aucun ne corrigera la déformation osseuse, mais deux d’entre eux ont un appui dans des essais pour augmenter la taille du muscle et réduire les symptômes dans l’hallux valgus léger.',
       ],
       exercises: [
         {
@@ -97,7 +97,7 @@ export const BUNIONS_FR: Guide = {
         {
           name: 'Pied court, assis',
           dose: 'Walkito commence à 3\u00A0séries de 10, tenir 5\u00A0secondes, chaque pied',
-          how: 'Asseyez-vous, le pied à plat au sol. Sans recroqueviller les orteils, essayez de raccourcir le pied en rapprochant l’avant du pied du talon. La voûte se soulève légèrement. Cet exercice sollicite les muscles propres au pied, dont l’abducteur de l’hallux.',
+          how: 'Asseyez-vous, le pied à plat au sol. Sans recroqueviller les orteils, essayez de raccourcir le pied en rapprochant l’avant du pied du talon. La voûte se soulève légèrement. Cet exercice sollicite les muscles intrinsèques du pied, dont l’abducteur de l’hallux.',
           feel: 'Une contraction sous la voûte',
           stop: 'Une douleur à l’oignon, ou une crampe qui ne passe pas',
           evidence: {
@@ -116,7 +116,7 @@ export const BUNIONS_FR: Guide = {
           stop: 'Une douleur à l’articulation de l’oignon',
           evidence: {
             level: 'early',
-            why: 'Un ajout propre à Walkito. Ramasser la serviette vise les muscles propres au pied, mais n’a pas été testé dans un essai sur l’hallux valgus en particulier.',
+            why: 'Un ajout propre à Walkito. Ramasser la serviette vise les muscles intrinsèques du pied, mais n’a pas été testé dans un essai sur l’hallux valgus en particulier.',
           },
           media: 'towel_scrunch',
           caption: 'Ramasser la serviette\u00A0: recroquevillez les orteils pour ramener la serviette',
@@ -155,7 +155,7 @@ export const BUNIONS_FR: Guide = {
     },
     {
       q: 'Les écarteurs d’orteils valent-ils la peine d’être essayés\u00A0?',
-      a: 'Les écarteurs d’orteils peuvent réduire les frottements et la gêne à court terme. Dans l’étude de Tehraninasr 2008, une semelle avec écarteur d’orteils a nettement réduit la douleur dans un groupe de 30\u00A0femmes, alors qu’un autre groupe avec orthèse de nuit ne s’est pas amélioré. L’angle de l’hallux valgus n’a changé de façon significative dans aucun des deux groupes. Les écarteurs coûtent peu et ne sont pas nocifs, il est donc raisonnable de les essayer en plus des exercices et de chaussures plus larges.',
+      a: 'Les écarteurs d’orteils peuvent réduire les frottements et la gêne à court terme. Dans l’étude de Tehraninasr 2008, une semelle avec écarteur d’orteils a réduit significativement la douleur dans un groupe de 30\u00A0femmes, alors qu’un autre groupe avec orthèse de nuit ne s’est pas amélioré. L’angle de l’hallux valgus n’a changé de façon significative dans aucun des deux groupes. Les écarteurs coûtent peu et ne sont pas nocifs, il est donc raisonnable de les essayer en plus des exercices et de chaussures plus larges.',
       cites: [CITE.tehraninasr],
     },
     {
@@ -164,7 +164,7 @@ export const BUNIONS_FR: Guide = {
     },
     {
       q: 'Peut-on courir avec un hallux valgus\u00A0?',
-      a: 'Beaucoup de personnes courent avec un hallux valgus sans problème. Une chaussure de course à l’avant large et un écarteur d’orteils pendant les sorties peuvent aider. Si l’oignon fait mal pendant ou après la course, réduire et consulter un professionnel de santé vaut la peine avant de forcer.',
+      a: 'Beaucoup de personnes courent avec un hallux valgus sans problème. Une chaussure de course à l’avant large et un écarteur d’orteils pendant les sorties peuvent aider. Si l’oignon fait mal pendant ou après la course, réduire l’entraînement et consulter un professionnel de santé vaut la peine avant de forcer.',
     },
     {
       q: 'Qu’est-ce qui cause un hallux valgus\u00A0?',
@@ -193,7 +193,7 @@ export const BUNIONS_FR: Guide = {
   program: {
     h2: 'En faire un plan',
     text:
-      'Walkito inclut [écarter les orteils](/fr/exercices/ecarter-orteils/) et [lever le gros orteil](/fr/exercices/lever-gros-orteil/) dans son travail de renforcement des muscles propres au pied. L’application est conçue pour la fasciite plantaire et les pieds plats, pas spécifiquement pour l’hallux valgus, mais l’exercice d’écartement des orteils est le même mouvement que celui testé dans l’essai de Kim 2015 sur l’hallux valgus. Si vous voulez un cadre pour prendre l’habitude, les séances quotidiennes de 3 ou 5\u00A0minutes gardent les exercices réguliers.',
+      'Walkito inclut [écarter les orteils](/fr/exercices/ecarter-orteils/) et [lever le gros orteil](/fr/exercices/lever-gros-orteil/) dans son travail de renforcement des muscles intrinsèques du pied. L’application est conçue pour la fasciite plantaire et les pieds plats, pas spécifiquement pour l’hallux valgus, mais l’exercice d’écartement des orteils est le même mouvement que celui testé dans l’essai de Kim 2015 sur l’hallux valgus. Si vous voulez un cadre pour prendre l’habitude, les séances quotidiennes de 3 ou 5\u00A0minutes gardent les exercices réguliers.',
     more: [
       'Pour une douleur de l’avant-pied plus étendue, qui touche les têtes du deuxième et du troisième métatarsien, voir [douleur sous l’avant-pied](/fr/metatarsalgie-douleur-avant-pied/). Pour une douleur sous l’articulation du gros orteil en particulier, voir [sésamoïdite](/fr/sesamoidite/).',
     ],

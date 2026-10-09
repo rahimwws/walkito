@@ -13,7 +13,7 @@ export const VS_EXAKT_FR: Guide = {
   page: 'vsExakt',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Walkito vs Exakt Health\u00A0: comparatif côte à côte (2026)',
+  title: 'Walkito vs Exakt Health\u00A0: comparatif (2026)',
   description:
     'Walkito ou Exakt Health\u00A0: problèmes couverts, prix, plateformes, plan, données scientifiques, langues, confidentialité. Vérifié en octobre 2026.',
   h1: 'Walkito vs Exakt Health\u00A0: laquelle vous convient\u00A0?',

@@ -15,7 +15,7 @@ export const EX_FOOT_ROLL_PT: Guide = {
   page: 'exFootRoll',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Massagem com bolinha no pé para fascite plantar: como fazer',
+  title: 'Bolinha no pé para fascite plantar: como fazer',
   description:
     'Como rolar o pé na bolinha ou na garrafa congelada para fascite plantar: técnica, quanto tempo rolar, e o que isso faz e o que não faz.',
   h1: 'Rolar o pé na bolinha para fascite plantar: bolinha, garrafa e técnica',
@@ -91,7 +91,7 @@ export const EX_FOOT_ROLL_PT: Guide = {
       h2: 'Quando rolar o pé, e quando pular?',
       paragraphs: [
         'Role depois de um dia longo em pé, depois de uma sessão de elevação de calcanhar, ou sempre que a sola estiver tensa. No Walkito, o rolamento do pé aparece nos dias de recuperação e no fim das sessões, para desacelerar.',
-        'Pule o rolamento se o calcanhar está muito inchado, vermelho ou quente. Esses sinais podem indicar algo diferente de fascite plantar, e apertar uma área inflamada pode piorar. Procure um profissional de saúde primeiro. Para o conjunto completo de exercícios que a diretriz recomenda, veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) ou [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
+        'Pule o rolamento se o calcanhar estiver inchado, vermelho ou quente em uma crise aguda. Esses sinais podem indicar algo diferente de fascite plantar, e apertar uma área inflamada pode piorar. Procure um profissional de saúde primeiro. Para o conjunto completo de exercícios que a diretriz recomenda, veja [exercícios para fascite plantar](/pt/exercicios-fascite-plantar/) ou [pés doendo de ficar em pé o dia todo](/pt/dor-nos-pes-ficar-em-pe/).',
       ],
     },
   ],
@@ -121,7 +121,7 @@ export const EX_FOOT_ROLL_PT: Guide = {
   redFlags: {
     h2: 'Pare e procure um profissional de saúde se',
     bullets: [
-      'a sola está muito inchada, vermelha ou quente',
+      'a sola ficou inchada, vermelha ou quente de forma aguda',
       'rolar o pé sempre piora a dor na manhã seguinte',
       'a dor é aguda e fica em um ponto só, e piora com a pressão',
       'você sente dormência, formigamento ou queimação embaixo do pé',

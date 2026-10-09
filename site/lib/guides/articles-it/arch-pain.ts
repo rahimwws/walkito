@@ -17,7 +17,7 @@ export const ARCH_PAIN_IT: Guide = {
   mainSource: CITE.guideline,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Dolore all’arco plantare: cause, esercizi e cosa fare',
+  title: 'Dolore all’arco plantare: cause, esercizi, cosa fare',
   description:
     'Dolore all’arco plantare quando cammini: fascite plantare, piede piatto, tibiale posteriore, piede cavo o nervi. Come distinguerli ed esercizi utili.',
   h1: 'Dolore all’arco plantare: da cosa dipende e cosa fare',
@@ -41,7 +41,7 @@ export const ARCH_PAIN_IT: Guide = {
         '**La disfunzione del tendine tibiale posteriore** è la causa più comune del piede piatto acquisito nell’adulto. Il tendine tibiale posteriore passa dietro la caviglia, sul lato interno, e sotto l’arco, e lo tiene su. Quando questo tendine si indebolisce o si lesiona, l’arco crolla poco alla volta. Il dolore si sente lungo la parte interna della caviglia e nell’arco, e peggiora con l’attività. Una revisione sistematica del 2018 sugli esercizi per questo problema ha trovato prove limitate ma promettenti per rinforzo e stretching. Vedi [esercizi per la disfunzione del tendine tibiale posteriore](/it/disfunzione-tendine-tibiale-posteriore/).',
         '**Il piede cavo** dà dolore all’arco in un altro modo. Un arco alto e rigido non si flette abbastanza per assorbire l’urto, quindi la forza si concentra sotto il tallone e sotto l’avampiede invece di distribuirsi sul mesopiede. Il dolore sotto l’arco in un piede cavo spesso viene da una fascia plantare rigida. Vedi [esercizi per il piede cavo](/it/piede-cavo-esercizi/).',
         '**Il sovraccarico** senza un problema preciso è comune in chi aumenta all’improvviso camminata, corsa o ore in piedi. I muscoli dell’arco e la fascia plantare non sono ancora abbastanza forti per la nuova richiesta e protestano. Di solito migliora con un ritorno graduale al carico precedente più il rinforzo di polpaccio e arco.',
-        '**Un’irritazione dei nervi** come la sindrome del tunnel tarsale può dare bruciore, formicolio o intorpidimento lungo l’arco. Il nervo tibiale posteriore passa dietro il malleolo interno e arriva nella pianta del piede. Se viene compresso, il dolore può somigliare a quello della fascite plantare ma si accompagna a sintomi della sensibilità che la fascite non dà. Serve un professionista sanitario.',
+        '**Un’irritazione dei nervi** come la sindrome del tunnel tarsale può dare bruciore, formicolio o intorpidimento lungo l’arco. Il nervo tibiale posteriore passa dietro il malleolo interno e arriva nella pianta del piede. Se viene compresso, il dolore può somigliare a quello della fascite plantare ma si accompagna a disturbi della sensibilità che la fascite non dà. Serve un professionista sanitario.',
       ],
       cites: [CITE.guideline, CITE.posteriorTibialReview, CITE.riddle],
     },

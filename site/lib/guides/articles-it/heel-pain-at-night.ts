@@ -18,7 +18,7 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
   mainSource: CITE.guideline,
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Dolore al tallone di notte: cause e campanelli d’allarme',
+  title: 'Dolore al tallone di notte: cause e quando è grave',
   description:
     'Il dolore al tallone di notte o a riposo può indicare una frattura da stress, un nervo compresso o un’artrite. I segnali da non ignorare e cosa fare.',
   h1: 'Dolore al tallone di notte: da cosa dipende e quando è un campanello d’allarme',
@@ -31,7 +31,7 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
     'Il dolore della fascite plantare è peggiore ai primi passi dopo il riposo e di solito passa quando ti muovi. Un dolore che resta a riposo, ti sveglia o peggiora durante la notte è uno schema d’allarme che va approfondito (Tu, 2018).',
     'Le fratture da stress del calcagno possono dare un dolore sordo o pulsante di notte e di solito peggiorano continuando a caricare il peso, invece di calmarsi quando ti scaldi (Patel e colleghi, 2011).',
     'La sindrome del tunnel tarsale e la compressione del nervo di Baxter, cioè la compressione di rami del nervo tibiale, danno un dolore al tallone con bruciore o formicolio, di natura diversa da quello della fascite (Tu, 2018). La compressione del nervo di Baxter in particolare potrebbe spiegare fino al 20% del dolore cronico al tallone e può comparire a riposo (Tedeschi, 2025).',
-    'Un dolore a entrambi i talloni con una rigidità del mattino prolungata può far pensare a un’artrite infiammatoria come una spondiloartropatia. In una coorte di 174\u00A0persone con fascite plantare, il dolore a entrambi i talloni era un predittore significativo di sintomi più lunghi (Hansen e colleghi, 2018).',
+    'Un dolore a entrambi i talloni con una rigidità del mattino prolungata può far pensare a un’artrite infiammatoria come una spondiloartropatia. In una coorte di 174\u00A0persone con fascite plantare, il dolore a entrambi i talloni era un predittore significativo di una durata più lunga dei sintomi (Hansen e colleghi, 2018).',
     'La linea guida del 2023 sul dolore al tallone dà ai tutori notturni una **A** per la fascite plantare persistente, ma il loro scopo è evitare che la fascia si accorci durante la notte, non affrontare i tipi di dolore notturno descritti in questa pagina (Koc e colleghi, 2023).',
   ],
   toc: true,
@@ -41,7 +41,7 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
       paragraphs: [
         'La fascite plantare fa male perché la fascia si irrigidisce mentre dormi e poi si allunga di colpo quando ti alzi. Quel dolore raggiunge il picco al primo passo e migliora quando ti muovi. Se il tallone fa male mentre sei sdraiato a letto e non carichi affatto il peso, di solito c’entra un meccanismo diverso.',
         'Una revisione del 2018 su American Family Physician elenca diverse cause di dolore al tallone che si comportano in modo diverso dalla fascite plantare. La distinzione chiave: il dolore della fascite plantare migliora con l’attività, mentre il dolore da fratture da stress, nervi compressi, tumori e problemi infiammatori non segue questo schema.',
-        'Durante il sonno il piede punta anche verso il basso (flessione plantare). Questa posizione può accorciare il tendine d’Achille e il polpaccio, e a volte contribuisce al fastidio al tallone. I tutori notturni intervengono tenendo la caviglia ad angolo neutro. Ma un tutore notturno è uno strumento per la fascite plantare, non un sostituto dell’approfondire un dolore che peggiora davvero a riposo.',
+        'Durante il sonno il piede punta anche verso il basso (flessione plantare). Questa posizione può accorciare il tendine d’Achille e il polpaccio, e a volte contribuisce al fastidio al tallone. I tutori notturni intervengono tenendo la caviglia ad angolo neutro. Ma un tutore notturno è uno strumento per la fascite plantare, e non sostituisce gli accertamenti per un dolore che peggiora davvero a riposo.',
       ],
       cites: [CITE.tedeschiBaxter, CITE.tuHeelPain, CITE.guideline],
     },
@@ -66,10 +66,10 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
     },
     {
       h2: 'L’artrite infiammatoria può causare dolore al tallone di notte?',
-      keyFact: 'In un follow-up da 5 a 15\u00A0anni su 174\u00A0persone con fascite plantare, il dolore a entrambi i talloni era un predittore significativo di sintomi più lunghi (Hansen e colleghi, 2018).',
+      keyFact: 'In un follow-up da 5 a 15\u00A0anni su 174\u00A0persone con fascite plantare, il dolore a entrambi i talloni era un predittore significativo di una durata più lunga dei sintomi (Hansen e colleghi, 2018).',
       paragraphs: [
         'Le spondiloartropatie, un gruppo di problemi infiammatori che comprende la spondilite anchilosante e l’artrite psoriasica, possono causare entesite, un’infiammazione nel punto in cui un tendine o un legamento si attacca all’osso. Il tallone è una sede comune. Il dolore è spesso su entrambi i lati, può trovarsi all’inserzione dell’Achille o sotto il tallone, e si accompagna a una rigidità del mattino prolungata (più di 30\u00A0minuti) che migliora con il movimento.',
-        'In un follow-up da 5 a 15\u00A0anni su 174\u00A0persone con fascite plantare, il dolore a entrambi i talloni era un predittore significativo di sintomi più lunghi. Gli autori hanno notato che una malattia infiammatoria sistemica non riconosciuta potrebbe spiegare in parte questo risultato.',
+        'In un follow-up da 5 a 15\u00A0anni su 174\u00A0persone con fascite plantare, il dolore a entrambi i talloni era un predittore significativo di una durata più lunga dei sintomi. Gli autori hanno notato che una malattia infiammatoria sistemica non riconosciuta potrebbe spiegare in parte questo risultato.',
         'Anche l’artrite reumatoide e la gotta possono dare dolore al tallone. Se il dolore è su entrambi i talloni, se la rigidità dura più di 30\u00A0minuti ogni mattina o se sono coinvolte altre articolazioni, un professionista sanitario dovrebbe valutare una possibile causa infiammatoria.',
       ],
       cites: [CITE.hansen, CITE.tuHeelPain],
@@ -181,7 +181,7 @@ export const HEEL_PAIN_AT_NIGHT_IT: Guide = {
     {
       q: 'Cosa non fare se il tallone fa male di notte?',
       cites: [CITE.tuHeelPain, CITE.patelStressFracture],
-      a: 'Non dare per scontato che sia fascite plantare e non continuare l’attività stringendo i denti se il dolore non segue lo schema «fa male ai primi passi e poi migliora». Non ignorare un dolore che ti sveglia, peggiora continuando a camminare o si accompagna a bruciore, formicolio o gonfiore. Curare da solo il dolore a riposo con allungamenti o tutori notturni può ritardare la diagnosi di una frattura da stress, di un nervo compresso o di un’artrite infiammatoria.',
+      a: 'Non dare per scontato che sia fascite plantare e non continuare l’attività stringendo i denti se il dolore non segue lo schema «fa male ai primi passi e poi migliora». Non ignorare un dolore che ti sveglia, peggiora continuando a camminare o si accompagna a bruciore, formicolio o gonfiore. Gestire da solo il dolore a riposo con allungamenti o tutori notturni può ritardare la diagnosi di una frattura da stress, di un nervo compresso o di un’artrite infiammatoria.',
     },
   ],
   redFlags: {

@@ -62,7 +62,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_DE: Guide = {
     {
       h2: 'Das Alfredson-Protokoll: Sätze, Wiederholungen und Steigerung',
       paragraphs: [
-        'Das ursprüngliche Protokoll sind 3\u00A0Sätze à 15\u00A0Wiederholungen mit gestrecktem Knie plus 3\u00A0Sätze à 15 mit gebeugtem Knie, zweimal am Tag, 7\u00A0Tage pro Woche, etwa drei Monate lang. Das sind 180\u00A0Wiederholungen am Tag. Wenn die Übung mit Körpergewicht schmerzfrei wird, kommt mit einem Rucksack Last dazu.',
+        'Das ursprüngliche Protokoll besteht aus 3\u00A0Sätze à 15\u00A0Wiederholungen mit gestrecktem Knie plus 3\u00A0Sätze à 15 mit gebeugtem Knie, zweimal am Tag, 7\u00A0Tage pro Woche, etwa drei Monate lang. Das sind 180\u00A0Wiederholungen am Tag. Wenn die Übung mit Körpergewicht schmerzfrei wird, kommt mit einem Rucksack Last dazu.',
         'Walkito beginnt mit weniger Umfang: 3\u00A0Sätze à 10, jedes Bein, an Krafttagen. Die Alfredson-Dosis ist hoch, und es ist wirklich mühsam, sie durchzuhalten. Eine Studie von Stevens und Tan von 2014 fand, dass ein exzentrisches Protokoll „nach Verträglichkeit“ mit weniger Wiederholungen Schmerz und Funktion genauso verbesserte. Deshalb sind neuere Empfehlungen weniger streng, was die vollen 180 am Tag angeht.',
       ],
       table: {
@@ -98,7 +98,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_DE: Guide = {
       paragraphs: [
         'Unten halten wie bei einer Dehnung. Der Nutzen liegt im langsamen Absenken, nicht darin, unten zu hängen. Senk dich über drei Sekunden ab und geh dann sofort mit beiden Füßen wieder hoch.',
         'Zu tief absenken. Die Ferse sollte bis zu ihrem natürlichen Umfang unter die Stufe sinken. Sie tiefer zu zwingen oder den Fuß nach innen oder außen zu kippen, um mehr Umfang zu bekommen, belastet die Sehnen an der Innen- oder Außenseite des Sprunggelenks. Drei bis fünf Zentimeter unter der Stufe reichen.',
-        'Zu schnell sein. Tempo nimmt die exzentrische Last weg, um die die Übung gebaut ist. Wenn du das Absenken nicht über etwa drei Sekunden kontrollieren kannst, geh zuerst zu einer beidbeinigen Variante zurück.',
+        'Zu schnell sein. Tempo nimmt die exzentrische Last weg, auf der die Übung aufbaut. Wenn du das Absenken nicht über etwa drei Sekunden kontrollieren kannst, geh zuerst zu einer beidbeinigen Variante zurück.',
         'Die Variante mit gebeugtem Knie auslassen. Das Absenken mit gestrecktem Knie zielt auf den Gastrocnemius. Die Variante mit gebeugtem Knie zielt auf den Soleus. Beide Muskeln tragen zur Achillessehne bei. Das ursprüngliche Protokoll enthält beide.',
       ],
     },
@@ -125,7 +125,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_DE: Guide = {
     {
       q: 'Darf exzentrisches Fersenabsenken wehtun?',
       cites: [CITE.silbernagel],
-      a: 'Etwas Beschwerden sind zu erwarten. Eine Studie erlaubte bei Belastung Schmerz bis etwa 5 von 10, solange er bis zum nächsten Morgen abklang und nicht von Woche zu Woche schlimmer wurde (Silbernagel 2007). Schmerz, der über Nacht erhöht bleibt oder jede Woche zunimmt, ist das Signal, die Last zu senken.',
+      a: 'Gewisse Beschwerden sind zu erwarten. Eine Studie erlaubte bei Belastung Schmerz bis etwa 5 von 10, solange er bis zum nächsten Morgen abklang und nicht von Woche zu Woche schlimmer wurde (Silbernagel 2007). Schmerz, der über Nacht erhöht bleibt oder jede Woche zunimmt, ist das Signal, die Last zu senken.',
     },
     {
       q: 'Wie lange dauert es, bis exzentrisches Fersenabsenken wirkt?',
@@ -153,7 +153,7 @@ export const EX_ECCENTRIC_HEEL_DROPS_DE: Guide = {
     h2: 'Als Plan umsetzen',
     text: 'Exzentrisches Fersenabsenken ist eine Stufe in der Wadenkette, die Walkito in einen Wochenplan einbaut. Die Kette beginnt mit Fersenheben im Sitzen und geht über das Fersenheben beidbeinig, das Halten, das Fersenheben mit Handtuch und das Fersenabsenken bis zu Pogo-Sprüngen. Jede Stufe öffnet sich, sobald sich zwei Einheiten auf der aktuellen Stufe leicht angefühlt haben.',
     more: [
-      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer und Gleichgewicht. Wenn der Schmerz direkt am Ansatz am Fersenbein sitzt, lass ihn von einer medizinischen Fachperson ansehen, bevor du ihn stark belastest. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose.',
+      'Du wählst 3, 5 oder 7\u00A0Tage pro Woche und Einheiten von 3, 5 oder 10\u00A0Minuten. Alle 14\u00A0Tage prüft ein kurzer Test Wadenausdauer und Gleichgewicht. Wenn der Schmerz direkt am Ansatz am Fersenbein sitzt, lass die Stelle von einer medizinischen Fachperson ansehen, bevor du sie stark belastest. Walkito ist ein Übungsprogramm. Es stellt keine Diagnose.',
     ],
     cta: 'Fang mit 3\u00A0Minuten am Tag an.',
   },

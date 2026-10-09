@@ -38,7 +38,7 @@ export const EX_TOE_SPREAD_IT: Guide = {
       h2: 'Come si fa l’esercizio di apertura delle dita?',
       paragraphs: [
         'Siediti scalzo con i piedi appoggiati a terra. Apri tutte e cinque le dita più che puoi, come se volessi creare spazio tra ogni dito. Tieni la posizione più aperta, poi rilassa. Questa è una ripetizione.',
-        'Sollevare le dita non è il punto. Tieni le dita a terra e concentrati sull’aprirle verso l’esterno. Non premere le dita a terra e non arricciarle. Se si muovono solo alcune dita, all’inizio è normale. Di solito si muovono per primi l’alluce e il mignolo. Le tre dita centrali spesso seguono quando i muscoli diventano più forti.',
+        'Lo scopo non è sollevare le dita. Tieni le dita a terra e concentrati sull’aprirle verso l’esterno. Non premere le dita a terra e non arricciarle. Se si muovono solo alcune dita, all’inizio è normale. Di solito si muovono per primi l’alluce e il mignolo. Le tre dita centrali spesso seguono quando i muscoli diventano più forti.',
       ],
       exercises: [
         {

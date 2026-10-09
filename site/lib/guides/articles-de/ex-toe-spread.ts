@@ -11,7 +11,7 @@ export const EX_TOE_SPREAD_DE: Guide = {
   page: 'exToeSpread',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Zehen spreizen: Übung für kräftigere Füße, so geht es',
+  title: 'Zehen spreizen: Übung für kräftigere Füße',
   description:
     'Zehen spreizen üben: Technik, Sätze, welche Muskeln arbeiten, wem es hilft, etwa bei Plattfuß oder Hallux valgus, und was MRT-Studien zeigen.',
   h1: 'Zehenspreizen: wie du die Zehen spreizt, für mehr Kraft im Fuß',
@@ -35,7 +35,7 @@ export const EX_TOE_SPREAD_DE: Guide = {
     {
       h2: 'Wie geht das Zehenspreizen?',
       paragraphs: [
-        'Setz dich barfuß hin, die Füße stehen flach auf dem Boden. Spreiz alle fünf Zehen so weit du kannst, als wolltest du zwischen jedem Zeh Platz schaffen. Halte die weiteste Position, dann lass locker. Das ist eine Wiederholung.',
+        'Setz dich barfuß hin, die Füße stehen flach auf dem Boden. Spreiz alle fünf Zehen so weit du kannst, als wolltest du zwischen allen Zehen Platz schaffen. Halte die weiteste Position, dann lass locker. Das ist eine Wiederholung.',
         'Anheben ist nicht das Ziel. Lass die Zehen auf dem Boden und konzentrier dich darauf, sie nach außen zu spreizen. Drück die Zehen nicht nach unten und krall sie nicht ein. Wenn sich anfangs nur ein paar Zehen bewegen, ist das normal. Meist bewegen sich zuerst der große und der kleine Zeh. Die drei mittleren folgen oft, sobald die Muskeln kräftiger werden.',
       ],
       exercises: [
@@ -58,9 +58,9 @@ export const EX_TOE_SPREAD_DE: Guide = {
       h2: 'Welche Muskeln trainiert das Zehenspreizen?',
       keyFact: 'Eine MRT-Studie von 2016 fand, dass das Zehenspreizen den Abductor hallucis in derselben kleinen Gruppe von Sportlern nur zu 18,9\u00A0% aktivierte, verglichen mit 29,7\u00A0% bei der Kurzer-Fuß-Übung (Gooding und Kollegen, 2016).',
       paragraphs: [
-        'Das Zehenspreizen zielt vor allem auf zwei Muskeln. Der Abductor hallucis läuft am Innenrand des Fußes entlang und zieht den großen Zeh nach innen (Richtung Körpermitte). Er ist auch einer der wichtigsten Stützen des inneren Längsgewölbes. Der Abductor digiti minimi läuft am Außenrand entlang und zieht den kleinen Zeh nach außen.',
+        'Das Zehenspreizen zielt vor allem auf zwei Muskeln. Der Abductor hallucis läuft am Innenrand des Fußes entlang und zieht den großen Zeh nach innen (Richtung Körpermitte). Er ist auch eine der wichtigsten Stützen des inneren Längsgewölbes. Der Abductor digiti minimi läuft am Außenrand entlang und zieht den kleinen Zeh nach außen.',
         'Eine MRT-Studie von Gooding und Kollegen von 2016 testete vier Übungen für die kurzen Fußmuskeln und maß die Aktivierung in jedem Muskel. Das Zehenspreizen erzeugte seine höchste Aktivierung im Abductor digiti minimi (35,2\u00A0%), gefolgt vom Adductor hallucis obliquus (31,5\u00A0%) und dem Flexor digiti minimi (30,2\u00A0%). Die Aktivierung des Abductor hallucis beim Zehenspreizen (18,9\u00A0%) war niedriger als bei der Kurzer-Fuß-Übung (29,7\u00A0%).',
-        'Das heißt: Zehenspreizen und [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/) ergänzen sich. Der kurze Fuß zielt auf die Muskeln, die entlang des Gewölbes laufen. Das Zehenspreizen zielt auf die Muskeln an den Rändern. Zusammen decken sie mehr von der Gruppe der kurzen Fußmuskeln ab.',
+        'Das heißt: Zehenspreizen und [Kurzer-Fuß-Übung](/de/uebungen/kurzer-fuss/) ergänzen sich. Die Kurzer-Fuß-Übung zielt auf die Muskeln, die entlang des Gewölbes laufen. Das Zehenspreizen zielt auf die Muskeln an den Rändern. Zusammen decken sie mehr von der Gruppe der kurzen Fußmuskeln ab.',
       ],
       cites: [CITE.gooding],
     },

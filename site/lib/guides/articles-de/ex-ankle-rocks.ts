@@ -11,7 +11,7 @@ export const EX_ANKLE_ROCKS_DE: Guide = {
   page: 'exAnkleRocks',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Sprunggelenk-Wippen: Übung für ein bewegliches Sprunggelenk',
+  title: 'Sprunggelenk mobilisieren: Sprunggelenk-Wippen',
   description:
     'Sprunggelenk mobilisieren mit Sprunggelenk-Wippen, Knie über die Zehen: Technik, Sätze und Wiederholungen, warum die Beugung zählt und wie du sie testest.',
   h1: 'Sprunggelenk-Wippen: so geht es und warum die Beweglichkeit zählt',

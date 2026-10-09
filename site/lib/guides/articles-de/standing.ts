@@ -20,30 +20,30 @@ export const STANDING_DE: Guide = {
   page: 'standing',
   published: '2026-10-08',
   updated: '2026-10-08',
-  title: 'Fußschmerzen vom Stehen: Warum die Füße wehtun und was hilft',
+  title: 'Fußschmerzen vom Stehen: warum und was hilft',
   description:
     'Warum die Füße nach langem Stehen wehtun, was hilft (Wadendehnung, Krafttraining, Kompressionsstrümpfe) und wann du zu einer Fachperson gehen solltest.',
   h1: 'Warum tun meine Füße nach einem Tag im Stehen weh?',
   lede:
     'Am Ende einer langen Schicht tun deine Füße weh. Das Gewölbe schmerzt, die Ferse ist wund, und die Beine fühlen sich schwer an. Stundenlanges Stehen auf hartem Boden belastet immer wieder dieselben Gewebe, ohne die Pumpwirkung, die das Gehen deinen Waden und Venen gibt. Dehnen von Wade und Plantarfaszie und etwas Kraftaufbau in der Wade zielen auf die Gewebe, die am meisten aushalten müssen.',
   intro: [
-    'Nicht jeder Fußschmerz vom Stehen ist eine Plantarfasziitis, aber beides überschneidet sich. Eine Fall-Kontroll-Studie von 2003 mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0passenden Kontrollen fand, dass Stehen über den größten Teil des Arbeitstags die Wahrscheinlichkeit einer Plantarfasziitis um das 3,6-Fache erhöhte. Eine eingeschränkte Beweglichkeit im Sprunggelenk war ein noch stärkerer Risikofaktor, mit dem 23,3-Fachen. Die Übungen, die bei beidem helfen, sind weitgehend dieselben: Dehnungen für Wade und Plantarfaszie plus Krafttraining für die Wade.',
+    'Nicht jeder Fußschmerz vom Stehen ist eine Plantarfasziitis, aber beides überschneidet sich. Eine Fall-Kontroll-Studie von 2003 mit 50\u00A0Personen mit Plantarfasziitis und 100\u00A0passenden Kontrollen fand, dass Stehen über den größten Teil des Arbeitstags die Chance auf eine Plantarfasziitis um das 3,6-Fache erhöhte. Eine eingeschränkte Beweglichkeit im Sprunggelenk war ein noch stärkerer Risikofaktor, mit einer 23,3-fachen Chance. Die Übungen, die bei beidem helfen, sind weitgehend dieselben: Dehnungen für Wade und Plantarfaszie plus Krafttraining für die Wade.',
   ],
   toc: true,
   takeaways: [
     'Eine Übersichtsarbeit von 2015 zur arbeitsmedizinischen Forschung fand langes Stehen bei der Arbeit verbunden mit Beschwerden am Bewegungsapparat, Ermüdung und Beinschmerzen. Bodenmatten, Kompressionsstrümpfe und stützende Schuhe gehörten zu den Maßnahmen mit Belegen (Waters und Dick, 2015).',
-    'Stehen über den größten Teil des Arbeitstags erhöhte die Wahrscheinlichkeit einer Plantarfasziitis in einer Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen um das 3,6-Fache. Eine eingeschränkte Beweglichkeit im Sprunggelenk erhöhte sie um das 23,3-Fache (Riddle und Kollegen, 2003).',
+    'Stehen über den größten Teil des Arbeitstags erhöhte die Chance auf eine Plantarfasziitis in einer Fall-Kontroll-Studie mit 50\u00A0Fällen und 100\u00A0Kontrollen um das 3,6-Fache. Eine eingeschränkte Beweglichkeit im Sprunggelenk erhöhte sie um das 23,3-Fache (Riddle und Kollegen, 2003).',
     'In einer Parallelgruppen-Studie mit 40\u00A0Sicherheitskräften, die zufällig normalen Socken oder einer von zwei Gruppen mit Kompressionsstrümpfen zugeteilt wurden, verhinderten Strümpfe mit 15-20\u00A0mmHg und mit 20-30\u00A0mmHg den Anstieg der Beschwerden in Fuß und Bein, der mit normalen Socken in 12-Stunden-Schichten im Stehen auftrat (Garcia und Kollegen, 2023).',
     'Die Leitlinie von 2023 zu Fersenschmerzen gibt dem Dehnen von Plantarfaszie und Wade ihre beste Bewertung, A, und Krafttraining ein B.',
   ],
   sections: [
     {
       h2: 'Warum tun die Füße nach einem Tag im Stehen weh?',
-      keyFact: 'In einer Fall-Kontroll-Studie von 2003 erhöhte eine eingeschränkte Beweglichkeit im Sprunggelenk die Wahrscheinlichkeit einer Plantarfasziitis um das 23,3-Fache, der stärkste gefundene Risikofaktor, und Stehen über den größten Teil des Arbeitstags um das 3,6-Fache (Riddle und Kollegen, 2003).',
+      keyFact: 'In einer Fall-Kontroll-Studie von 2003 erhöhte eine eingeschränkte Beweglichkeit im Sprunggelenk die Chance auf eine Plantarfasziitis um das 23,3-Fache, der stärkste gefundene Risikofaktor, und Stehen über den größten Teil des Arbeitstags um das 3,6-Fache (Riddle und Kollegen, 2003).',
       paragraphs: [
         'Die Füße tun vom Stehen weh, weil ruhiges Stehen Plantarfaszie, Wadenmuskeln und Ferse belastet, ohne ihnen eine Pause zu geben. Beim Gehen pumpt jeder Schritt Blut aus den Beinen nach oben. Im Stehen fällt diese Pumpe weg, das Blut sammelt sich in den Unterschenkeln, und die Gewebe unter dem Fuß tragen stundenlang dieselbe statische Last.',
         'Eine Übersichtsarbeit von 2015 zur arbeitsmedizinischen Forschung fand langes Stehen verbunden mit Kreuzschmerzen, Beinschmerzen, Beschwerden und Ermüdung in vielen Berufen, in denen man steht. Die Übersicht hielt auch fest, dass Belastung für Herz und Kreislauf und geschwollene Beine mit der Stehdauer zunehmen. Die Autoren forderten klarere Definitionen von „langem Stehen“ in künftigen Studien, weil die Grenze zwischen unbedenklicher und schädlicher Stehzeit von Mensch zu Mensch und von Beruf zu Beruf verschieden ist.',
-        'Speziell zu Wade und Faszie fand eine Fall-Kontroll-Studie von 2003 zwei Risikofaktoren, die herausstachen. Eine eingeschränkte Beweglichkeit im Sprunggelenk, also eine verkürzte Wade, war der stärkste einzelne Vorhersagefaktor für Plantarfasziitis, mit dem 23,3-Fachen der Wahrscheinlichkeit. Stehen über den größten Teil des Arbeitstags erhöhte sie um das 3,6-Fache. Beides hängt zusammen: Eine verkürzte Wade hält die Ferse in jeder Minute im Stehen unter mehr Spannung.',
+        'Speziell zu Wade und Faszie fand eine Fall-Kontroll-Studie von 2003 zwei Risikofaktoren, die herausstachen. Eine eingeschränkte Beweglichkeit im Sprunggelenk, also eine verkürzte Wade, war der stärkste einzelne Vorhersagefaktor für Plantarfasziitis, mit einer 23,3-fachen Chance. Stehen über den größten Teil des Arbeitstags erhöhte die Chance um das 3,6-Fache. Beides hängt zusammen: Eine verkürzte Wade hält die Ferse in jeder Minute im Stehen unter mehr Spannung.',
       ],
       cites: [CITE.waters, CITE.riddle],
     },
@@ -219,7 +219,7 @@ export const STANDING_DE: Guide = {
     },
     {
       q: 'Sind Fußschmerzen vom langen Stehen dasselbe wie Plantarfasziitis?',
-      a: 'Nicht immer. Allgemeine Schmerzen und Müdigkeit vom Stehen sind häufig und vergehen meist mit Ruhe. Plantarfasziitis ist eine bestimmte Erkrankung mit stechendem Fersenschmerz, oft am schlimmsten bei den ersten Schritten nach einer Pause. Stehen über den größten Teil des Arbeitstags ist ein unabhängiger Risikofaktor für eine Plantarfasziitis, mit dem 3,6-Fachen der Wahrscheinlichkeit in einer Fall-Kontroll-Studie. Beides hängt also zusammen, ist aber nicht dasselbe.',
+      a: 'Nicht immer. Allgemeine Schmerzen und Müdigkeit vom Stehen sind häufig und vergehen meist mit Ruhe. Plantarfasziitis ist eine bestimmte Erkrankung mit stechendem Fersenschmerz, oft am schlimmsten bei den ersten Schritten nach einer Pause. Stehen über den größten Teil des Arbeitstags ist ein unabhängiger Risikofaktor für eine Plantarfasziitis, mit einer 3,6-fachen Chance in einer Fall-Kontroll-Studie. Beides hängt also zusammen, ist aber nicht dasselbe.',
       cites: [CITE.riddle],
     },
     {
@@ -244,7 +244,7 @@ export const STANDING_DE: Guide = {
     },
     {
       q: 'Wie kann ich 10\u00A0Stunden stehen, ohne dass die Füße wehtun?',
-      a: 'Keinen einzelnen Trick, der die Schmerzen in einer 10-Stunden-Schicht wegnimmt, aber die Kombination hilft am meisten: Trag gedämpfte, stützende Schuhe, leg auf hartem Boden eine Stehmatte hin, mach jede Stunde eine kurze Gehpause, damit der Kreislauf wieder in Gang kommt, und dehn täglich Wade und Plantarfaszie. Kompressionsstrümpfe verringerten in einer Studie mit Sicherheitskräften in langen Schichten Beschwerden und Schwellung.',
+      a: 'Es gibt keinen einzelnen Trick, der die Schmerzen in einer 10-Stunden-Schicht wegnimmt, aber die Kombination hilft am meisten: Trag gedämpfte, stützende Schuhe, leg auf hartem Boden eine Stehmatte hin, mach jede Stunde eine kurze Gehpause, damit der Kreislauf wieder in Gang kommt, und dehn täglich Wade und Plantarfaszie. Kompressionsstrümpfe verringerten in einer Studie mit Sicherheitskräften in langen Schichten Beschwerden und Schwellung.',
       cites: [CITE.garcia, CITE.waters],
     },
   ],
